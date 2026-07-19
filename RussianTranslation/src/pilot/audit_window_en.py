@@ -108,7 +108,11 @@ LS_KEEP, SAN_KEEP = 0.90, 0.85
 DE_UML = re.compile(r'[äöüÄÖÜß]')
 DE_WORDS = re.compile(
     r'\b(und|oder|der|des|dem|den|eine|einen|einem|einer|sich|nicht|durch|gegen'
-    r'|werden|wird|sein|eig|überh|übertr|näml|ungef|gleichs|urspr)\b', re.I)
+    r'|werden|wird|sein|eig|überh|übertr|näml|ungef|gleichs|urspr'
+    # H1302 German-only survivors (no English homograph -- source:
+    # foreign_literal_guards.GERMAN_PROSE_RESIDUE_EN_SAFE; LANG_PARITY german_prose_residue_h1302)
+    r'|dessen|mit|ohne|von|für|bei|beim|nach|unter|statt|zum|zur|zu|ziehen'
+    r'|häufiger|könnte|später|vielleicht|wohl)\b', re.I)
 
 # English stop-words to drop before the MW content-word cross-check.
 STOP = frozenset('the a an of to and or in on at for with from by as is be are was were that '
