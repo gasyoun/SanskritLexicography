@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.35.0] — 19-07-2026
+
+### Added
+- **FINDINGS §97 v3 update — PWG lexicon-only audit joins Amara, Rājanighaṇṭu/Trikāṇḍaśeṣa/Nighaṇṭu confirmed unsourceable (H1326, Sonnet 5 `claude-sonnet-5`).** Appends the [SanskritGrammar PR #459](https://github.com/gasyoun/SanskritGrammar/pull/459) result to [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) §97: joining Amarakośa (GNU GPL v3.0, `sanskrit-kosha/kosha`) as an 8th koṣa moved pwg-unique 2,298→2,294 and koṣa-corroborated 10,724→10,812, but left the hardest 788-word "absent from every dictionary" core unchanged. Records the negative result that Rājanighaṇṭu/Trikāṇḍaśeṣa/generic Nighaṇṭu have **no bulk lemma-tagged headword set anywhere checked** (a 126-dictionary scan of `sanskrit-kosha/kosha`, the `cltk/sanskrit_text_dcs` DCS mirror, web search) — only raw unsegmented sandhi-joined verse — and the reusable rule that a "digitise dictionary X" backlog item needs a headword-tagged-vs-raw-OCR check before estimating effort.
+
 ## [1.34.0] — 19-07-2026
 
 ### Added

@@ -2732,6 +2732,43 @@ which sharpen — not overturn — the finding:
 > [#447](https://github.com/gasyoun/SanskritGrammar/pull/447)) · H1310 · 19-07-2026,
 > Opus 4.8 (`claude-opus-4-8[1m]`).
 
+**Update (v3, [SanskritGrammar PR #459](https://github.com/gasyoun/SanskritGrammar/pull/459),
+H1326).** v2 flagged Amara/Rājanighaṇṭu/Trikāṇḍaśeṣa/Nighaṇṭu/Ratnamālā/Hārāvalī as the
+biggest remaining corpus-coverage gap. H1326 sourced **one** of these — Amarakośa (`amar`,
+9,788 SLP1 headwords, GNU GPL v3.0, from [`sanskrit-kosha/kosha`](https://github.com/sanskrit-kosha/kosha)
+— the same upstream project and `<syns>` annotation format already used for the existing
+`abch`/`acph`/`acsj`/`nmmb` koṣas) — and joined it as an 8th koṣa:
+- Of 32,690 lexicon-only entries: koṣa-corroborated **10,724 → 10,812** (+88), dict-lexical
+  **7,062 → 6,978** (−84), pwg-unique **2,298 → 2,294** (−4), text-attested unchanged (12,606).
+- **The gain is real but modest, and does not touch the hardest residue.** All 4
+  newly-resolved pwg-uniques came from the "present only in same-source PW" fringe
+  (1,510 → 1,506); the **788-word "absent from every dictionary" core is unchanged** — none
+  of those 788 happen to be Amara-cited. Amara alone does not meaningfully shrink the hardest
+  ghost-word residue, even though it is now methodologically joined rather than recorded as
+  a gap.
+- **Rājanighaṇṭu, Trikāṇḍaśeṣa, and generic Nighaṇṭu remain unsourced as bulk lemma-tagged
+  data — a negative result worth recording.** A scan of all 126 reachable dictionaries in
+  `sanskrit-kosha/kosha` found only 4 works have ever received `<syns>` synset annotation
+  (the 3 already in `csl-orig` + Amara, now added); Trikāṇḍaśeṣa/Nighaṇṭuśeṣa/Hārāvalī/
+  Medinīkośa exist there only as raw, unsegmented, sandhi-joined verse. The
+  `cltk/sanskrit_text_dcs` mirror of Digital Corpus of Sanskrit raw texts has a
+  `Rājanighaṇṭu.txt`, but it is a 232-byte fragment (opening invocation only); other
+  nighaṇṭus mirrored there in fuller form (Dhanvantari-, Madanapāla-, Kaiyadeva-,
+  Aṣṭāṅga-nighaṇṭu) are likewise raw unsegmented IAST verse. **Extracting individual
+  headwords from raw metrical verse needs a real Sanskrit sandhi-segmenter, not a bulk
+  download** — `sanskrit-kosha/kosha`'s own `<syns>` annotation is done by hand
+  (`kosha_annotator.py` + `annotation_accuracy_log.txt`), confirming this is a genuine
+  digitisation gap, not a licence or access issue.
+- **Reusable rule:** when a "digitise dictionary X" backlog item names a specific work,
+  check whether a *headword-tagged* (not just OCR'd/raw) digitisation exists before
+  estimating effort — the `sanskrit-kosha/kosha` project holds ~140 kosa digitisations but
+  has only manually lemma-annotated 5 of them; raw OCR of the other ~135 is not a substitute
+  and cannot be bulk-converted without a real segmenter.
+
+> **Source (v3):** [`data/pwg_lexicon_only_audit/kosa_extra/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/pwg_lexicon_only_audit/kosa_extra)
+> (`amar.txt` + provenance/negative-result-audit `README.md`) ·
+> [SanskritGrammar PR #459](https://github.com/gasyoun/SanskritGrammar/pull/459) · H1326 ·
+> 19-07-2026, Sonnet 5 (`claude-sonnet-5`).
 
 ### §98. PD's inline sigla contain a near-homograph pair that similarity-clustering silently fuses — `MahāBhā.` is the Mahābhārata, `MahāBh.` is the Mahābhāṣya, and the locator shape tells them apart mechanically
 
