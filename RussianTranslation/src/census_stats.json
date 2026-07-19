@@ -1,28 +1,28 @@
 {
   "schema": "pwg_ru.government_census.v1",
-  "generated": "12-07-2026",
+  "generated": "19-07-2026",
   "pipeline_version": "1.1.0",
   "source": "pwg.txt",
   "source_sha16": "430c910f8b0c9229",
   "census": {
     "n_entries": 123366,
     "n_units": 288991,
-    "entries_with": 1476,
-    "units_with": 3222,
+    "entries_with": 1490,
+    "units_with": 3244,
     "kinds": {
-      "mit-phrase": 1504,
+      "mit-phrase": 1556,
       "paren-single": 2309,
       "paren-nongov": 68,
       "paren-variation": 40
     },
     "cases": {
       "mit-phrase": {
-        "gen": 318,
-        "acc": 635,
-        "loc": 197,
-        "abl": 120,
-        "dat": 108,
-        "instr": 125,
+        "acc": 650,
+        "gen": 338,
+        "abl": 124,
+        "loc": 200,
+        "dat": 110,
+        "instr": 133,
         "nom": 1
       },
       "paren-single": {
@@ -62,10 +62,10 @@
       }
     },
     "pos_gov_entries": {
-      "unknown": 427,
-      "adj": 327,
-      "nominal": 241,
-      "indecl": 64,
+      "adj": 333,
+      "nominal": 246,
+      "unknown": 429,
+      "indecl": 65,
       "verb": 417
     },
     "pos_entries_all": {
@@ -107,6 +107,13 @@
       ],
       [
         [
+          "55166",
+          "BU"
+        ],
+        43
+      ],
+      [
+        [
           "21814",
           "gam"
         ],
@@ -114,10 +121,10 @@
       ],
       [
         [
-          "55166",
-          "BU"
+          "15071",
+          "kar"
         ],
-        42
+        40
       ],
       [
         [
@@ -125,13 +132,6 @@
           "viS"
         ],
         39
-      ],
-      [
-        [
-          "15071",
-          "kar"
-        ],
-        38
       ],
       [
         [
@@ -152,14 +152,14 @@
           "27838",
           "jYA"
         ],
-        30
+        32
       ],
       [
         [
           "36484",
           "DA"
         ],
-        29
+        30
       ],
       [
         [
@@ -250,9 +250,9 @@
           "54756",
           "BAz"
         ],
-        20
+        21
       ]
     ],
-    "n_hits": 3921
+    "n_hits": 3973
   }
 }

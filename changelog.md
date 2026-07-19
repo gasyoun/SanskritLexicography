@@ -14,6 +14,41 @@ not an error.
 
 ## [Unreleased]
 
+## [1.35.0] — 19-07-2026
+
+### Added
+- **FINDINGS §97 v3 update — PWG lexicon-only audit joins Amara, Rājanighaṇṭu/Trikāṇḍaśeṣa/Nighaṇṭu confirmed unsourceable (H1326, Sonnet 5 `claude-sonnet-5`).** Appends the [SanskritGrammar PR #459](https://github.com/gasyoun/SanskritGrammar/pull/459) result to [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) §97: joining Amarakośa (GNU GPL v3.0, `sanskrit-kosha/kosha`) as an 8th koṣa moved pwg-unique 2,298→2,294 and koṣa-corroborated 10,724→10,812, but left the hardest 788-word "absent from every dictionary" core unchanged. Records the negative result that Rājanighaṇṭu/Trikāṇḍaśeṣa/generic Nighaṇṭu have **no bulk lemma-tagged headword set anywhere checked** (a 126-dictionary scan of `sanskrit-kosha/kosha`, the `cltk/sanskrit_text_dcs` DCS mirror, web search) — only raw unsegmented sandhi-joined verse — and the reusable rule that a "digitise dictionary X" backlog item needs a headword-tagged-vs-raw-OCR check before estimating effort.
+
+## [1.34.0] — 19-07-2026
+
+### Added
+- **[FINDINGS §98](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) — PD's inline sigla contain a near-homograph pair that similarity-clustering silently fuses** (19-07-2026, Opus 4.8 `claude-opus-4-8`, harvested while scoping [H1336](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1336-Opus_csl-atlas_pd-abbrev-vs-dcs-corpus-coverage_19.07.26.md)). The Poona Dictionary has **no `<ls>` citation layer** — it contributes zero edges to [`ls_citation_nodes.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_nodes.tsv) — so any consumer must regex-harvest sigla from running prose and then normalise variants (measured: 107,630 entries, **99.2 % carry a citation**, 5,231 distinct tokens over 416,767 occurrences, against a plausible ~800–1,500 real works). The obvious normalisation tool fuses the dictionary's two highest-value sources:
+  - **`MahāBhā.` (9,339) is the Mahābhārata; `MahāBh.` (1,940) is Patañjali's Mahābhāṣya.** One character apart, not variants. **Verified against actual citation contexts rather than inferred from abbreviation convention** — `MahāBhā.` carries parvan.adhyāya.śloka locators (`vii. 22. 33`) and cross-refs to `BrahmP.`/`ŚabdKaDru.`; `MahāBh.` carries Kielhorn vol.page.line plus an **`({%on%} …)` tail naming the commented rule** (`({%on%} P. viii. 4. 68)`). 1,317 vs 72 distinct locator shapes.
+  - **The `({%on%} …)` tail is the robust mechanical discriminator**, not the siglum spelling — a Mahābhāṣya citation names the sūtra it comments on, a Mahābhārata citation never does.
+  - Fusing them inflates one node to 11,279 citations and destroys the epic-vs-grammatical distinction that any corpus-coverage or citation-weighting measurement depends on. A blanket "never merge" rule is equally wrong: `Kāśi.`/`KāśiVṛ.` and `PadmP.`/`PadmaP.` in the same frequency head are genuine merges.
+  - Also records the other harvest noise classes (structural tokens, language labels, and **secondary scholarship** — `EI.` 3,281, `POK.`, `TURN.`) and the standing caveat that PD is published only `a-` to ~`apaca-`, so any harvested siglum list is PD's canon *as exercised under one letter*, not its full declared canon.
+
+## [1.33.0] — 19-07-2026
+
+### Added
+- **One-click case-government (Rektion) index + PW capitalized-marker gap closed (19-07-2026, Opus 4.8 `claude-opus-4-8`, [H1308](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1308-Opus_RussianTranslation_pwg-ru-valency-government-index_19.07.26.md))**:
+  answers DA-vote row N2 (card `vas~~h0_zz_pw00|samava`) — a searchable government surface plus
+  the fix for the PW `zz_pw*` supplement stratum, which writes case markers CAPITALIZED
+  (`(<ab>Instr.</ab>)`) that the lowercase-only extractor missed entirely (0 of 1,123 store
+  rows, incl. the N2 card). Made the marker regexes in
+  [`government_census.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/government_census.py)
+  case-insensitive (new `_cases()` lowercase-normaliser; one change serves both
+  `extract_government()` over the store and `run_census()` over raw `pwg.txt`). Store
+  government rows **508 → 1,756** (614 → 2,129 markers); raw `pwg.txt` ceiling **3,853 → 3,905**
+  (the +52 are sentence-initial "Mit dem `<ab>…</ab>`" prose government previously missed).
+  New `government.html`/`government.js` via `emit_government()` in
+  [`build_article_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_article_site.py):
+  case chips → every governing card (Instr. one-click returns 218 cards incl. vas/samava),
+  `index.html#g=<safe>` deep-links to the full entry, honest floor-vs-ceiling coverage banner;
+  cross-linked with the abbreviations dashboard. `census_stats.json` re-frozen; government
+  sidecar regenerated (local-only). SHARED in LANG_PARITY; census + site-builder selftests
+  wired into CI.
+
 ### Changed
 - **LaukikaNyaya phrase-tier recall broadened — 151 → 240 records (19-07-2026, Sonnet 5 `claude-sonnet-5`, [H803](https://github.com/gasyoun/Uprava/blob/main/handoffs/H803-Sonnet_SanskritLexicography_laukika-nyaya-jacob-ingest_12.07.26.md) continuation)**:
   the non-`न्याय` phrase-tier headword gate in [`build_laukika_nyaya.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/build_laukika_nyaya.py)

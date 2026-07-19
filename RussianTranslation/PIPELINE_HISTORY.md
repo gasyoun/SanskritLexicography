@@ -9,6 +9,29 @@ narrated). Read this first; go to `.ai_state.md` for exact dates/PRs/numbers on
 any specific claim below, and to [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
 for the current operating procedure.
 
+### H1308 — one-click case-government (Rektion) index + PW capitalized-marker gap closed (19-07-2026)
+
+MG's DA-sheet vote row **N2** (card `vas~~h0_zz_pw00|samava`) asked whether case
+government (`(<ab>Instr.</ab>)`) is structurally recoverable and whether he can find
+**all cards with Instr. government in one click**. Recoverability was largely solved prior
+art (H335 census, H338 extractor, H775 sidecar), but three things were missing: a search
+surface, live coverage, and — the real bug — the **PW `zz_pw*` supplement stratum**, which
+writes case names CAPITALIZED (`(<ab>Instr.</ab>)`) while the extractor's regexes were
+lowercase-only. Measured 19-07: the shipped extractor caught **0 of 1,123** store rows
+carrying a capitalized marker, INCLUDING the N2 exemplar card itself. Fix: made the
+`PAREN/CASE/MIT/CONNECTOR` regexes in `government_census.py` case-insensitive with a new
+`_cases()` lowercase-normaliser (one change serves both `extract_government()` over the
+store and `run_census()` over raw `pwg.txt`); selftest pins updated. Store government rows
+rose **508 → 1,756** (614 → 2,129 markers); the raw `pwg.txt` ceiling rose **3,853 → 3,905**
+(the +52 are sentence-initial "Mit dem `<ab>…</ab>`" prose government the lowercase regex
+missed). New surface: `government.html`/`government.js` via `emit_government()` in the site
+builder — case chips (Instr. leads, per N2) → every governing card, `#g=<safe>` deep-links
+to the full entry, and an honest floor-vs-ceiling banner. Instr. one-click returns **218
+cards including vas/samava** (verified end-to-end). Two pages, cross-linked:
+`abbreviations.html` stays token-frequency oriented, `government.html` is card-retrieval
+oriented. `census_stats.json` re-frozen; sidecar regenerated (1,756 rows, local). SHARED in
+`LANG_PARITY.md` (extraction reads `de` below the `--lang` branch); selftests wired into CI.
+
 ### H1305 — mechanical RU style sweep: no-ё, terse editorial metalanguage (19-07-2026)
 
 MG's DA-sheet vote (N7/N12 + the terseness half of N4) ratified four deterministic RU
