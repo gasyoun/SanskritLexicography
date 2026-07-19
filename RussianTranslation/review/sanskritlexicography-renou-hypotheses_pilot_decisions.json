@@ -1,0 +1,357 @@
+{
+  "sheet_id": "renou-pilot-2026-07-02",
+  "generated": "2026-07-02",
+  "decided": 3,
+  "items": [
+    {
+      "id": "S0-001",
+      "decision": "reject",
+      "note": "Manusmṛti is epic, not vedic. Why in the world it has a vedic tag? Explore what has been done        3 \"\"\"PWG register / genre layer — the diachronic profile of each headword, from its citations.\n\n● Works well: 116,033 entries, 90.6% of citation tokens mapped, and a standout finding — 32,690 lexicon-only headwords\n  (attested only in dictionaries, no dated-text citation). Homonym-precise: aṃśa <h>1 spans vedic→classical, <h>2\n  epic-only; a<h>5 is lexicon-only. Register spread: classical 21.5k, sūtra 19.2k, vedic 17.6k, epic 14.5k, brāhmaṇa\n  5.1k. Let me write the README:\n\nC:\\Users\\user\\Documents\\GitHub\\SanskritGrammar-register\\data\\pwg_register_genre\\README.md"
+    },
+    {
+      "id": "S0-002",
+      "decision": "reject",
+      "note": "How does Rigveda attestation help in Paninian Sanskrit? It's quoted in Ashthadhyayi, that is enough. Right?"
+    },
+    {
+      "id": "S0-003",
+      "decision": "reject",
+      "note": "oldest attestation: Ṛgveda (-1350) - ok, but you ask about Epc. If lemma total: 19 DCS texts, why do you not show the full list?"
+    },
+    {
+      "id": "S0-004",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-005",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-006",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-007",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-008",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-009",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-010",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-011",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-012",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-013",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-014",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-015",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-016",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-017",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-018",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-019",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-020",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-021",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-022",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-023",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-024",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-025",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-026",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-027",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-028",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-029",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-030",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-031",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-032",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-033",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-034",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-035",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-036",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-037",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-038",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-039",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-040",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-041",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-042",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-043",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-044",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-045",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-046",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-047",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-048",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-049",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-050",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-051",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-052",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-053",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-054",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-055",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-056",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-057",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-058",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-059",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-060",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-061",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-062",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-063",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-064",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-065",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-066",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-067",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-068",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-069",
+      "decision": null,
+      "note": ""
+    },
+    {
+      "id": "S0-070",
+      "decision": null,
+      "note": ""
+    }
+  ]
+}
