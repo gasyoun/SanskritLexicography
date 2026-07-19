@@ -34,9 +34,11 @@ Computed by Sonnet 5 (claude-sonnet-5); H925 emitter refactor by Sonnet 5
 import html
 import json
 import os
+import re
 import sys
 
 from csl_pyutil import render_review_sheet
+from review_sheet_standard import pwg_entry_href, standard_config
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -196,7 +198,7 @@ def to_csl_pyutil_item(item, evidence, v1_notes):
         panels.append(('Prior vote — v1 sheet, 19-07-2026 (superseded)',
                        '<div><b>%s</b></div><div class="muted" style="white-space:pre-wrap">%s</div>'
                        % (esc(dec), esc(note))))
-    return {
+    out = {
         'id': item['item_id'],
         'filt': item['stratum'],
         'title': hw_plain,
@@ -204,6 +206,14 @@ def to_csl_pyutil_item(item, evidence, v1_notes):
         'question': question,
         'panels': panels,
     }
+    # V4 (19-07-2026 standard): clickable header — only PWG entries have a
+    # per-word deep link (kosha colocation viewer via pwg_columns.tsv); the
+    # other dicts in this sample (ap/ap90/ben/bhs/mw/pw/sch) get no href.
+    if item['dict'] == 'pwg':
+        href = pwg_entry_href(re.sub(r'[/\\^]', '', item.get('headword_key2') or ''))
+        if href:
+            out['title_href'] = href
+    return out
 
 
 def main():
@@ -244,7 +254,14 @@ def main():
         'filters': [('A', 'A'), ('B', 'B'), ('C', 'C'), ('D', 'D'), ('E', 'E')],
         'generated': generated,
     }
-    doc = render_review_sheet(items, config)
+    # 19-07-2026 review-sheet standard (V3 visible id chips, V6 taller note
+    # box, V8 save-as banner). V7 mark_cyrillic is NOT applied: the sample
+    # carries no Cyrillic anywhere (renou_enriched is French-sourced state
+    # chips I-V; panels are IAST/Latin only). No rating config: this is an
+    # approve/reject/defer hypothesis sheet, not a DA translation-quality one.
+    config.update(standard_config(
+        save_as='RussianTranslation\\review\\%s_decisions.json' % SHEET_ID))
+    doc = render_review_sheet(items, config, extras=True)
 
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, 'w', encoding='utf-8', newline='\n') as f:

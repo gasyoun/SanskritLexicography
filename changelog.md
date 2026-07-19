@@ -49,6 +49,31 @@ not an error.
   `renou-pilot-v2-2026-07-19`; v1 3-vote export committed as the methodology record.
   Response doc incl. the ACC/NCC source-markup design answer:
   [`RENOU_PILOT_EVIDENCE_REMAKE_19.07.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_PILOT_EVIDENCE_REMAKE_19.07.26.md).
+- **One review-sheet standard: every pending SanskritLexicography sheet remade on csl-pyutil v0.3.0 (19-07-2026, Fable 5 `claude-fable-5`, [H1313](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1313-Fable_SanskritLexicography_review-standard-v030-orgwide-remake_19.07.26.md), executing [H1301](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1301-Opus_RussianTranslation_pwg-ru-review-sheet-ux-standard-regen_19.07.26.md) per MG's direct order)**:
+  the V1–V8 rulings from the h178_da vote ([register §2](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md))
+  shipped as [csl-pyutil v0.3.0](https://github.com/sanskrit-lexicon/csl-pyutil/releases/tag/v0.3.0)
+  (rating 1–5 below the card with approve-coupling + `rating` export field, visible id
+  chips, clickable IAST headword links, taller notes, `mark_cyrillic()` RU highlighting,
+  sheet_id+save-path banner) and consumed here: new shared helper
+  [`RussianTranslation/src/review_sheet_standard.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_sheet_standard.py)
+  (root→PWG-column kosha deep links, SLP1→IAST); ports of
+  [`h178_eval_bakeoff.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/h178_eval_bakeoff.py)
+  (DA slider → emitter 1–5 rating; RUBRIC_JS export carries `rating`),
+  [`build_h180_review_sheets.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_h180_review_sheets.py)
+  (hand-rolled donor → emitter consumer, fixing its bare `decisions.json` download name),
+  [`build_renou_pilot_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_renou_pilot_sheet.py),
+  NEW [`build_kochergina_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_kochergina_sheet.py)
+  (the hand-authored 4-row sheet gains a generator AND its missing decisions export, with a
+  localStorage vote-migration shim), and
+  [`article-comparison/_build_gloss_review_sheets.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/_build_gloss_review_sheets.py);
+  13 pending sheets regenerated. The h178 sheets render the frozen 30-gloss sample, so
+  bake-off comparability with the voted DA arm is preserved — the remaining three h178
+  votes are now UNBLOCKED. csl-atlas (JS stack) and SanskritGrammar (hand-authored
+  skeleton) ports queued as
+  [H1314](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1314-Opus_csl-atlas_review-sheets-standard-port_19.07.26.md)/[H1315](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1315-Opus_SanskritGrammar_review-sheets-standard-port_19.07.26.md);
+  two SanskritGrammar sheets found already fully voted on disk (precative 7/7,
+  w2-core-11 12/12, index rows were stale) → apply handoff
+  [H1316](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1316-Opus_SanskritGrammar_apply-voted-precative-w2core-visas_19.07.26.md).
 
 ## [1.28.0] — 19-07-2026
 
