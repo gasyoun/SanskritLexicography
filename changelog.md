@@ -14,6 +14,15 @@ not an error.
 
 ## [Unreleased]
 
+## [1.34.0] — 19-07-2026
+
+### Added
+- **[FINDINGS §98](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) — PD's inline sigla contain a near-homograph pair that similarity-clustering silently fuses** (19-07-2026, Opus 4.8 `claude-opus-4-8`, harvested while scoping [H1336](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1336-Opus_csl-atlas_pd-abbrev-vs-dcs-corpus-coverage_19.07.26.md)). The Poona Dictionary has **no `<ls>` citation layer** — it contributes zero edges to [`ls_citation_nodes.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_nodes.tsv) — so any consumer must regex-harvest sigla from running prose and then normalise variants (measured: 107,630 entries, **99.2 % carry a citation**, 5,231 distinct tokens over 416,767 occurrences, against a plausible ~800–1,500 real works). The obvious normalisation tool fuses the dictionary's two highest-value sources:
+  - **`MahāBhā.` (9,339) is the Mahābhārata; `MahāBh.` (1,940) is Patañjali's Mahābhāṣya.** One character apart, not variants. **Verified against actual citation contexts rather than inferred from abbreviation convention** — `MahāBhā.` carries parvan.adhyāya.śloka locators (`vii. 22. 33`) and cross-refs to `BrahmP.`/`ŚabdKaDru.`; `MahāBh.` carries Kielhorn vol.page.line plus an **`({%on%} …)` tail naming the commented rule** (`({%on%} P. viii. 4. 68)`). 1,317 vs 72 distinct locator shapes.
+  - **The `({%on%} …)` tail is the robust mechanical discriminator**, not the siglum spelling — a Mahābhāṣya citation names the sūtra it comments on, a Mahābhārata citation never does.
+  - Fusing them inflates one node to 11,279 citations and destroys the epic-vs-grammatical distinction that any corpus-coverage or citation-weighting measurement depends on. A blanket "never merge" rule is equally wrong: `Kāśi.`/`KāśiVṛ.` and `PadmP.`/`PadmaP.` in the same frequency head are genuine merges.
+  - Also records the other harvest noise classes (structural tokens, language labels, and **secondary scholarship** — `EI.` 3,281, `POK.`, `TURN.`) and the standing caveat that PD is published only `a-` to ~`apaca-`, so any harvested siglum list is PD's canon *as exercised under one letter*, not its full declared canon.
+
 ## [1.33.0] — 19-07-2026
 
 ### Added
