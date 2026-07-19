@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.27.0] — 19-07-2026
+
+### Added
+- **A67 negative-results methods paper drafted + full failure adjudication (18/19-07-2026, Fable 5 `claude-fable-5`, [H1268](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1268-Fable_SanskritLexicography_negative-results-dead-ends-methods-paper_18.07.26.md))**: the programme's first negative-results paper, [papers/A67_negative_results_computational_sanskrit_lexicography.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A67_negative_results_computational_sanskrit_lexicography.md) — 46 recorded failure candidates harvested from both DEAD_ENDS registries, both CONTRADICTIONS registries, FINDINGS, and the ⚫ RETIRED work-registry rows, each adjudicated INTRINSIC / INCIDENTAL / UNDERPOWERED / REVERSED / OUT-OF-SCOPE with per-row rationale in the committed audit trail [papers/A67_negative_results_adjudication_table.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A67_negative_results_adjudication_table.md). Verdict distribution 21+1 enter / 12+5 excluded / 7 out-of-scope — fewer than half of recorded failures survive as scientific negative results, itself the paper's first result. Four-class taxonomy (missing-signal · lossy-key · wrong-witness · statistical-artifact), the §8b MBH reversal as the falsifiability case study, venue shortlist (Insights from Negative Results in NLP · LRE · DSH). Fact-check pass ran before commit: a read-only verification agent checked every number/attribution against its cited source; its 10 findings (one invented detail, one wrong availability statement, a missed candidate, the I12 arithmetic wrinkle in DEAD_ENDS §8's 37.7%, and attribution fixes) are applied and disclosed in both files. Registered as **A67** (readiness 2/5) in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) the same pass.
+
 ## [1.26.0] — 18-07-2026
 
 ### Added
