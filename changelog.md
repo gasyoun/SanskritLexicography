@@ -14,6 +14,25 @@ not an error.
 
 ## [Unreleased]
 
+## [1.29.0] — 19-07-2026
+
+### Changed
+- **Renou Step-0 pilot sheet remade (v2) — per-state named evidence (19-07-2026, Fable 5 `claude-fable-5`, [H1311](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1311-Fable_RussianTranslation_renou-pilot-evidence-remake_19.07.26.md))**:
+  MG voted 3/70 v1 cards (all reject, [review/decisions.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions.md))
+  — all three rejections traced to one defect: the evidence panel showed lemma-global
+  facts (oldest text overall, bare counts) under a question about one specific state.
+  New [`renou_pilot_evidence.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/renou_pilot_evidence.py)
+  collects the full per-text DCS attestation list per sampled lemma (name, date, state,
+  confidence, registers; text→state resolution imported from `build_dcs_renou` verbatim)
+  and joins the SanskritGrammar [pwg_register_genre](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pwg_register_genre/README.md)
+  layer by SLP1 k1; the rebuilt sheet names the contested-state texts, lists the full
+  attestation surface, states a per-state judgment criterion (état II: Aṣṭādhyāyī
+  quotation suffices — per the S0-002 ruling; Manusmṛti is état III, never Vedic — per
+  S0-001), and renders the three v1 notes as prior-vote context. Sheet_id →
+  `renou-pilot-v2-2026-07-19`; v1 3-vote export committed as the methodology record.
+  Response doc incl. the ACC/NCC source-markup design answer:
+  [`RENOU_PILOT_EVIDENCE_REMAKE_19.07.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU_PILOT_EVIDENCE_REMAKE_19.07.26.md).
+
 ## [1.28.0] — 19-07-2026
 
 ### Added
