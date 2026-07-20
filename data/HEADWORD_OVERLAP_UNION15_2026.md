@@ -87,7 +87,11 @@ feminine folds and homograph collapse).
 - **Most-overlapping pairs (Jaccard):** CAE–CCS **0.672** (Cappeller's English
   and German editions of the same dictionary — the expected maximum), PWG–PWK
   **0.630** (Böhtlingk large vs small), MW–PWK **0.597**, MW–PWG **0.462**.
-  The lexicographic core is one Böhtlingk–Monier-Williams lineage.
+  The lexicographic core is one Böhtlingk–Monier-Williams lineage. **That
+  lineage is why "attested in N dicts" overstates corroboration** — see the
+  [witness-independence re-audit](WITNESS_INDEPENDENCE_REAUDIT_UNION15_2026.md),
+  which collapses these non-independent witnesses and finds the union's
+  corroborated share falls from 55.9% to 34.7% under the defensible collapse.
 - **Least-overlapping pairs:** SKD–VEI 0.008, AP–VEI 0.010, BHS–SKD 0.010 —
   the Vedic index (VEI), the Buddhist Hybrid lexicon (BHS) and the
   Sanskrit–Sanskrit Śabdakalpadruma (SKD) live in near-disjoint lexical worlds.
