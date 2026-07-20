@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §448) whatever its section, so existing numbers never shift; when a finding is later
+(currently §452) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number.
 
 ## Index
@@ -88,6 +88,10 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§74. The ls-graph citation matrix is degenerate for MW](#74-the-ls-graph-citation-matrix-is-degenerate-for-mw--its-top-abbreviations-sit-unresolved-use-the-citation-apparatus-siglum-matrix-for-cross-dict-citation-profiles) — MW resolves to 5 texts, top keys unresolved; BEN~MW=0.0 artifact; use the citation-apparatus siglum matrix; only 7/14 L0-edge dicts have `<ls>` adapters.
 - 🔴 [§77. Amarakosha and SIL semdom both bolt a formal annex onto a semantic taxonomy — and it is the same ~10% once polysemy is set aside](#77-amarakosha-and-sil-semdom-both-bolt-a-formal-annex-onto-a-semantic-taxonomy--and-it-is-the-same-10-once-polysemy-is-set-aside) — AK kāṇḍa 3 = 46.4% of synsets vs semdom top-9 = 9.4% of domains; minus nānārtha's polysemy register the form-class annexes converge (10.7% vs 9.4%); homonymy is the one annex bucket AK needed and SIL did not.
 - 🔴 [§447. PWG's own closing sense-marker glyph "〉" was never recognized by the sense-splitter — ~50% of German senses were silently merged into their first sub-sense](#447-pwgs-own-closing-sense-marker-glyph--was-never-recognized-by-the-sense-splitter--50-of-german-senses-were-silently-merged-into-their-first-sub-sense) — `microstructure.py`'s `MARK` regex only ever matched ASCII `)`, never `〉` (87,680 occurrences in `csl-orig/v02/pwg/pwg.txt`); fixed, verified 2500-card audit 2500→3738 senses (1.0→1.5/card), zero new anomalies.
+- 🟠 [§448. csl-atlas's PWG parse-rules census is stale and incomplete — 21 real markup tags missing, several listed counts wrong](#448-csl-atlass-pwg-parse-rules-census-is-stale-and-incomplete--21-real-markup-tags-missing-several-listed-counts-wrong) — `<bot>` (5,427 occurrences) and 20 other tags absent from the census; `div`/`H`/`span` counts disagree with a live scan.
+- 🟠 [§449. PWG's sense-closing glyph "〉" nests FOUR enumeration tiers, not two](#449-pwgs-sense-closing-glyph--nests-four-enumeration-tiers-not-two--greek-letters-and-roman-numeral-markers-are-unrecognised-by-the-ru-pipelines-splitter) — Greek letters (1,444 occurrences) and roman-numeral markers (30) unrecognised by `microstructure.py`'s `MARK` regex, the same bug class as §447 one tier deeper.
+- 🟠 [§450. The pwg_ru RU store's `h` field has inconsistent semantics — not a reliable homograph-number join key](#450-the-pwg_ru-ru-stores-h-field-has-inconsistent-semantics--not-a-reliable-homograph-number-join-key) — holds a digit, an empty string, or a root-word string within the same file; 93.78% of store rows (10,881/11,603) touch a headword whose corrected `〉` segmentation changed sense count.
+- 🟡 [§451. PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline](#451-pwg-ls-citation-resolution-is-already-at-98-far-above-the-previously-cited-724-baseline) — `pwgbib.txt` grew to 4,390 entries since the 72.4% measurement; re-measure with `pwg_sources.py coverage` before citing a stale ceiling.
 
 **Etymology & derivation**
 
@@ -895,6 +899,84 @@ zero anomalies, full `lod_acceptance.py` A/B/C/C5/C6/D/D2/D3 gate PASS).
 > before/after · [`lod_acceptance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/lod_acceptance.py)
 > full gate PASS. — RussianTranslation (pwg_ru / PWG++ German enrichment) · H879 · Sonnet 5
 > (`claude-sonnet-5`) · 13-07-2026
+
+### §448. csl-atlas's PWG parse-rules census is stale and incomplete — 21 real markup tags missing, several listed counts wrong
+
+🟠 **The measured PWG markup census (`csl-atlas/data/parse-rules/pwg.json`) undercounts and omits real tags against the current `csl-orig/v02/pwg/pwg.txt`.**
+Evidence: a direct regex scan of the live file found 21 element names never listed in the
+census's `field_inventory`/`unmapped_tags` — `gk`(326) `bot`(5427) `ocs`(58) `arab`(117)
+`mng`(40) `heb`(3) `iw`(53) `zoo`(134) `per`(7) `abot`(209) `ed`(47) `pe`(314) `rus`(22)
+`ger`(1) `azoo`(3) `mong`(2) `enum`(3) `ms`(2) `ns`(2) `zen`(1) `num`(1) — `<bot>` (botanical
+Latin-name markers) alone outnumbers `<h>` (homonym number, 6,499). Separately, three tags
+the census DOES list disagree with a live count: `div` census=113,613 vs live=100,080; `H`
+census=76 vs live=7; `span` census=88 vs live=0. The file itself is byte-identical to
+`origin/main` (not a stale local clone) — the census generator ran against a different
+snapshot or used a different counting method.
+Implication: any downstream consumer treating this census as ground truth (a validator, a
+coverage report, a data-layers plan) should live-scan the actual file rather than trust the
+census numbers; a re-run of csl-atlas's census generator is a genuine `@DECIDE`/backlog item.
+
+> **Source:** H1350 (PWG data-layers wave) step W1.2 — direct regex scan of `csl-orig/v02/pwg/pwg.txt`
+> against [`csl-atlas/data/parse-rules/pwg.json`](https://github.com/gasyoun/csl-atlas/blob/main/data/parse-rules/pwg.json),
+> validated by [`validate_pwg_markup.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/validate_pwg_markup.py)
+> (122,730/123,366 pass with the corrected 39-tag vocabulary, 0 unclassified). — csl-orig (pwg) / csl-atlas · 20-07-2026 · Sonnet 5 (`claude-sonnet-5`)
+
+### §449. PWG's sense-closing glyph "〉" nests FOUR enumeration tiers, not two — Greek letters and roman-numeral markers are unrecognised by the RU pipeline's splitter
+
+🟠 **PWG nests a real four-tier sense enumeration (digit → Latin letter → Greek letter → roman-numeral-like marker), but `microstructure.py`'s `MARK` regex only recognises the first two.**
+Evidence: `validate_pwg_markup.py`'s full-corpus pass found 393 records where a `〉` glyph is
+immediately preceded by a character the splitter's `MARK` regex (`(\d{1,2}|[a-z])[)〉]`,
+fixed for the ASCII/`〉` distinction by H879/§447) does not match: Greek lowercase letters
+(α β γ δ ε ζ η θ ι κ λ μ ν ξ ο — 1,444 occurrences corpus-wide) and single uppercase
+roman-numeral-like markers (I/V/U, 30 occurrences) — e.g. `1〉` → `a〉` → `α〉` as a genuine
+three-deep nested nesting, invisible to the existing splitter. Extending the glyph pattern to
+`([0-9]{1,3}|[a-z]|[α-ωϑϰ]|[IVU])[)〉]` cleared all 393 to a clean parse.
+Implication: `microstructure.py` (the live RU translation pipeline's sense-tree parser) still
+under-splits these ~1,474 occurrences today — the same class of bug §447 fixed for the
+ASCII/`〉` case, one enumeration tier deeper. Not yet applied to the production parser (a
+Wave-2 change, since it would alter real sense segmentation for existing RU-store rows).
+
+> **Source:** H1350 step W1.2 — [`validate_pwg_markup.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/validate_pwg_markup.py)
+> full-corpus run · glyph pattern verified in
+> [`pwg_markup.rnc`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/pwg_markup.rnc). — csl-orig (pwg) / RussianTranslation · 20-07-2026 · Sonnet 5 (`claude-sonnet-5`)
+
+### §450. The pwg_ru RU store's `h` field has inconsistent semantics — not a reliable homograph-number join key
+
+🟠 **`pwg_ru_translated.jsonl`'s `h` field holds a bare homograph digit for some rows, an empty string for others, and a ROOT-WORD STRING (e.g. `"gam"`, `"han"`) for others — mixed within the same file.**
+Evidence: live inspection of the first 20,000 store rows found `h` values including `"1"`,
+`"3"`, `""`, and root strings like `gam`/`han`/`vid`/`vah`/`dhā` — three incompatible shapes
+for what the field name implies is a single homograph-number column.
+Implication: any join keyed on `(key1, h)` (as a homograph-number pair) silently fails —
+`audit_sense_glyph.py`'s W1.4 pass originally assumed this join and got 0 matches on a
+2,500-record test slice before the bug was found; the audit now joins on `key1` alone
+(coarser, conservative-over-precise). A row-level join (exact `sense_tag`) needs the store's
+upstream pipeline stage that assigns `sense_tag`/`h` reverse-engineered first — not done here.
+
+> **Source:** H1350 step W1.4 — [`audit_sense_glyph.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/audit_sense_glyph.py)
+> · full-corpus run found 93.78% of RU-store rows (10,881/11,603, spanning 49/254 unique
+> key1) touch a headword whose corrected-vs-old `〉` segmentation changed sense count — the
+> row-rate is high because the affected headwords are disproportionately DCS-attested verb
+> roots, which carry far more store rows each than an average nominal headword (19.29% of
+> unique key1 affected vs. 93.78% of rows). Store confirmed byte-identical before/after
+> (sha256 unchanged, read-only throughout, FINDINGS §9); quarantine side file only, no
+> requeue. — RussianTranslation (pwg_ru) · 20-07-2026 · Sonnet 5 (`claude-sonnet-5`)
+
+### §451. PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline
+
+🟡 **`pwg_sources.py`'s pwgbib-backed resolver already resolves 98.2% of `<ls>` citations (85.1% of distinct source keys) against the current `pwgbib.txt` (4,390 entries) — well above the 72.4% baseline cited in earlier planning docs (FINDINGS §20).**
+Evidence: `pwg_sources.py coverage` run 20-07-2026: 572,546 citations, 4,042 distinct source
+keys, 562,468/572,546 citations resolved (98.2%). A deterministic extension recognising
+`ebend[a].` ("ebenda"/German "ibid.", 2,214 citations) as a same-as-previous-citation marker
+rather than an unresolved source pushed this to 98.6%. `pwgbib.txt` was evidently extended
+substantially since whatever measurement produced 72.4% — the two numbers describe different
+points in time, not a discrepancy in either measurement.
+Implication: don't cite 72.4% as PWG's current citation-coverage ceiling in future planning;
+re-measure with `pwg_sources.py coverage` first. The residual 599 keys / 7,864 citations are
+dominated by malformed multi-part continuation fragments (bare roman numerals, `(I)`/`(II)`
+volume markers) that need a human bibliographer, not a smarter regex.
+
+> **Source:** H1350 step W1.6 — [`extend_ls_coverage.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/extend_ls_coverage.py)
+> · [`pwg_ls_unresolved.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/pwg_ls_unresolved.tsv). — RussianTranslation (pwg_ru) · 20-07-2026 · Sonnet 5 (`claude-sonnet-5`)
 
 ## Etymology & derivation
 
