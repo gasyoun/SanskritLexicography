@@ -1,0 +1,11 @@
+# H1350 W1.8 -- additive xref sidecar (pwglex:seeAlso), layered onto pwg_de_lexicon.ttl
+# generator: RussianTranslation/src/extend_ontolex_xrefs.py, source edges: resolve_xrefs.py (W1.7)
+@prefix pwglex: <https://w3id.org/sanskrit-lexicon/pwg-ru/vocab#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/gam/de> pwglex:seeAlso <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aDyA> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/gam-3/de> pwglex:seeAlso <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aDyA> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/gam-2/de> pwglex:seeAlso <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/aDyA> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/gam/de> pwglex:seeAlso <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/vinigamaka> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/gam-3/de> pwglex:seeAlso <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/vinigamaka> .
+<https://w3id.org/sanskrit-lexicon/pwg-ru/entry/gam-2/de> pwglex:seeAlso <https://w3id.org/sanskrit-lexicon/pwg-ru/lemma/vinigamaka> .
