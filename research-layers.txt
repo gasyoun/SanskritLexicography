@@ -97,3 +97,7 @@ Can you do the needed at https://w3id.org/#new?
 
 +In H1310 VCP,SKD is good, but why we lack ARMH, ABCH, ACPH, ACSJ, NMMB? Amarukosha from https://sanskrit.uohyd.ac.in/scl/amarakosha/frame.html
 How can only Apte,PWK,PW,MW help us? MW itself has L., but does not tell nothing more about from which exactly kosha does the meaning come from.
+
++Sa-Ru gloss layer - where is it documented and how to improve it? /ask
+
++PWG data layers. What do we know about anatomy of PWG card and what can we add / extract from it? While doing the Russian translation, how can we enrich the German original markup as well? /ask
