@@ -24,7 +24,7 @@ to cover it.
   to [Uprava/FINDINGS.md](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) (infra/
   process side).
 - **Format / contract:** Append-only `§N` numbering — a new finding always takes the next free
-  number (currently §456) regardless of section; refuted/superseded findings are struck with
+  number (currently §457) regardless of section; refuted/superseded findings are struck with
   a reason, never renumbered or reused. Schema per finding: `###` heading, bold claim,
   `Evidence:`, `Implication:`, blockquoted `Source` with `— repo · date`. Colour-dot importance
   label (🔴/🟠/🟡) on both the claim line and its Index entry. An Index section at the top
@@ -73,7 +73,7 @@ to cover it.
   are struck (never deleted) on supersession, but the file itself has no end state.
 
 ## Deprecation status
-`active` — continuously appended hub, currently at §456.
+`active` — continuously appended hub, currently at §457.
 
 ## Related documents
 - [Uprava/FINDINGS.md](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) — the infra/process-side sibling registry; do not cross-file.

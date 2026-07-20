@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-07-20T15:26:26Z",
+ "generated_at": "2026-07-20T16:20:29Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 113,
+  "total": 114,
   "by_importance": {
    "3": 18,
-   "2": 77,
+   "2": 78,
    "1": 18
   },
   "by_origin": {
    "auto": 0,
-   "human": 113
+   "human": 114
   }
  },
  "layers": [
@@ -399,16 +399,16 @@
    "key": "STALENESS",
    "act": "decaying — confidence over time",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md",
-   "total": 113,
+   "total": 114,
    "by_importance": null,
    "by_origin": {
-    "auto": 113,
+    "auto": 114,
     "human": 0
    },
    "flags": {
     "red": 0,
     "yellow": 0,
-    "green": 113,
+    "green": 114,
     "unknown": 0
    },
    "entries": []
@@ -506,19 +506,19 @@
   }
  ],
  "staleness": {
-  "total": 113,
+  "total": 114,
   "red": 0,
   "yellow": 0,
-  "green": 113,
+  "green": 114,
   "unknown": 0
  },
  "verifiability": {
   "counts": {
-   "A": 94,
+   "A": 95,
    "B": 12,
    "C": 4,
    "D": 3,
-   "total": 113
+   "total": 114
   },
   "classes": {
    "A": "auto-reproducible (committed script + committed/registered/regenerable data)",
@@ -529,8 +529,8 @@
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md"
  },
  "totals": {
-  "rows": 172,
-  "auto": 119,
+  "rows": 173,
+  "auto": 120,
   "human": 53,
   "by_importance": {
    "3": 20,
@@ -542,6 +542,6 @@
   "candidates": 6,
   "categories": 20,
   "interlinks": 54,
-  "findings": 113
+  "findings": 114
  }
 }

@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.45.0] — 20-07-2026
+
+### Fixed
+- **§102 duplicate-heading collision resolved — the new integrity gate's first live catch (Opus 4.8 `claude-opus-4-8`).** [PR #618](https://github.com/gasyoun/SanskritLexicography/pull/618) (H1328, MW uttarapada × DCS Kompozity divergence) appended a **second** `### §102`, colliding with the incumbent DCS `text_sandhied` §102 and turning the epistemic-integrity gate red on `master` — caught the moment the [v1.44.0 gate](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/epistemic-integrity.yml) went live ([issue #624](https://github.com/gasyoun/SanskritLexicography/issues/624)). Per the [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) rule 4 the later claim moves: the H1328 finding renumbered **§102 → §456** (tombstone + Index entry 🟠), marker → §457. Regenerated `verifiability.json` (114 findings: A 95 · B 12 · C 4 · D 3), STALENESS (114 rows), and both dashboards; integrity gate green.
+
 ## [1.44.0] — 20-07-2026
 
 ### Added
