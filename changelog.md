@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.44.0] — 20-07-2026
+
+### Added
+- **H1362 follow-up: epistemic-integrity gate now runs on every PR + push to master (Opus 4.8 `claude-opus-4-8`).** New [`.github/workflows/epistemic-integrity.yml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/epistemic-integrity.yml) runs `tools/epistemic_integrity_check.py --structural-only` on any PR touching the registries/dashboards **and** on every push to `master`, opening a tracking issue if `master` ever goes red. Before this the check ran only from the monthly `findings-dashboard` workflow + the local pre-commit hook — which is exactly why the concurrent H1350×H1361 §448–451 collision could merge through two isolated-green PRs and sit red on `master` until noticed. Closes the residual follow-up from the [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) §6.
+
 ## [1.43.0] — 20-07-2026
 
 ### Added
