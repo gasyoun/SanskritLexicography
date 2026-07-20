@@ -1,8 +1,32 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 12-07-2026_
+_Created: 09-07-2026 · Last updated: 20-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 20-07-2026 — Sa→Ru gloss layer, wave-1 defect fixes (H1349 W1.1–W1.3)
+
+Three pipeline-defect fixes in the Sa→Ru gloss layer, measured before/after over
+one regenerated two-pass bootstrap (DCS `dcs_full.sqlite` 5.69M tokens + vidyut
+kosha 0.4.0 + `surface_glossary.jsonl`). Fixes + measurement Opus 4.8
+(`claude-opus-4-8`);
+[`src/measure_wave1_delta.py`](src/measure_wave1_delta.py) replays the OLD and NEW
+rule over identical inputs so each row isolates the code change alone. Regressions
+pinned by [`tests/test_saru_gloss_pipeline.py`](tests/test_saru_gloss_pipeline.py)
+(7 passing).
+
+| Defect | Before | After | Note |
+|---|--:|--:|---|
+| W1.1 distinct root keys in lemma→root map | 3,570 | 3,147 | 434 self-mapped pseudo-root rows split out to `dcs_lemma2root_unresolved.tsv` (net −423 distinct keys); `root_glossary` layer now 1,853 roots |
+| W1.2 homograph alternate rows | 9,521 | 11,289 | +1,768 rows; the old code inspected only `cands[1]`, so a genuine 3rd+ homograph was dropped — now the full trail over 9,733 forms |
+| W1.3 vidyut ambiguity rows recorded | 0 | 5,952 | `stats['ambiguous']` was a bare counter (4,133 forms); now a `vidyut_ambiguity.tsv` competitor trail mirroring the DCS schema |
+
+Two-pass bootstrap outcome (regen, fixed pipeline): 40,370 lemmas / 1,853 roots;
+surface-form resolution 43.6 % (DCS) → 58.7 % (+vidyut +marker). The published
+`SanskritRussian` data (still showing 2,021 roots) is **not** regenerated here —
+D8 fences republish behind a human GO; a wave-2-gated republish will drop the root
+count to ~1,853. Accuracy of these glosses is still unmeasured (coverage ≠
+accuracy — wave 2 publishes a per-tier precision figure).
 
 ## 12-07-2026 — E2 sense-genre vs DCS attestation (H833 / H350 backlog #3)
 
