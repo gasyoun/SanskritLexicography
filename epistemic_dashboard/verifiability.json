@@ -8,11 +8,11 @@
   "D": "not reproducible as stated (method/ledger/intermediate never committed, or a failed/phantom figure)"
  },
  "counts": {
-  "A": 94,
+  "A": 95,
   "B": 12,
   "C": 4,
   "D": 3,
-  "total": 113
+  "total": 114
  },
  "findings": {
   "1": {
@@ -1144,6 +1144,16 @@
    "recipe": null,
    "note": "",
    "title": "The DCS `dcs-conllu` treebank is only ~3.9 % dependency-parsed — corpus government/valency work must lean on co-occurren"
+  },
+  "456": {
+   "class": "A",
+   "cell": "A · `build_uttarapada_dict_vs_corpus.py`",
+   "primary_script": "build_uttarapada_dict_vs_corpus.py",
+   "script_exists": true,
+   "restricted_input": false,
+   "recipe": null,
+   "note": "",
+   "title": "MW's derivation markup and the DCS corpus are productive over the *same* compound final members but with near-disjoint f"
   }
  }
 }

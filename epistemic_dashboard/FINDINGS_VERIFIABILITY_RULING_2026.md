@@ -25,17 +25,17 @@ D is reserved for **evidentiary-integrity failure**, not mere storage inconvenie
 
 ## 3. Counts — the honest denominator
 
-**113 distinct findings** (post-[H1361](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1361-Opus_SanskritLexicography_findings-section-number-collision-ruling-and-dashboard-audit_20.07.26.md) citation-identity ruling **and** the H1350×H1361 §448–451 collision resolved by this pass — see the ruling doc §6, which renumbered the H1350 PWG block to §452–455). The earlier published boards read 77 (a 12-07 regeneration frozen while the file grew) and 109 (H1361, before the §452–455 split); neither is the true count now.**
+**114 distinct findings** (post-[H1361](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1361-Opus_SanskritLexicography_findings-section-number-collision-ruling-and-dashboard-audit_20.07.26.md) citation-identity ruling **and** the H1350×H1361 §448–451 collision resolved by this pass — see the ruling doc §6, which renumbered the H1350 PWG block to §452–455). The earlier published boards read 77 (a 12-07 regeneration frozen while the file grew) and 109 (H1361, before the §452–455 split); neither is the true count now.**
 
 | Class | Count | Share |
 |-------|-------|-------|
-| **A** auto-reproducible | 94 | 83.2% |
-| **B** re-probeable | 12 | 10.6% |
+| **A** auto-reproducible | 95 | 83.3% |
+| **B** re-probeable | 12 | 10.5% |
 | **C** historically fixed | 4 | 3.5% |
-| **D** not reproducible | 3 | 2.7% |
-| **Total** | **113** | 100% |
+| **D** not reproducible | 3 | 2.6% |
+| **Total** | **114** | 100% |
 
-Of the 94 class-A findings, **7** carry a restricted local input (·R): §13, §58, §65, §70, §78, §84, §454.
+Of the 95 class-A findings, **7** carry a restricted local input (·R): §13, §58, §65, §70, §78, §84, §454.
 
 ## 4. Method
 
@@ -160,10 +160,11 @@ Each finding was adjudicated from its own `> **Source:**` blockquote (the cited 
 | [§453](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) | **A** | A · `microstructure.py` | ✓ | PWG's sense-closing glyph "〉" nests FOUR enumeration tiers, not two — Greek letters and roman-numeral markers are unreco |
 | [§454](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) | **A** | A · `audit_sense_glyph.py` | ✓ | The pwg_ru RU store's `h` field has inconsistent semantics — not a reliable homograph-number join key |
 | [§455](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) | **A** | A · `pwg_sources.py` | ✓ | PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline |
+| [§456](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) | **A** | A · `build_uttarapada_dict_vs_corpus.py` | ✓ | MW's derivation markup and the DCS corpus are productive over the *same* compound final members but with near-disjoint f |
 
 ## 6. What consumes this
 
-- [STALENESS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md) — the **Re-check recipe** column is now filled from `verifiability.json` (zero `§TBD` in the class-A set), and the snapshot counts the true 113-finding denominator.
+- [STALENESS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md) — the **Re-check recipe** column is now filled from `verifiability.json` (zero `§TBD` in the class-A set), and the snapshot counts the true 114-finding denominator.
 - [RECIPES.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) — three new rows (§7 →§67, §8 →§71, §9 →§89) mint reproduction paths for high-value class-A findings that had none.
 - [epistemic dashboard](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/index.html) — a `verifiability` block renders the A/B/C/D split beside the staleness board.
 - [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) — the schema paragraph carries the class-D citation rule; the D rows are marked.

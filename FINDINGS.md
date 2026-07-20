@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §456) whatever its section, so existing numbers never shift; when a finding is later
+(currently §457) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -170,6 +170,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§449. Samāsa-type frequency does not exist in any org corpus — and the grammarians' canonical examples are corpus-ghosts (8/58 attested, max freq 147)](#449-samāsa-type-frequency-does-not-exist-in-any-org-corpus--and-the-grammarians-canonical-examples-are-corpus-ghosts-858-attested-max-freq-147)
 - 🟠 [§450. The roadmap's "OBS-T κ=0.42" was a phantom figure — no measured agreement exists for any OBS-T axis](#450-the-roadmaps-obs-t-κ042-was-a-phantom-figure--no-measured-agreement-exists-for-any-obs-t-axis)
 - 🟠 [§451. `10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos](#451-105281zenodo15834721-is-a-false-doi-cited-as-genuine-in-two-different-repos)
+- 🟠 [§456. MW's derivation markup and the DCS corpus are productive over the *same* compound final members but with near-disjoint first members](#456-mws-derivation-markup-and-the-dcs-corpus-are-productive-over-the-same-compound-final-members-but-with-near-disjoint-first-members-median-jaccard-000-56-share-zero--and-the-corpus-unattested-mw-stratum-is-kośaparticiple-formations-not-ghost-words) — renumbered from §102 (H1328 collision, 20-07-2026).
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -3217,7 +3218,9 @@ lookups.
 
 ---
 
-### §102. MW's derivation markup and the DCS corpus are productive over the *same* compound final members but with near-disjoint first members (median Jaccard 0.00, 56% share zero) — and the corpus-unattested MW stratum is kośa/participle formations, not ghost-words
+### §456. MW's derivation markup and the DCS corpus are productive over the *same* compound final members but with near-disjoint first members (median Jaccard 0.00, 56% share zero) — and the corpus-unattested MW stratum is kośa/participle formations, not ghost-words
+
+_↩ **Renumbered §102 → §456** (H1328 collision fix, 20-07-2026): this H1328 finding (PR [#618](https://github.com/gasyoun/SanskritLexicography/pull/618)) reused §102, already held by the DCS `text_sandhied` finding (the incumbent). Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) rule 4, the later claim moves. Caught by the new epistemic-integrity gate ([issue #624](https://github.com/gasyoun/SanskritLexicography/issues/624))._
 
 Measured 20-07-2026 (H1328) by joining the MWderivations `issue15` **uttarapada** (compound
 final-member) index — 19,177 distinct MW-kept finals, classes `UTTARAPADA` + `KRT_STEM_MEMBER`,
