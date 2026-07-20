@@ -94,6 +94,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§33. Indigenous dictionaries agree on derivation; Wilson is the outlier](#33-indigenous-dictionaries-agree-on-derivation-wilson-is-the-outlier) — 90–100 % agreement vs Wilson 23–61 %.
 - 🟠 [§34. The E abbreviation tag is polysemous across dicts](#34-the-e-abbreviation-tag-is-polysemous-across-dicts) — Etymology / Epithet / Epic; count the meaning, not the marker.
 - 🟠 [§35. Root-recovery tiers err on root form, not identity](#35-root-recovery-tiers-err-on-root-form-not-identity) — normalize to dhātupāṭha citation form; gate LLM roots through a known-dhātu set.
+- 🟠 [§103. The §83/§97 witness-collapse deflates the union's published "corroboration" 55.9% → 34.7%](#103-quantified-the-8397-witness-collapse-deflates-the-published-15-dict-union-corroboration-from-559-to-347--and-the-unions-own-table-is-pre-fold) — 68,651 "corroborated" headwords rest on one European lineage; Apte kept independent per §83; UNION.md table is pre-fold.
 
 **Encoding & normalization**
 
@@ -2835,6 +2836,44 @@ biggest remaining corpus-coverage gap. H1326 sourced **one** of these — Amarak
 > (`amar.txt` + provenance/negative-result-audit `README.md`) ·
 > [SanskritGrammar PR #459](https://github.com/gasyoun/SanskritGrammar/pull/459) · H1326 ·
 > 19-07-2026, Sonnet 5 (`claude-sonnet-5`).
+
+---
+
+### §103. Quantified: the §83/§97 witness-collapse deflates the published 15-dict union "corroboration" from 55.9% to 34.7% — and the union's own table is pre-fold
+
+🟠 §83 ruled that PWG, PW **and** MW collapse to ~one European witness, and §97 gave the
+reusable rule (exclude every dictionary derived from X before calling a hit corroboration) —
+but nothing downstream obeyed them: [UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md)'s
+"in N dicts" distribution over 323,425 headwords still treats all 15 dictionaries as
+independent. Applying the ruling to those counts (a **witness-independence map** over the 15
+dicts, then recomputing the distribution over independent *families*):
+
+- **Corroborated share (≥2 independent witnesses) falls 55.9% → 34.7%** under the §83/§97
+  ruling (P3, MW folded into the Petersburg witness): **68,651** headwords that look
+  multiply-attested rest on a single European lineage. Intermediate rungs: CAE≡CCS same-work
+  (P1) reclassifies 364; the documented Petersburg lineage PWG/PWK/SCH (P2) reclassifies
+  8,934. The ≥5-witness "well-attested" tier more than halves (43,825 → 12,135).
+- **Apte is NOT collapsed** — §83 names it the independent European control (gap-sensitivity
+  1.5× vs MW 12.3×), so a rung folding AP would contradict the finding; the map keeps it out.
+- **Second inflation channel, bounded not resolved:** of the 59,717 headwords whose entire
+  corroboration is MW + Petersburg, up to §97 v2's 30.8% L.-only rate ≈ **18,368** rest on MW
+  merely *listing* a koṣa word, not attesting it — exact split needs csl-orig `<ls>L.</ls>`
+  parsing, out of scope for a headword-membership union.
+- **Incidental:** UNION.md's published table is **pre-fold** — it sums to 323,662 (142,673
+  singletons + 180,989 in ≥2) vs the live post-fold `union_headwords.tsv` of 323,425 (237
+  `-inī` feminines folded); regenerate it to close the 237-headword drift.
+
+The re-audit's P0 identity map reproduces the live union's own `n_dicts` column exactly
+(regression anchor). **Consequence:** any "the tradition agrees / attested in N dicts" tally
+over the Cologne union must collapse to witness families first — the machine-readable map is
+committed for reuse.
+
+> **Source:** H1363 —
+> [`data/WITNESS_INDEPENDENCE_REAUDIT_UNION15_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/WITNESS_INDEPENDENCE_REAUDIT_UNION15_2026.md),
+> [`data/witness_independence_reaudit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/witness_independence_reaudit.py),
+> [`data/witness_tiers.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/witness_tiers.json) ·
+> [SanskritLexicography PR #602](https://github.com/gasyoun/SanskritLexicography/pull/602) ·
+> 20-07-2026, Opus 4.8 (`claude-opus-4-8`). ↔ operationalizes §83, §97, §28.
 
 ### §98. PD's inline sigla contain a near-homograph pair that similarity-clustering silently fuses — `MahāBhā.` is the Mahābhārata, `MahāBh.` is the Mahābhāṣya, and the locator shape tells them apart mechanically
 
