@@ -6,6 +6,15 @@ A single merged headword list across **15 dictionaries** (AP, BHS, BUR, CAE, CCS
 - **Fold candidates for editor review:** 3995 `-ā`/`-ī` feminines, **ranked** — 3569 high-confidence (masculine is `mfn`, so the feminine is its) vs 426 low (masc `m`-only — likely a distinct lexeme).
 - **Provenance:** in ≥2 dicts 180989, singletons 142673.
 
+> **Note (20-07-2026).** The table below is **pre-fold** — it sums to 323,662
+> (142,673 + 180,989), the count *before* the 237 `-inī` feminines were folded.
+> The current [`union_headwords.tsv`](union_headwords.tsv) is the post-fold
+> 323,425; regenerating the table on it shifts each bucket by the fold (total
+> drift 237). **"In N dicts" is not corroboration by N independent witnesses** —
+> CAE≡CCS are one work, PWG→PWK→SCH one lineage, MW's apparatus is
+> Petersburg-derived. The independence-corrected corroboration counts are in the
+> [witness-independence re-audit](../../data/WITNESS_INDEPENDENCE_REAUDIT_UNION15_2026.md).
+
 | in N dicts | headwords |
 |--:|--:|
 | 1 | 142673 |

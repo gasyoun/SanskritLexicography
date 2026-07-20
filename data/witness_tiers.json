@@ -1,0 +1,210 @@
+{
+  "_about": "H1363 dictionary witness-independence map. Operationalizes FINDINGS §83/§97. See WITNESS_INDEPENDENCE_REAUDIT_UNION15_2026.md.",
+  "generated_by": "witness_independence_reaudit.py",
+  "model": "claude-opus-4-8",
+  "edges": [
+    {
+      "from": "CCS",
+      "to": "CAE",
+      "type": "same-work",
+      "collapse_at": "P1",
+      "evidence": "Cappeller 1887 de / 1891 en, one dictionary two languages; Jaccard 0.672 (highest pair)"
+    },
+    {
+      "from": "PWG",
+      "to": "PWK",
+      "type": "revised-edition",
+      "collapse_at": "P2",
+      "evidence": "Böhtlingk's revised condensation of Böhtlingk-Roth; shared editor; Jaccard 0.630"
+    },
+    {
+      "from": "PWK",
+      "to": "SCH",
+      "type": "supplement",
+      "collapse_at": "P2",
+      "evidence": "Schmidt 1928 Nachträge, addenda keyed to PWK sense numbers"
+    },
+    {
+      "from": "PWG",
+      "to": "MW",
+      "type": "apparatus-derived",
+      "collapse_at": "P3",
+      "evidence": "FINDINGS §83/§97: MW inherited Petersburg apparatus; gap-sensitivity 12.3x; compiled from B-R"
+    },
+    {
+      "from": "MW",
+      "to": "MD",
+      "type": "abridgement",
+      "collapse_at": "P4",
+      "evidence": "Macdonell school abridgment of MW/Böhtlingk; 2.0% unique headwords"
+    },
+    {
+      "from": "MW",
+      "to": "AP",
+      "type": "consulted-independent",
+      "collapse_at": null,
+      "evidence": "§83 names Apte the independent control: gap-sensitivity 1.5x; never folded"
+    },
+    {
+      "from": "SKD",
+      "to": "VCP",
+      "type": "consulted-disjoint",
+      "collapse_at": null,
+      "evidence": "headword Jaccard 0.084; independent non-European anchor"
+    }
+  ],
+  "families": {
+    "PETERSBURG": [
+      "PWG",
+      "PWK",
+      "SCH",
+      "MW",
+      "MD"
+    ],
+    "CAPPELLER": [
+      "CAE",
+      "CCS"
+    ],
+    "APTE": [
+      "AP"
+    ],
+    "BURNOUF": [
+      "BUR"
+    ],
+    "BHS": [
+      "BHS"
+    ],
+    "RGVEDA_GRA": [
+      "GRA"
+    ],
+    "VEDIC_INDEX": [
+      "VEI"
+    ],
+    "MBH_NAMES": [
+      "INM"
+    ],
+    "SABDAKALPADRUMA": [
+      "SKD"
+    ],
+    "VACASPATYAM": [
+      "VCP"
+    ]
+  },
+  "family_note": "PETERSBURG members fold progressively: SCH+PWK+PWG at P2, MW at P3 (the §83/§97 ruling), MD at P4. AP is NOT a Petersburg member — it is the independent control.",
+  "policies": {
+    "P0": {
+      "label": "published (15 independent witnesses)",
+      "clusters": 15,
+      "map": {
+        "AP": "AP",
+        "BHS": "BHS",
+        "BUR": "BUR",
+        "CAE": "CAE",
+        "CCS": "CCS",
+        "GRA": "GRA",
+        "INM": "INM",
+        "MD": "MD",
+        "MW": "MW",
+        "PWG": "PWG",
+        "PWK": "PWK",
+        "SCH": "SCH",
+        "SKD": "SKD",
+        "VCP": "VCP",
+        "VEI": "VEI"
+      }
+    },
+    "P1": {
+      "label": "same-work collapse (14 clusters)",
+      "clusters": 14,
+      "map": {
+        "AP": "AP",
+        "BHS": "BHS",
+        "BUR": "BUR",
+        "CAE": "CAPPELLER",
+        "CCS": "CAPPELLER",
+        "GRA": "GRA",
+        "INM": "INM",
+        "MD": "MD",
+        "MW": "MW",
+        "PWG": "PWG",
+        "PWK": "PWK",
+        "SCH": "SCH",
+        "SKD": "SKD",
+        "VCP": "VCP",
+        "VEI": "VEI"
+      }
+    },
+    "P2": {
+      "label": "editorial-lineage collapse (12 clusters)",
+      "clusters": 12,
+      "map": {
+        "AP": "AP",
+        "BHS": "BHS",
+        "BUR": "BUR",
+        "CAE": "CAPPELLER",
+        "CCS": "CAPPELLER",
+        "GRA": "GRA",
+        "INM": "INM",
+        "MD": "MD",
+        "MW": "MW",
+        "PWG": "PETERSBURG",
+        "PWK": "PETERSBURG",
+        "SCH": "PETERSBURG",
+        "SKD": "SKD",
+        "VCP": "VCP",
+        "VEI": "VEI"
+      }
+    },
+    "P3": {
+      "label": "FINDINGS §83/§97 ruling — MW into Petersburg (11 clusters)",
+      "clusters": 11,
+      "map": {
+        "AP": "AP",
+        "BHS": "BHS",
+        "BUR": "BUR",
+        "CAE": "CAPPELLER",
+        "CCS": "CAPPELLER",
+        "GRA": "GRA",
+        "INM": "INM",
+        "MD": "MD",
+        "MW": "PETERSBURG",
+        "PWG": "PETERSBURG",
+        "PWK": "PETERSBURG",
+        "SCH": "PETERSBURG",
+        "SKD": "SKD",
+        "VCP": "VCP",
+        "VEI": "VEI"
+      }
+    },
+    "P4": {
+      "label": "strict — + MD school abridgment into Petersburg (10 clusters)",
+      "clusters": 10,
+      "map": {
+        "AP": "AP",
+        "BHS": "BHS",
+        "BUR": "BUR",
+        "CAE": "CAPPELLER",
+        "CCS": "CAPPELLER",
+        "GRA": "GRA",
+        "INM": "INM",
+        "MD": "PETERSBURG",
+        "MW": "PETERSBURG",
+        "PWG": "PETERSBURG",
+        "PWK": "PETERSBURG",
+        "SCH": "PETERSBURG",
+        "SKD": "SKD",
+        "VCP": "VCP",
+        "VEI": "VEI"
+      }
+    }
+  },
+  "l_tier_estimate": {
+    "mw_l_only_headwords": 59697,
+    "mw_total": 194084,
+    "mw_l_rate": 0.3076,
+    "union_headwords_with_mw": 193852,
+    "corroboration_only_mw_plus_petersburg": 59717,
+    "est_mw_l_only_listing_of_those": 18368,
+    "caveat": "exact per-headword split needs csl-orig <ls>L.</ls>"
+  }
+}

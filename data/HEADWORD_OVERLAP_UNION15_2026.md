@@ -62,6 +62,18 @@ Sanity anchors: PWG 106,054 ≈ the frozen
 export and MW 193,852 ≈ MW-unique-key1-193978 (small deltas = the union's
 feminine folds and homograph collapse).
 
+> **Errata (20-07-2026, H1363).** The low **unique shares** above — PWG 2.4%,
+> CCS 0.6%, CAE 1.7%, MD 2.0%, PWK 5.4% — read as "these dictionaries add almost
+> nothing," but that is a **direct measurement of inheritance, not redundancy**:
+> CAE≡CCS are one work, PWK/SCH descend from PWG, and MW's inventory is
+> Petersburg-derived ([FINDINGS §83/§97](../FINDINGS.md)). Their headwords are
+> "shared" because they were *copied down one lineage*, so those shares should be
+> read as lineage-internal, and the pairwise overlaps that dominate this matrix
+> (MW∩PWG 94,753, MW∩PWK 128,971, CAE∩CCS 27,008) are **inheritance mass, not
+> independent agreement**. The corroboration these overlaps appear to give is
+> re-audited under a witness-independence map in
+> [WITNESS_INDEPENDENCE_REAUDIT_UNION15_2026.md](WITNESS_INDEPENDENCE_REAUDIT_UNION15_2026.md).
+
 ## Shared-count matrix (diagonal = dict totals)
 
 | | AP | BHS | BUR | CAE | CCS | GRA | INM | MD | MW | PWG | PWK | SCH | SKD | VCP | VEI |
@@ -87,7 +99,12 @@ feminine folds and homograph collapse).
 - **Most-overlapping pairs (Jaccard):** CAE–CCS **0.672** (Cappeller's English
   and German editions of the same dictionary — the expected maximum), PWG–PWK
   **0.630** (Böhtlingk large vs small), MW–PWK **0.597**, MW–PWG **0.462**.
-  The lexicographic core is one Böhtlingk–Monier-Williams lineage.
+  The lexicographic core is one Böhtlingk–Monier-Williams lineage. **That
+  lineage is why "attested in N dicts" overstates corroboration** — see the
+  [witness-independence re-audit](WITNESS_INDEPENDENCE_REAUDIT_UNION15_2026.md),
+  which collapses these non-independent witnesses (operationalizing the
+  [FINDINGS §83/§97](../FINDINGS.md) ruling) and finds the union's corroborated
+  share falls from 55.9% to 34.7% once MW folds into the Petersburg witness.
 - **Least-overlapping pairs:** SKD–VEI 0.008, AP–VEI 0.010, BHS–SKD 0.010 —
   the Vedic index (VEI), the Buddhist Hybrid lexicon (BHS) and the
   Sanskrit–Sanskrit Śabdakalpadruma (SKD) live in near-disjoint lexical worlds.
