@@ -2692,14 +2692,14 @@ measure engine gaps from this join**, because the DCS-derived generated forms bl
 surface set — reported as the finding, not hidden (0 genuine engine gaps, nothing routed to the
 csl-inflect give-back H185). `tense_caveat` follows [§91](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
 (DCS `Past` lumps aorist + perfect): 16,339 AG rows carry a `Past` attestation. The
-`forms`-vs-`inflections` generated-side table ambiguity is logged separately in
-[CONTRADICTIONS §3](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md),
-now **briefed (H1366, 20-07-2026) with a `forms` recommendation at high confidence
-but not yet ruled** (a human call): the two tables share only 168,034 of 426,410
-non-heritage `(form, lemma)` pairs — different data products, not two counts of one
-(`inflections` is a distinct single-engine `cologne_mwinflect` paradigm asset). The
-ruling-ready decide brief is at
-[kosha DECIDE_H1366](https://github.com/gasyoun/kosha/blob/main/docs/DECIDE_H1366_GENERATED_SIDE_FORMS_VS_INFLECTIONS.md).
+`forms`-vs-`inflections` generated-side table ambiguity was logged separately in
+[CONTRADICTIONS §3](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
+and is now **✅ ruled (H1366, 20-07-2026, accepted by MG): `forms` is canonical** for
+the A3→A4/W2a pipeline — the two tables share only 168,034 of 426,410 non-heritage
+`(form, lemma)` pairs (different data products, not two counts of one; `inflections`
+is a distinct single-engine `cologne_mwinflect` paradigm asset, an optional
+cross-check). Recorded as
+[kosha PLAN D13](https://github.com/gasyoun/kosha/blob/main/docs/PLAN_KOSHA_CONCORDANCE_Q3_2026H2.md).
 
 > **Source:** [morphology-attestation build report](https://github.com/gasyoun/kosha/blob/main/data/concordance/MORPHOLOGY_ATTESTATION_BUILD_REPORT.md)
 > + manifest row `morphology-attestation-audit` ([datasets.json](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json)) ·
