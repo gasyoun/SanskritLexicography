@@ -1,0 +1,5 @@
+{
+ "schema": "ls_source_map_ext/0.1",
+ "description": "Deterministic sidecar extension to pwg_sources.py's pwgbib resolver (D8: no LLM, no synthesised sources). Currently empty of literal string mappings -- the one addition this pass made (the \"ebend[a].\" ibid pattern) is a RULE, applied in extend_ls_coverage.py itself (IBID_RE), not a per-string map entry, since it matches a class of tokens rather than one fixed source name.",
+ "entries": {}
+}
