@@ -43,7 +43,7 @@ jobs:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 2
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
       - run: pip install pyyaml
       - name: Validate all YAML
         run: |
@@ -71,7 +71,7 @@ jobs:
             echo "has_python=true" >> $GITHUB_OUTPUT
           fi
       - if: steps.check.outputs.has_python == 'true'
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: "3.11"
       - if: steps.check.outputs.has_python == 'true'
@@ -86,7 +86,7 @@ jobs:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 2   # the changelog guard diffs HEAD~1..HEAD on push; depth 1 has no HEAD~1
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
       - uses: actions/setup-node@v6
@@ -229,7 +229,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
