@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.41.0] — 20-07-2026
+
 ### Added
 - **H1389 union corroboration: text-attestation regrade + post-fold table (Opus 4.8 `claude-opus-4-8`), follow-up to H1363.** (1) **Regrade:** new [`data/mw_ls_textattest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/mw_ls_textattest.py) parses MW's `<ls>L.</ls>` from csl-orig `mw.txt`, reproducing [FINDINGS §97 v2](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) exactly (59,697/194,084 = 30.8% of MW headwords carry no text citation); the committed mask [`mw_non_textattested_slp1.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/mw_non_textattested_slp1.txt) drives new `-TA` policies in [`witness_independence_reaudit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/witness_independence_reaudit.py) that count MW as a witness only when it *cites a text*. **Measured result** (supersedes the H1363 ~18,368 estimate): P3 corroborated share 34.7% → **33.8%** (larger drop at P2, 53.1% → 46.2%, where MW is still separate); **17,386 union headwords are MW-listed ghosts** — MW's only dictionary, only listed, **zero text witnesses**. (2) **Post-fold table:** regenerated UNION.md's pre-fold "in N dicts" table on the live post-fold 323,425 file (in ≥2 180,804, singletons 142,621), closing the 237-headword drift. Updates the H1363 report, `witness_tiers.json`, and FINDINGS §103 with measured figures.
 
