@@ -1,0 +1,119 @@
+# pwg_markup.rnc -- RelaxNG compact grammar for the PWG raw markup language
+#
+# H1350 (PWG data-layers wave), step W1.2. The one genuinely NEW component
+# in this wave -- no DTD/XSD/RNG existed anywhere in csl-orig before this
+# (audit-confirmed; only the TEI header references tei_all.rnc, and that
+# governs the header, not a PWG record body).
+#
+# SCOPE NOTE (spike S1, VERIFICATION.md): the raw `<L>...<LEND>` stream is
+# NOT well-formed XML -- the header line packs milestone tags directly
+# against their trailing text with no delimiter (`<pc>1-0001<k1>a<k2>a`),
+# and `<div>`/`<info>`/`<H>` are self-contained milestones with no closing
+# counterpart (the TEI `<pb/>`/`<lb/>` convention, not XML well-formedness).
+# A literal trang/jing RNG compiler expects a well-formed XML infoset, which
+# this format is not without a normalizing transform first (out of scope for
+# this wave; flagged as a Wave-2 candidate). This file is therefore the
+# CANONICAL DESCRIPTIVE grammar -- the authoritative, versioned statement of
+# the tag vocabulary, pairing discipline, and milestone/span distinction --
+# and RussianTranslation/src/validate_pwg_markup.py is a hand-written
+# structural validator enforcing the IDENTICAL rules stated here (same
+# element inventory, same pairing/milestone classification), since no RNG
+# compiler is available in this environment to execute this file directly.
+# D5's "RNG over raw markup" intent is met at the specification level; V2's
+# 100%-pass-or-bucket acceptance is enforced by the Python validator.
+
+default namespace = ""
+
+# ---------------------------------------------------------------------
+# Top-level: the source is a sequence of inter-record volume milestones
+# and records. <H> (volume/section running head) occurs BETWEEN records,
+# never inside one -- confirmed by direct scan (0 occurrences inside any
+# <L>...<LEND> span).
+# ---------------------------------------------------------------------
+start = (volume_head | record)*
+
+volume_head = element H { inline_marker* }
+
+# ---------------------------------------------------------------------
+# Record: <L>{id}<pc>{locus}<k1>{key1}<k2>{key2}(<h>{homograph})? on the
+# header line (milestone fields packed against trailing text, per the
+# scope note above), followed by body content, closed by <LEND>.
+# id may be a float (Cologne supplements, ~635 records -- pwg_mask.py
+# HEADER_RE comment).
+# ---------------------------------------------------------------------
+record = element L { record_id }, pc_field, k1_field, k2_field, h_field?,
+          body_content*,
+          element LEND { text? }
+
+record_id = xsd:string { pattern = "[0-9]+(\.[0-9]+)?" }
+pc_field  = element pc { text }
+k1_field  = element k1 { text }
+k2_field  = element k2 { text }
+h_field   = element h  { xsd:string { pattern = "[0-9]+" } }
+
+# ---------------------------------------------------------------------
+# Body content: milestones (no closing tag), paired spans (open+close,
+# balanced per record -- verified 100% across all 123,366 records for
+# every tag below), and inline non-tag markers.
+# ---------------------------------------------------------------------
+body_content = milestone | span | text
+
+milestone = element div  { attribute n { text }? }
+          | element info { attribute n { text } }
+          | page_locus
+
+# [Page1-0002]-style archival locus, printed inline, not an XML tag --
+# modelled as a token pattern rather than an element.
+page_locus = xsd:string { pattern = "\[Page[^\]]*\]" }
+
+# Paired spans -- 30 distinct element names, ALL verified open==close per
+# record over the full 123,366-record corpus (2026-07-20 live scan; see
+# .ai_state.md Dev Notes for the discrepancy against the older csl-atlas
+# parse-rules census, which lists only 7 of these 30 and undercounts
+# several milestone tags too).
+span = element ls   { attribute n { text }?, mixed_content }  # literature citation
+     | element ab   { attribute n { text }?, mixed_content }  # abbreviation / diasystem
+     | element is   { attribute n { text }?, mixed_content }  # inflected/stem surface, Indian grammatical apparatus
+     | element lex  { mixed_content }                          # grammar / POS / gender
+     | element lang { mixed_content }                          # source-language label
+     | element hom  { mixed_content }                          # homonym display number
+     | element F    { mixed_content }                          # footnote-style aside
+     | element VN   { mixed_content }                          # variant-note aside ("streiche das Beispiel...")
+     | element fr   { mixed_content }                          # foreign/free-rendering aside
+     | element gk   { mixed_content }                          # Greek script
+     | element bot  { mixed_content }                          # botanical Latin name
+     | element abot { mixed_content }                          # botanical Latin name, alternate form
+     | element zoo  { mixed_content }                          # zoological Latin name
+     | element azoo { mixed_content }                          # zoological Latin name, alternate form
+     | element ocs  { mixed_content }                          # Old Church Slavonic
+     | element arab { mixed_content }                          # Arabic
+     | element heb  { mixed_content }                          # Hebrew
+     | element per  { mixed_content }                          # Persian
+     | element rus  { mixed_content }                          # Russian
+     | element ger  { mixed_content }                          # German (cognate cited as foreign form)
+     | element mng  { mixed_content }                          # Mongolian (short form)
+     | element mong { mixed_content }                          # Mongolian (alternate form)
+     | element iw   { mixed_content }                          # Iwrit/Hebrew-adjacent citation marker
+     | element pe   { mixed_content }                          # Persian, alternate marker
+     | element zen  { mixed_content }                          # Zend/Avestan
+     | element ed   { mixed_content }                          # editorial note
+     | element enum { mixed_content }                          # enumeration marker
+     | element ms   { mixed_content }                          # manuscript reference
+     | element ns   { mixed_content }                          # unresolved -- attested, low-frequency (2 occurrences)
+     | element num  { mixed_content }                          # numeral marker
+
+mixed_content = (inline_marker | span | text)*
+
+# ---------------------------------------------------------------------
+# Inline non-tag markers -- brace-delimited, not XML elements.
+# ---------------------------------------------------------------------
+inline_marker = sanskrit_form | german_gloss | sense_glyph
+
+sanskrit_form = xsd:string { pattern = "\{#[^#]*#\}" }   # SLP1 -> IAST Sanskrit
+german_gloss  = xsd:string { pattern = "\{%[^%]*%\}" }   # German-vs-Latin gloss switch
+# four enumeration tiers: digit, Latin letter, Greek letter (incl. the
+# theta/kappa variant symbol forms), and a small set of roman-numeral-like
+# uppercase markers (I/V/U) -- attested, not previously documented anywhere
+# (H1350 W1.2 finding; microstructure.py's splitter only recognises the
+# first two tiers).
+sense_glyph   = xsd:string { pattern = "([0-9]{1,3}|[a-z]|[\x{3B1}-\x{3C9}\x{3D1}\x{3F0}]|[IVU])[)\x{3009}]" }
