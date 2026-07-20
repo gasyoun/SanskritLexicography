@@ -3042,3 +3042,34 @@ Fixed same pass: `data/FAIR_RELEASE_1.md` §Related and csl-observatory's `CITAT
 corrected to state the OBS-T dataset has **no minted DOI yet**.
 
 > **Source:** [H1364](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1364-Sonnet_SanskritLexicography_contradictions-duplicate-section-repair-and-ch14-doi-ruling_20.07.26.md) · [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) / [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) · 20-07-2026, Sonnet 5 (`claude-sonnet-5`).
+
+### §104. The DCS `dcs-conllu` treebank is only ~3.9 % dependency-parsed — corpus government/valency work must lean on co-occurrence, not arcs, and read absence as "unknown"
+
+The [dcs-conllu](https://github.com/gasyoun/dcs-conllu) treebank looks like a fully parsed
+dependency corpus — every `.conllu` token carries a lemma, UPOS, morphological `Case`, and
+`HEAD`/`DEPREL` columns. It is not: of its **754 726 sentences (5 688 416 tokens across 15 900
+files)**, only **29 433 sentences (3.9 %) actually carry dependency arcs** — the rest have `_`
+in the HEAD/DEPREL columns. Measured while adjudicating Scherzl's government catalogue against
+the corpus (H1372).
+
+Consequences for any government/valency/kāraka study over this treebank:
+
+- **A zero dep-arc count is never disconfirming on its own.** ~96 % of the corpus cannot supply
+  an arc, so "verb V has no case-C dependent" is overwhelmingly a parse gap, not evidence V
+  cannot govern C. Report the parse ceiling as the headline, not the confirmation rate.
+- **Co-occurrence must be measured against chance, never raw.** A frequent verb co-occurs with
+  every case, so raw co-occurrence is uninformative; use observed ÷ (verb_freq · corpus base-rate
+  of the case). Corpus base rates (share of sentences containing the case): Nom 74 %, Acc 49 %,
+  Gen 25 %, Ins 23 %, Loc 21 %, Abl 8 %, Dat 6 %. Only a *below-chance* co-occurrence is a real
+  negative signal (e.g. jñā + genitive co-occurs 1 533× — never a contradiction despite no arc).
+
+**Equivalence, so you can pick either serialisation:** `dcs-conllu` is the CoNLL-U serialisation
+of the same DCS-2026 master as `VisualDCS/src/DCS-data-2026/dcs_full.sqlite` — token count
+**5 688 416** and **11 096** distinct verb lemmas match the sqlite exactly. Prefer the conllu form
+when you need HEAD/DEPREL (the sqlite would need a join); prefer the sqlite for lemma/preverb
+lookups.
+
+> **Source:** [H1372](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1372-Opus_SanskritGrammar_scherzl-government-relations-vs-dcs-treebank-adjudication_20.07.26.md) ·
+> measured by [`aggregate_dcs_gov.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/aggregate_dcs_gov.py),
+> reported in [`SCHERZL_GOVERNMENT_CORPUS_ADJUDICATION_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/SCHERZL_GOVERNMENT_CORPUS_ADJUDICATION_2026.md) ·
+> 20-07-2026, Opus 4.8 (`claude-opus-4-8`).
