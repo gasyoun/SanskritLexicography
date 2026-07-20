@@ -10,6 +10,18 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — Sa→Ru gloss layer wave-3 coverage spike: vidyut-cheda NO-GO (H1349 W3)
+
+- Measured whether `vidyut.cheda` compound segmentation can recover the 78,842 unresolved
+  forms. `src/build_compound_split.py` applies a strict precision gate (≥2 tokens + every
+  member glossable) and recovers 36.4% (28,673 forms) — but a 2-judge panel scored those
+  recoveries at **18% gloss precision / 60% outright wrong**, vs the wave-2 baseline of 85.3%.
+  **NO-GO: not wired into the rollup** — vidyut-cheda is a running-text segmenter and shatters
+  isolated OOV forms into stem + spurious glossable particle. The 85% layer stays unregressed;
+  recommended path (backlog) is the DharmaMitra neural segmenter over the aligned verse text.
+  Finding: `gold/saru_gloss_wave3_cheda_coverage.md`; gate has a regression test
+  (`tests/test_saru_gloss_wave3.py`, wired into CI).
+
 ### Added — Sa→Ru gloss layer measured precision (H1349 wave 2)
 
 - **First accuracy measurement** of the gloss layer (every prior number was coverage). A
