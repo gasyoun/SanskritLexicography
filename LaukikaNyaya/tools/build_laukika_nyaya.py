@@ -142,6 +142,14 @@ CITATION_MARKERS = re.compile(
     re.I,
 )
 CURLY_OPEN_QUOTE = re.compile(r'^[“‘]')
+# A verse-final danda/double-danda (।/॥) as the LAST substantive content on
+# a line -- only trailing OCR noise (quotes, digits, a parenthetical page
+# ref, whitespace; no further Devanagari) may follow it. Used by
+# prev_is_prose() (H803 follow-up fix) to tell "this heavy-Devanagari
+# previous line is a DIFFERENT entry's own verse closing cleanly" (not
+# mid-citation) apart from "still inside an ongoing quotation" (no danda,
+# or one followed by more Devanagari prose).
+VERSE_CLOSE_TAIL = re.compile(r'[।॥][^ऀ-ॿ]*$')
 
 # Real section boundaries, found by grepping this OCR text for the
 # Devanagari part-ordinal + English "N HANDFUL" title lines (`grep -n
@@ -340,14 +348,25 @@ def parse_index(lines):
 
 def prev_is_prose(lines, idx):
     """True if the nearest preceding non-empty line is itself heavy
-    Devanagari prose (candidate likely sits mid-verse-quotation, not at a
-    fresh heading)."""
+    Devanagari prose AND does not itself close with a verse-final
+    danda/double-danda (।/॥) -- candidate likely sits mid-verse-quotation,
+    not at a fresh heading. A heavy-Devanagari previous line that DOES
+    close with a danda (trailing OCR noise -- quotes, digits, a
+    parenthetical page ref -- tolerated after it) marks a DIFFERENT
+    entry's own explanation ending cleanly; the candidate right after it
+    is an ordinary fresh heading, not a continuation, and must not be
+    rejected (H803 follow-up fix, root-caused 20-07-2026 -- see README.md
+    "Follow-up" #2: this heuristic previously conflated 'sits mid-citation'
+    with 'immediately follows a different entry's own closing verse',
+    losing genuine headwords like कारणगुणप्रक्रमन्यायः at OCR line 4885)."""
     j, seen = idx - 1, 0
     while j >= 0 and seen < 2:
         s = lines[j].strip()
         if s:
             seen += 1
-            return deva_ratio(s) > 0.5 and len(s) > 15
+            if not (deva_ratio(s) > 0.5 and len(s) > 15):
+                return False
+            return not VERSE_CLOSE_TAIL.search(s)
         j -= 1
     return False
 

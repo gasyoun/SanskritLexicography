@@ -14,6 +14,12 @@ not an error.
 
 ## [Unreleased]
 
+## [1.47.0] — 21-07-2026
+
+### Added
+
+- **H803 CLOSED: LaukikaNyaya reaches its ≥400-record target, 404 records (Sonnet 5 `claude-sonnet-5`, picked up via `/next-task`).** Implements the `prev_is_prose()` pipeline-wide fix [`LaukikaNyaya/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/README.md)'s 20-07-2026 pass had explicitly deferred (verification cost). Root cause: the heuristic rejected any index-crossref candidate whose preceding line was heavy Devanagari, conflating "sits mid-citation" with "immediately follows a different entry's own closing verse." Fix: only reject when that preceding line does NOT itself close with a verse-final daṇḍa/double-daṇḍa. Re-running the fixed pipeline recovers 27 more headword boundaries (base lane 302 → 329) with **zero records lost** (verified by diffing the full boundary set before/after). Because Sanskrit verse padas commonly end in a daṇḍa even mid-citation, every one of the 18 brand-new candidates beyond the known-12 was independently checked by a 2-stage adversarial review (1 initial classifier + 2 skeptic/refuters per GENUINE verdict, 50 agent calls, Sonnet 5 `claude-sonnet-5` ultracode workflow) against the raw OCR context, the book's own back-matter index, and the committed dataset: 15 confirmed genuine (previously swallowed verbatim into the preceding entry's runaway explanation field), 3 rejected as duplicates of content already present under a different OCR lane/spelling. Combined with the 3 of the original hand-verified 12 the fix still can't auto-recover (kept as a documented manual addition), the corrected 329-record base lane reconciles against the unchanged 301-record clean-scan lane to **404 records**, crossing the ≥400 Definition-of-Done target for the first time. New [`LaukikaNyaya/tools/apply_h803_followup2_prevprose_fix.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/tools/apply_h803_followup2_prevprose_fix.py) documents the exclusions/additions. Registered as [FEATURES_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md) F45 — closes the last open deliverable of the 2004 AIOC-Varanasi manifesto («Сентенции и афористические цитаты»).
+
 ## [1.46.0] — 20-07-2026
 
 ### Added
