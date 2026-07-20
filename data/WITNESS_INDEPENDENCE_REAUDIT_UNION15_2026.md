@@ -187,6 +187,30 @@ witnesses — a natural "solidly attested" threshold:
 The ≥5-witness set more than halves under the documented collapse and shrinks to
 **28%** of its published size under the established ruling (P3).
 
+## The second inflation channel — MW's L.-only listings
+
+Folding MW into the Petersburg witness (P3) is one deflation. There is a second,
+partly *inside* MW, that the union cannot fully resolve but can bound.
+[§97 v2](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+found that MW's own `<ls>L.</ls>` ("lexicographers") marker flags **59,697 of
+MW's 194,084 headwords (30.8%)** as koṣa-sourced with *no text citation* — MW is
+merely *listing* the word from another dictionary, not independently attesting it
+from a text.
+
+Locate this in the corroboration counts: MW is a witness for **193,852** union
+headwords. Of these, **59,717** have their *entire* corroboration in MW + the
+Petersburg family — they are exactly the headwords that drop from ≥2 to a single
+witness when MW folds in (the P2→P3 newly-single set). Applying §97's aggregate
+30.8% rate, **≈18,368** of those 59,717 rest on MW *listing* a Petersburg/koṣa
+word rather than attesting it — corroboration that is neither independent (it is
+Petersburg-internal) nor even text-grounded (it is a lexicographer's cross-copy).
+
+This is an **upper-bound estimate**, not a per-headword resolution: the union
+carries headword membership, not citation type, so the exact L.-only subset needs
+csl-orig `<ls>L.</ls>` parsing (deliberately out of scope here — flagged as the
+strongest available next step). The direction is unambiguous: text-attestation
+corroboration is **lower** than even the P3 figure.
+
 ## Full re-audited distributions
 
 Headwords by number of **distinct independent witnesses** under each policy
@@ -240,7 +264,9 @@ post-fold file to close the drift.
   [witness_independence_reaudit.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/witness_independence_reaudit.py)
   — consumes `union_headwords.tsv` as-is (never rebuilt), applies each policy's
   cluster map, counts distinct clusters per headword. `--check` asserts P0 ==
-  the file's `n_dicts` histogram.
+  the file's `n_dicts` histogram. The machine-readable map (per-edge ruling +
+  family partition + L.-tier estimate) is
+  [witness_tiers.json](https://github.com/gasyoun/SanskritLexicography/blob/master/data/witness_tiers.json).
 - The independence map is a **headword-attestation** model: it asks whether two
   dictionaries independently attest that a *word exists*, not whether their
   *glosses* agree. A dictionary can inherit a headword list while writing
@@ -266,7 +292,25 @@ post-fold file to close the drift.
 Extends dataset **E40** (the
 [15-dict overlap matrix](https://github.com/gasyoun/SanskritLexicography/blob/master/data/HEADWORD_OVERLAP_UNION15_2026.md),
 [FAIR Release #1](https://github.com/gasyoun/SanskritLexicography/blob/master/data/FAIR_RELEASE_1.md))
-with an independence-corrected corroboration layer. Same CC-BY-4.0 terms; the two
-output TSVs are derived-from `union_headwords.tsv` and carry no new source text.
+with an independence-corrected corroboration layer. Same CC-BY-4.0 terms; the
+output TSVs + JSON are derived-from `union_headwords.tsv` and carry no new source
+text.
+
+## Decisions taken (H1363 autonomy contract)
+
+- **Artifact location: `data/`, not `HeadwordLists/`.** The handoff named
+  `HeadwordLists/WITNESS_INDEPENDENCE.md` + `HeadwordLists/witness_tiers.json`.
+  Placed instead in `data/` beside the sibling it directly extends
+  ([HEADWORD_OVERLAP_UNION15_2026.md](HEADWORD_OVERLAP_UNION15_2026.md), the
+  overlap matrix over the same union) and the other derived cross-dict datasets,
+  with a self-identifying filename per the org naming rule. The machine-readable
+  `witness_tiers.json` is delivered as specified.
+- **Recompute consumes the union directly**, not `headword_overlap_matrix.tsv`.
+  The union (`union_headwords.tsv`) is the source the overlap matrix is itself
+  derived from and carries the full per-headword dict list — so computing
+  distinct-family counts per headword from it is exact and reuse-clean; the
+  pairwise matrix is a lossy projection for this purpose.
+- **Family map follows §83 literally:** Apte is not a Petersburg member (the
+  named independent control); MW folds at P3, MD at P4.
 
 _Dr. Mārcis Gasūns_

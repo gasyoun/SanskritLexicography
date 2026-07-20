@@ -62,6 +62,18 @@ Sanity anchors: PWG 106,054 ≈ the frozen
 export and MW 193,852 ≈ MW-unique-key1-193978 (small deltas = the union's
 feminine folds and homograph collapse).
 
+> **Errata (20-07-2026, H1363).** The low **unique shares** above — PWG 2.4%,
+> CCS 0.6%, CAE 1.7%, MD 2.0%, PWK 5.4% — read as "these dictionaries add almost
+> nothing," but that is a **direct measurement of inheritance, not redundancy**:
+> CAE≡CCS are one work, PWK/SCH descend from PWG, and MW's inventory is
+> Petersburg-derived ([FINDINGS §83/§97](../FINDINGS.md)). Their headwords are
+> "shared" because they were *copied down one lineage*, so those shares should be
+> read as lineage-internal, and the pairwise overlaps that dominate this matrix
+> (MW∩PWG 94,753, MW∩PWK 128,971, CAE∩CCS 27,008) are **inheritance mass, not
+> independent agreement**. The corroboration these overlaps appear to give is
+> re-audited under a witness-independence map in
+> [WITNESS_INDEPENDENCE_REAUDIT_UNION15_2026.md](WITNESS_INDEPENDENCE_REAUDIT_UNION15_2026.md).
+
 ## Shared-count matrix (diagonal = dict totals)
 
 | | AP | BHS | BUR | CAE | CCS | GRA | INM | MD | MW | PWG | PWK | SCH | SKD | VCP | VEI |

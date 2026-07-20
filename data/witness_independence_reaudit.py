@@ -48,9 +48,19 @@ H1363. Run 20-07-2026 by Opus 4.8 (claude-opus-4-8).
 """
 
 import argparse
+import json
 import sys
 from collections import Counter
 from pathlib import Path
+
+# §97 v2 aggregate: MW's own <ls>L.</ls> ("lexicographers") marker flags
+# koṣa-sourced senses with NO text citation. 59,697 of MW's 194,084 headwords
+# (30.8%) are L.-only. We cannot resolve this per-headword from the union (which
+# carries membership, not citation type), so we apply the aggregate rate as an
+# upper-bound estimate on MW's non-text-attesting corroboration mass.
+MW_L_ONLY = 59697
+MW_TOTAL_194084 = 194084
+MW_L_RATE = MW_L_ONLY / MW_TOTAL_194084  # 0.3076
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -288,6 +298,80 @@ def main():
         newly = singles - p0_singles
         print(f"  {pid}  {singles}  {corrob}  +{newly}  {max(d)}")
 
+    # --- §97 L.-only tier: size MW's non-text-attesting corroboration mass ---
+    # Headwords where MW is a witness, and — the double-count core — headwords
+    # whose ENTIRE corroboration is MW + the Petersburg family (they drop from
+    # >=2 to 1 witness exactly when MW folds into Petersburg, i.e. the P2->P3
+    # newly-single set). Up to MW_L_RATE of those rest on MW merely *listing* a
+    # koṣa word, not independently attesting it.
+    n_mw_witness = sum(1 for codes, _n in union_rows if "MW" in codes)
+    p2, p3 = dists["P2"], dists["P3"]
+    mw_over_petersburg = p3.get(1, 0) - p2.get(1, 0)  # newly-single P2->P3
+    print("\n=== §97 L.-only tier (MW corroboration that is koṣa-listing) ===")
+    print(f"    union headwords with MW as a witness: {n_mw_witness}")
+    print(f"    headwords whose only corroboration is MW + Petersburg "
+          f"(P2->P3 newly-single): {mw_over_petersburg}")
+    print(f"    of those, up to {MW_L_RATE:.1%} (§97) are MW L.-only listing, "
+          f"not text attestation: ~{round(mw_over_petersburg * MW_L_RATE)}")
+    print("    (exact per-headword split needs csl-orig <ls>L.</ls> parsing)")
+
+    # --- machine-readable witness map: per-edge ruling + family partition ---
+    tiers = {
+        "_about": "H1363 dictionary witness-independence map. Operationalizes "
+                  "FINDINGS §83/§97. See WITNESS_INDEPENDENCE_REAUDIT_UNION15_2026.md.",
+        "generated_by": "witness_independence_reaudit.py",
+        "model": "claude-opus-4-8",
+        "edges": [
+            {"from": "CCS", "to": "CAE", "type": "same-work",
+             "collapse_at": "P1", "evidence": "Cappeller 1887 de / 1891 en, one "
+             "dictionary two languages; Jaccard 0.672 (highest pair)"},
+            {"from": "PWG", "to": "PWK", "type": "revised-edition",
+             "collapse_at": "P2", "evidence": "Böhtlingk's revised condensation "
+             "of Böhtlingk-Roth; shared editor; Jaccard 0.630"},
+            {"from": "PWK", "to": "SCH", "type": "supplement",
+             "collapse_at": "P2", "evidence": "Schmidt 1928 Nachträge, addenda "
+             "keyed to PWK sense numbers"},
+            {"from": "PWG", "to": "MW", "type": "apparatus-derived",
+             "collapse_at": "P3", "evidence": "FINDINGS §83/§97: MW inherited "
+             "Petersburg apparatus; gap-sensitivity 12.3x; compiled from B-R"},
+            {"from": "MW", "to": "MD", "type": "abridgement",
+             "collapse_at": "P4", "evidence": "Macdonell school abridgment of "
+             "MW/Böhtlingk; 2.0% unique headwords"},
+            {"from": "MW", "to": "AP", "type": "consulted-independent",
+             "collapse_at": None, "evidence": "§83 names Apte the independent "
+             "control: gap-sensitivity 1.5x; never folded"},
+            {"from": "SKD", "to": "VCP", "type": "consulted-disjoint",
+             "collapse_at": None, "evidence": "headword Jaccard 0.084; "
+             "independent non-European anchor"},
+        ],
+        "families": {
+            "PETERSBURG": ["PWG", "PWK", "SCH", "MW", "MD"],
+            "CAPPELLER": ["CAE", "CCS"],
+            "APTE": ["AP"], "BURNOUF": ["BUR"], "BHS": ["BHS"],
+            "RGVEDA_GRA": ["GRA"], "VEDIC_INDEX": ["VEI"], "MBH_NAMES": ["INM"],
+            "SABDAKALPADRUMA": ["SKD"], "VACASPATYAM": ["VCP"],
+        },
+        "family_note": "PETERSBURG members fold progressively: SCH+PWK+PWG at "
+                       "P2, MW at P3 (the §83/§97 ruling), MD at P4. AP is NOT "
+                       "a Petersburg member — it is the independent control.",
+        "policies": {
+            pid: {"label": label, "clusters": len(set(cmap.values())),
+                  "map": cmap}
+            for pid, label, _note, cmap in policies
+        },
+        "l_tier_estimate": {
+            "mw_l_only_headwords": MW_L_ONLY, "mw_total": MW_TOTAL_194084,
+            "mw_l_rate": round(MW_L_RATE, 4),
+            "union_headwords_with_mw": n_mw_witness,
+            "corroboration_only_mw_plus_petersburg": mw_over_petersburg,
+            "est_mw_l_only_listing_of_those": round(mw_over_petersburg * MW_L_RATE),
+            "caveat": "exact per-headword split needs csl-orig <ls>L.</ls>",
+        },
+    }
+    with open(here / "witness_tiers.json", "w", encoding="utf-8", newline="\n") as fh:
+        json.dump(tiers, fh, ensure_ascii=False, indent=2)
+        fh.write("\n")
+
     # long-format distribution TSV
     with open(here / "witness_independence_reaudit.tsv", "w",
               encoding="utf-8", newline="\n") as fh:
@@ -301,6 +385,7 @@ def main():
 
     print(f"\nwrote {here / 'witness_independence_reaudit.tsv'}")
     print(f"wrote {here / 'witness_independence_clusters.tsv'}")
+    print(f"wrote {here / 'witness_tiers.json'}")
 
 
 if __name__ == "__main__":
