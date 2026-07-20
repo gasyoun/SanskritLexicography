@@ -131,3 +131,12 @@ editorial/cross-reference ones translate to Russian, both decided 10-07-2026):
   chat and in GitHub issue/PR/release bodies. Do not put repository file paths
   in bare backticks when a human is expected to click them. In GitHub bodies,
   use full `blob`/`tree` URLs; relative links do not resolve reliably there.
+
+## Operational hazard notes
+
+Destructive-risk facts for this repo (do-not-rerun scripts, decoys, traps) are
+registered centrally in an org-private hub
+([Uprava DANGER_FACTS.md](https://github.com/gasyoun/Uprava/blob/main/DANGER_FACTS.md),
+org members only); the public-safe subset is mirrored in the generated block of
+[AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/AGENTS.md). Check them
+before running anything that writes.
