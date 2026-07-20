@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §457) whatever its section, so existing numbers never shift; when a finding is later
+(currently §458) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -50,6 +50,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§6. No printed frequency dictionary of Sanskrit exists](#6-no-printed-frequency-dictionary-of-sanskrit-exists) — DCS-frequency ordering is genuine innovation.
 - 🔴 [§7. DCS lemma data is keyed in two transliterations](#7-dcs-lemma-data-is-keyed-in-two-transliterations) — SLP1 vs IAST across the two frequency files.
 - 🔴 [§8. Unaccented DCS cannot distinguish present class I from VI](#8-unaccented-dcs-cannot-distinguish-present-class-i-from-vi) — 117 spurious corpus-derived class additions were reverted.
+- 🔴 [§457. DCS covers ~25% of the Poona Dictionary's citation mass but ~78% of DCS's own tokens — the classical core, not PD's encyclopedic breadth; and a siglum prefix-merge fuses MahāBhā. (Mahābhārata) with MahāBh. (Mahābhāṣya)](#457-dcs-covers-25-of-the-poona-dictionarys-citation-mass-but-78-of-dcss-own-tokens--the-classical-core-not-pds-encyclopedic-breadth-and-a-siglum-prefix-merge-fuses-mahābhā-mahābhārata-with-mahābh-mahābhāṣya) — first PD×DCS measurement (PD letter a-): residue = purāṇas/kośas/classical kāvya (Padma 3506, Mahābhāṣya 1934, no Raghuvaṃśa); ⚠️ never prefix-cluster sigla.
 - 🟠 [§62. Varga distribution is almost epoch-stable (Cramér's V = 0.037)](#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) — p-values carry no signal at DCS scale; the 2014 dissertation prose read high p as «growth»; shares agree with the p-table against the prose.
 - 🔴 [§9. DCS OccId and sent_id are not unique keys](#9-dcs-occid-and-sent_id-are-not-unique-keys) — PK collisions silently dropped tokens and 449 sentences before synthetic keys.
 - 🟠 [§10. DCS UD tense marking conflates aorist and perfect](#10-dcs-ud-tense-marking-conflates-aorist-and-perfect) — both surface as Tense=Past; recover via the 2021 export.
@@ -3221,6 +3222,49 @@ lookups.
 ### §456. MW's derivation markup and the DCS corpus are productive over the *same* compound final members but with near-disjoint first members (median Jaccard 0.00, 56% share zero) — and the corpus-unattested MW stratum is kośa/participle formations, not ghost-words
 
 _↩ **Renumbered §102 → §456** (H1328 collision fix, 20-07-2026): this H1328 finding (PR [#618](https://github.com/gasyoun/SanskritLexicography/pull/618)) reused §102, already held by the DCS `text_sandhied` finding (the incumbent). Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) rule 4, the later claim moves. Caught by the new epistemic-integrity gate ([issue #624](https://github.com/gasyoun/SanskritLexicography/issues/624))._
+
+### §457. DCS covers ~25% of the Poona Dictionary's citation mass but ~78% of DCS's own tokens — the classical core, not PD's encyclopedic breadth; and a siglum prefix-merge fuses MahāBhā. (Mahābhārata) with MahāBh. (Mahābhāṣya)
+
+🔴 First measurement, in this org or the field, of how much of the **Poona Dictionary**'s
+cited source canon the **DCS** corpus holds. Over PD's published letter-`a-` volumes (107,630
+entries, 398,359 citation occurrences), the two coverage numbers point in opposite directions
+and answer different questions:
+
+- **PD-citation-weighted coverage = 25.2 %** — of what PD actually cites, three-quarters
+  points at works DCS does not hold.
+- **DCS-token-weighted coverage = 77.9 %** (2026) / 74.1 % (2021) — of DCS's *own* token
+  mass, ~78 % sits in texts PD cites (the Mahābhārata alone is 1.15 M of DCS's 5.69 M tokens).
+- **Title-level = ~2.4–4.8 %** — DCS holds ~118 of the ~2,445 distinct works PD cites under
+  `a-` alone.
+
+**Reading: DCS is representative of the archaic/classical *core* but not of PD's encyclopedic
+*breadth*.** The residue (75 % of PD's primary citation mass) is four clusters DCS structurally
+lacks: **purāṇas** (Padma 3,506; Brahmāṇḍa 1,857; Bhaviṣya 1,558; a dozen more), the
+**lexicographic tradition** (Vaijayantī, Medinī, Nānārtha), **classical kāvya/nāṭaka** (*no
+Raghuvaṃśa, no Kādambarī, no Śiśupālavadha*), and the **grammatical commentary layer**
+(Mahābhāṣya, the Vārttikas). Corpus work grounded in the high-frequency classical core is
+well-aligned with the lexicographic gold standard; work needing purāṇic/kāvya/kośa breadth
+must supplement DCS. DCS's 2021→2026 growth was concentrated in exactly PD's Vedic core
+(Śatapathabrāhmaṇa 3.7k→144k tokens; +3.8 pp token-weighted coverage).
+
+⚠️ **The reusable gotcha — never prefix-cluster Sanskrit sigla.** `MahāBhā.` (9,337 hits =
+**Mahābhārata**, the epic) and `MahāBh.` (1,934 hits = **Mahābhāṣya**, Patañjali's grammar)
+share a five-character prefix and differ by one vowel-length mark. Any similarity/prefix
+threshold that "normalises spelling variants" will silently fuse the single largest epic with
+the single most important grammatical commentary — one is covered by DCS, the other is
+residue, so the merge corrupts coverage in both directions. Every siglum merge in the
+high-frequency head needs eyes on it, not a threshold. (This is why the crosswalk anchors on
+DCS's bounded 276-text inventory and adjudicates the head by hand rather than clustering.)
+
+> **Source:** report [`reports/PD_DCS_CORPUS_COVERAGE_2026.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/reports/PD_DCS_CORPUS_COVERAGE_2026.md)
+> + crosswalk [`data/pd/pd_dcs_text_crosswalk.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/pd_dcs_text_crosswalk.tsv)
+> + [`pd_siglum_families.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/pd_siglum_families.tsv)
+> + [`pd_dcs_metrics.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/pd_dcs_metrics.json) ·
+> PD source = [`pd.txt`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/external_src/pd/pd.txt) (external, read-only) ·
+> DCS = [`VisualDCS` Corpus-Delta 2021–2026](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Corpus-Delta-2021-2026/per_text_token_delta.csv) ·
+> [H1336](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1336-Opus_csl-atlas_pd-abbrev-vs-dcs-corpus-coverage_19.07.26.md)
+> ([csl-atlas PR #276](https://github.com/sanskrit-lexicon/csl-atlas/pull/276)) — csl-atlas · 20-07-2026, Opus 4.8 (`claude-opus-4-8[1m]`).
+> **Scope caveat:** PD published a–~`apaca-` only (6 of 37+ vols) — this is PD's canon *as exercised under a-*, not its full declared canon.
 
 Measured 20-07-2026 (H1328) by joining the MWderivations `issue15` **uttarapada** (compound
 final-member) index — 19,177 distinct MW-kept finals, classes `UTTARAPADA` + `KRT_STEM_MEMBER`,
