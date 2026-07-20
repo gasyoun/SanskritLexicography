@@ -22,6 +22,31 @@ copied their headword list from a common ancestor confirm the ancestor once, not
 twice. Several of the 15 dictionaries fail that test — some flagrantly (CAE and
 CCS are literally one dictionary printed in two languages).
 
+**This does not start from zero — it operationalizes a standing ruling.**
+[FINDINGS §83](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+already ruled, measured six ways in
+[csl-atlas A10](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/article_21_apparatus_not_errors.md),
+that **"PWG, PW and MW collapse to roughly one European witness"** — MW inherited
+Böhtlingk's *apparatus* (which words to enter, which texts to cite, in what
+order), so MW↔Petersburg agreement is *inheritance, not independent
+confirmation*. [FINDINGS §97](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+gives the bibliographic reason (MW was compiled substantially *from*
+Böhtlingk-Roth) and states the reusable rule: **when measuring whether a word is
+attested elsewhere, first exclude every dictionary derived from the source.** The
+gap is that the published union "in ≥2 dicts" counts still treat all 15 as
+independent. This document supplies the missing step: it *quantifies* what the
+§83/§97 ruling does to those counts.
+
+Two load-bearing constraints §83 places on the map, honored below:
+- **Apte is the named independent European control**, not a derivative: its
+  sensitivity to PWG's inclusion decisions is 1.5× (an independent compiler's
+  baseline) against MW's 12.3×, and it independently supplies 54.6% of the
+  indigenous words PWG omits — *more* than MW. So AP is **never folded**.
+- The non-independence is of **scholarship/inventory, not typesetting**: MW
+  carries none of Böhtlingk's mechanical errors and recomposed its English prose.
+  So this re-audit deflates **attestation** corroboration (does the word exist),
+  which is exactly what a headword-membership count measures.
+
 ## The 15 dictionaries
 
 | Code | Dictionary | Lang | Kind |
@@ -69,18 +94,18 @@ graph TD
 
     PWG -->|revised edition| PWK
     PWK -->|supplement| SCH
-    PWG -->|apparatus-derived| MW
+    PWG -->|apparatus-derived §83| MW
     CCS -->|same work, other language| CAE
-    PWG -.->|partial source| AP
-    MW  -.->|partial source| AP
-    PWG -.->|partial source / abridgement| MD
-    MW  -.->|partial source / abridgement| MD
-    SKD -.->|partial source| VCP
+    PWG -.->|abridgement P4| MD
+    MW  -.->|abridgement P4| MD
+    MW  -.->|consulted, but independent §83| AP
+    SKD -.->|consulted, but disjoint J≈0.08| VCP
 ```
 
 Solid edges = collapse-worthy dependence (the derivative is not an independent
-witness). Dashed edges = partial dependence (the derivative added substantial
-independent material; collapsed only in the aggressive upper-bound policy).
+witness; collapsed by P3). Dashed edges = a *consulted* source that nonetheless
+stays an independent witness — either measured independent (AP per §83; VCP by
+overlap) or collapsed only in the strict P4 rung (MD).
 
 **Edge grounding.**
 
@@ -89,35 +114,39 @@ independent material; collapsed only in the aggressive upper-bound policy).
 | CCS → CAE | **same work** | Cappeller's German (1887) and English (1891) editions of *one* dictionary; CAE–CCS Jaccard **0.672**, the single highest pair in the [overlap matrix](https://github.com/gasyoun/SanskritLexicography/blob/master/data/HEADWORD_OVERLAP_UNION15_2026.md). Two editions, one witness. |
 | PWG → PWK | **revised edition** | PWK is Böhtlingk's own revised condensation of Böhtlingk-Roth ([DICTIONARY_CHAIN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DICTIONARY_CHAIN.md)); shared editor, shared source-reading tradition. Jaccard **0.630**. |
 | PWK → SCH | **supplement** | Schmidt 1928 is pure *Nachträge* (addenda) to PWK, keyed to its sense numbers ([DICTIONARY_CHAIN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DICTIONARY_CHAIN.md)). Not an independent inventory — an extension of one. |
-| PWG → MW | **apparatus-derived** | MW inherited the Petersburg citation apparatus/skeleton — [FINDINGS §28](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md): 0.81 citation-order concordance, "structural inheritance of the apparatus, independent authorship of the glosses." MW's *glosses* are independent English; its *headword inventory* is largely Petersburg-derived. |
-| PWG/MW ⇢ AP, MD | **partial source** | Apte and Macdonell drew their headword inventory from Böhtlingk/MW plus independent indigenous material. AP still keeps ~40% unique headwords (see below), so this is a partial, not total, dependence. |
-| SKD ⇢ VCP | **partial source** | Both Bengal indigenous kośas; Vācaspatyam post-dates and consulted Śabdakalpadruma — **but** SKD–VCP Jaccard is only **≈0.084**, so at the headword level they attest largely disjoint inventories. Kept independent on the data. |
+| PWG → MW | **apparatus-derived** | The load-bearing edge, and **already ruled**: [FINDINGS §83](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) — MW inherited Böhtlingk's apparatus; whether MW enters a word is **12.3×** more predicted by PWG's decision than an independent compiler's (vs Apte 1.5×). [§97](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md): MW compiled substantially *from* Böhtlingk-Roth. [§28](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md): 0.81 citation-order concordance. MW's *glosses* are independent English; its *headword inventory* is Petersburg-derived. |
+| MW ⇢ AP | **consulted, NOT collapsed** | Apte consulted MW/Böhtlingk **but is §83's named independent control** — gap-sensitivity 1.5× (independent-compiler baseline), ~40% unique headwords, and supplies 54.6% of PWG-omitted indigenous words (more than MW). Never folded. |
+| PWG/MW ⇢ MD | **abridgement (P4 only)** | Macdonell's *Practical Dictionary* is a school abridgment of MW/Böhtlingk (2.0% unique headwords) — folded into Petersburg only in the strict P4 rung. |
+| SKD ⇢ VCP | **consulted, disjoint** | Both Bengal indigenous kośas; Vācaspatyam consulted Śabdakalpadruma — **but** SKD–VCP Jaccard is only **≈0.084**, so at the headword level they attest largely disjoint inventories. §83's independent non-European anchor; kept separate. |
 
 **Independent by construction (no collapse at any policy).** GRA (Ṛgveda),
 VEI (Vedic index), INM (Mahābhārata name index) are **text concordances** — each
 attests that a word occurs in a specific primary corpus, the strongest kind of
 independent witness. BHS (Edgerton's Buddhist corpus) and BUR (Burnouf, on the
-Wilson/Bopp line, not Petersburg) are independent traditions.
+Wilson/Bopp line, not Petersburg) are independent traditions. §97 explicitly
+names AP, GRA, BHS as the genuinely independent evidence.
 
 ## Collapse policies — the independence ladder
 
 Two dictionaries sharing a cluster count as **one** independent witness of any
-headword they both attest. The ladder runs from the published identity map to an
-aggressive upper bound; each rung is labelled by the evidentiary strength of the
-collapse it adds. Machine map:
+headword they both attest. The ladder runs from the published identity map (P0)
+to the §83/§97 ruling (P3) and one strict step beyond (P4). Machine map:
 [witness_independence_clusters.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/data/witness_independence_clusters.tsv).
 
 | Policy | Clusters | Collapse added | Strength |
 |---|--:|---|---|
-| **P0** published | 15 | — (identity; each dict its own witness) | baseline |
-| **P1** same-work | 14 | {CAE, CCS} | **indisputable** |
-| **P2** editorial-lineage | 12 | + {PWG, PWK, SCH} = Petersburg | **documented** |
-| **P3** apparatus-genealogy | 11 | + MW into Petersburg | **defensible** |
-| **P4** aggressive | 9 | + {AP, MD} into the Western lineage | **upper bound** (over-collapses) |
+| **P0** published | 15 | — (identity; each dict its own witness) | baseline (the count now published) |
+| **P1** same-work | 14 | {CAE, CCS} | **indisputable** (one book, two languages) |
+| **P2** editorial-lineage | 12 | + {PWG, PWK, SCH} = Petersburg | **documented** (revised edition + supplement) |
+| **P3** §83/§97 ruling | 11 | + MW into Petersburg | **the established finding** |
+| **P4** strict | 10 | + MD (school abridgment) into Petersburg | **defensible** (AP deliberately kept out) |
 
-P4 is reported as an outer bound only: AP retains ~40% unique headwords, so
-folding it fully into the Petersburg lineage overstates the dependence. The
-honest reading of the evidence sits at **P2 (documented) to P3 (defensible)**.
+**P3 is the substantive answer** — it is FINDINGS §83's "PWG, PW and MW collapse
+to roughly one European witness" applied to the published counts, which is
+exactly what this re-audit was asked to produce. P1/P2 are intermediate (they
+under-collapse by leaving MW out); P4 is one honest step further (Macdonell's
+abridgment). Apte is **not** on this ladder at any rung — §83 measured it
+independent, so folding it would contradict the repo's own finding.
 
 ## Re-audited corroboration — headline
 
@@ -129,19 +158,21 @@ The number of headwords the published count calls **corroborated** (attested in
 | **P0** published | 142,621 | 180,804 | **55.9%** | — |
 | **P1** same-work | 142,985 | 180,440 | 55.8% | +364 |
 | **P2** editorial-lineage | 151,555 | 171,870 | 53.1% | +8,934 |
-| **P3** apparatus-genealogy | 211,272 | 112,153 | **34.7%** | +68,651 |
-| **P4** aggressive | 228,683 | 94,742 | 29.3% | +86,062 |
+| **P3** §83/§97 ruling | 211,272 | 112,153 | **34.7%** | +68,651 |
+| **P4** strict (+MD) | 214,556 | 108,869 | 33.7% | +71,935 |
 
 **The finding.** The "same work in two languages" collapse (CAE≡CCS) alone
 reclassifies 364 headwords from corroborated to single-witness. Collapsing the
-documented Petersburg editorial lineage (P2) reclassifies **8,934**. Once MW —
-whose headword apparatus is Petersburg-derived (P3) — is folded in, **68,651**
-headwords that the published table presents as multiply-attested rest on a
-**single Petersburg lineage**, and the corroborated share collapses from 55.9%
-to **34.7%**. More than a third of the union's apparent corroboration is
-lineage-internal, not independent confirmation. This is driven by MW's size
-(193,852 headwords) and its heavy overlap with the Petersburg dicts
-(MW∩PWG 94,753; MW∩PWK 128,971).
+documented Petersburg editorial lineage (P2) reclassifies **8,934**. Under the
+**established §83/§97 ruling** (P3) — MW folded into the Petersburg witness —
+**68,651** headwords that the published table presents as multiply-attested rest
+on a **single European lineage**, and the corroborated share collapses from
+55.9% to **34.7%**. More than a third of the union's apparent corroboration is
+lineage-internal inheritance, not independent confirmation. This is driven by
+MW's size (193,852 headwords) and its heavy overlap with the Petersburg dicts
+(MW∩PWG 94,753; MW∩PWK 128,971). Folding Macdonell's abridgment too (P4) costs
+another 3,284 headwords their corroboration; Apte, left independent per §83,
+holds the share at 33.7% rather than the ~29% an AP fold would force.
 
 **The "well-corroborated" tier shrinks even faster.** Headwords attested by ≥5
 witnesses — a natural "solidly attested" threshold:
@@ -150,10 +181,11 @@ witnesses — a natural "solidly attested" threshold:
 |---|--:|--:|
 | P0 published | 43,825 | 13.6% |
 | P2 editorial-lineage | 21,393 | 6.6% |
-| P3 apparatus-genealogy | 12,135 | 3.8% |
+| P3 §83/§97 ruling | 12,135 | 3.8% |
+| P4 strict (+MD) | 8,797 | 2.7% |
 
 The ≥5-witness set more than halves under the documented collapse and shrinks to
-**28%** of its published size under the defensible one.
+**28%** of its published size under the established ruling (P3).
 
 ## Full re-audited distributions
 
@@ -161,18 +193,18 @@ Headwords by number of **distinct independent witnesses** under each policy
 (machine form:
 [witness_independence_reaudit.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/data/witness_independence_reaudit.tsv)):
 
-| n witnesses | P0 (15) | P1 (14) | P2 (12) | P3 (11) | P4 (9) |
+| n witnesses | P0 (15) | P1 (14) | P2 (12) | P3 (11) | P4 (10) |
 |--:|--:|--:|--:|--:|--:|
-| 1 | 142,621 | 142,985 | 151,555 | 211,272 | 228,683 |
-| 2 | 61,449 | 61,712 | 91,824 | 66,077 | 63,366 |
-| 3 | 46,787 | 48,647 | 38,424 | 23,175 | 19,223 |
-| 4 | 28,743 | 30,826 | 20,229 | 10,766 | 7,308 |
-| 5 | 17,234 | 17,881 | 9,724 | 5,630 | 2,828 |
-| 6 | 10,305 | 9,202 | 5,335 | 3,425 | 1,325 |
-| 7 | 5,848 | 5,114 | 3,313 | 1,748 | 506 |
-| 8 | 3,930 | 3,287 | 1,726 | 887 | 160 |
-| 9 | 2,928 | 2,025 | 860 | 341 | 26 |
-| 10 | 1,876 | 990 | 332 | 88 | — |
+| 1 | 142,621 | 142,985 | 151,555 | 211,272 | 214,556 |
+| 2 | 61,449 | 61,712 | 91,824 | 66,077 | 66,365 |
+| 3 | 46,787 | 48,647 | 38,424 | 23,175 | 23,120 |
+| 4 | 28,743 | 30,826 | 20,229 | 10,766 | 10,587 |
+| 5 | 17,234 | 17,881 | 9,724 | 5,630 | 5,198 |
+| 6 | 10,305 | 9,202 | 5,335 | 3,425 | 2,142 |
+| 7 | 5,848 | 5,114 | 3,313 | 1,748 | 991 |
+| 8 | 3,930 | 3,287 | 1,726 | 887 | 359 |
+| 9 | 2,928 | 2,025 | 860 | 341 | 91 |
+| 10 | 1,876 | 990 | 332 | 88 | 16 |
 | 11 | 967 | 506 | 87 | 16 | — |
 | 12 | 493 | 193 | 16 | — | — |
 | 13 | 188 | 46 | — | — | — |
@@ -180,11 +212,12 @@ Headwords by number of **distinct independent witnesses** under each policy
 | 15 | 11 | — | — | — | — |
 
 The 11 headwords "in all 15 dictionaries" — the maximally-corroborated tier —
-have **at most 12 independent witnesses** (P2), 11 (P3): even the most-attested
-Sanskrit vocables lose a witness or two to lineage-collapse. Note the P2 n=2
-spike (91,824): collapsing three Petersburg dicts into one pushes a large mass of
-"in 3–4 dicts, mostly Petersburg" headwords down to exactly two independent
-witnesses.
+have **at most 12 independent witnesses** (P2), 11 (P3), 10 (P4): even the
+most-attested Sanskrit vocables lose witnesses to lineage-collapse. Note the P2
+n=2 spike (91,824): collapsing three Petersburg dicts into one pushes a large
+mass of "in 3–4 dicts, mostly Petersburg" headwords down to exactly two
+independent witnesses. Under P3, 211,272 headwords (65.3%) rest on a single
+witness — up from the published 44.1%.
 
 ## Documented data drift — UNION.md table is pre-fold
 
@@ -211,12 +244,22 @@ post-fold file to close the drift.
 - The independence map is a **headword-attestation** model: it asks whether two
   dictionaries independently attest that a *word exists*, not whether their
   *glosses* agree. A dictionary can inherit a headword list while writing
-  original definitions (MW is exactly this case) — so these numbers deflate
-  **attestation** corroboration, and a separate gloss-agreement study would
-  deflate **semantic** corroboration differently.
-- The ladder is deliberately transparent rather than committing to one collapse:
-  P1 is indisputable, P2 documented, P3 defensible, P4 an upper bound. Report
-  the range, not a single number.
+  original definitions (MW is exactly this case, per §83) — so these numbers
+  deflate **attestation** corroboration, and a separate gloss-agreement study
+  would deflate **semantic** corroboration differently.
+- The ladder is deliberately transparent, anchored on the established ruling:
+  P1 indisputable, P2 documented, **P3 = the §83/§97 finding (the substantive
+  answer)**, P4 one strict step further. Report the range; the honest centre is
+  P3.
+- **A stronger re-audit is available and not done here.** [§97
+  v2](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  found MW's own `<ls>L.</ls>` ("lexicographers") marker flags **30.8%** of MW
+  headwords as koṣa-sourced with *no text citation* — so bare MW membership
+  overstates even text-attestation within MW. This union file carries only
+  headword membership, not per-entry citation type, so that finer cut can't be
+  applied here; a re-audit reading MW's non-`L.` `<ls>` from csl-orig would
+  deflate the counts further still. Exact-SLP1 membership is also a **lower
+  bound** (variant spelling/accent misses a real shared headword).
 
 ## FAIR / provenance
 

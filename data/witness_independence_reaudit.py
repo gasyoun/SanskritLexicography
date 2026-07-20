@@ -19,6 +19,13 @@ distribution deflates, and — the headline — how many headwords the published
 count calls "corroborated" (in >=2 dicts) collapse to a **single independent
 witness** once same-work / same-lineage duplicates are merged.
 
+The pivotal collapse (P3, MW into the Petersburg witness) is NOT a new claim of
+this script: FINDINGS.md §83 already ruled "PWG, PW and MW collapse to roughly
+one European witness" (measured six ways in csl-atlas A10), and §97 gives the
+bibliographic reason (MW was compiled substantially FROM Boehtlingk-Roth). This
+script's job is to *quantify* what that ruling does to the published union
+corroboration counts, which still treat all 15 dicts as independent.
+
 P0 is the identity map (each dict its own cluster); running it MUST reproduce
 UNION.md's published "in N dicts" distribution exactly — that is the built-in
 regression anchor (``--check``).
@@ -64,24 +71,28 @@ ALL_DICTS = [
 #               Jaccard 0.672, the highest pair in the overlap matrix.   [same-work]
 #   PWG->PWK    Boehtlingk's revised condensation of Boehtlingk-Roth.    [revised-edition]
 #   PWK->SCH    Schmidt 1928 Nachtraege: pure addenda to PW.             [supplement]
-#   PWG->MW     MW inherited the Petersburg apparatus skeleton
-#               (FINDINGS §28, 0.81 citation-order concordance).         [apparatus-derived]
-#   {PWG,MW}->AP,MD  Apte & Macdonell drew headword inventory from
-#               Boehtlingk / MW (+ independent indigenous material).     [partial-source]
+#   PWG->MW     MW inherited the Petersburg apparatus/inventory
+#               (FINDINGS §83/§97, §28; 0.81 citation-order concordance;
+#               MW gap-sensitivity to PWG 12.3x).                        [apparatus-derived]
+#   {PWG,MW}->MD  Macdonell's Practical Dict is a school abridgment of
+#               Boehtlingk / MW (2.0% unique headwords).                 [partial-source, P4]
 #
-# NOT collapsed (data- or provenance-driven independence, stated for the record):
+# NOT collapsed (established-finding / data-driven independence, for the record):
+#   AP          Apte is the NAMED independent European control in §83
+#               (gap-sensitivity 1.5x -> behaves like an independent compiler,
+#               supplies 54.6% of PWG-omitted indigenous words). Never folded.
 #   SKD vs VCP  both Bengal indigenous kosas, but Jaccard ~0.084 at the
-#               headword level -> they attest largely disjoint inventories.
+#               headword level -> they attest largely disjoint inventories;
+#               §83's independent non-European anchor.
 #   GRA/VEI/INM corpus concordances/indexes (Rigveda / Vedic index / MBh
 #               names): primary-text witnesses, independent of the
-#               lexicographic tradition.
+#               lexicographic tradition (§97 names GRA/BHS/AP as independent).
 #   BUR         Burnouf 1866, built on Wilson/Bopp, not Petersburg.
 #   BHS         Edgerton's Buddhist Hybrid Sanskrit, own corpus.
 
 # cluster ids used below
-PETB = "PETERSBURG"   # Boehtlingk-Roth editorial lineage
+PETB = "PETERSBURG"   # Boehtlingk-Roth editorial lineage (+ MW under §83)
 CAP = "CAPPELLER"     # Cappeller, one work two languages
-WEST = "WEST_PETB"    # Western Petersburg-descended critical lexicography (P4)
 
 
 def _identity():
@@ -121,30 +132,34 @@ def build_policies():
         m,
     ))
 
-    # P3 — apparatus genealogy (defensible): + MW folds into Petersburg.
+    # P3 — the FINDINGS §83 / §97 RULING (not speculation): MW folds into the
+    # Petersburg witness. §83 measured this six ways (csl-atlas A10) and ruled
+    # "PWG, PW and MW collapse to roughly one European witness"; §97 gives the
+    # bibliographic reason (MW compiled substantially FROM Boehtlingk-Roth). This
+    # is the substantive answer this re-audit exists to quantify.
     m = dict(m)
     m["MW"] = PETB
     policies.append((
-        "P3", "apparatus-genealogy collapse (11 clusters)",
-        "+ MW: headword apparatus inherited from PWG (FINDINGS §28). MW's glosses "
-        "are independently authored, but its headword *inventory* is Petersburg-derived",
+        "P3", "FINDINGS §83/§97 ruling — MW into Petersburg (11 clusters)",
+        "+ MW: §83 ruling 'PWG, PW and MW collapse to ~one European witness' "
+        "(MW gap-sensitivity to PWG's inclusion decision 12.3x vs independent "
+        "Apte 1.5x). MW's glosses are independent English; its headword inventory "
+        "is Petersburg-derived",
         m,
     ))
 
-    # P4 — aggressive upper bound: + AP, MD fold into the Western Petersburg
-    # lineage. Marks the outer edge of a defensible collapse; AP retains 40%
-    # unique headwords, so this over-collapses and is reported as an upper bound.
+    # P4 — strict: + MD (Macdonell), a school abridgment of MW/Boehtlingk, folds
+    # into the Petersburg witness too. NOTE: Apte is deliberately NOT folded —
+    # §83 names Apte as THE genuinely independent European-tradition control
+    # (gap-sensitivity 1.5x, behaves like an independent compiler), so collapsing
+    # it would contradict the repo's own established finding.
     m = dict(m)
-    m["PWG"] = WEST
-    m["PWK"] = WEST
-    m["SCH"] = WEST
-    m["MW"] = WEST
-    m["AP"] = WEST
-    m["MD"] = WEST
+    m["MD"] = PETB
     policies.append((
-        "P4", "aggressive genealogy collapse (9 clusters)",
-        "+ AP, MD folded into the Western critical-lexicographic lineage. Upper "
-        "bound only: AP keeps ~40% unique headwords, so this over-collapses",
+        "P4", "strict — + MD school abridgment into Petersburg (10 clusters)",
+        "+ MD: Macdonell's Practical Dictionary is an MW/Boehtlingk school "
+        "abridgment (2.0% unique headwords). Apte kept SEPARATE per §83 (the "
+        "named independent control) — folding it would over-collapse",
         m,
     ))
     return policies

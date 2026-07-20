@@ -90,8 +90,9 @@ feminine folds and homograph collapse).
   The lexicographic core is one Böhtlingk–Monier-Williams lineage. **That
   lineage is why "attested in N dicts" overstates corroboration** — see the
   [witness-independence re-audit](WITNESS_INDEPENDENCE_REAUDIT_UNION15_2026.md),
-  which collapses these non-independent witnesses and finds the union's
-  corroborated share falls from 55.9% to 34.7% under the defensible collapse.
+  which collapses these non-independent witnesses (operationalizing the
+  [FINDINGS §83/§97](../FINDINGS.md) ruling) and finds the union's corroborated
+  share falls from 55.9% to 34.7% once MW folds into the Petersburg witness.
 - **Least-overlapping pairs:** SKD–VEI 0.008, AP–VEI 0.010, BHS–SKD 0.010 —
   the Vedic index (VEI), the Buddhist Hybrid lexicon (BHS) and the
   Sanskrit–Sanskrit Śabdakalpadruma (SKD) live in near-disjoint lexical worlds.
