@@ -104,14 +104,15 @@ jobs:
             RussianTranslation/src/pilot/windows100_selftest.py \
             RussianTranslation/src/pilot/run_observability.py \
             RussianTranslation/src/pilot/run_observability_selftest.py
-      - name: Wave-1 Sa->Ru gloss pipeline unit tests (H1349 W1.6)
+      - name: Sa->Ru gloss pipeline unit tests (H1349 W1.6 + wave-2 panel scaffold)
         working-directory: RussianTranslation
         run: |
-          # Pure-helper regression tests for the three wave-1 defect fixes; the
-          # build_*.py modules import cleanly because their heavy deps (vidyut,
+          # Pure-helper regression tests for the wave-1 defect fixes and the wave-2
+          # precision-panel scaffold (sampler + aggregator). The build_*.py and
+          # saru_gloss_*.py modules import cleanly because their heavy deps (vidyut,
           # indic_transliteration) are imported lazily inside main()/to_slp1().
           pip install pytest
-          pytest tests/test_saru_gloss_pipeline.py -q
+          pytest tests/test_saru_gloss_pipeline.py tests/test_saru_gloss_wave2.py -q
       - name: Validate research-layer sidecars (capability cards 5, 23)
         working-directory: RussianTranslation
         run: |

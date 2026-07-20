@@ -1,0 +1,110 @@
+{"id": 0, "slp1": "sarva-BUtezu", "sa": "sarva-bhūteṣu", "n": 21, "tier": "marker", "band": "mid(10-99)", "lemma": "sarvaBUta", "upos": "noun", "root": "", "top_ru": "ко всем существам"}
+{"id": 1, "slp1": "vijYAna-sahita", "sa": "vijñāna-sahita", "n": 4, "tier": "marker", "band": "low(2-9)", "lemma": "sahita", "upos": "noun", "root": "", "top_ru": "вместе с распознанием"}
+{"id": 2, "slp1": "nivAryate", "sa": "nivāryate", "n": 1, "tier": "dcs", "band": "hapax(1)", "lemma": "nivAray", "upos": "VERB", "root": "vAray", "top_ru": "могут"}
+{"id": 3, "slp1": "marjya", "sa": "marjya", "n": 4, "tier": "vidyut", "band": "low(2-9)", "lemma": "marjya", "upos": "noun", "root": "", "top_ru": "достоин того, чтоб его начищал"}
+{"id": 4, "slp1": "jajvAla", "sa": "jajvāla", "n": 16, "tier": "dcs", "band": "mid(10-99)", "lemma": "jval", "upos": "VERB", "root": "jval", "top_ru": "запылала"}
+{"id": 5, "slp1": "saMyamin", "sa": "saṃyamin", "n": 10, "tier": "vidyut", "band": "mid(10-99)", "lemma": "saMyAmi", "upos": "noun", "root": "", "top_ru": "отшельниками"}
+{"id": 6, "slp1": "BrU-cApa", "sa": "bhrū-cāpa", "n": 1, "tier": "marker", "band": "hapax(1)", "lemma": "cApa", "upos": "noun", "root": "", "top_ru": "дугу бровей"}
+{"id": 7, "slp1": "pramAda-moha", "sa": "pramāda-moha", "n": 1, "tier": "marker", "band": "hapax(1)", "lemma": "moha", "upos": "noun", "root": "", "top_ru": "безумие и заблуждение"}
+{"id": 8, "slp1": "mahAkapi", "sa": "mahākapi", "n": 59, "tier": "vidyut", "band": "mid(10-99)", "lemma": "mahAkapi", "upos": "noun", "root": "", "top_ru": "великая обезьяна"}
+{"id": 9, "slp1": "mahAraTa", "sa": "mahāratha", "n": 633, "tier": "vidyut", "band": "high(100+)", "lemma": "mahAraTa", "upos": "noun", "root": "", "top_ru": "могучий воин на колеснице"}
+{"id": 10, "slp1": "sUtikAgni", "sa": "sūtikāgni", "n": 1, "tier": "vidyut", "band": "hapax(1)", "lemma": "sUtikAgni", "upos": "noun", "root": "", "top_ru": "огонь, зажженный по случаю рождения ребенка"}
+{"id": 11, "slp1": "sarva-BUtASaya-sTita", "sa": "sarva-bhūtāśaya-sthita", "n": 1, "tier": "marker", "band": "hapax(1)", "lemma": "sTita", "upos": "noun", "root": "", "top_ru": "живущій въ глубинѣ твореній"}
+{"id": 12, "slp1": "brahmanirvARa", "sa": "brahmanirvāṇa", "n": 27, "tier": "vidyut", "band": "mid(10-99)", "lemma": "brahmanirvARa", "upos": "noun", "root": "", "top_ru": "угасание в Брахмане"}
+{"id": 13, "slp1": "mokza-kAma", "sa": "mokṣa-kāma", "n": 1, "tier": "marker", "band": "hapax(1)", "lemma": "mokzakAma", "upos": "noun", "root": "", "top_ru": "стремящийся к освобождению"}
+{"id": 14, "slp1": "SrIKaRqa-carcA", "sa": "śrīkhaṇḍa-carcā", "n": 1, "tier": "marker", "band": "hapax(1)", "lemma": "carcA", "upos": "noun", "root": "", "top_ru": "сандаловое притирание"}
+{"id": 15, "slp1": "snA", "sa": "snā", "n": 10, "tier": "vidyut", "band": "mid(10-99)", "lemma": "snA", "upos": "noun", "root": "snA", "top_ru": "омывшись"}
+{"id": 16, "slp1": "evaM", "sa": "evaṃ", "n": 240, "tier": "dcs", "band": "high(100+)", "lemma": "evam", "upos": "ADV", "root": "", "top_ru": "так"}
+{"id": 17, "slp1": "Barata-SrezWa", "sa": "bharata-śreṣṭha", "n": 3, "tier": "marker", "band": "low(2-9)", "lemma": "BarataSrezWa", "upos": "noun", "root": "", "top_ru": "лучший из Бхарат"}
+{"id": 18, "slp1": "niSITadIpa", "sa": "niśīthadīpa", "n": 1, "tier": "vidyut", "band": "hapax(1)", "lemma": "niSITadIpa", "upos": "noun", "root": "", "top_ru": "ночной светильник"}
+{"id": 19, "slp1": "ugratejas", "sa": "ugratejas", "n": 9, "tier": "vidyut", "band": "low(2-9)", "lemma": "ugratejas", "upos": "noun", "root": "", "top_ru": "наделенный величием"}
+{"id": 20, "slp1": "para-puraYjaya", "sa": "para-purañjaya", "n": 2, "tier": "marker", "band": "low(2-9)", "lemma": "parapuraMjaya", "upos": "ADJ", "root": "", "top_ru": "Покоритель вражеских городов"}
+{"id": 21, "slp1": "jvalatAm", "sa": "jvalatām", "n": 3, "tier": "dcs", "band": "low(2-9)", "lemma": "jval", "upos": "VERB", "root": "jval", "top_ru": "сияющих"}
+{"id": 22, "slp1": "graha", "sa": "graha", "n": 118, "tier": "dcs", "band": "high(100+)", "lemma": "graha", "upos": "NOUN", "root": "", "top_ru": "планеты"}
+{"id": 23, "slp1": "brahma-nirvARa", "sa": "brahma-nirvāṇa", "n": 14, "tier": "marker", "band": "mid(10-99)", "lemma": "brahmanirvARa", "upos": "noun", "root": "", "top_ru": "Нирвана"}
+{"id": 24, "slp1": "subAhuH", "sa": "subāhuḥ", "n": 3, "tier": "dcs", "band": "low(2-9)", "lemma": "subAhu", "upos": "NOUN", "root": "", "top_ru": "Субаху"}
+{"id": 25, "slp1": "fjutA", "sa": "ṛjutā", "n": 2, "tier": "vidyut", "band": "low(2-9)", "lemma": "fjutA", "upos": "noun", "root": "", "top_ru": "распрямляется"}
+{"id": 26, "slp1": "tapasvin", "sa": "tapasvin", "n": 153, "tier": "vidyut", "band": "high(100+)", "lemma": "tapasvin", "upos": "noun", "root": "", "top_ru": "подвижник"}
+{"id": 27, "slp1": "Atma-yoga", "sa": "ātma-yoga", "n": 2, "tier": "marker", "band": "low(2-9)", "lemma": "Atmayoga", "upos": "noun", "root": "", "top_ru": "в Йоге, лишь в слиянии со Мной"}
+{"id": 28, "slp1": "Aharanti", "sa": "āharanti", "n": 7, "tier": "dcs", "band": "low(2-9)", "lemma": "Ahf", "upos": "VERB", "root": "hf", "top_ru": "приносят"}
+{"id": 29, "slp1": "tadanantaram", "sa": "tadanantaram", "n": 12, "tier": "vidyut", "band": "mid(10-99)", "lemma": "tadanantara", "upos": "noun", "root": "", "top_ru": "прямо затем"}
+{"id": 30, "slp1": "cikradad", "sa": "cikradad", "n": 3, "tier": "dcs", "band": "low(2-9)", "lemma": "krand", "upos": "VERB", "root": "krand", "top_ru": "взревел"}
+{"id": 31, "slp1": "janitf", "sa": "janitṛ", "n": 20, "tier": "vidyut", "band": "mid(10-99)", "lemma": "jan", "upos": "noun", "root": "jan", "top_ru": "родитель"}
+{"id": 32, "slp1": "praharaDvam", "sa": "praharadhvam", "n": 2, "tier": "dcs", "band": "low(2-9)", "lemma": "prahf", "upos": "VERB", "root": "hf", "top_ru": "бейте"}
+{"id": 33, "slp1": "BUtvA", "sa": "bhūtvā", "n": 359, "tier": "dcs", "band": "high(100+)", "lemma": "BU", "upos": "VERB", "root": "BU", "top_ru": "став"}
+{"id": 34, "slp1": "maharzi", "sa": "maharṣi", "n": 258, "tier": "vidyut", "band": "high(100+)", "lemma": "maharzi", "upos": "noun", "root": "", "top_ru": "риши"}
+{"id": 35, "slp1": "aByuvAca", "sa": "abhyuvāca", "n": 10, "tier": "dcs", "band": "mid(10-99)", "lemma": "aBivac", "upos": "VERB", "root": "vac", "top_ru": "сказал"}
+{"id": 36, "slp1": "dvizmas", "sa": "dviṣmas", "n": 12, "tier": "dcs", "band": "mid(10-99)", "lemma": "dviz", "upos": "VERB", "root": "dviz", "top_ru": "ненавидим"}
+{"id": 37, "slp1": "SaraRArTin", "sa": "śaraṇārthin", "n": 6, "tier": "vidyut", "band": "low(2-9)", "lemma": "SaraRArTin", "upos": "noun", "root": "", "top_ru": "искать защиты"}
+{"id": 38, "slp1": "mahezvAsa", "sa": "maheṣvāsa", "n": 270, "tier": "vidyut", "band": "high(100+)", "lemma": "mahezvAsa", "upos": "noun", "root": "", "top_ru": "великий лучник"}
+{"id": 39, "slp1": "durDA", "sa": "durdhā", "n": 1, "tier": "vidyut", "band": "hapax(1)", "lemma": "durDA", "upos": "noun", "root": "", "top_ru": "беспорядок"}
+{"id": 40, "slp1": "kiranto", "sa": "kiranto", "n": 1, "tier": "dcs", "band": "hapax(1)", "lemma": "kf", "upos": "VERB", "root": "kf", "top_ru": "меча"}
+{"id": 41, "slp1": "jYAna-yoga", "sa": "jñāna-yoga", "n": 2, "tier": "marker", "band": "low(2-9)", "lemma": "jYAnayoga", "upos": "noun", "root": "", "top_ru": "Йога знания"}
+{"id": 42, "slp1": "mahiman", "sa": "mahiman", "n": 116, "tier": "vidyut", "band": "high(100+)", "lemma": "mahiman", "upos": "noun", "root": "", "top_ru": "величие"}
+{"id": 43, "slp1": "bAnDaveByaH", "sa": "bāndhavebhyaḥ", "n": 1, "tier": "dcs", "band": "hapax(1)", "lemma": "bAnDava", "upos": "NOUN", "root": "", "top_ru": "от самых близких"}
+{"id": 44, "slp1": "niDi", "sa": "nidhi", "n": 57, "tier": "dcs", "band": "mid(10-99)", "lemma": "niDi", "upos": "NOUN", "root": "", "top_ru": "сокровище"}
+{"id": 45, "slp1": "kaTaM-rUpa", "sa": "kathaṃ-rūpa", "n": 1, "tier": "marker", "band": "hapax(1)", "lemma": "rUpa", "upos": "noun", "root": "", "top_ru": "какова подлинная форма"}
+{"id": 46, "slp1": "mahy", "sa": "mahy", "n": 1, "tier": "dcs", "band": "hapax(1)", "lemma": "mahi", "upos": "ADJ", "root": "", "top_ru": "великой"}
+{"id": 47, "slp1": "vidura", "sa": "vidura", "n": 202, "tier": "dcs", "band": "high(100+)", "lemma": "vidura", "upos": "NOUN", "root": "", "top_ru": "Видура"}
+{"id": 48, "slp1": "pratrAsa", "sa": "pratrāsa", "n": 2, "tier": "vidyut", "band": "low(2-9)", "lemma": "pratrAsi", "upos": "noun", "root": "pratrAsi", "top_ru": "дрожа Мелкой дрожью"}
+{"id": 49, "slp1": "kAma-rUpa", "sa": "kāma-rūpa", "n": 12, "tier": "marker", "band": "mid(10-99)", "lemma": "kAmarUpa", "upos": "NOUN", "root": "", "top_ru": "в виде желания"}
+{"id": 50, "slp1": "agnija", "sa": "agnija", "n": 1, "tier": "dcs", "band": "hapax(1)", "lemma": "agnija", "upos": "NOUN", "root": "", "top_ru": "пожара"}
+{"id": 51, "slp1": "maruDanvasu", "sa": "marudhanvasu", "n": 2, "tier": "vidyut", "band": "low(2-9)", "lemma": "maruDanvan", "upos": "noun", "root": "", "top_ru": "в пустыне"}
+{"id": 52, "slp1": "marutas", "sa": "marutas", "n": 11, "tier": "dcs", "band": "mid(10-99)", "lemma": "marut", "upos": "NOUN", "root": "", "top_ru": "Маруты"}
+{"id": 53, "slp1": "sahArjunena", "sa": "sahārjunena", "n": 1, "tier": "vidyut", "band": "hapax(1)", "lemma": "sahArjuna", "upos": "noun", "root": "", "top_ru": "вместе с Арджуной"}
+{"id": 54, "slp1": "brahma-nirvARam", "sa": "brahma-nirvāṇam", "n": 10, "tier": "marker", "band": "mid(10-99)", "lemma": "brahmanirvARa", "upos": "noun", "root": "", "top_ru": "освобождения в Брахмане"}
+{"id": 55, "slp1": "nAsti", "sa": "nāsti", "n": 133, "tier": "vidyut", "band": "high(100+)", "lemma": "nAsi", "upos": "noun", "root": "", "top_ru": "нет"}
+{"id": 56, "slp1": "mad-BAva", "sa": "mad-bhāva", "n": 24, "tier": "marker", "band": "mid(10-99)", "lemma": "madBAva", "upos": "noun", "root": "", "top_ru": "Мое бытие"}
+{"id": 57, "slp1": "harzamARa", "sa": "harṣamāṇa", "n": 2, "tier": "vidyut", "band": "low(2-9)", "lemma": "hfz", "upos": "noun", "root": "hfz", "top_ru": "исступленно"}
+{"id": 58, "slp1": "ftayug", "sa": "ṛtayug", "n": 1, "tier": "vidyut", "band": "hapax(1)", "lemma": "ftayuj", "upos": "noun", "root": "", "top_ru": "в союзе с законом"}
+{"id": 59, "slp1": "Bagavan", "sa": "bhagavan", "n": 148, "tier": "dcs", "band": "high(100+)", "lemma": "Bagavat", "upos": "ADJ", "root": "", "top_ru": "владыка"}
+{"id": 60, "slp1": "saYjaya", "sa": "sañjaya", "n": 288, "tier": "vidyut", "band": "high(100+)", "lemma": "saMji", "upos": "noun", "root": "ji", "top_ru": "Санджая"}
+{"id": 61, "slp1": "nIqa", "sa": "nīḍa", "n": 5, "tier": "dcs", "band": "low(2-9)", "lemma": "nIqa", "upos": "NOUN", "root": "", "top_ru": "сиденьями"}
+{"id": 62, "slp1": "CattraM", "sa": "chattraṃ", "n": 1, "tier": "dcs", "band": "hapax(1)", "lemma": "Cattra", "upos": "NOUN", "root": "", "top_ru": "зонт"}
+{"id": 63, "slp1": "dAtavyam", "sa": "dātavyam", "n": 5, "tier": "dcs", "band": "low(2-9)", "lemma": "dA", "upos": "VERB", "root": "dA", "top_ru": "должно быть возвращено"}
+{"id": 64, "slp1": "viBAgaSaH", "sa": "vibhāgaśaḥ", "n": 11, "tier": "dcs", "band": "mid(10-99)", "lemma": "viBAgaSaH", "upos": "ADV", "root": "", "top_ru": "по частям"}
+{"id": 65, "slp1": "icCAmi", "sa": "icchāmi", "n": 308, "tier": "dcs", "band": "high(100+)", "lemma": "iz", "upos": "VERB", "root": "iz", "top_ru": "хочу"}
+{"id": 66, "slp1": "mahardDi", "sa": "maharddhi", "n": 1, "tier": "vidyut", "band": "hapax(1)", "lemma": "mahardDi", "upos": "noun", "root": "", "top_ru": "богатый"}
+{"id": 67, "slp1": "ucCantu", "sa": "ucchantu", "n": 3, "tier": "dcs", "band": "low(2-9)", "lemma": "vas", "upos": "VERB", "root": "vas", "top_ru": "Пусть воссияют"}
+{"id": 68, "slp1": "jIva-BUta", "sa": "jīva-bhūta", "n": 10, "tier": "marker", "band": "mid(10-99)", "lemma": "jIvaBUta", "upos": "noun", "root": "", "top_ru": "элемент жизни"}
+{"id": 69, "slp1": "viDunvAna", "sa": "vidhunvāna", "n": 14, "tier": "vidyut", "band": "mid(10-99)", "lemma": "viDu", "upos": "noun", "root": "", "top_ru": "размахивая"}
+{"id": 70, "slp1": "apUrvAyAH", "sa": "apūrvāyāḥ", "n": 1, "tier": "dcs", "band": "hapax(1)", "lemma": "apUrva", "upos": "ADJ", "root": "", "top_ru": "незнакомую"}
+{"id": 71, "slp1": "sTira-budDi", "sa": "sthira-buddhi", "n": 5, "tier": "marker", "band": "low(2-9)", "lemma": "sTirabudDi", "upos": "noun", "root": "", "top_ru": "постоянен в мыслях"}
+{"id": 72, "slp1": "Caye", "sa": "chaye", "n": 3, "tier": "vidyut", "band": "low(2-9)", "lemma": "Ci", "upos": "noun", "root": "", "top_ru": "покоится"}
+{"id": 73, "slp1": "samitiM-jaya", "sa": "samitiṃ-jaya", "n": 6, "tier": "marker", "band": "low(2-9)", "lemma": "samitiMjaya", "upos": "NOUN", "root": "", "top_ru": "побеждающий в битве"}
+{"id": 74, "slp1": "muYcAmi", "sa": "muñcāmi", "n": 14, "tier": "dcs", "band": "mid(10-99)", "lemma": "muc", "upos": "VERB", "root": "muc", "top_ru": "освобождаю"}
+{"id": 75, "slp1": "durlaBatvAt", "sa": "durlabhatvāt", "n": 1, "tier": "vidyut", "band": "hapax(1)", "lemma": "durlaBatva", "upos": "noun", "root": "", "top_ru": "труднодостижима"}
+{"id": 76, "slp1": "anarTa-trivarga", "sa": "anartha-trivarga", "n": 1, "tier": "marker", "band": "hapax(1)", "lemma": "trivarga", "upos": "noun", "root": "", "top_ru": "три вида невыгоды"}
+{"id": 77, "slp1": "pAlana", "sa": "pālana", "n": 16, "tier": "dcs", "band": "mid(10-99)", "lemma": "pAlana", "upos": "NOUN", "root": "", "top_ru": "защита"}
+{"id": 78, "slp1": "jagan-nivAsa", "sa": "jagan-nivāsa", "n": 16, "tier": "marker", "band": "mid(10-99)", "lemma": "jagannivAsa", "upos": "NOUN", "root": "", "top_ru": "Прибежище Вселенной"}
+{"id": 79, "slp1": "yaTepsita", "sa": "yathepsita", "n": 13, "tier": "vidyut", "band": "mid(10-99)", "lemma": "yaTepsita", "upos": "noun", "root": "", "top_ru": "как желаешь"}
+{"id": 80, "slp1": "BaktAyAH", "sa": "bhaktāyāḥ", "n": 1, "tier": "dcs", "band": "hapax(1)", "lemma": "Bakta", "upos": "ADJ", "root": "", "top_ru": "предана"}
+{"id": 81, "slp1": "saNkalpayan", "sa": "saṅkalpayan", "n": 1, "tier": "vidyut", "band": "hapax(1)", "lemma": "saMkalpi", "upos": "noun", "root": "saMkalpi", "top_ru": "заботясь"}
+{"id": 82, "slp1": "aNgAra", "sa": "aṅgāra", "n": 31, "tier": "dcs", "band": "mid(10-99)", "lemma": "aNgAra", "upos": "NOUN", "root": "", "top_ru": "угли"}
+{"id": 83, "slp1": "kuru-nandana", "sa": "kuru-nandana", "n": 21, "tier": "marker", "band": "mid(10-99)", "lemma": "kurunandana", "upos": "noun", "root": "", "top_ru": "потомок Куру"}
+{"id": 84, "slp1": "bAhya-sparSa", "sa": "bāhya-sparśa", "n": 3, "tier": "marker", "band": "low(2-9)", "lemma": "bAhyasparSa", "upos": "noun", "root": "", "top_ru": "внешним соприкосновениям"}
+{"id": 85, "slp1": "dehin", "sa": "dehin", "n": 155, "tier": "vidyut", "band": "high(100+)", "lemma": "dih", "upos": "noun", "root": "dih", "top_ru": "воплощенный"}
+{"id": 86, "slp1": "ukTa-ukTa", "sa": "uktha-uktha", "n": 1, "tier": "marker", "band": "hapax(1)", "lemma": "ukTa", "upos": "noun", "root": "", "top_ru": "в каждом произносимом восхвалении"}
+{"id": 87, "slp1": "tridaSeSvara-nATa", "sa": "tridaśeśvara-nātha", "n": 1, "tier": "marker", "band": "hapax(1)", "lemma": "nATa", "upos": "noun", "root": "", "top_ru": "Покровитель владык богов"}
+{"id": 88, "slp1": "tartu", "sa": "tartu", "n": 1, "tier": "dcs", "band": "hapax(1)", "lemma": "tartu", "upos": "NOUN", "root": "", "top_ru": "сдержать"}
+{"id": 89, "slp1": "aDvanam", "sa": "adhvanam", "n": 1, "tier": "vidyut", "band": "hapax(1)", "lemma": "Dvan", "upos": "verb", "root": "Dvan", "top_ru": "путь"}
+{"id": 90, "slp1": "bfhatsAman", "sa": "bṛhatsāman", "n": 11, "tier": "vidyut", "band": "mid(10-99)", "lemma": "bfhatsAman", "upos": "noun", "root": "", "top_ru": "Большое песнопение"}
+{"id": 91, "slp1": "balin", "sa": "balin", "n": 182, "tier": "vidyut", "band": "high(100+)", "lemma": "bAli", "upos": "noun", "root": "", "top_ru": "могучий"}
+{"id": 92, "slp1": "sravitave", "sa": "sravitave", "n": 2, "tier": "dcs", "band": "low(2-9)", "lemma": "sru", "upos": "VERB", "root": "sru", "top_ru": "течь"}
+{"id": 93, "slp1": "raTin", "sa": "rathin", "n": 184, "tier": "vidyut", "band": "high(100+)", "lemma": "raTin", "upos": "noun", "root": "", "top_ru": "воинов на колесницах"}
+{"id": 94, "slp1": "tvad", "sa": "tvad", "n": 176, "tier": "dcs", "band": "high(100+)", "lemma": "tvad", "upos": "PRON", "root": "", "top_ru": "тебя"}
+{"id": 95, "slp1": "suKam", "sa": "sukham", "n": 258, "tier": "dcs", "band": "high(100+)", "lemma": "suKa", "upos": "NOUN", "root": "", "top_ru": "счастье"}
+{"id": 96, "slp1": "anudIryate", "sa": "anudīryate", "n": 1, "tier": "dcs", "band": "hapax(1)", "lemma": "anudf", "upos": "VERB", "root": "df", "top_ru": "разобщается"}
+{"id": 97, "slp1": "SrAvayatpati", "sa": "śrāvayatpati", "n": 2, "tier": "vidyut", "band": "low(2-9)", "lemma": "SrAvayatpati", "upos": "noun", "root": "", "top_ru": "заявляющего (о величии своего) господина"}
+{"id": 98, "slp1": "aSvinA", "sa": "aśvinā", "n": 253, "tier": "dcs", "band": "high(100+)", "lemma": "aSvin", "upos": "NOUN", "root": "", "top_ru": "Ашвины"}
+{"id": 99, "slp1": "sva-Darma", "sa": "sva-dharma", "n": 20, "tier": "marker", "band": "mid(10-99)", "lemma": "svaDarma", "upos": "NOUN", "root": "", "top_ru": "свой долг"}
+{"id": 100, "slp1": "sva-jana", "sa": "sva-jana", "n": 16, "tier": "marker", "band": "mid(10-99)", "lemma": "svajana", "upos": "noun", "root": "", "top_ru": "своих родных"}
+{"id": 101, "slp1": "vAc", "sa": "vāc", "n": 609, "tier": "dcs", "band": "high(100+)", "lemma": "vAc", "upos": "NOUN", "root": "", "top_ru": "речь"}
+{"id": 102, "slp1": "nIcIr", "sa": "nīcīr", "n": 3, "tier": "dcs", "band": "low(2-9)", "lemma": "nyAYc", "upos": "ADJ", "root": "", "top_ru": "вниз"}
+{"id": 103, "slp1": "sattva-vatAm", "sa": "sattva-vatām", "n": 1, "tier": "marker", "band": "hapax(1)", "lemma": "sattvavat", "upos": "ADJ", "root": "", "top_ru": "сильных"}
+{"id": 104, "slp1": "varRa-saMkara", "sa": "varṇa-saṃkara", "n": 6, "tier": "marker", "band": "low(2-9)", "lemma": "saMkara", "upos": "noun", "root": "", "top_ru": "смешение каст"}
+{"id": 105, "slp1": "liNgin", "sa": "liṅgin", "n": 13, "tier": "vidyut", "band": "mid(10-99)", "lemma": "liNg", "upos": "noun", "root": "liNg", "top_ru": "носитель знака"}
+{"id": 106, "slp1": "anu-vi-A-cal", "sa": "anu-vi-ā-cal", "n": 2, "tier": "marker", "band": "low(2-9)", "lemma": "cal", "upos": "verb", "root": "cal", "top_ru": "последовала"}
+{"id": 107, "slp1": "kalpAntezu", "sa": "kalpānteṣu", "n": 1, "tier": "vidyut", "band": "hapax(1)", "lemma": "kalpAnta", "upos": "noun", "root": "", "top_ru": "конце времен"}
+{"id": 108, "slp1": "karmAntara", "sa": "karmāntara", "n": 6, "tier": "vidyut", "band": "low(2-9)", "lemma": "karmAntara", "upos": "noun", "root": "", "top_ru": "промежутках между действиями"}
+{"id": 109, "slp1": "aBitaH", "sa": "abhitaḥ", "n": 76, "tier": "dcs", "band": "mid(10-99)", "lemma": "aBitas", "upos": "ADV", "root": "tas", "top_ru": "вокруг"}
