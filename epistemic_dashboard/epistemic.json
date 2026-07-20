@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-07-20T11:20:33Z",
+ "generated_at": "2026-07-20T15:26:26Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 109,
+  "total": 113,
   "by_importance": {
    "3": 18,
-   "2": 74,
-   "1": 17
+   "2": 77,
+   "1": 18
   },
   "by_origin": {
    "auto": 0,
-   "human": 109
+   "human": 113
   }
  },
  "layers": [
@@ -326,18 +326,18 @@
    "key": "RECIPES",
    "act": "reproducing a fact",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md",
-   "total": 6,
+   "total": 9,
    "by_importance": {
     "3": 2,
-    "2": 4,
+    "2": 7,
     "1": 0
    },
    "by_origin": {
     "auto": 0,
-    "human": 6
+    "human": 9
    },
    "categories": 3,
-   "interlinks": 6,
+   "interlinks": 9,
    "entries": [
     {
      "title": "§1. Whitney accent axis validation (17→18/19 GO) → reproduce",
@@ -374,6 +374,24 @@
      "importance": 2,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#6-correction-loci-census-39540-records--reproduce"
+    },
+    {
+     "title": "§7. PWG article size dominates every parametric statistic (33.9×) → reproduce",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#7-pwg-article-size-dominates-every-parametric-statistic-339--reproduce"
+    },
+    {
+     "title": "§8. PWG case-government census (≈3,853 marks / ≈3,222 senses) → reproduce",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#8-pwg-case-government-census-3853-marks--3222-senses--reproduce"
+    },
+    {
+     "title": "§9. MW `<ls>` two-markup-shape census → reproduce",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#9-mw-ls-two-markup-shape-census--reproduce"
     }
    ]
   },
@@ -381,16 +399,16 @@
    "key": "STALENESS",
    "act": "decaying — confidence over time",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md",
-   "total": 77,
+   "total": 113,
    "by_importance": null,
    "by_origin": {
-    "auto": 77,
+    "auto": 113,
     "human": 0
    },
    "flags": {
     "red": 0,
     "yellow": 0,
-    "green": 77,
+    "green": 113,
     "unknown": 0
    },
    "entries": []
@@ -488,26 +506,42 @@
   }
  ],
  "staleness": {
-  "total": 77,
+  "total": 113,
   "red": 0,
   "yellow": 0,
-  "green": 77,
+  "green": 113,
   "unknown": 0
  },
+ "verifiability": {
+  "counts": {
+   "A": 94,
+   "B": 12,
+   "C": 4,
+   "D": 3,
+   "total": 113
+  },
+  "classes": {
+   "A": "auto-reproducible (committed script + committed/registered/regenerable data)",
+   "B": "re-probeable (needs a live external host/API/site)",
+   "C": "historically fixed (dated correspondence, print fact, or standing scholarly conclusion)",
+   "D": "not reproducible as stated (method/ledger/intermediate never committed, or a failed/phantom figure)"
+  },
+  "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md"
+ },
  "totals": {
-  "rows": 133,
-  "auto": 83,
-  "human": 50,
+  "rows": 172,
+  "auto": 119,
+  "human": 53,
   "by_importance": {
    "3": 20,
-   "2": 26,
+   "2": 29,
    "1": 8
   },
   "layers": 7,
-  "entry_rows": 56,
+  "entry_rows": 59,
   "candidates": 6,
   "categories": 20,
-  "interlinks": 51,
-  "findings": 109
+  "interlinks": 54,
+  "findings": 113
  }
 }

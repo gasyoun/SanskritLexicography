@@ -1,6 +1,6 @@
 # RECIPES — reproduction recipes for the Sanskrit-data findings & datasets
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 20-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS cites *a number*; this file holds the act it cannot: **reproducing** — the exact runnable path back to that number. One recipe per derived dataset or heavy FINDINGS row, so a fact can be re-checked rather than trusted. This is what [`STALENESS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md)'s "Re-check recipe" column points at. One of the seven epistemic registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). Its infra twin is [`Uprava/RECIPES.md`](https://github.com/gasyoun/Uprava/blob/main/RECIPES.md).
 
@@ -83,6 +83,33 @@ Expected: 39,540 records = 39,536 old→new + 4 old→del; `process∈{bulk,huma
 Env/runtime: Python, offline; keyed on (dict, L, k1) — line numbers are batch-time only, never a join key. Corrector identity excluded (public tier).
 ↔ Interlinks: [ASSUMPTIONS §6](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (a correction queue stays valid) is the perishability premise this census feeds · [DEAD_ENDS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) (bulk typo respell) is the failure mode a proper loci census guards against · [GAPS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) (Stopovye diff) is an adjacent correction-coverage gap.
 > **Source:** [kosha](https://github.com/gasyoun/kosha) [datasets.json](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json) `correction-loci` (H294) · [csl-corrections](https://github.com/sanskrit-lexicon/csl-corrections) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
+
+### §7. PWG article size dominates every parametric statistic (33.9×) → reproduce
+🟠 ✍️ (reproduces [FINDINGS §67](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#67-in-pwg-article-size-dwarfs-every-parametric-statistic-you-can-extract-from-the-entry))
+Inputs: PWG entry sizes over 106,082 headwords from [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt); Leonchenko's 394-lemma corpus core; [VisualDCS `derived-parametric-core/`](https://github.com/gasyoun/VisualDCS/blob/main/derived-parametric-core/README.md) parametric tallies.
+Command: [`titov_control_entry_size.py`](https://github.com/gasyoun/Uprava/blob/main/research/titov_control_entry_size.py) (deterministic; size-caliper matching ±10%).
+Expected: mean entry size 14,876 chars (core) vs 439 (rest) = **33.9×**; raw entry size recovers the core at top-394 (**35.5%**, tie-aware) better than any counted parameter (multiword citations 33.5%, glosses 32.4%, numbered senses 27.8%, headword length 8.5%); per-character normalisation collapses them (27.8%→0.8%); size-matched senses reverse sign (Wilcoxon p=0.038) — ties back to FINDINGS §67.
+Env/runtime: Python stdlib, offline against committed PWG text + `derived-parametric-core`; deterministic.
+↔ Interlinks: [FINDINGS §67](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#67-in-pwg-article-size-dwarfs-every-parametric-statistic-you-can-extract-from-the-entry) is the "slovar kak obekt dissertacii" article-size thesis; the full write-up is [`Uprava/research/slovar-kak-obekt-dissertacii.md`](https://github.com/gasyoun/Uprava/blob/main/research/slovar-kak-obekt-dissertacii.md).
+> **Source:** [FINDINGS §67](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#67-in-pwg-article-size-dwarfs-every-parametric-statistic-you-can-extract-from-the-entry) · [Uprava](https://github.com/gasyoun/Uprava)/[VisualDCS](https://github.com/gasyoun/VisualDCS) · [20-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-20&until=2026-07-21) · `claude-opus-4-8` (H1362)
+
+### §8. PWG case-government census (≈3,853 marks / ≈3,222 senses) → reproduce
+🟠 ✍️ (reproduces [FINDINGS §71](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#71-pwg-marks-case-government-explicitly-3853-times-across-3222-senses--a-deterministic-census-not-an-estimate))
+Inputs: PWG German sense text from [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt) (`<ab>` case abbreviations inside sense prose).
+Command: [`government_census.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/government_census.py) (deterministic regex census; no model call).
+Expected: **≈3,853** explicit government marks across **≈3,222** senses = 2,309 parenthesized single-case markers (acc 1,102 · loc 385 · instr 270 · gen 245 · abl 190 · dat 117) + 40 case-variation groups + 1,504 prose markers — a deterministic count, not an estimate; ties back to FINDINGS §71.
+Env/runtime: Python stdlib, offline against committed PWG text; deterministic.
+↔ Interlinks: feeds the PWG data-layers plan ([FINDINGS §447/§20/§71/§9](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)); case-government is a candidate valency layer alongside DCS treebank government ([FINDINGS §104](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#104-the-dcs-dcs-conllu-treebank-is-only-39--dependency-parsed--corpus-governmentvalency-evidence-is-a-thin-slice-not-the-full-corpus)).
+> **Source:** [FINDINGS §71](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#71-pwg-marks-case-government-explicitly-3853-times-across-3222-senses--a-deterministic-census-not-an-estimate) · [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) · [20-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-20&until=2026-07-21) · `claude-opus-4-8` (H1362)
+
+### §9. MW `<ls>` two-markup-shape census → reproduce
+🟠 ✍️ (reproduces [FINDINGS §89](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#89-mw-writes-ls-citations-in-two-markup-shapes-and-locates-them-in-roman-as-well-as-arabic--a-literal-ls-regex-undercounts-its-apparatus-by-286-and-case-folding-the-roman-test-erases-the-l-hedge))
+Inputs: MW `<ls>` citations from [`csl-orig/v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt).
+Command: [`register_census.py`](https://github.com/sanskrit-lexicon/MWS/blob/master/papers/p3_citation_registers/register_census/register_census.py) (MWS) cross-checked against [`parse_cslorig.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/forensic/parse_cslorig.py) (csl-atlas).
+Expected: MW writes `<ls>` in **two shapes** — siglum+locator inside the content (`<ls>Pāṇ. vi, 2, 161</ls>`) and the split form — and locates citations in roman as well as arabic; a literal `<ls>` regex **undercounts the apparatus by 28.6%**, and case-folding the roman test erases the `L` hedge — ties back to FINDINGS §89.
+Env/runtime: Python stdlib, offline against committed MW text; deterministic.
+↔ Interlinks: the citation-apparatus siglum matrix ([FINDINGS §74](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#74-the-ls-graph-citation-matrix-is-degenerate-for-mw--its-top-abbreviations-sit-unresolved-use-the-citation-apparatus-siglum-matrix-for-cross-dict-citation-profiles)) is the cross-dict profile this census feeds.
+> **Source:** [FINDINGS §89](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#89-mw-writes-ls-citations-in-two-markup-shapes-and-locates-them-in-roman-as-well-as-arabic--a-literal-ls-regex-undercounts-its-apparatus-by-286-and-case-folding-the-roman-test-erases-the-l-hedge) · [MWS](https://github.com/sanskrit-lexicon/MWS)/[csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) · [20-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-20&until=2026-07-21) · `claude-opus-4-8` (H1362)
 
 ---
 

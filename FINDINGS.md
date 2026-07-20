@@ -28,8 +28,8 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §452) whatever its section, so existing numbers never shift; when a finding is later
-refuted or superseded, strike it and say why — never reuse its number.
+(currently §456) whatever its section, so existing numbers never shift; when a finding is later
+refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
 
@@ -88,10 +88,10 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟠 [§74. The ls-graph citation matrix is degenerate for MW](#74-the-ls-graph-citation-matrix-is-degenerate-for-mw--its-top-abbreviations-sit-unresolved-use-the-citation-apparatus-siglum-matrix-for-cross-dict-citation-profiles) — MW resolves to 5 texts, top keys unresolved; BEN~MW=0.0 artifact; use the citation-apparatus siglum matrix; only 7/14 L0-edge dicts have `<ls>` adapters.
 - 🔴 [§77. Amarakosha and SIL semdom both bolt a formal annex onto a semantic taxonomy — and it is the same ~10% once polysemy is set aside](#77-amarakosha-and-sil-semdom-both-bolt-a-formal-annex-onto-a-semantic-taxonomy--and-it-is-the-same-10-once-polysemy-is-set-aside) — AK kāṇḍa 3 = 46.4% of synsets vs semdom top-9 = 9.4% of domains; minus nānārtha's polysemy register the form-class annexes converge (10.7% vs 9.4%); homonymy is the one annex bucket AK needed and SIL did not.
 - 🔴 [§447. PWG's own closing sense-marker glyph "〉" was never recognized by the sense-splitter — ~50% of German senses were silently merged into their first sub-sense](#447-pwgs-own-closing-sense-marker-glyph--was-never-recognized-by-the-sense-splitter--50-of-german-senses-were-silently-merged-into-their-first-sub-sense) — `microstructure.py`'s `MARK` regex only ever matched ASCII `)`, never `〉` (87,680 occurrences in `csl-orig/v02/pwg/pwg.txt`); fixed, verified 2500-card audit 2500→3738 senses (1.0→1.5/card), zero new anomalies.
-- 🟠 [§448. csl-atlas's PWG parse-rules census is stale and incomplete — 21 real markup tags missing, several listed counts wrong](#448-csl-atlass-pwg-parse-rules-census-is-stale-and-incomplete--21-real-markup-tags-missing-several-listed-counts-wrong) — `<bot>` (5,427 occurrences) and 20 other tags absent from the census; `div`/`H`/`span` counts disagree with a live scan.
-- 🟠 [§449. PWG's sense-closing glyph "〉" nests FOUR enumeration tiers, not two](#449-pwgs-sense-closing-glyph--nests-four-enumeration-tiers-not-two--greek-letters-and-roman-numeral-markers-are-unrecognised-by-the-ru-pipelines-splitter) — Greek letters (1,444 occurrences) and roman-numeral markers (30) unrecognised by `microstructure.py`'s `MARK` regex, the same bug class as §447 one tier deeper.
-- 🟠 [§450. The pwg_ru RU store's `h` field has inconsistent semantics — not a reliable homograph-number join key](#450-the-pwg_ru-ru-stores-h-field-has-inconsistent-semantics--not-a-reliable-homograph-number-join-key) — holds a digit, an empty string, or a root-word string within the same file; 93.78% of store rows (10,881/11,603) touch a headword whose corrected `〉` segmentation changed sense count.
-- 🟡 [§451. PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline](#451-pwg-ls-citation-resolution-is-already-at-98-far-above-the-previously-cited-724-baseline) — `pwgbib.txt` grew to 4,390 entries since the 72.4% measurement; re-measure with `pwg_sources.py coverage` before citing a stale ceiling.
+- 🟠 [§452. csl-atlas's PWG parse-rules census is stale and incomplete — 21 real markup tags missing, several listed counts wrong](#452-csl-atlass-pwg-parse-rules-census-is-stale-and-incomplete--21-real-markup-tags-missing-several-listed-counts-wrong) — `<bot>` (5,427 occurrences) and 20 other tags absent from the census; `div`/`H`/`span` counts disagree with a live scan.
+- 🟠 [§453. PWG's sense-closing glyph "〉" nests FOUR enumeration tiers, not two](#453-pwgs-sense-closing-glyph--nests-four-enumeration-tiers-not-two--greek-letters-and-roman-numeral-markers-are-unrecognised-by-the-ru-pipelines-splitter) — Greek letters (1,444 occurrences) and roman-numeral markers (30) unrecognised by `microstructure.py`'s `MARK` regex, the same bug class as §447 one tier deeper.
+- 🟠 [§454. The pwg_ru RU store's `h` field has inconsistent semantics — not a reliable homograph-number join key](#454-the-pwg_ru-ru-stores-h-field-has-inconsistent-semantics--not-a-reliable-homograph-number-join-key) — holds a digit, an empty string, or a root-word string within the same file; 93.78% of store rows (10,881/11,603) touch a headword whose corrected `〉` segmentation changed sense count.
+- 🟡 [§455. PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline](#455-pwg-ls-citation-resolution-is-already-at-98-far-above-the-previously-cited-724-baseline) — `pwgbib.txt` grew to 4,390 entries since the 72.4% measurement; re-measure with `pwg_sources.py coverage` before citing a stale ceiling.
 
 **Etymology & derivation**
 
@@ -929,7 +929,9 @@ zero anomalies, full `lod_acceptance.py` A/B/C/C5/C6/D/D2/D3 gate PASS).
 > full gate PASS. — RussianTranslation (pwg_ru / PWG++ German enrichment) · H879 · Sonnet 5
 > (`claude-sonnet-5`) · 13-07-2026
 
-### §448. csl-atlas's PWG parse-rules census is stale and incomplete — 21 real markup tags missing, several listed counts wrong
+### §452. csl-atlas's PWG parse-rules census is stale and incomplete — 21 real markup tags missing, several listed counts wrong
+
+_↩ **Renumbered §448 → §452** (H1362, 20-07-2026): this H1350 block (PR [#612](https://github.com/gasyoun/SanskritLexicography/pull/612), published 13:58) and the H1361 movers (PR [#615](https://github.com/gasyoun/SanskritLexicography/pull/615), 14:38) both took §448–451; the movers are the claims named by the merged [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md), so under rule 4's citation exception they keep §448–451 and this block moves. See ruling §6._
 
 🟠 **The measured PWG markup census (`csl-atlas/data/parse-rules/pwg.json`) undercounts and omits real tags against the current `csl-orig/v02/pwg/pwg.txt`.**
 Evidence: a direct regex scan of the live file found 21 element names never listed in the
@@ -950,7 +952,9 @@ census numbers; a re-run of csl-atlas's census generator is a genuine `@DECIDE`/
 > validated by [`validate_pwg_markup.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/validate_pwg_markup.py)
 > (122,730/123,366 pass with the corrected 39-tag vocabulary, 0 unclassified). — csl-orig (pwg) / csl-atlas · 20-07-2026 · Sonnet 5 (`claude-sonnet-5`)
 
-### §449. PWG's sense-closing glyph "〉" nests FOUR enumeration tiers, not two — Greek letters and roman-numeral markers are unrecognised by the RU pipeline's splitter
+### §453. PWG's sense-closing glyph "〉" nests FOUR enumeration tiers, not two — Greek letters and roman-numeral markers are unrecognised by the RU pipeline's splitter
+
+_↩ **Renumbered §449 → §453** (H1362, 20-07-2026): H1350×H1361 §448–451 collision; the H1361 movers keep the numbers per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) §6._
 
 🟠 **PWG nests a real four-tier sense enumeration (digit → Latin letter → Greek letter → roman-numeral-like marker), but `microstructure.py`'s `MARK` regex only recognises the first two.**
 Evidence: `validate_pwg_markup.py`'s full-corpus pass found 393 records where a `〉` glyph is
@@ -969,7 +973,9 @@ Wave-2 change, since it would alter real sense segmentation for existing RU-stor
 > full-corpus run · glyph pattern verified in
 > [`pwg_markup.rnc`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/pwg_markup.rnc). — csl-orig (pwg) / RussianTranslation · 20-07-2026 · Sonnet 5 (`claude-sonnet-5`)
 
-### §450. The pwg_ru RU store's `h` field has inconsistent semantics — not a reliable homograph-number join key
+### §454. The pwg_ru RU store's `h` field has inconsistent semantics — not a reliable homograph-number join key
+
+_↩ **Renumbered §450 → §454** (H1362, 20-07-2026): H1350×H1361 §448–451 collision; the H1361 movers keep the numbers per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) §6._
 
 🟠 **`pwg_ru_translated.jsonl`'s `h` field holds a bare homograph digit for some rows, an empty string for others, and a ROOT-WORD STRING (e.g. `"gam"`, `"han"`) for others — mixed within the same file.**
 Evidence: live inspection of the first 20,000 store rows found `h` values including `"1"`,
@@ -990,7 +996,9 @@ upstream pipeline stage that assigns `sense_tag`/`h` reverse-engineered first �
 > (sha256 unchanged, read-only throughout, FINDINGS §9); quarantine side file only, no
 > requeue. — RussianTranslation (pwg_ru) · 20-07-2026 · Sonnet 5 (`claude-sonnet-5`)
 
-### §451. PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline
+### §455. PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline
+
+_↩ **Renumbered §451 → §455** (H1362, 20-07-2026): H1350×H1361 §448–451 collision; the H1361 movers keep the numbers per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) §6._
 
 🟡 **`pwg_sources.py`'s pwgbib-backed resolver already resolves 98.2% of `<ls>` citations (85.1% of distinct source keys) against the current `pwgbib.txt` (4,390 entries) — well above the 72.4% baseline cited in earlier planning docs (FINDINGS §20).**
 Evidence: `pwg_sources.py coverage` run 20-07-2026: 572,546 citations, 4,042 distinct source
@@ -2115,6 +2123,8 @@ niche (suggestion generation against a validated, provenance-carrying lexicon) i
 
 ### §69. Hand-transcribed telemetry cannot adjudicate code-vs-infra — and a local-only ledger silently swaps your denominator
 
+_⚠️ **Class D — not reproducible as stated** ([H1362 verifiability ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md)): hand-transcribed telemetry over a local-only ledger that swaps its own denominator — no committed artifact re-derives the code-vs-infra split. Cite the lesson, not the number._
+
 Two traps measured by the H462 audit of the pwg_ru launch ledgers (10-07-2026).
 (1) **The decisive numbers were never in the payload.** Every H437/H442 code-vs-infra
 conclusion leaned on kill-timeout and connection-error counts ("58 of 61 kill-timeouts",
@@ -2454,6 +2464,8 @@ trap in the same family).
 
 ### §85. A clean-looking subset is not promotable evidence when its audit or execution contract failed
 
+_⚠️ **Class D — not reproducible as stated** ([H1362 verifiability ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md)): the promotable-subset claim rests on an audit/execution contract that FAILED; the clean-looking subset is not recoverable as evidence. Cite the lesson, not the subset._
+
 The pwg_ru coordinator previously built `clean_output` from every non-null card and mapped
 any such subset to `ready_partial`, regardless of whether `audit_window.py` had reported
 `stale_artifact`, a crashed/blocked gate, or another non-completed state. Nominal/no-PWG
@@ -2592,6 +2604,8 @@ shared memory of "things we measured that aren't obvious from the code."_
 _Dr. Mārcis Gasūns_
 
 ### §450. The roadmap's "OBS-T κ=0.42" was a phantom figure — no measured agreement exists for any OBS-T axis
+
+_⚠️ **Class D — not reproducible as stated** ([H1362 verifiability ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md)): the κ=0.42 was never measured — no agreement computation exists to re-run. The finding's value is the phantom itself, not the figure._
 
 _↩ **Renumbered from §87 → §450** (H1361, 20-07-2026): the DCS text→period-map finding (§87, H1000) published first (16-07-2026), is the cited one, and keeps §87. Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
 

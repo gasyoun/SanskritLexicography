@@ -212,6 +212,14 @@ def main():
                 "total": f_total, "by_importance": f_imp,
                 "by_origin": {"auto": 0, "human": f_total}}
 
+    # verifiability (H1362) — the re-derivability class split over FINDINGS, if the sidecar exists
+    verifiability = None
+    vp = root / "epistemic_dashboard" / "verifiability.json"
+    if vp.exists():
+        v = json.loads(vp.read_text(encoding="utf-8"))
+        verifiability = {"counts": v.get("counts"), "classes": v.get("classes"),
+                         "url": f"{args.repo_url}/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md"}
+
     data = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "side": side_name,
@@ -219,6 +227,7 @@ def main():
         "core": core,
         "layers": layers,
         "staleness": staleness,
+        "verifiability": verifiability,
         "totals": {"rows": tot_rows, "auto": tot_auto, "human": tot_human,
                    "by_importance": tot_imp, "layers": len(layers),
                    "entry_rows": tot_entry, "candidates": tot_cand,

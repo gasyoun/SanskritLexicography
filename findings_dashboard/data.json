@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-20T11:20:30Z",
+ "generated_at": "2026-07-20T15:26:24Z",
  "stale_days_threshold": 180,
  "counts": {
-  "total": 109,
+  "total": 113,
   "by_importance": {
-   "2": 74,
-   "1": 17,
+   "2": 77,
+   "1": 18,
    "3": 18
   },
   "stale": 0
@@ -379,6 +379,42 @@
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#447-pwgs-own-closing-sense-marker-glyph--was-never-recognized-by-the-sense-splitter--50-of-german-senses-were-silently-merged-into-their-first-sub-sense"
+  },
+  {
+   "n": 452,
+   "title": "csl-atlas's PWG parse-rules census is stale and incomplete — 21 real markup tags missing, several listed counts wrong",
+   "section": "Dictionary structure & markup",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#452-csl-atlass-pwg-parse-rules-census-is-stale-and-incomplete--21-real-markup-tags-missing-several-listed-counts-wrong"
+  },
+  {
+   "n": 453,
+   "title": "PWG's sense-closing glyph \"〉\" nests FOUR enumeration tiers, not two — Greek letters and roman-numeral markers are unrecognised by the RU pipeline's splitter",
+   "section": "Dictionary structure & markup",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#453-pwgs-sense-closing-glyph--nests-four-enumeration-tiers-not-two--greek-letters-and-roman-numeral-markers-are-unrecognised-by-the-ru-pipelines-splitter"
+  },
+  {
+   "n": 454,
+   "title": "The pwg_ru RU store's `h` field has inconsistent semantics — not a reliable homograph-number join key",
+   "section": "Dictionary structure & markup",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#454-the-pwg_ru-ru-stores-h-field-has-inconsistent-semantics--not-a-reliable-homograph-number-join-key"
+  },
+  {
+   "n": 455,
+   "title": "PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline",
+   "section": "Dictionary structure & markup",
+   "importance": 1,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#455-pwg-ls-citation-resolution-is-already-at-98-far-above-the-previously-cited-724-baseline"
   },
   {
    "n": 33,

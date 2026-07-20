@@ -57,6 +57,10 @@
 <p class="mut">The fully-auto-generated layer. Flag = 🔴 &gt;6 mo since last re-verify · 🟡 3–6 mo · 🟢 fresh (&lt;3 mo) · ⬜ undated.</p>
 <div class="cards" id="stale"></div>
 
+<h2 id="verif-h" style="display:none">VERIFIABILITY — how each finding can be re-checked</h2>
+<p class="mut" id="verif-p" style="display:none">The re-derivability class of every FINDINGS finding (<a id="verif-link" href="#">H1362 ruling</a>). <b>A</b> auto-reproducible (committed script + data) · <b>B</b> re-probeable (live external host) · <b>C</b> historically fixed (dated correspondence / print / standing fact) · <b>D</b> not reproducible as stated — a figure or ledger never committed in recoverable form. Staleness asks <em>when</em> a fact was last checked; this asks <em>whether it can be</em>.</p>
+<div class="cards" id="verif"></div>
+
 <h2>Origin mix — how much is machine-seeded vs human-written</h2>
 <p class="mut">The registries are designed to be seeded automatically and confirmed by hand. A healthy layer trends from ⚙️ toward ✍️ over time as candidates are confirmed or deleted.</p>
 <table id="origin"></table>
@@ -153,6 +157,22 @@ function bar(auto, human){
     `<div class="card"><b>${s.green}</b>🟢 fresh</div>` +
     (s.unknown ? `<div class="card"><b>${s.unknown}</b>⬜ undated</div>` : '');
 
+  // VERIFIABILITY (H1362) — the re-derivability class split, if the sidecar was built.
+  const vf = d.verifiability;
+  if (vf && vf.counts) {
+    const vc = vf.counts;
+    document.getElementById('verif-h').style.display = '';
+    document.getElementById('verif-p').style.display = '';
+    if (vf.url) document.getElementById('verif-link').href = vf.url;
+    const pct = n => vc.total ? Math.round(100 * n / vc.total) : 0;
+    document.getElementById('verif').innerHTML =
+      `<div class="card"><b>${vc.total}</b>findings classed</div>` +
+      `<div class="card"><b class="human">${vc.A}</b>A · auto-reproducible (${pct(vc.A)}%)</div>` +
+      `<div class="card"><b>${vc.B}</b>B · re-probeable</div>` +
+      `<div class="card"><b>${vc.C}</b>C · historically fixed</div>` +
+      `<div class="card"><b class="auto">${vc.D}</b>D · not reproducible</div>`;
+  }
+
   document.getElementById('origin').innerHTML =
     '<tr><th>Layer</th><th class="num">⚙️ auto</th><th class="num">✍️ human</th><th>mix</th></tr>' +
     d.layers.map(L => {
@@ -178,6 +198,7 @@ function bar(auto, human){
     ? `<b>Nothing is stale</b> — every dated finding is 🟢 fresh (&lt;3 mo). The decay clock only starts to matter after the next quarter; re-run the STALENESS generator monthly.`
     : `<b>${staleTotal} findings are aging</b> (${s.red} 🔴 >6 mo · ${s.yellow} 🟡 3–6 mo) — re-verify these before citing.`);
   if (biggestHuman) cc.push(`The most human-curated layer is <b>${esc(biggestHuman.key)}</b> (${biggestHuman.by_origin.human} ✍️ rows); the highest-stakes layer by 🔴 count is <b>${esc(mostRed.key)}</b> — start confirmations there.`);
+  if (vf && vf.counts) { const vc = vf.counts; cc.push(`<b>${vc.A} of ${vc.total} findings are auto-reproducible</b> (class A); ${vc.B} need a live re-probe (B), ${vc.C} are historically fixed (C), and <b>${vc.D} are not reproducible as stated</b> (D) — those must be cited with their non-reproducibility named, never as a bare §N. Staleness is now paired with a re-derivability axis, not just a decay clock.`); }
   cc.push(`Each row carries an <b>↔ Interlinks</b> line, so the seven docs read as one graph: an assumption points to the recipe that would settle it and the dead end that shows what breaks if it fails.`);
   document.getElementById('conclusions').innerHTML = cc.map(x => `<li>${x}</li>`).join('');
 
