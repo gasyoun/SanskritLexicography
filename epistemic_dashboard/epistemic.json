@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-07-18T04:41:37Z",
+ "generated_at": "2026-07-20T11:20:33Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 95,
+  "total": 109,
   "by_importance": {
-   "3": 16,
-   "2": 45,
-   "1": 11
+   "3": 18,
+   "2": 74,
+   "1": 17
   },
   "by_origin": {
    "auto": 0,
-   "human": 95
+   "human": 109
   }
  },
  "layers": [
@@ -83,18 +83,18 @@
    "key": "CONTRADICTIONS",
    "act": "≥2 sources disagree, no verdict",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md",
-   "total": 5,
+   "total": 8,
    "by_importance": {
-    "3": 0,
-    "2": 5,
+    "3": 1,
+    "2": 6,
     "1": 0
    },
    "by_origin": {
     "auto": 0,
-    "human": 5
+    "human": 8
    },
    "categories": 3,
-   "interlinks": 5,
+   "interlinks": 6,
    "entries": [
     {
      "title": "§1. Derivative ī/ū-stem gen.pl accent (Whitney, internal)",
@@ -109,22 +109,40 @@
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#2-varga-diachrony-2014-dissertation-prose-vs-its-own-χ²-table"
     },
     {
-     "title": "§3. Krylov's 2014 Palsule-exclusion charge vs vidyut dhātupāṭha",
-     "importance": 2,
+     "title": "§3. ✅ RESOLVED → kosha PLAN D13 — generated side is `forms`, not `inflections`",
+     "importance": null,
      "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#3-krylovs-2014-palsule-exclusion-charge-vs-vidyut-dhātupāṭha"
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#3--resolved--kosha-plan-d13--generated-side-is-forms-not-inflections"
     },
     {
-     "title": "§4. SKD/VCP citation-fusion direction: one-lemma exemplar vs corpus count",
-     "importance": 2,
+     "title": "§4. Grammatical `<ab>` abbreviations in pwg_ru: stay-Latin (10-07 ruling) vs translate-to-RU (19-07 DA-vote notes)",
+     "importance": 3,
      "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#4-skdvcp-citation-fusion-direction-one-lemma-exemplar-vs-corpus-count"
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#4-grammatical-ab-abbreviations-in-pwgru-stay-latin-10-07-ruling-vs-translate-to-ru-19-07-da-vote-notes"
     },
     {
-     "title": "§5. Sense-granularity: two runs disagree on the year-correlation",
+     "title": "§5. Krylov's 2014 Palsule-exclusion charge vs vidyut dhātupāṭha",
      "importance": 2,
      "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#5-sense-granularity-two-runs-disagree-on-the-year-correlation"
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#5-krylovs-2014-palsule-exclusion-charge-vs-vidyut-dhātupāṭha"
+    },
+    {
+     "title": "§6. SKD/VCP citation-fusion direction: one-lemma exemplar vs corpus count",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#6-skdvcp-citation-fusion-direction-one-lemma-exemplar-vs-corpus-count"
+    },
+    {
+     "title": "§7. Sense-granularity: two runs disagree on the year-correlation",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#7-sense-granularity-two-runs-disagree-on-the-year-correlation"
+    },
+    {
+     "title": "§8. The Ch. 14 correction-dataset DOI: false-and-unminted vs genuinely minted (BOOK_PLAN vs FAIR_RELEASE_1) — ✅ RULED",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#8-the-ch-14-correction-dataset-doi-false-and-unminted-vs-genuinely-minted-bookplan-vs-fairrelease1---ruled"
     }
    ]
   },
@@ -291,16 +309,16 @@
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#7-generalising-dictionary-level-sense-inheritance-direction-to-corpus-scale--refuted"
     },
     {
-     "title": "§8. Resolving PWG/MW `HARIV.` citations against DCS to find shared **erroneous** citations — abandoned",
+     "title": "§9. Resolving PWG/MW `HARIV.` citations against DCS to find shared **erroneous** citations — abandoned",
      "importance": 3,
      "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#8-resolving-pwgmw-hariv-citations-against-dcs-to-find-shared-erroneous-citations--abandoned"
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#9-resolving-pwgmw-hariv-citations-against-dcs-to-find-shared-erroneous-citations--abandoned"
     },
     {
-     "title": "§8. Gemini-OCR санскритских комментариев Сундараканды — вытеснен скрейпом",
+     "title": "§10. Gemini-OCR санскритских комментариев Сундараканды — вытеснен скрейпом",
      "importance": 2,
      "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#8-gemini-ocr-санскритских-комментариев-сундараканды--вытеснен-скрейпом"
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#10-gemini-ocr-санскритских-комментариев-сундараканды--вытеснен-скрейпом"
     }
    ]
   },
@@ -477,19 +495,19 @@
   "unknown": 0
  },
  "totals": {
-  "rows": 130,
+  "rows": 133,
   "auto": 83,
-  "human": 47,
+  "human": 50,
   "by_importance": {
-   "3": 19,
-   "2": 25,
+   "3": 20,
+   "2": 26,
    "1": 8
   },
   "layers": 7,
-  "entry_rows": 53,
+  "entry_rows": 56,
   "candidates": 6,
   "categories": 20,
-  "interlinks": 50,
-  "findings": 95
+  "interlinks": 51,
+  "findings": 109
  }
 }
