@@ -1,0 +1,362 @@
+{
+ "schema": "pwg_glyph_sanity/0.1",
+ "skipped": false,
+ "sampled": 50,
+ "scored": 38,
+ "agree": 23,
+ "agreement_rate_pct": 60.5,
+ "results": [
+  {
+   "record_id": "21836",
+   "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+   "record_id": "731",
+   "key1": "aNgArikA",
+   "claimed_count": 2,
+   "agrees": true,
+   "your_count": 2,
+   "note": "The card shows two distinct numbered senses, each marked with a digit followed by '〉'."
+  },
+  {
+   "record_id": "10574",
+   "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+   "record_id": "23178",
+   "key1": "gopana",
+   "claimed_count": 4,
+   "agrees": false,
+   "your_count": 3,
+   "note": "The card has three distinct top-level senses: 1) n. Schutz, Erhaltung; 2) f. gopanā Schutz, Hut; but the second sense includes sub-senses b and c, not separate top-level senses."
+  },
+  {
+   "record_id": "7055",
+   "key1": "aSvatara",
+   "claimed_count": 4,
+   "agrees": true,
+   "your_count": 4,
+   "note": "The card shows four distinct numbered senses: 1) mule, 2) male calf, 3) N. pr. of a Gandharva, 4) N. pr. of a Nāga."
+  },
+  {
+   "record_id": "10566",
+   "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+   "record_id": "25696",
+   "key1": "cIruka",
+   "claimed_count": 2,
+   "agrees": true,
+   "your_count": 2,
+   "note": "The card shows two distinct numbered senses: 1) a neuter noun for a specific fruit, and 2) a feminine noun for a cricket."
+  },
+  {
+   "record_id": "5361",
+   "key1": "amBoDara",
+   "claimed_count": 2,
+   "agrees": true,
+   "your_count": 2,
+   "note": "Two distinct senses are marked with '1〉' and '2〉'."
+  },
+  {
+   "record_id": "13407",
+   "key1": "ekAgra",
+   "claimed_count": 2,
+   "agrees": true,
+   "your_count": 2,
+   "note": "The card clearly shows two numbered senses: 1) and 2)."
+  },
+  {
+   "record_id": "21251",
+   "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+   "record_id": "13233",
+   "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+   "record_id": "10059",
+   "key1": "ityA",
+   "claimed_count": 2,
+   "agrees": false,
+   "your_count": 2,
+   "note": "The card shows two numbered senses (1 and 2), matching the claimed count."
+  },
+  {
+   "record_id": "36",
+   "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+   "record_id": "9806",
+   "key1": "AstAra",
+   "claimed_count": 2,
+   "agrees": true,
+   "your_count": 2,
+   "note": "The card shows two distinct numbered senses: 1) Ausbreitung and 2) Mitglied einer Versamlung."
+  },
+  {
+   "record_id": "14383",
+   "key1": "kawu",
+   "claimed_count": 8,
+   "agrees": false,
+   "your_count": 4,
+   "note": "The card has only 4 top-level numbered senses (1, 2, 3, 4), not 8."
+  },
+  {
+   "record_id": "22419",
+   "key1": "giripriya",
+   "claimed_count": 2,
+   "agrees": true,
+   "your_count": 2,
+   "note": "The card shows two distinct senses marked by '1〉' and '2〉'."
+  },
+  {
+   "record_id": "4639",
+   "key1": "aBimarda",
+   "claimed_count": 3,
+   "agrees": true,
+   "your_count": 3,
+   "note": "The card shows three distinct numbered senses: 1) Bedrückung, 2) Kampf, 3) berauschendes Getränk."
+  },
+  {
+   "record_id": "15095",
+   "key1": "karaNka",
+   "claimed_count": 3,
+   "agrees": true,
+   "your_count": 3,
+   "note": "The card contains three distinct numbered senses marked by 1), 2), and 3)."
+  },
+  {
+   "record_id": "11478",
+   "key1": "udyata",
+   "claimed_count": 4,
+   "agrees": false,
+   "your_count": 2,
+   "note": "The card shows only two top-level senses (1 and 2), not four."
+  },
+  {
+   "record_id": "21633",
+   "key1": "gadgadasvara",
+   "claimed_count": 4,
+   "agrees": false,
+   "your_count": 3,
+   "note": "The card shows three distinct top-level senses: 1) adj., 2) m. with sub-senses a and b, but no fourth sense."
+  },
+  {
+   "record_id": "23845",
+   "key1": "grEva",
+   "claimed_count": 2,
+   "agrees": false,
+   "your_count": 2,
+   "note": "The card shows two numbered senses (1 and 2), matching the claimed count."
+  },
+  {
+   "record_id": "17174",
+   "key1": "kiNkiRa",
+   "claimed_count": 2,
+   "agrees": true,
+   "your_count": 2,
+   "note": "Two distinct senses are marked by '1〉' and '2〉'."
+  },
+  {
+   "record_id": "8354",
+   "key1": "Atmahan",
+   "claimed_count": 4,
+   "agrees": false,
+   "your_count": 2,
+   "note": "The card shows only two top-level senses (1 and 2), not four."
+  },
+  {
+   "record_id": "678",
+   "key1": "aNgati",
+   "claimed_count": 4,
+   "agrees": true,
+   "your_count": 4,
+   "note": "The card has four distinct numbered senses (1–4) each marked with a digit followed by '〉'."
+  },
+  {
+   "record_id": "15735",
+   "key1": "kalukka",
+   "claimed_count": 4,
+   "agrees": false,
+   "your_count": 3,
+   "note": "The card shows only three top-level senses: 1) m., 2) f. with sub-senses a and b, but no sense 3 or 4."
+  },
+  {
+   "record_id": "10888",
+   "key1": "uttara",
+   "claimed_count": 21,
+   "agrees": false,
+   "your_count": 3,
+   "note": "The card shows only 3 distinct top-level senses (1, 2a, 2b, 2c) under one main division, not 21."
+  },
+  {
+   "record_id": "25336",
+   "key1": "cikkiRa",
+   "claimed_count": 2,
+   "agrees": true,
+   "your_count": 2,
+   "note": "Two distinct senses are marked with '1〉' and '2〉'."
+  },
+  {
+   "record_id": "6849",
+   "key1": "avyaNga",
+   "claimed_count": 2,
+   "agrees": true,
+   "your_count": 2,
+   "note": "Two distinct senses are marked by '1)' and '2)' in the text."
+  },
+  {
+   "record_id": "9335",
+   "key1": "Arza",
+   "claimed_count": 6,
+   "agrees": false,
+   "your_count": 3,
+   "note": "The card has three top-level numbered senses (1, 2, 3), not six."
+  },
+  {
+   "record_id": "2765",
+   "key1": "anucita",
+   "claimed_count": 2,
+   "agrees": true,
+   "your_count": 2,
+   "note": "The card shows two distinct numbered senses: 1) unpassend, ungebührlich and 2) nicht gewohnt an."
+  },
+  {
+   "record_id": "10661",
+   "key1": "uccawA",
+   "claimed_count": 3,
+   "agrees": true,
+   "your_count": 3,
+   "note": "The card shows three distinct numbered senses: 1) Stolz, 2) Wandel, and 3) N. verschiedener Pflanzen."
+  },
+  {
+   "record_id": "21804",
+   "key1": "gaBIra",
+   "claimed_count": 10,
+   "agrees": false,
+   "your_count": 1,
+   "note": "The card has only one numbered sense (1〉), not 10."
+  },
+  {
+   "record_id": "8617",
+   "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+   "record_id": "8842",
+   "key1": "AbADa",
+   "claimed_count": 3,
+   "agrees": true,
+   "your_count": 3,
+   "note": "The card has three distinct numbered senses marked by '1〉', '2〉', and '3〉'."
+  },
+  {
+   "record_id": "6858",
+   "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+   "record_id": "25286",
+   "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+   "record_id": "10006",
+   "key1": "iq",
+   "claimed_count": 3,
+   "agrees": true,
+   "your_count": 3,
+   "note": "The card clearly marks three distinct senses with numbered divisions."
+  },
+  {
+   "record_id": "2612",
+   "key1": "anityatva",
+   "claimed_count": 3,
+   "agrees": true,
+   "your_count": 3,
+   "note": "The card shows three distinct numbered senses (1, 2, 3) each marked with a digit followed by '〉'."
+  },
+  {
+   "record_id": "8834",
+   "key1": "AbadDa",
+   "claimed_count": 5,
+   "agrees": false,
+   "your_count": 3,
+   "note": "The card shows only three top-level senses (1, 2, and a 'Vgl.' note), not five."
+  },
+  {
+   "record_id": "19039",
+   "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+   "record_id": "22717",
+   "key1": "gurjara",
+   "claimed_count": 2,
+   "agrees": true,
+   "your_count": 2,
+   "note": "The card shows two distinct numbered senses: 1) masculine proper name of a country, and 2) feminine name of a Rāgiṇī."
+  },
+  {
+   "record_id": "11681",
+   "key1": "upakrozwar",
+   "claimed_count": 2,
+   "agrees": false,
+   "your_count": 1,
+   "note": "The card shows only one numbered sense (1), not two."
+  },
+  {
+   "record_id": "4232",
+   "key1": "apyaya",
+   "claimed_count": 3,
+   "agrees": true,
+   "your_count": 3,
+   "note": "The card has three distinct numbered senses marked by 1), 2), and 3)."
+  },
+  {
+   "record_id": "2429",
+   "key1": "anavasTita",
+   "claimed_count": 3,
+   "agrees": true,
+   "your_count": 3,
+   "note": "The card shows three distinct numbered senses (1, 2, 3) each marked with a digit followed by '〉'."
+  },
+  {
+   "record_id": "14051",
+   "key1": "Opasada",
+   "claimed_count": 2,
+   "agrees": true,
+   "your_count": 2,
+   "note": "The card shows two distinct numbered senses: 1) and 2)."
+  },
+  {
+   "record_id": "24538",
+   "key1": "caturaNgula",
+   "claimed_count": 4,
+   "agrees": false,
+   "your_count": 2,
+   "note": "The text shows only two top-level senses: 1) neuter and 2) masculine, not four."
+  },
+  {
+   "record_id": "21800",
+   "key1": "gaBastimant",
+   "claimed_count": 3,
+   "agrees": true,
+   "your_count": 3,
+   "note": "The card has three distinct numbered senses: 1, 2, and 3."
+  },
+  {
+   "record_id": "12574",
+   "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+   "record_id": "15372",
+   "error": "HTTPSConnectionPool(host='api.deepseek.com', port=443): Read timed out. (read timeout=10)"
+  },
+  {
+   "record_id": "17890",
+   "key1": "kumBa",
+   "claimed_count": 20,
+   "agrees": false,
+   "your_count": 2,
+   "note": "The card shows only two top-level senses (a and b), not 20."
+  }
+ ]
+}
