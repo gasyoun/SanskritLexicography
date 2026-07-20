@@ -5,7 +5,7 @@ Each `*-unique-key{1,2}-N.txt` in [`then-2014/`](then-2014/) is a snapshot whose
 - **growth** = (now − then) / then. **overlap** = share of the *then* keys still present now.
 - **comparable** — the committed list and the live field share key format, so `added`/`removed`/`growth` are genuine headword changes.
 - **format-migrated** — the committed *2014* `<k2>` snapshot is in the *legacy Cologne numeric transliteration* (`am2s4a` = aṃśa) while csl-orig is now SLP1; the raw then-vs-now diff is ~100 % and **not** a real headword change. The current key2 has been re-extracted as clean SLP1 into [`now-2026/`](now-2026/), so it is usable directly even though it can't be line-diffed against the numeric 2014 file.
-- **PD** is not in csl-orig, but its headword export lives in the sibling [`alternateheadwords`](https://github.com/sanskrit-lexicon/alternateheadwords) repo (`data/PD/PDhw0.txt`, 107,620 entries, `pageid:headword:start,end` per line) — compared here the same way as the csl-orig-backed dicts (H1365, 20-07-2026).
+- **PD** is not in csl-orig, but its full-text digitization is on disk in the sibling [`SanskritSpellCheck`](https://github.com/gasyoun/SanskritSpellCheck) repo (`external_src/pd/pd.txt`) in the same `<k1>`/`<k2>` tag convention as every csl-orig dict (107,630 tagged entries, matching the then-2014 extraction size exactly) — compared here the same way as the csl-orig-backed dicts (H1365, 20-07-2026).
 
 | List | then (2014) | now (2026) | added | removed | overlap | growth | verdict |
 |---|--:|--:|--:|--:|--:|--:|---|
@@ -22,8 +22,8 @@ Each `*-unique-key{1,2}-N.txt` in [`then-2014/`](then-2014/) is a snapshot whose
 | [MW-unique-key1-193978.txt](then-2014/MW-unique-key1-193978.txt) | 193978 | 194084 | 754 | 648 | 99.7% | +0.1% | comparable |
 | [MW-unique-key2-198220.txt](then-2014/MW-unique-key2-198220.txt) | 198220 | 198489 | 110368 | 110099 | 44.5% | +0.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
 | [MW-unique-key2-198231.txt](then-2014/MW-unique-key2-198231.txt) | 198231 | 198489 | 110388 | 110130 | 44.4% | +0.1% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| [PD-unique-key1-104936.txt](then-2014/PD-unique-key1-104936.txt) | 104935 | 104938 | 118 | 115 | 99.9% | +0.0% | comparable |
-| [PD-unique-key2-104941.txt](then-2014/PD-unique-key2-104941.txt) | 104941 | 104940 | 87 | 88 | 99.9% | -0.0% | comparable |
+| [PD-unique-key1-104936.txt](then-2014/PD-unique-key1-104936.txt) | 104935 | 104959 | 602 | 578 | 99.4% | +0.0% | comparable |
+| [PD-unique-key2-104941.txt](then-2014/PD-unique-key2-104941.txt) | 104941 | 104968 | 581 | 554 | 99.5% | +0.0% | comparable |
 | [PWG-unique-key1-106085.txt](then-2014/PWG-unique-key1-106085.txt) | 106085 | 106082 | 149 | 152 | 99.9% | -0.0% | comparable |
 | [PWG-unique-key2-110402.txt](then-2014/PWG-unique-key2-110402.txt) | 110402 | 110438 | 380 | 344 | 99.7% | +0.0% | comparable |
 | [PWK-unique-key1-131918.txt](then-2014/PWK-unique-key1-131918.txt) | 131918 | 151349 | 19617 | 186 | 99.9% | +14.7% | comparable |
@@ -35,7 +35,7 @@ Each `*-unique-key{1,2}-N.txt` in [`then-2014/`](then-2014/) is a snapshot whose
 | [VCP-unique-key2-47145.txt](then-2014/VCP-unique-key2-47145.txt) | 47145 | 48638 | 4360 | 2867 | 93.9% | +3.2% | comparable |
 | [VEI-unique-key1-3703.txt](then-2014/VEI-unique-key1-3703.txt) | 3703 | 3704 | 18 | 17 | 99.5% | +0.0% | comparable |
 | [VEI-unique-key2-3770.txt](then-2014/VEI-unique-key2-3770.txt) | 3770 | 3704 | 3703 | 3769 | 0.0% | -1.8% | format-migrated (legacy numeric → SLP1); raw diff not meaningful |
-| **TOTAL (comparable, 20 lists)** | **1264957** | **1416262** | **171849** | **20544** | — | **+12.0%** | — |
+| **TOTAL (comparable, 20 lists)** | **1264957** | **1416311** | **172827** | **21473** | — | **+12.0%** | — |
 
 _Grand total of all 26 snapshots' *then* line counts: **1721983**._
 
@@ -77,11 +77,11 @@ removed: `BAtvakzAs`, `Buraja`, `KA°`, `UM~`, `[Gu`, `[Kal`, `[Kaq`, `[Kar`, `[
 ### MW-unique-key1-193978.txt — 193978 → 194084  (+754 / −648)
 removed (648): `ASiraduG`, `AdipurAna`, `AmardakatirTanATa`, `AmiSraBUta`, `AmiSraBUtatva`, `AruRyopanIzad`, `Asanizu`, `AtreyA`, `AyAsadayin`, `BAravoDf`, `BOmasAnti`, `BUrI`, `BadraBadra`, `Batila`, `BavacCada`, `BerItAdaRa`, `BikzopaBegin`, `BinrArTa`, `BrAtfSvasura`, `BramaragIwawIkA`, `Buktotohizwa`, `Cagalapayas`, `CemuRA`, `CinnAbra`, `DArayitF`, `DAtakiKaRqa`, `DAtakizaRqa`, `DAtreyikAyI`, `DAtutaraMginI`, `DAvIyas`, `DanAyas`, `DananAsa`, `DarmasAstrin`, `DarminI`, `EndraniGanwu`, `GanadundBisvana`, `GrARacakzuS`, `GritAhuta`, `IdfSIdfktA`, `Ihatas` … (full list in `_diff/`)
 
-### PD-unique-key1-104936.txt — 104935 → 104938  (+118 / −115)
-removed (115): `aDOcCizwa`, `aDOpAsana`, `aDOpariguRita`, `aDOparyantam`, `aDaHSAKAcaturTAM~Sa`, `aDarmAM~Sa`, `aDarmAM~SodBava`, `aDikArasaMbavDin`, `aDikftvAA`, `aDizTAnajYAnavizayatA`, `aDomuKapuzpI`, `aDyAtmakXpti`, `aGorAcrana`, `aKiladfgdrazwwa`, `aMSkartftva`, `aMhaha`, `aNBAvapakza`, `aNGrayanta`, `aNGrikARQa`, `aNgIkftasantAnIcCeda`, `aNgaRadIrDikA`, `aNgajAnurAga`, `aNgamAwravizayatva`, `aNganibanDa`, `aNgatvADyAropa`, `aNgimAdtrAnuzWAna`, `aNgrakzayaMkara`, `aNguzWadErDya`, `aNkoWopuzpaka`, `aNkuritAjYjana`, `aNpavAda`, `aRqayoHstavDa`, `aRuvrtaparAyaRa`, `accahAyAnNa`, `acidBdeda`, `acikIrzatAsmikA`, `acintyAdButasrazwr`, `acintysSaktitA`, `acirasOraBasaRgatas`, `acirtratva` … (full list in `_diff/`)
+### PD-unique-key1-104936.txt — 104935 → 104959  (+602 / −578)
+removed (578): `AnirdeSyaprAyaScitta`, `aCizWAtftA`, `aDOcCizwa`, `aDOpAsana`, `aDOpariguRita`, `aDOparyantam`, `aDUmayotirUpaka`, `aDaHSAKAcaturTAM~Sa`, `aDaHpaNki`, `aDaHsrata`, `aDamatvAmiDAna`, `aDaritajagata`, `aDarmAM~Sa`, `aDarmAM~SodBava`, `aDarmasamAvizWa`, `aDarotarayat`, `aDi gatvA`, `aDiBAlasTalam`, `aDiSrezwi`, `aDikAraramala`, `aDikArasaMbavDin`, `aDikArivyAparatva`, `aDikAvAptograraSimagraha`, `aDikavibuDaSlADya`, `aDikftvAA`, `aDimAsaDna`, `aDimAtralollupa`, `aDirIpu`, `aDisyad`, `aDizTAnajYAnavizayatA`, `aDizWAnaropyatA`, `aDizWAnasaMsagArSaM`, `aDizWAnsApekzAtva`, `aDizWitapfzwapIWa`, `aDizwAnavftti`, `aDizwAtfbala`, `aDizwAtfcetanaparigraha`, `aDizwAtfcezwita`, `aDizwAtfdevatAka`, `aDizwAtfdevatAtva` … (full list in `_diff/`)
 
-### PD-unique-key2-104941.txt — 104941 → 104940  (+87 / −88)
-removed (88): `aDOcCizwa`, `aDOpAsana`, `aDOpariguRita`, `aDOparyantam`, `aDaHSAKAcaturTAM~Sa`, `aDarmAM~Sa`, `aDarmAM~SodBava`, `aDikArasaMbavDin`, `aDikftvAA`, `aDizTAnajYAnavizayatA`, `aDyAtmakXpti`, `aGorAcrana`, `aKiladfgdrazwwa`, `aNBAvapakza`, `aNGrayanta`, `aNGrikARQa`, `aNgIkftasantAnIcCeda`, `aNgaRadIrDikA`, `aNgamAwravizayatva`, `aNgimAdtrAnuzWAna`, `aNgrakzayaMkara`, `aNguzWadErDya`, `aNkoWopuzpaka`, `aNkuritAjYjana`, `aNpavAda`, `aRqayoHstavDa`, `aRuvrtaparAyaRa`, `accahAyAnNa`, `acidBdeda`, `acikIrzatAsmikA`, `acintyAdButasrazwr`, `acintysSaktitA`, `acirasOraBasaRgatas`, `acirtratva`, `adfzwanASnASya`, `advEtabrahmadrSin`, `agnidibyaprayoga`, `ajagaravfttzAnta`, `akzatakrRI`, `akzavilasaQvfdDi` … (full list in `_diff/`)
+### PD-unique-key2-104941.txt — 104941 → 104968  (+581 / −554)
+removed (554): `AnirdeSyaprAyaScitta`, `aCizWAtftA`, `aDOcCizwa`, `aDOpAsana`, `aDOpariguRita`, `aDOparyantam`, `aDUmayotirUpaka`, `aDaHSAKAcaturTAM~Sa`, `aDaHpaNki`, `aDaHsrata`, `aDamatvAmiDAna`, `aDaritajagata`, `aDarmAM~Sa`, `aDarmAM~SodBava`, `aDarmasamAvizWa`, `aDarotarayat`, `aDiBAlasTalam`, `aDiSrezwi`, `aDikAraramala`, `aDikArasaMbavDin`, `aDikArivyAparatva`, `aDikAvAptograraSimagraha`, `aDikavibuDaSlADya`, `aDikftvAA`, `aDimAsaDna`, `aDimAtralollupa`, `aDirIpu`, `aDisyad`, `aDizTAnajYAnavizayatA`, `aDizWAnaropyatA`, `aDizWAnasaMsagArSaM`, `aDizWAnsApekzAtva`, `aDizWitapfzwapIWa`, `aDizwAnavftti`, `aDizwAtfbala`, `aDizwAtfcetanaparigraha`, `aDizwAtfcezwita`, `aDizwAtfdevatAka`, `aDizwAtfdevatAtva`, `aDizwAtftva` … (full list in `_diff/`)
 
 ### PWG-unique-key1-106085.txt — 106085 → 106082  (+149 / −152)
 removed (152): `AKowSIrzaka`, `Abaradvasava`, `Acyadoha`, `AgNga`, `AjYApti`, `AjunAvaka`, `Anupak`, `AposUrti`, `AtIzadIya`, `BAdvAjI`, `BArikaM`, `BaganarAyaM`, `Baraqka`, `Batrya`, `BramarAmvAkzetra`, `Brazwraja`, `DUlikadamba`, `Danda`, `Dandeva`, `DmANK`, `EndravaruRa`, `GaRtodara`, `GanDakAlikA`, `GoYculikA`, `Japaketana`, `OkzRoniyAna`, `OtkaRQya`, `SAPakzi`, `SUrya`, `Slizwakzepa`, `SudDAyu`, `SvaNge`, `UM~`, `aDihastyaM`, `aDyArUWa`, `aNolaka`, `aRvya`, `amarakaRwka`, `aniHzavya`, `antafAvedI` … (full list in `_diff/`)
