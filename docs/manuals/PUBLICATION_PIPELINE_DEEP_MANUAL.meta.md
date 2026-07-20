@@ -1,6 +1,6 @@
 # PUBLICATION_PIPELINE_DEEP_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 20-07-2026_
 
 Companion record for [docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) (subsystem deep manual, H608).
 
@@ -26,7 +26,7 @@ Executed 18-07-2026: `pytest docs_site/test_docs_site.py -q` — 4 passed in 3.7
 
 | # | Item | Status |
 |---|---|---|
-| 1 | Resolve CONTRADICTIONS §6 (the `10.5281/zenodo.15834721` mint status) with one online Zenodo check, then fix whichever doc is wrong | open — needs network |
+| 1 | ~~Resolve CONTRADICTIONS §6 (the `10.5281/zenodo.15834721` mint status) with one online Zenodo check, then fix whichever doc is wrong~~ | ✅ done (H1364, 20-07-2026) — BOOK_PLAN was right, false DOI; FAIR_RELEASE_1 + csl-observatory CITATION.cff corrected |
 | 2 | Once Ch. 3 / Ch. 11 are written, the §4 tables need the terminal update | open |
 
 ## Known limitations
@@ -51,5 +51,6 @@ Refreshed by [/workspace-manual](https://github.com/gasyoun/claude-config/blob/m
 |---|---|---|
 | 11-07-2026 | Subject manual authored (H608); H740 verdict spliced 18-07-2026 | Fable 5 (`claude-fable-5`) |
 | 18-07-2026 | Metadoc created (H1245 estate refresh); 11 findings fixed incl. the DOI-conflict flag | Fable 5 (`claude-fable-5`) |
+| 20-07-2026 | DOI conflict ruled false-DOI via live Zenodo check; backlog item 1 closed | Sonnet 5 (`claude-sonnet-5`) |
 
 _Dr. Mārcis Gasūns_

@@ -58,7 +58,7 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 **Not:** complete — recognises 72.4% of PWG `<ls>` keys (45 dated sources); the unrecognised 27.6% is late catalogues/secondary literature (FINDINGS §20). Also not a fold-key: sigla families bundle several works (§45).
 **Examples:** `<ls>RV.</ls>` → Ṛgveda · `<ls>MBh.</ls>` → Mahābhārata · an unrecognised late-catalogue siglum (the 27.6%).
 **Canonical in:** [FINDINGS §20](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#20-the-ls-source-map-recognises-724-percent-of-pwg-citations) · tool `ls_resolver.py`.
-↔ Interlinks: [ASSUMPTIONS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (a shared tag means one thing) is the confound that makes an `<ls>` siglum polysemous · [CONTRADICTIONS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) (SKD/VCP fusion) is why a raw `<ls>` count under-reads indigenous citation.
+↔ Interlinks: [ASSUMPTIONS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (a shared tag means one thing) is the confound that makes an `<ls>` siglum polysemous · [CONTRADICTIONS §6](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) (SKD/VCP fusion) is why a raw `<ls>` count under-reads indigenous citation.
 
 ---
 
@@ -98,7 +98,7 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 **Not:** the same as vidyut's surface forms (which keep the thematic `-a` and must NOT seed CANON), nor a stem grab (`sada` for `sad`) — normalize to citation form before comparing; grep vidyut as `ancu`, not SLP1 `aYc`, and strip anubandha `~ \ ^` (§63).
 **Examples:** `sad` (root) not `sada` (stem grab) · vidyut surface `ancu` not SLP1 `aYc` · strip anubandha markers `~ \ ^`.
 **Canonical in:** [`mw_roots.tsv`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_roots.tsv) · [FINDINGS §35](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#35-root-recovery-tiers-err-on-root-form-not-identity).
-↔ Interlinks: [CONTRADICTIONS §3](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) (Krylov/vidyut) is where vidyut's surface forms diverge from CANON · [GAPS §11](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) (verb-form frequency) is the layer these root joins feed.
+↔ Interlinks: [CONTRADICTIONS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) (Krylov/vidyut) is where vidyut's surface forms diverge from CANON · [GAPS §11](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) (verb-form frequency) is the layer these root joins feed.
 
 ---
 
@@ -110,7 +110,7 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 **Not:** comparable by a raw `<ls>` counter — SKD's ~80k citations, KRM's densest-in-corpus 6.00/entry all score zero under an `<ls>` detector; and a "space-preceded" `iti` counter hides `<s>iti` (~2/3 of KRM's citations). Control for register before ranking (FINDINGS §26).
 **Examples:** Western `<ls>RV.</ls>` (PWG/MW) · indigenous `… iti` quotation (SKD/VCP) · `<s>iti` hidden from a space-preceded counter.
 **Canonical in:** [FINDINGS §26](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#26-citation-density-is-register-bound-not-comparable-raw).
-↔ Interlinks: [ASSUMPTIONS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (a shared tag means one thing) is the premise this register split breaks · [CONTRADICTIONS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) (SKD/VCP fusion) is the same register confound seen at corpus scale.
+↔ Interlinks: [ASSUMPTIONS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (a shared tag means one thing) is the premise this register split breaks · [CONTRADICTIONS §6](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) (SKD/VCP fusion) is the same register confound seen at corpus scale.
 
 ---
 

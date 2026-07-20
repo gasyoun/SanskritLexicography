@@ -104,7 +104,7 @@ How to close: tally the disagreement-class distribution, append a FINDINGS row (
 Why it matters: a shared-task benchmark with no κ can't quantify its own gold reliability, which caps the credibility of any leaderboard result built on it (csl-guides `/about/shared-tasks`).
 Blocker: needs a second independent annotation pass (see `/gold-adjudicate`), not just a rerun.
 How to close: second-annotate the 24 scenarios, compute κ + a confusion table, append a FINDINGS row.
-↔ Interlinks: [CONTRADICTIONS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) is the same "two independent passes disagree" reliability worry, there for a correlation instead of a gold set · [GLOSSARY "ls source map"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) frames the dictionary-code answer space κ would be computed over.
+↔ Interlinks: [CONTRADICTIONS §7](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) is the same "two independent passes disagree" reliability worry, there for a correlation instead of a gold set · [GLOSSARY "ls source map"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) frames the dictionary-code answer space κ would be computed over.
 > **Source:** manifest `which-dictionary-routing-benchmark` (H281) · [kosha](https://github.com/gasyoun/kosha)/[csl-guides](https://github.com/sanskrit-lexicon/csl-guides) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · auto (seed_gaps.py)
 
 ### §11. `dcs-verb-form-frequency-prelim` is flagged preliminary, never finalised

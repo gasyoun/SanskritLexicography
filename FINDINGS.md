@@ -122,6 +122,7 @@ refuted or superseded, strike it and say why — never reuse its number.
 - 🟡 [§56. DICO's entry anchors nest three structural roles under one HTML class — only one is a true entry boundary](#56-dicos-entry-anchors-nest-three-structural-roles-under-one-html-class-only-one-is-a-true-entry-boundary)
 - 🟡 [§57. samskrtam.ru/z/ is id-addressed with no name lookup — deep-linking needs a scraped root→id table; 8 primer-basic roots are absent](#57-samskrtamruz-is-id-addressed-with-no-name-lookup-deep-linking-needs-a-scraped-rootid-table-8-primer-basic-roots-are-absent)
 - 🟡 [§58. PWG-RU promoted store has input-level provenance, but old RU rows lacked exact model versions](#58-pwg-ru-promoted-store-has-input-level-provenance-but-old-ru-rows-lacked-exact-model-versions)
+- 🟠 [§103. `10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos](#103-105281zenodo15834721-is-a-false-doi-cited-as-genuine-in-two-different-repos) — resolves to an unrelated topology preprint, not any Sanskrit-lexicon dataset; csl-observatory's own `CITATION.cff` carried it as OBS-T's "concept DOI".
 - 🟠 [§65. 6.6 % of the DeepSeek corpus word-alignments ground to nothing in their verse](#65-66-of-the-deepseek-corpus-word-alignments-ground-to-nothing-in-their-verse)
 - 🔴 [§66. The DCS `QL` frequency workbook's `SLP1` and length columns are truncated at ṣṭh/ḍh clusters](#66-the-dcs-ql-frequency-workbooks-slp1-and-length-columns-are-truncated-at-ṣṭhḍh-clusters)
 - 🟠 [§67. In PWG, article size dwarfs every "parametric" statistic you can extract from the entry](#67-in-pwg-article-size-dwarfs-every-parametric-statistic-you-can-extract-from-the-entry)
@@ -2692,7 +2693,7 @@ surface set — reported as the finding, not hidden (0 genuine engine gaps, noth
 csl-inflect give-back H185). `tense_caveat` follows [§91](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
 (DCS `Past` lumps aorist + perfect): 16,339 AG rows carry a `Past` attestation. The
 `forms`-vs-`inflections` generated-side table ambiguity is logged separately in
-[CONTRADICTIONS §6](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md),
+[CONTRADICTIONS §3](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md),
 now **briefed (H1366, 20-07-2026) with a `forms` recommendation at high confidence
 but not yet ruled** (a human call): the two tables share only 168,034 of 426,410
 non-heritage `(form, lemma)` pairs — different data products, not two counts of one
@@ -3010,3 +3011,34 @@ never assume the last listed member is the head.
 > pinned by four regression tests in
 > [`tests/test_samasa_ladder.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_samasa_ladder.py) ·
 > 19-07-2026, Opus 4.8 (`claude-opus-4-8`).
+
+### §103. `10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos
+
+Two committed docs disagreed on this DOI's status ([CONTRADICTIONS §8](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)):
+[BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md)
+called it a false DOI needing re-mint, while
+[data/FAIR_RELEASE_1.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/FAIR_RELEASE_1.md)
+(H817) recorded it as csl-observatory's genuinely minted OBS-T dataset DOI. A live
+Zenodo check 20-07-2026 (H1364) resolves the dispute: `https://doi.org/10.5281/zenodo.15834721`
+redirects to a Zenodo record titled *"A Non-Surgical and Unconditional Proof of Topological
+Sphericity via Entropy-Spectral Dynamics (v2.2)"* — an unrelated differential-geometry/topology
+preprint deposited 08-07-2025, with no connection whatsoever to CDSL, csl-observatory, or the
+OBS-T correction-event corpus.
+
+**The false DOI had propagated further than either doc admitted.** csl-observatory's own
+[`CITATION.cff`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/CITATION.cff)
+carried the identical DOI in its `identifiers:` block, labeled "Concept DOI for the OBS-T
+dataset (all versions)" — machine-readable citation metadata for a published repo, citing a
+mathematics preprint that has nothing to do with it. Whoever copy-pasted this DOI (H817,
+13-07-2026) apparently grabbed it from somewhere without resolving it first, and it was then
+trusted as ground truth by a second document instead of being independently checked.
+
+**Rule:** a DOI recorded as "already minted" for dataset X is not evidence dataset X has a
+DOI — resolve `https://doi.org/<doi>` and confirm the landing page actually describes X before
+citing or propagating the identifier anywhere, especially into `CITATION.cff`/`.zenodo.json`
+machine metadata.
+
+Fixed same pass: `data/FAIR_RELEASE_1.md` §Related and csl-observatory's `CITATION.cff` both
+corrected to state the OBS-T dataset has **no minted DOI yet**.
+
+> **Source:** [H1364](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1364-Sonnet_SanskritLexicography_contradictions-duplicate-section-repair-and-ch14-doi-ruling_20.07.26.md) · [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) / [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) · 20-07-2026, Sonnet 5 (`claude-sonnet-5`).

@@ -1,6 +1,6 @@
 # Publication pipeline — deep manual (papers · Brill book · docs_site)
 
-_Created: 11-07-2026 · Last updated: 18-07-2026_
+_Created: 11-07-2026 · Last updated: 20-07-2026_
 
 The subsystem deep manual for the **publication layer** of this workspace: the
 [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers)
@@ -222,13 +222,17 @@ updated against the registry:
 1. **FAIR/DOI sprint — still the top blocker, but narrower than first
    recorded.** `CITATION.cff` now EXISTS in this repo (H817 FAIR-release prep,
    13-07-2026, PR #442) and in kosha — the missing-cff list is stale.
-   ⚠️ **Unresolved cross-document conflict on the Ch. 14 DOI**
-   (`10.5281/zenodo.15834721`): BOOK_PLAN (and earlier revisions of this
-   manual) call it a false DOI resolving to an unrelated preprint, while
-   [data/FAIR_RELEASE_1.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/FAIR_RELEASE_1.md)
-   (H817) records the same DOI as csl-observatory's genuinely minted OBS-T
-   dataset DOI — one of the two is wrong, needs an online check before any
-   re-mint (logged in CONTRADICTIONS.md, 18-07-2026). *Partial progress:* the
+   ✅ **Ch. 14 DOI conflict ruled (H1364, 20-07-2026).** `10.5281/zenodo.15834721`
+   is a **false DOI** — a live Zenodo check confirmed it resolves to an
+   unrelated topology preprint. BOOK_PLAN was right;
+   [data/FAIR_RELEASE_1.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/FAIR_RELEASE_1.md)'s
+   claim that it was csl-observatory's genuinely minted OBS-T dataset DOI was
+   wrong, and the same false DOI had also propagated into csl-observatory's
+   own `CITATION.cff` — both corrected same pass (see
+   [CONTRADICTIONS §8](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)).
+   The correction dataset (Ch. 14/15) and the OBS-T dataset **both still need
+   a real Zenodo mint** — no shortcut, no DOI to cite yet for either.
+   *Partial progress:* the
    DCS denominator's Hellwig CC-BY sign-off was obtained by email 09-07-2026
    (A38 row), so its remaining gate is the Zenodo mint itself (MG `@DO`).
 2. **Rights table** — built (§4.3); only the rolling at-acceptance check
