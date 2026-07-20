@@ -10,6 +10,17 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — speed & orchestration audit: bottleneck ledger + verified action map (H1403)
+
+- [`PWG_RU_SPEED_ORCHESTRATION_BOTTLENECK_AUDIT_2026-07-20.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_RU_SPEED_ORCHESTRATION_BOTTLENECK_AUDIT_2026-07-20.md)
+  (Fable 5 `claude-fable-5`, 22-agent ultracode workflow: 5 miners → synthesis → 2 adversarial
+  lenses per recommendation). **0/8 recommendations survived unmodified (6 weakened, 2 refuted)**
+  — the speed frontier is executing already-minted work, not new design: run H1209 medium50
+  (parked since 18-07), finish H390 rule 4(a) instrumentation, close three operator-loop
+  residues; generation is only ~12–22 % of chain calendar. Registered
+  [DEAD_ENDS §12](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md)
+  (H1225 SANLOSS counter fix) and landed the dangling §11 (W3 vidyut-cheda NO-GO).
+
 ### Added — Sa→Ru gloss layer wave-4 read-only TM lookup (H1349 W4 — H1349 complete)
 
 - `src/saru_gloss_tm.py` (`GlossTM`) exposes the lemma + root gloss layers as a **read-only**

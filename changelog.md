@@ -14,6 +14,12 @@ not an error.
 
 ## [Unreleased]
 
+## [1.46.0] — 20-07-2026
+
+### Added
+
+- **PWG→RU speed & orchestration audit — bottleneck ledger + adversarially verified action map (H1403, Fable 5 `claude-fable-5`, 22-agent ultracode workflow).** [`RussianTranslation/PWG_RU_SPEED_ORCHESTRATION_BOTTLENECK_AUDIT_2026-07-20.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_RU_SPEED_ORCHESTRATION_BOTTLENECK_AUDIT_2026-07-20.md): 5 subsystem miners → synthesis → two adversarial lenses per recommendation. Headline: **0/8 synthesized recommendations survived unmodified (6 weakened, 2 refuted)** — dominant reason "already shipped or already minted", i.e. the speed frontier is executing queued work (H1209 medium50, H390 rule 4(a) instrumentation, three operator-loop residues), not new mechanisms. Ledger top-3: transport availability (6 days at 0 promoted cards with the validated controller-worker lane parked), operator serial loop (generation only ~12–22 % of chain calendar), and the blended clean-rate metric hiding content-clean ~83 % vs transport yield. Also registers the H1225 SANLOSS counter-fix escalation as [`DEAD_ENDS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) §12 — the audit's own synthesis re-proposed that disproven fix, proving the registry gap's cost live — and lands the missing §11 (H1349 W3 vidyut-cheda NO-GO), which `.ai_state.md` referenced but never wrote.
+
 ## [1.45.0] — 20-07-2026
 
 ### Fixed
