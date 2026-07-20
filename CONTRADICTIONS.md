@@ -1,6 +1,6 @@
 # CONTRADICTIONS — Sanskrit-data source disagreements with no verdict
 
-_Created: 08-07-2026 · Last updated: 19-07-2026_
+_Created: 08-07-2026 · Last updated: 20-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS states *one* fact. This file holds the act FINDINGS cannot: **disagreeing** — ≥2 sources give incompatible values and no ruling has been made. The moment a contradiction is ruled, it **graduates** to a [`CROSS_REPO_DECISIONS`](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##` (leave a one-line "→ D##, resolved" tombstone here). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/CONTRADICTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/CONTRADICTIONS.md).
 
@@ -44,16 +44,16 @@ Blocks: the GasunsDhatu 2026 §2.6 Table 5 / П9 correction (manifest `varga-ser
 > **Source:** [FINDINGS §62](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) · [SanskritGrammar](https://github.com/gasyoun/SanskritGrammar)/[VisualDCS](https://github.com/gasyoun/VisualDCS) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
 ### §6. Concordance-Q3 plan set: kosha generated side is `forms` or `inflections` (5× apart)
-🟠 ✍️ **The Concordance-Q3 plan set names two different kosha tables as the generated inflection side, off by 5×.**
+🟡 ✍️ **Two different kosha tables named as the generated inflection side — briefed + recommended (H1366), not yet ruled (a human call).**
 Positions:
 | Source | Value | Evidence loc |
 |--------|-------|--------------|
-| IMPLEMENTATION § W1b deliverable text | `forms` — 1,378,401 rows (426,410 non-heritage) | [morph build report](https://github.com/gasyoun/kosha/blob/main/data/concordance/MORPHOLOGY_ATTESTATION_BUILD_REPORT.md) |
-| ARCHITECTURE § 2 diagram ("6.9M generated") | `inflections` — 6,917,018 rows | same |
-Status: 🟡 provisional pick — A3 (W1b) built on `forms`, the only table with a `source` column, which the trust-ordering / `include_heritage` discipline requires; `inflections` does not distinguish heritage and was NOT folded in. Which table A4 measures is a human call.
-Blocks: the A4 derivation-capture (W2a) generated-side denominator; the architecture diagram's "6.9M" should be corrected to name `inflections`, not propagated forward.
+| IMPLEMENTATION § W1b deliverable text | `forms` — 1,378,401 rows (426,410 non-heritage), `source` split dcs/vidyut/heritage, **no morphology** | [morph build report](https://github.com/gasyoun/kosha/blob/main/data/concordance/MORPHOLOGY_ATTESTATION_BUILD_REPORT.md) |
+| ARCHITECTURE § 1 diagram ("6.9M generated") | `inflections` — 6,917,018 rows, ~100% single-engine `cologne_mwinflect`, **full case/gender/number morphology** | same |
+Status: 🟡 **recommendation parked, not ruled.** Measured against `kosha.db` (20-07-2026, Opus 4.8 `claude-opus-4-8`): the "5× apart, same side" framing is itself a conflation — the two are **different data products**, sharing only **168,034 of 426,410** non-heritage `(form, lemma)` pairs, with `inflections` holding **3,246,914** pairs `forms` never has. **Recommendation: `forms`** (high confidence) — pipeline continuity (W2a consumes W1b/A3, built on `forms`); the `source` trust axis (`dcs>vidyut>heritage`, `include_heritage=False`) only `forms` carries; engine separation (W2a *generates* morphology via `vidyut.prakriya`, must not inherit `cologne_mwinflect`'s). A human accepts/overrides via the parked [decide brief](https://github.com/gasyoun/kosha/blob/main/docs/DECIDE_H1366_GENERATED_SIDE_FORMS_VS_INFLECTIONS.md); on acceptance this graduates to kosha PLAN `D13` + a ✅ tombstone here.
+Blocks: the A4 derivation-capture (W2a) generated-side denominator — **W2a must not start until this is ruled**. The architecture diagram's "6.9M" mislabel on the `forms` node **is corrected** (H1366).
 ↔ Interlinks: [FINDINGS §94](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) is the circularity finding (93% DCS-derived generated side) from the same A3 build.
-> **Source:** [H1262](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1262-Opus_kosha_a3_attested_form_join_morphology_audit_18.07.26.md) morphology attestation audit · [kosha](https://github.com/gasyoun/kosha) · [18-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-18&until=2026-07-19) · `claude-opus-4-8`
+> **Source:** surfaced by [H1262](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1262-Opus_kosha_a3_attested_form_join_morphology_audit_18.07.26.md); briefed + recommended by [H1366](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1366-Opus_kosha_generated-side-forms-vs-inflections-canonical-ruling_20.07.26.md) · [kosha](https://github.com/gasyoun/kosha) · [20-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-20&until=2026-07-21) · `claude-opus-4-8`
 
 ### §7. Grammatical `<ab>` abbreviations in pwg_ru: stay-Latin (10-07 ruling) vs translate-to-RU (19-07 DA-vote notes)
 🔴 ✍️ **The project's own abbreviation policy gives incompatible answers eleven days apart.**
@@ -123,7 +123,7 @@ Blocks: the FAIR/DOI sprint's re-mint decision (re-minting a good DOI vs citing 
 
 ## Conclusions
 
-- **Every row is 🟡 provisional, none ✅ ruled** — the file is a holding pen for live disagreements awaiting a [`CROSS_REPO_DECISIONS`](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##` verdict. A resolved contradiction leaves a one-line tombstone here and moves out.
+- **Every row is 🟡 provisional, none ✅ ruled** — the file is a holding pen for live disagreements awaiting a [`CROSS_REPO_DECISIONS`](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##` verdict (or, where the contradiction is repo-local, that repo's own decisions record). A resolved contradiction leaves a one-line tombstone here and moves out. §6 (kosha `forms`-vs-`inflections`) is **briefed with a `forms` recommendation** ([H1366 decide brief](https://github.com/gasyoun/kosha/blob/main/docs/DECIDE_H1366_GENERATED_SIDE_FORMS_VS_INFLECTIONS.md)) but still awaits the human ruling that would graduate it.
 - **Two recurring shapes.** A source contradicts *itself* (§1 Whitney across §319a/§356, §2 the 2014 prose against its own χ² table), or a small claim/exemplar is *overturned by machine-scale evidence* (§3 vidyut adjudicates Krylov, §4 the corpus classifier reverses the *dharma* exemplar, §5 the canonical run corrects the earlier one). The standing lesson mirrors ASSUMPTIONS: **trust the corpus count / χ² / vidyut table over prose intuition or a single hand-picked lemma.**
 - **The highest-value ruling is §1** — it blocks the ZALIZNYAK accent axis and is itself gated by [GAPS §1](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md)'s n=2 data scarcity; the two are one problem, and [RECIPES §1](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) is the pass that would break the tie.
 - **Where they point:** a ruled row exits to [CROSS_REPO_DECISIONS](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##`; the unmeasured evidence that would force a ruling lives in [GAPS](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md), and the reproducible methods that adjudicate them in [RECIPES](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md).
