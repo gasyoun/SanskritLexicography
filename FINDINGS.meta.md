@@ -1,6 +1,6 @@
 # FINDINGS.meta.md — metadoc for `FINDINGS.md`
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 20-07-2026_
 
 This is a **metadoc** — a document *about* a document. Its subject is
 [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
@@ -87,5 +87,6 @@ to cover it.
 | Date | Event | Who |
 |---|---|---|
 | 18-07-2026 | Metadoc created (backfill sweep) | Sonnet 5 (`claude-sonnet-5`), H968 |
+| 20-07-2026 | **Citation-identity ruling + integrity gate (H1361).** §-number ruled a permanent citation key (append-only, one claim per number, later claim moves with a tombstone, Index = classification of record); renumbered 4 FINDINGS collisions (§80/§86/§87/§103 → §448–451) + 2 DEAD_ENDS (§8 → §9/§10); backfilled 26 Index entries; fixed the §448→§452 marker; fixed both dashboard parsers (importance from the Index dot, 95→109 findings). New [`tools/epistemic_integrity_check.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tools/epistemic_integrity_check.py) gate in CI + pre-commit. Ruling: [`epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) | Opus 4.8 (`claude-opus-4-8`), H1361 |
 
 _Dr. Mārcis Gasūns_

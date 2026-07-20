@@ -112,7 +112,9 @@ Don't retry unless: you compute the direction at corpus scale from the start —
 ## C. Wrong-witness approaches (the method interrogated the wrong text)
 *Approaches abandoned because the evidence was sought in an edition/recension other than the one the claim is about — so every answer comes back ambiguous no matter how good the tooling.*
 
-### §8. Resolving PWG/MW `HARIV.` citations against DCS to find shared **erroneous** citations — abandoned
+### §9. Resolving PWG/MW `HARIV.` citations against DCS to find shared **erroneous** citations — abandoned
+
+_↩ **Renumbered from §8 → §9** (H1361, 20-07-2026): the §8 Petersburg-citation dead-end (bound to its §8b MBh-locus continuation) keeps §8. Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
 🔴 ✍️ **Testing whether MW and PWG share a *wrong* Harivaṃśa verse number by resolving `HARIV. N` against the DCS corpus — and, the deeper trap, proposing a vulgate↔critical *concordance* as the fix.**
 
 Failed because: PWG (15,415 numbered refs, range 1–16,369) and MW (1,053 numbered refs) both cite the **Calcutta vulgate** by *continuous śloka number* (16,374 ślokas, 271 adhyāyas). DCS carries **Vaidya's critical edition** (118 adhyāyas, 6,073 ślokas ≈ ⅓ of the vulgate). Only **1 of 587** shared rare refs resolved. The obvious repair — build a vulgate↔critical concordance — **cannot work**: a concordance maps a vulgate address to a critical address *on the assumption the address is correct*, which is precisely the proposition under test. An **erroneous** citation maps to a critical verse lacking the headword; a **correct** citation pointing at vulgate-only material maps to `ABSENT`. Both emit the same observable ("not found"), so no concordance — however perfect, however verse-level — can separate *Böhtlingk wrote the wrong number* from *Vaidya cut this verse*. With ⅔ of the vulgate absent from the critical text, the `ABSENT` branch swamps the signal.
@@ -136,7 +138,9 @@ Don't retry unless: you adjudicate the citation against **the vulgate itself**, 
 - **The standing escape hatch is a better witness or a better key, not more effort.** §1 wants a corpus inflected-form index (DCS); §2 wants a grammar/Zaliznyak cross-check; §5/§6 want a length-preserving `form_key` / a stable `LemmaId` — each dead end names the concrete different-signal condition that would reopen it.
 - **Where they point:** the abandoned keys are the mirror of [RECIPES](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (the paths that *do* reproduce), the violated premises live in [ASSUMPTIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md), and §7's corpus-scale reversal is already a [CONTRADICTIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) row.
 
-### §8. Gemini-OCR санскритских комментариев Сундараканды — вытеснен скрейпом
+### §10. Gemini-OCR санскритских комментариев Сундараканды — вытеснен скрейпом
+
+_↩ **Renumbered from §8 → §10** (H1361, 20-07-2026): §8 is kept for the citation/§8b pair; this Gemini-OCR entry is marginally older (08-07) but has no §Nb dependent, so moving it is safe. Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
 🟠 ✍️ **Маршрут «OCR сканов комментариев через Gemini» (H370) для слоя комментаторского диалога — оставлен, не провален.**
 What was tried: план OCR-ингеста печатных изданий Тилаки/Бхушаны/Широмани для Фазы-2.
 Why abandoned: лицензированный цифровой источник (Gita Supersite, CC BY 4.0) закрыл потребность раньше и чище — H370 закрыт как superseded 08-07-2026, Opus 4.8 (`claude-opus-4-8`); диспозиция: [SUNDARA_OCR_PHASE2_SUPERSEDED.md](https://github.com/gasyoun/CommentaryStrategies/blob/main/docs/SUNDARA_OCR_PHASE2_SUPERSEDED.md).

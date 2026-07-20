@@ -24,6 +24,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Epistemic integrity check (structural — before build)
+        # Duplicate §-numbers, heading↔Index parity, dangling index rows, next-free
+        # marker. Gates the builders: broken structure makes the dashboards garbage.
+        # Dashboard↔file parity is checked AFTER the build, below.
+        run: python tools/epistemic_integrity_check.py --dir . --structural-only
+
       - name: Build data + timeseries snapshot
         run: python findings_dashboard/build_findings_data.py
 
@@ -35,6 +41,10 @@ jobs:
             --dir . --side sanskrit \
             --repo-url https://github.com/gasyoun/SanskritLexicography/blob/master \
             --out epistemic_dashboard/epistemic.json
+
+      - name: Epistemic integrity check (full — after build)
+        # Now the dashboards are fresh; prove file↔dashboard count/importance parity.
+        run: python tools/epistemic_integrity_check.py --dir .
 
       - name: Commit data to master
         run: |

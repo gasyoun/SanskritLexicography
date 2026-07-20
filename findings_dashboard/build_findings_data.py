@@ -37,8 +37,27 @@ def slugify(text):
     return s.replace(' ', '-')
 
 
+def parse_index_importance(md_text):
+    """{finding number -> importance int} read from the `## Index` bullets, which
+    are the canonical importance source (34 findings carry their dot ONLY here, not
+    in the body). H1361: the Index is kept complete, so this classifies every finding."""
+    m = re.search(r'^##\s+Index\s*$', md_text, re.M)
+    if not m:
+        return {}
+    rest = md_text[m.end():]
+    nxt = re.search(r'^##\s+(?!Index)', rest, re.M)
+    idx = rest[:nxt.start()] if nxt else rest
+    out = {}
+    for line in idx.split('\n'):
+        em = re.match(r'^\s*-\s*(🔴|🟠|🟡)\s*\[§(\d+)\.', line)
+        if em:
+            out[int(em.group(2))] = IMPORTANCE[em.group(1)]
+    return out
+
+
 def parse_findings(md_text):
     lines = md_text.split('\n')
+    index_imp = parse_index_importance(md_text)
     findings, section = [], None
     i = 0
     while i < len(lines):
@@ -52,11 +71,18 @@ def parse_findings(md_text):
             j = i + 1
             while j < len(lines) and lines[j].strip() == '':
                 j += 1
-            imp = IMPORTANCE.get(lines[j][:1] if j < len(lines) else '', None)
             # scan the block for the Source blockquote date tag
             block_end = j
             while block_end < len(lines) and not lines[block_end].startswith(('### ', '## ')):
                 block_end += 1
+            # importance: Index dot (canonical) first, then first dot anywhere in the body
+            imp = index_imp.get(n)
+            if imp is None:
+                for bl in lines[j:block_end]:
+                    c = next((ch for ch in bl if ch in IMPORTANCE), None)
+                    if c:
+                        imp = IMPORTANCE[c]
+                        break
             dates = re.findall(r'·\s*(\d{4}-\d{2}(?:-\d{2})?)',
                                '\n'.join(l for l in lines[j:block_end] if l.startswith('> ')))
             evid = dates[-1] if dates else None

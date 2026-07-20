@@ -105,16 +105,41 @@ def parse_staleness(text):
     return total, flags
 
 
+def _findings_index_importance(text):
+    """{finding number -> dot} from FINDINGS' `## Index` — the canonical importance
+    source (H1361: 34 findings carry their dot ONLY in the Index, not the body)."""
+    m = re.search(r"^##\s+Index\s*$", text, re.M)
+    if not m:
+        return {}
+    rest = text[m.end():]
+    nxt = re.search(r"^##\s+(?!Index)", rest, re.M)
+    idx = rest[:nxt.start()] if nxt else rest
+    out = {}
+    for line in idx.split("\n"):
+        em = re.match(r"^\s*-\s*(🔴|🟠|🟡)\s*\[§(\d+)\.", line)
+        if em:
+            out[int(em.group(2))] = em.group(1)
+    return out
+
+
 def parse_findings_core(text):
     """Count FINDINGS.md's settled facts + importance, from whichever layout it uses.
-    Importance = the first 🔴/🟠/🟡 dot in each finding's block."""
-    bounds = list(FINDING_ATX.finditer(text)) or list(FINDING_INLINE.finditer(text))
+    Importance = the Index dot (canonical) first, then the first 🔴/🟠/🟡 dot in the
+    finding's body block. ATX headings are distinct numbers (H1361 removed duplicates),
+    so len(bounds) is the true finding count."""
+    atx = list(FINDING_ATX.finditer(text))
+    bounds = atx or list(FINDING_INLINE.finditer(text))
+    index_imp = _findings_index_importance(text) if atx else {}
     by_imp = {"3": 0, "2": 0, "1": 0}
     for i, m in enumerate(bounds):
         start, end = m.start(), (bounds[i + 1].start() if i + 1 < len(bounds) else len(text))
-        dm = DOT.search(text[start:end])
-        if dm:
-            by_imp[str(IMP[dm.group(1)])] += 1
+        n = int(m.group(1))
+        dot = index_imp.get(n)
+        if dot is None:
+            dm = DOT.search(text[start:end])
+            dot = dm.group(1) if dm else None
+        if dot:
+            by_imp[str(IMP[dot])] += 1
     return len(bounds), by_imp
 
 

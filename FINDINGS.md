@@ -141,6 +141,35 @@ refuted or superseded, strike it and say why — never reuse its number.
 
 ---
 
+
+**Appended findings — H1361 Index backfill (§76+ and renumbered §448–§451; append-only, uncategorised)**
+
+- 🟠 [§76. The MW→WordNet→semdom bridge is a candidate generator, not a classifier](#76-the-mwwordnetsemdom-bridge-is-a-candidate-generator-not-a-classifier)
+- 🟠 [§79. DCS 2021→2026 "lost lemma" counts are mostly lemmatization-policy drift — a-privatives now resolve to their bases](#79-dcs-20212026-lost-lemma-counts-are-mostly-lemmatization-policy-drift--a-privatives-now-resolve-to-their-bases)
+- 🟠 [§80. DCS `text_sandhied` is largely DE-sandhied pada text in the Rāmāyaṇa — and locus joins fail across editions; a text-keyed 3-tier match (exact / consonant-skeleton / fuzzy) recovers it](#80-dcs-textsandhied-is-largely-de-sandhied-pada-text-in-the-rāmāyaṇa--and-locus-joins-fail-across-editions-a-text-keyed-3-tier-match-exact--consonant-skeleton--fuzzy-recovers-it)
+- 🟠 [§81. vidyut-cheda 0.4 lemmatizes derivatives to the dhātu ROOT (rāmaḥ → ram) where DCS uses the nominal stem — and over-segments epic verse 1.44×](#81-vidyut-cheda-04-lemmatizes-derivatives-to-the-dhātu-root-rāmaḥ--ram-where-dcs-uses-the-nominal-stem--and-over-segments-epic-verse-144)
+- 🟠 [§83. MW and the Petersburg dictionaries are NOT independent witnesses on inventory or apparatus — do not count their agreement as corroboration; but no shared *error* has ever been found](#83-mw-and-the-petersburg-dictionaries-are-not-independent-witnesses-on-inventory-or-apparatus--do-not-count-their-agreement-as-corroboration-but-no-shared-error-has-ever-been-found)
+- 🟠 [§84. pwg_ru readiness audit: `[NWS:]` attribution and `{%…%}`-delimiter dropping are NOT audit-contract defects; observed token/cost economy is `not_recoverable`; store-membership ≠ audit-clean](#84-pwgru-readiness-audit-nws-attribution-and--delimiter-dropping-are-not-audit-contract-defects-observed-tokencost-economy-is-notrecoverable-store-membership--audit-clean)
+- 🟠 [§85. A clean-looking subset is not promotable evidence when its audit or execution contract failed](#85-a-clean-looking-subset-is-not-promotable-evidence-when-its-audit-or-execution-contract-failed)
+- 🟠 [§86. DCS verbal-feature annotation density collapses for later texts — feats-based diachronic metrics measure ANNOTATION, not language](#86-dcs-verbal-feature-annotation-density-collapses-for-later-texts--feats-based-diachronic-metrics-measure-annotation-not-language)
+- 🟠 [§87. A curated DCS text→period map EXISTS (consume, don't rebuild) — and the purāṇas carry a measured epic-imitative signature on two independent axes](#87-a-curated-dcs-textperiod-map-exists-consume-dont-rebuild--and-the-purāṇas-carry-a-measured-epic-imitative-signature-on-two-independent-axes)
+- 🟠 [§88. The DCS snapshot's UD dependency slice is real but VEDIC-SKEWED — syntax studies get counterexample hunts, not classical norms](#88-the-dcs-snapshots-ud-dependency-slice-is-real-but-vedic-skewed--syntax-studies-get-counterexample-hunts-not-classical-norms)
+- 🟠 [§89. MW writes `<ls>` citations in TWO markup shapes and locates them in roman as well as arabic — a literal `<ls>` regex undercounts its apparatus by 28.6%, and case-folding the roman test erases the `L.` hedge](#89-mw-writes-ls-citations-in-two-markup-shapes-and-locates-them-in-roman-as-well-as-arabic--a-literal-ls-regex-undercounts-its-apparatus-by-286-and-case-folding-the-roman-test-erases-the-l-hedge)
+- 🟠 [§91. DCS has no aorist TENSE value — `feat_tense='Past'` lumps aorist with the perfect; `feat_formation` is what actually separates them](#91-dcs-has-no-aorist-tense-value--feattensepast-lumps-aorist-with-the-perfect-featformation-is-what-actually-separates-them)
+- 🟠 [§92. A verified claim register is not Whitney-proof — 3 of 229 erdict_fact: TRUE rows in Kochergina claims.yml contradict Whitney, and ~65 of the register/article §-refs point at the wrong section](#92-a-verified-claim-register-is-not-whitney-proof--3-of-229-erdictfact-true-rows-in-kochergina-claimsyml-contradict-whitney-and-65-of-the-registerarticle--refs-point-at-the-wrong-section)
+- 🟠 [§93. Declared, validated, and never enforced — the PWG headless executor read a manifest `budgets{}` block it did not obey, and every offline gate stayed green](#93-declared-validated-and-never-enforced--the-pwg-headless-executor-read-a-manifest-budgets-block-it-did-not-obey-and-every-offline-gate-stayed-green)
+- 🟠 [§94. kosha's generated `forms` is 93% DCS-derived, so its attested-form join is a round-trip — only the vidyut-engine subtotal (12.4% attested) carries signal, and A¬G cannot measure engine gaps](#94-koshas-generated-forms-is-93-dcs-derived-so-its-attested-form-join-is-a-round-trip--only-the-vidyut-engine-subtotal-124-attested-carries-signal-and-ag-cannot-measure-engine-gaps)
+- 🟠 [§95. DharmaMitra `unsandhied` batches return MISALIGNED results on short inputs — doubled echoes and other texts' tokens — so every consumer must validate by surface reconstruction before display](#95-dharmamitra-unsandhied-batches-return-misaligned-results-on-short-inputs--doubled-echoes-and-other-texts-tokens--so-every-consumer-must-validate-by-surface-reconstruction-before-display)
+- 🟠 [§96. SamudraManthanam's generated full-corpus JSONL has 38,288 duplicate canonical-ID groups, concentrated in `devibhagavata-purana`](#96-samudramanthanams-generated-full-corpus-jsonl-has-38288-duplicate-canonical-id-groups-concentrated-in-devibhagavata-purana)
+- 🟠 [§97. Cross-dictionary attestation via Monier-Williams overstates independence — MW was compiled *from* Böhtlingk-Roth (PW/PWG), so an MW-only hit is not evidence a PW/PWG word is independently text-attested](#97-cross-dictionary-attestation-via-monier-williams-overstates-independence--mw-was-compiled-from-böhtlingk-roth-pwpwg-so-an-mw-only-hit-is-not-evidence-a-pwpwg-word-is-independently-text-attested)
+- 🟠 [§98. PD's inline sigla contain a near-homograph pair that similarity-clustering silently fuses — `MahāBhā.` is the Mahābhārata, `MahāBh.` is the Mahābhāṣya, and the locator shape tells them apart mechanically](#98-pds-inline-sigla-contain-a-near-homograph-pair-that-similarity-clustering-silently-fuses--mahābhā-is-the-mahābhārata-mahābh-is-the-mahābhāṣya-and-the-locator-shape-tells-them-apart-mechanically)
+- 🟠 [§99. Output gates must audit structured semantic fields, and sample-clean editorial rewrites still require a full-population ambiguity pass](#99-output-gates-must-audit-structured-semantic-fields-and-sample-clean-editorial-rewrites-still-require-a-full-population-ambiguity-pass)
+- 🟠 [§101. DCS's compound dictionary carries splits whose member **order** does not match the surface form — invisible to a type-drill, fatal to any head-first analysis](#101-dcss-compound-dictionary-carries-splits-whose-member-order-does-not-match-the-surface-form--invisible-to-a-type-drill-fatal-to-any-head-first-analysis)
+- 🟠 [§104. The DCS `dcs-conllu` treebank is only ~3.9 % dependency-parsed — corpus government/valency work must lean on co-occurrence, not arcs, and read absence as "unknown"](#104-the-dcs-dcs-conllu-treebank-is-only-39--dependency-parsed--corpus-governmentvalency-work-must-lean-on-co-occurrence-not-arcs-and-read-absence-as-unknown)
+- 🟠 [§448. CORRECTED — the MWScan/2020 `servepdf.php` endpoint is RIGHT (serves 1899); the 1872 first-edition scan coexists on the portal with colliding page numbers](#448-corrected--the-mwscan2020-servepdfphp-endpoint-is-right-serves-1899-the-1872-first-edition-scan-coexists-on-the-portal-with-colliding-page-numbers)
+- 🟠 [§449. Samāsa-type frequency does not exist in any org corpus — and the grammarians' canonical examples are corpus-ghosts (8/58 attested, max freq 147)](#449-samāsa-type-frequency-does-not-exist-in-any-org-corpus--and-the-grammarians-canonical-examples-are-corpus-ghosts-858-attested-max-freq-147)
+- 🟠 [§450. The roadmap's "OBS-T κ=0.42" was a phantom figure — no measured agreement exists for any OBS-T axis](#450-the-roadmaps-obs-t-κ042-was-a-phantom-figure--no-measured-agreement-exists-for-any-obs-t-axis)
+- 🟠 [§451. `10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos](#451-105281zenodo15834721-is-a-false-doi-cited-as-genuine-in-two-different-repos)
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -1494,7 +1523,9 @@ catalog rows.
 
 ---
 
-### §80. CORRECTED — the MWScan/2020 `servepdf.php` endpoint is RIGHT (serves 1899); the 1872 first-edition scan coexists on the portal with colliding page numbers
+### §448. CORRECTED — the MWScan/2020 `servepdf.php` endpoint is RIGHT (serves 1899); the 1872 first-edition scan coexists on the portal with colliding page numbers
+
+_↩ **Renumbered from §80 → §448** (H1361, 20-07-2026): the DCS `text_sandhied` finding (§80, H759) published first (12-07-2026) and keeps §80. Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
 
 🟠 **Corrected 15-07-2026 (same session-day as first written): the endpoint was never
 wrong.** An `api=1` probe of
@@ -2504,7 +2535,9 @@ Workflow template must abort before its first agent call rather than mislabel it
 > [`no_pwg_scale_plan.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/no_pwg_scale_plan.py)) ·
 > 15-07-2026, Codex/GPT-5.
 
-### §86. Samāsa-type frequency does not exist in any org corpus — and the grammarians' canonical examples are corpus-ghosts (8/58 attested, max freq 147)
+### §449. Samāsa-type frequency does not exist in any org corpus — and the grammarians' canonical examples are corpus-ghosts (8/58 attested, max freq 147)
+
+_↩ **Renumbered from §86 → §449** (H1361, 20-07-2026): the DCS verbal-feature-density finding (§86, H1000) is the one the inbound §86 citation names and keeps §86. Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
 
 Any plan to put a frequency layer on the samāsa taxonomy — the
 [SamasaChakram](https://github.com/gasyoun/SamasaChakram) wheel's 58 leaf subtypes, a
@@ -2558,7 +2591,9 @@ shared memory of "things we measured that aren't obvious from the code."_
 
 _Dr. Mārcis Gasūns_
 
-### §87. The roadmap's "OBS-T κ=0.42" was a phantom figure — no measured agreement exists for any OBS-T axis
+### §450. The roadmap's "OBS-T κ=0.42" was a phantom figure — no measured agreement exists for any OBS-T axis
+
+_↩ **Renumbered from §87 → §450** (H1361, 20-07-2026): the DCS text→period-map finding (§87, H1000) published first (16-07-2026), is the cited one, and keeps §87. Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
 
 Found 17-07-2026 (Fable 5 `claude-fable-5`, H1074, while drafting A31). The P5 row and a G4 cell
 of [`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md)
@@ -3102,7 +3137,9 @@ never assume the last listed member is the head.
 > [`tests/test_samasa_ladder.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_samasa_ladder.py) ·
 > 19-07-2026, Opus 4.8 (`claude-opus-4-8`).
 
-### §103. `10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos
+### §451. `10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos
+
+_↩ **Renumbered from §103 → §451** (H1361, 20-07-2026): the union-corroboration finding (§103, H1363) published first and keeps §103; this DOI claim (H1364) reused the number. Per the [citation-identity ruling](epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md)._
 
 Two committed docs disagreed on this DOI's status ([CONTRADICTIONS §8](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)):
 [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md)
