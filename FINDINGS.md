@@ -3200,3 +3200,74 @@ lookups.
 > measured by [`aggregate_dcs_gov.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/aggregate_dcs_gov.py),
 > reported in [`SCHERZL_GOVERNMENT_CORPUS_ADJUDICATION_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/SCHERZL_GOVERNMENT_CORPUS_ADJUDICATION_2026.md) ·
 > 20-07-2026, Opus 4.8 (`claude-opus-4-8`).
+
+---
+
+### §102. MW's derivation markup and the DCS corpus are productive over the *same* compound final members but with near-disjoint first members (median Jaccard 0.00, 56% share zero) — and the corpus-unattested MW stratum is kośa/participle formations, not ghost-words
+
+Measured 20-07-2026 (H1328) by joining the MWderivations `issue15` **uttarapada** (compound
+final-member) index — 19,177 distinct MW-kept finals, classes `UTTARAPADA` + `KRT_STEM_MEMBER`,
+the bound taddhita suffixes `-tva`/`-tā`/`-vat` already excluded upstream — to the DCS Kompozity
+split-list (`cmps.csv` × `names.csv`: 399,096 distinct compound word-forms, 168,481 freq-annotated,
+21,958 distinct finals), keyed on the compound final member. This is the first join of these two
+sides of one phenomenon; two substantive results, plus a join-hygiene trap that has to be cleared first.
+
+**Join hygiene — two orthographic folds are mandatory or the join is fake, and two morphological
+differences must NOT be folded.** A naïve string join matches only **29 %** of MW finals; almost all
+of that miss is artefact, not absence. Folding **anusvāra** (MW writes `ṃ` U+1E43 *dot-below*, DCS `ṁ`
+U+1E41 *dot-above*) and MW's own markup (`@` join marker, `-` hyphen, and a **leading avagraha** `'`
+= elided initial *a-*, so `'bja` = *abja*) lifts the match to **33 %**. Both folds are pure orthography,
+applied to both sides. What is deliberately **not** folded is morphology: final vowel-length / gender
+(`sena` vs `senā`, `phalā` vs `phala`), the `vatī`/`vat` suffix shape, and junction sandhi (`cchada`
+vs *chada*, `ṣṭha` vs *stha*) — folding those would *manufacture* matches. They are diagnosed as a
+separate `form_variant` stratum (**1,289** finals) and **never asserted absent**. The four strata of
+MW finals against the corpus:
+
+| `corpus_status` | count | meaning |
+|---|---:|---|
+| `final` | 6,249 | attested as a compound-**final** member in the corpus — joinable |
+| `form_variant` | 1,289 | a corpus final differing only by vowel-length / gender / junction sandhi — **not** an absence |
+| `nonfinal_only` | 1,252 | occurs in the corpus but never compound-finally |
+| `absent` | 10,387 | appears nowhere in the corpus as any member — the dictionary-only stratum |
+
+**Finding 1 (headline) — dictionary and corpus are productive over the *same* finals but populate
+them with *different words*.** Of the 6,249 finals **both** sides attest, the two first-member
+vocabularies barely intersect: **median Jaccard = 0.00** (mean 0.10), and **3,526 of 6,249 (56 %)
+share zero first members at all**. `-indra` "lord-of": MW records 2 first members, the corpus 286,
+overlap **0** (3,072 corpus tokens); `-ādi` "and-the-rest": MW 13 vs corpus 2,126, overlap 5. The
+well-behaved case (`-pati`, MW 358 / corpus 200 / 90 shared) is the exception, not the rule. So even
+where MW's derivation markup and DCS agree that "-X" is a live compound head, they overwhelmingly
+disagree about *which* words sit in front of it — "productive in the dictionary vs attested in the
+corpus" made concrete at the level of the individual final member, the thing neither asset records alone.
+
+**Finding 2 — the 10,387 corpus-unattested MW finals are a low-productivity kośa/participle stratum,
+NOT ghost-words.** 86 % (**8,892 / 10,387**) are MW **hapax** finals (a single first member even inside
+MW; median `mw_first_members` = 1); only **50** are productive-yet-corpus-absent (`mw_first_members ≥ 10`),
+and those sort into recognisable lexicographic classes: kośa-tradition work-title / *nāma* formations
+(`puṣpikā` 36, `ratnāvalī` 29, `muktāvalī` 22, `campū` 17), deverbal-participle finals DCS does not
+segment (`baddha` 33, `cyuta` 25, `varjita` 24, `gṛhīta` 19), inflected adverbial finals DCS lemmatises
+away (`pūrvakam`, `taram`, `kāram`), plus a residue of MW-index split artefacts (finals opening `ṃ-`,
+or with a stranded `ṛ`: `rṣi` = *ṛṣi*). This directly reinforces
+[§86](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#86-samāsa-type-frequency-does-not-exist-in-any-org-corpus--and-the-grammarians-canonical-examples-are-corpus-ghosts-858-attested-max-freq-147)
+(the grammarians' canonical samāsa examples are themselves corpus-ghosts, 8/58 attested) and
+[§97](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#97-cross-dictionary-attestation-via-monier-williams-overstates-independence--mw-was-compiled-from-böhtlingk-roth-pwpwg-so-an-mw-only-hit-is-not-evidence-a-pwpwg-word-is-independently-text-attested)
+("most PWG ghost-words are corpus gaps, not ghosts"): exact normalized match is a **lower bound** on
+attestation, so the 10,387 are candidates, not verdicts, and the residue is a real kośa / DCS-segmentation
+stratum, not spurious words.
+
+**The corpus side has its own junk head, mirroring MW's excluded taddhita head.** DCS over-segments
+enclitics, pronoun stems and bare verb roots as compound members: `ca` (**11,057 forms / 2 tokens**),
+`eva`, `idam`/`tad`, and bare roots `kṛ`/`as`/`bhū`/`gam` — all high on a form-count ranking, near-zero
+on tokens. The exact twin of MW's excluded taddhita head is `-tva` (3,546 forms / 4,830 tokens) and
+`-tā` (1,755 / 2,758): genuinely high-frequency, so ranking by tokens alone does **not** drop them — an
+explicit stoplist (particles + pronoun stems + bare roots + `-tva`/`-tā`) is required on the corpus side,
+exactly as issue15 set those suffixes aside on the dictionary side. (Same `names.csv`/`cmps.csv` asset
+whose member-**order** caveat is
+[§101](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#101-dcss-compound-dictionary-carries-splits-whose-member-order-does-not-match-the-surface-form--invisible-to-a-type-drill-fatal-to-any-head-first-analysis).)
+
+> **Source:** report [`reports/uttarapada_dict_vs_corpus_divergence.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/uttarapada_dict_vs_corpus_divergence.md)
+> + join [`derived-data/Kompozity/uttarapada_dict_vs_corpus.tsv`](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Kompozity/uttarapada_dict_vs_corpus.tsv)
+> (19,177 rows) + build [`derived-data/Kompozity/build_uttarapada_dict_vs_corpus.py`](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Kompozity/build_uttarapada_dict_vs_corpus.py) ·
+> dictionary side = [MWderivations `issue15/compounds_reverse_classified.tsv`](https://github.com/gasyoun/MWderivations/blob/master/issue15/compounds_reverse_classified.tsv) ·
+> [H1328](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1328-Opus_VisualDCS_kompozity-mw-uttarapada-join-dict-vs-corpus_19.07.26.md)
+> — VisualDCS · 20-07-2026, Opus 4.8 (`claude-opus-4-8[1m]`).
