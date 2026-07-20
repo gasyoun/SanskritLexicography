@@ -4,6 +4,35 @@ _Created: 09-07-2026 · Last updated: 20-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 20-07-2026 — Sa→Ru gloss layer, measured precision (H1349 wave 2)
+
+First **accuracy** measurement of the gloss layer (every prior number was coverage).
+**Model-vs-model LLM panel, NOT human gold** (org gold-provenance rule): 3 judges
+(Opus 4.8 `claude-opus-4-8`, Sonnet 5 `claude-sonnet-5`, Haiku 4.5 `claude-haiku-4-5`)
+independently labelled a **tier × frequency stratified** sample of 110 resolutions on two
+axes (lemmatization, gloss — D6); 9 split/correct-vs-wrong disagreements adversarially
+adjudicated by a 4th model (Fable 5 `claude-fable-5`). Sampler + aggregator
+[`src/saru_gloss_sample.py`](src/saru_gloss_sample.py) / [`src/saru_gloss_aggregate.py`](src/saru_gloss_aggregate.py);
+full report [`gold/saru_gloss_precision_report.md`](gold/saru_gloss_precision_report.md).
+Wilson 95% CI; "unsure" excluded from the denominator.
+
+| axis | precision | 95% CI | note |
+|---|--:|--:|---|
+| lemmatization (overall) | **86.1%** | 78.3–91.4 | correct 93 · wrong 15 · unsure 2 |
+| gloss (overall) | **85.3%** | 77.5–90.8 | ≈ the 84.4% upstream pair-precision ceiling; good+partial 97.2% |
+
+| tier | lemma prec | gloss prec |
+|---|--:|--:|
+| dcs (n=40) | 94.9% | 87.5% |
+| **vidyut (n=40)** | **71.8%** | 79.5% |
+| marker (n=30) | 93.3% | 90.0% |
+
+The **vidyut** tier is the lemmatization weak spot. Panel + verify converged on three
+systematic, actionable defect classes (wave-3 targets): (1) ṛ/ṝ root-vowel length collapsed
+to short (`kiranto`→√kṛ not √kṝ); (2) derived nominals lemmatized to a bare verbal root
+(`janitṛ`→jan, `liṅgin`→liṅg); (3) compound tokens lemmatized to their final member only
+(`anartha-trivarga`→trivarga). A human spot-check of the frozen sample is queued as a GTD @DO.
+
 ## 20-07-2026 — Sa→Ru gloss layer, wave-1 defect fixes (H1349 W1.1–W1.3)
 
 Three pipeline-defect fixes in the Sa→Ru gloss layer, measured before/after over
