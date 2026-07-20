@@ -10,6 +10,15 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — Sa→Ru gloss layer wave-4 read-only TM lookup (H1349 W4 — H1349 complete)
+
+- `src/saru_gloss_tm.py` (`GlossTM`) exposes the lemma + root gloss layers as a **read-only**
+  lookup for the pwg_ru/mw_ru card path: a Sanskrit lemma/root (SLP1) → ranked candidate
+  Russian renderings. Additive consumer only — does not touch the harness TM / store / the
+  safety-plan #547/#550 coordinator runtime. Smoke-tested on the published SanskritRussian
+  data (`gam`→пришел/отправился/…, `karman`→действия/деяния/…); fixture-backed regression
+  test `tests/test_saru_gloss_tm.py` wired into CI. Closes H1349 (waves 1–4).
+
 ### Added — Sa→Ru gloss layer wave-3 coverage spike: vidyut-cheda NO-GO (H1349 W3)
 
 - Measured whether `vidyut.cheda` compound segmentation can recover the 78,842 unresolved

@@ -4,6 +4,24 @@ _Created: 09-07-2026 · Last updated: 20-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 20-07-2026 — Sa→Ru gloss layer, wave 4: read-only TM lookup wired (H1349 W4 — H1349 COMPLETE)
+
+Downstream wave: [`src/saru_gloss_tm.py`](src/saru_gloss_tm.py) `GlossTM` exposes the lemma +
+root gloss layers as a **read-only** lookup for the pwg_ru/mw_ru card path — given a Sanskrit
+lemma/root (SLP1) it returns ranked candidate Russian renderings. Additive consumer only; it
+does not touch `pilot/translation_memory.py`, the store, or anything the safety-plan PRs
+#547/#550 touch (the wave-4 risk fence). Smoke test on the published `SanskritRussian` data:
+
+| query | layer | top candidates |
+|---|---|---|
+| `gam` (prefer root) | root | пришел (196) · отправился (177) · ушел (141) · пришли (100) |
+| `karman` | lemma | действия (240) · деяния (186) · действие … |
+
+Fixture-backed regression test (`tests/test_saru_gloss_tm.py`, 6 cases) wired into CI;
+PROJECT_INTERLINKS glossary downstream row flipped planned→wired. **This closes H1349** —
+waves 1 (defect fixes) + 2 (measured 85% precision) shipped; wave 3 (coverage) a measured
+NO-GO (DEAD_ENDS §11); wave 4 (this) wires the read-only consumer.
+
 ## 20-07-2026 — Sa→Ru gloss layer, wave-3 coverage spike: vidyut-cheda NO-GO (H1349 W3)
 
 Tried recovering the 78,842 unresolved forms via `vidyut.cheda` compound segmentation
