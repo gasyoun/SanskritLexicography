@@ -85,4 +85,36 @@ finding count is the true distinct-heading count (95 → **109**). The published
 ([/episteme/](https://gasyoun.github.io/SanskritLexicography/episteme/),
 [/findings/](https://gasyoun.github.io/SanskritLexicography/findings/)) regenerates to match.
 
+## 6. Follow-on collision — H1350 × H1361 both took §448–§451 (ruled by H1362, 20-07-2026)
+
+This ruling (H1361, PR [#615](https://github.com/gasyoun/SanskritLexicography/pull/615), merged
+14:38) assigned §448–§451 to its four movers believing those numbers free. It did not — 40
+minutes earlier the **H1350** PWG data-layers wave (PR
+[#612](https://github.com/gasyoun/SanskritLexicography/pull/612), merged **13:58**) had already
+appended four PWG findings at **§448–§451** (parse-rules census, four-tier `〉` nesting, `h`-field
+semantics, `<ls>` 98% coverage). Neither session saw the other; both merged, and `origin/master`
+carried duplicate §448–§451 with the integrity gate red — the exact concurrent-append failure
+class this ruling was written to prevent, landing on the ruling itself.
+
+**Verdict (rule 4 citation exception).** By publication date alone the H1350 block (13:58) precedes
+the movers (14:38) and would keep the numbers. But rule 4's second clause governs: *when an inbound
+citation demonstrably names one of the two claims, that claim keeps the number regardless of date.*
+The movers are the claims named by **this merged, authoritative ruling** (§3 table) — the strongest
+possible citation anchor, since it is the numbering contract of record — as well as the H1361
+changelog entry and [FINDINGS.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.meta.md)
+history row. The H1350 block's only inbound citations were a session journal and its own changelog
+entry, both in-repo and fixable in the same pass. So the **movers keep §448–§451**, and the **H1350
+block moved to §452–§455** with in-place tombstones. The next-free marker advances `§452 → §456`.
+
+| Was | Now | Claim (H1350) |
+|---|---|---|
+| §448 | **§452** | csl-atlas PWG parse-rules census stale/incomplete |
+| §449 | **§453** | PWG `〉` nests four enumeration tiers |
+| §450 | **§454** | pwg_ru store `h` field inconsistent semantics |
+| §451 | **§455** | PWG `<ls>` resolution already 98%+ |
+
+Lesson for the validator, already true in code: the gate is only protective if it runs **on
+`master` after every merge**, not just in each PR's own pre-merge CI — two PRs green in isolation
+can still collide. Tracked as the residual follow-up; this pass restores green by renumbering.
+
 _Dr. Mārcis Gasūns_

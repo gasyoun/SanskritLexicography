@@ -68,10 +68,10 @@
     "queue_decay_pct": 0.82
    },
    "registry": {
-    "total": 109,
+    "total": 113,
     "by_importance": {
-     "2": 74,
-     "1": 17,
+     "2": 77,
+     "1": 18,
      "3": 18
     },
     "stale": 0
