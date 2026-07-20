@@ -18,12 +18,35 @@ OUT = os.path.join(HERE, "_diff")
 THEN2014 = os.path.join(HERE, "then-2014")   # frozen 2014 Cologne snapshots
 NOW2026 = os.path.join(HERE, "now-2026")     # current-csl-orig key1 regeneration
 
+# PD (Deccan) is not in csl-orig, but its headword export lives in the sibling
+# alternateheadwords repo as `page-id:headword:charstart,charend` per line —
+# same key1(normalized)/key2(print-form) convention as the other dicts, just
+# not in csl-orig <k1>/<k2> tag format. H1365, 20-07-2026.
+PD_SRC = os.environ.get("PD_HW0",
+    r"C:/Users/user/Documents/GitHub/alternateheadwords/data/PD/PDhw0.txt")
+
 # HeadwordLists DICT code -> csl-orig/v02 subdir.
 # PWK = Böhtlingk's *kürzere Fassung* = csl-orig `pw`. PD (Deccan) is not in csl-orig.
 CODE2DIR = {"AP": "ap", "BHS": "bhs", "BUR": "bur", "CAE": "cae", "CCS": "ccs",
             "GRA": "gra", "INM": "inm", "MD": "md", "MW": "mw", "PD": None,
             "PWG": "pwg", "PWK": "pw", "SCH": "sch", "SKD": "skd", "VCP": "vcp",
             "VEI": "vei"}
+
+def pd_now_set(kt):
+    """PD headword export is `pageid:headword:start,end`, one entry per line.
+    key2 = raw headword field verbatim (keeps `-`, `'`, `[...]` — the print
+    form). key1 = same with `-`/`'` stripped and joined (matches the then-2014
+    normalization: `aDama-parityAga` -> `aDamaparityAga`, `aDinaBo'Nganam` ->
+    `aDinaBoNganam`); brackets are NOT stripped (verified against then-2014)."""
+    key2 = set()
+    for line in open(PD_SRC, encoding="utf-8"):
+        parts = line.rstrip("\n").split(":")
+        if len(parts) < 2 or not parts[1]:
+            continue
+        key2.add(parts[1])
+    if kt == "2":
+        return key2
+    return set(h.replace("-", "").replace("'", "") for h in key2)
 
 def src_path(d):
     for cand in (os.path.join(ORIG, d, d + ".txt"),):
@@ -71,12 +94,12 @@ def main():
         m = re.match(r'^([A-Z]+)-unique-key([12])-(\d+)\.txt$', f)
         code, kt = m.group(1), m.group(2)
         d = CODE2DIR.get(code)
-        src = src_path(d) if d else None
+        src = src_path(d) if d else (PD_SRC if code == "PD" and os.path.exists(PD_SRC) else None)
         then = set(l.rstrip('\n') for l in open(os.path.join(THEN2014, f), encoding='utf-8-sig') if l.strip())
         if not src:
             rows.append((f, len(then), None, None, None, None, None,
                          "no csl-orig source (PD not in csl-orig)")); continue
-        now = now_set(src, kt)
+        now = pd_now_set(kt) if code == "PD" else now_set(src, kt)
         added, removed = now - then, then - now
         kept = len(then) - len(removed)
         overlap = 100 * kept / max(1, len(then))
@@ -119,7 +142,10 @@ def main():
           "then-vs-now diff is ~100 % and **not** a real headword change. The current key2 has been "
           "re-extracted as clean SLP1 into [`now-2026/`](now-2026/), so it is usable directly even "
           "though it can't be line-diffed against the numeric 2014 file.",
-          "- **PD** has no csl-orig source locally.",
+          "- **PD** is not in csl-orig, but its headword export lives in the sibling "
+          "[`alternateheadwords`](https://github.com/sanskrit-lexicon/alternateheadwords) repo "
+          "(`data/PD/PDhw0.txt`, 107,620 entries, `pageid:headword:start,end` per line) — "
+          "compared here the same way as the csl-orig-backed dicts (H1365, 20-07-2026).",
           "",
           "| List | then (2014) | now (2026) | added | removed | overlap | growth | verdict |",
           "|---|--:|--:|--:|--:|--:|--:|---|"]
@@ -181,10 +207,10 @@ def write_now():
         m = re.match(r'^([A-Z]+)-unique-key([12])-\d+\.txt$', f)
         code, kt = m.group(1), m.group(2)
         d = CODE2DIR.get(code)
-        src = src_path(d) if d else None
+        src = src_path(d) if d else (PD_SRC if code == "PD" and os.path.exists(PD_SRC) else None)
         if not src:
             skipped.append(f"{code} key{kt} (no csl-orig source)"); continue
-        keys = sorted(now_set(src, kt), key=sanskrit_key)
+        keys = sorted(pd_now_set(kt) if code == "PD" else now_set(src, kt), key=sanskrit_key)
         out = os.path.join(NOW2026, f"{code}-unique-key{kt}-{len(keys)}.txt")
         # drop any stale now-2026/ file for this dict+keytype (count may have changed)
         for old in os.listdir(NOW2026):
