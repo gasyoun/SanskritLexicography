@@ -2,6 +2,12 @@
 
 _Created: 20-07-2026 · Last updated: 20-07-2026_
 
+> **H1389 update (20-07-2026).** The text-attestation regrade this report's first
+> pass deferred is now done — MW's `<ls>L.</ls>` split parsed from csl-orig, the
+> P3 corroborated share falls 34.7% → **33.8%**, and **17,386 MW-listed ghost
+> headwords** surface (see "Measured text-attestation regrade"). UNION.md's
+> published table has also been regenerated post-fold.
+
 **What this is.** The published cross-dict union
 ([UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md),
 [union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv))
@@ -205,11 +211,43 @@ witness when MW folds in (the P2→P3 newly-single set). Applying §97's aggrega
 word rather than attesting it — corroboration that is neither independent (it is
 Petersburg-internal) nor even text-grounded (it is a lexicographer's cross-copy).
 
-This is an **upper-bound estimate**, not a per-headword resolution: the union
-carries headword membership, not citation type, so the exact L.-only subset needs
-csl-orig `<ls>L.</ls>` parsing (deliberately out of scope here — flagged as the
-strongest available next step). The direction is unambiguous: text-attestation
-corroboration is **lower** than even the P3 figure.
+That was an **upper-bound estimate** in the first pass; the per-headword
+resolution is now done (**H1389**, below) and confirms the direction:
+text-attestation corroboration is **lower** than the P3 membership figure.
+
+### Measured text-attestation regrade (H1389)
+
+[`mw_ls_textattest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/mw_ls_textattest.py)
+parses csl-orig `mw.txt` and classifies each MW headword (SLP1 `<k1>`,
+homograph-collapsed to match the union key) as **text-attested** (≥1 `<ls>` that
+is not `L.`) or not. It reproduces §97 v2 exactly: **59,697 of 194,084 MW
+headwords (30.8%) carry no text citation.** The mask is committed as
+[`mw_non_textattested_slp1.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/mw_non_textattested_slp1.txt)
+so the regrade reproduces without the (large, external) csl-orig checkout.
+
+The re-audit's `-TA` policies then drop MW as a witness of any headword it merely
+lists. Measured effect:
+
+| Policy | Corroborated (≥2), membership | text-graded | share |
+|---|--:|--:|--:|
+| P0 published (15) | 180,804 | 169,223 | 52.3% |
+| P2 editorial-lineage (12) | 171,870 | 149,289 | 46.2% |
+| **P3 §83/§97 ruling (11)** | 112,153 | **109,429** | **33.8%** |
+| P4 strict +MD (10) | 108,869 | 106,200 | 32.8% |
+
+The text-grade bites hardest at **P2** (53.1% → 46.2%), where MW is still counted
+as its own witness — stripping its lexicographer-only listings removes a whole
+witness from tens of thousands of headwords. At **P3** the further drop is small
+(34.7% → 33.8%) because MW is *already* folded into Petersburg, so masking it
+only matters where MW was the sole Petersburg witness of a headword.
+
+**The standout finding — MW-listed ghosts.** **17,386** union headwords have MW
+as their *only* dictionary *and* MW only lists them (no text `<ls>`): they fall
+to **zero text witnesses** under the regrade. These are the union's strongest
+ghost-word candidates — attested nowhere but in a single lexicographer's list —
+the MW-side analogue of §97's PWG ghost-word residue. (The first-pass estimate,
+~18,368, was close.) Full `-TA` distributions, including the `n=0` ghost bucket,
+are in the [reaudit TSV](https://github.com/gasyoun/SanskritLexicography/blob/master/data/witness_independence_reaudit.tsv).
 
 ## Full re-audited distributions
 
@@ -277,15 +315,13 @@ post-fold file to close the drift.
   P1 indisputable, P2 documented, **P3 = the §83/§97 finding (the substantive
   answer)**, P4 one strict step further. Report the range; the honest centre is
   P3.
-- **A stronger re-audit is available and not done here.** [§97
-  v2](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
-  found MW's own `<ls>L.</ls>` ("lexicographers") marker flags **30.8%** of MW
-  headwords as koṣa-sourced with *no text citation* — so bare MW membership
-  overstates even text-attestation within MW. This union file carries only
-  headword membership, not per-entry citation type, so that finer cut can't be
-  applied here; a re-audit reading MW's non-`L.` `<ls>` from csl-orig would
-  deflate the counts further still. Exact-SLP1 membership is also a **lower
-  bound** (variant spelling/accent misses a real shared headword).
+- **The stronger, text-attestation-graded re-audit is now done (H1389)** — see
+  the "Measured text-attestation regrade" section above. Reading MW's non-`L.`
+  `<ls>` from csl-orig deflates the P3 share 34.7% → 33.8% and surfaces 17,386
+  MW-listed ghost headwords. Applying the same `L.`-test to the whole Petersburg
+  family (PWG/PWK also carry koṣa citations, per §97's generalised rule) would
+  deflate further and is the remaining open step. Exact-SLP1 membership is also a
+  **lower bound** (variant spelling/accent misses a real shared headword).
 
 ## FAIR / provenance
 

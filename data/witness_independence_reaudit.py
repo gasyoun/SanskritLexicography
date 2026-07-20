@@ -176,26 +176,36 @@ def build_policies():
 
 
 def load_union(path):
-    """Yield ``(dict_codes, n_dicts_field)`` per headword.
+    """Yield ``(slp1, dict_codes, n_dicts_field)`` per headword.
 
     ``n_dicts_field`` is the file's own recorded count — used as an independent
     regression anchor for P0 (identity map): P0's distinct-cluster count must
     equal the file's ``n_dicts`` for every row, so the P0 histogram must equal
-    the ``n_dicts``-column histogram exactly.
+    the ``n_dicts``-column histogram exactly. ``slp1`` keys the MW
+    text-attestation mask (see ``--text-graded``).
     """
     with open(path, encoding="utf-8-sig") as fh:
         header = fh.readline().rstrip("\n").split("\t")
+        i_slp1 = header.index("slp1")
         i_dicts = header.index("dicts")
         i_n = header.index("n_dicts")
         for line in fh:
             parts = line.rstrip("\n").split("\t")
-            yield parts[i_dicts].split(), int(parts[i_n])
+            yield parts[i_slp1], parts[i_dicts].split(), int(parts[i_n])
 
 
-def distribution(union_rows, cluster_map):
-    """headwords bucketed by number of *distinct clusters* that attest them."""
+def distribution(union_rows, cluster_map, mw_mask=None):
+    """headwords bucketed by number of *distinct clusters* that attest them.
+
+    If ``mw_mask`` (a set of SLP1 keys MW does NOT text-attest) is given, MW is
+    dropped from a headword's witness set when that headword is in the mask —
+    the §97 text-attestation regrade. A headword whose only witness was an
+    MW-listing then falls to the ``n=0`` bucket (a lexicographer-listed ghost).
+    """
     dist = Counter()
-    for dicts, _n in union_rows:
+    for slp1, dicts, _n in union_rows:
+        if mw_mask is not None and slp1 in mw_mask:
+            dicts = [d for d in dicts if d != "MW"]
         clusters = {cluster_map[d] for d in dicts if d in cluster_map}
         dist[len(clusters)] += 1
     return dist
@@ -221,6 +231,11 @@ def main():
     )
     ap.add_argument("--check", action="store_true",
                     help="assert P0 reproduces the UNION.md published distribution")
+    ap.add_argument(
+        "--mw-mask",
+        default=str(Path(__file__).resolve().parent / "mw_non_textattested_slp1.txt"),
+        help="SLP1 keys MW does NOT text-attest (§97); enables the text-grade regrade",
+    )
     args = ap.parse_args()
 
     # UNION.md's published "in N dicts" table. NOTE: it was computed on the
@@ -267,7 +282,7 @@ def main():
 
     # P0 regression check — against the file's OWN n_dicts column (independent
     # of the cluster-counting logic): P0 identity => distinct clusters == n_dicts.
-    ndicts_hist = Counter(n for _codes, n in union_rows)
+    ndicts_hist = Counter(n for _s, _codes, n in union_rows)
     p0 = dists["P0"]
     ok = dict(p0) == dict(ndicts_hist)
     print(f"\nP0 == file n_dicts-column histogram (regression anchor): {ok}")
@@ -304,7 +319,7 @@ def main():
     # >=2 to 1 witness exactly when MW folds into Petersburg, i.e. the P2->P3
     # newly-single set). Up to MW_L_RATE of those rest on MW merely *listing* a
     # koṣa word, not independently attesting it.
-    n_mw_witness = sum(1 for codes, _n in union_rows if "MW" in codes)
+    n_mw_witness = sum(1 for _s, codes, _n in union_rows if "MW" in codes)
     p2, p3 = dists["P2"], dists["P3"]
     mw_over_petersburg = p3.get(1, 0) - p2.get(1, 0)  # newly-single P2->P3
     print("\n=== §97 L.-only tier (MW corroboration that is koṣa-listing) ===")
@@ -313,7 +328,52 @@ def main():
           f"(P2->P3 newly-single): {mw_over_petersburg}")
     print(f"    of those, up to {MW_L_RATE:.1%} (§97) are MW L.-only listing, "
           f"not text attestation: ~{round(mw_over_petersburg * MW_L_RATE)}")
-    print("    (exact per-headword split needs csl-orig <ls>L.</ls> parsing)")
+    print("    (upper-bound estimate; the MEASURED regrade below supersedes it)")
+
+    # --- H1389: the MEASURED text-attestation regrade (supersedes the estimate) --
+    # Read the per-headword mask (SLP1 keys MW does NOT text-attest, from
+    # mw_ls_textattest.py over csl-orig mw.txt) and recompute with MW dropped as
+    # a witness of any headword it merely lists. A headword whose only witness
+    # was such an MW-listing falls to n=0 — a lexicographer-listed "ghost".
+    ta = {}
+    mask_path = Path(args.mw_mask)
+    if mask_path.exists():
+        with open(mask_path, encoding="utf-8") as fh:
+            mw_mask = {ln.rstrip("\n") for ln in fh if ln.strip()}
+        dists_ta = {pid: distribution(union_rows, cmap, mw_mask)
+                    for pid, _l, _n, cmap in policies}
+        # headwords MW stops corroborating = in-mask AND MW is a listed witness
+        mw_stripped = sum(1 for s, codes, _n in union_rows
+                          if s in mw_mask and "MW" in codes)
+        ghosts = sum(1 for s, codes, _n in union_rows
+                     if s in mw_mask and set(codes) == {"MW"})
+        print("\n=== H1389 MEASURED text-attestation regrade (MW non-L. <ls>) ===")
+        print(f"    MW text-attestation mask: {len(mw_mask)} headwords MW does "
+              f"NOT text-attest (§97-reproduced 59,697)")
+        print(f"    union headwords where MW's listing is stripped: {mw_stripped}")
+        print(f"    of those, MW-only 'ghosts' -> 0 text witnesses: {ghosts}")
+        print("    policy  corrob>=2(membership)  corrob>=2(text-graded)  share")
+        for pid in ("P0", "P2", "P3", "P4"):
+            d, dt = dists[pid], dists_ta[pid]
+            c_mem = total - d.get(1, 0) - d.get(0, 0)
+            c_ta = total - dt.get(1, 0) - dt.get(0, 0)
+            print(f"    {pid}  {c_mem}  {c_ta}  {c_ta/total:.1%}")
+        p3ta = dists_ta["P3"]
+        c_p3 = total - dists["P3"].get(1, 0)
+        c_p3ta = total - p3ta.get(1, 0) - p3ta.get(0, 0)
+        ta = {
+            "mask_size": len(mw_mask), "mw_stripped": mw_stripped,
+            "ghosts_zero_text_witness": ghosts,
+            "p3_corrob_membership": c_p3, "p3_corrob_textgraded": c_p3ta,
+            "p3_share_membership": round(c_p3 / total, 4),
+            "p3_share_textgraded": round(c_p3ta / total, 4),
+            "dists": {pid: dict(dists_ta[pid]) for pid in ("P0", "P2", "P3", "P4")},
+        }
+        print(f"    => P3 corroborated share: {c_p3/total:.1%} (membership) -> "
+              f"{c_p3ta/total:.1%} (text-graded)")
+    else:
+        print(f"\n[skip] MW text-attestation mask not found at {mask_path} — "
+              "run mw_ls_textattest.py (needs csl-orig) to regenerate it.")
 
     # --- machine-readable witness map: per-edge ruling + family partition ---
     tiers = {
@@ -365,8 +425,9 @@ def main():
             "union_headwords_with_mw": n_mw_witness,
             "corroboration_only_mw_plus_petersburg": mw_over_petersburg,
             "est_mw_l_only_listing_of_those": round(mw_over_petersburg * MW_L_RATE),
-            "caveat": "exact per-headword split needs csl-orig <ls>L.</ls>",
+            "caveat": "upper-bound estimate; superseded by text_attestation_regrade",
         },
+        "text_attestation_regrade": ta,  # H1389 measured (empty if mask absent)
     }
     with open(here / "witness_tiers.json", "w", encoding="utf-8", newline="\n") as fh:
         json.dump(tiers, fh, ensure_ascii=False, indent=2)
@@ -382,6 +443,15 @@ def main():
             cum, tot = cumulative_ge(d)
             for n in sorted(d):
                 fh.write(f"{pid}\t{n_clusters}\t{n}\t{d[n]}\t{cum[n]}\t{cum[n]/tot:.4f}\n")
+        # text-attestation-graded rows (MW masked); policy id suffixed "-TA"
+        if ta:
+            cmap_by_pid = {pid: cmap for pid, _l, _n, cmap in policies}
+            for pid in ("P0", "P2", "P3", "P4"):
+                dt = dists_ta[pid]
+                n_clusters = len(set(cmap_by_pid[pid].values()))
+                cum, tot = cumulative_ge(dt)
+                for n in sorted(dt):
+                    fh.write(f"{pid}-TA\t{n_clusters}\t{n}\t{dt[n]}\t{cum[n]}\t{cum[n]/tot:.4f}\n")
 
     print(f"\nwrote {here / 'witness_independence_reaudit.tsv'}")
     print(f"wrote {here / 'witness_independence_clusters.tsv'}")
