@@ -43,7 +43,7 @@ Blocks: the GasunsDhatu 2026 §2.6 Table 5 / П9 correction (manifest `varga-ser
 ↔ Interlinks: [RECIPES §4](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) (varga diachrony) is the reproducible pass whose χ² table the prose misread · [GAPS §8](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) is the same epoch-stability question one layer down (collocations vs vargas) · [GLOSSARY "varga"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) defines the unit in dispute.
 > **Source:** [FINDINGS §62](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) · [SanskritGrammar](https://github.com/gasyoun/SanskritGrammar)/[VisualDCS](https://github.com/gasyoun/VisualDCS) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
-### §6. Concordance-Q3 plan set: kosha generated side is `forms` or `inflections` (5× apart)
+### §3. Concordance-Q3 plan set: kosha generated side is `forms` or `inflections` (5× apart)
 🟡 ✍️ **Two different kosha tables named as the generated inflection side — briefed + recommended (H1366), not yet ruled (a human call).**
 Positions:
 | Source | Value | Evidence loc |
@@ -55,7 +55,7 @@ Blocks: the A4 derivation-capture (W2a) generated-side denominator — **W2a mus
 ↔ Interlinks: [FINDINGS §94](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) is the circularity finding (93% DCS-derived generated side) from the same A3 build.
 > **Source:** surfaced by [H1262](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1262-Opus_kosha_a3_attested_form_join_morphology_audit_18.07.26.md); briefed + recommended by [H1366](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1366-Opus_kosha_generated-side-forms-vs-inflections-canonical-ruling_20.07.26.md) · [kosha](https://github.com/gasyoun/kosha) · [20-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-20&until=2026-07-21) · `claude-opus-4-8`
 
-### §7. Grammatical `<ab>` abbreviations in pwg_ru: stay-Latin (10-07 ruling) vs translate-to-RU (19-07 DA-vote notes)
+### §4. Grammatical `<ab>` abbreviations in pwg_ru: stay-Latin (10-07 ruling) vs translate-to-RU (19-07 DA-vote notes)
 🔴 ✍️ **The project's own abbreviation policy gives incompatible answers eleven days apart.**
 Positions:
 | Source | Value | Evidence loc |
@@ -69,7 +69,7 @@ Blocks: [H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1303-Fable
 ## B. A claim overturned (or split) by machine-scale evidence
 *A scholarly charge or a hand-picked exemplar checked against a full machine dataset — the count adjudicates.*
 
-### §3. Krylov's 2014 Palsule-exclusion charge vs vidyut dhātupāṭha
+### §5. Krylov's 2014 Palsule-exclusion charge vs vidyut dhātupāṭha
 🟠 ✍️ **The 2014 defense review charged the concordance keeps Palsule-only roots and drops Paninian ones; the machine dhātupāṭha only partly agrees.**
 Positions:
 | Source | Value | Evidence loc |
@@ -81,7 +81,7 @@ Blocks: the GasunsDhatu 2014 revision's response to the ведущая орга�
 ↔ Interlinks: [GLOSSARY "dhātupāṭha citation form"](https://github.com/gasyoun/SanskritLexicography/blob/master/GLOSSARY.md) defines the citation form the charge turns on · [ASSUMPTIONS §3](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) is the parallel verb-root record premise the same dhātu data underlies.
 > **Source:** [FINDINGS §63](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#63-vidyut-dhātupāṭha-adjudicates-the-2014-palsule-exclusion-dispute-five-añc-dhātus-no-and-but-ast-is-paninian) · [SanskritGrammar](https://github.com/gasyoun/SanskritGrammar) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · `claude-opus-4-8`
 
-### §4. SKD/VCP citation-fusion direction: one-lemma exemplar vs corpus count
+### §6. SKD/VCP citation-fusion direction: one-lemma exemplar vs corpus count
 🟠 ✍️ **The hand-picked *dharma* exemplar's fusion direction reverses at corpus scale.**
 Positions:
 | Source | Value | Evidence loc |
@@ -96,7 +96,7 @@ Blocks: any "dictionary X marks citations this way" generalization from a single
 ## C. Two runs disagree
 *The same measurement, recomputed, gives two numbers — a reproducibility contradiction to reconcile before either is cited.*
 
-### §5. Sense-granularity: two runs disagree on the year-correlation
+### §7. Sense-granularity: two runs disagree on the year-correlation
 🟠 ✍️ **Two runs disagree on the sense-count↔year correlation, and both refute the intuitive "senses grow over time" reading.**
 Positions:
 | Source | Value | Evidence loc |
@@ -110,21 +110,22 @@ Blocks: any per-sense-normalized cross-dict metric that doesn't family-control.
 
 ---
 
-### §6. The Ch. 14 correction-dataset DOI: false-and-unminted vs genuinely minted (BOOK_PLAN vs FAIR_RELEASE_1)
-🟠 ✍️ **Two committed docs give incompatible accounts of the same Zenodo DOI `10.5281/zenodo.15834721`.**
+### §8. The Ch. 14 correction-dataset DOI: false-and-unminted vs genuinely minted (BOOK_PLAN vs FAIR_RELEASE_1) — ✅ RULED
+🟠 ✍️ **Two committed docs gave incompatible accounts of the same Zenodo DOI `10.5281/zenodo.15834721`; a live Zenodo check settles it.**
 Positions:
 | Source | Value | Evidence loc |
 |--------|-------|--------------|
 | [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md) (+ pre-18-07 revisions of the publication deep manual) | a **false DOI** resolving to an unrelated preprint; must be re-minted | BOOK_PLAN §rights |
 | [data/FAIR_RELEASE_1.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/FAIR_RELEASE_1.md) (H817, 13-07-2026) | the same DOI is csl-observatory's **genuinely minted** OBS-T dataset DOI | FAIR_RELEASE_1 §csl-observatory |
-Status: 🔴 unresolved — needs one online Zenodo check; whichever doc is wrong gets corrected, then → tombstone.
-Blocks: the FAIR/DOI sprint's re-mint decision (re-minting a good DOI vs citing a bad one — both failure modes live until ruled).
-> **Source:** H1245 estate refresh, 18-07-2026, Fable 5 (`claude-fable-5`) — surfaced by the publication-manual fact-check.
+Status: ✅ **BOOK_PLAN is correct — `10.5281/zenodo.15834721` is a false DOI, not the OBS-T dataset's.** Live Zenodo check 20-07-2026 (H1364): the DOI resolves to *"A Non-Surgical and Unconditional Proof of Topological Sphericity via Entropy-Spectral Dynamics (v2.2)"* — an unrelated differential-geometry/topology preprint, deposited 08-07-2025, with zero connection to CDSL, csl-observatory, or the OBS-T correction-event corpus. `FAIR_RELEASE_1.md` §csl-observatory was wrong, and the same false DOI had also propagated into [csl-observatory's own `CITATION.cff`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/CITATION.cff) `identifiers:` block — both fixed same pass (H1364). No `CROSS_REPO_DECISIONS` `D##` graduation: that registry has never actually been used for a graduated contradiction (checked all three CONTRADICTIONS.md siblings 20-07-2026 — zero `D##` tombstones exist anywhere), so this ruling stays local rather than inventing the first entry in an unused scheme.
+Blocks: — (unblocked) the FAIR/DOI sprint's re-mint decision: csl-observatory's OBS-T dataset has **no genuinely minted DOI yet** and needs a real Zenodo deposit; the correction dataset (Ch. 14/15) separately needs its own re-mint, as BOOK_PLAN already said.
+> **Source:** H1245 estate refresh, 18-07-2026, Fable 5 (`claude-fable-5`) — surfaced by the publication-manual fact-check. Ruled: H1364, 20-07-2026, Sonnet 5 (`claude-sonnet-5`), live Zenodo fetch.
 
 ## Conclusions
 
-- **Every row is 🟡 provisional, none ✅ ruled** — the file is a holding pen for live disagreements awaiting a [`CROSS_REPO_DECISIONS`](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##` verdict (or, where the contradiction is repo-local, that repo's own decisions record). A resolved contradiction leaves a one-line tombstone here and moves out. §6 (kosha `forms`-vs-`inflections`) is **briefed with a `forms` recommendation** ([H1366 decide brief](https://github.com/gasyoun/kosha/blob/main/docs/DECIDE_H1366_GENERATED_SIDE_FORMS_VS_INFLECTIONS.md)) but still awaits the human ruling that would graduate it.
-- **Two recurring shapes.** A source contradicts *itself* (§1 Whitney across §319a/§356, §2 the 2014 prose against its own χ² table), or a small claim/exemplar is *overturned by machine-scale evidence* (§3 vidyut adjudicates Krylov, §4 the corpus classifier reverses the *dharma* exemplar, §5 the canonical run corrects the earlier one). The standing lesson mirrors ASSUMPTIONS: **trust the corpus count / χ² / vidyut table over prose intuition or a single hand-picked lemma.**
+- **Every row is 🟡 provisional, none ✅ ruled except §8** — the file is a holding pen for live disagreements awaiting a [`CROSS_REPO_DECISIONS`](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##` verdict (or, where the contradiction is repo-local, that repo's own decisions record). A resolved contradiction leaves a one-line tombstone here and moves out. §3 (kosha `forms`-vs-`inflections`) is **briefed with a `forms` recommendation** ([H1366 decide brief](https://github.com/gasyoun/kosha/blob/main/docs/DECIDE_H1366_GENERATED_SIDE_FORMS_VS_INFLECTIONS.md)) but still awaits the human ruling that would graduate it.
+- **Two recurring shapes.** A source contradicts *itself* (§1 Whitney across §319a/§356, §2 the 2014 prose against its own χ² table), or a small claim/exemplar is *overturned by machine-scale evidence* (§5 vidyut adjudicates Krylov, §6 the corpus classifier reverses the *dharma* exemplar, §7 the canonical run corrects the earlier one). The standing lesson mirrors ASSUMPTIONS: **trust the corpus count / χ² / vidyut table over prose intuition or a single hand-picked lemma.**
+- **Renumbered 20-07-2026 (H1364).** §3–§8 previously carried duplicate/out-of-order keys (two rows both keyed `§6`; §3–§5 physically sat after §6/§7). Section keys now run strictly ascending top-to-bottom: §3 = Concordance-Q3 (was §6), §4 = grammatical abbreviations (was §7), §5 = Krylov/Palsule (was §3), §6 = SKD/VCP (was §4), §7 = sense-granularity (was §5), §8 = the Ch. 14 DOI ruling (new). No external file was found citing any of these by number (checked repo-wide + Uprava hubs) — only this file's own Conclusions section needed repointing.
 - **The highest-value ruling is §1** — it blocks the ZALIZNYAK accent axis and is itself gated by [GAPS §1](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md)'s n=2 data scarcity; the two are one problem, and [RECIPES §1](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md) is the pass that would break the tie.
 - **Where they point:** a ruled row exits to [CROSS_REPO_DECISIONS](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##`; the unmeasured evidence that would force a ruling lives in [GAPS](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md), and the reproducible methods that adjudicate them in [RECIPES](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md).
 
