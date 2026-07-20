@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pwg_portrait_structural.schema.v1",
+  "title": "PWG structural portrait (H1350 W1.3 -- full sense tree + apparatus)",
+  "description": "Additive extension of pwg_ru.lexicographic_portrait.schema.v1 (RussianTranslation/schemas/pwg_ru_lexicographic_portrait.schema.json). The RU-facing base schema is unchanged and stays authoritative for the translation pipeline's own fields; this schema layers structural completeness on top -- most notably 'apparatus' (<is> Indian-grammar apparatus, 53,947 occurrences corpus-wide, previously unstructured -- see docs/PWG_CARD_ANATOMY.md) and 'record_id'/'pc' for traceability back to csl-orig. validate_pwg_portrait.py emits objects against THIS schema (a superset of the base).",
+  "type": "object",
+  "required": [
+    "schema_version", "record_id", "pc", "key1", "key2", "h", "iast",
+    "pos", "diasystem", "labels", "senses"
+  ],
+  "properties": {
+    "schema_version": { "const": "pwg_portrait_structural.v1" },
+    "record_id": { "type": "string", "minLength": 1 },
+    "pc": { "type": "string" },
+    "key1": { "type": "string", "minLength": 1 },
+    "key2": { "type": "string" },
+    "h": { "type": "string" },
+    "iast": { "type": "string" },
+    "pos": { "type": "array", "items": { "type": "string" } },
+    "diasystem": { "type": "array", "items": { "type": "string" } },
+    "labels": { "type": "array", "items": { "type": "string" } },
+    "senses": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/sense" }
+    },
+    "apparatus": {
+      "type": "array",
+      "description": "Indian grammatical apparatus terms (<is> content) attached to the record as a whole -- gaṇa/Dhātupāṭha membership, root citations, and similar. Structural promotion of a tag the base RU schema leaves inline (H1350 W1.1 crosswalk divergence note).",
+      "items": {
+        "type": "object",
+        "required": ["text", "n_attr"],
+        "properties": {
+          "text": { "type": "string" },
+          "n_attr": { "anyOf": [{ "type": "string" }, { "type": "null" }] }
+        }
+      }
+    },
+    "corpus_synonyms": {
+      "anyOf": [
+        { "type": "null" },
+        { "$ref": "#/$defs/corpus_synonyms" }
+      ]
+    }
+  },
+  "$defs": {
+    "sense": {
+      "type": "object",
+      "required": [
+        "n", "sub", "equivalents_de", "gloss_de", "equivalence_type",
+        "grammar", "ab_labels", "diasystem", "citations",
+        "citations_resolved", "strata", "examples_sa"
+      ],
+      "properties": {
+        "n": { "type": "string" },
+        "sub": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+        "equivalents_de": { "type": "array", "items": { "type": "string" } },
+        "gloss_de": { "type": "string" },
+        "equivalence_type": { "enum": ["equivalent", "explanatory", "none"] },
+        "grammar": { "type": "array", "items": { "type": "string" } },
+        "ab_labels": { "type": "array", "items": { "type": "string" } },
+        "diasystem": { "type": "array", "items": { "type": "string" } },
+        "citations": { "type": "array", "items": { "type": "string" } },
+        "citations_resolved": {
+          "type": "object",
+          "additionalProperties": { "anyOf": [{ "type": "string" }, { "type": "null" }] }
+        },
+        "strata": { "type": "object", "additionalProperties": { "type": "string" } },
+        "examples_sa": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "corpus_synonyms": {
+      "type": "object",
+      "required": ["n", "by_stratum", "candidates"],
+      "properties": {
+        "n": { "type": "integer", "minimum": 0 },
+        "by_stratum": {
+          "type": "object",
+          "additionalProperties": { "type": "array", "items": { "type": "string" } }
+        },
+        "candidates": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

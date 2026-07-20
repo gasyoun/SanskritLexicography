@@ -1,0 +1,12 @@
+{
+ "schema": "pwg_portrait_validation/0.1",
+ "total_records": 123366,
+ "passes": 123366,
+ "buckets": {
+  "parse-error": 0,
+  "schema-violation": 0,
+  "unexpected-but-attested": 0
+ },
+ "unclassified": 0,
+ "failures": []
+}
