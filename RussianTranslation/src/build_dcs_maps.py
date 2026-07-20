@@ -20,21 +20,24 @@ member of R that is a suffix of the prefixed lemma. Grounded in DCS, not blind s
 import os, sys, sqlite3, collections
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
-from indic_transliteration import sanscript
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_DB = os.path.normpath(os.path.join(
     HERE, '..', '..', '..', 'VisualDCS', 'src', 'DCS-data-2026', 'dcs_full.sqlite'))
 OUT_DIR = os.path.normpath(os.path.join(HERE, '..', 'glossary'))
-os.makedirs(OUT_DIR, exist_ok=True)
 
 _tc = {}
 def to_slp1(s):
-    """IAST -> SLP1 with a memo cache; returns '' on empty/None."""
+    """IAST -> SLP1 with a memo cache; returns '' on empty/None.
+
+    indic_transliteration is imported lazily so this module (and its pure
+    helper derive_lemma2root) can be imported for unit tests without the heavy
+    transliteration dependency installed."""
     if not s:
         return ''
     v = _tc.get(s)
     if v is None:
+        from indic_transliteration import sanscript
         try:
             v = sanscript.transliterate(s, sanscript.IAST, sanscript.SLP1)
         except Exception:
@@ -42,12 +45,48 @@ def to_slp1(s):
         _tc[s] = v
     return v
 
+
+def derive_lemma2root(verb_lemmas, roots_by_len):
+    """Pure lemma->root derivation, split into resolved vs pseudo-root rows.
+
+    verb_lemmas : dict lemma_slp1 -> has_preverb (bool).
+    roots_by_len: root inventory (simple verb lemmas), sorted longest-first.
+
+    Returns (resolved, unresolved, counts):
+      resolved   = [(lemma, root, how)]  how in {'self','suffix'} — real roots.
+      unresolved = [(lemma, lemma, 'unresolved')] — prefixed lemmas for which no
+                   root suffix matched. These self-map, so counting them as roots
+                   inflates the root inventory with pseudo-roots (W1.1); the
+                   caller writes them to a SEPARATE file, out of the root layer.
+      counts     = Counter of how-tags (incl. 'unresolved' = excluded count).
+    """
+    resolved, unresolved = [], []
+    counts = collections.Counter()
+    for ls, has_pre in sorted(verb_lemmas.items()):
+        if not has_pre:
+            resolved.append((ls, ls, 'self'))          # lemma IS a root
+            counts['self'] += 1
+            continue
+        root = ''
+        for r in roots_by_len:
+            if r != ls and ls.endswith(r) and len(r) >= 2:
+                root = r
+                break
+        if root:
+            resolved.append((ls, root, 'suffix'))
+            counts['suffix'] += 1
+        else:
+            unresolved.append((ls, ls, 'unresolved'))  # pseudo-root — not a root
+            counts['unresolved'] += 1
+    return resolved, unresolved, counts
+
 def is_verbal(grammar):
     """DCS grammar string marks a verb by pada codes like '1.P.', '6.Ā.'."""
     return bool(grammar) and ('P.' in grammar or 'Ā.' in grammar)
 
 def main():
     db = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_DB
+    os.makedirs(OUT_DIR, exist_ok=True)
     con = sqlite3.connect(db)
 
     # ---- form -> lemma (distinct pairs with occurrence counts) ----
@@ -90,27 +129,24 @@ def main():
           file=sys.stderr)
 
     print('[3/3] deriving lemma -> root (longest root-suffix)...', file=sys.stderr)
+    resolved, unresolved, counts = derive_lemma2root(verb_lemmas, roots_by_len)
+    # Real roots (self + suffix) -> the map the rollup counts as the root layer.
     l2r_path = os.path.join(OUT_DIR, 'dcs_lemma2root.tsv')
-    counts = collections.Counter()
     with open(l2r_path, 'w', encoding='utf-8', newline='\n') as out:
         out.write('lemma_slp1\troot_slp1\thow\n')
-        for ls, has_pre in sorted(verb_lemmas.items()):
-            if not has_pre:
-                out.write(f'{ls}\t{ls}\tself\n')          # lemma IS a root
-                counts['self'] += 1
-                continue
-            root = ''
-            for r in roots_by_len:
-                if r != ls and ls.endswith(r) and len(r) >= 2:
-                    root = r
-                    break
-            if root:
-                out.write(f'{ls}\t{root}\tsuffix\n')
-                counts['suffix'] += 1
-            else:
-                out.write(f'{ls}\t{ls}\tunresolved\n')     # keep lemma as its own root
-                counts['unresolved'] += 1
+        for lemma, root, how in resolved:
+            out.write(f'{lemma}\t{root}\t{how}\n')
+    # W1.1: pseudo-roots (prefixed lemmas that self-map because no root suffix
+    # matched) are split OUT so the rollup no longer counts them as roots. They
+    # stay recorded for audit and remain reachable as lemmas in the lemma layer.
+    unres_path = os.path.join(OUT_DIR, 'dcs_lemma2root_unresolved.tsv')
+    with open(unres_path, 'w', encoding='utf-8', newline='\n') as out:
+        out.write('lemma_slp1\troot_slp1\thow\n')
+        for lemma, root, how in unresolved:
+            out.write(f'{lemma}\t{root}\t{how}\n')
     print(f'      lemma->root: {dict(counts)} -> {l2r_path}', file=sys.stderr)
+    print(f'      excluded {counts["unresolved"]} pseudo-roots -> {unres_path}',
+          file=sys.stderr)
 
 if __name__ == '__main__':
     main()

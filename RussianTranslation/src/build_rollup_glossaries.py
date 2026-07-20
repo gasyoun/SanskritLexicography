@@ -26,8 +26,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 G = os.path.normpath(os.path.join(HERE, '..', 'glossary'))
 MD_LEMMA = os.path.join(G, 'md', 'lemma')
 MD_ROOT = os.path.join(G, 'md', 'root')
-os.makedirs(MD_LEMMA, exist_ok=True)
-os.makedirs(MD_ROOT, exist_ok=True)
 
 _ava = re.compile(r"^['’‘]+")
 def norm(k):
@@ -43,6 +41,43 @@ def bucket(s):
     if not s:
         return '_'
     return s[0].upper() if re.match(r'[A-Za-z]', s[0]) else '_other'
+
+
+def parse_lemma2root(lines):
+    """lemma_slp1 -> root_slp1 from a dcs_lemma2root.tsv, EXCLUDING self-mapped
+    `unresolved` pseudo-roots (W1.1). `lines` is any iterable incl. the header
+    row. Robust whether or not build_dcs_maps already split the pseudo-roots into
+    their own file: an `unresolved` how-tag is dropped here regardless."""
+    l2r = {}
+    it = iter(lines)
+    next(it, None)                         # header
+    for line in it:
+        p = line.rstrip('\n').split('\t')
+        if len(p) < 2:
+            continue
+        if len(p) >= 3 and p[2] == 'unresolved':
+            continue                       # pseudo-root -> not a root
+        l2r[p[0]] = p[1]
+    return l2r
+
+
+def homograph_alts(cands):
+    """Every alternate homograph candidate worth recording for a surface form.
+
+    cands: [(lemma, upos, count, source)] sorted by count desc; cands[0] is the
+    primary. Returns [(alt_lemma, alt_upos, alt_count)] for each *later*
+    candidate whose upos differs from the primary OR whose count is >= 50% of the
+    primary's (W1.2 — the full trail; the earlier code inspected only cands[1],
+    so a genuine 3rd+ homograph was silently dropped). Primary attribution is
+    unchanged; only the alternates trail grows."""
+    if len(cands) < 2:
+        return []
+    _plem, pupos, pcnt, _ps = cands[0]
+    out = []
+    for (l2, u2, c2, _s) in cands[1:]:
+        if u2 != pupos or c2 >= 0.5 * pcnt:
+            out.append((l2, u2, c2))
+    return out
 
 
 def load_maps():
@@ -61,13 +96,8 @@ def load_maps():
             f2l[norm(form)].append((lemma, upos, cnt, 'dcs'))
     for k in f2l:
         f2l[k].sort(key=lambda x: -x[2])
-    l2r = {}
     with open(os.path.join(G, 'dcs_lemma2root.tsv'), encoding='utf-8') as f:
-        next(f)
-        for line in f:
-            p = line.rstrip('\n').split('\t')
-            if len(p) >= 2:
-                l2r[p[0]] = p[1]
+        l2r = parse_lemma2root(f)          # W1.1: pseudo-roots excluded from the root layer
     dcs_keys = frozenset(f2l)          # snapshot BEFORE vidyut -> stable DCS-miss detection
     # vidyut fallback: add only for form keys DCS did not resolve
     vpath = os.path.join(G, 'vidyut_form2lemma.tsv')
@@ -165,6 +195,8 @@ def emit(table, path_base, md_dir, key_name, title, extra_lemmas=False):
 
 
 def main():
+    os.makedirs(MD_LEMMA, exist_ok=True)
+    os.makedirs(MD_ROOT, exist_ok=True)
     print('[D] loading DCS maps...', file=sys.stderr)
     f2l, l2r, roots_set, lemmas_set, dcs_keys = load_maps()
     print(f'    {len(f2l)} normalized DCS form keys, {len(l2r)} lemma->root', file=sys.stderr)
@@ -208,12 +240,14 @@ def main():
                     continue
             n_hit += 1
             lemma, upos, lcnt, source = cands[0]
-            # ambiguity: a second candidate of a DIFFERENT upos or within 50% count
-            if len(cands) > 1:
-                l2, u2, c2, _ = cands[1]
-                if u2 != upos or c2 >= 0.5 * lcnt:
+            # ambiguity: EVERY later candidate of a different upos or within 50%
+            # count of the primary (W1.2 — the full homograph trail, not just the
+            # single runner-up). Primary attribution is unchanged; alternates only.
+            alts = homograph_alts(cands)
+            if alts:
+                for l2, u2, c2 in alts:
                     amb.write(f'{slp1}\t{lemma}\t{upos}\t{lcnt}\t{l2}\t{u2}\t{c2}\n')
-                    n_amb += 1
+                n_amb += 1
             # per-form Ru distribution and works
             ru_counts = {t['ru']: t['n'] for t in d['translations']}
             works = collections.Counter()

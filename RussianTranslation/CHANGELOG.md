@@ -10,6 +10,25 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — Sa→Ru gloss layer wave-1 defects (H1349 W1.1–W1.3)
+
+- **Pseudo-roots (W1.1).** `build_dcs_maps.py` no longer keeps prefixed verb lemmas that
+  fail the root-suffix match as their own roots: the 434 self-mapped `unresolved` rows are
+  split into `dcs_lemma2root_unresolved.tsv`, and `build_rollup_glossaries.py` excludes them
+  from the root layer (root inventory 3,570 → 3,147 distinct keys; `root_glossary` 1,853).
+- **Homograph completeness (W1.2).** The rollup's ambiguity report inspected only the single
+  runner-up `cands[1]`; a genuine 3rd+ homograph was silently dropped. It now records the
+  full trail over `cands[1:]` (9,521 → 11,289 alternate rows across 9,733 forms).
+- **Vidyut ambiguity trail (W1.3).** `build_vidyut_fallback.py` incremented a bare
+  `ambiguous` counter; it now writes the competing `(lemma, pos, n)` candidates to
+  `vidyut_ambiguity.tsv` (5,952 rows over 4,133 forms), mirroring the DCS schema.
+- Each fix carries a regression test in `tests/test_saru_gloss_pipeline.py` (wired into the CI
+  RussianTranslation-gates job); `vidyut`/`indic_transliteration` are now imported lazily so
+  the pure helpers are testable without the heavy deps. Before/after in
+  [RESULTS_LOG.md](RESULTS_LOG.md); the pipeline `glossary/README.md` is now a build runbook
+  pointing at the canonical [gasyoun/SanskritRussian](https://github.com/gasyoun/SanskritRussian)
+  doc. Published data is **not** regenerated (D8 fences republish behind a human GO).
+
 ### Fixed — scoped RU style gate and conflict-safe H1305 repair
 
 - The `ru_style` workflow gate now audits only structured
