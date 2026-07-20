@@ -1,13 +1,12 @@
 {
- "generated_at": "2026-07-18T04:41:36Z",
+ "generated_at": "2026-07-20T11:20:30Z",
  "stale_days_threshold": 180,
  "counts": {
-  "total": 95,
+  "total": 109,
   "by_importance": {
-   "2": 42,
-   "1": 10,
-   "None": 27,
-   "3": 16
+   "2": 74,
+   "1": 17,
+   "3": 18
   },
   "stale": 0
  },
@@ -18,7 +17,7 @@
    "section": "Grammar & morphology data",
    "importance": 2,
    "evidence_date": "2026-06-29",
-   "age_days": 19,
+   "age_days": 21,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#1-whitney-accent-mobility-rules-are-machine-encodable"
   },
   {
@@ -27,7 +26,7 @@
    "section": "Grammar & morphology data",
    "importance": 2,
    "evidence_date": "2026-06-14",
-   "age_days": 34,
+   "age_days": 36,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#2-homonym-token-splitting-has-a-hard-morphological-ceiling"
   },
   {
@@ -36,7 +35,7 @@
    "section": "Grammar & morphology data",
    "importance": 2,
    "evidence_date": "2026-06-13",
-   "age_days": 35,
+   "age_days": 37,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#3-the-warnemyr-scrape-union-smears-homonym-classes"
   },
   {
@@ -45,7 +44,7 @@
    "section": "Grammar & morphology data",
    "importance": 1,
    "evidence_date": "2026-06-29",
-   "age_days": 19,
+   "age_days": 21,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#4-pwg-nominal-grammar-compresses-into-335-paradigm-tokens"
   },
   {
@@ -54,7 +53,7 @@
    "section": "Grammar & morphology data",
    "importance": 2,
    "evidence_date": "2026-07-02",
-   "age_days": 16,
+   "age_days": 18,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#42-whitney-self-contradicts-on-derivative-ī-stem-genpl-accent"
   },
   {
@@ -63,16 +62,16 @@
    "section": "Grammar & morphology data",
    "importance": 2,
    "evidence_date": "2026-07-05",
-   "age_days": 13,
+   "age_days": 15,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#54-whitney-accent-axis-validates-at-1719-matrix-cells-go-against-attested-rv-accents"
   },
   {
    "n": 63,
    "title": "vidyut dhātupāṭha adjudicates the 2014 Palsule-exclusion dispute: five añc dhātus, no and, but ast IS Paninian",
    "section": "Grammar & morphology data",
-   "importance": null,
+   "importance": 1,
    "evidence_date": "2026-07-07",
-   "age_days": 11,
+   "age_days": 13,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#63-vidyut-dhātupāṭha-adjudicates-the-2014-palsule-exclusion-dispute-five-añc-dhātus-no-and-but-ast-is-paninian"
   },
   {
@@ -81,7 +80,7 @@
    "section": "Corpus & parallel-text data",
    "importance": 2,
    "evidence_date": "2026-06-24",
-   "age_days": 24,
+   "age_days": 26,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#5-the-parallel-corpus-rarely-attests-prefixed-verb-forms"
   },
   {
@@ -90,7 +89,7 @@
    "section": "Corpus & parallel-text data",
    "importance": 2,
    "evidence_date": "2026-06-24",
-   "age_days": 24,
+   "age_days": 26,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#6-no-printed-frequency-dictionary-of-sanskrit-exists"
   },
   {
@@ -99,7 +98,7 @@
    "section": "Corpus & parallel-text data",
    "importance": 3,
    "evidence_date": "2026-06-24",
-   "age_days": 24,
+   "age_days": 26,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#7-dcs-lemma-data-is-keyed-in-two-transliterations"
   },
   {
@@ -108,7 +107,7 @@
    "section": "Corpus & parallel-text data",
    "importance": 3,
    "evidence_date": "2026-06",
-   "age_days": 33,
+   "age_days": 35,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#8-unaccented-dcs-cannot-distinguish-present-class-i-from-vi"
   },
   {
@@ -117,7 +116,7 @@
    "section": "Corpus & parallel-text data",
    "importance": 3,
    "evidence_date": "2026-06-06",
-   "age_days": 42,
+   "age_days": 44,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#9-dcs-occid-and-sent_id-are-not-unique-keys"
   },
   {
@@ -126,7 +125,7 @@
    "section": "Corpus & parallel-text data",
    "importance": 2,
    "evidence_date": "2026-06-06",
-   "age_days": 42,
+   "age_days": 44,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#10-dcs-ud-tense-marking-conflates-aorist-and-perfect"
   },
   {
@@ -135,7 +134,7 @@
    "section": "Corpus & parallel-text data",
    "importance": 2,
    "evidence_date": "2026-06-06",
-   "age_days": 42,
+   "age_days": 44,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#11-dcs-2021-and-2026-vintages-are-not-directly-comparable"
   },
   {
@@ -144,7 +143,7 @@
    "section": "Corpus & parallel-text data",
    "importance": 2,
    "evidence_date": "2026-06-11",
-   "age_days": 37,
+   "age_days": 39,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#12-a-fifth-of-dcs-lemmas-have-no-cdsl-headword"
   },
   {
@@ -153,7 +152,7 @@
    "section": "Corpus & parallel-text data",
    "importance": 1,
    "evidence_date": "2026-07-01",
-   "age_days": 17,
+   "age_days": 19,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#13-sa-ru-glossary-token-coverage-plateaus-at-866-percent"
   },
   {
@@ -162,16 +161,16 @@
    "section": "Corpus & parallel-text data",
    "importance": 2,
    "evidence_date": "2026-07-01",
-   "age_days": 17,
+   "age_days": 19,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#14-renou-period-state-tagging-covers-770k-entries-in-8-dicts"
   },
   {
    "n": 62,
    "title": "Varga distribution is almost epoch-stable (Cramér's V = 0.037) — and the Gasūns-2014 dissertation prose read its own χ² table backwards",
    "section": "Corpus & parallel-text data",
-   "importance": null,
+   "importance": 2,
    "evidence_date": "2026-07-07",
-   "age_days": 11,
+   "age_days": 13,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards"
   },
   {
@@ -180,7 +179,7 @@
    "section": "Corpus & parallel-text data",
    "importance": 2,
    "evidence_date": "2026-07-07",
-   "age_days": 11,
+   "age_days": 13,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#65-66--of-the-deepseek-corpus-word-alignments-ground-to-nothing-in-their-verse"
   },
   {
@@ -189,7 +188,7 @@
    "section": "Dictionary structure & markup",
    "importance": 2,
    "evidence_date": "2026-06-24",
-   "age_days": 24,
+   "age_days": 26,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#15-pwg-encodes-secondary-stems-inline-not-in-div-markup"
   },
   {
@@ -198,7 +197,7 @@
    "section": "Dictionary structure & markup",
    "importance": 3,
    "evidence_date": "2026-06-24",
-   "age_days": 24,
+   "age_days": 26,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#16-giant-verb-roots-sit-at-non-zero-homonym-indexes"
   },
   {
@@ -207,7 +206,7 @@
    "section": "Dictionary structure & markup",
    "importance": 3,
    "evidence_date": "2026-06-24",
-   "age_days": 24,
+   "age_days": 26,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#17-pwg-orders-senses-genetically-not-historically"
   },
   {
@@ -216,7 +215,7 @@
    "section": "Dictionary structure & markup",
    "importance": 2,
    "evidence_date": "2026-06-24",
-   "age_days": 24,
+   "age_days": 26,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#18-vedic-citation-density-separates-the-dictionary-traditions"
   },
   {
@@ -225,7 +224,7 @@
    "section": "Dictionary structure & markup",
    "importance": 3,
    "evidence_date": "2026-06",
-   "age_days": 33,
+   "age_days": 35,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#19-skd-and-vcp-carry-essentially-zero-western-markup"
   },
   {
@@ -234,7 +233,7 @@
    "section": "Dictionary structure & markup",
    "importance": 2,
    "evidence_date": "2026-06-24",
-   "age_days": 24,
+   "age_days": 26,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#20-the-ls-source-map-recognises-724-percent-of-pwg-citations"
   },
   {
@@ -243,7 +242,7 @@
    "section": "Dictionary structure & markup",
    "importance": 1,
    "evidence_date": "2026-07-02",
-   "age_days": 16,
+   "age_days": 18,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#21-pwg-citation-occurrences-track-distinct-references"
   },
   {
@@ -252,7 +251,7 @@
    "section": "Dictionary structure & markup",
    "importance": 2,
    "evidence_date": "2026-06-26",
-   "age_days": 22,
+   "age_days": 24,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#22-mw-has-no-sense-level-div-markup"
   },
   {
@@ -261,7 +260,7 @@
    "section": "Dictionary structure & markup",
    "importance": 3,
    "evidence_date": "2026-06",
-   "age_days": 33,
+   "age_days": 35,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#23-apte-is-three-dictionaries-keys-differ-stem-vs-nominative"
   },
   {
@@ -270,7 +269,7 @@
    "section": "Dictionary structure & markup",
    "importance": 3,
    "evidence_date": "2026-07",
-   "age_days": 3,
+   "age_days": 5,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#24-about-9-percent-of-typo-corrections-are-collisions"
   },
   {
@@ -279,7 +278,7 @@
    "section": "Dictionary structure & markup",
    "importance": 2,
    "evidence_date": "2026-07",
-   "age_days": 3,
+   "age_days": 5,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#25-a-verified-correction-queue-decays-against-live-csl-orig"
   },
   {
@@ -288,7 +287,7 @@
    "section": "Dictionary structure & markup",
    "importance": 2,
    "evidence_date": "2026-06-13",
-   "age_days": 35,
+   "age_days": 37,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#26-citation-density-is-register-bound-not-comparable-raw"
   },
   {
@@ -297,7 +296,7 @@
    "section": "Dictionary structure & markup",
    "importance": 2,
    "evidence_date": "2026-06-15",
-   "age_days": 33,
+   "age_days": 35,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#27-sense-granularity-is-a-family-trait-not-a-diachronic-trend"
   },
   {
@@ -306,7 +305,7 @@
    "section": "Dictionary structure & markup",
    "importance": 2,
    "evidence_date": "2026-06-03",
-   "age_days": 45,
+   "age_days": 47,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#28-mw-inherited-the-pwg-apparatus-skeleton-not-its-prose"
   },
   {
@@ -315,7 +314,7 @@
    "section": "Dictionary structure & markup",
    "importance": 2,
    "evidence_date": "2026-06-26",
-   "age_days": 22,
+   "age_days": 24,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#29-pwg-and-mw-share-94753-headwords-in-the-union-index"
   },
   {
@@ -324,7 +323,7 @@
    "section": "Dictionary structure & markup",
    "importance": 3,
    "evidence_date": "2026-06-15",
-   "age_days": 33,
+   "age_days": 35,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#30-body-text-headword-mining-is-a-dead-end-386-percent-precision"
   },
   {
@@ -333,7 +332,7 @@
    "section": "Dictionary structure & markup",
    "importance": 2,
    "evidence_date": "2026-06-24",
-   "age_days": 24,
+   "age_days": 26,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#31-detector-precision-stratifies-by-digitization-quality"
   },
   {
@@ -342,7 +341,7 @@
    "section": "Dictionary structure & markup",
    "importance": 1,
    "evidence_date": "2026-06-17",
-   "age_days": 31,
+   "age_days": 33,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#32-correction-events-concentrate-in-sense-text"
   },
   {
@@ -351,7 +350,7 @@
    "section": "Dictionary structure & markup",
    "importance": 2,
    "evidence_date": "2026-07-03",
-   "age_days": 15,
+   "age_days": 17,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#46-twelve-years-of-corrections-cover-only-1014--of-the-estimated-error-population"
   },
   {
@@ -360,7 +359,7 @@
    "section": "Dictionary structure & markup",
    "importance": 3,
    "evidence_date": "2026-07-05",
-   "age_days": 13,
+   "age_days": 15,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#64-pw-only-headwords-outnumber-pwg-only-ones-6-to-1--pwg-is-not-the-sole-spine-of-the-local-layer-universe"
   },
   {
@@ -369,7 +368,7 @@
    "section": "Dictionary structure & markup",
    "importance": 2,
    "evidence_date": "2026-07-11",
-   "age_days": 7,
+   "age_days": 9,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#76-the-mwwordnetsemdom-bridge-is-a-candidate-generator-not-a-classifier"
   },
   {
@@ -387,7 +386,7 @@
    "section": "Etymology & derivation",
    "importance": 2,
    "evidence_date": "2026-06-26",
-   "age_days": 22,
+   "age_days": 24,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#33-indigenous-dictionaries-agree-on-derivation-wilson-is-the-outlier"
   },
   {
@@ -396,7 +395,7 @@
    "section": "Etymology & derivation",
    "importance": 2,
    "evidence_date": "2026-06-26",
-   "age_days": 22,
+   "age_days": 24,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#34-the-e-abbreviation-tag-is-polysemous-across-dicts"
   },
   {
@@ -405,7 +404,7 @@
    "section": "Etymology & derivation",
    "importance": 2,
    "evidence_date": "2026-06-26",
-   "age_days": 22,
+   "age_days": 24,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#35-root-recovery-tiers-err-on-root-form-not-identity"
   },
   {
@@ -414,8 +413,26 @@
    "section": "Encoding & normalization",
    "importance": 3,
    "evidence_date": "2026-06",
-   "age_days": 33,
+   "age_days": 35,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#36-iast-unicode-collides-and-normalises-lossily"
+  },
+  {
+   "n": 100,
+   "title": "`nfold` earns sandhi-tolerant recall by fusing every nasal to `n` — which manufactures false quotation matches unless every hit is re-verified on `norm`",
+   "section": "Encoding & normalization",
+   "importance": 3,
+   "evidence_date": "2026-07",
+   "age_days": 5,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#100-nfold-earns-sandhi-tolerant-recall-by-fusing-every-nasal-to-n--which-manufactures-false-quotation-matches-unless-every-hit-is-re-verified-on-norm"
+  },
+  {
+   "n": 102,
+   "title": "DCS `sentence.text_sandhied` is not reliably sandhied — some rows store analyzed word forms, which silently downgrades verbatim quotations to partial matches",
+   "section": "Encoding & normalization",
+   "importance": 3,
+   "evidence_date": "2026-07",
+   "age_days": 5,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#102-dcs-sentencetext_sandhied-is-not-reliably-sandhied--some-rows-store-analyzed-word-forms-which-silently-downgrades-verbatim-quotations-to-partial-matches"
   },
   {
    "n": 37,
@@ -423,7 +440,7 @@
    "section": "Encoding & normalization",
    "importance": 2,
    "evidence_date": "2026-06",
-   "age_days": 33,
+   "age_days": 35,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#37-bom-state-is-inconsistent-across-exports"
   },
   {
@@ -432,7 +449,7 @@
    "section": "Encoding & normalization",
    "importance": 2,
    "evidence_date": "2026-06-27",
-   "age_days": 21,
+   "age_days": 23,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#38-injected-boms-crash-the-hw-record-parser"
   },
   {
@@ -441,7 +458,7 @@
    "section": "Encoding & normalization",
    "importance": 1,
    "evidence_date": "2026-06",
-   "age_days": 33,
+   "age_days": 35,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#39-devanagari_to_slp1-mis-routes-retroflex-la"
   },
   {
@@ -450,7 +467,7 @@
    "section": "Encoding & normalization",
    "importance": 2,
    "evidence_date": "2026-06-26",
-   "age_days": 22,
+   "age_days": 24,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#40-gloss-language-spelling-drift-tracks-reform-type-not-age"
   },
   {
@@ -459,7 +476,7 @@
    "section": "Encoding & normalization",
    "importance": 1,
    "evidence_date": "2026-07-05",
-   "age_days": 13,
+   "age_days": 15,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#60-practical-russian-transcription-of-sanskrit-names-has-no-safe-reverse-transliteration"
   },
   {
@@ -468,7 +485,7 @@
    "section": "External platforms & services",
    "importance": 2,
    "evidence_date": "2026-07-02",
-   "age_days": 16,
+   "age_days": 18,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#41-the-sanskrit-dictionary-platform-landscape-probed-live"
   },
   {
@@ -477,7 +494,7 @@
    "section": "External platforms & services",
    "importance": 2,
    "evidence_date": "2026-07-03",
-   "age_days": 15,
+   "age_days": 17,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#47-heritage-data-is-acquirable-despite-the-anubis-wall--via-a-github-mirror-the-morphology-xml-is-not-in-it"
   },
   {
@@ -486,7 +503,7 @@
    "section": "External platforms & services",
    "importance": 2,
    "evidence_date": "2026-07-02",
-   "age_days": 16,
+   "age_days": 18,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#43-skdvcp-sensecitation-fusion-is-a-record-type-effect-not-a-dictionary-level-one"
   },
   {
@@ -495,7 +512,7 @@
    "section": "External platforms & services",
    "importance": 2,
    "evidence_date": "2026-07-02",
-   "age_days": 16,
+   "age_days": 18,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#44-raw-latin-string-tallies-over-gloss-text-include-etymological-false-positives-bopp-lacks-yabh"
   },
   {
@@ -504,7 +521,7 @@
    "section": "External platforms & services",
    "importance": 2,
    "evidence_date": "2026-07-02",
-   "age_days": 16,
+   "age_days": 18,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#45-siglum-prefix-families-routinely-bundle-several-distinct-works-the-diacritic-stripping-fold-has-poisoned-keys"
   },
   {
@@ -513,7 +530,7 @@
    "section": "External platforms & services",
    "importance": 2,
    "evidence_date": "2026-07-03",
-   "age_days": 15,
+   "age_days": 17,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#48-vedaweb-20s-resource-export-is-an-async-task-behind-a-pickup-key-not-a-direct-get--and-the-server-went-unresponsive-mid-attempt"
   },
   {
@@ -522,7 +539,7 @@
    "section": "External platforms & services",
    "importance": 2,
    "evidence_date": "2026-07-03",
-   "age_days": 15,
+   "age_days": 17,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#49-mwheritage-coverage-highlighting-is-a-duplicate-anchor-pattern-not-a-css-class--and-the-mirrors-current-dictionary-is-a-different-scope-asset-than-the-2014-reader-stem-list"
   },
   {
@@ -531,17 +548,17 @@
    "section": "External platforms & services",
    "importance": 2,
    "evidence_date": "2026-07-03",
-   "age_days": 15,
+   "age_days": 17,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#50-cdsl-display-paths-are-not-uniformly-2020web--and-two-new-digitizations-landed-in-june-2026"
   },
   {
-   "n": 80,
+   "n": 448,
    "title": "CORRECTED — the MWScan/2020 `servepdf.php` endpoint is RIGHT (serves 1899); the 1872 first-edition scan coexists on the portal with colliding page numbers",
    "section": "External platforms & services",
    "importance": 2,
    "evidence_date": null,
    "age_days": null,
-   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#80-corrected--the-mwscan2020-servepdfphp-endpoint-is-right-serves-1899-the-1872-first-edition-scan-coexists-on-the-portal-with-colliding-page-numbers"
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#448-corrected--the-mwscan2020-servepdfphp-endpoint-is-right-serves-1899-the-1872-first-edition-scan-coexists-on-the-portal-with-colliding-page-numbers"
   },
   {
    "n": 51,
@@ -549,16 +566,16 @@
    "section": "External platforms & services",
    "importance": 2,
    "evidence_date": "2026-07-03",
-   "age_days": 15,
+   "age_days": 17,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#51-huet-correspondence-predates-this-session-2021--the-morphology-xml-gate-was-already-resolved-in-writing-direct-download-urls-recovered"
   },
   {
    "n": 52,
    "title": "Heritage vs kosha forms diff: the small raw overlap is mostly convention + model difference, and \"disagreements\" are two-thirds lemmatization policy, not error",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 1,
    "evidence_date": "2026-07-03",
-   "age_days": 15,
+   "age_days": 17,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#52-heritage-vs-kosha-forms-diff-the-small-raw-overlap-is-mostly-convention--model-difference-and-disagreements-are-two-thirds-lemmatization-policy-not-error"
   },
   {
@@ -567,7 +584,7 @@
    "section": "External platforms & services",
    "importance": 3,
    "evidence_date": "2026-07-03",
-   "age_days": 15,
+   "age_days": 17,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#53-the-wil-etymology-extractions-affix-field-is-half-noise--wilson-outlier-figures-are-substantially-a-measurement-artifact"
   },
   {
@@ -576,16 +593,16 @@
    "section": "External platforms & services",
    "importance": 1,
    "evidence_date": "2026-07-03",
-   "age_days": 15,
+   "age_days": 17,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#56-dicos-entry-anchors-nest-three-structural-roles-under-one-html-class--only-one-is-a-true-entry-boundary"
   },
   {
    "n": 55,
    "title": "`gen_opt_harness2.py` output-budget: coarser wins on both knobs, in opposite directions",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 1,
    "evidence_date": "2026-07-03",
-   "age_days": 15,
+   "age_days": 17,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#55-gen_opt_harness2py-output-budget-coarser-wins-on-both-knobs-in-opposite-directions"
   },
   {
@@ -594,7 +611,7 @@
    "section": "External platforms & services",
    "importance": 1,
    "evidence_date": "2026-07-03",
-   "age_days": 15,
+   "age_days": 17,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#57-samskrtamruz-is-id-addressed-with-no-name-lookup--deep-linking-needs-a-scraped-rootid-table-8-primer-basic-roots-are-absent"
   },
   {
@@ -603,7 +620,7 @@
    "section": "External platforms & services",
    "importance": 1,
    "evidence_date": "2026-07-03",
-   "age_days": 15,
+   "age_days": 17,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#58-pwg-ru-promoted-store-has-input-level-provenance-but-old-ru-rows-lacked-exact-model-versions"
   },
   {
@@ -619,9 +636,9 @@
    "n": 70,
    "title": "pwg_ru TM composite grade: A is consensus-gated (5.7%), and a reference-free surface QE cannot detect wrong-sense",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 1,
    "evidence_date": "2026-07-03",
-   "age_days": 15,
+   "age_days": 17,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#70-pwg_ru-tm-composite-grade-a-is-consensus-gated-57-and-a-reference-free-surface-qe-cannot-detect-wrong-sense"
   },
   {
@@ -630,43 +647,43 @@
    "section": "External platforms & services",
    "importance": 3,
    "evidence_date": "2026-07-07",
-   "age_days": 11,
+   "age_days": 13,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#61-the-reverse-dictionarys-30-sources-split-18-pd-vs-10-in-copyright--the-merged-headword-list-is-not-automatically-publishable"
   },
   {
    "n": 71,
    "title": "PWG marks case government explicitly ≈3,853 times across ≈3,222 senses — a deterministic census, not an estimate",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": "2026-07-08",
-   "age_days": 10,
+   "age_days": 12,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#71-pwg-marks-case-government-explicitly-3853-times-across-3222-senses--a-deterministic-census-not-an-estimate"
   },
   {
    "n": 72,
    "title": "VedaWeb's `id_gra` token field IS the Grassmann `<L>` entry number — no fuzzy text-matching needed for a GRA↔VedaWeb crosswalk",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 1,
    "evidence_date": "2026-07-08",
-   "age_days": 10,
+   "age_days": 12,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#72-vedawebs-id_gra-token-field-is-the-grassmann-l-entry-number--no-fuzzy-text-matching-needed-for-a-gravedaweb-crosswalk"
   },
   {
    "n": 73,
    "title": "VedaWeb 2.0's \"CC BY 4.0 for everything\" claim is not machine-confirmed — only 2/36 catalog resources carry an explicit license field",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": "2026-07-08",
-   "age_days": 10,
+   "age_days": 12,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#73-vedaweb-20s-cc-by-40-for-everything-claim-is-not-machine-confirmed--only-236-catalog-resources-carry-an-explicit-license-field"
   },
   {
    "n": 74,
    "title": "The ls-graph citation matrix is degenerate for MW — its top abbreviations sit unresolved; use the citation-apparatus siglum matrix for cross-dict citation profiles",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": "2026-07-08",
-   "age_days": 10,
+   "age_days": 12,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#74-the-ls-graph-citation-matrix-is-degenerate-for-mw--its-top-abbreviations-sit-unresolved-use-the-citation-apparatus-siglum-matrix-for-cross-dict-citation-profiles"
   },
   {
@@ -675,7 +692,7 @@
    "section": "External platforms & services",
    "importance": 3,
    "evidence_date": "2026-07-10",
-   "age_days": 8,
+   "age_days": 10,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#66-the-dcs-ql-frequency-workbooks-slp1-and-length-columns-are-truncated-at-ṣṭhḍh-clusters"
   },
   {
@@ -684,41 +701,41 @@
    "section": "External platforms & services",
    "importance": 2,
    "evidence_date": "2026-07-10",
-   "age_days": 8,
+   "age_days": 10,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#67-in-pwg-article-size-dwarfs-every-parametric-statistic-you-can-extract-from-the-entry"
   },
   {
    "n": 68,
    "title": "The Sanskrit spellchecker landscape: one dormant demo, one license-unsettled 543k wordlist, no occupant",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": "2026-07-10",
-   "age_days": 8,
+   "age_days": 10,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#68-the-sanskrit-spellchecker-landscape-one-dormant-demo-one-license-unsettled-543k-wordlist-no-occupant"
   },
   {
    "n": 69,
    "title": "Hand-transcribed telemetry cannot adjudicate code-vs-infra — and a local-only ledger silently swaps your denominator",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 1,
    "evidence_date": "2026-07-10",
-   "age_days": 8,
+   "age_days": 10,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#69-hand-transcribed-telemetry-cannot-adjudicate-code-vs-infra--and-a-local-only-ledger-silently-swaps-your-denominator"
   },
   {
    "n": 75,
    "title": "The full Devībhāgavata-purāṇa Sanskrit is NOT on GRETIL — only the Devigita fragment; the complete mūla lives on sanskritdocuments.org without `DbhP_` markers",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 1,
    "evidence_date": "2026-07-10",
-   "age_days": 8,
+   "age_days": 10,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#75-the-full-devībhāgavata-purāṇa-sanskrit-is-not-on-gretil--only-the-devigita-fragment-the-complete-mūla-lives-on-sanskritdocumentsorg-without-dbhp_-markers"
   },
   {
    "n": 78,
    "title": "DCS 2026 sqlite carries 531,747 sense-annotated tokens (`m_wordsem`) but NO local ID→gloss inventory — gold-scored WSD against MW senses is blocked until the inventory is recovered",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#78-dcs-2026-sqlite-carries-531747-sense-annotated-tokens-m_wordsem-but-no-local-idgloss-inventory--gold-scored-wsd-against-mw-senses-is-blocked-until-the-inventory-is-recovered"
@@ -736,7 +753,7 @@
    "n": 79,
    "title": "DCS 2021→2026 \"lost lemma\" counts are mostly lemmatization-policy drift — a-privatives now resolve to their bases",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#79-dcs-20212026-lost-lemma-counts-are-mostly-lemmatization-policy-drift--a-privatives-now-resolve-to-their-bases"
@@ -745,7 +762,7 @@
    "n": 80,
    "title": "DCS `text_sandhied` is largely DE-sandhied pada text in the Rāmāyaṇa — and locus joins fail across editions; a text-keyed 3-tier match (exact / consonant-skeleton / fuzzy) recovers it",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#80-dcs-text_sandhied-is-largely-de-sandhied-pada-text-in-the-rāmāyaṇa--and-locus-joins-fail-across-editions-a-text-keyed-3-tier-match-exact--consonant-skeleton--fuzzy-recovers-it"
@@ -754,7 +771,7 @@
    "n": 81,
    "title": "vidyut-cheda 0.4 lemmatizes derivatives to the dhātu ROOT (rāmaḥ → ram) where DCS uses the nominal stem — and over-segments epic verse 1.44×",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#81-vidyut-cheda-04-lemmatizes-derivatives-to-the-dhātu-root-rāmaḥ--ram-where-dcs-uses-the-nominal-stem--and-over-segments-epic-verse-144"
@@ -772,7 +789,7 @@
    "n": 83,
    "title": "MW and the Petersburg dictionaries are NOT independent witnesses on inventory or apparatus — do not count their agreement as corroboration; but no shared *error* has ever been found",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#83-mw-and-the-petersburg-dictionaries-are-not-independent-witnesses-on-inventory-or-apparatus--do-not-count-their-agreement-as-corroboration-but-no-shared-error-has-ever-been-found"
@@ -781,7 +798,7 @@
    "n": 84,
    "title": "pwg_ru readiness audit: `[NWS:]` attribution and `{%…%}`-delimiter dropping are NOT audit-contract defects; observed token/cost economy is `not_recoverable`; store-membership ≠ audit-clean",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#84-pwg_ru-readiness-audit-nws-attribution-and--delimiter-dropping-are-not-audit-contract-defects-observed-tokencost-economy-is-not_recoverable-store-membership--audit-clean"
@@ -790,7 +807,7 @@
    "n": 88,
    "title": "The DCS snapshot's UD dependency slice is real but VEDIC-SKEWED — syntax studies get counterexample hunts, not classical norms",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#88-the-dcs-snapshots-ud-dependency-slice-is-real-but-vedic-skewed--syntax-studies-get-counterexample-hunts-not-classical-norms"
@@ -799,7 +816,7 @@
    "n": 87,
    "title": "A curated DCS text→period map EXISTS (consume, don't rebuild) — and the purāṇas carry a measured epic-imitative signature on two independent axes",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#87-a-curated-dcs-textperiod-map-exists-consume-dont-rebuild--and-the-purāṇas-carry-a-measured-epic-imitative-signature-on-two-independent-axes"
@@ -808,7 +825,7 @@
    "n": 86,
    "title": "DCS verbal-feature annotation density collapses for later texts — feats-based diachronic metrics measure ANNOTATION, not language",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#86-dcs-verbal-feature-annotation-density-collapses-for-later-texts--feats-based-diachronic-metrics-measure-annotation-not-language"
@@ -817,34 +834,34 @@
    "n": 85,
    "title": "A clean-looking subset is not promotable evidence when its audit or execution contract failed",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#85-a-clean-looking-subset-is-not-promotable-evidence-when-its-audit-or-execution-contract-failed"
   },
   {
-   "n": 86,
+   "n": 449,
    "title": "Samāsa-type frequency does not exist in any org corpus — and the grammarians' canonical examples are corpus-ghosts (8/58 attested, max freq 147)",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
-   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#86-samāsa-type-frequency-does-not-exist-in-any-org-corpus--and-the-grammarians-canonical-examples-are-corpus-ghosts-858-attested-max-freq-147"
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#449-samāsa-type-frequency-does-not-exist-in-any-org-corpus--and-the-grammarians-canonical-examples-are-corpus-ghosts-858-attested-max-freq-147"
   },
   {
-   "n": 87,
+   "n": 450,
    "title": "The roadmap's \"OBS-T κ=0.42\" was a phantom figure — no measured agreement exists for any OBS-T axis",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
-   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#87-the-roadmaps-obs-t-κ042-was-a-phantom-figure--no-measured-agreement-exists-for-any-obs-t-axis"
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#450-the-roadmaps-obs-t-κ042-was-a-phantom-figure--no-measured-agreement-exists-for-any-obs-t-axis"
   },
   {
    "n": 89,
    "title": "MW writes `<ls>` citations in TWO markup shapes and locates them in roman as well as arabic — a literal `<ls>` regex undercounts its apparatus by 28.6%, and case-folding the roman test erases the `L.` hedge",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#89-mw-writes-ls-citations-in-two-markup-shapes-and-locates-them-in-roman-as-well-as-arabic--a-literal-ls-regex-undercounts-its-apparatus-by-286-and-case-folding-the-roman-test-erases-the-l-hedge"
@@ -853,7 +870,7 @@
    "n": 90,
    "title": "A spelling-keyed join onto Whitney's roots union-smears homonyms — one authorial entry lands on every homonym of that spelling, and the rows still read `authorial`",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#90-a-spelling-keyed-join-onto-whitneys-roots-union-smears-homonyms--one-authorial-entry-lands-on-every-homonym-of-that-spelling-and-the-rows-still-read-authorial"
@@ -862,10 +879,118 @@
    "n": 91,
    "title": "DCS has no aorist TENSE value — `feat_tense='Past'` lumps aorist with the perfect; `feat_formation` is what actually separates them",
    "section": "External platforms & services",
-   "importance": null,
+   "importance": 2,
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#91-dcs-has-no-aorist-tense-value--feat_tensepast-lumps-aorist-with-the-perfect-feat_formation-is-what-actually-separates-them"
+  },
+  {
+   "n": 92,
+   "title": "A verified claim register is not Whitney-proof — 3 of 229 \u000berdict_fact: TRUE rows in Kochergina claims.yml contradict Whitney, and ~65 of the register/article §-refs point at the wrong section",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#92-a-verified-claim-register-is-not-whitney-proof--3-of-229-\u000berdict_fact-true-rows-in-kochergina-claimsyml-contradict-whitney-and-65-of-the-registerarticle--refs-point-at-the-wrong-section"
+  },
+  {
+   "n": 93,
+   "title": "Declared, validated, and never enforced — the PWG headless executor read a manifest `budgets{}` block it did not obey, and every offline gate stayed green",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#93-declared-validated-and-never-enforced--the-pwg-headless-executor-read-a-manifest-budgets-block-it-did-not-obey-and-every-offline-gate-stayed-green"
+  },
+  {
+   "n": 94,
+   "title": "kosha's generated `forms` is 93% DCS-derived, so its attested-form join is a round-trip — only the vidyut-engine subtotal (12.4% attested) carries signal, and A¬G cannot measure engine gaps",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#94-koshas-generated-forms-is-93-dcs-derived-so-its-attested-form-join-is-a-round-trip--only-the-vidyut-engine-subtotal-124-attested-carries-signal-and-ag-cannot-measure-engine-gaps"
+  },
+  {
+   "n": 95,
+   "title": "DharmaMitra `unsandhied` batches return MISALIGNED results on short inputs — doubled echoes and other texts' tokens — so every consumer must validate by surface reconstruction before display",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#95-dharmamitra-unsandhied-batches-return-misaligned-results-on-short-inputs--doubled-echoes-and-other-texts-tokens--so-every-consumer-must-validate-by-surface-reconstruction-before-display"
+  },
+  {
+   "n": 96,
+   "title": "SamudraManthanam's generated full-corpus JSONL has 38,288 duplicate canonical-ID groups, concentrated in `devibhagavata-purana`",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#96-samudramanthanams-generated-full-corpus-jsonl-has-38288-duplicate-canonical-id-groups-concentrated-in-devibhagavata-purana"
+  },
+  {
+   "n": 97,
+   "title": "Cross-dictionary attestation via Monier-Williams overstates independence — MW was compiled *from* Böhtlingk-Roth (PW/PWG), so an MW-only hit is not evidence a PW/PWG word is independently text-attested",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#97-cross-dictionary-attestation-via-monier-williams-overstates-independence--mw-was-compiled-from-böhtlingk-roth-pwpwg-so-an-mw-only-hit-is-not-evidence-a-pwpwg-word-is-independently-text-attested"
+  },
+  {
+   "n": 103,
+   "title": "Quantified: the §83/§97 witness-collapse deflates the published 15-dict union \"corroboration\" from 55.9% to 34.7% — and the union's own table is pre-fold",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#103-quantified-the-8397-witness-collapse-deflates-the-published-15-dict-union-corroboration-from-559-to-347--and-the-unions-own-table-is-pre-fold"
+  },
+  {
+   "n": 98,
+   "title": "PD's inline sigla contain a near-homograph pair that similarity-clustering silently fuses — `MahāBhā.` is the Mahābhārata, `MahāBh.` is the Mahābhāṣya, and the locator shape tells them apart mechanically",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#98-pds-inline-sigla-contain-a-near-homograph-pair-that-similarity-clustering-silently-fuses--mahābhā-is-the-mahābhārata-mahābh-is-the-mahābhāṣya-and-the-locator-shape-tells-them-apart-mechanically"
+  },
+  {
+   "n": 99,
+   "title": "Output gates must audit structured semantic fields, and sample-clean editorial rewrites still require a full-population ambiguity pass",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#99-output-gates-must-audit-structured-semantic-fields-and-sample-clean-editorial-rewrites-still-require-a-full-population-ambiguity-pass"
+  },
+  {
+   "n": 101,
+   "title": "DCS's compound dictionary carries splits whose member **order** does not match the surface form — invisible to a type-drill, fatal to any head-first analysis",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#101-dcss-compound-dictionary-carries-splits-whose-member-order-does-not-match-the-surface-form--invisible-to-a-type-drill-fatal-to-any-head-first-analysis"
+  },
+  {
+   "n": 451,
+   "title": "`10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#451-105281zenodo15834721-is-a-false-doi-cited-as-genuine-in-two-different-repos"
+  },
+  {
+   "n": 104,
+   "title": "The DCS `dcs-conllu` treebank is only ~3.9 % dependency-parsed — corpus government/valency work must lean on co-occurrence, not arcs, and read absence as \"unknown\"",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#104-the-dcs-dcs-conllu-treebank-is-only-39--dependency-parsed--corpus-governmentvalency-work-must-lean-on-co-occurrence-not-arcs-and-read-absence-as-unknown"
   }
  ]
 }

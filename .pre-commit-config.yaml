@@ -14,3 +14,9 @@ repos:
         entry: python RussianTranslation/src/review_changelog_guard.py --staged
         language: system
         pass_filenames: false
+      - id: epistemic-integrity-check
+        name: Epistemic registry integrity (§-numbers, Index parity, dashboards)
+        entry: python tools/epistemic_integrity_check.py --dir .
+        language: system
+        pass_filenames: false
+        files: '(FINDINGS|CONTRADICTIONS|DEAD_ENDS|GAPS|ASSUMPTIONS|RECIPES|STALENESS|GLOSSARY)\.md$|(findings_dashboard/data|epistemic_dashboard/epistemic)\.json$'
