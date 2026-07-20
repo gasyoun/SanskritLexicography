@@ -10,6 +10,21 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — Sa→Ru gloss layer measured precision (H1349 wave 2)
+
+- **First accuracy measurement** of the gloss layer (every prior number was coverage). A
+  new tier×frequency stratified sampler (`src/saru_gloss_sample.py`) + panel aggregator
+  (`src/saru_gloss_aggregate.py`) run a **model-vs-model LLM panel** (Opus 4.8 / Sonnet 5 /
+  Haiku 4.5, adversarially adjudicated by Fable 5) over 110 resolutions, judging lemmatization
+  and gloss separately (D6). Result: lemmatization **86.1%** (95% CI 78.3–91.4), gloss **85.3%**
+  (77.5–90.8) — with the **vidyut** tier the lemmatization weak spot (71.8% vs dcs 94.9% /
+  marker 93.3%). Report: `gold/saru_gloss_precision_report.md`; numbers in `RESULTS_LOG.md`.
+- `build_rollup_glossaries.py` now also emits `surface_resolution.tsv` (per-form tier · lemma ·
+  top-gloss) as the sampling frame — backward-compatible (a new output; existing ones unchanged).
+- Panel labels + the frozen sample committed under `gold/` as the scaffold for a human
+  spot-check; runs cleanly through the existing `gold_agreement.py` double-review machinery.
+  Wave-2 scaffold has its own regression tests (`tests/test_saru_gloss_wave2.py`, wired into CI).
+
 ### Fixed — Sa→Ru gloss layer wave-1 defects (H1349 W1.1–W1.3)
 
 - **Pseudo-roots (W1.1).** `build_dcs_maps.py` no longer keeps prefixed verb lemmas that

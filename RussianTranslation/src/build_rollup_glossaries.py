@@ -214,6 +214,12 @@ def main():
     amb = open(os.path.join(G, 'ambiguity_homographs.tsv'), 'w',
                encoding='utf-8', newline='\n')
     amb.write('form_slp1\tprimary_lemma\tprimary_upos\tprimary_n\talt_lemma\talt_upos\talt_n\n')
+    # per-form resolution trace: which tier resolved each form + its primary lemma,
+    # root and top Ru gloss. The wave-2 precision sampler strata on tier × frequency
+    # off this file (H1349 W2). Backward-compatible: a new output, existing ones unchanged.
+    resolution = open(os.path.join(G, 'surface_resolution.tsv'), 'w',
+                      encoding='utf-8', newline='\n')
+    resolution.write('form_slp1\tsa\tn\ttier\tlemma\tupos\troot\ttop_ru\n')
 
     n_forms = n_hit = n_miss = n_amb = n_mark = 0
     with open(os.path.join(G, 'surface_glossary.jsonl'), encoding='utf-8') as f:
@@ -273,8 +279,10 @@ def main():
                 ra['upos'][upos] += d['n']
                 ra['lemmas'][lemma] += d['n']
                 ra['src'][source] += d['n']
+            resolution.write(f"{slp1}\t{d['sa']}\t{d['n']}\t{source}\t{lemma}\t"
+                             f"{upos}\t{root or ''}\t{top_ru}\n")
             n_forms += 1
-    dcs_misses.close(); unresolved.close(); amb.close()
+    dcs_misses.close(); unresolved.close(); amb.close(); resolution.close()
     print(f'[D] surface forms: hit={n_hit} (marker-recovered={n_mark}) miss={n_miss} '
           f'(hit%={100*n_hit/(n_hit+n_miss):.1f}); homograph-flagged={n_amb}',
           file=sys.stderr)
