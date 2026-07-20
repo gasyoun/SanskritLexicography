@@ -101,10 +101,10 @@ Surfaced by [`seed_dead_ends.py`](https://github.com/sanskrit-lexicon/sanskrit-u
 
 ### §7. Generalising dictionary-level sense-inheritance direction to corpus scale — refuted
 🟠 ⚙️ **Assuming the sense-inheritance *descent direction* observed at the dictionary level (the *dharma* exemplar) holds at corpus scale.**
-Failed because: it did NOT hold — the classifier over the full corpus reversed the exemplar (SKD 53.3% fused vs VCP 77.6% fused); §7 of the fusion analysis was re-scoped to record-type-dependent, not dictionary-level. This is the corpus-scale twin of [CONTRADICTIONS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md).
+Failed because: it did NOT hold — the classifier over the full corpus reversed the exemplar (SKD 53.3% fused vs VCP 77.6% fused); §7 of the fusion analysis was re-scoped to record-type-dependent, not dictionary-level. This is the corpus-scale twin of [CONTRADICTIONS §6](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md).
 Evidence: R2606-06 (refuted 02-07-2026), `r2_kosa_fusion.json`, [csl-atlas PR #184](https://github.com/sanskrit-lexicon/csl-atlas/pull/184).
 Don't retry unless: you compute the direction at corpus scale from the start — never generalise a single hand-picked lemma's fusion direction to a dictionary-level rule.
-↔ Interlinks: [CONTRADICTIONS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) (SKD/VCP fusion) is the corpus-scale contradiction this refuted approach became · [ASSUMPTIONS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (a shared tag means one thing across dicts) is the same "record-type-bound, not dictionary-level" trap.
+↔ Interlinks: [CONTRADICTIONS §6](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) (SKD/VCP fusion) is the corpus-scale contradiction this refuted approach became · [ASSUMPTIONS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md) (a shared tag means one thing across dicts) is the same "record-type-bound, not dictionary-level" trap.
 > **Source:** [QUESTIONS_LOG R2606-06](https://github.com/gasyoun/Uprava/blob/main/QUESTIONS_LOG.md) · [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · auto (seed_dead_ends.py)
 
 ---
