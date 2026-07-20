@@ -45,7 +45,7 @@
    "metrics": {
     "dcs_cdsl_linkage_pct": 81.4,
     "glossary_vidyut_coverage_pct": 86.6,
-    "pwg_citation_coverage_pct": 83.6,
+    "pwg_citation_coverage_pct": null,
     "queue_verdicts": {
      "PASS": 92,
      "DROP": 1,
@@ -68,11 +68,11 @@
     "queue_decay_pct": 0.82
    },
    "registry": {
-    "total": 114,
+    "total": 115,
     "by_importance": {
      "2": 78,
      "1": 18,
-     "3": 18
+     "3": 19
     },
     "stale": 0
    }
