@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-07-20T16:20:26Z",
+ "generated_at": "2026-07-20T17:40:51Z",
  "stale_days_threshold": 180,
  "counts": {
-  "total": 114,
+  "total": 115,
   "by_importance": {
    "2": 78,
    "1": 18,
-   "3": 18
+   "3": 19
   },
   "stale": 0
  },
@@ -1036,6 +1036,15 @@
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#456-mws-derivation-markup-and-the-dcs-corpus-are-productive-over-the-same-compound-final-members-but-with-near-disjoint-first-members-median-jaccard-000-56-share-zero--and-the-corpus-unattested-mw-stratum-is-kośaparticiple-formations-not-ghost-words"
+  },
+  {
+   "n": 457,
+   "title": "DCS covers ~25% of the Poona Dictionary's citation mass but ~78% of DCS's own tokens — the classical core, not PD's encyclopedic breadth; and a siglum prefix-merge fuses MahāBhā. (Mahābhārata) with MahāBh. (Mahābhāṣya)",
+   "section": "External platforms & services",
+   "importance": 3,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#457-dcs-covers-25-of-the-poona-dictionarys-citation-mass-but-78-of-dcss-own-tokens--the-classical-core-not-pds-encyclopedic-breadth-and-a-siglum-prefix-merge-fuses-mahābhā-mahābhārata-with-mahābh-mahābhāṣya"
   }
  ]
 }
