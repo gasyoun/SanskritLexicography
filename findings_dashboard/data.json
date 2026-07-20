@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-07-20T15:26:24Z",
+ "generated_at": "2026-07-20T16:20:26Z",
  "stale_days_threshold": 180,
  "counts": {
-  "total": 113,
+  "total": 114,
   "by_importance": {
-   "2": 77,
+   "2": 78,
    "1": 18,
    "3": 18
   },
@@ -1027,6 +1027,15 @@
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#104-the-dcs-dcs-conllu-treebank-is-only-39--dependency-parsed--corpus-governmentvalency-work-must-lean-on-co-occurrence-not-arcs-and-read-absence-as-unknown"
+  },
+  {
+   "n": 456,
+   "title": "MW's derivation markup and the DCS corpus are productive over the *same* compound final members but with near-disjoint first members (median Jaccard 0.00, 56% share zero) — and the corpus-unattested MW stratum is kośa/participle formations, not ghost-words",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#456-mws-derivation-markup-and-the-dcs-corpus-are-productive-over-the-same-compound-final-members-but-with-near-disjoint-first-members-median-jaccard-000-56-share-zero--and-the-corpus-unattested-mw-stratum-is-kośaparticiple-formations-not-ghost-words"
   }
  ]
 }
