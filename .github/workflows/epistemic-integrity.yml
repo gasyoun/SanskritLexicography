@@ -1,0 +1,79 @@
+# Epistemic-integrity gate — runs on every PR touching the registries/dashboards AND on every
+# push to master. Before H1362 the check (tools/epistemic_integrity_check.py) ran ONLY from the
+# monthly findings-dashboard workflow + the local pre-commit hook, so two PRs that each passed in
+# isolation could both merge and leave duplicate §-numbers on master (the H1350×H1361 §448–451
+# collision, Uprava FINDINGS / REGISTRY_CITATION_IDENTITY_RULING §6). The pull_request run catches
+# most collisions pre-merge; the push:master run is the backstop that catches a slip-through the
+# moment it lands — and opens a tracking issue so a red master is loud, not discovered days later.
+name: epistemic-integrity
+
+on:
+  pull_request:
+    paths: &paths
+      - "FINDINGS.md"
+      - "STALENESS.md"
+      - "RECIPES.md"
+      - "ASSUMPTIONS.md"
+      - "CONTRADICTIONS.md"
+      - "GAPS.md"
+      - "DEAD_ENDS.md"
+      - "GLOSSARY.md"
+      - "epistemic_dashboard/**"
+      - "findings_dashboard/**"
+      - "tools/epistemic_integrity_check.py"
+      - ".github/workflows/epistemic-integrity.yml"
+  push:
+    branches: [master]
+    paths: *paths
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: epistemic-integrity-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Structural integrity check (duplicate §-numbers · heading↔Index parity · next-free marker)
+        # --structural-only is the collision-relevant half and needs no dashboard rebuild, so it is
+        # cheap enough to gate every PR. The full file↔dashboard parity check stays in the monthly
+        # findings-dashboard workflow (it needs the builders to run first).
+        run: python tools/epistemic_integrity_check.py --dir . --structural-only
+
+      - name: Open/refresh a tracking issue when master is red
+        if: failure() && github.event_name == 'push'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "⚠️ Epistemic integrity gate RED on master";
+            const marker = "<!-- epistemic-integrity-gate -->";
+            const sha = context.sha.slice(0, 8);
+            const run = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body = `${marker}\nThe structural epistemic-integrity check failed on \`master\` at commit ${sha}.\n\n` +
+              `Most likely a concurrent-merge §-number collision (two PRs green in isolation, colliding once both land — the H1350×H1361 pattern).\n\n` +
+              `- Failing run: ${run}\n- Reproduce locally: \`python tools/epistemic_integrity_check.py --dir .\`\n\n` +
+              `Fix per [REGISTRY_CITATION_IDENTITY_RULING.md](../blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) rule 4 (later/non-cited claim moves, with a tombstone), then close this issue.`;
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo, state: "open", per_page: 100,
+            });
+            const hit = existing.data.find(i => i.body && i.body.includes(marker));
+            if (hit) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo, issue_number: hit.number,
+                body: `Still red on \`master\` at ${sha} — ${run}`,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo, title, body,
+              });
+            }
