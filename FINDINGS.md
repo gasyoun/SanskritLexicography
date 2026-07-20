@@ -2862,13 +2862,17 @@ dicts, then recomputing the distribution over independent *families*):
   8,934. The ≥5-witness "well-attested" tier more than halves (43,825 → 12,135).
 - **Apte is NOT collapsed** — §83 names it the independent European control (gap-sensitivity
   1.5× vs MW 12.3×), so a rung folding AP would contradict the finding; the map keeps it out.
-- **Second inflation channel, bounded not resolved:** of the 59,717 headwords whose entire
-  corroboration is MW + Petersburg, up to §97 v2's 30.8% L.-only rate ≈ **18,368** rest on MW
-  merely *listing* a koṣa word, not attesting it — exact split needs csl-orig `<ls>L.</ls>`
-  parsing, out of scope for a headword-membership union.
-- **Incidental:** UNION.md's published table is **pre-fold** — it sums to 323,662 (142,673
-  singletons + 180,989 in ≥2) vs the live post-fold `union_headwords.tsv` of 323,425 (237
-  `-inī` feminines folded); regenerate it to close the 237-headword drift.
+- **Second inflation channel, now MEASURED (H1389):** parsing MW's `<ls>L.</ls>` from csl-orig
+  `mw.txt` reproduces §97 v2 exactly (59,697 of 194,084 MW headwords, 30.8%, carry no text
+  citation) and regrades the re-audit so MW witnesses a headword only when it *cites a text*.
+  The P3 corroborated share falls 34.7% → **33.8%** (the drop is larger at P2, 53.1% → 46.2%,
+  where MW is still a separate witness); and **17,386 union headwords are MW-listed ghosts** —
+  MW is their only dictionary and only lists them, so they have **zero text witnesses** (the
+  first-pass estimate ~18,368 was close). Mask committed as `mw_non_textattested_slp1.txt`.
+- **Incidental, now FIXED (H1389):** UNION.md's published "in N dicts" table was **pre-fold**
+  (summed to 323,662 = 142,673 singletons + 180,989 in ≥2) vs the live post-fold
+  `union_headwords.tsv` of 323,425 (237 `-inī` feminines folded); regenerated post-fold (in ≥2
+  180,804, singletons 142,621), 237-headword drift closed.
 
 The re-audit's P0 identity map reproduces the live union's own `n_dicts` column exactly
 (regression anchor). **Consequence:** any "the tradition agrees / attested in N dicts" tally
@@ -2881,6 +2885,10 @@ committed for reuse.
 > [`data/witness_tiers.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/witness_tiers.json) ·
 > [SanskritLexicography PR #602](https://github.com/gasyoun/SanskritLexicography/pull/602) ·
 > 20-07-2026, Opus 4.8 (`claude-opus-4-8`). ↔ operationalizes §83, §97, §28.
+> **H1389 (text-attestation regrade + post-fold table):**
+> [`data/mw_ls_textattest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/mw_ls_textattest.py)
+> + [`mw_non_textattested_slp1.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/mw_non_textattested_slp1.txt) ·
+> 20-07-2026, Opus 4.8 (`claude-opus-4-8`).
 
 ### §98. PD's inline sigla contain a near-homograph pair that similarity-clustering silently fuses — `MahāBhā.` is the Mahābhārata, `MahāBh.` is the Mahābhāṣya, and the locator shape tells them apart mechanically
 

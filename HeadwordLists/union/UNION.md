@@ -4,27 +4,30 @@ A single merged headword list across **15 dictionaries** (AP, BHS, BUR, CAE, CCS
 
 - **Union headwords:** 323662  → **323425** after auto-folding 237 gender-confirmed `-inī` feminines onto their `-in` base.
 - **Fold candidates for editor review:** 3995 `-ā`/`-ī` feminines, **ranked** — 3569 high-confidence (masculine is `mfn`, so the feminine is its) vs 426 low (masc `m`-only — likely a distinct lexeme).
-- **Provenance:** in ≥2 dicts 180989, singletons 142673.
+- **Provenance:** in ≥2 dicts 180804, singletons 142621 (post-fold, sums to 323425).
 
-> **Note (20-07-2026).** The table below is **pre-fold** — it sums to 323,662
-> (142,673 + 180,989), the count *before* the 237 `-inī` feminines were folded.
-> The current [`union_headwords.tsv`](union_headwords.tsv) is the post-fold
-> 323,425; regenerating the table on it shifts each bucket by the fold (total
-> drift 237). **"In N dicts" is not corroboration by N independent witnesses** —
-> CAE≡CCS are one work, PWG→PWK→SCH one lineage, MW's apparatus is
-> Petersburg-derived. The independence-corrected corroboration counts are in the
+> **Note (updated 20-07-2026, H1389).** The table below is now **post-fold** —
+> computed on the current [`union_headwords.tsv`](union_headwords.tsv) (323,425),
+> so it sums to that. The earlier published table was **pre-fold**: it summed to
+> 323,662 (singletons 142,673 + in ≥2 180,989), the count *before* the 237
+> `-inī` feminines were folded onto their `-in` base; regenerating on the live
+> file shifted each bucket by exactly that 237-headword fold, now closed.
+> **"In N dicts" is not corroboration by N independent witnesses** — CAE≡CCS are
+> one work, PWG→PWK→SCH one lineage, MW's headword apparatus is Petersburg-derived
+> (FINDINGS §83/§97). The independence-corrected — and text-attestation-graded —
+> corroboration counts are in the
 > [witness-independence re-audit](../../data/WITNESS_INDEPENDENCE_REAUDIT_UNION15_2026.md).
 
 | in N dicts | headwords |
 |--:|--:|
-| 1 | 142673 |
-| 2 | 61514 |
-| 3 | 46834 |
-| 4 | 28778 |
-| 5 | 17250 |
-| 6 | 10319 |
-| 7 | 5852 |
-| 8 | 3934 |
+| 1 | 142621 |
+| 2 | 61449 |
+| 3 | 46787 |
+| 4 | 28743 |
+| 5 | 17234 |
+| 6 | 10305 |
+| 7 | 5848 |
+| 8 | 3930 |
 | 9 | 2928 |
 | 10 | 1876 |
 | 11 | 967 |
