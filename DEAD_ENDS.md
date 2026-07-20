@@ -1,6 +1,6 @@
 # DEAD_ENDS — the Sanskrit-data negative-results graveyard
 
-_Created: 08-07-2026 · Last updated: 12-07-2026_
+_Created: 08-07-2026 · Last updated: 20-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is *confirmed-true*. This file holds the act FINDINGS cannot: **abandoning** an approach — a whole method that was tried and does not work, so the next session does not pay to rediscover the failure. Distinct from a single refuted hypothesis (that lives per-row in [`Uprava/QUESTIONS_LOG.md`](https://github.com/gasyoun/Uprava/blob/main/QUESTIONS_LOG.md)); a dead end is per-*approach*. One of the seven epistemic registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). Its infra twin is [`Uprava/DEAD_ENDS.md`](https://github.com/gasyoun/Uprava/blob/main/DEAD_ENDS.md).
 
@@ -63,6 +63,13 @@ Evidence: [`csl-atlas/data/forensic/MBH_CITATION_RESOLUTION_CENSUS.md`](https://
 Don't retry unless: a Nilakantha-**vulgate** MBH e-text with per-parvan continuous numbering is obtained (Manipal Sastri-Vavilla harvest under a D3 ruling, or OCR of the Calcutta scans) — then the f8 index fit + held-out gate can run exactly as f7 did.
 ↔ Interlinks: [§8](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) (the Harivaṃśa original of this structural failure) · [csl-atlas roadmap §2](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/CITATION_VERIFICATION_ROADMAP_2026_2027.md) (method invariant 1).
 > **Source:** [H610](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H610-Opus_csl-atlas_mbh_citation_census_11.07.26.md) · [csl-atlas MBH census](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/forensic/MBH_CITATION_RESOLUTION_CENSUS.md) · 11-07-2026 · `claude-opus-4-8`
+
+### §11. vidyut-cheda compound splitting to recover the Sa→Ru gloss layer's unresolved forms — abandoned (isolated-form NO-GO)
+🔴 ✍️ **Segmenting the 78,842 DCS+Vidyut+marker-unresolved corpus forms with offline `vidyut.cheda` to attach a lemma+gloss (H1349 wave 3).**
+Failed because: on *isolated* OOV forms cheda has no running-text context and shatters inflected/dual/plural words into a stem + a spurious *glossable* particle (`sahadevaśca`→`sahadeva`+`ca`, head "и"; dual `-au`→particle `u`), so even a strict "≥2 tokens AND every member already glossable" gate passes garbage — the spurious members are themselves glossable function words. The gate recovers 36.4% (28,673 forms / 55,008 tokens) but at **~18% gloss precision / 60% outright wrong** (2-judge Opus+Sonnet panel, n=40) vs the wave-2 layer's measured **85.3%** — a net regression, and a recovered-but-wrong form is a regression by wave-3's own acceptance bar.
+Evidence: [`gold/saru_gloss_wave3_cheda_coverage.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/saru_gloss_wave3_cheda_coverage.md) + the committed panel labels; the gated splitter [`src/build_compound_split.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_compound_split.py) + its gate regression test are kept (reusable for a running-text application), but the recoveries were **not** wired into the rollup.
+Don't retry unless: you segment the aligned *verse text* (context) rather than isolated forms — ideally the DharmaMitra **neural** segmenter that kosha's [`compare_sandhi_methods.py`](https://github.com/gasyoun/kosha/blob/main/scripts/compare_sandhi_methods.py) (method C) already benchmarked as near-perfect, far above vidyut-cheda (method B). This is the concrete "different signal" [§1](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) gestured at — measured, and still not enough *without context*.
+> **Source:** [RESULTS_LOG 20-07-2026](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md) · H1349 wave 3 · `claude-opus-4-8`
 
 ---
 
