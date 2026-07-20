@@ -1,8 +1,78 @@
 # Laukika-nyāya (Jacob's "Handful of Popular Maxims")
 
-_Created: 13-07-2026 · Last updated: 20-07-2026_
+_Created: 13-07-2026 · Last updated: 21-07-2026_
 
-## Status: partial ingest — 389 of the ≥400-record target, closest yet (97.25%)
+## Status: ✅ target met — 404 records (≥400)
+
+**21-07-2026 `prev_is_prose()` pipeline-wide fix (Sonnet 5 `claude-sonnet-5`,
+H803 continuation, picked up via `/next-task`):** implements the fix
+README.md "Follow-up" #2 had explicitly deferred on 20-07-2026 ("a general
+fix risks silently reshaping body-text boundaries of already-reconciled
+377-set records this session cannot fully re-verify in one pass"). Root
+cause unchanged: `prev_is_prose()` rejected any index-crossref candidate
+whose nearest preceding non-empty line was heavy Devanagari, conflating
+"sits mid-verse-citation" (correctly rejected) with "immediately follows
+a DIFFERENT entry's own closing verse" (an ordinary pattern in this text,
+wrongly rejected). Fix: only reject when that preceding line does NOT
+itself close with a verse-final daṇḍa/double-daṇḍa (।/॥ — trailing OCR
+noise such as quotes, digits, or a parenthetical page ref is tolerated
+after it). See [`tools/build_laukika_nyaya.py`](tools/build_laukika_nyaya.py)'s
+`prev_is_prose()`/`VERSE_CLOSE_TAIL` for the implementation.
+
+Re-running the fixed pipeline alone recovers 27 more headword-boundary
+candidates in the base djvu lane (302 → 329) with **zero existing records
+lost** (verified by diffing the full `good_idx` boundary set before/after).
+Of the 12 hand-verified 20-07-2026 follow-up records, 9 are now recovered
+automatically (their own preceding line does close with a clean daṇḍa); 3
+are not (OCR noise obscures the daṇḍa) and remain a documented manual
+addition in [`tools/apply_h803_followup2_prevprose_fix.py`](tools/apply_h803_followup2_prevprose_fix.py).
+
+Because Sanskrit verse padas commonly end in a daṇḍa even mid-citation,
+the relaxed heuristic also risks false positives — so every one of the 18
+brand-new candidates beyond the known-12 was independently checked by a
+2-stage adversarial review (1 initial classifier + 2 independent
+skeptic/refuters per GENUINE verdict, 50 agent calls total, Sonnet 5
+`claude-sonnet-5` ultracode workflow) against the raw OCR context, the
+book's own back-matter index, and the committed dataset (duplicate
+check):
+
+- **15 confirmed GENUINE new headwords** — previously silently swallowed,
+  verbatim, into the tail of the *preceding* entry's `explanation` field
+  (the exact failure mode this fix targets). Examples: अर्धजरतीयन्यायः
+  (OCR line 1096, was buried inside record #4's runaway 4000-char-capped
+  explanation), स्थूणानिखननन्यायः (3500), वीचीतरङ्गन्यायः (3123).
+- **3 rejected as duplicates** of content already present in the dataset
+  under a different OCR lane/spelling, not fresh discoveries (OCR lines
+  2134, 5844, 9963 — see
+  [`tools/apply_h803_followup2_prevprose_fix.py`](tools/apply_h803_followup2_prevprose_fix.py)
+  docstring for exactly which existing record each duplicates). These 3
+  remain real text-boundary points (correctly stopping their preceding
+  neighbour's runaway explanation) but are never emitted as their own
+  record — the same `BOUNDARY_ONLY_IDXS` convention the 20-07-2026 pass
+  already established.
+
+Combined base djvu lane: 302 + 12 known-good + 15 newly-confirmed = **329**
+records, fed fresh into `reconcile_clean_scan_lane.py` against the
+unchanged 301-record clean-scan lane (this reconciliation, unaffected by
+the fix, needed no re-run) → **404 records**, crossing the ≥400
+Definition-of-Done target for the first time. FEATURES_INDEX registration
+now proceeds (see [`FEATURES_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md)).
+
+One known OCR-fidelity residue worth flagging: record num=398
+(`_ocr_line` 15505) has headword "प्रयोक्तरि" alone — the raw OCR line reads
+"WARS प्रयोक्तरि ॥", where "WARS" is Latin-noise-garbled OCR of the sūtra's
+own opening words (शास्त्रफलं, per Jaimini 3.7.18 — "the fruit promised in
+Scripture is for the performer"); `format_headword()` strips all non-Devanagari
+characters uniformly across every entry (never hand-completes missing
+text, per this dataset's "genuine, non-fabricated extraction" rule), so
+only the surviving tail is kept. Verified genuine (not noise) via the
+back-matter index and its own gloss; flagged here rather than silently
+patched.
+
+Residual follow-up not resolved this pass (see "Follow-up" below for the
+full list): record #207 (चन्दनन्यायः) still absorbs at least two further
+un-recovered maxims (चित्राङ्गनान्यायः, छायापिशाचीन्यायः) whose own
+preceding line likewise lacks a clean daṇḍa.
 
 **20-07-2026 index-crossref follow-up (Sonnet 5 `claude-sonnet-5`, H803 continuation,
 picked up via `/next-task`):** the 19-07-2026 clean-scan pass below claimed "no
@@ -173,13 +243,20 @@ archive.org items handfulofpopular01jacoiala / 02jacoiala / 03jacoiala
     -> tools/build_laukika_nyaya_clean_scan.py    (extraction + real page citation + IAST/SLP1)
     -> data/laukika_nyaya_clean_scan.jsonl        (301 records, this lane alone)
     -> tools/reconcile_clean_scan_lane.py         (merge into the corrected 302 -> 377 records)
+    -> tools/apply_h803_followup2_prevprose_fix.py (21-07: prev_is_prose() fix + verified
+                                                     corrections, 329-record corrected base lane)
+    -> tools/reconcile_clean_scan_lane.py (re-run) (merge -> 404 records, ≥400 target met)
 ```
 
-Regenerate lane 1 (302 records, the original garbled scan, both extraction methods) with:
+Regenerate lane 1 (329 records as of 21-07-2026's `prev_is_prose()` fix — see the
+top-of-file banner; 302 pre-fix — the original garbled scan, both extraction methods) with:
 
 ```sh
 cd LaukikaNyaya/tools
 python build_laukika_nyaya.py
+python apply_h803_followup2_prevprose_fix.py   # verified exclusions/additions -- see its
+                                                # docstring; skip this step to reproduce the
+                                                # pre-21-07 raw 329 (uncorrected) output instead
 ```
 
 Regenerate the clean-scan lane (301 records, real page citations) with:
@@ -190,8 +267,9 @@ python fetch_clean_scan_ocr.py 01 1 80    # repeat for 02 (1-112) and 03 (1-186)
 python build_laukika_nyaya_clean_scan.py
 ```
 
-Neither regenerates `data/laukika_nyaya.jsonl` (the committed 377-record file) directly —
-that file is the one-time reconciliation of both lanes; see "Data" below.
+Neither regenerates `data/laukika_nyaya.jsonl` (the committed 404-record file) directly —
+that file is produced by running `reconcile_clean_scan_lane.py` against the corrected
+329-record base lane + the 301-record clean-scan lane; see "Data" below.
 
 Requires the sibling [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util)
 repo checked out next to this one (`GitHub/sanskrit-util/py`) — used for
@@ -211,28 +289,38 @@ single item's OCR text contains three internal title pages
 were found by grepping the raw OCR text for these markers and are hard-coded
 in `build_laukika_nyaya.py`:
 
-| Part | OCR line range | v1 (13-07) | v2 phrase-tier (19-07) | v3 corrected combine (19-07) |
-|---|---:|---:|---:|---:|
-| First Handful (2nd ed., 1907) | 807 – 3548 | 42 | 51 | 62 |
-| Second Handful (1909) | 3549 – 8664 | 57 | 88 | 109 |
-| Third Handful (1911) | 8665 – end | 52 | 101 | 131 |
-| **Total** | | **151** | **240** | **302** |
+| Part | OCR line range | v1 (13-07) | v2 phrase-tier (19-07) | v3 corrected combine (19-07) | v4 `prev_is_prose()` fix (21-07) |
+|---|---:|---:|---:|---:|---:|
+| First Handful (2nd ed., 1907) | 807 – 3548 | 42 | 51 | 62 | 73 |
+| Second Handful (1909) | 3549 – 8664 | 57 | 88 | 109 | 117 |
+| Third Handful (1911) | 8665 – end | 52 | 101 | 131 | 139 |
+| **Total** | | **151** | **240** | **302** | **329** |
 
 ## Data
 
-[`data/laukika_nyaya.jsonl`](data/laukika_nyaya.jsonl) — **389 records** (up from 377, still
-short of the ≥400 target), one per line, mirroring the IndischeSprueche field style. This
-file is now a **union of THREE independently-produced passes** — not directly reproducible
+[`data/laukika_nyaya.jsonl`](data/laukika_nyaya.jsonl) — **404 records** (up from 389,
+≥400 target met), one per line, mirroring the IndischeSprueche field style. This
+file is now a **union of FOUR independently-produced passes** — not directly reproducible
 by a single script invocation: `tools/build_laukika_nyaya.py` reproduces only the
-302-record djvu lane, `tools/build_laukika_nyaya_clean_scan.py` writes the separate
+raw 329-record djvu lane (21-07-2026's `prev_is_prose()` fix, 302 pre-fix),
+`tools/apply_h803_followup2_prevprose_fix.py` applies the verified exclusions/additions
+on top of that (still 329, but a different 27-record delta vs. the pre-fix 302 — see the
+top-of-file banner), `tools/build_laukika_nyaya_clean_scan.py` writes the separate
 [`data/laukika_nyaya_clean_scan.jsonl`](data/laukika_nyaya_clean_scan.jsonl) (301 records,
 the clean-scan lane on its own, with real page citations throughout) rather than the merged
 file directly, `tools/reconcile_clean_scan_lane.py` documents (and can redo, from a matching
-starting state) the one-time 302+301→377 merge, and
+starting state) the one-time base+clean-scan merge (302+301→377 pre-fix; **re-run 21-07-2026
+against the corrected 329-record base lane → 329+301→404**, the currently-committed state),
 [`tools/append_h803_followup_records.py`](tools/append_h803_followup_records.py) documents
-(and can redo, from a matching starting state) the 20-07-2026 index-crossref follow-up's
-377→389 manual addition (12 records recovered from the djvu source via the newly-discovered
-back-matter index, each individually verified — see the banner above and "Follow-up" below).
+(and can redo, from a matching starting state) the **historical** 20-07-2026 index-crossref
+follow-up's 377→389 manual addition (superseded by the 21-07-2026 pipeline fix, which
+auto-recovers 9 of those same 12 records and folds the remaining 3 in earlier in the chain —
+kept as an audit trail, not re-run), and
+[`tools/apply_h803_followup2_prevprose_fix.py`](tools/apply_h803_followup2_prevprose_fix.py)
+documents (and can redo, from a matching starting state) the 21-07-2026 `prev_is_prose()`
+fix's verified exclusions (3 duplicates of already-existing content) and residual manual
+additions (the 3 known-good records the fix still can't auto-recover) — see the banner
+above and "Follow-up" below for the full adversarial-verification methodology.
 
 ```json
 {
@@ -630,18 +718,15 @@ dropped.
    result: `fetch=False` on all three) — this is now confirmed a genuine per-leaf
    gap across two independent sessions, not transient. Do not re-attempt without a new
    angle (a different archive.org mirror, or a manual download).
-2. **Fix `prev_is_prose()` in `build_laukika_nyaya.py`'s `index_crossref_pass()`
-   pipeline-wide** (root-caused 20-07-2026, see banner above) — it currently rejects
-   any candidate headword whose immediately-preceding line is heavy Devanagari prose,
-   which conflates "sits mid-citation" (correctly rejected) with "immediately follows a
-   DIFFERENT entry's own closing verse" (a real heading, wrongly rejected). 12 records
-   were recovered THIS session by hand-checking candidates individually against this
-   exact failure mode; a proper fix (e.g. requiring the preceding heavy-Devanagari line
-   to itself lack a closing `॥`/verse-final marker before treating it as "mid-citation")
-   would recover the same class automatically, but needs a full pipeline re-run +
-   re-diff against the current 389 to verify it does not also shift any
-   already-reconciled record's body boundary — not attempted this session due to that
-   verification cost.
+2. ✅ **DONE 21-07-2026: fixed `prev_is_prose()` in `build_laukika_nyaya.py`'s
+   `index_crossref_pass()` pipeline-wide** — see the top-of-file banner for the full
+   before/after diff, adversarial-verification methodology, and the resulting 389→404
+   count. Residual sub-item NOT fully resolved: record #207 (चन्दनन्यायः) still absorbs
+   at least two further un-recovered maxims (चित्राङ्गनान्यायः, छायापिशाचीन्यायः) whose
+   own preceding line likewise lacks a clean daṇḍa (the same limitation that leaves 3 of
+   the original known-12 unrecoverable automatically) — a future session could hand-verify
+   and split these out the same way `apply_h803_followup2_prevprose_fix.py`'s
+   `RESIDUAL_MANUAL_IDXS` does for the 3 known-good stragglers.
 3. **Systematic phrase-tier recall audit** (see "Why 377, not ≥400" above) — still
    applies; only the NAMED-tier (`न्याय`-suffixed) half of the newly-found index was
    cross-referenced this session (`tools/extract_index_cross_reference.py` filters to
@@ -670,11 +755,7 @@ dropped.
    [SERVER_OUTAGES.md](https://github.com/gasyoun/Uprava/blob/main/SERVER_OUTAGES.md) first)
    — superseded in practice by using the clean-scan source instead, but would let a future
    session verify whether `YKTn_...` itself has entries neither alternate source recovered.
-7. **FEATURES_INDEX.md registration** — hold until either ≥400 (389/400 = 97.25%, the
-   closest yet) or an explicit reduced-scope sign-off (MG `@DECIDE`) accepting 389 as
-   final. Given items 2-4 above are concrete and not yet exhausted (unlike the
-   377-record state, where the residual gap really did look like a source ceiling),
-   a reduced-scope sign-off is premature until at least item 2 (the `prev_is_prose()`
-   fix) is attempted.
+7. ✅ **DONE 21-07-2026: FEATURES_INDEX.md registration** — 404/400 ≥ 400 target met (see
+   the top-of-file banner); registered as a new F-series row (Text collections).
 
 _Dr. Mārcis Gasūns_
