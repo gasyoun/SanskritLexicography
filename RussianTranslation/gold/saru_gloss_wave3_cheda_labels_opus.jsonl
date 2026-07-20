@@ -1,0 +1,40 @@
+{"id":0,"seg_verdict":"correct","gloss_verdict":"partial","note":"sahadeva+ca legit sandhi split (sahadevaH+ca); but head is particle ca=и, real content Sahadeva survives only in chain"}
+{"id":1,"seg_verdict":"correct","gloss_verdict":"correct","note":"sveta+uzniza = white+turban, real bahuvrihi; gloss белый+тюрбан correct"}
+{"id":2,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"atula=a+tula (incomparable); split a+ula with ula=jackal is spurious, meaning garbled"}
+{"id":3,"seg_verdict":"correct","gloss_verdict":"wrong","note":"triH nizAyAm = thrice in night; split tris+niSA correct but niSA glossed острыми (sharp) instead of night"}
+{"id":4,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"divyakalpa=divya+kalpa; shattered into div+aj+alpa, meaning invented"}
+{"id":5,"seg_verdict":"correct","gloss_verdict":"partial","note":"cintayitum arhasi = you ought to think; cint+arh roots captured; чейн conveys should+think, размышлениях nominalized"}
+{"id":6,"seg_verdict":"wrong","gloss_verdict":"partial","note":"bahu+upakaraNa (noun means/resources); head given as verb root upaskf; help-sense loosely survives"}
+{"id":7,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"aha+ibhya arbitrary split; дни+подданных incoherent, no real compound"}
+{"id":8,"seg_verdict":"correct","gloss_verdict":"correct","note":"tilaSaH kRta = made into pieces; tilaSas+kf correct, в куски+сделал right"}
+{"id":9,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"SokAtiga=Soka+atiga (transcended grief); Suc root for member + atiga glossed 'не внемлющем' wrong"}
+{"id":10,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"subrata=su+vrata (of good vows); svap+ram (sleep+delight) totally spurious"}
+{"id":11,"seg_verdict":"correct","gloss_verdict":"partial","note":"triSiras+man/mata split ok; Trisiras retained but head man=считаю for mata is off"}
+{"id":12,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"pauravAH patronymic plural, single word; pA+u+u shatter into root+particles, garbage"}
+{"id":13,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"Sakra-purogama (led by Indra); shattered into 5 members Sak+f+pA+a+gam, nonsense"}
+{"id":14,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"purI+dvAra = city gate; split pF+i+vf (fill+go+cover) completely wrong"}
+{"id":15,"seg_verdict":"wrong","gloss_verdict":"partial","note":"mahAsena real but +as (быть) is ending mis-parsed as root; head 'есть' misrepresents"}
+{"id":16,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"bhAva+nirvftti; split BU+avani+vft with avani=earth mis-parse of nir-vftti"}
+{"id":17,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"bhAnavIyAH+ca; over-shattered BA+o+i+ca, head is particle ca=и"}
+{"id":18,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"Sata+dhAra (hundred-streamed); split SataDA+f with f spurious from -aH ending"}
+{"id":19,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"avyo vArezu two words (wool, in-filters); split u+vf (particle+cover) unrelated"}
+{"id":20,"seg_verdict":"wrong","gloss_verdict":"partial","note":"cApa+hasta (bow-in-hand); mis-split ca+apahasta drops hand; bow sense garbled in chain"}
+{"id":21,"seg_verdict":"correct","gloss_verdict":"correct","note":"na+ucchvas = not breathing; не+дышит correct"}
+{"id":22,"seg_verdict":"wrong","gloss_verdict":"partial","note":"rAma(name)+ambA; ram root (delight) wrong for Rama; mother retained"}
+{"id":23,"seg_verdict":"correct","gloss_verdict":"correct","note":"AviH kfNoti = makes manifest; Avis+kf correct, явными+сделал right"}
+{"id":24,"seg_verdict":"wrong","gloss_verdict":"partial","note":"prabhAsvant = prabhA+vant suffix (radiant), single derived word; shattered praBA+av+day; сияние survives"}
+{"id":25,"seg_verdict":"wrong","gloss_verdict":"partial","note":"asmad+vAkya (from our words); asmad garbled to a+maT; vac=said keeps speech sense, 'our' lost"}
+{"id":26,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"taijasa=derived from tejas (fiery), single word; split tA+yaj+a nonsense, head a=о"}
+{"id":27,"seg_verdict":"wrong","gloss_verdict":"partial","note":"samrAjau dual of samraj (two sovereigns); u spurious dual ending as head=и; king survives"}
+{"id":28,"seg_verdict":"correct","gloss_verdict":"correct","note":"tAM camUm = that army; tA(tad)+camU correct, эти+войско right"}
+{"id":29,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"paura (citizen) missed entirely; pA+u+as shatter, head 'есть' garbage"}
+{"id":30,"seg_verdict":"correct","gloss_verdict":"correct","note":"mahAn doza = great fault; mah+doza correct, великого+зло right"}
+{"id":31,"seg_verdict":"wrong","gloss_verdict":"partial","note":"azwau angAni = eight limbs; anga=limb right but 'eight' mis-lemmatized as aS/az=достигли"}
+{"id":32,"seg_verdict":"wrong","gloss_verdict":"partial","note":"mokAjina unclear; muc(release) member dubious, ajina=hide/шкуры plausibly the real head"}
+{"id":33,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"puNya+saMbhAra+sandhAyin; shattered into 5, only puNya right, rest garbled"}
+{"id":34,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"druma+varza (tree-rain); mis-split dru+avarza gives avarza=drought, opposite meaning"}
+{"id":35,"seg_verdict":"correct","gloss_verdict":"correct","note":"vfjina+agra both real members; кривое+вначале acceptable (foremost/tip of crookedness)"}
+{"id":36,"seg_verdict":"wrong","gloss_verdict":"partial","note":"yoga+samanvita; split yuj+a+anvi; anvi loosely maps to samanvita, yoga sense loose"}
+{"id":37,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"Aditya+sahita; split a+i+ahita drops sa-, ahita=enemy opposite of sahita=accompanied"}
+{"id":38,"seg_verdict":"wrong","gloss_verdict":"partial","note":"unmukhau dual, single word; u spurious dual ending as head=и; unmukha loosely glossed"}
+{"id":39,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"veda+adhikAra+hIna (deprived of Veda-right); shattered, ahIna=не лишенных is opposite of hIna"}

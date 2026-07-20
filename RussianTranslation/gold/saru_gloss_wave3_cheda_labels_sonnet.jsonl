@@ -1,0 +1,40 @@
+{"id":0,"seg_verdict":"correct","gloss_verdict":"partial","note":"sahadeva+ca real split (sandhi visarga+c->śc); head=ca 'and' is a stray particle, not a true compound head"}
+{"id":1,"seg_verdict":"correct","gloss_verdict":"correct","note":"śveta+uṣṇīṣa, sandhi a+u->o matches; 'white turban' correct bahuvrihi sense"}
+{"id":2,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"a+ula drops the 't' of ātula (true a+tula 'matchless'); head gloss itself flagged '?' (jackal), unrelated"}
+{"id":3,"seg_verdict":"correct","gloss_verdict":"wrong","note":"tris+niśā correct (sandhi s+n->r); but niśā='night' mistranslated as 'sharp' (confused with niśita)"}
+{"id":4,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"div+aj+alpa garbled; true divyakalpa=divya+kalpa; chain 'heaven+drove out+little' is nonsense"}
+{"id":5,"seg_verdict":"correct","gloss_verdict":"correct","note":"cintayitum arhasi is two words, not a compound, but roots cint/arh correctly recovered; 'ought to think' conveyed"}
+{"id":6,"seg_verdict":"wrong","gloss_verdict":"correct","note":"upakaraṇa derives from plain upa+kṛ (no s-augment); 'upaskf' is a different real root wrongly picked, but gloss 'much help' still conveys correct sense"}
+{"id":7,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"aha+ibhya shows no a+i->e sandhi (hiatus kept), implausible boundary; chain 'day+noble' incoherent"}
+{"id":8,"seg_verdict":"correct","gloss_verdict":"correct","note":"tilaśas+kṛ matches source 'tilaśaḥ kṛta' exactly; 'cut into pieces+made' correct"}
+{"id":9,"seg_verdict":"correct","gloss_verdict":"partial","note":"śuc/śoka+atiga plausible root split; atiga='surpassing/overcoming' loosely rendered as 'not heeding'"}
+{"id":10,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"svap+ram does not reconstruct subrata (=su+vrata); 'sleeps+rejoice' unrelated to 'good vow'"}
+{"id":11,"seg_verdict":"correct","gloss_verdict":"correct","note":"triśiras+man, sandhi -as+m->-om matches; 'Trishiras considered/regarded' reasonable"}
+{"id":12,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"pA+u+u garbles paurava/pauravāḥ, doubled meaningless 'u'; chain 'protect+and+and' nonsense"}
+{"id":13,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"garbled decomposition of śakrapurogama; misses real members śakra/puraḥ/gama; chain incoherent"}
+{"id":14,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"pf+i+vf omits the 'd' of purīdvāra entirely, does not reconstruct surface; chain unrelated to 'city gate'"}
+{"id":15,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"mahāsena+as doesn't cleanly reconstruct trailing -sa; 'Mahasena is' is not a coherent compound gloss"}
+{"id":16,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"BU+avani+vf inserts spurious 'avani'(earth); true bhāvanirvṛtti=bhāva+nirvṛtti; chain nonsensical"}
+{"id":17,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"BA+o+i+ca garbled, misses bhānu (sun) entirely; head=ca stray particle, chain incoherent"}
+{"id":18,"seg_verdict":"wrong","gloss_verdict":"partial","note":"wrong boundary śatadhā+ṛ instead of real śata+dhāra ('hundred-edged'); chain vaguely evokes hundred+clashing but literal sense wrong"}
+{"id":19,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"u+vf unrelated to real phrase 'avyo vāreṣu' (sheep-wool sieves); chain 'and+surrounded' unrelated"}
+{"id":20,"seg_verdict":"wrong","gloss_verdict":"partial","note":"wrong boundary ca+apahasta instead of real cāpa+hasta ('bow in hand'); head coincidentally glossed 'bow' but 'hand' lost and 'and' spurious"}
+{"id":21,"seg_verdict":"correct","gloss_verdict":"correct","note":"na+ucchvas, sandhi a+u->o matches; 'not breathing' correct"}
+{"id":22,"seg_verdict":"correct","gloss_verdict":"partial","note":"rāma+ambā dual with correct fem-ā dual shortening before -yoḥ; 'mother' correct but 'ram' mistranslated as verb 'rejoice' instead of name Rāma"}
+{"id":23,"seg_verdict":"correct","gloss_verdict":"correct","note":"āvis+kṛ matches source 'āviḥ kṛṇoti'; 'made manifest' correct"}
+{"id":24,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"av+day does not correspond to the possessive suffix -vant in prabhāsvant; chain incoherent"}
+{"id":25,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"a+maT does not correspond to pronoun stem asmad ('our'); chain 'oh+stole+said' unrelated to 'from our speech'"}
+{"id":26,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"tA+yaj+a is a false etymology; real taijasa derives from tejas, not yaj; head=a stray particle, chain incoherent"}
+{"id":27,"seg_verdict":"wrong","gloss_verdict":"partial","note":"dual ending -au mistaken for separate word 'u'='and'; samrāj='sovereign' correct but ending mistranslated as conjunction"}
+{"id":28,"seg_verdict":"correct","gloss_verdict":"correct","note":"tā+camū matches source 'tāṃ camūm' (sandhi m+c->ṃc); 'that army' correct sense"}
+{"id":29,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"pA+u+as same garbling pattern as id12, doesn't reconstruct paura; chain nonsensical"}
+{"id":30,"seg_verdict":"correct","gloss_verdict":"correct","note":"mah(ān)+doṣa matches 'mahāndoṣa'; 'great evil/fault' correct"}
+{"id":31,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"aS+aNga drops the -ṭā- of aṣṭau, truncates the numeral 'eight'; chain 'attained+body' misses 'eight limbs' sense"}
+{"id":32,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"muc->moka lacks the expected ṣ of mokṣa, incoherent compound sense; likely OCR-mangled mṛgājina ('deerskin'); chain incoherent"}
+{"id":33,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"loses sambhāra/sandhāyin entirely, replaced by unrelated bhū/ras/dhī roots; chain incoherent"}
+{"id":34,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"dru+avarza drops the 'm' of druma, does not reconstruct surface; chain unrelated to 'tree/rain'"}
+{"id":35,"seg_verdict":"correct","gloss_verdict":"correct","note":"vṛjina+agra, sandhi a+a->A matches; 'crooked+top/beginning' reasonable compound sense"}
+{"id":36,"seg_verdict":"wrong","gloss_verdict":"partial","note":"spurious filler 'a'='oh' inserted as a member, missing the sam- prefix of samanvita; 'yoga+follows' loosely conveys 'endowed with'"}
+{"id":37,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"a+i+ahita loses āditya ('sun') entirely and yields ahita ('hostile'), opposite of true sahita ('accompanied by'); chain wrong/inverted"}
+{"id":38,"seg_verdict":"wrong","gloss_verdict":"partial","note":"dual ending -au mistaken for separate word 'u'='and', same pattern as id27; unmukha as 'eager/desirous' plausible secondary sense, but head 'and' spurious"}
+{"id":39,"seg_verdict":"wrong","gloss_verdict":"wrong","note":"wrong boundary turns hīna into ahīna, inverting the meaning (true vedādhikārahīna = 'devoid of right to Veda'); also garbles adhikāra into aDika+f"}

@@ -4,6 +4,23 @@ _Created: 09-07-2026 · Last updated: 20-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 20-07-2026 — Sa→Ru gloss layer, wave-3 coverage spike: vidyut-cheda NO-GO (H1349 W3)
+
+Tried recovering the 78,842 unresolved forms via `vidyut.cheda` compound segmentation
+(D7 reuse). **Measured NO-GO.** A strict gate (≥2 tokens + every member glossable,
+[`src/build_compound_split.py`](src/build_compound_split.py)) recovers 28,673 forms (36.4% of
+unresolved / 55,008 tokens) — but a 2-judge panel (Opus 4.8 `claude-opus-4-8` + Sonnet 5
+`claude-sonnet-5`) on 40 gated recoveries scored segmentation **28% both-correct / 72%
+either-wrong**, gloss **18% both-correct / 60% either-wrong / 40% acceptable**. Against the
+wave-2 baseline (85.3% gloss) that is a catastrophic regression — ~half the recoveries are
+outright wrong. Root cause: vidyut-cheda is a *running-text* segmenter; on isolated OOV forms
+it shatters inflected/dual/plural words into stem + spurious glossable particle (`sahadevaśca`
+→ `sahadeva`+`ca`, head "и"). **Decision: not wired in** — the 85% layer stays unregressed;
+the 78,842 stay an honest coverage gap. Recommended path (backlog): the DharmaMitra **neural**
+segmenter over the aligned *verse text*, which kosha's `compare_sandhi_methods.py` already
+benchmarked as near-perfect and far above vidyut-cheda. Full write-up:
+[`gold/saru_gloss_wave3_cheda_coverage.md`](gold/saru_gloss_wave3_cheda_coverage.md).
+
 ## 20-07-2026 — Sa→Ru gloss layer, measured precision (H1349 wave 2)
 
 First **accuracy** measurement of the gloss layer (every prior number was coverage).
