@@ -401,26 +401,51 @@ def materialize_requeue(ctx, origin_lease_id, run=None):
         pending = lease.get('pending_requeue') or {}
         kind = ('transient' if pending.get('transient')
                 else 'defect' if pending.get('defect') else None)
-        if kind is None:
-            raise SystemExit('bounded_staged_run: lease %s has no pending requeue backlog '
-                             'to materialise' % origin_lease_id)
-        prep = run(
-            [sys.executable, os.path.abspath(ctx.coordinator), 'prepare-requeue',
-             origin_lease_id, '--%s' % kind],
-            cwd=os.path.abspath(ctx.cwd), text=True, encoding='utf-8', capture_output=True)
-        if prep.returncode:
-            raise SystemExit('bounded_staged_run: prepare-requeue --%s failed for %s: %s'
-                             % (kind, origin_lease_id, (prep.stderr or prep.stdout)[-800:]))
-        with open(ctx.coord_state_path, encoding='utf-8') as f:
-            state = json.load(f)
-        lease = _lease_by_id(state, origin_lease_id) or {}
+        if kind is not None:
+            prep = run(
+                [sys.executable, os.path.abspath(ctx.coordinator), 'prepare-requeue',
+                 origin_lease_id, '--%s' % kind],
+                cwd=os.path.abspath(ctx.cwd), text=True, encoding='utf-8', capture_output=True)
+            if prep.returncode:
+                raise SystemExit('bounded_staged_run: prepare-requeue --%s failed for %s: %s'
+                                 % (kind, origin_lease_id, (prep.stderr or prep.stdout)[-800:]))
+            with open(ctx.coord_state_path, encoding='utf-8') as f:
+                state = json.load(f)
+            lease = _lease_by_id(state, origin_lease_id) or {}
+        # kind None (no preparable backlog): fall through to the H1386 C2 resume check
+        # below instead of raising here -- a promoted_partial whose final lane's attempt
+        # completed and promoted is a crash-resume, not an unmaterialisable backlog.
     if lease.get('state') != 'requeue_prepared':
+        # H1386 C2: a post-audit origin state with a COMPLETED ::rqNN attempt job is a
+        # RESUME, not a wedge. The crash class: the rq item recorded (ready/ready_partial)
+        # or even promoted, then the in-loop promote failed transiently (DirLock busy, the
+        # all-or-nothing batch refusal) or the process died between record and checkpoint,
+        # so --resume re-pulls the checkpointed rq item. Returning the existing attempt job
+        # id lets the drain loop break immediately and the A2 rescue promote land the
+        # recorded-but-unpromoted cards, exactly as it does for plain windows. Pre-fix this
+        # raised on EVERY resume -- a permanent wedge only a hand-run promote could clear.
+        if lease.get('state') in ('ready', 'ready_partial', 'promoted', 'promoted_partial'):
+            rq_id = _completed_requeue_job(ctx, origin_lease_id)
+            if rq_id:
+                return rq_id
         raise SystemExit('bounded_staged_run: lease %s is %r after requeue materialisation '
-                         '(expected requeue_prepared) -- cannot run the rework'
+                         '(expected requeue_prepared, or a post-audit state with a completed '
+                         '::rq attempt job to resume) -- cannot run the rework'
                          % (origin_lease_id, lease.get('state')))
     return mao.cmd_import_requeue(argparse.Namespace(
         db=ctx.db, coord_dir=ctx.coord_dir, cwd=ctx.cwd,
         lease_id=origin_lease_id, max_attempts=2))
+
+
+def _completed_requeue_job(ctx, origin_lease_id):
+    """The most recent COMPLETED requeue-attempt job ('<origin>::rqNN-<kind>') for this
+    origin lease, or None. GLOB (not LIKE) so '_' in lease ids stays literal."""
+    db = mao.connect(ctx.db)
+    row = db.execute(
+        "SELECT external_id FROM jobs WHERE external_id GLOB ? AND state='done' "
+        "ORDER BY id DESC LIMIT 1", (origin_lease_id + '::rq*',)).fetchone()
+    db.close()
+    return row['external_id'] if row else None
 
 
 def make_run_window(ctx):
