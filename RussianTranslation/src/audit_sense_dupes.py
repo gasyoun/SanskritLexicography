@@ -81,8 +81,16 @@ def find_results(o):
 
 
 def norm(tag):
-    """Normalize a sense tag so 'caus. 2' and plain '2' stay DISTINCT but '2)'=='2'=='2 '."""
-    t = (tag or '').strip().lower().replace('〉', '').rstrip(')').strip()
+    """Normalize a sense tag so 'caus. 2' and plain '2' stay DISTINCT but '2)'=='2'=='2 '=='2.'.
+
+    P5 (H1422): the trailing-punctuation strip covered ')'/'〉' but not '.', so '1.' and '1'
+    hashed to different buckets and a real cross-part duplicate with mismatched locator
+    punctuation was missed. Strips a trailing '.' too, repeatedly with ')'/whitespace so
+    order (e.g. '2.)' or '2).') doesn't matter -- an INTERIOR '.' (e.g. 'caus. 2') is
+    untouched, since only trailing punctuation is stripped."""
+    t = (tag or '').strip().lower().replace('〉', '')
+    while t and t[-1] in ').':
+        t = t[:-1].rstrip()
     return re.sub(r'\s+', ' ', t)
 
 

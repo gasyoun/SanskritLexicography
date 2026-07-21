@@ -1697,6 +1697,22 @@ def test_lang_parity_hash_crlf_independent():
             fail('file_sha256 is not CRLF/LF-independent: %s != %s' % (lf_hash, crlf_hash))
 
 
+def test_sense_dupe_norm_strips_trailing_period():
+    """P5 (H1422): norm() stripped a trailing ')'/'〉' but not '.', so tag '1.' and plain
+    '1' hashed to different buckets and a real cross-part duplicate with mismatched
+    locator punctuation ('1.' vs '1)' vs '1') was missed by the dupe check. An INTERIOR
+    period ('caus. 2') must stay distinct from plain '2' -- only trailing punctuation is
+    normalized away."""
+    from audit_sense_dupes import norm
+    for variant in ('1', '1.', '1)', '1 ', '1.)', '1).'):
+        if norm(variant) != '1':
+            fail('norm(%r) = %r, expected \'1\' -- trailing punctuation must normalize '
+                 'identically' % (variant, norm(variant)))
+    if norm('caus. 2') == norm('2'):
+        fail('norm() must keep \'caus. 2\' distinct from plain \'2\' -- an interior period '
+             'is meaningful, only trailing punctuation should be stripped')
+
+
 def test_sense_dupe_batch_override():
     """The cross-part sense-duplicate exemption must be reproducible from the committed
     rootmap_overrides.json, NOT from a gitignored hand-edited rootmap (PROCESS_AUDIT rec 15)."""
@@ -1851,6 +1867,41 @@ def test_en_gate_dup_has_teeth():
             os.remove(report_path)
 
 
+def test_run_py_survives_timeout_and_oserror():
+    """P6 (H1422): audit_window.run_py wrapped subprocess.run with no try/except -- a
+    TimeoutExpired or OSError re-raised straight through collect_cards/root_glue_translated
+    and crashed the whole audit with no report or requeue. main()'s gate loop already
+    handles a non-{0,1} returncode gracefully (appends to `crashed`, still reports+requeues)
+    -- so run_py must convert either exception into that same result shape instead of
+    letting it propagate. Monkeypatches subprocess.run in the audit_window module (no mock
+    lib used elsewhere in this file) to force each exception without a real 1800s wait."""
+    import audit_window as aw
+    real_run = aw.subprocess.run
+
+    def _raise_timeout(*a, **kw):
+        raise subprocess.TimeoutExpired(cmd=a[0] if a else 'x', timeout=1800,
+                                        output='partial out', stderr='partial err')
+
+    def _raise_oserror(*a, **kw):
+        raise OSError('interpreter not found')
+
+    try:
+        aw.subprocess.run = _raise_timeout
+        res = aw.run_py(['fake_script.py'])
+        if res['returncode'] != 124:
+            fail('run_py must return returncode=124 on TimeoutExpired, got %r' % res['returncode'])
+        if not isinstance(res.get('stdout'), str) or not isinstance(res.get('stderr'), str):
+            fail('run_py must still return string stdout/stderr on TimeoutExpired: %r' % res)
+
+        aw.subprocess.run = _raise_oserror
+        res = aw.run_py(['fake_script.py'])
+        if res['returncode'] in (0, 1):
+            fail('run_py must not report a success/soft-fail returncode (0 or 1) on OSError, '
+                 'got %r' % res['returncode'])
+    finally:
+        aw.subprocess.run = real_run
+
+
 def test_ru_gate_fails_loud_on_unparseable_child():
     """H169 defect 2: the RU gate used to recover child-auditor verdicts by regex-scraping
     prose stdout (`| flagged: ...`) — any wording drift in audit_translation.py /
@@ -1922,6 +1973,21 @@ def test_markup_loss_soft_flag_ru():
     kept = risks('{%herfallen über%}', 'нападать на ({%herfallen über%})')
     if any(r['id'] == 'markup_wrapper_dropped' for r in kept):
         fail('markup_wrapper_dropped wrongly fired on a retained side-by-side {%..%} echo')
+
+
+def test_p8_markup_loss_not_masked_by_unrelated_div():
+    """P8 (H1422): MARKUP-LOSS used to sum {%..%} gloss-wrapper and <div> counts into ONE
+    combined number before comparing, so a genuinely dropped gloss wrapper could be masked
+    by an unrelated <div> gained in the english (net count unchanged: source 2 gloss/0 div
+    vs output 0 gloss/2 div -> 2 == 2, no flag). Counting each marker class separately
+    catches this; test_markup_loss_soft_flag_en (below) covers the un-masked ordinary case
+    end-to-end through the CLI."""
+    from audit_window_en import audit_sense
+    _, soft = audit_sense('{%to fall upon%} {%to attack%}',
+                          '<div n="1">to fall upon</div><div n="2">to attack</div>')
+    if not any(f.startswith('MARKUP-LOSS') for f in soft):
+        fail('MARKUP-LOSS must fire when both {%..%} wrappers are dropped, even though an '
+             'unrelated <div> count masks the OLD combined-sum comparison: %r' % soft)
 
 
 def test_markup_loss_soft_flag_en():
@@ -1998,6 +2064,26 @@ def test_h1152_guard3_xref_only_and_nws_de_locked():
     _, soft_san = audit_sense('{%to speak%} {#vac#}', 'to speak {#vac#}')
     if 'NWS-DE-LOCKED' in soft_san:
         fail('NWS-DE-LOCKED wrongly fired on genuine Sanskrit inside a {#..#} span')
+
+
+def test_p7_missing_en_not_fired_on_xref_only_residue():
+    """P7 (H1422): has_gloss used to fire on ANY non-empty prose residue, so a genuinely
+    non-target sense whose German is only a cross-reference apparatus ('Vgl. {#foo#} fgg.')
+    hard-failed MISSING-EN the moment its english field was correctly left empty (there was
+    nothing to translate). The neighboring test above only ever exercises xref rows WITH a
+    non-empty english, which can never trigger MISSING-EN regardless of has_gloss -- this
+    test is the one that actually reproduces the defect."""
+    from audit_window_en import audit_sense
+    hard, soft = audit_sense('Vgl. {#foo#} fgg.', '')
+    if 'MISSING-EN' in hard:
+        fail('MISSING-EN must not fire on a pure cross-reference row with empty english '
+             '(nothing was ever a translation target here): %r' % hard)
+    if 'XREF-ONLY' not in soft:
+        fail('XREF-ONLY should still fire on this row')
+    # CONTROL: a real gloss with empty english IS a genuine MISSING-EN.
+    hard_real, _ = audit_sense('{%to speak%}', '')
+    if 'MISSING-EN' not in hard_real:
+        fail('MISSING-EN must still fire when real gloss prose exists and english is empty')
 
 
 def test_ru_coverage_denominator_not_silently_exempt():
@@ -2531,6 +2617,25 @@ def test_degenerate_passthrough_accounted():
             fail('a degenerate pass-through key must not also enter an agent translation lane')
         if 'const DEGENERATE_RESOLVED' not in js or 'degenerate_passthrough: true' not in js:
             fail('generated harness must emit explicit degenerate pass-through rows')
+
+
+def test_degenerate_passthrough_no_german_in_target():
+    """P3 (H1422): a degenerate cross-reference stub has nothing translatable, so the
+    target-language field must stay empty rather than silently carrying verbatim German
+    (e.g. 'vgl.', 's.', 'ff.' -- particles the german_residue_scan/GERMAN_RESIDUE wordlists
+    do not even cover, so the leak was previously undetectable by any existing audit)."""
+    import gen_opt_harness2 as gh
+    for field in ('russian', 'english'):
+        card = gh.degenerate_passthrough_card('ab~~h0_zz_pw', '=== LAYER: PW ===\n\nvgl. {#agni#}',
+                                              '[]', field)
+        if not card:
+            fail('inline vgl.-stub should qualify for conservative degenerate pass-through')
+        sense = card['records'][0]['senses'][0]
+        if sense.get(field) != '':
+            fail('degenerate pass-through target field %r must be empty, got %r'
+                 % (field, sense.get(field)))
+        if 'vgl' not in sense.get('german', ''):
+            fail('the german field must still carry the original source text for editorial reference')
 
 
 def test_degenerate_passthrough_rejects_glosses():
@@ -4313,6 +4418,37 @@ def test_cit_split_never_tears_open_span():
         if text.count('{#') != text.count('#}'):
             fail('a returned fragment has an unbalanced {#/#} pair — Sanskrit span torn '
                  'across a cut: %r' % text)
+
+
+def test_sense_split_never_tears_open_span():
+    """P4 (H1422): autosplit_requeue._blocks detects sense boundaries purely from lines
+    matching _SENSE ("1)", "2)", ...), with no awareness of an open <ls>/{#...#} span --
+    unlike _cit_parts (H155, see test_cit_split_never_tears_open_span above), which already
+    defers a citation-batch cut until the accumulated text is span-balanced. A citation that
+    spans several lines can contain an interior line shaped like "2)" (a locator INSIDE the
+    span, not a real second sense), which _blocks used to accept as a genuine boundary and
+    tear the span across two (sub)sense blocks. Fixed by applying the same _span_open
+    deferral to sense-boundary detection: a candidate boundary is skipped (merged into the
+    current block) while the text since the last accepted boundary is still open."""
+    import autosplit_requeue as ar
+    raw = (
+        '1) first sense <ls n="a">start of citation\n'
+        '2) middle of citation still open</ls> end of first sense really\n'
+        '3) second real sense\n'
+    )
+    b = ar._blocks(raw)
+    if b is None:
+        fail('fixture should detect 2 real sense boundaries (1+3), got none')
+    header, blocks = b
+    if len(blocks) != 2:
+        fail('interior "2)" locator inside an open <ls> span must not be treated as a real '
+             'sense boundary -- expected 2 blocks, got %d: %r' % (len(blocks), blocks))
+    for blk in blocks:
+        if blk.count('<ls') != blk.count('</ls>'):
+            fail('a sense block has an unbalanced <ls>/</ls> pair — span torn across a '
+                 'sense-tier cut: %r' % blk)
+    if '3) second real sense' not in blocks[-1]:
+        fail('the genuine third sense must survive as its own block: %r' % blocks[-1])
 
 
 def test_cit_split_caps_single_line_monster_sense():
@@ -6832,6 +6968,7 @@ def main():
         test_suggest_tm_does_not_skip_agents,
         test_tm_publication_fixtures_validate,
         test_degenerate_passthrough_accounted,
+        test_degenerate_passthrough_no_german_in_target,
         test_degenerate_passthrough_rejects_glosses,
         test_perf_preflight_small_tm_and_no_tm,
         test_perf_preflight_dense_presplit,
@@ -6865,6 +7002,7 @@ def main():
         test_degenerate_source_identity,
         test_no_fallback_batch_isolation,
         test_cit_split_never_tears_open_span,
+        test_sense_split_never_tears_open_span,
         test_cit_split_caps_single_line_monster_sense,
         test_selfheal_fragment_si_threaded_and_tags_normalized,
         test_heal_lane_target_field_fidelity_wired,
@@ -6889,6 +7027,7 @@ def main():
         test_launch_failure_ledger_rejects_incomplete_entry,
         test_autosplit_topup_targets_and_reassembles,
         test_workflow_payload_nested,
+        test_sense_dupe_norm_strips_trailing_period,
         test_sense_dupe_batch_override,
         test_sense_dupe_cross_level_exempt,
         test_export_translation_dedup,
@@ -6927,12 +7066,15 @@ def main():
         test_nws_fp_suppressed,
         test_en_gate_strict_has_teeth,
         test_en_gate_dup_has_teeth,
+        test_run_py_survives_timeout_and_oserror,
         test_ru_gate_fails_loud_on_unparseable_child,
         test_pwg_mask_latin_cue_behind_ab_tag,
         test_markup_loss_soft_flag_ru,
+        test_p8_markup_loss_not_masked_by_unrelated_div,
         test_markup_loss_soft_flag_en,
         test_en_de_residue_french_guard,
         test_h1152_guard3_xref_only_and_nws_de_locked,
+        test_p7_missing_en_not_fired_on_xref_only_residue,
         test_ru_coverage_denominator_not_silently_exempt,
         test_coverage_gate_multi_layer_and_presplit,
         test_en_residual_coverage_complete,

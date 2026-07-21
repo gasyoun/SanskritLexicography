@@ -119,7 +119,21 @@ _SENSE = re.compile(r'^(?:<div[^>]*>)?\s*(?:—\s*)?(?:\d+|[a-zA-Zα-ωΑ-Ω])\s
 def _blocks(raw):
     """(header, [sense/subsense blocks]) or None if <2 boundaries."""
     lines = raw.split('\n')
-    starts = [i for i, l in enumerate(lines) if _SENSE.match(l.strip())]
+    candidates = [i for i, l in enumerate(lines) if _SENSE.match(l.strip())]
+    if len(candidates) < 2:
+        return None
+    # P4 (H1422): a candidate sense boundary is rejected -- not just deferred within a
+    # block, but skipped as a boundary entirely -- if the text since the last ACCEPTED
+    # boundary still has an open <ls>/{#...#} span (see _span_open). Mirrors the guard
+    # _cit_parts/_dense_line_parts already apply at the citation-batch tier (H155); this
+    # repository never had it at the sense tier, so a multi-line citation whose interior
+    # happens to match _SENSE (a "N)"-shaped locator inside the span, not a real new
+    # sense) could tear the span across two blocks.
+    starts = [candidates[0]]
+    for i in candidates[1:]:
+        if _span_open('\n'.join(lines[starts[-1]:i])):
+            continue
+        starts.append(i)
     if len(starts) < 2:
         return None
     header = '\n'.join(lines[:starts[0]]).rstrip()
