@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-07-20T17:42:33Z",
+ "generated_at": "2026-07-21T10:31:16Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 115,
+  "total": 116,
   "by_importance": {
-   "3": 19,
+   "3": 20,
    "2": 78,
    "1": 18
   },
   "by_origin": {
    "auto": 0,
-   "human": 115
+   "human": 116
   }
  },
  "layers": [
@@ -241,18 +241,18 @@
    "key": "DEAD_ENDS",
    "act": "abandoning an approach",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md",
-   "total": 11,
+   "total": 13,
    "by_importance": {
-    "3": 7,
+    "3": 9,
     "2": 3,
     "1": 0
    },
    "by_origin": {
     "auto": 1,
-    "human": 10
+    "human": 12
    },
    "categories": 4,
-   "interlinks": 10,
+   "interlinks": 12,
    "entries": [
     {
      "title": "§1. Body-text / reverse-dict headword mining — abandoned",
@@ -283,6 +283,18 @@
      "importance": null,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#8b-fitting-a-continuous-locus-index-for-the-full-mahābhārata-against-any-free-bulk-e-text---reopened--done-for-all-18-parvans-the-no-free-vulgate-premise-was-refuted-12-07-2026"
+    },
+    {
+     "title": "§11. vidyut.cheda compound segmentation over isolated OOV forms to grow the Sa→Ru gloss layer — measured NO-GO, not wired in",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#11-vidyutcheda-compound-segmentation-over-isolated-oov-forms-to-grow-the-saru-gloss-layer--measured-no-go-not-wired-in"
+    },
+    {
+     "title": "§12. Deriving a safe SANLOSS `count_source_senses` cap from text structure alone — escalated, no safe fix",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#12-deriving-a-safe-sanloss-countsourcesenses-cap-from-text-structure-alone--escalated-no-safe-fix"
     },
     {
      "title": "§4. Bulk-respell of \"typo\" headword-correction lists — abandoned",
@@ -529,19 +541,19 @@
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md"
  },
  "totals": {
-  "rows": 173,
+  "rows": 175,
   "auto": 120,
-  "human": 53,
+  "human": 55,
   "by_importance": {
-   "3": 20,
+   "3": 22,
    "2": 29,
    "1": 8
   },
   "layers": 7,
-  "entry_rows": 59,
+  "entry_rows": 61,
   "candidates": 6,
   "categories": 20,
-  "interlinks": 54,
-  "findings": 115
+  "interlinks": 56,
+  "findings": 116
  }
 }
