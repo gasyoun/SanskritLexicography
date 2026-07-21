@@ -6966,6 +6966,105 @@ def test_h1283_a6_prep_slice_flattens_batches():
     print('  A6: prep_slice flattens every batch key')
 
 
+def test_h1386_d1_medium50_script_size_cap():
+    """H1386 D1: the medium50 start-today enabler. (1) prep_slice hoists the shared
+    preamble/translation/nws boilerplate into ONE payload-level `prompt_common` instead of
+    duplicating ~12 KB into every card's embedded prompt; (2) prep_slice --chunk N splits a
+    big manifest into N cap-sized sub-payloads (--keys subsets); (3) inject_payload hard-
+    refuses an emitted script over WORKFLOW_SCRIPT_CAP; (4) canonical_audit merges several
+    chunk slice_results into one audit. Pre-fix, a 50-card build blew the 512 KB Workflow
+    scriptPath cap at submission with no earlier warning."""
+    import importlib.util as ilu
+    h1209 = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'h1209')
+
+    def load(name):
+        spec = ilu.spec_from_file_location('h1386_' + name, os.path.join(h1209, name + '.py'))
+        mod = ilu.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return mod
+
+    prep = load('prep_slice')
+    tmp = tempfile.mkdtemp()
+    boiler = 'B' * 4000
+    keys = ['k%02d' % i for i in range(8)]
+    man = {
+        'model': 'claude-sonnet-5', 'field': 'russian',
+        'batches': [[k] for k in keys],
+        'prompt': {'preamble': boiler, 'grammar': 'G', 'translation': boiler, 'nws_rule': 'N'},
+        'inputs': {k: {'skeleton': 'S-%s {T1}' % k, 'portrait': 'P', 'source_senses': 1,
+                       'ls': 0, 'sk': 0} for k in keys},
+        'placeholder_maps': {k: ['<x/>'] for k in keys},
+    }
+    man_path = os.path.join(tmp, 'man.json')
+    with open(man_path, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump(man, f)
+
+    # (1) single payload: boilerplate hoisted once, cards carry card_block, not prompt.
+    out1 = os.path.join(tmp, 'payload.json')
+    prep.write_payloads(man, out1)
+    payload = json.load(open(out1, encoding='utf-8'))
+    if not (payload.get('prompt_common') or '').startswith(boiler):
+        fail('D1: payload must carry the shared boilerplate once as prompt_common')
+    for c in payload['cards']:
+        if 'prompt' in c:
+            fail('D1: per-card prompt still embeds the shared boilerplate')
+        if boiler in (c.get('card_block') or ''):
+            fail('D1: card_block must not duplicate the shared boilerplate')
+    # the reconstructed per-card prompt must be byte-identical to the v2 assembly.
+    want = prep.reconstruct_prompt(man, 'k00')
+    got = payload['prompt_common'] + payload['cards'][0]['card_block']
+    if got != want:
+        fail('D1: prompt_common + card_block must equal the exact production prompt')
+
+    # (2) a >=4-way chunk: every key exactly once, chunk files share prompt_common.
+    outc = os.path.join(tmp, 'chunked.json')
+    chunk_paths = prep.write_payloads(man, outc, chunk=4)
+    if len(chunk_paths) != 4:
+        fail('D1: --chunk 4 must write 4 sub-payloads, got %d' % len(chunk_paths))
+    seen_keys = []
+    for p in chunk_paths:
+        pc = json.load(open(p, encoding='utf-8'))
+        if pc.get('prompt_common') != payload['prompt_common']:
+            fail('D1: chunk payload missing the shared prompt_common')
+        seen_keys += [c['key1'] for c in pc['cards']]
+    if sorted(seen_keys) != sorted(keys) or len(seen_keys) != len(keys):
+        fail('D1: chunking must cover every key exactly once, got %r' % seen_keys)
+    # --keys subset selection
+    outk = os.path.join(tmp, 'subset.json')
+    prep.write_payloads(man, outk, keys=['k03', 'k05'])
+    pk = json.load(open(outk, encoding='utf-8'))
+    if [c['key1'] for c in pk['cards']] != ['k03', 'k05']:
+        fail('D1: --keys must subset the payload to exactly the named cards')
+
+    # (3) inject_payload refuses an over-cap emitted script.
+    inj = load('inject_payload')
+    if not getattr(inj, 'WORKFLOW_SCRIPT_CAP', None):
+        fail('D1: inject_payload must define WORKFLOW_SCRIPT_CAP')
+    tpl_path = os.path.join(tmp, 'tpl.js')
+    with open(tpl_path, 'w', encoding='utf-8', newline='\n') as f:
+        f.write('const PAYLOAD = /*__PAYLOAD__*/ null /*__END__*/\n')
+    big = os.path.join(tmp, 'big.json')
+    with open(big, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump({'cards': [{'key1': 'x', 'card_block': 'Z' * (inj.WORKFLOW_SCRIPT_CAP + 100)}]}, f)
+    try:
+        inj.inject(tpl_path, big, os.path.join(tmp, 'over.js'))
+        fail('D1: inject_payload accepted a script over WORKFLOW_SCRIPT_CAP')
+    except SystemExit:
+        pass
+    inj.inject(tpl_path, out1, os.path.join(tmp, 'ok.js'))   # a small payload still lands
+
+    # (4) canonical_audit merges several chunk slice_results into one result set.
+    ca = load('canonical_audit')
+    half1 = {'slice': ['k00'], 'results': [{'key1': 'k00', 'would_promote': True}],
+             'cards_out': [{'key1': 'k00', 'card': None}]}
+    half2 = {'slice': ['k01'], 'results': [{'key1': 'k01', 'would_promote': False}],
+             'cards_out': [{'key1': 'k01', 'card': None}]}
+    merged = ca.merge_slice_results([half1, half2])
+    if merged['slice'] != ['k00', 'k01'] or len(merged['results']) != 2 \
+            or len(merged['cards_out']) != 2:
+        fail('D1: canonical_audit must merge chunk slice_results into one audit input')
+
+
 def test_degenerate_xref_vocab_single_source():
     """H1425 W2: the cross-reference / degenerate-passthrough vocabulary is ONE shared frozenset,
     consumed by both the RU generation lane (gen_opt_harness2.degenerate_passthrough_card) and the
@@ -7399,6 +7498,7 @@ def main():
         test_h1420_p10_promote_rebuilds_tm_in_finally,
         test_h1283_a5_max_wide_default_bounded,
         test_h1283_a6_prep_slice_flattens_batches,
+        test_h1386_d1_medium50_script_size_cap,
         test_frag_prov_glob_honors_coordinator_dir_c7,
         test_pwg_mask_german_homograph_not_latin_c8,
     ]

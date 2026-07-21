@@ -171,14 +171,28 @@ def audit_card(card_in, inp, pmap, wf_row, field):
     return report
 
 
+def merge_slice_results(chunks):
+    """H1386 D1: merge several chunk slice_results (prep_slice --chunk N runs) into ONE
+    audit input -- concatenated in argument order, so the merged audit covers the whole
+    medium50 slice exactly as a single-run slice_result would."""
+    merged = {'slice': [], 'results': [], 'cards_out': []}
+    for ch in chunks:
+        merged['slice'] += list(ch.get('slice') or [])
+        merged['results'] += list(ch.get('results') or [])
+        merged['cards_out'] += list(ch.get('cards_out') or [])
+    return merged
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('slice_result')
+    ap.add_argument('slice_result', nargs='+',
+                    help='one slice_result.json, or several chunk results to merge (H1386 D1)')
     ap.add_argument('manifest')
     ap.add_argument('--out', default=None)
     a = ap.parse_args()
 
-    res = json.load(open(a.slice_result, encoding='utf-8'))
+    res = merge_slice_results([json.load(open(p, encoding='utf-8'))
+                               for p in a.slice_result])
     man = json.load(open(a.manifest, encoding='utf-8'))
     field = man.get('field') or 'russian'                  # EN manifests carry 'english'
     wf_rows = {r['key1']: r for r in res['results']}
