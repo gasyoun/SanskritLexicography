@@ -32,6 +32,30 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   `promote_en --selftest` (C6 refusal block). Recorded in
   [`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md)
   (`en_dup_hard_gate_20260704`, `promotion_scripts_separate`).
+### Fixed — dead EN card-TM (C3) and rate-limit job-stranding busy-loop (C4) (H1413)
+
+- **C3 — EN whole-card translation memory was 100% dead.** `translation_memory.py build --lang en`
+  wrote each sense's translation under the store **column** name (`FIELD['en']=='en'`) instead of
+  the **card** field name `'english'`, but the serve-side guard (`tm_card_sane`) and the final-card
+  schema require `'english'` — so every EN card-TM hit was silently refused (`sense missing
+  english`) and the EN lane re-translated whole cards it already had (wasted spend; RU was
+  unaffected). Fixed with a single `CARD_FIELD = {'ru': 'russian', 'en': 'english'}` used by both
+  the card builder and the fragment lane (`_FRAG_TRANSLATION_FIELD` now aliases it, so the two
+  can't drift again). Classified SHARED in
+  [`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md).
+- **C4 — a rate-limited job could become permanently unclaimable and busy-loop `staged-run`.**
+  `max_account_orchestrator.py` incremented `attempts` at claim time but the 429/rate-limit path
+  called `finish(…, 'pending', …)` without giving the attempt back (unlike `release_db_claims`), so
+  after `max_attempts` rate-limits a job sat `pending` with `attempts == max_attempts` — never
+  re-selected by `claim` (`WHERE attempts < max_attempts`), never marked `failed` — permanently
+  stranded, and `cmd_staged_run` spun on the un-drainable `pending` count. Fixed by treating a 429
+  as a non-defective attempt (`requeue_rate_limited` decrements `attempts` atomically), plus a
+  no-progress poll backstop so any residual unclaimable-but-pending state polls instead of
+  hot-spinning.
+- Found by the Opus 4.8 (`claude-opus-4-8`) adversarial bug-hunt review (findings C3/C4 of
+  [issue #632](https://github.com/gasyoun/SanskritLexicography/issues/632)). Selftests:
+  `window_selftest` (`test_en_card_tm_serves_english_field_c3`) and
+  `max_account_orchestrator_selftest` (C4 rate-limit block).
 
 ### Added — speed & orchestration audit: bottleneck ledger + verified action map (H1403)
 

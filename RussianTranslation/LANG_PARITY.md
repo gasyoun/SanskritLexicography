@@ -220,10 +220,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "lang is a first-class parameter of the TM address (sha256(lang + ...)); --lang=ru|en both get full reuse.",
+    "note": "lang is a first-class parameter of the TM address (sha256(lang + ...)); --lang=ru|en both get full reuse. C3 (21-07-2026, Opus 4.8 claude-opus-4-8): the reuse was SHARED in address but NOT in the served card — the card-TM builder wrote the EN sense under the store COLUMN name FIELD['en']=='en' instead of the CARD field 'english', so the serve-side tm_card_sane refused 100% of EN card-TM hits ('sense missing english') while RU worked. Fixed by a single CARD_FIELD={'ru':'russian','en':'english'} used by both the card builder and the fragment lane (_FRAG_TRANSLATION_FIELD aliases it), so the two lanes can't drift. Test: window_selftest test_en_card_tm_serves_english_field_c3.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/translation_memory.py": "ec9a1c09f8b73574df00c0026b57fb2d28cb636cf95be66f6cc99b106f13e2ee"
+      "src/pilot/translation_memory.py": "0ff60624486f72f878bc087af18f2ee199edfe403461a12687cddebb73e105fc"
     }
   },
   {
@@ -988,10 +988,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757",
       "src/pilot/headless_worker.py": "4e6fc8ab4bdb7fb32e66def36270635ff51f476905d4ca37827115fad3ca66d3",
-      "src/pilot/max_account_orchestrator.py": "83173d202fc366b958ce51046bad184476fa3b1b0fd5f93a48791a0a78255a8a",
+      "src/pilot/max_account_orchestrator.py": "12fb8c3bcdc8897e7eaff2285e6d32547b11f047b58921169a9736e37a24aa0c",
       "src/pilot/coordinator.py": "1b54827cee5d653c5bd42c9c90a22051e5cb93bbdae958cd919354bc54aefa9d",
       "src/pilot/headless_worker_selftest.py": "8adf980678db843100938045f4057c10d5fb7dc6c2cfe17f936028533e15654c",
-      "src/pilot/max_account_orchestrator_selftest.py": "2eddccb237f0159456b5cab65b3282d7e81b8f4f00f7206c9926ee9430e60f6c",
+      "src/pilot/max_account_orchestrator_selftest.py": "6021af7fa4ff0415936e439290dfa7f8196b12afa4fca0a27b8f704841ebf685",
       "src/pilot/no_pwg_scale_plan.py": "7e4bb02a2f2865a3447afe47cf1f4106209bdc24f403cb6dd2b8c524b6928d63",
       "src/pilot/windows100_selftest.py": "14898dd420cf0736d7dc54064231311844dd6d30205fecd02802f75b5dd1ef38",
       "src/pilot/run_observability.py": "eb21e08ba4f0e7ab7ab5dacf9db4e4d0d38234f2d63385157735ca8d7b8ced61",
@@ -1298,7 +1298,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/card_fields.py": "976c5aa943a35da1691e2ce72e9cb4a14ac53d3bae37f8c68345cc68cb233e2b",
       "src/promote_final_cards.py": "00dec19e62712ca07c9c95516ee8462f509223adecd5661884745091b294b4e9",
-      "src/pilot/translation_memory.py": "ec9a1c09f8b73574df00c0026b57fb2d28cb636cf95be66f6cc99b106f13e2ee",
+      "src/pilot/translation_memory.py": "0ff60624486f72f878bc087af18f2ee199edfe403461a12687cddebb73e105fc",
       "src/pilot/headless_worker.py": "4e6fc8ab4bdb7fb32e66def36270635ff51f476905d4ca37827115fad3ca66d3",
       "src/pilot/gen_opt_harness2.py": "89b2a2a64bd438d871ee5c6f3458b71b7a10b35b8751a5a38b1f6ac0863ba757"
     }
@@ -1336,7 +1336,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/store_path.py": "3a89cce449987ef448939d9e9a326c02e46ffaf4ce346f55aefe3f388cc00590",
-      "src/pilot/translation_memory.py": "ec9a1c09f8b73574df00c0026b57fb2d28cb636cf95be66f6cc99b106f13e2ee",
+      "src/pilot/translation_memory.py": "0ff60624486f72f878bc087af18f2ee199edfe403461a12687cddebb73e105fc",
       "src/pilot/ru_coverage.py": "bf08bc3e79a80907dfc7df4e59cead0c026e04cf9cc621359630daecc98b46c3"
     }
   },
@@ -1358,7 +1358,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/bounded_staged_run.py": "096cd639be7f864bc5fc6984c84674a50c13e81e12f6284fbce7185ab328c49c",
       "src/pilot/bounded_supervisor.py": "01610c44d5383420d29f66cb0ef81ae2612c89bff30403cce31816ed6c8f603a",
-      "src/pilot/max_account_orchestrator.py": "83173d202fc366b958ce51046bad184476fa3b1b0fd5f93a48791a0a78255a8a"
+      "src/pilot/max_account_orchestrator.py": "12fb8c3bcdc8897e7eaff2285e6d32547b11f047b58921169a9736e37a24aa0c"
     }
   },
   {
@@ -1397,7 +1397,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/requeue_from_audit.py": "687f9861e3dbcc3ec10f730330cd83a88348f8ef59d3a17383950c77e7bd03d2",
-      "src/pilot/translation_memory.py": "ec9a1c09f8b73574df00c0026b57fb2d28cb636cf95be66f6cc99b106f13e2ee",
+      "src/pilot/translation_memory.py": "0ff60624486f72f878bc087af18f2ee199edfe403461a12687cddebb73e105fc",
       "src/promote_final_cards.py": "00dec19e62712ca07c9c95516ee8462f509223adecd5661884745091b294b4e9"
     }
   },
