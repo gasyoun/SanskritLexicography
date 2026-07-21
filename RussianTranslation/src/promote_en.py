@@ -55,6 +55,10 @@ sys.stderr.reconfigure(encoding='utf-8')
 import pipeline_version
 from promote_lock import PromoteClaim, ClaimBusy
 from store_path import canonical_store
+# C6: reuse the RU lane's EXACT {Tn}-residue guard (single source — a look-alike copy is precisely
+# the drift that C3 was). A surviving mask placeholder means restore failed upstream; refuse loudly
+# rather than write it into the canonical store (the RU C-01 path raised; the EN attach silently wrote it).
+from promote_final_cards import TN_RE, UnrestoredPlaceholder
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -210,6 +214,12 @@ def attach(rows, idx, threshold, prov=None, judge=None):
         en, how = match_en(norm_de(r.get('de')), idx[sub], threshold)
         stats[how] += 1
         if en is not None:
+            # C6: parity with promote_final_cards' RU-side C-01 guard — never write a card still
+            # carrying a {Tn} mask placeholder into the canonical store.
+            if TN_RE.search(en):
+                raise UnrestoredPlaceholder(
+                    '%s: refusing to promote an EN sense with an unrestored placeholder: %r'
+                    % (sub, en[:80]))
             r['en'] = en
             block = dict(prov.get(sub) or {'model': 'sonnet', 'judge': None})
             if sub in judge:
@@ -258,6 +268,16 @@ def selftest():
     # idempotent re-run without judge clears the stale judge block
     attach(rows, idx, 0.92, prov=prov)
     assert rows[0]['en_provenance']['judge'] is None, 're-run without --judge resets judge to null'
+    # C6: an EN candidate still carrying a {Tn} mask placeholder must be REFUSED (parity with the
+    # RU C-01 UnrestoredPlaceholder guard), never written into the tri-lingual store.
+    bad_rows = [{'subcard': 'p_a~~h0', 'sense_tag': '1', 'de': 'trinken', 'ru': 'пить'}]
+    bad_idx = {'p_a~~h0': [(norm_de('trinken'), 'to drink from a {T3}')]}
+    try:
+        attach(bad_rows, bad_idx, 0.92)
+        assert False, 'C6: a {Tn} residue in the EN candidate must be refused, not attached'
+    except UnrestoredPlaceholder:
+        pass
+    assert 'en' not in bad_rows[0], 'C6: a refused row must carry no partial EN'
     print('promote_en selftest OK')
 
 
@@ -304,7 +324,11 @@ def main():
         print('judge verdicts: %d (from %s); judge model: opus (%s)'
               % (len(judge), os.path.basename(args.judge), args.judge_model_version))
     en_senses = sum(len(v) for v in idx.values())
-    stats = attach(rows, idx, args.threshold, prov=prov, judge=judge)
+    try:
+        stats = attach(rows, idx, args.threshold, prov=prov, judge=judge)
+    except UnrestoredPlaceholder as exc:
+        # C6: refuse loudly, before any backup/store write, exactly like the RU lane.
+        sys.exit('EN promotion refused: %s' % exc)
 
     eligible = len(rows) - stats['no-en-file']
     print('\n=== EN MERGE COVERAGE ===')
