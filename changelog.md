@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.50.0] — 21-07-2026
+
 ### Added
 
 - pwg_ru style-research memo [`pwg_ru/STYLE_RESEARCH_DOUBLETS_VL_COMP.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/STYLE_RESEARCH_DOUBLETS_VL_COMP.md)
