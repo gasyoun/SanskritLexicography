@@ -791,6 +791,35 @@ def main():
         assert len(release_calls) == 1 and release_calls[0][1] == 'runtime1'
     print('  runtime integration: reserve batch before workers; retryable worker releases slot')
 
+    with tempfile.TemporaryDirectory() as td:
+        # C4: a rate-limit (429) must NOT consume a retry attempt. With max_attempts=1, one
+        # rate-limit under the OLD behavior left the job 'pending' with attempts==1==max_attempts
+        # — never re-selected by claim (WHERE attempts < max_attempts), never 'failed', so it was
+        # permanently stranded and cmd_staged_run busy-spun on the un-drainable pending count.
+        db = os.path.join(td, 'c4.sqlite')
+        m.main(['--db', db, 'init', '--account', 'acc=' + os.path.join(td, 'acc'),
+                '--skip-profile-check'])
+        out = os.path.join(td, 'rl.json')
+        m.main(['--db', db, 'enqueue', '--external-id', 'rl1', '--max-attempts', '1',
+                '--argv-json', json.dumps([sys.executable, '-c',
+                    'import sys;sys.stderr.write("429 rate limit reset_at=1999999999");sys.exit(21)']),
+                '--cwd', td, '--output', out])
+        m.main(['--db', db, 'run-once', '--timeout', '10'])
+        con = sqlite3.connect(db)
+        state, attempts = con.execute(
+            "select state,attempts from jobs where external_id='rl1'").fetchone()
+        con.execute("update accounts set parked_until=0")
+        con.commit()
+        con.close()
+        assert state == 'pending', 'a rate-limited job must stay pending, got %r' % state
+        assert attempts == 0, ('C4: a rate-limit must not consume an attempt (got attempts=%d) — '
+                               'at max_attempts the job would be permanently unclaimable' % attempts)
+        reclaimed = m.claim(db, 'acc', only_external_ids={'rl1'})
+        assert reclaimed is not None and reclaimed['external_id'] == 'rl1', (
+            'C4: a max_attempts=1 job rate-limited once must remain claimable, not stranded')
+    print('  C4 rate-limit: a 429 returns the job to claimable pending (attempts decremented), '
+          'never a permanently-unclaimable stuck row')
+
     print('max_account_orchestrator_selftest: PASS')
 
 
