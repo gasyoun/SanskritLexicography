@@ -10,6 +10,36 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — build-frags glob (C7) + German-as-Latin mask drop (C8) + EN backup collision (C9) (H1418)
+
+- **C7 — `build-frags` built the fragment TM from the wrong tree under a custom coordinator dir.**
+  In [`coordinator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py)
+  `promote_ready`, the `frag_prov` **detection** globbed `paths()['artifacts']` (which honors
+  `PWG_COORDINATOR_DIR` / `--coord-dir`) but the **build-frags** call hardcoded the default-tree
+  glob — so a per-run/worktree coordinator dir detected fragments here yet built the fragment TM
+  from the empty default tree, silently dropping the just-promoted window's fragments. Both sides
+  now use one `_frag_prov_glob()` derived from `paths()['artifacts']`.
+- **C8 — German glosses opening `In…`/`Ab…`/`Ex…`/`Sub…`/`Pro…` were masked as Latin and dropped.**
+  [`pwg_mask.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py)'s
+  `LATIN_PHRASE` matched German-capitalized homographs of Latin prepositions, so a `{%In den
+  Schlusssatz einfallen%}`-style German gloss was masked to `{Tn}` and never translated —
+  invisibly (restore reinserts the identical German, so the round-trip stayed "100% lossless").
+  Fixed: a homograph opener stays Latin only if **no** German function word follows; `De …` (not a
+  German word) remains an unguarded Latin opener. Measured **1 of 192,763** `{%…%}` spans, now kept
+  inline; genuine Latin (`De accentu comp.`, `In usum Delphini`) still masked.
+- **C9 — the EN store backup could clobber an earlier recovery copy.**
+  [`promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py)
+  named the backup with a **second-resolution** timestamp and wrote it with a plain `open('w')`, so
+  two lock-serialized runs in the same second overwrote the earlier `.preEN` backup (defeating the
+  code's own "each run gets its own timestamped backup" promise). Fixed to a µs+pid+uuid name
+  (`_en_backup_path`) plus the RU lane's **O_EXCL** fsynced copier (`_fsynced_backup`, imported —
+  single source).
+- Found by the Opus 4.8 (`claude-opus-4-8`) adversarial bug-hunt review (C7/C8/C9 of
+  [issue #632](https://github.com/gasyoun/SanskritLexicography/issues/632)) — the last of the 9
+  confirmed findings. Selftests: `window_selftest`
+  (`test_frag_prov_glob_honors_coordinator_dir_c7`, `test_pwg_mask_german_homograph_not_latin_c8`)
+  and `promote_en --selftest` (C9 block).
+
 ### Added — speed & orchestration audit: bottleneck ledger + verified action map (H1403)
 
 - [`PWG_RU_SPEED_ORCHESTRATION_BOTTLENECK_AUDIT_2026-07-20.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_RU_SPEED_ORCHESTRATION_BOTTLENECK_AUDIT_2026-07-20.md)

@@ -6580,6 +6580,54 @@ def test_h1283_a6_prep_slice_flattens_batches():
     print('  A6: prep_slice flattens every batch key')
 
 
+def test_frag_prov_glob_honors_coordinator_dir_c7():
+    """C7: the coordinator's frag_prov detection AND its build-frags call must both derive their
+    glob from paths()['artifacts'] (honoring PWG_COORDINATOR_DIR), or a custom coord dir (per-run /
+    worktree) detects frag_prov but builds the fragment TM from the empty DEFAULT tree — silently
+    dropping the just-promoted window's fragments."""
+    import coordinator as c
+    old = os.environ.get('PWG_COORDINATOR_DIR')
+    with tempfile.TemporaryDirectory() as d:
+        os.environ['PWG_COORDINATOR_DIR'] = d
+        try:
+            g = os.path.abspath(c._frag_prov_glob())
+            if os.path.abspath(d) not in g:
+                fail('C7: build-frags/detection glob must live under PWG_COORDINATOR_DIR, got %r' % g)
+            if 'wf_output' not in os.path.basename(g):
+                fail('C7: the frag_prov glob must target wf_output*.json, got %r' % g)
+        finally:
+            if old is None:
+                os.environ.pop('PWG_COORDINATOR_DIR', None)
+            else:
+                os.environ['PWG_COORDINATOR_DIR'] = old
+    # regression guard: the hardcoded default glob must never come back
+    src = open(os.path.join(HERE, 'coordinator.py'), encoding='utf-8').read()
+    if "'src/pilot/output/coordinator/artifacts/*/wf_output*.json'" in src:
+        fail('C7: build-frags --glob is hardcoded to the default tree again; use _frag_prov_glob()')
+
+
+def test_pwg_mask_german_homograph_not_latin_c8():
+    """C8: In/Ab/Ex/Sub/Pro are German-capitalized homographs of Latin prepositions, so a German
+    {%..%} gloss like 'In der Regel' / 'In den Schlusssatz einfallen' matched LATIN_PHRASE and was
+    masked-and-dropped (never translated), invisibly (restore reinserts the identical German, so the
+    round-trip selftest still reads 100% lossless). A German function word now keeps such a gloss
+    inline ('de'); a genuine Latin phrase ('De accentu comp.', 'In usum Delphini') stays 'la'."""
+    import pwg_mask as pm
+    de_cases = ['In den Schlusssatz einfallen', 'In der Regel', 'In Verbindung mit etwas',
+                'Ab dem dritten Tag']
+    for c in de_cases:
+        if pm.classify_pct(c, '') != 'de':
+            fail("C8: German gloss %r must classify 'de' (kept inline), got %r"
+                 % (c, pm.classify_pct(c, '')))
+    la_cases = ['De accentu comp.', 'In usum Delphini', 'Ab ovo', 'Ex professo']
+    for c in la_cases:
+        if pm.classify_pct(c, '') != 'la':
+            fail("C8: genuine Latin phrase %r must stay 'la', got %r" % (c, pm.classify_pct(c, '')))
+    # the LATIN_CUE path (an explicit 'lat.'/'griech.' before the span) is unchanged
+    if pm.classify_pct('in aqua', 'das lat.') != 'la':
+        fail('C8: an explicit Latin cue must still force la')
+
+
 def main():
     tests = [
         test_restore_covers_every_promoted_field,
@@ -6739,6 +6787,8 @@ def main():
         test_h1283_a1_pid_alive_and_dirlock_owner,
         test_h1283_a5_max_wide_default_bounded,
         test_h1283_a6_prep_slice_flattens_batches,
+        test_frag_prov_glob_honors_coordinator_dir_c7,
+        test_pwg_mask_german_homograph_not_latin_c8,
     ]
     # Per-test isolation. This used to be a bare `for test in tests: test()`, so the FIRST
     # failure aborted the process and every later test silently never ran. That is not

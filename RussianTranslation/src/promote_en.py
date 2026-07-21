@@ -47,6 +47,7 @@ import json
 import os
 import re
 import sys
+import uuid
 from collections import defaultdict
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -55,6 +56,9 @@ sys.stderr.reconfigure(encoding='utf-8')
 import pipeline_version
 from promote_lock import PromoteClaim, ClaimBusy
 from store_path import canonical_store
+# C9: reuse the RU lane's O_EXCL fsynced copier so an EN backup can never overwrite an existing
+# recovery artifact (single source with promote_final_cards.py, parity with its _fsynced_backup).
+from promote_final_cards import _fsynced_backup
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -72,6 +76,15 @@ _KEEP = re.compile(r'[^0-9A-Za-z{}#%]')
 # alias mapping has changed since.
 GEN_MODEL_VERSION = 'claude-sonnet-4-6'      # alias 'sonnet' -> Sonnet 4.6
 JUDGE_MODEL_VERSION = 'claude-opus-4-8'      # alias 'opus'   -> Opus 4.8
+
+
+def _en_backup_path(store):
+    """C9: a collision-resistant `.preEN` backup name — microsecond stamp + pid + uuid, so two
+    lock-serialized runs in the SAME second get distinct names (second-resolution collided, and a
+    plain open('w') then clobbered the earlier recovery copy). Paired with _fsynced_backup's
+    O_EXCL open so an existing backup is never overwritten. Mirrors promote_final_cards._backup_path."""
+    stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S.%fZ')
+    return '%s.preEN.%s.p%d.%s.bak' % (store, stamp, os.getpid(), uuid.uuid4().hex[:12])
 
 
 def norm_de(g):
@@ -258,6 +271,23 @@ def selftest():
     # idempotent re-run without judge clears the stale judge block
     attach(rows, idx, 0.92, prov=prov)
     assert rows[0]['en_provenance']['judge'] is None, 're-run without --judge resets judge to null'
+    # C9: the backup name must be collision-resistant (two names in the SAME second differ) and the
+    # O_EXCL fsynced copier must refuse an existing destination — so two lock-serialized runs can't
+    # clobber the earlier recovery copy.
+    import tempfile as _tf
+    assert _en_backup_path('/x/store.jsonl') != _en_backup_path('/x/store.jsonl'), \
+        'C9: two backup names generated back-to-back must be unique (µs+pid+uuid)'
+    with _tf.TemporaryDirectory() as _d:
+        _store = os.path.join(_d, 'store.jsonl')
+        open(_store, 'w', encoding='utf-8').write('{}\n')
+        _bak = _en_backup_path(_store)
+        _fsynced_backup(_store, _bak)
+        assert os.path.exists(_bak), 'C9: backup must be written'
+        try:
+            _fsynced_backup(_store, _bak)     # same destination again
+            assert False, 'C9: the O_EXCL backup must refuse an existing destination'
+        except FileExistsError:
+            pass
     print('promote_en selftest OK')
 
 
@@ -332,10 +362,11 @@ def main():
     try:
         with PromoteClaim(args.store, steal=args.steal_lock, **ttl_kwargs):
             if not args.no_backup:
-                stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
-                bak = args.store + '.preEN.%s.bak' % stamp
-                with open(bak, 'w', encoding='utf-8') as f, open(args.store, encoding='utf-8') as src:
-                    f.write(src.read())
+                # C9: collision-resistant name (µs+pid+uuid) + O_EXCL fsynced copy, so two
+                # lock-serialized runs in the SAME second can no longer clobber the earlier recovery
+                # copy — second-resolution + a plain open('w') did exactly that, silently.
+                bak = _en_backup_path(args.store)
+                _fsynced_backup(args.store, bak)
                 print('\nbacked up store -> %s' % os.path.basename(bak))
             # Atomic write: temp file + os.replace so a crash/kill mid-write cannot truncate
             # the tri-lingual store (the "EN layer wiped" scar). Under --no-backup this is the
