@@ -1,6 +1,6 @@
 # Book proposal — *Digital Sanskrit Lexicography: The Dictionary as a Layered Evidence Graph*
 
-_Created: 08-07-2026 · Last updated: 18-07-2026_
+_Created: 08-07-2026 · Last updated: 21-07-2026_
 
 Draft proposal for the single-authored monograph **M01**, built to the
 [Brill Book Proposal Guidelines](https://brill.com/fileasset/downloads_products/brill_bookproposal_guidelines.pdf)
@@ -43,7 +43,7 @@ provenance. This book establishes that model and demonstrates it on the richest 
 testbed: **Sanskrit, which uniquely possesses two parallel lexicographic civilizations** —
 the European scholarly dictionaries (1832–1957: Wilson, the Petersburg *Wörterbücher*,
 Monier-Williams, Apte) and the indigenous *kośa* / Pāṇinian tradition — nineteen centuries of
-depth, forty-four digitized dictionaries, and a 5.6-million-token tagged corpus.
+depth, forty-four digitized dictionaries, and a 5.7-million-token tagged corpus.
 
 Where existing standards (ELEXIS, Lexonomy, TEI-Lex0) standardize the *encoding* of
 dictionaries, this book standardizes their **epistemics**: graded, reviewable,
@@ -149,8 +149,8 @@ thesis stated; a roadmap of the book.
   to the historical states; 68.3% of épigraphique headwords are corpus-absent — vocabulary
   invisible to corpus-only methods.
 - **Ch. 14 · Fifty Thousand Corrections** *(← A12, 4/5).* The error typology of twelve years
-  of collaborative maintenance: 50,953 correction events × 43 dicts × 210 correctors — a
-  field-unique dataset. **Sole-authored (confirmed 08-07-2026: byline is Gasūns; Funderburk
+  of collaborative maintenance: 52,498 correction events × 43 dicts × 208 correctors (the
+  released 2014-03-18 → 2026-05-30 snapshot) — a field-unique dataset. **Sole-authored (confirmed 08-07-2026: byline is Gasūns; Funderburk
   and Patel appear as correctors within the dataset and as acknowledgees, not co-authors).**
 
 **Conclusion — *The Evidence Graph as a General Model*** *(new; ~10–15 pp).* FAIR
