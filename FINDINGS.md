@@ -3332,3 +3332,43 @@ whose member-**order** caveat is
 > dictionary side = [MWderivations `issue15/compounds_reverse_classified.tsv`](https://github.com/gasyoun/MWderivations/blob/master/issue15/compounds_reverse_classified.tsv) ·
 > [H1328](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1328-Opus_VisualDCS_kompozity-mw-uttarapada-join-dict-vs-corpus_19.07.26.md)
 > — VisualDCS · 20-07-2026, Opus 4.8 (`claude-opus-4-8[1m]`).
+
+### §458. A Sanskrit dictionary's big letters are big because they head *preverb families* — and testing "entries shrink over publication" needs an outlier-robust estimator, not a parametric regression (encyclopedic dicts have single 300k-char articles)
+
+🔴 **The per-letter law.** Extending [§457](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)'s
+passing observation that MW's letter `a` is 83.1 % dash-marked compounds, a full per-letter
+scan of MW shows `a` is the *most* compound-dense letter **but not uniquely so** — `u` (79.5 %),
+`p` (78.0 %), `s` (77.9 %) and `v` (75.5 %) are right behind it, while `k` (56.4 %) falls away.
+The mechanism is the **upasarga (preverb)**: every ballooning letter heads a productive preverb
+family — `v` = *vi-* (38.6 % of all `v` headwords), `u` = *ud-/upa-* (62.3 % combined),
+`s` = *sam-/su-*, `p` = *pra-/pari-/prati-*, `a` = *ā-/abhi-/anu-/apa-/ava-* plus the privative.
+`k`, `g`, `c` head no preverb and carry no such combinatorial shadow. So "`a` is a letter of
+compounds not roots" is true, but it is a property of *preverb-headed letters in general*, of
+which `a` is merely the richest — not an `a`-anomaly.
+
+⚠️ **The reusable methodological gotcha — never test entry-size decay with a parametric mean-based
+regression on a Sanskrit→Sanskrit encyclopedic dictionary.** The historical claim that dictionary
+entries **shrink toward the end of the work** as funding/energy fell (raised specifically for
+**SKD** Śabdakalpadruma and **VCP** Vācaspatyam) must be tested with letter fixed effects (later
+letters host intrinsically shorter words — a composition confound). But even a log-scale letter-FE
+OLS is **wrecked by outliers**: VCP has a median entry of 112 characters and a *maximum of 310,090*
+(SKD max 128,405) — a dozen page-long encyclopedic articles give VCP a spurious parametric slope of
+**+733 %/traversal**, sign-flipped from its own naïve slope. The correct tool is an **outlier-robust
+per-letter rank test** (Spearman of position vs size *within each letter*, aggregated by Fisher-z),
+which is immune to the giant articles and removes the composition confound by construction.
+
+**Substantive result (the arbiter test):** the funding-decay hypothesis is **REFUTED for its two
+named targets** — SKD ρ = −0.001, VCP ρ = +0.001 (both non-significant) — and real & strong only
+in the **German Petersburg tradition + Grassmann**: PWG ρ = −0.19 (36/38 letters negative),
+PWK ρ = −0.34 (27/32), GRA ρ = −0.20 (28/30) — precisely the works with a documented editorial-
+compression history (PWG's over-detailed 1855 first volume of `a-`). "Later entries are shorter" is
+a Petersburg-tradition fact, not a Sanskrit-encyclopedic-dictionary one. PD is untestable this way
+(confined to `a`).
+
+> **Source:** report [`reports/LETTER_ANATOMY_AND_ENTRY_SIZE_2026.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/reports/LETTER_ANATOMY_AND_ENTRY_SIZE_2026.md)
+> + feeds [`data/pd/letter_anatomy.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/letter_anatomy.tsv)
+> / [`entry_size_by_position.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/entry_size_by_position.tsv)
+> + generator [`scripts/letter_anatomy.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/letter_anatomy.py)
+> · page `/tools/letter-anatomy` · sources = [HeadwordLists/now-2026](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026) + [csl-orig v02](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02) entry bodies ·
+> [H1416](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1416-Opus_csl-atlas_letter-anatomy-samasa-upasarga-entrysize-decay_21.07.26.md)
+> ([csl-atlas PR #282](https://github.com/sanskrit-lexicon/csl-atlas/pull/282)) — csl-atlas · 21-07-2026, Opus 4.8 (`claude-opus-4-8`).
