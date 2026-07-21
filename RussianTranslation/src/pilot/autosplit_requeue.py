@@ -331,7 +331,10 @@ def topup_fragments(wf_file, lang):
                     owners_by_tag.setdefault(sense.get('tag'), owner)
         cards.append({'orig': orig, 'iast': card.get('iast'), 'notes': card.get('notes', ''),
                       'owners_by_tag': owners_by_tag, 'default_owner': default_owner,
-                      'plan': planrows, 'resolved': resolved, 'missing': missing})
+                      'plan': planrows, 'resolved': resolved, 'missing': missing,
+                      # H1152 parity (C1): source span counts so stitch_topup can reject a
+                      # complete card whose reassembled german OR target field dropped a span.
+                      'src_ls': raw.count('<ls'), 'src_sk': raw.count('{#')})
     return cards
 
 
@@ -359,6 +362,14 @@ def _stitch_tree(tree, field):
         merged.update({kk: vv for kk, vv in extra.items() if vv is not None})
         senses.append(merged)
     return senses, missing_si
+
+
+def _span_count(senses, needle, field):
+    """Count `needle` ('<ls' or '{#') across `field` ('german' or the target field) of a
+    stitched sense list. H1152 parity (C1/C5): the stitch lanes must check BOTH markers on
+    BOTH the german echo AND the translation field, or a translation-only span drop (german
+    faithful, russian/english short) reaches the store the way it can't on the batch lane."""
+    return sum((s.get(field) or '').count(needle) for s in senses)
 
 
 def _stitch_owned_senses(senses, owners):
@@ -424,6 +435,23 @@ def stitch_topup(manifest_cards, got, field):
             continue
         if missing_si:
             still_missing[orig] = missing_fk
+        # H1152 parity (C1): a COMPLETE topup stitch must reproduce the source span counts in BOTH
+        # the german echo AND the target field, or a translation-only span drop is promoted
+        # silently. src_ls/src_sk are stamped by topup_fragments; absent (e.g. a direct unit-test
+        # manifest) => skip, preserving backward compatibility.
+        src_ls, src_sk = c.get('src_ls'), c.get('src_sk')
+        if not missing_si and src_ls is not None and src_sk is not None and (
+                _span_count(senses, '<ls', 'german') != src_ls
+                or _span_count(senses, '{#', 'german') != src_sk
+                or _span_count(senses, '<ls', field) != src_ls
+                or _span_count(senses, '{#', field) != src_sk):
+            still_missing[orig] = missing_fk
+            results.append({'key': orig, 'card': None,
+                            'error': 'topup-merge: complete-stitch fidelity drift '
+                                     '(<ls>/{#..#} span dropped from german or %s)' % field,
+                            'partial': True, 'missing_senses': total_senses,
+                            'total_senses': total_senses})
+            continue
         results.append({'key': orig,
                         'card': {'key1': orig, 'iast': c.get('iast'),
                                  'notes': c.get('notes', ''),
@@ -632,19 +660,34 @@ def cmd_merge(root, lang, task_file):
         if missing_si:
             partial.append(orig)
             missing_frags[orig] = [fk for si in missing_si for fk in senses_map[si].values()]
-        # post-stitch fidelity: reassembled counts vs the source card. Only meaningful on a
-        # COMPLETE card — a partial merge legitimately has fewer <ls> than the source.
+        # post-stitch fidelity vs the source card. Only meaningful on a COMPLETE card — a partial
+        # merge legitimately has fewer spans than the source. H1152 parity (C1/C5): count BOTH
+        # markers (<ls and {#) on BOTH the german echo AND the target field, and REJECT on drift
+        # (was <ls>-only / german-only / non-blocking, so a dropped {#..#} span or a
+        # translation-column drop was promoted with a `fidelity_drift` flag nobody enforced).
         src = read_text(input_paths(orig)[0])
-        got_ls = sum(s['german'].count('<ls') for s in senses)
-        drift = (not missing_si) and got_ls != src.count('<ls')
-        if drift:
-            print('  ! %s fidelity drift: <ls> %d vs source %d' % (orig, got_ls, src.count('<ls')))
+        if not missing_si:
+            src_ls, src_sk = src.count('<ls'), src.count('{#')
+            if (_span_count(senses, '<ls', 'german') != src_ls
+                    or _span_count(senses, '{#', 'german') != src_sk
+                    or _span_count(senses, '<ls', field) != src_ls
+                    or _span_count(senses, '{#', field) != src_sk):
+                print('  ! %s fidelity-reject (complete stitch drift): german <ls>=%d {#=%d, '
+                      '%s <ls>=%d {#=%d vs source <ls>=%d {#=%d'
+                      % (orig, _span_count(senses, '<ls', 'german'),
+                         _span_count(senses, '{#', 'german'), field,
+                         _span_count(senses, '<ls', field), _span_count(senses, '{#', field),
+                         src_ls, src_sk))
+                skipped.append(orig)
+                missing_frags[orig] = [fk for si in senses_map for fk in senses_map[si].values()]
+                results.append({'key': orig, 'card': None,
+                                'error': 'autosplit-merge: complete-stitch fidelity drift '
+                                         '(<ls>/{#..#} span dropped from german or %s)' % field})
+                continue
         row = {'key': orig, 'card': {'key1': orig, 'iast': iast, 'notes': '',
                                      'records': _stitch_owned_senses(senses, owners)},
                'partial': bool(missing_si),
                'missing_senses': len(missing_si), 'total_senses': len(senses_map)}
-        if drift:
-            row['fidelity_drift'] = True       # kept, not dropped — but marked so audits can see it
         results.append(row)
     tag = 'en' if lang == 'en' else 'sc'
     out = os.path.join(REPO, 'wf_output.%s.%s.autosplit.json' % (tag, root))

@@ -253,6 +253,45 @@ def test_null_owner_fragment_tm_refused_before_any_call():
           'any call (runner uncalled)')
 
 
+def test_normalize_batch_translation_fidelity_reject():
+    """H1152 parity (C1): normalize_batch must reject a card whose `german` echo is faithful but
+    whose TARGET field dropped an <ls>/{#..#} span. Was german-only (count_card), so a
+    translation-column span drop reached the store on the headless production route (the
+    live H1070 r102 pattern: german 33/33, english 32/33). A faithful card still passes."""
+    m = manifest()   # inputs.agni ls=1 sk=0; placeholder_maps.agni=['<ls>RV.</ls>']; field=russian
+    faithful = {'key1': 'agni', 'records': [{'grammar': '', 'senses': [
+        {'tag': '1', 'german': '{T1} Feuer', 'russian': '{T1} огонь'}]}]}
+    dropped = {'key1': 'agni', 'records': [{'grammar': '', 'senses': [
+        {'tag': '1', 'german': '{T1} Feuer', 'russian': 'огонь'}]}]}   # <ls> kept in de, dropped in ru
+    ok = h.normalize_batch(m, ['agni'], {'cards': [faithful]})
+    assert ok[0].get('error') is None and ok[0]['card'], ok
+    bad = h.normalize_batch(m, ['agni'], {'cards': [dropped]})
+    assert bad[0].get('error') == 'translation-fidelity-reject' and bad[0]['card'] is None, bad
+    print('  C1 normalize_batch: german-faithful but target-dropped card -> translation-fidelity-reject')
+
+
+def test_headless_heal_stitch_translation_fidelity_reject():
+    """H1152 parity (C1): the headless selfheal stitch (twin of the JS selfHeal check) must reject
+    a COMPLETE stitched card whose german echo is faithful but whose TARGET field dropped a span.
+    Driven via a warm frag-TM slot (already-restored senses), so no model call is made."""
+    m = manifest()
+    key = 'agni'
+    sense = {'tag': '1', 'german': '<ls>RV.</ls> Feuer', 'russian': 'огонь'}   # de has <ls>, ru drops it
+    m['fragment_groups'] = {key: [[{'skeleton': '<ls>RV.</ls> Feuer', 'fsha': 'FSHA0', 'si': 0}]]}
+    m['fragment_placeholder_maps'] = {key: [[[]]]}
+    m['fragment_tm'] = {key: [[{'senses': [sense], 'owners': [['2. agni', 'm.']]}]]}
+    m['inputs'] = {key: {'skeleton': '<ls>RV.</ls> Feuer', 'portrait': '{}', 'ls': 1, 'sk': 0, 'nws': 0}}
+    m['batches'] = []
+    m['presplit_keys'] = [key]
+
+    def never_runner(argv, **kwargs):
+        raise AssertionError('a fully-cached fragment must NOT call the model')
+
+    payload, _status, _code = execute(m, never_runner)
+    assert payload['results'][0]['card'] is None, payload['results'][0]
+    print('  C1 headless heal: german-faithful, target-dropped complete stitch -> rejected (card None)')
+
+
 def main():
     payload, status, code = execute(manifest(), success_runner)
     assert code == 0 and status['classification'] == 'success'
@@ -483,6 +522,8 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_foreign_route_refused_before_any_call()
     test_frag_tm_stitch_retains_owner()
     test_null_owner_fragment_tm_refused_before_any_call()
+    test_normalize_batch_translation_fidelity_reject()
+    test_headless_heal_stitch_translation_fidelity_reject()
     print('headless_worker_selftest: PASS')
 
 
