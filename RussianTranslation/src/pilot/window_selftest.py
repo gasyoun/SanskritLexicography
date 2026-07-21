@@ -6755,6 +6755,33 @@ def test_h1283_a6_prep_slice_flattens_batches():
     print('  A6: prep_slice flattens every batch key')
 
 
+def test_lang_parity_coverage():
+    """Parity-coverage guard: no language-aware pipeline file may escape the LANG_PARITY ledger
+    unclassified — the hole the C1–C9 EN findings grew in (a new `*_en.py` / `--lang` gate that is
+    neither tracked nor exempt). (1) the real repo must be coverage-clean; (2) the pure set logic
+    must flag an untracked candidate and clear it once tracked OR exempt; (3) exempt hygiene."""
+    import lang_parity_check as lp
+    entries, _, _ = lp.load_ledger()
+    viol = lp.coverage_check(entries, lp.load_coverage())
+    if viol:
+        fail('parity-coverage guard is not clean:\n  ' + '\n  '.join(viol))
+    # pure-logic escape / clear
+    if not lp.coverage_violations({'src/pilot/new_en.py'}, set(), {}):
+        fail('coverage_violations must flag an untracked language-aware candidate')
+    if lp.coverage_violations({'src/pilot/new_en.py'}, {'src/pilot/new_en.py'}, {}):
+        fail('a ledger-tracked candidate must not be flagged')
+    if lp.coverage_violations({'src/pilot/new_en.py'}, set(), {'src/pilot/new_en.py': 'a reason'}):
+        fail('an exempt candidate must not be flagged')
+    # exempt hygiene: empty reason + both-tracked-and-exempt are violations
+    if not lp.coverage_violations(set(), set(), {'src/x.py': ''}):
+        fail('an empty exempt reason must be a violation')
+    if not lp.coverage_violations({'src/x.py'}, {'src/x.py'}, {'src/x.py': 'r'}):
+        fail('a file both ledger-tracked and exempt must be a violation')
+    # detector sanity: the known EN reimplementation must be seen as language-aware
+    if 'src/pilot/audit_window_en.py' not in set(lp.candidate_files()):
+        fail('candidate_files must detect audit_window_en.py as a language-aware candidate')
+
+
 def test_en_card_tm_serves_english_field_c3():
     """C3: `build --lang en` must write each sense's translation under the CARD field name
     'english' (not the store COLUMN 'en'), or the serve-side `tm_card_sane` / final-card schema
@@ -7084,6 +7111,7 @@ def main():
         test_fixture_audit_does_not_clobber_live_status,
         test_release_manifest_hash_validation,
         test_lang_parity_ledger_complete,
+        test_lang_parity_coverage,
         test_lang_parity_hash_crlf_independent,
         test_frag_groups_presplit_parity,
         test_defect_fragment_denylist_round_trip,
