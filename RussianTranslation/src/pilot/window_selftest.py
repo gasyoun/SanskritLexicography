@@ -5546,6 +5546,59 @@ def test_defect_fragment_denylist_round_trip():
         fail('transient requeue must never append denylist rows')
 
 
+def test_h1386_c3_frag_unblock_serves_replacement():
+    """H1386 C3: the fragment half of the H304 gate-outcome contract. Deny an fsha, then
+    re-harvest the SAME fsha (rework hashes the fragment SOURCE, so the corrected output
+    emits an identical fsha) with corrected senses, then unblock -- load_frag_tm must serve
+    the NEW senses. Pre-fix, build_frags' seen-scan treated the flagged cached row as a
+    cache hit (never consulting the denylist), the replacement was never appended, and the
+    unblock re-enabled serving the exact gate-rejected senses the denial existed to block.
+    Also pins the recursive harvest glob: a requeue attempt's wf_output lands two dirs deep
+    (artifacts/<lease>/requeue/rqNN-<kind>/), which the old single-* glob never matched."""
+    import translation_memory as tm
+    tmp = tempfile.mkdtemp()
+    deny_path = os.path.join(tmp, 'denylist.jsonl')
+    sidecar = os.path.join(tmp, 'translation_memory.frag.ru.jsonl')
+    fsha = tm.frag_address('ru', 'the fragment source')
+
+    def wf_fixture(path, russian):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump({'meta': {'lang': 'ru', 'root': 'c3root', 'input_hashes': {}},
+                       'results': [{'key': 'c3root~~h0', 'card': {
+                           'records': [], 'frag_prov': [{
+                               'fsha': fsha, 'owners': [['h', '']],
+                               'senses': [{'tag': '1', 'german': 'g', 'russian': russian}],
+                           }]}}]}, f, ensure_ascii=False)
+
+    # 1. first harvest caches the (later gate-flagged) senses, one level deep.
+    wf_fixture(os.path.join(tmp, 'artifacts', 'w1', 'wf_output.w1.json'), 'FLAGGED')
+    pattern = os.path.join(tmp, 'artifacts', '**', 'wf_output*.json')
+    _, added, _ = tm.build_frags(pattern, 'ru', out=sidecar, denylist=deny_path)
+    if added != 1:
+        fail('first harvest should cache 1 fragment, got %d' % added)
+    # 2. the gate flags it: fsha denied (H304 defect denial).
+    tm.append_jsonl_line(deny_path, {'schema': 'pwg.translation_memory.denylist.v1',
+                                     'kind': 'fragment', 'fsha': fsha, 'reason': 'defect'})
+    # 3. the corrected --no-tm rework lands TWO dirs deep with the SAME fsha, new senses.
+    wf_fixture(os.path.join(tmp, 'artifacts', 'w1', 'requeue', 'rq01-defect',
+                            'wf_output.w1.json'), 'CORRECTED')
+    _, added2, _ = tm.build_frags(pattern, 'ru', out=sidecar, denylist=deny_path)
+    if added2 < 1:
+        fail('H1386 C3: replacement harvest of a currently-denied fsha was deduped as a '
+             'cache hit -- the corrected senses never reach the sidecar')
+    # 4. promotion unblocks the fsha (clear_denials_for_promotion path).
+    tm.append_unblock((), [fsha], reason='replaced_by_promotion', path=deny_path)
+    # 5. the served row must now be the CORRECTED senses, never the flagged ones.
+    cache = tm.load_frag_tm('ru', sidecar, denylist=deny_path)
+    if fsha not in cache:
+        fail('unblocked fragment missing from load_frag_tm')
+    got = (cache[fsha].get('senses') or [{}])[0].get('russian')
+    if got != 'CORRECTED':
+        fail('H1386 C3: load_frag_tm re-serves the gate-flagged senses (%r) after unblock'
+             % got)
+
+
 def test_write_reports_emits_defect_fsha_file():
     """H304: --write-requeue also persists requeue.defect.fshas.txt so requeue_from_audit
     can denylist the flagged fragments without re-reading the wf_output."""
@@ -7178,6 +7231,7 @@ def main():
         test_h1339_b04_b09_worktree_safe_resolution,
         test_h1339_b10_b19_audit_chain_routing,
         test_h1339_b11_b12_denylist_lifecycle_and_crash_refusal,
+        test_h1386_c3_frag_unblock_serves_replacement,
         test_h1339_b13_b15_telemetry_and_siglum_precision,
         test_every_stitch_emits_record_required,
         test_unmapped_token_is_counted,
