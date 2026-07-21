@@ -37,6 +37,13 @@ HEADER_RE = re.compile(r'^<L>([\d.]+)<pc>(.*?)<k1>(.*?)<k2>(.*?)(?:<h>(\d+))?\s*
 DE_CHARS = re.compile(r'[äöüßÄÖÜ]')
 LATIN_CUE = re.compile(r'(lat\.|latein|griech|gr\.)\W{0,4}$', re.I)
 LATIN_PHRASE = re.compile(r'^(De|Ab|Ex|In|Sub|Pro)\s+[a-z]', )  # Latin citation phrase
+# C8: In/Ab/Ex/Sub/Pro are German-capitalized homographs of Latin prepositions, so a German gloss
+# like "In der Regel" / "In den Schlusssatz einfallen" matched LATIN_PHRASE and was masked-and-
+# dropped (never translated). "De" is not a German word, so a "De ..." phrase stays an unguarded
+# Latin opener; a homograph opener stays Latin only if NO German function word follows.
+HOMOGRAPH_LATIN_OPENER = re.compile(r'^(Ab|Ex|In|Sub|Pro)\b')
+DE_FUNCTION = re.compile(r'\b(der|die|das|den|dem|des|ein|eine|einer|einem|einen|und|oder|mit|von'
+                         r'|im|zur|zum|auf|für|nicht|auch|nur|wird|ist|sind|dass|wenn|bei|nach)\b')
 HOMOGRAPH = {'in', 'an', 'un', 'et', 'ut', 'a', 'i'}  # de/lat ambiguous short tokens
 
 
@@ -80,7 +87,11 @@ def classify_pct(content, preceding):
     if LATIN_CUE.search(preceding.strip()):        # "…das lat. " / "griech. "
         return 'la'
     if LATIN_PHRASE.match(content) and not DE_CHARS.search(content):
-        return 'la'
+        # C8: a homograph-opener (In/Ab/Ex/Sub/Pro) phrase carrying a German function word is
+        # German prose, not a Latin citation — fall through so it is kept inline for translation,
+        # never masked+dropped. "De ..." (not a German word) is unaffected and stays Latin.
+        if not (HOMOGRAPH_LATIN_OPENER.match(content) and DE_FUNCTION.search(content)):
+            return 'la'
     toks = [t.strip('.,;') for t in content.lower().split()]
     if toks and all(t in HOMOGRAPH for t in toks) and not DE_CHARS.search(content):
         return 'ambig'
