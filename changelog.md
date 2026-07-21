@@ -14,6 +14,15 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+
+- FINDINGS §459 (csl-atlas H1423, [PR #290](https://github.com/sanskrit-lexicon/csl-atlas/pull/290)):
+  PWG's entry-size decay is a **smooth funding/energy fade** across its whole 20-year run
+  (−14 %/decade; vols 2–7 still −15 %/decade after dropping the over-detailed vol-1) — settling the
+  §458 cause question — measured by mapping all 123,366 PWG entries to a real publication year via
+  the `<pc>`→volume→year field. Plus the reusable gotcha that cross-dictionary markup-density
+  measures the *digitisation apparatus*, not lexicographic depth (SKD/VCP carry ~0 Cologne markup).
+
 ## [1.48.0] — 21-07-2026
 
 ### Fixed
