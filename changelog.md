@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.48.0] — 21-07-2026
+
+### Fixed
+- **H1397 — reattached FINDINGS §456's orphaned body + regenerated stale dashboards.** The 20-07-2026 §102→§456 collision fix ([PR #618](https://github.com/gasyoun/SanskritLexicography/pull/618), issue #624) moved only §456's header + tombstone note, leaving the actual finding body (H1328's uttarapada dict-vs-corpus Jaccard analysis) orphaned as headerless text between §457 and §458 — invisible to `epistemic_integrity_check.py`'s heading scan but genuine duplicate/dead content. Moved the body back under its own §456 header (pure relocation, no content change); regenerated `findings_dashboard/data.json`/`timeseries.json` and `epistemic_dashboard/epistemic.json` (stale 115/116 headings before this fix). `epistemic_integrity_check.py --dir .` now reports full `OK`. ([SanskritLexicography PR #642](https://github.com/gasyoun/SanskritLexicography/pull/642), Sonnet 5 `claude-sonnet-5`)
+
 ## [1.47.0] — 21-07-2026
 
 ### Fixed — PWG→RU/EN pipeline bug-hunt: all 9 confirmed findings (C1–C9)
