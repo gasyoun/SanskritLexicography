@@ -164,6 +164,10 @@ review/h178_*_sheet.html
 # h178/h180 sheets above: personal voting artifact, local-only (repo is PUBLIC).
 review/h1303_*_sheet.html
 
+# H1306 style-rulings ratification sheet (csl_pyutil emitter) — same class:
+# personal voting artifact, local-only (repo is PUBLIC).
+review/h1306_*_sheet.html
+
 # Generated Workflow harnesses embed source/portrait payloads and are local-only.
 src/pilot/run_pilot_wf.*.js
 !src/pilot/run_pilot_wf.js

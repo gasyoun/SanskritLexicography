@@ -16,6 +16,16 @@ not an error.
 
 ### Added
 
+- pwg_ru style-research memo [`pwg_ru/STYLE_RESEARCH_DOUBLETS_VL_COMP.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/STYLE_RESEARCH_DOUBLETS_VL_COMP.md)
+  ([H1306](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1306-Fable_RussianTranslation_pwg-ru-style-research-doublets-apresyan_19.07.26.md)
+  phase 1, Fable 5 `claude-fable-5`): doublet-gloss policy grounded in Апресян 1995 (с. 95, 218,
+  verified verbatim) + Берков 2004 «синонимит» (с. 149–153) + Щерба 1940; `v. l.` ruling with the
+  Дворецкий abbreviation-list precedent (verbatim) vs the dead prompt rule (0/252 store cards obey
+  it); the *im Comp., vorangehend* formula measured at ~2.1k corpus-wide (not "tens of thousands");
+  KATHĀS. 26,9 attested-citation arbiter worked example via SamudraManthanam (Серебряков). 9-card
+  ratification sheet `review/h1306_style_sheet.html` (`sheet_id h1306_style`, csl-pyutil 0.3.1,
+  local-only + gitignored) awaits MG's vote → `pwg_ru/eval/h1306_style.decisions.json`.
+
 - FINDINGS §459 (csl-atlas H1423, [PR #290](https://github.com/sanskrit-lexicon/csl-atlas/pull/290)):
   PWG's entry-size decay is a **smooth funding/energy fade** across its whole 20-year run
   (−14 %/decade; vols 2–7 still −15 %/decade after dropping the over-detailed vol-1) — settling the
