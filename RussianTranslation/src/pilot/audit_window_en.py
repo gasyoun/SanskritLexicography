@@ -202,7 +202,13 @@ def audit_sense(german, english):
         soft.append('XREF-ONLY')
     if nws_de_locked(g):
         soft.append('NWS-DE-LOCKED')
-    has_gloss = '{%' in g or bool(prose(g).strip())
+    # P7 (H1422): has_gloss used to fire on ANY non-empty prose residue, including a bare
+    # cross-reference/abbreviation apparatus ('vgl. {#foo#} fgg.') that xref_only() already
+    # recognizes as non-target (soft XREF-ONLY above) -- hard-failing MISSING-EN on a sense
+    # that was never a translation target in the first place. Residual gap not attempted
+    # here: xref_only's WORD regex requires 3+ letters, so a residue of ONLY 1-2 letter
+    # tokens ('s.', 'u.') with no other prose still slips through as has_gloss=True.
+    has_gloss = not xref_only(g) and ('{%' in g or bool(prose(g).strip()))
     if has_gloss and not e.strip():
         hard.append('MISSING-EN')
         return hard, soft
@@ -217,10 +223,14 @@ def audit_sense(german, english):
     if sab > 0 and (sab - oab) >= 2:
         hard.append('AB-LOSS(%d/%d)' % (oab, sab))
 
-    smk = len(GLOSS.findall(g)) + len(DIVTAG.findall(g))
-    omk = len(GLOSS.findall(e)) + len(DIVTAG.findall(e))
-    if smk > 0 and omk < smk:
-        soft.append('MARKUP-LOSS(%d/%d)' % (omk, smk))
+    # P8 (H1422): the two marker classes were summed into one combined count before
+    # comparing, so a dropped {%..%} gloss wrapper could be masked by an unrelated <div>
+    # gained in the english (net count unchanged, e.g. source 2 gloss/0 div vs output
+    # 0 gloss/2 div -- 2 == 2, no flag). Count and compare each class separately.
+    sgl, ogl = len(GLOSS.findall(g)), len(GLOSS.findall(e))
+    sdiv, odiv = len(DIVTAG.findall(g)), len(DIVTAG.findall(e))
+    if (sgl > 0 and ogl < sgl) or (sdiv > 0 and odiv < sdiv):
+        soft.append('MARKUP-LOSS(%d/%d)' % (ogl + odiv, sgl + sdiv))
 
     ep = prose(e)
     if CYR.search(ep):

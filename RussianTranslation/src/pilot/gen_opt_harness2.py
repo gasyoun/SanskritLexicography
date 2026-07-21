@@ -876,7 +876,11 @@ def degenerate_passthrough_card(key, raw, portrait_text, field='russian'):
     sense = {
         'tag': 'xref',
         'german': body,
-        field: body,
+        # P3 (H1422): body is German (plus the {#..#}/<ls>/<ab> markup) -- there is
+        # nothing here to translate, so the target field stays empty rather than
+        # silently carrying verbatim German into the russian/english column. The
+        # German is still visible via the 'german' key above for editorial reference.
+        field: '',
         'equivalence_type': 'explanatory',
         'source_type': 'lexicographic',
         'stratum': '',
