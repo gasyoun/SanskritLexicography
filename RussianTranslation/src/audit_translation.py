@@ -32,15 +32,20 @@ if HERE not in sys.path:
 from safe_filename import safe_name  # noqa: E402
 
 
-def _exact_exists(directory, name):
-    """Case-exact existence (Windows os.path.exists is case-insensitive)."""
+def _directory_names(directory):
+    """One case-exact directory snapshot; callers keep it scoped to a single audit run."""
     try:
-        return name in set(os.listdir(directory))
+        return set(os.listdir(directory))
     except OSError:
-        return False
+        return set()
 
 
-def merged_output_path(stem, out_dir=None):
+def _exact_exists(directory, name, names=None):
+    """Case-exact existence (Windows os.path.exists is case-insensitive)."""
+    return name in (_directory_names(directory) if names is None else names)
+
+
+def merged_output_path(stem, out_dir=None, exact_names=None):
     """B19 (H1339): resolve a wf key's merged output with the DUAL lookup the rest of the
     pipeline already uses (audit_window.quarantine / window_reports / run_real_test).
 
@@ -51,7 +56,7 @@ def merged_output_path(stem, out_dir=None):
     Returns the resolved path, or None when neither form exists."""
     out_dir = out_dir or OUT
     for name in (safe_name(stem) + '.merged.md', stem + '.merged.md'):
-        if _exact_exists(out_dir, name):
+        if _exact_exists(out_dir, name, exact_names):
             return os.path.join(out_dir, name)
     return None
 
@@ -67,9 +72,9 @@ def body(t):
     return t.split('===\n\n', 1)[1] if '===\n\n' in t else t
 
 
-def audit_unit(stem):
+def audit_unit(stem, out_names=None):
     rawp = os.path.join(IN, stem + '.raw.txt')
-    outp = merged_output_path(stem)          # B19: dual lookup, not a verbatim join
+    outp = merged_output_path(stem, exact_names=out_names)  # B19: dual lookup
     if not os.path.exists(rawp):
         return stem, None, ['NO-RAW']
     if outp is None:
@@ -130,8 +135,11 @@ def main():
     print('=== translation fidelity audit (%d units) ===' % len(stems))
     print('%-24s %-10s %-10s %-5s %s' % ('unit', 'ls s/o', 'san s/o', 'ru', 'flags'))
     fails = []
+    # H1430: case-exact lookup used to rebuild set(os.listdir(OUT)) up to twice per card.
+    # Snapshot only after collection has finished and keep it local to this audit invocation.
+    out_names = _directory_names(OUT)
     for s in stems:
-        stem, nums, flags = audit_unit(s)
+        stem, nums, flags = audit_unit(s, out_names=out_names)
         if nums is None:
             print('%-24s %s' % (stem[:24], ' '.join(flags)))
             fails.append(stem)

@@ -3398,3 +3398,27 @@ a Petersburg-tradition fact, not a Sanskrit-encyclopedic-dictionary one. PD is u
 ⚠️ **Reusable rules.** Never consume the fused/separable split as a register property of SKD-vs-VCP — the "units" are different objects (SKD *iti*-micro-segments, 2.88/record, vs VCP mostly whole-record `lumped-proxy` blobs, 1.31/record) detected by different instruments (curated names + `ity`-regex vs the `<name>0` siglum regex), and the ≥20-non-whitespace-chars fusion threshold makes "fused" quasi-monotone in unit length. Corollary for prose: the committed corpus stats *invert* the "short SKD entry vs long VCP commentary" story ([`dictionary-coverage.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/dictionary-coverage.json): SKD meanChars 531 > VCP 493, medians 221 > 162, and VCP has MORE records, 50,135 > 42,531 — VCP's discursive register is a tail phenomenon, maxChars 312,261). Any segmenter for indigenous citation formulas must split *name-aware* (keep `iti <name>` together), not on bare `iti`.
 
 > **Source:** hostile referee pass [papers/A30_review_fable5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A30_review_fable5.md) (M1–M5) + model-labelled sample [papers/A30_SKD_ITI_ADJUDICATION_MODEL_PASS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A30_SKD_ITI_ADJUDICATION_MODEL_PASS.md), verified against csl-atlas `origin/main` `a56444f` ([`build-r2-kosa-fusion.mjs`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/build-r2-kosa-fusion.mjs), [`build-r2-source-anchors.mjs`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/build-r2-source-anchors.mjs), [`r2_kosa_fusion_sample.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/lexico/r2_kosa_fusion_sample.json)) · [H1382](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1382-Fable_SanskritLexicography_a30-hostile-referee-pass-skd-vcp_20.07.26.md) ([PR #662](https://github.com/gasyoun/SanskritLexicography/pull/662)) — SanskritLexicography · 21-07-2026, Fable 5 (`claude-fable-5`).
+
+### §462. On Windows, repeated repository discovery can dominate a Python pipeline: cache checkout identity, not mutable path overrides
+
+⚠️ **Reusable performance gotcha.** A small PWG→Russian preflight launched **88 Git subprocesses**
+only to rediscover the same main-worktree identity; those launches consumed **4.50 s of 5.29 s**.
+The safe cache boundary is narrower than “cache the resolved store path”: cache only the immutable
+checkout relationship, keyed by normalized absolute directory, for the life of the process. Keep
+`PWG_RU_STORE` / TM environment overrides outside that cache so test and operator overrides remain
+live, and never cache a blank/failed Git lookup as “not a linked worktree” — one transient failure
+would otherwise pin the process to a worktree-local store. The same audit found two unnecessary
+scans of the 26 MB canonical JSONL around promotion even though the atomic child transaction already
+reported exact before/after row counts; consuming the validated receipt avoids reopening the store
+without weakening the audit trail.
+
+The frozen H1339 smoke fixture kept the exact output signature
+`da1341e6ac112bf83c7c521d194f698aa39da067075b636463fa6748c43fb629` while the combined safe wins
+reduced one-run total time **17.842→11.354 s (−36.4%)**. Treat that as a smoke result, not a stable
+benchmark: `warmups=0`, `runs=1`. A further case-exact lookup fix snapshots output-directory names
+once after collection instead of rebuilding `set(os.listdir(...))` for every card; it landed after
+the frozen comparison and is therefore excluded from the percentage.
+
+> **Source:** [`docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md) +
+> [`RussianTranslation/src/store_path.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/store_path.py) +
+> [`RussianTranslation/src/pilot/coordinator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py) — offline Codex audit, 21-07-2026; no live/model/promotion/store call.

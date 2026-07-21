@@ -86,7 +86,9 @@ semantics to drift.
    [`run_claimed`](https://github.com/gasyoun/SanskritLexicography/blob/50c6c5aa5d622a878b4966e1fee1a75e4b359a90/RussianTranslation/src/pilot/max_account_orchestrator.py#L333).
    **Disposition:** fixed on the repair branch. Imported jobs persist `profile_slot`; manifest jobs
    are claimable only by that account; old valid v2 rows are backfilled; invalid rows stay
-   unclaimable. A reverse-order regression protects the contract.
+   unclaimable. Required owners are selected before the concurrency slice, and a missing,
+   unprobed, parked, busy, or attempt-exhausted owner now stops loudly instead of polling forever.
+   Reverse-order, late-roster-slot, missing-owner, and migration regressions protect the contract.
 
 2. **Recorded output is not bound to the worker attempt at ingestion.** The scheduler records a
    result hash, but `record-done` checks only that the path exists and omits the coordinator run ID.
@@ -161,8 +163,9 @@ semantics to drift.
 
 An instrumented Windows profile found canonical path resolution launched 88 Git subprocesses in a
 small preflight (4.50 s of 5.29 s). Caching checkout identity per normalized directory is process-
-local and semantics-preserving; environment store/TM overrides remain outside the cache. Promotion
-also scanned the 26 MB canonical store twice although its receipt already had exact row counts.
+local and semantics-preserving; environment store/TM overrides remain outside the cache, and Git
+failures are deliberately not cached. Promotion also scanned the 26 MB canonical store twice
+although its receipt already had exact row counts.
 
 The frozen H1339 fixture was run once before and once after (`warmups=0`, `runs=1`, identical
 Python/platform/fixture). This is a smoke comparison, not a statistical benchmark, but the output
@@ -178,10 +181,11 @@ signature was exactly identical:
 | Store write | 4.270 s | 1.989 s | -53.4% |
 | **Total** | **17.842 s** | **11.354 s** | **-36.4%** |
 
-Next low-risk speed work is to snapshot directory names once per audit rather than rebuilding
-`set(os.listdir(...))` per card. Higher-risk work is to avoid full harness rebuilds per preflight
-partition, cache TM/denylist reads by file signature, move scans outside the claim lock, and add
-cohort dispatch.
+The final low-risk pass also snapshots directory names once per audit rather than rebuilding
+`set(os.listdir(...))` per card; that landed after the frozen comparison above, so its incremental
+effect is deliberately not included in the −36.4% claim. Higher-risk work is to avoid full harness
+rebuilds per preflight partition, cache TM/denylist reads by file signature, move scans outside the
+claim lock, and add cohort dispatch.
 
 ## Verification specification
 

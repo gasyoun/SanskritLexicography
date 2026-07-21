@@ -1709,7 +1709,6 @@ def promote_ready(args):
             batch.append({'lease_id': lease['id'],
                           'glob': os.path.abspath(source),
                           'expected_subcards': sorted({row.get('key') for row in clean_rows})})
-        store_before = nonempty_line_count(promote_final_cards.DEFAULT_STORE)
         batch_dir = ready[0].get('artifact_dir') or paths()['artifacts']
         batch_manifest = os.path.join(batch_dir, 'batch_promotion.manifest.json')
         batch_report = os.path.join(batch_dir, 'batch_promotion.report.json')
@@ -1717,7 +1716,6 @@ def promote_ready(args):
         run_cmd([sys.executable, os.path.join(SRC, 'promote_final_cards.py'),
                  '--batch-manifest', batch_manifest, '--report', batch_report,
                  '--gen-model-version', args.gen_model_version])
-        store_after = nonempty_line_count(promote_final_cards.DEFAULT_STORE)
         # P10 (H1420): the batch promote above is all-or-nothing and raises on failure, so reaching
         # here means the store IS committed. From this point the RU TM MUST be rebuilt to match the
         # committed store -- otherwise a raise while reading the batch report or updating per-lease
@@ -1725,9 +1723,19 @@ def promote_ready(args):
         # partial-promotion raise still lands a consistent TM.
         try:
             try:
-                landed = json.load(open(batch_report, encoding='utf-8'))['leases']
-            except (OSError, KeyError, json.JSONDecodeError) as e:
+                batch_payload = json.load(open(batch_report, encoding='utf-8'))
+                if not isinstance(batch_payload, dict):
+                    raise TypeError('top level is not an object')
+                landed = batch_payload['leases']
+                store_before = batch_payload['store_rows_before']
+                store_after = batch_payload['store_rows_after']
+            except (OSError, KeyError, TypeError, json.JSONDecodeError) as e:
                 raise SystemExit('batch promotion report unreadable: %s' % e)
+            if (batch_payload.get('schema') != 'pwg.batch_promotion.v1'
+                    or not isinstance(landed, dict)
+                    or any(not isinstance(value, int) or isinstance(value, bool) or value < 0
+                           for value in (store_before, store_after))):
+                raise SystemExit('batch promotion report has invalid schema/store counters')
             for lease in ready:
                 per = landed.get(lease['id']) or {}
                 if lease.get('clean_count') and not per.get('subcards'):
