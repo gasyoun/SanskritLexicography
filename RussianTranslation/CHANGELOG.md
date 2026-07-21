@@ -37,6 +37,24 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   `coordinator.py` `LANG_PARITY.md` SHARED entries were re-verified and re-hashed. `window_selftest` 175/175;
   `lang_parity_check` no drift.
 
+### Fixed — EN promotion store write is now durable (fsync-before-replace); P1 verified already-fixed (H1421)
+
+- **P9 (bug-hunt plausible, now fixed):** [`promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py)'s
+  tri-lingual store write was a bare `open('w')` + `os.replace` — **atomic but not durable**: a
+  crash/power-loss between the write and the metadata flush could leave a non-durable/truncated
+  store even after the rename (and under `--no-backup` that write is the ONLY thing between an
+  interrupted write and total loss). It now reuses the RU lane's fsynced `_atomic_write_rows`
+  (imported from [`promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_final_cards.py) —
+  `flush()`+`os.fsync()` before `os.replace`), single-sourcing the store writer across both lanes
+  (as a bonus both now write `\n` newlines; the old EN write CRLF-translated on Windows). Pinned by
+  a new P9 block in `promote_en.selftest()` (fsync-called + round-trip + single-source identity).
+  The `promotion_scripts_separate` LANG_PARITY note records the SHARED reuse.
+- **P1 (bug-hunt plausible, verified already-fixed):** the concern that `merge_store_rows` replaced
+  by sub-card unconditionally — silently downgrading a complete store card when an older/partial
+  `wf_output` is re-promoted — was **already resolved upstream by B08 (H1339)**: `merge_store_rows`
+  is better-attempt-wins (complete > partial, fewer missing fragments win, ties favour the incoming
+  attempt) with pinned regression selftests. No code change needed; recorded for the audit trail.
+
 ### Changed — EN/RU convergence W2: shared cross-reference vocabulary + audit reassessment (H1425)
 
 - The cross-reference / degenerate-passthrough vocabulary (`s.`, `vgl.`, `u.`, `Nachträge`, …)

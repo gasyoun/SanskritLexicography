@@ -56,10 +56,13 @@ sys.stderr.reconfigure(encoding='utf-8')
 import pipeline_version
 from promote_lock import PromoteClaim, ClaimBusy
 from store_path import canonical_store
-# C6/C9: reuse the RU lane's EXACT guards (single source — a look-alike copy is precisely the drift
-# that C3 was). TN_RE + UnrestoredPlaceholder refuse a card with an unrestored {Tn} placeholder;
-# _fsynced_backup is the O_EXCL fsynced copier so an EN backup can never overwrite a recovery copy.
-from promote_final_cards import TN_RE, UnrestoredPlaceholder, _fsynced_backup
+# C6/C9/P9: reuse the RU lane's EXACT guards (single source — a look-alike copy is precisely the
+# drift that C3 was). TN_RE + UnrestoredPlaceholder refuse a card with an unrestored {Tn}
+# placeholder; _fsynced_backup is the O_EXCL fsynced copier so an EN backup can never overwrite a
+# recovery copy; _atomic_write_rows is the fsync-before-replace store writer (H1421 P9), so the EN
+# store write is as durable as the RU one — not merely atomic.
+from promote_final_cards import (
+    TN_RE, UnrestoredPlaceholder, _fsynced_backup, _atomic_write_rows)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -305,6 +308,30 @@ def selftest():
             assert False, 'C9: the O_EXCL backup must refuse an existing destination'
         except FileExistsError:
             pass
+    # P9 (H1421): the EN store write now reuses the RU lane's fsynced _atomic_write_rows (single
+    # source) rather than a bare open('w')+os.replace with no fsync — a crash/power-loss between
+    # the write and the rename can no longer leave a non-durable/truncated tri-lingual store. Pin
+    # that the exact writer main() calls fsyncs BEFORE it renames, and round-trips the rows.
+    import promote_final_cards as _pfc
+    assert _atomic_write_rows is _pfc._atomic_write_rows, \
+        'P9: the EN store writer must BE the RU lane primitive (single source, not a look-alike copy)'
+    fsynced = []
+    real_fsync = os.fsync
+
+    def _spy_fsync(fd):
+        fsynced.append(fd)
+        return real_fsync(fd)
+    os.fsync = _spy_fsync
+    try:
+        with _tf.TemporaryDirectory() as _d:
+            _s = os.path.join(_d, 'store.jsonl')
+            _atomic_write_rows(_s, [{'subcard': 'p_a~~h0', 'ru': 'пить', 'en': 'to drink'}])
+            assert fsynced, 'P9: the EN store write must fsync before os.replace (durability)'
+            _back = [json.loads(l) for l in open(_s, encoding='utf-8') if l.strip()]
+            assert _back == [{'subcard': 'p_a~~h0', 'ru': 'пить', 'en': 'to drink'}], \
+                'P9: rows must round-trip through the durable writer'
+    finally:
+        os.fsync = real_fsync
     print('promote_en selftest OK')
 
 
@@ -389,14 +416,14 @@ def main():
                 bak = _en_backup_path(args.store)
                 _fsynced_backup(args.store, bak)
                 print('\nbacked up store -> %s' % os.path.basename(bak))
-            # Atomic write: temp file + os.replace so a crash/kill mid-write cannot truncate
-            # the tri-lingual store (the "EN layer wiped" scar). Under --no-backup this is the
-            # ONLY thing standing between an interrupted write and total loss.
-            tmp = args.store + '.tmp'
-            with open(tmp, 'w', encoding='utf-8') as f:
-                for row in rows:
-                    f.write(json.dumps(row, ensure_ascii=False) + '\n')
-            os.replace(tmp, args.store)
+            # Durable atomic write: the RU lane's _atomic_write_rows — mkstemp temp,
+            # fh.flush() + os.fsync() BEFORE os.replace (H1421 P9). The old bare
+            # open('w')+os.replace was atomic but NOT durable: a crash/power-loss between the
+            # write and the metadata flush could leave a non-durable/truncated store even after
+            # the rename. Under --no-backup this write is the ONLY thing standing between an
+            # interrupted write and total loss, so it must be genuinely durable. Single-sourced
+            # with the RU bridge, so both lanes write the store byte-identically ('\n' newlines).
+            _atomic_write_rows(args.store, rows)
             print('wrote tri-lingual store -> %s (%d rows, %d now carry en)'
                   % (os.path.relpath(args.store, ROOT), len(rows), stats['attached']))
             print('NEXT: re-run `python src/annotate_dcs_freq.py` to (re)attach the dcs_freq block.')
