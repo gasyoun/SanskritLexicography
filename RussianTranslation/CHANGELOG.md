@@ -10,6 +10,25 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed — EN/RU convergence W2: shared cross-reference vocabulary + audit reassessment (H1425)
+
+- The cross-reference / degenerate-passthrough vocabulary (`s.`, `vgl.`, `u.`, `Nachträge`, …)
+  was two **byte-identical independently-authored copies** — `gen_opt_harness2._DEGENERATE_WORDS`
+  (RU generation lane) and `audit_window_en._XREF_WORDS` (EN auditor) — the C-01 drift class the
+  codebase already consolidated `portrait_key_iast` for. Extracted to a **dependency-free** shared
+  module
+  [`xref_vocab.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/xref_vocab.py)
+  both import (the EN auditor deliberately can't pull in the harness's heavy `pwg_mask`/`corpus_gate`
+  stack). Behaviour-preserving; pinned by `test_degenerate_xref_vocab_single_source` (asserts object
+  identity). New SHARED ledger entry `degenerate_xref_vocab_shared`.
+- **Reassessment finding (recorded in the ledger):** reading both auditors showed W2's convergence
+  target is materially smaller than first scoped. `audit_window_en`'s reusable surfaces are *already*
+  shared — the German-residue word list via `foreign_literal_guards.py`, the whole-dropped-sense
+  SAN-LOSS gate via `sense_count.py` — and its remaining gates (`DUP`/`MISSING-EN`/`MARKUP-LOSS`/
+  `xref_only`/`nws_de_locked`) are EN-audit-time-specific **by architecture** (RU per-card fidelity is
+  *generation-time* in the harness `accept()`/`countOfField`, not a symmetric Python auditor), i.e.
+  intentional divergence — not a wholesale reimplementation to force-merge.
+
 ### Changed — EN/RU convergence W1: card-done coverage rule extracted to one shared `--lang` kernel (H1425)
 
 - First wave of shrinking the EN-reimplementation surface (the root cause of the RU/EN drift the

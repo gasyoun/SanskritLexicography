@@ -6756,6 +6756,24 @@ def test_h1283_a6_prep_slice_flattens_batches():
     print('  A6: prep_slice flattens every batch key')
 
 
+def test_degenerate_xref_vocab_single_source():
+    """H1425 W2: the cross-reference / degenerate-passthrough vocabulary is ONE shared frozenset,
+    consumed by both the RU generation lane (gen_opt_harness2.degenerate_passthrough_card) and the
+    EN auditor (audit_window_en.xref_only) — it used to be two independently-authored copies (the
+    C-01 drift class). Assert both reference the same object (can't drift), and that xref_vocab is
+    dependency-free so the EN auditor can import it without the heavy harness stack."""
+    import gen_opt_harness2 as gh
+    import audit_window_en as en
+    import xref_vocab
+    if gh._DEGENERATE_WORDS is not xref_vocab.DEGENERATE_XREF_WORDS:
+        fail('gen_opt_harness2._DEGENERATE_WORDS must BE the shared xref_vocab set, not a copy')
+    if en._XREF_WORDS is not xref_vocab.DEGENERATE_XREF_WORDS:
+        fail('audit_window_en._XREF_WORDS must BE the shared xref_vocab set, not a copy')
+    # behaviour intact through the shared set (cross-ref residue -> True; a real gloss -> False)
+    if not en.xref_only('s. {#foo#} fgg.') or en.xref_only('{%real gloss%}'):
+        fail('xref_only behaviour changed after the vocab extraction')
+
+
 def test_card_coverage_lang_symmetric():
     """H1425 W1: the FL4 coverage-complete rule lives in ONE --lang-parameterized kernel
     (`card_coverage`), so a fix reaches both languages instead of an EN-only reimplementation.
@@ -7135,6 +7153,7 @@ def main():
         test_lang_parity_ledger_complete,
         test_lang_parity_coverage,
         test_card_coverage_lang_symmetric,
+        test_degenerate_xref_vocab_single_source,
         test_lang_parity_hash_crlf_independent,
         test_frag_groups_presplit_parity,
         test_defect_fragment_denylist_round_trip,
