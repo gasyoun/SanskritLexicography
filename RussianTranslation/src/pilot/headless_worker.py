@@ -240,6 +240,21 @@ def count_card(card, needle):
                for sense in record.get('senses') or [])
 
 
+def count_card_field(card, field, needle):
+    """Count `needle` across the card's per-sense TARGET-language field (russian/english).
+
+    H1152 parity (C1): count_card above proves only that the `german` SOURCE echo is faithful.
+    A {#..#}/<ls> span can be dropped from the translation field alone (german 33/33, english
+    32/33 -- the live H1070 r102 pattern) with zero effect on the german count, so a
+    translation-only span drop reached the store on this lane. The JS batch accept() closed
+    this with countOfField(TARGET_FIELD); the headless normalize_batch (now the production
+    route) never did. Same source-occurrence denominator (inp['ls']/inp['sk']) as count_card.
+    """
+    return sum((sense.get(field) or '').count(needle)
+               for record in card.get('records') or []
+               for sense in record.get('senses') or [])
+
+
 def normalize_batch(manifest, keys, structured):
     by_key = {}
     for card in structured['cards']:
@@ -265,8 +280,15 @@ def normalize_batch(manifest, keys, structured):
             card = restore_card(card, manifest['field'],
                                 manifest['placeholder_maps'].get(key, []), unmapped)
             inp = manifest['inputs'][key]
+            field = manifest['field']
             if count_card(card, '<ls') != inp['ls'] or count_card(card, '{#') != inp['sk']:
                 error = 'fidelity-reject'
+                card = None
+            elif (count_card_field(card, field, '<ls') != inp['ls']
+                  or count_card_field(card, field, '{#') != inp['sk']):
+                # H1152 parity (C1): german echo is faithful, but the translation dropped a
+                # span -- requeue instead of promoting a lossy card.
+                error = 'translation-fidelity-reject'
                 card = None
             elif unmapped:
                 # C-42: an out-of-range {Tn} maps nothing and cannot be recovered downstream.
@@ -636,6 +658,15 @@ class HeadlessEngine:
             if ls_count != inp['ls'] or sk_count != inp['sk']:
                 self.note(key, 'stitched-fidelity-reject: <ls> %d/%d, {# %d/%d' %
                           (ls_count, inp['ls'], sk_count, inp['sk']))
+                return None
+            # H1152 parity (C1): the german counts above are the SOURCE echo. Run the same count
+            # over the TARGET field so a translation-only span drop on the headless heal lane is
+            # rejected instead of stitched and promoted (twin of the JS selfHeal check).
+            field = self.m['field']
+            ls_t, sk_t = count_card_field(card, field, '<ls'), count_card_field(card, field, '{#')
+            if ls_t != inp['ls'] or sk_t != inp['sk']:
+                self.note(key, 'stitched-translation-fidelity-reject: %s <ls> %d/%d, {# %d/%d' %
+                          (field, ls_t, inp['ls'], sk_t, inp['sk']))
                 return None
         # C-42: a {Tn} whose index maps nothing used to be written through verbatim on a card
         # that reported success -- that is how `ban_d~~h0_11_ni` and `ban_d~~h0_21_upasam_0`
