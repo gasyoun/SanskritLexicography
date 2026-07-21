@@ -288,14 +288,22 @@ def audit_card(result, tm, do_mw):
             # a real duplicate is a real duplicate whether it's one word or ten.
             # SAME-GLOSS (soft): kept as a lower-confidence variant gated on >=3 content
             # words, for callers that only want the historical soft signal.
+            # C2: the DUP key is the normalized RAW english, NOT prose() — prose() strips {#..#}
+            # Sanskrit and <ls> citations, so two senses distinguished ONLY by their referent
+            # ("N. of a serpent-demon {#vAsuki#}" vs "…{#takzaka#}") collapsed to one string and
+            # the second was wrongly HARD-DUP'd, failing --strict on faithful output. The gate's
+            # own contract ("the EXACT same english") requires KEEPING the referent; CIRCULAR
+            # above keeps prose() `norm` (a gloss that is only the transliterated headword IS
+            # circular even with its {#..#} stripped).
+            dup_key = re.sub(r'\s+', ' ', (s.get('english') or '')).strip().lower()
             headerlike = any(hk in tag for hk in HEADERLIKE)
-            if norm and not headerlike:
-                if norm in seen:
-                    hard.append('DUP(=%s)' % seen[norm])
+            if dup_key and not headerlike:
+                if dup_key in seen:
+                    hard.append('DUP(=%s)' % seen[dup_key])
                     if len(words) >= 3:
-                        soft.append('SAME-GLOSS(=%s)' % seen[norm])
+                        soft.append('SAME-GLOSS(=%s)' % seen[dup_key])
                 else:
-                    seen[norm] = tag
+                    seen[dup_key] = tag
             for fl in hard + soft:
                 flags.append((loc, fl))
         if do_mw and tm is not None:

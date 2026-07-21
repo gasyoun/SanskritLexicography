@@ -10,6 +10,29 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — EN DUP gate false-flags distinct referents (C2) + EN promote {Tn} guard (C6) (H1414)
+
+- **C2 — the EN within-card `DUP` HARD gate false-flagged distinct proper-name senses.**
+  [`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py)
+  keyed the duplicate check on `prose(english)`, which **strips** `{#..#}` Sanskrit and `<ls>`
+  citations — so two senses distinguished only by their referent (`N. of a serpent-demon
+  {#vāsuki#}` vs `…{#takṣaka#}`) normalized to one string and the second was reported as a HARD
+  `DUP`, failing `--strict` on faithful output (310 real within-record cases across the EN
+  wf files). Fixed to key the DUP `seen`-dict on the normalized **raw** english (referent
+  preserved), matching the gate's own contract ("the exact same english"); the `CIRCULAR` check
+  keeps prose-`norm`, and a true identical-english duplicate is still caught HARD.
+- **C6 — the EN promote lane had no unrestored-`{Tn}` guard.** `promote_en.py` `attach()` wrote
+  `r['en'] = en` with no residue check, while the RU lane refuses a card carrying a `{Tn}` mask
+  placeholder (`promote_final_cards` C-01 → `UnrestoredPlaceholder`). Fixed by **importing** the
+  RU lane's exact `TN_RE` + `UnrestoredPlaceholder` (single source — a look-alike copy is the
+  drift that C3 was) and refusing loudly, before any backup/store write.
+- Found by the Opus 4.8 (`claude-opus-4-8`) adversarial bug-hunt review (findings C2/C6 of
+  [issue #632](https://github.com/gasyoun/SanskritLexicography/issues/632)). Selftests:
+  `window_selftest` (`test_en_dup_gate_preserves_sanskrit_referent_c2`) and
+  `promote_en --selftest` (C6 refusal block). Recorded in
+  [`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md)
+  (`en_dup_hard_gate_20260704`, `promotion_scripts_separate`).
+
 ### Added — speed & orchestration audit: bottleneck ledger + verified action map (H1403)
 
 - [`PWG_RU_SPEED_ORCHESTRATION_BOTTLENECK_AUDIT_2026-07-20.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_RU_SPEED_ORCHESTRATION_BOTTLENECK_AUDIT_2026-07-20.md)
