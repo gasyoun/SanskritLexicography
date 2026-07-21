@@ -1,11 +1,32 @@
 # Digital Sanskrit Lexicography (Brill monograph) — changelog
 
-_Created: 07-07-2026 · Last updated: 18-07-2026_
+_Created: 07-07-2026 · Last updated: 21-07-2026_
 
 Tracks changes to the book build plan and any future manuscript/front-matter drafts in this
 folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 
 ## [Unreleased]
+
+### Fixed — 21-07-2026 (H1381, headline-figure propagation: 5.6M→5.7M, 50,953→52,498, 210→208)
+
+- **The known supersession finally propagated to the points of use** (Fable 5
+  `claude-fable-5`; red-team class C7, defect class known-stale-figure-left-standing — the
+  plan's §11 done-log and [BOOK_PLAN.meta.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.meta.md)
+  had recorded the 52,498-event supersession on 13-07-2026 without touching §1/§2/§6):
+  [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md)
+  §1 corpus size 5.6M→5.7M-token (a truncation of §6.1's 5,688,416 content tokens, not a
+  rival measurement), §2 and the §6 data table 50,953→**52,498** events with the release
+  pin (2014-03-18 → 2026-05-30 snapshot), and
+  [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md)
+  lines 46/152 — the publisher-facing surface, outside everything the H1269 red-team read.
+  A third stale figure in the same rows fixed on CSV evidence: the released
+  `correction_events_release.csv` (sha256-verified against the origin LFS pointer) holds
+  **208** unique correctors, not 210.
+  [ch14](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch14_error_typology.md)'s
+  provenance note made explicitly historical so it no longer describes a live state of the
+  plan. Chapter sweep of all 21 files under `chapters/`: **clean** — zero stale-figure
+  inheritance (converts the red-team's UNMEASURED to MEASURED-CLEAN). Historical records
+  (§11 done-log, metadoc, this changelog, `.ai_state.md`) deliberately untouched.
 
 ### Added — 18-07-2026 (H1240, Ch. 3 + Ch. 11: the last two chapters — 14 of 14 in book form)
 

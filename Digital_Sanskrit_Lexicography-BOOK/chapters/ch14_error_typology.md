@@ -1,6 +1,6 @@
 # Chapter 14 — Surface, Not Substance: An Error Typology of Twelve Years of Collaborative Correction
 
-_Created: 13-07-2026 · Last updated: 13-07-2026_
+_Created: 13-07-2026 · Last updated: 21-07-2026_
 
 > **Provenance.** This chapter is the book-form version of the article *Surface, Not Substance:
 > A Two-Axis Error Typology of Twelve Years of Correction to the Cologne Digital Sanskrit
@@ -10,8 +10,9 @@ _Created: 13-07-2026 · Last updated: 13-07-2026_
 > the article must remain independently citable, cite that version. Every count and table below
 > is carried over from the article unchanged and is reproducible from the committed corpus
 > ([`correction_events_release.csv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/observatory/site/src/data/correction_events_release.csv),
-> CC-BY-4.0). The figures are the released **52,498-event** snapshot (2014–2026); the book's
-> data inventory listed an earlier 50,953-event cut, superseded here. Only the framing has been
+> CC-BY-4.0). The figures are the released **52,498-event** snapshot (2014–2026); an earlier
+> draft of the book's data inventory listed a 50,953-event cut, superseded here and since
+> corrected in the plan itself (21-07-2026). Only the framing has been
 > converted from journal to book form — the abstract and keywords removed, companion-paper
 > labels remapped to this book's chapters, and the collaborative-lexicography literature engaged
 > at the monograph's depth. Section numbering is chapter-internal (§1–§8).

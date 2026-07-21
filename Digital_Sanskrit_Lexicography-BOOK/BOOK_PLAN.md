@@ -1,6 +1,6 @@
 # How to Make the Brill Book — *Digital Sanskrit Lexicography*
 
-_Created: 06-07-2026 · Last updated: 18-07-2026_
+_Created: 06-07-2026 · Last updated: 21-07-2026_
 
 A build plan for a single-authored English monograph at Brill, drawn from work already
 committed across the `sanskrit-lexicon` / `gasyoun` GitHub repos, and coordinated with
@@ -57,7 +57,7 @@ Part II, confirmed by MG:
 > (`observed | derived | inferred | reviewed`), (c) corpus attestation where available,
 > and (d) review provenance. Sanskrit — with **two parallel lexicographic civilizations**
 > (European 1832–1957 and indigenous kośa/Pāṇinian), nineteen centuries of depth, and a
-> 5.6M-token tagged corpus — is the ideal testbed. What is new versus ELEXIS / Lexonomy /
+> 5.7M-token tagged corpus — is the ideal testbed. What is new versus ELEXIS / Lexonomy /
 > TEI-Lex0 is that those standardize *encoding*; this book standardizes *epistemics*:
 > graded, reviewable, corpus-anchored evidence per statement, with the indigenous tradition
 > as first-class data, not exotic noise.
@@ -102,7 +102,7 @@ chapter), **A37** (orthographic drift as a dater — a philology chapter).
 > ✅ **A12 authorship confirmed sole-authored (08-07-2026).** The
 > [OBS-T draft](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/obs_t_paper_draft.md)
 > byline is **Mārcis Gasūns** alone; Jim Funderburk and Dhaval Patel appear only as
-> *correctors within the dataset* (the 50,953 events) and as acknowledgees, not co-authors
+> *correctors within the dataset* (the 52,498 events) and as acknowledgees, not co-authors
 > (contrast the genuinely co-authored A13/A14, correctly excluded). **Ch. 15 = A12 locks;**
 > no swap to A48 needed.
 
@@ -212,7 +212,7 @@ The book's evidentiary base already exists as committed datasets. Highest-value 
 | 5 (A16) | MW block-economy tables/figures (MWS) | 286,561 entries; G5 P 0.86 / R 0.87 | figures 1–3 |
 | 9 (A35) | `mw_etymology.tsv` + oracle (csl-orig) | 9,377 derivations, 10 dicts | derivation-agreement figure |
 | 11/12 (A08/A50) | `<ls>` citation graph (csl-atlas) | 828,505 citations → 912 texts | flagship network figure |
-| 15 (A12) | `correction_events_release.csv` (csl-observatory) | 50,953 events × 43 dicts × 210 correctors | figure + appendix dataset |
+| 15 (A12) | `correction_events_release.csv` (csl-observatory) | 52,498 events × 43 dicts × 208 correctors (released snapshot, 2014-03-18 → 2026-05-30) | figure + appendix dataset |
 | — (data-hub) | [kosha data-v0.1.0](https://github.com/gasyoun/kosha/releases/tag/data-v0.1.0) | 7 datasets, ~718k rows, CC BY-SA | appendix manifest |
 
 **Data blockers (the real critical path — see §9):**
@@ -617,6 +617,21 @@ map. Cited by Ch. 3/5/11/13 (the post-merge numbering of the "Ch. 3/5/12/14" nam
   pass, and two **semantics inversions** were caught and fixed: ch02 §6.2/§6.4 and
   BRILL_PROPOSAL described VEI 69.8 % … SKD 14.1 % as *absence* rates — they are
   **attestation** rates per A40 §4.4 (VEI 2,584-of-3,704 attested).
+
+**Done 21-07-2026 (H1381 execution, Fable 5 `claude-fable-5`):**
+- ✅ **Headline-figure propagation completed — the supersession this log recorded on
+  13-07-2026 (H863) had never reached the two points of use.** §1's corpus size read
+  5.6M-token (a truncation of the §6.1 disclosure's 5,688,416 content tokens, which rounds
+  to 5.7M — not a rival measurement) and §2/§6 still carried the 50,953-event cut that A31
+  §3 and this log's own H863 entry had already declared superseded by the released
+  **52,498-event** snapshot. Fixed here (§1, §2, §6 data table) and in
+  [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md)
+  lines 46/152 — the publisher-facing surface the H1269 red-team's headline-only sweep never
+  read. The §6 row's corrector count was also stale: the released
+  `correction_events_release.csv` (52,498 rows, sha256-pinned) contains **208** unique
+  correctors, not 210 — verified against the CSV itself. Defect class: known-stale-figure
+  left standing (red-team C7, §4.6), not an undiscovered error. Chapter sweep of all 21
+  files under `chapters/`: clean — zero stale figures inherited.
 
 **Still to do** (re-ordered 18-07-2026 per the §10 ruling 4; the old item 2 — "convert A16/A01
 as sample chapters" — was stale, both landed as
