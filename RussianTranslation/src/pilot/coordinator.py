@@ -118,6 +118,20 @@ def ensure_dirs():
     return p
 
 
+ERROR_INVALID_PARAMETER = 87  # OpenProcess for a nonexistent pid -> definitively dead
+
+
+def _win32_alive_on_openprocess_error(err):
+    # P2 (H1420): OpenProcess failed, so the pid must be ruled alive-or-dead from the error alone.
+    # The ONLY error that definitively proves the pid is gone is ERROR_INVALID_PARAMETER (87 = no
+    # such pid). Everything else -- ERROR_ACCESS_DENIED (5, a live process we merely lack rights to
+    # open), a transient handle/-memory error, or any unexpected code -- must lean ALIVE, so a live
+    # lock-holder is never falsely reported dead and reclaimed into two writers (the A1
+    # double-writer window, H1283). The prior `err == ERROR_ACCESS_DENIED` inverted this: it
+    # reported DEAD for every error except 5 -- the unsafe direction on any transient probe error.
+    return err != ERROR_INVALID_PARAMETER
+
+
 def _win32_pid_alive(pid):
     # A1 (H1283): os.kill(pid, 0) on win32 is GenerateConsoleCtrlEvent(CTRL_C_EVENT), NOT a
     # liveness probe -- it reported a LIVE >600 s promotion-lock holder (whose TM rebuild
@@ -128,16 +142,12 @@ def _win32_pid_alive(pid):
     from ctypes import wintypes
     PROCESS_QUERY_LIMITED_INFORMATION = 0x1000
     STILL_ACTIVE = 259
-    ERROR_ACCESS_DENIED = 5
     k32 = ctypes.WinDLL('kernel32', use_last_error=True)
     k32.OpenProcess.restype = wintypes.HANDLE
     k32.OpenProcess.argtypes = [wintypes.DWORD, wintypes.BOOL, wintypes.DWORD]
     h = k32.OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, False, pid)
     if not h:
-        # A live process we simply lack rights to open (ERROR_ACCESS_DENIED) is still ALIVE;
-        # ERROR_INVALID_PARAMETER (87) = no such pid -> dead. Lean 'alive' on anything else so
-        # a lock is never falsely reclaimed (the A1 failure direction we are closing).
-        return ctypes.get_last_error() == ERROR_ACCESS_DENIED
+        return _win32_alive_on_openprocess_error(ctypes.get_last_error())
     try:
         code = wintypes.DWORD()
         k32.GetExitCodeProcess.argtypes = [wintypes.HANDLE, ctypes.POINTER(wintypes.DWORD)]
@@ -1360,6 +1370,19 @@ def record_output(args):
         state = load_state()
         lease = lease_by_id(state, args.lease_id)
         token = begin_operation(lease, ('running',), 'auditing', 'record-output')
+        # P11 (H1420): record-output gates only on state=='running', so after a run is
+        # released/recovered and the lease re-run, a STALE workflow_result from the prior run would
+        # be recorded against the NEW run (silent misattribution -> a zombie run's output promoted).
+        # When the operator carries the run identity (--run-id, sealed at begin-run), require it
+        # match the running lease's run_id; a mismatch is a stale/zombie submission -> refuse before
+        # any state is persisted. Raising here discards begin_operation's in-memory mutation (state
+        # is not saved yet), leaving the on-disk lease 'running' for a correct retry.
+        supplied_run_id = getattr(args, 'run_id', None)
+        if supplied_run_id is not None and supplied_run_id != lease.get('run_id'):
+            raise SystemExit(
+                '%s: record-output --run-id %r does not match the running lease run-id %r '
+                '(stale/zombie run submission refused)' %
+                (args.lease_id, supplied_run_id, lease.get('run_id')))
         save_state(state)
         working = copy.deepcopy(lease)
     try:
@@ -1567,6 +1590,22 @@ def prepare_requeue(args):
     print('harness: %s' % harness)
 
 
+def rebuild_ru_translation_memory():
+    """Rebuild + validate the RU translation memory from the committed canonical store. Must run
+    after any store-mutating promotion -- including from a `finally` -- so a mid-promotion raise
+    can never leave store and TM divergent (P10, H1420)."""
+    run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'build', '--lang', 'ru'])
+    # C7: detection and the build-frags call MUST target the same tree (see _frag_prov_glob).
+    # build_frags joins its --glob with REPO, but this pattern is absolute (coord_dir() abspath's),
+    # so that join is a no-op and both sides resolve to the same coordinator dir.
+    frag_glob = _frag_prov_glob()
+    if any('"frag_prov"' in open(fp, encoding='utf-8').read()
+           for fp in glob.glob(frag_glob)):
+        run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'build-frags',
+                 '--lang', 'ru', '--glob', frag_glob])
+    run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'validate', '--lang', 'ru'])
+
+
 def promote_ready(args):
     if not args.gen_model_version or args.gen_model_version in ('sonnet', 'claude-sonnet'):
         raise SystemExit('exact --gen-model-version is required')
@@ -1631,44 +1670,42 @@ def promote_ready(args):
                  '--batch-manifest', batch_manifest, '--report', batch_report,
                  '--gen-model-version', args.gen_model_version])
         store_after = nonempty_line_count(promote_final_cards.DEFAULT_STORE)
+        # P10 (H1420): the batch promote above is all-or-nothing and raises on failure, so reaching
+        # here means the store IS committed. From this point the RU TM MUST be rebuilt to match the
+        # committed store -- otherwise a raise while reading the batch report or updating per-lease
+        # state leaves store and TM divergent until the next clean run. Rebuild in a `finally` so a
+        # partial-promotion raise still lands a consistent TM.
         try:
-            landed = json.load(open(batch_report, encoding='utf-8'))['leases']
-        except (OSError, KeyError, json.JSONDecodeError) as e:
-            raise SystemExit('batch promotion report unreadable: %s' % e)
-        for lease in ready:
-            per = landed.get(lease['id']) or {}
-            if lease.get('clean_count') and not per.get('subcards'):
-                raise SystemExit('%s: batch promotion landed no subcards for the lease'
-                                 % lease['id'])
-            has_pending = lease_pending[lease['id']]
-            with DirLock(paths()['lock']):
-                state = load_state()
-                fresh = lease_by_id(state, lease['id'])
-                fresh['state'] = 'promoted_partial' if has_pending else 'promoted'
-                fresh['promoted_at'] = utc_now()
-                fresh['model_version'] = args.gen_model_version
-                fresh['store_before'] = store_before
-                fresh['store_after'] = store_after
-                fresh['store_delta'] = store_after - store_before
-                fresh['promoted_subcards'] = per.get('subcards')
-                fresh['promoted_rows'] = per.get('rows')
-                save_state(state)
-                registry_event(fresh, 'promoted', {'glob': lease['clean_output'],
-                                                   'store_before': store_before,
-                                                   'store_after': store_after,
-                                                   'store_delta': store_after - store_before,
-                                                   'batch_subcards': per.get('subcards'),
-                                                   'batch_rows': per.get('rows')})
-        run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'build', '--lang', 'ru'])
-        # C7: detection and the build-frags call MUST target the same tree (see _frag_prov_glob).
-        # build_frags joins its --glob with REPO, but this pattern is absolute (coord_dir()
-        # abspath's), so that join is a no-op and both sides resolve to the same coordinator dir.
-        frag_glob = _frag_prov_glob()
-        if any('"frag_prov"' in open(fp, encoding='utf-8').read()
-               for fp in glob.glob(frag_glob)):
-            run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'build-frags',
-                     '--lang', 'ru', '--glob', frag_glob])
-        run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'validate', '--lang', 'ru'])
+            try:
+                landed = json.load(open(batch_report, encoding='utf-8'))['leases']
+            except (OSError, KeyError, json.JSONDecodeError) as e:
+                raise SystemExit('batch promotion report unreadable: %s' % e)
+            for lease in ready:
+                per = landed.get(lease['id']) or {}
+                if lease.get('clean_count') and not per.get('subcards'):
+                    raise SystemExit('%s: batch promotion landed no subcards for the lease'
+                                     % lease['id'])
+                has_pending = lease_pending[lease['id']]
+                with DirLock(paths()['lock']):
+                    state = load_state()
+                    fresh = lease_by_id(state, lease['id'])
+                    fresh['state'] = 'promoted_partial' if has_pending else 'promoted'
+                    fresh['promoted_at'] = utc_now()
+                    fresh['model_version'] = args.gen_model_version
+                    fresh['store_before'] = store_before
+                    fresh['store_after'] = store_after
+                    fresh['store_delta'] = store_after - store_before
+                    fresh['promoted_subcards'] = per.get('subcards')
+                    fresh['promoted_rows'] = per.get('rows')
+                    save_state(state)
+                    registry_event(fresh, 'promoted', {'glob': lease['clean_output'],
+                                                       'store_before': store_before,
+                                                       'store_after': store_after,
+                                                       'store_delta': store_after - store_before,
+                                                       'batch_subcards': per.get('subcards'),
+                                                       'batch_rows': per.get('rows')})
+        finally:
+            rebuild_ru_translation_memory()
     print('promoted %d lease(s)' % len(ready))
 
 
@@ -1800,6 +1837,9 @@ def main(argv=None):
     r.add_argument('workflow_result')
     r.add_argument('--transcript-dir')
     r.add_argument('--allow-stale', action='store_true')
+    r.add_argument('--run-id',
+                   help='if set, must match the running lease run_id sealed at begin-run '
+                        '(P11: refuses a stale/zombie run recording against a re-leased run)')
     r.set_defaults(func=record_output)
     rq = sub.add_parser('prepare-requeue')
     rq.add_argument('lease_id')
