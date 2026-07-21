@@ -503,6 +503,80 @@ def test_k_requeue_materialisation(td):
           'unmaterialisable; audit reads the origin lease; rq-of-rq keeps the true origin: PASS')
 
 
+def test_l_resume_recovers_abandoned_jobs(td):
+    """H1386 C1: --resume must reset THIS plan's abandoned in_progress jobs to pending.
+
+    The pre-fix code passed the whole staged_plan_scope DICT as only_external_ids, so
+    _scope_sql iterated its KEYS ('expected_headwords', 'lease_ids', ...) and the recovery
+    UPDATE matched zero jobs -- a crashed window then checkpointed COMPLETED with zero
+    output while its stuck in_progress job blocked the account for every future claim."""
+    plan = _plan(['no_pwg_w02'])
+    plan_path = os.path.join(td, 'l_plan.json')
+    with open(plan_path, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump(plan, f)
+    coord = os.path.join(td, 'l_coord'); os.makedirs(coord)
+    with open(os.path.join(coord, 'state.json'), 'w', encoding='utf-8', newline='\n') as f:
+        json.dump({'leases': [{'id': 'no_pwg_w02', 'state': 'prepared'}]}, f)
+    db = os.path.join(td, 'l_jobs.sqlite')
+    dbc = mao.connect(db)
+    with dbc:
+        dbc.execute("INSERT INTO accounts(name,config_dir,validated,updated_at) "
+                    "VALUES('acc1',?,1,?)", (td, mao.now_iso()))
+        dbc.execute("INSERT INTO jobs(external_id,cwd,output_path,manifest_path,state) "
+                    "VALUES('no_pwg_w02',?,?,?,'in_progress')",
+                    (td, os.path.join(td, 'l_out.json'), os.path.join(td, 'l_manifest.json')))
+    dbc.close()
+
+    class _NoopSup:
+        def run(self):
+            return {'stop_reason': STOP_CLEAN_TARGET}
+
+    _pf, _rr, _bsup = mao.probe_fleet, mao.release_runtime, bsr.build_supervisor
+    mao.probe_fleet = lambda *a, **k: {'acc1': 10}
+    mao.release_runtime = lambda *a, **k: argparse.Namespace(returncode=0, stdout='', stderr='')
+    bsr.build_supervisor = lambda *a, **k: _NoopSup()
+    try:
+        rc = bsr.run(argparse.Namespace(
+            plan=plan_path, coord_dir=coord, coordinator=os.path.join(HERE, 'coordinator.py'),
+            cwd=td, db=db, checkpoint=os.path.join(td, 'l_cp.json'), lease_id=None,
+            execute=True, resume=True, report=None, run_id='l', events=None,
+            claude_bin='claude', timeout=5, gen_model_version=bsr.DEFAULT_GEN_MODEL_VERSION,
+            only_profile=None, drop_unhealthy=False, stop_before_promote=False,
+            max_windows=None, max_calls=None, max_clean=None, cost_ceiling=None,
+            empty_streak=None, max_accounts=0))
+    finally:
+        mao.probe_fleet, mao.release_runtime, bsr.build_supervisor = _pf, _rr, _bsup
+    assert rc == 0, rc
+    dbc = mao.connect(db)
+    state = dbc.execute("SELECT state FROM jobs WHERE external_id='no_pwg_w02'").fetchone()['state']
+    dbc.close()
+    assert state == 'pending', (
+        'H1386 C1: --resume did not reset the abandoned in_progress job (state=%r)' % state)
+
+    # Defense-in-depth (a): a dict/str scope must be a TypeError, never a silent zero-match.
+    for bad in ({'lease_ids': ['x']}, 'no_pwg_w02'):
+        try:
+            mao._scope_sql(bad)
+            raise AssertionError('_scope_sql accepted a %s scope' % type(bad).__name__)
+        except TypeError:
+            pass
+
+    # Defense-in-depth (b): a NORMAL (non-requeue) window whose run_window returns None must
+    # fail loudly -- never checkpoint COMPLETED with zero output (the crash-recovery hole C1
+    # exposed: recovery matched nothing, the drain saw no jobs, run_window returned None).
+    windows, _ = bsr.scope_windows(plan)
+    sup = bs.BoundedSupervisor(windows, lambda w: None, os.path.join(td, 'l_none_cp.json'),
+                               audit=lambda wf, w: {'clean_count': 0})
+    try:
+        sup.run()
+        raise AssertionError('a None-output normal window checkpointed COMPLETED')
+    except SystemExit:
+        pass
+    assert sup.completed_window_ids == [], sup.completed_window_ids
+    print('  (l) H1386 C1: --resume resets abandoned in_progress jobs; dict/str scope is a '
+          'TypeError; a None-output window fails loudly: PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_a_plan_scope(td)
@@ -516,6 +590,7 @@ def main():
         test_i_audit_from_coordinator(td)
         test_j_stop_before_promote_awaiting_review(td)
         test_k_requeue_materialisation(td)
+        test_l_resume_recovers_abandoned_jobs(td)
     print('bounded_staged_run_selftest: PASS')
 
 
