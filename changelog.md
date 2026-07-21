@@ -27,6 +27,19 @@ not an error.
   jurisdiction (там эталон — классическая индоевропеистика); jurisdictional divergences (spacing
   «т. е.», ед.→ед. ч., стр.→с., дат.→дат. п., герунд.→абс.) parked as a non-binding
   harmonization-candidate list — voted H1303 tables untouched.
+- A30 hostile referee pass ([H1382](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1382-Fable_SanskritLexicography_a30-hostile-referee-pass-skd-vcp_20.07.26.md),
+  Fable 5 `claude-fable-5`): [`papers/A30_review_fable5.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A30_review_fable5.md)
+  — verdict **major revision, 4/5 gate not cleared as drafted**; C1–C4/C6 CONFIRMED (the
+  53.3 %/77.6 % *iti*-fusion contrast rests on a classifier with three artifact classes
+  visible in its own committed sample — severed sandhi citations, a 16-name recall ceiling,
+  formula false-positives — and §7's "fewer, longer" VCP claim is contradicted by the
+  corpus's committed length stats), C5 downgraded to CLEAN, C7 re-derived CLEAN; every §1–§5
+  figure verified exact against csl-atlas `origin/main`. Includes the edition-facts check
+  (SKD "from 1822" → corrected 1821/22–1858; VCP 1873–1884 confirmed).
+- SKD *iti* adjudication sample, model pass ([`papers/A30_SKD_ITI_ADJUDICATION_MODEL_PASS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A30_SKD_ITI_ADJUDICATION_MODEL_PASS.md)):
+  102 rows labelled citational 81 / grammatical 6 / unclear 15 — explicitly **not** the human
+  gold (that gate stays open); sheet-readiness defects reported (severed-before-name rows,
+  missing post-stratification weights).
 
 ## [1.50.0] — 21-07-2026
 
