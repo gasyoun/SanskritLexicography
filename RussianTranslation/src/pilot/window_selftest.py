@@ -6580,6 +6580,107 @@ def test_h1283_a6_prep_slice_flattens_batches():
     print('  A6: prep_slice flattens every batch key')
 
 
+def test_heal_lane_target_field_fidelity_wired():
+    """H1152 parity (C1): the JS selfHeal COMPLETE-heal branch must run the <ls>/{#..#} count over
+    the TARGET field, not just `german`. The batch accept() lane already did (translation-fidelity-
+    reject); the heal/presplit lane — which routes exactly the citation/sense-dense giants — never
+    did, so a span kept in `german` but dropped from russian/english was stitched and promoted with
+    a silently-missing Sanskrit/citation span (the live H1070 r102 pattern). Static wiring guard on
+    the generated harness for BOTH languages (window_selftest has no JS runtime for the heal path)."""
+    import gen_opt_harness2 as gh
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '<hom>1.</hom> √{#gam#}¦ <ls>X. 1</ls>.\n'
+           '<div n="1">— 1〉 {%verlassen%} <ls>Y. 2</ls>.\n')
+    key = 'zz~~synthetic_healfid'
+    d = tempfile.mkdtemp()
+    saved_ip = gh.input_paths
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        for lang, want_field in (('ru', "const TARGET_FIELD = 'russian'"),
+                                 ('en', "const TARGET_FIELD = 'english'")):
+            js, _ = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False,
+                             tm_path=None, lang=lang)
+            if want_field not in js:
+                fail('%s heal harness did not set TARGET_FIELD' % lang)
+            if 'stitched-translation-fidelity-reject' not in js:
+                fail('%s heal lane is missing the H1152 target-field fidelity check '
+                     '(stitched-translation-fidelity-reject)' % lang)
+            if 'countOfField(stitched, TARGET_FIELD' not in js:
+                fail('%s heal lane must count <ls>/{#} over the TARGET field of the stitched '
+                     'card, not just german' % lang)
+            # the target check must FOLLOW the german stitched check (i.e. live inside the same
+            # complete-heal branch, never on a partial result).
+            if not (js.index('stitched-fidelity-reject') < js.index('stitched-translation-fidelity-reject')):
+                fail('%s target-field check must follow the german stitched check (complete-heal '
+                     'only)' % lang)
+    finally:
+        gh.input_paths = saved_ip
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def test_autosplit_stitch_topup_rejects_target_field_drop():
+    """H1152 parity (C1): stitch_topup must REJECT a COMPLETE card whose reassembled `german` echo is
+    faithful but whose target field dropped an <ls>/{#..#} span (source counts stamped by
+    topup_fragments). A faithful card still completes."""
+    import autosplit_requeue as ar
+
+    def card(orig, ru_text):
+        return {'orig': orig, 'iast': 'zz', 'notes': '', 'owners_by_tag': {},
+                'default_owner': ('1', 'm.'), 'src_ls': 1, 'src_sk': 0,
+                'resolved': {'F0': [{'tag': '1', 'german': '<ls>RV.</ls> Feuer',
+                                     'russian': ru_text}]},
+                'plan': [{'s': 0, 'p': 0, 'fsha': 'F0', 'fk': ar.fk_of(orig, 0, 0),
+                          'missing': False}]}
+    res, _ = ar.stitch_topup([card('zz~~drop', 'огонь')], {}, 'russian')          # target drops <ls>
+    if res[0]['card'] is not None or 'fidelity drift' not in (res[0].get('error') or ''):
+        fail('stitch_topup must reject a complete card whose target dropped a span: %r' % res[0])
+    ok, _ = ar.stitch_topup([card('zz~~keep', '<ls>RV.</ls> огонь')], {}, 'russian')  # faithful
+    if not ok[0]['card'] or ok[0].get('partial'):
+        fail('stitch_topup must keep a complete faithful card: %r' % ok[0])
+
+
+def test_autosplit_merge_rejects_target_field_drop():
+    """H1152 parity (C1/C5): cmd_merge (the primary autosplit lane) must REJECT a COMPLETE card whose
+    target field dropped an <ls>/{#..#} span — it was <ls>-only, german-only, and non-blocking (kept
+    the card, only flagged `fidelity_drift`). Behavioral test with a temp manifest/task/source."""
+    import autosplit_requeue as ar
+    orig = 'zz~~h0_00_pwgm'
+    fk = ar.fk_of(orig, 0, 0)
+    d = tempfile.mkdtemp()
+    saved = (ar.manifest_path, ar.input_paths, ar.REPO)
+    try:
+        rawp = os.path.join(d, 'src.raw.txt')
+        with open(rawp, 'w', encoding='utf-8') as f:
+            f.write('<hom>1.</hom> {%Feuer%} <ls>RV. 1,1</ls>.')          # exactly one <ls>, no {#
+        mpath = os.path.join(d, 'manifest.json')
+        with open(mpath, 'w', encoding='utf-8') as f:
+            json.dump({'frags': {fk: {'orig': orig, 's': 0, 'p': 0}}}, f)
+        taskp = os.path.join(d, 'task.json')
+        drop_card = {'key1': orig, 'iast': 'zz', 'records': [{'h': '1', 'grammar': 'm.', 'senses': [
+            {'tag': '1', 'german': '<ls>RV. 1,1</ls> Feuer', 'russian': 'огонь'}]}]}  # ru drops <ls>
+        with open(taskp, 'w', encoding='utf-8') as f:
+            json.dump({'results': [{'key': fk, 'card': drop_card}]}, f)
+        ar.manifest_path = lambda lang, root: mpath
+        ar.input_paths = lambda k, input_dir=None: (rawp, os.path.join(d, k + '.portrait.json'))
+        ar.REPO = d
+        ar.cmd_merge('zzmerge', 'ru', taskp)
+        out = json.load(open(os.path.join(d, 'wf_output.sc.zzmerge.autosplit.json'), encoding='utf-8'))
+        rows = {r['key']: r for r in out['results']}
+        if orig not in rows or rows[orig]['card'] is not None:
+            fail('cmd_merge must null a complete card whose target dropped a span: %r' % rows.get(orig))
+        if 'fidelity drift' not in (rows[orig].get('error') or ''):
+            fail('cmd_merge reject must carry the fidelity-drift error: %r' % rows[orig])
+    finally:
+        ar.manifest_path, ar.input_paths, ar.REPO = saved
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def main():
     tests = [
         test_restore_covers_every_promoted_field,
@@ -6637,6 +6738,9 @@ def main():
         test_cit_split_never_tears_open_span,
         test_cit_split_caps_single_line_monster_sense,
         test_selfheal_fragment_si_threaded_and_tags_normalized,
+        test_heal_lane_target_field_fidelity_wired,
+        test_autosplit_stitch_topup_rejects_target_field_drop,
+        test_autosplit_merge_rejects_target_field_drop,
         test_sense_dense_card_presplit,
         test_kill_gate_wired,
         test_no_fallback_single_gets_ceil_kill_budget,

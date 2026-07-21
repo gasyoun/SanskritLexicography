@@ -10,6 +10,26 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — target-field markup-fidelity guard ported to every promotable lane (C1 / H1412)
+
+- The `<ls>`/`{#..#}` markup-count fidelity guard now runs over the actual **target-language
+  field** (`russian`/`english`), not only the `german` source-echo, on **every** lane that can
+  promote a card. Previously only the JS batch `accept()` lane carried this check (H1152); the
+  heal/presplit stitch, the headless `normalize_batch` (now the production route) and its
+  selfheal stitch, and both autosplit stitch writers (`cmd_merge` + `stitch_topup`) counted
+  only `german` — so a translation faithful in the German echo but missing a Sanskrit/citation
+  span in the Russian/English column (the live H1070 r102 pattern: german 33/33, english 32/33)
+  was stitched and promoted with the span silently dropped. All off-batch lanes now reject →
+  requeue on a target-field span mismatch. Found by the Opus 4.8 (`claude-opus-4-8`) adversarial
+  bug-hunt review; the autosplit change also closes the `<ls>`-only / non-blocking gap (C5).
+  Selftests: `window_selftest` (`test_heal_lane_target_field_fidelity_wired`,
+  `test_autosplit_stitch_topup_rejects_target_field_drop`,
+  `test_autosplit_merge_rejects_target_field_drop`) and `headless_worker_selftest`
+  (`test_normalize_batch_translation_fidelity_reject`,
+  `test_headless_heal_stitch_translation_fidelity_reject`); classified SHARED in
+  [`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md)
+  (`target_field_markup_fidelity_parity_c1`).
+
 ### Added — speed & orchestration audit: bottleneck ledger + verified action map (H1403)
 
 - [`PWG_RU_SPEED_ORCHESTRATION_BOTTLENECK_AUDIT_2026-07-20.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_RU_SPEED_ORCHESTRATION_BOTTLENECK_AUDIT_2026-07-20.md)

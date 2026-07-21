@@ -2024,6 +2024,17 @@ async function selfHeal(k) {
       noteFail(k, 'stitched-fidelity-reject: complete heal, but restored <ls>/{# counts drift from source')
       return null
     }
+    // H1152 parity (C1): the counts above run over `german` only (countOf hard-codes s.german),
+    // proving the SOURCE echo is faithful — NOT that the translation preserved its spans. The
+    // batch accept() lane closed this with a target-field count (translation-fidelity-reject);
+    // the heal/presplit lane never did, so a {#..#}/<ls> span kept in `german` but dropped from
+    // russian/english (the live H1070 r102 pattern: german 33/33, english 32/33) was stitched and
+    // promoted with a Sanskrit/citation span silently missing from the translation column. The
+    // presplit lane routes exactly the citation/sense-dense giants most prone to this drop.
+    if (countOfField(stitched, TARGET_FIELD, /<ls\\b/g) !== INPUTS[k].ls || countOfField(stitched, TARGET_FIELD, /\\{#/g) !== INPUTS[k].sk) {
+      noteFail(k, 'stitched-translation-fidelity-reject: complete heal, but target-field <ls>/{# counts drift from source')
+      return null
+    }
   } else {
     stitched.partial = true
     stitched.missing_fragments = missingFragments
