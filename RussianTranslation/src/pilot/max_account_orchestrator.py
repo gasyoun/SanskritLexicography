@@ -289,6 +289,23 @@ def park(db_path, account, until, error):
     db.close()
 
 
+def requeue_rate_limited(db_path, job_id, returncode, error, reset_at, attempt_log_path=None):
+    """C4: a rate-limit (429) is an infra throttle, not a defective translation attempt. Return the
+    job to 'pending' AND give back the attempt it consumed at claim time (mirrors
+    release_db_claims' `attempts=max(attempts-1,0)`), so it stays claimable once its account
+    unparks. Without the decrement, a job rate-limited max_attempts times sits 'pending' with
+    attempts==max_attempts — never re-selected by claim (which gates on `attempts < max_attempts`),
+    never marked 'failed', permanently stranded — and cmd_staged_run busy-spins on the
+    un-drainable pending count."""
+    db = connect(db_path)
+    with db:
+        db.execute("UPDATE jobs SET state='pending', returncode=?, error=?, failure_class='rate_limit', "
+                   "attempts=max(attempts-1,0), reset_at=?, "
+                   "attempt_log_path=COALESCE(?,attempt_log_path), finished_at=? WHERE id=?",
+                   (returncode, error, reset_at, attempt_log_path, now_iso(), job_id))
+    db.close()
+
+
 def emit_call_events(events_path, item, idx, manifest_sha256, base):
     """D-I: telemetry for ONE real model call. Emit exactly one call-level 'model_call' event
     (the single latency sample + classification tally for this call, with a stable call_id and
@@ -361,9 +378,9 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
             reset_text = (proc.stderr or '') + '\n' + (worker_status.get('error') or '')
             until = parse_reset(reset_text)
             park(db_path, account, until, reset_text)
-            finish(db_path, job['id'], 'pending', proc.returncode,
-                   'rate-limited; account parked', 'rate_limit',
-                   attempt_log_path=attempt_log, reset_at=until)
+            requeue_rate_limited(db_path, job['id'], proc.returncode,
+                                 'rate-limited; account parked', until,
+                                 attempt_log_path=attempt_log)
             if events_path:
                 append_event(events_path, stage='dispatch', event='attempt_end',
                              classification='rate_limit', reset_at=until, **event_base)
@@ -926,6 +943,9 @@ def staged_plan_scope(plan, requested_lease_ids=None):
     }
 
 
+STAGED_RUN_IDLE_POLL_SECONDS = 3   # C4: backoff between no-progress staged-run passes (see loop)
+
+
 def cmd_staged_run(args):
     plan = json.load(open(args.plan, encoding='utf-8'))
     scope = staged_plan_scope(plan, args.lease_id)
@@ -983,6 +1003,12 @@ def cmd_staged_run(args):
     completed_before = scoped_job_count(db, lease_scope, "state='done'")
     db.close()
     started = time.monotonic()
+    # C4 backstop: forward progress = a pending job drained or a done window recorded. If a full
+    # pass changes none of (pending, done_unrecorded, completed_before) while accounts are
+    # runnable — e.g. a job that no dispatchable account can claim — the loop must poll, not
+    # hot-spin. The primary C4 fix (requeue_rate_limited decrements attempts) removes the usual
+    # source of an unclaimable-but-pending job; this only guards any residual case.
+    prev_progress_sig = None
     while True:
         db = connect(args.db)
         pending = scoped_job_count(db, lease_scope, "state='pending'")
@@ -1007,6 +1033,13 @@ def cmd_staged_run(args):
                 write_census(args.events, args.census)
                 raise SystemExit('staged-run halted: %d job(s) pending but all accounts parked '
                                  'until %s; rerun with --resume after the reset' % (pending, earliest))
+            # C4 backstop: runnable accounts exist but the previous pass drained nothing — poll
+            # instead of hot-spinning. (`prev_progress_sig` is this pass's entry state; if it
+            # equals the previous pass's entry state, that pass made no progress.)
+            progress_sig = (pending, done_unrecorded, completed_before)
+            if progress_sig == prev_progress_sig:
+                time.sleep(STAGED_RUN_IDLE_POLL_SECONDS)
+            prev_progress_sig = progress_sig
             cmd_run_once(argparse.Namespace(db=args.db, timeout=args.timeout,
                                              events=args.events, run_id=run_id,
                                              claude_bin=args.claude_bin,

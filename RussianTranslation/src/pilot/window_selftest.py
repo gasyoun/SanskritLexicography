@@ -6580,6 +6580,47 @@ def test_h1283_a6_prep_slice_flattens_batches():
     print('  A6: prep_slice flattens every batch key')
 
 
+def test_en_card_tm_serves_english_field_c3():
+    """C3: `build --lang en` must write each sense's translation under the CARD field name
+    'english' (not the store COLUMN 'en'), or the serve-side `tm_card_sane` / final-card schema
+    reject every EN card-TM hit ('sense missing english') — 100% of EN whole-card TM silently
+    dead, and the EN lane re-translates cards it already has. The RU path stays correct."""
+    import translation_memory as tm
+    import gen_opt_harness2 as gh
+    d = tempfile.mkdtemp()
+    try:
+        store = os.path.join(d, 'store.en.jsonl')
+        row = {'subcard': 'agni~~h0_00_pwg00', 'iast': 'agni', 'h': '1', 'grammar': '',
+               'sense_tag': '1', 'de': 'Feuer', 'en': 'fire',
+               'provenance': {'input_raw_sha256': 'DEADBEEF'}}
+        with open(store, 'w', encoding='utf-8') as f:
+            f.write(json.dumps(row, ensure_ascii=False) + '\n')
+        built_path, count, _skipped = tm.build(store, 'en', os.path.join(d, 'tm.en.json'))
+        if count != 1:
+            fail('C3: EN card-TM built %d entries from one valid EN store row (expected 1)' % count)
+        entry = next(iter(json.load(open(built_path, encoding='utf-8'))['entries'].values()))
+        sense = entry['card']['records'][0]['senses'][0]
+        if sense.get('english') != 'fire':
+            fail("C3: EN card-TM sense must carry 'english'='fire', got keys %r" % sorted(sense))
+        if 'en' in sense:
+            fail("C3: EN card-TM sense must NOT carry the store-column key 'en': %r" % sense)
+        # the serve-side guard the harness runs on every hit must ACCEPT it (was: refuse it)
+        ok, why = gh.tm_card_sane(entry['card'], 'en', 'english', 'Feuer')
+        if not ok:
+            fail('C3: a valid EN card-TM hit must pass tm_card_sane, got refusal: %s' % why)
+        # RU parity control: the RU path must still key 'russian'
+        rstore = os.path.join(d, 'store.ru.jsonl')
+        rrow = dict(row, ru='огонь'); rrow.pop('en')
+        with open(rstore, 'w', encoding='utf-8') as f:
+            f.write(json.dumps(rrow, ensure_ascii=False) + '\n')
+        rpath, rcount, _ = tm.build(rstore, 'ru', os.path.join(d, 'tm.ru.json'))
+        rsense = next(iter(json.load(open(rpath, encoding='utf-8'))['entries'].values()))['card']['records'][0]['senses'][0]
+        if rsense.get('russian') != 'огонь' or 'ru' in rsense:
+            fail("C3: RU card-TM sense must carry 'russian', not 'ru': %r" % rsense)
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def main():
     tests = [
         test_restore_covers_every_promoted_field,
@@ -6597,6 +6638,7 @@ def main():
         test_translation_memory_addressing,
         test_tm_pre_resolves_cards,
         test_tm_card_sane_rejects_zero_marker_drift,
+        test_en_card_tm_serves_english_field_c3,
         test_generated_harness_strict_key_matching,
         test_tm_auto_no_sidecar_metadata,
         test_suggest_tm_does_not_skip_agents,
