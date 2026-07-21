@@ -108,7 +108,10 @@ def _frag_prov_glob():
     honored on both sides. Previously detection honored it but build-frags hardcoded the default
     tree, so a custom dir detected frag_prov here yet built the fragment TM from the empty default
     tree, silently dropping the just-promoted window's fragments."""
-    return os.path.join(paths()['artifacts'], '*', 'wf_output*.json')
+    # H1386 C3: '**' (recursive) -- a requeue attempt's corrected wf_output lands two dirs
+    # deep at artifacts/<lease>/requeue/rqNN-<kind>/, which the old single-'*' never
+    # matched, so a rework's fragments were never harvested at all.
+    return os.path.join(paths()['artifacts'], '**', 'wf_output*.json')
 
 
 def ensure_dirs():
@@ -1600,7 +1603,7 @@ def rebuild_ru_translation_memory():
     # so that join is a no-op and both sides resolve to the same coordinator dir.
     frag_glob = _frag_prov_glob()
     if any('"frag_prov"' in open(fp, encoding='utf-8').read()
-           for fp in glob.glob(frag_glob)):
+           for fp in glob.glob(frag_glob, recursive=True)):
         run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'build-frags',
                  '--lang', 'ru', '--glob', frag_glob])
     run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'validate', '--lang', 'ru'])
