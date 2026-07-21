@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.49.0] - 2026-07-21
+
 ### Fixed — coordinator concurrency/durability plausibles P2/P10/P11 (H1420)
 
 - Three PLAUSIBLE findings from the Opus 4.8 adversarial pwg_ru bug-hunt
