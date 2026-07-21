@@ -10,6 +10,23 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — LANG_PARITY coverage guard: new RU/EN-lane files can't silently escape the ledger
+
+- The parity ledger's drift check only re-verifies files **already** tracked; a brand-new
+  language-aware file (a fresh `*_en.py` reimplementation, or a new `--lang`-branching gate) could
+  escape parity tracking entirely — the exact hole the C1–C9 EN findings (`audit_window_en.py`,
+  `promote_en.py`) grew in. New **coverage guard** in
+  [`lang_parity_check.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/lang_parity_check.py)
+  (`coverage_check`, wired as `test_lang_parity_coverage`): every language-aware pipeline `.py`
+  under `src/`/`src/pilot/` must be **either** referenced by a ledger entry's `files:` **or** listed
+  in a new `lang_parity_coverage` `exempt` map with a one-line reason — else CI fails and names the
+  file. The 8 existing untracked candidates were classified by an Opus 4.8 (`claude-opus-4-8`)
+  8-agent fan-out + adversarial audit: **7 exempt** (read-only samplers / benchmarks / QA-sheet
+  generators, each with a recorded reason) and **1 promoted to a ledger entry**
+  (`en_residual_keys.py` → `en_coverage_card_done_semantics`, the EN twin of `ru_coverage.py` whose
+  card-done semantics must stay aligned). Ledger now 71 entries; coverage 22 language-aware files,
+  all tracked or exempt. Verified end-to-end (a synthetic new `*_en.py` fails the guard).
+
 ### Fixed — build-frags glob (C7) + German-as-Latin mask drop (C8) + EN backup collision (C9) (H1418)
 
 - **C7 — `build-frags` built the fragment TM from the wrong tree under a custom coordinator dir.**
