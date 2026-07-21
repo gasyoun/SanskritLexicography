@@ -452,6 +452,13 @@ def test_k_requeue_materialisation(td):
     def fake_prepare(argv, **kw):
         calls.append(argv)
         assert 'prepare-requeue' in argv and '--transient' in argv, argv
+        # H1386 D4 (the A7 class, repeated): every coordinator subprocess must carry THIS
+        # run's coord dir -- without it a non-default --coord-dir run resolves the DEFAULT
+        # coordinator state (wrong-dir SystemExit mid-drain, or a same-id foreign lease
+        # mutated to requeue_prepared).
+        env = kw.get('env') or {}
+        assert env.get('PWG_COORDINATOR_DIR') == os.path.abspath(coord), \
+            'prepare-requeue subprocess missing PWG_COORDINATOR_DIR=%s' % coord
         write_state('requeue_prepared', with_attempt=True)   # what the real command does
         return argparse.Namespace(returncode=0, stdout='', stderr='')
 

@@ -567,6 +567,14 @@ def batch_promote(batch, store, review_status, gen_model_version,
                     line = line.strip()
                     if line:
                         existing_rows.append(json.loads(line))
+        # H1386 D3: per-lease attribution needs the pre-merge per-subcard row counts --
+        # the bundle-wide before/after stamped on every lease made a benign idempotent
+        # replacement indistinguishable from a real landing in the per-lease consumers
+        # (promotion_classification, bad_deltas, the windows100 GO gate).
+        existing_count_by_sub = {}
+        for row in existing_rows:
+            sub = row.get('subcard')
+            existing_count_by_sub[sub] = existing_count_by_sub.get(sub, 0) + 1
         rows_to_write, downgraded = merge_store_rows(existing_rows, all_rows)
         if downgraded:
             raise PromotionContractError(
@@ -597,10 +605,25 @@ def batch_promote(batch, store, review_status, gen_model_version,
             print('backed up prior store -> %s' % os.path.basename(bak))
         _atomic_write_rows(store, rows_to_write)
 
+    # H1386 D3: per-lease rows_added / rows_replaced / store_delta. The bundle is
+    # all-or-nothing (every incoming row landed or we raised above), so these are exact:
+    # a subcard absent from the pre-merge store contributes added rows, a present one
+    # replaces its prior rows, and the net per-lease line-count change is their balance.
+    def _lease_delta(lease_id, best):
+        inc = lease_rows[lease_id]
+        new_subs = {sub for sub in best if sub not in existing_count_by_sub}
+        prior_rows = sum(existing_count_by_sub.get(sub, 0) for sub in best)
+        return {
+            'rows_added': sum(1 for r in inc if r['subcard'] in new_subs),
+            'rows_replaced': sum(1 for r in inc if r['subcard'] not in new_subs),
+            'store_delta': len(inc) - prior_rows,
+        }
+
     report = {'schema': 'pwg.batch_promotion.v1',
               'store_rows_before': before, 'store_rows_after': len(rows_to_write),
-              'leases': {lease_id: {'subcards': len(best),
-                                    'rows': len(lease_rows[lease_id])}
+              'leases': {lease_id: dict({'subcards': len(best),
+                                         'rows': len(lease_rows[lease_id])},
+                                        **_lease_delta(lease_id, best))
                          for lease_id, best in lease_best.items()}}
     print('BATCH PROMOTE: %d lease(s), %d subcard(s), %d sense rows; store %d -> %d rows'
           % (len(batch), len(seen_subs), len(all_rows), before, len(rows_to_write)))
@@ -877,10 +900,21 @@ def selftest():
              for lid, (fp, key) in lease_files.items()]
     rep = batch_promote(batch, bstore, 'ai_translated', SELFTEST_MODEL_VERSION)
     assert rep['leases']['L1']['subcards'] == 1 and rep['leases']['L2']['subcards'] == 1
+    # H1386 D3: PER-LEASE delta figures, not the bundle-wide before/after stamped N times.
+    for lid in ('L1', 'L2'):
+        row = rep['leases'][lid]
+        assert row['rows_added'] == row['rows'] and row['rows_replaced'] == 0, row
+        assert row['store_delta'] == row['rows'], row
     bytes1 = open(bstore, 'rb').read()
     assert b'y~~keep' in bytes1, 'unrelated store row must survive the batch'
     rep2 = batch_promote(batch, bstore, 'ai_translated', SELFTEST_MODEL_VERSION)
     assert open(bstore, 'rb').read() == bytes1, 'batch rerun must be byte-stable/idempotent'
+    # H1386 D3: an idempotent replacement is a per-lease ZERO delta (all rows replaced) --
+    # the benign delta-0 case the windows100 GO gate must see per lease, not bundle-wide.
+    for lid in ('L1', 'L2'):
+        row = rep2['leases'][lid]
+        assert row['rows_added'] == 0 and row['rows_replaced'] == row['rows'], row
+        assert row['store_delta'] == 0, row
     # all-or-nothing: a lease whose clean output diverges from its expectation fails the
     # WHOLE bundle with the store byte-identical.
     bad = [dict(batch[0]), dict(batch[1], expected_subcards=['not~~this'])]
@@ -943,6 +977,14 @@ def main():
     ap.add_argument('--report', help='write the batch per-lease report JSON here')
     args = ap.parse_args()
     if args.batch_manifest:
+        # H1386 D5: flags the batch transaction does not implement are REFUSED, never
+        # silently discarded -- a hand-run `--batch-manifest --dry-run` used to mutate the
+        # canonical store (claim / backup / atomic replace / denylist unblock) with no
+        # warning, because batch_promote ran before the single-mode dry-run check.
+        for flag, name in ((args.dry_run, '--dry-run'), (args.force, '--force'),
+                           (args.init_store, '--init-store')):
+            if flag:
+                sys.exit('REFUSED: %s is not supported with --batch-manifest' % name)
         try:
             batch = json.load(open(args.batch_manifest, encoding='utf-8'))
             report = batch_promote(

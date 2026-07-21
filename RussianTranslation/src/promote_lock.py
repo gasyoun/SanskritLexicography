@@ -74,13 +74,52 @@ class PromoteClaim:
         except (OSError, json.JSONDecodeError):
             return None
 
-    def _stale(self):
-        meta = self._read()
-        claimed = _parse_ts((meta or {}).get('claimed_at'))
+    def _ts_stale(self, claimed_at):
+        claimed = _parse_ts(claimed_at)
         if not claimed:
             return True                 # unreadable/corrupt claim file -> treat as stale
         age = (datetime.datetime.now(datetime.timezone.utc) - claimed).total_seconds()
         return age > self.ttl_seconds
+
+    def _reclaim(self, judged_claimed_at):
+        """H1386 D2: identity-checked, rename-based reclaim of a claim judged stale.
+
+        The pre-fix read-then-os.remove pair was a TOCTOU: two cross-clone promoters could
+        both judge the crashed run's old claim stale, then the slower one os.remove'd the
+        FASTER one's fresh claim -- both 'held' the lock and the loser's promoted rows
+        vanished (the exact last-writer-wins loss this lock exists to prevent). Instead:
+        atomically rename the claim aside (os.replace), re-read what was actually captured,
+        and verify its claimed_at matches the stale value we judged. Capturing a
+        contender's FRESH claim restores it and loses the reclaim; FileNotFoundError on the
+        rename means another contender already reclaimed -- return True so the caller
+        retries the O_EXCL create and re-evaluates whatever claim now exists."""
+        import uuid
+        aside = self.path + '.reclaimed.' + uuid.uuid4().hex
+        try:
+            os.replace(self.path, aside)
+        except FileNotFoundError:
+            return True                 # another contender already reclaimed it
+        except OSError:
+            return False
+        try:
+            with open(aside, encoding='utf-8') as f:
+                moved = json.load(f)
+        except (OSError, json.JSONDecodeError):
+            moved = {}
+        moved_at = (moved or {}).get('claimed_at')
+        if moved_at != judged_claimed_at and not self._ts_stale(moved_at):
+            # We captured a CONTENDER'S fresh claim (it reclaimed between our read and our
+            # rename) -- restore it and lose the reclaim.
+            try:
+                os.replace(aside, self.path)
+            except OSError:
+                pass
+            return False
+        try:
+            os.remove(aside)
+        except OSError:
+            pass
+        return True
 
     def _try_remove_stale_or_stolen(self):
         if self.steal:
@@ -89,13 +128,11 @@ class PromoteClaim:
             except OSError:
                 pass
             return True
-        if self._stale():
-            try:
-                os.remove(self.path)
-            except OSError:
-                pass
-            return True
-        return False
+        meta = self._read()
+        claimed_at = (meta or {}).get('claimed_at')
+        if not self._ts_stale(claimed_at):
+            return False
+        return self._reclaim(claimed_at)
 
     def __enter__(self):
         while True:
@@ -172,6 +209,28 @@ def selftest():
     with PromoteClaim(store, ttl_seconds=DEFAULT_TTL_SECONDS, steal=True):
         assert True, '--steal-lock must bypass a live claim unconditionally'
     assert not os.path.exists(claim_path(store))
+
+    # H1386 D2: identity-checked reclaim (the read->remove TOCTOU). Promoter A judged the
+    # claim stale, but BETWEEN A's read and A's reclaim a contender already reclaimed and
+    # recreated a FRESH claim. A's reclaim must capture-and-RESTORE the fresh claim (lose
+    # the race), never delete it -- the pre-fix os.remove deleted whatever was there.
+    stale_at = '2000-01-01T00:00:00Z'
+    fresh_contender = {'schema': 'pwg.promote_claim.v1', 'pid': 4242, 'host': 'contender',
+                       'claimed_at': _utc_now()}
+    with open(claim_path(store), 'w', encoding='utf-8') as f:
+        json.dump(fresh_contender, f)
+    a = PromoteClaim(store, ttl_seconds=DEFAULT_TTL_SECONDS)
+    assert a._reclaim(stale_at) is False, 'reclaim must LOSE against a contender fresh claim'
+    survived = json.load(open(claim_path(store), encoding='utf-8'))
+    assert survived.get('pid') == 4242, 'the contender fresh claim must survive a losing reclaim'
+    os.remove(claim_path(store))
+    # A claim matching the judged-stale timestamp is reclaimed; a vanished claim means
+    # another contender won the reclaim (return True -> retry the O_EXCL create).
+    with open(claim_path(store), 'w', encoding='utf-8') as f:
+        json.dump({'schema': 'pwg.promote_claim.v1', 'claimed_at': stale_at}, f)
+    assert a._reclaim(stale_at) is True and not os.path.exists(claim_path(store))
+    assert a._reclaim(stale_at) is True, 'a vanished claim = contender already reclaimed'
+    assert not [p for p in os.listdir(d) if '.reclaimed.' in p], 'reclaim residue left behind'
     print('promote_lock selftest OK')
 
 

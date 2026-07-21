@@ -258,6 +258,15 @@ class RunContext:
         return os.path.join(os.path.abspath(self.coord_dir), 'state.json')
 
 
+def _coord_env(ctx):
+    """H1386 D4 (the A7 class, repeated): the env for every coordinator SUBPROCESS this
+    module spawns. Without an explicit PWG_COORDINATOR_DIR the child resolves the DEFAULT
+    coordinator dir, so a bounded run with a non-default --coord-dir (the documented
+    H895-acceptance pattern) would prepare/promote against the wrong coordinator state --
+    a wrong-dir SystemExit mid-drain at best, a same-id foreign lease mutated at worst."""
+    return dict(os.environ, PWG_COORDINATOR_DIR=os.path.abspath(ctx.coord_dir))
+
+
 def _ensure_imported(ctx, lease_id):
     """Import this lease as a scoped job if it is prepared and not already present (mirrors
     cmd_staged_run's to_import filter, scoped to the single lease)."""
@@ -405,7 +414,8 @@ def materialize_requeue(ctx, origin_lease_id, run=None):
             prep = run(
                 [sys.executable, os.path.abspath(ctx.coordinator), 'prepare-requeue',
                  origin_lease_id, '--%s' % kind],
-                cwd=os.path.abspath(ctx.cwd), text=True, encoding='utf-8', capture_output=True)
+                cwd=os.path.abspath(ctx.cwd), env=_coord_env(ctx),
+                text=True, encoding='utf-8', capture_output=True)
             if prep.returncode:
                 raise SystemExit('bounded_staged_run: prepare-requeue --%s failed for %s: %s'
                                  % (kind, origin_lease_id, (prep.stderr or prep.stdout)[-800:]))
@@ -518,7 +528,8 @@ def make_run_window(ctx):
             promote = subprocess.run(
                 [sys.executable, os.path.abspath(ctx.coordinator), 'promote-ready',
                  '--gen-model-version', ctx.gen_model_version, '--lease-id', lease_id],
-                cwd=os.path.abspath(ctx.cwd), text=True, encoding='utf-8', capture_output=True)
+                cwd=os.path.abspath(ctx.cwd), env=_coord_env(ctx),
+                text=True, encoding='utf-8', capture_output=True)
             if promote.returncode and 'no ready leases to promote' not in (
                     promote.stderr + promote.stdout):
                 raise SystemExit('bounded_staged_run: lease %s promotion failed: %s'
@@ -533,7 +544,8 @@ def make_run_window(ctx):
             rescue = subprocess.run(
                 [sys.executable, os.path.abspath(ctx.coordinator), 'promote-ready',
                  '--gen-model-version', ctx.gen_model_version, '--lease-id', lease_id],
-                cwd=os.path.abspath(ctx.cwd), text=True, encoding='utf-8', capture_output=True)
+                cwd=os.path.abspath(ctx.cwd), env=_coord_env(ctx),
+                text=True, encoding='utf-8', capture_output=True)
             if rescue.returncode and 'no ready leases to promote' not in (
                     rescue.stderr + rescue.stdout):
                 raise SystemExit('bounded_staged_run: lease %s post-loop promotion failed: %s'

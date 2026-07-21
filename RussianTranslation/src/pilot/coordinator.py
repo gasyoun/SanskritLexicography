@@ -1695,16 +1695,30 @@ def promote_ready(args):
                     fresh['state'] = 'promoted_partial' if has_pending else 'promoted'
                     fresh['promoted_at'] = utc_now()
                     fresh['model_version'] = args.gen_model_version
+                    # H1386 D3: store_delta is the PER-LEASE figure from the batch report
+                    # (its three consumers -- promotion_classification, bad_deltas, the
+                    # windows100 GO gate -- all read it per lease); the bundle-wide
+                    # before/after stays as separate bundle-level context fields.
                     fresh['store_before'] = store_before
                     fresh['store_after'] = store_after
-                    fresh['store_delta'] = store_after - store_before
+                    fresh['store_delta'] = per.get('store_delta',
+                                                   store_after - store_before)
+                    fresh['bundle_store_delta'] = store_after - store_before
                     fresh['promoted_subcards'] = per.get('subcards')
                     fresh['promoted_rows'] = per.get('rows')
+                    fresh['rows_added'] = per.get('rows_added')
+                    fresh['rows_replaced'] = per.get('rows_replaced')
                     save_state(state)
                     registry_event(fresh, 'promoted', {'glob': lease['clean_output'],
                                                        'store_before': store_before,
                                                        'store_after': store_after,
-                                                       'store_delta': store_after - store_before,
+                                                       'store_delta': per.get(
+                                                           'store_delta',
+                                                           store_after - store_before),
+                                                       'bundle_store_delta':
+                                                           store_after - store_before,
+                                                       'rows_added': per.get('rows_added'),
+                                                       'rows_replaced': per.get('rows_replaced'),
                                                        'batch_subcards': per.get('subcards'),
                                                        'batch_rows': per.get('rows')})
         finally:
