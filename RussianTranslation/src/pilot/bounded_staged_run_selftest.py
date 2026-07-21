@@ -503,6 +503,66 @@ def test_k_requeue_materialisation(td):
           'unmaterialisable; audit reads the origin lease; rq-of-rq keeps the true origin: PASS')
 
 
+def test_m_requeue_resume_after_crash(td):
+    """H1386 C2: a post-audit origin state (ready/ready_partial/promoted/promoted_partial)
+    with a COMPLETED ::rqNN attempt job is a RESUME, not a wedge -- materialize_requeue
+    returns the existing job id and falls through to the drain loop (whose break + A2
+    rescue promote handles recorded-but-unpromoted exactly as for plain windows). Pre-fix,
+    every --resume re-pulled the checkpointed rq item and SystemExit'd permanently."""
+    coord = os.path.join(td, 'm_coord'); os.makedirs(coord)
+    state_path = os.path.join(coord, 'state.json')
+    db = os.path.join(td, 'm_jobs.sqlite')
+    dbc = mao.connect(db)
+    with dbc:
+        dbc.execute("INSERT INTO jobs(external_id,cwd,output_path,manifest_path,state,"
+                    "coordinator_recorded) VALUES('w1::rq01-transient',?,?,?,'done',1)",
+                    (td, os.path.join(td, 'm_out.json'), os.path.join(td, 'm_manifest.json')))
+    dbc.close()
+    ctx = bsr.RunContext(db=db, coord_dir=coord,
+                         coordinator=os.path.join(HERE, 'coordinator.py'),
+                         cwd=td, events=None, run_id='m', probe_latencies={})
+
+    def must_not_run(argv, **kw):
+        raise AssertionError('prepare-requeue must not run on a resumable post-audit lease')
+
+    def write_lease(state_name, pending=None):
+        with open(state_path, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump({'leases': [{'id': 'w1', 'state': state_name,
+                                   'pending_requeue': pending or {'transient': [],
+                                                                  'defect': []}}]}, f)
+
+    # 1. every post-audit state with a completed attempt job resumes to that job id.
+    for state_name in ('ready', 'ready_partial', 'promoted', 'promoted_partial'):
+        write_lease(state_name)
+        rq = bsr.materialize_requeue(ctx, 'w1', run=must_not_run)
+        assert rq == 'w1::rq01-transient', (state_name, rq)
+
+    # 2. genuinely unmaterialisable states stay LOUD even with a completed attempt job.
+    for state_name in ('blocked', 'needs_requeue'):
+        write_lease(state_name)   # empty backlog: nothing preparable
+        try:
+            bsr.materialize_requeue(ctx, 'w1', run=must_not_run)
+            raise AssertionError('%s lease did not fail loudly' % state_name)
+        except SystemExit:
+            pass
+
+    # 3. a post-audit state WITHOUT any completed attempt job is still a loud raise
+    #    (nothing to resume -- the rq item maps to no work at all).
+    db2 = os.path.join(td, 'm_jobs_empty.sqlite')
+    mao.connect(db2).close()
+    ctx2 = bsr.RunContext(db=db2, coord_dir=coord,
+                          coordinator=os.path.join(HERE, 'coordinator.py'),
+                          cwd=td, events=None, run_id='m2', probe_latencies={})
+    write_lease('ready')
+    try:
+        bsr.materialize_requeue(ctx2, 'w1', run=must_not_run)
+        raise AssertionError('ready lease with no attempt job did not fail loudly')
+    except SystemExit:
+        pass
+    print('  (m) H1386 C2: post-audit lease + completed ::rq job resumes to the existing '
+          'job; blocked/no-backlog/no-job stay loud: PASS')
+
+
 def test_l_resume_recovers_abandoned_jobs(td):
     """H1386 C1: --resume must reset THIS plan's abandoned in_progress jobs to pending.
 
@@ -591,6 +651,7 @@ def main():
         test_j_stop_before_promote_awaiting_review(td)
         test_k_requeue_materialisation(td)
         test_l_resume_recovers_abandoned_jobs(td)
+        test_m_requeue_resume_after_crash(td)
     print('bounded_staged_run_selftest: PASS')
 
 
