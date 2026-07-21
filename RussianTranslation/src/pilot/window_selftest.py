@@ -5546,6 +5546,62 @@ def test_defect_fragment_denylist_round_trip():
         fail('transient requeue must never append denylist rows')
 
 
+def test_h1386_p3d_p3e_run_py_inproc_exit_semantics():
+    """H1386 P3d/P3e: run_py_inproc must mirror CPython for sys.exit('<message>') (message
+    lands in captured stderr, rc=1 -- pre-fix the diagnosis vanished into an empty-stderr
+    crash entry) and must RE-RAISE KeyboardInterrupt (an operator abort inside a gate was
+    recorded as a crashed gate and the audit ran on, polluting the failure gallery)."""
+    from audit_window import run_py_inproc
+    tmp = tempfile.mkdtemp()
+    str_exit = os.path.join(tmp, 'gate_strexit.py')
+    with open(str_exit, 'w', encoding='utf-8', newline='\n') as f:
+        f.write("import sys\nsys.exit('P3E-DIAGNOSIS: missing input file')\n")
+    res = run_py_inproc([str_exit])
+    if res['returncode'] != 1:
+        fail('P3e: a string sys.exit must map to rc=1, got %r' % res['returncode'])
+    if 'P3E-DIAGNOSIS' not in res['stderr']:
+        fail('P3e: the sys.exit message must land in captured stderr, got %r'
+             % res['stderr'][:200])
+    kbd = os.path.join(tmp, 'gate_kbd.py')
+    with open(kbd, 'w', encoding='utf-8', newline='\n') as f:
+        f.write('raise KeyboardInterrupt\n')
+    try:
+        run_py_inproc([kbd])
+        fail('P3d: KeyboardInterrupt inside a gate was swallowed (recorded as a crash)')
+    except KeyboardInterrupt:
+        pass
+
+
+def test_h1386_p3h_stale_check_pins_v2_execution():
+    """H1386 P3h: the v2 branch must cross-check the wf_output's execution /
+    provenance_classes against the manifest's top-level execution / key_provenance --
+    promotion trusts the workflow-side copies (provenance-class gating + the B20
+    model-identity check), so a drifted copy must audit stale, not pass as v1-era-clean."""
+    execu = {'profile_slot': 'c4', 'model_identifier': 'claude-sonnet-5'}
+    prov = {'k1': 'real'}
+    meta = {'root': 'p3h_root', 'selected_keys': ['k1'], 'input_hashes': {},
+            'rootmap_sha256': None, 'nominal': True}
+    manifest = {'schema': 'pwg.headless_execution_manifest.v2', 'meta': dict(meta),
+                'execution': dict(execu), 'key_provenance': dict(prov)}
+    wf_meta = dict(meta, execution=dict(execu), provenance_classes=dict(prov))
+
+    def errs(wf):
+        return stale_check(None, wf, ['k1'], execution_manifest=manifest).get('errors') or []
+
+    matching = errs(wf_meta)
+    if any('execution block' in e or 'provenance_classes' in e for e in matching):
+        fail('P3h: matching v2 execution/provenance flagged as drift: %s' % matching)
+    drifted_exec = errs(dict(wf_meta, execution=dict(execu, model_identifier='claude-opus-4-8')))
+    if not any('execution block' in e for e in drifted_exec):
+        fail('P3h: drifted wf execution block not flagged against the v2 manifest')
+    drifted_prov = errs(dict(wf_meta, provenance_classes={'k1': 'fallback'}))
+    if not any('provenance_classes' in e for e in drifted_prov):
+        fail('P3h: drifted wf provenance_classes not flagged against the v2 manifest')
+    stripped = errs(dict(meta))
+    if not any('execution block' in e for e in stripped):
+        fail('P3h: a wf meta with NO execution copy must not pass the v2 pin')
+
+
 def test_h1386_c3_frag_unblock_serves_replacement():
     """H1386 C3: the fragment half of the H304 gate-outcome contract. Deny an fsha, then
     re-harvest the SAME fsha (rework hashes the fragment SOURCE, so the corrected output
@@ -7331,6 +7387,8 @@ def main():
         test_h1339_b10_b19_audit_chain_routing,
         test_h1339_b11_b12_denylist_lifecycle_and_crash_refusal,
         test_h1386_c3_frag_unblock_serves_replacement,
+        test_h1386_p3d_p3e_run_py_inproc_exit_semantics,
+        test_h1386_p3h_stale_check_pins_v2_execution,
         test_h1339_b13_b15_telemetry_and_siglum_precision,
         test_every_stitch_emits_record_required,
         test_unmapped_token_is_counted,

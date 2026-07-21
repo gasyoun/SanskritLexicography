@@ -475,7 +475,14 @@ def parse_args(argv):
     if lang not in ('ru', 'en'):
         die('unknown --lang %r (ru|en)' % lang)
     if lang == 'en' and mw_tm is None:
-        mw_tm = os.path.join(SRC, 'mw_en_tm.json')      # default MW translation-memory feed
+        # H1386 P3b (B04's missed 5th sidecar): the MW seed feed is gitignored, so a
+        # fresh worktree's src/ copy is ABSENT and sanctioned worktree EN runs silently
+        # dropped the MW seed block from every prompt. Resolve through the canonical
+        # main-checkout path exactly like the other four sidecars (note sidecar_rel:
+        # this one lives in src/, not src/pilot/).
+        from store_path import canonical_sidecar as _canon_sidecar
+        mw_tm = _canon_sidecar(os.path.join(SRC, 'mw_en_tm.json'),
+                               sidecar_rel='RussianTranslation/src')
     if tm in ('__default__', '__auto__') or suggest_tm in ('__default__', '__auto__'):
         # B04 (H1339): resolve the default sidecars through translation_memory's canonical
         # resolvers (main-worktree-aware), NOT this checkout's src/pilot -- the sidecars are

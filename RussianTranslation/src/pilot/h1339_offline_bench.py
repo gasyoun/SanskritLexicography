@@ -62,7 +62,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 REPO = os.path.dirname(SRC)
 FIXTURE = os.path.join(HERE, 'fixtures', 'h1339_offline_bench')
-INPUT_DIR = os.path.join(HERE, 'input')
+# H1386 P3f: the bench-session SANDBOX input dir, set by install_inputs() -- NEVER the
+# live shared src/pilot/input/ (fixtures copied there survived the bench and a later
+# production regen silently kept FROZEN fixture bodies for the 12 A-initial keys).
+# Subprocesses see it via PWG_INPUT_DIR (window_common.INP honors the override).
+INPUT_DIR = None
 
 for p in (HERE, SRC):
     if p not in sys.path:
@@ -188,9 +192,14 @@ def fixture_hash():
 
 
 def install_inputs():
-    os.makedirs(INPUT_DIR, exist_ok=True)
+    """H1386 P3f: install the fixtures into a fresh bench-session sandbox dir (returned
+    and stored in INPUT_DIR); the caller tears it down in a finally so a bench run leaves
+    the checkout byte-identical."""
+    global INPUT_DIR
+    INPUT_DIR = tempfile.mkdtemp(prefix='h1339bench_input_')
     for name in os.listdir(os.path.join(FIXTURE, 'input')):
         shutil.copy2(os.path.join(FIXTURE, 'input', name), os.path.join(INPUT_DIR, name))
+    return INPUT_DIR
 
 
 def build_seed_store(path, tm_seed_rows):
@@ -315,6 +324,10 @@ def one_run(tag, keep=False):
         os.makedirs(d)
     env = dict(os.environ,
                PWG_COORDINATOR_DIR=coord_dir, PWG_RU_STORE=store, PWG_RU_TM_DIR=tm_dir,
+               # H1386 P3f: every pipeline subprocess reads the SANDBOX input dir and
+               # appends events to the sandbox ledger -- never the live checkout's.
+               PWG_INPUT_DIR=INPUT_DIR,
+               PWG_EVENTS_PATH=os.path.join(sandbox, 'dashboard_events.jsonl'),
                PYTHONIOENCODING='utf-8')
 
     # --- setup (untimed): seed store incl. the TM-seed key's rows, then build the TM ---
@@ -380,7 +393,13 @@ def one_run(tag, keep=False):
         for key, entry in (manifest.get('tm_resolved') or {}).items():
             if key not in resolved:
                 results.append({'key': key, 'card': entry.get('card')})
-        payload = {'meta': manifest['meta'], 'summary': {'cards': len(results)},
+        # H1386 P3h: mirror production stamping (headless_worker copies execution +
+        # key_provenance from the manifest into the wf meta) -- the stale check now pins
+        # both, so a bare manifest['meta'] would audit stale.
+        payload = {'meta': dict(manifest['meta'],
+                                execution=manifest.get('execution'),
+                                provenance_classes=manifest.get('key_provenance')),
+                   'summary': {'cards': len(results)},
                    'results': sorted(results, key=lambda r: manifest['meta']['selected_keys'].index(r['key'])
                                      if r['key'] in manifest['meta']['selected_keys'] else 999)}
         wf = os.path.join(sandbox, 'wf_output.%s.json' % lid)
@@ -463,9 +482,17 @@ def main():
 
     install_inputs()
     fx_hash = fixture_hash()
-    print('fixture: %d files, content hash %s' % (
-        len(os.listdir(os.path.join(FIXTURE, 'input'))), fx_hash[:16]))
+    print('fixture: %d files, content hash %s (sandbox input dir %s)' % (
+        len(os.listdir(os.path.join(FIXTURE, 'input'))), fx_hash[:16], INPUT_DIR))
+    try:
+        _bench(a, fx_hash)
+    finally:
+        # H1386 P3f: a bench run leaves the checkout byte-identical -- the sandbox input
+        # dir (the only bench artifact outside per-run sandboxes) is always removed.
+        shutil.rmtree(INPUT_DIR, ignore_errors=True)
 
+
+def _bench(a, fx_hash):
     for i in range(a.warmups):
         t, o = one_run('warm%d' % i)
         print('warmup %d/%d: total %.2fs (promote rc=%s)' % (

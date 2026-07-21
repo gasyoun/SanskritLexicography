@@ -149,7 +149,20 @@ def run_py_inproc(args):
                 runpy.run_path(script, run_name='__main__')
             except SystemExit as exc:
                 code = exc.code
-                rc = code if isinstance(code, int) else (0 if code is None else 1)
+                if isinstance(code, int):
+                    rc = code
+                elif code is None:
+                    rc = 0
+                else:
+                    # H1386 P3e: mirror CPython -- sys.exit('<message>') prints the
+                    # message to stderr and exits 1. Pre-fix the diagnosis vanished
+                    # (a crashed entry with EMPTY stderr).
+                    err.write(str(code) + '\n')
+                    rc = 1
+            except KeyboardInterrupt:
+                # H1386 P3d: an operator abort must ABORT the audit, not be recorded as a
+                # crashed gate that pollutes the failure gallery with a phantom crash.
+                raise
             except BaseException:
                 err.write(traceback.format_exc())
                 rc = 3

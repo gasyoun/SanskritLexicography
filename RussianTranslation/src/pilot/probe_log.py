@@ -155,7 +155,10 @@ def cmd_outcome(a):
     if all(v is None for v in structured.values()):
         import economy_ledger
         kv = economy_ledger.parse_note_kv(getattr(a, 'note', '') or '')
-        recovered = {'cards': kv.get('cards'), 'clean': kv.get('clean') or kv.get('ok'),
+        # H1386 P3j: `or` loses a falsy clean=0 (the B15-motivating degraded-window case,
+        # a REAL all-rejected figure) -- only a genuinely-absent key falls through to ok.
+        recovered = {'cards': kv.get('cards'),
+                     'clean': kv.get('clean') if kv.get('clean') is not None else kv.get('ok'),
                      'agents': kv.get('agents'), 'tokens': kv.get('tokens'),
                      'kill_timeouts': kv.get('kill_timeouts'),
                      'conn_errors': kv.get('conn_errors')}

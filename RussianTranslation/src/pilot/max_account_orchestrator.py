@@ -594,6 +594,15 @@ def cmd_reset_failed(args):
     db = connect(args.db)
     rows = scoped_jobs(db, scope, "state='failed'")
     if not rows:
+        # H1386 P3c: a failed requeue attempt's external_id is '<lease>::rqNN-<kind>' while
+        # the fail-closed drain messages name the ORIGIN lease -- so the documented recovery
+        # command, pasted with the origin id, found nothing for the exact requeue-tombstone
+        # case B18 was built for. Match by origin lease too (still an explicit scope, never
+        # a blanket reset).
+        all_failed = scoped_jobs(db, None, "state='failed'")
+        rows = [j for j in all_failed
+                if coordinator_lease_id(j['external_id']) in scope]
+    if not rows:
         db.close()
         raise SystemExit('no failed job in scope %s' % sorted(scope))
     with db:
@@ -1023,7 +1032,15 @@ def cmd_staged_run(args):
         failed = scoped_job_count(db, lease_scope, "state='failed'")
         db.close()
         if failed:
-            raise SystemExit('staged-run stopped: failed jobs=%d' % failed)
+            # H1386 P3c: name the failed jobs' FULL external_ids -- the reset-failed
+            # recovery needs the exact id (a requeue attempt is '<lease>::rqNN-<kind>').
+            db = connect(args.db)
+            failed_ids = [j['external_id'] for j in
+                          scoped_jobs(db, lease_scope, "state='failed'")]
+            db.close()
+            raise SystemExit('staged-run stopped: failed jobs=%d (%s) -- recover with '
+                             'reset-failed --lease-id <id> --reason "..."'
+                             % (failed, ', '.join(sorted(failed_ids))))
         if not pending and not done_unrecorded:
             break
         if pending:

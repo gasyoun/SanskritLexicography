@@ -531,7 +531,7 @@ def batch_promote(batch, store, review_status, gen_model_version,
     `batch` is a list of {'lease_id', 'glob' (ABSOLUTE or repo-relative), 'expected_subcards'}.
     Returns the per-lease report dict (also written to `report_path` when given)."""
     validate_store_target(store)
-    lease_best, lease_rows = {}, {}
+    lease_best, lease_rows, lease_nulls = {}, {}, {}
     all_rows, seen_subs = [], {}
     for item in batch:
         lease_id = item['lease_id']
@@ -540,14 +540,26 @@ def batch_promote(batch, store, review_status, gen_model_version,
         if not paths:
             raise PromotionContractError('%s: no clean output matched %r'
                                          % (lease_id, item['glob']))
-        best, rows, _nulls, _per_root = collect_and_validate(
+        best, rows, nulls, _per_root = collect_and_validate(
             paths, review_status, gen_model_version)
         expected = sorted(item.get('expected_subcards') or [])
+        # H1386 P3g: an entry with no expected_subcards made the subcard-set gate a silent
+        # no-op (the coordinator always supplies it; only a hand-written manifest can omit
+        # it, which is exactly when the gate matters most).
+        if not expected:
+            raise PromotionContractError(
+                '%s: batch entry has no expected_subcards -- refusing a vacuous '
+                'subcard-set gate; supply the lease expectation explicitly' % lease_id)
         got = sorted(best)
-        if expected and got != expected:
+        if got != expected:
             raise PromotionContractError(
                 '%s: clean output subcards %s do not match the lease expectation %s'
                 % (lease_id, got, expected))
+        if nulls:
+            # H1386 P3g: single mode prints these; batch mode silently dropped them.
+            print('%s: null sub-cards skipped: %d (%s)'
+                  % (lease_id, len(nulls), ', '.join(nulls[:10])))
+        lease_nulls[lease_id] = nulls
         for sub in best:
             if sub in seen_subs:
                 raise PromotionContractError(
@@ -622,7 +634,8 @@ def batch_promote(batch, store, review_status, gen_model_version,
     report = {'schema': 'pwg.batch_promotion.v1',
               'store_rows_before': before, 'store_rows_after': len(rows_to_write),
               'leases': {lease_id: dict({'subcards': len(best),
-                                         'rows': len(lease_rows[lease_id])},
+                                         'rows': len(lease_rows[lease_id]),
+                                         'null_subcards': lease_nulls.get(lease_id) or []},
                                         **_lease_delta(lease_id, best))
                          for lease_id, best in lease_best.items()}}
     print('BATCH PROMOTE: %d lease(s), %d subcard(s), %d sense rows; store %d -> %d rows'

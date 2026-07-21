@@ -492,8 +492,16 @@ def make_run_window(ctx):
             failed = mao.scoped_job_count(db, scope, "state='failed'")
             db.close()
             if failed:
-                raise SystemExit('bounded_staged_run: lease %s has %d failed job(s) — fail closed'
-                                 % (lease_id, failed))
+                # H1386 P3c: print the failed jobs' FULL external_ids -- the documented
+                # reset-failed recovery needs the exact '<lease>::rqNN-<kind>' id.
+                db = mao.connect(ctx.db)
+                failed_ids = [j['external_id'] for j in
+                              mao.scoped_jobs(db, scope, "state='failed'")]
+                db.close()
+                raise SystemExit('bounded_staged_run: lease %s has %d failed job(s) '
+                                 '(%s) — fail closed; recover with reset-failed '
+                                 '--lease-id <id> --reason "..."'
+                                 % (lease_id, failed, ', '.join(sorted(failed_ids))))
             if not pending and not done_unrecorded:
                 break
             if pending:
