@@ -665,6 +665,45 @@ def test_h920_en_missing_sense_hard_flag():
             en.INPUT_DIR = old_dir
 
 
+def test_en_dup_gate_preserves_sanskrit_referent_c2():
+    """C2: the EN within-card DUP hard-gate must key on the RAW english, not prose() — prose()
+    strips {#..#} Sanskrit and <ls>, so two senses distinguished ONLY by their referent
+    ('N. of a serpent-demon {#vAsuki#}' vs '…{#takzaka#}') collapsed to one string and the second
+    was wrongly HARD-DUP'd, failing --strict on faithful output (the verifier found 310 such real
+    within-record cases). A TRUE duplicate (identical english) must still be flagged HARD."""
+    import audit_window_en as en
+    with tempfile.TemporaryDirectory() as tmp:
+        old_dir = en.INPUT_DIR
+        en.INPUT_DIR = tmp   # no portraits -> source_senses absent -> MISSING-SENSE gate skipped
+        try:
+            distinct = en.audit_card(
+                {'key': 'zz~~h0_00_pwg00',
+                 'card': {'records': [{'h': 'zz', 'senses': [
+                     {'tag': '1', 'german': '1〉 N. eines Schlangendämons {#vAsuki#}',
+                      'english': 'N. of a serpent-demon {#vAsuki#}'},
+                     {'tag': '2', 'german': '2〉 N. eines Schlangendämons {#takzaka#}',
+                      'english': 'N. of a serpent-demon {#takzaka#}'}]}]}},
+                None, False)
+            if any(f.startswith('DUP') for _, f in distinct['flags']):
+                fail('C2: senses distinguished by their {#..#} referent must NOT be flagged DUP: %r'
+                     % [f for _, f in distinct['flags']])
+            same = en.audit_card(
+                {'key': 'zz~~h1_00_pwg00',
+                 'card': {'records': [{'h': 'zz', 'senses': [
+                     {'tag': '1', 'german': '1〉 N. eines Schlangendämons {#vAsuki#}',
+                      'english': 'N. of a serpent-demon {#vAsuki#}'},
+                     {'tag': '2', 'german': '2〉 N. eines Schlangendämons {#vAsuki#}',
+                      'english': 'N. of a serpent-demon {#vAsuki#}'}]}]}},
+                None, False)
+            dup_flags = [f for _, f in same['flags'] if f.startswith('DUP')]
+            if not dup_flags:
+                fail('C2: two senses with the EXACT same english must still be flagged DUP')
+            if not any(en.is_hard(f) for f in dup_flags):
+                fail('C2: DUP must remain a HARD flag')
+        finally:
+            en.INPUT_DIR = old_dir
+
+
 def test_h960_accept_sanloss_soft_gate():
     """H960: the harness stamps the deterministic (cross-reference-hardened) source_senses into
     each input, and accept() carries the SAN-LOSS shortfall guard — H920's deferred deepest fix.
@@ -6672,6 +6711,7 @@ def main():
         test_h920_sense_shortfall_gate_flags_dropped_sense,
         test_h920_no_pwg_portrait_stamps_source_senses,
         test_h920_en_missing_sense_hard_flag,
+        test_en_dup_gate_preserves_sanskrit_referent_c2,
         test_h960_accept_sanloss_soft_gate,
         test_tnmask_persist_and_offline_detect,
         test_h960_dropped_sanskrit_span,
