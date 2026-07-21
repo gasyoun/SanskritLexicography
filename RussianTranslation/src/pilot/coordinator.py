@@ -102,6 +102,15 @@ def paths():
     }
 
 
+def _frag_prov_glob():
+    """C7: the ONE glob both the frag_prov detection and the build-frags call use — derived from
+    paths()['artifacts'], so a custom PWG_COORDINATOR_DIR (per-run / worktree coordinator dir) is
+    honored on both sides. Previously detection honored it but build-frags hardcoded the default
+    tree, so a custom dir detected frag_prov here yet built the fragment TM from the empty default
+    tree, silently dropping the just-promoted window's fragments."""
+    return os.path.join(paths()['artifacts'], '*', 'wf_output*.json')
+
+
 def ensure_dirs():
     p = paths()
     os.makedirs(p['base'], exist_ok=True)
@@ -1651,10 +1660,14 @@ def promote_ready(args):
                                                    'batch_subcards': per.get('subcards'),
                                                    'batch_rows': per.get('rows')})
         run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'build', '--lang', 'ru'])
+        # C7: detection and the build-frags call MUST target the same tree (see _frag_prov_glob).
+        # build_frags joins its --glob with REPO, but this pattern is absolute (coord_dir()
+        # abspath's), so that join is a no-op and both sides resolve to the same coordinator dir.
+        frag_glob = _frag_prov_glob()
         if any('"frag_prov"' in open(fp, encoding='utf-8').read()
-               for fp in glob.glob(os.path.join(paths()['artifacts'], '*', 'wf_output*.json'))):
+               for fp in glob.glob(frag_glob)):
             run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'build-frags',
-                     '--lang', 'ru', '--glob', 'src/pilot/output/coordinator/artifacts/*/wf_output*.json'])
+                     '--lang', 'ru', '--glob', frag_glob])
         run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'validate', '--lang', 'ru'])
     print('promoted %d lease(s)' % len(ready))
 

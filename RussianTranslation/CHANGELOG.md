@@ -10,6 +10,34 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — build-frags glob (C7) + German-as-Latin mask drop (C8) + EN backup collision (C9) (H1418)
+
+- **C7 — `build-frags` built the fragment TM from the wrong tree under a custom coordinator dir.**
+  In [`coordinator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py)
+  `promote_ready`, the `frag_prov` **detection** globbed `paths()['artifacts']` (honors
+  `PWG_COORDINATOR_DIR`) but the **build-frags** call hardcoded the default-tree glob — so a
+  per-run/worktree coordinator dir detected fragments yet built the fragment TM from the empty
+  default tree, silently dropping the just-promoted window's fragments. Both sides now use one
+  `_frag_prov_glob()` derived from `paths()['artifacts']`.
+- **C8 — German glosses opening `In…`/`Ab…`/`Ex…`/`Sub…`/`Pro…` were masked as Latin and dropped.**
+  [`pwg_mask.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py)'s
+  `LATIN_PHRASE` matched German-capitalized homographs of Latin prepositions, so a `{%In den
+  Schlusssatz einfallen%}`-style gloss was masked to `{Tn}` and never translated — invisibly
+  (restore reinserts the identical German, so the round-trip stayed "100% lossless"). Fixed: a
+  homograph opener stays Latin only if **no** German function word follows; `De …` (not a German
+  word) remains an unguarded Latin opener. Measured **1 of 192,763** `{%…%}` spans, now kept inline.
+- **C9 — the EN store backup could clobber an earlier recovery copy.**
+  [`promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py)
+  named the backup with a **second-resolution** timestamp and wrote it with a plain `open('w')`, so
+  two lock-serialized runs in the same second overwrote the earlier `.preEN` backup. Fixed to a
+  µs+pid+uuid name (`_en_backup_path`) plus the RU lane's **O_EXCL** fsynced copier
+  (`_fsynced_backup`, imported — single source).
+- Found by the Opus 4.8 (`claude-opus-4-8`) adversarial bug-hunt review (C7/C8/C9 of
+  [issue #632](https://github.com/gasyoun/SanskritLexicography/issues/632)) — the last of the 9
+  confirmed findings (C1–C6 shipped in #634/#636/#638). Selftests: `window_selftest`
+  (`test_frag_prov_glob_honors_coordinator_dir_c7`, `test_pwg_mask_german_homograph_not_latin_c8`)
+  and `promote_en --selftest` (C9 block).
+
 ### Fixed — EN DUP gate false-flags distinct referents (C2) + EN promote {Tn} guard (C6) (H1414)
 
 - **C2 — the EN within-card `DUP` HARD gate false-flagged distinct proper-name senses.**
