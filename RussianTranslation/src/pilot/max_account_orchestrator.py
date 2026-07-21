@@ -33,7 +33,8 @@ CREATE TABLE IF NOT EXISTS accounts (
 CREATE TABLE IF NOT EXISTS jobs (
   id INTEGER PRIMARY KEY AUTOINCREMENT, external_id TEXT UNIQUE NOT NULL,
   argv_json TEXT NOT NULL DEFAULT '[]', cwd TEXT NOT NULL, output_path TEXT NOT NULL,
-  manifest_path TEXT, manifest_sha256 TEXT, result_sha256 TEXT, attempt_log_path TEXT,
+  manifest_path TEXT, manifest_sha256 TEXT, profile_slot TEXT,
+  result_sha256 TEXT, attempt_log_path TEXT,
   failure_class TEXT, reset_at INTEGER,
   coordinator_recorded INTEGER NOT NULL DEFAULT 0,
   state TEXT NOT NULL DEFAULT 'pending', assigned_acc TEXT, attempts INTEGER NOT NULL DEFAULT 0,
@@ -44,6 +45,17 @@ CREATE INDEX IF NOT EXISTS jobs_state_id ON jobs(state, id);
 """
 RATE_LIMIT = re.compile(r"rate.?limit|usage limit|too many requests|429", re.I)
 RESET_EPOCH = re.compile(r"(?:reset(?:s|_at)?|parked_until)[^0-9]{0,20}([0-9]{10})", re.I)
+
+
+def _profile_slot_from_manifest(manifest_path):
+    """Return a validated v2 profile slot, or None for unreadable/invalid legacy input."""
+    try:
+        with open(manifest_path, encoding='utf-8') as f:
+            manifest = json.load(f)
+        validate_manifest(manifest, require_v2=True)
+        return manifest['execution']['profile_slot']
+    except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError):
+        return None
 
 
 def is_rate_limited(worker_status, stderr):
@@ -92,6 +104,7 @@ def connect(path):
     existing = {row[1] for row in db.execute('PRAGMA table_info(jobs)')}
     for name, declaration in (
             ('manifest_path', 'TEXT'), ('manifest_sha256', 'TEXT'),
+            ('profile_slot', 'TEXT'),
             ('result_sha256', 'TEXT'), ('attempt_log_path', 'TEXT'),
             ('failure_class', 'TEXT'), ('reset_at', 'INTEGER'),
             ('coordinator_recorded', 'INTEGER NOT NULL DEFAULT 0')):
@@ -100,6 +113,16 @@ def connect(path):
     account_cols = {row[1] for row in db.execute('PRAGMA table_info(accounts)')}
     if 'validated' not in account_cols:
         db.execute('ALTER TABLE accounts ADD COLUMN validated INTEGER NOT NULL DEFAULT 0')
+    # Existing production databases may predate the profile_slot column. Recheck claim-relevant
+    # NULL rows on every connection so a crash after ALTER but before backfill cannot strand them.
+    # Historical completed rows are never reopened. Invalid active manifests receive an empty
+    # sentinel so an unrelated healthy scope does not reparse them on every connect(). cmd_run_once
+    # explicitly retries falsey bindings in its own scope, preserving repair-and-resume recovery.
+    for row in db.execute(
+            "SELECT id,manifest_path FROM jobs WHERE manifest_path IS NOT NULL "
+            "AND profile_slot IS NULL AND state IN ('pending','in_progress')"):
+        profile_slot = _profile_slot_from_manifest(row['manifest_path']) or ''
+        db.execute('UPDATE jobs SET profile_slot=? WHERE id=?', (profile_slot, row['id']))
     db.commit()
     return db
 
@@ -240,8 +263,9 @@ def _claim_tx(db, account, now, only_external_ids=None):
         return None
     scope_sql, scope_args = _scope_sql(only_external_ids)
     job = db.execute(
-        "SELECT * FROM jobs WHERE state='pending' AND attempts < max_attempts%s "
-        "ORDER BY id LIMIT 1" % scope_sql, scope_args).fetchone()
+        "SELECT * FROM jobs WHERE state='pending' AND attempts < max_attempts "
+        "AND (manifest_path IS NULL OR profile_slot=?)%s ORDER BY id LIMIT 1"
+        % scope_sql, (account,) + scope_args).fetchone()
     if not job:
         db.rollback()
         return None
@@ -497,15 +521,16 @@ def cmd_import_coordinator(args):
                 raise SystemExit('%s: %s' % (lease['id'], exc))
             if manifest['meta'].get('lang') != 'ru':
                 raise SystemExit('%s: H818 production default is RU only' % lease['id'])
+            profile_slot = manifest['execution']['profile_slot']
             keys = set(manifest['meta']['selected_keys'])
             overlap = keys & occupied
             if overlap:
                 raise SystemExit('%s: key overlap with queued/done job: %s' %
                                  (lease['id'], ','.join(sorted(overlap))))
             output = os.path.join(lease['artifact_dir'], 'workflow_result.headless.%s.json' % lease['id'])
-            db.execute('INSERT INTO jobs(external_id,cwd,output_path,manifest_path,manifest_sha256,max_attempts) VALUES(?,?,?,?,?,?)',
+            db.execute('INSERT INTO jobs(external_id,cwd,output_path,manifest_path,manifest_sha256,profile_slot,max_attempts) VALUES(?,?,?,?,?,?,?)',
                        (lease['id'], os.path.abspath(args.cwd), output, manifest_path,
-                        sha256_path(manifest_path), args.max_attempts))
+                        sha256_path(manifest_path), profile_slot, args.max_attempts))
             occupied.update(keys)
             added += 1
     db.close()
@@ -546,6 +571,7 @@ def cmd_import_requeue(args):
         raise SystemExit('%s: %s' % (args.lease_id, exc))
     if manifest['meta'].get('lang') != 'ru':
         raise SystemExit('%s: H818 production default is RU only' % args.lease_id)
+    profile_slot = manifest['execution']['profile_slot']
     external_id = '%s%s%02d-%s' % (args.lease_id, RQ_ID_SEP, number, kind)
     db = connect(args.db)
     existing = {row['external_id'] for row in db.execute('SELECT external_id FROM jobs')}
@@ -569,9 +595,9 @@ def cmd_import_requeue(args):
     output = os.path.join(adir, 'workflow_result.headless.%s.rq%02d-%s.json'
                           % (args.lease_id, number, kind))
     with db:
-        db.execute('INSERT INTO jobs(external_id,cwd,output_path,manifest_path,manifest_sha256,max_attempts) VALUES(?,?,?,?,?,?)',
+        db.execute('INSERT INTO jobs(external_id,cwd,output_path,manifest_path,manifest_sha256,profile_slot,max_attempts) VALUES(?,?,?,?,?,?,?)',
                    (external_id, os.path.abspath(args.cwd), output, manifest_path,
-                    sha256_path(manifest_path), args.max_attempts))
+                    sha256_path(manifest_path), profile_slot, args.max_attempts))
     db.close()
     print('imported=1 %s' % external_id)
     return external_id
@@ -688,11 +714,23 @@ def cmd_run_once(args):
         accounts = [a for a in accounts if a['name'] in only]
     runtime_mode = getattr(args, 'runtime_mode', 'standard')
     db = connect(args.db)
-    manifest_pending = scoped_job_count(
-        db, getattr(args, 'only_external_ids', None),
-        "state='pending' AND manifest_path IS NOT NULL")
+    scope_sql, scope_args = _scope_sql(getattr(args, 'only_external_ids', None))
+    manifest_rows = [dict(row) for row in db.execute(
+        "SELECT external_id,manifest_path,profile_slot,attempts,max_attempts FROM jobs "
+        "WHERE state='pending' AND manifest_path IS NOT NULL%s ORDER BY id" % scope_sql,
+        scope_args)]
+    # A falsey binding is the durable invalid-legacy sentinel. Retry only the selected scope so a
+    # repaired manifest can recover, without making every unrelated connect() reopen the bad file.
+    for row in manifest_rows:
+        if not row['profile_slot']:
+            repaired_slot = _profile_slot_from_manifest(row['manifest_path'])
+            if repaired_slot:
+                row['profile_slot'] = repaired_slot
+                db.execute('UPDATE jobs SET profile_slot=? WHERE external_id=?',
+                           (repaired_slot, row['external_id']))
+    db.commit()
     db.close()
-    if manifest_pending:
+    if manifest_rows:
         # Do not over-claim scheduler rows that the coordinator must reject. Generic jobs keep
         # their historical account fan-out because they do not consume translation runtime.
         # B16 (H1339): filter to CLAIM-ELIGIBLE accounts (validated + unparked -- the exact
@@ -703,6 +741,35 @@ def cmd_run_once(args):
         # account) never fired -- the bounded drain spun to its iteration ceiling instead.
         now_ts = int(time.time())
         accounts = [a for a in accounts if a['validated'] and a['parked_until'] <= now_ts]
+        missing_binding = [row['external_id'] for row in manifest_rows if not row['profile_slot']]
+        if missing_binding:
+            raise SystemExit('pending manifest job(s) have no valid profile binding: %s'
+                             % ','.join(missing_binding))
+        exhausted = [row['external_id'] for row in manifest_rows
+                     if row['attempts'] >= row['max_attempts']]
+        if exhausted:
+            raise SystemExit('pending manifest job(s) exhausted attempts: %s'
+                             % ','.join(exhausted))
+        required_slots = {row['profile_slot'] for row in manifest_rows}
+        eligible_slots = {account['name'] for account in accounts}
+        unavailable = sorted(required_slots - eligible_slots)
+        if unavailable:
+            raise SystemExit('pending manifest profile(s) have no eligible/probed account: %s'
+                             % ','.join(unavailable))
+        placeholders = ','.join('?' for _ in required_slots)
+        db = connect(args.db)
+        busy_rows = list(db.execute(
+            "SELECT assigned_acc,external_id FROM jobs WHERE state='in_progress' "
+            "AND assigned_acc IN (%s) ORDER BY id" % placeholders,
+            tuple(sorted(required_slots))))
+        db.close()
+        if busy_rows:
+            detail = ','.join('%s:%s' % (row['assigned_acc'], row['external_id'])
+                              for row in busy_rows)
+            raise SystemExit('pending manifest profile(s) are busy with active job(s): %s' % detail)
+        # Filter before the 3/4 concurrency slice. Otherwise alphabetically earlier accounts that
+        # own no pending job can cut a required later slot out of the dispatch pass forever.
+        accounts = [account for account in accounts if account['name'] in required_slots]
         accounts = accounts[:4 if runtime_mode == 'staged' else 3]
     work = []
     for acc in accounts:

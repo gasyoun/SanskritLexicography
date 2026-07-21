@@ -61,6 +61,7 @@ none. Model authored by Opus 4.8 (claude-opus-4-8[1m]) for handoff H963.
 """
 import argparse
 import json
+import math
 import os
 import sys
 
@@ -163,15 +164,28 @@ def _window_cost_usd(lease, wf_summary):
     falls back to a recorded numeric cost on the lease. Returns None — NOT 0 — when neither is
     available (the common case: H911 found run-event tokens 'not_recoverable'), so a cost
     ceiling fails the run closed rather than silently under-counting."""
-    tokens = (wf_summary or {}).get('subagent_tokens')
-    if isinstance(tokens, (int, float)) and not isinstance(tokens, bool):
+    summary = wf_summary if isinstance(wf_summary, dict) else {}
+    usage = summary.get('usage') if isinstance(summary.get('usage'), dict) else {}
+    if usage.get('cost_evaluable') is False:
+        return None
+    observed = usage.get('observed_cost_usd')
+    if (isinstance(observed, (int, float)) and not isinstance(observed, bool)
+            and math.isfinite(observed) and observed >= 0):
+        return observed
+    # Current headless workers put usage under summary.usage.  Preserve the old flat field
+    # for historical Workflow artifacts written before the headless envelope was introduced.
+    tokens = usage.get('subagent_tokens', summary.get('subagent_tokens'))
+    if (isinstance(tokens, (int, float)) and not isinstance(tokens, bool)
+            and math.isfinite(tokens) and tokens >= 0):
         return tokens * el.PRICE['input'] / 1e6
     cost = lease.get('cost') if isinstance(lease, dict) else None
-    if isinstance(cost, (int, float)) and not isinstance(cost, bool):
+    if (isinstance(cost, (int, float)) and not isinstance(cost, bool)
+            and math.isfinite(cost) and cost >= 0):
         return cost
     if isinstance(cost, dict):
         usd = cost.get('est_cost_usd') if not cost.get('error') else None
-        if isinstance(usd, (int, float)) and not isinstance(usd, bool):
+        if (isinstance(usd, (int, float)) and not isinstance(usd, bool)
+                and math.isfinite(usd) and usd >= 0):
             return usd
     return None
 
@@ -191,11 +205,18 @@ def audit_from_coordinator(coord_state_path, wf_output, window):
     try:
         with open(coord_state_path, encoding='utf-8') as f:
             coord_state = json.load(f)
-    except (OSError, ValueError, TypeError):
-        coord_state = {}
+    except (OSError, ValueError, TypeError) as exc:
+        raise RuntimeError('coordinator state is unreadable: %s: %s'
+                           % (coord_state_path, exc)) from exc
+    if not isinstance(coord_state, dict):
+        raise RuntimeError('coordinator state is not a JSON object: %s' % coord_state_path)
     # H1339 A4: a requeue work-item audits its ORIGIN lease -- the rq item's own id
     # ('rq-NNN-<origin>') is a supervisor bookkeeping id, never a coordinator lease.
-    lease = _lease_by_id(coord_state, window.get('origin') or window['id']) or {}
+    lease_id = window.get('origin') or window['id']
+    lease = _lease_by_id(coord_state, lease_id)
+    if not isinstance(lease, dict):
+        raise RuntimeError('coordinator lease %s is missing from %s'
+                           % (lease_id, coord_state_path))
     pending = lease.get('pending_requeue') or {}
     requeue_keys = [k for k in (list(pending.get('transient') or []) +
                                 list(pending.get('defect') or [])) if k]
@@ -208,11 +229,21 @@ def audit_from_coordinator(coord_state_path, wf_output, window):
     wf_summary = {}
     try:
         with open(wf_output, encoding='utf-8') as f:
-            wf_summary = (json.load(f).get('summary') or {})
-    except (OSError, ValueError, TypeError):
-        wf_summary = {}
-    calls = int((wf_summary.get('translate_agents_spent') or 0) +
-                (wf_summary.get('heal_agents_spent') or 0))
+            wf_payload = json.load(f)
+        if not isinstance(wf_payload, dict):
+            raise TypeError('top level is not an object')
+        if 'summary' not in wf_payload or not isinstance(wf_payload['summary'], dict):
+            raise TypeError('summary is missing or is not an object')
+        wf_summary = wf_payload['summary']
+    except (OSError, ValueError, TypeError, AttributeError) as exc:
+        raise RuntimeError('workflow output is unreadable: %s: %s'
+                           % (wf_output, exc)) from exc
+    call_parts = [wf_summary.get('translate_agents_spent'),
+                  wf_summary.get('heal_agents_spent')]
+    if any(not isinstance(value, int) or isinstance(value, bool) or value < 0
+           for value in call_parts):
+        raise RuntimeError('workflow summary has invalid call counters: %s' % wf_output)
+    calls = sum(call_parts)
     return {
         'requeue_keys': requeue_keys,
         'satisfied_keys': satisfied,

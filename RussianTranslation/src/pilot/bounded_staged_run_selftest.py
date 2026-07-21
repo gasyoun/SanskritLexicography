@@ -300,6 +300,18 @@ def test_i_audit_from_coordinator(td):
     assert rep['satisfied_keys'] == [], rep
     assert rep['calls'] == 5, rep                                    # 4 + 1
     assert rep['cost'] is not None and rep['cost'] > 0, rep          # priced from tokens
+    with open(wf, 'w', encoding='utf-8') as f:
+        json.dump({'summary': {'translate_agents_spent': 1, 'heal_agents_spent': 0,
+                               'usage': {'subagent_tokens': 2_000_000,
+                                         'observed_cost_usd': 0.42,
+                                         'cost_evaluable': True}}}, f)
+    nested = bsr.audit_from_coordinator(coord_state_path, wf, {'id': 'no_pwg_w02'})
+    assert nested['cost'] == 0.42 and nested['calls'] == 1, nested
+    assert bsr._window_cost_usd({}, {'usage': {
+        'subagent_tokens': 2_000_000, 'cost_evaluable': False}}) is None
+    for invalid in (-1, float('nan'), float('inf')):
+        assert bsr._window_cost_usd({}, {'usage': {
+            'observed_cost_usd': invalid, 'cost_evaluable': True}}) is None
     # a zero-delta requeue window: the pending key is satisfied-not-failed
     with open(coord_state_path, 'w', encoding='utf-8') as f:
         json.dump({'leases': [{'id': 'no_pwg_w02', 'state': 'promoted', 'clean_count': 0,
@@ -307,7 +319,34 @@ def test_i_audit_from_coordinator(td):
                                'pending_requeue': {'transient': ['t~~h0_zz_pw'], 'defect': []}}]}, f)
     rep2 = bsr.audit_from_coordinator(coord_state_path, wf, {'id': 'no_pwg_w02', 'requeue': True})
     assert rep2['satisfied_keys'] == ['t~~h0_zz_pw'] and rep2['requeue_keys'] == [], rep2
-    print('  (i) audit_from_coordinator reads clean/requeue/satisfied/calls/cost from the lease: PASS')
+    for index, malformed_payload in enumerate((
+            {}, {'summary': None}, {'summary': []},
+            {'summary': {'translate_agents_spent': -1, 'heal_agents_spent': 0}})):
+        malformed_wf = os.path.join(td, 'malformed-wf-%d.json' % index)
+        with open(malformed_wf, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump(malformed_payload, f)
+        try:
+            bsr.audit_from_coordinator(
+                coord_state_path, malformed_wf, {'id': 'no_pwg_w02', 'requeue': True})
+            raise AssertionError('malformed workflow summary/call counters were accepted')
+        except RuntimeError as exc:
+            assert 'workflow' in str(exc), exc
+    for bad_state, bad_wf, message in (
+            (os.path.join(td, 'missing-state.json'), wf, 'state'),
+            (coord_state_path, os.path.join(td, 'missing-wf.json'), 'output')):
+        try:
+            bsr.audit_from_coordinator(bad_state, bad_wf, {'id': 'no_pwg_w02'})
+            raise AssertionError('missing %s was accepted' % message)
+        except RuntimeError as exc:
+            assert message in str(exc), exc
+    with open(coord_state_path, 'w', encoding='utf-8') as f:
+        json.dump({'leases': []}, f)
+    try:
+        bsr.audit_from_coordinator(coord_state_path, wf, {'id': 'no_pwg_w02'})
+        raise AssertionError('missing coordinator lease was accepted')
+    except RuntimeError as exc:
+        assert 'lease no_pwg_w02 is missing' in str(exc), exc
+    print('  (i) audit_from_coordinator reads current usage and fails closed on missing artifacts: PASS')
 
 
 def test_j_stop_before_promote_awaiting_review(td):

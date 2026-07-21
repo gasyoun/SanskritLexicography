@@ -16,6 +16,7 @@ cases is exercised end to end:
       index/budget/backlog with NO completed window re-run
   (g) an already-promoted requeue key with zero store-delta is satisfied-not-failed
   (h) the offline default H920 auditor requeues a null card hermetically (no live gen)
+  (n) the offline default auditor fails closed on unreadable/empty output or a crashed sense gate
 
   python src/pilot/bounded_supervisor_selftest.py
 """
@@ -401,6 +402,62 @@ def test_m_calls_clean_survive_restart(td):
     print('  (m) call/clean counters persist across a checkpoint resume: PASS')
 
 
+def test_n_default_audit_fail_closed(td):
+    """The fallback auditor must never turn missing/corrupt evidence or a detector crash into
+    a zero-clean completed window. Either case would let an uncapped supervisor drain to the
+    misleading STOP_CLEAN_TARGET state with no trustworthy audit."""
+    plan = make_plan(1)
+
+    missing = os.path.join(td, 'missing-wf-output.json')
+    cp_missing = os.path.join(td, 'n-missing.json')
+    sup = BoundedSupervisor(plan, lambda _window: missing, cp_missing)
+    try:
+        sup.run()
+        raise AssertionError('unreadable workflow output must fail the fallback audit closed')
+    except RuntimeError as exc:
+        assert 'cannot read workflow output' in str(exc), exc
+    assert not os.path.exists(cp_missing), 'a failed audit must not checkpoint the window complete'
+
+    for index, payload in enumerate(({}, {'results': []}, {'results': [{}]},
+                                     {'results': [{'key': 'wrong', 'card': None}]})):
+        malformed = os.path.join(td, 'n-structural-%d.json' % index)
+        checkpoint = os.path.join(td, 'n-structural-%d.checkpoint.json' % index)
+        with open(malformed, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump(payload, f)
+        sup = BoundedSupervisor(plan, lambda _window, path=malformed: path, checkpoint)
+        try:
+            sup.run()
+            raise AssertionError('structurally empty/mismatched workflow output was accepted')
+        except RuntimeError as exc:
+            assert 'default audit' in str(exc), exc
+        assert not os.path.exists(checkpoint), 'invalid result structure must not checkpoint'
+
+    wf = os.path.join(td, 'n-valid.json')
+    with open(wf, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump({'meta': {}, 'results': [
+            {'key': 'k_0', 'card': {'records': [{'senses': [{'gloss': 'x'}]}]}},
+        ]}, f)
+    import sense_count
+    original_scan = sense_count.scan_sense_shortfall
+    cp_gate = os.path.join(td, 'n-gate.json')
+    try:
+        def crashed_gate(_results, _input_dir):
+            raise ValueError('synthetic detector crash')
+
+        sense_count.scan_sense_shortfall = crashed_gate
+        sup = BoundedSupervisor(plan, lambda _window: wf, cp_gate,
+                                input_dir=tempfile.mkdtemp(prefix='bs_gate_input_'))
+        try:
+            sup.run()
+            raise AssertionError('a crashed sense gate must fail the fallback audit closed')
+        except RuntimeError as exc:
+            assert 'sense-shortfall gate crashed' in str(exc), exc
+        assert not os.path.exists(cp_gate), 'a crashed gate must not checkpoint the window complete'
+    finally:
+        sense_count.scan_sense_shortfall = original_scan
+    print('  (n) default audit unreadable/empty/key-mismatch/gate-crash paths fail closed: PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_a_window_count(td)
@@ -416,6 +473,7 @@ def main():
         test_k_cost_fail_closed(td)
         test_l_cost_unevaluable_harmless_without_ceiling(td)
         test_m_calls_clean_survive_restart(td)
+        test_n_default_audit_fail_closed(td)
     print('bounded_supervisor_selftest: PASS')
 
 
