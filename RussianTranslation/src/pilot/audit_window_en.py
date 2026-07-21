@@ -141,11 +141,10 @@ def content_words(text):
 # "nothing was really translated here" shapes that coverage stats currently count as
 # ordinary translated prose. Both are SOFT (report-only, never --strict-blocking) -- the
 # markup/meaning is intact either way, so this is a coverage-accounting fix, not a fidelity
-# defect. Mirrors gen_opt_harness2.degenerate_passthrough_card's cross-reference vocabulary
-# (kept as an independent copy here -- audit_window_en must not import the generator module,
-# which pulls in the full pwg_mask/microstructure/corpus_gate stack for one word set).
-_XREF_WORDS = {'s', 'siehe', 's.', 'vgl', 'vgl.', 'vergl', 'vergl.', 'u', 'und',
-               'ff', 'fgg', 'fg', 'fg.', 'fgg.', 'nachtrage', 'nachträge'}
+# defect. The cross-reference vocabulary is now the single source shared with the RU harness
+# (gen_opt_harness2.degenerate_passthrough_card) via the dependency-free xref_vocab module,
+# so it can no longer drift as two independent copies (H1425 W2).
+from xref_vocab import DEGENERATE_XREF_WORDS as _XREF_WORDS  # noqa: E402
 _SPAN = re.compile(r'\{#(.*?)#\}', re.S)
 
 

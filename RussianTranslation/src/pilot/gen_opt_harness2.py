@@ -761,10 +761,8 @@ def mw_tm_block(root, mw_tm_path):
             'lacks (e.g. a domain note "(as heavenly bodies)"), OMIT it) ===\n%s\n\n' % tm)
 
 
-_DEGENERATE_WORDS = {
-    's', 'siehe', 's.', 'vgl', 'vgl.', 'vergl', 'vergl.', 'u', 'und',
-    'ff', 'fgg', 'fg', 'fg.', 'fgg.', 'nachtrage', 'nachträge',
-}
+# H1425 W2: single source, shared with audit_window_en.xref_only (was an independent copy in each).
+from xref_vocab import DEGENERATE_XREF_WORDS as _DEGENERATE_WORDS  # noqa: E402
 _DEGENERATE_CORRECTION_RE = re.compile(r'\b(lies|lesen|streichen)\b', re.I)
 
 
