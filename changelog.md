@@ -14,6 +14,12 @@ not an error.
 
 ## [Unreleased]
 
+## [1.52.0] — 21-07-2026
+
+### Added
+
+- **Restored the nine Russian/Soviet full-text conversions removed by [PR #481](https://github.com/gasyoun/SanskritLexicography/pull/481).** Owner ruling on the [Uprava weekly @DECIDE sheet 20-07-2026](https://github.com/gasyoun/Uprava/blob/main/review/weekly/archive/uprava-weekly-decide_20-07-2026_review.html): «bring back, I take the risk» — the copyright risk is explicitly accepted, consistent with the same-day rulings that kept Kumar 1976 + Meenakshi 1983 and left the ~30-work Western academic-press cluster on tip. Files recovered from `68a88c94^` and verified byte-identical to their pre-removal state: four under `literature/md/Вспомогательное/` (Zaliznyak & Paducheva 1975, Jakobson 1987, Mitrenina 2008 + 2010) and five under `literature/md/Общий синтаксис/` (Kibrik et al. 2020, Entsiklopedicheskiy slovar 1984, Testelets, Lomov, Sintaksis-2009). The nine `*_DIGEST.md` files added at removal time are **kept** — they now sit beside their full texts rather than standing in for them. `.gitignore` unchanged (PR #481 touched only a comment there; `!literature/md` still stands); both READMEs corrected — `Вспомогательное/` 15 → 19 files, `Общий синтаксис/` 6 → 11, total referenced 67 → 76.
+
 ## [1.51.0] — 21-07-2026
 
 ### Added
