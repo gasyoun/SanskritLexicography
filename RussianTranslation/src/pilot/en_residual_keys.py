@@ -5,12 +5,12 @@
 
 A key is "done" iff EVERY translation slot in its card carries a non-empty
 `english` — coverage-complete, not merely ">=1 English sense". The old ">=1"
-rule counted a 1/40-sense card as done and hid 39 untranslated senses (FL4;
-same class as ru_coverage's per-root denominator idea, applied within a card).
-The denominator is the card's own senses that carry a German source side (each
-is a slot that must be translated); the numerator is those that also carry
-English. Prints comma-joined missing keys (LF, no trailing CR) to stdout so a
-requeue can `--keys="$(python ... <root>)"`. Empty output => root at 100%.
+rule counted a 1/40-sense card as done and hid 39 untranslated senses (FL4).
+The coverage-complete rule now lives in the shared, --lang-parameterized kernel
+`card_coverage.card_done(card, field)` (H1425 W1), so a fix to it reaches any
+language that calls it; this CLI is the field='english' consumer. Prints
+comma-joined missing keys (LF, no trailing CR) to stdout so a requeue can
+`--keys="$(python ... <root>)"`. Empty output => root at 100%.
 """
 import json
 import os
@@ -19,31 +19,10 @@ import sys
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
+from card_coverage import card_done  # noqa: E402  (shared FL4 slot-coverage kernel)
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(os.path.dirname(HERE))
-
-
-def en_coverage(card):
-    """(english_slots, total_slots) for a card. A slot = a sense carrying a German source
-    side (what must be translated) OR an English side already. A card with no records/senses
-    (or a null card) has 0 slots."""
-    if not card or not card.get("records"):
-        return 0, 0
-    total = eng = 0
-    for r in card["records"]:
-        for s in r.get("senses", []):
-            if s.get("german") or s.get("english"):
-                total += 1
-                if s.get("english"):
-                    eng += 1
-    return eng, total
-
-
-def card_done(card):
-    """Coverage-complete: at least one slot and every slot has English. A null card, an
-    empty card, or a partially-translated card (e.g. 1/40) is NOT done."""
-    eng, total = en_coverage(card)
-    return total > 0 and eng == total
 
 
 def missing(root):
@@ -51,7 +30,7 @@ def missing(root):
     if not os.path.exists(path):
         sys.exit(f"no store: {path}")
     d = json.load(open(path, encoding="utf-8"))
-    have = {e["key"] for e in d["results"] if card_done(e.get("card"))}
+    have = {e["key"] for e in d["results"] if card_done(e.get("card"), "english")}
     return [k for k in d["meta"]["selected_keys"] if k not in have]
 
 

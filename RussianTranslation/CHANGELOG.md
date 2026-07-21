@@ -10,6 +10,22 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed — EN/RU convergence W1: card-done coverage rule extracted to one shared `--lang` kernel (H1425)
+
+- First wave of shrinking the EN-reimplementation surface (the root cause of the RU/EN drift the
+  coverage guard polices). The **FL4 coverage-complete rule** — a card is done iff it has ≥1 slot
+  and *every* German-bearing slot carries the target field (not the old ">=1 translated sense" rule
+  that hid a 1/40 card) — was an EN-only reimplementation inside `en_residual_keys.py`. Extracted to
+  a shared `--lang`-parameterized kernel
+  [`card_coverage.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/card_coverage.py)
+  (`slot_coverage`/`card_done(card, field)`); `en_residual_keys.py` is now a thin `field='english'`
+  consumer (output **byte-identical**, verified against the pre-refactor inline logic). A fix to the
+  rule now reaches any language that calls it. The `en_coverage_card_done_semantics` ledger entry
+  flips **INTENTIONAL-DIVERGENCE → SHARED**. Pinned by `test_card_coverage_lang_symmetric`. NOTE:
+  `ru_coverage.py` does a *different*, coarser check (per-root sub-card presence) and still carries
+  the FL4 per-slot blindspot this kernel fixes — wiring it in is a tracked H1425 follow-up (a
+  behaviour change to a live gate, deferred from this warm-up).
+
 ### Added — LANG_PARITY coverage guard: new RU/EN-lane files can't silently escape the ledger
 
 - The parity ledger's drift check only re-verifies files **already** tracked; a brand-new

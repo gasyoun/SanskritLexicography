@@ -2118,20 +2118,21 @@ def test_coverage_gate_multi_layer_and_presplit():
 
 
 def test_en_residual_coverage_complete():
-    """FL4: en_residual_keys 'done' means coverage-complete, not '>=1 English sense'. A card
-    with 1 of 2 senses translated is a residual (its 1 untranslated sense must not be hidden);
-    a fully-translated card is done; a null/empty card is never done."""
-    from en_residual_keys import card_done, en_coverage
+    """FL4: EN 'done' means coverage-complete, not '>=1 English sense'. A card with 1 of 2 senses
+    translated is a residual (its 1 untranslated sense must not be hidden); a fully-translated card
+    is done; a null/empty card is never done. The rule now lives in the shared card_coverage kernel
+    (H1425 W1) — this test pins the EN consumer path (field='english')."""
+    from card_coverage import card_done, slot_coverage
     partial = {'records': [{'senses': [{'german': 'a', 'english': 'x'}, {'german': 'b'}]}]}
-    if en_coverage(partial) != (1, 2):
-        fail('en_coverage miscounted the partial card')
-    if card_done(partial):
+    if slot_coverage(partial, 'english') != (1, 2):
+        fail('slot_coverage miscounted the partial card')
+    if card_done(partial, 'english'):
         fail('a 1/2-sense card must NOT count as done (the FL4 1/40 bug)')
     full = {'records': [{'senses': [{'german': 'a', 'english': 'x'},
                                     {'german': 'b', 'english': 'y'}]}]}
-    if not card_done(full):
+    if not card_done(full, 'english'):
         fail('a fully-translated card must count as done')
-    if card_done(None) or card_done({'records': []}):
+    if card_done(None, 'english') or card_done({'records': []}, 'english'):
         fail('a null/empty card must never count as done')
 
 
@@ -6619,6 +6620,27 @@ def test_h1283_a6_prep_slice_flattens_batches():
     print('  A6: prep_slice flattens every batch key')
 
 
+def test_card_coverage_lang_symmetric():
+    """H1425 W1: the FL4 coverage-complete rule lives in ONE --lang-parameterized kernel
+    (`card_coverage`), so a fix reaches both languages instead of an EN-only reimplementation.
+    card_done = >=1 slot AND every German-bearing slot carries the target field; identical for
+    'russian'/'english', and the OTHER language's field must not count toward this one's coverage."""
+    from card_coverage import card_done, slot_coverage
+    for field, other in (('english', 'russian'), ('russian', 'english')):
+        full = {'records': [{'senses': [{'german': 'a', field: 'x'}, {'german': 'b', field: 'y'}]}]}
+        part = {'records': [{'senses': [{'german': 'a', field: 'x'}, {'german': 'b'}]}]}
+        empty = {'records': [{'senses': [{'tag': '1'}]}]}   # no german/target -> 0 slots
+        cross = {'records': [{'senses': [{'german': 'a', other: 'z'}]}]}
+        if slot_coverage(full, field) != (2, 2) or not card_done(full, field):
+            fail('%s: a fully-translated card must be done' % field)
+        if slot_coverage(part, field) != (1, 2) or card_done(part, field):
+            fail('%s: FL4 — a 1/2 card must NOT be done (the ">=1" blindspot)' % field)
+        if card_done(empty, field) or card_done(None, field) or card_done({}, field):
+            fail('%s: a null / empty / no-slot card must not be done' % field)
+        if card_done(cross, field):
+            fail('%s coverage must not be satisfied by the %s field' % (field, other))
+
+
 def test_lang_parity_coverage():
     """Parity-coverage guard: no language-aware pipeline file may escape the LANG_PARITY ledger
     unclassified — the hole the C1–C9 EN findings grew in (a new `*_en.py` / `--lang` gate that is
@@ -6970,6 +6992,7 @@ def main():
         test_release_manifest_hash_validation,
         test_lang_parity_ledger_complete,
         test_lang_parity_coverage,
+        test_card_coverage_lang_symmetric,
         test_lang_parity_hash_crlf_independent,
         test_frag_groups_presplit_parity,
         test_defect_fragment_denylist_round_trip,
