@@ -1,9 +1,15 @@
 # Literature Collection - Markdown Index
 
-This directory contains markdown files for the literature collection: some are full-text
-conversions of a source document, others are short paraphrase digests (citation + scope
-summary, no reproduced passages) that stand in for a source document per a per-work rights
-review. Each file's own header states which kind it is.
+This directory contains markdown files for the literature collection: most are full-text
+conversions of a source document, and some are short paraphrase digests (citation + scope
+summary, no reproduced passages). Each file's own header states which kind it is.
+
+For the nine Russian/Soviet works under `Вспомогательное/` and `Общий синтаксис/`, the digest
+and the full-text conversion now sit **side by side**: the full texts were removed on
+15-07-2026 pending a rights review and restored on 21-07-2026 by an explicit owner ruling that
+accepts the risk. The digests added at removal time were kept — they stand on their own, not
+as placeholders. Elsewhere in the tree, a digest with no full-text sibling does still stand in
+for a work that is not redistributed here.
 
 ## Structure
 
@@ -23,26 +29,26 @@ Comprehensive lexicography and corpus linguistics reference collection including
 - Publications from Oxford, Routledge, Cambridge, and other academic presses
 - One paraphrase digest (`making-dictionaries-mdf-coward-grimes-2000.md`)
 
-### Вспомогательное/ (15 files)
+### Вспомогательное/ (19 files)
 Supporting materials including:
 - Russian language syntax resources
 - Comparative syntax studies
 - Word formation analysis
 - Additional scholarly references
-- Four paraphrase digests (Zaliznyak & Paducheva 1975, Jakobson 1987, Mitrenina 2008/2010)
+- Four paraphrase digests (Zaliznyak & Paducheva 1975, Jakobson 1987, Mitrenina 2008/2010), each alongside its restored full text
 
 ### На иностранных/ (3 files)
 Foreign language materials including:
 - Historical syntax studies in German and French
 - Comparative linguistic research
 
-### Общий синтаксис/ (6 files)
+### Общий синтаксис/ (11 files)
 General syntax materials covering:
 - Russian syntax reference works
 - Syntax encyclopedic references
 - Linguistic analysis frameworks
 - Educational materials on syntax
-- Five paraphrase digests (Entsiklopedicheskiy slovar 1984, Kibrik et al., Testelets, Lomov, Sintaksis-2009)
+- Five paraphrase digests (Entsiklopedicheskiy slovar 1984, Kibrik et al., Testelets, Lomov, Sintaksis-2009), each alongside its restored full text
 
 ## File Format
 
@@ -59,11 +65,11 @@ a "why this project uses it" section — no reproduced passages of the source te
 ## Usage
 
 Full-text files are direct conversions of the source PDF/DOC and can be searched/quoted
-directly. Digest files summarize a source that is not redistributed in full here; consult the
-original (held outside this repo) for anything beyond what the digest's own citation and scope
-summary cover.
+directly. Digest files give a citation and an honest scope summary; where a digest has no
+full-text sibling, consult the original (held outside this repo) for anything beyond what the
+digest covers.
 
 ---
 
-Generated: 2026-06-26 · Digests added 15-07-2026
-Total files referenced: 67
+Generated: 2026-06-26 · Digests added 15-07-2026 · Nine full texts restored 21-07-2026
+Total files referenced: 76
