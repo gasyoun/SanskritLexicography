@@ -694,8 +694,12 @@ def run(args):
         # drain loop then sees neither pending nor done-unrecorded and exits at once, stranding
         # the lease forever. Reset in_progress jobs (scoped to this plan) back to pending before
         # the supervisor drains.
+        # H1386 C1: cmd_recover takes the lease-id SET, never the staged_plan_scope dict --
+        # iterating the dict fed its KEYS ('expected_headwords', 'lease_ids', ...) into the
+        # SQL scope, so the recovery UPDATE matched zero jobs and a crashed window was
+        # checkpointed COMPLETED with zero output (mirrors cmd_staged_run's set(lease_ids)).
         mao.cmd_recover(argparse.Namespace(
-            db=args.db, only_external_ids=scope,
+            db=args.db, only_external_ids=set(scope['lease_ids']),
             coordinator=args.coordinator, coord_dir=args.coord_dir, cwd=args.cwd))
 
     sup = build_supervisor(windows, args.checkpoint, ceilings, run_window, audit,

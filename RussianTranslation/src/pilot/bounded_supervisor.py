@@ -283,6 +283,19 @@ class BoundedSupervisor:
                         'lease/job for these keys (or rerun attended) before resuming.'
                         % (item.get('id'), item.get('keys')))
 
+                # H1386 C1 defense-in-depth: the same guard for a NORMAL window. run_window
+                # returning None means the drain found no runnable job for the lease (never
+                # imported, already advanced, or crash recovery matched nothing) -- yet the
+                # loop below would checkpoint it COMPLETED with zero model calls, silently
+                # marking its headwords translated when nothing ran.
+                if wf_output is None:
+                    raise SystemExit(
+                        'bounded_supervisor: window %s produced no output -- run_window '
+                        'returned None (no runnable job for the lease: unimported, already '
+                        'advanced, or recovery matched nothing), so checkpointing it '
+                        'COMPLETED would silently drop its headwords untranslated. Recover '
+                        'the lease/job state before resuming.' % item.get('id'))
+
                 # (3) AUDIT — injected report, or the H920 gate helper on a tmp dir.
                 report = self._run_audit(wf_output, item)
 

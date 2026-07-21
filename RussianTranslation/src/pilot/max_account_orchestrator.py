@@ -194,6 +194,12 @@ def parse_reset(text, now=None):
 def _scope_sql(only_external_ids):
     if only_external_ids is None:
         return '', ()
+    # H1386 C1 defense-in-depth: iterating a dict yields its keys and a str its characters,
+    # silently degrading the scope to a zero-match (the bounded --resume regression). A scope
+    # must be a set/list/tuple of external ids -- reject the wrong shape loudly.
+    if isinstance(only_external_ids, (dict, str, bytes)):
+        raise TypeError('only_external_ids must be a set/list of external ids, got %s'
+                        % type(only_external_ids).__name__)
     ids = tuple(sorted(set(only_external_ids)))
     if not ids:
         return ' AND 0', ()
