@@ -14,6 +14,16 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+
+- FINDINGS §458 (H1416, [csl-atlas PR #282](https://github.com/sanskrit-lexicon/csl-atlas/pull/282)):
+  the per-letter law — a Sanskrit dictionary's big letters (`a`, `u`, `p`, `s`, `v`) are big
+  because they head **preverb families**, so `a`'s 83.1 % compound share is not unique; plus the
+  reusable methodological gotcha that testing "entries shrink over serial publication" needs an
+  outlier-robust per-letter rank estimator (encyclopedic SKD/VCP have single 300k-char articles
+  that give a parametric regression a spurious +733 % slope). Funding-decay hypothesis **refuted
+  for SKD/VCP**, real in PWG/PWK/GRA.
+
 ## [1.47.0] — 21-07-2026
 
 ### Added
