@@ -90,11 +90,28 @@ def run_final_schema_gate(results):
 
 def run_py(args, env=None):
     t0 = time.perf_counter()
-    p = subprocess.run([sys.executable] + args, cwd=SRC, capture_output=True,
-                       text=True, encoding='utf-8', env=env, timeout=1800)
-    return {'argv': [sys.executable] + args, 'returncode': p.returncode,
-            'stdout': p.stdout, 'stderr': p.stderr,
-            'seconds': round(time.perf_counter() - t0, 3)}
+    argv = [sys.executable] + args
+    # P6 (H1422): subprocess.run had no try/except -- a TimeoutExpired/OSError re-raised
+    # straight through the caller (collect_cards / root_glue_translated.py) and crashed
+    # the whole audit with no report or requeue. The rest of main() already handles a
+    # non-{0,1} returncode gracefully (gates/'collect'/'glue' each append to `crashed` and
+    # the audit still reports+requeues) -- so on either exception this returns the SAME
+    # shape a normal run does, with a distinguishing returncode: 124 (the conventional
+    # "timed out" exit code) or -1 for any other OSError (missing interpreter, etc.).
+    try:
+        p = subprocess.run(argv, cwd=SRC, capture_output=True,
+                           text=True, encoding='utf-8', env=env, timeout=1800)
+        return {'argv': argv, 'returncode': p.returncode,
+                'stdout': p.stdout, 'stderr': p.stderr,
+                'seconds': round(time.perf_counter() - t0, 3)}
+    except subprocess.TimeoutExpired as e:
+        return {'argv': argv, 'returncode': 124, 'stdout': e.stdout or '',
+                'stderr': (e.stderr or '') + '\nrun_py: TimeoutExpired after %ss' % e.timeout,
+                'seconds': round(time.perf_counter() - t0, 3)}
+    except OSError as e:
+        return {'argv': argv, 'returncode': -1, 'stdout': '',
+                'stderr': 'run_py: OSError: %s' % e,
+                'seconds': round(time.perf_counter() - t0, 3)}
 
 
 def run_py_inproc(args):

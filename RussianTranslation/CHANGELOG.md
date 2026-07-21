@@ -38,6 +38,58 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   (`test_frag_prov_glob_honors_coordinator_dir_c7`, `test_pwg_mask_german_homograph_not_latin_c8`)
   and `promote_en --selftest` (C9 block).
 
+### Fixed — audit/mask robustness plausibles P3–P8, verified and fixed (H1422)
+
+Six LOW-severity PLAUSIBLE findings from the same Opus 4.8 adversarial bug-hunt
+([issue #632](https://github.com/gasyoun/SanskritLexicography/issues/632)) that shipped C1–C9
+above — verified against real code/callers, all six real, all fixed:
+
+- **P3 — the degenerate cross-reference pass-through lane leaked German into the RU/EN field.**
+  [`gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py)
+  `degenerate_passthrough_card` assigned `field: body` — the German source text, verbatim — for
+  stubs it correctly identified as untranslatable (`vgl.`/`s.`/`ff.` cross-reference particles).
+  These German tokens are not even covered by `german_residue_scan.py`'s wordlist (it requires
+  3+-letter function words), so the leak was previously undetectable by any existing audit. Now
+  the target field stays empty; the German remains visible via the `german` key for editorial
+  reference.
+- **P4 — sense-tier splitting had no open-span guard, unlike the citation-batch tier.**
+  [`autosplit_requeue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/autosplit_requeue.py)
+  `_blocks` detected sense boundaries purely from lines matching `_SENSE` ("1)", "2)", …), with no
+  `_span_open` awareness — unlike `_cit_parts` (H155). A multi-line `<ls>`/`{#..#}` citation whose
+  interior contained a `_SENSE`-shaped locator could be torn across two (sub)sense blocks. Fixed
+  by applying the same balanced-span deferral to sense-boundary detection.
+- **P5 — `audit_sense_dupes.norm()` stripped `)`/`〉` but not a trailing `.`.**
+  [`audit_sense_dupes.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/audit_sense_dupes.py):
+  tag `1.` and plain `1` hashed to different buckets, so a real cross-part duplicate with
+  mismatched locator punctuation was missed by the dupe check. Now strips trailing `.`/`)` in
+  any order; an interior period (`caus. 2`) stays untouched.
+- **P6 — `audit_window.run_py`'s subprocess call had no error handling.**
+  [`audit_window.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py):
+  a `TimeoutExpired`/`OSError` re-raised straight through `collect_cards`/`root_glue_translated.py`
+  and crashed the whole audit with no report or requeue, even though `main()`'s gate loop already
+  handles a non-`{0,1}` returncode gracefully. Now converts either exception into that same result
+  shape (returncode `124`/`-1`) instead of propagating.
+- **P7 — the EN `MISSING-EN` hard gate treated cross-ref/abbrev residue as translatable prose.**
+  [`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py):
+  `has_gloss` fired on ANY non-empty German prose residue, including a bare cross-reference
+  apparatus (`vgl. {#foo#} fgg.`) that `xref_only()` already recognizes as non-target — hard-failing
+  a sense that was never a translation target the moment its english field was correctly left
+  empty. Now `has_gloss` also requires `not xref_only(g)`.
+- **P8 — EN `MARKUP-LOSS` summed two marker classes before comparing, letting one mask the other.**
+  [`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py):
+  `{%..%}` gloss-wrapper count and `<div>` count were added into one combined number, so a dropped
+  gloss wrapper could be masked by an unrelated `<div>` gained in the english (net count unchanged).
+  Now counts and compares each marker class separately.
+
+LANG_PARITY.md re-verified: `target_field_markup_fidelity_parity_c1` (P3's degenerate lane is
+structurally exempt from the C1 fidelity guard — it bypasses `translateBatch`/`healOnly`
+entirely) and `subprocess_and_bom_hardening_h316` (P6 only adds error handling around the
+existing `encoding='utf-8'`/`timeout=1800` call, both left unchanged) verdicts confirmed to
+still hold; 49 stale hashes re-verified and updated. Selftests: `window_selftest`
+(`test_degenerate_passthrough_no_german_in_target`, `test_sense_split_never_tears_open_span`,
+`test_sense_dupe_norm_strips_trailing_period`, `test_run_py_survives_timeout_and_oserror`,
+`test_p7_missing_en_not_fired_on_xref_only_residue`, `test_p8_markup_loss_not_masked_by_unrelated_div`).
+
 ### Fixed — EN DUP gate false-flags distinct referents (C2) + EN promote {Tn} guard (C6) (H1414)
 
 - **C2 — the EN within-card `DUP` HARD gate false-flagged distinct proper-name senses.**
