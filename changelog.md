@@ -14,6 +14,18 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+
+- pwg_ru abbreviation ↔ ЛЭС-1990 comparison layer: standalone [`pwg_ru/ABBREV_LES1990_SRAVNENIE_2026-07.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/ABBREV_LES1990_SRAVNENIE_2026-07.md)
+  plus a summary врезка in [`pwg_ru/ABBREV_UNIFIED_LIST_PROPOSAL_2026-07.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/ABBREV_UNIFIED_LIST_PROPOSAL_2026-07.md)
+  (Opus 4.8 `claude-opus-4-8`, `/ask`): benchmarks the 269-token unified list against the
+  «Список основных сокращений» of the Linguistic Encyclopedic Dictionary (ЛЭС, ed. В. Н. Ярцева,
+  1990). 24 tokens match ЛЭС verbatim (см./ср./напр./изд./ред. + the case Latinisms
+  акк./ген./абл./лок.); the Sanskrit verbal apparatus (аорист/каузатив/медий) lies outside ЛЭС
+  jurisdiction (там эталон — классическая индоевропеистика); jurisdictional divergences (spacing
+  «т. е.», ед.→ед. ч., стр.→с., дат.→дат. п., герунд.→абс.) parked as a non-binding
+  harmonization-candidate list — voted H1303 tables untouched.
+
 ## [1.50.0] — 21-07-2026
 
 ### Added
