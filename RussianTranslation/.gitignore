@@ -160,6 +160,10 @@ pwg_ru/reglue/synth_outputs/*
 pwg_ru/eval/
 review/h178_*_sheet.html
 
+# H1303 abbreviation-ratification sheet (csl_pyutil emitter) — same class as the
+# h178/h180 sheets above: personal voting artifact, local-only (repo is PUBLIC).
+review/h1303_*_sheet.html
+
 # Generated Workflow harnesses embed source/portrait payloads and are local-only.
 src/pilot/run_pilot_wf.*.js
 !src/pilot/run_pilot_wf.js
