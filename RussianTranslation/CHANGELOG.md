@@ -10,6 +10,33 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — coordinator concurrency/durability plausibles P2/P10/P11 (H1420)
+
+- Three PLAUSIBLE findings from the Opus 4.8 adversarial pwg_ru bug-hunt
+  ([issue #632](https://github.com/gasyoun/SanskritLexicography/issues/632); C1–C9 shipped in
+  v1.47.0), each verified real against the code + callers and fixed in
+  [`coordinator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py),
+  one selftest pinned per defect:
+  - **P2** — `_win32_pid_alive` reported DEAD for *every* `OpenProcess` error except `ERROR_ACCESS_DENIED`
+    (5), contradicting its own fail-safe comment: a transient/unexpected probe error would falsely reclaim a
+    **live** lock into two writers (the A1 double-writer window, H1283). It now leans ALIVE on any error
+    except the definitively-dead `ERROR_INVALID_PARAMETER` (87 = no such pid); the classification is extracted
+    to a pure `_win32_alive_on_openprocess_error` and pinned by
+    `test_h1420_p2_win32_openprocess_error_leans_alive`.
+  - **P10** — `promote_ready` commits the store in one all-or-nothing batch, then rebuilt the RU TM *after* the
+    per-lease state loop; a raise between the store commit and the rebuild (unreadable batch report,
+    no-landed-subcards, a per-lease state error) left store and TM divergent until the next clean run. The
+    rebuild now runs in a `finally` (extracted to `rebuild_ru_translation_memory`), pinned by
+    `test_h1420_p10_promote_rebuilds_tm_in_finally`.
+  - **P11** — `record-output` gated only on `state=='running'`, so after a run was released/recovered and the
+    lease re-run, a stale `workflow_result` from the prior run could record against the new run (silent
+    misattribution). A new optional `--run-id` (the identity sealed at `begin-run`) must now match the running
+    lease's `run_id`; a mismatch is refused before any state is persisted. Pinned by
+    `test_h1420_p11_record_output_binds_run_id`.
+- All three are lang-agnostic coordinator/lock/promotion machinery (no RU/EN divergence); the two
+  `coordinator.py` `LANG_PARITY.md` SHARED entries were re-verified and re-hashed. `window_selftest` 175/175;
+  `lang_parity_check` no drift.
+
 ### Changed — EN/RU convergence W2: shared cross-reference vocabulary + audit reassessment (H1425)
 
 - The cross-reference / degenerate-passthrough vocabulary (`s.`, `vgl.`, `u.`, `Nachträge`, …)

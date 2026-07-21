@@ -6735,6 +6735,163 @@ def test_h1283_a1_pid_alive_and_dirlock_owner():
     print('  A1: pid_alive is a real liveness probe; DirLock spares a foreign-owned lock')
 
 
+def test_h1420_p2_win32_openprocess_error_leans_alive():
+    """P2 (H1420): _win32_alive_on_openprocess_error leans ALIVE on every OpenProcess error except
+    ERROR_INVALID_PARAMETER (87 = no such pid). The prior `err == ERROR_ACCESS_DENIED` reported
+    DEAD for every error but 5, so any transient probe error falsely reclaimed a LIVE lock into two
+    writers (the A1 double-writer window, H1283)."""
+    import coordinator as coord
+    if not coord._win32_alive_on_openprocess_error(5):
+        fail('P2: ERROR_ACCESS_DENIED (5) is a live process we lack rights to open -> ALIVE')
+    if coord._win32_alive_on_openprocess_error(coord.ERROR_INVALID_PARAMETER):
+        fail('P2: ERROR_INVALID_PARAMETER (87) is the only definitively-dead error -> DEAD')
+    for err in (0, 6, 8, 998, 1450):  # success/handle/memory/transient codes -> must lean ALIVE
+        if not coord._win32_alive_on_openprocess_error(err):
+            fail('P2: OpenProcess error %d must lean ALIVE (never falsely reclaim a live lock)' % err)
+    print('  P2: OpenProcess error classification leans alive except no-such-pid (87)')
+
+
+def test_h1420_p11_record_output_binds_run_id():
+    """P11 (H1420): record-output refuses a workflow_result whose --run-id does not match the
+    running lease's sealed run_id (a stale/zombie run recording against a re-leased run), and the
+    on-disk lease stays 'running' for a correct retry. A matching --run-id proceeds."""
+    import coordinator
+    from types import SimpleNamespace
+    old = os.environ.get('PWG_COORDINATOR_DIR')
+    original_run = coordinator.run_cmd
+    with tempfile.TemporaryDirectory() as tmp:
+        os.environ['PWG_COORDINATOR_DIR'] = tmp
+        try:
+            adir = os.path.join(tmp, 'run')
+            os.makedirs(adir)
+            manifest = os.path.join(adir, 'manifest.json')
+            with open(manifest, 'w', encoding='utf-8') as f:
+                json.dump({'schema': 'pwg.headless_execution_manifest.v1',
+                           'meta': {'selected_keys': ['k'], 'input_hashes': {}}}, f)
+            result_path = os.path.join(adir, 'result.json')
+            with open(result_path, 'w', encoding='utf-8') as f:
+                json.dump({'results': [{'key': 'k', 'card': {'key1': 'k'}}]}, f)
+
+            def fresh_running_state():
+                state = coordinator.default_state()
+                state['leases'] = [{
+                    'id': 'run', 'kind': 'verb', 'target': 'gam', 'state': 'running',
+                    'artifact_dir': adir, 'execution_manifest': manifest,
+                    'run_operation_id': 'op-X', 'run_id': 'run-X',
+                }]
+                coordinator.save_state(state)
+
+            # A record-output carrying the WRONG run identity is refused before any subprocess runs.
+            fresh_running_state()
+
+            def must_not_run(*a, **k):
+                fail('P11: mismatched --run-id must be refused before the audit subprocess runs')
+            coordinator.run_cmd = must_not_run
+            try:
+                coordinator.record_output(SimpleNamespace(
+                    lease_id='run', workflow_result=result_path, allow_stale=False,
+                    transcript_dir=None, run_id='run-Y'))
+                fail('P11: record-output accepted a stale run-id')
+            except SystemExit as e:
+                if 'run-id' not in str(e):
+                    raise
+            if coordinator.load_state()['leases'][0]['state'] != 'running':
+                fail('P11: a refused record-output must leave the on-disk lease running')
+
+            # The matching run identity proceeds (the lease leaves 'running').
+            fresh_running_state()
+
+            def fake_audit(cmd, cwd=coordinator.REPO, check=True, timeout=None):
+                adir_ = cmd[cmd.index('--out-dir') + 1]
+                with open(os.path.join(adir_, 'window_status.json'), 'w', encoding='utf-8') as f:
+                    json.dump({'state': 'blocked'}, f)
+                with open(os.path.join(adir_, 'audit_window.report.json'), 'w', encoding='utf-8') as f:
+                    json.dump({}, f)
+                return SimpleNamespace(returncode=2, stdout='', stderr='')
+            coordinator.run_cmd = fake_audit
+            coordinator.record_output(SimpleNamespace(
+                lease_id='run', workflow_result=result_path, allow_stale=False,
+                transcript_dir=None, run_id='run-X'))
+            if coordinator.load_state()['leases'][0]['state'] == 'running':
+                fail('P11: a matching --run-id must let record-output proceed')
+            print('  P11: record-output binds a supplied --run-id to the running lease run_id')
+        finally:
+            coordinator.run_cmd = original_run
+            if old is None:
+                os.environ.pop('PWG_COORDINATOR_DIR', None)
+            else:
+                os.environ['PWG_COORDINATOR_DIR'] = old
+
+
+def test_h1420_p10_promote_rebuilds_tm_in_finally():
+    """P10 (H1420): once the batch store commit lands, a raise while reading the batch report or
+    updating per-lease state must NOT skip the RU TM rebuild -- else store and TM diverge. The
+    rebuild runs in a `finally`, so it happens even when per-lease promotion raises."""
+    import coordinator
+    from types import SimpleNamespace
+    old = os.environ.get('PWG_COORDINATOR_DIR')
+    original_run = coordinator.run_cmd
+    with tempfile.TemporaryDirectory() as tmp:
+        os.environ['PWG_COORDINATOR_DIR'] = tmp
+        try:
+            adir = os.path.join(tmp, 'artifacts', 'lease')
+            os.makedirs(adir)
+            wf = os.path.join(adir, 'wf.json')
+            clean = os.path.join(adir, 'clean.json')
+            status_path = os.path.join(adir, 'window_status.json')
+            report_path = os.path.join(adir, 'audit_window.report.json')
+            manifest = os.path.join(adir, 'manifest.json')
+            payload = {'results': [{'key': 'k', 'card': {'key1': 'k'}}]}
+            for path, value in ((wf, payload), (clean, payload),
+                                (status_path, {'state': 'clean', 'requeue_keys': []}),
+                                (report_path, {'workflow': wf, 'requeue': [], 'crashed': [],
+                                               'stale_check': {'ok': True}}),
+                                (manifest, {'schema': 'pwg.headless_execution_manifest.v1',
+                                            'meta': {'selected_keys': ['k'], 'input_hashes': {}}})):
+                with open(path, 'w', encoding='utf-8') as f:
+                    json.dump(value, f)
+            state = coordinator.default_state()
+            state['leases'] = [{
+                'id': 'lease', 'kind': 'nominal', 'target': 'n', 'state': 'ready',
+                'artifact_dir': adir, 'wf_output': wf, 'clean_output': clean,
+                'execution_manifest': manifest,
+                'clean_output_sha256': coordinator.sha256_file(clean), 'clean_count': 1,
+                'audit_state': 'clean', 'audit_returncode': 0,
+                'status_path': status_path, 'audit_report': report_path,
+            }]
+            coordinator.save_state(state)
+
+            tm_builds = []
+
+            def fake_run(cmd, cwd=coordinator.REPO, check=True, timeout=None):
+                if '--batch-manifest' in cmd:
+                    # Store commit "succeeds", but the report lists NO subcards for the lease, so
+                    # the per-lease loop raises AFTER the store is committed (the P10 window).
+                    report = cmd[cmd.index('--report') + 1]
+                    with open(report, 'w', encoding='utf-8') as f:
+                        json.dump({'leases': {'lease': {}}}, f)
+                elif 'translation_memory.py' in ' '.join(cmd) and 'build' in cmd:
+                    tm_builds.append(cmd)
+                return SimpleNamespace(returncode=0, stdout='', stderr='')
+            coordinator.run_cmd = fake_run
+            try:
+                coordinator.promote_ready(SimpleNamespace(
+                    gen_model_version='claude-sonnet-5', lease_id=None))
+                fail('P10: promotion with no landed subcards must raise')
+            except SystemExit as e:
+                if 'no subcards' not in str(e):
+                    raise
+            if not tm_builds:
+                fail('P10: the RU TM rebuild must run in a finally even when per-lease promotion raises')
+            print('  P10: promote_ready rebuilds the RU TM in a finally after the store commit')
+        finally:
+            coordinator.run_cmd = original_run
+            if old is None:
+                os.environ.pop('PWG_COORDINATOR_DIR', None)
+            else:
+                os.environ['PWG_COORDINATOR_DIR'] = old
+
+
 def test_h1283_a5_max_wide_default_bounded():
     """A5 (H1283): bounded dispatch is the DEFAULT — the highest throughput-per-effort lever."""
     import gen_opt_harness2 as gh
@@ -7183,6 +7340,9 @@ def main():
         test_grammar_field_restore_behavioral,
         test_h_reconstructed_regression_guard,
         test_h1283_a1_pid_alive_and_dirlock_owner,
+        test_h1420_p2_win32_openprocess_error_leans_alive,
+        test_h1420_p11_record_output_binds_run_id,
+        test_h1420_p10_promote_rebuilds_tm_in_finally,
         test_h1283_a5_max_wide_default_bounded,
         test_h1283_a6_prep_slice_flattens_batches,
         test_frag_prov_glob_honors_coordinator_dir_c7,
