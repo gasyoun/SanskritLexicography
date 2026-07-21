@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §458) whatever its section, so existing numbers never shift; when a finding is later
+(currently §459) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -51,6 +51,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§7. DCS lemma data is keyed in two transliterations](#7-dcs-lemma-data-is-keyed-in-two-transliterations) — SLP1 vs IAST across the two frequency files.
 - 🔴 [§8. Unaccented DCS cannot distinguish present class I from VI](#8-unaccented-dcs-cannot-distinguish-present-class-i-from-vi) — 117 spurious corpus-derived class additions were reverted.
 - 🔴 [§457. DCS covers ~25% of the Poona Dictionary's citation mass but ~78% of DCS's own tokens — the classical core, not PD's encyclopedic breadth; and a siglum prefix-merge fuses MahāBhā. (Mahābhārata) with MahāBh. (Mahābhāṣya)](#457-dcs-covers-25-of-the-poona-dictionarys-citation-mass-but-78-of-dcss-own-tokens--the-classical-core-not-pds-encyclopedic-breadth-and-a-siglum-prefix-merge-fuses-mahābhā-mahābhārata-with-mahābh-mahābhāṣya) — first PD×DCS measurement (PD letter a-): residue = purāṇas/kośas/classical kāvya (Padma 3506, Mahābhāṣya 1934, no Raghuvaṃśa); ⚠️ never prefix-cluster sigla.
+- 🔴 [§458. A Sanskrit dictionary’s big letters are big because they head *preverb families* — and testing entry-size decay needs an outlier-robust estimator, not a parametric regression](#458-a-sanskrit-dictionarys-big-letters-are-big-because-they-head-preverb-families--and-testing-entries-shrink-over-publication-needs-an-outlier-robust-estimator-not-a-parametric-regression-encyclopedic-dicts-have-single-300k-char-articles) — `a` 83.1% compounds is not unique (`u`/`p`/`s`/`v` close behind); every big letter heads a preverb family (`v`=vi-, `u`=ud-/upa-); SKD/VCP funding-decay REFUTED (ρ≈0.00), real in PWG/PWK/GRA.
 - 🟠 [§62. Varga distribution is almost epoch-stable (Cramér's V = 0.037)](#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) — p-values carry no signal at DCS scale; the 2014 dissertation prose read high p as «growth»; shares agree with the p-table against the prose.
 - 🔴 [§9. DCS OccId and sent_id are not unique keys](#9-dcs-occid-and-sent_id-are-not-unique-keys) — PK collisions silently dropped tokens and 449 sentences before synthetic keys.
 - 🟠 [§10. DCS UD tense marking conflates aorist and perfect](#10-dcs-ud-tense-marking-conflates-aorist-and-perfect) — both surface as Tense=Past; recover via the 2021 export.
@@ -3332,3 +3333,43 @@ whose member-**order** caveat is
 > dictionary side = [MWderivations `issue15/compounds_reverse_classified.tsv`](https://github.com/gasyoun/MWderivations/blob/master/issue15/compounds_reverse_classified.tsv) ·
 > [H1328](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1328-Opus_VisualDCS_kompozity-mw-uttarapada-join-dict-vs-corpus_19.07.26.md)
 > — VisualDCS · 20-07-2026, Opus 4.8 (`claude-opus-4-8[1m]`).
+
+### §458. A Sanskrit dictionary's big letters are big because they head *preverb families* — and testing "entries shrink over publication" needs an outlier-robust estimator, not a parametric regression (encyclopedic dicts have single 300k-char articles)
+
+🔴 **The per-letter law.** Extending [§457](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)'s
+passing observation that MW's letter `a` is 83.1 % dash-marked compounds, a full per-letter
+scan of MW shows `a` is the *most* compound-dense letter **but not uniquely so** — `u` (79.5 %),
+`p` (78.0 %), `s` (77.9 %) and `v` (75.5 %) are right behind it, while `k` (56.4 %) falls away.
+The mechanism is the **upasarga (preverb)**: every ballooning letter heads a productive preverb
+family — `v` = *vi-* (38.6 % of all `v` headwords), `u` = *ud-/upa-* (62.3 % combined),
+`s` = *sam-/su-*, `p` = *pra-/pari-/prati-*, `a` = *ā-/abhi-/anu-/apa-/ava-* plus the privative.
+`k`, `g`, `c` head no preverb and carry no such combinatorial shadow. So "`a` is a letter of
+compounds not roots" is true, but it is a property of *preverb-headed letters in general*, of
+which `a` is merely the richest — not an `a`-anomaly.
+
+⚠️ **The reusable methodological gotcha — never test entry-size decay with a parametric mean-based
+regression on a Sanskrit→Sanskrit encyclopedic dictionary.** The historical claim that dictionary
+entries **shrink toward the end of the work** as funding/energy fell (raised specifically for
+**SKD** Śabdakalpadruma and **VCP** Vācaspatyam) must be tested with letter fixed effects (later
+letters host intrinsically shorter words — a composition confound). But even a log-scale letter-FE
+OLS is **wrecked by outliers**: VCP has a median entry of 112 characters and a *maximum of 310,090*
+(SKD max 128,405) — a dozen page-long encyclopedic articles give VCP a spurious parametric slope of
+**+733 %/traversal**, sign-flipped from its own naïve slope. The correct tool is an **outlier-robust
+per-letter rank test** (Spearman of position vs size *within each letter*, aggregated by Fisher-z),
+which is immune to the giant articles and removes the composition confound by construction.
+
+**Substantive result (the arbiter test):** the funding-decay hypothesis is **REFUTED for its two
+named targets** — SKD ρ = −0.001, VCP ρ = +0.001 (both non-significant) — and real & strong only
+in the **German Petersburg tradition + Grassmann**: PWG ρ = −0.19 (36/38 letters negative),
+PWK ρ = −0.34 (27/32), GRA ρ = −0.20 (28/30) — precisely the works with a documented editorial-
+compression history (PWG's over-detailed 1855 first volume of `a-`). "Later entries are shorter" is
+a Petersburg-tradition fact, not a Sanskrit-encyclopedic-dictionary one. PD is untestable this way
+(confined to `a`).
+
+> **Source:** report [`reports/LETTER_ANATOMY_AND_ENTRY_SIZE_2026.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/reports/LETTER_ANATOMY_AND_ENTRY_SIZE_2026.md)
+> + feeds [`data/pd/letter_anatomy.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/letter_anatomy.tsv)
+> / [`entry_size_by_position.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/entry_size_by_position.tsv)
+> + generator [`scripts/letter_anatomy.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/letter_anatomy.py)
+> · page `/tools/letter-anatomy` · sources = [HeadwordLists/now-2026](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026) + [csl-orig v02](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02) entry bodies ·
+> [H1416](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1416-Opus_csl-atlas_letter-anatomy-samasa-upasarga-entrysize-decay_21.07.26.md)
+> ([csl-atlas PR #282](https://github.com/sanskrit-lexicon/csl-atlas/pull/282)) — csl-atlas · 21-07-2026, Opus 4.8 (`claude-opus-4-8`).
