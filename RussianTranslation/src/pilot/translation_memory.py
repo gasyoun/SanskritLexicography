@@ -90,6 +90,12 @@ from store_path import canonical_store, canonical_sidecar  # noqa: E402
 # failed "store not found" after a successful promotion, aborting the staged-run.
 DEFAULT_STORE = canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
 FIELD = {'ru': 'ru', 'en': 'en'}                    # store column holding the translation
+# CARD_FIELD is the per-sense field name on a CARD ('russian'/'english') — distinct from FIELD
+# (the store COLUMN, 'ru'/'en'). C3: the card-TM builder wrote the EN sense under FIELD['en']=='en'
+# instead of 'english', but the serve-side sanity guard (tm_card_sane) and the final-card schema
+# require 'english' — so EVERY EN card-TM hit was silently refused ("sense missing english") and
+# the EN lane re-translated whole cards it already had. Single source, reused below for frags.
+CARD_FIELD = {'ru': 'russian', 'en': 'english'}
 TRUST_REVIEWED = 'reviewed_exact'
 TRUST_MACHINE = 'machine_exact'
 TRUST_SUGGESTION = 'suggestion'
@@ -391,7 +397,10 @@ def reconstruct_cards(store_path, lang):
             sense = {
                 'tag': r.get('sense_tag'),
                 'german': r.get('de') or '',
-                field if lang == 'en' else 'russian': r.get(field),
+                # C3: emit the CARD field name ('russian'/'english'), reading the STORE column
+                # value (r.get(field)). Was `field if lang=='en' else 'russian'`, which put the EN
+                # translation under 'en' — a key the serve-side guard/schema never look at.
+                CARD_FIELD[lang]: r.get(field),
             }
             # B03: optional sense fields are validated WHEN PRESENT by the final-card
             # schema (a present-but-None differentia/equivalence_type is a refusal), so a
@@ -534,7 +543,9 @@ def frag_tm_path(lang, out=None):
 
 # frag_prov senses are CARD-shaped (harvested from wf_output cards), so the
 # translation lives under 'russian'/'english' — NOT the store column names in FIELD.
-_FRAG_TRANSLATION_FIELD = {'ru': 'russian', 'en': 'english'}
+# Same mapping as CARD_FIELD (single source, so the card-TM and fragment-TM lanes can't drift —
+# the C3 divergence is exactly what happens when this is hand-written a second time).
+_FRAG_TRANSLATION_FIELD = CARD_FIELD
 
 
 def frag_senses_sane(senses, lang):
