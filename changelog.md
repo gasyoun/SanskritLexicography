@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.51.0] — 21-07-2026
+
 ### Added
 
 - pwg_ru abbreviation ↔ ЛЭС-1990 comparison layer: standalone [`pwg_ru/ABBREV_LES1990_SRAVNENIE_2026-07.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/ABBREV_LES1990_SRAVNENIE_2026-07.md)
