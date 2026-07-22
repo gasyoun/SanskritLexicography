@@ -180,7 +180,7 @@ Build handoffs are **not** minted this session (memo-only). Big items already ow
 
 - **kNN-MT (#10)** — ICLR, not ACL; retrieval-augmented *decoding* is an engine-side roadmap item, not a TM-build task. Park.
 - **VecMap drift audit (TM-H7)** — audit-only, no learner read; keep as a secondary channel, low priority.
-- **DCS integration (#21)** — **boundary → VisualDCS**; consume the lemma/frequency layer via the [kosha manifest](https://github.com/sanskrit-lexicon/kosha/blob/main/data/manifest/datasets.json), never re-derive here.
+- **DCS integration (#21)** — **boundary → VisualDCS**; consume the lemma/frequency layer via the [kosha manifest](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json), never re-derive here.
 - **TEI/OntoLex export of the TMX** — **boundary → csl-standards**; the TMX 1.4b export ([`build_tmx.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_tmx.py)) stays here, but any OntoLex-Lemon modelling routes to csl-standards.
 - **Corpus_builder prose ingestion** — **boundary → SamudraManthanam** (owns `web/corpus_builder/`, per H308).
 - **Unverified reuse assets:** none asserted above without a fetched confirmation; `corpus_lexicon.mined.jsonl` is **absent on disk** (only the declared output path) and gitignored — treated as needs-generation, never as a surfaceable layer.

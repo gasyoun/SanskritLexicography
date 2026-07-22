@@ -302,7 +302,7 @@ Cologne). The uncovered residue is bucketed in
 - **[SanskritSpellCheck](https://github.com/gasyoun/SanskritSpellCheck)** —
   its `union=N` evidence tags come from the union; the typo queue (§6, item A)
   flows back the other way.
-- **[csl-atlas](https://github.com/gasyoun/csl-atlas)** — cross-dictionary
+- **[csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas)** — cross-dictionary
   headword atlas (multiplicity, overlap cladogram) consumes the same space.
 - **In-repo:** `RussianTranslation/src/corpus_gate.py` pins
   `PWG-unique-key1-106085.txt` — its path predates the `then-2014/` move and

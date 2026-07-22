@@ -5,7 +5,7 @@ _Created: 07-07-2026 · Last updated: 07-07-2026_
 Readiness: **2/5** (outline + verified related-work seed + committed data spine; results
 pending the H178 B-1 human votes). Anchor framing per MG ruling (H178, 05-07-2026):
 **LLM-assisted computational lexicography** primary; dictionary digitization (the MUDIDI
-line, [csl-atlas](https://github.com/gasyoun/csl-atlas)) secondary bridge. Registered as
+line, [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas)) secondary bridge. Registered as
 **A51** in [`Uprava/ARTICLES.md`](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 Sibling paper: A49 (addenda-typology algebra) shares the corpus, not the thesis.
 

@@ -163,7 +163,7 @@ python src/lod_acceptance.py       # acceptance gate
 Per the 2026-06-03 four-repo split
 ([`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md)
 §4 / G2), OntoLex/LOD
-**exports** live in [`csl-standards`](https://github.com/gasyoun/csl-standards),
+**exports** live in [`csl-standards`](https://github.com/sanskrit-lexicon/csl-standards),
 not here. The routing contract for this build:
 
 - **`RussianTranslation` (this repo)** owns the **generator + input data +
@@ -174,7 +174,7 @@ not here. The routing contract for this build:
   **data** is gated on G5 sense approvals (today the store is 100 %
   `ai_translated`, i.e. `gr:machine-preview` / non-citable) and a
   [`/publish-safety-check`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation) pass —
-  see [`csl-standards`](https://github.com/gasyoun/csl-standards) for the landed surface.
+  see [`csl-standards`](https://github.com/sanskrit-lexicon/csl-standards) for the landed surface.
 
 ## Open decision
 

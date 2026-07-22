@@ -3,12 +3,12 @@
 > **UPDATE 2026-06-30 (recovery session, branch `recover/slicec-top3-pat-ga-vad`):**
 > Two material corrections to the plan below, plus progress:
 > - **DA needs NO re-run.** The full dhā output survives on disk in
->   [`wf_output_da_a.json`](wf_output_da_a.json) + [`wf_output_da_b.json`](wf_output_da_b.json)
+>   `wf_output_da_a.json` + `wf_output_da_b.json` (local-only, gitignored)
 >   (72+73=145 cards; the bridge globs `wf_output*.json` and promoted **138/145**). The
 >   table's "DA 0/145 — biggest loss" is stale. Only ~7 DA cards are marginal.
 > - **True remaining deficit ≈ 514 cards / 15 roots** (not 630/16), because DA drops out.
 > - **`jan`/`han` salvaged** to stable names `wf_output.sc.jan_full.json` / `wf_output.sc.han.json`.
-> - **The §Guardrail fix is already implemented** in [`save_and_audit.py`](RussianTranslation/save_and_audit.py)
+> - **The §Guardrail fix is already implemented** in [`save_and_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/save_and_audit.py)
 >   (overwrite-refusal + `--merge`). Do not re-add it.
 > - **DONE — ALL 15 roots re-run this session (Max, ≤3-wide).** First wave: `pat`(73),
 >   `gA`(65), `vad`(47). Remaining 12: `Sam`(38), `Buj`(39), `vraj`(34), `Bid`(35), `pA`(34),
@@ -57,7 +57,7 @@
 >   freq-dims builder.
 
 **For:** a fresh agent session (or the autonomous account). **Goal:** restore the ~630
-Slice-C cards missing from local files so the print bridge ([`src/promote_final_cards.py`](src/promote_final_cards.py))
+Slice-C cards missing from local files so the print bridge ([`src/promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_final_cards.py))
 promotes the **full** Slice C, not a partial set. This is a **Max re-run** task (the originals
 are unrecoverable otherwise — see below) and must be **coordinated** (a second account also
 works pwg_ru on `master`).
@@ -113,7 +113,7 @@ brU, jIv — have full per-root files; leave them.)
 
 ## Recovery procedure (per root)
 
-Follow the canonical loop ([`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)), **≤3-wide
+Follow the canonical loop ([`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)), **≤3-wide
 concurrency** (Slice D's 18× fan-out caused the 117-null collapse; single/low-width = 0 nulls):
 
 ```powershell
@@ -148,8 +148,8 @@ into the existing file instead of replacing). This stops the requeue-overwrite c
 
 ## Pointers
 
-- bridge + coverage report: [`src/promote_final_cards.py`](src/promote_final_cards.py)
-- loop + concurrency doctrine: [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
-- harness gen: [`src/pilot/gen_opt_harness2.py`](src/pilot/gen_opt_harness2.py) (default budget 12000 if PR #20 merged, else 9000)
-- save: [`save_and_audit.py`](save_and_audit.py) (note the overwrite hazard above)
-- context: [`BRIDGE_FOLLOWUPS_2026-06-30.md`](BRIDGE_FOLLOWUPS_2026-06-30.md), PR #18 (bridge)
+- bridge + coverage report: [`src/promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_final_cards.py)
+- loop + concurrency doctrine: [`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
+- harness gen: [`src/pilot/gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py) (default budget 12000 if PR #20 merged, else 9000)
+- save: [`save_and_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/save_and_audit.py) (note the overwrite hazard above)
+- context: [`BRIDGE_FOLLOWUPS_2026-06-30.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/closed_investigations/BRIDGE_FOLLOWUPS_2026-06-30.md), PR #18 (bridge)
