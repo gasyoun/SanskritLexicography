@@ -4303,9 +4303,16 @@ def test_frag_tm_reuse():
         senses0 = [{'tag': '1', 'german': plan0[0][2][:20], 'russian': 'кэш',
                     'equivalence_type': 'equivalent', 'source_type': 'attested',
                     'stratum': '', 'differentia': ''}]
+        # H1386: the fixture must be a VALID frag-TM v2 row (per-sense owners) -- R6 made a
+        # v1 ownerless row never-live-served, so the old v1 fixture only ever "passed" when
+        # the gam inputs were absent and the test returned early (vacuous in CI; failed on
+        # any second suite run in the same checkout, once earlier tests left the fixtures).
+        owners0 = [['gam', '']]
         with open(os.path.join(d, 'translation_memory.frag.ru.jsonl'), 'w', encoding='utf-8') as f:
-            f.write(json.dumps({'schema': 'pwg.translation_memory.frag.v1', 'lang': 'ru',
-                                'fsha': fsha0, 'src_key': target, 'senses': senses0},
+            f.write(json.dumps({'schema': tm.FRAG_SCHEMA_V2, 'lang': 'ru',
+                                'fsha': fsha0, 'src_key': target, 'senses': senses0,
+                                'owners': owners0, 'trust_level': tm.TRUST_MACHINE,
+                                'gate_status': 'machine_gated', 'reuse_policy': 'auto_exact'},
                                ensure_ascii=False) + '\n')
         js, _batches = gh.build(root, [target], rootmap, 12000, tm_path=tmfile)
 
@@ -4327,8 +4334,11 @@ def test_frag_tm_reuse():
         if filled != [(0, 0)]:
             fail('only the first fragment (the cached one) must be filled, got %s' % filled)
         # the filled slot carries the cached senses; its FRAGS sibling carries the matching fsha
-        if fv[0][0][0]['russian'] != 'кэш':
+        # R6 slot shape: {'senses': [...], 'owners': [...]} (never a bare senses list).
+        if fv[0][0]['senses'][0]['russian'] != 'кэш':
             fail('cached fragment slot must carry the sidecar senses')
+        if fv[0][0]['owners'] != owners0:
+            fail('cached fragment slot must carry the v2 per-sense owners')
         if gv[0][0].get('fsha') != fsha0:
             fail('FRAGS fragment must carry the content address used for the cache lookup')
         # whole-card accounting: reuse happens INSIDE selfHeal, so the card is still owed by a
