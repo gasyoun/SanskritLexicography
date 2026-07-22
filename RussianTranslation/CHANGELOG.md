@@ -10,8 +10,6 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
-## [1.50.0] - 2026-07-21
-
 ### Fixed — offline control-plane audit and speed hardening (Codex)
 
 - Profile-bound manifest-v2 jobs are now claimed only by their configured account; required slots
@@ -26,8 +24,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   output-directory snapshot per audit,
   and promotion receipt row counters remove repeated Git launches, directory scans, and two full
   26 MB store scans. On the frozen H1339 fixture, the one-run offline smoke retained the exact
-  output signature while total time fell 17.842→11.354 s (−36.4%). Full gates: 176/176 window
-  tests and 72/72 language-parity entries clean. See
+  output signature while total time fell 17.842→11.354 s (−36.4%). Full gates at landing (after
+  rebase onto the merged H1386 set): 180/180 window tests twice under random hash seeds and
+  73/73 language-parity entries clean. See
   [`../docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md`](../docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md).
 
 ## [1.49.0] - 2026-07-21
