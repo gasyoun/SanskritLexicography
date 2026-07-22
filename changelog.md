@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.55.0] — 22-07-2026
+
 ### Fixed
 
 - pwg_ru offline control-plane audit + hardening (Codex Sol `gpt-5.6-sol`, 21-07 audit
