@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import builtins
 import json
 import os
 import sqlite3
@@ -39,6 +40,98 @@ def main():
     assert scope['expected_windows'] == 1 and scope['expected_headwords'] == 1
     print('  staged plan scope: prepared lease alone supplies the GO denominators')
 
+    # Schema migration reads historical manifests once, when profile_slot is added. Corrupt
+    # legacy rows stay NULL/unclaimable but must not be reopened on every scheduler connection.
+    with tempfile.TemporaryDirectory() as td:
+        legacy_db = os.path.join(td, 'legacy.sqlite')
+        legacy_schema = m.SCHEMA.replace(
+            'manifest_path TEXT, manifest_sha256 TEXT, profile_slot TEXT,',
+            'manifest_path TEXT, manifest_sha256 TEXT,')
+        assert legacy_schema != m.SCHEMA
+        con = sqlite3.connect(legacy_db)
+        con.executescript(legacy_schema)
+        valid_path = os.path.join(td, 'valid-manifest.json')
+        corrupt_path = os.path.join(td, 'corrupt-manifest.json')
+        with open(valid_path, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.headless_execution_manifest.v2',
+                       'model': 'claude-sonnet-5',
+                       'meta': {'lang': 'ru', 'selected_keys': ['legacy-key']},
+                       'execution': {'profile_slot': 'acc1',
+                                     'config_dir_fingerprint': config_dir_fingerprint(td),
+                                     'execution_route': 'claude-cli-headless',
+                                     'executor_lane': 'serial-whole-card',
+                                     'validation_method': 'audit_window+final_schema',
+                                     'model_identifier': 'claude-sonnet-5'},
+                       'key_provenance': {'legacy-key': 'real'}}, f)
+        with open(corrupt_path, 'w', encoding='utf-8') as f:
+            f.write('{')
+        for external_id, manifest_path in (
+                ('legacy-valid', valid_path), ('legacy-corrupt', corrupt_path)):
+            con.execute(
+                'INSERT INTO jobs(external_id,cwd,output_path,manifest_path) VALUES(?,?,?,?)',
+                (external_id, td, os.path.join(td, external_id + '.json'), manifest_path))
+        con.commit()
+        con.close()
+        migrated = m.connect(legacy_db)
+        assert migrated.execute(
+            "SELECT profile_slot FROM jobs WHERE external_id='legacy-valid'").fetchone()[0] == 'acc1'
+        assert migrated.execute(
+            "SELECT profile_slot FROM jobs WHERE external_id='legacy-corrupt'").fetchone()[0] == ''
+        now = m.now_iso()
+        for account in ('acc1', 'acc2'):
+            migrated.execute(
+                'INSERT INTO accounts(name,config_dir,validated,updated_at) VALUES(?,?,1,?)',
+                (account, os.path.join(td, account), now))
+        migrated.commit()
+        migrated.close()
+        # A healthy scoped run must not reopen the unrelated corrupt sentinel.
+        original_open = builtins.open
+        original_claim = m.claim
+        attempted = []
+        try:
+            def reject_corrupt_cross_scope(path, *args, **kwargs):
+                if os.path.abspath(os.fspath(path)) == os.path.abspath(corrupt_path):
+                    raise AssertionError('unrelated corrupt manifest was reparsed')
+                return original_open(path, *args, **kwargs)
+
+            def observe_claim(db_path, account, only_external_ids=None):
+                attempted.append((account, frozenset(only_external_ids or ())))
+                return None
+
+            builtins.open = reject_corrupt_cross_scope
+            m.claim = observe_claim
+            m.cmd_run_once(types.SimpleNamespace(
+                db=legacy_db, timeout=30, runtime_mode='standard', only_accounts=None,
+                only_external_ids={'legacy-valid'}))
+        finally:
+            builtins.open = original_open
+            m.claim = original_claim
+        assert attempted == [('acc1', frozenset({'legacy-valid'}))], attempted
+        with open(corrupt_path, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.headless_execution_manifest.v2',
+                       'model': 'claude-sonnet-5',
+                       'meta': {'lang': 'ru', 'selected_keys': ['restored-key']},
+                       'execution': {'profile_slot': 'acc2',
+                                     'config_dir_fingerprint': config_dir_fingerprint(td),
+                                     'execution_route': 'claude-cli-headless',
+                                     'executor_lane': 'serial-whole-card',
+                                     'validation_method': 'audit_window+final_schema',
+                                     'model_identifier': 'claude-sonnet-5'},
+                       'key_provenance': {'restored-key': 'real'}}, f)
+        original_claim = m.claim
+        try:
+            m.claim = lambda db_path, account, only_external_ids=None: None
+            m.cmd_run_once(types.SimpleNamespace(
+                db=legacy_db, timeout=30, runtime_mode='standard', only_accounts=None,
+                only_external_ids={'legacy-corrupt'}))
+        finally:
+            m.claim = original_claim
+        reopened = sqlite3.connect(legacy_db)
+        assert reopened.execute(
+            "SELECT profile_slot FROM jobs WHERE external_id='legacy-corrupt'").fetchone()[0] == 'acc2'
+        reopened.close()
+    print('  profile-slot migration: bad cross-scope sentinel stays cold; scoped repair revalidates')
+
     with tempfile.TemporaryDirectory() as td:
         scoped_db = os.path.join(td, 'scope.sqlite')
         m.main(['--db', scoped_db, 'init', '--account', 'acc=' + os.path.join(td, 'acc'),
@@ -60,6 +153,105 @@ def main():
             con, {'current'}, "state='done' AND coordinator_recorded=0")] == ['current']
         con.close()
     print('  staged scope: unrelated failed/history jobs excluded from claims and counts')
+
+    # A profile-bound v2 manifest is a scheduler constraint, not merely a worker-time check.
+    # Register accounts in the opposite order from the manifest owner and ask the wrong account
+    # first: it must not reserve the paid job. Generic argv jobs intentionally remain portable.
+    with tempfile.TemporaryDirectory() as td:
+        bound_db = os.path.join(td, 'profile-bound.sqlite')
+        acc1_dir = os.path.join(td, 'acc1')
+        acc2_dir = os.path.join(td, 'acc2')
+        m.main(['--db', bound_db, 'init',
+                '--account', 'acc2=' + acc2_dir, '--account', 'acc1=' + acc1_dir,
+                '--skip-profile-check'])
+        coord = os.path.join(td, 'coord')
+        artifacts = os.path.join(coord, 'artifacts', 'bound-acc1')
+        os.makedirs(artifacts)
+        manifest_path = os.path.join(artifacts, 'execution_manifest.json')
+        with open(manifest_path, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.headless_execution_manifest.v2',
+                       'model': 'claude-sonnet-5',
+                       'meta': {'lang': 'ru', 'selected_keys': ['bound-key']},
+                       'execution': {'profile_slot': 'acc1',
+                                     'config_dir_fingerprint': config_dir_fingerprint(acc1_dir),
+                                     'execution_route': 'claude-cli-headless',
+                                     'executor_lane': 'serial-whole-card',
+                                     'validation_method': 'audit_window+final_schema',
+                                     'model_identifier': 'claude-sonnet-5'},
+                       'key_provenance': {'bound-key': 'real'}}, f)
+        with open(os.path.join(coord, 'state.json'), 'w', encoding='utf-8') as f:
+            json.dump({'leases': [{'id': 'bound-acc1', 'state': 'prepared',
+                                   'artifact_dir': artifacts,
+                                   'execution_manifest': manifest_path}]}, f)
+        m.main(['--db', bound_db, 'import-coordinator', '--coord-dir', coord,
+                '--cwd', td, '--lease-id', 'bound-acc1'])
+        con = sqlite3.connect(bound_db)
+        assert con.execute(
+            "select profile_slot from jobs where external_id='bound-acc1'").fetchone()[0] == 'acc1'
+        con.close()
+        assert m.claim(bound_db, 'acc2') is None, 'wrong account claimed an acc1-bound manifest'
+        try:
+            m.cmd_run_once(types.SimpleNamespace(
+                db=bound_db, timeout=30, runtime_mode='standard',
+                only_accounts={'acc2'}, only_external_ids={'bound-acc1'}))
+            raise AssertionError('missing eligible owner must fail before a dispatch poll loop')
+        except SystemExit as exc:
+            assert 'no eligible/probed account: acc1' in str(exc), exc
+
+        m.main(['--db', bound_db, 'enqueue', '--external-id', 'generic',
+                '--argv-json', json.dumps(['x']), '--cwd', td,
+                '--output', os.path.join(td, 'generic.json')])
+        generic = m.claim(bound_db, 'acc2')
+        assert generic is not None and generic['external_id'] == 'generic'
+        m.finish(bound_db, generic['id'], 'done', 0)
+        bound = m.claim(bound_db, 'acc1')
+        assert bound is not None and bound['external_id'] == 'bound-acc1'
+    print('  profile-bound claims: wrong/missing owner refused loudly; generic job remains portable')
+
+    # Required profile selection happens before the standard three-account concurrency slice.
+    # Otherwise acc4 is permanently hidden behind three alphabetically earlier idle accounts.
+    with tempfile.TemporaryDirectory() as td:
+        slice_db = os.path.join(td, 'profile-slice.sqlite')
+        m.main(['--db', slice_db, 'init'] + [
+            part for n in range(1, 5)
+            for part in ('--account', 'acc%d=%s' % (n, os.path.join(td, 'a%d' % n)))
+        ] + ['--skip-profile-check'])
+        con = m.connect(slice_db)
+        with con:
+            con.execute(
+                'INSERT INTO jobs(external_id,cwd,output_path,manifest_path,profile_slot) '
+                'VALUES(?,?,?,?,?)', ('late-slot', td, os.path.join(td, 'late.json'),
+                                     os.path.join(td, 'manifest.json'), 'acc4'))
+        con.close()
+        original_claim = m.claim
+        attempted = []
+        try:
+            def observe_claim(db_path, account, only_external_ids=None):
+                attempted.append(account)
+                return None
+
+            m.claim = observe_claim
+            m.cmd_run_once(types.SimpleNamespace(
+                db=slice_db, timeout=30, runtime_mode='standard', only_accounts=None,
+                only_external_ids={'late-slot'}))
+        finally:
+            m.claim = original_claim
+        assert attempted == ['acc4'], attempted
+        con = m.connect(slice_db)
+        with con:
+            con.execute(
+                "INSERT INTO jobs(external_id,cwd,output_path,state,assigned_acc) "
+                "VALUES(?,?,?,'in_progress','acc4')",
+                ('unrelated-active', td, os.path.join(td, 'busy.json')))
+        con.close()
+        try:
+            m.cmd_run_once(types.SimpleNamespace(
+                db=slice_db, timeout=30, runtime_mode='standard', only_accounts=None,
+                only_external_ids={'late-slot'}))
+            raise AssertionError('busy required profile must fail before a bounded poll loop')
+        except SystemExit as exc:
+            assert 'acc4:unrelated-active' in str(exc), exc
+    print('  profile-bound dispatch: late slot selected before slice; busy owner fails loudly')
 
     with tempfile.TemporaryDirectory() as td:
         db = os.path.join(td, 'q.sqlite')
@@ -750,7 +942,10 @@ def main():
                     '--output', os.path.join(td, 'runtime%d.json' % n)])
         con = m.connect(db)
         with con:
-            con.execute("UPDATE jobs SET manifest_path='fixture.json', manifest_sha256='fixture'")
+            con.execute("UPDATE jobs SET manifest_path='fixture.json', manifest_sha256='fixture', "
+                        "profile_slot='acc1' WHERE external_id='runtime0'")
+            con.execute("UPDATE jobs SET manifest_path='fixture.json', manifest_sha256='fixture', "
+                        "profile_slot='acc2' WHERE external_id='runtime1'")
         con.close()
         receipt = m.write_probe_receipt(
             td, 'runtime-test', ['runtime0', 'runtime1'], {'acc1': 10, 'acc2': 11})

@@ -10,6 +10,25 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — offline control-plane audit and speed hardening (Codex)
+
+- Profile-bound manifest-v2 jobs are now claimed only by their configured account; required slots
+  are selected before concurrency slicing and unavailable/parked/unprobed/busy owners fail loudly.
+  Valid active jobs in older SQLite queues are crash-safely backfilled; corrupt/unreadable active
+  manifests remain unclaimable but retryable after repair, and fail before the dispatch poll loop.
+- Missing or corrupt coordinator/Workflow evidence and a crashed sense-shortfall detector now
+  fail the bounded run before checkpointing instead of becoming a synthetic zero-clean success.
+  Current `summary.usage` cost telemetry is read at its real schema path; explicit unevaluable,
+  negative, NaN, and infinite figures remain fail-closed.
+- Cached immutable main-worktree discovery (without caching Git failures), one case-exact
+  output-directory snapshot per audit,
+  and promotion receipt row counters remove repeated Git launches, directory scans, and two full
+  26 MB store scans. On the frozen H1339 fixture, the one-run offline smoke retained the exact
+  output signature while total time fell 17.842→11.354 s (−36.4%). Full gates at landing (after
+  rebase onto the merged H1386 set): 180/180 window tests twice under random hash seeds and
+  73/73 language-parity entries clean. See
+  [`../docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md`](../docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md).
+
 ## [1.49.0] - 2026-07-21
 
 ### Fixed — coordinator concurrency/durability plausibles P2/P10/P11 (H1420)

@@ -3870,6 +3870,7 @@ def test_coordinator_mixed_lane_public_state_sequence():
     old_coord = os.environ.get('PWG_COORDINATOR_DIR')
     original_run = coordinator.run_cmd
     original_store = coordinator.promote_final_cards.DEFAULT_STORE
+    original_count = coordinator.nonempty_line_count
     with tempfile.TemporaryDirectory() as tmp:
         os.environ['PWG_COORDINATOR_DIR'] = tmp
         store = os.path.join(tmp, 'store.jsonl')
@@ -3938,6 +3939,8 @@ def test_coordinator_mixed_lane_public_state_sequence():
                 report_arg = cmd[cmd.index('--report') + 1]
                 batch_spec = json.load(open(batch_arg, encoding='utf-8'))
                 leases_out = {}
+                with open(store, encoding='utf-8') as f:
+                    before = sum(1 for line in f if line.strip())
                 with open(store, 'a', encoding='utf-8') as f:
                     for item in batch_spec:
                         subs = item.get('expected_subcards') or []
@@ -3947,6 +3950,9 @@ def test_coordinator_mixed_lane_public_state_sequence():
                                                         'rows': len(subs)}
                 with open(report_arg, 'w', encoding='utf-8') as f:
                     json.dump({'schema': 'pwg.batch_promotion.v1',
+                               'store_rows_before': before,
+                               'store_rows_after': before + sum(
+                                   row['rows'] for row in leases_out.values()),
                                'leases': leases_out}, f)
             return SimpleNamespace(returncode=0, stdout='', stderr='')
 
@@ -3988,6 +3994,8 @@ def test_coordinator_mixed_lane_public_state_sequence():
             coordinator.save_state(state)
 
         coordinator.run_cmd = fake_run
+        coordinator.nonempty_line_count = lambda _path: (_ for _ in ()).throw(
+            AssertionError('coordinator must use transaction report counts, not rescan store'))
         try:
             record(result_file('initial.json', ['a~~x', 'b~~x']))
             lease = coordinator.load_state()['leases'][0]
@@ -4008,6 +4016,8 @@ def test_coordinator_mixed_lane_public_state_sequence():
             lease = coordinator.load_state()['leases'][0]
             if lease['state'] != 'promoted_partial':
                 fail('mixed backlog promotion did not remain promoted_partial')
+            if (lease.get('store_before'), lease.get('store_after'), lease.get('store_delta')) != (0, 1, 1):
+                fail('promotion did not persist transaction-reported store counts')
 
             set_attempt(2, 'defect', 'b~~x', coordinator.empty_pending_requeue())
             record(result_file('retry-b.json', ['b~~x']))
@@ -4017,12 +4027,17 @@ def test_coordinator_mixed_lane_public_state_sequence():
                 fail('final clean defect retry did not drain the pending backlog')
             coordinator.promote_ready(SimpleNamespace(
                 gen_model_version='claude-sonnet-5', lease_id=['lease']))
-            if coordinator.load_state()['leases'][0]['state'] != 'promoted':
+            final_lease = coordinator.load_state()['leases'][0]
+            if final_lease['state'] != 'promoted':
                 fail('drained mixed retry sequence did not finish promoted')
+            if (final_lease.get('store_before'), final_lease.get('store_after'),
+                    final_lease.get('store_delta')) != (1, 2, 1):
+                fail('second promotion did not use transaction-reported store counts')
             if audit_specs:
                 fail('mixed-lane integration did not consume every planned audit')
         finally:
             coordinator.run_cmd = original_run
+            coordinator.nonempty_line_count = original_count
             coordinator.promote_final_cards.DEFAULT_STORE = original_store
             if old_coord is None:
                 os.environ.pop('PWG_COORDINATOR_DIR', None)
@@ -6383,6 +6398,16 @@ def test_h1339_b10_b19_audit_chain_routing():
         fail('dual lookup must still find the verbatim form')
     if at.merged_output_path('absent', out_dir=d) is not None:
         fail('a genuinely missing output must resolve to None')
+    # H1430: one per-audit name snapshot preserves exact-case behavior and is not global/stale.
+    snap = at._directory_names(d)
+    if at.merged_output_path('MITRA', out_dir=d, exact_names=snap) is not None:
+        fail('snapshot lookup accepted the wrong filename case')
+    with open(os.path.join(d, 'fresh.merged.md'), 'w', encoding='utf-8') as f:
+        f.write('x')
+    if at.merged_output_path('fresh', out_dir=d, exact_names=snap) is not None:
+        fail('an existing per-audit snapshot unexpectedly changed after collection')
+    if not at.merged_output_path('fresh', out_dir=d, exact_names=at._directory_names(d)):
+        fail('a fresh audit snapshot missed a file created by collection')
     # B19 wiring: both defect sites route through the shared resolver.
     for fname in ('audit_translation.py', 'stage2_pregate.py'):
         text = open(os.path.join(SRC, fname), encoding='utf-8').read()
@@ -6988,7 +7013,9 @@ def test_h1420_p10_promote_rebuilds_tm_in_finally():
                     # the per-lease loop raises AFTER the store is committed (the P10 window).
                     report = cmd[cmd.index('--report') + 1]
                     with open(report, 'w', encoding='utf-8') as f:
-                        json.dump({'leases': {'lease': {}}}, f)
+                        json.dump({'schema': 'pwg.batch_promotion.v1',
+                                   'store_rows_before': 10, 'store_rows_after': 11,
+                                   'leases': {'lease': {}}}, f)
                 elif 'translation_memory.py' in ' '.join(cmd) and 'build' in cmd:
                     tm_builds.append(cmd)
                 return SimpleNamespace(returncode=0, stdout='', stderr='')
