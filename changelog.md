@@ -14,6 +14,33 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+
+- **`bounded_staged_run.py` CLI: `--claude-bin` was dereferenced but never defined** — the
+  `--execute` path handed `args.claude_bin` to the fleet probe and `RunContext`, but the
+  parser never added the flag, so the live CLI crashed with `AttributeError` before any
+  call; invisible to every selftest because they all injected `RunContext` directly
+  (H1447, the H1386 "a selftest with an injected runner proves the loop, not the path"
+  lesson class). Parser extracted to `build_parser()`, flag added with the
+  `max_account_orchestrator` convention, pinned by `bounded_staged_run_selftest` test (n)
+  that asserts every attr the `--execute` path reads is CLI-defined.
+
+### Added
+
+- **H1447 c4 live-gate packet + medium50 serial-c4 prepared plan**
+  ([`pwg_ru/h1447/H1447_C4_LIVE_GATE_2026-07-22.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1447/H1447_C4_LIVE_GATE_2026-07-22.md)):
+  fresh gate-0 health PASS (warm-up 17 972 ms / measured 16 621 ms, 0 conn errors), first
+  live `dq_canary_puregloss` synthetic-control call through the headless manifest-v2 c4
+  route — 3/3 senses, all deterministic audit gates PASS, $0.5730 observed,
+  **`LIVE_GO` derived mechanically** — then a bounded starter attempt stopped honestly at
+  the fleet probe (`content` warm-up flake, **zero production calls**). The full medium50
+  worklist (48 remaining keys) is prepared and unconsumed: 5 leases `h1447-m50-w1…w5`
+  (3+12+11+11+11), every harness < 512 KB, payload-v3 chunk evidence exact, preflight
+  `--refuse-over-cost` ok ($0.36/card est., 0 deferred monsters), plan + preflight + probe
+  events committed as evidence beside the packet; plan builder at
+  [`src/pilot/h1447/build_plan.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1447/build_plan.py).
+  Resume requires a NEW representative c4 health PASS (a stale GO never authorizes).
+
 ## [1.56.0] — 22-07-2026
 
 ### Added
