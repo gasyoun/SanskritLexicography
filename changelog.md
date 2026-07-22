@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.54.0] — 22-07-2026
+
 ### Fixed
 
 - pwg_ru post-H1339 review landing set
