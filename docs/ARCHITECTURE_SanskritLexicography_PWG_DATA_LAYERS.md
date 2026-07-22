@@ -6,7 +6,7 @@ Cover: [PLAN_SanskritLexicography_PWG_DATA_LAYERS_2026H2.md](https://github.com/
 
 ## 1. Anatomy of a PWG card — the model this wave formalises
 
-A PWG record is the span `<L>…<LEND>` in [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt) — 123,366 records. Its markup vocabulary (measured, [`csl-atlas/data/parse-rules/pwg.json`](https://github.com/gasyoun/csl-atlas/blob/main/data/parse-rules/pwg.json)):
+A PWG record is the span `<L>…<LEND>` in [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt) — 123,366 records. Its markup vocabulary (measured, [`csl-atlas/data/parse-rules/pwg.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/parse-rules/pwg.json)):
 
 | Tag | Role | Count | Parse adequacy |
 |-----|------|-------|----------------|
@@ -42,8 +42,8 @@ W1.1 (`PWG_CARD_ANATOMY.md`) is the **index + measured crosswalk** over these th
 | `<ab>` resolver | **reuse** | [`pwg_ab.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ab.py) (791 abbreviations from `pwgab_input.txt`). |
 | `<ls>` resolver | **extend** | [`pwg_sources.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_sources.py) (`pwgbib.txt`, ~2.7k) + [`ls_resolver.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver.py) (1266 ln). W1.6 mines the unrecognised tail against these; no new resolver. |
 | `<pc>` page/column | **reuse** | [`pwg_page_index.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_page_index.py). (Note the open `page=(column+1)//2` per-volume-offset `@DO`.) |
-| Sense records | **extend** | [`csl-atlas/data/lexico/senses_pwg.jsonl`](https://github.com/gasyoun/csl-atlas/blob/main/data/lexico/senses_pwg.jsonl) (`senseId`, `parserFamily`, `splitConfidence`, `sanskritAnchors`). |
-| Xref edges | **extend** | `csl-atlas/data/lexico/xref_edges.csv` + [`scripts/lexico/m3_xrefs.py`](https://github.com/gasyoun/csl-atlas/blob/main/scripts/lexico/m3_xrefs.py). |
+| Sense records | **extend** | [`csl-atlas/data/lexico/senses_pwg.jsonl`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/lexico/senses_pwg.jsonl) (`senseId`, `parserFamily`, `splitConfidence`, `sanskritAnchors`). |
+| Xref edges | **extend** | `csl-atlas/data/lexico/xref_edges.csv` + [`scripts/lexico/m3_xrefs.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/lexico/m3_xrefs.py). |
 | Government / Rektion | **extend** | The H1308 government index (~3,853 markings / ~3,222 senses, [FINDINGS §71](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)). |
 | OntoLex sidecar | **extend** | [`export_lod.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_lod.py) `de-lexicon`, emitting `pwg_de_lexicon.ttl` (H772, [PWG_PLUS_GERMAN_ENRICHMENT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_PLUS_GERMAN_ENRICHMENT.md)). |
 | Formal grammar (RNG) | **NEW** — the one genuine gap | No DTD/XSD/RNG exists anywhere in csl-orig (audit-confirmed). Only the TEI header references `tei_all.rnc`. This is net-new and non-duplicative. |

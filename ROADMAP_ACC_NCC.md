@@ -57,7 +57,7 @@ is the point of the full-fuzzy pipeline below.
 
 Prior-art check (03-07-2026): no existing ACC×NCC crosswalk in the org
 (`csl-atlas`, `SanskritLexicography`, `Uprava` hubs searched). The transcoder is
-**reused** — [`sanskrit-util`](https://github.com/gasyoun/sanskrit-util) `to_slp1` /
+**reused** — [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util) `to_slp1` /
 `slp1_simplify` — not rebuilt.
 
 ## 2. Target shape

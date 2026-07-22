@@ -7,7 +7,7 @@ translator *needs* citations, gating the design. On inspection, the premise is *
 
 ## Finding (verified corpus-wide, 3,538 sub-card portraits)
 
-The harness ([`gen_opt_harness2.py`](RussianTranslation/src/pilot/gen_opt_harness2.py):278) inlines the
+The harness ([`gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py):278) inlines the
 **per-sub-card** portrait (`*~~*.portrait.json`), and:
 
 - the portrait is the **smaller** part of inlined content: **32 %** (skeleton 68 %),

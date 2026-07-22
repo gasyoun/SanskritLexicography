@@ -43,7 +43,7 @@ in print, and a re-run would re-collide. The `batch_of` mechanism does not apply
 ## Resolution
 
 A precise, committed exemption in
-[`src/pilot/rootmap_overrides.json`](RussianTranslation/src/pilot/rootmap_overrides.json) `_dupe_exempt`:
+[`src/pilot/rootmap_overrides.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/rootmap_overrides.json) `_dupe_exempt`:
 
 ```json
 "_dupe_exempt": { "si_d": { "h1": ["3", "4", "ppp-siddha-2", "ppp-siddha-3"] } }

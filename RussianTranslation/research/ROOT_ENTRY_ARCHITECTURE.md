@@ -157,7 +157,7 @@ presence of a separate headword.
 Before building anything: per the "check prior art first" rule, swept the sibling repos.
 The root-record prefix segmenter sketched in §"Implementation sketch" above is **already
 built** by Jim Funderburk in [`PWG/verbs01/`](https://github.com/sanskrit-lexicon/PWG/tree/master/verbs01) (flagged in
-[`SHARED_CODE.md`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/SHARED_CODE.md) §4 "verb/preverb morphology"). It does **more** than the sketch
+[`SHARED_CODE.md`](https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md) §4 "verb/preverb morphology"). It does **more** than the sketch
 asked for, on real data, and its outputs are committed.
 
 ### What `verbs01` already computes
@@ -363,7 +363,7 @@ BU primary · anuBU/aBiBU preverb (anu-BU/aBi-BU) · aMSaBU/aMSaBUta compound ·
 This **replaces the faked PWG-parenthetical compound/derivation parser on the MW side**
 of [`lex_noun_link.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/lex_noun_link.py) (the `aDi)+BU` mis-parse class) and feeds `root_glue.py`'s MW
 preverb split. Cross-check result: `MWderivations/compounds/compounds.txt` is **byte-
-identical** to [`WhitneyRoots/MW_compounds_12610.txt`](https://github.com/sanskrit-lexicon/WhitneyRoots/blob/master/MW_compounds_12610.txt) — the WhitneyRoots file is a vendored
+identical** to [`WhitneyRoots/MW_compounds_12610.txt`](https://github.com/gasyoun/WhitneyRoots/blob/d0294eb5fa1ad885bd92bb88d97709a871d61621/MW_compounds_12610.txt) — the WhitneyRoots file is a vendored
 copy, so "combine both" collapses to **one** source (`analysis2.txt` is the superset; the
 per-leading-word `compounds.txt` is derivable from it).
 
