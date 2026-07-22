@@ -30,6 +30,7 @@ with no trace of w06 except the RUN_LOG record. See
 The default is loss-safety: a worktree run persists to the canonical store unless it *opts out*
 by setting `$PWG_RU_STORE` to a scratch path.
 """
+import functools
 import os
 import subprocess
 import sys
@@ -42,32 +43,69 @@ STORE_REL = 'RussianTranslation/src/pwg_ru_translated.jsonl'
 
 
 def _git(start_dir, *args):
-    """Run `git -C <start_dir> <args>` and return stripped stdout ('' on any failure)."""
-    return subprocess.run(
+    """Run `git -C <start_dir> <args>` and return stripped stdout.
+
+    Failure must raise: callers may cache successful checkout identity, but must never cache a
+    transient Git failure as the loss-unsafe conclusion that a linked worktree is standalone.
+    """
+    proc = subprocess.run(
         ['git', '-C', start_dir, *args],
         stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
         encoding='utf-8', errors='replace',
-    ).stdout.strip()
+    )
+    if proc.returncode:
+        raise subprocess.CalledProcessError(proc.returncode, proc.args)
+    output = proc.stdout.strip()
+    if not output:
+        raise RuntimeError('git returned an empty repository path')
+    return output
 
 
-def main_worktree_root(start_dir):
+@functools.lru_cache(maxsize=64)
+def _main_worktree_root_cached(start_dir):
     """Return the MAIN worktree toplevel if `start_dir` is inside a LINKED worktree, else None.
 
     A linked worktree's git common-dir is `<MAIN>/.git` while its own toplevel is the linked
     directory; the MAIN checkout's common-dir is `<TOP>/.git` (its parent == the toplevel). So
     `dirname(common-dir) != toplevel` iff we are in a linked worktree.
     """
-    try:
-        common = _git(start_dir, 'rev-parse', '--path-format=absolute', '--git-common-dir')
-        top = _git(start_dir, 'rev-parse', '--show-toplevel')
-    except Exception:
-        return None
-    if not common or not top:
-        return None
+    common = _git(start_dir, 'rev-parse', '--path-format=absolute', '--git-common-dir')
+    top = _git(start_dir, 'rev-parse', '--show-toplevel')
     main = os.path.dirname(os.path.normpath(common))
     if os.path.normpath(main) == os.path.normpath(top):
         return None            # this IS the main checkout
     return main                # a linked worktree -> the main root
+
+
+def _has_git_marker(start_dir):
+    """Cheap error-path check: is this directory nested under a .git file/directory?"""
+    current = os.path.abspath(start_dir)
+    while True:
+        if os.path.exists(os.path.join(current, '.git')):
+            return True
+        parent = os.path.dirname(current)
+        if parent == current:
+            return False
+        current = parent
+
+
+def main_worktree_root(start_dir):
+    """Resolve once per normalized directory for the lifetime of this Python process.
+
+    Canonical store/sidecar helpers are hot during harness construction.  On Windows each
+    uncached lookup launches two Git processes, so the old implementation spent seconds
+    repeatedly rediscovering an immutable property of the checkout.
+    """
+    normalized = os.path.normcase(os.path.abspath(start_dir))
+    try:
+        return _main_worktree_root_cached(normalized)
+    except (OSError, RuntimeError, subprocess.SubprocessError) as exc:
+        # Non-git directories legitimately fall back to the local path. Inside a checkout, however,
+        # an unresolved identity must fail closed: using local_default for even one linked-worktree
+        # store write recreates the H255 loss mode. Exceptions are not cached, so a retry can recover.
+        if _has_git_marker(normalized):
+            raise RuntimeError('cannot resolve Git worktree identity for %s' % normalized) from exc
+        return None
 
 
 def canonical_store(local_default, store_rel=STORE_REL):
@@ -119,6 +157,55 @@ def selftest():
         lp = os.path.join(d, 'pwg_ru_translated.jsonl')
         assert canonical_store(lp) == lp, canonical_store(lp)
         assert main_worktree_root(d) is None
+    # 2b. repeated/lexically-equivalent paths share one cached Git resolution.
+    _original_git = globals()['_git']
+    calls = []
+    try:
+        _main_worktree_root_cached.cache_clear()
+        globals()['_git'] = lambda start, *args: (
+            calls.append((start, args)) or
+            (os.path.join(start, '.git') if '--git-common-dir' in args else start))
+        probe = os.path.join('scratch', 'checkout')
+        assert main_worktree_root(probe) is None
+        assert main_worktree_root(os.path.join(probe, '.')) is None
+        assert len(calls) == 2, calls
+    finally:
+        globals()['_git'] = _original_git
+        _main_worktree_root_cached.cache_clear()
+    # 2c. a transient Git failure is not cached as a standalone-worktree result.
+    calls = []
+    try:
+        _main_worktree_root_cached.cache_clear()
+        marker_root = tempfile.mkdtemp(prefix='store_path_linked_')
+        linked = os.path.join(marker_root, 'linked')
+        main = os.path.join(marker_root, 'main')
+        os.makedirs(linked)
+        os.makedirs(main)
+        with open(os.path.join(linked, '.git'), 'w', encoding='utf-8') as f:
+            f.write('gitdir: synthetic')
+
+        def fail_once_then_linked(start, *args):
+            calls.append((start, args))
+            if len(calls) == 1:
+                raise OSError('synthetic transient Git failure')
+            return (os.path.join(main, '.git') if '--git-common-dir' in args else
+                    linked)
+
+        globals()['_git'] = fail_once_then_linked
+        try:
+            main_worktree_root(linked)
+            raise AssertionError('a Git failure inside a checkout must fail closed')
+        except RuntimeError as exc:
+            assert 'cannot resolve Git worktree identity' in str(exc), exc
+        assert main_worktree_root(linked) == main
+        assert main_worktree_root(linked) == main
+        assert len(calls) == 3, calls
+    finally:
+        globals()['_git'] = _original_git
+        _main_worktree_root_cached.cache_clear()
+        if 'marker_root' in locals():
+            import shutil
+            shutil.rmtree(marker_root)
     # 3. inside a LINKED worktree -> resolve to the MAIN checkout store (H818 D-E: this is the
     # resolution translation_memory.DEFAULT_STORE now shares with promote_final_cards, so a
     # worktree run's post-promotion TM rebuild targets the MAIN store, not a vanishing local one).

@@ -407,9 +407,38 @@ class BoundedSupervisor:
         try:
             with open(wf_output, encoding='utf-8') as f:
                 payload = json.load(f)
-        except (OSError, ValueError, TypeError):
-            return {'requeue_keys': [], 'clean_count': 0, 'cost': 0, 'satisfied_keys': []}
-        results = payload.get('results') or []
+        except (OSError, ValueError, TypeError) as exc:
+            # A missing/corrupt result is not an empty successful window. Returning a zeroed
+            # report here let an uncapped supervisor checkpoint the item as completed and later
+            # finish with STOP_CLEAN_TARGET despite having no auditable evidence.
+            raise RuntimeError(
+                'bounded_supervisor: default audit cannot read workflow output %r: %s'
+                % (wf_output, exc)) from exc
+        if not isinstance(payload, dict):
+            raise RuntimeError(
+                'bounded_supervisor: default audit workflow output is not an object: %r'
+                % wf_output)
+        results = payload.get('results')
+        if not isinstance(results, list) or not results:
+            raise RuntimeError(
+                'bounded_supervisor: default audit requires a non-empty results list: %r'
+                % wf_output)
+        result_keys = []
+        for index, row in enumerate(results):
+            if (not isinstance(row, dict) or not isinstance(row.get('key'), str)
+                    or not row['key'].strip()):
+                raise RuntimeError(
+                    'bounded_supervisor: default audit result %d has no valid key: %r'
+                    % (index, wf_output))
+            result_keys.append(row['key'])
+        if len(set(result_keys)) != len(result_keys):
+            raise RuntimeError(
+                'bounded_supervisor: default audit result keys are not unique: %r' % wf_output)
+        expected_keys = item.get('keys') or item.get('subcards') or []
+        if expected_keys and set(result_keys) != set(expected_keys):
+            raise RuntimeError(
+                'bounded_supervisor: default audit result keys do not match window %s'
+                % item.get('id'))
         null_keys = [r.get('key') for r in results
                      if isinstance(r, dict) and r.get('key') and r.get('card') is None]
         defect_keys = []
@@ -417,8 +446,13 @@ class BoundedSupervisor:
             from sense_count import scan_sense_shortfall
             short = scan_sense_shortfall(results, self._ensure_input_dir())
             defect_keys = [s['key'] for s in short if s.get('key')]
-        except Exception:
-            defect_keys = []
+        except Exception as exc:
+            # The fallback exists specifically to enforce the H920 detector. If that detector
+            # crashes, treating its output as an empty defect set silently disables the gate and
+            # counts affected non-null cards clean. Preserve the pre-audit checkpoint instead.
+            raise RuntimeError(
+                'bounded_supervisor: default sense-shortfall gate crashed for %r: %s'
+                % (wf_output, exc)) from exc
         requeue = sorted(set(null_keys) | set(defect_keys))
         clean = sum(1 for r in results
                     if isinstance(r, dict) and r.get('key')

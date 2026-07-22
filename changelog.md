@@ -14,6 +14,23 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+
+- pwg_ru offline control-plane audit + hardening (Codex Sol `gpt-5.6-sol`, 21-07 audit
+  [`docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md);
+  stranded branch salvaged, rebased onto the merged H1386 landing set and re-gated by Fable 5
+  `claude-fable-5`): profile-bound manifest-v2 claim binding (an account can no longer claim a
+  manifest bound to another profile; unavailable/parked/unprobed/busy owners fail loudly),
+  corrupt/missing audit evidence and a crashed sense-shortfall detector fail the bounded run
+  before checkpointing (was a synthetic zero-clean success), cost telemetry read at its real
+  `summary.usage` schema path with unevaluable/negative/NaN/infinite figures fail-closed, and
+  store-path/promotion perf (cached immutable main-worktree discovery, one case-exact
+  output-dir snapshot per audit, receipt row counters instead of two full 26 MB store scans —
+  frozen-fixture smoke 17.842→11.354 s, −36.4%, identical output signature; FINDINGS §462).
+  Union of this branch + the H1386 set re-gated green: `window_selftest` 180/180 twice under
+  random hash seeds, `lang_parity_check` 73 entries no drift (38 hashes re-affirmed post-rebase),
+  orchestrator/bounded/supervisor/headless/promote/store_path selftests all PASS.
+
 ## [1.54.0] — 22-07-2026
 
 ### Fixed
