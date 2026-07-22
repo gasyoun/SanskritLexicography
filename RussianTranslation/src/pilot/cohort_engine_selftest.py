@@ -15,24 +15,38 @@ it there is Phase 4 closeout work, after it is green.
 THE PINNED CONTRACT (offline, fake workers only — zero live generation, zero store/TM/
 coordinator mutation; promotion and TM rebuild are INJECTED fakes):
 
-  (1) Two leases bound to two DIFFERENT admitted profiles run CONCURRENTLY: both workers
-      meet on a barrier and measured peak_concurrency >= 2, while two leases bound to the
-      SAME profile never overlap (at most one job per account, constraint 2).
-  (2) Reverse completion order (B finishes before A) yields the SAME accepted order and
-      the SAME final store bytes as serial width=1 execution (constraint 4 determinism).
-  (3) One worker crash mid-wave resumes ONLY that lease from durable per-lease receipts;
-      the completed sibling's model work is NEVER relaunched (constraint 5).
-  (4) An audit rejection requeues ONLY its own keys; clean siblings still batch into the
-      wave's single promotion — a rejected member never blocks them (constraint 3).
-  (5) A crash before AND a crash after the promotion barrier each produce EXACTLY one
-      effective promotion and one TM rebuild per accepted wave after resume (constraints
-      4/5; audit P0#3's engine-facing half).
-  (6) max_calls=0/1/3 is a RESERVATION consumed by probes, failures, retries AND
-      successes alike, reserved BEFORE every spawn — the bound is never discovered
-      exceeded after the fact (constraint 6; audit P0#4, Verification spec item 4).
-  (7) A custom coordinator directory reaches every child, and the parked/admitted fleet
-      check counts ONLY the probed+admitted fleet — a healthy EXCLUDED account must not
-      mask that every admitted account is parked (H1386 D4 exactness; audit P1#10).
+  (1) A cohort holding two DIFFERENT-profile leases AND a same-profile pair (c1 x2)
+      under width 2: the cross-profile pair meets on a barrier (peak_concurrency >= 2)
+      while the same-profile pair NEVER overlaps (at most one job per account,
+      constraint 2 — the same-profile pair makes the exclusion assertion falsifiable).
+  (2) Reverse completion order — OBSERVED via the fake-side completion trace (B really
+      finishes before A), never assumed — yields the EXPECTED non-empty store bytes and
+      the EXPECTED non-None accepted order of serial width=1 execution (constraint 4
+      determinism; a no-op engine comparing b''==b'' / None==None cannot pass).
+  (3) One worker crash mid-wave (leaseB launched AND died, asserted) resumes ONLY that
+      lease from durable ON-DISK per-lease receipts — the checkpoint file must exist and
+      record the completed sibling BEFORE resume, engine module memory is purged between
+      lifetimes, and the completed sibling's model work is NEVER relaunched (constraint 5).
+  (4) An audit rejection requeues ONLY its own keys; the TWO clean siblings batch into
+      the wave's EXACTLY-ONE promotion commit — a rejected member never blocks them and
+      extra commits are a failure (constraint 3).
+  (5) A crash before AND a crash after the promotion barrier each RAISE out of the first
+      life (a normal return is a failure), leave the pinned pre-resume state (no commit
+      before the promoter crash; one commit + zero successful TM rebuilds after the TM
+      crash), and produce EXACTLY one effective promotion and one TM rebuild per accepted
+      wave after resume (constraints 4/5; audit P0#3's engine-facing half).
+  (6) max_calls=0/1/3 is a RESERVATION consumed by probes, FAILED probes, CRASHED
+      workers, retries AND successes alike, taken ATOMICALLY before every spawn (two
+      leases racing width=2 for max_calls=1 admit exactly one) — the bound is never
+      discovered exceeded after the fact, and nothing retries against an exhausted
+      ledger (constraint 6; audit P0#4, Verification spec item 4).
+  (7) A custom coordinator directory is OBSERVABLE from inside every child at call time
+      (not merely echoed in the summary), and with EVERY admitted profile parked the
+      engine dispatches nothing and stops naming the parked condition even when a
+      healthy EXCLUDED profile exists in the plan (H1386 D4 exactness; audit P1#10).
+
+Corrected 22-07-2026 per the Codex (GPT-5) Phase 0 review — 8 findings (5 P1 / 3 P2), all
+addressed test-side; the suite remains EXPECTED RED until Phases 1-3 land the engine.
 
 Tests (6) and (7) additionally run the CURRENT production code paths (BoundedSupervisor
 ceilings, bounded_staged_run.make_run_window's pre-dispatch parked guard) to print
@@ -82,9 +96,23 @@ ENGINE_MISSING = (
 def load_cohort_engine():
     try:
         import cohort_engine                          # noqa: F401
-    except ImportError:
-        return None
+    except ModuleNotFoundError as exc:
+        # Codex review #8: ONLY the engine module itself being absent is the sanctioned
+        # Phase 0 RED. A transitive import failure inside an existing cohort_engine.py is
+        # a real defect and must surface loudly — misreporting it as "no engine exists"
+        # would hide broken Phase 1-3 code behind the expected-RED banner.
+        if exc.name == 'cohort_engine':
+            return None
+        raise
     return sys.modules['cohort_engine']
+
+
+def _forget_engine_module():
+    """Codex review #6: kill module/class-level memory between engine LIFETIMES so a
+    resume can only be fed by the durable on-disk receipts (build_engine re-imports the
+    module fresh). In-process resume fixtures would otherwise accept an engine whose
+    'durability' is a dict keyed by checkpoint path."""
+    sys.modules.pop('cohort_engine', None)
 
 
 def build_engine(windows, run_window, checkpoint, audit=None, promote_wave=None,
@@ -167,6 +195,8 @@ class FakeWorker:
         self.signal_done = signal_done or {}    # window id -> threading.Event to set
         self.crash_ids = set(crash_ids)
         self.met_barrier = []
+        self.completion_log = []                # Codex review #1: OBSERVED completion
+        self._log_lock = threading.Lock()       # order of successful workers, fake-side
 
     def __call__(self, window):
         wid = window['id']
@@ -186,6 +216,8 @@ class FakeWorker:
             path = os.path.join(self.td, 'wf_%s.json' % wid)
             with open(path, 'w', encoding='utf-8', newline='\n') as f:
                 json.dump({'meta': {'window': wid}, 'results': []}, f)
+            with self._log_lock:
+                self.completion_log.append(wid)
             return path
         finally:
             done = self.signal_done.get(wid)
@@ -264,23 +296,34 @@ def test_1_barrier_concurrency(td):
           % ('+'.join(probe.launches), probe.peak, len(worker.met_barrier)))
     assert probe.peak == 1, 'fixture defect: serial baseline must measure peak 1'
 
-    # THE PIN — the cohort engine dispatches both profile-bound leases concurrently.
+    # THE PIN — the cohort engine dispatches profile-bound leases concurrently. Codex
+    # review #4: the cohort MUST contain two leases on the SAME profile (leaseA + leaseC
+    # on c1) — with only cross-profile leases the per-profile exclusion assertion is
+    # tautological and cannot detect an engine that overlaps two same-account leases.
+    cohort = [{'id': 'leaseA', 'profile': 'c1'}, {'id': 'leaseB', 'profile': 'c2'},
+              {'id': 'leaseC', 'profile': 'c1'}]
     probe2 = ConcurrencyProbe()
     worker2 = FakeWorker(td, probe2, barrier=threading.Barrier(2), barrier_wait_s=2.0)
     engine = build_engine(
-        windows, worker2, os.path.join(td, 'cohort_cp.json'), audit=clean_audit,
+        cohort, worker2, os.path.join(td, 'cohort_cp.json'), audit=clean_audit,
         promote_wave=FakePromoter(os.path.join(td, 'store.txt')), rebuild_tm=FakeTM(),
         width=2, admitted={'c1', 'c2'},
-        contract='two profile-bound leases must block on a barrier together and prove '
-                 'peak_concurrency >= 2')
+        contract='two DIFFERENT-profile leases must block on a barrier together and prove '
+                 'peak_concurrency >= 2, while the two SAME-profile leases (c1 x2) under '
+                 'width 2 must never overlap')
     summary = engine.run()
     assert probe2.peak >= 2, (
         'measured peak_concurrency=%d — the cohort was not dispatched concurrently'
         % probe2.peak)
     assert summary.get('peak_concurrency', 0) >= 2, summary
+    assert probe2.peak_by_profile.get('c1', 0) <= 1, (
+        'the two c1-bound leases overlapped (constraint 2: at most one job per '
+        'account): %r' % probe2.peak_by_profile)
     assert max(probe2.peak_by_profile.values()) <= 1, (
         'a single profile ran two jobs at once (constraint 2: at most one job per '
         'account): %r' % probe2.peak_by_profile)
+    assert sorted(probe2.launches) == ['leaseA', 'leaseB', 'leaseC'], (
+        'every cohort member must launch exactly once: %r' % probe2.launches)
 
 
 def test_2_reverse_completion_determinism(td):
@@ -298,6 +341,16 @@ def test_2_reverse_completion_determinism(td):
                  'store bytes as serial width=1 execution')
     serial_summary = engine.run()
 
+    # Codex review #1: the serial reference must produce the EXPECTED store bytes and a
+    # NON-None accepted order — comparing two empty stores (b'' == b'') or None == None
+    # would let a no-op engine that runs, audits and promotes nothing pass this pin.
+    EXPECTED_STORE = b'leaseA\nleaseB\n'
+    EXPECTED_ORDER = ['leaseA', 'leaseB']
+    assert _store_bytes(serial_store) == EXPECTED_STORE, (
+        'serial reference must actually promote both members in plan order: %r'
+        % _store_bytes(serial_store))
+    assert serial_summary.get('accepted_order') == EXPECTED_ORDER, serial_summary
+
     # Width=2 with completion REVERSED: leaseA's worker holds until leaseB has finished.
     b_done = threading.Event()
     reversed_store = os.path.join(td, 'store_reversed.txt')
@@ -312,10 +365,16 @@ def test_2_reverse_completion_determinism(td):
                  'store bytes as serial width=1 execution')
     reversed_summary = engine2.run()
 
-    assert _store_bytes(serial_store) == _store_bytes(reversed_store), (
-        'store bytes diverge between serial and reversed-completion execution: %r vs %r'
-        % (_store_bytes(serial_store), _store_bytes(reversed_store)))
-    assert serial_summary.get('accepted_order') == reversed_summary.get('accepted_order'), (
+    # Codex review #1: the reversal must be OBSERVED, not assumed — the 2 s event wait
+    # tolerates a serial engine that times out and completes A first; the fake-side
+    # completion trace is the proof that B genuinely finished before A.
+    assert worker.completion_log == ['leaseB', 'leaseA'], (
+        'the reversed-completion fixture did not actually reverse: observed completion '
+        'order %r (leaseB must complete before leaseA)' % worker.completion_log)
+    assert _store_bytes(reversed_store) == EXPECTED_STORE, (
+        'store bytes diverge from the serial reference under reversed completion: %r vs %r'
+        % (_store_bytes(reversed_store), EXPECTED_STORE))
+    assert reversed_summary.get('accepted_order') == EXPECTED_ORDER, (
         serial_summary, reversed_summary)
 
 
@@ -346,6 +405,23 @@ def test_3_crash_resumes_only_its_lease(td):
         crashed = True
     assert crashed, 'the injected leaseB crash must propagate out of the wave'
     assert probe1.launches.count('leaseA') == 1, probe1.launches
+    # Codex review #6: the crash must be attributable — leaseB launched and died.
+    assert probe1.launches.count('leaseB') == 1, (
+        'leaseB must have launched (and crashed) in life 1: %r' % probe1.launches)
+    # Codex review #6: durability means ON DISK. Before any resume, the checkpoint must
+    # exist and record leaseA's completed receipt — module/class memory keyed by the
+    # checkpoint path is not a receipt.
+    assert os.path.exists(checkpoint), (
+        'no durable checkpoint written by life 1 at %s' % checkpoint)
+    with open(checkpoint, 'rb') as f:
+        receipt_bytes = f.read()
+    assert b'leaseA' in receipt_bytes, (
+        'the durable checkpoint does not record the completed leaseA receipt: %r'
+        % receipt_bytes[:200])
+
+    # Codex review #6: purge any in-memory engine state so life 2 can ONLY resume from
+    # the on-disk receipts (build_engine re-imports the module fresh).
+    _forget_engine_module()
 
     # Life 2: resume. Only leaseB may launch; the wave then completes with ONE promotion.
     probe2 = ConcurrencyProbe()
@@ -367,7 +443,11 @@ def test_4_rejection_requeues_only_its_keys(td):
     """An audit rejection requeues only its own keys; clean siblings batch into the
     wave's promotion unblocked."""
     td = os.path.join(td, 't4'); os.makedirs(td)
-    windows = [{'id': 'leaseA', 'profile': 'c1'}, {'id': 'leaseB', 'profile': 'c2'}]
+    # Codex review #7: batching is only provable with AT LEAST TWO clean siblings — with
+    # one clean member, per-lease promotion and batched promotion are indistinguishable,
+    # and checking only commits[0] lets extra promotions slip through.
+    windows = [{'id': 'leaseA', 'profile': 'c1'}, {'id': 'leaseB', 'profile': 'c2'},
+               {'id': 'leaseC', 'profile': 'c1'}]
 
     def audit(wf_output, window):
         if window['id'] == 'leaseB' and not window.get('requeue'):
@@ -379,13 +459,16 @@ def test_4_rejection_requeues_only_its_keys(td):
     engine = build_engine(
         windows, FakeWorker(td, ConcurrencyProbe()), os.path.join(td, 'cp.json'),
         audit=audit, promote_wave=promoter, rebuild_tm=FakeTM(),
-        width=2, admitted={'c1', 'c2'}, max_calls=3,
+        width=2, admitted={'c1', 'c2'}, max_calls=4,
         contract='an audit rejection must requeue only its own keys and must not block '
-                 'clean siblings from the wave promotion')
+                 'the TWO clean siblings from batching into the wave\'s SINGLE promotion')
     summary = engine.run()
-    assert promoter.commits and promoter.commits[0] == ('leaseA',), (
-        'the clean member must batch into the wave promotion unblocked by the rejected '
-        'sibling: %r' % (promoter.commits,))
+    assert len(promoter.commits) == 1, (
+        'the accepted wave must produce EXACTLY one batched promotion commit, got %d: %r'
+        % (len(promoter.commits), promoter.commits))
+    assert promoter.commits[0] == ('leaseA', 'leaseC'), (
+        'both clean siblings must batch into the ONE wave promotion, unblocked by the '
+        'rejected member and in plan order: %r' % (promoter.commits,))
     assert summary.get('requeue_backlog_keys') == ['kB1', 'kB2'], summary
     accepted = {m for commit in promoter.commits for m in commit}
     assert 'leaseB' not in accepted, 'a rejected member must never be promoted'
@@ -406,10 +489,24 @@ def test_5_promotion_barrier_crash_exactly_once(td):
     engine = build_engine(windows, FakeWorker(td, ConcurrencyProbe()), cp_a,
                           audit=clean_audit, promote_wave=promoter_a, rebuild_tm=tm_a,
                           width=2, admitted={'c1', 'c2'}, contract=contract)
+    # Codex review #5: the first life MUST crash at the intended boundary — silently
+    # accepting a normal return lets an engine defer all work to resume (or retry
+    # internally) and still show the right final counts.
+    crashed_a = False
     try:
         engine.run()
     except SimulatedCrash:
-        pass
+        crashed_a = True
+    assert crashed_a, (
+        'life 1 (a) must die on the injected pre-commit promoter crash — it returned '
+        'normally instead')
+    # Pre-resume state: the crash was BEFORE the commit, so nothing may be committed and
+    # no TM rebuild may have succeeded yet.
+    assert len(promoter_a.commits) == 0, (
+        'crash BEFORE the commit must leave zero commits pre-resume: %r'
+        % (promoter_a.commits,))
+    assert tm_a.successes == 0, tm_a.successes
+    _forget_engine_module()
     engine_resumed = build_engine(windows, FakeWorker(td, ConcurrencyProbe()), cp_a,
                                   audit=clean_audit, promote_wave=promoter_a,
                                   rebuild_tm=tm_a, width=2, admitted={'c1', 'c2'},
@@ -427,10 +524,21 @@ def test_5_promotion_barrier_crash_exactly_once(td):
     engine_b = build_engine(windows, FakeWorker(td, ConcurrencyProbe()), cp_b,
                             audit=clean_audit, promote_wave=promoter_b, rebuild_tm=tm_b,
                             width=2, admitted={'c1', 'c2'}, contract=contract)
+    crashed_b = False
     try:
         engine_b.run()
     except SimulatedCrash:
-        pass
+        crashed_b = True
+    assert crashed_b, (
+        'life 1 (b) must die on the injected post-commit TM crash — it returned '
+        'normally instead')
+    # Pre-resume state: the commit landed, the TM rebuild did not.
+    assert len(promoter_b.commits) == 1, (
+        'crash AFTER the commit must leave exactly one commit pre-resume: %r'
+        % (promoter_b.commits,))
+    assert tm_b.successes == 0, (
+        'the TM crash must leave zero SUCCESSFUL rebuilds pre-resume: %d' % tm_b.successes)
+    _forget_engine_module()
     engine_b_resumed = build_engine(windows, FakeWorker(td, ConcurrencyProbe()), cp_b,
                                     audit=clean_audit, promote_wave=promoter_b,
                                     rebuild_tm=tm_b, width=2, admitted={'c1', 'c2'},
@@ -521,6 +629,65 @@ def test_6_reservation_ledger_max_calls(td):
     assert consumed <= 3, 'reservation exceeded: %d consumed of 3' % consumed
     assert len(probe3.launches) == 1, probe3.launches
 
+    # Codex review #3 (failures + retries consume the SAME ledger): a failed probe and a
+    # crashed worker are consumptions too — an engine that counts only successes (or
+    # releases failed attempts back to the pool) must be caught here. Fixture: probe(c1)
+    # succeeds (1), probe(c2) FAILS (2), leaseA's worker launches (3) and CRASHES; with
+    # max_calls=3 fully consumed there is NO budget for a retry or for leaseB.
+    probe_attempts = []
+
+    def failing_probe(profile):
+        probe_attempts.append(profile)          # recorded BEFORE the failure — an
+        if profile == 'c2':                     # attempt is a consumption either way
+            raise SimulatedCrash('simulated probe failure on c2')
+        return 1.0
+
+    probe_f = ConcurrencyProbe()
+    worker_f = FakeWorker(td, probe_f, crash_ids={'leaseA'})
+    engine = build_engine(
+        [{'id': 'leaseA', 'profile': 'c1'}, {'id': 'leaseB', 'profile': 'c2'}],
+        worker_f, os.path.join(td, 'eng_cpf.json'), audit=audit_calls(1),
+        promote_wave=FakePromoter(os.path.join(td, 'storef.txt')), rebuild_tm=FakeTM(),
+        width=2, admitted={'c1', 'c2'}, max_calls=3, probe=failing_probe,
+        contract='a FAILED probe and a CRASHED worker consume the reservation exactly '
+                 'like successes; with the ledger exhausted no retry and no further '
+                 'lease may spawn (total attempts stay bounded)')
+    try:
+        engine.run()
+    except SimulatedCrash:
+        pass                                    # the engine may surface either failure
+    total_attempts = len(probe_attempts) + len(probe_f.launches)
+    assert total_attempts <= 3, (
+        'failures/retries escaped the reservation ledger: %d attempts of 3 '
+        '(probes=%r launches=%r)' % (total_attempts, probe_attempts, probe_f.launches))
+    assert probe_f.launches.count('leaseA') <= 1, (
+        'the crashed leaseA worker was RETRIED against an exhausted reservation: %r'
+        % probe_f.launches)
+    assert 'leaseB' not in probe_f.launches, (
+        'leaseB spawned although the reservation was exhausted by failures: %r'
+        % probe_f.launches)
+
+    # Codex review #3 (reservation is taken ATOMICALLY before spawn): two leases race
+    # for ONE reservation under width 2 — a check-then-act engine reserves post-hoc and
+    # launches both (they would meet on the barrier); an atomic pre-spawn ledger admits
+    # exactly one. No probe in this case, so the single reservation belongs to a worker.
+    probe_r = ConcurrencyProbe()
+    worker_r = FakeWorker(td, probe_r, barrier=threading.Barrier(2), barrier_wait_s=0.5)
+    engine = build_engine(
+        [{'id': 'leaseA', 'profile': 'c1'}, {'id': 'leaseB', 'profile': 'c2'}],
+        worker_r, os.path.join(td, 'eng_cpr.json'), audit=audit_calls(1),
+        promote_wave=FakePromoter(os.path.join(td, 'storer.txt')), rebuild_tm=FakeTM(),
+        width=2, admitted={'c1', 'c2'}, max_calls=1,
+        contract='the reservation must be taken atomically BEFORE each concurrent spawn '
+                 '— width 2 racing for max_calls=1 admits exactly one worker, never both')
+    engine.run()
+    assert len(probe_r.launches) == 1, (
+        'concurrent spawn beat the reservation ledger (check-then-act race): %d workers '
+        'launched against max_calls=1: %r' % (len(probe_r.launches), probe_r.launches))
+    assert worker_r.met_barrier == [], (
+        'both racing workers rendezvoused — the reservation was not atomic: %r'
+        % worker_r.met_barrier)
+
 
 def test_7_coord_dir_and_admitted_parked_filtering(td):
     """Custom coordinator dir reaches every child; the parked guard counts only the
@@ -580,26 +747,79 @@ def test_7_coord_dir_and_admitted_parked_filtering(td):
             % stop_msg)
 
     # (7b) THE ENGINE PIN — width from the admitted-minus-parked fleet only, and the
-    # custom coordinator dir reaching every child (the H1386 D4 exactness the engine
-    # must preserve).
+    # custom coordinator dir OBSERVED FROM INSIDE every child (the H1386 D4 exactness the
+    # engine must preserve). Codex review #2: a summary echo of the constructor argument
+    # proves nothing — the child itself must be able to see the coordinator path (via the
+    # window the engine hands it, or the child env), recorded AT CALL TIME on the fake
+    # side.
     try:
         probe = ConcurrencyProbe()
+        child_observed = []
+        inner_worker = FakeWorker(td, probe)
+
+        def observing_worker(window):
+            child_observed.append(
+                window.get('coord_dir') or os.environ.get('PWG_COORDINATOR_DIR'))
+            return inner_worker(window)
+
         engine = build_engine(
             [{'id': 'leaseA', 'profile': 'c1'}, {'id': 'leaseB', 'profile': 'c2'}],
-            FakeWorker(td, probe), os.path.join(td, 'eng_cp.json'), audit=clean_audit,
+            observing_worker, os.path.join(td, 'eng_cp.json'), audit=clean_audit,
             promote_wave=FakePromoter(os.path.join(td, 'store.txt')), rebuild_tm=FakeTM(),
             width=2, admitted={'c1', 'c2'}, parked={'c2'}, coord_dir=coord,
             contract='wave width must be computed from the admitted-minus-parked fleet '
-                     'and the custom coordinator dir must reach every child')
+                     'and the custom coordinator dir must be OBSERVABLE from inside '
+                     'every child at call time')
         summary = engine.run()
         if probe.launches.count('leaseB'):
             problems.append('a lease bound to a PARKED profile was dispatched')
         if summary.get('effective_width') not in (1,):
             problems.append('effective width must collapse to the admitted-minus-parked '
                             'fleet (expected 1, got %r)' % summary.get('effective_width'))
-        if summary.get('coord_dir') != os.path.abspath(coord):
+        expected_coord = os.path.abspath(coord)
+        if not child_observed or any(obs != expected_coord for obs in child_observed):
+            problems.append('the coordinator dir was not observable from inside the '
+                            'child(ren) at call time (observed %r, expected %r) — an '
+                            'engine-summary echo of the constructor argument is not '
+                            'propagation' % (child_observed, expected_coord))
+        if summary.get('coord_dir') != expected_coord:
             problems.append('the custom coordinator dir did not reach the engine children '
-                            '(expected %r)' % os.path.abspath(coord))
+                            '(expected %r)' % expected_coord)
+    except MissingBehavior as exc:
+        problems.append(str(exc))
+
+    # (7c) THE ENGINE PIN, all-admitted-parked — Codex review #2: the engine fixture must
+    # itself contain the P1#10 shape: EVERY admitted profile parked while a healthy but
+    # EXCLUDED profile (c3, bound to leaseX) exists in the plan. The engine must dispatch
+    # NOTHING and stop with a reason naming the parked condition — the excluded healthy
+    # profile must not mask it. (7a) above proves the CURRENT control path gets this
+    # wrong; this pin binds the ENGINE.
+    try:
+        probe_p = ConcurrencyProbe()
+        engine = build_engine(
+            [{'id': 'leaseA', 'profile': 'c1'}, {'id': 'leaseB', 'profile': 'c2'},
+             {'id': 'leaseX', 'profile': 'c3'}],
+            FakeWorker(td, probe_p), os.path.join(td, 'eng_cp_parked.json'),
+            audit=clean_audit,
+            promote_wave=FakePromoter(os.path.join(td, 'store_parked.txt')),
+            rebuild_tm=FakeTM(),
+            width=2, admitted={'c1', 'c2'}, parked={'c1', 'c2'}, coord_dir=coord,
+            contract='with EVERY admitted profile parked, the engine must dispatch '
+                     'nothing and stop naming the parked condition — a healthy EXCLUDED '
+                     'profile in the plan must not mask it')
+        stop_reason = ''
+        try:
+            summary_p = engine.run()
+            stop_reason = str(summary_p.get('stop_reason', ''))
+        except SystemExit as exc:
+            stop_reason = str(exc)
+        if probe_p.launches:
+            problems.append('with all admitted profiles parked the engine still '
+                            'dispatched %r (the excluded healthy c3 must not count)'
+                            % probe_p.launches)
+        if 'parked' not in stop_reason.lower():
+            problems.append('the engine stop does not name the admitted-fleet-all-parked '
+                            'condition (got %r)' % stop_reason)
     except MissingBehavior as exc:
         problems.append(str(exc))
     if problems:
