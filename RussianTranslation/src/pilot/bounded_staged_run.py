@@ -258,6 +258,15 @@ class RunContext:
         return os.path.join(os.path.abspath(self.coord_dir), 'state.json')
 
 
+def _coord_env(ctx):
+    """H1386 D4 (the A7 class, repeated): the env for every coordinator SUBPROCESS this
+    module spawns. Without an explicit PWG_COORDINATOR_DIR the child resolves the DEFAULT
+    coordinator dir, so a bounded run with a non-default --coord-dir (the documented
+    H895-acceptance pattern) would prepare/promote against the wrong coordinator state --
+    a wrong-dir SystemExit mid-drain at best, a same-id foreign lease mutated at worst."""
+    return dict(os.environ, PWG_COORDINATOR_DIR=os.path.abspath(ctx.coord_dir))
+
+
 def _ensure_imported(ctx, lease_id):
     """Import this lease as a scoped job if it is prepared and not already present (mirrors
     cmd_staged_run's to_import filter, scoped to the single lease)."""
@@ -401,26 +410,52 @@ def materialize_requeue(ctx, origin_lease_id, run=None):
         pending = lease.get('pending_requeue') or {}
         kind = ('transient' if pending.get('transient')
                 else 'defect' if pending.get('defect') else None)
-        if kind is None:
-            raise SystemExit('bounded_staged_run: lease %s has no pending requeue backlog '
-                             'to materialise' % origin_lease_id)
-        prep = run(
-            [sys.executable, os.path.abspath(ctx.coordinator), 'prepare-requeue',
-             origin_lease_id, '--%s' % kind],
-            cwd=os.path.abspath(ctx.cwd), text=True, encoding='utf-8', capture_output=True)
-        if prep.returncode:
-            raise SystemExit('bounded_staged_run: prepare-requeue --%s failed for %s: %s'
-                             % (kind, origin_lease_id, (prep.stderr or prep.stdout)[-800:]))
-        with open(ctx.coord_state_path, encoding='utf-8') as f:
-            state = json.load(f)
-        lease = _lease_by_id(state, origin_lease_id) or {}
+        if kind is not None:
+            prep = run(
+                [sys.executable, os.path.abspath(ctx.coordinator), 'prepare-requeue',
+                 origin_lease_id, '--%s' % kind],
+                cwd=os.path.abspath(ctx.cwd), env=_coord_env(ctx),
+                text=True, encoding='utf-8', capture_output=True)
+            if prep.returncode:
+                raise SystemExit('bounded_staged_run: prepare-requeue --%s failed for %s: %s'
+                                 % (kind, origin_lease_id, (prep.stderr or prep.stdout)[-800:]))
+            with open(ctx.coord_state_path, encoding='utf-8') as f:
+                state = json.load(f)
+            lease = _lease_by_id(state, origin_lease_id) or {}
+        # kind None (no preparable backlog): fall through to the H1386 C2 resume check
+        # below instead of raising here -- a promoted_partial whose final lane's attempt
+        # completed and promoted is a crash-resume, not an unmaterialisable backlog.
     if lease.get('state') != 'requeue_prepared':
+        # H1386 C2: a post-audit origin state with a COMPLETED ::rqNN attempt job is a
+        # RESUME, not a wedge. The crash class: the rq item recorded (ready/ready_partial)
+        # or even promoted, then the in-loop promote failed transiently (DirLock busy, the
+        # all-or-nothing batch refusal) or the process died between record and checkpoint,
+        # so --resume re-pulls the checkpointed rq item. Returning the existing attempt job
+        # id lets the drain loop break immediately and the A2 rescue promote land the
+        # recorded-but-unpromoted cards, exactly as it does for plain windows. Pre-fix this
+        # raised on EVERY resume -- a permanent wedge only a hand-run promote could clear.
+        if lease.get('state') in ('ready', 'ready_partial', 'promoted', 'promoted_partial'):
+            rq_id = _completed_requeue_job(ctx, origin_lease_id)
+            if rq_id:
+                return rq_id
         raise SystemExit('bounded_staged_run: lease %s is %r after requeue materialisation '
-                         '(expected requeue_prepared) -- cannot run the rework'
+                         '(expected requeue_prepared, or a post-audit state with a completed '
+                         '::rq attempt job to resume) -- cannot run the rework'
                          % (origin_lease_id, lease.get('state')))
     return mao.cmd_import_requeue(argparse.Namespace(
         db=ctx.db, coord_dir=ctx.coord_dir, cwd=ctx.cwd,
         lease_id=origin_lease_id, max_attempts=2))
+
+
+def _completed_requeue_job(ctx, origin_lease_id):
+    """The most recent COMPLETED requeue-attempt job ('<origin>::rqNN-<kind>') for this
+    origin lease, or None. GLOB (not LIKE) so '_' in lease ids stays literal."""
+    db = mao.connect(ctx.db)
+    row = db.execute(
+        "SELECT external_id FROM jobs WHERE external_id GLOB ? AND state='done' "
+        "ORDER BY id DESC LIMIT 1", (origin_lease_id + '::rq*',)).fetchone()
+    db.close()
+    return row['external_id'] if row else None
 
 
 def make_run_window(ctx):
@@ -457,8 +492,16 @@ def make_run_window(ctx):
             failed = mao.scoped_job_count(db, scope, "state='failed'")
             db.close()
             if failed:
-                raise SystemExit('bounded_staged_run: lease %s has %d failed job(s) — fail closed'
-                                 % (lease_id, failed))
+                # H1386 P3c: print the failed jobs' FULL external_ids -- the documented
+                # reset-failed recovery needs the exact '<lease>::rqNN-<kind>' id.
+                db = mao.connect(ctx.db)
+                failed_ids = [j['external_id'] for j in
+                              mao.scoped_jobs(db, scope, "state='failed'")]
+                db.close()
+                raise SystemExit('bounded_staged_run: lease %s has %d failed job(s) '
+                                 '(%s) — fail closed; recover with reset-failed '
+                                 '--lease-id <id> --reason "..."'
+                                 % (lease_id, failed, ', '.join(sorted(failed_ids))))
             if not pending and not done_unrecorded:
                 break
             if pending:
@@ -493,7 +536,8 @@ def make_run_window(ctx):
             promote = subprocess.run(
                 [sys.executable, os.path.abspath(ctx.coordinator), 'promote-ready',
                  '--gen-model-version', ctx.gen_model_version, '--lease-id', lease_id],
-                cwd=os.path.abspath(ctx.cwd), text=True, encoding='utf-8', capture_output=True)
+                cwd=os.path.abspath(ctx.cwd), env=_coord_env(ctx),
+                text=True, encoding='utf-8', capture_output=True)
             if promote.returncode and 'no ready leases to promote' not in (
                     promote.stderr + promote.stdout):
                 raise SystemExit('bounded_staged_run: lease %s promotion failed: %s'
@@ -508,7 +552,8 @@ def make_run_window(ctx):
             rescue = subprocess.run(
                 [sys.executable, os.path.abspath(ctx.coordinator), 'promote-ready',
                  '--gen-model-version', ctx.gen_model_version, '--lease-id', lease_id],
-                cwd=os.path.abspath(ctx.cwd), text=True, encoding='utf-8', capture_output=True)
+                cwd=os.path.abspath(ctx.cwd), env=_coord_env(ctx),
+                text=True, encoding='utf-8', capture_output=True)
             if rescue.returncode and 'no ready leases to promote' not in (
                     rescue.stderr + rescue.stdout):
                 raise SystemExit('bounded_staged_run: lease %s post-loop promotion failed: %s'
@@ -694,8 +739,12 @@ def run(args):
         # drain loop then sees neither pending nor done-unrecorded and exits at once, stranding
         # the lease forever. Reset in_progress jobs (scoped to this plan) back to pending before
         # the supervisor drains.
+        # H1386 C1: cmd_recover takes the lease-id SET, never the staged_plan_scope dict --
+        # iterating the dict fed its KEYS ('expected_headwords', 'lease_ids', ...) into the
+        # SQL scope, so the recovery UPDATE matched zero jobs and a crashed window was
+        # checkpointed COMPLETED with zero output (mirrors cmd_staged_run's set(lease_ids)).
         mao.cmd_recover(argparse.Namespace(
-            db=args.db, only_external_ids=scope,
+            db=args.db, only_external_ids=set(scope['lease_ids']),
             coordinator=args.coordinator, coord_dir=args.coord_dir, cwd=args.cwd))
 
     sup = build_supervisor(windows, args.checkpoint, ceilings, run_window, audit,

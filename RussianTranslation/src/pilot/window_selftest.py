@@ -4303,9 +4303,16 @@ def test_frag_tm_reuse():
         senses0 = [{'tag': '1', 'german': plan0[0][2][:20], 'russian': 'кэш',
                     'equivalence_type': 'equivalent', 'source_type': 'attested',
                     'stratum': '', 'differentia': ''}]
+        # H1386: the fixture must be a VALID frag-TM v2 row (per-sense owners) -- R6 made a
+        # v1 ownerless row never-live-served, so the old v1 fixture only ever "passed" when
+        # the gam inputs were absent and the test returned early (vacuous in CI; failed on
+        # any second suite run in the same checkout, once earlier tests left the fixtures).
+        owners0 = [['gam', '']]
         with open(os.path.join(d, 'translation_memory.frag.ru.jsonl'), 'w', encoding='utf-8') as f:
-            f.write(json.dumps({'schema': 'pwg.translation_memory.frag.v1', 'lang': 'ru',
-                                'fsha': fsha0, 'src_key': target, 'senses': senses0},
+            f.write(json.dumps({'schema': tm.FRAG_SCHEMA_V2, 'lang': 'ru',
+                                'fsha': fsha0, 'src_key': target, 'senses': senses0,
+                                'owners': owners0, 'trust_level': tm.TRUST_MACHINE,
+                                'gate_status': 'machine_gated', 'reuse_policy': 'auto_exact'},
                                ensure_ascii=False) + '\n')
         js, _batches = gh.build(root, [target], rootmap, 12000, tm_path=tmfile)
 
@@ -4327,8 +4334,11 @@ def test_frag_tm_reuse():
         if filled != [(0, 0)]:
             fail('only the first fragment (the cached one) must be filled, got %s' % filled)
         # the filled slot carries the cached senses; its FRAGS sibling carries the matching fsha
-        if fv[0][0][0]['russian'] != 'кэш':
+        # R6 slot shape: {'senses': [...], 'owners': [...]} (never a bare senses list).
+        if fv[0][0]['senses'][0]['russian'] != 'кэш':
             fail('cached fragment slot must carry the sidecar senses')
+        if fv[0][0]['owners'] != owners0:
+            fail('cached fragment slot must carry the v2 per-sense owners')
         if gv[0][0].get('fsha') != fsha0:
             fail('FRAGS fragment must carry the content address used for the cache lookup')
         # whole-card accounting: reuse happens INSIDE selfHeal, so the card is still owed by a
@@ -5544,6 +5554,115 @@ def test_defect_fragment_denylist_round_trip():
     n, nf = rfa.append_tm_denylist('h304root', [], 'transient', lang='ru')
     if (n, nf) != (0, 0):
         fail('transient requeue must never append denylist rows')
+
+
+def test_h1386_p3d_p3e_run_py_inproc_exit_semantics():
+    """H1386 P3d/P3e: run_py_inproc must mirror CPython for sys.exit('<message>') (message
+    lands in captured stderr, rc=1 -- pre-fix the diagnosis vanished into an empty-stderr
+    crash entry) and must RE-RAISE KeyboardInterrupt (an operator abort inside a gate was
+    recorded as a crashed gate and the audit ran on, polluting the failure gallery)."""
+    from audit_window import run_py_inproc
+    tmp = tempfile.mkdtemp()
+    str_exit = os.path.join(tmp, 'gate_strexit.py')
+    with open(str_exit, 'w', encoding='utf-8', newline='\n') as f:
+        f.write("import sys\nsys.exit('P3E-DIAGNOSIS: missing input file')\n")
+    res = run_py_inproc([str_exit])
+    if res['returncode'] != 1:
+        fail('P3e: a string sys.exit must map to rc=1, got %r' % res['returncode'])
+    if 'P3E-DIAGNOSIS' not in res['stderr']:
+        fail('P3e: the sys.exit message must land in captured stderr, got %r'
+             % res['stderr'][:200])
+    kbd = os.path.join(tmp, 'gate_kbd.py')
+    with open(kbd, 'w', encoding='utf-8', newline='\n') as f:
+        f.write('raise KeyboardInterrupt\n')
+    try:
+        run_py_inproc([kbd])
+        fail('P3d: KeyboardInterrupt inside a gate was swallowed (recorded as a crash)')
+    except KeyboardInterrupt:
+        pass
+
+
+def test_h1386_p3h_stale_check_pins_v2_execution():
+    """H1386 P3h: the v2 branch must cross-check the wf_output's execution /
+    provenance_classes against the manifest's top-level execution / key_provenance --
+    promotion trusts the workflow-side copies (provenance-class gating + the B20
+    model-identity check), so a drifted copy must audit stale, not pass as v1-era-clean."""
+    execu = {'profile_slot': 'c4', 'model_identifier': 'claude-sonnet-5'}
+    prov = {'k1': 'real'}
+    meta = {'root': 'p3h_root', 'selected_keys': ['k1'], 'input_hashes': {},
+            'rootmap_sha256': None, 'nominal': True}
+    manifest = {'schema': 'pwg.headless_execution_manifest.v2', 'meta': dict(meta),
+                'execution': dict(execu), 'key_provenance': dict(prov)}
+    wf_meta = dict(meta, execution=dict(execu), provenance_classes=dict(prov))
+
+    def errs(wf):
+        return stale_check(None, wf, ['k1'], execution_manifest=manifest).get('errors') or []
+
+    matching = errs(wf_meta)
+    if any('execution block' in e or 'provenance_classes' in e for e in matching):
+        fail('P3h: matching v2 execution/provenance flagged as drift: %s' % matching)
+    drifted_exec = errs(dict(wf_meta, execution=dict(execu, model_identifier='claude-opus-4-8')))
+    if not any('execution block' in e for e in drifted_exec):
+        fail('P3h: drifted wf execution block not flagged against the v2 manifest')
+    drifted_prov = errs(dict(wf_meta, provenance_classes={'k1': 'fallback'}))
+    if not any('provenance_classes' in e for e in drifted_prov):
+        fail('P3h: drifted wf provenance_classes not flagged against the v2 manifest')
+    stripped = errs(dict(meta))
+    if not any('execution block' in e for e in stripped):
+        fail('P3h: a wf meta with NO execution copy must not pass the v2 pin')
+
+
+def test_h1386_c3_frag_unblock_serves_replacement():
+    """H1386 C3: the fragment half of the H304 gate-outcome contract. Deny an fsha, then
+    re-harvest the SAME fsha (rework hashes the fragment SOURCE, so the corrected output
+    emits an identical fsha) with corrected senses, then unblock -- load_frag_tm must serve
+    the NEW senses. Pre-fix, build_frags' seen-scan treated the flagged cached row as a
+    cache hit (never consulting the denylist), the replacement was never appended, and the
+    unblock re-enabled serving the exact gate-rejected senses the denial existed to block.
+    Also pins the recursive harvest glob: a requeue attempt's wf_output lands two dirs deep
+    (artifacts/<lease>/requeue/rqNN-<kind>/), which the old single-* glob never matched."""
+    import translation_memory as tm
+    tmp = tempfile.mkdtemp()
+    deny_path = os.path.join(tmp, 'denylist.jsonl')
+    sidecar = os.path.join(tmp, 'translation_memory.frag.ru.jsonl')
+    fsha = tm.frag_address('ru', 'the fragment source')
+
+    def wf_fixture(path, russian):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump({'meta': {'lang': 'ru', 'root': 'c3root', 'input_hashes': {}},
+                       'results': [{'key': 'c3root~~h0', 'card': {
+                           'records': [], 'frag_prov': [{
+                               'fsha': fsha, 'owners': [['h', '']],
+                               'senses': [{'tag': '1', 'german': 'g', 'russian': russian}],
+                           }]}}]}, f, ensure_ascii=False)
+
+    # 1. first harvest caches the (later gate-flagged) senses, one level deep.
+    wf_fixture(os.path.join(tmp, 'artifacts', 'w1', 'wf_output.w1.json'), 'FLAGGED')
+    pattern = os.path.join(tmp, 'artifacts', '**', 'wf_output*.json')
+    _, added, _ = tm.build_frags(pattern, 'ru', out=sidecar, denylist=deny_path)
+    if added != 1:
+        fail('first harvest should cache 1 fragment, got %d' % added)
+    # 2. the gate flags it: fsha denied (H304 defect denial).
+    tm.append_jsonl_line(deny_path, {'schema': 'pwg.translation_memory.denylist.v1',
+                                     'kind': 'fragment', 'fsha': fsha, 'reason': 'defect'})
+    # 3. the corrected --no-tm rework lands TWO dirs deep with the SAME fsha, new senses.
+    wf_fixture(os.path.join(tmp, 'artifacts', 'w1', 'requeue', 'rq01-defect',
+                            'wf_output.w1.json'), 'CORRECTED')
+    _, added2, _ = tm.build_frags(pattern, 'ru', out=sidecar, denylist=deny_path)
+    if added2 < 1:
+        fail('H1386 C3: replacement harvest of a currently-denied fsha was deduped as a '
+             'cache hit -- the corrected senses never reach the sidecar')
+    # 4. promotion unblocks the fsha (clear_denials_for_promotion path).
+    tm.append_unblock((), [fsha], reason='replaced_by_promotion', path=deny_path)
+    # 5. the served row must now be the CORRECTED senses, never the flagged ones.
+    cache = tm.load_frag_tm('ru', sidecar, denylist=deny_path)
+    if fsha not in cache:
+        fail('unblocked fragment missing from load_frag_tm')
+    got = (cache[fsha].get('senses') or [{}])[0].get('russian')
+    if got != 'CORRECTED':
+        fail('H1386 C3: load_frag_tm re-serves the gate-flagged senses (%r) after unblock'
+             % got)
 
 
 def test_write_reports_emits_defect_fsha_file():
@@ -6913,6 +7032,105 @@ def test_h1283_a6_prep_slice_flattens_batches():
     print('  A6: prep_slice flattens every batch key')
 
 
+def test_h1386_d1_medium50_script_size_cap():
+    """H1386 D1: the medium50 start-today enabler. (1) prep_slice hoists the shared
+    preamble/translation/nws boilerplate into ONE payload-level `prompt_common` instead of
+    duplicating ~12 KB into every card's embedded prompt; (2) prep_slice --chunk N splits a
+    big manifest into N cap-sized sub-payloads (--keys subsets); (3) inject_payload hard-
+    refuses an emitted script over WORKFLOW_SCRIPT_CAP; (4) canonical_audit merges several
+    chunk slice_results into one audit. Pre-fix, a 50-card build blew the 512 KB Workflow
+    scriptPath cap at submission with no earlier warning."""
+    import importlib.util as ilu
+    h1209 = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'h1209')
+
+    def load(name):
+        spec = ilu.spec_from_file_location('h1386_' + name, os.path.join(h1209, name + '.py'))
+        mod = ilu.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return mod
+
+    prep = load('prep_slice')
+    tmp = tempfile.mkdtemp()
+    boiler = 'B' * 4000
+    keys = ['k%02d' % i for i in range(8)]
+    man = {
+        'model': 'claude-sonnet-5', 'field': 'russian',
+        'batches': [[k] for k in keys],
+        'prompt': {'preamble': boiler, 'grammar': 'G', 'translation': boiler, 'nws_rule': 'N'},
+        'inputs': {k: {'skeleton': 'S-%s {T1}' % k, 'portrait': 'P', 'source_senses': 1,
+                       'ls': 0, 'sk': 0} for k in keys},
+        'placeholder_maps': {k: ['<x/>'] for k in keys},
+    }
+    man_path = os.path.join(tmp, 'man.json')
+    with open(man_path, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump(man, f)
+
+    # (1) single payload: boilerplate hoisted once, cards carry card_block, not prompt.
+    out1 = os.path.join(tmp, 'payload.json')
+    prep.write_payloads(man, out1)
+    payload = json.load(open(out1, encoding='utf-8'))
+    if not (payload.get('prompt_common') or '').startswith(boiler):
+        fail('D1: payload must carry the shared boilerplate once as prompt_common')
+    for c in payload['cards']:
+        if 'prompt' in c:
+            fail('D1: per-card prompt still embeds the shared boilerplate')
+        if boiler in (c.get('card_block') or ''):
+            fail('D1: card_block must not duplicate the shared boilerplate')
+    # the reconstructed per-card prompt must be byte-identical to the v2 assembly.
+    want = prep.reconstruct_prompt(man, 'k00')
+    got = payload['prompt_common'] + payload['cards'][0]['card_block']
+    if got != want:
+        fail('D1: prompt_common + card_block must equal the exact production prompt')
+
+    # (2) a >=4-way chunk: every key exactly once, chunk files share prompt_common.
+    outc = os.path.join(tmp, 'chunked.json')
+    chunk_paths = prep.write_payloads(man, outc, chunk=4)
+    if len(chunk_paths) != 4:
+        fail('D1: --chunk 4 must write 4 sub-payloads, got %d' % len(chunk_paths))
+    seen_keys = []
+    for p in chunk_paths:
+        pc = json.load(open(p, encoding='utf-8'))
+        if pc.get('prompt_common') != payload['prompt_common']:
+            fail('D1: chunk payload missing the shared prompt_common')
+        seen_keys += [c['key1'] for c in pc['cards']]
+    if sorted(seen_keys) != sorted(keys) or len(seen_keys) != len(keys):
+        fail('D1: chunking must cover every key exactly once, got %r' % seen_keys)
+    # --keys subset selection
+    outk = os.path.join(tmp, 'subset.json')
+    prep.write_payloads(man, outk, keys=['k03', 'k05'])
+    pk = json.load(open(outk, encoding='utf-8'))
+    if [c['key1'] for c in pk['cards']] != ['k03', 'k05']:
+        fail('D1: --keys must subset the payload to exactly the named cards')
+
+    # (3) inject_payload refuses an over-cap emitted script.
+    inj = load('inject_payload')
+    if not getattr(inj, 'WORKFLOW_SCRIPT_CAP', None):
+        fail('D1: inject_payload must define WORKFLOW_SCRIPT_CAP')
+    tpl_path = os.path.join(tmp, 'tpl.js')
+    with open(tpl_path, 'w', encoding='utf-8', newline='\n') as f:
+        f.write('const PAYLOAD = /*__PAYLOAD__*/ null /*__END__*/\n')
+    big = os.path.join(tmp, 'big.json')
+    with open(big, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump({'cards': [{'key1': 'x', 'card_block': 'Z' * (inj.WORKFLOW_SCRIPT_CAP + 100)}]}, f)
+    try:
+        inj.inject(tpl_path, big, os.path.join(tmp, 'over.js'))
+        fail('D1: inject_payload accepted a script over WORKFLOW_SCRIPT_CAP')
+    except SystemExit:
+        pass
+    inj.inject(tpl_path, out1, os.path.join(tmp, 'ok.js'))   # a small payload still lands
+
+    # (4) canonical_audit merges several chunk slice_results into one result set.
+    ca = load('canonical_audit')
+    half1 = {'slice': ['k00'], 'results': [{'key1': 'k00', 'would_promote': True}],
+             'cards_out': [{'key1': 'k00', 'card': None}]}
+    half2 = {'slice': ['k01'], 'results': [{'key1': 'k01', 'would_promote': False}],
+             'cards_out': [{'key1': 'k01', 'card': None}]}
+    merged = ca.merge_slice_results([half1, half2])
+    if merged['slice'] != ['k00', 'k01'] or len(merged['results']) != 2 \
+            or len(merged['cards_out']) != 2:
+        fail('D1: canonical_audit must merge chunk slice_results into one audit input')
+
+
 def test_degenerate_xref_vocab_single_source():
     """H1425 W2: the cross-reference / degenerate-passthrough vocabulary is ONE shared frozenset,
     consumed by both the RU generation lane (gen_opt_harness2.degenerate_passthrough_card) and the
@@ -7178,6 +7396,9 @@ def main():
         test_h1339_b04_b09_worktree_safe_resolution,
         test_h1339_b10_b19_audit_chain_routing,
         test_h1339_b11_b12_denylist_lifecycle_and_crash_refusal,
+        test_h1386_c3_frag_unblock_serves_replacement,
+        test_h1386_p3d_p3e_run_py_inproc_exit_semantics,
+        test_h1386_p3h_stale_check_pins_v2_execution,
         test_h1339_b13_b15_telemetry_and_siglum_precision,
         test_every_stitch_emits_record_required,
         test_unmapped_token_is_counted,
@@ -7345,6 +7566,7 @@ def main():
         test_h1420_p10_promote_rebuilds_tm_in_finally,
         test_h1283_a5_max_wide_default_bounded,
         test_h1283_a6_prep_slice_flattens_batches,
+        test_h1386_d1_medium50_script_size_cap,
         test_frag_prov_glob_honors_coordinator_dir_c7,
         test_pwg_mask_german_homograph_not_latin_c8,
     ]

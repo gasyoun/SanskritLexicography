@@ -72,7 +72,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))          # .../src/pilot
 SRC = os.path.dirname(HERE)                                # .../src
 OUT = os.path.join(HERE, 'output')
-INPUT_DIR = os.path.join(HERE, 'input')                    # portrait sidecars (H920 source_senses)
+# H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
+INPUT_DIR = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'input')  # portrait sidecars (H920 source_senses)
 DEFAULT_MW_TM = os.path.join(SRC, 'mw_en_tm.json')
 
 if HERE not in sys.path:

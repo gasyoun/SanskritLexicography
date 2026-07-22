@@ -41,7 +41,8 @@ import root_segment_proto as RS                       # noqa: E402  segment()/gl
 from safe_filename import safe_name                    # noqa: E402
 
 PWG = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
-INP = os.path.join(HERE, 'pilot', 'input')
+# H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
+INP = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'pilot', 'input')
 NAMED_GIANT = ['55166', '21814', '72578']              # bhū + both gam homonyms (the doc's probes)
 DIVP = re.compile(r'^<div n="p">')
 DIVM = re.compile(r'^<div n="m">')

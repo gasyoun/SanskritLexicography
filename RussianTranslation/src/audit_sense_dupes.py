@@ -14,7 +14,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 SKIP = {'gramm-forms', 'header', 'gramm-header', 'grammar', 'paradigm', 'vgl.', 'vgl'}
-INP = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pilot', 'input')
+# H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
+INP = os.environ.get('PWG_INPUT_DIR') or os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pilot', 'input')
 # Committed, reproducible batch_of exemptions. The rootmaps under INP are gitignored and
 # regenerated, so a hand-edit there is lost on clone/regen; this tracked file restores it.
 OVERRIDES = os.path.join(os.path.dirname(INP), 'rootmap_overrides.json')

@@ -1,0 +1,201 @@
+{
+ "schema": "pwg.h1339_offline_bench.v1",
+ "protocol": {
+  "warmups": 2,
+  "runs": 10,
+  "prepare_mode": "batch"
+ },
+ "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+ "platform": "Windows-10-10.0.19045-SP0",
+ "fixture_sha256": "d225ced2f215a5c4492b2657ba43cfef0f8b0d25b13202a5138142e9347e7ac4",
+ "seed_rows": 11600,
+ "stages": {
+  "prepare": {
+   "median_s": 3.263,
+   "p95_s": 5.426,
+   "min_s": 1.82,
+   "max_s": 7.502
+  },
+  "normalize": {
+   "median_s": 0.146,
+   "p95_s": 0.155,
+   "min_s": 0.074,
+   "max_s": 0.25
+  },
+  "audit": {
+   "median_s": 12.108,
+   "p95_s": 17.237,
+   "min_s": 8.558,
+   "max_s": 50.034
+  },
+  "promotion-plan": {
+   "median_s": 0.888,
+   "p95_s": 1.241,
+   "min_s": 0.542,
+   "max_s": 4.938
+  },
+  "store-write": {
+   "median_s": 5.927,
+   "p95_s": 7.281,
+   "min_s": 3.288,
+   "max_s": 20.836
+  },
+  "total": {
+   "median_s": 21.763,
+   "p95_s": 28.639,
+   "min_s": 14.1,
+   "max_s": 78.622
+  }
+ },
+ "runs": [
+  {
+   "prepare": 3.6084435000000212,
+   "normalize": 0.1410037000000557,
+   "audit": 14.794622200000049,
+   "promotion-plan": 0.9481063999999151,
+   "store-write": 5.8661323999999695,
+   "total": 24.410201800000095
+  },
+  {
+   "prepare": 5.425964799999974,
+   "normalize": 0.14944740000009915,
+   "audit": 16.03263449999986,
+   "promotion-plan": 1.1555402999999842,
+   "store-write": 6.679332400000021,
+   "total": 28.287379099999953
+  },
+  {
+   "prepare": 3.437348800000109,
+   "normalize": 0.1297053999999207,
+   "audit": 12.226487800000086,
+   "promotion-plan": 1.1426929000001564,
+   "store-write": 6.518485800000008,
+   "total": 22.312027800000124
+  },
+  {
+   "prepare": 3.0892883999999867,
+   "normalize": 0.1461959000000661,
+   "audit": 11.98912630000018,
+   "promotion-plan": 0.8272656999999981,
+   "store-write": 5.988402999999835,
+   "total": 21.213013600000068
+  },
+  {
+   "prepare": 7.501568499999848,
+   "normalize": 0.24990280000019993,
+   "audit": 50.03448040000012,
+   "promotion-plan": 4.937763600000153,
+   "store-write": 20.8359703000001,
+   "total": 78.62192200000027
+  },
+  {
+   "prepare": 3.9756674000000203,
+   "normalize": 0.14466220000008434,
+   "audit": 17.237068000000136,
+   "promotion-plan": 0.7756412000001092,
+   "store-write": 7.281115099999852,
+   "total": 28.638512700000092
+  },
+  {
+   "prepare": 2.6441632999999456,
+   "normalize": 0.14597249999997075,
+   "audit": 11.795561500000076,
+   "promotion-plan": 1.2413638000000446,
+   "store-write": 5.123130199999878,
+   "total": 19.70882749999987
+  },
+  {
+   "prepare": 2.7250841000000037,
+   "normalize": 0.1505134999999882,
+   "audit": 11.692916000000196,
+   "promotion-plan": 0.5419645000001765,
+   "store-write": 4.448627700000088,
+   "total": 19.017141300000276
+  },
+  {
+   "prepare": 2.5995636999998624,
+   "normalize": 0.15539009999997688,
+   "audit": 10.65817109999989,
+   "promotion-plan": 0.5938219999998182,
+   "store-write": 3.2878957000000355,
+   "total": 16.701020599999765
+  },
+  {
+   "prepare": 1.8195842000000084,
+   "normalize": 0.07380540000008295,
+   "audit": 8.558406399999967,
+   "promotion-plan": 0.781611299999895,
+   "store-write": 3.6477652999999464,
+   "total": 14.099561300000005
+  }
+ ],
+ "deterministic": true,
+ "output_signatures": [
+  "da1341e6ac112bf83c7c521d194f698aa39da067075b636463fa6748c43fb629"
+ ],
+ "last_outputs": {
+  "leases": {
+   "fx1": {
+    "state": "ready",
+    "audit_state": "clean",
+    "clean_count": 3,
+    "pending_requeue": {
+     "transient": [],
+     "defect": []
+    },
+    "final_state": "promoted"
+   },
+   "fx2": {
+    "state": "ready_partial",
+    "audit_state": "needs_requeue",
+    "clean_count": 1,
+    "pending_requeue": {
+     "transient": [
+      "_a_g_ata"
+     ],
+     "defect": [
+      "_a_dikya"
+     ]
+    },
+    "final_state": "promoted_partial"
+   },
+   "fx3": {
+    "state": "ready",
+    "audit_state": "clean",
+    "clean_count": 2,
+    "pending_requeue": {
+     "transient": [],
+     "defect": []
+    },
+    "final_state": "promoted"
+   },
+   "fx4": {
+    "state": "ready",
+    "audit_state": "clean",
+    "clean_count": 1,
+    "pending_requeue": {
+     "transient": [],
+     "defect": []
+    },
+    "final_state": "promoted"
+   },
+   "fx5": {
+    "state": "ready",
+    "audit_state": "clean",
+    "clean_count": 3,
+    "pending_requeue": {
+     "transient": [],
+     "defect": []
+    },
+    "final_state": "promoted"
+   }
+  },
+  "promote_rc": 0,
+  "promote_tail": "promoted 5 lease(s)\n",
+  "store_sha256": "9a2d6daf0fb9887f0140cecafc3b9495dd79267e3ca5fda383a839be73ac4b72",
+  "store_semantic_sha256": "a776afd27eb69eacdfae86d6c990253e7d995f08e5424acdb9d96e5db06bec63",
+  "store_rows": 11715,
+  "tm_sha256": "2ccca227876610a4b18b231920dc4fa550313aab1c901473ab75e1162a64d27b",
+  "signature": "da1341e6ac112bf83c7c521d194f698aa39da067075b636463fa6748c43fb629"
+ }
+}

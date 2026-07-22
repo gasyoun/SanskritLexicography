@@ -39,7 +39,8 @@ import nws_split as N
 from safe_filename import safe_name
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-INP = os.path.join(HERE, 'pilot', 'input')
+# H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
+INP = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'pilot', 'input')
 OUT = os.path.join(HERE, 'pilot', 'output')
 
 BLEED = re.compile(r'^[\s,;]*[^>]*?;\s*[A-ZÀ-ÖØ-ÞĀ-ỿ][^>:]*?\s:\s[\dIVXLCDM]+[A-Za-z]?\s*>\s*')

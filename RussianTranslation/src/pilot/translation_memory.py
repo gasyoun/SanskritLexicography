@@ -243,17 +243,21 @@ def reusable(row):
 
 
 def best_reusable(rows):
-    candidates = [r for r in rows if reusable(r)]
+    candidates = [(i, r) for i, r in enumerate(rows) if reusable(r)]
     if not candidates:
         return None
-    superseded = {s for r in candidates for s in _as_list(r.get('supersedes')) if s}
-    candidates = [r for r in candidates if not r.get('id') or r.get('id') not in superseded]
+    superseded = {s for _, r in candidates for s in _as_list(r.get('supersedes')) if s}
+    candidates = [(i, r) for i, r in candidates if not r.get('id') or r.get('id') not in superseded]
     if not candidates:
         return None
-    return max(candidates, key=lambda r: (
-        TRUST_RANK.get(r.get('trust_level') or 'legacy_promoted', 10),
-        _entry_time(r),
-    ))
+    # H1386 C3: the input order (== append order for the jsonl sidecars) breaks equal
+    # (trust, timestamp) ties toward the NEWER row -- a same-second replacement harvest of
+    # a denied-then-unblocked fsha must win over the flagged row it supersedes.
+    return max(candidates, key=lambda ir: (
+        TRUST_RANK.get(ir[1].get('trust_level') or 'legacy_promoted', 10),
+        _entry_time(ir[1]),
+        ir[0],
+    ))[1]
 
 
 def load_denylist(path=None):
@@ -624,11 +628,18 @@ def load_frag_tm(lang, path=None, denylist=None, live_only=True):
     return out
 
 
-def build_frags(glob_pattern, lang, out=None):
+def build_frags(glob_pattern, lang, out=None, denylist=None):
     """Harvest per-fragment ground truth from wf_output cards' `frag_prov` channel into the
     append-only fragment sidecar. Idempotent: a fragment already present (by fsha) is never
     duplicated. Returns (path, added, total)."""
     path = frag_tm_path(lang, out)
+    # H1386 C3: an fsha hashes the fragment SOURCE, so a gate-flagged fragment's corrected
+    # rework emits the IDENTICAL fsha. If the seen-scan counted the flagged cached row as a
+    # cache hit, the replacement harvest was deduped forever and a later B12 unblock
+    # re-enabled serving the exact gate-rejected senses the denial existed to block. A
+    # currently-denied fsha is therefore NOT a cache hit -- the replacement appends and the
+    # later harvested_at wins at serve time (best_reusable).
+    deny = load_denylist(denylist)
     # seen[fsha] = the highest schema version already cached for that fsha (2 = frag-TM v2 with valid
     # owners, 1 = v1/ownerless). A harvest is skipped only when the cache already holds a version >=
     # the new one, so a v2 harvest SUPERSEDES a cached v1 (R6) while a v1 re-harvest of a cached v1
@@ -647,10 +658,14 @@ def build_frags(glob_pattern, lang, out=None):
                 _fsha = _row.get('fsha')
                 if not _fsha or not frag_senses_sane(_row.get('senses'), lang) or not reusable(_row):
                     continue      # defect/blocked/suggestion rows are not a real cache hit (overridable)
+                if _fsha in deny['frags']:
+                    continue      # H1386 C3: a denied fsha never blocks its replacement harvest
                 _ver = 2 if (_row.get('schema') == FRAG_SCHEMA_V2
                              and _valid_owners(_row.get('senses'), _row.get('owners'))) else 1
                 seen[_fsha] = max(seen.get(_fsha, 0), _ver)
-    files = sorted(_glob.glob(os.path.join(REPO, glob_pattern)))
+    # H1386 C3: recursive -- a requeue attempt's wf_output lands two dirs deep
+    # (artifacts/<lease>/requeue/rqNN-<kind>/), which a single-* pattern never matched.
+    files = sorted(_glob.glob(os.path.join(REPO, glob_pattern), recursive=True))
     new_rows, added, refused = [], 0, 0
     for fp in files:
         try:

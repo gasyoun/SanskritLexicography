@@ -19,7 +19,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 SCHEMA = os.path.join(ROOT, 'schemas', 'pwg_ru_final_card.schema.json')
 DEFAULT_FIXTURE = os.path.join(HERE, 'fixtures', 'final_card_workflow.json')
-PORTRAIT_DIR = os.path.join(HERE, 'pilot', 'input')
+# H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
+PORTRAIT_DIR = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'pilot', 'input')
 
 SCHEMA_ID = 'pwg_ru.final_card.schema.v1'
 RESULT_REQUIRED = {'card', 'judge'}

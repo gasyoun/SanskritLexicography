@@ -11,7 +11,10 @@ import tempfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 REPO = os.path.dirname(SRC)
-INP = os.path.join(HERE, 'input')
+# H1386 P3f: PWG_INPUT_DIR lets a hermetic harness (h1339_offline_bench) point every
+# pipeline stage at a SANDBOX input dir instead of the live shared src/pilot/input/.
+# Unset (production) resolves exactly as before.
+INP = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'input')
 OUT = os.path.join(HERE, 'output')
 # Canonical live production harness (batched + masked, gen_opt_harness2.py).
 # The legacy per-card run_pilot_wf.opt.js is deprecated; consumers point here.
