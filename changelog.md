@@ -50,8 +50,13 @@ not an error.
 - pwg_ru prepare-stage batching (H1386 OPT): `coordinator prepare-batch` prepares N claimed
   leases in ONE coordinator process with the perf_preflight/gen_opt_harness2 children run
   in-process (the H1339 runpy-gates pattern applied to the prepare stage H1339's closeout
-  named as the remaining dominant spawn cost), A/B-benched against the per-lease shape with
-  semantic-store-equality proven by the bench's deterministic signature.
+  named as the remaining dominant spawn cost), A/B-benched against the per-lease shape:
+  **prepare −72.0% median** (11.669 s → 3.263 s; total −22.0%), 2 warmups + 10 measured
+  runs per mode, identical deterministic output signature across both modes (semantic
+  store equality proven) — evidence in
+  [`pwg_ru/h1339/H1386_PREPARE_BATCH_BENCH_2026-07-22.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1339/H1386_PREPARE_BATCH_BENCH_2026-07-22.md).
+  Clears the H1339 25% stage gate with no guard weakened; combined with H1339's measured
+  −23.0%, the offline-path total is now well past the original ≥25% target.
 - pwg_ru hermetic offline bench (H1386 P3f): `h1339_offline_bench.py` now sandboxes its
   fixture inputs (`PWG_INPUT_DIR`, honored by all 14 previously hand-copied input-dir
   sites) and its events ledger (`PWG_EVENTS_PATH`), with a `finally:` teardown — a bench
