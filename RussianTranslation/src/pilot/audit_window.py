@@ -22,7 +22,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))          # .../src/pilot
 SRC = os.path.dirname(HERE)                                # .../src
 OUT = os.path.join(HERE, 'output')
-INPUT_DIR = os.path.join(HERE, 'input')                    # .../src/pilot/input (portrait sidecars)
+# H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
+INPUT_DIR = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'input')  # .../src/pilot/input (portrait sidecars)
 
 sys.path.insert(0, SRC)
 import nws_split

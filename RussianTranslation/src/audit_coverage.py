@@ -25,7 +25,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-IN = os.path.join(HERE, 'pilot', 'input')
+# H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
+IN = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'pilot', 'input')
 
 LOW, OVER = 0.80, 1.50
 DIVN = re.compile(r'<div n=')

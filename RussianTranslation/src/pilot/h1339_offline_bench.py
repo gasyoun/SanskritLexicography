@@ -199,6 +199,10 @@ def install_inputs():
     INPUT_DIR = tempfile.mkdtemp(prefix='h1339bench_input_')
     for name in os.listdir(os.path.join(FIXTURE, 'input')):
         shutil.copy2(os.path.join(FIXTURE, 'input', name), os.path.join(INPUT_DIR, name))
+    # The BENCH process itself must also resolve the sandbox: fake_card's lazy
+    # `import audit_coverage` binds audit_coverage.IN from this env at import time, and
+    # every child inherits it (one_run's explicit env then just makes it visible).
+    os.environ['PWG_INPUT_DIR'] = INPUT_DIR
     return INPUT_DIR
 
 
@@ -313,7 +317,7 @@ def run_cli(argv, env, cwd=REPO, check=True):
     return proc
 
 
-def one_run(tag, keep=False):
+def one_run(tag, keep=False, prepare_mode='batch'):
     """One full pipeline pass in a fresh sandbox. Returns (timings, outputs) dicts."""
     sandbox = tempfile.mkdtemp(prefix='h1339bench_%s_' % tag)
     coord_dir = os.path.join(sandbox, 'coordinator')
@@ -371,10 +375,19 @@ def one_run(tag, keep=False):
             '    save = coordinator.save_state(state)\n'
             'print("injected", len(coordinator.load_state()["leases"]))\n')
     run_cli([inject], env)
-    for lid, _case, _keys in LEASES:
-        run_cli([os.path.join(HERE, 'coordinator.py'), 'prepare', lid,
-                 '--profile-slot', 'bench', '--config-dir', profile_dir,
-                 '--executor-lane', 'serial-whole-card'], env)
+    # H1386 OPT: default 'batch' -- ONE coordinator process prepares the whole batch,
+    # children in-process (was: 3 interpreter spawns per lease -- coordinator +
+    # perf_preflight + gen). 'per-lease' preserves the pre-H1386 shape for A/B evidence.
+    if prepare_mode == 'per-lease':
+        for lid, _case, _keys in LEASES:
+            run_cli([os.path.join(HERE, 'coordinator.py'), 'prepare', lid,
+                     '--profile-slot', 'bench', '--config-dir', profile_dir,
+                     '--executor-lane', 'serial-whole-card'], env)
+    else:
+        run_cli([os.path.join(HERE, 'coordinator.py'), 'prepare-batch']
+                + [lid for lid, _case, _keys in LEASES]
+                + ['--profile-slot', 'bench', '--config-dir', profile_dir,
+                   '--executor-lane', 'serial-whole-card'], env)
     timings['prepare'] = time.perf_counter() - t0
 
     # --- normalize: deterministic wf_output per lease + canonical reorder -------------
@@ -478,6 +491,9 @@ def main():
     ap.add_argument('--runs', type=int, default=10)
     ap.add_argument('--json', help='write the machine-readable report here')
     ap.add_argument('--keep-last', action='store_true', help='keep the last sandbox for inspection')
+    ap.add_argument('--prepare-mode', choices=('batch', 'per-lease'), default='batch',
+                    help="H1386 OPT A/B: 'batch' = one prepare-batch call (production "
+                         "default); 'per-lease' = the pre-H1386 3-spawns-per-lease shape")
     a = ap.parse_args()
 
     install_inputs()
@@ -494,14 +510,15 @@ def main():
 
 def _bench(a, fx_hash):
     for i in range(a.warmups):
-        t, o = one_run('warm%d' % i)
+        t, o = one_run('warm%d' % i, prepare_mode=a.prepare_mode)
         print('warmup %d/%d: total %.2fs (promote rc=%s)' % (
             i + 1, a.warmups, t['total'], o['promote_rc']))
 
     measured, signatures = [], set()
     last_outputs = None
     for i in range(a.runs):
-        t, o = one_run('run%d' % i, keep=(a.keep_last and i == a.runs - 1))
+        t, o = one_run('run%d' % i, keep=(a.keep_last and i == a.runs - 1),
+                       prepare_mode=a.prepare_mode)
         measured.append(t)
         signatures.add(o['signature'])
         last_outputs = o
@@ -532,7 +549,8 @@ def _bench(a, fx_hash):
     if a.json:
         report = {
             'schema': 'pwg.h1339_offline_bench.v1',
-            'protocol': {'warmups': a.warmups, 'runs': a.runs},
+            'protocol': {'warmups': a.warmups, 'runs': a.runs,
+                         'prepare_mode': a.prepare_mode},
             'python': sys.version, 'platform': platform.platform(),
             'fixture_sha256': fx_hash, 'seed_rows': SEED_ROWS,
             'stages': stats, 'runs': measured,
