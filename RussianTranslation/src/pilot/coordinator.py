@@ -25,6 +25,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 REPO = os.path.dirname(SRC)
+# H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
+INPUT_DIR = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'input')
 OUT = os.path.join(HERE, 'output')
 DEFAULT_COORD_DIR = os.path.join(OUT, 'coordinator')
 ARTIFACT_DIRNAME = 'artifacts'
@@ -757,8 +759,8 @@ def nominal_candidates(state, batch_size=12, cards_path=None):
             stem = safe_name(key) if key else ''
             if (key and key not in done and key not in leased
                     and not row.get('quarantined_records')
-                    and os.path.exists(os.path.join(HERE, 'input', stem + '.raw.txt'))
-                    and os.path.exists(os.path.join(HERE, 'input', stem + '.portrait.json'))):
+                    and os.path.exists(os.path.join(INPUT_DIR, stem + '.raw.txt'))
+                    and os.path.exists(os.path.join(INPUT_DIR, stem + '.portrait.json'))):
                 keys.append(key)
             if len(keys) >= batch_size:
                 break
@@ -901,7 +903,46 @@ def enforce_cost_gate(preflight_path, target, allow_over_cost=False):
                    len(part.get('run_now') or []), len(part.get('defer_monster') or [])))
 
 
-def prepare(args):
+def _run_child_inproc(argv, timeout=None):
+    """H1386 OPT: run a prepare child (perf_preflight / gen_opt_harness2) IN-PROCESS via
+    audit_window.run_py_inproc -- the H1339 runpy-gates pattern applied to the prepare
+    stage, which H1339's own closeout named as the remaining dominant per-lease
+    interpreter-spawn cost. Returns a CompletedProcess-shaped object; mirrors run_cmd's
+    loud failure. `timeout` is accepted for signature parity but not enforceable in-proc
+    -- the caller's between-children operation deadline still applies."""
+    from audit_window import run_py_inproc
+    # run_py_inproc takes [script, *args] -- strip the interpreter that the subprocess
+    # form (run_cmd) needs but runpy must not see.
+    if argv and os.path.normcase(argv[0]) == os.path.normcase(sys.executable):
+        argv = argv[1:]
+    res = run_py_inproc(argv)
+    if res['returncode']:
+        if (res['stdout'] or '').strip():
+            print(res['stdout'].rstrip())
+        if (res['stderr'] or '').strip():
+            print(res['stderr'].rstrip(), file=sys.stderr)
+        raise SystemExit(res['returncode'])
+    return subprocess.CompletedProcess(argv, res['returncode'],
+                                       stdout=res['stdout'], stderr=res['stderr'])
+
+
+def prepare_batch(args):
+    """H1386 OPT: prepare N claimed leases in ONE coordinator process, with the two
+    per-lease children (perf_preflight cost gate + gen_opt_harness2 harness/manifest
+    generation) run in-process -- 3 interpreter spawns per lease become 0 marginal spawns
+    per lease. Per-lease semantics are IDENTICAL to `prepare` (same operation tokens,
+    same cost gate, same artifacts, same state transitions), proven by the
+    h1339_offline_bench deterministic output signature."""
+    for lease_id in args.lease_id:
+        one = argparse.Namespace(
+            lease_id=lease_id, allow_over_cost=getattr(args, 'allow_over_cost', False),
+            profile_slot=args.profile_slot, config_dir=args.config_dir,
+            executor_lane=args.executor_lane)
+        prepare(one, run_child=_run_child_inproc)
+
+
+def prepare(args, run_child=None):
+    run_child = run_child or run_cmd
     if bool(args.profile_slot) != bool(args.config_dir):
         raise SystemExit('--profile-slot and --config-dir must be supplied together')
     with DirLock(paths()['lock']):
@@ -925,17 +966,17 @@ def prepare(args):
         if lease['kind'] == 'verb':
             root = lease['target']
             preflight_path = os.path.join(adir, 'preflight.json')
-            p = run_cmd([sys.executable, os.path.join(HERE, 'perf_preflight.py'),
-                         root, '--json'],
-                        timeout=remaining_operation_timeout(deadline, 'prepare'))
+            p = run_child([sys.executable, os.path.join(HERE, 'perf_preflight.py'),
+                           root, '--json'],
+                          timeout=remaining_operation_timeout(deadline, 'prepare'))
             atomic_write_text(preflight_path, p.stdout)
             enforce_cost_gate(preflight_path, lease.get('target'),
                               allow_over_cost=getattr(args, 'allow_over_cost', False))
             harness = os.path.join(adir, 'run_pilot_wf.%s.js' % lease['id'])
             manifest = os.path.join(adir, 'execution_manifest.%s.json' % lease['id'])
-            run_cmd([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
-                     root, '--out=%s' % harness, '--manifest-out=%s' % manifest] + binding,
-                    timeout=remaining_operation_timeout(deadline, 'prepare'))
+            run_child([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
+                       root, '--out=%s' % harness, '--manifest-out=%s' % manifest] + binding,
+                      timeout=remaining_operation_timeout(deadline, 'prepare'))
         elif lease['kind'] == 'nominal':
             keys = lease.get('details', {}).get('run_keys') or lease.get('details', {}).get('keys') or []
             if not keys:
@@ -943,18 +984,18 @@ def prepare(args):
             preflight_path = os.path.join(adir, 'preflight.json')
             root = 'nominal_%s' % lease['id']
             key_arg = ','.join(keys)
-            p = run_cmd([sys.executable, os.path.join(HERE, 'perf_preflight.py'),
-                         root, '--nominal', '--no-grammar', '--keys=%s' % key_arg, '--json'],
-                        timeout=remaining_operation_timeout(deadline, 'prepare'))
+            p = run_child([sys.executable, os.path.join(HERE, 'perf_preflight.py'),
+                           root, '--nominal', '--no-grammar', '--keys=%s' % key_arg, '--json'],
+                          timeout=remaining_operation_timeout(deadline, 'prepare'))
             atomic_write_text(preflight_path, p.stdout)
             enforce_cost_gate(preflight_path, lease.get('target'),
                               allow_over_cost=getattr(args, 'allow_over_cost', False))
             harness = os.path.join(adir, 'run_pilot_wf.%s.js' % lease['id'])
             manifest = os.path.join(adir, 'execution_manifest.%s.json' % lease['id'])
-            run_cmd([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
-                     root, '--nominal', '--no-grammar', '--keys=%s' % key_arg,
-                     '--out=%s' % harness, '--manifest-out=%s' % manifest] + binding,
-                    timeout=remaining_operation_timeout(deadline, 'prepare'))
+            run_child([sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
+                       root, '--nominal', '--no-grammar', '--keys=%s' % key_arg,
+                       '--out=%s' % harness, '--manifest-out=%s' % manifest] + binding,
+                      timeout=remaining_operation_timeout(deadline, 'prepare'))
         else:
             raise SystemExit('prepare is only for verb/nominal translation leases')
     except BaseException as exc:
@@ -1834,6 +1875,15 @@ def main(argv=None):
     p.add_argument('--config-dir', help='canonical CLAUDE_CONFIG_DIR bound into manifest v2')
     p.add_argument('--executor-lane', default='serial-whole-card')
     p.set_defaults(func=prepare)
+    pb = sub.add_parser('prepare-batch')
+    pb.add_argument('lease_id', nargs='+')
+    pb.add_argument('--allow-over-cost', action='store_true',
+                    help='H304 cap-and-defer override: prepare cost-gate-flagged windows '
+                         'anyway (dedicated human-budgeted monster session only)')
+    pb.add_argument('--profile-slot', help='logical profile slot (for example c4; not billing proof)')
+    pb.add_argument('--config-dir', help='canonical CLAUDE_CONFIG_DIR bound into manifest v2')
+    pb.add_argument('--executor-lane', default='serial-whole-card')
+    pb.set_defaults(func=prepare_batch)
     br = sub.add_parser('begin-run')
     br.add_argument('--lease-id', action='append', required=True)
     br.add_argument('--mode', choices=('standard', 'staged'), default='standard')
