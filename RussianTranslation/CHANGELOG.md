@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.55.0] - 2026-07-22
+
 ### Fixed — offline control-plane audit and speed hardening (Codex)
 
 - Profile-bound manifest-v2 jobs are now claimed only by their configured account; required slots
