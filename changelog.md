@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.57.0] — 22-07-2026
+
 ### Fixed
 
 - **`bounded_staged_run.py` CLI: `--claude-bin` was dereferenced but never defined** — the
