@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 20-07-2026_
+_Created: 04-07-2026 · Last updated: 22-07-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -8,6 +8,34 @@ This is the orientation document for anyone (human or session) who needs the
 narrated). Read this first; go to `.ai_state.md` for exact dates/PRs/numbers on
 any specific claim below, and to [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
 for the current operating procedure.
+
+### H1386 — the H1339 review landing set: resume recovery, frag-TM memory, prepare-batch (22-07-2026)
+
+The H1339-authored code had never been independently reviewed; a 30-agent adversarial
+pass produced the landing list, executed test-first ([PR #667](https://github.com/gasyoun/SanskritLexicography/pull/667),
+`window_selftest` 157→180). Three confirmed P1s all lived in the CRASH-RECOVERY seams the
+restart fixtures never exercised: bounded `--resume` passed the staged-plan-scope **dict**
+to `cmd_recover` (dict iteration fed its KEYS into the SQL scope — recovery matched zero
+jobs, a crashed window checkpointed COMPLETED with zero output); a requeue item whose
+origin had already recorded/promoted wedged every `--resume` in `materialize_requeue`
+(post-audit states with a completed `::rqNN` job now resume); and the B12 fragment unblock
+re-served gate-flagged senses — the rework hashes the fragment SOURCE so its fsha is
+identical, the seen-scan deduped the replacement forever, and the requeue output two dirs
+deep was never harvested by the single-`*` glob at all. Lesson: **a selftest with an
+injected fixture runner proves the loop, not the recovery** — every one of these hid
+behind a green restart test that never touched the real `cmd_recover`/`materialize` path.
+
+Also landed: the medium50 enabler (h1209 payload v3 — shared boilerplate hoisted once,
+`WORKFLOW_SCRIPT_CAP` refusal at inject time, `prep_slice --chunk N`, chunked
+`canonical_audit` merge), the promote-lock TOCTOU reclaim, per-lease `store_delta`, the
+A7-class `PWG_COORDINATOR_DIR` injection on all bounded subprocesses, and the P2 sweep.
+The offline bench is now fully hermetic (`PWG_INPUT_DIR`/`PWG_EVENTS_PATH` sandbox +
+teardown — it used to freeze fixture bodies into the live `src/pilot/input/`); making it
+hermetic surfaced that **14 modules hand-copied the input-dir constant** (the C-01 drift
+class, again). Prepare-stage speed: `coordinator prepare-batch` runs the
+preflight/gen children in-process — **prepare −72.0% median** (11.669 s → 3.263 s),
+identical deterministic signature vs the per-lease shape, closing H1339's ≥25% target.
+Evidence: [`pwg_ru/h1339/H1386_PREPARE_BATCH_BENCH_2026-07-22.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1339/H1386_PREPARE_BATCH_BENCH_2026-07-22.md).
 
 ### H1339 — Tier-B factory hardening + the first measured offline benchmark (20-07-2026)
 
