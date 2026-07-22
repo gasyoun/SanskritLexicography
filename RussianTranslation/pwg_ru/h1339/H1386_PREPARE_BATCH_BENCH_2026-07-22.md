@@ -2,7 +2,7 @@
 
 _Created: 22-07-2026 · Last updated: 22-07-2026_
 
-Executor: Fable 5 (`claude-fable-5`), [H1386](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1386-Fable_RussianTranslation_pwg-ru-post-h1339-resume-fixes-prepare-speed_20.07.26.md).
+Executor: Fable 5 (`claude-fable-5`), [H1386](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1386-Fable_RussianTranslation_pwg-ru-post-h1339-resume-fixes-prepare-speed_20.07.26.md).
 Method: [`src/pilot/h1339_offline_bench.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1339_offline_bench.py)
 (H1339's committed hermetic bench, now fully sandboxed per H1386 P3f — `PWG_INPUT_DIR` +
 `PWG_EVENTS_PATH` overrides, `finally:` teardown), 2 warmups + **10 measured runs per
