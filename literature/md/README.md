@@ -50,6 +50,13 @@ General syntax materials covering:
 - Educational materials on syntax
 - Five paraphrase digests (Entsiklopedicheskiy slovar 1984, Kibrik et al., Testelets, Lomov, Sintaksis-2009), each alongside its restored full text
 
+### Alexey_Vigasin/ (26 files + 1 index)
+A.A. Vigasin's *Изучение Индии в России (очерки и материалы)* — full-text conversions of all
+26 chapters/appendices/front-matter, split into Work A (history of Russian Indology, routed
+into [IndologyScholars](https://github.com/gasyoun/IndologyScholars)) and Work B (Vigasin's own
+research, reference-only). Published as full text 22-07-2026 (owner risk accepted, H1443) — see
+[`Alexey_Vigasin/README.md`](Alexey_Vigasin/README.md) for the per-file routing map.
+
 ## File Format
 
 Each markdown file contains:
@@ -71,5 +78,5 @@ digest covers.
 
 ---
 
-Generated: 2026-06-26 · Digests added 15-07-2026 · Nine full texts restored 21-07-2026
-Total files referenced: 76
+Generated: 2026-06-26 · Digests added 15-07-2026 · Nine full texts restored 21-07-2026 · Alexey_Vigasin/ (27 files) added 22-07-2026
+Total files referenced: 103
