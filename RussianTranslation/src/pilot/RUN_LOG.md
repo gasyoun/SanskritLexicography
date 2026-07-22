@@ -396,7 +396,7 @@ hash maps), then a single `audit_window.py --root i`:
 
 ## 2026-06-29 — Stage A: sTA
 
-Operator: Claude Code Max. Handoff: [`../../H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md`](RussianTranslation/archive/H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md).
+Operator: Claude Code Max. Handoff: [`../../H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/H027-Sonnet_RussianTranslation_claude_code_max_29.06.26.md).
 
 ### Round 1 — full window (123 cards)
 
@@ -910,7 +910,7 @@ Dropping to ≤3-wide took non-null from ~10 % to ~78 % — the *generation* rec
 
 ## 2026-07-13 — H858 sense-fidelity diagnosis: STRANDED-ANCHOR was largely a FALSE POSITIVE; notes-render fix reclaims 7 cards, zero regeneration — orchestration **Opus 4.8** (`claude-opus-4-8`)
 
-**Set out to design the "content-fidelity fix"; the diagnosis redirected it.** A code-mapping pass ([Explore agent](#)) + a defect-by-defect re-audit of w08/rq1/w09 (reconstructed from the persisted Workflow task outputs) showed the "15/21 content-defects" narrative was partly wrong:
+**Set out to design the "content-fidelity fix"; the diagnosis redirected it.** A code-mapping pass (Explore agent) + a defect-by-defect re-audit of w08/rq1/w09 (reconstructed from the persisted Workflow task outputs) showed the "15/21 content-defects" narrative was partly wrong:
 - **`missing_required_sense_field` (the RUN_LOG:451 auditor over-fire) fired on ZERO cards** — Tier 0 as originally conceived reclaims nothing here.
 - The real w09 defect split: **9 NO-OUTPUT** (kill-timeouts + `{#`-span fidelity-reject nulls) + **7 STRANDED-ANCHOR** + 1 NO-RUSSIAN warn.
 - **The 7 STRANDED-ANCHOR were a FALSE POSITIVE.** [`_pilot_collect.render()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_pilot_collect.py) renders the model's free-text `notes` verbatim as a `> ` blockquote; the model sometimes *mentions* a masking token there (*"Masked span {T1} is a citation reference…"*), and [`stage2_pregate`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/stage2_pregate.py) scans the whole `.merged.md`, so a commentary mention trips STRANDED-ANCHOR on an otherwise-clean card. Deliverable german/russian were clean.

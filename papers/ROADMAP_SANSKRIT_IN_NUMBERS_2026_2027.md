@@ -204,7 +204,7 @@ Considered and ruled out — a future session should not re-propose these withou
 
 ## 7. Wiring
 
-- **Wave 0 + 1 → handoff** (agent-doable measurement): minted this session — see [§ handoff footer](#session-starter). Isolate in a worktree per this repo's shared-tree guard.
+- **Wave 0 + 1 → handoff** (agent-doable measurement): minted this session — see [§ handoff footer](#9-provenance). Isolate in a worktree per this repo's shared-tree guard.
 - **Human decisions/actions →** [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md): the Manual-home `@DECIDE` (§8) and the samskrte.ru publish `@DO`.
 - **M01 →** note the planned *Sanskrit in Numbers* appendix under the monograph's entry in [ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 

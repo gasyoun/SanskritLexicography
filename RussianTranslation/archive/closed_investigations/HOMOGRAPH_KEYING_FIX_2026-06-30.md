@@ -1,7 +1,7 @@
 # Homograph keying — FIXED (supersedes the handoff)
 
 **Date:** 2026-06-30. The homograph multiplication in the bridge preview is **fixed**, verified
-on `dA` and `vah`. This supersedes [`H032-Sonnet_RussianTranslation_homograph_keying_30.06.26.md`](RussianTranslation/archive/H032-Sonnet_RussianTranslation_homograph_keying_30.06.26.md)
+on `dA` and `vah`. This supersedes [`H032-Sonnet_RussianTranslation_homograph_keying_30.06.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/H032-Sonnet_RussianTranslation_homograph_keying_30.06.26.md)
 (no handoff needed) and corrects the "blocked, no discriminator" assessment in the bridge
 follow-up note.
 
@@ -15,7 +15,7 @@ assembled side** — the **store** side has a clean homonym: each row's `subcard
 (the multiplication) and trying to fragile-match the assembled side, the fix attaches the
 translations **once per `key1`** and labels each translation sense with its **store** homonym.
 
-## What changed ([`src/export_interop.py`](src/export_interop.py))
+## What changed ([`src/export_interop.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_interop.py))
 
 1. `card_glosses(card, translations, emitted)` — translations are emitted **once per `key1`**
    (an `emitted` set, shared per export). `emitted=None` keeps the legacy behaviour.

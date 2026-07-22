@@ -6,7 +6,7 @@ _Created: 06-07-2026 · Last updated: 07-07-2026_
 is **Slice 1 of [H215](https://github.com/gasyoun/Uprava/blob/main/handoffs/H215-Opus_RussianTranslation_pwg_ru_publication_grade_tm_tmx_and_oral_06.07.26.md)**
 — the cheapest publication-grade representation of the corpus translation memory.
 It turns the word-aligned corpus lexicon into a standards-compliant
-[TMX 1.4b](https://www.gala-global.org/tmx-14b) interchange artifact that is both a
+[TMX 1.4b](https://web.archive.org/web/2024/https://www.gala-global.org/tmx-14b) interchange artifact that is both a
 citable resource and a retrieval feed for the pwg_ru engine.
 
 ## What it reads and writes

@@ -4,9 +4,9 @@ Cold-start brief for the next chat. Scope: **start the real PWG→Russian bulk r
 with the now-locked, token-optimized harness, run-to-cap, and instrument cost.
 The proving ground (`tyaj`) is done; this is the first *production* window.
 
-> Read first: [`TOKEN_OPTIMIZATION_2026-06-27.md`](RussianTranslation/TOKEN_OPTIMIZATION_2026-06-27.md)
-> (why/how the run was re-architected + all findings) and [`CHANGELOG.md`](CHANGELOG.md)
-> §2026-06-27. Cost model: [`PILOT_COST.md`](PILOT_COST.md) §6.
+> Read first: [`TOKEN_OPTIMIZATION_2026-06-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/TOKEN_OPTIMIZATION_2026-06-27.md)
+> (why/how the run was re-architected + all findings) and [`CHANGELOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/CHANGELOG.md)
+> §2026-06-27. Cost model: [`PILOT_COST.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PILOT_COST.md) §6.
 
 ---
 
@@ -65,7 +65,7 @@ python src\audit_coverage.py  …                                 # dropped/fabr
 
 5. **Glue:** `python src\root_glue_translated.py sTA` → `pilot\output\sTA.NESTED.md`.
 
-6. **Instrument** (the point of the run): append to [`PILOT_COST.md`](PILOT_COST.md)
+6. **Instrument** (the point of the run): append to [`PILOT_COST.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PILOT_COST.md)
    §6 — per root: cards, `cache_read`/`cache_create`/output tokens (from the agent
    transcripts under `…/subagents/workflows/wf_*/agent-*.jsonl`), wall-clock,
    and whether/when the **Max weekly cap fired** + cumulative tokens at that point.

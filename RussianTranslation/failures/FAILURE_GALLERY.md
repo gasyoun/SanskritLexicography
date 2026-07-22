@@ -228,7 +228,7 @@ label applied without checking the earlier layer. This reads as scholarship but 
 unsourced inference — exactly what a printed dictionary must not carry.
 
 **Fix.** Two locked guards in
-[`6_merged_translate.md`](RussianTranslation/pwg_ru_prompts/6_merged_translate.md): (1) attribute facts to
+[`6_merged_translate.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru_prompts/6_merged_translate.md): (1) attribute facts to
 layers, never narrate *why* a layer changed something; (2) never mark a sense "[new]"
 without confirming it is absent from the earlier layer, and never re-list it.
 
@@ -270,7 +270,7 @@ as immaculate scholarship. And the independent Opus judge **false-cleared it (se
 shoulder against the source. A second judge sharing the translator's blind spot is not an
 independent check.
 
-**Fix.** [`6_merged_translate.md`](pwg_ru_prompts/6_merged_translate.md) guard 6: the NWS
+**Fix.** [`6_merged_translate.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru_prompts/6_merged_translate.md) guard 6: the NWS
 citation *closes* its gloss; pair each gloss with the source that *follows* it, never the
 one before. Sanity-check by author specialty. Rebuilt `aṃśa` from an explicit pre-parsed
 owner map ([`src/pilot/_aMSa_nws_correct_parse.md`](../src/pilot/_aMSa_nws_correct_parse.md));

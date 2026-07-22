@@ -11,7 +11,7 @@ crosswalks them:
   ([PDF](https://github.com/gasyoun/SanskritLexicography/blob/master/EntryAnatomy/pwg-entry-anatomy.pdf)),
   24 labelled callouts on a real re-typeset entry, aimed at a human reader
   meeting PWG's conventions for the first time.
-- **Machine-measured** — [`csl-atlas/data/parse-rules/pwg.json`](https://github.com/gasyoun/csl-atlas/blob/main/data/parse-rules/pwg.json),
+- **Machine-measured** — [`csl-atlas/data/parse-rules/pwg.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/parse-rules/pwg.json),
   every markup tag in `v02/pwg/pwg.txt` with an occurrence count and a
   measured parse-adequacy rating (`clean` / `partial` / `lossy` / unmapped).
 - **Working parser** — [`RussianTranslation/src/microstructure.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/microstructure.py),

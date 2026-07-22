@@ -88,9 +88,9 @@ all. What it **does** measure:
 Do not keep burning agent budget against a session showing these symptoms.
 Resume the H317 window (h317_w1a residual 12, h317_w1b residual 9, h317_w2a
 all 13, h317_w2b not yet attempted — see
-[`src/pilot/output/requeue.h317_w1a.keys.txt`](src/pilot/output/requeue.h317_w1a.keys.txt),
-[`requeue.h317_w1b.keys.txt`](src/pilot/output/requeue.h317_w1b.keys.txt),
-[`requeue.h317_w2a.keys.txt`](src/pilot/output/requeue.h317_w2a.keys.txt)) in a
+`src/pilot/output/requeue.h317_w1a.keys.txt` (local-only, gitignored),
+`requeue.h317_w1b.keys.txt`,
+`requeue.h317_w2a.keys.txt`) in a
 fresh session once a solo diagnostic launch comes back mostly/fully clean,
 confirming the transient instability has passed. If a clean-environment solo
 retry *still* shows this failure pattern, escalate as a genuine kill-gate

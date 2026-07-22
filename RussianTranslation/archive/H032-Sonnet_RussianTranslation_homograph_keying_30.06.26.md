@@ -8,14 +8,14 @@ number. This handoff is to confirm it works on 2 real cases and, if so, scope th
 
 ## Background (1 paragraph)
 
-The print bridge ([`src/promote_final_cards.py`](RussianTranslation/src/promote_final_cards.py)) writes one store
+The print bridge ([`src/promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_final_cards.py)) writes one store
 row per translated sense into `src/pwg_ru_translated.jsonl`, keyed on the **headword** `key1`
-(= `meta.root`). [`src/export_interop.py`](src/export_interop.py) joins those translations onto
+(= `meta.root`). [`src/export_interop.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_interop.py) joins those translations onto
 `src/assembled_cards.jsonl` by `key1` alone. **11.7 % of `key1` have >1 assembled entry**
 (homographs), so in `--review-status ai_translated` preview a translation appears under *every*
 homograph entry. It is **inert in production** (default export gate = `{approved, human_reviewed}`,
 currently 0 rows — no G5 review yet), so this is a correctness/quality task for the edition
-stage, not a live bug. See [`BRIDGE_FOLLOWUPS_2026-06-30.md`](BRIDGE_FOLLOWUPS_2026-06-30.md).
+stage, not a live bug. See [`BRIDGE_FOLLOWUPS_2026-06-30.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/closed_investigations/BRIDGE_FOLLOWUPS_2026-06-30.md).
 
 ## The discriminator (the key insight to test)
 
@@ -136,8 +136,8 @@ Concretely:
 
 ## Files / pointers
 
-- store writer: [`src/promote_final_cards.py`](src/promote_final_cards.py) (add `pwg_no` stamp here)
-- exporter + join: [`src/export_interop.py`](src/export_interop.py) (`card_glosses`, `approved_store`)
+- store writer: [`src/promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_final_cards.py) (add `pwg_no` stamp here)
+- exporter + join: [`src/export_interop.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_interop.py) (`card_glosses`, `approved_store`)
 - data: `src/pwg_ru_translated.jsonl` (store, gitignored), `src/assembled_cards.jsonl` (structural)
-- context: [`BRIDGE_FOLLOWUPS_2026-06-30.md`](BRIDGE_FOLLOWUPS_2026-06-30.md), PR #18 (the bridge)
+- context: [`BRIDGE_FOLLOWUPS_2026-06-30.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/archive/closed_investigations/BRIDGE_FOLLOWUPS_2026-06-30.md), PR #18 (the bridge)
 - coordination: an autonomous account also works pwg_ru on `master`; do this on a branch + PR.

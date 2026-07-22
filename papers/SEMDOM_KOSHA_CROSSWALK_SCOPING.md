@@ -85,7 +85,7 @@ made it an outlier there.
 - **Level B (synset-level pilot, the evidence layer):** a stratified gold sample of AK
   `eid` synsets assigned to semdom **leaf** domains. Candidate assignments generated
   automatically: AK synset → English gloss (via MW, which cites AK 14,473 times per
-  [ch05 of the book](https://github.com/gasyoun/Digital_Sanskrit_Lexicography-BOOK/blob/main/ch05_mw_block_economy.md),
+  [ch05 of the book](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch05_mw_block_economy.md),
   and/or the UoHyd knowledge net) → WordNet synset → the GWC-2023 semdom↔WordNet
   bridge → semdom code. Humans verify, never author from scratch.
 
