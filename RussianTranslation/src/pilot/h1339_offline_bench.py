@@ -62,7 +62,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 REPO = os.path.dirname(SRC)
 FIXTURE = os.path.join(HERE, 'fixtures', 'h1339_offline_bench')
-INPUT_DIR = os.path.join(HERE, 'input')
+# H1386 P3f: the bench-session SANDBOX input dir, set by install_inputs() -- NEVER the
+# live shared src/pilot/input/ (fixtures copied there survived the bench and a later
+# production regen silently kept FROZEN fixture bodies for the 12 A-initial keys).
+# Subprocesses see it via PWG_INPUT_DIR (window_common.INP honors the override).
+INPUT_DIR = None
 
 for p in (HERE, SRC):
     if p not in sys.path:
@@ -188,9 +192,18 @@ def fixture_hash():
 
 
 def install_inputs():
-    os.makedirs(INPUT_DIR, exist_ok=True)
+    """H1386 P3f: install the fixtures into a fresh bench-session sandbox dir (returned
+    and stored in INPUT_DIR); the caller tears it down in a finally so a bench run leaves
+    the checkout byte-identical."""
+    global INPUT_DIR
+    INPUT_DIR = tempfile.mkdtemp(prefix='h1339bench_input_')
     for name in os.listdir(os.path.join(FIXTURE, 'input')):
         shutil.copy2(os.path.join(FIXTURE, 'input', name), os.path.join(INPUT_DIR, name))
+    # The BENCH process itself must also resolve the sandbox: fake_card's lazy
+    # `import audit_coverage` binds audit_coverage.IN from this env at import time, and
+    # every child inherits it (one_run's explicit env then just makes it visible).
+    os.environ['PWG_INPUT_DIR'] = INPUT_DIR
+    return INPUT_DIR
 
 
 def build_seed_store(path, tm_seed_rows):
@@ -304,7 +317,7 @@ def run_cli(argv, env, cwd=REPO, check=True):
     return proc
 
 
-def one_run(tag, keep=False):
+def one_run(tag, keep=False, prepare_mode='batch'):
     """One full pipeline pass in a fresh sandbox. Returns (timings, outputs) dicts."""
     sandbox = tempfile.mkdtemp(prefix='h1339bench_%s_' % tag)
     coord_dir = os.path.join(sandbox, 'coordinator')
@@ -315,6 +328,10 @@ def one_run(tag, keep=False):
         os.makedirs(d)
     env = dict(os.environ,
                PWG_COORDINATOR_DIR=coord_dir, PWG_RU_STORE=store, PWG_RU_TM_DIR=tm_dir,
+               # H1386 P3f: every pipeline subprocess reads the SANDBOX input dir and
+               # appends events to the sandbox ledger -- never the live checkout's.
+               PWG_INPUT_DIR=INPUT_DIR,
+               PWG_EVENTS_PATH=os.path.join(sandbox, 'dashboard_events.jsonl'),
                PYTHONIOENCODING='utf-8')
 
     # --- setup (untimed): seed store incl. the TM-seed key's rows, then build the TM ---
@@ -358,10 +375,19 @@ def one_run(tag, keep=False):
             '    save = coordinator.save_state(state)\n'
             'print("injected", len(coordinator.load_state()["leases"]))\n')
     run_cli([inject], env)
-    for lid, _case, _keys in LEASES:
-        run_cli([os.path.join(HERE, 'coordinator.py'), 'prepare', lid,
-                 '--profile-slot', 'bench', '--config-dir', profile_dir,
-                 '--executor-lane', 'serial-whole-card'], env)
+    # H1386 OPT: default 'batch' -- ONE coordinator process prepares the whole batch,
+    # children in-process (was: 3 interpreter spawns per lease -- coordinator +
+    # perf_preflight + gen). 'per-lease' preserves the pre-H1386 shape for A/B evidence.
+    if prepare_mode == 'per-lease':
+        for lid, _case, _keys in LEASES:
+            run_cli([os.path.join(HERE, 'coordinator.py'), 'prepare', lid,
+                     '--profile-slot', 'bench', '--config-dir', profile_dir,
+                     '--executor-lane', 'serial-whole-card'], env)
+    else:
+        run_cli([os.path.join(HERE, 'coordinator.py'), 'prepare-batch']
+                + [lid for lid, _case, _keys in LEASES]
+                + ['--profile-slot', 'bench', '--config-dir', profile_dir,
+                   '--executor-lane', 'serial-whole-card'], env)
     timings['prepare'] = time.perf_counter() - t0
 
     # --- normalize: deterministic wf_output per lease + canonical reorder -------------
@@ -380,7 +406,13 @@ def one_run(tag, keep=False):
         for key, entry in (manifest.get('tm_resolved') or {}).items():
             if key not in resolved:
                 results.append({'key': key, 'card': entry.get('card')})
-        payload = {'meta': manifest['meta'], 'summary': {'cards': len(results)},
+        # H1386 P3h: mirror production stamping (headless_worker copies execution +
+        # key_provenance from the manifest into the wf meta) -- the stale check now pins
+        # both, so a bare manifest['meta'] would audit stale.
+        payload = {'meta': dict(manifest['meta'],
+                                execution=manifest.get('execution'),
+                                provenance_classes=manifest.get('key_provenance')),
+                   'summary': {'cards': len(results)},
                    'results': sorted(results, key=lambda r: manifest['meta']['selected_keys'].index(r['key'])
                                      if r['key'] in manifest['meta']['selected_keys'] else 999)}
         wf = os.path.join(sandbox, 'wf_output.%s.json' % lid)
@@ -459,22 +491,34 @@ def main():
     ap.add_argument('--runs', type=int, default=10)
     ap.add_argument('--json', help='write the machine-readable report here')
     ap.add_argument('--keep-last', action='store_true', help='keep the last sandbox for inspection')
+    ap.add_argument('--prepare-mode', choices=('batch', 'per-lease'), default='batch',
+                    help="H1386 OPT A/B: 'batch' = one prepare-batch call (production "
+                         "default); 'per-lease' = the pre-H1386 3-spawns-per-lease shape")
     a = ap.parse_args()
 
     install_inputs()
     fx_hash = fixture_hash()
-    print('fixture: %d files, content hash %s' % (
-        len(os.listdir(os.path.join(FIXTURE, 'input'))), fx_hash[:16]))
+    print('fixture: %d files, content hash %s (sandbox input dir %s)' % (
+        len(os.listdir(os.path.join(FIXTURE, 'input'))), fx_hash[:16], INPUT_DIR))
+    try:
+        _bench(a, fx_hash)
+    finally:
+        # H1386 P3f: a bench run leaves the checkout byte-identical -- the sandbox input
+        # dir (the only bench artifact outside per-run sandboxes) is always removed.
+        shutil.rmtree(INPUT_DIR, ignore_errors=True)
 
+
+def _bench(a, fx_hash):
     for i in range(a.warmups):
-        t, o = one_run('warm%d' % i)
+        t, o = one_run('warm%d' % i, prepare_mode=a.prepare_mode)
         print('warmup %d/%d: total %.2fs (promote rc=%s)' % (
             i + 1, a.warmups, t['total'], o['promote_rc']))
 
     measured, signatures = [], set()
     last_outputs = None
     for i in range(a.runs):
-        t, o = one_run('run%d' % i, keep=(a.keep_last and i == a.runs - 1))
+        t, o = one_run('run%d' % i, keep=(a.keep_last and i == a.runs - 1),
+                       prepare_mode=a.prepare_mode)
         measured.append(t)
         signatures.add(o['signature'])
         last_outputs = o
@@ -505,7 +549,8 @@ def main():
     if a.json:
         report = {
             'schema': 'pwg.h1339_offline_bench.v1',
-            'protocol': {'warmups': a.warmups, 'runs': a.runs},
+            'protocol': {'warmups': a.warmups, 'runs': a.runs,
+                         'prepare_mode': a.prepare_mode},
             'python': sys.version, 'platform': platform.platform(),
             'fixture_sha256': fx_hash, 'seed_rows': SEED_ROWS,
             'stages': stats, 'runs': measured,

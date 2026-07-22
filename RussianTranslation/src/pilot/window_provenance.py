@@ -163,6 +163,18 @@ def stale_check(root, workflow_meta, workflow_keys, execution_manifest=None):
             check['errors'].append('workflow rootmap hash does not match execution manifest')
         if workflow_meta.get('input_hashes') != manifest_meta.get('input_hashes'):
             check['errors'].append('workflow input hashes do not match execution manifest')
+        # H1386 P3h: B23 admitted v2 manifests but still verified only v1-era meta. A v2
+        # manifest also binds top-level execution + key_provenance, and PROMOTION trusts
+        # the wf_output-side copies (provenance-class gating + the B20 model-identity
+        # check) -- headless_worker/execution_contract stamp them verbatim from the
+        # manifest, so any drift means a stale/foreign/tampered wf_output.
+        if (execution_manifest or {}).get('schema') == 'pwg.headless_execution_manifest.v2':
+            if workflow_meta.get('execution') != execution_manifest.get('execution'):
+                check['errors'].append(
+                    'workflow execution block does not match execution manifest')
+            if workflow_meta.get('provenance_classes') != execution_manifest.get('key_provenance'):
+                check['errors'].append(
+                    'workflow provenance_classes do not match execution manifest key_provenance')
 
     if manifest_meta is not None:
         _key_coverage(check, workflow_keys, manifest_meta.get('selected_keys') or [],

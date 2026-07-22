@@ -11,7 +11,10 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'output')
-EVENT_LOG = os.path.join(OUT, 'dashboard_events.jsonl')
+# H1386 P3f: PWG_EVENTS_PATH lets a hermetic harness (h1339_offline_bench) redirect the
+# events ledger into its sandbox -- a bench audit must never append to the LIVE
+# dashboard_events.jsonl. Unset (production) resolves exactly as before.
+EVENT_LOG = os.environ.get('PWG_EVENTS_PATH') or os.path.join(OUT, 'dashboard_events.jsonl')
 
 
 def utc_now():

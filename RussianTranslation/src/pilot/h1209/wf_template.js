@@ -7,6 +7,14 @@ export const meta = {
 // Payload (cards: prompt/skeleton_tokens/expected_senses/complexity, plus worker_schema)
 // is injected by inject_payload.py — Workflow scripts have no filesystem access.
 const PAYLOAD = /*__PAYLOAD__*/ null /*__END__*/
+// H1386 D1: v3 payloads hoist the shared preamble/translation/nws boilerplate into ONE
+// prompt_common (the per-card prompt is prompt_common + card_block, assembled below) --
+// a v2 payload (per-card `prompt`, boilerplate duplicated per card) is refused loudly.
+if (!PAYLOAD || PAYLOAD.schema !== 'h1209.controller_worker_slice.v3') {
+  throw new Error('payload schema mismatch: expected h1209.controller_worker_slice.v3, got '
+    + (PAYLOAD && PAYLOAD.schema))
+}
+const PROMPT_COMMON = PAYLOAD.prompt_common
 const CARDS = PAYLOAD.cards
 const WORKER_SCHEMA = PAYLOAD.worker_schema
 
@@ -99,7 +107,7 @@ const AGENT_DEADLINE_MS = 300000
 const withDeadline = (p, ms) => Promise.race([p, new Promise(res => setTimeout(() => res(null), ms))])
 
 async function runWorker(c, feedback) {
-  const prompt = c.prompt + (feedback
+  const prompt = PROMPT_COMMON + c.card_block + (feedback
     ? '\n\n=== CONTROLLER FEEDBACK (fix ONLY these, keep everything else verbatim) ===\n' + feedback : '')
   return await withDeadline(
     agent(prompt, { label: 'worker:' + c.key1, phase: 'Translate', model: 'sonnet', schema: WORKER_SCHEMA }),
