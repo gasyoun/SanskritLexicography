@@ -25,8 +25,12 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 REPO = os.path.dirname(SRC)
-# H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
-INPUT_DIR = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'input')
+
+def input_dir():
+    """H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
+    Resolved PER CALL (never a module constant): callers that rebind HERE (the
+    selftest seam) and env changes must both take effect."""
+    return os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'input')
 OUT = os.path.join(HERE, 'output')
 DEFAULT_COORD_DIR = os.path.join(OUT, 'coordinator')
 ARTIFACT_DIRNAME = 'artifacts'
@@ -759,8 +763,8 @@ def nominal_candidates(state, batch_size=12, cards_path=None):
             stem = safe_name(key) if key else ''
             if (key and key not in done and key not in leased
                     and not row.get('quarantined_records')
-                    and os.path.exists(os.path.join(INPUT_DIR, stem + '.raw.txt'))
-                    and os.path.exists(os.path.join(INPUT_DIR, stem + '.portrait.json'))):
+                    and os.path.exists(os.path.join(input_dir(), stem + '.raw.txt'))
+                    and os.path.exists(os.path.join(input_dir(), stem + '.portrait.json'))):
                 keys.append(key)
             if len(keys) >= batch_size:
                 break
