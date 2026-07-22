@@ -10,6 +10,24 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — plan: finish the Publication-Grade Sa→Ru TM (H215) as three parallel tracks
+
+- `/ask` layered plan for **finishing** [H215](https://github.com/gasyoun/Uprava/blob/main/handoffs/H215-Opus_RussianTranslation_pwg_ru_publication_grade_tm_tmx_and_oral_06.07.26.md)'s
+  Publication-Grade Sa→Ru Translation Memory (it is ~70 % built) — new docs under `docs/`:
+  [PLAN](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_pubgrade_tm_oral_2026H2.md)
+  (+ `.meta.md`),
+  [ROADMAP](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/ROADMAP_RussianTranslation_pubgrade_tm_2026H2.md),
+  [ARCHITECTURE](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/ARCHITECTURE_RussianTranslation_pubgrade_tm_oral.md),
+  [IMPLEMENTATION](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/IMPLEMENTATION_RussianTranslation_pubgrade_tm_oral.md),
+  [VERIFICATION](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/VERIFICATION_RussianTranslation_pubgrade_tm_oral.md).
+- Three parallel wave-1 tracks from a 5-round `/ask` interview: **(A)** technical hardening (COMET-QE
+  grade replacing the proxy, awesome-align calibrated gate, Bicleaner mined-tier filter, LaBSE/Vecalign
+  sentence-aligner for prose + oral, a TM-as-retrieval measurement); **(B)** oral-corpus formalization
+  from user-provided transcripts (schema-extend SamudraManthanam + a new oral converter, three
+  granularities); **(C)** publication/release prep (populate the D13 terminology dataset, fold the TM into
+  A42, a Bender/Friedman data statement, rights-partitioned release bundles). Nothing auto-publishes —
+  the final publish stays a human `/publish-safety-check` gate.
+
 ## [1.55.0] - 2026-07-22
 
 ### Fixed — offline control-plane audit and speed hardening (Codex)
