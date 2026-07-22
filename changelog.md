@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.56.0] — 22-07-2026
+
 ### Added
 
 - Alexey Vigasin corpus (`literature/md/Alexey_Vigasin/`) — full-text `.mdx` conversions of
