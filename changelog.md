@@ -55,6 +55,36 @@ not an error.
   sites) and its events ledger (`PWG_EVENTS_PATH`), with a `finally:` teardown — a bench
   run leaves the checkout byte-identical (previously it froze 12 fixture bodies into the
   live `src/pilot/input/` and appended to the live `dashboard_events.jsonl`).
+## [1.53.0] — 22-07-2026
+
+### Added
+
+- [`LINK_CHECK_BASELINE_2026H2.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/LINK_CHECK_BASELINE_2026H2.md)
+  ([H741](https://github.com/gasyoun/Uprava/blob/main/handoffs/H741-Fable_SanskritLexicography_repo-wide-dead-link-sweep_11.07.26.md),
+  Fable 5 `claude-fable-5`): the stated baseline the weekly link-check job is judged against —
+  full-repo measurement 16,861 unique dead links (15,919 in `literature/md/` ebook conversions,
+  942 in real project surface) drained to **73 accepted survivors in 21 files** (goal <100);
+  survivor classes, ignore-list rationale, and path-exclusion rulings documented per row.
+
+### Changed
+
+- Weekly [link-check workflow](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/link-check.yml)
+  rebuilt (H741): explicit find-based `markdown-link-check@3.14.2` invocation excluding
+  `literature/md/**` (third-party book texts, H734 territory) and `docs_site/wiki/**`
+  (build_site `--sync` copies); [`mlc_config.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/mlc_config.json)
+  gains ignore patterns for the 11 private `gasyoun/*` repos (unauthenticated-404-by-design),
+  `mailto:`, DOI resolvers, bot-blocking publishers, and flaky project-adjacent academic hosts;
+  `aliveStatusCodes` gains 202.
+
+### Fixed
+
+- 62 CI-visible dead links across 31 files
+  ([PR #666](https://github.com/gasyoun/SanskritLexicography/pull/666), H741 bucket A):
+  archive-move relative links → full blob URLs; gitignored-by-design targets delinked;
+  PR #540-deleted gloss-reviews → pinned pre-deletion SHAs; wrong-owner GitHub URLs
+  (csl-atlas / csl-observatory / csl-standards / sanskrit-util / MWS → `sanskrit-lexicon`;
+  SanskritSpellCheck / kosha / WhitneyRoots → `gasyoun`); Wikipedia/TMX/archive.org 404s
+  repointed to verified targets; two broken in-file anchors.
 
 ## [1.52.0] — 21-07-2026
 
