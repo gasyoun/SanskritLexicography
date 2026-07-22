@@ -14,6 +14,48 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+
+- pwg_ru post-H1339 review landing set
+  ([H1386](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1386-Fable_RussianTranslation_pwg-ru-post-h1339-resume-fixes-prepare-speed_20.07.26.md),
+  Fable 5 `claude-fable-5`), every fix test-first with a pinned failing regression. Confirmed
+  P1s: C1 — bounded `--resume` passed the staged-plan-scope **dict** to `cmd_recover`, so
+  crash recovery matched ZERO jobs and a crashed window checkpointed COMPLETED with zero
+  output (now the lease-id set; `_scope_sql` rejects dict/str; a None-output window fails
+  loudly); C2 — a requeue item whose origin lease had already recorded/promoted wedged every
+  `--resume` in `materialize_requeue` (post-audit states with a completed `::rq` job now
+  resume to the existing attempt job); C3 — the B12 fragment unblock re-served gate-flagged
+  senses: `build_frags` now treats a currently-denied fsha as not-cached, the harvest glob is
+  recursive (`artifacts/**`) so requeue outputs two dirs deep are harvested at all, and
+  `best_reusable` breaks same-second ties toward the newer row. Also: D2 identity-checked
+  atomic-rename promote-lock reclaim (TOCTOU), D3 per-lease `store_delta` from the batch
+  report (was bundle-wide stamped N times), D4 `PWG_COORDINATOR_DIR` injected into all three
+  bounded coordinator subprocesses (the A7 class), D5 `--batch-manifest` refuses
+  `--dry-run`/`--force`/`--init-store` instead of silently mutating the store, and the P3
+  sweep (P3b canonical `mw_en_tm` resolution, P3c `reset-failed` origin-lease matching +
+  full failed-job ids in fail-closed messages, P3d/P3e `run_py_inproc` KeyboardInterrupt +
+  string-exit semantics, P3g batch null-subcard gate, P3h stale_check v2
+  execution/provenance cross-check, P3j `probe_log` falsy-zero clean recovery).
+
+### Added
+
+- pwg_ru medium50 start-today enabler (H1386 D1): h1209 payload v3 hoists the shared ~12 KB
+  preamble/translation boilerplate into ONE `prompt_common` (was duplicated into every
+  card), `inject_payload.py` hard-refuses an emitted script over `WORKFLOW_SCRIPT_CAP`
+  (512 KB) with the split remedy, `prep_slice.py --keys`/`--chunk N` auto-splits a big
+  manifest into cap-sized sub-payloads, and `canonical_audit.py` merges several chunk
+  slice_results into one audit.
+- pwg_ru prepare-stage batching (H1386 OPT): `coordinator prepare-batch` prepares N claimed
+  leases in ONE coordinator process with the perf_preflight/gen_opt_harness2 children run
+  in-process (the H1339 runpy-gates pattern applied to the prepare stage H1339's closeout
+  named as the remaining dominant spawn cost), A/B-benched against the per-lease shape with
+  semantic-store-equality proven by the bench's deterministic signature.
+- pwg_ru hermetic offline bench (H1386 P3f): `h1339_offline_bench.py` now sandboxes its
+  fixture inputs (`PWG_INPUT_DIR`, honored by all 14 previously hand-copied input-dir
+  sites) and its events ledger (`PWG_EVENTS_PATH`), with a `finally:` teardown — a bench
+  run leaves the checkout byte-identical (previously it froze 12 fixture bodies into the
+  live `src/pilot/input/` and appended to the live `dashboard_events.jsonl`).
+
 ## [1.52.0] — 21-07-2026
 
 ### Added
