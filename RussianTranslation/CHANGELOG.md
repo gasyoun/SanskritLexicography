@@ -10,6 +10,23 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — PWG per-sense `<ls>`-loci export for kosha sense-reconciliation (H1456)
+
+- `microstructure.py export_sense_loci` — new command, reuses the existing
+  `header()`/`split_senses()`/`clean_de()` sense-tree parser (no rewrite). Emits
+  `pwg_sense_loci.tsv` (`slp1 hom sense_id gloss_de ls_loci`, one row per leaf sense;
+  `ls_loci` = that sense's `<ls>` citations `;`-joined verbatim, unresolved) — the sole
+  external input to kosha's
+  [sense-reconciliation plan](https://github.com/gasyoun/kosha/blob/main/docs/PLAN_KOSHA_SENSE_RECONCILIATION_2026H2.md).
+  Full run: 123,366 records → 189,301 rows, 106,082 headwords, 89.3% non-empty `ls_loci`,
+  byte-identical on re-run. Fixed in scope: PWG Nachträge back-references glue two sense
+  markers together with no separating space ("1〉b〉…", 2,273 occurrences), which the
+  shared `MARK` regex's whitespace lookbehind couldn't see — misattributing the addendum's
+  locus to the parent sense; fixed via a local-only preprocess inside the new export path,
+  the shared parser used elsewhere in this file is untouched. `pwg_sense_loci.tsv` is
+  gitignored (regenerable); `pwg_sense_loci.sample.tsv` (500 headwords, 2,742 rows) is
+  committed.
+
 ### Added — plan: finish the Publication-Grade Sa→Ru TM (H215) as three parallel tracks
 
 - `/ask` layered plan for **finishing** [H215](https://github.com/gasyoun/Uprava/blob/main/handoffs/H215-Opus_RussianTranslation_pwg_ru_publication_grade_tm_tmx_and_oral_06.07.26.md)'s

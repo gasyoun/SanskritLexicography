@@ -12,6 +12,9 @@ Deterministic (no LLM). Turns a flat PWG record into:
 
   python microstructure.py card <key1> [h]
   python microstructure.py sample [N]      first N a-section homonym cards
+  python microstructure.py export_sense_loci [out.tsv] [--limit N]
+      H1456 — per-leaf-sense <ls>-loci export consumed by kosha's sense-
+      reconciliation join (docs/PLAN_KOSHA_SENSE_RECONCILIATION_2026H2.md).
 """
 import json, os, re, sys, collections
 sys.stdout.reconfigure(encoding='utf-8')
@@ -251,6 +254,97 @@ def pretty(p):
         print('  (no corpus attestation)')
 
 
+# ---- H1456: PWG per-sense <ls>-loci export (kosha sense-reconciliation input) ----
+# Contract (ARCHITECTURE_KOSHA_SENSE_RECONCILIATION.md, this export's sole external
+# consumer): one row `slp1 hom sense_id gloss_de ls_loci` per leaf sense, `ls_loci`
+# = that sense's <ls> citations `;`-joined VERBATIM (raw abbrev + locus). Resolving
+# the abbreviation to a bibliographic source name is the *downstream* (kosha step 2)
+# job, reusing this same pwg_sources.py — not done here.
+LS_ATTR = re.compile(r'<ls\b([^>]*)>(.*?)</ls>', re.S)
+
+
+def _cite_clean(s):
+    s = re.sub(r'<lb[^>]*>', ' ', s)
+    s = re.sub(r'<[^>]+>', ' ', s)
+    return re.sub(r'\s+', ' ', s).strip().rstrip('.').strip()
+
+
+def ls_citations(text):
+    """Verbatim <ls> citation strings for one sense segment. A continuation
+    citation like <ls n="PAÑCAT.">252,10</ls> carries its source in the `n=`
+    attribute, not the inner text (PWG convention for repeated-source runs) —
+    reattach it so the citation stays self-contained rather than a bare,
+    sourceless locus."""
+    out = []
+    for attrs, inner in LS_ATTR.findall(text):
+        nm = NATTR_AB.search(attrs)
+        src = _cite_clean(nm.group(1)) if nm else ''
+        loc = _cite_clean(inner)
+        cite = ('%s %s' % (src, loc)).strip() if src else loc
+        if cite:
+            out.append(cite)
+    return out
+
+
+# A PWG Nachträge (supplement) back-reference glues two markers directly
+# together with no separating space — "1〉b〉 <ls>…</ls>." pointing at an
+# EXISTING sense 1b of the main entry (2,273 occurrences in pwg.txt). MARK's
+# lookbehind requires whitespace/—/start before a marker, so the second
+# marker (immediately after the first's closing glyph) is invisible to
+# split_senses and the whole addendum silently falls into sense '1' instead
+# of '1b' — misattributing its <ls> locus to the wrong sense. Insert the
+# missing space so split_senses sees both markers; scoped to this export's
+# own body copy only, never touching the shared split_senses/MARK used by
+# sense_node/portrait elsewhere in this file.
+ADJACENT_MARKERS = re.compile(r'([)〉])(?=(?:\d{1,2}|[a-z])[)〉])')
+
+
+def leaf_senses(buf):
+    """Yield (slp1, hom, sense_id, gloss_de, ls_loci) for one PWG record's
+    numbered/lettered leaf senses. `sense_id` = the microstructure sense path
+    (n + sub, e.g. '1a'/'1b'/'3a'). Note: PWG Nachträge (supplement) entries
+    reference an existing sense by number in their OWN <L> record (e.g. a
+    bare "1〉b〉 <ls>…</ls>" addendum) — such a record contributes an
+    ADDITIONAL row under the same (slp1, hom, sense_id) key, not a merge; a
+    consumer wanting the full loci set for a sense must group by that key."""
+    k1, k2, h = header(buf)
+    if not k1:
+        return
+    slp1 = cg.form_key(k1)
+    body = ADJACENT_MARKERS.sub(r'\1 ', '\n'.join(buf[1:]))
+    for seg in split_senses(body):
+        if seg['n'] == '0':
+            continue  # pre-sense head text — not a numbered/lettered leaf sense
+        sense_id = seg['n'] + (seg['sub'] or '')
+        gloss_de = clean_de(seg['text'])[:200]
+        ls_loci = ';'.join(ls_citations(seg['text']))
+        yield slp1, h, sense_id, gloss_de, ls_loci
+
+
+def cmd_export_sense_loci(args):
+    args = list(args)
+    limit = None
+    if '--limit' in args:
+        i = args.index('--limit')
+        limit = int(args[i + 1])
+        del args[i:i + 2]
+    out_path = args[0] if args else os.path.join(HERE, 'pwg_sense_loci.tsv')
+    n_records = n_rows = 0
+    headwords = set()
+    with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
+        f.write('slp1\thom\tsense_id\tgloss_de\tls_loci\n')
+        for buf in pwg_mask.records(limit):
+            n_records += 1
+            for slp1, hom, sense_id, gloss_de, ls_loci in leaf_senses(buf):
+                f.write('%s\t%s\t%s\t%s\t%s\n' % (slp1, hom, sense_id, gloss_de, ls_loci))
+                n_rows += 1
+                headwords.add(slp1)
+    print('records scanned: %d' % n_records, file=sys.stderr)
+    print('leaf-sense rows: %d' % n_rows, file=sys.stderr)
+    print('distinct headwords (slp1): %d' % len(headwords), file=sys.stderr)
+    print('written: %s' % out_path, file=sys.stderr)
+
+
 def cmd_card(args):
     target = args[0]
     h = args[1] if len(args) > 1 else None
@@ -276,7 +370,9 @@ def cmd_sample(args):
 def main():
     if len(sys.argv) < 2:
         print(__doc__); return
-    {'card': cmd_card, 'sample': cmd_sample}.get(sys.argv[1], lambda *_: print(__doc__))(sys.argv[2:])
+    {'card': cmd_card, 'sample': cmd_sample,
+     'export_sense_loci': cmd_export_sense_loci}.get(
+        sys.argv[1], lambda *_: print(__doc__))(sys.argv[2:])
 
 
 if __name__ == '__main__':

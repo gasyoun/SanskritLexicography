@@ -87,6 +87,13 @@ src/pilot/output/prompt_rule_audit.md
 # Local API retry ledger
 src/corpus_lexicon.failures.jsonl
 
+# H1456 PWG per-sense <ls>-loci export (microstructure.py export_sense_loci) —
+# full run over all ~123k PWG records, regenerable, not a deliverable (same
+# policy as the other derived tsvs above). The committed sample is the
+# deliverable's reviewable/testable slice — never gitignore that one.
+src/pwg_sense_loci.tsv
+!src/pwg_sense_loci.sample.tsv
+
 # H215 corpus TM TMX export (build_tmx.py) — rights-encumbered (mixes in-copyright
 # named modern RU translations); no public release before per-translator clearance
 # (H215 Slice 5 / /publish-safety-check). Generator + README are committed.
