@@ -142,7 +142,7 @@ column links a real sample headword (or *browse*) to that dictionary's live Colo
 
 | Code | Dictionary | Language | Author | Year | Pages | Repo | Example |
 |---|---|---|---|---:|---:|---|---|
-| MW | Monier-Williams Sanskrit-English Dictionary | Skt→Eng | Monier-Williams | 1899 | 1,333 | [MWS](https://github.com/gasyoun/MWS) | [`a` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/index.php) |
+| MW | Monier-Williams Sanskrit-English Dictionary | Skt→Eng | Monier-Williams | 1899 | 1,333 | [MWS](https://github.com/sanskrit-lexicon/MWS) | [`a` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/index.php) |
 | PWG | Grosses Petersburger Wörterbuch | Skt→Ger | Böhtlingk & Roth | 1855 | 4,737 | [PWG](https://github.com/sanskrit-lexicon/PWG) | [`a` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/web/index.php) |
 | PW | Sanskrit-Wörterbuch in kürzerer Fassung | Skt→Ger | Otto Böhtlingk | 1879 | 2,141 | [PWK](https://github.com/sanskrit-lexicon/PWK) | [`a` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/PWScan/2020/web/index.php) |
 | GRA | Wörterbuch zum Rig-Veda | Skt→Ger | Hermann Grassmann | 1873 | 1,775 | [GRA](https://github.com/sanskrit-lexicon/GRA) | [`a` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/GRAScan/2020/web/index.php) |

@@ -1,7 +1,21 @@
 {
   "ignorePatterns": [
     { "pattern": "^https://gasyoun\\.github\\.io/" },
-    { "pattern": "^https://github\\.com/gasyoun/SanskritLexicography/(blob|tree)/" }
+    { "pattern": "^https://github\\.com/gasyoun/SanskritLexicography/(blob|tree)/" },
+    { "pattern": "^https://github\\.com/gasyoun/(Uprava|claude-config|codex-config|github-spine|claude-memory-store|telegram-sanskrit-corpus|spoken-sanskrit-corpus|indology-archive-research-map|prefaces_ieg|ChatExport|RuWritingStyles-corpus)([/?#]|$)" },
+    { "pattern": "^mailto:" },
+    { "pattern": "^https?://(dx\\.)?doi\\.org/" },
+    { "pattern": "^https?://(www\\.)?(jstor\\.org|sciencedirect\\.com|academia\\.edu|brill\\.com|oed\\.com|webonary\\.org|rapidwords\\.net|loebclassics\\.com|semanticscholar\\.org|degruyter\\.com)([/?#]|$)" },
+    { "pattern": "^https?://(academic|global)\\.oup\\.com/" },
+    { "pattern": "^https?://(dl|cacm)\\.acm\\.org/" },
+    { "pattern": "^https?://id\\.loc\\.gov/" },
+    { "pattern": "^https?://claude\\.ai([/?#]|$)" },
+    { "pattern": "^https://github\\.com/(signup|login)([/?#]|$)" },
+    { "pattern": "^https?://sanskrit\\.uohyd\\.ac\\.in/" },
+    { "pattern": "^https?://(www\\.)?(sanskrit-lexicon|vedaweb)\\.uni-koeln\\.de([/?#]|$)" },
+    { "pattern": "^https?://(www\\.)?sanskrit-linguistics\\.org/" },
+    { "pattern": "^https?://(www\\.)?hss\\.iitb\\.ac\\.in/" },
+    { "pattern": "^https?://mahabharata\\.manipal\\.edu([/?#]|$)" }
   ],
-  "aliveStatusCodes": [200, 206, 429]
+  "aliveStatusCodes": [200, 202, 206, 429]
 }

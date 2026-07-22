@@ -2,7 +2,21 @@ name: Link check
 
 # Markdown link check, moved out of ci.yml (where it consumed ~47 min on every
 # push/PR with continue-on-error, i.e. zero per-push enforcement). Runs weekly
-# plus on manual dispatch; stays advisory (continue-on-error).
+# plus on manual dispatch; stays advisory (continue-on-error), but since H741
+# its output is judged against a stated baseline (LINK_CHECK_BASELINE_2026H2.md)
+# instead of being re-triaged from scratch.
+#
+# H741 changes (see LINK_CHECK_BASELINE_2026H2.md for the full rationale):
+# - explicit find-based invocation instead of the marketplace action, so two
+#   path classes can be EXCLUDED from the sweep:
+#     literature/md/**   third-party converted book texts (H734 territory) —
+#                        15,919 of the 16,861 dead links measured 21-07-2026
+#                        were ebook-internal anchors + decayed bibliographies
+#                        the project does not maintain
+#     docs_site/wiki/**  verbatim copies synced by docs_site/build_site.py
+#                        --sync; their relative links are rewritten at build
+#                        time, so checking the copies is noise
+# - mlc pinned to the version the H741 baseline was measured with.
 
 on:
   schedule:
@@ -22,9 +36,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+      - uses: actions/setup-node@v4
         with:
-          use-quiet-mode: "yes"
-          use-verbose-mode: "yes"
-          config-file: ".github/mlc_config.json"
+          node-version: 20
+      - run: npm install -g markdown-link-check@3.14.2
+      - name: Check links (excludes literature/ and docs_site/wiki/ — see LINK_CHECK_BASELINE_2026H2.md)
         continue-on-error: true
+        run: |
+          find . -name '*.md' \
+            -not -path './.git/*' \
+            -not -path './literature/*' \
+            -not -path './docs_site/wiki/*' \
+            -print0 \
+            | xargs -0 -n1 markdown-link-check -c .github/mlc_config.json -q -v
