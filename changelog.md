@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.58.0] — 22-07-2026
+
+### Added
+- **pwg_ru live-route economy: stripped-`CLAUDE_CONFIG_DIR` cost cut + w1 3-key sample (H1517, Opus 4.8 `claude-opus-4-8`).** Measured that every `claude -p` call loads ~76.7 K cache-creation tokens of profile context (9 skills + 172 commands + plugins + project CLAUDE.md stack) it never needs for translation. Stripping to an auth-only config dir + `--strict-mcp-config` + neutral CWD cut the cold-call cost **$0.4648 → $0.1597 (−65.6%)** on c4 and **fixed the gate-0 `{"ok":false}`** (now PASSES). A real 3-key sample (`ABAsa`/`AKu`/`ARava`, scratch store, no promotion) translated 3/3 at **~$0.137/card** accounted (≈$0.25/card incl. a malformed-retry), **~24 s/card**. Evidence + caveats: [`pwg_ru/h1517/H1517_STRIPPED_CONFIG_ECONOMY_SAMPLE_2026-07-22.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1517/H1517_STRIPPED_CONFIG_ECONOMY_SAMPLE_2026-07-22.md).
+
 ## [1.57.0] — 22-07-2026
 
 ### Fixed
