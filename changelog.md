@@ -14,6 +14,15 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+
+- Alexey Vigasin corpus (`literature/md/Alexey_Vigasin/`) — full-text `.mdx` conversions of
+  all 26 files of *Изучение Индии в России (очерки и материалы)* plus *Работы разных лет*
+  fragments ([H1443](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1443-Sonnet_IndologyScholars_vigasin-corpus-extract-route_22.07.26.md),
+  Sonnet 5 `claude-sonnet-5`), cross-routed into
+  [IndologyScholars](https://github.com/gasyoun/IndologyScholars) `sources/vigasin/`. Published
+  full text with the repo owner's rights risk explicitly accepted 22-07-2026.
+
 ## [1.55.0] — 22-07-2026
 
 ### Fixed
