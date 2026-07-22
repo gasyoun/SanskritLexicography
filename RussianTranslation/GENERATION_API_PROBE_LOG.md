@@ -1,6 +1,6 @@
 # Generation-API probe log — pwg_ru Workflow launches
 
-_Created: 10-07-2026 · Last updated: 18-07-2026_
+_Created: 10-07-2026 · Last updated: 22-07-2026_
 
 Append-only, machine-written. Source of truth is
 [`src/pilot/generation_api_probe_log.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/generation_api_probe_log.jsonl);
@@ -44,6 +44,8 @@ payload (`python src/pilot/probe_log.py prompt`). A trivial one-word probe said 
 | 2026-07-13T21:43:54Z | launch | GO | — | 0 | — | no_pwg_w10 | H255 | bounded --max-wide=3 --stagger-ms=2000 from launch, no isolated pre-probe (mitigation applied regardless, per w09 precedent); 11/18 non-null (9 real + 2 degenerate), 7 residual (6 fidelity-reject known-class incl. 2 newly-confirmed members arvant/jawAyus, 1 kill-timeout) |
 | 2026-07-16T07:59:44Z | warmup | NO-GO | 104.9s | 0 | 6828B | — | H963 | H963 Gate-0 single-profile c4 D-K health attempt (one fresh dated reading, no reroll): warm-up 53290ms / measured 104870ms, BOTH classification=success (no auth/conn/malformed failure), output 1488B/1487B, actual prompt 6828B, exact model claude-sonnet-5, ceiling 30000ms. Pure-latency NO-GO, ~2x WORSE than the 15-07 baseline (29743/52815). Canary NOT launched; store unchanged 11605. Probe tooling >= v1.9.17 natural schema-carrying prompt. |
 | 2026-07-18T08:37:19Z | warmup | GO | 15.7s | 0 | 6491B | medium50_canary | H1209 | H1209 step 0a controller-worker LANE probe (Workflow agent(), NOT c4 headless). Single generation call 15.74s (08:32:01.559->17.302), StructuredOutput emit 14.37s, full 2-call schema round-trip 30.15s; 0 conn-errors, schema valid, 30/30 lines, no kill-timeout. Sharp contrast to same-day c4 headless NO-GO (H1110 18-07 98625ms / H963 16-07 104870ms): the direct Workflow-agent() API path is healthy while the profile/headless transport is degraded. subagent_tokens=59291. |
+| 2026-07-22T07:12:06Z | warmup | GO | 16.6s | 0 | 6491B | h1447_medium50_gate | H1447 | H1447 Phase 1 health: ONE fresh D-K attempt via h963_c4_gate0_probe.py, profile c4 (D:/ClaudeTools/profiles/claude4/.claude, fingerprint e96ee46471ec057e), route claude-cli-headless. warm-up 17972 ms success + measured 16621 ms success, both strictly < 30000 ms, 0 conn errors -> GATE-0 PASS. Canary verdict + LIVE_GO derivation in pwg_ru/h1447/H1447_C4_LIVE_GATE_2026-07-22.md (canary is a translation-class call; this log's 30 s probe ceiling does not apply to it). Executor session Fable 5 (claude-fable-5); generation model claude-sonnet-5. |
+| 2026-07-22T07:20:08Z | warmup | NO-GO | 19.5s | 0 | 6491B | h1447-m50-w1 | H1447 | H1447 Phase 2 bounded starter: bounded_staged_run --execute fleet probe (probe_fleet -> live_probe), c4 warm-up returned a VALID result envelope (subtype success, 1481 B, 19477 ms) whose structured schema result was not {ok:true} -> classification=content, schema_valid=false -> immediate STOP per the warm-up policy. STOP-on-any-NO-GO: zero dispatch, zero production calls, zero usage/cost. All 5 medium50 leases (h1447-m50-w1..w5, 48 keys) remain prepared and unconsumed; resume only after a NEW representative health PASS. Same code path passed twice at 07:03Z (gate-0) -- a content flake 14 min later, not a tooling defect (process/malformed would classify otherwise). Executor Fable 5 (claude-fable-5). |
 
 ## Measured launch outcomes
 

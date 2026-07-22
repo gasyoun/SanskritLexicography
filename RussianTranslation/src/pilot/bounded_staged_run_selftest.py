@@ -683,6 +683,23 @@ def test_l_resume_recovers_abandoned_jobs(td):
           'TypeError; a None-output window fails loudly: PASS')
 
 
+def test_n_cli_defines_execute_path_args(td):
+    """H1447: the CLI --execute path dereferences args.claude_bin (probe_fleet +
+    RunContext), but the parser never defined --claude-bin — every injected-runner
+    selftest built RunContext directly, so the live CLI path crashed with
+    AttributeError BEFORE any call. Pin every attr the execute path reads off the
+    parsed namespace, so a parser/consumer drift is a red test, not a live crash."""
+    ap = bsr.build_parser()
+    args = ap.parse_args(['--plan', 'p.json', '--coord-dir', 'cd'])
+    for attr in ('claude_bin', 'db', 'coordinator', 'cwd', 'events', 'run_id',
+                 'timeout', 'gen_model_version', 'only_profile', 'max_accounts',
+                 'drop_unhealthy', 'checkpoint', 'stop_before_promote', 'resume'):
+        assert hasattr(args, attr), 'execute path reads args.%s but the CLI never defines it' % attr
+    assert args.claude_bin == 'claude', args.claude_bin
+    print('  (n) H1447: CLI defines every attr the --execute path dereferences '
+          '(incl. --claude-bin): PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_a_plan_scope(td)
@@ -698,6 +715,7 @@ def main():
         test_k_requeue_materialisation(td)
         test_l_resume_recovers_abandoned_jobs(td)
         test_m_requeue_resume_after_crash(td)
+        test_n_cli_defines_execute_path_args(td)
     print('bounded_staged_run_selftest: PASS')
 
 
