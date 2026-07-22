@@ -1,0 +1,220 @@
+{
+  "schema": "pwg.no_pwg_scale_plan.v1",
+  "plan_kind": "h1447_medium50_serial_c4",
+  "worklist": "src/pilot/H317_medium50_worklist.08.07.26.json",
+  "worklist_schema": "pwg.h317_medium50_selection.v1",
+  "excluded_already_promoted": [
+    "yuvan",
+    "ftvij"
+  ],
+  "baseline_commit": "e603e47c29cd880075b35e155e44b5ce8f46a445",
+  "baseline_describe": "v1.55.0-4-ge603e47c",
+  "profile_slot": "c4",
+  "config_dir_fingerprint": "e96ee46471ec057e985b40d5ba6c5887bd4e17cc7cb89cb4dbb9c96a09704d4f",
+  "prepared_windows": 5,
+  "selected_headwords": 48,
+  "selected_subcards": 48,
+  "projected_calls": 61,
+  "windows": [
+    {
+      "root": "h1447-m50-w1",
+      "mode": "medium50",
+      "headwords": [
+        "nakzatra",
+        "sarvatra",
+        "sakft"
+      ],
+      "subcards": [
+        "nakzatra",
+        "sarvatra",
+        "sakft"
+      ],
+      "harness": "src/pilot/output/coordinator/artifacts/h1447-m50-w1/run_pilot_wf.h1447-m50-w1.js",
+      "workflow_output": null,
+      "preflight": "src/pilot/output/coordinator/artifacts/h1447-m50-w1/preflight.json",
+      "headless": {
+        "execution_manifest": "src/pilot/output/coordinator/artifacts/h1447-m50-w1/execution_manifest.h1447-m50-w1.json",
+        "manifest_sha256": "02f284b080291b66aff9a3f115a846004fdad86e30a920d2e40bfb4c037d19cb",
+        "harness_sha256": "ac6cdda0e8d2e92c5cf53774bd047b31fba3621f025d31c5bb1cd31b181a57f4",
+        "presplit_keys": [],
+        "projected_calls": 3
+      }
+    },
+    {
+      "root": "h1447-m50-w2",
+      "mode": "medium50",
+      "headwords": [
+        "Srama",
+        "vAhana",
+        "zoqaSan",
+        "SudDi",
+        "prajYA",
+        "prAtar",
+        "retas",
+        "patnI",
+        "nUnam",
+        "samIpa",
+        "vfzwi",
+        "AcArya"
+      ],
+      "subcards": [
+        "_srama",
+        "v_ahana",
+        "zoqa_san",
+        "_sud_di",
+        "praj_y_a",
+        "pr_atar",
+        "retas",
+        "patn_i",
+        "n_unam",
+        "sam_ipa",
+        "vfzwi",
+        "_ac_arya"
+      ],
+      "harness": "src/pilot/output/coordinator/artifacts/h1447-m50-w2/run_pilot_wf.h1447-m50-w2.js",
+      "workflow_output": null,
+      "preflight": "src/pilot/output/coordinator/artifacts/h1447-m50-w2/preflight.json",
+      "headless": {
+        "execution_manifest": "src/pilot/output/coordinator/artifacts/h1447-m50-w2/execution_manifest.h1447-m50-w2.json",
+        "manifest_sha256": "f089da6d26a5a10506cae631dd461f286b782f7bcbc799d02af7b896f5074683",
+        "harness_sha256": "b98d0e5170007b48e439b58def33311b71b4592360171bc1121c96a32cae29ae",
+        "presplit_keys": [
+          "_srama",
+          "v_ahana",
+          "sam_ipa",
+          "vfzwi"
+        ],
+        "projected_calls": 20
+      }
+    },
+    {
+      "root": "h1447-m50-w3",
+      "mode": "medium50",
+      "headwords": [
+        "dIkzA",
+        "rAtra",
+        "rAzwra",
+        "Bezaja",
+        "vyavasTA",
+        "spfS",
+        "Ahuti",
+        "vicitra",
+        "maraRa",
+        "vinASa",
+        "Bakza"
+      ],
+      "subcards": [
+        "d_ikz_a",
+        "r_atra",
+        "r_azwra",
+        "_bezaja",
+        "vyavas_t_a",
+        "spf_s",
+        "_ahuti",
+        "vicitra",
+        "mara_ra",
+        "vin_a_sa",
+        "_bakza"
+      ],
+      "harness": "src/pilot/output/coordinator/artifacts/h1447-m50-w3/run_pilot_wf.h1447-m50-w3.js",
+      "workflow_output": null,
+      "preflight": "src/pilot/output/coordinator/artifacts/h1447-m50-w3/preflight.json",
+      "headless": {
+        "execution_manifest": "src/pilot/output/coordinator/artifacts/h1447-m50-w3/execution_manifest.h1447-m50-w3.json",
+        "manifest_sha256": "0250ce789e07b44d21bf18fb0c76c62108ed296da3a2aa1da5b585bc906d592f",
+        "harness_sha256": "7dfc49640831971582794d2e43fd3ee45fda774212820db118e0607dc28d56da",
+        "presplit_keys": [
+          "r_azwra",
+          "vyavas_t_a",
+          "vicitra"
+        ],
+        "projected_calls": 14
+      }
+    },
+    {
+      "root": "h1447-m50-w4",
+      "mode": "medium50",
+      "headwords": [
+        "jAtavedas",
+        "yajus",
+        "aDama",
+        "SvAsa",
+        "aDastAt",
+        "saKi",
+        "darBa",
+        "Akfti",
+        "prasU",
+        "idAnIm",
+        "SoDana"
+      ],
+      "subcards": [
+        "j_atavedas",
+        "yajus",
+        "a_dama",
+        "_sv_asa",
+        "a_dast_at",
+        "sa_ki",
+        "dar_ba",
+        "_akfti",
+        "pras_u",
+        "id_an_im",
+        "_so_dana"
+      ],
+      "harness": "src/pilot/output/coordinator/artifacts/h1447-m50-w4/run_pilot_wf.h1447-m50-w4.js",
+      "workflow_output": null,
+      "preflight": "src/pilot/output/coordinator/artifacts/h1447-m50-w4/preflight.json",
+      "headless": {
+        "execution_manifest": "src/pilot/output/coordinator/artifacts/h1447-m50-w4/execution_manifest.h1447-m50-w4.json",
+        "manifest_sha256": "f0104c01dbec7fcce857330992bddea2ac63c4457870ce3799a73073a9c17617",
+        "harness_sha256": "e291ea1e4105a229fb74301e61ca671e2bf715ee5c362a48ad4ca9e21705b882",
+        "presplit_keys": [
+          "a_dast_at",
+          "_so_dana"
+        ],
+        "projected_calls": 12
+      }
+    },
+    {
+      "root": "h1447-m50-w5",
+      "mode": "medium50",
+      "headwords": [
+        "vraRa",
+        "prada",
+        "vadana",
+        "sAhasra",
+        "martya",
+        "sadana",
+        "BrU",
+        "yOvana",
+        "loman",
+        "zoqaSa",
+        "divA"
+      ],
+      "subcards": [
+        "vra_ra",
+        "prada",
+        "vadana",
+        "s_ahasra",
+        "martya",
+        "sadana",
+        "_br_u",
+        "y_ovana",
+        "loman",
+        "zoqa_sa",
+        "div_a"
+      ],
+      "harness": "src/pilot/output/coordinator/artifacts/h1447-m50-w5/run_pilot_wf.h1447-m50-w5.js",
+      "workflow_output": null,
+      "preflight": "src/pilot/output/coordinator/artifacts/h1447-m50-w5/preflight.json",
+      "headless": {
+        "execution_manifest": "src/pilot/output/coordinator/artifacts/h1447-m50-w5/execution_manifest.h1447-m50-w5.json",
+        "manifest_sha256": "d2ea117c35ba4a7e15b6c26d00329dc13162d1c5a4b75158608fbf96b777555c",
+        "harness_sha256": "ed1f39dc64b6b85aeb1e2cfe33a091b4c3620de6138a956e01d34aaf5f734331",
+        "presplit_keys": [
+          "s_ahasra"
+        ],
+        "projected_calls": 12
+      }
+    }
+  ]
+}

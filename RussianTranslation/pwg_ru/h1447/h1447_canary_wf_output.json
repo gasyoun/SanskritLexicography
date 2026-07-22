@@ -1,0 +1,190 @@
+{
+ "meta": {
+  "schema_version": "pwg_ru.workflow_meta.v1",
+  "generator": "gen_opt_harness2.batched-masked",
+  "generated_at": "2026-07-22T07:05:58Z",
+  "root": "h1447_dq_canary",
+  "safe_root": "h1447~005fdq~005fcanary",
+  "lang": "ru",
+  "gen_model": "claude-sonnet-5",
+  "source_profile": null,
+  "source_profiles": {
+   "dq~005fcanary~005fpuregloss~007e~007eh0~005fzz~005fpw": "pwg_supplement_subcard"
+  },
+  "mode": "nominal_masked",
+  "nominal": true,
+  "nominal_keymap": {
+   "dq~005fcanary~005fpuregloss~007e~007eh0~005fzz~005fpw": "dq_canary_puregloss"
+  },
+  "grammar_layer": "none",
+  "selected_keys": [
+   "dq~005fcanary~005fpuregloss~007e~007eh0~005fzz~005fpw"
+  ],
+  "batches": [
+   [
+    "dq~005fcanary~005fpuregloss~007e~007eh0~005fzz~005fpw"
+   ]
+  ],
+  "batch_count": 1,
+  "rootmap_sha256": null,
+  "input_hashes": {
+   "dq~005fcanary~005fpuregloss~007e~007eh0~005fzz~005fpw": {
+    "raw_sha256": "4713259b04287630815bff57ec3a36f7616ea31994cbc2b146f0f1a09b16bb93",
+    "portrait_sha256": "3d08e33efee331134882f2d3b7fbebd76639716be021618dc8ea43f62d457c9d"
+   }
+  },
+  "input_payload_keys": [
+   "dq~005fcanary~005fpuregloss~007e~007eh0~005fzz~005fpw"
+  ],
+  "selfheal": true,
+  "selfheal_group_budget": 12,
+  "selfheal_cards": {
+   "dq~005fcanary~005fpuregloss~007e~007eh0~005fzz~005fpw": 1
+  },
+  "binary_split": true,
+  "output_budget": 90,
+  "sense_presplit_budget": 20,
+  "kill": true,
+  "kill_gate": {
+   "factor": 2.0,
+   "base_ms": 20000,
+   "slope_ms": 45,
+   "floor_ms": 45000,
+   "ceil_ms": 180000
+  },
+  "kill_switch": true,
+  "agent_budget_strategy": "split-pools-per-card-heal",
+  "max_agents": 18,
+  "max_translate_agents": 13,
+  "max_heal_agents": 5,
+  "translate_agent_expected": 1,
+  "heal_budget_groups": 1,
+  "heal_budget_cards": 1,
+  "max_agents_factor": 3.0,
+  "max_agents_headroom": 10,
+  "max_wide": 3,
+  "stagger_ms": 2000,
+  "per_card_heal_budget": true,
+  "per_card_heal_factor": 1.5,
+  "per_card_heal_headroom": 3,
+  "kill_timeout_no_bisect": true,
+  "presplit_group_cite_budget": 60,
+  "presplit_group_sense_cap": 18,
+  "presplit_keys": [],
+  "tm": "translation_memory.ru.json",
+  "tm_auto": true,
+  "tm_available": true,
+  "tm_cards": 0,
+  "tm_hits": [],
+  "frag_tm": null,
+  "frag_tm_cards": [],
+  "frag_tm_fragments": 0,
+  "suggest_tm": null,
+  "suggest_profile": "semantic",
+  "suggest_tm_cards": [],
+  "suggest_tm_top": {},
+  "degenerate_passthrough_keys": [],
+  "agent_expected_after_tm": 1,
+  "execution_manifest_schema": "pwg.headless_execution_manifest.v2",
+  "execution": {
+   "profile_slot": "c4",
+   "config_dir_fingerprint": "e96ee46471ec057e985b40d5ba6c5887bd4e17cc7cb89cb4dbb9c96a09704d4f",
+   "execution_route": "claude-cli-headless",
+   "executor_lane": "serial-whole-card",
+   "validation_method": "audit_window+final_schema",
+   "model_identifier": "claude-sonnet-5"
+  },
+  "provenance_classes": {
+   "dq~005fcanary~005fpuregloss~007e~007eh0~005fzz~005fpw": "synthetic_control"
+  }
+ },
+ "summary": {
+  "root": "h1447_dq_canary",
+  "lang": "ru",
+  "cards": 1,
+  "ok": 1,
+  "null": 0,
+  "healed": 0,
+  "presplit": 0,
+  "tm": 0,
+  "degenerate_passthrough": 0,
+  "null_keys": [],
+  "partial_keys": [],
+  "failures": {},
+  "translate_agents_spent": 1,
+  "heal_agents_spent": 0,
+  "budget_stops": 0,
+  "usage": {
+   "input_tokens": 4,
+   "output_tokens": 2843,
+   "cache_read_tokens": 81229,
+   "cache_creation_tokens": 83476,
+   "subagent_tokens": 167552,
+   "observed_cost_usd": 0.5729587,
+   "cost_evaluable": true,
+   "priced_calls": 1,
+   "missing_usage_calls": 0
+  },
+  "kill_timeouts": 0,
+  "conn_errors": 0,
+  "headless_attempts": [
+   {
+    "label": "b0",
+    "keys": [
+     "dq~005fcanary~005fpuregloss~007e~007eh0~005fzz~005fpw"
+    ],
+    "returncode": 0,
+    "elapsed_ms": 37321,
+    "classification": "success"
+   }
+  ]
+ },
+ "results": [
+  {
+   "key": "dq~005fcanary~005fpuregloss~007e~007eh0~005fzz~005fpw",
+   "card": {
+    "key1": "dq~005fcanary~005fpuregloss~007e~007eh0~005fzz~005fpw",
+    "iast": "",
+    "notes": "Synthetic D-Q silent-SAN-LOSS canary card (H994), PW layer only, no Sanskrit/{#..#} or <ls> spans present — pure gloss prose. All three senses rendered; none may be dropped without failing the SAN-LOSS soft-guard.",
+    "records": [
+     {
+      "h": "dq_canary_puregloss",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{%eine Schildkröte%}",
+        "russian": "{%черепаха%}",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "{%ein kleiner Fisch%}",
+        "russian": "{%небольшая рыба%}",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "3",
+        "german": "{%eine Wasserpflanze%}",
+        "russian": "{%водное растение%}",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     }
+    ]
+   },
+   "judge": null,
+   "judge_sonnet": null,
+   "escalated": false
+  }
+ ]
+}

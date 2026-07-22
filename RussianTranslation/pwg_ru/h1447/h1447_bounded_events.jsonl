@@ -1,0 +1,1 @@
+{"schema":"pwg.run_event.v1","ts":"2026-07-22T07:17:49.839Z","run_id":"h1447-m50-starter-20260722","account":"c4","stage":"probe","event":"probe_call","purpose":"warmup","elapsed_ms":19477,"model":"claude-sonnet-5","output_bytes":1481,"classification":"content","policy":"production_v1","executor_lane":"claude-cli-headless/readiness-schema","schema_valid":false}

@@ -790,13 +790,18 @@ def run(args):
                                                bs.STOP_CLEAN_QUOTA, bs.STOP_CALL_COUNT) else 1
 
 
-def main(argv=None):
+def build_parser():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--plan', required=True, help='the pwg.no_pwg_scale_plan.v1 plan JSON')
     ap.add_argument('--coord-dir', required=True, help='coordinator dir holding state.json')
     ap.add_argument('--coordinator', help='path to coordinator.py (required for --execute)')
     ap.add_argument('--cwd', help='working dir for record/promote subprocesses (--execute)')
     ap.add_argument('--db', default='max_orchestrator.sqlite')
+    # H1447: the --execute path hands this to mao.probe_fleet and RunContext; it was
+    # dereferenced but never defined, so the live CLI crashed with AttributeError before
+    # the fleet probe (every selftest injected RunContext directly and never saw it).
+    ap.add_argument('--claude-bin', default='claude',
+                    help='Claude CLI binary/shim (same convention as max_account_orchestrator)')
     ap.add_argument('--lease-id', action='append', help='restrict scope to these lease roots')
     ap.add_argument('--checkpoint', default='bounded_staged_run.checkpoint.json')
     ap.add_argument('--execute', action='store_true',
@@ -824,6 +829,11 @@ def main(argv=None):
     ap.add_argument('--events')
     ap.add_argument('--report')
     ap.add_argument('--run-id')
+    return ap
+
+
+def main(argv=None):
+    ap = build_parser()
     args = ap.parse_args(argv)
     if args.execute and not (args.coordinator and args.cwd and args.events):
         ap.error('--execute requires --coordinator, --cwd and --events')
