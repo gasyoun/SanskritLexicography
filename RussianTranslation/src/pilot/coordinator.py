@@ -1477,6 +1477,54 @@ def record_output(args):
     print('lease %s -> %s' % (lease['id'], lease['state']))
 
 
+def record_output_batch(args):
+    """H1351 OPT: record N audited leases in ONE coordinator process. What batches is
+    ONLY the coordinator interpreter+import startup -- paid once for the group instead
+    of once per lease. Each lease's `audit_window.py` child KEEPS its own subprocess and
+    its AUDIT_TIMEOUT_SECONDS (30 min) guard: `process_record_output` is called unchanged,
+    so the audit is NOT in-processed. This is deliberate -- an in-proc audit would lose
+    the enforceable timeout, the exact reason H1339/H1351 forbid in-processing a
+    token-guarded step (batch AROUND the guard, never through it).
+
+    Per-lease semantics -- state lock, operation token (begin/require/block), cost gate,
+    audit isolation, pending_requeue accounting, the P11 run-id seam -- are IDENTICAL to
+    `record-output` because each pair is dispatched through `record_output` itself. Proven
+    equal to the per-lease form by the h1339_offline_bench deterministic output signature.
+
+    Fail-CONTINUE per lease: a lease whose record raises leaves ITS OWN operation blocked
+    (record_output's own block_operation already ran) and the batch moves to the next
+    lease -- exactly as N independent `record-output` invocations would, so one bad lease
+    never hides the audit of the others. The batch process exits non-zero iff any lease
+    failed, naming the failed leases.
+
+    Batch mode deliberately does NOT accept --transcript-dir or --run-id: neither the
+    production drain (`max_account_orchestrator.cmd_record_done`) nor the offline bench
+    supplies them, so omitting them drops no guard in use. A caller that seals per-lease
+    run identities (the P11 stale-run guard) or needs per-lease cost attribution must use
+    the per-lease `record-output` form."""
+    pairs = args.lease_output
+    if not pairs or len(pairs) % 2 != 0:
+        raise SystemExit(
+            'record-output-batch: expects one or more <lease-id> <workflow-result> pairs')
+    total = len(pairs) // 2
+    failures = []
+    for i in range(0, len(pairs), 2):
+        lease_id, workflow_result = pairs[i], pairs[i + 1]
+        one = argparse.Namespace(
+            lease_id=lease_id, workflow_result=workflow_result,
+            transcript_dir=None, allow_stale=getattr(args, 'allow_stale', False),
+            run_id=None)
+        try:
+            record_output(one)
+        except SystemExit as exc:
+            failures.append(lease_id)
+            print('lease %s -> FAILED: %s' % (lease_id, exc), file=sys.stderr)
+    if failures:
+        raise SystemExit(
+            'record-output-batch: %d/%d leases failed (%s)'
+            % (len(failures), total, ', '.join(failures)))
+
+
 def prepare_requeue(args):
     with DirLock(paths()['lock']):
         state = load_state()
@@ -1920,6 +1968,15 @@ def main(argv=None):
                    help='if set, must match the running lease run_id sealed at begin-run '
                         '(P11: refuses a stale/zombie run recording against a re-leased run)')
     r.set_defaults(func=record_output)
+    rb = sub.add_parser('record-output-batch')
+    rb.add_argument('lease_output', nargs='+',
+                    metavar='LEASE WF',
+                    help='one or more <lease-id> <workflow-result> pairs recorded in ONE '
+                         'coordinator process (H1351); each lease keeps its own guarded '
+                         'audit_window subprocess + timeout. No --run-id/--transcript-dir '
+                         '(use per-lease record-output for the P11 seam or per-lease cost).')
+    rb.add_argument('--allow-stale', action='store_true')
+    rb.set_defaults(func=record_output_batch)
     rq = sub.add_parser('prepare-requeue')
     rq.add_argument('lease_id')
     g = rq.add_mutually_exclusive_group(required=True)

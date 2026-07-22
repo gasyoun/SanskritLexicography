@@ -317,7 +317,7 @@ def run_cli(argv, env, cwd=REPO, check=True):
     return proc
 
 
-def one_run(tag, keep=False, prepare_mode='batch'):
+def one_run(tag, keep=False, prepare_mode='batch', audit_mode='batch'):
     """One full pipeline pass in a fresh sandbox. Returns (timings, outputs) dicts."""
     sandbox = tempfile.mkdtemp(prefix='h1339bench_%s_' % tag)
     coord_dir = os.path.join(sandbox, 'coordinator')
@@ -425,16 +425,26 @@ def one_run(tag, keep=False, prepare_mode='batch'):
     t0 = time.perf_counter()
     # Production drain shape (cmd_run_once): begin-run the claimed batch in ONE
     # coordinator call, at most 3 leases per iteration (the ordinary global runtime cap),
-    # then record each lease. record-output stays per lease (per-lease audit isolation).
+    # then record the group. H1351 OPT: default 'batch' records the whole begin-run group
+    # in ONE coordinator process (each lease keeps its OWN guarded audit_window subprocess
+    # + timeout -- only the coordinator interpreter+import startup is shared). 'per-lease'
+    # preserves the pre-H1351 shape (one coordinator spawn per lease) for A/B evidence.
     for i in range(0, len(LEASES), 3):
         group = LEASES[i:i + 3]
         begin = [os.path.join(HERE, 'coordinator.py'), 'begin-run']
         for lid, _case, _keys in group:
             begin += ['--lease-id', lid]
         run_cli(begin, env)
-        for lid, _case, _keys in group:
-            run_cli([os.path.join(HERE, 'coordinator.py'), 'record-output', lid,
-                     wf_paths[lid]], env, check=False)
+        if audit_mode == 'per-lease':
+            for lid, _case, _keys in group:
+                run_cli([os.path.join(HERE, 'coordinator.py'), 'record-output', lid,
+                         wf_paths[lid]], env, check=False)
+        else:
+            pairs = []
+            for lid, _case, _keys in group:
+                pairs += [lid, wf_paths[lid]]
+            run_cli([os.path.join(HERE, 'coordinator.py'), 'record-output-batch']
+                    + pairs, env, check=False)
     timings['audit'] = time.perf_counter() - t0
 
     state = json.load(open(os.path.join(coord_dir, 'state.json'), encoding='utf-8'))
@@ -494,6 +504,11 @@ def main():
     ap.add_argument('--prepare-mode', choices=('batch', 'per-lease'), default='batch',
                     help="H1386 OPT A/B: 'batch' = one prepare-batch call (production "
                          "default); 'per-lease' = the pre-H1386 3-spawns-per-lease shape")
+    ap.add_argument('--audit-mode', choices=('batch', 'per-lease'), default='batch',
+                    help="H1351 OPT A/B: 'batch' = one record-output-batch call per "
+                         "begin-run group (production default; audit_window still per "
+                         "lease); 'per-lease' = the pre-H1351 one-record-output-spawn-"
+                         "per-lease shape")
     a = ap.parse_args()
 
     install_inputs()
@@ -510,7 +525,8 @@ def main():
 
 def _bench(a, fx_hash):
     for i in range(a.warmups):
-        t, o = one_run('warm%d' % i, prepare_mode=a.prepare_mode)
+        t, o = one_run('warm%d' % i, prepare_mode=a.prepare_mode,
+                       audit_mode=a.audit_mode)
         print('warmup %d/%d: total %.2fs (promote rc=%s)' % (
             i + 1, a.warmups, t['total'], o['promote_rc']))
 
@@ -518,7 +534,7 @@ def _bench(a, fx_hash):
     last_outputs = None
     for i in range(a.runs):
         t, o = one_run('run%d' % i, keep=(a.keep_last and i == a.runs - 1),
-                       prepare_mode=a.prepare_mode)
+                       prepare_mode=a.prepare_mode, audit_mode=a.audit_mode)
         measured.append(t)
         signatures.add(o['signature'])
         last_outputs = o
@@ -550,7 +566,8 @@ def _bench(a, fx_hash):
         report = {
             'schema': 'pwg.h1339_offline_bench.v1',
             'protocol': {'warmups': a.warmups, 'runs': a.runs,
-                         'prepare_mode': a.prepare_mode},
+                         'prepare_mode': a.prepare_mode,
+                         'audit_mode': a.audit_mode},
             'python': sys.version, 'platform': platform.platform(),
             'fixture_sha256': fx_hash, 'seed_rows': SEED_ROWS,
             'stages': stats, 'runs': measured,
