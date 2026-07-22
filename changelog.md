@@ -38,7 +38,7 @@ not an error.
 ### Fixed
 
 - pwg_ru post-H1339 review landing set
-  ([H1386](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1386-Fable_RussianTranslation_pwg-ru-post-h1339-resume-fixes-prepare-speed_20.07.26.md),
+  ([H1386](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1386-Fable_RussianTranslation_pwg-ru-post-h1339-resume-fixes-prepare-speed_20.07.26.md),
   Fable 5 `claude-fable-5`), every fix test-first with a pinned failing regression. Confirmed
   P1s: C1 — bounded `--resume` passed the staged-plan-scope **dict** to `cmd_recover`, so
   crash recovery matched ZERO jobs and a crashed window checkpointed COMPLETED with zero
