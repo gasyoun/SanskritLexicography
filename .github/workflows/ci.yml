@@ -122,6 +122,20 @@ jobs:
           python src/government_sidecar.py --selftest
           python src/pilot/build_article_site.py --selftest
           python research/build_observatory.py --check
+      - name: Publication-grade TM technical-hardening selftests (H1457 Track A)
+        working-directory: RussianTranslation
+        run: |
+          # Fixture-only, deterministic -- no network/model calls. The scripts'
+          # OWN live/pilot subcommands (nn_api --smoketest, tm_saru_align_labse
+          # pilot, mined_filter_bicleaner report) need sentence-transformers +
+          # the real gold/corpus files and are deliberately NOT run here, same
+          # as this job never runs a bulk translation pass.
+          python src/tm_grade.py selftest
+          python src/tm_align.py selftest
+          python src/build_grade_gold.py selftest
+          python src/mined_filter_bicleaner.py selftest
+          python src/tm_saru_align_labse.py selftest
+          python src/tm_retrieval_eval.py selftest
       - name: LOD graph acceptance (fixture-only, H350/E7)
         working-directory: RussianTranslation
         run: |
