@@ -1,6 +1,6 @@
 # FAIR Release #1 — citation graph, markup census, headword-overlap matrix
 
-_Created: 13-07-2026 · Last updated: 20-07-2026_
+_Created: 13-07-2026 · Last updated: 23-07-2026_
 
 **What this is.** Q1-WS1.4 of the
 [org statistics census & analytics roadmap](../ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md):
@@ -131,5 +131,11 @@ files attached: `markup_tag_census.tsv`, `headword_overlap_matrix.tsv`):
 - [`ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md`](../ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md) — Part II Q1, WS1.4
 - [`CITATION.cff`](../CITATION.cff) · [`DATA_LICENSE.md`](../DATA_LICENSE.md) — this repo's citation/license metadata
 - [csl-observatory `CITATION.cff`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/CITATION.cff) — the sibling pattern this release follows structurally, but its OBS-T dataset does **not** actually have a minted DOI yet: `10.5281/zenodo.15834721` (previously recorded here as that dataset's DOI) is a **false DOI** — it resolves to an unrelated topology/differential-geometry preprint, confirmed by a live Zenodo check (H1364, 20-07-2026); see [CONTRADICTIONS §8](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md). csl-observatory's own `CITATION.cff` carried the same false DOI and has been corrected in the same pass.
+- **Interactive charts (H1527):** offline HTML over the committed markup TSV —
+  [`data/viz/markup_tag_heatmap.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/viz/markup_tag_heatmap.html)
+  (dict × tag heatmap + under-marked density bars). Sibling RU-gloss gap cards (H685 JSON, not part of this FAIR deposit):
+  [`data/viz/ru_gloss_gaps.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/viz/ru_gloss_gaps.html).
+  Headword Jaccard heatmap remains on
+  [csl-atlas dictionary-overlap](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/src/tools/dictionary-overlap.md).
 
 _Dr. Mārcis Gasūns_

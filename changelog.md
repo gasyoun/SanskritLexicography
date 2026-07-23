@@ -14,6 +14,15 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+
+- **Markup-tag heatmap + RU-gloss gap cards (H1527).** Offline single-file HTML under
+  [`data/viz/`](https://github.com/gasyoun/SanskritLexicography/tree/master/data/viz) charting the
+  committed E39/H683 TSV and H685 `ru_gloss_gap_stats.json` (Trust Blocks, raw download links;
+  no re-crawl, no gitignored gap list). Linked from findings/progress dashboards and
+  [`data/FAIR_RELEASE_1.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/FAIR_RELEASE_1.md).
+  Rebuild: `python data/viz/build_viz_pages.py`.
+
 ## [1.58.0] — 22-07-2026
 
 ### Added
