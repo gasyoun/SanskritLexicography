@@ -10,6 +10,20 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — full-audit improvement umbrella plan (2026 H2)
+
+- `/ask` layered plan after a full RussianTranslation audit: offline wave-1 portfolio
+  (H1403 production residues · promotion-receipt scaffold · docs umbrella), then
+  health-gated drain, then existing TM/gloss/editorial programmes. Docs under `docs/`:
+  [PLAN](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_full_audit_improvement_2026H2.md)
+  (+ `.meta.md`),
+  [ROADMAP](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/ROADMAP_RussianTranslation_full_audit_improvement_2026H2.md),
+  [ARCHITECTURE](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/ARCHITECTURE_RussianTranslation_full_audit_improvement.md),
+  [IMPLEMENTATION](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/IMPLEMENTATION_RussianTranslation_full_audit_improvement.md),
+  [VERIFICATION](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/VERIFICATION_RussianTranslation_full_audit_improvement.md).
+- Indexes (does not supersede) the pubgrade-TM and Sa→Ru gloss `/ask` plans. Wave-1 fences:
+  no paid generation, no live store mutation. One handoff per track (A–E).
+
 ### Added — PWG per-sense `<ls>`-loci export for kosha sense-reconciliation (H1456)
 
 - `microstructure.py export_sense_loci` — new command, reuses the existing
