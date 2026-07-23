@@ -97,10 +97,17 @@ src/corpus_lexicon.failures.jsonl
 src/pwg_sense_loci.tsv
 !src/pwg_sense_loci.sample.tsv
 
-# H215 corpus TM TMX export (build_tmx.py) — rights-encumbered (mixes in-copyright
-# named modern RU translations); no public release before per-translator clearance
-# (H215 Slice 5 / /publish-safety-check). Generator + README are committed.
-release/corpus_tm/
+# H215 corpus TM TMX export (build_tmx.py, legacy full-text output) — rights-encumbered
+# (mixes in-copyright named modern RU translations); no public release before
+# per-translator clearance (H215 Slice 5 / /publish-safety-check).
+release/corpus_tm/corpus_tm.sa-ru.tmx
+
+# H1458 Track C2 (build_release_bundles.py) — public_full.* is own/PD (PWG) and
+# TRACKED; derived_only.jsonl is a full 1.09M-row, ~350 MB regenerable structure-only
+# extraction (NO Russian surface text either way) — same "full run is not a
+# deliverable" policy as pwg_sense_loci.tsv above. derived_only.sample.jsonl is the
+# committed reviewable/testable slice.
+release/corpus_tm/derived_only.jsonl
 
 # regenerable DCS frequency table (build_dcs_freq.py)
 src/dcs_freq.json
