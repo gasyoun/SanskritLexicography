@@ -1,6 +1,6 @@
 # RussianTranslation — Sanskrit dictionaries into Russian, at scale
 
-_Created: 28-06-2026 · Last updated: 11-07-2026_
+_Created: 28-06-2026 · Last updated: 23-07-2026_
 
 This directory holds two independent machine-translation efforts that bring the
 great 19th-century Sanskrit dictionaries to Russian readers, plus the
@@ -124,6 +124,14 @@ forced the change):
 | 11 | 07-05→06 | TM industrialization: mined tier (97% precision gate, 10,132 pairs), A/B/C grading, TMX 1.4b export |
 | 12 | 07-05→06 | Re-glue research track: addenda typology, learner scores, and the bake-off verdict — synthesize-first does not beat re-glue |
 | 13 | 07-06 | Multi-agent orchestration post-mortem → `synth_dispatch.py` guards (output-file liveness, kill-guard, sealed outputs) |
+
+## Improvement programme (post-audit umbrella)
+
+Cold-start for *what to improve next* (not the day-to-day translate loop): the full-audit
+`/ask` umbrella sequences factory residues → health-gated drain → existing TM/gloss plans.
+
+- **PLAN index:** [`docs/PLAN_RussianTranslation_full_audit_improvement_2026H2.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_full_audit_improvement_2026H2.md)
+- Also indexes (do not supersede): [pubgrade TM](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_pubgrade_tm_oral_2026H2.md) · [Sa→Ru gloss](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_saru-gloss-quality_2026H2.md)
 
 ## Operating the pipeline (quickstart)
 
