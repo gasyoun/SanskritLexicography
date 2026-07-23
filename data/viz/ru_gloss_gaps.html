@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RU-gloss coverage &amp; gap head — SanskritLexicography</title>
+<style>
+  :root { --fg:#1f2328; --mut:#59636e; --bg:#fff; --card:#f6f8fa; --line:#d1d9e0;
+          --accent:#0969da; --done:#1a7f37; --run:#9a6700; --block:#d1242f;
+          --hi:#0d47a1; --mid:#64b5f6; --lo:#e3f2fd; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e6edf3; --mut:#9198a1; --bg:#0d1117; --card:#161b22; --line:#30363d;
+            --accent:#4493f8; --done:#3fb950; --run:#d29922; --block:#f85149;
+            --hi:#90caf9; --mid:#1565c0; --lo:#0d2137; }
+  }
+  body { font: 15px/1.5 system-ui, sans-serif; color:var(--fg); background:var(--bg);
+         max-width: 1180px; margin: 0 auto; padding: 1.5rem; }
+  h1 { font-size: 1.5rem; margin-bottom:.2rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .mut { color: var(--mut); font-size: .85rem; }
+  a { color: var(--accent); }
+  .cards { display: flex; gap: .8rem; flex-wrap: wrap; margin: 1rem 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+          padding: .7rem 1.1rem; min-width: 8.5rem; }
+  .card b { font-size: 1.55rem; display: block; line-height:1.1; }
+  .card .sub { color: var(--mut); font-size: .8rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .88rem; }
+  th, td { text-align: left; padding: .35rem .55rem; border-bottom: 1px solid var(--line); }
+  th { color: var(--mut); font-weight: 600; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .trust { background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent);
+           border-radius:6px; padding:.7rem 1rem; font-size:.83rem; color:var(--mut); margin:1rem 0; }
+  .trust b { color:var(--fg); }
+  .controls { display:flex; flex-wrap:wrap; gap:.9rem 1.4rem; align-items:center;
+              background:var(--card); border:1px solid var(--line); border-radius:8px;
+              padding:.7rem 1rem; margin:1rem 0; font-size:.9rem; }
+  .controls label { display:inline-flex; align-items:center; gap:.35rem; cursor:pointer; }
+  .controls input[type=number] { width:4rem; }
+  .bar-wrap { background: var(--card); border:1px solid var(--line); border-radius:8px;
+              padding:.9rem 1.1rem; margin:.6rem 0; }
+  .bar-row { display:flex; align-items:center; gap:.7rem; margin:.3rem 0; }
+  .bar-row .lbl { flex: 0 0 5.5rem; font-variant-numeric:tabular-nums; }
+  .bar-row .lbl small { color:var(--mut); }
+  .track { flex:1; background:rgba(127,127,127,.14); border-radius:5px; height:1.35rem; overflow:hidden; }
+  .fill { height:100%; border-radius:5px 0 0 5px; background:var(--accent); }
+  .bar-row .val { flex:0 0 7rem; text-align:right; font-variant-numeric:tabular-nums; font-size:.9rem; }
+  .heat-scroll { overflow:auto; max-width:100%; border:1px solid var(--line); border-radius:8px; }
+  table.heat { font-size: .72rem; border-collapse: separate; border-spacing: 0; }
+  table.heat th, table.heat td { border-bottom:1px solid var(--line); border-right:1px solid var(--line);
+                                  padding: .2rem .28rem; white-space:nowrap; }
+  table.heat th.corner { position:sticky; left:0; background:var(--card); z-index:2; }
+  table.heat th.rowh { position:sticky; left:0; background:var(--card); z-index:1; text-align:left; }
+  table.heat th.colh { writing-mode: vertical-rl; transform: rotate(180deg); height:7.5rem;
+                       vertical-align:bottom; font-weight:600; color:var(--mut); }
+  table.heat td.cell { text-align:center; font-variant-numeric:tabular-nums; min-width:2.2rem; }
+  footer { margin-top:2.5rem; color:var(--mut); font-size:.8rem; }
+  .nav { font-size:.9rem; margin-bottom:1rem; }
+  .nav a { margin-right:1rem; }
+</style>
+</head>
+<body>
+<p class="nav">
+  <a href="markup_tag_heatmap.html">← Markup-tag heatmap</a>
+  <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/">progress dashboard</a>
+  <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/glossary/ru_gloss_gap_stats.json">raw JSON</a>
+</p>
+<h1>RU-gloss coverage &amp; gap ranking</h1>
+<p class="mut">Committed H685 gap stats over the Russian gloss layers vs dictionary headwords.
+  Charts the JSON only — the full gap-list TSV is gitignored (~5.3&nbsp;MB) and is not loaded here.
+  Generated <span id="stamp"></span>.</p>
+
+<div class="cards" id="cards"></div>
+
+<h2>Per-dictionary any-layer coverage</h2>
+<p class="mut"><code>any_pct</code> = share of headwords with at least one RU layer
+  (surface / lemma / root). GRA high · SKD low is the standing pattern.</p>
+<div class="bar-wrap" id="cov"></div>
+
+<h2>Token-coverage ladder</h2>
+<p class="mut">How much of the DCS-frequency token mass is covered as layers stack.</p>
+<div class="bar-wrap" id="ladder"></div>
+
+<h2>Gap head — top 20 DCS-frequent keys still missing RU</h2>
+<p class="mut">From <code>gap_head_top20</code>: highest DCS token counts among keys that lack a RU gloss.
+  Useful triage for the next translation batch, not a complete gap census.</p>
+<table id="gaps">
+  <thead><tr>
+    <th class="num">#</th><th>key (SLP1)</th><th class="num">DCS count</th><th>dicts</th>
+  </tr></thead>
+  <tbody></tbody>
+</table>
+
+<div class="trust" id="trust"></div>
+<footer>
+  Offline single-file page; data embedded from
+  <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/glossary/ru_gloss_gap_stats.json">ru_gloss_gap_stats.json</a>.
+  Full gap list stays local/gitignored (<code>glossary/ru_gloss_gaps.tsv</code>).
+  Rebuild: <code>python data/viz/build_viz_pages.py</code>.
+  Translation velocity context:
+  <a href="https://github.com/gasyoun/SanskritLexicography/tree/master/progress_dashboard">progress_dashboard/</a>.
+</footer>
+<script>
+'use strict';
+const DATA = {"generated_at":"2026-07-23","source":"RussianTranslation/glossary/ru_gloss_gap_stats.json","corpus_rows":1093391,"corpus_distinct_keys":191436,"rows_empty_ru":0,"kinds":{"translation":992265,"commentary":101126},"hapax_keys":112782,"hapax_rate_pct":58.91,"surface_keys_with_ru":191436,"lemma_layer_keys":40370,"root_layer_keys":2021,"token_coverage_pct":{"dcs_only":79.12,"plus_vidyut":86.53,"plus_marker":87.07},"dcs_freq_lemmas_slp1":90349,"dcs_freq_meta":{"source":"VisualDCS dcs_full.sqlite token table","total_tokens":5688416,"distinct_lemmas":90349},"per_dict_coverage":{"AP":{"headwords":88867,"surface":18727,"lemma":13359,"root":734,"any":21386,"any_pct":24.07},"GRA":{"headwords":11108,"surface":6620,"lemma":7931,"root":649,"any":8526,"any_pct":76.76},"MW":{"headwords":194084,"surface":35388,"lemma":36220,"root":897,"any":43287,"any_pct":22.3},"PWG":{"headwords":106082,"surface":23595,"lemma":24150,"root":886,"any":27780,"any_pct":26.19},"PWK":{"headwords":151349,"surface":27546,"lemma":27795,"root":928,"any":32430,"any_pct":21.43},"SKD":{"headwords":40817,"surface":6469,"lemma":2238,"root":140,"any":6713,"any_pct":16.45},"VCP":{"headwords":48636,"surface":13954,"lemma":12892,"root":190,"any":15313,"any_pct":31.48},"VEI":{"headwords":3704,"surface":2130,"lemma":2214,"root":29,"any":2346,"any_pct":63.34}},"gap_keys_total":242726,"gap_keys_in_dcs":36974,"gap_list_file":"glossary/ru_gloss_gaps.tsv","gap_head_top20":[{"key":"tEla","dicts":["MW","PWG","PWK","VCP","VEI"],"dcs_count":2109},{"key":"sEnya","dicts":["MW","PWG","PWK","VCP"],"dcs_count":1494},{"key":"vESampAyana","dicts":["MW","VCP"],"dcs_count":1326},{"key":"dEtya","dicts":["MW","PWG","PWK","VCP"],"dcs_count":1258},{"key":"dEva","dicts":["AP","MW","PWG","PWK","VCP","VEI"],"dcs_count":1226},{"key":"ganDaka","dicts":["MW","PWG","PWK","VCP"],"dcs_count":1192},{"key":"aNgula","dicts":["GRA","MW","PWG","PWK","VCP"],"dcs_count":1054},{"key":"SEla","dicts":["AP","MW","PWG","PWK","VCP"],"dcs_count":1036},{"key":"mUzA","dicts":["AP","MW","SKD"],"dcs_count":946},{"key":"vESya","dicts":["GRA","MW","PWG","PWK","VCP","VEI"],"dcs_count":931},{"key":"ekEka","dicts":["AP","MW","PWG","PWK","VCP"],"dcs_count":925},{"key":"sEnDava","dicts":["AP","MW","PWG","PWK","VCP","VEI"],"dcs_count":918},{"key":"sOmya","dicts":["AP","GRA","MW","PWG","PWK","VCP","VEI"],"dcs_count":917},{"key":"OzaDa","dicts":["AP","MW","PWG","PWK"],"dcs_count":905},{"key":"prajYApAramitA","dicts":["AP","MW","PWG","PWK"],"dcs_count":881},{"key":"SanEs","dicts":["AP","MW","PWG","PWK","VCP"],"dcs_count":837},{"key":"Endra","dicts":["AP","MW","PWG","PWK","VCP"],"dcs_count":818},{"key":"mAkzika","dicts":["AP","MW","PWG","PWK","VCP"],"dcs_count":793},{"key":"vESvAnara","dicts":["AP","GRA","MW","PWG","PWK","VCP"],"dcs_count":783},{"key":"kOrava","dicts":["AP","MW","PWG","PWK","VCP","VEI"],"dcs_count":736}]};
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt = n => (n == null ? '—' : Number(n).toLocaleString('en-US'));
+const fmtN = (n, d) => (n == null ? '—' : Number(n).toLocaleString('en-US', {maximumFractionDigits: d}));
+
+function barRow(label, sub, value, total, valText) {
+  const pct = total ? Math.max(1.5, value / total * 100) : 0;
+  return `<div class="bar-row">
+    <div class="lbl" style="flex-basis:6.5rem">${esc(label)}${sub ? ` <small>${esc(sub)}</small>` : ''}</div>
+    <div class="track"><div class="fill" style="width:${pct.toFixed(1)}%"></div></div>
+    <div class="val">${valText != null ? valText : fmt(value)}</div>
+  </div>`;
+}
+
+document.getElementById('stamp').textContent = DATA.generated_at;
+
+document.getElementById('cards').innerHTML = [
+  ['corpus_rows', 'corpus rows', DATA.corpus_rows],
+  ['hapax_rate_pct', 'hapax rate %', DATA.hapax_rate_pct],
+  ['gap_keys_total', 'gap keys total', DATA.gap_keys_total],
+  ['gap_keys_in_dcs', 'gap keys in DCS', DATA.gap_keys_in_dcs],
+  ['corpus_distinct_keys', 'distinct keys', DATA.corpus_distinct_keys],
+  ['lemma_layer_keys', 'lemma-layer keys', DATA.lemma_layer_keys],
+].map(([_, sub, v]) =>
+  `<div class="card"><b>${typeof v === 'number' && v % 1 ? fmtN(v, 2) : fmt(v)}</b><span class="sub">${esc(sub)}</span></div>`
+).join('');
+
+const cov = Object.entries(DATA.per_dict_coverage || {})
+  .map(([d, x]) => ({ d, ...x }))
+  .sort((a, b) => b.any_pct - a.any_pct);
+const maxPct = 100;
+document.getElementById('cov').innerHTML = cov.map(r =>
+  barRow(r.d, `${fmt(r.any)}/${fmt(r.headwords)}`, r.any_pct, maxPct,
+         `${fmtN(r.any_pct, 2)}%`)
+).join('');
+
+const ladder = DATA.token_coverage_pct || {};
+const order = [
+  ['dcs_only', 'DCS lemma only'],
+  ['plus_vidyut', '+ Vidyut'],
+  ['plus_marker', '+ marker layer'],
+];
+document.getElementById('ladder').innerHTML = order.map(([k, lab]) =>
+  barRow(lab, k, ladder[k] || 0, 100, `${fmtN(ladder[k], 2)}%`)
+).join('');
+
+const gaps = DATA.gap_head_top20 || [];
+document.querySelector('#gaps tbody').innerHTML = gaps.length
+  ? gaps.map((g, i) =>
+      `<tr><td class="num">${i + 1}</td><td><code>${esc(g.key)}</code></td>
+       <td class="num">${fmt(g.dcs_count)}</td>
+       <td class="mut">${esc((g.dicts || []).join(', '))}</td></tr>`).join('')
+  : '<tr><td colspan="4" class="mut">no gap_head_top20 in feed</td></tr>';
+
+document.getElementById('trust').innerHTML =
+  `<b>Trust block.</b> Feed: <b>${esc(DATA.source)}</b> (embedded ${esc(DATA.generated_at)}). ` +
+  `H685 RU-gloss gap stats — corpus rows ${fmt(DATA.corpus_rows)}, gap keys ${fmt(DATA.gap_keys_total)} ` +
+  `(${fmt(DATA.gap_keys_in_dcs)} attested in DCS). ` +
+  `DCS frequency meta: ${esc((DATA.dcs_freq_meta && DATA.dcs_freq_meta.source) || 'n/a')}. ` +
+  `The full gap list (<code>${esc(DATA.gap_list_file || 'glossary/ru_gloss_gaps.tsv')}</code>) is gitignored and is ` +
+  `<b>not</b> committed or loaded by this page — chart the JSON only. ` +
+  `Download: <a href="https://raw.githubusercontent.com/gasyoun/SanskritLexicography/master/RussianTranslation/glossary/ru_gloss_gap_stats.json">raw JSON</a>. ` +
+  `No rights-gated raw corpus is embedded.`;
+</script>
+</body>
+</html>
