@@ -41,7 +41,7 @@ _Grand total of all 26 snapshots' *then* line counts: **1721983**._
 
 ## Use cases
 
-1. **Refresh the snapshots.** Several lists have drifted hard from the 2014 extraction (AP 36,030 → 88,867; PWK 131,918 → 151,349); the current key1 **and** key2 lists are in [`now-2026/`](now-2026/) (regenerate with `headword_diff.py now`).
+1. **Refresh the snapshots.** Several lists have drifted hard from the 2014 extraction (AP 36,030 → 88,869; PWK 131,918 → 151,349); the current key1 **and** key2 lists are in [`now-2026/`](now-2026/) (regenerate with `headword_diff.py now`).
 2. **`removed` = a data-loss / correction audit.** Headwords present *then* and gone *now* are merges, corrections, or accidental deletions — review the `_diff/<list>.removed.txt` lists to catch anything dropped by mistake.
 3. **Print-ready key2.** The 2014 key2 files are legacy numeric transliteration; `now-2026/` carries the **current key2 as clean SLP1** (the print/citation form — keeps `/` accent, `-`, `(...)`), ready for a printed headword list.
 4. **Provenance / dictionary-growth tracking.** The then→now deltas record how each dictionary's headword count has evolved — useful for citation and for deciding which `csl-orig` dictionaries have changed enough to re-run downstream analyses (e.g. the Catalan/Huet coverage studies).
