@@ -63,3 +63,4 @@ payload (`python src/pilot/probe_log.py prompt`). A trivial one-word probe said 
 | 2026-07-13T21:43:54Z | no_pwg_w10 | 11/18 | 30 | 1.74M | 9 | 0 | no |
 
 _Dr. Mārcis Gasūns_
+| 2026-07-23T06:19:51Z | warmup | GO(bounded) | 625.2s/3calls | 0 | 12521B | medium50_canary | H1209 | H1209 step 0a FRESH probe (Workflow agent() lane, nakzatra=heaviest of 40). 3 agents (2 worker attempts + 1 Opus controller), 0 conn-err, 0 kill-timeout, would_promote=true, controller-approved 1/1, 225,098 subagent tok. Per-call <300s deadline (0 empty) but elevated vs 18-07 (15.7s single call, lighter card) — GO but run BOUNDED chunk-by-chunk, watch kill-timeouts (H442/H462). Distinct from same-day c4-headless H1447 flake (different transport). |
