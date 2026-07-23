@@ -9,6 +9,8 @@ Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H807-Fable_SanskritGrammar_k
 
 ====
 
+Что для перевода PWG на RU и для Kosha следует из https://groups.google.com/g/nagari/c/NOWqiBQl1Xc/m/_R8O4-39CAAJ обсуждения, всей ветки?
+
 
 Which family should I optimize the 30-capability roadmap around first?
 Reasearch-grade - done?
