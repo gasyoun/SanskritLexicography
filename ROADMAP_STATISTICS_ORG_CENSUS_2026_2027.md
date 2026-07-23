@@ -1,6 +1,6 @@
 # Statistics for the Sanskrit Lexicon — a 12-month org-wide census & analytics roadmap 2026–2027
 
-_Created: 12-07-2026 · Last updated: 13-07-2026_
+_Created: 12-07-2026 · Last updated: 23-07-2026_
 
 **What this is.** The *measurement* counterpart to the two existing hubs. Where
 [`FEATURES_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md)
@@ -46,7 +46,7 @@ re-measure; re-verify before a large change.
 | `<ls>` citation-frequency graph | **828,505 citations → 912 texts** (11 dicts) ✅ (E38) | [csl-atlas `data/citations/`](https://github.com/sanskrit-lexicon/csl-atlas/tree/main/data/citations) |
 | Correction-event log | **52,498 events · 43 dicts · 210 correctors · 2014–2026** ✅ (E41) | [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) |
 | n-gram membership oracle | **6,656,616 n-grams** ✅ (F43) | [CORRECTIONS/ngram](https://github.com/sanskrit-lexicon/CORRECTIONS/tree/master/ngram) |
-| Sense-count / polysemy distribution per dict | ◐ partial (11/44 general lexica; A02 paper, mirrored H817 — FEATURES_INDEX E45) | [csl-observatory sense_polysemy_per_dict.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/sense_polysemy_per_dict.md) |
+| Sense-count / polysemy distribution per dict | ◐ partial (11/44 general lexica; A02 paper, mirrored H817 — FEATURES_INDEX E45) · **dashboard live 23-07-2026 (H1524)** | report [sense_polysemy_per_dict.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/sense_polysemy_per_dict.md) · page [`/sense-polysemy`](https://sanskrit-lexicon.github.io/csl-observatory/sense-polysemy) |
 | Diachronic first-attestation (which dict coins a headword) | ◐ partial (A40 growth curve only) | ARTICLES A40 |
 | Definition typology (synonym vs equivalent vs encyclopedic) | ○ not started (ATLAS_FAIR micro-gap) | — |
 | Per-dict editorial fingerprint (citation × markup × error) | ○ not started | — |
@@ -59,7 +59,7 @@ re-measure; re-verify before a large change.
 | DCS lemmas / forms | **180,176 lemmas · 408 k form→lemma rows** ✅ | [SanskritRussian `dcs_form2lemma.tsv`](https://github.com/gasyoun/SanskritRussian) |
 | Heritage form oracle + DICO gloss | **24.5 k DICO lemmas · form-alignment oracle** ✅ (D19–D24) | [HeadwordLists](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) |
 | vidyut FST fallback | **28,500 forms** ✅ (E29) | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
-| Paradigm-cell coverage (which cells attested per root) | ✅ (H817 — FEATURES_INDEX E46, 8,054/11,096 roots, 171 distinct finite cells) | [csl-observatory paradigm_cell_coverage.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/paradigm_cell_coverage.md) |
+| Paradigm-cell coverage (which cells attested per root) | ✅ (H817 — FEATURES_INDEX E46, 8,054/11,096 roots, 171 distinct finite cells) · **dashboard live 23-07-2026 (H1524)** | report [paradigm_cell_coverage.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/paradigm_cell_coverage.md) · page [`/paradigm-cell-coverage`](https://sanskrit-lexicon.github.io/csl-observatory/paradigm-cell-coverage) |
 | Form→lemma ambiguity rate (how polysemous is a surface form) | ○ not started | — |
 
 ### L3 · Corpus & usage (DCS · SamudraManthanam)
@@ -71,7 +71,7 @@ re-measure; re-verify before a large change.
 | Stop-word parallels | **40,573,260** ✅ | [VisualDCS M9](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/m9_archive_ingest.md) |
 | Frequency layer (per-period vectors) | **83,277 lemmas** ✅ (E26) | [kosha `lemma_frequency.tsv`](https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv) |
 | 2021→2026 corpus delta | ✅ (H686) | [Corpus-Delta report](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Corpus-Delta-2021-2026/REPORT.md) |
-| POS distribution per text | ✅ (H817 — FEATURES_INDEX E44, 270/270 texts, 5,688,416 tokens) | [csl-observatory pos_distribution_per_text.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/pos_distribution_per_text.md) |
+| POS distribution per text | ✅ (H817 — FEATURES_INDEX E44, 270/270 texts, 5,688,416 tokens) · **dashboard live 23-07-2026 (H1524)** | report [pos_distribution_per_text.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/pos_distribution_per_text.md) · page [`/pos-by-text`](https://sanskrit-lexicon.github.io/csl-observatory/pos-by-text) |
 | Lemma/root frequency bands **per text** (not just whole-corpus) | ◐ partial (whole-corpus done in E26) | kosha |
 | Meter / prosody statistics | ○ not started | SanskritKaraoke |
 | Vedic accent coverage | ○ not started (VedaWeb reuse pending) | VedaWeb M13 |
