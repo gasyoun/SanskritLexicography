@@ -18,6 +18,7 @@ Outputs (beside this script, unless --out-dir):
 
 Usage:
     python definition_typology_classifier.py [--csl-orig PATH] [--dicts mw,pwg,...]
+    python definition_typology_classifier.py --all   # every csl-orig/v02/*.txt
     python definition_typology_classifier.py --verify SAMPLE.tsv
 
 H1483. Run 24-07-2026 by Grok 4.5 (grok-4.5), Opus-lock override.
@@ -588,7 +589,12 @@ def main():
     ap.add_argument(
         "--dicts",
         default=",".join(DEFAULT_DICTS),
-        help="comma-separated dict codes (csl-orig dir names)",
+        help="comma-separated dict codes (csl-orig dir names); ignored if --all",
+    )
+    ap.add_argument(
+        "--all",
+        action="store_true",
+        help="classify every dictionary under csl-orig/v02 that has <code>.txt",
     )
     ap.add_argument(
         "--out-dir",
@@ -622,6 +628,15 @@ def main():
     if not root.is_dir():
         sys.exit(f"csl-orig/v02 not found at {root}")
 
+    if args.all:
+        dict_codes = sorted(
+            d.name
+            for d in root.iterdir()
+            if d.is_dir() and (d / f"{d.name}.txt").is_file()
+        )
+    else:
+        dict_codes = [c.strip() for c in args.dicts.split(",") if c.strip()]
+
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     rng = random.Random(args.seed)
@@ -630,7 +645,7 @@ def main():
     all_samples: list[tuple] = []
     reason_global: Counter[str] = Counter()
 
-    for code in [c.strip() for c in args.dicts.split(",") if c.strip()]:
+    for code in dict_codes:
         path = root / code / f"{code}.txt"
         if not path.is_file():
             print(f"SKIP {code}: missing {path}", file=sys.stderr)
@@ -669,7 +684,7 @@ def main():
 
     # fingerprint of inputs for the report
     fp_parts = []
-    for code in [c.strip() for c in args.dicts.split(",") if c.strip()]:
+    for code in dict_codes:
         p = root / code / f"{code}.txt"
         if p.is_file():
             h = hashlib.sha1()
@@ -682,7 +697,8 @@ def main():
     with open(meta_path, "w", encoding="utf-8", newline="\n") as fh:
         fh.write("key\tvalue\n")
         fh.write(f"seed\t{args.seed}\n")
-        fh.write(f"dicts\t{args.dicts}\n")
+        fh.write(f"dicts\t{','.join(dict_codes)}\n")
+        fh.write(f"all\t{int(args.all)}\n")
         fh.write(f"csl_orig\t{root}\n")
         fh.write(f"n_dicts_ok\t{len(dist_rows)}\n")
         fh.write(f"sample_rows\t{len(all_samples)}\n")
