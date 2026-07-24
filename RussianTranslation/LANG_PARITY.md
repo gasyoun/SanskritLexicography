@@ -131,7 +131,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H1412",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "93376ed1c55d950327a368f7b11a854d9fbf289e629c7e241e5479e6af396561",
-      "src/pilot/headless_worker.py": "bc43daf54de2d9065d55a2d77a7b49c51303bcfdc4d0ac5cb7ed362e3936d4c7",
+      "src/pilot/headless_worker.py": "60716be8bc67819e62912103a99594739419701cbc47ea691643388b6f2faf99",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
       "src/pilot/window_selftest.py": "57f2ccef564b414f7c674d511e0b183f23525f6b370a401e3c62abb8fac4f05f"
     }
@@ -332,27 +332,30 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/audit_coverage.py": "a60b8c0ed3b0022a6527a029d1e818cedab3dfcbbb545fc2c78b6a5dd514dcfa",
       "src/pilot/prompt_rule_audit.py": "a937af2156a765a5496ee9ca69503f777d55a02238c255ffb0b12e0569435338",
       "src/pilot/audit_window.py": "e98c44d8bf36e8d9476f4b773eb43cbc46b9ee839bdd7c5ea22c97b6e3f01f58",
-      "src/pilot/audit_window_en.py": "73398beb59c272ceb8bbcfdb1649e241a83d4f8447f1aae33c4c3c1e3e5e2862"
+      "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd"
     }
   },
   {
     "id": "defect_fragment_denylist_h304",
-    "mechanism": "audit emits requeue.defect.fshas.txt (the defect cards' frag_prov content addresses); requeue_from_audit appends them to the TM denylist so the fragment sidecar can never re-serve a gate-flagged fragment (build_frags harvests wf_output BEFORE gates run)",
+    "mechanism": "audit emits requeue.defect.fshas.txt (defect cards' frag_prov content addresses); requeue_from_audit appends them to the TM denylist so the fragment sidecar can never re-serve a gate-flagged fragment. H1618: EN audit_window_en --write-requeue emits the same key+fsha files beside --report (parity with RU write_reports path).",
     "files": [
       "src/pilot/audit_window.py",
+      "src/pilot/audit_window_en.py",
       "src/pilot/window_reports.py",
       "src/pilot/requeue_from_audit.py"
     ],
     "languages": [
-      "ru"
+      "ru",
+      "en"
     ],
-    "verdict": "GAP",
-    "note": "The denylist append and load_frag_tm filtering are lang-agnostic (fsha encodes lang; requeue_from_audit takes --lang), but the fshas EMITTER lives only in the RU auditor: audit_window_en.py reimplements its gates and does not compute requeue_defect_fshas or write the file, so an EN defect requeue does not auto-denylist its fragments.",
+    "verdict": "SHARED",
+    "note": "H1618 closed EN half (fsha emit + --write-requeue).",
     "tracking": "Uprava/handoffs/archive/H304-Fable_RussianTranslation_coordinator-driver-remake_07.07.26.md (EN-emitter port is the recorded follow-up)",
     "verified_sha256": {
       "src/pilot/audit_window.py": "e98c44d8bf36e8d9476f4b773eb43cbc46b9ee839bdd7c5ea22c97b6e3f01f58",
-      "src/pilot/window_reports.py": "706e11682d6076e17ac465deb802585f9d38f91dab9d509df4ad3f850d56abc3",
-      "src/pilot/requeue_from_audit.py": "687f9861e3dbcc3ec10f730330cd83a88348f8ef59d3a17383950c77e7bd03d2"
+      "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
+      "src/pilot/requeue_from_audit.py": "511f4bb258a27bfd03a755e7512c2e25196fdbdd99e2aa5f712d68e082c2eb00",
+      "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd"
     }
   },
   {
@@ -369,7 +372,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04 (commit 8cb84f7): the helper is lang-agnostic (takes a root, not a --lang flag; gen_opt_harness2.py resolves lang from the rootmap), so the fix applies to any language's requeue in one place. Was a both-paths gap before the fix, not an RU/EN divergence.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/requeue_from_audit.py": "687f9861e3dbcc3ec10f730330cd83a88348f8ef59d3a17383950c77e7bd03d2"
+      "src/pilot/requeue_from_audit.py": "511f4bb258a27bfd03a755e7512c2e25196fdbdd99e2aa5f712d68e082c2eb00"
     }
   },
   {
@@ -425,7 +428,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H169 (2026-07-04 review, 'broken validators'): the advertised HARD DUP gate was never emitted -- the only within-record duplicate signal was soft SAME-GLOSS, gated on >=3 content words, so a short duplicate ('to go'/'to go') produced zero flags and --strict passed. Classified GAP-being-closed rather than INTENTIONAL-DIVERGENCE: RU's within-record duplicate protection is the cross-part audit_sense_dupes.py gate (already SHARED, see gate_fixes_20260703_ru_only/PR #135) plus the soft, all-senses-only identical_russian_glosses risk in prompt_rule_audit.py (MEDIUM, not high-confidence) -- neither is a pairwise HARD gate. EN now closes that with a real HARD pairwise DUP check; RU getting an equivalent pairwise HARD gate (rather than its current all-or-nothing soft signal) is left as a natural follow-up, not blocking this fix. Pinned by test_en_gate_dup_has_teeth in window_selftest.py. C2 (21-07-2026, Opus 4.8 claude-opus-4-8): the HARD gate keyed on prose(english), which STRIPS {#..#} Sanskrit and <ls>, so two senses distinguished only by their referent ('N. of a serpent-demon {#vAsuki#}' vs '…{#takzaka#}') collapsed to one string and the second was wrongly HARD-DUP'd, failing --strict on faithful output (310 real within-record cases). Fixed to key the DUP seen-dict on the normalized RAW english (referent preserved) while CIRCULAR keeps prose() norm; a true identical-english duplicate is still caught HARD. Pinned by test_en_dup_gate_preserves_sanskrit_referent_c2.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/audit_window_en.py": "73398beb59c272ceb8bbcfdb1649e241a83d4f8447f1aae33c4c3c1e3e5e2862",
+      "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd",
       "src/pilot/window_selftest.py": "57f2ccef564b414f7c674d511e0b183f23525f6b370a401e3c62abb8fac4f05f"
     }
   },
@@ -689,9 +692,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window.py": "e98c44d8bf36e8d9476f4b773eb43cbc46b9ee839bdd7c5ea22c97b6e3f01f58",
-      "src/pilot/requeue_from_audit.py": "687f9861e3dbcc3ec10f730330cd83a88348f8ef59d3a17383950c77e7bd03d2",
+      "src/pilot/requeue_from_audit.py": "511f4bb258a27bfd03a755e7512c2e25196fdbdd99e2aa5f712d68e082c2eb00",
       "src/pilot/root_window_status.py": "ab13516c5ffa824ddc45b2dc0d482c09f06de57d5963dcc31d73ecc638a116f3",
-      "src/pilot/window_reports.py": "706e11682d6076e17ac465deb802585f9d38f91dab9d509df4ad3f850d56abc3",
+      "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
       "src/pilot/window_selftest.py": "57f2ccef564b414f7c674d511e0b183f23525f6b370a401e3c62abb8fac4f05f"
     }
   },
@@ -716,8 +719,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/window_common.py": "2d6926ba3a2e99f788641637b2cb6f2f9637ecb7f4e1b1c1561a367c8dd81e93",
-      "src/pilot/window_reports.py": "706e11682d6076e17ac465deb802585f9d38f91dab9d509df4ad3f850d56abc3",
-      "src/pilot/requeue_from_audit.py": "687f9861e3dbcc3ec10f730330cd83a88348f8ef59d3a17383950c77e7bd03d2",
+      "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
+      "src/pilot/requeue_from_audit.py": "511f4bb258a27bfd03a755e7512c2e25196fdbdd99e2aa5f712d68e082c2eb00",
       "src/pilot/layer_versions.py": "42e44f32db2628e3137522f5d15827cf0641b642bdacfdb76be04cdd41eaefba",
       "src/pilot/failure_capture.py": "c0ca940b54fc326e0a0b67320758c81aa5a48dd29247250996c38a85a7786e4d",
       "src/pilot/translation_memory.py": "5027755b891fce785f8b119fe95cfbb6c2aca0322ebe6a4bc6844878bf2dfbac",
@@ -834,7 +837,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H405 (09-07-2026, resolved same day). Both editions now run the same pregate() module for the mechanical invariants; the difference is only the adapter (RU: subprocess --wf over file pairs; EN: in-process per-sense), not the logic. The partial-adoption (net-new flag types only) is deliberate — the EN auditor already reimplemented LS/SAN/AB/MISSING per-sense with its own thresholds, so pregate contributes exactly the invariants it lacked (<is>, stranded/leaked anchors) rather than duplicating. Verified by a functional test (clean / is-dropped→IS-LOSS / stranded→STRANDED-ANCHOR / ls-dropped→single LS-LOSS not double-flagged) + window_selftest.py green.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/audit_window_en.py": "73398beb59c272ceb8bbcfdb1649e241a83d4f8447f1aae33c4c3c1e3e5e2862",
+      "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd",
       "src/stage2_pregate.py": "8f07422d3c416e32d1882f0777d56cc44ba781d19c8097fd9500ddefbfd22945"
     }
   },
@@ -1022,10 +1025,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "93376ed1c55d950327a368f7b11a854d9fbf289e629c7e241e5479e6af396561",
-      "src/pilot/headless_worker.py": "bc43daf54de2d9065d55a2d77a7b49c51303bcfdc4d0ac5cb7ed362e3936d4c7",
+      "src/pilot/headless_worker.py": "60716be8bc67819e62912103a99594739419701cbc47ea691643388b6f2faf99",
       "src/pilot/max_account_orchestrator.py": "03a59329720faa2cdbb56dd71284128ef3db62e301fb650cf51d4a2d4fec3a68",
       "src/pilot/coordinator.py": "e9b340cc17511e1268ae7fe839d1e74b92d0dac5c810332a3dfc7f4c2cb51e0a",
-      "src/pilot/headless_worker_selftest.py": "e6dbff6e754dc05fd77fc91a8f182671fb063420563f1454c0eba729a0caf1de",
+      "src/pilot/headless_worker_selftest.py": "124e088713e9d01658e67f1d684746a5dbff8a32fe8a8af701d986f3ae3d024d",
       "src/pilot/max_account_orchestrator_selftest.py": "41d1060b729d2f2507224ee0c072b07437c01f2285405f528c70ab8bf7df40af",
       "src/pilot/no_pwg_scale_plan.py": "7e4bb02a2f2865a3447afe47cf1f4106209bdc24f403cb6dd2b8c524b6928d63",
       "src/pilot/windows100_selftest.py": "14898dd420cf0736d7dc54064231311844dd6d30205fecd02802f75b5dd1ef38",
@@ -1052,7 +1055,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "93376ed1c55d950327a368f7b11a854d9fbf289e629c7e241e5479e6af396561",
-      "src/pilot/window_reports.py": "706e11682d6076e17ac465deb802585f9d38f91dab9d509df4ad3f850d56abc3",
+      "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
       "src/pilot/harvest_launch_stats.py": "751f4089cc2cbff3354d0f5b9506268a4ddd82e1c0f654755ffc88a11b8b6f3b",
       "src/pilot/window_selftest.py": "57f2ccef564b414f7c674d511e0b183f23525f6b370a401e3c62abb8fac4f05f"
     }
@@ -1097,7 +1100,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/sense_count.py": "e3ad886f8751f5e5ef877bf96219140bc5c8ccca5b02bb2e33f7f6620ec5db2c",
       "src/_pilot_gen_merged.py": "0c350f3ddfb9d33edf04e7e1a9fd88939ffa886066f05116e959255b29fa381f",
       "src/pilot/audit_window.py": "e98c44d8bf36e8d9476f4b773eb43cbc46b9ee839bdd7c5ea22c97b6e3f01f58",
-      "src/pilot/audit_window_en.py": "73398beb59c272ceb8bbcfdb1649e241a83d4f8447f1aae33c4c3c1e3e5e2862",
+      "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd",
       "src/pilot/window_selftest.py": "57f2ccef564b414f7c674d511e0b183f23525f6b370a401e3c62abb8fac4f05f"
     }
   },
@@ -1194,7 +1197,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "EN-only by construction: the RU audit path (audit_window.py + prompt_rule_audit.py) is wired around .merged.md/.raw.txt files and Russian-specific semantic checks, per audit_window_en.py's own module docstring (\"the RU gate ... is wired around ... Russian-specific semantic checks, so the PWG->EN pilot ran with --no-audit. This is the EN sibling\"); XREF-ONLY/NWS-DE-LOCKED are new, EN-only soft flags with no RU counterpart to port -- the RU gate's own dropped_sanskrit_span in prompt_rule_audit.markup_sigla_risks already covers RU's analogous case and was not touched. Pinned by test_h1152_guard3_xref_only_and_nws_de_locked.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/audit_window_en.py": "73398beb59c272ceb8bbcfdb1649e241a83d4f8447f1aae33c4c3c1e3e5e2862",
+      "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd",
       "src/pilot/window_selftest.py": "57f2ccef564b414f7c674d511e0b183f23525f6b370a401e3c62abb8fac4f05f"
     }
   },
@@ -1263,7 +1266,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/fix_german_connectives.py": "6a5cceb58cd7c989df819703dff777bb635ee979c7178c55ceccce199a3737a8",
       "src/pilot/foreign_literal_guards.py": "e7eaccfb846ff805b585b1c6413ec84b71970dd7fdddfc6abef90fcf04650b93",
       "src/pilot/prompt_rule_audit.py": "a937af2156a765a5496ee9ca69503f777d55a02238c255ffb0b12e0569435338",
-      "src/pilot/audit_window_en.py": "73398beb59c272ceb8bbcfdb1649e241a83d4f8447f1aae33c4c3c1e3e5e2862"
+      "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd"
     }
   },
   {
@@ -1334,13 +1337,13 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/card_fields.py": "976c5aa943a35da1691e2ce72e9cb4a14ac53d3bae37f8c68345cc68cb233e2b",
       "src/promote_final_cards.py": "6d58134bab6ace87c7c71d9787ea28a5f163b7485e7b6976908c3c0e00e02e74",
       "src/pilot/translation_memory.py": "5027755b891fce785f8b119fe95cfbb6c2aca0322ebe6a4bc6844878bf2dfbac",
-      "src/pilot/headless_worker.py": "bc43daf54de2d9065d55a2d77a7b49c51303bcfdc4d0ac5cb7ed362e3936d4c7",
+      "src/pilot/headless_worker.py": "60716be8bc67819e62912103a99594739419701cbc47ea691643388b6f2faf99",
       "src/pilot/gen_opt_harness2.py": "93376ed1c55d950327a368f7b11a854d9fbf289e629c7e241e5479e6af396561"
     }
   },
   {
     "id": "h1339_en_promote_parity_gap",
-    "mechanism": "promote_en.py has NO {Tn}-residue gate, NO better-attempt-wins merge and NO model-identity cross-check — the EN twin of the B08/B20/B21 promote hardening classes",
+    "mechanism": "promote_en.py: {Tn}-residue refuse is CLOSED (C6 UnrestoredPlaceholder on attach). Still GAP: no better-attempt-wins merge for the en field and no model-identity cross-check twin of promote_final_cards B08/B20 — EN attach path overwrites en idempotently without ranking prior attempts.",
     "files": [
       "src/promote_en.py"
     ],
@@ -1348,7 +1351,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "GAP",
-    "note": "",
+    "note": "H1618: narrowed — TN residue no longer part of the gap; better-attempt/model-id remain.",
     "tracking": "H1339 Tier-B report pwg_ru/h1339/H1339_TIER_B_STATUS_2026-07-19.md — port before the first real promote_en run (EN store currently 0 rows; H1209 mini-EN is the first consumer)",
     "verified_sha256": {
       "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d"
@@ -1391,7 +1394,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/bounded_staged_run.py": "fe79ff9812e26ec5f3fd3ed9a0462855e801d7711b4634a2e9eeeffface4c68c",
+      "src/pilot/bounded_staged_run.py": "ea6145c0a4a5fbdd3d9593e0fc8f7082b5fb4a26360f2ee9d2fea0a9a129eafa",
       "src/pilot/bounded_supervisor.py": "d23e508463d5bca4e161e9a20769221186d85e7a68ef5c8e3878125997478446",
       "src/pilot/max_account_orchestrator.py": "03a59329720faa2cdbb56dd71284128ef3db62e301fb650cf51d4a2d4fec3a68"
     }
@@ -1412,7 +1415,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "93376ed1c55d950327a368f7b11a854d9fbf289e629c7e241e5479e6af396561",
-      "src/pilot/headless_worker.py": "bc43daf54de2d9065d55a2d77a7b49c51303bcfdc4d0ac5cb7ed362e3936d4c7"
+      "src/pilot/headless_worker.py": "60716be8bc67819e62912103a99594739419701cbc47ea691643388b6f2faf99"
     }
   },
   {
@@ -1431,7 +1434,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/requeue_from_audit.py": "687f9861e3dbcc3ec10f730330cd83a88348f8ef59d3a17383950c77e7bd03d2",
+      "src/pilot/requeue_from_audit.py": "511f4bb258a27bfd03a755e7512c2e25196fdbdd99e2aa5f712d68e082c2eb00",
       "src/pilot/translation_memory.py": "5027755b891fce785f8b119fe95cfbb6c2aca0322ebe6a4bc6844878bf2dfbac",
       "src/promote_final_cards.py": "6d58134bab6ace87c7c71d9787ea28a5f163b7485e7b6976908c3c0e00e02e74"
     }
@@ -1552,7 +1555,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1386 (22-07-2026, Fable 5 claude-fable-5). Every fix is language-neutral orchestration/persistence mechanics -- none introduces a --lang branch. Lane facts checked per the handoff: the frag TM half of C3 (build_frags/load_frag_tm/best_reusable) is --lang-parameterized so both lanes get it; the recursive harvest glob + D3 per-lease store_delta + P3g batch gate live in the RU staged/coordinator lane ONLY because the EN promote lane (promote_en.py) by design has no fragment harvest and no batch transaction (its INTENTIONAL-DIVERGENCE ruling is H1425 W3, unchanged); P3b is the EN lane's own seed feed; the h1209 rig (D1) is field-parameterized (payload['field']), so a future EN slice inherits prompt_common/chunking as-is; PWG_INPUT_DIR (P3f) is honored by both audit_window and audit_window_en. Pinned by bounded_staged_run_selftest tests l/m, window_selftest test_h1386_c3_frag_unblock_serves_replacement + test_h1386_d1_medium50_script_size_cap, promote_lock/promote_final_cards selftests, and the h1339_offline_bench deterministic signature (batch == per-lease).",
     "tracking": "H1386",
     "verified_sha256": {
-      "src/pilot/bounded_staged_run.py": "fe79ff9812e26ec5f3fd3ed9a0462855e801d7711b4634a2e9eeeffface4c68c",
+      "src/pilot/bounded_staged_run.py": "ea6145c0a4a5fbdd3d9593e0fc8f7082b5fb4a26360f2ee9d2fea0a9a129eafa",
       "src/pilot/bounded_supervisor.py": "d23e508463d5bca4e161e9a20769221186d85e7a68ef5c8e3878125997478446",
       "src/pilot/max_account_orchestrator.py": "03a59329720faa2cdbb56dd71284128ef3db62e301fb650cf51d4a2d4fec3a68",
       "src/pilot/translation_memory.py": "5027755b891fce785f8b119fe95cfbb6c2aca0322ebe6a4bc6844878bf2dfbac",
@@ -1568,26 +1571,29 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
   },
   {
     "id": "h1553_wall_clock_defect_ready_partial",
-    "mechanism": "H1403 A2+A3 residues (H1553): auto-derive wall_clock_minutes + wall_clock_source; stage_boundary dashboard events; promote refuses defect keys without --force; ready_partial clean-subset helper (dry-run default)",
+    "mechanism": "H1403 A2+A3 residues (H1553): auto-derive wall_clock_minutes + wall_clock_source; stage_boundary dashboard events; promote refuses defect keys without --force; ready_partial clean-subset helper (dry-run default). H1618: EN audit wires build_production_metrics (wall_clock_source) into --report; defect refuse + ready_partial remain RU promote_final_cards only.",
     "files": [
       "src/pilot/window_reports.py",
       "src/pilot/audit_window.py",
+      "src/pilot/audit_window_en.py",
       "src/pilot/dashboard_events.py",
       "src/promote_final_cards.py",
       "src/pilot/window_selftest.py"
     ],
     "languages": [
-      "ru"
+      "ru",
+      "en"
     ],
     "verdict": "GAP",
-    "note": "H1553 (24-07-2026, Grok 4.5): helpers in window_reports.derive_wall_clock_minutes / dashboard_events.emit_stage_boundary are lang-agnostic, but only the RU audit_window.py wires them; audit_window_en.py does not call build_production_metrics. Defect-key refusal and ready_partial live only on promote_final_cards.py (RU store writer); promote_en.py is EN-attach and has no defect list. EN port is deferred until EN gains a parallel defect-list promote path.",
+    "note": "H1618: wall_clock half SHARED with audit_window_en. Residual GAP = EN promote defect-key refuse + ready_partial (no EN promote twin of promote_final_cards).",
     "tracking": "https://github.com/gasyoun/Uprava/blob/main/handoffs/H1553-Opus_RussianTranslation_rt-fullaudit-w1-a-h1403-residues_23.07.26.md",
     "verified_sha256": {
-      "src/pilot/window_reports.py": "706e11682d6076e17ac465deb802585f9d38f91dab9d509df4ad3f850d56abc3",
+      "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
       "src/pilot/audit_window.py": "e98c44d8bf36e8d9476f4b773eb43cbc46b9ee839bdd7c5ea22c97b6e3f01f58",
       "src/pilot/dashboard_events.py": "f28f4a42568479f16d759d5e6aa63f4066c4e54920555102f77c2b0b9311bae6",
       "src/promote_final_cards.py": "6d58134bab6ace87c7c71d9787ea28a5f163b7485e7b6976908c3c0e00e02e74",
-      "src/pilot/window_selftest.py": "57f2ccef564b414f7c674d511e0b183f23525f6b370a401e3c62abb8fac4f05f"
+      "src/pilot/window_selftest.py": "57f2ccef564b414f7c674d511e0b183f23525f6b370a401e3c62abb8fac4f05f",
+      "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd"
     }
   }
 ]
