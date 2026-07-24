@@ -1,0 +1,21 @@
+{
+  "fixture_id": "cohort_scaffold.promote_missing",
+  "description": "Crash after receipt sealed, before store write — all accepted keys missing from store.",
+  "expected_kind": "promote_missing",
+  "observed_store_keys": ["preexisting_root_a"],
+  "receipts": [
+    {
+      "schema": "pwg_ru.promotion_receipt.v1",
+      "run_id": "run-wave1-001",
+      "attempt_id": "attempt-1",
+      "lease_id": "lease-dah-w01",
+      "keys_accepted": ["dah.1", "dah.2"],
+      "keys_rejected": ["dah.3"],
+      "store_path": "fixtures/cohort_scaffold/store_stub.jsonl",
+      "row_count_before": 1,
+      "row_count_after": 3,
+      "tm_rebuild": false,
+      "created_at": "2026-07-23T12:00:00Z"
+    }
+  ]
+}

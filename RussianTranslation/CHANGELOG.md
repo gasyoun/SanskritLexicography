@@ -10,6 +10,18 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — promotion receipt scaffold (H1554 Track B)
+
+- **`src/pilot/promotion_receipt.py`** — pure offline schema v1:
+  `AttemptRunBinding`, `PromotionReceipt` (`pwg_ru.promotion_receipt.v1`),
+  `write_receipt` / `load_receipt` / `load_receipts`, and
+  `reconcile_startup(receipts, observed_store_keys) → ReconcilePlan`
+  with buckets `{promote_missing, skip_already_present, error_inconsistent}`.
+- Fixtures under `src/pilot/fixtures/cohort_scaffold/` (three reconcile cases).
+- Pinned by `python src/pilot/promotion_receipt_selftest.py` (6/6).
+- Scaffold only for H1437 Phase-1 prerequisites — **no** multi-profile live
+  scheduler, no coordinator wiring, no paid gen, no live store write.
+
 ### Added — H1403 A2+A3 production residues (H1553 Track A)
 
 - **Wall-clock auto-derive** in `window_reports.derive_wall_clock_minutes` /
