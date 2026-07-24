@@ -28,6 +28,22 @@ windows. Per-profile call concurrency is serialized by the kernel-backed `Active
 timeout budgets are enforced in `headless_worker.py`, and a `--stop-before-promote` review checkpoint
 gates promotion.
 
+**`--max-agents` footgun (H1610/H1618):** the flag is a **TOTAL** spawn ceiling
+(translate+heal), not concurrency width. Multi-key windows must **omit** it (rely on
+manifest `max_translate_agents` / `max_heal_agents`). `headless_worker` refuses
+`N < selected_keys` before any paid call and preserves `budget_exceeded*` failure notes
+instead of overwriting them with `selfheal-nothing-resolved`. Canary-only:
+`--max-agents 1` with exactly one key.
+
+**C-49 residual registry (H1618):** `src/pilot/no_pwg_residual_ledger.py` +
+`no_pwg_residuals.jsonl` — defect requeues stamp blocked residuals by default; planner
+skip-list via `no_pwg_scale_plan.read_residuals`. Run
+`python src/pilot/no_pwg_residual_ledger.py check` after editing the registry.
+
+**Offline cohort engine (H1437 / H1618):** `src/pilot/cohort_engine.py` — multi-profile
+barrier, crash-resume, atomic `max_calls` reservation; prove with
+`python src/pilot/cohort_engine_selftest.py` (7/7). Not a live production dispatcher yet.
+
 Coordinator state is deliberately split: `claimed`/`prepared`/`requeue_prepared` reserve work but
 consume no model runtime; `begin-run` is the only transition to `running`, and `record-output` moves
 that reservation through `auditing` before releasing it. Ordinary/manual execution is globally

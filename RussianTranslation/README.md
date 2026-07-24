@@ -150,8 +150,17 @@ python src\pilot\gen_opt_harness2.py <root>          # emit the optimized manife
 # HEADLESS route (H1110): execute the emitted manifest v2 via headless_worker.py (profile-bound),
 # driven by bounded_staged_run.py / the coordinator, saving wf_output.json. The Max-Workflow lane
 # (run_pilot_wf.opt2.js) is retained for forensics only.
+# H1618: omit --max-agents on multi-key windows (total spawn ceiling, not concurrency width;
+# N < selected_keys is refused before any paid call). Canary-only: --max-agents 1 with 1 key.
 python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
+# After defect requeue: residuals stamp no_pwg_residuals.jsonl (C-49); check with:
+#   python src\pilot\no_pwg_residual_ledger.py check
 ```
+
+Offline multi-profile cohort (H1437 Phase 0 green via H1618):
+[`src/pilot/cohort_engine.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/cohort_engine.py)
+— `python src/pilot/cohort_engine_selftest.py` (7/7 fake-worker pins). Live multi-profile
+dispatch remains gated; the engine is the offline control-plane proof.
 
 The preflight report estimates agents/tokens/cost and partitions mixed windows
 into `cost_partition.run_now` / `cost_partition.defer_monster`, so one
