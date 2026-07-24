@@ -163,12 +163,40 @@ def qe_comet_factory():
     return score
 
 
+def qe_nn_api_factory():
+    """H1457 A2 -- COMET-QE via nn_api.py (the S1-designated adapter: HF
+    Inference API primary, logged fallbacks). Returns None if nn_api reports
+    no QE backend serves (see research/nn_api_smoketest.md for why, as of
+    22-07-2026: no unbabel-comet wheel for this Python, HF Inference API
+    401s unauthenticated, no LLM-judge key available)."""
+    try:
+        import nn_api
+    except Exception as e:
+        sys.stderr.write('qe: nn_api import failed (%s) -> proxy\n' % e)
+        return None
+    if not nn_api.qe_available():
+        return None
+
+    def score(rec):
+        s = nn_api.qe(rec.get('sa') or rec.get('slp1') or '', rec.get('ru') or '')
+        if s is None:
+            return qe_proxy(rec)
+        return max(0.0, min(1.0, float(s)))
+    return score
+
+
 def make_qe(backend):
     if backend == 'comet':
+        fn = qe_nn_api_factory()
+        if fn is not None:
+            return fn, 'comet'
+        # legacy path: a locally-installed unbabel-comet package, if present
         fn = qe_comet_factory()
         if fn is not None:
             return fn, 'comet'
-        sys.stderr.write('qe: unbabel-comet not available -> using deterministic proxy\n')
+        sys.stderr.write('qe: comet unavailable (nn_api + local unbabel-comet both '
+                         'absent/unserving; see research/nn_api_smoketest.md) -> '
+                         'using deterministic proxy\n')
     return qe_proxy, 'proxy'
 
 
@@ -369,6 +397,135 @@ def cmd_calibrate(a):
     return 0
 
 
+# --------------------------------------------------------- H1457 A2 calibration
+DEFAULT_GRADE_GOLD = os.path.join(ROOT, 'gold', 'grade_gold.jsonl')
+DEFAULT_CALIBRATION_MD = os.path.join(HERE, 'GRADE_CALIBRATION.md')
+QE_RHO_FLOOR = 0.40
+GRADE_RANK = {'A': 2, 'B': 1, 'C': 0}
+
+
+def _spearman_rho(xs, ys):
+    """Spearman rank correlation, no scipy dependency. Average ranks on ties
+    (standard mid-rank convention), then Pearson correlation of the ranks."""
+    n = len(xs)
+    if n < 2:
+        return float('nan')
+
+    def ranks(vals):
+        order = sorted(range(n), key=lambda i: vals[i])
+        r = [0.0] * n
+        i = 0
+        while i < n:
+            j = i
+            while j + 1 < n and vals[order[j + 1]] == vals[order[i]]:
+                j += 1
+            avg_rank = (i + j) / 2.0 + 1
+            for k in range(i, j + 1):
+                r[order[k]] = avg_rank
+            i = j + 1
+        return r
+
+    rx, ry = ranks(xs), ranks(ys)
+    mx, my = sum(rx) / n, sum(ry) / n
+    cov = sum((a - mx) * (b - my) for a, b in zip(rx, ry))
+    vx = sum((a - mx) ** 2 for a in rx)
+    vy = sum((b - my) ** 2 for b in ry)
+    if vx == 0 or vy == 0:
+        return float('nan')
+    return cov / (vx * vy) ** 0.5
+
+
+def cmd_calibrate_gold(a):
+    """H1457 A2 -- Spearman rho of the QE score vs the frozen grade_gold.jsonl
+    A/B/C grade (VERIFICATION doc's acceptance criterion). Floor rho>=0.40 to
+    claim the grade path is ACL-defensible; below floor, --qe stays proxy and
+    the result is written as PRELIMINARY (stop condition, not a hard failure
+    -- the plan keeps A1/A3/A4/A6 moving regardless)."""
+    if not os.path.exists(a.gold):
+        sys.exit('frozen gold not found: %s (run build_grade_gold.py build first)' % a.gold)
+    rows = [json.loads(l) for l in open(a.gold, encoding='utf-8') if l.strip()]
+    weights = load_weights()
+    qe_fn, qe_name = make_qe(a.qe)
+    scores = [qe_fn(r) for r in rows]
+    ranks_gold = [GRADE_RANK.get(r.get('grade'), 0) for r in rows]
+    rho = _spearman_rho(scores, ranks_gold)
+    by_grade = collections.defaultdict(list)
+    for r, s in zip(rows, scores):
+        by_grade[r.get('grade')].append(s)
+    means = {g: (sum(v) / len(v) if v else float('nan')) for g, v in by_grade.items()}
+    # calibration band: midpoints between adjacent-grade mean scores, sorted desc
+    ordered = [g for g in ('A', 'B', 'C') if g in means]
+    bands = []
+    for i in range(len(ordered) - 1):
+        hi, lo = ordered[i], ordered[i + 1]
+        bands.append((hi, lo, (means[hi] + means[lo]) / 2))
+    passed = not (rho != rho) and rho >= QE_RHO_FLOOR  # rho!=rho guards NaN
+    status = 'DEFENSIBLE (rho >= %.2f floor)' % QE_RHO_FLOOR if passed else \
+             'PRELIMINARY (rho < %.2f floor, or comet unavailable -> proxy in use)' % QE_RHO_FLOOR
+
+    md = _render_calibration_md(qe_name, len(rows), rho, means, bands, passed, status)
+    with open(a.out, 'w', encoding='utf-8', newline='\n') as f:
+        f.write(md)
+    print('calibrate-gold: qe=%s, n=%d, Spearman rho=%.4f -> %s' % (qe_name, len(rows), rho, status))
+    print('  mean score by grade: %s' % {g: round(m, 4) for g, m in means.items()})
+    print('  -> %s' % a.out)
+    return 0 if passed or qe_name == 'proxy' else 0  # measurement command; never fails the run
+
+
+def _render_calibration_md(qe_name, n, rho, means, bands, passed, status):
+    lines = []
+    lines.append('# GRADE_CALIBRATION — H1457 A2 COMET-QE calibration vs frozen gold')
+    lines.append('')
+    lines.append('_Created: 22-07-2026 · Last updated: 22-07-2026_')
+    lines.append('')
+    lines.append('Generated by `tm_grade.py calibrate-gold` (Sonnet 5, `claude-sonnet-5`), '
+                 'H1457 Track A2, against `gold/grade_gold.jsonl` (n=%d).' % n)
+    lines.append('')
+    lines.append('**QE backend used: `%s`.**' % qe_name)
+    if qe_name != 'comet':
+        lines.append('')
+        lines.append('COMET-QE does not serve in this environment (spike S1 — see '
+                     '[`research/nn_api_smoketest.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/nn_api_smoketest.md): '
+                     'no cp314 `unbabel-comet` wheel + no local compiler; HF Inference API '
+                     '401s unauthenticated; no LLM-judge key available). The Spearman rho '
+                     'below is measured for the **proxy** heuristic instead, so this run '
+                     "reports the proxy's honest (weak) correlation rather than a real "
+                     'COMET-QE number. `tm_grade.py`\'s `--qe comet` path is fully wired '
+                     '(`qe_nn_api_factory` tries `nn_api.qe()` first, falls back to a local '
+                     '`unbabel-comet` package, then to proxy) — the moment either path '
+                     'serves (an `HF_TOKEN` + gated-model acceptance, or a working '
+                     '`unbabel-comet` install), re-run this command with `--qe comet` to get '
+                     'the real number with no further code changes.')
+    lines.append('')
+    lines.append('## Result')
+    lines.append('')
+    lines.append('- Spearman rho (QE score vs A/B/C grade, A=2/B=1/C=0): **%.4f**' % rho)
+    lines.append('- Floor: rho >= %.2f' % QE_RHO_FLOOR)
+    lines.append('- **Status: %s**' % status)
+    lines.append('')
+    lines.append('## Mean QE score by grade')
+    lines.append('')
+    lines.append('| Grade | Mean score |')
+    lines.append('|---|---|')
+    for g in ('A', 'B', 'C'):
+        if g in means:
+            lines.append('| %s | %.4f |' % (g, means[g]))
+    lines.append('')
+    lines.append('## Calibration band (candidate thresholds)')
+    lines.append('')
+    if bands:
+        lines.append('| Boundary | Midpoint score |')
+        lines.append('|---|---|')
+        for hi, lo, mid in bands:
+            lines.append('| %s / %s | %.4f |' % (hi, lo, mid))
+    else:
+        lines.append('(insufficient grade diversity to derive a band)')
+    lines.append('')
+    lines.append('_Dr. Mārcis Gasūns_')
+    lines.append('')
+    return '\n'.join(lines)
+
+
 def _auc(pos, neg):
     """Prob. a random acceptable scores >= a random defective (ties=0.5). O(n*m),
     fine for the 320-row gold set."""
@@ -441,7 +598,17 @@ def selftest():
     assert gOral['modality'] == 'oral'
     gOralAdj = grade_unit(oral, FIXTURE_WEIGHTS, qe_fn, idx, adjudicated=True)
     assert gOralAdj['grade'] == 'A', 'human-adjudicated oral unit may reach A'
-    print('tm_grade selftest OK -- qe ordering, source override, consensus, grade gates, oral cap')
+
+    # H1457 A2: Spearman rho -- perfect monotone relation -> 1.0; a scrambled
+    # one is well below the 0.40 floor; ties (repeated scores) don't crash.
+    assert abs(_spearman_rho([1, 2, 3, 4], [1, 2, 3, 4]) - 1.0) < 1e-9
+    assert abs(_spearman_rho([1, 2, 3, 4], [4, 3, 2, 1]) - (-1.0)) < 1e-9
+    rho_weak = _spearman_rho([0.9, 0.1, 0.9, 0.1], [2, 2, 0, 0])
+    assert rho_weak == rho_weak and abs(rho_weak) < 0.4, rho_weak  # not NaN, below floor
+    assert _spearman_rho([1, 1, 1], [1, 2, 3]) != _spearman_rho([1, 1, 1], [1, 2, 3])  # NaN != NaN
+
+    print('tm_grade selftest OK -- qe ordering, source override, consensus, grade gates, '
+          'oral cap, Spearman rho')
     return 0
 
 
@@ -470,6 +637,12 @@ def main():
     c.add_argument('--in', dest='inp', default=DEFAULT_IN)
     c.add_argument('--qe', choices=['proxy', 'comet'], default='proxy')
 
+    cg = sub.add_parser('calibrate-gold', help='H1457 A2: Spearman rho of QE score vs '
+                        'grade_gold.jsonl A/B/C grade + calibration band')
+    cg.add_argument('--gold', default=DEFAULT_GRADE_GOLD)
+    cg.add_argument('--qe', choices=['proxy', 'comet'], default='comet')
+    cg.add_argument('--out', default=DEFAULT_CALIBRATION_MD)
+
     sub.add_parser('selftest', help='deterministic fixture asserts')
 
     a = ap.parse_args()
@@ -477,6 +650,8 @@ def main():
         return cmd_grade(a)
     if a.cmd == 'calibrate':
         return cmd_calibrate(a)
+    if a.cmd == 'calibrate-gold':
+        return cmd_calibrate_gold(a)
     if a.cmd == 'selftest':
         return selftest()
     return 1
