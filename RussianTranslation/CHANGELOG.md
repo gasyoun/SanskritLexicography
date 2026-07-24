@@ -10,6 +10,14 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — editorial decisions dry-run apply (H1556 Track D)
+
+- **`src/pilot/apply_editorial_decisions.py`** — default dry-run CLI over
+  `pwg_ru/eval/h1303_abbrev.decisions.json` + `h1306_style.decisions.json` (and
+  extra `--decisions` paths). Missing votes → `status: pending_votes` exit 0.
+  Real store stamp requires `PWG_RU_ALLOW_EDITORIAL_APPLY=1` (wave-1 never sets).
+- Pinned by `python src/pilot/apply_editorial_decisions_selftest.py` (4/4; D1–D3).
+
 ### Added — promotion receipt scaffold (H1554 Track B)
 
 - **`src/pilot/promotion_receipt.py`** — pure offline schema v1:
