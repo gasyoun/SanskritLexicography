@@ -1,0 +1,7 @@
+key	value
+seed	1483
+dicts	mw,pwg,pw,ap90,cae,wil,sch,md,ccs,gra,skd,vcp,bhs,bur,vei
+csl_orig	C:\Users\user\Documents\GitHub\csl-orig\v02
+n_dicts_ok	15
+sample_rows	457
+input_sha1_12	mw:bfaf9e5a5bf6;pwg:f37dcd1dd3ce;pw:8acc8dbe5f71;ap90:bd278117441b;cae:614c44906cc6;wil:8fed04a7e79d;sch:52e540ec22f3;md:4d8c08644bbe;ccs:7637709fdd2e;gra:6748c74799aa;skd:a8f2278b5763;vcp:cd55e98ef588;bhs:10c9b00b17e8;bur:40e5cf0e899f;vei:c5bf67150ab8

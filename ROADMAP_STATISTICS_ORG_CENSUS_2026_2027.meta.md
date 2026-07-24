@@ -1,6 +1,6 @@
 # ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.meta.md — metadoc for `ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md`
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 24-07-2026_
 
 This is a **metadoc** — a document *about* a document. Its subject is
 [ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md).
@@ -29,7 +29,7 @@ standing "one metadoc per important document" convention (`~/.claude/CLAUDE.md`)
 
 | # | Improvement | Why | Status |
 |---|---|---|---|
-| 1 | L1 "Definition typology (synonym vs equivalent vs encyclopedic)" — ○ not started | Flagged as an "ATLAS_FAIR micro-gap" in the subject's own L1 table, ties directly to the publications roadmap's Part I microstructure gap list | parked — no handoff minted yet |
+| 1 | L1 "Definition typology (synonym vs equivalent vs encyclopedic)" — ◐ first-pass (H1483, 24-07-2026) | Flagged as an "ATLAS_FAIR micro-gap"; first-pass rubric + 15-dict distribution + gold 62% now in `data/DEFINITION_TYPOLOGY_WS2_4_2026.md` | first-pass landed; double-key 300×7 pool + Wilson `E.` peel still open |
 | 2 | L2 "Form→lemma ambiguity rate" — ○ not started | Named directly in the subject's L2 table as the one remaining morphology-layer gap | parked — no handoff minted yet |
 | 3 | L3 "Meter / prosody statistics" — ○ not started | Named in the subject's L3 table; natural home is SanskritKaraoke per the "Where" column | parked — no handoff minted yet, likely SanskritKaraoke-side work |
 | 4 | L3 "Vedic accent coverage" — ○ not started, pending VedaWeb reuse | Explicitly gated on VedaWeb M13 in the subject's own table | parked — depends on [ROADMAP_VEDAWEB_REUSE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_VEDAWEB_REUSE.md) Phase 2/6 landing first |
