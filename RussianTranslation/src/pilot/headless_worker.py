@@ -382,7 +382,12 @@ class HeadlessEngine:
                       'observed_cost_usd': 0.0, 'cost_evaluable': True, 'priced_calls': 0,
                       'missing_usage_calls': 0}
 
-    def note(self, key, error):
+    def note(self, key, error, preserve=False):
+        # H1610 / H1618: mirror JS `if (!FAIL[k]) noteFail(...)` so a later terminal
+        # soft stamp (selfheal-nothing-resolved, no-selfheal-fallback) cannot clobber
+        # an earlier budget_exceeded / timeout / content note that is the real cause.
+        if preserve and key in self.failures:
+            return
         self.failures[key] = str(error)[:300]
 
     def _accumulate_usage(self, wrapper):
@@ -572,7 +577,7 @@ class HeadlessEngine:
     def self_heal(self, key):
         groups = self.m.get('fragment_groups', {}).get(key) or []
         if not groups:
-            self.note(key, 'no-selfheal-fallback')
+            self.note(key, 'no-selfheal-fallback', preserve=True)
             return None
         runtime = self.m.get('runtime', {})
         maximum = (int((len(groups) * float(runtime.get('per_card_heal_factor', 1.5))) + 0.9999) +
@@ -640,7 +645,7 @@ class HeadlessEngine:
                         senses.append(sense)
                         owners.append((rec_h, rec_grammar))
         if not senses:
-            self.note(key, 'selfheal-nothing-resolved')
+            self.note(key, 'selfheal-nothing-resolved', preserve=True)
             return None
         card = stitched_card(
             key,
@@ -731,9 +736,32 @@ def _validate_fragment_tm(manifest):
                         % (key, owners))
 
 
+def refuse_starvation_max_agents(manifest, max_agents_override):
+    """H1610 / H1618: `--max-agents N` is a TOTAL spawn ceiling (translate+heal), not width.
+
+    Canary-only values (N=1) on multi-key windows produce only-b0 / all-nulls with
+    `budget_stops ≫ 0` while failures are stamped `selfheal-nothing-resolved`. Refuse
+    before any paid call when the override is strictly less than the selected key count.
+    Single-key canaries (override >= 1 and keys == 1) still pass.
+    """
+    if max_agents_override is None:
+        return
+    keys = (manifest.get('meta') or {}).get('selected_keys') or []
+    n = len(keys)
+    if n > 1 and max_agents_override < n:
+        raise ValueError(
+            '--max-agents=%d starves a %d-key window (total spawn ceiling, not concurrency '
+            'width). Omit --max-agents for multi-key/heal-capable windows so manifest '
+            'budgets (max_translate_agents / max_heal_agents) apply; use --max-agents 1 '
+            'only for true single-spawn canaries (1 key that must finish in one call). '
+            'See LAUNCH_FUCKUPS id C2_M50_W1_MAX_AGENTS1_2026-07-24.'
+            % (max_agents_override, n))
+
+
 def execute(manifest, claude='claude', timeout=7200, runner=None, max_agents_override=None):
     validate_manifest(manifest, require_v2=False)
     _validate_fragment_tm(manifest)      # R6: refuse a null-owner fragment_tm slot BEFORE any call
+    refuse_starvation_max_agents(manifest, max_agents_override)
     engine = HeadlessEngine(manifest, claude, timeout, runner, max_agents_override)
     try:
         results, healed, presplit = engine.run_all()
@@ -785,8 +813,9 @@ def main(argv=None):
                     help='read-only/historical replay only; v1 is not a production contract')
     ap.add_argument('--timeout', type=int, default=7200)
     ap.add_argument('--max-agents', type=int, default=None,
-                    help='R3: hard cap on total model spawns (translate+heal); binds even when '
-                         'the manifest omits budgets, and caps the manifest budget when both set')
+                    help='R3: hard cap on TOTAL model spawns (translate+heal), not concurrency '
+                         'width. Canary-only: refuse when N < selected key count (H1610). '
+                         'Omit for multi-key windows so manifest budgets apply.')
     args = ap.parse_args(argv)
     manifest_hash = sha256_path(args.manifest)
     with open(args.manifest, encoding='utf-8') as f:
