@@ -10,6 +10,35 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1457 Track A: Sa→Ru TM technical hardening (COMET-QE/awesome-align/LaBSE spike)
+
+- Spike S1 (`src/nn_api.py`): LaBSE embeddings serve locally in-env (no HF token needed);
+  COMET-QE does NOT (no cp314 `unbabel-comet` wheel + no local compiler, HF Inference API
+  401s unauthenticated, no LLM-judge key available) — logged in
+  `research/nn_api_smoketest.md`, per the plan's stop condition this blocks A2 only.
+- A1 (`src/build_grade_gold.py`): froze `gold/grade_gold.jsonl` — the H136 320-row sample
+  extended with an A/B/C grade via two independent raters (label-policy + qe_composite);
+  Cohen's κ ≈ -0.004, itself confirming FINDINGS §70 (proxy-QE is a poor semantic judge),
+  not a defect in the frozen labels. Agent-adjudicated, not human — flagged preliminary.
+- A2 (`src/tm_grade.py`): wired `--qe comet` through `nn_api.qe()` first, legacy local
+  `unbabel-comet` second; added `calibrate-gold` (Spearman ρ vs frozen gold). Proxy ρ≈-0.035
+  (well under the 0.40 floor) — PRELIMINARY, activates automatically once QE serves.
+- A3 (`src/tm_align.py`): awesome-align-style per-pair `agreement` confidence (LaBSE cosine,
+  the independent-aligner check); calibrated gate `agreement>=0.20` beats the flat 97% rate
+  (P=1.000, R=0.966 on the committed 30-row precision sample) — `src/ALIGN_GATE.md`.
+- A4 (`src/mined_filter_bicleaner.py`): Bicleaner-style composite (length-ratio + A3's
+  alignment signal + fluency proxy); gate beats the H224 single-model baseline (P=1.000 vs
+  96.7%, R=0.931) on the precision sample. The real 10,132-row mined file is absent from
+  every local checkout — documented, not faked; `promote` is ready the moment it exists.
+- A5 (`src/tm_saru_align_labse.py`): LaBSE-embedding + margin scoring + a compact
+  Vecalign-style monotone DP; pilot on the Leitan Sundarakāṇḍa (2859 L0 units) —
+  Vecalign precision@sample = 0.966 (floor 0.80, **PASS**); `src/LABSE_ALIGN.md`.
+- A6 (`src/tm_retrieval_eval.py`): retrieval-measurement harness (no-TM vs graded-TMX-as-
+  fuzzy-context), engine-pluggable, selftested against mock engines. BLOCKED for a live run
+  (no DeepSeek/Anthropic key in this environment) — `src/RETRIEVAL_EVAL.md`.
+- CI: new `RussianTranslation gates` step runs all six new/touched scripts' fixture-only
+  selftests (no network/model calls).
+
 ### Added — editorial decisions dry-run apply (H1556 Track D)
 
 - **`src/pilot/apply_editorial_decisions.py`** — default dry-run CLI over

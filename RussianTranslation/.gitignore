@@ -2,6 +2,9 @@
 # Claude Code local session config — not a deliverable, differs per machine/session.
 .claude/settings.local.json
 
+# H1457 nn_api.py embed/QE disk cache — regenerable, content-addressed, no deliverable content.
+src/.nn_api_cache/
+
 # Generated per-root pwg_ru harnesses (derived from gen_opt_harness2.py et al.; inlined inputs)
 src/pilot/run_fidelity_judge.js
 src/pilot/run_pilot_wf.opt.js
