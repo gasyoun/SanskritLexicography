@@ -536,6 +536,30 @@ classes, expected-vs-actual metrics, residual status, and unknown recurrence.
   "guardrail": "v2 gates direction-aligned with canonical accept(): HARD {Tn}-multiset fidelity over record.grammar+sense.german AND over the translation field (mask-level supersets of the two HARD accept() rejects), sense gate shortfall-only vs source_senses (SAN-LOSS direction; over-emission never flagged), retry feedback explicitly forbids notes-parking. canonical_audit.py is the authoritative promote-DRY verdict (independent adversarial review: 7/7 dimensions faithful to accept()). v2 rerun wf_e858f3cf-6af: 3/3 canonical PASS (79/79 34/34, 78/78 34/34, 74/74 32/32), self-report == canonical, 8 agents, 544,056 tokens.",
   "residual_status": "fixed",
   "residual_risk": "Any future side-harness gate authored from scratch can drift from accept() the same way; derive gate constants from card_fields/the manifest's hardened fields and re-run canonical_audit.py after every rig change before trusting a self-reported promote verdict."
+ },
+ {
+  "id": "C2_M50_W1_MAX_AGENTS1_2026-07-24",
+  "handoff": "live-c2-forensics",
+  "date": "2026-07-24",
+  "title": "c2 medium50 w1: only b0 / 0-of-3 nulls under --max-agents 1 (budget starvation misread as host failure)",
+  "lane": "headless CLI, profile c2 Pro, medium50 window1 (nakzatra/sarvatra/sakft)",
+  "model": "claude-sonnet-5",
+  "orchestrator": "Grok 4.5 session + headless_worker.py",
+  "expected": {
+   "agents": "manifest budgets max_translate_agents=19 / max_heal_agents=41; 3 whole-card batches (b0..b2) plus heal if needed",
+   "tokens": "canary-scale: prior c2 canary ~3/3 in ~93s; full w1 expected multi-batch"
+  },
+  "actual": {
+   "agents": "full-config: translate_spent=1 heal_spent=0 budget_stops=24 (~.60); stripped: translate_spent=1 heal_spent=0 budget_stops=23 timeout on b0; fix-run without --max-agents: multi-heal fan-out then HardFailure rate_limit on b1",
+   "tokens": "full-config ~179k subagent tokens / .599; stripped ; fix-run partial spend then session-limit 429"
+  },
+  "passes": 3,
+  "symptoms": "Only attempt label b0 (nakzatra). All three keys null with error selfheal-nothing-resolved. status headless_attempts lists a single batch. Operator hypothesis: Pro cannot translate / host rate-limit / stripped-config needed.",
+  "classification": "operator/process",
+  "root_cause": "--max-agents N is a TOTAL spawn ceiling (translate+heal across the whole run), not concurrency width. With N=1 the first whole-card call consumes the entire budget; remaining translate batches and every self_heal fragment refuse as budget_exceeded without spawning. self_heal then stamps selfheal-nothing-resolved when senses stay empty, OVERWRITING the earlier budget_exceeded notes in failures{}. So the summary looks like content failure (3x selfheal-nothing-resolved) while the smoking gun is budget_stops>=23 + translate_agents_spent=1 + only b0 in headless_attempts. Code: headless_worker._budget_ok / call / self_heal note at selfheal-nothing-resolved. Stripped CLAUDE_CONFIG_DIR (H1517) cannot fix this class.",
+  "guardrail": "Never pass --max-agents 1 on multi-key or heal-capable windows. Use it only for true single-spawn canaries (one key that must finish in one call) or when deliberately starving the run. Production multi-card windows rely on manifest budgets (max_translate_agents / max_heal_agents) with --max-agents omitted or set to their sum. When diagnosing only-b0/all-nulls: check budget_stops and translate_agents_spent BEFORE rate_limit/content theories. Prefer failures that retain budget_exceeded if a code fix later prevents note-overwrite (optional hardening).",
+  "residual_status": "structurally-guarded",
+  "residual_risk": "Bounded-run docs (H1447/H1110 ladder) still recommend --max-agents 1 for tiny canaries; copy-pasting that flag onto medium50/nominal windows re-creates the incident. c2 Pro also hit session limit mid fix-run (resets 15:30 Europe/Moscow) — separate concurrency/api residual; do not conflate with the budget flag."
  }
 ]
 ```
