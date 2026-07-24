@@ -1,6 +1,6 @@
 # FEATURES_INDEX.md — what the Sanskrit Lexicon project actually has
 
-_Created: 04-07-2026 · Last updated: 20-07-2026_
+_Created: 04-07-2026 · Last updated: 24-07-2026_
 
 **Purpose.** A clickable, capability-first map of the working assets across the ~85
 repositories: the **dictionaries** digitised, the **interfaces** that serve them, the
@@ -24,7 +24,7 @@ carries a **real example** and its **first-introduced month/year**.
 > Some linked repos are private ([`github-spine`](https://github.com/gasyoun/github-spine),
 > [`Uprava`](https://github.com/gasyoun/Uprava)).
 
-**At a glance:** 44 dictionaries · 21 interfaces (17 live) · 44 data assets · 14 tools · 4 external stacks · 11 learner-facing drill/practice sets (P1–P11) · 30 catalogued methods/algorithms (Q1–Q30).
+**At a glance:** 44 dictionaries · 22 interfaces (17 live) · 45 data assets · 14 tools · 4 external stacks · 11 learner-facing drill/practice sets (P1–P11) · 30 catalogued methods/algorithms (Q1–Q30).
 
 **IDs & tiers.** Every asset has a **stable ID** — a **running number within its category**
 (1–N; it does *not* restart at each sub-section) prefixed by a **section letter** (`A`–`F` data ·
@@ -130,6 +130,7 @@ actual files (⚪-tier / *schema*-marked = gitignored / binary / too large, so t
 | 🟢 F43 | `allngramtxt.txt` char-n-gram oracle | Every distinct character n-gram (all lengths, sorted by length) of the pan-CDSL headword list `sanhw1.txt` — the membership oracle of the n-gram spell-check method (a headword containing a chunk attested nowhere else is suspect; generator [listngrams.py](https://github.com/sanskrit-lexicon/CORRECTIONS/blob/master/ngram/listngrams.py)) | 6,656,616 n-grams · 82.3 MB | `aBisaMboD` (one SLP1 n-gram per line) | 06/26 | [CORRECTIONS/ngram](https://github.com/sanskrit-lexicon/CORRECTIONS/tree/master/ngram) |
 | 🟢 F44 | INDOLOGY-L mailing-list archive atlas | Metadata-first atlas of the public INDOLOGY-L Pipermail archive (1990-2026): messages, threads, reply network, author normalization, Renou-axis topic tagging. Split out of IndologyScholars into its own citable repo 19-07-2026 (H460), full history preserved (`git filter-repo`) | 62,115 messages · 24,034 threads · ~200 MB | `data/processed/messages_clean.csv: normalized_author, author_id, primary_topic, thread_root_id, …` | 07/26 | [IndologyArchiveAtlas](https://github.com/gasyoun/IndologyArchiveAtlas) |
 | 🟡 F45 | Laukika-nyāya (Jacob's "Handful of Popular Maxims") | All 404 laukika-nyāya popular maxims from Jacob's 3-part collection (1907-1911, PD) as JSONL, OCR-ingested and cross-referenced against the book's own back-matter index, mirroring the IndischeSprueche field style — closes the last open deliverable of the 2004 AIOC-Varanasi manifesto (H803) | 404 · ~500 KB | `{ "num":1, "nyaya_deva":"अजाकृपाणीयन्यायः", "gloss_en":"The maxim of the she-goat and the sword." }` | 07/26 | [laukika_nyaya.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/LaukikaNyaya/data/laukika_nyaya.jsonl) |
+| 🟢 F46 | VK wall archive — «Общество ревнителей санскрита» (vk-ors) | Public VK wall (vk.com/samskrtamru / wall-88831040, 2015–2026) as SQLite+FTS5 + four analysis layers + wave-1 gallery/search/tiers; live refresh via wall.get | 7,613 posts · 10,174 attachments · ~CSV bundle | `data/processed/activity_by_year.csv`, `attachments_gallery.csv`, `engagement_tiers.csv` | 07/26 | [IndologyScholars/vk-ors](https://github.com/gasyoun/IndologyScholars/tree/main/vk-ors) |
 
 ---
 
@@ -223,6 +224,7 @@ first appearance where the repo predates it).
 | I10 | [VisualDCS — paradigm browser](https://github.com/gasyoun/VisualDCS) | Interactive verb-form paradigm browser | 🟢 Live | 6 roots × 9 tenses × 9 person/number cells, flashcard mode | 04/26 | Standalone HTML · Chart.js · [VisualDCS](https://github.com/gasyoun/VisualDCS) |
 | I11 | [BookIndex / Zalizniakiada](https://gasyoun.github.io/BookIndex/) | Single-file PWA over Zaliznyak's legacy | 🟢 Live | the sound-law simulator + KWIC concordance | 04/26 | D3 · Leaflet · PWA · [BookIndex](https://github.com/gasyoun/BookIndex) |
 | I12 | [IndologyScholars — forum archive](https://gasyoun.github.io/IndologyScholars/) | Network analysis over 1,362 talks | 🟢 Live | the network of 1,362 talks by 270 scholars | 04/26 | Static · D3 · RDF · [IndologyScholars](https://github.com/gasyoun/IndologyScholars) |
+| I13 | [vk-ors wall retrospective](https://github.com/gasyoun/IndologyScholars/tree/main/vk-ors/site) | Self-contained HTML over ORS VK wall: activity, engagement tiers, faceted search, media gallery | 🟡 Local | open `vk-ors/site/index.html` (7,608 posts, 800 gallery thumbs) | 07/26 | Static · FTS5 · [IndologyScholars/vk-ors](https://github.com/gasyoun/IndologyScholars/tree/main/vk-ors) |
 
 ### J · Docs & article sites
 
