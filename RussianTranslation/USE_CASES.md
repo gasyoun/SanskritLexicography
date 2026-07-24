@@ -1,37 +1,48 @@
 # RussianTranslation Use Cases
 
-_Created: 28-06-2026 · Last updated: 11-07-2026_
+_Created: 28-06-2026 · Last updated: 24-07-2026_
 
 Operational scenarios for the PWG -> Russian production pipeline. The canonical
 runbook remains [src/pilot/RUN_FREQ_MAX.md](src/pilot/RUN_FREQ_MAX.md); this
-page is a quick map from intent to command path.
+page is a quick map from intent to command path. **Production route (H1110):**
+headless CLI on manifest v2 — not Max-Workflow-from-session. Paid path:
+[`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+→ [`/pwg-bounded-run`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-bounded-run.md)
+→ [`/pwg-window-close`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-window-close.md).
 
 ## 1. Preflight the Next Root
 
-Use when deciding whether a frequency-window root is ready for Max spend.
+Use when deciding whether a frequency-window root is ready for paid spend.
 
 ```powershell
 python src\pilot\root_window_status.py <root>
+python src\pilot\perf_preflight.py <root>
 ```
 
 Expected outcome: one `next action` and one `next command`. Trust this output
 over older handoff prose. A matching optimized harness must have the same root,
 rootmap hash, and selected key scope.
 
-## 2. Run a Fresh Max Window
+## 2. Run a Fresh Headless Window
 
-Use when a root is structurally ready and no fresh workflow output exists.
+Use when a root is structurally ready, live-gate is GO, and no fresh output
+exists.
 
 ```powershell
-python src\pilot\gen_opt_harness.py <root>
-# run src\pilot\run_pilot_wf.opt.js in Claude/Max Workflow
-# save the JSON as wf_output.json
+# 0) fresh live-gate GO (health + dq_canary_puregloss) — never reuse a stale GO
+python src\pilot\gen_opt_harness2.py <root>
+python src\pilot\coordinator.py prepare LEASE_ID `
+  --profile-slot c4 --config-dir C:\path\to\claude-c4 `
+  --executor-lane serial-whole-card
+# 1) headless execute via bounded_staged_run / headless_worker
+#    (max-wide=1, --stop-before-promote); save as wf_output.json
 python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 ```
 
 Mechanical acceptance requires the deterministic audit to pass. The audit checks
-workflow provenance, NWS owner attribution, markup fidelity, sense coverage, and
-cross-part duplicate senses before writing queue/status files.
+manifest/provenance, NWS owner attribution, markup fidelity, sense coverage, and
+cross-part duplicate senses before writing queue/status files. Promotion requires
+`execution_manifest_schema = pwg.headless_execution_manifest.v2`.
 
 ## 3. Recover from Stale Output
 
@@ -44,8 +55,8 @@ python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 Expected outcome: state `stale_artifact`. The audit refuses collect/gates/glue
 and preserves the existing `requeue.keys.txt`. Run
 `python src\pilot\root_window_status.py <root>` next: if the optimized harness
-matches the current rootmap, rerun that harness in Max and save a fresh
-`wf_output.json`; regenerate only if the status command says the harness is
+matches the current rootmap, re-run headless on a fresh live-gate GO and save a
+new `wf_output.json`; regenerate only if the status command says the harness is
 missing, invalid, or scoped to the wrong keys. Use `--allow-stale` only for
 forensic inspection.
 
@@ -54,13 +65,13 @@ forensic inspection.
 Use when `src/pilot/output/requeue.keys.txt` is non-empty.
 
 ```powershell
-python src\pilot\requeue_from_audit.py <root>
-# run the regenerated optimized harness in Max Workflow
+python src\pilot\requeue_from_audit.py <root>            # auto --no-tm except --transient
+# re-prepare + headless execute the regenerated harness (fresh live-gate)
 python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 ```
 
 The rerun harness is built only from current rootmap keys. Stale or invalid
-requeue keys are rejected before Max spend.
+requeue keys are rejected before paid spend.
 
 ## 5. Send a Semantic Judge Sample
 

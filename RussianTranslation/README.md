@@ -1,6 +1,6 @@
 # RussianTranslation — Sanskrit dictionaries into Russian, at scale
 
-_Created: 28-06-2026 · Last updated: 23-07-2026_
+_Created: 28-06-2026 · Last updated: 24-07-2026_
 
 This directory holds two independent machine-translation efforts that bring the
 great 19th-century Sanskrit dictionaries to Russian readers, plus the
@@ -258,12 +258,15 @@ stay human-authored; the dashboard reads both streams.
 
 ## Flaky-network policy
 
-Claude production translation is not a Python API loop — it runs through the
-Claude/Max Workflow surface, and interruptions are handled by deterministic
-state files: null/failed cards land in `src/pilot/output/requeue.keys.txt`;
+Claude production translation is not a Python Anthropic-SDK loop — it runs
+through the **profile-bound headless CLI** (manifest v2, H1110; the Max-Workflow
+surface is forensics only). Interruptions are handled by deterministic state
+files: null/failed cards land in `src/pilot/output/requeue.keys.txt`;
 [`src/pilot/requeue_from_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/requeue_from_audit.py)
 builds a rerun harness for only those cards (TM lookup force-disabled); stale
-`wf_output.json` artifacts are refused before they can mutate outputs.
+`wf_output.json` artifacts are refused before they can mutate outputs. A fresh
+[`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+GO is required before every paid window.
 
 DeepSeek/OpenRouter corpus-lexicon builds are append-only and resumable. Tune
 `DEEPSEEK_RETRIES`, `DEEPSEEK_CONNECT_TIMEOUT`, `DEEPSEEK_READ_TIMEOUT`, and

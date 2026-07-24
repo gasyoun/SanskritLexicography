@@ -1,15 +1,15 @@
 # RussianTranslation deep manual — the mw_ru and pwg_ru pipelines
 
-_Created: 11-07-2026 · Last updated: 18-07-2026_
+_Created: 11-07-2026 · Last updated: 24-07-2026_
 
 The subsystem deep manual for
 [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation)
 — first item of the deep-manual queue in
 [PROFILE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PROFILE.md)
-(handoff H606, authored by Fable 5 `claude-fable-5`). Audience: **maintainer /
-operator** — a fresh session that has to run a production translation window,
-audit it, promote it, and close it out without rediscovering a fixed bug.
-The orientation-layer sibling is
+(handoff H606, authored by Fable 5 `claude-fable-5`; refreshed 24-07-2026 by
+Grok 4.5). Audience: **maintainer / operator** — a fresh session that has to
+run a production translation window, audit it, promote it, and close it out
+without rediscovering a fixed bug. The orientation-layer sibling is
 [MAINTAINER_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/MAINTAINER_MANUAL.md);
 this document goes one level deeper into a single subsystem. Every count in
 this manual is stamped with its as-of date; the live truth is always
@@ -23,13 +23,15 @@ Two LLM dictionary-translation pipelines sharing one engine design:
 | Pipeline | Source → target | Status | Scale |
 |---|---|---|---|
 | `mw_ru` | Monier-Williams (English) → Russian | **finished** (May 2026); covered here as a post-mortem, §3 | 287,358 cards |
-| `pwg_ru` | PWG / Böhtlingk-Roth (German) → Russian (primary) + English (secondary) | **production, environment-gated** (since 13-07 every live generation lane is NO-GO by environment — H1110 c4 probe 98.6 s vs the 30 s ceiling; the H1209 controller-worker Workflow lane measured GO 18-07) | 106,082-headword universe; store **11,603** rows as of 18-07-2026 (the 17-07 H1080 hash-locked repair restored 668 placeholder rows + 468 null owners and quarantined two `banD` rows, 11,605→11,603 — the store HAS needed one repair) |
+| `pwg_ru` | PWG / Böhtlingk-Roth (German) → Russian (primary) + English (secondary) | **live production on headless CLI (manifest v2, H1110)** — every paid window needs a **fresh** `/pwg-live-gate` GO (health + `dq_canary_puregloss`); host latency and session limits still gate spend | 106,082-headword universe; store **11,603** rows as of 24-07-2026 (H1080 hash-locked repair 17-07: 11,605→11,603); remaining unique ~**5,580** (H1339: 701 verb + 4,757 nominal-PWG + 122 no-PWG) |
 
 The intellectual problem is not per-headword translation difficulty — a
 38-unit judge test settled quality early (37/38 publishable). The whole
 discipline of the subsystem is making an LLM run **reliable, cheap, and
-mechanically verifiable at 100,000-headword scale** through the Claude
-Workflow tool, with no Claude API key. Everything below — masking, batching,
+mechanically verifiable at 100,000-headword scale** with **no Claude API
+key** — generation goes through a profile-bound **headless CLI**
+(`execution_route: claude-cli-headless`, H1110). The older Max-Workflow-from-
+session path is **forensics only**. Everything below — masking, batching,
 deterministic gates, translation memory, kill gates, incident ledgers — exists
 to serve that.
 
@@ -147,15 +149,16 @@ reference agreement vs the human KOW translation, which corroborates but never
 decides).
 
 **Models and access paths — the standing constraint.** There is **no Claude
-API key**. Claude stages run through the **Claude Workflow tool** in a session
-that has it (tool availability is per-session, not per-tier — check the
-toolset at session start). Generation targets **Sonnet 5 (`claude-sonnet-5`)**, and since H818
-(12-07-2026) the generated harness pins `model: 'claude-sonnet-5'`
-**explicitly on every `agent()` call, both RU and EN** — the former
-RU-alias-vs-EN-pin divergence is closed as SHARED in LANG_PARITY (the bare
-`sonnet` alias once resolved to 4.6 on a real run, which is why the pin is
-explicit). The bulk QA judge policy is **Sonnet judges,
-Opus 4.8 (`claude-opus-4-8`) adjudicates only rejects** (`ok=false ||
+API key**. Production generation runs through the **headless CLI** bound to a
+named profile (`CLAUDE_CONFIG_DIR` + roster slot `c2`/`c4`/…), driven by
+`coordinator.py` / `bounded_staged_run.py` / `headless_worker.py` under
+`execution_route: claude-cli-headless` (H1110). The Max-Workflow lane
+(`run_pilot_wf.opt2.js`) is retained for historical forensics only — a new
+profile-bound v2 attempt must **not** re-enter Workflow as the production
+route. Generation targets **Sonnet 5 (`claude-sonnet-5`)**, and since H818
+(12-07-2026) the harness pins that id **explicitly on every `agent()` call,
+both RU and EN** (SHARED in LANG_PARITY). The bulk QA judge policy is **Sonnet
+judges, Opus 4.8 (`claude-opus-4-8`) adjudicates only rejects** (`ok=false ||
 severity>=3`, Opus verdict final) — decided on a 474-card A/B with κ=1.0, see
 [research/JUDGE_POLICY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/JUDGE_POLICY.md);
 and since the 2026-06-27 token optimization the per-card LLM judge is dropped
@@ -167,8 +170,10 @@ YandexGPT is a designed second judge, not in production.
 **The store.** `src/pwg_ru_translated.jsonl` (RU spine; a parallel EN store) —
 local-only, gitignored, one row per sense, with full provenance per row
 (model alias + exact `model_version`, root/rootmap/input hashes, generation
-time, `wf_file`, `source_profile`, `layer`). 11,317 rows as of 10-07-2026.
-Promotions must pass `--gen-model-version <exact-model-id>`.
+time, `wf_file`, `source_profile`, `layer`). **11,603** rows as of 24-07-2026
+(post-H1080 repair). Promotions must pass `--gen-model-version
+<exact-model-id>` and a bound
+`execution_manifest_schema = pwg.headless_execution_manifest.v2`.
 
 **Translation policy invariants** (from
 [AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/AGENTS.md)):
@@ -187,30 +192,42 @@ editorial/cross-reference ones translate to Russian — both ruled 10-07-2026).
 
 ## 5. The production window, step by step
 
-The loop is fixed: **probe → preflight → generate harness → Workflow run →
-capture → deterministic audit → requeue → promote → TM rebuild → closeout.**
-Do not skip or reorder. Verbatim commands + a worked example (`vid`, real
-numbers: 102 agents, 6.6M tokens, ~19 min) live in
+The loop is fixed: **live-gate → preflight → prepare lease (manifest v2) →
+headless execute → deterministic audit → requeue → (optional sample judge) →
+promote (stop-before-promote until review) → TM rebuild → closeout.**
+Do not skip or reorder. Verbatim commands + a worked historical example
+(`vid`, 102 agents, 6.6M tokens, ~19 min on the **retired** Workflow path)
+live in
 [RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md);
-this section is the annotated checklist with every trap at its step.
+skills that wrap the paid path:
+[`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+→ [`/pwg-bounded-run`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-bounded-run.md)
+→ [`/pwg-window-close`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-window-close.md).
+This section is the annotated checklist with every trap at its step.
 
 **Step 0 — session preconditions.**
-The session must HAVE the Workflow tool (check the toolset, don't pick a
-"tier"). Check
+Check
 [.ai_state.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md)
 WIP + the GTD `🔒 CLAIMED` tags for a concurrent session (H214 tree-intermix
 incident). This repo is a shared tree: **isolated worktree + PR, never direct
 edits, never `git add -A`.** Run scripts from the `RussianTranslation` repo
-root. UTF-8 without BOM everywhere.
+root. UTF-8 without BOM everywhere. Bind a **named profile**
+(`CLAUDE_CONFIG_DIR` + roster slot) before any paid call — the orchestrator
+fingerprints the config dir into the sealed manifest.
 
-**Step 1 — warm-up probe (mandatory since 10-07-2026).**
-Fire a load-representative warm-up `agent()` probe (**≥5 KB skeleton-sized
-payload** — a trivial probe passed GO while the window still degraded, H442
-launch 3) and log the reading with
-[src/pilot/probe_log.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/probe_log.py)
-(gate: **0 connection errors AND sub-30 s**). NO-GO → do not launch; log the
-abort row. Every blind launch into a degraded environment has cost ~2M tokens
-for ~0–1 clean cards (reproduced 3×, H437/H442).
+**Step 1 — live-gate (mandatory before every paid window).**
+Run
+[`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md):
+one representative **≥5 KB** health call **and** a separate
+`dq_canary_puregloss` synthetic control, both through the headless
+manifest-v2 route. GO is **mechanical** from a named policy (`gate_reason`):
+health PASS = latency under 30 s + zero connection errors; canary PASS = 3/3
+senses + zero SAN-LOSS / TNMASK / unmapped / schema failures. A **stale** GO
+(including a previous session's H1447 LIVE_GO) never authorizes a new paid
+window. Trivial tiny probes are necessary-but-insufficient (H442). Every blind
+launch into a degraded host has cost ~2M tokens for ~0–1 clean cards
+(reproduced 3×, H437/H442). Log readings via
+[src/pilot/probe_log.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/probe_log.py).
 
 **Step 2 — preflight (free, before any token spend).**
 
@@ -230,10 +247,13 @@ groups). A `defer-calibrate` root gets its own session. An over-ceiling
 `coordinator.py` cost gate and refused — `prepare --allow-over-cost` only in a
 dedicated human-budgeted session (MG ruling 07-07-2026).
 
-**Step 3 — generate the harness.**
+**Step 3 — generate harness + prepare lease (manifest v2).**
 
 ```powershell
-python src\pilot\gen_opt_harness2.py <root>    # → src\pilot\run_pilot_wf.opt2.js
+python src\pilot\gen_opt_harness2.py <root>    # batched+masked; emits opt2 + inputs
+python src\pilot\coordinator.py prepare LEASE_ID `
+  --profile-slot c4 --config-dir C:\path\to\claude-c4 `
+  --executor-lane serial-whole-card
 ```
 
 [gen_opt_harness2.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py)
@@ -243,25 +263,41 @@ mixed root, −90% on a clean small batch vs per-card). Defaults:
 presplit routing on (citation trigger AND the H155 sense-count trigger),
 `--tm=auto`. `--no-tm` is the explicit opt-out — **mandatory on defect
 requeues** (enforced in `requeue_from_audit.py` since 04-07-2026). The harness
-inlines all inputs, sets `tools: []` on translate agents (any file `Read` in a
-run means an obsolete harness), embeds rootmap/input SHA-256 provenance, and
-strips post-generation annotation fields from the per-call schema
-(`_strip_post_generation_fields()`, H428 — the reachable schema went
-10,940 → 1,698 chars after the Workflow safety classifier refused the fat one
-at 0 tokens, 67/67 calls). The committed
+inlines all inputs, sets `tools: []` on translate agents, embeds
+rootmap/input SHA-256 provenance, and strips post-generation annotation
+fields from the per-call schema (H428). The committed
 [run_pilot_wf.js](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/run_pilot_wf.js)
-is a template — never run it directly. The legacy `gen_opt_harness.py` is
-archived under
+is a template — never run it directly for production. Legacy
+`gen_opt_harness.py` lives under
 [src/pilot/archive/superseded_2026-07-06/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src/pilot/archive/superseded_2026-07-06).
 
-**Step 4 — run in the Workflow tool and capture the result.**
-Drive the Workflow **from the orchestrating Claude Code session** — never a
-manual Max-surface save. The H145 `vid` run was lost exactly at the manual
-hand-off: the Workflow completed but the save never reached disk and the stale
-file silently held the previous root. After writing `wf_output.json`, verify
-`meta.root` equals the root you ran and `meta.generated_at` is newer than the
-harness generation time. Read the workflow task's `.result` from its output
-file (the completion notification text truncates).
+Coordinator states: `claimed` / `prepared` / `requeue_prepared` reserve work
+but consume **no** model runtime; `begin-run` is the only transition to
+`running`; `record-output` moves through `auditing`. Ordinary/manual execution
+is globally capped at **three** running leases; four only inside
+`max_account_orchestrator.py staged-run` after a fresh matching probe receipt;
+five is never allowed.
+
+**Step 4 — headless execute (the only production route).**
+Drive the sealed manifest through
+[`/pwg-bounded-run`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-bounded-run.md)
+/ `bounded_staged_run.py` + `headless_worker.py`: **one profile**,
+`max-wide=1`, **`--stop-before-promote`**, no retry / requeue / replacement /
+widening in bootstrap mode. Per-profile call concurrency is serialized by the
+kernel-backed `ActiveCallClaim`. Agent and timeout budgets are enforced
+inside `headless_worker.py` (not merely declared — H1110 / FINDINGS §93).
+Save the full payload as `wf_output.json`; verify `meta.root` and that the
+execution is bound to
+`execution_manifest_schema = pwg.headless_execution_manifest.v2`.
+
+Do **not** use `--max-agents 1` on multi-key / heal-capable windows — that flag
+caps **total** translate+heal spawns and starves the window (ledger
+`C2_M50_W1_MAX_AGENTS1_2026-07-24`: 0/3 nulls with only `b0` attempted). Leave
+manifest budgets alone unless a canary explicitly needs a single-spawn probe.
+
+Historical note: the `vid` worked example (102 agents / 6.6M tokens / ~19 min)
+ran on the retired Workflow path; numbers illustrate scale, not the current
+executor.
 
 **Step 5 — audit (the canonical acceptance gate).**
 
@@ -273,11 +309,11 @@ Runs the four free deterministic gates over the whole key set (§7), writes
 `audit_window.report.{json,md}`, `window_status.{json,md}`,
 `window_ledger.jsonl`, `requeue.keys.txt`, `judge_sample.keys.txt` under
 `src\pilot\output`. Record token/time economics on the same command
-(`--wall-clock-minutes`, `--max-*-tokens`, `--weekly-cap-fired`) — metric
-coverage is the standing instrumentation gap (wall-clock on 12/458 windows as
-of 10-07-2026). Stale output (meta/key/hash mismatch) is **refused** before
-gates and does not overwrite an existing `requeue.keys.txt`; `--allow-stale`
-is forensic-only. One `wf_output.json` per root — never combine roots.
+(`--wall-clock-minutes`, `--max-*-tokens`, `--weekly-cap-fired`). Stale output
+(meta/key/hash mismatch) is **refused** before gates and does not overwrite an
+existing `requeue.keys.txt`; `--allow-stale` is forensic-only. One
+`wf_output.json` per root — never combine roots. Manifest-v2 leases that once
+failed to load as v1-only are fixed (H1339 B23).
 
 **Step 6 — requeue.**
 
@@ -292,7 +328,8 @@ rate-limit/dropout — cheap re-run, low concurrency) vs
 the flagged fragment SHAs are denylisted so the fragment TM can never re-serve
 them, H304). Repeat run→audit until the requeue is empty or clearly
 diminishing. `save_and_audit.py --merge` is better-attempt-wins — a requeue
-can no longer regress a card.
+can no longer regress a card. Supervisor requeues materialise real
+`prepare-requeue` attempts + `::rqNN` jobs (H1339 A4).
 
 **Step 7 — semantic judging (the only LLM QA spend).**
 Only if mechanical gates pass and `judge_sample.keys.txt` is non-empty: that
@@ -300,7 +337,7 @@ queue = all Python-gate failures + a deterministic ~10% clean-card sample. It
 is NOT the mechanical requeue list. Cheap pre-triage:
 `python src\pilot\prompt_rule_audit.py --cards wf_output.json --review-limit 25`.
 
-**Step 8 — promote + rebuild TM.**
+**Step 8 — promote + rebuild TM (after human/Opus review when stopped).**
 
 ```powershell
 python src\promote_final_cards.py --gen-model-version claude-sonnet-5 --glob <explicit>
@@ -309,27 +346,24 @@ python src\pilot\translation_memory.py build-frags --lang ru   # if a heal emitt
 ```
 
 ⚠️ **Since H1080 Stage 3 (PR #511, 17-07-2026) promotion hard-refuses any
-workflow output not bound to a manifest-v2 execution** — `promote_final_cards.py`
-raises `PromotionContractError` on anything without
+output not bound to a manifest-v2 execution** — `promote_final_cards.py`
+raises `PromotionContractError` without
 `execution_manifest_schema = pwg.headless_execution_manifest.v2` (profile slot,
-config-dir fingerprint, model identifier all mandatory), and RUN_FREQ_MAX now
-routes new attempts through `coordinator.py prepare ... --profile-slot c4` on
-the CLI/headless path, NOT the legacy Workflow route (a bound generated
-template aborts before its first agent call on the old route). The Workflow-run
-framing in steps 4-7 above describes the historical lane; follow RUN_FREQ_MAX's
-current manifest-v2 procedure for any new attempt.
-
-The two H255 footguns are now **mechanically guarded** (same hardening wave):
-`--merge` with the implicit broad glob is refused outright — an explicit
-`--glob` is mandatory — and `validate_promotion_entry()` revalidates every
-candidate (final-card schema, exact `selected_keys` membership, per-key input
-hashes, non-synthetic provenance, `{Tn}` residue) independent of
-audit/coordinator state. Still filter `requeue_defect` keys yourself — the
-audit's defect split remains the operator's responsibility. Under multi-account operation only
-ONE account promotes per catch-up (single-promoter rule,
+config-dir fingerprint, model identifier all mandatory). The two H255
+footguns are **mechanically guarded**: `--merge` with the implicit broad glob
+is refused (explicit `--glob` mandatory), and `validate_promotion_entry()`
+revalidates every candidate (final-card schema, exact `selected_keys`
+membership, per-key input hashes, non-synthetic provenance, `{Tn}` residue).
+Store writes are **fsynced atomic** (RU path; EN reuses the same helper since
+H1421 P9). Still filter `requeue_defect` keys yourself. Under multi-account
+operation only ONE account promotes per catch-up (single-promoter rule,
 [src/promote_lock.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_lock.py)).
-Promotion merges at **sub-card level** — the root-level merge that would have
-wiped other roots' rows was caught and killed in Phase 4.
+Promotion merges at **sub-card level**.
+
+Prefer
+[`/pwg-window-close`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-window-close.md)
+for the full close packet (audit + provenance + exact key delta + store
+backup + one-time TM rebuild + ledger row).
 
 **Step 9 — closeout (before the handoff is closed).**
 Any launch with a failure, null wave, stall, kill, stale-refusal, retry pass,
@@ -345,44 +379,35 @@ every RU/EN-touching fix in the LANG_PARITY ledger (§8). Update
 concurrency envelope to another** (H220 is the standing counter-example: the
 dense-verb-batch kill gate false-killed valid no-PWG singletons). The lanes:
 
-| Lane | State (11-07-2026) | Discipline |
+| Lane | State (24-07-2026) | Discipline |
 |---|---|---|
-| **Verb drain** (H151, standing) | ACTIVE — 749 DCS-attested roots, 46 promoted / 703 remaining as of 04-07-2026; queue via `verb_worklist.py` | one root at a time, RUN_FREQ_MAX loop verbatim |
+| **Verb drain** (H151, standing) | ACTIVE when live-gate GO — 749 DCS-attested roots, **48 promoted / 701 remaining** as of 24-07-2026 (`verb_worklist.py`); most remaining still need rootmaps | one root at a time, headless loop §5 |
 | **Nominal small** | production-proven (H201: 100/100 cards, 306 senses) | normal loop, grammar layer OFF in prompts |
-| **Nominal medium50 / band-4** | **PAUSED — do not launch** (H317→H389→H437→H442 saga) | see below |
-| **No-PWG supplement chain** (232 lemmas) | unblocked but PAUSED ON INFRA (H255: 57% transient on a degraded host, 27 keys not requeued) | single-fragment cards, small batches, 180 s ceiling budget |
+| **Nominal medium50 / band-4** | **resume only after fresh live-gate** — H1447 plan parked (48 keys, 5 leases); c2 w1 forensics 24-07 proved `--max-agents 1` total-spawn starvation, not host death | serial-c4 / profile-bound headless; never copy canary `--max-agents 1` onto multi-key windows |
+| **No-PWG supplement chain** | 122 remaining unique (H1339 population); single-fragment cards | small batches, 180 s ceiling budget; never dense-verb kill envelope |
 | **Monster cards** (kAla-class) | defer lane | never bulk-run; `deferred_monsters.jsonl`, human-budgeted session only |
 | **Sub-agent fan-outs** (synthesis etc.) | bare fan-outs BANNED (H234 fiasco) | always [src/synth_dispatch.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/synth_dispatch.py): ≤3 concurrent (hard cap 4), liveness = output-file growth ONLY, confirmed-dead before redispatch, watcher-safe landing, >800-`<ls>` inputs auto-routed to the zero-LLM assembler |
 
-**Concurrency (global, MG-locked).** Default ONE Workflow window at a time;
-**≤3-wide is an upper bound, not a target, and it is global across all
-accounts**. Each harness already fans out to ~8–14 agents internally. Slice D
-launched 18 roots at once → 80+ 429s → 117 transient nulls; H317 showed even
-3-wide collapses on an unstable session. In any session with fresh transport
-errors, run a solo reference window clean before trusting any width. Running
-3 accounts: one worktree per account, shard roots via `verb_worklist.py`
-first, single-promoter — the protocol lives in
+**Concurrency (global, MG-locked).** Default **one headless window** at a
+time; ordinary/manual leases ≤**3** running globally; four only inside
+`max_account_orchestrator.py staged-run` after a fresh matching probe receipt;
+five never. Each harness already fans out to many internal agent calls. Slice
+D launched 18 roots at once → 80+ 429s → 117 transient nulls. In any session
+with fresh transport / `rate_limit` errors, run a solo reference window clean
+before trusting any width. Multi-account: one worktree per account, shard
+roots first, single-promoter — see
 [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_CAPABILITY_AUDIT_2026-07-08.md).
 
-**The medium50 pause — never relaunch blind.** The band-4 nominal-singleton
-lane is paused with the H442 3-launch cap **exhausted and zero measurable
-clean-rate** (all three launches infra-confounded). The failure chain, by
-elimination: H317 blamed concurrency (superseded) → H389 found the real
-deterministic blocker (Workflow safety classifier refusing the fat schema;
-FIXED by H428's schema slim) → H437 isolated heal/kill-budget starvation
-(0 connection errors, 2/37 clean, ~2M tokens per window for ~1 clean card) → H442 landed two
-guardrails (`PER_CARD_HEAL_BUDGET`, `KILL_TIMEOUT_NO_BISECT`,
-[PR #301](https://github.com/gasyoun/SanskritLexicography/pull/301)) that are
-**untested in the field, not wrong** — every validation window since has been
-infra-confounded. One of the two structural findings is FIXED on master: the split
-translate/heal budget pools landed 10-07-2026 (`src/pilot/agent_budget.py`,
-PR #311 — the heal ceiling now equals the sum of per-card heal ceilings, so
-the window pool cannot fire before the per-card guards; LANG_PARITY
-`split_agent_budget_pools_20260710`, SHARED). Still true: the trivial probe
-gate is necessary-but-insufficient (hence the
-≥5 KB load-representative probe, step 1). Preconditions to resume: a healthy
-≥5 KB GO probe, then the `h317_w1b` canary — and do NOT re-tune heal budgets
-on infra-confounded evidence.
+**medium50 — never relaunch blind.** Historical chain: H317 concurrency
+blame (superseded) → H389 fat-schema refusal (FIXED H428) → H437 heal/kill
+starvation → H442 guardrails (`PER_CARD_HEAL_BUDGET`, `KILL_TIMEOUT_NO_BISECT`,
+[PR #301](https://github.com/gasyoun/SanskritLexicography/pull/301)) + split
+budget pools ([PR #311](https://github.com/gasyoun/SanskritLexicography/pull/311)).
+H1447 (22-07) derived mechanical LIVE_GO on c4 then stopped honestly at fleet
+warm-up — **zero production calls**, plan survives as committed worklist.
+24-07 c2 w1: operator `--max-agents 1` caused 0/3-only-b0; re-run without the
+flag multi-spawned then hit session `rate_limit`. Resume precondition:
+**fresh** §5 step-1 GO, then bounded w1 with **manifest budgets only**.
 
 ## 7. Gates, kill mechanics, and selftests
 
@@ -416,15 +441,16 @@ presplit trigger — the discipline that produced the H155 sense-count trigger.
 
 **Selftests.**
 [window_selftest.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_selftest.py)
-— **142 tests, all passing as verified 18-07-2026 (H1110 Phase 2)** — pins
-every historical bug class (stale-refusal preserving the requeue list, schema
-size ceiling, kill-gate wiring, `sense_ord` threading, parity-ledger
-completeness, telemetry counters…). Run it plus
-`python -m py_compile <changed files>` after any pipeline code change; the CI
-RussianTranslation-gates job runs the fixture selftests too. Also verified
-this session: `python src/pilot/lang_parity_check.py` → "41 entries, all
-verdicts complete, no drift"; `python src/pilot/check_launch_ledger.py --since
-2026-07-05` → "14 entries complete".
+— **182** `test_*` functions in the module as of 24-07-2026; journal-verified
+runs report **173/173** green after H1421 (and **157/157** at H1339 close —
+the suite grows with each hardening wave). Pins every historical bug class
+(stale-refusal preserving the requeue list, schema size ceiling, kill-gate
+wiring, `sense_ord` threading, parity-ledger completeness, fsynced promote,
+manifest-v2 auditability…). Run it plus `python -m py_compile <changed files>`
+after any pipeline code change; the CI RussianTranslation-gates job runs the
+fixture selftests too. Parity gate as of 24-07-2026:
+`python src/pilot/lang_parity_check.py` → **74 entries, all verdicts complete,
+no drift**.
 
 ## 8. Cross-language parity — the RU/EN contract
 
@@ -439,23 +465,23 @@ GAP fails the gate). The ledger is a machine-readable JSON block; the gate
 sha-drift of any tracked file — re-affirm with `--update-hash <entry-id>`
 after verifying your edit didn't change the described behavior.
 
-State as of 18-07-2026: **53 entries — 45 SHARED, 7 INTENTIONAL-DIVERGENCE,
-1 GAP** (`defect_fragment_denylist_h304`: the EN auditor doesn't emit the
-defect-fragment denylist yet). The seven divergences that must NOT be "fixed":
-promotion stays two scripts (different store schemas); four RU-only mechanisms
-with no EN counterpart (corpus_gate evidence markers, evidence retrofit
-annotators, koch `см.` cross-reference resolution, fri Latin-apparatus
-resolution); and two H1152 EN-judge guards (`en_polyseme_judge_guard_h1152`,
-`en_de_residue_soft_class_h1152`). The former model-pin divergence left the
-list — H818 closed it as SHARED (both languages pin `claude-sonnet-5`). Root cause of the founding failure: `audit_window_en.py`
-reimplements its gates instead of sharing RU's — assume any RU gate fix needs
-an explicit EN parity verdict.
+State as of 24-07-2026: **74 entries, no drift** (ledger grew through H1339 /
+H1421 factory hardening — re-read the file for the current SHARED /
+INTENTIONAL-DIVERGENCE / GAP split). Divergences that must NOT be "fixed"
+include: promotion stays two scripts (different store schemas); several
+RU-only mechanisms with no EN counterpart (corpus_gate evidence markers,
+evidence retrofit annotators, koch `см.` cross-reference resolution, fri
+Latin-apparatus resolution); and EN-judge guards from H1152. H818 closed the
+model-pin divergence as SHARED (both languages pin `claude-sonnet-5`). Root
+cause of the founding failure: `audit_window_en.py` reimplements its gates
+instead of sharing RU's — assume any RU gate fix needs an explicit EN parity
+verdict.
 
 ## 9. Data assets and the rights boundary
 
 | Asset | Where | Status |
 |---|---|---|
-| RU store `src/pwg_ru_translated.jsonl` (+ EN store) | gitignored, local-only | 11,603 rows as of 18-07-2026 (post-H1080 repair); per-sense provenance |
+| RU store `src/pwg_ru_translated.jsonl` (+ EN store) | gitignored, local-only | 11,603 rows as of 24-07-2026 (post-H1080 repair); per-sense provenance |
 | 5 harvested Sa→Ru dicts (`koch/kow/kna/fri/smirnov.jsonl`) | gitignored | in-copyright sources; rebuild via `build_src.py` |
 | `corpus_lexicon.jsonl` (1,091,528 pairs) + `mined` tier (10,132 pairs, 97%-precision-gated) + SPECIALIST glossaries (663 entries) | gitignored | mined tier quarantined — never merged into the clean lexicon |
 | TM sidecars `translation_memory.*` | gitignored | rebuild after every promotion; regenerable |
@@ -469,24 +495,21 @@ evidence samples; gitignored = bulk data, anything rights-encumbered, anything
 regenerable.** Untracked files are also watcher-bait (H234 #4) — author agent
 outputs outside the repo and land atomically.
 
-## 10. Script census (as of 11-07-2026)
+## 10. Script census (as of 24-07-2026)
 
-**252 Python files** as of 18-07-2026: 170 at `src/` top level, 81 under `src/pilot/` (+ root `save_and_audit.py`)
-(including `archive/`, `dashboard/`, `eval/`), plus the repo-root
-[save_and_audit.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/save_and_audit.py).
-All tracked; the data they read/write is gitignored (§9). Three tracked `.js`
-(the harness template, its archived predecessor, the dashboard) — every
-harness an operator actually runs is generated and gitignored. Functional
-map, condensed (entry points in bold):
+Counts grow every hardening wave — treat the table as a **role map**, not a
+frozen inventory. All tracked; the data they read/write is gitignored (§9).
+Tracked `.js` templates exist; every harness an operator actually runs is
+generated and gitignored. Functional map, condensed (entry points in bold):
 
 | Role | Scripts |
 |---|---|
-| Preflight | **`freq_route.py`**, **`pilot/verb_worklist.py`**, `pilot/nominals_worklist.py`, **`pilot/root_window_status.py`**, **`pilot/perf_preflight.py`**, `pilot/prompt_rule_audit.py`, **`_pilot_gen_merged.py`** (5-layer source builder) |
-| Harness generation | **`pilot/gen_opt_harness2.py`** (canonical), `pilot/autosplit_requeue.py`, **`pilot/requeue_from_audit.py`**, `pilot/gen_fidelity_judge*.py` (sampled-judge workflows) |
+| Preflight / live-gate | **`freq_route.py`**, **`pilot/verb_worklist.py`**, `pilot/nominals_worklist.py`, **`pilot/root_window_status.py`**, **`pilot/perf_preflight.py`**, `pilot/prompt_rule_audit.py`, **`_pilot_gen_merged.py`** (5-layer source builder), **`pilot/probe_log.py`** |
+| Harness + headless execution | **`pilot/gen_opt_harness2.py`** (canonical), **`pilot/headless_worker.py`**, **`pilot/bounded_staged_run.py`**, **`pilot/coordinator.py`**, `pilot/max_account_orchestrator.py`, `pilot/autosplit_requeue.py`, **`pilot/requeue_from_audit.py`**, `pilot/gen_fidelity_judge*.py` (sampled-judge) |
 | Audit gates | **`pilot/audit_window.py`** (canonical RU), `pilot/audit_window_en.py`, `stage2_pregate.py`, `audit_coverage.py`, `audit_sense_dupes.py`, `audit_root_split.py`, `nws_split.py` (owner map), `pilot/ru_coverage.py`, `validate_*.py` |
 | Promote / store | **`promote_final_cards.py`**, `promote_en.py`, `promote_lock.py`, **root `save_and_audit.py`** (save + audit + merge in one step) |
 | Translation memory | **`pilot/translation_memory.py`**, `tm_grade.py`, `tm_align.py`, `build_tmx.py`, `build_l0.py`, `ingest_oral.py`/`build_oral_l0.py` |
-| Instrumentation | `pilot/check_launch_ledger.py`, `pilot/harvest_launch_stats.py`, `pilot/probe_log.py`, `pilot/classify_run.py`, `pilot/parse_workflow_cost.py`, `pilot/coordinator.py`, **`pilot/dashboard_server.py`** (live UI, port 8765), `pilot/lang_parity_check.py`, `pipeline_version.py`, `pilot/layer_versions.py`, `pilot/watch_upstream.py` |
+| Instrumentation | `pilot/check_launch_ledger.py`, `pilot/harvest_launch_stats.py`, `pilot/classify_run.py`, `pilot/parse_workflow_cost.py`, **`pilot/dashboard_server.py`** (live UI, port 8765), `pilot/lang_parity_check.py`, `pipeline_version.py`, `pilot/layer_versions.py`, `pilot/watch_upstream.py` |
 | Selftests | **`pilot/window_selftest.py`**, `roadmap_check.py`, `review_changelog_guard.py`, `lod_acceptance.py` |
 | Release / edition | `preflight_remaining_gates.py`, `release_readiness.py`, `make_edition_cut.py`, `build_reglue.py` (the edition backbone — synthesize-first lost the bake-off), `build_article_site.py`, `export_interop.py`, `export_lod.py` |
 | Gold / human review | the `gold_*.py` family (14 scripts), `fidelity_sample*.py`, `build_h180_review_sheets.py` |
@@ -535,8 +558,9 @@ see [LAUNCH_STATS.md](https://github.com/gasyoun/SanskritLexicography/blob/maste
 5. **TM re-serves rejected content** — TM addresses on input hash, not
    pass/fail history. `--no-tm` on every defect requeue + the H304 fragment
    denylist.
-6. **A manual save between Workflow and disk is a loss point** — H145. Drive
-   the Workflow from the session; verify `meta.root` after saving.
+6. **A manual save between executor and disk is a loss point** — H145 (Workflow
+   era). On headless, still verify `meta.root` + manifest-v2 bind after
+   writing `wf_output.json`; never promote an unbound payload.
 7. **Gate false positives cluster around markup/language misclassification** —
    every gate-bug hunt found a heuristic built for one input class firing on a
    structurally similar other one. Suspect this before suspecting the
@@ -603,21 +627,26 @@ promotion claim files, per-window namespacing, append hygiene):
    ⚠️ Any promotion from `incoming/` still passes the manifest-v2 binding
    gate (§5 step 8) — unbound payloads are refused.
 
-## 14. Interactive sessions vs workflow fan-outs — two different limits
+## 14. Interactive sessions vs generation fan-outs — two different limits
 
-Folded from the root HUMAN_RU sheet §8 (18-07-2026, H1245) — the distinction
-matters when planning account load:
+Folded from the root HUMAN_RU sheet §8 (18-07-2026, H1245); updated 24-07-2026
+for the headless route — the distinction still matters when planning account
+load:
 
-- **Interactive Claude Code sessions**: there is no concurrency limit that
-  surfaces as API errors — sessions share the account's 5-hour rolling window
-  and weekly quota; exhaustion reads as a clean "limit reached", not an error.
-  2–3 concurrent Opus-tier sessions per account is comfortable; more just
-  burns the window faster.
-- **Workflow fan-outs are what actually fall over**: measured
-  `Connection closed mid-response` and kill-timeouts appear under high agent
-  concurrency (the Slice-D collapse ≈18 concurrent root workflows) — hence
-  the global ≤3-lane rule above. This is server-side load-shedding; the
-  account of origin is irrelevant.
+- **Interactive Claude Code / Grok sessions**: there is no concurrency limit
+  that surfaces as API errors — sessions share the account's rolling window
+  and weekly quota; exhaustion reads as a clean "limit reached" /
+  `rate_limit`, not a garbled error. 2–3 concurrent heavy sessions per
+  account is comfortable; more just burns the window faster.
+- **Generation fan-outs are what actually fall over**: measured
+  `Connection closed mid-response`, kill-timeouts, and session `rate_limit`
+  under high agent concurrency (Slice-D ≈18 concurrent root windows; c2
+  medium50 w1 after multi-spawn) — hence the global ≤3-lease rule and
+  headless `max-wide=1` on bounded paid runs. This is server-side
+  load-shedding; the account of origin is irrelevant.
+- **`--max-agents` is a total-spawn cap**, not "one batch at a time". Value
+  `1` on a multi-key heal-capable window starves non-`b0` work
+  (`C2_M50_W1_MAX_AGENTS1_2026-07-24`).
 
 Safe per-account shape: **1 generation lane + 1–2 light sessions** (audit,
 promotion, docs).

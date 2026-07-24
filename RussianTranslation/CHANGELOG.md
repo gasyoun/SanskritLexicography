@@ -10,6 +10,20 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Documented — PWG translation manuals truth-pass (headless-first, 24-07-2026)
+
+- Editor manual [`pwg_ru.md`](pwg_ru.md) rewritten from pre-run *plan* framing to **live
+  production** status (store 11,603; headless manifest v2; deterministic gates first;
+  Sonnet 5 pin; open human gates listed).
+- Operator deep manual
+  [`docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md)
+  §5 production loop rewritten around `/pwg-live-gate` → coordinator prepare → headless
+  execute → audit → promote; lanes/counts/parity/selftests stamped 24-07-2026.
+- Aligned: [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md), [`AGENTS.md`](AGENTS.md),
+  [`README.md`](README.md), [`USE_CASES.md`](USE_CASES.md), [`PIPELINE_HISTORY.md`](PIPELINE_HISTORY.md)
+  live-status block, parent [`Claude.md`](../Claude.md) pwg_ru section,
+  [`docs/manuals/MAINTAINER_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/MAINTAINER_MANUAL.md).
+
 ## [1.60.0] - 2026-07-24
 
 ### Fixed — H1618 unpaid four tracks (max-agents guard, cohort engine, C-49 residuals, LANG_PARITY)

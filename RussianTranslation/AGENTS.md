@@ -6,8 +6,9 @@ pipeline, with article-comparison Russian review work as the secondary track.
 
 ## Scope and Current Truth
 
-- **Primary track:** scale PWG → Russian through the frequency-window Max
-  workflow described in `src/pilot/RUN_FREQ_MAX.md`.
+- **Primary track:** scale PWG → Russian through the frequency-window
+  **headless CLI (manifest v2)** loop described in `src/pilot/RUN_FREQ_MAX.md`
+  (H1110; Workflow lane is forensics only).
 - **Secondary track:** finish the article-comparison flagship pair
   `agni` + `akṣara` in `../article-comparison/`, after human sign-off on the
   review proposals.
@@ -59,8 +60,9 @@ Immediate next operator action: read the live queue in
 file (an earlier version pinned `sTA` -> `BU` here long after both completed;
 this doc describes the LOOP, the journal owns the QUEUE).
 
-Per root, after the Workflow run, save + audit in one step (this also refuses
-the requeue-clobbers-full-file overwrite and merges requeues with `--merge`):
+Per root, after the headless run lands `wf_output.json`, save + audit in one
+step (this also refuses the requeue-clobbers-full-file overwrite and merges
+requeues with `--merge`):
 
 ```powershell
 python save_and_audit.py <root> <task_output_file> <tag>   # tag: sc / sd / en ...
@@ -185,7 +187,8 @@ them for current production windows.
 ## Corpus and External API Work
 
 Claude production translation is not a local Python Claude API loop. It runs
-through the Claude/Max Workflow surface.
+through the **profile-bound headless CLI** on manifest v2 (H1110); the Max
+Workflow surface is retained for forensics only.
 
 DeepSeek/OpenRouter corpus-lexicon builds are append-only and resumable. Failed
 batches are logged locally in `src/corpus_lexicon.failures.jsonl` and can be
