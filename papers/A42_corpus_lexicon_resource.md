@@ -456,6 +456,25 @@ by this licence; the public deposit scope (full pairs vs. alignment-only vs. agg
 frequencies) must be settled per source before release. **DOI:** *TODO — Zenodo DOI to
 mint once the rights scope is fixed (author action).*
 
+**Rights-partitioned release bundles (H1458, 22-07-2026, Sonnet 5 `claude-sonnet-5`).**
+The "settled per source" step above is now mechanized, not just stated: the sibling
+Publication-Grade Sa→Ru TM span
+([H215](https://github.com/gasyoun/Uprava/blob/main/handoffs/H215-Opus_RussianTranslation_pwg_ru_publication_grade_tm_tmx_and_oral_06.07.26.md)/[H1458](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1458-Sonnet_RussianTranslation_pubgrade-tm-track-c-release-prep_22.07.26.md))
+built
+[`RussianTranslation/src/build_release_bundles.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_release_bundles.py),
+which reads this exact alignment lexicon and, per-work, consults the canonical
+[SamudraManthanam rights ledger](https://github.com/gasyoun/SamudraManthanam/blob/main/nkrya-parallel/export/RIGHTS_TABLE.md)
+(H821) fail-closed (absent-from-ledger = grey, never assumed clear). Result as of
+22-07-2026: **all 131 source works are still `needs_review`** (that ledger's own
+finding stands: 4 of 131 have a documented translator, 0 of 131 are cleared) — so the
+tool emits an `alignment-only` bundle
+([`RussianTranslation/release/corpus_tm/derived_only.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/corpus_tm/derived_only.sample.jsonl),
+1,093,391 rows with the `ru` field stripped, sample committed) with **zero** Russian
+surface text, mechanically asserted by `build_release_bundles.py --audit-rights`. This
+does not resolve the per-translator clearance this section still calls a blocker — it
+proves the *mechanical* side (no accidental leak of copyrighted text) is now airtight,
+so the remaining gap is purely the human per-source clearance pass, not tooling.
+
 ## 9. Claim → artifact inventory
 
 Every headline claim, its figure, and the artifact it traces to (per the

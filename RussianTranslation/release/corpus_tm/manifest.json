@@ -1,0 +1,25 @@
+{
+  "schema": "pwg.release_bundles.manifest.v1",
+  "version": "1.0.0",
+  "built_at_source": "build_release_bundles.py",
+  "public_full": {
+    "jsonl": "release/corpus_tm/public_full.jsonl",
+    "tmx": "release/corpus_tm/public_full.tmx",
+    "record_count": 2392,
+    "sha256_jsonl": "abbc2c1320ef4faff95be64ca550c901203efe04801dc013666d1c35c6f154db",
+    "sha256_tmx": "9131a892e65b365b0d1a3f2cfb5256d93442b41f8d12ac35cd4fa3acbc919902",
+    "rights": "own_translation_of_public_domain_source (PWG)"
+  },
+  "derived_only": {
+    "jsonl": "release/corpus_tm/derived_only.jsonl (gitignored -- regenerable, not a deliverable)",
+    "sample_jsonl": "release/corpus_tm/derived_only.sample.jsonl (tracked -- reviewable slice)",
+    "record_count": 1093391,
+    "sample_record_count": 2000,
+    "source_lexicon_rows": 1093391,
+    "sha256_sample_jsonl": "a3076359388519cda107cb7ecb63b4efa90a8169cda649a15d18f46411b1b9c6",
+    "rights": "structure-only extraction of corpus_lexicon.jsonl -- NO Russian surface text; source rights per SamudraManthanam RIGHTS_TABLE.md (all works needs_review, H821)"
+  },
+  "rights_table_source": "../../SamudraManthanam/nkrya-parallel/export/RIGHTS_TABLE.md",
+  "rights_table_rows_loaded": 131,
+  "grey_fulltext_note": "corpus_lexicon.jsonl RU surface text stays local + gitignored; never bundled here."
+}

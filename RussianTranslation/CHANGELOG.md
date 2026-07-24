@@ -10,6 +10,40 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1458 Track C: publication/release prep for the Sa→Ru TM (D13 terminology + rights-partitioned bundles + datasheet)
+
+- **C1** [`src/terminology_build.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/terminology_build.py)
+  populates the curated Sa→Ru terminology dataset (D13, previously a 0-term stub): 2,175 terms,
+  one per PWG headword with a `{%...%}` primary-sense gloss span, extracted from the own/PD PWG
+  translation memory (sidesteps the D9 MW-English restriction by not touching MW at all this
+  wave). `doi_status: reserved` in `release/sa_ru_terminology/manifest.ru.json`.
+- **C2** [`src/build_release_bundles.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_release_bundles.py)
+  emits rights-partitioned bundles under `release/corpus_tm/`: `public_full.{jsonl,tmx}` (2,392
+  own/PD PWG records) and `derived_only.jsonl` (1,093,391 `corpus_lexicon.jsonl` rows,
+  structure-only, NO `ru` field — sample of 2,000 committed, full file gitignored/regenerable).
+  Rights are classified fail-closed per source work against the canonical
+  [SamudraManthanam RIGHTS_TABLE.md](https://github.com/gasyoun/SamudraManthanam/blob/main/nkrya-parallel/export/RIGHTS_TABLE.md)
+  (all 131 sources `needs_review`, 0 cleared). `--audit-rights` mechanically asserts 0 grey RU
+  surface strings in any tracked bundle — **PASS** on this build.
+- **C3** [`TRANSLATION_MEMORY_DATASHEET.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/TRANSLATION_MEMORY_DATASHEET.md)
+  rewritten from a blank template to a filled datasheet per
+  [Bender & Friedman (Q18-1041)](https://aclanthology.org/Q18-1041/) + Gebru et al., with the
+  per-source rights table for both artifact pools.
+  [`papers/A42_corpus_lexicon_resource.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A42_corpus_lexicon_resource.md)
+  §8 documents that the rights-partition tooling now mechanizes A42's "RU-translation IP
+  documentation" gate (clearance itself remains a human @DO).
+- **C4** [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) A42 row
+  updated to record the mechanized rights gate.
+- **C5** [`release/PUBLISH_PACKET.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/PUBLISH_PACKET.md)
+  assembled for the human `/publish-safety-check` gate: what's ready now (own/PD artifacts),
+  the per-source clearance checklist for the 131 `needs_review` corpus works, and ordered
+  DOI-mint steps. **No publish/DOI/visibility action taken by the agent** — H215/H1458 fence.
+- Tracks A (COMET-QE/awesome-align/LaBSE hardening, [H1457](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1457-Sonnet_RussianTranslation_pubgrade-tm-track-a-technical-hardening_22.07.26.md))
+  and B (oral corpus, [H290](https://github.com/gasyoun/Uprava/blob/main/handoffs/H290-Opus_RussianTranslation_oral_text_pdf_tm_ingest_07.07.26.md))
+  have not landed yet as of this pass (H1457 queued; H290 blocked on an MG-supplied calibration
+  sample) — the terminology dataset and release bundles cover the PWG-derived pool only; rerun
+  both build scripts once A2/B4/B5 land their graded units.
+
 ### Added — H1457 Track A: Sa→Ru TM technical hardening (COMET-QE/awesome-align/LaBSE spike)
 
 - Spike S1 (`src/nn_api.py`): LaBSE embeddings serve locally in-env (no HF token needed);

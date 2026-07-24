@@ -1,10 +1,16 @@
 {
   "schema": "pwg.sa_ru_terminology.manifest.v1",
   "lang": "ru",
-  "built_at": "2026-07-04T12:23:46Z",
+  "version": "1.0.0",
   "artifact": "sa_ru_terminology.ru.jsonl",
-  "artifact_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "term_count": 0,
-  "source_suggestion_tm": null,
-  "doi_status": "planned_separate_dataset"
+  "artifact_sha256": "1acd428ad172193d696e2428e922edb2cf250cbd53c65512d7777f1134f88747",
+  "term_count": 2175,
+  "source_tm": "release/translation_memory/translation_memory.ru.publication.jsonl",
+  "source_tm_sha256": "e469c7b3a86ae63c61e73465229ea7f2e8fbfd02f67ed84cbd7e571912253f41",
+  "doi_status": "reserved",
+  "rights": "own_translation_of_public_domain_source (PWG, Boehtlingk-Roth, 19th c.)",
+  "known_limitations": [
+    "written/PWG-derived terms only -- Track B (oral) term feeds not yet folded in",
+    "one term per headword (primary sense only) -- not exhaustive per-sense coverage"
+  ]
 }
