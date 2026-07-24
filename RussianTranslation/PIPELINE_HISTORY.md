@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 22-07-2026_
+_Created: 04-07-2026 · Last updated: 24-07-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -811,16 +811,23 @@ Two consequences worth internalising before touching the lane:
   v2 and the `AWAITING_REVIEW` checkpoint all landed in
   [PR #530](https://github.com/gasyoun/SanskritLexicography/pull/530).
 
-**Live status at the time of writing: the lane is code-ready and host-blocked.** Every
-offline gate is green (`window_selftest` 142/142, parity 53/53 no drift, ruff clean) and the
-c4 profile is mechanically proven bound, but the measured c4 health latency is
-**98,625 ms against a strict 30,000 ms ceiling** — a `success`/pure-latency reading, not an
-auth or connection failure, and essentially unchanged from the 16-07 reading of 104,870 ms.
-The bounded ladder therefore terminated at **`HEALTH_NOGO_BY_ENVIRONMENT`** with the canary
-and batch unspent, zero promotions, zero store writes and zero TM rebuilds. Resume is **one**
-health probe after the host demonstrably recovers — never a probe on a whim, never a reroll.
-Full terminal record:
+**Live status evolves; do not freeze "host-blocked" as permanent.** H1110 Phase 6
+(18-07) terminated at **`HEALTH_NOGO_BY_ENVIRONMENT`** (c4 health **98,625 ms** vs a
+30,000 ms ceiling) with canary/batch unspent — full terminal record:
 [H1110_PHASE6_C4_LADDER_HEALTH_NOGO_BY_ENVIRONMENT_2026-07-18.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1110/H1110_PHASE6_C4_LADDER_HEALTH_NOGO_BY_ENVIRONMENT_2026-07-18.md).
+Later sessions have recorded both fresh GO (e.g. H1447 LIVE_GO on c4 with live
+`dq_canary_puregloss` 3/3) and fresh NO-GO / `rate_limit` readings — **each paid
+window needs its own**
+[`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+result; a stale GO never authorizes spend. Offline gates as of late July:
+`window_selftest` 170+ green, LANG_PARITY 70+ entries no drift (exact counts in
+the live journal / last selftest run). Store **11,603** RU rows; remaining unique
+population **~5,580** (H1339). Operator map:
+[src/pilot/RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md);
+editor-facing:
+[pwg_ru.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md);
+deep manual:
+[docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md).
 
 ## Where to go next
 
