@@ -10,6 +10,17 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Documented — c2 medium50 w1 only-b0/all-nulls forensics (`--max-agents 1` total-spawn starvation)
+
+- [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) id `C2_M50_W1_MAX_AGENTS1_2026-07-24`: measured
+  0/3 nulls with single `b0` attempt were **operator misuse of `--max-agents`**, not c2 Pro
+  host failure. The flag caps **total** translate+heal spawns; `N=1` starves multi-key
+  windows; `selfheal-nothing-resolved` overwrites `budget_exceeded` notes while
+  `budget_stops` (23–24) is the smoking gun. Fix re-run without the flag multi-spawned then
+  hit a separate c2 Pro **session** limit (`rate_limit`, reset 15:30 Europe/Moscow).
+- Comparison table: [`RESULTS_LOG.md`](RESULTS_LOG.md) (24-07-2026 entry). Guardrail: never
+  copy canary `--max-agents 1` onto multi-key/heal-capable windows.
+
 ### Added — H1458 Track C: publication/release prep for the Sa→Ru TM (D13 terminology + rights-partitioned bundles + datasheet)
 
 - **C1** [`src/terminology_build.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/terminology_build.py)

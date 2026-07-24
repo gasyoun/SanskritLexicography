@@ -1,8 +1,31 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 20-07-2026_
+_Created: 09-07-2026 · Last updated: 24-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 24-07-2026 — c2 medium50 w1 forensics: only-b0 / all-nulls = `--max-agents 1` starvation
+
+Executor: Grok 4.5 (session) · gen model: Sonnet 5 (`claude-sonnet-5`) · profile: **c2 Pro**
+(not Max) · keys: `nakzatra` / `sarvatra` / `sakft` · artifacts under
+`src/pilot/output/c2_m50_w1*` (gitignored). Ledger:
+[`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) id `C2_M50_W1_MAX_AGENTS1_2026-07-24`.
+
+| run | config | `--max-agents` | ok/null | attempts seen | translate/heal spent | budget_stops | cost USD | terminal |
+|---|---|---:|---|---|---|---:|---:|---|
+| full w1 | c2 full profile | **1** | 0/3 | **b0 only** (success 161.8s) | 1 / 0 | **24** | 0.599 | all errors `selfheal-nothing-resolved` |
+| stripped w1 | c2-stripped (H1517) | **1** | 0/3 | **b0 only** (timeout 180.3s) | 1 / 0 | **23** | 0.000 | same error stamp |
+| fix w1 | c2 full profile | **omit** (manifest 19/41) | aborted | b0 timeout + **many** `heal:nakzatra#g*` + b1 | multi-spawn | n/a (HardFailure) | partial (~0.50+ on last call) | **`rate_limit`** session limit; resets 15:30 Europe/Moscow |
+
+**Root cause (operator/process, not Pro-host):** `--max-agents N` caps **total** model
+spawns (translate+heal) for the whole run. `N=1` spends the budget on the first batch;
+remaining work refuses as `budget_exceeded` without spawning; `self_heal` overwrites notes
+with `selfheal-nothing-resolved`. Smoking gun triad: `budget_stops ≫ 0` +
+`translate_agents_spent=1` + single `b0` in `headless_attempts`.
+
+**Guardrail:** do not copy `--max-agents 1` from single-key canaries onto multi-key windows.
+**Separate residual:** c2 Pro session limit blocked the fix-run before a clean 3/3; re-run
+after reset without the flag.
 
 ## 20-07-2026 — Sa→Ru gloss layer, wave 4: read-only TM lookup wired (H1349 W4 — H1349 COMPLETE)
 
