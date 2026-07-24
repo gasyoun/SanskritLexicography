@@ -1,7 +1,8 @@
 key	value
 seed	1483
-dicts	mw,pwg,pw,ap90,cae,wil,sch,md,ccs,gra,skd,vcp,bhs,bur,vei
+dicts	abch,acc,acph,acsj,ae,ap,ap90,armh,ben,bhs,bop,bor,bur,cae,ccs,fri,gra,gst,ieg,inm,krm,lan,lrv,mci,md,mw,mw72,mwe,nmmb,pe,pgn,pui,pw,pwg,pwkvn,sch,shs,skd,snp,stc,vcp,vei,wil,yat
+all	1
 csl_orig	C:\Users\user\Documents\GitHub\csl-orig\v02
-n_dicts_ok	15
-sample_rows	457
-input_sha1_12	mw:bfaf9e5a5bf6;pwg:f37dcd1dd3ce;pw:8acc8dbe5f71;ap90:bd278117441b;cae:614c44906cc6;wil:8fed04a7e79d;sch:52e540ec22f3;md:4d8c08644bbe;ccs:7637709fdd2e;gra:6748c74799aa;skd:a8f2278b5763;vcp:cd55e98ef588;bhs:10c9b00b17e8;bur:40e5cf0e899f;vei:c5bf67150ab8
+n_dicts_ok	44
+sample_rows	500
+input_sha1_12	abch:581805:393ce2e685af;acc:8168907:a03720db73e5;acph:63631:0ddf144eb89a;acsj:50122:6928886d5394;ae:4264446:7dbb997e2bb0;ap:18525907:56e97fbfb80e;ap90:11766345:062aa7b5d546;armh:1346702:a2d38915be2f;ben:5809744:4711fb2a03d3;bhs:7601178:b22d74c6f420;bop:2116876:b0a302b91613;bor:5633427:5e9fdacc5cf4;bur:4832037:e579164673a0;cae:5311677:7c8dad24dba5;ccs:3581965:8cb5d24c51c9;fri:2305686:a596d0385026;gra:6419587:a290c9fd4bec;gst:2653069:f8b1383d6e04;ieg:1811732:2ece8fa02993;inm:7023737:7abd2525a15d;krm:3355133:d89721598593;lan:1403261:d989df4f6d6e;lrv:7125995:2853bf865eed;mci:3674321:846a58f2a18f;md:6181239:7edf5b84d7a6;mw:50163282:914b0480d837;mw72:17172254:5442fc5d888d;mwe:8409021:8d28b1e03909;nmmb:87366:fe42520b8837;pe:6521202:17bdf376db9a;pgn:832820:8f853bd0bfa2;pui:3916210:b5b4e49cb6e8;pw:31495384:9bf529a228cd;pwg:54634244:95dbd007f1f7;pwkvn:3066388:70fc3c0de978;sch:4770385:6b96ab15c0e6;shs:9244937:cccf5035bbf5;skd:22867341:e0946b7666b2;snp:294270:51bcfb53ddd5;stc:5736300:6770cf641e09;vcp:25107867:655eb769b7cd;vei:3134915:28fcc17d1f9c;wil:9960919:9ee58934816d;yat:5257490:34bf0c77eb09

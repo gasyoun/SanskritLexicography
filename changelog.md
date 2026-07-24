@@ -16,7 +16,7 @@ not an error.
 
 ### Added
 
-- **Definition typology classifier WS2.4 (H1483).** Rubric (synonym / equivalent / encyclopedic / residual) + 15-dict distribution over 926,759 csl-orig records + stratified gold sample (**63/79 = 79.7%** live `--verify`). Report [`data/DEFINITION_TYPOLOGY_WS2_4_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md); script [`data/definition_typology_classifier.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/definition_typology_classifier.py) (`--all` for every csl-orig dict); TSV outputs beside the script. Closes the L1 “○ not started” ATLAS_FAIR micro-gap as ◐ first-pass (double-key pool still open).
+- **Definition typology classifier WS2.4 (H1483).** Rubric + **all 44 csl-orig dicts / 1,496,157 records** (`--all`) + stratified gold **55/79 = 69.6%** (after linear apparatus strip; ACC citation-chain hang fixed). Report [`data/DEFINITION_TYPOLOGY_WS2_4_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md); script [`data/definition_typology_classifier.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/definition_typology_classifier.py).
 
 - **Markup-tag heatmap + RU-gloss gap cards (H1527).** Offline single-file HTML under
   [`data/viz/`](https://github.com/gasyoun/SanskritLexicography/tree/master/data/viz) charting the

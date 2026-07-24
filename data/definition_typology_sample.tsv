@@ -1,458 +1,501 @@
 dict	l_id	k1	predicted	reason	plain_excerpt	gold	notes
-ap90	3690	aByutpatanaM	synonym	syn_list_n=4	Springing or leaping against, sudden spring or leap, assault; alakzitAByutpatano nfpeRa R. 2. 27.		
-ap90	15698	dolAyita	synonym	syn_list_n=3	a. Swung, shaken, oscillating &c.		
-ap90	12633	guzpita	synonym	syn_list_n=2	a. Ved. Interlaced, intwined.		
-ap90	23360	mUrtitvaM	synonym	syn_list_n=3	Embodiment, materiality, incarnation.		
-ap90	17330	nIvft	synonym	syn_list_n=3	m. Any inhabited country, realm, kingdom.		
-ap90	19352	pezaka	synonym	syn_list_n=2	a. Pounding, grinding.		
-ap90	14863	tUzRIka	synonym	syn_list_n=2	a. Silent, taciturn.		
-ap90	8545	upajalp	synonym	syn_list_n=3	c1c P. To talk to, converse with, chatter. -- To advise.		
-ap90	6038	AwarUzaH	equivalent	name_formula	[ awarUza eva, svArTe aR ] N. of a tree, see awarUza .		
-ap90	27832	SAMbavikaH	equivalent	short_tok=4	A dealer in shells.		
-ap90	28273	SOkaM	equivalent	short_tok=4	A flock of parrots.		
-ap90	15566	dUlikA	equivalent	short_tok=3	The Indigo plant.		
-ap90	10686	kAnizWineyaH	equivalent	short_tok=11	[ kanizWA-apatyArTe Wak inaN ca ] The offspring of the youngest child.		
-ap90	10769	kArIzaM	equivalent	short_tok=8	[ karIzARAM samUhaH aR ] A heap of dried cowdung.		
-ap90	11263	kuvAhulaH	equivalent	short_tok=2	A camel.		
-ap90	16567	nAhuzaH	equivalent	short_tok=4	An epithet of Yayāti.		
-ap90	32017	BAravi	encyclopedic	desc_tok=14_char=102	Author of the Kirātārjunīya; mentioned along with Kālidāsa in an inscription dated 634. See kAlidAsa .		
-ap90	27796	SAtakuMBaM	encyclopedic	desc_tok=7_char=63	1 Gold; Śi. 9. 9 ; N. 16. 34 . --2 The thorn-apple ( DattUra ).		
-ap90	1114	aDyUQa	encyclopedic	desc_tok=32_char=226	a. [ aDi upari UQaH ] 1 Raised, exalted, elevated, hanging over. --2 Abundant, increased, copious. --3 Rich, affluent. --QaH Śiva. --QA A wife whose husband has married another wife and thus superseded her (= aDivinnA q. v. ).		
-ap90	24530	las	encyclopedic	desc_tok=57_char=416	I. c1c P. ( lasati, lasita ) 1 To shine, glitter, flash; muktahareRa lasatA hasatIva stanadvayaM K. P. 10 ; karavARi caraRadvayaM sarasalasadalaktakarAgaM Gīt. 10 ; Amaru. 16 ; N. 22. 53. --2 To appear, arise, come to light. --3 To embrace.		
-ap90	23912	raH	encyclopedic	desc_tok=29_char=218	1 Fire. --2 Heat. --3 Love, desire. --4 Speed. --5 (In prosody) A syllabic foot ( gaRa ) consisting of a short syllable between two long syllables. --rA 1 Giving. --2 Gold. --rI Going, motion. --raM Brightness, lustre.		
-ap90	30636	sODa	encyclopedic	desc_tok=52_char=398	a. ( DI f. ) [ suDayA nirmitaM raktaM vA aR ] 1 Relating to, or having, nectar. --2 Having plaster, or plastered. --DaM 1 A white-washed mansion, any stuccoed house. --2 Any great mansion or palace, large house; sODavAsamuwajena vismftaH sa		
-ap90	14690	tiryac	encyclopedic	desc_tok=136_char=959	a. ( tiraScI f. , rarely tiryaM , cI ) 1 Oblique, transverse, horizontal, awry; Ku. 6. 71. --2 Crooked, curved. --3 Crossing over, traversing. --4 Winding. --5 Lying in the middle or between. -- m. , -- n. 1 An animal (going horizontally, a		
-ap90	26828	vIvaDikaH	encyclopedic	desc_tok=13_char=67	1 A man who carries loads by means of a yoke. --2 A general dealer.		
-ap90	7028	ASalaH	residual	crossref_short	A tree; see jIvaka .		
-ap90	28091.1	SutudrUH	residual	crossref	Lbody=28091		
-ap90	294.1	aMgiras	residual	crossref	Lbody=294		
-ap90	1431.1	animizA	residual	crossref	Lbody=1431		
-ap90	11822.1	kzatraM	residual	crossref	Lbody=11822		
-ap90	23408.1	mfRAlI	residual	crossref	Lbody=23408		
-ap90	18376.1	paredyus	residual	crossref	Lbody=18376		
-ap90	9306.2	uSIraM	residual	crossref	Lbody=9306		
-bhs	1949	arDaparyaNka	synonym	syn_list_n=3	( m. ; = Pali aḍḍha-pallaṅka), half-paryaṅka position (with only one leg bent under): LV 〔155.1〕 (˚kaṃ kṛtvā).		
-bhs	306	atimAna	synonym	syn_list_n=6	(= Pali id. ), self-conceit, excessive pride ; see also mānātimāna : Mv 〔iii.214.9〕; an-atimāna-tayā, Gv 〔464.5〕.		
-bhs	4367	kaRWamaRi	synonym	syn_list_n=3	( m. or f. ; = Skt. Lex. id. only Trik. ), Adamʼs apple : ˚ṇiḥ Mvy 〔3962〕.		
-bhs	8263	ninandati	synonym	syn_list_n=6	(unrecorded elsewhere), rejoices, applauds : ˚diṃsuḥ (or v.l. ˚ditsuḥ), 3 pl. aor. , Mv 〔iii.267.8〕 ( vs , but metr. poor).		
-bhs	8605	nistIraRa	synonym	syn_list_n=9	, (to next, plus -ana), accomplishment : LV 〔429.18〕; Dbh 〔3.22〕 (pratisaṃvid-bhūmi-˚ṇāya); 〔4.7〕; 〔42.21〕; Gv 〔201.25〕; 〔344.19〕 (-samārambha-nis˚); all prose.		
-bhs	10312	pratyezaka	synonym	syn_list_n=3	, m. ( cf. next), recipient : (-vyākaraṇa-)˚kaś Dbh 〔71.25〕; (prajñāpāramitāyāḥ …) AsP 〔40.16〕.		
-bhs	12852	rUpyavatI	synonym	syn_list_n=2	, read Rūpāvatī , q.v. : RP 〔25.2〕.]		
-bhs	14657	vyavadahyati	synonym	syn_list_n=4	( v.l. vyapa˚), pass. , is consumed, burnt away : (atha teṣāṃ …) tac chavimānsalohitaṃ ˚yati Mv 〔i.18.13〕 (prose).		
-bhs	11158	BadrottamA	equivalent	name_formula	, n. of a lay-disciple: Gv 〔451.10〕 etc.		
-bhs	5775	guRAkaragupta	equivalent	name_formula	, n. of a teacher and author: Sādh 〔541.14〕.		
-bhs	12013	mArapramardaka	equivalent	name_formula	, n. of a son of Māra (favorable to the Bodhisattva): LV 〔316.22〕.		
-bhs	12121	muci	equivalent	name_formula	, n. of an ancient king: Mvy 〔3562〕. Seems to correspond to Pali Mucala, DPPN .		
-bhs	8018	nagarabindu	equivalent	name_formula	( cf. Pali Nagaravinda), n. of a city in Kośala: MSV 〔i.66.5〕.		
-bhs	17136	suvarRaDvaja	equivalent	name_formula	( nt. ), n. of a palace at Aḍakavatī : Suv 〔116.1〕.		
-bhs	14559	vErAmaka	equivalent	name_formula	( cf. Skt. Vairāma, n. of a people, Mbh. Cr. ed. 〔2.47.10〕), n. of a locality: Māy 〔48〕.		
-bhs	14288	vizRulA	equivalent	name_formula	, n. of a rākṣasī: Māy 〔240.7〕.		
-bhs	6564	jAtIya	encyclopedic	desc_tok=250_char=1772	, ifc. adj. , ( 1 ) (in this sense unrecorded; cf. jāti 2) of (such and such) an age : bāla-j˚, young in age , Mvy 〔7099〕; (kumārakāś …) SP 〔73.4〕 (in this and the next two bāla may also connote foolish ); bālāḥ ( fools ) kṣaṇyante madhudig		
-bhs	12146	mudrA	encyclopedic	desc_tok=171_char=1190	(in these mgs. not in Skt. ), ( 1 ) (= Pali muddā, acc. to PTSD art of calculation ; assoc. with gaṇanā; acc. to DN comm. 〔i.95.19〕 hattha-muddā-gaṇanā, cf. Tib. below, while gaṇanā is acchiddaka-( q.v. CPD )-gaṇanā), some method of calcula		
-bhs	10422	praBeda	encyclopedic	desc_tok=19_char=152	, m. , ( 1 ) ten thousand : Mvy 〔7993〕 ( mg. proved by position and Tib. khri ); ( 2 ) analysis, solution (of questions): praśna-˚da-kuśalaś SP 〔340.2〕.		
-bhs	10314	pratyottareRa	encyclopedic	desc_tok=35_char=267	, adv. , after (with prec. gen. ; cf. ottareṇa , also preceded by Dīpaṃkarasya): (Dīpaṃkarasya tathāgatasya) pratyottareṇa (all mss. ; Senart em. tasyott˚, but tasya is implausible in this position) Mv 〔i.2.2〕, after D. Em. to *pratyuttareṇ		
-bhs	16555	sarvotuka	encyclopedic	desc_tok=42_char=334	, or ˚duka , adj. (〔§ 3.92〕; semi- MIndic for Skt. sarvartuka; see sarvārtuka ; = Pali sabbotuka, AMg. savvouya, savvottuya), of all seasons : ˚tukāni ( mss. sarvodakāni; with puṣpāṇi) Mv 〔iii.69.12, 13〕; (puṣpāṇi …) sarvotuka-(so Senart em		
-bhs	3581	udyAna	encyclopedic	desc_tok=145_char=922	(in Skt. nt. , park , and so Pali uyyāna), ( 1 ) park , as m. (? with m. form of pron. ): udyāna sarve ( n. pl. ) LV 〔231.1〕 ( vs ); ( 2 ) advance (of an army), one of the arts mastered by the young Bodhisattva: LV 〔156.12〕 udyāne ( Tib. md		
-bhs	13498	vAdirAj	encyclopedic	desc_tok=10_char=67	, a name or form of Mañjuśrī: ˚rāḍ-Mañjuśrīrūpaṃ Sādh 〔104.5〕; etc.		
-bhs	13835	viDamanaka	encyclopedic	desc_tok=21_char=123	( nt. or m. ; cf. prec. ), bellows : ˚kena vā (in series of methods of producing wind) Śikṣ 〔249.2〕; so acc. to Tib. sbud .		
-bhs	11234	BAziRikA	residual	crossref_short	, see bhās˚ .		
-bhs	441	aDimucyanA	residual	crossref	= prec. , q.v. : Sūtrāl. 〔xi.61〕.		
-bhs	7382	durAkAra	residual	crossref_short	, see ākāra .		
-bhs	8523	niSCavIkftvA	residual	crossref_short	, see nicchavi˚ .		
-bhs	10687	prAtihArapakza	residual	crossref	= prec. , q.v.		
-bhs	10133	pratiSamayati	residual	crossref	= pratiśām˚ , q.v.		
-bhs	12722	raSami	residual	crossref	= next, 〔§ 3.101〕, m.c. : raśami-śata- LV 〔357.3〕 ( vs ); best mss. rasami-, others raśmi-, metr. inferior.		
-bhs	14725	vyutKaRqaSaH	residual	crossref	= vyutkaṇṭhaśaḥ , q.v. : Prāt 〔532.11〕; acc. to Chin. , picking out the best morsels (to Skt. khaṇḍa).		
-bur	12693	BasUcaka	synonym	syn_list_n=2	bhasūcaka m. (bha étoile) astronome, astrologue.		
-bur	1202	aBisUcita	synonym	syn_list_n=2	abhisūcita pp. (sūc) montré, manifesté.		
-bur	1790	aSEkza	synonym	syn_list_n=3	aśaikṣa a. (a priv. ) Bd. qui n'est plus éleve; qui est maître, et même arhat .		
-bur	1471	al	synonym	syn_list_n=6	al. alāmi, ale 1; p. āla; a1. āliṣam; pp. alita. Orner. -- Contenir, empêcher. Suffire.		
-bur	12544	bukk	synonym	syn_list_n=5	bukk. bukkāmi 1 et bukkayāmi 10. Aboyer, hurler, rugir, braire, etc. Parler.		
-bur	11387	pyuzyAmi	synonym	syn_list_n=6	pyuṣyāmi 4 (api; uṣ) . Brûler. Diviser, partager, distribuer. pyoṣayāmi 10. Envoyer, lancer; rejeter.		
-bur	14984	vAYC	synonym	syn_list_n=3	vāñch. vāñchāmi, vāñche 1. Désirer; angl. wish. Cf. kāṅkṣ.		
-bur	13820	yAsayAmi	synonym	syn_list_n=3	yāsayāmi; pqp. ayīyasam; c. de yas.		
-bur	6850	Cad	equivalent	short_tok=3	chad (?) pour chand.		
-bur	844	anvIta	equivalent	short_tok=3	anvīta comme anvita.		
-bur	9736	nikrAmAmi	equivalent	short_tok=5	nikrāmāmi (kram) fouler aux pieds.		
-bur	11478	prajapAmi	equivalent	short_tok=6	prajapāmi (jap) réciter à voix basse.		
-bur	17637	samaBijAye	equivalent	short_tok=4	samabhijāye (jan) naître.		
-bur	17919	sampariBarAmi	equivalent	short_tok=4	samparibharāmi (bhṛ) mépriser.		
-bur	17540	sannimantraye	equivalent	short_tok=3	sannimantraye (mantra) inviter.		
-bur	15370	vitfzyAmi	equivalent	short_tok=4	vitṛṣyāmi (tṛṣ) avoir soif.		
-bur	16666	SAkamBarI	encyclopedic	desc_tok=17_char=93	śākambharī f. Durgā . Np. de ville. śākambharīya n. sel extrait d'un lac près de Śākambharī .		
-bur	6565	cikasizAmi	encyclopedic	desc_tok=5_char=25	cikasiṣāmi dés. de kas 1.		
-bur	9657	nAgoda	encyclopedic	desc_tok=10_char=54	nāgoda et nāgodara n. esp. de cuirasse ou de plastron.		
-bur	10015	niryUha	encyclopedic	desc_tok=24_char=155	niryūha m. extrait, décoction (?) . Aigrette, guirlande, ornement de tête. Console ou pendoir fixé contre un mur; console ou tablette de pigeonnier. Porte.		
-bur	14043	rANkala	encyclopedic	desc_tok=4_char=17	rāṅkala m. épine.		
-bur	15342	viqAla	encyclopedic	desc_tok=23_char=133	viḍāla m. chat. viḍālaka m. chat. Collyre pour les yeux malades. -- N. orpiment jaune. viḍālapada m. poids de 16 māṣas ou d'un karṣa.		
-bur	13824	yiyasizAmi	encyclopedic	desc_tok=5_char=23	yiyasiṣāmi dés. de yas.		
-bur	17226	zoqaSan	encyclopedic	desc_tok=35_char=199	ṣoḍaśan a. (ṣaṣ; daśan) seize; lat. sedecim. ṣoḍaśāṅghri m. (aṅghri) crabe. ṣoḍaśārcis m. (arcis) la planète Vénus. ṣoḍaśāvarta m. (ā; vṛt) conque [à 16 spires]. ṣoḍaśāṃśu m. (aṃśu) la planète Vénus.		
+abch	1115		synonym	syn_list_n=2	martyakARqaH "/> 2842 Sumba-strIklI,varAwaka-puM,rajju-strI,Sulva-klI,tantrI-strI,vawI-strI,guRa-puM SumbaM varAwako rajjuH SulvaM tantrI vawI guRaH .. 928 ..		
+abch	97		synonym	syn_list_n=2	devakARqaH "/> 505 uccandra-puM,apararAtra-puM 506 tamisra-klI,timira-klI,tamas-klI,DvAnta-klI,BUcCAyA-strI,anDakAra-puMklI,santamasa-klI,avatamasa-klI,anDatamasa-klI uccandrastvapararAtrastamisraM timiraM tamaH .. 145 .. DvAntaM BUCAyAnDak		
+abch	1271		synonym	syn_list_n=3	tiryakkARqaH , pfTvIkAyaH "/> 3150 lokAloka-puM,cakravAla-puM 3151 meru-puM,karRikAcala-puM,ratnasAnu-puM,sumeru-puM,svargiri-puM,svargigiri-puM,kAYcanagiri-puM lokAlokaScakravAlo'Ta meruH karRikAcalaH .. 1031 .. ratnasAnuH sumeruH svaH sva		
+abch	526		equivalent	short_tok=3	martyakARqaH "/> 1582 ayatnajAlaNkAra-puM 1583 prAgalBya-klI 1584 OdArya-klI 1585 mADurya-klI 1586 SoBA-strI 1587 DIratva-klI 1588 kAnti-strI 1589 dIpti-strI 1590 aNgajAlaNkAra-puM 1591 BAva-puM 1592 hAva-puM 1593 helA-strI prAgalByOdAryamA		
+abch	1141		equivalent	short_tok=1	tiryakkARqaH , pfTvIkAyaH "/> 2899 maDyadeSa-puM,maDyama-puM himavadvinDyayormaDyaM yatprAgvinaSanAdapi . pratyageva prayAgAcca maDyadeSaH sa maDyamaH .. 951 ..		
+abch	328		equivalent	short_tok=1	martyakARqaH "/> 1139 nirAkarizRu-puM,kzipnu-puM 1140 vikAsin-puM,vikasvara-puM nirAkarizRuH kzipnuH syAdvikAsI tu vikasvaraH .. 350 ..		
+abch	12		encyclopedic	desc_tok=3_char=102	devADidevakARqaH "/> 112 arhadupAsaka-puM 113 gomuKa-puM 114 mahAyakza-puM 115 trimuKa-puM 116 yakzanAyaka-puM 117 tumburu-puM 118 kusuma-puM 119 mAtaNga-puM 120 vijaya-puM 121 ajita-puM 122 brahman-puM 123 yakzeS-puM 124 kumAra-puM 125 zaR		
+abch	972		encyclopedic	quoted_def	martyakARqaH "/> 2531 pfzadAjya-klI,pfzAtaka-puM Ajye tu daDisaMyukte pfzadAjyaM pfzAtakam .. 832 ..		
+abch	10		encyclopedic	desc_tok=3_char=104	devADidevakARqaH "/> 62 arhatpitf-puM 63 nABi-puM 64 jitaSatru-puM 65 jitAri-puM 66 saMvara-puM 67 meGa-puM 68 Dara-puM 69 pratizWa-puM 70 mahasenanareSvara-puM 71 sugrIva-puM 72 dfQaraTa-puM 73 vizRu-puM 74 vasupujyarAj-puM 75 kftavarman-p		
+acc	47290	SudDidIpikA	synonym	syn_list_n=4	astrol. by Śrīnivāsa. AK 906. AS p. 69. CS 2, 617 (inc.). C. Prabhā by Kṛṣṇānanda. AS p. 203. C. Arthakaumudī by Gaṇapati. Hr. Notices Vol. XI, Pref. p. 5. C.--by Govindānanda. AS p. 203. C. by Mathurānātha Śarman. Hpr. 1, 369. C. Śuddhidīp		
+acc	9950	diNnAga	synonym	syn_list_n=3	Quoted by Vācaspatimiśra Hall p. 20. Malli- nātha on Meghadūta 14 states that he was an oppon- ent of Kālidāsa. He was the author of the buddhistic work Pramāṇasamuccaya. One verse is attributed to him in Sbhv. which however occurs in the M		
+acc	44434	nirRayAmfta	synonym	syn_list_n=2	by Allāḍanātha, son of Siddha Lakṣmaṇa. AS p. 93. Lz. 500. Peters. 5, 122. --by Rāmacandra. Hr. Notices Vol. XI, Pref. p. 4.		
+acc	2088	AruRaketuka	equivalent	short_tok=0	Taitt. Peters. 2, 176.		
+acc	36391	rAmapUjAmantra	equivalent	short_tok=1	by Acyutaśarman. Gov. Or. Libr. Madras 76.		
+acc	38566	sAmAnyalakzaRArahasya	equivalent	short_tok=0	by Mathurānātha. Oudh XX, 216.		
+acc	30189	ApadevIya	encyclopedic	desc_tok=0_char=62	add Oppert I, 402. 955. 3108. 3288. 3949. 4277. 4468. 4924. 4993. 5246. 6308.		
+acc	11434	nAnASAstra	encyclopedic	desc_tok=0_char=7	(?) med. Paris (B 107).		
+acc	38572	sAmudrika	encyclopedic	desc_tok=1_char=19	palmistry. Peters. 4, 38. 40. Stein 175. --by Viṣṇudatta. Stein 175.		
+acc	1852	ADAnopayuktasAmAni	residual	citation_only	BP. 283.		
+acc	48196	hfdayapraboDikA	residual	crossref	See Aṣṭāṅgahṛdayasaṃgraha.		
+acc	16773	mananAdiniGaRwu	residual	citation_only	Oppert 6107.		
+acph	3		synonym	syn_list_n=2	devakARqaH "/> 5001 gaRadevatA-strI 5002 arka-puM 5003 vasu-puM 5004 viSvedeva-puM 5005 tuzita-puM 5006 ABAsvara-puM 5007 mAhArAjika-puM 5008 rudra-puM 5009 vAyu-puM 5010 vEkuRWa-puM 5011 suSarman-puM 5143 sADya-puM dvAdaSArkA vasavo'zwO vi		
+acph	140		synonym	syn_list_n=3	tiryakkARqaH , dvitricatuzpaYcendriyAH "/> 3898 ajinayoni-puM 3935 ahIraRin-puM,dvimuKa-puM 3968 caYcumat-puM,kaRWAgni-puM,kIkasamuKa-puM,lomakin-puM,rasanArada-puM,vAraNga-puM,nAqIcaraRa-puM 3975 citrapiNgala-puM,nftyapriya-puM,sTiramada-p		
+acph	78		synonym	syn_list_n=6	martyakARqaH "/> 1790 vyaYjana-klI,kowa-puM 1793 muKaKura-puM,Karu-puM,dAlu-puM 1795 rasikA-strI,rasnA-strI,rasamAtfkA-strI,rasA-strI,kAku-strI,lalanA-strI 1796 vaktradala-klI SmaSruRi vyaYjanaM kowo dante muKaKuraH KaruH . dAlurjihvA tu ra		
+acph	44		equivalent	short_tok=0	martyakARqaH "/> 1173 trasnu-puM,trasta-puM 1202 kzudra-puM,praKala-puM trasnutrastO tu cakite'Ta kzudrapraKalO Kale (93) .		
+acph	145		equivalent	short_tok=2	nArakakARqaH "/> 4073 GarmA-strI 4074 vaMSA-strI aTa ratnapraBA GarmA vaMSA tu SarkarApraBA (195) .		
+acph	19		equivalent	short_tok=0	devakARqaH "/> 568 aparetarA-strI 570 pUrvetarA-strI 569 uttaretarA-strI 571 apAcItarA-strI yaTA'paretarA pUrvA'parA pUrvetarA taTA . yaTottaretarA'pAcI taTA'pAcItarottarA .. 29 ..		
+acph	11		encyclopedic	desc_tok=4_char=119	devakARqaH "/> 490 niSAtyaya-puM,gosarga-puM 496 cakraBedinI-strI,nizadvarI-strI,niSITyA-strI,yAmyA-strI,GftArcis-strI,tAmasI-strI,tami-strI,SArvarI-strI,kzaRinI-strI,naktam-a,pESAcI-strI,vAsurA-strI,uSas-strI vyuzwe niSAtyaya(nta)gosargO n		
+acph	132		encyclopedic	desc_tok=0_char=118	tiryakkARqaH , dvitricatuzpaYcendriyAH "/> 3667 kIwamaRi-puM,jyotirmAlin-puM,tamomaRi-puM,parArvuda-puM,nimeSadyut-puM,DvAntacitra-puM 3680 pecakin-puM,puzkarin-puM,padmin-puM,picila-puM,sUcikADara-puM,vilomajihva-puM,antaHsveda-puM,mahAkAy		
+acph	123		encyclopedic	desc_tok=0_char=92	tiryakkARqaH , jalakAyaH "/> 3222 divya-klI,irA-strI,sevya-klI,kfpIwa-klI,Gfta-klI,aNkura-klI,viza-klI,pippala-klI,pAtAla-klI,malina-klI,kambala-klI,pAvana-klI,zaqrasa-klI 5070 pallUra-klI 5071 kiwwima-klI 5072 SAlUka-klI,paNkaganDika-klI 5		
+acsj	52		synonym	syn_list_n=2	martyakARqaH "/> 1307 trikawuka-klI 1310 jamana-klI,javana-klI vyoze trikawukaM jagDO jamanaM javanaM taTA .. 29 ..		
+acsj	191		synonym	syn_list_n=3	tiryakkARqaH "/> 3595 hAlAhala-puMklI,hAla-puMklI 3584 mustaka-puMklI hAlAhalaM taTA hAlaM mustAyAM mustako'pi ca (108) .		
+acsj	74		synonym	syn_list_n=2	martyakARqaH "/> 1652 raRqA-strI 1666 puzpitA-strI raRqA'pi viDavA puzpavatI syAtpuzpitA'pi ca .. 43 ..		
+acsj	188		equivalent	short_tok=0	tiryakkARqaH "/> 3496 jalanIlI-strI 3507 sAtIna-puM SepAlaM ca jalanIlI sAtIno'pi satInavat .. 106 ..		
+acsj	7		equivalent	short_tok=0	devADidevakARqaH "/> 237 tIrTakft-puM,Badra-puM 299 SravaRa-puM Badrakft tIrTakfdBadraH SramaRaH SravaRo'pi ca (5) .		
+acsj	158		equivalent	short_tok=1	tiryakkARqaH "/> 3123 Kaja-puM,KajAka-puM 3124 kawaka-puM KajaH KajAko'pi maTi vizkamBaH kawako'sya tu (90) .		
+acsj	17		encyclopedic	desc_tok=2_char=50	devakARqaH "/> 451 sOra-puM 452 grahakallola-puM,aBrapiSAca-puM 486 nAlikA-strI sOriH sOro'pi rAhustu grahakallola ityapi .. 10 .. aBrapiSAco'pi taTA nAqikA nAlikA'pi ca (11) .		
+acsj	240		encyclopedic	desc_tok=2_char=51	sAmAnyakARqaH "/> 4573 aho-a aho saMboDane'pIti zazWa kARqaH SiloYCitaH .. 138 .. ;end vEkrame'bde triviSvendramite rADAdyapakzatO . granTo'yaM dadfBe SrImajjinadevamunISvarEH .. 139 ..		
+acsj	237		encyclopedic	desc_tok=2_char=54	sAmAnyakARqaH "/> 4492 jAta-klI 4495 saNGarza-puM 4508 vikAra-puM,vikfti-strI 4511 samarpaRa-klI jAtO jAtamapi sparDA saNGarzo'pyaTa vikriyA .. 136 .. vikAro vikftiScApi vilamBastu samarpaRam (137) .		
+ae	4966	holy	synonym	syn_list_n=5	,Ⓒ a. Ⓓ puRya, pavitra, paripUta, sADu, Suci, vimala ; puRyAtman, Sucivrata, DArmika ( kI f. ), Darma-puRya-SIla, DarmAtman, SudDamati ; ‘h(oly) study’ vedADyayanaM ; ‘h(oly) wisdom’ brahmajYAnaM ; ‘h(oly) writing’ SrutiH, vedAH, nigamaH ; 		
+ae	7863	person	synonym	syn_list_n=12	,Ⓒ s. Ⓓ puruzaH, naraH, janaH, vyakti f. ; ‘this p(erson)’ ayaM janaH (referring to the speaker); ‘a female p(erson)’ strIjanaH , aMganAjanaH . Ⓑ 2 SarIraM, aMgaM, vapus n. , dehaH, kAyaH, tanu f. , gAtraM ; See Body . Ⓑ 3 rUpaM, AkAraH, Ak		
+ae	9697	sovereign	synonym	syn_list_n=2	,Ⓒ s. Ⓓ svarRamudrA . Ⓑ 2 aDirAjaH, aDI-SvaraH, aDipatiH, mahArAjaH, aDISaH, sArva-BOmaH, nfpatiH, samrAj m. , oft. by rAjA, pAlaH, nATaH , &c. ; See King . Ⓔ a. Ⓓ parama, SrezWa, muKya, pramuKa ; See Principal . Ⓑ 2 utkfzwa, guRAvaha (medi		
+ae	3056	displume	equivalent	short_tok=1	,Ⓒ v. t. Ⓓ pakzAn ud-hf 1 P or utpaw 10.		
+ae	3850	eyot	equivalent	short_tok=1	,Ⓒ s. Ⓓ laGudvIpaM .		
+ae	9452	sibyl	equivalent	short_tok=0	,Ⓒ s. Ⓓ sidDA, sidDastrI .		
+ae	4187	fore	encyclopedic	quoted_def	,Ⓒ a. Ⓓ agra, pUrva, agragAmin ; gen. ex. by agra, pUrva in comp. ; ‘f(ore)-fathers’ pUrvajAH, pitaraH, pUrve-pUrvAH, vfdDAH ; ‘f(ore)-finger’ prade-SinI, tarjanI ; ‘f(ore)-foot’ agrapAdaH ; ‘f(ore)-head’ lalAwaM, BAlaM, lalAwa-BAla-pawwaM,		
+ae	10418	time	encyclopedic	desc_tok=27_char=662	,Ⓒ s. Ⓓ kAlaH, samayaH, velA . Ⓑ 2 (Occasion) avasaraH, prasaMgaH, prastAvaH . Ⓑ 3 vAraH, vAsaraH . Ⓑ 5 avaDiH, maryAdA . Ⓑ 5 tAlaH, layaH . Ⓑ 6 (Personified) kAlaH . Ⓑ 7 (With numerals) guRaM, kftvaH, vAraM , in comp. ; ‘10 t(ime)s’ daSakf		
+ae	11082	vocal	encyclopedic	quoted_def	,Ⓒ a. Ⓓ vAcika ( kI f. ), vANmaya ( yI f. ), vAgjAta . Ⓑ 2 vARIyukta, vAgviSizwa . Ⓑ 3 susvara, maDuraH ‘v(ocal) music’ kaMWagItaM .		
+ae	3965	ferine	residual	crossref_short	,Ⓐ See Beastly .		
+ae	9240	scribble	residual	crossref_short	,Ⓐ See Scrawl .		
+ae	10532	translucent	residual	crossref_short	,Ⓒ a. Ⓓ See Clear .		
+ap	10783	Etihyam	synonym	syn_list_n=3	∙²1 Traditional instruction, legendary account; EtihyamanumAnaM ca pratyakzamapi cAgamam Rām. ; kiletyEtihye ( Etihya is regarded as one of the Pramāṇas or proofs by the Paurāṇika as and reckoned along with pratyakza anumAna &c. ; see anuBa		
+ap	18238	nagaram	synonym	syn_list_n=2	[ nagA iva prAsAdAH santyatra bA˚ ra ; cf. P. V. 2. 107 Vārt. ] A town, city ( opp. grAma ); nagaragamanAya matiM na karoti Ś. 2 . paRyakriyAdinipuREScAturvarRyajanEryutam . anekajAtisaMbadDaM nEkaSilpisamAkulam . sarvadEvatasaMbadDaM nagar		
+ap	36054.006	svaH	synonym	syn_list_n=3	∙²1 Wealth, property; as in niHsva q. v. ∙²2 (In alg. ) The plus or affirmative quantity; cf. Dana ; svaSabdo'yamAtmIyaDanajYAtInAM pratyekaM vAcako na samudAyasya ŚB. on MS. 6. 7. 2 . ∙²3 The Ego. ∙²4 Nature ( svaBAvaH ); vfttirBUtAni BUtA		
+ap	14755.096	carmayazwiH	equivalent	short_tok=0	f. a whip.		
+ap	36440	hiRqiraH	equivalent	short_tok=0	∙²1 Cuttle-fish bone. ∙²2 A man, male. ∙²3 The egg-plant. ∙²4 A tonic or stomachic.		
+ap	25541	mawakaH	equivalent	short_tok=0	A dead body.		
+ap	31556	Sakft	encyclopedic	desc_tok=1_char=22	n. [ Sak-ftan Uṇ. 4. 58 ] Ordure, excrement, especially of animals. .━ Comp. : SakftkariH, SakftkIwaH, SakfddvAram, SakftpiRqaH, SakftpiRqakaH, SakfdBedaH		
+ap	2214	anusamayaH	encyclopedic	desc_tok=25_char=204	∙²1 Regular or proper connection, as of words. ∙²2 Doing several details with reference to several things or persons. This can be done in more ways than one and hence we have three varieties of anusamaya ∙³( a ) padArTAnusamaya i. e. doing 		
+ap	21575.058	puroBAgin	encyclopedic	desc_tok=0_char=33	a. ∙²1 forward, self-willed, naughty; kiM puroBAgini svAtantryamavalambase Ś. 5 . ∙²2 obtrusive, officious; V. 3 . ∙²3 fault-finding. ∙²4 envious, jealous.		
+ap	31775.002	Savam	residual	crossref	Lbody=31775		
+ap	986.074	adrisAnu	residual	crossref	Lbody=986.072		
+ap	33025.002	saMhatatvam	residual	crossref	Lbody=33025		
+ap90	3597	aByarh	synonym	syn_list_n=2	c1c c10c P. To salute, honor, worship, pay one's respects or compliments; paraSurAmo mAlyavaMtamaByarhayati Mv. 2.		
+ap90	796	aTo	synonym	syn_list_n=2	= aTa in most senses; aTo vayasyAM paripArSvavartinIM… Ekzata Ku. 5. 51 ; striyo ratnAnyaTo vidyA Ms. 2. 240 , 3. 202 , Bg. 4. 35 , Ki. 5. 16 , 6. 1.		
+ap90	543	atiGna	synonym	syn_list_n=2	a. Very destructive. --GnI [ atiSayena haMti duHKaM; han-Wak ] A happy state of complete oblivion which drowns all thought of whatever is disagreeable in the past; atiGnImAnaMdasya gatvA Bṛ. Ār. Up.		
+ap90	13766	jaMbIraH	equivalent	short_tok=1	The citron tree. --raM A citron.		
+ap90	22472.1	maGA	equivalent	short_tok=3	N. of the tenth lunar mansion containing five stars. --Comp. --trayodaSI the thirteenth day of the dark half of Bhādrapada. --BavaH , BUH the planet Venus.		
+ap90	9026	upasnehaH	equivalent	short_tok=0	Moistening.		
+ap90	31361	hAyanaH	encyclopedic	desc_tok=1_char=7	A year. --naH 1 A kind of rice. --2 A flame.		
+ap90	11107	kutUhalin	encyclopedic	desc_tok=0_char=1	a. 1 Desirous, struck with curiosity; Māl. 1. --2 Eager, impatient.		
+ap90	25582	vAhas	encyclopedic	desc_tok=2_char=9	m. Ved. 1 Agni. --2 A hymn.		
+ap90	16764.1	nipaM	residual	crossref	Lbody=16764		
+ap90	24922	vaMqAla	residual	crossref	See vaMwAla .		
+ap90	26036.01	vinAsika	residual	crossref	Lbody=26036		
+armh	373	BAnumat	synonym	syn_list_n=2	BAnumat; AdityaH savitA sahasrakiraRaH pradyotano BAskara- stigmAMSustaraRistaTA dinamaRirBAsvAnvivasvAnhariH . mArtaRqastapano vikartana inaH pUzA pataNgo BagaH, sUryo gopatiraryamA dinakaraH sUroM'SumAlI raviH .. 35 .. mihiro virocano'rka		
+armh	2128	SAKAmfga	synonym	syn_list_n=2	SAKAmfga; balImuKo markawako vanOkAH, plavaNgamaH syAtplavagaH plavaNgaH . hariH kapiH kISa ime ca SabdAH, SAKAmfgo vAnara ityaBinnAH .. 231 .. 2.1.1.231		
+armh	1429	vAraRaDvani	synonym	syn_list_n=2	vAraRa_Dvani; vfMhitaM vAraRAnAM ca hezA hrezA ca vAjinAm .. 151 .. 1.1.1.151		
+armh	2278	BaradvAja	equivalent	short_tok=0	BaradvAja; vyAGrAwastu BaradvAjaH SukaH kIra udAhftaH .. 248 .. 2.1.1.248		
+armh	2270	Sakunta	equivalent	short_tok=0	Sakunta; kikidIviH smftaScAzaH Sakunto BAsa ucyate .. 247 .. 2.1.1.247		
+armh	1563	amBasprasrava	equivalent	short_tok=1	amBas_prasrava; SfNgaM ca SiKaraM kUwaM nirJaraH prasravo'mBasAm .. 166 .. 2.1.1.166		
+armh	55	caturvaktra	encyclopedic	desc_tok=4_char=52	caturvaktra; brahmA srazwA paramezWI DAtA padmaBUH surajyezWaH . veDA viDirviriYco hiraRyagarBaH SatAnandaH .. 6 .. SamBuH svayamBUrdruhiRaScaturvaktraH prajApatiH . pitAmaho jagatkartA viraYciH kamalAsanaH .. 7 .. 1.1.1.6		
+armh	241	jagannATa	encyclopedic	desc_tok=9_char=136	jagannATa; vizRuH kfzRaH keSavo maYjukeSI, SrIvatsANkaH SrIpatiH pItavAsAH . vizvakseno viSvarUpo murAriH, SOriH SArNgI padmanABo mukundaH .. 21 .. govindo DaraRiDaraH suparRaketu- rvEkuRWo jalaSayanaScaturBujaSca . dEtyArirmaDumaTano raTAN		
+armh	6141	pArSva	encyclopedic	desc_tok=3_char=45	pArSva; samIpaM sanIqaM samaryAdamArAt, sadeSaM saveSaM sasImopakaRWam . taTAByarRamaByagramaByASamAhu- rbuDAH sanniDAnAntike sannikfzwam .. 692 .. AsannaM saviDaM pArSvamupAntamapadAntaram . viprakfzwaM paraM dUramArAd vyavahitaM smftam ..		
+ben	14718	Silpin	synonym	syn_list_n=2	śilpin , i. e. śilpa + in , I. adj. Belonging or relating to a mechanical profession or art. II. m. , f. nī , and n. An artificer, a mechanic, Pañc. 10, 6; Johns. Sel. 9, 11.		
+ben	7153	naktaMdina	synonym	syn_list_n=2	naktaṃdina , i. e. nakta + m-dina , 1. n. sing. Day and night, Mālav. d. 88. 2. ˚nam , adv. By day and by night, Pañc. 32, 25.		
+ben	15312	saMkrama	synonym	syn_list_n=3	saṃkrā̆ma , i. e. sam-kram + a , I. m. and n. 1. Difficult progress, making way through almost impervious passes. 2. The means of effecting such a passage, a causeway, a bridge, Man. 9, 285 ( ră ). 3. Means of attaining, Pañc. iv. d. 2 ( ră		
+ben	7799	nIlatA	equivalent	short_tok=0	nīla + tā , f. Dark-blue colour, Kām. Nītis. 7, 16.		
+ben	16229	suma	equivalent	short_tok=1	suma , probably 1. su + ma ( cf. [Page1050-a + 40] sūna, prasūna , s.v. 1. su ), n. A flower, Cāṇ. 24 in Berl. Monatsb. 1864, 408.		
+ben	5702	tandrAlu	equivalent	short_tok=1	tandrā + lu , adj. Weary, Suśr. 2, 403, 4.		
+ben	2613	ekEka	encyclopedic	desc_tok=1_char=44	ekaika , i. e. eka-eka , I. adj. , f. kā . 1. Every one, Draup. 8, 17. 2. One successively, Kathās. 18, 265. II. kam , adv. One by one, Rām. 1, 13, 27. III. comparat. ekaikatara , adj. Always one of many, Bhāg. P. 2, 10, 41.		
+ben	9902	praSAstf	encyclopedic	desc_tok=1_char=24	pra-śās + tṛ , m. 1. A king, Nal. 12, 51. 2. A governor. 3. A kind of priest, Pañc. 156, 17.		
+ben	11920	rac	encyclopedic	desc_tok=31_char=311	RAC , i. 10, racaya , Par. 1. To make mechanically, Megh. 75. 2. To make, Rām. 2, 13, 12; Kathās. 3, 66 ( gatāgatam , literally a going and returning, i. e. looking on him and turning away her eye). 3. To arrange, Gīt. 5, 10. 4. To compose,		
+ben	950	ay	residual	crossref_short	AY , see i .		
+ben	9292	pyAy	residual	crossref_short	PYĀY , see pyai .		
+ben	13884	vfYj	residual	crossref_short	VṚÑJ , see vṛj .		
+bhs	15112	SudDAvAsa	synonym	syn_list_n=4	, m. (= Pali su˚; see also śuddhādhivāsa and āvāsaśuddha ), ( 1 ) pure abode , said of a heaven, or five heavens, in which dwell the gods so-called: sā ( sc. raśmiḥ) sarvā ( ) śuddhāvāsān devabhavanāny (apposition) avabhāsya LV 〔3.14〕 (pros		
+bhs	15342	Svas	synonym	syn_list_n=5	, adv. (usually tomorrow as in Skt. ; cf. śuve etc. ), yesterday : yathādya śvo vā parinirvṛtam anusmarāmi SP 〔157.7〕 (prose); [Page537-b] adya śvo vā 〔158.8〕 ( vs , corresp. to prec. ); samanusmarāmī yatha adya śvo vā 〔219.9〕 ( vs ). Note 		
+bhs	8368	nirgranTajYAtiputra	synonym	syn_list_n=3	( cf. prec. ), also written Nigrantha , and in Av Jñataputra (= Pali Nigaṇṭha Nātaputta or Nātha˚), one of the six famous heretical teachers of Buddhaʼs day (see s.v. Pūraṇa Kāśyapa ): named with the others, Mvy 〔3550〕; Mv 〔i.253.17〕 ( v.l.		
+bhs	860	anupamamati	equivalent	short_tok=0	, ( 1 ) n. of a satpuruṣa , q.v. : SP 〔4.1〕; ( 2 ) n. of a Bodhisattva: ŚsP 〔6.21〕.		
+bhs	10092	prativastuka	equivalent	short_tok=1	, m. (to prec. ), recipient of a fiduciary deposit : MSV 〔ii.145.11 f.〕		
+bhs	14459	vepiRIyA	equivalent	short_tok=0	, or ( v.l. ) vepilīyā, ? Divy 〔560.13〕; see s.v. kṛti .		
+bhs	867	anuparigrAhikayA	encyclopedic	desc_tok=5_char=59	, adv. ( instr. sg. f. of *anuparigrāhaka, helping , to ˚gṛhṇīte , q.v. , mg. 3), in a favoring, gracious way : SP 〔283.2〕 ˚kayā anabhyasūyikayā ( q.v. ) dharmaṃ deśayati. So read with WT and their ms. Ḱ ; KN ˚hikā without v.l.		
+bhs	2463	asecanaka	encyclopedic	prefix_or_multisense	, adj. (= Pali id. ; in BHS also asecanīya, asecana , and āsec˚ , qq.v. ; etym. uncertain, cf. Tib. below), charming, pleasing , almost always, as in Pali , of sights (particularly of the appearance of persons, notably a Buddha) or sounds: 		
+bhs	11536	manasikAra	encyclopedic	desc_tok=26_char=417	, m. (= Pali id. ; to prec. ; also manasī-, manas-kāra , qq.v. ), fixing in mind, mental concentration , ( esp. intense ) attention, thought, notice ; esp. with yoniśaḥ or ayoniśaḥ , qq.v. for examples; nāpi nirgamana-˚ram utpādayanti SP 〔7		
+bhs	2287	avEvartacaryA	residual	eqn_head	= avivarta˚, anivartana˚ , qq.v. : Mv 〔i.63.14〕 ( mss. ; Senart em. avivarta˚).		
+bhs	5386	kzunto	residual	eqn_head	= -kṛtvā for Skt. kṛtvas, q.v.		
+bhs	10175	pratisaMskaraRa	residual	crossref_short	, prob. error, see next.]		
+bop	7807	SAKA	synonym	syn_list_n=3	f. (ut videtur, a r. SAK s. a in fem. ) ramus. DR. 2.1. (Lith. szakà id., russ. suk id., hib. géag id.		
+bop	632	ava	synonym	syn_list_n=3	Praep. praef. (ut mihi videtur a stirpe pronominali a s. va , sicut eva, iva ab e, i ; v. gr. comp. 380.) de, ab. (In lingua zendica 𐬀𐬎𐬎𐬀 est pronomen demonstrativum cui respondet slav. ov Th. ovo hic, ille, fem. ova , neut. ovo . Huc etiam		
+bop	7024	varavarRinI	synonym	syn_list_n=2	f. (a varavarRa - vara + varRa - suff. in cum [Page310-a+ 37] signo fem. ) femina insignis colore vel ordine; praeclara femina. IN. 5.32. 47. H. 4.27.		
+bop	959	Amaya	equivalent	short_tok=0	m. (r. am aegrotum esse) morbus (v. anAmaya ).		
+bop	2754	gaBastimat	equivalent	short_tok=1	m. (a praec. s. mat ) sol. RAGH. 3.37.		
+bop	2204	kuwumba	equivalent	short_tok=1	m. progenies, stirps. RAGH. 7.68.		
+bop	8091	Svind	encyclopedic	desc_tok=13_char=80	1. A. (scribitur Svid ) i. q. Svit . (Cf. Svit, cand . Huc vel ad cand trahi potest island. vet. hita, hiti fervor, calor, heit fervidus, germ. vet. hiza, heiz , nostrum Hitze, heiʃs . Ad cand etiam trahi potest lat. caleo , gr. ϰήλεος , mu		
+bop	4694	niviqa	encyclopedic	desc_tok=5_char=53	(ut videtur, intervallum non habens, e ni pro na non - v. niKila - et viqa pro vila , v. Wils.) spissus, densus, arctus. RAGH. 9.58. 11.15. 19.44.		
+bop	1224	ugra	encyclopedic	desc_tok=1_char=24	1) durus, asper, horrificus, terrificus. SU. 1.7. IN. 1.4. BH. 11.30. 31. 2) m. nomen Sivi.		
+bop	980	Aye	residual	grammar_only	Interj.		
+bop	1719	O	residual	grammar_only	Interj.		
+bop	1700	o	residual	grammar_only	Interj.		
+bor	7090	duration	synonym	syn_list_n=2	I Durability: sTitiH, ava-, vyava-. II Abidingness: sTAyitvam. Ph.: of long d.: dIrGasTAyin (f. nI ); of short d.: acirasTAyin (f. nI ).		
+bor	12838	jest	synonym	syn_list_n=2	(subs.): I Lit.: parihAsaH , jabbering in j.; parihAsavijalpitam , Sa. ii.; even in j.: parihAsakaTA- svapi , R. ix. 8. II Object of j.: parihAsAspadam and sim. comp.s.		
+bor	20081	see	synonym	syn_list_n=7	(v.): I In gen.: (1) paSyati ( dfS , c. 1.), old men s. what will come: vfdDabudDiranAgataM paSyati , Vi. vi.; s. ing close by that he was unassailable even by mind: paSyannadUrAnmanasA'pyaDfzyam , Ku. iii. 51.; I do not s. any one greater 		
+bor	354	adverse	equivalent	short_tok=4	(1) pratikUlaH ( lA, laM ); (2) vipakzaH ( kzA, kzaM ): v. Inimical, hostile.		
+bor	14555	mettle	equivalent	short_tok=0	(subs.): tejas (n.), of great m.: mahA- tejasvin (f. nI ): v. Spirit, vigour.		
+bor	15271	nauseate	equivalent	short_tok=0	(v. t.): I To sicken: utkledaM janayati (c. of jan ) (?). II Fig.: jugupsate.		
+bor	262	adieu	encyclopedic	desc_tok=0_char=40	(subs): (1) AmantraRam ; (2) ApracCanam. To bid a. (1) Amantrayate ( mantr , c. 10). R. vii. 30.; (1) A-pfcCate , ( pracCa , c. 6). R. viii. 49.		
+bor	4439	conjecture	encyclopedic	desc_tok=2_char=62	(v.): (1) tarkayati, vi- ( tak , c. 10) which do you c. (to be Śakuntalā): tvaM tAva- tkatamAM tarkayasi , Sa. vi.; (2) Uhate ( Uh , c. 1), c. d that they were devoid of hostile feelings: Ohizwa tAn vItavirudDabudDIn , B. iii. 48.		
+bor	20236	set on	encyclopedic	desc_tok=6_char=80	I To excite, instigate: q. v.: prava- rtayati (c. of vft ). II To employ: s. the heart on: mano baDnAti ( banD , c. 9.) or aBi- niveSayati (c. of viS ) (with loc.). Ph.: (a) s. on fire: jvalayati (c. of jval ): v. Fire, set on; (b) s. on fo		
+bor	2328	bonfire	residual	crossref_short	utsavAgniH (?) utsavaDUpaH (?) (see B. iii. 5).		
+bor	3001	cant	residual	crossref	=cannot:		
+bor	20724	sleeping-draught	residual	crossref_short	nidrAjanakamOzaDam (see Bha. on “nidrAnASaH” ).		
+bur	16884	Sukra	synonym	syn_list_n=4	śukra m. (śuc; sfx. ra) ép. du feu. La planète de Vénus; son régent, fils de Bhṛgu . Le mois de jyeṣṭha. -- N. la semence virile. Maladie de l'iris, t. de méd. Une des 21 virāṭs de la gāyatrī . śukrakara m. (kṛ) moelle des os. śukrabhuj m. 		
+bur	4171	kalAniDi	synonym	syn_list_n=2	kalānidhi m. (nidhi collection, réunion) la lune, surtout la pleine lune.		
+bur	3070	upakaRWa	synonym	syn_list_n=2	upakaṇṭha a. (kaṇṭha) proche; prochain; voisin. -- S. n. voisinage, proximité; environs, alentours; banlieue. Le pas du cheval. Le devant du cou, la gorge.		
+bur	8683	didarize	equivalent	short_tok=1	didariṣe dés. de dṛ.		
+bur	8823	durodara	equivalent	short_tok=1	durodara m. (udara) joueur, mauvais joueur. -- N. jeu de hasard.		
+bur	17330	saNGAwikA	equivalent	short_tok=2	saṅghāṭikā f. (ghaṭ) odeur; trapa bispinosa, bot. Couple, paire; entremetteuse.		
+bur	7091	jala	encyclopedic	desc_tok=179_char=1569	jala a. froid; frileux; au fig. apathique, stupide, engourdi. -- S. n. froid, froidure; au fig. froideur, apathie, stupidité. Eau; matrice de vache [ou ? les eaux de l'amnios]. Cf. jaḍa . Lat. gelu; irland. gil eau. jalakaṇṭaka m. trapa bis		
+bur	5030	kfz	encyclopedic	desc_tok=23_char=158	kṛṣ. karṣāmi 1 et kṛṣāmi, kṛse 6; p. cakarṣa et cakṛṣe; f2. karkṣyāmi, karkṣye et krakṣyāmi, krakṣye; a1. akārkṣiṣam, akrākṣiṣam, et akṛkṣam; moy. akṛṣi. Ps. kṛṣye; pp. kṛṣṭa. I. karṣāmi 1. Tirer, attirer: śākhām une branche; au fig. acquér		
+bur	11922	praBraSye	encyclopedic	desc_tok=11_char=70	prabhraśye (bhraṃś 4) être privé de, déchoir, rāṣṭrāt du pouvoir royal. Pp. prabhraṣṭa. prabhraṣṭaka n. bouquet de fleurs dans les cheveux. prabhraṃśayāmi ( c. de bhraṃś) faire déchoir.		
 bur	1043.1	aBAva	residual	crossref	Lbody=1043		
-cae	22115	bila	synonym	syn_list_n=4	n. cleft, hollow, cavern, den.		
-cae	10359	caraRyu	synonym	syn_list_n=2	a. moving, movable.		
-cae	7554	kAmyA	synonym	syn_list_n=3	f. wish, desire, striving after ( gen. or —˚).		
-cae	20026	pOroBAgya	synonym	syn_list_n=2	n. envy, malevolence.		
-cae	20839	prayARa	synonym	syn_list_n=7	n. setting out, starting, going forth; journey, march; onset, beginning.		
-cae	38437	sTaRqila	synonym	syn_list_n=4	a. levelled piece of ground prepared for a sacrifice, place, spot, ground i.g.		
-cae	35402	samidDi	synonym	syn_list_n=2	f. burning, flaming.		
-cae	28913	vArimuc	synonym	syn_list_n=2	a. discharging water; m. cloud.		
-cae	32919	SuzRa	equivalent	name_formula	m. N. of a demon slain by Indra.		
-cae	33602	SvetASvatara	equivalent	name_formula	m. N. of a teacher, pl. his school.		
-cae	39372	haridra	equivalent	name_formula	m. the yellow sandal tree; f. A turmeric, N. of a river.		
-cae	6927	kaTaMjAtIyaka	equivalent	short_tok=4	a. of what kind?		
-cae	24287	mahABoja	equivalent	name_formula	m. great prince, N. of a king.		
-cae	18757	pARini	equivalent	name_formula	m. N. of a celebrated grammarian.		
-cae	37438	subanDu	equivalent	name_formula	a. closely connected, related; m. a good friend, N. of a poet etc.		
-cae	12310	tiniSa	equivalent	name_formula	m. N. of a tree.		
-cae	5137	Izatkara	encyclopedic	desc_tok=5_char=19	a. easy to be done.		
-cae	3521	aSman	encyclopedic	desc_tok=2_char=9	m. eater.		
-cae	3358	avivikta	encyclopedic	desc_tok=2_char=19	a. undiscriminated.		
-cae	26690	rasAntaravid	encyclopedic	desc_tok=5_char=32	a. knowing the different tastes.		
-cae	36227	sahanIya	encyclopedic	desc_tok=6_char=29	a. to be endured or pardoned.		
-cae	35789	sarovara	encyclopedic	desc_tok=4_char=20	n. a beautiful lake.		
-cae	37071	suKopavizwa	encyclopedic	desc_tok=2_char=15	a. = suKAsIna .		
-cae	5985	uBayaTA	encyclopedic	desc_tok=6_char=27	adv. in both ways or cases.		
-cae	9987	Ganasamaya	residual	eqn_head	m. = GanakAla .		
-cae	23493	maRibanDana	residual	eqn_head	n. = prec. , also string or ornament of pearls.		
-cae	25512	mlit	residual	crossref	= mrit .		
-cae	16356	nitambinI	residual	eqn_head	f. = nitambavatI .		
-cae	19753	pUrvapeya	residual	eqn_head	n. = pUrvapAyya .		
-cae	18397	parisyanda	residual	eqn_head	m. = parizyanda .		
-cae	20453	pratiSruti	residual	eqn_head	f. = prec. ; echo, resonance.		
-cae	25522	yaka	residual	crossref	= ya/ who, which.		
-ccs	17322	BAmita	synonym	syn_list_n=2	grimmig, zornig.		
-ccs	627	aDoBAga	synonym	syn_list_n=2	m. unterer Teil, Unterleib.		
-ccs	9546	dAtar	synonym	syn_list_n=10	u. dAta/r gebend (bes. zur Ehe) schenkend, abtretend, zahlend gewähnrend, mitteilend, lehrend, bewirkend, veranstaltend; m. Geber, Schenker.		
-ccs	5204	kUwavAgurA	synonym	syn_list_n=2	f. Fallstrick, Schlinge*		
-ccs	12242	nirGfRa	synonym	syn_list_n=4	mitleidlos, grausam; n. adv. Abstr. ˚tA f. , ˚tva n.		
-ccs	19987	rakzitavya	synonym	syn_list_n=3	zu hüten, zu bewahren, zu schonen.		
-ccs	27145	sahIyaMs	synonym	syn_list_n=2	(Compar.) gewaltiger, stärker.		
-ccs	22253	vicitra	synonym	syn_list_n=7	mannigfaltig, bunt; seltsam, wunderbar, prächtig, schön; n. adv. Abstr. ˚tA f.		
-ccs	957	anunAsika	equivalent	short_tok=1	nasal.		
-ccs	6394	gokAma	equivalent	short_tok=2	Rinder begehrend.		
-ccs	12404	nirvfkza	equivalent	short_tok=1	baumlos.		
-ccs	13105	paWitasidDa	equivalent	short_tok=4	schon beim Hersagen wirksam.		
-ccs	15256	pratawa	equivalent	short_tok=3	ein hohes Ufer.		
-ccs	27885	suputra	equivalent	short_tok=4	treffliche Söhne habend.		
-ccs	21272	vanacaravftti	equivalent	short_tok=5	wie ein Wäldler lebend.*		
-ccs	23761	vyasi	equivalent	short_tok=2	ohne Schwert.		
-ccs	7431	janmAntara	encyclopedic	desc_tok=10_char=68	n. ein anderes (vergangenes o. zukünftiges) Leben. ˚gata neugeboren.		
-ccs	7430	janmasTAna	encyclopedic	desc_tok=2_char=8	n. dass.		
-ccs	5485	kOlUta	encyclopedic	desc_tok=3_char=17	m. pl. Volksname.		
-ccs	15067	pOrta	encyclopedic	desc_tok=6_char=39	mit karman n. ein verdienstliches Werk.		
-ccs	14527	putrin	encyclopedic	desc_tok=3_char=20	f. ˚RI = putravant .		
-ccs	28422	somamada	encyclopedic	desc_tok=2_char=14	m. Somarausch.		
-ccs	28223	suhfttA	encyclopedic	desc_tok=4_char=27	f. , ˚ttva n. Freundschaft.		
-ccs	8970	trAyati	encyclopedic	desc_tok=4_char=20	das Verbum trA (g.).		
-ccs	25009	SElatanayA	residual	eqn_head	f. = SElakanyA .		
-ccs	24734	SItasaMsparSa	residual	crossref	= SItalasparSa .		
-ccs	612	aDIk	residual	crossref	= aDi +i (g.)		
-ccs	12221	nirupaplava	residual	crossref	= nirupadrava .		
-ccs	25780	saMgamamaRi	residual	eqn_head	m. = vor. m.		
-ccs	26249	saptadvIpavant	residual	crossref	= vor. Adj.; f. ˚vatI = vor. f.		
-ccs	28011	suracApa	residual	eqn_head	m. = surAkArmuka .		
-ccs	19558	yaTArTita	residual	crossref	= yaTAByarTita .		
-gra	3139	GAsi	synonym	syn_list_n=3	m. , Futter, Speise [von ghas]. -ím 162,14 (jaghā́sa).		
-gra	2273	e	synonym	syn_list_n=6	Deutestamm [verwandt mit den Stämmen a, i] von hinweisender Bedeutung, enthalten in éka, etá, ená, evá.		
-gra	6502	maGavat	synonym	syn_list_n=4	a. , Nebenform von maghávan ( s. d. ) in den Formen. -an, -adbhis, -adbhyas, -attama.		
-gra	6675.1	mar	synonym	syn_list_n=6	schimmern, funkeln [ gr. μαρμαίρω , vgl. Ku. Zeitschr. 〔16,161 fg.〕 ]; davon marút, márīci.		
-gra	5395	paScAddaGvan	synonym	syn_list_n=3	a. , zurückbleibend, zu kurz kommend [von paścā́t und daghvan von dagh], enthalten in ápaścāddaghvan.		
-gra	6081	priyasa	synonym	syn_list_n=3	a. , erwünschtes gebend, mit Acc. -ā́sas priyā́ 809,38 .		
-gra	7246	raRyajit	synonym	syn_list_n=4	a. , erfreuliches [ráṇya] erbeutend [jít von ji]. -ít (sómas) 771,1 neben gojít, aśvajít, viśvajít.		
-gra	9973	suvipra	synonym	syn_list_n=3	a. , ernstlich betend, Beter . -as utá śáṇstā 〰 162,5 .		
-gra	11296	i	equivalent	short_tok=1	197,2.b: 226,3		
-gra	11067	izaRay	equivalent	short_tok=3	226,1: iṣaṇay st. isaṇay		
-gra	12301	kzumat	equivalent	short_tok=3	-ántam vā́jam 195,8 .		
-gra	12508	raRvasaMdfS	equivalent	short_tok=2	-ṛ́k 295,5 ; 517,21 .		
-gra	11199	rap	equivalent	short_tok=1	1146,2: 174,7 st. 174,6		
-gra	12699	stotf	equivalent	short_tok=1	-ré 669,6 ; 732,7 ; 733,2 ; 752,5 ; 757,6 ; 774,30 ; 778,27 ; 779,19 ; 784,8 ; 809,6 ; 982,5 .		
-gra	11119	tanti	equivalent	short_tok=3	521,2: -áyas st. -ayas		
-gra	11196	yuvAku	equivalent	short_tok=4	1124,5: yuvā́ku st. yuvākú		
-gra	4690	DArAvara	encyclopedic	desc_tok=12_char=75	a. , Regengüsse [ 1. dhārā] liebend [vará lieb]. -ā́s [ m. ] 225,1 marútas.		
-gra	10677	hiraRyaparRa	encyclopedic	desc_tok=9_char=62	a. , goldene Federn [parṇá] habend . -ās haṃsā́sas vām 341,4 .		
-gra	3467	jA	encyclopedic	desc_tok=41_char=280	a. , m. , f. [von jan], 1〉 a. , geboren, geartet, in Zusammensetzungen apsu-jā́ u. s. w. ; 2〉 m. , f. , Kind; 3〉 f. , Geschöpf, Wesen . -ā́s [ N. s. ] 2〉 sū́ryasya 805,1 . -ā́m 2〉 pitúr 801,2 ; 829,2 . -ā́s [ A. p. ] 2〉 143,8 (nas). — 3〉 48		
-gra	2419	kaparda	encyclopedic	desc_tok=31_char=199	m. , eine gewundene kleine Muschel, dann die in Form einer solchen aufgewundene Haarflechte, in der letzten Bedeutung enthalten in cátuṣkaparda, dakṣiṇatás-kaparda, und zu Grunde liegend in kapardín.		
-gra	2591	kutra	encyclopedic	desc_tok=16_char=103	[vom Stamme kú], 1〉 wo? wohin? 2〉 kútrā cid, wo es auch sei: 361,2 ; 444,3 ; wohin es auch sei: 585,2 .		
-gra	5443	pArayizRu	encyclopedic	desc_tok=12_char=79	a. , hinübertragend, rettend [ v. par Caus. ]. -úas [ N. pl. f. ] áśvās 923,3 .		
-gra	12515	rA	encyclopedic	desc_tok=9_char=61	9〉 auch ohne Dat. ; Aor. rā́sa: -at 3〉 379,1 ; vā́jān 491,6 .		
-gra	11204	rE	encyclopedic	desc_tok=6_char=26	1184,10.b: śíkṣa st. cíkṣa		
-gra	119.1	aGaaSva	residual	crossref	Lbody=119		
-gra	10.1	aMsia	residual	crossref	Lbody=10		
-gra	484.1	anindia	residual	crossref	Lbody=484		
-gra	679.1	apIcia	residual	crossref	Lbody=679		
-gra	12408	dakziRa	residual	citation_only	-ām 933,7 .		
-gra	1700.1	idDaagni	residual	crossref	Lbody=1700		
-gra	1742	indrAvat	residual	crossref	siehe índravat.		
-gra	11325.1	tir	residual	crossref	Lbody=11325		
-md	2268	aBivyakta	synonym	syn_list_n=5	abhi-vi‿akta, pp. √ añj: -m, ad. 🞄plainly; -vyakti, f. manifestation.		
-md	2890	avidya	synonym	syn_list_n=5	a-vidya, a. uncultured; destitute 🞄of knowledge; ā, f. ignorance.		
-md	6957	gAlana	synonym	syn_list_n=3	gālana, n. straining, clarifying.		
-md	11892	pfkza	synonym	syn_list_n=6	pṛkṣ-á, a. spotted, dappled; or according 🞄to the commentators , furnished with 🞄nourishment; m. dappled horse; N. .		
-md	18713	sanaSruta	synonym	syn_list_n=4	sána-śruta, pp. long known, famed 🞄of old ( RV. ); m. N. ( Br. ).		
-md	8370	tanUnapAt	synonym	syn_list_n=6	tánū-nápāt, m. son of himself, ep. 🞄 of Agni; fire; -naptṛ, m. id. .		
-md	8480	tavIyas	synonym	syn_list_n=3	táv-īyas, tavyas táv-yas, cpv. of tavas.		
-md	4644	unmeza	synonym	syn_list_n=5	un-meṣa, m. opening the eyes; quivering 🞄( of lightining ); opening ( of a bud ); appearance.		
-md	17633	SalAtura	equivalent	name_formula	śalātura, N. of Pāṇiniʼs birthplace .		
-md	18321	SroRa	equivalent	name_formula	śroṇá, a. lame ( RV. ): ā́, f. N. of the 🞄20th (21st) lunar asterism (= śravaṇā; V. , P. ).		
-md	8181	jyotsnikA	equivalent	name_formula	jyotsn-ikā, f. N. of a singer .		
-md	6617	kzemendra	equivalent	name_formula	kṣema‿indra, m. N. of several authors .		
-md	15548	lahara	equivalent	name_formula	lahara, m. N. of a people ( pl. ); N. of 🞄a province in Cashmere ( now Lahal).		
-md	14486	meDAtiTi	equivalent	name_formula	médha‿atithi, m. N. of a seer ; N. 🞄 of a commentator on Manu .		
-md	16173	vAkovAkya	equivalent	name_formula	vāko-vākyâ, n. dialogue; N. of 🞄certain portions of Vedic tradition .		
-md	16152	vasvOkasArA	equivalent	name_formula	vasu‿auka-sārā, f. N. of the 🞄city of Kubera.		
-md	13384	Bedaka	encyclopedic	desc_tok=65_char=528	bheda-ka, a. breaking, — into or 🞄through, piercing; breaking down the dam 🞄of ( tanks ), diverting ( water-courses ); destroying 🞄( boundary-marks ); leading astray ( ministers ); 🞄discriminating, distinguishing; differentiating, 🞄determin		
-md	555	aRyanta	encyclopedic	desc_tok=12_char=55	a-ṇi‿anta, a. not ending in the cs. 🞄 suffix i (= aya).		
-md	2157	abDi	encyclopedic	desc_tok=21_char=116	ab-dhi, m. sea; -kanyā, f. Lakṣmī; 🞄 -jīvin, m. fisherman; -tanaya, m. du. the 🞄Aśvins; -tala, n. bottom of the sea.		
-md	7650	cUqa	encyclopedic	desc_tok=39_char=232	cū́ḍa, m. ridge ( on bricks ); ceremony 🞄of tonsure ( performed on children ); ā, f. 🞄hair on the crown; tuft of hair left on the 🞄crown after the ceremony of tonsure ; ceremony 🞄of tonsure; crest, summit; a-ka, —˚ = 🞄cūḍā, tonsure.		
-md	5043	fRa	encyclopedic	desc_tok=45_char=241	ṛ-ṇá, ( pp. ) a. guilty; n. obligation, 🞄debt; -ṃ dhāraya, owe ( ac. ) to ( g. ); -ṃ kṛ, 🞄borrow from ( ab. ); — pra-yam, — nī, — saṃ-nī, 🞄pay off a debt; -dā, id. ; lend to ( lc. ); — pra‿āp, 🞄incur a debt; — mṛgaya or yāc, ask for a 🞄loan		
-md	7843	jana	encyclopedic	desc_tok=30_char=183	ján-a, m. creature; man; person; race, 🞄tribe; people, subjects; folks, -kind ( often 🞄 —˚ with coll. mg. ); low person; this person; 🞄 ayaṃ-, eṣa-, or asau-, = we, I, my lover 🞄here.		
-md	19402	siD	encyclopedic	desc_tok=104_char=727	2. SIDH, Ⅳ. P. ( Ā. ) sidhya, V. , C. : 🞄be accomplished or fulfilled, succeed 🞄( ord. mg. ); C. : hit a mark ( lc. ); be valid or 🞄admissible; be cured ( rare ); result, follow, 🞄be proved or established; yield, to ( any one , 🞄 g. ); atta		
-md	14663	yati	encyclopedic	desc_tok=11_char=45	1. yá-ti, a. pl. ( nm. ac. yáti ) as many as.		
-mw	76081	Cupa	synonym	syn_list_n=3	air, wind, L.		
-mw	263998	heti	synonym	syn_list_n=2	of an Asura , BhP.		
-mw	45506	karmAra	synonym	syn_list_n=10	a blacksmith &c., RV. x, 72, 2 ; AV. iii, 5, 6 ; VS. ; Mn. iv, 215 &c.		
-mw	59933	kzudrajAtIPala	synonym	syn_list_n=2	n. a kind of Myrobalan , L.		
-mw	168455	mocayitf	synonym	syn_list_n=4	mfn. freeing, releasing, Kull. on Mn. viii, 342.		
-mw	137884	prasAdana	synonym	syn_list_n=2	boiled rice, L.		
-mw	36359	upasTAna	synonym	syn_list_n=5	staying upon or at, abiding, a place of abiding, abode, Nir.		
-mw	189871	vAksaMvara	synonym	syn_list_n=3	m. restraint of sp˚ , caution in speaking, Lalit. ( w.r. vAkya-vara ).		
-mw	151882.1	BUtapUrvam	equivalent	short_tok=2	ind. , formerly		
-mw	19924.4	aSvapati	equivalent	short_tok=10	of a king of Madras and father of SāvitrI , MBh.		
-mw	146543	braDnaSva	equivalent	name_formula	m. N. of a prince, MBh. ( w.r. for braDnA Sva or vaDry-aSva ?)		
-mw	56135	keSari	equivalent	name_formula	m. (= ˚rin ), N. of the father of Hanumat , R. iv, 33, 14		
-mw	60122	kzupa	equivalent	name_formula	N. of a mountain westward from Dvārakā , ib. 8950 ( v.l. a-kzaya )		
-mw	130113	prakarzaka	equivalent	name_formula	m. ‘harasser, disquieter’, N. of the god of love, L.		
-mw	226574	saMSaya	equivalent	medium_flat_tok=14	(in Nyāya ) doubt about the point to be discussed (one of the 16 categories), IW. 64		
-mw	250629	sussala	equivalent	name_formula	m. N. of a man ( cf. sOssala ), Rājat.		
-mw	222346	SradDAjAqya	encyclopedic	desc_tok=10_char=49	n. blind or obstinate adherence to one's f˚ , MW.		
-mw	16554	alaglam	encyclopedic	desc_tok=8_char=52	ind. unconnectedly in a stammering manner, ŚBr. iii.		
-mw	45674	kalahaMsI	encyclopedic	desc_tok=10_char=54	f. the female of the Kala-haṃsa above, Ragh. viii, 58.		
-mw	137000	pravidAraRa	encyclopedic	desc_tok=8_char=45	n. ( fr. Caus. ) causing to burst asunder, L.		
-mw	238407	sarvaDurIRa	encyclopedic	desc_tok=11_char=60	mfn. fit for any kind of carriage or draught, Pāṇ. iv, 4, 78		
-mw	84322	tArakAdi	encyclopedic	desc_tok=8_char=59	( ˚kA d˚ ), a Gaṇa of Pāṇ. ( v, 2, 36 ; Gaṇar. 388 - 391 ).		
-mw	191638	vAraRa	encyclopedic	desc_tok=13_char=88	shy, wild, RV. ; AV. (with mfga accord. to some = elephant, RV. viii, 33, 8 ; x, 40, 4 )		
-mw	185626	vaDarya	encyclopedic	desc_tok=21_char=113	Nom. P. ˚ya/ti , to hurl a thunderbolt (only f. of pr. p. vaDarya/ntI , ‘casting a bolt’, prob. = lightning), RV.		
-mw	214253	SavadAhin	residual	crossref	Lbody=214252		
-mw	220780	SfDu	residual	crossref	= budDi , L.		
-mw	8503	annadAyin	residual	eqn_head	mfn. = -da above.		
-mw	18698	aviGnA	residual	eqn_head	f. = a-vigna , q.v.		
-mw	77933	jalanIlikA	residual	eqn_head	f. = -kuntala , L.		
-mw	114749.1	patatprakarzatA	residual	grammar_only	f.		
-mw	132231	pratigraha	residual	crossref	= kriyA-kAra , L.		
-mw	134392	pratyupakriyA	residual	eqn_head	f. = ˚upakAra , Kād. ; Rājat. ; Kathās.		
-pw	54636	DarADava	synonym	syn_list_n=3	m. Fürst, König RĀJAT. 7,337 .		
-pw	110577	SaraDi	synonym	syn_list_n=2	m. Pfeilbehälter, Köcher .		
-pw	115185	SrIbappa	synonym	syn_list_n=3	m. desgl. Ind. Antiq. 5,212. 6,21 . Vgl. SrIbabba .		
-pw	216308	kftakzaRa	synonym	syn_list_n=4	II. Am Ende eines Comp. bereit zu, sich machend an JĀTAKAM. 31,58 . beschäftigt mit, erfüllt von ebend.		
-pw	82809	manasin	synonym	syn_list_n=2	Adj. Sinn —, Geist habend .		
-pw	63038	pannagaBojana	synonym	syn_list_n=3	m. Schlangeverspeiser, Bein. Garuḍa ʼs 52,21 .		
-pw	123698	sAtvatasaMhitA	synonym	syn_list_n=2	f. Titel eines Werkes BURNELL, T. OPP. CAT. 1 .		
-pw	122895	sahanIya	synonym	syn_list_n=3	Adj. geduldig zu ertragen, zu verzeihen, [Page7-100-b] nachzusehen .		
-pw	22789	Oqra	equivalent	name_formula	m. Pl. N. pr. eines Volkes, = oqra MBH. 6,365 . oMqrAH MBH. ed. Bomb.		
-pw	111707	SArIwaka	equivalent	name_formula	m. N. pr. eines Dorfes.		
-pw	109421	Sakradeva	equivalent	name_formula	m. N. pr. eines Fürsten .		
-pw	113567	SuBacandra	equivalent	name_formula	m. N. pr. eines Prākrit -Grammatikers Ind. St. 14,307 .		
-pw	10012	aligu	equivalent	name_formula	m. N. pr. eines Mannes.		
-pw	34186	gaRakumAra	equivalent	name_formula	m. N. pr. eines Mannes.		
-pw	204460	kutapasOSruta	equivalent	short_tok=2	, lies SAkapArTivAdi .		
-pw	91538	yonisaMvaraRa	equivalent	short_tok=6	contraction or closure of the vagina .		
-pw	16175	ASuheman	encyclopedic	desc_tok=6_char=55	Adj. — 1〉 rasch hineilend . — 2〉 die Rosse antreibend .		
-pw	75415	PalAmla	encyclopedic	desc_tok=7_char=72	— 1〉 m. Rumex vesicarius RĀJAN. 6,129 . — 2〉 n. Tamarinde RĀJAN. 6,126 .		
-pw	110089	SatrubADana	encyclopedic	desc_tok=4_char=24	Adj. Feinde bekämpfend .		
-pw	5413	antastoya	encyclopedic	desc_tok=3_char=21	Adj. Wasser bergend .		
-pw	28513	kutastarAm	encyclopedic	desc_tok=6_char=39	Adv. wie? auf welche Weise? KAP. 1,80 .		
-pw	74923	pretaprasADana	encyclopedic	desc_tok=6_char=40	n. das Ausschmücken eines Verstorbenen .		
-pw	129059	sUryAvid	encyclopedic	desc_tok=6_char=45	Adj. das Sūrya - Lied ( ṚV. 10,85 ) kennend .		
-pw	47186	tyaktAtman	encyclopedic	desc_tok=7_char=41	Adj. der an sich selbst verzweifelt GAUT.		
-pw	214445.1	AsaktivAda	residual	crossref	Lbody=214445		
-pw	212182	aBicCAyA	residual	empty_sense_num	4.		
-pw	212016	apratyutTAyika	residual	citation_only	I. 2.		
-pw	54159	dvisaMDi	residual	eqn_head	Adj. = dvizaMDi .		
-pw	36450.1	gokzveqa	residual	crossref	Lbody=36450		
-pw	17413.1	ihapaYcamI	residual	crossref	Lbody=17413		
-pw	87626.1	mumukzutva	residual	crossref	Lbody=87626		
-pw	215054	upanAgaraka	residual	empty_sense_num	3.		
-pwg	66460	Anana	synonym	syn_list_n=7	, AnanAnta Mundwinkel BHĀG. P. 10,12,17 . — Vgl. caturAnana, daSAnana, mahAnana, suhasAnana .		
-pwg	80144	BAwi	synonym	syn_list_n=4	Hurenlohn KATHĀS. 61,171. fg. 175 . 93,34. fg. 124,178. fg.		
-pwg	64039	apakarzin	synonym	syn_list_n=2	adj. noch sich schleppend, — ziehend : lANgalApa˚ (gavendra) Spr. 870 .		
-pwg	31843	daD	synonym	syn_list_n=9	, da/Date halten; geben ; reduplic. Nebenform von DA DHĀTUP. 2,7 . — intens. 2. imperat. dAdadDi P. 8,2,37 , Sch.		
-pwg	38756	nigala	synonym	syn_list_n=3	m.n. SIDDH. K. 250,b. 8 . = nigaqa H. 1229 , Sch.		
-pwg	45098	piC	synonym	syn_list_n=8	, picCa/yati Spalten zertheilen DHĀTUP. 32,40 ; vgl. picc, piC, picCa/ti v. l. für miC DHĀTUP. 28,16 .		
-pwg	120199	tvacAyani	synonym	syn_list_n=3	m. patron. ebend. 4,51,a .		
-pwg	95603	vEkArya	synonym	syn_list_n=4	(von 1. vikAra ) n. Umgestaltung, Umwandelung, Veränderung MBH. 5,4891 . a˚ ŚĀṆḌ. 37 .		
-pwg	36449	Darmottara	equivalent	name_formula	( Darma + uttara ) m. N. pr. eines buddh. Gelehrten VYUTP. 90 . WASSILJEW 230 . 223 . 253 . 290 . ˚rIyAH pl. seine Schüler 230 .		
-pwg	73526	candrakuRqa	equivalent	name_formula	m. N. pr. eines Teiches in Kāmarūpa KĀLIKĀ-P. _im_ ŚKDR.		
-pwg	15864	kaviputra	equivalent	name_formula	( kavi + putra ) m. N. pr. eines dramatischen Schriftstellers MĀLAV. 3,12 .		
-pwg	71636	kowilakzAkzI	equivalent	name_formula	f. N. pr. einer Göttin WILSON, Sel. Works 2,12. fg. ( ˚kzi gedr. ).		
-pwg	106759	sarvajYadeva	equivalent	name_formula	m. N. pr. eines Gelehrten TĀRAN. 226 .		
-pwg	29914	tukka	equivalent	name_formula	m. N. pr. eines Mannes RĀJA-TAR. 7,220 . 8,1022 .		
-pwg	30208	tuzwimant	equivalent	name_formula	(von tuzwi ) m. N. pr. eines Fürsten, eines Sohnes des Ugrasena , VP. 436 . BHĀG. P. 9,24,23 .		
-pwg	82140	yugapa	equivalent	name_formula	( yuga + 2. pa ) m. N. pr. eines Gandharva MBH. 1,4812 . HARIV. 14157 .		
-pwg	36023	Danadatta	encyclopedic	desc_tok=19_char=139	( Dana + datta ) m. N. pr. verschiedener Männer (Kaufleute) MṚCCH. 142,19 . KATHĀS. 13,54 . VET. _in_ Verz. d. Oxf. H. 152,b,30 . 153,a,1 .		
-pwg	58459	mahAYji	encyclopedic	desc_tok=5_char=48	( mahA + 1. aYji ) adj. breitgefleckt VS. 24,4 .		
-pwg	61052	mumUrzu	encyclopedic	desc_tok=30_char=389	(wie eben) adj. zu sterben verlangend, im Begriff stehend zu sterben, moribundus MBH. 1,953 . 1800 . 2,2095 . 3,14769 . 15699 . 5,2117 . 6,5673 . 14,2255 . R. 6,16,62 . SUŚR. 1,102,18 . 103,13 . KATHĀS. 15,14 . 17,78 . 29,157 . 69,126 . 73,		
-pwg	48741	pratihrAsa	encyclopedic	desc_tok=11_char=67	(von hras mit prati ) m. Kürzung LĀṬY. 9,5,5 . ŚĀṄKH. ŚR. 16,20,9 .		
-pwg	106338	saMmuKIBU	encyclopedic	desc_tok=13_char=102	( 2. saMmuKa + 1. BU ) sich gegenüber —, sich entgegen stellen : ˚BUya yuDyamAnAH KULL. _zu_ M. 7,89 .		
-pwg	104338	sadArjava	encyclopedic	desc_tok=7_char=49	( sadA + A˚ ) adj. stets redlich Spr. (II) 7510 .		
-pwg	113605	stamBakara	encyclopedic	desc_tok=14_char=89	1〉 adj. etwa hemmend in puRya˚ . — 2〉 m. a fence, a railing, etc. WILSON nach ŚABDĀRTHAK.		
-pwg	115182	svaraBErava	encyclopedic	desc_tok=8_char=49	Titel eines Werkes Verz. d. Cambr. H. 69, Śl. 5 .		
-pwg	8368	AtreyikA	residual	eqn_head	f. = AtreyI 3,b. HALĀY. _im_ ŚKDR.		
-pwg	67371	Ikzaka	residual	citation_only	GOBH. 2,2,13 .		
-pwg	256	akzIka	residual	eqn_head	m. = akzika RATNAM. _im_ ŚKDR.		
-pwg	64202	apaharaRa	residual	citation_only	DAŚAK. 180,21 .		
-pwg	63011	ativfdDi	residual	crossref	= aBizyanda H. an. 4,136 . MED. d. 43 .		
-pwg	64930	ayAtayAmatva	residual	eqn_head	n. = ayAtayAmatA TS. 2,3,6,2 .		
-pwg	74523	jYAtra	residual	citation_only	TS. 7,2,4,2 .		
-pwg	14868	kapicUqA	residual	eqn_head	f. = kapicUta RĀJAN. _im_ ŚKDR.		
-sch	7243	ArAdupakArin	synonym	syn_list_n=6	, Nom. abst. ˚ritva n. Komm. zu Āpast. Śr. 14,5,6. part=,seq=7344,type=,n=2		
-sch	20768	Bezaja	synonym	syn_list_n=7	n. *Wasser, S II,215,3 v.u. (Ko.). part=,seq=21053,type=,n=1		
-sch	16031	DaraRa	synonym	syn_list_n=4	2. f) zu streichen nach Zach. Beitr. part=,seq=16274,type=,n=2		
-sch	24925	SAMSipa	synonym	syn_list_n=7	Adj. von śiṃśipā , S II,70,11 v.u. (Ko.) part=,seq=25265,type=˚,n=2		
-sch	27761	aDivAsacUrRaka	synonym	syn_list_n=6	sehr wohlriechender Puder, Padyac. V,41 c in ˚bhramam = adhivāsānām adhikavāsanāyutānāṃ cūrṇānāṃ bhramam . part=N,seq=28132,type=˚,n=4		
-sch	18312	pAdanaKa	synonym	syn_list_n=4	n. ˚Sporn (beim Hahne) Śṛṅgt. 144 c . part=,seq=18576,type=˚,n=2		
-sch	23833	vidyAvaDU	synonym	syn_list_n=7	˚ = vidyādharī , S I,593,5. part=,seq=24165,type=,n=1		
-sch	22201	yAc	synonym	syn_list_n=7	+ anu , ˚zurückverlangen, Sam. IV,53. part=,seq=22506,type=,n=2		
-sch	20444	Badrados	equivalent	name_formula	m. N. pr. eines Mannes, Bhadrab. 4,174. part=,seq=20725,type=,n=2		
-sch	10114.1	kalikA	equivalent	name_formula	8. N. pr. einer Zofe, Ind. Str. 1,386. part=,seq=10257,type=,n=2		
-sch	9528	kawABa	equivalent	name_formula	m. N. pr. eines daitya, Hariv. 3 ,40,13. Ghaṭābha v.l. part=,seq=9657,type=,n=2		
-sch	11126	kftajYaSIla	equivalent	name_formula	m. N. pr. eines Prakrit-Dichters, Hāla 83. part=,seq=11294,type=,n=2		
-sch	16351	nandanaBawwAcArya	equivalent	name_formula	m. N. pr. eines Autors, Einl. zu Śāśvata XI, N. 2. part=,seq=16599,type=,n=2		
-sch	19089	prajYAcandra	equivalent	name_formula	m. N. pr. eines buddh. Gelehrten, M. Müller, Ren. 312. part=,seq=19360,type=*,n=2		
-sch	26855	suSarmanagara	equivalent	name_formula	n. und Suśarmapura n. N. pr. einer Stadt, Festgr. 16. part=,seq=27214,type=,n=2		
-sch	24152	viSezaka	equivalent	name_formula	m. N. pr. eines Landes, Damayantīk. 21. part=,seq=24486,type=,n=2		
-sch	1600	adozatA	encyclopedic	desc_tok=10_char=89	das Nichtfehlersein, Sāh. D. 603. — Fehlerlosigkeit, Naiṣ. 3,97. part=,seq=1626,type=,n=2		
-sch	13942	jIvadvatsA	encyclopedic	desc_tok=11_char=58	Adj. f. deren Kind am Leben ist. part=,seq=14165,type=,n=2		
-sch	10570	kASISvara	encyclopedic	desc_tok=24_char=143	1. m. a) Gebieter von Benares. — b) N. pr. eines Grammatikers. — 2. f. ī wohl Titel einer von K. verfaßten Grammatik. part=,seq=10726,type=,n=4		
-sch	21700	mIQvaMs	encyclopedic	desc_tok=14_char=93	3.] f. mīḍhuṣī Bein. der Devī, Gattin des Īśāna, Āpast. Gṛhy. 20,2. part=,seq=21999,type=,n=3		
-sch	20955	maRqalISa	encyclopedic	desc_tok=23_char=151	oder ˚leśa m. Herr der Ringe und zugleich: Beherrscher eines Landes, Rudraṭa, Śṛṅgārat. 1,159 nach der Lesart nūpura˚valita . part=,seq=21246,type=,n=4		
-sch	18956	powana	encyclopedic	desc_tok=34_char=234	n. Zusammenlegen, S I,94,4 v.u. (Ko.; in pravālapoṭana = pallavapuṭa ); 175,10 v.u. (Ko.; = nyāsa ); 476,8 v.u. (Ko. in karapoṭana = praṇāmāñjali ); II,175,7 v.u. (Ko. in karapoṭakam ; verdruckt für ˚naṃ? ). part=,seq=19225,type=˚,n=6		
-sch	19134	pratikiri	encyclopedic	desc_tok=15_char=97	Adv. auf das Wildschwein (einen Pfeil abschießen), Prabandh. 56,4 v.u. part=,seq=19406,type=˚,n=3		
-sch	26454	sAraNgikA	encyclopedic	desc_tok=13_char=75	N. der Tochter eines Brahmanen, Śṛṅgt. 13,4 v.u. part=,seq=26809,type=˚,n=2		
-sch	4664	ayugmavilocana	residual	eqn_head	m. = Śiva, Śrīk. 10,52. part=,seq=4724,type=˚,n=2		
-sch	20208	bAhunartana	residual	eqn_head	n. = tāṇḍava , S I,47,16 (Ko.). part=,seq=20488,type=˚,n=2		
-sch	15861	dvayesTita	residual	crossref	= daivapauruṣayoḥ sthita , S I,473,5. part=,seq=16103,type=˚,n=2		
-sch	15802	dyUdyAna	residual	eqn_head	n. = dyaur evodyānam , Sūryaś. 79 a . part=,seq=16044,type=˚,n=2		
-sch	28705	janiBft	residual	eqn_head	m. = prāṇin , Viṣṇubh. II,41 b . part=N,seq=29076,type=˚,n=1		
-sch	9743	kapipravIra	residual	eqn_head	m. = Hanumat, Yudh. 7,41. part=,seq=9875,type=˚,n=2		
-sch	17528	paYcaSarAntaka	residual	eqn_head	m. = Śiva, Śrīk. XX,49. part=,seq=17784,type=˚,n=2		
-sch	19635	prasADayitf	residual	eqn_head	m. = sādhaka und alaṃkartar , S I,209,6. part=,seq=19910,type=˚,n=2		
-skd	3892	ASriH	synonym	syn_list_n=2	, strI, (aSrireva . aSri + iY .) aSriH . koRaH ..		
-skd	3797	AleKyaSezaH	synonym	syn_list_n=3	, tri, (AleKyaM citrameva Sezo yasya saH .) mftaH . iti hemacandraH .. (yaTA raGuvaMSe, 14 . 15 . “vAzpAyamARo balimanniketa- mAleKyaSezasya piturvviveSa” .)		
-skd	25243	BUtANkuSaH	synonym	paryaya_signal	, puM, (BUtAnAmaNkuSa iva nivArakatvAt .) svanAmaKyAtavfkzaH . tatparyyAyaH . kzavakaH 2 kzurakaH 3 tIkzRaH 4 kraraH 5 kzavaH 6 rAjo- dvedanasaMjYaH 7 BUtadrAvI 8 grahAhvayaH 9 . Qyasya guRAH . tIvraganDatvam . utkawatvam . uzRatvam kawutva		
-skd	1263	antarvvARiH	synonym	syn_list_n=3	, tri, (antaH antaHkaraRe vARI SAstra- vihitA vAk yasya saH, hrasvaH .) SAstravit . SAstrajYaH . ityamaraH ..		
-skd	25817	matiBramaH	synonym	paryaya_signal	, puM, (materbudDerBramaH .) budDiBraMSaH . (“asTAna evAsya matiBramaH .” iti pAtaYjala- yogasUtraBAzye vedavyAsaH .) tatparyyAyaH . mramaH 2 miTyAmatiH 3 BrAntiH 4 . iti SabdaratnA- valI ..		
-skd	39648	suradAru	synonym	syn_list_n=3	, klI, (surapriyaM dAru .) devadAru . iti ratnamAlA .. (yaTA, BAgavate . 8 . 2 . 13 . “picumarddEH kovidArEH saralE suradAruBiH ..”)		
-skd	31115	vandAkI	synonym	syn_list_n=2	, strI, vandA . iti SabdaratnAvalI ..		
-skd	14033	wagaraH	synonym	paryaya_signal	, puM, (waH waNkaRaH kzAraviSezaH gara iva . tIvraguRatvAttaTAtvam .) waNkaRakzAraH . helA- viBramagocaraH . kekarAkze, tri . iti medinI . re, 160 ..		
-skd	32946	viBrAw	equivalent	short_tok=9	, [j] tri, (viSezeRa BrAjate iti . vi + BrAj + “anyeByo'pi		
-skd	25475	BogaBUmiH	encyclopedic	desc_tok=22_char=207	, strI, (BogArTEva BUmiH .) suKa- sTAnam . BAratavarzAtiriktavarzam . yaTA, -- “tatrApi BArataM SrezWaM jambudbIpe mahAmune . yato hi karmmaBUrezA tato'nyA BogaBUmayaH ..” iti vizRupurARe 2 aMSe 3 aDyAyaH ..		
-skd	35108	SalalaM	encyclopedic	desc_tok=7_char=74	, klI, (Sala calanasaMvaraRayoH + vfSAditvAt kalaH .) Salam . ityamaraH ..		
-skd	20	aMSuhastaH	encyclopedic	desc_tok=8_char=63	, puM, (aMSureva hastaH yasya saH .) sUryyaH . iti jawADaraH ..		
-skd	1616	abjahastaH	encyclopedic	desc_tok=9_char=68	, puM, (abjaM padyaM haste yasya saH .) sUryyaH . iti hemacandraH ..		
-skd	11595	grAmajanizpAvI	encyclopedic	desc_tok=15_char=130	, strI, (grAme grAmasannikazE vA jAyate iti . jana + qaH . grAmajA nizpAvIti karmmaDArayaH .) naKanizpAvI . iti rAja- nirGaRwaH ..		
-skd	6028	kaRAwIraH	encyclopedic	desc_tok=9_char=80	, puM, (kaRAya awati . kaRa + awa + Iran .) KaYjanapakzI . iti SabdaratnAvalI ..		
-skd	26518	masikA	encyclopedic	desc_tok=8_char=72	, strI, SePAlikA . iti SabdaratnAvalI .. malikA iti granTAntare pAWaH ..		
-skd	37356	saNkalanaM	encyclopedic	desc_tok=13_char=95	, klI, (saM + kala + lyuw .) ekatrIkara- Ram . yojanam . iti lIlAvatI .. Wika deoyA iti BAzA ..		
-skd	33585.01	bIjaM	residual	crossref	Lbody=33585		
-skd	33967.01	bfhadvAruRI	residual	crossref	Lbody=33967		
-skd	32989.01	bimbikA	residual	crossref	Lbody=32989		
-skd	32568.01	biqAlakaH	residual	crossref	Lbody=32568		
-skd	16699.01	durdDaraH	residual	crossref	Lbody=16699		
-skd	30378.01	lAbakaH	residual	crossref	Lbody=30378		
-skd	24231.01	vARASrayaH	residual	crossref	Lbody=24231		
-skd	24224.01	vARaliNgaM	residual	crossref	Lbody=24224		
-vcp	635	acirAt	synonym	syn_list_n=2	avya0 aciram atatIti kvip . SIGre, avilambe ca .		
-vcp	839	atawa	synonym	syn_list_n=3	pu0 tawyate Ahanyate'mBasA iti tawaM jalAGAtasTAnaM tannAsti yasya ba0 . (AqarIri) prasidDe AlambanasTAna- SUnye, “manoraTAnAmatawaprapAtAH” iti . parvvatAdyucca- sTAne, BUmeraDoBAge ca .		
-vcp	5056	avaskandana	synonym	syn_list_n=3	na0 ava + skanda--lyuw . 1 sarvvANgeRAvagAhane, 2 avataraRe, 3 AkramaRe ca .		
-vcp	21602	jvalana	synonym	syn_list_n=2	tri0 jvala--tAcCIlyAdO yuc . 1 dIptiSIle, 2 vahnO 3 citrakavfkze ca pu0 amaraH .		
-vcp	12449	karzaPala	synonym	syn_list_n=2	pu0 karzaH tanmAtraM Palamasya . 1 viBItakavfkze, amaraH 2 AmalakyAm strI ratramAlA wAp .		
-vcp	15177	kodaRqa	synonym	syn_list_n=3	na0 ku--Sabde vic kOHSabditodaRqo'sya . 1 Danuzi, “visPurjaccaRqa kodaRqaH” BAga0 3 . 21 . 51 . tattulyatvAt 2 BrUlatAyAM, 3 deSaBede ca . amaraH 4 DanUrASO ca .		
-vcp	39896	rOhiReya	synonym	syn_list_n=3	pu0 rohiRyAM BavaH Qak . 1 buDagrahe, 2 balarAme, ca amaraH . 2 marakatamaRO ga0 rAjani0 4 govatse puMstrI medi0 5 SanEScare pu0 BagadEvataSavde 4631 pf0 dfSyam .		
-vcp	9025	utsAraRa	synonym	syn_list_n=3	na0 ud + sf--Ric--lyuw . 1 dUrIkaraRe, 2 cAlane, 3 sTAnAntarakaraRe ca .		
-vcp	36260	BargAyaRa	equivalent	short_tok=3	pu0 pravararziBede pravarADyAyaH .		
-vcp	48185	hfdayasTAna	equivalent	short_tok=9	na0 hfdayasya manasaH sTAnam hfdayarUpaM vA sTAnam vakzaHsTale hemaca0 .		
-vcp	13548	kAzWaSArivA	equivalent	short_tok=7	strI kAzWamiva SuzkA SArivA . (anantamUla) SarivABede rAjani0		
-vcp	39951	laGulaya	equivalent	short_tok=8	na0 laGu SIGraM lIyate lI--ac . vIraRaBUla amaraH		
-vcp	32401	puYjAtuka	equivalent	short_tok=3	pu0 vfkzaBede hArA0 .		
-vcp	32610	puriSa	equivalent	short_tok=11	pu0 puri dehe Sete SI--ac aluk sa0 . jIve Sata0 brA0 145518		
-vcp	21870	takrakUrcikA	equivalent	short_tok=5	strI 2167 pf0 kUrcikASabdokte takrajAte padArTe .		
-vcp	41456	viqAlapadaka	equivalent	short_tok=6	na0 karzaparimARe BAvapra0 karzaSabde 1774 pf0 dfSyam .		
-vcp	16285	KaYjanarata	encyclopedic	desc_tok=8_char=60	na0 KaYjanasyeva gopyaM ratam . yatInAM gopye mETune hArA0 .		
-vcp	4909	avaBrawa	encyclopedic	desc_tok=14_char=112	tri0 avanatA nAsikA prA0 sa0 natArTe nAsikAyA- [Page0431-a+ 38] BrawAdeSaH astyarTe ac . avanatanAsike (KAMdA) .		
-vcp	19890	cipiwa	encyclopedic	desc_tok=119_char=1104	pu0 ci--piwac kicca . (ciqA) KyAte pfTuke hemaca0 . tatkaraRaprakArAdi BAvapra0 uktaM yaTA “SAlayaH satuzA ArdrA BfzwA asPuwitAstataH . kuwwi- tAScipiwAH proktAste smftAH pfTukA api . SAlayo yavanAlAdyAScipiwA puzwivardDanAH” . asya BakzyAB		
-vcp	17467	gAli	encyclopedic	desc_tok=17_char=135	pu0 cu0 gala--kzAraRa in . AkroSe SApe trikA0 . “dadatu dadatu gAliM gAlimantoBavanto vayamiha tada- BAvAdgAlidAne'pyaSaktAH” udBawaH .		
-vcp	48200	hflleKa	encyclopedic	desc_tok=19_char=149	pu0 hfdayaM liKati smfSati siKa--a hfdAdeSaH . 1 jYAne rAjani0 . 2 tarke trizA0 . 3 tantrokte mantraBede ca . [Page5434-b+ 38] 4 Otsukye strI halA0 .		
-vcp	37790	malinamuKa	encyclopedic	desc_tok=23_char=167	pu0 malinaM muKaM yasya 1 vahnO tasyAdO DUmAya mAnatvena kfzRatvAt 2 citrakavfkze ca . 3 vAnare puMstrI0 medi0 striyAM NIz 4 krUre 5 Kale ca tri0 medi0 6 prete hema0 .		
-vcp	33202	pfzWamAMsAda	encyclopedic	desc_tok=24_char=240	tri0 pfzWe parokze mAMsAda iva . 1 parokze SaHWyena vAkyABiDAyini puruze dAzodGozake trikA0 . “kusftyA viBavAnvezItyataH kusfvyeti samAkarzAt bAkyA- BiDAne'nvaye taTArTatvam . pfzWamAMsAdanaSabde dfSyam . patvAdeH 2 pfzWamAMsaBakzake tri0 .		
-vcp	10152	uSanasastoma	encyclopedic	desc_tok=50_char=444	pu0 uSanasaH stomo yatra aluksamA0 vA visargasya luk . ekAhasADye yAgaBede “uSanasastomena garagIrRRamivAtmAnaM manyamAno yajeta” A0 SrO0 9, 5, 1 . “uSanasastomonAma ekAhasADyaH punaH stoma iti cAsyEva saMjYA garovizaM gIrRo yena sa garagIr		
-vcp	46048.1	SAlA	residual	crossref	Lbody=46048		
-vcp	1298.1	aDipUruza	residual	crossref	Lbody=1298		
-vcp	12679.1	kaSerU	residual	crossref	Lbody=12679		
-vcp	14658	kftaDvaja	residual	fallback_tok=11	pu0 nfpaBede “kuSaDvajastasya putrastato DarmmaDvajo- nfpaH DarmmaDvajasya dvO patrO kftaDvajamftaDvajO” BAga0 9, 10, 13,		
-vcp	33045.1	pUrbavftta	residual	crossref	Lbody=33045		
-vcp	22221.1	tambA	residual	crossref	Lbody=22221		
-vcp	35774.1	vfhadvat	residual	crossref	Lbody=35774		
-vcp	35836.1	vrahmajYa	residual	crossref	Lbody=35836		
-vei	204	Akuli	synonym	syn_list_n=3	— This mythical priest plays, together with Kirāta, a part in the later tale of Asamāti and the Gaupāyanas.		
-vei	231	AtreyIputra	synonym	syn_list_n=5	is mentioned as a pupil of Gautamīputra in a Vaṃśa, or Genealogy, in the Bṛhadāraṇyaka Upaniṣad (vi. 5, 2, in both versions).		
-vei	461	ElUza	synonym	syn_list_n=2	‘descendant of Ilūṣa,’ is the patronymic of Kavaṣa.		
-vei	1487	anUrADAs	synonym	syn_list_n=5	or Anurādhā, ‘propitious,’ is β, δ , and π (perhaps also ρ ) Scorpionis.		
-vei	764	kOzya	synonym	syn_list_n=2	‘descendant of Koṣa,’ is the patronymic of Suśravas.		
-vei	2435	mARqavI	synonym	syn_list_n=5	‘female descendant of Maṇḍu,’ occurs in the name of a teacher, Vātsī-māṇḍavī-putra, in the Bṛhadāraṇyaka Upaniṣad (vi. 4, 30 Mādhyaṃdina).		
-vei	2895	vArakya	synonym	syn_list_n=8	‘descendant of Varaka,’ is the patronymic, in the Jaiminīya Upaniṣad Brāhmaṇa, of Kaṃsa, Kubera, Janaśruta, Jayanta, and Proṣṭhapad.		
-vei	241	ABipratAriRa	equivalent	short_tok=3	— Patronymic of Vṛddhadyumna.		
-vei	259	Arkza	equivalent	short_tok=6	— Patronymic of Śrutarvan and of Āśvamedha.		
-vei	229	AtiTigva	equivalent	short_tok=3	— Patronymic of Indrota.		
-vei	416	Ula	equivalent	short_tok=5	is a variant of Ula.		
-vei	223	awRAra	equivalent	short_tok=3	— Patronymic of Para.		
-vei	745	kOpayeya	equivalent	short_tok=5	is the patronymic of Uccaiḥśravas.		
-vei	2468	mAruta	equivalent	short_tok=11	‘descendant of Marut,’ is the patronymic of Dyutāna and of Nitāna.		
-vei	2100	prozWapada	equivalent	name_formula	m., -padā, f. (‘foot of a bench’), is the name of a double Nakṣatra.		
-vei	409	UrjayantOpamanyava	encyclopedic	desc_tok=15_char=104	is mentioned in the Vaṃśa Brāh- maṇa 1 as a pupil of Bhānumant Aupamanyava. 1) Indische Studien, 4, 372.		
-vei	993	cyavana	encyclopedic	desc_tok=342_char=2315	1 Cyavāna, 2 are variant forms of the name of an ancient Ṛṣi, or seer. The Rigveda 3 represents him as an old decrepit man, to whom the Aśvins restored youth and strength, making him acceptable to his wife, and a husband of maidens. [Page1-		
-vei	843	gayaplAta	encyclopedic	desc_tok=78_char=555	(‘son of Plati’) is referred to in the Rigveda, 1 two hymns of which he clearly claims to have composed, and which are attributed to him in the Sarvānukramaṇī and the [Page1-220+ 52] Aitareya Brāhmaṇa. 2 In the Atharvaveda 3 he appears with		
-vei	1641	pajra	encyclopedic	desc_tok=133_char=896	is the name of the family from which Kakṣīvant sprang ( Pajriya ). It is mentioned several times in the Rigveda. 1 According to Pischel, 2 the epithet pṛkṣa-yāma 3 applied to them means ‘carrying out brilliant sacrificial performances,’ whi		
-vei	3632	suSravas	encyclopedic	desc_tok=14_char=85	is the name of the father of Upagu Sauśravasa in the Pañcaviṃśa Brāhmaṇa (xiv. 6, 8).		
-vei	1144	tArpya	encyclopedic	desc_tok=137_char=928	denotes, in the Atharvaveda 1 and later, 2 a garment made of some material, the nature of which is uncertain. The commentators on the Kātyāyana Śrauta Sūtra and the Śata- patha Brāhmaṇa 3 suggest that a linen garment, or one thrice soaked i		
-vei	2984	viSvaka	encyclopedic	desc_tok=33_char=226	in the Rigveda 1 called Kṛṣṇiya (possibly ‘son of Kṛṣṇa ’) is a protégé of the Aśvins, who restored to him his lost son, Viṣṇāpu. See 2. Kṛṣṇa. 1) i. 116, 23; 117. 7; viii. 86, 1; x. 65, 12. Cf. Macdonell, Vedic Mythology, 52.		
-vei	3100	vyaDvara	encyclopedic	desc_tok=110_char=757	‘perforating,’ designates a worm in one passage of the Atharvaveda, 1 where there seems to be no good reason to alter the reading to Vyadvara, though Whitney 2 thinks that it may rather be connected with vi-adhvan 3 than with the root vyadh		
-vei	462	Ezakfta	residual	crossref	See Śitibāhu.		
-vei	1254	daDyASir	residual	crossref	See Dadhi and Soma.		
-vei	1070	jIvaja	residual	crossref	See Jarāyu.		
-vei	1605	nf	residual	crossref	See Nara.		
-vei	3584	sukaparda	residual	crossref	See Kaparda.		
-vei	3768	svAtI	residual	crossref	See Nakṣatra.		
-vei	3057	veSas	residual	crossref	See 1. Veśa.		
-vei	2934	vijAmAtf	residual	crossref	See Jāmātṛ.		
-wil	5125	AcAma	synonym	syn_list_n=4	m. ( -maH ) Sipping water, rincing the mouth. E. AN, cama to eat, affix Gaj .		
-wil	4087	avivekin	synonym	syn_list_n=6	mfn. ( -kI-kinI-ki ) Ignorant, undiscriminating, defective in judgment, superficial, short sighted. E. aviveka as above, and ini aff.		
-wil	18811	dAnu	synonym	syn_list_n=5	m. ( -nuH ) .²1 A donor, a giver. .²2 A victor, a conqueror. .²3 Prosperity. .²4 Air, wind. E. dA to give, Uṇādi affix nu .		
-wil	16236	jApana	synonym	syn_list_n=7	n. ( -naM ) .²1 Declining, rejection, dissent. .²2 Dismissing, completing, finishing. E. japa to speak, causal form, lyuw aff.		
-wil	12507	kzepizWa	synonym	syn_list_n=4	mfn. ( -zWaH-zWA-zWaM ) Very quick, quickest. E. kzipra quick, and izWan superlative affix, ra rejected.		
-wil	32743	lajjyA	synonym	syn_list_n=3	f. ( -jjyA ) Modesty, bashfulness. E. lasja to be ashamed, ya aff.		
-wil	42585	sUtta	synonym	syn_list_n=3	mfn. ( -ttaH-ttA-ttaM ) Well or entirely given. E. su , and datta given, form irr.		
-wil	40841	samupoQa	synonym	syn_list_n=3	mfn. ( -QaH-QA-QaM ) Suppressed, restrained. E. sam and upa before vaha to bear, kta aff.		
-wil	2500	aBicEdya	equivalent	name_formula	m. ( -dyaH ) A name of ŚIŚUPĀLA. E. aBi over, cEdya the people of Cedi .		
-wil	8072	fzyaSfNga	equivalent	name_formula	m. ( -NgaH ) The name of a holy sage celebrated in the first book of the Rāmāyaṇa .		
-wil	15722	jaganmAtf	equivalent	name_formula	f. ( -tA ) A name of DURGĀ. E. jamat , and mAtf mother.		
-wil	9525	kalasIsuta	equivalent	name_formula	m. ( -taH ) A name of the saint AGASTYA: see GawodBava and agastya .		
-wil	32809	lambodara	equivalent	name_formula	m. ( -raH ) .²1 A name of GAṆEŚA. .²2 A glutton. E. lamba large, and udara the belly.		
-wil	24574	pAlakApya	equivalent	name_formula	m. ( -pyaH ) A name of a Muni or saint, a form of the divine physician DHANVANTARI.		
-wil	32255	rADAnATa	equivalent	name_formula	m. ( -TaH ) A name of KṚṢṆA. E. rADA , and nATa lord.		
-wil	42259	suBadreSa	equivalent	name_formula	m. ( -SaH ) A name of ARJUNA. E. suBadrA the sister of JAGANNĀTHA, and ISa lord.		
-wil	20500	Darmmya	encyclopedic	desc_tok=22_char=147	mfn. ( -rmmyaH-rmmyA-rmmAM ) .²1 Conformable or according to justice or morality. .²2 Obtainable by virtue or justice. E. Darmma as above, yat aff.		
-wil	39315	SlIpadapraBava	encyclopedic	desc_tok=24_char=178	m. ( -vaH ) The mango tree. E. SlIpada twelled->swelled 20210731 Dr. Sampada Savardekar https://github.com/sanskrit-lexicon/csl-corrections/issues/66 leg, and praBava production.		
-wil	24	aMSuka	encyclopedic	desc_tok=34_char=197	n. ( -kaM ) .²1 Fine cloth, muslin. .²2 A mantle, a wrapper, a robe, a linen garment worn round the upper part of the body. .²3 Cloth in general. .²4 White cloth. .²5 A leaf. E. aMSa and kan added.		
-wil	15334	cIvarin	encyclopedic	desc_tok=16_char=81	m. ( -rI ) A Bauddha or Jaina mendicant. E. cIvara a beggar's dress, and ini aff.		
-wil	13983	gopa	encyclopedic	desc_tok=124_char=765	mfn. ( -paH-pA-paM ) .²1 A helper, a friend or patron. .²2 A preserver, a cherisher. .²3 Who or what hides or conceals. m. ( -paH ) .²1 Superintendent of a district. .²2 The head of a cowpen. .²3 A herdsman, a cowherd, a milkman by caste an		
-wil	29991	mahASrI	encyclopedic	desc_tok=21_char=127	f. ( -SrIH ) .²1 A goddess peculiar to the Jainas . .²2 An epithet of LAKṢMĪ. E. mahA great, and SrI prosperity or the goddess.		
-wil	40721	samIca	encyclopedic	desc_tok=26_char=141	m. ( -caH ) The ocean. f. ( -cI ) .²1 A deer, a doe. .²2 Praise, eulogium. E. sam before iRa to go, Uṇādi aff. caw , and the vowel made long.		
-wil	33278	vakerukA	encyclopedic	desc_tok=27_char=130	f. ( -kA ) .²1 A small crane. .²2 The branch of a tree bent by the wind. E. vaka a crane, or crooked, Ira to go or be, aff. ukan .		
-wil	610	aYjalikA	residual	crossref_short	f. ( -kA ) See aYjanikA .		
-wil	4868	ahahA	residual	crossref_short	ind. See the preceding.		
-wil	6385	irvvAlu	residual	crossref_short	m. ( -luH ) See irvvAru .		
-wil	9524	kalasi	residual	crossref_short	f. ( -siH ) See kalaSi .		
-wil	9376	karbara	residual	crossref_short	m. ( -raH ) See karvara .		
-wil	9715	kastUrikA	residual	crossref_short	f. ( -kA ) See kastUrI .		
-wil	10936	kulapAlikA	residual	crossref_short	f. ( -kA ) See kulapAli .		
-wil	16922	tatva	residual	crossref_short	n. ( -tvaM ) See tattva .		
+cae	1716	anDas	synonym	syn_list_n=2	n. herb, juice, esp. of the Somaplant->Soma plant AnnaRybakovaT, Jim Funderburk https://github.com/sanskrit-lexicon/csl-corrections/issues/25 , juice or food i.g.		
+cae	15941	nala	synonym	syn_list_n=2	m. a kind of reed-grass; N. of sev. kings & my hol. beings; f. I a kind of fragrant substance.		
+cae	19007	pArSva	synonym	syn_list_n=2	n. ( m. ) the region of the ribs, pl. the ribs; flank, side, immediate neighbour-hood. Acc. near to, towards, loc. close to, near; abl. away from, on the part or by means of.		
+cae	4864	AhU	equivalent	short_tok=1	f. invocation.		
+cae	21011	praSnay	equivalent	short_tok=1	praSna˚yati inquire after (2 acc. ).		
+cae	34390	satanu	equivalent	short_tok=0	a. embodied, along with the body.		
+cae	22473	brU	encyclopedic	prefix_or_multisense	bra/vIti brUte/ say, tell ( acc. of th. & gen. , dat. , loc. of pers. ; or 2 acc. ), speak to ( acc. , r. gen. ); name, call (2 acc. ), speak of ( acc. ±prati or aDikftya ); answer ( ±punar ); announce, foretell; M. ( A. ) call one's self o		
+cae	27606	lih	encyclopedic	prefix_or_multisense	leQi lIQe lihati pp. lIQa lick, lick up, lick at ( loc. ), lick away i.e. destroy. C. leha/yati cause to lick. I. lelihyate etc. ( pp. lelihAna ) lick frequently, play with the tongue. — ava, A, ud lick, touch (with mouth or beak). upa M. e		
+cae	31348	vyA	encyclopedic	prefix_or_multisense	vya/yati vya/ya˚te pp. vIta/ ( q.v. ) wrap, veil, envelop; M. refl. — apa unveil, uncover; M. extricate one's self i.e. deny. api cover. A wrap round ( acc. ), hide one's self in ( loc. ). upa hang about ( esp. the sacred cord over the left		
+cae	9899	grahasamAgama	residual	eqn_head	m. = grahayuti .		
+cae	10888	jagadISa	residual	eqn_head	m. = jagatpati .		
+cae	8892	kzIrArRava	residual	eqn_head	m. = kzIrasamudra .		
+ccs	4002	ekAnta	synonym	syn_list_n=2	m. einsamer Ort, Einsamkeit, Ausschließlichkeit. ˚ntatas, ˚nte adv. auf einer Stelle, bei Seite, ausschließlich, durchaus, vollkommen.		
+ccs	5218	kUrca	synonym	syn_list_n=2	n. Büschel, Bündel (auch n.) ; Bart.		
+ccs	22242	vicAra	synonym	syn_list_n=2	m. Verfahren, Unterscheidung, Überlegung, Prüfung, Bedenken.		
+ccs	24416	SAnta	equivalent	short_tok=1	(s. 2. Sam) m. Mannsn.; f. A Frauenname ; n. Gemütsruhe.		
+ccs	1934	alpaBujAntara	equivalent	short_tok=1	schmalbrüstig.		
+ccs	8613	tIkzRa	equivalent	short_tok=1	scharf, spitz, stechend, brennend (geschmack) , heftig, streng. (Compar. tI/kzRatara u. tI/kzRIyaMs Superl. te/kziRazWa s. bes.) m. Mannsname. f. Pflanzenn. n. adv. ; *Eisen, Gift, Todschlag.		
+ccs	7692	ji	encyclopedic	prefix_or_multisense	ja/yati, ˚te siegen, siegreich sein; gewinnen, ersiegen, unterwerfen; besiegen, überwinden, jemd. um etwas bringen (2 Acc. jayati u. ˚tu auch jitam mit Instr. (als Gruß) Heil dem— —lebe hoch Caus. jApayati jemd. etw. (2 Acc.) gewinnen lasse		
+ccs	19049	muh	encyclopedic	prefix_or_multisense	mu/hyati (˚te) irre werden, sich verwirren, ohnmächtig werden, fehlschlagen, misraten. p. p. mugDa/ s. bes. ; mUQa/ verirrt, verwirrt, unsicher in (Loc. o. —˚) , dumm, thöricht. Caus. moha^yati (˚te) verwirren, bethören; p. p. mohita. ati i		
+ccs	8225	tap	encyclopedic	prefix_or_multisense	ta/pati (˚te) heiß sein, glühen, Schmerz empfinden, leiden, sich härmen, sich härmen, sich kasteien; erhitzen, brennen, verbrennen, verzehren, quälen, peinigen. Pass. tapya/te , auch ta/pyate u. tapyati haben die intransit. Bedeutungen. p.p		
+ccs	17231	BavArRava	residual	eqn_head	m. = BavasAgara .		
+ccs	12275	nirdAha	residual	eqn_head	= vor. Adj. m. = vor. n.		
+ccs	25944	satyaDarman	residual	eqn_head	= vor. Adj. u. = folg.		
+fri	3193	devar	synonym	syn_list_n=2	devar, devara m. 1 švagr, manželův bratr 2 деверь, брат мужа 3 husband's brother		
+fri	3105	du	synonym	syn_list_n=3	√du dunoti, pp. dūna 1 hořeti, páliti; trápiti (se) 2 гореть, жечь; мучить (ся) 3 to burn (intr., trans.); distress, be afflicted		
+fri	5113	masfRa	synonym	syn_list_n=3	masṛṇa 1 měkký, hladký, mírný 2 мягкий, гладкий, мирный 3 soft, smooth, mild		
+fri	1090	kim	equivalent	short_tok=1	+kim iti = kim 1 proč? 2 почему? 3 why?		
+fri	3409	na	equivalent	short_tok=0	na + u v. no		
+fri	1907	vyutkram	equivalent	short_tok=3	+vi +ud (vyutkram) 1 odcházeti, překročovati 2 уходить, переходить 3 to depart, transgress, leave (wordly life)		
+fri	8014	hanumant	encyclopedic	quoted_def	hanumant, hanūmant m. 1 jm. opice (dosl. "mající silné čelisti") 2 имя обезьяны (букв. "обладающая сильными челюстями") 3 name of a monkey (lit. "having strong jaws")		
+fri	4142	punar	encyclopedic	desc_tok=0_char=19	+punar-punar 1 tu — tu 2 то... то... 3 now — now		
+fri	5428	yaTA	encyclopedic	desc_tok=6_char=238	yathā adv. rel.; conj.; (correl. tathā, evam, tadvat) 1 jak, jako, stejně jako; ve srovnání: jako, jako na př.; v platnosti spojky: takže, aby, protože; v ujištění: jako že — tak; + subjv.: kéž 2 как, одинакого как; при сравнении: как, как 		
+gra	6042	prAcInaraSmi	synonym	syn_list_n=3	a. , dessen Zügel [raśmí] nach vorne gerichtet sind, vorwärts gelenkt . -im yajñám 862,6 .		
+gra	5907	praTamajA	synonym	syn_list_n=6	[ a. , m. , f. ], erstgeboren, der Erstgeborene, die Erstgeborene, mit dem Gen. des Erzeugenden; zweimal ohne solchen Casus, aber beidemale mit folgendem ṛtā́vā, wofür vielleicht ṛtásya zu lesen ist. -ā́s [ N. s. m. ] ṛtásya 831,7 (agnís); 		
+gra	6097	preman	synonym	syn_list_n=2	n. , Liebe [von prī], Instr. preṇā́ für premṇā́. -ṇā́ 897,1 .		
+gra	4771	Druti	equivalent	short_tok=1	f. , Verführung, Verblendung [von dhru = dhur, dhūrv, dhvṛ]. -is 602,6 .		
+gra	91	agnimUQa	equivalent	short_tok=2	a. , durch das Feuer (den Blitzstrahl) betäubt (muh). -ānām 929,15 (im pariśiṣṭa zu _ 929,1 ).		
+gra	3611	taku	equivalent	short_tok=1	a. , dass. [von tak, vgl. ταχύς , Cu. 〔p. 462, 185〕 ]. -ave 809,52 .		
+gra	163	aCidra	encyclopedic	desc_tok=7_char=149	a. , 1〉 nicht zerrissen, nicht zerbrochen (chidrá), unversehrt, 2〉 unzerstörbar, sicher . -am [ n. ] 2〉 śárma 416,9 ; 647,9 ; śaraṇám 194,8 ; 490,7 . -asya 1〉 dṛ́tes 489,18 . -ās. 2〉 mántavas, sárgās 152,1 . -ā [ n. p. ] 2〉 śárma 58,8 ; 216		
+gra	10269	sTA	encyclopedic	desc_tok=10_char=146	a. , n. , 1〉 a. , stehend auf, in L. ; 2〉 n. , das Stehende, Unbewegliche mit dem Gegensatze jágat. -ā́s [ N. m. s. ] 1〉 ādityā́nām śármaṇi 861,9 . -ā́m 1〉 kṣā́maṇi 797,11 (śakunám). -ā́ [ n. Pada überall -ā́s] 2〉 〰 jágat ca 80,14 ; 〰 jágat		
+gra	3848	tuvImaGa	encyclopedic	desc_tok=6_char=116	a. , sehr reich [maghá, Reichthum], s. tuvi-maghá. -a indra 29,1 —_ 29,7 ; 701,29 . -as śū́ras (índras) 670,18 . -am tvā (índram) 690,2 . -āsas [ V. ] (marutas) 411,8 .		
+gra	7422	rI	residual	crossref	siehe ri.		
+gra	3981.1	triuDan	residual	crossref	Lbody=3981		
+gra	3999.1	tuAnid	residual	crossref	Lbody=3999		
+gst	624	aNgakarman	synonym	syn_list_n=3	Karmadh. n. ( -rma ) An inferior or secondary sacri- ficial act, one subservient to the main ritual proceding, as frying the Puroḍāśa in bowls &c. with respect to the Darśapūrṇamāsa sacrifice; or the Dīkṣaṇīyā, Prāyaṇīyā &c. with respect to		
+gst	4750	aparasparasamBUta	synonym	syn_list_n=6	Tatpur. m. f. n. ( -taH-tA-tam ) Produced by or in an uninterrupted series. (The verse of the Bhagavadgītā (16. 8.) where this word occurs: ‘asatyamapratizWaM te jagadAhu- ranISvaram . aparasparasaMBUtaM kimanyatkAmahEtukam .’ is to be rend		
+gst	5448	apratirUpavadana	synonym	syn_list_n=2	Tatpur. n. ( -nam ) Saying what is at variance with (e. g. the sacred writings). [As a Karmadh. the word might mean: an incomparable or very beautiful face; and as a Bahuvr., having such a face.] E. apratirUpa and vadana .		
+gst	2675	anityapratyavekzA	equivalent	short_tok=1	Tatpur. f. ( -kzA ) In Buddhist doctrine, one of the 108 DarmAlokamuKa (q. v.): the reflection that (every thing) is transitory. E. anitya and pratyavekzA .		
+gst	2962	anuttaropapAtika	equivalent	short_tok=7	m. pl. ( -kAH ) Apparently the same as anuttara m. pl.: the name of the Jaina gods so called. According to a commentary it would mean literally ‘those who have the highest origin i. e. who are born in the five Vimānas’ from which the five c		
+gst	1530	atravas	equivalent	short_tok=3	ind. The last year but one. E. atra , taddh. aff. vas(?) . This word is of doubtful authority.		
+gst	6399	aBiSasyamAna	encyclopedic	desc_tok=2_char=46	Tatpur. m. f. n. ( -naH-nA-nam ) Divulged, noto- rious (? comp. the explanation of aBiSasti I. 1. by Sāyaṇa: aBiSasyamAnAt = aBitaH prakawitAt ). E. aBi and Sasya- mAna . [The word may mean the same as aBiSasta ‘in- flicted, injured’ and wo		
+gst	4509	apakriyA	encyclopedic	desc_tok=3_char=36	Tatpur. f. ( -yA ) 1. 1 Injury, hurt, wickedness. 2 Ac- quitting (debts). E. kf with apa , kṛt aff. Sa . 2. Any impure act or rite. E. apa and kriyA .		
+gst	5231	apuruzArTa	encyclopedic	desc_tok=23_char=196	Tatpur. m. ( -rTaH ) 1 (In the Mīmānsā philosophy.) A religious act which is not performed on account of the gratification of the sacrificer, but because it is essential to the sacrifice itself; see kratvarTa . 2 (In the Sāṅkhya philos.) No		
+gst	1824	aDA	residual	crossref_short	ind. See aDa .		
+gst	990	aYjanI	residual	crossref	See aYjana .		
+gst	5358	apyEdIkzita	residual	crossref	See apyayadIkzita .		
+ieg	7611	diestruck	synonym	syn_list_n=2	, coins on which the symbols and legends were impressed by means of an anvil and a single punch, both bearing negative representations, by placing a blank on the socket in the anvil and striking the punch placed on it by a hammer; see punch		
+ieg	5062	sAM	synonym	syn_list_n=2	( IE 8-1; LP ), abbreviation of sāṃvatsarika , annual. See sāṃ-hi .		
+ieg	7435	seNkoqikkARam	synonym	syn_list_n=3	( SITI ), Tamil; explained as ‘the tax on the cultivation of the medicinal plant known variously as śeṅgŏḍi, kŏḍiveli and citramūlam ’; see also kŏḍi-kkāṇam .		
+ieg	17	aBijYAna	equivalent	short_tok=4	( LP ), a token by which the identity of a person is recognised.		
+ieg	1159	candrakAlikam	equivalent	short_tok=1	( LP ), permanently.		
+ieg	4401	poMdI	equivalent	short_tok=1	( Chamba ), bottom; foot of a hill.		
+ieg	6875	adugDadaDigrahaRa	encyclopedic	desc_tok=6_char=51	, refers to the freedom of the gift village from the obligation of supplying milk and curs to the king or landlord on occasions or to the touring officials on their visit. Cf. Prakrit a-dudha-dadhi-gahaṇa ( Select Inscriptions , p. 439).		
+ieg	1167	cara	encyclopedic	desc_tok=0_char=3	( CII 4), a spy.		
+ieg	6268	uttaraniyoga	encyclopedic	quoted_def	( EI 32), ‘subsequent assignment’; cf. ukta-niyoga .		
+ieg	1717	drakzuRa	residual	crossref_short	, see draṃkṣaṇa .		
+ieg	2607	karRam	residual	crossref_short	, also spelt Karaṇam . See Karaṇa .		
+ieg	2796	kollabaRqi	residual	crossref_short	, see kola-bhaṇḍālu .		
+inm	8756	puRya	synonym	syn_list_n=2	name of a lake. § 377 (Dhaumyatīrthak.): III, 89 , 8364 ( hradaḥ , in the west). Cf. Puṇyākhya 2 .		
+inm	9322	samA	synonym	syn_list_n=5	( ˚āḥ , pl. C.), a region. § 575 c (Bhūmip.): After these regions is seen a habitation of the name Samā . It is of a starry shape with four corners and thirty-three maṇḍalas . There dwell the four world-elephants ( diggajāḥ), Vāmana , Airāv		
+inm	12570	yamunAtIrTa	synonym	syn_list_n=4	name of a tīrtha on the Sarasvatī. § 615 dd : In the Y., Varuṇa , the son of Aditi , had in days of yore, performed the rājasūya sacrifice; having subjugated both men and celestials and G. and Rā. in battle, he per- formed a great sacrifice		
+inm	396	amaDya	equivalent	short_tok=1	(“without middle”): XII, 12864 (Mahāpuru- ṣastave), 13249 (= Kṛṣṇa).		
+inm	8359	piNgala	equivalent	short_tok=3	a Yakṣa king. § 506 (Skandayuddha): III, 231 , 14565 ( vyāpṛtas tu śmaśāne yo nityaṃ Rudrasya vai sakhā (C. ś˚ ) P˚o nāma Yakṣendraḥ ).		
+inm	11312	vahni	equivalent	short_tok=2	an ancient king (an Asura?). § 673 b (Bali-Vāsava- saṃv.): XII, 227 α, 8264 (among the ancient rulers of the earth).		
+inm	1598	BujagendrakanyA	encyclopedic	quoted_def	(“the daughter of the serpent king”) = Ulūpī: XV, 666.		
+inm	3999	ganDarva	encyclopedic	quoted_def	pl. ( ˚āḥ ), the celestial musicians or singers. § 4 (Anukram.): I, 1 , 105 (1,400,000 verses of the Mhbhr. are known among the G .), 106 (Śuka recited the Mhbhr. to the G. , the Yakṣas, and the Rakṣases), †165 (all. to § 512). —§ 11 (Parva		
+inm	9815	sOrI	encyclopedic	quoted_def	(“daughter of Sūrya (the Sun)”) = Tapatī: I, 3738 ( T˚ ).		
+inm	5321	kAnta	residual	eqn_head	= Viṣṇu (1000 names).		
+inm	5633	kOravyamuKya	residual	eqn_head	= Bhūriśravas: VII, 5875.		
+inm	11784	vedANgapati	residual	eqn_head	= Viṣṇu: XII, 13111.		
+krm	490	caRa	synonym	syn_list_n=4	(I -BvAdiH -796. saka . sew . para .) GawAdiH . [a] cakArAd gatAvapi . cARakaH-RikA, cicaRizakaH-zikA, caYcaRakaH-RikA ; ityAdIni sarvARyapi rUpARi SudDAt, sannantAt, yaNantAYca BOvAdikakaRativat (157) boDyAni . GawAditvena mittvARRO upaDAh		
+krm	1479	lAKf	synonym	syn_list_n=9	(1 -BvAdiH -123. saka . sew . para .) lAKakaH-KikA, lAKakaH-KikA, lilAKizakaH-zikA, lAlAKakaH-KikA ; lAKitA-trI, lAKayitA-trI, lilAKizitA-trI, lAlAKitA-trI ; lAKan-ntI, lAKayan-ntI, lilAKizan-ntI; - - ityAdIni rUpARi sarvARyapi BOvAdikadrAK		
+krm	1426	ruSa	synonym	syn_list_n=8	(VI -tudAdiH -1419. saka . ani . para .) roSakaH-SikA, roSakaH-SikA, rurukzakaH-kzikA, roruSakaH-SikA ; ruzwA-zwrI, roSayitA-trI, rurukzitA-trI, roruSitA-trI ; ityAdikAni rUpARi sarvARyapi dEvAdikakusyativat (234) jYeyAni . tumuni-rozwum B 		
+krm	576	Ceda	equivalent	short_tok=5	(X -curAdiH -1934. saka . sew . uBa . adantaH . ) CedakaH-dikA, cicCedayizakaH-zikA; ityAdIni sarvARyapi rUpARi cOrAdika - ketayativat (260) boDyAni . A pracCeditam . A. ‘nityaM vyayApitamalo hfdi rUpayaMstaM pracCeditaprakftiracCaditasvarU		
+krm	1104	bala	equivalent	short_tok=2	(X -curAdiH -1629. saka . sew . uBa .) jYapAdiH . balakaH-likA, bibalayizakaH-zikA; ityAdIni sarvARyapi rUpARi cOrAdikacahayativat (515) jYeyAni . A balayan-ntI . A. ‘yuDyasva BItirahito balayan Kalu tvaM kIrtiM cayasva capayApi nfpaprasAda		
+krm	1951	sPara	equivalent	short_tok=2	(VI -tudAdiH -1389. ( pA .) aka . sew . para .) kzIrasvAmI evaM paWati . anye sarve na paWanti . ‘sPuraRe saMcalane dIptO’ iti vopadevaH . sParaH, sPAraH . sarvARyapi rUpARi tOdAdikakurativat (229) boDyAni .		
+krm	1186	Brasja	encyclopedic	quoted_def	(VI -tudAdiH -1284. saka . ani . uBa .) ‘Bfjjate Bfjjati BrasjeH Barjane Barjate BfjeH .’ ( Slo . 68) iti devaH . 3 BarjakaH-rjikA, BrajjakaH-jjikA, BarjakaH-rjikA, BrajjakaH-jjikA , 4 biBarjizakaH - biBarkzakaH-biBrajjizakaH-biBrakzakaH-kz		
+krm	257	kF	encyclopedic	prefix_or_multisense	(VI -tudAdiH -1409. saka . sew . para . kirAdiH . ) ‘kfRan kfRIte hiMsAyAm, vikzepe kiratIti Se ..’ ( Slo . 39) iti devaH . 3 kArakaH-rikA, kArakaH-rikA , 4 cikarizakaH-zikA , 5 cekirakaH-rikA ; 6 karitA-karItA-trI, kArayitA-trI, cikarizitA		
+krm	701	tancu	encyclopedic	desc_tok=5_char=173	(I -BvAdiH -191. saka . sew . para .) ANupasfzwasyAsyArTo Bidyate-yaTA-AtaYcanam = payasi rasaviSezotpAdanAya GanI - BAvAya ca takrasya kiYcinptiSraRam . taYcakaH-YcikA, taYcakaH YcikA , titaYcizakaH-zikA, tAtacakaH-cikA-ityAdIni sarvARyapi		
+lan	4307	SvaSrU	synonym	syn_list_n=4	[ 355c ], f. mother-in-law. [ śváśura, 355c : cf. ἑκυρα , Lat. fem. socrus, AS. sweger, Ger. Schwieger, ‘mother-in law.’]		
+lan	1950	divA	synonym	syn_list_n=2	adv. by day. [ fr. the instr. div-ā́, w. shifted acct , 1112e .]		
+lan	2700	praC	synonym	syn_list_n=4	( pṛccháti, -te; papráccha [ 794c ]; áprākṣīt; prakṣyáti; pṛṣṭá; práṣṭum; pṛṣṭvā́; -pṛ́cchya ). ask; ask after, inquire about; ask some one ( acc. ) about something ( acc. ), 61 7 . [true root-form praś (see 220 , 241, and √vṛśc ), orig. *p		
+lan	188	anAgataviDAtf	equivalent	short_tok=0	m. arranger for the future; Forethought, name of a fish.		
+lan	4676	suhfd	equivalent	short_tok=2	m. friend. [ prop. adj. , ‘having a good heart, kindly disposed.’]		
+lan	821	udyama	equivalent	short_tok=2	m. raising (of the hands to work); exertion. [ √yam + ud. ]		
+lan	1368	gir	encyclopedic	desc_tok=1_char=81	[ 392] , f. —1. invocation, praise, 74 12 ; —2. sing. and pl. speech, words, 87 16 , 49 9 ; —3. voice, 3 14 . [ √1gṛ, 242 1, 3 . ]		
+lan	4549	sAkza	encyclopedic	desc_tok=4_char=97	a. having or with the eyes; --used only in abl. sākṣā́t, as adv. —1. with the eyes; —2. plainly, actually, 51 14 ; exactly, 58 23 ; —3. (in reality, i. e. ) in propria persona, embodied, in person, 1 10 , 6 18 . [ akṣa: 1114c .]		
+lan	3426	yA	encyclopedic	prefix_or_multisense	( yā́ti; yayaú; áyāsīt [ 911] ; yāsyáti; yātá; yā́tum; yātvā́; -yā́ya ). —1. go, 39 1 ; yātas, avasitasya, of him that journeys (and) of him that rests, 71 8 ; w. astam, 62 14 , see astam; —2. go to, w. acc. , 43 17 , 91 6 ; w. dat. 49 14 ;		
+lan	369	ambu	residual	crossref_short	n. water. [see abhrá. ]		
+lan	1463	caturakza	residual	crossref_short	a. four-eyed. [see 1300b .]		
+lan	1879	daDfk	residual	crossref	see dadṛh.		
+lrv	26771	brahmAMjali	synonym	syn_list_n=2	m. 1. obeisance to a preceptor at the beginning and end of a Vedic recital; 2. joining the hollowed hands while repeating the Vedas.		
+lrv	22055	pAna	synonym	syn_list_n=2	(I) n. 1. Drinking; 2. drinking spirituous liquors, M. vii.50, xii.45; 3. a drink, a leverage; 4. a drinking vessel; 5. whetting, sharpening.		
+lrv	06715	upajYA	synonym	syn_list_n=2	f. 1. Knowledge obtained by oneself and not handed down by tradition, invention, pARinyupajYaM vyAkaraRam S.K. , prAcetasopajYaM rAmAyaRam R. xv.63; 2. commencement of a thing not previously done, loke'BUdyadupajYameva viduzAM sOjanyajanyaM		
+lrv	04236	aSvastana	equivalent	short_tok=0	a. (f. nI ) 1. Of today, not of to-morrow; 2. making no provision for to-morrow, M. iv.7.		
+lrv	30343	muKapriya	equivalent	short_tok=0	m. an orange.		
+lrv	21366	paripAWa	equivalent	short_tok=0	m. Complete enumeration.		
+lrv	22793	puMqra	encyclopedic	desc_tok=2_char=27	(I) m. 1. A kind of sugarcane; 2. a lotus, especially a white lotus; 3. a mark on the forehead; 4. a worm.		
+lrv	39335	satkAra	encyclopedic	desc_tok=4_char=58	m. 1. kind or hospitable treatment; 2. reverence, respect; 3. care, attention; 4. a meal; 5. a festival, a religious observance.		
+lrv	06688	upagrahaRa	encyclopedic	desc_tok=4_char=29	n. 1. Seizing from below, taking hold of, sPurati raBasAt pARiH pAdopasaMgrahARAya ca Mv. ii.; 2. capture; 3. holy study, vedopagrahaRArTAya tAvagrAhayata praBuH Ram.		
+lrv	37807.1	SilpinI	residual	crossref	Lbody=37807		
+lrv	39866.1	samutpiMjA	residual	crossref	Lbody=39866		
+lrv	15180.1	tanUja	residual	crossref	Lbody=15180		
+mci	600	Suka	synonym	syn_list_n=3	nt.: Name of a missile. One of the eight missiles known to Arjuna; enumerated by Rāma Jāmadagnya for the information of Duryodhana; Arjuna was likely to employ these missiles during the war 5. 94. 38; for the effects produced by these missi		
+mci	1199	ganDarvatIrTa	synonym	syn_list_n=4	nt.: Name of a tīrtha. Balarāma went to the tīrtha of the Gan- dharvas ( gandharvāṇāṃ … tīrtham ) from Subhūmikā 9. 36. 10, (8); there the Gan- dharvas, Viśvāvasu and others, practised aus- terites and performed delightful dances, played on		
+mci	1615	vaMSagulma	synonym	syn_list_n=2	m.: Name of a tīrtha. It is the source of the rivers Śoṇa and Narmadā ( śoṇasya narmadāyāś ca pra- bhave … /vaṃśagulme ); by bathing there ( upaspṛśya ) one gets the fruit of a horse sacrifice (Vājimedha) 3. 83. 9.		
+mci	52	kacCapa	equivalent	short_tok=0	m.: A mythical serpent. Son of Kadrū, one of those who came to greet the birth of Arjuna 1. 114. 60, 40.		
+mci	58	karkara	equivalent	short_tok=3	m.: A mythical serpent. Son of Kadrū, listed among her sons by Sūta at the request of Śaunaka 1. 31. 15, 2.		
+mci	1622	varadA	equivalent	short_tok=3	f.: Name of a river. If one bathes at the confluence of Varadā ( varadāsaṃgame ) one gets the fruit of gift- ing a thousand cows 3. 83. 31.		
+mci	2103	amaraToraga	encyclopedic	desc_tok=6_char=86	(?) m. (pl.): Name of a Janapada. Listed by Saṃjaya among the (nor- thern) Janapadas of the Bhāratavarṣa ( ata ūrdhvaṃ janapadān nibodha gadato mama ) 6. 10. 37, 5; ( vātajāmarathoragāḥ ) 6. 10. 53 (or vātajāma-rathoragāḥ ? ).		
+mci	2410	bahuvAdya	encyclopedic	desc_tok=2_char=59	m. (pl.): Name of a Jana- pada. Listed by Saṃjaya among the northern Janapadas (also called Deśas 6. 10. 68) of Bhāratavarṣa ( janapadān nibodha ) 6. 10. 37, 5; ( bahuvādyāś ca ) 6. 10. 53.		
+mci	2633	pArijAta	encyclopedic	desc_tok=28_char=194	m.: Name of one of the five heavenly trees. Past event: Vidura scolds Duryodhana, who wanted to arrest Kṛṣṇa, by reminding him that Kṛṣṇa had defeated even Indra when he took away the Pārijāta tree from him ( pārijātaṃ ca haratā jitaḥ sākṣā		
+mci	2330	dASeraka	residual	crossref	See Daśeraka.		
+mci	1894	kurukzetrASrama	residual	crossref_short	m.: See Dhṛtarāṣṭra- sya āśramaḥ 1 .		
+mci	1372	nEmizakuYja	residual	crossref_short	m.: See Naimiṣa 1 .		
+md	20477	hAwaka	synonym	syn_list_n=3	hāṭa-ka, m. N. of a country : pl. its 🞄people ; n. (derived from Hāṭaka), gold: 🞄 -maya, a. golden; -īśa, -īśāna, m. lord of 🞄Hāṭaka, a form of Śiva; -īśvara, m. id. .		
+md	20598	hfdiSaya	synonym	syn_list_n=3	hṛdi-śaya, a. sticking in the heart; 🞄 -stha, a. being the heart; dear; -spṛś, 🞄 a. touching or charming the heart.		
+md	18990	sarit	synonym	syn_list_n=5	sar-ít, f. [flow-er: √ sṛ] stream, river: 🞄 -āṃ pati, m. lord or husband of rivers, ocean: 🞄 -pati, m. id. ; -suta, m. son of the river 🞄( Ganges ), of Bhīṣma.		
+md	25	aMhas	equivalent	short_tok=1	áṃh-as, n. distress, need; sin.		
+md	7600	cinmaya	equivalent	short_tok=2	cin-maya, a. intellectual; -mātra, 🞄 a. pure intelligence.		
+md	7570	citi	equivalent	short_tok=1	1. cí-ti, f. pile; pyre; heap; multitude.		
+md	10180	Dvan	encyclopedic	desc_tok=2_char=46	2. DHVAN, Ⅰ. P. dhvana, sound, 🞄roar; buzz; cs. dhvā̆naya, cause to 🞄sound; allude to ( ac. ); ps. dhvanyate . 🞄 abhi, whirr. pra, resound.		
+md	9297	div	encyclopedic	desc_tok=3_char=84	1. DIV, Ⅳ. dī́vya, cast, throw; radiate, 🞄shine; throw dice , play at dice 🞄( in. ) with any one ( n. ) for ( in. or d. ); sport, 🞄dally; have free play, rejoice: pp. dyūta ; 🞄 cs. devaya, cause to play at dice . -prati, 🞄play against ( ac.		
+md	19056	savIrya	encyclopedic	desc_tok=9_char=178	sá-vīrya, a. ( V. ) equal in might to 🞄( in. ); mighty; -vṛddhika, a. bearing interest; 🞄 -vṛṣaṇa, a. having testicles; with 🞄the testicles; -vega, a. equal in speed to 🞄( —˚ ); violent, powerful ( blast ): -m, ad. impetuously; 🞄 -vetāla, a		
+mw	26705	AlaB	synonym	syn_list_n=2	Ā. -laBate , to take hold of, touch, handle, RV. ; TS. ; KātyŚr. ; Mn. ; MBh. &c.; to kill, sacrifice, AitBr. ; ŚBr. ; KātyŚr. &c.; to commence, undertake, TS. ; to reach, obtain; to conciliate, BhP. ; MBh. ; Megh. &c.: Caus. -lamBayati , t		
+mw	154123	maNkigIta	synonym	syn_list_n=2	n. ‘song of Maṅki ’, N. of the 15th ch. of the Pārtha Itihāsa-samuccaya (containing episodes from the MBh. )		
+mw	185381	vataRqI	synonym	syn_list_n=2	f. a female descendant of Vataṇḍa , Pāṇ. iv, 1, 109.		
+mw	220128	SUnyaka	equivalent	short_tok=1	n. absence, lack of ( gen. ), MBh.		
+mw	5143	anaPA	equivalent	short_tok=0	f. a particular configuration of the planets. [ Gk. ἀναϕή ]		
+mw	91349	dAyin	equivalent	short_tok=0	yielding, ceding, allowing, permitting		
+mw	71476	catvAriMSa	encyclopedic	desc_tok=1_char=28	(with Sata/ , 100) + 40 ŚBr. xii ; Pāṇ. v, 2, 46		
+mw	105656	nABi	encyclopedic	desc_tok=5_char=71	f. ( prob. fr. √ 1. naB , ‘to burst asunder or into a hole’; ifc. f. i or I , Vām. v, 49 ) the navel (also n˚ -string, cf. -kfntana ), a navel-like cavity, RV. &c. &c. (in later language also m. and f( ˚BI ). )		
+mw	116460	parama	encyclopedic	desc_tok=2_char=26	n. highest point, extreme limit ( catur-viMSati-p˚ , at the utmost 24), MBh. &c.		
+mw	262711	hAsa	residual	crossref_short	hAsya . See p. 1294, cols. 2 and 3.		
+mw	256274	snAyupASa	residual	grammar_only	m.		
+mw	34425	upaca	residual	crossref_short	mfn. See Aco paca .		
+mw72	9134	AruD	synonym	syn_list_n=3	ā-rudh, cl. 7. P. -ruṇaddhi, -roddhum, to keep off: Caus. -rodhayati, -yitum, to obstruct, impede.		
+mw72	27017	parAkfz	synonym	syn_list_n=2	parā-kṛṣ, cl. 1. P. -karṣati, -karṣṭum, -kraṣṭum, to draw or drag away; to draw down; to censure, revile.		
+mw72	50079	samAlamb	synonym	syn_list_n=5	sam-ā-lamb, cl. 1. A. -lambate, -lambitum, to hang on to (any one), hold on to, [Page1075-a+ 73] cling to, grasp, lay hold of, seize; to lean or rest upon, be supported by, depend upon, trust to, devote one's self to, give one's self up to;		
+mw72	5993	alaGu	equivalent	short_tok=8	a-laghu, us, vī, u, not light, heavy; not short, long; weighty; serious, solemn; intense, violent. —Alaghu-pratijña, as, ā, am, solemnly pledged or promised. —Alaghūpala (˚ghu-up˚), as, m. a rock. —Alaghūṣman (˚ghu-uṣ˚), ā, m. in- tense hea		
+mw72	49507	sabahumAnam	equivalent	short_tok=3	sa-bahumānam, ind. with great honour or reverence, very respectfully.		
+mw72	44077	viviSivas	equivalent	short_tok=2	one who has entered, (see Pāṇ. VII. 2, 68.)		
+mw72	23425	DIti	encyclopedic	desc_tok=0_char=12	f. (for 1. dhīti see col. 1), drink- ing; (according to the commentators), thirst.		
+mw72	25118	nirukti	encyclopedic	quoted_def	f. explanation, etymological inter- pretation of words; (in rhetoric) an artificial or poetical explanation of the derivation of a word (e. g. deriving doṣā-kara, ‘the moon,’ from doṣā + ākara instead of doṣā + kara ); = nir-ukta, Yāska's c		
+mw72	38351	yatas	encyclopedic	desc_tok=7_char=236	yatas, ind. (fr. the pronom. base 3. ya; correlative of tatas, q. v., and often used for the ablative or even instrumental cases yasmāt, yebhyas, yasyās, yena, &c. of the relative pronoun yad, but oftener as an adverb or conjunction), from 		
+mw72	10025	izva	residual	crossref_short	m. a spiritual teacher. See īṣva.		
+mw72	28737	pARa	residual	crossref_short	. pāṇa. See col. 3.		
+mw72	53828	svezwa	residual	crossref_short	sveṣṭa. See p. 1158, col. 1.		
+mwe	14412	holy	synonym	syn_list_n=4	, a. puRyaH -RyA -RyaM, puRyavAn -vatI -vat (t), puRyaSIlaH -lA -laM , puRyAtmA -tmA -tma (n), pavitraH -trA -traM, DarmmaSIlaH -lA -laM, SuciH -ciH -ci, SucimanAH -nAH -naH (s), SucivrataH -tA -taM, vimalaH -lA -laM , amalAtmA -tmA -tma (n		
+mwe	15163	impetuous	synonym	syn_list_n=2	, a. vegavAn -vatI -vat (t), vegI -ginI -gi (n), mahAvegaH -gA -gaM, BImavegaH -gA -gaM, udIrRavegaH -gA -gaM, saMramBI -mBiRI -mBi (n), caRqaH -RqA -RqaM, uccaRqaH -RqA -RqaM, tIkzRaH -kzRA -kzRaM, tIkzRa- karmmA -rmmA -rmma (n), amarzI -r		
+mwe	17728	lens	synonym	syn_list_n=6	, s. kAcaH ; ‘a convex lens,’ maDyonnatakAcaH ; ‘a double convex lens,’ yavaH ; ‘a concave lens,’ maDyanimnakAcaH ; ‘a chrystal->crystal 20210422 Dr. Sampada Savardekar https://github.com/sanskrit-lexicon/csl-corrections/issues/61 lens,’ dI		
+mwe	24116	put-off	equivalent	short_tok=0	, s. (An excuse) apadeSaH, vyapadeSaH, Cadma n. (n), CalaM		
+mwe	29300	terrify	equivalent	short_tok=2	, v. a. tras in caus., BI in caus., see To FRIGHTEN.		
+mwe	31467	wine-press	equivalent	short_tok=0	, s. drAkzApezaRayantraM, drAkzApezaRI .		
+mwe	11847	forge	encyclopedic	desc_tok=2_char=78	, v. a. (Metals) taptalohAdi muharAdinA tAqayitvA nAnArUpeRa Gaw (c. 10. Gawayati -yituM ) or kuwilikAyAM vilApya Gaw or nirmA (c. 2. -mAti -tuM ). — (Make) Gaw, nirmA, kxp (c. 10. kalpayati -yituM ), viDA (c. 3. -daDAti -DAtuM ), virac (c.		
+mwe	15672	indifferent	encyclopedic	prefix_or_multisense	, a. (Unconcerned) udAsInaH -nA -naM, udAsI -sinI -si (n), nirutsukaH -kA -kaM, anutsukaH -kA -kaM, viraktaH -ktA -ktaM , nirIhaH -hA -haM, anapekzaH -kzA -kzaM, nirapekzaH -kzA -kzaM, anaBilAzaH -zA -zaM, nirAdaraH -rA -raM, niHspfhaH -hA 		
+mwe	26712	serve	encyclopedic	prefix_or_multisense	, v. a. (Attend upon, act as servant to) sev (c. 1. sevate -vituM , c. 10. sevayati -yituM ), upasev, upAs (c. 2. -Aste -situM ), paryupAs, samupAs, Sru in des. (SuSrUzate -zituM), ASru, pratiSru, upasTA (c. 1. -tizWati -te -sTAtuM ), upaca		
+mwe	10497	extasy	residual	crossref_short	, EXTATIC. See ECSTACY, ECSTATIC.		
+mwe	26177	scepticism	residual	crossref_short	, s. aviSvAsaH, saMSayaH, sandigDamatitvaM , see INFIDELITY.		
+mwe	30135	unaccountable	residual	crossref_short	, See INEXPLICABLE, IRRESPONSIBLE.		
+nmmb	55		synonym	syn_list_n=2	84 vizRu-puM,hari-puM,vanacara-puM,vivAha-puM,vihagaDvaja-puM,SrIparRanayana-puM,SfNgin-puM,BAratImAlikADara-puM vizRurharirvanacaro vivAho vihagaDvajaH . SrIparRanayanaH SfNgI BAratImAlikADaraH .. 35 ..		
+nmmb	351		synonym	syn_list_n=2	552 caturaNgaka-klI 553 hastin-puM 554 aSva-puM 555 raTa-puM 556 pAdAta-puM hastyaSvaraTapAdAtaM balaM syAccaturaNgakam .		
+nmmb	459		synonym	syn_list_n=2	730 daDi-klI,viprapriya-klI,hfdya-klI,SrIGana-puM,kzIraja-klI,Sara-puM daDi viprapriyaM hfdyaM SrIGanaM kzIrajaM SaraH .. 226 ..		
+nmmb	429		equivalent	short_tok=1	688 vanamudga-puM,kuwwa-puM,nigUQa-puM,kulika-puM,Akula-puM,KaRqin-puM vanamudge tu kuwwaH syAnnigUQakulikAkulAH .. 210 ..		
+nmmb	498		equivalent	short_tok=1	792 granTi-puM,banDa-puM 793 vraja-puM,gozWa-klI 794 gozWIna-klI,purAvraja-puM granTirbanDo vrajo gozWaM gozWInaM tu purAvrajaH .. 248 ..		
+nmmb	171		equivalent	short_tok=0	260 BallAtaka-puMklI,BallAtakI-strI,agnimuKI-strI,aruzkara-puM BallAtakyAM triliNgo'yamagnimuKyapyaruzkaraH .. 48 .. ;p 0014		
+nmmb	2		encyclopedic	desc_tok=1_char=70	2 deva-puM,animiza-puM,amartya-puM,nilimpa-puM,amftaBojin-puM,vEmAnika-puM,yajYaBuj-puM,jarAmaraRavarjita-puM,anidra-puM,Kacara-puM,nitya-puM,kanakAcalavAsin-puM devezvanimizAmartyanilimpAmftaBojinaH .. 3 .. vEmAnikA yajYaBujo jarAmaraRavar		
+nmmb	479		encyclopedic	desc_tok=1_char=46	760 saMvAhaka-puM,aNgamarda-puM,deharakzaka-puM 761 Arakzaka-puM,kaNkawin-puM 762 SastramArja-puM,asiDAvaka-puM saMvAhako'NgamardaH syAdaTa dehasya rakzake .. 237 .. ArakzakaH kaNkawI ca SastramArjo'siDAvakaH .		
+nmmb	318		encyclopedic	desc_tok=1_char=88	486 tapana-puM,kumBaputra-puM,agastya-puM,pItasAgara-puM,OrvaSeya-puM,kumBayoni-puM,agasti-puM,vinDyakUwaka-puM,mEtrAvaruRi-puM,Agneya-puM,muni-puM,vAtApisUdana-puM,dakziRASArata-puM,kvATi-puM,anasatya-puM,agnimAruta-puM tapanaH kumBaputraH		
+pe	3472	keSI	synonym	syn_list_n=3	. A follower of Kaṃsa. This Asura, on the in- struction of Kaṃsa, went to Ambāḍi (Gokula) taking the form of a horse. to kill Śrī Kṛṣṇa. Śrī Kṛṣṇa killed Keśī. It is seen in the Bhāgavata (Malayālam) that Śrī Kṛṣṇa got the name Keśava becau		
+pe	3744	kzIrasAgara	synonym	syn_list_n=2	. Sea of Milk. It is mentioned in Mahābhārata, Udyoga Parva, Chapter 102, that Brahmā drank too much of Amṛta and vomited. From the vomit the cow Surabhi came into being. The milk of Surabhi flowed and collected into a sea. This sea is call		
+pe	8233	viBu	synonym	syn_list_n=2	. A King of the family of Bharata. It is mentioned in Bhāgavata, Skandha 5, that he was the son of Prastotā and the father of Pṛthuṣeṇa.		
+pe	1614	citraSilA	equivalent	short_tok=4	. A purāṇic river. The water of this river is used by the Indians for drinking. (Śloka 30, Chapter 9, Bhīṣma Parva).		
+pe	4419	mArutASana	equivalent	short_tok=1	. A soldier of Subrahmaṇya. (Śloka 62, Chapter 45, Śalya Parva).		
+pe	8431	vIrasena	equivalent	short_tok=2	. The father of Nala. It is mentioned in Mahābhārata, Anuśāsana Parva, Chapter 115, Stanza 65, that this King did not eat meat. (For further details see under Damayantī).		
+pe	3796	kumArI	encyclopedic	desc_tok=1_char=12	. Wife of the serpent called Dhanañjaya. (Udyoga Parva, Chapter 117, Verse 17).		
+pe	6526	sOvIrI	encyclopedic	desc_tok=0_char=9	. The wife of King Manasyu, the son of Pravīra and the grandson of emperor Pūru. (Mahā- bhārata, Ādi Parva, Chapter 94, Stanza 5).		
+pe	5899	sahadeva	encyclopedic	desc_tok=5_char=25	. A King in ancient India. He lived in the court of Yama worshipping the latter. (Sabhā Parva, Chapter 3, Verse 17).		
+pe	1882	devavrata	residual	crossref_short	. Bhīṣma (See Bhīṣma for details).		
+pe	3843	kuRqalapuruza	residual	crossref	. See under Sāmudrika Śāstra.		
+pe	4639	mUzikastrI	residual	crossref	. See under Pañcatantra.		
+pgn	377	nOyoga	synonym	syn_list_n=2	Literally meaning ‘a place for parking boats’ it signifies ‘a harbour’. Following are the place-names which have been term- ed as ‘nauyoga’ or harbour.		
+pgn	418	pAwaka	synonym	syn_list_n=7	Literally meaning ‘a splittler->splitter 20210704 Dr. Sampada Savardekar https://github.com/sanskrit-lexicon/csl-corrections/issues/62 or divider’ it means the half or any part, or a kind of village. 473 Pāṭaka is also the name of a land me		
+pgn	353	pradeSa	synonym	syn_list_n=3	Fleet translates it as ‘place’ 161 but the term has a speci- fic use as an administrative division. Here it connotes a divi- sion 162 or may correspond with the word viṣaya used in the same context in the Eraṇ Stone Boar Inscription of Tora		
+pgn	420	pottaka	equivalent	short_tok=6	Pottaka 477 means the site or foundation of a house. It may signify here an inhabitation or locality. We find only one name with the suffix ‘pottaka’ in our inscriptions which is given below:		
+pgn	441	puzkariRI	equivalent	short_tok=8	Puṣkara means a blue lotus so Puṣkariṇī denotes a lotus pool. It also means a lake or pool in general. 523 The names of some localities associated with pokharās or tanks have survived to modern times. Following are the place-names with this		
+pgn	382	vAsaka	equivalent	short_tok=5	It means an abode or inhabitation. 353 An inhabitation can be big or small. In referring to a big inhabitation it denotes a city. Following are the names with this suffix:		
+pgn	221	kIrttivizRu	encyclopedic	desc_tok=2_char=19	(No. 43, L. 8): Kīrtti means fame or glory. The whole will literally mean ‘the glorious Viṣṇu’.		
+pgn	403	lavaNgasikA	encyclopedic	desc_tok=13_char=76	(No. 37, L. 15): It is the name of a village based on the Lavaṅga (Clove) tree. Philologically in Lavaṅgasikā one ‘I’ has been dropped: the original and full form should have been ‘Lavaṅgalasikā’ i. e. ‘where Lavaṅga trees play’.		
+pgn	99	matidatta	encyclopedic	desc_tok=4_char=40	(No. 37, L. 5): It is also a name based on virtue, the first part being ‘mati’ intellect and the second ‘datta’, the whole meaning, ‘begotton by virtue of intellect’.		
+pgn	336	bAhlika	residual	empty_sense_num	569		
+pui	14745	SEbjA	synonym	syn_list_n=2	(Śaibyā- M. P., Vi. P. ), a wife of Kṛṣṇa, and mother of Saṅgrāmajit and other sons. Br. II. 71. 243; M. 47, 13: Vi. V. 32. 3.		
+pui	3545	kfzRANganA	synonym	syn_list_n=2	of Virūpākṣa on the 4th inner slope of Meru; the lord of the s. w. direction. Vā. 34. 87.		
+pui	3875	kzetra	synonym	syn_list_n=2	and Kṣetrajña are Brahmā; the union of these two leads to the eternal being; also aviṣaya and viṣaya. Br. I. 3. 37; Vā. 102. 34-6, 111-14.		
+pui	9614	BAvina	equivalent	short_tok=1	— a caste equal to Śūdra in Plakṣadvīpa. Vi. II. 4. 17.		
+pui	6631	DArzwa	equivalent	short_tok=2	— a race of warriors descended from Dhṛṣṭa; attained Brahmanhood. Bhā. IX. 2. 17.		
+pui	2142	fdviduzI	equivalent	short_tok=0	— a śakti. Br. IV. 44. 85.		
+pui	14007	Satajit	encyclopedic	desc_tok=2_char=54	— a son of Kṛṣṇa and Jāmbavatī (Sudevī ?); 1 got killed in Prabhāsā. 2 [Page3-370+ 26] 1) Bhā. X. 61. 11; Br. III. 71. 25. 2) Bhā. XI. 30. 17.		
+pui	14740	Seza	encyclopedic	prefix_or_multisense	— (Ananta): a tāmasa form of Viṣṇu down below the Pātāla regions; with 1000 jewelled heads, purple garment, white necklace; in his hands are the plough and mace; worshipped by Lakṣmī and Vāruṇī; when the deluge sets in, he vomits venomed fi		
+pui	17092	svAdUdaka	encyclopedic	desc_tok=8_char=103	— (samudra) sea of fresh (sweet- M. P. ) water surrounding Puṣkaradvīpa; 1 beyond it, the land of gold where no creatures live; beyond that lokāloka; ten thousand yojanas in length and breadth; beyond is darkness encircled by aṇḍakaṭaha. 2 		
+pui	845	arcalA	residual	crossref_short	— (see Suvarcalā — Burnouf)		
+pui	6290	devaSravas	residual	crossref	— see Devarātas. M. 145. 113. 198. 7, 9.		
+pui	4947	jaqaBarata	residual	crossref	— see Bharata.		
+pw	202879	OddeSika	synonym	syn_list_n=2	von einem Almosen, das mit specieller Rücksicht auf einen Mönch bereitet wird, ŚĪLĀṄKA.		
+pw	76288	bahuguhA	synonym	syn_list_n=2	f. Solanum jacquini->Solanum jacquinii 20241207 Jim Funderburk, Thomas Malten https://github.com/sanskrit-lexicon/PWK/issues/111 .		
+pw	53751	dvArapakza	synonym	syn_list_n=2	m. Thürflügel, Thür ĀŚV. GṚHY. 4,6,7 .		
+pw	114664	SmaSruvarDaka	equivalent	short_tok=0	m. Bartscheerer .		
+pw	52531	devaSilpa	equivalent	short_tok=2	n. ein Kunstwerk von Götterhand .		
+pw	23890	kadarTIkfti	equivalent	short_tok=2	f. Quälerei HARṢAC. 173,5 .		
+pw	79493	BArahara	encyclopedic	desc_tok=0_char=3	Adj. Subst. = BAravAha 1〉.		
+pw	69669	pfzWaBAga	encyclopedic	desc_tok=5_char=57	m. — 1〉 Rückentheil, Rücken 163,5 — 2〉 Rückseite, hintere Seite HALĀY. 5,6 .		
+pw	89452	yajYakAla	encyclopedic	desc_tok=3_char=26	m. — 1〉 Opferzeit . — 2〉 * der letzte Tag in einem Halbmonat .		
+pw	212821	aryamagfhapati	residual	empty_sense_num	4.		
+pw	218154	divASayyA	residual	empty_sense_num	6.		
+pw	97590.1	vaYcanA	residual	crossref	Lbody=97590		
+pwg	99809	SiSvidAna	synonym	syn_list_n=2	UṆĀDIS. 2,93 . adj. = kfzRakarman oder a˚ AK. 3,1,46 . = kfzRakarman H. 855 . = durAcAra HALĀY. 2,249 .		
+pwg	2957	anurAga	synonym	syn_list_n=3	(von raYj mit anu ) m. Zuneigung ( Gegens. aparAga ) H. 296 . praRAdastu SabdaH syAdanurAgajaH AK. 1,1,5,11 . sTirAnurAga R. 3,3,4 . Das subj. im gen. M. 7,154 . R. 5,19,26 . 66,3 . 6,97,3 . das obj. im loc. : kaRwakitena [Page1-0216] praTa		
+pwg	42893	paripanTitva	synonym	syn_list_n=2	(vom folg. ) n. das den-Weg-Versperren : sidDiparipanTitvAdviparyayASaktituzwayo heyAH Schol. bei WILSON, SĀṂKHYAK. S. 159 .		
+pwg	76548	Darz	equivalent	short_tok=5	mit A am Ende lies anADfz st. anAGfz . — pari vgl. pariDarzaRa; — aBipra vgl. aBipraDarzaRa . — sam Etwas verderben, zu Grunde richten : te prAsEH pariGEH u. s. w. puzpakaM samaDarzanta SUrAH R. 7,21,25 .		
+pwg	85107	rUkzapattra	equivalent	short_tok=2	m. Trophis aspera , = SAKowa RĀJAN. _im_ ŚKDR.		
+pwg	113299	sOrasaMhitA	equivalent	short_tok=2	f. Titel eines Abschnittes im Skandapurāṇa Verz. d. Oxf. H. 84,b,34 .		
+pwg	35500	dvaMdva	encyclopedic	quoted_def	(ein wiederholtes dva ; der Nasal ist Endung des nom. ) n. P. 8,1,15 . 1〉 n. Paar , insbes. Mann und Weib, Männchen und Weibchen , = yugma und miTuna AK. 2,5,38 . 3,4,27,214 . TRIK. 2,5,38 . H. 538 . 1424 . 2,523. fg. MED. v. 10 . VAIJ. bei		
+pwg	108278	sAnasi	encyclopedic	desc_tok=5_char=119	(von 1. san ) UṆĀDIS. 4,107 . adj. Gewinn bringend, erwerbend; Beute machend, siegreich : arvant ṚV. 4,15,6 . 8,91,12 . atya 9,85,5 . 100,4 . 106,2 . raTa 10,63,14 . Indra 8,21,2 . mada 1,175,2 . kratu 10,140,4 . rayi 5 . 1,8,1 . brahman 75		
+pwg	110226	sutrAman	encyclopedic	prefix_or_multisense	adj. wohl beschützend ṚV. 10,63,10 . AV. 18,3,61 . Beiw. und Bein. Indra ʼs AK. 1,1,1,38 ( sU˚ nicht der Text, sondern Rudra zu AK. nach ŚKDR. ?). H. 172 . HALĀY. 1,53 . ṚV. 6,47,12. fg. 10,131,6 . VS. 10,31. fg. 19,85 . 20,33. fg. 35 . TS.		
+pwg	122310	SAkapArTiva	residual	eqn_head	= SAkaBojI pArTivaH PAT. a. a. O. 2,346,b .		
+pwg	76286	dyotiriNgaRa	residual	citation_only	HALĀY. 2,102 .		
+pwg	107118	sarvAtmaka	residual	eqn_head	m. = 1. sarvAtman; ˚kena mit ganzer Seele, von ganzem Herzen BHĀG. P. 1,4,26 .		
+pwkvn	20165	BikzurAkzasa	synonym	syn_list_n=2	m. ein Rākhasa in Mönchsgestalt, ein Teufel von Mönch JĀTAKAM. 23,60 .		
+pwkvn	18173	dIrGay	synonym	syn_list_n=2	, ˚yati lange machen, zögern, Etwas auf die lange Bank schieben R. ed. Bomb. 2,100,19 .		
+pwkvn	21003	vasuDAvilAsin	synonym	syn_list_n=2	m. Fürst, König ŚRĪKAṆṬHAC. 3,18 .		
+pwkvn	871	antrApIqaprakarzin	equivalent	short_tok=3	Adj. heftiges Leibkneifen habend MBH. 6,59,17 .		
+pwkvn	20960	barArDya	equivalent	short_tok=2	ĀPAST. GṚHY. 21,9 fehlerhaft für avarArDya .		
+pwkvn	4415	kalyARakara	equivalent	short_tok=1	Adj. ( f. I ) glückbringend KIR. 3,9 .		
+pwkvn	9507	akUjana	encyclopedic	desc_tok=0_char=14	1. Adj. nicht knarrend (Achse) MBH. 8,37,27 . 68,25 .		
+pwkvn	9331	vaMSaka	encyclopedic	desc_tok=1_char=18	2〉a〉 SUBHĀṢITARATNABHĀṆḌĀGĀRA 27,12 nach AUFRECHT .		
+pwkvn	21182	viBaNgi	encyclopedic	eqn_then_senses	f. = BaNgi 6〉 DHARMAŚARM. 12,58 .		
+pwkvn	16637	KaRqatraya	residual	empty_sense_num	2.		
+pwkvn	11209	anutsAhin	residual	empty_sense_num	1.		
+pwkvn	15882	kalpacUrRi	residual	empty_sense_num	2.		
+sch	5378	avalambanaka	synonym	syn_list_n=2	n. Halt, Stütze, Hemādri 1,191,22. part=,seq=5452,type=,n=2		
+sch	25816	saMnAminI	synonym	syn_list_n=3	Adj. f. sich zu leicht herabsenkend (Wage), Kauṭ. 90,2 v.u. Vgl. J. J. Meyer , S. 132, Anm. 2. part=,seq=26163,type=˚,n=3		
+sch	23597	vASI	synonym	syn_list_n=2	f. ˚eine Art Liane, Kauṭ. 100,4. part=,seq=23926,type=,n=2		
+sch	810	ajavfza	equivalent	short_tok=0	m. Ziegenbock. part=,seq=830,type=,n=1		
+sch	9662	kanakagiri	equivalent	short_tok=0	Name ˚einer Stadt, S I,566,1. part=,seq=9792,type=,n=2		
+sch	17888	parigfdDa	equivalent	short_tok=0	Adj. sehr gierig, Divyāvad. 351,10. part=,seq=18148,type=,n=2		
+sch	2453	anigrahaRasAkzya	encyclopedic	quoted_def	n. ein nicht belastendes Zeugnis (?), Kauṭ. 176,5 in cānigrahaṇasākṣyaṃ, kuryuḥ , MA. Die Übersetzung liest nigrahaṇa˚ "On the side of prosecution... can be witnesses". B cānigraheṇa . part=,seq=2490,type=˚,n=6		
+sch	5702	avIkzita	encyclopedic	desc_tok=0_char=9	Adj. 1. vorher nicht gesehen, Naiṣ. 1,40; 8,12. — 2. nicht erkannt, Spr. 6213. part=,seq=5778,type=,n=3		
+sch	18094	paryAdAna	encyclopedic	desc_tok=1_char=39	n. 1. Verbrauch, Erschöpfung, Ende. Akk. mit gam zu Ende gehen, Mahāvy. 130,33 ; Divyāvad. 4,3; 10,29; 55,2; 100,25. — 2. *etwa Angriff, feindliche Behandlung, Mahāvy. 109,31. part=,seq=18355,type=,n=6		
+sch	3194	anyAyavftti	residual	eqn_head	Adj. = ˚vartin , Daśak. (1925) 2,79,10. part=,seq=3239,type=,n=2		
+sch	11753	kzoBitva	residual	eqn_head	n. = kṣobhayuktatva , Yudh. 3,84. part=,seq=11932,type=˚,n=2		
+sch	26825	surendrAyuDa	residual	eqn_head	n. = Regenbogen, Padyac. V,25 b . part=,seq=27184,type=˚,n=2		
+shs	21379	nATa	synonym	syn_list_n=3	m. ( -TaH ) 1. A master, a lord. 2. A name of ŚIVA, especially in the form of a Linga; it is usually compounded with some word relat- ing to the legendary history of the Linga, as Somanātha, the Linga set up by SOMA, &c. 3. A name adopted b		
+shs	45109	sopAka	synonym	syn_list_n=3	m. ( -kaH ) A man of a degraded caste, the son of a Chāṇḍāla by a Pukkasī female, and only to be employed as a public executioner, &c. E. See SvapAka ; the sibilants being irregularly transposed, va changed to u , and that to the usual Guṇa		
+shs	32328	yakfdAtmikA	synonym	syn_list_n=2	f. ( -kA ) A cock-roach. E. yakft the liver, Atman self, kan aff., fem. form; like it in colour.		
+shs	2201	apAmpitta	equivalent	short_tok=1	n. ( -ttaM ) Fire. E. apAm of water, and pitta bile; drying it up.		
+shs	22783	paca	equivalent	short_tok=0	mfn. ( -caH-cA-caM ) Who or what cooks, matures, &c. m. ( -caH ) Cook- ing, maturing, &c. E. pac to cook, aff. ac .		
+shs	26120	prakzaraRa	equivalent	short_tok=1	n. ( -RaM ) Trickling, oozing.		
+shs	6061	Asura	encyclopedic	desc_tok=10_char=93	mfn. ( -raH-rI-raM ) Infernal, demoniac, belonging or relating to the Asuras. m. ( -raH ) 1. An Asura or demon. 2. A form of marriage, in which the bridegroom gives to the bride, her father and paternal kinsmen, as much as he can afford. n.		
+shs	32286	mrakz	encyclopedic	desc_tok=3_char=34	r. 1st cl. ( mrakzati ) 1. To accumulate. 2. To smear, to anoint. r. 10th cl. ( mrakzayati-te ) 1. To mix. 2. To combine 3. To speak incorrectly.		
+shs	41683	saMvfta	encyclopedic	desc_tok=4_char=54	mfn. ( -taH-tA-taM ) 1. Covered. 2. Closed. 3. Contracted, compress- ed, (as the lips, &c in pronunciation.) 4. Retired, secluded. 5. Sequestered. 6. Filled with. n. ( -taM ) 1. A secret place. 2. A parti- cular mode of pronunciation. E. sa		
+shs	12742	Karjjura	residual	crossref_short	n. ( -raM ) Silver: see KarjjUra .		
+shs	10387	kiYcilika	residual	crossref_short	m. ( -kaH ) See the following.		
+shs	22244	niSSreyasa	residual	crossref_short	n. ( -saM ) Final emancipation: see niHSreyasa .		
+skd	11059	gupa	synonym	syn_list_n=2	, ya ir vyAkulatve . iti kavikalpadrumaH .. (divAM-paraM-akaM sakaYca-sew .) vyAkulatvaM vyAkulIBAvastatkaraRaYca . ya, DIro na gupyati mahatyapi kAryyajAte . iti halAyuDaH . gupyati gA vfzwiH . AkulIkarotItyarTaH . iti catu- rBujaH . ir, a		
+skd	37912	samazWilaH	synonym	syn_list_n=2	, puM, (samaM tizWatIti . sTA + bAhu- lakAt ilac .) kzupaviSezaH . kokuyA iti hindI BAzA . tatparyyAyaH . BaRqIraH 2 nadyAmraH 3 AmraganDakaH 4 kokAgraH 5 kaRwaki- PalaH 6 upadaMSaH 7 . asya guRAH . kawutvam . uzRatvam . rucyatvam . muKaviS		
+skd	31089	vaniH	synonym	syn_list_n=2	, puM, agniH . Kani kazi aji asi vasi sani Dvani granTi valiByaSca . ityanena vana- DAtoH pUrvvAnuvftta-ipratyayena nizpannaH . iti sidDAntakOmudyAmuRAdivfttiH . 4 . 139 ..		
+skd	24982	BAryyAwaH	equivalent	short_tok=2	, puM, (BAryyayA awati varttate iti . awa gatO + padAdyac .) anyArTaM svastrIdAtA . iti trikARqaSezaH ..		
+skd	19992	pawAkaH	equivalent	short_tok=0	, puM, (pawati gacCatIti . paw + nipAtanAt AkaH .) pakziviSezaH . ityuRAdikozaH ..		
+skd	4716	uddanturaH	equivalent	short_tok=1	, tri, (ut atiSayena danturaH .) uttaNgaH . karAlaH . utkawadantaH . iti medinI ..		
+skd	5337	UzaRaM	encyclopedic	quoted_def	, klI, (Uz + lyuw .) maricam . iti hema- candraH .. (maricArTe paryyAyo yaTA, -- “maricaM vellajaM kfzRamUzaRaM Darmmapattanam” .. guRAScAsya maricaSabde jYeyAH .. SuRWI ca . eta- darTe paryyAyo yaTA, -- “SuRWI viSvA ca viSvaYca nAgaraM viS		
+skd	4219	irivellikA	encyclopedic	quoted_def	, strI, mastakodBavavraRajanyapIqAviSezaH . tasya lakzaRam . “piqakAmuttamANgasTAM vfttAmugrarujAjvarAm . sarvvAtmikAM sarvvaliNgAM jAnIyAdirivellikAm” .. iti nidAnam .. cikitsA yaTA . “pEttikasya visarpasya yA cikitsA prakIrttitA . tayEva 		
+skd	37329	sakzAraH	encyclopedic	quoted_def	, tri, lavaRayuktaH . kzAreRa saha varttamAnaH . iti bahuvrIhisamAsanizpannaH .. (yaTA, suSrute . 1 . 45 . “vAtaSlezmaharaM vApyaM sakzAraM kawupittalam ..”)		
+skd	10108.01	KarvvaH	residual	crossref	Lbody=10108		
+skd	39125.01	sinIbAlI	residual	crossref	Lbody=39125		
+skd	23902.01	vakulaH	residual	crossref	Lbody=23902		
+snp	293	kalikA	synonym	syn_list_n=5	Vśs: kalika = vaṃśadhānyabheda; kalikā = vṛścikālī, śarapuṅkhā, hrasvanīlikā; Rā. nigh., pariśiṣṭa 23, tryarthāḥ 19: kalikā = pṛthvīkā.		
+snp	307	kfmiSatru	synonym	syn_list_n=3	Probably = viḍaṅga: Embelia ribes Burm. f. (Kai.Nigh., oṣadhivarga 1147-1148: viḍaṅga = kṛmijit, kṛmihantṛ, kṛmihara, kṛmihṛt, jantughna); however, kṛmighna is also a synonym of kolakanda, palāṇḍu, pāribhadra, bījapūrṇa and bhallātaka.		
+snp	394	mAtuluNgI	synonym	syn_list_n=3	Śivadāsa on Cakradatta, agnimāndya 40 and vātavyādhi 40: = madhukuk- kuṭī, probably identical with madhukarkaṭī.		
+snp	224	lakuca	equivalent	short_tok=2	ARTOCARPUS LAKOOCHA ROXB.		
+snp	376	pippala	equivalent	short_tok=2	Ficus religiosa Linn.		
+snp	114	tAla	equivalent	short_tok=1	BORASSUS FLABELLIFER LINN. = B. FLABELLIFORMIS MURR.		
+snp	171	PaRijJaka	encyclopedic	desc_tok=11_char=183	(1) a) MAJORANA HORTENSIS MOENCH. [Intern. Code] = ORIGANUM MAJORANA LINN. (Bpn, p. 510; HB; KB 3, p. 1985-1986; MW; PW; V 8, p. 39); b) Dn, varga 4, 52: = marubaka = kharapatra = jambīra; Rn, varga 10, 80: = marubaka = kharapatra = gandhap		
+snp	266	hiNgu	encyclopedic	desc_tok=12_char=182	(1) FERULA ASA - FOETIDA LINN. (Ainslie 1, p. 20; Dutt; Gul; HK; Kav; MW; Nadk. 1, nr. 1023; PW; Vśs) = SCORODOSMA FOETIDUM BUNGE (Dy, p. 385-389); (2) F. FOETIDA REGEL (Avk; Bpn, p. 41; Chopra; DWH 2, p. 147- 152: used as a substitute; Nad		
+snp	285	kataka	encyclopedic	desc_tok=4_char=40	Strychnos potatorum Linn. f. (HK; HB; Nadk. 1, nr. 2401; V. 5, p. 131; Sharma; WIRM 10, p. 66; DEP 6, p. 382; Chopra; Bt.; Dutt; KB 3, p. 1647- 1649; Bpn, āmrādiphalavarga 108; Kai. Nigh., oṣadhivarga 1139cd-1140; DWH 2, p. 505-508).		
+snp	320	candraleKA	residual	crossref	= somarājī.		
+snp	201	mahOzaDa	residual	eqn_head	= dried ginger; see ārdraka.		
+snp	402	ramBA	residual	crossref	= kadalī.		
+stc	2340	aparAD	synonym	syn_list_n=2	manquer le but ; commettre une faute, offenser ( gén. ) ; ˚rāddha- qui a manqué le but ; qui a commis une faute envers ( gén. ) ; m. pécheur, coupable.		
+stc	10535	dIpti	synonym	syn_list_n=4	f. lumière, lueur, éclat, splendeur ; -mant- a. revêtu d'éclat, brillant ; m. fils de Kṛṣṇa.		
+stc	9729	jvar	synonym	syn_list_n=3	jvarayati ; jvaryate ; jvarita- -- enfiévrer ; pass. prendre fièvre ; a. v. fiévreux.		
+stc	11208	DIdA	equivalent	short_tok=0	f. fille.		
+stc	3196	aBivezw	equivalent	short_tok=0	caus. couvrir de.		
+stc	20848	saMSradDAya	equivalent	short_tok=1	abs. avec une foi absolue.		
+stc	15929	bAla	encyclopedic	desc_tok=76_char=843	a. jeune, juvénil, enfantin, qui n'est pas entièrement. développé (dit des personnes et des choses) ; nouveau ( not. lune), récent, (astre) récemment levé ; puéril, candide, naïf, niais, bête ; m. enfant, garçon ( not. au-dessous de 5 ans),		
+stc	13664	pApa	encyclopedic	desc_tok=58_char=601	( -ī- ) -ā- a. mauvais, méchant, vicieux ; funeste, de mauvais augure ; m. méchant, pécheur, malfaiteur, misérable ; nt. malheur, mal, mauvaise fortune, péché, faute, crime, vice ; śāntaṃ pāpam que le mal soit écarté (formule d'exorcisme) ;		
+stc	19408	vft	encyclopedic	desc_tok=52_char=461	vartate -ti ; vavarta ( vavṛtuḥ ) vavṛte ; avṛtat ( avṛtsan vartithās ) ; vartsyati -te ; vartayati -te ( vartyate ) varīvṛtyate ; vṛttavartitum ˚vṛtya -- tourner, rouler ; avoir lieu, se produire, s'accomplir ; être ( souv. copule), existe		
+stc	8403	krami	residual	crossref	= kṛmi-.		
+stc	8178	kusUla	residual	crossref	= kuśūla-.		
+stc	18746	vindu	residual	crossref	= bindu-.		
+vcp	11467	kawUtkawa	synonym	syn_list_n=2	na0 kawuzu utkawam . 1 Ardrake ratnamAlA . saMjYA- yAM kan . kawUtkawaka 2 SuRWyAM na0 rAjani0 .		
+vcp	38546	mfgAdanI	synonym	syn_list_n=2	strI mfga ivAdyate ada--karmaRi lyuw . 1 saha- devyAm 2 idravAruRyAm (rAKAlaSaSA) 3 karkowIBede ca rAjani0 .		
+vcp	31755	pApaSamanI	synonym	syn_list_n=2	strI pApaM Samyate'nayA Sama--Ric--karaRe lyuw NIp . 1 SamIvfkze rAjani0 . pApaM Samayati Sami- lyu . 2 pApanivArake tri0 .		
+vcp	45329	samAhfta	equivalent	short_tok=1	tri0 sam + A + hf--kta . 1 saMgfhIte 2 ekatrasTIkfte .		
+vcp	46860	sfpa	equivalent	short_tok=0	gatO BvA0 para0 saka0 aniw . sarpati asfpat . paryudAsAnna zopadeSaH .		
+vcp	23328	tejaskara	equivalent	short_tok=1	tri0 tejaH karoti kf--hetvAdO wa . tejohetO dravye striyAM NIp .		
+vcp	36328	BavizyadAkzepa	encyclopedic	quoted_def	pu0 “satyaM bravImi na tvaM mAM drazwuM vallaBa lapsyase . anyacumbanasaMkrAntalAkzAraktena cakzazA . so'yaM BavizyadAkzepaH prAgevAtimanasrinI . kadAcidaparADo'sya BAvItyevamarunDa yat” . kAvyA- darSokte arTAlaNkAraBede .		
+vcp	40065	lasta	encyclopedic	quoted_def	tri0 lasa--kta ni0 iqamAvaH . 1 Slizwe, krIqite, 2 Silpayukte ca . saMjYAyAM kan . DanurmaDyaBAge pu0 amaraH		
+vcp	23006	tuBa	encyclopedic	quoted_def	hiMsAyAM divA0 kyrA0 ca para0 saka0 sew . tuByati tuBrAti atoBIt . tutoBa “saMkrudDo muzwinAtuBnAda- Ngado'nu mahodaram” “aSvAn viBIzaRo'tumnAt” BawwiH .		
+vcp	13050.1	kAmapatrI	residual	crossref	Lbody=13050		
+vcp	31431.1	pAMsuja	residual	crossref	Lbody=31431		
+vcp	35775.1	vfhadvalka	residual	crossref	Lbody=35775		
+vei	2435	mARqavI	synonym	syn_list_n=4	‘female descendant of Maṇḍu,’ occurs in the name of a teacher, Vātsī-māṇḍavī-putra, in the Bṛhadāraṇyaka Upaniṣad (vi. 4, 30 Mādhyaṃdina).		
+vei	1971	prakrama	synonym	syn_list_n=2	‘stride,’ is mentioned as a measure of distance in the Śatapatha Brāhmaṇa (x. 2, 3, 1 et seq. ), but its exact length in unknown.		
+vei	3627	suvarRa	synonym	syn_list_n=3	‘beautiful coloured,’ is an epithet of gold ( Hiraṇya ), and then comes to be used as a substantive denoting ‘gold.’ ^1) Taittirīya Brāhmaṇa, i. 4, 7, 4; 8, 9, 1, etc. ^2) Av. xv. 1, 2; Taittirīya Brāhmaṇa, iii. 12, 6, 6; Śatapatha Brāhmaṇa		
+vei	461	ElUza	equivalent	short_tok=1	‘descendant of Ilūṣa,’ is the patronymic of Kavaṣa.		
+vei	1759	pAYcajanya	equivalent	short_tok=2	‘relating to the five peoples.’ See Pañcajanāḥ.		
+vei	2100	prozWapada	equivalent	short_tok=0	m., -padā, f. (‘foot of a bench’), is the name of a double Nakṣatra.		
+vei	3228	SARqa	encyclopedic	desc_tok=13_char=75	‘descendant of Śaṇḍa, ’ is the name of a man in the Rigveda 1 who is praised for his generosity. It is not likely that he is identical with Purupanthā mentioned in the next verse. 1) vi. 63, 9. Cf. Ludwig, Translation of the Rigveda, 3, 158		
+vei	881	guNgu	encyclopedic	desc_tok=7_char=55	— The descendants of Guṅgu are referred to as Guṅgus in a hymn of the Rigveda, 1 apparently as friends of Atithigva. Possibly a people may be meant. 1) x. 48, 8. Cf. Ludwig. Translation of the Rigveda, 3, 165.		
+vei	607	kAs	encyclopedic	desc_tok=7_char=145	— All these four forms 1 of the same word denote ‘cough,’ which is mentioned in the Atharvaveda as accompanying a headache, 2 as a symptom in fever ( Takman ), 3 and as an independent disease. 4 1) Kās: Av. i. 12, 3; v. 22, 10; Kāsa: Av. v.		
+vei	313	id	residual	crossref	See Saṃvatsara.		
+vei	1045	jAnapada	residual	crossref	See Janapada.		
+vei	3525	sahojit	residual	crossref	See Jaitrāyaṇa.		
+wil	37585	SatadvAra	synonym	syn_list_n=2	mfn. ( -raH-rA-raM ) Hundred-gated, having a hundred or a number of doors or outlets. E. Sata , and dvAra a door.		
+wil	15734	jaGanya	synonym	syn_list_n=3	mfn. ( -nyaH-nyA-nyaM ) .²1 Last, hindmost. .²2 Low, vile, base. .²3 Worst, vilest, lowest. n. ( -nyaM ) The penis. m. ( -nyaH ) A Śūdra or man of the fourth tribe. E. jaGana the loins, &c. and yat aff.		
+wil	33890	varhis	synonym	syn_list_n=4	m. ( -rhiH ) .²1 Fire. .²2 Light, lustre, splendour. mn. ( -hiH ) .²1 Sacrificial grass, ( Poa cynosuroides .) .²2 Sacrifice, oblation. .²2 Ganṭhiāla , a vegetable perfume. E. vfha to increase, aff. isi , or varha to excel, &c. , with the s		
+wil	21363	nAweya	equivalent	short_tok=0	m. ( -yaH ) The son of an actress. E. nawI , and Qak aff.		
+wil	24009	palASin	equivalent	short_tok=3	m. ( -SI ) .²1 A tree in general. .²2 A goblin. .²3 A sort of Mimusops , ( M. kauki , Rox. ) E. palASa a leaf, ini aff.		
+wil	18225	trOka	equivalent	short_tok=1	( f ) trOkf r. 1st cl. ( trOkate ) To go, to move.		
+wil	2528	aBinirmmukta	encyclopedic	quoted_def	m. ( -ktaH ) One asleep at sun-set. mfn. ( -ktaH-ktA-ktaM ) Left, quitted. E. aBi always, nirmmukta released.		
+wil	20196	dvirukta	encyclopedic	quoted_def	mfn. ( -ktaH-ktA-ktaM ) .²1 Repeated, said twice. .²2 Said or told in two ways. E. dvi , and ukta said.		
+wil	23306	paraBukta	encyclopedic	quoted_def	mfn. ( -ktaH-ktA-ktaM ) Possessed or enjoyed by another. E. para , and Bukta enjoyed.		
+wil	5077	Agur	residual	crossref_short	f. ( -gUH ) An agreement: see AgU .		
+wil	23820	parIramBa	residual	crossref_short	m. ( -mBaH ) An embrace: see pariramBa .		
+wil	7735	uruvUka	residual	crossref_short	m. ( -kaH ) See the preceding.		
+yat	20234	DUrttamaRqala	synonym	syn_list_n=3	(laH) 1. m. A party or as- sembly->OK 20210816 Dr. Sampada Savardekar, jim funderburk https://github.com/sanskrit-lexicon/csl-corrections/issues/73 of rogues or gamblers.		
+yat	26041	pramAdikA	synonym	syn_list_n=3	(kA) 1. f. An imprudent woman; defloured->deflowered 20210816 Dr. Sampada Savardekar, jim funderburk https://github.com/sanskrit-lexicon/csl-corrections/issues/73 girl.		
+yat	26112	prayojaka	synonym	syn_list_n=2	(kaH) 1. m. The original in- stigator of any act, or institutor of any law or ceremony.		
+yat	19458	drAGIyas	equivalent	short_tok=2	(yAn-yasI-yaH) a. Very long.		
+yat	10876	kfb	equivalent	short_tok=2	(na-i) kfRoti 5. a. To hurt; to do; to go; to be in pain.		
+yat	44922	upaDAryya	equivalent	short_tok=0	ind. Taking up.		
+yat	27387	bAleya	encyclopedic	desc_tok=1_char=28	(yaH) 1. m. An ass; a demon; a plant (Siphonanthus Indica). a. Soft; fit for a child, a sacrifice, &c.		
+yat	16244	qip	encyclopedic	desc_tok=0_char=31	(ya, Sa, ka) qipyati, qipati, qepayati 4. 6. 10. a. To throw, send. (ki, i) qimpati, yati 1. 10. a. To collect.		
+yat	17169	tulAkowi	encyclopedic	desc_tok=1_char=24	(wiH-wI) 2. 3. f. An or- nament of the feet; a certain weight; a hundred million.		
+yat	38908	SrutiDara	residual	crossref_short	(raH-rA-raM) a. See SrutaDara .		
+yat	8154	kaRwakIPala	residual	crossref_short	(laH) 1. m. See kaRwakiPala .		
+yat	37040	vlekza	residual	crossref_short	(ka) vlekzayati 1. a. To see.		
