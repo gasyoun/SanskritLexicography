@@ -68,6 +68,166 @@ def explicit_glob_supplied(argv):
     return any(arg == '--glob' or arg.startswith('--glob=') for arg in argv)
 
 
+def load_defect_keys(path):
+    """Load a one-key-per-line defect list (audit requeue.defect.keys.txt format)."""
+    keys = []
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith('#'):
+                continue
+            keys.append(line)
+    return keys
+
+
+def discover_defect_keys_path(glob_pattern, explicit_path=None):
+    """Resolve the defect-keys file for a promote run (H1403 A3 / H1553).
+
+    Order: explicit --defect-keys path; else requeue.defect.keys.txt next to the
+    first matching wf_output under the glob; else pilot/output/requeue.defect.keys.txt.
+    Returns None when no list is discoverable (promote proceeds; log skipped_no_list).
+    """
+    if explicit_path:
+        return explicit_path if os.path.exists(explicit_path) else explicit_path
+    candidates = []
+    paths = sorted(glob.glob(os.path.join(ROOT, glob_pattern))) if glob_pattern else []
+    if paths:
+        candidates.append(os.path.join(os.path.dirname(paths[0]), 'requeue.defect.keys.txt'))
+    candidates.append(os.path.join(ROOT, 'src', 'pilot', 'output', 'requeue.defect.keys.txt'))
+    # also accept the older sibling name used in some docs
+    candidates.append(os.path.join(ROOT, 'src', 'pilot', 'output', 'requeue.keys.defect'))
+    for cand in candidates:
+        if cand and os.path.exists(cand):
+            return cand
+    return None
+
+
+def refuse_defect_keys(incoming_keys, defect_keys, force=False):
+    """Return the sorted intersection of incoming and defect keys.
+
+    Caller must refuse (non-zero exit, no store write) when the set is non-empty
+    and force is False. Empty defect_keys means the guard is inert.
+    """
+    if not defect_keys:
+        return []
+    blocked = sorted(set(incoming_keys) & set(defect_keys))
+    if blocked and force:
+        return []  # force clears the refuse set for the gate (caller still may log)
+    return blocked
+
+
+def clean_keys_from_report(report):
+    """Keys present in a workflow/audit report that are NOT requeue/null/defect."""
+    all_keys = list(report.get('keys') or [])
+    blocked = set(report.get('requeue') or [])
+    blocked |= set(report.get('requeue_defect') or [])
+    blocked |= set(report.get('null_cards') or [])
+    blocked |= set(report.get('requeue_transient') or [])
+    # also accept a positive clean list if the report already computed one
+    if report.get('clean_keys') is not None:
+        return sorted(set(report['clean_keys']))
+    sample = report.get('judge_sample') or {}
+    if sample.get('clean_sample_keys') is not None and report.get('keys'):
+        # clean = all keys minus requeue/null — not just the judge sample
+        pass
+    return sorted(k for k in all_keys if k not in blocked)
+
+
+def promote_ready_partial_clean(lease_or_report, *, dry_run=True, store=None,
+                                gen_model_version=None, review_status='ai_translated',
+                                wf_glob=None, force=False):
+    """Promote only clean keys from a ready_partial audit report (H1403 A3 / H1553).
+
+    Wave-1 fence: default dry_run=True. Production apply requires dry_run=False
+    (CLI --apply). Tests use a fixture store only — never the live pwg_ru store.
+
+    lease_or_report: audit report dict (or a lease-shaped dict with a nested
+    'report' / 'audit_report' key). Returns a result dict describing what would
+    land / what was refused; never writes when dry_run is True.
+    """
+    report = lease_or_report
+    if isinstance(lease_or_report, dict) and 'report' in lease_or_report and 'keys' not in lease_or_report:
+        report = lease_or_report['report']
+    elif isinstance(lease_or_report, dict) and 'audit_report' in lease_or_report:
+        report = lease_or_report['audit_report']
+
+    clean = clean_keys_from_report(report or {})
+    defect = list((report or {}).get('requeue_defect') or [])
+    result = {
+        'schema': 'pwg_ru.ready_partial_promote.v1',
+        'dry_run': bool(dry_run),
+        'clean_keys': clean,
+        'defect_keys': sorted(defect),
+        'promoted_keys': [],
+        'refused_defect_keys': [],
+        'store': store,
+        'status': 'dry_run' if dry_run else 'pending',
+    }
+    if not clean:
+        result['status'] = 'no_clean_keys'
+        return result
+
+    # Defect intersection among clean should be empty by construction; belt-and-braces.
+    blocked = refuse_defect_keys(clean, defect, force=force)
+    if blocked and not force:
+        result['refused_defect_keys'] = blocked
+        result['status'] = 'refused_defect'
+        return result
+
+    if dry_run:
+        result['promoted_keys'] = list(clean)
+        result['status'] = 'dry_run_ok'
+        return result
+
+    if not store:
+        result['status'] = 'error_no_store'
+        return result
+    if not gen_model_version:
+        result['status'] = 'error_no_model_version'
+        return result
+
+    # Apply path: filter a wf_output glob to clean keys and write via the normal
+    # merge path. Callers (wave-1) should not reach here against the live store.
+    paths = sorted(glob.glob(wf_glob)) if wf_glob else []
+    if not paths:
+        result['status'] = 'error_no_wf'
+        return result
+    best, conflicts, _null = collect_cards(paths)
+    if conflicts:
+        result['status'] = 'error_conflicts'
+        result['conflicts'] = conflicts
+        return result
+    clean_set = set(clean)
+    selected = {k: v for k, v in best.items() if k in clean_set}
+    rows = []
+    for subkey, entry in sorted(selected.items()):
+        validate_promotion_entry(subkey, entry)
+        for row in rows_for(subkey, entry, review_status, gen_model_version):
+            rows.append(row)
+    if not rows:
+        result['status'] = 'error_no_rows'
+        return result
+    existing_rows = []
+    if os.path.exists(store):
+        with open(store, encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    existing_rows.append(json.loads(line))
+    rows_to_write, downgraded = merge_store_rows(existing_rows, rows)
+    claim_cm = PromoteClaim(store)
+    with claim_cm:
+        if os.path.exists(store):
+            bak = _backup_path(store, True)
+            _fsynced_backup(store, bak)
+        _atomic_write_rows(store, rows_to_write)
+    result['promoted_keys'] = sorted(selected)
+    result['downgraded'] = downgraded
+    result['rows_written'] = len(rows_to_write)
+    result['status'] = 'applied'
+    return result
+
+
 def load_wf(path):
     with open(path, encoding='utf-8') as f:
         wrapper = json.load(f)
@@ -950,6 +1110,71 @@ def selftest():
         assert 'better attempt' in str(exc)
     assert open(bstore, 'rb').read() == bytes1, 'downgrade bundle must leave the store unchanged'
     print('batch promotion: 2-lease transaction, idempotent+byte-stable, all-or-nothing OK')
+
+    # H1553 / H1403 A3: defect-key refusal + ready_partial clean-subset (temp store only).
+    ddef = tempfile.mkdtemp()
+    defect_list = os.path.join(ddef, 'requeue.defect.keys.txt')
+    with open(defect_list, 'w', encoding='utf-8') as f:
+        f.write('bad~~key\n')
+        f.write('p_a~~h5_00_pwg00\n')
+    assert load_defect_keys(defect_list) == ['bad~~key', 'p_a~~h5_00_pwg00']
+    blocked = refuse_defect_keys(
+        ['p_a~~h5_00_pwg00', 'ok~~key'], ['p_a~~h5_00_pwg00', 'other'], force=False)
+    assert blocked == ['p_a~~h5_00_pwg00'], blocked
+    assert refuse_defect_keys(['p_a~~h5_00_pwg00'], ['p_a~~h5_00_pwg00'], force=True) == []
+    assert refuse_defect_keys(['ok~~key'], ['p_a~~h5_00_pwg00'], force=False) == []
+    assert refuse_defect_keys(['ok~~key'], [], force=False) == []
+
+    tstore = os.path.join(ddef, 'store.jsonl')
+    # seed one row so apply has a merge target
+    with open(tstore, 'w', encoding='utf-8') as f:
+        f.write(json.dumps({
+            'key1': 'keep', 'subcard': 'y~~keep', 'h': 'y', 'sense_tag': '1',
+            'de': 'x', 'ru': 'y', 'review_status': 'ai_translated',
+            'layer': 'pwg', 'provenance': {},
+        }, ensure_ascii=False) + '\n')
+    clean_report = {
+        'keys': ['p_a~~h5_00_pwg00', 'bad~~key'],
+        'requeue': ['bad~~key'],
+        'requeue_defect': ['bad~~key'],
+        'null_cards': [],
+        'requeue_transient': [],
+    }
+    dry = promote_ready_partial_clean(clean_report, dry_run=True, store=tstore)
+    assert dry['status'] == 'dry_run_ok' and dry['clean_keys'] == ['p_a~~h5_00_pwg00'], dry
+    assert dry['promoted_keys'] == ['p_a~~h5_00_pwg00']
+    # refuse when clean somehow intersects defect
+    dirty_report = {
+        'keys': ['p_a~~h5_00_pwg00'],
+        'requeue': [],
+        'requeue_defect': ['p_a~~h5_00_pwg00'],
+        'null_cards': [],
+    }
+    # clean_keys_from_report excludes defect → no_clean_keys
+    empty = promote_ready_partial_clean(dirty_report, dry_run=True, store=tstore)
+    assert empty['status'] == 'no_clean_keys', empty
+    # force path still dry-runs without writing
+    force_dry = promote_ready_partial_clean(
+        clean_report, dry_run=True, store=tstore, force=True)
+    assert force_dry['status'] == 'dry_run_ok'
+    before = open(tstore, 'rb').read()
+    # apply with a real wf file for the clean key only
+    wf_clean = os.path.join(ddef, 'wf_output.clean.json')
+    with open(wf_clean, 'w', encoding='utf-8') as f:
+        json.dump({'meta': meta, 'results': [
+            {'key': 'p_a~~h5_00_pwg00', 'card': entry['card']}]}, f)
+    applied = promote_ready_partial_clean(
+        clean_report, dry_run=False, store=tstore,
+        gen_model_version=SELFTEST_MODEL_VERSION, wf_glob=wf_clean)
+    assert applied['status'] == 'applied', applied
+    assert 'p_a~~h5_00_pwg00' in applied['promoted_keys']
+    after = open(tstore, 'rb').read()
+    assert after != before and b'pA' in after or b'p_a' in after or b'\xd0' in after, \
+        'applied promote must land rows in the temp store'
+    # dry-run must not have been the writer for the earlier check — re-assert fence
+    dry2 = promote_ready_partial_clean(clean_report, dry_run=True, store=tstore)
+    assert dry2['status'] == 'dry_run_ok'
+    print('H1553 defect refusal + ready_partial clean-subset (temp store) OK')
     print('promote_final_cards selftest OK')
 
 
@@ -968,7 +1193,9 @@ def main():
                     help='explicitly initialize a missing store (first run only)')
     ap.add_argument('--no-backup', action='store_true')
     ap.add_argument('--force', action='store_true',
-                    help='bypass the >50%%-shrink overwrite guard (only for a deliberate full rebuild)')
+                    help='bypass the >50%%-shrink overwrite guard AND the defect-key refusal '
+                         '(H1403 A3 / H1553). Only for a deliberate full rebuild or known-good '
+                         'override of requeue.defect.keys.txt.')
     ap.add_argument('--merge', action='store_true',
                     help='MERGE into the existing store by SUB-CARD: replace only the sub-cards '
                          'present in THIS run, keep every other row (including a root\'s already-'
@@ -988,6 +1215,18 @@ def main():
                          'same per-entry validation as single mode, better-attempt-wins, '
                          'one backup, one atomic replace, all-or-nothing.')
     ap.add_argument('--report', help='write the batch per-lease report JSON here')
+    ap.add_argument('--defect-keys',
+                    help='H1553: path to a one-key-per-line defect list (audit '
+                         'requeue.defect.keys.txt). When omitted, auto-discovers that file next '
+                         'to the wf_output glob or under src/pilot/output/. Incoming keys in the '
+                         'list are REFUSED unless --force.')
+    ap.add_argument('--ready-partial-report',
+                    help='H1553: path to an audit report JSON; promote only clean keys '
+                         '(ready_partial clean-subset). Default is dry-run; pass --apply to write '
+                         '(still uses --store; wave-1 agents must not target the live store).')
+    ap.add_argument('--apply', action='store_true',
+                    help='with --ready-partial-report: actually write the clean subset '
+                         '(default is dry-run only)')
     args = ap.parse_args()
     if args.batch_manifest:
         # H1386 D5: flags the batch transaction does not implement are REFUSED, never
@@ -1009,6 +1248,26 @@ def main():
         except ClaimBusy as e:
             sys.exit(str(e))
         return report
+
+    if args.ready_partial_report:
+        try:
+            with open(args.ready_partial_report, encoding='utf-8') as f:
+                rp_report = json.load(f)
+        except (OSError, json.JSONDecodeError) as e:
+            sys.exit('REFUSED: cannot load --ready-partial-report: %s' % e)
+        result = promote_ready_partial_clean(
+            rp_report, dry_run=not args.apply, store=args.store,
+            gen_model_version=args.gen_model_version,
+            review_status=args.review_status,
+            wf_glob=os.path.join(ROOT, args.glob) if args.glob else None,
+            force=args.force)
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        if result.get('status') in ('refused_defect', 'error_no_store',
+                                    'error_no_model_version', 'error_no_wf',
+                                    'error_conflicts', 'error_no_rows'):
+            sys.exit(2)
+        return result
+
     if args.merge and not explicit_glob_supplied(sys.argv[1:]):
         sys.exit(
             'refusing --merge with the implicit broad glob %r; pass --glob explicitly '
@@ -1030,6 +1289,32 @@ def main():
         sys.exit('no wf_output files matched %s under %s' % (args.glob, ROOT))
     print('ingesting %d wf_output file(s)' % len(paths))
     best, conflicts, null_keys = collect_cards(paths)
+
+    # H1553 / H1403 A3: refuse keys the latest audit marked as content defect
+    # (H255_NO_PWG_W02 promote-then-revert footgun). Fail closed only when a list
+    # is discoverable; no list → proceed with a loud skipped_no_list note.
+    defect_path = discover_defect_keys_path(args.glob, args.defect_keys)
+    defect_keys = []
+    if args.defect_keys and not os.path.exists(args.defect_keys):
+        sys.exit('REFUSED: --defect-keys path does not exist: %s' % args.defect_keys)
+    if defect_path and os.path.exists(defect_path):
+        defect_keys = load_defect_keys(defect_path)
+        print('defect_guard: loaded %d key(s) from %s' % (len(defect_keys), defect_path))
+    else:
+        print('defect_guard: skipped_no_list')
+    blocked = refuse_defect_keys(list(best.keys()), defect_keys, force=False)
+    if blocked and not args.force:
+        sys.exit(
+            'REFUSED: %d incoming key(s) are on the defect list (H1403 A3 / H1553). '
+            'Re-translate or pass --force to override. Keys: %s'
+            % (len(blocked), ', '.join(blocked[:20])
+               + (' …' if len(blocked) > 20 else '')))
+    if blocked and args.force:
+        print('defect_guard: --force overrides %d defect key(s): %s'
+              % (len(blocked), ', '.join(blocked[:10])
+                 + (' …' if len(blocked) > 10 else '')))
+    elif defect_keys and not blocked:
+        print('defect_guard: no intersection with incoming keys')
 
     rows, per_root = [], {}
     for subkey, entry in sorted(best.items()):

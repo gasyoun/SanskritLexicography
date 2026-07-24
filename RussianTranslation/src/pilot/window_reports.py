@@ -94,19 +94,98 @@ def build_judge_sample(report, rate, minimum, seed=None):
     }
 
 
-def build_production_metrics(args):
+def parse_generated_at(value):
+    """Parse meta.generated_at (ISO-8601, optional trailing Z) to aware UTC datetime.
+
+    Returns None on missing/unparseable values — never invents a timestamp.
+    """
+    if not value or not isinstance(value, str):
+        return None
+    text = value.strip()
+    if not text:
+        return None
+    if text.endswith('Z'):
+        text = text[:-1] + '+00:00'
+    try:
+        dt = datetime.datetime.fromisoformat(text)
+    except ValueError:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=datetime.timezone.utc)
+    return dt.astimezone(datetime.timezone.utc)
+
+
+def derive_wall_clock_minutes(wf_path, meta, cli_value):
+    """Resolve wall-clock minutes for the production-metrics ledger (H1403 A2 / H1553).
+
+    Priority:
+      1. Explicit CLI ``--wall-clock-minutes`` → (value, "cli")
+      2. mtime(wf_output) - parse(meta.generated_at) when both exist and delta > 0
+         → (minutes, "derived_mtime")
+      3. Else → (None, "unavailable") — never invent tokens or a wrong number.
+
+    Caveat (H1403): generated_at is harness-generation time, so derived_mtime
+    can conflate generation wall with operator idle. Callers stamp wall_clock_source
+    so later stage_boundary events can separate the phases.
+    """
+    if cli_value is not None:
+        try:
+            minutes = float(cli_value)
+        except (TypeError, ValueError):
+            return None, 'unavailable'
+        if minutes < 0 or minutes != minutes:  # NaN
+            return None, 'unavailable'
+        return minutes, 'cli'
+
+    meta = meta or {}
+    generated = parse_generated_at(meta.get('generated_at'))
+    if generated is None or not wf_path:
+        return None, 'unavailable'
+    try:
+        mtime = os.path.getmtime(wf_path)
+    except OSError:
+        return None, 'unavailable'
+    end = datetime.datetime.fromtimestamp(mtime, tz=datetime.timezone.utc)
+    delta_sec = (end - generated).total_seconds()
+    if delta_sec <= 0:
+        return None, 'unavailable'
+    return round(delta_sec / 60.0, 3), 'derived_mtime'
+
+
+def build_production_metrics(args, wf_path=None, workflow_meta=None):
+    """Build production_metrics for the audit report / ledger.
+
+    When ``args.wall_clock_minutes`` is omitted, auto-derives from wf mtime and
+    meta.generated_at (H1403 A2). Always stamps ``wall_clock_source`` so a missing
+    number is distinguishable from "operator never passed the flag".
+    """
+    wall_minutes, wall_source = derive_wall_clock_minutes(
+        wf_path, workflow_meta, getattr(args, 'wall_clock_minutes', None))
     fields = {
-        'wall_clock_minutes': args.wall_clock_minutes,
-        'max_input_tokens': args.max_input_tokens,
-        'max_output_tokens': args.max_output_tokens,
-        'max_cache_read_tokens': args.max_cache_read_tokens,
-        'max_cache_create_tokens': args.max_cache_create_tokens,
-        'max_total_tokens': args.max_total_tokens,
-        'weekly_cap_fired': args.weekly_cap_fired,
-        'weekly_cap_cumulative_tokens': args.weekly_cap_cumulative_tokens,
-        'notes': args.metrics_note,
+        'wall_clock_minutes': wall_minutes,
+        'wall_clock_source': wall_source,
+        'max_input_tokens': getattr(args, 'max_input_tokens', None),
+        'max_output_tokens': getattr(args, 'max_output_tokens', None),
+        'max_cache_read_tokens': getattr(args, 'max_cache_read_tokens', None),
+        'max_cache_create_tokens': getattr(args, 'max_cache_create_tokens', None),
+        'max_total_tokens': getattr(args, 'max_total_tokens', None),
+        'weekly_cap_fired': getattr(args, 'weekly_cap_fired', False) or None,
+        'weekly_cap_cumulative_tokens': getattr(args, 'weekly_cap_cumulative_tokens', None),
+        'notes': getattr(args, 'metrics_note', None),
     }
-    return {key: value for key, value in fields.items() if value not in (None, '')}
+    # Always keep wall_clock_source (even when minutes is null); drop other empties.
+    out = {}
+    for key, value in fields.items():
+        if key == 'wall_clock_source':
+            out[key] = value
+        elif value not in (None, ''):
+            out[key] = value
+    # surface null wall_clock_minutes when source is unavailable so the ledger is explicit
+    if wall_minutes is None:
+        out['wall_clock_minutes'] = None
+    else:
+        out['wall_clock_minutes'] = wall_minutes
+    return out
 
 
 def next_action_for(state, report, pending):
