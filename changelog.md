@@ -14,6 +14,23 @@ not an error.
 
 ## [Unreleased]
 
+## [1.60.0] — 2026-07-24
+
+### Added
+
+- **H1618 unpaid four tracks (pwg_ru control plane).** Offline multi-profile
+  [`cohort_engine.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/cohort_engine.py)
+  (7/7 fake-worker pins); C-49
+  [`no_pwg_residual_ledger.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/no_pwg_residual_ledger.py)
+  + residual backfill; FEATURES_INDEX **L11**.
+
+### Fixed
+
+- **max-agents starvation footgun (H1610 forensics → H1618 guard).** `--max-agents N` is a
+  total spawn ceiling; multi-key `N < selected_keys` is refused before paid calls; soft
+  selfheal stamps no longer clobber `budget_exceeded*` notes. Ledger stamps
+  translate/heal/`budget_stops`. EN audit wires wall_clock metrics + defect fsha emit.
+
 ## [1.59.0] — 2026-07-24
 
 ### Added

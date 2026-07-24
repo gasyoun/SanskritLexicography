@@ -41,7 +41,7 @@ Unblocks safe, measured operation and a single navigation hub. **No paid gen, no
 | Pubgrade TM + oral | [PLAN_…_pubgrade_tm_oral…](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_pubgrade_tm_oral_2026H2.md) | Tracks A/B/C as already ruled; nothing auto-publishes |
 | Sa→Ru gloss W3–W4 | [PLAN_…_saru-gloss…](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_saru-gloss-quality_2026H2.md) | No published-data rewrite without human GO |
 | Editorial apply | Track D machinery + MG votes on H1303/H1306/h178/Renou/H180 | Apply only after `decisions.json` present |
-| Cohort multi-profile | [H1437](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1437-Fable_RussianTranslation_bounded-wave-barrier-promotion-ledger_21.07.26.md) | Fable + Codex phase gates; offline until P0 proven |
+| Cohort multi-profile | [H1437](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1437-Fable_RussianTranslation_bounded-wave-barrier-promotion-ledger_21.07.26.md) | **Phase 0 GREEN offline** via H1618 (`cohort_engine.py` 7/7 pins + admitted-fleet parked guard). Live CLI width>1 still H1437 Phases 2–3 |
 
 ## Stale-audit map (cold-start filter)
 

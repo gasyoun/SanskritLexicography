@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.60.0] - 2026-07-24
+
 ### Fixed — H1618 unpaid four tracks (max-agents guard, cohort engine, C-49 residuals, LANG_PARITY)
 
 - **Track 1 (H1610 structural):** `headless_worker.note(..., preserve=True)` for
