@@ -234,6 +234,14 @@ def append_ledger(status, out_dir=None):
         # rates (the Fable-vs-Sonnet A/B) computable straight off the ledger.
         'gen_model': (status.get('workflow_meta') or {}).get('gen_model'),
         'production_metrics': status.get('production_metrics'),
+        # H1618: agent-lane telemetry from headless summary (translate/heal spent +
+        # budget_stops/kill/conn). Was on wf_output.summary only; ledger rows stayed
+        # open-loop for the H1403 "instrumentation blindness" bottleneck.
+        'translate_agents_spent': status.get('translate_agents_spent'),
+        'heal_agents_spent': status.get('heal_agents_spent'),
+        'budget_stops': status.get('budget_stops'),
+        'kill_timeouts': status.get('kill_timeouts'),
+        'conn_errors': status.get('conn_errors'),
         'crashed': status.get('crashed'),
         'rootmap_sha256': status.get('rootmap_sha256'),
     }

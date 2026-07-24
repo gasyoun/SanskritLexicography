@@ -538,13 +538,25 @@ def make_run_window(ctx):
             if pending:
                 now_ts = int(time.time())
                 db = mao.connect(ctx.db)
-                runnable = db.execute(
-                    "SELECT count(*) FROM accounts WHERE validated=1 AND parked_until<=?",
-                    (now_ts,)).fetchone()[0]
+                # H1437 / audit P1#10: the pre-dispatch parked guard must count only the
+                # ADMITTED fleet (probe_latencies), never a healthy EXCLUDED account.
+                admitted = set(ctx.probe_latencies or {})
+                if admitted:
+                    qmarks = ','.join('?' * len(admitted))
+                    runnable = db.execute(
+                        "SELECT count(*) FROM accounts WHERE validated=1 AND "
+                        "parked_until<=? AND name IN (%s)" % qmarks,
+                        (now_ts, *sorted(admitted))).fetchone()[0]
+                else:
+                    runnable = db.execute(
+                        "SELECT count(*) FROM accounts WHERE validated=1 AND "
+                        "parked_until<=?",
+                        (now_ts,)).fetchone()[0]
                 db.close()
                 if not runnable:
-                    raise SystemExit('bounded_staged_run: lease %s pending but all accounts '
-                                     'parked — rerun with --resume after the reset' % lease_id)
+                    raise SystemExit(
+                        'bounded_staged_run: lease %s pending but all admitted accounts '
+                        'parked — rerun with --resume after the reset' % lease_id)
                 mao.cmd_run_once(argparse.Namespace(
                     db=ctx.db, timeout=ctx.timeout, events=ctx.events, run_id=ctx.run_id,
                     claude_bin=ctx.claude_bin, only_accounts=set(ctx.probe_latencies),

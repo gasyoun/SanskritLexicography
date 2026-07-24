@@ -65,9 +65,17 @@ import json
 import os
 import re
 import sys
+from types import SimpleNamespace
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
+
+# H1618 LANG_PARITY: reuse RU wall-clock / production_metrics helpers (pure, lang-agnostic).
+try:
+    from window_reports import build_production_metrics
+except ImportError:  # pragma: no cover — same dir on PYTHONPATH when run as script
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from window_reports import build_production_metrics
 
 HERE = os.path.dirname(os.path.abspath(__file__))          # .../src/pilot
 SRC = os.path.dirname(HERE)                                # .../src
@@ -388,6 +396,12 @@ def main():
                     help='MW translation-memory JSON for the soft cross-check (default: src/mw_en_tm.json)')
     ap.add_argument('--no-mw', action='store_true', help='skip the MW divergence cross-check')
     ap.add_argument('--report', help='write the machine-readable JSON report to this path')
+    ap.add_argument('--wall-clock-minutes', type=float, default=None,
+                    help='H1618/H1553: optional wall-clock for production_metrics '
+                         '(else derived from wf mtime - meta.generated_at when possible)')
+    ap.add_argument('--write-requeue', action='store_true',
+                    help='H1618/H304: when --report is set, also write requeue.defect.keys.txt '
+                         '+ requeue.defect.fshas.txt beside the report (EN denylist parity)')
     args = ap.parse_args()
 
     paths = []
@@ -480,15 +494,70 @@ def main():
     if crashed_files:
         strict_reasons.append('%d crashed sense-dupe gate(s)' % len(crashed_files))
 
+    # H1618 LANG_PARITY h1553/h304: production_metrics + defect fsha surface for EN.
+    primary_wf = paths[0] if paths else None
+    wf_meta = {}
+    if primary_wf and os.path.exists(primary_wf):
+        try:
+            wf_meta = (json.load(open(primary_wf, encoding='utf-8')).get('meta') or {})
+        except (OSError, json.JSONDecodeError):
+            wf_meta = {}
+    metrics_args = SimpleNamespace(
+        wall_clock_minutes=args.wall_clock_minutes,
+        max_cache_read_tokens=None, max_cache_create_tokens=None,
+        max_output_tokens=None, max_total_tokens=None,
+        weekly_cap_fired=False, weekly_cap_cumulative_tokens=None,
+    )
+    production_metrics = build_production_metrics(
+        metrics_args, wf_path=primary_wf, workflow_meta=wf_meta)
+
+    # H304 twin: defect cards' frag_prov fshas so requeue_from_audit --lang=en can denylist.
+    requeue_defect = sorted(hard_keys)
+    requeue_defect_fshas = []
+    if requeue_defect and paths:
+        defect_set = set(requeue_defect)
+        seen_f = set()
+        for path in paths:
+            try:
+                data = json.load(open(path, encoding='utf-8'))
+            except (OSError, json.JSONDecodeError):
+                continue
+            for res in find_results(data) or []:
+                if not res or res.get('key') not in defect_set:
+                    continue
+                for fp in ((res.get('card') or {}).get('frag_prov') or []):
+                    fsha = fp.get('fsha')
+                    if fsha and fsha not in seen_f:
+                        seen_f.add(fsha)
+                        requeue_defect_fshas.append(fsha)
+        requeue_defect_fshas.sort()
+
     if args.report:
         os.makedirs(os.path.dirname(os.path.abspath(args.report)), exist_ok=True)
         rep = {'totals': totals, 'flag_counts': flag_counts,
                'hard_keys': sorted(hard_keys), 'null_keys': null_keys,
                'crashed_files': crashed_files, 'strict_reasons': strict_reasons,
+               'requeue_defect': requeue_defect,
+               'requeue_defect_fshas': requeue_defect_fshas,
+               'production_metrics': production_metrics,
                'files': per_file}
         with open(args.report, 'w', encoding='utf-8') as f:
             json.dump(rep, f, ensure_ascii=False, indent=1)
         print('report json  : %s' % args.report)
+        if args.write_requeue:
+            out_dir = os.path.dirname(os.path.abspath(args.report))
+            defect_keys = os.path.join(out_dir, 'requeue.defect.keys.txt')
+            defect_fshas = os.path.join(out_dir, 'requeue.defect.fshas.txt')
+            with open(defect_keys, 'w', encoding='utf-8', newline='\n') as f:
+                f.write('\n'.join(requeue_defect) + ('\n' if requeue_defect else ''))
+            with open(defect_fshas, 'w', encoding='utf-8', newline='\n') as f:
+                f.write('\n'.join(requeue_defect_fshas) + ('\n' if requeue_defect_fshas else ''))
+            print('requeue defect: %s (%d keys, %d fsha)' %
+                  (defect_keys, len(requeue_defect), len(requeue_defect_fshas)))
+    if production_metrics:
+        src = production_metrics.get('wall_clock_source')
+        print('wall_clock   : %s (source=%s)' %
+              (production_metrics.get('wall_clock_minutes'), src))
 
     if args.strict and strict_reasons:
         print('STRICT FAIL   : %s' % '; '.join(strict_reasons))

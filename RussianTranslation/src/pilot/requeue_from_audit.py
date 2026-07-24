@@ -156,6 +156,9 @@ def main():
     ap.add_argument('--profile-slot')
     ap.add_argument('--config-dir')
     ap.add_argument('--executor-lane', default='serial-whole-card')
+    ap.add_argument('--no-residual', action='store_true',
+                    help='H1618: do not append defect keys to no_pwg_residuals.jsonl '
+                         '(default for --defect is to record them as blocked residuals)')
     args = ap.parse_args()
     which = 'transient' if args.transient else 'defect' if args.defect else 'all'
     lang = args.lang
@@ -191,6 +194,28 @@ def main():
     fsha_file = cand if os.path.exists(cand) else None
     denied, denied_frags = append_tm_denylist(root, resolved, which, lang=lang,
                                               fsha_file=fsha_file)
+
+    # H1618 / C-49: when building a defect requeue, also stamp the residual registry so
+    # no_pwg_scale_plan (and any residual-aware planner) will not re-select these keys
+    # as fresh work after a second documented failure. Transient requeues stay off the
+    # residual list (they are cheap retries, not blocked).
+    residual_n = 0
+    if which == 'defect' and not args.no_residual:
+        try:
+            import no_pwg_residual_ledger as residual_ledger
+            report_path = os.path.join(fsha_dir, 'audit_window.report.json')
+            if os.path.exists(report_path):
+                residual_n, _ = residual_ledger.append_from_audit_report(
+                    report_path, source_window=args.window_tag or root)
+            else:
+                for key in resolved:
+                    if residual_ledger.append_residual(
+                            residual_ledger.RESIDUALS, key,
+                            reason='defect requeue via requeue_from_audit',
+                            source_window=args.window_tag or root):
+                        residual_n += 1
+        except Exception as exc:  # noqa: BLE001 — residual is best-effort; denylist already done
+            print('residual registry : skip (%s)' % exc, file=sys.stderr)
 
     cmd = [sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'),
            root, '--keys=' + ','.join(resolved)]
@@ -231,6 +256,8 @@ def main():
         print('tm denylist       : +%d card address(es)' % denied)
     if denied_frags:
         print('tm denylist       : +%d fragment fsha(s)' % denied_frags)
+    if residual_n:
+        print('residual registry : +%d blocked key(s)' % residual_n)
     print('generated harness : %s' % harness)
     if args.manifest_out:
         print('execution manifest: %s' % os.path.abspath(args.manifest_out))

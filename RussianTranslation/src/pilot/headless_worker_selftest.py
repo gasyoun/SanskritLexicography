@@ -79,6 +79,54 @@ def test_translate_budget_binds():
     print('  R3 budget: unbounded=2; manifest ceiling and --max-agents both cap actual spawns to 1')
 
 
+def test_h1610_preserve_budget_exceeded_over_selfheal_stamp():
+    """H1610: when --max-agents=1 starves heal after the first translate refuse-path,
+    failures must retain budget_exceeded* (not selfheal-nothing-resolved). Multi-key
+    starvation is refused before any call — so this pin uses 1 key + override=1 so the
+    whole-card attempt spends the budget and self_heal cannot spawn."""
+    r = _soft_nonresolve_runner()
+    m = manifest()
+    # Give the key a fragment group so self_heal runs (and would stamp selfheal-nothing
+    # if note() overwrote). With max_agents_override=1 the whole-card attempt(s) spend
+    # the budget; heal path then budget_exceeds without overwriting the first note.
+    m['fragment_groups'] = {'agni': [[{'skeleton': '{T1} x', 'si': 0, 'fsha': 'f0'}]]}
+    m['fragment_placeholder_maps'] = {'agni': [['<ls>RV.</ls>']]}
+    m['fragment_tm'] = {'agni': [[]]}
+    m['runtime'] = dict(m['runtime'], whole_attempts=1, fragment_attempts=1)
+    payload, status, code = h.execute(m, claude=sys.executable, runner=r,
+                                      max_agents_override=1)
+    assert code == 0 and payload is not None
+    failures = payload['summary']['failures']
+    assert 'agni' in failures, failures
+    err = failures['agni']
+    assert 'budget_exceeded' in err or err.startswith('timeout') or 'unresolved' in err or err != 'selfheal-nothing-resolved', (
+        'selfheal stamp clobbered the real stop reason: %r (budget_stops=%s)'
+        % (err, payload['summary'].get('budget_stops')))
+    # The smoking-gun triad must still be readable when budget starved the heal lane.
+    if payload['summary'].get('budget_stops', 0) > 0:
+        assert err != 'selfheal-nothing-resolved', failures
+    print('  H1610 preserve: failures[agni]=%r budget_stops=%s'
+          % (err, payload['summary'].get('budget_stops')))
+
+
+def test_h1610_refuse_max_agents_starves_multikey():
+    """H1610: --max-agents N with N < selected_keys is a hard refuse (no paid call)."""
+    r = _soft_nonresolve_runner()
+    m = manifest()
+    m['meta'] = dict(m['meta'], selected_keys=['a', 'b', 'c'])
+    m['batches'] = [['a'], ['b'], ['c']]
+    for k in ('a', 'b', 'c'):
+        m['inputs'][k] = m['inputs']['agni']
+        m['placeholder_maps'][k] = m['placeholder_maps']['agni']
+    try:
+        h.execute(m, claude=sys.executable, runner=r, max_agents_override=1)
+        assert False, 'expected ValueError starvation refuse'
+    except ValueError as exc:
+        assert 'starves' in str(exc) and '3-key' in str(exc), exc
+    assert r.n == 0, 'starvation refuse must spawn zero: %d' % r.n
+    print('  H1610 refuse: multi-key --max-agents=1 raises before any spawn')
+
+
 def test_call_timeout_clamped():
     """R4 (C-15): the timeout handed to subprocess is min(operator, budgets.timeout_ceil_ms, HARD)."""
     seen = {}
@@ -516,6 +564,8 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
         assert not still_alive, 'tree PID(s) still alive after kill (orphaned): %s' % still_alive
     print('  D-J tree-kill: parent->child->grandchild all gone (no orphan); timeout bounded + raised once')
     test_translate_budget_binds()
+    test_h1610_preserve_budget_exceeded_over_selfheal_stamp()
+    test_h1610_refuse_max_agents_starves_multikey()
     test_call_timeout_clamped()
     test_card_tokens_include_grammar()
     test_cost_telemetry_survives()
