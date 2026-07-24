@@ -10,6 +10,25 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — H1618 unpaid four tracks (max-agents guard, cohort engine, C-49 residuals, LANG_PARITY)
+
+- **Track 1 (H1610 structural):** `headless_worker.note(..., preserve=True)` for
+  `selfheal-nothing-resolved` / `no-selfheal-fallback` so earlier `budget_exceeded*` notes
+  survive; `refuse_starvation_max_agents` hard-refuses `--max-agents N` when `N < selected_keys`
+  before any paid call; pins in `headless_worker_selftest.py`; operator note in
+  [`RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md).
+- **Track 2 (H1437 offline):** new [`src/pilot/cohort_engine.py`](src/pilot/cohort_engine.py)
+  + Fable Phase-0 suite `cohort_engine_selftest.py` — **7/7 GREEN** (fake workers only:
+  concurrent width, reverse-completion determinism, crash-resume, rejection batching,
+  promotion-barrier idempotence, atomic `max_calls` reservation, admitted/parked + coord_dir).
+- **Track 3 (telemetry + C-49):** `append_ledger` stamps `translate_agents_spent` /
+  `heal_agents_spent` / `budget_stops` / kill/conn; [`no_pwg_residual_ledger.py`](src/pilot/no_pwg_residual_ledger.py)
+  backfill+check of H255 w02–w05 documented residuals; defect requeue path records residuals
+  by default (`requeue_from_audit --no-residual` to skip).
+- **Track 4 (LANG_PARITY):** EN `audit_window_en` wires `build_production_metrics` +
+  `--write-requeue` fsha emit (h304 SHARED); h1553 wall_clock half SHARED; h1339 narrowed
+  (TN refuse already C6; better-attempt still GAP). Ledger hash-refresh clean.
+
 ### Documented — c2 medium50 w1 only-b0/all-nulls forensics (`--max-agents 1` total-spawn starvation)
 
 - [`LAUNCH_FUCKUPS.md`](LAUNCH_FUCKUPS.md) id `C2_M50_W1_MAX_AGENTS1_2026-07-24`: measured

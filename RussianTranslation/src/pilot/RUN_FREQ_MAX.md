@@ -517,6 +517,15 @@ A concrete run, with real numbers, so the loop above isn't just abstract steps.
    command's default dry-run first, then explicitly add `--execute --only-profile c4`. Every
    admitted production entry point holds the global config-fingerprint claim, so a second c4
    launch fails closed instead of spending concurrently.
+
+   **`--max-agents` is a TOTAL spawn ceiling (translate+heal), not concurrency width**
+   (H1610 / ledger `C2_M50_W1_MAX_AGENTS1_2026-07-24`). Use `--max-agents 1` only for true
+   single-spawn canaries (one key that must finish in one call). Multi-key / heal-capable
+   windows must **omit** the flag so manifest `max_translate_agents` / `max_heal_agents`
+   apply. `headless_worker` now refuses `N < selected_keys` before any paid call, and
+   preserves `budget_exceeded*` notes instead of overwriting them with
+   `selfheal-nothing-resolved`.
+
    Real result: **102 agents, 6,626,992 tokens, ~19 min wall-clock.**
 4. **Capture:** read the workflow task's `.result` from its output file (holds the
    full `{meta, summary, results}` payload uncapped) and write it to `wf_output.json`
