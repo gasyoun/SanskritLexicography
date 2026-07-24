@@ -98,15 +98,22 @@ it is intentional. Most content in this directory is in Russian.
 
 A second, independent translation effort in the same directory: PWG
 (Böhtlingk-Roth, "Petersburg Dictionary") → Russian (primary) and English
-(secondary), run headword-by-headword through the Claude Workflow tool at
-scale (749 DCS-attested verb roots alone). Start at
+(secondary), run headword-by-headword at scale (749 DCS-attested verb roots
+alone; store ~11.6k sense rows as of 24-07-2026). **Production route (H1110):**
+profile-bound **headless CLI on manifest v2**
+(`headless_worker.py` / `coordinator.py` / `bounded_staged_run.py`); the Max
+Workflow lane is forensics only. Start at
 [`RussianTranslation/PIPELINE_HISTORY.md`](RussianTranslation/PIPELINE_HISTORY.md)
 for the chronological "how did we get here" orientation (major fixes,
 recurring failure patterns, current state) before touching any pwg_ru code —
 it exists specifically so a fresh session doesn't rediscover an already-fixed
-bug. Live operating procedure:
+bug. Editor-facing format + status:
+[`RussianTranslation/pwg_ru.md`](RussianTranslation/pwg_ru.md). Live operating
+procedure:
 [`RussianTranslation/src/pilot/RUN_FREQ_MAX.md`](RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
-(includes a worked end-to-end example with real numbers). **Sync rule (H1618):** any
+(+ operator depth
+[`docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md`](docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md)).
+Paid windows require a fresh live-gate GO before spend. **Sync rule (H1618):** any
 change to `--max-agents` semantics, residual registry schema, or cohort barrier rules
 must update `RUN_FREQ_MAX.md` + `RussianTranslation/Agents.md` + the
 `/pwg-bounded-run` skill in the same PR (copy-paste of canary `--max-agents 1` onto

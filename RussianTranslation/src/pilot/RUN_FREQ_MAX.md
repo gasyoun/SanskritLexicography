@@ -1,10 +1,20 @@
-# Runbook — frequency queue on the Max workflow harness
+# Runbook — frequency queue on the headless CLI (manifest v2)
+
+_Created: 09-07-2026 · Last updated: 24-07-2026_
 
 Goal: scale the PWG→Russian production run in DCS-frequency order, with giant
 roots split into single-pass units and re-glued after translation. This is the
 post-judge path: the 38-unit freq test is complete, 37/38 were publishable, and
 the lone sev-3 belongs to the NWS owner-row slip class that the deterministic
 audit gate catches.
+
+**Production route (H1110, since 18-07-2026):** `headless_worker.py` under a
+profile-bound **manifest v2** (`execution_route: claude-cli-headless`), driven
+by `coordinator.py` / `bounded_staged_run.py`. The Max-Workflow lane
+(`run_pilot_wf.opt2.js`) is **forensics only**. Skills that wrap the paid path:
+[`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+→ [`/pwg-bounded-run`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-bounded-run.md)
+→ [`/pwg-window-close`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-window-close.md).
 
 **QA policy — BALANCED, token-optimized (2026-06-27, [`../../TOKEN_OPTIMIZATION_2026-06-27.md`](../../TOKEN_OPTIMIZATION_2026-06-27.md)):**
 the bulk pass is **translate (Sonnet, single-turn inlined) + four FREE Python gates on 100 %
@@ -43,23 +53,30 @@ tracked-file drift and is wired into `window_selftest.py`
 
 ## Current operating truth
 
-- **Session + generation model (H178 A-4a, 06-07-2026):** run in a session that **HAS the
-  Workflow tool** — the session model picker does NOT control generation. Generation is
-  **always Sonnet 5 (`claude-sonnet-5`)**: the generated harness hardcodes `model:'sonnet'`
-  on every `agent()` call. Workflow-tool availability is a per-session tooling fact, not a
-  tier rule (Opus 4.8 and Fable 5 sessions had it; one Sonnet chat did not) — check the
-  toolset at session start instead of selecting a "generation tier".
+- **Execution route (H1110):** production is the **headless CLI on manifest v2**, not
+  Workflow-from-session. Bind a named profile (`CLAUDE_CONFIG_DIR` + roster slot) before
+  any paid call; promotion hard-refuses unbound payloads (H1080 Stage 3).
+- **Live-gate before every paid window:** fresh
+  [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+  (representative ≥5 KB health + separate `dq_canary_puregloss`). A previous session's GO
+  never authorizes a new spend.
+- **Generation model:** **always Sonnet 5 (`claude-sonnet-5`)** — the harness pins the
+  exact id on every `agent()` call (H818, SHARED RU/EN). The interactive session model
+  does not control generation.
+- **`--max-agents` is a total-spawn cap** (translate + heal). Never set `--max-agents 1`
+  on multi-key / heal-capable windows — it starves non-`b0` work (ledger
+  `C2_M50_W1_MAX_AGENTS1_2026-07-24`). Prefer manifest budgets only.
 - **The translated source is the 5-layer all-in-one** built by
   [`_pilot_gen_merged.py`](../_pilot_gen_merged.py) — PWG main+Nachträge + PW + SCH + PWKVN +
   NWS (owner-mapped) — live since commit `1dad0dd` (17-06-2026), never reverted.
   `csl-orig/v02/pwg/pwg.txt` is read-only and is only the **PWG layer input**, not "the
   source"; the `_zz_pw` / `_zz_sch` / `_zz_pwkvn` / `_zz_nws00` card-ID suffixes are the live
   per-layer routing (H178 A-4b).
-- The optimized **translate-only** Max harness is live and is generated per root by
-  [`gen_opt_harness2.py`](gen_opt_harness2.py). It masks and batches raw/portrait inputs,
-  disables translate-agent tools, auto-uses translation-memory sidecars when present,
-  presplits over-budget dense cards into the selfheal lane, and returns provenance metadata
-  used by the audit stale guard.
+- The optimized **translate-only** harness is generated per root by
+  [`gen_opt_harness2.py`](gen_opt_harness2.py) and executed headless. It masks and batches
+  raw/portrait inputs, disables translate-agent tools, auto-uses translation-memory
+  sidecars when present, presplits over-budget dense cards into the selfheal lane, and
+  returns provenance metadata used by the audit stale guard.
 - Article-site/root dashboard lazy loading is already shipped; do not spend performance time
   re-implementing that path.
 - Lean TR / prompt trimming was tested and rejected; keep the full production TR unless a new
@@ -76,14 +93,17 @@ tracked-file drift and is wired into `window_selftest.py`
   `--fail-on-blocked` when using them as CI/go-no-go gates.
 - **Scope ruling (MG, 04-07-2026): drain ALL remaining DCS-attested verb roots**, root-by-root.
   The worklist is enumerated reproducibly by [`verb_worklist.py`](verb_worklist.py) (verbs01
-  universe ∩ freq manifest − promoted store): 749 attested verb roots, 46 promoted,
-  **703 remaining** (~5.3 MB source) as of 04-07-2026. Operator `--top` output is filtered
+  universe ∩ freq manifest − promoted store): 749 attested verb roots, **48 promoted /
+  701 remaining** as of 24-07-2026 (~5.2 MB source). Operator `--top` output is filtered
   to roots with existing rootmaps; the JSON keeps the full backlog plus
-  `blocked_missing_rootmap`. Drain discipline lives in the standing handoff
+  `blocked_missing_rootmap` (most remaining verbs still need rootmaps before they are
+  runnable). H1339 rederived the whole remaining population at **5,580 unique**
+  (701 verb + 4,757 nominal-PWG + 122 no-PWG). Drain discipline lives in the standing handoff
   [`H151`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151-Sonnet_RussianTranslation_pwg_ru_verb_batch_drain_04.07.26.md).
 - The per-root loop below is unchanged — "all roots next batch" scales the QUEUE, not the
-  width. Roots still run **one at a time (≤3-wide max)**; the Slice-D 18×-parallel collapse
-  (117 transient nulls) is the standing counter-example.
+  width. Roots still run **one at a time** (global ordinary leases ≤3; bounded paid runs
+  use `max-wide=1`); the Slice-D 18×-parallel collapse (117 transient nulls) is the standing
+  counter-example.
 - **H304 hardening (07-07-2026) — four operator-memory rules are now code paths:**
   (1) **cap-and-defer** — `coordinator.py claim/prepare` act on the `perf_preflight` cost
   gate: an over-ceiling (kAla-class) window is parked in
@@ -101,8 +121,8 @@ tracked-file drift and is wired into `window_selftest.py`
 
 The earlier "Opus-judged-every-card" framing was the validation phase; "Sonnet-bulk/Opus-on-reject"
 was the 2026-06-26 escalation policy; the per-card LLM judge itself is now dropped from the bulk path.
-The older human-driven Max-session wording is obsolete here: the in-chat Workflow route is the
-supported production path for optimized harnesses.
+The in-chat Workflow route is **retired for production** (H1110) — use headless manifest v2.
+Workflow artifacts remain valid forensic inputs when replaying historical launches.
 
 ## Current preflight
 
