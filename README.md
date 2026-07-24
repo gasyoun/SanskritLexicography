@@ -1,6 +1,6 @@
 # SanskritLexicography
 
-_Created: 14-06-2026 · Last updated: 11-07-2026_
+_Created: 14-06-2026 · Last updated: 24-07-2026_
 
 A **data and research workspace** for Sanskrit digital lexicography — not a
 software project. Its focus is Cologne Digital Sanskrit Lexicon headword lists,
@@ -28,7 +28,7 @@ see [FEATURES_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/mas
 | [Syntax-Lectures/](https://github.com/gasyoun/SanskritLexicography/tree/master/Syntax-Lectures) | Markdown and HTML lecture material (mostly Russian) on Sanskrit particles and syntax, including the interactive [particle explorer](https://github.com/gasyoun/SanskritLexicography/blob/master/Syntax-Lectures/sanskrit_particles_explorer.html). |
 | [literature/md/](https://github.com/gasyoun/SanskritLexicography/tree/master/literature/md) | Full-text markdown extractions of the research literature collection, plus a set of paraphrase digests (citation + scope summary, no reproduced text) — for the nine Russian/Soviet works the digest and the full text sit side by side; elsewhere a digest may stand alone in place of a work not redistributed here. See [literature/md/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/README.md) for which is which. See [literature/md/INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/INDEX.md) for the cross-repo relevance map (sources tagged by which dictionary repo, corpus pipeline, or paper they serve). Source PDFs/EPUBs/DOCs are not versioned in this repo. |
 | [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Paper-pipeline notes, referee reviews, and supporting CSV data for the A33–A43 manuscripts. |
-| [data/](https://github.com/gasyoun/SanskritLexicography/tree/master/data) | Derived cross-dictionary datasets (headword-overlap matrix, csl-orig markup-tag census) with the generator scripts that produced them. |
+| [data/](https://github.com/gasyoun/SanskritLexicography/tree/master/data) | Derived cross-dictionary datasets (headword-overlap matrix, csl-orig markup-tag census, **definition typology** — synonym/equivalent/encyclopedic over all 44 csl-orig dicts) with the generator scripts that produced them. See [DEFINITION_TYPOLOGY_WS2_4_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md). |
 | [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) | Static research-site builder (`build_site.py`, zettelkastenwiki) over [docs_site/wiki/research/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site/wiki/research), plus its pytest suite. Built and tested; not deployed. |
 | [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) | Draft of the English article-based monograph (book plan, Brill proposal, rights table, early chapters). |
 | [ReverseDictionary/](https://github.com/gasyoun/SanskritLexicography/tree/master/ReverseDictionary) | Working materials for an unpublished reverse dictionary of Sanskrit (sorted by word ending; ~266,820 headwords). |

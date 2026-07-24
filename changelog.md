@@ -14,9 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.59.0] — 2026-07-24
+
 ### Added
 
-- **Definition typology classifier WS2.4 (H1483).** Rubric + **all 44 csl-orig dicts / 1,496,157 records** (`--all`) + stratified gold **55/79 = 69.6%** (after linear apparatus strip; ACC citation-chain hang fixed). Report [`data/DEFINITION_TYPOLOGY_WS2_4_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md); script [`data/definition_typology_classifier.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/definition_typology_classifier.py).
+- **Definition typology classifier WS2.4 (H1483).** Rubric + **all 44 csl-orig dicts / 1,496,157 records** (`--all`) + stratified gold **55/79 = 69.6%** (after linear apparatus strip; ACC citation-chain hang fixed). Report [`data/DEFINITION_TYPOLOGY_WS2_4_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md); script [`data/definition_typology_classifier.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/definition_typology_classifier.py). FEATURES_INDEX **E49**; README + metadoc registered.
 
 - **Markup-tag heatmap + RU-gloss gap cards (H1527).** Offline single-file HTML under
   [`data/viz/`](https://github.com/gasyoun/SanskritLexicography/tree/master/data/viz) charting the
@@ -27,7 +29,7 @@ not an error.
 
 ### Fixed
 
-- **H1483 report accuracy figure.** Docs previously quoted a pre-tune 49/79=62.0%; live `--verify` against the committed gold is **63/79=79.7%** (residual precision 100%). Report, roadmaps, and changelog aligned.
+- **H1483 report accuracy figure.** Docs previously quoted a pre-tune 49/79=62.0%; live `--verify` against the committed gold is **63/79=79.7%** (residual precision 100%). Report, roadmaps, and changelog aligned. (All-dict linear strip later reports gold **55/79 = 69.6%** on the same sample file — see report.)
 
 ## [1.58.0] — 22-07-2026
 
