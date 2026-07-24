@@ -1,0 +1,80 @@
+dict	l_id	k1	predicted	reason	plain_excerpt	gold	notes
+mw	132540	pratipad	equivalent	short_tok=2	beginning, commencement, TS. ; TBr.	synonym	two short EN glosses
+mw	244096	sitakuYjara	equivalent	short_tok=4	m. a white elephant, L.	equivalent	single NP gloss; comma is not synonym list
+mw	219454	SudDasOKya	equivalent	name_formula	n. N. of wk.	equivalent	name formula
+mw	82504	tantrI	equivalent	name_formula	N. of a river, L.	equivalent	name formula
+mw	22745	AgrahAyaRaka	encyclopedic	desc_tok=19_char=92	mfn. to be paid (as a debt) on the day of full moon of the month Agrahāyaṇa , Pāṇ. iv, 3, 50.	encyclopedic	long paraphrastic with condition
+mw	84189	tAmrasAraka	equivalent	short_tok=4	m. a red-blossoming Khadira , L.	equivalent	short single gloss (over-triggered by length rule edge)
+mw	205107	vfzaBANka	residual	eqn_head	m. = ˚Ba-ketU , MBh. ; R.	residual	equation to another lemma
+mw	24490	Anavya	residual	eqn_head	mfn. = A/nava , T.	residual	equation
+pwg	89329	vAkyaprabanDa	synonym	syn_list_n=2	m. fortlaufende Rede, Erzählung DHĀTUP. 35,1 .	synonym	two DE glosses
+pwg	36662	DArApAta	equivalent	short_tok=5	( 1. DA˚ + pAta ) m. Regenguss , pl. MṚCCH. 84,19 . MEGH. 49 .	equivalent	single DE gloss Regenguss
+pwg	91537	vitolA	equivalent	name_formula	f. N. pr. eines Flusses RĀJA-TAR. 8,922 .	equivalent	name formula
+pwg	102776	saMyoDakaRwaka	equivalent	name_formula	m. N. pr. eines Yakṣa R. 7,14,21 .	equivalent	name formula
+pwg	78476	pApabudDi	equivalent	short_tok=11	adj. Spr. 4555 . f. üble Absicht : yo rAmasya priyAM BAryAM pApabudDyA nirIkzase R. 3,53,50 .	encyclopedic	definition + verse example
+pwg	100662	SUrpAdri	equivalent	name_formula	( SUrpa + adri ) m. N. pr. eines Berges im Süden VARĀH. BṚH. S. 14,14 ; vgl. sUryAdri MĀRK. P. 58,26 .	equivalent	name formula with location (still short ID)
+pwg	16679	kArmuka	encyclopedic	eqn_then_senses	= karmaRe praBavati P. 5,1,103 . 1〉 adj. einem Werke gewachsen H. an. 3,21 . MED. k. 64 . — 2〉 m. Bambusrohr TRIK. 3,3,13 . H. an. MED.	encyclopedic	starts with = but continues multi-sense definition
+pwg	14491	kaRwa	equivalent	short_tok=12	= kaRwaka am Anf. einiger compp. ( s. kaRwakuraRwa fgg. ) und in kaRwala, kaRwAlu, kaRwin .	residual	cross-ref / composition note
+ap90	3992	araMgin	equivalent	short_tok=11	a. Passionless; ˚sattvaH a passionless being; a class of divinitieswith Buddhists.	encyclopedic	third clause is encyclopedic class note
+ap90	17093	nivAku	equivalent	short_tok=4	a. Not speaking, silent.	synonym	two short glosses
+ap90	10656	kAReyaH	equivalent	short_tok=6	Son of a one-eyed woman.	equivalent	short translational
+ap90	21483	PhalIkaraRaM	equivalent	short_tok=7	Winnowing, separating the grain from the husks.	synonym	two parallel glosses (comma)
+ap90	31373	hArdaM	encyclopedic	desc_tok=10_char=98	[ hfdayasya karma yuvA0 aR hfdAdeSaH ] 1 Affection, love; … --2 Kindness… --3 Will. --4 Intention…	encyclopedic	multi-sense numbered
+ap90	13002	cakrIkf	equivalent	medium_flat_tok=15	c8c U. To form into a circle, to curve or bend as a bow; Ku. 3. 70.	synonym	two short verbal glosses
+ap90	2499.1	apalAzuka	residual	crossref	Lbody=2499	residual	pointer noise
+ap90	25926.1	vidagDatvaM	residual	crossref	Lbody=25926	residual	pointer noise
+cae	3910	ahan	encyclopedic	desc_tok=15_char=77	n. day. - a/hanyahani & a/harahas every day, daily. uBe/ a/hanI day and night.	encyclopedic	main + idioms = multi-unit microstructure
+cae	8945	kzeptf	equivalent	short_tok=3	m. thrower, hurler.	synonym	two short glosses
+cae	20043	pOzya	equivalent	name_formula	m. N. of a an ancient king.	equivalent	name formula
+cae	32818	SudDodana	equivalent	name_formula	m. N. of Buddha's father.	equivalent	name formula
+cae	35960	sarvANgika	encyclopedic	desc_tok=10_char=58	a. relating to or destined for the whole body (ornament).*	encyclopedic	paraphrastic with purpose clause
+cae	34606	sadDarma	equivalent	short_tok=4	m. the good law.	equivalent	short single gloss (false ENC)
+cae	13527	dAnavIra	residual	eqn_head	m. = dAnapati .	residual	equation
+cae	38575	snAnodaka	residual	eqn_head	n. = snAnAmbu .	residual	equation
+skd	14055	wANkaraH	encyclopedic	desc_tok=11_char=83	, puM, (waNkasyedaM wANkam . waNka + aR . wANkaM rAtIti . rA + kaH .) nAgavIwaH . iti trikARqaSezaH ..	synonym	paryāya + iti source
+skd	41457	harit	equivalent	short_tok=6	, puM, klI, (hf + itiH .) tfRam . iti medinI ..	synonym	iti medinI synonym
+skd	32946	viBrAw	synonym	iti_syn_chain_n=2	, [j] tri, (viSezeRa BrAjate iti . vi + BrAj + “anyeByo'pi	encyclopedic	etymological paraphrase started (truncated)
+skd	16175	dAkzyaM	encyclopedic	desc_tok=9_char=71	, klI, (dakzasya BAvaH karmma vA . dakza + zyaY .) dakzatA . nipuRatA . …	encyclopedic	bhāva + multi synonyms + citation
+skd	24023	balaprasUH	synonym	iti_syn_chain_n=2	, strI, (prasUte iti prasUrjananI . balasya baladevasya prasUH .) rohiRI . balarAmamAtA . iti SabdaratnAvalI ..	synonym	two short Skt synonyms + iti
+skd	39127.01	sinDuvAraH	residual	crossref	Lbody=39127	residual	pointer
+skd	33076.01	bilaH	residual	crossref	Lbody=33076	residual	pointer
+vcp	2920	apuMs	encyclopedic	quoted_def	pu0 na pumAn na0 ta0 . 1 napuMsake klIve . “pumAn puMso'Dike Sukre…	encyclopedic	numbered senses + verse (paryaya signal over-fired)
+vcp	2726	aparyyAya	encyclopedic	desc_tok=13_char=83	pu0 na paryyAyaH paripawI aBAve na0 ta0 . pakramA- BAve . na0 ba0 . kramaSUnye tri0 .	encyclopedic	etym + multi sense notes
+vcp	35586	bAhya	equivalent	short_tok=4	tri0 bahirBavaH zyaYwilopaH . bahirBave	equivalent	short
+vcp	44672	saMmarda	equivalent	short_tok=8	pu0 sam + mfda--GaY . anyonyadfQasaMyogarUpe saMkzarze vA maH	equivalent	short definitional NP
+vcp	13797	kukkuwAsana	encyclopedic	quoted_def	na0 “kukkuwAsanamAvakzye nAqInirmmalahetunA. …	encyclopedic	quoted long description
+vcp	16696	gaNgAkzetra	encyclopedic	quoted_def	na0 6 ta0 . “tIrAdgavyUtimAtrantu paritaH kzetramucyate” ityukte …	encyclopedic	quoted definition
+vcp	35383.1	vaha	residual	crossref	Lbody=35383	residual	pointer
+vcp	16826	gaRarAjya	encyclopedic	quoted_def	na0 vf0 sa0 14 ukte dakziRasyAmukte deSaBede …	encyclopedic	descriptive locus note
+sch	25758	sadyaHkfttota	encyclopedic	desc_tok=10_char=60	Adj. an einem und demselben Tage gesponnen und gewebt, Āpast. Gṛhy. 10,10. part=,seq=26105,type=,n=3	encyclopedic	long relative-style participial definition
+sch	22927	lilaNGizu	equivalent	short_tok=4	zu überschreiten wünschend, Amit. II,16. part=,seq=23248,type=˚,n=2	equivalent	single DE participial gloss
+sch	25630	saMgameSa	equivalent	name_formula	n. N. pr. eines Liṅga, Kāśīkh. 61,6. part=,seq=25975,type=,n=2	equivalent	name formula
+sch	16552	nAgaSarman	equivalent	name_formula	m. N. pr. eines purohita, Bhadrab. 1,39. part=,seq=16803,type=,n=2	equivalent	name formula
+sch	20273	bIjaBojin	equivalent	short_tok=3	das Saatgut aufessend, S I,382,2. part=,seq=20553,type=˚,n=2	equivalent	short DE participial
+sch	9914	karIziRI	equivalent	short_tok=5	˚Attribut der Glücksgöttin, Mgs. II,13,6 f . part=,seq=10050,type=,n=2	equivalent	short role formula
+sch	9857	karapIqana	residual	eqn_head	n. = Hochzeit, S I,179,6. part=,seq=9992,type=˚,n=1	residual	equation (= Hochzeit)
+sch	9568	kaqevara	residual	eqn_head	n. = kalevara 1., Mahāvy. 189 ; Divyāvad. 39,11. part=,seq=9697,type=,n=2	residual	equation
+pw	220759	ran	encyclopedic	prefix_or_multisense	mit * pra , praraRita erschallend MAHĀVY. 151 . — Mit * saMpra , ˚raRita dass, ebend.	encyclopedic	prefix-sense microstructure
+pw	5319	antarDA	equivalent	short_tok=3	f. Verhüllung, Verbergung .	synonym	two DE glosses
+pw	79926	BImajAnu	equivalent	name_formula	m. N. pr. eines Fürsten.	equivalent	name formula
+pw	214098	AdehadAham	residual	empty_sense_num	1.	residual	empty sense number
+pw	73147	pravAta	encyclopedic	prefix_or_multisense	— 1〉 Adj. s. u. 3. vA mit pra . — 2〉 n. Luftzug … luftiger Ort…	encyclopedic	numbered multi-sense
+pw	109074	vratavisarjana	equivalent	short_tok=6	Adj. ( f. I ) eine Observanz beschliessend KAUŚ. 42,68 . VAITĀN.	equivalent	short DE participial
+pw	210598.1	aDivAsanIya	residual	crossref	Lbody=210598	residual	pointer
+pw	213476.3	azwAmfqa	residual	crossref	Lbody=213476	residual	pointer
+wil	10031	kAmyamaraRa	synonym	syn_list_n=3	n. ( -RaM ) Voluntary death, suicide. E. kAmya , and maraRa dying.	synonym	two EN glosses (+ E. not definition)
+wil	23760	parizvajya	synonym	syn_list_n=3	ind. Having embraced. E. pari, zvaji to embrace, lyap aff.	equivalent	single gloss (+ E.)
+wil	38254	SiKARqaka	equivalent	short_tok=10	( -kaH ) Hair left on each side of the head: see SiKaRqaka .	equivalent	short description
+wil	32651	la	equivalent	short_tok=10	The twenty-eighth consonant of the Nāgarī alphabet, the letter L.	equivalent	letter ID formula
+wil	7346	upajIvana	synonym	wil_e_syn_n=2	n. ( -naM ) Subsistence, means of living. E. upa and jIvana living.	synonym	two short glosses
+wil	40016	sajya	synonym	wil_e_syn_n=2	mfn. ( -jyaH-jyA-jyaM ) Strung, (as a bow,) having a bowstring. E. sa with jyA a bowstring.	equivalent	short gloss + parenthetical
+wil	8551	kacCAwikA	residual	crossref_short	f. ( -kA ) See kacCawikA .	residual	see-also
+wil	14601	cakravAqa	residual	crossref_short	m. ( -qaH ) See cakravAla .	residual	see-also
+gra	10436	svara	synonym	syn_list_n=3	a. , Rauschen, Geräusch [von svar]; vgl. ṛṣi-, abhi-svará. -éṇa …	synonym	two DE glosses + loci
+gra	9256	sanaja	equivalent	short_tok=13	a. , in alter Zeit geboren, längst vorhanden [já von jan]. -ā́ [ f. ] …	synonym	two parallel DE glosses
+gra	12549	vaS	residual	stem_pointer	Stamm vaś: -śmi 1〉 621,16 te suṣṭutím.	residual	stem form pointer, no gloss
+gra	12232	Urva	encyclopedic	desc_tok=4_char=18	-vám 3〉 〰 áśviam gós 324,5 .	residual	form locus only
+gra	1248	aSrAta	equivalent	short_tok=9	a. , ungekocht, Gegensatz śrātá [von śrā]. -as (bhāgás) 1005,1 .	equivalent	short DE gloss + contrast
+gra	4297	duratyetu	equivalent	short_tok=13	a. , schwer zu über schreiten [atyétu s. i mit ati]. -ū [ du. ] …	equivalent	short DE gloss
+gra	7828.1	vasnia	residual	crossref	Lbody=7828	residual	pointer
+gra	9009.1	SrayizWa	residual	crossref	Lbody=9009	residual	pointer
