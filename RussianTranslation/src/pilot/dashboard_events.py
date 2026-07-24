@@ -45,6 +45,28 @@ def append_event(source, event_type, level='info', root=None, state=None,
     return rec
 
 
+def emit_stage_boundary(stage, window_tag=None, root=None, ts=None, data=None,
+                        log_path=EVENT_LOG):
+    """Append a stage_boundary event (H1403 A2 / H1553).
+
+    Marks a pipeline phase edge (audit_start / audit_end today) so wall-clock
+    auto-derive can later separate generation wall from operator idle. Best-effort
+    like append_event — never raises into the caller.
+    """
+    payload = dict(data or {})
+    if window_tag is not None:
+        payload.setdefault('window_tag', window_tag)
+    if ts is not None:
+        payload.setdefault('boundary_ts', ts)
+    rec = append_event(
+        'audit_window', 'stage_boundary', level='info', root=root,
+        state=stage, summary='stage_boundary:%s' % stage, data=payload,
+        log_path=log_path)
+    if ts is not None:
+        rec['ts'] = ts
+    return rec
+
+
 def read_events(limit=100, log_path=EVENT_LOG):
     if not os.path.exists(log_path):
         return []

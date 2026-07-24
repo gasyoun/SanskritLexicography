@@ -29,7 +29,7 @@ sys.path.insert(0, SRC)
 import nws_split
 import validate_final_card_schema
 from safe_filename import safe_name
-from dashboard_events import append_event
+from dashboard_events import append_event, emit_stage_boundary
 from prompt_rule_audit import (
     DEFAULT_HARNESS,
     DEFAULT_TEMPLATE,
@@ -488,6 +488,9 @@ def main():
         tempfile.mkdtemp(prefix='pwg_audit_ephemeral_') if ephemeral else None))
 
     _payload, wf_meta, results, keys, null_cards = workflow_payload(wf)
+    emit_stage_boundary(
+        'audit_start', window_tag=window_tag, root=args.root,
+        data={'workflow': wf, 'workflow_keys': len(keys)})
     emit_audit_event(
         'audit_start', root=args.root, state='started',
         summary='audit started for %s (%d workflow keys)' % (os.path.basename(wf), len(keys)),
@@ -519,7 +522,8 @@ def main():
                   'judge_sample_rate': args.judge_sample_rate,
                   'judge_sample_min': args.judge_sample_min,
                   'judge_sample_seed': args.judge_sample_seed,
-                  'production_metrics': build_production_metrics(args)}
+                  'production_metrics': build_production_metrics(
+                      args, wf_path=wf, workflow_meta=wf_meta)}
         json_path, md_path, rq_path, js_path, status_json, status_md = write_reports(
             report, args.write_requeue, write_requeue_file=False, out_dir=report_out_dir)
         emit_audit_event(
@@ -532,6 +536,9 @@ def main():
                   'expected_keys': len(((stale.get('current') or {}).get('selected_keys') or [])),
                   'missing_keys': stale.get('missing_keys') or [],
                   'unexpected_keys': stale.get('unexpected_keys') or []})
+        emit_stage_boundary(
+            'audit_end', window_tag=window_tag, root=args.root,
+            data={'workflow': wf, 'state': 'stale_artifact', 'cards': len(keys)})
         emit_audit_event(
             'audit_end', level='error', root=args.root, state='stale_artifact',
             summary='audit ended: stale_artifact; cards=%d requeue=0' % len(keys),
@@ -719,7 +726,8 @@ def main():
     report['judge_sample_seed'] = args.judge_sample_seed
     report['judge_sample'] = build_judge_sample(
         report, args.judge_sample_rate, args.judge_sample_min, args.judge_sample_seed)
-    report['production_metrics'] = build_production_metrics(args)
+    report['production_metrics'] = build_production_metrics(
+        args, wf_path=wf, workflow_meta=wf_meta)
     json_path, md_path, rq_path, js_path, status_json, status_md = write_reports(
         report, args.write_requeue, out_dir=report_out_dir)
     state = audit_state(report)
@@ -741,6 +749,12 @@ def main():
             'crash_state', level='error', root=args.root, state='blocked',
             summary='crashed gates: %s' % ', '.join(crashed),
             data={'crashed': crashed})
+    emit_stage_boundary(
+        'audit_end', window_tag=window_tag, root=args.root,
+        data={'workflow': wf, 'state': state, 'cards': len(keys),
+              'requeue_count': len(report['requeue']),
+              'wall_clock_source': (report.get('production_metrics') or {}).get(
+                  'wall_clock_source')})
     emit_audit_event(
         'audit_end',
         level='error' if crashed else ('warn' if report['requeue'] else 'info'),
