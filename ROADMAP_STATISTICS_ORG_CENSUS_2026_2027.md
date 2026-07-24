@@ -48,7 +48,7 @@ re-measure; re-verify before a large change.
 | n-gram membership oracle | **6,656,616 n-grams** ✅ (F43) | [CORRECTIONS/ngram](https://github.com/sanskrit-lexicon/CORRECTIONS/tree/master/ngram) |
 | Sense-count / polysemy distribution per dict | ◐ partial (11/44 general lexica; A02 paper, mirrored H817 — FEATURES_INDEX E45) · **dashboard live 23-07-2026 (H1524)** | report [sense_polysemy_per_dict.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/sense_polysemy_per_dict.md) · page [`/sense-polysemy`](https://sanskrit-lexicon.github.io/csl-observatory/sense-polysemy) |
 | Diachronic first-attestation (which dict coins a headword) | ◐ partial (A40 growth curve only) | ARTICLES A40 |
-| Definition typology (synonym vs equivalent vs encyclopedic) | ◐ first-pass 24-07-2026 (H1483) — rubric + 15-dict / 926,759-record distribution + gold sample 49/79=62.0%; double-key pool still open | report [DEFINITION_TYPOLOGY_WS2_4_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md) · script [definition_typology_classifier.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/definition_typology_classifier.py) |
+| Definition typology (synonym vs equivalent vs encyclopedic) | ◐ first-pass 24-07-2026 (H1483) — rubric + 15-dict / 926,759-record distribution + gold sample 63/79=79.7%; double-key pool still open | report [DEFINITION_TYPOLOGY_WS2_4_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md) · script [definition_typology_classifier.py](https://github.com/gasyoun/SanskritLexicography/blob/master/data/definition_typology_classifier.py) |
 | Per-dict editorial fingerprint (citation × markup × error) | ○ not started | — |
 
 ### L2 · Morphology & forms (kosha · DCS · Heritage · vidyut)
@@ -212,7 +212,7 @@ prepared, deposit `@DO` (Zenodo account gate, H817 WS1.4).
 - **WS2.4 — Definition typology.** Synonym-gloss vs equivalent vs encyclopedic per dict —
   the classic microstructural axis the ATLAS_FAIR audit flags as absent. 📄.
   **◐ first-pass 24-07-2026 (H1483):** rubric + 15-dict distribution (926,759 records) +
-  stratified gold 49/79=62.0% in
+  stratified gold 63/79=79.7% in
   [data/DEFINITION_TYPOLOGY_WS2_4_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md).
   Remaining: Wilson `E.` peel, sense-level split, ATLAS 300×7 double-key pool.
 - **WS2.5 — FAIR release #2** (analytical datasets, DOIs). 📦.
