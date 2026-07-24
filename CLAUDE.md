@@ -106,12 +106,19 @@ recurring failure patterns, current state) before touching any pwg_ru code —
 it exists specifically so a fresh session doesn't rediscover an already-fixed
 bug. Live operating procedure:
 [`RussianTranslation/src/pilot/RUN_FREQ_MAX.md`](RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
-(includes a worked end-to-end example with real numbers). Cross-language
+(includes a worked end-to-end example with real numbers). **Sync rule (H1618):** any
+change to `--max-agents` semantics, residual registry schema, or cohort barrier rules
+must update `RUN_FREQ_MAX.md` + `RussianTranslation/Agents.md` + the
+`/pwg-bounded-run` skill in the same PR (copy-paste of canary `--max-agents 1` onto
+multi-key windows re-creates the only-b0 starvation class). Cross-language
 (RU/EN, and any future language) fix-parity policy — mandatory classification
 of every fix as SHARED / INTENTIONAL-DIVERGENCE / GAP before closing a
 session, mechanically enforced by a selftest gate:
 [`RussianTranslation/LANG_PARITY.md`](RussianTranslation/LANG_PARITY.md).
 Live session journal: [`RussianTranslation/.ai_state.md`](RussianTranslation/.ai_state.md).
+Control-plane tools (FEATURES_INDEX **L11**):
+[`cohort_engine.py`](RussianTranslation/src/pilot/cohort_engine.py) (offline multi-profile),
+[`no_pwg_residual_ledger.py`](RussianTranslation/src/pilot/no_pwg_residual_ledger.py) (C-49).
 **`<ab>`/`<ls>` tooltips + RU-column abbreviation purity** (a pwg_ru-specific
 policy, distinct from mw_ru's "leave `<gram>` untouched" rule above —
 grammatical-category abbreviations stay international Latin with a tooltip,
