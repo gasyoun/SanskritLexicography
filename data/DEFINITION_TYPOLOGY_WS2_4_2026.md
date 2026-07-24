@@ -76,34 +76,36 @@ python data/definition_typology_classifier.py --verify data/definition_typology_
 
 - **Sample:** n=79, stratified (up to 2 rows × 4 classes × 12 priority dicts) drawn from the reservoir sample (seed 1483).
 - **Gold:** single-pass adjudication against the rubric above (same session as the classifier; **not** independent double-key).
-- **Accuracy:** **49/79 = 62.0%**.
+- **Accuracy (live `--verify`):** **63/79 = 79.7%**.
+- **Per-class precision (pred → gold match):** residual 19/19 = 100%; encyclopedic 14/16 = 87.5%; equivalent 25/36 = 69.4%; synonym 5/8 = 62.5%.
 
 ### Confusion (predicted → gold)
 
 | | gold synonym | gold equivalent | gold encyclopedic | gold residual |
 |---|--:|--:|--:|--:|
-| **pred synonym** | 8 | 6 | 4 | 0 |
-| **pred equivalent** | 1 | 14 | 4 | 0 |
-| **pred encyclopedic** | 5 | 7 | 8 | 2 |
-| **pred residual** | 0 | 0 | 1 | 19 |
+| **pred synonym** | 5 | 2 | 1 | 0 |
+| **pred equivalent** | 8 | 25 | 2 | 1 |
+| **pred encyclopedic** | 1 | 0 | 14 | 1 |
+| **pred residual** | 0 | 0 | 0 | 19 |
 
 ### What the errors are
 
 | Error mode | Count (approx.) | Implication |
 |---|--:|---|
-| synonym ↔ equivalent (short single vs multi-gloss) | ~11 | Classical boundary is soft; comma noise and citation stripping still leak |
-| short ENC ↔ equivalent | ~11 | Length gates vs true paraphrastic content — the hard call for bilingual dicts |
-| residual missing multi-sense after `=` | 1–2 | eqn-head residual too greedy on mixed bodies (partially fixed; residual still high-precision) |
-| residual high precision | 19/20 OK | Cross-ref / Lbody / empty classes are reliable |
+| gold synonym predicted as equivalent | 8 | Comma-chains of 2 short glosses still under-fired when residual POS/citation crumbs inflate token counts |
+| synonym ↔ equivalent (other) | ~3 | Classical boundary is soft on single-NP vs two-gloss |
+| short ENC ↔ equivalent / residual | ~3 | Length gates vs true paraphrastic content — hard call for bilingual dicts |
+| residual high precision | 19/19 OK | Cross-ref / Lbody / empty / equation classes are reliable |
 
-**Honest ceiling for this pass.** 62% on a *class-stratified hard sample* is not production-grade annotation. Residual and name-formula equivalent are usable now; synonym vs equivalent vs short-encyclopedic needs either (a) human double-key on a fixed 300×7 pool (ATLAS_FAIR round 2) or (b) a supervised model over that gold. The distribution table is still directionally informative for family fingerprints (SCH ≠ PWG is robust to the measured error rate).
+**Honest ceiling for this pass.** ~80% on a *class-stratified hard sample* is a usable first-pass floor for residual and encyclopedic mass; synonym recall is the weak cell. Family fingerprints (SCH ≠ PWG) are robust. Production claims still need either (a) human double-key on a fixed 300×7 pool (ATLAS_FAIR round 2) or (b) a supervised model over that gold. An earlier draft of this report printed 49/79 = 62.0% from a pre-tune intermediate; the live classifier + gold table above is authoritative (`--verify`).
 
 ## Open items (not this handoff)
 
-1. **Wilson `E.` split** — peel etymology appendices before classifying the gloss.
+1. **Wilson `E.` split** — peel etymology appendices before classifying the gloss (partially present; still under-separates synonym vs equivalent on WIL).
 2. **ATLAS_FAIR review pool** — 300 entries × 7 dicts, double-keyed, on this rubric (roadmap Part I item 6).
 3. **Sense-level, not record-level** — numbered multi-sense bodies currently collapse to one encyclopedic label; a sense-splitter would raise synonym/equivalent recovery inside PWG/PW.
 4. **Independent second annotator** — κ against this gold before any paper claim.
+5. **`--all` full 44-dict census** — CLI flag shipped; full re-run optional when a longer wall-clock budget is free.
 
 ## Provenance
 
@@ -113,7 +115,8 @@ python data/definition_typology_classifier.py --verify data/definition_typology_
 | Model | Grok 4.5 (`grok-4.5`), Opus-lock override |
 | Date | 24-07-2026 |
 | Records classified | 926,759 across 15 dicts |
-| Gold precision | 49/79 = 62.0% (stratified hard sample) |
+| Gold precision | 63/79 = 79.7% (stratified hard sample; live `--verify`) |
 | Roadmaps updated | L1 Definition typology ○→◐; WS2.4 first-pass noted |
+| PR | [#698](https://github.com/gasyoun/SanskritLexicography/pull/698) (core) + follow-up accuracy/docs |
 
 _Dr. Mārcis Gasūns_

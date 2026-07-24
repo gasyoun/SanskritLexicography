@@ -16,7 +16,7 @@ not an error.
 
 ### Added
 
-- **Definition typology classifier WS2.4 (H1483).** Rubric (synonym / equivalent / encyclopedic / residual) + 15-dict distribution over 926,759 csl-orig records + stratified gold sample (49/79 = 62.0%). Report [`data/DEFINITION_TYPOLOGY_WS2_4_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md); script [`data/definition_typology_classifier.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/definition_typology_classifier.py); TSV outputs beside the script. Closes the L1 “○ not started” ATLAS_FAIR micro-gap as ◐ first-pass (double-key pool still open).
+- **Definition typology classifier WS2.4 (H1483).** Rubric (synonym / equivalent / encyclopedic / residual) + 15-dict distribution over 926,759 csl-orig records + stratified gold sample (**63/79 = 79.7%** live `--verify`). Report [`data/DEFINITION_TYPOLOGY_WS2_4_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md); script [`data/definition_typology_classifier.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/definition_typology_classifier.py) (`--all` for every csl-orig dict); TSV outputs beside the script. Closes the L1 “○ not started” ATLAS_FAIR micro-gap as ◐ first-pass (double-key pool still open).
 
 - **Markup-tag heatmap + RU-gloss gap cards (H1527).** Offline single-file HTML under
   [`data/viz/`](https://github.com/gasyoun/SanskritLexicography/tree/master/data/viz) charting the
@@ -24,6 +24,10 @@ not an error.
   no re-crawl, no gitignored gap list). Linked from findings/progress dashboards and
   [`data/FAIR_RELEASE_1.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/FAIR_RELEASE_1.md).
   Rebuild: `python data/viz/build_viz_pages.py`.
+
+### Fixed
+
+- **H1483 report accuracy figure.** Docs previously quoted a pre-tune 49/79=62.0%; live `--verify` against the committed gold is **63/79=79.7%** (residual precision 100%). Report, roadmaps, and changelog aligned.
 
 ## [1.58.0] — 22-07-2026
 
