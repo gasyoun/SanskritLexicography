@@ -75,8 +75,8 @@ CROSSREF_RE = re.compile(
     r"s\.\s*v\.|"
     r"cf\.|"
     r"vgl\.|"
-    r"see\b.*|"
-    r"siehe\b.*|"
+    r"see\b.{0,80}$|"
+    r"siehe\b.{0,80}$|"
     r"=\s*\S{1,40}\s*$|"  # pure equation only (short; no multi-sense continuation)
     r"idem\.?|"
     r"ib(?:id)?\.?|"
@@ -228,17 +228,6 @@ def n_tok_early(s: str) -> int:
     return len(content_tokens(s))
 
 
-# Trailing citation / apparatus noise stripped before synonym-list heuristics.
-_CITATION_TAIL_RE = re.compile(
-    r"(?:"
-    r",?\s*(?:part=|seq=|type=|n=)[^\s,;]*|"  # SCH apparatus crumbs
-    r",?\s*\b(?:L|MBh|R|TS|TBr|AV|VS|MW|H|MED|TRIK|Amit|S|Mgs|"
-    r"KAUŚ|VAITĀN|MAHĀVY|DHĀTUP|MṚCCH|MEGH|RĀJA-TAR)\.?\b"
-    r"(?:\s*[\d.,;IVXivx/–-]+)*|"
-    r",?\s*(?:[A-ZĀ-ŪṚṢŚ][A-Za-zĀ-ūṛṣś.]*\s+[\d.,;IVXivx/–\s]+)+"
-    r")+\s*$",
-    re.I,
-)
 # Leading POS / etym-parenthetical crumbs for gloss-core analysis
 _POS_LEAD_RE = re.compile(
     r"^(?:(?:m|f|n|mfn|m\.n\.|adj|a|adv|ind|pron|prep|interj|part|v|vb|"
@@ -248,22 +237,28 @@ _POS_LEAD_RE = re.compile(
 _ETYM_PAREN_RE = re.compile(r"\([^)]{0,80}\)")
 # Sentence-ending periods only (ignore "m." / "f." / "N." / "pr." abbreviations)
 _SENT_END_RE = re.compile(r"(?<![A-Za-zĀ-ū])\.(?=\s|$)")
+# Linear citation-unit remover (never nested +…+\s*$ — ACC-style chains
+# ``Baudh. IO. 395. L. 758…`` catastrophic-backtracked the old tail regex).
+_CITE_UNIT_RE = re.compile(
+    r"\b(?:L|MBh|R|TS|TBr|AV|VS|MW|H|MED|TRIK|Amit|Mgs|"
+    r"KAUŚ|VAITĀN|MAHĀVY|DHĀTUP|MṚCCH|MEGH|NP|Peters)\.?"
+    r"(?:\s*[\d.,;IVXivx/–-]{0,40})?"
+    r"|"
+    r"\b[A-ZĀ-ŪṚṢŚ][A-Za-zĀ-ūṛṣś.]{0,24}\.?"
+    r"(?:\s+[\d.,;IVXivx/–-]{1,40})?",
+    re.I,
+)
 
 
 def strip_apparatus(plain: str) -> str:
-    """Drop trailing citation/apparatus crumbs and SCH part= noise."""
-    s = re.sub(r"\bpart=[^\s,;]*", " ", plain)
-    s = re.sub(r"\bseq=\d+", " ", s)
-    s = re.sub(r"\btype=[^\s,;]*", " ", s)
-    s = re.sub(r"\bn=\d+", " ", s)
-    s = _CITATION_TAIL_RE.sub("", s)
-    s = MULTISPACE.sub(" ", s).strip(" ,;.—-")
-    return s
+    """Drop SCH part= noise and citation-like units. Linear-time only."""
+    s = re.sub(r"\b(?:part|seq|type|n)=[^\s,;]*", " ", plain)
+    s = _CITE_UNIT_RE.sub(" ", s)
+    return MULTISPACE.sub(" ", s).strip(" ,;.—-")
 
 
 def sentence_period_count(plain: str) -> int:
     """Count likely sentence-ending periods, not POS abbreviations."""
-    # remove single-letter / short abbreviations before counting
     s = re.sub(r"\b(?:[mfn]|mfn|adj|adv|ind|pr|N|cf|vgl|pl|sg|du)\.", " ", plain, flags=re.I)
     s = re.sub(r"\b[A-ZĀ-Ū]{1,4}\.", " ", s)  # work sigla like MBh.
     return len(_SENT_END_RE.findall(s))
@@ -669,7 +664,8 @@ def main():
             f"syn={100*counts['synonym']/e:.1f}%  "
             f"eqv={100*counts['equivalent']/e:.1f}%  "
             f"enc={100*counts['encyclopedic']/e:.1f}%  "
-            f"res={100*counts['residual']/e:.1f}%"
+            f"res={100*counts['residual']/e:.1f}%",
+            flush=True,
         )
         for c in CLASSES:
             all_samples.extend(reservoirs[c])
@@ -682,16 +678,22 @@ def main():
     write_distribution(dist_path, dist_rows)
     write_sample(sample_path, all_samples)
 
-    # fingerprint of inputs for the report
+    # Lightweight fingerprint (size + first/last 64 KiB) — full SHA1 of every
+    # csl-orig file is multi-minute I/O on --all and is not needed for the report.
     fp_parts = []
     for code in dict_codes:
         p = root / code / f"{code}.txt"
         if p.is_file():
+            st = p.stat()
             h = hashlib.sha1()
+            h.update(str(st.st_size).encode())
             with open(p, "rb") as fh:
-                for chunk in iter(lambda: fh.read(1 << 20), b""):
-                    h.update(chunk)
-            fp_parts.append(f"{code}:{h.hexdigest()[:12]}")
+                head = fh.read(65536)
+                h.update(head)
+                if st.st_size > 65536:
+                    fh.seek(max(0, st.st_size - 65536))
+                    h.update(fh.read(65536))
+            fp_parts.append(f"{code}:{st.st_size}:{h.hexdigest()[:12]}")
 
     meta_path = out_dir / "definition_typology_run_meta.tsv"
     with open(meta_path, "w", encoding="utf-8", newline="\n") as fh:
