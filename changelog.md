@@ -16,6 +16,8 @@ not an error.
 
 ### Added
 
+- **Definition typology classifier WS2.4 (H1483).** Rubric (synonym / equivalent / encyclopedic / residual) + 15-dict distribution over 926,759 csl-orig records + stratified gold sample (49/79 = 62.0%). Report [`data/DEFINITION_TYPOLOGY_WS2_4_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/DEFINITION_TYPOLOGY_WS2_4_2026.md); script [`data/definition_typology_classifier.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/definition_typology_classifier.py); TSV outputs beside the script. Closes the L1 “○ not started” ATLAS_FAIR micro-gap as ◐ first-pass (double-key pool still open).
+
 - **Markup-tag heatmap + RU-gloss gap cards (H1527).** Offline single-file HTML under
   [`data/viz/`](https://github.com/gasyoun/SanskritLexicography/tree/master/data/viz) charting the
   committed E39/H683 TSV and H685 `ru_gloss_gap_stats.json` (Trust Blocks, raw download links;
