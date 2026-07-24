@@ -8,13 +8,23 @@ post-judge path: the 38-unit freq test is complete, 37/38 were publishable, and
 the lone sev-3 belongs to the NWS owner-row slip class that the deterministic
 audit gate catches.
 
+## Cold start (skills first)
+
+| Phase | Skill | Stop |
+|---|---|---|
+| Gate | [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md) | NO-GO or stale GO → do not spend |
+| Spend | [`/pwg-bounded-run`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-bounded-run.md) | one profile, `max-wide=1`, `--stop-before-promote` |
+| Drain | [`/pwg-drain`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-drain.md) | next worklist head only after gate |
+| Close | [`/pwg-window-close`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-window-close.md) | unbound manifest / bad audit → no promote |
+
+Live queue: [`../../.ai_state.md`](../../.ai_state.md). Operator depth + symptom cookbook:
+[`docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md)
+§0 / §11. Never copy canary `--max-agents 1` onto multi-key windows.
+
 **Production route (H1110, since 18-07-2026):** `headless_worker.py` under a
 profile-bound **manifest v2** (`execution_route: claude-cli-headless`), driven
 by `coordinator.py` / `bounded_staged_run.py`. The Max-Workflow lane
-(`run_pilot_wf.opt2.js`) is **forensics only**. Skills that wrap the paid path:
-[`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
-→ [`/pwg-bounded-run`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-bounded-run.md)
-→ [`/pwg-window-close`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-window-close.md).
+(`run_pilot_wf.opt2.js`) is **forensics only**.
 
 **QA policy — BALANCED, token-optimized (2026-06-27, [`../../TOKEN_OPTIMIZATION_2026-06-27.md`](../../TOKEN_OPTIMIZATION_2026-06-27.md)):**
 the bulk pass is **translate (Sonnet, single-turn inlined) + four FREE Python gates on 100 %
@@ -508,9 +518,86 @@ one lane's kill-budget, cost, or concurrency envelope into another without a mea
 launch/replay. H220 is the standing counter-example: the dense-root kill gate was correct
 for verb batches but false-killed valid no-fallback no-PWG singleton cards.
 
-## Worked example — one real root, start to finish (vid, 04-07-2026)
+## Worked example A — headless live-gate + canary (H1447, 22-07-2026) — **primary teaching case**
 
-A concrete run, with real numbers, so the loop above isn't just abstract steps.
+Real measured headless path (not Workflow). Full packet:
+[`pwg_ru/h1447/H1447_C4_LIVE_GATE_2026-07-22.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1447/H1447_C4_LIVE_GATE_2026-07-22.md).
+Skill: [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md) on profile **c4**.
+
+### A0 — offline floor (no tokens)
+
+```powershell
+python src\pilot\window_selftest.py
+python src\pilot\lang_parity_check.py
+```
+
+H1447: **180/180** selftests PASS; parity **73** entries no drift (counts grow — re-run).
+
+### A1 — health (representative ≥5 KB)
+
+Via [`h963_c4_gate0_probe.py`](h963_c4_gate0_probe.py) (strict: measured ≥ 30 000 ms ⇒ NO-GO):
+
+| Reading | Elapsed | Result |
+|---|---|---|
+| warm-up | 17 972 ms | success, 0 connection errors |
+| measured | **16 621 ms** | **GATE-0 PASS** (under 30 s ceiling) |
+
+Prompt was 6 828 B (≥ 5 KiB floor), schema-carrying. Contrast prior NO-GOs on the
+same route (H963 104 870 ms; H1110 98 625 ms) — **today's** reading is what
+matters; never reuse H1447's GO a day later.
+
+### A2 — canary (`dq_canary_puregloss`) on headless manifest v2
+
+| Field | Value |
+|---|---|
+| `execution_route` | `claude-cli-headless` |
+| `profile_slot` | `c4` |
+| `model_identifier` | `claude-sonnet-5` |
+| `key_provenance` | `synthetic_control` (never promote) |
+| senses | **3/3** |
+| SAN-LOSS / TNMASK / unmapped / schema invalid | **0** |
+| cost | **$0.573**, `cost_evaluable=true` |
+| `--max-agents` | **1** is correct **only** for this single-key canary |
+
+Command shape (illustrative): `headless_worker.py <manifest> --output … --status-out …
+--only-profile c4 --max-agents 1 --timeout 180` with `CLAUDE_CONFIG_DIR` bound to
+the c4 profile. Synthetic output is **never** promoted
+(`provenance_class = synthetic_control`).
+
+### A3 — mechanical LIVE_GO → then stop or spend
+
+H1447 derived **LIVE_GO**, then the production medium50 starter stopped honestly
+at fleet warm-up (**zero production keys translated that session**). The teaching
+point: gate GO is necessary; it does **not** auto-authorize spend without a
+fresh gate at spend time and a prepared lease.
+
+### A4 — production window shape after a fresh GO (template)
+
+When the journal queues a real window (e.g. medium50 w1, 3 keys):
+
+```powershell
+# skills preferred: /pwg-bounded-run then /pwg-window-close
+python src\pilot\gen_opt_harness2.py <root_or_window>
+python src\pilot\coordinator.py prepare LEASE_ID `
+  --profile-slot c4 --config-dir C:\path\to\claude-c4 `
+  --executor-lane serial-whole-card
+# headless execute: max-wide=1, --stop-before-promote, NO --max-agents 1 on multi-key
+python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
+# /pwg-window-close: promote only if bound manifest-v2 + gates green
+```
+
+Omit `--max-agents` on multi-key / heal-capable windows so manifest
+`max_translate_agents` / `max_heal_agents` apply. Worker hard-refuses
+`N < selected_keys` before paid calls (H1618).
+
+---
+
+## Worked example B — historical Workflow scale sample (vid, 04-07-2026)
+
+**Not the production executor.** Kept only for scale intuition (presplit fan-out,
+token volume). New attempts use example A + headless.
+
+A concrete run, with real numbers.
 `vid` (55 sub-cards, 5 giant heads at 141-193 `<ls>` citations each):
 
 1. **Preflight:** `python src\pilot\perf_preflight.py vid as BU yuj` → recommended
