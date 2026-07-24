@@ -5739,6 +5739,124 @@ def test_ledger_stamps_gen_model():
         fail('bare-run ledger gen_model should be None, got %r' % row.get('gen_model'))
 
 
+def test_h1553_wall_clock_auto_derive():
+    """H1553 / H1403 A2: wall_clock auto-derive + wall_clock_source stamping.
+
+    - explicit CLI wins over mtime derive
+    - derive from fixture mtimes when CLI omitted
+    - unavailable → null + source tag (no crash)
+    """
+    import types
+    from window_reports import derive_wall_clock_minutes, build_production_metrics
+
+    # CLI wins
+    minutes, source = derive_wall_clock_minutes(
+        None, {'generated_at': '2026-07-01T00:00:00Z'}, 12.5)
+    if source != 'cli' or minutes != 12.5:
+        fail('CLI wall-clock must win: got minutes=%r source=%r' % (minutes, source))
+
+    # derive from mtime - generated_at
+    tmp = tempfile.mkdtemp()
+    wf = os.path.join(tmp, 'wf_output.json')
+    with open(wf, 'w', encoding='utf-8') as f:
+        f.write('{}')
+    # set mtime to a known epoch and generated_at 10 minutes earlier
+    end = 1_700_000_600  # fixed epoch seconds
+    os.utime(wf, (end, end))
+    gen_at = datetime.datetime.fromtimestamp(
+        end - 600, tz=datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+    minutes, source = derive_wall_clock_minutes(wf, {'generated_at': gen_at}, None)
+    if source != 'derived_mtime':
+        fail('expected derived_mtime, got %r (minutes=%r)' % (source, minutes))
+    if minutes is None or abs(minutes - 10.0) > 0.05:
+        fail('derived minutes expected ~10, got %r' % minutes)
+
+    # unavailable: no meta, no crash
+    minutes, source = derive_wall_clock_minutes(wf, {}, None)
+    if source != 'unavailable' or minutes is not None:
+        fail('missing generated_at must be unavailable: minutes=%r source=%r'
+             % (minutes, source))
+
+    # unavailable: negative / zero delta
+    gen_future = datetime.datetime.fromtimestamp(
+        end + 60, tz=datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+    minutes, source = derive_wall_clock_minutes(wf, {'generated_at': gen_future}, None)
+    if source != 'unavailable' or minutes is not None:
+        fail('future generated_at must be unavailable: minutes=%r source=%r'
+             % (minutes, source))
+
+    # build_production_metrics stamps wall_clock_source
+    args = types.SimpleNamespace(
+        wall_clock_minutes=None, max_input_tokens=None, max_output_tokens=None,
+        max_cache_read_tokens=None, max_cache_create_tokens=None,
+        max_total_tokens=None, weekly_cap_fired=False,
+        weekly_cap_cumulative_tokens=None, metrics_note=None)
+    metrics = build_production_metrics(args, wf_path=wf, workflow_meta={'generated_at': gen_at})
+    if metrics.get('wall_clock_source') != 'derived_mtime':
+        fail('metrics missing derived source: %r' % metrics)
+    if metrics.get('wall_clock_minutes') is None:
+        fail('metrics must carry derived wall_clock_minutes: %r' % metrics)
+
+    args.wall_clock_minutes = 3.0
+    metrics = build_production_metrics(args, wf_path=wf, workflow_meta={'generated_at': gen_at})
+    if metrics.get('wall_clock_source') != 'cli' or metrics.get('wall_clock_minutes') != 3.0:
+        fail('CLI must stamp wall_clock_source=cli: %r' % metrics)
+
+    args.wall_clock_minutes = None
+    metrics = build_production_metrics(args, wf_path=wf, workflow_meta={})
+    if metrics.get('wall_clock_source') != 'unavailable':
+        fail('unavailable must stamp source: %r' % metrics)
+    if 'wall_clock_minutes' not in metrics or metrics['wall_clock_minutes'] is not None:
+        fail('unavailable must keep null wall_clock_minutes: %r' % metrics)
+
+    # ledger fixture shows wall_clock_source
+    from window_reports import write_reports
+    base = {'null_cards': [], 'requeue': [], 'crashed': [], 'gates': {},
+            'glue': None, 'collect': {}, 'requeue_transient': [], 'requeue_defect': [],
+            'judge_sample': {'keys': [], 'sample_count': 0, 'seed': None,
+                             'clean_key_count': 0}}
+    report = dict(base, workflow=wf, root='h1553wc', keys=['k1'],
+                  workflow_meta={'gen_model': 'claude-sonnet-5', 'generated_at': gen_at},
+                  production_metrics=metrics)
+    # re-build with available path for a non-null stamp
+    args.wall_clock_minutes = 7.0
+    report['production_metrics'] = build_production_metrics(args)
+    out = tempfile.mkdtemp()
+    write_reports(report, True, out_dir=out)
+    ledger = os.path.join(out, 'window_ledger.jsonl')
+    rows = [json.loads(ln) for ln in open(ledger, encoding='utf-8') if ln.strip()]
+    pm = (rows[0].get('production_metrics') or {})
+    if pm.get('wall_clock_source') != 'cli' or pm.get('wall_clock_minutes') != 7.0:
+        fail('ledger production_metrics missing wall_clock_source: %r' % pm)
+
+
+def test_h1553_stage_boundary_emit():
+    """H1553 / H1403 A2: stage_boundary emit path exists and writes one JSONL event."""
+    from dashboard_events import emit_stage_boundary
+    tmp = tempfile.mkdtemp()
+    log = os.path.join(tmp, 'dashboard_events.jsonl')
+    rec = emit_stage_boundary(
+        'audit_start', window_tag='h1553', root='testRoot',
+        data={'cards': 2}, log_path=log)
+    if rec.get('type') != 'stage_boundary':
+        fail('event type must be stage_boundary, got %r' % rec.get('type'))
+    if rec.get('state') != 'audit_start':
+        fail('stage must land in state, got %r' % rec.get('state'))
+    if not os.path.exists(log):
+        fail('stage_boundary must append to the event log')
+    lines = [ln for ln in open(log, encoding='utf-8') if ln.strip()]
+    if len(lines) != 1:
+        fail('expected 1 event line, got %d' % len(lines))
+    loaded = json.loads(lines[0])
+    if loaded.get('type') != 'stage_boundary' or loaded.get('data', {}).get('window_tag') != 'h1553':
+        fail('logged event mismatch: %r' % loaded)
+    # second boundary does not raise
+    emit_stage_boundary('audit_end', window_tag='h1553', root='testRoot', log_path=log)
+    lines = [ln for ln in open(log, encoding='utf-8') if ln.strip()]
+    if len(lines) != 2:
+        fail('expected 2 stage_boundary lines, got %d' % len(lines))
+
+
 def test_save_merge_better_attempt_wins():
     """H304: 'latest requeue wins' is WRONG — a requeue can regress a card (gam h0_63_sam_0
     went 2->3->7 missing fragments). --merge must keep the better prior attempt: complete
@@ -7564,6 +7682,8 @@ def main():
         test_defect_fragment_denylist_round_trip,
         test_write_reports_emits_defect_fsha_file,
         test_ledger_stamps_gen_model,
+        test_h1553_wall_clock_auto_derive,
+        test_h1553_stage_boundary_emit,
         test_save_merge_better_attempt_wins,
         test_defer_monster_ledger_dedupes,
         test_coordinator_cost_gate_enforced,

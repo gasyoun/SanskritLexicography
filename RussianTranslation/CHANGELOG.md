@@ -10,6 +10,23 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1403 A2+A3 production residues (H1553 Track A)
+
+- **Wall-clock auto-derive** in `window_reports.derive_wall_clock_minutes` /
+  `build_production_metrics`: when `--wall-clock-minutes` is omitted, derive from
+  `mtime(wf_output) - meta.generated_at` and stamp `wall_clock_source` ∈
+  `{cli, derived_mtime, unavailable}` on the ledger (never invent tokens).
+- **`stage_boundary` events** via `dashboard_events.emit_stage_boundary`, emitted at
+  audit start/end so later economy analysis can separate generation wall from operator idle.
+- **Promote defect-key refusal** in `promote_final_cards.py`: auto-discovers
+  `requeue.defect.keys.txt` (or `--defect-keys`); intersection with incoming keys
+  exits non-zero unless `--force` (closes the H255_NO_PWG_W02 promote-then-revert footgun).
+- **`promote_ready_partial_clean`** helper + CLI `--ready-partial-report` (default dry-run;
+  `--apply` required to write; wave-1 tests use temp stores only).
+- Pinned by `test_h1553_wall_clock_auto_derive`, `test_h1553_stage_boundary_emit`, and
+  the promote selftest defect/ready_partial block. LANG_PARITY entry
+  `h1553_wall_clock_defect_ready_partial` (GAP vs EN; helpers lang-agnostic).
+
 ### Added — full-audit improvement umbrella plan (2026 H2)
 
 - `/ask` layered plan after a full RussianTranslation audit: offline wave-1 portfolio
