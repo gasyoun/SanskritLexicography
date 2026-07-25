@@ -515,6 +515,16 @@ def looks_foreign_literal(gloss, context):
     value = (gloss or '').strip()
     if not value:
         return False
+    # H1624 G1: prefer the shared stage-0 gloss_lang classifier (pwg_mask) so residue
+    # gates and the masker agree on DE vs LA/EN. Falls through to the local heuristics
+    # when the classifier is unavailable or returns ambig/de with a foreign surface.
+    try:
+        import pwg_mask as _pm
+        detail = _pm.classify_pct_detail(value, context or '')
+        if detail.get('gloss_lang') in _pm.NON_TRANSLATE_LANGS:
+            return True
+    except Exception:
+        pass
     if LATIN_FLAG_CONTEXT.search(context or ''):
         return True
     # LATIN_BINOMIAL ("Capitalized-word lowercase-word", meant for species names like
