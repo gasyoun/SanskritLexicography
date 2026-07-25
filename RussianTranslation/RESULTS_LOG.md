@@ -4,6 +4,29 @@ _Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 25-07-2026 - H858 c4 live gate: HEALTH_NOGO (rate_limit), no window opened
+
+Executor: Opus 5 (`claude-opus-5[1m]`). `/pwg-live-gate c4`, one attempt, no reroll.
+Packet: [`pwg_ru/h858/H858_C4_LIVE_GATE_HEALTH_NOGO_2026-07-25.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h858/H858_C4_LIVE_GATE_HEALTH_NOGO_2026-07-25.md).
+
+| Reading | Elapsed | Classification | Verdict input |
+|---|---|---|---|
+| warm-up | 17 878 ms | `rate_limit` | fail-closed -> STOP |
+| measured | - | never ran | - |
+
+`gate_reason = HEALTH_NOGO` -> `verdict = NO-GO`. **Not a latency block** (17.9 s is well
+inside the 30 000 ms ceiling) - c4 is rate-limited. No canary, no bounded window, nothing
+promoted; one paid warm-up call was spent. The H858 Part B validation window stays owed.
+
+c4 has produced no clean pair since 23-07: `rate_limit` x2 on 24-07, `auth` x2 earlier on
+25-07, `rate_limit` today.
+
+### Probe defect found by this run (integrity)
+
+| Defect | Impact | Tracking |
+|---|---|---|
+| `h963_c4_gate0_probe.py` hardcodes `RUN_ID`, then filters the append-only log by it and keeps the last row per purpose - so every run re-reads the whole history and can pair today's warm-up with a **stale** `measured` | today it only mis-stated a NO-GO reason (cited a 23-07 reading of 168 352 ms for a call never made). The inverse is the hazard: a stale passing `measured` + a passing warm-up prints `GATE-0 VERDICT: PASS`, which Step 3 turns into `LIVE_GO` and authorizes paid spend off a two-day-old number | [#729](https://github.com/gasyoun/SanskritLexicography/issues/729) |
+
 ## 25-07-2026 - H858 Part B: german-anchor repair — offline verification (NO paid run)
 
 Executor: Opus 5 (`claude-opus-5`). Isolated worktree off `origin/master` @ `f96361ca`.
