@@ -714,7 +714,10 @@ def _reachable_defs(defs, start):
 # Stripping these from the *generation* schema only — the promote/annotate scripts below
 # still add them back onto the promoted card from the unmodified schema file on disk.
 _POST_GENERATION_SENSE_FIELDS = (
-    'government',       # annotate_government.py / government_census.py (H335 W3)
+    'government',       # H335 W3 / H1624 G2: stamped at promote from DE via
+                         # extract_government (promote_final_cards.rows_for) and
+                         # backfilled by annotate_government.py; also on portrait
+                         # senses from microstructure.sense_node. Never model-written.
     'labels',            # planned diasystem-label annotator (Dimension 2); no generation-time
                          # prompt or annotator currently populates it either, but it is not
                          # model-generated, so it does not belong in the generation schema
