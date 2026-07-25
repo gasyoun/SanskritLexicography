@@ -41,6 +41,7 @@ import sys
 
 from csl_pyutil import esc, mark_cyrillic, render_review_sheet
 
+from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -230,9 +231,17 @@ def main():
         "ids_json": json.dumps([it["id"] for it in ITEMS]),
     } + "<script>", 1)
 
+    # H1404 binding standard. This sheet is VOTED/CLOSED — its lock of record
+    # is the retro lock derived from the committed HTML; rerunning this
+    # generator mints a new hash generation and is only legitimate as a
+    # deliberate remake (voted.md item 2), never a casual refresh.
+    html_out, chash = stamp(html_out)
+
     os.makedirs(REVIEW, exist_ok=True)
     out = os.path.join(REVIEW, SHEET_ID + "_review.html")
     io.open(out, "w", encoding="utf-8").write(html_out)
+    write_lock(SHEET_ID, chash, [it["id"] for it in ITEMS], GENERATED,
+               source_html=out)
     print("sheet:", out, "(%d items)" % len(ITEMS))
 
 

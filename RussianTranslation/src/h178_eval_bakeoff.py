@@ -45,6 +45,7 @@ Usage (in order):
 import sys, os, io, json, html, random, re, time, argparse, collections, math
 
 from csl_pyutil import mark_cyrillic, render_review_sheet
+from review_binding import stamp, write_lock
 from review_sheet_standard import DA_RATING, pwg_entry_href, slp1_iast, standard_config
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -470,8 +471,15 @@ def cmd_sheets():
         html_out = html_out.replace("</body>", RUBRIC_JS % {
             "sheet_id_json": json.dumps(sheet_id), "generated_json": json.dumps(GENERATED),
         } + "</body>")
+        # H1404 binding standard — stamped AFTER the RUBRIC_JS splice so the
+        # hash covers the final document and the widget IIFE's payload site is
+        # patched too. The h178 pilots are voted/retired (D6): rerunning is a
+        # deliberate remake only, and re-mints each sheet's lock.
+        html_out, chash = stamp(html_out)
         out = os.path.join(REVIEW, sheet_id + "_sheet.html")
         io.open(out, "w", encoding="utf-8").write(html_out)
+        write_lock(sheet_id, chash, [it["id"] for it in items], GENERATED,
+                   source_html=out)
         print("sheet:", out, "(%d items)" % len(items))
 
 

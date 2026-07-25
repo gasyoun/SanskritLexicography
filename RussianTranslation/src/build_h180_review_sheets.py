@@ -44,6 +44,7 @@ Run: python src/build_h180_review_sheets.py
 import sys, os, io, json, html, re, collections
 
 from csl_pyutil import render_review_sheet, mark_cyrillic
+from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config, slp1_iast, pwg_entry_href
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -82,9 +83,17 @@ def write_sheet(slug, cfg, items):
     config.update(cfg)
     config["generated"] = GENERATED
     doc = render_review_sheet(items, config, extras=True)
+    # H1404 binding standard: stamp the content_hash into every export site and
+    # commit-safe lock the sheet's identity (metadata only — no RU leaves the
+    # gitignored HTML). NB voted.md item 2: do not regenerate these sheets while
+    # their votes are still being worked through — localStorage survives, but a
+    # regenerated sheet gets a NEW hash and old exports stop validating strictly.
+    doc, chash = stamp(doc)
     out = os.path.join(REVIEW, f"h180_{slug}_sheet.html")
     with io.open(out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(doc)
+    write_lock(config["sheet_id"], chash, [it["id"] for it in items],
+               config["generated"], source_html=out)
     print(f"  {slug:9s} {len(items):3d} items -> {out}")
     return out
 

@@ -1,0 +1,18 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "sanskritlexicography-kochergina-okas-guda-sphic_4rows",
+  "content_hash": "sha256:72a8bdfbed911d1aa3f97b750af91ed315874b9c636666afac33a6087cf947af",
+  "generated": "19-07-2026",
+  "gate": null,
+  "n_items": 4,
+  "ids": [
+    "okas",
+    "okya",
+    "guda",
+    "sphic"
+  ],
+  "source_html": "sanskritlexicography-kochergina-okas-guda-sphic_4rows_review.html",
+  "mode": "retro-unstamped",
+  "created": "2026-07-25",
+  "tool": "review_binding.py (H1404 binding standard)"
+}

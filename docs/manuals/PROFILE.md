@@ -1,6 +1,6 @@
 # Workspace-manual profile — SanskritLexicography
 
-_Created: 11-07-2026 · Last updated: 11-07-2026_
+_Created: 11-07-2026 · Last updated: 25-07-2026_
 
 Per-repo overlay read by the
 [/workspace-manual](https://github.com/gasyoun/claude-config/blob/main/commands/workspace-manual.md)
@@ -27,6 +27,7 @@ as dedicated manuals, one handoff each (H604 ruling, 11-07-2026):
 | [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) (mw_ru + pwg_ru pipelines) | [H606](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H606-Fable_SanskritLexicography_russiantranslation-pipeline-deep-manual_11.07.26.md) | ✅ done 11-07-2026 — [RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) |
 | [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) (cross-dict analytics) | [H607](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H607-Fable_SanskritLexicography_headwordlists-analytics-deep-manual_11.07.26.md) | ✅ done 11-07-2026 — [HEADWORDLISTS_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/HEADWORDLISTS_DEEP_MANUAL.md) |
 | [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) + [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) + [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) (publication pipeline) | [H608](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H608-Fable_SanskritLexicography_papers-book-publication-deep-manual_11.07.26.md) | ✅ done 11-07-2026 → [PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) |
+| [RussianTranslation/review/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/review) + `src/gold_*.py` (G5/G6/G7 review, gold, voting sheets, binding standard) | [H1404](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1404-Fable_SanskritLexicography_deep-manual-review-gold-voting-wave1_20.07.26.md) | ✅ done 25-07-2026 — [REVIEW_GOLD_VOTING_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/REVIEW_GOLD_VOTING_DEEP_MANUAL.md) (EN core + RU reviewer chapter) |
 
 A finished deep manual lands as `docs/manuals/<SUBSYSTEM>_DEEP_MANUAL.md` (or
 `_RU.md` per audience), gets a router row, and flips its row here to done.

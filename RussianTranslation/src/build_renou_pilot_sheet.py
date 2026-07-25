@@ -38,6 +38,7 @@ import re
 import sys
 
 from csl_pyutil import render_review_sheet
+from review_binding import stamp, write_lock
 from review_sheet_standard import pwg_entry_href, standard_config
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -262,10 +263,16 @@ def main():
     config.update(standard_config(
         save_as='RussianTranslation\\review\\%s_decisions.json' % SHEET_ID))
     doc = render_review_sheet(items, config, extras=True)
+    # H1404 binding standard. VOTED/CLOSED sheet — lock of record is the retro
+    # lock from the committed HTML; a rerun is a deliberate remake only
+    # (voted.md item 2), and re-mints the lock for the new generation.
+    doc, chash = stamp(doc)
 
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
         f.write(doc)
+    write_lock(SHEET_ID, chash, [it['id'] for it in items], generated,
+               source_html=out_path)
     print('wrote %d cards -> %s (sheet_id %s)' % (len(items), out_path, SHEET_ID))
 
 
