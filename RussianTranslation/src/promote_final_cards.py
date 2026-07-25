@@ -48,6 +48,9 @@ import card_fields
 import validate_final_card_schema
 from promote_lock import PromoteClaim, ClaimBusy
 from store_path import canonical_store
+# H1624 G2: deterministic DE-side Rektion on every promoted sense (same extractor as
+# annotate_government / government.html — never invented, never from RU).
+from government_census import extract_government
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the RussianTranslation repo root
@@ -614,6 +617,10 @@ def rows_for(subkey, entry, review_status, model_version):
                 raise UnrestoredPlaceholder(
                     '%s: refusing to promote a card with unrestored placeholders: %s'
                     % (subkey, '; '.join(residue)))
+            de = sense.get('german')
+            # Always stamp from DE at promote time so new windows do not wait on a
+            # separate annotate_government backfill pass (H1624 G2). Empty list when
+            # the sense governs nothing — same shape as schemas/pwg_ru_final_card.
             yield {
                 'key1': key1,
                 'subcard': subkey,
@@ -623,7 +630,8 @@ def rows_for(subkey, entry, review_status, model_version):
                 'grammar': rec.get('grammar'),
                 'sense_tag': sense.get('tag'),
                 'ru': ru,
-                'de': sense.get('german'),
+                'de': de,
+                'government': extract_government(de),
                 'equivalence_type': sense.get('equivalence_type'),
                 'source_type': sense.get('source_type'),
                 'stratum': sense.get('stratum'),
@@ -847,6 +855,24 @@ def selftest():
     assert r['key1'] == 'pA', 'key1 must be the HEADWORD meta.root, not the sub-card key'
     assert r['subcard'] == 'p_a~~h5_00_pwg00' and r['ru'] == 'пить' and r['de'] == 'trinken'
     assert r['layer'] == 'pwg', 'base sub-card must carry an explicit layer=pwg'
+    assert r.get('government') == [], 'plain DE with no Rektion must stamp government=[]'
+    # H1624 G2: PW capitalized (Instr.) must be stamped at promote time from DE only
+    gov_entry = {'card': {'key1': 'vas~~h0_zz_pw00', 'iast': 'vas', 'notes': '', 'records': [
+        {'h': 'vas', 'grammar': '', 'senses': [
+            {'tag': 'samava', 'russian': 'обёрнутый',
+             'german': '<div n="m">— <ab>Caus.</ab> {#prativAsita#} {%gehüllt in%} '
+                       '(<ab>Instr.</ab>).',
+             'equivalence_type': 'explanatory', 'source_type': 'lexicographic',
+             'stratum': '', 'differentia': ''},
+        ]}]}, 'meta': dict(meta, root='vas', selected_keys=['vas~~h0_zz_pw00'],
+                           provenance_classes={'vas~~h0_zz_pw00': 'real'},
+                           input_hashes={'vas~~h0_zz_pw00': {
+                               'raw_sha256': '1' * 64, 'portrait_sha256': '2' * 64}}),
+                  'wf_file': 'wf_output.json'}
+    grow = list(rows_for('vas~~h0_zz_pw00', gov_entry, 'ai_translated',
+                         SELFTEST_MODEL_VERSION))[0]
+    assert grow['government'] and grow['government'][0]['cases'] == ['instr'], grow
+    assert grow['government'][0]['span'] == '(<ab>Instr.</ab>)', grow
     assert list(rows_for('x~~h0_zz_pw01', dict(entry, meta=meta), 'ai_translated',
                          SELFTEST_MODEL_VERSION))[0]['layer'] == 'pw', 'addenda sub-card -> layer=pw'
     assert r['review_status'] == 'ai_translated', 'must not auto-approve (G5 gate)'

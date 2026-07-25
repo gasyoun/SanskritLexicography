@@ -25,6 +25,7 @@ import corpus_gate as cg
 import corpus_harvest as ch
 import pwg_sources as ps   # authoritative <ls> abbreviation resolver (pwgbib)
 import pwg_ab as pab       # authoritative <ab> abbreviation resolver (pwgab)
+from government_census import extract_government  # H1624 G2: DE-side Rektion on portrait senses
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LSMAP = json.load(open(os.path.join(HERE, 'ls_source_map.json'), encoding='utf-8'))
@@ -172,12 +173,16 @@ def sense_node(seg):
     dia |= diasystem_of(cites)          # + diachronic label from dated text citations
     eq = 'equivalent' if (de and all(len(d.split()) <= 2 for d in de)) else \
          ('explanatory' if gloss else 'none')
+    # H1624 G2: structured government from the full DE segment (not gloss_de[:200]).
+    # Floor only — same extract_government as store/promote/government.html.
+    government = extract_government(seg['text'])
     return {'n': seg['n'], 'sub': seg['sub'], 'equivalents_de': de,
             'gloss_de': gloss[:200], 'equivalence_type': eq, 'grammar': grammar,
             'ab_labels': sorted(set(ab_labels)), 'diasystem': sorted(dia),
             'citations': sorted(set(cites)),
             'citations_resolved': {c: ps.resolve(c) for c in sorted(set(cites))},
-            'strata': strata_of(cites), 'examples_sa': examples}
+            'strata': strata_of(cites), 'examples_sa': examples,
+            'government': government}
 
 
 _CHIDX = None

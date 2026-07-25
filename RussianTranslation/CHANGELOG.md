@@ -10,6 +10,17 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added - H1624 G2: structured government on every DE sense at promote + portrait
+
+- [promote_final_cards.rows_for](src/promote_final_cards.py) stamps government
+  from DE via xtract_government (no wait for annotate backfill).
+- [microstructure.sense_node](src/microstructure.py) attaches the same field on
+  portrait senses; [enrich_portrait_government.py](src/pilot/enrich_portrait_government.py)
+  backfills older portraits; schema: [pwg_portrait_structural.schema.json](schemas/pwg_portrait_structural.schema.json).
+- [annotate_government.py](src/annotate_government.py) remains the store retrofit.
+- LANG_PARITY SHARED government_on_promote_and_portrait_h1624_g2. Floor-only;
+  PW capitalized (Instr.) still caught (H1308).
+
 ### Added - H1624 G1: durable gloss_lang on PWG {%…%} (DE|LA|EN)
 
 - Stage-0 [pwg_mask.py](src/pwg_mask.py): classify_pct_detail / gloss_lang_spans

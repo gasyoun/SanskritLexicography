@@ -4,6 +4,24 @@ _Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 25-07-2026 - H1624 G2: government on every DE sense (promote + portrait)
+
+Executor: Grok 4.5 · offline · no paid window.
+Closes the gap where structured Rektion only appeared after a separate
+nnotate_government backfill. Schema shape unchanged (array of hit dicts, D4/H338).
+
+| path | producer | notes |
+|---|---|---|
+| store row on promote | promote_final_cards.rows_for + xtract_government(de) | always stamped (empty list if none) |
+| store retrofit | nnotate_government.py | existing rows / drift repair |
+| portrait sense at gen | microstructure.sense_node | from full DE segment |
+| portrait backfill | nrich_portrait_government.py | older local portraits |
+| retrieval surface | government.html via uild_article_site | still re-extracts from de_raw; floor banner |
+
+Selftests: government_census selftest, nnotate_government --selftest,
+promote_final_cards --selftest (PW (Instr.)), nrich_portrait_government --selftest,
+uild_article_site --selftest. LANG_PARITY SHARED government_on_promote_and_portrait_h1624_g2.
+
 ## 25-07-2026 - H1624 G1: per-span gloss_lang on {%...%} (DE|LA|EN)
 
 Executor: Grok 4.5 (session override; handoff pinned Opus 4.8) · offline · no paid window.

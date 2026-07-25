@@ -66,7 +66,25 @@
           "additionalProperties": { "anyOf": [{ "type": "string" }, { "type": "null" }] }
         },
         "strata": { "type": "object", "additionalProperties": { "type": "string" } },
-        "examples_sa": { "type": "array", "items": { "type": "string" } }
+        "examples_sa": { "type": "array", "items": { "type": "string" } },
+        "government": {
+          "type": "array",
+          "description": "OPTIONAL (H1624 G2). Structured case-government (Rektion) markers extracted from the DE sense segment via government_census.extract_government — floor only, never invented. Empty array when the sense governs nothing. Same hit shape as pwg_ru_final_card.schema.json sense.government.",
+          "items": {
+            "type": "object",
+            "required": ["cases", "variation", "kind"],
+            "properties": {
+              "cases": {
+                "type": "array",
+                "items": { "enum": ["acc", "loc", "instr", "gen", "dat", "abl"] }
+              },
+              "variation": { "type": "boolean" },
+              "connector": { "type": "string" },
+              "kind": { "enum": ["paren-single", "paren-variation", "mit-phrase"] },
+              "span": { "type": "string" }
+            }
+          }
+        }
       }
     },
     "corpus_synonyms": {

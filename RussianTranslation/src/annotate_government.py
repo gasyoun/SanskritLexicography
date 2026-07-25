@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-r"""Backfill the translated store's ``government`` field (H335 W3(b) / H338).
+r"""Backfill the translated store's ``government`` field (H335 W3(b) / H338 / H1624 G2).
 
 Streams src/pwg_ru_translated.jsonl and, for each row, deterministically
 extracts case-government (Rektion) markers from the row's **German** text
@@ -7,6 +7,12 @@ extracts case-government (Rektion) markers from the row's **German** text
 H335 measured) via ``government_census.extract_government()``, writing the
 result to the row's ``government`` field (a list of structured hit dicts,
 possibly empty — see schemas/pwg_ru_final_card.schema.json).
+
+As of H1624 G2, **new promotions** stamp ``government`` in
+``promote_final_cards.rows_for`` from DE at write time, so this script is the
+**retrofit / drift-repair** path for older rows, not the only producer.
+Portrait senses get the same field from ``microstructure.sense_node`` (and
+``enrich_portrait_government.py`` for older portraits).
 
 Idempotent and in-place (writes a .bak unless --no-backup). Re-runnable.
 
