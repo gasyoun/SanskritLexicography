@@ -14,6 +14,20 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **#729 — the c4 health gate could pass on a stale reading (25-07-2026).**
+  [`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
+  pinned a CONSTANT `RUN_ID`, appended to that one bucket and re-read it keeping the last
+  row per purpose — so a run could pair its own warm-up with a **stale** `measured` from days
+  earlier. Observed harmlessly (a NO-GO citing a 23-07 reading of 168 352 ms for a call never
+  made); the hazard is the inverse, where a stale *passing* measured yields
+  `GATE-0 VERDICT: PASS` → `LIVE_GO` → authorized paid spend off a two-day-old number.
+  The run id is now minted per invocation and the reader matches it exactly; the old constant
+  survives as `CAMPAIGN`, a grouping label the H1110/H1447 reports cite, never a read scope.
+  Verdict derivation extracted to a pure `derive_fails()`; module `--selftest` seeds the exact
+  hazard log and proves both halves; pinned by `window_selftest.test_c4_gate0_probe_run_scope`
+  (**186/186**). Importing the module no longer fires a paid probe.
+
 ## [1.62.0] — 2026-07-25
 
 ### Fixed

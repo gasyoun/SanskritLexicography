@@ -14,11 +14,32 @@ no reroll. The historical NO-GO (warm-up 29 743 ms / measured 52 815 ms,
 Gate rule applied here is STRICTER than live_probe's own gate: live_probe
 excludes the warm-up from the ceiling, but the H963 c4 resume brief requires
 that EITHER reading at >= 30 000 ms is a NO-GO. Both are reported.
+
+RUN SCOPE (issue #729, fixed 25-07-2026)
+----------------------------------------
+`RUN_ID` used to be a CONSTANT (`h963-c4-single-profile-gate0-2026-07-16`). Every
+invocation appended to *and re-read* that one bucket, then kept the last row per
+purpose -- so a run could pair its own warm-up with a **stale** `measured` from days
+earlier. The 25-07-2026 gate run printed `measured latency 168352 ms >= 30000 ms` as a
+NO-GO reason for a measured call it never made (that row was from 23-07).
+
+There it only mis-stated a reason. The hazard is the INVERSE: a stale *passing* measured
+row plus a passing warm-up leaves the fail list empty and prints `GATE-0 VERDICT: PASS`,
+citing a measured call never made this session -- and that verdict is what
+`/pwg-live-gate` Step 3 turns into `LIVE_GO`, which authorizes `/pwg-bounded-run` to
+spend. A paid window opened off a two-day-old number, from inside the gate whose whole
+purpose is "a stale GO never authorizes a window".
+
+So the run id is now minted per invocation (`new_run_id()`), and the reader
+(`readings_for`) matches it EXACTLY. The old constant survives as `CAMPAIGN`, a prefix
+for historical grouping -- it is a label, never a scope. The verdict is derived by the
+pure `derive_fails()`, exercised without any live call by `--selftest`.
 """
 import json
 import os
 import shutil
 import sys
+import tempfile
 import time
 from pathlib import Path
 
@@ -26,7 +47,8 @@ sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE))
+if str(HERE) not in sys.path:
+    sys.path.insert(0, str(HERE))
 
 import max_account_orchestrator as mao  # noqa: E402
 from headless_worker import claude_argv_prefix  # noqa: E402
@@ -49,121 +71,235 @@ def resolve_claude_bin():
 
 CONFIG_DIR = r"D:\ClaudeTools\profiles\claude4\.claude"
 ACCOUNT = "c4"
-RUN_ID = "h963-c4-single-profile-gate0-2026-07-16"
+# The historical campaign label. A GROUPING PREFIX, never a run scope -- see the module
+# docstring. Reports that cite `run_id=h963-c4-single-profile-gate0-2026-07-16` (H1110
+# 18-07, H1447 22-07) still match rows by this prefix.
+CAMPAIGN = "h963-c4-single-profile-gate0-2026-07-16"
 EVENTS = HERE / "output" / "h963_c4_gate0_probe_events.jsonl"
 PAYLOAD_BYTES = 6491          # repo default; actual prompt 6828 B (H909 runbook, v1.9.19)
 CEILING_MS = mao.PROBE_LATENCY_CEILING_MS   # 30 000
 STRICT_CEILING_MS = 30_000    # resume brief: EITHER reading >= this is NO-GO
+CONN_ERR_CLASSES = {"process", "timeout"}
 
-EVENTS.parent.mkdir(parents=True, exist_ok=True)
 
-# Belt-and-suspenders: pin the store to a scratch path so nothing can touch the
-# canonical 11,605-row store. (live_probe makes no store write by construction.)
-os.environ["PWG_RU_STORE"] = str(HERE / "output" / "h963_c4_gate0_scratch_store.jsonl")
+def new_run_id(campaign=CAMPAIGN, now=None, pid=None):
+    """A run id unique to THIS invocation, under the campaign prefix.
 
-CLAUDE_BIN = resolve_claude_bin()
-ARGV_PREFIX = claude_argv_prefix(CLAUDE_BIN)
+    The UTC second alone is not enough: two invocations can share it, and the whole point
+    of this identifier is that no two runs can ever read each other's rows. The pid makes
+    a collision impossible in practice while keeping the id greppable and human-readable.
+    """
+    stamp = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(now))
+    return "%s/%s-pid%d" % (campaign, stamp, os.getpid() if pid is None else pid)
 
-prompt = mao._probe_prompt(PAYLOAD_BYTES)
-actual_prompt_bytes = len(prompt.encode("utf-8"))
 
-print("=" * 72)
-print("H963 Gate-0 — single-profile c4 D-K health attempt")
-print("=" * 72)
-print("date (UTC)        : %s" % time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
-print("profile           : %s  (%s)" % (ACCOUNT, CONFIG_DIR))
-print("exact model       : %s" % mao.EXACT_GEN_MODEL)
-print("payload_bytes arg : %d" % PAYLOAD_BYTES)
-print("actual prompt B   : %d  (floor %d B / 5 KiB=5120)" % (actual_prompt_bytes, mao.PROBE_MIN_PAYLOAD_BYTES))
-print("ceiling           : %d ms (strict: either reading >= %d ms => NO-GO)" % (CEILING_MS, STRICT_CEILING_MS))
-print("run_id            : %s" % RUN_ID)
-print("events            : %s" % EVENTS)
-print("claude bin        : %s" % CLAUDE_BIN)
-print("resolved argv     : %s" % ARGV_PREFIX)
-print("-" * 72)
+def readings_for(events_path, run_id):
+    """The `probe_call` rows THIS run wrote -- EXACT run_id match, in file order.
 
-if actual_prompt_bytes < 5120:
-    print("RESULT: NO-GO — payload undersized (%d B < 5 KiB)" % actual_prompt_bytes)
-    raise SystemExit(2)
-
-# PRE-FLIGHT (no call made): never spend the one no-reroll attempt on a mis-resolved
-# binary. A bare ['claude'] fallback is the D-R defect and is NOT a health reading.
-if os.name == "nt" and (len(ARGV_PREFIX) != 2 or not ARGV_PREFIX[0].lower().endswith("node.exe")):
-    print("PRE-FLIGHT ABORT (no probe call made, no attempt consumed):")
-    print("  claude_argv_prefix(%r) -> %s" % (CLAUDE_BIN, ARGV_PREFIX))
-    print("  expected [<node.exe>, <cli*.cjs>]; a bare fallback cannot be launched by")
-    print("  CreateProcess. This is a tooling-resolution defect (D-R), NOT a c4 health signal.")
-    raise SystemExit(3)
-
-verdict_exc = None
-t0 = time.monotonic()
-try:
-    measured_ms = mao.live_probe(
-        CONFIG_DIR,
-        claude=CLAUDE_BIN,
-        payload_bytes=PAYLOAD_BYTES,
-        model=mao.EXACT_GEN_MODEL,
-        latency_ceiling_ms=CEILING_MS,
-        events_path=str(EVENTS),
-        run_id=RUN_ID,
-        account=ACCOUNT,
-    )
-except SystemExit as exc:
-    verdict_exc = str(exc)
-    measured_ms = None
-wall_s = time.monotonic() - t0
-
-print("wall clock        : %.1f s" % wall_s)
-print("-" * 72)
-
-# Re-read the append-only events log: it holds BOTH readings even on a fail-closed exit.
-readings = []
-if EVENTS.exists():
-    for line in EVENTS.read_text(encoding="utf-8").splitlines():
+    Deliberately exact, never a prefix/campaign match: a prefix match is precisely the
+    defect (#729), because it re-admits every historical row into the current verdict.
+    """
+    path = Path(events_path)
+    if not path.exists():
+        return []
+    rows = []
+    for line in path.read_text(encoding="utf-8").splitlines():
         if not line.strip():
             continue
         row = json.loads(line)
-        if row.get("run_id") == RUN_ID and row.get("event") == "probe_call":
-            readings.append(row)
+        if row.get("run_id") == run_id and row.get("event") == "probe_call":
+            rows.append(row)
+    return rows
 
-print("RAW READINGS (append-only telemetry, this run_id):")
-for r in readings:
-    print("  purpose=%-8s elapsed_ms=%-7s classification=%-10s output_bytes=%s"
-          % (r.get("purpose"), r.get("elapsed_ms"), r.get("classification"), r.get("output_bytes")))
 
-by_purpose = {r.get("purpose"): r for r in readings}
-warm = by_purpose.get("warmup")
-meas = by_purpose.get("measured")
+def derive_fails(readings, strict_ceiling_ms=STRICT_CEILING_MS):
+    """The gate policy as a pure function of THIS run's readings. Empty list == PASS.
 
-print("-" * 72)
-fails = []
-if verdict_exc:
-    print("live_probe fail-closed: %s" % verdict_exc)
+    Both readings must be present, `success`, free of connection/process errors, and
+    strictly below the ceiling. A missing reading is a FAIL, never a skip -- that is what
+    makes a run whose measured phase never executed a NO-GO instead of silently
+    inheriting someone else's measured row.
+    """
+    by_purpose = {r.get("purpose"): r for r in readings}
+    fails = []
+    for label, key in (("warm-up", "warmup"), ("measured", "measured")):
+        r = by_purpose.get(key)
+        if r is None:
+            fails.append("%s reading absent (probe stopped before it ran)" % label)
+            continue
+        cls = r.get("classification")
+        ms = r.get("elapsed_ms")
+        if cls != "success":
+            fails.append("%s classification=%s (not success)" % (label, cls))
+        if cls in CONN_ERR_CLASSES:
+            fails.append("%s connection/process error (%s)" % (label, cls))
+        if isinstance(ms, int) and ms >= strict_ceiling_ms:
+            fails.append("%s latency %d ms >= %d ms ceiling" % (label, ms, strict_ceiling_ms))
+    return fails
 
-CONN_ERR_CLASSES = {"process", "timeout"}
-for label, r in (("warm-up", warm), ("measured", meas)):
-    if r is None:
-        fails.append("%s reading absent (probe stopped before it ran)" % label)
-        continue
-    cls = r.get("classification")
-    ms = r.get("elapsed_ms")
-    if cls != "success":
-        fails.append("%s classification=%s (not success)" % (label, cls))
-    if cls in CONN_ERR_CLASSES:
-        fails.append("%s connection/process error (%s)" % (label, cls))
-    if isinstance(ms, int) and ms >= STRICT_CEILING_MS:
-        fails.append("%s latency %d ms >= %d ms ceiling" % (label, ms, STRICT_CEILING_MS))
 
-print()
-if fails:
-    print("GATE-0 VERDICT: NO-GO")
-    for f in fails:
-        print("  - %s" % f)
+def main():
+    EVENTS.parent.mkdir(parents=True, exist_ok=True)
+
+    # Belt-and-suspenders: pin the store to a scratch path so nothing can touch the
+    # canonical 11,605-row store. (live_probe makes no store write by construction.)
+    os.environ["PWG_RU_STORE"] = str(HERE / "output" / "h963_c4_gate0_scratch_store.jsonl")
+
+    run_id = new_run_id()
+    claude_bin = resolve_claude_bin()
+    argv_prefix = claude_argv_prefix(claude_bin)
+
+    prompt = mao._probe_prompt(PAYLOAD_BYTES)
+    actual_prompt_bytes = len(prompt.encode("utf-8"))
+
+    print("=" * 72)
+    print("H963 Gate-0 — single-profile c4 D-K health attempt")
+    print("=" * 72)
+    print("date (UTC)        : %s" % time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+    print("profile           : %s  (%s)" % (ACCOUNT, CONFIG_DIR))
+    print("exact model       : %s" % mao.EXACT_GEN_MODEL)
+    print("payload_bytes arg : %d" % PAYLOAD_BYTES)
+    print("actual prompt B   : %d  (floor %d B / 5 KiB=5120)"
+          % (actual_prompt_bytes, mao.PROBE_MIN_PAYLOAD_BYTES))
+    print("ceiling           : %d ms (strict: either reading >= %d ms => NO-GO)"
+          % (CEILING_MS, STRICT_CEILING_MS))
+    print("run_id            : %s   (unique to THIS run — #729)" % run_id)
+    print("campaign          : %s   (grouping label only, never a read scope)" % CAMPAIGN)
+    print("events            : %s" % EVENTS)
+    print("claude bin        : %s" % claude_bin)
+    print("resolved argv     : %s" % argv_prefix)
+    print("-" * 72)
+
+    if actual_prompt_bytes < 5120:
+        print("RESULT: NO-GO — payload undersized (%d B < 5 KiB)" % actual_prompt_bytes)
+        return 2
+
+    # PRE-FLIGHT (no call made): never spend the one no-reroll attempt on a mis-resolved
+    # binary. A bare ['claude'] fallback is the D-R defect and is NOT a health reading.
+    if os.name == "nt" and (len(argv_prefix) != 2 or not argv_prefix[0].lower().endswith("node.exe")):
+        print("PRE-FLIGHT ABORT (no probe call made, no attempt consumed):")
+        print("  claude_argv_prefix(%r) -> %s" % (claude_bin, argv_prefix))
+        print("  expected [<node.exe>, <cli*.cjs>]; a bare fallback cannot be launched by")
+        print("  CreateProcess. This is a tooling-resolution defect (D-R), NOT a c4 health signal.")
+        return 3
+
+    verdict_exc = None
+    t0 = time.monotonic()
+    try:
+        mao.live_probe(
+            CONFIG_DIR,
+            claude=claude_bin,
+            payload_bytes=PAYLOAD_BYTES,
+            model=mao.EXACT_GEN_MODEL,
+            latency_ceiling_ms=CEILING_MS,
+            events_path=str(EVENTS),
+            run_id=run_id,
+            account=ACCOUNT,
+        )
+    except SystemExit as exc:
+        verdict_exc = str(exc)
+    wall_s = time.monotonic() - t0
+
+    print("wall clock        : %.1f s" % wall_s)
+    print("-" * 72)
+
+    # Re-read the append-only events log: it holds BOTH readings even on a fail-closed
+    # exit -- but ONLY the rows this run wrote (#729).
+    readings = readings_for(EVENTS, run_id)
+
+    print("RAW READINGS (append-only telemetry, THIS run only — run_id %s):" % run_id)
+    if not readings:
+        print("  (none — no probe call completed)")
+    for r in readings:
+        print("  purpose=%-8s elapsed_ms=%-7s classification=%-10s output_bytes=%s"
+              % (r.get("purpose"), r.get("elapsed_ms"), r.get("classification"),
+                 r.get("output_bytes")))
+
+    print("-" * 72)
+    if verdict_exc:
+        print("live_probe fail-closed: %s" % verdict_exc)
+
+    fails = derive_fails(readings)
+    by_purpose = {r.get("purpose"): r for r in readings}
+
     print()
-    print("STOP. No canary. No production window. No reroll.")
-    raise SystemExit(1)
+    if fails:
+        print("GATE-0 VERDICT: NO-GO")
+        for f in fails:
+            print("  - %s" % f)
+        print()
+        print("STOP. No canary. No production window. No reroll.")
+        return 1
 
-print("GATE-0 VERDICT: PASS")
-print("  warm-up  %d ms (success)" % warm["elapsed_ms"])
-print("  measured %d ms (success), strictly below %d ms" % (meas["elapsed_ms"], STRICT_CEILING_MS))
-raise SystemExit(0)
+    print("GATE-0 VERDICT: PASS")
+    print("  warm-up  %d ms (success)" % by_purpose["warmup"]["elapsed_ms"])
+    print("  measured %d ms (success), strictly below %d ms"
+          % (by_purpose["measured"]["elapsed_ms"], STRICT_CEILING_MS))
+    return 0
+
+
+# ---------------------------------------------------------------------------
+def _row(run_id, purpose, ms, cls="success"):
+    return {"event": "probe_call", "run_id": run_id, "purpose": purpose,
+            "elapsed_ms": ms, "classification": cls, "output_bytes": 1400}
+
+
+def selftest():
+    """Regression pin for #729. Pure — makes no live call, spends nothing.
+
+    The load-bearing case is the LAST one: a log carrying a historical PASSING pair, and
+    a fresh run whose measured phase never executed. Under the old constant-`RUN_ID`
+    reader that combination printed `GATE-0 VERDICT: PASS`.
+    """
+    d = tempfile.mkdtemp()
+    try:
+        log = Path(d) / "events.jsonl"
+        old, new = CAMPAIGN, new_run_id(now=0, pid=1)
+        rows = [
+            _row(old, "warmup", 17972),            # 22-07 historical pair -- both PASSING,
+            _row(old, "measured", 16621),          # which is what makes this the hazard
+            _row(new, "warmup", 17878, "rate_limit"),   # this run: fail-closed on warm-up
+        ]
+        log.write_text("".join(json.dumps(r) + "\n" for r in rows), encoding="utf-8")
+
+        # 1. the reader is scoped to the run, not to the campaign or the file
+        mine = readings_for(log, new)
+        assert len(mine) == 1 and mine[0]["purpose"] == "warmup", mine
+        assert readings_for(log, old) == rows[:2], 'an unrelated run must still read its own rows'
+
+        # 2. THE PIN: a run whose measured phase never ran is NO-GO, and says so about
+        #    ITS OWN missing reading -- never a latency borrowed from another run.
+        fails = derive_fails(mine)
+        assert any("measured reading absent" in f for f in fails), fails
+        assert any("warm-up classification=rate_limit" in f for f in fails), fails
+        assert not any("168352" in f or "16621" in f for f in fails), \
+            'a NO-GO reason must never cite a reading this run did not take'
+
+        # 3. RED: the pre-#729 behaviour (campaign-wide read, last row per purpose) would
+        #    have paired this run's warm-up with the 22-07 measured. Prove that pairing is
+        #    a PASS, so the pin above is protecting against a real false-GO, not a typo.
+        contaminated = [r for r in rows]                    # every row, as the old reader saw it
+        by_purpose = {r["purpose"]: r for r in contaminated}
+        assert by_purpose["measured"]["elapsed_ms"] == 16621
+        assert derive_fails([by_purpose["measured"], _row(new, "warmup", 17878)]) == [], \
+            'the contaminated pairing must be demonstrably PASS-shaped (that is the hazard)'
+
+        # 4. a genuine clean pair still passes; a slow one still fails
+        assert derive_fails([_row(new, "warmup", 17972), _row(new, "measured", 16621)]) == []
+        slow = derive_fails([_row(new, "warmup", 17972), _row(new, "measured", 40003)])
+        assert len(slow) == 1 and "40003 ms >= 30000 ms" in slow[0], slow
+
+        # 5. run ids are unique per invocation even within the same UTC second
+        assert new_run_id(now=0, pid=1) != new_run_id(now=0, pid=2)
+        assert new_run_id(now=0, pid=1).startswith(CAMPAIGN + "/"), 'campaign stays a prefix'
+
+        print("h963_c4_gate0_probe selftest: 5/5 OK (no live call, nothing spent)")
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+
+
+if __name__ == "__main__":
+    if "--selftest" in sys.argv[1:]:
+        selftest()
+        raise SystemExit(0)
+    raise SystemExit(main())

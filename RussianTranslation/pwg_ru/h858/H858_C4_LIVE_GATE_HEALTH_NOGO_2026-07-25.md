@@ -79,6 +79,25 @@ citing a measured call that was never made this session — a gate that authoriz
 spend off a two-day-old number. Tracked as
 [integrity issue #729](https://github.com/gasyoun/SanskritLexicography/issues/729).
 
+**FIXED 25-07-2026** ([PR #732](https://github.com/gasyoun/SanskritLexicography/pull/732)):
+the run id is now minted per invocation (`new_run_id()` = campaign prefix + UTC second +
+pid) and the reader (`readings_for`) matches it EXACTLY — never by prefix, which is the
+defect itself. The old constant survives as `CAMPAIGN`, a grouping label the H1110/H1447
+reports still cite, but it is no longer a read scope. Verdict derivation moved to the pure
+`derive_fails()`, and the module now carries a `--selftest` that seeds exactly this log
+shape (a historical PASSING pair + a fresh warm-up-only run) and asserts both halves: the
+scoped read is NO-GO naming its OWN absent measured reading, and the contaminated pairing
+is demonstrably PASS-shaped. Pinned in `window_selftest.test_c4_gate0_probe_run_scope`
+(186/186). Re-running today's verdict through the fixed reader gives, correctly:
+
+```
+  - warm-up reading absent (probe stopped before it ran)
+  - measured reading absent (probe stopped before it ran)
+```
+
+for a fresh run that made no call — and for the 16:02Z run, the warm-up `rate_limit` alone.
+The 168 352 ms citation cannot recur.
+
 ## Resume condition (unchanged, and it is not a formality)
 
 Per the skill's hand-off: **make no paid translation call** — not a canary rerun, not a
