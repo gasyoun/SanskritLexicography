@@ -15,9 +15,9 @@ Authored 11-07-2026 (H606). Refreshed 18-07-2026 under H1245. Headless-first rew
 ## Verification
 
 ```
-LAST_VERIFIED: 24-07-2026
-VERIFIED_BY: Grok 4.5
-COMMANDS_SPOT_RUN: script_census.py (306 files); harvest_launch_stats.py (473 ledger rows); H1447 packet for worked example numbers
+LAST_VERIFIED: 25-07-2026
+VERIFIED_BY: Grok 4.5 (grok-4.5), H1623
+COMMANDS_SPOT_RUN: 4
 ```
 
 ## Improvement backlog
@@ -56,6 +56,7 @@ Re-run `script_census.py` and `harvest_launch_stats.py` when the pipeline tree o
 
 | Date | Change | By |
 |---|---|---|
+| 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |
 | 11-07-2026 | Subject manual authored (H606) | Fable 5 (`claude-fable-5`) |
 | 18-07-2026 | Metadoc created (H1245) | Fable 5 (`claude-fable-5`) |
 | 24-07-2026 | Headless-first rewrite (H1622) | Grok 4.5 |

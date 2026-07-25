@@ -1,6 +1,6 @@
 # Maintainer Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 24-07-2026_
+_Created: 10-07-2026 · Last updated: 25-07-2026_
 
 For the person (or agent) who **operates and extends** this repository. If you
 just want to *use* the data, read the
@@ -43,7 +43,7 @@ live tooling embedded in the active subprojects.
 | [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) | Two LLM translation pipelines: `mw_ru` (Monier-Williams → RU, 287,358 cards, **done**) and `pwg_ru` (Petersburg Dict → RU/EN, **live production on headless CLI / manifest v2**, ~106k headwords, store 11,603 rows as of 24-07-2026) + grammar/TM assets. Gitignored local store/TM not in a clone. Operator depth: [RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md). | Active | maintainer + researcher |
 | [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) | Headword exports across ~16 CDSL dictionaries; key1/key2 semantics; comparison + union tooling | Active | data-reuser |
 | [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) | Book draft — 12 of the ~14 planned chapters drafted as of 18-07-2026, plus BOOK_PLAN / BRILL_PROPOSAL / RIGHTS_TABLE / LITERATURE_CROSSWALK and its own CHANGELOG (venue: de Gruyter primary since the M01 ruling) | Active | researcher |
-| [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Paper-pipeline notes/reviews/data (A30–A58 as of 18-07-2026: A30, A31, A33–A43, A58) | Active | researcher |
+| [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Paper-pipeline notes/reviews/data (A30–A67 as of 25-07-2026: A30, A31, A33–A36, A40, A42, A43, A58, A67 (papers/ inventory)) | Active | researcher |
 | [Syntax-Lectures/](https://github.com/gasyoun/SanskritLexicography/tree/master/Syntax-Lectures) | Russian particle-syntax lectures + interactive HTML explorer | Active | **student** |
 | [ReverseDictionary/](https://github.com/gasyoun/SanskritLexicography/tree/master/ReverseDictionary) | Working materials for an unpublished reverse dictionary (~266,820 headwords) | Active | researcher/student |
 | [IndischeSprueche/](https://github.com/gasyoun/SanskritLexicography/tree/master/IndischeSprueche) | Böhtlingk subhāṣita dataset (7,537 JSONL records) | Active (minimal) | data-reuser |
