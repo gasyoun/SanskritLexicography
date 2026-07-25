@@ -1,6 +1,6 @@
 # STUDENT_MANUAL_RU.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 25-07-2026_
 
 Companion record for [docs/manuals/STUDENT_MANUAL_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/STUDENT_MANUAL_RU.md) (Russian).
 
@@ -15,8 +15,8 @@ Authored 10-07-2026 (H479/H535). Refreshed 18-07-2026 under [H1245](https://gith
 ## Verification
 
 ```
-LAST_VERIFIED: 18-07-2026
-VERIFIED_BY: Fable 5 (claude-fable-5), H1245
+LAST_VERIFIED: 25-07-2026
+VERIFIED_BY: Grok 4.5 (grok-4.5), H1623
 COMMANDS_SPOT_RUN: 2
 ```
 
@@ -48,6 +48,7 @@ Refreshed by [/workspace-manual](https://github.com/gasyoun/claude-config/blob/m
 
 | Date | Change | By |
 |---|---|---|
+| 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |
 | 10-07-2026 | Subject manual authored (H479/H535); ё dropped per H543 11-07-2026 | Fable 5 (`claude-fable-5`) |
 | 18-07-2026 | Metadoc created (H1245 estate refresh); ReverseDictionary section rewritten to post-incident reality | Fable 5 (`claude-fable-5`) |
 
