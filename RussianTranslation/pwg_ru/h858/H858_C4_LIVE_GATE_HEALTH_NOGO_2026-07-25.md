@@ -98,6 +98,37 @@ is demonstrably PASS-shaped. Pinned in `window_selftest.test_c4_gate0_probe_run_
 for a fresh run that made no call — and for the 16:02Z run, the warm-up `rate_limit` alone.
 The 168 352 ms citation cannot recur.
 
+## Attempt 2 — 18:18Z, same verdict, and the #729 fix proving itself
+
+Re-run 2 h 16 min after the first, through the **fixed** probe
+([v1.63.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.63.0)):
+
+| Reading | Elapsed | Classification | UTC |
+|---|---|---|---|
+| warm-up | **19 903 ms** | **`rate_limit`** | 2026-07-25T18:18:27Z |
+| measured | — | **never ran** | — |
+
+```
+GATE-0 VERDICT: NO-GO
+  - warm-up classification=rate_limit (not success)
+  - measured reading absent (probe stopped before it ran)
+```
+
+Two things worth reading off this.
+
+**c4's rate-limit window has not reset.** Three `rate_limit` readings now span 24-07 →
+25-07 18:18Z, with two `auth` readings between them; latency is fine in every one of them
+(9.9–19.9 s, all far inside the 30 000 ms ceiling). The blocker is quota/account state and
+nothing else — no code change, no route change, and no amount of re-probing will move it.
+Further attempts today are spend without information.
+
+**The #729 fix works, verified on its first live run.** The RAW READINGS block printed
+**one** row — this run's — under a per-invocation run id
+(`…-2026-07-16/2026-07-25T18:18:08Z-pid20556`), and the NO-GO reasons name this run's own
+absent measured reading. Under the old constant `RUN_ID` this same run would have re-read
+all 10 historical rows and cited the 23-07 `168 352 ms` again. The verdict is now derived
+only from readings the run actually took.
+
 ## Resume condition (unchanged, and it is not a formality)
 
 Per the skill's hand-off: **make no paid translation call** — not a canary rerun, not a
