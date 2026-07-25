@@ -1,6 +1,6 @@
 # RUSSIANTRANSLATION_DEEP_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 25-07-2026_
+_Created: 18-07-2026 · Last updated: 25-07-2026 (H1634 link)_
 
 Companion record for [docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) (subsystem deep manual, H606).
 
@@ -34,6 +34,7 @@ COMMANDS_SPOT_RUN: 4
 | 8 | EN operator checklist subsection | open |
 | 9 | pwg_ru.md sibling metadoc | open |
 | 10 | Capability Q/N matrix (layers → questions) | **done** 25-07 — pwg_ru.md §8 + deep manual §2b |
+| 11 | Link DE editorial principles datasheet (H1634) | **done** 25-07 — §2c + cold-start table → EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md |
 
 ## Known limitations
 

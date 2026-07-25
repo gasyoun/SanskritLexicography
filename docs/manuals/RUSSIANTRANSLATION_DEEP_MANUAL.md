@@ -101,6 +101,7 @@ in this order on first contact.
 | Judge-model policy (Sonnet bulk, Opus on rejects) | [research/JUDGE_POLICY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/JUDGE_POLICY.md) |
 | The five harvested Sa→Ru dictionaries (Russian) | [src/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/README.md) |
 | **What markup layers can / cannot answer** (Q/N matrix) | [pwg_ru.md §8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md) (canonical; editor RU) + **§2b below** (EN summary) |
+| **DE editorial principles** (derived vs voted vs undecided) | [EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md) (H1634) |
 
 Trust order when they disagree: **command output** (`root_window_status.py`,
 `window_status.json`) > `.ai_state.md` > the dated docs. Several docs carry
@@ -161,16 +162,18 @@ editor for the sole operator of these drafts.
 
 Full table: [pwg_ru.md §8.0](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md).
 
+**Editorial principles (derived / voted / undecided + confidence):**
+[EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md)
+(H1634) — field inventory after H1624 G1–G6; G5 style tags and G7 Palsule remain blocked.
+
 | Phase | Added to / derived from **German** | Not on German |
 |---|---|---|
 | Print/XML already | {#}, <ls>, <ab>, <div>, {%…%}, PWG Nachträge | — |
 | Pre-LLM merge | PW + SCH + PWKVN + NWS German bodies, labeled in raw; portrait; NWS owners | RU/EN text |
-| Pre-LLM transform | mask {Tn} skeleton of DE | — |
-| Derived indexes | Renou from <ls>; government from (Instr.) in DE; ab stats | evidence on RU |
+| Pre-LLM transform | mask {Tn} skeleton of DE; `gloss_lang` on `{%…%}` (G1) | — |
+| Derived indexes | Renou; government; form_labels / form_notes; citation_edges; edition_rel; derivation conflict flags | evidence on RU |
 | Parallel data | grammar/Zaliznyak (not in prompt) | — |
-| Post-LLM | — | 
-u/n, vidence*, 
-eview_status, provenance, site tooltips |
+| Post-LLM | — | ru/en, evidence*, review_status, provenance, site tooltips |
 
 Example pre-LLM inputs (local): [nakzatra.raw.txt](../../RussianTranslation/src/pilot/input/nakzatra.raw.txt) · [nakzatra.portrait.json](../../RussianTranslation/src/pilot/input/nakzatra.portrait.json).
 

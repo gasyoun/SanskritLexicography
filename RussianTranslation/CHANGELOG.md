@@ -10,6 +10,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Documented — German-side editorial principles datasheet (H1634)
+
+- New
+  [pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md)
+  (+ metadoc): field inventory after H1624 G1–G6 — **derived / voted / undecided**
+  with confidence, design fence, G5 (H1306) and G7 (Palsule) blockers, form_notes
+  and form_labels. Cross-linked from [pwg_ru.md](pwg_ru.md) §8.0 / §8.4 and deep
+  manual §2c.
+- Does **not** invent style or abbrev policy; does not rewrite the store.
+
 ## [1.62.0] - 2026-07-25
 
 ### Added - H1404 Wave 1: review/gold/voting deep manual + sheet↔decisions binding standard

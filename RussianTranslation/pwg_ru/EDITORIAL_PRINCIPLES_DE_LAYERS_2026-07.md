@@ -1,4 +1,4 @@
-# Editorial principles — German-side layers (H1624 G1–G6)
+# Editorial principles — German-side layers (H1624 G1–G6 + form layer)
 
 _Created: 25-07-2026 · Last updated: 25-07-2026_
 
@@ -19,6 +19,19 @@ the extractor that produces it deterministically.
 
 Cross-referenced from [pwg_ru.md §8.0](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md)
 and [RUSSIANTRANSLATION_DEEP_MANUAL.md §2b–§2c](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md).
+
+
+## Design fence (non-negotiable)
+
+| Do | Do not |
+|---|---|
+| Attach structure/indexes derived from DE markup | Rewrite 19th-c. German orthography |
+| Label supplement layers / owners / span types | Inject Russian into `de` / raw DE |
+| Store derived fields on portrait / sense schema | Put `corpus_gate` / `review_status` into DE body |
+| Keep grammar off the translate prompt (A/B already rejected) | Re-open grammar-in-prompt without a new measured A/B |
+| Classify shared schema/path changes in [LANG_PARITY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md) | Fix EN-only or RU-only without a ledger row |
+
+One-line rule: **German layers thicken the edition graph; they do not smuggle RU, review scores, or quality labels into the DE string.**
 
 ## How to read this table
 
@@ -59,6 +72,21 @@ Rule cue reference (do not rename `rule_id` values lightly — they are a stable
 
 Honest floor-vs-ceiling banner stays on [government.html](https://gasyoun.github.io/SanskritLexicography/government.html) per H1624 design fence.
 
+
+## Form layer (H1624 sibling of G2) — `form_labels` + `form_notes`
+
+H1624 also shipped a DE-side morphosyntax layer that is **not** Rektion. Handed
+as PRs [#717](https://github.com/gasyoun/SanskritLexicography/pull/717) /
+[#718](https://github.com/gasyoun/SanskritLexicography/pull/718); inventory required
+by [H1634](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1634-Sonnet_SanskritLexicography_pwg-de-editorial-principles-doc_25.07.26.md).
+
+| Field | Source | Derived / voted | Confidence |
+|---|---|---|---|
+| `form_labels` (number / gender / voice / case_form) | DE `<ab>sg./du./pl.</ab>`, `<lex>m.</lex>` / unambiguous `masc./fem./neutr.`, `act./med./pass.`, `nom./voc.` via [`form_labels.extract_form_labels`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/form_labels.py) | derived | Floor: bare `<ab>n.</ab>` is **not** gender (too often "note"); never invents labels |
+| `form_notes` (dedicated nom./voc.) | Same DE markers; first-class field separate from multi-axis `form_labels` and from `government` | derived | High on narrow axis; shape `{case: nom|voc, kind, span}` via `extract_form_notes` |
+
+Stamped at promote + portrait; backfill via `annotate_form_labels.py`. LANG_PARITY: `form_labels_number_gender_voice_h1624`, `form_notes_nom_voc_dedicated_h1624`.
+
 ## G3 — `citation_edges` (normalized `<ls>` graph)
 
 | Field | Source | Derived / voted | Confidence |
@@ -89,6 +117,13 @@ Honest floor-vs-ceiling banner stays on [government.html](https://gasyoun.github
 | `conflict` (bool), `conflict_kind` | `compound_status == 'differs'` (PWG split ≠ index `compound_members`) | **derived + undecided flag** | Measured: **4,226 / 39,539 rows (10.69%)** flagged `differs` (H1624 G6 conflict-rate report) — never auto-adjudicated |
 | `needs_human` (bool) | `compound_status` in `{differs, index-only}` | **derived + undecided flag** | Same measured rate; this is the field that routes the ~4.2k disagreements to a future `/review-sheet` sample (N11), not a silent resolution |
 
+
+## G7 — DHĀTUP. → Palsule wiring — blocked
+
+| Field | Source | Derived / voted | Confidence |
+|---|---|---|---|
+| DHĀTUP. tooltip / Palsule concordance link | Would wire from Palsule XLS once present | **undecided (data-gated)** | Confidence: **zero today**. XLS absent; delegated to [H1333](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1333-Opus_RussianTranslation_pwg-ru-dhatup-palsule-wire-from-xls_19.07.26.md). Do not invent a machine list. |
+
 ## Field-family summary
 
 | Family | Bucket | Notes |
@@ -98,7 +133,9 @@ Honest floor-vs-ceiling banner stays on [government.html](https://gasyoun.github
 | G3 `citation_edges` | derived | Ceiling bounded by `ls_source_map`; honest coverage % |
 | G4 `edition_rel` | derived (+ voted display names, optional) | Machine class ships without waiting on typology vote |
 | G5 H1306 DE tags | **voted, unratified** | Zero confidence until `h1306_style.decisions.json` |
+| form_labels / form_notes | derived | Not Rektion; nom/voc dedicated field |
 | G6 `derivation`/`conflict`/`needs_human` | derived + undecided flag | 10.69% measured disagreement, routed to human review, not resolved |
+| G7 Palsule | **data-gated** | XLS absent; H1333 |
 
 ## Explicit non-goals of this datasheet
 
@@ -113,5 +150,10 @@ Honest floor-vs-ceiling banner stays on [government.html](https://gasyoun.github
 - [RUSSIANTRANSLATION_DEEP_MANUAL.md §2b–§2c](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) — operator-facing English twin
 - [H1306](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1306-Fable_RussianTranslation_pwg-ru-style-research-doublets-apresyan_19.07.26.md) — owns the G5 vote
 - [H1282 archive](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1282-Opus_SanskritLexicography_pwg-ru-derivation-portrait-enrichment_19.07.26.md) — G6 residue origin
+
+## Provenance (dual-run salvage)
+
+- First land: [PR #737](https://github.com/gasyoun/SanskritLexicography/pull/737) (Claude Code session, 25-07-2026) — G1–G6 core tables.
+- Gap fill: [PR #738](https://github.com/gasyoun/SanskritLexicography/pull/738) (Grok 4.5) — design fence, **form_labels/form_notes** (H1634 Do list), G7 blocked table, metadoc, LANG_PARITY pointers.
 
 _Dr. Mārcis Gasūns_
