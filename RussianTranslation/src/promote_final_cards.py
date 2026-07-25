@@ -52,7 +52,7 @@ from store_path import canonical_store
 # annotate_government / government.html — never invented, never from RU).
 from government_census import extract_government
 # H1624 form-layer: number / gender / nom|voc / voice — sibling of Rektion.
-from form_labels import extract_form_labels
+from form_labels import extract_form_labels, extract_form_notes
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the RussianTranslation repo root
@@ -635,6 +635,9 @@ def rows_for(subkey, entry, review_status, model_version):
                 'de': de,
                 'government': extract_government(de),
                 'form_labels': extract_form_labels(de),
+                # Dedicated nom/voc form-note field (not Rektion; not mixed into
+                # number/gender/voice consumers — H1624 form_notes).
+                'form_notes': extract_form_notes(de),
                 'equivalence_type': sense.get('equivalence_type'),
                 'source_type': sense.get('source_type'),
                 'stratum': sense.get('stratum'),
@@ -860,6 +863,7 @@ def selftest():
     assert r['layer'] == 'pwg', 'base sub-card must carry an explicit layer=pwg'
     assert r.get('government') == [], 'plain DE with no Rektion must stamp government=[]'
     assert r.get('form_labels') == [], 'plain DE with no form labels must stamp form_labels=[]'
+    assert r.get('form_notes') == [], 'plain DE with no nom/voc must stamp form_notes=[]'
     # H1624 G2: PW capitalized (Instr.) must be stamped at promote time from DE only
     gov_entry = {'card': {'key1': 'vas~~h0_zz_pw00', 'iast': 'vas', 'notes': '', 'records': [
         {'h': 'vas', 'grammar': '', 'senses': [
@@ -894,8 +898,12 @@ def selftest():
                          SELFTEST_MODEL_VERSION))[0]
     axes = {(h['axis'], h['value']) for h in frow['form_labels']}
     assert ('gender', 'm') in axes and ('number', 'pl') in axes and ('case_form', 'voc') in axes, frow
-    # Rektion loc must NOT land in form_labels
+    # Dedicated form_notes field for nom/voc
+    assert frow['form_notes'] and frow['form_notes'][0]['case'] == 'voc', frow
+    assert frow['form_notes'][0]['span'] == '(<ab>voc.</ab>)', frow
+    # Rektion loc must NOT land in form_labels or form_notes
     assert not any(h.get('value') == 'loc' for h in frow['form_labels']), frow
+    assert not any(n.get('case') in ('loc', 'instr', 'acc') for n in frow['form_notes']), frow
     assert list(rows_for('x~~h0_zz_pw01', dict(entry, meta=meta), 'ai_translated',
                          SELFTEST_MODEL_VERSION))[0]['layer'] == 'pw', 'addenda sub-card -> layer=pw'
     assert r['review_status'] == 'ai_translated', 'must not auto-approve (G5 gate)'

@@ -1,10 +1,13 @@
 #!/usr/bin/env python
-r"""Backfill store ``form_labels`` from DE (H1624 form-layer).
+r"""Backfill store ``form_labels`` + ``form_notes`` from DE (H1624 form-layer).
 
-Sibling of annotate_government.py. Streams the translated store and stamps
-``form_labels = extract_form_labels(de)`` on every row (number / gender /
-nom|voc / voice). New promotions already stamp this in promote_final_cards;
-this script is the retrofit for older rows.
+Sibling of annotate_government.py. Streams the translated store and stamps:
+
+  * ``form_labels`` — number / gender / case_form / voice multi-axis list
+  * ``form_notes``  — dedicated nom/voc form-note field only
+
+New promotions already stamp both in promote_final_cards; this script is the
+retrofit for older rows.
 
   python src/annotate_form_labels.py              # annotate store in place
   python src/annotate_form_labels.py --dry-run
@@ -22,7 +25,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from form_labels import extract_form_labels
+from form_labels import extract_form_labels, extract_form_notes
 from store_path import canonical_store
 
 STORE = canonical_store(os.path.join(HERE, 'pwg_ru_translated.jsonl'))
@@ -45,22 +48,31 @@ def selftest():
     hits = extract_form_labels(de)
     axes = {(h['axis'], h['value']) for h in hits}
     assert ('gender', 'm') in axes and ('number', 'pl') in axes and ('case_form', 'voc') in axes, hits
-    assert extract_form_labels('') == []
+    notes = extract_form_notes(de)
+    assert notes and notes[0]['case'] == 'voc', notes
+    assert extract_form_labels('') == [] and extract_form_notes('') == []
     print('annotate_form_labels selftest: OK')
 
 
 def run(store, dry_run, no_backup):
     rows = load_rows(store)
-    populated = 0
+    populated = n_notes = 0
     for r in rows:
-        fl = extract_form_labels(r.get('de'))
+        de = r.get('de')
+        fl = extract_form_labels(de)
+        fn = extract_form_notes(de)
         r['form_labels'] = fl
+        r['form_notes'] = fn
         if fl:
             populated += 1
-    print('=== FORM LABELS ANNOTATION ===')
-    print('store rows            : %d' % len(rows))
-    print('rows with >=1 label   : %d (%.1f%%)' % (
+        if fn:
+            n_notes += 1
+    print('=== FORM LABELS + FORM NOTES ANNOTATION ===')
+    print('store rows              : %d' % len(rows))
+    print('rows with form_labels   : %d (%.1f%%)' % (
         populated, 100 * populated / max(1, len(rows))))
+    print('rows with form_notes    : %d (%.1f%%)  # nom/voc only' % (
+        n_notes, 100 * n_notes / max(1, len(rows))))
     if dry_run:
         print('(dry run — store not written)')
         return rows

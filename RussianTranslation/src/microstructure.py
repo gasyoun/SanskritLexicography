@@ -26,7 +26,7 @@ import corpus_harvest as ch
 import pwg_sources as ps   # authoritative <ls> abbreviation resolver (pwgbib)
 import pwg_ab as pab       # authoritative <ab> abbreviation resolver (pwgab)
 from government_census import extract_government  # H1624 G2: DE-side Rektion on portrait senses
-from form_labels import extract_form_labels       # H1624: number/gender/case_form/voice
+from form_labels import extract_form_labels, extract_form_notes  # H1624 form layer
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LSMAP = json.load(open(os.path.join(HERE, 'ls_source_map.json'), encoding='utf-8'))
@@ -177,8 +177,10 @@ def sense_node(seg):
     # H1624 G2: structured government from the full DE segment (not gloss_de[:200]).
     # Floor only — same extract_government as store/promote/government.html.
     government = extract_government(seg['text'])
-    # H1624 form-layer: number / gender / nom|voc / voice (not Rektion).
+    # H1624 form-layer: number / gender / voice (+ case_form in multi-axis list);
+    # form_notes = dedicated nom/voc field.
     form_labels = extract_form_labels(seg['text'])
+    form_notes = extract_form_notes(seg['text'])
     return {'n': seg['n'], 'sub': seg['sub'], 'equivalents_de': de,
             'gloss_de': gloss[:200], 'equivalence_type': eq, 'grammar': grammar,
             'ab_labels': sorted(set(ab_labels)), 'diasystem': sorted(dia),
@@ -186,7 +188,8 @@ def sense_node(seg):
             'citations_resolved': {c: ps.resolve(c) for c in sorted(set(cites))},
             'strata': strata_of(cites), 'examples_sa': examples,
             'government': government,
-            'form_labels': form_labels}
+            'form_labels': form_labels,
+            'form_notes': form_notes}
 
 
 _CHIDX = None

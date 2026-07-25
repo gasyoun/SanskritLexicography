@@ -98,6 +98,19 @@
               "span": { "type": "string" }
             }
           }
+        },
+        "form_notes": {
+          "type": "array",
+          "description": "OPTIONAL (H1624). Dedicated nom/voc form-note field via extract_form_notes.",
+          "items": {
+            "type": "object",
+            "required": ["case", "kind", "span"],
+            "properties": {
+              "case": { "enum": ["nom", "voc"] },
+              "kind": { "enum": ["paren_ab", "bare_ab"] },
+              "span": { "type": "string" }
+            }
+          }
         }
       }
     },

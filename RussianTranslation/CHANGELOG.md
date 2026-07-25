@@ -10,6 +10,14 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added - H1624 form_notes: dedicated nom/voc form-note field
+
+- New top-level store/portrait field orm_notes via
+  [extract_form_notes](src/form_labels.py): {case: nom|voc, kind, span}.
+- Separate from government (Rektion) and from multi-axis orm_labels.
+- Stamped on promote + microstructure; [annotate_form_labels](src/annotate_form_labels.py)
+  backfills both fields. LANG_PARITY SHARED orm_notes_nom_voc_dedicated_h1624.
+
 ### Added - H1624 form_labels: number / gender / nom-voc / voice markup from DE
 
 - New [form_labels.py](src/form_labels.py) extract_form_labels - structured sibling of

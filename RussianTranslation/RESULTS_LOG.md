@@ -4,6 +4,19 @@ _Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 25-07-2026 - H1624 form_notes: dedicated Nom/Voc field
+
+Executor: Grok 4.5.
+orm_notes = first-class field for nominative/vocative citation-form markers only.
+
+| field | covers |
+|---|---|
+| government | acc loc instr gen dat abl |
+| form_labels | number, gender, case_form, voice |
+| form_notes | nom, voc only ({case, kind, span}) |
+
+Selftest: form_labels --selftest; promote stamps form_notes.
+
 ## 25-07-2026 - H1624 form_labels: number / gender / nom-voc / voice on DE senses
 
 Executor: Grok 4.5 - offline.

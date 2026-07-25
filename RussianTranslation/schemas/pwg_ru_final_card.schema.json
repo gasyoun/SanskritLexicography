@@ -183,7 +183,28 @@
               }
             }
           },
-          "description": "OPTIONAL (H1624 form-layer). Number / gender / nom|voc form notes / voice extracted from DE only via form_labels.extract_form_labels. Sibling of government (Rektion) — never invents labels; bare <ab>n.</ab> is not gender (ambiguous with 'note'). Empty array when none."
+          "description": "OPTIONAL (H1624 form-layer). Number / gender / nom|voc form notes / voice extracted from DE only via form_labels.extract_form_labels. Sibling of government (Rektion) — never invents labels; bare <ab>n.</ab> is not gender (ambiguous with 'note'). Empty array when none. Prefer the dedicated form_notes field for nom/voc-only consumers."
+        },
+        "form_notes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["case", "kind", "span"],
+            "properties": {
+              "case": {
+                "enum": ["nom", "voc"],
+                "description": "Nominative or vocative citation-form note (not Rektion)."
+              },
+              "kind": {
+                "enum": ["paren_ab", "bare_ab"]
+              },
+              "span": {
+                "type": "string",
+                "description": "Exact source snippet, e.g. '(<ab>voc.</ab>)'."
+              }
+            }
+          },
+          "description": "OPTIONAL (H1624). Dedicated form-note field for nom./voc. markers only — separate from government (Rektion) and from the multi-axis form_labels list. Deterministic via form_labels.extract_form_notes(de). Empty array when none."
         },
         "labels": {
           "type": "array",
