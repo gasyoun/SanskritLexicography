@@ -10,6 +10,14 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Documented — German-original layers + fully clickable Q/N links
+
+- [pwg_ru.md](pwg_ru.md) §8.0: what is layered onto the **German** source in the
+  translation process (merge / portrait / NWS owners / mask / Renou·government derived
+  from DE) vs post-LLM RU/evidence/review.
+- All Q/N detail cells use clickable markdown links (blob + local relative for
+  store/review sheets). Deep manual §2b–§2c mirrors this.
+
 ### Documented — markup-layer capability map (what Q/N questions layers answer)
 
 - [`pwg_ru.md`](pwg_ru.md) §8: full RU tables — layers L0–L10, **Q1–Q15** answerable
