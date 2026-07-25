@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.63.0] — 2026-07-25
+
 ### Fixed
 - **#729 — the c4 health gate could pass on a stale reading (25-07-2026).**
   [`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
