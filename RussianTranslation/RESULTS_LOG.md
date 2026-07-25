@@ -4,6 +4,22 @@ _Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 25-07-2026 - H1624 G4: edition_rel on DE subcards
+
+Executor: Grok 4.5.
+Structured edition relationship flags on each sense (no DE rewrite).
+
+| subtype | typical layer |
+|---|---|
+| base | pwg |
+| restate | pw |
+| pw_correct | pw (gender conflict) |
+| sch_star / derived_sense | sch |
+| a2a / derived_sense | pwkvn |
+| nws_at_sense / foreign_fragment | nws |
+
+Selftest: python src/edition_rel.py --selftest; promote stamp.
+
 ## 25-07-2026 - H1624 G3: citation_edges normalized DE <ls> graph
 
 Executor: Grok 4.5 - offline.
