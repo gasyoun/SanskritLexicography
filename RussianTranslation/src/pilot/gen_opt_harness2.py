@@ -721,6 +721,8 @@ _POST_GENERATION_SENSE_FIELDS = (
     'form_labels',       # H1624 form-layer: number/gender/case_form/voice from DE
                          # (form_labels.extract_form_labels); stamped at promote +
                          # microstructure. Never model-written; not Rektion.
+    'form_notes',        # H1624: dedicated nom/voc form-note field (extract_form_notes);
+                         # separate from form_labels multi-axis list and from government.
     'labels',            # planned diasystem-label annotator (Dimension 2); no generation-time
                          # prompt or annotator currently populates it either, but it is not
                          # model-generated, so it does not belong in the generation schema
