@@ -16,6 +16,44 @@ this manual is stamped with its as-of date; the live truth is always
 [RussianTranslation/.ai_state.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md)
 and the command output of the scripts themselves.
 
+## 0. Cold start (read this first — then stop digging)
+
+**Today's production truth in five lines.**
+
+1. Route = **headless CLI, manifest v2** (`execution_route: claude-cli-headless`). Max-Workflow is forensics only.
+2. Generation model = **Sonnet 5 (`claude-sonnet-5`)**, pinned in the harness — not the interactive session model.
+3. Store = gitignored `src/pwg_ru_translated.jsonl` (**11,603** sense rows as of 24-07-2026); never commit bulk RU.
+4. Live queue = [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md) — not this manual.
+5. Trust order: **command output** > `.ai_state.md` > dated docs.
+
+**Primary path = skills** (not a CLI scavenger hunt):
+
+| Step | Skill | Stops when… |
+|---|---|---|
+| Live readiness | [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md) | health under 30 s + canary 3/3 clean → GO; else **do not spend** |
+| Paid window | [`/pwg-bounded-run`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-bounded-run.md) | one profile, `max-wide=1`, `--stop-before-promote` |
+| Drain loop | [`/pwg-drain`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-drain.md) | next worklist head after gate + close |
+| Close / promote | [`/pwg-window-close`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-window-close.md) | audit + provenance + exact key delta green |
+
+**Five commands if skills are unavailable** (from `RussianTranslation/`):
+
+```powershell
+python src\pilot\root_window_status.py <root>
+python src\pilot\perf_preflight.py <root>
+python src\pilot\gen_opt_harness2.py <root>
+# headless execute sealed manifest v2 → wf_output.json  (see RUN_FREQ_MAX)
+python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
+```
+
+**Stop conditions (do not invent a sixth path).**
+
+- Live-gate NO-GO or stale GO → stop; never re-tune kill budgets on host noise.
+- Promote without `execution_manifest_schema = pwg.headless_execution_manifest.v2` → hard refuse (correct).
+- `--max-agents 1` on multi-key windows → only-b0 starvation (ledger `C2_M50_W1_MAX_AGENTS1_2026-07-24`).
+- Symptom unknown → §11 cookbook, then [LAUNCH_FUCKUPS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_FUCKUPS.md) — not a new theory.
+
+**Where not to dig on first contact:** `PIPELINE_HISTORY.md` (narrative), `mw_ru` post-mortem (§3), archive handoffs, Workflow harness JS. Verbatim loop + worked headless example: [RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md).
+
 ## 1. What this subsystem is
 
 Two LLM dictionary-translation pipelines sharing one engine design:
@@ -54,7 +92,7 @@ in this order on first contact.
 | Repo-local agent rules (audit/acceptance, markup policy, encoding) | [AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/AGENTS.md) |
 | What is queued / in flight / paused right now | [.ai_state.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md) (subordinate to the repo-root journal) |
 | The per-launch incident register + failure typology | [LAUNCH_FUCKUPS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_FUCKUPS.md) |
-| Quantitative launch denominators (458 windows as of 18-07-2026) | [LAUNCH_STATS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_STATS.md) (auto-generated — never hand-edit) |
+| Quantitative launch denominators (473 windows as of 24-07-2026 harvest) | [LAUNCH_STATS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_STATS.md) (auto-generated — never hand-edit) |
 | RU/EN fix-parity policy + ledger | [LANG_PARITY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md) |
 | Output-complexity taxonomy + kill-gate design | [FAILURE_MODES_AND_KILL_GATE_2026-07-04.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FAILURE_MODES_AND_KILL_GATE_2026-07-04.md) |
 | The finished mw_ru run, editor-facing | [mw_ru.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/mw_ru.md) |
@@ -192,18 +230,23 @@ editorial/cross-reference ones translate to Russian — both ruled 10-07-2026).
 
 ## 5. The production window, step by step
 
+### 5.0 Skill-primary path (default)
+
+| Phase | Skill | What it owns | Hard refuse / stop |
+|---|---|---|---|
+| Gate | [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md) | ≥5 KB health + `dq_canary_puregloss` → mechanical GO/NO-GO | Stale GO; hand-asserted GO that contradicts `gate_reason` |
+| Spend | [`/pwg-bounded-run`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-bounded-run.md) | one profile, `max-wide=1`, `--stop-before-promote`, no widen/retry in bootstrap | Missing fresh gate; unbound profile |
+| Drain | [`/pwg-drain`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-drain.md) | pick worklist head → gate → bounded run → close | Gate NO-GO |
+| Close | [`/pwg-window-close`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-window-close.md) | audit + provenance + key delta + backup + TM + ledger | Unbound manifest; truncated notice as sole evidence |
+| Review packet | [`/pwg-review-packet`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-review-packet.md) | human G5/G6 sheet over promoted `ai_translated` cards | — |
+
+CLI below is the **recovery / forensics appendix** and what the skills call. Prefer skills when available. Verbatim commands + **worked headless example** live in
+[RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md).
+
 The loop is fixed: **live-gate → preflight → prepare lease (manifest v2) →
 headless execute → deterministic audit → requeue → (optional sample judge) →
 promote (stop-before-promote until review) → TM rebuild → closeout.**
-Do not skip or reorder. Verbatim commands + a worked historical example
-(`vid`, 102 agents, 6.6M tokens, ~19 min on the **retired** Workflow path)
-live in
-[RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md);
-skills that wrap the paid path:
-[`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
-→ [`/pwg-bounded-run`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-bounded-run.md)
-→ [`/pwg-window-close`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-window-close.md).
-This section is the annotated checklist with every trap at its step.
+Do not skip or reorder.
 
 **Step 0 — session preconditions.**
 Check
@@ -487,7 +530,7 @@ verdict.
 | TM sidecars `translation_memory.*` | gitignored | rebuild after every promotion; regenerable |
 | TMX 1.4b export + A/B/C grades (`build_tmx.py`, `tm_grade.py`) | gitignored `release/corpus_tm/` | **NO public release** — per-translator rights clearance (H215 Slice 5) is the blocker |
 | Grammar layer (Whitney roots, Zaliznyak-style index, vidyut paradigms) | tracked (`datapackage.json`, CC-BY-SA-4.0) | structured data, deliberately NOT in translation prompts (A/B: no gain) |
-| Article site (147 roots, 11,275 senses as of 10-07-2026) | published at [gasyoun.github.io/SanskritLexicography](https://gasyoun.github.io/SanskritLexicography/) | render-time presentation layer (§4) |
+| Article site (roots/senses grow with promotions) | published at [gasyoun.github.io/SanskritLexicography](https://gasyoun.github.io/SanskritLexicography/) | render-time presentation layer (§4); recount via site build, not this manual |
 | Review sheets (`review/*.html`) | gitignored | embed unpublished RU — public repo, so never committed; registered in [REVIEW_SHEETS_INDEX](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md) |
 
 The rule behind the column: **committed = reproducible code + small fixtures +
@@ -495,34 +538,35 @@ evidence samples; gitignored = bulk data, anything rights-encumbered, anything
 regenerable.** Untracked files are also watcher-bait (H234 #4) — author agent
 outputs outside the repo and land atomically.
 
-## 10. Script census (as of 24-07-2026)
+## 10. Script census (generated — do not hand-edit the inventory)
 
-Counts grow every hardening wave — treat the table as a **role map**, not a
-frozen inventory. All tracked; the data they read/write is gitignored (§9).
-Tracked `.js` templates exist; every harness an operator actually runs is
-generated and gitignored. Functional map, condensed (entry points in bold):
+**Full role-tagged inventory** is generated:
 
-| Role | Scripts |
+```powershell
+python src\pilot\script_census.py          # → src/pilot/SCRIPT_CENSUS.md
+python src\pilot\script_census.py --check  # drift gate
+```
+
+Snapshot as of 24-07-2026: **306** Python files under `src/` (+ root
+`save_and_audit.py`), excluding archive / fixtures / nws bulk. See
+[SCRIPT_CENSUS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/SCRIPT_CENSUS.md).
+
+**Entry points only** (still hand-curated — the generator lists everything):
+
+| Role | Entry points |
 |---|---|
-| Preflight / live-gate | **`freq_route.py`**, **`pilot/verb_worklist.py`**, `pilot/nominals_worklist.py`, **`pilot/root_window_status.py`**, **`pilot/perf_preflight.py`**, `pilot/prompt_rule_audit.py`, **`_pilot_gen_merged.py`** (5-layer source builder), **`pilot/probe_log.py`** |
-| Harness + headless execution | **`pilot/gen_opt_harness2.py`** (canonical), **`pilot/headless_worker.py`**, **`pilot/bounded_staged_run.py`**, **`pilot/coordinator.py`**, `pilot/max_account_orchestrator.py`, `pilot/autosplit_requeue.py`, **`pilot/requeue_from_audit.py`**, `pilot/gen_fidelity_judge*.py` (sampled-judge) |
-| Audit gates | **`pilot/audit_window.py`** (canonical RU), `pilot/audit_window_en.py`, `stage2_pregate.py`, `audit_coverage.py`, `audit_sense_dupes.py`, `audit_root_split.py`, `nws_split.py` (owner map), `pilot/ru_coverage.py`, `validate_*.py` |
-| Promote / store | **`promote_final_cards.py`**, `promote_en.py`, `promote_lock.py`, **root `save_and_audit.py`** (save + audit + merge in one step) |
-| Translation memory | **`pilot/translation_memory.py`**, `tm_grade.py`, `tm_align.py`, `build_tmx.py`, `build_l0.py`, `ingest_oral.py`/`build_oral_l0.py` |
-| Instrumentation | `pilot/check_launch_ledger.py`, `pilot/harvest_launch_stats.py`, `pilot/classify_run.py`, `pilot/parse_workflow_cost.py`, **`pilot/dashboard_server.py`** (live UI, port 8765), `pilot/lang_parity_check.py`, `pipeline_version.py`, `pilot/layer_versions.py`, `pilot/watch_upstream.py` |
-| Selftests | **`pilot/window_selftest.py`**, `roadmap_check.py`, `review_changelog_guard.py`, `lod_acceptance.py` |
-| Release / edition | `preflight_remaining_gates.py`, `release_readiness.py`, `make_edition_cut.py`, `build_reglue.py` (the edition backbone — synthesize-first lost the bake-off), `build_article_site.py`, `export_interop.py`, `export_lod.py` |
-| Gold / human review | the `gold_*.py` family (14 scripts), `fidelity_sample*.py`, `build_h180_review_sheets.py` |
-| Source / corpus builders | `build_src.py`, `build_corpus_lexicon.py`, `mine_running_text.py`, `build_glossaries.py`, `corpus_gate.py`, `pwg_mask.py`, `dict_merge.py`, `build_dcs_*.py`, `build_learner_scores.py`, `build_relationships.py` |
-| Renou / grammar layers | `renou*.py` (12), `annotate_*.py`, `whitney_grammar.py`, `nominal_grammar.py`, `reverse_index.py`, `government_census.py` |
-| Fan-out guard | **`synth_dispatch.py`** (the only sanctioned multi-agent dispatcher) |
-| One-offs / `_`-prefixed | ~20–25 dated bake-off, ad-hoc-build, and watcher scripts — check the docstring before reuse |
+| Preflight / live-gate | **`freq_route.py`**, **`pilot/verb_worklist.py`**, **`pilot/root_window_status.py`**, **`pilot/perf_preflight.py`**, **`_pilot_gen_merged.py`**, **`pilot/probe_log.py`**, `pilot/h963_c4_gate0_probe.py` |
+| Harness + headless | **`pilot/gen_opt_harness2.py`**, **`pilot/headless_worker.py`**, **`pilot/bounded_staged_run.py`**, **`pilot/coordinator.py`**, **`pilot/requeue_from_audit.py`** |
+| Audit | **`pilot/audit_window.py`**, `pilot/audit_window_en.py`, `stage2_pregate.py` |
+| Promote / store | **`promote_final_cards.py`**, `promote_en.py`, **`save_and_audit.py`** |
+| TM | **`pilot/translation_memory.py`** |
+| Selftest / parity | **`pilot/window_selftest.py`**, **`pilot/lang_parity_check.py`**, **`pilot/script_census.py`** |
+| Fan-out | **`synth_dispatch.py`** only |
 
 **Dead / superseded — do not run for production:**
-`pilot/archive/superseded_2026-07-06/gen_opt_harness.py` + `_pilot_gen.py`
-(0 importers, H188-confirmed); `pilot/archive/legacy_max_2026-06-27/` (manual
-a-section path, audit history only); `pilot/run_real_test.py` (live in tree
-but self-marked superseded); `scale_route.py` (superseded by `freq_route.py`).
+`pilot/archive/superseded_2026-07-06/gen_opt_harness.py` + `_pilot_gen.py`;
+`pilot/archive/legacy_max_2026-06-27/`; `pilot/run_real_test.py`;
+`scale_route.py` (use `freq_route.py`).
 
 **Destructive on re-run — think before typing:**
 
@@ -535,15 +579,33 @@ but self-marked superseded); `scale_route.py` (superseded by `freq_route.py`).
 | `promote_en.py` | overwrites `en` fields on store rows in place |
 | any harness run | overwrites `wf_output.json` — capture per step 4 before the next run |
 
-## 11. Recurring failure shapes — read before declaring a new bug
+## 11. Symptom cookbook — check here before inventing a bug
+
+| Symptom | First check | Fix / stop |
+|---|---|---|
+| Only `b0` ran; other keys null / missing | `--max-agents` total-spawn cap (`N < selected_keys`) | Omit flag; use manifest budgets. Worker refuses `N < selected_keys` (H1610/H1618). Ledger `C2_M50_W1_MAX_AGENTS1_2026-07-24` |
+| Live-gate / health NO-GO (slow or errors) | Fresh ≥5 KB health latency; probe log | **Do not spend.** Do not re-tune kill budgets on host noise |
+| Canary not 3/3 or SAN-LOSS / TNMASK | Canary is separate from health; read status-out | Fix route/schema first; never promote canary |
+| `PromotionContractError` / unbound promote | Missing `execution_manifest_schema = pwg.headless_execution_manifest.v2` | Re-run headless with profile bind; Workflow payload cannot promote |
+| `stale_artifact` audit refuse | `meta.root` / rootmap hash / selected keys mismatch | Preserve `requeue.keys.txt`; regenerate or re-run correct harness |
+| All nulls, ~2M tokens, ~0 clean | Host degradation + fat window without GO | Live-gate first; solo reference window before any width |
+| Requeue re-introduces rejected content | TM hit on defect fragment | `requeue_from_audit` (auto `--no-tm` except `--transient`) + fsha denylist |
+| EN and RU disagree after a "fix" | LANG_PARITY entry missing or GAP | Classify SHARED / INTENTIONAL-DIVERGENCE / GAP; `lang_parity_check.py` |
+| Promote wiped other roots | Root-level merge (historical) | Sub-card merge only; single-promoter + `promote_lock.py` |
+| Session `rate_limit` mid-window | Account rolling window / weekly quota | Stop; wait for reset; do not widen |
+| Coordinator stuck `preparing` / `auditing` | Dead subprocess still claimed | `recover-operation --confirm-dead` only after process is gone |
+| `release-run` needed | Worker died mid-run | `release-run --confirm-dead --reason …` — never `record-output` on mere prepared lease |
+
+## 12. Recurring failure shapes — narrative (after the cookbook)
 
 Condensed from
 [PIPELINE_HISTORY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HISTORY.md)
-and the 17-entry ledger in
+and
 [LAUNCH_FUCKUPS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_FUCKUPS.md)
-(against a 458-window / 62-root population as of 18-07-2026, honest hard-fail
-rate 24.67% — `needs_requeue` is the normal iterative state, NOT a failure;
-see [LAUNCH_STATS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_STATS.md)):
+(against a **473**-window / 62-root population as of **24-07-2026** harvest,
+honest hard-fail rate **23.89%** — `needs_requeue` is the normal iterative
+state, NOT a failure; ledger date span still ends mid-July and is mostly
+Workflow-era rows — see [LAUNCH_STATS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LAUNCH_STATS.md)):
 
 1. **Wide concurrency collapses the run** — 429 waves, transient nulls.
    Process fix (≤3-wide global), not code.
@@ -577,7 +639,7 @@ see [LAUNCH_STATS.md](https://github.com/gasyoun/SanskritLexicography/blob/maste
 12. **A repeated `unknown` failure shape is not an accepted residual** — it
     becomes a bug-hunt handoff (that rule produced H442).
 
-## 12. Session-close checklist
+## 13. Session-close checklist
 
 1. Deterministic gates green, requeue state understood — never claim a window
    accepted otherwise.
@@ -594,7 +656,7 @@ see [LAUNCH_STATS.md](https://github.com/gasyoun/SanskritLexicography/blob/maste
 7. Tables/findings worth keeping → the right hub (FINDINGS / RESULTS_LOG /
    PROJECT_INTERLINKS), not chat.
 
-## 13. Multi-account bulk protocol (3→4 accounts)
+## 14. Multi-account bulk protocol (3→4 accounts)
 
 Canonical home of the protocol the root AGENTS sheet §5 used to restate
 (folded here 18-07-2026, H1245; designed in
@@ -627,7 +689,7 @@ promotion claim files, per-window namespacing, append hygiene):
    ⚠️ Any promotion from `incoming/` still passes the manifest-v2 binding
    gate (§5 step 8) — unbound payloads are refused.
 
-## 14. Interactive sessions vs generation fan-outs — two different limits
+## 15. Interactive sessions vs generation fan-outs — two different limits
 
 Folded from the root HUMAN_RU sheet §8 (18-07-2026, H1245); updated 24-07-2026
 for the headless route — the distinction still matters when planning account

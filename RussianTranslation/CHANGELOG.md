@@ -10,6 +10,17 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Documented — PWG manuals UX pack (cold start, skills, cookbook, census, H1447 example)
+
+- Deep manual §0 cold start; §5.0 skill-primary path; §11 symptom cookbook;
+  §10 points at generated
+  [`src/pilot/SCRIPT_CENSUS.md`](src/pilot/SCRIPT_CENSUS.md) via new
+  [`src/pilot/script_census.py`](src/pilot/script_census.py) (306 files as of 24-07).
+- [`RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md): headless worked example A (H1447
+  live-gate + canary); `vid` demoted to historical example B.
+- Re-harvested [`LAUNCH_STATS.md`](LAUNCH_STATS.md): **473** windows / 62 roots
+  (hard-fail 23.89%); honest note that date span is still mostly Workflow-era.
+
 ### Documented — PWG translation manuals truth-pass (headless-first, 24-07-2026)
 
 - Editor manual [`pwg_ru.md`](pwg_ru.md) rewritten from pre-run *plan* framing to **live

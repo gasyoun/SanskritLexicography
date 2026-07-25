@@ -10,38 +10,42 @@ The mw_ru post-mortem + pwg_ru production operation in depth: lanes, gates, kill
 
 ## Provenance
 
-Authored 11-07-2026 (H606). Refreshed 18-07-2026 under [H1245](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1245-Fable_multi_big-manuals-estate-refresh-umbrella_18.07.26.md). **Headless-first rewrite 24-07-2026 (Grok 4.5):** production loop §5 rewritten around `/pwg-live-gate` → coordinator prepare → headless execute → audit → requeue → promote; §1 status table, §6 lanes, §7/§8 selftest+parity counts, §9 store stamp, §10 script map, §14 session limits; companion editor doc [pwg_ru.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md) flipped from pre-run plan to live production; RUN_FREQ_MAX / AGENTS / README / USE_CASES / PIPELINE_HISTORY / parent CLAUDE.md aligned.
+Authored 11-07-2026 (H606). Refreshed 18-07-2026 under H1245. Headless-first rewrite 24-07-2026 (Grok 4.5, H1622). **UX pack same day (Grok 4.5):** §0 cold start; §5.0 skill-primary path; §11 symptom cookbook; §10 generated script census via `script_census.py` + committed `SCRIPT_CENSUS.md`; LAUNCH_STATS re-harvest (473 windows); RUN_FREQ_MAX headless worked example A (H1447) primary, `vid` demoted to historical B.
 
 ## Verification
 
 ```
 LAST_VERIFIED: 24-07-2026
 VERIFIED_BY: Grok 4.5
-COMMANDS_SPOT_RUN: store row count (11,603); lang_parity_check (74 entries no drift); verb_worklist (48 promoted / 701 remaining); window_selftest test_* census (182 defs)
+COMMANDS_SPOT_RUN: script_census.py (306 files); harvest_launch_stats.py (473 ledger rows); H1447 packet for worked example numbers
 ```
-
-Docs-only pass — no paid generation, no store promotion. Counts taken from local gitignored store + script output on this checkout.
 
 ## Improvement backlog
 
 | # | Item | Status |
 |---|---|---|
-| 1 | Steps 4–7 still narrate the historical Workflow lane; once a manifest-v2 CLI run has actually landed, rewrite them around `coordinator.py prepare` as primary | **done 24-07-2026** (headless-first §5) |
-| 2 | §10's script census is the fastest-rotting section — consider generating it | open |
-| 3 | Re-harvest LAUNCH_STATS denominators after headless windows accumulate | open |
+| 1 | Steps 4–7 still narrate Workflow as primary | **done** H1622 |
+| 2 | §10 script census generated | **done** 24-07 (script_census.py + SCRIPT_CENSUS.md) |
+| 3 | Re-harvest LAUNCH_STATS | **done** 24-07 (473 rows; still mostly Workflow-era date span — re-harvest after headless windows fill ledger) |
+| 4 | Cold start + skill-primary + symptom cookbook | **done** 24-07 |
+| 5 | Headless worked example in RUN_FREQ_MAX | **done** 24-07 (H1447) |
+| 6 | Split mw_ru post-mortem to separate file | open |
+| 7 | Bare-clone offline vs store-required matrix | open |
+| 8 | EN operator checklist subsection | open |
+| 9 | pwg_ru.md sibling metadoc | open |
 
 ## Known limitations
 
 - The store and TM are gitignored; nothing there is verifiable from a bare clone beyond script source.
-- Launch ledger / LAUNCH_STATS still reflect the Workflow-era population (458 windows as of last harvest 12-07-2026).
+- LAUNCH_STATS date span still ends 2026-07-15 — headless production windows may not yet dominate the local ledger.
 
 ## Intended use / known misuse
 
-**For:** operating pwg_ru without rediscovering fixed bugs. **Misuse:** running Workflow generation for a NEW attempt (the manifest-v2 CLI path is mandatory now), copying canary `--max-agents 1` onto multi-key windows, or relaunching medium50 without a fresh live-gate GO.
+**For:** operating pwg_ru without rediscovering fixed bugs. **Misuse:** Workflow generation for NEW attempts; canary `--max-agents 1` on multi-key windows; medium50 without fresh live-gate GO.
 
 ## Maintenance & sunset plan
 
-Refreshed by docs truth-passes when the execution route or store denominators move; the fastest-decaying numbers carry as-of stamps.
+Re-run `script_census.py` and `harvest_launch_stats.py` when the pipeline tree or launch population moves; bump §0 counts from command output.
 
 ## Deprecation status
 
@@ -52,7 +56,8 @@ Refreshed by docs truth-passes when the execution route or store denominators mo
 | Date | Change | By |
 |---|---|---|
 | 11-07-2026 | Subject manual authored (H606) | Fable 5 (`claude-fable-5`) |
-| 18-07-2026 | Metadoc created (H1245 estate refresh); 11 findings fixed; §13/§14 folded in from the root sheets | Fable 5 (`claude-fable-5`) |
-| 24-07-2026 | Headless-first rewrite of §5 + live counts; backlog item 1 closed | Grok 4.5 |
+| 18-07-2026 | Metadoc created (H1245) | Fable 5 (`claude-fable-5`) |
+| 24-07-2026 | Headless-first rewrite (H1622) | Grok 4.5 |
+| 24-07-2026 | UX pack: cold start, skills, cookbook, census generator, H1447 example | Grok 4.5 |
 
 _Dr. Mārcis Gasūns_
