@@ -723,6 +723,8 @@ _POST_GENERATION_SENSE_FIELDS = (
                          # microstructure. Never model-written; not Rektion.
     'form_notes',        # H1624: dedicated nom/voc form-note field (extract_form_notes);
                          # separate from form_labels multi-axis list and from government.
+    'citation_edges',    # H1624 G3: normalized DE <ls> edges (extract_citation_edges);
+                         # raw <ls> stays in german/de; never model-written.
     'labels',            # planned diasystem-label annotator (Dimension 2); no generation-time
                          # prompt or annotator currently populates it either, but it is not
                          # model-generated, so it does not belong in the generation schema

@@ -4,6 +4,21 @@ _Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 25-07-2026 - H1624 G3: citation_edges normalized DE <ls> graph
+
+Executor: Grok 4.5 - offline.
+Additive per-sense edges; raw <ls> not stripped.
+
+| resolver_status | meaning |
+|---|---|
+| map | hit in ls_source_map (renou I-V) |
+| bib | pwgbib expansion only |
+| orphan | neither |
+| empty | unparseable |
+
+Selftest: python src/citation_edges.py --selftest; promote stamp; annotate --selftest.
+Coverage CLI: python src/citation_edges.py report
+
 ## 25-07-2026 - H1624 form_notes: dedicated Nom/Voc field
 
 Executor: Grok 4.5.

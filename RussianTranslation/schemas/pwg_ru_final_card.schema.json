@@ -206,6 +206,28 @@
           },
           "description": "OPTIONAL (H1624). Dedicated form-note field for nom./voc. markers only — separate from government (Rektion) and from the multi-axis form_labels list. Deterministic via form_labels.extract_form_notes(de). Empty array when none."
         },
+        "citation_edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["raw_ls", "siglum", "resolver_status"],
+            "properties": {
+              "raw_ls": { "type": "string", "description": "Visible text inside <ls>…</ls>." },
+              "n_attr": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "siglum": { "type": "string" },
+              "work_id": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "work_name": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "renou": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "page": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "bib_ok": { "type": "boolean" },
+              "resolver_status": {
+                "enum": ["map", "bib", "orphan", "empty"],
+                "description": "map=ls_source_map; bib=pwgbib only; orphan=neither; empty=unparseable."
+              }
+            }
+          },
+          "description": "OPTIONAL (H1624 G3). Normalized DE citation edges from <ls> via citation_edges.extract_citation_edges. Additive — raw <ls> remains in the german/de string. Empty array when none."
+        },
         "labels": {
           "type": "array",
           "items": {

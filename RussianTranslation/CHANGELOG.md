@@ -10,6 +10,15 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added - H1624 G3: normalized DE <ls> citation_edges
+
+- [citation_edges.py](src/citation_edges.py) extract_citation_edges: edges
+  {raw_ls, siglum, work_id?, renou?, page?, resolver_status map|bib|orphan}.
+- Stamped on promote + portrait; [annotate_citation_edges.py](src/annotate_citation_edges.py)
+  backfill; raw <ls> remains in de. Coverage: citation_edges.py report.
+- Docs: [CITATION_COVERAGE.md](CITATION_COVERAGE.md); LANG_PARITY SHARED
+  citation_edges_h1624_g3.
+
 ### Added - H1624 form_notes: dedicated nom/voc form-note field
 
 - New top-level store/portrait field orm_notes via

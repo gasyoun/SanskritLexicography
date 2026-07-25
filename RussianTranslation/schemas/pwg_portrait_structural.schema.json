@@ -111,6 +111,25 @@
               "span": { "type": "string" }
             }
           }
+        },
+        "citation_edges": {
+          "type": "array",
+          "description": "OPTIONAL (H1624 G3). Normalized DE <ls> citation edges via extract_citation_edges.",
+          "items": {
+            "type": "object",
+            "required": ["raw_ls", "siglum", "resolver_status"],
+            "properties": {
+              "raw_ls": { "type": "string" },
+              "n_attr": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "siglum": { "type": "string" },
+              "work_id": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "work_name": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "renou": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "page": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "bib_ok": { "type": "boolean" },
+              "resolver_status": { "enum": ["map", "bib", "orphan", "empty"] }
+            }
+          }
         }
       }
     },
