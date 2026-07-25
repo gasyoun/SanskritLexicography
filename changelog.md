@@ -14,6 +14,18 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **Gate-probe integrity, reported not yet repaired (25-07-2026).** A `/pwg-live-gate c4` run
+  for the H858 validation window returned **HEALTH_NOGO** (c4 `rate_limit` on the warm-up,
+  17 878 ms — not a latency block) and, in doing so, exposed that
+  [`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
+  hardcodes `RUN_ID`: it re-reads the whole append-only history and keeps the last row per
+  purpose, so a run can pair its own warm-up with a **stale** `measured` reading. Today that
+  only mis-stated a NO-GO reason; the inverse would print `GATE-0 VERDICT: PASS` off a
+  two-day-old number and authorize paid spend ([#729](https://github.com/gasyoun/SanskritLexicography/issues/729)).
+  Gate packet:
+  [`pwg_ru/h858/H858_C4_LIVE_GATE_HEALTH_NOGO_2026-07-25.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h858/H858_C4_LIVE_GATE_HEALTH_NOGO_2026-07-25.md).
+
 ## [1.61.0] — 2026-07-25
 
 ### Added
