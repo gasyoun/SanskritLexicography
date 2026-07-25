@@ -1,6 +1,6 @@
 # Словарь `pwg_ru` — русский перевод Большого Петербургского словаря
 
-_Created: 09-07-2026 · Last updated: 24-07-2026_
+_Created: 09-07-2026 · Last updated: 25-07-2026_
 
 > Документ для **редактора**. Описывает, **как устроен** AI-перевод Большого
 > Петербургского словаря (`pwg_ru`, Бетлингк–Рот): кто переводит и кто судит
@@ -320,7 +320,86 @@ HTML, regenerable ledgers.
 
 ---
 
-## 8. Куда идти дальше
+## 8. Что слои разметки **могут** и **ещё не могут** ответить
+
+Карта возможностей — не runbook. Операторский deep manual описывает *как*
+гнать окно; этот раздел — *какой вопрос* уже опирается на слои, *где* смотреть
+ответ, и *где честная дыра*. Покрытие store (25-07-2026): **11 603** sense-row;
+поля `layer` / `provenance` / `review_status` — на всех; `evidence_summary` —
+~10.8k; полный `evidence[]` — ~2.2k; `differentia` — ~4.7k.
+
+### 8.1. Слои (краткий реестр)
+
+| Слой | Что это | Поверхность |
+|------|---------|-------------|
+| **L0 маска** | `{#}`, `<ls>`, `<ab>`, `<is>`, `<lex>`, `{%…%}`, `<div>` | store `de`/`ru`; mask/restore |
+| **L1 5-dict stack** | PWG + Nachträge + PW + SCH + PWKVN + NWS | `layer`, `subcard` (`_zz_*`), portrait |
+| **L2 NWS owners** | детерминированный owner-map | portrait / NWS gate |
+| **L3 Renou I–V** | состояние языка по `<ls>` (+ DCS enrich) | annotation / badges (не reorder) |
+| **L4 government** | Rektion из `(<ab>Instr.</ab>)` и т.п. | [government.html](https://gasyoun.github.io/SanskritLexicography/government.html) |
+| **L5 abbreviations** | tooltips + частоты `<ab>` | [abbreviations.html](https://gasyoun.github.io/SanskritLexicography/abbreviations.html), [ABBREVIATIONS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md) |
+| **L6 evidence / corpus_gate** | pass/divergence vs Koch…; agreement vs KOW | `evidence`, `evidence_summary` |
+| **L7 grammar / Zaliznyak** | class, reverse paradigm | `nominal_grammar` / `reverse_index` — **не** в translate prompt |
+| **L8 relationships** | тип supplement sense | [relationships_rollup.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/relationships_rollup.tsv) |
+| **L9 provenance** | model, hashes, pipeline | `provenance` object |
+| **L10 presentation** | tooltips, RU purity, Cyrillic `<is>` | render-time only (`build_article_site`) |
+
+### 8.2. Вопросы, на которые **уже** можно ответить (полностью или с оговоркой)
+
+| # | Вопрос | Слои | Где ответ | Честная оговорка |
+|---|--------|------|-----------|------------------|
+| Q1 | Какой русский / немецкий / (EN) текст **этого** sense? | L0, store | article site; store row | Только для **переведённых** sub-card; вселенная ~106k headwords |
+| Q2 | Это PWG-base, PW, SCH, NWS…? | L1 | `layer`, `subcard` suffix | no-PWG lane = standalone `_zz_*` без фейкового PWG |
+| Q3 | Сохранён ли порядок values PWG? | L0 policy | audit sense coverage | Gate, не «ручная уверенность» |
+| Q4 | Что маскировалось (Sa / cite / gram)? | L0 | mask round-trip / fidelity gates | 1 known-lossy PWG record |
+| Q5 | Кто owner у NWS-фрагмента? | L2 | NWS map / reject quarantine | Misattr → REJECTED, не silent |
+| Q6 | Какие **языковые состояния Renou** у sense/леммы? | L3 | Renou fields + badges | `<ls>`-узко; DCS — lemma-level enrich, не затирает per-sense |
+| Q7 | Какие карточки **управляют Instr./Loc./…**? | L4 | government.html | Floor vs ceiling: extractor vs raw `pwg.txt`; mid-drain partial |
+| Q8 | Что значит `<ab>X</ab>` и как часто? | L5 | abbreviations.html | RU purity partial; H1303 vote ещё не applied |
+| Q9 | Согласуется ли RU-термин с **независимым** S→R? | L6 | `evidence` / summary | Non-blocking; `no-check` часто; KOW ≠ sole arbiter |
+| Q10 | Насколько близок RU к **KOW**? | L6 signal 2 | `reference_agreement` path | Сходство, не «истина» |
+| Q11 | Как склоняется / «как *agni*»? | L7 | `nominal_grammar.py --table`, reverse index | Отдельный FAIR grammar package; не смысл слова |
+| Q12 | Supplement = new sense / restatement / correction? | L8 | relationships_rollup | Над классифицированным rollup, не live ad-hoc |
+| Q13 | Какой model/version/hash породил row? | L9 | `provenance` | Точность зависит от pin H818+ |
+| Q14 | `review_status` / human gold? | review fields | store + sheets | Почти всё ещё `ai_translated` |
+| Q15 | Есть ли немецкий residue / broken markup? | L0 gates | requeue / residue sweeps | Детектор ≠ полный semantic audit |
+
+### 8.3. Вопросы, на которые **ещё нельзя** (или только после human gate / данных)
+
+| # | Вопрос | Почему нельзя *yet* | Что разблокирует |
+|---|--------|---------------------|------------------|
+| N1 | «Канонический» **единый** RU для каждого `ab` (Med. vs med., W. с n=…) | H1303 sheet не voted; contextual `n=` class | `h1303_abbrev.decisions.json` → Session 2 |
+| N2 | Норма doublets / `v. l.` / *im Comp.* в промпте и store | H1306 Phase 2 ждёт vote | `h1306_style.decisions.json` |
+| N3 | Печатная «готовая редакция» (G5–G10) | Human gold / double review / edition cut | G5–G6 packets + votes |
+| N4 | Полный PWG→RU **как словарь целиком** | ~5.5k unique remaining; live host 403/latency | Drain + fresh live-gate |
+| N5 | Частотность **смысла** в корпусе (sense-level WSD) | Нет full-corpus sense inventory + join | Wave-2 `senses_pwg` / sense-corpus work |
+| N6 | «Самое частое значение» = sense #1? | PWG order ≠ Zipf; Renou ≠ frequency | Explicit corpus-frequency layer (not built) |
+| N7 | Полный **DHĀTUP. → Palsule** link | Нет machine Palsule list | H1333 + MG XLS |
+| N8 | mw_ru **термин-seed** на каждое общее headword | mw_ru working repo не найден | Locate seed repo |
+| N9 | Public **TM / bulk RU** download | Rights grey on parallel corpus | Clearance + publish-safety |
+| N10 | EN как first-class full twin of RU | EN secondary; intentional divergences | EN drain + parity close |
+| N11 | 100% compound-split vs derivation graph | ~4.2k human disagreements | Review-sheet sample @DO |
+| N12 | Oral / register A–C для всех glosses | Oral track + H1306 | H290 + style vote |
+| N13 | «Этот AI-перевод **лучше** KOW/человека» | Нет gold adjudicated edition | G6 gold + judge protocol |
+| N14 | Diachronic sense change (PW vs PWG vs SCH as history) | Layers co-present, not timeline UI | Dedicated edition-diff product |
+| N15 | Automatic scan-page for every `<ls>` | Link-target partial / dict-dependent | cologne link-target / resolver coverage |
+| N16 | Learner «только school-core» as filter on full PWG | Learner-core list exists; not full-site filter product | Wire learner scores end-to-end on site |
+| N17 | Live CLI drain right now | Gate NO-GO / **403** on profiles (25-07) | Re-auth + LIVE_GO |
+| N18 | Glyph-quarantine «93% bad RU» as truth | Detector almost certainly inflated | Sample ~200 before mass re-translate |
+
+### 8.4. Как читать статус
+
+- **Q*** = можно спрашивать *сейчас* (иногда только на promoted subset / site).
+- **N*** = не выдавать за готовый ответ; в manual/chat честно «ещё нет».
+- Human sheets **не** «почти done» без `*.decisions.json`.
+- Presentation (L10) **не** чинить правкой store «для красоты».
+
+English twin pointer (operator set):
+[docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) §2 / capability map.
+
+---
+
+## 9. Куда идти дальше
 
 | Нужно | Документ |
 |-------|----------|
@@ -330,5 +409,6 @@ HTML, regenerable ledgers.
 | 18 intent→command maps | [USE_CASES.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/USE_CASES.md) |
 | Очередь / WIP | [.ai_state.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md) |
 | MW-редакторский twin | [mw_ru.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/mw_ru.md) |
+| Сокращения / Rektion | [ABBREVIATIONS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md) |
 
 _Dr. Mārcis Gasūns_
