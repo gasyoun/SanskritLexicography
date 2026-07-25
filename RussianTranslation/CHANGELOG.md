@@ -10,6 +10,17 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added - H1624 form_labels: number / gender / nom-voc / voice markup from DE
+
+- New [form_labels.py](src/form_labels.py) extract_form_labels - structured sibling of
+  Rektion government (gender from lex, number sg/du/pl, case_form nom/voc, voice
+  act/med/pass). Bare ab n. is not treated as gender.
+- Stamped on promote ([promote_final_cards](src/promote_final_cards.py)) and portrait
+  ([microstructure](src/microstructure.py)); store retrofit
+  [annotate_form_labels.py](src/annotate_form_labels.py).
+- Schema fields on final card + portrait structural; LANG_PARITY SHARED
+  form_labels_number_gender_voice_h1624.
+
 ### Added - H1624 G2: structured government on every DE sense at promote + portrait
 
 - [promote_final_cards.rows_for](src/promote_final_cards.py) stamps government

@@ -160,6 +160,31 @@
           },
           "description": "OPTIONAL. Structured case-government (Rektion) marker(s) for this sense — the case(s) frame the word takes, one entry per parenthesized <ab>case.</ab> group or 'mit'-phrase found in the source German (a sense may carry more than one, e.g. two clauses each governing a different case). D4 ruling (08-07-2026): structured object, not a free string — copy the case abbreviation verbatim from the source; NEVER invent, guess, or generalize one. Empty array when the sense governs nothing. Deterministically extractable via RussianTranslation/src/government_census.py:extract_government(german). Grounds: apparatus study Dimension 1 / H335 W3."
         },
+        "form_labels": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["axis", "value", "kind", "span"],
+            "properties": {
+              "axis": {
+                "enum": ["number", "gender", "case_form", "voice"],
+                "description": "Morphosyntax axis. case_form = nom/voc form notes (not Rektion)."
+              },
+              "value": {
+                "type": "string",
+                "description": "Normalized label: sg|du|pl; m|f|n|m.n|…; nom|voc; act|med|pass."
+              },
+              "kind": {
+                "enum": ["paren_ab", "bare_ab", "lex"]
+              },
+              "span": {
+                "type": "string",
+                "description": "Exact source snippet, e.g. '(<ab>pl.</ab>)' or '<lex>m.</lex>'."
+              }
+            }
+          },
+          "description": "OPTIONAL (H1624 form-layer). Number / gender / nom|voc form notes / voice extracted from DE only via form_labels.extract_form_labels. Sibling of government (Rektion) — never invents labels; bare <ab>n.</ab> is not gender (ambiguous with 'note'). Empty array when none."
+        },
         "labels": {
           "type": "array",
           "items": {
