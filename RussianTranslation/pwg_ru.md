@@ -1,6 +1,6 @@
 # Словарь `pwg_ru` — русский перевод Большого Петербургского словаря
 
-_Created: 09-07-2026 · Last updated: 25-07-2026_
+_Created: 09-07-2026 · Last updated: 25-07-2026
 
 > Документ для **редактора**. Описывает, **как устроен** AI-перевод Большого
 > Петербургского словаря (`pwg_ru`, Бетлингк–Рот): кто переводит и кто судит
@@ -471,7 +471,27 @@ eview_status / human gold? | review | mostly i_translated | [HUMAN_GOLD_PROTOCO
 English twin:
 [docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) §2b–§2c.
 
-## 9. Куда идти дальше
+## 9. Куда идти дальше (H1624 DH follow-up batch)
+
+После закрытия H1624 (G1–G6 ✅; G5/G7 ⏸) заведена партия handoff-ов DH best practices
+([Uprava H1626–H1635](https://github.com/gasyoun/Uprava/blob/main/handoffs/README.md)):
+
+| ID | Тема | Разблокирует | Tier |
+|---|---|---|---|
+| [H1626](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1626-Fable_SanskritLexicography_pwg-h1303-abbrev-decisions-apply_25.07.26.md) | Apply H1303 abbrev vote | N1 | Fable ⏸ vote |
+| [H1627](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1627-Fable_SanskritLexicography_pwg-h1306-style-decisions-apply_25.07.26.md) | Apply H1306 = G5 | N2 | Fable ⏸ vote |
+| [H1628](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1628-Sonnet_SanskritLexicography_pwg-compound-differs-review-sheet_25.07.26.md) | ~200 compound differs sheet | N11 sample | Sonnet |
+| [H1629](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1629-Opus_SanskritLexicography_pwg-de-graph-ontolex-tei-export_25.07.26.md) | OntoLex/TEI DE graph | citability | Opus |
+| [H1630](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1630-Sonnet_SanskritLexicography_pwg-citation-edges-topn-scan-links_25.07.26.md) | Top-N scan links | N15 partial | Sonnet |
+| [H1631](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1631-Sonnet_SanskritLexicography_pwg-edition-diff-ui_25.07.26.md) | Edition-diff UI | N14 | Sonnet |
+| [H1632](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1632-Opus_SanskritLexicography_pwg-de-sense-dcs-attestation-pilot_25.07.26.md) | Sense–DCS pilot | N5 | Opus |
+| [H1633](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1633-Fable_SanskritLexicography_pwg-human-gold-cut-methods-packet_25.07.26.md) | Gold cut + methods | N3/N13 | Fable |
+| [H1634](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1634-Sonnet_SanskritLexicography_pwg-de-editorial-principles-doc_25.07.26.md) | Editorial principles | DH ethics doc | Sonnet |
+| [H1635](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1635-Opus_SanskritLexicography_pwg-public-sidecar-zenodo-release_25.07.26.md) | Public sidecars Zenodo | FAIR | Opus ⏸ rights |
+
+G7 Palsule остаётся [H1333](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1333-Opus_RussianTranslation_pwg-ru-dhatup-palsule-wire-from-xls_19.07.26.md) (XLS).
+
+## 9b. Прочие указатели
 
 | Нужно | Документ |
 |-------|----------|
