@@ -67,7 +67,7 @@ Five rules that prevent every historical failure in this subsystem:
 
 | Gate | Job | Volume | Instrument (D6) | Done-check |
 |---|---|---|---|---|
-| G5 | bulk print-readiness decisions over the promoted store | 11,163 `ai_translated` rows (25-07-2026) | approve/reject/defer sheet → `src/_review_queue.csv` | `run_batch.py validate_review` + ≥1 print-ready row |
+| G5 | bulk print-readiness decisions over the promoted store | 11,163-row queue (generated 06-07-2026; the store itself is 11,603 rows as of 24-07-2026 — regenerate the queue before a release slice) | approve/reject/defer sheet → `src/_review_queue.csv` | `run_batch.py validate_review` + ≥1 print-ready row |
 | G6 | human gold labels for quality measurement | 320-row stratified sample (fixed; do NOT expand to 11k) | MQM-style 6-label typology sheet | `gold_status.py` 320/320 + `gold_validate.py` |
 | G7 | independent second review + agreement | 80 of the 320 | agreement queue + Cohen κ | `gold_agreement.py` release mode (needs ≥1 κ pair) |
 | G10 | edition cut | — | — | waits for G5/G6/G7 |
@@ -103,7 +103,7 @@ LLM-judged fidelity track — adjacent, NOT part of G5/G6/G7).
 
 | Piece | File | Role |
 |---|---|---|
-| Emitter | `csl_pyutil.render_review_sheet` v0.3.1 (external, pinned) | the ONE sheet template (V1–V8 standard); never forked |
+| Emitter | `csl_pyutil.render_review_sheet` v0.3.1 (external; requirements.txt tracks its `main` branch, so re-verify `csl_pyutil.__version__` when anchors misbehave) | the ONE sheet template (V1–V8 standard); never forked |
 | Repo lookups | [`src/review_sheet_standard.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_sheet_standard.py) | V4 entry links, SLP1→IAST, shared config, `DA_RATING` |
 | Binding | [`src/review_binding.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_binding.py) | `content_hash()` · `stamp()` · `write_lock()` · retro locks |
 | Schema | [`schemas/decisions.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/decisions.schema.json) | the export shape, `content_hash` required |
@@ -189,7 +189,7 @@ REJECTED review/decisions.json
   --allow-legacy (logged), never silently.
 $ python src/validate_decisions.py review/decisions.json --allow-legacy
 WARNING: legacy unbound export accepted via --allow-legacy (logged to review/locks/allow_legacy.log)
-OK: decisions.json bound to sheet 'h178_da' (sha256:2081832d8086…; 30 items, 30 decided)
+OK: decisions.json bound to sheet 'h178_da' (sha256:2081832d8086…; 30 items, 30 decided; schema engine: jsonschema)
 ```
 
 The `--allow-legacy` escape works ONLY against a `mode: retro-unstamped` lock
