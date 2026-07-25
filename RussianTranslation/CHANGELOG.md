@@ -10,6 +10,17 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added - H1624 G1: durable gloss_lang on PWG {%…%} (DE|LA|EN)
+
+- Stage-0 [pwg_mask.py](src/pwg_mask.py): classify_pct_detail / gloss_lang_spans
+  emit {span, gloss_lang, rule_id, offsets} without rewriting DE text; mask treats
+  Latin + Wilson English + botanical binomials as {Tn} placeholders.
+- Residue [prompt_rule_audit.looks_foreign_literal](src/pilot/prompt_rule_audit.py)
+  prefers the same classifier so faithful LA/EN preservation is not requeued.
+- Docs: [pwg_ru.md](pwg_ru.md) §4 rule table + §8.0/L0; LANG_PARITY SHARED
+  gloss_lang_spans_h1624_g1. Pins: pwg_mask --selftest,
+  	est_pwg_mask_gloss_lang_g1.
+
 ### Documented — German-original layers + fully clickable Q/N links
 
 - [pwg_ru.md](pwg_ru.md) §8.0: what is layered onto the **German** source in the

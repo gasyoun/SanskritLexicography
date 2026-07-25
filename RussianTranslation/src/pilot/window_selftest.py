@@ -7532,6 +7532,101 @@ def test_pwg_mask_german_homograph_not_latin_c8():
         fail('C8: an explicit Latin cue must still force la')
 
 
+def test_pwg_mask_gloss_lang_g1():
+    """H1624 G1: durable gloss_lang on {%…%} — DE translate / LA+EN leave.
+
+    Classifier emits {span, gloss_lang, rule_id, offsets}; mask treats la+en as
+    {Tn} so Wilson English and botanical binomials never enter the translate
+    prompt. Residue audit (braced_gloss_risks) shares the same classifier via
+    looks_foreign_literal.
+    """
+    import pwg_mask as pm
+
+    # --- classify vectors ---
+    vectors = [
+        # content, preceding, following, expect_lang, expect_rule_prefix
+        ('das Nichthandeln', '', '', 'de', pm.RULE_DEFAULT_DE),
+        ('Gabe, Geschenk', '', '', 'de', pm.RULE_DEFAULT_DE),
+        ('ignis', 'das lat. ', '', 'la', pm.RULE_LATIN_CUE),
+        ('De accentu comp.', '', '', 'la', pm.RULE_LATIN_PHRASE),
+        ('Trapa bispinosa', '', '', 'la', pm.RULE_BOTANY_BINOMIAL),
+        ('Galedupa arborea', '', '', 'la', pm.RULE_BOTANY_BINOMIAL),
+        ('leaving, abandoning', 'WILS. übersetzt durch ', '', 'en', pm.RULE_WILSON_EN),
+        ('terrestrial latitude', '', ', WILS.', 'en', pm.RULE_WILSON_EN),
+        # Wilson + German content stays DE (must not mask German after WILS.)
+        ('Honig', 'WILS. übersetzt durch ', '', 'de', pm.RULE_DEFAULT_DE),
+        # German Capitalized+lowercase is NOT a binomial
+        ('Name eines Baumes', '', '', 'de', pm.RULE_DEFAULT_DE),
+    ]
+    for content, prec, foll, exp_lang, exp_rule in vectors:
+        d = pm.classify_pct_detail(content, prec, foll)
+        if d['gloss_lang'] != exp_lang:
+            fail('G1 classify %r: expected lang %r got %r (%r)'
+                 % (content, exp_lang, d['gloss_lang'], d))
+        if d['rule_id'] != exp_rule:
+            fail('G1 classify %r: expected rule %r got %r'
+                 % (content, exp_rule, d['rule_id']))
+        if (exp_lang in pm.NON_TRANSLATE_LANGS) == d['translate']:
+            fail('G1 classify %r: translate flag wrong for %r: %r'
+                 % (content, exp_lang, d))
+
+    # --- gloss_lang_spans on raw body (cues inside tags) ---
+    body = (
+        'Feuer <ab>lat.</ab> {%ignis%} und {%Trapa bispinosa%} '
+        '(<ls>WILS.</ls> übersetzt durch {%leaving, abandoning%}) '
+        'sowie {%Gabe, Geschenk%}.'
+    )
+    spans = pm.gloss_lang_spans(body)
+    by = {s['span']: s for s in spans}
+    for span, exp in (
+        ('ignis', 'la'),
+        ('Trapa bispinosa', 'la'),
+        ('leaving, abandoning', 'en'),
+        ('Gabe, Geschenk', 'de'),
+    ):
+        if by.get(span, {}).get('gloss_lang') != exp:
+            fail('G1 spans %r: expected %r got %r' % (span, exp, by.get(span)))
+        s = by[span]
+        chunk = body[s['start']:s['end']]
+        if not (chunk.startswith('{%') and chunk.endswith('%}')):
+            fail('G1 spans offset broken for %r: %r' % (span, chunk))
+
+    # --- mask: LA+EN as {Tn}, DE inline, lossless restore ---
+    sk, ph, st = pm.mask(body)
+    if st.get('pct_la', 0) < 2:
+        fail('G1 mask expected >=2 LA placeholders, got %r' % st)
+    if st.get('pct_en', 0) < 1:
+        fail('G1 mask expected >=1 EN placeholder, got %r' % st)
+    if st.get('pct_de', 0) < 1:
+        fail('G1 mask expected >=1 DE inline, got %r' % st)
+    if '{%ignis%}' in sk or '{%Trapa bispinosa%}' in sk:
+        fail('G1 LA leaked into skeleton: %r' % sk)
+    if '{%leaving, abandoning%}' in sk:
+        fail('G1 EN leaked into skeleton: %r' % sk)
+    if '{%Gabe, Geschenk%}' not in sk:
+        fail('G1 DE not kept inline: %r' % sk)
+    if pm.restore(sk, ph) != body:
+        fail('G1 mask round-trip not lossless')
+
+    # --- residue gate shares classifier (Latin/Wilson stay untranslated OK;
+    # translating them fires foreign_gloss_translated) ---
+    from prompt_rule_audit import braced_gloss_risks
+    kept = braced_gloss_risks(
+        'das lat. {%ansa%} und {%Trapa bispinosa%}; '
+        'Wils. übersetzt durch {%leaving, abandoning%}',
+        'лат. {%ansa%} und {%Trapa bispinosa%}; '
+        'Уилсон: {%leaving, abandoning%}',
+        '1')
+    if kept:
+        fail('G1 residue flagged faithful LA/EN preservation: %r' % kept)
+    translated = braced_gloss_risks(
+        'Wils. übersetzt durch {%leaving, abandoning%}',
+        'Уилсон: {%оставление%}',
+        '1')
+    if 'foreign_gloss_translated' not in {r['id'] for r in translated}:
+        fail('G1 residue missed translated Wilson EN: %r' % translated)
+
+
 def main():
     tests = [
         test_restore_covers_every_promoted_field,
@@ -7716,6 +7811,7 @@ def main():
         test_h1386_d1_medium50_script_size_cap,
         test_frag_prov_glob_honors_coordinator_dir_c7,
         test_pwg_mask_german_homograph_not_latin_c8,
+        test_pwg_mask_gloss_lang_g1,
     ]
     # Per-test isolation. This used to be a bare `for test in tests: test()`, so the FIRST
     # failure aborted the process and every later test silently never ran. That is not
