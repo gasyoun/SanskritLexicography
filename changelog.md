@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.62.0] — 2026-07-25
+
 ### Fixed
 - **Gate-probe integrity, reported not yet repaired (25-07-2026).** A `/pwg-live-gate c4` run
   for the H858 validation window returned **HEALTH_NOGO** (c4 `rate_limit` on the warm-up,
