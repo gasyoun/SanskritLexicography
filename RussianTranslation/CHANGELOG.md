@@ -14,7 +14,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 - [`pwg_ru.md`](pwg_ru.md) §8: full RU tables — layers L0–L10, **Q1–Q15** answerable
   now (with caveats), **N1–N18** not yet (human gates, drain, rights, WSD, 403 host…).
-- Deep manual §2b English summary + document-map pointer
+  Each Q/N row now has a **Детали** cell linking handoff / md / review sheet / live site.
+- Deep manual §2b English summary with primary detail links per Q/N
   ([RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md)).
 
 ### Documented — PWG manuals UX pack (cold start, skills, cookbook, census, H1447 example)
