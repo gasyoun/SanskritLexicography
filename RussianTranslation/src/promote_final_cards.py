@@ -54,6 +54,7 @@ from government_census import extract_government
 # H1624 form-layer: number / gender / nom|voc / voice — sibling of Rektion.
 from form_labels import extract_form_labels, extract_form_notes
 from citation_edges import extract_citation_edges
+from edition_rel import classify_edition_rel
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the RussianTranslation repo root
@@ -641,6 +642,12 @@ def rows_for(subkey, entry, review_status, model_version):
                 'form_notes': extract_form_notes(de),
                 # H1624 G3: normalized DE citation edges (raw <ls> stays in de).
                 'citation_edges': extract_citation_edges(de),
+                # H1624 G4: edition-relationship flags (H180 typology machine class).
+                # PW gender-correction needs a PWG peer; promote stamps the layer rule
+                # default (restate for pw); annotate_edition_rel fills pw_correct later.
+                'edition_rel': classify_edition_rel(
+                    layer, sense.get('tag'), de,
+                    key1=key1, subcard=subkey),
                 'equivalence_type': sense.get('equivalence_type'),
                 'source_type': sense.get('source_type'),
                 'stratum': sense.get('stratum'),
@@ -868,6 +875,7 @@ def selftest():
     assert r.get('form_labels') == [], 'plain DE with no form labels must stamp form_labels=[]'
     assert r.get('form_notes') == [], 'plain DE with no nom/voc must stamp form_notes=[]'
     assert r.get('citation_edges') == [], 'plain DE with no <ls> must stamp citation_edges=[]'
+    assert r.get('edition_rel', {}).get('subtype') == 'base', r.get('edition_rel')
     # H1624 G2: PW capitalized (Instr.) must be stamped at promote time from DE only
     gov_entry = {'card': {'key1': 'vas~~h0_zz_pw00', 'iast': 'vas', 'notes': '', 'records': [
         {'h': 'vas', 'grammar': '', 'senses': [
@@ -928,6 +936,37 @@ def selftest():
     assert crow['citation_edges'][0]['page'] == '1,1,1', crow
     # raw DE still holds the markup
     assert '<ls>ṚV. 1,1,1</ls>' in crow['de'], crow
+    # H1624 G4: edition_rel on overlay layers
+    sch_entry = {'card': {'key1': 'ap~~h0_zz_sch', 'iast': 'ap', 'notes': '', 'records': [
+        {'h': 'ap', 'grammar': '', 'senses': [
+            {'tag': 'anu_desid', 'russian': 'соглашаться',
+             'german': '{%einstimmen%}',
+             'equivalence_type': 'equivalent', 'source_type': 'lexicographic',
+             'stratum': '', 'differentia': ''},
+        ]}]}, 'meta': dict(meta, root='Ap', selected_keys=['ap~~h0_zz_sch'],
+                           provenance_classes={'ap~~h0_zz_sch': 'real'},
+                           input_hashes={'ap~~h0_zz_sch': {
+                               'raw_sha256': '1' * 64, 'portrait_sha256': '2' * 64}}),
+                  'wf_file': 'wf_output.json'}
+    srow = list(rows_for('ap~~h0_zz_sch', sch_entry, 'ai_translated',
+                         SELFTEST_MODEL_VERSION))[0]
+    assert srow['layer'] == 'sch', srow
+    assert srow['edition_rel']['subtype'] == 'derived_sense', srow['edition_rel']
+    assert srow['edition_rel']['source_layers'] == ['sch'], srow['edition_rel']
+    pw_entry = {'card': {'key1': 'g~~h0_zz_pw01', 'iast': 'g', 'notes': '', 'records': [
+        {'h': 'g', 'grammar': '', 'senses': [
+            {'tag': '1', 'russian': 'идти', 'german': '{%gehen%}',
+             'equivalence_type': 'equivalent', 'source_type': 'lexicographic',
+             'stratum': '', 'differentia': ''},
+        ]}]}, 'meta': dict(meta, root='gA', selected_keys=['g~~h0_zz_pw01'],
+                           provenance_classes={'g~~h0_zz_pw01': 'real'},
+                           input_hashes={'g~~h0_zz_pw01': {
+                               'raw_sha256': '1' * 64, 'portrait_sha256': '2' * 64}}),
+                  'wf_file': 'wf_output.json'}
+    prow = list(rows_for('g~~h0_zz_pw01', pw_entry, 'ai_translated',
+                         SELFTEST_MODEL_VERSION))[0]
+    assert prow['edition_rel']['subtype'] == 'restate', prow['edition_rel']
+    assert prow['edition_rel']['direction'] == 'abridging', prow['edition_rel']
     assert list(rows_for('x~~h0_zz_pw01', dict(entry, meta=meta), 'ai_translated',
                          SELFTEST_MODEL_VERSION))[0]['layer'] == 'pw', 'addenda sub-card -> layer=pw'
     assert r['review_status'] == 'ai_translated', 'must not auto-approve (G5 gate)'

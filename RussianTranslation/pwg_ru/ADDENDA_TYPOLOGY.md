@@ -209,3 +209,31 @@ Written per non-`pwg` sub-card (the `pwg` skeleton needs none):
   / [`PROJECT_INTERLINKS.md`](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md)).
 
 _Dr. Mārcis Gasūns_
+
+## edition_rel on the card (H1624 G4)
+
+**Structured field** (store / promote): `edition_rel` object on each sense row —
+see [edition_rel.py](../src/edition_rel.py). Machine classes match the rollup
+table above (`restate`, `sch_star`, `a2a`, `nws_at_sense`, `derived_sense`,
+`pw_correct`, `foreign_fragment`; PWG skeleton → `base`).
+
+**Raw labels** (in DE / layer markup): stay as-is — layer is still encoded in the
+subcard key (`~~…_zz_pw`, `_zz_sch`, …) and in raw layer banners inside merged
+`.raw.txt`. G4 does **not** rewrite DE; it only attaches the structured flag.
+
+| raw surface | structured `edition_rel.subtype` |
+|---|---|
+| layer=`pwg` (key without `_zz_*` overlay) | `base` |
+| layer=`pw` default | `restate` |
+| layer=`pw` + PWG/PW gender conflict | `pw_correct` |
+| layer=`sch` + deriv tag | `derived_sense` |
+| layer=`sch` else | `sch_star` |
+| layer=`pwkvn` + deriv tag | `derived_sense` |
+| layer=`pwkvn` else | `a2a` |
+| layer=`nws` German | `nws_at_sense` |
+| layer=`nws` EN/FR/LA heuristic | `foreign_fragment` |
+
+Promote stamps the rule default; `python src/annotate_edition_rel.py` rebuilds
+with a full PWG gender index (enables `pw_correct`). `build_relationships.py`
+reuses the same classifier for the sidecar + rollup TSV.
+

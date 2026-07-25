@@ -10,6 +10,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added - H1624 G4: edition_rel flags on every subcard sense
+
+- [edition_rel.py](src/edition_rel.py) classifies H180 machine subtypes
+  (restate, sch_star, a2a, nws_at_sense, derived_sense, pw_correct, …).
+- Stamped on promote; [annotate_edition_rel.py](src/annotate_edition_rel.py)
+  backfill with PWG gender index; [build_relationships.py](src/build_relationships.py)
+  reuses the classifier for sidecar + rollup TSV.
+- DE text unchanged. Docs: pwg_ru L8 / Q12; ADDENDA_TYPOLOGY raw-vs-structured table.
+  LANG_PARITY SHARED edition_rel_h1624_g4.
+
 ### Added - H1624 G3: normalized DE <ls> citation_edges
 
 - [citation_edges.py](src/citation_edges.py) extract_citation_edges: edges

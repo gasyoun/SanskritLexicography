@@ -725,6 +725,8 @@ _POST_GENERATION_SENSE_FIELDS = (
                          # separate from form_labels multi-axis list and from government.
     'citation_edges',    # H1624 G3: normalized DE <ls> edges (extract_citation_edges);
                          # raw <ls> stays in german/de; never model-written.
+    'edition_rel',       # H1624 G4: H180 typology flags (edition_rel.classify_edition_rel);
+                         # restate|sch_star|a2a|… — never model-written.
     'labels',            # planned diasystem-label annotator (Dimension 2); no generation-time
                          # prompt or annotator currently populates it either, but it is not
                          # model-generated, so it does not belong in the generation schema
