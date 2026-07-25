@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.64.0] — 2026-07-25
+
 ### Added
 - **Gate-0 probe is profile-parameterised (25-07-2026).**
   [`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
