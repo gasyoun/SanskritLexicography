@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.61.0] — 2026-07-25
+
 ### Added
 - **H858 Part B — source-anchored repair of a dropped `german` span (Opus 5 `claude-opus-5`, 25-07-2026).**
   New [`RussianTranslation/src/german_anchor.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/german_anchor.py):
