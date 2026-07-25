@@ -84,6 +84,20 @@
               "span": { "type": "string" }
             }
           }
+        },
+        "form_labels": {
+          "type": "array",
+          "description": "OPTIONAL (H1624 form-layer). Number / gender / nom|voc / voice from DE via form_labels.extract_form_labels. Sibling of government.",
+          "items": {
+            "type": "object",
+            "required": ["axis", "value", "kind", "span"],
+            "properties": {
+              "axis": { "enum": ["number", "gender", "case_form", "voice"] },
+              "value": { "type": "string" },
+              "kind": { "enum": ["paren_ab", "bare_ab", "lex"] },
+              "span": { "type": "string" }
+            }
+          }
         }
       }
     },

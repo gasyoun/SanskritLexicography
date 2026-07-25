@@ -718,6 +718,9 @@ _POST_GENERATION_SENSE_FIELDS = (
                          # extract_government (promote_final_cards.rows_for) and
                          # backfilled by annotate_government.py; also on portrait
                          # senses from microstructure.sense_node. Never model-written.
+    'form_labels',       # H1624 form-layer: number/gender/case_form/voice from DE
+                         # (form_labels.extract_form_labels); stamped at promote +
+                         # microstructure. Never model-written; not Rektion.
     'labels',            # planned diasystem-label annotator (Dimension 2); no generation-time
                          # prompt or annotator currently populates it either, but it is not
                          # model-generated, so it does not belong in the generation schema

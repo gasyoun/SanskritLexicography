@@ -4,6 +4,24 @@ _Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 25-07-2026 - H1624 form_labels: number / gender / nom-voc / voice on DE senses
+
+Executor: Grok 4.5 - offline.
+Sibling of government (Rektion). Acc/Loc/Instr/Gen/Dat/Abl stay in government;
+form notes go to form_labels.
+
+| axis | values | sources |
+|---|---|---|
+| number | sg, du, pl | ab sg./du./pl. (paren or bare) |
+| gender | m, f, n, m.n, ... | lex primary; masc./fem./neutr. ab |
+| case_form | nom, voc | parenthetical form notes (not Rektion) |
+| voice | act, med, pass | ab med./act./pass. |
+
+Not gender: bare ab n. (ambiguous with note). Not form_labels: Rektion cases.
+
+Selftest: python src/form_labels.py --selftest; promote + microstructure stamp.
+LANG_PARITY SHARED form_labels_number_gender_voice_h1624.
+
 ## 25-07-2026 - H1624 G2: government on every DE sense (promote + portrait)
 
 Executor: Grok 4.5 · offline · no paid window.

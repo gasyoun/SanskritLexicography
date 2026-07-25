@@ -51,6 +51,8 @@ from store_path import canonical_store
 # H1624 G2: deterministic DE-side Rektion on every promoted sense (same extractor as
 # annotate_government / government.html — never invented, never from RU).
 from government_census import extract_government
+# H1624 form-layer: number / gender / nom|voc / voice — sibling of Rektion.
+from form_labels import extract_form_labels
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the RussianTranslation repo root
@@ -632,6 +634,7 @@ def rows_for(subkey, entry, review_status, model_version):
                 'ru': ru,
                 'de': de,
                 'government': extract_government(de),
+                'form_labels': extract_form_labels(de),
                 'equivalence_type': sense.get('equivalence_type'),
                 'source_type': sense.get('source_type'),
                 'stratum': sense.get('stratum'),
@@ -856,6 +859,7 @@ def selftest():
     assert r['subcard'] == 'p_a~~h5_00_pwg00' and r['ru'] == 'пить' and r['de'] == 'trinken'
     assert r['layer'] == 'pwg', 'base sub-card must carry an explicit layer=pwg'
     assert r.get('government') == [], 'plain DE with no Rektion must stamp government=[]'
+    assert r.get('form_labels') == [], 'plain DE with no form labels must stamp form_labels=[]'
     # H1624 G2: PW capitalized (Instr.) must be stamped at promote time from DE only
     gov_entry = {'card': {'key1': 'vas~~h0_zz_pw00', 'iast': 'vas', 'notes': '', 'records': [
         {'h': 'vas', 'grammar': '', 'senses': [
@@ -873,6 +877,25 @@ def selftest():
                          SELFTEST_MODEL_VERSION))[0]
     assert grow['government'] and grow['government'][0]['cases'] == ['instr'], grow
     assert grow['government'][0]['span'] == '(<ab>Instr.</ab>)', grow
+    # H1624 form-layer: gender + number + voc on one DE sense
+    form_entry = {'card': {'key1': 'deva~~h0_00_pwg00', 'iast': 'deva', 'notes': '', 'records': [
+        {'h': 'deva', 'grammar': '', 'senses': [
+            {'tag': '1', 'russian': 'бог',
+             'german': '<lex>m.</lex> {%Gott%} (<ab>pl.</ab>) <ls>ṚV. 1,1,1</ls>. '
+                       '(<ab>voc.</ab>) auch so.',
+             'equivalence_type': 'equivalent', 'source_type': 'lexicographic',
+             'stratum': '', 'differentia': ''},
+        ]}]}, 'meta': dict(meta, root='deva', selected_keys=['deva~~h0_00_pwg00'],
+                           provenance_classes={'deva~~h0_00_pwg00': 'real'},
+                           input_hashes={'deva~~h0_00_pwg00': {
+                               'raw_sha256': '1' * 64, 'portrait_sha256': '2' * 64}}),
+                  'wf_file': 'wf_output.json'}
+    frow = list(rows_for('deva~~h0_00_pwg00', form_entry, 'ai_translated',
+                         SELFTEST_MODEL_VERSION))[0]
+    axes = {(h['axis'], h['value']) for h in frow['form_labels']}
+    assert ('gender', 'm') in axes and ('number', 'pl') in axes and ('case_form', 'voc') in axes, frow
+    # Rektion loc must NOT land in form_labels
+    assert not any(h.get('value') == 'loc' for h in frow['form_labels']), frow
     assert list(rows_for('x~~h0_zz_pw01', dict(entry, meta=meta), 'ai_translated',
                          SELFTEST_MODEL_VERSION))[0]['layer'] == 'pw', 'addenda sub-card -> layer=pw'
     assert r['review_status'] == 'ai_translated', 'must not auto-approve (G5 gate)'
