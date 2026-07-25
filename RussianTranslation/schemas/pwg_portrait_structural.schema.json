@@ -41,6 +41,34 @@
         { "type": "null" },
         { "$ref": "#/$defs/corpus_synonyms" }
       ]
+    },
+    "derivation": {
+      "type": "object",
+      "description": "OPTIONAL (H1282 / H1624 G6). PWG derivation / Pāṇini / compound / gaṇa block from pwg_derivation_layer.tsv. conflict/needs_human set when compound_status is differs (never auto-adjudicated).",
+      "properties": {
+        "source": { "type": "string" },
+        "homonym_precise": { "type": "boolean" },
+        "derivation": { "type": "object" },
+        "panini": { "type": "array", "items": { "type": "string" } },
+        "compound": {
+          "type": "object",
+          "properties": {
+            "members": { "type": "string" },
+            "vs_index": { "type": "string" },
+            "conflict": { "type": "boolean" },
+            "needs_human": { "type": "boolean" },
+            "conflict_kind": { "anyOf": [{ "type": "string" }, { "type": "null" }] }
+          }
+        },
+        "gana": { "type": "object" },
+        "conflict": { "type": "boolean" },
+        "needs_human": { "type": "boolean" },
+        "conflict_kind": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+        "human_reviewed": {
+          "type": "boolean",
+          "description": "If true, enrich_portrait_derivation will not overwrite this block."
+        }
+      }
     }
   },
   "$defs": {
