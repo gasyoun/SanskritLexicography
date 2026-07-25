@@ -318,6 +318,47 @@ def test_normalize_batch_translation_fidelity_reject():
     print('  C1 normalize_batch: german-faithful but target-dropped card -> translation-fidelity-reject')
 
 
+def test_normalize_batch_german_anchor_repair():
+    """H858 Part B: a card whose `german` echo DROPPED a masked span is repaired from the source
+    skeleton instead of nulled — the dominant retry-RESISTANT null class (6 of 7 residual nulls in
+    no_pwg_w10, H1283: a requeue reproduces the drop, because it is a property of the echo, not of
+    transport). Four properties, all on the REAL production route:
+
+      1. the drop is repaired and the card survives, carrying the genuine restored span;
+      2. the repair is STAMPED (`german_anchor`) — a machine-patched german is never
+         indistinguishable in the store from one the model echoed correctly;
+      3. a faithful card is byte-untouched and unstamped (the repair can only reach cards that
+         were already being thrown away, so the clean yield cannot regress);
+      4. a german that is NOT a pure drop (duplicate/foreign/reordered span) is refused repair
+         and rejects exactly as before, with the refusal reason recorded for diagnosis.
+    """
+    m = manifest()   # inputs.agni skeleton='{T1} Feuer' ls=1 sk=0; PH=['<ls>RV.</ls>']
+    def card(german, russian):
+        return {'key1': 'agni', 'records': [{'grammar': '', 'senses': [
+            {'tag': '1', 'german': german, 'russian': russian}]}]}
+
+    repaired = h.normalize_batch(m, ['agni'], {'cards': [card('Feuer', '{T1} огонь')]})
+    row = repaired[0]
+    assert row.get('error') is None and row['card'], row
+    assert row['card']['records'][0]['senses'][0]['german'] == '<ls>RV.</ls> Feuer', row['card']
+    assert row['card']['german_anchor'] == {'reinjected': ['T1'], 'head': ['T1']}, row['card']
+
+    clean = h.normalize_batch(m, ['agni'], {'cards': [card('{T1} Feuer', '{T1} огонь')]})
+    assert clean[0].get('error') is None and clean[0]['card'], clean
+    assert 'german_anchor' not in clean[0]['card'], clean[0]['card']
+
+    # Not a pure drop -> refused, rejected, reason recorded (and never silently repaired).
+    dup = h.normalize_batch(m, ['agni'], {'cards': [card('{T1} {T1} Feuer', '{T1} огонь')]})
+    assert dup[0]['card'] is None and 'german-anchor duplicate-token' in dup[0].get('error', ''), dup
+
+    # The repair must not launder a TRANSLATION-side drop (H1152 C1 still owns that class).
+    ru_drop = h.normalize_batch(m, ['agni'], {'cards': [card('Feuer', 'огонь')]})
+    assert ru_drop[0]['card'] is None, ru_drop
+    assert ru_drop[0].get('error') == 'translation-fidelity-reject', ru_drop
+    print('  H858 normalize_batch: dropped german span repaired+stamped; clean card untouched; '
+          'non-drop refused; translation-side drop still rejected')
+
+
 def test_headless_heal_stitch_translation_fidelity_reject():
     """H1152 parity (C1): the headless selfheal stitch (twin of the JS selfHeal check) must reject
     a COMPLETE stitched card whose german echo is faithful but whose TARGET field dropped a span.
@@ -573,6 +614,7 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_frag_tm_stitch_retains_owner()
     test_null_owner_fragment_tm_refused_before_any_call()
     test_normalize_batch_translation_fidelity_reject()
+    test_normalize_batch_german_anchor_repair()
     test_headless_heal_stitch_translation_fidelity_reject()
     print('headless_worker_selftest: PASS')
 

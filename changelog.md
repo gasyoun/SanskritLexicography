@@ -14,6 +14,30 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H858 Part B — source-anchored repair of a dropped `german` span (Opus 5 `claude-opus-5`, 25-07-2026).**
+  New [`RussianTranslation/src/german_anchor.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/german_anchor.py):
+  a card whose `german` echo dropped a masked `{Tn}` span is repaired from the source skeleton
+  instead of being nulled by the `<ls>`/`{#` fidelity count — the dominant retry-RESISTANT null
+  class (6 of 7 residual nulls in `no_pwg_w10`, H1283; a `--max-wide` requeue provably cannot fix
+  it). Repair-then-verify (runs only on a card that already failed the count, the same count re-run
+  as the verifier, so a passing card is byte-untouched) and refused unless the echo is a strict
+  order-preserving subsequence of the source. Wired into both lanes from ONE authored source —
+  `headless_worker.normalize_batch` (production) and the harness `accept()` via
+  `german_anchor.js_source()`, the C-01/C-17 injection pattern. Every repair is stamped into the
+  promoted row's provenance (`german_anchor`) and counted in `summary.german_anchor_repairs`.
+  SHARED in [`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md).
+  Offline-green on both lanes (`window_selftest` 185/185, `german_anchor_test.js`,
+  `headless_worker_selftest`, `promote_final_cards --selftest`); the handoff's live no_pwg
+  validation window is PAID and stays gated on a fresh live-gate GO.
+
+### Fixed
+- **`window_selftest` polluted the tracked residual registry (integrity, 25-07-2026).** The
+  coordinator-requeue test ran a real `--defect` requeue without `--no-residual`, so every suite
+  run appended a junk `{"key": "a", "source_window": "nominal_selftest"}` row to
+  [`no_pwg_residuals.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/no_pwg_residuals.jsonl)
+  — the registry that decides which keys are BLOCKED from requeue. Flag added; the polluting row reverted.
+
 ### Changed
 - **H1623 docs-freshness (Grok 4.5 grok-4.5, 25-07-2026):** re-verify big-manuals estate — LAST_VERIFIED 25-07-2026 on workspace AGENTS/HUMAN_RU + 6 docs/manuals deep manuals; RT deep metadoc COMMANDS_SPOT_RUN forced to integer 4 (was free-text, broke manual_staleness.py); MAINTAINER papers range updated A30-A67.
 

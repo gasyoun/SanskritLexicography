@@ -861,6 +861,77 @@ def test_grammar_field_restore_behavioral():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_german_anchor_repair_behavioral():
+    """H858 Part B: the anchored repair of a masked span dropped from the model's `german` echo.
+
+    The `{#…#}`-span drop was the clean-rate ceiling on the no_pwg windows — 6 of 7 residual
+    nulls in `no_pwg_w10` (H1283), and provably NOT fixable by a `--max-wide` requeue: the drop
+    is a property of the echo, not of transport. `accept()` now re-injects the dropped spans
+    from the source skeleton and re-runs the SAME `<ls>`/`{#` count as the verifier, so a repair
+    lands only when it makes the card exactly source-faithful, and a card that already passed
+    never enters the branch at all.
+
+    Two-part pin, matching the H960/H1226 pattern: (1) the repair twin + its telemetry are
+    emitted into the harness at all; (2) the behavioural half runs the REAL emitted
+    gaPlan/gaReanchor/gaStamp AND the REAL accept() + restoreCard (german_anchor_test.js), so
+    it cannot drift from the generator. The Python twin of the same cases is
+    `german_anchor.selftest()`, run by `test_german_anchor_selftest` below — the two lanes are
+    interpolated from ONE authored source (`german_anchor.js_source()`), the C-01/C-17 lesson.
+    """
+    import gen_opt_harness2 as gh
+    saved_ip, saved_kill = gh.input_paths, gh.KILL
+    d = tempfile.mkdtemp()
+    try:
+        rp = os.path.join(d, 'ga~~h0_zz_pw.raw.txt')
+        pp = os.path.join(d, 'ga~~h0_zz_pw.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write('=== LAYER: PW ===\n\n{#ga#}¦ {%m%}\n— 1〉 {%a%}.')
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        gh.input_paths = lambda k, input_dir=None: (rp, pp)
+        gh.KILL = False
+        js, _ = gh.build('zz_ganchor', ['ga~~h0_zz_pw'], None, 12000,
+                         nominal=True, grammar_on=False, tm_path=None)
+        for needle in ('const gaPlan = ', 'const gaReanchor = ', 'const gaStamp = ',
+                       'GERMAN_ANCHOR_REPAIRS', 'german_anchor_repairs', 'german-anchor '):
+            if needle not in js:
+                fail('H858 german-anchor repair not emitted into the harness (missing %r)' % needle)
+        harness = os.path.join(d, 'ganchor_harness.js')
+        with open(harness, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(js)
+        test_js = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               'german_anchor_test.js')
+        p = subprocess.run(['node', test_js, harness],
+                           capture_output=True, text=True, encoding='utf-8', timeout=30)
+        if p.returncode:
+            fail('german-anchor repair behavioral test failed:\n%s\n%s' % (p.stdout, p.stderr))
+    finally:
+        gh.input_paths, gh.KILL = saved_ip, saved_kill
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def test_german_anchor_selftest():
+    """H858 Part B: the Python half of the repair, and the LANG_PARITY guarantee.
+
+    `german_anchor` is SHARED (not language-specific): it repairs the `german` SOURCE echo,
+    which is identical on the RU and EN lanes, and never touches the target-language field. So
+    one selftest covers both languages by construction — the divergence LANG_PARITY.md exists
+    to catch cannot arise here, and this test asserts that the module is genuinely
+    field-agnostic rather than merely believed to be.
+    """
+    import german_anchor
+    german_anchor.selftest()
+    if 'russian' in german_anchor._JS or 'english' in german_anchor._JS:
+        fail('german_anchor must stay language-agnostic (SHARED under LANG_PARITY.md)')
+    for target in ('russian', 'english'):
+        card = {'records': [{'senses': [{'german': 'Feuer', target: 'x'}]}]}
+        ok, info = german_anchor.reanchor(card, '{T1} Feuer')
+        if not ok or card['records'][0]['senses'][0]['german'] != '{T1} Feuer':
+            fail('german_anchor repaired differently for target field %r: %r' % (target, info))
+        if card['records'][0]['senses'][0][target] != 'x':
+            fail('german_anchor must never touch the target field %r' % target)
+
+
 def test_h960_dropped_sanskrit_span():
     """H960 (H911 backlog #3): a {#..#} Sanskrit span present in the German source but dropped from
     the Russian translation is flagged (dropped_sanskrit_span). The harness/tm fidelity gates count
@@ -3573,7 +3644,14 @@ def test_coordinator_defect_requeue_uses_no_tm_and_out():
         rq.INP = inp
         rq.subprocess.run = fake_run
         rq.append_tm_denylist = lambda *_args, **_kwargs: (1, 0)
-        sys.argv = ['requeue_from_audit.py', 'nominal_selftest', '--defect',
+        # `--no-residual` (H1618) is NOT decoration: without it this test's `--defect` run
+        # reaches requeue_from_audit's C-49 residual stamp, which writes to the REAL tracked
+        # `no_pwg_residuals.jsonl` — so every selftest run appended a junk
+        # `{"key": "a", "source_window": "nominal_selftest"}` row to the registry that decides
+        # which keys are BLOCKED from requeue. The test stubs INP / subprocess.run /
+        # append_tm_denylist but never that path. Found 25-07-2026 while running this suite for
+        # H858; the assertions below (coordinator flag pass-through) are unaffected by the flag.
+        sys.argv = ['requeue_from_audit.py', 'nominal_selftest', '--defect', '--no-residual',
                     '--nominal', '--no-grammar', '--requeue-file=%s' % rqfile,
                     '--out=%s' % out, '--manifest-out=%s' % manifest_out]
         try:
@@ -7801,6 +7879,8 @@ def main():
         test_partial_cards_requeue_and_stay_out_of_clean_sample,
         test_classify_run_verdicts,
         test_grammar_field_restore_behavioral,
+        test_german_anchor_selftest,
+        test_german_anchor_repair_behavioral,
         test_h_reconstructed_regression_guard,
         test_h1283_a1_pid_alive_and_dirlock_owner,
         test_h1420_p2_win32_openprocess_error_leans_alive,
