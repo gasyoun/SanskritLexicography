@@ -1,9 +1,27 @@
 #!/usr/bin/env python3
-"""H963 Gate-0: ONE fresh dated D-K health attempt for the c4 profile.
+"""H963 Gate-0: ONE fresh dated D-K health attempt for a Max profile (default c4).
 
-Single-profile c4 only. Runs the repository's own D-K two-phase protocol
-(`max_account_orchestrator.live_probe`) at >= v1.9.17 (natural, schema-carrying,
-load-representative prompt) against the exact generation model.
+Runs the repository's own D-K two-phase protocol (`max_account_orchestrator.live_probe`)
+at >= v1.9.17 (natural, schema-carrying, load-representative prompt) against the exact
+generation model.
+
+    python src/pilot/h963_c4_gate0_probe.py                 # c4 (unchanged default)
+    python src/pilot/h963_c4_gate0_probe.py --account c5
+    python src/pilot/h963_c4_gate0_probe.py --account c5 --config-dir <path>
+
+PROFILE SCOPE (25-07-2026)
+--------------------------
+The account was hardcoded to c4 because H1110 gates c4 only. /pwg-live-gate's own
+"serial multi-profile assessment" section already specifies the shape for other
+profiles -- one health+canary pair per profile, run SERIALLY, each with its own
+distinct `config_dir_fingerprint`, never interleaved and never sharing a fingerprint --
+so the account is now a parameter rather than a copy of this file per profile.
+
+Each account keeps its OWN events log: a profile's health history is its own series,
+and reading two profiles out of one file re-creates the #729 contamination class one
+level up. c4 keeps the original filename (11 rows of history, cited by path in the
+H1110/H1447/H858 gate reports); any other account gets
+`h963_<account>_gate0_probe_events.jsonl`.
 
 Evidence discipline: exactly ONE attempt. Both the warm-up and the measured
 reading are emitted to the append-only events log BEFORE any fail-closed exit,
@@ -35,8 +53,10 @@ So the run id is now minted per invocation (`new_run_id()`), and the reader
 for historical grouping -- it is a label, never a scope. The verdict is derived by the
 pure `derive_fails()`, exercised without any live call by `--selftest`.
 """
+import argparse
 import json
 import os
+import re
 import shutil
 import sys
 import tempfile
@@ -71,6 +91,7 @@ def resolve_claude_bin():
 
 CONFIG_DIR = r"D:\ClaudeTools\profiles\claude4\.claude"
 ACCOUNT = "c4"
+PROFILE_ROOT = r"D:\ClaudeTools\profiles"
 # The historical campaign label. A GROUPING PREFIX, never a run scope -- see the module
 # docstring. Reports that cite `run_id=h963-c4-single-profile-gate0-2026-07-16` (H1110
 # 18-07, H1447 22-07) still match rows by this prefix.
@@ -80,6 +101,55 @@ PAYLOAD_BYTES = 6491          # repo default; actual prompt 6828 B (H909 runbook
 CEILING_MS = mao.PROBE_LATENCY_CEILING_MS   # 30 000
 STRICT_CEILING_MS = 30_000    # resume brief: EITHER reading >= this is NO-GO
 CONN_ERR_CLASSES = {"process", "timeout"}
+
+
+def config_dir_for(account):
+    """`cN` -> that profile's config dir, by the repo's own `claudeN` layout."""
+    if not re.fullmatch(r"c\d+", account or ""):
+        raise SystemExit("account %r is not of the form cN; pass --config-dir explicitly"
+                         % account)
+    return os.path.join(PROFILE_ROOT, "claude" + account[1:], ".claude")
+
+
+def campaign_for(account):
+    """The grouping label for `account`.
+
+    c4 keeps the historical string verbatim -- the H1110/H1447/H858 gate reports cite it,
+    and 11 rows carry it. Any other profile gets its own, because a c5 row whose run id
+    reads `h963-c4-...` misleads exactly the reader this label exists to orient.
+    """
+    if account == ACCOUNT:
+        return CAMPAIGN
+    return "h963-%s-single-profile-gate0" % account
+
+
+def events_for(account):
+    """One events log PER ACCOUNT.
+
+    Sharing one file across profiles would re-create the #729 contamination one level up:
+    a c5 row answering for a c4 verdict. c4 keeps the original filename because 11 rows of
+    history live there and the H1110/H1447/H858 gate reports cite it by path.
+    """
+    if account == ACCOUNT:
+        return EVENTS
+    return HERE / "output" / ("h963_%s_gate0_probe_events.jsonl" % account)
+
+
+def preflight_profile(config_dir):
+    """Cheap, FREE provisioning checks. Returns a reason string, or None when usable.
+
+    Deliberately NOT `max_account_orchestrator.profile_status`: that helper fires its own
+    paid `-p` call, and this gate exists to spend exactly one no-reroll attempt. A missing
+    directory or absent credentials is a provisioning fact, readable off the disk — the same
+    discipline as the D-R argv pre-flight below (never burn the attempt on a mis-provisioned
+    profile, and never report a provisioning defect as a health signal).
+    """
+    if not os.path.isdir(config_dir):
+        return "profile directory does not exist: %s" % config_dir
+    if not os.path.isfile(os.path.join(config_dir, ".credentials.json")):
+        return ("no .credentials.json in %s — the profile is not logged in "
+                "(a login is a human action; this gate never performs one)" % config_dir)
+    return None
 
 
 def new_run_id(campaign=CAMPAIGN, now=None, pid=None):
@@ -138,14 +208,25 @@ def derive_fails(readings, strict_ceiling_ms=STRICT_CEILING_MS):
     return fails
 
 
-def main():
-    EVENTS.parent.mkdir(parents=True, exist_ok=True)
+def main(argv=None):
+    ap = argparse.ArgumentParser(description="H963 Gate-0 single-profile D-K health attempt")
+    ap.add_argument("--account", default=ACCOUNT,
+                    help="profile slot to gate (default %s)" % ACCOUNT)
+    ap.add_argument("--config-dir", default=None,
+                    help="that profile's CLAUDE_CONFIG_DIR (default: derived from --account)")
+    args = ap.parse_args(argv)
+    account = args.account
+    config_dir = args.config_dir or (CONFIG_DIR if account == ACCOUNT
+                                     else config_dir_for(account))
+    events = events_for(account)
+    events.parent.mkdir(parents=True, exist_ok=True)
 
     # Belt-and-suspenders: pin the store to a scratch path so nothing can touch the
     # canonical 11,605-row store. (live_probe makes no store write by construction.)
     os.environ["PWG_RU_STORE"] = str(HERE / "output" / "h963_c4_gate0_scratch_store.jsonl")
 
-    run_id = new_run_id()
+    campaign = campaign_for(account)
+    run_id = new_run_id(campaign)
     claude_bin = resolve_claude_bin()
     argv_prefix = claude_argv_prefix(claude_bin)
 
@@ -153,10 +234,10 @@ def main():
     actual_prompt_bytes = len(prompt.encode("utf-8"))
 
     print("=" * 72)
-    print("H963 Gate-0 — single-profile c4 D-K health attempt")
+    print("H963 Gate-0 — single-profile %s D-K health attempt" % account)
     print("=" * 72)
     print("date (UTC)        : %s" % time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
-    print("profile           : %s  (%s)" % (ACCOUNT, CONFIG_DIR))
+    print("profile           : %s  (%s)" % (account, config_dir))
     print("exact model       : %s" % mao.EXACT_GEN_MODEL)
     print("payload_bytes arg : %d" % PAYLOAD_BYTES)
     print("actual prompt B   : %d  (floor %d B / 5 KiB=5120)"
@@ -164,8 +245,8 @@ def main():
     print("ceiling           : %d ms (strict: either reading >= %d ms => NO-GO)"
           % (CEILING_MS, STRICT_CEILING_MS))
     print("run_id            : %s   (unique to THIS run — #729)" % run_id)
-    print("campaign          : %s   (grouping label only, never a read scope)" % CAMPAIGN)
-    print("events            : %s" % EVENTS)
+    print("campaign          : %s   (grouping label only, never a read scope)" % campaign)
+    print("events            : %s   (per-account series)" % events)
     print("claude bin        : %s" % claude_bin)
     print("resolved argv     : %s" % argv_prefix)
     print("-" * 72)
@@ -174,27 +255,38 @@ def main():
         print("RESULT: NO-GO — payload undersized (%d B < 5 KiB)" % actual_prompt_bytes)
         return 2
 
+    # PRE-FLIGHT (no call made): a mis-provisioned profile is a PROVISIONING fact, not a
+    # health reading, and must never consume the one no-reroll attempt or be logged as
+    # latency. Free — reads the disk, spends nothing.
+    reason = preflight_profile(config_dir)
+    if reason:
+        print("PRE-FLIGHT ABORT (no probe call made, no attempt consumed):")
+        print("  %s" % reason)
+        print("  This is a provisioning state, NOT a %s health signal." % account)
+        return 4
+
     # PRE-FLIGHT (no call made): never spend the one no-reroll attempt on a mis-resolved
     # binary. A bare ['claude'] fallback is the D-R defect and is NOT a health reading.
     if os.name == "nt" and (len(argv_prefix) != 2 or not argv_prefix[0].lower().endswith("node.exe")):
         print("PRE-FLIGHT ABORT (no probe call made, no attempt consumed):")
         print("  claude_argv_prefix(%r) -> %s" % (claude_bin, argv_prefix))
         print("  expected [<node.exe>, <cli*.cjs>]; a bare fallback cannot be launched by")
-        print("  CreateProcess. This is a tooling-resolution defect (D-R), NOT a c4 health signal.")
+        print("  CreateProcess. This is a tooling-resolution defect (D-R), NOT a %s health signal."
+              % account)
         return 3
 
     verdict_exc = None
     t0 = time.monotonic()
     try:
         mao.live_probe(
-            CONFIG_DIR,
+            config_dir,
             claude=claude_bin,
             payload_bytes=PAYLOAD_BYTES,
             model=mao.EXACT_GEN_MODEL,
             latency_ceiling_ms=CEILING_MS,
-            events_path=str(EVENTS),
+            events_path=str(events),
             run_id=run_id,
-            account=ACCOUNT,
+            account=account,
         )
     except SystemExit as exc:
         verdict_exc = str(exc)
@@ -205,7 +297,7 @@ def main():
 
     # Re-read the append-only events log: it holds BOTH readings even on a fail-closed
     # exit -- but ONLY the rows this run wrote (#729).
-    readings = readings_for(EVENTS, run_id)
+    readings = readings_for(events, run_id)
 
     print("RAW READINGS (append-only telemetry, THIS run only — run_id %s):" % run_id)
     if not readings:
@@ -292,8 +384,38 @@ def selftest():
         # 5. run ids are unique per invocation even within the same UTC second
         assert new_run_id(now=0, pid=1) != new_run_id(now=0, pid=2)
         assert new_run_id(now=0, pid=1).startswith(CAMPAIGN + "/"), 'campaign stays a prefix'
+        # the label is account-aware: a c5 row whose run id reads `h963-c4-...` misleads
+        # exactly the reader the label exists to orient.
+        assert campaign_for("c4") == CAMPAIGN, 'c4 keeps the string the gate reports cite'
+        assert campaign_for("c5") == "h963-c5-single-profile-gate0", campaign_for("c5")
+        assert campaign_for("c5") != campaign_for("c6")
 
-        print("h963_c4_gate0_probe selftest: 5/5 OK (no live call, nothing spent)")
+        # 6. profile scope: c4's log keeps its historical path (reports cite it by name),
+        #    and no two accounts share a file -- sharing one would re-create the #729
+        #    contamination one level up, a c5 row answering for a c4 verdict.
+        assert events_for("c4") == EVENTS, 'c4 must keep its historical events path'
+        seen = {str(events_for(a)) for a in ("c4", "c5", "c6")}
+        assert len(seen) == 3, seen
+        assert config_dir_for("c5").endswith(os.path.join("claude5", ".claude")), config_dir_for("c5")
+        for bad in ("", "cee", "claude5", "c5x"):
+            try:
+                config_dir_for(bad)
+            except SystemExit:
+                pass
+            else:
+                raise AssertionError('config_dir_for(%r) must refuse, not guess a path' % bad)
+
+        # 7. a mis-provisioned profile is refused BEFORE any call, and is reported as a
+        #    provisioning state -- never logged as a health reading.
+        missing = Path(d) / "no-such-profile"
+        assert "does not exist" in (preflight_profile(str(missing)) or ''), 'missing dir must refuse'
+        logged_out = Path(d) / "logged-out" / ".claude"
+        logged_out.mkdir(parents=True)
+        assert "not logged in" in (preflight_profile(str(logged_out)) or ''), 'no creds must refuse'
+        (logged_out / ".credentials.json").write_text("{}", encoding="utf-8")
+        assert preflight_profile(str(logged_out)) is None, 'a provisioned profile must pass pre-flight'
+
+        print("h963_c4_gate0_probe selftest: 7/7 OK (no live call, nothing spent)")
     finally:
         shutil.rmtree(d, ignore_errors=True)
 

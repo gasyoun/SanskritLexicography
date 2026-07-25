@@ -14,6 +14,23 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **Gate-0 probe is profile-parameterised (25-07-2026).**
+  [`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
+  takes `--account` / `--config-dir` (c4 remains the default and is byte-unchanged in behaviour),
+  so the serial multi-profile assessment `/pwg-live-gate` already specifies no longer needs a copy
+  of the script per profile. Each account keeps its OWN events log and campaign label — sharing
+  one across profiles would re-create the #729 contamination a level up, a c5 row answering for a
+  c4 verdict. A missing profile dir or absent credentials is refused BEFORE any call, as a
+  provisioning state rather than a health reading (free — no paid `profile_status` call).
+  Selftest 7/7.
+- **First c5 gate reading — `HEALTH_NOGO`, and it is orthogonal to c4's.** c5 warm-up 59 651 ms /
+  measured 52 960 ms, both `success` with real output and zero connection errors, both ~2× the
+  30 000 ms ceiling; c4 the same day was `rate_limit` with healthy 17.9–19.9 s latency. c4 has
+  headroom but no quota, c5 has quota but no speed — **swapping profiles does not unblock the
+  window**. Packet:
+  [`pwg_ru/h858/H858_C5_LIVE_GATE_HEALTH_NOGO_2026-07-25.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h858/H858_C5_LIVE_GATE_HEALTH_NOGO_2026-07-25.md).
+
 ## [1.63.0] — 2026-07-25
 
 ### Fixed
