@@ -4,6 +4,36 @@ _Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 25-07-2026 - H858 c5 live gate: HEALTH_NOGO (latency ~2x ceiling) - orthogonal to c4
+
+Executor: Opus 5 (`claude-opus-5[1m]`). First gate ever run on c5, after two c4 attempts the
+same day returned HEALTH_NOGO on `rate_limit`. Packet:
+[`pwg_ru/h858/H858_C5_LIVE_GATE_HEALTH_NOGO_2026-07-25.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h858/H858_C5_LIVE_GATE_HEALTH_NOGO_2026-07-25.md).
+
+| Reading | Elapsed | Classification | Verdict input |
+|---|---|---|---|
+| warm-up | 59 651 ms | `success` | >= 30 000 ms ceiling -> FAIL |
+| measured | 52 960 ms | `success` | >= 30 000 ms ceiling -> FAIL |
+
+Both calls SUCCEEDED with real output and zero connection errors - this is not quota, not
+auth. Wall clock 112.6 s for the pair.
+
+### The finding: c4 and c5 fail for ORTHOGONAL reasons
+
+| Profile | Calls | Latency | Blocker |
+|---|---|---|---|
+| c4 (16:02Z, 18:18Z) | warm-up `rate_limit`, measured never ran | 17.9 s / 19.9 s - fine | quota / account state |
+| c5 (18:56Z) | warm-up + measured both `success` | 59.7 s / 53.0 s - ~2x ceiling | route latency |
+
+Neither is a code defect and they share no cause: c4 has headroom but no quota, c5 has
+quota but no speed. **Swapping profiles does not unblock the window** - it trades one
+NO-GO for a different one. c5's numbers sit in the degradation band tracked since mid-July
+(H963 104 870 ms; H1110 98 625 ms) and match H898's size-independent route-jitter finding:
+the identical 6 828 B prompt read 16 621 ms on c4 at the 22-07 LIVE_GO.
+
+Operational note: c5 is the profile this session runs on - a paid window there competes
+with interactive sessions for the same quota, independent of today's latency verdict.
+
 ## 25-07-2026 - H858 c4 live gate: HEALTH_NOGO (rate_limit), no window opened
 
 Executor: Opus 5 (`claude-opus-5[1m]`). `/pwg-live-gate c4`, one attempt, no reroll.

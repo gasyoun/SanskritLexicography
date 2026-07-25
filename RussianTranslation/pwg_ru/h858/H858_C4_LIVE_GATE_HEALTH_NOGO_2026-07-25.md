@@ -129,6 +129,14 @@ absent measured reading. Under the old constant `RUN_ID` this same run would hav
 all 10 historical rows and cited the 23-07 `168 352 ms` again. The verdict is now derived
 only from readings the run actually took.
 
+## c5 was gated next — and fails for an ORTHOGONAL reason
+
+[H858_C5_LIVE_GATE_HEALTH_NOGO_2026-07-25.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h858/H858_C5_LIVE_GATE_HEALTH_NOGO_2026-07-25.md)
+(18:56Z): both c5 calls **succeeded** with real output and zero connection errors, but read
+59 651 ms / 52 960 ms — roughly 2× the ceiling. So c4 has latency headroom but no quota, and
+c5 has quota but no speed. **Swapping profiles does not unblock the window**; it trades one
+NO-GO for a different one.
+
 ## Resume condition (unchanged, and it is not a formality)
 
 Per the skill's hand-off: **make no paid translation call** — not a canary rerun, not a
