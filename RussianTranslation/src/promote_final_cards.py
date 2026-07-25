@@ -53,6 +53,7 @@ from store_path import canonical_store
 from government_census import extract_government
 # H1624 form-layer: number / gender / nom|voc / voice — sibling of Rektion.
 from form_labels import extract_form_labels, extract_form_notes
+from citation_edges import extract_citation_edges
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the RussianTranslation repo root
@@ -638,6 +639,8 @@ def rows_for(subkey, entry, review_status, model_version):
                 # Dedicated nom/voc form-note field (not Rektion; not mixed into
                 # number/gender/voice consumers — H1624 form_notes).
                 'form_notes': extract_form_notes(de),
+                # H1624 G3: normalized DE citation edges (raw <ls> stays in de).
+                'citation_edges': extract_citation_edges(de),
                 'equivalence_type': sense.get('equivalence_type'),
                 'source_type': sense.get('source_type'),
                 'stratum': sense.get('stratum'),
@@ -864,6 +867,7 @@ def selftest():
     assert r.get('government') == [], 'plain DE with no Rektion must stamp government=[]'
     assert r.get('form_labels') == [], 'plain DE with no form labels must stamp form_labels=[]'
     assert r.get('form_notes') == [], 'plain DE with no nom/voc must stamp form_notes=[]'
+    assert r.get('citation_edges') == [], 'plain DE with no <ls> must stamp citation_edges=[]'
     # H1624 G2: PW capitalized (Instr.) must be stamped at promote time from DE only
     gov_entry = {'card': {'key1': 'vas~~h0_zz_pw00', 'iast': 'vas', 'notes': '', 'records': [
         {'h': 'vas', 'grammar': '', 'senses': [
@@ -904,6 +908,26 @@ def selftest():
     # Rektion loc must NOT land in form_labels or form_notes
     assert not any(h.get('value') == 'loc' for h in frow['form_labels']), frow
     assert not any(n.get('case') in ('loc', 'instr', 'acc') for n in frow['form_notes']), frow
+    # H1624 G3: citation_edges from DE <ls>
+    cite_entry = {'card': {'key1': 'agni~~h0_00_pwg00', 'iast': 'agni', 'notes': '', 'records': [
+        {'h': 'agni', 'grammar': '', 'senses': [
+            {'tag': '1', 'russian': 'огонь',
+             'german': '{%Feuer%} <ls>ṚV. 1,1,1</ls>; <ls n="MBH.">3,50</ls>.',
+             'equivalence_type': 'equivalent', 'source_type': 'lexicographic',
+             'stratum': '', 'differentia': ''},
+        ]}]}, 'meta': dict(meta, root='agni', selected_keys=['agni~~h0_00_pwg00'],
+                           provenance_classes={'agni~~h0_00_pwg00': 'real'},
+                           input_hashes={'agni~~h0_00_pwg00': {
+                               'raw_sha256': '1' * 64, 'portrait_sha256': '2' * 64}}),
+                  'wf_file': 'wf_output.json'}
+    crow = list(rows_for('agni~~h0_00_pwg00', cite_entry, 'ai_translated',
+                         SELFTEST_MODEL_VERSION))[0]
+    assert len(crow['citation_edges']) == 2, crow
+    assert crow['citation_edges'][0]['siglum'] == 'ṚV', crow
+    assert crow['citation_edges'][0]['resolver_status'] == 'map', crow
+    assert crow['citation_edges'][0]['page'] == '1,1,1', crow
+    # raw DE still holds the markup
+    assert '<ls>ṚV. 1,1,1</ls>' in crow['de'], crow
     assert list(rows_for('x~~h0_zz_pw01', dict(entry, meta=meta), 'ai_translated',
                          SELFTEST_MODEL_VERSION))[0]['layer'] == 'pw', 'addenda sub-card -> layer=pw'
     assert r['review_status'] == 'ai_translated', 'must not auto-approve (G5 gate)'
