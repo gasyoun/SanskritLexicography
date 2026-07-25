@@ -12,12 +12,19 @@ Axes (curated floor, not every <ab>):
   * **gender**   — from ``<lex>m.</lex>`` / ``f.`` / ``n.`` / ``m.n.`` … and from
                    unambiguous ``<ab>masc.</ab>`` / ``fem.`` / ``neutr.``
                    (bare ``<ab>n.</ab>`` is NOT treated as gender: too often "note")
-  * **case_form** — ``nom.`` / ``voc.`` (citation-form notes; NONGOV for Rektion)
+  * **case_form** — ``nom.`` / ``voc.`` (also projected to the dedicated
+                   top-level store field ``form_notes`` — see extract_form_notes)
   * **voice**    — ``act.`` / ``med.`` / ``pass.``
+
+``form_notes`` is the **separate form-note field** for nominative / vocative
+citation-form markers (not Rektion). Shape::
+
+  {case: "nom"|"voc", kind: "paren_ab"|"bare_ab", span: str}
 
 Usage:
   python src/form_labels.py --selftest
   python src/form_labels.py extract "…DE text…"
+  python src/form_labels.py form-notes "…DE text…"
 """
 from __future__ import annotations
 
@@ -199,6 +206,30 @@ def form_labels_summary(hits: list[dict] | None) -> dict:
     return out
 
 
+def extract_form_notes(text: str | None) -> list[dict]:
+    """Dedicated nom/voc form-note field (H1624) — not Rektion, not number/gender/voice.
+
+    Returns a list (possibly empty)::
+      {case: "nom"|"voc", kind: "paren_ab"|"bare_ab", span: str}
+
+    Derived from the same DE scan as form_labels (axis=case_form) but shaped as
+    a first-class store/portrait field so callers do not filter a multi-axis list.
+    """
+    notes = []
+    for h in extract_form_labels(text):
+        if h.get("axis") != "case_form":
+            continue
+        case = h.get("value")
+        if case not in ("nom", "voc"):
+            continue
+        notes.append({
+            "case": case,
+            "kind": h.get("kind") or "paren_ab",
+            "span": h.get("span") or "",
+        })
+    return notes
+
+
 def selftest() -> None:
     fails = []
 
@@ -224,11 +255,21 @@ def selftest() -> None:
     h = extract_form_labels("<lex>adj.</lex> {%gross%}")
     check(not any(x["axis"] == "gender" for x in h), "adj not gender: %r" % h)
 
-    # case form nom/voc (NOT government)
+    # case form nom/voc (NOT government) + dedicated form_notes field
     h = extract_form_labels("{%Gott%} (<ab>voc.</ab>) auch so.")
     check(any(x["axis"] == "case_form" and x["value"] == "voc" for x in h), "voc: %r" % h)
+    notes = extract_form_notes("{%Gott%} (<ab>voc.</ab>) auch so.")
+    check(notes == [{"case": "voc", "kind": "paren_ab", "span": "(<ab>voc.</ab>)"}],
+          "form_notes voc: %r" % notes)
     h = extract_form_labels("(<ab>Nom.</ab>)")
     check(any(x["value"] == "nom" for x in h), "Nom cap: %r" % h)
+    notes = extract_form_notes("(<ab>Nom.</ab>)")
+    check(len(notes) == 1 and notes[0]["case"] == "nom", "form_notes Nom: %r" % notes)
+    # Rektion must not appear in form_notes
+    check(extract_form_notes("(<ab>loc.</ab>)") == [], "form_notes no loc")
+    check(extract_form_notes("(<ab>Instr.</ab>)") == [], "form_notes no instr")
+    check(extract_form_notes("<lex>m.</lex> {%x%} (<ab>pl.</ab>)") == [],
+          "form_notes ignores gender/number")
 
     # voice
     h = extract_form_labels("(<ab>med.</ab>) {%sich freuen%}")
@@ -271,7 +312,7 @@ def selftest() -> None:
         for f in fails:
             print("FAIL:", f, file=sys.stderr)
         sys.exit(1)
-    print("form_labels --selftest: OK (%d checks)" % 16)
+    print("form_labels --selftest: OK")
 
 
 def main() -> None:
@@ -284,6 +325,10 @@ def main() -> None:
     if sys.argv[1] == "extract" and len(sys.argv) > 2:
         import json
         print(json.dumps(extract_form_labels(sys.argv[2]), ensure_ascii=False, indent=2))
+        return
+    if sys.argv[1] in ("form-notes", "form_notes") and len(sys.argv) > 2:
+        import json
+        print(json.dumps(extract_form_notes(sys.argv[2]), ensure_ascii=False, indent=2))
         return
     print(__doc__)
     sys.exit(2)
