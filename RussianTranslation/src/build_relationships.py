@@ -24,7 +24,7 @@ Outputs : src/pwg_ru_relationships.jsonl   (one row per non-pwg sub-card sense)
 
 Run: python src/build_relationships.py
 """
-import sys, os, io, json, re, collections
+import sys, os, io, json, collections
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -35,60 +35,10 @@ STORE = os.path.join(HERE, "pwg_ru_translated.jsonl")
 OUT_JSONL = os.path.join(HERE, "pwg_ru_relationships.jsonl")
 OUT_TSV = os.path.join(ROOT, "pwg_ru", "relationships_rollup.tsv")
 
-LEX_RE = re.compile(r"<lex>(.*?)</lex>")
-GENDER = {"m.", "n.", "f.", "mn.", "nm.", "mf.", "fn.", "mfn."}
-# grammar-derivation markers in a sense_tag → a derived sub-sense (caus/desid/preverb)
-DERIV_RE = re.compile(r"caus|desid|\bmit\b|\bdes\.\b|\banu\b|_(pat|caus|desid)|\bpra\b", re.I)
-
-# --- light language heuristic for NWS foreign fragments (confidence: llm) -------
-DE_MARK = re.compile(r"\b(der|die|das|und|ist|mit|ein|eine|nicht|von|zu|auf|sich|dem|den)\b", re.I)
-EN_MARK = re.compile(r"\b(the|to|of|and|in|with|is|for|from|by|as)\b")
-FR_MARK = re.compile(r"\b(le|la|les|du|des|une|avec|dans|pour|est|qui)\b")
-LA_MARK = re.compile(r"\b(et|cum|ad|vel|non|est|quod|sunt|atque|sive)\b")
-TAG_RE = re.compile(r"<[^>]+>")
-BRACE_RE = re.compile(r"\{%.*?%\}")
-
-
-def strip_markup(s):
-    s = BRACE_RE.sub(" ", s or "")
-    s = TAG_RE.sub(" ", s)
-    return s
-
-
-def guess_lang(de_text):
-    """Return 'de' | 'en' | 'fr' | 'la' for an NWS source fragment (heuristic)."""
-    t = strip_markup(de_text)
-    scores = {
-        "de": len(DE_MARK.findall(t)),
-        "en": len(EN_MARK.findall(t)),
-        "fr": len(FR_MARK.findall(t)),
-        "la": len(LA_MARK.findall(t)),
-    }
-    best = max(scores, key=scores.get)
-    # only claim non-German if it clearly beats German AND has real signal
-    if best != "de" and scores[best] >= 2 and scores[best] > scores["de"]:
-        return best
-    return "de"
-
-
-def lead_int(sense_tag):
-    """Leading integer of a sense_tag ('2 (anu, Desid.)' -> '2'), else None."""
-    m = re.match(r"\s*(\d+)", str(sense_tag))
-    return m.group(1) if m else None
-
-
-def homonym_of(subcard):
-    m = re.search(r"~~(h\d+)", subcard or "")
-    return m.group(1) if m else "h0"
-
-
-def lex_tokens(rec):
-    toks = LEX_RE.findall(rec.get("de", "") + " " + rec.get("ru", ""))
-    return {t.strip() for t in toks if t.strip()}
-
-
-def genders(toks):
-    return {t for t in toks if t in GENDER}
+# H1624 G4: single classifier shared with promote / annotate_edition_rel.
+from edition_rel import (
+    edition_rel_for_row, build_pwg_gender_index, lead_int, homonym_of,
+)
 
 
 def main():
@@ -99,15 +49,7 @@ def main():
             if line:
                 recs.append(json.loads(line))
 
-    # PWG skeleton gender map: (key1, homonym, sense_number) -> gender set
-    pwg_gender = collections.defaultdict(set)
-    for d in recs:
-        if d.get("layer") != "pwg":
-            continue
-        si = lead_int(d.get("sense_tag"))
-        if si:
-            key = (d["key1"], homonym_of(d["subcard"]), si)
-            pwg_gender[key] |= genders(lex_tokens(d))
+    pwg_gender = build_pwg_gender_index(recs)
 
     out = []
     roll = collections.Counter()
@@ -116,77 +58,35 @@ def main():
         layer = d.get("layer")
         if layer == "pwg":
             continue
-        key1 = d["key1"]
-        hom = homonym_of(d["subcard"])
-        st = str(d.get("sense_tag"))
-        si = lead_int(st)
-        target_sense = si if si else "*new"
-        anchor = "sense"
-        op = "add"
-        direction = "additive"
-        subtype = None
-        evidence = ""
-        extra = {}
-
-        if layer == "sch":
-            subtype = "derived_sense" if DERIV_RE.search(st) else "sch_star"
-            evidence = f"SCH additive; sense_tag={st!r}"
-        elif layer == "pwkvn":
-            if DERIV_RE.search(st):
-                subtype = "derived_sense"
-                evidence = f"PWKVN grammar-derived; sense_tag={st!r}"
-            else:
-                subtype = "a2a"
-                op = "relocate"
-                evidence = f"PWKVN Nachtraege-to-Nachtraege (addenda-to-addenda); sense_tag={st!r}"
-        elif layer == "nws":
-            lang = guess_lang(d.get("de", ""))
-            if lang != "de":
-                subtype = "foreign_fragment"
-                extra[f"needs_ru_from_{lang}"] = True
-                extra["source_lang"] = lang
-                evidence = f"NWS fragment in {lang.upper()} (heuristic); sense_tag={st!r}"
-                lang_counter[lang] += 1
-            else:
-                subtype = "nws_at_sense"
-                evidence = f"NWS additive at PWG sense {target_sense}; sense_tag={st!r}"
-            # NWS-N tags are genuinely new NWS senses
-            if re.match(r"\s*nws", st, re.I):
-                target_sense = "*new"
-        elif layer == "pw":
-            direction = "abridging"
-            pwg_g = pwg_gender.get((key1, hom, si)) if si else None
-            pw_g = genders(lex_tokens(d))
-            if pwg_g and pw_g and pwg_g.isdisjoint(pw_g):
-                subtype = "pw_correct"
-                op = "correct"
-                anchor = "grammar"
-                evidence = f"gender change PWG {sorted(pwg_g)} -> PW {sorted(pw_g)} at sense {si}"
-            else:
-                subtype = "restate"
-                op = "restate"
-                evidence = f"PW abridging restatement; sense_tag={st!r}"
-        else:
-            subtype = "unknown"
-
+        # confidence "llm" preserved for H180 sheet continuity (heuristic first pass).
+        er = edition_rel_for_row(d, pwg_gender)
+        er = dict(er)
+        er["confidence"] = "llm"
+        # sidecar shape expected by build_reglue / review sheets
+        ip = er.get("insertion_point") or {}
         rel = {
-            "op": op,
-            "target": "grammar" if anchor == "grammar" else "sense",
-            "direction": direction,
-            "subtype": subtype,
-            "insertion_point": {
-                "key1": key1, "homonym": hom,
-                "target_sense": target_sense, "anchor": anchor,
-            },
+            "op": er["op"],
+            "target": "grammar" if (ip.get("anchor") == "grammar") else "sense",
+            "direction": er["direction"],
+            "subtype": er["subtype"],
+            "insertion_point": ip,
             "confidence": "llm",
-            "evidence": evidence,
+            "evidence": er.get("evidence") or "",
         }
-        rel.update(extra)
+        for k in ("source_lang",):
+            if k in er:
+                rel[k] = er[k]
+        for k, v in er.items():
+            if k.startswith("needs_ru_from_"):
+                rel[k] = v
+        if er.get("subtype") == "foreign_fragment" and er.get("source_lang"):
+            lang_counter[er["source_lang"]] += 1
         out.append({
-            "subcard": d["subcard"], "key1": key1, "sense_tag": st,
+            "subcard": d["subcard"], "key1": d["key1"],
+            "sense_tag": str(d.get("sense_tag")),
             "layer": layer, "relationship": rel,
         })
-        roll[(subtype, op, direction, layer)] += 1
+        roll[(er["subtype"], er["op"], er["direction"], layer)] += 1
 
     with io.open(OUT_JSONL, "w", encoding="utf-8") as fh:
         for r in out:
