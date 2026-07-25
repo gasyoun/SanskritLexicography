@@ -1,6 +1,6 @@
 # RussianTranslation deep manual — the mw_ru and pwg_ru pipelines
 
-_Created: 11-07-2026 · Last updated: 24-07-2026_
+_Created: 11-07-2026 · Last updated: 25-07-2026_
 
 The subsystem deep manual for
 [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation)
@@ -100,10 +100,54 @@ in this order on first contact.
 | `<ab>`/`<ls>` tooltip + RU-abbreviation-purity policy | [ABBREVIATIONS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md) |
 | Judge-model policy (Sonnet bulk, Opus on rejects) | [research/JUDGE_POLICY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/JUDGE_POLICY.md) |
 | The five harvested Sa→Ru dictionaries (Russian) | [src/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/README.md) |
+| **What markup layers can / cannot answer** (Q/N matrix) | [pwg_ru.md §8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md) (canonical; editor RU) + **§2b below** (EN summary) |
 
 Trust order when they disagree: **command output** (`root_window_status.py`,
 `window_status.json`) > `.ai_state.md` > the dated docs. Several docs carry
 explicit staleness banners — respect them.
+
+## 2b. Capability map — questions layers answer (and do not)
+
+Canonical full tables (RU): [pwg_ru.md §8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md).
+This section is the English operator summary. Store snapshot 25-07-2026:
+**11,603** sense rows; `layer`/`provenance` on all; `evidence_summary` ~10.8k;
+full `evidence[]` ~2.2k.
+
+### Can answer now (with caveats)
+
+| ID | Question | Layers / surface | Caveat |
+|---|---|---|---|
+| Q1 | RU/DE/(EN) text of this sense | store + article site | promoted subset only |
+| Q2 | Which edition layer (PWG/PW/SCH/NWS…)? | `layer`, `_zz_*` subcard | no-PWG lane is real |
+| Q3–Q4 | Sense order / mask fidelity | audit gates | mechanical, not semantic gold |
+| Q5 | NWS owner | owner map | misattr quarantined |
+| Q6 | Renou stage(s) | Renou + optional DCS | badges; not reorder key |
+| Q7 | Case government (Rektion) | [government.html](https://gasyoun.github.io/SanskritLexicography/government.html) | floor vs `pwg.txt` ceiling |
+| Q8 | Abbreviation meaning / frequency | [abbreviations.html](https://gasyoun.github.io/SanskritLexicography/abbreviations.html) | H1303 not ratified |
+| Q9–Q10 | Independent S→R / KOW agreement | `evidence*` | non-blocking; sparse full `evidence[]` |
+| Q11 | Declension / “like *agni*” | grammar package / reverse index | not in translate prompts |
+| Q12 | Supplement typology | relationships_rollup | classified rollup only |
+| Q13–Q15 | Provenance / review_status / residue | store + requeue tools | mostly `ai_translated` |
+
+### Cannot answer yet (honest no)
+
+| ID | Question | Blocker |
+|---|---|---|
+| N1–N2 | Unified `ab` RU map; style doublets / `v. l.` / *im Comp.* | H1303 / H1306 votes |
+| N3 | Print-ready edition G5–G10 | human gold |
+| N4 | Full PWG→RU dictionary | ~5.5k remaining + live host |
+| N5–N6 | Sense frequency / “sense #1 = most common” | no sense-WSD + Zipf layer |
+| N7 | DHĀTUP.→Palsule links | H1333 XLS |
+| N8 | mw_ru term seed | seed repo missing |
+| N9 | Public bulk TM/RU | rights |
+| N10 | EN full twin | EN secondary |
+| N11 | All compound-split adjudications | ~4.2k @DO sheet |
+| N12–N13 | Full oral register; “better than human” | oral track + gold |
+| N14–N16 | Edition timeline UI; full `<ls>` scan links; learner filter product | product gaps |
+| N17 | Paid drain this host *now* | gate 403 / HEALTH_NOGO (25-07) |
+| N18 | “93% glyph quarantine = bad RU” | sample before mass re-translate |
+
+**Rule:** do not claim N* as product answers. Prefer Q* with the caveat column.
 
 ## 3. mw_ru — the finished pipeline (post-mortem chapter)
 

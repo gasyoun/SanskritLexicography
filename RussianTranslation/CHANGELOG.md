@@ -10,6 +10,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Documented — markup-layer capability map (what Q/N questions layers answer)
+
+- [`pwg_ru.md`](pwg_ru.md) §8: full RU tables — layers L0–L10, **Q1–Q15** answerable
+  now (with caveats), **N1–N18** not yet (human gates, drain, rights, WSD, 403 host…).
+- Deep manual §2b English summary + document-map pointer
+  ([RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md)).
+
 ### Documented — PWG manuals UX pack (cold start, skills, cookbook, census, H1447 example)
 
 - Deep manual §0 cold start; §5.0 skill-primary path; §11 symptom cookbook;

@@ -1,6 +1,6 @@
 # RUSSIANTRANSLATION_DEEP_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 24-07-2026_
+_Created: 18-07-2026 · Last updated: 25-07-2026_
 
 Companion record for [docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) (subsystem deep manual, H606).
 
@@ -33,6 +33,7 @@ COMMANDS_SPOT_RUN: script_census.py (306 files); harvest_launch_stats.py (473 le
 | 7 | Bare-clone offline vs store-required matrix | open |
 | 8 | EN operator checklist subsection | open |
 | 9 | pwg_ru.md sibling metadoc | open |
+| 10 | Capability Q/N matrix (layers → questions) | **done** 25-07 — pwg_ru.md §8 + deep manual §2b |
 
 ## Known limitations
 
