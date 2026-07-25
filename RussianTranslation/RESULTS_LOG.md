@@ -4,72 +4,36 @@ _Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
-## 25-07-2026 - H1624 form_notes: dedicated Nom/Voc field
+## 25-07-2026 — medium50 “all without --max-agents”: LIVE STOP (auth 403) + offline prep
 
-Executor: Grok 4.5.
-orm_notes = first-class field for nominative/vocative citation-form markers only.
+Executor: Grok 4.5 · intent: fresh live-gate then **all five** medium50 windows
+(`h1447-m50-w1…w5`, 48 keys) headless with **no** production `--max-agents`.
 
-| field | covers |
-|---|---|
-| government | acc loc instr gen dat abl |
-| form_labels | number, gender, case_form, voice |
-| form_notes | nom, voc only ({case, kind, span}) |
+### Live gate (paid) — mechanical NO-GO
 
-Selftest: form_labels --selftest; promote stamps form_notes.
-
-## 25-07-2026 - H1624 form_labels: number / gender / nom-voc / voice on DE senses
-
-Executor: Grok 4.5 - offline.
-Sibling of government (Rektion). Acc/Loc/Instr/Gen/Dat/Abl stay in government;
-form notes go to form_labels.
-
-| axis | values | sources |
-|---|---|---|
-| number | sg, du, pl | ab sg./du./pl. (paren or bare) |
-| gender | m, f, n, m.n, ... | lex primary; masc./fem./neutr. ab |
-| case_form | nom, voc | parenthetical form notes (not Rektion) |
-| voice | act, med, pass | ab med./act./pass. |
-
-Not gender: bare ab n. (ambiguous with note). Not form_labels: Rektion cases.
-
-Selftest: python src/form_labels.py --selftest; promote + microstructure stamp.
-LANG_PARITY SHARED form_labels_number_gender_voice_h1624.
-
-## 25-07-2026 - H1624 G2: government on every DE sense (promote + portrait)
-
-Executor: Grok 4.5 · offline · no paid window.
-Closes the gap where structured Rektion only appeared after a separate
-nnotate_government backfill. Schema shape unchanged (array of hit dicts, D4/H338).
-
-| path | producer | notes |
-|---|---|---|
-| store row on promote | promote_final_cards.rows_for + xtract_government(de) | always stamped (empty list if none) |
-| store retrofit | nnotate_government.py | existing rows / drift repair |
-| portrait sense at gen | microstructure.sense_node | from full DE segment |
-| portrait backfill | nrich_portrait_government.py | older local portraits |
-| retrieval surface | government.html via uild_article_site | still re-extracts from de_raw; floor banner |
-
-Selftests: government_census selftest, nnotate_government --selftest,
-promote_final_cards --selftest (PW (Instr.)), nrich_portrait_government --selftest,
-uild_article_site --selftest. LANG_PARITY SHARED government_on_promote_and_portrait_h1624_g2.
-
-## 25-07-2026 - H1624 G1: per-span gloss_lang on {%...%} (DE|LA|EN)
-
-Executor: Grok 4.5 (session override; handoff pinned Opus 4.8) · offline · no paid window.
-Artifact: [src/pwg_mask.py](src/pwg_mask.py) classify_pct_detail / gloss_lang_spans; residue shares classifier via [prompt_rule_audit.py](src/pilot/prompt_rule_audit.py); LANG_PARITY SHARED gloss_lang_spans_h1624_g1.
-
-| vector | expect | rule_id | mask |
+| profile | config_dir | health | detail |
 |---|---|---|---|
-| {%das Nichthandeln%} | de | default_de | inline |
-| das lat. {%ignis%} / <ab>lat.</ab> {%ignis%} | la | latin_cue | {Tn} |
-| {%De accentu comp.%} | la | latin_phrase | {Tn} |
-| {%Trapa bispinosa%} | la | botany_binomial | {Tn} |
-| WILS. ... durch {%leaving, abandoning%} | en | wilson_en | {Tn} |
-| {%terrestrial latitude%}, WILS. | en | wilson_en | {Tn} |
-| WILS. ... {%Honig%} | de | default_de | inline |
-| {%Name eines Baumes%} | de | default_de | inline (not binomial) |
+| **c4** | `D:\ClaudeTools\profiles\claude4\.claude` | **NO-GO** | `h963_c4_gate0_probe`: warmup **auth**; events also show rate_limit/auth; measured history 168s ceiling breach |
+| **c2** | `D:\ClaudeTools\profiles\claude2\.claude` | **NO-GO** | warmup **auth** 7358 ms |
+| c1 / c4 / c5 / default | same stack | **403** | direct `claude -p` → `Failed to authenticate. API Error: 403 Request not allowed` for default, sonnet, opus, `claude-sonnet-5` |
 
-Selftest: python src/pwg_mask.py --selftest · window_selftest.test_pwg_mask_gloss_lang_g1 · lang_parity_check green.
+**Stop reason:** `HEALTH_NOGO` / org-wide CLI **403** — no canary, no production calls, no store write.
+Probe log rows: `gate0-c4-fresh-2026-07-25`, `gate0-c2-fresh-2026-07-25`.
+
+**Human unblock:** re-auth / fix Max org permission so `claude -p` succeeds on a roster profile, then re-run live-gate.
+
+### Offline prep completed (ready when GO returns)
+
+| artifact | n |
+|---|---:|
+| merged 5-layer inputs (`_pilot_gen_merged`) | 48 keys |
+| bare-key input aliases for `gen_opt_harness2.input_paths` | 48 |
+| execution_manifest.v2 + harness per window | **5** (`w1` 3 keys agent_exp=3; `w2` 12→20; `w3` 11→14; `w4` 11→12; `w5` 11→12) |
+| manifest `max_translate_agents` (no CLI max-agents) | 19 / 34 / 31 / 34 / 40 |
+
+Resume recipe (gitignored output tree):
+`src/pilot/output/MEDIUM50_NO_MAX_AGENTS_RESUME_2026-07-25.md` — headless lines
+**omit** `--max-agents` on multi-key windows; canary alone may use `--max-agents 1`.
 
 ## 24-07-2026 — c2 medium50 w1 forensics: only-b0 / all-nulls = `--max-agents 1` starvation
 
