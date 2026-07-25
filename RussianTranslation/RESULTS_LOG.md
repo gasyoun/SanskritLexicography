@@ -21,6 +21,23 @@ promoted; one paid warm-up call was spent. The H858 Part B validation window sta
 c4 has produced no clean pair since 23-07: `rate_limit` x2 on 24-07, `auth` x2 earlier on
 25-07, `rate_limit` today.
 
+### Attempt 2 (18:18Z, through the fixed probe v1.63.0)
+
+| Reading | Elapsed | Classification | Verdict input |
+|---|---|---|---|
+| warm-up | 19 903 ms | `rate_limit` | fail-closed -> STOP |
+| measured | - | never ran | - |
+
+Same `HEALTH_NOGO`. c4's rate-limit window has not reset: three `rate_limit` readings now
+span 24-07 -> 25-07 18:18Z with two `auth` between, and latency is fine in every one
+(9.9-19.9 s, all far inside the 30 000 ms ceiling). Quota/account state, not code or route -
+further probing today is spend without information.
+
+First live proof of the #729 fix: RAW READINGS printed ONE row (this run's, under a
+per-invocation run id) and the NO-GO reasons name this run's own absent measured reading.
+The old constant `RUN_ID` would have re-read all 10 historical rows and cited the 23-07
+168 352 ms again.
+
 ### Probe defect found by this run (integrity)
 
 | Defect | Impact | Tracking |
