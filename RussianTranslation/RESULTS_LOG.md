@@ -4,6 +4,25 @@ _Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 25-07-2026 - H1624 DH follow-up batch minted (H1626–H1635)
+
+Executor: Grok 4.5. Mint-only (no execution). Parent: H1624 German layers closed G1–G6.
+
+| ID | Priority | Topic | Status |
+|---|---|---|---|
+| H1626 | P0 | H1303 abbrev apply | ⏸ vote |
+| H1627 | P0 | H1306 style / G5 | ⏸ vote |
+| H1628 | P1 | compound differs sheet | QUEUED |
+| H1629 | P2 | OntoLex/TEI DE graph | QUEUED |
+| H1630 | P3 | citation top-N scans | QUEUED |
+| H1631 | P4 | edition-diff UI | QUEUED |
+| H1632 | P5 | sense–DCS pilot | QUEUED |
+| H1633 | P7 | gold cut + methods | QUEUED |
+| H1634 | docs | editorial principles | QUEUED |
+| H1635 | FAIR | Zenodo public sidecars | QUEUED (rights) |
+
+G7: existing H1333 (XLS-gated). Spec: Uprava/handoffs/_batch_h1624_dh_followups.tsv.
+
 ## 25-07-2026 - H1624 G6: compound conflict flags + G5/G7 blockers
 
 Executor: Grok 4.5.

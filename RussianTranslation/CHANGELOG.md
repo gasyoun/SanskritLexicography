@@ -10,6 +10,14 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Documented - H1624 DH follow-up handoff batch H1626–H1635
+
+- Minted+filled 10 handoffs after German-layers G1–G6: post-vote H1303/H1306,
+  compound differs review-sheet, OntoLex/TEI export, citation top-N scans,
+  edition-diff UI, DCS pilot, gold methods, editorial principles, Zenodo sidecars.
+- Registry: [Uprava handoffs README](https://github.com/gasyoun/Uprava/blob/main/handoffs/README.md);
+  programme [H1624](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1624-Opus_SanskritLexicography_pwg-german-layers-backlog-ordered_25.07.26.md).
+
 ### Added - H1624 G6: derivation/compound conflict flags on portraits
 
 - [enrich_portrait_derivation.py](src/pilot/enrich_portrait_derivation.py):
