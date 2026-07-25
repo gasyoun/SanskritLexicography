@@ -405,6 +405,16 @@ def provenance(entry, subkey, model_version):
             and isinstance(tnmask.get('got'), str)
             and isinstance(tnmask.get('want'), str)):
         prov['tnmask'] = {'got': tnmask['got'], 'want': tnmask['want']}
+    # H858 Part B: a card whose `german` echo dropped a masked span is REPAIRED from the source
+    # skeleton instead of being nulled -- so the row must say so. Without this stamp a
+    # machine-re-injected citation is indistinguishable in the store from one the model echoed
+    # correctly, and the repair's real-world precision could never be audited after the fact
+    # (the exact H1150/H1226 "denominator 1" trap the tnmask pairing above exists to avoid).
+    # Same discipline: carried only when well-formed, never fabricated, never back-filled.
+    anchor = card.get('german_anchor')
+    if isinstance(anchor, dict) and isinstance(anchor.get('reinjected'), list):
+        prov['german_anchor'] = {'reinjected': [str(t) for t in anchor['reinjected']],
+                                 'head': [str(t) for t in anchor.get('head') or []]}
     return prov
 
 
@@ -1033,6 +1043,21 @@ def selftest():
     bp = list(rows_for('p_a~~h5_00_pwg00', badentry, 'ai_translated',
                        SELFTEST_MODEL_VERSION))[0]['provenance']
     assert 'tnmask' not in bp, 'a malformed tnmask pairing must not be promoted'
+    # H858 Part B: a card repaired by the german-anchor lane must SAY SO on every row it yields --
+    # otherwise a machine-re-injected citation is indistinguishable in the store from one the model
+    # echoed correctly, and the repair's real-world precision is unauditable after the fact. Same
+    # discipline as tnmask above: never fabricated, and a malformed stamp is dropped.
+    assert 'german_anchor' not in p, 'an unrepaired card must not fabricate a german_anchor stamp'
+    garow = list(rows_for('p_a~~h5_00_pwg00',
+                          dict(entry, card=dict(entry['card'],
+                                                german_anchor={'reinjected': ['T4'], 'head': []})),
+                          'ai_translated', SELFTEST_MODEL_VERSION))[0]['provenance']
+    assert garow['german_anchor'] == {'reinjected': ['T4'], 'head': []}, \
+        'a german-anchor repair must ride on the promoted row provenance'
+    gabad = list(rows_for('p_a~~h5_00_pwg00',
+                          dict(entry, card=dict(entry['card'], german_anchor={'head': []})),
+                          'ai_translated', SELFTEST_MODEL_VERSION))[0]['provenance']
+    assert 'german_anchor' not in gabad, 'a malformed german_anchor stamp must not be promoted'
     # collect_cards: a non-null card wins over a null for the same sub-card key.
     d = tempfile.mkdtemp()
     nullf = os.path.join(d, 'wf_output.sc.x.json')

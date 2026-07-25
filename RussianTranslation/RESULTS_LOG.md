@@ -4,6 +4,42 @@ _Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 25-07-2026 - H858 Part B: german-anchor repair — offline verification (NO paid run)
+
+Executor: Opus 5 (`claude-opus-5`). Isolated worktree off `origin/master` @ `f96361ca`.
+**Scope honesty: these are OFFLINE gates only.** The handoff's own validation — a bounded
+no_pwg window showing the `{#…#}`-drop null class eliminated — is a PAID run and was NOT
+performed: it needs a fresh live-gate GO, and the last c2/c4 readings were NOGO/rate-limited.
+The live answer will come from `summary.german_anchor_repairs` on the first window that runs.
+
+### Gates run
+
+| Gate | Lane | Result |
+|---|---|---|
+| `german_anchor.selftest()` | Python (authored source) | 8/8 OK |
+| `german_anchor_test.js` vs a REAL generated harness | JS (interpolated twin) | 21/21 PASS |
+| `headless_worker_selftest.py` (incl. the new H858 test) | Python production route | PASS |
+| `window_selftest.py` | both | **185/185**, 0 failed |
+| `promote_final_cards.py --selftest` | store provenance | PASS |
+| `lang_parity_check.py` | ledger | 82 entries, no drift, coverage complete |
+
+### Behaviour pinned (both lanes, identical fixtures)
+
+| Case | Before | After |
+|---|---|---|
+| headword `{#…#}` dropped from the echo (`{# 0/1`) | card NULLED, requeue reproduces it | repaired at sense head, stamped, promoted |
+| mid-card span dropped (`1/2`, `1/3`) | card NULLED | re-injected at its nearest surviving neighbour |
+| span dropped in a multi-sense card | card NULLED | lands in the correct sense (nearest-neighbour, not always-after) |
+| echo faithful | accepted | accepted, **byte-identical, unstamped** |
+| echo duplicates / fabricates / reorders a span | rejected | rejected, reason recorded (`german-anchor duplicate-token`, …) |
+| german repaired but TARGET field dropped the span | `translation-fidelity-reject` | `translation-fidelity-reject` (unchanged — no laundering) |
+
+### Integrity defect found in passing (pre-existing, unrelated to H858)
+
+| File | Defect | Fix |
+|---|---|---|
+| `src/pilot/window_selftest.py` (coordinator-requeue test) | ran a real `--defect` requeue without `--no-residual`, appending a junk `{"key": "a"}` row to the tracked `no_pwg_residuals.jsonl` on EVERY suite run — the registry that decides which keys are BLOCKED from requeue | `--no-residual` added; polluting row reverted; the test's own assertions unaffected |
+
 ## 25-07-2026 - H1624 DH follow-up batch minted (H1626–H1635)
 
 Executor: Grok 4.5. Mint-only (no execution). Parent: H1624 German layers closed G1–G6.
