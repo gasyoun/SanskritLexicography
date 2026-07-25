@@ -198,6 +198,29 @@ record → per-card round-trip assertion обязателен).
 - **английская** ремарка Уилсона (`Wils. übersetzt … durch {%leaving…%}`) →
   как латынь, **не** на русский.
 
+#### `gloss_lang` rule table (H1624 G1 — durable metadata, not a DE rewrite)
+
+Stage-0 classifier in
+[pwg_mask.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py)
+(`classify_pct_detail` / `gloss_lang_spans`). Emits sidecar list
+`{span, gloss_lang, rule_id, start, end, translate}` for every `{%…%}`.
+**Does not** rewrite 19th-c. German orthography or inject RU into DE.
+
+| `gloss_lang` | `rule_id` | Cue / surface | Mask? |
+|---|---|---|---|
+| `la` | `latin_cue` | preceding `lat.` / `latein` / `griech.` / `gr.` (incl. inside `<ab>`) | yes `{Tn}` |
+| `la` | `latin_phrase` | `De accentu…` / genuine Latin openers (C8: `In der Regel` stays DE) | yes |
+| `la` | `botany_binomial` | title-case Genus + lowercase epithet (`Trapa bispinosa`); German noun phrases rejected | yes |
+| `en` | `wilson_en` | `WILS.` / `Wilson` near span **and** English content | yes |
+| `en` | `engl_cue` | `engl.` / `englisch` near span **and** English content | yes |
+| `en` | `english_content` | clear English markers, no German | yes |
+| `ambig` | `homograph_ambig` | short `in`/`an`/`et`… tokens | no (inline, flagged) |
+| `de` | `default_de` | everything else (incl. Wilson + German content like `{%Honig%}`) | no (translate) |
+
+CLI: `python src/pwg_mask.py gloss-langs <key1>` · `python src/pwg_mask.py --selftest`.
+Residue gate (`prompt_rule_audit.looks_foreign_literal`) shares the same classifier
+so Latin/Wilson preserved literals are not requeued as untranslated German.
+
 ### Пунктуация несет смысл
 
 - `;` — **разные значения**;
@@ -357,9 +380,9 @@ csl-orig pwg.txt  ──►  5-layer merge  ──►  portrait + raw  ──►
 | **Pre-LLM: portrait** | JSON-портрет микроструктуры + corpus evidence **по немецкому headword** (не перевод) | output: [example portrait](src/pilot/input/nakzatra.portrait.json) · [example raw](src/pilot/input/nakzatra.raw.txt) |
 | **Pre-LLM: NWS owners** | Детерминированный owner-map **дописывается** к raw/portrait (кто автор NWS-фрагмента) | [
 ws_split.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/nws_split.py); [NWS_SOURCE_DEFECTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/NWS_SOURCE_DEFECTS.md) |
-| **Pre-LLM: mask** | Немецкий текст **трансформируется** в skeleton + {Tn} (Sa/cite/gram прячутся) — это не новый смысл, а форма подачи модели | [pwg_mask.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py) |
+| **Pre-LLM: mask** | Немецкий текст **трансформируется** в skeleton + {Tn} (Sa/cite/gram прячутся) — это не новый смысл, а форма подачи модели; LA/EN `{%…%}` → `{Tn}` | [pwg_mask.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py) |
 | **Pre-LLM: sense tags / splits** | Канонические sense tags, citation batches, root/head splits — нарезка **немецкого** body | same merge + harness; [FAILURE_MODES…](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/FAILURE_MODES_AND_KILL_GATE_2026-07-04.md) |
-| **Derived from DE markup (не правка DE string)** | **Renou I–V** из <ls>; **government** из (<ab>Instr.</ab>) в DE; ab frequency | [RENOU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU.md); [H1308](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1308-Opus_RussianTranslation_pwg-ru-valency-government-index_19.07.26.md); [ABBREVIATIONS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md) |
+| **Derived from DE markup (не правка DE string)** | **Renou I–V** из <ls>; **government** из (<ab>Instr.</ab>) в DE; ab frequency; **`gloss_lang` per `{%…%}`** (de\|la\|en, H1624 G1) | [RENOU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU.md); [H1308](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1308-Opus_RussianTranslation_pwg-ru-valency-government-index_19.07.26.md); [ABBREVIATIONS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md); [§4 gloss_lang table](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md) |
 | **Grammar layer** | Whitney / Zaliznyak **рядом**, в prompt **не** вставляется (A/B reject) | [NOMINAL_GRAMMAR_AB.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/NOMINAL_GRAMMAR_AB.md) |
 | **Post-LLM (не на DE)** | Поля 
 u / n, vidence* (по RU), 
@@ -375,7 +398,7 @@ review_status — они живут **рядом** в store/site.
 
 | Слой | Что это | Поверхность / детали |
 |------|---------|----------------------|
-| **L0 маска** | {#}, <ls>, <ab>, <is>, <lex>, {%…%}, <div> | [§4 format](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md); [pwg_mask.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py) |
+| **L0 маска** | {#}, <ls>, <ab>, <is>, <lex>, {%…%} (+ **gloss_lang** de\|la\|en), <div> | [§4 format](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md); [pwg_mask.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py); H1624 G1 |
 | **L1 5-dict stack** | PWG + Nachträge + PW + SCH + PWKVN + NWS | [_pilot_gen_merged.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_pilot_gen_merged.py); [PWG_LAYER_COMBINATIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/PWG_LAYER_COMBINATIONS.md) |
 | **L2 NWS owners** | детерминированный owner-map | [NWS_SOURCE_DEFECTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/NWS_SOURCE_DEFECTS.md); [nws_split.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/nws_split.py) |
 | **L3 Renou I–V** | состояние языка по <ls> (+ DCS enrich) | [RENOU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RENOU.md); [annotate_renou.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/annotate_renou.py); [enrich_renou_dcs.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/enrich_renou_dcs.py) |

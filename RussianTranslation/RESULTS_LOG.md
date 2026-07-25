@@ -1,8 +1,26 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 24-07-2026_
+_Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 25-07-2026 - H1624 G1: per-span gloss_lang on {%...%} (DE|LA|EN)
+
+Executor: Grok 4.5 (session override; handoff pinned Opus 4.8) · offline · no paid window.
+Artifact: [src/pwg_mask.py](src/pwg_mask.py) classify_pct_detail / gloss_lang_spans; residue shares classifier via [prompt_rule_audit.py](src/pilot/prompt_rule_audit.py); LANG_PARITY SHARED gloss_lang_spans_h1624_g1.
+
+| vector | expect | rule_id | mask |
+|---|---|---|---|
+| {%das Nichthandeln%} | de | default_de | inline |
+| das lat. {%ignis%} / <ab>lat.</ab> {%ignis%} | la | latin_cue | {Tn} |
+| {%De accentu comp.%} | la | latin_phrase | {Tn} |
+| {%Trapa bispinosa%} | la | botany_binomial | {Tn} |
+| WILS. ... durch {%leaving, abandoning%} | en | wilson_en | {Tn} |
+| {%terrestrial latitude%}, WILS. | en | wilson_en | {Tn} |
+| WILS. ... {%Honig%} | de | default_de | inline |
+| {%Name eines Baumes%} | de | default_de | inline (not binomial) |
+
+Selftest: python src/pwg_mask.py --selftest · window_selftest.test_pwg_mask_gloss_lang_g1 · lang_parity_check green.
 
 ## 24-07-2026 — c2 medium50 w1 forensics: only-b0 / all-nulls = `--max-agents 1` starvation
 
