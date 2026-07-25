@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 24-07-2026_
+_Created: 04-07-2026 · Last updated: 25-07-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -8,6 +8,54 @@ This is the orientation document for anyone (human or session) who needs the
 narrated). Read this first; go to `.ai_state.md` for exact dates/PRs/numbers on
 any specific claim below, and to [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
 for the current operating procedure.
+
+### H858 Part B — the `{#…#}`-span drop stops nulling cards: source-anchored german repair (25-07-2026)
+
+The clean-rate ceiling on the no_pwg windows was never transport. A card is nulled when its
+restored `<ls>`/`{#` counts differ from the source, and that count reads `sense.german` — the
+model's **echo** of the masked skeleton. When the model drops one `{Tn}` from that echo, the
+whole card dies and **a requeue reproduces it**, because the drop is a property of the echo,
+not of the call: `asaMskfta` `avyāhata` `avyagra` `darvī` `glāna` `hasita` at `{# 0/1`, `1/2`,
+`1/3` (H858, 13-07-2026), and 6 of the 7 residual nulls in `no_pwg_w10` (H1283) — spec'd then,
+unshipped for twelve days.
+
+The dropped span is not lost information: it is in the source skeleton, and the tokens the
+model DID echo say where it belongs. [`src/german_anchor.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/german_anchor.py)
+re-injects each missing `{Tn}` next to its nearest surviving neighbour — after the preceding
+span or before the following one, whichever is closer in the source. Nearest-neighbour rather
+than always-after matters across a sense boundary: a citation dropped from the end of sense 2
+has its predecessor back in sense 1. Everything before the first surviving span goes to the
+head of the first sense — the dropped headword, the largest sub-class.
+
+Two design choices carry the risk. **Repair-then-verify:** the repair runs ONLY on a card that
+already failed the count, and the SAME count is re-run as the verifier — so a card that passes
+today is byte-untouched and the clean yield cannot regress, the only cards it can reach being
+cards that were already being thrown away. **Refuse anything that is not a pure drop:** the
+echo must be a strict order-preserving subsequence of the source (no foreign token, no
+duplicate, no reordering); under that precondition the only possible defect IS a drop, and the
+source fixes it deterministically. Everything else rejects as before, with the refusal reason
+recorded. Every repaired card is stamped (`german_anchor`) into the promoted row's provenance,
+so a machine-re-injected citation is never indistinguishable in the store from one the model
+got right — the H1150/H1226 "denominator 1" trap.
+
+Both lanes run ONE authored implementation: `german_anchor.js_source()` is interpolated into
+the harness exactly as `card_fields` already injects `RESTORE_SPEC` (C-01) and
+`TOKEN_FIDELITY_SPEC` (C-17), the two constants that drifted precisely because each lane kept
+its own hand-written copy. SHARED under [`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md)
+by construction — it touches only the `german` source echo, never the target-language field,
+and the H1152 C1 translation-fidelity guard downstream is unchanged: a repaired german still
+does not launder a target-side drop (pinned on both lanes).
+
+**Not measured live.** The offline pins are green on both lanes (`window_selftest` 185/185,
+`german_anchor_test.js` against a real generated harness, `headless_worker_selftest`), but the
+handoff's own validation — a bounded no_pwg window showing the null class gone — is a PAID run
+and stays gated on a fresh live-gate GO. The `summary.german_anchor_repairs` / `_detail`
+counters exist to answer it the moment a window runs.
+
+*Found in passing:* `window_selftest`'s coordinator-requeue test ran a real `--defect` requeue
+without `--no-residual`, so every suite run appended a junk row to the tracked
+`no_pwg_residuals.jsonl` — the registry that decides which keys are BLOCKED from requeue.
+Fixed with the flag; the polluting row was reverted.
 
 ### H1386 — the H1339 review landing set: resume recovery, frag-TM memory, prepare-batch (22-07-2026)
 

@@ -44,6 +44,7 @@ from window_common import INP, REPO, SRC, input_paths, load_json, read_text, roo
 from agent_budget import derive_agent_budget
 import pwg_mask
 import card_fields                                    # C-01: the one restore/promote field set
+import german_anchor                                  # H858 Part B: the anchored-repair twin, authored once
 from autosplit_requeue import plan as split_plan     # deterministic per-card sense/citation split
 from sense_count import count_source_senses           # H920/H960 deterministic top-level source-sense count
 sys.path.insert(0, SRC)
@@ -1647,6 +1648,12 @@ const SANLOSS_DETAIL = []
 const TNMASK_HARD_REJECT = false
 let TNMASK_MISMATCHES = 0
 const TNMASK_DETAIL = []
+// H858 Part B german-anchor telemetry: how many cards were SAVED from an ls/sk fidelity-reject
+// by re-injecting a dropped source span, and which spans. Unlike the two soft gates above this
+// is not a rollout switch — the repair only ever runs on a card that was already being thrown
+// away, and only lands when it verifies exactly source-faithful, so there is nothing to arm.
+let GERMAN_ANCHOR_REPAIRS = 0
+const GERMAN_ANCHOR_DETAIL = []
 const isConn = e => !!(e && !(e instanceof KillTimeout) && /connection closed|connection error|econnreset|econnrefused|socket hang up|fetch failed|network error/i.test(String(e && e.message)))
 async function agentKill(prompt, opts, skelBytes, budgetMsOverride) {
   const healLane = !!(opts && opts.label && /^heal:/.test(String(opts.label)))
@@ -1682,6 +1689,7 @@ const tokensOf = t => ((t || '').match(/\\{T\\d+\\}/g) || []).sort().join(' ')
 // Python `card_token_multiset` collects from, so the two twins cannot drift (the C-17 defect was
 // the Python lane omitting `grammar` while this JS lane hard-coded rec.grammar + s.german).
 const TOKEN_FIDELITY_SPEC = %(token_fidelity_spec)s
+%(german_anchor_js)s
 const cardTokens = card => { let a = []; for (const rec of (card.records || [])) { for (const f of TOKEN_FIDELITY_SPEC.record) a = a.concat((rec[f] || '').match(/\\{T\\d+\\}/g) || []); for (const s of (rec.senses || [])) for (const f of TOKEN_FIDELITY_SPEC.sense) a = a.concat((s[f] || '').match(/\\{T\\d+\\}/g) || []) } return a.sort().join(' ') }
 // Index a returned cards[] by its self-declared key1 (the prompt requires key1 to echo the
 // '=== CARD <key> ===' header). Used to match responses by KEY first, position second —
@@ -1771,13 +1779,40 @@ const accept = (c, k) => {
       log('{Tn} multiset mismatch (soft): ' + k + ' — kept, telemetry only')
     }
   }
+  // H858 Part B: snapshot the PRE-restore card. The anchored repair below works on {Tn}
+  // tokens, which restoreCard consumes — after it a dropped span is indistinguishable from
+  // prose and can no longer be anchored. Python twin: headless_worker.normalize_batch.
+  const masked = JSON.parse(JSON.stringify(c))
   c = restoreCard(c, k)
   // Fidelity guard: restored <ls>/{#..#} counts MUST match the source — a mismatch
   // means misalignment / dropped {Tn}. Reject -> deterministic requeue, never emit garbled.
-  const ls = countOf(c, /<ls\\b/g), sk = countOf(c, /\\{#/g)
+  let ls = countOf(c, /<ls\\b/g), sk = countOf(c, /\\{#/g)
   if (ls !== INPUTS[k].ls || sk !== INPUTS[k].sk) {
-    noteFail(k, 'fidelity-reject: <ls> ' + ls + '/' + INPUTS[k].ls + ', {# ' + sk + '/' + INPUTS[k].sk)
-    return null
+    // H858 Part B: the model dropped a masked span from its `german` echo — the dominant
+    // retry-RESISTANT null class (6 of 7 residual nulls in no_pwg_w10, H1283): a requeue
+    // reproduces it, because the drop is a property of the echo, not of transport. Re-inject
+    // the dropped spans from the source skeleton and re-run THIS SAME count as the verifier.
+    // Accepted only when the repair makes the card exactly source-faithful; anything else
+    // falls through to the identical reject as before. A card that passed the count above
+    // never enters this branch, so clean cards are byte-untouched.
+    const rep = gaReanchor(masked, INPUTS[k].skeleton || '')
+    const cand = rep.ok ? restoreCard(masked, k) : null
+    const cls = cand ? countOf(cand, /<ls\\b/g) : -1, csk = cand ? countOf(cand, /\\{#/g) : -1
+    if (cand && cls === INPUTS[k].ls && csk === INPUTS[k].sk) {
+      // `masked` was snapshotted AFTER the tnmask block above, so the repaired card already
+      // carries the same H1226 pre-restore pairing — the stamp keeps describing what the model
+      // actually emitted, never the repaired text.
+      c = cand
+      c.german_anchor = gaStamp(rep)
+      GERMAN_ANCHOR_REPAIRS++
+      GERMAN_ANCHOR_DETAIL.push({ key: k, reinjected: c.german_anchor.reinjected })
+      log('german-anchor repair: ' + k + ' re-injected ' + c.german_anchor.reinjected.join(',') + ' from source')
+      ls = cls; sk = csk
+    } else {
+      noteFail(k, 'fidelity-reject: <ls> ' + ls + '/' + INPUTS[k].ls + ', {# ' + sk + '/' + INPUTS[k].sk +
+        '; german-anchor ' + (rep.ok ? 'verify-failed' : (rep.reason || 'refused')))
+      return null
+    }
   }
   // H1152 guard 2: the check above counts <ls>/{#..#} ONLY in the `german` source-echo
   // field (countOf's hard-coded `s.german` read) -- it proves the model faithfully copied
@@ -2292,6 +2327,8 @@ const summary = { root: META.root, lang: META.lang, cards: out.length, ok: _ok,
                   // H960 grammar-{Tn} multiset telemetry (SOFT — no reject unless TNMASK_HARD_REJECT).
                   tnmask_mismatches: TNMASK_MISMATCHES, tnmask_hard_reject: TNMASK_HARD_REJECT,
                   tnmask_detail: TNMASK_DETAIL,
+                  german_anchor_repairs: GERMAN_ANCHOR_REPAIRS,
+                  german_anchor_detail: GERMAN_ANCHOR_DETAIL,
                   null_keys: out.filter(r => !r.card).map(r => r.key),
                   partial_keys: out.filter(r => r.card && r.card.partial).map(r => r.key),
                   failures: _failures }
@@ -2304,6 +2341,10 @@ return { meta: META, summary, results: out }
         # with a raw {Tn}. The JS cannot import Python, so the constant is injected instead.
         'restore_spec': card_fields.js_restore_spec(field),
         'token_fidelity_spec': card_fields.js_token_fidelity_spec(),
+        # H858 Part B: the anchored-repair twin is AUTHORED in german_anchor.py and injected
+        # here, for the same reason as the two constants above -- a hand-copied second lane is
+        # exactly how restoreCard (C-01) and cardTokens (C-17) drifted apart.
+        'german_anchor_js': german_anchor.js_source(),
         # Language-aware meta + model pin. EN path pins Sonnet 5 explicitly
         # (the bare 'sonnet' alias resolved to 4.6 on a prior run); RU path
         # keeps the 'sonnet' alias unchanged so the autonomous RU runs are untouched.

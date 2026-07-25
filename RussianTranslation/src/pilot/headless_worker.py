@@ -2,6 +2,7 @@
 """Execute one PWG translation manifest through Claude Code headless mode."""
 import argparse
 import collections
+import copy
 import glob
 import hashlib
 import json
@@ -22,6 +23,7 @@ if _SRC not in sys.path:
     sys.path.insert(0, _SRC)
 from proc_tree import run_tree_kill, terminate_tree, windows_hidden_flags  # noqa: E402  (shared D-J tree-kill runner)
 import card_fields  # noqa: E402  (C-01: the one restore/promote field set, shared with the JS lane)
+import german_anchor  # noqa: E402  (H858 Part B: source-anchored repair of a dropped `german` span)
 from window_common import portrait_key_iast  # noqa: E402  (B02: one iast derivation for both stitch twins)
 from execution_contract import ActiveCallClaim, SCHEMA_V1, SCHEMA_V2, validate_manifest, validate_profile  # noqa: E402
 
@@ -276,24 +278,48 @@ def normalize_batch(manifest, keys, structured):
         if card is None:
             error = 'missing-or-mismatched-key'
         else:
-            unmapped = []
-            card = restore_card(card, manifest['field'],
-                                manifest['placeholder_maps'].get(key, []), unmapped)
             inp = manifest['inputs'][key]
             field = manifest['field']
+            phs = manifest['placeholder_maps'].get(key, [])
+            # H858 Part B: keep the PRE-restore card. The repair below works on `{Tn}`
+            # tokens, which `restore_card` consumes -- after it the dropped span is
+            # indistinguishable from prose and can no longer be anchored.
+            masked = copy.deepcopy(card)
+            unmapped = []
+            card = restore_card(card, field, phs, unmapped)
             if count_card(card, '<ls') != inp['ls'] or count_card(card, '{#') != inp['sk']:
-                error = 'fidelity-reject'
-                card = None
-            elif (count_card_field(card, field, '<ls') != inp['ls']
-                  or count_card_field(card, field, '{#') != inp['sk']):
-                # H1152 parity (C1): german echo is faithful, but the translation dropped a
-                # span -- requeue instead of promoting a lossy card.
-                error = 'translation-fidelity-reject'
-                card = None
-            elif unmapped:
-                # C-42: an out-of-range {Tn} maps nothing and cannot be recovered downstream.
-                error = 'unmapped-token-reject'
-                card = None
+                # H858 Part B: the model dropped a masked span from its `german` echo. That is
+                # the dominant retry-RESISTANT null class (6 of 7 residual nulls in no_pwg_w10,
+                # H1283) -- a requeue reproduces it, because the drop is a property of the echo,
+                # not of transport. Re-inject the dropped spans from the source skeleton, then
+                # re-run THIS SAME count as the verifier: the repair is accepted only when it
+                # makes the card exactly source-faithful, and refused cards fall through to the
+                # identical reject as before. A card that passed the count above never enters
+                # this branch, so clean cards are byte-untouched.
+                ok, info = german_anchor.reanchor(masked, inp.get('skeleton') or '')
+                candidate, cand_unmapped = None, []
+                if ok:
+                    candidate = restore_card(masked, field, phs, cand_unmapped)
+                if (candidate is not None
+                        and count_card(candidate, '<ls') == inp['ls']
+                        and count_card(candidate, '{#') == inp['sk']):
+                    card, unmapped = candidate, cand_unmapped
+                    card['german_anchor'] = german_anchor.stamp(info)
+                else:
+                    error = 'fidelity-reject: german-anchor %s' % (
+                        'verify-failed' if ok else info.get('reason', 'refused'))
+                    card = None
+            if card is not None:
+                if (count_card_field(card, field, '<ls') != inp['ls']
+                        or count_card_field(card, field, '{#') != inp['sk']):
+                    # H1152 parity (C1): german echo is faithful, but the translation dropped a
+                    # span -- requeue instead of promoting a lossy card.
+                    error = 'translation-fidelity-reject'
+                    card = None
+                elif unmapped:
+                    # C-42: an out-of-range {Tn} maps nothing and cannot be recovered downstream.
+                    error = 'unmapped-token-reject'
+                    card = None
         row = {'key': key, 'card': card, 'judge': None, 'judge_sonnet': None,
                'escalated': False}
         if error:
@@ -786,6 +812,16 @@ def execute(manifest, claude='claude', timeout=7200, runner=None, max_agents_ove
                'tm': sum(bool(row.get('tm')) for row in results),
                'degenerate_passthrough': sum(bool(row.get('degenerate_passthrough')) for row in results),
                'null_keys': list(failures), 'partial_keys': [], 'failures': failures,
+               # H858 Part B: how many cards were SAVED from an ls/sk fidelity-reject by
+               # re-injecting a dropped source span, and which spans -- the measurement the
+               # handoff's "is the {#-drop null class gone?" question is answered from. JS twin:
+               # summary.german_anchor_repairs / german_anchor_detail.
+               'german_anchor_repairs': sum(bool((row.get('card') or {}).get('german_anchor'))
+                                            for row in results),
+               'german_anchor_detail': [{'key': row['key'],
+                                         'reinjected': row['card']['german_anchor']['reinjected']}
+                                        for row in results
+                                        if (row.get('card') or {}).get('german_anchor')],
                'translate_agents_spent': engine.translate_calls,
                'heal_agents_spent': engine.heal_calls,
                'budget_stops': engine.budget_stops,
