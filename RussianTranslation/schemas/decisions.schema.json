@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/decisions.schema.json",
+  "title": "Review-sheet decisions export (bound)",
+  "description": "The decisions.json a review sheet downloads/auto-saves, under the H1404 binding standard: a superset of the csl_pyutil.render_review_sheet v0.3.x export payload ({sheet_id, generated, decided, items:[{id, decision, note}]}, plus the standard-layer 'rating' and the strict-review 'reviewer'/'reviewedAt'/'complete' fields) that additionally REQUIRES content_hash, the sha256 of the exact sheet HTML the reviewer voted in. Pre-standard exports lacking content_hash are legacy: schema-invalid here, admissible only through validate_decisions.py --allow-legacy.",
+  "type": "object",
+  "required": ["sheet_id", "generated", "decided", "content_hash", "items"],
+  "properties": {
+    "sheet_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable sheet identifier stamped into the HTML (var SHEET_ID) and echoed by every export; the localStorage key is 'review-sheet:' + sheet_id."
+    },
+    "generated": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Generation timestamp of the sheet (core download) or of the export (auto-save path uses new Date().toISOString())."
+    },
+    "decided": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Count of items with a non-null decision at export time."
+    },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "description": "sha256 (hex, lowercase, 'sha256:' prefix) of the pre-stamp sheet HTML, LF-normalized — computed by review_binding.stamp() and recorded in the sheet's committed <sheet_id>.lock.json."
+    },
+    "reviewer": {
+      "type": "string",
+      "description": "strict_review layer: reviewer identity typed into the sheet."
+    },
+    "reviewedAt": {
+      "type": ["string", "null"],
+      "description": "strict_review layer: ISO timestamp when the export passed the completeness policy, else null."
+    },
+    "complete": {
+      "type": "boolean",
+      "description": "strict_review layer: whether the export satisfied the policy (all votes cast, reject notes present)."
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "decision"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Card id, exactly as rendered in the sheet's ids array."
+          },
+          "decision": {
+            "type": ["string", "null"],
+            "enum": ["approve", "reject", "defer", null],
+            "description": "The vote; unvoted items export decision:null."
+          },
+          "note": {
+            "type": "string",
+            "description": "Free-text reviewer note (may be empty)."
+          },
+          "rating": {
+            "type": ["number", "null"],
+            "description": "V1/V5 rating layer (e.g. Direct Assessment 1-5); absent on sheets without a rating config."
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

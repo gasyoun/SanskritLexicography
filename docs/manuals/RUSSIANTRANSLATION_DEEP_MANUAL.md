@@ -600,7 +600,20 @@ verdict.
 | TMX 1.4b export + A/B/C grades (`build_tmx.py`, `tm_grade.py`) | gitignored `release/corpus_tm/` | **NO public release** — per-translator rights clearance (H215 Slice 5) is the blocker |
 | Grammar layer (Whitney roots, Zaliznyak-style index, vidyut paradigms) | tracked (`datapackage.json`, CC-BY-SA-4.0) | structured data, deliberately NOT in translation prompts (A/B: no gain) |
 | Article site (roots/senses grow with promotions) | published at [gasyoun.github.io/SanskritLexicography](https://gasyoun.github.io/SanskritLexicography/) | render-time presentation layer (§4); recount via site build, not this manual |
-| Review sheets (`review/*.html`) | gitignored | embed unpublished RU — public repo, so never committed; registered in [REVIEW_SHEETS_INDEX](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md) |
+| Review sheets (`review/*.html`) — **most** gitignored, **two tracked** | mixed — see below | bulk sheets embed unpublished RU and stay local; the tracked pair carries only sample-sized excerpts (D7 ruling, [H1404](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1404-Fable_SanskritLexicography_deep-manual-review-gold-voting-wave1_20.07.26.md)); all registered in [REVIEW_SHEETS_INDEX](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md) |
+| Sheet binding locks (`review/locks/*.lock.json`) | tracked | metadata-only (sheet_id, content_hash, card ids — no RU): the durable anchor that binds every `decisions.json` to its exact sheet generation ([REVIEW_GOLD_VOTING_DEEP_MANUAL](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/REVIEW_GOLD_VOTING_DEEP_MANUAL.md)) |
+
+An earlier revision of this row claimed ALL review sheets are gitignored. That
+was false, and the fix (25-07-2026, D7) is to state reality, not to untrack:
+`git ls-files 'RussianTranslation/review/*.html'` returns exactly **two**
+tracked sheets —
+[`sanskritlexicography-kochergina-okas-guda-sphic_4rows_review.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/sanskritlexicography-kochergina-okas-guda-sphic_4rows_review.html)
+(4 cards, Kochergina re-verification) and
+[`sanskritlexicography-renou-hypotheses_pilot_review.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/sanskritlexicography-renou-hypotheses_pilot_review.html)
+(70 cards, Renou Step-0 pilot). Both carry sample-sized scholarly excerpts, not
+bulk unpublished translation — `/publish-safety-check` GO recorded 25-07-2026 in
+the review manual's metadoc. Re-derive the set from `git ls-files` whenever this
+section is edited; never hardcode the count elsewhere.
 
 The rule behind the column: **committed = reproducible code + small fixtures +
 evidence samples; gitignored = bulk data, anything rights-encumbered, anything

@@ -161,7 +161,11 @@ BUCKET_ORDER = {"C_source": 0, "A_mechanical": 1, "B_quality": 2, "FAST_pass": 3
 
 
 def sort_key(row):
-    return (BUCKET_ORDER[row["bucket"]], -int(row["severity"]), int(row["ord"]))
+    # ord is empty in post-2026-07 queue generations (row:-shaped review_ids);
+    # fall back to review_id so the sort stays total instead of crashing.
+    ordv = str(row["ord"] or "")
+    return (BUCKET_ORDER[row["bucket"]], -int(row["severity"]),
+            int(ordv) if ordv.isdigit() else 10 ** 9, row.get("review_id") or "")
 
 
 def main():
@@ -171,12 +175,18 @@ def main():
     for o in objs:
         sev = int(o.get("severity") or 0)
         bucket, fast, subtype, clause = classify(sev, o.get("reason", ""))
+        ordv = str(o.get("ord") or "")
         rows.append({
             "bucket": bucket,
             "severity": sev,
             "fast_pass": fast,
             "subtype": subtype,
             "ord": o.get("ord"),
+            # H1404: carry the queue's own review_id so triage rows stay
+            # joinable to src/_review_queue.csv and the store (the legacy
+            # 2026-06 CSV lacked it and its ord:N ids no longer resolve).
+            "review_id": o.get("review_id")
+                         or ("ord:%s" % ordv if ordv.isdigit() else ""),
             "key1": o.get("key1", ""),
             "key2": o.get("key2", ""),
             "attested": bool(o.get("attested")),
@@ -185,8 +195,8 @@ def main():
         })
     rows.sort(key=sort_key)
 
-    fields = ["bucket", "severity", "fast_pass", "subtype", "ord", "key1",
-              "key2", "attested", "defect_clause", "reason"]
+    fields = ["bucket", "severity", "fast_pass", "subtype", "ord", "review_id",
+              "key1", "key2", "attested", "defect_clause", "reason"]
     with open(OUT, "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()

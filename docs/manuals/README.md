@@ -1,6 +1,6 @@
 # Manuals — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 18-07-2026_
+_Created: 10-07-2026 · Last updated: 25-07-2026_
 
 The audience-specific manual set for this repository — **this directory is the
 canonical set** (H604 ruling): depth lives here; the two root `MANUAL_*` sheets
@@ -31,6 +31,7 @@ Below the audience layer, each major subsystem gets a dedicated deep manual
 | [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) — mw_ru post-mortem, pwg_ru production operation | [RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) |
 | [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) — cross-dict analytics, union, print-readiness | [HEADWORDLISTS_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/HEADWORDLISTS_DEEP_MANUAL.md) |
 | [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) + [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) + [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) — publication pipeline | [PUBLICATION_PIPELINE_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/PUBLICATION_PIPELINE_DEEP_MANUAL.md) |
+| [RussianTranslation/review/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/review) + `src/gold_*.py` — G5/G6/G7 human-review gates, voting sheets, the H1404 sheet↔decisions binding standard (EN core + RU reviewer chapter) | [REVIEW_GOLD_VOTING_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/REVIEW_GOLD_VOTING_DEEP_MANUAL.md) |
 
 Regeneration/refresh of this set is encoded in the
 [/workspace-manual](https://github.com/gasyoun/claude-config/blob/main/commands/workspace-manual.md)

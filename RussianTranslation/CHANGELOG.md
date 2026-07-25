@@ -10,6 +10,29 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added - H1404 Wave 1: review/gold/voting deep manual + sheet↔decisions binding standard
+
+- Deep manual [REVIEW_GOLD_VOTING_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/REVIEW_GOLD_VOTING_DEEP_MANUAL.md)
+  (+ metadoc): G5/G6/G7 gate map, 14-script gold-chain census, sheet lifecycle,
+  per-gate instrument ruling D6 (DA/Likert/pairwise pilots retired with
+  rationale), rights boundary, RU reviewer chapter — answers voted.md items 2+8.
+- Binding standard (voted.md item 8): [review_binding.py](src/review_binding.py)
+  (`content_hash` stamp + metadata-only `review/locks/*.lock.json`),
+  [decisions.schema.json](schemas/decisions.schema.json),
+  [validate_decisions.py](src/validate_decisions.py) (rejects unbound/mismatched/
+  drifted exports; `--allow-legacy` logged escape),
+  [apply_decisions.py](src/apply_decisions.py) (validator-first; G5→run_batch,
+  G6→gold_ingest). All 4 sheet generators retrofitted to stamp+lock; retro locks
+  minted for h178_da, Kochergina, Renou-v2.
+- Starter packet (D10): [build_g5_review_sheet.py](src/build_g5_review_sheet.py)
+  (150 live-queue cards) + [build_g6_mqm_gold_sheet.py](src/build_g6_mqm_gold_sheet.py)
+  (20 gold cards, MQM 6-label typology); HTML gitignored, locks committed.
+- Fixed: [triage_review_queue.py](src/triage_review_queue.py) crash on ord-less
+  queue generations + missing `review_id` column; legacy judge-flagged defects
+  routed to [review/G5_REJECT_REQUEUE_AUDIT.md](review/G5_REJECT_REQUEUE_AUDIT.md)
+  (no retranslation — fenced downstream). Deep-manual §9 rights claim amended
+  (2 tracked sheets, `/publish-safety-check` GO).
+
 ### Documented - H1624 DH follow-up handoff batch H1626–H1635
 
 - Minted+filled 10 handoffs after German-layers G1–G6: post-vote H1303/H1306,
