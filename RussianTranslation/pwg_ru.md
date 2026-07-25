@@ -471,6 +471,9 @@ eview_status / human gold? | review | mostly i_translated | [HUMAN_GOLD_PROTOCO
 - Human sheets **не** «почти done» без *.decisions.json (см. linked review HTML).
 - Presentation (L10) **не** чинить правкой store «для красоты».
 - §8.0 отвечает: *что именно навешивается на немецкий оригинал* vs *что появляется только после LLM*.
+- **derived vs voted:** see
+  [EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md)
+  — do not invent H1306/H1303 style or abbrev policy before `decisions.json`.
 
 English twin:
 [docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) §2b–§2c.
