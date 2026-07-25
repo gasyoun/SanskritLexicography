@@ -17,6 +17,15 @@ not an error.
 ## [1.64.0] — 2026-07-25
 
 ### Added
+- **Editorial-principles datasheet for the H1624 German-side layers (25-07-2026, H1634).**
+  [`pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md)
+  states, per G1–G6 field, whether it is deterministic extraction (`derived`), waiting on a
+  human vote (`voted` — G5 H1306 tags, unratified), or derived-with-an-undecided-flag (G6
+  `needs_human`, measured 4,226/39,539 = 10.69% compound-split disagreement, never
+  auto-adjudicated). Cross-linked from
+  [`pwg_ru.md` §8.0](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md)
+  and
+  [`RUSSIANTRANSLATION_DEEP_MANUAL.md` §2c](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md).
 - **Gate-0 probe is profile-parameterised (25-07-2026).**
   [`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
   takes `--account` / `--config-dir` (c4 remains the default and is byte-unchanged in behaviour),
