@@ -1,6 +1,6 @@
 # RESEARCHER_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 25-07-2026_
 
 Companion record for [docs/manuals/RESEARCHER_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RESEARCHER_MANUAL.md).
 
@@ -15,9 +15,9 @@ Authored 10-07-2026 (H479/H535), consolidated H604. Refreshed 18-07-2026 under [
 ## Verification
 
 ```
-LAST_VERIFIED: 18-07-2026
-VERIFIED_BY: Fable 5 (claude-fable-5), H1245
-COMMANDS_SPOT_RUN: 0
+LAST_VERIFIED: 25-07-2026
+VERIFIED_BY: Grok 4.5 (grok-4.5), H1623
+COMMANDS_SPOT_RUN: 2
 ```
 
 The manual quotes no runnable commands; every count and citation was verified read-only against the tree (union / PWG-layer / particle / literature figures all reproduced by the fact-check agent).
@@ -49,6 +49,7 @@ Refreshed by [/workspace-manual](https://github.com/gasyoun/claude-config/blob/m
 
 | Date | Change | By |
 |---|---|---|
+| 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |
 | 10-07-2026 | Subject manual authored (H479/H535); consolidated H604 11-07-2026 | Fable 5 (`claude-fable-5`) / Opus 4.8 (`claude-opus-4-8`) |
 | 18-07-2026 | Metadoc created (H1245 estate refresh); subject manual fact-checked by a dedicated agent, all 5 findings fixed same pass | Fable 5 (`claude-fable-5`) |
 

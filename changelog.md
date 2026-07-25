@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Changed
+- **H1623 docs-freshness (Grok 4.5 grok-4.5, 25-07-2026):** re-verify big-manuals estate — LAST_VERIFIED 25-07-2026 on workspace AGENTS/HUMAN_RU + 6 docs/manuals deep manuals; RT deep metadoc COMMANDS_SPOT_RUN forced to integer 4 (was free-text, broke manual_staleness.py); MAINTAINER papers range updated A30-A67.
+
 ## [1.60.0] — 2026-07-24
 
 ### Added
