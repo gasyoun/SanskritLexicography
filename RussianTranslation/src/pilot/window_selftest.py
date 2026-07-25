@@ -910,6 +910,34 @@ def test_german_anchor_repair_behavioral():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_c4_gate0_probe_run_scope():
+    """#729: the c4 health gate must read only the readings ITS OWN run wrote.
+
+    `h963_c4_gate0_probe.py` used to pin a CONSTANT `RUN_ID`, append to that one bucket
+    and re-read it, keeping the last row per purpose — so a run could pair its own
+    warm-up with a **stale** `measured` from days earlier. The 25-07-2026 gate run cited
+    a 23-07 reading of 168 352 ms as a NO-GO reason for a measured call it never made.
+
+    That direction was harmless. The inverse is not: a stale *passing* measured plus a
+    passing warm-up empties the fail list and prints `GATE-0 VERDICT: PASS`, which
+    `/pwg-live-gate` Step 3 turns into `LIVE_GO` and which authorizes `/pwg-bounded-run`
+    to SPEND — a paid window opened off a two-day-old number, from inside the gate whose
+    entire job is "a stale GO never authorizes a window".
+
+    The module's own `selftest()` builds exactly that log and proves both halves (the
+    scoped read is NO-GO; the contaminated pairing is demonstrably PASS-shaped). Run it
+    here so the gate cannot regress silently. Pure — no live call, nothing spent.
+    """
+    import h963_c4_gate0_probe as probe
+    probe.selftest()
+    if probe.CAMPAIGN != 'h963-c4-single-profile-gate0-2026-07-16':
+        fail('the campaign label is cited verbatim by the H1110/H1447 gate reports — '
+             'changing it silently orphans them from their own telemetry rows')
+    # The label must never again BE the run id: two invocations must not collide.
+    if probe.new_run_id(now=0, pid=1) == probe.new_run_id(now=0, pid=2):
+        fail('#729 regression: run ids collide, so one run can read another run\'s readings')
+
+
 def test_german_anchor_selftest():
     """H858 Part B: the Python half of the repair, and the LANG_PARITY guarantee.
 
@@ -7879,6 +7907,7 @@ def main():
         test_partial_cards_requeue_and_stay_out_of_clean_sample,
         test_classify_run_verdicts,
         test_grammar_field_restore_behavioral,
+        test_c4_gate0_probe_run_scope,
         test_german_anchor_selftest,
         test_german_anchor_repair_behavioral,
         test_h_reconstructed_regression_guard,
