@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 25-07-2026 (H1624 G4 edition_rel: +1 SHARED)
+_Created: 04-07-2026 · Last updated: 25-07-2026 (H1624 G6 derivation conflict flags: +1 SHARED)
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -1738,6 +1738,23 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/build_relationships.py": "76d03cc81a79f83624065d79bd47845c3a72b8e2f993a01dfc4fbe9931049725",
       "src/promote_final_cards.py": "9b432c9c21276cc09571ce079b647b5e3dfde0c4dc33f449435f9fdf0ee22c77",
       "src/pilot/gen_opt_harness2.py": "0fbab719c91e59be6cb105b2aa624f9e79b38d878548902153cb5c99ad3790ac"
+    }
+  },
+  {
+    "id": "derivation_conflict_flags_h1624_g6",
+    "mechanism": "Portrait derivation block carries conflict/needs_human when compound_status is differs (PWG split vs index); human_reviewed overlays are never overwritten; conflict_rate_report exposes the ~4.2k review queue without auto-adjudication.",
+    "files": [
+      "src/pilot/enrich_portrait_derivation.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H1624 G6 (25-07-2026, Grok 4.5). Extends H1282 enrich_portrait_derivation. Machine-safe flags only. Pinned by enrich_portrait_derivation --selftest and --conflict-rate.",
+    "tracking": "H1624",
+    "verified_sha256": {
+      "src/pilot/enrich_portrait_derivation.py": "c2612664b77b7435e086bba233a66f42eec607d06daf9e7fcead4dca85b8f0de"
     }
   }
 ]

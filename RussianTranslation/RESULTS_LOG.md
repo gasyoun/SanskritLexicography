@@ -4,6 +4,28 @@ _Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 25-07-2026 - H1624 G6: compound conflict flags + G5/G7 blockers
+
+Executor: Grok 4.5.
+
+### G6 conflict rate (pwg_derivation_layer.tsv)
+
+| metric | n | pct |
+|---|---:|---:|
+| rows | 39539 | 100 |
+| conflict (differs) | 4226 | 10.69 |
+| needs_human (differs+index-only) | 10577 | 26.75 |
+| agrees | 6180 | — |
+| pwg-new-fill | 6386 | — |
+
+Never auto-adjudicates differs — future /review-sheet sample.
+
+### G5 blocked
+Awaiting pwg_ru/eval/h1306_style.decisions.json (sheet exists; vote not exported).
+
+### G7 blocked
+Palsule XLS not present; delegate H1333 when XLS lands.
+
 ## 25-07-2026 - H1624 G4: edition_rel on DE subcards
 
 Executor: Grok 4.5.

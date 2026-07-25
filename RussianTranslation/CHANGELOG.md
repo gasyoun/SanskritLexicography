@@ -10,6 +10,15 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added - H1624 G6: derivation/compound conflict flags on portraits
+
+- [enrich_portrait_derivation.py](src/pilot/enrich_portrait_derivation.py):
+  conflict / 
+eeds_human when compound_status is differs (~4.2k; not
+  auto-adjudicated); human_reviewed overlays preserved; --conflict-rate census.
+- Portrait structural schema documents the derivation block. LANG_PARITY SHARED
+  derivation_conflict_flags_h1624_g6.
+
 ### Added - H1624 G4: edition_rel flags on every subcard sense
 
 - [edition_rel.py](src/edition_rel.py) classifies H180 machine subtypes
