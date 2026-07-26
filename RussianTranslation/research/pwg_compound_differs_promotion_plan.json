@@ -4,7 +4,7 @@
  "generated": "26-07-2026",
  "queue_rows": 4226,
  "blind_arm_sheet": "sanskritlexicography-pwg-compound-differs_stratified200",
- "blind_arm_cards": 199,
+ "blind_arm_cards": 200,
  "verdicts": {
   "unresolved": 322,
   "pwg_members-right": 3724,
@@ -43,25 +43,25 @@
   {
    "stratum": "same_split_pwg_lemma_form",
    "rows": 3018,
-   "arm_cards": 140,
+   "arm_cards": 138,
    "priceable": true,
-   "max_wilson_lb_if_arm_perfect": 0.9733,
+   "max_wilson_lb_if_arm_perfect": 0.9729,
    "promotable_at_threshold_if_arm_perfect": true
   },
   {
    "stratum": "pwg_lexeme_vs_mw_suffixed_tail",
    "rows": 323,
-   "arm_cards": 15,
+   "arm_cards": 17,
    "priceable": true,
-   "max_wilson_lb_if_arm_perfect": 0.7961,
+   "max_wilson_lb_if_arm_perfect": 0.8157,
    "promotable_at_threshold_if_arm_perfect": false
   },
   {
    "stratum": "mw_cut_leaves_nonword",
    "rows": 277,
-   "arm_cards": 15,
+   "arm_cards": 11,
    "priceable": true,
-   "max_wilson_lb_if_arm_perfect": 0.7961,
+   "max_wilson_lb_if_arm_perfect": 0.7412,
    "promotable_at_threshold_if_arm_perfect": false
   },
   {

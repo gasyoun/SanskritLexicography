@@ -4,6 +4,37 @@ _Created: 09-07-2026 · Last updated: 26-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 26-07-2026 - H1681 follow-up: the compound-`differs` blind arm re-cut, deduped and BOUND
+
+Executor: Opus 5 1M (`claude-opus-5[1m]`). MG ruled **re-cut** on the H1681 `@DECIDE`
+(re-cut vs retro-lock). Generator
+[`src/pilot/compound_differs_review_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/compound_differs_review_sample.py)
+repaired on both counts and the sheet re-drawn from the same `seed=1628`.
+
+| | before | after |
+|---|---|---|
+| frame sampled from | 4,226 rows (103 sharing a card id) | **4,123**, one per `(k1, hom)` card id |
+| sample | 200 rows / **199** distinct ids | 200 rows / **200** distinct ids |
+| binding | none — `validate_decisions.py` would reject the export | `sha256:31c106bb13cd2bad…`, lock committed, gate `G6-compound` |
+
+**The duplicate card was the visible end of a queue-wide mismatch:** `headword_index.tsv`
+carries one row per part-of-speech reading (`agraRI` as `adj.` and as `m.`; 2,383 of its
+keys are multi-row), while a card id is only `(k1, hom)`. So the `differs` queue's 4,226
+rows are **4,123 distinct cards**. The adjudication is unaffected — all 103 duplicate rows
+agree with their twin on both members and verdict (0 disagreements), since a compound's
+analysis does not depend on the entry's `lex`.
+
+Arm coverage after the re-cut (200 cards): `same_split_pwg_lemma_form` 138 → max Wilson-95
+lb 0.973, still the only stratum that can clear the 0.90 gate; `pwg_lexeme_vs_mw_suffixed_tail`
+17 · `mw_cut_leaves_nonword` 11 · rest unchanged. **Promotion ceiling stays 3,018/4,226
+(71.4 %)** — the second, rule-stratified arm remains [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md)
+and is still sequenced behind [SanskritGrammar#527](https://github.com/gasyoun/SanskritGrammar/issues/527)
++ [#801](https://github.com/gasyoun/SanskritLexicography/issues/801).
+
+The HTML stays gitignored; `generated` is pinned to `26-07-2026` so a regeneration
+reproduces the exact bytes the lock binds. `csl_pyutil` is **0.4.0** here, not the 0.3.1
+the H1404 manual records — the stamp anchors still matched.
+
 ## 26-07-2026 - H1681: all 4,226 PWG-vs-MW compound `differs` rows adjudicated by rule
 
 Executor: Opus 5 1M (`claude-opus-5[1m]`), Claude Code. В2 arm of the H1664 triage. Full

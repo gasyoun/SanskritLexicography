@@ -33,9 +33,14 @@ SHEET_ID = 'sanskritlexicography-pwg-compound-differs_stratified200'
 SEED = 1628          # H1628 — fixed for reproducibility of the sample frame
 TARGET_TOTAL = 200
 RARE_CLASS_QUOTA = 20   # guaranteed oversample of the rare member_count_diff class
+# Pinned, not `today`: the lock binds a content hash over the rendered HTML, so the
+# sheet has to be byte-reproducible by whoever regenerates it (the HTML is gitignored;
+# only the frame and the lock are committed).
+GENERATED = '26-07-2026'
 
 sys.path.insert(0, SRC)
 from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config  # noqa: E402
+from review_binding import stamp, write_lock  # noqa: E402
 
 
 def _members(s):
@@ -99,11 +104,36 @@ def freq_bucket(k1, freq):
     return 'high(>=10)'
 
 
+def dedupe_by_card_id(rows):
+    """Collapse rows that would become the SAME review card.
+
+    A card's id is `(k1, hom)` (rendered `k1~~h<hom>`), but `pwg_derivation_layer.tsv`
+    can carry two rows for one such key. H1681 found the consequence in the shipped
+    200-card frame: 200 rows but **199 distinct ids** (`duHsTita` twice), i.e. two
+    cards sharing one id — `decisions.json` could carry only one verdict for them and
+    the lock's id list would be one short of the card count. First row wins; the drops
+    are counted and reported, never silent.
+    """
+    seen, out, dropped = set(), [], 0
+    for r in rows:
+        key = (r['k1'], r['hom'])
+        if key in seen:
+            dropped += 1
+            continue
+        seen.add(key)
+        out.append(r)
+    return out, dropped
+
+
 def build_frame():
-    """Return the full 4226-row frame with strata columns attached (no sampling)."""
+    """Return the full `differs` frame with strata columns attached (no sampling),
+    one row per review-card id."""
     idx = load_index_members()
     freq = load_freq()
-    rows = load_differs()
+    rows, n_dropped = dedupe_by_card_id(load_differs())
+    if n_dropped:
+        print('deduped %d row(s) sharing a (k1, hom) card id' % n_dropped,
+              file=sys.stderr)
     frame = []
     for r in rows:
         k1, hom = r['k1'], r['hom']
@@ -280,7 +310,19 @@ def selftest():
     assert len(s1) == 60, len(s1)
     assert [r['k1'] for r in s1] == [r['k1'] for r in s2], 'sample must be deterministic under a fixed seed'
     assert sum(1 for r in s1 if r['vs_index_class'] == 'member_count_diff') == 10
-    print('selftest OK — classifier, buckets, deterministic stratified sampling (n=%d)' % len(s1))
+    # the H1681 defect: two derivation-layer rows collapsing onto one card id
+    dup = [{'k1': 'duHsTita', 'hom': ''}, {'k1': 'duHsTita', 'hom': ''},
+           {'k1': 'duHsTita', 'hom': '2'}, {'k1': 'anya', 'hom': ''}]
+    kept, dropped = dedupe_by_card_id(dup)
+    assert dropped == 1 and len(kept) == 3, (kept, dropped)
+    ids = [it['id'] for it in build_items(
+        [dict(r, pwg_members='a + b', index_members='a + c',
+              vs_index_class='same_count_diff_split', length_bucket='short(<=8)',
+              freq_bucket='no_dcs_freq', freq_count='', panini_sutras='',
+              deriv_base='', deriv_suffix='', ganas='') for r in kept])]
+    assert len(set(ids)) == len(ids), ids
+    print('selftest OK — classifier, buckets, deterministic stratified sampling '
+          '(n=%d), card-id dedupe' % len(s1))
 
 
 def main():
@@ -294,13 +336,23 @@ def main():
         return
     if '--write' in args:
         sample = stratified_sample(frame)
+        ids = [it['id'] for it in build_items(sample)]
+        assert len(set(ids)) == len(ids), 'duplicate card id in the sample'
         write_frame_tsv(sample)
-        html = render_sheet(sample, generated='26-07-2026')
+        html = render_sheet(sample, generated=GENERATED)
+        # H1404 binding: stamp the content hash into the HTML and commit the lock,
+        # or `validate_decisions.py` refuses the export — AFTER the human has spent
+        # the votes. H1681 found this sheet shipped unbound; MG ruled re-cut.
+        html, chash = stamp(html)
         os.makedirs(REVIEW_DIR, exist_ok=True)
-        with io.open(SHEET_HTML, 'w', encoding='utf-8') as f:
+        with io.open(SHEET_HTML, 'w', encoding='utf-8', newline='\n') as f:
             f.write(html)
+        lock_path = write_lock(SHEET_ID, chash, ids, GENERATED, gate='G6-compound',
+                               source_html=SHEET_HTML)
         print('wrote %d-row sample frame -> %s' % (len(sample), SAMPLE_FRAME_TSV))
         print('wrote review sheet -> %s' % SHEET_HTML)
+        print('  %s' % chash)
+        print('  lock -> %s' % lock_path)
         return
     sys.exit('usage: compound_differs_review_sample.py --report | --write | --selftest')
 
