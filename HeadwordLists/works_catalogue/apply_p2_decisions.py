@@ -40,6 +40,21 @@ OUT_REJECTED_TSV = os.path.join(HERE, "works_crosswalk_rejected.tsv")
 # second pipeline.
 OUT_PROPOSED_TSV = os.path.join(HERE, "works_crosswalk_agent_proposed.tsv")
 COUNTS_PATH = os.path.join(HERE, "P2_COUNTS.md")
+SPOTCHECK_MANIFEST = os.path.join(HERE, "p2_spotcheck_manifest.json")
+
+
+def spotcheck_size():
+    """Read the sample size off the manifest rather than hardcoding it.
+
+    The first draft of this note hardcoded "674 cards" and went stale the moment
+    the reject-stratum n was raised from 25 to 40 and undersized strata were
+    pooled. A generated file must not carry a number it cannot re-derive.
+    """
+    try:
+        with open(SPOTCHECK_MANIFEST, encoding='utf-8') as f:
+            return f"{json.load(f)['sample_total']:,}-card"
+    except (OSError, KeyError, ValueError):
+        return "stratified"
 
 TSV_COLS = ["acc_L", "ncc_id", "match_tier", "score", "acc_match_key",
             "ncc_match_key", "provenance"]
@@ -151,8 +166,9 @@ def main():
         "",
         "Coverage is still full (MG ruling 09-07-2026, unreversed): every Tier C/D row in "
         "crosswalk_candidates.jsonl.gz carries a verdict. What MG's ruling of 26-07-2026 (B2, "
-        "H1657) changed is who casts it -- `adjudicate_p2.py` adjudicates all 49,019 with cited "
-        "evidence, and a human votes a 674-card stratified sample to measure that adjudicator "
+        f"H1657) changed is who casts it -- `adjudicate_p2.py` adjudicates all {c_total + d_total:,} "
+        f"with cited evidence, and a human votes a {spotcheck_size()} stratified sample to measure "
+        "that adjudicator "
         "(`build_p2_spotcheck_sheet.py` -> `p2_precision_gate.py`). Promotion is gated per "
         "stratum on a Wilson 95% lower bound, so an unmeasured or weak stratum shows up in the "
         "agent-proposed count above rather than in the crosswalk.",
