@@ -216,6 +216,8 @@ review/*_decisions.json
 # voting artifact per the /review-sheet contract — local-only. The metadata-only sample
 # frame TSV (no ru/de store text) IS committed as the sample-design audit trail.
 review/sanskritlexicography-pwg-compound-differs_stratified200_review.html
+# H1703 arm 2 (compound_differs_arm2_sample.py) — same contract, same reasons.
+review/sanskritlexicography-pwg-compound-differs_rulestrat_arm2_review.html
 
 # Generated Workflow harnesses embed source/portrait payloads and are local-only.
 src/pilot/run_pilot_wf.*.js

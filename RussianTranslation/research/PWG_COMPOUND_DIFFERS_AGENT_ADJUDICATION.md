@@ -2,6 +2,11 @@
 
 _Created: 26-07-2026 · Last updated: 26-07-2026_
 
+> **§8 supersedes the counts in §3–§6.** Both upstream extractors named in §4 have since
+> been repaired (H1703) and the queue re-adjudicated against the repaired inputs. §3–§6
+> record what H1681 measured on the defective inputs and are kept as the audit trail of
+> how the defects were found; the live numbers are in [§8](#8-h1703-refresh--the-queue-re-adjudicated-after-both-repairs).
+
 Adjudicator: [`src/pilot/adjudicate_compound_differs.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/adjudicate_compound_differs.py),
 Opus 5 1M (`claude-opus-5[1m]`), Claude Code.
 Mandate: [VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md §11](https://github.com/gasyoun/Uprava/blob/main/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md)
@@ -184,13 +189,132 @@ the second arm (H1703) must not repeat it:
 - Member attestation uses `<k1>` headword lists, which do not list every stem form
   (`jIvant`, `bfhant`), so "unattested" is evidence, not proof.
 
+## 8. H1703 refresh — the queue re-adjudicated after both repairs
+
+Both extractor defects in §4 are fixed and merged, and this pass re-ran the whole chain
+against the repaired inputs — `pwg_compound_split.py` →
+`pwg_derivation_layer.py` → `adjudicate_compound_differs.py --write`.
+
+| repair | PR | effect on its own dataset |
+|---|---|---|
+| PWG chain not bracket-aware / not headword-anchored ([SanskritGrammar#527](https://github.com/gasyoun/SanskritGrammar/issues/527)) | [SanskritGrammar#529](https://github.com/gasyoun/SanskritGrammar/pull/529) | 17,112 rows (was 16,745): 16,094 unchanged · **139 members corrected** · 512 dropped as unresolvable · 879 added that the old head-scan missed |
+| MW `<k2>` variant fusion ([#801](https://github.com/gasyoun/SanskritLexicography/issues/801)) | this PR | **41/106,603** MW records corrected, 22 of them arity-corrected; 36 `headword_index.tsv` rows, `paradigm_stats.tsv` + `reverse_paradigm_index.json` regenerated |
+
+### 8.1 The queue did not shrink — it moved, and grew
+
+H1703 predicted "either repair shrinks the `differs` queue". Measured, it does not: the
+repairs remove defect-driven rows **and** add genuine new comparisons, and the second
+effect is larger.
+
+| | cards |
+|---|---:|
+| `differs` cards before | 4,123 |
+| left the queue (now `agrees`, `index-only`, or no PWG chain at all) | −118 |
+| entered (163 brand-new PWG comparisons + 74 that had no PWG chain before + 4 from `agrees`) | +241 |
+| **`differs` cards after** | **4,246** (4,353 rows) |
+| of the cards that stayed, PWG members corrected | 42 |
+
+### 8.2 The three defect strata are gone
+
+| rule | H1681 (defective inputs) | H1703 (repaired) |
+|---|---:|---:|
+| `pwg_layer_inner_chain` | 75 | **0** |
+| `pwg_layer_no_headword_paren` | 82 | **2** |
+| `pwg_layer_unparsed_chain` | 5 | **0** |
+| `mw_variant_fusion` | 10 | **0** |
+| `both_layers_defective` | 1 | **0** |
+
+Those 173 rows were the queue paying for extractor bugs. What is left is what the queue
+was always supposed to be: 3,152 rows of "same cut, different spelling", plus genuine
+convention and lexicographic disagreements. Verdicts are now
+`pwg_members-right` 3,975 (91.3 %) · `unresolved` 354 (8.1 %) ·
+`index_members-right` 24 (0.6 %).
+
+### 8.3 Two arms, and what each can price
+
+The H1628 arm samples along length × DCS-frequency × member-count, which cuts across the
+adjudicator's rules — it lands 139 of its cards in one stratum and 0–16 in each of the
+rest. The second arm
+([`compound_differs_arm2_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/compound_differs_arm2_sample.py),
+seed 1703) is stratified on the rules themselves, drawn **disjointly** from arm 1, 35
+cards per unpriced stratum — 35 because `wilson_lower(35, 35) = 0.901` and
+`wilson_lower(34, 34) = 0.898`, so 35 is the smallest arm that can clear the gate at all.
+
+| stratum | rows | arm 1 cards / max lb | arm 2 cards / max lb | pooled | basis |
+|---|---:|---|---|---:|---|
+| `same_split_pwg_lemma_form` | 3,152 | 139 / **0.973** | — | 0.973 | wilson (arm 1) |
+| `pwg_lexeme_vs_mw_suffixed_tail` | 334 | 16 / 0.806 | 36 / **0.904** | 0.931 | wilson (arm 2) |
+| `mw_cut_leaves_nonword` | 293 | 11 / 0.741 | 35 / **0.901** | 0.923 | wilson (arm 2) |
+| `cut_moved_both_readings_lexical` | 263 | 10 / 0.722 | 36 / **0.904** | 0.923 | wilson (arm 2) |
+| `mw_anusvara_right_of_boundary` | 107 | 1 / 0.207 | 37 / **0.906** | 0.908 | wilson (arm 2) |
+| `residual-undersized` | 106 | 10 / 0.722 | 36 / **0.904** | 0.923 | wilson (arm 2) |
+| `mw_cut_absorbs_initial_vowel` | 67 | 0 / — | 36 / **0.904** | 0.904 | wilson (arm 2) |
+| `granularity_ic_vs_full_decomposition` | 31 | 9 / 0.701 | 22 | 31 | **census** |
+
+Read the two "max lb" columns as *the best that arm can do* — the bound if the human
+agrees with every card in it; the actual bound comes from the actual votes.
+
+Two things worth stating plainly:
+
+- **Every stratum now has a promotion route.** Before this pass, 3,018 of 4,226 rows
+  could be promoted and 1,208 could not be priced at all, whatever the human did. Now
+  all 4,353 rows sit in a priceable stratum.
+- **The 31-row stratum is promotable by census, not by inference.** Arm 1's 9 cards plus
+  arm 2's 22 cover every row in it, so there is nothing to extrapolate to — its Wilson
+  bound (0.890) is irrelevant, and the plan says `promotion_basis: census` rather than
+  pretending the interval cleared.
+
+### 8.4 Both sheets are bound, and the binding was tested
+
+Item 1 of H1703 existed because the H1628 sheet rendered without `stamp()`/`write_lock()`,
+so `validate_decisions.py` would have rejected the export *after* 200 votes were spent.
+Both sheets now carry a committed lock, and this pass verified the binding end-to-end on
+a synthetic export rather than assuming it:
+
+| export | arm 1 | arm 2 |
+|---|---|---|
+| complete, correct hash | **accepted** (200 items) | **accepted** (232 items) |
+| tampered `content_hash` | rejected — "votes cast against a different generation" | rejected |
+| one vote missing | rejected — item-id drift | rejected |
+| one unknown card id | rejected — item-id drift | rejected |
+
+Arm 2's card ids come from the **lock**, not the frame TSV, for the same reason: the lock
+is what the human's export will be checked against, so it is the only list that can pay
+out. An unbound sheet is counted as pricing nothing.
+
+**9 of arm 1's 200 cards are no longer in the queue** — they were drawn before the
+repairs and are now `agrees` or have no PWG chain. They are reported in the plan
+(`cards_left_the_queue`), and votes on them will simply not apply. Arm 1 was NOT re-cut a
+second time: its lock was committed hours earlier under the human `re-cut` ruling, its
+139 `same_split` cards still price that stratum at 0.973, and re-cutting would invalidate
+a live lock to recover 9 cards.
+
+### 8.5 Blindness
+
+Arm 2 is stratified **by the adjudicator's own rule**, so it would be trivially
+self-fulfilling if a card showed it. The rendered card carries the two member lists, the
+source PWG parenthesis, the source MW `<k2>`, and the same neutral badges as arm 1 —
+never the stratum, the rule, the agent's verdict or its reason. Those live in the frame
+TSV, which is the sample-design audit trail, not the voting surface. A selftest asserts
+that no card JSON contains any of those fields.
+
 ## Reproduce
 
 ```sh
 python src/pilot/adjudicate_compound_differs.py --selftest   # parsers + 8 rule fixtures
 python src/pilot/adjudicate_compound_differs.py --report     # counts, writes nothing
 python src/pilot/adjudicate_compound_differs.py --write      # verdicts TSV + plan JSON
-python src/pilot/compound_differs_review_sample.py --write   # re-cut + stamp + lock the arm
+python src/pilot/compound_differs_review_sample.py --write   # re-cut + stamp + lock arm 1
+python src/pilot/compound_differs_arm2_sample.py --selftest  # allocation + blindness
+python src/pilot/compound_differs_arm2_sample.py --write     # draw + stamp + lock arm 2
+```
+
+Upstream, in the `SanskritGrammar` sibling, before any of the above:
+
+```sh
+python scripts/pwg_compound_split.py --selftest
+python scripts/pwg_compound_split.py
+python src/pwg_derivation_layer.py        # back in RussianTranslation
 ```
 
 Needs the `csl-orig` and `SanskritGrammar` siblings (read-only); override with
