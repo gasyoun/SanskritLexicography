@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.85.0] — 2026-07-26
+
 ### Added
 - **H1707 probe — the Calcutta Mahābhārata is obtainable after all, and PWG's citation
   scheme is already indexed** (Opus 5 1M `claude-opus-5[1m]`). Same-day successor to the
