@@ -10,6 +10,28 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Hardened — Codex pipeline-hardening audit, step 1 of 2 (26-07-2026)
+
+- New
+  [PIPELINE_HARDENING_AUDIT_2026-07-25.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HARDENING_AUDIT_2026-07-25.md):
+  a current-code audit of the single-Max-account headless route, its
+  coordinator/audit/promotion boundary, and the offline orchestration cost —
+  with the actual one-profile call graph and P0/P1/P2 findings.
+- **Two P0-class fixes landed from it.** (1) A Windows timeout could leave a
+  **paid descendant alive**, so a killed generation attempt risked an orphaned
+  grandchild still burning quota —
+  [`proc_tree.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/proc_tree.py)
+  tree-kill hardening. (2) An unguarded `future.result()` in the threaded audit
+  gates meant one worker exception lost the **whole durable audit report**; it now
+  becomes a durable rc=3 gate result that conservatively requeues that gate's
+  exact keys, and an NWS-quarantine replace failure preserves the previous
+  destination instead of destroying it.
+- The audit's own release verdict stands: **live promotion is NO-GO** until the
+  store/coordinator/TM close seam has a durable journal and startup
+  reconciliation. That sealing is **step 2** — it invalidates 7 existing fixtures
+  that still pass placeholder preflight paths and v1 outputs, tracked in
+  [pwg_ru/CODEX_HARDENING_REBASE_STATUS_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/CODEX_HARDENING_REBASE_STATUS_2026-07-26.md).
+
 ### Documented — German-side editorial principles datasheet (H1634)
 
 - New

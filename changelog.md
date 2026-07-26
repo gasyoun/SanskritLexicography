@@ -14,6 +14,39 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **P0 — a Windows timeout could leave a PAID descendant alive (26-07-2026).** Landed from the
+  Codex hardening branch, step 1 of 2:
+  [`proc_tree.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/proc_tree.py)
+  tree-kill hardening — a killed generation attempt no longer risks an orphaned grandchild
+  still burning quota. Pinned by the existing D-J tree-kill selftest.
+- **An audit-gate worker exception could lose the whole durable report (26-07-2026).** Landed
+  from the same branch: an unguarded `future.result()` in the threaded gates now becomes a
+  durable rc=3 gate result that conservatively requeues that gate's exact keys, and an
+  NWS-quarantine replace failure preserves the previous destination instead of destroying it.
+  Pinned by two new tests. Classified **INTENTIONAL-DIVERGENCE** in
+  [`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md):
+  RU-only *by construction* — the EN twin runs no threaded gate and has no NWS quarantine, so
+  neither mechanism exists there to harden.
+
+### Added
+- **The Codex pipeline-hardening audit** —
+  [`PIPELINE_HARDENING_AUDIT_2026-07-25.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HARDENING_AUDIT_2026-07-25.md):
+  the one-profile call graph plus the P0/P1/P2 findings behind this work. Step 2 (coordinator +
+  promotion sealing, and the 7 fixtures it invalidates) is tracked in
+  [`pwg_ru/CODEX_HARDENING_REBASE_STATUS_2026-07-26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/CODEX_HARDENING_REBASE_STATUS_2026-07-26.md)
+  and draft [PR #744](https://github.com/gasyoun/SanskritLexicography/pull/744).
+
+### Added
+- **Heritage (INRIA) frequency-tables ingest + diff (26-07-2026, H1490).** Roadmap
+  Phase 3: 7 `DATA/*.tsv` files decoded out of Heritage's internal WX romanization
+  (new WX→SLP1 transcoder) and diffed against VisualDCS's M1–M8 `dcs_full.sqlite`
+  and `RussianTranslation/src/corpus_lexicon.jsonl` — Spearman ρ 0.70–0.74 vs DCS
+  across surface-form/lemma/compound-stem series, 0.53 vs `corpus_lexicon`.
+  [`heritage_frequency_diff.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_frequency_diff.md) /
+  [`.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_frequency_diff.tsv) /
+  [`heritage_freq_diff.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_freq_diff.py).
+
 ## [1.65.0] — 2026-07-26
 
 ### Added
