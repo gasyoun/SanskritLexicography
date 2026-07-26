@@ -10,6 +10,19 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — edition-diff reading surface over edition_rel (H1631, N14 pilot, 26-07-2026)
+
+- New
+  [`src/pilot/build_edition_diff_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_edition_diff_site.py):
+  a fixture-driven static page showing the PWG sense skeleton with PW/SCH/PWKVN/NWS
+  supplements attached at their `edition_rel` insertion point, each badged with its
+  H1624 G4 subtype (`base`/`restate`/`pw_correct`/`sch_star`/`derived_sense`/`a2a`/
+  `nws_at_sense`/`foreign_fragment`) — no new typology, no re-translation, DE text
+  read-only. `--selftest` uses a synthetic fixture (never real store content — N9) and
+  is wired into CI. See [RESULTS_LOG.md](RESULTS_LOG.md) 26-07-2026 for the pilot
+  subtype counts (7 REGLUE_SPEC roots, 1077 rows). Partial N14 close — see
+  [`pwg_ru/REGLUE_SPEC.md`](pwg_ru/REGLUE_SPEC.md) Sec.7.
+
 ### Added — H1632 PWG-sense × DCS attestation pilot join (26-07-2026)
 
 - New

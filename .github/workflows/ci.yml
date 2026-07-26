@@ -103,7 +103,8 @@ jobs:
             RussianTranslation/src/pilot/max_account_orchestrator.py \
             RussianTranslation/src/pilot/windows100_selftest.py \
             RussianTranslation/src/pilot/run_observability.py \
-            RussianTranslation/src/pilot/run_observability_selftest.py
+            RussianTranslation/src/pilot/run_observability_selftest.py \
+            RussianTranslation/src/pilot/build_edition_diff_site.py
       - name: Sa->Ru gloss pipeline unit tests (H1349 waves 1-4)
         working-directory: RussianTranslation
         run: |
@@ -121,6 +122,7 @@ jobs:
           python src/government_census.py selftest
           python src/government_sidecar.py --selftest
           python src/pilot/build_article_site.py --selftest
+          python src/pilot/build_edition_diff_site.py --selftest
           python research/build_observatory.py --check
       - name: Publication-grade TM technical-hardening selftests (H1457 Track A)
         working-directory: RussianTranslation
