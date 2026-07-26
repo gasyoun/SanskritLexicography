@@ -14,6 +14,42 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H1657 — ACC×NCC P2 agent adjudication of all 49,019 Tier C/D rows (26-07-2026).**
+  Per MG's ruling В2, the adjudicator moves from a human to an agent while the
+  09-07-2026 full-coverage ruling stands: every row carries a verdict with cited
+  evidence (41,947 approve / 7,072 reject, zero skipped), emitted by
+  [`adjudicate_p2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/adjudicate_p2.py).
+  A blind 686-card stratified sample over 16 strata
+  ([`build_p2_spotcheck_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/build_p2_spotcheck_sheet.py))
+  measures the adjudicator, and
+  [`p2_precision_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/p2_precision_gate.py)
+  publishes Wilson 95% lower bounds per stratum and gates promotion — it refuses to
+  run without an explicit `--bar`, because the threshold is a human ruling.
+  **Nothing is promoted yet:** all 49,019 rows sit in
+  `works_crosswalk_agent_proposed.tsv` awaiting that ruling. Report:
+  [`P2_AGENT_ADJUDICATION_REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_AGENT_ADJUDICATION_REPORT.md).
+
+### Fixed
+- `apply_p2_decisions.py` gained a third destination (`works_crosswalk_agent_proposed.tsv`)
+  and a provenance passthrough, so an ungated agent verdict can never be mistaken for a
+  promoted crosswalk row. `build_p2_sheet.py` was refactored behind a `main()` guard and
+  now exports its renderer, so the spot-check sheet reuses it instead of forking a copy.
+
+### Changed
+- ⚠️ **P0/P1 are documented as running on corrupted NCC keys.**
+  [`parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/parse_ncc.py)
+  transliterates the capitalised NCC headword, and `sanskrit_util.to_slp1` is
+  case-preserving, so uppercase IAST initials are read as different SLP1 letters
+  (`Rāmāyaṇa` → `namayana`). **60.0% of NCC match-keys are wrong**; 93.3% of Tier D is
+  an artefact of it and **14,379 true exact matches were never proposed as candidates**
+  (exact overlap is 22,775 keys, not 8,397). Filed as
+  [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779),
+  recorded as [FINDINGS §468](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md),
+  repair queued as
+  [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md).
+  Nothing published is wrong — it is incomplete, and `ROADMAP_ACC_NCC.md` now says so.
+
 ## [1.72.0] — 2026-07-26
 
 ### Added

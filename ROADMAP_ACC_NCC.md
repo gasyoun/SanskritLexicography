@@ -103,12 +103,30 @@ consumption pattern.
 - **Deliverable:** `works_crosswalk.tsv` (accepted/rejected/deferred, with provenance).
 - **Status (09-07-2026, H264, Sonnet 5 `claude-sonnet-5`): tooling shipped, BLOCKED on MG's
   vote.** Sample-size ruling (asked, not silently picked): full 49,019-row sheet, no
-  sampling. [`HeadwordLists/works_catalogue/build_p2_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/feat/acc-ncc-p2-adjudication/HeadwordLists/works_catalogue/build_p2_sheet.py)
+  sampling. [`HeadwordLists/works_catalogue/build_p2_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/build_p2_sheet.py)
   generates the virtualized-scroll sheet;
-  [`apply_p2_decisions.py`](https://github.com/gasyoun/SanskritLexicography/blob/feat/acc-ncc-p2-adjudication/HeadwordLists/works_catalogue/apply_p2_decisions.py)
+  [`apply_p2_decisions.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/apply_p2_decisions.py)
   is the smoke-tested `decisions.json` consumer. [Draft PR #264](https://github.com/gasyoun/SanskritLexicography/pull/264),
-  branch `feat/acc-ncc-p2-adjudication`. GTD: [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)
-  § Waiting on Me.
+  branch `feat/acc-ncc-p2-adjudication`.
+- **Status (26-07-2026, [H1657](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1657-Opus_SanskritLexicography_acc-ncc-p2-agent-adjudication-49k_26.07.26.md),
+  Opus 5 1M `claude-opus-5[1m]`): all 49,019 rows adjudicated by agent; awaiting the
+  precision bar.** MG's ruling В2 of 26-07-2026 kept the 09-07 full-coverage ruling and
+  moved only the adjudicator: the sheet was never votable by a human (~14 working days at
+  1 s/row). [`adjudicate_p2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/adjudicate_p2.py)
+  casts 41,947 approve / 7,072 reject with cited evidence;
+  [`build_p2_spotcheck_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/build_p2_spotcheck_sheet.py)
+  draws a blind 686-card stratified sample over 16 strata;
+  [`p2_precision_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/p2_precision_gate.py)
+  publishes Wilson 95% lower bounds per stratum and gates promotion. **Nothing is promoted
+  yet** — all 49,019 sit in `works_crosswalk_agent_proposed.tsv` until a human rules the bar.
+  Full report: [`P2_AGENT_ADJUDICATION_REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_AGENT_ADJUDICATION_REPORT.md).
+- ⚠️ **P0/P1 are running on corrupted NCC keys** — 60.0% of `ncc.jsonl` match-keys are wrong
+  (uppercase IAST initials read as different SLP1 letters), which makes 93.3% of Tier D an
+  artefact and hides **14,379 exact matches that were never proposed as candidates** (true
+  exact overlap is 22,775 keys, not 8,397). Measured in H1657, filed as
+  [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779), repair
+  queued as [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md).
+  **Every count in the P1 table above is understated because of it.**
 
 ### P3 — kosha consumption (product repo)
 - kosha adds a `works` table (canonical headword deva/IAST/SLP1; ACC body + sigla + `pc_scan`; NCC body + mss-witnesses; `match_tier`; `ncc_coverage`; per-source `license`), loading this repo's `works_crosswalk.tsv` — mirrors the union-spine load in [kosha `build_db.py`](https://github.com/gasyoun/kosha/blob/main/scripts/build_db.py).
