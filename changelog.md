@@ -14,6 +14,18 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H1683 source-check of the article-comparison gloss edits.** All 32 proposed
+  RU gloss edits across the four finalist articles (`article-comparison/gloss_review_items.json`
+  — agni 11 · akṣara 6 · ananta 9 · anya 6) now carry an agent verdict
+  (source-confirms/source-contradicts/needs-human) with the governing PD line
+  quoted verbatim from `<w>.verbatim.md`. 0 contradicted, 19 confirmed (14
+  L-severity auto-accepted, 5 H/M-severity routed to a blind spot-check), 13
+  genuinely need a human. Reduced human ask: 18 of 32 — see
+  [`article-comparison/README.md`](article-comparison/README.md#source-check-pass-h1683-26-07-2026--reduced-human-ask)
+  for the full table and the correction against H1664's ~8 pre-execution
+  estimate. No edit was applied to any `pd-min.ru.md`, no vote was cast.
+
 ## [1.84.0] — 2026-07-26
 
 ### Added
