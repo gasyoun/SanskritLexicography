@@ -10,6 +10,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1491: Leonchenko Sinonimy digitized to a synonym evidence lane (26-07-2026)
+
+- [`research/sinonimy/sinonimy.jsonl`](research/sinonimy/README.md) (47,273 rows) digitizes
+  V.V. Leonchenko's Sinonimy xlsx workbooks (`VisualDCS/derived-data/Sinonimy`) into
+  sense-inventory + gloss-anchored synonym-ring rows, per
+  [ROADMAP_ACL_LESSONS_2026.md](research/ROADMAP_ACL_LESSONS_2026.md) B2/Wave 1. Also
+  registered in [REUSE_MAP.md](REUSE_MAP.md) §5. Dedup finding: the folder's four named
+  source groups reduce to three distinct datasets — S_P_D_F/Works-Share-Syn hold confirmed
+  duplicate re-exports, not new content. Evidence-only, not yet wired into `corpus_gate.py`.
+
 ## [1.71.0] — 2026-07-26
 
 ### Added — H1628: stratified 200-item review sheet for the compound `differs` queue (26-07-2026)

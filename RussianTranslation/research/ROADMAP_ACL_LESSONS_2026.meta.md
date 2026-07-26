@@ -1,6 +1,6 @@
 # ROADMAP_ACL_LESSONS_2026.meta.md — metadoc for `ROADMAP_ACL_LESSONS_2026.md`
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 26-07-2026_
 
 This is a **metadoc** — a document *about* a document. Its subject is
 [ROADMAP_ACL_LESSONS_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_ACL_LESSONS_2026.md)
@@ -79,5 +79,6 @@ it. Kept per the standing "one metadoc per important document" convention
 | Date | Event | Who |
 |---|---|---|
 | 18-07-2026 | Metadoc created (backfill sweep) | Sonnet 5 (`claude-sonnet-5`), H968 |
+| 26-07-2026 | Sinonimy xlsx→jsonl digitization bullet marked done under B2/Wave 1; subject doc's ground-truth line updated with the digitization result + dedup finding | Sonnet 5 (`claude-sonnet-5`), H1491 |
 
 _Dr. Mārcis Gasūns_
