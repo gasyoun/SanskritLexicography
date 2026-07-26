@@ -26,14 +26,20 @@ TWO layers, deliberately separate:
   'hit'                  — resolver mapped it AND the corpus has that passage's RU.
   'miss'                 — a clean, honest non-hit, with a `reason`:
         'text-not-covered'    the text has no RU asset at all (TS., SUŚR., …).
-        'locus-not-in-corpus' the text IS covered but this passage isn't ingested
-                              (e.g. Rāmāyaṇa book 7 / uttarakāṇḍa — absent).
+        'locus-not-in-corpus' the text IS covered but this passage isn't ingested.
+                              Rāmāyaṇa kāṇḍas 4, 6 and 7 are the standing case,
+                              and they are a TRANSLATION gap, not an ingest
+                              queue: no Russian translation of record exists for
+                              them at all — Gryntser's stopped after book 3,
+                              Leonov's covers book 5 (H1652 census).
         'locus-parse-failed'  the citation locus didn't parse.
   'unmapped_locus_scheme'— the text is covered but its PWG citation scheme does
                            NOT map 1:1 to the corpus keying, so no lookup is
                            possible without an external concordance. Remaining
                            case: MBH. (PWG cites continuous Calcutta ślokas;
-                           corpus keys critical parvan.adhyaya.verse).
+                           corpus keys critical parvan.adhyaya.verse). H1652
+                           built and MEASURED the cumulative-adhyāya candidate
+                           map and REJECTED it — see `_mbh_unmapped`.
                            R. GORR. + plain R. books 3-6 (Gorresio-keyed per
                            pwgbib 1.247) LEFT this bucket 26-07-2026: they now
                            resolve through the content-based Gorresio-Southern
@@ -146,14 +152,31 @@ def _manu(locus):
 def _mbh_unmapped(locus):
     # PWG cites the Calcutta edition's continuous per-parvan śloka number
     # (e.g. MBH. 5,7331); corpus keys the critical edition's parvan.adhyaya.verse.
-    # No 1:1 map without a Calcutta<->critical concordance (see the doc GAP + @DECIDE).
+    # H1652 BUILT the obvious candidate map — a cumulative adhyāya-length table
+    # over the eighteen-parvan Nīlakaṇṭha-vulgate<->critical concordances that
+    # CommentaryStrategies already ships — and MEASURED it against the store:
+    # 11.2% of 1,327 locatable citations land within ±2 verses (random null
+    # 2.5%), 16% under a fitted per-parvan rescale, 1/43 on the anchors whose
+    # true verse is unambiguous. The vulgate witness is also shorter than the
+    # text PWG counts in 8/18 parvans, so 145 citations have no ordinal at all.
+    # REJECTED: numbers + method in `build_mbh_concordance.py` and
+    # pwg_ru/H1652_MBH_CALCUTTA_VALIDATION_2026-07-26.md. Closing this needs the
+    # Calcutta text itself, not arithmetic over a different witness.
     return UNMAPPED
 
 
-_RAMA_GORR_WORK = {   # Gorresio kāṇḍa -> corpus work (kāṇḍa 4 kiṣkindhā absent)
+# Gorresio kāṇḍa -> corpus work. ONLY kāṇḍas the corpus actually carries may
+# appear here: `corpus.db` holds Rāmāyaṇa 1, 2, 3 (Gryntser 2006/2014) and 5
+# (Leonov 2024) and nothing else, because no Russian translation of record for
+# kiṣkindhā (4), yuddha (6) or uttara (7) exists at all — Gryntser's academic
+# translation stopped after book 3, Leonov's covers Sundara (H1652 census of
+# `sources`). Naming an absent work here does not fail loudly; it fabricates a
+# `canonical_id` for a passage that cannot be fetched, so a consumer reading
+# that field sees a resolution where there is none. Kāṇḍas 4/6/7 therefore fall
+# through to the covered-but-absent branch below — a typed miss, no id.
+_RAMA_GORR_WORK = {
     1: '01_ramayana-balakanda', 2: '02_ramayana-ayodhyakanda',
     3: '03_ramayana-aranyakanda', 5: '05_ramayana-sundarakanda',
-    6: '06_ramayana-yuddhakanda', 7: '07_ramayana-uttarakanda',
 }
 
 _GORR_MAP = None
@@ -389,6 +412,16 @@ def selftest():
     check(sun.get('canonical_id') == '05_ramayana-sundarakanda:2.51',
           'R. GORR. 5,10,1 -> %s (Sundara live via the H1689 OCR e-text)'
           % sun.get('canonical_id'))
+    # H1652: kāṇḍas 4/6/7 have NO Russian translation of record, so no corpus
+    # work exists for them. The failure mode being pinned is a resolution that
+    # LOOKS real — a canonical_id naming a work `corpus.db` does not carry.
+    for locus, name in (('4,10,1', 'kiṣkindhā'), ('6,20,1', 'yuddha'),
+                        ('7,5,1', 'uttara')):
+        ab = lookup('R. GORR.', locus)
+        check(ab['status'] == 'miss' and ab['reason'] == 'locus-not-in-corpus'
+              and ab['canonical_id'] is None,
+              'R. GORR. %s (%s) -> %s/%s, no canonical_id (no RU translation exists)'
+              % (locus, name, ab['status'], ab.get('reason')))
 
     print('LIVE corpus checks (DB-gated):')
     if not os.path.exists(CORPUS_DB):
