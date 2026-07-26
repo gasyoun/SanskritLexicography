@@ -207,6 +207,11 @@ review/g6_*_sheet.html
 review/*_decisions.json
 !review/sanskritlexicography-renou-hypotheses_pilot_decisions.json
 
+# H1628 compound-differs review sheet (compound_differs_review_sample.py): personal
+# voting artifact per the /review-sheet contract — local-only. The metadata-only sample
+# frame TSV (no ru/de store text) IS committed as the sample-design audit trail.
+review/sanskritlexicography-pwg-compound-differs_stratified200_review.html
+
 # Generated Workflow harnesses embed source/portrait payloads and are local-only.
 src/pilot/run_pilot_wf.*.js
 !src/pilot/run_pilot_wf.js

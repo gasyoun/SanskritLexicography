@@ -486,7 +486,7 @@ English twin:
 |---|---|---|---|
 | [H1626](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1626-Fable_SanskritLexicography_pwg-h1303-abbrev-decisions-apply_25.07.26.md) | Apply H1303 abbrev vote | N1 | Fable ⏸ vote |
 | [H1627](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1627-Fable_SanskritLexicography_pwg-h1306-style-decisions-apply_25.07.26.md) | Apply H1306 = G5 | N2 | Fable ⏸ vote |
-| [H1628](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1628-Sonnet_SanskritLexicography_pwg-compound-differs-review-sheet_25.07.26.md) | ~200 compound differs sheet | N11 sample | Sonnet |
+| [H1628](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1628-Sonnet_SanskritLexicography_pwg-compound-differs-review-sheet_25.07.26.md) | ~200 compound differs sheet ✅ sample built, ⏸ vote | N11 sample | Sonnet |
 | [H1629](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1629-Opus_SanskritLexicography_pwg-de-graph-ontolex-tei-export_25.07.26.md) | OntoLex/TEI DE graph | citability | Opus |
 | [H1630](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1630-Sonnet_SanskritLexicography_pwg-citation-edges-topn-scan-links_25.07.26.md) | Top-N scan links | N15 partial | Sonnet |
 | [H1631](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1631-Sonnet_SanskritLexicography_pwg-edition-diff-ui_25.07.26.md) | Edition-diff UI | N14 | Sonnet |
