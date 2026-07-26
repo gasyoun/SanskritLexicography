@@ -4,6 +4,46 @@ _Created: 09-07-2026 · Last updated: 26-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 26-07-2026 - H1681: all 4,226 PWG-vs-MW compound `differs` rows adjudicated by rule
+
+Executor: Opus 5 1M (`claude-opus-5[1m]`), Claude Code. В2 arm of the H1664 triage. Full
+method + limitations:
+[research/PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md);
+verdicts:
+[research/pwg_compound_differs_adjudication.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_compound_differs_adjudication.tsv).
+**No store field changed; the 200-card blind arm was not touched.**
+
+The queue is not "one dictionary is wrong": PWG's parenthesis states the compound's
+members **as lexemes**, MW's `<k2>` is a **surface segmentation** — MW's members
+concatenate back to the headword in 4,215/4,226 rows (99.7 %), PWG's in 81 (1.9 %).
+
+| Verdict | rows | share | = sheet vote |
+|---|---:|---:|---|
+| `pwg_members-right` | 3,724 | 88.1 % | approve |
+| `index_members-right` | 180 | 4.3 % | reject |
+| `unresolved` | 322 | 7.6 % | defer |
+
+20 rules, first-match-wins; the five largest: `same_split_pwg_lemma_form` 3,018 ·
+`pwg_lexeme_vs_mw_suffixed_tail` 323 · `mw_cut_leaves_nonword` 277 ·
+`cut_moved_both_readings_lexical` 253 (unresolved — both readings lexical) ·
+`pwg_layer_no_headword_paren` 82.
+
+**Four upstream defects found and worked around in memory (nothing rewritten):**
+
+| Defect | In queue | Whole dataset |
+|---|---:|---|
+| `pwg_compound_split.py` takes the first `+`-chain with no bracket awareness — inner sub-analysis or a *different word's* parenthesis | 162 | 344/16,738 wrong chain (2.06 %) + 368 unverifiable (2.20 %) |
+| `mw_compounds._clean_member` strips `;` and the space, fusing MW `<k2>` variants into one bogus member | 10 | 41/106,603 MW compound records (0.04 %) |
+| transcription typos in PWG's own member strings (`sda` for *sūda*, `hasaM` for *haṃsa*) | 12 | csl-orig batch candidates, not swept further |
+| the H1628 sheet has no lock/content-hash and a duplicate card (200 rows, 199 ids) | — | `validate_decisions.py` would reject the vote export |
+
+**Promotion plan (gate: per-stratum Wilson-95 % lb ≥ 0.90, provenance `agent`, never
+`human_reviewed`):** only `same_split_pwg_lemma_form` (3,018 rows, 140 arm cards, max lb
+0.973) can clear the gate — **the 200 votes close 3,018 of 4,226 rows (71.4 %), not all
+of them.** A stratum needs ≥ 35 arm cards at 100 % agreement to reach 0.90, and the H1628
+sample was stratified by length × DCS frequency before these rule strata existed. The
+remaining 1,208 rows need a second, rule-stratified arm of ~280 cards.
+
 ## 26-07-2026 - H1664: voting-queue triage — a verdict for every pending sheet, human bill recounted
 
 Executor: Fable 5 (`claude-fable-5`),

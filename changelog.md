@@ -25,6 +25,27 @@ not an error.
   `h1691_handcheck.py`. Grounded PWG leaf senses 7,372 → **8,208** (+11.3%) on H1670's wide
   frame; `MAPPED` citation mass 36.4% → **44.7%**; the actionable backlog above 0.05% is empty.
 
+- **H1681 — all 4,226 PWG-vs-MW compound `differs` rows adjudicated by rule, with the
+  four upstream defects behind them measured**
+  ([H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md),
+  Opus 5 1M `claude-opus-5[1m]`). New adjudicator
+  [`src/pilot/adjudicate_compound_differs.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/adjudicate_compound_differs.py)
+  (20 rules, `--selftest` wired), verdicts TSV + promotion-plan JSON in `research/`,
+  method + limitations in
+  [PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md).
+  3,724 `pwg_members-right` · 180 `index_members-right` · 322 `unresolved`. **No store
+  field changed; the 200-card blind arm untouched.** The queue turns out to be two
+  conventions meeting (PWG names lexemes, MW segments the surface — MW's members
+  reconstruct the headword in 99.7 % of rows, PWG's in 1.9 %) plus four defects:
+  `pwg_compound_split.py` is not bracket-aware (344/16,738 rows ship an inner or a
+  neighbouring word's chain, 368 more unverifiable), `mw_compounds._clean_member` fuses
+  `;`-separated MW `<k2>` variants (41/106,603), 12 transcription typos inside PWG's own
+  member strings, and the H1628 blind-arm sheet is unbound (no lock ⇒
+  `validate_decisions.py` would reject its export) with a duplicate card. Honest
+  promotion arithmetic: the existing 200 votes can close **3,018 of 4,226 rows (71.4 %)**,
+  not all of them — a stratum needs ≥ 35 arm cards to clear a Wilson-95 % lower bound
+  of 0.90.
+
 ### Fixed
 - **`build_ls_text_crosswalk_backlog.py` mis-classified in both directions and now reads back
   the adjudicated verdicts.** Its candidate came from prefix-matching PWG's GERMAN `pwgbib`
