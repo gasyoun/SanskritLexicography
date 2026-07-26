@@ -1,6 +1,6 @@
 # Content-aware re-glue spec
 
-_Created: 06-07-2026 · Last updated: 06-07-2026_
+_Created: 06-07-2026 · Last updated: 26-07-2026_
 
 **Deliverable 3 of
 [H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md)**
@@ -134,5 +134,20 @@ Deliverable-5 paper ("how the tradition renumbered itself when it abridged").
 
 See [`SYNTHESIS_PILOT_10.md`](SYNTHESIS_PILOT_10.md) for the bake-off that tests whether
 *synthesize-German-first* ever beats this after-translation remix.
+
+## 7. N14 pilot — edition-diff reading surface (H1631, 26-07-2026, PARTIAL CLOSE)
+
+A lighter-weight sibling of the full re-glue engine: a **read-only diff/badge view**
+(not a print-oriented merged card) over the same `edition_rel` classification
+(H1624 G4), for browsing rather than final presentation.
+[`src/pilot/build_edition_diff_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_edition_diff_site.py)
+renders the PWG skeleton with PW/SCH/PWKVN/NWS supplements attached at their
+`insertion_point.target_sense`, each badged with its subtype — no DE rewrite, no
+re-translation, no new typology. Pilot coverage: the same 7 five-layer roots as
+Section 5 (`gA`, `Cid`, `Sam`, `jIv`, `rakz`, `vraj`, `yat`); counts in
+[RESULTS_LOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md)
+26-07-2026. **Not yet done:** scaling past the 7-root pilot, per-sense visual
+polish, and this view does not replace the Section 4/5 print-oriented re-glue
+output — the two are complementary (diff/browse vs. merged/print).
 
 _Dr. Mārcis Gasūns_
