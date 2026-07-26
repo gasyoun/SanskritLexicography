@@ -14,6 +14,41 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H1652 — the MBH Calcutta↔critical map: built, measured, rejected**
+  ([H1652](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1652-Opus_SanskritLexicography_citation-tm-ramayana-mbh-concordance-wiring_26.07.26.md),
+  Opus 5 1M `claude-opus-5[1m]`). MG ruled 21-07-2026 to *build* the concordance that
+  would let PWG's 5,512 Mahābhārata citations reuse their Russian translation of record.
+  The prior artifact MG recalled is real — CommentaryStrategies ships an eighteen-parvan
+  Nīlakaṇṭha-vulgate↔critical verse concordance, never wired into anything here — so the
+  candidate map was built on top of it (a cumulative adhyāya-length table, committed as
+  [`src/mbh_vulgate_cumulative.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mbh_vulgate_cumulative.tsv))
+  and measured against the store: **11.2%** of 1,327 locatable citations within ±2 verses
+  against a **2.5%** uniform-random null, 16.3% under a fitted per-parvan rescale scored
+  on a held-out half, **1 of 43** on the anchors whose true verse is unambiguous. The
+  vulgate witness is shorter than the text PWG counts in 8/18 parvans (Vanaparvan 11,859
+  against a citation reaching 17,471), so 145 citations have no ordinal at all. The links
+  below the failing step were verified independently (vulgate 6.26.47 → critical 6.24.47
+  → the corpus line that is Bhagavadgītā 2.47). **`MBH.` stays `unmapped_locus_scheme`**;
+  closing the gap needs the Calcutta text itself, not arithmetic over a different witness.
+  New [`src/build_mbh_concordance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_mbh_concordance.py)
+  (`build`/`validate`/`selftest`, CI-wired); full tables in
+  [H1652_MBH_CALCUTTA_VALIDATION_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1652_MBH_CALCUTTA_VALIDATION_2026-07-26.md).
+
+### Fixed
+- **H1652 — `citation_tm` no longer fabricates a `canonical_id` for Rāmāyaṇa kāṇḍas 6
+  and 7.** `_RAMA_GORR_WORK` named `06_ramayana-yuddhakanda` and `07_ramayana-uttarakanda`,
+  works `corpus.db` does not carry; the lookup returned a resolved-looking key for a
+  passage nobody can fetch. The census behind the fix corrects the handoff's own premise:
+  kāṇḍas 4, 6 and 7 are a **translation** gap, not an ingest queue — Gryntser's Russian
+  stopped after book 3 and Leonov's covers book 5, so no translation of record exists for
+  kiṣkindhā, yuddha or uttara. Those kāṇḍas now return a typed `locus-not-in-corpus` miss
+  with no id, pinned by three new selftest checks. Kāṇḍa 6 is the near miss: H1656's
+  concordance already maps 2,295 Gorresio verses onto Southern yuddha loci, so 288 PWG
+  references become reusable the day a Russian yuddhakāṇḍa exists — costed in
+  [COVERED_TEXTS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/COVERED_TEXTS_RU.md)
+  § Rāmāyaṇa kāṇḍas 4, 6, 7.
+
 ## [1.83.0] — 2026-07-26
 
 ### Fixed
