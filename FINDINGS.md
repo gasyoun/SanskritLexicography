@@ -3679,7 +3679,6 @@ agreement.
 > [`src/eval/build_gold_koch.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/build_gold_koch.py) +
 > [`src/eval/gold_sa_ru_koch_400.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/gold_sa_ru_koch_400.tsv) —
 > RussianTranslation · 26-07-2026, Sonnet 5 (`claude-sonnet-5`).
-<<<<<<< HEAD
 ### §468. PWG's plain `R.` is a THREE-edition composite — books 3–6 carry Gorresio (Bengal-recension) numbering, so keying them into a Southern-recension text silently returns the wrong verse
 
 🔴 **PWG's plain `R.` is not one citation scheme: books 1–2 cite Schlegel, books 3–6 cite
