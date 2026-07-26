@@ -3552,3 +3552,47 @@ link identifies one sense at one locus, not every token of the lemma.
 > `m_wordsem` decode inventory recovered in H1453 — and the DCS master
 > `VisualDCS/src/DCS-data-2026/dcs_full.sqlite` (the `src/` and repo-root copies are 0-byte
 > decoys and were not read).
+### §466. MW's `cf.` and PWG's `Vgl.` are NOT independent witnesses — they agree ~2,950× above chance, so a shared cross-reference never counts as double attestation
+
+⚠️ **Kills a whole class of "two dictionaries agree, therefore it's real" argument.** A csl-atlas
+review sheet asked a human to confirm an MW↔PWG cross-reference edge on the grounds that "both
+dictionaries, **independently**, print a cross-reference … two editorial traditions made the same
+link". MG rejected that outright (26-07-2026): **MW depends on PWG and PW** — Monier-Williams 1899
+was built on Böhtlingk–Roth, so a shared reference can be one tradition copied, not two agreeing.
+
+Measured rather than argued
+([`m9_xref_marker_agreement.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/lexico/m9_xref_marker_agreement.py)
+→ [`xref_marker_agreement.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/lexico/xref_marker_agreement.json),
+full `xref_edges.csv`, normalisation shared with `m6_xref_lineage.py`, seed 20260726):
+
+| Measure | Value |
+|---|---|
+| MW `cf.` edges (normalized, deduped) | 7,637 |
+| PWG `Vgl.` + `s.` edges | 25,766 |
+| Headwords cross-referenced in **both** | 2,750 |
+| MW edges on those headwords | 3,184 |
+| …whose target PWG also points to | **694 (21.8%)** |
+| Expected under a degree-preserving null (200 draws) | 0.235 (**0.007%**) |
+| Enrichment | **≈2,953×** |
+| Null draws ≥ observed | 0/200 (p < 0.005) |
+
+**Two traps this finding also closes.** (1) The raw containment asymmetry — 11.2% of MW's edges
+appear somewhere in PWG vs 3.5% the other way, ≈3.2× — looks like directional evidence but is
+almost exactly the 3.4× edge-count ratio, i.e. a **set-size artifact**. Do not cite it as showing
+who copied whom; direction comes from the bibliographic record, not this statistic. (2) Enrichment
+proves non-independence, **not** copying specifically: both dictionaries recording the same
+language facts would also produce it. What it does establish is that the *count* of agreeing
+dictionaries is not evidence you may add up.
+
+**Reusable rule.** For any MW/PW/PWG-family corroboration claim, "N dictionaries agree" is not N
+witnesses. State what a shared record actually asserts (here: the edge is *real and lexical*) and
+drop the independence premise. The same caution applies to any derived dataset that scores
+confidence by counting dictionaries in the Petersburg lineage.
+
+Companion trap on the same pipeline: MW and PWG follow **opposite** headword conventions in four
+cases documented by Patel 2016 (śatṛ `-at`/`-a`, vatup/matup `-vat`/`-v`, ṛ-stems `-ṛ`/`-ar`,
+vas/yas `-vas`/`-vaṃs`) which the normaliser does not reconcile — so the 642-edge MW∩PWG
+intersection is an **undercount**, and a ṛ-stem edge cannot intersect at all. See
+[XREF_SHARED_CORE_LABEL_TAXONOMY.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/XREF_SHARED_CORE_LABEL_TAXONOMY.md).
+
+_26-07-2026 · [H1648](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1648-Opus_csl-atlas_xref-sheet-ru-and-mw-pwg-dependence_26.07.26.md) · csl-atlas [PR #310](https://github.com/sanskrit-lexicon/csl-atlas/pull/310), [v0.11.0](https://github.com/sanskrit-lexicon/csl-atlas/releases/tag/v0.11.0) · Opus 5 (1M context) `claude-opus-5[1m]`_
