@@ -3615,8 +3615,10 @@ confidence by counting dictionaries in the Petersburg lineage.
 
 Companion trap on the same pipeline: MW and PWG follow **opposite** headword conventions in four
 cases documented by Patel 2016 (śatṛ `-at`/`-a`, vatup/matup `-vat`/`-v`, ṛ-stems `-ṛ`/`-ar`,
-vas/yas `-vas`/`-vaṃs`) which the normaliser does not reconcile — so the 642-edge MW∩PWG
-intersection is an **undercount**, and a ṛ-stem edge cannot intersect at all. See
+vas/yas `-vas`/`-vaṃs`) which the normaliser does not reconcile — so the 641-edge MW∩PWG
+intersection is an **undercount**, and a ṛ-stem edge cannot intersect at all. (The pool was
+quoted as 642 when this entry first landed — a `wc -l` counting the CSV header as a data
+row; the packet now computes it and a docs-vs-data test pins the prose to it.) See
 [XREF_SHARED_CORE_LABEL_TAXONOMY.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/XREF_SHARED_CORE_LABEL_TAXONOMY.md).
 
 _26-07-2026 · [H1648](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1648-Opus_csl-atlas_xref-sheet-ru-and-mw-pwg-dependence_26.07.26.md) · csl-atlas [PR #310](https://github.com/sanskrit-lexicon/csl-atlas/pull/310), [v0.11.0](https://github.com/sanskrit-lexicon/csl-atlas/releases/tag/v0.11.0) · Opus 5 (1M context) `claude-opus-5[1m]`_
