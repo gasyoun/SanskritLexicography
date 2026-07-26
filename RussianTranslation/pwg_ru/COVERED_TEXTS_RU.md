@@ -274,6 +274,16 @@ recension), `gorresio-etext-gap` (sarga awaiting the vols 2/4/uk OCR pass),
 becomes an invented offset — the 166k lesson stands. The `/review-sheet` audit sheet
 remains as a quality surface (votes refine the map), not a blocker.
 
+**Audit round 1 (26-07-2026, voted same day).** 32 sampled pairs (incl. 5 scan-verified
+gold anchors), agent-voted by Fable 5 (`claude-fable-5`) on MG's direct delegation:
+**28 approve / 4 reject (87.5%)**. All 4 rejects are one systematic sub-class —
+OCR lost a ॥N॥ marker, two half-verses merged, and the aligner paired the chunk with
+the verse matching its TAIL (half-verse shift: G 1,12,28 · 1,48,11 · 1,62,8 · 2,4,7).
+Those rows are switched off as `audit-rejected` in the verse map (loader reads only
+matched/fuzzy). Detection heuristic for the residue: over-long G-chunks or chunks with
+an interior ॥N॥ — queued into H1689's refinement pass. Vote record:
+`review/sanskritlexicography-gorresio-southern-map_audit-26-07-26_decisions.json` (local).
+
 ## Retro-application plan
 
 The lookup is wired into the generation path (`corpus_gate.build_card` gains a
