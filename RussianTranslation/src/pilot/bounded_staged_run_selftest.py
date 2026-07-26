@@ -700,6 +700,152 @@ def test_n_cli_defines_execute_path_args(td):
           '(incl. --claude-bin): PASS')
 
 
+def test_o_cohort_width_cli_and_live_refusal(td):
+    """H1437 Phase 3: --cohort-width is EXPERIMENTAL / OFFLINE-ONLY. The parser defaults it
+    to 1 (the serial route, byte-for-byte unchanged); the --execute path REFUSES any width
+    > 1 with a message naming the missing live-acceptance gate, BEFORE touching the plan,
+    the db, the coordinator or the fleet; old programmatic callers whose Namespace never
+    defines cohort_width keep working (getattr default 1)."""
+    ap = bsr.build_parser()
+    args = ap.parse_args(['--plan', 'p.json', '--coord-dir', 'cd'])
+    assert hasattr(args, 'cohort_width'), 'the CLI never defines --cohort-width'
+    assert args.cohort_width == 1, 'default cohort width must be 1 (serial): %r' % args.cohort_width
+
+    # Refusal fires FIRST: the plan path does not exist, so reaching plan-load would be an
+    # OSError, not the SystemExit gate message. probe_fleet is boobytrapped for good measure.
+    _pf = mao.probe_fleet
+    mao.probe_fleet = lambda *a, **k: (_ for _ in ()).throw(
+        AssertionError('a refused cohort --execute must NOT probe the fleet'))
+    try:
+        try:
+            bsr.run(argparse.Namespace(
+                plan=os.path.join(td, 'o_no_such_plan.json'), coord_dir=os.path.join(td, 'o_cd'),
+                db=os.path.join(td, 'o_no.sqlite'), checkpoint=os.path.join(td, 'o_cp.json'),
+                lease_id=None, execute=True, cohort_width=2, resume=False, report=None,
+                coordinator=os.path.join(HERE, 'coordinator.py'), cwd=td, events=None,
+                run_id='o', claude_bin='claude', timeout=5,
+                gen_model_version=bsr.DEFAULT_GEN_MODEL_VERSION, only_profile=None,
+                drop_unhealthy=False, stop_before_promote=False,
+                max_windows=None, max_calls=None, max_clean=None, cost_ceiling=None,
+                empty_streak=None, max_accounts=0))
+            raise AssertionError('--execute with cohort width 2 was NOT refused')
+        except SystemExit as exc:
+            msg = str(exc)
+            assert 'live-acceptance gate' in msg and 'H1437' in msg, (
+                'the refusal must NAME the missing live-acceptance gate: %r' % msg)
+            assert 'serial' in msg, 'the refusal must state the serial route stays default: %r' % msg
+    finally:
+        mao.probe_fleet = _pf
+
+    # The dry-run planning view carries the cohort block (policy visible without a live run).
+    view = bsr.plan_view(_plan(['no_pwg_w02']), {'leases': []}, _ceilings(),
+                         os.path.join(td, 'o_v.json'), cohort_width=3)
+    cohort = view.get('cohort') or {}
+    assert cohort.get('requested_width') == 3, view
+    assert 'OFFLINE' in (cohort.get('mode') or ''), cohort
+    assert 'live-acceptance gate' in (cohort.get('live_policy') or ''), cohort
+    serial_view = bsr.plan_view(_plan(['no_pwg_w02']), {'leases': []}, _ceilings(),
+                                os.path.join(td, 'o_v.json'))
+    assert (serial_view.get('cohort') or {}).get('requested_width') == 1, serial_view
+    assert 'serial' in ((serial_view.get('cohort') or {}).get('mode') or ''), serial_view
+    print('  (o) H1437 P3: --cohort-width defaults 1; --execute width>1 refused naming the '
+          'live-acceptance gate before any plan/db/fleet access; dry-run shows policy: PASS')
+
+
+def test_p_cohort_offline_serial_equivalence(td):
+    """H1437 Phase 3 reviewer checkpoint: the SAME fixture at widths 1/2/3 with DELAYED fake
+    workers (w1 slowest, w3 fastest — completion order is the REVERSE of plan order at width
+    3) must yield identical clean/requeue decisions, identical fake-store bytes, exact equal
+    ledger totals, exactly ONE promote_wave + ONE rebuild_tm call per wave — and measurably
+    lower wall time at width >= 2, with an actual-overlap trace (peak_concurrency >= 2)."""
+    import time
+
+    DELAYS = {'w1': 0.30, 'w2': 0.20, 'w3': 0.10}
+
+    def fixture_windows():
+        return [
+            {'id': 'w1', 'profile': 'c1', 'headwords': ['hw1']},
+            {'id': 'w2', 'profile': 'c2', 'headwords': ['hw2']},
+            {'id': 'w3', 'profile': 'c3', 'headwords': ['hw3']},
+        ]
+
+    results = {}
+    for width in (1, 2, 3):
+        wdir = os.path.join(td, 'p_w%d' % width); os.makedirs(wdir)
+        store = os.path.join(wdir, 'store.json')
+        promote_calls, tm_calls = [], []
+
+        def run_window(window):
+            time.sleep(DELAYS[window['id']])
+            path = os.path.join(wdir, 'wf_%s.json' % window['id'])
+            with open(path, 'w', encoding='utf-8', newline='\n') as f:
+                json.dump({'summary': {}, 'results': []}, f)
+            return path
+
+        def audit(wf_output, window):
+            if window['id'] == 'w2':      # rejected: requeues alone, blocks no sibling
+                return {'requeue_keys': ['w2~~h0_zz_pw'], 'clean_count': 0}
+            return {'requeue_keys': [], 'clean_count': 1}
+
+        def promote_wave(clean_members):
+            promote_calls.append([m['id'] for m in clean_members])
+            payload = json.dumps(clean_members, sort_keys=True, separators=(',', ':'),
+                                 ensure_ascii=True)
+            with open(store, 'w', encoding='utf-8', newline='\n') as f:
+                f.write(payload)
+            return {'members': [m['id'] for m in clean_members]}
+
+        def rebuild_tm(receipt):
+            tm_calls.append(receipt)
+
+        t0 = time.perf_counter()
+        summary = bsr.run_cohort_offline(
+            fixture_windows(), width, run_window,
+            os.path.join(wdir, 'cp.json'), audit=audit,
+            promote_wave=promote_wave, rebuild_tm=rebuild_tm)
+        elapsed = time.perf_counter() - t0
+        with open(store, 'rb') as f:
+            store_bytes = f.read()
+        results[width] = {'summary': summary, 'elapsed': elapsed,
+                          'store_bytes': store_bytes,
+                          'promote_calls': promote_calls, 'tm_calls': tm_calls}
+
+    for width, r in results.items():
+        s = r['summary']
+        # identical decisions in stable plan order, regardless of completion order
+        assert s['accepted_order'] == ['w1', 'w3'], (width, s['accepted_order'])
+        assert s['requeue_backlog_keys'] == ['w2~~h0_zz_pw'], (width, s)
+        # exact ledger totals: 3 reservations, 3 spends — probes/failures never escape
+        assert s['calls_reserved'] == 3 and s['calls_spent'] == 3, (width, s)
+        # one promotion + one TM call per accepted wave
+        assert len(r['promote_calls']) == 1 and r['promote_calls'][0] == ['w1', 'w3'], (width, r['promote_calls'])
+        assert len(r['tm_calls']) == 1, (width, r['tm_calls'])
+        # store bytes identical to serial, byte for byte
+        assert r['store_bytes'] == results[1]['store_bytes'], (
+            'width %d store bytes diverge from serial' % width)
+    assert results[1]['summary']['peak_concurrency'] == 1, results[1]['summary']
+    assert results[2]['summary']['peak_concurrency'] >= 2, results[2]['summary']
+    assert results[3]['summary']['peak_concurrency'] >= 2, results[3]['summary']
+    # measurably lower wall time under delayed fake workers (serial ~0.60s floor)
+    assert results[2]['elapsed'] < results[1]['elapsed'] - 0.10, (
+        'width 2 not faster: serial %.3fs vs %.3fs' % (results[1]['elapsed'], results[2]['elapsed']))
+    assert results[3]['elapsed'] < results[1]['elapsed'] - 0.15, (
+        'width 3 not faster: serial %.3fs vs %.3fs' % (results[1]['elapsed'], results[3]['elapsed']))
+
+    # a profile-less window is refused LOUDLY — the one-job-per-profile invariant is
+    # meaningless without a profile binding, so offline fixtures must declare one.
+    try:
+        bsr.run_cohort_offline([{'id': 'wx'}], 2, lambda w: None,
+                               os.path.join(td, 'p_x.json'))
+        raise AssertionError('a profile-less window was accepted by run_cohort_offline')
+    except SystemExit as exc:
+        assert 'profile' in str(exc), exc
+    print('  (p) H1437 P3: widths 1/2/3 — identical decisions/store bytes/ledger, one '
+          'promote+TM per wave, overlap proven (peak>=2), wall time '
+          '%.2fs/%.2fs/%.2fs: PASS' % (results[1]['elapsed'], results[2]['elapsed'],
+                                       results[3]['elapsed']))
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_a_plan_scope(td)
@@ -716,6 +862,8 @@ def main():
         test_l_resume_recovers_abandoned_jobs(td)
         test_m_requeue_resume_after_crash(td)
         test_n_cli_defines_execute_path_args(td)
+        test_o_cohort_width_cli_and_live_refusal(td)
+        test_p_cohort_offline_serial_equivalence(td)
     print('bounded_staged_run_selftest: PASS')
 
 
