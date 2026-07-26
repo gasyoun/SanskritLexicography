@@ -179,4 +179,52 @@ needs one of:
 Route 1 stands or falls on the text, so the useful next act is an acquisition probe
 for a Calcutta-edition e-text or scan, not another modelling attempt.
 
+## Addendum, same day — the probe ran, and route 1 is open
+
+MG pointed at the scan; the probe (H1707) found both halves of what route 1 needs.
+
+**1. The scan, with a citation-grade page index.**
+[sanskrit-lexicon-scans/mbhcalc](https://github.com/sanskrit-lexicon-scans/mbhcalc)
+holds the Asiatic Society four-volume printing (1834–39, BSB source scans) as 3,006
+page PDFs, plus `parvanverse.js` — the exact analogue of the Gorresio `ksverse.js` this
+project already consumes: `(parvan, continuous śloka) → (volume, page)`, i.e. **PWG's
+citation scheme natively**. Measured against the store: **3,007 of 3,009 distinct
+`MBH.` loci (99.9%) resolve to a page**; the two misses are single outliers in parvans
+1 and 2. Parvan 12 matches to the exact śloka (index 13,943, PWG's highest citation
+13,943). Page-level click-through for the most-cited text in the dictionary is therefore
+available **today**, with no OCR and no alignment — the same surface `ls_resolver.py`
+already provides for R. GORR.
+
+The one caveat the index carries: Vanaparvan numbering is non-monotonic once (after
+12,000 it drops to 10,195 before continuing to 17,478), a feature of the printed
+edition's own numbering that PWG follows — the repo ships a `corrected.…index…txt`
+alongside the raw one.
+
+**2. An e-text, via a proxy — and it is better than OCR.** The page PDFs are
+image-only (0 characters of embedded text; the Gorresio trick does not repeat here). A
+single page was OCRed as a feasibility check — tesseract-5 `san` on `mbhcalc_2.319.pdf`
+rendered at 4× produced readable but noisy Devanagari, roughly the H1689 Gorresio
+quality. **That route is now unnecessary.** Sarkar, Jagadeeshan & Goyal, *Recovering the
+Calcutta Edition of the Mahābhārata for Computational Analysis* (ISCLS 2026) aligned the
+M. N. Dutta text — digitized in the Itihāsa dataset, and a Calcutta-recension witness —
+back onto the printed Calcutta Edition, verse-level, ~88% coverage, released CC at
+[sujoysarkarai/mahabharatace](https://github.com/sujoysarkarai/mahabharatace). Its
+`ce_verse_number` column **is the continuous per-parvan śloka**: volume 5 runs 1..7,655
+against `parvanverse.js`'s 7,657 and PWG's highest Udyoga citation 7,656. 9,125 of its
+13,091 parvan-5 lines are `manual_anchor` — verified against the physical volumes.
+
+**End-to-end proof on the citation that started this handoff.** `MBH. 5,7331` →
+`mahabharatace` volume 5, `ce_verse_number` 7331 (`manual_anchor`) → «भीष्ममेव प्रपद्यस्व न
+तेऽन्या विद्यते गतिः । निर्जितो ह्यस्मि भीष्मेण महास्त्राणि प्रमुञ्चता ॥» → verbatim in
+`05_mahabharata-udyogaparva:5.187.1-4#sa` as verse ॥4॥ → and that key **has** its
+Russian translation of record (Kalyanov, 537 chars, ending «И я побежден Бхишмой,
+мечущим могучие виды оружия!»).
+
+So the rejection above stands exactly as measured — the cumulative-adhyāya bridge over
+the vulgate does not work — but the conclusion "closing this needs the Calcutta text"
+is now a **task, not a blocker**. The remaining work is a content alignment of the
+`mahabharatace` lines to the corpus's critical keying (the same n-gram + monotonic
+anchoring machinery `build_ramayana_concordance.py` already runs), scoped by the ~88%
+coverage and the `CONFLICT`/`unprocessed` rows the release flags honestly.
+
 _Dr. Mārcis Gasūns_
