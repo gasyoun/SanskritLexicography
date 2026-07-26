@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.70.0] — 2026-07-26
+
 ### Added
 
 - **Selftest isolation guard — production data unreachable by construction (26-07-2026).**
