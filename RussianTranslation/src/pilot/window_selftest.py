@@ -1263,6 +1263,70 @@ def test_h960_dropped_sanskrit_span():
         fail('dropped_sanskrit_span must be LOW / non-high-confidence, got %r' % row)
 
 
+def test_h1651_cyrillic_in_sanskrit_wrapper():
+    """H1651 D1: {#..#} is the Sanskrit/SLP1 citation wrapper -- transliterated Sanskrit is
+    Latin+diacritics only, so a Cyrillic word inside it means a Russian gloss got wrapped in
+    the Sanskrit delimiter instead of {%..%} (store audit 26-07-2026: 34 live rows, all
+    pure-Cyrillic content mis-wrapped this way). HIGH_CONFIDENCE (drives a requeue) — unlike
+    dropped_sanskrit_span above, there is no soft/ambiguous case for this pattern."""
+    import prompt_rule_audit as pr
+    def ids(ru):
+        return [r['id'] for r in pr.markup_sigla_risks({}, ru, '', '', '3')]
+    # POSITIVE: a Cyrillic gloss wrapped in {#..#} fires.
+    if 'cyrillic_in_sanskrit_wrapper' not in ids('{#полагать, думать#}: {#mfto vetti#}'):
+        fail('cyrillic_in_sanskrit_wrapper must fire on a Cyrillic {#..#} span')
+    # CONTROL: a genuine Sanskrit/IAST span (no Cyrillic) stays silent.
+    if 'cyrillic_in_sanskrit_wrapper' in ids('{#mfto vetti#} значит "знать"'):
+        fail('cyrillic_in_sanskrit_wrapper must NOT fire on a genuine Sanskrit span')
+    # CONTROL: a correctly-wrapped Russian gloss (using {%..%}) stays silent.
+    if 'cyrillic_in_sanskrit_wrapper' in ids('{%полагать, думать%}: {#mfto vetti#}'):
+        fail('cyrillic_in_sanskrit_wrapper must NOT fire on a {%..%}-wrapped gloss')
+    if 'cyrillic_in_sanskrit_wrapper' not in pr.HIGH_CONFIDENCE_RISKS:
+        fail('cyrillic_in_sanskrit_wrapper must be HIGH_CONFIDENCE (unambiguous, always wrong)')
+    row = [r for r in pr.markup_sigla_risks({}, '{#полагать, думать#}: {#mfto vetti#}', '', '', '3')
+           if r['id'] == 'cyrillic_in_sanskrit_wrapper'][0]
+    if row['level'] != 'high' or not row.get('high_confidence'):
+        fail('cyrillic_in_sanskrit_wrapper must be HIGH / high-confidence, got %r' % row)
+
+
+def test_h1651_gloss_wrapper_became_guillemet():
+    """H1651 D3: of the rows where a {%..%} gloss wrapper is missing from RU relative to DE
+    (markup_wrapper_dropped), a minority rendered the gloss content inside Russian guillemets
+    <<..>> instead of losing the wrapper outright. Report-only (never HIGH_CONFIDENCE): the
+    translated content is intact either way, so this never drives a requeue -- it names the
+    sub-case for a future targeted repair pass, per the H1651 ruling that {%..%} is the
+    convention and guillemets are drift, not an accepted alternative."""
+    import prompt_rule_audit as pr
+    def ids(de, ru):
+        return [r['id'] for r in pr.markup_sigla_risks({}, ru, de, '', '3')]
+    # POSITIVE: DE gloss rendered as a guillemet instead of {%..%} in RU.
+    found = ids('{%glauben%}', '«полагать»')
+    if 'markup_wrapper_dropped' not in found or 'gloss_wrapper_became_guillemet' not in found:
+        fail('gloss_wrapper_became_guillemet must fire alongside markup_wrapper_dropped')
+    # CONTROL: wrapper correctly kept -> neither risk fires.
+    if {'markup_wrapper_dropped', 'gloss_wrapper_became_guillemet'} & set(ids('{%glauben%}', '{%полагать%}')):
+        fail('neither risk should fire when the {%..%} wrapper survives')
+    # CONTROL: wrapper dropped but NOT replaced by a guillemet (bare prose) -> only the
+    # existing soft risk fires, not the new one.
+    plain = ids('{%glauben%}', 'полагать')
+    if 'markup_wrapper_dropped' not in plain:
+        fail('markup_wrapper_dropped must still fire on a bare unwrapped drop')
+    if 'gloss_wrapper_became_guillemet' in plain:
+        fail('gloss_wrapper_became_guillemet must NOT fire without a guillemet span')
+    # CONTROL: no deficit at all (wrapper count matches) -> silent even with a guillemet
+    # elsewhere in the row (an ordinary Russian quotation, not a converted gloss). The
+    # per-row heuristic caps at the measured deficit, so it cannot fire past that count.
+    no_deficit = ids('{%glauben%}', '{%полагать%} (букв. «доверять»)')
+    if 'gloss_wrapper_became_guillemet' in no_deficit:
+        fail('an unrelated guillemet must not fire when the gloss-wrapper count already matches')
+    if 'gloss_wrapper_became_guillemet' in pr.HIGH_CONFIDENCE_RISKS:
+        fail('gloss_wrapper_became_guillemet must stay report-only (never requeue)')
+    row = [r for r in pr.markup_sigla_risks({}, '«полагать»', '{%glauben%}', '', '3')
+           if r['id'] == 'gloss_wrapper_became_guillemet'][0]
+    if row['level'] != 'low' or row.get('high_confidence'):
+        fail('gloss_wrapper_became_guillemet must be LOW / non-high-confidence, got %r' % row)
+
+
 def test_no_pwg_worklist_runnable_lane():
     """H214: the worklist exposes a no_pwg_runnable lane for PW/SCH/PWKVN-only lemmas and does
     NOT reclassify a true miss (absent from every layer) as runnable, nor mix it into the
@@ -8127,6 +8191,8 @@ def main():
         test_h960_accept_sanloss_soft_gate,
         test_tnmask_persist_and_offline_detect,
         test_h960_dropped_sanskrit_span,
+        test_h1651_cyrillic_in_sanskrit_wrapper,
+        test_h1651_gloss_wrapper_became_guillemet,
         test_no_pwg_worklist_runnable_lane,
         test_no_pwg_layer_and_profile_survive_promotion,
         test_prompt_rule_audit_template,
