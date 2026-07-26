@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.84.0] — 2026-07-26
+
 ### Added
 - **H1652 — the MBH Calcutta↔critical map: built, measured, rejected**
   ([H1652](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1652-Opus_SanskritLexicography_citation-tm-ramayana-mbh-concordance-wiring_26.07.26.md),
