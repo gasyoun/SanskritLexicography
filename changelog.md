@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.85.0] — 2026-07-26
+
 ### Added
 - **H1683 source-check of the article-comparison gloss edits.** All 32 proposed
   RU gloss edits across the four finalist articles (`article-comparison/gloss_review_items.json`
