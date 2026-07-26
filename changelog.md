@@ -14,7 +14,7 @@ not an error.
 
 ## [Unreleased]
 
-## [1.85.0] — 2026-07-26
+## [1.86.0] — 2026-07-26
 
 ### Added
 - **H1707 probe — the Calcutta Mahābhārata is obtainable after all, and PWG's citation
