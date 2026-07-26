@@ -10,6 +10,23 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — "a bigger corpus" was the wrong lever for H1632 constriction 1 (26-07-2026)
+
+- The H1632 frame-comparison report and SL FINDINGS §465 said the 60.2% of PWG
+  headwords absent from DCS needs "a bigger corpus". **Misleading as written**
+  (MG): *DCS already is the largest **tagged** Sanskrit corpus*; the corpora that
+  are bigger carry **no markup** — wisdomlib, currently under scrape.
+- Both now state the split precisely: an untagged corpus **can** raise
+  *lemma-level* attestation (shrinking the "absent everywhere" class) but
+  **cannot** raise *sense-level* grounding, since there are no sense tags to bind
+  to. Conflating the two is a category error; the rates stay in separate tables.
+- Points at the existing `wl` wisdomlib period-state signal (§14) so a second
+  wisdomlib lane is not opened, and at the Cloudflare constraint before any scrape.
+- Follow-on work minted as
+  [H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md):
+  the only real levers on the sense-level number are running the H1455 aligner
+  past its own 500 headwords, and adding texts / locus crosswalks.
+
 ### Added — H1666: Wave-2 coverage monitor + monthly cloud routine (26-07-2026)
 
 - [`research/WAVE2_COVERAGE_MONITOR.md`](research/WAVE2_COVERAGE_MONITOR.md) tracks
