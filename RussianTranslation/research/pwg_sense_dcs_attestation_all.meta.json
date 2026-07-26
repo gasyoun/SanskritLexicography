@@ -1,0 +1,95 @@
+{
+  "handoff": "H1632",
+  "model": "Opus 5 (claude-opus-5[1m])",
+  "generator": "research/pwg_sense_dcs_attestation_pilot.py",
+  "frame": "every PWG headword (109,050 groups)",
+  "frame_mode": "all",
+  "frame_seed": null,
+  "frame_n_requested": null,
+  "join_key": "SLP1 <-> SLP1 (both sides already ASCII SLP1; form_key() is identity here, no NFD/strip-Mn normalisation applied)",
+  "gold_layer": "wn",
+  "grounded_tiers": [
+    "locus",
+    "locus-mbh"
+  ],
+  "excluded_tiers": {
+    "ls": "PWG self-citation, no DCS token",
+    "overlap": "gloss-token heuristic, not a sense id"
+  },
+  "dcs_master": "VisualDCS/src/DCS-data-2026/dcs_full.sqlite (921 MB; the src/ and repo-root copies are 0-byte decoys and were not read)",
+  "pins": [
+    {
+      "name": "kosha/data/concordance/sense_pilot_headwords.tsv",
+      "role": "frozen 500-headword pilot frame (H1455)",
+      "sha256": "08cac0cf4a3f1cb63b055443d47c47d61acdd10d5e072719b8a5cb2a015f1229"
+    },
+    {
+      "name": "RussianTranslation/research/pwg_sense_loci.all.tsv",
+      "role": "PWG leaf senses + `<ls>` loci for THIS frame (export_frame_sense_loci.py over microstructure.py, H1456 parser)",
+      "sha256": "82e93521d23ca7692896daadee843a8dded5a4c69ab92ea440b5ebc69c41b2e8"
+    },
+    {
+      "name": "kosha/data/frequency/lemma_frequency.tsv",
+      "role": "DCS lemma-level token counts",
+      "sha256": "3d54e4dbf4fc90c75fdd10b7ab538ddde548718b703c935cadb4c22e43314d07"
+    },
+    {
+      "name": "kosha/data/frequency/sense_frequency.tsv",
+      "role": "DCS per-sense counts, `wn` = m_wordsem gold (H1453)",
+      "sha256": "2816b02e0e22529f1bccb8be1f39523ef84fd37f0e25b772431ffc069c6762f1"
+    },
+    {
+      "name": "kosha/data/concordance/sense_corpus_concordance.tsv",
+      "role": "PWG-sense ↔ DCS attestation links (H1455)",
+      "sha256": "f71ab304b4a3a0d273de1ca8223b4c3ab24d50371a9a99c38210074cc5147ea2"
+    }
+  ],
+  "summary": {
+    "n_pilot_groups": 109050,
+    "n_lemma_attested": 43352,
+    "n_wordsem_tagged": 18918,
+    "n_groups_grounded": 50,
+    "mass_dcs_lemma_tokens": 6050344,
+    "mass_dcs_sensetagged_tokens": 676720,
+    "sensetagged_mass_share": 0.11184818582216152,
+    "mass_under_grounded_upper_bound": 39520,
+    "attributable_mass_share_upper_bound": 0.006531860006637639,
+    "pwg_senses_total": 154723,
+    "pwg_senses_with_ls": 146215,
+    "dcs_wn_senses_total": 51470,
+    "n_groups_grounding_computed": 500,
+    "n_groups_grounding_unknown": 108550,
+    "pwg_senses_grounded": 52,
+    "pwg_senses_total_known": 7746,
+    "dcs_wn_senses_total_known": 5201,
+    "pwg_sense_join_rate": 0.006713142266976504,
+    "dcs_sense_join_rate": 0.009998077292828303,
+    "median_pwg_senses_tagged_lemmas": 1.0,
+    "median_dcs_senses_tagged_lemmas": 1.0,
+    "spearman_pwg_vs_dcs_sense_count": 0.4077266155524832,
+    "residual_classes": {
+      "R0_grounding_not_computed": 18438,
+      "R2_no_wordsem_tag": 24430,
+      "R1_lemma_absent_from_dcs": 65698,
+      "R3_tagged_but_unaligned": 434,
+      "R4_grounded_alignment": 50
+    },
+    "concordance_tier_rows": {
+      "ls": 85472,
+      "locus-mbh": 52,
+      "overlap": 1561,
+      "locus": 7
+    }
+  },
+  "disclosures": {
+    "frame_mode": "all",
+    "frame_label": "every PWG headword (109,050 groups)",
+    "frame_note": "The complete dictionary — no sampling, no selection. Lemma-level coverage here is the population value, not an estimate.",
+    "frame_note_long": "The frame is **every PWG headword group** parsed from `csl-orig/v02/pwg/pwg.txt` (109,050 groups, 154,723 leaf senses). No sampling and no DCS-attestation precondition, so the lemma-level and sense-tag figures are population values.",
+    "repro_export": "python export_frame_sense_loci.py --all",
+    "repro_join": "python pwg_sense_dcs_attestation_pilot.py --kosha ../../../kosha --frame-mode all",
+    "dropped_parent_loci": 27727,
+    "grounded_without_wordsem": 4,
+    "leaf_mismatch": null
+  }
+}
