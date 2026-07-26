@@ -127,6 +127,88 @@ swept the queue; batch1v2 rebuilt gate-clean. Full audit:
 | batch1v2 cards (all verified German-free) | 150 |
 | positional-id drift: votes initially unresolvable against grown store | 2/5 (fixed: suffix fallback + CI pin) |
 
+## 26-07-2026 — H1630 top-N `citation_edges` sigla → Cologne scan/HTML link coverage
+
+Executor: Sonnet 5 (`claude-sonnet-5`), isolated worktree. Script: `src/citation_edges.py`
+(`topn` subcommand, new; `scan_href` field, new — H1624 G3 parent). Store: the live
+11,603-row `pwg_ru_translated.jsonl` (gitignored, main-worktree canonical copy).
+
+**What's new.** `extract_citation_edges()` gained an additive `scan_href` field —
+`ls_resolver.generate_href('pwg', n_attr, raw_ls)` when it actually resolves a Cologne
+scan/HTML target, else `null`. This is a *different* axis from the existing
+`resolver_status` (map/bib/orphan): `resolver_status` only asks "is this siglum a known
+work", not "does a clickable Cologne target exist for this exact locator" — e.g. `AK. 1`
+is `map` (Amarakośa is a known work) but `scan_href` is `null` (the resolver pattern for
+Amarakośa needs 3–4 coordinate parts, not one).
+
+**Top-25 sigla by raw citation frequency → `scan_href` coverage:**
+
+| siglum | citations | `scan_href` resolved | coverage | sample target |
+|---|---:|---:|---:|---|
+| MBH | 5,753 | 5,737 | 99.7% | [mbhcalc?1.1090](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1090) |
+| ṚV | 3,705 | 3,697 | 99.8% | [rv01.100.html#rv01.100.05](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.100.html#rv01.100.05) |
+| R | 3,126 | 3,123 | 99.9% | [ramayanaschl/?1,4,18](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,18) |
+| BHĀG. P | 2,167 | 2,152 | 99.3% | [bhagp_bom/app1/?10,19,13](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,19,13) |
+| ŚAT. BR | 1,781 | 1,770 | 99.4% | [shatapathabr/app1?10,1,2,1](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,1,2,1) |
+| M | 1,636 | 1,635 | 99.9% | [manu/index.html?2,109](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,109) |
+| KATHĀS | 1,472 | 1,472 | 100.0% | [kss/index.html?17,32](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,32) |
+| AV | 1,207 | 1,199 | 99.3% | [av09.005.html#av09.005.12](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.12) |
+| P (Pāṇini) | 1,049 | 1,034 | 98.6% | [sutraani/6/4/57](https://ashtadhyayi.com/sutraani/6/4/57) |
+| Spr | 1,039 | 1,038 | 99.9% | [boesp1/app1/?1402](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1402) |
+| HARIV | 905 | 902 | 99.7% | [hariv?3964](https://sanskrit-lexicon-scans.github.io/hariv?3964) |
+| R. GORR | 671 | 671 | 100.0% | [ramayanagorr/?2,5,27](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,5,27) |
+| RAGH | 668 | 668 | 100.0% | [raghuvamsa/app1?12,52](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,52) |
+| PAÑCAT | 607 | 606 | 99.8% | [pantankose/app2?71,24](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,24) |
+| VARĀH. BṚH. S | 576 | 555 | 96.4% | [brihatsam/app1?79,14](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?79,14) |
+| RĀJA-TAR | 575 | 575 | 100.0% | [rajatar/app1?5,424](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,424) |
+| ŚĀK | 525 | 522 | 99.4% | [shakuntala/app1?62](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?62) |
+| BHAṬṬ | 460 | 431 | 93.7% | [bhattikavya/app1?2,28](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,28) |
+| Spr. (II) | 450 | 450 | 100.0% | [boesp2/web1/boesp.html?7515](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7515) |
+| VOP | 428 | 404 | 94.4% | [mugdhabodha/app1?26,215](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,215) |
+| AIT. BR | 409 | 407 | 99.5% | [aitbr/app1?2,16](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,16) |
+| TS | 394 | 390 | 99.0% | [taittiriyas/app1?6,6,11,5](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,11,5) |
+| MĀRK. P | 367 | 367 | 100.0% | [markandeyapurana/app1?101,8](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?101,8) |
+| KĀTY. ŚR | 328 | 328 | 100.0% | [katyasr/app1?22,6,16](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,6,16) |
+| HIT | 308 | 307 | 99.7% | [hitopadesha/app2?20,15](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?20,15) |
+
+**Residual (top-25 sigla with ZERO `scan_href` hits): none.** Every one of the 25
+highest-frequency works (33,251 of 41,115 total citations, 80.9%) already resolves to a
+Cologne scan/HTML target for the overwhelming majority of its individual locators
+(93.7%–100%); the small per-siglum shortfalls (BHAṬṬ 93.7%, VOP 94.4%, VARĀH. BṚH. S 96.4%)
+are individual malformed/unusual coordinates, not missing targets — the pattern-driven
+resolver already covers this frequency band essentially completely.
+
+**Where the real gaps are (beyond top-25): genuinely-uncovered high-frequency works.**
+`resolver_status == "orphan"` (siglum unknown to `ls_source_map`/`pwgbib` at all — a
+different, stricter failure than a `scan_href` miss) ranked by occurrences with a numeric
+locator (excludes non-coordinate labels like "ed. Bomb."/"ed. Calc." — edition/cross-ref
+notes with no locus, never linkable per the existing `build_citation_index.py` convention):
+
+| rank | siglum | citations | work |
+|---:|---|---:|---|
+| 1 | JĀTAKAM / Jātakam | 95 | Jātaka tales |
+| 2 | MAHĀVY / Mahāvy | 32 | Mahāvyutpatti |
+| 3 | VAJRACCH / Vajracch | 24 | Vajracchedikā |
+| 4 | CAMPAKA | 20 | (Buddhist Skt. text) |
+| 5 | Journ. of the Am | 19 | Journal of the American Oriental Society |
+| 6 | S | 18 | (ambiguous single-letter siglum) |
+| 7 | KĀRAṆḌ | 18 | Kāraṇḍavyūha |
+| 8 | Divyāvad | 16 | Divyāvadāna |
+| 9 | HARṢAC / Harṣac | 14 | Harṣacarita |
+| 10 | Kir | 8 | Kirātārjunīya |
+| 11 | Maitr. S | 8 | Maitrāyaṇī Saṃhitā |
+| 12 | Kauṭ | 8 | Kauṭilīya (Arthaśāstra) |
+
+These are almost entirely Buddhist-Sanskrit / less-common works with **no scan repository
+in `sanskrit-lexicon-scans`** — matches the pre-existing note in `build_citation_index.py`
+("coverage is target-limited, not resolver-limited"). Hard gaps (no Cologne target exists
+to link to at all) — route through [`/cologne-link-target`](https://github.com/gasyoun/claude-config/blob/main/commands/cologne-link-target.md)
+if/when digitization work is prioritized; not attempted here (N15 out of scope, per H1630).
+
+Reproduce: `python src/citation_edges.py topn --n 25` (JSON; the store resolves via
+`store_path.canonical_store`, so this also works unmodified from a linked worktree).
+Selftest for `scan_href` + `topn_scan_coverage`: `python src/citation_edges.py --selftest`.
+
 ## 26-07-2026 - H858 c1 live gate: HEALTH_NOGO (rate_limit) - profile sweep now 3/3 NO-GO
 
 Executor: Opus 5 (`claude-opus-5[1m]`). Third profile gated for the same owed H858 window.

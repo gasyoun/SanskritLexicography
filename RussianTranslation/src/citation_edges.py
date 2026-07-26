@@ -14,6 +14,13 @@ Each edge is a structured record::
     "page":       str|null,      # locator after siglum (digits/punctuation run)
     "bib_ok":     bool,          # pwgbib resolved the siglum
     "resolver_status": "map" | "bib" | "orphan" | "empty"
+    "scan_href":  str|null,      # ls_resolver.generate_href('pwg', ...) when it
+                                 # resolves an actual Cologne scan/HTML target
+                                 # (H1630). Additive only -- raw <ls> is never
+                                 # touched; independent of resolver_status (a
+                                 # "map"/"bib" siglum can still lack a target
+                                 # because no scan exists, and vice versa a
+                                 # pattern can fire without a ls_source_map hit).
   }
 
 Statuses (honest floor):
@@ -26,6 +33,10 @@ Usage:
   python src/citation_edges.py --selftest
   python src/citation_edges.py extract "<ls>ṚV. 1,1,1</ls>"
   python src/citation_edges.py report [--store PATH] [--limit N]
+  python src/citation_edges.py topn [--n 25] [--store PATH] [--limit N]
+      Top-N highest-frequency sigla -> ls_resolver.generate_href scan/HTML
+      coverage (H1630); distinct from resolver_status (map/bib/orphan only
+      asks "is the siglum known", not "does a Cologne target exist for it").
 """
 from __future__ import annotations
 
@@ -43,6 +54,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import pwg_sources as ps  # source_key + resolve (pwgbib)
+import ls_resolver as lsr  # generate_href -> scan_href (H1630)
 
 LS_RE = re.compile(r"<ls\b([^>]*)>(.*?)</ls>", re.S)
 N_ATTR_RE = re.compile(r'\bn\s*=\s*"([^"]*)"')
@@ -107,6 +119,17 @@ def _locator(visible: str, siglum: str) -> str | None:
     return m.group(1).strip() if m else None
 
 
+def _scan_href(n_attr: str | None, visible: str) -> str | None:
+    """ls_resolver.generate_href('pwg', ...), swallowed to None on any failure.
+
+    A resolver miss/exception must never break edge extraction (H1630: purely
+    additive enrichment over the existing map/bib/orphan classification)."""
+    try:
+        return lsr.generate_href("pwg", n_attr, visible)
+    except Exception:
+        return None
+
+
 def extract_citation_edges(text: str | None) -> list[dict]:
     """Extract normalized citation edges from one DE (or mixed) sense body.
 
@@ -133,6 +156,7 @@ def extract_citation_edges(text: str | None) -> list[dict]:
                 "page": None,
                 "bib_ok": False,
                 "resolver_status": "empty",
+                "scan_href": None,
             })
             continue
 
@@ -163,6 +187,7 @@ def extract_citation_edges(text: str | None) -> list[dict]:
             "page": page,
             "bib_ok": bool(bib_exp),
             "resolver_status": status,
+            "scan_href": _scan_href(n_attr, visible),
         })
     return edges
 
@@ -208,6 +233,62 @@ def report_store(store_path: str, limit: int | None = None) -> dict:
     return stats
 
 
+def topn_scan_coverage(store_path: str, n: int = 25, limit: int | None = None) -> dict:
+    """Top-N highest-frequency sigla -> ls_resolver.generate_href scan/HTML
+    coverage (H1630). Distinct from ``resolver_status`` (map/bib/orphan), which
+    only asks whether the siglum is *known*, not whether a Cologne target
+    actually exists for it -- ``scan_href`` answers the latter.
+
+    Returns: {n, rows, top: [{siglum, total, scan_href_ok, scan_href_pct,
+    map, bib, orphan, empty, sample_raw_ls, sample_scan_href}], residual:
+    [siglum, ...]} -- ``residual`` is the subset of the top-N with ZERO
+    ``scan_href`` hits (highest-frequency works this pass could not link)."""
+    freq = Counter()
+    per = {}
+    n_rows = 0
+    with open(store_path, encoding="utf-8") as f:
+        for line in f:
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            n_rows += 1
+            for e in extract_citation_edges(r.get("de")):
+                siglum = e.get("siglum") or ""
+                if not siglum:
+                    continue
+                freq[siglum] += 1
+                g = per.setdefault(siglum, {
+                    "total": 0, "scan_href_ok": 0,
+                    "map": 0, "bib": 0, "orphan": 0, "empty": 0,
+                    "sample_raw_ls": None, "sample_scan_href": None,
+                })
+                g["total"] += 1
+                g[e.get("resolver_status") or "empty"] += 1
+                if e.get("scan_href"):
+                    g["scan_href_ok"] += 1
+                    if g["sample_scan_href"] is None:
+                        g["sample_scan_href"] = e["scan_href"]
+                        g["sample_raw_ls"] = e.get("raw_ls")
+            if limit and n_rows >= limit:
+                break
+
+    top_sigla = [s for s, _ in freq.most_common(n)]
+    top = []
+    residual = []
+    for s in top_sigla:
+        g = per[s]
+        pct = round(100.0 * g["scan_href_ok"] / g["total"], 1) if g["total"] else 0.0
+        row = {"siglum": s, "total": g["total"], "scan_href_ok": g["scan_href_ok"],
+               "scan_href_pct": pct, "map": g["map"], "bib": g["bib"],
+               "orphan": g["orphan"], "empty": g["empty"],
+               "sample_raw_ls": g["sample_raw_ls"],
+               "sample_scan_href": g["sample_scan_href"]}
+        top.append(row)
+        if g["scan_href_ok"] == 0:
+            residual.append(s)
+    return {"n": n, "rows": n_rows, "top": top, "residual": residual}
+
+
 def selftest() -> None:
     fails = []
 
@@ -227,6 +308,9 @@ def selftest() -> None:
     check(e["page"] == "1,1,1", "page: %r" % e)
     check(e["work_id"] is not None, "work_id: %r" % e)
     check(e["bib_ok"] is True, "bib_ok: %r" % e)
+    check(e["scan_href"] == (
+        "https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.001.html#rv01.001.01"
+    ), "ṚV scan_href: %r" % e)
 
     # n= attribute inheritance
     de = '<ls n="MBH.">3,50</ls>'
@@ -235,6 +319,8 @@ def selftest() -> None:
     check(e["siglum"] in ("MBH", "MBH."), "siglum from n: %r" % e)
     check(e["page"] == "3,50", "page from visible: %r" % e)
     check(e["resolver_status"] == "map", "MBH map: %r" % e)
+    check(e["scan_href"] == "https://sanskrit-lexicon-scans.github.io/mbhcalc?3.50",
+          "MBH scan_href: %r" % e)
 
     # raw DE string is NOT rewritten
     raw = "x <ls>ṚV. 1,1</ls> y"
@@ -249,6 +335,44 @@ def selftest() -> None:
     e = extract_citation_edges("<ls>ZZZNOTAWORK. 1</ls>")[0]
     check(e["resolver_status"] == "orphan", "orphan: %r" % e)
     check(e["renou"] is None and e["work_id"] is None, "orphan fields: %r" % e)
+    check(e["scan_href"] is None, "orphan scan_href: %r" % e)
+
+    # empty <ls> stamps scan_href=None too (schema stays uniform)
+    e = extract_citation_edges("<ls></ls>")
+    if e:
+        check(e[0]["scan_href"] is None, "empty ls scan_href: %r" % e[0])
+
+    # scan_href can miss even when resolver_status is "map"/"bib" (siglum known,
+    # no Cologne target pattern for it) -- the two axes are independent.
+    e = extract_citation_edges("<ls>AK. 1</ls>")[0]
+    check(e["resolver_status"] in ("map", "bib"), "AK known siglum: %r" % e)
+    check(e["scan_href"] is None, "AK no scan pattern (1-param): %r" % e)
+
+    # topn_scan_coverage over a tiny fixture store
+    import tempfile
+    fixture_rows = [
+        {"de": "x <ls>ṚV. 1,1,1</ls> y"},
+        {"de": "x <ls>ṚV. 2,2,2</ls> y"},
+        {"de": "x <ls>ZZZNOTAWORK. 1</ls> y"},
+    ]
+    with tempfile.NamedTemporaryFile(
+            mode="w", suffix=".jsonl", delete=False, encoding="utf-8") as f:
+        for r in fixture_rows:
+            f.write(json.dumps(r) + "\n")
+        fixture_path = f.name
+    try:
+        cov = topn_scan_coverage(fixture_path, n=5)
+        check(cov["rows"] == 3, "topn rows: %r" % cov)
+        top_by_siglum = {r["siglum"]: r for r in cov["top"]}
+        check(top_by_siglum["ṚV"]["total"] == 2, "topn ṚV total: %r" % cov)
+        check(top_by_siglum["ṚV"]["scan_href_ok"] == 2, "topn ṚV scan_href_ok: %r" % cov)
+        check(top_by_siglum["ṚV"]["scan_href_pct"] == 100.0, "topn ṚV pct: %r" % cov)
+        check(top_by_siglum["ZZZNOTAWORK"]["scan_href_ok"] == 0,
+              "topn orphan scan_href_ok: %r" % cov)
+        check("ZZZNOTAWORK" in cov["residual"], "topn residual: %r" % cov)
+        check("ṚV" not in cov["residual"], "topn residual excludes resolved: %r" % cov)
+    finally:
+        os.unlink(fixture_path)
 
     # coverage helper
     edges = extract_citation_edges(
@@ -305,6 +429,31 @@ def main() -> None:
             return
         stats = report_store(store, limit=limit)
         print(json.dumps(stats, ensure_ascii=False, indent=2))
+        return
+    if argv[0] == "topn":
+        from store_path import canonical_store
+        store = canonical_store(os.path.join(HERE, "pwg_ru_translated.jsonl"))
+        n = 25
+        limit = None
+        i = 1
+        while i < len(argv):
+            if argv[i] == "--store" and i + 1 < len(argv):
+                store = argv[i + 1]
+                i += 2
+            elif argv[i] == "--n" and i + 1 < len(argv):
+                n = int(argv[i + 1])
+                i += 2
+            elif argv[i] == "--limit" and i + 1 < len(argv):
+                limit = int(argv[i + 1])
+                i += 2
+            else:
+                i += 1
+        if not os.path.exists(store):
+            print("store not found: %s (pass --store or run on a machine with data)"
+                  % store, file=sys.stderr)
+            sys.exit(1)
+        cov = topn_scan_coverage(store, n=n, limit=limit)
+        print(json.dumps(cov, ensure_ascii=False, indent=2))
         return
     print(__doc__)
     sys.exit(2)
