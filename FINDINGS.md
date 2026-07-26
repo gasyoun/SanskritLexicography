@@ -104,7 +104,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§453. PWG's sense-closing glyph "〉" nests FOUR enumeration tiers, not two](#453-pwgs-sense-closing-glyph--nests-four-enumeration-tiers-not-two--greek-letters-and-roman-numeral-markers-are-unrecognised-by-the-ru-pipelines-splitter) — Greek letters (1,444 occurrences) and roman-numeral markers (30) unrecognised by `microstructure.py`'s `MARK` regex, the same bug class as §447 one tier deeper.
 - 🟠 [§454. The pwg_ru RU store's `h` field has inconsistent semantics — not a reliable homograph-number join key](#454-the-pwg_ru-ru-stores-h-field-has-inconsistent-semantics--not-a-reliable-homograph-number-join-key) — holds a digit, an empty string, or a root-word string within the same file; 93.78% of store rows (10,881/11,603) touch a headword whose corrected `〉` segmentation changed sense count.
 - 🟡 [§455. PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline](#455-pwg-ls-citation-resolution-is-already-at-98-far-above-the-previously-cited-724-baseline) — `pwgbib.txt` grew to 4,390 entries since the 72.4% measurement; re-measure with `pwg_sources.py coverage` before citing a stale ceiling.
-- 🔴 [§465. PWG sense × DCS attestation collapses from ~40% at lemma level to 0.67% at sense level — and three independent constrictions cause it](#465-pwg-sense--dcs-attestation-collapses-from-40-at-lemma-level-to-067-at-sense-level--and-three-independent-constrictions-cause-it) — measured over ALL 109,050 PWG headwords: 60.2% absent from DCS entirely, 88.8% of DCS token mass untagged, and only 52/7,746 leaf senses locus-grounded. Do not promise per-sense corpus frequency for PWG; grounding outside the H1455 500 is *unknown*, never 0%.
+- 🔴 [§465. PWG sense × DCS attestation collapses from ~40% at lemma level to 0.67% at sense level — and three independent constrictions cause it](#465-pwg-sense--dcs-attestation-collapses-from-40-at-lemma-level-to-067-at-sense-level--and-three-independent-constrictions-cause-it) — measured over ALL 109,050 PWG headwords: 60.2% absent from DCS entirely, 88.8% of DCS token mass untagged. **The 0.67% sense-level figure is superseded: H1670 found it was a matcher-reach artefact (the locus tier saw 0.299% of available passages, and a dead `"RV"` map key hid the Ṛgveda) and raised it to 12.25% with no criterion changed.** The two data-availability ceilings stand. Grounding outside the aligner's reach is *unknown*, never 0%.
 
 **Etymology & derivation**
 
@@ -3527,6 +3527,37 @@ deliberately **not** reported as zero outside the H1455 aligner's 500-headword r
 `R0_grounding_not_computed`) — a 0% there would be the absence of a job, not a measurement.
 Full comparison:
 [`PWG_SENSE_DCS_FRAME_COMPARISON.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_FRAME_COMPARISON.md).
+
+**⚠️ Update 26-07-2026 (H1670) — the 0.67% was a MATCHER-REACH artefact, not a data limit.
+Corrected figure: 7,372 grounded leaf senses, 12.25%.** Two independent limits, neither of
+them data availability, had capped the number:
+
+- **Passage depth.** The aligner compared each sense's `<ls>` against only the **3 passages
+  per DCS lemma** that `dcs_kwic()` sampled *for the viewer* — **3,435 of 1,148,630
+  available passages, 0.299%**. The exact-verse test was measuring the sample, not the corpus.
+- **A dead map key.** `PWG_TO_DCS_TEXT` keyed the Ṛgveda as ASCII `"RV"` while PWG's abbrev
+  is `ṚV`, so the corpus's most canonically-numbered text — **50,972 `<ls>` citations, 6.89%
+  of the dictionary's total, second only to the Mahābhārata** — never matched anything.
+
+With the **same** `verse_equal()` predicate, the same tiers and no heuristic added, running
+the aligner at full passage depth over a 32× wider frame (16,208 groups, identical selection
+query) gives **52 → 7,372 grounded leaf senses (0.67% → 12.25%)**, of which 5,647 are
+exact-verse. Dictionary-wide, `R0_grounding_not_computed` fell **18,438 → 10,515 (−43.0%)**
+and `R4_grounded_alignment` rose **50 → 5,058**. Attribution per lever, plus the three
+precision defects the wider scan exposed and fixed (named books collapsing into one numbering
+space; chapter-level matches mis-reported as exact-verse; the `ṚV` key):
+[`PWG_SENSE_DCS_GROUNDING_LEVERS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_GROUNDING_LEVERS.md).
+
+**What did NOT move — and this is the durable half of the finding.** `R1_lemma_absent_from_dcs`
+fell by 52 groups and `R2_no_wordsem_tag` by 754, out of 109,050. Those two are genuine
+data-availability constrictions and no amount of matcher reach touches them; the ~40%
+lemma-level rate and the ~11% `m_wordsem` mass ceiling below stand exactly as measured. The
+lesson generalises: **before concluding "the data cannot support this", check what fraction
+of the data the measurement actually looked at.** Ceiling 2 below is also partly corrected —
+it names Kathāsaritsāgara as a text DCS lacks, but DCS carries it (111,298 tokens); the
+obstacle is its numbering. The remaining reach work (443 cited texts DCS carries but the map
+never pointed at, 13.9% of `<ls>` mass) is
+[H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md).
 
 The two ceilings:
 

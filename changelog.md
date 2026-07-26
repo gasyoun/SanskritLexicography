@@ -24,6 +24,36 @@ not an error.
   now carries the correction and the second-order lesson (an audit that reads only the call
   line under-rates severity — it lives in what consumes the return value).
 
+- **H1670 — PWG-sense × DCS grounding: 0.67% → 12.25%, and the 0.67% was our own bug**
+  ([H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md),
+  Opus 5 `claude-opus-5[1m]`). H1632 concluded that sense-level grounding was capped by data
+  availability and could not be raised by scaling. It could: the aligner's `locus` tier was
+  comparing each sense's `<ls>` against only the 3 passages per lemma sampled for the viewer
+  (**0.299%** of those available), and a dead `"RV"` map key had hidden the Ṛgveda —
+  6.89% of PWG's citation mass. With the **same** predicate and tiers, run at full passage
+  depth over a 32× wider frame (16,208 groups, identical selection query), grounded PWG leaf
+  senses go **52 → 7,372** (5,647 of them exact-verse). Dictionary-wide,
+  `R0_grounding_not_computed` falls **18,438 → 10,515 (−43.0%)**. Per-lever attribution:
+  [`PWG_SENSE_DCS_GROUNDING_LEVERS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_GROUNDING_LEVERS.md).
+  **The data-availability half of §465 stands** — `R1_lemma_absent_from_dcs` moved by 52
+  groups and `R2_no_wordsem_tag` by 754 out of 109,050; the ~40% lemma-level rate and the
+  ~11% `m_wordsem` ceiling are unchanged. FINDINGS §465 updated;
+  [`PWG_SENSE_DCS_FRAME_COMPARISON.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_FRAME_COMPARISON.md)
+  carries the correction (it had also named Kathāsaritsāgara as a text DCS lacks — DCS
+  carries it, 111,298 tokens).
+
+### Added
+- **H1670 — measurement harness + crosswalk backlog.** `pwg_sense_dcs_attestation_pilot.py`
+  gains `--frame-mode file` / `--frame` / `--concordance`, and reports exact-verse grounding
+  separately from adhyāya/hymn corroboration (`locus-chapter`), so neither can be quoted
+  without the other; of H1632's 52 grounded senses only **5** were exact-verse.
+  New [`build_ls_text_crosswalk_backlog.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/build_ls_text_crosswalk_backlog.py)
+  classifies all 739,503 `<ls>` citations: 36.4% mapped, **13.9% point at texts DCS carries
+  but the aligner never mapped** (443 abbrevs — the queue for
+  [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md)),
+  49.7% at texts DCS genuinely lacks. Untagged corpora (wisdomlib) are reported as a
+  lemma-level lever only and were deliberately not consumed here.
+
 ## [1.76.0] — 2026-07-26
 
 ### Added

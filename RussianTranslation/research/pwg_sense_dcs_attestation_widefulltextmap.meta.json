@@ -2,8 +2,8 @@
   "handoff": "H1632",
   "model": "Opus 5 (claude-opus-5[1m])",
   "generator": "research/pwg_sense_dcs_attestation_pilot.py",
-  "frame": "the frozen H1455/H1456 500-headword pilot",
-  "frame_mode": "kosha",
+  "frame": "the H1670 wide frame (16208 groups)",
+  "frame_mode": "file",
   "frame_seed": null,
   "frame_n_requested": null,
   "join_key": "SLP1 <-> SLP1 (both sides already ASCII SLP1; form_key() is identity here, no NFD/strip-Mn normalisation applied)",
@@ -22,12 +22,12 @@
     {
       "name": "kosha/data/concordance/sense_pilot_headwords.tsv",
       "role": "frozen 500-headword pilot frame (H1455)",
-      "sha256": "08cac0cf4a3f1cb63b055443d47c47d61acdd10d5e072719b8a5cb2a015f1229"
+      "sha256": "c0d35b798c722308c3e124383f112c5b9f48c107b017205eff0286a137be925b"
     },
     {
-      "name": "RussianTranslation/research/pwg_sense_loci.frame500.tsv",
+      "name": "RussianTranslation/research/pwg_sense_loci.all.tsv",
       "role": "PWG leaf senses + `<ls>` loci for THIS frame (export_frame_sense_loci.py over microstructure.py, H1456 parser)",
-      "sha256": "b3a6874928fd69d279d5a85f6db79ed9aa4d16286da796b1c8ec7f36641fe934"
+      "sha256": "82e93521d23ca7692896daadee843a8dded5a4c69ab92ea440b5ebc69c41b2e8"
     },
     {
       "name": "kosha/data/frequency/lemma_frequency.tsv",
@@ -42,62 +42,64 @@
     {
       "name": "kosha/data/concordance/sense_corpus_concordance.tsv",
       "role": "PWG-sense ↔ DCS attestation links (H1455)",
-      "sha256": "f71ab304b4a3a0d273de1ca8223b4c3ab24d50371a9a99c38210074cc5147ea2"
+      "sha256": "5483a24ffe3fe9ef5d26657a2098732646f0eea4722bdd6918d8d9aab4fcd8a1"
     }
   ],
   "summary": {
-    "n_pilot_groups": 500,
-    "n_lemma_attested": 500,
-    "n_wordsem_tagged": 480,
-    "n_groups_grounded": 50,
-    "mass_dcs_lemma_tokens": 943877,
-    "mass_dcs_sensetagged_tokens": 102085,
-    "sensetagged_mass_share": 0.10815498205804358,
-    "mass_under_grounded_upper_bound": 39520,
-    "attributable_mass_share_upper_bound": 0.041869862280784466,
-    "pwg_senses_total": 7746,
-    "pwg_senses_with_ls": 7453,
-    "dcs_wn_senses_total": 5201,
-    "n_groups_grounding_computed": 500,
+    "n_pilot_groups": 16208,
+    "n_lemma_attested": 12726,
+    "n_wordsem_tagged": 8403,
+    "n_groups_grounded": 6663,
+    "mass_dcs_lemma_tokens": 3856643,
+    "mass_dcs_sensetagged_tokens": 440962,
+    "sensetagged_mass_share": 0.11433829887806572,
+    "mass_under_grounded_upper_bound": 3422494,
+    "attributable_mass_share_upper_bound": 0.8874282633886518,
+    "pwg_senses_total": 60190,
+    "pwg_senses_with_ls": 57980,
+    "dcs_wn_senses_total": 30393,
+    "n_groups_grounding_computed": 16208,
     "n_groups_grounding_unknown": 0,
-    "pwg_senses_grounded": 52,
-    "pwg_senses_grounded_verse": 5,
-    "pwg_senses_total_known": 7746,
-    "dcs_wn_senses_total_known": 5201,
-    "pwg_sense_join_rate": 0.006713142266976504,
-    "pwg_sense_join_rate_verse": 0.0006454944487477407,
-    "dcs_sense_join_rate": 0.009998077292828303,
-    "median_pwg_senses_tagged_lemmas": 14.0,
-    "median_dcs_senses_tagged_lemmas": 8.0,
-    "spearman_pwg_vs_dcs_sense_count": 0.2354209943027191,
+    "pwg_senses_grounded": 7372,
+    "pwg_senses_grounded_verse": 5647,
+    "pwg_senses_total_known": 60190,
+    "dcs_wn_senses_total_known": 30393,
+    "pwg_sense_join_rate": 0.12247881707924904,
+    "pwg_sense_join_rate_verse": 0.09381957135736833,
+    "dcs_sense_join_rate": 0.24255585167637284,
+    "median_pwg_senses_tagged_lemmas": 3.0,
+    "median_dcs_senses_tagged_lemmas": 2.0,
+    "spearman_pwg_vs_dcs_sense_count": 0.43628783534118815,
     "residual_classes": {
-      "R3_tagged_but_unaligned": 434,
-      "R4_grounded_alignment": 50,
-      "R2_no_wordsem_tag": 16
+      "R3_tagged_but_unaligned": 3051,
+      "R4_grounded_alignment": 6663,
+      "R1_lemma_absent_from_dcs": 3424,
+      "R2_no_wordsem_tag": 3070
     },
     "concordance_tier_rows": {
-      "ls": 85472,
-      "locus-mbh": 52,
-      "overlap": 1561,
-      "locus": 7
+      "ls": 473198,
+      "locus-mbh": 3168,
+      "locus": 12280,
+      "overlap": 7825,
+      "locus-chapter": 162
     }
   },
   "disclosures": {
-    "frame_mode": "kosha",
-    "frame_label": "the frozen H1455/H1456 500-headword pilot",
-    "frame_note": "Selected DCS-attested by construction — the biased frame, kept because it is the only one the H1455 aligner ever ran over, so it is the only frame on which sense-level grounding can be measured at all.",
-    "frame_note_long": "The frame is the **frozen H1455/H1456 500-headword pilot** — reused verbatim so this join is comparable with the sense-concordance build, not a second parallel frame. Every input is a committed derived table; no number below is recomputed from the 921 MB DCS sqlite in this pass.",
-    "repro_export": "python export_frame_sense_loci.py --kosha ../../../kosha",
-    "repro_join": "python pwg_sense_dcs_attestation_pilot.py --kosha ../../../kosha",
-    "dropped_parent_loci": 12953,
-    "grounded_without_wordsem": 4,
+    "frame_mode": "file",
+    "frame_label": "the H1670 wide frame (16208 groups)",
+    "frame_note": "The SAME selection query as the H1455 500 (≥2 leaf senses, ≥2 of them carrying an `<ls>`, DCS-attested ranked first) run to exhaustion instead of truncated at 500 — so a grounding delta measured against the 500 is attributable to frame WIDTH, not to a changed selection rule.",
+    "frame_note_long": "The frame is the **H1670 wide frame** — `select_sense_pilot.py` with the identical selection query and `--size` raised past exhaustion, yielding 16208 (slp1, hom) groups (32.4× the frozen 500). The frozen 500 frame file is untouched; this one is written beside it.",
+    "repro_export": "python export_frame_sense_loci.py --all",
+    "repro_join": "python pwg_sense_dcs_attestation_pilot.py --frame-mode file --frame frame_wide.tsv --concordance sense_corpus_concordance.tsv --tag widefulltextmap",
+    "dropped_parent_loci": 27727,
+    "grounded_without_wordsem": 1310,
     "leaf_mismatch": {
-      "n_match": 407,
-      "n_mismatch": 93,
-      "frame_total": 7641,
-      "mine_total": 7746,
+      "n_match": 16008,
+      "n_mismatch": 200,
+      "frame_total": 59976,
+      "mine_total": 60190,
       "direction": 1,
-      "pct": 0.013741656851197487,
+      "pct": 0.003568093904228358,
       "examples": [
         [
           [
@@ -180,7 +182,6 @@
           23
         ]
       ]
-    },
-    "frame_selection_bias": "every frame row has dcs_attested=1 — the frame was selected DCS-attested, so lemma-level coverage is true by construction and all rates are upper bounds"
+    }
   }
 }
