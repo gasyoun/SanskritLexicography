@@ -10,6 +10,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1666: Wave-2 coverage monitor + monthly cloud routine (26-07-2026)
+
+- [`research/WAVE2_COVERAGE_MONITOR.md`](research/WAVE2_COVERAGE_MONITOR.md) tracks
+  `verb_worklist.py`'s promoted/749-DCS-root % against
+  [ROADMAP_ACL_LESSONS_2026.md](research/ROADMAP_ACL_LESSONS_2026.md)'s Wave-2
+  "~50% coverage" trigger — currently 48/749 ≈ 6.4%, stalled since 04-07-2026. A
+  monthly `claude.ai` cloud routine (RemoteTrigger) recomputes and appends a row,
+  and flags a GTD `@DECIDE` in Uprava once coverage crosses 50%. Registered in
+  `research/README.md`'s Living monitors table.
+
 ## [1.73.0] - 2026-07-26
 
 ### Added — H1656 Rāmāyaṇa recension concordances (Gorresio↔Southern + Southern↔Critical) (26-07-2026)
