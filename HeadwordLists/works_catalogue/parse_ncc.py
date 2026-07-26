@@ -27,6 +27,7 @@ import sys
 import os
 import re
 import json
+import unicodedata
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -79,7 +80,18 @@ def normalize_headword_for_matching(text):
 
 
 def match_key_for(iast):
-    slp1 = su.to_slp1(normalize_headword_for_matching(iast))
+    """NCC headwords are capitalised; `su.to_slp1` is case-preserving and has no
+    uppercase IAST keys, so an initial capital falls through its `.get(ch, ch)`
+    default UNCHANGED into the SLP1 string -- where `slp1_simplify` then reads it
+    as a *different phoneme* (`K`=kh, `R`=ṇ, `Y`=ñ, `E`=ai, `B`=bh), and
+    non-ASCII capitals like `Ś` are not transliterated at all. That silently
+    corrupted 60.0% of the shipped keys (integrity issue #779, H1671): Rāmāyaṇa
+    keyed as `namayana`, Yogasūtra as `nogasutra`. Case-fold FIRST -- Sanskrit
+    has no case distinction, so lowercasing loses nothing; NFC-normalize too, so
+    a decomposed `a`+U+0304 reaches `to_slp1` as the precomposed `ā` its table
+    is keyed on."""
+    folded = unicodedata.normalize('NFC', normalize_headword_for_matching(iast)).lower()
+    slp1 = su.to_slp1(folded)
     return su.slp1_simplify(slp1)
 
 

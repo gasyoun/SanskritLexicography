@@ -1,18 +1,18 @@
 # ACC x NCC P2 -- adjudication counts
 
-Sheet: `sanskritlexicography-acc_ncc_p2_c_d_review.html` · decisions file: `p2_gated_decisions.json` · decided=49019 · exported=H1657 gate (bar=unset)
+Sheet: `sanskritlexicography-acc_ncc_p2_c_d_review.html` · decisions file: `p2_gated_decisions.json` · decided=10614 · exported=H1657 gate (bar=unset)
 
 | Tier | Rows | Approved | Rejected | Deferred | Unvoted |
 |---|---:|---:|---:|---:|---:|
-| A (auto) | 107815 | 107815 | 0 | 0 | 0 |
-| B (auto) | 12426 | 12426 | 0 | 0 | 0 |
-| C | 5353 | 0 | 0 | 5353 | 0 |
-| D | 43666 | 0 | 0 | 43666 | 0 |
+| A (auto) | 241970 | 241970 | 0 | 0 | 0 |
+| B (auto) | 7832 | 7832 | 0 | 0 | 0 |
+| C | 9039 | 0 | 0 | 9039 | 0 |
+| D | 1575 | 0 | 0 | 1575 | 0 |
 
-**Confirmed crosswalk rows (works_crosswalk.tsv):** 120241 (107815 Tier A + 12426 Tier B auto + 0 Tier C + 0 Tier D adjudicated).
+**Confirmed crosswalk rows (works_crosswalk.tsv):** 249802 (241970 Tier A + 7832 Tier B auto + 0 Tier C + 0 Tier D adjudicated).
 
 **Confirmed non-matches logged (works_crosswalk_rejected.tsv):** 0.
 
-**Agent-proposed, NOT promoted (works_crosswalk_agent_proposed.tsv):** 49019 -- rows carrying an agent verdict whose stratum has not cleared the measured precision bar. They are not crosswalk rows and not confirmed non-matches.
+**Agent-proposed, NOT promoted (works_crosswalk_agent_proposed.tsv):** 10614 -- rows carrying an agent verdict whose stratum has not cleared the measured precision bar. They are not crosswalk rows and not confirmed non-matches.
 
-Coverage is still full (MG ruling 09-07-2026, unreversed): every Tier C/D row in crosswalk_candidates.jsonl.gz carries a verdict. What MG's ruling of 26-07-2026 (B2, H1657) changed is who casts it -- `adjudicate_p2.py` adjudicates all 49,019 with cited evidence, and a human votes a 686-card stratified sample to measure that adjudicator (`build_p2_spotcheck_sheet.py` -> `p2_precision_gate.py`). Promotion is gated per stratum on a Wilson 95% lower bound, so an unmeasured or weak stratum shows up in the agent-proposed count above rather than in the crosswalk.
+Coverage is still full (MG ruling 09-07-2026, unreversed): every Tier C/D row in crosswalk_candidates.jsonl.gz carries a verdict. What MG's ruling of 26-07-2026 (B2, H1657) changed is who casts it -- `adjudicate_p2.py` adjudicates all 10,614 with cited evidence, and a human votes a 698-card stratified sample to measure that adjudicator (`build_p2_spotcheck_sheet.py` -> `p2_precision_gate.py`). Promotion is gated per stratum on a Wilson 95% lower bound, so an unmeasured or weak stratum shows up in the agent-proposed count above rather than in the crosswalk.

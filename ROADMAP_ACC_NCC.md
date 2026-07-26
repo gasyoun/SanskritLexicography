@@ -1,6 +1,6 @@
 # ROADMAP_ACC_NCC — Catalogue-of-Works asset (Aufrecht × New Catalogus Catalogorum)
 
-_Created: 03-07-2026 · Last updated: 09-07-2026_
+_Created: 03-07-2026 · Last updated: 26-07-2026_
 
 Goal: build a **catalogue-of-works data asset** by joining **ACC** (Aufrecht's
 *Catalogus Catalogorum*, Cologne) as the spine with **NCC** (*New Catalogus
@@ -85,15 +85,22 @@ consumption pattern.
 
 ### P1 — Full-fuzzy matching engine (tiered, scored) ✅ DONE ([PR #205](https://github.com/gasyoun/SanskritLexicography/pull/205), 06-07-2026)
 [`build_works_crosswalk.py`](HeadwordLists/works_catalogue/build_works_crosswalk.py) emits
-`crosswalk_candidates.jsonl.gz` (169,260 rows), each tier + score — see
-[`P1_COUNTS.md`](HeadwordLists/works_catalogue/P1_COUNTS.md) for the measured breakdown:
+`crosswalk_candidates.jsonl.gz` (**260,416 rows**), each tier + score — see
+[`P1_COUNTS.md`](HeadwordLists/works_catalogue/P1_COUNTS.md) for the measured breakdown.
+Figures below are the **26-07-2026 re-run on repaired NCC keys** (H1671); the pre-repair
+column is kept because every earlier document in this repo quotes it:
 
-| Tier | Rule | Disposition | Measured (distinct keys) |
-|---|---|---|---:|
-| A | exact simplified-key | auto-accept | 8,397 ACC / 8,397 NCC (matches P0) |
-| B | nasal-fold (`m`/`n`) + geminate-fold, beyond A | auto-accept | +2,041 ACC / +2,047 NCC |
-| C | prefix containment (min 5-char key) | **adjudicate** | +1,254 ACC / +2,904 NCC |
-| D | length-scaled edit-distance (rapidfuzz), blocked by first-letter+length | **adjudicate** | +7,552 ACC / +7,745 NCC |
+| Tier | Rule | Disposition | Measured (distinct keys) | pre-repair |
+|---|---|---|---:|---:|
+| A | exact simplified-key | auto-accept | **22,775** ACC / 22,775 NCC (matches P0) | 8,397 / 8,397 |
+| B | nasal-fold (`m`/`n`) + geminate-fold, beyond A | auto-accept | +1,335 ACC / +1,336 NCC | +2,041 / +2,047 |
+| C | prefix containment (min 5-char key) | **adjudicate** | +2,717 ACC / +3,729 NCC | +1,254 / +2,904 |
+| D | length-scaled edit-distance (rapidfuzz), blocked by first-letter+length | **adjudicate** | +872 ACC / +972 NCC | +7,552 / +7,745 |
+
+Tier D shrank by 42,091 rows because it was never mostly a fuzzy tier: it was where the
+corrupted keys landed, one edit away from their own correct spelling. Full row-for-row
+migration, including every one of the 3,711 candidate rows the repair removed:
+[`NCC_KEY_REPAIR_MIGRATION_2026.md`](HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md).
 
 - **Deliverable:** `crosswalk_candidates.jsonl.gz` with per-tier counts (measured, logged — no silent caps).
 
@@ -120,13 +127,25 @@ consumption pattern.
   publishes Wilson 95% lower bounds per stratum and gates promotion. **Nothing is promoted
   yet** — all 49,019 sit in `works_crosswalk_agent_proposed.tsv` until a human rules the bar.
   Full report: [`P2_AGENT_ADJUDICATION_REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_AGENT_ADJUDICATION_REPORT.md).
-- ⚠️ **P0/P1 are running on corrupted NCC keys** — 60.0% of `ncc.jsonl` match-keys are wrong
-  (uppercase IAST initials read as different SLP1 letters), which makes 93.3% of Tier D an
-  artefact and hides **14,379 exact matches that were never proposed as candidates** (true
-  exact overlap is 22,775 keys, not 8,397). Measured in H1657, filed as
-  [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779), repair
-  queued as [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md).
-  **Every count in the P1 table above is understated because of it.**
+- ✅ **The corrupted-NCC-key defect is FIXED (26-07-2026, H1671).** 60.0% of `ncc.jsonl`
+  match-keys were wrong (uppercase IAST initials read as different SLP1 letters), which made
+  93.3% of Tier D an artefact and hid **14,379 exact matches that were never proposed as
+  candidates**. Measured in H1657, filed as
+  [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779), repaired
+  and re-run end-to-end by
+  [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
+  (`parse_ncc.match_key_for` now case-folds + NFC-normalizes before transliteration, pinned by
+  [`test_parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/test_parse_ncc.py)).
+  The P0/P1/P2 tables above are the post-repair numbers; the before/after is
+  [`NCC_KEY_REPAIR_MIGRATION_2026.md`](HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md).
+- **Status (26-07-2026, H1671, Opus 5 1M `claude-opus-5[1m]`): re-adjudicated on the repaired
+  candidate set — 10,614 Tier C/D rows (was 49,019), 920 approve / 9,694 reject.** The two
+  rules that carried the old run (`exact_after_key_repair` 40,757, `fold_after_key_repair`
+  615) now fire **zero** times: those rows are Tier A upstream. The 686-card spot-check sample
+  and any vote against it are **void** (drawn from a population that no longer exists; it was
+  never voted, so nothing human was lost) — replaced by a blind **698-card** sample over 17
+  strata. Still nothing promoted: all 10,614 sit in `works_crosswalk_agent_proposed.tsv` until
+  a human rules the bar.
 
 ### P3 — kosha consumption (product repo)
 - kosha adds a `works` table (canonical headword deva/IAST/SLP1; ACC body + sigla + `pc_scan`; NCC body + mss-witnesses; `match_tier`; `ncc_coverage`; per-source `license`), loading this repo's `works_crosswalk.tsv` — mirrors the union-spine load in [kosha `build_db.py`](https://github.com/gasyoun/kosha/blob/main/scripts/build_db.py).

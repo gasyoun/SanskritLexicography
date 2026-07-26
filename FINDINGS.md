@@ -58,7 +58,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§462. On Windows, repeated repository discovery can dominate a Python pipeline](#462-on-windows-repeated-repository-discovery-can-dominate-a-python-pipeline-cache-checkout-identity-not-mutable-path-overrides) — 88 Git subprocesses cost 4.50 s of 5.29 s; cache the immutable checkout identity, not mutable path overrides.
 - 🔴 [§468. PWG's plain `R.` is a THREE-edition composite](#468-pwgs-plain-r-is-a-three-edition-composite--books-36-carry-gorresio-bengal-recension-numbering-so-keying-them-into-a-southern-recension-text-silently-returns-the-wrong-verse) — books 1–2 cite Schlegel, books 3–6 Gorresio (Bengal recension), book 7 Bombay (pwgbib 1.247; store sarga maxima 79/63/94 = Gorresio's counts). `citation_tm` had returned the wrong verse's RU silently for ~900 in-range R. 3/5 refs; books 3–6 now `unmapped_locus_scheme` until the Gorresio↔Southern concordance validates (H1656).
 - 🔴 [§467. corpus_lexicon.jsonl gets its first intrinsic BLI quality number](#467-corpus_lexiconjsonl-gets-its-first-intrinsic-bli-quality-number--and-the-obvious-gold-source-the-corpuss-own-glossary-is-circular-so-the-fix-is-an-independent-dictionary-ranked-by-an-independent-frequency-source) — P@1 0.402 / MRR 0.539 / coverage 99.5% against an independent Kochergina+DCS gold set; the corpus's own 3-layer glossary was rejected as gold because it is built FROM this same file.
-- 🔴 [§469. `to_slp1` is case-preserving, so a capitalised IAST headword transliterates into a DIFFERENT SLP1 letter](#469-to_slp1-is-case-preserving-so-a-capitalised-iast-headword-transliterates-into-a-different-slp1-letter--60-of-ncc-match-keys-are-wrong-and-14379-exact-accncc-matches-were-never-proposed) — 60% of NCC match-keys are wrong, 93.3% of Tier D is an artefact, and 14,379 true exact matches were never proposed because the corrupted key changed the blocking letter.
+- 🔴 [§469. `to_slp1` is case-preserving, so a capitalised IAST headword transliterates into a DIFFERENT SLP1 letter](#469-to_slp1-is-case-preserving-so-a-capitalised-iast-headword-transliterates-into-a-different-slp1-letter--60-of-ncc-match-keys-are-wrong-and-14379-exact-accncc-matches-were-never-proposed) — 60% of NCC match-keys were wrong, 93.3% of Tier D was an artefact, and 14,379 true exact matches were never proposed because the corrupted key changed the blocking letter. ✅ fixed + re-run 26-07-2026 (H1671), incl. the org-wide caller audit: the library and csl-atlas already defend silently, csl-apidev does not.
 - 🔴 [§463. The pwg_ru store's `de` field is NOT a faithful copy of the csl-orig German](#463-the-pwg_ru-stores-de-field-is-not-a-faithful-copy-of-the-csl-orig-german--russian-connectives-have-been-substituted-into-the-source-of-truth-string) — 11 rows have `и`/`для`/`в`/`С` substituted for German connectives and do not round-trip against csl-orig; `sense_tag` (110 rows) and `h` carry Russian prose, so `h` is unusable as a homonym key.
 - 🔴 [§464. The H1624 G1 `gloss_lang` classifier mislabels German as Latin/English about half the time it fires](#464-the-h1624-g1-gloss_lang-classifier-mislabels-german-as-latinenglish-about-half-the-time-it-fires--and-those-spans-are-then-withheld-from-translation) — 122 of 229 non-DE spans are German (77% FP on `english_content`), and `la`/`en` are marked `translate: False`, so those glosses never reach the model.
 - 🟠 [§62. Varga distribution is almost epoch-stable (Cramér's V = 0.037)](#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) — p-values carry no signal at DCS scale; the 2014 dissertation prose read high p as «growth»; shares agree with the p-table against the prose.
@@ -3745,11 +3745,46 @@ Every `Rāmāyaṇa`, `Yoga-`, `Ekā-` and `Ś-` initial NCC work is currently i
 crosswalk. **Generalisable lesson: a normalisation bug upstream of a blocking key does not
 degrade a fuzzy match, it deletes the candidate** — and the deletion is invisible downstream,
 because a pair that was never proposed looks exactly like a pair that does not exist.
-Any consumer of `to_slp1` that passes titles, headwords, or proper nouns (all of which arrive
-capitalised) has the same defect; that org-wide caller audit is **not** done yet ([H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md) deliverable 2).
+**✅ Fixed and re-run 26-07-2026 ([H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)).**
+`parse_ncc.match_key_for` now case-folds + NFC-normalizes before transliteration, pinned by
+[`test_parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/test_parse_ncc.py).
+P0→P1→P2 re-ran on the repaired keys and every prediction in the table above held to the row:
+exact overlap 8,397 → **22,775**, Tier D 43,666 → **1,575** rows of which 40,757 migrated
+straight to Tier A, the adjudication set fell 49,019 → 10,614, and the
+`exact_after_key_repair` rule now fires **zero** times. All 3,711 candidate rows the repair
+*removed* were classified and none was a true link — 1,382 were collisions the corruption
+manufactured (ACC `Nāmamuktāvalī` had been matching NCC `Rāmamuktāvali`), the other 2,329 were
+superseded by P1's tier partition. Before/after:
+[`NCC_KEY_REPAIR_MIGRATION_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md).
 
-> **Source:** [H1657](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1657-Opus_SanskritLexicography_acc-ncc-p2-agent-adjudication-49k_26.07.26.md),
+**Org-wide caller audit (H1671 deliverable 2, done 26-07-2026).** Every `to_slp1` call site in
+the org was checked. The trap is real, but the blast radius outside this repo is small — and
+the striking part is that the library and two of its consumers *already work around it,
+silently*:
+
+| caller | input | status |
+|---|---|---|
+| `sanskrit_util.iast_to_devanagari` (the library itself) | any IAST | **already defends** — calls `to_slp1(text.lower())` |
+| [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) `lookup-normalize.js` `iastToSlp1()` | user lookup value | **already defends** — `.normalize("NFC").trim().toLowerCase()`, with no comment saying why |
+| csl-atlas `sanskrit-util.js:155` `iastToDeva()` | any IAST | **already defends** — `.toLowerCase()` |
+| [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev) `app.js` `rowSlp1()` | **user-typed IAST search term** | ⚠️ **undefended** — a user typing `Rāma` searches for `RAma`; a silent lookup miss, no corrupted data |
+| WhitneyRoots `emit_crosswalk.py` · VisualDCS `import_archive.py` / `build_lsc_pilot.py` · Uprava `titov_parametric_core.py` · SanskritGrammar `build_rq4_item_bank.py` | roots / DCS lemmas | safe in practice — these arrive lowercase, but none of them *asserts* it |
+| SanskritLexicography `parse_ncc.py` | capitalised NCC headword | **was the victim; fixed** |
+
+**Ruling: keep `to_slp1` byte-compatible; make the trap loud instead.** Lowercasing inside a
+transcoder shared by ~8 repos would silently change every caller's output — the same class of
+unannounced semantic change that caused this bug. What is actually wrong is that the behaviour
+is *unspecified*: `to_slp1` is documented as "IAST → SLP1" with no word on case, and its tests
+only ever pass lowercase, so nothing pins what a capital does. Upstream should gain a
+documented case-folding entry point plus a test pinning the current passthrough, and
+csl-apidev's `rowSlp1()` should lowercase like csl-atlas already does. **Generalisable lesson:
+when a library's own code defends against its own function — `iast_to_devanagari` calling
+`to_slp1(text.lower())` — that defence is a bug report nobody filed.**
+
+> **Source:** [H1657](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1657-Opus_SanskritLexicography_acc-ncc-p2-agent-adjudication-49k_26.07.26.md)
+> (measurement) + [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
+> (repair, re-run, caller audit),
 > [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779),
+> [`NCC_KEY_REPAIR_MIGRATION_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md),
 > [`P2_AGENT_ADJUDICATION_REPORT.md` §0](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_AGENT_ADJUDICATION_REPORT.md) —
-> SanskritLexicography · 26-07-2026, Opus 5 1M (`claude-opus-5[1m]`). Repair queued as
-> [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md).
+> SanskritLexicography · 26-07-2026, Opus 5 1M (`claude-opus-5[1m]`).

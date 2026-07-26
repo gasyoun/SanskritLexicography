@@ -73,13 +73,45 @@ That is a **171% increase in the exact-match tier alone**, before any fuzzy
 tier is re-run. Every `Rāmāyaṇa`, every `Yoga-`, every `Ś-` initial work in NCC
 is currently invisible to the crosswalk.
 
-**This is out of scope here** — H1657's non-goals forbid re-running P1 matching
-or changing tier definitions, and this pass has not touched
-`crosswalk_candidates.jsonl.gz` or any tier. It is filed as
+**This was out of scope here** — H1657's non-goals forbid re-running P1 matching
+or changing tier definitions, and this pass did not touch
+`crosswalk_candidates.jsonl.gz` or any tier. It was filed as
 [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779)
-and queued as its own handoff. **What it means for the numbers below:** the
-crosswalk is being adjudicated at ~64% of its achievable exact-match recall,
-and no verdict in this report changes that.
+and queued as its own handoff. **What it meant for the numbers below:** the
+crosswalk was adjudicated at ~64% of its achievable exact-match recall, and no
+verdict in this report changed that.
+
+### 0.1 Resolved — repaired and re-run, 26-07-2026 (H1671)
+
+[H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
+fixed `parse_ncc.match_key_for` (case-fold + NFC before transliteration) and re-ran
+P0 → P1 → P2 on the corrected keys. §0's predictions held on the re-run, to the row:
+the 40,757 exact-after-repair pairs became **Tier A upstream**, and the exact-key
+overlap went 8,397 → 22,775 distinct keys.
+
+**Everything from §1 onwards therefore describes the PRE-REPAIR run**, kept as the
+record of what was adjudicated on 26-07-2026 and of how the defect was found. It is
+not the current state of the crosswalk. For that, and for the full before/after
+migration, see [`NCC_KEY_REPAIR_MIGRATION_2026.md`](NCC_KEY_REPAIR_MIGRATION_2026.md);
+for current counts, [`P1_COUNTS.md`](P1_COUNTS.md) / [`P2_COUNTS.md`](P2_COUNTS.md).
+
+| | this report (pre-repair) | after H1671 |
+|---|---:|---:|
+| Tier C/D rows adjudicated | 49,019 | 10,614 |
+| rule 1 `exact_after_key_repair` | 40,757 | 0 |
+| rule 2 `fold_after_key_repair` | 615 | 0 |
+| approve / reject | 41,947 / 7,072 | 920 / 9,694 |
+| `works_crosswalk.tsv` rows | 120,241 | 249,802 |
+
+Two consequences for anything built on this report:
+
+- **The 686-card spot-check sample described below is void**, and so is any vote
+  cast against it. It was drawn from a population that no longer exists — 3,550 of
+  its rows are not candidates at all any more. It was never voted (no
+  `decisions.json` was ever saved beside it), so no human work was discarded. Its
+  replacement is a fresh 698-card sample over 17 strata.
+- **The precision figures below were never measured**, only planned; no stratum
+  cleared a bar, so no row from this run was ever promoted into the crosswalk.
 
 ---
 

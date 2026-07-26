@@ -32,6 +32,7 @@ Usage:
 """
 import sys
 import os
+import re
 import json
 import bisect
 import gzip
@@ -47,6 +48,7 @@ ACC_JSONL = os.path.join(HERE, "acc.jsonl")
 NCC_JSONL = os.path.join(HERE, "ncc.jsonl")
 OUT_PATH = os.path.join(HERE, "crosswalk_candidates.jsonl.gz")
 COUNTS_PATH = os.path.join(HERE, "P1_COUNTS.md")
+P0_COUNTS_PATH = os.path.join(HERE, "P0_COUNTS.md")
 
 # Tier C: shortest key allowed to participate in a prefix-containment match.
 # Below this length a "prefix" is nearly meaningless (e.g. a 3-char key is a
@@ -59,6 +61,24 @@ TIER_C_MIN_KEY_LEN = 5
 def load_jsonl(path):
     with open(path, encoding='utf-8') as f:
         return [json.loads(line) for line in f if line.strip()]
+
+
+P0_SHARED_RE = re.compile(r'\*\*Exact-key join\*\*.*?\*\*([\d,]+)\*\*', re.S)
+
+
+def read_p0_shared_keys():
+    """P0_COUNTS.md's measured exact-key join, for the Tier A cross-check below.
+
+    Read rather than hardcoded: the old hardcoded 8,397 silently went stale the
+    moment the NCC keys were repaired (H1671), and a cross-check that cannot
+    notice its own reference value has drifted is not a cross-check.
+    """
+    try:
+        with open(P0_COUNTS_PATH, encoding='utf-8') as f:
+            m = P0_SHARED_RE.search(f.read())
+        return int(m.group(1).replace(',', '')) if m else None
+    except OSError:
+        return None
 
 
 def nasal_and_geminate_fold(key):
@@ -299,7 +319,7 @@ def main():
 
     with open(COUNTS_PATH, 'w', encoding='utf-8', newline='\n') as f:
         f.write("# ACC x NCC P1 -- crosswalk candidate counts\n\n")
-        f.write("_Created: 06-07-2026 · Last updated: 06-07-2026_\n\n")
+        f.write("_Created: 06-07-2026 · Last updated: 26-07-2026_\n\n")
         f.write("Produced by [`build_works_crosswalk.py`](build_works_crosswalk.py) against "
                 "the current `acc.jsonl` / `ncc.jsonl` (P0 outputs, read-only inputs here).\n\n")
         f.write("| Tier | Candidate rows | Distinct ACC keys | Distinct NCC keys |\n")
@@ -312,13 +332,18 @@ def main():
                 f"{len(acc_keys):,}. **Distinct NCC keys covered (any tier):** "
                 f"{total_ncc_covered:,} of {len(ncc_keys):,}.\n\n")
         f.write("## Tier A cross-check against P0\n\n")
-        f.write(f"P0_COUNTS.md measured 8,397 shared exact keys. This run measures "
-                f"**{len(tier_a_keys):,}** shared exact keys re-derived directly from "
-                f"the current acc.jsonl/ncc.jsonl. "
-                + ("Matches P0 exactly.\n\n" if len(tier_a_keys) == 8397 else
-                   "Differs from P0's 8,397 -- see acc.jsonl/ncc.jsonl for any "
-                   "re-parse since P0, this script does not silently reconcile "
-                   "the discrepancy.\n\n"))
+        p0_shared = read_p0_shared_keys()
+        if p0_shared is None:
+            f.write(f"P0_COUNTS.md's exact-key join could not be read, so this run's "
+                    f"**{len(tier_a_keys):,}** shared exact keys stand uncross-checked.\n\n")
+        else:
+            f.write(f"P0_COUNTS.md measured {p0_shared:,} shared exact keys. This run measures "
+                    f"**{len(tier_a_keys):,}** shared exact keys re-derived directly from "
+                    f"the current acc.jsonl/ncc.jsonl. "
+                    + ("Matches P0 exactly.\n\n" if len(tier_a_keys) == p0_shared else
+                       f"Differs from P0's {p0_shared:,} -- see acc.jsonl/ncc.jsonl for any "
+                       "re-parse since P0, this script does not silently reconcile "
+                       "the discrepancy.\n\n"))
         f.write("## Tier B rule\n\n")
         f.write("Nasal fold (`m`/`n` treated as one symbol -- anusvara vs. "
                 "place-assimilated-nasal is a transliteration-convention choice, "
