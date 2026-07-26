@@ -14,6 +14,19 @@ not an error.
 
 ## [Unreleased]
 
+## [1.76.0] — 2026-07-26
+
+### Added
+- **H1664 — voting-queue triage: a verdict for every pending review sheet (26-07-2026).**
+  Fable 5 (`claude-fable-5`). All 42 pending sheets (2,962 queued human judgments) ruled
+  AGENT-RULEABLE (1) / HYBRID-В2 (20) / HUMAN-ONLY (21), each with its enabling dataset,
+  in [VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md §11](https://github.com/gasyoun/Uprava/blob/main/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md);
+  human bill drops to ~1,329 (−55 %) once the routed adjudications (H1681–H1688) execute,
+  on top of the acc_ncc lane already banked by H1657 — post-H1671 key repair: 10,614 Tier C/D rows agent-adjudicated, human owes the fresh blind 698-card sample. SL lanes routed:
+  compound-`differs` В2 (H1681), h1303 abbrev rule-collapse (H1682), article-comparison
+  source-check (H1683). Detail table:
+  [RussianTranslation/RESULTS_LOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md).
+
 ### Fixed
 - **H1671 — the NCC `match_key` case bug is repaired and the whole ACC×NCC pipeline
   re-ran on corrected keys (26-07-2026, closes [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779)).**
