@@ -1,6 +1,13 @@
 # Paper A51 — LLM-assisted translation of a complete historical dictionary: the PWG→Russian pipeline and its evaluation (working title)
 
-_Created: 07-07-2026 · Last updated: 07-07-2026_
+_Created: 07-07-2026 · Last updated: 26-07-2026_
+
+> **⏸ DEFERRED UNTIL 2028 (MG ruling, 26-07-2026).** No submission work before
+> then. The methods packet is banked
+> ([A51_METHODS_DRAFT_DE_LAYERS_RU_PIPELINE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/A51_METHODS_DRAFT_DE_LAYERS_RU_PIPELINE.md));
+> the store gold cut proceeds on the **N3 print gate's** timeline, not this
+> paper's ([H1665](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1665-Fable_SanskritLexicography_pwg-store-gold-cut-execute-r1-r5_26.07.26.md)).
+> Re-scout venues in 2028.
 
 Readiness: **2/5** (outline + verified related-work seed + committed data spine; results
 pending the H178 B-1 human votes). Anchor framing per MG ruling (H178, 05-07-2026):

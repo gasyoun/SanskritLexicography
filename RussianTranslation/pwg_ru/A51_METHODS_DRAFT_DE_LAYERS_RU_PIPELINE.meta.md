@@ -23,5 +23,6 @@ _Created: 26-07-2026 · Last updated: 26-07-2026_
   24-07-2026.
 - **Revision history:**
   - 26-07-2026 — created (H1633).
+  - 26-07-2026 — status BANKED: A51 deferred until 2028 (MG); C1–C3 register rows updated to rulings R1–R5 + P1/A2 (h178 arms retired). Fable 5 (`claude-fable-5`).
 
 _Dr. Mārcis Gasūns_

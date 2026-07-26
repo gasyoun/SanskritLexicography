@@ -21,10 +21,10 @@ _Created: 26-07-2026 · Last updated: 26-07-2026_
      assumed ρ=0.1 in the DEFF row.
   3. Fold the cut into HUMAN_REVIEW_MINIMIZATION.md gate arithmetic if ruled a
      named gate.
-- **Limitations:** sizes are planning arithmetic, not measurements; the label
-  vocabulary is a proposal pending a D6-style ruling; pool counts (7,286 of
+- **Limitations:** sizes are planning arithmetic, not measurements; pool counts (7,286 of
   11,163) are as-of 26-07-2026 and recomputed at generation time.
 - **Revision history:**
   - 26-07-2026 — created (H1633).
+  - 26-07-2026 — rulings R1–R5 recorded in §8 (MG, chat): n=400, labels adopted, NO second reviewer through 2027 (intra-rater plan is permanent), named gate G6b, sequencing after g6/g5 votes; execution routed to H1665, additionally gated on H1664 queue triage. Fable 5 (`claude-fable-5`).
 
 _Dr. Mārcis Gasūns_
