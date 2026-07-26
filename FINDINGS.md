@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 21-07-2026_
+_Created: 26-06-2026 · Last updated: 26-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §460) whatever its section, so existing numbers never shift; when a finding is later
+(currently §465) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -54,6 +54,10 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§458. A Sanskrit dictionary’s big letters are big because they head *preverb families* — and testing entry-size decay needs an outlier-robust estimator, not a parametric regression](#458-a-sanskrit-dictionarys-big-letters-are-big-because-they-head-preverb-families--and-testing-entries-shrink-over-publication-needs-an-outlier-robust-estimator-not-a-parametric-regression-encyclopedic-dicts-have-single-300k-char-articles) — `a` 83.1% compounds is not unique (`u`/`p`/`s`/`v` close behind); every big letter heads a preverb family (`v`=vi-, `u`=ud-/upa-); SKD/VCP funding-decay REFUTED (ρ≈0.00), real in PWG/PWK/GRA.
 - 🔴 [§459. PWG entry-size decay is a *smooth* funding fade (−14 %/decade), not a one-time vol-1 correction — and SKD/VCP carry ~0 digitisation markup](#459-pwgs-entry-size-decay-is-a-smooth-fundingenergy-fade-across-its-whole-20-year-run-14-decade-not-a-one-time-correction-after-the-over-detailed-first-volume--and-skdvcp-carry-0-digitisation-markup) — PWG `<pc>`→volume→year maps all 123,366 entries to a real year; vols 2-7 still −15 %/decade after dropping vol-1 (settles the §458 cause question); density = digitisation apparatus, not lexicographic depth.
 - 🔴 [§460. "Gold" in this org means *frozen*, not *human-adjudicated* — 0 of 15 gold datasets have independent human annotation, and every travelling κ is model-vs-model (four contamination mechanisms)](#460-gold-in-this-org-means-frozen-not-human-adjudicated--0-of-15-gold-datasets-have-independent-human-annotation-and-every-travelling-κ-is-model-vs-model-four-contamination-mechanisms) — H1272 audit: 0 GOLD · 1 SILVER · 4 LLM-ASSISTED · 10 CONTAMINATED; the four mechanisms (self-authored gold, same-family κ as IRR, LLM output labelled human review, circular controls) are the checklist for any future eval set.
+- 🟠 [§461. The r2 kośa-fusion "separable" class is substantially an orthographic sandhi artifact](#461-the-r2-kośa-fusion-separable-class-is-substantially-an-orthographic-sandhi-artifact--whether-an-skd-citation-counts-fused-depends-on-whether-the-authoritys-name-begins-with-a-vowel) — whether an SKD citation counts "fused" depends on whether the authority's name begins with a vowel.
+- 🟠 [§462. On Windows, repeated repository discovery can dominate a Python pipeline](#462-on-windows-repeated-repository-discovery-can-dominate-a-python-pipeline-cache-checkout-identity-not-mutable-path-overrides) — 88 Git subprocesses cost 4.50 s of 5.29 s; cache the immutable checkout identity, not mutable path overrides.
+- 🔴 [§463. The pwg_ru store's `de` field is NOT a faithful copy of the csl-orig German](#463-the-pwg_ru-stores-de-field-is-not-a-faithful-copy-of-the-csl-orig-german--russian-connectives-have-been-substituted-into-the-source-of-truth-string) — 11 rows have `и`/`для`/`в`/`С` substituted for German connectives and do not round-trip against csl-orig; `sense_tag` (110 rows) and `h` carry Russian prose, so `h` is unusable as a homonym key.
+- 🔴 [§464. The H1624 G1 `gloss_lang` classifier mislabels German as Latin/English about half the time it fires](#464-the-h1624-g1-gloss_lang-classifier-mislabels-german-as-latinenglish-about-half-the-time-it-fires--and-those-spans-are-then-withheld-from-translation) — 122 of 229 non-DE spans are German (77% FP on `english_content`), and `la`/`en` are marked `translate: False`, so those glosses never reach the model.
 - 🟠 [§62. Varga distribution is almost epoch-stable (Cramér's V = 0.037)](#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) — p-values carry no signal at DCS scale; the 2014 dissertation prose read high p as «growth»; shares agree with the p-table against the prose.
 - 🔴 [§9. DCS OccId and sent_id are not unique keys](#9-dcs-occid-and-sent_id-are-not-unique-keys) — PK collisions silently dropped tokens and 449 sentences before synthetic keys.
 - 🟠 [§10. DCS UD tense marking conflates aorist and perfect](#10-dcs-ud-tense-marking-conflates-aorist-and-perfect) — both surface as Tense=Past; recover via the 2021 export.
@@ -3422,3 +3426,68 @@ the frozen comparison and is therefore excluded from the percentage.
 > **Source:** [`docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md) +
 > [`RussianTranslation/src/store_path.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/store_path.py) +
 > [`RussianTranslation/src/pilot/coordinator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py) — offline Codex audit, 21-07-2026; no live/model/promotion/store call.
+
+### §463. The pwg_ru store's `de` field is NOT a faithful copy of the csl-orig German — Russian connectives have been substituted into the source-of-truth string
+
+🚨 **Data-integrity.** Eleven of 11,603 pwg_ru store rows (0.09%) carry Cyrillic **inside the
+German `de` field**, and the substitutions are German function words replaced by their Russian
+equivalents: `и` for `und`, `для` for `für`, `в` for `in`, `С` for `Mit`, plus a literal
+`корригенда`. Verified against upstream: csl-orig `v02/pwg/pwg.txt` line 570640 reads
+`{%Opfer%} in {#sarva˚#} **und** {#havirhuti#}` for `huti`, while the store row reads `… **и** …`
+— *and* silently drops the `(von <hom>1.</hom> {#hu#})` etymology parenthesis. So the store's
+German is a **mangled derivative**, not a verbatim carry-through, in at least these rows.
+
+Two DE-side *structural* fields are contaminated at a higher rate: `sense_tag` in 110 rows
+(0.95%) — e.g. `c) с dat. лица и instr. предмета`, `Mit <div n="p"> — корригенда` — and `h`,
+which carries free-text Russian disambiguation prose such as `PW 3 (с sam, о супружеском
+намерении)`. `h` is therefore unusable as a homonym key; derive the homonym from `subcard`
+(`edition_rel.homonym_of`) instead.
+
+**Why it matters beyond cosmetics.** Every German-side derivation — the H1624 G1–G6 layers, any
+FAIR export, any "compare the store against the scan" audit — treats `de` as the public-domain
+source of truth. A German string that has been partly Russified is a silently corrupted
+canonical field: it will not round-trip against csl-orig, and it leaks Russian into anything
+built on the German side. **Any DE export must therefore validate purity rather than assume it**
+— `export_de_edition.py` quarantines `de`-contaminated rows, reduces a contaminated `sense_tag`
+to its ASCII skeleton, and drops `h` from its input allowlist entirely.
+
+> **Source:** measured 26-07-2026 (H1629, Opus 5 `claude-opus-5[1m]`) over the full 11,603-row
+> canonical store, cross-checked against
+> [`csl-orig v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt);
+> tables in [`RussianTranslation/RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md);
+> guard in [`RussianTranslation/src/export_de_edition.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_de_edition.py).
+
+### §464. The H1624 G1 `gloss_lang` classifier mislabels German as Latin/English about half the time it fires — and those spans are then withheld from translation
+
+🚨 **Data-integrity.** A census of all 15,901 `{%…%}` glosses in the pwg_ru store's German text
+found 229 (1.44%) classified non-German by
+[`pwg_mask.gloss_lang_spans`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py).
+Of those, ~122 (53.3%) carry unambiguous German evidence:
+
+| lang | rule_id | spans | German-looking | FP rate |
+|---|---|---|---|---|
+| en | `english_content` | 153 | 117 | **76.5%** |
+| la | `botany_binomial` | 68 | 5 | 7.4% |
+| ambig | `homograph_ambig` | 8 | 0 | 0.0% |
+
+Misfires are not marginal cases: `bis an's Ziel bringen` and `an sich nehmen, empfangen,
+erlangen, erhalten` are classified **English**; `Gelegenheit gefunden habend` and `Willens
+sein` are classified as **Latin botany binomials**.
+
+**The consequence is silent, not cosmetic.** `classify_pct_detail` returns `translate: False`
+for both `la` and `en`, so a false positive means a genuinely German gloss is masked to `{Tn}`
+and **never reaches the translation model** — content dropped from the output with no error and
+no counter. The `english_content` rule is the dominant contributor and the right place to look
+first. Fixing it changes masking behaviour pipeline-wide, so it needs its own measured A/B
+rather than an in-passing patch; downstream consumers should meanwhile treat a non-DE
+`gloss_lang` as a hint, not a fact.
+
+Caveat on the number: "German-looking" is a heuristic proxy (umlaut/eszett, a German function
+word, or an `-en`/`-eln`/`-ern` verb ending, excluding genuine binomial shape), so 53.3% is
+±; the sampled examples leave the direction beyond doubt.
+
+> **Source:** measured 26-07-2026 (H1629, Opus 5 `claude-opus-5[1m]`) over the full canonical
+> store; table + examples in
+> [`RussianTranslation/RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md);
+> limitation recorded in
+> [`RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md) §5.
