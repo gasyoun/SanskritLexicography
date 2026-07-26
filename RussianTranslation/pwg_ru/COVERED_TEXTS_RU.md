@@ -224,6 +224,24 @@ no Gorresio e-text exists — scans + rough OCR only — so no OCR was chased, p
    212 weak, 165 unpaired. MG's N11 fixture R. GORR. 2,16 (47 verses) → Southern 2,19
    (40), the known Bengal↔vulgate Ayodhyā offset.
 
+**Census of the cited loci (26-07-2026, current store).** 375 distinct R. GORR. loci:
+kāṇḍa 1 → 139, kāṇḍa 2 → 230, kāṇḍas 4/5/7 → 6 — i.e. **98% in books 1–2**, exactly
+where plain `R.` means Schlegel and PWG had to name Gorresio explicitly; in books 3–6
+plain `R.` already IS Gorresio (which is why the explicit form is rare there). All 375
+loci fall inside the structural inventory's sarga/verse ranges (0 out-of-range — an
+independent check of the ksverse-derived inventory). So the validation sample should
+weight Bāla + Ayodhyā first.
+
+**Cross-validation against H783.** The independently built Southern↔Critical map was
+checked against the pre-existing H783 Sundara concordance
+([CommentaryStrategies data/edition_comparison/concordance.json](https://github.com/gasyoun/CommentaryStrategies/blob/main/data/edition_comparison/concordance.json),
+`compare_editions.py`, LCS-based): **98.7% agreement** (1,920/1,945 shared mapped
+verses). Disagreements are almost entirely this build's `moved` class (formulaic
+repeated verses matched off-backbone) — treat `moved` as lower-trust; H783's monotone
+reading wins there. The two methods mutually validate; the H783 assets (Sundara +
+gitasupersite kāṇḍas I–IV + yuddha alignment) remain the citation-grade source for the
+kāṇḍas they cover, and this build extends coverage uniformly with scores.
+
 **Validation gate — R. GORR. (and R. books 3–6) stay `unmapped_locus_scheme` until it
 passes.** The sarga map is structural evidence only; before any citation reuse flips on,
 a **content-level check** must confirm it: sample ≥30 `plausible` sarga pairs spread
