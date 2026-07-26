@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.71.0] — 2026-07-26
+
 ### Added — H1628: stratified 200-item review sheet for the compound `differs` queue (26-07-2026)
 
 - [`src/pilot/compound_differs_review_sample.py`](src/pilot/compound_differs_review_sample.py)
