@@ -3613,6 +3613,21 @@ lane rather than opening a second one, and check the Cloudflare reality
 scrape. Follow-on:
 [H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md).
 
+**Update 26-07-2026 (H1691) — 7,372 → 8,208 grounded leaf senses (+11.3%), and the "no corpus
+side exists" class was itself unreliable.** Working H1670's 443-abbrev crosswalk backlog
+top-down mapped 12 further texts, each verified against its `pwgbib` entry, ~20 real `<ls>`
+samples, address containment, and a competitive rank against all 270 DCS texts, then
+hand-checked at ≥10 rows apiece (120/120 confirmed). The two largest additions — Pāṇini
+(21,305 citations) and Manu (20,605) — had been classified `DCS-LACKS`, "a genuine corpus gap
+that no crosswalk can close": see §471, which is the transferable lesson. `MAPPED` rose from
+36.4% to **44.7%** of the dictionary's `<ls>` mass and the actionable backlog above 0.05% is
+now empty. Two caveats belong with the number: the Aṣṭādhyāyī rows attest that Pāṇini *treats*
+a word at a sūtra, not that a passage uses it in the glossed sense (excluding them the delta is
++483, +6.6%), and the net is +1,152 newly grounded senses against **316 relocated** to a
+sibling sense of the same entry, because the aligner assigns one sense per (headword,
+DCS-lemma) link. Full report:
+[`PWG_DCS_TEXT_CROSSWALK_H1691.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_DCS_TEXT_CROSSWALK_H1691.md).
+
 > **Source:** H1632 pilot join + 26-07-2026 scale-up (random + full-PWG frames,
 > [PR #763](https://github.com/gasyoun/SanskritLexicography/pull/763)),
 > Opus 5 (`claude-opus-5[1m]`) ·
@@ -3862,3 +3877,64 @@ Caveats that made it work, all reusable for the next edition trapped in scans:
   volume "6" — map before fetching.
 
 _26-07-2026 · [H1656](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1656-Opus_SanskritLexicography_gorresio-southern-critical-concordances_26.07.26.md) · [PR #784](https://github.com/gasyoun/SanskritLexicography/pull/784) · Fable 5 `claude-fable-5`_
+
+### §471. A corpus-candidate matcher keyed on a dictionary's OWN bibliographic prose will bury its biggest wins in the "no corpus side exists" class — PWG's Pāṇini and Manu, 41,910 citations, sat in `DCS-LACKS`
+
+🔴 **When you auto-classify a dictionary's cited sources against a corpus, never derive the
+candidate from the dictionary's bibliography text.** A `Verzeichniss der Abkürzungen` names
+works the way a 19th-century philologist would introduce them — by author, in the editor's
+language — not by the Sanskrit title a corpus indexes them under. Match on the prose and the
+most-cited authorities in the dictionary silently land in the class you have labelled
+"a genuine corpus gap that no crosswalk can close", where nobody will ever look again.
+
+`Evidence:` H1670's [`build_ls_text_crosswalk_backlog.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/build_ls_text_crosswalk_backlog.py)
+classified all 4,207 PWG `<ls>` abbrevs against DCS by prefix-matching the resolved `pwgbib`
+entry. PWG's entries read "PĀṆINI'S acht Bücher grammatischer Regeln" and "MANU'S Gesetzbuch
+in der Ausg. von LOISELEUR DESLONGCHAMPS" — neither contains *Aṣṭādhyāyī* or *Manusmṛti*, both
+of which DCS carries. So `P.` (21,305 citations, 2.88% of the dictionary's `<ls>` mass) and
+`M.` (20,605, 2.79%) were filed as `DCS-LACKS`. Mapped in H1691 they contribute **827 of the
+1,152 newly grounded senses** — the two largest crosswalk wins available, hidden in the class
+declared untouchable.
+
+The same generator fails the other way too, and both failures are one-line habits worth
+banning outright:
+
+- **`max(candidates, key=tokens)`** — picking the *largest* name-alike paired `SĀṂKHYAK` with
+  the Sāṃkhyakārikā**bhāṣya** when DCS also carries the bare kārikā.
+- **prefix-matching a name-alike at all** — six abbrevs were paired with a *different work*
+  whose correct counterpart DCS also carries (`TBR` with the Taittirīya**saṃhitā** not the
+  **brāhmaṇa**; likewise `KĀTY. ŚR`, `ĀŚV. ŚR`, `ŚĀṄKH. BR`, `ŚĀṄKH. GṚHY`, `TAITT. ĀR`/`UP`).
+  Spelling variation defeats it as well: DCS spells the Āśvalāyana Śrautasūtra
+  *Āśvālāyana*śrautasūtra, so the prefix never fired.
+
+`So:` treat such a class as **"no name-alike was found"**, never as a fact about the corpus,
+and say so in the column header. Adjudicate against the corpus's own text list, and commit the
+verdicts to a sidecar the generator reads back so a regeneration cannot discard them
+([`pwg_ls_dcs_scheme_verdicts.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_ls_dcs_scheme_verdicts.tsv)).
+Re-classified, `DCS-LACKS` fell from 367,670 citations (49.7%) to 275,268 (37.2%) — and it is
+*still* only an upper bound, because the remaining 3,735 abbrevs were not audited.
+
+_26-07-2026 · [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md) · [`PWG_DCS_TEXT_CROSSWALK_H1691.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_DCS_TEXT_CROSSWALK_H1691.md) · Opus 5 `claude-opus-5[1m]`_
+
+### §472. Choosing a confidence tier ONCE PER SENSE and then stamping it on many passages inflates the strongest tier — 4.13% of H1670's exact-verse rows were chapter-level
+
+🔴 **A tier is a property of a row, not of a sense.** H1670 correctly separated exact-verse
+matches from chapter-level ones into `locus` (conf 0.90) and `locus-chapter` (0.70). But the
+decision was taken once per sense and then applied to every passage that sense matched — and a
+single sense routinely matches several passages whose addresses bottom out at different levels
+(20.9% of DCS's Ṛgveda and 24.1% of its Atharvaveda sentences carry no `sent_counter` at all).
+
+`Evidence:` 507 of the 12,280 `locus` rows in H1670's wide-frame run (**4.13%**) carried an
+address with no `sent_counter` — i.e. a chapter-level address published in the exact-verse tier
+at confidence 0.90. 504 were Aitareyabrāhmaṇa, which an independent containment test shows is a
+chapter-level-only text for PWG's citation scheme (verse 0.3%, chapter 95.9%). Fixed in H1691
+by letting the level travel with the passage: after the fix **zero** exact-verse rows carry a
+counter-less address, 522 rows moved to `locus-chapter`, and the grounded-sense count is
+unchanged (8,208 either way) because the fix relabels within the locus family rather than
+adding or removing groundings. Wave-1 is provably unaffected — its run contains 0 such rows.
+
+`So:` whenever a per-item confidence is derived from a per-group decision, assert the invariant
+in the writer, not in the reviewer's memory. The cheap regression test is the one that caught
+this: `grep` the strongest tier's rows for an address shape that tier is supposed to exclude.
+
+_26-07-2026 · [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md) · [`build_sense_corpus_concordance.py`](https://github.com/gasyoun/kosha/blob/main/scripts/build_sense_corpus_concordance.py) · Opus 5 `claude-opus-5[1m]`_

@@ -215,3 +215,11 @@ review/sanskritlexicography-pwg-compound-differs_stratified200_review.html
 # Generated Workflow harnesses embed source/portrait payloads and are local-only.
 src/pilot/run_pilot_wf.*.js
 !src/pilot/run_pilot_wf.js
+
+# H1691 crosswalk pass — same rule as above: the reports, the generators, the
+# adjudicated verdicts and the .meta.json provenance are the deliverable; the
+# regenerable row-level tables and the frame file are not.
+research/frame_wide.tsv
+research/pwg_sense_dcs_attestation_h1670base.tsv
+research/pwg_sense_dcs_attestation_h1691.tsv
+research/pwg_sense_dcs_attestation_h1691final.tsv

@@ -1,0 +1,749 @@
+{
+ "Amarakośa": {
+  "chapters": 2,
+  "counter_max_sampled": 640,
+  "dcs_text": "Amarakośa",
+  "has_named_section": false,
+  "lead_distinct": 2,
+  "lead_max": 2,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num",
+    2
+   ]
+  ],
+  "sample_refs": [
+   "AKośa, 1",
+   "AKośa, 2"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 1888,
+  "tokens": 11968
+ },
+ "Amaruśataka": {
+  "chapters": 1,
+  "counter_max_sampled": 106,
+  "dcs_text": "Amaruśataka",
+  "has_named_section": false,
+  "lead_distinct": 1,
+  "lead_max": 1,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num",
+    1
+   ]
+  ],
+  "sample_refs": [
+   "AmaruŚ, 1"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 212,
+  "tokens": 3221
+ },
+ "Bhāvaprakāśa": {
+  "chapters": 5,
+  "counter_max_sampled": 263,
+  "dcs_text": "Bhāvaprakāśa",
+  "has_named_section": true,
+  "lead_distinct": 2,
+  "lead_max": 7,
+  "lead_min": 6,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num",
+    3
+   ],
+   [
+    "SIGLUM|num|named",
+    2
+   ]
+  ],
+  "sample_refs": [
+   "BhPr, 6, 2",
+   "BhPr, 6, Karpūrādivarga",
+   "BhPr, 6, Guḍūcyādivarga",
+   "BhPr, 7, 3",
+   "BhPr, 6, 8"
+  ],
+  "second_max": 8,
+  "sent_counter_pct": 100.0,
+  "sentences": 1839,
+  "tokens": 13064
+ },
+ "Bṛhadāraṇyakopaniṣad": {
+  "chapters": 47,
+  "counter_max_sampled": 38,
+  "dcs_text": "Bṛhadāraṇyakopaniṣad",
+  "has_named_section": false,
+  "lead_distinct": 6,
+  "lead_max": 6,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num",
+    47
+   ]
+  ],
+  "sample_refs": [
+   "BĀU, 1, 1",
+   "BĀU, 1, 2",
+   "BĀU, 1, 3",
+   "BĀU, 1, 4",
+   "BĀU, 1, 5",
+   "BĀU, 1, 6"
+  ],
+  "second_max": 15,
+  "sent_counter_pct": 59.2,
+  "sentences": 2561,
+  "tokens": 19014
+ },
+ "Caurapañcaśikā": {
+  "chapters": 1,
+  "counter_max_sampled": 50,
+  "dcs_text": "Caurapañcaśikā",
+  "has_named_section": false,
+  "lead_distinct": 1,
+  "lead_max": 1,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num",
+    1
+   ]
+  ],
+  "sample_refs": [
+   "CauP, 1"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 100,
+  "tokens": 1183
+ },
+ "Daśakumāracarita": {
+  "chapters": 14,
+  "counter_max_sampled": 383,
+  "dcs_text": "Daśakumāracarita",
+  "has_named_section": false,
+  "lead_distinct": 2,
+  "lead_max": 2,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num",
+    14
+   ]
+  ],
+  "sample_refs": [
+   "DKCar, 1, 1",
+   "DKCar, 1, 2",
+   "DKCar, 1, 3",
+   "DKCar, 1, 4",
+   "DKCar, 1, 5",
+   "DKCar, 2, 1"
+  ],
+  "second_max": 9,
+  "sent_counter_pct": 100.0,
+  "sentences": 2129,
+  "tokens": 35188
+ },
+ "Gobhilagṛhyasūtra": {
+  "chapters": 39,
+  "counter_max_sampled": 62,
+  "dcs_text": "Gobhilagṛhyasūtra",
+  "has_named_section": false,
+  "lead_distinct": 4,
+  "lead_max": 4,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num",
+    39
+   ]
+  ],
+  "sample_refs": [
+   "GobhGS, 1, 1",
+   "GobhGS, 1, 2",
+   "GobhGS, 1, 3",
+   "GobhGS, 1, 4",
+   "GobhGS, 1, 5",
+   "GobhGS, 2, 6"
+  ],
+  "second_max": 10,
+  "sent_counter_pct": 66.8,
+  "sentences": 1015,
+  "tokens": 7399
+ },
+ "Gītagovinda": {
+  "chapters": 12,
+  "counter_max_sampled": 73,
+  "dcs_text": "Gītagovinda",
+  "has_named_section": false,
+  "lead_distinct": 12,
+  "lead_max": 12,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num",
+    12
+   ]
+  ],
+  "sample_refs": [
+   "GītGov, 1",
+   "GītGov, 2",
+   "GītGov, 3",
+   "GītGov, 4",
+   "GītGov, 5",
+   "GītGov, 6"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 692,
+  "tokens": 6020
+ },
+ "Hitopadeśa": {
+  "chapters": 5,
+  "counter_max_sampled": 201,
+  "dcs_text": "Hitopadeśa",
+  "has_named_section": false,
+  "lead_distinct": 5,
+  "lead_max": 4,
+  "lead_min": 0,
+  "ref_shapes": [
+   [
+    "SIGLUM|num",
+    5
+   ]
+  ],
+  "sample_refs": [
+   "Hitop, 0",
+   "Hitop, 1",
+   "Hitop, 2",
+   "Hitop, 3",
+   "Hitop, 4"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 3432,
+  "tokens": 25040
+ },
+ "Kathāsaritsāgara": {
+  "chapters": 44,
+  "counter_max_sampled": 217,
+  "dcs_text": "Kathāsaritsāgara",
+  "has_named_section": false,
+  "lead_distinct": 8,
+  "lead_max": 8,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num",
+    44
+   ]
+  ],
+  "sample_refs": [
+   "KSS, 1, 1",
+   "KSS, 1, 2",
+   "KSS, 1, 3",
+   "KSS, 1, 4",
+   "KSS, 1, 5",
+   "KSS, 1, 6"
+  ],
+  "second_max": 9,
+  "sent_counter_pct": 100.0,
+  "sentences": 14962,
+  "tokens": 111298
+ },
+ "Kauśikasūtra": {
+  "chapters": 140,
+  "counter_max_sampled": 57,
+  "dcs_text": "Kauśikasūtra",
+  "has_named_section": false,
+  "lead_distinct": 14,
+  "lead_max": 14,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num",
+    140
+   ]
+  ],
+  "sample_refs": [
+   "KauśS, 6, 1",
+   "KauśS, 1, 1",
+   "KauśS, 1, 2",
+   "KauśS, 1, 3",
+   "KauśS, 1, 4",
+   "KauśS, 1, 5"
+  ],
+  "second_max": 44,
+  "sent_counter_pct": 91.5,
+  "sentences": 3394,
+  "tokens": 22833
+ },
+ "Kaṭhopaniṣad": {
+  "chapters": 6,
+  "counter_max_sampled": 29,
+  "dcs_text": "Kaṭhopaniṣad",
+  "has_named_section": false,
+  "lead_distinct": 6,
+  "lead_max": 6,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num",
+    6
+   ]
+  ],
+  "sample_refs": [
+   "KaṭhUp, 1",
+   "KaṭhUp, 2",
+   "KaṭhUp, 3",
+   "KaṭhUp, 4",
+   "KaṭhUp, 5",
+   "KaṭhUp, 6"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 257,
+  "tokens": 2129
+ },
+ "Kirātārjunīya": {
+  "chapters": 18,
+  "counter_max_sampled": 81,
+  "dcs_text": "Kirātārjunīya",
+  "has_named_section": false,
+  "lead_distinct": 18,
+  "lead_max": 18,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num",
+    18
+   ]
+  ],
+  "sample_refs": [
+   "Kir, 1",
+   "Kir, 2",
+   "Kir, 3",
+   "Kir, 4",
+   "Kir, 5",
+   "Kir, 6"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 2079,
+  "tokens": 18439
+ },
+ "Kātyāyanasmṛti": {
+  "chapters": 1,
+  "counter_max_sampled": 976,
+  "dcs_text": "Kātyāyanasmṛti",
+  "has_named_section": false,
+  "lead_distinct": 1,
+  "lead_max": 1,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num",
+    1
+   ]
+  ],
+  "sample_refs": [
+   "KātySmṛ, 1"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 1966,
+  "tokens": 14317
+ },
+ "Kāśikāvṛtti": {
+  "chapters": 45,
+  "counter_max_sampled": 13,
+  "dcs_text": "Kāśikāvṛtti",
+  "has_named_section": true,
+  "lead_distinct": 2,
+  "lead_max": 6,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num|named",
+    43
+   ],
+   [
+    "SIGLUM|num|num|num",
+    2
+   ]
+  ],
+  "sample_refs": [
+   "Kāśikāvṛtti zu Aṣṭādhyāyī, 1, 1, 1.1",
+   "Kāśikāvṛtti zu Aṣṭādhyāyī, 1, 1, 2.1",
+   "Kāśikāvṛtti zu Aṣṭādhyāyī, 1, 1, 3.1",
+   "Kāśikāvṛtti zu Aṣṭādhyāyī, 1, 1, 4.1",
+   "Kāśikāvṛtti zu Aṣṭādhyāyī, 1, 1, 5.1",
+   "Kāśikāvṛtti zu Aṣṭādhyāyī, 1, 1, 6.1"
+  ],
+  "second_max": 1,
+  "sent_counter_pct": 100.0,
+  "sentences": 518,
+  "tokens": 2875
+ },
+ "Kāṭhakasaṃhitā": {
+  "chapters": 139,
+  "counter_max_sampled": 109,
+  "dcs_text": "Kāṭhakasaṃhitā",
+  "has_named_section": false,
+  "lead_distinct": 16,
+  "lead_max": 23,
+  "lead_min": 3,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num",
+    139
+   ]
+  ],
+  "sample_refs": [
+   "KS, 3, 6",
+   "KS, 6, 1",
+   "KS, 6, 2",
+   "KS, 6, 3",
+   "KS, 6, 4",
+   "KS, 6, 5"
+  ],
+  "second_max": 17,
+  "sent_counter_pct": 90.7,
+  "sentences": 8136,
+  "tokens": 38894
+ },
+ "Meghadūta": {
+  "chapters": 2,
+  "counter_max_sampled": 67,
+  "dcs_text": "Meghadūta",
+  "has_named_section": true,
+  "lead_distinct": 0,
+  "lead_max": null,
+  "lead_min": null,
+  "ref_shapes": [
+   [
+    "SIGLUM|named",
+    2
+   ]
+  ],
+  "sample_refs": [
+   "Megh, Pūrvameghaḥ",
+   "Megh, Uttarameghaḥ"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 244,
+  "tokens": 3393
+ },
+ "Nighaṇṭuśeṣa": {
+  "chapters": 1,
+  "counter_max_sampled": 207,
+  "dcs_text": "Nighaṇṭuśeṣa",
+  "has_named_section": false,
+  "lead_distinct": 1,
+  "lead_max": 1,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num",
+    1
+   ]
+  ],
+  "sample_refs": [
+   "NighŚeṣa, 1"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 411,
+  "tokens": 2003
+ },
+ "Pañcaviṃśabrāhmaṇa": {
+  "chapters": 169,
+  "counter_max_sampled": 41,
+  "dcs_text": "Pañcaviṃśabrāhmaṇa",
+  "has_named_section": false,
+  "lead_distinct": 15,
+  "lead_max": 15,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num",
+    169
+   ]
+  ],
+  "sample_refs": [
+   "PB, 15, 1",
+   "PB, 15, 2",
+   "PB, 15, 3",
+   "PB, 15, 4",
+   "PB, 15, 5",
+   "PB, 15, 6"
+  ],
+  "second_max": 17,
+  "sent_counter_pct": 73.8,
+  "sentences": 2629,
+  "tokens": 29329
+ },
+ "Pāraskaragṛhyasūtra": {
+  "chapters": 51,
+  "counter_max_sampled": 55,
+  "dcs_text": "Pāraskaragṛhyasūtra",
+  "has_named_section": false,
+  "lead_distinct": 3,
+  "lead_max": 3,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num",
+    51
+   ]
+  ],
+  "sample_refs": [
+   "PārGS, 1, 1",
+   "PārGS, 1, 2",
+   "PārGS, 1, 3",
+   "PārGS, 1, 4",
+   "PārGS, 1, 5",
+   "PārGS, 1, 6"
+  ],
+  "second_max": 19,
+  "sent_counter_pct": 74.6,
+  "sentences": 803,
+  "tokens": 8131
+ },
+ "Sāṃkhyakārikābhāṣya": {
+  "chapters": 70,
+  "counter_max_sampled": 26,
+  "dcs_text": "Sāṃkhyakārikābhāṣya",
+  "has_named_section": true,
+  "lead_distinct": 0,
+  "lead_max": null,
+  "lead_min": null,
+  "ref_shapes": [
+   [
+    "SIGLUM|named",
+    70
+   ]
+  ],
+  "sample_refs": [
+   "SKBh zu SāṃKār, 2.2",
+   "SKBh zu SāṃKār, 3.2",
+   "SKBh zu SāṃKār, 4.2",
+   "SKBh zu SāṃKār, 5.2",
+   "SKBh zu SāṃKār, 6.2",
+   "SKBh zu SāṃKār, 7.2"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 1289,
+  "tokens": 9994
+ },
+ "Sūryasiddhānta": {
+  "chapters": 2,
+  "counter_max_sampled": 70,
+  "dcs_text": "Sūryasiddhānta",
+  "has_named_section": false,
+  "lead_distinct": 2,
+  "lead_max": 2,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num",
+    2
+   ]
+  ],
+  "sample_refs": [
+   "SūrSiddh, 1",
+   "SūrSiddh, 2"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 278,
+  "tokens": 2142
+ },
+ "Taittirīyasaṃhitā": {
+  "chapters": 217,
+  "counter_max_sampled": 103,
+  "dcs_text": "Taittirīyasaṃhitā",
+  "has_named_section": false,
+  "lead_distinct": 7,
+  "lead_max": 7,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num|num",
+    217
+   ]
+  ],
+  "sample_refs": [
+   "TS, 2, 2, 9",
+   "TS, 6, 1, 3",
+   "TS, 3, 4, 8",
+   "TS, 2, 3, 9",
+   "TS, 2, 1, 4",
+   "TS, 6, 6, 7"
+  ],
+  "second_max": 8,
+  "sent_counter_pct": 92.2,
+  "sentences": 8916,
+  "tokens": 47989
+ },
+ "Trikāṇḍaśeṣa": {
+  "chapters": 1,
+  "counter_max_sampled": 81,
+  "dcs_text": "Trikāṇḍaśeṣa",
+  "has_named_section": false,
+  "lead_distinct": 1,
+  "lead_max": 2,
+  "lead_min": 2,
+  "ref_shapes": [
+   [
+    "SIGLUM|num",
+    1
+   ]
+  ],
+  "sample_refs": [
+   "TriKŚ, 2"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 161,
+  "tokens": 904
+ },
+ "Vetālapañcaviṃśatikā": {
+  "chapters": 1,
+  "counter_max_sampled": 62,
+  "dcs_text": "Vetālapañcaviṃśatikā",
+  "has_named_section": true,
+  "lead_distinct": 0,
+  "lead_max": null,
+  "lead_min": null,
+  "ref_shapes": [
+   [
+    "SIGLUM|named",
+    1
+   ]
+  ],
+  "sample_refs": [
+   "VetPV, Intro"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 100.0,
+  "sentences": 102,
+  "tokens": 814
+ },
+ "Viṣṇupurāṇa": {
+  "chapters": 126,
+  "counter_max_sampled": 156,
+  "dcs_text": "Viṣṇupurāṇa",
+  "has_named_section": false,
+  "lead_distinct": 6,
+  "lead_max": 6,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num",
+    126
+   ]
+  ],
+  "sample_refs": [
+   "ViPur, 1, 1",
+   "ViPur, 1, 2",
+   "ViPur, 1, 3",
+   "ViPur, 1, 4",
+   "ViPur, 1, 5",
+   "ViPur, 1, 6"
+  ],
+  "second_max": 38,
+  "sent_counter_pct": 100.0,
+  "sentences": 11980,
+  "tokens": 87622
+ },
+ "Āśvalāyanagṛhyasūtra": {
+  "chapters": 54,
+  "counter_max_sampled": 44,
+  "dcs_text": "Āśvalāyanagṛhyasūtra",
+  "has_named_section": false,
+  "lead_distinct": 4,
+  "lead_max": 4,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num",
+    54
+   ]
+  ],
+  "sample_refs": [
+   "ĀśvGS, 1, 13",
+   "ĀśvGS, 1, 5",
+   "ĀśvGS, 1, 6",
+   "ĀśvGS, 1, 9",
+   "ĀśvGS, 1, 16",
+   "ĀśvGS, 1, 7"
+  ],
+  "second_max": 24,
+  "sent_counter_pct": 67.2,
+  "sentences": 799,
+  "tokens": 7046
+ },
+ "Śvetāśvataropaniṣad": {
+  "chapters": 6,
+  "counter_max_sampled": 17,
+  "dcs_text": "Śvetāśvataropaniṣad",
+  "has_named_section": false,
+  "lead_distinct": 6,
+  "lead_max": 6,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num",
+    6
+   ]
+  ],
+  "sample_refs": [
+   "ŚvetU, 1",
+   "ŚvetU, 2",
+   "ŚvetU, 3",
+   "ŚvetU, 4",
+   "ŚvetU, 5",
+   "ŚvetU, 6"
+  ],
+  "second_max": null,
+  "sent_counter_pct": 3.1,
+  "sentences": 223,
+  "tokens": 2147
+ },
+ "Śāṅkhāyanaśrautasūtra": {
+  "chapters": 208,
+  "counter_max_sampled": 44,
+  "dcs_text": "Śāṅkhāyanaśrautasūtra",
+  "has_named_section": false,
+  "lead_distinct": 11,
+  "lead_max": 16,
+  "lead_min": 1,
+  "ref_shapes": [
+   [
+    "SIGLUM|num|num",
+    208
+   ]
+  ],
+  "sample_refs": [
+   "ŚāṅkhŚS, 9, 1",
+   "ŚāṅkhŚS, 1, 1",
+   "ŚāṅkhŚS, 1, 2",
+   "ŚāṅkhŚS, 1, 3",
+   "ŚāṅkhŚS, 1, 4",
+   "ŚāṅkhŚS, 1, 5"
+  ],
+  "second_max": 30,
+  "sent_counter_pct": 88.6,
+  "sentences": 3307,
+  "tokens": 20886
+ }
+}
