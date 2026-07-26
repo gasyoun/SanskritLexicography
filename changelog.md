@@ -14,20 +14,6 @@ not an error.
 
 ## [Unreleased]
 
-## [1.68.0] — 2026-07-26
-
-### Added
-- **Machine-flag layer in the review-sheet gate + G5 batch1v3 (H1655, P1 ruling 26-07-2026).**
-  MG ruled the voting-queue triage `@DECIDE` «auto-reject»: a card carrying a machine-findable
-  store flag never reaches a human sheet. `review_residue_gate.machine_flags` now detects the
-  screening-audit classes — D1 Cyrillic inside `{#...#}` (20 queue rows), D3 gloss-wrapper
-  drift to guillemets (370), D4 DE↔RU gloss-slot count mismatch (3,236 total with D-classes;
-  flag-only, waits for [H1651](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1651-Sonnet_SanskritLexicography_pwg-ru-wrapper-defect-sweep-d1-d4_26.07.26.md)
-  triage) — and `build_g5_review_sheet.py` applies it as a second hard pre-filter. Eligible
-  pool: 7,286 of 11,163. batch1v2 (German-only gate) superseded UNVOTED by
-  `g5-live-queue-batch1v3-2026-07-26` (150 cards, verified 0 leaks across both layers); the
-  v2 lock is removed so a stray v2 export can no longer validate. D5 (gloss byte-identical to
-  German) deliberately not flagged — audit-measured as mostly false positives.
 ### Added
 
 - **Selftest isolation guard — production data unreachable by construction (26-07-2026).**
@@ -59,6 +45,20 @@ not an error.
   post-commit failure *by construction* rather than via a `finally`, and the test pins that
   instead of a shape the code no longer has. `window_selftest` **189/189**.
 
+## [1.68.0] — 2026-07-26
+
+### Added
+- **Machine-flag layer in the review-sheet gate + G5 batch1v3 (H1655, P1 ruling 26-07-2026).**
+  MG ruled the voting-queue triage `@DECIDE` «auto-reject»: a card carrying a machine-findable
+  store flag never reaches a human sheet. `review_residue_gate.machine_flags` now detects the
+  screening-audit classes — D1 Cyrillic inside `{#...#}` (20 queue rows), D3 gloss-wrapper
+  drift to guillemets (370), D4 DE↔RU gloss-slot count mismatch (3,236 total with D-classes;
+  flag-only, waits for [H1651](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1651-Sonnet_SanskritLexicography_pwg-ru-wrapper-defect-sweep-d1-d4_26.07.26.md)
+  triage) — and `build_g5_review_sheet.py` applies it as a second hard pre-filter. Eligible
+  pool: 7,286 of 11,163. batch1v2 (German-only gate) superseded UNVOTED by
+  `g5-live-queue-batch1v3-2026-07-26` (150 cards, verified 0 leaks across both layers); the
+  v2 lock is removed so a stray v2 export can no longer validate. D5 (gloss byte-identical to
+  German) deliberately not flagged — audit-measured as mostly false positives.
 ## [1.67.0] — 2026-07-26
 
 ### Added
