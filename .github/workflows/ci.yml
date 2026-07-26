@@ -138,6 +138,18 @@ jobs:
           python src/mined_filter_bicleaner.py selftest
           python src/tm_saru_align_labse.py selftest
           python src/tm_retrieval_eval.py selftest
+      - name: Review-sheet binding + decisions + residue-gate selftests (H1404 lane)
+        working-directory: RussianTranslation
+        run: |
+          # Fixture-only. review_residue_gate needs the committed H1303
+          # inventory (pwg_ru/ABBREV_UNIFIED_LIST_PROPOSAL_2026-07.md) and the
+          # pwgab table; apply_decisions pins the positional-id drift fallback
+          # (g5-live-queue-batch1, 26-07-2026).
+          python src/review_binding.py --selftest
+          python src/validate_decisions.py --selftest
+          python src/apply_decisions.py --selftest
+          python src/review_residue_gate.py --selftest
+          python src/pilot/german_residue_scan.py --selftest
       - name: LOD graph acceptance (fixture-only, H350/E7)
         working-directory: RussianTranslation
         run: |
