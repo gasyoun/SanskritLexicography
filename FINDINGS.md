@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §467) whatever its section, so existing numbers never shift; when a finding is later
+(currently §468) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -56,6 +56,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§460. "Gold" in this org means *frozen*, not *human-adjudicated* — 0 of 15 gold datasets have independent human annotation, and every travelling κ is model-vs-model (four contamination mechanisms)](#460-gold-in-this-org-means-frozen-not-human-adjudicated--0-of-15-gold-datasets-have-independent-human-annotation-and-every-travelling-κ-is-model-vs-model-four-contamination-mechanisms) — H1272 audit: 0 GOLD · 1 SILVER · 4 LLM-ASSISTED · 10 CONTAMINATED; the four mechanisms (self-authored gold, same-family κ as IRR, LLM output labelled human review, circular controls) are the checklist for any future eval set.
 - 🟠 [§461. The r2 kośa-fusion "separable" class is substantially an orthographic sandhi artifact](#461-the-r2-kośa-fusion-separable-class-is-substantially-an-orthographic-sandhi-artifact--whether-an-skd-citation-counts-fused-depends-on-whether-the-authoritys-name-begins-with-a-vowel) — whether an SKD citation counts "fused" depends on whether the authority's name begins with a vowel.
 - 🟠 [§462. On Windows, repeated repository discovery can dominate a Python pipeline](#462-on-windows-repeated-repository-discovery-can-dominate-a-python-pipeline-cache-checkout-identity-not-mutable-path-overrides) — 88 Git subprocesses cost 4.50 s of 5.29 s; cache the immutable checkout identity, not mutable path overrides.
+- 🔴 [§467. corpus_lexicon.jsonl gets its first intrinsic BLI quality number](#467-corpus_lexiconjsonl-gets-its-first-intrinsic-bli-quality-number--and-the-obvious-gold-source-the-corpuss-own-glossary-is-circular-so-the-fix-is-an-independent-dictionary-ranked-by-an-independent-frequency-source) — P@1 0.402 / MRR 0.539 / coverage 99.5% against an independent Kochergina+DCS gold set; the corpus's own 3-layer glossary was rejected as gold because it is built FROM this same file.
 - 🔴 [§463. The pwg_ru store's `de` field is NOT a faithful copy of the csl-orig German](#463-the-pwg_ru-stores-de-field-is-not-a-faithful-copy-of-the-csl-orig-german--russian-connectives-have-been-substituted-into-the-source-of-truth-string) — 11 rows have `и`/`для`/`в`/`С` substituted for German connectives and do not round-trip against csl-orig; `sense_tag` (110 rows) and `h` carry Russian prose, so `h` is unusable as a homonym key.
 - 🔴 [§464. The H1624 G1 `gloss_lang` classifier mislabels German as Latin/English about half the time it fires](#464-the-h1624-g1-gloss_lang-classifier-mislabels-german-as-latinenglish-about-half-the-time-it-fires--and-those-spans-are-then-withheld-from-translation) — 122 of 229 non-DE spans are German (77% FP on `english_content`), and `la`/`en` are marked `translate: False`, so those glosses never reach the model.
 - 🟠 [§62. Varga distribution is almost epoch-stable (Cramér's V = 0.037)](#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) — p-values carry no signal at DCS scale; the 2014 dissertation prose read high p as «growth»; shares agree with the p-table against the prose.
@@ -3622,3 +3623,44 @@ row; the packet now computes it and a docs-vs-data test pins the prose to it.) S
 [XREF_SHARED_CORE_LABEL_TAXONOMY.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/XREF_SHARED_CORE_LABEL_TAXONOMY.md).
 
 _26-07-2026 · [H1648](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1648-Opus_csl-atlas_xref-sheet-ru-and-mw-pwg-dependence_26.07.26.md) · csl-atlas [PR #310](https://github.com/sanskrit-lexicon/csl-atlas/pull/310), [v0.11.0](https://github.com/sanskrit-lexicon/csl-atlas/releases/tag/v0.11.0) · Opus 5 (1M context) `claude-opus-5[1m]`_
+
+### §467. corpus_lexicon.jsonl gets its first intrinsic BLI quality number — and the obvious gold source (the corpus's own glossary) is circular, so the fix is an independent dictionary ranked by an independent frequency source
+
+🔴 **`RussianTranslation/src/corpus_lexicon.jsonl` (1.09M Sa→Ru word-alignment pairs, feeds the
+3-layer glossary, the translation memory, and `mw_ru`) had never been quantitatively evaluated
+before H1521. First measurement, over a frozen 400-lemma gold set: P@1 = 0.402, MRR = 0.539,
+coverage = 0.995 (398/400).** Ranking method: for each gold Sanskrit lemma, rank the corpus's
+attested Russian renderings by raw alignment count (the file carries no per-pair weight — a
+`head -1` on `corpus_lexicon.jsonl` confirmed this), then match the ranked list's top hit(s)
+against the gold lemma's Russian content-word tokens (Cyrillic, ≥4 letters — a lenient
+free-text-gloss-vs-single-rendering overlap proxy, not exact string equality).
+
+⚠️ **The default gold-set choice named in the H1521 handoff turned out to be circular and had
+to be overridden by inspection.** The repo's own 3-layer Sa→Ru glossary
+([`glossary/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/glossary/README.md))
+is a direct group-by/count aggregation *of*
+`corpus_lexicon.jsonl` itself
+([`build_surface_glossary.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_surface_glossary.py):
+"Direct group-by on corpus_lexicon.jsonl ... no lemmatizer needed") — grading the lexicon
+against a glossary built FROM the lexicon would score P@1 ≈ 1.0 by construction, a variant of
+the [§460](#460-gold-in-this-org-means-frozen-not-human-adjudicated--0-of-15-gold-datasets-have-independent-human-annotation-and-every-travelling-κ-is-model-vs-model-four-contamination-mechanisms)
+"evaluated system authored its own gold" contamination mechanism, just with a deterministic
+aggregation standing in for an LLM judge. The fix used two *independent* sources instead: gold
+CONTENT from Kochergina's published Sanskrit-Russian dictionary (`src/koch.jsonl`, 29,177
+entries, never derived from this corpus), and the "high-frequency" SELECTION criterion from
+VisualDCS's `dcs_lemma_summary.json` (Hellwig's DCS ~2021 whole-corpus frequency bands — a
+different, much larger corpus than the 1.09M-pair translated subset). Both axes of
+independence mattered: an earlier pass that ranked candidate gold lemmas by their own frequency
+*inside* `corpus_lexicon.jsonl` produced coverage = 1.0 by construction (every selected lemma
+was guaranteed present) — a second, subtler circularity that the DCS-frequency swap fixed
+(coverage dropped to the genuine 0.995 above). Unlike the org's audited "gold" sets, Kochergina
+is a bona fide human-scholarly source (V. A. Kochergina's printed dictionary), not an LLM
+label — so this gold set's *content* provenance is stronger than most in [§460](#460-gold-in-this-org-means-frozen-not-human-adjudicated--0-of-15-gold-datasets-have-independent-human-annotation-and-every-travelling-κ-is-model-vs-model-four-contamination-mechanisms)'s
+audit, though the word-overlap match criterion is still a lenient proxy, not exact-gloss
+agreement.
+
+> **Source:** [H1521](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1521-Sonnet_RussianTranslation_bli-eval-corpus-lexicon-p1-mrr_23.07.26.md),
+> [`src/eval/bli_eval.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/bli_eval.py) +
+> [`src/eval/build_gold_koch.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/build_gold_koch.py) +
+> [`src/eval/gold_sa_ru_koch_400.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/gold_sa_ru_koch_400.tsv) —
+> RussianTranslation · 26-07-2026, Sonnet 5 (`claude-sonnet-5`).
