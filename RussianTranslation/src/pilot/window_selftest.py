@@ -1065,6 +1065,31 @@ def test_quarantine_replace_failure_preserves_previous_destination():
             fail('failed quarantine was incorrectly reported as rejected: %r' % gate)
 
 
+def test_optional_sibling_bibliography_degrades():
+    """An ABSENT optional sibling repo must not break the promotion path.
+
+    `pwg_sources.BIB` lives in `csl-pywork`, which CI does not check out and a fresh clone
+    does not have. It used to raise FileNotFoundError, and because
+    `promote_final_cards.rows_for` -> `extract_citation_edges` -> `pwg_sources.resolve`
+    sits on the promotion path, an absent *enrichment* source became a hard failure of
+    promotion itself. Citation edges are additive metadata: missing bibliography must mean
+    "no expansions resolved", never "the store cannot be written".
+    """
+    import pwg_sources
+    saved_path, saved_cache = pwg_sources.BIB, pwg_sources._BIB
+    try:
+        pwg_sources.BIB = os.path.join(tempfile.gettempdir(), 'no-such-pwgbib.txt')
+        pwg_sources._BIB = None
+        if pwg_sources.bib() != {}:
+            fail('an absent bibliography must resolve to an empty map')
+        if pwg_sources.resolve('RV.') is not None:
+            fail('an absent bibliography must resolve nothing, not raise')
+        import citation_edges
+        citation_edges.extract_citation_edges('Feuer <ls>RV. 1,1</ls>')   # must not raise
+    finally:
+        pwg_sources.BIB, pwg_sources._BIB = saved_path, saved_cache
+
+
 def test_selftest_isolation_guard():
     """The isolation guard itself: production data must be unreachable BY CONSTRUCTION.
 
@@ -8173,6 +8198,7 @@ def main():
         test_threaded_gate_exception_requeues_full_window,
         test_quarantine_replace_failure_preserves_previous_destination,
         test_selftest_isolation_guard,
+        test_optional_sibling_bibliography_degrades,
         test_c4_gate0_probe_run_scope,
         test_german_anchor_selftest,
         test_german_anchor_repair_behavioral,
