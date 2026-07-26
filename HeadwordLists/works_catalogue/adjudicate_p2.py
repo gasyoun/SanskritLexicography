@@ -12,32 +12,35 @@ Every verdict carries the evidence it was decided on -- both catalogue entries
 verbatim, the matched span, tier/score, the rule that fired, and a one-clause
 reason -- so any row can be re-audited later without re-deriving it.
 
-## The NCC match_key defect this adjudicator has to work around
+## The NCC match_key defect -- FIXED UPSTREAM 26-07-2026 (H1671)
 
-`parse_ncc.py` computes its match_key as `slp1_simplify(to_slp1(iast))` on the
-RAW NCC headword, which is capitalised ("Kalāpatattvārṇava"). `to_slp1` is
-case-preserving and does not map uppercase IAST initials, so the capital
-survives into the SLP1 string and `slp1_simplify` then reads it as a *different
+Read this if you are looking at a pre-H1671 run of this script, or at the
+`ncc_key_was_corrupt` field on its verdicts.
+
+`parse_ncc.py` used to compute its match_key as `slp1_simplify(to_slp1(iast))`
+on the RAW NCC headword, which is capitalised ("Kalāpatattvārṇava"). `to_slp1`
+is case-preserving and does not map uppercase IAST initials, so the capital
+survived into the SLP1 string and `slp1_simplify` then read it as a *different
 SLP1 letter*: K = kh, G = gh, C = ch, J = jh, T = th, D = dh, P = ph, B = bh,
 N = n(g), Y = n(y), R = n(.), E = ai, O = au. Non-ASCII capitals (Ś, Ī, Ā, ...)
-are not transliterated at all and survive verbatim into the key.
+were not transliterated at all and survived verbatim into the key. 91,548 of
+152,526 keys (60.0%) were wrong.
 
-Measured on the shipped data: 91,548 of 152,526 NCC keys (60.0%) are wrong.
-Consequences for P1's tiering, both of which this script must handle:
+H1657 measured that but was forbidden from acting on it (its non-goals rule out
+"re-running P1 matching"), so this script worked AROUND the defect: it re-derived
+each NCC key correctly in memory and adjudicated on that. [issue #779] /
+[H1671] then fixed `parse_ncc.match_key_for` itself and re-ran P0 -> P1 -> P2.
+On the repaired candidate set:
 
-  * PRECISION side -- 40,757 of Tier D's 43,666 rows (93.3%) are a genuinely
-    EXACT title match that the inserted 'h' (or the n-fold) pushed to edit
-    distance 1. They are Tier-A-grade matches wearing a Tier D label.
-  * RECALL side -- where the corruption changes the FIRST letter (Rāmāyaṇa ->
-    "namayana", Śiva- -> "śiva-"), P1's first-letter blocking never compared the
-    pair at all, so no candidate row exists to adjudicate. Exact-key overlap is
-    22,775 keys once repaired, against the 8,397 P1 measured. That is a P0/P1
-    recall hole, out of scope here (H1657 non-goal: "re-running P1 matching"),
-    reported in P2_AGENT_ADJUDICATION_REPORT.md and tracked separately.
+  * PRECISION side -- the 40,757 Tier D rows that were an exact title match
+    wearing a Tier D label are now **Tier A upstream**, so they never reach this
+    adjudicator. `exact_after_key_repair` firing in bulk is the signature of a
+    STALE candidate file, not of a healthy run.
+  * RECALL side -- exact-key overlap went 8,397 -> 22,775 distinct keys; the
+    14,379 pairs that P1's first-letter blocking never compared are now proposed.
 
-This script does NOT rewrite crosswalk_candidates.jsonl.gz and does not re-tier
-anything -- rows keep the tier P1 gave them. It only adjudicates them with a
-correctly-derived key as evidence.
+This script still does NOT rewrite crosswalk_candidates.jsonl.gz and does not
+re-tier anything -- rows keep the tier P1 gave them.
 
 Usage:
     python HeadwordLists/works_catalogue/adjudicate_p2.py
@@ -57,6 +60,9 @@ sys.path.insert(0, os.environ.get("SANSKRIT_UTIL_PY",
                                   r"C:/Users/user/Documents/GitHub/sanskrit-util/py"))
 import sanskrit_util as su  # noqa: E402
 
+sys.path.insert(0, HERE)
+from parse_ncc import match_key_for  # noqa: E402  (canonical NCC key derivation)
+
 ACC_JSONL = os.path.join(HERE, "acc.jsonl")
 NCC_JSONL = os.path.join(HERE, "ncc.jsonl")
 CANDIDATES = os.path.join(HERE, "crosswalk_candidates.jsonl.gz")
@@ -69,15 +75,19 @@ PARENTHETICAL_RE = re.compile(r'\([^)]*\)')
 # ---------------------------------------------------------------- key repair
 
 def ncc_key_repaired(iast):
-    """The key parse_ncc.py would have produced had it case-folded first.
+    """The correctly-derived NCC key, delegated to `parse_ncc.match_key_for`.
 
-    Lower-casing the whole IAST headword before transliteration is safe: IAST
-    uses case only to mark the start of a headword/proper noun, never to
-    distinguish two different sounds. It is the capital that SLP1 reads as a
-    different letter.
+    This was a LOCAL re-implementation while the defect was live upstream
+    (H1657 was forbidden from touching P0/P1, so it worked around the corrupt
+    key rather than fixing it). H1671 fixed `parse_ncc.match_key_for` itself,
+    so the two are now the same function and this calls the canonical one --
+    a second copy would only drift (the local one never had the NFC step).
+    It is kept as a call rather than deleted because the verdict rows still
+    report `ncc_key_was_corrupt`, which is now the *invariant check* that P0
+    really did ship repaired keys: on a correctly-regenerated ncc.jsonl it is
+    False for every row.
     """
-    text = PARENTHETICAL_RE.sub('', iast).replace('_', '')
-    return su.slp1_simplify(su.to_slp1(text.lower()))
+    return match_key_for(iast)
 
 
 def nasal_and_geminate_fold(key):
