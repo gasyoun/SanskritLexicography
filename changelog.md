@@ -14,6 +14,16 @@ not an error.
 
 ## [Unreleased]
 
+### Changed
+- **FINDINGS §469 corrected — the csl-apidev call site was under-rated (H1695, 26-07-2026).**
+  H1671'''s org-wide `to_slp1` audit classified [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev)'''s
+  `rowSlp1()` as "a silent lookup miss, no corrupted data". Tracing the value showed both
+  consumers were hit: the results list **rendered the wrong headword** (`Rāma` → `RAma` →
+  displayed as **ṇāma**) and the `dalglob|` key addressed the wrong entry. Fixed upstream in
+  [csl-apidev PR #127](https://github.com/sanskrit-lexicon/csl-apidev/pull/127); the finding
+  now carries the correction and the second-order lesson (an audit that reads only the call
+  line under-rates severity — it lives in what consumes the return value).
+
 ## [1.76.0] — 2026-07-26
 
 ### Added

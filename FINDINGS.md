@@ -3768,7 +3768,7 @@ silently*:
 | `sanskrit_util.iast_to_devanagari` (the library itself) | any IAST | **already defends** — calls `to_slp1(text.lower())` |
 | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) `lookup-normalize.js` `iastToSlp1()` | user lookup value | **already defends** — `.normalize("NFC").trim().toLowerCase()`, with no comment saying why |
 | csl-atlas `sanskrit-util.js:155` `iastToDeva()` | any IAST | **already defends** — `.toLowerCase()` |
-| [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev) `app.js` `rowSlp1()` | **user-typed IAST search term** | ⚠️ **undefended** — a user typing `Rāma` searches for `RAma`; a silent lookup miss, no corrupted data |
+| [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev) `app.js` `rowSlp1()` | **user-typed IAST search term** | was undefended — ✅ **fixed 26-07-2026** ([H1695](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1695-Opus_csl-apidev_rowslp1-iast-case-fold_26.07.26.md), [PR #127](https://github.com/sanskrit-lexicon/csl-apidev/pull/127)) |
 | WhitneyRoots `emit_crosswalk.py` · VisualDCS `import_archive.py` / `build_lsc_pilot.py` · Uprava `titov_parametric_core.py` · SanskritGrammar `build_rq4_item_bank.py` | roots / DCS lemmas | safe in practice — these arrive lowercase, but none of them *asserts* it |
 | SanskritLexicography `parse_ncc.py` | capitalised NCC headword | **was the victim; fixed** |
 
@@ -3777,10 +3777,25 @@ transcoder shared by ~8 repos would silently change every caller's output — th
 unannounced semantic change that caused this bug. What is actually wrong is that the behaviour
 is *unspecified*: `to_slp1` is documented as "IAST → SLP1" with no word on case, and its tests
 only ever pass lowercase, so nothing pins what a capital does. Upstream should gain a
-documented case-folding entry point plus a test pinning the current passthrough, and
-csl-apidev's `rowSlp1()` should lowercase like csl-atlas already does. **Generalisable lesson:
-when a library's own code defends against its own function — `iast_to_devanagari` calling
-`to_slp1(text.lower())` — that defence is a bug report nobody filed.**
+documented case-folding entry point plus a test pinning the current passthrough — **still
+unclaimed**. **Generalisable lesson: when a library's own code defends against its own
+function — `iast_to_devanagari` calling `to_slp1(text.lower())` — that defence is a bug report
+nobody filed.**
+
+**Correction, 26-07-2026 ([H1695](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1695-Opus_csl-apidev_rowslp1-iast-case-fold_26.07.26.md)):
+the csl-apidev row above originally read "a silent lookup miss, no corrupted data". That
+understated it.** Tracing the value through `app.js` showed *both* consumers were hit:
+`renderHeadword()` **displayed the wrong headword** — `Rāma` → `RAma` → rendered back as
+**ṇāma**, `Bhāgavata` as `bhhāgavata`, `Ekāvalī` as `aikāvalī` — and the `dalglob|` lookup and
+cache key addressed the wrong entry. Visible corruption in the results list, not a silent
+miss. `IAST_RE` there deliberately auto-detects capitalised input (it lists
+`ĀĪŪṚṜḶḸṂṄṆṢṬṰḌŚ`), so the path was reachable by design. Fixed by
+[PR #127](https://github.com/sanskrit-lexicon/csl-apidev/pull/127): `foldIast()` (NFC +
+lowercase) before transcoding, SLP1 input explicitly never folded, and a zero-dependency
+`app/rowSlp1.check.js` wired into CI — because the root cause here was never the bug, it was
+that nothing pinned what a capital does. **Second-order lesson: an audit that classifies a
+call site by reading only the call line will under-rate it — the severity lives in what
+consumes the return value.**
 
 > **Source:** [H1657](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1657-Opus_SanskritLexicography_acc-ncc-p2-agent-adjudication-49k_26.07.26.md)
 > (measurement) + [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
