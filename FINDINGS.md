@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §466) whatever its section, so existing numbers never shift; when a finding is later
+(currently §467) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -108,6 +108,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§34. The E abbreviation tag is polysemous across dicts](#34-the-e-abbreviation-tag-is-polysemous-across-dicts) — Etymology / Epithet / Epic; count the meaning, not the marker.
 - 🟠 [§35. Root-recovery tiers err on root form, not identity](#35-root-recovery-tiers-err-on-root-form-not-identity) — normalize to dhātupāṭha citation form; gate LLM roots through a known-dhātu set.
 - 🟠 [§103. The §83/§97 witness-collapse deflates the union's published "corroboration" 55.9% → 34.7%](#103-quantified-the-8397-witness-collapse-deflates-the-published-15-dict-union-corroboration-from-559-to-347--and-the-unions-own-table-is-pre-fold) — 68,651 "corroborated" headwords rest on one European lineage; Apte kept independent per §83; UNION.md table is pre-fold.
+- 🔴 [§466. MW's `cf.` and PWG's `Vgl.` are NOT independent witnesses](#466-mws-cf-and-pwgs-vgl-are-not-independent-witnesses--they-agree-2950-above-chance-so-a-shared-cross-reference-never-counts-as-double-attestation) — they agree on the target 21.8% of the time vs 0.007% expected (≈2,953×, p < 0.005) on the 2,750 headwords both cross-reference. MW 1899 rests on Böhtlingk–Roth, so "N dictionaries agree" is not N witnesses; the containment asymmetry (~3.2×) is a set-size artifact, not direction.
 
 **Encoding & normalization**
 
