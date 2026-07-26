@@ -1,6 +1,6 @@
 # Heritage/INRIA GitHub-mirror inventory
 
-_Created: 03-07-2026 · Last updated: 03-07-2026_
+_Created: 03-07-2026 · Last updated: 26-07-2026_
 
 What [darkone23/Heritage_Resources](https://github.com/darkone23/Heritage_Resources)
 (`develop-main`, sparse-checked-out `DATA/ MW/ DICO/ XML/` at
@@ -61,8 +61,11 @@ download (@DO, current XML export) proves insufficient.
 
 `pada_freq.tsv` (526 KB), `pada_morph_freq.tsv` (1.6 MB), `pada_trans_freq.tsv`
 (12 KB), `comp_freq.tsv` (312 KB), `comp_morph_freq.tsv` (755 KB),
-`comp_trans_freq.tsv` (6 KB) — all present as claimed. Ingestion is roadmap
-Phase 3, not bundled in this handoff.
+`comp_trans_freq.tsv` (6 KB) — all present as claimed. **Ingested + diffed
+26-07-2026 (H1490, roadmap Phase 3):** see
+[heritage_frequency_diff.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_frequency_diff.md)
+(also covers `word_freq.tsv`, the 7th file in this family, present but not
+separately listed above).
 
 ## License
 
