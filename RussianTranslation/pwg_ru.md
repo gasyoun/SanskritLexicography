@@ -394,9 +394,7 @@ mask-форма для модели, (4) производные индексы �
 **Не** добавляются в сам немецкий gloss: русский перевод, corpus_gate verdicts,
 review_status — они живут **рядом** в store/site.
 
-Per-field derived/voted/confidence breakdown for G1–G6 (which fields are
-deterministic extraction vs waiting on a human vote vs derived-with-an-
-undecided-flag): [EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md).
+Per-field derived/voted/confidence breakdown for G1–G6: see §8.4 below.
 
 ### 8.1. Слои (краткий реестр)
 
