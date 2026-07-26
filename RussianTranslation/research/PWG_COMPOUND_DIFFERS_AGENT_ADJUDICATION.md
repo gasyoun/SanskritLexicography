@@ -289,7 +289,30 @@ second time: its lock was committed hours earlier under the human `re-cut` rulin
 139 `same_split` cards still price that stratum at 0.973, and re-cutting would invalidate
 a live lock to recover 9 cards.
 
-### 8.5 Blindness
+### 8.5 Arm 1 no longer reproduces from `master` — and a generator can no longer rewrite a live lock in silence
+
+A sheet generator reads **live** data. Arm 1's frame comes from
+`pwg_derivation_layer.tsv`, which the two repairs rewrote — so re-running
+`compound_differs_review_sample.py --write` on current `master` does not reproduce the
+committed sheet, it draws a **different 200 cards** and rewrites the live lock. Measured:
+the committed lock is `sha256:31c106bb…`, a re-run on `master` renders `sha256:68a6297b…`.
+Votes already cast would stop validating, and nothing would have said so until
+`validate_decisions.py` rejected the export — after the human spent them. Same failure
+shape as the unbound sheet of Item 1, one step later in the pipeline.
+
+Two things follow, both applied:
+
+- **Arm 1 reproduces at [v1.83.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.83.0)**
+  (commit `c84db1d7`), where it renders `sha256:31c106bb…` byte-for-byte — verified.
+  Regenerate it there, never on `master`. Arm 2 reproduces on `master`
+  (`sha256:f765faf4…`, verified).
+- **`review_binding.write_lock()` now refuses** to overwrite a lock binding a different
+  content hash, raising `LockCollision` with both hashes and the recovery path. A
+  same-hash rewrite still succeeds, so honest idempotent regeneration is unaffected; a
+  deliberate re-cut passes `force=True` / `REVIEW_LOCK_FORCE=1`. This protects **every**
+  sheet in the estate, not only these two.
+
+### 8.6 Blindness
 
 Arm 2 is stratified **by the adjudicator's own rule**, so it would be trivially
 self-fulfilling if a card showed it. The rendered card carries the two member lists, the
@@ -304,7 +327,7 @@ that no card JSON contains any of those fields.
 python src/pilot/adjudicate_compound_differs.py --selftest   # parsers + 8 rule fixtures
 python src/pilot/adjudicate_compound_differs.py --report     # counts, writes nothing
 python src/pilot/adjudicate_compound_differs.py --write      # verdicts TSV + plan JSON
-python src/pilot/compound_differs_review_sample.py --write   # re-cut + stamp + lock arm 1
+python src/pilot/compound_differs_review_sample.py --write   # arm 1 — ONLY at v1.83.0 (see §8.5)
 python src/pilot/compound_differs_arm2_sample.py --selftest  # allocation + blindness
 python src/pilot/compound_differs_arm2_sample.py --write     # draw + stamp + lock arm 2
 ```
