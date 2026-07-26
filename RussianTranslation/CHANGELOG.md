@@ -10,6 +10,34 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1656 follow-on: Gorresio e-text recovered; Rāmāyaṇa citation reuse ON (26-07-2026)
+
+- **MG ruled: reuse always ON by default** — the validation gate is an audit, not a
+  months-long blocker. And the "no Gorresio OCR exists" premise fell the same day:
+  the Cologne [ramayanagorr](https://github.com/sanskrit-lexicon-scans/ramayanagorr)
+  page PDFs carry an embedded Google **text layer**. New `build-gorresio` subcommand
+  ([src/build_ramayana_concordance.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py))
+  extracts the full **Gorresio e-text**
+  ([src/gorresio_etext.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gorresio_etext.jsonl),
+  10,225 verses, ॥N॥ segmentation anchored to ksverse per-page ranges) and builds a
+  **CONTENT-BASED Gorresio↔Southern verse concordance**
+  ([src/ramayana_gorresio_southern_verse_map.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_gorresio_southern_verse_map.tsv)):
+  **4,066 verses mapped** (1,857 matched + 2,209 fuzzy), 4,955 Bengal-only, 200
+  `moved` excluded. All scan-verified gold anchors reproduce (G 1,22,1→S 19,1 at
+  0.774 etc.). `citation_tm` now resolves R. GORR. + plain R. books 3–6 through the
+  map — hits carry `map` class+score; misses are typed (`no-southern-counterpart`,
+  `gorresio-etext-gap`). Coverage bound: vols 2/4/uk scans are image-only (Ayodhyā
+  bulk, Sundara, Uttara) — queued for a modern-OCR pass.
+
+### Fixed — shingle phase-parity bug in the concordance aligner (26-07-2026)
+
+- Candidate retrieval indexed AND probed shingles on the same stride, so shared runs
+  at an off-phase relative shift were invisible — G 1,22,1 ↔ S 19,1 scored 0.774 yet
+  was never retrieved. Index now covers every offset. Southern↔Critical rebuilt:
+  **81.4% matched/fuzzy** (was 74%); the sarga map is a content-based majority
+  roll-up of the verse map (the content-blind DTW draft drifted ±1–3 sargas and is
+  superseded; `build` no longer clobbers it).
+
 ## [1.76.0] — 2026-07-26
 
 ### Changed — H1664 voting-queue triage: every pending sheet ruled A/HYBRID/HUMAN-ONLY (26-07-2026)

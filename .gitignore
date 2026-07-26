@@ -29,6 +29,9 @@ RussianTranslation/src/_review_queue.triage.csv
 RussianTranslation/src/*.jsonl
 RussianTranslation/src/*.jsonl.backup.*
 RussianTranslation/src/*.jsonl.tmp
+# Gorresio e-text: small PD-derived canonical asset (H1656) — committed,
+# exception to the blanket src/*.jsonl rule above.
+!RussianTranslation/src/gorresio_etext.jsonl
 # Renou Step-0 pilot sample IS committed (small, 70 items, evidence for the review
 # sheet) — exception to the blanket src/*.jsonl rule above. See RENOU_HYPOTHESES.md.
 !RussianTranslation/src/renou_pilot_sample.jsonl

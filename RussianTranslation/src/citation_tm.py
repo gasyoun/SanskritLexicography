@@ -31,15 +31,18 @@ TWO layers, deliberately separate:
         'locus-parse-failed'  the citation locus didn't parse.
   'unmapped_locus_scheme'— the text is covered but its PWG citation scheme does
                            NOT map 1:1 to the corpus keying, so no lookup is
-                           possible without an external concordance. The two
-                           documented cases: MBH. (PWG cites continuous Calcutta
-                           ślokas; corpus keys critical parvan.adhyaya.verse) and
-                           R. GORR. (Gorresio Bengal recension ≠ Leonov Southern) —
-                           which since H1656 ALSO covers plain R. books 3-6: pwgbib
-                           1.247 says PWG's R. cites Gorresio for those books, and
-                           the store's sarga ranges confirm it (R. 3,79 / 4,63 /
-                           5,94 = Gorresio counts, past the Southern ones).
-                           NOT a miss — a GAP awaiting a concordance (see the doc).
+                           possible without an external concordance. Remaining
+                           case: MBH. (PWG cites continuous Calcutta ślokas;
+                           corpus keys critical parvan.adhyaya.verse).
+                           R. GORR. + plain R. books 3-6 (Gorresio-keyed per
+                           pwgbib 1.247) LEFT this bucket 26-07-2026: they now
+                           resolve through the content-based Gorresio-Southern
+                           verse concordance (reuse ON per MG), with two typed
+                           miss reasons instead of a scheme gap:
+                             'no-southern-counterpart' - Bengal-only verse, the
+                                Southern text genuinely lacks it;
+                             'gorresio-etext-gap' - sarga not yet in the e-text
+                                (vols 2/4/uk scans carry no text layer).
   'evidence_unavailable' — the corpus DB is absent, so a resolved hit could not be
                            confirmed (distinct from 'miss': we simply couldn't look).
 
@@ -103,8 +106,8 @@ def _rama(locus):
     if len(n) != 3:
         return None
     book, sarga, verse = n
-    if book in _RAMA_GORRESIO_BOOKS:   # Gorresio-keyed loci (see note above)
-        return UNMAPPED
+    if book in _RAMA_GORRESIO_BOOKS:   # Gorresio-keyed loci -> content concordance
+        return _rama_gorresio(locus)
     work = _RAMA_KANDA.get(book)
     if work is None:  # book 7 (Bombay ed., uttara) not ingested -> covered-but-absent
         return ('__ramayana_absent_kanda__', book)
@@ -145,10 +148,65 @@ def _mbh_unmapped(locus):
     return UNMAPPED
 
 
-def _rama_gorresio_unmapped(locus):
-    # Gorresio Gauḍīya/Bengal recension != Leonov Southern (only ~1/3 verse-for-verse;
-    # no published concordance). Documented GAP + @DECIDE.
-    return UNMAPPED
+_RAMA_GORR_WORK = {   # Gorresio kāṇḍa -> corpus work (kāṇḍa 4 kiṣkindhā absent)
+    1: '01_ramayana-balakanda', 2: '02_ramayana-ayodhyakanda',
+    3: '03_ramayana-aranyakanda', 5: '05_ramayana-sundarakanda',
+    6: '06_ramayana-yuddhakanda', 7: '07_ramayana-uttarakanda',
+}
+
+_GORR_MAP = None
+
+
+def _gorr_map():
+    """Lazy-load the CONTENT-BASED Gorresio->Southern verse concordance
+    (`ramayana_gorresio_southern_verse_map.tsv`, built by
+    `build_ramayana_concordance.py build-gorresio` from the Gorresio e-text
+    recovered out of the Cologne scan PDFs' embedded Google text layer).
+    Only `matched`/`fuzzy` rows key reuse; `moved` (off-backbone formulaic
+    repeats) deliberately does NOT — that was the disagreement class in the
+    H783 cross-validation."""
+    global _GORR_MAP
+    if _GORR_MAP is None:
+        rows, covered = {}, set()
+        path = os.path.join(HERE, 'ramayana_gorresio_southern_verse_map.tsv')
+        if os.path.exists(path):
+            import csv
+            with open(path, encoding='utf-8') as fh:
+                for r in csv.DictReader(fh, delimiter='\t'):
+                    key = (int(r['g_kanda']), int(r['g_sarga']), int(r['g_verse']))
+                    covered.add(key[:2])
+                    if r['class'] in ('matched', 'fuzzy') and r['s_sarga']:
+                        rows[key] = (int(r['s_sarga']), int(r['s_verse']),
+                                     r['score'], r['class'])
+        _GORR_MAP = (rows, covered)
+    return _GORR_MAP
+
+
+def _rama_gorresio(locus):
+    # Reuse ON by default (MG ruling 26-07-2026): a Gorresio locus resolves via
+    # the content-based verse concordance; where the Bengal recension has no
+    # Southern counterpart the lookup stays an HONEST miss
+    # ('no-southern-counterpart') — never an invented offset (166k lesson).
+    n = _nums(locus)
+    if len(n) != 3:
+        return None
+    k, s, v = n
+    if k not in _RAMA_GORR_WORK:      # kiṣkindhā (4) — no Southern corpus at all
+        return ('__ramayana_absent_kanda__', k)
+    rows, covered = _gorr_map()
+    row = rows.get((k, s, v))
+    if row is None:
+        # e-text covers a sarga -> a missing verse is a REAL recension gap;
+        # an uncovered sarga (vols 2/4/uk have no PDF text layer yet) is an
+        # e-text acquisition gap, not evidence about the recension.
+        if (k, s) in covered:
+            return ('__gorresio_unmatched__', k)
+        return ('__gorresio_etext_gap__', k)
+    ss, sv, score, cls = row
+    return ('__gorresio_mapped__',
+            '%s:%d.%d' % (_RAMA_GORR_WORK[k], ss, sv),
+            {'map': 'gorresio_southern_verse_map', 'class': cls, 'score': score,
+             'g_locus': '%d,%d,%d' % (k, s, v)})
 
 
 # PWG abbreviation (normalized, trailing dot/space-insensitive) -> (resolver, meta).
@@ -156,7 +214,9 @@ def _rama_gorresio_unmapped(locus):
 # anything not here is 'text-not-covered' (a clean miss: TS., SUŚR., HARIV., ŚAT. BR.).
 RESOLVERS = {
     'R.':        (_rama,      ('Rāmāyaṇa (Southern)', 'Leonov', 'metadata-only')),
-    'R. GORR.':  (_rama_gorresio_unmapped, ('Rāmāyaṇa (Gauḍīya, Gorresio)', '—', 'metadata-only')),
+    'R. GORR.':  (_rama_gorresio, ('Rāmāyaṇa (Gauḍīya, Gorresio)', 'Leonov via H1656 concordance', 'metadata-only')),
+    'R. ed. GORR.': (_rama_gorresio, ('Rāmāyaṇa (Gauḍīya, Gorresio)', 'Leonov via H1656 concordance', 'metadata-only')),
+    'GORR.':     (_rama_gorresio, ('Rāmāyaṇa (Gauḍīya, Gorresio)', 'Leonov via H1656 concordance', 'metadata-only')),
     'MBH.':      (_mbh_unmapped, ('Mahābhārata', 'SamudraManthanam', 'metadata-only')),
     'ṚV.':       (_rigveda,   ('Ṛgveda', 'Elizarenkova (1:1)', 'metadata-only')),
     'RV.':       (_rigveda,   ('Ṛgveda', 'Elizarenkova (1:1)', 'metadata-only')),
@@ -212,6 +272,17 @@ def lookup(prefix, locus):
     if isinstance(resolved, tuple) and resolved[0] == '__ramayana_absent_kanda__':
         return {**base, 'status': 'miss', 'reason': 'locus-not-in-corpus',
                 'canonical_id': None}
+    if isinstance(resolved, tuple) and resolved[0] == '__gorresio_unmatched__':
+        # Bengal-recension verse with no Southern counterpart in the content
+        # concordance — an honest, typed miss, NOT a scheme gap.
+        return {**base, 'status': 'miss', 'reason': 'no-southern-counterpart'}
+    if isinstance(resolved, tuple) and resolved[0] == '__gorresio_etext_gap__':
+        # Sarga not yet in the Gorresio e-text (vols 2/4/uk scans carry no
+        # text layer) — reuse pending e-text completion, not a recension verdict.
+        return {**base, 'status': 'miss', 'reason': 'gorresio-etext-gap'}
+    if isinstance(resolved, tuple) and resolved[0] == '__gorresio_mapped__':
+        base['map'] = resolved[2]
+        resolved = resolved[1]
     ru, db_status = _fetch_ru(resolved)
     base['canonical_id'] = resolved
     if db_status == 'db_absent':
@@ -300,11 +371,17 @@ def selftest():
     check(mbh['status'] == 'unmapped_locus_scheme',
           'MBH. 5,7331 -> %s (Calcutta<->critical GAP, N1)' % mbh['status'])
     gorr = lookup('R. GORR.', '2,5,27')
-    check(gorr['status'] == 'unmapped_locus_scheme',
-          'R. GORR. 2,5,27 -> %s (Gorresio Bengal GAP, N11)' % gorr['status'])
+    check(gorr['canonical_id'] == '02_ramayana-ayodhyakanda:6.27',
+          'R. GORR. 2,5,27 -> %s via content concordance (reuse ON, MG 26-07)'
+          % gorr['canonical_id'])
     r3 = lookup('R.', '3,79,10')
-    check(r3['status'] == 'unmapped_locus_scheme',
-          'R. 3,79,10 -> %s (R. books 3-6 are Gorresio-keyed, H1656)' % r3['status'])
+    check(r3['status'] == 'miss' and r3['reason'] == 'no-southern-counterpart',
+          'R. 3,79,10 -> %s/%s (Bengal-only verse, honest miss)'
+          % (r3['status'], r3.get('reason')))
+    gap = lookup('R. GORR.', '2,16,46')
+    check(gap['status'] == 'miss' and gap['reason'] == 'gorresio-etext-gap',
+          'R. GORR. 2,16,46 -> %s/%s (vol 2 scan has no text layer yet)'
+          % (gap['status'], gap.get('reason')))
 
     print('LIVE corpus checks (DB-gated):')
     if not os.path.exists(CORPUS_DB):
@@ -315,6 +392,10 @@ def selftest():
               'R. 2,91,26 -> hit, RU %d chars (N1)' % (len(r2['ru']) if r2['ru'] else 0))
         m = lookup('M.', '1,1')
         check(m['status'] == 'hit' and m['ru'], 'M. 1,1 -> hit, RU %d chars' % (len(m['ru']) if m['ru'] else 0))
+        g = lookup('R. GORR.', '1,22,1')
+        check(g['status'] == 'hit' and g['ru'] and g.get('map', {}).get('class') == 'matched',
+              'R. GORR. 1,22,1 -> hit via concordance, RU %d chars, class %s'
+              % (len(g['ru']) if g['ru'] else 0, g.get('map', {}).get('class')))
 
     print()
     if fails:
