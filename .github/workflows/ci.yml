@@ -99,8 +99,15 @@ jobs:
           git ls-files ':(glob)RussianTranslation/src/*.py' | xargs python -m py_compile
           python -m py_compile \
             RussianTranslation/src/pilot/proc_tree.py \
+            RussianTranslation/src/pilot/call_reservation.py \
             RussianTranslation/src/pilot/headless_worker.py \
             RussianTranslation/src/pilot/max_account_orchestrator.py \
+            RussianTranslation/src/pilot/bounded_staged_run.py \
+            RussianTranslation/src/pilot/bounded_supervisor.py \
+            RussianTranslation/src/pilot/coordinator.py \
+            RussianTranslation/src/pilot/promotion_journal.py \
+            RussianTranslation/src/pilot/h963_c4_gate0_probe.py \
+            RussianTranslation/src/pilot/latency_payload_sweep.py \
             RussianTranslation/src/pilot/windows100_selftest.py \
             RussianTranslation/src/pilot/run_observability.py \
             RussianTranslation/src/pilot/run_observability_selftest.py \
@@ -159,9 +166,12 @@ jobs:
         working-directory: RussianTranslation
         run: |
           python src/pilot/agent_budget.py
+          python src/pilot/call_reservation_selftest.py
           python src/pilot/headless_worker_selftest.py
           python src/pilot/execution_contract_selftest.py
           python src/pilot/max_account_orchestrator_selftest.py
+          python src/pilot/coordinator_hardening_selftest.py
+          python src/pilot/promotion_journal_selftest.py
           python src/pilot/windows100_selftest.py
           python src/pilot/run_observability_selftest.py
           python src/pilot/economy_ledger_selftest.py
@@ -170,6 +180,7 @@ jobs:
           python src/pilot/sense_count.py
           python src/pilot/window_selftest.py
           python src/store_path.py --selftest
+          python src/promote_final_cards.py --selftest
           python src/pilot/translation_memory.py selftest
           python src/citation_tm.py selftest
           python src/pilot/lang_parity_check.py
