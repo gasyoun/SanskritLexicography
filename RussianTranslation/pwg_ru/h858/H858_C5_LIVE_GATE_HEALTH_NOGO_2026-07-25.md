@@ -33,16 +33,25 @@ Both readings are **~1.8–2.0× the 30 000 ms ceiling**, so both fail the stric
 - Connection errors: **0**. Both calls returned a valid envelope with real output.
 - Events: `src/pilot/output/h963_c5_gate0_probe_events.jsonl` (per-account series)
 
-## c4 and c5 fail for ORTHOGONAL reasons — that is the finding
+## The profiles fail for ORTHOGONAL reasons — that is the finding
 
-| Profile | Calls | Latency | Blocker |
-|---|---|---|---|
-| **c4** (16:02Z, 18:18Z) | warm-up `rate_limit`, measured never ran | 17.9 s / 19.9 s — **fine** | quota / account state |
-| **c5** (18:56Z) | warm-up + measured both `success` | 59.7 s / 53.0 s — **~2× ceiling** | route latency |
+Three profiles gated, 25-07 → 26-07. **All NO-GO, none for the same reason as its neighbour:**
 
-Neither is a code or pipeline defect, and they do not share a cause: c4 has headroom but
-no quota; c5 has quota but no speed. Swapping profiles therefore does **not** unblock the
-window — it trades one NO-GO for a different one.
+| Profile | UTC | Calls | Latency | Blocker |
+|---|---|---|---|---|
+| **c4** | 25-07 16:02Z, 18:18Z | warm-up `rate_limit`, measured never ran | 17.9 s / 19.9 s — **fine** | quota / account state |
+| **c5** | 25-07 18:56Z | warm-up + measured both `success` | 59.7 s / 53.0 s — **~2× ceiling** | route latency |
+| **c1** | 26-07 02:37Z | warm-up `rate_limit`, measured never ran | 6.4 s — **fine** | quota / account state |
+
+Neither cause is a code or pipeline defect, and they do not share a root: c4 and c1 have
+latency headroom but no quota; c5 has quota but no speed. Swapping profiles therefore does
+**not** unblock the window — it trades one NO-GO for a different one.
+
+**The c1 reading also says the wait is not "until tomorrow".** It was taken at 02:37Z on a
+FRESH UTC day and still returned `rate_limit`, so whatever cap is binding does not reset at
+the UTC date boundary — consistent with the per-account rolling windows / weekly caps the
+`.ai_state` journal records elsewhere (the 24-07 c2 session-limit note). A future session
+should not assume a date change has cleared anything; it should re-probe and read the answer.
 
 c5's numbers sit squarely in the degradation band this repo has tracked since mid-July
 (H963 16-07: 104 870 ms; H1110 18-07: 98 625 ms; the c4 rows of 22-07/23-07: 59 831 ms and

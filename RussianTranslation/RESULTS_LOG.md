@@ -4,6 +4,29 @@ _Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 26-07-2026 - H858 c1 live gate: HEALTH_NOGO (rate_limit) - profile sweep now 3/3 NO-GO
+
+Executor: Opus 5 (`claude-opus-5[1m]`). Third profile gated for the same owed H858 window.
+
+| Profile | UTC | Calls | Latency | Blocker |
+|---|---|---|---|---|
+| c4 | 25-07 16:02Z, 18:18Z | warm-up `rate_limit`, measured never ran | 17.9 s / 19.9 s - fine | quota |
+| c5 | 25-07 18:56Z | warm-up + measured both `success` | 59.7 s / 53.0 s - ~2x ceiling | route latency |
+| c1 | 26-07 02:37Z | warm-up `rate_limit`, measured never ran | 6.4 s - fine | quota |
+
+c1: warm-up 6 424 ms `rate_limit`, measured never ran, wall clock 6.4 s. Same class as c4,
+fastest rejection of the three.
+
+**Two things this sweep establishes.** (1) The blockers are orthogonal - two profiles have
+latency headroom but no quota, one has quota but no speed - so profile-swapping does not
+unblock the window, it only changes which NO-GO you get. (2) **The wait is not "until
+tomorrow":** c1 was probed at 02:37Z on a FRESH UTC day and still returned `rate_limit`, so
+the binding cap does not reset at the date boundary. A future session must re-probe and read
+the answer rather than assume a date change cleared anything.
+
+No canary, no window, nothing promoted. Per-account evidence:
+`src/pilot/output/h963_<account>_gate0_probe_events.jsonl`.
+
 ## 25-07-2026 - H858 c5 live gate: HEALTH_NOGO (latency ~2x ceiling) - orthogonal to c4
 
 Executor: Opus 5 (`claude-opus-5[1m]`). First gate ever run on c5, after two c4 attempts the
