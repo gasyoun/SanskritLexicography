@@ -14,6 +14,43 @@ not an error.
 
 ## [Unreleased]
 
+## [1.88.0] — 2026-07-27
+
+### Fixed
+- **[integrity] a sheet generator could rewrite a LIVE lock in silence, invalidating votes
+  already cast** (H1703 follow-on, Opus 5 1M `claude-opus-5[1m]`). A generator reads live
+  data, so re-running one after its inputs moved re-cuts the sheet — and
+  `review_binding.write_lock()` overwrote the existing lock without a word. Found
+  concretely: re-running `compound_differs_review_sample.py --write` on `master` after the
+  H1703 extractor repairs renders `sha256:68a6297b…` where the committed lock binds
+  `sha256:31c106bb…`, i.e. a different 200 cards. Any votes in flight would have stopped
+  validating with no signal until `validate_decisions.py` rejected the export — the same
+  failure shape as the unbound sheet H1703 item 1 fixed, one step later. `write_lock()`
+  now raises `LockCollision` on a differing hash (same-hash rewrite still allowed, so
+  idempotent regeneration is unaffected; deliberate re-cut takes `force=True` /
+  `REVIEW_LOCK_FORCE=1`), with three selftest cases pinning it. Protects every sheet in
+  the estate. Also recorded: **arm 1 reproduces only at
+  [v1.83.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.83.0)**
+  (verified byte-for-byte), arm 2 on `master` — both sheets' HTML regenerated and placed
+  so their `file:///` links in
+  [REVIEW_SHEETS_INDEX.md](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md)
+  resolve (neither existed in the working checkout; both are gitignored by contract).
+
+### Added
+- **FINDINGS §476–§479 — the reusable half of H1703** (Opus 5 1M `claude-opus-5[1m]`).
+  Four measured findings a future session in any repo would otherwise rediscover:
+  **§476** repairing an extractor *grows* the disagreement queue it feeds (4,123 → 4,246
+  cards here) — a plan that assumes a shrink is asserting something unmeasured;
+  **§477** `wilson_lower(35,35)=0.901` vs `0.898` at 34 makes 35 the floor for a 0.90
+  per-stratum gate, and a censused stratum promotes with no interval at all (so a 0.890
+  bound is not "unpromotable"); **§478** a blind arm stratified on an agent's own rules
+  must never render the rule, and must take its card ids from the committed lock rather
+  than the frame TSV; **§479** PWG's etymology paren needs three rules, not one — bracket
+  masking, first-`{#…#}`-per-part, and surface-coverage arbitration for the derivation
+  ladders and disjunctions where first-wins ships a base instead of a member. §475
+  (MW `<k2>` variant fusion) marked ✅ FIXED with the one correction the original `So:`
+  needed: take the first variant that *carries the segmentation*, not simply the first.
+
 ## [1.87.0] — 2026-07-26
 
 ### Fixed
