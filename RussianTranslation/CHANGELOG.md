@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.82.0] - 2026-07-26
+
 ### Added — H1689: Gorresio vols 2/4/uk OCRed, e-text now covers all 7 kāṇḍas — `gorresio-etext-gap` extinct (26-07-2026)
 
 - The 1,427 image-only Cologne pages (vol 2 Ayodhyā sargas 10–127 · vol 4
