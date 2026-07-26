@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.66.0] — 2026-07-26
+
 ### Fixed
 - **P0 — a Windows timeout could leave a PAID descendant alive (26-07-2026).** Landed from the
   Codex hardening branch, step 1 of 2:
