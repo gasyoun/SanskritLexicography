@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.78.0] — 2026-07-26
+
 ### Changed
 - **FINDINGS §469 corrected — the csl-apidev call site was under-rated (H1695, 26-07-2026).**
   H1671'''s org-wide `to_slp1` audit classified [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev)'''s
