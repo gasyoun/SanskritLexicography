@@ -100,7 +100,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§453. PWG's sense-closing glyph "〉" nests FOUR enumeration tiers, not two](#453-pwgs-sense-closing-glyph--nests-four-enumeration-tiers-not-two--greek-letters-and-roman-numeral-markers-are-unrecognised-by-the-ru-pipelines-splitter) — Greek letters (1,444 occurrences) and roman-numeral markers (30) unrecognised by `microstructure.py`'s `MARK` regex, the same bug class as §447 one tier deeper.
 - 🟠 [§454. The pwg_ru RU store's `h` field has inconsistent semantics — not a reliable homograph-number join key](#454-the-pwg_ru-ru-stores-h-field-has-inconsistent-semantics--not-a-reliable-homograph-number-join-key) — holds a digit, an empty string, or a root-word string within the same file; 93.78% of store rows (10,881/11,603) touch a headword whose corrected `〉` segmentation changed sense count.
 - 🟡 [§455. PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline](#455-pwg-ls-citation-resolution-is-already-at-98-far-above-the-previously-cited-724-baseline) — `pwgbib.txt` grew to 4,390 entries since the 72.4% measurement; re-measure with `pwg_sources.py coverage` before citing a stale ceiling.
-- 🔴 [§465. PWG sense × DCS attestation collapses from 100% at lemma level to 0.67% at sense level — and two independent ceilings cause it](#465-pwg-sense--dcs-attestation-collapses-from-100-at-lemma-level-to-067-at-sense-level--and-two-independent-ceilings-cause-it) — 52/7,746 leaf senses locus-grounded; 12,953 `<ls>` sit on structural parent nodes (unattributable by PWG's own structure), and only 10.8% of DCS tokens carry a `m_wordsem` tag at all. Do not promise per-sense corpus frequency for PWG.
+- 🔴 [§465. PWG sense × DCS attestation collapses from ~40% at lemma level to 0.67% at sense level — and three independent constrictions cause it](#465-pwg-sense--dcs-attestation-collapses-from-40-at-lemma-level-to-067-at-sense-level--and-three-independent-constrictions-cause-it) — measured over ALL 109,050 PWG headwords: 60.2% absent from DCS entirely, 88.8% of DCS token mass untagged, and only 52/7,746 leaf senses locus-grounded. Do not promise per-sense corpus frequency for PWG; grounding outside the H1455 500 is *unknown*, never 0%.
 
 **Etymology & derivation**
 
@@ -3496,7 +3496,7 @@ word, or an `-en`/`-eln`/`-ern` verb ending, excluding genuine binomial shape), 
 
 ---
 
-### §465. PWG sense × DCS attestation collapses from 100% at lemma level to 0.67% at sense level — and two independent ceilings cause it
+### §465. PWG sense × DCS attestation collapses from ~40% at lemma level to 0.67% at sense level — and three independent constrictions cause it
 
 🔴 **Lemma-level corpus attestation for PWG is essentially free; sense-level attestation is
 not, and the gap is caused by two ceilings that must not be conflated — one inside the
@@ -3509,8 +3509,20 @@ re-derived). Of 943,877 DCS tokens under those lemmas, **102,085 (10.8%)** carry
 Only **52 of 7,746 PWG leaf senses (0.67%)** are grounded to a DCS attestation by a shared
 locus; against the other denominator, 52/5,201 DCS `wn` senses in frame (1.00%). Meanwhile
 **500/500** groups attest at lemma level — but that is **true by construction**: every frame
-row carries `dcs_attested=1`, so the frame was *selected* DCS-attested and every rate above is
-an **upper bound** on a random PWG sample.
+row carries `dcs_attested=1`, so the frame was *selected* DCS-attested.
+
+**Update 26-07-2026 (same handoff) — the unbiased frames now exist, and the real lemma-level
+rate is ~40%, not 100%.** Re-run over a seeded uniform sample (2,000 groups) and over **every
+PWG headword (109,050 groups)**: **43,352/109,050 = 39.8%** of PWG headwords have a DCS lemma,
+so **60.2% have no DCS attestation at any granularity** — for those no sense-level join is even
+conceivable. The 2,000-group sample estimates 40.4% (±2.2% at 95%), an interval that covers the
+population value, so the sampling frame is sound. The `m_wordsem` mass ceiling is **stable
+across all three frames** (10.8% / 11.9% / 11.2%), confirming it is a property of the corpus
+annotation rather than of headword selection. Sense-level grounding did **not** scale and is
+deliberately **not** reported as zero outside the H1455 aligner's 500-headword run (class
+`R0_grounding_not_computed`) — a 0% there would be the absence of a job, not a measurement.
+Full comparison:
+[`PWG_SENSE_DCS_FRAME_COMPARISON.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_FRAME_COMPARISON.md).
 
 The two ceilings:
 
@@ -3540,11 +3552,22 @@ Two further traps found while building it, both of which silently distort the de
 concordance as corpus attestation — its dominant `ls` tier (85,472 rows in frame) is PWG
 citing *itself*, excellent evidence for the dictionary's sense division and none at all that
 DCS attests it. Growing sense-level coverage means **adding texts and locus crosswalks**, not
-tuning a matcher; the pilot was deliberately not scaled for that reason. When quoting the
-"mass under a grounded lemma" figure (4.2%), quote it as the upper bound it is — a grounded
-link identifies one sense at one locus, not every token of the lemma.
+tuning a matcher. When quoting the "mass under a grounded lemma" figure (4.2%), quote it as the
+upper bound it is — a grounded link identifies one sense at one locus, not every token of the
+lemma.
 
-> **Source:** H1632 pilot join, 26-07-2026, Opus 5 (`claude-opus-5[1m]`) ·
+**Scaling settled it (26-07-2026): three independent constrictions multiply, and compute fixes
+none of the first two.** (1) 60.2% of PWG headwords are absent from DCS entirely — only a
+bigger corpus helps. (2) 88.8% of DCS token mass carries no `m_wordsem` tag — upstream
+annotation coverage, 219/270 texts. (3) Only the *residue* after those two is a matcher/locus
+problem, and it needs texts and crosswalks (Pañcatantra, Kathāsaritsāgara, vulgate↔BORI drift),
+not a better algorithm. So the honest ceiling for any sense-level PWG×DCS product is set by
+(1) and (2) long before matcher quality matters — running the pilot over the whole dictionary
+raised confidence in the diagnosis, not the coverage.
+
+> **Source:** H1632 pilot join + 26-07-2026 scale-up (random + full-PWG frames,
+> [PR #763](https://github.com/gasyoun/SanskritLexicography/pull/763)),
+> Opus 5 (`claude-opus-5[1m]`) ·
 > [`RussianTranslation/research/PWG_SENSE_DCS_ATTESTATION_PILOT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_ATTESTATION_PILOT.md)
 > + generator
 > [`pwg_sense_dcs_attestation_pilot.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_sense_dcs_attestation_pilot.py)

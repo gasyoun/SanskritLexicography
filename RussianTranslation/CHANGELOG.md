@@ -10,6 +10,28 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1632 scale-up: unbiased random frame + full-PWG run (26-07-2026)
+
+- The original H1632 pilot ran on a frame **selected DCS-attested**, so its "100%
+  attested at lemma level" was true by construction. Two unbiased frames now
+  answer the question it could not — a seeded random sample (2,000 groups) and
+  **every PWG headword (109,050 groups)**. Synthesis:
+  [research/PWG_SENSE_DCS_FRAME_COMPARISON.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_FRAME_COMPARISON.md).
+- **Lemma-level attestation is ~40%, not 100%.** 43,352 / 109,050 PWG headword
+  groups (39.8%) have a DCS lemma — so **60.2% have no DCS attestation at any
+  granularity**. The 2,000-group sample estimates 40.4% (±2.2% at 95%) and its
+  interval covers the population value, validating the sampling frame.
+- **The sense-tag ceiling is a corpus property, not a frame artefact** — 10.8% /
+  11.9% / 11.2% of DCS token mass across the three frames.
+- **Grounding is reported as *unknown*, never as zero.** The H1455 aligner covers
+  500 of 109,050 groups; the rest are classed `R0_grounding_not_computed`.
+  Publishing 0% there would manufacture a dictionary-wide rate out of the absence
+  of a job. Selftest asserts the join rates come back `None`, not `0.0`.
+- New `--frame-mode kosha|random|all` (+ `--n`/`--seed`) on the pilot script,
+  `--all` on the loci exporter, and
+  [research/compare_frames.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/compare_frames.py),
+  which reads the three `meta.json` files so the synthesis cannot drift from the runs.
+
 ### Added — edition-diff reading surface over edition_rel (H1631, N14 pilot, 26-07-2026)
 
 - New
