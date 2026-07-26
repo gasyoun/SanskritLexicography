@@ -14,6 +14,23 @@ not an error.
 
 ## [Unreleased]
 
+## [1.88.0] — 2026-07-27
+
+### Added
+- **FINDINGS §476–§479 — the reusable half of H1703** (Opus 5 1M `claude-opus-5[1m]`).
+  Four measured findings a future session in any repo would otherwise rediscover:
+  **§476** repairing an extractor *grows* the disagreement queue it feeds (4,123 → 4,246
+  cards here) — a plan that assumes a shrink is asserting something unmeasured;
+  **§477** `wilson_lower(35,35)=0.901` vs `0.898` at 34 makes 35 the floor for a 0.90
+  per-stratum gate, and a censused stratum promotes with no interval at all (so a 0.890
+  bound is not "unpromotable"); **§478** a blind arm stratified on an agent's own rules
+  must never render the rule, and must take its card ids from the committed lock rather
+  than the frame TSV; **§479** PWG's etymology paren needs three rules, not one — bracket
+  masking, first-`{#…#}`-per-part, and surface-coverage arbitration for the derivation
+  ladders and disjunctions where first-wins ships a base instead of a member. §475
+  (MW `<k2>` variant fusion) marked ✅ FIXED with the one correction the original `So:`
+  needed: take the first variant that *carries the segmentation*, not simply the first.
+
 ## [1.87.0] — 2026-07-26
 
 ### Fixed
