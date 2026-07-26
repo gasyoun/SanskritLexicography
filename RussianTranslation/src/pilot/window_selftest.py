@@ -910,6 +910,150 @@ def test_german_anchor_repair_behavioral():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_threaded_gate_exception_requeues_full_window():
+    """An unexpected future exception must become durable rc=3/full-window gate evidence."""
+    import audit_window as aw
+    real_nws = aw.run_nws_gate
+    real_prompt = aw.run_prompt_semantic_audit
+    real_sense = aw.run_sense_shortfall_gate
+
+    def clean_gate(name):
+        return {'argv': ['in-process', name], 'returncode': 0, 'stdout': '',
+                'stderr': '', 'seconds': 0.0, 'requeue': []}
+
+    def explode(*_args):
+        raise RuntimeError('synthetic threaded failure')
+
+    try:
+        aw.run_nws_gate = lambda *_args: clean_gate('nws')
+        aw.run_prompt_semantic_audit = explode
+        aw.run_sense_shortfall_gate = lambda *_args: clean_gate('sense_loss')
+        gates = aw.run_threaded_gates(
+            ['z~~2', 'a~~1'], set(), 'fixture.json', [], 'fixture-input')
+    finally:
+        aw.run_nws_gate = real_nws
+        aw.run_prompt_semantic_audit = real_prompt
+        aw.run_sense_shortfall_gate = real_sense
+
+    failed = gates['prompt_semantic']
+    if failed.get('returncode') != 3:
+        fail('threaded exception must become returncode=3, got %r' % failed)
+    if failed.get('requeue') != ['a~~1', 'z~~2']:
+        fail('threaded exception must deterministically requeue the full window: %r' % failed)
+    for field in ('argv', 'stdout', 'stderr', 'seconds'):
+        if field not in failed:
+            fail('threaded exception result lacks CompletedProcess field %s: %r'
+                 % (field, failed))
+    if 'RuntimeError: synthetic threaded failure' not in failed['stderr']:
+        fail('threaded exception diagnostic missing from stderr: %r' % failed['stderr'])
+    if set(gates) != {'nws', 'prompt_semantic', 'sense_loss'}:
+        fail('one future exception prevented remaining gate results: %r' % gates)
+
+    # Pin the integration consequence too: main() must reach write_reports/window_status,
+    # not merely return a well-shaped helper value.
+    originals = {
+        'run_nws_gate': aw.run_nws_gate,
+        'run_prompt_semantic_audit': aw.run_prompt_semantic_audit,
+        'run_sense_shortfall_gate': aw.run_sense_shortfall_gate,
+        'collect_cards': aw.collect_cards,
+        'run_py_inproc': aw.run_py_inproc,
+        'stale_check': aw.stale_check,
+        'emit_audit_event': aw.emit_audit_event,
+        'emit_stage_boundary': aw.emit_stage_boundary,
+    }
+    old_argv = sys.argv[:]
+    with tempfile.TemporaryDirectory() as tmp:
+        wf_path = os.path.join(tmp, 'wf_output.json')
+        report_dir = os.path.join(tmp, 'reports')
+        with open(wf_path, 'w', encoding='utf-8') as f:
+            json.dump({'results': [{'key': 'z~~2', 'card': None}]}, f)
+        try:
+            aw.run_nws_gate = lambda *_args: dict(
+                clean_gate('nws'), misattribution=[], rejected=[])
+            aw.run_prompt_semantic_audit = explode
+            aw.run_sense_shortfall_gate = lambda *_args: clean_gate('sense_loss')
+            aw.collect_cards = lambda *_args: clean_gate('collect')
+            aw.run_py_inproc = lambda *_args: dict(
+                clean_gate('child'), stdout='FLAGGED_JSON: []\n')
+            aw.stale_check = lambda *_args, **_kwargs: {'stale': False}
+            aw.emit_audit_event = lambda *_args, **_kwargs: None
+            aw.emit_stage_boundary = lambda *_args, **_kwargs: None
+            sys.argv = ['audit_window.py', wf_path, '--out-dir', report_dir]
+            try:
+                aw.main()
+            except SystemExit as exc:
+                if exc.code != 1:
+                    fail('future-failed audit must exit 1 after reporting, got %r' % exc.code)
+            else:
+                fail('future-failed audit unexpectedly returned without a status exit')
+        finally:
+            for name, value in originals.items():
+                setattr(aw, name, value)
+            sys.argv = old_argv
+
+        report_path = os.path.join(report_dir, 'audit_window.report.json')
+        status_path = os.path.join(report_dir, 'window_status.json')
+        if not os.path.exists(report_path) or not os.path.exists(status_path):
+            fail('future exception aborted before durable report/status: %s %s'
+                 % (os.path.exists(report_path), os.path.exists(status_path)))
+        report = json.load(open(report_path, encoding='utf-8'))
+        failed = report['gates']['prompt_semantic']
+        if failed.get('returncode') != 3 or failed.get('requeue') != ['z~~2']:
+            fail('durable future-failure evidence is incomplete: %r' % failed)
+        if 'prompt_semantic' not in report.get('crashed', []):
+            fail('durable report did not classify the future failure as crashed: %r'
+                 % report.get('crashed'))
+
+
+def test_quarantine_replace_failure_preserves_previous_destination():
+    """A failed atomic replace keeps the prior reject and yields rc=3/full-window evidence."""
+    import audit_window as aw
+    key = 'atomic~~reject'
+    with tempfile.TemporaryDirectory() as tmp:
+        src = os.path.join(tmp, key + '.merged.md')
+        dst = os.path.join(tmp, key + '.merged.REJECTED.md')
+        with open(src, 'w', encoding='utf-8') as f:
+            f.write('fresh candidate')
+        with open(dst, 'w', encoding='utf-8') as f:
+            f.write('prior rejected artifact')
+
+        old_out, old_replace = aw.OUT, aw.os.replace
+
+        def fail_replace(_src, _dst):
+            raise OSError('synthetic replace denial')
+
+        gate = {
+            'argv': ['in-process', 'nws_split.check_result'],
+            'returncode': 1,
+            'stdout': '',
+            'stderr': '',
+            'seconds': 0.0,
+            'requeue': [key],
+            'misattribution': [key],
+            'rejected': [],
+        }
+        try:
+            aw.OUT = tmp
+            aw.os.replace = fail_replace
+            aw.apply_nws_quarantine(gate, [key, 'other~~key'])
+        finally:
+            aw.OUT = old_out
+            aw.os.replace = old_replace
+
+        if open(dst, encoding='utf-8').read() != 'prior rejected artifact':
+            fail('failed quarantine destroyed or changed the prior rejected artifact')
+        if open(src, encoding='utf-8').read() != 'fresh candidate':
+            fail('failed quarantine unexpectedly removed the fresh source artifact')
+        if gate.get('returncode') != 3:
+            fail('quarantine OSError must become returncode=3 evidence: %r' % gate)
+        if gate.get('requeue') != [key, 'other~~key']:
+            fail('quarantine failure must requeue the deterministic full window: %r' % gate)
+        if 'OSError: synthetic replace denial' not in gate.get('stderr', ''):
+            fail('quarantine failure diagnostic missing from stderr: %r' % gate)
+        if gate.get('rejected'):
+            fail('failed quarantine was incorrectly reported as rejected: %r' % gate)
+
+
 def test_c4_gate0_probe_run_scope():
     """#729: the c4 health gate must read only the readings ITS OWN run wrote.
 
@@ -7907,6 +8051,8 @@ def main():
         test_partial_cards_requeue_and_stay_out_of_clean_sample,
         test_classify_run_verdicts,
         test_grammar_field_restore_behavioral,
+        test_threaded_gate_exception_requeues_full_window,
+        test_quarantine_replace_failure_preserves_previous_destination,
         test_c4_gate0_probe_run_scope,
         test_german_anchor_selftest,
         test_german_anchor_repair_behavioral,

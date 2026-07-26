@@ -458,6 +458,66 @@ def test_n_default_audit_fail_closed(td):
     print('  (n) default audit unreadable/empty/key-mismatch/gate-crash paths fail closed: PASS')
 
 
+def test_o_durable_call_counter(td):
+    spent = [1]  # e.g. one probe reservation already persisted
+    ran = []
+
+    def runner(window):
+        ran.append(window['id'])
+        spent[0] += 1  # failed/malformed workers still reserve before this result exists
+        return 'opaque'
+
+    audit = lambda _out, _window: {'clean_count': 0, 'requeue_keys': [], 'calls': 0}
+    sup = BoundedSupervisor([{'id': 'w0'}, {'id': 'w1'}], runner,
+                            os.path.join(td, 'o.json'), audit=audit, max_calls=2,
+                            call_counter=lambda: spent[0])
+    summary = sup.run()
+    assert summary['calls_spent'] == 2 and ran == ['w0'], (summary, ran)
+    assert sup.history[0]['calls'] == 1, sup.history
+
+    ran.clear()
+    sup = BoundedSupervisor([{'id': 'never'}], runner, os.path.join(td, 'o-zero.json'),
+                            audit=audit, max_calls=2, call_counter=lambda: spent[0])
+    assert sup.run()['stop_reason'] == STOP_CALL_COUNT and not ran
+    print('  (o) durable pre-spawn ledger is authoritative; probes/failures count before next window: PASS')
+
+
+def test_p_durable_cost_counter(td):
+    usage = {'observed_cost_usd': 0.10, 'cost_evaluable': True}
+    ran = []
+
+    def runner(window):
+        ran.append(window['id'])
+        usage['observed_cost_usd'] = 0.25
+        return 'opaque'
+
+    audit = lambda _out, _window: {'clean_count': 1, 'requeue_keys': []}
+    sup = BoundedSupervisor([{'id': 'w0'}, {'id': 'w1'}], runner,
+                            os.path.join(td, 'p.json'), audit=audit, budget_cap=0.20,
+                            usage_counter=lambda: dict(usage))
+    summary = sup.run()
+    assert summary['stop_reason'] == STOP_BUDGET and summary['budget_spent'] == 0.25
+    assert ran == ['w0'], ran  # observed ceiling is necessarily a post-call stop
+
+    usage.update(observed_cost_usd=0.30, cost_evaluable=False)
+    ran.clear()
+    sup = BoundedSupervisor([{'id': 'never'}], runner, os.path.join(td, 'p-bad.json'),
+                            audit=audit, budget_cap=1.0,
+                            usage_counter=lambda: dict(usage))
+    assert sup.run()['stop_reason'] == STOP_COST_UNEVALUABLE and not ran
+    usage.update(observed_cost_usd=0.30, cost_evaluable=True)
+
+    def crashed(_window):
+        usage['cost_evaluable'] = False
+        raise RuntimeError('worker died before result telemetry')
+
+    sup = BoundedSupervisor([{'id': 'crash'}], crashed, os.path.join(td, 'p-crash.json'),
+                            audit=audit, budget_cap=1.0,
+                            usage_counter=lambda: dict(usage))
+    assert sup.run()['stop_reason'] == STOP_COST_UNEVALUABLE
+    print('  (p) durable probe/worker cost drives post-call ceiling; unevaluable fails before next spawn: PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_a_window_count(td)
@@ -474,6 +534,8 @@ def main():
         test_l_cost_unevaluable_harmless_without_ceiling(td)
         test_m_calls_clean_survive_restart(td)
         test_n_default_audit_fail_closed(td)
+        test_o_durable_call_counter(td)
+        test_p_durable_cost_counter(td)
     print('bounded_supervisor_selftest: PASS')
 
 

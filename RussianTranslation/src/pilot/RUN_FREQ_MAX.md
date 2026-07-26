@@ -1,6 +1,6 @@
 # Runbook — frequency queue on the headless CLI (manifest v2)
 
-_Created: 09-07-2026 · Last updated: 24-07-2026_
+_Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Goal: scale the PWG→Russian production run in DCS-frequency order, with giant
 roots split into single-pass units and re-glued after translation. This is the
@@ -66,6 +66,23 @@ tracked-file drift and is wired into `window_selftest.py`
 - **Execution route (H1110):** production is the **headless CLI on manifest v2**, not
   Workflow-from-session. Bind a named profile (`CLAUDE_CONFIG_DIR` + roster slot) before
   any paid call; promotion hard-refuses unbound payloads (H1080 Stage 3).
+- **Durable call budget (25-07-2026 hardening):** the bounded run, its fleet probes,
+  and every headless worker share one `pwg.call_reservation.v1` ledger keyed by
+  `run_id`. `max_calls` is a strict pre-spawn ceiling: reserve first, then spawn;
+  reservations survive crashes and are never refunded. `--resume` must reopen the
+  same ledger/run ID and refuses a different saved ceiling.
+- **Cost semantics:** `--cost-ceiling` is an observed-cost stop evaluated after
+  completed calls, not a pre-spend dollar guarantee. Pending, absent, malformed, or
+  otherwise unevaluable telemetry causes `STOP_COST_UNEVALUABLE`; it is never treated
+  as zero. Use `--max-calls` for the strict upper bound on call count.
+- **Profile/process isolation:** one `ActiveCallClaim` spans each complete warm-up +
+  measured probe pair, and the same profile fingerprint lock spans generation. On
+  Windows, Claude is assigned while suspended to a kill-on-close Job Object; timeout
+  and exception cleanup terminate the descendant tree, not only the launcher.
+- **Bound artifacts:** before a paid manifest-v2 spawn, the orchestrator rechecks the
+  saved run ID, manifest SHA-256, profile binding, sealed preflight SHA-256 and exact
+  selected-key scope, plus the reservation ledger. The worker seals its result SHA-256;
+  `record-output`/`record-output-batch` require the matching run and result hash.
 - **Live-gate before every paid window:** fresh
   [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
   (representative ≥5 KB health + separate `dq_canary_puregloss`). A previous session's GO
@@ -128,6 +145,15 @@ tracked-file drift and is wired into `window_selftest.py`
   longer regress a card; (4) **presplit topup is sound** — `autosplit_requeue.frag_groups()`
   reconstructs the fragment partition with the budgets of the run that minted the `gN:fM`
   ids (pass the wf `meta` + key), instead of always the heal budget.
+- **Promotion closure (25-07-2026 hardening):** ready leases promote only through
+  the coordinator's journaled batch path. `pwg.promotion_journal.v1` advances
+  `prepared → store_committed → derived_validated → coordinator_committed →
+  complete`, with one canonical-store claim held throughout. Every coordinator
+  startup reconciles the single incomplete journal; a store/coordinator hash that
+  matches neither sealed before nor expected-after state fails closed. Card TM,
+  fragment TM, denylist state, coordinator bytes, and one deterministic
+  promotion-registry event per lease/promotion are sealed and replayed
+  idempotently.
 
 The earlier "Opus-judged-every-card" framing was the validation phase; "Sonnet-bulk/Opus-on-reject"
 was the 2026-06-26 escalation policy; the per-card LLM judge itself is now dropped from the bulk path.
@@ -190,8 +216,11 @@ manner/position forcing) as soft-judged guidance (judge check 7). Source tables:
 
 ## Window loop
 
-The loop is fixed: **preflight → generate optimized harness → Max Workflow → deterministic
-audit → requeue or sampled semantic judging**. Do not skip or reorder these steps.
+The loop is fixed: **preflight → prepare a profile-bound manifest v2 → bounded
+headless execution → sealed batch record + deterministic audit →
+`AWAITING_REVIEW` → reviewed promotion or requeue**. Do not skip or reorder
+these steps. The generated Workflow JS remains useful as historical/forensic
+evidence, not as the production execution surface.
 
 For enough data to estimate speed and quality, use the live runnable queue plus
 `perf_preflight.py`:
@@ -225,13 +254,13 @@ The first command prints the structural state plus one `next action` and one
 `next command`; if it disagrees with stale notes elsewhere, trust the command
 output and `src\pilot\output\window_status.json`. The second command is read-only
 performance accounting: it reports card/fragment TM hits, degenerate pass-through,
-presplit routing, batch count, and `agent_expected_after_tm` before Max spend. Use
+presplit routing, batch count, and `agent_expected_after_tm` before paid spend. Use
 `--json` when saving a machine-readable preflight report. With more than one root it
 prints a compact comparison table plus a recommended order: zero-agent roots are skipped,
 low-agent roots run first, and high-agent roots are deferred until cache refresh or
 calibration. If presplit keys exist while `translation_memory.frag.<lang>.jsonl` is empty,
 the preflight warns to run
-`python src\pilot\translation_memory.py build-frags --lang ru` after a heal Workflow emits
+`python src\pilot\translation_memory.py build-frags --lang ru` after a heal run emits
 `frag_prov`; if no matching `wf_output*.json` contains `frag_prov`, the warning says so.
 
 Generate the harness for the root. **Default: the batched + masked v2 harness**
@@ -249,7 +278,7 @@ created, `python src\pilot\translation_memory.py build-frags --lang ru`. See
 
 ```powershell
 python src\pilot\gen_opt_harness2.py sTA            # default (batched+masked, TM auto, output-budget 90)
-# -> writes src\pilot\run_pilot_wf.opt2.js  (run THIS in Max, save result as wf_output.json)
+# -> writes the optimized harness and manifest inputs; do not run the JS manually in Max
 # --output-budget=N tunes citation-weighted output packing (default 90).
 # --budget=N without --output-budget keeps legacy byte-mode packing.
 # --no-tm disables automatic card/fragment translation-memory reuse.
@@ -266,39 +295,35 @@ Do not widen degenerate pass-through for editorial correction prose (`lies:`, `z
 etc.); those rows stay in the normal LLM lane unless a future fixture proves exact
 deterministic reconstruction is safe.
 
-Legacy per-card harness (still supported; no masking/batching):
+Legacy per-card harness (forensics/replay only; no masking/batching):
 
 ```powershell
 python src\pilot\gen_opt_harness.py sTA             # -> run_pilot_wf.opt.js
 ```
 
-Confirm the committed prompt template and generated harness still carry the
-manual-derived semantic rules before Max spend:
+Confirm the committed prompt template and generated artifacts still carry the
+manual-derived semantic rules before any paid spend:
 
 ```powershell
 python src\pilot\prompt_rule_audit.py --fail-on-missing
 ```
 
-After this succeeds, a stale `window_status.json` from the previous audit is no longer the next
-operator step. `root_window_status.py` should now tell you to run the generated harness in Max,
-then audit the fresh `wf_output.json`.
+After this succeeds, a stale `window_status.json` from the previous audit is no
+longer the next operator step. Follow the prepared manifest-v2 lease through
+`bounded_staged_run.py --execute --stop-before-promote`, with explicit
+`--max-calls`, a stable `--run-id`, and a durable `--call-reservation` path.
+The command validates all scoped preflights before the first probe, then uses
+the same reservation ledger for the fresh probe pair and worker calls.
 
-Run the generated harness (default `src\pilot\run_pilot_wf.opt2.js`, or the legacy
-`run_pilot_wf.opt.js`) in the Claude/Max Workflow surface and save the JSON result as
-`wf_output.json`.
-**Immediately after saving, verify the file actually landed before closing the Workflow
-tab:** `meta.root` in the freshly-saved `wf_output.json` must equal the root you just ran and
-`meta.generated_at` must be newer than the harness generation time. The H145 `vid` run
-(03-07-2026) was lost exactly here — the Workflow completed but the save never reached disk,
-and the stale file silently still held the previous root. A Claude Code session driving the
-Workflow tool writes the file itself and does not have this manual hand-off gap; prefer that
-route for production windows. Both are self-contained: they inline inputs, disable translate-agent tools
-with `tools: []`, and return top-level workflow provenance (`meta`: root, mode, selected keys,
-rootmap SHA-256, per-input SHA-256). The v2 harness additionally batches, masks, and restores
-`{Tn}` in-JS — its output is already canonical, so the audit step is unchanged. It is the
-supported route for the in-chat Workflow tool.
-Do not run the committed `run_pilot_wf.js` directly for production windows; it is the template
-used by `gen_opt_harness.py`.
+The orchestrator writes and hash-seals the result itself; there is no manual
+Workflow-save hand-off. `record-output-batch` records completed leases
+sequentially and emits `RECORD_OUTPUT_BATCH_PROGRESS` after each durable commit.
+If item N fails, only the exact earlier prefix is committed; item N and the
+remaining leases are safe to retry. A clean
+`--stop-before-promote` run writes the hash-bound
+`pwg.awaiting_review.v1` checkpoint with status `AWAITING_REVIEW` and leaves
+the canonical store/TM untouched. Do not run `run_pilot_wf.js`,
+`run_pilot_wf.opt.js`, or `run_pilot_wf.opt2.js` manually for production.
 
 Before the mechanical window audit, run the cheap translated-card semantic triage:
 
@@ -329,7 +354,7 @@ Audit the window with the single deterministic command:
 python src\pilot\audit_window.py wf_output.json --root sTA --write-requeue
 ```
 
-If Max shows token/time numbers, record them on the same audit command so the ledger captures
+If the CLI reports token/time numbers, record them on the same audit command so the ledger captures
 the production economics:
 
 ```powershell
@@ -343,16 +368,17 @@ python src\pilot\audit_window.py wf_output.json --root sTA --write-requeue `
 
 If the weekly Max cap fires, add `--weekly-cap-fired --weekly-cap-cumulative-tokens N`.
 
-For Stage B and later roots, change only `--root` and the generated harness root
-name. Do not combine multiple roots into one `wf_output.json`; audit economics
+For Stage B and later roots, change only `--root` and the prepared manifest
+scope. Do not combine multiple roots into one `wf_output.json`; audit economics
 and requeue keys must remain root-scoped.
 
 The audit first compares workflow provenance against the current rootmap and raw/portrait
 inputs. Stale output (missing `meta`, key mismatch, rootmap hash mismatch, or input hash
 mismatch) stops before collect/gates/glue and records state `stale_artifact`. Check
-`root_window_status.py`: if the optimized harness already matches the current rootmap, rerun
-that harness in Max and save a fresh `wf_output.json`; regenerate only when the status command
-says the harness is missing, invalid, or scoped to the wrong keys. Use `--allow-stale` only for
+`root_window_status.py`: if the optimized inputs and prepared manifest already
+match the current rootmap, resume the bound headless attempt and record its
+sealed result; regenerate only when the status command says the artifacts are
+missing, invalid, or scoped to the wrong keys. Use `--allow-stale` only for
 forensic inspection.
 If stale output is refused, `--write-requeue` does **not** overwrite the existing
 `requeue.keys.txt`; stale artifacts cannot produce a trustworthy mechanical requeue list.
@@ -389,9 +415,10 @@ Preparation and audit subprocesses do not hold the global state lock. Their pers
 `preparing`/`auditing` operation tokens keep `status` and unrelated claims responsive, with a
 10-minute preparation timeout and a 30-minute audit timeout.
 
-**Default to one Workflow window at a time; treat 3-wide as an upper bound, not a target.**
-Each generated harness internally fans out to ~8–14 agents, so N concurrent root-harnesses
-peak at N×~12 Sonnet agents on a single Max session. Slice D launched 18 at once →
+**Default to one bounded headless window at a time; treat ordinary 3-wide as an
+upper bound, not a target, and use `max-wide=1` for the bounded paid route.**
+Each generated window may internally fan out to ~8–14 calls, so N concurrent roots
+can still peak at N×~12 Sonnet calls on a single Max account. Slice D launched 18 at once →
 ~140–250 peak agents → ~80+ `Server is temporarily limiting requests` 429s → 117 transient
 null cards. H317 then showed that even **3 concurrent medium windows** can collapse if the
 session/provider is already unstable (0/38 clean, and the solo retry still saw repeated
@@ -415,8 +442,8 @@ not a substitute for it.
 ## Flaky API / Internet Policy
 
 - There is no Claude API client in this repo for production PWG translation. Claude work runs
-  through the Max Workflow surface, so the local scripts must make interruptions resumable
-  instead of trying to hide network loss.
+  through the profile-bound headless CLI; the coordinator, call-reservation ledger, process-tree
+  cleanup, sealed results, and promotion journal make interruptions explicit and resumable.
 - The generated optimized harness retries each card once. A still-null card is recorded by
   `audit_window.py`. The requeue list is **split** so a cheap re-run never triggers expensive
   rework: `requeue.transient.keys.txt` (null cards = rate-limit/dropout) vs
@@ -469,8 +496,9 @@ python src\pilot\requeue_from_audit.py sTA --transient   # null cards only (stat
 python src\pilot\requeue_from_audit.py sTA               # all requeue keys
 ```
 
-Run the regenerated `run_pilot_wf.opt2.js`, save its JSON as the next `wf_output.json`, and rerun
-`audit_window.py`.
+Prepare the regenerated manifest as a coordinator requeue attempt and resume it
+through the same bounded headless route. Do not manually run/save the generated
+Workflow JS.
 
 If `requeue.keys.txt` is empty and `judge_sample.keys.txt` is non-empty, send only those keys to
 the sampled semantic judge outside Python. Do not block mechanical acceptance on unrelated
@@ -478,11 +506,12 @@ documentation cleanup or print-readiness gates.
 
 ## Instrumentation
 
-For each Max window, record:
+For each bounded headless window, record:
 
 - `OFFSET`, `LIMIT`, fresh units, rejected units, and successful merged cards;
 - wall-clock minutes;
-- Max-reported input/output/cache tokens if available;
+- CLI-reported input/output/cache tokens and observed cost, or the explicit
+  unevaluable-cost stop;
 - whether the weekly cap fired, and cumulative tokens at that moment.
 
 `audit_window.py` records the operational state, next action, sample counts, and any token/time
@@ -492,7 +521,7 @@ feasibility question: one Max seat over roughly two months vs a paid API bulk ru
 
 ## Post-launch closeout
 
-Every Workflow/API launch with a failure, null wave, stall, kill, stale-artifact refusal,
+Every headless/legacy-Workflow/API launch with a failure, null wave, stall, kill, stale-artifact refusal,
 retry pass, cost drift, or suspicious residual must be registered in
 [`../../LAUNCH_FUCKUPS.md`](../../LAUNCH_FUCKUPS.md) before the handoff is closed. The
 entry must include expected vs actual agents/tokens, pass count, failure class, root cause,
@@ -581,7 +610,14 @@ python src\pilot\gen_opt_harness2.py <root_or_window>
 python src\pilot\coordinator.py prepare LEASE_ID `
   --profile-slot c4 --config-dir C:\path\to\claude-c4 `
   --executor-lane serial-whole-card
-# headless execute: max-wide=1, --stop-before-promote, NO --max-agents 1 on multi-key
+python src\pilot\bounded_staged_run.py `
+  --plan <plan.json> --coord-dir <coordinator-dir> `
+  --coordinator src\pilot\coordinator.py --cwd RussianTranslation `
+  --events <events.jsonl> --only-profile c4 --max-accounts 1 `
+  --max-windows 1 --max-calls <N> --run-id <stable-run-id> `
+  --call-reservation <calls.json> --checkpoint <checkpoint.json> `
+  --execute --stop-before-promote
+# No --max-agents 1 on multi-key; clean output stops at AWAITING_REVIEW.
 python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 # /pwg-window-close: promote only if bound manifest-v2 + gates green
 ```
@@ -678,5 +714,5 @@ The frequency queue milestone is done when:
 - zero `*.merged.REJECTED.md` files remain for that window;
 - rootmap-backed giant roots have matching `*.NESTED.md` outputs;
 - the cost/quota table has enough windows to estimate the run duration;
-- every non-clean Workflow/API launch in the window has a complete
+- every non-clean headless/legacy-Workflow/API launch in the window has a complete
   `LAUNCH_FUCKUPS.md` entry and passes `check_launch_ledger.py`.

@@ -56,6 +56,42 @@ counters exist to answer it the moment a window runs.
 without `--no-residual`, so every suite run appended a junk row to the tracked
 `no_pwg_residuals.jsonl` — the registry that decides which keys are BLOCKED from requeue.
 Fixed with the flag; the polluting row was reverted.
+### Unreleased hardening — paid-call accounting and crash-recoverable promotion (25-07-2026)
+
+The headless route acquired two missing transaction boundaries. First,
+`pwg.call_reservation.v1` makes a model call a durable spend decision: the
+shared run ledger reserves one slot atomically before every probe or worker
+spawn and never refunds it after a crash. This makes `max_calls` a true
+pre-spawn ceiling across probes and generation. The separate cost ceiling
+remains an observed-cost stop after completed calls, not a strict dollar
+preauthorization; missing, pending, or malformed telemetry is
+`STOP_COST_UNEVALUABLE`, never zero. The profile lock now covers the whole
+warm-up + measured probe pair and the worker run, while Windows launchers enter
+a kill-on-close Job Object before their first instruction so a timeout cannot
+leave the native paid child orphaned.
+
+The execution seam is sealed end to end: saved run ID, manifest hash, preflight
+hash and exact key scope, profile fingerprint, reservation ledger, worker
+result hash, and coordinator submission must agree. `record-output-batch`
+keeps the existing per-lease audit transaction but runs it sequentially,
+emitting the exact durably committed prefix after each item; a failed item and
+the suffix remain retryable.
+
+Second, batched promotion now uses `pwg.promotion_journal.v1` with phases
+`prepared → store_committed → derived_validated → coordinator_committed →
+complete`. A single canonical-store claim is held for the whole sequence. The
+journal seals before/after store bytes, backup, cleaned inputs, card/fragment
+TM, denylist state, exact coordinator bytes, and deterministic per-lease
+registry projection. Every coordinator command first reconciles the one
+incomplete journal; interrupted store/coordinator replacements are adopted
+only when the exact expected hash is already live, while unrelated bytes or
+multiple incomplete journals stop closed.
+
+This entry records implementation state, not a release or live acceptance.
+No paid translation was started in this hardening pass. The next authorized
+attempt remains one profile, `max-wide=1`, explicit durable call ledger, and
+`--stop-before-promote`; a clean run ends at hash-bound `AWAITING_REVIEW`
+before any canonical-store mutation.
 
 ### H1386 — the H1339 review landing set: resume recovery, frag-TM memory, prepare-batch (22-07-2026)
 
@@ -858,6 +894,14 @@ Two consequences worth internalising before touching the lane:
   `selected_keys` rejection, an OS-released cross-process lock, owner-preserving fragment-TM
   v2 and the `AWAITING_REVIEW` checkpoint all landed in
   [PR #530](https://github.com/gasyoun/SanskritLexicography/pull/530).
+- **The 25-07 unreleased hardening closes the remaining cross-process seams.**
+  Calls are reserved durably before spawn across both probe and generation
+  lanes; cost-capped runs stop closed when observed telemetry cannot be
+  evaluated; profile claims cover complete probe pairs; Windows process trees
+  are kernel-owned; run/manifest/preflight/result hashes are bound through
+  recording; and promotion is startup-reconciled under one journal and one
+  canonical-store claim through `complete`. It started no paid translation and
+  does not change the standing stop-before-promote/review gate.
 
 **Live status evolves; do not freeze "host-blocked" as permanent.** H1110 Phase 6
 (18-07) terminated at **`HEALTH_NOGO_BY_ENVIRONMENT`** (c4 health **98,625 ms** vs a
