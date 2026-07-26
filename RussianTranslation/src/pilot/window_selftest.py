@@ -22,6 +22,22 @@ import xml.etree.ElementTree as ET
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+# SAFETY, and it is not theoretical. `coordinator.promote_ready` now calls
+# `promote_final_cards.batch_promote(...)` IN-PROCESS instead of shelling out to
+# `--batch-manifest`, so a fixture's fake `run_cmd` no longer stands between this suite and
+# the real promotion path. `promote_final_cards.DEFAULT_STORE` resolves through
+# `store_path.canonical_store`, which walks to the MAIN WORKTREE's canonical
+# `pwg_ru_translated.jsonl` unless PWG_RU_STORE is set -- so the promotion tests were
+# reading, and on a passing validation would have WRITTEN, the live ~11.6k-row store.
+# Pin a scratch path BEFORE any repo import, since DEFAULT_STORE is resolved at import time.
+# (Same class as issue #726: a selftest reaching production data.)
+_SCRATCH_STORE = os.path.join(tempfile.gettempdir(), 'window_selftest_scratch_store.jsonl')
+os.environ.setdefault('PWG_RU_STORE', _SCRATCH_STORE)
+if not os.path.exists(os.environ['PWG_RU_STORE']):
+    # A MISSING store is itself refused ("a missing/misresolved production store must not
+    # disappear silently"), so the scratch stand-in has to exist -- empty is fine.
+    open(os.environ['PWG_RU_STORE'], 'a', encoding='utf-8').close()
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 ROOT = os.path.dirname(SRC)
@@ -1052,6 +1068,71 @@ def test_quarantine_replace_failure_preserves_previous_destination():
             fail('quarantine failure diagnostic missing from stderr: %r' % gate)
         if gate.get('rejected'):
             fail('failed quarantine was incorrectly reported as rejected: %r' % gate)
+
+
+def sealed_card(key, senses=None):
+    """A schema-complete final card. Promotion validates the card itself now, so a bare
+    {'key1': k} stub no longer stands in for one (CARD_REQUIRED = key1/iast/records/notes).
+
+    `senses` defaults to EMPTY: a fixture that only needs a structurally valid card should
+    not also mint sense identities, or promoting the same artifact from two paths (a
+    lease's wf_output and its clean_output are the same rows) trips the duplicate-identity
+    guard on content the test never cared about. Pass senses explicitly when the test is
+    about sense content."""
+    return {'key1': key, 'iast': key, 'notes': '',
+            'records': [{'h': key, 'grammar': '',
+                         'senses': list(senses or [{'tag': '1', 'german': 'Feuer',
+                                                    'russian': 'огонь'}])}]}
+
+
+def sealed_wf_meta(keys, root='test', nominal=False):
+    """A manifest-v2 `meta` block that satisfies validate_promotion_entry.
+
+    Promotion is now a sealed contract: v1/unbound workflow output is historical-only and
+    cannot be promoted, and the six `execution.*` fields plus per-key input hashes and
+    provenance must all be present. Fixtures that only need "a promotable result" build
+    their meta from here rather than each re-deriving the contract (and drifting from it).
+    Every field below is one the validator names explicitly.
+    """
+    h = '0' * 64
+    return {
+        'execution_manifest_schema': 'pwg.headless_execution_manifest.v2',
+        'execution': {
+            'profile_slot': 'c4',
+            'config_dir_fingerprint': h,
+            'execution_route': 'claude-cli-headless',
+            'executor_lane': 'serial-whole-card',
+            'validation_method': 'window_selftest-fixture',
+            'model_identifier': 'claude-sonnet-5',
+        },
+        'selected_keys': list(keys),
+        'input_hashes': {k: {'raw_sha256': h, 'portrait_sha256': h} for k in keys},
+        'generator': 'window_selftest',
+        'schema_version': 'v2',
+        'generated_at': '2026-07-26T00:00:00Z',
+        'provenance_classes': {k: 'real' for k in keys},
+        'nominal': nominal,
+        'root': root,
+    }
+
+
+PREFLIGHT_STDOUT = json.dumps({
+    'schema': 'pwg.performance_preflight.v1',
+    'root': 'test',
+    'cost_gate': {'over_ceiling': False},
+})
+
+
+def _sealed_preflight(tmp, root='test', keys=()):
+    """A real, self-validating preflight artifact for coordinator fixtures.
+
+    `register_prepared_lease` hashes this path and `validate_lease_preflight` re-checks the
+    hash and the cost gate before a lease may consume runtime, so a fixture cannot pass a
+    placeholder string any more. `write_synthetic_preflight` is the shipped builder for
+    exactly this -- explicit zero-work evidence, validated on write.
+    """
+    import max_account_orchestrator as _mao
+    return _mao.write_synthetic_preflight(os.path.join(tmp, 'preflight.json'), root, list(keys))
 
 
 def test_c4_gate0_probe_run_scope():
@@ -3199,7 +3280,8 @@ def test_coordinator_nominal_reservations():
 
             try:
                 coordinator.register_prepared_lease(
-                    'overlap', 'test', ['b', 'd'], 'harness.js', manifest, 'preflight.json')
+                    'overlap', 'test', ['b', 'd'], 'harness.js', manifest,
+                    _sealed_preflight(tmp, 'test', ['b', 'd']))
             except SystemExit as exc:
                 if 'already active' not in str(exc):
                     raise
@@ -3227,12 +3309,18 @@ def test_coordinator_nominal_reservations():
             barrier = threading.Barrier(2)
             outcomes = []
 
+            # Built ONCE, outside the threads: two racers writing the same artifact would
+            # collide in os.replace on Windows and neither would reach the reservation
+            # logic this test is about. The shared path is also the realistic shape --
+            # both registrations reference already-sealed preflight evidence.
+            race_preflight = _sealed_preflight(tmp, 'test', ['e', 'f'])
+
             def register_race(lease_id):
                 barrier.wait()
                 try:
                     coordinator.register_prepared_lease(
                         lease_id, 'test', ['e', 'f'], 'harness.js', manifest,
-                        'preflight.json')
+                        race_preflight)
                     outcomes.append('accepted')
                 except SystemExit:
                     outcomes.append('rejected')
@@ -3335,10 +3423,18 @@ def test_coordinator_runtime_state_machine_and_cas():
             # Two independent dispatchers racing disjoint batches may both validate against an
             # empty snapshot, but the state lock must serialize the commit and keep the cap <=3.
             state = coordinator.default_state()
+            # begin_run now calls validate_lease_preflight, so a hand-built 'prepared' lease
+            # needs the sealed evidence a real preparation would have left: an existing
+            # preflight artifact and its hash. Without it BOTH racers SystemExit on
+            # "no sealed preflight evidence", and the cap assertion below then reads as a
+            # concurrency failure when it is a fixture gap.
+            race_pf = _sealed_preflight(tmp, 'race')
+            race_pf_sha = coordinator.sha256_file(race_pf)
             for i in range(5):
                 state['leases'].append({
                     'id': 'race%d' % i, 'kind': 'verb', 'target': 'root%d' % i,
                     'state': 'prepared', 'artifact_dir': os.path.join(tmp, 'r%d' % i),
+                    'preflight_path': race_pf, 'preflight_sha256': race_pf_sha,
                 })
             coordinator.save_state(state)
             barrier = threading.Barrier(2)
@@ -3384,7 +3480,7 @@ def test_coordinator_runtime_state_machine_and_cas():
                 if script == 'perf_preflight.py':
                     entered.set()
                     release.wait(5)
-                    return SimpleNamespace(returncode=0, stdout='{}', stderr='')
+                    return SimpleNamespace(returncode=0, stdout=PREFLIGHT_STDOUT, stderr='')
                 harness = next(value.split('=', 1)[1] for value in cmd if value.startswith('--out='))
                 manifest = next(value.split('=', 1)[1] for value in cmd
                                 if value.startswith('--manifest-out='))
@@ -6180,14 +6276,16 @@ def test_coordinator_cost_gate_enforced():
     tmp = tempfile.mkdtemp()
     flagged = os.path.join(tmp, 'preflight.json')
     with open(flagged, 'w', encoding='utf-8') as f:
-        json.dump({'reports': [{'root': 'kAla',
+        json.dump({'schema': 'pwg.performance_preflight.matrix.v1',
+                   'reports': [{'root': 'kAla',
                                 'cost_gate': {'over_ceiling': True, 'est_cost_usd': 79.83,
                                               'est_cost_per_card_usd': 4.0},
                                 'cost_partition': {'run_now': ['a'],
                                                    'defer_monster': ['b', 'c']}}]}, f)
     clean = os.path.join(tmp, 'preflight_clean.json')
     with open(clean, 'w', encoding='utf-8') as f:
-        json.dump({'reports': [{'root': 'vah', 'cost_gate': {'over_ceiling': False}}]}, f)
+        json.dump({'schema': 'pwg.performance_preflight.matrix.v1',
+                   'reports': [{'root': 'vah', 'cost_gate': {'over_ceiling': False}}]}, f)
     captured = []
     old = co.defer_monster
     co.defer_monster = lambda *a, **k: captured.append((a, k))
@@ -7353,13 +7451,14 @@ def test_h1420_p10_promote_rebuilds_tm_in_finally():
             status_path = os.path.join(adir, 'window_status.json')
             report_path = os.path.join(adir, 'audit_window.report.json')
             manifest = os.path.join(adir, 'manifest.json')
-            payload = {'results': [{'key': 'k', 'card': {'key1': 'k'}}]}
+            payload = {'meta': sealed_wf_meta(['k']),
+                       'results': [{'key': 'k', 'card': sealed_card('k')}]}
             for path, value in ((wf, payload), (clean, payload),
                                 (status_path, {'state': 'clean', 'requeue_keys': []}),
                                 (report_path, {'workflow': wf, 'requeue': [], 'crashed': [],
                                                'stale_check': {'ok': True}}),
-                                (manifest, {'schema': 'pwg.headless_execution_manifest.v1',
-                                            'meta': {'selected_keys': ['k'], 'input_hashes': {}}})):
+                                (manifest, {'schema': 'pwg.headless_execution_manifest.v2',
+                                            'meta': sealed_wf_meta(['k'])})):
                 with open(path, 'w', encoding='utf-8') as f:
                     json.dump(value, f)
             state = coordinator.default_state()
