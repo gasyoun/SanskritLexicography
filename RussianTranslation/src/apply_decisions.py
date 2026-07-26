@@ -282,7 +282,8 @@ def _selftest():
                            "note": "wrong-sense — глосса не о том"}]}
 
         # 1. the validator gate: a corrupt file is refused BEFORE any apply.
-        write_lock(sheet_id, chash, ids, "2026-07-25", locks_dir=td, gate="G6")
+        write_lock(sheet_id, chash, ids, "2026-07-25", locks_dir=td, gate="G6",
+                   force=True)   # fixture: one sheet_id, several generations
         bad = dict(good, content_hash="sha256:" + "e" * 64)
         marker = os.path.join(td, "decisions_%s.csv" % sheet_id)
         rc = main([dump("bad.json", bad), "--locks-dir", td,
@@ -326,7 +327,8 @@ def _selftest():
                 "content_hash": chash, "reviewer": "selftest",
                 "items": [{"id": ids[0], "decision": "approve", "note": ""},
                           {"id": ids[1], "decision": "reject", "note": "не то"}]}
-        write_lock(sheet_id, chash, ids, "2026-07-25", locks_dir=td, gate="G5")
+        write_lock(sheet_id, chash, ids, "2026-07-25", locks_dir=td, gate="G5",
+                   force=True)   # fixture: one sheet_id, several generations
         g5csv = os.path.join(td, "rq.csv")
         fields = ["review_id", "severity", "ord", "key1", "key2", "review_status",
                   "key_match", "placeholders_ok", "reason", "attested", "ru",
@@ -372,7 +374,8 @@ def _selftest():
         good = {"sheet_id": sheet_id, "generated": "2026-07-25", "decided": 1,
                 "content_hash": chash, "reviewer": "selftest",
                 "items": [{"id": drift_id, "decision": "approve", "note": ""}]}
-        write_lock(sheet_id, chash, [drift_id], "2026-07-25", locks_dir=td, gate="G5")
+        write_lock(sheet_id, chash, [drift_id], "2026-07-25", locks_dir=td,
+                   gate="G5", force=True)   # fixture: deliberate re-cut
         with io.open(g5csv, "w", encoding="utf-8-sig", newline="") as fh:
             w = csv.DictWriter(fh, fieldnames=fields)
             w.writeheader()
