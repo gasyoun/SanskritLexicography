@@ -20,6 +20,27 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   source groups reduce to three distinct datasets — S_P_D_F/Works-Share-Syn hold confirmed
   duplicate re-exports, not new content. Evidence-only, not yet wired into `corpus_gate.py`.
 
+### Added — H1633 human gold cut design + A51 methods packet (26-07-2026)
+
+- **Store gold-cut sample frame** (design only, parked for sign-off):
+  [gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md)
+  — the first sampling design for a **human-measured DE→RU store precision**
+  figure, distinct from the existing Sa→Ru harvest gold (320) and the A/B/C
+  grade gold. Population = the machine-clean G5-eligible pool (post
+  residue-gate, P1 auto-reject); 12 strata (entry class × edition layer × DE
+  length terciles); recommended n=400 with the cluster penalty stated;
+  proposed six-label DE→RU vocabulary (needs a D6-style ruling); tiered κ plan
+  honest about the 2026 second-annotator deferral — **no κ target, no
+  placeholder κ**. Binding per the H1404 standard.
+- **A51 methods-section draft** with honest floors:
+  [pwg_ru/A51_METHODS_DRAFT_DE_LAYERS_RU_PIPELINE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/A51_METHODS_DRAFT_DE_LAYERS_RU_PIPELINE.md)
+  — source graph, G1–G6 layer floors, pipeline + judge-policy figures kept as
+  LLM×LLM calibration (not quality validation), three-channel evaluation
+  design, refused-claims section, and a 10-row **claims register** mapping
+  every submission claim to its blocking human gate (N1/N2/N3/N9/N11/N13/N18 +
+  h178 votes + COMETKiwi license).
+- Metadocs for both; pwg_ru.md §8.3 N3 row now points at the frame.
+
 ## [1.71.0] — 2026-07-26
 
 ### Added — H1628: stratified 200-item review sheet for the compound `differs` queue (26-07-2026)
