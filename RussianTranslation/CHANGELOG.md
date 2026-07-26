@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.78.0] - 2026-07-26
+
 ### Changed — Gorresio map audit round 1: 28/32 approve; 4 half-verse-shift rows switched off (26-07-2026)
 
 - The 32-card audit sheet was voted (agent vote by Fable 5 `claude-fable-5` on MG's
