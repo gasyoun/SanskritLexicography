@@ -10,6 +10,12 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.69.0] - 2026-07-26
+
+> Version numbering follows the repository's **git tag** sequence (…v1.67.0,
+> v1.68.0), which had drifted ahead of the version headings in this file (last
+> heading was `[1.62.0]`). Continuing the tag sequence, per `/cut-release`.
+
 ### Added — H1632 scale-up: unbiased random frame + full-PWG run (26-07-2026)
 
 - The original H1632 pilot ran on a frame **selected DCS-attested**, so its "100%
