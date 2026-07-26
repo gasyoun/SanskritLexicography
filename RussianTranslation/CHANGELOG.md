@@ -10,7 +10,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
-## [1.78.0] - 2026-07-26
+## [1.79.0] - 2026-07-26
 
 ### Changed — Gorresio map audit round 1: 28/32 approve; 4 half-verse-shift rows switched off (26-07-2026)
 
@@ -34,6 +34,22 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   (report-only) risks in
   [prompt_rule_audit.markup_sigla_risks](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/prompt_rule_audit.py)
   close that gap.
+
+## [1.78.0] - 2026-07-26
+
+> Backfilled section (26-07-2026): the v1.78.0 tag + GitHub release (H1670) were cut
+> by a concurrent session WITHOUT a changelog section, and a second same-day cut then
+> claimed the [1.78.0] heading for different content — renumbered to [1.79.0] above.
+> This section reconstructs the released content from the frozen release body.
+
+### Fixed — H1670: PWG-sense × DCS grounding 0.67% → 12.25% (26-07-2026)
+
+- The H1632 conclusion that sense-level grounding was capped by data availability was a
+  **reach artefact**: the matcher's reach, not the corpus, was the limiting factor.
+  H1670 raised sense-level grounding **0.67% → 12.25%**
+  ([PR #791](https://github.com/gasyoun/SanskritLexicography/pull/791),
+  [release v1.78.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.78.0),
+  [H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md)).
 
 ## [1.77.0] - 2026-07-26
 
