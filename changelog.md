@@ -14,6 +14,23 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H1707 probe — the Calcutta Mahābhārata is obtainable after all, and PWG's citation
+  scheme is already indexed** (Opus 5 1M `claude-opus-5[1m]`). Same-day successor to the
+  H1652 rejection. [sanskrit-lexicon-scans/mbhcalc](https://github.com/sanskrit-lexicon-scans/mbhcalc)
+  ships the 1834–39 printing as 3,006 page PDFs plus `parvanverse.js`, a
+  `(parvan, continuous śloka) → page` index in **PWG's own citation scheme**:
+  **3,007 of 3,009 distinct `MBH.` loci (99.9%) resolve to a scan page** with no OCR and
+  no alignment. The PDFs carry no text layer (a one-page tesseract-5 `san` probe confirmed
+  OCR is feasible but noisy), and it is not needed:
+  [sujoysarkarai/mahabharatace](https://github.com/sujoysarkarai/mahabharatace) (ISCLS 2026,
+  CC) releases a verse-level Calcutta alignment of the Dutta/Itihāsa text whose
+  `ce_verse_number` **is** the continuous per-parvan śloka. Proved end-to-end on the
+  citation that started H1652: `MBH. 5,7331` → its `manual_anchor` CE lines → verbatim in
+  `05_mahabharata-udyogaparva:5.187.1-4#sa` → an existing Russian translation of record.
+  The H1652 measurement stands; its "needs the Calcutta text" conclusion is now a task,
+  not a blocker.
+
 ## [1.85.0] — 2026-07-26
 
 ### Added
