@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §465) whatever its section, so existing numbers never shift; when a finding is later
+(currently §466) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -100,6 +100,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§453. PWG's sense-closing glyph "〉" nests FOUR enumeration tiers, not two](#453-pwgs-sense-closing-glyph--nests-four-enumeration-tiers-not-two--greek-letters-and-roman-numeral-markers-are-unrecognised-by-the-ru-pipelines-splitter) — Greek letters (1,444 occurrences) and roman-numeral markers (30) unrecognised by `microstructure.py`'s `MARK` regex, the same bug class as §447 one tier deeper.
 - 🟠 [§454. The pwg_ru RU store's `h` field has inconsistent semantics — not a reliable homograph-number join key](#454-the-pwg_ru-ru-stores-h-field-has-inconsistent-semantics--not-a-reliable-homograph-number-join-key) — holds a digit, an empty string, or a root-word string within the same file; 93.78% of store rows (10,881/11,603) touch a headword whose corrected `〉` segmentation changed sense count.
 - 🟡 [§455. PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline](#455-pwg-ls-citation-resolution-is-already-at-98-far-above-the-previously-cited-724-baseline) — `pwgbib.txt` grew to 4,390 entries since the 72.4% measurement; re-measure with `pwg_sources.py coverage` before citing a stale ceiling.
+- 🔴 [§465. PWG sense × DCS attestation collapses from 100% at lemma level to 0.67% at sense level — and two independent ceilings cause it](#465-pwg-sense--dcs-attestation-collapses-from-100-at-lemma-level-to-067-at-sense-level--and-two-independent-ceilings-cause-it) — 52/7,746 leaf senses locus-grounded; 12,953 `<ls>` sit on structural parent nodes (unattributable by PWG's own structure), and only 10.8% of DCS tokens carry a `m_wordsem` tag at all. Do not promise per-sense corpus frequency for PWG.
 
 **Etymology & derivation**
 
@@ -3491,3 +3492,63 @@ word, or an `-en`/`-eln`/`-ern` verb ending, excluding genuine binomial shape), 
 > [`RussianTranslation/RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md);
 > limitation recorded in
 > [`RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md) §5.
+
+---
+
+### §465. PWG sense × DCS attestation collapses from 100% at lemma level to 0.67% at sense level — and two independent ceilings cause it
+
+🔴 **Lemma-level corpus attestation for PWG is essentially free; sense-level attestation is
+not, and the gap is caused by two ceilings that must not be conflated — one inside the
+dictionary, one in the corpus.** Anyone promising "corpus frequency per PWG sense" is
+promising something the current data cannot deliver at scale.
+
+`Evidence:` measured on the frozen H1455/H1456 500-headword pilot frame (reused verbatim, not
+re-derived). Of 943,877 DCS tokens under those lemmas, **102,085 (10.8%)** carry a
+`m_wordsem` sense tag at all — the hard ceiling on any sense-level claim over this corpus.
+Only **52 of 7,746 PWG leaf senses (0.67%)** are grounded to a DCS attestation by a shared
+locus; against the other denominator, 52/5,201 DCS `wn` senses in frame (1.00%). Meanwhile
+**500/500** groups attest at lemma level — but that is **true by construction**: every frame
+row carries `dcs_attested=1`, so the frame was *selected* DCS-attested and every rate above is
+an **upper bound** on a random PWG sample.
+
+The two ceilings:
+
+1. **Inside the dictionary, before DCS is consulted.** **12,953** `<ls>` citations hang on a
+   *structural parent* sense node — a numbered sense like `1〉 m.` that has lettered children
+   `1a`/`1b` and carries the citation itself. PWG never assigns these to a leaf sense, so no
+   join can. A perfect corpus with perfect locus matching would still leave them lemma-level.
+2. **In the corpus.** **86.8%** of groups are class `R3`: DCS *has* sense-tagged tokens, PWG
+   *has* senses, and no shared locus links them — because PWG cites texts DCS lacks
+   (Pañcatantra, Kathāsaritsāgara, kośa literature) or cites the Mahābhārata in continuous
+   Böhtlingk–Roth numbering whose vulgate↔BORI-critical drift yields only adhyāya-level
+   corroboration (H1455 wave-1.5). This is missing *evidence*, not absence of the sense.
+
+Two further traps found while building it, both of which silently distort the denominator:
+
+- **Structural parents are not leaf senses.** Counting every `sense_id` from
+  `microstructure.leaf_senses` inflates the sense inventory ~16% (8,859 vs 7,746 on this
+  frame), because a numbered node with lettered children is a container carrying only
+  gender/grammar. The child test must be an *alphabetic* suffix — sense `11` is not a child
+  of sense `1` (PWG entries reach 70+ numbered senses).
+- **The committed `pwg_sense_loci.sample.tsv` is not the pilot frame.** It samples a
+  *different* 500 headwords and overlaps the H1455 frame in **16 keys**. Joining it yields a
+  near-zero coverage that is an artefact of the wrong input, not a fact about PWG; regenerate
+  the frame's rows with `research/export_frame_sense_loci.py`.
+
+`Implication:` do **not** promise per-sense corpus frequency for PWG, and do not read H1455's
+concordance as corpus attestation — its dominant `ls` tier (85,472 rows in frame) is PWG
+citing *itself*, excellent evidence for the dictionary's sense division and none at all that
+DCS attests it. Growing sense-level coverage means **adding texts and locus crosswalks**, not
+tuning a matcher; the pilot was deliberately not scaled for that reason. When quoting the
+"mass under a grounded lemma" figure (4.2%), quote it as the upper bound it is — a grounded
+link identifies one sense at one locus, not every token of the lemma.
+
+> **Source:** H1632 pilot join, 26-07-2026, Opus 5 (`claude-opus-5[1m]`) ·
+> [`RussianTranslation/research/PWG_SENSE_DCS_ATTESTATION_PILOT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_ATTESTATION_PILOT.md)
+> + generator
+> [`pwg_sense_dcs_attestation_pilot.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_sense_dcs_attestation_pilot.py)
+> ([PR #755](https://github.com/gasyoun/SanskritLexicography/pull/755)); deterministic, no LLM
+> in the measurement path, five inputs SHA-256 pinned. Consumes §78's successor state — the
+> `m_wordsem` decode inventory recovered in H1453 — and the DCS master
+> `VisualDCS/src/DCS-data-2026/dcs_full.sqlite` (the `src/` and repo-root copies are 0-byte
+> decoys and were not read).
