@@ -188,6 +188,7 @@ jobs:
           python src/pilot/translation_memory.py selftest
           python src/citation_tm.py selftest
           python src/build_ramayana_concordance.py selftest
+          python src/build_mbh_concordance.py selftest
           python src/pilot/lang_parity_check.py
           python src/pilot/check_launch_ledger.py --since 2026-07-05
       - name: Validate <ls> link enrichment (Panini + Spr. (II), H1307)
