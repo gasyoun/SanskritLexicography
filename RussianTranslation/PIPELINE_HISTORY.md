@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 25-07-2026_
+_Created: 04-07-2026 · Last updated: 26-07-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -8,6 +8,28 @@ This is the orientation document for anyone (human or session) who needs the
 narrated). Read this first; go to `.ai_state.md` for exact dates/PRs/numbers on
 any specific claim below, and to [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
 for the current operating procedure.
+
+### H1655 — the reviewer abort that made "no German before a human" a hard gate (26-07-2026)
+
+The first G5 sheet off the live queue (`g5-live-queue-batch1-2026-07-25`, 150 cards) was
+aborted by MG at 5 votes: cards reached the reviewer with reader-visible German («Я не должен
+искать немецкие слова в русском переводе. Ты должен. Перед тем как мне показывать»). Two
+distinct defect classes, neither caught by the existing layers: (1) the sheet showed **raw
+store markup**, so `<ab>` tokens that are deliberately render-translated (`s. u.` → «см.» via
+`pwg_ab_ru.RU_MAP`) looked like leaked German — a presentation defect, not a data defect;
+(2) `fg.` inside `<ls>` citation tails — invisible to the H1302 prose scanner (it masks
+`<ls>`) and out of scope for H1303's render map. Fix shipped as
+[`src/review_residue_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_residue_gate.py)
+(three layers: H1302 prose class-b · H1303 `<ab>` classification vs `RU_MAP` · `<ls>`-tail),
+wired into `build_g5_review_sheet.py` as a hard pre-filter, with the RU panel switched to the
+print rendering (tooltip keeps the original). Queue sweep: 637/11,163 (5.7%) flagged, and
+batch1v2 built from the clean 10,526. A second latent trap surfaced while applying the 5
+votes: **positional review-ids drift** — `row:NNNNNN:` embeds the store line position at
+queue-mint time, and the store had grown 11,163 → 11,603 since 06-07, so 2/5 votes resolved
+to nothing. `run_batch.py` lookups now fall back to the stable `subcard:<sub>#<tag>` tail
+(CI-pinned). Lesson for every future sheet: gate first, render what print renders, and never
+trust a positional id across store generations. Audit:
+[`review/decisions_applied_2026-07-26_g5-batch1.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_2026-07-26_g5-batch1.md).
 
 ### H858 Part B — the `{#…#}`-span drop stops nulling cards: source-anchored german repair (25-07-2026)
 

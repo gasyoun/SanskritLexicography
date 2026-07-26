@@ -58,6 +58,24 @@ German glosses are also masked out of the translate path upstream. "German-looki
 heuristic proxy (umlaut / German function word / `-en` verb ending), so the rate is ±;
 the direction is not in doubt. **Not fixed here** — changing the classifier changes masking
 behaviour pipeline-wide and needs its own measured A/B.
+## 26-07-2026 - G5 batch1 decisions applied + reader-visible German gate over the live queue (H1655)
+
+Executor: Fable 5 (`claude-fable-5`). Reviewer MG aborted batch 1 at 5/150 votes («Переделай
+все» — German must be screened BEFORE a human sees a card). Votes applied through
+`apply_decisions --gate G5` → `run_batch apply_review`; new
+[`review_residue_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_residue_gate.py)
+swept the queue; batch1v2 rebuilt gate-clean. Full audit:
+[decisions_applied_2026-07-26_g5-batch1.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_2026-07-26_g5-batch1.md).
+
+| Metric | n |
+|---|---:|
+| batch1 votes: approve / reject / unvoted (abort) | 3 / 2 / 145 |
+| live queue rows swept | 11,163 |
+| flagged: reader-visible German | 637 (5.7%) |
+| ... hits by layer: prose (H1302 class b) / ls-tail `fg.` / German `ab` | 457 / 371 / 145 |
+| clean rows eligible for sheets | 10,526 |
+| batch1v2 cards (all verified German-free) | 150 |
+| positional-id drift: votes initially unresolvable against grown store | 2/5 (fixed: suffix fallback + CI pin) |
 
 ## 26-07-2026 - H858 c1 live gate: HEALTH_NOGO (rate_limit) - profile sweep now 3/3 NO-GO
 
