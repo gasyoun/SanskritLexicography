@@ -49,25 +49,59 @@ def esc(s: str) -> str:
     return html.escape(s, quote=False)
 
 
+VERDICT_LABEL = {
+    "source-confirms": "✅ агент: подтверждено PD",
+    "source-contradicts": "❌ агент: PD противоречит",
+    "needs-human": "🟡 агент: решает человек",
+}
+
+
 def build_question(it: dict) -> str:
     current_label = "Сейчас" if it["section"] == "A" else "Сейчас (ячейка)"
     proposed_label = "Предлагается" if it["section"] == "A" else "Предлагаемая добавка"
+    verdict_block = ""
+    if it.get("verdict"):
+        verdict_block = (
+            f'<div style="margin:6px 0;padding:4px 8px;background:#f0f0f0;border-left:3px solid #888">'
+            f'<b>{esc(VERDICT_LABEL.get(it["verdict"], it["verdict"]))}</b> (H1683, {esc(it.get("verdict_agent", ""))})'
+            f'<div><b>Источник PD:</b> {esc(it.get("verdict_quote", ""))}</div>'
+            f'<div>{esc(it.get("verdict_note", ""))}</div>'
+            f"</div>"
+        )
     return (
         f'<div style="margin:2px 0"><b>EN (PD):</b> <i>{esc(it["en"])}</i></div>'
         f'<div style="margin:2px 0"><b>{current_label}:</b> {mark_cyrillic(esc(it["current_ru"]))}</div>'
         f'<div style="margin:2px 0"><b>{proposed_label}:</b> '
         f'<b>{mark_cyrillic(esc(it["proposed_ru"]))}</b></div>'
         f'<div style="margin-top:6px"><b>Почему:</b> {it["why"]}</div>'
+        f"{verdict_block}"
     )
 
 
-def build_footer(word: str, w: dict) -> str:
+def build_footer(word: str, w: dict, auto_accepted: list) -> str:
     fyi_rows = "".join(
         f'<tr><td style="padding:2px 8px;vertical-align:top">{esc(f["sense"])}</td>'
         f'<td style="padding:2px 8px;vertical-align:top"><i>{esc(f["en"])}</i></td>'
         f'<td style="padding:2px 8px;vertical-align:top">{esc(f["ru"])}</td></tr>'
         for f in w["fyi"]
     )
+    auto_rows = "".join(
+        f'<tr><td style="padding:2px 8px;vertical-align:top">{esc(it["sense"])}</td>'
+        f'<td style="padding:2px 8px;vertical-align:top">{mark_cyrillic(esc(it["proposed_ru"]))}</td>'
+        f'<td style="padding:2px 8px;vertical-align:top">{esc(it.get("verdict_quote", ""))}</td></tr>'
+        for it in auto_accepted
+    )
+    auto_block = ""
+    if auto_accepted:
+        auto_block = (
+            "<h3>Агент подтвердил по PD, голос не нужен (H1683)</h3>"
+            f'<p>{len(auto_accepted)} L-приоритетных правок, где цитата/текст PD прямо '
+            "подтверждает предложенную правку — не требуют отдельного голоса; "
+            "применяются через обычный /decisions-apply, когда до них дойдёт очередь.</p>"
+            '<table style="border-collapse:collapse"><tr>'
+            "<th>Сенс</th><th>Предлагаемая RU</th><th>Источник PD</th></tr>"
+            f"{auto_rows}</table>"
+        )
     decisions_name = f"sanskritlexicography-article-comparison_{word}_decisions.json"
     return (
         '<div style="text-align:left;max-width:920px;margin:18px auto;font-size:13px">'
@@ -75,6 +109,7 @@ def build_footer(word: str, w: dict) -> str:
         '<table style="border-collapse:collapse"><tr>'
         "<th>Сенс</th><th>English (PD), как напечатано</th><th>RU (уже корректно)</th></tr>"
         f"{fyi_rows}</table>"
+        f"{auto_block}"
         f'<h3>Покрытие</h3><p>{esc(w["coverage"])}</p>'
         f"<h3>Куда идут голоса</h3><p>Файл {decisions_name} сохранить в "
         "SanskritLexicography/review/ — watcher заведет handoff применения; "
@@ -88,6 +123,17 @@ def main() -> None:
     data = json.loads((HERE / "gloss_review_items.json").read_text(encoding="utf-8"))
     OUT_DIR.mkdir(exist_ok=True)
     for word, w in data["words"].items():
+        # H1683 routing: needs-human items and the H/M-severity spot-check sample of
+        # source-confirms stay votable; L-severity source-confirms that PD's own text
+        # already backs are surfaced read-only in the footer instead (no vote asked).
+        votable = [
+            it for it in w["items"]
+            if it.get("verdict") != "source-confirms" or it.get("spot_check")
+        ]
+        auto_accepted = [
+            it for it in w["items"]
+            if it.get("verdict") == "source-confirms" and not it.get("spot_check")
+        ]
         items = [
             {
                 "id": it["id"],
@@ -99,7 +145,7 @@ def main() -> None:
                 "panels": [],
                 "note_placeholder": "Своя формулировка / частичная правка вместо отклонения…",
             }
-            for it in w["items"]
+            for it in votable
         ]
         sheet_id = f"sanskritlexicography-article-comparison_{word}"
         config = {
@@ -110,13 +156,15 @@ def main() -> None:
             "title": f'Глосс-ревью {w["headword_display"]} — правки ручных RU-глосс',
             "subtitle": (
                 f'{w["headline"]} Источник: article-comparison/{w["source_file"]} '
-                f'({w["glosses_total"]} глосс). Данные: gloss_review_items.json (H739).'
+                f'({w["glosses_total"]} глосс). Данные: gloss_review_items.json (H739). '
+                f'H1683 source-check: {len(w["items"])} правок, {len(votable)} требуют '
+                f'голоса ({len(auto_accepted)} подтверждены PD без голосования).'
             ),
-            "footer": build_footer(word, w),
+            "footer": build_footer(word, w, auto_accepted),
             "approve_label": "Принять правку",
             "reject_label": "Оставить как есть",
             "filters": [(k, SEV_LABEL[k]) for k in ("H", "M", "L")
-                        if any(it["sev"] == k for it in w["items"])],
+                        if any(it["sev"] == k for it in votable)],
             "generated": data["_meta"]["date"],
         }
         out = OUT_DIR / f"{sheet_id}_review.html"
