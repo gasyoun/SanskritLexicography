@@ -1,6 +1,6 @@
 # Roadmap B — what ACL Anthology / comparable projects teach: BLI evaluation, sense benchmark, Lexical Linked Data
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 26-07-2026_
 
 Three ACL-adjacent literatures map directly onto layers this repo already has. This roadmap folds the ground-truth corrections verified 08-07-2026 (what exists vs what the naive reading assumed) and MG's same-day rulings (decision log at the bottom). Companion: [ROADMAP_CEILING_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_CEILING_2026.md) (the "what we can't answer" side) and the standing [ACL_ANTHOLOGY_MONITOR.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ACL_ANTHOLOGY_MONITOR.md) (complement, don't duplicate). Sequencing: **H335 audit → quick wins in parallel with translation → benchmark/graph phases after ~50% coverage.**
 
@@ -25,7 +25,7 @@ Three ACL-adjacent literatures map directly onto layers this repo already has. T
 H335 W4's "which sense in kāvya" is a **sense-attestation task**; ACL's lesson is to publish it as a benchmark with agreement stats. Three rulings wire the inventory side:
 
 - **IndoWordNet synset crosswalk** (`/crosswalk-build` PWG-senses × Sanskrit WordNet synsets, per Kulkarni GWC-2010): gives each PWG sense a synset ID, unlocking WordNet-lineage sense-frequency methods. **Rights first**: IndoWordNet's license is restrictive — check via the Samsaadhanii/Kulkarni contact (org memory: call/cross-validate, don't clone GPL); the crosswalk *mapping* (our sense-ID → synset-ID pairs) is ours to publish even where their glosses aren't.
-- **Leonchenko Sinonimy as a W2 evidence lane**: `VisualDCS/derived-data/Sinonimy` (xlsx: Глагольные синонимы, Значения, S_P_D_F, Works-Share-Syn) → digitize to jsonl → another per-sense evidence source alongside grin12/grin3 ("which senses does Leonchenko's synonymy support"). Local data, no rights blocker.
+- **Leonchenko Sinonimy as a W2 evidence lane**: `VisualDCS/derived-data/Sinonimy` (xlsx: Глагольные синонимы, Значения, S_P_D_F, Works-Share-Syn) → digitize to jsonl → another per-sense evidence source alongside grin12/grin3 ("which senses does Leonchenko's synonymy support"). Local data, no rights blocker. **✅ Digitization done (H1491, 26-07-2026):** [research/sinonimy/sinonimy.jsonl](sinonimy/README.md), 47,273 rows. Finding: the four named groups reduce to **three** distinct datasets — S_P_D_F and Works-Share-Syn turned out to hold confirmed duplicate/re-exported copies of the two top-level workbooks + `Значения.xlsx`, not new content (see sinonimy/README.md for the dedup table). Not yet wired into `corpus_gate.py` — that step, plus "Sinonimy as its own published crosswalk" below, stay open.
 - **Sinonimy as its own published crosswalk**: additionally align Leonchenko's synonym *groups* to PWG senses as a standalone asset — kosha manifest row + PROJECT_INTERLINKS registration on release.
 - **Benchmark packaging**: once W4's per-sense genre attribution + the synset crosswalk exist, publish sense-attestation gold (sense × genre × attested?) with κ, via `/data-release` (FAIR, DOI).
 

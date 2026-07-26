@@ -33,6 +33,15 @@ classifications/method-maps so they never get stranded in an ephemeral handoff:
 | [INTERVIEWS.md](INTERVIEWS.md) | Recorded conversations with researchers/practitioners relevant to this direction (video + transcript + `Actionable for us?` verdict) — the conversation-shaped twin of the paper-shaped ACL monitor above. |
 
 
+## Data assets
+
+Digitized evidence lanes feeding the B2 sense-inventory work (see
+[ROADMAP_ACL_LESSONS_2026.md](ROADMAP_ACL_LESSONS_2026.md) B2):
+
+| Dir | What it holds |
+|---|---|
+| [sinonimy/](sinonimy/README.md) | H1491 (26-07-2026): 47,273-row jsonl digitized from V.V. Leonchenko's Sinonimy xlsx workbooks ([VisualDCS/derived-data/Sinonimy](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Sinonimy/README.md)) — sense inventories + gloss-anchored Sanskrit synonym rings, evidence-only. Also registered in [../REUSE_MAP.md](../REUSE_MAP.md) §5. Not yet wired into `corpus_gate.py`. |
+
 ## Spawned as handoff chats (2026-06-23)
 Each brief was spun off as its own cold background-task chat (one click to start in a
 fresh worktree):
