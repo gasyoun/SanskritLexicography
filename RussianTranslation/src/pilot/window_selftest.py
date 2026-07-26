@@ -1730,6 +1730,42 @@ def test_h1651_wrapper_defect_gate():
         fail('H1651: fix_d3 must refuse a count-mismatched row rather than guess')
 
 
+def test_h1651_live_gate_cyrillic_and_guillemet():
+    """H1651 follow-up: wrapper_defect_scan.py/fix_wrapper_defects.py (PR #789) detect and
+    repair D1/D3 in a periodic store scan, but neither is wired into the live per-card
+    generation-time audit (prompt_rule_audit.markup_sigla_risks) -- so a future generation run
+    could still reintroduce Cyrillic-in-{#..#} (or grow the guillemet-drift residual)
+    undetected by the pipeline itself. This tests that live gate, distinct from
+    test_h1651_wrapper_defect_gate above (which tests the standalone scan/fix tools)."""
+    import prompt_rule_audit as pr
+
+    def ids(ru, de=''):
+        return [r['id'] for r in pr.markup_sigla_risks({}, ru, de, '', '3')]
+
+    # D1: Cyrillic wrapped in {#..#} fires HIGH_CONFIDENCE.
+    if 'cyrillic_in_sanskrit_wrapper' not in ids('{#полагать, думать#}: {#mfto vetti#}'):
+        fail('cyrillic_in_sanskrit_wrapper must fire on a Cyrillic {#..#} span')
+    if 'cyrillic_in_sanskrit_wrapper' in ids('{#mfto vetti#} значит "знать"'):
+        fail('cyrillic_in_sanskrit_wrapper must NOT fire on a genuine Sanskrit span')
+    if 'cyrillic_in_sanskrit_wrapper' not in pr.HIGH_CONFIDENCE_RISKS:
+        fail('cyrillic_in_sanskrit_wrapper must be HIGH_CONFIDENCE (unambiguous, always wrong)')
+
+    # D3: a {%..%} gloss dropped AND rendered as a guillemet fires the soft companion risk
+    # alongside the pre-existing markup_wrapper_dropped.
+    found = ids('«полагать»', de='{%glauben%}')
+    if 'markup_wrapper_dropped' not in found or 'gloss_wrapper_became_guillemet' not in found:
+        fail('gloss_wrapper_became_guillemet must fire alongside markup_wrapper_dropped')
+    if {'markup_wrapper_dropped', 'gloss_wrapper_became_guillemet'} & set(ids('{%полагать%}', de='{%glauben%}')):
+        fail('neither D3 risk should fire when the {%..%} wrapper survives')
+    plain = ids('полагать', de='{%glauben%}')
+    if 'markup_wrapper_dropped' not in plain:
+        fail('markup_wrapper_dropped must still fire on a bare unwrapped drop')
+    if 'gloss_wrapper_became_guillemet' in plain:
+        fail('gloss_wrapper_became_guillemet must NOT fire without a guillemet span')
+    if 'gloss_wrapper_became_guillemet' in pr.HIGH_CONFIDENCE_RISKS:
+        fail('gloss_wrapper_became_guillemet must stay report-only (never requeue)')
+
+
 def test_semantic_review_prioritizer():
     high = {
         'key': 'high',
@@ -8178,6 +8214,7 @@ def main():
         test_h1302_german_prose_residue_scan,
         test_h1305_ru_style_mechanical,
         test_h1651_wrapper_defect_gate,
+        test_h1651_live_gate_cyrillic_and_guillemet,
         test_semantic_review_prioritizer,
         test_noisy_source_type_not_requeue,
         test_report_only_risks_never_requeue,

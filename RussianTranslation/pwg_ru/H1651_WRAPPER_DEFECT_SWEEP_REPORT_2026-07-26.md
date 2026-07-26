@@ -159,4 +159,23 @@ Re-translation beyond what a wrapper repair required: none performed. `g5_batch1
 `h178_*` sheets: not touched. `<ls>` citation wiring (H1652): not touched. D5: not
 implemented.
 
+## Addendum 26-07-2026 (Sonnet 5, `claude-sonnet-5`) — live generation-time gate
+
+A concurrent session worked this same handoff in parallel; this addendum landed as a
+separate, narrower follow-up PR (linked from the [handoffs registry](https://github.com/gasyoun/Uprava/blob/main/handoffs/README.md)
+H1651 row) after discovering the collision, rather than reopening the (already-merged,
+already-correct) work above.
+
+`wrapper_defect_scan.py`/`fix_wrapper_defects.py` detect and repair D1/D3 in a periodic
+store scan, but neither is wired into the live per-card generation-time audit
+(`prompt_rule_audit.markup_sigla_risks`) — so a future generation run could reintroduce
+Cyrillic-in-`{#..#}`, or grow the guillemet-drift residual, undetected by the pipeline
+itself. Added: `cyrillic_in_sanskrit_wrapper` (HIGH_CONFIDENCE, mirrors the pre-existing
+EN-side `audit_window_en.nws_de_locked()`) and `gloss_wrapper_became_guillemet`
+(report-only, alongside the pre-existing `markup_wrapper_dropped`). LANG_PARITY
+`wrapper_fidelity_cyrillic_and_guillemet_h1651` (SHARED). Selftest:
+`test_h1651_live_gate_cyrillic_and_guillemet`, distinct from this PR's own
+`test_h1651_wrapper_defect_gate` (which tests the standalone scan/fix tools, not the live
+gate). No store data touched by this addendum — code-only.
+
 _Dr. Mārcis Gasūns_
