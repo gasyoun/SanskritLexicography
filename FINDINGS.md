@@ -3565,7 +3565,7 @@ not a better algorithm. So the honest ceiling for any sense-level PWG×DCS produ
 raised confidence in the diagnosis, not the coverage.
 
 > **Source:** H1632 pilot join + 26-07-2026 scale-up (random + full-PWG frames,
-> [PR #759](https://github.com/gasyoun/SanskritLexicography/pull/759)),
+> [PR #763](https://github.com/gasyoun/SanskritLexicography/pull/763)),
 > Opus 5 (`claude-opus-5[1m]`) ·
 > [`RussianTranslation/research/PWG_SENSE_DCS_ATTESTATION_PILOT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_ATTESTATION_PILOT.md)
 > + generator
