@@ -320,6 +320,37 @@ the answer rather than assume a date change cleared anything.
 No canary, no window, nothing promoted. Per-account evidence:
 `src/pilot/output/h963_<account>_gate0_probe_events.jsonl`.
 
+## 25-07-2026 — medium50 “all without --max-agents”: LIVE STOP (auth 403) + offline prep
+
+Executor: Grok 4.5 · intent: fresh live-gate then **all five** medium50 windows
+(`h1447-m50-w1…w5`, 48 keys) headless with **no** production `--max-agents`.
+
+### Live gate (paid) — mechanical NO-GO
+
+| profile | config_dir | health | detail |
+|---|---|---|---|
+| **c4** | `D:\ClaudeTools\profiles\claude4\.claude` | **NO-GO** | `h963_c4_gate0_probe`: warmup **auth**; events also show rate_limit/auth; measured history 168s ceiling breach |
+| **c2** | `D:\ClaudeTools\profiles\claude2\.claude` | **NO-GO** | warmup **auth** 7358 ms |
+| c1 / c4 / c5 / default | same stack | **403** | direct `claude -p` → `Failed to authenticate. API Error: 403 Request not allowed` for default, sonnet, opus, `claude-sonnet-5` |
+
+**Stop reason:** `HEALTH_NOGO` / org-wide CLI **403** — no canary, no production calls, no store write.
+Probe log rows: `gate0-c4-fresh-2026-07-25`, `gate0-c2-fresh-2026-07-25`.
+
+**Human unblock:** re-auth / fix Max org permission so `claude -p` succeeds on a roster profile, then re-run live-gate.
+
+### Offline prep completed (ready when GO returns)
+
+| artifact | n |
+|---|---:|
+| merged 5-layer inputs (`_pilot_gen_merged`) | 48 keys |
+| bare-key input aliases for `gen_opt_harness2.input_paths` | 48 |
+| execution_manifest.v2 + harness per window | **5** (`w1` 3 keys agent_exp=3; `w2` 12→20; `w3` 11→14; `w4` 11→12; `w5` 11→12) |
+| manifest `max_translate_agents` (no CLI max-agents) | 19 / 34 / 31 / 34 / 40 |
+
+Resume recipe (gitignored output tree):
+`src/pilot/output/MEDIUM50_NO_MAX_AGENTS_RESUME_2026-07-25.md` — headless lines
+**omit** `--max-agents` on multi-key windows; canary alone may use `--max-agents 1`.
+
 ## 25-07-2026 - H858 c5 live gate: HEALTH_NOGO (latency ~2x ceiling) - orthogonal to c4
 
 Executor: Opus 5 (`claude-opus-5[1m]`). First gate ever run on c5, after two c4 attempts the
