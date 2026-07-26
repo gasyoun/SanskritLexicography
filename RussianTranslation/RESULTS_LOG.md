@@ -4,6 +4,36 @@ _Created: 09-07-2026 · Last updated: 26-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 26-07-2026 - H1664: voting-queue triage — a verdict for every pending sheet, human bill recounted
+
+Executor: Fable 5 (`claude-fable-5`),
+[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md).
+Full verdict table (all 42 pending sheets org-wide, each with its enabling dataset):
+[VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md §11](https://github.com/gasyoun/Uprava/blob/main/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md).
+
+| Bucket | Sheets | Judgments now | Owed after routing |
+|---|---|---|---|
+| AGENT-RULEABLE | 1 (+2 zombie rows) | 17 | 0 |
+| HYBRID (В2: agent adjudicates, human votes a blind stratified arm) | 20 | 2,282 | ~666 |
+| HUMAN-ONLY | 21 | 663 | 663 |
+| **Pending queue total** | **42** | **2,962** | **~1,329 (−55 %)** |
+| acc_ncc lane (rerouted 26-07, executed; post-H1671 key repair the C/D set is 10,614) | 1 | 49,019 | 698 |
+
+SL-specific outcomes: compound-`differs` goes В2 —
+[H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md)
+adjudicates all ~4,226 and the H1628 200-card sheet becomes the blind verification arm (same
+200 votes then close the whole queue); h1303_abbrev collapses to rule-level cards
+([H1682](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1682-Sonnet_SanskritLexicography_h1303-abbrev-rule-collapse_26.07.26.md),
+273 → ~30); the 32 article-comparison edits get source-checked pre-vote
+([H1683](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1683-Sonnet_SanskritLexicography_article-comparison-source-check_26.07.26.md));
+h180 stays routed via H1650. HUMAN-ONLY (kept, with the why): G6 gold starter (the label is
+the instrument), G5 batch1v3 (already the В2 human arm), h1306 style, Renou pilot 70,
+Kochergina 4. The acc_ncc blind spot-check (698 rows post-H1671 re-draw; the pre-repair 686 sample was voided unvoted) is now registered in
+[REVIEW_SHEETS_INDEX.md](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md)
+the H1671 sequencing gate resolved itself the same day — the key repair merged ([PR #785](https://github.com/gasyoun/SanskritLexicography/pull/785)) and the fresh sample is safe to vote. HY "after" numbers
+are planning estimates — exact arm sizes derive per stratum at execution
+([PR #783](https://github.com/gasyoun/SanskritLexicography/pull/783) pattern).
+
 ## 26-07-2026 - H1628: stratified 200-item review sheet, PWG-vs-index compound `differs` (H1624 G6 residual)
 
 Executor: Sonnet 5 (`claude-sonnet-5`). Sampled from the ~4226-row `differs` queue the
