@@ -14,19 +14,9 @@ not an error.
 
 ## [Unreleased]
 
-## [1.80.0] — 2026-07-26
+## [1.81.0] — 2026-07-26
 
 ### Added
-- **H1691 — PWG's remaining DCS-carried cited texts adjudicated; 52 abbreviations, 12 mapped
-  (26-07-2026, Opus 5 `claude-opus-5[1m]`).** Report
-  [`PWG_DCS_TEXT_CROSSWALK_H1691.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_DCS_TEXT_CROSSWALK_H1691.md),
-  adjudications
-  [`pwg_ls_dcs_scheme_verdicts.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_ls_dcs_scheme_verdicts.tsv),
-  and three evidence generators (`probe_dcs_text_scheme.py`, `probe_pwg_ls_scheme.py`,
-  `probe_scheme_overlap.py` with a competitive-rank test against all 270 DCS texts) plus
-  `h1691_handcheck.py`. Grounded PWG leaf senses 7,372 → **8,208** (+11.3%) on H1670's wide
-  frame; `MAPPED` citation mass 36.4% → **44.7%**; the actionable backlog above 0.05% is empty.
-
 - **H1681 — all 4,226 PWG-vs-MW compound `differs` rows adjudicated by rule, with the
   four upstream defects behind them measured**
   ([H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md),
@@ -47,6 +37,20 @@ not an error.
   promotion arithmetic: the existing 200 votes can close **3,018 of 4,226 rows (71.4 %)**,
   not all of them — a stratum needs ≥ 35 arm cards to clear a Wilson-95 % lower bound
   of 0.90.
+
+## [1.80.0] — 2026-07-26
+
+### Added
+- **H1691 — PWG's remaining DCS-carried cited texts adjudicated; 52 abbreviations, 12 mapped
+  (26-07-2026, Opus 5 `claude-opus-5[1m]`).** Report
+  [`PWG_DCS_TEXT_CROSSWALK_H1691.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_DCS_TEXT_CROSSWALK_H1691.md),
+  adjudications
+  [`pwg_ls_dcs_scheme_verdicts.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_ls_dcs_scheme_verdicts.tsv),
+  and three evidence generators (`probe_dcs_text_scheme.py`, `probe_pwg_ls_scheme.py`,
+  `probe_scheme_overlap.py` with a competitive-rank test against all 270 DCS texts) plus
+  `h1691_handcheck.py`. Grounded PWG leaf senses 7,372 → **8,208** (+11.3%) on H1670's wide
+  frame; `MAPPED` citation mass 36.4% → **44.7%**; the actionable backlog above 0.05% is empty.
+
 
 ### Fixed
 - **`build_ls_text_crosswalk_backlog.py` mis-classified in both directions and now reads back
