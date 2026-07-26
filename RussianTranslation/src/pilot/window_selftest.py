@@ -1691,6 +1691,45 @@ def test_h1305_ru_style_mechanical():
         fail('H1305 review: ambiguous workflow warning wrong keys: %r' % warned)
 
 
+def test_h1651_wrapper_defect_gate():
+    """H1651: Cyrillic is never valid inside {#...#} (the SLP1/Sanskrit wrapper) --
+    a planted violation must fire, and the fix must be found deterministically."""
+    from wrapper_defect_scan import find_d1, find_d3
+    from fix_wrapper_defects import fix_d1, fix_d3
+
+    # POSITIVE: a planted Cyrillic-in-{#...#} violation fires.
+    if not find_d1('текст {#полагать#} далее'):
+        fail('H1651: Cyrillic inside {#...#} must be detected by find_d1')
+    # CONTROL: genuine SLP1 content never fires.
+    if find_d1("текст {#mfto 'yamiti na vetti#} далее"):
+        fail('H1651: genuine SLP1 inside {#...#} must NOT be flagged')
+    # CONTROL: a Cyrillic gloss correctly wrapped in {%...%} never fires (it is not
+    # inside a {#...#} span at all).
+    if find_d1('текст {%полагать%} далее'):
+        fail('H1651: a correctly-wrapped {%...%} gloss must NOT be flagged by find_d1')
+
+    # fix_d1 rewraps the violation to {%...%}, content unchanged.
+    fixed, n = fix_d1('до {#полагать, думать#} после')
+    if n != 1 or fixed != 'до {%полагать, думать%} после':
+        fail('H1651: fix_d1 did not rewrap the Cyrillic span cleanly: %r' % fixed)
+    if find_d1(fixed):
+        fail('H1651: fix_d1 output must be clean under find_d1')
+
+    # D3: DE {%...%} rendered as RU «...» at matching slot count is drift.
+    if not find_d3('{%glauben%}', 'text «полагать» text'):
+        fail('H1651: gloss-wrapper drift (DE {%...%} -> RU «...») must be detected')
+    # CONTROL: a row whose RU already uses {%...%} for the gloss is clean.
+    if find_d3('{%glauben%}', 'text {%полагать%} text'):
+        fail('H1651: a row already using {%...%} in ru must NOT be flagged as drift')
+    fixed3, n3, eligible = fix_d3('a {%X%} b {%Y%} c', 'a «X» b «Y» c')
+    if not eligible or n3 != 2 or fixed3 != 'a {%X%} b {%Y%} c':
+        fail('H1651: fix_d3 did not rewrap a count-matched row cleanly: %r' % fixed3)
+    # count mismatch -> left untouched, not eligible (needs manual review).
+    fixed3b, n3b, eligible_b = fix_d3('a {%X%} b {%Y%} c', 'a «X» b c')
+    if eligible_b or n3b or fixed3b != 'a «X» b c':
+        fail('H1651: fix_d3 must refuse a count-mismatched row rather than guess')
+
+
 def test_semantic_review_prioritizer():
     high = {
         'key': 'high',
@@ -8138,6 +8177,7 @@ def main():
         test_german_connective_fix,
         test_h1302_german_prose_residue_scan,
         test_h1305_ru_style_mechanical,
+        test_h1651_wrapper_defect_gate,
         test_semantic_review_prioritizer,
         test_noisy_source_type_not_requeue,
         test_report_only_risks_never_requeue,
