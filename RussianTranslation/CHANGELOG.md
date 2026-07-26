@@ -10,6 +10,22 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — [integrity] MW `<k2>` variant fusion welded a non-word member ([#801](https://github.com/gasyoun/SanskritLexicography/issues/801), H1703, 26-07-2026)
+
+- MW lists spelling/accent variants of a headword inside one `<k2>`, separated by `; `
+  (`gaRa—kAri; gaRakAri`). [`mw_compounds.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mw_compounds.py)
+  split on the em-dash first and cleaned second, and `_ACCENT_STRIP` removes both `;`
+  and the space — so the variants were welded into a member that is not a word
+  (`gaRa` + **`kArigaRakAri`**). The bogus member also inflated the arity, so
+  `nominal_grammar._irregularities` emitted `compound:3_members` and the Zaliznyak
+  index `+3` for a two-member compound (`citpati` shipped as `m·3a+3`).
+- The variant list is now separated **first**, taking the first variant that actually
+  carries the segmentation. **41 of 106,603** MW compound records corrected, 22 of them
+  arity-corrected; [`headword_index.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/headword_index.tsv)
+  (36 rows), `paradigm_stats.tsv` and `reverse_paradigm_index.json` regenerated
+  accordingly. New `--selftest` (7 fixtures), wired into CI. Opus 5 1M
+  (`claude-opus-5[1m]`).
+
 ### Added — H1702 boundary-anchored auto-wrap for the H1651 D4 `ru_n==0` sub-pattern (26-07-2026)
 
 - H1651 flagged 2,539 rows where `de` carries a `{%...%}` gloss but `ru` never wraps its
