@@ -4,6 +4,64 @@ _Created: 09-07-2026 · Last updated: 26-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 26-07-2026 - H1628: stratified 200-item review sheet, PWG-vs-index compound `differs` (H1624 G6 residual)
+
+Executor: Sonnet 5 (`claude-sonnet-5`). Sampled from the ~4226-row `differs` queue the
+[H1624 G6](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1624-Opus_SanskritLexicography_pwg-german-layers-backlog-ordered_25.07.26.md)
+`enrich_portrait_derivation.py --conflict-rate` flags (39539 rows scanned, 4226/39539 =
+10.69% conflict, 10577/39539 = 26.75% needs_human — unchanged from G6's freeze). Sampling
+script:
+[`src/pilot/compound_differs_review_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/compound_differs_review_sample.py)
+(`--selftest` wired; `--report` dry-runs the strata; `--write` emits the frame + sheet).
+
+**Sample frame — two-stage stratified, seed=1628 (deterministic, reproducible):**
+
+1. `vs_index_class` (how PWG's split disagrees with the pre-existing
+   `headword_index.tsv` `compound_members`, not itself stratifiable since the whole
+   queue is `compound_status=differs`): `member_count_diff` (76/4226, 1.8%) gets a flat
+   **guaranteed quota of 20** — proportional allocation would round it to ~1-2 items and
+   bury a structurally distinct failure mode; `same_count_diff_split` (4150/4226) fills
+   the remaining 180 proportionally across length x frequency cells (largest-remainder
+   rounding to land exactly on 180).
+2. `length_bucket` (`len(k1)`): short ≤8 / medium 9-10 / long ≥11 (quartile-derived cuts
+   on the full differs frame).
+3. `freq_bucket` (DCS attestation count via
+   [`src/pwg_freq_order.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_freq_order.tsv)):
+   `no_dcs_freq` (no match, 58.1% of the frame) / low 1-2 / mid 3-9 / high ≥10.
+
+| stratum | full differs frame (n=4226) | sample (n=200) |
+|---|---:|---:|
+| vs_index_class: member_count_diff | 76 (1.8%) | 20 (10.0%, oversampled by design) |
+| vs_index_class: same_count_diff_split | 4150 (98.2%) | 180 (90.0%) |
+| length: short(≤8) | 1904 (45.1%) | 83 (41.5%) |
+| length: medium(9-10) | 1622 (38.4%) | 78 (39.0%) |
+| length: long(≥11) | 700 (16.6%) | 39 (19.5%) |
+| freq: no_dcs_freq | 2456 (58.1%) | 123 (61.5%) |
+| freq: low(1-2) | 660 (15.6%) | 28 (14.0%) |
+| freq: mid(3-9) | 503 (11.9%) | 22 (11.0%) |
+| freq: high(≥10) | 607 (14.4%) | 27 (13.5%) |
+
+Sample frame (metadata only — k1/hom/both splits/strata/panini/gaṇa, no `ru`/`de` store
+text) committed at
+[`review/sanskritlexicography-pwg-compound-differs_stratified200_frame.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/sanskritlexicography-pwg-compound-differs_stratified200_frame.tsv).
+The interactive sheet itself
+(`review/sanskritlexicography-pwg-compound-differs_stratified200_review.html`) stays
+**gitignored**, per the `/review-sheet` contract — personal voting artifact, not a repo
+deliverable.
+
+**Vote → store contract (so `derivation.human_reviewed` never gets a bulk overwrite):**
+`decisions.json` export carries one decision per `(k1, hom)` id — `approve` = PWG's split
+is correct (a future apply step sets that entry's `derivation.compound.human_reviewed =
+true` with `members` taken from `pwg_members`); `reject` = the index's split is correct
+(same overlay, `members` taken from `index_members`, PWG layer flagged
+`needs_correction`); `defer` = no vote, stays `needs_human`. The overlay write touches
+**only the ~200 sampled `(k1, hom)` keys** — `enrich_portrait_derivation.enrich_portrait_obj`
+already refuses to touch any entry whose `derivation.human_reviewed` is truthy, so applying
+this batch cannot silently re-stamp the other ~4026 unsampled `differs` rows.
+
+**Explicit non-goal:** the remaining ~4026 `differs` rows (4226 − 200) stay `needs_human`;
+this sheet closes zero rows on its own until MG votes and `/decisions-apply` runs.
+
 ## 26-07-2026 - P1 ruling applied: machine-flag layer over the live queue, batch1v3 (H1655)
 
 Executor: Fable 5 (`claude-fable-5`). MG ruled the voting-queue triage `@DECIDE` «auto-reject»

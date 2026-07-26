@@ -10,6 +10,19 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1628: stratified 200-item review sheet for the compound `differs` queue (26-07-2026)
+
+- [`src/pilot/compound_differs_review_sample.py`](src/pilot/compound_differs_review_sample.py)
+  draws a deterministic (seed=1628), two-stage stratified sample of 200 from the ~4226-row
+  PWG-vs-index compound `differs` queue (H1624 G6 residual): a flat 20-item quota for the
+  rare `member_count_diff` sub-class, the rest proportional across length x DCS-frequency
+  cells. Sample frame committed
+  ([`review/sanskritlexicography-pwg-compound-differs_stratified200_frame.tsv`](review/sanskritlexicography-pwg-compound-differs_stratified200_frame.tsv));
+  the interactive sheet stays gitignored (personal voting artifact). Vote → store contract
+  documented in [RESULTS_LOG.md](RESULTS_LOG.md) so applying the vote can never bulk-overwrite
+  `derivation.human_reviewed` beyond the sampled ids. Does not close the ~4.2k queue —
+  ~4026 rows stay `needs_human` pending a future sampling round.
+
 ## [1.69.0] - 2026-07-26
 
 > Version numbering follows the repository's **git tag** sequence (…v1.67.0,
