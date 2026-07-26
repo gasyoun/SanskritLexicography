@@ -44,6 +44,31 @@ of them.** A stratum needs ≥ 35 arm cards at 100 % agreement to reach 0.90, an
 sample was stratified by length × DCS frequency before these rule strata existed. The
 remaining 1,208 rows need a second, rule-stratified arm of ~280 cards.
 
+## 26-07-2026 - H1682: h1303_abbrev rule-collapse — 273 → 33 cards
+
+Executor: Sonnet 5 (`claude-sonnet-5`),
+[H1682](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1682-Sonnet_SanskritLexicography_h1303-abbrev-rule-collapse_26.07.26.md).
+Full method + per-section table:
+[H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md);
+100% classification: [H1682_ABBREV_RULE_COLLAPSE_CLASSIFICATION_2026-07-26.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1682_ABBREV_RULE_COLLAPSE_CLASSIFICATION_2026-07-26.tsv).
+
+| | count |
+|---|--:|
+| ab-tokens classified (100%) | 269 |
+| rule-bulk (folds into a section policy) | 252 |
+| residue (classifier-flagged ambiguous) | 17 |
+| Rule cards | 12 |
+| Residue + ls-border + meta cards | 17 + 3 + 1 |
+| **New sheet total** (`h1682_abbrev_rules`) | **33** |
+| Old sheet (`h1303_abbrev`, superseded-unvoted) | 273 |
+
+No token reclassified — every rule/residue label is re-grouped from
+`build_h1303_abbrev_sheet.py`'s existing `O` overlay (H1303 Session 1,
+21-07-2026) via its own 12 `# --- ...` section headers, parsed straight from
+source (no hand-retyped token lists). Found + fixed in passing: the H1682
+mandate's own "CONTRADICTIONS §7" (and `.ai_state.md`'s) is stale — renumbered
+to §4 by H1364 (20-07-2026).
+
 ## 26-07-2026 - H1664: voting-queue triage — a verdict for every pending sheet, human bill recounted
 
 Executor: Fable 5 (`claude-fable-5`),
