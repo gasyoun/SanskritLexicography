@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 25-07-2026 (H858 Part B german-anchor repair: +1 SHARED)
+_Created: 04-07-2026 · Last updated: 26-07-2026 (H1631 edition-diff coverage exempt)
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -1823,6 +1823,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
   "note": "Curated exceptions for the coverage guard (lang_parity_check.coverage_check). A language-aware pipeline .py under src/ or src/pilot/ must be EITHER tracked by a ledger entry above OR listed here with a one-line reason. Each of these is a read-only sampler / QA-sheet generator / benchmark / triage reporter that mentions english/--lang but produces reports or samples, not pipeline behaviour — a change cannot cause RU/EN behavioural drift. Classified 21-07-2026 by an Opus 4.8 (claude-opus-4-8) 8-agent fan-out + adversarial audit (7 exempt; the 8th, en_residual_keys.py, became the en_coverage_card_done_semantics ledger entry).",
   "exempt": {
     "src/build_citation_index.py": "Read-only citation-coverage reporter: reads DE/RU/EN <ls> stores to count/resolve citations and writes only Markdown+JSON coverage reports; never writes the store, transforms cards, or emits gate/promote verdicts.",
+    "src/pilot/build_edition_diff_site.py": "False-positive match (its `<html lang=\"en\">` page-template attribute, not a RU/EN pipeline branch — H1631). Read-only static-page renderer over edition_rel (PWG/PW/SCH/PWKVN/NWS layer axis, unrelated to the RU/EN translation-language axis); never writes the store, translates, or emits a gate/promote verdict.",
     "src/fidelity_sample_en.py": "Read-only stratified sampler: reads wf_output.en.*.json and writes only fidelity_sample_en.jsonl for the Opus EN fidelity judge; no store write, no gate verdict, no card transform — a change alters only the eval sample's composition.",
     "src/gold_sample_en.py": "Read-only human-gold sampler: loads the store, selects rows carrying `en`, writes a working JSONL sample + blank reviewer CSV + METHODS note; never writes back to the store or emits a gate verdict.",
     "src/pilot/calibrate_perf_harness.py": "Benchmark scaffolding generator: builds scratch harness arms + manifest + REPORT_TEMPLATE and passes --lang straight through to gen_opt_harness2.py (the actual parity surface); never translates/audits/gates/promotes or writes the store.",
