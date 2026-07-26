@@ -14,6 +14,27 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H1691 — PWG's remaining DCS-carried cited texts adjudicated; 52 abbreviations, 12 mapped
+  (26-07-2026, Opus 5 `claude-opus-5[1m]`).** Report
+  [`PWG_DCS_TEXT_CROSSWALK_H1691.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_DCS_TEXT_CROSSWALK_H1691.md),
+  adjudications
+  [`pwg_ls_dcs_scheme_verdicts.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_ls_dcs_scheme_verdicts.tsv),
+  and three evidence generators (`probe_dcs_text_scheme.py`, `probe_pwg_ls_scheme.py`,
+  `probe_scheme_overlap.py` with a competitive-rank test against all 270 DCS texts) plus
+  `h1691_handcheck.py`. Grounded PWG leaf senses 7,372 → **8,208** (+11.3%) on H1670's wide
+  frame; `MAPPED` citation mass 36.4% → **44.7%**; the actionable backlog above 0.05% is empty.
+
+### Fixed
+- **`build_ls_text_crosswalk_backlog.py` mis-classified in both directions and now reads back
+  the adjudicated verdicts.** Its candidate came from prefix-matching PWG's GERMAN `pwgbib`
+  prose, so Pāṇini (21,305 citations) and Manu (20,605) — the two largest crosswalk wins in the
+  dictionary — sat in `DCS-LACKS`, "a genuine corpus gap that no crosswalk can close"; and
+  `max(candidates, key=tokens)` picked the wrong work six times over. `DCS-LACKS` fell from
+  49.7% to 37.2% of citation mass and is now labelled for what it is: "no name-alike was
+  found". New finding [§471](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md);
+  tier-stamping defect recorded as §472; §465 updated with the new grounding figure.
+
 ## [1.78.0] — 2026-07-26
 
 ### Changed

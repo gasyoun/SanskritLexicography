@@ -1,0 +1,690 @@
+[
+ {
+  "pwg_abbrev": "KIR",
+  "dcs_text": "Kirātārjunīya",
+  "pwg_citations": 690,
+  "pwg_distinct_tuples": 291,
+  "pwg_arity_hist": [
+   [
+    2,
+    286
+   ],
+   [
+    1,
+    5
+   ]
+  ],
+  "dcs_arities": [
+   1,
+   2
+  ],
+  "dcs_verse_addrs": 1040,
+  "dcs_chapter_addrs": 18,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 100.0,
+  "hit_verse_pct": 97.9,
+  "hit_chapter_pct": 1.0,
+  "ceiling_citations_at_verse": 684,
+  "ceiling_citation_pct": 99.1
+ },
+ {
+  "pwg_abbrev": "GĪT",
+  "dcs_text": "Gītagovinda",
+  "pwg_citations": 1181,
+  "pwg_distinct_tuples": 265,
+  "pwg_arity_hist": [
+   [
+    2,
+    263
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  "dcs_arities": [
+   1,
+   2
+  ],
+  "dcs_verse_addrs": 428,
+  "dcs_chapter_addrs": 12,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 100.0,
+  "hit_verse_pct": 98.9,
+  "hit_chapter_pct": 0.8,
+  "ceiling_citations_at_verse": 1177,
+  "ceiling_citation_pct": 99.7
+ },
+ {
+  "pwg_abbrev": "KAṬHOP",
+  "dcs_text": "Kaṭhopaniṣad",
+  "pwg_citations": 484,
+  "pwg_distinct_tuples": 121,
+  "pwg_arity_hist": [
+   [
+    2,
+    117
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  "dcs_arities": [
+   1,
+   2
+  ],
+  "dcs_verse_addrs": 120,
+  "dcs_chapter_addrs": 6,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 98.3,
+  "hit_verse_pct": 95.9,
+  "hit_chapter_pct": 0.8,
+  "ceiling_citations_at_verse": 477,
+  "ceiling_citation_pct": 98.6
+ },
+ {
+  "pwg_abbrev": "BṚH. ĀR. UP",
+  "dcs_text": "Bṛhadāraṇyakopaniṣad",
+  "pwg_citations": 776,
+  "pwg_distinct_tuples": 292,
+  "pwg_arity_hist": [
+   [
+    3,
+    277
+   ],
+   [
+    2,
+    9
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    4,
+    2
+   ]
+  ],
+  "dcs_arities": [
+   2,
+   3
+  ],
+  "dcs_verse_addrs": 271,
+  "dcs_chapter_addrs": 47,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 97.9,
+  "hit_verse_pct": 54.1,
+  "hit_chapter_pct": 3.1,
+  "ceiling_citations_at_verse": 421,
+  "ceiling_citation_pct": 54.3
+ },
+ {
+  "pwg_abbrev": "ŚVETĀŚV. UP",
+  "dcs_text": "Śvetāśvataropaniṣad",
+  "pwg_citations": 584,
+  "pwg_distinct_tuples": 113,
+  "pwg_arity_hist": [
+   [
+    2,
+    111
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    1,
+    1
+   ]
+  ],
+  "dcs_arities": [
+   1,
+   2
+  ],
+  "dcs_verse_addrs": 4,
+  "dcs_chapter_addrs": 6,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 99.1,
+  "hit_verse_pct": 3.5,
+  "hit_chapter_pct": 0.9,
+  "ceiling_citations_at_verse": 19,
+  "ceiling_citation_pct": 3.3
+ },
+ {
+  "pwg_abbrev": "ŚĀṄKH. ŚR",
+  "dcs_text": "Śāṅkhāyanaśrautasūtra",
+  "pwg_citations": 2652,
+  "pwg_distinct_tuples": 1932,
+  "pwg_arity_hist": [
+   [
+    3,
+    1911
+   ],
+   [
+    2,
+    18
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    4,
+    1
+   ]
+  ],
+  "dcs_arities": [
+   2,
+   3
+  ],
+  "dcs_verse_addrs": 2445,
+  "dcs_chapter_addrs": 208,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 99.8,
+  "hit_verse_pct": 42.4,
+  "hit_chapter_pct": 0.4,
+  "ceiling_citations_at_verse": 1170,
+  "ceiling_citation_pct": 44.1
+ },
+ {
+  "pwg_abbrev": "PAÑCAV. BR",
+  "dcs_text": "Pañcaviṃśabrāhmaṇa",
+  "pwg_citations": 2173,
+  "pwg_distinct_tuples": 1393,
+  "pwg_arity_hist": [
+   [
+    3,
+    1226
+   ],
+   [
+    2,
+    154
+   ],
+   [
+    1,
+    12
+   ],
+   [
+    5,
+    1
+   ]
+  ],
+  "dcs_arities": [
+   2,
+   3
+  ],
+  "dcs_verse_addrs": 1936,
+  "dcs_chapter_addrs": 169,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 99.1,
+  "hit_verse_pct": 48.5,
+  "hit_chapter_pct": 6.3,
+  "ceiling_citations_at_verse": 1017,
+  "ceiling_citation_pct": 46.8
+ },
+ {
+  "pwg_abbrev": "ĀŚV. GṚHY",
+  "dcs_text": "Āśvalāyanagṛhyasūtra",
+  "pwg_citations": 1707,
+  "pwg_distinct_tuples": 554,
+  "pwg_arity_hist": [
+   [
+    3,
+    464
+   ],
+   [
+    2,
+    75
+   ],
+   [
+    1,
+    14
+   ],
+   [
+    5,
+    1
+   ]
+  ],
+  "dcs_arities": [
+   2,
+   3
+  ],
+  "dcs_verse_addrs": 494,
+  "dcs_chapter_addrs": 54,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 97.3,
+  "hit_verse_pct": 50.4,
+  "hit_chapter_pct": 9.7,
+  "ceiling_citations_at_verse": 547,
+  "ceiling_citation_pct": 32.0
+ },
+ {
+  "pwg_abbrev": "GOBH",
+  "dcs_text": "Gobhilagṛhyasūtra",
+  "pwg_citations": 963,
+  "pwg_distinct_tuples": 590,
+  "pwg_arity_hist": [
+   [
+    3,
+    560
+   ],
+   [
+    2,
+    21
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    5,
+    1
+   ]
+  ],
+  "dcs_arities": [
+   2,
+   3
+  ],
+  "dcs_verse_addrs": 678,
+  "dcs_chapter_addrs": 39,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 98.5,
+  "hit_verse_pct": 55.4,
+  "hit_chapter_pct": 1.5,
+  "ceiling_citations_at_verse": 538,
+  "ceiling_citation_pct": 55.9
+ },
+ {
+  "pwg_abbrev": "PĀR. GṚHY",
+  "dcs_text": "Pāraskaragṛhyasūtra",
+  "pwg_citations": 816,
+  "pwg_distinct_tuples": 80,
+  "pwg_arity_hist": [
+   [
+    2,
+    52
+   ],
+   [
+    3,
+    22
+   ],
+   [
+    1,
+    6
+   ]
+  ],
+  "dcs_arities": [
+   2,
+   3
+  ],
+  "dcs_verse_addrs": 490,
+  "dcs_chapter_addrs": 51,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 92.5,
+  "hit_verse_pct": 16.2,
+  "hit_chapter_pct": 62.5,
+  "ceiling_citations_at_verse": 15,
+  "ceiling_citation_pct": 1.8
+ },
+ {
+  "pwg_abbrev": "KĀṬH",
+  "dcs_text": "Kāṭhakasaṃhitā",
+  "pwg_citations": 1453,
+  "pwg_distinct_tuples": 353,
+  "pwg_arity_hist": [
+   [
+    2,
+    345
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "dcs_arities": [
+   2,
+   3
+  ],
+  "dcs_verse_addrs": 7348,
+  "dcs_chapter_addrs": 139,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 98.0,
+  "hit_verse_pct": 0.0,
+  "hit_chapter_pct": 34.3,
+  "ceiling_citations_at_verse": 0,
+  "ceiling_citation_pct": 0.0
+ },
+ {
+  "pwg_abbrev": "SŪRYAS",
+  "dcs_text": "Sūryasiddhānta",
+  "pwg_citations": 1836,
+  "pwg_distinct_tuples": 523,
+  "pwg_arity_hist": [
+   [
+    2,
+    495
+   ],
+   [
+    1,
+    26
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    4,
+    1
+   ]
+  ],
+  "dcs_arities": [
+   1,
+   2
+  ],
+  "dcs_verse_addrs": 139,
+  "dcs_chapter_addrs": 2,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 99.6,
+  "hit_verse_pct": 26.2,
+  "hit_chapter_pct": 0.4,
+  "ceiling_citations_at_verse": 583,
+  "ceiling_citation_pct": 31.8
+ },
+ {
+  "pwg_abbrev": "KATHĀS",
+  "dcs_text": "Kathāsaritsāgara",
+  "pwg_citations": 24748,
+  "pwg_distinct_tuples": 13288,
+  "pwg_arity_hist": [
+   [
+    2,
+    13062
+   ],
+   [
+    1,
+    223
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    4,
+    1
+   ]
+  ],
+  "dcs_arities": [
+   2,
+   3
+  ],
+  "dcs_verse_addrs": 7483,
+  "dcs_chapter_addrs": 44,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 98.3,
+  "hit_verse_pct": 0.0,
+  "hit_chapter_pct": 0.3,
+  "ceiling_citations_at_verse": 0,
+  "ceiling_citation_pct": 0.0
+ },
+ {
+  "pwg_abbrev": "AK",
+  "dcs_text": "Amarakośa",
+  "pwg_citations": 14773,
+  "pwg_distinct_tuples": 2018,
+  "pwg_arity_hist": [
+   [
+    4,
+    1238
+   ],
+   [
+    3,
+    735
+   ],
+   [
+    5,
+    18
+   ],
+   [
+    1,
+    13
+   ]
+  ],
+  "dcs_arities": [
+   1,
+   2
+  ],
+  "dcs_verse_addrs": 944,
+  "dcs_chapter_addrs": 2,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 1.3,
+  "hit_verse_pct": 0.0,
+  "hit_chapter_pct": 0.0,
+  "ceiling_citations_at_verse": 1,
+  "ceiling_citation_pct": 0.0
+ },
+ {
+  "pwg_abbrev": "TRIK",
+  "dcs_text": "Trikāṇḍaśeṣa",
+  "pwg_citations": 7594,
+  "pwg_distinct_tuples": 1131,
+  "pwg_arity_hist": [
+   [
+    3,
+    1054
+   ],
+   [
+    2,
+    57
+   ],
+   [
+    1,
+    18
+   ],
+   [
+    4,
+    2
+   ]
+  ],
+  "dcs_arities": [
+   1,
+   2
+  ],
+  "dcs_verse_addrs": 81,
+  "dcs_chapter_addrs": 1,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 6.6,
+  "hit_verse_pct": 1.4,
+  "hit_chapter_pct": 0.1,
+  "ceiling_citations_at_verse": 23,
+  "ceiling_citation_pct": 0.3
+ },
+ {
+  "pwg_abbrev": "HIT",
+  "dcs_text": "Hitopadeśa",
+  "pwg_citations": 2651,
+  "pwg_distinct_tuples": 1057,
+  "pwg_arity_hist": [
+   [
+    2,
+    1028
+   ],
+   [
+    1,
+    29
+   ]
+  ],
+  "dcs_arities": [
+   1,
+   2
+  ],
+  "dcs_verse_addrs": 718,
+  "dcs_chapter_addrs": 5,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 100.0,
+  "hit_verse_pct": 0.8,
+  "hit_chapter_pct": 0.1,
+  "ceiling_citations_at_verse": 33,
+  "ceiling_citation_pct": 1.2
+ },
+ {
+  "pwg_abbrev": "VP",
+  "dcs_text": "Viṣṇupurāṇa",
+  "pwg_citations": 3862,
+  "pwg_distinct_tuples": 1045,
+  "pwg_arity_hist": [
+   [
+    1,
+    415
+   ],
+   [
+    2,
+    410
+   ],
+   [
+    3,
+    215
+   ],
+   [
+    4,
+    4
+   ]
+  ],
+  "dcs_arities": [
+   2,
+   3
+  ],
+  "dcs_verse_addrs": 6237,
+  "dcs_chapter_addrs": 126,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 59.8,
+  "hit_verse_pct": 19.1,
+  "hit_chapter_pct": 1.6,
+  "ceiling_citations_at_verse": 271,
+  "ceiling_citation_pct": 7.0
+ },
+ {
+  "pwg_abbrev": "KAUŚ",
+  "dcs_text": "Kauśikasūtra",
+  "pwg_citations": 3272,
+  "pwg_distinct_tuples": 155,
+  "pwg_arity_hist": [
+   [
+    1,
+    143
+   ],
+   [
+    2,
+    12
+   ]
+  ],
+  "dcs_arities": [
+   2,
+   3
+  ],
+  "dcs_verse_addrs": 2728,
+  "dcs_chapter_addrs": 140,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 7.7,
+  "hit_verse_pct": 0.0,
+  "hit_chapter_pct": 0.0,
+  "ceiling_citations_at_verse": 0,
+  "ceiling_citation_pct": 0.0
+ },
+ {
+  "pwg_abbrev": "DAŚAK",
+  "dcs_text": "Daśakumāracarita",
+  "pwg_citations": 1152,
+  "pwg_distinct_tuples": 818,
+  "pwg_arity_hist": [
+   [
+    2,
+    788
+   ],
+   [
+    1,
+    26
+   ],
+   [
+    4,
+    3
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "dcs_arities": [
+   2,
+   3
+  ],
+  "dcs_verse_addrs": 1897,
+  "dcs_chapter_addrs": 14,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 96.5,
+  "hit_verse_pct": 0.0,
+  "hit_chapter_pct": 0.7,
+  "ceiling_citations_at_verse": 0,
+  "ceiling_citation_pct": 0.0
+ },
+ {
+  "pwg_abbrev": "AMAR",
+  "dcs_text": "Amaruśataka",
+  "pwg_citations": 531,
+  "pwg_distinct_tuples": 102,
+  "pwg_arity_hist": [
+   [
+    1,
+    100
+   ],
+   [
+    2,
+    2
+   ]
+  ],
+  "dcs_arities": [
+   1,
+   2
+  ],
+  "dcs_verse_addrs": 106,
+  "dcs_chapter_addrs": 1,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 100.0,
+  "hit_verse_pct": 0.0,
+  "hit_chapter_pct": 1.0,
+  "ceiling_citations_at_verse": 0,
+  "ceiling_citation_pct": 0.0
+ },
+ {
+  "pwg_abbrev": "CAURAP",
+  "dcs_text": "Caurapañcaśikā",
+  "pwg_citations": 392,
+  "pwg_distinct_tuples": 52,
+  "pwg_arity_hist": [
+   [
+    1,
+    52
+   ]
+  ],
+  "dcs_arities": [
+   1,
+   2
+  ],
+  "dcs_verse_addrs": 50,
+  "dcs_chapter_addrs": 1,
+  "dcs_sentences_abstained": 0,
+  "arity_match_pct": 100.0,
+  "hit_verse_pct": 0.0,
+  "hit_chapter_pct": 1.9,
+  "ceiling_citations_at_verse": 0,
+  "ceiling_citation_pct": 0.0
+ }
+]
