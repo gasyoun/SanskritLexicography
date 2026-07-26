@@ -16,6 +16,26 @@ not an error.
 
 ## [1.88.0] — 2026-07-27
 
+### Fixed
+- **[integrity] a sheet generator could rewrite a LIVE lock in silence, invalidating votes
+  already cast** (H1703 follow-on, Opus 5 1M `claude-opus-5[1m]`). A generator reads live
+  data, so re-running one after its inputs moved re-cuts the sheet — and
+  `review_binding.write_lock()` overwrote the existing lock without a word. Found
+  concretely: re-running `compound_differs_review_sample.py --write` on `master` after the
+  H1703 extractor repairs renders `sha256:68a6297b…` where the committed lock binds
+  `sha256:31c106bb…`, i.e. a different 200 cards. Any votes in flight would have stopped
+  validating with no signal until `validate_decisions.py` rejected the export — the same
+  failure shape as the unbound sheet H1703 item 1 fixed, one step later. `write_lock()`
+  now raises `LockCollision` on a differing hash (same-hash rewrite still allowed, so
+  idempotent regeneration is unaffected; deliberate re-cut takes `force=True` /
+  `REVIEW_LOCK_FORCE=1`), with three selftest cases pinning it. Protects every sheet in
+  the estate. Also recorded: **arm 1 reproduces only at
+  [v1.83.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.83.0)**
+  (verified byte-for-byte), arm 2 on `master` — both sheets' HTML regenerated and placed
+  so their `file:///` links in
+  [REVIEW_SHEETS_INDEX.md](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md)
+  resolve (neither existed in the working checkout; both are gitignored by contract).
+
 ### Added
 - **FINDINGS §476–§479 — the reusable half of H1703** (Opus 5 1M `claude-opus-5[1m]`).
   Four measured findings a future session in any repo would otherwise rediscover:
