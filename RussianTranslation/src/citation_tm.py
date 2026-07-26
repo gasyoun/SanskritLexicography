@@ -27,14 +27,18 @@ TWO layers, deliberately separate:
   'miss'                 — a clean, honest non-hit, with a `reason`:
         'text-not-covered'    the text has no RU asset at all (TS., SUŚR., …).
         'locus-not-in-corpus' the text IS covered but this passage isn't ingested
-                              (e.g. Rāmāyaṇa kiṣkindhā/yuddha kāṇḍas — absent).
+                              (e.g. Rāmāyaṇa book 7 / uttarakāṇḍa — absent).
         'locus-parse-failed'  the citation locus didn't parse.
   'unmapped_locus_scheme'— the text is covered but its PWG citation scheme does
                            NOT map 1:1 to the corpus keying, so no lookup is
                            possible without an external concordance. The two
                            documented cases: MBH. (PWG cites continuous Calcutta
                            ślokas; corpus keys critical parvan.adhyaya.verse) and
-                           R. GORR. (Gorresio Bengal recension ≠ Leonov Southern).
+                           R. GORR. (Gorresio Bengal recension ≠ Leonov Southern) —
+                           which since H1656 ALSO covers plain R. books 3-6: pwgbib
+                           1.247 says PWG's R. cites Gorresio for those books, and
+                           the store's sarga ranges confirm it (R. 3,79 / 4,63 /
+                           5,94 = Gorresio counts, past the Southern ones).
                            NOT a miss — a GAP awaiting a concordance (see the doc).
   'evidence_unavailable' — the corpus DB is absent, so a resolved hit could not be
                            confirmed (distinct from 'miss': we simply couldn't look).
@@ -74,10 +78,20 @@ UNMAPPED = object()
 # `canonical_id` passage (without the #ru/#sa suffix), per COVERED_TEXTS_RU.md.
 # Return None on a parse failure; return UNMAPPED for a documented scheme gap.
 
-_RAMA_KANDA = {  # PWG book number -> corpus kāṇḍa file (04 kiṣkindhā / 06 yuddha absent)
+_RAMA_KANDA = {  # PWG book number -> corpus kāṇḍa file (Schlegel books only; see below)
     1: '01_ramayana-balakanda', 2: '02_ramayana-ayodhyakanda',
-    3: '03_ramayana-aranyakanda', 5: '05_ramayana-sundarakanda',
 }
+# PWG's plain "R." is a THREE-edition composite (pwgbib 1.247): books 1-2 cite
+# SCHLEGEL (numbering ~vulgate; the R. 2,91,26 fixture is human-validated),
+# books 3-6 cite GORRESIO — the Gauḍīya/Bengal recension, NOT the Southern
+# text Leonov translated — and book 7 the Bombay edition (~vulgate uttara).
+# Verified empirically (H1656): store citations reach R. 3,79 / 4,63 / 5,94 —
+# exactly the Gorresio sarga counts (79/63/95), far past the Southern ones
+# (75/–/68). So books 3-6 MUST NOT key into the Southern corpus: an in-range
+# locus would return the WRONG verse's translation silently. They stay
+# UNMAPPED until the Gorresio<->Southern concordance validates
+# (src/build_ramayana_concordance.py, DRAFT-STRUCTURAL).
+_RAMA_GORRESIO_BOOKS = {3, 4, 5, 6}
 
 
 def _nums(locus):
@@ -89,8 +103,10 @@ def _rama(locus):
     if len(n) != 3:
         return None
     book, sarga, verse = n
+    if book in _RAMA_GORRESIO_BOOKS:   # Gorresio-keyed loci (see note above)
+        return UNMAPPED
     work = _RAMA_KANDA.get(book)
-    if work is None:  # kiṣkindhā (4) / yuddha (6) not ingested -> covered-but-absent
+    if work is None:  # book 7 (Bombay ed., uttara) not ingested -> covered-but-absent
         return ('__ramayana_absent_kanda__', book)
     return '%s:%d.%d' % (work, sarga, verse)
 
@@ -286,6 +302,9 @@ def selftest():
     gorr = lookup('R. GORR.', '2,5,27')
     check(gorr['status'] == 'unmapped_locus_scheme',
           'R. GORR. 2,5,27 -> %s (Gorresio Bengal GAP, N11)' % gorr['status'])
+    r3 = lookup('R.', '3,79,10')
+    check(r3['status'] == 'unmapped_locus_scheme',
+          'R. 3,79,10 -> %s (R. books 3-6 are Gorresio-keyed, H1656)' % r3['status'])
 
     print('LIVE corpus checks (DB-gated):')
     if not os.path.exists(CORPUS_DB):

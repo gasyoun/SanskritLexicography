@@ -10,6 +10,34 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1656 Rāmāyaṇa recension concordances (Gorresio↔Southern + Southern↔Critical) (26-07-2026)
+
+- MG ruled 21-07-2026 (weekly `@DECIDE`): build the Gorresio↔Southern concordance —
+  «NEVER propose to skip» citation reuse. New
+  [src/build_ramayana_concordance.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py)
+  builds three committed, metadata-only TSVs: the **Gorresio structural inventory**
+  (672 sargas, verse counts + volume/page, from the Cologne
+  [ramayanagorr](https://github.com/sanskrit-lexicon-scans/ramayanagorr) scan-viewer
+  page index — no OCR chased, none exists), the **Southern↔Critical verse
+  concordance** (18,993 Southern verses vs DCS critical, content-based, 74%
+  matched), and a **Gorresio↔Southern sarga map** (DTW over verse-count profiles,
+  DRAFT-STRUCTURAL: 319 plausible / 212 weak / 165 unpaired). Selftest wired into
+  the CI gates job. R. GORR. stays `unmapped_locus_scheme` until the validation
+  gate in [pwg_ru/COVERED_TEXTS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/COVERED_TEXTS_RU.md)
+  § R. GORR. passes (≥30-pair scan spot-check + human review sheet).
+
+### Fixed — plain R. books 3–6 are Gorresio-keyed; resolver was silently wrong (26-07-2026)
+
+- **Integrity find (H1656):** PWG's plain `R.` is a three-edition composite
+  (pwgbib 1.247): books 1–2 Schlegel, **books 3–6 Gorresio (Bengal recension)**,
+  book 7 Bombay. Verified against the store's cited sarga ranges (R. 3 → 79,
+  R. 4 → 63, R. 5 → 94 = exactly Gorresio's counts; Southern has 75/–/68).
+  `citation_tm.py` keyed in-range book-3/5 loci into the Southern corpus and
+  returned the **wrong verse's RU translation** silently — ~900 refs exposed.
+  Books 3–6 now return `unmapped_locus_scheme` (selftest fixture added) until the
+  Gorresio↔Southern concordance validates. ~2,200 refs total ride on that
+  concordance (657 R. GORR. + ~1,560 plain-R. books 3–6).
+
 ## [1.72.0] — 2026-07-26
 
 ### Added — H1491: Leonchenko Sinonimy digitized to a synonym evidence lane (26-07-2026)
