@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.67.0] — 2026-07-26
+
 ### Added
 - **Reader-visible German-residue gate for review sheets (H1655, 26-07-2026).** MG aborted
   G5 live-queue batch 1 at 5/150 votes: cards reached the human with visible German. New
