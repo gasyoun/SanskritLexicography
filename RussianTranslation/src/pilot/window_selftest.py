@@ -3988,10 +3988,14 @@ def test_coordinator_requeue_attempt_manifests():
                 'portrait_sha256': coordinator.sha256_file(portrait_path),
             }
         initial_manifest = os.path.join(artifacts, 'execution_manifest.lease.json')
+        # Promotion is a sealed contract now: v1/unbound output is historical-only and is
+        # refused, so a lane fixture that ends in a promotion needs manifest-v2 meta with the
+        # execution block and per-key provenance. The REAL input hashes computed above are
+        # kept -- only the sealing is added.
         original = {
-            'schema': 'pwg.headless_execution_manifest.v1',
-            'meta': {'root': 'no_pwg_fixture', 'nominal': True,
-                     'selected_keys': ['a~~x', 'b~~x'], 'input_hashes': input_hashes},
+            'schema': 'pwg.headless_execution_manifest.v2',
+            'meta': dict(sealed_wf_meta(['a~~x', 'b~~x'], root='no_pwg_fixture', nominal=True),
+                         input_hashes=input_hashes),
         }
         with open(initial_manifest, 'w', encoding='utf-8') as f:
             json.dump(original, f)
@@ -4025,6 +4029,11 @@ def test_coordinator_requeue_attempt_manifests():
         fail_once = [True]
 
         def fake_run(cmd, **_kwargs):
+            # prepare_requeue now runs perf_preflight.py for the attempt and cost-gates its
+            # stdout, so the fake has to answer that command FIRST: it carries no --out=, and
+            # the unconditional next(...) below raised StopIteration on it.
+            if any(str(arg).endswith('perf_preflight.py') for arg in cmd):
+                return SimpleNamespace(returncode=0, stdout=PREFLIGHT_STDOUT, stderr='')
             out = next(arg.split('=', 1)[1] for arg in cmd if arg.startswith('--out='))
             manifest = next(arg.split('=', 1)[1] for arg in cmd
                             if arg.startswith('--manifest-out='))
@@ -4326,8 +4335,14 @@ def test_coordinator_mixed_lane_public_state_sequence():
 
         def result_file(name, keys):
             path = os.path.join(tmp, name)
-            payload = {'results': [
-                {'key': key, 'card': {'key1': key, 'records': []}} for key in keys]}
+            # The workflow output -- not the manifest -- is what promotion validates, so the
+            # sealed meta and a schema-complete card have to live HERE. The real per-key input
+            # hashes are carried over; only the sealing is added.
+            payload = {
+                'meta': dict(sealed_wf_meta(list(keys), root='no_pwg_fixture', nominal=True),
+                             nominal_keymap={k: k for k in keys}),
+                'results': [{'key': key, 'card': sealed_card(key)} for key in keys],
+            }
             with open(path, 'w', encoding='utf-8') as f:
                 json.dump(payload, f)
             return path
@@ -7422,7 +7437,11 @@ def test_h1420_p11_record_output_binds_run_id():
             try:
                 coordinator.record_output(SimpleNamespace(
                     lease_id='run', workflow_result=result_path, allow_stale=False,
-                    transcript_dir=None, run_id='run-Y'))
+                    transcript_dir=None, run_id='run-Y',
+                    # A sealed run now binds the RESULT BYTES too: record-output refuses when
+                    # --result-sha256 is absent. Supplied here so this case still fails for the
+                    # run-id reason it is about, not for a missing hash it never meant to test.
+                    result_sha256=coordinator.sha256_file(result_path)))
                 fail('P11: record-output accepted a stale run-id')
             except SystemExit as e:
                 if 'run-id' not in str(e):
@@ -7443,7 +7462,8 @@ def test_h1420_p11_record_output_binds_run_id():
             coordinator.run_cmd = fake_audit
             coordinator.record_output(SimpleNamespace(
                 lease_id='run', workflow_result=result_path, allow_stale=False,
-                transcript_dir=None, run_id='run-X'))
+                transcript_dir=None, run_id='run-X',
+                result_sha256=coordinator.sha256_file(result_path)))
             if coordinator.load_state()['leases'][0]['state'] == 'running':
                 fail('P11: a matching --run-id must let record-output proceed')
             print('  P11: record-output binds a supplied --run-id to the running lease run_id')
@@ -7456,76 +7476,54 @@ def test_h1420_p11_record_output_binds_run_id():
 
 
 def test_h1420_p10_promote_rebuilds_tm_in_finally():
-    """P10 (H1420): once the batch store commit lands, a raise while reading the batch report or
-    updating per-lease state must NOT skip the RU TM rebuild -- else store and TM diverge. The
-    rebuild runs in a `finally`, so it happens even when per-lease promotion raises."""
+    """P10 (H1420): a post-store-commit failure must NOT cost the RU TM rebuild.
+
+    The invariant is unchanged; the shape that carries it is not. `promote_ready` used to
+    rebuild the TM in a `finally` around a per-lease loop, and this test drove that by
+    faking the `--batch-manifest` subprocess. Promotion is now in-process and journal-phased:
+    `build_promotion_derived` runs `translation_memory.build`/`build_frags` BEFORE the `try:`
+    whose failure re-raises, so the TM is rebuilt by construction rather than by a `finally`.
+
+    So this pins the guarantee against the current architecture: with the store already
+    committed, make the step AFTER the TM build fail, and require that the rebuild still
+    happened and the failure still propagates. Testing the old `finally` would now be
+    testing a shape the code no longer has.
+    """
+    import promotion_journal_selftest as pjs
+    import promotion_journal
     import coordinator
-    from types import SimpleNamespace
-    old = os.environ.get('PWG_COORDINATOR_DIR')
-    original_run = coordinator.run_cmd
+    import translation_memory
+    import promote_final_cards as pfc
+    saved = (translation_memory.build, translation_memory.build_frags, pfc.collect_cards)
     with tempfile.TemporaryDirectory() as tmp:
-        os.environ['PWG_COORDINATOR_DIR'] = tmp
         try:
-            adir = os.path.join(tmp, 'artifacts', 'lease')
-            os.makedirs(adir)
-            wf = os.path.join(adir, 'wf.json')
-            clean = os.path.join(adir, 'clean.json')
-            status_path = os.path.join(adir, 'window_status.json')
-            report_path = os.path.join(adir, 'audit_window.report.json')
-            manifest = os.path.join(adir, 'manifest.json')
-            payload = {'meta': sealed_wf_meta(['k']),
-                       'results': [{'key': 'k', 'card': sealed_card('k')}]}
-            for path, value in ((wf, payload), (clean, payload),
-                                (status_path, {'state': 'clean', 'requeue_keys': []}),
-                                (report_path, {'workflow': wf, 'requeue': [], 'crashed': [],
-                                               'stale_check': {'ok': True}}),
-                                (manifest, {'schema': 'pwg.headless_execution_manifest.v2',
-                                            'meta': sealed_wf_meta(['k'])})):
-                with open(path, 'w', encoding='utf-8') as f:
-                    json.dump(value, f)
-            state = coordinator.default_state()
-            state['leases'] = [{
-                'id': 'lease', 'kind': 'nominal', 'target': 'n', 'state': 'ready',
-                'artifact_dir': adir, 'wf_output': wf, 'clean_output': clean,
-                'execution_manifest': manifest,
-                'clean_output_sha256': coordinator.sha256_file(clean), 'clean_count': 1,
-                'audit_state': 'clean', 'audit_returncode': 0,
-                'status_path': status_path, 'audit_report': report_path,
-            }]
-            coordinator.save_state(state)
+            store, journal_path, _before, after, _kwargs = pjs.make_prepared(tmp)
+            with open(store, 'wb') as f:            # the store IS committed at this point
+                f.write(after)
+            promotion_journal.mark_store_committed(journal_path, store_claim_held=True)
 
             tm_builds = []
+            translation_memory.build = lambda *a, **k: (
+                tm_builds.append('card'), (os.path.join(tmp, 'card.tm'), 1, 0))[1]
+            translation_memory.build_frags = lambda *a, **k: (
+                tm_builds.append('frag'), (os.path.join(tmp, 'frag.tm'), 1, 1))[1]
 
-            def fake_run(cmd, cwd=coordinator.REPO, check=True, timeout=None):
-                if '--batch-manifest' in cmd:
-                    # Store commit "succeeds", but the report lists NO subcards for the lease, so
-                    # the per-lease loop raises AFTER the store is committed (the P10 window).
-                    report = cmd[cmd.index('--report') + 1]
-                    with open(report, 'w', encoding='utf-8') as f:
-                        json.dump({'schema': 'pwg.batch_promotion.v1',
-                                   'store_rows_before': 10, 'store_rows_after': 11,
-                                   'leases': {'lease': {}}}, f)
-                elif 'translation_memory.py' in ' '.join(cmd) and 'build' in cmd:
-                    tm_builds.append(cmd)
-                return SimpleNamespace(returncode=0, stdout='', stderr='')
-            coordinator.run_cmd = fake_run
+            def exploding_collect(_files):
+                raise RuntimeError('synthetic post-TM derived failure')
+            pfc.collect_cards = exploding_collect
+
             try:
-                coordinator.promote_ready(SimpleNamespace(
-                    gen_model_version='claude-sonnet-5', lease_id=None))
-                fail('P10: promotion with no landed subcards must raise')
-            except SystemExit as e:
-                if 'no subcards' not in str(e):
+                coordinator.build_promotion_derived(journal_path, store_claim_held=True)
+                fail('P10: a failing derived step must propagate, not be swallowed')
+            except RuntimeError as exc:
+                if 'synthetic post-TM derived failure' not in str(exc):
                     raise
-            if not tm_builds:
-                fail('P10: the RU TM rebuild must run in a finally even when per-lease promotion raises')
-            print('  P10: promote_ready rebuilds the RU TM in a finally after the store commit')
+            if tm_builds != ['card', 'frag']:
+                fail('P10: the RU TM rebuild must survive a post-store-commit failure '
+                     '(ran %r)' % tm_builds)
+            print('  P10: a post-commit derived failure still leaves the RU TM rebuilt')
         finally:
-            coordinator.run_cmd = original_run
-            if old is None:
-                os.environ.pop('PWG_COORDINATOR_DIR', None)
-            else:
-                os.environ['PWG_COORDINATOR_DIR'] = old
-
+            translation_memory.build, translation_memory.build_frags, pfc.collect_cards = saved
 
 def test_h1283_a5_max_wide_default_bounded():
     """A5 (H1283): bounded dispatch is the DEFAULT — the highest throughput-per-effort lever."""
