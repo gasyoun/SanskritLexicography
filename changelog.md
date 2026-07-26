@@ -14,6 +14,44 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **H1671 — the NCC `match_key` case bug is repaired and the whole ACC×NCC pipeline
+  re-ran on corrected keys (26-07-2026, closes [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779)).**
+  [`parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/parse_ncc.py)
+  transliterated the *capitalised* NCC headword, and `sanskrit_util.to_slp1` is
+  case-preserving — so the capital fell through into the SLP1 string where
+  `slp1_simplify` read it as a different phoneme (`Rāmāyaṇa` → `namayana`). **91,548 of
+  152,526 keys (60.0%) were wrong.** `match_key_for` now case-folds + NFC-normalizes
+  first, pinned by a new
+  [`test_parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/test_parse_ncc.py)
+  that asserts both the correct key and the absence of the specific corrupt one.
+  P0 → P1 → P2 re-ran end to end: **exact-key overlap 8,397 → 22,775** distinct keys
+  (+14,379 pairs that were never proposed, because the corrupted key changed P1's
+  blocking letter), Tier D **43,666 → 1,575** rows as its 40,757 disguised exact matches
+  moved up to Tier A, the Tier C/D adjudication set **49,019 → 10,614**, and
+  `works_crosswalk.tsv` **120,241 → 249,802** rows (⚠️ a +107.7% delta for kosha, which
+  consumes it). All 3,711 candidate rows the repair *removed* are individually accounted
+  for and none was a true link. H1657's 686-card spot-check sample is **void** (never
+  voted, so no human work lost) and is replaced by a fresh blind 698-card sample over 17
+  strata; nothing is promoted until a human rules the precision bar. Full before/after:
+  [`NCC_KEY_REPAIR_MIGRATION_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md).
+
+### Changed
+- **`to_slp1`'s uppercase passthrough audited across the org (H1671).** Ruling: keep
+  `to_slp1` byte-compatible rather than lowercasing inside a transcoder shared by ~8
+  repos, and make the trap loud instead — the behaviour is undocumented and untested, not
+  wrong. Recorded in [`FINDINGS.md` §469](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  with the call-site table: `sanskrit_util.iast_to_devanagari` and two csl-atlas call
+  sites already defend with a silent `.toLowerCase()`; csl-apidev's `rowSlp1()` is the one
+  undefended caller found (a user typing `Rāma` searches for `RAma`).
+- **`adjudicate_p2.py` no longer carries its own copy of the key repair**, delegating to
+  `parse_ncc.match_key_for` so the two cannot drift; its `ncc_key_was_corrupt` field is now
+  the invariant proving P0 shipped repaired keys (0.0% on this run, was 87.7%).
+- **`build_works_crosswalk.py`'s Tier A cross-check reads P0's measured figure** from
+  `P0_COUNTS.md` instead of a hardcoded `8397` — that constant silently went stale the
+  moment the keys were repaired, and a cross-check that cannot notice its own reference
+  value has drifted is not a cross-check.
+
 ## [1.75.0] — 2026-07-26
 
 ### Added
