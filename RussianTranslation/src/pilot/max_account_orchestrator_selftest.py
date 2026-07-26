@@ -14,6 +14,13 @@ import run_observability as ro
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+# Isolation from production data, established before any repo import (several modules
+# resolve store/coordinator constants at import time). See selftest_isolation.py.
+if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from selftest_isolation import guard as _isolation_guard  # noqa: E402
+_isolation_guard()
+
 import max_account_orchestrator as m
 from execution_contract import config_dir_fingerprint
 

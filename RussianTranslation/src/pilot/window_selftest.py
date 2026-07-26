@@ -22,21 +22,16 @@ import xml.etree.ElementTree as ET
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-# SAFETY, and it is not theoretical. `coordinator.promote_ready` now calls
-# `promote_final_cards.batch_promote(...)` IN-PROCESS instead of shelling out to
-# `--batch-manifest`, so a fixture's fake `run_cmd` no longer stands between this suite and
-# the real promotion path. `promote_final_cards.DEFAULT_STORE` resolves through
-# `store_path.canonical_store`, which walks to the MAIN WORKTREE's canonical
-# `pwg_ru_translated.jsonl` unless PWG_RU_STORE is set -- so the promotion tests were
-# reading, and on a passing validation would have WRITTEN, the live ~11.6k-row store.
-# Pin a scratch path BEFORE any repo import, since DEFAULT_STORE is resolved at import time.
-# (Same class as issue #726: a selftest reaching production data.)
-_SCRATCH_STORE = os.path.join(tempfile.gettempdir(), 'window_selftest_scratch_store.jsonl')
-os.environ.setdefault('PWG_RU_STORE', _SCRATCH_STORE)
-if not os.path.exists(os.environ['PWG_RU_STORE']):
-    # A MISSING store is itself refused ("a missing/misresolved production store must not
-    # disappear silently"), so the scratch stand-in has to exist -- empty is fine.
-    open(os.environ['PWG_RU_STORE'], 'a', encoding='utf-8').close()
+# Isolation from production data is ESTABLISHED here, not assumed. `guard()` pins every
+# redirectable production path to scratch (the store, the coordinator dir, the TM sidecars,
+# the events log) BEFORE any repo import -- several resolve their constants at import time --
+# and arms an exit tripwire over the production files that have no override, so a run that
+# touches one fails loudly even if every assertion passed. See selftest_isolation.py for the
+# three defects that made this necessary.
+if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from selftest_isolation import guard as _isolation_guard  # noqa: E402
+_isolation_guard()
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
@@ -1068,6 +1063,33 @@ def test_quarantine_replace_failure_preserves_previous_destination():
             fail('quarantine failure diagnostic missing from stderr: %r' % gate)
         if gate.get('rejected'):
             fail('failed quarantine was incorrectly reported as rejected: %r' % gate)
+
+
+def test_selftest_isolation_guard():
+    """The isolation guard itself: production data must be unreachable BY CONSTRUCTION.
+
+    Three defects in two days shared one shape -- a test reached production data because
+    the thing keeping it away was incidental (a subprocess boundary in the live-store case,
+    a missing `--no-residual` flag in #726, a default filename). This pins both halves of
+    the fix: every redirectable path is pinned to scratch, and a run that writes a watched
+    production file is reported even when every assertion passed.
+    """
+    import selftest_isolation as iso
+    iso.selftest()
+    for env, _kind, _base in iso.REDIRECTABLE:
+        value = os.environ.get(env)
+        if not value:
+            fail('isolation guard did not pin %s' % env)
+        if iso._inside_repo(value):
+            fail('%s still points inside the checkout: %s' % (env, value))
+    # the tripwire must actually notice a changed watched file -- a guard that cannot fail
+    # is not a guard. (Digest-level, so this never writes to the real path.)
+    before = iso.tripwire()
+    if iso.verify_tripwire(before) != []:
+        fail('tripwire reported a violation on an unchanged tree')
+    forged = dict(before, **{iso.WATCHED[0]: 'not-the-real-digest'})
+    if iso.verify_tripwire(forged) != [iso.WATCHED[0]]:
+        fail('tripwire did not report a changed watched production file')
 
 
 def sealed_card(key, senses=None):
@@ -8152,6 +8174,7 @@ def main():
         test_grammar_field_restore_behavioral,
         test_threaded_gate_exception_requeues_full_window,
         test_quarantine_replace_failure_preserves_previous_destination,
+        test_selftest_isolation_guard,
         test_c4_gate0_probe_run_scope,
         test_german_anchor_selftest,
         test_german_anchor_repair_behavioral,
