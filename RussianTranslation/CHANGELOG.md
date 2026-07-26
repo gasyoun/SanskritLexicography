@@ -22,6 +22,43 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   `test_h1702_boundary_wrap_gate`. Full report:
   [pwg_ru/H1702_D4_BOUNDARY_ANCHORED_WRAP_REPORT_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1702_D4_BOUNDARY_ANCHORED_WRAP_REPORT_2026-07-26.md).
 
+## [1.82.0] - 2026-07-26
+
+### Added — H1689: Gorresio vols 2/4/uk OCRed, e-text now covers all 7 kāṇḍas — `gorresio-etext-gap` extinct (26-07-2026)
+
+- The 1,427 image-only Cologne pages (vol 2 Ayodhyā sargas 10–127 · vol 4
+  Kiṣkindhā-tail + Sundara · uk Uttara) OCRed locally with tesseract 5.5 `san`
+  on the full-resolution embedded page images;
+  [gorresio_etext.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gorresio_etext.jsonl)
+  grows 10,225 → **19,852 verses (all 672 sargas)**, the
+  [verse map](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_gorresio_southern_verse_map.tsv)
+  4,066 → **5,926 mapped** (new: k2 581 · Sundara 345 · Uttara 760); 12/12
+  sampled new pairs verified true; the 4 audit-rejected pairs are now
+  re-applied by the build itself (pair-keyed veto in
+  [build_ramayana_concordance.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py)).
+- `citation_tm` fixture flip: R. GORR. 2,16,46 (MG's original N11 locus) is
+  `no-southern-counterpart` — genuinely Bengal-only (best Southern score 0.109
+  vs 0.25 floor); R. GORR. 5,10,1 resolves to `05_ramayana-sundarakanda:2.51`.
+  Segmentation hardened: `।।`→`॥` normalization (tesseract double-daṇḍa split).
+  Method + traps: [FINDINGS §473](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+
+### Added — H1682: h1303_abbrev review-sheet rule-collapse (26-07-2026)
+
+- New review sheet `review/h1682_abbrev_rules_sheet.html` (sheet_id
+  `h1682_abbrev_rules`, H1404-stamped + locked) replaces the 273-card
+  `h1303_abbrev` (never voted) with 33 cards: 12 rule cards (one per
+  `build_h1303_abbrev_sheet.py`'s own `O`-overlay section header) + 17
+  individually-flagged ambiguous tokens + 3 `ls`-border + 1 meta-card. No
+  token reclassified; every proposed RU/precedent is unchanged from H1303
+  Session 1. New modules:
+  [`h1682_abbrev_collapse.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/h1682_abbrev_collapse.py),
+  [`build_h1682_abbrev_classification_tsv.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_h1682_abbrev_classification_tsv.py),
+  [`build_h1682_abbrev_rules_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_h1682_abbrev_rules_sheet.py).
+  Full report:
+  [H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md).
+  Old sheet marked superseded-unvoted in `REVIEW_SHEETS_INDEX.md`, never
+  deleted.
+
 ## [1.79.0] - 2026-07-26
 
 ### Changed — Gorresio map audit round 1: 28/32 approve; 4 half-verse-shift rows switched off (26-07-2026)
