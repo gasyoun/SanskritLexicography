@@ -14,6 +14,30 @@ not an error.
 
 ## [Unreleased]
 
+## [1.67.0] — 2026-07-26
+
+### Added
+- **Reader-visible German-residue gate for review sheets (H1655, 26-07-2026).** MG aborted
+  G5 live-queue batch 1 at 5/150 votes: cards reached the human with visible German. New
+  [`review_residue_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_residue_gate.py)
+  (H1302 prose scan class-b + H1303 `ab`-token classification vs `RU_MAP` + `ls`-tail
+  `fg./fgg.`) now hard-filters every candidate BEFORE it reaches a sheet; live-queue sweep
+  flagged 637/11,163 (5.7%). `build_g5_review_sheet.py` also renders the RU panel as print
+  shows it (`RU_MAP` applied, original in tooltip) with raw markup in a second panel, skips
+  already-decided cards, and shipped batch1v2 (`g5-live-queue-batch1v2-2026-07-26`, 150
+  cards, all verified German-free). H1404 selftest lane (binding · validate · apply ·
+  residue gate · H1302 scan) wired into CI. Audit:
+  [decisions_applied_2026-07-26_g5-batch1.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_2026-07-26_g5-batch1.md).
+
+### Fixed
+- **Positional review-ids drift across store generations (H1655, 26-07-2026).** `row:NNNNNN:`
+  review-ids embed the store line position at queue-mint time; the store grew 11,163 → 11,603
+  between queue mint (06-07) and vote apply (26-07), so 2/5 batch-1 votes resolved to
+  nothing. `run_batch.py` review lookups (`validate_review` / `review_report` /
+  `apply_review`) now fall back to the stable `subcard:<sub>#<tag>` tail when the positional
+  prefix is stale (ambiguous tails refused, never guessed); pinned by a drift case in
+  `apply_decisions.py --selftest`.
+
 ## [1.66.0] — 2026-07-26
 
 ### Fixed

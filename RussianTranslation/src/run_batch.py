@@ -434,6 +434,46 @@ def _review_validation(rows):
     return errors, decisions
 
 
+_REVIEW_POS_PREFIX = re.compile(r'^row:\d+:')
+
+
+def _review_id_suffix(rid):
+    """Position-independent tail of a positional review id ('subcard:<sub>#<tag>').
+    Returns '' when the id carries no positional prefix (ord:… ids are stable)."""
+    tail = _REVIEW_POS_PREFIX.sub('', rid or '')
+    return tail if tail != rid else ''
+
+
+def _store_review_index(store):
+    """(by_id, by_suffix) over the store. Positional 'row:NNNNNN:' ids drift when
+    the store grows between queue mint and decision apply (the row number is the
+    line position at mint time), so every positional id is also indexed by its
+    stable 'subcard:<sub>#<tag>' tail; a tail shared by >1 row is dropped as
+    ambiguous rather than guessed."""
+    by_id, by_suffix, dup = {}, {}, set()
+    for i, r in enumerate(store, 1):
+        rid = _store_review_id(r, i)
+        by_id[rid] = r
+        suf = _review_id_suffix(rid)
+        if suf:
+            if suf in by_suffix:
+                dup.add(suf)
+            else:
+                by_suffix[suf] = r
+    for suf in dup:
+        by_suffix.pop(suf, None)
+    return by_id, by_suffix
+
+
+def _resolve_review_row(rid, by_id, by_suffix):
+    """Store row for a review id, tolerating a stale positional prefix."""
+    row = by_id.get(rid)
+    if row is not None:
+        return row
+    suf = _review_id_suffix(rid)
+    return by_suffix.get(suf) if suf else None
+
+
 def _machine_ok(row):
     if row.get('ok') is not None:
         return bool(row.get('ok') and _row_placeholders_ok(row) and _row_key_match(row))
@@ -496,8 +536,9 @@ def cmd_validate_review(args):
     rows = _read_review_csv(path)
     errors, decisions = _review_validation(rows)
     store = _load_store_rows()
-    by_id = {_store_review_id(r, i): r for i, r in enumerate(store, 1)}
-    missing = sorted(rid for rid in decisions if rid not in by_id)
+    by_id, by_suffix = _store_review_index(store)
+    missing = sorted(rid for rid in decisions
+                     if _resolve_review_row(rid, by_id, by_suffix) is None)
     errors.extend('%s: not found in store' % rid for rid in missing)
     counts, _, _ = _review_summary(rows, decisions, errors, store)
     print('review CSV rows: %(rows)d | blank: %(blank)d | decisions: %(decisions)d' % counts)
@@ -520,8 +561,9 @@ def cmd_review_report(args):
     rows = _read_review_csv(path)
     errors, decisions = _review_validation(rows)
     store = _load_store_rows()
-    by_id = {_store_review_id(r, i): r for i, r in enumerate(store, 1)}
-    missing = sorted(rid for rid in decisions if rid not in by_id)
+    by_id, by_suffix = _store_review_index(store)
+    missing = sorted(rid for rid in decisions
+                     if _resolve_review_row(rid, by_id, by_suffix) is None)
     errors.extend('%s: not found in store' % rid for rid in missing)
     counts, top, _ = _review_summary(rows, decisions, errors, store)
     lines = [
@@ -562,18 +604,26 @@ def cmd_apply_review(args):
     rows = _read_review_csv(path)
     errors, decisions = _review_validation(rows)
     store = _load_store_rows()
-    by_id = {_store_review_id(r, i): r for i, r in enumerate(store, 1)}
-    missing = sorted(rid for rid in decisions if rid not in by_id)
+    by_id, by_suffix = _store_review_index(store)
+    missing = sorted(rid for rid in decisions
+                     if _resolve_review_row(rid, by_id, by_suffix) is None)
     errors.extend('%s: not found in store' % rid for rid in missing)
     if errors:
         for e in errors[:50]:
             print('  ERROR:', e)
         sys.exit('review validation failed: %d error(s)' % len(errors))
 
+    # pre-resolve each decision to its store row so a stale positional prefix
+    # still lands on the right row (identity map: rows are the loaded objects).
+    resolved = {}
+    for rid, d in decisions.items():
+        row = _resolve_review_row(rid, by_id, by_suffix)
+        if row is not None:
+            resolved[id(row)] = d
     changed = 0
     reviewed_at = datetime.datetime.now().isoformat(timespec='seconds')
-    for i, r in enumerate(store, 1):
-        d = decisions.get(_store_review_id(r, i))
+    for r in store:
+        d = resolved.get(id(r))
         if not d or not d['decision']:
             continue
         decision = d['decision']
