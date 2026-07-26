@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.73.0] - 2026-07-26
+
 ### Added — H1656 Rāmāyaṇa recension concordances (Gorresio↔Southern + Southern↔Critical) (26-07-2026)
 
 - MG ruled 21-07-2026 (weekly `@DECIDE`): build the Gorresio↔Southern concordance —
