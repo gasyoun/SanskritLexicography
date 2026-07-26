@@ -3559,13 +3559,26 @@ upper bound it is — a grounded link identifies one sense at one locus, not eve
 lemma.
 
 **Scaling settled it (26-07-2026): three independent constrictions multiply, and compute fixes
-none of the first two.** (1) 60.2% of PWG headwords are absent from DCS entirely — only a
-bigger corpus helps. (2) 88.8% of DCS token mass carries no `m_wordsem` tag — upstream
-annotation coverage, 219/270 texts. (3) Only the *residue* after those two is a matcher/locus
-problem, and it needs texts and crosswalks (Pañcatantra, Kathāsaritsāgara, vulgate↔BORI drift),
-not a better algorithm. So the honest ceiling for any sense-level PWG×DCS product is set by
-(1) and (2) long before matcher quality matters — running the pilot over the whole dictionary
-raised confidence in the diagnosis, not the coverage.
+none of the first two.** (1) 60.2% of PWG headwords are absent from DCS entirely. (2) 88.8% of
+DCS token mass carries no `m_wordsem` tag — upstream annotation coverage, 219/270 texts.
+(3) Only the *residue* after those two is a matcher/locus problem, and it needs texts and
+crosswalks (Pañcatantra, Kathāsaritsāgara, vulgate↔BORI drift), not a better algorithm. So the
+honest ceiling for any sense-level PWG×DCS product is set by (1) and (2) long before matcher
+quality matters — running the pilot over the whole dictionary raised confidence in the
+diagnosis, not the coverage.
+
+**"Get a bigger corpus" is NOT an available lever for (1) — MG, 26-07-2026.** DCS already *is*
+the largest **tagged** Sanskrit corpus; the corpora that are bigger carry **no markup**
+(wisdomlib, currently under scrape). An untagged corpus therefore **can** raise *lemma-level*
+attestation — shrinking the 60.2% "absent everywhere" class, which is a real and separate
+result — but **cannot** raise *sense-level* grounding, because there are no sense tags to bind
+to and none to be had without lemmatising and tagging it ourselves. Treating an untagged corpus
+as a fix for the sense-level number is a category error; keep the two rates in separate tables.
+This repo already consumes a `wl` wisdomlib signal for period-state tagging (§14) — extend that
+lane rather than opening a second one, and check the Cloudflare reality
+([Uprava FINDINGS §4](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)) before any
+scrape. Follow-on:
+[H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md).
 
 > **Source:** H1632 pilot join + 26-07-2026 scale-up (random + full-PWG frames,
 > [PR #763](https://github.com/gasyoun/SanskritLexicography/pull/763)),

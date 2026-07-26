@@ -168,8 +168,9 @@ def main():
     L.append('')
     L.append('| # | Constriction | Size | Can more compute fix it? |')
     L.append('|---|---|---:|---|')
-    L.append('| 1 | PWG headwords with no DCS lemma at all | %s of PWG | **No** — the '
-             'word is not in the corpus. Only a bigger corpus helps. |'
+    L.append('| 1 | PWG headwords with no DCS lemma at all | %s of PWG | **No** — and '
+             '**not by a bigger tagged corpus either**: DCS already *is* the largest '
+             'tagged Sanskrit corpus. See the note below. |'
              % pct(1 - p_pop))
     L.append('| 2 | DCS tokens with no `m_wordsem` sense tag | %s of token mass | '
              '**No** — upstream annotation coverage (219/270 texts). |'
@@ -183,6 +184,26 @@ def main():
              'diagnosis**: the constraint is data availability at three separate layers, '
              'and the honest ceiling for a sense-level PWG×DCS product is set by '
              'constrictions 1 and 2 long before matcher quality matters.')
+    L.append('')
+    L.append('### Note — "a bigger corpus" is not an available lever (MG, 26-07-2026)')
+    L.append('')
+    L.append('**DCS is already the largest *tagged* Sanskrit corpus.** The corpora that '
+             'are bigger carry **no markup** — wisdomlib being the live example, '
+             'currently under scrape. That splits constriction 1 in a way worth stating '
+             'precisely, because conflating the two is an easy category error:')
+    L.append('')
+    L.append('| An untagged corpus… | effect |')
+    L.append('|---|---|')
+    L.append('| …raises **lemma-level attestation** (is the headword attested anywhere?) '
+             '| **yes** — it can shrink the %s "absent everywhere" class |'
+             % pct(1 - p_pop))
+    L.append('| …raises **sense-level grounding** | **no** — there are no sense tags to '
+             'bind to, and none to be had without lemmatising and tagging it ourselves |')
+    L.append('')
+    L.append('So the realistic levers on the sense-level number are constriction 3 only: '
+             'run the H1455 aligner over a bigger frame (it has never been run past its '
+             'own 500 headwords), and add texts / locus crosswalks. Follow-on: '
+             '[H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md).')
     L.append('')
 
     L.append('## Per-frame reports')
