@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.71.0] — 2026-07-26
+
 ### Added
 - **First intrinsic BLI quality gate for RussianTranslation's `corpus_lexicon.jsonl` (H1521, 26-07-2026).**
   [`RussianTranslation/src/eval/bli_eval.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/bli_eval.py)
