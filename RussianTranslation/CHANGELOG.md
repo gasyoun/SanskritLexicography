@@ -10,6 +10,18 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1702 boundary-anchored auto-wrap for the H1651 D4 `ru_n==0` sub-pattern (26-07-2026)
+
+- H1651 flagged 2,539 rows where `de` carries a `{%...%}` gloss but `ru` never wraps its
+  (present, correct) translation, and declined to auto-fix pending a boundary-anchored
+  method. This pass builds it: exact-affix positional anchoring on invariant markup
+  (`{#...#}`, `<ls>`, `<ab>`, `<is>`) never guesses a boundary it can't verify
+  byte-for-byte. 1,430/2,539 rows fixed; 1,109 left as a manual-review worklist (joins
+  the pre-existing 46-row D3 residual, left untouched by a guard added mid-pass after it
+  was found to be at risk of detector-masking). New CI gate
+  `test_h1702_boundary_wrap_gate`. Full report:
+  [pwg_ru/H1702_D4_BOUNDARY_ANCHORED_WRAP_REPORT_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1702_D4_BOUNDARY_ANCHORED_WRAP_REPORT_2026-07-26.md).
+
 ## [1.79.0] - 2026-07-26
 
 ### Changed — Gorresio map audit round 1: 28/32 approve; 4 half-verse-shift rows switched off (26-07-2026)
