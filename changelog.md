@@ -28,6 +28,36 @@ not an error.
   `g5-live-queue-batch1v3-2026-07-26` (150 cards, verified 0 leaks across both layers); the
   v2 lock is removed so a stray v2 export can no longer validate. D5 (gloss byte-identical to
   German) deliberately not flagged — audit-measured as mostly false positives.
+### Added
+
+- **Selftest isolation guard — production data unreachable by construction (26-07-2026).**
+  New [`selftest_isolation.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/selftest_isolation.py),
+  wired into all 10 selftests that can reach the store, coordinator or residual registry.
+  **Belt:** pin every redirectable production path to scratch before any repo import (several
+  modules resolve those constants at import time); a path pointing *inside* the checkout is a
+  hard refusal, not a silent override. **Braces:** an exit tripwire over the production files
+  that have no override — the C-49 residual ledger's path is computed from `__file__`, which is
+  why [#726](https://github.com/gasyoun/SanskritLexicography/issues/726) was possible — failing
+  the run even when every assertion passed. Verified by reproducing #726 against it: the fixture
+  passed every assertion and the run still exited 9 naming the modified file.
+
+### Fixed
+
+- **[#760](https://github.com/gasyoun/SanskritLexicography/issues/760) — in-process promotion
+  made `window_selftest` reach the LIVE canonical store.** `coordinator.promote_ready` now calls
+  `promote_final_cards.batch_promote` in-process instead of shelling out to `--batch-manifest`;
+  the promotion fixtures' isolation *was* that subprocess boundary, and `DEFAULT_STORE` resolves
+  to the main worktree's real `pwg_ru_translated.jsonl` unless `PWG_RU_STORE` is set. The tests
+  read the live ~11.6k-row store and, on a fixture whose sense identities did not collide, would
+  have written it. Closed by the guard above.
+- **The 7 coordinator/promotion fixtures the sealing invalidated.** Preflight evidence and
+  sealed-v2 binding are mandatory now; the fixtures still passed placeholder paths and v1
+  outputs. Five were contract updates (a real self-validating preflight artifact, explicit
+  cost-gate schema, `--result-sha256`, a fake that answers `perf_preflight.py`, sealed meta on
+  the *workflow output* rather than the manifest). The sixth — the P10 "TM rebuild in a
+  `finally`" test — was **rewritten**: promotion is journal-phased now, so the TM survives a
+  post-commit failure *by construction* rather than via a `finally`, and the test pins that
+  instead of a shape the code no longer has. `window_selftest` **189/189**.
 
 ## [1.67.0] — 2026-07-26
 
