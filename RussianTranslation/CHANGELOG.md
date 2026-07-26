@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.75.0] — 2026-07-26
+
 ### Changed — H1633 rulings R1–R5 recorded; G6b gate born; A51 deferred to 2028 (26-07-2026)
 
 - MG ruled the five gold-cut sign-off items in one pass (chat, 26-07-2026):
