@@ -1797,6 +1797,23 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/audit_window.py": "979d8f98e889dd3444320dc7f4b9de177610b7e7fb139f836f98be0a7cffc21b",
       "src/pilot/window_selftest.py": "8dc53a3a1f874f8aefb177919e502500fff8f106925b63cdbc94ec026ee316d7"
     }
+  },
+  {
+    "id": "de_edition_export_profile_h1629",
+    "mechanism": "The DE edition-graph export profile (OntoLex-Lemon + TEI Lex-0) reads ONLY the German side. Its DE_FIELDS allowlist is the single choke point through which store data enters, and `ru`/`en` are on the FORBIDDEN_FIELDS list that assert_rights_safe() re-checks against the serialized bytes of both artifacts. The five exported layers (gloss_lang spans, government, form_notes, citation_edges, edition_rel) are each recomputed from the German string by the module that already owns it — pwg_mask, government_census, form_labels, citation_edges, edition_rel — so the profile adds no language-specific logic of its own.",
+    "files": [
+      "src/export_de_edition.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H1629 (26-07-2026, Opus 5 `claude-opus-5[1m]`). Language-agnostic BY CONSTRUCTION, the german_anchor_repair_h858 pattern: it never reads or writes a target-language field, and a target language is not a parameter of the export at all — adding a third language changes nothing here. The `en` literal that trips the coverage scanner is the FORBIDDEN_FIELDS entry that BANS the English column, not a branch on it. Pinned by export_de_edition --selftest, which asserts the allowlist projection drops every forbidden field, that assert_rights_safe fires on a JSON key / Turtle predicate / XML element leak but not on a legitimate `\"en\"` gloss-language value, and that both serializations are byte-deterministic.",
+    "tracking": "H1629",
+    "verified_sha256": {
+      "src/export_de_edition.py": "b0c72b7093ff6a768dcab8c20360de4f86d949f3de787dd994ea489923ac9ac9"
+    }
   }
 ]
 ```
