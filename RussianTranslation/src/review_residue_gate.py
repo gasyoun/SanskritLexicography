@@ -26,8 +26,26 @@ Three mechanical detector layers, each covering a blind spot of the others:
    citation spans, which both layers above deliberately mask (named explicitly
    in the abort vote: «Может ли русский перевод содержать aus, zu, und, fg.?»).
 
+**Machine-flag layer (P1 ruling, 26-07-2026).** MG ruled on the voting-queue
+triage `@DECIDE` (screening audit
+`Uprava/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md` §5/§7): cards carrying
+a machine-findable store flag are AUTO-REJECTED from human sheets — a human is
+never asked to vote a card an agent can already see is defective. Pending its
+triage/repair (H1651), ``machine_flags(ru, de)`` detects:
+
+* **D1** — Cyrillic inside ``{#…#}`` (the SLP1/Sanskrit wrapper) — never valid;
+* **D3** — gloss-wrapper drift: the DE side has ``{%…%}`` gloss slots, the RU
+  side has none and renders glosses as «…» guillemets instead;
+* **D4** — gloss-slot count mismatch between DE and RU (flag-only class: many
+  are legitimate, but per the ruling a flagged card waits for triage rather
+  than spending a human vote).
+
+D5 (gloss byte-identical to the German) is deliberately NOT flagged — the audit
+measured it as mostly false positives (legitimate Latin/IAST).
+
 The gate only decides what a human is SHOWN — it never rewrites store text
-(that stays with H1302's fixer and the H1303 ratification).
+(that stays with H1302's fixer, the H1303 ratification, and H1651's repair
+sweep).
 
   python src/review_residue_gate.py --stats [--queue PATH] [--store PATH]
   python src/review_residue_gate.py --selftest
@@ -122,6 +140,34 @@ def is_clean(ru_text):
     return not visible_german(ru_text)
 
 
+# --------------------------------------------------------------------------- machine flags
+_SA_WRAP = re.compile(r"\{#(.*?)#\}", re.S)
+_GLOSS_WRAP = re.compile(r"\{%.*?%\}", re.S)
+_CYRILLIC = re.compile(r"[А-Яа-яЁё]")
+_GUILLEMET = re.compile(r"«[^»]+»")
+
+
+def machine_flags(ru_text, de_text):
+    """Machine-findable store defects (P1 ruling 26-07-2026: auto-reject from
+    sheets, route to triage/repair instead of a human vote).
+    Returns [(flag, detail), ...] — 'D1' / 'D3' / 'D4'."""
+    ru = ru_text or ""
+    de = de_text or ""
+    flags = []
+    for m in _SA_WRAP.finditer(ru):
+        if _CYRILLIC.search(m.group(1)):
+            flags.append(("D1", "Cyrillic inside {#…#}: %s" %
+                          m.group(0)[:60].replace("\n", " ")))
+            break
+    de_n = len(_GLOSS_WRAP.findall(de))
+    ru_n = len(_GLOSS_WRAP.findall(ru))
+    if de_n and not ru_n and _GUILLEMET.search(ru):
+        flags.append(("D3", "DE has %d {%%…%%} slots, RU has none and uses «…»" % de_n))
+    elif de_n != ru_n:
+        flags.append(("D4", "gloss-slot count mismatch: DE %d vs RU %d" % (de_n, ru_n)))
+    return flags
+
+
 # --------------------------------------------------------------------------- stats
 def _iter_jsonl(path):
     for line in io.open(path, encoding="utf-8"):
@@ -148,11 +194,14 @@ def stats(queue_path, store_path):
             rec = store.get((sub, tag), {})
         ru = rec.get("ru") or r.get("ru") or ""
         hits = visible_german(ru)
-        if hits:
+        mflags = machine_flags(ru, rec.get("de") or "")
+        if hits or mflags:
             flagged += 1
             flagged_ids.append(rid)
             for layer, _, _ in hits:
                 by_layer[layer] = by_layer.get(layer, 0) + 1
+            for flag, _ in mflags:
+                by_layer[flag] = by_layer.get(flag, 0) + 1
     return {"total": total, "flagged": flagged, "clean": total - flagged,
             "hits_by_layer": by_layer, "flagged_ids": flagged_ids}
 
@@ -193,6 +242,17 @@ def selftest():
           "prose German flagged (mit dem)")
     check(is_clean("{%родственник%} «nahe stehend» {#Api#}"),
           "«…» verbatim German quote not flagged")
+
+    # machine flags (P1 ruling 26-07-2026)
+    d1 = machine_flags("6) {#полагать, думать#}: {#mfto 'yamiti#}",
+                       "6) {%glauben%}: {#mfto 'yamiti#}")
+    check(any(f == "D1" for f, _ in d1), "D1: Cyrillic inside {#…#} flagged")
+    d3 = machine_flags("1) «пахтать»: {#manTAmi#}", "1) {%quirlen%}: {#manTAmi#}")
+    check(any(f == "D3" for f, _ in d3), "D3: gloss drift to «…» flagged")
+    d4 = machine_flags("2) {%жечь%}", "2) {%brennen%} {%verbrennen%}")
+    check(any(f == "D4" for f, _ in d4), "D4: gloss-slot count mismatch flagged")
+    check(machine_flags("3) {%гнать%}: {#ajati#}", "3) {%treiben%}: {#ajati#}") == [],
+          "matched slots + clean wrapper pass machine flags")
 
     print("review_residue_gate selftest " + ("OK" if ok else "FAILED"))
     return 0 if ok else 1

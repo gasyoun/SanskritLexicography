@@ -31,6 +31,12 @@ to nothing. `run_batch.py` lookups now fall back to the stable `subcard:<sub>#<t
 trust a positional id across store generations. Audit:
 [`review/decisions_applied_2026-07-26_g5-batch1.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_2026-07-26_g5-batch1.md).
 
+Same-day addendum: MG then ruled the P1 voting-queue triage `@DECIDE` «auto-reject» —
+machine-flagged cards never reach a human sheet. The gate grew a second layer
+(`machine_flags`: D1 Cyrillic-in-`{#…#}` · D3 gloss-wrapper drift · D4 slot-count mismatch,
+from the screening audit §5) and batch1v2 was superseded UNVOTED by **batch1v3** (exclusions:
+636 German + 3,236 machine-flagged; eligible 7,286/11,163; store-side repair = H1651).
+
 ### H858 Part B — the `{#…#}`-span drop stops nulling cards: source-anchored german repair (25-07-2026)
 
 The clean-rate ceiling on the no_pwg windows was never transport. A card is nulled when its

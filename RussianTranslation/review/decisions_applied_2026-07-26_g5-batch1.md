@@ -80,4 +80,17 @@ Rejected cards never re-enter a sheet unless their store text changes
 (`/decisions-apply` contract; both rejects sit in `needs_review` with the
 reviewer notes attached).
 
+## Addendum, same day — P1 ruling: batch1v2 superseded by batch1v3
+
+Later on 26-07-2026 MG ruled the voting-queue triage `@DECIDE` (screening audit
+§7) «auto-reject»: machine-flagged cards never reach a human sheet. batch1v2
+screened only reader-visible German; the audit's D-classes (D1 Cyrillic inside
+`{#…#}`, D3 gloss-wrapper drift, D4 slot-count mismatch) are not German-visible,
+so batch1v2 was superseded UNVOTED by `g5-live-queue-batch1v3-2026-07-26`
+(gate = German + `machine_flags`; queue exclusions 636 German + 3,236 machine-
+flagged; eligible 7,286; 150 cards verified 0 leaks). The v2 lock was removed so
+a stray v2 export can no longer validate. Store-side repair of the flagged rows
+stays with
+[H1651](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1651-Sonnet_SanskritLexicography_pwg-ru-wrapper-defect-sweep-d1-d4_26.07.26.md).
+
 _Dr. Mārcis Gasūns_
