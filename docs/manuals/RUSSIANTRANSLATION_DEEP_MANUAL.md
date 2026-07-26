@@ -177,9 +177,6 @@ Full table: [pwg_ru.md §8.0](https://github.com/gasyoun/SanskritLexicography/bl
 
 Example pre-LLM inputs (local): [nakzatra.raw.txt](../../RussianTranslation/src/pilot/input/nakzatra.raw.txt) · [nakzatra.portrait.json](../../RussianTranslation/src/pilot/input/nakzatra.portrait.json).
 
-Per-field derived/voted/confidence breakdown for the G1–G6 fields in the
-"Derived indexes" row above: [EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md).
-
 ## 3. mw_ru — the finished pipeline (post-mortem chapter)
 
 Full account: [mw_ru.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/mw_ru.md).
