@@ -29,6 +29,40 @@ windows. Per-profile call concurrency is serialized by the kernel-backed `Active
 timeout budgets are enforced in `headless_worker.py`, and a `--stop-before-promote` review checkpoint
 gates promotion.
 
+**Current paid-route hardening (25-07-2026, unreleased):** every paid probe and
+worker call must use the same durable `pwg.call_reservation.v1` run ledger.
+`max_calls` is a strict pre-spawn ceiling: a slot is atomically reserved before
+process creation and is not refunded if the caller crashes. `--cost-ceiling`
+is different: it stops on accumulated observed cost after completed calls and
+is not a hard pre-spend dollar guarantee; missing, pending, or malformed cost
+telemetry makes a cost-capped run unevaluable and therefore stops it closed.
+One profile lock spans an entire warm-up + measured probe pair, and the same
+lock class serializes generation for that profile. Paid manifest-v2 execution
+must preserve the run/manifest/preflight/profile/reservation binding through
+the sealed result SHA passed to `record-output` or `record-output-batch`.
+
+On Windows, all Claude process trees use a kill-on-close Job Object assigned
+while the child is suspended; timeout and non-timeout cleanup therefore reach
+the native descendant instead of leaving an orphaned paid call. Batch
+recording is sequential and fail-fast: its machine-readable progress is the
+exact committed prefix, while the failing and later leases remain retryable.
+
+Promotion is a separate durable transaction under
+`pwg.promotion_journal.v1`: `prepared → store_committed →
+derived_validated → coordinator_committed → complete`. The coordinator
+reconciles a single incomplete journal on every startup, fails closed if the
+live store/coordinator state matches neither sealed before nor expected-after
+bytes, and holds one canonical-store claim from preparation through
+`complete`. Derived TM/denylist artifacts and the deterministic promotion
+registry are sealed/replayed idempotently. Do not bypass this with direct
+single-file promotion or manual state edits.
+
+**Current operator state:** this hardening has not started a paid translation
+and does not itself constitute a release. The next live attempt, when
+authorized, remains the bounded headless route with
+`--stop-before-promote`; a clean run ends at durable `AWAITING_REVIEW`, with
+store promotion still requiring the close/review path.
+
 **`--max-agents` footgun (H1610/H1618):** the flag is a **TOTAL** spawn ceiling
 (translate+heal), not concurrency width. Multi-key windows must **omit** it (rely on
 manifest `max_translate_agents` / `max_heal_agents`). `headless_worker` refuses

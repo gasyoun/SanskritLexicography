@@ -223,8 +223,9 @@ def quarantine(key):
         if exact_file_exists(OUT, nm):
             src = os.path.join(OUT, nm)
             dst = os.path.join(OUT, nm[:-len('.merged.md')] + '.merged.REJECTED.md')
-            if os.path.exists(dst):
-                os.remove(dst)
+            # os.replace is the atomic overwrite primitive.  Do not unlink an existing
+            # rejected artifact first: if replacement fails, the prior rejection remains
+            # durable and the caller can report/requeue the failed quarantine.
             os.replace(src, dst)
             return True
     return False
@@ -373,6 +374,75 @@ def run_sense_shortfall_gate(results, input_dir, protected):
             'requeue': sorted(s['key'] for s in short),
             'sense_shortfall': short,
             'seconds': round(time.perf_counter() - t0, 3)}
+
+
+def _gate_exception_result(name, exc, keys, operation='threaded gate'):
+    """Convert an unexpected in-process gate failure to the normal gate result contract."""
+    return {
+        'argv': ['in-process', name],
+        'returncode': 3,
+        'stdout': '',
+        'stderr': '%s %s failed: %s: %s' % (
+            name, operation, exc.__class__.__name__, exc),
+        'seconds': 0.0,
+        'requeue': sorted(set(keys or [])),
+    }
+
+
+def run_threaded_gates(keys, protected, wf, results, input_dir):
+    """Run the independent in-process gates without letting a worker abort the audit."""
+    specs = (
+        ('nws', run_nws_gate, (keys, protected)),
+        ('prompt_semantic', run_prompt_semantic_audit, (wf, protected)),
+        ('sense_loss', run_sense_shortfall_gate, (results, input_dir, protected)),
+    )
+    futures = {}
+    gates = {}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
+        for name, func, call_args in specs:
+            futures[ex.submit(func, *call_args)] = name
+        for fut in concurrent.futures.as_completed(futures):
+            name = futures[fut]
+            try:
+                gates[name] = fut.result()
+            except Exception as exc:
+                # A worker exception is operational failure, not a reason to lose the
+                # durable audit report.  Fail loud and conservatively requeue this exact
+                # window while the remaining futures and main() continue.
+                gates[name] = _gate_exception_result(name, exc, keys)
+    return gates
+
+
+def apply_nws_quarantine(gate, keys):
+    """Quarantine NWS rejects, reporting replacement failures as full-window evidence."""
+    rejected = []
+    errors = []
+    for key in gate.get('misattribution') or []:
+        try:
+            if quarantine(key):
+                rejected.append(key)
+        except OSError as exc:
+            errors.append({
+                'key': key,
+                'error': '%s: %s' % (exc.__class__.__name__, exc),
+            })
+
+    gate['rejected'] = rejected
+    if rejected:
+        gate['stdout'] += '  quarantined        : %s\n' % ' '.join(rejected)
+    if errors:
+        diagnostics = [
+            'nws quarantine failed for %s: %s' % (item['key'], item['error'])
+            for item in errors
+        ]
+        gate['returncode'] = 3
+        gate['requeue'] = sorted(set(keys or []))
+        gate['stderr'] = '\n'.join(
+            part for part in (gate.get('stderr', '').rstrip(), '\n'.join(diagnostics))
+            if part
+        ) + '\n'
+        gate['quarantine_errors'] = errors
+    return gate
 
 
 def emit_audit_event(event_type, level='info', root=None, state=None, summary='', data=None):
@@ -579,15 +649,7 @@ def main():
         # ru_style_mechanical_yo_terseness); never wired into audit_window_en.py.
         ('ru_style', [os.path.join(SRC, 'ru_style_sweep.py'), '--wf', wf], parse_flagged_json),
     ]
-    futures = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
-        futures[ex.submit(run_nws_gate, keys, protected)] = ('nws', None)
-        futures[ex.submit(run_prompt_semantic_audit, wf, protected)] = ('prompt_semantic', None)
-        futures[ex.submit(run_sense_shortfall_gate, results, INPUT_DIR, protected)] = ('sense_loss', None)
-        for fut in concurrent.futures.as_completed(futures):
-            name, parser = futures[fut]
-            res = fut.result()
-            gates[name] = res
+    gates.update(run_threaded_gates(keys, protected, wf, results, INPUT_DIR))
     # H1339 Phase 3: the five child-script gates run IN-PROCESS (runpy), sequentially --
     # sys.argv/stdout are process-global, so they must not overlap; the thread pool above
     # only existed to hide per-gate interpreter startup, which run_py_inproc eliminates.
@@ -607,6 +669,9 @@ def main():
                 res['requeue'] = parsed
         gates[name] = res
 
+    if gates['nws'].get('misattribution'):
+        apply_nws_quarantine(gates['nws'], keys)
+
     for name in ['final_schema', 'nws', 'translation', 'stage2_mechanical', 'coverage',
                  'sense_dupes', 'prompt_semantic', 'sense_loss', 'ru_style']:
         res = gates[name]
@@ -624,12 +689,6 @@ def main():
             (name, res['returncode'], len(res.get('requeue') or [])),
             data={'gate': name, 'returncode': res['returncode'],
                   'requeue': res.get('requeue') or [], 'seconds': res.get('seconds')})
-
-    if gates['nws'].get('misattribution'):
-        rejected = [k for k in gates['nws']['misattribution'] if quarantine(k)]
-        gates['nws']['rejected'] = rejected
-        if rejected:
-            gates['nws']['stdout'] += '  quarantined        : %s\n' % ' '.join(rejected)
 
     glue = None
     # Root-article glue reassembles a PWG root's sub-cards from its rootmap. A NOMINAL window

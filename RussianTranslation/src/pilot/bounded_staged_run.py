@@ -14,11 +14,8 @@ leases, one lease per window, reusing the EXISTING staged-run building blocks
 injected `run_window`, and adding the bounded loop's ceilings + checkpoint + cost
 fail-closed policy AROUND them.
 
-It is a NEW, standalone module with its own CLI. It edits NOTHING in
-max_account_orchestrator.py / coordinator.py / bounded_supervisor.py — every existing
-command and default is byte-for-byte unchanged, so this is a pure opt-in (H963 objective 1,
-backward compatibility). The staged-run monolith is not refactored; its already-separate
-callables are simply composed under a bounded loop.
+It is a standalone CLI over the hardened orchestrator/coordinator primitives. The staged-run
+monolith is not duplicated; its separate callables are composed under a bounded loop.
 
 SAFETY / DEFAULT-OFF
 --------------------
@@ -45,15 +42,18 @@ CEILINGS (H963 objective 4) — all optional, default-disabled, backward compati
   --max-clean     clean rows requested       (BoundedSupervisor.max_clean)
   --empty-streak  consecutive non-productive (BoundedSupervisor.empty_streak_cap)
   --max-accounts  account/profile usage      (fleet cap, passed to probe/dispatch)
-  --cost-ceiling  estimated/observed cost    (BoundedSupervisor.budget_cap)
+  --cost-ceiling  observed-cost stop         (BoundedSupervisor.budget_cap)
 
 COST FAIL-CLOSED (H963 objective 5): when --cost-ceiling is set the loop reads per-window
 cost with bounded_supervisor.strict_cost_fn, which returns None (UNEVALUABLE) rather than a
 silent zero when a window carries no trustworthy cost figure — the loop then stops with the
 distinct STOP_COST_UNEVALUABLE reason. Additionally, BEFORE any live call, we fail closed if
 a cost ceiling is requested but the economy ledger cannot price it at all (no clean cards on
-record). Missing cost data is NEVER treated as zero. Accounting is the EXISTING economy
-ledger + launch/probe ledgers — no parallel accounting store is introduced (objective 6).
+record). Missing cost data is NEVER treated as zero. ``--cost-ceiling`` is necessarily an
+observed-cost stop after a completed attempt, not an impossible guaranteed dollar bound.
+The durable ``pwg.call_reservation.v1`` ledger is the pre-spawn authority for
+``--max-calls`` and records every probe, generation, retry, split, heal, timeout, and
+malformed attempt before result validation.
 
 Pure control-plane. The only side effects on the LIVE path are those cmd_staged_run already
 performs (dispatch/record/promote); the dry-run and every code path in the self-test perform
@@ -75,6 +75,7 @@ if HERE not in sys.path:
 import bounded_supervisor as bs                      # noqa: E402
 import economy_ledger as el                          # noqa: E402
 import max_account_orchestrator as mao               # noqa: E402
+from call_reservation import CallReservationLedger, run_ids  # noqa: E402
 from bounded_supervisor import BoundedSupervisor, strict_cost_fn   # noqa: E402
 
 SCHEMA = 'pwg.bounded_staged_run.v1'
@@ -268,7 +269,7 @@ class RunContext:
     def __init__(self, db, coord_dir, coordinator, cwd, events, run_id, probe_latencies,
                  claude_bin='claude', timeout=7200, gen_model_version=DEFAULT_GEN_MODEL_VERSION,
                  max_drain_iterations=1000, only_profile=None, checkpoint=None,
-                 stop_before_promote=False):
+                 stop_before_promote=False, call_reservation=None, max_calls=None):
         self.db = db
         self.coord_dir = coord_dir
         self.coordinator = coordinator
@@ -283,6 +284,8 @@ class RunContext:
         self.only_profile = only_profile
         self.checkpoint = checkpoint
         self.stop_before_promote = stop_before_promote     # R10
+        self.call_reservation = call_reservation
+        self.max_calls = max_calls
 
     @property
     def coord_state_path(self):
@@ -566,7 +569,8 @@ def make_run_window(ctx):
                     # (PWG_COORDINATOR_DIR unset), so the embedded begin-run/record calls hit
                     # the wrong coordinator state instead of this run's.
                     coordinator=ctx.coordinator, coord_dir=ctx.coord_dir, cwd=ctx.cwd,
-                    only_external_ids=scope))
+                    only_external_ids=scope, call_reservation=ctx.call_reservation,
+                    max_calls=ctx.max_calls))
             mao.cmd_record_done(argparse.Namespace(
                 db=ctx.db, coordinator=ctx.coordinator, coord_dir=ctx.coord_dir, cwd=ctx.cwd,
                 only_external_ids=scope))
@@ -690,7 +694,8 @@ def _validated_accounts(db_path):
         return []
 
 
-def build_supervisor(windows, checkpoint_path, ceilings, run_window, audit, resume=False):
+def build_supervisor(windows, checkpoint_path, ceilings, run_window, audit, resume=False,
+                     call_counter=None, usage_counter=None):
     """Construct the BoundedSupervisor with the H963 ceilings wired through. strict_cost_fn is
     used exactly when a cost ceiling is active, so an unevaluable window cost fails closed."""
     cost_ceiling = ceilings.get('cost_ceiling')
@@ -704,6 +709,8 @@ def build_supervisor(windows, checkpoint_path, ceilings, run_window, audit, resu
         empty_streak_cap=ceilings.get('empty_streak'),
         cost_fn=strict_cost_fn if cost_ceiling is not None else None,
         resume=resume,
+        call_counter=call_counter,
+        usage_counter=usage_counter,
     )
 
 
@@ -734,6 +741,13 @@ def run(args):
     windows, scope = scope_windows(plan, args.lease_id)
     if not windows:
         raise SystemExit('bounded_staged_run: staged plan has no prepared headless windows')
+    preflight_cmd = ['validate-preflight']
+    for lease_id in sorted(scope['lease_ids']):
+        preflight_cmd += ['--lease-id', lease_id]
+    preflight = mao.coordinator_command(args, preflight_cmd, check=False)
+    if preflight.returncode:
+        raise SystemExit('bounded_staged_run: preflight refused before probe: %s'
+                         % (preflight.stderr or preflight.stdout)[-2000:])
     # Cost fail-closed PRE-CHECK: refuse to start a cost-capped run we cannot price at all.
     cost_ok, cost_reason = cost_ceiling_evaluable(args.cost_ceiling, ledger)
     if not cost_ok:
@@ -749,11 +763,28 @@ def run(args):
         raise SystemExit('bounded_staged_run requires at least one validated account')
     if args.max_accounts:
         validated = validated[:args.max_accounts]
-    run_id = args.run_id or ('bsr-' + mao.now_iso().replace(':', '').replace('-', ''))
+    reservation_path = os.path.abspath(
+        getattr(args, 'call_reservation', None) or (args.checkpoint + '.calls.json'))
+    run_id = args.run_id
+    if args.resume and not os.path.exists(reservation_path):
+        raise SystemExit('bounded_staged_run: --resume requires the existing call ledger')
+    if args.resume and os.path.exists(reservation_path):
+        existing_run_ids = run_ids(reservation_path)
+        if not existing_run_ids:
+            raise SystemExit('bounded_staged_run: --resume call ledger has no existing run')
+        if run_id and run_id not in existing_run_ids:
+            raise SystemExit('bounded_staged_run: --resume run-id is absent from the call ledger')
+        if not run_id and len(existing_run_ids) == 1:
+            run_id = existing_run_ids[0]
+        elif not run_id:
+            raise SystemExit('bounded_staged_run: --resume requires --run-id when the call '
+                             'ledger contains multiple runs')
+    run_id = run_id or ('bsr-' + mao.now_iso().replace(':', '').replace('-', ''))
+    call_ledger = CallReservationLedger(reservation_path, run_id, args.max_calls)
     # Probe the fleet ONCE (STOP-on-any-NO-GO by default; the honest-NO-GO stance).
     probe_latencies = mao.probe_fleet(
         validated, args.claude_bin, events_path=args.events, run_id=run_id,
-        drop_unhealthy=args.drop_unhealthy)
+        drop_unhealthy=args.drop_unhealthy, call_reservation=call_ledger)
     if args.drop_unhealthy:
         for acc in validated:
             if acc['name'] not in probe_latencies:
@@ -764,7 +795,8 @@ def run(args):
         events=args.events, run_id=run_id, probe_latencies=probe_latencies,
         claude_bin=args.claude_bin, timeout=args.timeout,
         gen_model_version=args.gen_model_version, only_profile=args.only_profile,
-        checkpoint=args.checkpoint, stop_before_promote=args.stop_before_promote)
+        checkpoint=args.checkpoint, stop_before_promote=args.stop_before_promote,
+        call_reservation=reservation_path, max_calls=args.max_calls)
     run_window = make_run_window(ctx)
 
     def audit(wf_output, window):
@@ -791,7 +823,8 @@ def run(args):
             coordinator=args.coordinator, coord_dir=args.coord_dir, cwd=args.cwd))
 
     sup = build_supervisor(windows, args.checkpoint, ceilings, run_window, audit,
-                           resume=args.resume)
+                           resume=args.resume, call_counter=call_ledger.spent,
+                           usage_counter=call_ledger.usage)
     summary = sup.run()
     report = {'schema': SCHEMA, 'run_id': run_id, 'plan_view': view, 'summary': summary}
     if args.report:
@@ -829,9 +862,12 @@ def build_parser():
     # Ceilings (all optional / default-disabled).
     ap.add_argument('--max-windows', type=int, default=None)
     ap.add_argument('--max-calls', type=int, default=None)
+    ap.add_argument('--call-reservation',
+                    help='durable pwg.call_reservation.v1 path (default: CHECKPOINT.calls.json)')
     ap.add_argument('--max-clean', type=int, default=None)
     ap.add_argument('--cost-ceiling', type=float, default=None,
-                    help='max cumulative cost (USD). An UNEVALUABLE window cost fails closed.')
+                    help='observed-cost stop after completed calls (USD), not a hard dollar '
+                         'guarantee. UNEVALUABLE telemetry fails closed.')
     ap.add_argument('--empty-streak', type=int, default=None)
     ap.add_argument('--max-accounts', type=int, default=0)
     ap.add_argument('--only-profile', help='enforce one manifest-bound logical profile slot')

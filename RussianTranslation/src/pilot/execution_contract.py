@@ -149,6 +149,18 @@ class ActiveCallClaim:
         self.path = os.path.join(self.root, fingerprint + '.lock')
         self._fh = None
 
+    def is_live_canonical_for(self, fingerprint):
+        """Return True only for the live claim at the one process-wide lock path.
+
+        A caller-supplied claim rooted in another directory can carry the same
+        filename while protecting a different kernel object. Paid-call
+        primitives therefore compare the normalized full path, not merely the
+        basename or fingerprint text.
+        """
+        expected = ActiveCallClaim(fingerprint).path
+        normalize = lambda path: os.path.normcase(os.path.realpath(os.path.abspath(path)))
+        return self._fh is not None and normalize(self.path) == normalize(expected)
+
     def __enter__(self):
         os.makedirs(self.root, exist_ok=True)
         fh = open(self.path, 'a+b')

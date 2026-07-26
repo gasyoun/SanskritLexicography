@@ -14,8 +14,9 @@ records per-stage wall-clock:
                  fake-model stand-in: german := exact per-sense source text, russian :=
                  deterministic copy — restored-markup counts match source BY CONSTRUCTION)
                  + `normalize_workflow_result`
-  audit          REAL `coordinator record-output` per lease (begin-run + audit_window
-                 subprocess with --execution-manifest + pending-backlog accounting)
+  audit          REAL `coordinator record-output` per lease, or the sequential
+                 `record-output-batch` parent-process optimization (begin-run + the same isolated
+                 audit_window subprocess with --execution-manifest + pending-backlog accounting)
   promotion-plan diagnostic: `promote_final_cards --dry-run --merge` over all clean outputs
   store-write    REAL `coordinator promote-ready` over ALL ready leases in one call — the
                  multi-lease promotion transaction (per-lease promote subprocess + backup +
@@ -317,7 +318,7 @@ def run_cli(argv, env, cwd=REPO, check=True):
     return proc
 
 
-def one_run(tag, keep=False, prepare_mode='batch'):
+def one_run(tag, keep=False, prepare_mode='batch', record_mode='batch'):
     """One full pipeline pass in a fresh sandbox. Returns (timings, outputs) dicts."""
     sandbox = tempfile.mkdtemp(prefix='h1339bench_%s_' % tag)
     coord_dir = os.path.join(sandbox, 'coordinator')
@@ -432,9 +433,17 @@ def one_run(tag, keep=False, prepare_mode='batch'):
         for lid, _case, _keys in group:
             begin += ['--lease-id', lid]
         run_cli(begin, env)
-        for lid, _case, _keys in group:
-            run_cli([os.path.join(HERE, 'coordinator.py'), 'record-output', lid,
-                     wf_paths[lid]], env, check=False)
+        if record_mode == 'per-lease':
+            for lid, _case, _keys in group:
+                run_cli([os.path.join(HERE, 'coordinator.py'), 'record-output', lid,
+                         wf_paths[lid]], env, check=False)
+        else:
+            record = [os.path.join(HERE, 'coordinator.py'), 'record-output-batch']
+            for lid, _case, _keys in group:
+                # This hermetic fixture begins legacy run-id-less leases. Production orchestrator
+                # batches carry each sealed run id instead of the explicit '-' sentinel.
+                record += ['--record', lid, wf_paths[lid], '-', '-']
+            run_cli(record, env, check=False)
     timings['audit'] = time.perf_counter() - t0
 
     state = json.load(open(os.path.join(coord_dir, 'state.json'), encoding='utf-8'))
@@ -494,6 +503,9 @@ def main():
     ap.add_argument('--prepare-mode', choices=('batch', 'per-lease'), default='batch',
                     help="H1386 OPT A/B: 'batch' = one prepare-batch call (production "
                          "default); 'per-lease' = the pre-H1386 3-spawns-per-lease shape")
+    ap.add_argument('--record-mode', choices=('batch', 'per-lease'), default='batch',
+                    help="hardening/speed A/B: 'batch' = one sequential coordinator parent per "
+                         "runtime group; 'per-lease' = one coordinator process per record")
     a = ap.parse_args()
 
     install_inputs()
@@ -510,7 +522,8 @@ def main():
 
 def _bench(a, fx_hash):
     for i in range(a.warmups):
-        t, o = one_run('warm%d' % i, prepare_mode=a.prepare_mode)
+        t, o = one_run('warm%d' % i, prepare_mode=a.prepare_mode,
+                       record_mode=a.record_mode)
         print('warmup %d/%d: total %.2fs (promote rc=%s)' % (
             i + 1, a.warmups, t['total'], o['promote_rc']))
 
@@ -518,7 +531,7 @@ def _bench(a, fx_hash):
     last_outputs = None
     for i in range(a.runs):
         t, o = one_run('run%d' % i, keep=(a.keep_last and i == a.runs - 1),
-                       prepare_mode=a.prepare_mode)
+                       prepare_mode=a.prepare_mode, record_mode=a.record_mode)
         measured.append(t)
         signatures.add(o['signature'])
         last_outputs = o
@@ -550,7 +563,8 @@ def _bench(a, fx_hash):
         report = {
             'schema': 'pwg.h1339_offline_bench.v1',
             'protocol': {'warmups': a.warmups, 'runs': a.runs,
-                         'prepare_mode': a.prepare_mode},
+                         'prepare_mode': a.prepare_mode,
+                         'record_mode': a.record_mode},
             'python': sys.version, 'platform': platform.platform(),
             'fixture_sha256': fx_hash, 'seed_rows': SEED_ROWS,
             'stages': stats, 'runs': measured,

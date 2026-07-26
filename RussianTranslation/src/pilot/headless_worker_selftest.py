@@ -11,6 +11,24 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 import headless_worker as h
 import gen_opt_harness2 as generator
+import proc_tree
+from call_reservation import CallReservationLedger
+from execution_contract import ActiveCallClaim, config_dir_fingerprint
+
+
+class MemoryCallLedger:
+    """Selftest-only reservation authority; fake runners never reach a provider."""
+
+    def __init__(self):
+        self.next_id = 0
+        self.finalized = {}
+
+    def reserve(self, *_args, **_kwargs):
+        self.next_id += 1
+        return 'test-call-%d' % self.next_id
+
+    def finalize(self, reservation, telemetry):
+        self.finalized[reservation] = dict(telemetry)
 
 
 def manifest():
@@ -39,9 +57,25 @@ def proc(returncode=0, stdout='', stderr=''):
     return SimpleNamespace(returncode=returncode, stdout=stdout, stderr=stderr)
 
 
-def execute(test_manifest, runner):
-    """Use a real, portable executable path while the runner fakes its output."""
-    return h.execute(test_manifest, claude=sys.executable, runner=runner)
+_FIXTURE_CONFIG_DIR = tempfile.mkdtemp(prefix='hw-selftest-cfg-')
+
+
+def execute(test_manifest, runner, config_dir=None):
+    """Use a real, portable executable path while the runner fakes its output.
+
+    `config_dir` is REQUIRED by h.execute (the paid-boundary guard: no
+    CLAUDE_CONFIG_DIR, no execution). Every test routed through this helper runs a
+    FAKE runner against a v1 fixture manifest, so it needs a config dir that exists
+    but must never be a real profile -- a scratch dir is exactly right, and passing
+    it explicitly beats mutating os.environ for the whole process. Without this the
+    suite aborted on its first `execute()` call (found on rebase onto master,
+    26-07-2026; the guard and this helper are both from the hardening branch, so the
+    breakage is in the branch as delivered, not in the rebase).
+    """
+    return h.execute(
+        test_manifest, claude=sys.executable, runner=runner,
+        call_reservation=MemoryCallLedger(),
+        config_dir=config_dir or _FIXTURE_CONFIG_DIR)
 
 
 def success_runner(argv, **kwargs):
@@ -74,7 +108,9 @@ def test_translate_budget_binds():
     execute(m, r)
     assert r.n == 1, 'manifest budget=1 did not bind: %d spawns' % r.n
     r = _soft_nonresolve_runner()
-    h.execute(manifest(), claude=sys.executable, runner=r, max_agents_override=1)
+    h.execute(
+        manifest(), claude=sys.executable, runner=r, max_agents_override=1,
+        call_reservation=MemoryCallLedger(), config_dir=_FIXTURE_CONFIG_DIR)
     assert r.n == 1, '--max-agents=1 did not bind: %d spawns' % r.n
     print('  R3 budget: unbounded=2; manifest ceiling and --max-agents both cap actual spawns to 1')
 
@@ -94,7 +130,9 @@ def test_h1610_preserve_budget_exceeded_over_selfheal_stamp():
     m['fragment_tm'] = {'agni': [[]]}
     m['runtime'] = dict(m['runtime'], whole_attempts=1, fragment_attempts=1)
     payload, status, code = h.execute(m, claude=sys.executable, runner=r,
-                                      max_agents_override=1)
+                                      max_agents_override=1,
+                                      call_reservation=MemoryCallLedger(),
+                                      config_dir=_FIXTURE_CONFIG_DIR)
     assert code == 0 and payload is not None
     failures = payload['summary']['failures']
     assert 'agni' in failures, failures
@@ -119,7 +157,9 @@ def test_h1610_refuse_max_agents_starves_multikey():
         m['inputs'][k] = m['inputs']['agni']
         m['placeholder_maps'][k] = m['placeholder_maps']['agni']
     try:
-        h.execute(m, claude=sys.executable, runner=r, max_agents_override=1)
+        h.execute(
+            m, claude=sys.executable, runner=r, max_agents_override=1,
+            call_reservation=MemoryCallLedger(), config_dir=_FIXTURE_CONFIG_DIR)
         assert False, 'expected ValueError starvation refuse'
     except ValueError as exc:
         assert 'starves' in str(exc) and '3-key' in str(exc), exc
@@ -140,6 +180,286 @@ def test_call_timeout_clamped():
     execute(m, capture_runner)
     assert seen['timeout'] == 45.0, 'timeout_ceil_ms not honoured: %r' % seen['timeout']
     print('  R4 timeout: clamped to min(operator,ceil,180000ms) -> 180.0s then 45.0s')
+
+
+def test_durable_call_reservation():
+    """The durable ceiling is consumed before the runner, including malformed results."""
+    with tempfile.TemporaryDirectory() as td:
+        original_prefix = h.claude_argv_prefix
+        h.claude_argv_prefix = lambda _claude: ['claude']
+        try:
+            spawned = []
+
+            def runner(_argv, **_kwargs):
+                spawned.append(1)
+                if len(spawned) == 1:
+                    return SimpleNamespace(returncode=0, stdout='not-json', stderr='')
+                return SimpleNamespace(returncode=0, stderr='', stdout=json.dumps({
+                    'structured_output': {'cards': []},
+                    'usage': {'input_tokens': 4, 'output_tokens': 1},
+                    'total_cost_usd': 0.10,
+                }))
+
+            # HeadlessEngine.call refuses to spawn without the live canonical profile
+            # claim -- the same lock execute() takes. Constructing the engine directly
+            # (as this test does, to drive .call() one reservation at a time) must
+            # therefore hold that claim too, or the test never reaches the ledger
+            # behaviour it exists to prove.
+            fingerprint = config_dir_fingerprint(_FIXTURE_CONFIG_DIR)
+            zero = CallReservationLedger(os.path.join(td, 'zero.json'), 'r0', 0)
+            with ActiveCallClaim(fingerprint) as claim:
+                eng = h.HeadlessEngine(manifest(), 'claude', 30, runner, call_reservation=zero,
+                                       config_dir=_FIXTURE_CONFIG_DIR, active_claim=claim)
+                value, error = eng.call('p', 'zero', ['agni'])
+                assert value is None and error == 'budget_exceeded:max_calls' and not spawned
+
+            one = CallReservationLedger(os.path.join(td, 'one.json'), 'r1', 2)
+            with ActiveCallClaim(fingerprint) as claim:
+                eng = h.HeadlessEngine(manifest(), 'claude', 30, runner, call_reservation=one,
+                                       config_dir=_FIXTURE_CONFIG_DIR, active_claim=claim)
+                _value, error = eng.call('p', 'malformed', ['agni'])
+                assert error.startswith('malformed_output') and one.spent() == 1
+                value, error = eng.call('p', 'success', ['agni'])
+                assert error is None and value == {'cards': []}
+                usage = one.usage()
+                assert usage['cost_evaluable'] is False and usage['observed_cost_usd'] == 0.10
+                _value, error = eng.call('p', 'refused', ['agni'])
+                assert error == 'budget_exceeded:max_calls' and len(spawned) == 2
+        finally:
+            h.claude_argv_prefix = original_prefix
+    print('  call ledger: zero spawn; malformed+success cumulative cost stays unevaluable; cap refused')
+
+
+def test_cli_reservation_and_preflight_gates():
+    with tempfile.TemporaryDirectory() as td:
+        original_runner = h.run_tree_kill
+        original_prefix = h.claude_argv_prefix
+        original_config_dir = os.environ.get('CLAUDE_CONFIG_DIR')
+        spawned = []
+        h.run_tree_kill = lambda *_a, **_k: spawned.append(1)
+        h.claude_argv_prefix = lambda _c: [sys.executable]
+        try:
+            # The paid-boundary guard is checked BEFORE --max-calls is consulted, so the
+            # max_calls=0 case below needs a config dir too -- this test only set one later,
+            # for its v2 half, and so exited 2 (configuration) instead of the 0 it asserts.
+            os.environ['CLAUDE_CONFIG_DIR'] = os.path.join(td, 'cli-profile')
+            os.makedirs(os.environ['CLAUDE_CONFIG_DIR'], exist_ok=True)
+            # CLI max_calls=0: the Python worker runs, but no paid CLI runner is entered.
+            v1_path = os.path.join(td, 'v1.json')
+            json.dump(manifest(), open(v1_path, 'w', encoding='utf-8'))
+            ledger_path = os.path.join(td, 'zero.calls.json')
+            out = os.path.join(td, 'out.json')
+            status = os.path.join(td, 'status.json')
+            try:
+                h.main([v1_path, '--output', out, '--status-out', status,
+                        '--allow-historical-v1', '--claude-bin', sys.executable,
+                        '--call-reservation', ledger_path, '--run-id', 'zero',
+                        '--max-calls', '0'])
+            except SystemExit as exc:
+                assert exc.code == 0, exc
+            assert not spawned and CallReservationLedger(ledger_path, 'zero', 0).spent() == 0
+
+            # Missing/malformed/hash-drift v2 preflight refuses before reservation/spawn.
+            v2 = manifest()
+            v2['schema'] = h.SCHEMA_V2
+            config_dir = os.path.join(td, 'profile')
+            os.makedirs(config_dir)
+            os.environ['CLAUDE_CONFIG_DIR'] = config_dir
+            v2['execution'] = {
+                'profile_slot': 'acc',
+                'config_dir_fingerprint': config_dir_fingerprint(config_dir),
+                'execution_route': 'claude-cli-headless', 'executor_lane': 'test',
+                'validation_method': 'test', 'model_identifier': v2['model'],
+            }
+            v2['key_provenance'] = {'agni': 'real'}
+            v2_path = os.path.join(td, 'v2.json')
+            json.dump(v2, open(v2_path, 'w', encoding='utf-8'))
+            manifest_sha = h.sha256_path(v2_path)
+            gate_ledger = os.path.join(td, 'gate.calls.json')
+            malformed = os.path.join(td, 'bad.preflight.json')
+            open(malformed, 'w', encoding='utf-8').write('{}')
+            good = os.path.join(td, 'good.preflight.json')
+            json.dump({
+                'schema': 'pwg.performance_preflight.v1',
+                'selected_keys': ['agni'],
+                'cost_gate': {'over_ceiling': False},
+            }, open(good, 'w', encoding='utf-8'))
+            over = os.path.join(td, 'over.preflight.json')
+            json.dump({
+                'schema': 'pwg.performance_preflight.v1',
+                'selected_keys': ['agni'],
+                'cost_gate': {'over_ceiling': True},
+            }, open(over, 'w', encoding='utf-8'))
+            wrong_scope = os.path.join(td, 'wrong-scope.preflight.json')
+            json.dump({
+                'schema': 'pwg.performance_preflight.v1',
+                'selected_keys': ['soma'],
+                'cost_gate': {'over_ceiling': False},
+            }, open(wrong_scope, 'w', encoding='utf-8'))
+            empty_scope = os.path.join(td, 'empty-scope.preflight.json')
+            json.dump({
+                'schema': 'pwg.performance_preflight.v1',
+                'selected_keys': [],
+                'cost_gate': {'over_ceiling': False},
+            }, open(empty_scope, 'w', encoding='utf-8'))
+            duplicate_scope = os.path.join(td, 'duplicate-scope.preflight.json')
+            json.dump({
+                'schema': 'pwg.performance_preflight.v1',
+                'selected_keys': ['agni', 'agni'],
+                'cost_gate': {'over_ceiling': False},
+            }, open(duplicate_scope, 'w', encoding='utf-8'))
+            missing_scope = os.path.join(td, 'missing-scope.preflight.json')
+            json.dump({
+                'schema': 'pwg.performance_preflight.v1',
+                'cost_gate': {'over_ceiling': False},
+            }, open(missing_scope, 'w', encoding='utf-8'))
+            synthetic = os.path.join(td, 'synthetic.preflight.json')
+            json.dump({
+                'schema': 'pwg.performance_preflight.v1',
+                'selected_keys': ['agni'],
+                'synthetic_probe_only': True,
+                'cost_gate': {'over_ceiling': False},
+            }, open(synthetic, 'w', encoding='utf-8'))
+            non_boolean_gate = os.path.join(td, 'non-boolean.preflight.json')
+            json.dump({
+                'schema': 'pwg.performance_preflight.v1',
+                'selected_keys': ['agni'],
+                'cost_gate': {'over_ceiling': 0},
+            }, open(non_boolean_gate, 'w', encoding='utf-8'))
+            base = [v2_path, '--output', out, '--claude-bin', sys.executable,
+                    '--call-reservation', gate_ledger, '--run-id', 'gate',
+                    '--max-calls', '2']
+            # Each case reaches the intended gate: only the first two omit/corrupt the
+            # manifest seal; all preflight cases carry the exact seal over manifest bytes.
+            refused = (
+                [],
+                ['--manifest-sha256', 'f' * 64],
+                ['--manifest-sha256', manifest_sha],
+                ['--manifest-sha256', manifest_sha, '--preflight', malformed],
+                ['--manifest-sha256', manifest_sha, '--preflight', good,
+                 '--preflight-sha256', 'f' * 64],
+                ['--manifest-sha256', manifest_sha, '--preflight', over],
+                ['--manifest-sha256', manifest_sha, '--preflight', wrong_scope],
+                ['--manifest-sha256', manifest_sha, '--preflight', empty_scope],
+                ['--manifest-sha256', manifest_sha, '--preflight', duplicate_scope],
+                ['--manifest-sha256', manifest_sha, '--preflight', missing_scope],
+                ['--manifest-sha256', manifest_sha, '--preflight', synthetic],
+                ['--manifest-sha256', manifest_sha, '--preflight', non_boolean_gate],
+            )
+            for index, extra in enumerate(refused):
+                status_i = os.path.join(td, 'status%d.json' % index)
+                try:
+                    h.main(base + ['--status-out', status_i] + extra)
+                except SystemExit as exc:
+                    assert exc.code == 2, (index, exc)
+            assert CallReservationLedger(gate_ledger, 'gate', 2).spent() == 0
+            assert not spawned
+            try:
+                h.main([v2_path, '--output', out,
+                        '--status-out', os.path.join(td, 'no-ledger.status.json'),
+                        '--claude-bin', sys.executable,
+                        '--manifest-sha256', manifest_sha, '--preflight', good])
+            except SystemExit as exc:
+                assert exc.code == 2, exc
+            assert not spawned
+
+            # A fully sealed v2 invocation can complete offline with max_calls=0.
+            # It must bind both artifacts to the exact manifest bytes, while the
+            # durable reservation prevents the fake runner from ever being entered.
+            valid_out = os.path.join(td, 'valid.out.json')
+            valid_status = os.path.join(td, 'valid.status.json')
+            valid_ledger = os.path.join(td, 'valid.calls.json')
+            try:
+                h.main([
+                    v2_path, '--output', valid_out, '--status-out', valid_status,
+                    '--claude-bin', sys.executable,
+                    '--manifest-sha256', manifest_sha,
+                    '--preflight', good, '--preflight-sha256', h.sha256_path(good),
+                    '--call-reservation', valid_ledger, '--run-id', 'valid',
+                    '--max-calls', '0',
+                ])
+            except SystemExit as exc:
+                assert exc.code == 0, exc
+            result = json.load(open(valid_out, encoding='utf-8'))
+            completed = json.load(open(valid_status, encoding='utf-8'))
+            assert result['meta']['execution_manifest_sha256'] == manifest_sha, result['meta']
+            assert completed['manifest_sha256'] == manifest_sha, completed
+            assert completed['result_sha256'] == h.sha256_path(valid_out), completed
+            assert CallReservationLedger(valid_ledger, 'valid', 0).spent() == 0
+            assert not spawned
+        finally:
+            h.run_tree_kill = original_runner
+            h.claude_argv_prefix = original_prefix
+            if original_config_dir is None:
+                os.environ.pop('CLAUDE_CONFIG_DIR', None)
+            else:
+                os.environ['CLAUDE_CONFIG_DIR'] = original_config_dir
+    print('  CLI gates: exact manifest seal + real-scope preflight required; malformed, '
+          'synthetic, duplicate/wrong/empty scope spawn zero; result/status hashes bound')
+
+
+def test_non_timeout_communicate_cleanup():
+    original_popen = proc_tree.subprocess.Popen
+    original_terminate = proc_tree.terminate_tree
+    original_job = getattr(proc_tree, '_WindowsKillJob', None)
+    seen = []
+
+    class FakeProc:
+        def __init__(self, *_a, **_k):
+            self.returncode = None
+            self._tree_job = None
+            self._tree_setup_trouble = None
+            self.calls = 0
+
+        def communicate(self, **_kwargs):
+            self.calls += 1
+            if self.calls == 1:
+                raise UnicodeDecodeError('utf-8', b'\xff', 0, 1, 'synthetic')
+            return '', ''
+
+        def poll(self):
+            return self.returncode
+
+        def kill(self):
+            self.returncode = -9
+
+        def wait(self, timeout=None):
+            self.returncode = -9
+            return -9
+
+    fake = [None]
+
+    def popen(*args, **kwargs):
+        fake[0] = FakeProc(*args, **kwargs)
+        return fake[0]
+
+    def terminate(proc, deadline):
+        seen.append((proc, deadline))
+        proc.returncode = -9
+        return None
+
+    proc_tree.subprocess.Popen = popen
+    proc_tree.terminate_tree = terminate
+    if original_job is not None:
+        class FakeJob:
+            def create(self): pass
+            def assign(self, proc): pass
+            def resume(self, proc): pass
+            def close(self): return None
+        proc_tree._WindowsKillJob = FakeJob
+    try:
+        try:
+            proc_tree.run_tree_kill(['synthetic'], capture_output=True)
+            raise AssertionError('communicate decode failure was swallowed')
+        except UnicodeDecodeError:
+            pass
+        assert seen and fake[0].calls == 2 and fake[0].returncode == -9
+    finally:
+        proc_tree.subprocess.Popen = original_popen
+        proc_tree.terminate_tree = original_terminate
+        if original_job is not None:
+            proc_tree._WindowsKillJob = original_job
+    print('  process tree: non-timeout communicate exception terminates and reaps child tree')
 
 
 def test_card_tokens_include_grammar():
@@ -204,14 +524,27 @@ def test_cost_telemetry_survives():
     assert u['cost_evaluable'] is False and u['missing_usage_calls'] == 1, u
     assert abs(u['observed_cost_usd'] - 0.01) < 1e-9, u
 
-    # (c) a budget refusal (no subprocess) adds neither usage nor cost
+    # (c) a PAID, schema-malformed wrapper is still accounted before cards[] validation/retry.
+    malformed = proc(stdout=json.dumps({
+        'structured_output': {'not_cards': []}, 'usage': U, 'total_cost_usd': 0.25}))
+    u = execute(manifest(), sequence([malformed, malformed]))[0]['summary']['usage']
+    assert u['priced_calls'] == 2 and u['input_tokens'] == 200, u
+    assert u['cost_evaluable'] is False and abs(u['observed_cost_usd'] - 0.50) < 1e-9, u
+
+    # An unreadable envelope is also a spawned call; its unknown spend fails closed.
+    unreadable = proc(stdout='not-json')
+    u = execute(manifest(), sequence([unreadable, unreadable]))[0]['summary']['usage']
+    assert u['priced_calls'] == 2 and u['missing_usage_calls'] == 2, u
+    assert u['cost_evaluable'] is False, u
+
+    # (d) a budget refusal (no subprocess) adds neither usage nor cost
     m = manifest(); m['budgets'] = {'max_translate_agents': 1}
     r = sequence([wrap([], U, 0.05)])
     u = execute(m, r)[0]['summary']['usage']
     assert r.i == 1, 'budget should cap to 1 actual spawn, got %d' % r.i
     assert u['priced_calls'] == 1 and u['input_tokens'] == 100, u
     assert abs(u['observed_cost_usd'] - 0.05) < 1e-9, u
-    print('  R5 cost: usage/cost sum across calls; missing -> cost_evaluable False + counter; budget refusal adds nothing')
+    print('  R5 cost: every spawn accounted before result validation; malformed/missing fails closed')
 
 
 def test_foreign_route_refused_before_any_call():
@@ -234,7 +567,10 @@ def test_foreign_route_refused_before_any_call():
         m['key_provenance'] = {'agni': 'real'}
         try:                       # replicate headless_worker.main()'s v2 order
             ec.validate_profile(m, cfg)
-            h.execute(m, claude=sys.executable, runner=counting_runner)   # must NOT be reached
+            h.execute(
+                m, claude=sys.executable, runner=counting_runner,
+                call_reservation=MemoryCallLedger(),
+                config_dir=_FIXTURE_CONFIG_DIR)   # must NOT be reached
         except ValueError as e:
             assert 'execution_route' in str(e), e
         else:
@@ -608,6 +944,9 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_h1610_preserve_budget_exceeded_over_selfheal_stamp()
     test_h1610_refuse_max_agents_starves_multikey()
     test_call_timeout_clamped()
+    test_durable_call_reservation()
+    test_cli_reservation_and_preflight_gates()
+    test_non_timeout_communicate_cleanup()
     test_card_tokens_include_grammar()
     test_cost_telemetry_survives()
     test_foreign_route_refused_before_any_call()
