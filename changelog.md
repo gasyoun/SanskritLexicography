@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.80.0] — 2026-07-26
+
 ### Added
 - **H1691 — PWG's remaining DCS-carried cited texts adjudicated; 52 abbreviations, 12 mapped
   (26-07-2026, Opus 5 `claude-opus-5[1m]`).** Report
