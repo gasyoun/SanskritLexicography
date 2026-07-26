@@ -4,6 +4,35 @@ _Created: 09-07-2026 · Last updated: 25-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 26-07-2026 - H1631: edition-diff reading surface (N14 pilot) — subtype counts on the 7 REGLUE_SPEC pilot roots
+
+Executor: Sonnet 5 (`claude-sonnet-5`). Fixture-driven static page +
+[`src/pilot/build_edition_diff_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_edition_diff_site.py)
+(`--selftest` wired into CI). Renders the PWG sense skeleton with PW/SCH/PWKVN/NWS
+supplements attached at their `edition_rel` insertion point, each badged with its
+subtype — the H1624 G4 classifier is the only typology used, no new classes invented.
+Table below is a local `--out` run against the (gitignored, uncommitted) live store's
+5-layer pilot keys from [`REGLUE_SPEC.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/REGLUE_SPEC.md) Sec.5 — counts only, no store text
+published (N9).
+
+| subtype | count (7 pilot roots, 1077 rows) |
+|---|---|
+| base | 433 |
+| restate | 475 |
+| pw_correct | 0 |
+| sch_star | 11 |
+| derived_sense | 3 |
+| a2a | 13 |
+| nws_at_sense | 111 |
+| foreign_fragment | 31 |
+
+Pilot roots: `gA`, `Cid`, `Sam`, `jIv`, `rakz`, `vraj`, `yat` (the 5-layer set). No
+`pw_correct` (gender-conflict) instance among these 7 — consistent with REGLUE_SPEC's own
+finding that PW mostly *restates* rather than corrects at this sample. N14 partial close:
+demo covers PWG/PW/SCH/PWKVN/NWS badges for the pilot set; scaling to the full store,
+per-sense visual grouping polish, and any editorial adjudication of `differs` cases are
+explicitly out of scope (non-goals).
+
 ## 26-07-2026 - H858 c1 live gate: HEALTH_NOGO (rate_limit) - profile sweep now 3/3 NO-GO
 
 Executor: Opus 5 (`claude-opus-5[1m]`). Third profile gated for the same owed H858 window.
