@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 21-07-2026_
+_Created: 26-06-2026 · Last updated: 26-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -3422,3 +3422,68 @@ the frozen comparison and is therefore excluded from the percentage.
 > **Source:** [`docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md) +
 > [`RussianTranslation/src/store_path.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/store_path.py) +
 > [`RussianTranslation/src/pilot/coordinator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py) — offline Codex audit, 21-07-2026; no live/model/promotion/store call.
+
+### §463. The pwg_ru store's `de` field is NOT a faithful copy of the csl-orig German — Russian connectives have been substituted into the source-of-truth string
+
+🚨 **Data-integrity.** Eleven of 11,603 pwg_ru store rows (0.09%) carry Cyrillic **inside the
+German `de` field**, and the substitutions are German function words replaced by their Russian
+equivalents: `и` for `und`, `для` for `für`, `в` for `in`, `С` for `Mit`, plus a literal
+`корригенда`. Verified against upstream: csl-orig `v02/pwg/pwg.txt` line 570640 reads
+`{%Opfer%} in {#sarva˚#} **und** {#havirhuti#}` for `huti`, while the store row reads `… **и** …`
+— *and* silently drops the `(von <hom>1.</hom> {#hu#})` etymology parenthesis. So the store's
+German is a **mangled derivative**, not a verbatim carry-through, in at least these rows.
+
+Two DE-side *structural* fields are contaminated at a higher rate: `sense_tag` in 110 rows
+(0.95%) — e.g. `c) с dat. лица и instr. предмета`, `Mit <div n="p"> — корригенда` — and `h`,
+which carries free-text Russian disambiguation prose such as `PW 3 (с sam, о супружеском
+намерении)`. `h` is therefore unusable as a homonym key; derive the homonym from `subcard`
+(`edition_rel.homonym_of`) instead.
+
+**Why it matters beyond cosmetics.** Every German-side derivation — the H1624 G1–G6 layers, any
+FAIR export, any "compare the store against the scan" audit — treats `de` as the public-domain
+source of truth. A German string that has been partly Russified is a silently corrupted
+canonical field: it will not round-trip against csl-orig, and it leaks Russian into anything
+built on the German side. **Any DE export must therefore validate purity rather than assume it**
+— `export_de_edition.py` quarantines `de`-contaminated rows, reduces a contaminated `sense_tag`
+to its ASCII skeleton, and drops `h` from its input allowlist entirely.
+
+> **Source:** measured 26-07-2026 (H1629, Opus 5 `claude-opus-5[1m]`) over the full 11,603-row
+> canonical store, cross-checked against
+> [`csl-orig v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt);
+> tables in [`RussianTranslation/RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md);
+> guard in [`RussianTranslation/src/export_de_edition.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_de_edition.py).
+
+### §464. The H1624 G1 `gloss_lang` classifier mislabels German as Latin/English about half the time it fires — and those spans are then withheld from translation
+
+🚨 **Data-integrity.** A census of all 15,901 `{%…%}` glosses in the pwg_ru store's German text
+found 229 (1.44%) classified non-German by
+[`pwg_mask.gloss_lang_spans`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py).
+Of those, ~122 (53.3%) carry unambiguous German evidence:
+
+| lang | rule_id | spans | German-looking | FP rate |
+|---|---|---|---|---|
+| en | `english_content` | 153 | 117 | **76.5%** |
+| la | `botany_binomial` | 68 | 5 | 7.4% |
+| ambig | `homograph_ambig` | 8 | 0 | 0.0% |
+
+Misfires are not marginal cases: `bis an's Ziel bringen` and `an sich nehmen, empfangen,
+erlangen, erhalten` are classified **English**; `Gelegenheit gefunden habend` and `Willens
+sein` are classified as **Latin botany binomials**.
+
+**The consequence is silent, not cosmetic.** `classify_pct_detail` returns `translate: False`
+for both `la` and `en`, so a false positive means a genuinely German gloss is masked to `{Tn}`
+and **never reaches the translation model** — content dropped from the output with no error and
+no counter. The `english_content` rule is the dominant contributor and the right place to look
+first. Fixing it changes masking behaviour pipeline-wide, so it needs its own measured A/B
+rather than an in-passing patch; downstream consumers should meanwhile treat a non-DE
+`gloss_lang` as a hint, not a fact.
+
+Caveat on the number: "German-looking" is a heuristic proxy (umlaut/eszett, a German function
+word, or an `-en`/`-eln`/`-ern` verb ending, excluding genuine binomial shape), so 53.3% is
+±; the sampled examples leave the direction beyond doubt.
+
+> **Source:** measured 26-07-2026 (H1629, Opus 5 `claude-opus-5[1m]`) over the full canonical
+> store; table + examples in
+> [`RussianTranslation/RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md);
+> limitation recorded in
+> [`RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md) §5.

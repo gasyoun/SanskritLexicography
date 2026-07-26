@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PWG DE edition graph, TEI Lex-0 profile, export_de_edition.py (H1629). DE-only; no Russian text. -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt><title>PWG German edition graph (PWG/PW/SCH/PWKVN/NWS)</title></titleStmt>
+      <publicationStmt>
+        <availability status="free"><licence target="https://creativecommons.org/publicdomain/mark/1.0/">Public Domain Mark 1.0 (19th-c. German editions)</licence></availability>
+        <date when="2026-07-26"/>
+      </publicationStmt>
+      <sourceDesc>
+        <p>German edition text from the Cologne PWG family; structural layers derived by RussianTranslation/src (H1624 G1-G6).</p>
+        <listBibl>
+          <bibl xml:id="edition-nws" ana="project">NWS — Nachtragswörterbuch (Cologne working layer)</bibl>
+          <bibl xml:id="edition-pw" ana="pd">PW — Böhtlingk, kürzere Fassung (1879–1889)</bibl>
+          <bibl xml:id="edition-pwg" ana="pd">PWG — Böhtlingk-Roth, Sanskrit-Wörterbuch (1855–1875)</bibl>
+          <bibl xml:id="edition-pwkvn" ana="pd">PWKVN — Nachträge to the kürzere Fassung</bibl>
+          <bibl xml:id="edition-sch" ana="pd">SCH — Schmidt, Nachträge (1928)</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc><p>TEI Lex-0 export profile; @type values government/case/editionRel/sourceGloss are project extensions documented in DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md.</p></projectDesc>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+  <body>
+    <entry xml:id="entry-Buj-h0">
+      <form type="lemma">
+        <orth xml:lang="sa-Latn-x-slp1">Buj</orth>
+        <orth xml:lang="sa-Latn">bhuj</orth>
+      </form>
+      <sense xml:id="sense-Buj-h0-pw-PW3-anu" n="PW3-anu" source="#edition-pw">
+        <def xml:lang="de">den Lohn für Etwas; geniessen; geniessen, theilhaftig werden, theilnehmen an; durchlaufen</def>
+        <gloss xml:lang="de">den Lohn für Etwas</gloss>
+        <gloss xml:lang="de">geniessen</gloss>
+        <gloss xml:lang="de">geniessen, theilhaftig werden, theilnehmen an</gloss>
+        <gloss xml:lang="de">durchlaufen</gloss>
+        <gloss xml:lang="en" type="sourceGloss" subtype="english_content">geniessen, theilhaftig werden, theilnehmen an</gloss>
+        <gramGrp>
+          <gram type="government" subtype="paren-single" norm="acc">(Acc.)</gram>
+        </gramGrp>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>anu</quote></cit>
+        <xr type="editionRel" subtype="restate">
+          <ref target="#entry-Buj-h0">abridging</ref>
+          <note type="relEvidence">PW abridging restatement; sense_tag='PW3-anu'</note>
+        </xr>
+      </sense>
+      <sense xml:id="sense-Buj-h0-pw-PW3-sam-desid" n="PW3-sam-desid" source="#edition-pw">
+        <def xml:lang="de">zu geniessen; Willens sein</def>
+        <gloss xml:lang="de">zu geniessen</gloss>
+        <gloss xml:lang="de">Willens sein</gloss>
+        <gloss xml:lang="la" type="sourceGloss" subtype="botany_binomial">Willens sein</gloss>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>Buj</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>upa</quote></cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-020" ana="bib">
+            <abbr type="siglum">HEM. PAR</abbr>
+            <biblScope unit="locus">1,380</biblScope>
+          </bibl>
+        </cit>
+        <xr type="editionRel" subtype="restate">
+          <ref target="#entry-Buj-h0">abridging</ref>
+          <note type="relEvidence">PW abridging restatement; sense_tag='PW3-sam-desid'</note>
+        </xr>
+      </sense>
+      <sense xml:id="sense-Buj-h0-pwkvn-upa-desid" n="upa-desid" source="#edition-pwkvn">
+        <def xml:lang="de">zu geniessen; Willens sein</def>
+        <gloss xml:lang="de">zu geniessen</gloss>
+        <gloss xml:lang="de">Willens sein</gloss>
+        <gloss xml:lang="la" type="sourceGloss" subtype="botany_binomial">Willens sein</gloss>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>Buj</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>upa</quote></cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-020" ana="bib">
+            <abbr type="siglum">HEM. PAR</abbr>
+            <biblScope unit="locus">1,380</biblScope>
+          </bibl>
+        </cit>
+        <xr type="editionRel" subtype="derived_sense">
+          <ref target="#entry-Buj-h0">additive</ref>
+          <note type="relEvidence">PWKVN grammar-derived; sense_tag='upa-desid'</note>
+        </xr>
+      </sense>
+    </entry>
+    <entry xml:id="entry-hA-h0">
+      <form type="lemma">
+        <orth xml:lang="sa-Latn-x-slp1">hA</orth>
+        <orth xml:lang="sa-Latn">hā</orth>
+      </form>
+      <sense xml:id="sense-hA-h0-pw-1" n="1" source="#edition-pw">
+        <def xml:lang="de">des Schmerzes, des Staunens und des Behagens; wehe über!</def>
+        <gloss xml:lang="de">des Schmerzes, des Staunens und des Behagens</gloss>
+        <gloss xml:lang="de">wehe über!</gloss>
+        <gramGrp>
+          <gram type="case" norm="voc">Voc.</gram>
+        </gramGrp>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>hA</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>hA hA</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>hA Dik</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>hA hanta hanta</quote></cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-004" ana="bib">
+            <abbr type="siglum">Chr</abbr>
+            <biblScope unit="locus">227,7</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-023" ana="bib">
+            <abbr type="siglum">KĀD</abbr>
+            <biblScope unit="locus">2,122,1 (149,18)</biblScope>
+          </bibl>
+        </cit>
+        <xr type="editionRel" subtype="restate">
+          <ref target="#entry-hA-h0">abridging</ref>
+          <note type="relEvidence">PW abridging restatement; sense_tag='1'</note>
+        </xr>
+      </sense>
+    </entry>
+    <entry xml:id="entry-jIv-h0">
+      <form type="lemma">
+        <orth xml:lang="sa-Latn-x-slp1">jIv</orth>
+        <orth xml:lang="sa-Latn">jīv</orth>
+      </form>
+      <sense xml:id="sense-jIv-h0-pwg-desid-1" n="desid-1" source="#edition-pwg">
+        <def xml:lang="de">leben wollen, zu leben wünschen; seinen Lebensunterhalt zu finden suchen, leben wollen von</def>
+        <gloss xml:lang="de">leben wollen, zu leben wünschen</gloss>
+        <gloss xml:lang="de">seinen Lebensunterhalt zu finden suchen, leben wollen von</gloss>
+        <gramGrp>
+          <gram type="government" subtype="paren-single" norm="instr">(instr.)</gram>
+        </gramGrp>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>jijIvizati</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>jijIvizet</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>kurvanneveha karmARi jijIvizecCataM samAH</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>imAmavasTAM saMprAptA madanyA kA jijIvizet</quote></cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-024" ana="map">
+            <abbr type="siglum">KĀTY. ŚR</abbr>
+            <biblScope unit="locus">22,6,20.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-027" ana="bib">
+            <abbr type="siglum">LĀṬY</abbr>
+            <biblScope unit="locus">8,8,41.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-040" ana="bib">
+            <abbr type="siglum">ĪŚOP</abbr>
+            <biblScope unit="locus">2.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-034" ana="bib">
+            <abbr type="siglum">PRAB</abbr>
+            <biblScope unit="locus">108,7.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-031" ana="map">
+            <abbr type="siglum">MBH</abbr>
+            <biblScope unit="locus">4,615.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-012" ana="map">
+            <abbr type="siglum">BHAG</abbr>
+            <biblScope unit="locus">2,6.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-033" ana="map">
+            <abbr type="siglum">M</abbr>
+            <biblScope unit="locus">10,121.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-032" ana="map">
+            <abbr type="siglum">MBH</abbr>
+            <biblScope unit="locus">5,702.</biblScope>
+          </bibl>
+        </cit>
+      </sense>
+      <sense xml:id="sense-jIv-h0-pwg-2" n="2" source="#edition-pwg">
+        <def xml:lang="de">leben; leben von</def>
+        <gloss xml:lang="de">leben</gloss>
+        <gloss xml:lang="de">leben von</gloss>
+        <gramGrp>
+          <gram type="government" subtype="paren-single" norm="instr">(instr.)</gram>
+        </gramGrp>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>yasyE^ ni\krama^Re Gf\taM pra\jAH sa\MjIva^ntI\H piba^nti</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>saMjIva SaradaH Satam</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>saMjIvya kAlamizwaM ca saSarIro divaM gataH</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>kaTaM svidvESyaDarmeRa</quote></cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-038" ana="map">
+            <abbr type="siglum">TS</abbr>
+            <biblScope unit="locus">1,7,2,4.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-010" ana="map">
+            <abbr type="siglum">AV</abbr>
+            <biblScope unit="locus">19,69,3.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-030" ana="map">
+            <abbr type="siglum">MBH</abbr>
+            <biblScope unit="locus">3,3054.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-002" ana="map">
+            <abbr type="siglum">MBH</abbr>
+            <biblScope unit="locus">14,103.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-013" ana="map">
+            <abbr type="siglum">BHĀG. P</abbr>
+            <biblScope unit="locus">4,21,47.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-029" ana="map">
+            <abbr type="siglum">MBH</abbr>
+            <biblScope unit="locus">12,2917.</biblScope>
+          </bibl>
+        </cit>
+      </sense>
+      <sense xml:id="sense-jIv-h0-nws-NWS-1" n="NWS-1" source="#edition-nws">
+        <def xml:lang="de">[Ved , unsp] leben. [ śatám śarádas : hundert Herbste (Jahre) hindurch leben. ] Kaus: lebendig machen, beleben</def>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>jīv</quote></cit>
+        <xr type="editionRel" subtype="nws_at_sense">
+          <ref target="#entry-jIv-h0">additive</ref>
+          <note type="relEvidence">NWS additive at PWG sense *new; sense_tag='NWS-1'</note>
+        </xr>
+      </sense>
+      <sense xml:id="sense-jIv-h0-nws-NWS-3" n="NWS-3" source="#edition-nws">
+        <def xml:lang="de">[Jin , unsp] + upa : leben von (Akk), das Leben bewahren oder bestehen durch. Ved , unsp</def>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>„ jīvāpaya “.</quote></cit>
+        <xr type="editionRel" subtype="nws_at_sense">
+          <ref target="#entry-jIv-h0">additive</ref>
+          <note type="relEvidence">NWS additive at PWG sense *new; sense_tag='NWS-3'</note>
+        </xr>
+      </sense>
+      <sense xml:id="sense-jIv-h0-nws-NWS-4" n="NWS-4" source="#edition-nws">
+        <def xml:lang="de">[Śā , Ling (s.v. jīv )] jīvamāna Śā , Ling &gt; habituated to live. BhāṣāVṛ 3.2,129 . Renou 1953 ( : 11 (s.v. jīv )</def>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>+ pratyud ( pratyujjīvyate ): resuscitates (said fig. of a suffix which had been abolished by a previous rule). DurghVṛ 1.2,48 .</quote></cit>
+        <xr type="editionRel" subtype="foreign_fragment">
+          <ref target="#entry-jIv-h0">additive</ref>
+          <note type="relEvidence">NWS fragment in EN (heuristic); sense_tag='NWS-4'</note>
+        </xr>
+      </sense>
+      <sense xml:id="sense-jIv-h0-pw-sam-1" n="sam-1" source="#edition-pw">
+        <def xml:lang="de">seinen Lebensunterhalt haben; leben von, bestehen durch, erhalten werden von, Nutzen ziehen aus, benutzen, gebrauchen; in Abhängigkeit vom wegen</def>
+        <gloss xml:lang="de">seinen Lebensunterhalt haben</gloss>
+        <gloss xml:lang="de">leben von, bestehen durch, erhalten werden von, Nutzen ziehen aus, benutzen, gebrauchen</gloss>
+        <gloss xml:lang="de">in Abhängigkeit vom wegen</gloss>
+        <gramGrp>
+          <gram type="government" subtype="mit-phrase" norm="acc">mit Acc.</gram>
+          <gram type="government" subtype="mit-phrase" norm="gen">mit Gen.</gram>
+          <gram type="government" subtype="mit-phrase" norm="acc">mit Acc.</gram>
+        </gramGrp>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>upa</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>upajIvya</quote></cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-008" ana="bib">
+            <abbr type="siglum">Chr</abbr>
+            <biblScope unit="locus">33,7</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-037" ana="map">
+            <abbr type="siglum">Spr</abbr>
+            <biblScope unit="locus">7865</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-014" ana="orphan">
+            <abbr type="siglum">Comm. zu NYĀYAM</abbr>
+            <biblScope unit="locus">9,4,6. 10,1,11. 2,14</biblScope>
+          </bibl>
+        </cit>
+        <xr type="editionRel" subtype="restate">
+          <ref target="#entry-jIv-h0">abridging</ref>
+          <note type="relEvidence">PW abridging restatement; sense_tag='sam- 1'</note>
+        </xr>
+      </sense>
+      <sense xml:id="sense-jIv-h0-pwkvn-abhi" n="abhi" source="#edition-pwkvn">
+        <def xml:lang="de">glücklicher im Leben sich befinden als</def>
+        <gloss xml:lang="de">glücklicher im Leben sich befinden als</gloss>
+        <gramGrp>
+          <gram type="government" subtype="paren-single" norm="abl">(Abl.)</gram>
+        </gramGrp>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>aBi</quote></cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-036" ana="map">
+            <abbr type="siglum">R. ed. Bomb</abbr>
+            <biblScope unit="locus">3,34,19</biblScope>
+          </bibl>
+        </cit>
+        <xr type="editionRel" subtype="a2a">
+          <ref target="#entry-jIv-h0">additive</ref>
+          <note type="relEvidence">PWKVN Nachtraege-to-Nachtraege (a2a); sense_tag='abhi-'</note>
+        </xr>
+      </sense>
+      <sense xml:id="sense-jIv-h0-sch-adhi-caus" n="adhi-caus" source="#edition-sch">
+        <def xml:lang="de">jīv; adhi</def>
+        <gloss xml:lang="de">jīv</gloss>
+        <gloss xml:lang="de">adhi</gloss>
+        <cit type="citation">
+          <bibl corresp="#bibl-025" ana="orphan">
+            <abbr type="siglum">Kaus</abbr>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-017" ana="orphan">
+            <abbr type="siglum">Dharmaśarm</abbr>
+            <biblScope unit="locus">15,1.</biblScope>
+          </bibl>
+        </cit>
+        <xr type="editionRel" subtype="derived_sense">
+          <ref target="#entry-jIv-h0">additive</ref>
+          <note type="relEvidence">SCH additive; sense_tag='adhi- caus.'</note>
+        </xr>
+      </sense>
+    </entry>
+    <entry xml:id="entry-jYA-h0">
+      <form type="lemma">
+        <orth xml:lang="sa-Latn-x-slp1">jYA</orth>
+        <orth xml:lang="sa-Latn">jñā</orth>
+      </form>
+      <sense xml:id="sense-jYA-h0-pwkvn-2" n="2" source="#edition-pwkvn">
+        <def xml:lang="de">sich herausstellen als</def>
+        <gloss xml:lang="de">sich herausstellen als</gloss>
+        <gramGrp>
+          <gram type="case" norm="nom">(Nom.)</gram>
+        </gramGrp>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>jYA</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>pra</quote></cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-039" ana="orphan">
+            <abbr type="siglum">VAJRACCH</abbr>
+            <biblScope unit="locus">20,19</biblScope>
+          </bibl>
+        </cit>
+        <xr type="editionRel" subtype="a2a">
+          <ref target="#entry-jYA-h0">additive</ref>
+          <note type="relEvidence">PWKVN Nachtraege-to-Nachtraege (a2a); sense_tag='2'</note>
+        </xr>
+      </sense>
+    </entry>
+    <entry xml:id="entry-rakz-h0">
+      <form type="lemma">
+        <orth xml:lang="sa-Latn-x-slp1">rakz</orth>
+        <orth xml:lang="sa-Latn">rakṣ</orth>
+      </form>
+      <sense xml:id="sense-rakz-h0-pwkvn-samanu" n="samanu" source="#edition-pwkvn">
+        <def xml:lang="de">in Acht nehmen, hüten</def>
+        <gloss xml:lang="de">in Acht nehmen, hüten</gloss>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>rakz</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>samanu</quote></cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-015" ana="bib">
+            <abbr type="siglum">DIVYĀVAD</abbr>
+            <biblScope unit="locus">104,13</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-001" ana="bib">
+            <abbr type="siglum">DIVYĀVAD</abbr>
+            <biblScope unit="locus">105,18</biblScope>
+          </bibl>
+        </cit>
+        <xr type="editionRel" subtype="a2a">
+          <ref target="#entry-rakz-h0">additive</ref>
+          <note type="relEvidence">PWKVN Nachtraege-to-Nachtraege (a2a); sense_tag='samanu'</note>
+        </xr>
+      </sense>
+    </entry>
+    <entry xml:id="entry-vraj-h0">
+      <form type="lemma">
+        <orth xml:lang="sa-Latn-x-slp1">vraj</orth>
+        <orth xml:lang="sa-Latn">vraj</orth>
+      </form>
+      <sense xml:id="sense-vraj-h0-pw-PW-pra-1" n="PW-pra-1" source="#edition-pw">
+        <def xml:lang="de">vorwärts schreiten, weitergehen, fortgehen; von; wandern, sich auf den Weg machen, — nach oder in; abziehen; fortgegangen; davongelaufen; ausgewandert, fortgezogen in</def>
+        <gloss xml:lang="de">vorwärts schreiten, weitergehen, fortgehen</gloss>
+        <gloss xml:lang="de">von</gloss>
+        <gloss xml:lang="de">wandern, sich auf den Weg machen, — nach oder in</gloss>
+        <gloss xml:lang="de">abziehen</gloss>
+        <gloss xml:lang="de">fortgegangen</gloss>
+        <gloss xml:lang="de">davongelaufen</gloss>
+        <gloss xml:lang="de">ausgewandert, fortgezogen in</gloss>
+        <gramGrp>
+          <gram type="government" subtype="paren-single" norm="abl">(Abl. )</gram>
+          <gram type="government" subtype="paren-variation" norm="acc">(Acc., Loc. oder Dat.)</gram>
+          <gram type="government" subtype="paren-variation" norm="loc">(Acc., Loc. oder Dat.)</gram>
+          <gram type="government" subtype="paren-variation" norm="dat">(Acc., Loc. oder Dat.)</gram>
+          <note type="governmentVariation">oder</note>
+          <gram type="government" subtype="paren-single" norm="acc">(Acc.)</gram>
+        </gramGrp>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>pravrajita</quote></cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-005" ana="bib">
+            <abbr type="siglum">Chr</abbr>
+            <biblScope unit="locus">233,24</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-007" ana="bib">
+            <abbr type="siglum">Chr</abbr>
+            <biblScope unit="locus">25</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-011" ana="bib">
+            <abbr type="siglum">BAUDH</abbr>
+            <biblScope unit="locus">1,12</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-006" ana="bib">
+            <abbr type="siglum">Chr</abbr>
+            <biblScope unit="locus">233,25</biblScope>
+          </bibl>
+        </cit>
+        <xr type="editionRel" subtype="restate">
+          <ref target="#entry-vraj-h0">abridging</ref>
+          <note type="relEvidence">PW abridging restatement; sense_tag='PW-pra-1'</note>
+        </xr>
+      </sense>
+      <sense xml:id="sense-vraj-h0-pwkvn-anupra-VI" n="anupra-VI" source="#edition-pwkvn">
+        <def xml:lang="de">nach einem Andern das häusliche Leben aufgeben um ein asketisches zu beginnen</def>
+        <gloss xml:lang="de">nach einem Andern das häusliche Leben aufgeben um ein asketisches zu beginnen</gloss>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>anupra</quote></cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-016" ana="bib">
+            <abbr type="siglum">DIVYĀVAD</abbr>
+            <biblScope unit="locus">61,17</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-021" ana="orphan">
+            <abbr type="siglum">JĀTAKAM</abbr>
+            <biblScope unit="locus">19</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-003" ana="orphan">
+            <abbr type="siglum">JĀTAKAM</abbr>
+            <biblScope unit="locus">21</biblScope>
+          </bibl>
+        </cit>
+        <xr type="editionRel" subtype="a2a">
+          <ref target="#entry-vraj-h0">additive</ref>
+          <note type="relEvidence">PWKVN Nachtraege-to-Nachtraege (a2a); sense_tag='anupra-VI'</note>
+        </xr>
+      </sense>
+      <sense xml:id="sense-vraj-h0-sch-SCH-anupra" n="SCH-anupra" source="#edition-sch">
+        <def xml:lang="de">anupra</def>
+        <gloss xml:lang="de">anupra</gloss>
+        <cit type="citation">
+          <bibl corresp="#bibl-019" ana="orphan">
+            <abbr type="siglum">Divyāvad</abbr>
+            <biblScope unit="locus">61,17</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-022" ana="orphan">
+            <abbr type="siglum">Jātakam</abbr>
+            <biblScope unit="locus">19. 21.</biblScope>
+          </bibl>
+        </cit>
+        <xr type="editionRel" subtype="sch_star">
+          <ref target="#entry-vraj-h0">additive</ref>
+          <note type="relEvidence">SCH additive; sense_tag='SCH-anupra'</note>
+        </xr>
+      </sense>
+      <sense xml:id="sense-vraj-h0-sch-SCH-pra" n="SCH-pra" source="#edition-sch">
+        <def xml:lang="de">vraj; pra; pravrājita</def>
+        <gloss xml:lang="de">vraj</gloss>
+        <gloss xml:lang="de">pra</gloss>
+        <gloss xml:lang="de">pravrājita</gloss>
+        <cit type="citation">
+          <bibl corresp="#bibl-026" ana="orphan">
+            <abbr type="siglum">Kaus</abbr>
+            <biblScope unit="locus">2.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-018" ana="orphan">
+            <abbr type="siglum">Divyāvad</abbr>
+            <biblScope unit="locus">236,27.</biblScope>
+          </bibl>
+        </cit>
+        <xr type="editionRel" subtype="derived_sense">
+          <ref target="#entry-vraj-h0">additive</ref>
+          <note type="relEvidence">SCH additive; sense_tag='SCH-pra'</note>
+        </xr>
+      </sense>
+    </entry>
+    <entry xml:id="entry-yaj-h0">
+      <form type="lemma">
+        <orth xml:lang="sa-Latn-x-slp1">yaj</orth>
+        <orth xml:lang="sa-Latn">yaj</orth>
+      </form>
+      <sense xml:id="sense-yaj-h0-pwg-c-dat.-instr" n="c-dat.-instr" source="#edition-pwg">
+        <def xml:lang="de">mit dat. der Person und acc. der Sache: ( AV. ṚV. 10,128,4. mit loc. der Person MAITRYUP. 6,9. die Person im acc. mit R. 2,107,11</def>
+        <gramGrp>
+          <gram type="government" subtype="mit-phrase" norm="dat">mit dat.</gram>
+          <gram type="government" subtype="mit-phrase" norm="loc">mit loc.</gram>
+        </gramGrp>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>mahya^M yajantu\</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>yajantAm) mama\ yAni^ ha\vyA</quote></cit>
+        <cit type="example" xml:lang="sa-Latn-x-slp1"><quote>prati</quote></cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-009" ana="map">
+            <abbr type="siglum">AV</abbr>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-041" ana="map">
+            <abbr type="siglum">ṚV</abbr>
+            <biblScope unit="locus">10,128,4.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-028" ana="bib">
+            <abbr type="siglum">MAITRYUP</abbr>
+            <biblScope unit="locus">6,9.</biblScope>
+          </bibl>
+        </cit>
+        <cit type="citation">
+          <bibl corresp="#bibl-035" ana="map">
+            <abbr type="siglum">R</abbr>
+            <biblScope unit="locus">2,107,11.</biblScope>
+          </bibl>
+        </cit>
+      </sense>
+      <sense xml:id="sense-yaj-h0-pw-Kaus-2" n="Kaus-2" source="#edition-pw">
+        <def xml:lang="de">Jmd; darbringen heissen vermittelst Jmds</def>
+        <gloss xml:lang="de">Jmd</gloss>
+        <gloss xml:lang="de">darbringen heissen vermittelst Jmds</gloss>
+        <gramGrp>
+          <gram type="government" subtype="paren-single" norm="acc">(Acc.)</gram>
+          <gram type="government" subtype="paren-single" norm="instr">(Instr.)</gram>
+          <gram type="government" subtype="paren-single" norm="instr">(Instr.)</gram>
+        </gramGrp>
+        <xr type="editionRel" subtype="restate">
+          <ref target="#entry-yaj-h0">abridging</ref>
+          <note type="relEvidence">PW abridging restatement; sense_tag='Kaus-2'</note>
+        </xr>
+      </sense>
+    </entry>
+  </body>
+  <back>
+    <div type="bibliography">
+      <listBibl xml:id="cited-works">
+        <bibl xml:id="bibl-001" ana="bib"><abbr type="siglum">DIVYĀVAD</abbr><title>DIVYĀVADĀNA ? [Cologne Addition]</title></bibl>
+        <bibl xml:id="bibl-002" ana="map"><abbr type="siglum">MBH</abbr><title>Mahābhārata</title><note type="renouStratum">III</note></bibl>
+        <bibl xml:id="bibl-003" ana="orphan"><abbr type="siglum">JĀTAKAM</abbr></bibl>
+        <bibl xml:id="bibl-004" ana="bib"><abbr type="siglum">Chr</abbr><title>? [Cologne Addition]</title></bibl>
+        <bibl xml:id="bibl-005" ana="bib"><abbr type="siglum">Chr</abbr><title>? [Cologne Addition]</title></bibl>
+        <bibl xml:id="bibl-006" ana="bib"><abbr type="siglum">Chr</abbr><title>? [Cologne Addition]</title></bibl>
+        <bibl xml:id="bibl-007" ana="bib"><abbr type="siglum">Chr</abbr><title>? [Cologne Addition]</title></bibl>
+        <bibl xml:id="bibl-008" ana="bib"><abbr type="siglum">Chr</abbr><title>? [Cologne Addition]</title></bibl>
+        <bibl xml:id="bibl-009" ana="map"><abbr type="siglum">AV</abbr><title>Atharvaveda</title><note type="renouStratum">I</note></bibl>
+        <bibl xml:id="bibl-010" ana="map"><abbr type="siglum">AV</abbr><title>Atharvaveda</title><note type="renouStratum">I</note></bibl>
+        <bibl xml:id="bibl-011" ana="bib"><abbr type="siglum">BAUDH</abbr><title>BAUDHĀYANA</title></bibl>
+        <bibl xml:id="bibl-012" ana="map"><abbr type="siglum">BHAG</abbr><title>Bhagavadgītā</title><note type="renouStratum">III</note></bibl>
+        <bibl xml:id="bibl-013" ana="map"><abbr type="siglum">BHĀG. P</abbr><title>Bhāgavata-Purāṇa</title><note type="renouStratum">III</note></bibl>
+        <bibl xml:id="bibl-014" ana="orphan"><abbr type="siglum">Comm. zu NYĀYAM</abbr></bibl>
+        <bibl xml:id="bibl-015" ana="bib"><abbr type="siglum">DIVYĀVAD</abbr><title>DIVYĀVADĀNA ? [Cologne Addition]</title></bibl>
+        <bibl xml:id="bibl-016" ana="bib"><abbr type="siglum">DIVYĀVAD</abbr><title>DIVYĀVADĀNA ? [Cologne Addition]</title></bibl>
+        <bibl xml:id="bibl-017" ana="orphan"><abbr type="siglum">Dharmaśarm</abbr></bibl>
+        <bibl xml:id="bibl-018" ana="orphan"><abbr type="siglum">Divyāvad</abbr></bibl>
+        <bibl xml:id="bibl-019" ana="orphan"><abbr type="siglum">Divyāvad</abbr></bibl>
+        <bibl xml:id="bibl-020" ana="bib"><abbr type="siglum">HEM. PAR</abbr><title>HEMACANDRA ? [Cologne Addition]</title></bibl>
+        <bibl xml:id="bibl-021" ana="orphan"><abbr type="siglum">JĀTAKAM</abbr></bibl>
+        <bibl xml:id="bibl-022" ana="orphan"><abbr type="siglum">Jātakam</abbr></bibl>
+        <bibl xml:id="bibl-023" ana="bib"><abbr type="siglum">KĀD</abbr><title>? [Cologne Addition]</title></bibl>
+        <bibl xml:id="bibl-024" ana="map"><abbr type="siglum">KĀTY. ŚR</abbr><title>Kātyāyana-Śrautasūtra</title><note type="renouStratum">I</note></bibl>
+        <bibl xml:id="bibl-025" ana="orphan"><abbr type="siglum">Kaus</abbr></bibl>
+        <bibl xml:id="bibl-026" ana="orphan"><abbr type="siglum">Kaus</abbr></bibl>
+        <bibl xml:id="bibl-027" ana="bib"><abbr type="siglum">LĀṬY</abbr><title>LĀṬYĀYANA'S SŪTRA zum SV</title></bibl>
+        <bibl xml:id="bibl-028" ana="bib"><abbr type="siglum">MAITRYUP</abbr><title>? [Cologne Addition]</title></bibl>
+        <bibl xml:id="bibl-029" ana="map"><abbr type="siglum">MBH</abbr><title>Mahābhārata</title><note type="renouStratum">III</note></bibl>
+        <bibl xml:id="bibl-030" ana="map"><abbr type="siglum">MBH</abbr><title>Mahābhārata</title><note type="renouStratum">III</note></bibl>
+        <bibl xml:id="bibl-031" ana="map"><abbr type="siglum">MBH</abbr><title>Mahābhārata</title><note type="renouStratum">III</note></bibl>
+        <bibl xml:id="bibl-032" ana="map"><abbr type="siglum">MBH</abbr><title>Mahābhārata</title><note type="renouStratum">III</note></bibl>
+        <bibl xml:id="bibl-033" ana="map"><abbr type="siglum">M</abbr><title>Manusmṛti</title><note type="renouStratum">III</note></bibl>
+        <bibl xml:id="bibl-034" ana="bib"><abbr type="siglum">PRAB</abbr><title>PRABODHACANDRODAYA, ed</title></bibl>
+        <bibl xml:id="bibl-035" ana="map"><abbr type="siglum">R</abbr><title>Rāmāyaṇa</title><note type="renouStratum">III</note></bibl>
+        <bibl xml:id="bibl-036" ana="map"><abbr type="siglum">R. ed. Bomb</abbr><title>Rāmāyaṇa</title><note type="renouStratum">III</note></bibl>
+        <bibl xml:id="bibl-037" ana="map"><abbr type="siglum">Spr</abbr><title>Indische Sprüche (gnomic anthology)</title><note type="renouStratum">IV</note></bibl>
+        <bibl xml:id="bibl-038" ana="map"><abbr type="siglum">TS</abbr><title>Taittirīya-Saṃhitā</title><note type="renouStratum">I</note></bibl>
+        <bibl xml:id="bibl-039" ana="orphan"><abbr type="siglum">VAJRACCH</abbr></bibl>
+        <bibl xml:id="bibl-040" ana="bib"><abbr type="siglum">ĪŚOP</abbr><title>ĪŚOPANIṢAD in der Bibliotheca indica</title></bibl>
+        <bibl xml:id="bibl-041" ana="map"><abbr type="siglum">ṚV</abbr><title>Ṛgveda</title><note type="renouStratum">I</note></bibl>
+      </listBibl>
+    </div>
+  </back>
+  </text>
+</TEI>
