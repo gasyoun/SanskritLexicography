@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.65.0] — 2026-07-26
+
 ### Added
 - **Heritage (INRIA) frequency-tables ingest + diff (26-07-2026, H1490).** Roadmap
   Phase 3: 7 `DATA/*.tsv` files decoded out of Heritage's internal WX romanization
