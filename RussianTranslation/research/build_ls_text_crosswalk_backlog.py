@@ -22,8 +22,30 @@ different work. So the output carries a `scheme_verified` column that only a
 human/agent pass over the pwgbib entry may set, and the aligner maps nothing on
 name resemblance alone.
 
+⚠️ H1691 — the auto-generated candidate is WRONG IN BOTH DIRECTIONS, and neither
+class may be quoted as a fact about the corpus:
+
+  * false candidate — `candidates()` returns any name-alike and then picks the
+    one with the MOST TOKENS, so `SĀṂKHYAK` was paired with the Sāṃkhyakārikā
+    *bhāṣya* while DCS also carries the bare kārikā, and five abbreviations
+    (TBR, ĀŚV. ŚR, ŚĀṄKH. BR, ŚĀṄKH. GṚHY, TAITT. ĀR/UP) were paired with a
+    DIFFERENT WORK whose right one DCS also carries;
+  * false `DCS-LACKS` — the match is computed on the resolved pwgbib entry,
+    which is GERMAN PROSE. PWG names Pāṇini and Manu by author and language
+    ("PĀṆINI'S acht Bücher grammatischer Regeln", "MANU'S Gesetzbuch"), never by
+    Sanskrit title, so 21,305 + 20,605 citations — the two largest crosswalk
+    wins in the dictionary — sat in the class labelled "a genuine corpus gap
+    that no crosswalk can close".
+
+So `dcs_text` is a HINT for a human pass, never an answer, and `DCS-LACKS` means
+"no name-alike was found", not "DCS does not carry it". The adjudicated truth
+lives in `pwg_ls_dcs_scheme_verdicts.tsv`, which this script now reads back: its
+`dcs_text_true` overrides the guess and its `verdict` fills `scheme_verified`, so
+regenerating the backlog never silently discards a verdict that was paid for.
+
 Usage:
   python build_ls_text_crosswalk_backlog.py --loci PATH [--frame PATH] [--out PATH]
+                                            [--verdicts PATH]
 """
 import argparse
 import collections
@@ -57,6 +79,9 @@ def main():
     ap.add_argument('--kosha', default=None)
     ap.add_argument('--out', default=os.path.join(
         HERE, 'pwg_ls_dcs_text_crosswalk_backlog.tsv'))
+    ap.add_argument('--verdicts', default=os.path.join(
+        HERE, 'pwg_ls_dcs_scheme_verdicts.tsv'),
+        help='H1691 adjudications; overrides the auto-generated candidate')
     a = ap.parse_args()
 
     kosha = a.kosha or find_up('kosha')
@@ -112,6 +137,17 @@ def main():
         return [t for t in texts
                 if t.lower().startswith(base[:7]) or base.startswith(t.lower()[:7])]
 
+    # H1691 adjudications, if present: they carry the TRUE DCS text and the
+    # verdict, and must survive a regeneration of this file.
+    verdicts = {}
+    if a.verdicts and os.path.exists(a.verdicts):
+        import csv as _csv
+        with open(a.verdicts, encoding='utf-8', newline='') as fh:
+            for r in _csv.DictReader(fh, delimiter='\t'):
+                verdicts[r['pwg_abbrev']] = r
+        print('verdicts: %d adjudicated abbrevs from %s'
+              % (len(verdicts), os.path.basename(a.verdicts)))
+
     rows = []
     cls_mass = collections.Counter()
     for ab, c in n.most_common():
@@ -119,8 +155,17 @@ def main():
             name = slc.resolve_ls(ab)['source_name']
         except Exception:
             name = None
+        v = verdicts.get(ab)
+        verdict = (v or {}).get('verdict', '')
+        reason = (v or {}).get('reason', '')
         if ab in PWG_TO_DCS_TEXT:
             status, dcs_text = 'MAPPED', PWG_TO_DCS_TEXT[ab]
+        elif v and (v.get('dcs_text_true') or '').strip():
+            # adjudicated but not mapped — the corpus side EXISTS and is known,
+            # the scheme is what failed. That is a different fact from both
+            # "no mapping exists yet" and "DCS lacks the text".
+            status = 'ADJUDICATED-' + (verdict.upper() or 'NO')
+            dcs_text = v['dcs_text_true'].strip()
         else:
             cands = candidates(name)
             if cands:
@@ -136,13 +181,15 @@ def main():
             'dcs_tokens': tok.get(dcs_text, '') if dcs_text else '',
             'tuple_comparable': ('' if not dcs_text
                                  else ('no' if dcs_text in unsafe else 'yes')),
-            'scheme_verified': 'yes' if ab in PWG_TO_DCS_TEXT else '',
+            'scheme_verified': ('yes' if ab in PWG_TO_DCS_TEXT
+                                else (verdict if verdict else '')),
+            'verdict_reason': reason.replace('\t', ' ').replace('\n', ' '),
             'pwgbib_source_name': (name or '').replace('\t', ' ')[:120],
         })
 
     cols = ['pwg_abbrev', 'citations', 'share_pct', 'status', 'dcs_text',
             'dcs_tokens', 'tuple_comparable', 'scheme_verified',
-            'pwgbib_source_name']
+            'verdict_reason', 'pwgbib_source_name']
     with open(a.out, 'w', encoding='utf-8', newline='\n') as f:
         f.write('\t'.join(cols) + '\n')
         for r in rows:
