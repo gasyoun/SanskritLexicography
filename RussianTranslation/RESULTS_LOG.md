@@ -4,6 +4,27 @@ _Created: 09-07-2026 · Last updated: 26-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 26-07-2026 - P1 ruling applied: machine-flag layer over the live queue, batch1v3 (H1655)
+
+Executor: Fable 5 (`claude-fable-5`). MG ruled the voting-queue triage `@DECIDE` «auto-reject»
+(screening-audit §7: machine-flagged cards never reach a human sheet). `machine_flags` (D1/D3/D4)
+added to
+[`review_residue_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_residue_gate.py);
+batch1v2 superseded UNVOTED by `g5-live-queue-batch1v3-2026-07-26`.
+
+| Metric | n |
+|---|---:|
+| queue rows | 11,163 |
+| excluded: reader-visible German | 636 |
+| excluded: machine flags D1/D3/D4 | 3,236 |
+| ... D4 slot-count mismatch / D3 gloss-drift «…» / D1 Cyrillic in `{#…#}` | 3,067 / 370 / 20 |
+| already decided | 5 |
+| eligible for sheets | 7,286 (65.3%) |
+| batch1v3 cards (0 leaks, both layers) | 150 |
+
+D5 (gloss byte-identical to DE) deliberately not flagged — audit-measured ~false-positive.
+Store-side repair of flagged rows: H1651 (queued, Sonnet).
+
 ## 26-07-2026 - H1631: edition-diff reading surface (N14 pilot) — subtype counts on the 7 REGLUE_SPEC pilot roots
 
 Executor: Sonnet 5 (`claude-sonnet-5`). Fixture-driven static page +

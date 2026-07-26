@@ -26,6 +26,13 @@ Cards already decided in ``src/_review_queue.csv`` are excluded — a rejected
 card never re-surfaces unless its underlying data changed (/decisions-apply
 contract).
 
+**batch1v3 (26-07-2026, P1 ruling).** MG ruled the voting-queue triage
+`@DECIDE` (screening audit §7): cards carrying a machine-findable store flag
+are AUTO-REJECTED from sheets — ``review_residue_gate.machine_flags`` (D1
+Cyrillic-in-``{#…#}`` · D3 gloss-wrapper drift · D4 slot-count mismatch) is now
+a second hard pre-filter, so batch1v2 (which could still show D-class rows —
+they are not German-visible) was superseded before any vote.
+
 Instrument per ruling D6: plain approve/reject/defer (approve = print-ready,
 maps to run_batch's ``approved``; reject = not print-ready; defer =
 ``needs_review``). No DA rating — G5 is a bulk edition decision, not a quality
@@ -57,7 +64,7 @@ import sys
 
 from csl_pyutil import mark_cyrillic, render_review_sheet
 from review_binding import stamp, write_lock
-from review_residue_gate import visible_german
+from review_residue_gate import machine_flags, visible_german
 from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config
 from pwg_ab_ru import RU_MAP
 import pwg_ab
@@ -69,7 +76,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RT = os.path.dirname(HERE)
 REVIEW = os.path.join(RT, "review")
 
-SHEET_ID = "g5-live-queue-batch1v2-2026-07-26"
+SHEET_ID = "g5-live-queue-batch1v3-2026-07-26"
 GENERATED = "2026-07-26"
 
 _AB = re.compile(r"<ab\b[^>]*>(.*?)</ab>", re.S)
@@ -141,7 +148,7 @@ def main():
     ap.add_argument("--no-residue-gate", action="store_true",
                     help="present ungated cards (forensics only — the gate is "
                          "the batch1 abort's standing mandate)")
-    ap.add_argument("--out", default=os.path.join(REVIEW, "g5_batch1v2_sheet.html"))
+    ap.add_argument("--out", default=os.path.join(REVIEW, "g5_batch1v3_sheet.html"))
     ap.add_argument("--locks-dir", default=None)
     args = ap.parse_args()
 
@@ -158,19 +165,27 @@ def main():
         return {}
 
     decided = load_decided_ids(args.review_csv)
-    n_decided = n_flagged = 0
+    n_decided = n_german = n_mflag = 0
     candidates = []
     for r in queue:
         if (r.get("review_id") or "") in decided:
             n_decided += 1
             continue
-        ru = store_rec(r).get("ru") or r.get("ru") or ""
-        if not args.no_residue_gate and visible_german(ru):
-            n_flagged += 1
-            continue
+        rec = store_rec(r)
+        ru = rec.get("ru") or r.get("ru") or ""
+        if not args.no_residue_gate:
+            if visible_german(ru):
+                n_german += 1
+                continue
+            # P1 ruling 26-07-2026: machine-flagged cards are auto-rejected from
+            # sheets — triage/repair (H1651) happens before a human vote.
+            if machine_flags(ru, rec.get("de") or ""):
+                n_mflag += 1
+                continue
         candidates.append(r)
-    print("queue %d | already decided %d | residue-gate excluded %d | eligible %d"
-          % (len(queue), n_decided, n_flagged, len(candidates)))
+    print("queue %d | already decided %d | German excluded %d | machine-flag "
+          "excluded %d | eligible %d"
+          % (len(queue), n_decided, n_german, n_mflag, len(candidates)))
 
     chosen = pick(candidates, args.n)
     items = []
@@ -201,12 +216,13 @@ def main():
     strata = sorted({it["filt"] for it in items})
     config = {
         "sheet_id": SHEET_ID,
-        "title": "G5 · печатная годность — живая очередь, партия 1v2",
+        "title": "G5 · печатная годность — живая очередь, партия 1v3",
         "subtitle": ("%d карточек живой очереди (%d ai_translated; уже решено %d, "
-                     "снято немецким фильтром %d) — переделка партии 1 по вердикту "
-                     "25-07-2026: немецкий отсеян ДО показа человеку, RU-панель "
-                     "показывает печатный вид" % (len(items), len(queue), n_decided,
-                                                  n_flagged)),
+                     "снято немецким фильтром %d, снято машинными флагами D1/D3/D4 "
+                     "%d — авто-reject по решению P1 26-07) — немецкий и машинные "
+                     "дефекты отсеяны ДО показа человеку, RU-панель показывает "
+                     "печатный вид" % (len(items), len(queue), n_decided,
+                                       n_german, n_mflag)),
         "footer": ("Approve = print-ready (run_batch пометит approved) · Reject = "
                    "не годен · Defer = needs_review. Экспорт валидируется против "
                    "review/locks/%s.lock.json перед любым применением." % SHEET_ID),
