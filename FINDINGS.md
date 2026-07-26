@@ -3664,3 +3664,30 @@ agreement.
 > [`src/eval/build_gold_koch.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/build_gold_koch.py) +
 > [`src/eval/gold_sa_ru_koch_400.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/gold_sa_ru_koch_400.tsv) —
 > RussianTranslation · 26-07-2026, Sonnet 5 (`claude-sonnet-5`).
+### §468. PWG's plain `R.` is a THREE-edition composite — books 3–6 carry Gorresio (Bengal-recension) numbering, so keying them into a Southern-recension text silently returns the wrong verse
+
+PWG's own bibliography (pwgbib 1.247) says it plainly: without further indication, `R.` cites
+**Schlegel's edition for books 1–2** and **Gorresio's for books 3–6** (book 7 → Bombay ed.);
+Cologne's scan links have always routed accordingly
+([`ls_resolver.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver.py)
+sends R. 3–6 to the `ramayanagorr` viewer). But Gorresio prints the **Gauḍīya/Bengal
+recension**, whose sarga divisions and verse numbers differ from the Southern/vulgate text
+behind Leonov's Russian translation — so any consumer that treats an `R.` locus as
+Southern-keyed for books 3–6 gets the **wrong verse**, in-range and error-free.
+
+Empirical check (H1656, current pwg_ru store): the maximum sarga cited per book is 77 (R. 1),
+115 (R. 2), **79 (R. 3), 63 (R. 4), 94 (R. 5)**, 112 (R. 6) — books 3–5 land exactly on the
+Gorresio sarga counts (79 / 63 / 95) and **past** the Southern ones (75 / – / 68).
+`citation_tm.py` had been resolving in-range book-3/5 loci against the Southern corpus and
+returning that verse's Russian translation as a clean `hit` — ~900 refs were exposed; fixed by
+returning `unmapped_locus_scheme` for books 3–6
+([issue #770](https://github.com/gasyoun/SanskritLexicography/issues/770),
+[PR #769](https://github.com/gasyoun/SanskritLexicography/pull/769)).
+
+Corollary: the explicit `R. GORR.` abbreviation clusters ~98% in books 1–2 (139+230 of 375
+store loci) — Böhtlingk only wrote "GORR." where plain `R.` would have meant Schlegel. So the
+Gorresio↔Southern concordance is load-bearing for ~2,200 refs (657 R. GORR. + ~1,560 plain-R.
+books 3–6), not 657. Reusable rule: **an `<ls>` abbreviation names a citation *scheme*, not a
+text — resolve the edition per book/coordinate-range before keying into any aligned corpus.**
+
+_26-07-2026 · [H1656](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1656-Opus_SanskritLexicography_gorresio-southern-critical-concordances_26.07.26.md) · [PR #769](https://github.com/gasyoun/SanskritLexicography/pull/769), [issue #770](https://github.com/gasyoun/SanskritLexicography/issues/770) · Fable 5 `claude-fable-5`_
