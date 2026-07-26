@@ -14,6 +14,37 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+
+- **Selftest isolation guard — production data unreachable by construction (26-07-2026).**
+  New [`selftest_isolation.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/selftest_isolation.py),
+  wired into all 10 selftests that can reach the store, coordinator or residual registry.
+  **Belt:** pin every redirectable production path to scratch before any repo import (several
+  modules resolve those constants at import time); a path pointing *inside* the checkout is a
+  hard refusal, not a silent override. **Braces:** an exit tripwire over the production files
+  that have no override — the C-49 residual ledger's path is computed from `__file__`, which is
+  why [#726](https://github.com/gasyoun/SanskritLexicography/issues/726) was possible — failing
+  the run even when every assertion passed. Verified by reproducing #726 against it: the fixture
+  passed every assertion and the run still exited 9 naming the modified file.
+
+### Fixed
+
+- **[#760](https://github.com/gasyoun/SanskritLexicography/issues/760) — in-process promotion
+  made `window_selftest` reach the LIVE canonical store.** `coordinator.promote_ready` now calls
+  `promote_final_cards.batch_promote` in-process instead of shelling out to `--batch-manifest`;
+  the promotion fixtures' isolation *was* that subprocess boundary, and `DEFAULT_STORE` resolves
+  to the main worktree's real `pwg_ru_translated.jsonl` unless `PWG_RU_STORE` is set. The tests
+  read the live ~11.6k-row store and, on a fixture whose sense identities did not collide, would
+  have written it. Closed by the guard above.
+- **The 7 coordinator/promotion fixtures the sealing invalidated.** Preflight evidence and
+  sealed-v2 binding are mandatory now; the fixtures still passed placeholder paths and v1
+  outputs. Five were contract updates (a real self-validating preflight artifact, explicit
+  cost-gate schema, `--result-sha256`, a fake that answers `perf_preflight.py`, sealed meta on
+  the *workflow output* rather than the manifest). The sixth — the P10 "TM rebuild in a
+  `finally`" test — was **rewritten**: promotion is journal-phased now, so the TM survives a
+  post-commit failure *by construction* rather than via a `finally`, and the test pins that
+  instead of a shape the code no longer has. `window_selftest` **189/189**.
+
 ## [1.68.0] — 2026-07-26
 
 ### Added
@@ -28,7 +59,6 @@ not an error.
   `g5-live-queue-batch1v3-2026-07-26` (150 cards, verified 0 leaks across both layers); the
   v2 lock is removed so a stray v2 export can no longer validate. D5 (gloss byte-identical to
   German) deliberately not flagged — audit-measured as mostly false positives.
-
 ## [1.67.0] — 2026-07-26
 
 ### Added
@@ -183,6 +213,29 @@ not an error.
   run appended a junk `{"key": "a", "source_window": "nominal_selftest"}` row to
   [`no_pwg_residuals.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/no_pwg_residuals.jsonl)
   — the registry that decides which keys are BLOCKED from requeue. Flag added; the polluting row reverted.
+### Added
+
+- **PWG→RU paid-route and promotion hardening (unreleased implementation,
+  25-07-2026; no paid translation started):** all probes and generation calls
+  now share a durable `pwg.call_reservation.v1` ledger. `max_calls` is consumed
+  atomically before each process spawn and is never refunded after a crash;
+  `--cost-ceiling` is explicitly an observed-cost stop after completed calls,
+  not a strict pre-spend dollar cap, and missing/invalid cost telemetry stops
+  cost-capped runs as unevaluable. The same profile lock covers each warm-up +
+  measured probe pair and each worker generation run. Paid manifest-v2
+  dispatch also binds the run ID, manifest hash, preflight hash/scope, profile,
+  result hash, and reservation ledger before output can be recorded.
+- **PWG→RU crash closure (unreleased implementation, 25-07-2026):** Windows
+  Claude subprocesses are placed in a kill-on-close Job Object before their
+  first instruction, so timeout/exception cleanup reaches the native child
+  tree. Sequential `record-output-batch` reports its exact durably committed
+  prefix. Promotion now uses `pwg.promotion_journal.v1`
+  (`prepared → store_committed → derived_validated →
+  coordinator_committed → complete`), startup-reconciles the single incomplete
+  journal, holds one canonical-store claim through `complete`, and seals the
+  store, backup, TM/denylist, coordinator state, and deterministic promotion
+  registry identities for idempotent recovery. Store or coordinator bytes that
+  match neither sealed before nor expected-after state fail closed.
 
 ### Changed
 - **H1623 docs-freshness (Grok 4.5 grok-4.5, 25-07-2026):** re-verify big-manuals estate — LAST_VERIFIED 25-07-2026 on workspace AGENTS/HUMAN_RU + 6 docs/manuals deep manuals; RT deep metadoc COMMANDS_SPOT_RUN forced to integer 4 (was free-text, broke manual_staleness.py); MAINTAINER papers range updated A30-A67.

@@ -72,6 +72,11 @@ if str(HERE) not in sys.path:
 
 import max_account_orchestrator as mao  # noqa: E402
 from headless_worker import claude_argv_prefix  # noqa: E402
+# Codex hardening (26-07-2026): a PRE-spend reservation ledger. `--max-calls`-style ceilings
+# were post-hoc -- they could only report an overshoot after the calls were paid for. The
+# ledger reserves each call BEFORE it is issued and raises CallLimitReached instead, which is
+# exactly the discipline a one-no-reroll-attempt gate wants.
+from call_reservation import CallLimitReached, CallReservationLedger  # noqa: E402
 
 
 def resolve_claude_bin():
@@ -109,6 +114,16 @@ def config_dir_for(account):
         raise SystemExit("account %r is not of the form cN; pass --config-dir explicitly"
                          % account)
     return os.path.join(PROFILE_ROOT, "claude" + account[1:], ".claude")
+
+
+def ledger_paths(account):
+    """The per-account call-reservation ledger + synthetic preflight paths.
+
+    Per-account for the same reason the events log is (#729 one level up): a reservation
+    written for c5 must never bound, or be read as, a c4 attempt.
+    """
+    return (HERE / "output" / ("h963_%s_gate0_calls.json" % account),
+            HERE / "output" / ("h963_%s_gate0_preflight.json" % account))
 
 
 def campaign_for(account):
@@ -227,6 +242,7 @@ def main(argv=None):
 
     campaign = campaign_for(account)
     run_id = new_run_id(campaign)
+    call_ledger_path, preflight_path = ledger_paths(account)
     claude_bin = resolve_claude_bin()
     argv_prefix = claude_argv_prefix(claude_bin)
 
@@ -247,6 +263,8 @@ def main(argv=None):
     print("run_id            : %s   (unique to THIS run — #729)" % run_id)
     print("campaign          : %s   (grouping label only, never a read scope)" % campaign)
     print("events            : %s   (per-account series)" % events)
+    print("call ledger       : %s" % call_ledger_path)
+    print("preflight         : %s" % preflight_path)
     print("claude bin        : %s" % claude_bin)
     print("resolved argv     : %s" % argv_prefix)
     print("-" * 72)
@@ -275,6 +293,11 @@ def main(argv=None):
               % account)
         return 3
 
+    # The gate is allowed EXACTLY two calls (warm-up + measured). Reserving them up front
+    # turns "we overspent" into "we refused to spend", which is the whole point.
+    mao.write_synthetic_preflight(str(preflight_path), run_id, [])
+    call_ledger = CallReservationLedger(str(call_ledger_path), run_id, 2)
+
     verdict_exc = None
     t0 = time.monotonic()
     try:
@@ -287,8 +310,9 @@ def main(argv=None):
             events_path=str(events),
             run_id=run_id,
             account=account,
+            call_reservation=call_ledger,
         )
-    except SystemExit as exc:
+    except (SystemExit, CallLimitReached) as exc:
         verdict_exc = str(exc)
     wall_s = time.monotonic() - t0
 
@@ -312,6 +336,12 @@ def main(argv=None):
         print("live_probe fail-closed: %s" % verdict_exc)
 
     fails = derive_fails(readings)
+    # Codex hardening: the gate must emit EXACTLY its two reserved readings. Fewer means a
+    # phase never ran (already caught by derive_fails); MORE means something issued an
+    # unreserved paid call under this run id, which no verdict may be derived over.
+    if len(readings) > 2:
+        fails.append("this invocation emitted %d probe readings, expected exactly 2"
+                     % len(readings))
     by_purpose = {r.get("purpose"): r for r in readings}
 
     print()

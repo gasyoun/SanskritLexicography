@@ -1,9 +1,8 @@
 #!/usr/bin/env python
-"""Restartable outer scheduler for independently authenticated Claude profiles.
+"""Restartable scheduler for sealed coordinator manifests on authenticated profiles.
 
-This layer owns dispatch only.  A queued job is an argv JSON array; the command
-is run with CLAUDE_CONFIG_DIR set to the assigned account.  Translation logic,
-auditing, and promotion remain owned by coordinator.py and its existing tools.
+Arbitrary argv jobs are refused: only imported coordinator manifests carry the
+required run, preflight, reservation, profile, and result bindings.
 """
 import argparse
 import concurrent.futures
@@ -18,9 +17,13 @@ import sys
 import time
 
 from run_observability import append_event, write_census
-from headless_worker import claude_argv_prefix, run_tree_kill, windows_hidden_flags
+from headless_worker import (claude_argv_prefix, run_tree_kill, validate_preflight_artifact,
+                             windows_hidden_flags)
 from window_common import atomic_write_text
-from execution_contract import validate_manifest, validate_profile
+from execution_contract import (ActiveCallClaim, config_dir_fingerprint, validate_manifest,
+                                validate_profile)
+from call_reservation import (CallLimitReached, CallReservationLedger, run_ids,
+                              telemetry_from_cli_wrapper, unevaluable_telemetry)
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -34,7 +37,8 @@ CREATE TABLE IF NOT EXISTS jobs (
   id INTEGER PRIMARY KEY AUTOINCREMENT, external_id TEXT UNIQUE NOT NULL,
   argv_json TEXT NOT NULL DEFAULT '[]', cwd TEXT NOT NULL, output_path TEXT NOT NULL,
   manifest_path TEXT, manifest_sha256 TEXT, profile_slot TEXT,
-  result_sha256 TEXT, attempt_log_path TEXT,
+  preflight_path TEXT, preflight_sha256 TEXT,
+  result_sha256 TEXT, attempt_log_path TEXT, run_id TEXT,
   failure_class TEXT, reset_at INTEGER,
   coordinator_recorded INTEGER NOT NULL DEFAULT 0,
   state TEXT NOT NULL DEFAULT 'pending', assigned_acc TEXT, attempts INTEGER NOT NULL DEFAULT 0,
@@ -92,6 +96,17 @@ def now_iso():
     return datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')
 
 
+def required_call_ledger(args, context='paid call'):
+    path = getattr(args, 'call_reservation', None)
+    run_id = getattr(args, 'run_id', None)
+    if not path or not run_id:
+        raise SystemExit('%s requires --call-reservation and --run-id' % context)
+    try:
+        return CallReservationLedger(path, run_id, getattr(args, 'max_calls', None))
+    except ValueError as exc:
+        raise SystemExit('%s: %s' % (context, exc))
+
+
 def connect(path):
     # D-G: a real busy_timeout so concurrent claimers (independent connections racing the same
     # BEGIN IMMEDIATE write lock) WAIT for the lock instead of failing with SQLITE_BUSY / "database
@@ -105,7 +120,9 @@ def connect(path):
     for name, declaration in (
             ('manifest_path', 'TEXT'), ('manifest_sha256', 'TEXT'),
             ('profile_slot', 'TEXT'),
+            ('preflight_path', 'TEXT'), ('preflight_sha256', 'TEXT'),
             ('result_sha256', 'TEXT'), ('attempt_log_path', 'TEXT'),
+            ('run_id', 'TEXT'),
             ('failure_class', 'TEXT'), ('reset_at', 'INTEGER'),
             ('coordinator_recorded', 'INTEGER NOT NULL DEFAULT 0')):
         if name not in existing:
@@ -139,6 +156,20 @@ def atomic_write(path, text):
     atomic_write_text(path, text)
 
 
+def write_synthetic_preflight(path, root, selected_keys=None):
+    """Write explicit zero-work/canary evidence for paid probes without a coordinator lease."""
+    payload = {
+        'schema': 'pwg.performance_preflight.v1',
+        'root': root,
+        'selected_keys': list(selected_keys or []),
+        'cost_gate': {'over_ceiling': False},
+        'synthetic_probe_only': True,
+    }
+    atomic_write(path, json.dumps(payload, ensure_ascii=False, indent=1) + '\n')
+    validate_preflight_artifact(path)
+    return os.path.abspath(path)
+
+
 def coordinator_command(args, command, check=True):
     coordinator = os.path.abspath(getattr(
         args, 'coordinator', os.path.join(os.path.dirname(__file__), 'coordinator.py')))
@@ -165,6 +196,25 @@ def release_db_claims(db_path, jobs, error):
                 "started_at=NULL, error=? WHERE id=? AND state='in_progress'",
                 (error[-2000:], job['id']))
     db.close()
+
+
+def bind_jobs_to_run(db_path, jobs, run_id):
+    """Seal the run identity before any worker spawn; retries may only reuse that identity."""
+    if not run_id:
+        raise ValueError('manifest jobs require a run_id before spawn')
+    db = connect(db_path)
+    try:
+        with db:
+            for job in jobs:
+                row = db.execute('SELECT run_id FROM jobs WHERE id=?', (job['id'],)).fetchone()
+                saved = row['run_id'] if row else None
+                if saved and saved != run_id:
+                    raise ValueError('%s: saved run_id %r refuses resume as %r'
+                                     % (job['external_id'], saved, run_id))
+                db.execute('UPDATE jobs SET run_id=? WHERE id=? AND run_id IS NULL',
+                           (run_id, job['id']))
+    finally:
+        db.close()
 
 
 # H1339 A4: a materialised requeue attempt is a NEW job (jobs.external_id is UNIQUE) on the
@@ -289,14 +339,14 @@ def claim(db_path, account, now=None, only_external_ids=None):
 
 
 def finish(db_path, job_id, state, returncode, error=None, failure_class=None,
-           result_sha256=None, attempt_log_path=None, reset_at=None):
+           result_sha256=None, attempt_log_path=None, reset_at=None, run_id=None):
     db = connect(db_path)
     with db:
         db.execute('UPDATE jobs SET state=?, returncode=?, error=?, failure_class=?, '
                    'result_sha256=COALESCE(?,result_sha256), attempt_log_path=COALESCE(?,attempt_log_path), '
-                   'reset_at=?, finished_at=? WHERE id=?',
+                   'run_id=COALESCE(?,run_id), reset_at=?, finished_at=? WHERE id=?',
                    (state, returncode, error, failure_class, result_sha256,
-                    attempt_log_path, reset_at, now_iso(), job_id))
+                    attempt_log_path, run_id, reset_at, now_iso(), job_id))
     db.close()
 
 
@@ -360,7 +410,7 @@ def emit_call_events(events_path, item, idx, manifest_sha256, base):
 
 
 def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, run_id=None,
-                claude_bin='claude'):
+                claude_bin='claude', call_reservation_path=None, max_calls=None):
     attempt = job['attempts']
     attempt_log = job['output_path'] + '.attempt%d.runner.json' % attempt
     status_path = job['output_path'] + '.attempt%d.status.json' % attempt
@@ -370,22 +420,44 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
     if events_path:
         append_event(events_path, stage='dispatch', event='attempt_start', **event_base)
     if job['manifest_path']:
+        db = connect(db_path)
+        saved_run_id = db.execute(
+            'SELECT run_id FROM jobs WHERE id=?', (job['id'],)).fetchone()['run_id']
+        db.close()
+        if not run_id or saved_run_id != run_id:
+            raise RuntimeError('job/run binding mismatch before spawn: saved=%r requested=%r'
+                               % (saved_run_id, run_id))
+        if not call_reservation_path:
+            raise RuntimeError('manifest worker spawn requires a call reservation ledger')
         if sha256_path(job['manifest_path']) != job['manifest_sha256']:
             return fail_or_retry(db_path, job['id'], 2, 'manifest hash changed',
                                  'manifest_drift', attempt_log)
         manifest = json.load(open(job['manifest_path'], encoding='utf-8'))
         try:
             validate_profile(manifest, config_dir, account)
-        except ValueError as exc:
+            validate_preflight_artifact(
+                job['preflight_path'], manifest, job['preflight_sha256'])
+        except (OSError, ValueError) as exc:
             return fail_or_retry(db_path, job['id'], 2, str(exc), 'configuration', attempt_log)
         argv = [sys.executable, os.path.join(os.path.dirname(__file__), 'headless_worker.py'),
                 job['manifest_path'], '--output', job['output_path'],
                 '--status-out', status_path, '--timeout', str(timeout),
-                '--claude-bin', claude_bin, '--only-profile', account]
+                '--claude-bin', claude_bin, '--only-profile', account,
+                '--preflight', job['preflight_path'],
+                '--preflight-sha256', job['preflight_sha256'],
+                '--manifest-sha256', job['manifest_sha256']]
     else:
-        argv = json.loads(job['argv_json'])
+        return fail_or_retry(
+            db_path, job['id'], 2,
+            'legacy generic argv jobs are disabled; re-enqueue through a sealed '
+            'coordinator manifest',
+            'configuration', attempt_log)
     env = os.environ.copy()
     env['CLAUDE_CONFIG_DIR'] = config_dir
+    if call_reservation_path:
+        env['PWG_CALL_RESERVATION_PATH'] = os.path.abspath(call_reservation_path)
+        env['PWG_CALL_RESERVATION_RUN_ID'] = run_id or ''
+        env['PWG_CALL_RESERVATION_MAX_CALLS'] = '' if max_calls is None else str(max_calls)
     try:
         proc = run_tree_kill(argv, cwd=job['cwd'], env=env, text=True, encoding='utf-8',
                              capture_output=True, timeout=timeout)   # D-J: tree-kill on timeout
@@ -399,6 +471,17 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
                 worker_status = json.load(open(status_path, encoding='utf-8'))
             except (OSError, json.JSONDecodeError):
                 worker_status = {}
+        if (job['manifest_path']
+                and worker_status.get('manifest_sha256') != job['manifest_sha256']):
+            state = fail_or_retry(
+                db_path, job['id'], 2,
+                'worker manifest hash does not match the sealed job manifest',
+                'manifest_drift', attempt_log)
+            if events_path:
+                append_event(
+                    events_path, stage='dispatch', event='attempt_end',
+                    classification='manifest_drift', **event_base)
+            return state
         if events_path:
             for idx, item in enumerate(worker_status.get('attempts') or []):
                 emit_call_events(events_path, item, idx,
@@ -416,9 +499,18 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
                              classification='rate_limit', reset_at=until, **event_base)
             return 'parked'
         if proc.returncode == 0:
-            result_hash = sha256_path(job['output_path']) if os.path.exists(job['output_path']) else None
+            result_hash = (
+                sha256_path(job['output_path'])
+                if os.path.exists(job['output_path']) else None)
+            if (job['manifest_path']
+                    and (not result_hash
+                         or worker_status.get('result_sha256') != result_hash)):
+                return fail_or_retry(
+                    db_path, job['id'], 2,
+                    'worker result hash does not match the sealed status result',
+                    'result_drift', attempt_log)
             finish(db_path, job['id'], 'done', 0, failure_class='success',
-                   result_sha256=result_hash, attempt_log_path=attempt_log)
+                   result_sha256=result_hash, attempt_log_path=attempt_log, run_id=run_id)
             if events_path:
                 append_event(events_path, stage='dispatch', event='attempt_end',
                              classification='success', result_hash=result_hash, **event_base)
@@ -440,7 +532,8 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
         return fail_or_retry(db_path, job['id'], 127, str(exc), 'process', attempt_log)
 
 
-def profile_status(config_dir, claude='claude'):
+def profile_status(config_dir, claude='claude', call_reservation=None, account=None,
+                   preflight_path=None):
     if not os.path.isdir(config_dir):
         return False, 'profile directory missing'
     env = os.environ.copy()
@@ -457,22 +550,63 @@ def profile_status(config_dir, claude='claude'):
         return False, (proc.stderr or proc.stdout)[-500:]
     if proc.returncode or not data.get('loggedIn'):
         return False, data.get('subscriptionType') or 'not logged in'
-    probe = run_tree_kill(               # D-J: tree-kill on timeout
-        claude_argv_prefix(claude) + ['-p', 'Return exactly OK.', '--output-format', 'json',
-         '--model', 'claude-sonnet-5', '--permission-mode', 'plan'],
-        env=env, text=True, encoding='utf-8', capture_output=True, timeout=60)
+    if call_reservation is None:
+        raise ValueError('paid profile validation requires a call reservation ledger')
+    validate_preflight_artifact(preflight_path)
+    with ActiveCallClaim(config_dir_fingerprint(config_dir)):
+        reservation = call_reservation.reserve('profile:init', profile=account)
+        try:
+            probe = run_tree_kill(               # D-J: tree-kill on timeout
+                claude_argv_prefix(claude) + [
+                    '-p', 'Return exactly OK.', '--output-format', 'json',
+                    '--model', 'claude-sonnet-5', '--permission-mode', 'plan'],
+                env=env, text=True, encoding='utf-8',
+                capture_output=True, timeout=60)
+        except subprocess.TimeoutExpired:
+            call_reservation.finalize(reservation, unevaluable_telemetry())
+            return False, 'timeout'
+        except BaseException:
+            # The reservation is irreversible once the runner may have
+            # spawned. An unexpected runner failure cannot remain pending or
+            # masquerade as a zero-cost validation.
+            call_reservation.finalize(reservation, unevaluable_telemetry())
+            raise
+    try:
+        wrapper = json.loads(probe.stdout or '')
+    except (TypeError, ValueError):
+        wrapper = None
+    telemetry = telemetry_from_cli_wrapper(wrapper)
+    envelope_ok = (
+        isinstance(wrapper, dict)
+        and wrapper.get('type') == 'result'
+        and wrapper.get('subtype') == 'success'
+        and wrapper.get('is_error') is not True)
+    if not envelope_ok:
+        telemetry = dict(telemetry, cost_evaluable=False)
+    call_reservation.finalize(reservation, telemetry)
     if probe.returncode:
         return False, ((probe.stderr or '') + '\n' + (probe.stdout or ''))[-500:]
+    if not envelope_ok:
+        return False, 'paid profile validation probe returned no valid success envelope'
     return True, data.get('subscriptionType') or 'unknown'
 
 
 def cmd_init(args):
+    call_reservation = (None if args.skip_profile_check else
+                        required_call_ledger(args, context='init profile probe'))
+    preflight = None
+    if call_reservation is not None:
+        preflight = write_synthetic_preflight(
+            call_reservation.path + '.profile-preflight.json',
+            'profile-init-' + call_reservation.run_id)
     db = connect(args.db)
     with db:
         for item in args.account:
             name, config_dir = item.split('=', 1)
             config_dir = os.path.abspath(config_dir)
-            ok, detail = (True, 'test override') if args.skip_profile_check else profile_status(config_dir, args.claude_bin)
+            ok, detail = ((True, 'test override') if args.skip_profile_check else
+                          profile_status(
+                              config_dir, args.claude_bin, call_reservation, name, preflight))
             if not ok:
                 raise SystemExit('%s: profile validation failed: %s' % (name, detail))
             db.execute('INSERT OR REPLACE INTO accounts(name,config_dir,parked_until,last_error,validated,updated_at) VALUES(?,?,0,NULL,1,?)',
@@ -481,15 +615,9 @@ def cmd_init(args):
 
 
 def cmd_enqueue(args):
-    argv = json.loads(args.argv_json)
-    if not isinstance(argv, list) or not argv or not all(isinstance(x, str) for x in argv):
-        raise SystemExit('--argv-json must be a non-empty JSON string array')
-    db = connect(args.db)
-    with db:
-        db.execute('INSERT INTO jobs(external_id,argv_json,cwd,output_path,max_attempts) VALUES(?,?,?,?,?)',
-                   (args.external_id, json.dumps(argv), os.path.abspath(args.cwd),
-                    os.path.abspath(args.output), args.max_attempts))
-    db.close()
+    raise SystemExit(
+        'generic argv jobs are disabled; import a sealed coordinator manifest '
+        'so run/preflight/reservation/profile/result binding is mandatory')
 
 
 def cmd_import_coordinator(args):
@@ -522,15 +650,22 @@ def cmd_import_coordinator(args):
             if manifest['meta'].get('lang') != 'ru':
                 raise SystemExit('%s: H818 production default is RU only' % lease['id'])
             profile_slot = manifest['execution']['profile_slot']
+            preflight_path = lease.get('preflight_path')
+            preflight_hash = lease.get('preflight_sha256')
+            if not preflight_path or not preflight_hash or not os.path.exists(preflight_path):
+                raise SystemExit('%s: sealed preflight missing' % lease['id'])
+            if sha256_path(preflight_path) != preflight_hash:
+                raise SystemExit('%s: sealed preflight hash changed' % lease['id'])
             keys = set(manifest['meta']['selected_keys'])
             overlap = keys & occupied
             if overlap:
                 raise SystemExit('%s: key overlap with queued/done job: %s' %
                                  (lease['id'], ','.join(sorted(overlap))))
             output = os.path.join(lease['artifact_dir'], 'workflow_result.headless.%s.json' % lease['id'])
-            db.execute('INSERT INTO jobs(external_id,cwd,output_path,manifest_path,manifest_sha256,profile_slot,max_attempts) VALUES(?,?,?,?,?,?,?)',
+            db.execute('INSERT INTO jobs(external_id,cwd,output_path,manifest_path,manifest_sha256,profile_slot,preflight_path,preflight_sha256,max_attempts) VALUES(?,?,?,?,?,?,?,?,?)',
                        (lease['id'], os.path.abspath(args.cwd), output, manifest_path,
-                        sha256_path(manifest_path), profile_slot, args.max_attempts))
+                        sha256_path(manifest_path), profile_slot, preflight_path,
+                        preflight_hash, args.max_attempts))
             occupied.update(keys)
             added += 1
     db.close()
@@ -572,6 +707,12 @@ def cmd_import_requeue(args):
     if manifest['meta'].get('lang') != 'ru':
         raise SystemExit('%s: H818 production default is RU only' % args.lease_id)
     profile_slot = manifest['execution']['profile_slot']
+    preflight_path = attempt.get('preflight') or lease.get('preflight_path')
+    preflight_hash = attempt.get('preflight_sha256') or lease.get('preflight_sha256')
+    if not preflight_path or not preflight_hash or not os.path.exists(preflight_path):
+        raise SystemExit('%s: requeue sealed preflight missing' % args.lease_id)
+    if sha256_path(preflight_path) != preflight_hash:
+        raise SystemExit('%s: requeue sealed preflight hash changed' % args.lease_id)
     external_id = '%s%s%02d-%s' % (args.lease_id, RQ_ID_SEP, number, kind)
     db = connect(args.db)
     existing = {row['external_id'] for row in db.execute('SELECT external_id FROM jobs')}
@@ -595,9 +736,10 @@ def cmd_import_requeue(args):
     output = os.path.join(adir, 'workflow_result.headless.%s.rq%02d-%s.json'
                           % (args.lease_id, number, kind))
     with db:
-        db.execute('INSERT INTO jobs(external_id,cwd,output_path,manifest_path,manifest_sha256,profile_slot,max_attempts) VALUES(?,?,?,?,?,?,?)',
+        db.execute('INSERT INTO jobs(external_id,cwd,output_path,manifest_path,manifest_sha256,profile_slot,preflight_path,preflight_sha256,max_attempts) VALUES(?,?,?,?,?,?,?,?,?)',
                    (external_id, os.path.abspath(args.cwd), output, manifest_path,
-                    sha256_path(manifest_path), profile_slot, args.max_attempts))
+                    sha256_path(manifest_path), profile_slot, preflight_path,
+                    preflight_hash, args.max_attempts))
     db.close()
     print('imported=1 %s' % external_id)
     return external_id
@@ -680,9 +822,60 @@ def cmd_record_done(args):
     for job in jobs:
         if not job['manifest_path'] or not os.path.exists(job['output_path']):
             raise SystemExit('%s: completed coordinator job has no result' % job['external_id'])
+        if not job['result_sha256']:
+            raise SystemExit('%s: completed coordinator job has no saved result hash'
+                             % job['external_id'])
+        actual_hash = sha256_path(job['output_path'])
+        if actual_hash != job['result_sha256']:
+            raise SystemExit('%s: result substitution refused (saved=%s actual=%s)'
+                             % (job['external_id'], job['result_sha256'], actual_hash))
+        if not job['run_id']:
+            raise SystemExit('%s: completed coordinator job has no saved run_id'
+                             % job['external_id'])
+    if len(jobs) > 1:
+        lease_ids = [coordinator_lease_id(job['external_id']) for job in jobs]
+        if len(lease_ids) != len(set(lease_ids)):
+            raise SystemExit('record-done batch refuses duplicate coordinator lease ids')
+        command = ['record-output-batch']
+        for job, lease_id in zip(jobs, lease_ids):
+            command += ['--record', lease_id, job['output_path'], job['run_id'],
+                        job['result_sha256']]
+        proc = coordinator_command(args, command, check=False)
+        progress = None
+        prefix = 'RECORD_OUTPUT_BATCH_PROGRESS: '
+        for line in ((proc.stdout or '') + '\n' + (proc.stderr or '')).splitlines():
+            if line.startswith(prefix):
+                try:
+                    candidate = json.loads(line[len(prefix):])
+                except json.JSONDecodeError:
+                    continue
+                if candidate.get('schema') == 'pwg.record_output_batch.v1':
+                    progress = candidate
+        committed = list((progress or {}).get('recorded') or [])
+        if committed != lease_ids[:len(committed)]:
+            raise SystemExit('record-done batch returned a non-prefix progress receipt')
+        if committed:
+            committed_set = set(committed)
+            db = connect(args.db)
+            with db:
+                for job, lease_id in zip(jobs, lease_ids):
+                    if lease_id in committed_set:
+                        db.execute('UPDATE jobs SET coordinator_recorded=1 WHERE id=?',
+                                   (job['id'],))
+            db.close()
+            recorded = len(committed)
+        print(proc.stdout, end='')
+        print(proc.stderr, end='', file=sys.stderr)
+        if proc.returncode or committed != lease_ids:
+            raise SystemExit('coordinator record-output-batch committed %d/%d'
+                             % (recorded, len(jobs)))
+        print('recorded=%d' % recorded)
+        return
+    for job in jobs:
         proc = coordinator_command(
             args, ['record-output', coordinator_lease_id(job['external_id']),
-                   job['output_path']], check=False)
+                   job['output_path'], '--run-id', job['run_id'],
+                   '--result-sha256', job['result_sha256']], check=False)
         if proc.returncode:
             print(proc.stdout, end='')
             print(proc.stderr, end='', file=sys.stderr)
@@ -782,6 +975,12 @@ def cmd_run_once(args):
         return
     runtime_jobs = [job for _account, job in work if job['manifest_path']]
     if runtime_jobs:
+        try:
+            required_call_ledger(args, context='run-once manifest dispatch')
+            bind_jobs_to_run(args.db, runtime_jobs, getattr(args, 'run_id', None))
+        except (SystemExit, ValueError) as exc:
+            release_db_claims(args.db, [job for _account, job in work], str(exc))
+            raise SystemExit(str(exc))
         begin = ['begin-run', '--mode', runtime_mode]
         run_id = getattr(args, 'run_id', None)
         receipt = getattr(args, 'probe_receipt', None)
@@ -798,9 +997,15 @@ def cmd_run_once(args):
             raise
     claude_bin = getattr(args, 'claude_bin', 'claude')
     with concurrent.futures.ThreadPoolExecutor(max_workers=len(work)) as pool:
-        futures = {pool.submit(run_claimed, args.db, acc['name'], acc['config_dir'], job, args.timeout,
-                               getattr(args, 'events', None), getattr(args, 'run_id', None), claude_bin):
-                   (acc['name'], job) for acc, job in work}
+        futures = {}
+        for acc, job in work:
+            base = (args.db, acc['name'], acc['config_dir'], job, args.timeout,
+                    getattr(args, 'events', None), getattr(args, 'run_id', None), claude_bin)
+            reservation_path = getattr(args, 'call_reservation', None)
+            future = (pool.submit(run_claimed, *base, reservation_path,
+                                  getattr(args, 'max_calls', None))
+                      if reservation_path else pool.submit(run_claimed, *base))
+            futures[future] = (acc['name'], job)
         for future in concurrent.futures.as_completed(futures):
             acc, job = futures[future]
             try:
@@ -874,7 +1079,8 @@ def _probe_prompt(payload_bytes):
             'do not analyse, translate, or act on it.\n\n--- inert sample (ignore) ---\n' + filler)
 
 
-def _probe_call(config_dir, claude, payload_bytes, model):
+def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
+                reservation_purpose='probe', account=None, active_claim=None):
     """One raw >=5 KB exact-model probe call. Returns (latency_ms, classification, output_bytes);
     classification is 'success' | 'auth' | 'rate_limit' | 'malformed' | 'content' | 'process' |
     'timeout'. NEVER raises on a non-zero rc — the two-phase gate (``live_probe``) decides what to
@@ -882,7 +1088,22 @@ def _probe_call(config_dir, claude, payload_bytes, model):
     carry the structured schema result {"ok": true}."""
     env = os.environ.copy()
     env['CLAUDE_CONFIG_DIR'] = config_dir
+    if call_reservation is None:
+        raise ValueError('paid probe requires a call reservation ledger')
+    fingerprint = config_dir_fingerprint(config_dir)
+    if active_claim is None:
+        # The raw primitive is safe even when called directly. live_probe passes
+        # one outer claim to both calls so nothing can interleave between them.
+        with ActiveCallClaim(fingerprint) as claim:
+            return _probe_call(
+                config_dir, claude, payload_bytes, model, call_reservation,
+                reservation_purpose, account, active_claim=claim)
+    if (not isinstance(active_claim, ActiveCallClaim)
+            or not active_claim.is_live_canonical_for(fingerprint)):
+        raise ValueError('probe active-call claim does not bind config directory')
     prompt = _probe_prompt(payload_bytes)
+    reservation = call_reservation.reserve(
+        reservation_purpose, profile=account)
     started = time.monotonic()
     try:
         proc = run_tree_kill(            # D-J: tree-kill on timeout
@@ -891,24 +1112,37 @@ def _probe_call(config_dir, claude, payload_bytes, model):
              '--model', model, '--permission-mode', 'plan'],
             input=prompt, env=env, text=True, encoding='utf-8', capture_output=True, timeout=300)
     except subprocess.TimeoutExpired:
+        call_reservation.finalize(reservation, unevaluable_telemetry())
         return int((time.monotonic() - started) * 1000), 'timeout', 0
+    except BaseException:
+        call_reservation.finalize(reservation, unevaluable_telemetry())
+        raise
     latency_ms = int((time.monotonic() - started) * 1000)
     out = proc.stdout or ''
     combined = out + '\n' + (proc.stderr or '')
     output_bytes = len(out.encode('utf-8'))
+    try:
+        wrapper = json.loads(out)
+    except (ValueError, TypeError):
+        wrapper = None
+    telemetry = telemetry_from_cli_wrapper(wrapper)
     if proc.returncode:
+        call_reservation.finalize(reservation, telemetry)
         return latency_ms, (_probe_err_class(combined) or 'process'), output_bytes
     # rc 0 is NOT sufficient. `claude -p --output-format json` returns the CLI result *envelope*
     # ({"type":"result","subtype":"success","is_error":false,"result":..., "structured_output":...}).
     # Validate it strictly and require the structured schema result {"ok": true}.
-    try:
-        wrapper = json.loads(out)
-    except (ValueError, TypeError):
+    if wrapper is None:
+        call_reservation.finalize(
+            reservation, dict(telemetry, cost_evaluable=False))
         return latency_ms, 'malformed', output_bytes
     if not isinstance(wrapper, dict) or wrapper.get('type') != 'result':
+        call_reservation.finalize(
+            reservation, dict(telemetry, cost_evaluable=False))
         return latency_ms, 'malformed', output_bytes            # not the CLI result envelope
     if wrapper.get('subtype') != 'success' or wrapper.get('is_error'):
         # a valid envelope reporting an ERROR (with rc 0) — it may still carry auth/rate-limit text
+        call_reservation.finalize(reservation, telemetry)
         return latency_ms, (_probe_err_class(json.dumps(wrapper, ensure_ascii=False)) or 'process'), output_bytes
     # extract the structured schema result: `structured_output`, else `result` when it is a JSON
     # string (or already a dict).
@@ -923,15 +1157,19 @@ def _probe_call(config_dir, claude, payload_bytes, model):
         elif isinstance(res, dict):
             payload = res
     if not isinstance(payload, dict) or 'ok' not in payload:
+        call_reservation.finalize(
+            reservation, dict(telemetry, cost_evaluable=False))
         return latency_ms, 'malformed', output_bytes            # missing / invalid structured result
     if payload.get('ok') is not True:
+        call_reservation.finalize(reservation, telemetry)
         return latency_ms, 'content', output_bytes              # {"ok": false} -> content, never success
+    call_reservation.finalize(reservation, telemetry)
     return latency_ms, 'success', output_bytes
 
 
 def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_MODEL,
                latency_ceiling_ms=PROBE_LATENCY_CEILING_MS, events_path=None, run_id=None,
-               account=None):
+               account=None, call_reservation=None):
     """D-K deterministic two-phase probe protocol (ceiling unchanged at 30000 ms). Runs EXACTLY
     one warm-up call (same profile + exact model; its latency is EXCLUDED from the acceptance
     gate — it only stabilizes the cold connection), then IMMEDIATELY EXACTLY one measured >=5 KB
@@ -947,6 +1185,8 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
                          (payload_bytes, PROBE_MIN_PAYLOAD_BYTES))
     if model != EXACT_GEN_MODEL:
         raise SystemExit('probe model %r is not the exact generation model %r' % (model, EXACT_GEN_MODEL))
+    if call_reservation is None:
+        raise ValueError('paid probe requires a call reservation ledger')
 
     def _emit(purpose, latency, cls, obytes):
         if events_path:
@@ -956,24 +1196,31 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
                          policy=PROBE_POLICY, executor_lane=PROBE_LANE,
                          schema_valid=(cls == 'success'))
 
-    warm_ms, warm_cls, warm_bytes = _probe_call(config_dir, claude, payload_bytes, model)
-    _emit('warmup', warm_ms, warm_cls, warm_bytes)     # excluded from the acceptance latency census
-    if warm_cls != 'success':
-        raise SystemExit('warm-up probe %s -> STOP (auth/model/output/rate-limit/timeout)' % warm_cls)
+    # One profile claim covers the WHOLE pair. Releasing between warmup and measured allowed
+    # another paid worker to interleave on the same config directory and invalidated the reading.
+    with ActiveCallClaim(config_dir_fingerprint(config_dir)) as active_claim:
+        warm_ms, warm_cls, warm_bytes = _probe_call(
+            config_dir, claude, payload_bytes, model, call_reservation,
+            'probe:warmup', account, active_claim=active_claim)
+        _emit('warmup', warm_ms, warm_cls, warm_bytes)
+        if warm_cls != 'success':
+            raise SystemExit('warm-up probe %s -> STOP (auth/model/output/rate-limit/timeout)' % warm_cls)
 
-    meas_ms, meas_cls, meas_bytes = _probe_call(config_dir, claude, payload_bytes, model)
-    _emit('measured', meas_ms, meas_cls, meas_bytes)   # the one gated acceptance reading
-    if meas_cls != 'success':
-        raise SystemExit('measured probe %s -> honest NO-GO (no retry, no re-warm)' % meas_cls)
-    if meas_ms >= latency_ceiling_ms:
-        raise SystemExit('measured probe latency %d ms is not below %d ms health ceiling — honest NO-GO '
-                         '(warm-up already done; no re-roll)' % (meas_ms, latency_ceiling_ms))
+        meas_ms, meas_cls, meas_bytes = _probe_call(
+            config_dir, claude, payload_bytes, model, call_reservation,
+            'probe:measured', account, active_claim=active_claim)
+        _emit('measured', meas_ms, meas_cls, meas_bytes)
+        if meas_cls != 'success':
+            raise SystemExit('measured probe %s -> honest NO-GO (no retry, no re-warm)' % meas_cls)
+        if meas_ms >= latency_ceiling_ms:
+            raise SystemExit('measured probe latency %d ms is not below %d ms health ceiling — honest NO-GO '
+                             '(warm-up already done; no re-roll)' % (meas_ms, latency_ceiling_ms))
     return meas_ms
 
 
 def probe_fleet(accounts, claude='claude', payload_bytes=6491, model=EXACT_GEN_MODEL,
                 latency_ceiling_ms=PROBE_LATENCY_CEILING_MS, events_path=None, run_id=None,
-                drop_unhealthy=False):
+                drop_unhealthy=False, call_reservation=None):
     """GAP #5 (four-profile): probe EACH validated account through the D-K two-phase ``live_probe``
     (exactly one warm-up + one measured >=5 KB call per account, with each account's warm-up latency
     EXCLUDED from the census — a 4-profile fleet therefore yields exactly 4 measured latency samples,
@@ -997,7 +1244,8 @@ def probe_fleet(accounts, claude='claude', payload_bytes=6491, model=EXACT_GEN_M
         try:
             latencies[name] = live_probe(acc['config_dir'], claude, payload_bytes=payload_bytes,
                                          model=model, latency_ceiling_ms=latency_ceiling_ms,
-                                         events_path=events_path, run_id=run_id, account=name)
+                                         events_path=events_path, run_id=run_id, account=name,
+                                         call_reservation=call_reservation)
         except SystemExit as exc:
             if not drop_unhealthy:
                 # STOP-on-any-NO-GO: one unhealthy profile fails the whole fleet (honest NO-GO).
@@ -1050,7 +1298,30 @@ def cmd_staged_run(args):
         raise SystemExit('Windows staged-run requires at least one validated account')
     if getattr(args, 'max_accounts', 0):
         accounts = accounts[:args.max_accounts]
-    run_id = args.run_id or ('win100-' + now_iso().replace(':', '').replace('-', ''))
+    preflight_cmd = ['validate-preflight']
+    for lease_id in sorted(lease_ids):
+        preflight_cmd += ['--lease-id', lease_id]
+    preflight = coordinator_command(args, preflight_cmd, check=False)
+    if preflight.returncode:
+        raise SystemExit('staged-run preflight refused before probe: %s'
+                         % (preflight.stderr or preflight.stdout)[-2000:])
+    reservation_path = getattr(args, 'call_reservation', None)
+    if not reservation_path:
+        raise SystemExit('staged-run requires --call-reservation')
+    run_id = args.run_id
+    if getattr(args, 'resume', False):
+        if not os.path.exists(reservation_path):
+            raise SystemExit('staged-run --resume requires the existing call ledger')
+        known = run_ids(reservation_path)
+        if run_id and run_id not in known:
+            raise SystemExit('staged-run --resume run-id is absent from the call ledger')
+        if not run_id and len(known) == 1:
+            run_id = known[0]
+        elif not run_id:
+            raise SystemExit('staged-run --resume requires --run-id for a multi-run ledger')
+    run_id = run_id or ('win100-' + now_iso().replace(':', '').replace('-', ''))
+    args.run_id = run_id
+    call_ledger = required_call_ledger(args, context='staged-run')
     if getattr(args, 'resume', False):
         cmd_recover(argparse.Namespace(
             db=args.db, coordinator=args.coordinator, coord_dir=args.coord_dir,
@@ -1059,7 +1330,9 @@ def cmd_staged_run(args):
     # STOP-on-any-NO-GO; --drop-unhealthy opts into proceeding on the healthy subset, parking the
     # dropped accounts so the dispatch loop below claims only survivors.
     probe_latencies = probe_fleet(accounts, args.claude_bin, events_path=args.events,
-                                  run_id=run_id, drop_unhealthy=getattr(args, 'drop_unhealthy', False))
+                                  run_id=run_id,
+                                  drop_unhealthy=getattr(args, 'drop_unhealthy', False),
+                                  call_reservation=call_ledger)
     probe_receipt = write_probe_receipt(
         args.coord_dir, run_id, lease_ids, probe_latencies)
     if getattr(args, 'drop_unhealthy', False):
@@ -1142,7 +1415,9 @@ def cmd_staged_run(args):
                                             # never to a capped-out or dropped (unprobed) account.
                                             only_accounts=set(probe_latencies),
                                             only_profile=getattr(args, 'only_profile', None),
-                                            only_external_ids=lease_scope))
+                                            only_external_ids=lease_scope,
+                                            call_reservation=reservation_path,
+                                            max_calls=getattr(args, 'max_calls', None)))
         cmd_record_done(argparse.Namespace(db=args.db, coordinator=args.coordinator,
                                            coord_dir=args.coord_dir, cwd=args.cwd,
                                            only_external_ids=lease_scope))
@@ -1248,7 +1523,17 @@ def cmd_staged_run(args):
 
 
 def cmd_presplit_canary(args):
-    manifest = json.load(open(args.manifest, encoding='utf-8'))
+    try:
+        with open(args.manifest, 'rb') as fh:
+            manifest_bytes = fh.read()
+        manifest_hash = hashlib.sha256(manifest_bytes).hexdigest()
+        manifest = json.loads(manifest_bytes.decode('utf-8'))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+        raise SystemExit('presplit canary manifest is unreadable: %s' % exc)
+    try:
+        validate_manifest(manifest, require_v2=True)
+    except ValueError as exc:
+        raise SystemExit('presplit canary preflight: %s' % exc)
     presplit = manifest.get('presplit_keys') or []
     if not presplit:
         raise SystemExit('presplit canary manifest has no presplit_keys')
@@ -1257,26 +1542,60 @@ def cmd_presplit_canary(args):
     db.close()
     if len(accounts) != 1:
         raise SystemExit('presplit canary requires exactly one validated account')
+    try:
+        validate_profile(manifest, accounts[0]['config_dir'], accounts[0]['name'])
+    except ValueError as exc:
+        raise SystemExit('presplit canary preflight: %s' % exc)
     run_id = args.run_id or ('presplit-' + now_iso().replace(':', '').replace('-', ''))
+    args.run_id = run_id
+    call_ledger = required_call_ledger(args, context='presplit-canary')
+    preflight_path = os.path.abspath(args.preflight)
+    validate_preflight_artifact(
+        preflight_path, manifest, args.preflight_sha256)
     latency = live_probe(accounts[0]['config_dir'], args.claude_bin,   # D-K: warmup+measured
-                         events_path=args.events, run_id=run_id, account=accounts[0]['name'])
+                         events_path=args.events, run_id=run_id, account=accounts[0]['name'],
+                         call_reservation=call_ledger)
     env = os.environ.copy()
     env['CLAUDE_CONFIG_DIR'] = accounts[0]['config_dir']
+    env['PWG_CALL_RESERVATION_PATH'] = os.path.abspath(args.call_reservation)
+    env['PWG_CALL_RESERVATION_RUN_ID'] = run_id
+    env['PWG_CALL_RESERVATION_MAX_CALLS'] = (
+        '' if getattr(args, 'max_calls', None) is None else str(args.max_calls))
+    env['PWG_PREFLIGHT_PATH'] = preflight_path
+    env['PWG_PREFLIGHT_SHA256'] = args.preflight_sha256
+    if sha256_path(args.manifest) != manifest_hash:
+        raise SystemExit('presplit canary manifest changed during the health probe')
     cmd = [sys.executable, os.path.join(os.path.dirname(__file__), 'headless_worker.py'),
            os.path.abspath(args.manifest), '--output', os.path.abspath(args.output),
            '--status-out', os.path.abspath(args.status), '--claude-bin', args.claude_bin,
-           '--timeout', str(args.timeout)]
+           '--only-profile', accounts[0]['name'],
+           '--timeout', str(args.timeout), '--preflight', preflight_path,
+           '--preflight-sha256', args.preflight_sha256,
+           '--manifest-sha256', manifest_hash]
     proc = run_tree_kill(cmd, env=env, text=True, encoding='utf-8', capture_output=True,
                          timeout=args.timeout)   # D-J: tree-kill on timeout (presplit canary worker)
     status = json.load(open(args.status, encoding='utf-8')) if os.path.exists(args.status) else {}
     canary_base = {'run_id': run_id, 'account': accounts[0]['name'],
-                   'manifest_hash': status.get('manifest_sha256')}
+                   'manifest_hash': manifest_hash}
     for idx, item in enumerate(status.get('attempts') or []):
         emit_call_events(args.events, item, idx, status.get('manifest_sha256'), canary_base)
     if proc.returncode or status.get('classification') != 'success':
         raise SystemExit('presplit canary NO-GO: %s' %
                          (status.get('classification') or (proc.stderr or proc.stdout)[-500:]))
-    payload = json.load(open(args.output, encoding='utf-8'))
+    if status.get('manifest_sha256') != manifest_hash:
+        raise SystemExit('presplit canary NO-GO: worker manifest hash drift')
+    try:
+        with open(args.output, 'rb') as fh:
+            result_bytes = fh.read()
+        result_hash = hashlib.sha256(result_bytes).hexdigest()
+        payload = json.loads(result_bytes.decode('utf-8'))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+        raise SystemExit('presplit canary NO-GO: result is unreadable: %s' % exc)
+    if status.get('result_sha256') != result_hash:
+        raise SystemExit('presplit canary NO-GO: worker result hash drift')
+    if (payload.get('meta') or {}).get(
+            'execution_manifest_sha256') != manifest_hash:
+        raise SystemExit('presplit canary NO-GO: payload manifest seal is absent/drifted')
     failures = (payload.get('summary') or {}).get('failures') or {}
     if failures or (payload.get('summary') or {}).get('presplit', 0) < 1:
         raise SystemExit('presplit canary NO-GO: residuals or route not exercised')
@@ -1294,14 +1613,14 @@ def main(argv=None):
     default_cwd = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
     ap.add_argument('--db', default='max_orchestrator.sqlite')
     sub = ap.add_subparsers(dest='cmd', required=True)
-    p = sub.add_parser('init'); p.add_argument('--account', action='append', required=True); p.add_argument('--claude-bin', default='claude'); p.add_argument('--skip-profile-check', action='store_true', help=argparse.SUPPRESS); p.set_defaults(func=cmd_init)
+    p = sub.add_parser('init'); p.add_argument('--account', action='append', required=True); p.add_argument('--claude-bin', default='claude'); p.add_argument('--skip-profile-check', action='store_true', help=argparse.SUPPRESS); p.add_argument('--call-reservation'); p.add_argument('--run-id'); p.add_argument('--max-calls', type=int); p.set_defaults(func=cmd_init)
     p = sub.add_parser('enqueue'); p.add_argument('--external-id', required=True); p.add_argument('--argv-json', required=True); p.add_argument('--cwd', required=True); p.add_argument('--output', required=True); p.add_argument('--max-attempts', type=int, default=3); p.set_defaults(func=cmd_enqueue)
     p = sub.add_parser('import-coordinator'); p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True); p.add_argument('--lease-id', action='append'); p.add_argument('--max-attempts', type=int, default=3); p.set_defaults(func=cmd_import_coordinator)
     p = sub.add_parser('import-requeue', help='H1339 A4: import one requeue_prepared lease attempt as a runnable job'); p.add_argument('lease_id'); p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True); p.add_argument('--max-attempts', type=int, default=2); p.set_defaults(func=cmd_import_requeue)
     p = sub.add_parser('reset-failed', help='B18: audited scoped recovery of terminal failed jobs (requires --reason)'); p.add_argument('--lease-id', action='append', required=True); p.add_argument('--reason', required=True); p.add_argument('--events'); p.set_defaults(func=cmd_reset_failed)
     p = sub.add_parser('recover'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_recover)
     p = sub.add_parser('record-done'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_record_done)
-    p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=7200); p.add_argument('--claude-bin', default='claude'); p.add_argument('--only-profile'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_run_once)
+    p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=7200); p.add_argument('--claude-bin', default='claude'); p.add_argument('--only-profile'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.add_argument('--call-reservation'); p.add_argument('--run-id'); p.add_argument('--max-calls', type=int); p.set_defaults(func=cmd_run_once)
     p = sub.add_parser('status'); p.set_defaults(func=cmd_status)
     p = sub.add_parser('staged-run')
     p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True)
@@ -1314,13 +1633,20 @@ def main(argv=None):
     p.add_argument('--drop-unhealthy', action='store_true')        # GAP #5: proceed on healthy subset
     p.add_argument('--report', required=True)
     p.add_argument('--events', required=True); p.add_argument('--census', required=True)
-    p.add_argument('--run-id'); p.set_defaults(func=cmd_staged_run)
+    p.add_argument('--run-id'); p.add_argument('--call-reservation'); p.add_argument('--max-calls', type=int); p.set_defaults(func=cmd_staged_run)
     p = sub.add_parser('presplit-canary')
     p.add_argument('--manifest', required=True); p.add_argument('--output', required=True)
     p.add_argument('--status', required=True); p.add_argument('--events', required=True)
+    p.add_argument('--preflight', required=True)
+    p.add_argument('--preflight-sha256', required=True)
     p.add_argument('--run-id'); p.add_argument('--claude-bin', default='claude')
+    p.add_argument('--call-reservation'); p.add_argument('--max-calls', type=int)
     p.add_argument('--timeout', type=int, default=7200); p.set_defaults(func=cmd_presplit_canary)
-    args = ap.parse_args(argv); args.func(args)
+    args = ap.parse_args(argv)
+    try:
+        args.func(args)
+    except CallLimitReached as exc:
+        raise SystemExit(str(exc))
 
 
 if __name__ == '__main__':

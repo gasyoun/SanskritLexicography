@@ -48,7 +48,10 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from max_account_orchestrator import _probe_call, _probe_prompt, EXACT_GEN_MODEL  # noqa: E402
+from max_account_orchestrator import (_probe_call, _probe_prompt, EXACT_GEN_MODEL,
+                                      write_synthetic_preflight)  # noqa: E402
+from call_reservation import CallLimitReached, CallReservationLedger  # noqa: E402
+from execution_contract import ActiveCallClaim, config_dir_fingerprint  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MEASURED_SIZE = 6491  # padding_bytes of the D-K measured acceptance probe (-> 6828 actual, v1.9.17+)
@@ -85,10 +88,14 @@ def _cli_version(claude):
 
 
 def one_call(config_dir, claude, padding_bytes, *, route, window, account_label,
-             sample_index, warmup, git_sha, cli_version):
+             sample_index, warmup, git_sha, cli_version, call_reservation,
+             active_claim):
     t0 = time.monotonic()
     ts = _iso_utc()
-    latency_ms, cls, output_bytes = _probe_call(config_dir, claude, padding_bytes, EXACT_GEN_MODEL)
+    purpose = 'latency-sweep:%s' % ('warmup' if warmup else 'measured')
+    latency_ms, cls, output_bytes = _probe_call(
+        config_dir, claude, padding_bytes, EXACT_GEN_MODEL,
+        call_reservation, purpose, account_label, active_claim=active_claim)
     actual_bytes = _actual_prompt_bytes(padding_bytes)   # from _probe_prompt -- cannot drift from the probe
     row = {
         'ts_utc': ts,
@@ -116,13 +123,15 @@ def one_call(config_dir, claude, padding_bytes, *, route, window, account_label,
 
 
 def run(mode, config_dir, claude, ladder, samples, warmups, out_path,
-        route, window, account_label, seq_start):
+        route, window, account_label, seq_start, call_reservation,
+        active_claim):
     git_sha = _git_sha()
     cli_version = _cli_version(claude)
     sizes = ladder if mode == 'sweep' else [MEASURED_SIZE]
     rows = []
     kw = dict(route=route, window=window, account_label=account_label,
-              git_sha=git_sha, cli_version=cli_version)
+              git_sha=git_sha, cli_version=cli_version,
+              call_reservation=call_reservation, active_claim=active_claim)
     for pb in sizes:
         for _ in range(max(0, warmups)):
             rows.append(one_call(config_dir, claude, pb, sample_index=None, warmup=True, **kw))
@@ -176,10 +185,23 @@ def main():
     ap.add_argument('--seq-start', type=int, default=0,
                     help='base sample_index for crossover sequence position')
     ap.add_argument('--out', default=None)
+    ap.add_argument('--call-reservation', required=True,
+                    help='durable pwg.call_reservation.v1 ledger path')
+    ap.add_argument('--run-id', required=True, help='durable run key in the call ledger')
+    ap.add_argument('--max-calls', type=int, default=None)
     args = ap.parse_args()
     ladder = [int(x) for x in args.ladder.split(',') if x.strip()]
-    run(args.mode, args.config_dir, args.claude_bin, ladder, args.samples, args.warmups,
-        args.out, args.route, args.window, args.account_label, args.seq_start)
+    write_synthetic_preflight(
+        os.path.abspath(args.call_reservation) + '.preflight.json',
+        'latency-sweep-' + args.run_id, [])
+    ledger = CallReservationLedger(args.call_reservation, args.run_id, args.max_calls)
+    try:
+        with ActiveCallClaim(config_dir_fingerprint(args.config_dir)) as active_claim:
+            run(args.mode, args.config_dir, args.claude_bin, ladder, args.samples, args.warmups,
+                args.out, args.route, args.window, args.account_label, args.seq_start, ledger,
+                active_claim)
+    except CallLimitReached as exc:
+        raise SystemExit(str(exc))
 
 
 if __name__ == '__main__':
