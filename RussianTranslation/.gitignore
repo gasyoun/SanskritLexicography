@@ -196,6 +196,11 @@ review/h1303_*_sheet.html
 # personal voting artifact, local-only (repo is PUBLIC).
 review/h1306_*_sheet.html
 
+# H1682 rule-collapse replacement for h1303_abbrev (csl_pyutil emitter) — same
+# class: personal voting artifact, local-only (repo is PUBLIC). Committed
+# counterpart: review/locks/h1682_abbrev_rules.lock.json (H1404 standard).
+review/h1682_*_sheet.html
+
 # H1404 starter packet (build_g5_review_sheet.py / build_g6_mqm_gold_sheet.py):
 # the G5 sheet embeds unpublished `ru`+`de` from the gitignored store; the G6
 # sheet stays local for consistency. COMMITTED counterpart: the metadata-only
