@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.74.0] - 2026-07-26
+
 ### Fixed — "a bigger corpus" was the wrong lever for H1632 constriction 1 (26-07-2026)
 
 - The H1632 frame-comparison report and SL FINDINGS §465 said the 60.2% of PWG
