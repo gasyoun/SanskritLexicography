@@ -14,6 +14,47 @@ not an error.
 
 ## [Unreleased]
 
+## [1.87.0] — 2026-07-26
+
+### Fixed
+- **[integrity] MW `<k2>` variant fusion welded a non-word compound member**
+  ([#801](https://github.com/gasyoun/SanskritLexicography/issues/801), H1703, Opus 5 1M
+  `claude-opus-5[1m]`). MW lists spelling/accent variants of a headword inside one `<k2>`
+  separated by `; ` (`gaRa—kAri; gaRakAri`);
+  [`mw_compounds.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mw_compounds.py)
+  split on the em-dash first and cleaned second, and `_ACCENT_STRIP` removes both `;` and
+  the space — so the variants fused into a member that is not a word (`gaRa` +
+  **`kArigaRakAri`**). The bogus member also inflated the arity, so
+  `nominal_grammar._irregularities` emitted `compound:3_members` and the Zaliznyak index
+  `+3` for a two-member compound (`citpati` shipped as `m·3a+3`). **41 of 106,603** MW
+  compound records corrected, 22 of them arity-corrected;
+  [`headword_index.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/headword_index.tsv)
+  (36 rows), `paradigm_stats.tsv` and `reverse_paradigm_index.json` regenerated. New
+  `--selftest` (7 fixtures) wired into CI. [PR #817](https://github.com/gasyoun/SanskritLexicography/pull/817).
+
+### Added
+- **H1703 — second, rule-stratified blind arm: every stratum of the compound `differs`
+  queue can now be priced** (Opus 5 1M `claude-opus-5[1m]`). The H1628 arm samples along
+  length × DCS-frequency × member-count, i.e. **across** the H1681 adjudicator's rules: it
+  lands 139 cards in one stratum and 0–16 in each of the other seven, so it could promote
+  3,018 of 4,226 rows and no more, however the human voted. New
+  [`compound_differs_arm2_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/compound_differs_arm2_sample.py)
+  (seed 1703) draws **232 cards**, 35 per unpriced stratum — 35 because
+  `wilson_lower(35, 35) = 0.901` and `wilson_lower(34, 34) = 0.898` — disjoint from arm 1,
+  stamped + locked, and **blind** (no stratum, rule, verdict or reason on any card,
+  asserted by selftest). **All 4,353 rows now sit in a priceable stratum**; the 31-row
+  `granularity_ic_vs_full_decomposition` is censused in full, recorded as
+  `promotion_basis: census` rather than pretending its 0.890 bound cleared. Binding
+  verified end-to-end on both sheets (valid export accepted; tampered hash, missing vote
+  and unknown card id each rejected). Queue re-adjudicated against both repaired
+  extractors — the three defect strata are gone (`pwg_layer_inner_chain` 75 → 0,
+  `pwg_layer_no_headword_paren` 82 → 2, `mw_variant_fusion` 10 → 0) — and it did **not**
+  shrink as H1703 predicted: 118 cards left, 241 entered, 4,123 → **4,246 cards**. Report:
+  [PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md §8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md).
+  Upstream half: [SanskritGrammar#529](https://github.com/gasyoun/SanskritGrammar/pull/529)
+  (closed [#527](https://github.com/gasyoun/SanskritGrammar/issues/527)). Nothing applied
+  to the store; neither sheet voted.
+
 ## [1.86.0] — 2026-07-26
 
 ### Added
