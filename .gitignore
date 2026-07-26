@@ -104,6 +104,14 @@ HeadwordLists/heritage_mirror/
 # anchored to the repo root so the ACTIVE RussianTranslation/review/ stays tracked
 /review/
 
+# G5/G6 live-queue sheets embed unpublished store translations, and their
+# decisions exports are personal voting artifacts — only the metadata lock
+# (RussianTranslation/review/locks/) is committed (H1404 binding standard)
+RussianTranslation/review/g5_*_sheet.html
+RussianTranslation/review/g6_*_sheet.html
+RussianTranslation/review/g5-live-queue-*_decisions.json
+RussianTranslation/review/g6-mqm-*_decisions.json
+
 # semdom.json fetch cache (semdom_varga_crosswalk.py / semdom_ak_annex_table.py) — CC BY-SA input, fetched on demand, never committed
 /data/semdom.json
 /data/wn-links-semdom-words-all.tsv
