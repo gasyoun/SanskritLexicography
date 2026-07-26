@@ -110,9 +110,9 @@ strata under 25 rows pool into `residual-undersized`.
 
 | stratum | rows | arm cards | max Wilson-95 lb if the human agrees with every arm card | promotable |
 |---|---:|---:|---:|---|
-| `same_split_pwg_lemma_form` | 3,018 | 140 | 0.973 | **yes** |
-| `pwg_lexeme_vs_mw_suffixed_tail` | 323 | 15 | 0.796 | no |
-| `mw_cut_leaves_nonword` | 277 | 15 | 0.796 | no |
+| `same_split_pwg_lemma_form` | 3,018 | 138 | 0.973 | **yes** |
+| `pwg_lexeme_vs_mw_suffixed_tail` | 323 | 17 | 0.816 | no |
+| `mw_cut_leaves_nonword` | 277 | 11 | 0.741 | no |
 | `cut_moved_both_readings_lexical` | 253 | 9 | 0.701 | no |
 | `residual-undersized` | 107 | 12 | 0.758 | no |
 | `pwg_layer_no_headword_paren` | 82 | 6 | 0.610 | no |
@@ -127,17 +127,30 @@ which cuts across the rule strata rather than along them. Two consequences, both
 recording rather than papering over:
 
 - Banding the big rule by DCS frequency (the H1628 stratifier) is **strictly harmful
-  here**: it splits the 140 arm cards into 74/25/23/18 and none of the four bands can
-  reach 0.90, so ~1,400 rows would lose any route to promotion. DCS frequency therefore
-  rides as a covariate, not a stratum.
+  here**: it splits the ~140 arm cards into roughly 74/25/23/18 and none of the four
+  bands can reach 0.90, so ~1,400 rows would lose any route to promotion. DCS frequency
+  therefore rides as a covariate, not a stratum.
 - The remaining 1,208 rows stay `needs_human`. Pricing them needs a **second, rule-
   stratified arm of ~35 cards per unpriced rule (≈ 280 cards)** — a follow-on, not this
   handoff, and cheaper than the 4,026 votes the queue originally implied.
 
-## 6. The blind arm itself has two defects (reported, not touched)
+## 6. The blind arm had two defects — ✅ repaired 26-07-2026 by MG's `re-cut` ruling
 
-H1681 is forbidden to modify the 200-card sheet. Both of these block the vote from
-landing, so they are named here and routed on:
+H1681 as executed was forbidden to modify the 200-card sheet, so it reported both defects
+below and routed them to [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md).
+**MG ruled option (a), re-cut**, the same day, so the generator was fixed and the sheet
+re-drawn from the same `seed=1628`:
+
+- `dedupe_by_card_id()` collapses derivation-layer rows that share a `(k1, hom)` card id
+  **before** sampling; the frame is now 4,123 rows, one per card id.
+- `--write` now calls `stamp()` + `write_lock()`, so the sheet carries a content hash and
+  `review/locks/sanskritlexicography-pwg-compound-differs_stratified200.lock.json` is
+  committed. Bound at `sha256:31c106bb13cd2bad…`, 200 distinct ids, gate `G6-compound`.
+- The HTML stays gitignored (it embeds store text); the `generated` string is pinned to
+  `26-07-2026` so whoever regenerates it reproduces the exact bytes the lock binds.
+
+The arm numbers in §5 are the re-cut sheet's. What follows is the diagnosis, kept because
+the second arm (H1703) must not repeat it:
 
 1. **No lock, no content-hash stamp.**
    [`compound_differs_review_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/compound_differs_review_sample.py)
@@ -147,9 +160,15 @@ landing, so they are named here and routed on:
    [`validate_decisions.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/validate_decisions.py)
    rejects any export whose `sheet_id` does not resolve to a committed lock — so the 200
    votes, once cast, **cannot be validated or applied**.
-2. **A duplicate card.** The frame TSV has 200 rows but **199 distinct `(k1, hom)` keys**:
-   `duHsTita` appears twice (the derivation layer carries two rows for that key), so two
-   cards share one id. All arm counts in §5 are over the 199 distinct ids.
+2. **A duplicate card**, and behind it a queue-wide row-vs-card mismatch. The old frame
+   had 200 rows but 199 distinct `(k1, hom)` keys (`duHsTita` twice). Deduping the whole
+   queue showed the scale: **the 4,226 `differs` rows are 4,123 distinct card ids** — 98
+   keys carry 2–3 rows, because `headword_index.tsv` holds a row per part-of-speech
+   reading (`agraRI` as `adj.` and as `m.`; 2,383 of its keys are multi-row overall)
+   while a card id is only `(k1, hom)`. The adjudication is unaffected in substance: all
+   103 duplicate rows agree with their twin on both members and verdict (0 disagreements),
+   because a compound's analysis does not depend on the entry's `lex`. The verdict TSV
+   still carries one row per queue row; **the count to quote for cards is 4,123.**
 
 ## 7. Non-goals and limitations
 
@@ -171,6 +190,7 @@ landing, so they are named here and routed on:
 python src/pilot/adjudicate_compound_differs.py --selftest   # parsers + 8 rule fixtures
 python src/pilot/adjudicate_compound_differs.py --report     # counts, writes nothing
 python src/pilot/adjudicate_compound_differs.py --write      # verdicts TSV + plan JSON
+python src/pilot/compound_differs_review_sample.py --write   # re-cut + stamp + lock the arm
 ```
 
 Needs the `csl-orig` and `SanskritGrammar` siblings (read-only); override with
