@@ -1,6 +1,6 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 25-07-2026_
+_Created: 09-07-2026 · Last updated: 26-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
@@ -32,6 +32,61 @@ finding that PW mostly *restates* rather than corrects at this sample. N14 parti
 demo covers PWG/PW/SCH/PWKVN/NWS badges for the pilot set; scaling to the full store,
 per-sense visual grouping polish, and any editorial adjudication of `differs` cases are
 explicitly out of scope (non-goals).
+
+## 26-07-2026 - H1629 DE edition-graph export (OntoLex + TEI Lex-0) + three integrity findings
+
+Executor: Opus 5 (`claude-opus-5[1m]`). New generator
+[`src/export_de_edition.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_de_edition.py);
+profile doc
+[`DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md).
+
+**Golden-fixture export** (22 DE-only rows → `release/fixture/de_edition/`, `--generated-at 2026-07-26`):
+
+| entries | senses exported | quarantined | sanitized tags | government | form_notes | citation_edges | gloss_spans | edition_rel |
+|---|---|---|---|---|---|---|---|---|
+| 7 | 20 | 2 | 1 | 15 | 2 | 42 | 3 | 17 |
+
+Edition-layer coverage in the fixture: `pwg` 3 · `pw` 6 · `sch` 3 · `pwkvn` 5 · `nws` 3.
+Artifacts: `pwg_de_edition.ttl` 42 KB · `pwg_de_edition.tei.xml` 23 KB · manifest 1.4 KB.
+
+**Finding 1 — Russian tokens inside the German `de` field.** 11 of 11,603 store rows
+(0.09%). Verified against csl-orig: `huti` reads `{%Opfer%} in {#sarva˚#} **und**
+{#havirhuti#}` upstream but `… **и** …` in the store (and the store row also dropped the
+`(von 1. {#hu#})` etymology parenthesis).
+
+| symptom | example row |
+|---|---|
+| `и` for `und` | `huti`: `{%Opfer%} in {#sarva˚#} и {#havirhuti#}` |
+| `для` for `für` | `parihara`: `<ab>v. l.</ab> для {#parihAra#}` |
+| `в` for `in` | `nI` desid-3: `<ls>VĀRĀHA-P.</ls> в <ls>Verz. d. Oxf. H. 59,a,3.</ls>` |
+| `С` for `Mit` | `viS` 175: `<div n="p">— С {#anUpa#}` |
+| `корригенда` | `DA` pw: `Mit <div n="p"> — корригенда` |
+| **total rows with Cyrillic in `de`** | **11 / 11,603 (0.09%)** |
+
+**Finding 2 — Russian prose in DE-side structural fields.** `sense_tag`: 110/11,603 rows
+(0.95%), e.g. `c) с dat. лица и instr. предмета`. The `h` field likewise carries Russian
+disambiguation prose (`PW 3 (с sam, о супружеском намерении)`). The export quarantines
+`de`-contaminated rows, reduces a contaminated `sense_tag` to its ASCII skeleton, and drops
+`h` from the allowlist entirely.
+
+**Finding 3 — G1 `gloss_lang` classifier false positives.** Census over every `{%…%}` span
+in the store's German text:
+
+| lang | rule_id | spans | German-looking | FP rate |
+|---|---|---|---|---|
+| en | `english_content` | 153 | 117 | **76.5%** |
+| la | `botany_binomial` | 68 | 5 | 7.4% |
+| ambig | `homograph_ambig` | 8 | 0 | 0.0% |
+| **total non-DE** | | **229** | **122** | **53.3%** |
+
+Base: 15,901 spans scanned; 229 (1.44%) classified non-DE. Examples of misfires — all
+unmistakably German: `bis an's Ziel bringen`, `an sich nehmen, empfangen, erlangen,
+erhalten` (→ `en`); `Gelegenheit gefunden habend`, `Willens sein` (→ `la` botany binomial).
+Because `pwg_mask.classify_pct_detail` marks `la`/`en` spans `translate: False`, these
+German glosses are also masked out of the translate path upstream. "German-looking" is a
+heuristic proxy (umlaut / German function word / `-en` verb ending), so the rate is ±;
+the direction is not in doubt. **Not fixed here** — changing the classifier changes masking
+behaviour pipeline-wide and needs its own measured A/B.
 
 ## 26-07-2026 - H858 c1 live gate: HEALTH_NOGO (rate_limit) - profile sweep now 3/3 NO-GO
 

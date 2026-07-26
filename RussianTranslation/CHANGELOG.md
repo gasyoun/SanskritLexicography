@@ -45,6 +45,43 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   that still pass placeholder preflight paths and v1 outputs, tracked in
   [pwg_ru/CODEX_HARDENING_REBASE_STATUS_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/CODEX_HARDENING_REBASE_STATUS_2026-07-26.md).
 
+### Added — DE edition-graph export profile: OntoLex-Lemon + TEI Lex-0 (H1629)
+
+- New
+  [src/export_de_edition.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_de_edition.py):
+  serializes the **German** edition graph — one entry per (key1, homonym) over the
+  PWG/PW/SCH/PWKVN/NWS editions — carrying all five H1624 layers (`gloss_lang`
+  spans G1, `government` G2, `form_notes`, `citation_edges` G3, `edition_rel` G4)
+  as OntoLex-Lemon Turtle **and** TEI Lex-0 XML, plus a manifest. Federates with
+  the existing RU / DCS-frequency / grammar graphs on the shared `lemma/<key1>` IRI.
+- Rights fence (N9): input allowlist → Cyrillic quarantine → post-serialization
+  guard on the emitted bytes. The store's `h` field is deliberately excluded (it
+  carries Russian prose); a Russian `sense_tag` is reduced to its ASCII skeleton
+  and logged in the manifest rather than exported.
+- Golden fixture
+  [release/fixture/de_edition/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/release/fixture/de_edition)
+  from a 22-row DE-only fixture that exercises every layer and every edition
+  layer; `--selftest` fails if any layer's count drops to zero, if a TEI pointer
+  dangles, or if the output stops being byte-deterministic.
+- Mapping + provenance + limitations:
+  [DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md)
+  (+ metadoc). LANG_PARITY entry `de_edition_export_profile_h1629` (SHARED).
+- **Not** done: TEI Lex-0 ODD validation (structure-checked only), RDF-parser /
+  SHACL round-trip, full-store run, base-IRI `@DECIDE`.
+
+### Documented — data-integrity findings surfaced by the DE export (H1629)
+
+- Measured and reported, **not** silently worked around: 11 store rows carry
+  Russian tokens inside the German `de` field; ~110 rows carry Russian
+  `sense_tag` prose; and the G1 `gloss_lang` classifier mislabels ~122 of 229
+  non-DE spans as Latin/English (77% false-positive rate on the
+  `english_content` rule), which also masks those German glosses out of the
+  translate path upstream. See
+  [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  and the tracking integrity issues
+  ([#749](https://github.com/gasyoun/SanskritLexicography/issues/749),
+  [#750](https://github.com/gasyoun/SanskritLexicography/issues/750)).
+
 ### Documented — German-side editorial principles datasheet (H1634)
 
 - New
