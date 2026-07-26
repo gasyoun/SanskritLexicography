@@ -1692,7 +1692,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
   },
   {
     "id": "citation_edges_h1624_g3",
-    "mechanism": "DE-side normalized <ls> citation edges via extract_citation_edges: {raw_ls,n_attr,siglum,work_id,renou,page,bib_ok,resolver_status map|bib|orphan|empty}; stamped at promote and microstructure; annotate_citation_edges backfills; raw <ls> never stripped from de.",
+    "mechanism": "DE-side normalized <ls> citation edges via extract_citation_edges: {raw_ls,n_attr,siglum,work_id,renou,page,bib_ok,resolver_status map|bib|orphan|empty,scan_href}; stamped at promote and microstructure; annotate_citation_edges backfills; raw <ls> never stripped from de.",
     "files": [
       "src/citation_edges.py",
       "src/annotate_citation_edges.py",
@@ -1705,10 +1705,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H1624 G3 (25-07-2026, Grok 4.5). Pure DE citation layer. map=ls_source_map (Renou); bib=pwgbib only; orphan=neither. Scan hosting optional (build_citation_index). Pinned by citation_edges --selftest, promote_final_cards --selftest, annotate_citation_edges --selftest.",
+    "note": "H1624 G3 (25-07-2026, Grok 4.5). Pure DE citation layer. map=ls_source_map (Renou); bib=pwgbib only; orphan=neither. Scan hosting optional (build_citation_index). Pinned by citation_edges --selftest, promote_final_cards --selftest, annotate_citation_edges --selftest. H1630 (26-07-2026, Sonnet 5 `claude-sonnet-5`) added the additive scan_href field (ls_resolver.generate_href result) -- same as ls_resolver itself (see ls_resolver_rv_av_anchor_h321 below), it keys only on the citation abbreviation + numbers, never on RU/EN prose, so SHARED still holds.",
     "tracking": "H1624",
     "verified_sha256": {
-      "src/citation_edges.py": "88e12985ab21c8768a222b93515aff22f986c312d82381e3e34aa98034d20785",
+      "src/citation_edges.py": "e9ebe19853b9541a7e283fd6ff089eea3de81ff00ca640c410cbc51183cb04c0",
       "src/annotate_citation_edges.py": "ec925f73e1af793c22a602be009b412af67e9989c99209ceed14224bc2cf8022",
       "src/promote_final_cards.py": "6b43da8428d8d9c3ec2164510c979ce41bf8a7fb8a897bc4dada81ea9622e8d3",
       "src/microstructure.py": "3da158ac30613de5f226f749eb41cd5852d8e6d8a3e521a2472054aac3fe6cd9",
