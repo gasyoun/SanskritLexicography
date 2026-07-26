@@ -521,8 +521,15 @@ def cmd_selftest(_args):
 
     gsv = list(csv.DictReader(open(OUT_GSV, encoding='utf-8'), delimiter='\t'))
     check(len(gsv) > 9000, 'gorresio verse map has %d rows (>9000)' % len(gsv))
-    ok_cls = {'matched', 'fuzzy', 'moved', 'gorresio_only', 'no_southern_corpus'}
+    # 'audit-rejected' = row switched off by a voted review sheet (the 26-07-2026
+    # audit killed 4 half-verse-shift pairs); the citation_tm loader only reads
+    # matched/fuzzy, so these are inert by construction — keep them for the trail.
+    ok_cls = {'matched', 'fuzzy', 'moved', 'gorresio_only', 'no_southern_corpus',
+              'audit-rejected'}
     check({r['class'] for r in gsv} <= ok_cls, 'verse-map classes are typed')
+    rej = [r for r in gsv if r['class'] == 'audit-rejected']
+    check(len(rej) == 4 and all(r['g_kanda'] in ('1', '2') for r in rej),
+          '4 audit-rejected rows from the 26-07-2026 sheet stay switched off')
     anchor = [r for r in gsv if (r['g_kanda'], r['g_sarga'], r['g_verse'])
               == ('1', '22', '1')]
     check(anchor and anchor[0]['s_sarga'] == '19' and anchor[0]['class'] == 'matched',

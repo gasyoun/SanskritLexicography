@@ -10,6 +10,15 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed — Gorresio map audit round 1: 28/32 approve; 4 half-verse-shift rows switched off (26-07-2026)
+
+- The 32-card audit sheet was voted (agent vote by Fable 5 `claude-fable-5` on MG's
+  direct delegation) — 28 approve incl. all 5 scan-verified gold anchors; the 4 rejects
+  are a single OCR-segmentation sub-class (merged half-verses pairing with the tail
+  verse) now marked `audit-rejected` in
+  [ramayana_gorresio_southern_verse_map.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_gorresio_southern_verse_map.tsv)
+  and inert for reuse (selftest pins the 4 rows). Detection heuristic queued into H1689.
+
 ### Added — H1651 store wrapper-defect sweep D1-D4, live gate follow-up (26-07-2026)
 
 - Main pass ([#789](https://github.com/gasyoun/SanskritLexicography/pull/789)): D1
