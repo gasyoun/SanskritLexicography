@@ -91,7 +91,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1304: the citation translation-memory is RU-only by construction. The reuse assets are Russian translations of record (Elizarenkova RV, Leonov Ramayana, Ocean of Stories, ...); there is NO parallel English citation-TM corpus, so there is nothing to port to the EN path. If an EN citation-TM corpus is ever assembled, this becomes a GAP to port; until then RU-only is intended, not an oversight.",
     "tracking": "",
     "verified_sha256": {
-      "src/citation_tm.py": "1916c6cc4c71cc560b1696babdc96c9182a27e246ec9343d4322e9d426cdc754"
+      "src/citation_tm.py": "c10fe562abf7b6e6bf4b2233bb12901aecbf99381cd64e29ff2ea83e2f158d37"
     }
   },
   {
