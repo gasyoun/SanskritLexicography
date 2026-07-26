@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.72.0] — 2026-07-26
+
 ### Added — H1491: Leonchenko Sinonimy digitized to a synonym evidence lane (26-07-2026)
 
 - [`research/sinonimy/sinonimy.jsonl`](research/sinonimy/README.md) (47,273 rows) digitizes

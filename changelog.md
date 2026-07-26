@@ -14,6 +14,17 @@ not an error.
 
 ## [Unreleased]
 
+## [1.72.0] — 2026-07-26
+
+### Added
+- **H1633 human gold-cut design + A51 methods packet (26-07-2026).** First sampling
+  design for a human-measured DE→RU store precision figure
+  ([RussianTranslation/gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md),
+  n=400 recommended, 12 strata, tiered κ plan with no invented metrics, parked for
+  sign-off) + the A51 methods-section draft with a 10-row claims register
+  ([RussianTranslation/pwg_ru/A51_METHODS_DRAFT_DE_LAYERS_RU_PIPELINE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/A51_METHODS_DRAFT_DE_LAYERS_RU_PIPELINE.md)).
+- **H1491 Leonchenko Sinonimy evidence lane** (see RussianTranslation/CHANGELOG.md).
+
 ## [1.71.0] — 2026-07-26
 
 ### Added
