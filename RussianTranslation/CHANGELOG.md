@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.77.0] - 2026-07-26
+
 ### Added — H1656 follow-on: Gorresio e-text recovered; Rāmāyaṇa citation reuse ON (26-07-2026)
 
 - **MG ruled: reuse always ON by default** — the validation gate is an audit, not a
