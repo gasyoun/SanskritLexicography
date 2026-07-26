@@ -1766,6 +1766,85 @@ def test_h1651_live_gate_cyrillic_and_guillemet():
         fail('gloss_wrapper_became_guillemet must stay report-only (never requeue)')
 
 
+def test_h1702_boundary_wrap_gate():
+    """H1702: boundary-anchored auto-wrap for the H1651 D4 ru_n==0 sub-pattern (de carries
+    a {%...%} gloss, ru carries the translated content but never wraps it). The fixer must
+    place {%...%} in ru only when de's exact affixes around the gloss (numbering markers,
+    trailing punctuation) are found verbatim in ru at the same anchor-delimited position --
+    never guess a boundary it cannot verify byte-for-byte."""
+    from d4_boundary_wrap import is_ru_n0_candidate, try_boundary_wrap
+
+    # POSITIVE: a clean single-gloss row with a numbering prefix and trailing separator,
+    # matching the H1651 report's row-4553 worked example.
+    de = '<div n="2">— e〉 {%zum Vorschein gekommen%}.'
+    ru = '<div n="2">— e〉 появившийся.'
+    if not is_ru_n0_candidate(de, ru):
+        fail('H1702: de-has-gloss/ru-has-none must be detected as a candidate')
+    ok, result = try_boundary_wrap(de, ru)
+    want = '<div n="2">— e〉 {%появившийся%}.'
+    if not ok or result != want:
+        fail('H1702: boundary wrap did not reproduce the expected wrap: %r' % (result,))
+    if is_ru_n0_candidate(de, result):
+        fail('H1702: a freshly-wrapped row must no longer read as a ru_n==0 candidate')
+
+    # CONTROL: a row that already carries a {%...%} gloss in ru is not a candidate at all.
+    if is_ru_n0_candidate('{%glauben%}', '{%полагать%}'):
+        fail('H1702: a row already wrapped in ru must NOT be a ru_n==0 candidate')
+
+    # BOUNDARY-SAFETY (H1651 row-811 corruption-risk shape): the gloss covers only the
+    # clause before a colon, followed by a {#...#} citation. Affixes match exactly here,
+    # so the fixer must place the wrap at the colon, NOT swallow the citation into the gloss.
+    de2 = '{%Etwas einräumen, zugeben%}: {#na samADatte#} als <ab>Erkl.</ab> von'
+    ru2 = 'допустить, признать: {#na samADatte#} как <ab>Erkl.</ab> от'
+    ok2, result2 = try_boundary_wrap(de2, ru2)
+    if not ok2 or '{%' not in result2 or result2.index('%}') > result2.index('{#'):
+        fail('H1702: the gloss wrap must close before the {#...#} citation, not swallow it: %r' % (result2,))
+
+    # NEGATIVE: ru dropped the leading <div>/numbering marker present in de -- the anchor
+    # set deliberately excludes <div>, so this must fail the exact-prefix check rather than
+    # guess where the marker would have been.
+    de3 = '<div n="1">— 2〉 {%an sich nehmen%}.'
+    ru3 = 'принимать на себя.'
+    ok3, reason3 = try_boundary_wrap(de3, ru3)
+    if ok3:
+        fail('H1702: a dropped-<div>-prefix row must be refused, not wrapped by guesswork: %r' % (reason3,))
+
+    # NEGATIVE: two gloss spans inside the same anchor-delimited gap -- refuse rather than
+    # guess an interior boundary.
+    de4 = '{%first%} und {%second%}: {#x#}'
+    ru4 = 'первый и второй: {#x#}'
+    ok4, reason4 = try_boundary_wrap(de4, ru4)
+    if ok4:
+        fail('H1702: multiple gloss spans in one gap must be refused, not partially guessed')
+    if reason4 != 'multi-gloss-in-gap':
+        fail('H1702: expected multi-gloss-in-gap, got %r' % (reason4,))
+
+    # NEGATIVE: a row with an unrelated, still-open H1651 D3 guillemet elsewhere in ru
+    # must be refused wholesale, even though this particular gloss slot's affixes match --
+    # wrapping only this slot would hide the still-open D3 defect from find_d3's own
+    # `not ru_gloss` heuristic without actually resolving it.
+    de5 = '{%first%}: {#x#} «second»'
+    ru5 = 'первый: {#x#} «second»'
+    ok5, reason5 = try_boundary_wrap(de5, ru5)
+    if ok5:
+        fail('H1702: a row with a residual D3 guillemet must be refused, not partially fixed')
+    if reason5 != 'residual-d3-guillemet-present':
+        fail('H1702: expected residual-d3-guillemet-present, got %r' % (reason5,))
+
+    # REGRESSION: an anchor (<ab>...</ab>) nested INSIDE a {%...%} gloss span (a real PWG
+    # pattern, e.g. "gekocht <ab>u. s. w.</ab>") splits that gloss across the anchor
+    # boundary under naive anchor-tokenization -- it must not silently fall through while
+    # another, cleanly-anchored gloss slot in the same row gets wrapped (a partial fix
+    # that breaks the all-or-nothing guarantee; found live in the store, 4 rows).
+    de6 = '{%clean%}: {#x#} {%gekocht <ab>u. s. w.</ab>%}'
+    ru6 = 'чистый: {#x#} сваренный <ab>u. s. w.</ab>'
+    ok6, reason6 = try_boundary_wrap(de6, ru6)
+    if ok6:
+        fail('H1702: a gloss span split by a nested anchor must be refused, not partially wrapped: %r' % (reason6,))
+    if reason6 != 'gloss-span-crosses-anchor':
+        fail('H1702: expected gloss-span-crosses-anchor, got %r' % (reason6,))
+
+
 def test_semantic_review_prioritizer():
     high = {
         'key': 'high',
@@ -8215,6 +8294,7 @@ def main():
         test_h1305_ru_style_mechanical,
         test_h1651_wrapper_defect_gate,
         test_h1651_live_gate_cyrillic_and_guillemet,
+        test_h1702_boundary_wrap_gate,
         test_semantic_review_prioritizer,
         test_noisy_source_type_not_requeue,
         test_report_only_risks_never_requeue,
