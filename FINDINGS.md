@@ -3978,3 +3978,47 @@ every page independently, not via a constant offset you haven't proven. And when
 mining images out of PDFs, always take the largest image on the page, never `[0]`.
 
 _26-07-2026 · [H1689](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1689-Opus_SanskritLexicography_gorresio-vols-2-4-uk-ocr-etext_26.07.26.md) · [`build_ramayana_concordance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py) · Fable 5 `claude-fable-5`_
+### §474. PWG's etymology parenthesis is NESTED — a "first `+`-chain" regex reads the inner sub-analysis, not the compound's members
+
+🔴 **`({#akftta#} [<hom>3.</hom> {#a#} + {#kftta#} …] + {#ruc#})` is `akftta + ruc`, not `a + kftta`.**
+Böhtlingk & Roth decompose a *member* inside square brackets, and they also write a *different
+word's* parenthesis in the same entry head (`{#aDikazAzwika#}¦ <lex>adj.</lex> von {#aDikazazwi#}
+({#aDika#} + {#zazwi#})` — those members compose `aDikazazwi`, not the headword). A regex that
+takes the first `{#…#} + {#…#}` chain in the entry head therefore captures the wrong analysis,
+and a "first member is a lead-compatible prefix of the headword" filter does not catch it,
+because the privative `a` *is* such a prefix.
+
+`Evidence:` a bracket-aware re-parse of every entry behind
+[`SanskritGrammar/data/pwg_compound_split/`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pwg_compound_split/README.md),
+joined by `L_id`: **344 of 16,738 rows (2.06%) ship an inner or a neighbouring word's chain**,
+and a further 368 (2.20%) resolve to no verifiable top-level chain — 4.25% of a dataset whose
+README offers it as high-precision splitter gold to kosha and SanskritSpellCheck. Issue
+[SanskritGrammar#527](https://github.com/gasyoun/SanskritGrammar/issues/527).
+
+`So:` anchor on the headword's own `{#…#}¦`, take the **balanced** paren, blank every balanced
+`[...]` before splitting on `+`, and keep only the FIRST `{#…#}` of each `+`-part — what follows
+it is PWG's annotation of that member (`<ab>acc.</ab> von {#agni#}`, `<lex>f.</lex> von
+{#agamya#}`, `= {#loman#}`), not a second member. Reference implementation: `pwg_toplevel()` in
+[`adjudicate_compound_differs.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/adjudicate_compound_differs.py).
+
+_26-07-2026 · [H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §475. MW's `<k2>` carries a variant LIST after `;` and two different boundary marks — stripping the punctuation welds variants into a member that is not a word
+
+🟠 **`gaRa—kAri; gaRakAri` is one compound written twice, not a three-member compound.**
+MW `<k2>` uses `—` (em-dash) for a member boundary and `-` (hyphen) for a juncture where MW
+deliberately does *not* put one (`a-kAma—karSana` = the privative bound to member 1). It also
+lists spelling/accent variants inside the same field, separated by `; `. Splitting on the
+em-dash first and stripping punctuation second fuses the variants: `mw_compounds._clean_member`
+removes `;` **and the space**, so `gaRa—kAri; gaRakAri` yields the member `kArigaRakAri`.
+
+`Evidence:` 41 of 106,603 MW compound records (0.04%) — small, but each produces a member string
+that is not a Sanskrit word and an arity that is wrong, which then propagates into
+`compound:N_members` and the Zaliznyak `+N` index (`citpati` shipped as 3 members). Issue
+[SL#801](https://github.com/gasyoun/SanskritLexicography/issues/801).
+
+`So:` split `<k2>` on `;` first and take the first variant, then on the em-dash. Keep the hyphen
+rather than stripping it — it is MW stating where a boundary is *not*, which is usable evidence
+when reconciling MW's segmentation against another dictionary's.
+
+_26-07-2026 · [H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
