@@ -5,6 +5,12 @@
 # H1457 nn_api.py embed/QE disk cache — regenerable, content-addressed, no deliverable content.
 src/.nn_api_cache/
 
+# H1632 pilot input: PWG per-sense <ls> loci for the frozen 500-headword frame.
+# Rebuildable by research/export_frame_sense_loci.py from csl-orig — the same rule
+# H1456 applied to the full pwg_sense_loci.tsv (generator committed, bulk table not).
+# ~2.9 MB of PWG gloss text: public domain, but not a deliverable.
+research/pwg_sense_loci.frame500.tsv
+
 # Generated per-root pwg_ru harnesses (derived from gen_opt_harness2.py et al.; inlined inputs)
 src/pilot/run_fidelity_judge.js
 src/pilot/run_pilot_wf.opt.js
