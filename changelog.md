@@ -14,6 +14,20 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **The compound-`differs` blind arm is re-cut, deduped and BOUND (H1681 follow-up,
+  MG ruling `re-cut`, 26-07-2026, Opus 5 1M `claude-opus-5[1m]`).**
+  [`compound_differs_review_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/compound_differs_review_sample.py)
+  never called `stamp()`/`write_lock()`, so `validate_decisions.py` would have rejected the
+  export **after** the human had spent all 200 votes; it also sampled a frame whose rows
+  could collapse onto one card id. Both fixed: `dedupe_by_card_id()` runs before sampling
+  and `--write` now stamps + locks. Sheet bound at `sha256:31c106bb13cd2bad…`, 200 distinct
+  ids, gate `G6-compound`, lock committed. The duplicate card turned out to be the visible
+  end of a queue-wide mismatch — `headword_index.tsv` carries a row per part-of-speech
+  reading while a card id is only `(k1, hom)`, so **the 4,226 `differs` rows are 4,123
+  distinct cards**; the adjudication is unaffected (all 103 duplicate rows agree with their
+  twin on members and verdict). Promotion ceiling unchanged at 3,018/4,226 (71.4 %).
+
 ## [1.81.0] — 2026-07-26
 
 ### Added
