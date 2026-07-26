@@ -14,6 +14,16 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **First intrinsic BLI quality gate for RussianTranslation's `corpus_lexicon.jsonl` (H1521, 26-07-2026).**
+  [`RussianTranslation/src/eval/bli_eval.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/bli_eval.py)
+  streams the 1.09M-pair Sa→Ru lexicon and scores P@1/MRR/coverage against a frozen
+  400-lemma gold set built from the independent Kochergina dictionary + VisualDCS's
+  independent frequency ranking (the corpus's own 3-layer glossary was rejected as a
+  gold source — it is derived FROM `corpus_lexicon.jsonl`, so grading against it would
+  be circular). **Result: P@1 = 0.402, MRR = 0.539, coverage = 0.995 (398/400)** — the
+  lexicon's first quantitative quality number. Fixture selftest wired into CI.
+
 ## [1.70.0] — 2026-07-26
 
 ### Added

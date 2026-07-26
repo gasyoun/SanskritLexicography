@@ -1,0 +1,10 @@
+# Hand-checked gold fixture for bli_eval.py selftest. Pairs with
+# ../../fixtures/corpus_lexicon.fixture.jsonl. Deliberately covers: a rank-1 hit
+# (karman), a second rank-1 hit (aDikAra), a covered-but-wrong-rank miss (yoga,
+# whose gold token does not overlap the fixture's rendering), and an absent lemma
+# (agni, not present in the fixture corpus) to exercise the coverage denominator.
+slp1	freq	ru_gold_tokens
+karman	2	действие
+aDikAra	1	право
+yoga	1	единство
+agni	5	огонь

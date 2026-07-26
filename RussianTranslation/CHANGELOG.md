@@ -23,6 +23,21 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   `derivation.human_reviewed` beyond the sampled ids. Does not close the ~4.2k queue —
   ~4026 rows stay `needs_human` pending a future sampling round.
 
+### Added — first intrinsic BLI quality gate for corpus_lexicon.jsonl (H1521, 26-07-2026)
+[`src/eval/bli_eval.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/bli_eval.py)
+streams `corpus_lexicon.jsonl` (never loads it whole) and scores P@1/MRR/coverage
+against a frozen 400-lemma gold set,
+[`src/eval/gold_sa_ru_koch_400.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/gold_sa_ru_koch_400.tsv),
+built by [`build_gold_koch.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/build_gold_koch.py)
+from Kochergina (`src/koch.jsonl`, independently authored, never derived from the
+corpus) ranked by VisualDCS's independent `dcs_lemma_summary.json` frequency band —
+the obvious default gold source, the corpus's own 3-layer glossary, was rejected as
+circular (it is a group-by aggregation OF `corpus_lexicon.jsonl`, so grading against
+it would score the file against itself). **Result: P@1 = 0.402, MRR = 0.539,
+coverage = 0.995 (398/400)** — first quantitative quality number for the
+1.09M-pair lexicon. Fixture selftest (`python src/eval/bli_eval.py selftest`) wired
+into CI's RussianTranslation gates.
+
 ## [1.69.0] - 2026-07-26
 
 > Version numbering follows the repository's **git tag** sequence (…v1.67.0,

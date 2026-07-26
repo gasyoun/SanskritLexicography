@@ -112,6 +112,7 @@ jobs:
             RussianTranslation/src/pilot/run_observability.py \
             RussianTranslation/src/pilot/run_observability_selftest.py \
             RussianTranslation/src/pilot/build_edition_diff_site.py
+          git ls-files ':(glob)RussianTranslation/src/eval/*.py' | xargs python -m py_compile
       - name: Sa->Ru gloss pipeline unit tests (H1349 waves 1-4)
         working-directory: RussianTranslation
         run: |
@@ -122,6 +123,9 @@ jobs:
           # indic_transliteration) are imported lazily inside main()/to_slp1().
           pip install pytest
           pytest tests/test_saru_gloss_pipeline.py tests/test_saru_gloss_wave2.py tests/test_saru_gloss_wave3.py tests/test_saru_gloss_tm.py -q
+      - name: BLI eval harness fixture selftest (H1521)
+        working-directory: RussianTranslation
+        run: python src/eval/bli_eval.py selftest
       - name: Validate research-layer sidecars (capability cards 5, 23)
         working-directory: RussianTranslation
         run: |
