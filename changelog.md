@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.83.0] — 2026-07-26
+
 ### Fixed
 - **The compound-`differs` blind arm is re-cut, deduped and BOUND (H1681 follow-up,
   MG ruling `re-cut`, 26-07-2026, Opus 5 1M `claude-opus-5[1m]`).**
