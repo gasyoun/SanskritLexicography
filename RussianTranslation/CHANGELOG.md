@@ -10,6 +10,20 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1651 store wrapper-defect sweep D1-D4, live gate follow-up (26-07-2026)
+
+- Main pass ([#789](https://github.com/gasyoun/SanskritLexicography/pull/789)): D1
+  repaired (34 rows/58 spans, closes
+  [#752](https://github.com/gasyoun/SanskritLexicography/issues/752)); D3 ruled and
+  bulk-applied (343/463 rows, 46 residual); D4 triaged (2,860 rows, no auto-fix — see
+  [pwg_ru/H1651_WRAPPER_DEFECT_SWEEP_REPORT_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1651_WRAPPER_DEFECT_SWEEP_REPORT_2026-07-26.md)).
+- Addendum (this follow-up): the main pass's CI gate only tested the standalone scan/fix
+  tools, not the live per-card generation-time audit. New
+  `cyrillic_in_sanskrit_wrapper` (HIGH_CONFIDENCE) and `gloss_wrapper_became_guillemet`
+  (report-only) risks in
+  [prompt_rule_audit.markup_sigla_risks](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/prompt_rule_audit.py)
+  close that gap.
+
 ## [1.77.0] - 2026-07-26
 
 ### Added — H1656 follow-on: Gorresio e-text recovered; Rāmāyaṇa citation reuse ON (26-07-2026)
