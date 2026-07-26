@@ -10,6 +10,19 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.76.0] — 2026-07-26
+
+### Changed — H1664 voting-queue triage: every pending sheet ruled A/HYBRID/HUMAN-ONLY (26-07-2026)
+
+Fable 5 (`claude-fable-5`). The 2,962-judgment pending queue (42 sheets org-wide) now
+carries a verdict per sheet with the enabling dataset named —
+[audit §11](https://github.com/gasyoun/Uprava/blob/main/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md);
+after the routed adjudications run, the human owes ~1,329 (−55 %). pwg_ru lanes: compound
+`differs` → В2 full-queue adjudication (H1681, the 200-sheet becomes the blind verification
+arm), h1303_abbrev → rule-collapse (H1682, 273 → ~30), article-comparison → pre-vote
+source-check (H1683); G6/G5v3/h1306/Renou-pilot stay HUMAN-ONLY with the reason recorded.
+Results table: [RESULTS_LOG.md 26-07-2026](RESULTS_LOG.md).
+
 ## [1.75.0] — 2026-07-26
 
 ### Changed — H1633 rulings R1–R5 recorded; G6b gate born; A51 deferred to 2028 (26-07-2026)
