@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.75.0] — 2026-07-26
+
 ### Added
 - **H1657 — ACC×NCC P2 agent adjudication of all 49,019 Tier C/D rows (26-07-2026).**
   Per MG's ruling В2, the adjudicator moves from a human to an agent while the
