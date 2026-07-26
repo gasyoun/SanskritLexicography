@@ -10,6 +10,40 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1703 second blind arm: every stratum of the compound `differs` queue can now be priced (26-07-2026)
+
+- The H1628 arm samples along length × DCS-frequency × member-count, which cuts across
+  the H1681 adjudicator's rules: it lands 139 cards in `same_split_pwg_lemma_form` and
+  0–16 in each of the other seven strata, so it could promote 3,018 of 4,226 rows and
+  **no more, however the human voted**. New
+  [`src/pilot/compound_differs_arm2_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/compound_differs_arm2_sample.py)
+  (seed 1703) draws a second arm stratified on the rules themselves — **232 cards**,
+  35 per unpriced stratum, disjoint from arm 1, stamped + locked. 35 because
+  `wilson_lower(35, 35) = 0.901` and `wilson_lower(34, 34) = 0.898`: it is the smallest
+  arm that can clear the 0.90 gate at all.
+- **Result: all 4,353 rows now sit in a priceable stratum** (was 3,018 promotable,
+  1,208 unpriceable). Seven strata clear 0.90 on arm 2 alone; the 31-row
+  `granularity_ic_vs_full_decomposition` is **censused in full** across the two arms, so
+  it is promotable by direct vote with no interval to extrapolate — the plan records
+  `promotion_basis: census` rather than pretending its 0.890 bound cleared.
+- Arm 2 is blind by construction: the card shows the two member lists and the source
+  PWG/MW text, never the stratum, rule, agent verdict or reason (asserted by selftest) —
+  otherwise an arm stratified by the agent's own classification would be scoring the
+  human against it.
+- Binding verified end-to-end on both sheets rather than assumed: a complete synthetic
+  export validates (200 / 232 items), and a tampered hash, a missing vote and an unknown
+  card id are each rejected. **9 of arm 1's 200 cards left the queue** when the upstream
+  repairs landed; the plan reports them (`cards_left_the_queue`) and arm 1 was not re-cut
+  a second time — its lock is live and its 139 `same_split` cards still price that
+  stratum at 0.973.
+- Queue re-adjudicated against the repaired extractors: the three defect strata are gone
+  (`pwg_layer_inner_chain` 75 → **0**, `pwg_layer_no_headword_paren` 82 → **2**,
+  `mw_variant_fusion` 10 → **0**). The queue did **not** shrink as H1703 predicted — 118
+  cards left, 241 entered (mostly new PWG coverage), 4,123 → **4,246 cards**. Report:
+  [PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md §8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md).
+  Nothing applied to the store; no `human_reviewed` flag set. Opus 5 1M
+  (`claude-opus-5[1m]`).
+
 ### Fixed — [integrity] MW `<k2>` variant fusion welded a non-word member ([#801](https://github.com/gasyoun/SanskritLexicography/issues/801), H1703, 26-07-2026)
 
 - MW lists spelling/accent variants of a headword inside one `<k2>`, separated by `; `
