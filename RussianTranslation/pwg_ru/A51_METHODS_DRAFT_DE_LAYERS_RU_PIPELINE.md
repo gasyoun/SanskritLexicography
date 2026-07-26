@@ -7,7 +7,8 @@ Drafted by Fable 5 (`claude-fable-5`) under
 for paper **A51**
 ([PAPER_LLM_LEXICOGRAPHY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PAPER_LLM_LEXICOGRAPHY.md);
 registered in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)).
-**Status: DRAFT, parked for human sign-off.** Every number is cited from a
+**Status: BANKED — A51 deferred until 2028 (MG ruling 26-07-2026); frame
+rulings R1–R5 recorded in the companion §8.** Every number is cited from a
 committed artifact (linked at first use); cells that await human votes or
 unexecuted measurements are written as *pending*, never estimated in place.
 The companion sample design is
@@ -94,15 +95,17 @@ every figure with its channel:
    ([gold/GRADE_GOLD_MEMO.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/GRADE_GOLD_MEMO.md));
    its near-zero κ against a surface-shape proxy is reported as evidence the
    *proxy* is inadequate — the standing lesson against relabeling channels.
-3. **Human measurements** — (a) the four-rubric protocol bake-off (MQM ·
-   Likert · DA · pairwise) on a shared 30-item held-out sample, *pending MG
-   votes*
+3. **Human measurements** — (a) the four-rubric protocol comparison: per the
+   P1 ruling A2 (MG, 26-07-2026) the three unvoted h178 arms are retired; the
+   comparison is computed from the 30 voted `h178_da` cards plus agent passes
+   under the other rubrics, every figure labeled agent-vs-human or agent-only
    ([EVALUATION_PROTOCOL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/EVALUATION_PROTOCOL.md));
-   (b) the store gold cut — stratified n≈400 from the machine-clean pool,
-   typed six-label annotation, tiered agreement plan (inter-rater κ only if a
-   second reviewer is staffed in 2026; otherwise intra-rater test–retest,
-   explicitly labeled) — *designed, awaiting sign-off*
-   ([gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md)).
+   (b) the store gold cut — stratified n=400 from the machine-clean pool,
+   typed six-label annotation, **intra-rater test–retest as the reliability
+   figure** (ruling R3, 26-07-2026: no second reviewer through 2027; no
+   inter-annotator cell exists in the design) — *design ratified R1–R5,
+   execution gated*
+   ([gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md) §8).
    COMETKiwi remains a triangulation aid, unvalidated on 19th-century
    scholarly German → Russian dictionary glosses, and is blocked on a
    one-time license step.
@@ -129,9 +132,9 @@ zero.
 
 | # | Claim the paper wants | Blocking gate / artifact | Register |
 |---|---|---|---|
-| C1 | human-measured store precision + CI | gold cut execution (sign-off §8 of the frame) → labels → report | N3 |
-| C2 | inter- (or intra-)rater agreement | second-reviewer staffing decision; else test–retest pass | N3/N13 |
-| C3 | chosen human-eval protocol + bake-off table | 4 × `decisions.json` from the h178 sheets (MG votes) | — |
+| C1 | human-measured store precision + CI | [H1665](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1665-Fable_SanskritLexicography_pwg-store-gold-cut-execute-r1-r5_26.07.26.md) execution (gated: g6/g5 votes + H1664 triage) → labels → report | N3 |
+| C2 | intra-rater agreement (inter-rater does not exist — ruling R3, no second reviewer through 2027) | MG test–retest pass ≥14 days after first labels | N3/N13 |
+| C3 | protocol comparison table | 30 voted `h178_da` cards + agent passes under retired rubrics (P1 ruling A2); labeled agent-vs-human, never human×human | — |
 | C4 | COMETKiwi correlation column | one-time HF license/token + `comet` run | — |
 | C5 | abbreviation canon in rendered examples | [H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md) vote | N1 |
 | C6 | doublet / *v. l.* / *im Comp.* handling as policy | [H1306](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1306-Fable_RussianTranslation_pwg-ru-style-research-doublets-apresyan_19.07.26.md) decisions.json | N2 |
