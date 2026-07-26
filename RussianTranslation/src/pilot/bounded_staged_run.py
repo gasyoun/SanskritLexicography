@@ -79,6 +79,15 @@ from bounded_supervisor import BoundedSupervisor, strict_cost_fn   # noqa: E402
 
 SCHEMA = 'pwg.bounded_staged_run.v1'
 
+# H1437 Phase 3: the live-acceptance gate a cohort width > 1 is refused AGAINST. The three
+# prerequisites are implemented offline (promotion_receipt.py, cohort_engine.py) but none is
+# proven on a live serial window yet, and Codex has not signed the barrier off — until then
+# the production route stays serial and cohort execution exists for fake/fixture runs only.
+COHORT_LIVE_GATE = (
+    'H1437 live-acceptance gate: attempt/result/run binding, promotion-receipt '
+    'reconciliation and the campaign reservation ledger must be proven on a LIVE serial '
+    'window and signed off by Codex review before any cohort width > 1 may execute')
+
 # The exact-version contract coordinator.promote_ready enforces (rejects '', 'sonnet',
 # 'claude-sonnet'); the staged loop hardcodes this same value. Never a bare tier alias.
 DEFAULT_GEN_MODEL_VERSION = 'claude-sonnet-5'
@@ -617,8 +626,35 @@ def make_run_window(ctx):
 # Dry-run planning view — the exact scoped work + ceilings + stop policy, NO calls.
 # ---------------------------------------------------------------------------
 
+def run_cohort_offline(windows, width, run_window, checkpoint_path, audit=None,
+                       promote_wave=None, rebuild_tm=None, admitted=None, parked=None,
+                       max_calls=None, probe=None, coord_dir=None, resume=False):
+    """H1437 Phase 3: OFFLINE/FIXTURE-ONLY cohort execution — run bounded windows through
+    the landed cohort_engine.CohortEngine at the requested wave width and return its
+    summary. Width 1 IS the serial semantics (same decisions, same accepted order, same
+    store bytes as the serial route); the selftest proves widths 1/2/3 byte-identical.
+
+    This adapter is NEVER reached from the --execute path (run() refuses cohort width > 1
+    against COHORT_LIVE_GATE before any live wiring). Every window must carry a 'profile'
+    binding — the engine's one-in-flight-job-per-profile invariant is meaningless without
+    one, so a profile-less window is refused loudly rather than silently never dispatched
+    (CohortEngine treats a None profile as not-in-fleet: a quiet no-op)."""
+    import cohort_engine as ce
+    windows = [dict(w) for w in (windows or [])]
+    missing = [w.get('id') or ('#%d' % i) for i, w in enumerate(windows)
+               if not w.get('profile')]
+    if missing:
+        raise SystemExit('bounded_staged_run: run_cohort_offline requires a profile binding '
+                         'on every window; missing on: %s' % ', '.join(missing))
+    engine = ce.CohortEngine(
+        windows, run_window, checkpoint_path, audit=audit, promote_wave=promote_wave,
+        rebuild_tm=rebuild_tm, width=width, admitted=admitted, parked=parked,
+        max_calls=max_calls, probe=probe, coord_dir=coord_dir, resume=resume)
+    return engine.run()
+
+
 def plan_view(plan, coord_state, ceilings, checkpoint_path, requested_lease_ids=None,
-              accounts=None, ledger=None):
+              accounts=None, ledger=None, cohort_width=1):
     """Pure planning view (H963 objective 8): what a live run WOULD do — scoped work,
     ceilings, account allocation, checkpoint path, cost-basis evaluability and the ordered
     stop policy — computed WITHOUT any generation call. `accounts` is the validated-account
@@ -670,6 +706,13 @@ def plan_view(plan, coord_state, ceilings, checkpoint_path, requested_lease_ids=
         'checkpoint_path': checkpoint_path,
         'stop_policy': stop_policy,
         'live_requires': "explicit --execute AND a healthy fleet probe (STOP-on-any-NO-GO)",
+        'cohort': {
+            'requested_width': cohort_width,
+            'mode': ('serial (production default, width 1)' if cohort_width <= 1
+                     else 'OFFLINE-EXPERIMENTAL (fake/fixture execution only; '
+                          '--execute refuses this width)'),
+            'live_policy': COHORT_LIVE_GATE,
+        },
     }
 
 
@@ -708,6 +751,17 @@ def build_supervisor(windows, checkpoint_path, ceilings, run_window, audit, resu
 
 
 def run(args):
+    # H1437 Phase 3: refuse a LIVE cohort before touching the plan, the db, the coordinator
+    # or the fleet. getattr keeps pre-P3 programmatic callers (Namespace without the attr)
+    # on the serial route. This is the ONLY live-path change: width 1 (the default) leaves
+    # every stop policy, probe policy, model pin and promotion semantic byte-for-byte as-is.
+    cohort_width = getattr(args, 'cohort_width', 1) or 1
+    if args.execute and cohort_width > 1:
+        raise SystemExit(
+            'bounded_staged_run: --execute refuses --cohort-width %d — %s. The production '
+            'route stays serial (width 1); cohort width > 1 runs OFFLINE ONLY '
+            '(fake/fixture workers via run_cohort_offline / the selftest).'
+            % (cohort_width, COHORT_LIVE_GATE))
     plan = json.load(open(args.plan, encoding='utf-8'))
     coord_state_path = os.path.join(os.path.abspath(args.coord_dir), 'state.json')
     coord_state = {}
@@ -723,7 +777,8 @@ def run(args):
     ledger = el.build_ledger(el.read_rows(el.FROZEN_LOG)) if os.path.exists(el.FROZEN_LOG) else \
         {'aggregate': {}}
     view = plan_view(plan, coord_state, ceilings, args.checkpoint,
-                     requested_lease_ids=args.lease_id, accounts=accounts, ledger=ledger)
+                     requested_lease_ids=args.lease_id, accounts=accounts, ledger=ledger,
+                     cohort_width=cohort_width)
 
     if not args.execute:
         # DEFAULT: dry-run planning view. No probe, no dispatch, no promotion, no store write.
@@ -819,6 +874,11 @@ def build_parser():
     ap.add_argument('--execute', action='store_true',
                     help='OPT-IN: run the live drain. Default (absent) is a dry-run planning '
                          'view that makes ZERO generation calls.')
+    ap.add_argument('--cohort-width', type=int, default=1,
+                    help='EXPERIMENTAL / OFFLINE-ONLY (H1437 Phase 3): cohort wave width for '
+                         'fake/fixture execution through run_cohort_offline. --execute REFUSES '
+                         'any value > 1 until the live-acceptance gate passes; default 1 = the '
+                         'existing serial route, byte-for-byte unchanged.')
     ap.add_argument('--resume', action='store_true',
                     help='resume from --checkpoint (no completed lease re-run/re-promoted)')
     ap.add_argument('--stop-before-promote', action='store_true',
