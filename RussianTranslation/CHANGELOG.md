@@ -10,6 +10,23 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1682: h1303_abbrev review-sheet rule-collapse (26-07-2026)
+
+- New review sheet `review/h1682_abbrev_rules_sheet.html` (sheet_id
+  `h1682_abbrev_rules`, H1404-stamped + locked) replaces the 273-card
+  `h1303_abbrev` (never voted) with 33 cards: 12 rule cards (one per
+  `build_h1303_abbrev_sheet.py`'s own `O`-overlay section header) + 17
+  individually-flagged ambiguous tokens + 3 `ls`-border + 1 meta-card. No
+  token reclassified; every proposed RU/precedent is unchanged from H1303
+  Session 1. New modules:
+  [`h1682_abbrev_collapse.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/h1682_abbrev_collapse.py),
+  [`build_h1682_abbrev_classification_tsv.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_h1682_abbrev_classification_tsv.py),
+  [`build_h1682_abbrev_rules_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_h1682_abbrev_rules_sheet.py).
+  Full report:
+  [H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md).
+  Old sheet marked superseded-unvoted in `REVIEW_SHEETS_INDEX.md`, never
+  deleted.
+
 ## [1.79.0] - 2026-07-26
 
 ### Changed — Gorresio map audit round 1: 28/32 approve; 4 half-verse-shift rows switched off (26-07-2026)
