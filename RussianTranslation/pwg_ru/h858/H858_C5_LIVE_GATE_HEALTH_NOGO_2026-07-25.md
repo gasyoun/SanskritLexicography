@@ -47,6 +47,12 @@ Neither cause is a code or pipeline defect, and they do not share a root: c4 and
 latency headroom but no quota; c5 has quota but no speed. Swapping profiles therefore does
 **not** unblock the window — it trades one NO-GO for a different one.
 
+**c2 is NOT a candidate — it is a Pro account, not Max** (MG, 26-07-2026). Its
+`h963_c2_gate0_probe_events.jsonl` rows from 24-07 look tempting (warm-up 22 306 ms /
+measured 14 850 ms, both `success`, both under the ceiling — a PASS-shaped pair), but the
+production lane requires a Max profile, so that reading must not be read as "c2 is the
+lane". Recorded here so the next session does not spend a gate attempt on it.
+
 **The c1 reading also says the wait is not "until tomorrow".** It was taken at 02:37Z on a
 FRESH UTC day and still returned `rate_limit`, so whatever cap is binding does not reset at
 the UTC date boundary — consistent with the per-account rolling windows / weekly caps the
