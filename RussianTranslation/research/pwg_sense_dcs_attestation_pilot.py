@@ -41,6 +41,7 @@ import hashlib
 import json
 import math
 import os
+import random
 import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -115,6 +116,33 @@ def load_frame(path):
             'n_loci_senses': int(r['n_loci_senses'] or 0),
             'n_ls': int(r['n_ls'] or 0),
         }
+    return frame
+
+
+def frame_from_universe(pwg_senses, mode, n=None, seed=None):
+    """Build a frame directly from the PWG universe (every headword in pwg.txt).
+
+    `mode='all'`    — every headword group.
+    `mode='random'` — a uniform sample of `n` groups, drawn with an explicit seed so
+                      the frame is reproducible. This is the UNBIASED counterpart to
+                      the H1455 frame, which was selected DCS-attested and therefore
+                      cannot answer "what share of PWG is attested at all?".
+
+    `n_leaf_senses` is filled from the parsed senses themselves (there is no frozen
+    frame file to read it from), so the frame-agreement gate does not apply here.
+    """
+    keys = sorted(pwg_senses)
+    if mode == 'random':
+        if n is None or n > len(keys):
+            n = len(keys)
+        keys = sorted(random.Random(seed).sample(keys, n))
+    frame = {}
+    for k in keys:
+        senses = pwg_senses[k]
+        frame[k] = {'slp1': k[0], 'hom': k[1],
+                    'n_leaf_senses': len(senses),
+                    'n_loci_senses': sum(1 for s in senses if s['n_ls'] > 0),
+                    'n_ls': sum(s['n_ls'] for s in senses)}
     return frame
 
 
@@ -202,23 +230,33 @@ def load_sense_freq(path, wanted, layer=GOLD_LAYER):
 
 
 def load_concordance(path, frame_keys):
-    """H1455 PWG-sense ↔ DCS links, bucketed by tier, restricted to the frame."""
+    """H1455 PWG-sense ↔ DCS links, bucketed by tier, restricted to the frame.
+
+    Also returns `scope` — every (slp1, hom) the concordance covers AT ALL, across
+    any tier. This is the load-bearing distinction once frames other than H1455's
+    are analysed: the aligner only ever ran over those 500 headwords, so for a
+    headword outside `scope` the grounded count is **unknown**, not zero. Reporting
+    it as zero would manufacture a 0% sense-grounding rate for the whole dictionary
+    out of the mere absence of an aligner run.
+    """
     links = collections.defaultdict(lambda: collections.defaultdict(set))
     tier_rows = collections.Counter()
+    scope = set()
     for r in read_tsv(path):
         key = (r['slp1'], r.get('hom', ''))
+        scope.add(key)
         if key not in frame_keys:
             continue
         method = (r.get('method') or '').strip()
         tier_rows[method] += 1
         links[key][method].add(r['sense_id'])
-    return links, tier_rows
+    return links, tier_rows, scope
 
 
 # --------------------------------------------------------------------------- #
 # 2. the join                                                                 #
 # --------------------------------------------------------------------------- #
-def build_rows(frame, pwg_senses, lemma_freq, sense_freq, links):
+def build_rows(frame, pwg_senses, lemma_freq, sense_freq, links, scope):
     """One row per (slp1, hom) pilot group, with its residual class."""
     rows = []
     for key, meta in sorted(frame.items()):
@@ -240,10 +278,15 @@ def build_rows(frame, pwg_senses, lemma_freq, sense_freq, links):
         for t in WEAK_TIERS:
             weak |= by_tier.get(t, set())
 
+        # Is grounding even KNOWABLE for this headword? The H1455 aligner ran over
+        # its own 500-headword frame only; outside that, absence of a link is
+        # absence of a run.
+        known = key in scope
+
         # Residual class — mutually exclusive. Grounding is tested FIRST because a
         # locus match does not require the DCS token to carry a m_wordsem tag: 4
-        # groups in this frame are locus-grounded while having no wn sense at all,
-        # and classing those as "no wordsem tag" would both understate R4 and
+        # groups in the H1455 frame are locus-grounded while having no wn sense at
+        # all, and classing those as "no wordsem tag" would both understate R4 and
         # contradict the funnel's grounded count.
         if grounded:
             cls = 'R4_grounded_alignment'
@@ -251,6 +294,8 @@ def build_rows(frame, pwg_senses, lemma_freq, sense_freq, links):
             cls = 'R1_lemma_absent_from_dcs'
         elif n_dcs_senses == 0:
             cls = 'R2_no_wordsem_tag'
+        elif not known:
+            cls = 'R0_grounding_not_computed'
         else:
             cls = 'R3_tagged_but_unaligned'
 
@@ -266,6 +311,7 @@ def build_rows(frame, pwg_senses, lemma_freq, sense_freq, links):
                                   if f_lemma else ''),
             'n_pwg_senses_grounded': len(grounded),
             'n_pwg_senses_gloss_overlap_only': len(weak - grounded),
+            'grounding_computed': 1 if known else 0,
             'residual_class': cls,
         })
     return rows
@@ -311,9 +357,17 @@ def summarize(rows, tier_rows):
     # PWG-sense denominators
     pwg_senses_total = sum(r['n_pwg_senses'] for r in rows)
     pwg_senses_with_ls = sum(r['n_pwg_senses_with_ls'] for r in rows)
-    pwg_senses_grounded = sum(r['n_pwg_senses_grounded'] for r in rows)
     # DCS-sense denominator (only over lemmas in the frame)
     dcs_senses_total = sum(r['n_dcs_wn_senses'] for r in rows)
+
+    # ---- grounding: computed ONLY over the aligner-covered subset -------------
+    # Every grounding rate below is denominated in the KNOWN subset, never in the
+    # whole frame. On a frame the aligner never ran over, the correct statement is
+    # "not computed", not "0%".
+    known_rows = [r for r in rows if r['grounding_computed']]
+    pwg_senses_grounded = sum(r['n_pwg_senses_grounded'] for r in known_rows)
+    pwg_senses_total_known = sum(r['n_pwg_senses'] for r in known_rows)
+    dcs_senses_total_known = sum(r['n_dcs_wn_senses'] for r in known_rows)
 
     # attributed mass: the DCS token mass sitting under a lemma where at least one
     # PWG sense is grounded — an UPPER bound on attributable mass, because the link
@@ -346,12 +400,17 @@ def summarize(rows, tier_rows):
             mass_under_grounded / mass_lemma) if mass_lemma else 0.0,
         'pwg_senses_total': pwg_senses_total,
         'pwg_senses_with_ls': pwg_senses_with_ls,
-        'pwg_senses_grounded': pwg_senses_grounded,
-        'pwg_sense_join_rate': (pwg_senses_grounded / pwg_senses_total)
-                               if pwg_senses_total else 0.0,
         'dcs_wn_senses_total': dcs_senses_total,
-        'dcs_sense_join_rate': (pwg_senses_grounded / dcs_senses_total)
-                               if dcs_senses_total else 0.0,
+        # grounding block — denominated in the aligner-covered subset only
+        'n_groups_grounding_computed': len(known_rows),
+        'n_groups_grounding_unknown': len(rows) - len(known_rows),
+        'pwg_senses_grounded': pwg_senses_grounded,
+        'pwg_senses_total_known': pwg_senses_total_known,
+        'dcs_wn_senses_total_known': dcs_senses_total_known,
+        'pwg_sense_join_rate': (pwg_senses_grounded / pwg_senses_total_known)
+                               if pwg_senses_total_known else None,
+        'dcs_sense_join_rate': (pwg_senses_grounded / dcs_senses_total_known)
+                               if dcs_senses_total_known else None,
         'median_pwg_senses_tagged_lemmas': med([p[0] for p in pairs]),
         'median_dcs_senses_tagged_lemmas': med([p[1] for p in pairs]),
         'spearman_pwg_vs_dcs_sense_count': rho,
@@ -364,6 +423,9 @@ def summarize(rows, tier_rows):
 # 3. report                                                                   #
 # --------------------------------------------------------------------------- #
 CLASS_GLOSS = {
+    'R0_grounding_not_computed': 'Outside the H1455 aligner\'s 500-headword run, so '
+                                 'whether any sense is locus-grounded is UNKNOWN — not '
+                                 'zero. Needs an aligner run, not a re-slice.',
     'R1_lemma_absent_from_dcs': 'PWG headword has no DCS lemma at all — no corpus '
                                 'attestation exists to assign, at any granularity.',
     'R2_no_wordsem_tag': 'Attested in DCS, but not one of its tokens carries a '
@@ -391,25 +453,39 @@ def write_report(summary, rows, md_path, pins, sample, extra):
              'attributed to a **specific PWG sense**, and how much stays resolvable '
              'only at the **lemma** level?')
     L.append('')
-    L.append('**Answer at pilot scale: sense-level attribution is a rounding error.** '
-             'Of the %s DCS tokens under the %d-headword pilot frame, %.1f%% carry a '
-             'DCS sense tag at all, and only **%d of %d PWG leaf senses (%.2f%%)** are '
-             'grounded to a DCS attestation by a shared locus. Lemma-level attestation '
-             'is nearly free (%d/%d groups); sense-level is not, and no amount of '
-             'joining the existing tables changes that — the missing ingredient is '
-             'locus overlap, not compute.'
-             % ('{:,}'.format(s['mass_dcs_lemma_tokens']), s['n_pilot_groups'],
-                100 * s['sensetagged_mass_share'], s['pwg_senses_grounded'],
-                s['pwg_senses_total'], 100 * s['pwg_sense_join_rate'],
-                s['n_lemma_attested'], s['n_pilot_groups']))
+    L.append('**Frame: %s.** %s' % (extra['frame_label'], extra['frame_note']))
+    L.append('')
+    if s['pwg_sense_join_rate'] is not None:
+        L.append('**Answer: sense-level attribution is a rounding error.** '
+                 'Of the %s DCS tokens under this %s-group frame, %.1f%% carry a DCS '
+                 'sense tag at all, and only **%d of %d PWG leaf senses (%.2f%%)** are '
+                 'grounded to a DCS attestation by a shared locus. Lemma-level '
+                 'attestation reaches %d/%d groups (%.1f%%); sense-level does not, and '
+                 'no amount of joining the existing tables changes that — the missing '
+                 'ingredient is locus overlap, not compute.'
+                 % ('{:,}'.format(s['mass_dcs_lemma_tokens']),
+                    '{:,}'.format(s['n_pilot_groups']),
+                    100 * s['sensetagged_mass_share'], s['pwg_senses_grounded'],
+                    s['pwg_senses_total_known'], 100 * s['pwg_sense_join_rate'],
+                    s['n_lemma_attested'], s['n_pilot_groups'],
+                    100 * s['n_lemma_attested'] / s['n_pilot_groups']))
+    else:
+        L.append('**Answer (lemma level, unbiased).** Of %s PWG headword groups, '
+                 '**%d (%.1f%%)** are attested in DCS at lemma level, carrying %s '
+                 'tokens, of which **%.1f%%** are `m_wordsem`-sense-tagged. '
+                 '**Sense-level grounding is NOT computed on this frame** — the H1455 '
+                 'aligner only ever ran over its own 500 headwords, so a grounded '
+                 'count here would be the absence of a run, not a measurement. See '
+                 '*Grounding* below.'
+                 % ('{:,}'.format(s['n_pilot_groups']), s['n_lemma_attested'],
+                    100 * s['n_lemma_attested'] / s['n_pilot_groups'],
+                    '{:,}'.format(s['mass_dcs_lemma_tokens']),
+                    100 * s['sensetagged_mass_share']))
     L.append('')
 
     L.append('## Frame and pins')
     L.append('')
-    L.append('The frame is the **frozen H1455/H1456 500-headword pilot** — reused '
-             'verbatim so this join is comparable with the sense-concordance build, '
-             'not a second parallel frame. Every input is a committed derived table; '
-             'no number below is recomputed from the 921 MB DCS sqlite in this pass.')
+    L.append(extra['frame_note_long'])
     L.append('')
     L.append('| Input | Role | SHA-256 (first 16) |')
     L.append('|---|---|---|')
@@ -429,18 +505,17 @@ def write_report(summary, rows, md_path, pins, sample, extra):
              'NFD→strip-Mn→NFC normalisation is applied anywhere in this script.')
     L.append('')
 
-    L.append('## ⚠️ Frame selection bias — read before the funnel')
-    L.append('')
-    L.append('Every one of the %d frame rows carries `dcs_attested=1`: **the H1455 '
-             'pilot frame was selected to be DCS-attested.** The "100%% attested at '
-             'lemma level" line below is therefore *true by construction and is not a '
-             'finding* — on a random PWG sample it would be far lower. This matters in '
-             'the honest direction: the frame is biased **towards** joinability, so '
-             'every sense-level rate reported here is an **upper bound** on what a '
-             'random PWG sample would yield. The collapse from lemma level to sense '
-             'level is thus, if anything, understated.'
-             % s['n_pilot_groups'])
-    L.append('')
+    if extra['frame_mode'] == 'kosha':
+        L.append('## ⚠️ Frame selection bias — read before the funnel')
+        L.append('')
+        L.append('Every one of the %d frame rows carries `dcs_attested=1`: **the H1455 '
+                 'pilot frame was selected to be DCS-attested.** The "100%% attested at '
+                 'lemma level" line below is therefore *true by construction and is not '
+                 'a finding*. The unbiased counterpart now exists — see the random and '
+                 'full-PWG frames — and it is far lower. This frame is biased '
+                 '**towards** joinability, so every sense-level rate reported here is '
+                 'an **upper bound**.' % s['n_pilot_groups'])
+        L.append('')
     L.append('## The funnel (both denominators)')
     L.append('')
     L.append('| Step | n | share of frame |')
@@ -451,29 +526,59 @@ def write_report(summary, rows, md_path, pins, sample, extra):
              % (s['n_lemma_attested'], 100 * s['n_lemma_attested'] / n))
     L.append('| …with ≥1 DCS `m_wordsem`-tagged sense | %d | %.1f%% |'
              % (s['n_wordsem_tagged'], 100 * s['n_wordsem_tagged'] / n))
-    L.append('| …with ≥1 PWG sense grounded to a DCS attestation | %d | %.1f%% |'
-             % (s['n_groups_grounded'], 100 * s['n_groups_grounded'] / n))
+    if s['n_groups_grounding_computed']:
+        L.append('| …with ≥1 PWG sense grounded to a DCS attestation | %d | %.1f%% |'
+                 % (s['n_groups_grounded'], 100 * s['n_groups_grounded'] / n))
     L.append('')
-    L.append('_The last row is **not** a subset of the one above it: grounding is a '
-             'locus match, which does not require the matched DCS token to carry a '
-             '`m_wordsem` sense tag. %d grounded groups have no `wn` sense at all._'
-             % extra['grounded_without_wordsem'])
-    L.append('')
-    L.append('Sense-side, the two denominators the skill requires — never only the '
-             'flattering one:')
-    L.append('')
-    L.append('| Ratio | Value |')
-    L.append('|---|---:|')
-    L.append('| grounded PWG senses / **all PWG leaf senses** | %d / %d = **%.2f%%** |'
-             % (s['pwg_senses_grounded'], s['pwg_senses_total'],
-                100 * s['pwg_sense_join_rate']))
-    L.append('| grounded PWG senses / **all DCS `wn` senses in frame** | %d / %d = **%.2f%%** |'
-             % (s['pwg_senses_grounded'], s['dcs_wn_senses_total'],
-                100 * s['dcs_sense_join_rate']))
     L.append('| PWG leaf senses carrying ≥1 `<ls>` | %d / %d = %.1f%% |'
              % (s['pwg_senses_with_ls'], s['pwg_senses_total'],
                 100 * s['pwg_senses_with_ls'] / s['pwg_senses_total']
                 if s['pwg_senses_total'] else 0))
+    L.append('')
+
+    L.append('## Grounding')
+    L.append('')
+    if not s['n_groups_grounding_computed']:
+        L.append('**Not computed on this frame — and deliberately not reported as '
+                 'zero.** The only PWG-sense↔DCS aligner that exists (H1455) was run '
+                 'over its own 500-headword frame; %s of this frame\'s %s groups lie '
+                 'outside that run. For them the grounded count is *unknown*, not '
+                 'zero: publishing 0%% here would manufacture a dictionary-wide '
+                 'sense-grounding rate out of the absence of a job, which is precisely '
+                 'the class of false number this work exists to avoid. Those groups '
+                 'are classed `R0_grounding_not_computed`.'
+                 % ('{:,}'.format(s['n_groups_grounding_unknown']),
+                    '{:,}'.format(n)))
+        L.append('')
+        L.append('To obtain it, the aligner must be run over this frame — a separate '
+                 'build, not a re-slice of existing tables. The H1455 frame\'s measured '
+                 'rate (0.67% of leaf senses) is the best available estimate and is '
+                 'itself an **upper bound**, since that frame was DCS-attested by '
+                 'selection.')
+    else:
+        if s['n_groups_grounding_unknown']:
+            L.append('Computed over the **%s of %s** groups the H1455 aligner covers; '
+                     'the remaining %s are `R0_grounding_not_computed` (unknown, not '
+                     'zero). Every rate below is denominated in the covered subset.'
+                     % ('{:,}'.format(s['n_groups_grounding_computed']),
+                        '{:,}'.format(n),
+                        '{:,}'.format(s['n_groups_grounding_unknown'])))
+            L.append('')
+        L.append('_Grounding is **not** a subset of sense-tagging: a locus match does '
+                 'not require the matched DCS token to carry a `m_wordsem` tag. %d '
+                 'grounded groups have no `wn` sense at all._'
+                 % extra['grounded_without_wordsem'])
+        L.append('')
+        L.append('Both denominators — never only the flattering one:')
+        L.append('')
+        L.append('| Ratio | Value |')
+        L.append('|---|---:|')
+        L.append('| grounded PWG senses / **PWG leaf senses (covered subset)** | %d / %d = **%.2f%%** |'
+                 % (s['pwg_senses_grounded'], s['pwg_senses_total_known'],
+                    100 * s['pwg_sense_join_rate']))
+        L.append('| grounded PWG senses / **DCS `wn` senses (covered subset)** | %d / %d = **%.2f%%** |'
+                 % (s['pwg_senses_grounded'], s['dcs_wn_senses_total_known'],
+                    100 * s['dcs_sense_join_rate']))
     L.append('')
 
     L.append('## A ceiling inside the dictionary, before DCS is consulted')
@@ -540,12 +645,19 @@ def write_report(summary, rows, md_path, pins, sample, extra):
     L.append('')
     L.append('| Class | groups | share | meaning |')
     L.append('|---|---:|---:|---|')
-    for cls in ('R1_lemma_absent_from_dcs', 'R2_no_wordsem_tag',
-                'R3_tagged_but_unaligned', 'R4_grounded_alignment'):
+    for cls in ('R0_grounding_not_computed', 'R1_lemma_absent_from_dcs',
+                'R2_no_wordsem_tag', 'R3_tagged_but_unaligned',
+                'R4_grounded_alignment'):
         c = s['residual_classes'].get(cls, 0)
-        L.append('| `%s` | %d | %.1f%% | %s |'
-                 % (cls, c, 100 * c / n, CLASS_GLOSS[cls]))
+        if not c and cls == 'R0_grounding_not_computed':
+            continue
+        L.append('| `%s` | %s | %.1f%% | %s |'
+                 % (cls, '{:,}'.format(c), 100 * c / n, CLASS_GLOSS[cls]))
     L.append('')
+    if not s['n_groups_grounding_computed']:
+        L.append('_`R3` and `R4` are absent by construction on this frame: both require '
+                 'a grounding verdict, which was not computed here._')
+        L.append('')
     L.append('**R3 is the actionable class.** These are lemmas where DCS *does* carry '
              'sense-tagged tokens and PWG *does* carry senses, and the join still '
              'fails — because PWG cites Pañcatantra/Kathāsaritsāgara/kośa literature '
@@ -579,42 +691,53 @@ def write_report(summary, rows, md_path, pins, sample, extra):
 
     L.append('## Validation sample')
     L.append('')
-    L.append('%d grounded links, hand-checkable (the skill\'s ≈50-item validation '
-             'requirement is capped by the population — every grounded link in the '
-             'pilot is listed rather than sampled):' % len(sample))
-    L.append('')
+    if not s['n_groups_grounding_computed']:
+        L.append('_No grounded links to validate on this frame — grounding was not '
+                 'computed (see above)._')
+        L.append('')
+        sample = []
+    else:
+        L.append('%d grounded links, hand-checkable (the skill\'s ≈50-item validation '
+                 'requirement is capped by the population — every grounded link is '
+                 'listed rather than sampled):' % len(sample))
+        L.append('')
     if sample:
         L.append('| slp1 | PWG sense | tier | DCS locus |')
         L.append('|---|---|---|---|')
         for r in sample:
             L.append('| `%s` | %s | `%s` | %s |'
                      % (r['slp1'], r['sense_id'], r['method'], r['locus']))
-    else:
-        L.append('_No grounded links in this frame._')
     L.append('')
 
     L.append('## Known discrepancies (disclosed, not smoothed)')
     L.append('')
     mm = extra['leaf_mismatch']
-    L.append('- **Leaf-sense denominator, ±%.1f%%.** Re-parsing PWG today reproduces '
-             'the frozen frame\'s `n_leaf_senses` exactly for **%d of %d** groups; '
-             '%d groups come out %s (total %d vs the frame\'s %d, +%.1f%%). The frame '
-             'was frozen 22-07-2026 and `csl-orig/v02/pwg/pwg.txt` is a live '
-             'corrections target, so a small vintage drift is expected. The headline '
-             'rate (%.2f%%) is not sensitive to a 1–2%% denominator wobble; the '
-             'discrepancy is recorded rather than reconciled, because reconciling it '
-             'would mean pinning a csl-orig commit that the frame never recorded.'
-             % (100 * mm['pct'], mm['n_match'], s['n_pilot_groups'], mm['n_mismatch'],
-                'higher' if mm['direction'] > 0 else 'lower', mm['mine_total'],
-                mm['frame_total'], 100 * mm['pct'], 100 * s['pwg_sense_join_rate']))
-    L.append('- **The grounded evidence is genuinely tiny** (%d exact-verse `locus` '
-             'rows + %d adhyāya-level `locus-mbh`). The validation table above is the '
-             'complete population, not a sample, so every grounded claim in this '
-             'report is individually checkable — and the Mahābhārata dominance in it '
-             'means the pilot\'s sense-level signal rests almost entirely on one text '
-             'and on the vulgate crosswalk\'s ±1 adhyāya tolerance.'
-             % (s['concordance_tier_rows'].get('locus', 0),
-                s['concordance_tier_rows'].get('locus-mbh', 0)))
+    if mm:
+        L.append('- **Leaf-sense denominator, ±%.1f%%.** Re-parsing PWG today '
+                 'reproduces the frozen frame\'s `n_leaf_senses` exactly for **%d of '
+                 '%d** groups; %d groups come out %s (total %d vs the frame\'s %d, '
+                 '+%.1f%%). The frame was frozen 22-07-2026 and '
+                 '`csl-orig/v02/pwg/pwg.txt` is a live corrections target, so a small '
+                 'vintage drift is expected. The headline rate is not sensitive to a '
+                 '1–2%% denominator wobble; the discrepancy is recorded rather than '
+                 'reconciled, because reconciling it would mean pinning a csl-orig '
+                 'commit that the frame never recorded.'
+                 % (100 * mm['pct'], mm['n_match'], s['n_pilot_groups'],
+                    mm['n_mismatch'], 'higher' if mm['direction'] > 0 else 'lower',
+                    mm['mine_total'], mm['frame_total'], 100 * mm['pct']))
+    else:
+        L.append('- **No frozen-frame gate applies here.** This frame is built from '
+                 'the live parse itself, so there is no independent `n_leaf_senses` to '
+                 'check against; the H1455-frame report carries that gate.')
+    if s['n_groups_grounding_computed']:
+        L.append('- **The grounded evidence is genuinely tiny** (%d exact-verse '
+                 '`locus` rows + %d adhyāya-level `locus-mbh`). The validation table '
+                 'above is the complete population, not a sample, so every grounded '
+                 'claim is individually checkable — and the Mahābhārata dominance in '
+                 'it means the sense-level signal rests almost entirely on one text '
+                 'and on the vulgate crosswalk\'s ±1 adhyāya tolerance.'
+                 % (s['concordance_tier_rows'].get('locus', 0),
+                    s['concordance_tier_rows'].get('locus-mbh', 0)))
     L.append('')
     L.append('## What this pilot does NOT claim')
     L.append('')
@@ -628,21 +751,23 @@ def write_report(summary, rows, md_path, pins, sample, extra):
     L.append('')
     L.append('```sh')
     L.append('cd RussianTranslation/research')
-    L.append('# step 1 — rebuild this frame\'s PWG loci from csl-orig (needs csl-orig)')
-    L.append('python export_frame_sense_loci.py --kosha ../../../kosha')
+    L.append('# step 1 — rebuild the PWG loci from csl-orig (needs csl-orig)')
+    L.append(extra['repro_export'])
     L.append('# step 2 — the join')
-    L.append('python pwg_sense_dcs_attestation_pilot.py --kosha ../../../kosha')
+    L.append(extra['repro_join'])
     L.append('python pwg_sense_dcs_attestation_pilot.py --selftest')
     L.append('```')
     L.append('')
-    L.append('Deterministic and byte-identical on re-run: no LLM, no sampling, no RNG. '
-             'Step 1\'s output (`pwg_sense_loci.frame500.tsv`, 2.9 MB) is **not '
-             'committed** — the same rule H1456 applied to the full export: the '
-             'generator is the artifact, the bulk table is rebuildable. The PWG store '
-             'and the DCS sqlite are likewise gitignored/local; the committed derived '
-             'tables listed under **Pins** are the actual inputs. Note that step 1 '
-             're-reads a live `csl-orig`, so its SHA-256 pin above will drift as '
-             'corrections land upstream — see *Known discrepancies*.')
+    L.append('Deterministic and byte-identical on re-run: no LLM in the measurement '
+             'path%s. Step 1\'s bulk output is **not committed** — the same rule H1456 '
+             'applied to the full export: the generator is the artifact, the table is '
+             'rebuildable. The PWG store and the DCS sqlite are likewise '
+             'gitignored/local; the committed derived tables listed under **Pins** are '
+             'the actual inputs. Note that step 1 re-reads a live `csl-orig`, so its '
+             'SHA-256 pin above will drift as corrections land upstream.'
+             % (', and the random frame is drawn with an explicit seed so the sample '
+                'is reproducible' if extra['frame_mode'] == 'random'
+                else ', no sampling, no RNG'))
     L.append('')
     L.append('_Dr. Mārcis Gasūns_')
     open(md_path, 'w', encoding='utf-8', newline='\n').write('\n'.join(L) + '\n')
@@ -683,7 +808,8 @@ def selftest():
                         {'sense_id': 'a#2', 'gloss': 'h', 'count': 10}]}
     links = {('a', ''): {'locus': {'1a'}, 'overlap': {'1b'}, 'ls': {'1a', '1b'}}}
 
-    rows = build_rows(frame, pwg, lemma_freq, sense_freq, links)
+    scope = {('a', ''), ('b', ''), ('c', '')}      # aligner covered all three
+    rows = build_rows(frame, pwg, lemma_freq, sense_freq, links, scope)
     by = {r['slp1']: r for r in rows}
     assert by['a']['residual_class'] == 'R4_grounded_alignment', by['a']
     assert by['b']['residual_class'] == 'R2_no_wordsem_tag', by['b']
@@ -708,6 +834,29 @@ def selftest():
     assert s['dcs_wn_senses_total'] == 2, s
     # a PWG sense with no <ls> is kept in the denominator, not silently dropped
     assert s['pwg_senses_with_ls'] == 3, s
+
+    # THE load-bearing rule for frames the aligner never ran over: absence of a link
+    # outside `scope` is UNKNOWN, never 0. A frame with empty scope must report
+    # join rates of None — not 0.0 — or the whole dictionary gets a fabricated 0%.
+    rows_uncov = build_rows(frame, pwg, lemma_freq, sense_freq, {}, set())
+    s_uncov = summarize(rows_uncov, collections.Counter())
+    assert s_uncov['pwg_sense_join_rate'] is None, s_uncov['pwg_sense_join_rate']
+    assert s_uncov['dcs_sense_join_rate'] is None, s_uncov['dcs_sense_join_rate']
+    assert s_uncov['n_groups_grounding_computed'] == 0, s_uncov
+    assert s_uncov['n_groups_grounding_unknown'] == 3, s_uncov
+    cls_uncov = s_uncov['residual_classes']
+    assert cls_uncov.get('R4_grounded_alignment', 0) == 0, cls_uncov
+    assert cls_uncov.get('R3_tagged_but_unaligned', 0) == 0, cls_uncov
+    assert cls_uncov.get('R0_grounding_not_computed', 0) == 1, cls_uncov  # 'a' only
+    # lemma-level facts stay fully computable without the aligner
+    assert s_uncov['n_lemma_attested'] == 2 and s_uncov['mass_dcs_lemma_tokens'] == 140
+
+    # partial coverage: rates denominate in the covered subset, not the whole frame
+    rows_part = build_rows(frame, pwg, lemma_freq, sense_freq, links, {('a', '')})
+    s_part = summarize(rows_part, collections.Counter())
+    assert s_part['n_groups_grounding_computed'] == 1, s_part
+    assert s_part['pwg_senses_total_known'] == 2, s_part      # only 'a's two senses
+    assert abs(s_part['pwg_sense_join_rate'] - 0.5) < 1e-9, s_part
 
     r = spearman([1, 2, 3, 4], [1, 2, 3, 4])
     assert abs(r - 1.0) < 1e-9, r
@@ -761,13 +910,32 @@ def main():
     # NB: the default is the FRAME-matched export (export_frame_sense_loci.py), not
     # src/pwg_sense_loci.sample.tsv — that committed sample covers a different 500
     # headwords and overlaps this frame in only 16 keys.
-    ap.add_argument('--loci', default=os.path.join(HERE,
-                                                   'pwg_sense_loci.frame500.tsv'))
+    ap.add_argument('--loci', default=None)
+    ap.add_argument('--frame-mode', default='kosha',
+                    choices=('kosha', 'random', 'all'),
+                    help='kosha = the frozen DCS-attested H1455 500 (grounding '
+                         'available); random = an unbiased seeded sample of PWG; '
+                         'all = every PWG headword')
+    ap.add_argument('--n', type=int, default=2000,
+                    help='sample size for --frame-mode random')
+    ap.add_argument('--seed', type=int, default=20260726,
+                    help='RNG seed for --frame-mode random (reproducibility)')
     ap.add_argument('--out-dir', default=HERE)
+    ap.add_argument('--tag', default=None,
+                    help='output filename suffix; defaults to the frame mode')
     ap.add_argument('--selftest', action='store_true')
     a = ap.parse_args()
     if a.selftest:
         return selftest()
+
+    if a.loci is None:
+        a.loci = os.path.join(HERE, 'pwg_sense_loci.frame500.tsv'
+                              if a.frame_mode == 'kosha'
+                              else 'pwg_sense_loci.all.tsv')
+    # The kosha frame keeps the original `_pilot` filenames: its report is already
+    # merged and cited from SL FINDINGS §465, and renaming it would break that link
+    # for no gain.
+    tag = a.tag or ('pilot' if a.frame_mode == 'kosha' else a.frame_mode)
 
     kosha = find_kosha(a.kosha)
     p_frame = os.path.join(kosha, 'data', 'concordance', 'sense_pilot_headwords.tsv')
@@ -779,43 +947,46 @@ def main():
             raise SystemExit('missing required input: %s' % p)
 
     print('kosha  = %s' % kosha)
-    frame = load_frame(p_frame)
-    print('frame  = %d pilot groups' % len(frame))
     pwg, dropped_parent_loci = load_pwg_senses(a.loci)
     print('pwg    = %d groups, %d leaf senses (dropped %d <ls> on non-leaf parents)'
           % (len(pwg), sum(len(v) for v in pwg.values()), dropped_parent_loci))
 
-    # Correctness gate: our leaf definition must reproduce the frozen frame's
-    # n_leaf_senses exactly. A mismatch means the sense tree was parsed
-    # differently from H1455/H1456 and every rate below would be incomparable.
-    mismatch = [(k, frame[k]['n_leaf_senses'], len(pwg.get(k, [])))
-                for k in frame
-                if frame[k]['n_leaf_senses'] != len(pwg.get(k, []))]
-    if mismatch:
-        print('WARNING: leaf-sense count disagrees with the frame for %d/%d groups; '
-              'e.g. %s' % (len(mismatch), len(frame), mismatch[:5]), file=sys.stderr)
+    mismatch = None
+    if a.frame_mode == 'kosha':
+        frame = load_frame(p_frame)
+        # Correctness gate: our leaf definition must reproduce the frozen frame's
+        # n_leaf_senses exactly. A mismatch means the sense tree was parsed
+        # differently from H1455/H1456 and every rate below would be incomparable.
+        mismatch = [(k, frame[k]['n_leaf_senses'], len(pwg.get(k, [])))
+                    for k in frame
+                    if frame[k]['n_leaf_senses'] != len(pwg.get(k, []))]
+        if mismatch:
+            print('WARNING: leaf-sense count disagrees with the frame for %d/%d '
+                  'groups; e.g. %s' % (len(mismatch), len(frame), mismatch[:5]),
+                  file=sys.stderr)
+        else:
+            print('gate   = leaf-sense counts match the frozen frame exactly (%d/%d)'
+                  % (len(frame), len(frame)))
     else:
-        print('gate   = leaf-sense counts match the frozen frame exactly (%d/%d)'
-              % (len(frame), len(frame)))
+        frame = frame_from_universe(pwg, a.frame_mode, a.n, a.seed)
+    print('frame  = %d groups (mode=%s)' % (len(frame), a.frame_mode))
     wanted = {k[0] for k in frame}
     lfreq = load_lemma_freq(p_lfreq, wanted)
     print('dcs    = %d/%d frame lemmas attested' % (len(lfreq), len(wanted)))
     sfreq = load_sense_freq(p_sfreq, wanted)
     print('wordsem= %d frame lemmas with a %s sense' % (len(sfreq), GOLD_LAYER))
-    links, tier_rows = load_concordance(p_conc, set(frame))
-    print('links  = %s' % dict(tier_rows))
+    links, tier_rows, scope = load_concordance(p_conc, set(frame))
+    print('links  = %s (aligner scope covers %d of %d frame groups)'
+          % (dict(tier_rows), len(scope & set(frame)), len(frame)))
 
-    rows = build_rows(frame, pwg, lfreq, sfreq, links)
+    rows = build_rows(frame, pwg, lfreq, sfreq, links, scope)
     summary = summarize(rows, tier_rows)
 
-    frame_total = sum(frame[k]['n_leaf_senses'] for k in frame)
-    mine_total = sum(len(pwg.get(k, [])) for k in frame)
-    extra = {
-        'dropped_parent_loci': dropped_parent_loci,
-        'grounded_without_wordsem': sum(
-            1 for r in rows
-            if r['n_pwg_senses_grounded'] > 0 and r['n_dcs_wn_senses'] == 0),
-        'leaf_mismatch': {
+    leaf_mismatch = None
+    if mismatch is not None:
+        frame_total = sum(frame[k]['n_leaf_senses'] for k in frame)
+        mine_total = sum(len(pwg.get(k, [])) for k in frame)
+        leaf_mismatch = {
             'n_match': len(frame) - len(mismatch),
             'n_mismatch': len(mismatch),
             'frame_total': frame_total,
@@ -823,11 +994,70 @@ def main():
             'direction': 1 if mine_total >= frame_total else -1,
             'pct': (abs(mine_total - frame_total) / frame_total) if frame_total else 0.0,
             'examples': mismatch[:10],
-        },
-        'frame_selection_bias': 'every frame row has dcs_attested=1 — the frame was '
-                                'selected DCS-attested, so lemma-level coverage is '
-                                'true by construction and all rates are upper bounds',
+        }
+
+    FRAME_TEXT = {
+        'kosha': (
+            'the frozen H1455/H1456 500-headword pilot',
+            'Selected DCS-attested by construction — the biased frame, kept because '
+            'it is the only one the H1455 aligner ever ran over, so it is the only '
+            'frame on which sense-level grounding can be measured at all.',
+            'The frame is the **frozen H1455/H1456 500-headword pilot** — reused '
+            'verbatim so this join is comparable with the sense-concordance build, '
+            'not a second parallel frame. Every input is a committed derived table; '
+            'no number below is recomputed from the 921 MB DCS sqlite in this pass.'),
+        'random': (
+            'a uniform random sample of %d PWG headwords (seed %d)' % (a.n, a.seed),
+            'Drawn uniformly from all %s PWG headword groups with an explicit seed, so '
+            'it is reproducible and — unlike the H1455 frame — **not** selected for '
+            'DCS attestation. This is the frame that answers "what share of PWG is '
+            'attested at all?".' % '{:,}'.format(len(pwg)),
+            'The frame is a **uniform random sample of %d PWG headword groups '
+            '(seed %d)** drawn from all %s groups parsed out of '
+            '`csl-orig/v02/pwg/pwg.txt`. It carries no DCS-attestation precondition, '
+            'so its lemma-level rate is an unbiased estimate of PWG as a whole.'
+            % (a.n, a.seed, '{:,}'.format(len(pwg)))),
+        'all': (
+            'every PWG headword (%s groups)' % '{:,}'.format(len(pwg)),
+            'The complete dictionary — no sampling, no selection. Lemma-level '
+            'coverage here is the population value, not an estimate.',
+            'The frame is **every PWG headword group** parsed from '
+            '`csl-orig/v02/pwg/pwg.txt` (%s groups, %s leaf senses). No sampling and '
+            'no DCS-attestation precondition, so the lemma-level and sense-tag figures '
+            'are population values.'
+            % ('{:,}'.format(len(pwg)),
+               '{:,}'.format(sum(len(v) for v in pwg.values())))),
     }
+    label, note, note_long = FRAME_TEXT[a.frame_mode]
+    if a.frame_mode == 'kosha':
+        repro_export = 'python export_frame_sense_loci.py --kosha ../../../kosha'
+        repro_join = 'python pwg_sense_dcs_attestation_pilot.py --kosha ../../../kosha'
+    else:
+        repro_export = 'python export_frame_sense_loci.py --all'
+        repro_join = ('python pwg_sense_dcs_attestation_pilot.py --kosha ../../../kosha'
+                      ' --frame-mode %s%s'
+                      % (a.frame_mode,
+                         ' --n %d --seed %d' % (a.n, a.seed)
+                         if a.frame_mode == 'random' else ''))
+
+    extra = {
+        'frame_mode': a.frame_mode,
+        'frame_label': label,
+        'frame_note': note,
+        'frame_note_long': note_long,
+        'repro_export': repro_export,
+        'repro_join': repro_join,
+        'dropped_parent_loci': dropped_parent_loci,
+        'grounded_without_wordsem': sum(
+            1 for r in rows
+            if r['n_pwg_senses_grounded'] > 0 and r['n_dcs_wn_senses'] == 0),
+        'leaf_mismatch': leaf_mismatch,
+    }
+    if a.frame_mode == 'kosha':
+        extra['frame_selection_bias'] = (
+            'every frame row has dcs_attested=1 — the frame was selected '
+            'DCS-attested, so lemma-level coverage is true by construction and all '
+            'rates are upper bounds')
 
     pins = [
         {'name': 'kosha/data/concordance/sense_pilot_headwords.tsv',
@@ -847,11 +1077,12 @@ def main():
     sample = collect_sample(p_conc, set(frame))
 
     os.makedirs(a.out_dir, exist_ok=True)
-    tsv_path = os.path.join(a.out_dir, 'pwg_sense_dcs_attestation_pilot.tsv')
+    stem = 'pwg_sense_dcs_attestation_%s' % tag
+    tsv_path = os.path.join(a.out_dir, stem + '.tsv')
     cols = ['slp1', 'hom', 'n_pwg_senses', 'n_pwg_senses_with_ls', 'n_pwg_ls_total',
             'dcs_lemma_count', 'n_dcs_wn_senses', 'dcs_sensetagged_count',
             'sensetagged_share', 'n_pwg_senses_grounded',
-            'n_pwg_senses_gloss_overlap_only', 'residual_class']
+            'n_pwg_senses_gloss_overlap_only', 'grounding_computed', 'residual_class']
     with open(tsv_path, 'w', encoding='utf-8', newline='') as fh:
         w = csv.DictWriter(fh, fieldnames=cols, delimiter='\t', lineterminator='\n')
         w.writeheader()
@@ -860,7 +1091,10 @@ def main():
 
     meta = {'handoff': 'H1632', 'model': 'Opus 5 (claude-opus-5[1m])',
             'generator': 'research/pwg_sense_dcs_attestation_pilot.py',
-            'frame': 'H1455/H1456 frozen 500-headword pilot (reused, not re-derived)',
+            'frame': label,
+            'frame_mode': a.frame_mode,
+            'frame_seed': a.seed if a.frame_mode == 'random' else None,
+            'frame_n_requested': a.n if a.frame_mode == 'random' else None,
             'join_key': 'SLP1 <-> SLP1 (both sides already ASCII SLP1; form_key() is '
                         'identity here, no NFD/strip-Mn normalisation applied)',
             'gold_layer': GOLD_LAYER,
@@ -870,26 +1104,35 @@ def main():
             'dcs_master': 'VisualDCS/src/DCS-data-2026/dcs_full.sqlite (921 MB; the '
                           'src/ and repo-root copies are 0-byte decoys and were not read)',
             'pins': pins, 'summary': summary, 'disclosures': extra}
-    json_path = os.path.join(a.out_dir, 'pwg_sense_dcs_attestation_pilot.meta.json')
+    json_path = os.path.join(a.out_dir, stem + '.meta.json')
     json.dump(meta, open(json_path, 'w', encoding='utf-8'),
               ensure_ascii=False, indent=2)
 
     write_report(summary, rows,
-                 os.path.join(a.out_dir, 'PWG_SENSE_DCS_ATTESTATION_PILOT.md'),
+                 os.path.join(a.out_dir, stem.upper() + '.md'),
                  pins, sample, extra)
 
     print('')
-    print('lemma-attested   %d/%d' % (summary['n_lemma_attested'],
-                                      summary['n_pilot_groups']))
+    print('lemma-attested   %d/%d = %.1f%%'
+          % (summary['n_lemma_attested'], summary['n_pilot_groups'],
+             100 * summary['n_lemma_attested'] / summary['n_pilot_groups']))
     print('wordsem-tagged   %d/%d' % (summary['n_wordsem_tagged'],
                                       summary['n_pilot_groups']))
+    if summary['pwg_sense_join_rate'] is None:
+        print('grounding        NOT COMPUTED on this frame (%d groups outside the '
+              'H1455 aligner run) — reported as unknown, never as 0%%'
+              % summary['n_groups_grounding_unknown'])
+        print('sense-tagged mass share %.1f%%'
+              % (100 * summary['sensetagged_mass_share']))
+        print('wrote %s.tsv + .meta.json + %s.md' % (stem, stem.upper()))
+        return
     print('grounded groups  %d/%d' % (summary['n_groups_grounded'],
                                       summary['n_pilot_groups']))
     print('PWG sense join   %d/%d = %.2f%%' % (summary['pwg_senses_grounded'],
-                                               summary['pwg_senses_total'],
+                                               summary['pwg_senses_total_known'],
                                                100 * summary['pwg_sense_join_rate']))
     print('sense-tagged mass share %.1f%%' % (100 * summary['sensetagged_mass_share']))
-    print('wrote TSV + meta.json + PWG_SENSE_DCS_ATTESTATION_PILOT.md')
+    print('wrote %s.tsv + .meta.json + %s.md' % (stem, stem.upper()))
 
 
 if __name__ == '__main__':

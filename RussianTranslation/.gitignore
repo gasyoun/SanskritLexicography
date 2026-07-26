@@ -11,6 +11,11 @@ src/.nn_api_cache/
 # ~2.9 MB of PWG gloss text: public domain, but not a deliverable.
 research/pwg_sense_loci.frame500.tsv
 
+# H1632 scale-up bulk tables — same rule: reports + meta.json are the deliverable,
+# these row-level tables are regenerable (28 MB universe export; 6 MB full-PWG join).
+research/pwg_sense_loci.all.tsv
+research/pwg_sense_dcs_attestation_all.tsv
+
 # Generated per-root pwg_ru harnesses (derived from gen_opt_harness2.py et al.; inlined inputs)
 src/pilot/run_fidelity_judge.js
 src/pilot/run_pilot_wf.opt.js

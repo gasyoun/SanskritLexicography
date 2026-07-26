@@ -62,19 +62,27 @@ def main():
     ap.add_argument('--kosha', default=None)
     ap.add_argument('--out', default=os.path.join(HERE, 'pwg_sense_loci.frame500.tsv'))
     ap.add_argument('--pwg', default=None)
+    ap.add_argument('--all', action='store_true',
+                    help='export EVERY PWG headword (the universe for the random '
+                         'and full frames), not just the H1455 pilot frame')
     a = ap.parse_args()
+    if a.all and a.out == os.path.join(HERE, 'pwg_sense_loci.frame500.tsv'):
+        a.out = os.path.join(HERE, 'pwg_sense_loci.all.tsv')
 
-    frame_path = a.frame
-    if not frame_path:
-        from pwg_sense_dcs_attestation_pilot import find_kosha
-        frame_path = os.path.join(find_kosha(a.kosha), 'data', 'concordance',
-                                  'sense_pilot_headwords.tsv')
-
-    wanted = set()
-    with open(frame_path, encoding='utf-8', newline='') as fh:
-        for r in csv.DictReader(fh, delimiter='\t'):
-            wanted.add((r['slp1'], r.get('hom', '')))
-    print('frame: %d (slp1,hom) groups' % len(wanted), file=sys.stderr)
+    wanted = None                     # None = export EVERY PWG headword
+    if not a.all:
+        frame_path = a.frame
+        if not frame_path:
+            from pwg_sense_dcs_attestation_pilot import find_kosha
+            frame_path = os.path.join(find_kosha(a.kosha), 'data', 'concordance',
+                                      'sense_pilot_headwords.tsv')
+        wanted = set()
+        with open(frame_path, encoding='utf-8', newline='') as fh:
+            for r in csv.DictReader(fh, delimiter='\t'):
+                wanted.add((r['slp1'], r.get('hom', '')))
+        print('frame: %d (slp1,hom) groups' % len(wanted), file=sys.stderr)
+    else:
+        print('frame: ALL PWG headwords (no filter)', file=sys.stderr)
 
     import pwg_mask
     pwg_path = find_pwg(a.pwg)
@@ -91,7 +99,7 @@ def main():
         for buf in pwg_mask.records():
             n_records += 1
             for slp1, hom, sense_id, gloss_de, ls_loci in microstructure.leaf_senses(buf):
-                if (slp1, hom or '') not in wanted:
+                if wanted is not None and (slp1, hom or '') not in wanted:
                     continue
                 # keep tabs/newlines out of the TSV cells
                 gloss_de = (gloss_de or '').replace('\t', ' ').replace('\n', ' ')
@@ -102,11 +110,14 @@ def main():
 
     print('records scanned : %d' % n_records, file=sys.stderr)
     print('leaf-sense rows : %d' % n_rows, file=sys.stderr)
-    print('frame groups hit: %d/%d' % (len(seen), len(wanted)), file=sys.stderr)
-    missing = wanted - seen
-    if missing:
-        print('frame groups with NO leaf-sense row: %d (e.g. %s)'
-              % (len(missing), sorted(missing)[:5]), file=sys.stderr)
+    if wanted is None:
+        print('headword groups : %d' % len(seen), file=sys.stderr)
+    else:
+        print('frame groups hit: %d/%d' % (len(seen), len(wanted)), file=sys.stderr)
+        missing = wanted - seen
+        if missing:
+            print('frame groups with NO leaf-sense row: %d (e.g. %s)'
+                  % (len(missing), sorted(missing)[:5]), file=sys.stderr)
     print('written: %s' % a.out, file=sys.stderr)
 
 

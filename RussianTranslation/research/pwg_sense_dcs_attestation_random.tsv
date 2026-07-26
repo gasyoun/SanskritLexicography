@@ -1,0 +1,2001 @@
+slp1	hom	n_pwg_senses	n_pwg_senses_with_ls	n_pwg_ls_total	dcs_lemma_count	n_dcs_wn_senses	dcs_sensetagged_count	sensetagged_share	n_pwg_senses_grounded	n_pwg_senses_gloss_overlap_only	grounding_computed	residual_class
+A	2	9	9	221	3267	7	120	0.0367	0	0	0	R0_grounding_not_computed
+ABAsa		1	1	34	130	5	26	0.2000	0	0	0	R0_grounding_not_computed
+AKarezWa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+AMkfti		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+AQya		3	3	32	519	10	94	0.1811	0	0	0	R0_grounding_not_computed
+ASAvaha		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+ASuMga		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+ASupatvan		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ASvabAla		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+ATarvaRarahasya		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+AYC		1	1	7	6	2	3	0.5000	0	0	0	R0_grounding_not_computed
+AdArasft		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Adarakya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+AdityagarBa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Ahananavant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+AkASagarBa		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+Akftimant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+AkzArAnta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+AkzarasamAmnAyika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Akzeptar		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Alasya	1	1	1	29	130	5	13	0.1000	0	0	0	R0_grounding_not_computed
+Alindaka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+AmrAtakeSvara		1	1	1	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+Amrya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Anana		1	1	27	704	5	97	0.1378	0	0	0	R0_grounding_not_computed
+AnuguRya		1	1	3	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+Apad		1	1	50	1166	6	52	0.0446	0	0	0	R0_grounding_not_computed
+Apavargika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ApayA		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+Api		1	0	0	53	1	6	0.1132	0	0	0	R0_grounding_not_computed
+Api	1	1	1	20	53	1	6	0.1132	0	0	0	R0_grounding_not_computed
+AraRya		1	1	42	95	4	8	0.0842	0	0	0	R0_grounding_not_computed
+ArdraSAka		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+AruRin		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+AsrAva		2	2	12	57	4	23	0.4035	0	0	0	R0_grounding_not_computed
+AsurAyaRi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+AsutIvala		3	3	9		0	0		0	0	0	R1_lemma_absent_from_dcs
+AsutIya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Atara		1	1	3	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+AtmIBAva		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+AveDya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+AvraScana		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+AyaHSUlika		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+AyatacCadA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Ayatanavant		1	1	4	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+Ayukta		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+BARqaSAlA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+BAllavi		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+BAm		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+BAnuBawwa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+BAqilAyana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+BImaka		1	1	4	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+BIzmAzwamI		1	1	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+BUmideva		2	2	9	5	1	2	0.4000	0	0	0	R0_grounding_not_computed
+BUmikuzmARqa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+BUmya		1	1	1	5	1	1	0.2000	0	0	0	R0_grounding_not_computed
+BUtaGna		5	3	6	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+BUtagrAma		1	1	15		0	0		0	0	0	R1_lemma_absent_from_dcs
+BUtamAtar		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+BUtiniDAna		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+BUz	2	3	3	98	40	3	5	0.1250	0	0	0	R0_grounding_not_computed
+BUzRu		1	1	5	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+BaNgAsvana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+BaNgakara		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+BaRqara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Baji		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+BarUwaka		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+BaraRizeRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Bari		1	0	0	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+Barts		1	1	73	4	2	2	0.5000	0	0	0	R0_grounding_not_computed
+BavAnIguru		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+BeruRqaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+BfSa		1	1	2	335	5	37	0.1104	0	0	0	R0_grounding_not_computed
+BizagBadrA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+BogiBuj		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+BojyA		1	1	10	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+BrAjajjanman		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+BrAzwraja		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+Brama		9	9	92	344	4	41	0.1192	0	0	0	R0_grounding_not_computed
+BramarAtiTi		1	1	2	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+BramarakIwa		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+Bramarapada		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+Burvan		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+CAgamitra		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+Candogovinda		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+CandomaYjari		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+CaqqalikA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Cinnama		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+DAnaMjayya		1	1	13		0	0		0	0	0	R1_lemma_absent_from_dcs
+DAnyottama		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+DArANga	1	1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+DAraya		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+DAtrIputra		1	1	1	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+DAyu	2	1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+DEryavant		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+DOmata		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+DUlIkadamba		3	3	7	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+DUrta		7	7	47	167	8	68	0.4072	0	0	0	R0_grounding_not_computed
+DamarukAnagara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+DanU		1	1	3	6	2	2	0.3333	0	0	0	R0_grounding_not_computed
+DanvayavAsa		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+DarAputra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+DarmacArin		3	3	11	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+Darmacandra		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+DarmanATa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Darmanada		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+DarmapraBAsa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Darz		2	2	201		0	0		0	0	0	R1_lemma_absent_from_dcs
+DftarAjan		1	1	2	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+Dftvan		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+Dfzwatva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+DvANkzArAti		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+DvajocCrAya		2	2	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+EhalOkika		1	1	5	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+EkaDya		2	2	8	18	2	5	0.2778	0	0	0	R0_grounding_not_computed
+EndrAvEzRava		1	1	4	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+Etareyin		1	1	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+GanavITi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Ganavarga		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Gasi		1	1	2	4	1	3	0.7500	0	0	0	R0_grounding_not_computed
+GawwAnanda		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+GftAhva		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+GftelI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+GoRasa		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+IjAna		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+Irzyin		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+IzA		1	1	33	66	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+JArJara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+JUz		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+KADUyA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+KaRqamodaka		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+KaRqika		5	5	13	3	1	2	0.6667	0	0	0	R0_grounding_not_computed
+KaYjarIwa		1	1	6	9	1	1	0.1111	0	0	0	R0_grounding_not_computed
+KagADipa		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+KagavatI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+Kalureza		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+KaqakkikA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Karapa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+Karapuzpa		2	2	3	7	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+KarjUGna		1	1	2	3	1	1	0.3333	0	0	0	R0_grounding_not_computed
+KarjurakarRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Karjya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Kazpa		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+KeSaya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Odameyi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+OdavApi		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+Odayika		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+Opanizada		2	2	8	9	1	1	0.1111	0	0	0	R0_grounding_not_computed
+OrDvaBaktika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+PaRijA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+PalamudgarikA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+PalapaYcAmla		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+PalgUtsava		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+Para		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+QiQiRi		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+SAMSapAyani		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+SAMSapa		1	1	3	0	0	0		0	0	0	R2_no_wordsem_tag
+SAci		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+SAkalya		1	1	39	34	1	8	0.2353	0	0	0	R0_grounding_not_computed
+SAkulika		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+SAlUraka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SAnila		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SAntipraBa		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+SArIravidyA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+SArNga		7	7	37	80	4	8	0.1000	0	0	0	R0_grounding_not_computed
+SArNgaDara		2	1	17	8	1	4	0.5000	0	0	0	R0_grounding_not_computed
+SArkarIDAna		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SAs	3	1	0	0	474	14	32	0.0675	0	0	0	R0_grounding_not_computed
+SAstrin		2	2	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+SEKaRqi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SElaniryAsa		1	1	2	4	1	4	1.0000	0	0	0	R0_grounding_not_computed
+SEvanagara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SIGrayAna	1	1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+SIkara		2	2	50	33	1	1	0.0303	0	0	0	R0_grounding_not_computed
+SIlahara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SIlavftta		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+SIrza		3	3	53	181	7	90	0.4972	0	0	0	R0_grounding_not_computed
+SIrzabanDanA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SIrzacCedika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SIrzarogin		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+SIrzeBArika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SItakumBa		2	2	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+SItapuzpaka		2	2	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+SOceya		2	2	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+SUGana		1	1	3	0	0	0		0	0	0	R2_no_wordsem_tag
+SUlaka		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+SUnyahara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SaMBU		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SaMyvanta		1	1	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+SaNKanUpuriRI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SaNKarAja		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SaPacyuta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SabdasADana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Saka	1	3	3	7	67	3	13	0.1940	0	0	0	R0_grounding_not_computed
+Sakra		4	4	74	1859	4	340	0.1829	0	0	0	R0_grounding_not_computed
+Sakri		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+Saktimaya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SalAkalA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SamI	3	1	1	1	155	5	20	0.1290	0	0	0	R0_grounding_not_computed
+Sambala		4	4	13	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+SanDa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Sar	2	1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+Sasta	3	1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+SatASva		1	1	7	0	0	0		0	0	0	R2_no_wordsem_tag
+SatabalAka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+SatadrukA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Satahima		1	1	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+Satayoni		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+Seza		7	7	355	1602	8	260	0.1623	0	0	0	R0_grounding_not_computed
+SfNgAntara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SiKigrIva		1	1	2	5	2	3	0.6000	0	0	0	R0_grounding_not_computed
+SiKitA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SiTilaMBAva		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+Sikyaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SikzAviDi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SimI		1	1	5	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+Sipavitnuka		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+SirIzaka		1	1	1	3	1	1	0.3333	0	0	0	R0_grounding_not_computed
+Siraspada		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+Siroroga		1	1	14		0	0		0	0	0	R1_lemma_absent_from_dcs
+Siroruha		2	2	26	46	1	3	0.0652	0	0	0	R0_grounding_not_computed
+SitivAsas		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SivajYa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+Sivarasa		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+SivatatparasUtra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SlIpadin		1	1	2	4	1	1	0.2500	0	0	0	R0_grounding_not_computed
+Slezman		3	3	62	1158	4	234	0.2021	0	0	0	R0_grounding_not_computed
+SoPa		1	1	18	663	3	138	0.2081	0	0	0	R0_grounding_not_computed
+SrAdDaSAka		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+SrAdDakAla		1	1	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+SrAvaRatva		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+SrIGana		2	2	7	3	1	1	0.3333	0	0	0	R0_grounding_not_computed
+SrIgiri		1	1	2	8	1	1	0.1250	0	0	0	R0_grounding_not_computed
+SrIkArin		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+SrImahiman		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SrImant		10	10	104	10	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+SrInitambA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SrIvallI		1	1	2	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+SrOtaprAyaScitta		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+SriyAditya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+SruDya		1	1	5	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+SrutAyuDa		1	1	1	22	2	3	0.1364	0	0	0	R0_grounding_not_computed
+SrutaSravonuja		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+SuBAkaragupta		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+SuBasaMyuta		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+SuBaspati		1	1	8	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+SuBraSastama		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+SukAKyA		1	1	3	8	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+SuklANga		2	2	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+Sukrameha		1	1	3	3	1	1	0.3333	0	0	0	R0_grounding_not_computed
+SunDana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Sunaka		3	3	31	19	2	3	0.1579	0	0	0	R0_grounding_not_computed
+SvApucCa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+SvEkna		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+SvEtreya		1	1	3	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+SvetASva	2	4	4	5	34	1	30	0.8824	0	0	0	R0_grounding_not_computed
+Svetadvipa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Svitnya		1	1	2	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+SyAmAyana		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+Udaka		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+UhanIya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+UrDvaBAj		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+UrDvatAla		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+Urvya		1	1	3	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+aBIkzRa		4	4	27	49	1	4	0.0816	0	0	0	R0_grounding_not_computed
+aBIzwadevatA		1	1	3	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+aBiSApa		3	3	14	44	2	5	0.1136	0	0	0	R0_grounding_not_computed
+aBilakzyam		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+aBimAnavant		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+aBimara		4	4	10		0	0		0	0	0	R1_lemma_absent_from_dcs
+aBimoda		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+aBipAtin		1	1	2	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+aBipadma		1	1	3	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+aBirati		2	2	6	8	1	1	0.1250	0	0	0	R0_grounding_not_computed
+aBisaMdeha		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+aBitigmaraSmi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+aBiyAna		2	1	3	10	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+aDaScara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+aDara		12	9	51	311	8	38	0.1222	0	1	1	R3_tagged_but_unaligned
+aDigoptar		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+aDistrI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+aDivaktar		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+aDokzeRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+aDyavahanana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+aKaRqitartu		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+aMSula		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+aNGas		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+aNgAramaYjarI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+aNgulizaNga		2	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+aRImARqavya		1	1	4	6	2	2	0.3333	0	0	0	R0_grounding_not_computed
+aRuka		3	3	7	9	1	1	0.1111	0	0	0	R0_grounding_not_computed
+aS	2	3	3	90	1249	14	102	0.0817	0	0	0	R0_grounding_not_computed
+aSnayA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+aSvahantar		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+abala		2	1	1	157	3	15	0.0955	0	0	0	R0_grounding_not_computed
+abanDra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+acyuta	1	5	5	25	547	10	58	0.1060	0	0	0	R0_grounding_not_computed
+adevayant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+adfzwa		6	6	30	302	6	23	0.0762	0	0	0	R0_grounding_not_computed
+adomaDa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+aduHKanavamI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+adyasutyA		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+agArin		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+agastI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+agnIDra		2	2	4	14	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+agnicityA		1	1	5	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+agnidevA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+agnivIja		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+agrAyaRIya		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+agraga		1	1	6	8	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+agrayAyin		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+ahaMBadra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ahama		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+ahicCatra		4	4	16		0	0		0	0	0	R1_lemma_absent_from_dcs
+ahrutapsu		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+ajAmitA		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+ajAmitva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ajAnusama		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ajakUlA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+ajakarRaka		1	1	2	2	1	2	1.0000	0	0	0	R0_grounding_not_computed
+ajavITI		1	1	6	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+akAraRa		1	1	11	107	1	2	0.0187	0	0	0	R0_grounding_not_computed
+akOSala		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+akalmAza		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+akarRya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+akftakAram		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+akfzwapacya		1	1	4	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+akzaBUmi		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+akzaRvant		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+alakzya		4	4	6	33	1	1	0.0303	0	0	0	R0_grounding_not_computed
+allApadIna		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+alpaprARa	1	1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+amBoja		3	2	10	105	1	6	0.0571	0	0	0	R0_grounding_not_computed
+amIvahan		1	1	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+amaDavya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+amaraparvata		1	1	2	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+amba	2	1	1	1	0	1	1		0	0	0	R0_grounding_not_computed
+ambazWakI		1	1	2	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+ambikeyaka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+ameDya		3	3	24	96	2	12	0.1250	0	0	0	R0_grounding_not_computed
+amftAyana		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+amrAta		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+anATapurI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+anAdeSa		1	1	1	9	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+anAgneya		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+anApad		1	1	9	23	1	7	0.3043	0	0	0	R0_grounding_not_computed
+anISvara	1	1	1	4	43	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+anUru		2	1	8	5	1	2	0.4000	0	0	0	R0_grounding_not_computed
+ananyagatika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+anaparADa		1	1	3	7	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+anaquha		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+anavAya		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+anavasa		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+anekArTaDvanimaYjarI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+anfkzara		1	1	5	8	1	1	0.1250	0	0	0	R0_grounding_not_computed
+aniSitasarga		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+anivftti		1	1	1	8	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+annaganDi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+antI		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+antaHSElaja		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+antakadruh		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+antaki		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+antarIkzajala		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+antarmAtfkA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+antarvigAhana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+antarya		1	0	0	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+antavat		1	1	2	50	2	3	0.0600	0	0	0	R0_grounding_not_computed
+anuSiKa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+anukUla		5	5	30	154	4	9	0.0584	0	0	0	R0_grounding_not_computed
+anukta		1	1	2	131	3	15	0.1145	0	0	0	R0_grounding_not_computed
+anumititva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+anuttarayoga		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+anuviDAyin		1	1	3	17	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+anuzWu		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+anvAdeSa		1	1	10	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+anvavekzaRa		1	1	1	13	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+anyonyatA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+apAYjas		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+apAtyaya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+apaDvasta		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+apaTin		1	1	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+apabarhis		1	1	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+apacCAya		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+apadI		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+apajAta		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+apakfti		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+apamftyu		1	1	12	14	1	5	0.3571	0	0	0	R0_grounding_not_computed
+aparRa		2	2	5	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+aparihvfta		1	1	4	5	2	2	0.4000	0	0	0	R0_grounding_not_computed
+apas	1	1	1	14	99	5	13	0.1313	0	0	0	R0_grounding_not_computed
+apralambam		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+apsujit		1	1	2	8	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+arDapAda		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+arRoda		2	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+arTabanDa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+arTavargIya		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+araRyAni		2	2	10	5	1	1	0.2000	0	0	0	R0_grounding_not_computed
+araTa		1	1	3	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+arantuka		1	1	4	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+arc	1	4	4	174	358	9	22	0.0615	0	0	0	R0_grounding_not_computed
+arh		6	6	143	2205	8	160	0.0726	0	0	0	R0_grounding_not_computed
+arkaSiras		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+asAlatiprakASa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+asuMBara		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+asurasA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+asvana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+asyavAmIya		1	1	4	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+atasi		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+atidatta		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+atigarvita		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+atikrama		7	7	27	68	2	3	0.0441	0	0	0	R0_grounding_not_computed
+atikramaRIya		3	3	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+atimodA		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+atitIrTa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+atitamAm		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ativikawa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+ativisArin		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+atrapa		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+atyaya		8	8	47	193	4	13	0.0674	0	0	0	R0_grounding_not_computed
+avAntarAm		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+avAsin		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+avAtala		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+avaDvasta		4	3	8		0	0		0	0	0	R1_lemma_absent_from_dcs
+avaSeza		1	1	27	179	1	31	0.1732	0	0	0	R0_grounding_not_computed
+avahAra		6	6	21	37	2	7	0.1892	0	0	0	R0_grounding_not_computed
+avajaya		1	1	3	9	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+avakrakzin		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+avalehikA		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+avalokita		3	2	5	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+avalopya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+avaneya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+avasiti		1	1	2	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+avekAcArya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+avekzitavya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+avyayavant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+avyfdDi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+awarUza		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+ayaskAnta		1	1	5	61	3	22	0.3607	0	0	0	R0_grounding_not_computed
+azwrAvin		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+bAReSvara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+bAhuBAzya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+bAhubADa		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+bAhutA		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+bAhyatA		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+bAlaja		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+bAlakapriya		3	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+bAlakfzRa		2	2	18	0	0	0		0	0	0	R2_no_wordsem_tag
+bAlaputraka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+bElvAyana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+bEndavi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+baBruka		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+badDamuzwi		2	2	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+bahiryoga		2	2	4	0	0	0		0	0	0	R2_no_wordsem_tag
+bahizpariDi		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+bahrAmaKAna		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+bahuDana		1	1	1	0	1	1		0	0	0	R0_grounding_not_computed
+bahuganDadA		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+bahukulIna		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+bahupatnIkatA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+bahurUpa		13	13	51	25	2	8	0.3200	0	1	1	R3_tagged_but_unaligned
+balaprasU		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+balay		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+banDitra		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+banDumant		4	4	17	20	1	1	0.0500	0	0	0	R0_grounding_not_computed
+banDuvaYcaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+bfhadaBiDAnacintAmaRi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+bfhadatri		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+bfhadbIja		2	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+bfhaddurga		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+bfhannAradIya		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+bilvapattrikA		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+bisavartman		1	1	4	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+brAhmOdanika		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+brAhmaRavant	2	1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+brahmOdana		1	1	20	14	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+brahmaparizadya		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+brahmarAta		1	1	4	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+brahmasatI		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+brahmayazwi		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+brahmayuga		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+bubura		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+bukkAra		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+cApin		2	2	3	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+cArmIya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+cEnyaBawwa		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+cEtya	2	3	3	47	142	3	15	0.1056	0	0	0	R0_grounding_not_computed
+cIri		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+cIrita		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+cUrRaSas		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+cUrRaka		4	4	7	79	1	39	0.4937	0	0	0	R0_grounding_not_computed
+caNga		3	2	17		0	0		0	0	0	R1_lemma_absent_from_dcs
+caRqAlatA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+cakrAvarta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+camaravAla		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+candraBUti		1	1	2	3	1	3	1.0000	0	0	0	R0_grounding_not_computed
+candratApana		1	1	3	0	0	0		0	0	0	R2_no_wordsem_tag
+candravallarI		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+candravindu		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+capya		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+caraRapatana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+carmAnta		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+carmamaya		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+carmamna		1	1	2	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+caturASramya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+caturhotraka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+caturmuKarasa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+caturnetar		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+caturviDa		1	1	15	392	2	91	0.2321	0	0	0	R0_grounding_not_computed
+catvar		1	1	28		0	0		0	0	0	R1_lemma_absent_from_dcs
+cawatkfti		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+cezwa		7	7	42	3	1	1	0.3333	0	0	0	R0_grounding_not_computed
+ciNgawa		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+cidAnandAy		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+cirIwI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ciratikta		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+citrASva		1	1	1	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+citraBAnu		8	8	45	39	3	9	0.2308	0	0	0	R0_grounding_not_computed
+citramfga		1	1	3	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+copana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+culla		1	1	5	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+cyUta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+dADikra		1	1	5	0	0	0		0	0	0	R2_no_wordsem_tag
+dASameya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+dAlaka		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+dAnIya		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+dAnapati		3	3	14	21	2	6	0.2857	0	0	0	R0_grounding_not_computed
+dArukAvana		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+dArvikA		2	2	2	3	1	2	0.6667	0	0	0	R0_grounding_not_computed
+dEpa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+dEtya	1	1	1	14	1126	1	72	0.0639	0	0	0	R0_grounding_not_computed
+dEvajana		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+dEvapara		1	1	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+dIDiti	2	1	1	26	47	1	3	0.0638	0	0	0	R0_grounding_not_computed
+dIpapuzpa		1	1	2	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+dIrGaGAwika		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+dIrGaSUkaka		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+dIrGacCada		2	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+dIrGamuKa		3	3	3	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+dIrGarAva		2	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+dIrGasattra		2	2	11	8	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+dOrvacasya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+dUrakta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+daMSaBIru		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+daRqana		2	2	8	9	1	1	0.1111	0	0	0	R0_grounding_not_computed
+daRqapoRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+daSama	2	1	1	3	256	1	37	0.1445	0	0	0	R0_grounding_not_computed
+dakz		2	2	16	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+dakzavfD		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+dakziRApaTa		2	2	18	29	1	5	0.1724	0	0	0	R0_grounding_not_computed
+dalanirmoka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+dalin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+dama	2	5	4	49	479	9	24	0.0501	0	0	0	R0_grounding_not_computed
+dantaPala		3	2	5	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+dantaSoDanI		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+dantakumAra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+dantapuppuwa		1	1	4	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+dantidanta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+darB	2	1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+darBAvatI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+deSawa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+dehaDi		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+devADipa		2	2	2	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+devArha		2	1	2	3	1	1	0.3333	0	0	0	R0_grounding_not_computed
+devAri		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+devaBUmi		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+devaSatru	1	1	1	3	3	2	3	1.0000	0	0	0	R0_grounding_not_computed
+devaSilpa		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+devakardama		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+devalANgulikA		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+devasunda		1	1	1	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+devatrA		1	1	18	32	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+devavIti		2	2	12		0	0		0	0	0	R1_lemma_absent_from_dcs
+devavarman		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+devayaj		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+devayaji		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+dfQanABa		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+dfgjyA		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+dfzwanazwa		1	1	10		0	0		0	0	0	R1_lemma_absent_from_dcs
+diSAgaja		1	1	7	11	1	5	0.4545	0	0	0	R0_grounding_not_computed
+dir		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+divasaBartar		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+doha		2	2	36	50	2	3	0.0600	0	0	0	R0_grounding_not_computed
+dohala		2	2	8		0	0		0	0	0	R1_lemma_absent_from_dcs
+dos		2	2	27	113	1	7	0.0619	0	0	0	R0_grounding_not_computed
+dozAmanya		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+dozala		1	1	5	18	2	3	0.1667	0	0	0	R0_grounding_not_computed
+drAK		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+drUGaRa		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+droRaduGA		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+druR		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+druh	2	2	2	34	120	10	13	0.1083	0	0	0	R0_grounding_not_computed
+drumakiMnarapraBa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+duHsADin		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+duHsaciva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+dugDapAzARa		1	1	2	4	1	2	0.5000	0	0	0	R0_grounding_not_computed
+durAmnAya		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+durArADya		1	1	14	7	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+durgaSEla		1	1	1	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+durmAtsarya		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+durmantrita		1	1	6	28	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+durnaya		1	1	22	24	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+durvidvaMs		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+durvyavasTApaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+duzkft		1	1	14	18	1	2	0.1111	0	0	0	R0_grounding_not_computed
+duzparihantu		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+duzprasAha		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+dvaMdvacara		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+dvayAtmaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+dviKaRqikA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+dvidevata		2	2	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+dvisaptatitama		1	1	6	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+dviveda		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+ekAkzara	1	1	1	1	18	1	5	0.2778	0	0	0	R0_grounding_not_computed
+ekIBAvin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ekaBAva	1	1	1	4	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+ekaDA		1	1	23	57	2	7	0.1228	0	0	0	R0_grounding_not_computed
+ekapAwalA		1	1	2	7	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+ekavIra		3	3	12	8	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+ekaviDa		1	1	3	20	1	1	0.0500	0	0	0	R0_grounding_not_computed
+ekaviMSavant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ekazazwi		1	1	3	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+eru		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+ezavIra		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+f		5	3	6	40	1	36	0.9000	0	0	0	R0_grounding_not_computed
+fjurohita		1	1	1	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+ftebarhizka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+fterakzas		1	0	0	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+fzicodana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+fzikft		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+gARqavya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+gATaka		1	1	4	0	0	0		0	0	0	R2_no_wordsem_tag
+gATikA		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+gAnDapiNgaleya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+gAnDarvika		1	1	2	17	1	1	0.0588	0	0	0	R0_grounding_not_computed
+gArutmatapatrikA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+gAveDuka		1	1	8	0	0	0		0	0	0	R2_no_wordsem_tag
+gOqorvISakulapraSasti		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+gOrIlalita		1	1	2	0	1	1		0	0	0	R0_grounding_not_computed
+gOrila		2	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+gUrDay		1	1	2	0	1	1		0	0	0	R0_grounding_not_computed
+gaRacCandas		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+gaRqAnta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+gaRya		2	2	9	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+ganDamAlya		2	1	8		0	0		0	0	0	R1_lemma_absent_from_dcs
+ganDamArjAra		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+ganDamUzikA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ganDarasANgaka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+ganDarva		12	12	194	1460	5	190	0.1301	0	1	1	R3_tagged_but_unaligned
+ganDavant		8	8	39		0	0		0	0	0	R1_lemma_absent_from_dcs
+ganDayuti		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+gaqalavaRa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+gaqqArikA		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+garBakzaya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+garBatA		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+garalAy		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+garalin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+gardaBikA		1	1	3	0	1	1		0	0	0	R0_grounding_not_computed
+gartAruh		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+gavAyuta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+gaveSakA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+gir	1	1	0	0	859	12	56	0.0652	0	0	0	R0_grounding_not_computed
+giriRadI		1	1	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+giriSfNga		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+girija		8	8	35	30	4	19	0.6333	0	0	0	R0_grounding_not_computed
+girijvara		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+girisravA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+goSAla		3	3	12		0	0		0	0	0	R1_lemma_absent_from_dcs
+gokfta		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+golattikA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+gonAsa		4	4	6	3	1	1	0.3333	0	0	0	R0_grounding_not_computed
+goparvata		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+gopatva		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+gopyaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+gosTAna		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+gosaMBavA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+govindadeva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+goyUti		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+grAmaGozin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+grahanemi		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+granTinikA		1	0	0	0	0	0		0	0	0	R2_no_wordsem_tag
+guNgu		2	2	3	3	1	1	0.3333	0	0	0	R0_grounding_not_computed
+guRakeSI		1	1	2	9	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+guRaprakASadIDitimATurI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+guRatA		2	2	2	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+guRqAlA		1	1	3	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+guh	2	1	1	1	441	5	32	0.0726	0	0	0	R0_grounding_not_computed
+guhyakAlI		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+gup	2	1	1	3	453	7	28	0.0618	0	0	0	R0_grounding_not_computed
+gur		1	1	41	18	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+gurukAra		1	1	1	2	2	2	1.0000	0	0	0	R0_grounding_not_computed
+gurustava		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+hANgara		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+hArda		3	3	27	29	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+hArtra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+hAsyakft		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+hIhIkAra		1	1	2	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+haMsakAkIya		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+haMsaprapatana		1	1	1	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+harAdri		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+haramuja		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+hariBakta		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+hariRahfdaya		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+haridrika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+haryaSva	2	3	3	33	75	3	6	0.0800	0	0	0	R0_grounding_not_computed
+haryavana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+hastasidDi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+hastikarRapalASa		1	1	1	5	1	1	0.2000	0	0	0	R0_grounding_not_computed
+hastipada	1	1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+heli		3	3	13	3	2	3	1.0000	0	0	0	R0_grounding_not_computed
+hetuvAdin		1	1	1	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+hfdisTa		1	1	8	36	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+hiRqika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+himaja		3	3	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+himakUwa	2	1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+himatviz		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+hiraRyakftacUqa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+hiraRyatejas		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+hlIku		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+hradavya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+hruqu		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+huraScit		1	1	3	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+iNg		2	2	15	11	1	1	0.0909	0	0	0	R0_grounding_not_computed
+ihasTAna		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ikzuganDa		6	6	16	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+illala		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+inDanavant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+indrABa		1	1	3	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+indraBaginI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+indramAdana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+indratva		2	2	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+indriya		6	6	166	2664	16	233	0.0875	0	0	0	R0_grounding_not_computed
+induBavA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+induvrata		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+itimAtram		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+itvara		6	6	12	4	1	1	0.2500	0	0	0	R0_grounding_not_computed
+ityarTa		1	1	1	12	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+iz	2	2	2	18	4534	21	385	0.0849	0	0	0	R0_grounding_not_computed
+izupuNKA		1	1	1	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+izvAsa		2	2	14	539	2	56	0.1039	0	0	0	R0_grounding_not_computed
+jANgulika		1	1	5	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+jAlakzIrya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+jAmbUnada	1	2	2	20	168	5	69	0.4107	0	0	0	R0_grounding_not_computed
+jAna	2	1	1	1	6	1	2	0.3333	0	0	0	R0_grounding_not_computed
+jAtarUpaSila		1	1	1	0	1	1		0	0	0	R0_grounding_not_computed
+jAwilika		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+jEgIzavya		1	1	11	49	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+jEmanta		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+jIrRaPaYjI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+jIvitavya		3	3	9		0	0		0	0	0	R1_lemma_absent_from_dcs
+jUtimant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+jYAtaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+jaNGa		2	2	40		0	0		0	0	0	R1_lemma_absent_from_dcs
+jagadISvara		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+jagatya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+jagmi		1	1	12	8	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+jalAluka		2	2	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+jaladAna		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+jana	1	4	3	151	3519	18	351	0.0997	0	0	0	R0_grounding_not_computed
+janayizRu		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+janman		12	12	86	1556	18	102	0.0656	0	0	0	R0_grounding_not_computed
+jaqASaya		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+jaqa		9	9	95	231	4	14	0.0606	0	0	0	R0_grounding_not_computed
+jartika		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+javana	1	8	7	37	71	3	7	0.0986	0	0	0	R0_grounding_not_computed
+jayAkara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+jayApIqa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+jayin		3	3	20	34	1	1	0.0294	0	0	0	R0_grounding_not_computed
+jozas		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+jyotizkaraRqaka		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+kASya	1	1	1	26	34	1	2	0.0588	0	0	0	R0_grounding_not_computed
+kASyapIBuj		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kAYcanavega		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kAkiRi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kAlakandaka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kAlakuYca		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kAmIna		1	1	3	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kAmapAla		1	1	4	17	1	2	0.1176	0	0	0	R0_grounding_not_computed
+kAnanAri		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kAntotpIqA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kApAlin		3	3	5	5	1	1	0.2000	0	0	0	R0_grounding_not_computed
+kApotaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kApyakAra		2	2	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+kAryakAraRatva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kArzman		1	1	3	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kAsa	3	1	1	5	903	2	174	0.1927	0	0	0	R0_grounding_not_computed
+kEriSi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kEtavaka		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kIlaka		1	1	21	40	2	3	0.0750	0	0	0	R0_grounding_not_computed
+kORapa		2	2	6	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kOSikapriya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kOYjara		2	2	6	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kOla		4	4	10	16	1	3	0.1875	0	0	0	R0_grounding_not_computed
+kOravya		1	1	23	339	7	14	0.0413	0	0	0	R0_grounding_not_computed
+kOzArava		1	1	8	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kUq		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kaMja		4	4	17		0	0		0	0	0	R1_lemma_absent_from_dcs
+kaNkata		2	2	12	8	1	1	0.1250	0	0	0	R0_grounding_not_computed
+kaRIyaMs		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kaRWatas		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kaRaBuj		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+kaRw		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+kaWaSAWa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kaYjARa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kacCeSvara		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kaceSvara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kadaka		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+kakzIkaraRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kalama		3	2	15	34	1	12	0.3529	0	0	0	R0_grounding_not_computed
+kalki		1	1	20	16	1	1	0.0625	0	0	0	R0_grounding_not_computed
+kalpaDenu		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kalukka		3	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kamalAyuDa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kamalaBidA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kambalaka		1	1	1	2	2	2	1.0000	0	0	0	R0_grounding_not_computed
+kamparAja		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kanTA		4	4	27	18	2	5	0.2778	0	0	0	R0_grounding_not_computed
+kanakarasa		2	2	3	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+kandaguqUcI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kandarodBavA		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+kanizWa		6	6	52	79	3	15	0.1899	0	0	0	R0_grounding_not_computed
+kapAlaSiras		1	1	3	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kapAlasPowa		1	1	2	7	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kapiketana		1	1	1	7	1	6	0.8571	0	0	0	R0_grounding_not_computed
+kapilapaYcarAtra		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kapola		3	3	18	135	1	2	0.0148	0	0	0	R0_grounding_not_computed
+karIzaka		1	1	1	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+karRapattraBaNga		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+karRasaMsrAva		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+karRaveDanI		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+karRaviz		1	1	2	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+karaBUzaRa		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+karapuwa		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+kardaminI		1	1	1	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+karkaweSa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+karmin		1	1	22	53	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+karparAla		1	1	3	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+karta		1	1	15	10	1	1	0.1000	0	0	0	R0_grounding_not_computed
+kawaGoza		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+keSa	2	1	1	2	841	4	92	0.1094	0	0	0	R0_grounding_not_computed
+keSapiNgala		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kedAranATa		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kekara		1	1	7	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kela		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kfcCrin		1	1	3	5	1	1	0.2000	0	0	0	R0_grounding_not_computed
+kfmilASva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kfsara		1	1	39	39	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kftaparva		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kftikara		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kftin		4	4	41	162	3	4	0.0247	0	0	0	R0_grounding_not_computed
+kftyakalpataru		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kfzRaSfNga		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kfzRasundara		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kfzRatila		1	1	3	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kiMrAjan		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kiNkaRI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kizkuparvan		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kloman		1	1	32	35	1	5	0.1429	0	0	0	R0_grounding_not_computed
+koReya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+koSakAraka		1	1	2	2	1	2	1.0000	0	0	0	R0_grounding_not_computed
+kokilekzu		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kolvagireya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kopakrama	1	1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kozaDAvana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+krImARa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+krOYcabanDa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+krOqi		1	1	1	0	1	1		0	0	0	R0_grounding_not_computed
+kramAgata		1	1	12		0	0		0	0	0	R1_lemma_absent_from_dcs
+kramitar		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+krap		1	1	12		0	0		0	0	0	R1_lemma_absent_from_dcs
+kravya		1	1	9	24	3	4	0.1667	0	0	0	R0_grounding_not_computed
+krozwuPala		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+kuRi		4	4	17	24	2	2	0.0833	0	0	0	R0_grounding_not_computed
+kuRqagolaka		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kuRqalanA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kuhakka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kuhvAna		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kuj		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+kujanman		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kulahaRqaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kuliSalepa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kumArADyApaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kumAridatta		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kumBalA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kupARi		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kuruRwaka		1	1	7	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kurukandaka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kutApasa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kuvIRA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kuvastra		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kuwicara		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kzEta		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+kzIRAzwakarman		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+kzIrapa		1	1	4	12	1	2	0.1667	0	0	0	R0_grounding_not_computed
+kzIrazazwika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kzOra		2	2	15	7	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kzaRadAcara		1	1	8	5	1	4	0.8000	0	0	0	R0_grounding_not_computed
+kzamApati		1	1	1	0	1	1		0	0	0	R0_grounding_not_computed
+kzapA		2	2	22	116	3	17	0.1466	0	0	0	R0_grounding_not_computed
+kzarya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kzatradeva		1	1	1	13	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kzetrADipa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kzetrapada		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kzetrarakza		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kzoRI		1	1	24	29	1	1	0.0345	0	0	0	R0_grounding_not_computed
+kzuDAmAra		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kzudranAsika		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kzudrapAzARaBedA		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+kzudravArtAkI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+kzullatAta		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+kzumA		4	4	13	4	1	1	0.2500	0	0	0	R0_grounding_not_computed
+lAWy		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+lAvAkza		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+lIlAcala		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+lOhaSaNku		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+lOhakAri		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+laGucCadA		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+laGupattraka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+laNGatI		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+laNgaka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+laka		2	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+lakzmaRAcArya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+lakzmaRadeva		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+lakzmaRakavaca		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+lalAmagu		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+lalana		6	6	53	6	1	1	0.1667	0	0	0	R0_grounding_not_computed
+lavaNga		1	1	15		0	0		0	0	0	R1_lemma_absent_from_dcs
+lavaRIkar		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+lohitakzaya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+lokaBAvin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+lokasTiti		1	1	4	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+lomaharzaRaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+lubDatA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mADavacarita		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mADvIka		1	1	19	17	1	1	0.0588	0	0	0	R0_grounding_not_computed
+mANguzya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mAhA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mAkuli		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+mAkzikaPala		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+mAlIya		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+mAluka		1	0	0	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+mAlyapuzpa		1	1	2	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+mAnavarjita		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+mAqArya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mArqAkava		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mArqIka		1	1	5	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+mArtARqa		2	2	8	9	4	4	0.4444	0	0	0	R0_grounding_not_computed
+mArza		2	2	8	52	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+mAsakAlika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mAsaka		1	1	2	4	1	1	0.2500	0	0	0	R0_grounding_not_computed
+mAtaNga		8	8	56		0	0		0	0	0	R1_lemma_absent_from_dcs
+mAtar	1	10	10	123		0	0		0	0	0	R1_lemma_absent_from_dcs
+mAtfzvasar		1	1	13		0	0		0	0	0	R1_lemma_absent_from_dcs
+mETunikA		1	1	1	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+mEreya		1	1	27	35	2	7	0.2000	0	0	0	R0_grounding_not_computed
+mOYjavata		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+mOlin		3	3	6	10	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+mOryadatta		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+mUQamati		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mUlakArikA		1	1	1	2	1	2	1.0000	0	0	0	R0_grounding_not_computed
+mUlapraRihita		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+mUrRa		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+mUtrAGAta		1	1	9	33	1	2	0.0606	0	0	0	R0_grounding_not_computed
+mUzala		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+maDUla		6	4	8	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+maDUtsava		1	1	4	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+maDuDArA		2	2	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+maDurodaka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+maDuvilA		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+maDyamaSI		1	1	4	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+maDyamakAlaMkAra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+maDyamakeya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+maDyatA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+maGadeya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+maNgalacCAya		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+maNgapuzpa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+maRqalADipa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+maSaharI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+maYjusOraBa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+madAvasTA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+madanAgraka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+madanecCAPala		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+madgurasI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+madrAjanI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+madvan		1	1	4	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+mahABizeka		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahADana	1	4	4	14	107	2	19	0.1776	0	0	0	R0_grounding_not_computed
+mahAPala	1	2	2	2	6	1	1	0.1667	0	0	0	R0_grounding_not_computed
+mahASItavatI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahASUdra		1	1	6	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+mahAbIjya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahAbalasUtra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahApArevata		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+mahApAtra		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahApEWInasi		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahApadmasaras		1	1	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahAromaSa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahAsAmanta		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahAsattva	3	1	1	1	464	4	12	0.0259	0	0	0	R0_grounding_not_computed
+mahAsmfti		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahAstoma		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahAtyAga	2	2	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahAvana	2	1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahIsUnu		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahakka		3	2	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahanta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mahendra		7	7	109	111	3	45	0.4054	0	0	0	R0_grounding_not_computed
+mahendranagarI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+maheraRA		1	1	4	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+majjArasa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+makarakawI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+malinIBU		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mallavAstu		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+manAnak		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+manTin		5	5	25	4	1	1	0.2500	0	0	0	R0_grounding_not_computed
+manTodaka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+manasAdattA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+manasAjYAyin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mandaprajYa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+manday		1	1	1	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+manmaTAnanda		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+manojU		1	1	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+manomuh		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+manovedaSiras		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+manoyuj		2	2	10		0	0		0	0	0	R1_lemma_absent_from_dcs
+mantraRa		1	1	15	7	1	2	0.2857	0	0	0	R0_grounding_not_computed
+marS		3	3	297		0	0		0	0	0	R1_lemma_absent_from_dcs
+mark		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+marudvipa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+marzaRIya		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+masivarDana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mask		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+mastuluNga		1	1	11	13	1	5	0.3846	0	0	0	R0_grounding_not_computed
+mat		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+matsyAd		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mattAkrIqA		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+medasvin		1	1	2	9	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+medini		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+mfdBARqa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+mfducarmin		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+mfgANka		5	5	14	34	2	20	0.5882	0	0	0	R0_grounding_not_computed
+mfgamuKa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+mfgaya		1	1	3	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+mfgya		1	1	11		0	0		0	0	0	R1_lemma_absent_from_dcs
+mfqitar		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+mfta		1	1	3	32	2	2	0.0625	0	0	0	R0_grounding_not_computed
+mftaSabda		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+miSrakeSava		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mitAhAra	1	1	1	3	0	0	0		0	0	0	R2_no_wordsem_tag
+mitravarman		1	1	4	21	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+muKalepa		2	2	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+muKanivAsinI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+muKatas	1	1	1	16	19	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+muKyatas		1	1	1	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+mudgaBuj		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+mukandaka		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+mukundu		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+mumUrzA		1	1	4	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+muraNgI		1	0	0	8	1	1	0.1250	0	0	0	R0_grounding_not_computed
+muragaRqa		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+mustagiri		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+mustu		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nABijanman		1	1	2	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+nAgacUqa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nAgaka		1	1	1	6	1	5	0.8333	0	0	0	R0_grounding_not_computed
+nAgakiYjalka		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nAgapada		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+nAgasuganDA		1	1	4	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nAmaka		1	1	11	85	1	14	0.1647	0	0	0	R0_grounding_not_computed
+nAnAgraha		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nAnAvarRa	1	1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nAqIprakASa		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+nAqiMDama		1	1	8		0	0		0	0	0	R1_lemma_absent_from_dcs
+nArAyaRasUri		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nAsikaMDaya		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+nAtigADa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nAwya		2	2	36	121	3	4	0.0331	0	0	0	R0_grounding_not_computed
+nEhAra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nEkazeya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+nEpuRya		2	2	13	21	1	1	0.0476	0	0	0	R0_grounding_not_computed
+nErayika		1	1	1	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nEzPalya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nIlAmlAna		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nIlalohita		4	3	26	91	2	30	0.3297	0	0	0	R0_grounding_not_computed
+nIlamehin		1	1	2	3	1	2	0.6667	0	0	0	R0_grounding_not_computed
+nItimant		1	1	12		0	0		0	0	0	R1_lemma_absent_from_dcs
+nIvan		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+nOlika		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nOvyasana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+naB	1	1	1	12	42	1	6	0.1429	0	0	0	R0_grounding_not_computed
+nadIna		2	2	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+nadanumant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nagavfttikA		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+nalinIruha		2	2	4	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nandASrama		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nandImuKa		5	5	8	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nandanandana		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+nandapaRqita		1	1	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+napuMsakatva		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+narendrAhva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+narmasaciva		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+nasatta		1	1	1	0	1	1		0	0	0	R0_grounding_not_computed
+navata	1	1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nazwASvadagDaraTavat		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nazwendukalA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+neday		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+netrarogahan		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+nfmara		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+nfpAyya		1	1	6	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nfsiMhacampU		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+nftu		2	2	14	10	1	3	0.3000	0	0	0	R0_grounding_not_computed
+niGaRwurAja		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+niHSaMsaya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+niHsArya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+niHsaMDi		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+niKara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+niRij		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+niSrAvin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+niSuzma		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nicumpuRa		2	2	6	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nidarSaka		2	2	5	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nikarzaRa		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nikumBa		3	3	37	77	2	13	0.1688	0	0	0	R0_grounding_not_computed
+nilAy		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+nimittaka		2	2	4	4	1	1	0.2500	0	0	0	R0_grounding_not_computed
+ninditASva		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+niprayatna		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+nirASaNka		1	1	4	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nirAgama		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nirAmAlu		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+nirBfti		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nirGfRa		1	1	18	39	2	7	0.1795	0	0	0	R0_grounding_not_computed
+nirUha	2	1	1	3	84	1	4	0.0476	0	0	0	R0_grounding_not_computed
+niraBiBava		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+niranukroSa	2	1	1	10	16	1	2	0.1250	0	0	0	R0_grounding_not_computed
+niranuyojya		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+niranvaya		3	3	5	5	1	2	0.4000	0	0	0	R0_grounding_not_computed
+nirbudDi		1	1	2	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nirgranTa		5	5	31	23	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nirinDana		1	1	5	8	1	1	0.1250	0	0	0	R0_grounding_not_computed
+nirmADyasTa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nirmAya		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nirmanTya		1	1	4	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nirvARamaRqapa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+nirvArARasi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nirvega		1	1	5	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+nirviDitsa		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+nistuza		2	2	2	23	3	8	0.3478	0	0	0	R0_grounding_not_computed
+nisumBa		1	0	0	0	0	0		0	0	0	R2_no_wordsem_tag
+nivAnyavatsA		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+niyoDaka		1	1	3	4	1	2	0.5000	0	0	0	R0_grounding_not_computed
+niyojikA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nizavya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nizkAsin		2	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+nizpattrAkar		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+nyasana		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+o	1	1	1	4	10	1	7	0.7000	0	0	0	R0_grounding_not_computed
+oQa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+okula		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+pA	5	1	1	4	4243	12	488	0.1150	0	0	0	R0_grounding_not_computed
+pAMsana		2	2	20	49	2	4	0.0816	0	0	0	R0_grounding_not_computed
+pARqara		8	7	30	36	2	3	0.0833	0	0	0	R0_grounding_not_computed
+pASaDara		1	1	3	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pATa		4	2	5	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pAWIna		3	3	20	15	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pAWanAramBapIWikA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pAYcarAtraka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pAYcavarRa		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+pAdAmbu		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pAdamudrA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+pAdapaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pAdapratizWAna		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pAdavandanika		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+pAdin		2	2	9	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pAjasya		1	1	9	6	1	1	0.1667	0	0	0	R0_grounding_not_computed
+pAlaNkya		2	2	7	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pAlakAvya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+pAlitya		2	2	3	11	1	1	0.0909	0	0	0	R0_grounding_not_computed
+pArata	1	1	1	8		0	0		0	0	0	R1_lemma_absent_from_dcs
+pAravaSya		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pAtaYjala		1	1	20	4	1	1	0.2500	0	0	0	R0_grounding_not_computed
+pAtaYjali		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pAwalopala		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pEppalAdaka		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+pItayUTI		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+pOMsavana		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+pOrARika		2	2	20	37	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pOtimAza		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pUrRakakud		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pUrRopamA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+pUrvakAla	1	1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+paNka		3	3	43	233	11	43	0.1845	0	0	0	R0_grounding_not_computed
+paNkasUraRa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+paScAttApa		1	1	13	28	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+paSyantI		2	2	4	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+paSyatohara		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+paTya		9	9	100	459	6	86	0.1874	0	0	0	R0_grounding_not_computed
+paYcAvayava		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+paYcadaSan		1	1	15	185	1	21	0.1135	0	0	0	R0_grounding_not_computed
+pac	1	4	4	143	1844	16	804	0.4360	0	0	0	R0_grounding_not_computed
+pacana		8	7	16	38	3	9	0.2368	0	0	0	R0_grounding_not_computed
+pacaprakUwA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+padAnuSAsana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+padArTaprakASa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+padDima		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+padacCeda		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+padasaMGAwa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+padasamUha		2	2	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+padmabIja		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+pakzi		1	1	1	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+pakzila		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+palAdana		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+parAk		1	0	0	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+parIsAra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+parRakfcCra		1	1	1	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+parRamAcAla		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+paraMpara		6	6	49		0	0		0	0	0	R1_lemma_absent_from_dcs
+paraSvaDa		1	1	16	116	2	17	0.1466	0	0	0	R0_grounding_not_computed
+paragata		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+paramAnanda		2	2	10	21	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+paramESvarya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+paramezWA		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+pareSa		1	1	4	6	1	1	0.1667	0	0	0	R0_grounding_not_computed
+pariGfzwika		1	1	3	0	0	0		0	0	0	R2_no_wordsem_tag
+parigahana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+parikANkzita		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+parikzA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+parimoza		1	1	5	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+paripiYjara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pariprepsu		1	1	4	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+parisAvakIy		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+parisamutsuka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+parivarDita		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+parivedana	3	1	1	5	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+parivftti	1	3	3	14	18	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+parizwi		2	2	4	4	2	2	0.5000	0	0	0	R0_grounding_not_computed
+paryaNka		3	3	47	144	4	14	0.0972	0	0	0	R0_grounding_not_computed
+paryanubanDa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+patAkin		6	6	30	45	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+patigaRitawIkA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pattrANguli		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+pattraSreRI		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pawavAsa	1	1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+peraja		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+pfSniSfNga		1	1	5	0	1	1		0	0	0	R0_grounding_not_computed
+pfTula		2	2	15	33	3	4	0.1212	0	0	0	R0_grounding_not_computed
+pfzadDra		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+pfzadvant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pfzattA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+piNgajawa		1	1	1	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+piRqAlu		1	1	6	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pibd		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+pikAnanda		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pitariSUra		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+pitfbanDu		2	2	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+pitfdevatya		1	1	9		0	0		0	0	0	R1_lemma_absent_from_dcs
+plAva		1	1	4	6	1	2	0.3333	0	0	0	R0_grounding_not_computed
+pluz		2	2	30	18	1	1	0.0556	0	0	0	R0_grounding_not_computed
+poTakI		1	1	4	12	1	1	0.0833	0	0	0	R0_grounding_not_computed
+potalaka		1	1	1	8	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+prABava		1	1	2	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+prAGuRa		1	1	9		0	0		0	0	0	R1_lemma_absent_from_dcs
+prARaBAsvant		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+prARahArin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+prARamokzaRa		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+prARita		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+prASita		2	2	6	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+prAduzya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+prAdyoti		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+prAgukti		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+prAjApatyatva		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+prAkftasarvasva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+prAleyaraSmi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+prAptaBAva		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+prAtarjit		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+prAtastarAm		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+prAtiBAsika		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+prAtiboDa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+prAtipIya		1	1	12	7	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+prAtiveSmaka		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+prAyaRIya		6	6	36	44	1	6	0.1364	0	0	0	R0_grounding_not_computed
+praDi		2	2	16	17	1	1	0.0588	0	0	0	R0_grounding_not_computed
+praSAnta		2	1	3	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+praSAntatA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+praSastapAda		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+praSrayin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+praTama		11	11	159	1511	7	138	0.0913	0	0	1	R3_tagged_but_unaligned
+praTu		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+prabanDana		1	1	1	5	1	1	0.2000	0	0	0	R0_grounding_not_computed
+pracAla		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+pracalAy		1	1	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+pracetana		1	1	3	0	0	0		0	0	0	R2_no_wordsem_tag
+pracitasvara		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+pradIpaSaraRaDvaja		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pradyumnavijaya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+pragIti		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+prage		1	1	11	22	4	10	0.4545	0	0	0	R0_grounding_not_computed
+prajavin		1	1	5	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+prakfzya		2	2	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+prakzoBaRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pralaya		4	4	57	272	6	18	0.0662	0	0	0	R0_grounding_not_computed
+pramattaSramaRa		2	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+pramfta		2	2	11	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pramuditapralambasunayana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+prasAraRin		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+pratIcCaka		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pratImAna		1	0	0	0	0	0		0	0	0	R2_no_wordsem_tag
+pratIvApa		2	2	16	47	5	23	0.4894	0	0	0	R0_grounding_not_computed
+pratidfzwAntasama		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+pratigIrya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pratiharza		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pratihitezu		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pratikUlavftti		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pratiniyama		1	1	4	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pratipravAda		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pratipuruza		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+prativApa		1	0	0	30	3	21	0.7000	0	0	0	R0_grounding_not_computed
+prativant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+pratyAKyAyin		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+pratyakzapramA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+pratyanta		2	2	12	22	2	2	0.0909	0	0	0	R0_grounding_not_computed
+pravApin		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+pravAraka		2	2	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+pravIravara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+praveRi		3	3	16		0	0		0	0	0	R1_lemma_absent_from_dcs
+pravivikzu		1	1	5	7	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+prayAma		1	1	5	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+prayajyu		1	1	12	14	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+prekzaRIyatA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+priyaDA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+projjAsana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+puMScalIya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+puMgavaketu		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+puRatAmakara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+puRyaBUmi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+puRyakIrti		1	1	4	0	0	0		0	0	0	R2_no_wordsem_tag
+puRyapuRyatA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+purUdvaha		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+puraHPala		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+puriSaya		1	1	3	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+puroDA		1	1	13	58	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+purumantu		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+puruzIRa		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+puruzavacas		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+puzpAkaradeva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+puzpaDanvan		1	1	6	5	1	4	0.8000	0	0	0	R0_grounding_not_computed
+puzpaMDaya		1	1	5	0	0	0		0	0	0	R2_no_wordsem_tag
+puzpapARqu		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+puzyaDarman		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+qI		1	1	37		0	0		0	0	0	R1_lemma_absent_from_dcs
+rATItara		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+rAgamaYjarI		1	1	2	14	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+rAjaSEla		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+rAjalakzmI		2	2	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+rAjasArasa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+rAjezwa		2	2	4	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+rAmacandracampU		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+rAmakelI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+rAmakfzRa		1	1	41	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+rAmapUrvatApanIya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+rAsaBa		1	1	36	37	2	8	0.2162	0	0	0	R0_grounding_not_computed
+rAtriviSlezagAmin		2	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+rUpapa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+raMha		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+raNGanATa		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+raRaBUmi		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+raRakzetra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+raRapriya		3	2	3	3	1	1	0.3333	0	0	0	R0_grounding_not_computed
+raTAgra		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+raTOjas		1	1	1	8	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+raTasUtra		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+raktajihva		2	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+rakzakAmbA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ramaRIy		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ramaRya		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+rasABAsa		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+rasOkas	2	1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+rasanAyaka		1	1	2	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+ratanArIca		4	4	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+ratirahasya		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+rihlaRa		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+rikTahara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+riputA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+rohiRIcandraSayana		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+rohiRi		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+rohitavant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+rohiz		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+romapAda		1	1	4	22	1	7	0.3182	0	0	0	R0_grounding_not_computed
+ruSant	2	1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+ruSeku		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ruciBartar		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+rucira		6	5	101	277	4	28	0.1011	0	0	0	R0_grounding_not_computed
+ruciraSrIgarBa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+rucitva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+rudrAvasfzwa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+rudraSarman		1	1	1	5	1	1	0.2000	0	0	0	R0_grounding_not_computed
+rudrahimAlaya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+rudraroman		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+rudraviDAna		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+rujAvin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+rukmezu		1	1	3	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+ruruSIrzan		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sA	1	1	0	0	98	5	11	0.1122	0	0	0	R0_grounding_not_computed
+sADfta		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sAMmanasya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sANgarevas		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sAYja		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+sAhityadarpaRa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sAkalya		1	1	16	14	2	3	0.2143	0	0	0	R0_grounding_not_computed
+sAkzAt		7	7	119	694	3	55	0.0793	0	0	0	R0_grounding_not_computed
+sAmrARikardama		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+sAntvay		1	1	91	170	2	10	0.0588	0	0	0	R0_grounding_not_computed
+sAnu		1	1	74	175	11	31	0.1771	0	0	0	R0_grounding_not_computed
+sAnuruha		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sAraDAtar		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sAraTi		2	2	41	517	2	104	0.2012	0	0	0	R0_grounding_not_computed
+sArameya		2	2	24	18	1	9	0.5000	0	0	0	R0_grounding_not_computed
+sAramiti		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+sArasAyana		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+sArpya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sAtyakin		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sEhareya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sOdAmanI		4	4	38	11	1	2	0.1818	0	0	0	R0_grounding_not_computed
+sOhArdya		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+sOhma		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sOmadatti		1	1	11	67	1	8	0.1194	0	0	0	R0_grounding_not_computed
+sOpAmAyani		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sOparRIkAdrava		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+sOparRa		5	4	20	18	1	3	0.1667	0	0	0	R0_grounding_not_computed
+sOrapi		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sOrasaMhitA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sPaRw		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sPeyaMs		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+sPigI		1	1	3	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sPowaka		4	4	8	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sTAnadAtar		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sTAtar		2	2	19		0	0		0	0	0	R1_lemma_absent_from_dcs
+sTUlakaRwakikA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sTUlapUlAsa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sTavi		1	1	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+sTirajIvita		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sTitimant		3	3	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+sUcIpadma		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sUkzmapippalI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sUkzmekzikA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sUryapaRqita		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sUryasAman		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sUtivAta		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sUzaRA		1	1	1	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+saBfti		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+saDarma	1	1	1	1	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+saK		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+saKi		1	1	63	834	5	98	0.1175	0	0	0	R0_grounding_not_computed
+saMBAvayitavya		2	2	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+saMDeya		3	3	20		0	0		0	0	0	R1_lemma_absent_from_dcs
+saMDyArAga	2	2	1	2	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+saMGawana		1	1	6	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+saMdIpaka		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+saMdarSana		7	7	60	94	1	10	0.1064	0	0	0	R0_grounding_not_computed
+saMgItaratnamAlA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+saMketastava		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+saMmelana		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+saMnidAGa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+saMpUjA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+saMsfzwaDaya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+saMsfzwatva		2	2	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+saMsutasoma		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+saMvara	2	1	1	2	15	1	1	0.0667	0	0	0	R0_grounding_not_computed
+saMvargavidyA		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+saMvatsarika		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+saMviDAna		1	1	18	19	1	1	0.0526	0	0	0	R0_grounding_not_computed
+saMyadvAma		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+saYjanI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sabrAhmaRa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+saci		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sacivatA		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sadUrva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sadana		5	5	72	296	12	36	0.1216	0	0	0	R0_grounding_not_computed
+sadarTa	1	1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sadasattva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sadya		1	0	0	27	1	2	0.0741	0	0	0	R0_grounding_not_computed
+sahAlApa		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+sahOtra		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+sahaDarma		1	1	1	17	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sahakArin		1	1	18	14	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+saharzaBa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sahasrAraja		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sahasranAman	2	1	1	5	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sahasriya		2	2	3	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+sahetikAra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sahopaDa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sajj		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+saka		1	1	5	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+sakftPala		2	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sakoSa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sakopa		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+sal		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+samADiprakaraRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+samAKyAyam		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+samAnatantra		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+samApriya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+samanuyojya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+samaraBawa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+samatraya		1	1	2	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+samayIkar		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+samudGAtin		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+samudramAlin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+samunnadDa		1	0	0	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+samutPAla		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+samutkzepaRa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+samyaYc		11	11	180	36	3	4	0.1111	0	1	1	R3_tagged_but_unaligned
+samyagdfzwi		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sanAtana		5	5	98	672	10	87	0.1295	0	0	0	R0_grounding_not_computed
+sanaya		1	1	4	4	2	4	1.0000	0	0	0	R0_grounding_not_computed
+sanmiSrakeSava		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sannaBAva		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sannaka		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+sapadi		1	1	51	58	1	2	0.0345	0	0	0	R0_grounding_not_computed
+sapatnatva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+saptakft		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+saptamarIci		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sarUpopamA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+saraSmi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+saraTam		1	1	17		0	0		0	0	0	R1_lemma_absent_from_dcs
+sarasa	2	7	7	49	53	1	1	0.0189	0	0	0	R0_grounding_not_computed
+sarjaganDA		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sarpOzaDi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sarpita		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sarvADipatya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sarvOGa		2	2	6	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sarvaBAva		1	1	7	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sarvagati		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sarvagraharUpin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sarvajYAtar		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sarvakeSa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sarvasasya		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+sarvopakAriRI		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+sasa		1	1	11	7	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+satInaka		1	1	3	3	1	1	0.3333	0	0	0	R0_grounding_not_computed
+satrAsah		1	1	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+sattrin		2	2	23	49	1	2	0.0408	0	0	0	R0_grounding_not_computed
+satyaDarma	2	2	2	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+satyaka		5	5	15	16	1	1	0.0625	0	0	0	R0_grounding_not_computed
+savanika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+savedas		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+savfta		2	2	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+setakI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sfkvaRI		1	1	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+sfti		3	3	22	17	1	1	0.0588	0	0	0	R0_grounding_not_computed
+siMhasaMhanana		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sidDAntarahasya		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+sidDarUpa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sidDasADana		3	3	5	4	1	1	0.2500	0	0	0	R0_grounding_not_computed
+sidDayoginI		2	2	3	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sinv		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sitABra		2	2	8	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+sitAmbuja		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+skanDin		2	2	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+skandeSvaratIrTa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+snehana		4	4	23	94	4	9	0.0957	0	0	0	R0_grounding_not_computed
+snehapAtra		2	2	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sniw		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+somaSravas		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+somagraha		2	2	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+somakrayaRa		2	2	8		0	0		0	0	0	R1_lemma_absent_from_dcs
+somapAtra		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+somasidDAnta		3	3	11	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+somasutyA		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+sotsAhatA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+spAndana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sparSanendriya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+stamBaka		4	4	8	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+stanamaDya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+stfRIzan		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+stomAyana		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+stotray		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+strIgavI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+strIrajas		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+strIsuKa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+stutibrAhmaRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+suDArasa		2	2	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+suDarmin		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+suDfta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+suKArTa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+suKorjika		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+suSoBana		3	3	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+subAlAgrAma		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+subrahman	2	1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sucetas		3	3	7	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+sudAru	2	2	1	1	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+sudAvan		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sudina		3	3	21	9	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+suduHKita		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+sudurdfSa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sujuzwa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sukiMSuka		1	1	3	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sulin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sumandra		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sunAra		3	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+sunistriMSa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+sunizWita		1	0	0	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+supAkinI		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+supIvas		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+suparRItanaya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+supraketa	2	1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+supta		1	0	0	14	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+suputra	1	1	1	3	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+suradviz		1	1	15	22	2	2	0.0909	0	0	0	R0_grounding_not_computed
+suragiri		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+suravallI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+sureSa		3	3	16	28	4	10	0.3571	0	0	0	R0_grounding_not_computed
+susUkzmapattrA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+susaMprIta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+susanitar		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+susatkfta		3	3	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+sutIrTaka		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+sutantu		2	2	3	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+sutin		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+suvAtra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+suvarRagotra		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+suvismita		1	1	2	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+suyya		2	2	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+svAs		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+svAsfka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+svAsrIyi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+svaDAvant	2	3	3	7	0	0	0		0	0	0	R2_no_wordsem_tag
+svaDAyin		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+svadozaja		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+svagfha		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+svapatya	1	2	2	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+svarRamAtar		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+svarRazWIvin		1	1	1	4	1	1	0.2500	0	0	0	R0_grounding_not_computed
+svarUpa		5	5	89	479	6	28	0.0585	0	0	0	R0_grounding_not_computed
+svaraBakti		1	1	11	0	0	0		0	0	0	R2_no_wordsem_tag
+svayamavadIrRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+svedAYji		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+svizu		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tAnUnapAta		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+tAraSudDikara		1	1	3	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+tAt		1	1	4	2	2	2	1.0000	0	0	0	R0_grounding_not_computed
+tEBa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tEjasa		9	9	38	114	5	8	0.0702	0	0	0	R0_grounding_not_computed
+tElasPawika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tIkzRamUla		2	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+tOkzika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tUla		12	12	51	76	5	7	0.0921	0	1	1	R3_tagged_but_unaligned
+tadDarmin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tagara		2	2	21	94	1	10	0.1064	0	0	0	R0_grounding_not_computed
+takra		1	1	25	294	1	97	0.3299	0	0	0	R0_grounding_not_computed
+takzaSilA		1	1	15	8	2	2	0.2500	0	0	0	R0_grounding_not_computed
+tamisrapakza		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+tamomaya		2	2	8	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+tanUnaptar		1	1	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+tanmAnin		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+tantragarBa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+tantravApa		2	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+tantrottara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tantvagra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tanupAdakzapAwana		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tapasvin		8	8	62	420	1	54	0.1286	0	0	0	R0_grounding_not_computed
+taptaSUrmi		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+taqitvant		1	1	8	3	1	1	0.3333	0	0	0	R0_grounding_not_computed
+taravAri		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+taritavya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+taruRABAsa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tattva		3	3	100	2308	5	86	0.0373	0	0	0	R0_grounding_not_computed
+tej		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tejapattra		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+tejovfkza		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+tfRottama		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+tfkzAka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tfzucyavas		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+tiktaka		3	3	14	84	4	11	0.1310	0	0	0	R0_grounding_not_computed
+tilaBfzwa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tmUta		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+toyavallI		1	1	2	3	1	1	0.3333	0	0	0	R0_grounding_not_computed
+trEhAyaRa		1	1	3	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+trEliNga		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+trElokyamAlin		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+trEyalinda		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+trayoviMSatitama		1	1	1	0	1	1		0	0	0	R0_grounding_not_computed
+tridaSadIrGikA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+tridaSaguru		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+tridalikA		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+trikaRwaka		4	4	11	27	2	9	0.3333	0	0	0	R0_grounding_not_computed
+trimUrDan		1	0	0	3	1	3	1.0000	0	0	0	R0_grounding_not_computed
+tripaYcASattama		1	1	1	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+tripattra		2	2	5	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+trisaMDya	2	2	2	3	30	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+triskanDaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tryAliKita		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+tsArin		1	1	4	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+tuNgaDanvan		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+tuNgabala		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tuRqikerikA		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+tuliPalA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+tulyayogitA		1	1	4	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+turaMga		4	4	22	84	1	19	0.2262	0	0	0	R0_grounding_not_computed
+turaMgadvizaRI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+turagalIlaka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+tuvigra		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+tuvikzatra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+tvAva		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+tvE		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+tvagdozApahA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+tvakat		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+tvaritaka		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+uBayasaMBava		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+ucCizwatA		2	2	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+udAharin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+udAya		1	0	0	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+udGAtaka		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+udIpa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+udaSru		1	1	10	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+udakagiri		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+udala		1	1	3	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+udaremuKa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+udayAsu		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+uddAna		8	4	10	7	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+uddaRqapAla		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+uddala		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+uddeSa		3	3	64	230	5	25	0.1087	0	0	0	R0_grounding_not_computed
+udgiraRa		1	1	4	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+udyApana		1	1	4	4	1	1	0.2500	0	0	0	R0_grounding_not_computed
+udyogin		1	1	4	7	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+ukzaRy		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+upAvI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+upaBUzaRa		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+upakvasa		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+upalakzya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+upamAnacintAmaRi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+upamAnatA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+upaniveSa		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+upapOrika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+upapannatva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+uparizwAdbahatI		1	1	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+upaskAra		1	1	3	6	1	1	0.1667	0	0	0	R0_grounding_not_computed
+upatapant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+upavAhya		2	2	5	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+upaveSa		3	3	9	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+upekzaRa		1	1	2	10	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+upozya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+uqqIyana		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+uragasTAna		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+uromaRqalin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+urukft		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+utTAyitva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+utkarzaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+utkarzita		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+utpAraRa		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+utpalAkzI		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+uttarAyaRacakra		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+uttarajyA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+uttarakuru		1	0	0	17	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+uzAkala		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+uzIra		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+uzRAsaha		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+uzRagu		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+uzmAyaRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAHsadana		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAcAvirudDa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAcCalya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAcyaliNgaka		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAdyaBARqa		1	1	6		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAhaka		5	5	9	24	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vAjaBarman		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAjaBojin		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAjapeyaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAjimeDa		1	1	6	41	1	1	0.0244	0	0	0	R0_grounding_not_computed
+vAjineya		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vAlaDAna		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAlaDipriya		2	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAlukApraBA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAmadevya		3	3	29	49	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vArAhIputra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vArasundarI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vArdDakzatri		1	1	3	5	1	5	1.0000	0	0	0	R0_grounding_not_computed
+vAri	1	3	3	36	741	8	160	0.2159	0	0	0	R0_grounding_not_computed
+vArkeRI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vArtaka		2	2	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+vArttikendra		1	0	0	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vArya	2	2	2	29	77	3	10	0.1299	0	0	0	R0_grounding_not_computed
+vAryupajIvin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAsuki		2	2	57	169	1	29	0.1716	0	0	0	R0_grounding_not_computed
+vAsupUjya		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vAtAsaha		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAtagulma		2	2	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAtarUpA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vAtyA		1	1	25	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vAwya	2	1	1	3	8	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vESezika		6	6	34	39	3	5	0.1282	0	0	0	R0_grounding_not_computed
+vESravaRAlaya		2	2	2	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vESravaRAvAsa		1	1	2	0	1	1		0	0	0	R0_grounding_not_computed
+vEhArika		1	1	1	3	1	1	0.3333	0	0	0	R0_grounding_not_computed
+vEpArzRi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vEraMkara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vEramaRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vEriYcya		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vEtrakIyavana		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+vEyAGrapadI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vEzRuvAruRa		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vIraSayyA		2	2	8	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vIramukundadeva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vIraprajAvatI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vIravyUha		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vaMSanATa		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vaRigjana		1	1	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+vaRikkarman		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vaTsara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vaW		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vahnikumAra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vajrAmbujA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vajraSuci		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+vajrapraBa		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+vajraraTa		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+vakretara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+valana	2	1	0	0	8	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+valgulI		1	1	4	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+valk		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vanaja		5	5	18	14	5	6	0.4286	0	0	0	R0_grounding_not_computed
+vanakrakza		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vanatikta		2	2	5	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vanda		1	0	0	1	1	1	1.0000	0	0	0	R0_grounding_not_computed
+vapraka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+varANga	1	3	3	18	32	3	5	0.1562	0	0	0	R0_grounding_not_computed
+varARa		2	2	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+varDaki		1	1	10	13	1	2	0.1538	0	0	0	R0_grounding_not_computed
+varRaleKikA		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+varRay		4	4	175	291	2	16	0.0550	0	0	0	R0_grounding_not_computed
+varRi		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+varRya	1	2	2	5	55	1	9	0.1636	0	0	0	R0_grounding_not_computed
+varakAzWakA		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+varasraj		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+varastrI		1	1	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+varavAhlIka		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+vargIya		1	1	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+vargin		1	1	2	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vargya		1	1	6	4	1	1	0.2500	0	0	0	R0_grounding_not_computed
+varmaRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+varmaka		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vartitA		1	1	1	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vartitva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+varzABU		7	7	29	77	3	23	0.2987	0	0	0	R0_grounding_not_computed
+varzOGa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+varzamedas		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vasantamAlikA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vasizWasaMhitA		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+vastavya		2	2	32		0	0		0	0	0	R1_lemma_absent_from_dcs
+vasumanas		1	1	8	26	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vasuruci		1	1	2	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vatsIputra		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+vatsIya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vatsaSAlA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vawAku		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vedabrahmacarya		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vedaniDi		1	1	2	2	1	1	0.5000	0	0	0	R0_grounding_not_computed
+vedas	1	1	1	1	74	2	8	0.1081	0	0	0	R0_grounding_not_computed
+vepa		2	2	3	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vetragrahaRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vfDu		1	1	1	0	1	1		0	0	0	R0_grounding_not_computed
+vfdDaSarman		1	1	6	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vfdDagaNgADara		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vfdDaprapitAmaha		1	1	3	0	0	0		0	0	0	R2_no_wordsem_tag
+vfdDasuSruta		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vfj		1	1	1	152	2	2	0.0132	0	0	0	R0_grounding_not_computed
+vfkkaka		1	1	1	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vfkzAyurveda		1	1	7	0	0	0		0	0	0	R2_no_wordsem_tag
+vfkzacCAya		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+vfkzaruhA		1	1	3	8	1	1	0.1250	0	0	0	R0_grounding_not_computed
+vfkzavAsyaniketa		1	1	3	0	0	0		0	0	0	R2_no_wordsem_tag
+vftraSatru		1	1	5	6	1	4	0.6667	0	0	0	R0_grounding_not_computed
+vfttAkzepa		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+viBI		1	1	2	9	1	1	0.1111	0	0	0	R0_grounding_not_computed
+viBUticandra		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+viBettar		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+viBinduka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+viBinnadarSin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+viBraMSin		2	2	4	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+viDAtavya		5	5	22		0	0		0	0	0	R1_lemma_absent_from_dcs
+viDeya		6	6	59	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+viDi	2	1	1	2	2828	22	364	0.1287	0	0	0	R0_grounding_not_computed
+viDidarSin		1	1	1	0	0	0		0	0	0	R2_no_wordsem_tag
+viGana	1	2	2	11	4	2	2	0.5000	0	0	0	R0_grounding_not_computed
+viSezaRIkar		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+viSezavant		4	4	7		0	0		0	0	0	R1_lemma_absent_from_dcs
+viSokadeva		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+viSvAmfta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+viSvAsa		1	1	66	182	2	8	0.0440	0	0	0	R0_grounding_not_computed
+viSvAvawva		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+viSvaSarDas		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+viSvalocana		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+viSvanAman		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+viSvasOBaga		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+viSvasena		2	2	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+viSvasfzwi		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+viSvavyApin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+viWa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vicayana		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+vidAraka		4	4	15	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vidaTya		1	1	10	10	1	1	0.1000	0	0	0	R0_grounding_not_computed
+vidyADaratva		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+vihAyas	1	1	1	15	106	6	21	0.1981	0	0	0	R0_grounding_not_computed
+vijYAnakevala		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vijara		3	3	5	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vijawa		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vijayatIrTa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vijetar		1	1	11		0	0		0	0	0	R1_lemma_absent_from_dcs
+vikasvarUpa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vikeSa		5	5	14	12	2	2	0.1667	0	0	0	R0_grounding_not_computed
+vikramaSakti		1	1	9	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vikramin		3	3	8	5	1	1	0.2000	0	0	0	R0_grounding_not_computed
+vilAsaSIla		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vilAta		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vilakzaRa		2	2	54	47	1	1	0.0213	0	0	0	R0_grounding_not_computed
+vilayana		2	2	5	9	1	2	0.2222	0	0	0	R0_grounding_not_computed
+vimAna	1	8	8	96	586	5	61	0.1041	0	0	0	R0_grounding_not_computed
+vimalAtman		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vimita		1	0	0	6	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vimukta		2	1	1	3	2	2	0.6667	0	0	0	R0_grounding_not_computed
+vinABAvin		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vinamraka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vinayagrAhin		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vinayin		1	1	9	0	0	0		0	0	0	R2_no_wordsem_tag
+vinemidaSana		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vinipAtin		1	1	1	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vinodavant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vipratA		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+viqGAta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+virAtra		1	1	3	7	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+virAwpUrvA		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+viruda		1	1	12	0	1	1		0	0	0	R0_grounding_not_computed
+virudamaRimAlA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vistIrRa		1	0	0	4	1	1	0.2500	0	0	0	R0_grounding_not_computed
+vitAnamUlaka		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vitaram		1	1	8	9	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vitfza		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vituzwa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vitvakzaRa		1	1	2	0	0	0		0	0	0	R2_no_wordsem_tag
+vivarzaRa		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vivecana		5	5	18	21	1	1	0.0476	0	0	0	R0_grounding_not_computed
+viwikaRWIrava		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vizRuvant		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vizaha	2	2	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vizalatA		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vizayatAvAda		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vizyandaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vollAsaka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vraRaketuGnI		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vraj		6	6	440	1080	14	131	0.1213	0	0	0	R0_grounding_not_computed
+vrataDAraRa		1	1	5		0	0		0	0	0	R1_lemma_absent_from_dcs
+vyAjastuti		1	1	3	3	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+vyAptimant		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+vyaTi		1	0	0	2	1	2	1.0000	0	0	0	R0_grounding_not_computed
+vyaYjaka		2	2	18	33	1	7	0.2121	0	0	0	R0_grounding_not_computed
+vyaYjanika		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+vyapaneya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vyapeta		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vyarka		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vyavasTita		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vyavaseya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+vyaya		7	7	120	216	4	18	0.0833	0	0	0	R0_grounding_not_computed
+vyutkramaM		2	2	11		0	0		0	0	0	R1_lemma_absent_from_dcs
+yABa		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+yAdonATa		1	1	4	1	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+yAmanemi		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+yAmin		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+yAnapAtra		1	1	13	27	1	5	0.1852	0	0	0	R0_grounding_not_computed
+yAvana	1	2	2	4	5	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+yUnarvan		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+yaTABakzitam		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+yaTADizRyam		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+yaTAkanizWam		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+yaTAmnAyam		1	1	4	4	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+yaTAsanam		1	1	5	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+yaTAyUTam		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+yajYamahotsava		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+yajYapArSva		1	1	10		0	0		0	0	0	R1_lemma_absent_from_dcs
+yajYatantrasuDAniDi		1	1	2		0	0		0	0	0	R1_lemma_absent_from_dcs
+yajana		3	3	12	83	1	1	0.0120	0	0	0	R0_grounding_not_computed
+yakft		1	1	31	114	1	39	0.3421	0	0	0	R0_grounding_not_computed
+yamadEvata		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+yamunAzwapadI		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+yant		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+yati	3	3	3	23	301	2	27	0.0897	0	0	0	R0_grounding_not_computed
+yavasAd		1	1	2	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+yavatiktA		1	1	4	9	1	2	0.2222	0	0	0	R0_grounding_not_computed
+yoDika		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+yoganilaya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+yogapadaka		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+yogasUtra		1	1	8		0	0		0	0	0	R1_lemma_absent_from_dcs
+yonimudrA		1	1	2	19	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+yuDya		1	0	0		0	0		0	0	0	R1_lemma_absent_from_dcs
+yudDa		2	2	49	2507	9	219	0.0874	0	0	0	R0_grounding_not_computed
+yugamAtra	2	1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs
+yugorasya		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+yuvAku		1	1	9	10	1	1	0.1000	0	0	0	R0_grounding_not_computed
+zAtvaRatvika		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+zaRQitA		1	1	1		0	0		0	0	0	R1_lemma_absent_from_dcs
+zaqaNgajit		1	1	3		0	0		0	0	0	R1_lemma_absent_from_dcs
+zaqvaktra		1	1	6	2	0	0	0.0000	0	0	0	R2_no_wordsem_tag
+zaww		1	1	4		0	0		0	0	0	R1_lemma_absent_from_dcs

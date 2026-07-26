@@ -1,0 +1,92 @@
+{
+  "handoff": "H1632",
+  "model": "Opus 5 (claude-opus-5[1m])",
+  "generator": "research/pwg_sense_dcs_attestation_pilot.py",
+  "frame": "a uniform random sample of 2000 PWG headwords (seed 20260726)",
+  "frame_mode": "random",
+  "frame_seed": 20260726,
+  "frame_n_requested": 2000,
+  "join_key": "SLP1 <-> SLP1 (both sides already ASCII SLP1; form_key() is identity here, no NFD/strip-Mn normalisation applied)",
+  "gold_layer": "wn",
+  "grounded_tiers": [
+    "locus",
+    "locus-mbh"
+  ],
+  "excluded_tiers": {
+    "ls": "PWG self-citation, no DCS token",
+    "overlap": "gloss-token heuristic, not a sense id"
+  },
+  "dcs_master": "VisualDCS/src/DCS-data-2026/dcs_full.sqlite (921 MB; the src/ and repo-root copies are 0-byte decoys and were not read)",
+  "pins": [
+    {
+      "name": "kosha/data/concordance/sense_pilot_headwords.tsv",
+      "role": "frozen 500-headword pilot frame (H1455)",
+      "sha256": "08cac0cf4a3f1cb63b055443d47c47d61acdd10d5e072719b8a5cb2a015f1229"
+    },
+    {
+      "name": "RussianTranslation/research/pwg_sense_loci.all.tsv",
+      "role": "PWG leaf senses + `<ls>` loci for THIS frame (export_frame_sense_loci.py over microstructure.py, H1456 parser)",
+      "sha256": "82e93521d23ca7692896daadee843a8dded5a4c69ab92ea440b5ebc69c41b2e8"
+    },
+    {
+      "name": "kosha/data/frequency/lemma_frequency.tsv",
+      "role": "DCS lemma-level token counts",
+      "sha256": "3d54e4dbf4fc90c75fdd10b7ab538ddde548718b703c935cadb4c22e43314d07"
+    },
+    {
+      "name": "kosha/data/frequency/sense_frequency.tsv",
+      "role": "DCS per-sense counts, `wn` = m_wordsem gold (H1453)",
+      "sha256": "2816b02e0e22529f1bccb8be1f39523ef84fd37f0e25b772431ffc069c6762f1"
+    },
+    {
+      "name": "kosha/data/concordance/sense_corpus_concordance.tsv",
+      "role": "PWG-sense ↔ DCS attestation links (H1455)",
+      "sha256": "f71ab304b4a3a0d273de1ca8223b4c3ab24d50371a9a99c38210074cc5147ea2"
+    }
+  ],
+  "summary": {
+    "n_pilot_groups": 2000,
+    "n_lemma_attested": 807,
+    "n_wordsem_tagged": 373,
+    "n_groups_grounded": 0,
+    "mass_dcs_lemma_tokens": 74716,
+    "mass_dcs_sensetagged_tokens": 8897,
+    "sensetagged_mass_share": 0.11907757374591788,
+    "mass_under_grounded_upper_bound": 0,
+    "attributable_mass_share_upper_bound": 0.0,
+    "pwg_senses_total": 2836,
+    "pwg_senses_with_ls": 2683,
+    "dcs_wn_senses_total": 967,
+    "n_groups_grounding_computed": 6,
+    "n_groups_grounding_unknown": 1994,
+    "pwg_senses_grounded": 0,
+    "pwg_senses_total_known": 71,
+    "dcs_wn_senses_total_known": 30,
+    "pwg_sense_join_rate": 0.0,
+    "dcs_sense_join_rate": 0.0,
+    "median_pwg_senses_tagged_lemmas": 1.0,
+    "median_dcs_senses_tagged_lemmas": 1.0,
+    "spearman_pwg_vs_dcs_sense_count": 0.3761765454623547,
+    "residual_classes": {
+      "R0_grounding_not_computed": 367,
+      "R1_lemma_absent_from_dcs": 1193,
+      "R2_no_wordsem_tag": 434,
+      "R3_tagged_but_unaligned": 6
+    },
+    "concordance_tier_rows": {
+      "ls": 688,
+      "overlap": 13
+    }
+  },
+  "disclosures": {
+    "frame_mode": "random",
+    "frame_label": "a uniform random sample of 2000 PWG headwords (seed 20260726)",
+    "frame_note": "Drawn uniformly from all 109,050 PWG headword groups with an explicit seed, so it is reproducible and — unlike the H1455 frame — **not** selected for DCS attestation. This is the frame that answers \"what share of PWG is attested at all?\".",
+    "frame_note_long": "The frame is a **uniform random sample of 2000 PWG headword groups (seed 20260726)** drawn from all 109,050 groups parsed out of `csl-orig/v02/pwg/pwg.txt`. It carries no DCS-attestation precondition, so its lemma-level rate is an unbiased estimate of PWG as a whole.",
+    "repro_export": "python export_frame_sense_loci.py --all",
+    "repro_join": "python pwg_sense_dcs_attestation_pilot.py --kosha ../../../kosha --frame-mode random --n 2000 --seed 20260726",
+    "dropped_parent_loci": 27727,
+    "grounded_without_wordsem": 0,
+    "leaf_mismatch": null
+  }
+}
