@@ -62,7 +62,7 @@ is this the translation of record for citation reuse. Counts computed by
 | MBH. | Mahābhārata | SamudraManthanam (multiple RU translators, per parvan) | `01–18_mahabharata-*` | verse-aligned | (18 parvans) | 5512 | meta | Y — per-parvan alignment |
 | ṚV. | Ṛgveda | Elizarenkova (1989–1999), 1:1 | `01–10_rigveda` | verse-aligned | (10 maṇḍalas) | 3433 | meta | Y — Elizarenkova 1:1 (MG N6); German divergence marked separately |
 | R. | Rāmāyaṇa (composite: Schlegel 1–2 / Gorresio 3–6 / Bombay 7) | Leonov / Gryntser | `01–06_ramayana-*kāṇḍa` | verse-aligned | (4 kāṇḍas in corpus) | 2970 | meta | Y — books 1–2 direct (Schlegel≈vulgate); books 3–6 via the Gorresio concordance, hits flagged (§R. GORR.) |
-| R. GORR. | Rāmāyaṇa (Gauḍīya/Bengal, ed. Gorresio) | Leonov via CONTENT-BASED concordance (H1656) | via map | verse-aligned (mapped share) | 4066 mapped vv | 657 | meta | Y — reuse ON, map class+score travels; typed misses for Bengal-only / e-text-gap (§R. GORR.) |
+| R. GORR. | Rāmāyaṇa (Gauḍīya/Bengal, ed. Gorresio) | Leonov via CONTENT-BASED concordance (H1656+H1689) | via map | verse-aligned (mapped share) | 5926 mapped vv | 657 | meta | Y — reuse ON, map class+score travels; typed misses for Bengal-only (§R. GORR.) |
 | BHĀG. P. | Bhāgavata-purāṇa | Ignatiev (archive, NOT ingested) | `—` | ingestion queue | — | 2035 | meta | pending ingest |
 | KATHĀS. | Kathāsaritsāgara | «Океан сказаний» (RU) | `kathasaritsagara` | verse-aligned | 3266 | 1419 | meta | Y |
 | AV. | Atharvaveda | (RU, corpus) | `01–19_atharvaveda` | verse-aligned | (19 kāṇḍas) | 1110 | meta | Y |
@@ -92,7 +92,7 @@ subset first (§Locus mapping).
 - **MBH.** — LOCUS GAP: PWG cites continuous Calcutta ślokas (MBH. 1,1090); corpus keys parvan.adhyaya.verse (critical). Needs a Calcutta↔critical concordance — see §Locus mapping.
 - **ṚV.** — In-copyright (Elizarenkova); committed data is loci+counts only.
 - **R.** — a three-edition composite (pwgbib 1.247): books 1–2 = Schlegel (~vulgate numbering; the human-validated R. 2,91,26 fixture lives here), **books 3–6 = Gorresio Bengal loci** — briefly `unmapped_locus_scheme` after the H1656 integrity find (~900 wrong-verse reuses closed), now resolved via the CONTENT-BASED Gorresio↔Southern concordance with the map class on every hit; book 7 = Bombay ed. (not ingested → `locus-not-in-corpus`).
-- **R. GORR.** — Gorresio Bengal ≠ Leonov Southern (~⅓ verse-for-verse). CONTENT-BASED verse concordance built under H1656 from the e-text recovered out of the Cologne scan PDFs' text layer; reuse ON (MG 26-07-2026), Bengal-only verses stay typed misses. See §R. GORR.
+- **R. GORR.** — Gorresio Bengal ≠ Leonov Southern (~⅓ verse-for-verse). CONTENT-BASED verse concordance built under H1656 from the e-text recovered out of the Cologne scan PDFs' text layer, completed to all 7 kāṇḍas under H1689 (tesseract-5 `san` OCR of the image-only vols 2/4/uk); reuse ON (MG 26-07-2026), Bengal-only verses stay typed misses. See §R. GORR.
 - **BHĀG. P.** — High-value: 2nd-most-cited purāṇa (2,035 refs); RU exists in the Ignatiev archive, absent from the corpus → top ingestion target.
 - **KATHĀS.** — Verse-aligned in `corpus.db` (MG N9): digitized AND locus-lookupable. Caveat: PWG cites 2-number loci (KATHĀS. 17,32); the corpus keys 3-number `lambaka.taranga.verse` — the resolver maps this best-effort (§Locus mapping).
 - **AV.** — All 19 kāṇḍas paired sa+ru.
@@ -170,7 +170,7 @@ encodes the clean ones and reports a typed non-hit for the rest.
 | M. (Manu) | `adhyaya,verse` | `manavadharmashastra:{adhyaya}.{verse}` | clean |
 | KATHĀS. | `taranga,verse` (2-number) | `lambaka.taranga.verse` (3-number) | best-effort |
 | **MBH.** | **continuous Calcutta śloka** (5,7331) | `parvan.adhyaya.verse` (critical) | **UNMAPPED — needs a concordance** |
-| **R. GORR.** (+ plain R. books 3–6) | Gorresio Bengal recension | Southern recension (Leonov) | **CONTENT-BASED verse concordance (H1656)** — matched/fuzzy → hit; Bengal-only → `no-southern-counterpart`; vols 2/4/uk → `gorresio-etext-gap` |
+| **R. GORR.** (+ plain R. books 3–6) | Gorresio Bengal recension | Southern recension (Leonov) | **CONTENT-BASED verse concordance (H1656 + H1689)** — matched/fuzzy → hit; Bengal-only → `no-southern-counterpart`; kiṣkindhā → `locus-not-in-corpus` (`gorresio-etext-gap` extinct since the H1689 OCR pass) |
 
 The remaining UNMAPPED case returns `unmapped_locus_scheme` (a documented GAP, **not** a miss):
 
@@ -224,21 +224,31 @@ was extracted and the concordance upgraded from structural draft to CONTENT-BASE
    Kāṇḍas 6–7 align near-identically — those corpus files are already CE-keyed.
 3. **Gorresio e-text**
    ([`src/gorresio_etext.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gorresio_etext.jsonl)) —
-   10,225 verses in IAST, recovered with zero new OCR from the page PDFs' embedded
-   Google text layer, segmented by ॥N॥ markers anchored to the hand-made per-page
-   verse ranges in `ksverse.js` (OCR drops digits — ॥91॥ reads as ॥1॥ — so parsed
-   numbers are trusted only inside the page's known range). Coverage: vols 1/3/5 =
-   Bāla, Ayodhyā sargas 1–9, Āraṇya, Kiṣkindhā-part, Yuddha; **vols 2/4/uk (Ayodhyā
-   bulk, Sundara, Uttara) are image-only** — their archive.org tesseract text is too
-   noisy to trust — queued for a modern-OCR pass.
+   **19,852 verses in IAST — all 7 kāṇḍas, all 672 sargas** (H1689 closed the
+   vols 2/4/uk gap 26-07-2026). Vols 1/3/5 (Bāla, Ayodhyā 1–9, Āraṇya,
+   Kiṣkindhā-part, Yuddha): zero new OCR — the page PDFs' embedded Google text
+   layer. Vols 2/4/uk (Ayodhyā 10–127, Kiṣkindhā-tail + Sundara, Uttara):
+   image-only scans OCRed locally with tesseract 5.5 `san` on the full-res
+   embedded page images (2,900×4,700 px class; 1,427 pages, 99–100% of pages
+   yield verse markers). Both sources segmented by ॥N॥ markers anchored to the
+   hand-made per-page verse ranges in `ksverse.js` (OCR drops digits — ॥91॥
+   reads as ॥1॥ — so parsed numbers are trusted only inside the page's known
+   range). Per-kāṇḍa verse recovery vs the structural inventory: 92/76/91/84/
+   72/92/74% (k1–k7) — the OCR volumes recover less than the Google-layer ones,
+   the residue stays typed misses, never invented loci.
 4. **Gorresio↔Southern verse concordance, CONTENT-BASED**
    ([`src/ramayana_gorresio_southern_verse_map.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_gorresio_southern_verse_map.tsv)) —
-   same n-gram + monotonic-anchoring machinery over the e-text: **1,857 matched +
-   2,209 fuzzy = 4,066 verses mapped** to a Leonov-translatable Southern locus;
-   4,955 genuinely Bengal-only (honest misses); 200 `moved` excluded from reuse
-   (the H783-identified error class). Every scan-verified gold anchor reproduces:
-   G 1,1,1→S 1,1 · G 1,10→S 11 · G 1,22,1→S 19,1 (0.774) · G 1,29→S 26 ·
-   G 3,36→S 32.
+   same n-gram + monotonic-anchoring machinery over the e-text: **2,377 matched +
+   3,549 fuzzy = 5,926 verses mapped** to a Leonov-translatable Southern locus
+   (was 4,066 before the H1689 vols-2/4/uk OCR pass — new coverage k2 sargas
+   10–127: 581, Sundara: 345, Uttara: 760); 11,727 genuinely Bengal-only (honest
+   misses); 270 `moved` excluded from reuse (the H783-identified error class);
+   1,925 kiṣkindhā rows `no_southern_corpus`. Every scan-verified gold anchor
+   reproduces: G 1,1,1→S 1,1 · G 1,10→S 11 · G 1,22,1→S 19,1 · G 1,29→S 26 ·
+   G 3,36→S 32; the 4 audit-rejected pairs from the 26-07-2026 sheet are
+   re-applied by the build itself (pair-keyed, so a rebuild can never silently
+   resurrect a human-vetoed pair). H1689 spot-check: 12/12 sampled new-kāṇḍa
+   pairs verified true correspondences.
 5. **Sarga map regenerated CONTENT-BASED** (majority roll-up of the verse map;
    same file
    [`src/ramayana_gorresio_southern_sarga_map.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_gorresio_southern_sarga_map.tsv)).
@@ -269,8 +279,9 @@ through the CONTENT-BASED verse concordance: `matched`/`fuzzy` rows return the L
 segment as a normal hit **with the map class + score attached** (`map` field travels
 with every consult, so downstream can weight or display it); everything else is a
 typed, honest state — `no-southern-counterpart` (Bengal-only verse, ~⅔ of the
-recension), `gorresio-etext-gap` (sarga awaiting the vols 2/4/uk OCR pass),
-`locus-not-in-corpus` (kiṣkindhā; yuddha until it lands in corpus.db). A miss never
+recension), `locus-not-in-corpus` (kiṣkindhā; yuddha until it lands in corpus.db);
+`gorresio-etext-gap` is **extinct since 26-07-2026** — the H1689 tesseract-5 `san`
+OCR pass put all 672 sargas in the e-text. A miss never
 becomes an invented offset — the 166k lesson stands. The `/review-sheet` audit sheet
 remains as a quality surface (votes refine the map), not a blocker.
 
