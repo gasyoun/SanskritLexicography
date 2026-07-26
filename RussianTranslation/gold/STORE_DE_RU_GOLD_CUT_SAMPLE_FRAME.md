@@ -1,4 +1,4 @@
-# Store DE→RU gold cut — stratified sample frame (design, parked for sign-off)
+# Store DE→RU gold cut — stratified sample frame (design RATIFIED, execution gated)
 
 _Created: 26-07-2026 · Last updated: 26-07-2026_
 
@@ -6,9 +6,13 @@ Designed by Fable 5 (`claude-fable-5`) under
 [H1633](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1633-Fable_SanskritLexicography_pwg-human-gold-cut-methods-packet_25.07.26.md)
 (parent programme
 [H1624](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1624-Opus_SanskritLexicography_pwg-german-layers-backlog-ordered_25.07.26.md)).
-**Status: DESIGN ONLY.** No sample has been drawn, no sheet generated, no label
-collected. Every number below is either cited from a committed artifact or an
-arithmetic consequence of a stated formula — nothing is a measurement.
+**Status: DESIGN RATIFIED — rulings R1–R5 in §8 (MG, 26-07-2026).** No sample
+has been drawn, no sheet generated, no label collected; execution is
+[H1665](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1665-Fable_SanskritLexicography_pwg-store-gold-cut-execute-r1-r5_26.07.26.md),
+hard-gated on the g6/g5 starter votes and the
+[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md)
+queue triage. Every number below is either cited from a committed artifact or
+an arithmetic consequence of a stated formula — nothing is a measurement.
 
 ## 1. What this frame licenses — and what it does not
 
@@ -92,7 +96,7 @@ at the LLM-estimated precision neighborhood (0.85–0.90) it keeps the honest
 "low-70s" — the decision-relevant distinction for a print go/no-go — while
 staying within one reviewer's realistic budget (the G6 precedent fixed 320 as
 the bounded human workload; 400 is the same order). 600 buys ±0.7 pp for +50%
-work. **The final n is a human's call at sign-off.**
+work. **Ruled R1: n = 400.**
 
 ## 5. Instrument and labels — needs a D6-style ruling
 
@@ -114,28 +118,24 @@ wrong-sense / hallucinated`) was built for Sa→Ru *alignments*;
 | `hallucinated` | content unsupported by the German source | error |
 
 Precision = good / n; `partial` never silently folded into either side.
-**This vocabulary is a proposal, not policy** — adopting it (or amending it)
-is a ruling for a human, recorded like D6, before the sheet is generated.
+**Ruled R2: adopted as proposed** — this six-label set is the G6b instrument
+(the D6-style one-instrument-per-gate ruling for the store cut).
 
-## 6. Dual annotation and the κ plan — no invented numbers
+## 6. Annotation and the κ plan — no invented numbers
 
-Standing constraint, stated plainly: the second-annotator recruiting deferral
-for 2026
-([EVALUATION_PROTOCOL.md §4](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/EVALUATION_PROTOCOL.md))
-means a human×human κ **may not be measurable in 2026**. The plan is
-therefore tiered, and each tier's figure keeps its channel label — the
+**Ruled R3 (MG, 26-07-2026): there is NO second human reviewer — not in 2026
+and not in 2027.** The former "if a second reviewer exists" tier is removed as
+a plan, not merely deferred; the agreement design is single-annotator by
+construction, and each figure keeps its channel label — the
 [GRADE_GOLD_MEMO.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/GRADE_GOLD_MEMO.md)
 κ=−0.0044 episode is the standing example of why channels are never relabeled:
 
-1. **If a second reviewer exists:** 80-row stratified double-review queue (20%
-   of n=400; the G7 machinery pattern —
-   `gold_double_review_queue.py` → `gold_agreement.py`), unweighted Cohen κ on
-   the six labels **and** on the binarized good/not-good call, each with a
-   bootstrap CI. Whatever κ comes out is reported as measured.
-2. **Single-annotator fallback (allowed by the deferral):** MG test–retest —
-   the same 80 rows relabeled by MG ≥ 14 days later, reported as
-   **intra-rater** κ, never presented as inter-annotator agreement.
-3. **Secondary channel:** DeepSeek (`deepseek-chat`) model labels over the
+1. **Primary reliability figure: MG test–retest** — 80 stratified rows (20% of
+   n=400) relabeled by MG ≥ 14 days after the first pass, reported as
+   **intra-rater** κ (six-label and binarized good/not-good, bootstrap CI),
+   never presented as inter-annotator agreement. Report templates carry no
+   inter-annotator cell at all.
+2. **Secondary channel:** DeepSeek (`deepseek-chat`) model labels over the
    full sample, reported strictly as **human×model** agreement (the
    h178 convention).
 
@@ -159,22 +159,29 @@ RU), lock committed. Votes export as `decisions.json` →
 its hard count gate). Report lands as `gold/store_precision_report.md` with
 the sampled pool counts, seed, both CIs, and the label distribution.
 
-Gate wiring: this cut is release evidence for the **store**, sitting beside —
-not replacing — G6/G7 (harvest) in the G10 arithmetic.
-[HUMAN_REVIEW_MINIMIZATION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/HUMAN_REVIEW_MINIMIZATION.md)
-owns gate arithmetic; folding this cut in as a named gate is an edit to that
-file at sign-off, not something this frame decides.
+Gate wiring (ruled R4): this cut is named gate **G6b** — release evidence for
+the **store**, sitting beside — not replacing — G6/G7 (harvest) in the G10
+arithmetic. The gate row lives in
+[HUMAN_REVIEW_MINIMIZATION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/HUMAN_REVIEW_MINIMIZATION.md),
+which owns gate arithmetic.
 
-## 8. What sign-off must decide (blocking execution)
+## 8. Rulings of record (MG, 26-07-2026, chat — one line each, verbatim intent)
 
-1. Final **n** (recommended 400) and the 15-row stratum floor.
-2. The **label vocabulary** of §5 — adopt/amend, recorded as a ruling.
-3. **Double-review staffing** — second reviewer in 2026 yes/no (picks tier 1
-   vs tier 2 of §6).
-4. Whether the cut becomes a **named gate** in HUMAN_REVIEW_MINIMIZATION.md.
-5. Sequencing vs the live G5 batch votes (the cut samples the same pool; both
-   can run, but sheet-generation freezes must not cross a voted, unapplied
-   batch — voted.md item 2).
+| # | Item | Ruling |
+|---|---|---|
+| R1 | final n | **400** (15-row stratum floor stands) |
+| R2 | label vocabulary (§5) | **adopted as proposed** — the six DE→RU labels are the G6b instrument (D6-style ruling) |
+| R3 | double-review staffing | **no second reviewer — «not even in 2027»**; intra-rater test–retest is the permanent agreement plan (§6) |
+| R4 | named gate | **yes — G6b** in HUMAN_REVIEW_MINIMIZATION.md |
+| R5 | sequencing | **after** the g6 starter + g5 batch1v3 votes are exported and applied |
+
+Same ruling, adjacent scope: **A51 is deferred until 2028** — this cut serves
+the **N3 print gate**, not a paper deadline — and the 2,818-judgment voting
+queue was ruled too large, so execution
+([H1665](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1665-Fable_SanskritLexicography_pwg-store-gold-cut-execute-r1-r5_26.07.26.md))
+is additionally hard-gated on the
+[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md)
+agent-adjudication triage shrinking that queue first.
 
 ## 9. Non-goals
 

@@ -10,6 +10,25 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed — H1633 rulings R1–R5 recorded; G6b gate born; A51 deferred to 2028 (26-07-2026)
+
+- MG ruled the five gold-cut sign-off items in one pass (chat, 26-07-2026):
+  **R1** n=400 · **R2** six-label DE→RU vocabulary adopted · **R3** no second
+  reviewer — «not even in 2027», intra-rater test–retest is the permanent
+  agreement plan · **R4** the cut is named gate **G6b** · **R5** sequenced
+  after the g6 starter + g5 batch1v3 votes. Recorded in
+  [gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md) §8;
+  G6b wired into [HUMAN_REVIEW_MINIMIZATION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/HUMAN_REVIEW_MINIMIZATION.md)
+  (gate table, G6b section, print-evidence path).
+- **A51 deferred until 2028** (same ruling) — deferral banner on
+  [pwg_ru/PAPER_LLM_LEXICOGRAPHY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PAPER_LLM_LEXICOGRAPHY.md);
+  methods draft re-marked BANKED, claims register C1–C3 updated (h178 arms
+  retired per P1/A2; no inter-annotator cell anywhere per R3).
+- Execution routed: [H1665](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1665-Fable_SanskritLexicography_pwg-store-gold-cut-execute-r1-r5_26.07.26.md)
+  (gold cut, hard-gated) and [H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md)
+  (triage of the 2,818-judgment voting queue for agent-ruleable sheets — MG:
+  «2818 judgments is too much»).
+
 ## [1.74.0] - 2026-07-26
 
 ### Fixed — "a bigger corpus" was the wrong lever for H1632 constriction 1 (26-07-2026)

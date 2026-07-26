@@ -1,6 +1,6 @@
 # Human Review Minimization
 
-Date: 2026-06-28
+Date: 2026-06-28 (G6b gate added 26-07-2026 per ruling R4, H1633)
 
 Goal: get from "translation machine works" to defensible print-readiness
 evidence with the smallest valid human workload. Do not review all PWG entries
@@ -10,7 +10,7 @@ human judgment only where the release gates require it.
 ## Current Verdict
 
 Bulk translation can continue after a fresh `sTA` Max run, but print publication
-cannot happen until G5/G6/G7/G10 pass.
+cannot happen until G5/G6/G6b/G7/G10 pass.
 
 Current gate status:
 
@@ -18,8 +18,9 @@ Current gate status:
 |---|---|---|
 | G5 translation review | blocked | 0/11,163 review decisions; 0 print-ready rows |
 | G6 human gold | blocked | 0/320 labels complete |
-| G7 double review | blocked | 0/80 second reviews; no agreement report |
-| G10 edition cut | blocked | waits for G5/G6/G7 |
+| G6b store gold cut | blocked | sheet not yet generated ([H1665](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1665-Fable_SanskritLexicography_pwg-store-gold-cut-execute-r1-r5_26.07.26.md), gated on g6/g5 votes + H1664 triage); then 0/400 labels + intra-rater pass |
+| G7 double review | blocked | 0/80 second reviews; no agreement report (harvest gold only — the store cut has NO double review per ruling R3) |
+| G10 edition cut | blocked | waits for G5/G6/G6b/G7 |
 
 Production status:
 
@@ -133,6 +134,29 @@ python src\preflight_remaining_gates.py
 Done when: `gold_status.py` reports 320/320 complete and
 `gold_validate.py` passes.
 
+## G6b Store Gold Cut (added 26-07-2026, ruling R4)
+
+Purpose: a human gold standard for the **DE→RU translation store itself** —
+distinct from G6, whose 320 rows measure the Sa→Ru harvest alignment. Design
+of record (ratified R1–R5):
+[gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md](gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md).
+
+- Sample: n=400 sense rows from the machine-clean G5-eligible pool, 12 strata,
+  ≤4 rows per lemma, seeded; sheet stamped + locked per the H1404 standard.
+- Instrument: the six-label DE→RU vocabulary (frame §5) — approve/reject/defer
+  sheet with reject-label-first-word notes, G6-style.
+- Agreement: **no second reviewer (ruling R3, through 2027)** — the
+  reliability figure is MG intra-rater test–retest on 80 stratified rows
+  ≥14 days later; report templates carry no inter-annotator cell.
+- Done when: 400/400 labels ingested to `gold/store_gold_labels.jsonl`, the
+  test–retest pass ingested, and `gold/store_precision_report.md` exists with
+  Wilson + lemma-cluster bootstrap CIs.
+
+Execution:
+[H1665](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1665-Fable_SanskritLexicography_pwg-store-gold-cut-execute-r1-r5_26.07.26.md)
+(hard-gated on the g6/g5 starter votes being applied and the H1664 queue
+triage).
+
 ## G7 Double Review
 
 Input file: `gold/_double_review_queue.csv`
@@ -170,8 +194,8 @@ the agreement report exists.
 - Do not sample semantic quality before stale/requeue defects are cleared.
 - Do not review full PWG tail entries before the DCS-frequency core tranche has
   enough audited windows to estimate speed and error rate.
-- Do not cut an edition with zero G5 print-ready rows, incomplete G6 labels, or
-  missing G7 agreement.
+- Do not cut an edition with zero G5 print-ready rows, incomplete G6/G6b
+  labels, or a missing G7 agreement / G6b test–retest report.
 
 ## Fastest Path To Print Evidence
 
@@ -181,5 +205,6 @@ the agreement report exists.
 4. G5 review rows for the core tranche.
 5. G6 320-row gold complete.
 6. G7 80-row double review complete.
-7. `release_readiness.py`.
-8. Immutable `edition_vN` cut only after G5/G6/G7 pass.
+7. G6b 400-row store gold cut + test–retest complete (H1665).
+8. `release_readiness.py`.
+9. Immutable `edition_vN` cut only after G5/G6/G6b/G7 pass.
