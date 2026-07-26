@@ -34,11 +34,13 @@ Outputs (committed, metadata only — loci, counts, scores; never translation te
       Gorresio structural inventory: kanda sarga n_verses volume page_first
       page_last (from ksverse.js; no OCR involved).
   src/gorresio_etext.jsonl
-      the Gorresio e-text (IAST), recovered 26-07-2026 from the Cologne page
-      PDFs' embedded Google text layer — the "no OCR exists" premise was
-      wrong. Coverage: vols 1/3/5 (Bāla, Ayodhyā sargas 1–9, Āraṇya,
-      Kiṣkindhā-part, Yuddha); vols 2/4/uk are image-only scans and await a
-      proper OCR pass.
+      the Gorresio e-text (IAST). Vols 1/3/5 (Bāla, Ayodhyā sargas 1–9,
+      Āraṇya, Kiṣkindhā-part, Yuddha): recovered 26-07-2026 from the Cologne
+      page PDFs' embedded Google text layer — the "no OCR exists" premise was
+      wrong. Vols 2/4/uk (Ayodhyā 10–127, Kiṣkindhā-tail + Sundara, Uttara):
+      image-only scans, OCRed 26-07-2026 with tesseract 5.5 `san` at full
+      embedded-image resolution (H1689) — same accuracy class as the Google
+      layer for the n-gram consumer here.
   src/ramayana_gorresio_southern_verse_map.tsv
       verse-level, CONTENT-BASED Gorresio↔Southern concordance over the
       e-text. class ∈ matched | fuzzy | moved | gorresio_only |
@@ -103,6 +105,19 @@ SOUTHERN_FILES = {
 DCS_KANDA = {'Bā': 1, 'Ay': 2, 'Ār': 3, 'Ki': 4, 'Su': 5, 'Yu': 6, 'Utt': 7}
 
 KSVERSE_COMMIT = '609a28669e3d8f4648a153c7af0105f3dca03ead'  # provenance pin
+
+# Verse-map pairs voted OFF in the 26-07-2026 human audit sheet
+# (review/sanskritlexicography-gorresio-southern-map_audit-26-07-26_decisions.json,
+# 4 half-verse-shift pairs). build-gorresio re-applies them so a rebuild never
+# silently resurrects a rejected pair; keyed by the FULL pair — if a rebuild
+# maps the Gorresio verse to a different Southern verse, the old veto does not
+# apply and the new pair goes back to a human sheet instead.
+AUDIT_REJECTED_PAIRS = {
+    (1, 12, 28, 1, 13, 33),
+    (1, 48, 11, 1, 47, 8),
+    (1, 62, 8, 1, 60, 7),
+    (2, 4, 7, 2, 5, 7),
+}
 
 MATCH_HI = 0.50   # class 'matched' (same verse, minor recension variance)
 MATCH_LO = 0.35   # class 'fuzzy' floor
@@ -314,6 +329,9 @@ def _segment_sarga(blocks):
     carry = ''
     last = 0
     for text, v1, v2 in blocks:
+        # tesseract renders the double daṇḍa ॥ as two single daṇḍas often
+        # enough to lose whole verses — normalize before splitting
+        text = text.replace('।।', '॥')
         txt = (carry + '\n' + text).translate(digits)
         chunks = re.split('॥\\s*(\\d{1,3})\\s*॥?', txt)
         carry = chunks[-1]
@@ -427,6 +445,10 @@ def cmd_build_gorresio(args):
             for g_sarga, g_verse, s_sarga, s_verse, score, cls in rows:
                 if cls == 'southern_only':
                     cls = 'gorresio_only'
+                if (cls in ('matched', 'fuzzy') and s_sarga != '' and
+                        (k, g_sarga, g_verse,
+                         k, s_sarga, s_verse) in AUDIT_REJECTED_PAIRS):
+                    cls = 'audit-rejected'
                 w.writerow([k, g_sarga, g_verse,
                             k if s_sarga != '' else '', s_sarga, s_verse,
                             score, cls])
@@ -520,7 +542,17 @@ def cmd_selftest(_args):
           'kanda 4 gorresio rows carry no southern mapping')
 
     gsv = list(csv.DictReader(open(OUT_GSV, encoding='utf-8'), delimiter='\t'))
-    check(len(gsv) > 9000, 'gorresio verse map has %d rows (>9000)' % len(gsv))
+    check(len(gsv) > 19000, 'gorresio verse map has %d rows (>19000)' % len(gsv))
+    et_kandas = {r['g_kanda'] for r in gsv}
+    check(et_kandas == {'1', '2', '3', '4', '5', '6', '7'},
+          'e-text covers all 7 kandas (H1689 closed vols 2/4/uk)')
+    k2_sargas = {int(r['g_sarga']) for r in gsv if r['g_kanda'] == '2'}
+    check(min(k2_sargas) == 1 and max(k2_sargas) == 127 and len(k2_sargas) == 127,
+          'kanda 2 covers sargas 1-127 (%d sargas)' % len(k2_sargas))
+    for kk in ('5', '7'):
+        n = sum(1 for r in gsv
+                if r['g_kanda'] == kk and r['class'] in ('matched', 'fuzzy'))
+        check(n > 300, 'kanda %s has %d mapped verses (>300)' % (kk, n))
     # 'audit-rejected' = row switched off by a voted review sheet (the 26-07-2026
     # audit killed 4 half-verse-shift pairs); the citation_tm loader only reads
     # matched/fuzzy, so these are inert by construction — keep them for the trail.
@@ -549,8 +581,15 @@ def cmd_selftest(_args):
           'R. 3,79,10 -> honest no-southern-counterpart miss (got %r/%r)'
           % (res.get('status'), res.get('reason')))
     res = citation_tm.lookup('R. GORR.', '2,16,46')
-    check(res.get('status') == 'miss' and res.get('reason') == 'gorresio-etext-gap',
-          'R. GORR. 2,16,46 -> gorresio-etext-gap (vol 2 has no text layer yet)')
+    check(res.get('status') == 'miss'
+          and res.get('reason') == 'no-southern-counterpart',
+          'R. GORR. 2,16,46 -> honest no-southern-counterpart (H1689: the '
+          'vol-2 e-text gap is closed; this verse is Bengal-only, best '
+          'Southern score 0.109)')
+    res = citation_tm.lookup('R. GORR.', '5,10,1')
+    check(res.get('canonical_id') == '05_ramayana-sundarakanda:2.51',
+          'citation_tm R. GORR. 5,10,1 resolves (Sundara live, got %r)'
+          % res.get('canonical_id'))
 
     if fails:
         for msg in fails:

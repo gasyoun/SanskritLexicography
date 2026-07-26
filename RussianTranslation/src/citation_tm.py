@@ -41,8 +41,10 @@ TWO layers, deliberately separate:
                            miss reasons instead of a scheme gap:
                              'no-southern-counterpart' - Bengal-only verse, the
                                 Southern text genuinely lacks it;
-                             'gorresio-etext-gap' - sarga not yet in the e-text
-                                (vols 2/4/uk scans carry no text layer).
+                             'gorresio-etext-gap' - sarga not in the e-text.
+                                Extinct since 26-07-2026 (H1689 OCRed the
+                                vols 2/4/uk scans; all 672 sargas covered) —
+                                the branch stays as a defensive guard.
   'evidence_unavailable' — the corpus DB is absent, so a resolved hit could not be
                            confirmed (distinct from 'miss': we simply couldn't look).
 
@@ -379,9 +381,14 @@ def selftest():
           'R. 3,79,10 -> %s/%s (Bengal-only verse, honest miss)'
           % (r3['status'], r3.get('reason')))
     gap = lookup('R. GORR.', '2,16,46')
-    check(gap['status'] == 'miss' and gap['reason'] == 'gorresio-etext-gap',
-          'R. GORR. 2,16,46 -> %s/%s (vol 2 scan has no text layer yet)'
+    check(gap['status'] == 'miss' and gap['reason'] == 'no-southern-counterpart',
+          'R. GORR. 2,16,46 -> %s/%s (H1689 OCR closed the vol-2 e-text gap; '
+          'the verse itself is Bengal-only — best Southern score 0.109 < 0.25 floor)'
           % (gap['status'], gap.get('reason')))
+    sun = lookup('R. GORR.', '5,10,1')
+    check(sun.get('canonical_id') == '05_ramayana-sundarakanda:2.51',
+          'R. GORR. 5,10,1 -> %s (Sundara live via the H1689 OCR e-text)'
+          % sun.get('canonical_id'))
 
     print('LIVE corpus checks (DB-gated):')
     if not os.path.exists(CORPUS_DB):

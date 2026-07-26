@@ -10,6 +10,24 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1689: Gorresio vols 2/4/uk OCRed, e-text now covers all 7 kāṇḍas — `gorresio-etext-gap` extinct (26-07-2026)
+
+- The 1,427 image-only Cologne pages (vol 2 Ayodhyā sargas 10–127 · vol 4
+  Kiṣkindhā-tail + Sundara · uk Uttara) OCRed locally with tesseract 5.5 `san`
+  on the full-resolution embedded page images;
+  [gorresio_etext.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gorresio_etext.jsonl)
+  grows 10,225 → **19,852 verses (all 672 sargas)**, the
+  [verse map](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_gorresio_southern_verse_map.tsv)
+  4,066 → **5,926 mapped** (new: k2 581 · Sundara 345 · Uttara 760); 12/12
+  sampled new pairs verified true; the 4 audit-rejected pairs are now
+  re-applied by the build itself (pair-keyed veto in
+  [build_ramayana_concordance.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py)).
+- `citation_tm` fixture flip: R. GORR. 2,16,46 (MG's original N11 locus) is
+  `no-southern-counterpart` — genuinely Bengal-only (best Southern score 0.109
+  vs 0.25 floor); R. GORR. 5,10,1 resolves to `05_ramayana-sundarakanda:2.51`.
+  Segmentation hardened: `।।`→`॥` normalization (tesseract double-daṇḍa split).
+  Method + traps: [FINDINGS §473](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+
 ### Added — H1682: h1303_abbrev review-sheet rule-collapse (26-07-2026)
 
 - New review sheet `review/h1682_abbrev_rules_sheet.html` (sheet_id
