@@ -77,7 +77,7 @@ def defer_monster(target, reason, estimate=None, source='perf_preflight', keys=N
         return None
 
 
-def append_jsonl_line(path, obj):
+def append_jsonl_line(path, obj, durable=False):
     """Append ONE JSONL row as a single os.write() of a fully-encoded line (H336/H-3).
 
     A buffered text-mode 'a' handle can split one logical line across more than one
@@ -88,11 +88,43 @@ def append_jsonl_line(path, obj):
     fd is the OS-level append primitive: each row lands whole, even if another
     writer's row lands immediately before or after it."""
     data = (json.dumps(obj, ensure_ascii=False) + '\n').encode('utf-8')
+    existed = os.path.exists(path)
     fd = os.open(path, os.O_APPEND | os.O_CREAT | os.O_WRONLY, 0o644)
     try:
-        os.write(fd, data)
+        written = os.write(fd, data)
+        if written != len(data):
+            raise OSError(
+                'short append to %s (%d/%d bytes)' % (path, written, len(data)))
+        if durable:
+            os.fsync(fd)
     finally:
         os.close(fd)
+    if durable and not existed and os.name != 'nt':
+        directory = os.path.dirname(os.path.abspath(path)) or '.'
+        dir_fd = os.open(
+            directory, os.O_RDONLY | getattr(os, 'O_DIRECTORY', 0))
+        try:
+            os.fsync(dir_fd)
+        finally:
+            os.close(dir_fd)
+
+
+def fsync_existing_path(path):
+    """Re-establish durability for an existing projection before adopting it."""
+    # Windows' CRT rejects fsync() on a read-only descriptor (EBADF).
+    fd = os.open(path, os.O_RDWR)
+    try:
+        os.fsync(fd)
+    finally:
+        os.close(fd)
+    if os.name != 'nt':
+        directory = os.path.dirname(os.path.abspath(path)) or '.'
+        dir_fd = os.open(
+            directory, os.O_RDONLY | getattr(os, 'O_DIRECTORY', 0))
+        try:
+            os.fsync(dir_fd)
+        finally:
+            os.close(dir_fd)
 
 
 def atomic_write_text(path, content, encoding='utf-8'):

@@ -1,0 +1,186 @@
+{
+  "handoff": "H1632",
+  "model": "Opus 5 (claude-opus-5[1m])",
+  "generator": "research/pwg_sense_dcs_attestation_pilot.py",
+  "frame": "the frozen H1455/H1456 500-headword pilot",
+  "frame_mode": "kosha",
+  "frame_seed": null,
+  "frame_n_requested": null,
+  "join_key": "SLP1 <-> SLP1 (both sides already ASCII SLP1; form_key() is identity here, no NFD/strip-Mn normalisation applied)",
+  "gold_layer": "wn",
+  "grounded_tiers": [
+    "locus",
+    "locus-mbh",
+    "locus-chapter"
+  ],
+  "excluded_tiers": {
+    "ls": "PWG self-citation, no DCS token",
+    "overlap": "gloss-token heuristic, not a sense id"
+  },
+  "dcs_master": "VisualDCS/src/DCS-data-2026/dcs_full.sqlite (921 MB; the src/ and repo-root copies are 0-byte decoys and were not read)",
+  "pins": [
+    {
+      "name": "kosha/data/concordance/sense_pilot_headwords.tsv",
+      "role": "frozen 500-headword pilot frame (H1455)",
+      "sha256": "08cac0cf4a3f1cb63b055443d47c47d61acdd10d5e072719b8a5cb2a015f1229"
+    },
+    {
+      "name": "RussianTranslation/research/pwg_sense_loci.frame500.tsv",
+      "role": "PWG leaf senses + `<ls>` loci for THIS frame (export_frame_sense_loci.py over microstructure.py, H1456 parser)",
+      "sha256": "b3a6874928fd69d279d5a85f6db79ed9aa4d16286da796b1c8ec7f36641fe934"
+    },
+    {
+      "name": "kosha/data/frequency/lemma_frequency.tsv",
+      "role": "DCS lemma-level token counts",
+      "sha256": "3d54e4dbf4fc90c75fdd10b7ab538ddde548718b703c935cadb4c22e43314d07"
+    },
+    {
+      "name": "kosha/data/frequency/sense_frequency.tsv",
+      "role": "DCS per-sense counts, `wn` = m_wordsem gold (H1453)",
+      "sha256": "2816b02e0e22529f1bccb8be1f39523ef84fd37f0e25b772431ffc069c6762f1"
+    },
+    {
+      "name": "kosha/data/concordance/sense_corpus_concordance.tsv",
+      "role": "PWG-sense ↔ DCS attestation links (H1455)",
+      "sha256": "f71ab304b4a3a0d273de1ca8223b4c3ab24d50371a9a99c38210074cc5147ea2"
+    }
+  ],
+  "summary": {
+    "n_pilot_groups": 500,
+    "n_lemma_attested": 500,
+    "n_wordsem_tagged": 480,
+    "n_groups_grounded": 50,
+    "mass_dcs_lemma_tokens": 943877,
+    "mass_dcs_sensetagged_tokens": 102085,
+    "sensetagged_mass_share": 0.10815498205804358,
+    "mass_under_grounded_upper_bound": 39520,
+    "attributable_mass_share_upper_bound": 0.041869862280784466,
+    "pwg_senses_total": 7746,
+    "pwg_senses_with_ls": 7453,
+    "dcs_wn_senses_total": 5201,
+    "n_groups_grounding_computed": 500,
+    "n_groups_grounding_unknown": 0,
+    "pwg_senses_grounded": 52,
+    "pwg_senses_grounded_verse": 5,
+    "pwg_senses_total_known": 7746,
+    "dcs_wn_senses_total_known": 5201,
+    "pwg_sense_join_rate": 0.006713142266976504,
+    "pwg_sense_join_rate_verse": 0.0006454944487477407,
+    "dcs_sense_join_rate": 0.009998077292828303,
+    "median_pwg_senses_tagged_lemmas": 14.0,
+    "median_dcs_senses_tagged_lemmas": 8.0,
+    "spearman_pwg_vs_dcs_sense_count": 0.2354209943027191,
+    "residual_classes": {
+      "R3_tagged_but_unaligned": 434,
+      "R4_grounded_alignment": 50,
+      "R2_no_wordsem_tag": 16
+    },
+    "concordance_tier_rows": {
+      "ls": 85472,
+      "locus-mbh": 52,
+      "overlap": 1561,
+      "locus": 7
+    }
+  },
+  "disclosures": {
+    "frame_mode": "kosha",
+    "frame_label": "the frozen H1455/H1456 500-headword pilot",
+    "frame_note": "Selected DCS-attested by construction — the biased frame, kept because it is the only one the H1455 aligner ever ran over, so it is the only frame on which sense-level grounding can be measured at all.",
+    "frame_note_long": "The frame is the **frozen H1455/H1456 500-headword pilot** — reused verbatim so this join is comparable with the sense-concordance build, not a second parallel frame. Every input is a committed derived table; no number below is recomputed from the 921 MB DCS sqlite in this pass.",
+    "repro_export": "python export_frame_sense_loci.py --kosha ../../../kosha",
+    "repro_join": "python pwg_sense_dcs_attestation_pilot.py --kosha ../../../kosha",
+    "dropped_parent_loci": 12953,
+    "grounded_without_wordsem": 4,
+    "leaf_mismatch": {
+      "n_match": 407,
+      "n_mismatch": 93,
+      "frame_total": 7641,
+      "mine_total": 7746,
+      "direction": 1,
+      "pct": 0.013741656851197487,
+      "examples": [
+        [
+          [
+            "han",
+            "1"
+          ],
+          39,
+          40
+        ],
+        [
+          [
+            "padma",
+            ""
+          ],
+          31,
+          33
+        ],
+        [
+          [
+            "viS",
+            "1"
+          ],
+          29,
+          30
+        ],
+        [
+          [
+            "puzkara",
+            ""
+          ],
+          27,
+          30
+        ],
+        [
+          [
+            "go",
+            ""
+          ],
+          26,
+          28
+        ],
+        [
+          [
+            "piRqa",
+            ""
+          ],
+          26,
+          28
+        ],
+        [
+          [
+            "cakra",
+            ""
+          ],
+          22,
+          23
+        ],
+        [
+          [
+            "tIkzRa",
+            ""
+          ],
+          22,
+          23
+        ],
+        [
+          [
+            "sA",
+            "3"
+          ],
+          21,
+          22
+        ],
+        [
+          [
+            "parigraha",
+            ""
+          ],
+          21,
+          23
+        ]
+      ]
+    },
+    "frame_selection_bias": "every frame row has dcs_attested=1 — the frame was selected DCS-attested, so lemma-level coverage is true by construction and all rates are upper bounds"
+  }
+}

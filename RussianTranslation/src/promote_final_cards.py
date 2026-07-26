@@ -29,6 +29,7 @@ re-run this script — it is idempotent and supersede-safe).
 """
 import argparse
 import collections
+import contextlib
 import datetime
 import glob
 import json
@@ -53,6 +54,9 @@ from store_path import canonical_store
 from government_census import extract_government
 # H1624 form-layer: number / gender / nom|voc / voice — sibling of Rektion.
 from form_labels import extract_form_labels, extract_form_notes
+from citation_edges import extract_citation_edges
+from edition_rel import classify_edition_rel
+from pilot import promotion_journal
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the RussianTranslation repo root
@@ -297,7 +301,8 @@ def collect_cards(paths):
     return best, conflicts, sorted(null_keys)
 
 
-def clear_denials_for_promotion(best, blocked_subs=(), lang='ru', denylist=None):
+def clear_denials_for_promotion(best, blocked_subs=(), lang='ru', denylist=None,
+                                timestamp=None):
     """B12 (H1339): a successful gate-passing promotion clears ONLY its matching temporary
     TM denial state.
 
@@ -328,7 +333,8 @@ def clear_denials_for_promotion(best, blocked_subs=(), lang='ru', denylist=None)
                 fshas.append(fsha)
     if addresses or fshas:
         tm.append_unblock(sorted(set(addresses)), sorted(set(fshas)),
-                          reason='replaced_by_promotion', path=denylist)
+                          reason='replaced_by_promotion', path=denylist,
+                          timestamp=timestamp)
     return sorted(set(addresses)), sorted(set(fshas))
 
 
@@ -403,6 +409,16 @@ def provenance(entry, subkey, model_version):
             and isinstance(tnmask.get('got'), str)
             and isinstance(tnmask.get('want'), str)):
         prov['tnmask'] = {'got': tnmask['got'], 'want': tnmask['want']}
+    # H858 Part B: a card whose `german` echo dropped a masked span is REPAIRED from the source
+    # skeleton instead of being nulled -- so the row must say so. Without this stamp a
+    # machine-re-injected citation is indistinguishable in the store from one the model echoed
+    # correctly, and the repair's real-world precision could never be audited after the fact
+    # (the exact H1150/H1226 "denominator 1" trap the tnmask pairing above exists to avoid).
+    # Same discipline: carried only when well-formed, never fabricated, never back-filled.
+    anchor = card.get('german_anchor')
+    if isinstance(anchor, dict) and isinstance(anchor.get('reinjected'), list):
+        prov['german_anchor'] = {'reinjected': [str(t) for t in anchor['reinjected']],
+                                 'head': [str(t) for t in anchor.get('head') or []]}
     return prov
 
 
@@ -474,17 +490,46 @@ def validate_promotion_entry(subkey, entry):
         raise PromotionContractError('%s: root-backed result has no root' % subkey)
 
 
+def _serialize_rows(rows):
+    """Canonical bytes installed by every promotion store replacement."""
+    return b''.join(
+        (json.dumps(row, ensure_ascii=False) + '\n').encode('utf-8')
+        for row in rows)
+
+
 def _atomic_write_rows(path, rows):
     directory = os.path.dirname(os.path.abspath(path)) or '.'
     os.makedirs(directory, exist_ok=True)
     fd, tmp = tempfile.mkstemp(prefix='.%s.' % os.path.basename(path), suffix='.tmp', dir=directory)
     try:
-        with os.fdopen(fd, 'w', encoding='utf-8', newline='\n') as fh:
-            for row in rows:
-                fh.write(json.dumps(row, ensure_ascii=False) + '\n')
+        with os.fdopen(fd, 'wb') as fh:
+            fh.write(_serialize_rows(rows))
             fh.flush()
             os.fsync(fh.fileno())
-        os.replace(tmp, path)
+        promotion_journal.durable_replace(tmp, path)
+    except BaseException:
+        try:
+            os.unlink(tmp)
+        except FileNotFoundError:
+            pass
+        raise
+
+
+def _atomic_write_report(path, report, fault_hook=None):
+    """Write a byte-stable report with injectable write/replace death points."""
+    payload = promotion_journal.stable_json_bytes(report)
+    directory = os.path.dirname(os.path.abspath(path)) or '.'
+    os.makedirs(directory, exist_ok=True)
+    fd, tmp = tempfile.mkstemp(
+        prefix='.%s.' % os.path.basename(path), suffix='.tmp', dir=directory)
+    try:
+        with os.fdopen(fd, 'wb') as fh:
+            fh.write(payload)
+            fh.flush()
+            os.fsync(fh.fileno())
+        promotion_journal.fault(fault_hook, 'report_write')
+        promotion_journal.durable_replace(tmp, path)
+        promotion_journal.fault(fault_hook, 'report_replace')
     except BaseException:
         try:
             os.unlink(tmp)
@@ -638,6 +683,14 @@ def rows_for(subkey, entry, review_status, model_version):
                 # Dedicated nom/voc form-note field (not Rektion; not mixed into
                 # number/gender/voice consumers — H1624 form_notes).
                 'form_notes': extract_form_notes(de),
+                # H1624 G3: normalized DE citation edges (raw <ls> stays in de).
+                'citation_edges': extract_citation_edges(de),
+                # H1624 G4: edition-relationship flags (H180 typology machine class).
+                # PW gender-correction needs a PWG peer; promote stamps the layer rule
+                # default (restate for pw); annotate_edition_rel fills pw_correct later.
+                'edition_rel': classify_edition_rel(
+                    layer, sense.get('tag'), de,
+                    key1=key1, subcard=subkey),
                 'equivalence_type': sense.get('equivalence_type'),
                 'source_type': sense.get('source_type'),
                 'stratum': sense.get('stratum'),
@@ -682,7 +735,8 @@ def collect_and_validate(paths, review_status, gen_model_version):
 
 def batch_promote(batch, store, review_status, gen_model_version,
                   no_backup=False, steal_lock=False, lock_ttl_seconds=None,
-                  report_path=None):
+                  report_path=None, journal_path=None, promotion_id=None,
+                  fault_hook=None, store_claim_held=False):
     """H1339 Phase 3: promote N leases' clean outputs in ONE store transaction.
 
     Replaces the per-lease subprocess loop (N x [full store read + duplicate scan +
@@ -701,14 +755,27 @@ def batch_promote(batch, store, review_status, gen_model_version,
          it once after the transaction, exactly as before;
       5. any failure before the atomic replace leaves the store byte-identical;
       6. idempotent and byte-stable: a rerun with the same inputs writes the same rows.
+      7. every mutating bundle requires ``journal_path`` + ``promotion_id`` and
+         a before-store backup; unjournaled/no-backup batch writes are refused.
 
     `batch` is a list of {'lease_id', 'glob' (ABSOLUTE or repo-relative), 'expected_subcards'}.
     Returns the per-lease report dict (also written to `report_path` when given)."""
+    if not journal_path:
+        raise PromotionContractError(
+            'mutating batch promotion requires --journal')
+    if not promotion_id:
+        raise PromotionContractError(
+            'mutating batch promotion requires a stable --promotion-id')
+    if no_backup:
+        raise PromotionContractError(
+            'journaled batch promotion requires a recovery backup')
     validate_store_target(store)
-    lease_best, lease_rows, lease_nulls = {}, {}, {}
+    lease_best, lease_rows, lease_nulls, lease_paths = {}, {}, {}, {}
     all_rows, seen_subs = [], {}
     for item in batch:
         lease_id = item['lease_id']
+        if lease_id in lease_best:
+            raise PromotionContractError('duplicate lease_id in batch: %s' % lease_id)
         paths = sorted(glob.glob(item['glob'] if os.path.isabs(item['glob'])
                                  else os.path.join(ROOT, item['glob'])))
         if not paths:
@@ -742,10 +809,91 @@ def batch_promote(batch, store, review_status, gen_model_version,
             seen_subs[sub] = lease_id
         lease_best[lease_id] = best
         lease_rows[lease_id] = rows
+        lease_paths[lease_id] = paths
         all_rows.extend(rows)
 
+    bindings = {
+        item['lease_id']: {
+            'run_id': (str(item['run_id']) if item.get('run_id') is not None else None),
+            'attempt_id': (str(item['attempt_id'])
+                           if item.get('attempt_id') is not None else None),
+        }
+        for item in batch
+    }
+    current_clean = promotion_journal.aggregate_files(
+        [path for paths in lease_paths.values() for path in paths])
+    current_clean.update({
+        'subcards': sorted(seen_subs),
+        'subcard_count': len(seen_subs),
+        'card_count': len(seen_subs),
+        'sense_rows': len(all_rows),
+    })
+    current_lease_facts = {
+        lease_id: {
+            'binding': bindings[lease_id],
+            'clean_output': promotion_journal.aggregate_files(lease_paths[lease_id]),
+            'subcard_keys': sorted(lease_best[lease_id]),
+            'subcards': len(lease_best[lease_id]),
+        }
+        for lease_id in sorted(lease_best)
+    }
     ttl_kwargs = {'ttl_seconds': lock_ttl_seconds} if lock_ttl_seconds else {}
-    with PromoteClaim(store, steal=steal_lock, **ttl_kwargs):
+    claim = (contextlib.nullcontext() if store_claim_held
+             else PromoteClaim(store, steal=steal_lock, **ttl_kwargs))
+    with claim:
+        # A journal that already sealed/committed these bytes is reconciled
+        # before the live store is treated as a new "before" image.
+        if journal_path and os.path.exists(journal_path):
+            sealed = promotion_journal.load(journal_path)
+            mismatches = []
+            checks = {
+                'promotion_id': (sealed['promotion_id'], promotion_id),
+                'canonical store path': (
+                    sealed['store']['path'], promotion_journal.canonical_path(store)),
+                'review_status': (sealed['review_status'], review_status),
+                'exact model': (sealed['model_identifier'], gen_model_version),
+                'lease ids': (sealed['lease_ids'], sorted(lease_best)),
+                'bindings': (sealed['bindings'], bindings),
+                'clean output': (sealed['clean_output'], current_clean),
+                'report path': (
+                    sealed['report'].get('report_path'),
+                    (promotion_journal.canonical_path(report_path)
+                     if report_path else None)),
+            }
+            for label, (left, right) in checks.items():
+                if left != right:
+                    mismatches.append('%s (%r != %r)' % (label, left, right))
+            for lease_id, facts in current_lease_facts.items():
+                sealed_metrics = (sealed.get('leases') or {}).get(lease_id) or {}
+                for name in ('clean_output', 'subcard_keys', 'subcards'):
+                    if sealed_metrics.get(name) != facts[name]:
+                        mismatches.append('%s.%s changed' % (lease_id, name))
+            if mismatches:
+                raise PromotionContractError(
+                    'journal retry intent mismatch: %s' % '; '.join(mismatches))
+            reconciled = promotion_journal.reconcile(
+                journal_path, store_claim_held=True)
+            if reconciled['action'] in ('adopt_store_commit',
+                                         'already_store_committed',
+                                         'terminal_complete'):
+                sealed = promotion_journal.load(journal_path)
+                sealed_backup = sealed['store'].get('backup')
+                if sealed_backup and sealed_backup.get('path'):
+                    if not os.path.isfile(sealed_backup['path']):
+                        raise PromotionContractError(
+                            'sealed promotion backup is missing: %s'
+                            % sealed_backup['path'])
+                    observed_backup = promotion_journal.file_fingerprint(
+                        sealed_backup['path'])
+                    if (observed_backup['sha256'] != sealed_backup['sha256']
+                            or observed_backup['rows'] != sealed_backup['rows']):
+                        raise PromotionContractError(
+                            'sealed promotion backup hash/rows do not match')
+                report = dict(sealed['report'])
+                if report_path:
+                    _atomic_write_report(report_path, report, fault_hook)
+                return report
+
         existing_rows = []
         if os.path.exists(store):
             with open(store, encoding='utf-8') as f:
@@ -785,52 +933,114 @@ def batch_promote(batch, store, review_status, gen_model_version,
         if before and len(rows_to_write) < before * 0.5:
             raise PromotionContractError(
                 'would shrink store %d -> %d rows (>50%% loss)' % (before, len(rows_to_write)))
-        if os.path.exists(store) and not no_backup:
-            bak = _backup_path(store, True)
-            _fsynced_backup(store, bak)
-            print('backed up prior store -> %s' % os.path.basename(bak))
-        _atomic_write_rows(store, rows_to_write)
+        before_fp = promotion_journal.file_fingerprint(store)
+        expected_payload = _serialize_rows(rows_to_write)
+        expected_fp = promotion_journal.bytes_fingerprint(store, expected_payload)
 
-    # H1386 D3: per-lease rows_added / rows_replaced / store_delta. The bundle is
-    # all-or-nothing (every incoming row landed or we raised above), so these are exact:
-    # a subcard absent from the pre-merge store contributes added rows, a present one
-    # replaces its prior rows, and the net per-lease line-count change is their balance.
-    def _lease_delta(lease_id, best):
-        inc = lease_rows[lease_id]
-        new_subs = {sub for sub in best if sub not in existing_count_by_sub}
-        prior_rows = sum(existing_count_by_sub.get(sub, 0) for sub in best)
-        return {
-            'rows_added': sum(1 for r in inc if r['subcard'] in new_subs),
-            'rows_replaced': sum(1 for r in inc if r['subcard'] not in new_subs),
-            'store_delta': len(inc) - prior_rows,
+        # H1386 D3: per-lease rows_added / rows_replaced / store_delta. The bundle is
+        # all-or-nothing (every incoming row landed or we raised above), so these are exact.
+        def _lease_delta(lease_id, best):
+            inc = lease_rows[lease_id]
+            new_subs = {sub for sub in best if sub not in existing_count_by_sub}
+            prior_rows = sum(existing_count_by_sub.get(sub, 0) for sub in best)
+            return {
+                'rows_added': sum(1 for r in inc if r['subcard'] in new_subs),
+                'rows_replaced': sum(1 for r in inc if r['subcard'] not in new_subs),
+                'store_delta': len(inc) - prior_rows,
+            }
+
+        per_lease_metrics = {
+            lease_id: dict({
+                'run_id': bindings[lease_id]['run_id'],
+                'attempt_id': bindings[lease_id]['attempt_id'],
+                'clean_output': current_lease_facts[lease_id]['clean_output'],
+                'subcards': len(best),
+                'subcard_keys': sorted(best),
+                'rows': len(lease_rows[lease_id]),
+                'null_subcards': lease_nulls.get(lease_id) or [],
+            }, **_lease_delta(lease_id, best))
+            for lease_id, best in lease_best.items()
         }
+        bak = (_backup_path(store, True) if not os.path.exists(journal_path)
+               else promotion_journal.load(journal_path)['store']['backup']['path'])
+        store_record = {
+            'path': promotion_journal.canonical_path(store),
+            'before_sha256': before_fp['sha256'],
+            'before_rows': before_fp['rows'],
+            'before_bytes': before_fp['bytes'],
+            'expected_after_sha256': expected_fp['sha256'],
+            'expected_after_rows': expected_fp['rows'],
+            'expected_after_bytes': expected_fp['bytes'],
+            'backup_path': promotion_journal.canonical_path(bak),
+            'backup': {
+                'path': promotion_journal.canonical_path(bak),
+                'sha256': before_fp['sha256'],
+                'rows': before_fp['rows'],
+                'bytes': before_fp['bytes'],
+            },
+        }
+        report = {
+            'schema': 'pwg.batch_promotion.v1',
+            'promotion_id': promotion_id,
+            'journal': promotion_journal.canonical_path(journal_path),
+            'journal_phase': 'store_committed',
+            'report_path': (promotion_journal.canonical_path(report_path)
+                            if report_path else None),
+            'model_identifier': gen_model_version,
+            'review_status': review_status,
+            'clean_output_sha256': current_clean['sha256'],
+            'store_sha256': expected_fp['sha256'],
+            'store_rows_before': before,
+            'store_rows_after': len(rows_to_write),
+            'leases': per_lease_metrics,
+        }
+        promotion_journal.prepare(
+            journal_path,
+            promotion_id=promotion_id,
+            lease_ids=sorted(lease_best),
+            run_ids={lease_id: metrics['run_id']
+                     for lease_id, metrics in per_lease_metrics.items()
+                     if metrics.get('run_id')},
+            bindings=bindings,
+            model_identifier=gen_model_version,
+            review_status=review_status,
+            clean_output=current_clean,
+            store=store_record,
+            leases=per_lease_metrics,
+            report=report,
+            fault_hook=fault_hook,
+        )
 
-    report = {'schema': 'pwg.batch_promotion.v1',
-              'store_rows_before': before, 'store_rows_after': len(rows_to_write),
-              'leases': {lease_id: dict({'subcards': len(best),
-                                         'rows': len(lease_rows[lease_id]),
-                                         'null_subcards': lease_nulls.get(lease_id) or []},
-                                        **_lease_delta(lease_id, best))
-                         for lease_id, best in lease_best.items()}}
+        if bak:
+            if os.path.exists(bak):
+                observed_backup = promotion_journal.file_fingerprint(bak)
+                if (observed_backup['sha256'] != before_fp['sha256']
+                        or observed_backup['rows'] != before_fp['rows']):
+                    raise PromotionContractError(
+                        'prepared backup exists but does not match the sealed before store')
+            else:
+                _fsynced_backup(store, bak)
+                print('backed up prior store -> %s' % os.path.basename(bak))
+        _atomic_write_rows(store, rows_to_write)
+        promotion_journal.fault(fault_hook, 'store_replace')
+        promotion_journal.fault(fault_hook, 'after_store_replace_before_phase')
+        if journal_path:
+            promotion_journal.mark_store_committed(
+                journal_path, store_claim_held=True)
+
+    sealed = promotion_journal.load(journal_path)
+    report = dict(sealed['report'])
     print('BATCH PROMOTE: %d lease(s), %d subcard(s), %d sense rows; store %d -> %d rows'
           % (len(batch), len(seen_subs), len(all_rows), before, len(rows_to_write)))
     for lease_id in sorted(report['leases']):
         row = report['leases'][lease_id]
         print('  %s: %d subcard(s), %d row(s)' % (lease_id, row['subcards'], row['rows']))
-    # B12: landed replacements clear their matching temporary TM denials (fail-open, loud).
-    try:
-        union_best = {}
-        for best in lease_best.values():
-            union_best.update(best)
-        cleared_addr, cleared_frag = clear_denials_for_promotion(union_best)
-        if cleared_addr or cleared_frag:
-            print('TM denylist: cleared %d card address(es) + %d fragment sha(s)'
-                  % (len(cleared_addr), len(cleared_frag)))
-    except Exception as exc:  # noqa: BLE001 -- deliberate fail-open, loudly
-        print('⚠ TM denylist clearing skipped (%s) -- denials stay in place' % exc)
+    # Journaled promotion deliberately leaves temporary denials in force here.
+    # The coordinator first harvests corrected frag_prov rows while the rejected
+    # cached fsha is still excluded, then atomically appends the unblock and seals
+    # both sidecars at DERIVED_VALIDATED.
     if report_path:
-        with open(report_path, 'w', encoding='utf-8', newline='\n') as f:
-            json.dump(report, f, ensure_ascii=False, indent=1)
+        _atomic_write_report(report_path, report, fault_hook)
     return report
 
 
@@ -864,6 +1074,8 @@ def selftest():
     assert r.get('government') == [], 'plain DE with no Rektion must stamp government=[]'
     assert r.get('form_labels') == [], 'plain DE with no form labels must stamp form_labels=[]'
     assert r.get('form_notes') == [], 'plain DE with no nom/voc must stamp form_notes=[]'
+    assert r.get('citation_edges') == [], 'plain DE with no <ls> must stamp citation_edges=[]'
+    assert r.get('edition_rel', {}).get('subtype') == 'base', r.get('edition_rel')
     # H1624 G2: PW capitalized (Instr.) must be stamped at promote time from DE only
     gov_entry = {'card': {'key1': 'vas~~h0_zz_pw00', 'iast': 'vas', 'notes': '', 'records': [
         {'h': 'vas', 'grammar': '', 'senses': [
@@ -904,6 +1116,57 @@ def selftest():
     # Rektion loc must NOT land in form_labels or form_notes
     assert not any(h.get('value') == 'loc' for h in frow['form_labels']), frow
     assert not any(n.get('case') in ('loc', 'instr', 'acc') for n in frow['form_notes']), frow
+    # H1624 G3: citation_edges from DE <ls>
+    cite_entry = {'card': {'key1': 'agni~~h0_00_pwg00', 'iast': 'agni', 'notes': '', 'records': [
+        {'h': 'agni', 'grammar': '', 'senses': [
+            {'tag': '1', 'russian': 'огонь',
+             'german': '{%Feuer%} <ls>ṚV. 1,1,1</ls>; <ls n="MBH.">3,50</ls>.',
+             'equivalence_type': 'equivalent', 'source_type': 'lexicographic',
+             'stratum': '', 'differentia': ''},
+        ]}]}, 'meta': dict(meta, root='agni', selected_keys=['agni~~h0_00_pwg00'],
+                           provenance_classes={'agni~~h0_00_pwg00': 'real'},
+                           input_hashes={'agni~~h0_00_pwg00': {
+                               'raw_sha256': '1' * 64, 'portrait_sha256': '2' * 64}}),
+                  'wf_file': 'wf_output.json'}
+    crow = list(rows_for('agni~~h0_00_pwg00', cite_entry, 'ai_translated',
+                         SELFTEST_MODEL_VERSION))[0]
+    assert len(crow['citation_edges']) == 2, crow
+    assert crow['citation_edges'][0]['siglum'] == 'ṚV', crow
+    assert crow['citation_edges'][0]['resolver_status'] == 'map', crow
+    assert crow['citation_edges'][0]['page'] == '1,1,1', crow
+    # raw DE still holds the markup
+    assert '<ls>ṚV. 1,1,1</ls>' in crow['de'], crow
+    # H1624 G4: edition_rel on overlay layers
+    sch_entry = {'card': {'key1': 'ap~~h0_zz_sch', 'iast': 'ap', 'notes': '', 'records': [
+        {'h': 'ap', 'grammar': '', 'senses': [
+            {'tag': 'anu_desid', 'russian': 'соглашаться',
+             'german': '{%einstimmen%}',
+             'equivalence_type': 'equivalent', 'source_type': 'lexicographic',
+             'stratum': '', 'differentia': ''},
+        ]}]}, 'meta': dict(meta, root='Ap', selected_keys=['ap~~h0_zz_sch'],
+                           provenance_classes={'ap~~h0_zz_sch': 'real'},
+                           input_hashes={'ap~~h0_zz_sch': {
+                               'raw_sha256': '1' * 64, 'portrait_sha256': '2' * 64}}),
+                  'wf_file': 'wf_output.json'}
+    srow = list(rows_for('ap~~h0_zz_sch', sch_entry, 'ai_translated',
+                         SELFTEST_MODEL_VERSION))[0]
+    assert srow['layer'] == 'sch', srow
+    assert srow['edition_rel']['subtype'] == 'derived_sense', srow['edition_rel']
+    assert srow['edition_rel']['source_layers'] == ['sch'], srow['edition_rel']
+    pw_entry = {'card': {'key1': 'g~~h0_zz_pw01', 'iast': 'g', 'notes': '', 'records': [
+        {'h': 'g', 'grammar': '', 'senses': [
+            {'tag': '1', 'russian': 'идти', 'german': '{%gehen%}',
+             'equivalence_type': 'equivalent', 'source_type': 'lexicographic',
+             'stratum': '', 'differentia': ''},
+        ]}]}, 'meta': dict(meta, root='gA', selected_keys=['g~~h0_zz_pw01'],
+                           provenance_classes={'g~~h0_zz_pw01': 'real'},
+                           input_hashes={'g~~h0_zz_pw01': {
+                               'raw_sha256': '1' * 64, 'portrait_sha256': '2' * 64}}),
+                  'wf_file': 'wf_output.json'}
+    prow = list(rows_for('g~~h0_zz_pw01', pw_entry, 'ai_translated',
+                         SELFTEST_MODEL_VERSION))[0]
+    assert prow['edition_rel']['subtype'] == 'restate', prow['edition_rel']
+    assert prow['edition_rel']['direction'] == 'abridging', prow['edition_rel']
     assert list(rows_for('x~~h0_zz_pw01', dict(entry, meta=meta), 'ai_translated',
                          SELFTEST_MODEL_VERSION))[0]['layer'] == 'pw', 'addenda sub-card -> layer=pw'
     assert r['review_status'] == 'ai_translated', 'must not auto-approve (G5 gate)'
@@ -970,6 +1233,21 @@ def selftest():
     bp = list(rows_for('p_a~~h5_00_pwg00', badentry, 'ai_translated',
                        SELFTEST_MODEL_VERSION))[0]['provenance']
     assert 'tnmask' not in bp, 'a malformed tnmask pairing must not be promoted'
+    # H858 Part B: a card repaired by the german-anchor lane must SAY SO on every row it yields --
+    # otherwise a machine-re-injected citation is indistinguishable in the store from one the model
+    # echoed correctly, and the repair's real-world precision is unauditable after the fact. Same
+    # discipline as tnmask above: never fabricated, and a malformed stamp is dropped.
+    assert 'german_anchor' not in p, 'an unrepaired card must not fabricate a german_anchor stamp'
+    garow = list(rows_for('p_a~~h5_00_pwg00',
+                          dict(entry, card=dict(entry['card'],
+                                                german_anchor={'reinjected': ['T4'], 'head': []})),
+                          'ai_translated', SELFTEST_MODEL_VERSION))[0]['provenance']
+    assert garow['german_anchor'] == {'reinjected': ['T4'], 'head': []}, \
+        'a german-anchor repair must ride on the promoted row provenance'
+    gabad = list(rows_for('p_a~~h5_00_pwg00',
+                          dict(entry, card=dict(entry['card'], german_anchor={'head': []})),
+                          'ai_translated', SELFTEST_MODEL_VERSION))[0]['provenance']
+    assert 'german_anchor' not in gabad, 'a malformed german_anchor stamp must not be promoted'
     # collect_cards: a non-null card wins over a null for the same sub-card key.
     d = tempfile.mkdtemp()
     nullf = os.path.join(d, 'wf_output.sc.x.json')
@@ -1063,9 +1341,10 @@ def selftest():
     atomic = os.path.join(d, 'atomic.jsonl')
     with open(atomic, 'w', encoding='utf-8') as f:
         f.write('old\n')
-    real_replace = os.replace
+    real_replace = promotion_journal.durable_replace
     try:
-        os.replace = lambda _src, _dst: (_ for _ in ()).throw(OSError('synthetic crash'))
+        promotion_journal.durable_replace = (
+            lambda _src, _dst: (_ for _ in ()).throw(OSError('synthetic crash')))
         try:
             _atomic_write_rows(atomic, new)
         except OSError:
@@ -1073,7 +1352,7 @@ def selftest():
         else:
             raise AssertionError('atomic replace failure was swallowed')
     finally:
-        os.replace = real_replace
+        promotion_journal.durable_replace = real_replace
     assert open(atomic, encoding='utf-8').read() == 'old\n'
     assert not [n for n in os.listdir(d) if n.endswith('.tmp')]
     # Backups are exclusive, collision-resistant copies. A failed copy leaves both the live
@@ -1126,9 +1405,23 @@ def selftest():
         with open(fp, 'w', encoding='utf-8') as f:
             json.dump({'meta': m, 'results': [{'key': key, 'card': entry['card']}]}, f)
         lease_files[lease_id] = (fp, key)
-    batch = [{'lease_id': lid, 'glob': fp, 'expected_subcards': [key]}
+    batch = [{'lease_id': lid, 'run_id': 'run-' + lid,
+              'attempt_id': 'attempt-' + lid,
+              'glob': fp, 'expected_subcards': [key]}
              for lid, (fp, key) in lease_files.items()]
-    rep = batch_promote(batch, bstore, 'ai_translated', SELFTEST_MODEL_VERSION)
+    unjournaled_before = open(bstore, 'rb').read()
+    try:
+        batch_promote(batch, bstore, 'ai_translated', SELFTEST_MODEL_VERSION)
+        raise AssertionError('unjournaled mutating batch was accepted')
+    except PromotionContractError as exc:
+        assert 'requires --journal' in str(exc)
+    assert open(bstore, 'rb').read() == unjournaled_before
+    batch_journal = os.path.join(bd, 'batch.journal.json')
+    batch_report = os.path.join(bd, 'batch.report.json')
+    rep = batch_promote(
+        batch, bstore, 'ai_translated', SELFTEST_MODEL_VERSION,
+        journal_path=batch_journal, promotion_id='batch-selftest',
+        report_path=batch_report)
     assert rep['leases']['L1']['subcards'] == 1 and rep['leases']['L2']['subcards'] == 1
     # H1386 D3: PER-LEASE delta figures, not the bundle-wide before/after stamped N times.
     for lid in ('L1', 'L2'):
@@ -1136,24 +1429,144 @@ def selftest():
         assert row['rows_added'] == row['rows'] and row['rows_replaced'] == 0, row
         assert row['store_delta'] == row['rows'], row
     bytes1 = open(bstore, 'rb').read()
+    report_bytes1 = open(batch_report, 'rb').read()
     assert b'y~~keep' in bytes1, 'unrelated store row must survive the batch'
-    rep2 = batch_promote(batch, bstore, 'ai_translated', SELFTEST_MODEL_VERSION)
+    rep2 = batch_promote(
+        batch, bstore, 'ai_translated', SELFTEST_MODEL_VERSION,
+        journal_path=batch_journal, promotion_id='batch-selftest',
+        report_path=batch_report)
     assert open(bstore, 'rb').read() == bytes1, 'batch rerun must be byte-stable/idempotent'
-    # H1386 D3: an idempotent replacement is a per-lease ZERO delta (all rows replaced) --
-    # the benign delta-0 case the windows100 GO gate must see per lease, not bundle-wide.
-    for lid in ('L1', 'L2'):
-        row = rep2['leases'][lid]
-        assert row['rows_added'] == 0 and row['rows_replaced'] == row['rows'], row
-        assert row['store_delta'] == 0, row
+    assert rep2 == rep, 'journal retry must return the sealed report'
+    assert open(batch_report, 'rb').read() == report_bytes1, (
+        'journal retry report must be byte-idempotent')
+    # PREPARED and report-replace death points are independently recoverable.
+    pstore = os.path.join(bd, 'prepared-store.jsonl')
+    with open(pstore, 'w', encoding='utf-8') as f:
+        f.write(json.dumps(keep_row, ensure_ascii=False) + '\n')
+    pbefore = open(pstore, 'rb').read()
+    pjournal = os.path.join(bd, 'prepared.journal.json')
+    preport = os.path.join(bd, 'prepared.report.json')
+    def _die_prepared(point):
+        if point == 'prepared':
+            raise RuntimeError('synthetic prepared death')
+    try:
+        batch_promote(
+            batch, pstore, 'ai_translated', SELFTEST_MODEL_VERSION,
+            journal_path=pjournal, promotion_id='prepared-selftest',
+            report_path=preport, fault_hook=_die_prepared)
+        raise AssertionError('prepared fault hook did not fire')
+    except RuntimeError as exc:
+        assert 'prepared death' in str(exc)
+    assert open(pstore, 'rb').read() == pbefore
+    assert promotion_journal.load(pjournal)['phase'] == 'prepared'
+    def _die_report_replace(point):
+        if point == 'report_replace':
+            raise RuntimeError('synthetic report replace death')
+    try:
+        batch_promote(
+            batch, pstore, 'ai_translated', SELFTEST_MODEL_VERSION,
+            journal_path=pjournal, promotion_id='prepared-selftest',
+            report_path=preport, fault_hook=_die_report_replace)
+        raise AssertionError('report_replace fault hook did not fire')
+    except RuntimeError as exc:
+        assert 'report replace death' in str(exc)
+    assert promotion_journal.load(pjournal)['phase'] == 'store_committed'
+    preport_bytes = open(preport, 'rb').read()
+    batch_promote(
+        batch, pstore, 'ai_translated', SELFTEST_MODEL_VERSION,
+        journal_path=pjournal, promotion_id='prepared-selftest',
+        report_path=preport)
+    assert open(preport, 'rb').read() == preport_bytes
+    # Recover the exact death window: store replace succeeded, PREPARED ->
+    # STORE_COMMITTED phase write did not. Re-entry adopts only the sealed after hash.
+    jstore = os.path.join(bd, 'journal-store.jsonl')
+    with open(jstore, 'w', encoding='utf-8') as f:
+        f.write(json.dumps(keep_row, ensure_ascii=False) + '\n')
+    jpath = os.path.join(bd, 'promotion.journal.json')
+    rpath = os.path.join(bd, 'promotion.report.json')
+    old_tm_dir = os.environ.get('PWG_RU_TM_DIR')
+    os.environ['PWG_RU_TM_DIR'] = bd
+    def _die_after_replace(point):
+        if point == 'store_replace':
+            raise RuntimeError('synthetic death after replace')
+    try:
+        try:
+            batch_promote(
+                batch, jstore, 'ai_translated', SELFTEST_MODEL_VERSION,
+                journal_path=jpath, promotion_id='selftest-promotion',
+                report_path=rpath, fault_hook=_die_after_replace)
+            raise AssertionError('after-replace fault hook did not fire')
+        except RuntimeError as exc:
+            assert 'synthetic death' in str(exc)
+        assert promotion_journal.load(jpath)['phase'] == 'prepared'
+        assert promotion_journal.reconcile(jpath, adopt_after=False)[
+            'action'] == 'adopt_store_commit'
+        recovered = batch_promote(
+            batch, jstore, 'ai_translated', SELFTEST_MODEL_VERSION,
+            journal_path=jpath, promotion_id='selftest-promotion',
+            report_path=rpath)
+        assert recovered['promotion_id'] == 'selftest-promotion', recovered
+        assert promotion_journal.load(jpath)['phase'] == 'store_committed'
+        assert os.path.isfile(rpath), 'batch report must be atomic and present after retry'
+    finally:
+        if old_tm_dir is None:
+            os.environ.pop('PWG_RU_TM_DIR', None)
+        else:
+            os.environ['PWG_RU_TM_DIR'] = old_tm_dir
     # all-or-nothing: a lease whose clean output diverges from its expectation fails the
     # WHOLE bundle with the store byte-identical.
     bad = [dict(batch[0]), dict(batch[1], expected_subcards=['not~~this'])]
     try:
-        batch_promote(bad, bstore, 'ai_translated', SELFTEST_MODEL_VERSION)
+        batch_promote(
+            bad, bstore, 'ai_translated', SELFTEST_MODEL_VERSION,
+            journal_path=os.path.join(bd, 'bad.journal.json'),
+            promotion_id='bad-selftest')
         raise AssertionError('divergent lease expectation did not fail the bundle')
     except PromotionContractError:
         pass
     assert open(bstore, 'rb').read() == bytes1, 'failed bundle must leave the store unchanged'
+    # Multi-sense replacement is one atomic subcard replacement: no stale old
+    # sense may survive and no new sense may be dropped.
+    multi_key = 'multi~~h0_00_pwg00'
+    multi_meta = dict(
+        meta, root='multi', selected_keys=[multi_key],
+        provenance_classes={multi_key: 'real'},
+        input_hashes={multi_key: {
+            'raw_sha256': '7' * 64, 'portrait_sha256': '8' * 64}})
+    multi_card = {
+        'key1': multi_key, 'iast': 'multi', 'notes': '', 'records': [{
+            'h': 'multi', 'grammar': '', 'senses': [
+                {'tag': '1', 'russian': 'новый один', 'german': 'neu eins',
+                 'equivalence_type': 'equivalent', 'source_type': 'attested',
+                 'stratum': '', 'differentia': ''},
+                {'tag': '2', 'russian': 'новый два', 'german': 'neu zwei',
+                 'equivalence_type': 'equivalent', 'source_type': 'attested',
+                 'stratum': '', 'differentia': ''},
+            ],
+        }],
+    }
+    multi_wf = os.path.join(bd, 'wf_output.multi.json')
+    with open(multi_wf, 'w', encoding='utf-8') as f:
+        json.dump({'meta': multi_meta, 'results': [
+            {'key': multi_key, 'card': multi_card}]}, f)
+    multi_store = os.path.join(bd, 'multi.store.jsonl')
+    with open(multi_store, 'w', encoding='utf-8') as f:
+        for tag, ru in (('1', 'старый один'), ('2', 'старый два')):
+            f.write(json.dumps({
+                'key1': 'multi', 'subcard': multi_key, 'h': 'multi',
+                'sense_tag': tag, 'de': 'alt ' + tag, 'ru': ru,
+                'provenance': {},
+            }, ensure_ascii=False) + '\n')
+    batch_promote(
+        [{'lease_id': 'LM', 'run_id': 'run-LM', 'attempt_id': 'attempt-LM',
+          'glob': multi_wf, 'expected_subcards': [multi_key]}],
+        multi_store, 'ai_translated', SELFTEST_MODEL_VERSION,
+        journal_path=os.path.join(bd, 'multi.journal.json'),
+        promotion_id='multi-selftest')
+    with open(multi_store, encoding='utf-8') as f:
+        multi_rows = [json.loads(line) for line in f if line.strip()]
+    assert len(multi_rows) == 2, multi_rows
+    assert [row['ru'] for row in multi_rows] == ['новый один', 'новый два']
     # bundle-fails when the store already holds a strictly better attempt (a freshly
     # audited lease should never lose better-attempt-wins).
     partial_card = dict(entry['card'], partial=True, missing_fragments=['g1:f0'])
@@ -1161,7 +1574,10 @@ def selftest():
     with open(fp1, 'w', encoding='utf-8') as f:
         json.dump({'meta': meta, 'results': [{'key': key1, 'card': partial_card}]}, f)
     try:
-        batch_promote(batch, bstore, 'ai_translated', SELFTEST_MODEL_VERSION)
+        batch_promote(
+            batch, bstore, 'ai_translated', SELFTEST_MODEL_VERSION,
+            journal_path=os.path.join(bd, 'downgrade.journal.json'),
+            promotion_id='downgrade-selftest')
         raise AssertionError('a partial attempt over a complete store row did not fail the bundle')
     except PromotionContractError as exc:
         assert 'better attempt' in str(exc)
@@ -1272,6 +1688,12 @@ def main():
                          'same per-entry validation as single mode, better-attempt-wins, '
                          'one backup, one atomic replace, all-or-nothing.')
     ap.add_argument('--report', help='write the batch per-lease report JSON here')
+    ap.add_argument('--journal',
+                    help='recoverable pwg.promotion_journal.v1 path for --batch-manifest; '
+                         'PREPARED is fsynced before store replacement')
+    ap.add_argument('--promotion-id',
+                    help='required stable coordinator promotion id for --journal; '
+                         'retries must supply the identical id')
     ap.add_argument('--defect-keys',
                     help='H1553: path to a one-key-per-line defect list (audit '
                          'requeue.defect.keys.txt). When omitted, auto-discovers that file next '
@@ -1286,6 +1708,10 @@ def main():
                          '(default is dry-run only)')
     args = ap.parse_args()
     if args.batch_manifest:
+        if not args.journal or not args.promotion_id:
+            sys.exit('REFUSED: --batch-manifest requires --journal and --promotion-id')
+        if args.no_backup:
+            sys.exit('REFUSED: journaled --batch-manifest requires a backup')
         # H1386 D5: flags the batch transaction does not implement are REFUSED, never
         # silently discarded -- a hand-run `--batch-manifest --dry-run` used to mutate the
         # canonical store (claim / backup / atomic replace / denylist unblock) with no
@@ -1299,12 +1725,17 @@ def main():
             report = batch_promote(
                 batch, args.store, args.review_status, args.gen_model_version,
                 no_backup=args.no_backup, steal_lock=args.steal_lock,
-                lock_ttl_seconds=args.lock_ttl_seconds, report_path=args.report)
-        except (PromotionContractError, UnrestoredPlaceholder) as exc:
+                lock_ttl_seconds=args.lock_ttl_seconds, report_path=args.report,
+                journal_path=args.journal, promotion_id=args.promotion_id)
+        except (PromotionContractError, UnrestoredPlaceholder,
+                promotion_journal.JournalError) as exc:
             sys.exit('REFUSED: %s' % exc)
         except ClaimBusy as e:
             sys.exit(str(e))
         return report
+
+    if args.journal or args.promotion_id:
+        sys.exit('REFUSED: --journal/--promotion-id currently require --batch-manifest')
 
     if args.ready_partial_report:
         try:
@@ -1493,9 +1924,9 @@ def main():
                 bak = _backup_path(args.store, args.merge)
                 _fsynced_backup(args.store, bak)
                 print('\nbacked up prior store -> %s' % os.path.basename(bak))
-            # Atomic write: stream to a temp file then os.replace, so a crash/kill mid-write
-            # can never leave the canonical store truncated (the store this project has lost
-            # before). Matches the tmp+replace pattern in run_batch.apply_review.
+            # Durable atomic write: fsynced temp plus write-through replace on Windows
+            # (rename + directory fsync on POSIX), so a crash/kill cannot leave the
+            # canonical store truncated.
             _atomic_write_rows(args.store, rows_to_write)
             print('wrote canonical translated store -> %s (%d rows, review_status=%s)'
                   % (args.store, len(rows_to_write), args.review_status))

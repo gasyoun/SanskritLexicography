@@ -1,8 +1,324 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 25-07-2026_
+_Created: 09-07-2026 · Last updated: 26-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 26-07-2026 - H1664: voting-queue triage — a verdict for every pending sheet, human bill recounted
+
+Executor: Fable 5 (`claude-fable-5`),
+[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md).
+Full verdict table (all 42 pending sheets org-wide, each with its enabling dataset):
+[VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md §11](https://github.com/gasyoun/Uprava/blob/main/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md).
+
+| Bucket | Sheets | Judgments now | Owed after routing |
+|---|---|---|---|
+| AGENT-RULEABLE | 1 (+2 zombie rows) | 17 | 0 |
+| HYBRID (В2: agent adjudicates, human votes a blind stratified arm) | 20 | 2,282 | ~666 |
+| HUMAN-ONLY | 21 | 663 | 663 |
+| **Pending queue total** | **42** | **2,962** | **~1,329 (−55 %)** |
+| acc_ncc lane (rerouted 26-07, executed; post-H1671 key repair the C/D set is 10,614) | 1 | 49,019 | 698 |
+
+SL-specific outcomes: compound-`differs` goes В2 —
+[H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md)
+adjudicates all ~4,226 and the H1628 200-card sheet becomes the blind verification arm (same
+200 votes then close the whole queue); h1303_abbrev collapses to rule-level cards
+([H1682](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1682-Sonnet_SanskritLexicography_h1303-abbrev-rule-collapse_26.07.26.md),
+273 → ~30); the 32 article-comparison edits get source-checked pre-vote
+([H1683](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1683-Sonnet_SanskritLexicography_article-comparison-source-check_26.07.26.md));
+h180 stays routed via H1650. HUMAN-ONLY (kept, with the why): G6 gold starter (the label is
+the instrument), G5 batch1v3 (already the В2 human arm), h1306 style, Renou pilot 70,
+Kochergina 4. The acc_ncc blind spot-check (698 rows post-H1671 re-draw; the pre-repair 686 sample was voided unvoted) is now registered in
+[REVIEW_SHEETS_INDEX.md](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md)
+the H1671 sequencing gate resolved itself the same day — the key repair merged ([PR #785](https://github.com/gasyoun/SanskritLexicography/pull/785)) and the fresh sample is safe to vote. HY "after" numbers
+are planning estimates — exact arm sizes derive per stratum at execution
+([PR #783](https://github.com/gasyoun/SanskritLexicography/pull/783) pattern).
+
+## 26-07-2026 - H1628: stratified 200-item review sheet, PWG-vs-index compound `differs` (H1624 G6 residual)
+
+Executor: Sonnet 5 (`claude-sonnet-5`). Sampled from the ~4226-row `differs` queue the
+[H1624 G6](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1624-Opus_SanskritLexicography_pwg-german-layers-backlog-ordered_25.07.26.md)
+`enrich_portrait_derivation.py --conflict-rate` flags (39539 rows scanned, 4226/39539 =
+10.69% conflict, 10577/39539 = 26.75% needs_human — unchanged from G6's freeze). Sampling
+script:
+[`src/pilot/compound_differs_review_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/compound_differs_review_sample.py)
+(`--selftest` wired; `--report` dry-runs the strata; `--write` emits the frame + sheet).
+
+**Sample frame — two-stage stratified, seed=1628 (deterministic, reproducible):**
+
+1. `vs_index_class` (how PWG's split disagrees with the pre-existing
+   `headword_index.tsv` `compound_members`, not itself stratifiable since the whole
+   queue is `compound_status=differs`): `member_count_diff` (76/4226, 1.8%) gets a flat
+   **guaranteed quota of 20** — proportional allocation would round it to ~1-2 items and
+   bury a structurally distinct failure mode; `same_count_diff_split` (4150/4226) fills
+   the remaining 180 proportionally across length x frequency cells (largest-remainder
+   rounding to land exactly on 180).
+2. `length_bucket` (`len(k1)`): short ≤8 / medium 9-10 / long ≥11 (quartile-derived cuts
+   on the full differs frame).
+3. `freq_bucket` (DCS attestation count via
+   [`src/pwg_freq_order.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_freq_order.tsv)):
+   `no_dcs_freq` (no match, 58.1% of the frame) / low 1-2 / mid 3-9 / high ≥10.
+
+| stratum | full differs frame (n=4226) | sample (n=200) |
+|---|---:|---:|
+| vs_index_class: member_count_diff | 76 (1.8%) | 20 (10.0%, oversampled by design) |
+| vs_index_class: same_count_diff_split | 4150 (98.2%) | 180 (90.0%) |
+| length: short(≤8) | 1904 (45.1%) | 83 (41.5%) |
+| length: medium(9-10) | 1622 (38.4%) | 78 (39.0%) |
+| length: long(≥11) | 700 (16.6%) | 39 (19.5%) |
+| freq: no_dcs_freq | 2456 (58.1%) | 123 (61.5%) |
+| freq: low(1-2) | 660 (15.6%) | 28 (14.0%) |
+| freq: mid(3-9) | 503 (11.9%) | 22 (11.0%) |
+| freq: high(≥10) | 607 (14.4%) | 27 (13.5%) |
+
+Sample frame (metadata only — k1/hom/both splits/strata/panini/gaṇa, no `ru`/`de` store
+text) committed at
+[`review/sanskritlexicography-pwg-compound-differs_stratified200_frame.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/sanskritlexicography-pwg-compound-differs_stratified200_frame.tsv).
+The interactive sheet itself
+(`review/sanskritlexicography-pwg-compound-differs_stratified200_review.html`) stays
+**gitignored**, per the `/review-sheet` contract — personal voting artifact, not a repo
+deliverable.
+
+**Vote → store contract (so `derivation.human_reviewed` never gets a bulk overwrite):**
+`decisions.json` export carries one decision per `(k1, hom)` id — `approve` = PWG's split
+is correct (a future apply step sets that entry's `derivation.compound.human_reviewed =
+true` with `members` taken from `pwg_members`); `reject` = the index's split is correct
+(same overlay, `members` taken from `index_members`, PWG layer flagged
+`needs_correction`); `defer` = no vote, stays `needs_human`. The overlay write touches
+**only the ~200 sampled `(k1, hom)` keys** — `enrich_portrait_derivation.enrich_portrait_obj`
+already refuses to touch any entry whose `derivation.human_reviewed` is truthy, so applying
+this batch cannot silently re-stamp the other ~4026 unsampled `differs` rows.
+
+**Explicit non-goal:** the remaining ~4026 `differs` rows (4226 − 200) stay `needs_human`;
+this sheet closes zero rows on its own until MG votes and `/decisions-apply` runs.
+
+## 26-07-2026 - P1 ruling applied: machine-flag layer over the live queue, batch1v3 (H1655)
+
+Executor: Fable 5 (`claude-fable-5`). MG ruled the voting-queue triage `@DECIDE` «auto-reject»
+(screening-audit §7: machine-flagged cards never reach a human sheet). `machine_flags` (D1/D3/D4)
+added to
+[`review_residue_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_residue_gate.py);
+batch1v2 superseded UNVOTED by `g5-live-queue-batch1v3-2026-07-26`.
+
+| Metric | n |
+|---|---:|
+| queue rows | 11,163 |
+| excluded: reader-visible German | 636 |
+| excluded: machine flags D1/D3/D4 | 3,236 |
+| ... D4 slot-count mismatch / D3 gloss-drift «…» / D1 Cyrillic in `{#…#}` | 3,067 / 370 / 20 |
+| already decided | 5 |
+| eligible for sheets | 7,286 (65.3%) |
+| batch1v3 cards (0 leaks, both layers) | 150 |
+
+D5 (gloss byte-identical to DE) deliberately not flagged — audit-measured ~false-positive.
+Store-side repair of flagged rows: H1651 (queued, Sonnet).
+
+## 26-07-2026 - H1631: edition-diff reading surface (N14 pilot) — subtype counts on the 7 REGLUE_SPEC pilot roots
+
+Executor: Sonnet 5 (`claude-sonnet-5`). Fixture-driven static page +
+[`src/pilot/build_edition_diff_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_edition_diff_site.py)
+(`--selftest` wired into CI). Renders the PWG sense skeleton with PW/SCH/PWKVN/NWS
+supplements attached at their `edition_rel` insertion point, each badged with its
+subtype — the H1624 G4 classifier is the only typology used, no new classes invented.
+Table below is a local `--out` run against the (gitignored, uncommitted) live store's
+5-layer pilot keys from [`REGLUE_SPEC.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/REGLUE_SPEC.md) Sec.5 — counts only, no store text
+published (N9).
+
+| subtype | count (7 pilot roots, 1077 rows) |
+|---|---|
+| base | 433 |
+| restate | 475 |
+| pw_correct | 0 |
+| sch_star | 11 |
+| derived_sense | 3 |
+| a2a | 13 |
+| nws_at_sense | 111 |
+| foreign_fragment | 31 |
+
+Pilot roots: `gA`, `Cid`, `Sam`, `jIv`, `rakz`, `vraj`, `yat` (the 5-layer set). No
+`pw_correct` (gender-conflict) instance among these 7 — consistent with REGLUE_SPEC's own
+finding that PW mostly *restates* rather than corrects at this sample. N14 partial close:
+demo covers PWG/PW/SCH/PWKVN/NWS badges for the pilot set; scaling to the full store,
+per-sense visual grouping polish, and any editorial adjudication of `differs` cases are
+explicitly out of scope (non-goals).
+
+## 26-07-2026 - H1629 DE edition-graph export (OntoLex + TEI Lex-0) + three integrity findings
+
+Executor: Opus 5 (`claude-opus-5[1m]`). New generator
+[`src/export_de_edition.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_de_edition.py);
+profile doc
+[`DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md).
+
+**Golden-fixture export** (22 DE-only rows → `release/fixture/de_edition/`, `--generated-at 2026-07-26`):
+
+| entries | senses exported | quarantined | sanitized tags | government | form_notes | citation_edges | gloss_spans | edition_rel |
+|---|---|---|---|---|---|---|---|---|
+| 7 | 20 | 2 | 1 | 15 | 2 | 42 | 3 | 17 |
+
+Edition-layer coverage in the fixture: `pwg` 3 · `pw` 6 · `sch` 3 · `pwkvn` 5 · `nws` 3.
+Artifacts: `pwg_de_edition.ttl` 42 KB · `pwg_de_edition.tei.xml` 23 KB · manifest 1.4 KB.
+
+**Finding 1 — Russian tokens inside the German `de` field.** 11 of 11,603 store rows
+(0.09%). Verified against csl-orig: `huti` reads `{%Opfer%} in {#sarva˚#} **und**
+{#havirhuti#}` upstream but `… **и** …` in the store (and the store row also dropped the
+`(von 1. {#hu#})` etymology parenthesis).
+
+| symptom | example row |
+|---|---|
+| `и` for `und` | `huti`: `{%Opfer%} in {#sarva˚#} и {#havirhuti#}` |
+| `для` for `für` | `parihara`: `<ab>v. l.</ab> для {#parihAra#}` |
+| `в` for `in` | `nI` desid-3: `<ls>VĀRĀHA-P.</ls> в <ls>Verz. d. Oxf. H. 59,a,3.</ls>` |
+| `С` for `Mit` | `viS` 175: `<div n="p">— С {#anUpa#}` |
+| `корригенда` | `DA` pw: `Mit <div n="p"> — корригенда` |
+| **total rows with Cyrillic in `de`** | **11 / 11,603 (0.09%)** |
+
+**Finding 2 — Russian prose in DE-side structural fields.** `sense_tag`: 110/11,603 rows
+(0.95%), e.g. `c) с dat. лица и instr. предмета`. The `h` field likewise carries Russian
+disambiguation prose (`PW 3 (с sam, о супружеском намерении)`). The export quarantines
+`de`-contaminated rows, reduces a contaminated `sense_tag` to its ASCII skeleton, and drops
+`h` from the allowlist entirely.
+
+**Finding 3 — G1 `gloss_lang` classifier false positives.** Census over every `{%…%}` span
+in the store's German text:
+
+| lang | rule_id | spans | German-looking | FP rate |
+|---|---|---|---|---|
+| en | `english_content` | 153 | 117 | **76.5%** |
+| la | `botany_binomial` | 68 | 5 | 7.4% |
+| ambig | `homograph_ambig` | 8 | 0 | 0.0% |
+| **total non-DE** | | **229** | **122** | **53.3%** |
+
+Base: 15,901 spans scanned; 229 (1.44%) classified non-DE. Examples of misfires — all
+unmistakably German: `bis an's Ziel bringen`, `an sich nehmen, empfangen, erlangen,
+erhalten` (→ `en`); `Gelegenheit gefunden habend`, `Willens sein` (→ `la` botany binomial).
+Because `pwg_mask.classify_pct_detail` marks `la`/`en` spans `translate: False`, these
+German glosses are also masked out of the translate path upstream. "German-looking" is a
+heuristic proxy (umlaut / German function word / `-en` verb ending), so the rate is ±;
+the direction is not in doubt. **Not fixed here** — changing the classifier changes masking
+behaviour pipeline-wide and needs its own measured A/B.
+## 26-07-2026 - G5 batch1 decisions applied + reader-visible German gate over the live queue (H1655)
+
+Executor: Fable 5 (`claude-fable-5`). Reviewer MG aborted batch 1 at 5/150 votes («Переделай
+все» — German must be screened BEFORE a human sees a card). Votes applied through
+`apply_decisions --gate G5` → `run_batch apply_review`; new
+[`review_residue_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_residue_gate.py)
+swept the queue; batch1v2 rebuilt gate-clean. Full audit:
+[decisions_applied_2026-07-26_g5-batch1.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_2026-07-26_g5-batch1.md).
+
+| Metric | n |
+|---|---:|
+| batch1 votes: approve / reject / unvoted (abort) | 3 / 2 / 145 |
+| live queue rows swept | 11,163 |
+| flagged: reader-visible German | 637 (5.7%) |
+| ... hits by layer: prose (H1302 class b) / ls-tail `fg.` / German `ab` | 457 / 371 / 145 |
+| clean rows eligible for sheets | 10,526 |
+| batch1v2 cards (all verified German-free) | 150 |
+| positional-id drift: votes initially unresolvable against grown store | 2/5 (fixed: suffix fallback + CI pin) |
+
+## 26-07-2026 — H1630 top-N `citation_edges` sigla → Cologne scan/HTML link coverage
+
+Executor: Sonnet 5 (`claude-sonnet-5`), isolated worktree. Script: `src/citation_edges.py`
+(`topn` subcommand, new; `scan_href` field, new — H1624 G3 parent). Store: the live
+11,603-row `pwg_ru_translated.jsonl` (gitignored, main-worktree canonical copy).
+
+**What's new.** `extract_citation_edges()` gained an additive `scan_href` field —
+`ls_resolver.generate_href('pwg', n_attr, raw_ls)` when it actually resolves a Cologne
+scan/HTML target, else `null`. This is a *different* axis from the existing
+`resolver_status` (map/bib/orphan): `resolver_status` only asks "is this siglum a known
+work", not "does a clickable Cologne target exist for this exact locator" — e.g. `AK. 1`
+is `map` (Amarakośa is a known work) but `scan_href` is `null` (the resolver pattern for
+Amarakośa needs 3–4 coordinate parts, not one).
+
+**Top-25 sigla by raw citation frequency → `scan_href` coverage:**
+
+| siglum | citations | `scan_href` resolved | coverage | sample target |
+|---|---:|---:|---:|---|
+| MBH | 5,753 | 5,737 | 99.7% | [mbhcalc?1.1090](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1090) |
+| ṚV | 3,705 | 3,697 | 99.8% | [rv01.100.html#rv01.100.05](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.100.html#rv01.100.05) |
+| R | 3,126 | 3,123 | 99.9% | [ramayanaschl/?1,4,18](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,18) |
+| BHĀG. P | 2,167 | 2,152 | 99.3% | [bhagp_bom/app1/?10,19,13](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,19,13) |
+| ŚAT. BR | 1,781 | 1,770 | 99.4% | [shatapathabr/app1?10,1,2,1](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,1,2,1) |
+| M | 1,636 | 1,635 | 99.9% | [manu/index.html?2,109](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,109) |
+| KATHĀS | 1,472 | 1,472 | 100.0% | [kss/index.html?17,32](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,32) |
+| AV | 1,207 | 1,199 | 99.3% | [av09.005.html#av09.005.12](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.12) |
+| P (Pāṇini) | 1,049 | 1,034 | 98.6% | [sutraani/6/4/57](https://ashtadhyayi.com/sutraani/6/4/57) |
+| Spr | 1,039 | 1,038 | 99.9% | [boesp1/app1/?1402](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1402) |
+| HARIV | 905 | 902 | 99.7% | [hariv?3964](https://sanskrit-lexicon-scans.github.io/hariv?3964) |
+| R. GORR | 671 | 671 | 100.0% | [ramayanagorr/?2,5,27](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,5,27) |
+| RAGH | 668 | 668 | 100.0% | [raghuvamsa/app1?12,52](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,52) |
+| PAÑCAT | 607 | 606 | 99.8% | [pantankose/app2?71,24](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,24) |
+| VARĀH. BṚH. S | 576 | 555 | 96.4% | [brihatsam/app1?79,14](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?79,14) |
+| RĀJA-TAR | 575 | 575 | 100.0% | [rajatar/app1?5,424](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,424) |
+| ŚĀK | 525 | 522 | 99.4% | [shakuntala/app1?62](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?62) |
+| BHAṬṬ | 460 | 431 | 93.7% | [bhattikavya/app1?2,28](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,28) |
+| Spr. (II) | 450 | 450 | 100.0% | [boesp2/web1/boesp.html?7515](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7515) |
+| VOP | 428 | 404 | 94.4% | [mugdhabodha/app1?26,215](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,215) |
+| AIT. BR | 409 | 407 | 99.5% | [aitbr/app1?2,16](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,16) |
+| TS | 394 | 390 | 99.0% | [taittiriyas/app1?6,6,11,5](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,11,5) |
+| MĀRK. P | 367 | 367 | 100.0% | [markandeyapurana/app1?101,8](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?101,8) |
+| KĀTY. ŚR | 328 | 328 | 100.0% | [katyasr/app1?22,6,16](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,6,16) |
+| HIT | 308 | 307 | 99.7% | [hitopadesha/app2?20,15](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?20,15) |
+
+**Residual (top-25 sigla with ZERO `scan_href` hits): none.** Every one of the 25
+highest-frequency works (33,251 of 41,115 total citations, 80.9%) already resolves to a
+Cologne scan/HTML target for the overwhelming majority of its individual locators
+(93.7%–100%); the small per-siglum shortfalls (BHAṬṬ 93.7%, VOP 94.4%, VARĀH. BṚH. S 96.4%)
+are individual malformed/unusual coordinates, not missing targets — the pattern-driven
+resolver already covers this frequency band essentially completely.
+
+**Where the real gaps are (beyond top-25): genuinely-uncovered high-frequency works.**
+`resolver_status == "orphan"` (siglum unknown to `ls_source_map`/`pwgbib` at all — a
+different, stricter failure than a `scan_href` miss) ranked by occurrences with a numeric
+locator (excludes non-coordinate labels like "ed. Bomb."/"ed. Calc." — edition/cross-ref
+notes with no locus, never linkable per the existing `build_citation_index.py` convention):
+
+| rank | siglum | citations | work |
+|---:|---|---:|---|
+| 1 | JĀTAKAM / Jātakam | 95 | Jātaka tales |
+| 2 | MAHĀVY / Mahāvy | 32 | Mahāvyutpatti |
+| 3 | VAJRACCH / Vajracch | 24 | Vajracchedikā |
+| 4 | CAMPAKA | 20 | (Buddhist Skt. text) |
+| 5 | Journ. of the Am | 19 | Journal of the American Oriental Society |
+| 6 | S | 18 | (ambiguous single-letter siglum) |
+| 7 | KĀRAṆḌ | 18 | Kāraṇḍavyūha |
+| 8 | Divyāvad | 16 | Divyāvadāna |
+| 9 | HARṢAC / Harṣac | 14 | Harṣacarita |
+| 10 | Kir | 8 | Kirātārjunīya |
+| 11 | Maitr. S | 8 | Maitrāyaṇī Saṃhitā |
+| 12 | Kauṭ | 8 | Kauṭilīya (Arthaśāstra) |
+
+These are almost entirely Buddhist-Sanskrit / less-common works with **no scan repository
+in `sanskrit-lexicon-scans`** — matches the pre-existing note in `build_citation_index.py`
+("coverage is target-limited, not resolver-limited"). Hard gaps (no Cologne target exists
+to link to at all) — route through [`/cologne-link-target`](https://github.com/gasyoun/claude-config/blob/main/commands/cologne-link-target.md)
+if/when digitization work is prioritized; not attempted here (N15 out of scope, per H1630).
+
+Reproduce: `python src/citation_edges.py topn --n 25` (JSON; the store resolves via
+`store_path.canonical_store`, so this also works unmodified from a linked worktree).
+Selftest for `scan_href` + `topn_scan_coverage`: `python src/citation_edges.py --selftest`.
+
+## 26-07-2026 - H858 c1 live gate: HEALTH_NOGO (rate_limit) - profile sweep now 3/3 NO-GO
+
+Executor: Opus 5 (`claude-opus-5[1m]`). Third profile gated for the same owed H858 window.
+
+| Profile | UTC | Calls | Latency | Blocker |
+|---|---|---|---|---|
+| c4 | 25-07 16:02Z, 18:18Z | warm-up `rate_limit`, measured never ran | 17.9 s / 19.9 s - fine | quota |
+| c5 | 25-07 18:56Z | warm-up + measured both `success` | 59.7 s / 53.0 s - ~2x ceiling | route latency |
+| c1 | 26-07 02:37Z | warm-up `rate_limit`, measured never ran | 6.4 s - fine | quota |
+
+c1: warm-up 6 424 ms `rate_limit`, measured never ran, wall clock 6.4 s. Same class as c4,
+fastest rejection of the three.
+
+**Two things this sweep establishes.** (1) The blockers are orthogonal - two profiles have
+latency headroom but no quota, one has quota but no speed - so profile-swapping does not
+unblock the window, it only changes which NO-GO you get. (2) **The wait is not "until
+tomorrow":** c1 was probed at 02:37Z on a FRESH UTC day and still returned `rate_limit`, so
+the binding cap does not reset at the date boundary. A future session must re-probe and read
+the answer rather than assume a date change cleared anything.
+
+No canary, no window, nothing promoted. Per-account evidence:
+`src/pilot/output/h963_<account>_gate0_probe_events.jsonl`.
 
 ## 25-07-2026 — medium50 “all without --max-agents”: LIVE STOP (auth 403) + offline prep
 
@@ -34,6 +350,251 @@ Probe log rows: `gate0-c4-fresh-2026-07-25`, `gate0-c2-fresh-2026-07-25`.
 Resume recipe (gitignored output tree):
 `src/pilot/output/MEDIUM50_NO_MAX_AGENTS_RESUME_2026-07-25.md` — headless lines
 **omit** `--max-agents` on multi-key windows; canary alone may use `--max-agents 1`.
+
+## 25-07-2026 - H858 c5 live gate: HEALTH_NOGO (latency ~2x ceiling) - orthogonal to c4
+
+Executor: Opus 5 (`claude-opus-5[1m]`). First gate ever run on c5, after two c4 attempts the
+same day returned HEALTH_NOGO on `rate_limit`. Packet:
+[`pwg_ru/h858/H858_C5_LIVE_GATE_HEALTH_NOGO_2026-07-25.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h858/H858_C5_LIVE_GATE_HEALTH_NOGO_2026-07-25.md).
+
+| Reading | Elapsed | Classification | Verdict input |
+|---|---|---|---|
+| warm-up | 59 651 ms | `success` | >= 30 000 ms ceiling -> FAIL |
+| measured | 52 960 ms | `success` | >= 30 000 ms ceiling -> FAIL |
+
+Both calls SUCCEEDED with real output and zero connection errors - this is not quota, not
+auth. Wall clock 112.6 s for the pair.
+
+### The finding: c4 and c5 fail for ORTHOGONAL reasons
+
+| Profile | Calls | Latency | Blocker |
+|---|---|---|---|
+| c4 (16:02Z, 18:18Z) | warm-up `rate_limit`, measured never ran | 17.9 s / 19.9 s - fine | quota / account state |
+| c5 (18:56Z) | warm-up + measured both `success` | 59.7 s / 53.0 s - ~2x ceiling | route latency |
+
+Neither is a code defect and they share no cause: c4 has headroom but no quota, c5 has
+quota but no speed. **Swapping profiles does not unblock the window** - it trades one
+NO-GO for a different one. c5's numbers sit in the degradation band tracked since mid-July
+(H963 104 870 ms; H1110 98 625 ms) and match H898's size-independent route-jitter finding:
+the identical 6 828 B prompt read 16 621 ms on c4 at the 22-07 LIVE_GO.
+
+Operational note: c5 is the profile this session runs on - a paid window there competes
+with interactive sessions for the same quota, independent of today's latency verdict.
+
+## 25-07-2026 - H858 c4 live gate: HEALTH_NOGO (rate_limit), no window opened
+
+Executor: Opus 5 (`claude-opus-5[1m]`). `/pwg-live-gate c4`, one attempt, no reroll.
+Packet: [`pwg_ru/h858/H858_C4_LIVE_GATE_HEALTH_NOGO_2026-07-25.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h858/H858_C4_LIVE_GATE_HEALTH_NOGO_2026-07-25.md).
+
+| Reading | Elapsed | Classification | Verdict input |
+|---|---|---|---|
+| warm-up | 17 878 ms | `rate_limit` | fail-closed -> STOP |
+| measured | - | never ran | - |
+
+`gate_reason = HEALTH_NOGO` -> `verdict = NO-GO`. **Not a latency block** (17.9 s is well
+inside the 30 000 ms ceiling) - c4 is rate-limited. No canary, no bounded window, nothing
+promoted; one paid warm-up call was spent. The H858 Part B validation window stays owed.
+
+c4 has produced no clean pair since 23-07: `rate_limit` x2 on 24-07, `auth` x2 earlier on
+25-07, `rate_limit` today.
+
+### Attempt 2 (18:18Z, through the fixed probe v1.63.0)
+
+| Reading | Elapsed | Classification | Verdict input |
+|---|---|---|---|
+| warm-up | 19 903 ms | `rate_limit` | fail-closed -> STOP |
+| measured | - | never ran | - |
+
+Same `HEALTH_NOGO`. c4's rate-limit window has not reset: three `rate_limit` readings now
+span 24-07 -> 25-07 18:18Z with two `auth` between, and latency is fine in every one
+(9.9-19.9 s, all far inside the 30 000 ms ceiling). Quota/account state, not code or route -
+further probing today is spend without information.
+
+First live proof of the #729 fix: RAW READINGS printed ONE row (this run's, under a
+per-invocation run id) and the NO-GO reasons name this run's own absent measured reading.
+The old constant `RUN_ID` would have re-read all 10 historical rows and cited the 23-07
+168 352 ms again.
+
+### Probe defect found by this run (integrity)
+
+| Defect | Impact | Tracking |
+|---|---|---|
+| `h963_c4_gate0_probe.py` hardcodes `RUN_ID`, then filters the append-only log by it and keeps the last row per purpose - so every run re-reads the whole history and can pair today's warm-up with a **stale** `measured` | today it only mis-stated a NO-GO reason (cited a 23-07 reading of 168 352 ms for a call never made). The inverse is the hazard: a stale passing `measured` + a passing warm-up prints `GATE-0 VERDICT: PASS`, which Step 3 turns into `LIVE_GO` and authorizes paid spend off a two-day-old number | [#729](https://github.com/gasyoun/SanskritLexicography/issues/729) |
+
+## 25-07-2026 - H858 Part B: german-anchor repair — offline verification (NO paid run)
+
+Executor: Opus 5 (`claude-opus-5`). Isolated worktree off `origin/master` @ `f96361ca`.
+**Scope honesty: these are OFFLINE gates only.** The handoff's own validation — a bounded
+no_pwg window showing the `{#…#}`-drop null class eliminated — is a PAID run and was NOT
+performed: it needs a fresh live-gate GO, and the last c2/c4 readings were NOGO/rate-limited.
+The live answer will come from `summary.german_anchor_repairs` on the first window that runs.
+
+### Gates run
+
+| Gate | Lane | Result |
+|---|---|---|
+| `german_anchor.selftest()` | Python (authored source) | 8/8 OK |
+| `german_anchor_test.js` vs a REAL generated harness | JS (interpolated twin) | 21/21 PASS |
+| `headless_worker_selftest.py` (incl. the new H858 test) | Python production route | PASS |
+| `window_selftest.py` | both | **185/185**, 0 failed |
+| `promote_final_cards.py --selftest` | store provenance | PASS |
+| `lang_parity_check.py` | ledger | 82 entries, no drift, coverage complete |
+
+### Behaviour pinned (both lanes, identical fixtures)
+
+| Case | Before | After |
+|---|---|---|
+| headword `{#…#}` dropped from the echo (`{# 0/1`) | card NULLED, requeue reproduces it | repaired at sense head, stamped, promoted |
+| mid-card span dropped (`1/2`, `1/3`) | card NULLED | re-injected at its nearest surviving neighbour |
+| span dropped in a multi-sense card | card NULLED | lands in the correct sense (nearest-neighbour, not always-after) |
+| echo faithful | accepted | accepted, **byte-identical, unstamped** |
+| echo duplicates / fabricates / reorders a span | rejected | rejected, reason recorded (`german-anchor duplicate-token`, …) |
+| german repaired but TARGET field dropped the span | `translation-fidelity-reject` | `translation-fidelity-reject` (unchanged — no laundering) |
+
+### Integrity defect found in passing (pre-existing, unrelated to H858)
+
+| File | Defect | Fix |
+|---|---|---|
+| `src/pilot/window_selftest.py` (coordinator-requeue test) | ran a real `--defect` requeue without `--no-residual`, appending a junk `{"key": "a"}` row to the tracked `no_pwg_residuals.jsonl` on EVERY suite run — the registry that decides which keys are BLOCKED from requeue | `--no-residual` added; polluting row reverted; the test's own assertions unaffected |
+
+## 25-07-2026 - H1624 DH follow-up batch minted (H1626–H1635)
+
+Executor: Grok 4.5. Mint-only (no execution). Parent: H1624 German layers closed G1–G6.
+
+| ID | Priority | Topic | Status |
+|---|---|---|---|
+| H1626 | P0 | H1303 abbrev apply | ⏸ vote |
+| H1627 | P0 | H1306 style / G5 | ⏸ vote |
+| H1628 | P1 | compound differs sheet | QUEUED |
+| H1629 | P2 | OntoLex/TEI DE graph | QUEUED |
+| H1630 | P3 | citation top-N scans | QUEUED |
+| H1631 | P4 | edition-diff UI | QUEUED |
+| H1632 | P5 | sense–DCS pilot | QUEUED |
+| H1633 | P7 | gold cut + methods | QUEUED |
+| H1634 | docs | editorial principles | QUEUED |
+| H1635 | FAIR | Zenodo public sidecars | QUEUED (rights) |
+
+G7: existing H1333 (XLS-gated). Spec: Uprava/handoffs/_batch_h1624_dh_followups.tsv.
+
+## 25-07-2026 - H1624 G6: compound conflict flags + G5/G7 blockers
+
+Executor: Grok 4.5.
+
+### G6 conflict rate (pwg_derivation_layer.tsv)
+
+| metric | n | pct |
+|---|---:|---:|
+| rows | 39539 | 100 |
+| conflict (differs) | 4226 | 10.69 |
+| needs_human (differs+index-only) | 10577 | 26.75 |
+| agrees | 6180 | — |
+| pwg-new-fill | 6386 | — |
+
+Never auto-adjudicates differs — future /review-sheet sample.
+
+### G5 blocked
+Awaiting pwg_ru/eval/h1306_style.decisions.json (sheet exists; vote not exported).
+
+### G7 blocked
+Palsule XLS not present; delegate H1333 when XLS lands.
+
+## 25-07-2026 - H1624 G4: edition_rel on DE subcards
+
+Executor: Grok 4.5.
+Structured edition relationship flags on each sense (no DE rewrite).
+
+| subtype | typical layer |
+|---|---|
+| base | pwg |
+| restate | pw |
+| pw_correct | pw (gender conflict) |
+| sch_star / derived_sense | sch |
+| a2a / derived_sense | pwkvn |
+| nws_at_sense / foreign_fragment | nws |
+
+Selftest: python src/edition_rel.py --selftest; promote stamp.
+
+## 25-07-2026 - H1624 G3: citation_edges normalized DE <ls> graph
+
+Executor: Grok 4.5 - offline.
+Additive per-sense edges; raw <ls> not stripped.
+
+| resolver_status | meaning |
+|---|---|
+| map | hit in ls_source_map (renou I-V) |
+| bib | pwgbib expansion only |
+| orphan | neither |
+| empty | unparseable |
+
+Selftest: python src/citation_edges.py --selftest; promote stamp; annotate --selftest.
+Coverage CLI: python src/citation_edges.py report
+
+## 25-07-2026 - H1624 form_notes: dedicated Nom/Voc field
+
+Executor: Grok 4.5.
+orm_notes = first-class field for nominative/vocative citation-form markers only.
+
+| field | covers |
+|---|---|
+| government | acc loc instr gen dat abl |
+| form_labels | number, gender, case_form, voice |
+| form_notes | nom, voc only ({case, kind, span}) |
+
+Selftest: form_labels --selftest; promote stamps form_notes.
+
+## 25-07-2026 - H1624 form_labels: number / gender / nom-voc / voice on DE senses
+
+Executor: Grok 4.5 - offline.
+Sibling of government (Rektion). Acc/Loc/Instr/Gen/Dat/Abl stay in government;
+form notes go to form_labels.
+
+| axis | values | sources |
+|---|---|---|
+| number | sg, du, pl | ab sg./du./pl. (paren or bare) |
+| gender | m, f, n, m.n, ... | lex primary; masc./fem./neutr. ab |
+| case_form | nom, voc | parenthetical form notes (not Rektion) |
+| voice | act, med, pass | ab med./act./pass. |
+
+Not gender: bare ab n. (ambiguous with note). Not form_labels: Rektion cases.
+
+Selftest: python src/form_labels.py --selftest; promote + microstructure stamp.
+LANG_PARITY SHARED form_labels_number_gender_voice_h1624.
+
+## 25-07-2026 - H1624 G2: government on every DE sense (promote + portrait)
+
+Executor: Grok 4.5 · offline · no paid window.
+Closes the gap where structured Rektion only appeared after a separate
+nnotate_government backfill. Schema shape unchanged (array of hit dicts, D4/H338).
+
+| path | producer | notes |
+|---|---|---|
+| store row on promote | promote_final_cards.rows_for + xtract_government(de) | always stamped (empty list if none) |
+| store retrofit | nnotate_government.py | existing rows / drift repair |
+| portrait sense at gen | microstructure.sense_node | from full DE segment |
+| portrait backfill | nrich_portrait_government.py | older local portraits |
+| retrieval surface | government.html via uild_article_site | still re-extracts from de_raw; floor banner |
+
+Selftests: government_census selftest, nnotate_government --selftest,
+promote_final_cards --selftest (PW (Instr.)), nrich_portrait_government --selftest,
+uild_article_site --selftest. LANG_PARITY SHARED government_on_promote_and_portrait_h1624_g2.
+
+## 25-07-2026 - H1624 G1: per-span gloss_lang on {%...%} (DE|LA|EN)
+
+Executor: Grok 4.5 (session override; handoff pinned Opus 4.8) · offline · no paid window.
+Artifact: [src/pwg_mask.py](src/pwg_mask.py) classify_pct_detail / gloss_lang_spans; residue shares classifier via [prompt_rule_audit.py](src/pilot/prompt_rule_audit.py); LANG_PARITY SHARED gloss_lang_spans_h1624_g1.
+
+| vector | expect | rule_id | mask |
+|---|---|---|---|
+| {%das Nichthandeln%} | de | default_de | inline |
+| das lat. {%ignis%} / <ab>lat.</ab> {%ignis%} | la | latin_cue | {Tn} |
+| {%De accentu comp.%} | la | latin_phrase | {Tn} |
+| {%Trapa bispinosa%} | la | botany_binomial | {Tn} |
+| WILS. ... durch {%leaving, abandoning%} | en | wilson_en | {Tn} |
+| {%terrestrial latitude%}, WILS. | en | wilson_en | {Tn} |
+| WILS. ... {%Honig%} | de | default_de | inline |
+| {%Name eines Baumes%} | de | default_de | inline (not binomial) |
+
+Selftest: python src/pwg_mask.py --selftest · window_selftest.test_pwg_mask_gloss_lang_g1 · lang_parity_check green.
 
 ## 24-07-2026 — c2 medium50 w1 forensics: only-b0 / all-nulls = `--max-agents 1` starvation
 

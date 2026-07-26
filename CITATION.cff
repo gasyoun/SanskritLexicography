@@ -1,4 +1,4 @@
-cff-version: 1.2.0
+cff-version: 1.79.0
 type: software
 title: SanskritLexicography
 message: >
@@ -8,8 +8,8 @@ message: >
   data/FAIR_RELEASE_1.md.
 license: MIT
 repository-code: https://github.com/gasyoun/SanskritLexicography
-version: 1.60.0
-date-released: "2026-07-24"
+version: 1.76.0
+date-released: "2026-07-26"
 abstract: >
   A data and research workspace for the Sanskrit Lexicon project: exported
   headword lists, AI-produced Russian translations of Monier-Williams and

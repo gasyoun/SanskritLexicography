@@ -26,7 +26,7 @@ _Created: 25-07-2026 · Last updated: 25-07-2026_
 1. Fresh /pwg-live-gate (health + canary). Canary may use --max-agents 1 (single synthetic key only).
 2. For **each** production window, run headless **without** --max-agents:
 
-`powershell
+```powershell
 python src/pilot/headless_worker.py src/pilot/output/coordinator/artifacts/h1447-m50-w1/execution_manifest.h1447-m50-w1.json --output src/pilot/output/h1447-m50-w1.wf_output.json --status-out src/pilot/output/h1447-m50-w1.status.json --only-profile c4 --timeout 180
 # keys (3): nakzatra, sarvatra, sakft
 
@@ -42,10 +42,10 @@ python src/pilot/headless_worker.py src/pilot/output/coordinator/artifacts/h1447
 python src/pilot/headless_worker.py src/pilot/output/coordinator/artifacts/h1447-m50-w5/execution_manifest.h1447-m50-w5.json --output src/pilot/output/h1447-m50-w5.wf_output.json --status-out src/pilot/output/h1447-m50-w5.status.json --only-profile c4 --timeout 180
 # keys (11): vraRa, prada, vadana, sAhasra, martya, sadana, BrU, yOvana, loman, zoqaSa, divA
 
-`
+```
 
 Or one-shot plan after rebuild: python src/pilot/h1447/build_plan.py then
-ounded_staged_run.py --plan ... --max-windows 5 --stop-before-promote --execute
+python src/pilot/bounded_staged_run.py --plan ... --max-windows 5 --stop-before-promote --execute
 with **no** --max-agents on multi-key windows.
 
 3. Audit each window; /pwg-window-close only after clean audit.

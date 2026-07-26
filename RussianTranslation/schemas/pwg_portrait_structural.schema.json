@@ -41,6 +41,34 @@
         { "type": "null" },
         { "$ref": "#/$defs/corpus_synonyms" }
       ]
+    },
+    "derivation": {
+      "type": "object",
+      "description": "OPTIONAL (H1282 / H1624 G6). PWG derivation / Pāṇini / compound / gaṇa block from pwg_derivation_layer.tsv. conflict/needs_human set when compound_status is differs (never auto-adjudicated).",
+      "properties": {
+        "source": { "type": "string" },
+        "homonym_precise": { "type": "boolean" },
+        "derivation": { "type": "object" },
+        "panini": { "type": "array", "items": { "type": "string" } },
+        "compound": {
+          "type": "object",
+          "properties": {
+            "members": { "type": "string" },
+            "vs_index": { "type": "string" },
+            "conflict": { "type": "boolean" },
+            "needs_human": { "type": "boolean" },
+            "conflict_kind": { "anyOf": [{ "type": "string" }, { "type": "null" }] }
+          }
+        },
+        "gana": { "type": "object" },
+        "conflict": { "type": "boolean" },
+        "needs_human": { "type": "boolean" },
+        "conflict_kind": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+        "human_reviewed": {
+          "type": "boolean",
+          "description": "If true, enrich_portrait_derivation will not overwrite this block."
+        }
+      }
     }
   },
   "$defs": {
@@ -109,6 +137,25 @@
               "case": { "enum": ["nom", "voc"] },
               "kind": { "enum": ["paren_ab", "bare_ab"] },
               "span": { "type": "string" }
+            }
+          }
+        },
+        "citation_edges": {
+          "type": "array",
+          "description": "OPTIONAL (H1624 G3). Normalized DE <ls> citation edges via extract_citation_edges.",
+          "items": {
+            "type": "object",
+            "required": ["raw_ls", "siglum", "resolver_status"],
+            "properties": {
+              "raw_ls": { "type": "string" },
+              "n_attr": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "siglum": { "type": "string" },
+              "work_id": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "work_name": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "renou": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "page": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "bib_ok": { "type": "boolean" },
+              "resolver_status": { "enum": ["map", "bib", "orphan", "empty"] }
             }
           }
         }

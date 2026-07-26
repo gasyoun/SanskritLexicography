@@ -14,6 +14,406 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H1691 — PWG's remaining DCS-carried cited texts adjudicated; 52 abbreviations, 12 mapped
+  (26-07-2026, Opus 5 `claude-opus-5[1m]`).** Report
+  [`PWG_DCS_TEXT_CROSSWALK_H1691.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_DCS_TEXT_CROSSWALK_H1691.md),
+  adjudications
+  [`pwg_ls_dcs_scheme_verdicts.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_ls_dcs_scheme_verdicts.tsv),
+  and three evidence generators (`probe_dcs_text_scheme.py`, `probe_pwg_ls_scheme.py`,
+  `probe_scheme_overlap.py` with a competitive-rank test against all 270 DCS texts) plus
+  `h1691_handcheck.py`. Grounded PWG leaf senses 7,372 → **8,208** (+11.3%) on H1670's wide
+  frame; `MAPPED` citation mass 36.4% → **44.7%**; the actionable backlog above 0.05% is empty.
+
+### Fixed
+- **`build_ls_text_crosswalk_backlog.py` mis-classified in both directions and now reads back
+  the adjudicated verdicts.** Its candidate came from prefix-matching PWG's GERMAN `pwgbib`
+  prose, so Pāṇini (21,305 citations) and Manu (20,605) — the two largest crosswalk wins in the
+  dictionary — sat in `DCS-LACKS`, "a genuine corpus gap that no crosswalk can close"; and
+  `max(candidates, key=tokens)` picked the wrong work six times over. `DCS-LACKS` fell from
+  49.7% to 37.2% of citation mass and is now labelled for what it is: "no name-alike was
+  found". New finding [§471](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md);
+  tier-stamping defect recorded as §472; §465 updated with the new grounding figure.
+
+## [1.78.0] — 2026-07-26
+
+### Changed
+- **FINDINGS §469 corrected — the csl-apidev call site was under-rated (H1695, 26-07-2026).**
+  H1671'''s org-wide `to_slp1` audit classified [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev)'''s
+  `rowSlp1()` as "a silent lookup miss, no corrupted data". Tracing the value showed both
+  consumers were hit: the results list **rendered the wrong headword** (`Rāma` → `RAma` →
+  displayed as **ṇāma**) and the `dalglob|` key addressed the wrong entry. Fixed upstream in
+  [csl-apidev PR #127](https://github.com/sanskrit-lexicon/csl-apidev/pull/127); the finding
+  now carries the correction and the second-order lesson (an audit that reads only the call
+  line under-rates severity — it lives in what consumes the return value).
+
+- **H1670 — PWG-sense × DCS grounding: 0.67% → 12.25%, and the 0.67% was our own bug**
+  ([H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md),
+  Opus 5 `claude-opus-5[1m]`). H1632 concluded that sense-level grounding was capped by data
+  availability and could not be raised by scaling. It could: the aligner's `locus` tier was
+  comparing each sense's `<ls>` against only the 3 passages per lemma sampled for the viewer
+  (**0.299%** of those available), and a dead `"RV"` map key had hidden the Ṛgveda —
+  6.89% of PWG's citation mass. With the **same** predicate and tiers, run at full passage
+  depth over a 32× wider frame (16,208 groups, identical selection query), grounded PWG leaf
+  senses go **52 → 7,372** (5,647 of them exact-verse). Dictionary-wide,
+  `R0_grounding_not_computed` falls **18,438 → 10,515 (−43.0%)**. Per-lever attribution:
+  [`PWG_SENSE_DCS_GROUNDING_LEVERS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_GROUNDING_LEVERS.md).
+  **The data-availability half of §465 stands** — `R1_lemma_absent_from_dcs` moved by 52
+  groups and `R2_no_wordsem_tag` by 754 out of 109,050; the ~40% lemma-level rate and the
+  ~11% `m_wordsem` ceiling are unchanged. FINDINGS §465 updated;
+  [`PWG_SENSE_DCS_FRAME_COMPARISON.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_FRAME_COMPARISON.md)
+  carries the correction (it had also named Kathāsaritsāgara as a text DCS lacks — DCS
+  carries it, 111,298 tokens).
+
+### Added
+- **H1670 — measurement harness + crosswalk backlog.** `pwg_sense_dcs_attestation_pilot.py`
+  gains `--frame-mode file` / `--frame` / `--concordance`, and reports exact-verse grounding
+  separately from adhyāya/hymn corroboration (`locus-chapter`), so neither can be quoted
+  without the other; of H1632's 52 grounded senses only **5** were exact-verse.
+  New [`build_ls_text_crosswalk_backlog.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/build_ls_text_crosswalk_backlog.py)
+  classifies all 739,503 `<ls>` citations: 36.4% mapped, **13.9% point at texts DCS carries
+  but the aligner never mapped** (443 abbrevs — the queue for
+  [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md)),
+  49.7% at texts DCS genuinely lacks. Untagged corpora (wisdomlib) are reported as a
+  lemma-level lever only and were deliberately not consumed here.
+
+## [1.76.0] — 2026-07-26
+
+### Added
+- **H1664 — voting-queue triage: a verdict for every pending review sheet (26-07-2026).**
+  Fable 5 (`claude-fable-5`). All 42 pending sheets (2,962 queued human judgments) ruled
+  AGENT-RULEABLE (1) / HYBRID-В2 (20) / HUMAN-ONLY (21), each with its enabling dataset,
+  in [VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md §11](https://github.com/gasyoun/Uprava/blob/main/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md);
+  human bill drops to ~1,329 (−55 %) once the routed adjudications (H1681–H1688) execute,
+  on top of the acc_ncc lane already banked by H1657 — post-H1671 key repair: 10,614 Tier C/D rows agent-adjudicated, human owes the fresh blind 698-card sample. SL lanes routed:
+  compound-`differs` В2 (H1681), h1303 abbrev rule-collapse (H1682), article-comparison
+  source-check (H1683). Detail table:
+  [RussianTranslation/RESULTS_LOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md).
+
+### Fixed
+- **H1671 — the NCC `match_key` case bug is repaired and the whole ACC×NCC pipeline
+  re-ran on corrected keys (26-07-2026, closes [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779)).**
+  [`parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/parse_ncc.py)
+  transliterated the *capitalised* NCC headword, and `sanskrit_util.to_slp1` is
+  case-preserving — so the capital fell through into the SLP1 string where
+  `slp1_simplify` read it as a different phoneme (`Rāmāyaṇa` → `namayana`). **91,548 of
+  152,526 keys (60.0%) were wrong.** `match_key_for` now case-folds + NFC-normalizes
+  first, pinned by a new
+  [`test_parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/test_parse_ncc.py)
+  that asserts both the correct key and the absence of the specific corrupt one.
+  P0 → P1 → P2 re-ran end to end: **exact-key overlap 8,397 → 22,775** distinct keys
+  (+14,379 pairs that were never proposed, because the corrupted key changed P1's
+  blocking letter), Tier D **43,666 → 1,575** rows as its 40,757 disguised exact matches
+  moved up to Tier A, the Tier C/D adjudication set **49,019 → 10,614**, and
+  `works_crosswalk.tsv` **120,241 → 249,802** rows (⚠️ a +107.7% delta for kosha, which
+  consumes it). All 3,711 candidate rows the repair *removed* are individually accounted
+  for and none was a true link. H1657's 686-card spot-check sample is **void** (never
+  voted, so no human work lost) and is replaced by a fresh blind 698-card sample over 17
+  strata; nothing is promoted until a human rules the precision bar. Full before/after:
+  [`NCC_KEY_REPAIR_MIGRATION_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md).
+
+### Changed
+- **`to_slp1`'s uppercase passthrough audited across the org (H1671).** Ruling: keep
+  `to_slp1` byte-compatible rather than lowercasing inside a transcoder shared by ~8
+  repos, and make the trap loud instead — the behaviour is undocumented and untested, not
+  wrong. Recorded in [`FINDINGS.md` §469](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  with the call-site table: `sanskrit_util.iast_to_devanagari` and two csl-atlas call
+  sites already defend with a silent `.toLowerCase()`; csl-apidev's `rowSlp1()` is the one
+  undefended caller found (a user typing `Rāma` searches for `RAma`).
+- **`adjudicate_p2.py` no longer carries its own copy of the key repair**, delegating to
+  `parse_ncc.match_key_for` so the two cannot drift; its `ncc_key_was_corrupt` field is now
+  the invariant proving P0 shipped repaired keys (0.0% on this run, was 87.7%).
+- **`build_works_crosswalk.py`'s Tier A cross-check reads P0's measured figure** from
+  `P0_COUNTS.md` instead of a hardcoded `8397` — that constant silently went stale the
+  moment the keys were repaired, and a cross-check that cannot notice its own reference
+  value has drifted is not a cross-check.
+
+## [1.75.0] — 2026-07-26
+
+### Added
+- **H1657 — ACC×NCC P2 agent adjudication of all 49,019 Tier C/D rows (26-07-2026).**
+  Per MG's ruling В2, the adjudicator moves from a human to an agent while the
+  09-07-2026 full-coverage ruling stands: every row carries a verdict with cited
+  evidence (41,947 approve / 7,072 reject, zero skipped), emitted by
+  [`adjudicate_p2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/adjudicate_p2.py).
+  A blind 686-card stratified sample over 16 strata
+  ([`build_p2_spotcheck_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/build_p2_spotcheck_sheet.py))
+  measures the adjudicator, and
+  [`p2_precision_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/p2_precision_gate.py)
+  publishes Wilson 95% lower bounds per stratum and gates promotion — it refuses to
+  run without an explicit `--bar`, because the threshold is a human ruling.
+  **Nothing is promoted yet:** all 49,019 rows sit in
+  `works_crosswalk_agent_proposed.tsv` awaiting that ruling. Report:
+  [`P2_AGENT_ADJUDICATION_REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_AGENT_ADJUDICATION_REPORT.md).
+
+### Fixed
+- `apply_p2_decisions.py` gained a third destination (`works_crosswalk_agent_proposed.tsv`)
+  and a provenance passthrough, so an ungated agent verdict can never be mistaken for a
+  promoted crosswalk row. `build_p2_sheet.py` was refactored behind a `main()` guard and
+  now exports its renderer, so the spot-check sheet reuses it instead of forking a copy.
+
+### Changed
+- ⚠️ **P0/P1 are documented as running on corrupted NCC keys.**
+  [`parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/parse_ncc.py)
+  transliterates the capitalised NCC headword, and `sanskrit_util.to_slp1` is
+  case-preserving, so uppercase IAST initials are read as different SLP1 letters
+  (`Rāmāyaṇa` → `namayana`). **60.0% of NCC match-keys are wrong**; 93.3% of Tier D is
+  an artefact of it and **14,379 true exact matches were never proposed as candidates**
+  (exact overlap is 22,775 keys, not 8,397). Filed as
+  [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779),
+  recorded as [FINDINGS §468](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md),
+  repair queued as
+  [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md).
+  Nothing published is wrong — it is incomplete, and `ROADMAP_ACC_NCC.md` now says so.
+
+## [1.72.0] — 2026-07-26
+
+### Added
+- **H1633 human gold-cut design + A51 methods packet (26-07-2026).** First sampling
+  design for a human-measured DE→RU store precision figure
+  ([RussianTranslation/gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md),
+  n=400 recommended, 12 strata, tiered κ plan with no invented metrics, parked for
+  sign-off) + the A51 methods-section draft with a 10-row claims register
+  ([RussianTranslation/pwg_ru/A51_METHODS_DRAFT_DE_LAYERS_RU_PIPELINE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/A51_METHODS_DRAFT_DE_LAYERS_RU_PIPELINE.md)).
+- **H1491 Leonchenko Sinonimy evidence lane** (see RussianTranslation/CHANGELOG.md).
+
+## [1.71.0] — 2026-07-26
+
+### Added
+- **First intrinsic BLI quality gate for RussianTranslation's `corpus_lexicon.jsonl` (H1521, 26-07-2026).**
+  [`RussianTranslation/src/eval/bli_eval.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/bli_eval.py)
+  streams the 1.09M-pair Sa→Ru lexicon and scores P@1/MRR/coverage against a frozen
+  400-lemma gold set built from the independent Kochergina dictionary + VisualDCS's
+  independent frequency ranking (the corpus's own 3-layer glossary was rejected as a
+  gold source — it is derived FROM `corpus_lexicon.jsonl`, so grading against it would
+  be circular). **Result: P@1 = 0.402, MRR = 0.539, coverage = 0.995 (398/400)** — the
+  lexicon's first quantitative quality number. Fixture selftest wired into CI.
+
+## [1.70.0] — 2026-07-26
+
+### Added
+
+- **Selftest isolation guard — production data unreachable by construction (26-07-2026).**
+  New [`selftest_isolation.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/selftest_isolation.py),
+  wired into all 10 selftests that can reach the store, coordinator or residual registry.
+  **Belt:** pin every redirectable production path to scratch before any repo import (several
+  modules resolve those constants at import time); a path pointing *inside* the checkout is a
+  hard refusal, not a silent override. **Braces:** an exit tripwire over the production files
+  that have no override — the C-49 residual ledger's path is computed from `__file__`, which is
+  why [#726](https://github.com/gasyoun/SanskritLexicography/issues/726) was possible — failing
+  the run even when every assertion passed. Verified by reproducing #726 against it: the fixture
+  passed every assertion and the run still exited 9 naming the modified file.
+
+### Fixed
+
+- **[#760](https://github.com/gasyoun/SanskritLexicography/issues/760) — in-process promotion
+  made `window_selftest` reach the LIVE canonical store.** `coordinator.promote_ready` now calls
+  `promote_final_cards.batch_promote` in-process instead of shelling out to `--batch-manifest`;
+  the promotion fixtures' isolation *was* that subprocess boundary, and `DEFAULT_STORE` resolves
+  to the main worktree's real `pwg_ru_translated.jsonl` unless `PWG_RU_STORE` is set. The tests
+  read the live ~11.6k-row store and, on a fixture whose sense identities did not collide, would
+  have written it. Closed by the guard above.
+- **The 7 coordinator/promotion fixtures the sealing invalidated.** Preflight evidence and
+  sealed-v2 binding are mandatory now; the fixtures still passed placeholder paths and v1
+  outputs. Five were contract updates (a real self-validating preflight artifact, explicit
+  cost-gate schema, `--result-sha256`, a fake that answers `perf_preflight.py`, sealed meta on
+  the *workflow output* rather than the manifest). The sixth — the P10 "TM rebuild in a
+  `finally`" test — was **rewritten**: promotion is journal-phased now, so the TM survives a
+  post-commit failure *by construction* rather than via a `finally`, and the test pins that
+  instead of a shape the code no longer has. `window_selftest` **189/189**.
+
+## [1.68.0] — 2026-07-26
+
+### Added
+- **Machine-flag layer in the review-sheet gate + G5 batch1v3 (H1655, P1 ruling 26-07-2026).**
+  MG ruled the voting-queue triage `@DECIDE` «auto-reject»: a card carrying a machine-findable
+  store flag never reaches a human sheet. `review_residue_gate.machine_flags` now detects the
+  screening-audit classes — D1 Cyrillic inside `{#...#}` (20 queue rows), D3 gloss-wrapper
+  drift to guillemets (370), D4 DE↔RU gloss-slot count mismatch (3,236 total with D-classes;
+  flag-only, waits for [H1651](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1651-Sonnet_SanskritLexicography_pwg-ru-wrapper-defect-sweep-d1-d4_26.07.26.md)
+  triage) — and `build_g5_review_sheet.py` applies it as a second hard pre-filter. Eligible
+  pool: 7,286 of 11,163. batch1v2 (German-only gate) superseded UNVOTED by
+  `g5-live-queue-batch1v3-2026-07-26` (150 cards, verified 0 leaks across both layers); the
+  v2 lock is removed so a stray v2 export can no longer validate. D5 (gloss byte-identical to
+  German) deliberately not flagged — audit-measured as mostly false positives.
+## [1.67.0] — 2026-07-26
+
+### Added
+- **Reader-visible German-residue gate for review sheets (H1655, 26-07-2026).** MG aborted
+  G5 live-queue batch 1 at 5/150 votes: cards reached the human with visible German. New
+  [`review_residue_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_residue_gate.py)
+  (H1302 prose scan class-b + H1303 `ab`-token classification vs `RU_MAP` + `ls`-tail
+  `fg./fgg.`) now hard-filters every candidate BEFORE it reaches a sheet; live-queue sweep
+  flagged 637/11,163 (5.7%). `build_g5_review_sheet.py` also renders the RU panel as print
+  shows it (`RU_MAP` applied, original in tooltip) with raw markup in a second panel, skips
+  already-decided cards, and shipped batch1v2 (`g5-live-queue-batch1v2-2026-07-26`, 150
+  cards, all verified German-free). H1404 selftest lane (binding · validate · apply ·
+  residue gate · H1302 scan) wired into CI. Audit:
+  [decisions_applied_2026-07-26_g5-batch1.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_2026-07-26_g5-batch1.md).
+
+### Fixed
+- **Positional review-ids drift across store generations (H1655, 26-07-2026).** `row:NNNNNN:`
+  review-ids embed the store line position at queue-mint time; the store grew 11,163 → 11,603
+  between queue mint (06-07) and vote apply (26-07), so 2/5 batch-1 votes resolved to
+  nothing. `run_batch.py` review lookups (`validate_review` / `review_report` /
+  `apply_review`) now fall back to the stable `subcard:<sub>#<tag>` tail when the positional
+  prefix is stale (ambiguous tails refused, never guessed); pinned by a drift case in
+  `apply_decisions.py --selftest`.
+
+## [1.66.0] — 2026-07-26
+
+### Fixed
+- **P0 — a Windows timeout could leave a PAID descendant alive (26-07-2026).** Landed from the
+  Codex hardening branch, step 1 of 2:
+  [`proc_tree.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/proc_tree.py)
+  tree-kill hardening — a killed generation attempt no longer risks an orphaned grandchild
+  still burning quota. Pinned by the existing D-J tree-kill selftest.
+- **An audit-gate worker exception could lose the whole durable report (26-07-2026).** Landed
+  from the same branch: an unguarded `future.result()` in the threaded gates now becomes a
+  durable rc=3 gate result that conservatively requeues that gate's exact keys, and an
+  NWS-quarantine replace failure preserves the previous destination instead of destroying it.
+  Pinned by two new tests. Classified **INTENTIONAL-DIVERGENCE** in
+  [`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md):
+  RU-only *by construction* — the EN twin runs no threaded gate and has no NWS quarantine, so
+  neither mechanism exists there to harden.
+
+### Added
+- **The Codex pipeline-hardening audit** —
+  [`PIPELINE_HARDENING_AUDIT_2026-07-25.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HARDENING_AUDIT_2026-07-25.md):
+  the one-profile call graph plus the P0/P1/P2 findings behind this work. Step 2 (coordinator +
+  promotion sealing, and the 7 fixtures it invalidates) is tracked in
+  [`pwg_ru/CODEX_HARDENING_REBASE_STATUS_2026-07-26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/CODEX_HARDENING_REBASE_STATUS_2026-07-26.md)
+  and draft [PR #744](https://github.com/gasyoun/SanskritLexicography/pull/744).
+
+### Added
+- **Heritage (INRIA) frequency-tables ingest + diff (26-07-2026, H1490).** Roadmap
+  Phase 3: 7 `DATA/*.tsv` files decoded out of Heritage's internal WX romanization
+  (new WX→SLP1 transcoder) and diffed against VisualDCS's M1–M8 `dcs_full.sqlite`
+  and `RussianTranslation/src/corpus_lexicon.jsonl` — Spearman ρ 0.70–0.74 vs DCS
+  across surface-form/lemma/compound-stem series, 0.53 vs `corpus_lexicon`.
+  [`heritage_frequency_diff.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_frequency_diff.md) /
+  [`.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_frequency_diff.tsv) /
+  [`heritage_freq_diff.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_freq_diff.py).
+
+## [1.65.0] — 2026-07-26
+
+### Added
+- **Heritage (INRIA) frequency-tables ingest + diff (26-07-2026, H1490).** Roadmap
+  Phase 3: 7 `DATA/*.tsv` files decoded out of Heritage's internal WX romanization
+  (new WX→SLP1 transcoder) and diffed against VisualDCS's M1–M8 `dcs_full.sqlite`
+  and `RussianTranslation/src/corpus_lexicon.jsonl` — Spearman ρ 0.70–0.74 vs DCS
+  across surface-form/lemma/compound-stem series, 0.53 vs `corpus_lexicon`.
+  [`heritage_frequency_diff.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_frequency_diff.md) /
+  [`.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_frequency_diff.tsv) /
+  [`heritage_freq_diff.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_freq_diff.py).
+
+## [1.64.0] — 2026-07-25
+
+### Added
+- **Editorial-principles datasheet for the H1624 German-side layers (25-07-2026, H1634).**
+  [`pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md)
+  states, per G1–G6 field, whether it is deterministic extraction (`derived`), waiting on a
+  human vote (`voted` — G5 H1306 tags, unratified), or derived-with-an-undecided-flag (G6
+  `needs_human`, measured 4,226/39,539 = 10.69% compound-split disagreement, never
+  auto-adjudicated). Cross-linked from
+  [`pwg_ru.md` §8.0](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md)
+  and
+  [`RUSSIANTRANSLATION_DEEP_MANUAL.md` §2c](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md).
+- **Gate-0 probe is profile-parameterised (25-07-2026).**
+  [`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
+  takes `--account` / `--config-dir` (c4 remains the default and is byte-unchanged in behaviour),
+  so the serial multi-profile assessment `/pwg-live-gate` already specifies no longer needs a copy
+  of the script per profile. Each account keeps its OWN events log and campaign label — sharing
+  one across profiles would re-create the #729 contamination a level up, a c5 row answering for a
+  c4 verdict. A missing profile dir or absent credentials is refused BEFORE any call, as a
+  provisioning state rather than a health reading (free — no paid `profile_status` call).
+  Selftest 7/7.
+- **First c5 gate reading — `HEALTH_NOGO`, and it is orthogonal to c4's.** c5 warm-up 59 651 ms /
+  measured 52 960 ms, both `success` with real output and zero connection errors, both ~2× the
+  30 000 ms ceiling; c4 the same day was `rate_limit` with healthy 17.9–19.9 s latency. c4 has
+  headroom but no quota, c5 has quota but no speed — **swapping profiles does not unblock the
+  window**. Packet:
+  [`pwg_ru/h858/H858_C5_LIVE_GATE_HEALTH_NOGO_2026-07-25.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h858/H858_C5_LIVE_GATE_HEALTH_NOGO_2026-07-25.md).
+
+## [1.63.0] — 2026-07-25
+
+### Fixed
+- **#729 — the c4 health gate could pass on a stale reading (25-07-2026).**
+  [`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
+  pinned a CONSTANT `RUN_ID`, appended to that one bucket and re-read it keeping the last
+  row per purpose — so a run could pair its own warm-up with a **stale** `measured` from days
+  earlier. Observed harmlessly (a NO-GO citing a 23-07 reading of 168 352 ms for a call never
+  made); the hazard is the inverse, where a stale *passing* measured yields
+  `GATE-0 VERDICT: PASS` → `LIVE_GO` → authorized paid spend off a two-day-old number.
+  The run id is now minted per invocation and the reader matches it exactly; the old constant
+  survives as `CAMPAIGN`, a grouping label the H1110/H1447 reports cite, never a read scope.
+  Verdict derivation extracted to a pure `derive_fails()`; module `--selftest` seeds the exact
+  hazard log and proves both halves; pinned by `window_selftest.test_c4_gate0_probe_run_scope`
+  (**186/186**). Importing the module no longer fires a paid probe.
+
+## [1.62.0] — 2026-07-25
+
+### Fixed
+- **Gate-probe integrity, reported not yet repaired (25-07-2026).** A `/pwg-live-gate c4` run
+  for the H858 validation window returned **HEALTH_NOGO** (c4 `rate_limit` on the warm-up,
+  17 878 ms — not a latency block) and, in doing so, exposed that
+  [`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
+  hardcodes `RUN_ID`: it re-reads the whole append-only history and keeps the last row per
+  purpose, so a run can pair its own warm-up with a **stale** `measured` reading. Today that
+  only mis-stated a NO-GO reason; the inverse would print `GATE-0 VERDICT: PASS` off a
+  two-day-old number and authorize paid spend ([#729](https://github.com/gasyoun/SanskritLexicography/issues/729)).
+  Gate packet:
+  [`pwg_ru/h858/H858_C4_LIVE_GATE_HEALTH_NOGO_2026-07-25.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h858/H858_C4_LIVE_GATE_HEALTH_NOGO_2026-07-25.md).
+
+## [1.61.0] — 2026-07-25
+
+### Added
+- **H858 Part B — source-anchored repair of a dropped `german` span (Opus 5 `claude-opus-5`, 25-07-2026).**
+  New [`RussianTranslation/src/german_anchor.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/german_anchor.py):
+  a card whose `german` echo dropped a masked `{Tn}` span is repaired from the source skeleton
+  instead of being nulled by the `<ls>`/`{#` fidelity count — the dominant retry-RESISTANT null
+  class (6 of 7 residual nulls in `no_pwg_w10`, H1283; a `--max-wide` requeue provably cannot fix
+  it). Repair-then-verify (runs only on a card that already failed the count, the same count re-run
+  as the verifier, so a passing card is byte-untouched) and refused unless the echo is a strict
+  order-preserving subsequence of the source. Wired into both lanes from ONE authored source —
+  `headless_worker.normalize_batch` (production) and the harness `accept()` via
+  `german_anchor.js_source()`, the C-01/C-17 injection pattern. Every repair is stamped into the
+  promoted row's provenance (`german_anchor`) and counted in `summary.german_anchor_repairs`.
+  SHARED in [`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md).
+  Offline-green on both lanes (`window_selftest` 185/185, `german_anchor_test.js`,
+  `headless_worker_selftest`, `promote_final_cards --selftest`); the handoff's live no_pwg
+  validation window is PAID and stays gated on a fresh live-gate GO.
+
+### Fixed
+- **`window_selftest` polluted the tracked residual registry (integrity, 25-07-2026).** The
+  coordinator-requeue test ran a real `--defect` requeue without `--no-residual`, so every suite
+  run appended a junk `{"key": "a", "source_window": "nominal_selftest"}` row to
+  [`no_pwg_residuals.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/no_pwg_residuals.jsonl)
+  — the registry that decides which keys are BLOCKED from requeue. Flag added; the polluting row reverted.
+### Added
+
+- **PWG→RU paid-route and promotion hardening (unreleased implementation,
+  25-07-2026; no paid translation started):** all probes and generation calls
+  now share a durable `pwg.call_reservation.v1` ledger. `max_calls` is consumed
+  atomically before each process spawn and is never refunded after a crash;
+  `--cost-ceiling` is explicitly an observed-cost stop after completed calls,
+  not a strict pre-spend dollar cap, and missing/invalid cost telemetry stops
+  cost-capped runs as unevaluable. The same profile lock covers each warm-up +
+  measured probe pair and each worker generation run. Paid manifest-v2
+  dispatch also binds the run ID, manifest hash, preflight hash/scope, profile,
+  result hash, and reservation ledger before output can be recorded.
+- **PWG→RU crash closure (unreleased implementation, 25-07-2026):** Windows
+  Claude subprocesses are placed in a kill-on-close Job Object before their
+  first instruction, so timeout/exception cleanup reaches the native child
+  tree. Sequential `record-output-batch` reports its exact durably committed
+  prefix. Promotion now uses `pwg.promotion_journal.v1`
+  (`prepared → store_committed → derived_validated →
+  coordinator_committed → complete`), startup-reconciles the single incomplete
+  journal, holds one canonical-store claim through `complete`, and seals the
+  store, backup, TM/denylist, coordinator state, and deterministic promotion
+  registry identities for idempotent recovery. Store or coordinator bytes that
+  match neither sealed before nor expected-after state fail closed.
+
 ### Changed
 - **H1623 docs-freshness (Grok 4.5 grok-4.5, 25-07-2026):** re-verify big-manuals estate — LAST_VERIFIED 25-07-2026 on workspace AGENTS/HUMAN_RU + 6 docs/manuals deep manuals; RT deep metadoc COMMANDS_SPOT_RUN forced to integer 4 (was free-text, broke manual_staleness.py); MAINTAINER papers range updated A30-A67.
 

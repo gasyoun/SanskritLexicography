@@ -27,6 +27,7 @@ import pwg_sources as ps   # authoritative <ls> abbreviation resolver (pwgbib)
 import pwg_ab as pab       # authoritative <ab> abbreviation resolver (pwgab)
 from government_census import extract_government  # H1624 G2: DE-side Rektion on portrait senses
 from form_labels import extract_form_labels, extract_form_notes  # H1624 form layer
+from citation_edges import extract_citation_edges               # H1624 G3
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LSMAP = json.load(open(os.path.join(HERE, 'ls_source_map.json'), encoding='utf-8'))
@@ -181,6 +182,8 @@ def sense_node(seg):
     # form_notes = dedicated nom/voc field.
     form_labels = extract_form_labels(seg['text'])
     form_notes = extract_form_notes(seg['text'])
+    # H1624 G3: full citation edges (additive; raw <ls> stays in DE / gloss).
+    citation_edges = extract_citation_edges(seg['text'])
     return {'n': seg['n'], 'sub': seg['sub'], 'equivalents_de': de,
             'gloss_de': gloss[:200], 'equivalence_type': eq, 'grammar': grammar,
             'ab_labels': sorted(set(ab_labels)), 'diasystem': sorted(dia),
@@ -189,7 +192,8 @@ def sense_node(seg):
             'strata': strata_of(cites), 'examples_sa': examples,
             'government': government,
             'form_labels': form_labels,
-            'form_notes': form_notes}
+            'form_notes': form_notes,
+            'citation_edges': citation_edges}
 
 
 _CHIDX = None

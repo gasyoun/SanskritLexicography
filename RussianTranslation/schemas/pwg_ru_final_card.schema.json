@@ -206,6 +206,63 @@
           },
           "description": "OPTIONAL (H1624). Dedicated form-note field for nom./voc. markers only — separate from government (Rektion) and from the multi-axis form_labels list. Deterministic via form_labels.extract_form_notes(de). Empty array when none."
         },
+        "citation_edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["raw_ls", "siglum", "resolver_status"],
+            "properties": {
+              "raw_ls": { "type": "string", "description": "Visible text inside <ls>…</ls>." },
+              "n_attr": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "siglum": { "type": "string" },
+              "work_id": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "work_name": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "renou": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "page": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+              "bib_ok": { "type": "boolean" },
+              "resolver_status": {
+                "enum": ["map", "bib", "orphan", "empty"],
+                "description": "map=ls_source_map; bib=pwgbib only; orphan=neither; empty=unparseable."
+              }
+            }
+          },
+          "description": "OPTIONAL (H1624 G3). Normalized DE citation edges from <ls> via citation_edges.extract_citation_edges. Additive — raw <ls> remains in the german/de string. Empty array when none."
+        },
+        "edition_rel": {
+          "type": "object",
+          "description": "OPTIONAL (H1624 G4 / H180). Structured edition-relationship flag for this subcard sense — machine class from layer + sense_tag (+ optional PWG gender peer). Does not rewrite DE. Subtypes match relationships_rollup.tsv: base|restate|pw_correct|sch_star|derived_sense|a2a|nws_at_sense|foreign_fragment|unknown.",
+          "properties": {
+            "subtype": {
+              "type": "string",
+              "enum": ["base", "restate", "pw_correct", "sch_star", "derived_sense", "a2a", "nws_at_sense", "foreign_fragment", "unknown"]
+            },
+            "op": { "type": "string" },
+            "direction": { "type": "string" },
+            "layer": { "type": "string" },
+            "source_layers": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "insertion_point": {
+              "anyOf": [
+                { "type": "null" },
+                {
+                  "type": "object",
+                  "properties": {
+                    "key1": { "type": "string" },
+                    "homonym": { "type": "string" },
+                    "target_sense": { "type": "string" },
+                    "anchor": { "type": "string" }
+                  }
+                }
+              ]
+            },
+            "confidence": { "type": "string" },
+            "evidence": { "type": "string" },
+            "source_lang": { "type": "string" }
+          },
+          "required": ["subtype", "op", "direction", "layer", "source_layers"]
+        },
         "labels": {
           "type": "array",
           "items": {

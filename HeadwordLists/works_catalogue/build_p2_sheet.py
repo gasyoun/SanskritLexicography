@@ -28,35 +28,27 @@ def trim_html(body, maxlen=280):
         text = text[:maxlen].rsplit(' ', 1)[0] + '…'
     return text
 
-rows = []
-with gzip.open(SRC, 'rt', encoding='utf-8') as f:
-    for line in f:
-        r = json.loads(line)
-        if r['tier'] not in ('C', 'D'):
-            continue
-        rid = f"{r['acc_L']}__{r['ncc_id']}"
-        rows.append({
-            'id': rid,
-            'tier': r['tier'],
-            'score': round(r['score'], 3),
-            'acc_L': r['acc_L'],
-            'ncc_id': r['ncc_id'],
-            'acc_key': r['acc_match_key'],
-            'ncc_key': r['ncc_match_key'],
-            'acc_slp1': r['acc_k1_slp1'],
-            'acc_body': r['acc_body'],
-            'ncc_iast': r['ncc_iast'],
-            'ncc_deva': r['ncc_deva'],
-            'ncc_snip': trim_html(r.get('ncc_body_html', '')),
-        })
+def card_for(r):
+    """One review card from a crosswalk_candidates row.
 
-# Deterministic order: Tier C first (smaller, higher precision), then Tier D by score desc
-rows.sort(key=lambda r: (0 if r['tier'] == 'C' else 1, -r['score']))
+    Imported by build_p2_spotcheck_sheet.py (H1657) so the full sheet and the
+    spot-check sheet stay ONE renderer instead of a hand-synced pair.
+    """
+    return {
+        'id': f"{r['acc_L']}__{r['ncc_id']}",
+        'tier': r['tier'],
+        'score': round(r['score'], 3),
+        'acc_L': r['acc_L'],
+        'ncc_id': r['ncc_id'],
+        'acc_key': r['acc_match_key'],
+        'ncc_key': r['ncc_match_key'],
+        'acc_slp1': r['acc_k1_slp1'],
+        'acc_body': r['acc_body'],
+        'ncc_iast': r['ncc_iast'],
+        'ncc_deva': r['ncc_deva'],
+        'ncc_snip': trim_html(r.get('ncc_body_html', '')),
+    }
 
-print(f"Total C+D rows: {len(rows)}", file=sys.stderr)
-
-data_json = json.dumps(rows, ensure_ascii=False, separators=(',', ':'))
-print(f"Embedded data size: {len(data_json)/1e6:.1f} MB", file=sys.stderr)
 
 TEMPLATE = r'''<!doctype html>
 <html lang="en">
@@ -291,13 +283,36 @@ updateTally();
 </html>
 '''
 
-out = (TEMPLATE
-       .replace('__ROWCOUNT__', str(len(rows)))
-       .replace('__SHEET_ID__', SHEET_ID)
-       .replace('__DATA_JSON__', data_json))
+def render(cards, sheet_id, out_html, heading=None):
+    """Write one virtualized voting sheet. Shared with the H1657 spot-check."""
+    data_json = json.dumps(cards, ensure_ascii=False, separators=(',', ':'))
+    out = (TEMPLATE
+           .replace('__ROWCOUNT__', str(len(cards)))
+           .replace('__SHEET_ID__', sheet_id)
+           .replace('__DATA_JSON__', data_json))
+    if heading:
+        out = out.replace('ACC×NCC P2 — Tier C/D adjudication', heading)
+    os.makedirs(os.path.dirname(out_html), exist_ok=True)
+    with open(out_html, 'w', encoding='utf-8') as f:
+        f.write(out)
+    print(f"Wrote {out_html} ({len(out)/1e6:.1f} MB)", file=sys.stderr)
+    return out
 
-os.makedirs(os.path.dirname(OUT_HTML), exist_ok=True)
-with open(OUT_HTML, 'w', encoding='utf-8') as f:
-    f.write(out)
 
-print(f"Wrote {OUT_HTML} ({len(out)/1e6:.1f} MB)", file=sys.stderr)
+def main():
+    rows = []
+    with gzip.open(SRC, 'rt', encoding='utf-8') as f:
+        for line in f:
+            r = json.loads(line)
+            if r['tier'] not in ('C', 'D'):
+                continue
+            rows.append(card_for(r))
+    # Deterministic order: Tier C first (smaller, higher precision), then
+    # Tier D by score desc
+    rows.sort(key=lambda r: (0 if r['tier'] == 'C' else 1, -r['score']))
+    print(f"Total C+D rows: {len(rows)}", file=sys.stderr)
+    render(rows, SHEET_ID, OUT_HTML)
+
+
+if __name__ == '__main__':
+    main()

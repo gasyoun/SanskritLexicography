@@ -45,6 +45,13 @@ const SANLOSS_DETAIL = []
 let TNMASK_HARD_REJECT = false
 let TNMASK_MISMATCHES = 0
 const TNMASK_DETAIL = []
+// H858 Part B: accept() now calls the anchored-repair twin on the fidelity-reject path, so its
+// globals must exist here too. The fixtures below carry no `skeleton`, so every repair attempt
+// refuses ('nothing-missing') and the reject behaviour they pin is unchanged -- which is the
+// point: the repair may not alter any pre-existing verdict. Its own behaviour is pinned by
+// german_anchor_test.js.
+let GERMAN_ANCHOR_REPAIRS = 0
+const GERMAN_ANCHOR_DETAIL = []
 // Direct eval so the extracted functions close over the locals above.
 const countOf = eval('(' + one('countOf') + ')')
 const countOfField = eval('(' + one('countOfField') + ')')
@@ -52,6 +59,18 @@ const TARGET_FIELD = eval(one('TARGET_FIELD'))
 const tokensOf = eval('(' + one('tokensOf') + ')')
 const TOKEN_FIDELITY_SPEC = eval('(' + one('TOKEN_FIDELITY_SPEC') + ')')   // R2/C-17: cardTokens is spec-driven now
 const cardTokens = eval('(' + one('cardTokens') + ')')
+const GA_TOKEN_RE = eval(one('GA_TOKEN_RE'))
+const gaTokens = eval('(' + one('gaTokens') + ')')
+const gaSenses = eval('(' + one('gaSenses') + ')')
+const gaSpans = eval('(' + one('gaSpans') + ')')
+const block = name => {
+  const m = src.match(new RegExp('const ' + name + ' = \\([^)]*\\) => \\{[\\s\\S]*?\\n\\}'))
+  if (!m) { console.error('FAIL: ' + name + ' not found in ' + harnessPath); process.exit(1) }
+  return m[0].replace(new RegExp('^const ' + name + ' = '), '')
+}
+const gaPlan = eval('(' + block('gaPlan') + ')')
+const gaReanchor = eval('(' + block('gaReanchor') + ')')
+const gaStamp = eval('(' + one('gaStamp') + ')')
 const accept = eval('(' + am[0].replace(/^const accept = /, '') + ')')
 
 let failed = 0
