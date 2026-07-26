@@ -4,6 +4,7 @@ import multiprocessing
 import json
 import os
 import subprocess
+import sys
 import tempfile
 from types import SimpleNamespace
 
@@ -118,7 +119,7 @@ def main():
 
             mao.run_tree_kill = success_runner
             probes = CallReservationLedger(path, 'probes-ok', 2)
-            assert mao.live_probe(cfg, call_reservation=probes, account='a') < 30000
+            assert mao.live_probe(cfg, claude=sys.executable, call_reservation=probes, account='a') < 30000
             assert probes.spent() == 2 and len(calls) == 2
             assert probes.usage()['observed_cost_usd'] == 0.02
 
@@ -126,7 +127,7 @@ def main():
                 returncode=0, stderr='', stdout='not-json')
             malformed = CallReservationLedger(path, 'probe-malformed', 3)
             try:
-                mao.live_probe(cfg, call_reservation=malformed, account='a')
+                mao.live_probe(cfg, claude=sys.executable, call_reservation=malformed, account='a')
                 raise AssertionError('malformed warmup was accepted')
             except SystemExit:
                 pass
@@ -143,7 +144,7 @@ def main():
             mao.run_tree_kill = timeout_runner
             timeout = CallReservationLedger(path, 'probe-timeout', 3)
             try:
-                mao.live_probe(cfg, call_reservation=timeout, account='a')
+                mao.live_probe(cfg, claude=sys.executable, call_reservation=timeout, account='a')
                 raise AssertionError('measured timeout was accepted')
             except SystemExit:
                 pass
@@ -155,7 +156,7 @@ def main():
         sweep_zero = CallReservationLedger(path, 'sweep-zero', 0)
         try:
             sweep.one_call(
-                cfg, 'claude', 30, route='test', window='w', account_label='a',
+                cfg, sys.executable, 30, route='test', window='w', account_label='a',
                 sample_index=0, warmup=False, git_sha='x', cli_version='x',
                 # `active_claim` is REQUIRED keyword-only on one_call; None is its documented
                 # "acquire one for me" contract (_probe_call self-claims when it is None). The
