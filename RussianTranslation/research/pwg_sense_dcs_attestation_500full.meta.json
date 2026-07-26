@@ -42,44 +42,45 @@
     {
       "name": "kosha/data/concordance/sense_corpus_concordance.tsv",
       "role": "PWG-sense ↔ DCS attestation links (H1455)",
-      "sha256": "f71ab304b4a3a0d273de1ca8223b4c3ab24d50371a9a99c38210074cc5147ea2"
+      "sha256": "ddb8db5e593393f2d3f2653fd6b8daa6850eb876c85b062d6d515721621489a6"
     }
   ],
   "summary": {
     "n_pilot_groups": 500,
     "n_lemma_attested": 500,
     "n_wordsem_tagged": 480,
-    "n_groups_grounded": 50,
+    "n_groups_grounded": 425,
     "mass_dcs_lemma_tokens": 943877,
     "mass_dcs_sensetagged_tokens": 102085,
     "sensetagged_mass_share": 0.10815498205804358,
-    "mass_under_grounded_upper_bound": 39520,
-    "attributable_mass_share_upper_bound": 0.041869862280784466,
+    "mass_under_grounded_upper_bound": 926681,
+    "attributable_mass_share_upper_bound": 0.9817815244994845,
     "pwg_senses_total": 7746,
     "pwg_senses_with_ls": 7453,
     "dcs_wn_senses_total": 5201,
     "n_groups_grounding_computed": 500,
     "n_groups_grounding_unknown": 0,
-    "pwg_senses_grounded": 52,
-    "pwg_senses_grounded_verse": 5,
+    "pwg_senses_grounded": 543,
+    "pwg_senses_grounded_verse": 284,
     "pwg_senses_total_known": 7746,
     "dcs_wn_senses_total_known": 5201,
-    "pwg_sense_join_rate": 0.006713142266976504,
-    "pwg_sense_join_rate_verse": 0.0006454944487477407,
-    "dcs_sense_join_rate": 0.009998077292828303,
+    "pwg_sense_join_rate": 0.07010069713400464,
+    "pwg_sense_join_rate_verse": 0.036664084688871675,
+    "dcs_sense_join_rate": 0.10440299942318784,
     "median_pwg_senses_tagged_lemmas": 14.0,
     "median_dcs_senses_tagged_lemmas": 8.0,
     "spearman_pwg_vs_dcs_sense_count": 0.2354209943027191,
     "residual_classes": {
-      "R3_tagged_but_unaligned": 434,
-      "R4_grounded_alignment": 50,
+      "R4_grounded_alignment": 425,
+      "R3_tagged_but_unaligned": 59,
       "R2_no_wordsem_tag": 16
     },
     "concordance_tier_rows": {
       "ls": 85472,
-      "locus-mbh": 52,
-      "overlap": 1561,
-      "locus": 7
+      "locus-mbh": 475,
+      "locus": 625,
+      "overlap": 618,
+      "locus-chapter": 32
     }
   },
   "disclosures": {

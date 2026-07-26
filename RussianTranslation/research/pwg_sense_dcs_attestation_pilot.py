@@ -57,7 +57,16 @@ GOLD_LAYER = 'wn'
 # H1455 confidence tiers. Only a shared LOCUS grounds a PWG-sense↔DCS-token claim;
 # `overlap` is a gloss-token heuristic and `ls` is PWG citing itself (no DCS token
 # behind it at all), so neither may enter the attributed-mass headline.
-GROUNDED_TIERS = ('locus', 'locus-mbh')
+#
+# H1670 adds `locus-chapter`: verse-equal to the sense's <ls>, but the DCS address
+# stops at the chapter/hymn (no `sent_counter` — true of 20.9% of DCS's Ṛgveda and
+# 24.1% of its Atharvaveda sentences), so it corroborates at hymn level exactly as
+# `locus-mbh` does at adhyāya level. It is grounded, but it is NOT exact-verse
+# identity, so every rate below is reported twice: once over VERSE_TIERS alone and
+# once over all grounded tiers. Adding it changes nothing for the pre-H1670 frames,
+# whose concordance carries no such row.
+GROUNDED_TIERS = ('locus', 'locus-mbh', 'locus-chapter')
+VERSE_TIERS = ('locus',)
 SELF_WITNESS_TIERS = ('ls',)
 WEAK_TIERS = ('overlap',)
 
@@ -274,6 +283,9 @@ def build_rows(frame, pwg_senses, lemma_freq, sense_freq, links, scope):
         grounded = set()
         for t in GROUNDED_TIERS:
             grounded |= by_tier.get(t, set())
+        grounded_verse = set()
+        for t in VERSE_TIERS:
+            grounded_verse |= by_tier.get(t, set())
         weak = set()
         for t in WEAK_TIERS:
             weak |= by_tier.get(t, set())
@@ -310,6 +322,7 @@ def build_rows(frame, pwg_senses, lemma_freq, sense_freq, links, scope):
             'sensetagged_share': ('%.4f' % (f_sensetagged / f_lemma)
                                   if f_lemma else ''),
             'n_pwg_senses_grounded': len(grounded),
+            'n_pwg_senses_grounded_verse': len(grounded_verse),
             'n_pwg_senses_gloss_overlap_only': len(weak - grounded),
             'grounding_computed': 1 if known else 0,
             'residual_class': cls,
@@ -366,6 +379,7 @@ def summarize(rows, tier_rows):
     # "not computed", not "0%".
     known_rows = [r for r in rows if r['grounding_computed']]
     pwg_senses_grounded = sum(r['n_pwg_senses_grounded'] for r in known_rows)
+    pwg_senses_grounded_verse = sum(r['n_pwg_senses_grounded_verse'] for r in known_rows)
     pwg_senses_total_known = sum(r['n_pwg_senses'] for r in known_rows)
     dcs_senses_total_known = sum(r['n_dcs_wn_senses'] for r in known_rows)
 
@@ -405,10 +419,13 @@ def summarize(rows, tier_rows):
         'n_groups_grounding_computed': len(known_rows),
         'n_groups_grounding_unknown': len(rows) - len(known_rows),
         'pwg_senses_grounded': pwg_senses_grounded,
+        'pwg_senses_grounded_verse': pwg_senses_grounded_verse,
         'pwg_senses_total_known': pwg_senses_total_known,
         'dcs_wn_senses_total_known': dcs_senses_total_known,
         'pwg_sense_join_rate': (pwg_senses_grounded / pwg_senses_total_known)
                                if pwg_senses_total_known else None,
+        'pwg_sense_join_rate_verse': (pwg_senses_grounded_verse / pwg_senses_total_known)
+                                     if pwg_senses_total_known else None,
         'dcs_sense_join_rate': (pwg_senses_grounded / dcs_senses_total_known)
                                if dcs_senses_total_known else None,
         'median_pwg_senses_tagged_lemmas': med([p[0] for p in pairs]),
@@ -579,6 +596,9 @@ def write_report(summary, rows, md_path, pins, sample, extra):
         L.append('| grounded PWG senses / **DCS `wn` senses (covered subset)** | %d / %d = **%.2f%%** |'
                  % (s['pwg_senses_grounded'], s['dcs_wn_senses_total_known'],
                     100 * s['dcs_sense_join_rate']))
+        L.append('| …**exact-verse** (`locus`) only — excludes adhyāya/hymn corroboration | %d / %d = **%.2f%%** |'
+                 % (s['pwg_senses_grounded_verse'], s['pwg_senses_total_known'],
+                    100 * s['pwg_sense_join_rate_verse']))
     L.append('')
 
     L.append('## A ceiling inside the dictionary, before DCS is consulted')
@@ -816,6 +836,7 @@ def selftest():
     assert by['c']['residual_class'] == 'R1_lemma_absent_from_dcs', by['c']
     # gloss-overlap must NOT be counted as grounded
     assert by['a']['n_pwg_senses_grounded'] == 1, by['a']
+    assert by['a']['n_pwg_senses_grounded_verse'] == 1, by['a']
     assert by['a']['n_pwg_senses_gloss_overlap_only'] == 1, by['a']
     assert by['a']['dcs_sensetagged_count'] == 40, by['a']
     assert by['a']['sensetagged_share'] == '0.4000', by['a']
@@ -857,6 +878,23 @@ def selftest():
     assert s_part['n_groups_grounding_computed'] == 1, s_part
     assert s_part['pwg_senses_total_known'] == 2, s_part      # only 'a's two senses
     assert abs(s_part['pwg_sense_join_rate'] - 0.5) < 1e-9, s_part
+
+    # H1670: `locus-chapter` (hymn-level, DCS address has no verse counter) IS
+    # grounded, but must NOT be counted as exact-verse identity. A frame whose only
+    # grounding is chapter-level must therefore report a non-zero grounded rate and
+    # a ZERO verse rate — collapsing the two is the precision loss this tier exists
+    # to prevent.
+    links_ch = {('a', ''): {'locus-chapter': {'1a'}, 'ls': {'1a'}}}
+    rows_ch = build_rows(frame, pwg, lemma_freq, sense_freq, links_ch, scope)
+    by_ch = {r['slp1']: r for r in rows_ch}
+    assert by_ch['a']['n_pwg_senses_grounded'] == 1, by_ch['a']
+    assert by_ch['a']['n_pwg_senses_grounded_verse'] == 0, by_ch['a']
+    assert by_ch['a']['residual_class'] == 'R4_grounded_alignment', by_ch['a']
+    s_ch = summarize(rows_ch, collections.Counter({'locus-chapter': 1}))
+    assert s_ch['pwg_senses_grounded'] == 1, s_ch
+    assert s_ch['pwg_senses_grounded_verse'] == 0, s_ch
+    assert s_ch['pwg_sense_join_rate_verse'] == 0.0, s_ch
+    assert s_ch['pwg_sense_join_rate'] > 0, s_ch
 
     r = spearman([1, 2, 3, 4], [1, 2, 3, 4])
     assert abs(r - 1.0) < 1e-9, r
@@ -912,10 +950,20 @@ def main():
     # headwords and overlaps this frame in only 16 keys.
     ap.add_argument('--loci', default=None)
     ap.add_argument('--frame-mode', default='kosha',
-                    choices=('kosha', 'random', 'all'),
+                    choices=('kosha', 'random', 'all', 'file'),
                     help='kosha = the frozen DCS-attested H1455 500 (grounding '
                          'available); random = an unbiased seeded sample of PWG; '
-                         'all = every PWG headword')
+                         'all = every PWG headword; file = a frame file given with '
+                         '--frame (H1670 wide frame)')
+    # H1670: the aligner can now run over a wider frame and write elsewhere, so the
+    # frame and the concordance it produced must both be selectable. Defaults keep
+    # the H1632 invocations reproducing byte-identically.
+    ap.add_argument('--frame', default=None,
+                    help='frame file for --frame-mode file (select_sense_pilot.py '
+                         'columns, incl. n_leaf_senses so the parse gate applies)')
+    ap.add_argument('--concordance', default=None,
+                    help='sense_corpus_concordance.tsv to measure (default: the one '
+                         'committed in kosha)')
     ap.add_argument('--n', type=int, default=2000,
                     help='sample size for --frame-mode random')
     ap.add_argument('--seed', type=int, default=20260726,
@@ -938,8 +986,13 @@ def main():
     tag = a.tag or ('pilot' if a.frame_mode == 'kosha' else a.frame_mode)
 
     kosha = find_kosha(a.kosha)
-    p_frame = os.path.join(kosha, 'data', 'concordance', 'sense_pilot_headwords.tsv')
-    p_conc = os.path.join(kosha, 'data', 'concordance', 'sense_corpus_concordance.tsv')
+    p_frame = (a.frame if a.frame_mode == 'file' and a.frame
+               else os.path.join(kosha, 'data', 'concordance',
+                                 'sense_pilot_headwords.tsv'))
+    p_conc = a.concordance or os.path.join(kosha, 'data', 'concordance',
+                                           'sense_corpus_concordance.tsv')
+    if a.frame_mode == 'file' and not a.frame:
+        raise SystemExit('--frame-mode file needs --frame PATH')
     p_lfreq = os.path.join(kosha, 'data', 'frequency', 'lemma_frequency.tsv')
     p_sfreq = os.path.join(kosha, 'data', 'frequency', 'sense_frequency.tsv')
     for p in (p_frame, p_conc, p_lfreq, p_sfreq, a.loci):
@@ -952,7 +1005,7 @@ def main():
           % (len(pwg), sum(len(v) for v in pwg.values()), dropped_parent_loci))
 
     mismatch = None
-    if a.frame_mode == 'kosha':
+    if a.frame_mode in ('kosha', 'file'):
         frame = load_frame(p_frame)
         # Correctness gate: our leaf definition must reproduce the frozen frame's
         # n_leaf_senses exactly. A mismatch means the sense tree was parsed
@@ -1017,6 +1070,17 @@ def main():
             '`csl-orig/v02/pwg/pwg.txt`. It carries no DCS-attestation precondition, '
             'so its lemma-level rate is an unbiased estimate of PWG as a whole.'
             % (a.n, a.seed, '{:,}'.format(len(pwg)))),
+        'file': (
+            'the H1670 wide frame (%d groups)' % len(frame),
+            'The SAME selection query as the H1455 500 (≥2 leaf senses, ≥2 of them '
+            'carrying an `<ls>`, DCS-attested ranked first) run to exhaustion instead '
+            'of truncated at 500 — so a grounding delta measured against the 500 is '
+            'attributable to frame WIDTH, not to a changed selection rule.',
+            'The frame is the **H1670 wide frame** — `select_sense_pilot.py` with the '
+            'identical selection query and `--size` raised past exhaustion, yielding '
+            '%d (slp1, hom) groups (%.1f× the frozen 500). The frozen 500 frame file is '
+            'untouched; this one is written beside it.'
+            % (len(frame), len(frame) / 500.0)),
         'all': (
             'every PWG headword (%s groups)' % '{:,}'.format(len(pwg)),
             'The complete dictionary — no sampling, no selection. Lemma-level '
@@ -1032,6 +1096,11 @@ def main():
     if a.frame_mode == 'kosha':
         repro_export = 'python export_frame_sense_loci.py --kosha ../../../kosha'
         repro_join = 'python pwg_sense_dcs_attestation_pilot.py --kosha ../../../kosha'
+    elif a.frame_mode == 'file':
+        repro_export = 'python export_frame_sense_loci.py --all'
+        repro_join = ('python pwg_sense_dcs_attestation_pilot.py --frame-mode file '
+                      '--frame %s --concordance %s --tag %s'
+                      % (os.path.basename(p_frame), os.path.basename(p_conc), tag))
     else:
         repro_export = 'python export_frame_sense_loci.py --all'
         repro_join = ('python pwg_sense_dcs_attestation_pilot.py --kosha ../../../kosha'
@@ -1082,6 +1151,7 @@ def main():
     cols = ['slp1', 'hom', 'n_pwg_senses', 'n_pwg_senses_with_ls', 'n_pwg_ls_total',
             'dcs_lemma_count', 'n_dcs_wn_senses', 'dcs_sensetagged_count',
             'sensetagged_share', 'n_pwg_senses_grounded',
+            'n_pwg_senses_grounded_verse',
             'n_pwg_senses_gloss_overlap_only', 'grounding_computed', 'residual_class']
     with open(tsv_path, 'w', encoding='utf-8', newline='') as fh:
         w = csv.DictWriter(fh, fieldnames=cols, delimiter='\t', lineterminator='\n')

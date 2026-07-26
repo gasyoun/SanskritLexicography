@@ -150,12 +150,15 @@ def main():
              'corpus annotation, not of the frame.'
              % tuple(pct(S[f]['sensetagged_mass_share']) for f in FRAMES))
     L.append('')
-    L.append('**4. Sense-level grounding did NOT scale, and is not reported as zero.** '
-             'The H1455 aligner ran over 500 headwords; it covers %s of the %s in the '
-             'full frame. For the other %s the grounded count is **unknown**, and the '
-             'reports class them `R0_grounding_not_computed` rather than 0. Publishing '
-             '0%% there would manufacture a dictionary-wide rate out of the absence of '
-             'a job — the exact failure this work exists to avoid.'
+    L.append('**4. Sense-level grounding did not scale *with the frame alone*, and is '
+             'never reported as zero.** As measured here the H1455 aligner ran over 500 '
+             'headwords, covering %s of the %s in the full frame; for the other %s the '
+             'grounded count is **unknown**, and the reports class them '
+             '`R0_grounding_not_computed` rather than 0. Publishing 0%% there would '
+             'manufacture a dictionary-wide rate out of the absence of a job — the exact '
+             'failure this work exists to avoid. (H1670 has since run the aligner over a '
+             '32× wider frame at full passage depth, shrinking that unknown class by 43%% '
+             '— see the correction below.)'
              % ('{:,}'.format(alll['n_groups_grounding_computed']),
                 '{:,}'.format(alll['n_pilot_groups']),
                 '{:,}'.format(alll['n_groups_grounding_unknown'])))
@@ -176,14 +179,40 @@ def main():
              '**No** — upstream annotation coverage (219/270 texts). |'
              % pct(1 - alll['sensetagged_mass_share']))
     L.append('| 3 | Attested + tagged, but no shared locus to bind a PWG sense | the '
-             'residue | **Partly** — needs texts and locus crosswalks (Pañcatantra, '
-             'Kathāsaritsāgara; vulgate↔BORI drift), not a better matcher. |')
+             'residue | **Yes, and far more than this table assumed** — see the H1670 '
+             'correction below. |')
     L.append('')
-    L.append('Scaling the pilot to the whole dictionary — done here — therefore did not '
-             'and could not raise the grounding rate. It raised **confidence in the '
-             'diagnosis**: the constraint is data availability at three separate layers, '
-             'and the honest ceiling for a sense-level PWG×DCS product is set by '
-             'constrictions 1 and 2 long before matcher quality matters.')
+    L.append('Scaling the pilot to the whole dictionary — done here — did not by itself '
+             'raise the grounding rate. It raised **confidence in the diagnosis** for '
+             'constrictions 1 and 2, which are genuine data-availability limits.')
+    L.append('')
+    L.append('### ⚠️ Correction (H1670, 26-07-2026) — constriction 3 was mostly a '
+             'matcher-reach artefact')
+    L.append('')
+    L.append('An earlier version of this section said constriction 3 "needs texts and '
+             'locus crosswalks … **not a better matcher**", and that scaling "could not" '
+             'raise the grounding rate. **Both claims were wrong**, and the error was in '
+             'this programme\'s own code, not in the data:')
+    L.append('')
+    L.append('- The aligner tested each sense\'s `<ls>` against only the **3 passages per '
+             'DCS lemma** that `dcs_kwic()` sampled for the viewer — 0.299% of the '
+             'passages available under this frame. The exact-verse test was measuring the '
+             'sample, not the corpus.')
+    L.append('- `PWG_TO_DCS_TEXT` keyed the Ṛgveda as ASCII `"RV"` while PWG\'s abbrev is '
+             '`ṚV`, so the corpus\'s most canonically-numbered text — 6.89% of all `<ls>` '
+             'citations — never matched.')
+    L.append('- **Kathāsaritsāgara is named above as a text DCS lacks. DCS carries it** '
+             '(111,298 tokens); the obstacle is its numbering, not its absence.')
+    L.append('')
+    L.append('With the same predicate, the same tiers and no heuristic added, grounded '
+             'PWG leaf senses went **52 → 7,372** and the rate **0.67%% → 12.25%%**. Full '
+             'per-lever attribution, the precision defects the fix exposed, and what is '
+             'genuinely left in the residue: '
+             '[`PWG_SENSE_DCS_GROUNDING_LEVERS.md`](%s/PWG_SENSE_DCS_GROUNDING_LEVERS.md).'
+             % BLOB)
+    L.append('')
+    L.append('Constrictions 1 and 2 stand unchanged — they moved by 52 and 754 groups '
+             'respectively out of 109,050, which is what a real data limit looks like.')
     L.append('')
     L.append('### Note — "a bigger corpus" is not an available lever (MG, 26-07-2026)')
     L.append('')
@@ -201,9 +230,12 @@ def main():
              'bind to, and none to be had without lemmatising and tagging it ourselves |')
     L.append('')
     L.append('So the realistic levers on the sense-level number are constriction 3 only: '
-             'run the H1455 aligner over a bigger frame (it has never been run past its '
-             'own 500 headwords), and add texts / locus crosswalks. Follow-on: '
-             '[H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md).')
+             'run the H1455 aligner over a bigger frame (it had never been run past its '
+             'own 500 headwords), and add texts / locus crosswalks. **Executed in '
+             '[H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md)** '
+             '— which found that the dominant sub-lever was neither of those two but a '
+             'third nobody had costed: the aligner\'s own passage sampling. See the '
+             'correction above.')
     L.append('')
 
     L.append('## Per-frame reports')
