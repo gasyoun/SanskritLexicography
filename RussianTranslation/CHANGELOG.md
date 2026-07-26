@@ -23,6 +23,29 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   subtype counts (7 REGLUE_SPEC roots, 1077 rows). Partial N14 close — see
   [`pwg_ru/REGLUE_SPEC.md`](pwg_ru/REGLUE_SPEC.md) Sec.7.
 
+### Added — H1632 PWG-sense × DCS attestation pilot join (26-07-2026)
+
+- New
+  [research/PWG_SENSE_DCS_ATTESTATION_PILOT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_ATTESTATION_PILOT.md)
+  + generator
+  [research/pwg_sense_dcs_attestation_pilot.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_sense_dcs_attestation_pilot.py)
+  and input builder
+  [research/export_frame_sense_loci.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/export_frame_sense_loci.py):
+  the first join of **PWG's own sense divisions** to DCS attestation *and*
+  frequency, on the frozen H1455/H1456 500-headword frame.
+- **The number: sense-level attribution collapses.** 500/500 groups attest at
+  lemma level (by construction — the frame was selected DCS-attested), but only
+  **52 of 7,746 PWG leaf senses (0.67%)** are grounded to a DCS attestation by a
+  shared locus. 10.8% of the frame's 943,877 DCS tokens carry a `m_wordsem` tag
+  at all — that is the ceiling on *any* sense-level claim over this corpus.
+- **Two ceilings separated.** 12,953 `<ls>` citations hang on structural parent
+  sense nodes, unattributable to a leaf sense by PWG's own structure — before DCS
+  is consulted at all. The corpus-side residue (86.8% of groups, class `R3`) fails
+  on missing texts and vulgate↔BORI locus drift, not on absence of evidence.
+- Reuses, never rebuilds: H1453 `sense_frequency.tsv` (`wn` = `m_wordsem` gold),
+  H1455 `sense_corpus_concordance.tsv`, H1456 `microstructure.leaf_senses`.
+  Deterministic, no LLM in the measurement path; all five inputs SHA-256 pinned.
+
 ### Hardened — Codex pipeline-hardening audit, step 1 of 2 (26-07-2026)
 
 - New
