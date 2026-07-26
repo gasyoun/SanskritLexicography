@@ -66,6 +66,7 @@ TRANSLATED_SOURCE_SIGLUM = re.compile(
     r'\b(?:ригвед|атхарвавед|махабхарат|рамаян|ману(?!скрип))[а-яё]*\W{0,3}\d',
     re.I)
 BRACED_GLOSS = re.compile(r'\{%(.*?)%\}', re.S)
+GUILLEMET_GLOSS = re.compile(r'«(.*?)»', re.S)
 LATIN_FLAG_CONTEXT = re.compile(
     r'(?:das\s+lat\.|lat\.|latin|latein|griech\.|greek|engl\.|english|Wils\.\s+übersetzt)',
     re.I)
@@ -121,6 +122,7 @@ IAST_DIACRITIC = re.compile(r'[āīūṛṝḷḹṅñṭḍṇśṣ]')
 RETAINED_SPAN = re.compile(r'\{%.*?%\}|\{#.*?#\}|<(?:ab|ls|is)\b[^>]*>.*?</(?:ab|ls|is)>'
                            r'|<(?:ab|ls|is)\b[^>]*>', re.S | re.I)
 SANSKRIT_SPAN = re.compile(r'\{#.*?#\}', re.S)
+SANSKRIT_SPAN_CONTENT = re.compile(r'\{#(.*?)#\}', re.S)
 # A leading structural-head span: a {#..#} that is a sub-entry preverb/root/headword LABEL, not
 # an intra-sense Sanskrit span. A faithful Russian translation may legitimately omit such a head
 # label (it is card-level metadata), so it must NOT count as a dropped translation span. H960
@@ -159,6 +161,7 @@ HIGH_RISKS = {
     'missing_senses',
     'broken_markup_token',
     'unbalanced_sanskrit_delimiters',
+    'cyrillic_in_sanskrit_wrapper',
     'translated_grammar_siglum',
     'translated_source_siglum',
     'untranslated_braced_german_gloss',
@@ -187,6 +190,7 @@ HIGH_CONFIDENCE_RISKS = {
     'empty_russian',
     'broken_markup_token',
     'unbalanced_sanskrit_delimiters',
+    'cyrillic_in_sanskrit_wrapper',
     'translated_grammar_siglum',
     'translated_source_siglum',
     'untranslated_german_residue',
@@ -601,6 +605,17 @@ def markup_sigla_risks(sense, russian, german, grammar, tag):
     if russian.count('{#') != russian.count('#}'):
         add_risk(risks, 'unbalanced_sanskrit_delimiters',
                  'Russian field has unbalanced {#...#} delimiters', tag=tag)
+    # H1651 D1: {#..#} is the Sanskrit/SLP1 citation wrapper -- transliterated Sanskrit is
+    # always Latin+diacritics, never Cyrillic, so any Cyrillic word inside it means the model
+    # wrapped a Russian gloss in the Sanskrit delimiter instead of the {%..%} gloss delimiter
+    # (store audit 26-07-2026: 34/34 live instances were pure-Cyrillic gloss text mis-wrapped
+    # this way, none genuinely Sanskrit -- unambiguous, no false-positive risk observed).
+    cyr_wrapped = [m.group(1) for m in SANSKRIT_SPAN_CONTENT.finditer(russian)
+                   if CYR_WORD.search(m.group(1))]
+    if cyr_wrapped:
+        add_risk(risks, 'cyrillic_in_sanskrit_wrapper',
+                 'Russian gloss wrapped in the Sanskrit {#..#} delimiter instead of {%%..%%} '
+                 '(%d span(s)): %s' % (len(cyr_wrapped), cyr_wrapped[0][:80]), tag=tag)
     if grammar and re.search(r'\b(?:m|f|n|Pl|Du|Sg)\.', grammar) and TRANSLATED_GRAMMAR_SIGLUM.search(russian):
         add_risk(risks, 'translated_grammar_siglum',
                  'grammar abbreviation appears translated rather than kept verbatim', tag=tag)
@@ -620,6 +635,23 @@ def markup_sigla_risks(sense, russian, german, grammar, tag):
         add_risk(risks, 'markup_wrapper_dropped',
                  'braced gloss wrapper {%%..%%} dropped: %d source vs %d target' % (sgloss, dgloss),
                  tag=tag)
+        # H1651 D3: of the rows with a dropped {%..%} wrapper, a minority rendered the gloss
+        # inside Russian guillemets <<..>> instead of losing the wrapper outright (store audit
+        # 26-07-2026: 54/2795 candidates). RULED: {%..%} is the store's structural gloss
+        # convention (established throughout the store and by braced_gloss_risks/
+        # markup_wrapper_dropped above); a guillemet rendering is convention drift, not an
+        # accepted alternative -- but distinct enough from the majority (bare unwrapped prose)
+        # to name separately. Soft/report-only like its sibling: the translated content is
+        # intact either way, only the markup differs, and a store-wide mechanical guillemet ->
+        # {%..%} substitution was withheld (7/2860 sampled guillemet uses were unrelated
+        # ordinary quotation, not a converted gloss) -- repair is a targeted worklist pass
+        # (H1651_D3_GUILLEMET_GLOSS_WORKLIST), not a blind bulk edit.
+        deficit = sgloss - dgloss
+        guillemets = min(deficit, len(GUILLEMET_GLOSS.findall(russian or '')))
+        if guillemets:
+            add_risk(risks, 'gloss_wrapper_became_guillemet',
+                     'braced gloss wrapper {%%..%%} rendered as <<..>> guillemets instead '
+                     '(~%d span(s))' % guillemets, tag=tag)
     # H960 (H911 backlog #3): a {#..#} Sanskrit span present in the German source but dropped from
     # the Russian translation. The harness accept()/tm gates count {#..#} only in the german echo,
     # never the translation field, so an intra-sense span that survives the echo but vanishes from

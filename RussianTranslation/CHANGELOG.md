@@ -10,6 +10,29 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H1651 pwg_ru store wrapper-defect sweep D1–D4 + CI gates (26-07-2026)
+
+- **D1 repaired** (34/34 rows, 58 spans): Cyrillic mis-wrapped inside the Sanskrit `{#..#}`
+  delimiter instead of the gloss `{%..%}` delimiter, confirmed pure-Cyrillic content on every
+  hit. New CI gate `cyrillic_in_sanskrit_wrapper` (HIGH_CONFIDENCE) in
+  [prompt_rule_audit.markup_sigla_risks](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/prompt_rule_audit.py)
+  stops the class recurring in future generations; LANG_PARITY
+  `wrapper_fidelity_cyrillic_and_guillemet_h1651` SHARED (mirrors the pre-existing EN-side
+  `audit_window_en.nws_de_locked()`).
+- **D3 ruled** ({%..%} is the store's structural gloss convention; a Russian `«..»` guillemet
+  rendering is drift, not an accepted alternative) **and gated** report-only
+  (`gloss_wrapper_became_guillemet`) but not bulk-repaired — 54 measured rows parked to
+  [pwg_ru/H1651_D3_GUILLEMET_GLOSS_WORKLIST_2026-07-26.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1651_D3_GUILLEMET_GLOSS_WORKLIST_2026-07-26.jsonl)
+  for a targeted future pass.
+- **D4 triaged**: 2,860-row gloss-count-mismatch population sampled; dominant sub-pattern
+  (2,741 rows) measured 25/25 = markup-wrapper loss with translated content intact, already
+  covered by the pre-existing soft `markup_wrapper_dropped` risk — no new repair needed.
+- New tool:
+  [src/wrapper_defect_sweep.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/wrapper_defect_sweep.py)
+  (D1 store repair + D3 measurement, mirrors the H1305 `ru_style_sweep.py` shape). Full
+  writeup:
+  [pwg_ru/H1651_WRAPPER_DEFECT_SWEEP_REPORT_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1651_WRAPPER_DEFECT_SWEEP_REPORT_2026-07-26.md).
+
 ## [1.75.0] — 2026-07-26
 
 ### Changed — H1633 rulings R1–R5 recorded; G6b gate born; A51 deferred to 2028 (26-07-2026)
