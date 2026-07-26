@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 26-07-2026_
+_Created: 26-06-2026 · Last updated: 27-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -4023,4 +4023,120 @@ that is not a Sanskrit word and an arity that is wrong, which then propagates in
 rather than stripping it — it is MW stating where a boundary is *not*, which is usable evidence
 when reconciling MW's segmentation against another dictionary's.
 
+`✅ FIXED 26-07-2026` (H1703, [PR #817](https://github.com/gasyoun/SanskritLexicography/pull/817),
+[v1.87.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.87.0)) — with one
+correction to the `So:` above: take the first variant that **carries the segmentation**, not
+simply the first variant. MW sometimes lists the unsegmented spelling first
+(`gaRakAri; gaRa—kAri`), and "first variant wins" silently drops those records instead of
+fixing them. All 41 records corrected (22 arity-corrected); `--selftest` pins the case.
+The hyphen is still stripped in `mw_compounds.py` — only the adjudicator's `mw_variants()`
+keeps it — so the second half of this finding remains open, deliberately: changing the member
+spelling downstream is a bigger change than the defect warranted.
+
 _26-07-2026 · [H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §476. Repairing an extractor GROWS the disagreement queue it feeds — plan for that, not for a shrink
+
+🟠 **Two upstream repairs were expected to shrink a 4,123-card PWG-vs-MW disagreement queue.
+They grew it by 3 %.**
+A repair does two things at once: it removes rows that only disagreed because of the defect,
+and it *adds* rows that were previously absent or unresolvable and now produce a real
+comparison. The second effect is easy to forget when writing the plan, because the defect is
+what you are thinking about.
+
+`Evidence:` after [SanskritGrammar#527](https://github.com/gasyoun/SanskritGrammar/issues/527)
+(PWG chain now headword-anchored: 512 rows dropped, **879 added**) and
+[SL#801](https://github.com/gasyoun/SanskritLexicography/issues/801) (MW variant fusion),
+the `differs` queue moved 4,123 → **4,246 cards**: 118 left, 241 entered (163 brand-new PWG
+comparisons, 74 that previously had no PWG chain, 4 from `agrees`). The defect strata did
+vanish as predicted — `pwg_layer_inner_chain` 75 → 0, `pwg_layer_no_headword_paren` 82 → 2,
+`mw_variant_fusion` 10 → 0 — so both halves of the prediction were individually right and the
+net was still the wrong sign.
+
+`So:` when a handoff says "land the repair first, the queue will shrink", treat the shrink as
+an unmeasured assumption, and re-derive the queue before sizing any human sample against it. A
+blind arm drawn against the pre-repair queue keeps its value in the strata that survive, but
+some of its cards will have left the queue entirely (9 of 200 here) — count them and say so
+rather than reporting the arm at full size.
+
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §477. 35 cards is the floor for a 0.90 Wilson gate — and a censused stratum needs no interval at all
+
+🟡 **`wilson_lower(35, 35) = 0.9010`; `wilson_lower(34, 34) = 0.8983`.**
+When promotion is gated on a per-stratum Wilson-95 % lower bound ≥ 0.90, a stratum sampled with
+34 cards cannot clear the gate *even if the human agrees with every single card*. Sizing a
+review arm at "about 30 per stratum" therefore buys nothing: the votes are spent and the
+stratum still cannot promote.
+
+`Evidence:` the H1628 arm put 16, 11, 10, 10, 1 and 0 cards into six of eight strata — every
+one of them unpriceable at the 0.90 gate, capping promotion at 3,018 of 4,226 rows however the
+human voted. Re-drawing at 35/stratum lifted all of them past 0.90 (0.901–0.906) for 232 cards
+of human time.
+
+`So:` derive the per-stratum floor from the gate before drawing, not after. And note the
+corollary that is easy to miss: **a stratum small enough to census does not need an interval
+at all** — if every row in it carries a human vote there is nothing to extrapolate to, so it
+promotes by census while its Wilson bound is still below the threshold. The 31-row
+`granularity_ic_vs_full_decomposition` stratum promotes on `promotion_basis: census` with a
+bound of 0.890; reporting it as "unpromotable" because 0.890 < 0.90 would be wrong.
+
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §478. A blind arm stratified on an agent's own rules must not render the rule — and its card ids must come from the lock, not the frame
+
+🟠 **Stratifying a verification sample by the agent's classification is right; showing that
+classification on the card destroys the thing being measured.**
+An arm exists to price the agent. If the card displays the stratum, the rule, the verdict or
+the reason, the human is being asked to agree with a labelled claim rather than to judge the
+evidence, and the resulting precision is unmeasurable.
+
+`Evidence:` the H1703 arm is stratified on the H1681 rule ladder (`mw_cut_leaves_nonword`,
+`pwg_lexeme_vs_mw_suffixed_tail`, …). Those names are self-fulfilling as prompts. The card
+therefore carries only the two member lists, the source PWG parenthesis, the source MW `<k2>`
+and neutral badges (length, DCS frequency, member-count class); the stratum, rule and verdict
+live in the frame TSV. A selftest asserts no card JSON contains any of them.
+
+`So:` two rules for any blind arm built on top of an agent pass — (1) the sampling key never
+appears on the voting surface, and it is worth pinning that with a test rather than a comment,
+because the natural way to build a card is to reuse the row dict that already carries the
+label; (2) take the arm's card ids from the **committed lock**, not the frame TSV. The lock is
+what `validate_decisions.py` checks the human's export against, so it is the only list that can
+actually pay out — an unbound sheet must count as pricing nothing rather than silently falling
+back to its frame, which is how the unbound-sheet defect (H1703 item 1) stayed invisible until
+someone went looking.
+
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §479. PWG's etymology parenthesis: "first `{#…#}` per `+`-part" is right until PWG writes a derivation ladder
+
+🟡 **`(von {#BAnumant#} oder von {#BAnu#} + {#mati#})` — first-wins ships `BAnumant`, but the
+compound is `BAnu + mati`.**
+Extracting PWG's member chain needs three rules, and only the first is obvious. (a) Blank every
+balanced `[...]` — PWG nests a member's own sub-analysis there. (b) Within a `+`-part, the
+member is normally the *first* `{#…#}`; what follows is PWG's annotation of it
+(`{#agnim#} <ab>acc.</ab> von {#agni#}`, `{#Sira#} = {#Siras#}`). (c) But PWG also writes
+disjunctions and derivation ladders inside a part — `von X oder von Y`,
+`von X und dieses von Y` — where the first `{#…#}` is a *base*, not a member.
+
+`Evidence:` over the whole of `pwg.txt`, 1,564 `+`-parts carry more than one `{#…#}`: 1,056
+`von`-annotations and 252 `=`-glosses where first-wins is correct, against ~357 ladders and
+disjunctions where it is not. Settling the ambiguous ones against the headword's surface —
+first-wins if the members account for the headword within ±1 char per seam, else the unique
+candidate chain that does, else **drop** — resolves `BAnumatin` → `BAnu + mati` correctly and
+drops `DvajAgravatI` (a *derivative* of a compound: nothing composes it, so it is not surface
+segmentation gold at all). Also measured: PWG's analysis paren does **not** always sit
+immediately after the headword's `¦` (`{#BUsuta#}¦ 1〉 <lex>m.</lex> ({#BU#} + {#suta#})`), so
+requiring adjacency loses ~2,500 correct rows; accepting it across annotation-only material,
+and across a citation or gloss only when the chain composes the headword, keeps them without
+re-admitting the neighbouring-word defect.
+
+`So:` do not treat "first `{#…#}` per part" as the whole rule, and never guess when a part is
+ambiguous — drop and count by reason. The extractor
+([`pwg_compound_split.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/pwg_compound_split.py))
+and the adjudicator
+([`adjudicate_compound_differs.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/adjudicate_compound_differs.py))
+must stay in sync on all of this: if they disagree about what PWG says, the PWG-vs-MW queue
+measures the extractors instead of the dictionaries.
+
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
