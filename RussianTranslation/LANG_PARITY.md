@@ -1488,7 +1488,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/bounded_staged_run.py": "eadb67e7953c369030df9dfc8f1c7f3dba7d8e5853af6c0b770273d7b67dc02e",
+      "src/pilot/bounded_staged_run.py": "e7e60839425b324de940a1913e1983f9d21807d4a906500dea018224d7dff7ee",
       "src/pilot/bounded_supervisor.py": "30113cd5a9c41b72f5b05d4a76b4370152f7b12c0d149311cc0e65a60f4cb717",
       "src/pilot/max_account_orchestrator.py": "a850df79a48a8b309b94411dac0d5dd42d4d88c6c484e19c6eba681fce33ec81"
     }
@@ -1649,7 +1649,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1386 (22-07-2026, Fable 5 claude-fable-5). Every fix is language-neutral orchestration/persistence mechanics -- none introduces a --lang branch. Lane facts checked per the handoff: the frag TM half of C3 (build_frags/load_frag_tm/best_reusable) is --lang-parameterized so both lanes get it; the recursive harvest glob + D3 per-lease store_delta + P3g batch gate live in the RU staged/coordinator lane ONLY because the EN promote lane (promote_en.py) by design has no fragment harvest and no batch transaction (its INTENTIONAL-DIVERGENCE ruling is H1425 W3, unchanged); P3b is the EN lane's own seed feed; the h1209 rig (D1) is field-parameterized (payload['field']), so a future EN slice inherits prompt_common/chunking as-is; PWG_INPUT_DIR (P3f) is honored by both audit_window and audit_window_en. Pinned by bounded_staged_run_selftest tests l/m, window_selftest test_h1386_c3_frag_unblock_serves_replacement + test_h1386_d1_medium50_script_size_cap, promote_lock/promote_final_cards selftests, and the h1339_offline_bench deterministic signature (batch == per-lease).",
     "tracking": "H1386",
     "verified_sha256": {
-      "src/pilot/bounded_staged_run.py": "eadb67e7953c369030df9dfc8f1c7f3dba7d8e5853af6c0b770273d7b67dc02e",
+      "src/pilot/bounded_staged_run.py": "e7e60839425b324de940a1913e1983f9d21807d4a906500dea018224d7dff7ee",
       "src/pilot/bounded_supervisor.py": "30113cd5a9c41b72f5b05d4a76b4370152f7b12c0d149311cc0e65a60f4cb717",
       "src/pilot/max_account_orchestrator.py": "a850df79a48a8b309b94411dac0d5dd42d4d88c6c484e19c6eba681fce33ec81",
       "src/pilot/translation_memory.py": "e5014c7a872ca6c89458a052690de45576fae15e09094be72bfa7aa30b1d0b76",
@@ -1832,6 +1832,25 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/prompt_rule_audit.py": "b235136ea95a7c77eb2cee0a3a6bc393c75df221ba587253a7949d9e3cbe4927",
       "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd"
+    }
+  },
+  {
+    "id": "h1437_cohort_width_offline",
+    "mechanism": "H1437 Phase 3: bounded_staged_run gains an EXPERIMENTAL/OFFLINE-ONLY --cohort-width (default 1 = the serial route, byte-for-byte unchanged); the --execute path refuses any width > 1 with a message naming the missing live-acceptance gate BEFORE touching plan/db/coordinator/fleet; run_cohort_offline adapts bounded windows onto cohort_engine.CohortEngine for fake/fixture waves, with widths 1/2/3 proven identical in clean/requeue decisions, accepted order and store bytes, exact ledger totals, one promote+TM call per wave",
+    "files": [
+      "src/pilot/bounded_staged_run.py",
+      "src/pilot/cohort_engine.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "Language-agnostic single-source control plane (26-07-2026, Fable 5 `claude-fable-5`): the bounded driver drains whichever lane's prepared leases it is pointed at and never reads or writes a target-language field; there is no per-language twin file to port. Pinned by bounded_staged_run_selftest tests (q)/(r) (renamed from (o)/(p) during the H1724 worktree-drain merge — master had since claimed those letters for test_o_preflight_before_probe/test_p_resume_requires_existing_ledger_run).",
+    "tracking": "H1437",
+    "verified_sha256": {
+      "src/pilot/bounded_staged_run.py": "e7e60839425b324de940a1913e1983f9d21807d4a906500dea018224d7dff7ee",
+      "src/pilot/cohort_engine.py": "81bd38b495034d3da5b0ebc2afc2de500f38066f626b8e0fc8254d5acd53881a"
     }
   }
 ]
