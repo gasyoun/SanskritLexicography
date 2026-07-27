@@ -54,6 +54,8 @@ How to close: extend the coverage≥0.55 gloss-mapping approach in `crosswalk/to
 > **Source:** [FINDINGS §2](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#2-homonym-token-splitting-has-a-hard-morphological-ceiling) · [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09)
 
 ### §5. `Stopovye` parallel-passage bundle vs full export — never content-diffed
+
+> **GRADUATED 27-07-2026 → [FINDINGS §492](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (Stopovye subset census vs Polnorazmernye). H1735 Grok 4.5 (grok-4.5). Do not re-measure; residual open work is only what the finding still flags.**
 🟡 ✍️ **We have NOT content-diffed the 1.17 GB `PARA/Stopovye` bundle against `dcs-parallel-passages-full` (506,787 rows).**
 Why it matters: it is the largest single derived-data bundle in VisualDCS; whether it is a stop-word-filtered variant or independent data determines if it is separately citable; its row count is still `null` (no schema-aware parse).
 Blocker: no tool — needs a schema-aware per-file alignment parse, not a line count.
@@ -76,6 +78,8 @@ How to close: a proper-noun lookup table validated against a Sanskrit onomastico
 Surfaced by [`seed_gaps.py`](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/tools/epistemic/seed_gaps.py) as a set-difference over the [kosha manifest](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json): datasets that exist but carry **no** FINDINGS row measuring them. These are `⚙️ auto` **candidates** — a human confirms (→ `✍️`, promote to FINDINGS once measured) or deletes. Row counts are the manifest's; the "why it matters" is a first pass to be sharpened.
 
 ### §7. `dcs-stem-cooccurrence-full` (353,352 stem-pair rows) is uncharacterised
+
+> **GRADUATED 27-07-2026 → [FINDINGS §488](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (stem co-occurrence degree distribution). H1735 Grok 4.5 (grok-4.5). Do not re-measure; residual open work is only what the finding still flags.**
 🟡 ⚙️ **We have the full Sanskrit-stem co-occurrence table (353,352 pairs, IDs 1–222342) but NO FINDINGS row on what its network structure shows.**
 Why it matters: a corpus-wide collocation graph would ground compound-formation, synonym-cluster, and semantic-field claims that are currently asserted per-lemma; feeds any distributional-semantics analysis.
 Blocker: no tool — needs a graph/statistics pass (degree distribution, top collocates, hapax rate), not a row count.
@@ -84,6 +88,8 @@ How to close: load the pair table, compute the obvious network statistics, appen
 > **Source:** manifest `dcs-stem-cooccurrence-full` (H291) · [kosha](https://github.com/gasyoun/kosha) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · auto (seed_gaps.py)
 
 ### §8. DCS syntagmatic collocation tables (Прил. 6 + 7) are unanalysed
+
+> **GRADUATED 27-07-2026 → [FINDINGS §489](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (sintagmatic appendix-6 nested in appendix-7). H1735 Grok 4.5 (grok-4.5). Do not re-measure; residual open work is only what the finding still flags.**
 🟡 ⚙️ **We have the per-lemma collocate tables — all-corpus (`dcs-sintagmatic-appendix7`, 82,800 rows) and per-historical-period (`dcs-sintagmatic-appendix6-periods`, 19,076 rows, 7 files) — but NO FINDINGS row comparing them.**
 Why it matters: the period-split vs all-corpus pair is exactly the data to test whether collocations are epoch-stable (the varga question §62, but at the lexical layer); a genuine diachronic-collocation finding.
 Blocker: no tool — needs a per-period vs all-corpus diff; the appendix7 copy also has a byte-different UTF-16LE Cyrillic twin (H291) to dedup first.
@@ -92,6 +98,8 @@ How to close: align the period files against the all-corpus table, measure collo
 > **Source:** manifest `dcs-sintagmatic-appendix7` / `dcs-sintagmatic-appendix6-periods` (H291) · [kosha](https://github.com/gasyoun/kosha) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · auto (seed_gaps.py)
 
 ### §9. `heritage-forms-crosswalk-extras` disagreement classes are uncounted
+
+> **GRADUATED 27-07-2026 → [FINDINGS §490](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (Heritage×kosha disagreement classes). H1735 Grok 4.5 (grok-4.5). Do not re-measure; residual open work is only what the finding still flags.**
 🟡 ⚙️ **We have the Heritage form-level crosswalk extras (1,037,239 rows, incl. a `heritage_forms_oracle_disagreements` form→disagreement-class table) but NO FINDINGS row on how often Heritage and kosha disagree, or on what.**
 Why it matters: the disagreement rate + its classes are the missing quality metric for the Heritage morphology witness ([GAPS §3](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md)); tells us whether to trust Heritage forms as an oracle.
 Blocker: data tier — `restricted` (Heritage LGPLLR composition), so the count is publishable but the rows aren't public.
@@ -108,6 +116,8 @@ How to close: second-annotate the 24 scenarios, compute κ + a confusion table, 
 > **Source:** manifest `which-dictionary-routing-benchmark` (H281) · [kosha](https://github.com/gasyoun/kosha)/[csl-guides](https://github.com/sanskrit-lexicon/csl-guides) · [08-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-08&until=2026-07-09) · auto (seed_gaps.py)
 
 ### §11. `dcs-verb-form-frequency-prelim` is flagged preliminary, never finalised
+
+> **GRADUATED 27-07-2026 → [FINDINGS §491](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (verb-form prelim is unlabeled XLS). H1735 Grok 4.5 (grok-4.5). Do not re-measure; residual open work is only what the finding still flags.**
 🟡 ⚙️ **The DCS verb-form frequency table (106 rows) is explicitly `preliminary` in the manifest — NO FINDINGS row, and no final version.**
 Why it matters: verb forms are the top of the frequency dictionary (roots dominate §64/§16); a finalised verb-form frequency would directly feed the freq-first translation queue.
 Blocker: unclear — the "preliminary" marker's reason isn't recorded (coverage? method?); needs the owner to state what makes it non-final.
@@ -121,7 +131,7 @@ How to close: identify the preliminary caveat, finalise or document why it can't
 
 - **The frontier sorts by blocker, not by topic.** §1–§3 wait on **data we don't have** (a VedaWeb outage, more correction eras, a walled Heritage download); §4–§6 wait on a **tool or method that doesn't exist yet** (gloss-level token adjudication, a schema-aware bundle parse, a validated Cyrillic→SLP1 onomasticon). Naming the blocker type is what tells a reader whether the gap needs a human download or a coding pass.
 - **The 🟠 rows are the pipeline-unblockers.** §2 (error population), §3 (Heritage morphology), §6 (Cyrillic name keys), §10 (routing κ) each free a whole downstream — and Heritage as a third morphology witness (§3) is the single biggest unlock, gated only on a browser download + a licence @DECIDE.
-- **The ⚙️ auto-seeded §7–§11 are candidates, not confirmed gaps** — each is a manifest dataset with no FINDINGS row, awaiting a human confirm-or-delete. Several (§7, §8, §9) need only a statistics pass over data already in hand, not new acquisition.
+- **§5, §7–§9, §11 graduated 27-07-2026 (H1735)** → FINDINGS §488–§492. Remaining auto-seed candidate: §10 (routing κ, needs second annotator). §1–§4, §6, §12–§14 stay open on data/method/external blockers.
 - **Where they point:** a measured gap graduates to a [FINDINGS](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) row; several here would also settle a live [CONTRADICTIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) row (§1→§1, §8→§2) or ride a method already sketched in [RECIPES](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md).
 
 ### §12. Сундараканда: стихи песней 2 и 28 — пропуск оцифровки или воля переводчика?

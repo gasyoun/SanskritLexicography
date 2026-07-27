@@ -28,10 +28,19 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §488) whatever its section, so existing numbers never shift; when a finding is later
+(currently §493) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
+
+**GAPS graduates (H1735, 27-07-2026)**
+
+- 🟠 [§488. DCS stem co-occurrence graph is extreme-sparse with function-word hubs](#488-dcs-stem-co-occurrence-graph-is-extreme-sparse-with-function-word-hubs)
+- 🟡 [§489. Sintagmatic appendix-6 is a 6.3k-lemma core nested in the 80k all-corpus table](#489-sintagmatic-appendix-6-is-a-63k-lemma-core-nested-in-the-80k-all-corpus-table)
+- 🟠 [§490. Heritage×kosha form intersection agrees 78.3%; disagreements are classifiable](#490-heritagekosha-form-intersection-agrees-783-disagreements-are-classifiable)
+- 🟡 [§491. Verb-form frequency prelim is an unlabeled 42-row XLS with empty tense names](#491-verb-form-frequency-prelim-is-an-unlabeled-42-row-xls-with-empty-tense-names)
+- 🟠 [§492. Stopovye is a 102-file subset of Polnorazmernye, not a stopword filter of the full 506k](#492-stopovye-is-a-102-file-subset-of-polnorazmernye-not-a-stopword-filter-of-the-full-506k)
+
 
 **Grammar & morphology data**
 
@@ -4450,3 +4459,65 @@ Committed as a reproducible probe with the trap in its docstring:
 [`measure_onramp_scope.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/measure_onramp_scope.py).
 
 _27-07-2026 · [H1476](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1476-Opus_SanskritGrammar_pedagogy-aspect-measurable-result-metrics_22.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+
+### 488. DCS stem co-occurrence graph is extreme-sparse with function-word hubs
+
+🟠 **The full Sanskrit-stem co-occurrence table (dcs-stem-cooccurrence-full) is a directed L/R adjacency list over 176,676 stems (353,352 directed rows): 57.2% of directed rows have degree 0, median degree is 0, mean ~9.2, and the degree tail is dominated by function words (ca, 	ad, va, iti, 	u, pi).** Class A.
+
+Evidence: Tab-separated file VisualDCS/derived-data/Sochetaemost-sanskritskih-osnov/NEW/1-222342.csv (36.3 MB). Schema per row: id \t stem \t L|R \t degree \t (partner_id \t count)*. Counts on 27-07-2026 (H1735, Grok 4.5 grok-4.5):
+- directed rows = 353,352; unique stem ids = 176,676; sides L=R=176,676 (every stem has both left and right rows)
+- degree-0 rows = 202,049 (57.18%); degree buckets: 0→202049, 1→69410, 2–5→42817, 6–20→20854, 21–100→12450, 100+→5772
+- min/p50/p90/p99/max degree = 0 / 0 / 7 / 173 / 20,984; mean = 9.198; partner-edge slots (sum of pairs) = 3,250,000
+- top degrees: ca L 20984 / R 18929; 	ad L 13160 / R 12728; va L 8899; iti L 8830; 	u L 7763; pi L 7587
+
+Implication: any collocation / distributional-semantics claim over this table must down-weight or remove the function-word hub set; the typical stem has **no** recorded partner on a given side. Do not treat the table as a dense network. Reproducible with a stdlib TSV pass over the path above.
+
+> **Source:** graduates [GAPS §7](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · manifest dcs-stem-cooccurrence-full · [VisualDCS](https://github.com/gasyoun/VisualDCS) · H1735 · 27-07-2026 · Grok 4.5 (grok-4.5)
+
+### 489. Sintagmatic appendix-6 is a 6.3k-lemma core nested in the 80k all-corpus table
+
+🟡 **DCS syntagmatic appendix 7 (all-corpus) has 79,985 lemmas; the seven period files of appendix 6 cover a 6,338-lemma union that is almost entirely nested in appendix 7 (6,337/6,338), while period-to-period lemma Jaccard is low (1∩3=0.23, 1∩7=0.17, 3∩7=0.30).** Class A.
+
+Evidence: VisualDCS/derived-data/Lexical-Cores/Prilozhenie-7-…/DCS_Sintagmatic.csv — 82,800 lines / 79,985 distinct lemmas; row schema lemma;n1;n2;collocate count;… with collocate-list length min/median/max = 1 / 3 / 6,795. Top lemmas by col1: ādi 5252, mahat 4637, rājan 4526, artha 4328, deva 3989. Appendix-6 period files (1.csv…7.csv) lemma counts: 1823, 2226, 2259, 3300, 2961, 3359, 2387 — each period’s lemmas ⊆ appendix 7 except 1 stray form per some files. Period-only outside s7 = 1; s7-only = 73,648.
+
+Implication: appendix 6 is a **frequency-core slice by historical period**, not an independent collocation inventory. Diachronic collocation drift must be measured on the **intersection** of period cores (thousands of lemmas), not on the full 80k. The UTF-16LE Sinonimy twin remains a byte-duplicate family (H291), not a second analysis surface.
+
+> **Source:** graduates [GAPS §8](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · manifest dcs-sintagmatic-appendix7 / dcs-sintagmatic-appendix6-periods · [VisualDCS](https://github.com/gasyoun/VisualDCS) · H1735 · 27-07-2026 · Grok 4.5 (grok-4.5)
+
+### 490. Heritage×kosha form intersection agrees 78.3%; disagreements are classifiable
+
+🟠 **On the 94,264-form Heritage∩kosha intersection, 78.26% agree on lemma and 21.74% (20,496) disagree; disagreement classes are genuine-or-ambiguous 12,905 (63.0%), stem-granularity 7,132 (34.8%), 
+asal-variant 459 (2.2%), with participles the largest Heritage category among disagreements (8,289).** Class A (re-derive from committed TSV + stats JSON).
+
+Evidence: re-counted SanskritLexicography/HeadwordLists/heritage_forms_oracle_disagreements.tsv (20,496 data rows; header orm_slp1, flag, heritage_stems, kosha_lemmas, heritage_category, kosha_sources, disagreement_class) matches committed heritage_forms_oracle_stats.json exactly. Broader context from the same stats: Heritage 1,022,526 distinct forms / kosha 409,978; intersection 94,264; Heritage-only 928,262; kosha-only 315,714; kosha coverage by Heritage 22.99% (25.4% after nasal normalisation).
+
+Implication: Heritage is usable as a third morphology witness for **agreement-class forms** and for its huge Heritage-only surplus, but the 21.7% disagree set needs class-aware handling — stem-granularity and 
+asal-variant are mostly mechanical, genuine-or-ambiguous needs human/lexicographic adjudication. Rate-only FINDINGS are publishable under restricted tier; row dump stays restricted (LGPLLR pending).
+
+> **Source:** graduates [GAPS §9](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · [heritage_forms_oracle_stats.json](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_forms_oracle_stats.json) · H1735 · 27-07-2026 · Grok 4.5 (grok-4.5)
+
+### 491. Verb-form frequency prelim is an unlabeled 42-row XLS with empty tense names
+
+🟡 **The file registered as dcs-verb-form-frequency-prelim is OLE2 Excel (magic d0cf11e0), mis-suffixed .csv, with 42 data rows whose Tense/Mood column is entirely empty — only numeric IDs 1–42 and frequencies (sum 781,618; max 233,080 on ID 19; four IDs at frequency 0). It cannot be finalised as a labelled tense/mood frequency table without recovering the ID→label legend from an external source.** Class A.
+
+Evidence: VisualDCS/derived-data/Glagolnye-formy/Частота появления глагольных форм в корпусе (Предварительные данные).csv opened via xlrd (sheet «Лист1», 43×3). Header: ID | Tense/Mood | Частота появления в корпусе. All 42 Tense/Mood cells blank. Zero-frequency IDs: 17, 18, 31, 34. Sibling folder has richer verb-form DBs (Bazadannyh-glagolnyh-form-Korpusa/, class lists) that are **not** this prelim table.
+
+Implication: keep the manifest preliminary marker; do not feed this table into a freq-first translation queue until the legend is recovered (or rebuild frequencies from the full verb-form database with explicit tense tags). The gap is **label recovery**, not row count.
+
+> **Source:** graduates [GAPS §11](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · manifest dcs-verb-form-frequency-prelim · [VisualDCS](https://github.com/gasyoun/VisualDCS) · H1735 · 27-07-2026 · Grok 4.5 (grok-4.5)
+
+### 492. Stopovye is a 102-file subset of Polnorazmernye, not a stopword filter of the full 506k
+
+🟠 **PARA/Stopovye is a proper subset of PARA/Polnorazmernye by filename (102 of 245 CSVs; 0 stop-only names), with 139,817 stop rows vs 506,787 full rows (~27.6%); content is related but not identical (sample first-500 line Jaccard 0.23–0.50; some orthographic ṃ/m drift and extra commentary lines).** Class A.
+
+Evidence: census 27-07-2026 (H1735):
+- Polnorazmernye: 245 CSVs, 506,787 lines, 0 non-CSV
+- Stopovye: 102 CSVs + 11 split .7z.001 members (~1.17 GB with compressed leftovers), 139,817 lines in the plain CSVs
+- filename overlap = 102; only_full = 143; only_stop = 0
+- shared samples: 107_1--1.csv full 52 / stop 54 lines, Jaccard@500 = 0.50; 10_1--1.csv 119/119, Jaccard 0.25 (ṃ vs m); 112_1--1.csv 16/16, Jaccard 0.23 with an extra Ratnaṭīkā line in stop
+
+Implication: Stopovye is **not** «the full parallel export with stopwords removed» in the sense of the same 506,787-row table filtered — it is a **partial work-set** (102/245 files) with per-file content that sometimes diverges. Cite Stopovye and Polnorazmernye separately; do not treat row-count null as unknown — plain-CSV rows = 139,817 (plus unrehydrated 7z members).
+
+> **Source:** graduates [GAPS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · manifest stopovye-parallel-passages / dcs-parallel-passages-full · [VisualDCS](https://github.com/gasyoun/VisualDCS) · H1735 · 27-07-2026 · Grok 4.5 (grok-4.5)
+
+
