@@ -37,7 +37,9 @@ that every emitted triple/element has a named producer and a stated reliability.
 | 4 | Validate the TEI against the actual Lex-0 RNG/ODD | open — needs the schema; currently structure-checked only |
 | 5 | Validate the Turtle with a real RDF parser + SHACL (`release/shapes.ttl`) | open — emitter is string-based, never parsed back |
 | 6 | Full-store run + scale/coverage report (fixture is 22 rows) | open |
-| 7 | Resolve the base-IRI `@DECIDE` before anything is published | open (human) |
+| 7 | Resolve the base-IRI `@DECIDE` before anything is published | **done** 27-07-2026 — ruled `…/repwg/` ([#809](https://github.com/gasyoun/SanskritLexicography/issues/809)) |
+| 7a | Register the w3id PURL so the IRIs actually resolve | open — until then they are permanent identifiers that 404 |
+| 7b | Emit `dct:creator` / `dct:publisher` on the lexicons | open — currently only source/license/wasGeneratedBy/created |
 | 8 | Re-export once the G1 `gloss_lang` false-positive rate is fixed | open (blocked on the classifier issue) |
 | 9 | Hand the *published* graph + SPARQL surface to `csl-standards` | open — boundary rule, not this repo's job |
 | 10 | Couple with [H1635](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1635-Opus_SanskritLexicography_pwg-public-sidecar-zenodo-release_25.07.26.md) Zenodo packaging if the export becomes the package input | open |

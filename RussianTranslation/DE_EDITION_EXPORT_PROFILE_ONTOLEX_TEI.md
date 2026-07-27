@@ -201,11 +201,14 @@ Edition-layer coverage: `pwg` 3 · `pw` 6 · `sch` 3 · `pwkvn` 5 · `nws` 3.
 5. **`edition_rel` is rule-confidence only** (`confidence: "rule"`), inherited
    from H1624 G4 — the H180 typology *display names* are still unvoted, so the
    machine classes are exported under their rollup names.
-6. **The base IRI is still a placeholder.** `https://w3id.org/sanskrit-lexicon/pwg-ru/`
-   is the documented w3id PURL placeholder pending the publication-domain
-   `@DECIDE` (see [LOD_GRAPH.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LOD_GRAPH.md)).
-   IRIs are forever, so a human decides the domain before anything is published;
-   override with `--base-iri`.
+6. **The base IRI is ruled but does not resolve yet.** The namespace
+   `https://w3id.org/sanskrit-lexicon/repwg/` is settled
+   ([issue #809](https://github.com/gasyoun/SanskritLexicography/issues/809),
+   rationale in [LOD_GRAPH.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LOD_GRAPH.md)
+   § Namespace ruling) — `repwg` = "rePWG", a *re-edition* of PWG, deliberately
+   not `pwg`. But the w3id PURL is **not registered**, so every IRI here is a
+   permanent identifier that currently 404s. Do not describe the graph as having
+   dereferenceable IRIs until that PR lands. Override with `--base-iri`.
 7. **Scale is untested beyond the fixture.** The profile has been exercised on
    the 22-row golden fixture and on store slices, not on a full-store run.
 

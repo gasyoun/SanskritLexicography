@@ -42,10 +42,12 @@ upgrades it in place (it does **not** replace `export_interop.py`, which still
 produces the TEI Lex-0 + reverse-index artifacts) and adds the five things a real
 LOD graph needs:
 
-1. **Real, dereferenceable, configurable IRIs** — `--base-iri`, defaulting to the
-   documented placeholder `https://w3id.org/sanskrit-lexicon/pwg-ru/` pending the
-   publication-domain ruling (see *Open decision* below). Instance resources are
-   absolute `<base+path>` IRIs; vocabulary terms are the `pwglex:`/`gr:` prefixes.
+1. **Real, configurable IRIs** — `--base-iri`, defaulting to the **ruled**
+   namespace `https://w3id.org/sanskrit-lexicon/repwg/` (see *Namespace ruling*
+   below). The w3id PURL is **not yet registered**, so these are permanent
+   identifiers that do not yet resolve — do not claim dereferenceability until
+   it is. Instance resources are absolute `<base+path>` IRIs; vocabulary terms
+   are the `pwglex:`/`gr:` prefixes.
 2. **`vartrans` sense↔sense relations** from
    [`pwg_ru_relationships.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ru_relationships.jsonl)
    — `restate`/`add`/`relocate`/`correct`, `abridging`/`additive`, per source
@@ -176,13 +178,50 @@ not here. The routing contract for this build:
   [`/publish-safety-check`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation) pass —
   see [`csl-standards`](https://github.com/sanskrit-lexicon/csl-standards) for the landed surface.
 
-## Open decision
+## Namespace ruling (settled 27-07-2026)
 
-- **Publication IRI domain (`@DECIDE`).** IRIs are permanent identifiers, so the
-  real dereferenceable domain is a human ruling, not a code default. The generator
-  ships `https://w3id.org/sanskrit-lexicon/pwg-ru/` as a **placeholder** and takes
-  `--base-iri`; nothing downstream hard-codes it. Registering a w3id PURL (or
-  choosing a `samskrte.ru` / project domain) is mirrored to
-  [`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
+The publication-IRI `@DECIDE` is **closed**. Ruling recorded in
+[issue #809](https://github.com/gasyoun/SanskritLexicography/issues/809):
+
+- **Namespace: `https://w3id.org/sanskrit-lexicon/repwg/`** — canonical form
+  carries the trailing slash (`…/repwg` and `…/repwg/` are different IRIs to a
+  strict consumer; the generators normalise a missing one).
+- **`repwg` = "rePWG", a *re-edition* of PWG — not PWG itself.** That is the
+  load-bearing part of the name: the graph carries derived structure, and the RU
+  side is machine translation (`gr:machine-preview`, non-citable). A namespace
+  reading as plain `pwg` would claim to *be* the Cologne text. Lowercase in the
+  path (IRI paths are case-sensitive; `rePWG` there would invite
+  `repwg`/`REPWG`/`rePwg` forever); spelled **rePWG** in labels and prose.
+- **Superseded `pwg-ru`**, which encoded a fact that stopped being true: four of
+  the five graphs (DE enrichment, DE edition, DCS frequency, grammar) are not
+  Russian, and the German material is public domain.
+- **Rejected: Cologne's `sanskrit-lexicon.uni-koeln.de`** — a permanent
+  identifier scheme must not depend on coordination with an outside party.
+  **Rejected: a maintainer name in the path** — that repeats the `pwg-ru`
+  mistake with a different contingent fact; authorship belongs in
+  `dct:creator`/`dct:publisher`, and the authority is already the
+  `sanskrit-lexicon` segment.
+- **One namespace for all graphs**, deliberately: `export_lod.py` (lexicon /
+  dcs-freq / de-lexicon / grammar) and `export_de_edition.py` all mint the same
+  `lemma/<key1>` IRI, so cross-graph SPARQL is a plain merge. Language and
+  edition are modelled one level down (`lexicon/pwg-ru`,
+  `lexicon/pwg-de-edition`, `lexicon/pwg-grammar`), which is where they belong —
+  the namespace root does not repeat them.
+
+**A project-owned domain is planned and does not change any IRI:** w3id.org is a
+*redirector*, so the w3id IRI stays the permanent identifier and the project
+domain becomes the redirect target behind it. This is why w3id-first is the
+correct order — publishing on a project domain first would have been the
+unfixable choice.
+
+### Still open
+
+- **The w3id PURL is not registered** — a PR against
+  [perma-id/w3id.org](https://github.com/perma-id/w3id.org) is needed before the
+  IRIs resolve. Until then they are valid permanent identifiers that 404, which
+  must be stated rather than implied away (FAIR requires resolution).
+- **`dct:creator` / `dct:publisher` are not emitted** — the graphs carry
+  `dct:source`, `dct:license`, `prov:wasGeneratedBy`, `dct:created` only. This
+  is the right place to answer "whose edition is this", and it is still empty.
 
 _Dr. Mārcis Gasūns_
