@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §480) whatever its section, so existing numbers never shift; when a finding is later
+(currently §482) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -58,6 +58,8 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§462. On Windows, repeated repository discovery can dominate a Python pipeline](#462-on-windows-repeated-repository-discovery-can-dominate-a-python-pipeline-cache-checkout-identity-not-mutable-path-overrides) — 88 Git subprocesses cost 4.50 s of 5.29 s; cache the immutable checkout identity, not mutable path overrides.
 - 🔴 [§470. The Cologne scan-viewer page PDFs can carry an embedded digitized text layer](#470-the-cologne-scan-viewer-page-pdfs-can-carry-an-embedded-digitized-text-layer--check-get_text-before-declaring-no-e-text-exists-or-commissioning-ocr) — the ramayanagorr Google-sourced page PDFs held a clean Devanagari text layer; the full Gorresio e-text (10,225 vv) was extracted with zero new OCR the same day "no e-text exists" was concluded. Check `get_text()` per VOLUME before commissioning OCR; anchor ॥N॥ segmentation to an external per-page verse index (OCR drops digits).
 - 🔴 [§473. OCR the canonical page files themselves — mapping a third-party OCR of "the same" scan onto them loses to offset drift, thumbnail decoys, and digit aliasing](#473-ocr-the-canonical-page-files-themselves--mapping-a-third-party-ocr-of-the-same-scan-onto-them-loses-to-offset-drift-thumbnail-decoys-and-digit-aliasing) — the DLI vol-2 leaf offset drifts +48→+20 and verse-number anchors alias across short sargas; tesseract-5 `san` on the Cologne pages' own embedded full-res images closed the §470 vols-2/4/uk gap (e-text 10,225→19,852 vv, all 672 sargas) with zero mapping risk. Take the LARGEST embedded image, never `get_images()[0]` (thumbnail decoy); normalize `।।`→`॥` before ॥N॥ segmentation.
+- 🔴 [§480. A non-empty PDF text layer proves nothing — check the SCRIPT; and "extract the largest embedded image" breaks when the PDF CROPS a 2-up scan](#480-a-non-empty-pdf-text-layer-proves-nothing--check-the-script-and-extract-the-largest-embedded-image-breaks-when-the-pdf-crops-a-2-up-scan) — the ramayanabom page PDFs return ~1,100–2,300 chars each, all of it Latin garbage from a Latin-alphabet OCR of Devanagari; and each 1128×420 pt page embeds a 4700×3500 TWO-page scan it crops in half, so §473's largest-image rule silently OCRs two pages at once. Render the page instead. Amends §470 and §473 for the next edition.
+- 🔴 [§481. A corpus file's PRESENCE is not evidence of its contents — `07_ramayana-uttarakanda.jsonl` is Sanskrit-only CRITICAL-edition text under a "Southern/Leonov" label, and a handoff was minted off the filename](#481-a-corpus-files-presence-is-not-evidence-of-its-contents--07_ramayana-uttarakandajsonl-is-sanskrit-only-critical-edition-text-under-a-southernleonov-label-and-a-handoff-was-minted-off-the-filename) — 2,690 `sa` segments and 0 `ru`; 99.9% of its verses align to the DCS critical edition at the identical `sarga.verse` while kāṇḍas 1/2/3/5 sit at 1–3%. H1705 was written to "bridge the Bombay numbering" for a book whose blocker is that no Russian uttarakāṇḍa exists.
 - 🔴 [§471. A corpus-candidate matcher keyed on a dictionary's OWN bibliographic prose will bury its biggest wins in the "no corpus side exists" class](#471-a-corpus-candidate-matcher-keyed-on-a-dictionarys-own-bibliographic-prose-will-bury-its-biggest-wins-in-the-no-corpus-side-exists-class--pwgs-pāṇini-and-manu-41910-citations-sat-in-dcs-lacks) — a `Verzeichniss der Abkürzungen` names works by author in the editor's language, not by the Sanskrit title a corpus indexes; PWG's Pāṇini and Manu (41,910 citations) sat in `DCS-LACKS` until matched on the work, not the prose.
 - 🔴 [§472. Choosing a confidence tier ONCE PER SENSE and then stamping it on many passages inflates the strongest tier](#472-choosing-a-confidence-tier-once-per-sense-and-then-stamping-it-on-many-passages-inflates-the-strongest-tier--413-of-h1670s-exact-verse-rows-were-chapter-level) — 4.13% of H1670's exact-verse rows were chapter-level addresses; let the level travel with the passage, and grep the strongest tier for the address shape it is supposed to exclude.
 - 🔴 [§468. PWG's plain `R.` is a THREE-edition composite](#468-pwgs-plain-r-is-a-three-edition-composite--books-36-carry-gorresio-bengal-recension-numbering-so-keying-them-into-a-southern-recension-text-silently-returns-the-wrong-verse) — books 1–2 cite Schlegel, books 3–6 Gorresio (Bengal recension), book 7 Bombay (pwgbib 1.247; store sarga maxima 79/63/94 = Gorresio's counts). `citation_tm` had returned the wrong verse's RU silently for ~900 in-range R. 3/5 refs; books 3–6 now `unmapped_locus_scheme` until the Gorresio↔Southern concordance validates (H1656).
@@ -4144,3 +4146,77 @@ must stay in sync on all of this: if they disagree about what PWG says, the PWG-
 measures the extractors instead of the dictionaries.
 
 _27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §480. A non-empty PDF text layer proves nothing — check the SCRIPT; and "extract the largest embedded image" breaks when the PDF CROPS a 2-up scan
+
+🔴 **§470 and §473 were both written off one edition's page PDFs (ramayanagorr) and both
+mis-fire on the next one (ramayanabom).** The recipes are still right; what was missing is
+the check that tells you which branch you are on. Two traps, each of which silently
+produces plausible output:
+
+- **The text layer is a decoy.** Every `pdfpagesv3/ram-III-NNN.pdf` returns 1,100–2,300
+  characters from `page.get_text()` — a §470 check keyed on "is `get_text()` non-empty?"
+  passes with room to spare. The characters are Latin:
+  `*kitihtell18.1b1,1111qhMakkhd-lie Ifkkt12111414A 11W,Ilkihk11/1111 II`. Google's
+  digitisation OCRed this Devanagari page with a Latin-alphabet model, and the result is
+  embedded as a real, searchable text layer. **So: §470's check is on the SCRIPT of the
+  returned text, not its length** — one `re.search(r'[ऀ-ॿ]', txt)` is the whole
+  fix, and without it a session concludes "e-text recovered, zero OCR needed" and ships
+  noise.
+- **The largest embedded image can be the WRONG UNIT.** §473 says take the largest image
+  by pixel area, never `get_images()[0]` — correct, and still insufficient. Each page here
+  is 1128×420 pt (pothi/landscape, aspect 2.69) but embeds a single 4700×3500 image
+  (aspect 1.34) that is a **2-up scan of two printed pages**, which the PDF crops in half.
+  Extracting it yields two pages of text keyed to one page number, and nothing errors.
+  Verified by geometry (image aspect = exactly half the page aspect) and by rendering.
+  **So: when the embedded image's aspect ratio does not match the page rect's, the PDF is
+  cropping — render the page (`get_pixmap(dpi=…)`) and let the crop apply.** Here
+  `dpi=300` is native resolution, so rendering costs no fidelity.
+
+Corollaries measured on the same volume, all reusable: `ram-III-NNN.pdf` **is** printed
+page N (offset 0, verified visually at pp. 505 and 810); the index's folio column
+**restarts at 1 for each kāṇḍa** inside a volume, so a volume-wide page→folio map is ~250
+folios out at the tail; a commentary edition prints **three verse-numbered zones per page**
+(commentary above, mūla, commentary below), so a whole-page `॥N॥` split multiplies the
+verse count (14 markers vs 3 in the mūla band on p. 600; 22 vs 1 on p. 700) and word-height
+filtering under `--psm 6` does not separate them — tesseract merges lines across zones on a
+wide layout; and resolution is **not uniform** across a volume (most pages DeviceGray/JBIG2
+at 4700×3500, some sepia DeviceRGB JPEG at half that, which OCR to nothing unbinarised).
+
+_27-07-2026 · [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §481. A corpus file's PRESENCE is not evidence of its contents — `07_ramayana-uttarakanda.jsonl` is Sanskrit-only CRITICAL-edition text under a "Southern/Leonov" label, and a handoff was minted off the filename
+
+🔴 **H1705 was written on the sentence "the corpus HAS `07_ramayana-uttarakanda.jsonl`, so
+the missing piece is the Bombay-numbering bridge, not the RU side."** The file exists. Both
+inferences from its existence are false, and the code that consumes it already said so —
+[`citation_tm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/citation_tm.py)
+carries a comment stating that no Russian translation of kiṣkindhā, yuddha or uttara exists
+at all. The handoff was minted off a directory listing; the contradiction sat one `grep`
+away.
+
+| check | kāṇḍas 1 / 2 / 3 / 5 | kāṇḍa 6 | kāṇḍa 7 |
+|---|---|---|---|
+| `sa` segments | 2,268 / 4,307 / 2,447 / 2,859 | 4,436 | 2,690 |
+| `ru` segments | **same count, fully paired** | **0** | **0** |
+| rows identical to the DCS critical ed. (same `sarga.verse`) | 1.2–3.0% | **99.8%** | **99.9%** (95.5% at score 1.0) |
+
+So kāṇḍas 6–7 were ingested from a different source than 1/2/3/5 — they are the Baroda
+critical text, carrying a label ("Southern", the Leonov translation-of-record keying) that
+is true of the other four. Two consequences beyond the wasted handoff: the committed
+`ramayana_southern_critical_concordance.tsv` is, for those two kāṇḍas, **a text aligned
+against itself** — its 99.8%/99.9% agreement is not evidence that the recensions agree; and
+any consumer treating `06`/`07` as vulgate-keyed inherits a silent recension swap of the
+kind §468 documents for R. books 3–6.
+
+`So:` **before planning work against a corpus asset, measure the asset, not the manifest** —
+segment counts per language, and an identity check against whatever else claims to be the
+same text. Both are one pass over the file. The generalisable form: a filename, a manifest
+row and a directory listing are all *claims*; a handoff premised on one of them without a
+read is a handoff premised on nothing. Related: §471 (a class label that is a fact about
+the matcher, not about the corpus), §472 (a tier decided once per group and stamped on
+rows).
+
+Integrity issue: [SL#822](https://github.com/gasyoun/SanskritLexicography/issues/822).
+
+_27-07-2026 · [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md) · Opus 5 1M `claude-opus-5[1m]`_
