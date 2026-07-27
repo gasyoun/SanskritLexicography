@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §482) whatever its section, so existing numbers never shift; when a finding is later
+(currently §486) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -60,6 +60,10 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§473. OCR the canonical page files themselves — mapping a third-party OCR of "the same" scan onto them loses to offset drift, thumbnail decoys, and digit aliasing](#473-ocr-the-canonical-page-files-themselves--mapping-a-third-party-ocr-of-the-same-scan-onto-them-loses-to-offset-drift-thumbnail-decoys-and-digit-aliasing) — the DLI vol-2 leaf offset drifts +48→+20 and verse-number anchors alias across short sargas; tesseract-5 `san` on the Cologne pages' own embedded full-res images closed the §470 vols-2/4/uk gap (e-text 10,225→19,852 vv, all 672 sargas) with zero mapping risk. Take the LARGEST embedded image, never `get_images()[0]` (thumbnail decoy); normalize `।।`→`॥` before ॥N॥ segmentation.
 - 🔴 [§480. A non-empty PDF text layer proves nothing — check the SCRIPT; and "extract the largest embedded image" breaks when the PDF CROPS a 2-up scan](#480-a-non-empty-pdf-text-layer-proves-nothing--check-the-script-and-extract-the-largest-embedded-image-breaks-when-the-pdf-crops-a-2-up-scan) — the ramayanabom page PDFs return ~1,100–2,300 chars each, all of it Latin garbage from a Latin-alphabet OCR of Devanagari; and each 1128×420 pt page embeds a 4700×3500 TWO-page scan it crops in half, so §473's largest-image rule silently OCRs two pages at once. Render the page instead. Amends §470 and §473 for the next edition.
 - 🔴 [§481. A corpus file's PRESENCE is not evidence of its contents — `07_ramayana-uttarakanda.jsonl` is Sanskrit-only CRITICAL-edition text under a "Southern/Leonov" label, and a handoff was minted off the filename](#481-a-corpus-files-presence-is-not-evidence-of-its-contents--07_ramayana-uttarakandajsonl-is-sanskrit-only-critical-edition-text-under-a-southernleonov-label-and-a-handoff-was-minted-off-the-filename) — 2,690 `sa` segments and 0 `ru`; 99.9% of its verses align to the DCS critical edition at the identical `sarga.verse` while kāṇḍas 1/2/3/5 sit at 1–3%. H1705 was written to "bridge the Bombay numbering" for a book whose blocker is that no Russian uttarakāṇḍa exists.
+- 🟠 [§482. A count column with no stated provenance is not data — it is a ranking, and the difference decides whether you may divide by it](#482-a-count-column-with-no-stated-provenance-is-not-data-it-is-a-ranking-and-the-difference-decides-whether-you-may-divide-by-it) — a corpus count column whose provenance is unstated supports a ranking but not a rate — check before dividing by it.
+- 🔴 [§483. A resolver that fails closed is a gap; one that fails *open* is a wrong answer — and only the second is an integrity defect](#483-a-resolver-that-fails-closed-is-a-gap-one-that-fails-open-is-a-wrong-answer-and-only-the-second-is-an-integrity-defect) — a resolver that returns nothing is a gap; one that returns the wrong thing is an integrity defect — only the second corrupts downstream data.
+- 🔴 [§484. A quarter of the DCS nominal mass has no case at all — `feat_case='Cpd'` is a compound member, not a ninth case](#484-a-quarter-of-the-dcs-nominal-mass-has-no-case-at-all-feat_casecpd-is-a-compound-member-not-a-ninth-case) — 724,676 of 2,996,410 NOUN/ADJ tokens are `feat_case='Cpd'` compound members with no case, and 8,542 more are untagged — a "case distribution" is wrong whether it silently includes them or silently drops them.
+- 🟡 [§485. The 2021-sourced "Nom.Sg = 34.6% of nominal forms, dual < 1% everywhere" does not reproduce on DCS-2026 — and the second half only survives read per cell](#485-the-2021-sourced-nomsg-346-of-nominal-forms-dual-1-everywhere-does-not-reproduce-on-dcs-2026-and-the-second-half-only-survives-read-per-cell) — recomputed on DCS-2026: Nom.Sg 33.7% (not 34.6%), dual 2.07% pooled / 0.91% at the largest cell — a non-reproduction, not a refutation, since the 2021 denominator is unstated.
 - 🔴 [§471. A corpus-candidate matcher keyed on a dictionary's OWN bibliographic prose will bury its biggest wins in the "no corpus side exists" class](#471-a-corpus-candidate-matcher-keyed-on-a-dictionarys-own-bibliographic-prose-will-bury-its-biggest-wins-in-the-no-corpus-side-exists-class--pwgs-pāṇini-and-manu-41910-citations-sat-in-dcs-lacks) — a `Verzeichniss der Abkürzungen` names works by author in the editor's language, not by the Sanskrit title a corpus indexes; PWG's Pāṇini and Manu (41,910 citations) sat in `DCS-LACKS` until matched on the work, not the prose.
 - 🔴 [§472. Choosing a confidence tier ONCE PER SENSE and then stamping it on many passages inflates the strongest tier](#472-choosing-a-confidence-tier-once-per-sense-and-then-stamping-it-on-many-passages-inflates-the-strongest-tier--413-of-h1670s-exact-verse-rows-were-chapter-level) — 4.13% of H1670's exact-verse rows were chapter-level addresses; let the level travel with the passage, and grep the strongest tier for the address shape it is supposed to exclude.
 - 🔴 [§468. PWG's plain `R.` is a THREE-edition composite](#468-pwgs-plain-r-is-a-three-edition-composite--books-36-carry-gorresio-bengal-recension-numbering-so-keying-them-into-a-southern-recension-text-silently-returns-the-wrong-verse) — books 1–2 cite Schlegel, books 3–6 Gorresio (Bengal recension), book 7 Bombay (pwgbib 1.247; store sarga maxima 79/63/94 = Gorresio's counts). `citation_tm` had returned the wrong verse's RU silently for ~900 in-range R. 3/5 refs; books 3–6 now `unmapped_locus_scheme` until the Gorresio↔Southern concordance validates (H1656).
@@ -4301,3 +4305,48 @@ fix queued as [H1714](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1714
 per-directory table: [`scan_target_audit.tsv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/data/pwg_scan_index_tracker/scan_target_audit.tsv).
 
 _27-07-2026 · [H1706](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1706-Opus_csl-observatory_pwg-scan-index-tracker-reuse_26.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+
+### §484. A quarter of the DCS nominal mass has no case at all — `feat_case='Cpd'` is a compound member, not a ninth case
+
+🔴 **NOUN + ADJ = 2,996,410 tokens; only 2,263,192 (75.5%) carry a case. 724,676 (24.2%) are
+`feat_case='Cpd'`, and 8,542 (0.3%) carry no case tag.**
+`Cpd` marks a token's membership in a compound, where it is caseless by construction; 733,218
+NOUN/ADJ tokens likewise have `feat_number IS NULL`, almost exactly the same set. So a "case
+distribution over the DCS nominals" is wrong in both directions: include `Cpd` and a quarter of
+the mass is counted as a case it does not have; drop it silently and the reader is shown 75.5%
+of the nominal layer as if it were all of it.
+
+`Evidence:` the H1472 nominal grid, built over the pinned master (`04e0778`). Per-class the
+share varies sharply — `-a` 512,037 `Cpd` against 1,467,730 cased (25.9%), `-in` 5,115 against
+47,676 (9.7%) — so the correction is not a constant that can be applied after the fact.
+
+`So:` state the three buckets and assert they sum to the universe. Any nominal slice owes
+`grid + Cpd + untagged == COUNT(*)`; a query that returns only the grid has not measured the
+nominal layer, it has measured the case-bearing part of it. The same discipline that makes
+E46's verbal cells honest applies here — and the assertion is not decorative: it is what caught
+a NULL-logic complement silently dropping the 8,542 untagged tokens from *both* sides of the
+split (the infra form of that trap is [Uprava FINDINGS §218](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)).
+
+_27-07-2026 · [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md) · [`reports/paradigm_nominal_build.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/paradigm_nominal_build.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §485. The 2021-sourced "Nom.Sg = 34.6% of nominal forms, dual < 1% everywhere" does not reproduce on DCS-2026 — and the second half only survives read per cell
+
+🟡 **Measured on the 2026 master over the 2,263,192-token cased grid: Nom.Sg = 761,605 =
+33.7%. Dual pooled across all eight cases = 46,909 = 2.07%; the largest single dual cell
+(Nom.Dual, 20,590) = 0.91%.**
+Both numbers have been quoted for a year from a 2021 `cs.csv` note carried in VisualDCS'
+`roadmap.md` and re-printed on its landing page. The first does not reproduce. The second
+reproduces only under the per-cell reading — pooled, the dual is more than twice the claimed
+ceiling, and "dual < 1%" is the kind of claim a reader will apply to the category, not the cell.
+
+`Evidence:` recomputed 27-07-2026 in the H1472 build report, denominator stated explicitly.
+The residual gap on the first figure is not diagnosed here: the 2021 note does not say whether
+its denominator included `Cpd` members (§482), and no attempt was made to reconstruct the 2021
+computation — so this is a non-reproduction, not a refutation of the 2021 number on its own
+terms.
+
+`So:` a corpus statistic quoted without its denominator is not re-checkable, and one quoted
+across a corpus vintage is not portable. When re-printing an inherited figure, restate the
+denominator and the vintage or drop the figure.
+
+_27-07-2026 · [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md) · [`reports/paradigm_nominal_build.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/paradigm_nominal_build.md) · Opus 5 1M `claude-opus-5[1m]`_
