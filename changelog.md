@@ -14,6 +14,15 @@ not an error.
 
 ## [Unreleased]
 
+## [1.91.0] — 2026-07-27
+
+### Fixed
+- **[`FEATURES_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md) §II — three wrong Repo cells, found by the H1475 consolidation spike and repaired under H1722** (Opus 5 1M `claude-opus-5[1m]`, 27-07-2026). `PUI` and `IEG` were marked "csl-orig only" and `PD` linked a Cologne **scan** where a repo link belongs — all three repos exist ([PUI](https://github.com/sanskrit-lexicon/PUI), [IEG](https://github.com/sanskrit-lexicon/IEG), [PD](https://github.com/sanskrit-lexicon/PD), the last with 31 files of real OCR-comparison work). Not a cosmetic defect: the "csl-orig only" marker is the field the **13 repo-less dictionaries** count is derived from, so a wrong cell silently moves that figure.
+- **All 44 Repo cells re-verified mechanically against the live org, not just the three known-bad** — `gh repo list sanskrit-lexicon` + `gasyoun`, every cell's link resolved or its "csl-orig only" claim confirmed. Result: **3 defective, 41 correct**, and 0 after the fix. The audit is re-runnable rather than a one-off eyeball.
+
+### Changed
+- **The Repo column now says what it means.** A dictionary repo in this org is normally an **issue venue**, not a data repo — the text lives in [csl-orig](https://github.com/sanskrit-lexicon/csl-orig) either way — so `csl-orig only` (no repo of any kind, 13 dictionaries) is now distinguished from "— venue only" (repo exists, holds only issues and a Pages shell: `PUI`, `IEG`), with the verification date recorded and a pointer to the [consolidation spike](https://github.com/gasyoun/Uprava/blob/main/CONSOLIDATION_SPIKE_REPOLESS_DICTIONARIES_THIN_VIEW_REPOS_2026Q3.md) that enumerates the 13.
+
 ## [1.90.1] — 2026-07-27
 
 ### Fixed
