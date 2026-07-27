@@ -1,6 +1,6 @@
 # GAPS — the Sanskrit-data known-unknowns frontier
 
-_Created: 08-07-2026 · Last updated: 11-07-2026_
+_Created: 08-07-2026 · Last updated: 27-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is what is *known*. This file is its **negative space** — the act FINDINGS cannot hold: **not-yet-knowing**, the frontier of things we have explicitly NOT measured. The moment a gap is measured, it **graduates** to a FINDINGS row (delete it here, cite the finding there). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/GAPS.md`](https://github.com/gasyoun/Uprava/blob/main/GAPS.md).
 
@@ -131,6 +131,25 @@ Blocker: ответить может только М. Леонов — зада�
 How to close: письмо Леонова → либо влить присланные стихи (агентная сессия), либо пометить «сознательное решение» в аппарате — и строка градуирует в FINDINGS/BOOK_BUILD_REPORT.
 > **Source:** ✍️ H497 role-guide session, 10-07-2026 (Fable 5 `claude-fable-5`); registered via /artifact-propagate epistemic pass 11-07-2026.
 
+### §14. Which `-ī` stems are the monosyllabic type, and which `-at` citations are genuine `-ant` stems?
+🟠 ✍️ **We do NOT know, from DCS alone, how to split two declension classes the corpus pools.**
+Why it matters: the `-ī` bucket of the nominal grid (E51, 65,332 tokens) mixes the polysyllabic devī/nadī type with the monosyllabic śrī/strī/dhī type, which takes different endings in the strong cases — so its per-cell ending list is a blend of two paradigms presented as one. The `-ant` bucket (48,074) likewise pools `-ant`/`-vant`/`-mant` with the master's own `-at`/`-vat`/`-mat` citations of the same stems (`bhagavant` and `bhagavat` are two `lemma_id`s), which is harmless for counting but hides how many distinct stems there really are.
+Blocker: method/signal, not data — DCS tags case, number and gender and nothing about stem shape or syllable count; the citation form is all there is, and it is ambiguous exactly where the split matters. H1472 deliberately made no guess rather than encode a plausible-looking rule.
+How to close: bring an external lexical signal — syllable count off a transliteration-aware segmenter for the `-ī` split, and a dictionary class tag (MW/PWG grammar field, or `lemma.grammar` extended) for the `-at`/`-ant` merge. Then re-bucket, re-run the G2 reconciliation, and the row graduates to a FINDINGS measurement of how big each true class is.
+> **Source:** ✍️ [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md), 27-07-2026 (Opus 5 `claude-opus-5[1m]`); registered via /artifact-propagate epistemic pass.
+
 ---
+
+### §13. No Russian Uttarakāṇḍa (or Kiṣkindhā, or Yuddha) exists — 1,765 PWG `R.` book-7 citations wait on a translator
+
+🟠 ✍️ **We have NOT got, and cannot compute, a Russian translation of record for Rāmāyaṇa kāṇḍas 4, 6 and 7.**
+
+Why it matters: `citation_tm` reuse is live for `R.` books 1–2 (Schlegel, direct) and 3–6 (Gorresio, via the H1656/H1689 content concordance), but every book-7 lookup — **1,765** plain `R.` citations in the full digitisation, 4.5% of the `R.` mass — returns `ru-translation-unpublished`. Kāṇḍa 6 is the sharpest case: H1656's map already pairs 2,295 Gorresio verses with yuddha loci, so the day a Russian yuddhakāṇḍa is ingested, 288 store references become reusable with **no further alignment work**.
+
+Blocker: **external and human** — not data, not method. Gryntser's academic translation stopped after book 3; Leonov's covers Sundara. [RussianRamayana](https://github.com/gasyoun/RussianRamayana) `data/project-status.json`: book IV `blocked` (awaiting Serebryany's introduction), V `in-progress` (manuscript ~2027), VI `draft-ready` (~2029). Book VII is not in the pipeline.
+
+How to close: watch the RussianRamayana project status; on ingest, key the RU against the **vulgate** numbering PWG cites rather than the critical text currently in `07_ramayana-uttarakanda.jsonl` ([CONTRADICTIONS §9](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)) — that choice decides whether any Bombay concordance is needed at all ([DEAD_ENDS §13](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md)).
+> **Source:** [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/COVERED_TEXTS_RU.md` § kāṇḍas 4/6/7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/COVERED_TEXTS_RU.md) · 27-07-2026 · Opus 5 1M `claude-opus-5[1m]`
+
 
 _Dr. Mārcis Gasūns_

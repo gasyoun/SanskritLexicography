@@ -7,10 +7,10 @@ This is the LOD upgrade of the flat one-way string export in
 (``https://example.org/pwg/ru/``), string-only ``ontolex:usage`` and no query
 surface, this emitter adds the five things a real LOD graph needs:
 
-  1. a real, dereferenceable, **configurable** IRI namespace (``--base-iri``;
-     ships defaulting to a documented w3id PURL placeholder pending the
-     publication-domain @DECIDE -- IRIs are forever, so the domain is a human
-     ruling, not a guess baked into code);
+  1. a real, **configurable** IRI namespace (``--base-iri``; defaults to the
+     ruled w3id namespace, see LOD_GRAPH.md "Namespace ruling". The PURL is not
+     registered yet, so the IRIs are permanent identifiers that do not yet
+     resolve -- do not claim dereferenceability until it is);
   2. ``vartrans`` sense<->sense relations, fed from ``pwg_ru_relationships.jsonl``
      (restate / add / relocate / correct, abridging vs additive, per layer);
   3. PROV-O evidence grades on every sense (approved / human-reviewed /
@@ -55,10 +55,14 @@ DEFAULT_STRATUM = os.path.join(HERE, 'pwg_sense_stratum.jsonl')
 DEFAULT_FREQ = os.path.join(HERE, 'dcs_freq.json')
 DEFAULT_RELEASE = os.path.join(ROOT, 'release')
 
-# Placeholder publication domain. w3id.org is the community PURL redirector; the
-# real registration/DNS target is an open @DECIDE (see LOD_GRAPH.md). Overridable
-# with --base-iri so nothing downstream hard-codes a domain we do not yet own.
-DEFAULT_BASE = 'https://w3id.org/sanskrit-lexicon/pwg-ru/'
+# Ruled namespace (27-07-2026, issue #809; rationale in LOD_GRAPH.md "Namespace
+# ruling"). `repwg` = "rePWG", a *re-edition* of PWG -- deliberately not `pwg`,
+# which would claim to BE the Cologne text, and not the superseded `pwg-ru`,
+# which named a language four of the five graphs do not carry. w3id.org is the
+# community PURL redirector, so a future project domain becomes the redirect
+# target behind this IRI and no identifier ever changes. NOT yet registered:
+# these resolve to nothing today. Overridable with --base-iri.
+DEFAULT_BASE = 'https://w3id.org/sanskrit-lexicon/repwg/'
 
 APPROVED_STATUSES = {'approved', 'human_reviewed'}
 

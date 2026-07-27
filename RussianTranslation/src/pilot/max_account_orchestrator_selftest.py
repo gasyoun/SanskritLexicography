@@ -14,8 +14,48 @@ import run_observability as ro
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+# Isolation from production data, established before any repo import (several modules
+# resolve store/coordinator constants at import time). See selftest_isolation.py.
+if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from selftest_isolation import guard as _isolation_guard  # noqa: E402
+_isolation_guard()
+
 import max_account_orchestrator as m
 from execution_contract import config_dir_fingerprint
+
+
+class MemoryCallLedger:
+    """Selftest-only reservation authority for fake probe runners."""
+
+    def __init__(self):
+        self.next_id = 0
+        self.finalized = {}
+
+    def reserve(self, *_args, **_kwargs):
+        self.next_id += 1
+        return 'test-probe-%d' % self.next_id
+
+    def finalize(self, reservation, telemetry):
+        self.finalized[reservation] = dict(telemetry)
+
+
+def enqueue_fixture(db_path, external_id, cwd, output_path, max_attempts=3):
+    """Insert an inert legacy row for scheduler-state tests without a CLI escape."""
+    con = m.connect(db_path)
+    with con:
+        con.execute(
+            'INSERT INTO jobs(external_id,argv_json,cwd,output_path,max_attempts) '
+            'VALUES(?,?,?,?,?)',
+            (external_id, '[]', os.path.abspath(cwd),
+             os.path.abspath(output_path), max_attempts))
+    con.close()
+
+
+def finish_fixture_worker(db_path, account, config_dir, job, timeout, *_args, **_kwargs):
+    """Exercise scheduler fan-out without retaining an arbitrary subprocess path."""
+    m.finish(db_path, job['id'], 'done', 0)
+    return 'done'
 
 
 def main():
@@ -137,9 +177,9 @@ def main():
         m.main(['--db', scoped_db, 'init', '--account', 'acc=' + os.path.join(td, 'acc'),
                 '--skip-profile-check'])
         for external_id in ('historic-failed', 'current'):
-            m.main(['--db', scoped_db, 'enqueue', '--external-id', external_id,
-                    '--argv-json', json.dumps([sys.executable, '-c', 'print(1)']), '--cwd', td,
-                    '--output', os.path.join(td, external_id + '.json')])
+            enqueue_fixture(
+                scoped_db, external_id, td,
+                os.path.join(td, external_id + '.json'))
         con = m.connect(scoped_db)
         with con:
             con.execute("UPDATE jobs SET state='failed' WHERE external_id='historic-failed'")
@@ -156,7 +196,7 @@ def main():
 
     # A profile-bound v2 manifest is a scheduler constraint, not merely a worker-time check.
     # Register accounts in the opposite order from the manifest owner and ask the wrong account
-    # first: it must not reserve the paid job. Generic argv jobs intentionally remain portable.
+    # first: it must not reserve the paid job.
     with tempfile.TemporaryDirectory() as td:
         bound_db = os.path.join(td, 'profile-bound.sqlite')
         acc1_dir = os.path.join(td, 'acc1')
@@ -179,10 +219,18 @@ def main():
                                      'validation_method': 'audit_window+final_schema',
                                      'model_identifier': 'claude-sonnet-5'},
                        'key_provenance': {'bound-key': 'real'}}, f)
+        bound_preflight = os.path.join(artifacts, 'preflight.json')
+        with open(bound_preflight, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.performance_preflight.v1',
+                       'selected_keys': ['bound-key'],
+                       'cost_gate': {'over_ceiling': False}}, f)
         with open(os.path.join(coord, 'state.json'), 'w', encoding='utf-8') as f:
             json.dump({'leases': [{'id': 'bound-acc1', 'state': 'prepared',
                                    'artifact_dir': artifacts,
-                                   'execution_manifest': manifest_path}]}, f)
+                                   'execution_manifest': manifest_path,
+                                   'preflight_path': bound_preflight,
+                                   'preflight_sha256':
+                                       m.sha256_path(bound_preflight)}]}, f)
         m.main(['--db', bound_db, 'import-coordinator', '--coord-dir', coord,
                 '--cwd', td, '--lease-id', 'bound-acc1'])
         con = sqlite3.connect(bound_db)
@@ -198,15 +246,72 @@ def main():
         except SystemExit as exc:
             assert 'no eligible/probed account: acc1' in str(exc), exc
 
-        m.main(['--db', bound_db, 'enqueue', '--external-id', 'generic',
-                '--argv-json', json.dumps(['x']), '--cwd', td,
-                '--output', os.path.join(td, 'generic.json')])
-        generic = m.claim(bound_db, 'acc2')
-        assert generic is not None and generic['external_id'] == 'generic'
-        m.finish(bound_db, generic['id'], 'done', 0)
         bound = m.claim(bound_db, 'acc1')
         assert bound is not None and bound['external_id'] == 'bound-acc1'
-    print('  profile-bound claims: wrong/missing owner refused loudly; generic job remains portable')
+    print('  profile-bound claims: wrong/missing owner refused loudly')
+
+    # Arbitrary argv is not a securable paid-call boundary: a neutral wrapper can invoke
+    # anything. Refuse every generic enqueue and every legacy generic row before spawn.
+    with tempfile.TemporaryDirectory() as td:
+        guard_db = os.path.join(td, 'generic-guard.sqlite')
+        m.main(['--db', guard_db, 'init',
+                '--account', 'acc=' + os.path.join(td, 'acc'), '--skip-profile-check'])
+        generic_argvs = [
+            ['Claude', '-p', 'forbidden'],
+            ['claude-code', '-p', 'forbidden'],
+            [sys.executable, os.path.join(td, 'headless_worker.py')],
+            [sys.executable, os.path.join(td, 'latency_payload_sweep.py')],
+            [sys.executable, os.path.join(td, 'H963_c4_gate0_probe.py')],
+            [sys.executable, os.path.join(td, 'model_wrapper.py')],
+            ['node', os.path.join(td, 'model_wrapper.js')],
+            [os.path.join(td, 'renamed.exe'), '-p', 'request'],
+            [sys.executable, '-c', 'print("harmless")'],
+        ]
+        for index, argv in enumerate(generic_argvs):
+            try:
+                m.main(['--db', guard_db, 'enqueue',
+                        '--external-id', 'enqueue-generic-%d' % index,
+                        '--argv-json', json.dumps(argv), '--cwd', td,
+                        '--output', os.path.join(td, 'enqueue-generic-%d.json' % index)])
+                raise AssertionError('generic argv reached enqueue: %r' % argv)
+            except SystemExit as exc:
+                assert 'generic argv jobs are disabled' in str(exc), (argv, exc)
+        con = m.connect(guard_db)
+        assert con.execute(
+            "SELECT count(*) FROM jobs WHERE external_id LIKE "
+            "'enqueue-generic-%'").fetchone()[0] == 0
+        with con:
+            for index, argv in enumerate(generic_argvs):
+                con.execute(
+                    'INSERT INTO jobs(external_id,argv_json,cwd,output_path,max_attempts) '
+                    'VALUES(?,?,?,?,1)',
+                    ('legacy-generic-%d' % index, json.dumps(argv), td,
+                     os.path.join(td, 'legacy-generic-%d.json' % index)))
+        con.close()
+        original_runner = m.run_tree_kill
+        spawned = []
+
+        def reject_spawn(*args, **kwargs):
+            spawned.append((args, kwargs))
+            raise AssertionError('forbidden generic argv was spawned')
+
+        m.run_tree_kill = reject_spawn
+        try:
+            for index in range(len(generic_argvs)):
+                job = m.claim(guard_db, 'acc')
+                assert job and job['external_id'] == 'legacy-generic-%d' % index, job
+                assert m.run_claimed(
+                    guard_db, 'acc', os.path.join(td, 'acc'), job, 5) == 'failed'
+        finally:
+            m.run_tree_kill = original_runner
+        assert not spawned
+        con = m.connect(guard_db)
+        assert con.execute(
+            "SELECT count(*) FROM jobs WHERE external_id LIKE 'legacy-generic-%' "
+            "AND state='failed' AND failure_class='configuration'").fetchone()[0] == len(
+                generic_argvs)
+        con.close()
+    print('  generic argv guard: all arbitrary enqueues + legacy rows refuse before spawn')
 
     # Required profile selection happens before the standard three-account concurrency slice.
     # Otherwise acc4 is permanently hidden behind three alphabetically earlier idle accounts.
@@ -258,11 +363,12 @@ def main():
         m.main(['--db', db, 'init', '--account', 'acc1=' + os.path.join(td, 'a1'),
                 '--account', 'acc2=' + os.path.join(td, 'a2'), '--skip-profile-check'])
         for n in range(2):
-            out = os.path.join(td, 'out%d.json' % n)
-            argv = [sys.executable, '-c', 'import os; print(os.environ["CLAUDE_CONFIG_DIR"])']
-            m.main(['--db', db, 'enqueue', '--external-id', 'j%d' % n,
-                    '--argv-json', json.dumps(argv), '--cwd', td, '--output', out])
-        m.main(['--db', db, 'run-once', '--timeout', '10'])
+            enqueue_fixture(
+                db, 'j%d' % n, td, os.path.join(td, 'out%d.json' % n))
+        for account in ('acc1', 'acc2'):
+            job = m.claim(db, account)
+            assert job is not None
+            m.finish(db, job['id'], 'done', 0)
         con = sqlite3.connect(db)
         assert con.execute("select count(*) from jobs where state='done'").fetchone()[0] == 2
         con.execute("insert into jobs(external_id,argv_json,cwd,output_path,state) values('stale','[]',?,?,'in_progress')", (td, os.path.join(td, 'x')))
@@ -275,52 +381,6 @@ def main():
         con.close()
         assert m.parse_reset('rate limit reset_at=1999999999', now=1) == 1999999999
         assert m.parse_reset('429 too many requests', now=100) == 18100
-
-        timeout_out = os.path.join(td, 'timeout.json')
-        m.main(['--db', db, 'enqueue', '--external-id', 'timeout', '--argv-json',
-                json.dumps([sys.executable, '-c', 'import time;time.sleep(2)']),
-                '--cwd', td, '--output', timeout_out, '--max-attempts', '1'])
-        m.main(['--db', db, 'run-once', '--timeout', '1'])
-        con = sqlite3.connect(db)
-        assert con.execute("select state,failure_class from jobs where external_id='timeout'").fetchone() == ('failed', 'timeout')
-        con.close()
-
-        fail_out = os.path.join(td, 'fail.json')
-        m.main(['--db', db, 'enqueue', '--external-id', 'retry', '--argv-json',
-                json.dumps([sys.executable, '-c', 'raise SystemExit(7)']),
-                '--cwd', td, '--output', fail_out, '--max-attempts', '2'])
-        m.main(['--db', db, 'run-once', '--timeout', '10'])
-        m.main(['--db', db, 'run-once', '--timeout', '10'])
-        con = sqlite3.connect(db)
-        state, attempts = con.execute("select state,attempts from jobs where external_id='retry'").fetchone()
-        assert (state, attempts) == ('failed', 2)
-        con.close()
-
-        crash_out = os.path.join(td, 'crash-after-output.json')
-        code = ('import pathlib,sys;pathlib.Path(sys.argv[1]).write_text("{}",encoding="utf-8");'
-                'raise SystemExit(7)')
-        m.main(['--db', db, 'enqueue', '--external-id', 'crash-after-output', '--argv-json',
-                json.dumps([sys.executable, '-c', code, crash_out]), '--cwd', td,
-                '--output', crash_out, '--max-attempts', '1'])
-        m.main(['--db', db, 'run-once', '--timeout', '10'])
-        assert os.path.exists(crash_out)
-        con = sqlite3.connect(db)
-        assert con.execute("select state from jobs where external_id='crash-after-output'").fetchone()[0] == 'failed'
-        con.close()
-
-        rate_out = os.path.join(td, 'rate.json')
-        m.main(['--db', db, 'enqueue', '--external-id', 'limited', '--argv-json',
-                json.dumps([sys.executable, '-c',
-                            'import sys;sys.stderr.write("429 rate limit reset_at=1999999999");sys.exit(21)']),
-                '--cwd', td, '--output', rate_out])
-        m.main(['--db', db, 'run-once', '--timeout', '10'])
-        con = sqlite3.connect(db)
-        state, failure = con.execute("select state,failure_class from jobs where external_id='limited'").fetchone()
-        assert (state, failure) == ('pending', 'rate_limit')
-        assert con.execute("select count(*) from accounts where parked_until=1999999999").fetchone()[0] == 1
-        con.execute("delete from jobs where external_id='limited'")
-        con.execute("update accounts set parked_until=0")
-        con.commit(); con.close()
 
         coord = os.path.join(td, 'coord'); artifacts = os.path.join(coord, 'artifacts', 'lease1')
         os.makedirs(artifacts)
@@ -337,10 +397,17 @@ def main():
                                      'validation_method': 'audit_window+final_schema',
                                      'model_identifier': 'claude-sonnet-5'},
                        'key_provenance': {'unique': 'real'}}, f)
+        preflight = os.path.join(artifacts, 'preflight.json')
+        with open(preflight, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.performance_preflight.v1',
+                       'selected_keys': ['unique'],
+                       'cost_gate': {'over_ceiling': False}}, f)
         with open(os.path.join(coord, 'state.json'), 'w', encoding='utf-8') as f:
             json.dump({'leases': [{'id': 'lease1', 'state': 'prepared',
                                    'artifact_dir': artifacts,
-                                   'execution_manifest': manifest}]}, f)
+                                   'execution_manifest': manifest,
+                                   'preflight_path': preflight,
+                                   'preflight_sha256': m.sha256_path(preflight)}]}, f)
         m.main(['--db', db, 'import-coordinator', '--coord-dir', coord, '--cwd', td,
                 '--lease-id', 'lease1'])
         con = sqlite3.connect(db)
@@ -365,14 +432,24 @@ def main():
                                      'validation_method': 'audit_window+final_schema',
                                      'model_identifier': 'claude-sonnet-5'},
                        'key_provenance': {'rqkey': 'real'}}, f)
+        rq_preflight = os.path.join(rq_dir, 'preflight.json')
+        with open(rq_preflight, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.performance_preflight.v1',
+                       'selected_keys': ['rqkey'],
+                       'cost_gate': {'over_ceiling': False}}, f)
         with open(os.path.join(coord, 'state.json'), 'w', encoding='utf-8') as f:
             json.dump({'leases': [{'id': 'lease1', 'state': 'requeue_prepared',
                                    'artifact_dir': artifacts,
                                    'requeue_attempt': 1, 'requeue_kind': 'transient',
                                    'execution_manifest': rq_manifest,
+                                   'preflight_path': rq_preflight,
+                                   'preflight_sha256': m.sha256_path(rq_preflight),
                                    'current_attempt': {'number': 1, 'kind': 'transient',
                                                        'artifact_dir': rq_dir,
-                                                       'execution_manifest': rq_manifest}}]}, f)
+                                                       'execution_manifest': rq_manifest,
+                                                       'preflight': rq_preflight,
+                                                       'preflight_sha256':
+                                                           m.sha256_path(rq_preflight)}}]}, f)
         ns = types.SimpleNamespace(db=db, coord_dir=coord, cwd=td,
                                    lease_id='lease1', max_attempts=2)
         rq_id = m.cmd_import_requeue(ns)
@@ -451,6 +528,11 @@ def main():
         m.live_probe('cfg', model='claude-haiku-4-5'); assert False, 'exact-model gate missing'
     except SystemExit as e:
         assert 'exact generation model' in str(e)
+    try:
+        m.live_probe('cfg')
+        assert False, 'paid live probe accepted no reservation ledger'
+    except ValueError as e:
+        assert 'call reservation ledger' in str(e)
     _pc = m._probe_call
     try:
         seen = []
@@ -458,7 +540,7 @@ def main():
         def fake(seq):
             it = iter(seq)
 
-            def _mock(config_dir, claude, payload_bytes, model):
+            def _mock(config_dir, claude, payload_bytes, model, *_args, **_kwargs):
                 v = next(it)
                 seen.append(v)
                 return v
@@ -468,7 +550,9 @@ def main():
         seen.clear(); m._probe_call = fake([(99999, 'success', 120), (29999, 'success', 120)])
         with tempfile.TemporaryDirectory() as td:
             ev = os.path.join(td, 'e.jsonl')
-            assert m.live_probe('cfg', events_path=ev, run_id='r', account='a') == 29999
+            assert m.live_probe(
+                'cfg', events_path=ev, run_id='r', account='a',
+                call_reservation=MemoryCallLedger()) == 29999
             rows = ro.read_events(ev)
             assert len([r for r in rows if r.get('purpose') == 'warmup']) == 1
             assert len([r for r in rows if r.get('purpose') == 'measured']) == 1
@@ -479,21 +563,21 @@ def main():
         # measured 30000 -> honest NO-GO (no retry)
         seen.clear(); m._probe_call = fake([(9000, 'success', 120), (30000, 'success', 120)])
         try:
-            m.live_probe('cfg'); assert False, '30000 ms measured must NO-GO'
+            m.live_probe('cfg', call_reservation=MemoryCallLedger()); assert False, '30000 ms measured must NO-GO'
         except SystemExit as e:
             assert 'health ceiling' in str(e)
         assert len(seen) == 2
         # warm-up auth failure -> immediate STOP, measured NEVER starts
         seen.clear(); m._probe_call = fake([(9000, 'auth', 0)])
         try:
-            m.live_probe('cfg'); assert False, 'warm-up auth must STOP'
+            m.live_probe('cfg', call_reservation=MemoryCallLedger()); assert False, 'warm-up auth must STOP'
         except SystemExit as e:
             assert 'warm-up' in str(e)
         assert len(seen) == 1                           # measured never started
         # measured malformed (output-size/validity) -> honest NO-GO
         seen.clear(); m._probe_call = fake([(9000, 'success', 120), (9000, 'malformed', 3)])
         try:
-            m.live_probe('cfg'); assert False, 'malformed measured must NO-GO'
+            m.live_probe('cfg', call_reservation=MemoryCallLedger()); assert False, 'malformed measured must NO-GO'
         except SystemExit:
             pass
         assert len(seen) == 2
@@ -512,13 +596,17 @@ def main():
 
     def _cls(stdout='', rc=0, stderr=''):
         _out(stdout, rc, stderr)
-        return m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL)[1]
+        return m._probe_call(
+            'cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+            call_reservation=MemoryCallLedger())[1]
 
     try:
         # (1) observed successful result-STRING wrapper (result is a JSON string) + Cyrillic body
         w1 = '{"type":"result","subtype":"success","is_error":false,"result":"{\\"ok\\":true}","usage":{"n":"да"}}'
         _out(w1)
-        lat, cls, ob = m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL)
+        lat, cls, ob = m._probe_call(
+            'cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+            call_reservation=MemoryCallLedger())
         assert cls == 'success', cls
         assert ob == len(w1.encode('utf-8')) and ob > len(w1)     # encoded bytes, not char count
         # (2) successful structured_output wrapper
@@ -559,7 +647,9 @@ def main():
 
     try:
         m.run_tree_kill = _capture
-        _lat, _cls2, _ob = m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL)
+        _lat, _cls2, _ob = m._probe_call(
+            'cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+            call_reservation=MemoryCallLedger())
         assert _cls2 == 'success', _cls2
         p = cap['input']
         # one clear, completable instruction: return exactly the schema object and nothing else
@@ -603,7 +693,7 @@ def main():
     with tempfile.TemporaryDirectory() as td:
         mk = os.path.join(td, 'm')
         grand = ('import time,sys,os;open(sys.argv[1]+".pid3","w").write(str(os.getpid()));'
-                 'time.sleep(6);open(sys.argv[1]+".done3","w").write("1")')
+                 'time.sleep(12);open(sys.argv[1]+".done3","w").write("1")')
         child = ('import subprocess,sys,os,time;open(sys.argv[1]+".pid2","w").write(str(os.getpid()));'
                  'subprocess.Popen([sys.executable,"-c",%r,sys.argv[1]]);time.sleep(30)') % grand
         parent = ('import subprocess,sys,os,time;open(sys.argv[1]+".pid1","w").write(str(os.getpid()));'
@@ -621,7 +711,7 @@ def main():
                 return False
 
         try:
-            m.run_tree_kill([sys.executable, '-c', parent, mk], timeout=3, capture_output=True)
+            m.run_tree_kill([sys.executable, '-c', parent, mk], timeout=5, capture_output=True)
             assert False, 'expected the hanging probe tree to TimeoutExpired'
         except subprocess.TimeoutExpired:
             pass
@@ -643,9 +733,7 @@ def main():
         m.main(['--db', db, 'init', '--account', 'acc1=' + os.path.join(td, 'a1'),
                 '--account', 'acc2=' + os.path.join(td, 'a2'), '--skip-profile-check'])
         for n in range(2):
-            m.main(['--db', db, 'enqueue', '--external-id', 'g%d' % n,
-                    '--argv-json', json.dumps(['x']), '--cwd', td,
-                    '--output', os.path.join(td, 'g%d.json' % n)])
+            enqueue_fixture(db, 'g%d' % n, td, os.path.join(td, 'g%d.json' % n))
         j1 = m.claim(db, 'acc1')
         assert j1 is not None                                   # acc1 claims one job
         assert m.claim(db, 'acc1') is None                      # acc1 already busy -> refused (D-G)
@@ -671,8 +759,7 @@ def main():
             db = os.path.join(td, 'race.sqlite')
             m.main(['--db', db, 'init', '--account', 'acc1=' + os.path.join(td, 'a1'), '--skip-profile-check'])
             for n in range(2):     # two pending jobs, one account -> only one may run at a time
-                m.main(['--db', db, 'enqueue', '--external-id', 'r%d' % n, '--argv-json', json.dumps(['x']),
-                        '--cwd', td, '--output', os.path.join(td, 'r%d.json' % n)])
+                enqueue_fixture(db, 'r%d' % n, td, os.path.join(td, 'r%d.json' % n))
             barrier = threading.Barrier(2)
             results = [None, None]
             errors = []
@@ -756,7 +843,7 @@ def main():
         def healthy(measured_by_cfg, warm_ms=99999):
             seen = set()
 
-            def _mock(config_dir, claude, payload_bytes, model):
+            def _mock(config_dir, claude, payload_bytes, model, *_args, **_kwargs):
                 if config_dir not in seen:
                     seen.add(config_dir)
                     return warm_ms, 'success', 120          # warm-up (EXCLUDED from latency census)
@@ -766,7 +853,7 @@ def main():
         def with_bad(measured_by_cfg, bad_cfg, warm_ms=99999):
             seen = set()
 
-            def _mock(config_dir, claude, payload_bytes, model):
+            def _mock(config_dir, claude, payload_bytes, model, *_args, **_kwargs):
                 first = config_dir not in seen
                 seen.add(config_dir)
                 if config_dir == bad_cfg:
@@ -783,7 +870,9 @@ def main():
         m._probe_call = healthy(measured)
         with tempfile.TemporaryDirectory() as td:
             ev = os.path.join(td, 'fleet.jsonl')
-            latencies = m.probe_fleet(accts, events_path=ev, run_id='rf')
+            latencies = m.probe_fleet(
+                accts, events_path=ev, run_id='rf',
+                call_reservation=MemoryCallLedger())
             assert latencies == {'acc1': 1000, 'acc2': 2000, 'acc3': 3000, 'acc4': 4000}, latencies
             rows = ro.read_events(ev)
             assert len([r for r in rows if r.get('purpose') == 'warmup']) == 4, 'one warm-up per account'
@@ -796,28 +885,37 @@ def main():
         # (e2) one NO-GO account STOPs the fleet by DEFAULT (STOP-on-any-NO-GO)
         m._probe_call = with_bad(measured, bad_cfg='c3')
         try:
-            m.probe_fleet(accts)
+            m.probe_fleet(accts, call_reservation=MemoryCallLedger())
             assert False, 'a NO-GO account must STOP the fleet by default'
         except SystemExit as exc:
             assert 'acc3' in str(exc) and 'fleet probe' in str(exc), exc
 
         # (e3) --drop-unhealthy opt-in: drop the NO-GO account, proceed on the healthy subset
         m._probe_call = with_bad(measured, bad_cfg='c3')
-        survivors = m.probe_fleet(accts, drop_unhealthy=True)
+        survivors = m.probe_fleet(
+            accts, drop_unhealthy=True,
+            call_reservation=MemoryCallLedger())
         assert survivors == {'acc1': 1000, 'acc2': 2000, 'acc4': 4000}, survivors
 
         # (f) N=1 REGRESSION: probe_fleet over a 1-element list == the old single-account live_probe.
-        m._probe_call = lambda config_dir, claude, payload_bytes, model: (5555, 'success', 120)
+        m._probe_call = lambda config_dir, claude, payload_bytes, model, *_args, **_kwargs: (
+            5555, 'success', 120)
         solo = [{'name': 'max1', 'config_dir': 'c1'}]
-        assert m.probe_fleet(solo) == {'max1': 5555}, 'N=1 must be a pure pass-through'
-        assert m.live_probe('c1') == 5555                 # the pre-N-profile single-account reading
-        assert m.probe_fleet(solo)['max1'] == m.live_probe('c1')   # value report['probe_latency_ms'] carries
+        assert m.probe_fleet(
+            solo, call_reservation=MemoryCallLedger()) == {'max1': 5555}, 'N=1 must be a pure pass-through'
+        assert m.live_probe(
+            'c1', call_reservation=MemoryCallLedger()) == 5555
+        assert (m.probe_fleet(
+                    solo, call_reservation=MemoryCallLedger())['max1'] ==
+                m.live_probe(
+                    'c1', call_reservation=MemoryCallLedger()))
     finally:
         m._probe_call = _pc
     print('  GAP5 probe_fleet: N=4 map + warm-ups excluded; NO-GO STOPs by default; --drop-unhealthy subset; N=1 == old live_probe')
 
-    # GAP #5 fair fan-out + all-done at N=4: 4 accounts claim 4 DISTINCT jobs in ONE run-once pass
-    # and every job reaches 'done' exactly once (echo jobs; --skip-profile-check; never credentials).
+    # GAP #5 fair fan-out + all-done at N=4: 4 accounts claim 4 DISTINCT inert scheduler
+    # fixtures in ONE run-once pass. The worker is replaced with an in-process state transition;
+    # no generic subprocess execution path exists.
     with tempfile.TemporaryDirectory() as td:
         db = os.path.join(td, 'fanout.sqlite')
         m.main(['--db', db, 'init',
@@ -825,12 +923,14 @@ def main():
                 '--account', 'acc2=' + os.path.join(td, 'a2'),
                 '--account', 'acc3=' + os.path.join(td, 'a3'),
                 '--account', 'acc4=' + os.path.join(td, 'a4'), '--skip-profile-check'])
-        argv = [sys.executable, '-c', 'import os; print(os.environ["CLAUDE_CONFIG_DIR"])']
         for n in range(4):
-            m.main(['--db', db, 'enqueue', '--external-id', 'fan%d' % n,
-                    '--argv-json', json.dumps(argv), '--cwd', td,
-                    '--output', os.path.join(td, 'fan%d.json' % n)])
-        m.main(['--db', db, 'run-once', '--timeout', '30'])
+            enqueue_fixture(db, 'fan%d' % n, td, os.path.join(td, 'fan%d.json' % n))
+        original_run_claimed = m.run_claimed
+        m.run_claimed = finish_fixture_worker
+        try:
+            m.main(['--db', db, 'run-once', '--timeout', '30'])
+        finally:
+            m.run_claimed = original_run_claimed
         con = sqlite3.connect(db)
         rows = con.execute("select external_id, assigned_acc, state from jobs order by id").fetchall()
         con.close()
@@ -850,14 +950,17 @@ def main():
                 '--account', 'acc2=' + os.path.join(td, 'a2'),
                 '--account', 'acc3=' + os.path.join(td, 'a3'),
                 '--account', 'acc4=' + os.path.join(td, 'a4'), '--skip-profile-check'])
-        argv = [sys.executable, '-c', 'import os; print(os.environ["CLAUDE_CONFIG_DIR"])']
         for n in range(4):
-            m.main(['--db', db, 'enqueue', '--external-id', 'oa%d' % n,
-                    '--argv-json', json.dumps(argv), '--cwd', td,
-                    '--output', os.path.join(td, 'oa%d.json' % n)])
+            enqueue_fixture(db, 'oa%d' % n, td, os.path.join(td, 'oa%d.json' % n))
         # dispatch restricted to the acc1/acc2 "probed" subset (acc3/acc4 == capped-out/unprobed).
-        m.cmd_run_once(m.argparse.Namespace(db=db, timeout=30, events=None, run_id=None,
-                                            claude_bin='claude', only_accounts={'acc1', 'acc2'}))
+        original_run_claimed = m.run_claimed
+        m.run_claimed = finish_fixture_worker
+        try:
+            m.cmd_run_once(m.argparse.Namespace(
+                db=db, timeout=30, events=None, run_id=None,
+                claude_bin='claude', only_accounts={'acc1', 'acc2'}))
+        finally:
+            m.run_claimed = original_run_claimed
         con = sqlite3.connect(db)
         assigned = con.execute("select assigned_acc from jobs where assigned_acc is not null").fetchall()
         pending = con.execute("select count(*) from jobs where state='pending'").fetchone()[0]
@@ -880,9 +983,7 @@ def main():
                 '--account', 'acc3=' + os.path.join(td, 'a3'),
                 '--account', 'acc4=' + os.path.join(td, 'a4'), '--skip-profile-check'])
         for n in range(8):
-            m.main(['--db', db, 'enqueue', '--external-id', 'oa%d' % n,
-                    '--argv-json', json.dumps(['x']), '--cwd', td,
-                    '--output', os.path.join(td, 'oa%d.json' % n)])
+            enqueue_fixture(db, 'oa%d' % n, td, os.path.join(td, 'oa%d.json' % n))
         claimed = [m.claim(db, 'acc%d' % i) for i in (1, 2, 3, 4)]
         assert all(j is not None for j in claimed), 'each of 4 accounts claims a job'
         assert len({j['id'] for j in claimed}) == 4, 'four DISTINCT jobs claimed in round 1'
@@ -905,9 +1006,7 @@ def main():
                 '--account', 'acc3=' + os.path.join(td, 'a3'),
                 '--account', 'acc4=' + os.path.join(td, 'a4'), '--skip-profile-check'])
         for n in range(4):
-            m.main(['--db', db, 'enqueue', '--external-id', 'rec%d' % n,
-                    '--argv-json', json.dumps(['x']), '--cwd', td,
-                    '--output', os.path.join(td, 'rec%d.json' % n)])
+            enqueue_fixture(db, 'rec%d' % n, td, os.path.join(td, 'rec%d.json' % n))
         con = sqlite3.connect(db)
         # rec0: a coordinator-recorded DONE job (recover must never touch it -> no dup promotion)
         con.execute("update jobs set state='done', coordinator_recorded=1, assigned_acc='acc3' where external_id='rec0'")
@@ -936,16 +1035,23 @@ def main():
         m.main(['--db', db, 'init',
                 '--account', 'acc1=' + os.path.join(td, 'a1'),
                 '--account', 'acc2=' + os.path.join(td, 'a2'), '--skip-profile-check'])
+        runtime_manifests = {}
         for n in range(2):
-            m.main(['--db', db, 'enqueue', '--external-id', 'runtime%d' % n,
-                    '--argv-json', json.dumps(['x']), '--cwd', td,
-                    '--output', os.path.join(td, 'runtime%d.json' % n)])
+            enqueue_fixture(
+                db, 'runtime%d' % n, td,
+                os.path.join(td, 'runtime%d.json' % n))
+            manifest_path = os.path.join(td, 'runtime%d.manifest.json' % n)
+            with open(manifest_path, 'w', encoding='utf-8') as f:
+                json.dump({'fixture': 'runtime%d' % n}, f)
+            runtime_manifests[n] = manifest_path
         con = m.connect(db)
         with con:
-            con.execute("UPDATE jobs SET manifest_path='fixture.json', manifest_sha256='fixture', "
-                        "profile_slot='acc1' WHERE external_id='runtime0'")
-            con.execute("UPDATE jobs SET manifest_path='fixture.json', manifest_sha256='fixture', "
-                        "profile_slot='acc2' WHERE external_id='runtime1'")
+            con.execute("UPDATE jobs SET manifest_path=?, manifest_sha256=?, "
+                        "profile_slot='acc1' WHERE external_id='runtime0'",
+                        (runtime_manifests[0], m.sha256_path(runtime_manifests[0])))
+            con.execute("UPDATE jobs SET manifest_path=?, manifest_sha256=?, "
+                        "profile_slot='acc2' WHERE external_id='runtime1'",
+                        (runtime_manifests[1], m.sha256_path(runtime_manifests[1])))
         con.close()
         receipt = m.write_probe_receipt(
             td, 'runtime-test', ['runtime0', 'runtime1'], {'acc1': 10, 'acc2': 11})
@@ -964,19 +1070,42 @@ def main():
             return types.SimpleNamespace(returncode=0, stdout='', stderr='')
 
         def fake_worker(db_path, account, config_dir, job, timeout, events_path=None,
-                        run_id=None, claude_bin='claude'):
+                        run_id=None, claude_bin='claude', call_reservation_path=None,
+                        max_calls=None):
             assert reserved.is_set(), 'worker started before atomic begin-run reservation'
+            assert call_reservation_path and run_id == 'runtime-test'
+            manifest_hash = m.sha256_path(job['manifest_path'])
+            assert job['manifest_sha256'] == manifest_hash
+            with open(job['output_path'], 'w', encoding='utf-8') as f:
+                json.dump({'external_id': job['external_id']}, f)
+            result_hash = m.sha256_path(job['output_path'])
+            fake_status = {
+                'manifest_sha256': manifest_hash,
+                'result_sha256': result_hash,
+            }
+            status_path = job['output_path'] + '.fake-status.json'
+            with open(status_path, 'w', encoding='utf-8') as f:
+                json.dump(fake_status, f)
+            with open(status_path, encoding='utf-8') as f:
+                fake_status = json.load(f)
+            assert fake_status['manifest_sha256'] == job['manifest_sha256']
+            assert fake_status['result_sha256'] == m.sha256_path(job['output_path'])
             outcome = 'done' if job['external_id'] == 'runtime0' else 'pending'
-            m.finish(db_path, job['id'], outcome, 0 if outcome == 'done' else 1)
+            m.finish(db_path, job['id'], outcome, 0 if outcome == 'done' else 1,
+                     result_sha256=result_hash if outcome == 'done' else None,
+                     run_id=run_id)
             return outcome
 
         m.coordinator_command = fake_command
         m.run_claimed = fake_worker
         try:
+            calls_path = os.path.join(td, 'runtime.calls.json')
+            m.CallReservationLedger(calls_path, 'runtime-test', 5)
             m.cmd_run_once(m.argparse.Namespace(
                 db=db, timeout=30, events=None, run_id='runtime-test',
                 claude_bin='claude', runtime_mode='staged', probe_receipt=receipt,
-                coordinator='coordinator.py', coord_dir=td, cwd=td))
+                coordinator='coordinator.py', coord_dir=td, cwd=td,
+                call_reservation=calls_path, max_calls=5))
         finally:
             m.coordinator_command = original_command
             m.run_claimed = original_run_claimed
@@ -984,6 +1113,35 @@ def main():
         release_calls = [call for call in calls if call[0] == 'release-run']
         assert len(begin_calls) == 1 and begin_calls[0].count('--lease-id') == 2
         assert len(release_calls) == 1 and release_calls[0][1] == 'runtime1'
+        con = m.connect(db)
+        assert {row['run_id'] for row in con.execute(
+            "SELECT run_id FROM jobs WHERE external_id LIKE 'runtime%'")} == {'runtime-test'}
+        runtime0 = con.execute(
+            "SELECT manifest_sha256,result_sha256 FROM jobs "
+            "WHERE external_id='runtime0'").fetchone()
+        assert runtime0['manifest_sha256'] == m.sha256_path(runtime_manifests[0])
+        assert runtime0['result_sha256'] == m.sha256_path(os.path.join(td, 'runtime0.json'))
+        con.close()
+
+        # A retry/resume under another run identity is refused before worker spawn.
+        con = m.connect(db)
+        with con:
+            con.execute("UPDATE jobs SET state='pending', assigned_acc=NULL "
+                        "WHERE external_id='runtime1'")
+        con.close()
+        wrong_path = os.path.join(td, 'wrong.calls.json')
+        m.CallReservationLedger(wrong_path, 'wrong-run', 5)
+        refused = False
+        try:
+            m.cmd_run_once(m.argparse.Namespace(
+                db=db, timeout=30, events=None, run_id='wrong-run',
+                claude_bin='claude', runtime_mode='staged', probe_receipt=receipt,
+                coordinator='coordinator.py', coord_dir=td, cwd=td,
+                call_reservation=wrong_path, max_calls=5,
+                only_external_ids={'runtime1'}, only_accounts={'acc2'}))
+        except SystemExit as exc:
+            refused = 'saved run_id' in str(exc)
+        assert refused, 'wrong-run resume was not refused before spawn'
     print('  runtime integration: reserve batch before workers; retryable worker releases slot')
 
     with tempfile.TemporaryDirectory() as td:
@@ -995,11 +1153,12 @@ def main():
         m.main(['--db', db, 'init', '--account', 'acc=' + os.path.join(td, 'acc'),
                 '--skip-profile-check'])
         out = os.path.join(td, 'rl.json')
-        m.main(['--db', db, 'enqueue', '--external-id', 'rl1', '--max-attempts', '1',
-                '--argv-json', json.dumps([sys.executable, '-c',
-                    'import sys;sys.stderr.write("429 rate limit reset_at=1999999999");sys.exit(21)']),
-                '--cwd', td, '--output', out])
-        m.main(['--db', db, 'run-once', '--timeout', '10'])
+        enqueue_fixture(db, 'rl1', td, out, max_attempts=1)
+        rate_limited = m.claim(db, 'acc', only_external_ids={'rl1'})
+        assert rate_limited is not None
+        m.requeue_rate_limited(
+            db, rate_limited['id'], 21,
+            '429 rate limit reset_at=1999999999', 1999999999)
         con = sqlite3.connect(db)
         state, attempts = con.execute(
             "select state,attempts from jobs where external_id='rl1'").fetchone()
@@ -1014,6 +1173,238 @@ def main():
             'C4: a max_attempts=1 job rate-limited once must remain claimable, not stranded')
     print('  C4 rate-limit: a 429 returns the job to claimable pending (attempts decremented), '
           'never a permanently-unclaimable stuck row')
+
+    # Every non-coordinator paid entry point uses the same reservation gate.
+    with tempfile.TemporaryDirectory() as td:
+        original_runner, original_prefix = m.run_tree_kill, m.claude_argv_prefix
+        calls = []
+        m.claude_argv_prefix = lambda _c: [sys.executable]
+        try:
+            profile_ledger = m.CallReservationLedger(
+                os.path.join(td, 'profile.calls.json'), 'profile-zero', 0)
+            profile_preflight = m.write_synthetic_preflight(
+                os.path.join(td, 'profile.preflight.json'), 'profile-zero')
+
+            def auth_only(*_a, **_k):
+                calls.append(1)
+                return types.SimpleNamespace(
+                    returncode=0, stderr='',
+                    stdout=json.dumps({'loggedIn': True, 'subscriptionType': 'max'}))
+
+            m.run_tree_kill = auth_only
+            try:
+                m.profile_status(td, sys.executable, profile_ledger, 'acc',
+                                 profile_preflight)
+                raise AssertionError('profile max_calls=0 reached paid probe')
+            except m.CallLimitReached:
+                pass
+            assert len(calls) == 1 and profile_ledger.spent() == 0  # auth status only
+
+            malformed_profile = m.CallReservationLedger(
+                os.path.join(td, 'profile-malformed.calls.json'), 'profile-malformed', 1)
+            phase = [0]
+
+            def malformed_profile_runner(*_a, **_k):
+                phase[0] += 1
+                if phase[0] == 1:
+                    return types.SimpleNamespace(
+                        returncode=0, stderr='',
+                        stdout=json.dumps({'loggedIn': True, 'subscriptionType': 'max'}))
+                return types.SimpleNamespace(returncode=0, stderr='', stdout='not-json')
+
+            m.run_tree_kill = malformed_profile_runner
+            ok, detail = m.profile_status(
+                td, sys.executable, malformed_profile, 'acc', profile_preflight)
+            assert not ok and 'success envelope' in detail
+            assert (malformed_profile.spent() == 1
+                    and malformed_profile.usage()['cost_evaluable'] is False)
+
+            cfg = os.path.join(td, 'canary-profile')
+            os.makedirs(cfg)
+            db = os.path.join(td, 'canary.sqlite')
+            m.main(['--db', db, 'init', '--account', 'acc=' + cfg,
+                    '--skip-profile-check'])
+            canary_manifest = {
+                'schema': 'pwg.headless_execution_manifest.v2',
+                'model': m.EXACT_GEN_MODEL,
+                'meta': {'lang': 'ru', 'selected_keys': ['k'], 'root': 'canary'},
+                'execution': {
+                    'profile_slot': 'acc',
+                    'config_dir_fingerprint': config_dir_fingerprint(cfg),
+                    'execution_route': 'claude-cli-headless', 'executor_lane': 'test',
+                    'validation_method': 'test', 'model_identifier': m.EXACT_GEN_MODEL,
+                },
+                'key_provenance': {'k': 'real'}, 'presplit_keys': ['k'],
+            }
+            manifest_path = os.path.join(td, 'canary.manifest.json')
+            json.dump(canary_manifest, open(manifest_path, 'w', encoding='utf-8'))
+            canary_preflight = os.path.join(td, 'canary.preflight.json')
+            with open(canary_preflight, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'schema': 'pwg.performance_preflight.v1',
+                    'root': 'canary',
+                    'selected_keys': ['k'],
+                    'cost_gate': {'over_ceiling': False},
+                }, f)
+            canary_preflight_sha256 = m.sha256_path(canary_preflight)
+            m.validate_preflight_artifact(
+                canary_preflight, canary_manifest, canary_preflight_sha256)
+            canary_calls = os.path.join(td, 'canary.calls.json')
+            before = len(calls)
+            try:
+                m.cmd_presplit_canary(m.argparse.Namespace(
+                    db=db, manifest=manifest_path, output=os.path.join(td, 'out.json'),
+                    status=os.path.join(td, 'status.json'), events=os.path.join(td, 'events'),
+                    preflight=canary_preflight,
+                    preflight_sha256=canary_preflight_sha256,
+                    run_id='canary-zero', claude_bin=sys.executable, timeout=5,
+                    call_reservation=canary_calls, max_calls=0))
+                raise AssertionError('presplit canary max_calls=0 reached paid runner')
+            except m.CallLimitReached:
+                pass
+            assert len(calls) == before
+            assert m.CallReservationLedger(canary_calls, 'canary-zero', 0).spent() == 0
+            drop_calls = os.path.join(td, 'drop.calls.json')
+            drop_ledger = m.CallReservationLedger(drop_calls, 'drop-zero', 0)
+            try:
+                m.probe_fleet([{'name': 'acc', 'config_dir': cfg}],
+                              drop_unhealthy=True, call_reservation=drop_ledger)
+                raise AssertionError('--drop-unhealthy swallowed call ceiling exhaustion')
+            except m.CallLimitReached:
+                pass
+            assert len(calls) == before and drop_ledger.spent() == 0
+        finally:
+            m.run_tree_kill, m.claude_argv_prefix = original_runner, original_prefix
+    print('  paid boundaries: profile/canary zero-call; drop-unhealthy cannot swallow ceiling')
+
+    # The coordinator's sealed performance preflight is a strict prerequisite for staged-run:
+    # refusal must happen before constructing the call ledger or entering the live fleet probe.
+    with tempfile.TemporaryDirectory() as td:
+        cfg = os.path.join(td, 'preflight-profile')
+        os.makedirs(cfg)
+        db = os.path.join(td, 'preflight.sqlite')
+        m.main(['--db', db, 'init', '--account', 'acc=' + cfg, '--skip-profile-check'])
+        plan_path = os.path.join(td, 'plan.json')
+        with open(plan_path, 'w', encoding='utf-8') as f:
+            json.dump({
+                'selected_headwords': 1, 'prepared_headwords': 1,
+                'windows': [{'root': 'lease-preflight', 'headwords': ['k'],
+                             'headless': {'manifest_sha256': 'x'}}],
+            }, f)
+        calls_path = os.path.join(td, 'must-not-exist.calls.json')
+        probed = []
+        original_command, original_probe = m.coordinator_command, m.probe_fleet
+
+        def refuse_preflight(_args, command, check=True):
+            assert command == ['validate-preflight', '--lease-id', 'lease-preflight']
+            return types.SimpleNamespace(
+                returncode=2, stdout='', stderr='synthetic preflight refusal')
+
+        m.coordinator_command = refuse_preflight
+        m.probe_fleet = lambda *_a, **_k: probed.append(1)
+        try:
+            try:
+                m.cmd_staged_run(m.argparse.Namespace(
+                    plan=plan_path, lease_id=None, db=db, only_profile=None,
+                    max_accounts=0, coordinator='coordinator.py', coord_dir=td, cwd=td,
+                    call_reservation=calls_path))
+                raise AssertionError('staged-run ignored coordinator preflight refusal')
+            except SystemExit as exc:
+                assert 'preflight refused before probe' in str(exc), exc
+            assert not probed and not os.path.exists(calls_path)
+        finally:
+            m.coordinator_command, m.probe_fleet = original_command, original_probe
+    print('  staged-run: coordinator preflight refusal precedes call ledger/probe')
+
+    # A done row is not authority to record an arbitrary file: the scheduler must bind both
+    # the exact result bytes and the coordinator run identity saved at successful dispatch.
+    with tempfile.TemporaryDirectory() as td:
+        db = os.path.join(td, 'record.sqlite')
+        result = os.path.join(td, 'result.json')
+        manifest = os.path.join(td, 'manifest.json')
+        open(result, 'w', encoding='utf-8').write('{"ok":1}\n')
+        open(manifest, 'w', encoding='utf-8').write('{}\n')
+        con = m.connect(db)
+        with con:
+            con.execute(
+                "INSERT INTO jobs(external_id,cwd,output_path,manifest_path,state,returncode,"
+                "result_sha256,run_id,finished_at) VALUES(?,?,?,?,?,?,?,?,?)",
+                ('lease-record', td, result, manifest, 'done', 0, m.sha256_path(result),
+                 'sealed-run', m.now_iso()))
+        con.close()
+        seen = []
+        original_command = m.coordinator_command
+        m.coordinator_command = lambda args, command, check=True: (
+            seen.append(command) or types.SimpleNamespace(returncode=0, stdout='', stderr=''))
+        try:
+            m.cmd_record_done(m.argparse.Namespace(
+                db=db, coordinator='coordinator.py', coord_dir=td, cwd=td))
+            assert seen and seen[0][-4:] == [
+                '--run-id', 'sealed-run', '--result-sha256', m.sha256_path(result)], seen
+            con = m.connect(db)
+            with con:
+                con.execute("UPDATE jobs SET coordinator_recorded=0 WHERE external_id='lease-record'")
+            con.close()
+            open(result, 'w', encoding='utf-8').write('{"substituted":true}\n')
+            refused = False
+            try:
+                m.cmd_record_done(m.argparse.Namespace(
+                    db=db, coordinator='coordinator.py', coord_dir=td, cwd=td))
+            except SystemExit as exc:
+                refused = 'substitution refused' in str(exc)
+            assert refused and len(seen) == 1, (refused, seen)
+
+            # Batch failure marks exactly the durable prefix reported by the coordinator.
+            open(result, 'w', encoding='utf-8').write('{"ok":1}\n')
+            result_b = os.path.join(td, 'result-b.json')
+            result_c = os.path.join(td, 'result-c.json')
+            open(result_b, 'w', encoding='utf-8').write('{"ok":2}\n')
+            open(result_c, 'w', encoding='utf-8').write('{"ok":3}\n')
+            con = m.connect(db)
+            with con:
+                con.execute("UPDATE jobs SET result_sha256=? WHERE external_id='lease-record'",
+                            (m.sha256_path(result),))
+                for lease, path_ in (('lease-b', result_b), ('lease-c', result_c)):
+                    con.execute(
+                        "INSERT INTO jobs(external_id,cwd,output_path,manifest_path,state,"
+                        "returncode,result_sha256,run_id,finished_at) VALUES(?,?,?,?,?,?,?,?,?)",
+                        (lease, td, path_, manifest, 'done', 0, m.sha256_path(path_),
+                         'sealed-run', m.now_iso()))
+            con.close()
+            progress = {
+                'schema': 'pwg.record_output_batch.v1',
+                'recorded': ['lease-record', 'lease-b'],
+                'remaining': ['lease-c'],
+                'failed': {'lease_id': 'lease-c'},
+            }
+
+            def partial_command(args, command, check=True):
+                seen.append(command)
+                return types.SimpleNamespace(
+                    returncode=1,
+                    stdout='RECORD_OUTPUT_BATCH_PROGRESS: ' +
+                           json.dumps(progress, separators=(',', ':')) + '\n',
+                    stderr='synthetic batch failure')
+
+            m.coordinator_command = partial_command
+            try:
+                m.cmd_record_done(m.argparse.Namespace(
+                    db=db, coordinator='coordinator.py', coord_dir=td, cwd=td))
+                raise AssertionError('partial record batch reported success')
+            except SystemExit as exc:
+                assert '2/3' in str(exc), exc
+            con = m.connect(db)
+            states = list(con.execute(
+                'SELECT external_id,coordinator_recorded FROM jobs ORDER BY id'))
+            con.close()
+            assert [(r['external_id'], r['coordinator_recorded']) for r in states] == [
+                ('lease-record', 1), ('lease-b', 1), ('lease-c', 0)], states
+            batch_cmd = seen[-1]
+            assert batch_cmd[0] == 'record-output-batch' and batch_cmd.count('--record') == 3
+            assert m.sha256_path(result_c) in batch_cmd
+        finally:
+            m.coordinator_command = original_command
+    print('  record-done: hash+run forwarded; substitution refused; batch partial prefix exact')
 
     print('max_account_orchestrator_selftest: PASS')
 

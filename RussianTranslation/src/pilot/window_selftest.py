@@ -22,6 +22,17 @@ import xml.etree.ElementTree as ET
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+# Isolation from production data is ESTABLISHED here, not assumed. `guard()` pins every
+# redirectable production path to scratch (the store, the coordinator dir, the TM sidecars,
+# the events log) BEFORE any repo import -- several resolve their constants at import time --
+# and arms an exit tripwire over the production files that have no override, so a run that
+# touches one fails loudly even if every assertion passed. See selftest_isolation.py for the
+# three defects that made this necessary.
+if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from selftest_isolation import guard as _isolation_guard  # noqa: E402
+_isolation_guard()
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 ROOT = os.path.dirname(SRC)
@@ -1054,6 +1065,123 @@ def test_quarantine_replace_failure_preserves_previous_destination():
             fail('failed quarantine was incorrectly reported as rejected: %r' % gate)
 
 
+def test_optional_sibling_bibliography_degrades():
+    """An ABSENT optional sibling repo must not break the promotion path.
+
+    `pwg_sources.BIB` lives in `csl-pywork`, which CI does not check out and a fresh clone
+    does not have. It used to raise FileNotFoundError, and because
+    `promote_final_cards.rows_for` -> `extract_citation_edges` -> `pwg_sources.resolve`
+    sits on the promotion path, an absent *enrichment* source became a hard failure of
+    promotion itself. Citation edges are additive metadata: missing bibliography must mean
+    "no expansions resolved", never "the store cannot be written".
+    """
+    import pwg_sources
+    saved_path, saved_cache = pwg_sources.BIB, pwg_sources._BIB
+    try:
+        pwg_sources.BIB = os.path.join(tempfile.gettempdir(), 'no-such-pwgbib.txt')
+        pwg_sources._BIB = None
+        if pwg_sources.bib() != {}:
+            fail('an absent bibliography must resolve to an empty map')
+        if pwg_sources.resolve('RV.') is not None:
+            fail('an absent bibliography must resolve nothing, not raise')
+        import citation_edges
+        citation_edges.extract_citation_edges('Feuer <ls>RV. 1,1</ls>')   # must not raise
+    finally:
+        pwg_sources.BIB, pwg_sources._BIB = saved_path, saved_cache
+
+
+def test_selftest_isolation_guard():
+    """The isolation guard itself: production data must be unreachable BY CONSTRUCTION.
+
+    Three defects in two days shared one shape -- a test reached production data because
+    the thing keeping it away was incidental (a subprocess boundary in the live-store case,
+    a missing `--no-residual` flag in #726, a default filename). This pins both halves of
+    the fix: every redirectable path is pinned to scratch, and a run that writes a watched
+    production file is reported even when every assertion passed.
+    """
+    import selftest_isolation as iso
+    iso.selftest()
+    for env, _kind, _base in iso.REDIRECTABLE:
+        value = os.environ.get(env)
+        if not value:
+            fail('isolation guard did not pin %s' % env)
+        if iso._inside_repo(value):
+            fail('%s still points inside the checkout: %s' % (env, value))
+    # the tripwire must actually notice a changed watched file -- a guard that cannot fail
+    # is not a guard. (Digest-level, so this never writes to the real path.)
+    before = iso.tripwire()
+    if iso.verify_tripwire(before) != []:
+        fail('tripwire reported a violation on an unchanged tree')
+    forged = dict(before, **{iso.WATCHED[0]: 'not-the-real-digest'})
+    if iso.verify_tripwire(forged) != [iso.WATCHED[0]]:
+        fail('tripwire did not report a changed watched production file')
+
+
+def sealed_card(key, senses=None):
+    """A schema-complete final card. Promotion validates the card itself now, so a bare
+    {'key1': k} stub no longer stands in for one (CARD_REQUIRED = key1/iast/records/notes).
+
+    `senses` defaults to EMPTY: a fixture that only needs a structurally valid card should
+    not also mint sense identities, or promoting the same artifact from two paths (a
+    lease's wf_output and its clean_output are the same rows) trips the duplicate-identity
+    guard on content the test never cared about. Pass senses explicitly when the test is
+    about sense content."""
+    return {'key1': key, 'iast': key, 'notes': '',
+            'records': [{'h': key, 'grammar': '',
+                         'senses': list(senses or [{'tag': '1', 'german': 'Feuer',
+                                                    'russian': 'огонь'}])}]}
+
+
+def sealed_wf_meta(keys, root='test', nominal=False):
+    """A manifest-v2 `meta` block that satisfies validate_promotion_entry.
+
+    Promotion is now a sealed contract: v1/unbound workflow output is historical-only and
+    cannot be promoted, and the six `execution.*` fields plus per-key input hashes and
+    provenance must all be present. Fixtures that only need "a promotable result" build
+    their meta from here rather than each re-deriving the contract (and drifting from it).
+    Every field below is one the validator names explicitly.
+    """
+    h = '0' * 64
+    return {
+        'execution_manifest_schema': 'pwg.headless_execution_manifest.v2',
+        'execution': {
+            'profile_slot': 'c4',
+            'config_dir_fingerprint': h,
+            'execution_route': 'claude-cli-headless',
+            'executor_lane': 'serial-whole-card',
+            'validation_method': 'window_selftest-fixture',
+            'model_identifier': 'claude-sonnet-5',
+        },
+        'selected_keys': list(keys),
+        'input_hashes': {k: {'raw_sha256': h, 'portrait_sha256': h} for k in keys},
+        'generator': 'window_selftest',
+        'schema_version': 'v2',
+        'generated_at': '2026-07-26T00:00:00Z',
+        'provenance_classes': {k: 'real' for k in keys},
+        'nominal': nominal,
+        'root': root,
+    }
+
+
+PREFLIGHT_STDOUT = json.dumps({
+    'schema': 'pwg.performance_preflight.v1',
+    'root': 'test',
+    'cost_gate': {'over_ceiling': False},
+})
+
+
+def _sealed_preflight(tmp, root='test', keys=()):
+    """A real, self-validating preflight artifact for coordinator fixtures.
+
+    `register_prepared_lease` hashes this path and `validate_lease_preflight` re-checks the
+    hash and the cost gate before a lease may consume runtime, so a fixture cannot pass a
+    placeholder string any more. `write_synthetic_preflight` is the shipped builder for
+    exactly this -- explicit zero-work evidence, validated on write.
+    """
+    import max_account_orchestrator as _mao
+    return _mao.write_synthetic_preflight(os.path.join(tmp, 'preflight.json'), root, list(keys))
+
+
 def test_c4_gate0_probe_run_scope():
     """#729: the c4 health gate must read only the readings ITS OWN run wrote.
 
@@ -1561,6 +1689,160 @@ def test_h1305_ru_style_mechanical():
         fail('H1305 review: structured workflow flags wrong keys: %r' % flagged)
     if warned != ['narrative']:
         fail('H1305 review: ambiguous workflow warning wrong keys: %r' % warned)
+
+
+def test_h1651_wrapper_defect_gate():
+    """H1651: Cyrillic is never valid inside {#...#} (the SLP1/Sanskrit wrapper) --
+    a planted violation must fire, and the fix must be found deterministically."""
+    from wrapper_defect_scan import find_d1, find_d3
+    from fix_wrapper_defects import fix_d1, fix_d3
+
+    # POSITIVE: a planted Cyrillic-in-{#...#} violation fires.
+    if not find_d1('текст {#полагать#} далее'):
+        fail('H1651: Cyrillic inside {#...#} must be detected by find_d1')
+    # CONTROL: genuine SLP1 content never fires.
+    if find_d1("текст {#mfto 'yamiti na vetti#} далее"):
+        fail('H1651: genuine SLP1 inside {#...#} must NOT be flagged')
+    # CONTROL: a Cyrillic gloss correctly wrapped in {%...%} never fires (it is not
+    # inside a {#...#} span at all).
+    if find_d1('текст {%полагать%} далее'):
+        fail('H1651: a correctly-wrapped {%...%} gloss must NOT be flagged by find_d1')
+
+    # fix_d1 rewraps the violation to {%...%}, content unchanged.
+    fixed, n = fix_d1('до {#полагать, думать#} после')
+    if n != 1 or fixed != 'до {%полагать, думать%} после':
+        fail('H1651: fix_d1 did not rewrap the Cyrillic span cleanly: %r' % fixed)
+    if find_d1(fixed):
+        fail('H1651: fix_d1 output must be clean under find_d1')
+
+    # D3: DE {%...%} rendered as RU «...» at matching slot count is drift.
+    if not find_d3('{%glauben%}', 'text «полагать» text'):
+        fail('H1651: gloss-wrapper drift (DE {%...%} -> RU «...») must be detected')
+    # CONTROL: a row whose RU already uses {%...%} for the gloss is clean.
+    if find_d3('{%glauben%}', 'text {%полагать%} text'):
+        fail('H1651: a row already using {%...%} in ru must NOT be flagged as drift')
+    fixed3, n3, eligible = fix_d3('a {%X%} b {%Y%} c', 'a «X» b «Y» c')
+    if not eligible or n3 != 2 or fixed3 != 'a {%X%} b {%Y%} c':
+        fail('H1651: fix_d3 did not rewrap a count-matched row cleanly: %r' % fixed3)
+    # count mismatch -> left untouched, not eligible (needs manual review).
+    fixed3b, n3b, eligible_b = fix_d3('a {%X%} b {%Y%} c', 'a «X» b c')
+    if eligible_b or n3b or fixed3b != 'a «X» b c':
+        fail('H1651: fix_d3 must refuse a count-mismatched row rather than guess')
+
+
+def test_h1651_live_gate_cyrillic_and_guillemet():
+    """H1651 follow-up: wrapper_defect_scan.py/fix_wrapper_defects.py (PR #789) detect and
+    repair D1/D3 in a periodic store scan, but neither is wired into the live per-card
+    generation-time audit (prompt_rule_audit.markup_sigla_risks) -- so a future generation run
+    could still reintroduce Cyrillic-in-{#..#} (or grow the guillemet-drift residual)
+    undetected by the pipeline itself. This tests that live gate, distinct from
+    test_h1651_wrapper_defect_gate above (which tests the standalone scan/fix tools)."""
+    import prompt_rule_audit as pr
+
+    def ids(ru, de=''):
+        return [r['id'] for r in pr.markup_sigla_risks({}, ru, de, '', '3')]
+
+    # D1: Cyrillic wrapped in {#..#} fires HIGH_CONFIDENCE.
+    if 'cyrillic_in_sanskrit_wrapper' not in ids('{#полагать, думать#}: {#mfto vetti#}'):
+        fail('cyrillic_in_sanskrit_wrapper must fire on a Cyrillic {#..#} span')
+    if 'cyrillic_in_sanskrit_wrapper' in ids('{#mfto vetti#} значит "знать"'):
+        fail('cyrillic_in_sanskrit_wrapper must NOT fire on a genuine Sanskrit span')
+    if 'cyrillic_in_sanskrit_wrapper' not in pr.HIGH_CONFIDENCE_RISKS:
+        fail('cyrillic_in_sanskrit_wrapper must be HIGH_CONFIDENCE (unambiguous, always wrong)')
+
+    # D3: a {%..%} gloss dropped AND rendered as a guillemet fires the soft companion risk
+    # alongside the pre-existing markup_wrapper_dropped.
+    found = ids('«полагать»', de='{%glauben%}')
+    if 'markup_wrapper_dropped' not in found or 'gloss_wrapper_became_guillemet' not in found:
+        fail('gloss_wrapper_became_guillemet must fire alongside markup_wrapper_dropped')
+    if {'markup_wrapper_dropped', 'gloss_wrapper_became_guillemet'} & set(ids('{%полагать%}', de='{%glauben%}')):
+        fail('neither D3 risk should fire when the {%..%} wrapper survives')
+    plain = ids('полагать', de='{%glauben%}')
+    if 'markup_wrapper_dropped' not in plain:
+        fail('markup_wrapper_dropped must still fire on a bare unwrapped drop')
+    if 'gloss_wrapper_became_guillemet' in plain:
+        fail('gloss_wrapper_became_guillemet must NOT fire without a guillemet span')
+    if 'gloss_wrapper_became_guillemet' in pr.HIGH_CONFIDENCE_RISKS:
+        fail('gloss_wrapper_became_guillemet must stay report-only (never requeue)')
+
+
+def test_h1702_boundary_wrap_gate():
+    """H1702: boundary-anchored auto-wrap for the H1651 D4 ru_n==0 sub-pattern (de carries
+    a {%...%} gloss, ru carries the translated content but never wraps it). The fixer must
+    place {%...%} in ru only when de's exact affixes around the gloss (numbering markers,
+    trailing punctuation) are found verbatim in ru at the same anchor-delimited position --
+    never guess a boundary it cannot verify byte-for-byte."""
+    from d4_boundary_wrap import is_ru_n0_candidate, try_boundary_wrap
+
+    # POSITIVE: a clean single-gloss row with a numbering prefix and trailing separator,
+    # matching the H1651 report's row-4553 worked example.
+    de = '<div n="2">— e〉 {%zum Vorschein gekommen%}.'
+    ru = '<div n="2">— e〉 появившийся.'
+    if not is_ru_n0_candidate(de, ru):
+        fail('H1702: de-has-gloss/ru-has-none must be detected as a candidate')
+    ok, result = try_boundary_wrap(de, ru)
+    want = '<div n="2">— e〉 {%появившийся%}.'
+    if not ok or result != want:
+        fail('H1702: boundary wrap did not reproduce the expected wrap: %r' % (result,))
+    if is_ru_n0_candidate(de, result):
+        fail('H1702: a freshly-wrapped row must no longer read as a ru_n==0 candidate')
+
+    # CONTROL: a row that already carries a {%...%} gloss in ru is not a candidate at all.
+    if is_ru_n0_candidate('{%glauben%}', '{%полагать%}'):
+        fail('H1702: a row already wrapped in ru must NOT be a ru_n==0 candidate')
+
+    # BOUNDARY-SAFETY (H1651 row-811 corruption-risk shape): the gloss covers only the
+    # clause before a colon, followed by a {#...#} citation. Affixes match exactly here,
+    # so the fixer must place the wrap at the colon, NOT swallow the citation into the gloss.
+    de2 = '{%Etwas einräumen, zugeben%}: {#na samADatte#} als <ab>Erkl.</ab> von'
+    ru2 = 'допустить, признать: {#na samADatte#} как <ab>Erkl.</ab> от'
+    ok2, result2 = try_boundary_wrap(de2, ru2)
+    if not ok2 or '{%' not in result2 or result2.index('%}') > result2.index('{#'):
+        fail('H1702: the gloss wrap must close before the {#...#} citation, not swallow it: %r' % (result2,))
+
+    # NEGATIVE: ru dropped the leading <div>/numbering marker present in de -- the anchor
+    # set deliberately excludes <div>, so this must fail the exact-prefix check rather than
+    # guess where the marker would have been.
+    de3 = '<div n="1">— 2〉 {%an sich nehmen%}.'
+    ru3 = 'принимать на себя.'
+    ok3, reason3 = try_boundary_wrap(de3, ru3)
+    if ok3:
+        fail('H1702: a dropped-<div>-prefix row must be refused, not wrapped by guesswork: %r' % (reason3,))
+
+    # NEGATIVE: two gloss spans inside the same anchor-delimited gap -- refuse rather than
+    # guess an interior boundary.
+    de4 = '{%first%} und {%second%}: {#x#}'
+    ru4 = 'первый и второй: {#x#}'
+    ok4, reason4 = try_boundary_wrap(de4, ru4)
+    if ok4:
+        fail('H1702: multiple gloss spans in one gap must be refused, not partially guessed')
+    if reason4 != 'multi-gloss-in-gap':
+        fail('H1702: expected multi-gloss-in-gap, got %r' % (reason4,))
+
+    # NEGATIVE: a row with an unrelated, still-open H1651 D3 guillemet elsewhere in ru
+    # must be refused wholesale, even though this particular gloss slot's affixes match --
+    # wrapping only this slot would hide the still-open D3 defect from find_d3's own
+    # `not ru_gloss` heuristic without actually resolving it.
+    de5 = '{%first%}: {#x#} «second»'
+    ru5 = 'первый: {#x#} «second»'
+    ok5, reason5 = try_boundary_wrap(de5, ru5)
+    if ok5:
+        fail('H1702: a row with a residual D3 guillemet must be refused, not partially fixed')
+    if reason5 != 'residual-d3-guillemet-present':
+        fail('H1702: expected residual-d3-guillemet-present, got %r' % (reason5,))
+
+    # REGRESSION: an anchor (<ab>...</ab>) nested INSIDE a {%...%} gloss span (a real PWG
+    # pattern, e.g. "gekocht <ab>u. s. w.</ab>") splits that gloss across the anchor
+    # boundary under naive anchor-tokenization -- it must not silently fall through while
+    # another, cleanly-anchored gloss slot in the same row gets wrapped (a partial fix
+    # that breaks the all-or-nothing guarantee; found live in the store, 4 rows).
+    de6 = '{%clean%}: {#x#} {%gekocht <ab>u. s. w.</ab>%}'
+    ru6 = 'чистый: {#x#} сваренный <ab>u. s. w.</ab>'
+    ok6, reason6 = try_boundary_wrap(de6, ru6)
+    if ok6:
+        fail('H1702: a gloss span split by a nested anchor must be refused, not partially wrapped: %r' % (reason6,))
+    if reason6 != 'gloss-span-crosses-anchor':
+        fail('H1702: expected gloss-span-crosses-anchor, got %r' % (reason6,))
 
 
 def test_semantic_review_prioritizer():
@@ -3199,7 +3481,8 @@ def test_coordinator_nominal_reservations():
 
             try:
                 coordinator.register_prepared_lease(
-                    'overlap', 'test', ['b', 'd'], 'harness.js', manifest, 'preflight.json')
+                    'overlap', 'test', ['b', 'd'], 'harness.js', manifest,
+                    _sealed_preflight(tmp, 'test', ['b', 'd']))
             except SystemExit as exc:
                 if 'already active' not in str(exc):
                     raise
@@ -3227,12 +3510,18 @@ def test_coordinator_nominal_reservations():
             barrier = threading.Barrier(2)
             outcomes = []
 
+            # Built ONCE, outside the threads: two racers writing the same artifact would
+            # collide in os.replace on Windows and neither would reach the reservation
+            # logic this test is about. The shared path is also the realistic shape --
+            # both registrations reference already-sealed preflight evidence.
+            race_preflight = _sealed_preflight(tmp, 'test', ['e', 'f'])
+
             def register_race(lease_id):
                 barrier.wait()
                 try:
                     coordinator.register_prepared_lease(
                         lease_id, 'test', ['e', 'f'], 'harness.js', manifest,
-                        'preflight.json')
+                        race_preflight)
                     outcomes.append('accepted')
                 except SystemExit:
                     outcomes.append('rejected')
@@ -3335,10 +3624,18 @@ def test_coordinator_runtime_state_machine_and_cas():
             # Two independent dispatchers racing disjoint batches may both validate against an
             # empty snapshot, but the state lock must serialize the commit and keep the cap <=3.
             state = coordinator.default_state()
+            # begin_run now calls validate_lease_preflight, so a hand-built 'prepared' lease
+            # needs the sealed evidence a real preparation would have left: an existing
+            # preflight artifact and its hash. Without it BOTH racers SystemExit on
+            # "no sealed preflight evidence", and the cap assertion below then reads as a
+            # concurrency failure when it is a fixture gap.
+            race_pf = _sealed_preflight(tmp, 'race')
+            race_pf_sha = coordinator.sha256_file(race_pf)
             for i in range(5):
                 state['leases'].append({
                     'id': 'race%d' % i, 'kind': 'verb', 'target': 'root%d' % i,
                     'state': 'prepared', 'artifact_dir': os.path.join(tmp, 'r%d' % i),
+                    'preflight_path': race_pf, 'preflight_sha256': race_pf_sha,
                 })
             coordinator.save_state(state)
             barrier = threading.Barrier(2)
@@ -3384,7 +3681,7 @@ def test_coordinator_runtime_state_machine_and_cas():
                 if script == 'perf_preflight.py':
                     entered.set()
                     release.wait(5)
-                    return SimpleNamespace(returncode=0, stdout='{}', stderr='')
+                    return SimpleNamespace(returncode=0, stdout=PREFLIGHT_STDOUT, stderr='')
                 harness = next(value.split('=', 1)[1] for value in cmd if value.startswith('--out='))
                 manifest = next(value.split('=', 1)[1] for value in cmd
                                 if value.startswith('--manifest-out='))
@@ -3870,10 +4167,14 @@ def test_coordinator_requeue_attempt_manifests():
                 'portrait_sha256': coordinator.sha256_file(portrait_path),
             }
         initial_manifest = os.path.join(artifacts, 'execution_manifest.lease.json')
+        # Promotion is a sealed contract now: v1/unbound output is historical-only and is
+        # refused, so a lane fixture that ends in a promotion needs manifest-v2 meta with the
+        # execution block and per-key provenance. The REAL input hashes computed above are
+        # kept -- only the sealing is added.
         original = {
-            'schema': 'pwg.headless_execution_manifest.v1',
-            'meta': {'root': 'no_pwg_fixture', 'nominal': True,
-                     'selected_keys': ['a~~x', 'b~~x'], 'input_hashes': input_hashes},
+            'schema': 'pwg.headless_execution_manifest.v2',
+            'meta': dict(sealed_wf_meta(['a~~x', 'b~~x'], root='no_pwg_fixture', nominal=True),
+                         input_hashes=input_hashes),
         }
         with open(initial_manifest, 'w', encoding='utf-8') as f:
             json.dump(original, f)
@@ -3907,6 +4208,11 @@ def test_coordinator_requeue_attempt_manifests():
         fail_once = [True]
 
         def fake_run(cmd, **_kwargs):
+            # prepare_requeue now runs perf_preflight.py for the attempt and cost-gates its
+            # stdout, so the fake has to answer that command FIRST: it carries no --out=, and
+            # the unconditional next(...) below raised StopIteration on it.
+            if any(str(arg).endswith('perf_preflight.py') for arg in cmd):
+                return SimpleNamespace(returncode=0, stdout=PREFLIGHT_STDOUT, stderr='')
             out = next(arg.split('=', 1)[1] for arg in cmd if arg.startswith('--out='))
             manifest = next(arg.split('=', 1)[1] for arg in cmd
                             if arg.startswith('--manifest-out='))
@@ -4208,8 +4514,14 @@ def test_coordinator_mixed_lane_public_state_sequence():
 
         def result_file(name, keys):
             path = os.path.join(tmp, name)
-            payload = {'results': [
-                {'key': key, 'card': {'key1': key, 'records': []}} for key in keys]}
+            # The workflow output -- not the manifest -- is what promotion validates, so the
+            # sealed meta and a schema-complete card have to live HERE. The real per-key input
+            # hashes are carried over; only the sealing is added.
+            payload = {
+                'meta': dict(sealed_wf_meta(list(keys), root='no_pwg_fixture', nominal=True),
+                             nominal_keymap={k: k for k in keys}),
+                'results': [{'key': key, 'card': sealed_card(key)} for key in keys],
+            }
             with open(path, 'w', encoding='utf-8') as f:
                 json.dump(payload, f)
             return path
@@ -6180,14 +6492,16 @@ def test_coordinator_cost_gate_enforced():
     tmp = tempfile.mkdtemp()
     flagged = os.path.join(tmp, 'preflight.json')
     with open(flagged, 'w', encoding='utf-8') as f:
-        json.dump({'reports': [{'root': 'kAla',
+        json.dump({'schema': 'pwg.performance_preflight.matrix.v1',
+                   'reports': [{'root': 'kAla',
                                 'cost_gate': {'over_ceiling': True, 'est_cost_usd': 79.83,
                                               'est_cost_per_card_usd': 4.0},
                                 'cost_partition': {'run_now': ['a'],
                                                    'defer_monster': ['b', 'c']}}]}, f)
     clean = os.path.join(tmp, 'preflight_clean.json')
     with open(clean, 'w', encoding='utf-8') as f:
-        json.dump({'reports': [{'root': 'vah', 'cost_gate': {'over_ceiling': False}}]}, f)
+        json.dump({'schema': 'pwg.performance_preflight.matrix.v1',
+                   'reports': [{'root': 'vah', 'cost_gate': {'over_ceiling': False}}]}, f)
     captured = []
     old = co.defer_monster
     co.defer_monster = lambda *a, **k: captured.append((a, k))
@@ -7302,7 +7616,11 @@ def test_h1420_p11_record_output_binds_run_id():
             try:
                 coordinator.record_output(SimpleNamespace(
                     lease_id='run', workflow_result=result_path, allow_stale=False,
-                    transcript_dir=None, run_id='run-Y'))
+                    transcript_dir=None, run_id='run-Y',
+                    # A sealed run now binds the RESULT BYTES too: record-output refuses when
+                    # --result-sha256 is absent. Supplied here so this case still fails for the
+                    # run-id reason it is about, not for a missing hash it never meant to test.
+                    result_sha256=coordinator.sha256_file(result_path)))
                 fail('P11: record-output accepted a stale run-id')
             except SystemExit as e:
                 if 'run-id' not in str(e):
@@ -7323,7 +7641,8 @@ def test_h1420_p11_record_output_binds_run_id():
             coordinator.run_cmd = fake_audit
             coordinator.record_output(SimpleNamespace(
                 lease_id='run', workflow_result=result_path, allow_stale=False,
-                transcript_dir=None, run_id='run-X'))
+                transcript_dir=None, run_id='run-X',
+                result_sha256=coordinator.sha256_file(result_path)))
             if coordinator.load_state()['leases'][0]['state'] == 'running':
                 fail('P11: a matching --run-id must let record-output proceed')
             print('  P11: record-output binds a supplied --run-id to the running lease run_id')
@@ -7336,75 +7655,54 @@ def test_h1420_p11_record_output_binds_run_id():
 
 
 def test_h1420_p10_promote_rebuilds_tm_in_finally():
-    """P10 (H1420): once the batch store commit lands, a raise while reading the batch report or
-    updating per-lease state must NOT skip the RU TM rebuild -- else store and TM diverge. The
-    rebuild runs in a `finally`, so it happens even when per-lease promotion raises."""
+    """P10 (H1420): a post-store-commit failure must NOT cost the RU TM rebuild.
+
+    The invariant is unchanged; the shape that carries it is not. `promote_ready` used to
+    rebuild the TM in a `finally` around a per-lease loop, and this test drove that by
+    faking the `--batch-manifest` subprocess. Promotion is now in-process and journal-phased:
+    `build_promotion_derived` runs `translation_memory.build`/`build_frags` BEFORE the `try:`
+    whose failure re-raises, so the TM is rebuilt by construction rather than by a `finally`.
+
+    So this pins the guarantee against the current architecture: with the store already
+    committed, make the step AFTER the TM build fail, and require that the rebuild still
+    happened and the failure still propagates. Testing the old `finally` would now be
+    testing a shape the code no longer has.
+    """
+    import promotion_journal_selftest as pjs
+    import promotion_journal
     import coordinator
-    from types import SimpleNamespace
-    old = os.environ.get('PWG_COORDINATOR_DIR')
-    original_run = coordinator.run_cmd
+    import translation_memory
+    import promote_final_cards as pfc
+    saved = (translation_memory.build, translation_memory.build_frags, pfc.collect_cards)
     with tempfile.TemporaryDirectory() as tmp:
-        os.environ['PWG_COORDINATOR_DIR'] = tmp
         try:
-            adir = os.path.join(tmp, 'artifacts', 'lease')
-            os.makedirs(adir)
-            wf = os.path.join(adir, 'wf.json')
-            clean = os.path.join(adir, 'clean.json')
-            status_path = os.path.join(adir, 'window_status.json')
-            report_path = os.path.join(adir, 'audit_window.report.json')
-            manifest = os.path.join(adir, 'manifest.json')
-            payload = {'results': [{'key': 'k', 'card': {'key1': 'k'}}]}
-            for path, value in ((wf, payload), (clean, payload),
-                                (status_path, {'state': 'clean', 'requeue_keys': []}),
-                                (report_path, {'workflow': wf, 'requeue': [], 'crashed': [],
-                                               'stale_check': {'ok': True}}),
-                                (manifest, {'schema': 'pwg.headless_execution_manifest.v1',
-                                            'meta': {'selected_keys': ['k'], 'input_hashes': {}}})):
-                with open(path, 'w', encoding='utf-8') as f:
-                    json.dump(value, f)
-            state = coordinator.default_state()
-            state['leases'] = [{
-                'id': 'lease', 'kind': 'nominal', 'target': 'n', 'state': 'ready',
-                'artifact_dir': adir, 'wf_output': wf, 'clean_output': clean,
-                'execution_manifest': manifest,
-                'clean_output_sha256': coordinator.sha256_file(clean), 'clean_count': 1,
-                'audit_state': 'clean', 'audit_returncode': 0,
-                'status_path': status_path, 'audit_report': report_path,
-            }]
-            coordinator.save_state(state)
+            store, journal_path, _before, after, _kwargs = pjs.make_prepared(tmp)
+            with open(store, 'wb') as f:            # the store IS committed at this point
+                f.write(after)
+            promotion_journal.mark_store_committed(journal_path, store_claim_held=True)
 
             tm_builds = []
+            translation_memory.build = lambda *a, **k: (
+                tm_builds.append('card'), (os.path.join(tmp, 'card.tm'), 1, 0))[1]
+            translation_memory.build_frags = lambda *a, **k: (
+                tm_builds.append('frag'), (os.path.join(tmp, 'frag.tm'), 1, 1))[1]
 
-            def fake_run(cmd, cwd=coordinator.REPO, check=True, timeout=None):
-                if '--batch-manifest' in cmd:
-                    # Store commit "succeeds", but the report lists NO subcards for the lease, so
-                    # the per-lease loop raises AFTER the store is committed (the P10 window).
-                    report = cmd[cmd.index('--report') + 1]
-                    with open(report, 'w', encoding='utf-8') as f:
-                        json.dump({'schema': 'pwg.batch_promotion.v1',
-                                   'store_rows_before': 10, 'store_rows_after': 11,
-                                   'leases': {'lease': {}}}, f)
-                elif 'translation_memory.py' in ' '.join(cmd) and 'build' in cmd:
-                    tm_builds.append(cmd)
-                return SimpleNamespace(returncode=0, stdout='', stderr='')
-            coordinator.run_cmd = fake_run
+            def exploding_collect(_files):
+                raise RuntimeError('synthetic post-TM derived failure')
+            pfc.collect_cards = exploding_collect
+
             try:
-                coordinator.promote_ready(SimpleNamespace(
-                    gen_model_version='claude-sonnet-5', lease_id=None))
-                fail('P10: promotion with no landed subcards must raise')
-            except SystemExit as e:
-                if 'no subcards' not in str(e):
+                coordinator.build_promotion_derived(journal_path, store_claim_held=True)
+                fail('P10: a failing derived step must propagate, not be swallowed')
+            except RuntimeError as exc:
+                if 'synthetic post-TM derived failure' not in str(exc):
                     raise
-            if not tm_builds:
-                fail('P10: the RU TM rebuild must run in a finally even when per-lease promotion raises')
-            print('  P10: promote_ready rebuilds the RU TM in a finally after the store commit')
+            if tm_builds != ['card', 'frag']:
+                fail('P10: the RU TM rebuild must survive a post-store-commit failure '
+                     '(ran %r)' % tm_builds)
+            print('  P10: a post-commit derived failure still leaves the RU TM rebuilt')
         finally:
-            coordinator.run_cmd = original_run
-            if old is None:
-                os.environ.pop('PWG_COORDINATOR_DIR', None)
-            else:
-                os.environ['PWG_COORDINATOR_DIR'] = old
-
+            translation_memory.build, translation_memory.build_frags, pfc.collect_cards = saved
 
 def test_h1283_a5_max_wide_default_bounded():
     """A5 (H1283): bounded dispatch is the DEFAULT — the highest throughput-per-effort lever."""
@@ -7994,6 +8292,9 @@ def main():
         test_german_connective_fix,
         test_h1302_german_prose_residue_scan,
         test_h1305_ru_style_mechanical,
+        test_h1651_wrapper_defect_gate,
+        test_h1651_live_gate_cyrillic_and_guillemet,
+        test_h1702_boundary_wrap_gate,
         test_semantic_review_prioritizer,
         test_noisy_source_type_not_requeue,
         test_report_only_risks_never_requeue,
@@ -8053,6 +8354,8 @@ def main():
         test_grammar_field_restore_behavioral,
         test_threaded_gate_exception_requeues_full_window,
         test_quarantine_replace_failure_preserves_previous_destination,
+        test_selftest_isolation_guard,
+        test_optional_sibling_bibliography_degrades,
         test_c4_gate0_probe_run_scope,
         test_german_anchor_selftest,
         test_german_anchor_repair_behavioral,

@@ -1,6 +1,6 @@
 # Generation-API probe log — pwg_ru Workflow launches
 
-_Created: 10-07-2026 · Last updated: 22-07-2026_
+_Created: 10-07-2026 · Last updated: 25-07-2026_
 
 Append-only, machine-written. Source of truth is
 [`src/pilot/generation_api_probe_log.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/generation_api_probe_log.jsonl);
@@ -51,6 +51,9 @@ payload (`python src/pilot/probe_log.py prompt`). A trivial one-word probe said 
 | 2026-07-23T06:11:42Z | warmup | NO-GO | 35.1s | 0 | 6828B | h858-partb-gate0 | H858 | Fallback profile **c1**: warm-up classification=**rate_limit** at 35081 ms -> fail-closed STOP (no measured reading). NO-GO. |
 | 2026-07-23T06:12:32Z | warmup | NO-GO | 14.8s | 0 | 6828B | h858-partb-gate0 | H858 | Fallback profile **c5**: warm-up classification=**rate_limit** at 14844 ms -> fail-closed STOP. NO-GO. |
 | 2026-07-23T06:13:11Z | warmup | NO-GO | 14.5s | 0 | 6828B | h858-partb-gate0 | H858 | Fallback profile **c6**: warm-up classification=**auth** at 14538 ms -> fail-closed STOP. NO-GO. **FLEET-WIDE NO-GO** across all four headless profiles (c4 latency, c1+c5 rate_limit, c6 auth) — the whole c-profile headless transport is unusable this window. H858 Part B (german-field source-anchoring) requires a live regeneration validation run and stays BLOCKED on gate; no code change landed (an unvalidatable harness edit would only park risk). Resume needs a fresh representative health PASS on ANY profile. Note the healthy alternative lane precedent: the direct Workflow-agent() path passed 18-07 (H1209 15.7s) while headless was degraded — a green route may exist off the c-profiles. Executor Opus 4.8 (claude-opus-4-8). |
+
+| 2026-07-25T03:27:46Z | warmup | NO-GO | 10.9s | 0 | 6828B | medium50 | — | warmup classification=auth; HTTP 403 Request not allowed on direct claude -p; no canary; no production |
+| 2026-07-25T03:27:46Z | warmup | NO-GO | 7.4s | 0 | 6828B | medium50 | — | warmup classification=auth; 403 org-wide; no canary; no production |
 
 ## Measured launch outcomes
 

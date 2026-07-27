@@ -282,7 +282,8 @@ def _selftest():
                            "note": "wrong-sense — глосса не о том"}]}
 
         # 1. the validator gate: a corrupt file is refused BEFORE any apply.
-        write_lock(sheet_id, chash, ids, "2026-07-25", locks_dir=td, gate="G6")
+        write_lock(sheet_id, chash, ids, "2026-07-25", locks_dir=td, gate="G6",
+                   force=True)   # fixture: one sheet_id, several generations
         bad = dict(good, content_hash="sha256:" + "e" * 64)
         marker = os.path.join(td, "decisions_%s.csv" % sheet_id)
         rc = main([dump("bad.json", bad), "--locks-dir", td,
@@ -326,7 +327,8 @@ def _selftest():
                 "content_hash": chash, "reviewer": "selftest",
                 "items": [{"id": ids[0], "decision": "approve", "note": ""},
                           {"id": ids[1], "decision": "reject", "note": "не то"}]}
-        write_lock(sheet_id, chash, ids, "2026-07-25", locks_dir=td, gate="G5")
+        write_lock(sheet_id, chash, ids, "2026-07-25", locks_dir=td, gate="G5",
+                   force=True)   # fixture: one sheet_id, several generations
         g5csv = os.path.join(td, "rq.csv")
         fields = ["review_id", "severity", "ord", "key1", "key2", "review_status",
                   "key_match", "placeholders_ok", "reason", "attested", "ru",
@@ -360,6 +362,40 @@ def _selftest():
               "G5 merge writes decisions + reviewer into the review CSV")
         g5_ok = rc == 0
         check(g5_ok, "G5 route ends with run_batch validate_review green (rc=%s)" % rc)
+
+        # 5. G5 positional-id drift: 'row:NNNNNN:' review_ids embed the store
+        # LINE POSITION at queue-mint time; when the store grows before the
+        # decisions are applied, the position goes stale (g5-live-queue-batch1,
+        # 26-07-2026: 2/5 votes hit 'not found in store'). run_batch must fall
+        # back to the stable 'subcard:<sub>#<tag>' tail.
+        drift_id = "row:000001:subcard:gam~~h0#1"
+        mini_drift = _MINI.replace('["a|1","b|2"]', json.dumps([drift_id]))
+        _, chash = stamp(mini_drift)
+        good = {"sheet_id": sheet_id, "generated": "2026-07-25", "decided": 1,
+                "content_hash": chash, "reviewer": "selftest",
+                "items": [{"id": drift_id, "decision": "approve", "note": ""}]}
+        write_lock(sheet_id, chash, [drift_id], "2026-07-25", locks_dir=td,
+                   gate="G5", force=True)   # fixture: deliberate re-cut
+        with io.open(g5csv, "w", encoding="utf-8-sig", newline="") as fh:
+            w = csv.DictWriter(fh, fieldnames=fields)
+            w.writeheader()
+            w.writerow({"review_id": drift_id, "severity": "1", "ord": "",
+                        "key1": "gam", "key2": "gam", "review_status": "ai_translated",
+                        "key_match": "true", "placeholders_ok": "true",
+                        "reason": "", "attested": "true", "ru": "р",
+                        "reviewer_id": "", "decision": "", "edit": "", "notes": ""})
+        with io.open(store, "w", encoding="utf-8", newline="\n") as fh:
+            # a row prepended since queue mint shifts gam~~h0#1 to position 2
+            fh.write(json.dumps({"subcard": "newer~~h0", "sense_tag": "1"}) + "\n")
+            fh.write(json.dumps({"subcard": "gam~~h0", "sense_tag": "1"}) + "\n")
+        os.environ["PWG_RU_STORE"] = store
+        try:
+            rc = main([dump("drift.json", good), "--locks-dir", td,
+                       "--review-csv", g5csv])
+        finally:
+            os.environ.pop("PWG_RU_STORE", None)
+        check(rc == 0, "stale positional review_id resolves via its subcard#tag "
+                       "tail (rc=%s)" % rc)
 
     print("apply_decisions selftest " + ("OK" if ok else "FAILED"))
     return 0 if ok else 1

@@ -41,8 +41,8 @@ from rdflib import Graph  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
-V = 'https://w3id.org/sanskrit-lexicon/pwg-ru/vocab#'
-GR = 'https://w3id.org/sanskrit-lexicon/pwg-ru/grade/'
+V = 'https://w3id.org/sanskrit-lexicon/repwg/vocab#'
+GR = 'https://w3id.org/sanskrit-lexicon/repwg/grade/'
 ONTO = 'http://www.w3.org/ns/lemon/ontolex#'
 VART = 'http://www.w3.org/ns/lemon/vartrans#'
 LS_RE = re.compile(r'<ls\b([^>]*)>(.*?)</ls>|<ls\b([^>]*?)/>', re.DOTALL)

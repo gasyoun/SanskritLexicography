@@ -99,11 +99,20 @@ jobs:
           git ls-files ':(glob)RussianTranslation/src/*.py' | xargs python -m py_compile
           python -m py_compile \
             RussianTranslation/src/pilot/proc_tree.py \
+            RussianTranslation/src/pilot/call_reservation.py \
             RussianTranslation/src/pilot/headless_worker.py \
             RussianTranslation/src/pilot/max_account_orchestrator.py \
+            RussianTranslation/src/pilot/bounded_staged_run.py \
+            RussianTranslation/src/pilot/bounded_supervisor.py \
+            RussianTranslation/src/pilot/coordinator.py \
+            RussianTranslation/src/pilot/promotion_journal.py \
+            RussianTranslation/src/pilot/h963_c4_gate0_probe.py \
+            RussianTranslation/src/pilot/latency_payload_sweep.py \
             RussianTranslation/src/pilot/windows100_selftest.py \
             RussianTranslation/src/pilot/run_observability.py \
-            RussianTranslation/src/pilot/run_observability_selftest.py
+            RussianTranslation/src/pilot/run_observability_selftest.py \
+            RussianTranslation/src/pilot/build_edition_diff_site.py
+          git ls-files ':(glob)RussianTranslation/src/eval/*.py' | xargs python -m py_compile
       - name: Sa->Ru gloss pipeline unit tests (H1349 waves 1-4)
         working-directory: RussianTranslation
         run: |
@@ -114,13 +123,18 @@ jobs:
           # indic_transliteration) are imported lazily inside main()/to_slp1().
           pip install pytest
           pytest tests/test_saru_gloss_pipeline.py tests/test_saru_gloss_wave2.py tests/test_saru_gloss_wave3.py tests/test_saru_gloss_tm.py -q
+      - name: BLI eval harness fixture selftest (H1521)
+        working-directory: RussianTranslation
+        run: python src/eval/bli_eval.py selftest
       - name: Validate research-layer sidecars (capability cards 5, 23)
         working-directory: RussianTranslation
         run: |
+          python src/mw_compounds.py --selftest
           python src/mfs_baseline.py --selftest
           python src/government_census.py selftest
           python src/government_sidecar.py --selftest
           python src/pilot/build_article_site.py --selftest
+          python src/pilot/build_edition_diff_site.py --selftest
           python research/build_observatory.py --check
       - name: Publication-grade TM technical-hardening selftests (H1457 Track A)
         working-directory: RussianTranslation
@@ -136,6 +150,18 @@ jobs:
           python src/mined_filter_bicleaner.py selftest
           python src/tm_saru_align_labse.py selftest
           python src/tm_retrieval_eval.py selftest
+      - name: Review-sheet binding + decisions + residue-gate selftests (H1404 lane)
+        working-directory: RussianTranslation
+        run: |
+          # Fixture-only. review_residue_gate needs the committed H1303
+          # inventory (pwg_ru/ABBREV_UNIFIED_LIST_PROPOSAL_2026-07.md) and the
+          # pwgab table; apply_decisions pins the positional-id drift fallback
+          # (g5-live-queue-batch1, 26-07-2026).
+          python src/review_binding.py --selftest
+          python src/validate_decisions.py --selftest
+          python src/apply_decisions.py --selftest
+          python src/review_residue_gate.py --selftest
+          python src/pilot/german_residue_scan.py --selftest
       - name: LOD graph acceptance (fixture-only, H350/E7)
         working-directory: RussianTranslation
         run: |
@@ -145,9 +171,12 @@ jobs:
         working-directory: RussianTranslation
         run: |
           python src/pilot/agent_budget.py
+          python src/pilot/call_reservation_selftest.py
           python src/pilot/headless_worker_selftest.py
           python src/pilot/execution_contract_selftest.py
           python src/pilot/max_account_orchestrator_selftest.py
+          python src/pilot/coordinator_hardening_selftest.py
+          python src/pilot/promotion_journal_selftest.py
           python src/pilot/windows100_selftest.py
           python src/pilot/run_observability_selftest.py
           python src/pilot/economy_ledger_selftest.py
@@ -156,8 +185,11 @@ jobs:
           python src/pilot/sense_count.py
           python src/pilot/window_selftest.py
           python src/store_path.py --selftest
+          python src/promote_final_cards.py --selftest
           python src/pilot/translation_memory.py selftest
           python src/citation_tm.py selftest
+          python src/build_ramayana_concordance.py selftest
+          python src/build_mbh_concordance.py selftest
           python src/pilot/lang_parity_check.py
           python src/pilot/check_launch_ledger.py --since 2026-07-05
       - name: Validate <ls> link enrichment (Panini + Spr. (II), H1307)

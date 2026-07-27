@@ -66,6 +66,8 @@ import hashlib
 import json
 import os
 import sys
+import tempfile
+from contextlib import contextmanager
 from collections import defaultdict, Counter
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -80,8 +82,9 @@ if HERE not in sys.path:
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from window_common import append_jsonl_line  # noqa: E402
+from window_common import append_jsonl_line  # noqa: E402 -- compatibility export
 from store_path import canonical_store, canonical_sidecar  # noqa: E402
+import promotion_journal  # noqa: E402
 
 # ONE logical store shared across worktrees (H818 D-E): resolve via canonical_store so a
 # git-worktree run's post-promotion TM rebuild targets the MAIN checkout store, exactly like
@@ -297,7 +300,40 @@ def load_denylist(path=None):
     return out
 
 
-def append_unblock(addresses=(), fshas=(), reason='', path=None):
+def _atomic_extend_plain_jsonl(path, rows, fault_hook=None):
+    if not rows:
+        return
+    existing = b''
+    if os.path.exists(path):
+        with open(path, 'rb') as fh:
+            existing = fh.read()
+    directory = os.path.dirname(os.path.abspath(path)) or '.'
+    os.makedirs(directory, exist_ok=True)
+    fd, tmp = tempfile.mkstemp(
+        prefix='.%s.' % os.path.basename(path), suffix='.tmp', dir=directory)
+    try:
+        with os.fdopen(fd, 'wb') as fh:
+            fh.write(existing)
+            if existing and not existing.endswith(b'\n'):
+                fh.write(b'\n')
+            for row in rows:
+                fh.write((json.dumps(row, ensure_ascii=False, sort_keys=True)
+                          + '\n').encode('utf-8'))
+            fh.flush()
+            os.fsync(fh.fileno())
+        _fault(fault_hook, 'denylist_write')
+        promotion_journal.durable_replace(tmp, path)
+        _fault(fault_hook, 'denylist_replace')
+    except BaseException:
+        try:
+            os.unlink(tmp)
+        except FileNotFoundError:
+            pass
+        raise
+
+
+def append_unblock(addresses=(), fshas=(), reason='', path=None,
+                   timestamp=None, fault_hook=None):
     """B12 (H1339): supersede matching denylist entries with 'unblock' rows.
 
     Only for content DEMONSTRABLY replaced by a promotion that passed every gate -- the
@@ -305,20 +341,24 @@ def append_unblock(addresses=(), fshas=(), reason='', path=None):
     row is only ever written for a currently-denied address/fsha. Same torn-line-safe
     single-write append as the denial rows."""
     p = denylist_path(path)
-    now = datetime.datetime.now(datetime.timezone.utc).isoformat(
+    now = timestamp or datetime.datetime.now(datetime.timezone.utc).isoformat(
         timespec='seconds').replace('+00:00', 'Z')
-    n = 0
-    for address in addresses:
-        append_jsonl_line(p, {'schema': 'pwg.translation_memory.denylist.v1',
-                              'kind': 'unblock', 'address': address,
-                              'reason': reason, 'unblocked_at': now})
-        n += 1
-    for fsha in fshas:
-        append_jsonl_line(p, {'schema': 'pwg.translation_memory.denylist.v1',
-                              'kind': 'unblock', 'fsha': fsha,
-                              'reason': reason, 'unblocked_at': now})
-        n += 1
-    return n
+    with _sidecar_lock(p):
+        denied = load_denylist(p)
+        rows = [
+            {'schema': 'pwg.translation_memory.denylist.v1',
+             'kind': 'unblock', 'address': address,
+             'reason': reason, 'unblocked_at': now}
+            for address in sorted(set(addresses) & denied['addresses'])
+        ]
+        rows.extend(
+            {'schema': 'pwg.translation_memory.denylist.v1',
+             'kind': 'unblock', 'fsha': fsha,
+             'reason': reason, 'unblocked_at': now}
+            for fsha in sorted(set(fshas) & denied['frags'])
+        )
+        _atomic_extend_plain_jsonl(p, rows, fault_hook=fault_hook)
+        return len(rows)
 
 
 def _iter_store(store_path):
@@ -441,21 +481,143 @@ def reconstruct_cards(store_path, lang):
     return entries, skipped
 
 
-def build(store_path, lang, out=None):
+def _fault(hook, point):
+    if hook is not None:
+        hook(point)
+
+
+def _artifact_timestamp(timestamp=None, journal_path=None):
+    if journal_path:
+        sealed = promotion_journal.load(journal_path)['artifact_timestamp']
+        if timestamp is not None and timestamp != sealed:
+            raise ValueError('TM timestamp does not match promotion journal')
+        return sealed
+    return timestamp or _utc_now()
+
+
+@contextmanager
+def _sidecar_lock(path):
+    """Kernel-backed exclusive lock serializing sidecar read/merge/replace."""
+    lock_path = os.path.abspath(path) + '.lock'
+    os.makedirs(os.path.dirname(lock_path) or '.', exist_ok=True)
+    fh = open(lock_path, 'a+b')
+    try:
+        if os.path.getsize(lock_path) == 0:
+            fh.write(b'\0')
+            fh.flush()
+            os.fsync(fh.fileno())
+        fh.seek(0)
+        if os.name == 'nt':
+            import msvcrt
+            msvcrt.locking(fh.fileno(), msvcrt.LK_LOCK, 1)
+        else:
+            import fcntl
+            fcntl.flock(fh.fileno(), fcntl.LOCK_EX)
+        yield
+    finally:
+        try:
+            fh.seek(0)
+            if os.name == 'nt':
+                import msvcrt
+                msvcrt.locking(fh.fileno(), msvcrt.LK_UNLCK, 1)
+            else:
+                import fcntl
+                fcntl.flock(fh.fileno(), fcntl.LOCK_UN)
+        finally:
+            fh.close()
+
+
+def _atomic_replace_card_tm(path, payload, lang, fault_hook=None):
+    """Write, fsync, validate, and atomically install a card TM."""
+    path = os.path.abspath(path)
+    directory = os.path.dirname(path) or '.'
+    os.makedirs(directory, exist_ok=True)
+    fd, tmp = tempfile.mkstemp(
+        prefix='.%s.' % os.path.basename(path), suffix='.tmp', dir=directory)
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8', newline='\n') as fh:
+            json.dump(payload, fh, ensure_ascii=False, sort_keys=True)
+            fh.write('\n')
+            fh.flush()
+            os.fsync(fh.fileno())
+        _fault(fault_hook, 'tm_write')
+        _ok, stats = validate_tm_file(lang, tmp, kind='card')
+        if not validation_ok(stats):
+            raise ValueError('refusing invalid temporary card TM: %s' % dict(stats))
+        _fault(fault_hook, 'tm_validate')
+        promotion_journal.durable_replace(tmp, path)
+        _fault(fault_hook, 'tm_replace')
+    except BaseException:
+        try:
+            os.unlink(tmp)
+        except FileNotFoundError:
+            pass
+        raise
+
+
+def _atomic_extend_jsonl(path, rows, lang, fault_hook=None):
+    """Copy-on-write JSONL extension; the old sidecar survives any interruption."""
+    if not rows and os.path.exists(path):
+        return
+    path = os.path.abspath(path)
+    directory = os.path.dirname(path) or '.'
+    os.makedirs(directory, exist_ok=True)
+    existing = b''
+    if os.path.exists(path):
+        with open(path, 'rb') as fh:
+            existing = fh.read()
+    fd, tmp = tempfile.mkstemp(
+        prefix='.%s.' % os.path.basename(path), suffix='.tmp', dir=directory)
+    try:
+        with os.fdopen(fd, 'wb') as fh:
+            fh.write(existing)
+            if existing and not existing.endswith(b'\n'):
+                fh.write(b'\n')
+            for row in rows:
+                fh.write((json.dumps(row, ensure_ascii=False, sort_keys=True)
+                          + '\n').encode('utf-8'))
+            fh.flush()
+            os.fsync(fh.fileno())
+        _fault(fault_hook, 'fragment_tm_write')
+        _ok, stats = validate_tm_file(lang, tmp, kind='fragment')
+        if not validation_ok(stats):
+            raise ValueError('refusing invalid temporary fragment TM: %s'
+                             % dict(stats))
+        _fault(fault_hook, 'fragment_tm_validate')
+        promotion_journal.durable_replace(tmp, path)
+        _fault(fault_hook, 'fragment_tm_replace')
+    except BaseException:
+        try:
+            os.unlink(tmp)
+        except FileNotFoundError:
+            pass
+        raise
+
+
+def build(store_path, lang, out=None, fault_hook=None, timestamp=None,
+          journal_path=None):
     entries, skipped = reconstruct_cards(store_path, lang)
     payload = {
         'schema': CARD_SCHEMA,
         'lang': lang,
         'address': 'sha256(input raw) == provenance.input_raw_sha256',
-        'built_at': _utc_now(),
+        'built_at': _artifact_timestamp(timestamp, journal_path),
         'store': os.path.basename(store_path),
         'count': len(entries),
         'trust_counts': trust_counts(entries.values()),
         'entries': entries,
     }
     path = tm_path(lang, out)
-    with open(path, 'w', encoding='utf-8') as f:
-        json.dump(payload, f, ensure_ascii=False)
+    try:
+        _atomic_replace_card_tm(path, payload, lang, fault_hook=fault_hook)
+    except Exception as exc:
+        if journal_path:
+            promotion_journal.record_derived_observation(
+                journal_path, 'card_tm', artifact_path=path, error=str(exc))
+        raise
+    if journal_path:
+        promotion_journal.record_derived_observation(
+            journal_path, 'card_tm', artifact_path=path, error=None)
     return path, len(entries), skipped
 
 
@@ -628,7 +790,51 @@ def load_frag_tm(lang, path=None, denylist=None, live_only=True):
     return out
 
 
-def build_frags(glob_pattern, lang, out=None, denylist=None):
+def build_frags(glob_pattern, lang, out=None, denylist=None, fault_hook=None,
+                timestamp=None, journal_path=None):
+    """Locked public fragment-sidecar harvest."""
+    if journal_path:
+        journal = promotion_journal.load(journal_path)
+        sealed_files = []
+        for lease_id in journal['lease_ids']:
+            sealed = journal['leases'][lease_id]['clean_output']
+            paths = [row['path'] for row in sealed.get('files') or []]
+            if not paths or promotion_journal.aggregate_files(paths) != sealed:
+                raise ValueError(
+                    '%s: sealed clean outputs changed before fragment harvest'
+                    % lease_id)
+            sealed_files.extend(paths)
+        sealed_files = sorted(os.path.abspath(path) for path in sealed_files)
+        if isinstance(glob_pattern, (list, tuple)):
+            requested = sorted(os.path.abspath(path) for path in glob_pattern)
+        else:
+            requested = sorted(os.path.abspath(path) for path in _glob.glob(
+                os.path.join(REPO, glob_pattern), recursive=True))
+        if requested != sealed_files:
+            raise ValueError(
+                'journaled fragment harvest must exactly match sealed clean outputs')
+        glob_pattern = sealed_files
+    path = frag_tm_path(lang, out)
+    timestamp = _artifact_timestamp(timestamp, journal_path)
+    with _sidecar_lock(path):
+        try:
+            result = _build_frags_locked(
+                glob_pattern, lang, out=path, denylist=denylist,
+                fault_hook=fault_hook, timestamp=timestamp)
+        except Exception as exc:
+            if journal_path:
+                promotion_journal.record_derived_observation(
+                    journal_path, 'fragment_tm', artifact_path=path,
+                    error=str(exc))
+            raise
+    if journal_path:
+        promotion_journal.record_derived_observation(
+            journal_path, 'fragment_tm', artifact_path=path, error=None)
+    return result
+
+
+def _build_frags_locked(glob_pattern, lang, out=None, denylist=None,
+                        fault_hook=None, timestamp=None):
     """Harvest per-fragment ground truth from wf_output cards' `frag_prov` channel into the
     append-only fragment sidecar. Idempotent: a fragment already present (by fsha) is never
     duplicated. Returns (path, added, total)."""
@@ -665,7 +871,10 @@ def build_frags(glob_pattern, lang, out=None, denylist=None):
                 seen[_fsha] = max(seen.get(_fsha, 0), _ver)
     # H1386 C3: recursive -- a requeue attempt's wf_output lands two dirs deep
     # (artifacts/<lease>/requeue/rqNN-<kind>/), which a single-* pattern never matched.
-    files = sorted(_glob.glob(os.path.join(REPO, glob_pattern), recursive=True))
+    if isinstance(glob_pattern, (list, tuple)):
+        files = sorted(os.path.abspath(path) for path in glob_pattern)
+    else:
+        files = sorted(_glob.glob(os.path.join(REPO, glob_pattern), recursive=True))
     new_rows, added, refused = [], 0, 0
     for fp in files:
         try:
@@ -730,10 +939,9 @@ def build_frags(glob_pattern, lang, out=None, denylist=None):
                     'gate_version': 'frag_prov_v2' if is_v2 else 'frag_prov_v1',
                     'review_status': 'ai_translated',
                     'reuse_policy': 'auto_exact', 'source_kind': 'frag_prov',
-                    'supersedes': None, 'harvested_at': _utc_now(),
+                    'supersedes': None, 'harvested_at': timestamp or _utc_now(),
                 })
-    for row in new_rows:
-        append_jsonl_line(path, row)
+    _atomic_extend_jsonl(path, new_rows, lang, fault_hook=fault_hook)
     return path, added, len(seen)
 
 
@@ -1461,12 +1669,44 @@ def selftest():
         assert skipped['no-raw-sha'] == 1, skipped
         assert skipped['partial-card'] == 1, skipped
         # build + load + lookup round-trip
-        path, n, _ = build(store, 'ru', out=out)
+        stable_timestamp = '2026-07-25T12:00:00Z'
+        path, n, _ = build(
+            store, 'ru', out=out, timestamp=stable_timestamp)
         assert n == 1, n
         assert lookup('ru', 'AAA', tm=out)['src_key'] == 'x~~h0_1'
         assert lookup('ru', 'ZZZ', tm=out) is None
+        sealed_tm = open(out, 'rb').read()
+        for fault_point in ('tm_write', 'tm_validate'):
+            def _fail_atomic(point, wanted=fault_point):
+                if point == wanted:
+                    raise RuntimeError('synthetic %s death' % wanted)
+            try:
+                build(store, 'ru', out=out, fault_hook=_fail_atomic,
+                      timestamp=stable_timestamp)
+                raise AssertionError('%s hook did not fire' % fault_point)
+            except RuntimeError as exc:
+                assert fault_point in str(exc)
+            assert open(out, 'rb').read() == sealed_tm, (
+                'canonical TM changed before validated atomic replace at %s' % fault_point)
+        assert not [name for name in os.listdir(os.path.dirname(out))
+                    if name.startswith('.%s.' % os.path.basename(out))
+                    and name.endswith('.tmp')]
+        try:
+            build(
+                store, 'ru', out=out, timestamp=stable_timestamp,
+                fault_hook=lambda point: (
+                    (_ for _ in ()).throw(RuntimeError('synthetic tm replace death'))
+                    if point == 'tm_replace' else None))
+            raise AssertionError('tm_replace hook did not fire')
+        except RuntimeError as exc:
+            assert 'tm replace' in str(exc)
+        assert open(out, 'rb').read() == sealed_tm
+        build(store, 'ru', out=out, timestamp=stable_timestamp)
+        assert open(out, 'rb').read() == sealed_tm, (
+            'stable journal timestamp must make card TM byte-deterministic')
         assert e['trust_level'] == TRUST_MACHINE and e['gate_status'] == 'legacy_promoted', e
         _frag_selftest()
+        _denylist_atomic_selftest()
         _trust_selftest()
         _suggest_selftest()
         _validation_selftest()
@@ -1476,8 +1716,11 @@ def selftest():
         # build` (no --store) targets the MAIN checkout store instead of a vanishing worktree-local
         # path. Prove: (a) DEFAULT_STORE == canonical_store(base); (b) explicit --store still wins;
         # (c) both RU and EN build codepaths work from an explicit store.
-        os.environ.pop('PWG_RU_STORE', None)
-        assert DEFAULT_STORE == canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl')), DEFAULT_STORE
+        configured_store = os.environ.get('PWG_RU_STORE')
+        resolved_default = canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
+        assert DEFAULT_STORE == resolved_default, (DEFAULT_STORE, resolved_default)
+        if configured_store:
+            assert DEFAULT_STORE == os.path.abspath(configured_store), DEFAULT_STORE
         fd2, bstore = tempfile.mkstemp(suffix='.jsonl'); os.close(fd2)
         fd3, ruout = tempfile.mkstemp(suffix='.json'); os.close(fd3)
         fd4, enout = tempfile.mkstemp(suffix='.json'); os.close(fd4)
@@ -1554,17 +1797,94 @@ def _frag_selftest():
                                 'fsha': 'blocked', 'senses': senses,
                                 'trust_level': TRUST_MACHINE, 'gate_status': 'defect'},
                                ensure_ascii=False) + '\n')
-        _p, added, total = build_frags('wf_output*.json', 'ru', out=sidecar)
+        stable_timestamp = '2026-07-25T12:00:00Z'
+        _p, added, total = build_frags(
+            'wf_output*.json', 'ru', out=sidecar,
+            timestamp=stable_timestamp)
         assert added == 0 and total == 1, (added, total)          # existing fsha deduped
         cache = load_frag_tm('ru', sidecar)
         assert set(cache) == {fsha}, cache
         assert cache[fsha]['senses'][0]['russian'] == 'новое', cache
         # idempotent re-harvest adds nothing
-        _p, added2, total2 = build_frags('wf_output*.json', 'ru', out=sidecar)
+        _p, added2, total2 = build_frags(
+            'wf_output*.json', 'ru', out=sidecar,
+            timestamp=stable_timestamp)
         assert added2 == 0 and total2 == 1, (added2, total2)
+        # Copy-on-write fault: a new harvest interrupted before replace cannot
+        # append half a row or discard the existing append history.
+        fsha2 = frag_address('ru', src + '\n2) bar')
+        wf['results'][0]['card']['frag_prov'].append({
+            'fsha': fsha2, 'senses': senses, 'owners': [['zz', '']]})
+        with open(os.path.join(d, 'wf_output.sc.zz.json'), 'w', encoding='utf-8') as f:
+            json.dump(wf, f, ensure_ascii=False)
+        sealed = open(sidecar, 'rb').read()
+        for fault_point in ('fragment_tm_write', 'fragment_tm_validate'):
+            def _die_fragment(point, wanted=fault_point):
+                if point == wanted:
+                    raise RuntimeError('synthetic %s death' % wanted)
+            try:
+                build_frags(
+                    'wf_output*.json', 'ru', out=sidecar,
+                    fault_hook=_die_fragment, timestamp=stable_timestamp)
+                raise AssertionError('%s hook did not fire' % fault_point)
+            except RuntimeError as exc:
+                assert fault_point in str(exc)
+            assert open(sidecar, 'rb').read() == sealed
+        def _die_fragment_replace(point):
+            if point == 'fragment_tm_replace':
+                raise RuntimeError('synthetic fragment_tm_replace death')
+        try:
+            build_frags(
+                'wf_output*.json', 'ru', out=sidecar,
+                fault_hook=_die_fragment_replace, timestamp=stable_timestamp)
+            raise AssertionError('fragment_tm_replace hook did not fire')
+        except RuntimeError as exc:
+            assert 'fragment_tm_replace' in str(exc)
+        assert fsha2 in load_frag_tm('ru', sidecar)
+        replaced_bytes = open(sidecar, 'rb').read()
+        _p, added3, total3 = build_frags(
+            'wf_output*.json', 'ru', out=sidecar,
+            timestamp=stable_timestamp)
+        assert added3 == 0 and total3 == 2, (added3, total3)
+        assert open(sidecar, 'rb').read() == replaced_bytes
+
+        empty = os.path.join(d, 'empty.frag.jsonl')
+        _p, empty_added, empty_total = build_frags(
+            'no-such-output-*.json', 'ru', out=empty,
+            timestamp=stable_timestamp)
+        assert os.path.isfile(empty) and open(empty, 'rb').read() == b''
+        assert empty_added == 0 and empty_total == 0
     finally:
         globals()['REPO'] = old_repo
         import shutil
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def _denylist_atomic_selftest():
+    import shutil
+    d = tempfile.mkdtemp()
+    try:
+        path = os.path.join(d, 'deny.jsonl')
+        initial = [
+            {'schema': 'pwg.translation_memory.denylist.v1',
+             'kind': 'card', 'address': 'ru:AAA'},
+            {'schema': 'pwg.translation_memory.denylist.v1',
+             'kind': 'fragment', 'fsha': 'FFF'},
+        ]
+        with open(path, 'w', encoding='utf-8', newline='\n') as fh:
+            for row in initial:
+                fh.write(json.dumps(row, sort_keys=True) + '\n')
+        n = append_unblock(
+            ['ru:AAA', 'ru:AAA'], ['FFF', 'FFF'], path=path,
+            reason='selftest', timestamp='2026-07-25T12:00:00Z')
+        assert n == 2
+        sealed = open(path, 'rb').read()
+        assert append_unblock(
+            ['ru:AAA'], ['FFF'], path=path, reason='selftest',
+            timestamp='2026-07-25T12:00:00Z') == 0
+        assert open(path, 'rb').read() == sealed
+        assert load_denylist(path) == {'addresses': set(), 'frags': set()}
+    finally:
         shutil.rmtree(d, ignore_errors=True)
 
 
@@ -1778,10 +2098,10 @@ def _publication_selftest():
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest='cmd', required=True)
-    b = sub.add_parser('build'); b.add_argument('--lang', default='ru'); b.add_argument('--store', default=DEFAULT_STORE); b.add_argument('--out', default=None)
+    b = sub.add_parser('build'); b.add_argument('--lang', default='ru'); b.add_argument('--store', default=DEFAULT_STORE); b.add_argument('--out', default=None); b.add_argument('--timestamp', default=None); b.add_argument('--journal', default=None)
     s = sub.add_parser('stats'); s.add_argument('--lang', default='ru'); s.add_argument('--tm', default=None)
     lk = sub.add_parser('lookup'); lk.add_argument('sha'); lk.add_argument('--lang', default='ru'); lk.add_argument('--tm', default=None)
-    bf = sub.add_parser('build-frags'); bf.add_argument('--lang', default='ru'); bf.add_argument('--glob', default='wf_output*.json'); bf.add_argument('--out', default=None)
+    bf = sub.add_parser('build-frags'); bf.add_argument('--lang', default='ru'); bf.add_argument('--glob', default='wf_output*.json'); bf.add_argument('--out', default=None); bf.add_argument('--timestamp', default=None); bf.add_argument('--journal', default=None)
     fs = sub.add_parser('frag-stats'); fs.add_argument('--lang', default='ru'); fs.add_argument('--out', default=None)
     bs = sub.add_parser('build-suggestions'); bs.add_argument('--lang', default='ru'); bs.add_argument('--mw-tm', default=None); bs.add_argument('--terminology', default=None); bs.add_argument('--out', default=None)
     ep = sub.add_parser('export-publication'); ep.add_argument('--lang', default='ru'); ep.add_argument('--out-dir', default=os.path.join(REPO, 'release', 'translation_memory')); ep.add_argument('--tm', default=None); ep.add_argument('--frag-tm', default=None); ep.add_argument('--suggest-tm', default=None); ep.add_argument('--store', default=DEFAULT_STORE)
@@ -1798,7 +2118,9 @@ def main():
     if args.cmd == 'build':
         if not os.path.exists(args.store):
             sys.exit('store not found: %s' % args.store)
-        path, n, skipped = build(args.store, args.lang, out=args.out)
+        path, n, skipped = build(
+            args.store, args.lang, out=args.out, timestamp=args.timestamp,
+            journal_path=args.journal)
         print('wrote %s (%d content-addressed cards, lang=%s)' % (path, n, args.lang))
         print('  trust:', trust_counts(load_tm(args.lang, path).values()))
         if skipped:
@@ -1815,7 +2137,9 @@ def main():
         e = lookup(args.lang, args.sha, args.tm)
         print(json.dumps(e, ensure_ascii=False, indent=2) if e else '(miss)')
     elif args.cmd == 'build-frags':
-        path, added, total = build_frags(args.glob, args.lang, out=args.out)
+        path, added, total = build_frags(
+            args.glob, args.lang, out=args.out, timestamp=args.timestamp,
+            journal_path=args.journal)
         print('wrote %s (+%d new fragment(s), %d total, lang=%s)' % (path, added, total, args.lang))
     elif args.cmd == 'frag-stats':
         cache = load_frag_tm(args.lang, args.out)

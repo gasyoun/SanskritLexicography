@@ -1,6 +1,6 @@
 # PWG citation coverage — reports live in the PWG repo
 
-_Created: 02-07-2026 · Last updated: 25-07-2026_
+_Created: 02-07-2026 · Last updated: 26-07-2026_
 
 ## Per-sense citation graph (H1624 G3)
 
@@ -11,6 +11,11 @@ Additive DE-side edges (raw `<ls>` **kept** in the german/de string):
 - `resolver_status`: `map` (ls_source_map) · `bib` (pwgbib only) · `orphan` · `empty`
 - stamped on promote + portrait; store retrofit: `python src/annotate_citation_edges.py`
 - coverage CLI: `python src/citation_edges.py report [--store PATH]` (honest map/bib/orphan %)
+- `scan_href` (additive, H1630): each edge also carries the `ls_resolver.generate_href('pwg', …)`
+  result when a Cologne scan/HTML target actually resolves — independent of `resolver_status`
+  (a `map`/`bib` siglum can still lack a target because Cologne hasn't digitized the work).
+- top-N frequency → scan/HTML coverage: `python src/citation_edges.py topn [--n 25] [--store PATH]`
+  — results + residual list logged in [`RESULTS_LOG.md`](RESULTS_LOG.md) (26-07-2026 entry).
 
 Scan-page links remain optional (see aggregate reports below; not a G3 blocker).
 

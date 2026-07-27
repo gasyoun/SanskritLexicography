@@ -205,7 +205,8 @@ def _selftest():
         stamped, chash = stamp(_MINI)
         sheet_id = extract_sheet_id(_MINI)
         ids = extract_ids(_MINI)
-        write_lock(sheet_id, chash, ids, "2026-07-25", locks_dir=td, gate="G5")
+        write_lock(sheet_id, chash, ids, "2026-07-25", locks_dir=td, gate="G5",
+                   force=True)   # fixture: one sheet_id, several generations
 
         def dump(name, doc):
             p = os.path.join(td, name)
