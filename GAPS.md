@@ -131,6 +131,13 @@ Blocker: ответить может только М. Леонов — зада�
 How to close: письмо Леонова → либо влить присланные стихи (агентная сессия), либо пометить «сознательное решение» в аппарате — и строка градуирует в FINDINGS/BOOK_BUILD_REPORT.
 > **Source:** ✍️ H497 role-guide session, 10-07-2026 (Fable 5 `claude-fable-5`); registered via /artifact-propagate epistemic pass 11-07-2026.
 
+### §13. Which `-ī` stems are the monosyllabic type, and which `-at` citations are genuine `-ant` stems?
+🟠 ✍️ **We do NOT know, from DCS alone, how to split two declension classes the corpus pools.**
+Why it matters: the `-ī` bucket of the nominal grid (E51, 65,332 tokens) mixes the polysyllabic devī/nadī type with the monosyllabic śrī/strī/dhī type, which takes different endings in the strong cases — so its per-cell ending list is a blend of two paradigms presented as one. The `-ant` bucket (48,074) likewise pools `-ant`/`-vant`/`-mant` with the master's own `-at`/`-vat`/`-mat` citations of the same stems (`bhagavant` and `bhagavat` are two `lemma_id`s), which is harmless for counting but hides how many distinct stems there really are.
+Blocker: method/signal, not data — DCS tags case, number and gender and nothing about stem shape or syllable count; the citation form is all there is, and it is ambiguous exactly where the split matters. H1472 deliberately made no guess rather than encode a plausible-looking rule.
+How to close: bring an external lexical signal — syllable count off a transliteration-aware segmenter for the `-ī` split, and a dictionary class tag (MW/PWG grammar field, or `lemma.grammar` extended) for the `-at`/`-ant` merge. Then re-bucket, re-run the G2 reconciliation, and the row graduates to a FINDINGS measurement of how big each true class is.
+> **Source:** ✍️ [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md), 27-07-2026 (Opus 5 `claude-opus-5[1m]`); registered via /artifact-propagate epistemic pass.
+
 ---
 
 ### §13. No Russian Uttarakāṇḍa (or Kiṣkindhā, or Yuddha) exists — 1,765 PWG `R.` book-7 citations wait on a translator

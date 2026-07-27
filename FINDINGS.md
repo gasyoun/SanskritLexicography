@@ -4301,3 +4301,48 @@ fix queued as [H1714](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1714
 per-directory table: [`scan_target_audit.tsv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/data/pwg_scan_index_tracker/scan_target_audit.tsv).
 
 _27-07-2026 · [H1706](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1706-Opus_csl-observatory_pwg-scan-index-tracker-reuse_26.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+
+### §484. A quarter of the DCS nominal mass has no case at all — `feat_case='Cpd'` is a compound member, not a ninth case
+
+🔴 **NOUN + ADJ = 2,996,410 tokens; only 2,263,192 (75.5%) carry a case. 724,676 (24.2%) are
+`feat_case='Cpd'`, and 8,542 (0.3%) carry no case tag.**
+`Cpd` marks a token's membership in a compound, where it is caseless by construction; 733,218
+NOUN/ADJ tokens likewise have `feat_number IS NULL`, almost exactly the same set. So a "case
+distribution over the DCS nominals" is wrong in both directions: include `Cpd` and a quarter of
+the mass is counted as a case it does not have; drop it silently and the reader is shown 75.5%
+of the nominal layer as if it were all of it.
+
+`Evidence:` the H1472 nominal grid, built over the pinned master (`04e0778`). Per-class the
+share varies sharply — `-a` 512,037 `Cpd` against 1,467,730 cased (25.9%), `-in` 5,115 against
+47,676 (9.7%) — so the correction is not a constant that can be applied after the fact.
+
+`So:` state the three buckets and assert they sum to the universe. Any nominal slice owes
+`grid + Cpd + untagged == COUNT(*)`; a query that returns only the grid has not measured the
+nominal layer, it has measured the case-bearing part of it. The same discipline that makes
+E46's verbal cells honest applies here — and the assertion is not decorative: it is what caught
+a NULL-logic complement silently dropping the 8,542 untagged tokens from *both* sides of the
+split (the infra form of that trap is [Uprava FINDINGS §216](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)).
+
+_27-07-2026 · [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md) · [`reports/paradigm_nominal_build.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/paradigm_nominal_build.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §485. The 2021-sourced "Nom.Sg = 34.6% of nominal forms, dual < 1% everywhere" does not reproduce on DCS-2026 — and the second half only survives read per cell
+
+🟡 **Measured on the 2026 master over the 2,263,192-token cased grid: Nom.Sg = 761,605 =
+33.7%. Dual pooled across all eight cases = 46,909 = 2.07%; the largest single dual cell
+(Nom.Dual, 20,590) = 0.91%.**
+Both numbers have been quoted for a year from a 2021 `cs.csv` note carried in VisualDCS'
+`roadmap.md` and re-printed on its landing page. The first does not reproduce. The second
+reproduces only under the per-cell reading — pooled, the dual is more than twice the claimed
+ceiling, and "dual < 1%" is the kind of claim a reader will apply to the category, not the cell.
+
+`Evidence:` recomputed 27-07-2026 in the H1472 build report, denominator stated explicitly.
+The residual gap on the first figure is not diagnosed here: the 2021 note does not say whether
+its denominator included `Cpd` members (§482), and no attempt was made to reconstruct the 2021
+computation — so this is a non-reproduction, not a refutation of the 2021 number on its own
+terms.
+
+`So:` a corpus statistic quoted without its denominator is not re-checkable, and one quoted
+across a corpus vintage is not portable. When re-printing an inherited figure, restate the
+denominator and the vintage or drop the figure.
+
+_27-07-2026 · [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md) · [`reports/paradigm_nominal_build.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/paradigm_nominal_build.md) · Opus 5 1M `claude-opus-5[1m]`_
