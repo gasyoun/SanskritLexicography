@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.92.0] — 2026-07-27
+
+### Added
+- **[FINDINGS §487](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) — a cross-scheme join is a transliteration step, not a string comparison** (Opus 5 1M `claude-opus-5[1m]`, 27-07-2026, from [H1476](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1476-Opus_SanskritGrammar_pedagogy-aspect-measurable-result-metrics_22.07.26.md)). Joining an IAST-spelled root catalogue straight onto SLP1 lemma keys in kosha's [`lemma_frequency.tsv`](https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv) runs clean, matches **218 of 745** roots, and answers **82.7 %**; through [`sanskrit_util.to_slp1`](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/py/sanskrit_util/__init__.py) it matches **616 of 745** and answers **56.2 %** — a **26.5-point** error, in the direction that flatters the deliverable. The matches are not a random sample: IAST and SLP1 coincide exactly on the diacritic-free roots, so the join silently selects a frequency-enriched subset and biases any token-weighted statistic upward. The generalisation — when one spelling of a join key is a subset of the other's character set, silent non-matches are *selection on that character set*, not random loss — plus the practice that would have caught it: report the join rate next to the result.
+
 ## [1.91.0] — 2026-07-27
 
 ### Fixed

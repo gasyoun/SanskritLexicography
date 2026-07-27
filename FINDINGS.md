@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §487) whatever its section, so existing numbers never shift; when a finding is later
+(currently §488) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -140,6 +140,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟡 [§39. devanagari_to_slp1 mis-routes retroflex la](#39-devanagari_to_slp1-mis-routes-retroflex-la) — ळ → x instead of L.
 - 🟠 [§40. Gloss-language spelling drift tracks reform type, not age](#40-gloss-language-spelling-drift-tracks-reform-type-not-age) — legislated ≫ convention ≫ none; the metric saturates post-1890 for English.
 - 🟡 [§60. Practical Russian transcription of Sanskrit names has no safe reverse transliteration](#60-practical-russian-transcription-of-sanskrit-names-has-no-safe-reverse-transliteration) — dental/retroflex collapse in Cyrillic-only name glossaries blocks a deterministic SLP1 join key.
+- 🟠 [§487. A cross-scheme join is a transliteration step, not a string comparison](#487-a-cross-scheme-join-is-a-transliteration-step-not-a-string-comparison--a-naive-iast-to-slp1-match-selects-on-diacritics) — a direct IAST→SLP1 match keeps only the diacritic-free 29 % of a root catalogue and biased a token-weighted result upward by 26 points; route through `to_slp1` and report the join rate beside the result.
 
 **External platforms & services**
 
@@ -4406,3 +4407,46 @@ Publication of everything derived from them was ruled open on 27-07-2026; there 
 rights gate on this line of work.
 
 _27-07-2026 · [H1715](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1715-Opus_csl-observatory_pwg-kosa-etext-pilot-amara-abhidhana_27.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+
+### §487. A cross-scheme join is a transliteration step, not a string comparison — a naive IAST-to-SLP1 match selects on diacritics
+
+🟠 **Joining an IAST-spelled root list straight onto SLP1 lemma keys matched 29 % of the
+catalogue and inflated the answer by 26 points — because the matches are exactly the
+diacritic-free roots, which are frequency-enriched by construction.**
+
+Measuring PM6 (how much of the Талмуд's 745-root Приложение 1 the Zaliznyak on-ramp's four
+taught ablaut rows actually cover) needs the catalogue joined to kosha's
+[`lemma_frequency.tsv`](https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv)
+for token counts. The catalogue spells roots in **IAST** (`akṣ`, `īṅkh`, `ṛt`); the frequency
+table keys on **SLP1** (`akz`, `INK`, `ft`). A direct string join runs without error and
+returns a plausible-looking 218 of 745 roots — and reported the on-ramp's rows as carrying
+**82.7 %** of verb-root token mass.
+
+Through the canonical [`sanskrit_util.to_slp1`](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/py/sanskrit_util/__init__.py)
+the same join matches 616 of 745 and the answer is **56.2 %**. The naive join was off by
+**+26.5 points** — and in the direction that flatters the deliverable.
+
+`Why:` the direct join is not a random sample of the catalogue. IAST and SLP1 coincide
+**exactly on the roots that contain no diacritic** — so the join silently selects the
+ASCII-spellable subset (short, old, high-frequency roots: `yat`, `vat`, `kal`) and discards
+every retroflex, long vowel and syllabic liquid. The surviving sample is frequency-enriched
+by construction, so any token-weighted statistic computed over it is biased upward. Nothing
+in the run signals this: no exception, no empty result, a 29 % match rate that reads as
+"partial coverage, as expected" rather than "systematically the wrong 29 %".
+
+`So:` **a cross-scheme join is a transliteration step, never a string comparison** — route
+every one through the canonical converter, and *report the join rate next to the result*
+(the number that would have exposed this was 29 % vs 82.7 %, printed side by side). The
+general form: when a join key can be spelled two ways and one spelling is a subset of the
+other's character set, silent non-matches are **selection on that character set**, not
+random loss. Sanity-check by asking what the unmatched rows have in common — here, a single
+glance at `akṣ`/`īṅkh`/`ṛt` versus `yat`/`kal` answers it.
+
+Related: §59 (the prior-art check — the converter already existed and
+[`build_rq4_item_bank.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py)
+already imported it for this exact catalogue).
+
+Committed as a reproducible probe with the trap in its docstring:
+[`measure_onramp_scope.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/measure_onramp_scope.py).
+
+_27-07-2026 · [H1476](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1476-Opus_SanskritGrammar_pedagogy-aspect-measurable-result-metrics_22.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
