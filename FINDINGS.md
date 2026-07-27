@@ -44,6 +44,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟡 [§493. Cross-vendor LLM second pass on routing gold is κ=1.0 — still not human IAA](#493-cross-vendor-llm-second-pass-on-routing-gold-is-κ10--still-not-human-iaa)
 - 🟠 [§494. Homonym token-attribution residual is a 38-group single-lemma_id ceiling](#494-homonym-token-attribution-residual-is-a-38-group-single-lemma_id-ceiling)
 - 🟡 [§495. Cyrillic name indices: 61 IAST-bearing seed files vs 47 pure-Cyrillic — rules still unsafe](#495-cyrillic-name-indices-61-iast-bearing-seed-files-vs-47-pure-cyrillic--rules-still-unsafe)
+- 🔴 [§496. Edit-distance record linkage over Sanskrit headwords is 70–98% false matches — measure the key, don't trust it](#496-edit-distance-record-linkage-over-sanskrit-headwords-is-7098--false-matches--use-a-length-preserving-normalization-key-and-measure-the-false-match-rate-against-the-dictionarys-own-inventory)
 
 
 **Grammar & morphology data**
@@ -4555,3 +4556,56 @@ Evidence: H1746 probe scanned 152 candidate files (`RussianTranslation/tools/gap
 Implication: GAPS §6 is not closed — the 3 fully-Cyrillic glossaries still need human-validated onomasticon rows — but the seed inventory exists and rules-based conversion is reconfirmed as a dead end.
 
 > **Source:** measures [GAPS §6](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · [FINDINGS §60](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) · H1746 · 27-07-2026 · Grok 4.5 (grok-4.5)
+
+### 496. Edit-distance record linkage over Sanskrit headwords is 70–98 % false matches — use a length-preserving normalization key and measure the false-match rate against the dictionary's own inventory
+
+⚠️ **Reusable method gotcha, and a load-bearing one:** any join between two spellings of the same
+Sanskrit headword (correction logs, OCR vs. clean text, cross-dictionary crosswalks, spell-check
+candidate generation) is tempting to do with edit distance. Measured on the OBS-T correction corpus,
+an edit-distance-1 join between the two correction eras produced **606 false links of 863 in PWG's
+big brother PW, 474 of 616 in MW, 128 of 220 in BUR** — 70–98 % of links joined two *real, distinct
+headwords* of the same dictionary (`nāman`/`yāman`, `kṛṣ`/`tṛṣ`, `nīla`/`nīca`, `imam`/`idam`).
+The reason is structural, not incidental: a morphologically dense headword inventory of 20k–290k
+records is saturated with minimal pairs, so "one edit away" is the *normal* distance between two
+different words, not evidence of a misspelling. Attestation-gating the join (link only strings the
+dictionary does not attest) does not rescue it — the surviving links still mix obvious repairs
+(`divasaksaya`→`divasakṣaya`) with arbitrary ones (`moka`→`loka`, `mari`→`mati`).
+
+**What does work, in the order it should be tried:**
+
+1. **Decode, don't guess.** `f`, `F`, `q`, `Q`, `w`, `W`, `x`, `X`, `z` cannot occur in IAST, so a
+   cell containing one is *provably* still in SLP1/HK and can be transcoded outright. In this corpus
+   3,905 form-era headword cells were in that state (`prakfti` → `prakṛti`, `āQaka` → `āḍhaka`,
+   `sPuwavaktar` → `sphuṭavaktar`); decoding them is a zero-false-match step that alone won +21/+13/+7
+   recaptures for pw/mw/bur. This is the same partial transcode behind the documented `R`=ṇ trap
+   ([SHARED_CODE §12](https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md)).
+2. **Fold only what is not phonemic.** `sanskrit_util.form_key` (anusvāra + homorganic nasals → n,
+   final visarga, pitch accents; **vowel length and retroflexion preserved**) collides 0.2–0.4 % of a
+   dictionary's own records. `sanskrit_util.norm`, which drops every combining mark, collides
+   **9–16 %** — roughly one record in nine made ambiguous, measured across 18 dictionaries. Length
+   and retroflexion are the load-bearing distinctions; nasal class and pitch are not.
+3. **Use the payload, not the string.** Where a correction is attributed to the headword itself, the
+   corrected *value* names the record directly — content-grounded linkage that needs no similarity
+   judgement at all.
+
+**The measurement itself is the transferable part.** Both false-match measurements are fully offline
+and need no human annotation: (a) the **key-collision rate** — how often the key merges two distinct
+`<k1>` records of that same dictionary, a property of key × dictionary; and (b) the **attestation
+test** on the pairs actually matched — if both strings are attested, distinct headwords, the link
+joined two different records. Any repo doing headword matching (SanskritSpellCheck candidate
+generation, csl-atlas crosswalks, WhitneyRoots form matching, kosha joins) can compute both from
+`csl-orig` in one streaming pass and should report them rather than asserting a matcher is "fuzzy
+but fine".
+
+**Downstream consequence worth noting:** in a capture–recapture estimator the linkage error rate is
+not cosmetic — it moves the headline number in a *known direction*. Missed true matches inflate the
+population estimate; false matches deflate it. Switching PW/MW/BUR/CAE to the measured key moved BUR
+off its record-count ceiling entirely (23 → 44 recaptures, ~19,776 → ~17,247), showing that ceiling
+had been an artefact of the join rather than a fact about the dictionary.
+
+> **Source:** [csl-observatory `scripts/headword_linkage.py`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/scripts/headword_linkage.py) +
+> [`linkage_ladder.csv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/observatory/site/src/data/linkage_ladder.csv) +
+> [`headword_key_collisions.csv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/observatory/site/src/data/headword_key_collisions.csv) +
+> the "Site linkage" section of [`reports/error_recapture.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/error_recapture.md) ·
+> [H1477](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1477-Opus_csl-observatory_capture-recapture-fuzzy-linkage-corrector-pair_22.07.26.md)
+> ([PR #120](https://github.com/sanskrit-lexicon/csl-observatory/pull/120)) — csl-observatory · 27-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
