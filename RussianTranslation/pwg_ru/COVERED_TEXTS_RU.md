@@ -201,8 +201,20 @@ The remaining UNMAPPED case returns `unmapped_locus_scheme` (a documented GAP, *
   keys a citation through it). **The `@DECIDE` is closed:** MG ruled (а) build it, it was
   built, and the measurement says the input is wrong rather than the method. Closing the
   GAP needs the **Calcutta text itself** (or a published Calcutta↔critical concordance)
-  plus a content-based alignment of the H1656 kind, so the useful next act is an
-  acquisition probe for a Calcutta e-text or scan, not another modelling attempt.
+  plus a content-based alignment of the H1656 kind. **The acquisition probe ran the same
+  day (H1707) and both halves exist:** the Cologne scan repo
+  [sanskrit-lexicon-scans/mbhcalc](https://github.com/sanskrit-lexicon-scans/mbhcalc)
+  ships the 1834–39 printing with `parvanverse.js`, a `(parvan, continuous śloka) →
+  page` index in PWG's own scheme that already resolves **3,007 of 3,009 distinct MBH.
+  loci (99.9%)** to a scan page — page-level click-through is available today; and
+  [sujoysarkarai/mahabharatace](https://github.com/sujoysarkarai/mahabharatace)
+  (ISCLS 2026, CC) carries a verse-level Calcutta alignment of the Dutta/Itihāsa text
+  whose `ce_verse_number` **is** the continuous per-parvan śloka. Proof end-to-end:
+  `MBH. 5,7331` → its `manual_anchor` CE lines → verbatim in
+  `05_mahabharata-udyogaparva:5.187.1-4#sa` → a Russian translation of record that
+  exists. The page PDFs are image-only, and a one-page tesseract-5 `san` probe confirmed
+  OCR is feasible but **unnecessary** given the CE release. What remains is the content
+  alignment onto the corpus's critical keying, scoped by the release's ~88% coverage.
 
 ## R. GORR. — the Gorresio concordance (MG N11 → ruled BUILD, H1656)
 
@@ -363,7 +375,7 @@ would be a Bombay↔critical Sanskrit map with no RU consumer. The scan-side
 groundwork that makes that pass cheap when it is finally worth running is committed
 as [`src/ramayana_bombay_inventory.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_bombay_inventory.tsv)
 (658 sargas, all 7 kāṇḍas, no OCR) and the traps are in
-[FINDINGS §476](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+[FINDINGS §480](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
 
 > Counting scope: the 232/288/376 figures in the table above are **store** counts
 > (the pwg_ru working set); the 1,781 is every `<ls>` in the full csl-orig `pwg.txt`.

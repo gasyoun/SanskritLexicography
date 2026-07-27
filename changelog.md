@@ -55,9 +55,106 @@ not an error.
   "Southern/Leonov" label (99.8%/99.9% identical to DCS critical at the same
   `sarga.verse`, vs 1.2–3.0% for kāṇḍas 1/2/3/5), so
   `ramayana_southern_critical_concordance.tsv` aligns those two kāṇḍas against
-  themselves. FINDINGS §476 (the ramayanabom scan traps: a Latin-garbage text
+  themselves. FINDINGS §480 (the ramayanabom scan traps: a Latin-garbage text
   layer that passes a non-empty check, and a 2-up embedded image the PDF crops)
-  and §477 (measure the asset, not the manifest).
+  and §481 (measure the asset, not the manifest).
+
+## [1.88.0] — 2026-07-27
+
+### Fixed
+- **[integrity] a sheet generator could rewrite a LIVE lock in silence, invalidating votes
+  already cast** (H1703 follow-on, Opus 5 1M `claude-opus-5[1m]`). A generator reads live
+  data, so re-running one after its inputs moved re-cuts the sheet — and
+  `review_binding.write_lock()` overwrote the existing lock without a word. Found
+  concretely: re-running `compound_differs_review_sample.py --write` on `master` after the
+  H1703 extractor repairs renders `sha256:68a6297b…` where the committed lock binds
+  `sha256:31c106bb…`, i.e. a different 200 cards. Any votes in flight would have stopped
+  validating with no signal until `validate_decisions.py` rejected the export — the same
+  failure shape as the unbound sheet H1703 item 1 fixed, one step later. `write_lock()`
+  now raises `LockCollision` on a differing hash (same-hash rewrite still allowed, so
+  idempotent regeneration is unaffected; deliberate re-cut takes `force=True` /
+  `REVIEW_LOCK_FORCE=1`), with three selftest cases pinning it. Protects every sheet in
+  the estate. Also recorded: **arm 1 reproduces only at
+  [v1.83.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.83.0)**
+  (verified byte-for-byte), arm 2 on `master` — both sheets' HTML regenerated and placed
+  so their `file:///` links in
+  [REVIEW_SHEETS_INDEX.md](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md)
+  resolve (neither existed in the working checkout; both are gitignored by contract).
+
+### Added
+- **FINDINGS §476–§479 — the reusable half of H1703** (Opus 5 1M `claude-opus-5[1m]`).
+  Four measured findings a future session in any repo would otherwise rediscover:
+  **§476** repairing an extractor *grows* the disagreement queue it feeds (4,123 → 4,246
+  cards here) — a plan that assumes a shrink is asserting something unmeasured;
+  **§477** `wilson_lower(35,35)=0.901` vs `0.898` at 34 makes 35 the floor for a 0.90
+  per-stratum gate, and a censused stratum promotes with no interval at all (so a 0.890
+  bound is not "unpromotable"); **§478** a blind arm stratified on an agent's own rules
+  must never render the rule, and must take its card ids from the committed lock rather
+  than the frame TSV; **§479** PWG's etymology paren needs three rules, not one — bracket
+  masking, first-`{#…#}`-per-part, and surface-coverage arbitration for the derivation
+  ladders and disjunctions where first-wins ships a base instead of a member. §475
+  (MW `<k2>` variant fusion) marked ✅ FIXED with the one correction the original `So:`
+  needed: take the first variant that *carries the segmentation*, not simply the first.
+
+## [1.87.0] — 2026-07-26
+
+### Fixed
+- **[integrity] MW `<k2>` variant fusion welded a non-word compound member**
+  ([#801](https://github.com/gasyoun/SanskritLexicography/issues/801), H1703, Opus 5 1M
+  `claude-opus-5[1m]`). MW lists spelling/accent variants of a headword inside one `<k2>`
+  separated by `; ` (`gaRa—kAri; gaRakAri`);
+  [`mw_compounds.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mw_compounds.py)
+  split on the em-dash first and cleaned second, and `_ACCENT_STRIP` removes both `;` and
+  the space — so the variants fused into a member that is not a word (`gaRa` +
+  **`kArigaRakAri`**). The bogus member also inflated the arity, so
+  `nominal_grammar._irregularities` emitted `compound:3_members` and the Zaliznyak index
+  `+3` for a two-member compound (`citpati` shipped as `m·3a+3`). **41 of 106,603** MW
+  compound records corrected, 22 of them arity-corrected;
+  [`headword_index.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/headword_index.tsv)
+  (36 rows), `paradigm_stats.tsv` and `reverse_paradigm_index.json` regenerated. New
+  `--selftest` (7 fixtures) wired into CI. [PR #817](https://github.com/gasyoun/SanskritLexicography/pull/817).
+
+### Added
+- **H1703 — second, rule-stratified blind arm: every stratum of the compound `differs`
+  queue can now be priced** (Opus 5 1M `claude-opus-5[1m]`). The H1628 arm samples along
+  length × DCS-frequency × member-count, i.e. **across** the H1681 adjudicator's rules: it
+  lands 139 cards in one stratum and 0–16 in each of the other seven, so it could promote
+  3,018 of 4,226 rows and no more, however the human voted. New
+  [`compound_differs_arm2_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/compound_differs_arm2_sample.py)
+  (seed 1703) draws **232 cards**, 35 per unpriced stratum — 35 because
+  `wilson_lower(35, 35) = 0.901` and `wilson_lower(34, 34) = 0.898` — disjoint from arm 1,
+  stamped + locked, and **blind** (no stratum, rule, verdict or reason on any card,
+  asserted by selftest). **All 4,353 rows now sit in a priceable stratum**; the 31-row
+  `granularity_ic_vs_full_decomposition` is censused in full, recorded as
+  `promotion_basis: census` rather than pretending its 0.890 bound cleared. Binding
+  verified end-to-end on both sheets (valid export accepted; tampered hash, missing vote
+  and unknown card id each rejected). Queue re-adjudicated against both repaired
+  extractors — the three defect strata are gone (`pwg_layer_inner_chain` 75 → 0,
+  `pwg_layer_no_headword_paren` 82 → 2, `mw_variant_fusion` 10 → 0) — and it did **not**
+  shrink as H1703 predicted: 118 cards left, 241 entered, 4,123 → **4,246 cards**. Report:
+  [PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md §8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md).
+  Upstream half: [SanskritGrammar#529](https://github.com/gasyoun/SanskritGrammar/pull/529)
+  (closed [#527](https://github.com/gasyoun/SanskritGrammar/issues/527)). Nothing applied
+  to the store; neither sheet voted.
+
+## [1.86.0] — 2026-07-26
+
+### Added
+- **H1707 probe — the Calcutta Mahābhārata is obtainable after all, and PWG's citation
+  scheme is already indexed** (Opus 5 1M `claude-opus-5[1m]`). Same-day successor to the
+  H1652 rejection. [sanskrit-lexicon-scans/mbhcalc](https://github.com/sanskrit-lexicon-scans/mbhcalc)
+  ships the 1834–39 printing as 3,006 page PDFs plus `parvanverse.js`, a
+  `(parvan, continuous śloka) → page` index in **PWG's own citation scheme**:
+  **3,007 of 3,009 distinct `MBH.` loci (99.9%) resolve to a scan page** with no OCR and
+  no alignment. The PDFs carry no text layer (a one-page tesseract-5 `san` probe confirmed
+  OCR is feasible but noisy), and it is not needed:
+  [sujoysarkarai/mahabharatace](https://github.com/sujoysarkarai/mahabharatace) (ISCLS 2026,
+  CC) releases a verse-level Calcutta alignment of the Dutta/Itihāsa text whose
+  `ce_verse_number` **is** the continuous per-parvan śloka. Proved end-to-end on the
+  citation that started H1652: `MBH. 5,7331` → its `manual_anchor` CE lines → verbatim in
+  `05_mahabharata-udyogaparva:5.187.1-4#sa` → an existing Russian translation of record.
+  The H1652 measurement stands; its "needs the Calcutta text" conclusion is now a task,
+  not a blocker.
 
 ## [1.85.0] — 2026-07-26
 

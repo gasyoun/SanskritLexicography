@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 26-07-2026_
+_Created: 26-06-2026 · Last updated: 27-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §476) whatever its section, so existing numbers never shift; when a finding is later
+(currently §482) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -58,8 +58,8 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§462. On Windows, repeated repository discovery can dominate a Python pipeline](#462-on-windows-repeated-repository-discovery-can-dominate-a-python-pipeline-cache-checkout-identity-not-mutable-path-overrides) — 88 Git subprocesses cost 4.50 s of 5.29 s; cache the immutable checkout identity, not mutable path overrides.
 - 🔴 [§470. The Cologne scan-viewer page PDFs can carry an embedded digitized text layer](#470-the-cologne-scan-viewer-page-pdfs-can-carry-an-embedded-digitized-text-layer--check-get_text-before-declaring-no-e-text-exists-or-commissioning-ocr) — the ramayanagorr Google-sourced page PDFs held a clean Devanagari text layer; the full Gorresio e-text (10,225 vv) was extracted with zero new OCR the same day "no e-text exists" was concluded. Check `get_text()` per VOLUME before commissioning OCR; anchor ॥N॥ segmentation to an external per-page verse index (OCR drops digits).
 - 🔴 [§473. OCR the canonical page files themselves — mapping a third-party OCR of "the same" scan onto them loses to offset drift, thumbnail decoys, and digit aliasing](#473-ocr-the-canonical-page-files-themselves--mapping-a-third-party-ocr-of-the-same-scan-onto-them-loses-to-offset-drift-thumbnail-decoys-and-digit-aliasing) — the DLI vol-2 leaf offset drifts +48→+20 and verse-number anchors alias across short sargas; tesseract-5 `san` on the Cologne pages' own embedded full-res images closed the §470 vols-2/4/uk gap (e-text 10,225→19,852 vv, all 672 sargas) with zero mapping risk. Take the LARGEST embedded image, never `get_images()[0]` (thumbnail decoy); normalize `।।`→`॥` before ॥N॥ segmentation.
-- 🔴 [§476. A non-empty PDF text layer proves nothing — check the SCRIPT; and "extract the largest embedded image" breaks when the PDF CROPS a 2-up scan](#476-a-non-empty-pdf-text-layer-proves-nothing--check-the-script-and-extract-the-largest-embedded-image-breaks-when-the-pdf-crops-a-2-up-scan) — the ramayanabom page PDFs return ~1,100–2,300 chars each, all of it Latin garbage from a Latin-alphabet OCR of Devanagari; and each 1128×420 pt page embeds a 4700×3500 TWO-page scan it crops in half, so §473's largest-image rule silently OCRs two pages at once. Render the page instead. Amends §470 and §473 for the next edition.
-- 🔴 [§477. A corpus file's PRESENCE is not evidence of its contents — `07_ramayana-uttarakanda.jsonl` is Sanskrit-only CRITICAL-edition text under a "Southern/Leonov" label, and a handoff was minted off the filename](#477-a-corpus-files-presence-is-not-evidence-of-its-contents--07_ramayana-uttarakandajsonl-is-sanskrit-only-critical-edition-text-under-a-southernleonov-label-and-a-handoff-was-minted-off-the-filename) — 2,690 `sa` segments and 0 `ru`; 99.9% of its verses align to the DCS critical edition at the identical `sarga.verse` while kāṇḍas 1/2/3/5 sit at 1–3%. H1705 was written to "bridge the Bombay numbering" for a book whose blocker is that no Russian uttarakāṇḍa exists.
+- 🔴 [§480. A non-empty PDF text layer proves nothing — check the SCRIPT; and "extract the largest embedded image" breaks when the PDF CROPS a 2-up scan](#480-a-non-empty-pdf-text-layer-proves-nothing--check-the-script-and-extract-the-largest-embedded-image-breaks-when-the-pdf-crops-a-2-up-scan) — the ramayanabom page PDFs return ~1,100–2,300 chars each, all of it Latin garbage from a Latin-alphabet OCR of Devanagari; and each 1128×420 pt page embeds a 4700×3500 TWO-page scan it crops in half, so §473's largest-image rule silently OCRs two pages at once. Render the page instead. Amends §470 and §473 for the next edition.
+- 🔴 [§481. A corpus file's PRESENCE is not evidence of its contents — `07_ramayana-uttarakanda.jsonl` is Sanskrit-only CRITICAL-edition text under a "Southern/Leonov" label, and a handoff was minted off the filename](#481-a-corpus-files-presence-is-not-evidence-of-its-contents--07_ramayana-uttarakandajsonl-is-sanskrit-only-critical-edition-text-under-a-southernleonov-label-and-a-handoff-was-minted-off-the-filename) — 2,690 `sa` segments and 0 `ru`; 99.9% of its verses align to the DCS critical edition at the identical `sarga.verse` while kāṇḍas 1/2/3/5 sit at 1–3%. H1705 was written to "bridge the Bombay numbering" for a book whose blocker is that no Russian uttarakāṇḍa exists.
 - 🔴 [§471. A corpus-candidate matcher keyed on a dictionary's OWN bibliographic prose will bury its biggest wins in the "no corpus side exists" class](#471-a-corpus-candidate-matcher-keyed-on-a-dictionarys-own-bibliographic-prose-will-bury-its-biggest-wins-in-the-no-corpus-side-exists-class--pwgs-pāṇini-and-manu-41910-citations-sat-in-dcs-lacks) — a `Verzeichniss der Abkürzungen` names works by author in the editor's language, not by the Sanskrit title a corpus indexes; PWG's Pāṇini and Manu (41,910 citations) sat in `DCS-LACKS` until matched on the work, not the prose.
 - 🔴 [§472. Choosing a confidence tier ONCE PER SENSE and then stamping it on many passages inflates the strongest tier](#472-choosing-a-confidence-tier-once-per-sense-and-then-stamping-it-on-many-passages-inflates-the-strongest-tier--413-of-h1670s-exact-verse-rows-were-chapter-level) — 4.13% of H1670's exact-verse rows were chapter-level addresses; let the level travel with the passage, and grep the strongest tier for the address shape it is supposed to exclude.
 - 🔴 [§468. PWG's plain `R.` is a THREE-edition composite](#468-pwgs-plain-r-is-a-three-edition-composite--books-36-carry-gorresio-bengal-recension-numbering-so-keying-them-into-a-southern-recension-text-silently-returns-the-wrong-verse) — books 1–2 cite Schlegel, books 3–6 Gorresio (Bengal recension), book 7 Bombay (pwgbib 1.247; store sarga maxima 79/63/94 = Gorresio's counts). `citation_tm` had returned the wrong verse's RU silently for ~900 in-range R. 3/5 refs; books 3–6 now `unmapped_locus_scheme` until the Gorresio↔Southern concordance validates (H1656).
@@ -111,7 +111,11 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟡 [§455. PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline](#455-pwg-ls-citation-resolution-is-already-at-98-far-above-the-previously-cited-724-baseline) — `pwgbib.txt` grew to 4,390 entries since the 72.4% measurement; re-measure with `pwg_sources.py coverage` before citing a stale ceiling.
 - 🔴 [§465. PWG sense × DCS attestation collapses from ~40% at lemma level to 0.67% at sense level — and three independent constrictions cause it](#465-pwg-sense--dcs-attestation-collapses-from-40-at-lemma-level-to-067-at-sense-level--and-three-independent-constrictions-cause-it) — measured over ALL 109,050 PWG headwords: 60.2% absent from DCS entirely, 88.8% of DCS token mass untagged. **The 0.67% sense-level figure is superseded: H1670 found it was a matcher-reach artefact (the locus tier saw 0.299% of available passages, and a dead `"RV"` map key hid the Ṛgveda) and raised it to 12.25% with no criterion changed.** The two data-availability ceilings stand. Grounding outside the aligner's reach is *unknown*, never 0%.
 - 🔴 [§474. PWG's etymology parenthesis is NESTED — a first `+`-chain regex reads the inner sub-analysis, not the compound's members](#474-pwgs-etymology-parenthesis-is-nested--a-first--chain-regex-reads-the-inner-sub-analysis-not-the-compounds-members) — 344/16,738 (2.06%) of published `pwg_compound_split` gold ship an inner or neighbouring word's `+`-chain; blank balanced `[...]` before splitting; keep only the first `{#…#}` per `+`-part.
-- 🟠 [§475. MW's `<k2>` carries a variant LIST after `;` and two different boundary marks — stripping the punctuation welds variants into a member that is not a word](#475-mws-k2-carries-a-variant-list-after--and-two-different-boundary-marks--stripping-the-punctuation-welds-variants-into-a-member-that-is-not-a-word) — 41/106,603 MW compound records; split on `;` first (take first variant), then em-dash; keep hyphen as deliberate non-boundary.
+- 🟠 [§475. MW's `<k2>` carries a variant LIST after `;` and two different boundary marks — stripping the punctuation welds variants into a member that is not a word](#475-mws-k2-carries-a-variant-list-after--and-two-different-boundary-marks--stripping-the-punctuation-welds-variants-into-a-member-that-is-not-a-word) — 41/106,603 MW compound records; split on `;` first (take first variant), then em-dash; keep hyphen as deliberate non-boundary. **✅ FIXED 26-07-2026 (H1703)** — with the correction that it must be the first variant *carrying the segmentation*.
+- 🟠 [§476. Repairing an extractor GROWS the disagreement queue it feeds — plan for that, not for a shrink](#476-repairing-an-extractor-grows-the-disagreement-queue-it-feeds--plan-for-that-not-for-a-shrink) — two repairs expected to shrink a 4,123-card queue grew it to 4,246 (118 left, 241 entered); re-derive the queue before sizing any human sample against it.
+- 🟡 [§477. 35 cards is the floor for a 0.90 Wilson gate — and a censused stratum needs no interval at all](#477-35-cards-is-the-floor-for-a-090-wilson-gate--and-a-censused-stratum-needs-no-interval-at-all) — `wilson_lower(35,35)=0.9010` vs `0.8983` at 34, so "~30 per stratum" spends the votes and still cannot promote; a fully censused stratum promotes with its bound below threshold.
+- 🟠 [§478. A blind arm stratified on an agent's own rules must not render the rule — and its card ids must come from the lock, not the frame](#478-a-blind-arm-stratified-on-an-agents-own-rules-must-not-render-the-rule--and-its-card-ids-must-come-from-the-lock-not-the-frame) — pin the no-leak rule with a test; the lock is the only id list an export can be validated against.
+- 🟡 [§479. PWG's etymology parenthesis: "first `{#…#}` per `+`-part" is right until PWG writes a derivation ladder](#479-pwgs-etymology-parenthesis-first--per--part-is-right-until-pwg-writes-a-derivation-ladder) — 1,564 multi-member parts: 1,308 where first-wins is right, ~357 ladders/disjunctions where it ships a base; arbitrate by surface coverage, drop what stays ambiguous.
 
 **Etymology & derivation**
 
@@ -4025,9 +4029,125 @@ that is not a Sanskrit word and an arity that is wrong, which then propagates in
 rather than stripping it — it is MW stating where a boundary is *not*, which is usable evidence
 when reconciling MW's segmentation against another dictionary's.
 
+`✅ FIXED 26-07-2026` (H1703, [PR #817](https://github.com/gasyoun/SanskritLexicography/pull/817),
+[v1.87.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.87.0)) — with one
+correction to the `So:` above: take the first variant that **carries the segmentation**, not
+simply the first variant. MW sometimes lists the unsegmented spelling first
+(`gaRakAri; gaRa—kAri`), and "first variant wins" silently drops those records instead of
+fixing them. All 41 records corrected (22 arity-corrected); `--selftest` pins the case.
+The hyphen is still stripped in `mw_compounds.py` — only the adjudicator's `mw_variants()`
+keeps it — so the second half of this finding remains open, deliberately: changing the member
+spelling downstream is a bigger change than the defect warranted.
+
 _26-07-2026 · [H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
 
-### §476. A non-empty PDF text layer proves nothing — check the SCRIPT; and "extract the largest embedded image" breaks when the PDF CROPS a 2-up scan
+### §476. Repairing an extractor GROWS the disagreement queue it feeds — plan for that, not for a shrink
+
+🟠 **Two upstream repairs were expected to shrink a 4,123-card PWG-vs-MW disagreement queue.
+They grew it by 3 %.**
+A repair does two things at once: it removes rows that only disagreed because of the defect,
+and it *adds* rows that were previously absent or unresolvable and now produce a real
+comparison. The second effect is easy to forget when writing the plan, because the defect is
+what you are thinking about.
+
+`Evidence:` after [SanskritGrammar#527](https://github.com/gasyoun/SanskritGrammar/issues/527)
+(PWG chain now headword-anchored: 512 rows dropped, **879 added**) and
+[SL#801](https://github.com/gasyoun/SanskritLexicography/issues/801) (MW variant fusion),
+the `differs` queue moved 4,123 → **4,246 cards**: 118 left, 241 entered (163 brand-new PWG
+comparisons, 74 that previously had no PWG chain, 4 from `agrees`). The defect strata did
+vanish as predicted — `pwg_layer_inner_chain` 75 → 0, `pwg_layer_no_headword_paren` 82 → 2,
+`mw_variant_fusion` 10 → 0 — so both halves of the prediction were individually right and the
+net was still the wrong sign.
+
+`So:` when a handoff says "land the repair first, the queue will shrink", treat the shrink as
+an unmeasured assumption, and re-derive the queue before sizing any human sample against it. A
+blind arm drawn against the pre-repair queue keeps its value in the strata that survive, but
+some of its cards will have left the queue entirely (9 of 200 here) — count them and say so
+rather than reporting the arm at full size.
+
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §477. 35 cards is the floor for a 0.90 Wilson gate — and a censused stratum needs no interval at all
+
+🟡 **`wilson_lower(35, 35) = 0.9010`; `wilson_lower(34, 34) = 0.8983`.**
+When promotion is gated on a per-stratum Wilson-95 % lower bound ≥ 0.90, a stratum sampled with
+34 cards cannot clear the gate *even if the human agrees with every single card*. Sizing a
+review arm at "about 30 per stratum" therefore buys nothing: the votes are spent and the
+stratum still cannot promote.
+
+`Evidence:` the H1628 arm put 16, 11, 10, 10, 1 and 0 cards into six of eight strata — every
+one of them unpriceable at the 0.90 gate, capping promotion at 3,018 of 4,226 rows however the
+human voted. Re-drawing at 35/stratum lifted all of them past 0.90 (0.901–0.906) for 232 cards
+of human time.
+
+`So:` derive the per-stratum floor from the gate before drawing, not after. And note the
+corollary that is easy to miss: **a stratum small enough to census does not need an interval
+at all** — if every row in it carries a human vote there is nothing to extrapolate to, so it
+promotes by census while its Wilson bound is still below the threshold. The 31-row
+`granularity_ic_vs_full_decomposition` stratum promotes on `promotion_basis: census` with a
+bound of 0.890; reporting it as "unpromotable" because 0.890 < 0.90 would be wrong.
+
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §478. A blind arm stratified on an agent's own rules must not render the rule — and its card ids must come from the lock, not the frame
+
+🟠 **Stratifying a verification sample by the agent's classification is right; showing that
+classification on the card destroys the thing being measured.**
+An arm exists to price the agent. If the card displays the stratum, the rule, the verdict or
+the reason, the human is being asked to agree with a labelled claim rather than to judge the
+evidence, and the resulting precision is unmeasurable.
+
+`Evidence:` the H1703 arm is stratified on the H1681 rule ladder (`mw_cut_leaves_nonword`,
+`pwg_lexeme_vs_mw_suffixed_tail`, …). Those names are self-fulfilling as prompts. The card
+therefore carries only the two member lists, the source PWG parenthesis, the source MW `<k2>`
+and neutral badges (length, DCS frequency, member-count class); the stratum, rule and verdict
+live in the frame TSV. A selftest asserts no card JSON contains any of them.
+
+`So:` two rules for any blind arm built on top of an agent pass — (1) the sampling key never
+appears on the voting surface, and it is worth pinning that with a test rather than a comment,
+because the natural way to build a card is to reuse the row dict that already carries the
+label; (2) take the arm's card ids from the **committed lock**, not the frame TSV. The lock is
+what `validate_decisions.py` checks the human's export against, so it is the only list that can
+actually pay out — an unbound sheet must count as pricing nothing rather than silently falling
+back to its frame, which is how the unbound-sheet defect (H1703 item 1) stayed invisible until
+someone went looking.
+
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §479. PWG's etymology parenthesis: "first `{#…#}` per `+`-part" is right until PWG writes a derivation ladder
+
+🟡 **`(von {#BAnumant#} oder von {#BAnu#} + {#mati#})` — first-wins ships `BAnumant`, but the
+compound is `BAnu + mati`.**
+Extracting PWG's member chain needs three rules, and only the first is obvious. (a) Blank every
+balanced `[...]` — PWG nests a member's own sub-analysis there. (b) Within a `+`-part, the
+member is normally the *first* `{#…#}`; what follows is PWG's annotation of it
+(`{#agnim#} <ab>acc.</ab> von {#agni#}`, `{#Sira#} = {#Siras#}`). (c) But PWG also writes
+disjunctions and derivation ladders inside a part — `von X oder von Y`,
+`von X und dieses von Y` — where the first `{#…#}` is a *base*, not a member.
+
+`Evidence:` over the whole of `pwg.txt`, 1,564 `+`-parts carry more than one `{#…#}`: 1,056
+`von`-annotations and 252 `=`-glosses where first-wins is correct, against ~357 ladders and
+disjunctions where it is not. Settling the ambiguous ones against the headword's surface —
+first-wins if the members account for the headword within ±1 char per seam, else the unique
+candidate chain that does, else **drop** — resolves `BAnumatin` → `BAnu + mati` correctly and
+drops `DvajAgravatI` (a *derivative* of a compound: nothing composes it, so it is not surface
+segmentation gold at all). Also measured: PWG's analysis paren does **not** always sit
+immediately after the headword's `¦` (`{#BUsuta#}¦ 1〉 <lex>m.</lex> ({#BU#} + {#suta#})`), so
+requiring adjacency loses ~2,500 correct rows; accepting it across annotation-only material,
+and across a citation or gloss only when the chain composes the headword, keeps them without
+re-admitting the neighbouring-word defect.
+
+`So:` do not treat "first `{#…#}` per part" as the whole rule, and never guess when a part is
+ambiguous — drop and count by reason. The extractor
+([`pwg_compound_split.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/pwg_compound_split.py))
+and the adjudicator
+([`adjudicate_compound_differs.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/adjudicate_compound_differs.py))
+must stay in sync on all of this: if they disagree about what PWG says, the PWG-vs-MW queue
+measures the extractors instead of the dictionaries.
+
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §480. A non-empty PDF text layer proves nothing — check the SCRIPT; and "extract the largest embedded image" breaks when the PDF CROPS a 2-up scan
 
 🔴 **§470 and §473 were both written off one edition's page PDFs (ramayanagorr) and both
 mis-fire on the next one (ramayanabom).** The recipes are still right; what was missing is
@@ -4065,7 +4185,7 @@ at 4700×3500, some sepia DeviceRGB JPEG at half that, which OCR to nothing unbi
 
 _27-07-2026 · [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md) · Opus 5 1M `claude-opus-5[1m]`_
 
-### §477. A corpus file's PRESENCE is not evidence of its contents — `07_ramayana-uttarakanda.jsonl` is Sanskrit-only CRITICAL-edition text under a "Southern/Leonov" label, and a handoff was minted off the filename
+### §481. A corpus file's PRESENCE is not evidence of its contents — `07_ramayana-uttarakanda.jsonl` is Sanskrit-only CRITICAL-edition text under a "Southern/Leonov" label, and a handoff was minted off the filename
 
 🔴 **H1705 was written on the sentence "the corpus HAS `07_ramayana-uttarakanda.jsonl`, so
 the missing piece is the Bombay-numbering bridge, not the RU side."** The file exists. Both
