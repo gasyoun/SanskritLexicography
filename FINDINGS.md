@@ -41,6 +41,10 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟡 [§491. Verb-form frequency prelim is an unlabeled 42-row XLS with empty tense names](#491-verb-form-frequency-prelim-is-an-unlabeled-42-row-xls-with-empty-tense-names)
 - 🟠 [§492. Stopovye is a 102-file subset of Polnorazmernye, not a stopword filter of the full 506k](#492-stopovye-is-a-102-file-subset-of-polnorazmernye-not-a-stopword-filter-of-the-full-506k)
 
+- 🟡 [§493. Cross-vendor LLM second pass on routing gold is κ=1.0 — still not human IAA](#493-cross-vendor-llm-second-pass-on-routing-gold-is-κ10--still-not-human-iaa)
+- 🟠 [§494. Homonym token-attribution residual is a 38-group single-lemma_id ceiling](#494-homonym-token-attribution-residual-is-a-38-group-single-lemma_id-ceiling)
+- 🟡 [§495. Cyrillic name indices: 61 IAST-bearing seed files vs 47 pure-Cyrillic — rules still unsafe](#495-cyrillic-name-indices-61-iast-bearing-seed-files-vs-47-pure-cyrillic--rules-still-unsafe)
+
 
 **Grammar & morphology data**
 
@@ -4521,3 +4525,33 @@ Implication: Stopovye is **not** «the full parallel export with stopwords remov
 > **Source:** graduates [GAPS §5](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · manifest stopovye-parallel-passages / dcs-parallel-passages-full · [VisualDCS](https://github.com/gasyoun/VisualDCS) · H1735 · 27-07-2026 · Grok 4.5 (grok-4.5)
 
 
+
+### 493. Cross-vendor LLM second pass on routing gold is κ=1.0 — still not human IAA
+
+🟡 **A Grok 4.5 second annotation of the 24-scenario which-dictionary routing benchmark agrees with Fable 5 gold on 24/24 (Cohen's κ = 1.0 strict); this is cross-vendor LLM agreement, not human inter-annotator reliability.** Graduates GAPS §10 only partially.
+
+Evidence: independent second-pass labels committed before scoring (`tools/gaps_measure_out/h1745_routing_kappa.json` in Uprava H1745 pack; mirror in csl-guides). Answer space 44 codes; splits 18 dev + 6 test. Strict agree 24/24; lenient agree 24/24.
+
+Implication: the scenarios are **highly determinate** for current model families — κ=1 does not prove gold is human-reliable. A human second pass remains required before treating the benchmark as IAA-grounded. Kin: FINDINGS contamination note on same-family κ as reliability statistic.
+
+> **Source:** graduates [GAPS §10](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) (partial — human IAA still open) · [routing-benchmark.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/routing-benchmark.json) · H1745 · 27-07-2026 · Grok 4.5 (grok-4.5)
+
+### 494. Homonym token-attribution residual is a 38-group single-lemma_id ceiling
+
+🟠 **Of 72 homonym groups in WhitneyRoots `token_attribution.json`, 26 are reliable and 46 are not: 38 fail because DCS exposes a single verb lemma_id for the whole lump, and 8 collapse onto one homonym under the current gloss map. Lowering the coverage≥0.55 floor cannot create splits when n_lemma_id=1.**
+
+Evidence: re-count H1747 (`crosswalk/gaps_s4_homonym_ceiling_report.json`): reliable=26, unreliable=46, reasons={'DCS lumps (1 verb lemma_id)': 38, 'collapses onto one homonym': 8}. Sample lumps: gam, paś, ji, i, pat, stu (DCS single lemma_id). Extends FINDINGS §2 morphological ceiling into the post-gloss-mapping residual.
+
+Implication: residual work is **sense/gloss gold or DCS sense-level IDs**, not more morphology or coverage-threshold tuning. GAPS §4 stays open for the adjudication work itself; the ceiling is now measured.
+
+> **Source:** measures [GAPS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · [token_attribution.json](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/token_attribution.json) · H1747 · 27-07-2026 · Grok 4.5 (grok-4.5)
+
+### 495. Cyrillic name indices: 61 IAST-bearing seed files vs 47 pure-Cyrillic — rules still unsafe
+
+🟡 **A filesystem probe of SamudraManthanam + RussianTranslation name-like files found 61 files with inline IAST parentheses (seedable for a proper-noun lookup table) and 47 Cyrillic-heavy files with zero IAST hits; character-rule reverse transcription remains unsafe (FINDINGS §60 stands).**
+
+Evidence: H1746 probe scanned 152 candidate files (`RussianTranslation/tools/gaps_s6_cyrillic_name_probe.json`). Recoverable path = validated lookup seeded from IAST-bearing indices, not dental/retroflex-collapsing transcription.
+
+Implication: GAPS §6 is not closed — the 3 fully-Cyrillic glossaries still need human-validated onomasticon rows — but the seed inventory exists and rules-based conversion is reconfirmed as a dead end.
+
+> **Source:** measures [GAPS §6](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · [FINDINGS §60](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) · H1746 · 27-07-2026 · Grok 4.5 (grok-4.5)

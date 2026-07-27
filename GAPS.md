@@ -47,6 +47,7 @@ How to close: a human browser download of the two `.xml.gz` URLs (bookmarked in 
 
 ### §4. Homonym token frequency beyond the 26+5 splittable groups
 🟡 ✍️ **We have NOT attributed token frequency for the 33 of 38 DCS-lumped homonym groups that share a present class.**
+> **CEILING MEASURED 27-07-2026 → [FINDINGS §494](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (38 single-lemma_id lumps; adjudication still open). H1747.**
 Why it matters: token-level "N in this sense · M for the lemma" displays are impossible for these without sense/gloss adjudication; it is the ceiling on per-sense frequency accuracy.
 Blocker: no tool — gaṇa is undistinguishing (unaccented corpus, §8); needs manual gloss adjudication (DCS `meanings` ↔ Warnemyr gloss).
 How to close: extend the coverage≥0.55 gloss-mapping approach in `crosswalk/token_attribution.json`; owner WhitneyRoots.
@@ -65,6 +66,7 @@ How to close: parse the per-passage CSV records, diff against the full-export sa
 
 ### §6. Cyrillic-only Sanskrit name glossaries — no join key exists
 🟠 ✍️ **We have NOT (and cannot safely) build a Cyrillic→SLP1 key for the 3 fully-Cyrillic name glossaries.**
+> **SEED INVENTORY 27-07-2026 → [FINDINGS §495](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (61 IAST-bearing seeds / 47 pure-Cyrillic; rules still unsafe). H1746.**
 Why it matters: 3 of 6 SamudraManthanam name indices (Потапова, Эрман-Темкин, Бадь Kadambari) are 100% Cyrillic — blocked from any pwg_ru corpus_gate reuse.
 Blocker: no tool that is safe — practical Russian transcription collapses dental/retroflex (т = त and ट); a rule-based converter manufactures wrong keys for exactly the retroflex-bearing epic names.
 How to close: a proper-noun lookup table validated against a Sanskrit onomasticon (not character rules), checked as its own artifact first.
@@ -109,6 +111,7 @@ How to close: tally the disagreement-class distribution, append a FINDINGS row (
 
 ### §10. Which-dictionary routing benchmark has single-annotator gold, no κ
 🟠 ⚙️ **The 24-scenario routing shared-task benchmark (`which-dictionary-routing-benchmark`) has single-annotator gold (Fable 5, one pass) — NO inter-annotator agreement measured over its 44-code answer space.**
+> **PARTIAL 27-07-2026 → [FINDINGS §493](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (Grok second pass κ=1.0; human IAA still open). H1745.**
 Why it matters: a shared-task benchmark with no κ can't quantify its own gold reliability, which caps the credibility of any leaderboard result built on it (csl-guides `/about/shared-tasks`).
 Blocker: needs a second independent annotation pass (see `/gold-adjudicate`), not just a rerun.
 How to close: second-annotate the 24 scenarios, compute κ + a confusion table, append a FINDINGS row.
