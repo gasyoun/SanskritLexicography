@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.89.0] — 2026-07-27
+
 ### Added
 - **H1705 — R. (Bomb.) book 7: measured verdict, no OCR spent.** The Bombay
   uttarakāṇḍa does **not** map ≈1:1 onto the corpus text (111 sargas + 13
