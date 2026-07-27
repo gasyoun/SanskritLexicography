@@ -4321,7 +4321,7 @@ share varies sharply — `-a` 512,037 `Cpd` against 1,467,730 cased (25.9%), `-i
 nominal layer, it has measured the case-bearing part of it. The same discipline that makes
 E46's verbal cells honest applies here — and the assertion is not decorative: it is what caught
 a NULL-logic complement silently dropping the 8,542 untagged tokens from *both* sides of the
-split (the infra form of that trap is [Uprava FINDINGS §216](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)).
+split (the infra form of that trap is [Uprava FINDINGS §218](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)).
 
 _27-07-2026 · [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md) · [`reports/paradigm_nominal_build.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/paradigm_nominal_build.md) · Opus 5 1M `claude-opus-5[1m]`_
 
