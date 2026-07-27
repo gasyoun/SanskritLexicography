@@ -14,6 +14,10 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **GAPS residual H1745–H1747** (27-07-2026, Grok 4.5): FINDINGS §493–§495 (routing κ=1.0 LLM second pass; homonym 38 single-lemma_id ceiling; Cyrillic name seed inventory 61/47).
+
+
 ## [1.93.0] — 2026-07-27
 
 ### Added
