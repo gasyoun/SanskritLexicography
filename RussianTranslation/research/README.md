@@ -31,7 +31,17 @@ classifications/method-maps so they never get stranded in an ephemeral handoff:
 |---|---|
 | [ACL_ANTHOLOGY_MONITOR.md](ACL_ANTHOLOGY_MONITOR.md) | Monthly ACL-Anthology / NLP-for-DH monitor mapped onto the pwg_ru subsystems (judge · TM · terminology · structured-output · Sanskrit-NLP · data-docs · **word/sentence alignment** · **speech-translation alignment**), each entry with an `Actionable for us?` verdict. Includes the **"three publication-grade TM gaps → NLP directions"** map (verse→word alignment, per-segment QE grading, retrieval-TM). Codex automation `monthly-acl-anthology-sanskrit-nlp-monitor` appends to it. |
 | [INTERVIEWS.md](INTERVIEWS.md) | Recorded conversations with researchers/practitioners relevant to this direction (video + transcript + `Actionable for us?` verdict) — the conversation-shaped twin of the paper-shaped ACL monitor above. |
+| [WAVE2_COVERAGE_MONITOR.md](WAVE2_COVERAGE_MONITOR.md) | H1666 (26-07-2026): tracks the `verb_worklist.py` promoted/749-DCS-root % against Wave 2's "~50% coverage" trigger (currently 6.4%, stalled since 04-07-2026). Monthly `claude.ai` cloud routine appends a row and flags a GTD `@DECIDE` once ≥50%. |
 
+
+## Data assets
+
+Digitized evidence lanes feeding the B2 sense-inventory work (see
+[ROADMAP_ACL_LESSONS_2026.md](ROADMAP_ACL_LESSONS_2026.md) B2):
+
+| Dir | What it holds |
+|---|---|
+| [sinonimy/](sinonimy/README.md) | H1491 (26-07-2026): 47,273-row jsonl digitized from V.V. Leonchenko's Sinonimy xlsx workbooks ([VisualDCS/derived-data/Sinonimy](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Sinonimy/README.md)) — sense inventories + gloss-anchored Sanskrit synonym rings, evidence-only. Also registered in [../REUSE_MAP.md](../REUSE_MAP.md) §5. Not yet wired into `corpus_gate.py`. |
 
 ## Spawned as handoff chats (2026-06-23)
 Each brief was spun off as its own cold background-task chat (one click to start in a

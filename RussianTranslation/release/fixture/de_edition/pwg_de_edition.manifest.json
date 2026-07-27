@@ -1,0 +1,76 @@
+{
+  "base_iri": "https://w3id.org/sanskrit-lexicon/repwg/",
+  "entries": 7,
+  "exported_rows": 20,
+  "generated_at": "2026-07-26",
+  "handoff": "H1629",
+  "layer_counts": {
+    "citation_edges": 42,
+    "edition_rel": 17,
+    "form_notes": 2,
+    "gloss_spans": 3,
+    "government": 15
+  },
+  "layer_rows": {
+    "nws": 3,
+    "pw": 6,
+    "pwg": 3,
+    "pwkvn": 5,
+    "sch": 3
+  },
+  "profile": "pwg_de_edition.v1",
+  "quarantined": [
+    {
+      "fields": [
+        "de"
+      ],
+      "key1": "huti",
+      "subcard": "hUti"
+    },
+    {
+      "fields": [
+        "de"
+      ],
+      "key1": "parihara",
+      "subcard": "parihAra"
+    }
+  ],
+  "quarantined_rows": 2,
+  "rights": {
+    "allowlist": [
+      "key1",
+      "iast",
+      "subcard",
+      "sense_tag",
+      "layer",
+      "volume",
+      "page",
+      "column",
+      "de"
+    ],
+    "de_only": true,
+    "forbidden": [
+      "ru",
+      "en",
+      "review_status",
+      "reviewer",
+      "provenance",
+      "evidence",
+      "evidence_summary",
+      "corpus_gate",
+      "differentia"
+    ]
+  },
+  "sanitized_tag_rows": 1,
+  "sanitized_tags": [
+    {
+      "fields": [
+        "sense_tag"
+      ],
+      "key1": "yaj",
+      "slug": "c-dat.-instr",
+      "subcard": "yaj~~h0_00_pwg01"
+    }
+  ],
+  "source_rows": 22
+}

@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 25-07-2026_
+_Created: 04-07-2026 · Last updated: 26-07-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -8,6 +8,34 @@ This is the orientation document for anyone (human or session) who needs the
 narrated). Read this first; go to `.ai_state.md` for exact dates/PRs/numbers on
 any specific claim below, and to [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
 for the current operating procedure.
+
+### H1655 — the reviewer abort that made "no German before a human" a hard gate (26-07-2026)
+
+The first G5 sheet off the live queue (`g5-live-queue-batch1-2026-07-25`, 150 cards) was
+aborted by MG at 5 votes: cards reached the reviewer with reader-visible German («Я не должен
+искать немецкие слова в русском переводе. Ты должен. Перед тем как мне показывать»). Two
+distinct defect classes, neither caught by the existing layers: (1) the sheet showed **raw
+store markup**, so `<ab>` tokens that are deliberately render-translated (`s. u.` → «см.» via
+`pwg_ab_ru.RU_MAP`) looked like leaked German — a presentation defect, not a data defect;
+(2) `fg.` inside `<ls>` citation tails — invisible to the H1302 prose scanner (it masks
+`<ls>`) and out of scope for H1303's render map. Fix shipped as
+[`src/review_residue_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_residue_gate.py)
+(three layers: H1302 prose class-b · H1303 `<ab>` classification vs `RU_MAP` · `<ls>`-tail),
+wired into `build_g5_review_sheet.py` as a hard pre-filter, with the RU panel switched to the
+print rendering (tooltip keeps the original). Queue sweep: 637/11,163 (5.7%) flagged, and
+batch1v2 built from the clean 10,526. A second latent trap surfaced while applying the 5
+votes: **positional review-ids drift** — `row:NNNNNN:` embeds the store line position at
+queue-mint time, and the store had grown 11,163 → 11,603 since 06-07, so 2/5 votes resolved
+to nothing. `run_batch.py` lookups now fall back to the stable `subcard:<sub>#<tag>` tail
+(CI-pinned). Lesson for every future sheet: gate first, render what print renders, and never
+trust a positional id across store generations. Audit:
+[`review/decisions_applied_2026-07-26_g5-batch1.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_2026-07-26_g5-batch1.md).
+
+Same-day addendum: MG then ruled the P1 voting-queue triage `@DECIDE` «auto-reject» —
+machine-flagged cards never reach a human sheet. The gate grew a second layer
+(`machine_flags`: D1 Cyrillic-in-`{#…#}` · D3 gloss-wrapper drift · D4 slot-count mismatch,
+from the screening audit §5) and batch1v2 was superseded UNVOTED by **batch1v3** (exclusions:
+636 German + 3,236 machine-flagged; eligible 7,286/11,163; store-side repair = H1651).
 
 ### H858 Part B — the `{#…#}`-span drop stops nulling cards: source-anchored german repair (25-07-2026)
 
@@ -56,6 +84,42 @@ counters exist to answer it the moment a window runs.
 without `--no-residual`, so every suite run appended a junk row to the tracked
 `no_pwg_residuals.jsonl` — the registry that decides which keys are BLOCKED from requeue.
 Fixed with the flag; the polluting row was reverted.
+### Unreleased hardening — paid-call accounting and crash-recoverable promotion (25-07-2026)
+
+The headless route acquired two missing transaction boundaries. First,
+`pwg.call_reservation.v1` makes a model call a durable spend decision: the
+shared run ledger reserves one slot atomically before every probe or worker
+spawn and never refunds it after a crash. This makes `max_calls` a true
+pre-spawn ceiling across probes and generation. The separate cost ceiling
+remains an observed-cost stop after completed calls, not a strict dollar
+preauthorization; missing, pending, or malformed telemetry is
+`STOP_COST_UNEVALUABLE`, never zero. The profile lock now covers the whole
+warm-up + measured probe pair and the worker run, while Windows launchers enter
+a kill-on-close Job Object before their first instruction so a timeout cannot
+leave the native paid child orphaned.
+
+The execution seam is sealed end to end: saved run ID, manifest hash, preflight
+hash and exact key scope, profile fingerprint, reservation ledger, worker
+result hash, and coordinator submission must agree. `record-output-batch`
+keeps the existing per-lease audit transaction but runs it sequentially,
+emitting the exact durably committed prefix after each item; a failed item and
+the suffix remain retryable.
+
+Second, batched promotion now uses `pwg.promotion_journal.v1` with phases
+`prepared → store_committed → derived_validated → coordinator_committed →
+complete`. A single canonical-store claim is held for the whole sequence. The
+journal seals before/after store bytes, backup, cleaned inputs, card/fragment
+TM, denylist state, exact coordinator bytes, and deterministic per-lease
+registry projection. Every coordinator command first reconciles the one
+incomplete journal; interrupted store/coordinator replacements are adopted
+only when the exact expected hash is already live, while unrelated bytes or
+multiple incomplete journals stop closed.
+
+This entry records implementation state, not a release or live acceptance.
+No paid translation was started in this hardening pass. The next authorized
+attempt remains one profile, `max-wide=1`, explicit durable call ledger, and
+`--stop-before-promote`; a clean run ends at hash-bound `AWAITING_REVIEW`
+before any canonical-store mutation.
 
 ### H1386 — the H1339 review landing set: resume recovery, frag-TM memory, prepare-batch (22-07-2026)
 
@@ -858,6 +922,14 @@ Two consequences worth internalising before touching the lane:
   `selected_keys` rejection, an OS-released cross-process lock, owner-preserving fragment-TM
   v2 and the `AWAITING_REVIEW` checkpoint all landed in
   [PR #530](https://github.com/gasyoun/SanskritLexicography/pull/530).
+- **The 25-07 unreleased hardening closes the remaining cross-process seams.**
+  Calls are reserved durably before spawn across both probe and generation
+  lanes; cost-capped runs stop closed when observed telemetry cannot be
+  evaluated; profile claims cover complete probe pairs; Windows process trees
+  are kernel-owned; run/manifest/preflight/result hashes are bound through
+  recording; and promotion is startup-reconciled under one journal and one
+  canonical-store claim through `complete`. It started no paid translation and
+  does not change the standing stop-before-promote/review gate.
 
 **Live status evolves; do not freeze "host-blocked" as permanent.** H1110 Phase 6
 (18-07) terminated at **`HEALTH_NOGO_BY_ENVIRONMENT`** (c4 health **98,625 ms** vs a

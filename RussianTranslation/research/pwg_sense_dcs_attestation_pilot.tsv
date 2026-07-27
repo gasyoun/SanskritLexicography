@@ -1,0 +1,501 @@
+slp1	hom	n_pwg_senses	n_pwg_senses_with_ls	n_pwg_ls_total	dcs_lemma_count	n_dcs_wn_senses	dcs_sensetagged_count	sensetagged_share	n_pwg_senses_grounded	n_pwg_senses_grounded_verse	n_pwg_senses_gloss_overlap_only	grounding_computed	residual_class
+Aditya		11	11	198	1574	7	254	0.1614	0	0	2	1	R3_tagged_but_unaligned
+Agama		15	14	127	650	13	47	0.0723	0	0	1	1	R3_tagged_but_unaligned
+Agneya		15	15	65	369	7	51	0.1382	0	0	3	1	R3_tagged_but_unaligned
+Arya		13	12	28	856	10	97	0.1133	0	0	1	1	R3_tagged_but_unaligned
+As	2	22	22	317	1379	13	108	0.0783	0	0	0	1	R3_tagged_but_unaligned
+Asana	1	11	11	94	1295	9	109	0.0842	0	0	0	1	R3_tagged_but_unaligned
+Asura		11	11	64	151	3	17	0.1126	0	0	1	1	R3_tagged_but_unaligned
+Atman		16	14	221	11147	24	520	0.0466	0	0	1	1	R3_tagged_but_unaligned
+AvApa		13	13	45	75	2	20	0.2667	0	0	1	1	R3_tagged_but_unaligned
+BArata		15	15	165	2581	5	155	0.0601	2	0	0	1	R4_grounded_alignment
+BAva		17	17	238	2834	32	169	0.0596	0	0	1	1	R3_tagged_but_unaligned
+BAvana	1	18	16	98	90	2	2	0.0222	1	0	1	1	R4_grounded_alignment
+BErava	1	12	12	106	480	8	91	0.1896	0	0	1	1	R3_tagged_but_unaligned
+BIma		11	11	116	2373	18	236	0.0995	0	0	1	1	R3_tagged_but_unaligned
+BU	1	21	20	1159	32612	64	3393	0.1040	0	0	1	1	R3_tagged_but_unaligned
+BUta		17	17	327	4215	16	320	0.0759	1	0	2	1	R4_grounded_alignment
+BUti		11	11	99	285	9	117	0.4105	0	0	1	1	R3_tagged_but_unaligned
+BaNga		17	16	167	315	8	24	0.0762	0	0	1	1	R3_tagged_but_unaligned
+Badra		26	25	312	1211	25	103	0.0851	0	0	2	1	R3_tagged_but_unaligned
+Badraka		13	13	26	36	0	0	0.0000	1	0	1	1	R4_grounded_alignment
+Baga		11	11	232	417	11	80	0.1918	0	0	1	1	R3_tagged_but_unaligned
+Bavya		19	18	138	93	7	13	0.1398	0	0	1	1	R3_tagged_but_unaligned
+Beda		13	13	165	1796	20	142	0.0791	0	0	1	1	R3_tagged_but_unaligned
+CAya		15	14	138	7	0	0	0.0000	0	0	0	1	R2_no_wordsem_tag
+Cattra		12	12	56	424	4	40	0.0943	0	0	1	1	R3_tagged_but_unaligned
+DA	1	15	15	1184	2272	30	194	0.0854	0	0	2	1	R3_tagged_but_unaligned
+DAraRa		20	20	169	405	10	48	0.1185	1	0	0	1	R4_grounded_alignment
+Dara		11	10	99	930	9	94	0.1011	0	0	1	1	R3_tagged_but_unaligned
+DaraRa		18	13	64	35	1	2	0.0571	0	0	1	1	R3_tagged_but_unaligned
+Darma		12	12	210	11534	16	677	0.0587	0	0	1	1	R3_tagged_but_unaligned
+Davala		15	14	59	106	4	18	0.1698	0	0	1	1	R3_tagged_but_unaligned
+Dfti		13	12	102	469	8	14	0.0299	0	0	2	1	R3_tagged_but_unaligned
+DizaRa		11	10	75	12	2	2	0.1667	1	1	0	1	R4_grounded_alignment
+Druva		31	29	259	710	19	55	0.0775	0	0	3	1	R3_tagged_but_unaligned
+Endra		12	12	72	233	2	9	0.0386	0	0	1	1	R3_tagged_but_unaligned
+ErAvata		12	11	86	126	4	28	0.2222	1	0	1	1	R4_grounded_alignment
+Gana		19	18	145	987	21	250	0.2533	0	0	1	1	R3_tagged_but_unaligned
+Gawa		19	19	97	529	5	89	0.1682	0	0	1	1	R3_tagged_but_unaligned
+Gora		14	14	101	2223	11	237	0.1066	0	0	1	1	R3_tagged_but_unaligned
+ISvara		12	12	81	2605	25	282	0.1083	0	0	1	1	R3_tagged_but_unaligned
+Ka	2	15	15	93	676	14	135	0.1997	0	0	0	1	R3_tagged_but_unaligned
+KaRqa		13	13	89	704	13	79	0.1122	0	0	0	1	R3_tagged_but_unaligned
+Kara		15	15	115	641	13	217	0.3385	0	0	1	1	R3_tagged_but_unaligned
+KyA		11	11	243	691	7	111	0.1606	0	0	0	1	R3_tagged_but_unaligned
+Pala		17	17	116	5982	27	675	0.1128	0	0	2	1	R3_tagged_but_unaligned
+SAKa		13	13	121	16	1	1	0.0625	1	0	0	1	R4_grounded_alignment
+SAnta	1	16	15	207	19	3	3	0.1579	0	0	2	1	R3_tagged_but_unaligned
+SAnti		14	14	178	770	14	57	0.0740	1	0	1	1	R4_grounded_alignment
+SArada		18	18	113	113	7	30	0.2655	0	0	1	1	R3_tagged_but_unaligned
+SItala		15	15	98	583	8	105	0.1801	0	0	2	1	R3_tagged_but_unaligned
+SUnya		14	14	206	595	6	38	0.0639	0	0	0	1	R3_tagged_but_unaligned
+SaNKa		12	12	162	1256	15	312	0.2484	0	0	1	1	R3_tagged_but_unaligned
+SaNku		19	19	97	79	5	10	0.1266	0	0	2	1	R3_tagged_but_unaligned
+Sambara		16	16	111	139	2	21	0.1511	0	0	2	1	R3_tagged_but_unaligned
+SfNga		20	20	193	700	5	155	0.2214	1	0	1	1	R4_grounded_alignment
+SfNgin		13	11	42	96	7	22	0.2292	0	0	1	1	R3_tagged_but_unaligned
+SiKA		16	16	108	382	12	61	0.1597	0	0	1	1	R3_tagged_but_unaligned
+SiKaRqin		12	12	69	422	5	52	0.1232	1	0	0	1	R4_grounded_alignment
+SiKara		11	10	90	407	6	159	0.3907	0	0	0	1	R3_tagged_but_unaligned
+SiKarin		13	13	67	48	3	8	0.1667	0	0	1	1	R3_tagged_but_unaligned
+SiKin		18	17	149	231	10	84	0.3636	0	0	1	1	R3_tagged_but_unaligned
+Siva		33	33	367	2958	26	437	0.1477	0	0	3	1	R3_tagged_but_unaligned
+SoBana		12	12	115	629	7	92	0.1463	0	0	2	1	R3_tagged_but_unaligned
+SoDana		11	11	63	499	10	184	0.3687	0	0	0	1	R3_tagged_but_unaligned
+SrI	5	11	11	362	4152	32	260	0.0626	0	0	1	1	R3_tagged_but_unaligned
+Sri	1	19	19	641	326	9	20	0.0613	0	0	0	1	R3_tagged_but_unaligned
+Sruti	1	13	13	186	692	8	32	0.0462	1	0	1	1	R4_grounded_alignment
+SuBa		22	22	226	2846	20	352	0.1237	0	0	1	1	R3_tagged_but_unaligned
+Suci		18	18	224	1491	24	140	0.0939	0	0	3	1	R3_tagged_but_unaligned
+SudDa		15	14	106	527	14	63	0.1195	1	0	0	1	R4_grounded_alignment
+Sukla		26	26	171	892	9	94	0.1054	0	0	2	1	R3_tagged_but_unaligned
+Sukra		17	17	221	1303	22	207	0.1589	1	0	1	1	R4_grounded_alignment
+Sukti		11	11	57	132	5	40	0.3030	0	0	2	1	R3_tagged_but_unaligned
+Sveta		17	17	171	1131	14	351	0.3103	0	0	0	1	R3_tagged_but_unaligned
+aBi		12	11	70	1072	3	38	0.0354	0	0	0	1	R3_tagged_but_unaligned
+aDara		12	9	51	311	8	38	0.1222	0	0	1	1	R3_tagged_but_unaligned
+aNka		17	17	71	384	10	35	0.0911	0	0	1	1	R3_tagged_but_unaligned
+aTa		20	13	247	14105	7	1153	0.0817	0	0	0	1	R3_tagged_but_unaligned
+agni		15	15	53	9689	29	1844	0.1903	0	0	1	1	R3_tagged_but_unaligned
+aja	2	12	12	42	579	11	132	0.2280	0	0	1	1	R3_tagged_but_unaligned
+akza	2	22	22	65	1474	17	246	0.1669	0	0	3	1	R3_tagged_but_unaligned
+akzara		16	13	76	1039	14	57	0.0549	0	0	2	1	R3_tagged_but_unaligned
+alam		13	13	120	582	3	30	0.0515	0	0	0	1	R3_tagged_but_unaligned
+amara		14	14	52	805	10	115	0.1429	0	0	1	1	R3_tagged_but_unaligned
+amfta		36	30	206	1979	20	240	0.1213	0	0	3	1	R3_tagged_but_unaligned
+amoGa		14	14	39	183	4	6	0.0328	0	0	1	1	R3_tagged_but_unaligned
+ananta		19	19	106	879	12	63	0.0717	0	0	1	1	R3_tagged_but_unaligned
+anta		20	20	111	3936	31	439	0.1115	0	0	1	1	R3_tagged_but_unaligned
+antara		25	25	292	3224	25	262	0.0813	0	0	1	1	R3_tagged_but_unaligned
+anu	1	23	23	138	1359	7	85	0.0625	0	0	0	1	R3_tagged_but_unaligned
+anubanDa		17	16	54	218	3	10	0.0459	0	0	1	1	R3_tagged_but_unaligned
+anyatra		11	11	62	809	7	49	0.0606	0	0	0	1	R3_tagged_but_unaligned
+aparAjita		15	15	65	194	4	16	0.0825	0	0	1	1	R3_tagged_but_unaligned
+apara		11	11	122	2478	13	205	0.0827	0	0	0	1	R3_tagged_but_unaligned
+api		16	13	446	34022	13	1852	0.0544	0	0	0	1	R3_tagged_but_unaligned
+arTa		14	14	227	12546	32	1167	0.0930	0	0	1	1	R3_tagged_but_unaligned
+arizwa		20	20	135	303	13	43	0.1419	0	0	2	1	R3_tagged_but_unaligned
+arjuna		21	21	141	2012	9	364	0.1809	0	0	2	1	R3_tagged_but_unaligned
+arka		16	16	135	1487	9	929	0.6247	0	0	1	1	R3_tagged_but_unaligned
+aruRa		20	19	154	523	14	121	0.2314	0	0	1	1	R3_tagged_but_unaligned
+asita	2	12	12	92	400	11	63	0.1575	0	0	1	1	R3_tagged_but_unaligned
+asura		15	13	145	1914	5	182	0.0951	0	0	1	1	R3_tagged_but_unaligned
+bARa		13	13	117	1708	6	371	0.2172	0	0	2	1	R3_tagged_but_unaligned
+badara		12	12	99	110	2	14	0.1273	0	0	1	1	R3_tagged_but_unaligned
+bahula		22	22	175	404	13	78	0.1931	0	0	1	1	R3_tagged_but_unaligned
+bahurUpa		13	13	51	25	2	8	0.3200	0	0	1	1	R3_tagged_but_unaligned
+balin		12	8	40	776	16	72	0.0928	0	0	1	1	R3_tagged_but_unaligned
+banD		16	16	500	2210	37	495	0.2240	0	0	0	1	R3_tagged_but_unaligned
+banDura		12	11	47	32	0	0	0.0000	1	0	1	1	R4_grounded_alignment
+barbara		13	9	52	37	3	7	0.1892	0	0	1	1	R3_tagged_but_unaligned
+bfhant		18	17	223	169	1	2	0.0118	1	0	1	1	R4_grounded_alignment
+boDana		14	12	38	42	3	13	0.3095	0	0	1	1	R3_tagged_but_unaligned
+brAhma		13	13	131	400	3	20	0.0500	0	0	1	1	R3_tagged_but_unaligned
+brAhmaRa		13	13	194	4709	9	432	0.0917	0	0	2	1	R3_tagged_but_unaligned
+brahman	2	14	14	123	7813	35	888	0.1137	0	0	1	1	R3_tagged_but_unaligned
+cUqa		12	12	32	11	0	0	0.0000	0	0	0	1	R2_no_wordsem_tag
+ca	1	16	16	178	155088	7	15793	0.1018	0	0	0	1	R3_tagged_but_unaligned
+caRqa		16	16	103	262	7	30	0.1145	0	0	1	1	R3_tagged_but_unaligned
+cakra		23	22	156	1659	9	96	0.0579	0	0	1	1	R3_tagged_but_unaligned
+cakrin		16	14	51	60	4	5	0.0833	0	0	2	1	R3_tagged_but_unaligned
+candra		24	24	148	1476	15	315	0.2134	0	0	3	1	R3_tagged_but_unaligned
+candraka		15	14	51	31	1	1	0.0323	0	0	1	1	R3_tagged_but_unaligned
+capala		17	17	98	242	7	62	0.2562	0	0	0	1	R3_tagged_but_unaligned
+car		12	12	488	3059	25	215	0.0703	0	0	1	1	R3_tagged_but_unaligned
+cara		12	11	75	393	10	50	0.1272	0	0	1	1	R3_tagged_but_unaligned
+caraRa		15	15	88	694	6	90	0.1297	0	0	0	1	R3_tagged_but_unaligned
+citra		28	28	248	1462	37	156	0.1067	0	0	2	1	R3_tagged_but_unaligned
+dA	1	20	20	435	9987	36	1563	0.1565	0	0	0	1	R3_tagged_but_unaligned
+dIpaka		16	16	64	36	2	2	0.0556	0	0	1	1	R3_tagged_but_unaligned
+dIpana		12	10	40	690	12	166	0.2406	0	0	1	1	R3_tagged_but_unaligned
+daRqa		22	18	206	1764	23	153	0.0867	1	0	0	1	R4_grounded_alignment
+daRqaka		11	11	61	138	4	51	0.3696	1	0	1	1	R4_grounded_alignment
+dahana		11	10	56	174	9	36	0.2069	0	0	1	1	R3_tagged_but_unaligned
+dakza		13	12	223	770	12	85	0.1104	0	0	1	1	R3_tagged_but_unaligned
+dakziRa		15	15	229	1748	12	126	0.0721	1	0	2	1	R4_grounded_alignment
+darSana		11	11	166	2334	19	168	0.0720	0	0	0	1	R3_tagged_but_unaligned
+deva	1	15	15	177	15141	19	1512	0.0999	0	0	1	1	R3_tagged_but_unaligned
+divya		13	12	32	3424	16	397	0.1159	0	0	0	1	R3_tagged_but_unaligned
+droRa		21	20	152	2048	6	174	0.0850	0	0	2	1	R3_tagged_but_unaligned
+durga		13	13	120	447	7	38	0.0850	0	0	1	1	R3_tagged_but_unaligned
+fta		15	14	305	621	9	70	0.1127	1	0	1	1	R4_grounded_alignment
+fzaBa		16	14	144	2255	10	212	0.0940	0	0	1	1	R3_tagged_but_unaligned
+gOra		26	24	165	206	12	34	0.1650	0	0	2	1	R3_tagged_but_unaligned
+gaRqa		15	13	74	160	6	77	0.4813	0	0	1	1	R3_tagged_but_unaligned
+gam	1	26	26	640	15950	37	1441	0.0903	0	0	0	1	R3_tagged_but_unaligned
+ganDa		14	14	110	2546	23	706	0.2773	0	0	1	1	R3_tagged_but_unaligned
+ganDarva		12	12	196	1460	5	190	0.1301	0	0	1	1	R3_tagged_but_unaligned
+gati		17	17	147	2445	27	192	0.0785	0	0	1	1	R3_tagged_but_unaligned
+giri		11	11	67	1493	8	679	0.4548	0	0	1	1	R3_tagged_but_unaligned
+go		28	28	170	4319	24	708	0.1639	0	0	0	1	R3_tagged_but_unaligned
+gokarRa		14	14	61	200	5	21	0.1050	0	0	1	1	R3_tagged_but_unaligned
+gola		14	14	59	242	6	153	0.6322	0	0	1	1	R3_tagged_but_unaligned
+gopa		15	15	55	241	3	14	0.0581	0	0	1	1	R3_tagged_but_unaligned
+gotra		15	12	83	320	8	39	0.1219	0	0	0	1	R3_tagged_but_unaligned
+grAhin		13	12	30	223	3	15	0.0673	0	0	1	1	R3_tagged_but_unaligned
+grAhya		16	16	76	23	0	0	0.0000	0	0	0	1	R2_no_wordsem_tag
+granTila		13	6	15	23	1	7	0.3043	0	0	1	1	R3_tagged_but_unaligned
+guRa		18	18	244	5780	27	672	0.1163	0	0	1	1	R3_tagged_but_unaligned
+guqa		12	11	72	574	5	517	0.9007	0	0	1	1	R3_tagged_but_unaligned
+guru		16	16	215	4857	15	619	0.1274	0	0	1	1	R3_tagged_but_unaligned
+hA	2	15	13	441	2938	30	218	0.0742	0	0	1	1	R3_tagged_but_unaligned
+haMsa		20	20	224	656	4	68	0.1037	0	0	1	1	R3_tagged_but_unaligned
+han	1	40	40	1304	8257	39	1069	0.1295	0	0	0	1	R3_tagged_but_unaligned
+hara		12	11	141	2018	10	368	0.1824	0	0	1	1	R3_tagged_but_unaligned
+haraRa		11	11	76	243	10	28	0.1152	0	0	1	1	R3_tagged_but_unaligned
+hari	1	19	18	212	2715	22	490	0.1805	0	0	1	1	R3_tagged_but_unaligned
+harita		11	10	129	202	9	33	0.1634	0	0	2	1	R3_tagged_but_unaligned
+hasta		14	14	232	2309	5	358	0.1550	0	0	1	1	R3_tagged_but_unaligned
+haya		11	11	64	1094	2	220	0.2011	0	0	1	1	R3_tagged_but_unaligned
+hetu		14	14	140	2415	10	135	0.0559	0	0	1	1	R3_tagged_but_unaligned
+hi	1	14	14	224	19452	19	144	0.0074	0	0	0	1	R3_tagged_but_unaligned
+i	3	11	11	1396	2133	13	227	0.1064	0	0	0	1	R3_tagged_but_unaligned
+indra		12	12	157	8452	19	1488	0.1761	0	0	1	1	R3_tagged_but_unaligned
+jAla		14	13	141	757	13	43	0.0568	0	0	0	1	R3_tagged_but_unaligned
+jAlaka		15	14	38	18	0	0	0.0000	0	0	1	1	R2_no_wordsem_tag
+jAta		11	11	206	173	7	24	0.1387	0	0	0	1	R3_tagged_but_unaligned
+jAti		16	16	135	913	14	114	0.1249	0	0	1	1	R3_tagged_but_unaligned
+jIva		16	16	114	762	14	71	0.0932	0	0	1	1	R3_tagged_but_unaligned
+jIvaka		16	12	65	100	0	0	0.0000	0	0	1	1	R2_no_wordsem_tag
+jIvana		15	15	82	243	7	14	0.0576	1	0	1	1	R4_grounded_alignment
+jagat		12	12	139	16	3	5	0.3125	0	0	0	1	R3_tagged_but_unaligned
+jayanta		16	16	64	36	3	10	0.2778	0	0	1	1	R3_tagged_but_unaligned
+jyezWa		16	16	143	803	14	84	0.1046	0	0	2	1	R3_tagged_but_unaligned
+jyotis		14	13	162	928	12	91	0.0981	0	0	2	1	R3_tagged_but_unaligned
+kARqa	1	12	11	73	290	7	23	0.0793	0	0	1	1	R3_tagged_but_unaligned
+kAhala		13	10	18	9	1	1	0.1111	0	0	0	1	R3_tagged_but_unaligned
+kAka	1	18	12	63	312	2	39	0.1250	0	0	1	1	R3_tagged_but_unaligned
+kAla	1	29	27	129	7662	35	509	0.0664	0	0	1	1	R3_tagged_but_unaligned
+kAlaka		12	12	31	13	0	0	0.0000	0	0	1	1	R2_no_wordsem_tag
+kAlika	1	24	24	82	21	1	1	0.0476	0	0	1	1	R3_tagged_but_unaligned
+kAraRa	1	15	10	144	2426	10	87	0.0359	0	0	1	1	R3_tagged_but_unaligned
+kUwa	1	19	18	115	279	5	40	0.1434	1	0	0	1	R4_grounded_alignment
+ka	1	11	10	256	12187	14	494	0.0405	0	0	0	1	R3_tagged_but_unaligned
+kaNka		11	11	76	156	2	48	0.3077	0	0	1	1	R3_tagged_but_unaligned
+kaRwaka		19	18	102	263	8	33	0.1255	0	0	1	1	R3_tagged_but_unaligned
+kaTam		13	13	128	3543	2	139	0.0392	0	0	0	1	R3_tagged_but_unaligned
+kakza		23	19	136	200	10	39	0.1950	0	0	1	1	R3_tagged_but_unaligned
+kalA		15	15	121	944	8	71	0.0752	0	0	1	1	R3_tagged_but_unaligned
+kalpa		13	13	201	1369	16	123	0.0898	0	0	1	1	R3_tagged_but_unaligned
+kalyARa		14	14	106	556	12	34	0.0612	0	0	2	1	R3_tagged_but_unaligned
+kamala	1	21	19	104	488	5	80	0.1639	1	1	3	1	R4_grounded_alignment
+kandala		13	12	43	5	0	0	0.0000	0	0	1	1	R2_no_wordsem_tag
+kapila		12	11	153	293	10	41	0.1399	0	0	0	1	R3_tagged_but_unaligned
+karRika		16	16	62	9	0	0	0.0000	0	0	1	1	R2_no_wordsem_tag
+karaRa	2	25	22	195	1049	21	91	0.0867	0	0	1	1	R3_tagged_but_unaligned
+karavIra		12	10	46	118	3	29	0.2458	0	0	1	1	R3_tagged_but_unaligned
+karkawa		14	14	59	55	2	14	0.2545	0	0	1	1	R3_tagged_but_unaligned
+karman		11	8	133	8625	35	738	0.0856	0	0	0	1	R3_tagged_but_unaligned
+kawa		25	23	73	46	3	4	0.0870	0	0	1	1	R3_tagged_but_unaligned
+kazAya		12	12	122	1498	7	322	0.2150	0	0	2	1	R3_tagged_but_unaligned
+keSa		11	11	86	841	4	92	0.1094	1	0	1	1	R4_grounded_alignment
+kfta		22	22	118	528	14	55	0.1042	1	0	0	1	R4_grounded_alignment
+kfzRa		28	27	258	3716	31	675	0.1816	0	0	2	1	R3_tagged_but_unaligned
+koSa		29	29	168	474	14	45	0.0949	0	0	2	1	R3_tagged_but_unaligned
+kola		13	12	67	182	8	27	0.1484	0	0	2	1	R3_tagged_but_unaligned
+krUra		13	11	93	476	11	34	0.0714	1	1	1	1	R4_grounded_alignment
+krama		14	14	160	1238	17	240	0.1939	0	0	0	1	R3_tagged_but_unaligned
+kuSa		17	16	128	447	4	47	0.1051	0	0	1	1	R3_tagged_but_unaligned
+kuSala		12	10	85	1080	20	98	0.0907	1	0	0	1	R4_grounded_alignment
+kuYjara		11	9	65	434	9	144	0.3318	0	0	1	1	R3_tagged_but_unaligned
+kumAra		22	22	171	1044	11	70	0.0670	0	0	1	1	R3_tagged_but_unaligned
+kumBa		19	19	164	589	6	78	0.1324	0	0	1	1	R3_tagged_but_unaligned
+kumuda		18	16	73	181	8	33	0.1823	0	0	2	1	R3_tagged_but_unaligned
+kva		19	19	159	915	3	33	0.0361	0	0	0	1	R3_tagged_but_unaligned
+kzama		16	16	151	366	8	33	0.0902	0	0	0	1	R3_tagged_but_unaligned
+kzema		12	12	130	248	9	16	0.0645	0	0	2	1	R3_tagged_but_unaligned
+kzetra		12	12	82	893	16	63	0.0705	0	0	1	1	R3_tagged_but_unaligned
+kzip	1	13	13	346	2391	22	897	0.3752	0	0	1	1	R3_tagged_but_unaligned
+lANgala		12	10	65	54	2	8	0.1481	0	0	1	1	R3_tagged_but_unaligned
+laGu		12	12	202	1374	20	279	0.2031	0	0	2	1	R3_tagged_but_unaligned
+lakzaRa		13	13	201	2535	22	296	0.1168	0	0	2	1	R3_tagged_but_unaligned
+lakzya		13	13	95	213	4	15	0.0704	1	0	0	1	R4_grounded_alignment
+lalita		14	14	131	52	3	3	0.0577	0	0	2	1	R3_tagged_but_unaligned
+latA		14	14	73	549	7	43	0.0783	0	0	1	1	R3_tagged_but_unaligned
+lava		12	11	122	124	8	14	0.1129	0	0	2	1	R3_tagged_but_unaligned
+lohita		20	19	147	480	8	59	0.1229	1	0	1	1	R4_grounded_alignment
+mADava		19	19	121	548	9	75	0.1369	0	0	2	1	R3_tagged_but_unaligned
+mAgaDa		16	16	122	222	4	19	0.0856	0	0	2	1	R3_tagged_but_unaligned
+mAlaka		12	12	31	5	0	0	0.0000	0	0	2	1	R2_no_wordsem_tag
+mAlatI		13	10	17	77	1	8	0.1039	0	0	0	1	R3_tagged_but_unaligned
+mAlin		17	17	76	218	3	19	0.0872	0	0	1	1	R3_tagged_but_unaligned
+mAnasa	1	11	11	176	1123	11	71	0.0632	1	0	1	1	R4_grounded_alignment
+mAnin		11	11	118	265	6	9	0.0340	0	0	0	1	R3_tagged_but_unaligned
+mArga	2	13	13	191	1391	19	102	0.0733	0	0	1	1	R3_tagged_but_unaligned
+mAruta		11	11	95	810	11	179	0.2210	0	0	3	1	R3_tagged_but_unaligned
+mAtfka		12	12	63	11	0	0	0.0000	0	0	0	1	R2_no_wordsem_tag
+mAtra		11	11	361	2733	12	334	0.1222	0	0	0	1	R3_tagged_but_unaligned
+mEtra		16	16	134	117	2	5	0.0427	0	0	2	1	R3_tagged_but_unaligned
+mUla		17	17	128	3180	21	503	0.1582	0	0	0	1	R3_tagged_but_unaligned
+ma	2	19	16	36	20	4	17	0.8500	0	0	0	1	R3_tagged_but_unaligned
+maDu		16	15	279	2490	18	479	0.1924	0	0	2	1	R3_tagged_but_unaligned
+maDura		12	12	139	1993	13	249	0.1249	0	0	2	1	R3_tagged_but_unaligned
+maDya		14	14	258	3601	28	481	0.1336	0	0	1	1	R3_tagged_but_unaligned
+maDyama		19	18	200	653	13	72	0.1103	1	0	1	1	R4_grounded_alignment
+maNgala		14	14	151	468	4	36	0.0769	0	0	2	1	R3_tagged_but_unaligned
+maRqUka		11	10	69	145	5	43	0.2966	0	0	2	1	R3_tagged_but_unaligned
+maRqala		16	16	268	1356	20	104	0.0767	0	0	1	1	R3_tagged_but_unaligned
+mada		11	11	147	1236	18	123	0.0995	0	0	2	1	R3_tagged_but_unaligned
+madana		13	12	97	412	9	52	0.1262	0	0	1	1	R3_tagged_but_unaligned
+mah	3	13	13	150	426	13	50	0.1174	0	0	0	1	R3_tagged_but_unaligned
+mahAkAla		11	11	77	85	2	9	0.1059	0	0	1	1	R3_tagged_but_unaligned
+mahAvIra		12	10	75	20	1	2	0.1000	0	0	1	1	R3_tagged_but_unaligned
+mahant		11	10	290	284	6	17	0.0599	0	0	1	1	R3_tagged_but_unaligned
+makara		11	11	74	198	3	16	0.0808	0	0	1	1	R3_tagged_but_unaligned
+malla		13	10	57	116	4	73	0.6293	0	0	1	1	R3_tagged_but_unaligned
+man		16	16	623	4122	24	397	0.0963	0	0	0	1	R3_tagged_but_unaligned
+manda		17	17	183	1047	16	125	0.1194	0	0	1	1	R3_tagged_but_unaligned
+marut		11	11	123	976	4	118	0.1209	0	0	1	1	R3_tagged_but_unaligned
+mfga		18	17	214	1395	11	186	0.1333	0	0	1	1	R3_tagged_but_unaligned
+mitra		11	11	214	1570	6	201	0.1280	0	0	2	1	R3_tagged_but_unaligned
+mohana		16	16	61	98	4	4	0.0408	0	0	1	1	R3_tagged_but_unaligned
+muKa		16	16	197	4007	32	691	0.1724	0	0	1	1	R3_tagged_but_unaligned
+muRqa		16	14	84	229	8	85	0.3712	0	0	2	1	R3_tagged_but_unaligned
+muh	1	12	12	244	1003	6	39	0.0389	0	0	0	1	R3_tagged_but_unaligned
+nAga	1	16	15	163	2715	17	891	0.3282	0	0	2	1	R3_tagged_but_unaligned
+nAgadanta		5	5	22	8	0	0	0.0000	1	0	0	1	R4_grounded_alignment
+nAgadantaka		3	3	5	3	0	0	0.0000	0	0	0	1	R2_no_wordsem_tag
+nAgara		16	12	65	316	4	28	0.0886	0	0	2	1	R3_tagged_but_unaligned
+nAman		12	12	289	2667	9	283	0.1061	0	0	0	1	R3_tagged_but_unaligned
+nArAyaRa		11	11	108	1038	9	163	0.1570	1	0	2	1	R4_grounded_alignment
+nI	1	14	14	674	1809	21	151	0.0835	1	0	0	1	R4_grounded_alignment
+nIla		21	17	167	1043	22	234	0.2244	0	0	1	1	R3_tagged_but_unaligned
+nIlaka		12	11	27	17	3	5	0.2941	0	0	1	1	R3_tagged_but_unaligned
+nIlakaRWa		12	11	46	79	3	40	0.5063	0	0	2	1	R3_tagged_but_unaligned
+nala		14	14	76	304	5	52	0.1711	0	0	1	1	R3_tagged_but_unaligned
+nalina		13	13	116	55	1	5	0.0909	0	0	1	1	R3_tagged_but_unaligned
+nanda		33	32	103	229	4	12	0.0524	0	0	1	1	R3_tagged_but_unaligned
+nandaka		13	13	29	16	1	2	0.1250	0	0	1	1	R3_tagged_but_unaligned
+nandana		17	17	89	888	7	90	0.1014	0	0	2	1	R3_tagged_but_unaligned
+nandin		19	19	81	234	4	37	0.1581	0	0	1	1	R3_tagged_but_unaligned
+nara		17	16	87	5011	12	581	0.1159	0	0	1	1	R3_tagged_but_unaligned
+nawa		11	9	66	81	4	13	0.1605	0	0	1	1	R3_tagged_but_unaligned
+nivartana		12	12	54	75	2	10	0.1333	0	0	0	1	R3_tagged_but_unaligned
+nizWa		11	11	109	63	1	1	0.0159	0	0	0	1	R3_tagged_but_unaligned
+pARqu		11	11	74	1769	16	260	0.1470	0	0	2	1	R3_tagged_but_unaligned
+pAli		15	15	47	75	5	29	0.3867	0	0	0	1	R3_tagged_but_unaligned
+pAta	2	13	13	99	358	13	49	0.1369	0	0	1	1	R3_tagged_but_unaligned
+pAvana		21	18	88	230	2	6	0.0261	1	0	1	1	R4_grounded_alignment
+pAwala		11	9	78	56	3	3	0.0536	0	0	2	1	R3_tagged_but_unaligned
+pItaka		15	10	29	54	8	17	0.3148	0	0	0	1	R3_tagged_but_unaligned
+pOruza		11	11	89	355	6	23	0.0648	0	0	2	1	R3_tagged_but_unaligned
+pUraRa		13	13	93	141	6	29	0.2057	0	0	1	1	R3_tagged_but_unaligned
+pUrva		12	12	337	4404	22	634	0.1440	0	0	0	1	R3_tagged_but_unaligned
+paYcama		15	14	80	879	3	77	0.0876	1	0	0	1	R4_grounded_alignment
+pad	1	12	12	1326	382	5	58	0.1518	0	0	2	1	R3_tagged_but_unaligned
+pada		18	18	311	2913	27	212	0.0728	0	0	1	1	R3_tagged_but_unaligned
+padmAvatI		14	14	23	67	0	0	0.0000	1	0	0	1	R4_grounded_alignment
+padma		33	33	129	1309	12	225	0.1719	0	0	2	1	R3_tagged_but_unaligned
+padya		13	13	57	31	2	5	0.1613	0	0	1	1	R3_tagged_but_unaligned
+para		18	18	319	8813	22	520	0.0590	0	0	1	1	R3_tagged_but_unaligned
+parigraha		23	23	208	378	10	20	0.0529	0	0	1	1	R3_tagged_but_unaligned
+paruza		13	12	90	349	10	40	0.1146	0	0	1	1	R3_tagged_but_unaligned
+paryAya		12	11	101	343	5	27	0.0787	0	0	1	1	R3_tagged_but_unaligned
+pataMga		16	15	91	150	6	24	0.1600	0	0	1	1	R3_tagged_but_unaligned
+pavana		12	12	64	534	7	89	0.1667	0	0	1	1	R3_tagged_but_unaligned
+pawala		12	12	89	153	9	23	0.1503	0	0	0	1	R3_tagged_but_unaligned
+pfTu		14	12	165	490	13	60	0.1224	0	0	2	1	R3_tagged_but_unaligned
+piNga		14	13	53	85	4	9	0.1059	0	0	0	1	R3_tagged_but_unaligned
+piNgala		26	25	153	130	2	12	0.0923	0	0	1	1	R3_tagged_but_unaligned
+piRqa		28	25	97	895	16	178	0.1989	0	0	2	1	R3_tagged_but_unaligned
+picCa		14	13	54	12	2	2	0.1667	0	0	0	1	R3_tagged_but_unaligned
+pippala		13	13	86	64	2	16	0.2500	0	0	1	1	R3_tagged_but_unaligned
+plava		24	23	139	154	6	27	0.1753	0	0	2	1	R3_tagged_but_unaligned
+praTama		11	11	159	1511	7	138	0.0913	0	0	0	1	R3_tagged_but_unaligned
+pragraha		13	12	73	54	5	5	0.0926	0	0	1	1	R3_tagged_but_unaligned
+prakASa		18	18	164	709	14	60	0.0846	0	0	1	1	R3_tagged_but_unaligned
+prakfti		14	14	180	1475	16	133	0.0902	0	0	1	1	R3_tagged_but_unaligned
+pramARa		13	11	103	1327	18	150	0.1130	1	0	0	1	R4_grounded_alignment
+prati	1	14	14	239	2063	7	60	0.0291	0	0	0	1	R3_tagged_but_unaligned
+pratizWA		14	14	140	1275	17	34	0.0267	0	0	1	1	R3_tagged_but_unaligned
+pratyaYc		11	11	122	255	7	28	0.1098	0	0	0	1	R3_tagged_but_unaligned
+pravftti		13	13	131	553	11	32	0.0579	0	0	1	1	R3_tagged_but_unaligned
+priya		13	11	272	3968	23	372	0.0938	0	0	0	1	R3_tagged_but_unaligned
+puRqarIka		17	16	118	166	7	31	0.1867	0	0	1	1	R3_tagged_but_unaligned
+pulaka		11	10	59	65	3	6	0.0923	0	0	1	1	R3_tagged_but_unaligned
+pura		17	17	58	1518	4	241	0.1588	0	0	1	1	R3_tagged_but_unaligned
+puras		13	13	123	410	6	23	0.0561	0	0	0	1	R3_tagged_but_unaligned
+puruza		15	15	127	5208	16	404	0.0776	0	0	1	1	R3_tagged_but_unaligned
+putraka		13	12	91	297	6	39	0.1313	0	0	1	1	R3_tagged_but_unaligned
+puzkala		11	11	107	114	2	5	0.0439	0	0	2	1	R3_tagged_but_unaligned
+puzkara		30	30	176	432	9	75	0.1736	0	0	2	1	R3_tagged_but_unaligned
+puzpa		15	15	81	2219	13	350	0.1577	0	0	2	1	R3_tagged_but_unaligned
+rAga		11	11	189	1183	13	130	0.1099	0	0	0	1	R3_tagged_but_unaligned
+rEvata		13	13	67	63	4	6	0.0952	1	0	1	1	R4_grounded_alignment
+rOdra		17	17	42	478	12	51	0.1067	0	0	3	1	R3_tagged_but_unaligned
+rUpa		15	15	320	7308	41	520	0.0712	0	0	1	1	R3_tagged_but_unaligned
+rakta		20	15	156	2631	13	643	0.2444	0	0	3	1	R3_tagged_but_unaligned
+ramaRa		19	19	88	62	3	6	0.0968	0	0	2	1	R3_tagged_but_unaligned
+rasa		12	12	416	9348	38	3264	0.3492	0	0	1	1	R3_tagged_but_unaligned
+rati		12	12	154	688	10	34	0.0494	0	0	1	1	R3_tagged_but_unaligned
+rocana		20	19	132	192	7	19	0.0990	1	1	1	1	R4_grounded_alignment
+rohita		16	16	246	102	4	15	0.1471	1	0	2	1	R4_grounded_alignment
+ruci		11	11	122	412	10	48	0.1165	0	0	2	1	R3_tagged_but_unaligned
+rudra		13	13	216	2498	7	397	0.1589	0	0	1	1	R3_tagged_but_unaligned
+ruh	1	13	13	374	310	10	40	0.1290	0	0	0	1	R3_tagged_but_unaligned
+sA	3	22	21	297	98	5	11	0.1122	0	0	0	1	R3_tagged_but_unaligned
+sADana		21	21	181	652	13	68	0.1043	0	0	1	1	R3_tagged_but_unaligned
+sADu		17	15	384	1745	8	96	0.0550	0	0	0	1	R3_tagged_but_unaligned
+sADya	1	13	13	202	257	3	23	0.0895	0	0	2	1	R3_tagged_but_unaligned
+sAgara		12	12	58	1008	4	358	0.3552	0	0	1	1	R3_tagged_but_unaligned
+sAmarTya		11	11	96	178	5	12	0.0674	0	0	1	1	R3_tagged_but_unaligned
+sAra	2	23	23	277	932	17	144	0.1545	0	0	1	1	R3_tagged_but_unaligned
+sAraNga		11	11	92	51	3	4	0.0784	0	0	2	1	R3_tagged_but_unaligned
+sAvitra		27	27	160	59	2	4	0.0678	0	0	3	1	R3_tagged_but_unaligned
+sOmya		21	21	234	650	12	71	0.1092	1	0	1	1	R4_grounded_alignment
+sTA	1	63	62	1452	7882	30	533	0.0676	0	0	1	1	R3_tagged_but_unaligned
+sTARu		11	11	108	192	7	41	0.2135	0	0	1	1	R3_tagged_but_unaligned
+sTAna		26	26	392	2175	35	179	0.0823	0	0	1	1	R3_tagged_but_unaligned
+sTApana		14	13	46	120	7	16	0.1333	0	0	0	1	R3_tagged_but_unaligned
+sTala		11	11	153	248	5	12	0.0484	0	0	1	1	R3_tagged_but_unaligned
+sTira		18	18	244	742	18	87	0.1173	1	0	0	1	R4_grounded_alignment
+sTita		21	20	324	3	0	0	0.0000	0	0	0	1	R2_no_wordsem_tag
+sTiti		23	23	176	762	17	58	0.0761	0	0	1	1	R3_tagged_but_unaligned
+saMDAna		14	14	87	177	14	37	0.2090	0	0	0	1	R3_tagged_but_unaligned
+saMDi		21	21	224	849	7	221	0.2603	0	0	1	1	R3_tagged_but_unaligned
+saMDya		15	15	138	2	0	0	0.0000	0	0	0	1	R2_no_wordsem_tag
+saMgraha		16	14	178	406	11	23	0.0567	0	0	0	1	R3_tagged_but_unaligned
+saMsTAna		14	14	133	226	17	33	0.1460	0	0	1	1	R3_tagged_but_unaligned
+saMsTa		16	15	212	191	3	19	0.0995	0	0	0	1	R3_tagged_but_unaligned
+saMtAna		13	13	82	220	7	14	0.0636	0	0	1	1	R3_tagged_but_unaligned
+saMvarta		13	13	73	97	6	8	0.0825	0	0	1	1	R3_tagged_but_unaligned
+saYj		15	13	263	364	4	23	0.0632	0	0	1	1	R3_tagged_but_unaligned
+sad		17	17	721	601	14	63	0.1048	0	0	0	1	R3_tagged_but_unaligned
+sah	1	11	11	417	541	4	64	0.1183	0	0	0	1	R3_tagged_but_unaligned
+saha	2	13	13	94	5936	20	673	0.1134	0	0	1	1	R3_tagged_but_unaligned
+sama	2	23	23	413	5474	28	1240	0.2265	0	0	2	1	R3_tagged_but_unaligned
+samanta		12	11	135	42	3	4	0.0952	0	0	0	1	R3_tagged_but_unaligned
+samudra	1	16	16	134	1263	6	240	0.1900	0	0	1	1	R3_tagged_but_unaligned
+samyaYc		11	11	180	36	3	4	0.1111	0	0	1	1	R3_tagged_but_unaligned
+sarasvant		21	21	265	14	1	1	0.0714	0	0	1	1	R3_tagged_but_unaligned
+sarga		14	14	130	640	7	18	0.0281	0	0	0	1	R3_tagged_but_unaligned
+sarj	3	15	14	1087	2	0	0	0.0000	0	0	0	1	R2_no_wordsem_tag
+sarvatoBadra		17	17	45	25	3	4	0.1600	0	0	1	1	R3_tagged_but_unaligned
+satya		18	18	379	3694	15	306	0.0828	1	0	0	1	R4_grounded_alignment
+siD	2	31	30	328	1815	13	305	0.1680	0	0	1	1	R3_tagged_but_unaligned
+sidDi		16	16	236	2163	15	232	0.1073	0	0	1	1	R3_tagged_but_unaligned
+sita	3	17	17	126	645	12	157	0.2434	0	0	1	1	R3_tagged_but_unaligned
+skanDa		11	11	189	580	5	37	0.0638	0	0	1	1	R3_tagged_but_unaligned
+sma	1	15	15	193	2566	1	4	0.0016	0	0	0	1	R3_tagged_but_unaligned
+soma		13	10	229	2841	6	293	0.1031	0	0	1	1	R3_tagged_but_unaligned
+sparSa		14	14	144	899	6	77	0.0857	0	0	1	1	R3_tagged_but_unaligned
+sru		12	12	280	459	12	66	0.1438	0	0	0	1	R3_tagged_but_unaligned
+suBaga		12	12	183	390	17	33	0.0846	0	0	1	1	R3_tagged_but_unaligned
+suKa		15	15	267	3515	18	295	0.0839	0	0	0	1	R3_tagged_but_unaligned
+sudarSana		13	13	125	185	5	18	0.0973	0	0	3	1	R3_tagged_but_unaligned
+sumanas		13	13	158	233	9	25	0.1073	0	0	2	1	R3_tagged_but_unaligned
+sumuKa	2	15	15	94	71	5	7	0.0986	0	0	1	1	R3_tagged_but_unaligned
+suparRa		13	12	134	272	8	62	0.2279	0	0	1	1	R3_tagged_but_unaligned
+suraBi		14	14	187	312	12	46	0.1474	0	0	3	1	R3_tagged_but_unaligned
+surasa		11	11	62	65	3	6	0.0923	0	0	2	1	R3_tagged_but_unaligned
+suvarRa		16	16	144	1060	7	255	0.2406	0	0	3	1	R3_tagged_but_unaligned
+svastika		15	15	56	96	6	15	0.1562	0	0	2	1	R3_tagged_but_unaligned
+syandana		12	12	85	222	5	38	0.1712	0	0	2	1	R3_tagged_but_unaligned
+tAla		24	22	159	559	11	204	0.3649	0	0	2	1	R3_tagged_but_unaligned
+tAmasa	1	13	11	49	224	5	9	0.0402	0	0	1	1	R3_tagged_but_unaligned
+tAra		23	23	145	1043	10	611	0.5858	0	0	3	1	R3_tagged_but_unaligned
+tAraka		13	13	111	240	3	23	0.0958	0	0	1	1	R3_tagged_but_unaligned
+tArkzya		14	13	76	157	5	38	0.2420	0	0	1	1	R3_tagged_but_unaligned
+tIkzRa		23	16	50	1667	15	385	0.2310	0	0	2	1	R3_tagged_but_unaligned
+tIrTa		15	14	112	2467	7	69	0.0280	0	0	1	1	R3_tagged_but_unaligned
+tUla		12	12	51	76	5	7	0.0921	0	0	1	1	R3_tagged_but_unaligned
+ta	2	13	12	15	37	4	31	0.8378	0	0	0	1	R3_tagged_but_unaligned
+tala		14	14	109	1661	11	241	0.1451	0	0	1	1	R3_tagged_but_unaligned
+tantra		25	23	262	528	13	84	0.1591	0	0	1	1	R3_tagged_but_unaligned
+tanu		11	11	176	1132	18	129	0.1140	0	0	2	1	R3_tagged_but_unaligned
+tapana		15	15	70	105	7	16	0.1524	0	0	1	1	R3_tagged_but_unaligned
+tarala		13	13	70	85	3	6	0.0706	0	0	0	1	R3_tagged_but_unaligned
+tilaka		13	13	116	164	8	18	0.1098	0	0	2	1	R3_tagged_but_unaligned
+tripuwa		12	12	32	3	0	0	0.0000	0	0	1	1	R2_no_wordsem_tag
+tuNga		16	15	89	100	3	3	0.0300	0	0	1	1	R3_tagged_but_unaligned
+utTAna		14	10	65	141	9	14	0.0993	1	0	1	1	R4_grounded_alignment
+uttara	1	18	18	281	2732	26	288	0.1054	0	0	2	1	R3_tagged_but_unaligned
+vAhin		14	14	82	183	6	29	0.1585	0	0	0	1	R3_tagged_but_unaligned
+vAja		12	11	125	516	7	55	0.1066	0	0	1	1	R3_tagged_but_unaligned
+vAma	1	15	15	115	737	7	59	0.0801	0	0	1	1	R3_tagged_but_unaligned
+vAmana		20	20	160	165	9	30	0.1818	0	0	2	1	R3_tagged_but_unaligned
+vArAha		12	12	75	129	7	27	0.2093	0	0	2	1	R3_tagged_but_unaligned
+vAraRa	1	14	14	108	353	7	83	0.2351	0	0	2	1	R3_tagged_but_unaligned
+vArtta		11	11	168	5	1	1	0.2000	0	0	0	1	R3_tagged_but_unaligned
+vAruRa		16	14	172	207	4	14	0.0676	0	0	3	1	R3_tagged_but_unaligned
+vAsava		12	12	70	529	4	163	0.3081	0	0	2	1	R3_tagged_but_unaligned
+vESvAnara		11	11	115	254	8	46	0.1811	0	0	3	1	R3_tagged_but_unaligned
+vESvadeva		12	12	95	142	1	1	0.0070	1	0	1	1	R4_grounded_alignment
+vEjayanta		15	15	71	15	4	6	0.4000	0	0	2	1	R3_tagged_but_unaligned
+vIra		16	16	213	3549	14	308	0.0868	0	0	0	1	R3_tagged_but_unaligned
+vaMSa		16	16	150	926	15	76	0.0821	0	0	1	1	R3_tagged_but_unaligned
+vacana		12	12	127	2837	21	328	0.1156	0	0	0	1	R3_tagged_but_unaligned
+vad		14	14	366	3031	18	195	0.0643	0	0	0	1	R3_tagged_but_unaligned
+vah	1	16	16	722	1346	19	107	0.0795	0	0	0	1	R3_tagged_but_unaligned
+vahni		13	12	95	1610	17	440	0.2733	0	0	1	1	R3_tagged_but_unaligned
+vajra		21	21	103	2235	17	686	0.3069	0	0	2	1	R3_tagged_but_unaligned
+vakra		17	17	139	213	6	22	0.1033	0	0	1	1	R3_tagged_but_unaligned
+vana	1	14	14	127	3658	13	985	0.2693	0	0	2	1	R3_tagged_but_unaligned
+vapra		16	16	60	57	3	5	0.0877	0	0	0	1	R3_tagged_but_unaligned
+varAha		11	11	123	312	11	53	0.1699	0	0	1	1	R3_tagged_but_unaligned
+varDamAna		14	13	90	33	5	11	0.3333	0	0	2	1	R3_tagged_but_unaligned
+varRa		16	16	292	3299	21	674	0.2043	0	0	1	1	R3_tagged_but_unaligned
+vara	4	11	11	137	5055	28	562	0.1112	1	0	1	1	R4_grounded_alignment
+vartana		16	16	52	54	3	3	0.0556	0	0	1	1	R3_tagged_but_unaligned
+varza		11	11	247	2953	14	447	0.1514	0	0	1	1	R3_tagged_but_unaligned
+vas	5	14	14	344	2220	15	223	0.1005	0	0	0	1	R3_tagged_but_unaligned
+vasu		22	21	408	1471	25	199	0.1353	0	0	3	1	R3_tagged_but_unaligned
+velA		12	12	182	322	7	51	0.1584	0	0	1	1	R3_tagged_but_unaligned
+vfdDa	1	11	11	141	1185	16	160	0.1350	0	0	1	1	R3_tagged_but_unaligned
+vfka		18	18	115	159	4	25	0.1572	0	0	1	1	R3_tagged_but_unaligned
+vftta		30	30	262	902	7	102	0.1131	0	0	0	1	R3_tagged_but_unaligned
+vftti		18	18	349	1371	20	52	0.0379	0	0	1	1	R3_tagged_but_unaligned
+vfza	1	16	16	169	488	7	40	0.0820	0	0	1	1	R3_tagged_but_unaligned
+viBUti		13	13	126	196	8	19	0.0969	2	0	0	1	R4_grounded_alignment
+viDAna		12	12	151	1031	12	168	0.1629	0	0	0	1	R3_tagged_but_unaligned
+viDi	1	12	12	232	2828	22	364	0.1287	0	0	0	1	R3_tagged_but_unaligned
+viS	1	30	30	539	1998	15	184	0.0921	0	0	0	1	R3_tagged_but_unaligned
+viSAKa		15	15	110	50	4	8	0.1600	0	0	2	1	R3_tagged_but_unaligned
+viSAla		15	14	122	376	7	48	0.1277	0	0	1	1	R3_tagged_but_unaligned
+viSva		16	15	113	2891	16	312	0.1079	0	0	1	1	R3_tagged_but_unaligned
+vijaya		23	23	192	605	7	51	0.0843	0	0	2	1	R3_tagged_but_unaligned
+vikalpa		13	13	114	454	5	10	0.0220	0	0	1	1	R3_tagged_but_unaligned
+vikfti		12	11	78	244	7	22	0.0902	0	0	2	1	R3_tagged_but_unaligned
+vikrama		13	13	78	1011	11	87	0.0861	0	0	1	1	R3_tagged_but_unaligned
+vilAsin		14	11	77	31	0	0	0.0000	0	0	0	1	R2_no_wordsem_tag
+vimala		14	14	106	682	15	135	0.1979	0	0	1	1	R3_tagged_but_unaligned
+vinAyaka		11	11	70	80	3	14	0.1750	0	0	1	1	R3_tagged_but_unaligned
+viparyaya		11	11	143	391	7	19	0.0486	0	0	0	1	R3_tagged_but_unaligned
+virUpAkza		12	12	66	112	4	43	0.3839	0	0	1	1	R3_tagged_but_unaligned
+viraja		11	11	70	57	2	2	0.0351	1	0	0	1	R4_grounded_alignment
+visarga		16	16	108	195	7	10	0.0513	0	0	1	1	R3_tagged_but_unaligned
+vizaya		13	13	162	1546	14	64	0.0414	0	0	1	1	R3_tagged_but_unaligned
+vrata	1	12	12	291	2313	13	123	0.0532	0	0	0	1	R3_tagged_but_unaligned
+vyAla		11	10	85	193	4	21	0.1088	0	0	1	1	R3_tagged_but_unaligned
+vyaD		12	12	188	1525	9	183	0.1200	0	0	1	1	R3_tagged_but_unaligned
+vyaYjana		15	14	134	140	8	28	0.2000	0	0	1	1	R3_tagged_but_unaligned
+yA	1	16	16	909	5103	23	364	0.0713	0	0	0	1	R3_tagged_but_unaligned
+yad		12	11	145	45466	3	983	0.0216	0	0	0	1	R3_tagged_but_unaligned
+yadi		17	17	361	4703	3	61	0.0130	0	0	0	1	R3_tagged_but_unaligned
+yam		17	17	902	669	13	46	0.0688	0	0	1	1	R3_tagged_but_unaligned
+yat		14	14	403	4488	13	231	0.0515	0	0	1	1	R3_tagged_but_unaligned
+yatra		11	11	102	3831	3	102	0.0266	0	0	0	1	R3_tagged_but_unaligned
+yoga		27	27	460	4526	41	680	0.1502	0	0	1	1	R3_tagged_but_unaligned
+yogya		11	11	154	357	2	47	0.1317	1	1	0	1	R4_grounded_alignment
+yuj	1	12	12	1522	5373	43	658	0.1225	0	0	1	1	R3_tagged_but_unaligned

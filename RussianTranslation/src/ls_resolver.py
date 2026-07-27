@@ -125,6 +125,7 @@ _CODE_TO_PFX = {
     'Pañcat.': 'pantankose',
     'VS.': 'vajasasa',
     'TS.': 'taittiriyas',
+    'TBR.': 'taittiriyabr',
     'Ragh. ed. Calc.': 'raghuvamsacalc',
     'Raghuv.': 'raghuvamsacalc',
     'Ragh. (C)': 'raghuvamsacalc',
@@ -533,9 +534,16 @@ PWG_PATTERNS = [
               'https://ashtadhyayi.com/sutraani/$2/$3'),
     LsPattern(r'^(P[.]) *([1-8])(?![0-9,])',
               'https://ashtadhyayi.com/sutraani/$2'),
-    # Rig Veda Pratisthana
-    LsPattern(r'^(ṚV[.] PRĀTIŚ[.]) *([0-9]+), *([0-9]+)',
-              'rvAvHymnUrl2'),
+    # Rgveda-Pratisakhya (rvps scan) -- NOT the Rgveda hymn pages. This used
+    # to route through 'rvAvHymnUrl2' (the RV hymn-anchor generator), which
+    # silently produced a plausible-looking URL for a different text (and,
+    # for the undotted 'RV. PRAT.' spelling, fell through to a nonexistent
+    # rv00.* mandala-00 URL since no pattern matched it at all). Accepts both
+    # the diacritic 'RV. PRATIS.' and undotted 'RV. PRAT.' spellings. Must
+    # stay above the RV. 2-/3-param patterns below so it wins the
+    # first-match scan. See gasyoun/SanskritLexicography#826.
+    LsPattern(r'^(ṚV[.] PRĀTIŚ[.]|RV[.] PRAT[.]) *([0-9]+), *([0-9]+)',
+              'https://sanskrit-lexicon-scans.github.io/rvps/app1/?$2,$3'),
     # Rig Veda - 3 params
     LsPattern(r'^(ṚV[.]) *([0-9]+), *([0-9]+), *([0-9]+)',
               'rvAvHymnUrl'),
@@ -754,6 +762,13 @@ def href_taittiriya_samhita(data1: str):
     if m is None:
         return None
     return 'https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?%s,%s,%s' % (m.group(1), m.group(2), m.group(3))
+
+
+def href_taittiriya_brahmana(data1: str):
+    m = re.search(r'([0-9]+)[ ,]+([0-9]+)[ ,]+([0-9]+)', data1)
+    if m is None:
+        return None
+    return 'https://sanskrit-lexicon-scans.github.io/taittiriyabr/app1?%s,%s,%s' % (m.group(1), m.group(2), m.group(3))
 
 
 def href_satapatha_brahmana(data1: str):
@@ -1160,33 +1175,35 @@ def generate_href(dict_code: str, n_attribute, visible: str):
         return href_ramayana_gorresio(data1)
     elif pfx in ('MBH.', 'MBHC', 'MBHB', 'MBH'):
         return href_mahabharata(data1, pfx)
-    elif pfx == 'Pañcat.':
+    elif pfx == 'pantankose':
         return href_pancatantra(data1)
-    elif pfx == 'Hariv.':
+    elif pfx == 'hariv':
         return href_harivamsa(data1)
-    elif pfx in ('BhP.', 'bhagp'):
+    elif pfx in ('BhP.', 'bhagp', 'bhp'):
         return href_bhagavata_purana(data1)
     elif pfx in ('Ragh.', 'raghuvamsacalc'):
         return href_raghuvamsa(data1, pfx)
-    elif pfx == 'VS.':
+    elif pfx == 'vajasasa':
         return href_vajasansamhita(data1)
-    elif pfx == 'TS.':
+    elif pfx == 'taittiriyas':
         return href_taittiriya_samhita(data1)
+    elif pfx == 'taittiriyabr':
+        return href_taittiriya_brahmana(data1)
     elif pfx in ('ŚBr.', 'Śat. Br.', 'shatapathabr'):
         return href_satapatha_brahmana(data1)
-    elif pfx == 'Megh.':
+    elif pfx == 'meghaduta':
         return href_meghaduta(data1)
     elif pfx in ('Kum.', 'Kumāras.', 'kumaras'):
         return href_kumarasambhava(data1)
-    elif pfx == 'Mālav.':
+    elif pfx == 'malavikagni':
         return href_malavikagnimitra(data1)
     elif pfx in ('Vikr.', 'vikramor'):
         return href_vikramorvashiya(data1)
-    elif pfx == 'Bhag.':
+    elif pfx == 'bhagavadgita':
         return href_bhagavadgita(data1)
     elif pfx in ('Mn.', 'M.'):
         return href_manu(data1)
-    elif pfx == 'Nir.':
+    elif pfx == 'nir':
         return href_nirukta(data1)
     elif pfx == 'kathas':
         return href_kathasaritsagara(data1)

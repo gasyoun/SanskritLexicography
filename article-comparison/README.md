@@ -72,6 +72,31 @@ to `<w>.pd-min.ru.md` column 3 (then re-run
 where the gloss feeds a generated view). Sheets are registered in
 [Uprava/REVIEW_SHEETS_INDEX.md](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md).
 
+### Source-check pass (H1683, 26-07-2026) — reduced human ask
+
+Per the
+[voting-sheet screening audit](https://github.com/gasyoun/Uprava/blob/main/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md)
+§11 HYBRID ruling, every one of the 32 items now carries an agent verdict
+(`verdict`, `verdict_quote`, `verdict_note`, `verdict_agent` fields in
+[gloss_review_items.json](https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/gloss_review_items.json)),
+checked against the governing PD sense marker in `<w>.verbatim.md` (Cologne raw
+markup). Executor: Sonnet 5 (`claude-sonnet-5`).
+
+| Verdict | Count | Routing |
+|---|---:|---|
+| `source-contradicts` | 0 | none found this pass — nothing auto-rejected |
+| `source-confirms`, L-severity | 14 | accepted on the agent verdict alone (PD's own text/citation backs the edit); no further vote before `/decisions-apply` |
+| `source-confirms`, H/M-severity | 5 | routed to the human as a blind spot-check on the adjudicator (≈26 % of the 19 confirms) — `agni:A:4i`, `agni:A:4vi`, `aksara:A:2Eiii`, `ananta:A:m17B`, `anya:A:5Biii` |
+| `needs-human` | 13 | PD's own entry text does not decide these (external identification, e.g. which Jaina tīrthaṅkara, or a pure RU register/declension call) — go to the human in full |
+| **Reduced human ask** | **18 of 32 (56 %)** | down from all 32, but **more** than the ~8 pre-execution estimate in H1664's §11.2 planning row — that number was a guess made before any item was actually checked; this is the measured correction, logged rather than hidden |
+
+The regenerated sheets (`_build_gloss_review_sheets.py`) now render only the 18
+votable items as interactive cards, each showing the agent's verdict badge and
+quoted PD line; the 14 auto-accepted L-severity edits are listed read-only in
+each sheet's footer. No vote was cast and no edit was applied to any
+`<w>.pd-min.ru.md` in this pass — the reduction changes what is *asked*, not
+what has been *applied*.
+
 ## Method
 
 - **PD** = Deccan College *Encyclopaedic Dictionary of Sanskrit on Historical Principles* (unfinished; "a" coverage stops ~`apaca-`). All candidates were filtered to fall inside PD's wordlist — that is the real constraint, since every other CDSL dictionary has a complete "a".

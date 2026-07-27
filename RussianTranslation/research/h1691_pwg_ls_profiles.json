@@ -1,0 +1,2768 @@
+{
+ "AK": {
+  "citations_in_loci": 15892,
+  "comp_max": {
+   "0": 24,
+   "1": 152,
+   "2": 423,
+   "3": 240,
+   "4": 10
+  },
+  "ncomp_hist": [
+   [
+    4,
+    2141
+   ],
+   [
+    3,
+    1571
+   ],
+   [
+    0,
+    281
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    2,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "[COL. 28",
+    1
+   ],
+   [
+    "] 10",
+    1
+   ],
+   [
+    "(COL. 38",
+    1
+   ],
+   [
+    ")",
+    1
+   ]
+  ],
+  "pwg_abbrev": "AK",
+  "pwgbib_entry": "AMARAKOṢA nach der Ausgabe von COLEBROOKE und LOISELEUR DESLONGCHAMPS (GILD. Bibl. 251. 253).",
+  "sample": [
+   {
+    "headword": "aMSa",
+    "ls": "AK. 2,9,90"
+   },
+   {
+    "headword": "anya",
+    "ls": "AK. 3,2,32"
+   },
+   {
+    "headword": "avAra",
+    "ls": "AK 3,6,35"
+   },
+   {
+    "headword": "i",
+    "ls": "AK. 1,2,3,14"
+   },
+   {
+    "headword": "ftu",
+    "ls": "AK. 1,1,3,12"
+   },
+   {
+    "headword": "kalmAza",
+    "ls": "AK. 1,1,4,26"
+   }
+  ]
+ },
+ "AMAR": {
+  "citations_in_loci": 533,
+  "comp_max": {
+   "0": 100,
+   "1": 62
+  },
+  "ncomp_hist": [
+   [
+    1,
+    529
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    0,
+    2
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "a. 62",
+    1
+   ]
+  ],
+  "pwg_abbrev": "AMAR",
+  "pwgbib_entry": "AMARUŚATAKA nach der Calc. Ausg. (GILD. Bibl. 162).",
+  "sample": [
+   {
+    "headword": "aNgarAga",
+    "ls": "AMAR. 14"
+   },
+   {
+    "headword": "A",
+    "ls": "AMAR. 89"
+   },
+   {
+    "headword": "upadeSa",
+    "ls": "AMAR. 26"
+   },
+   {
+    "headword": "kopana",
+    "ls": "AMAR. 65"
+   },
+   {
+    "headword": "jana",
+    "ls": "AMAR. 69"
+   },
+   {
+    "headword": "DUrtatA",
+    "ls": "AMAR. 70"
+   }
+  ]
+ },
+ "BHĀVAPR": {
+  "citations_in_loci": 495,
+  "comp_max": {
+   "0": 7
+  },
+  "ncomp_hist": [
+   [
+    0,
+    396
+   ],
+   [
+    1,
+    99
+   ]
+  ],
+  "nonnumeric_components": [],
+  "pwg_abbrev": "BHĀVAPR",
+  "pwgbib_entry": "BHĀVAPRAKĀŚA, ein medic. Wörterbuch; nach Anführungen im ŚKDR.",
+  "sample": [
+   {
+    "headword": "ikzuganDa",
+    "ls": "BHĀVAPR"
+   },
+   {
+    "headword": "candradyuti",
+    "ls": "BHĀVAPR"
+   },
+   {
+    "headword": "parpawa",
+    "ls": "BHĀVAPR"
+   },
+   {
+    "headword": "amftAzwaka",
+    "ls": "BHĀVAPR"
+   },
+   {
+    "headword": "SakraSAKin",
+    "ls": "BHĀVAPR"
+   },
+   {
+    "headword": "siMhIlatA",
+    "ls": "BHĀVAPR"
+   }
+  ]
+ },
+ "BṚH. ĀR. UP": {
+  "citations_in_loci": 787,
+  "comp_max": {
+   "0": 321,
+   "1": 15,
+   "2": 79
+  },
+  "ncomp_hist": [
+   [
+    3,
+    751
+   ],
+   [
+    2,
+    21
+   ],
+   [
+    0,
+    11
+   ],
+   [
+    1,
+    4
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "1. fgg",
+    2
+   ],
+   [
+    "2. fgg",
+    2
+   ],
+   [
+    "6 (p. 150. bei",
+    1
+   ],
+   [
+    "8 (S. 195)",
+    1
+   ],
+   [
+    "10. fgg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "BṚH. ĀR. UP",
+  "pwgbib_entry": "BṚHADĀRAṆYAKOPANIṢAD, nach der Ausgabe von RÖER in der Bibliotheca indica.",
+  "sample": [
+   {
+    "headword": "a",
+    "ls": "BṚH. ĀR. UP. 4,3,22"
+   },
+   {
+    "headword": "anagna",
+    "ls": "BṚH. ĀR. UP. 6,1,14"
+   },
+   {
+    "headword": "aBinanda",
+    "ls": "BṚH. ĀR. UP. 6,2,13"
+   },
+   {
+    "headword": "asu",
+    "ls": "BṚH. ĀR. UP. 2,1,10"
+   },
+   {
+    "headword": "Asuri",
+    "ls": "BṚH. ĀR. UP. 2,6,3"
+   },
+   {
+    "headword": "kAma",
+    "ls": "BṚH. ĀR. UP. 2,4,5"
+   }
+  ]
+ },
+ "BṚH. ĀR. UP. S": {
+  "citations_in_loci": 738,
+  "comp_max": {
+   "0": 1096,
+   "1": 10
+  },
+  "ncomp_hist": [
+   [
+    1,
+    735
+   ],
+   [
+    2,
+    3
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "10. fg",
+    3
+   ],
+   [
+    "186. fg",
+    1
+   ],
+   [
+    "ult",
+    1
+   ],
+   [
+    "138. fg",
+    1
+   ],
+   [
+    "321. fg",
+    1
+   ],
+   [
+    "75. fg",
+    1
+   ],
+   [
+    "18 (19)",
+    1
+   ],
+   [
+    "45. fg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "BṚH. ĀR. UP. S",
+  "pwgbib_entry": "BṚHADĀRAṆYAKOPANIṢAD, nach der Ausgabe von RÖER in der Bibliotheca indica.",
+  "sample": [
+   {
+    "headword": "nam",
+    "ls": "BṚH. ĀR. UP. S. 101"
+   },
+   {
+    "headword": "piRqa",
+    "ls": "BṚH. ĀR. UP. S. 193"
+   },
+   {
+    "headword": "prAsaNgika",
+    "ls": "BṚH. ĀR. UP. S 295"
+   },
+   {
+    "headword": "ruD",
+    "ls": "BṚH. ĀR. UP. S 94"
+   },
+   {
+    "headword": "vivakzA",
+    "ls": "BṚH. ĀR. UP. S 83"
+   },
+   {
+    "headword": "saBya",
+    "ls": "BṚH. ĀR. UP. S. 85"
+   }
+  ]
+ },
+ "CAURAP": {
+  "citations_in_loci": 420,
+  "comp_max": {
+   "0": 96
+  },
+  "ncomp_hist": [
+   [
+    1,
+    392
+   ],
+   [
+    0,
+    28
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "1. fgg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "CAURAP",
+  "pwgbib_entry": "CAURAPAÑCĀŚIKĀ, ed. BOHLEN (GILD. Bibl. 156).",
+  "sample": [
+   {
+    "headword": "apagamana",
+    "ls": "CAURAP. 3"
+   },
+   {
+    "headword": "gA",
+    "ls": "CAURAP. 37"
+   },
+   {
+    "headword": "deSa",
+    "ls": "CAURAP. 23"
+   },
+   {
+    "headword": "pIq",
+    "ls": "CAURAP. 3"
+   },
+   {
+    "headword": "mfganABi",
+    "ls": "CAURAP. 9"
+   },
+   {
+    "headword": "vinamra",
+    "ls": "CAURAP. 5"
+   }
+  ]
+ },
+ "DAŚAK": {
+  "citations_in_loci": 1874,
+  "comp_max": {
+   "0": 201,
+   "1": 62,
+   "2": 5
+  },
+  "ncomp_hist": [
+   [
+    2,
+    1133
+   ],
+   [
+    0,
+    722
+   ],
+   [
+    1,
+    16
+   ],
+   [
+    3,
+    3
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "ult",
+    11
+   ],
+   [
+    "1 v. u",
+    10
+   ],
+   [
+    "3 v. u",
+    7
+   ],
+   [
+    "2 v. u",
+    5
+   ],
+   [
+    "12. fg",
+    5
+   ],
+   [
+    "13. fg",
+    5
+   ],
+   [
+    "11. fg",
+    3
+   ],
+   [
+    "16. fg",
+    3
+   ]
+  ],
+  "pwg_abbrev": "DAŚAK",
+  "pwgbib_entry": "DAŚAKUMĀRACARITA, ed. WILSON (GILD. Bibl. 236).",
+  "sample": [
+   {
+    "headword": "aDItin",
+    "ls": "DAŚAK. 140,3"
+   },
+   {
+    "headword": "jYA",
+    "ls": "DAŚAK"
+   },
+   {
+    "headword": "pUrRaBadra",
+    "ls": "DAŚAK. 115,1"
+   },
+   {
+    "headword": "aBijYAna",
+    "ls": "DAŚAK"
+   },
+   {
+    "headword": "leKa",
+    "ls": "DAŚAK. 83, 8"
+   },
+   {
+    "headword": "saMSaya",
+    "ls": "DAŚAK. 62,6"
+   }
+  ]
+ },
+ "GOBH": {
+  "citations_in_loci": 970,
+  "comp_max": {
+   "0": 58,
+   "1": 40,
+   "2": 162,
+   "3": 370
+  },
+  "ncomp_hist": [
+   [
+    3,
+    930
+   ],
+   [
+    2,
+    25
+   ],
+   [
+    0,
+    7
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    4,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "21. fgg",
+    1
+   ],
+   [
+    "162. fgg",
+    1
+   ],
+   [
+    "9. fgg",
+    1
+   ],
+   [
+    "11. fgg",
+    1
+   ],
+   [
+    "a",
+    1
+   ],
+   [
+    "1 (Ind. St. 5",
+    1
+   ],
+   [
+    "370)",
+    1
+   ],
+   [
+    "6. fgg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "GOBH",
+  "pwgbib_entry": "GOBHILA'S GṚHYASŪTRA; nach Mittheilungen von A. WEBER.",
+  "sample": [
+   {
+    "headword": "kASa",
+    "ls": "GOBH. 2,10"
+   },
+   {
+    "headword": "tantI",
+    "ls": "GOBH 8"
+   },
+   {
+    "headword": "pUjA",
+    "ls": "GOBH. 3,6,11"
+   },
+   {
+    "headword": "mekzaRa",
+    "ls": "GOBH. 1,5,21"
+   },
+   {
+    "headword": "vart",
+    "ls": "GOBH. 3,10,9"
+   },
+   {
+    "headword": "sabrahmacArin",
+    "ls": "GOBH. 3,3,18"
+   }
+  ]
+ },
+ "GĪT": {
+  "citations_in_loci": 1185,
+  "comp_max": {
+   "0": 37,
+   "1": 48
+  },
+  "ncomp_hist": [
+   [
+    2,
+    1178
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    1,
+    3
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "11. fg",
+    2
+   ],
+   [
+    "5. fgg",
+    1
+   ],
+   [
+    "11. fgg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "GĪT",
+  "pwgbib_entry": "GĪTAGOVINDA, ed. LASSEN (GILD. Bibl. 168).",
+  "sample": [
+   {
+    "headword": "ac",
+    "ls": "GĪT. 1,39"
+   },
+   {
+    "headword": "jan",
+    "ls": "GĪT. 10,3"
+   },
+   {
+    "headword": "niDi",
+    "ls": "GĪT. 5,13"
+   },
+   {
+    "headword": "maYjari",
+    "ls": "GĪT 11,12"
+   },
+   {
+    "headword": "rADika",
+    "ls": "GĪT. 1,37"
+   },
+   {
+    "headword": "vetasa",
+    "ls": "GĪT. 7,9"
+   }
+  ]
+ },
+ "HIT": {
+  "citations_in_loci": 2665,
+  "comp_max": {
+   "0": 202,
+   "1": 24
+  },
+  "ncomp_hist": [
+   [
+    2,
+    2621
+   ],
+   [
+    1,
+    30
+   ],
+   [
+    0,
+    14
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "ed",
+    10
+   ],
+   [
+    "17. fg",
+    4
+   ],
+   [
+    "6. fgg",
+    3
+   ],
+   [
+    "12. fg",
+    3
+   ],
+   [
+    "20. fg",
+    3
+   ],
+   [
+    "15. fgg",
+    2
+   ],
+   [
+    "11. fg",
+    2
+   ],
+   [
+    "7. fgg",
+    2
+   ]
+  ],
+  "pwg_abbrev": "HIT",
+  "pwgbib_entry": "HITOPADEŚA, ed. SCHLEGEL und LASSEN (GILD. Bibl. 225). Eine darauf folgende römische Zahl bezeichnet das Buch, eine arabische --die Seite; die zweite Zahl bezeichnet dort den Śloka, hier die Zeile.",
+  "sample": [
+   {
+    "headword": "akasmAt",
+    "ls": "HIT. 18,2"
+   },
+   {
+    "headword": "kAzWa",
+    "ls": "HIT. 49,11"
+   },
+   {
+    "headword": "dOrjanya",
+    "ls": "HIT. 85,9"
+   },
+   {
+    "headword": "Beda",
+    "ls": "HIT 75,11"
+   },
+   {
+    "headword": "laz",
+    "ls": "HIT. 44,8"
+   },
+   {
+    "headword": "SrIparvata",
+    "ls": "HIT. 59,13"
+   }
+  ]
+ },
+ "HIT. I,": {
+  "citations_in_loci": 724,
+  "comp_max": {
+   "0": 207,
+   "1": 22
+  },
+  "ncomp_hist": [
+   [
+    1,
+    692
+   ],
+   [
+    2,
+    32
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "152 (Sp. 662",
+    1
+   ],
+   [
+    "Z. 2 v. u.)",
+    1
+   ]
+  ],
+  "pwg_abbrev": "HIT. I,",
+  "pwgbib_entry": "HITOPADEŚA, ed. SCHLEGEL und LASSEN (GILD. Bibl. 225). Eine darauf folgende römische Zahl bezeichnet das Buch, eine arabische --die Seite; die zweite Zahl bezeichnet dort den Śloka, hier die Zeile.",
+  "sample": [
+   {
+    "headword": "akasmAt",
+    "ls": "HIT. I, 102"
+   },
+   {
+    "headword": "Atman",
+    "ls": "HIT. I, 151"
+   },
+   {
+    "headword": "ka",
+    "ls": "HIT. I, 169"
+   },
+   {
+    "headword": "guRa",
+    "ls": "HIT. I, 43"
+   },
+   {
+    "headword": "tilaka",
+    "ls": "HIT. I, 28"
+   },
+   {
+    "headword": "naS",
+    "ls": "HIT. I, 205"
+   }
+  ]
+ },
+ "KATHĀS": {
+  "citations_in_loci": 24756,
+  "comp_max": {
+   "0": 396,
+   "1": 408,
+   "2": 55
+  },
+  "ncomp_hist": [
+   [
+    2,
+    3919
+   ],
+   [
+    1,
+    78
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "4. fgg",
+    3
+   ],
+   [
+    "20. fgg",
+    3
+   ],
+   [
+    "24. fgg",
+    1
+   ],
+   [
+    "9. fgg",
+    1
+   ],
+   [
+    "45. fg",
+    1
+   ],
+   [
+    "102. fgg",
+    1
+   ],
+   [
+    "d",
+    1
+   ],
+   [
+    "122*",
+    1
+   ]
+  ],
+  "pwg_abbrev": "KATHĀS",
+  "pwgbib_entry": "KATHĀSARITSĀGARA, ed. BROCKHAUS (GILD. Bibl. 237).",
+  "sample": [
+   {
+    "headword": "agni",
+    "ls": "KATHĀS. 20,216"
+   },
+   {
+    "headword": "Ir",
+    "ls": "KATHĀS. 7,10"
+   },
+   {
+    "headword": "kva",
+    "ls": "KATHĀS. 5,121"
+   },
+   {
+    "headword": "tarp",
+    "ls": "KATHĀS. 9,46"
+   },
+   {
+    "headword": "DUsara",
+    "ls": "KATHĀS. 21, 73"
+   },
+   {
+    "headword": "paricaya",
+    "ls": "KATHĀS 25,31"
+   }
+  ]
+ },
+ "KAUŚ": {
+  "citations_in_loci": 3279,
+  "comp_max": {
+   "0": 160,
+   "1": 94
+  },
+  "ncomp_hist": [
+   [
+    1,
+    3260
+   ],
+   [
+    2,
+    12
+   ],
+   [
+    0,
+    7
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "25. fg",
+    4
+   ],
+   [
+    "47. fg",
+    4
+   ],
+   [
+    "72. fg",
+    3
+   ],
+   [
+    "18. fg",
+    3
+   ],
+   [
+    "85. fg",
+    2
+   ],
+   [
+    "82. fg",
+    2
+   ],
+   [
+    "75. fg",
+    2
+   ],
+   [
+    "76. fg",
+    2
+   ]
+  ],
+  "pwg_abbrev": "KAUŚ",
+  "pwgbib_entry": "KAUŚIKA'S SŪTRA zum ATHARVAVEDA. 14 Adhyāya. Die Kaṇ- ḍikā sind durchgezählt. Hdschr.",
+  "sample": [
+   {
+    "headword": "aDiSrayaRa",
+    "ls": "KAUŚ. 45"
+   },
+   {
+    "headword": "Gora",
+    "ls": "KAUŚ. 94"
+   },
+   {
+    "headword": "parileKa",
+    "ls": "KAUŚ. 18"
+   },
+   {
+    "headword": "maDya",
+    "ls": "KAUŚ. 50"
+   },
+   {
+    "headword": "vaqava",
+    "ls": "KAUŚ 110"
+   },
+   {
+    "headword": "samaSana",
+    "ls": "KAUŚ. 78"
+   }
+  ]
+ },
+ "KAṬHOP": {
+  "citations_in_loci": 486,
+  "comp_max": {
+   "0": 13,
+   "1": 29,
+   "2": 6
+  },
+  "ncomp_hist": [
+   [
+    2,
+    480
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "5. fgg",
+    1
+   ],
+   [
+    "15. fgg",
+    1
+   ],
+   [
+    "10. fg",
+    1
+   ],
+   [
+    "12. fg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "KAṬHOP",
+  "pwgbib_entry": "KAṬHOPANIṢAD in der Bibliotheca indica.",
+  "sample": [
+   {
+    "headword": "agrya",
+    "ls": "KAṬHOP. 3,12"
+   },
+   {
+    "headword": "itara",
+    "ls": "KAṬHOP. 5,5"
+   },
+   {
+    "headword": "tattvaBAva",
+    "ls": "KAṬHOP. 6,13"
+   },
+   {
+    "headword": "paS",
+    "ls": "KAṬHOP. 1,6"
+   },
+   {
+    "headword": "mAnin",
+    "ls": "KAṬHOP. 2,6"
+   },
+   {
+    "headword": "SarIra",
+    "ls": "KAṬHOP. 6,4"
+   }
+  ]
+ },
+ "KIR": {
+  "citations_in_loci": 691,
+  "comp_max": {
+   "0": 95,
+   "1": 81
+  },
+  "ncomp_hist": [
+   [
+    2,
+    685
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    0,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "4. fgg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "KIR",
+  "pwgbib_entry": "KIRĀTĀRJUNĪYA, ed. Calc. (GILD. Bibl. 139).",
+  "sample": [
+   {
+    "headword": "agastya",
+    "ls": "KIR. 12,41"
+   },
+   {
+    "headword": "nalada",
+    "ls": "KIR. 5,25"
+   },
+   {
+    "headword": "ambumuc",
+    "ls": "KIR. 5,12"
+   },
+   {
+    "headword": "vapra",
+    "ls": "KIR. 5,42"
+   },
+   {
+    "headword": "vyAla",
+    "ls": "KIR. 17,25"
+   },
+   {
+    "headword": "sahizRu",
+    "ls": "KIR. 2,50"
+   }
+  ]
+ },
+ "KĀTY. ŚR": {
+  "citations_in_loci": 8572,
+  "comp_max": {
+   "0": 1067,
+   "1": 511,
+   "2": 58,
+   "3": 19,
+   "4": 5
+  },
+  "ncomp_hist": [
+   [
+    3,
+    3789
+   ],
+   [
+    2,
+    187
+   ],
+   [
+    1,
+    13
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    5,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "8. fgg",
+    6
+   ],
+   [
+    "3. fgg",
+    5
+   ],
+   [
+    "1. fgg",
+    4
+   ],
+   [
+    "6. fgg",
+    4
+   ],
+   [
+    "7. fgg",
+    3
+   ],
+   [
+    "5. fgg",
+    3
+   ],
+   [
+    "2. fgg",
+    3
+   ],
+   [
+    "1 v. u",
+    3
+   ]
+  ],
+  "pwg_abbrev": "KĀTY. ŚR",
+  "pwgbib_entry": "KĀTYĀYANA'S ŚRAUTASŪTRĀṆI. 26 Adhyāya. Hdschr.",
+  "sample": [
+   {
+    "headword": "agnyAgAra",
+    "ls": "KĀTY. ŚR. 4,2,11"
+   },
+   {
+    "headword": "aBri",
+    "ls": "KĀTY. ŚR. 16,2, 23"
+   },
+   {
+    "headword": "AhitAgni",
+    "ls": "KĀTY. ŚR 16,6,11"
+   },
+   {
+    "headword": "OzWa",
+    "ls": "KĀTY. ŚR. 9,2,7"
+   },
+   {
+    "headword": "citya",
+    "ls": "KĀTY. ŚR 8,3,3"
+   },
+   {
+    "headword": "dvAtriMSat",
+    "ls": "KĀTY. ŚR. 24,2,10"
+   }
+  ]
+ },
+ "KĀŚ": {
+  "citations_in_loci": 389,
+  "comp_max": {},
+  "ncomp_hist": [
+   [
+    0,
+    389
+   ]
+  ],
+  "nonnumeric_components": [],
+  "pwg_abbrev": "KĀŚ",
+  "pwgbib_entry": "KĀŚIKĀVṚTTI; s. die Einleitung zu BÖHTLINGK'S Ausgabe des PĀṆINI, S. LIII.",
+  "sample": [
+   {
+    "headword": "aNga",
+    "ls": "KĀŚ"
+   },
+   {
+    "headword": "utTAna",
+    "ls": "KĀŚ"
+   },
+   {
+    "headword": "jan",
+    "ls": "KĀŚ"
+   },
+   {
+    "headword": "paraspara",
+    "ls": "KĀŚ"
+   },
+   {
+    "headword": "yajuzwama",
+    "ls": "KĀŚ"
+   },
+   {
+    "headword": "SAtapaTa",
+    "ls": "KĀŚ"
+   }
+  ]
+ },
+ "KĀṬH": {
+  "citations_in_loci": 1505,
+  "comp_max": {
+   "0": 73,
+   "1": 41,
+   "2": 15
+  },
+  "ncomp_hist": [
+   [
+    2,
+    1444
+   ],
+   [
+    0,
+    52
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "5. fgg",
+    2
+   ],
+   [
+    "(33",
+    1
+   ],
+   [
+    "8)",
+    1
+   ],
+   [
+    "16. fg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "KĀṬH",
+  "pwgbib_entry": "KĀṬHAKA-Recension des YĀJ. V.",
+  "sample": [
+   {
+    "headword": "AmayAvin",
+    "ls": "KĀṬH. 27,4"
+   },
+   {
+    "headword": "nidAnavant",
+    "ls": "KĀṬH. 20,9"
+   },
+   {
+    "headword": "Basad",
+    "ls": "KĀṬH. 13,7"
+   },
+   {
+    "headword": "UrRAstukA",
+    "ls": "KĀṬH. 25,6"
+   },
+   {
+    "headword": "lI",
+    "ls": "KĀṬH. 25,1"
+   },
+   {
+    "headword": "SuzkAgra",
+    "ls": "KĀṬH. 26,3"
+   }
+  ]
+ },
+ "MEGH": {
+  "citations_in_loci": 2323,
+  "comp_max": {
+   "0": 113
+  },
+  "ncomp_hist": [
+   [
+    1,
+    2322
+   ],
+   [
+    0,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "2. fg",
+    1
+   ],
+   [
+    "61. fg",
+    1
+   ],
+   [
+    "95. fg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "MEGH",
+  "pwgbib_entry": "MEGHADŪTA, ed. GILDEMEISTER (GILD. Bibl. 151).",
+  "sample": [
+   {
+    "headword": "aMSuka",
+    "ls": "MEGH. 63"
+   },
+   {
+    "headword": "kAtara",
+    "ls": "MEGH. 108"
+   },
+   {
+    "headword": "tridaSavanitA",
+    "ls": "MEGH. 59"
+   },
+   {
+    "headword": "priya",
+    "ls": "MEGH. 113"
+   },
+   {
+    "headword": "rAjarAja",
+    "ls": "MEGH. 3"
+   },
+   {
+    "headword": "SrI",
+    "ls": "MEGH. 93"
+   }
+  ]
+ },
+ "NIGH. PR": {
+  "citations_in_loci": 923,
+  "comp_max": {
+   "0": 10
+  },
+  "ncomp_hist": [
+   [
+    0,
+    919
+   ],
+   [
+    1,
+    4
+   ]
+  ],
+  "nonnumeric_components": [],
+  "pwg_abbrev": "NIGH. PR",
+  "pwgbib_entry": "NIGHAṆṬA PRAKĀŚA von BĀPŪ GAṄGĀDHARA. Bombay 1839. 4º.",
+  "sample": [
+   {
+    "headword": "jvarApaha",
+    "ls": "NIGH. PR"
+   },
+   {
+    "headword": "tIkzRadaMzwraka",
+    "ls": "NIGH. PR"
+   },
+   {
+    "headword": "darBakusuma",
+    "ls": "NIGH. PR"
+   },
+   {
+    "headword": "nAgamatI",
+    "ls": "NIGH. PR"
+   },
+   {
+    "headword": "bahuguqA",
+    "ls": "NIGH. PR"
+   },
+   {
+    "headword": "vajraSfNKalikA",
+    "ls": "NIGH. PR"
+   }
+  ]
+ },
+ "PAÑCAV. BR": {
+  "citations_in_loci": 2205,
+  "comp_max": {
+   "0": 239,
+   "1": 25,
+   "2": 39,
+   "3": 12,
+   "4": 3
+  },
+  "ncomp_hist": [
+   [
+    3,
+    1887
+   ],
+   [
+    2,
+    274
+   ],
+   [
+    0,
+    32
+   ],
+   [
+    1,
+    11
+   ],
+   [
+    5,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "1. fgg",
+    4
+   ],
+   [
+    "a",
+    2
+   ],
+   [
+    "10. fg",
+    2
+   ],
+   [
+    "18. fg",
+    2
+   ],
+   [
+    "12. fg",
+    2
+   ],
+   [
+    "6. fg",
+    1
+   ],
+   [
+    "7. fgg",
+    1
+   ],
+   [
+    "3. fgg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "PAÑCAV. BR",
+  "pwgbib_entry": "PAÑCAVIṂŚABRĀHMAṆA.",
+  "sample": [
+   {
+    "headword": "adaRqya",
+    "ls": "PAÑCAV. BR. 17,1"
+   },
+   {
+    "headword": "niDanavant",
+    "ls": "PAÑCAV. BR 16,5,25"
+   },
+   {
+    "headword": "Bid",
+    "ls": "PAÑCAV. BR. 16,16, 3"
+   },
+   {
+    "headword": "kARvya",
+    "ls": "PAÑCAV. BR. 14,6,6"
+   },
+   {
+    "headword": "vAjavant",
+    "ls": "PAÑCAV. BR. 18, 7,3"
+   },
+   {
+    "headword": "sattrAyaRa",
+    "ls": "PAÑCAV. BR. 25, 16,3"
+   }
+  ]
+ },
+ "PĀR. GṚHY": {
+  "citations_in_loci": 822,
+  "comp_max": {
+   "0": 13,
+   "1": 19,
+   "2": 14
+  },
+  "ncomp_hist": [
+   [
+    2,
+    783
+   ],
+   [
+    3,
+    25
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    0,
+    6
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "8 (9)",
+    1
+   ]
+  ],
+  "pwg_abbrev": "PĀR. GṚHY",
+  "pwgbib_entry": "PĀRASKARA'S GṚHYASŪTRĀṆI.",
+  "sample": [
+   {
+    "headword": "antasTa",
+    "ls": "PĀR. GṚHY. 1,16"
+   },
+   {
+    "headword": "gA",
+    "ls": "PĀR. GṚHY 3,3"
+   },
+   {
+    "headword": "DA",
+    "ls": "PĀR. GṚHY. 2,2"
+   },
+   {
+    "headword": "bAD",
+    "ls": "PĀR. GṚHY. 2,2"
+   },
+   {
+    "headword": "yama",
+    "ls": "PĀR. GṚHY. 2,7"
+   },
+   {
+    "headword": "Sirastas",
+    "ls": "PĀR. GṚHY. 1,16"
+   }
+  ]
+ },
+ "SĀṂKHYAK": {
+  "citations_in_loci": 710,
+  "comp_max": {
+   "0": 72,
+   "1": 23
+  },
+  "ncomp_hist": [
+   [
+    1,
+    706
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    0,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "39. fg",
+    2
+   ],
+   [
+    "52. fg",
+    2
+   ],
+   [
+    "46. fg",
+    2
+   ],
+   [
+    "11. fgg",
+    1
+   ],
+   [
+    "51 (S. 157)",
+    1
+   ],
+   [
+    "42 (p. 139)",
+    1
+   ],
+   [
+    "51 (S. 158)",
+    1
+   ],
+   [
+    "21 (S. 78). 62",
+    1
+   ]
+  ],
+  "pwg_abbrev": "SĀṂKHYAK",
+  "pwgbib_entry": "SĀṂKHYAKĀRIKĀ, ed. WILSON (GILD. Bibl. 271), mit Benutzung des Index in LASSEN'S Ausgabe (GILD. Bibl. 270).",
+  "sample": [
+   {
+    "headword": "aNkuSa",
+    "ls": "SĀṂKHYAK. 51"
+   },
+   {
+    "headword": "kalala",
+    "ls": "SĀṂKHYAK. 43"
+   },
+   {
+    "headword": "DA",
+    "ls": "SĀṂKHYAK. 16"
+   },
+   {
+    "headword": "prasava",
+    "ls": "SĀṂKHYAK. 11"
+   },
+   {
+    "headword": "rAjasa",
+    "ls": "SĀṂKHYAK. 45"
+   },
+   {
+    "headword": "Sabda",
+    "ls": "SĀṂKHYAK. 51"
+   }
+  ]
+ },
+ "SŪRYAS": {
+  "citations_in_loci": 1845,
+  "comp_max": {
+   "0": 80,
+   "1": 90,
+   "2": 1
+  },
+  "ncomp_hist": [
+   [
+    2,
+    1804
+   ],
+   [
+    1,
+    31
+   ],
+   [
+    0,
+    9
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "19. fg",
+    5
+   ],
+   [
+    "24. fg",
+    4
+   ],
+   [
+    "17. fg",
+    4
+   ],
+   [
+    "25. fg",
+    3
+   ],
+   [
+    "4. fg",
+    3
+   ],
+   [
+    "5. fg",
+    3
+   ],
+   [
+    "29. fg",
+    3
+   ],
+   [
+    "21. fg",
+    3
+   ]
+  ],
+  "pwg_abbrev": "SŪRYAS",
+  "pwgbib_entry": "SŪRYASIDDHĀNTA, nach Anführungen in HAUGHTON, A Dict. Beng. and S.",
+  "sample": [
+   {
+    "headword": "Asura",
+    "ls": "SŪRYAS"
+   },
+   {
+    "headword": "nAqI",
+    "ls": "SŪRYAS 12,5"
+   },
+   {
+    "headword": "Ba",
+    "ls": "SŪRYAS 11,21. fgg"
+   },
+   {
+    "headword": "mandapariDi",
+    "ls": "SŪRYAS. 2,34"
+   },
+   {
+    "headword": "yAmya",
+    "ls": "SŪRYAS. 2,63"
+   },
+   {
+    "headword": "aBAva",
+    "ls": "SŪRYAS 11,3"
+   }
+  ]
+ },
+ "TAITT. UP": {
+  "citations_in_loci": 398,
+  "comp_max": {
+   "0": 14,
+   "1": 13,
+   "2": 10,
+   "3": 1
+  },
+  "ncomp_hist": [
+   [
+    3,
+    198
+   ],
+   [
+    2,
+    192
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    4,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "1. fgg",
+    5
+   ],
+   [
+    "3. fgg",
+    3
+   ],
+   [
+    "2. fgg",
+    2
+   ],
+   [
+    "4 (S. 134)",
+    1
+   ],
+   [
+    "5. fgg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "TAITT. UP",
+  "pwgbib_entry": "TAITTIRĪYOPANIṢAD ? [Cologne Addition]",
+  "sample": [
+   {
+    "headword": "atas",
+    "ls": "TAITT. UP. 1,3,1"
+   },
+   {
+    "headword": "Aditya",
+    "ls": "TAITT. UP. 1,5,2"
+   },
+   {
+    "headword": "kAmarUpin",
+    "ls": "TAITT. UP. 3,10,5"
+   },
+   {
+    "headword": "pakza",
+    "ls": "TAITT. UP. 2,1"
+   },
+   {
+    "headword": "mar",
+    "ls": "TAITT. UP. 3,10,4"
+   },
+   {
+    "headword": "vftta",
+    "ls": "TAITT. UP. 1,11,3"
+   }
+  ]
+ },
+ "TAITT. ĀR": {
+  "citations_in_loci": 440,
+  "comp_max": {
+   "0": 442,
+   "1": 80,
+   "2": 77
+  },
+  "ncomp_hist": [
+   [
+    3,
+    318
+   ],
+   [
+    2,
+    108
+   ],
+   [
+    0,
+    12
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "9. fgg",
+    1
+   ],
+   [
+    "42. fg",
+    1
+   ],
+   [
+    "38. fg",
+    1
+   ],
+   [
+    "29. fg",
+    1
+   ],
+   [
+    "1. fgg",
+    1
+   ],
+   [
+    "63 (S. 894)",
+    1
+   ]
+  ],
+  "pwg_abbrev": "TAITT. ĀR",
+  "pwgbib_entry": "TAITTIRĪYĀRAṆYAKA.",
+  "sample": [
+   {
+    "headword": "agastya",
+    "ls": "TAITT. ĀR. 1,11,2"
+   },
+   {
+    "headword": "devaSrU",
+    "ls": "TAITT. ĀR 5,6,24"
+   },
+   {
+    "headword": "nArAyaRa",
+    "ls": "TAITT. ĀR. 10,1,6"
+   },
+   {
+    "headword": "BArata",
+    "ls": "TAITT. ĀR. 1,27,2"
+   },
+   {
+    "headword": "jahAka",
+    "ls": "TAITT. ĀR. 1,3,2"
+   },
+   {
+    "headword": "Sarva",
+    "ls": "TAITT. ĀR. 10,16"
+   }
+  ]
+ },
+ "TBR": {
+  "citations_in_loci": 3271,
+  "comp_max": {
+   "0": 466,
+   "1": 750,
+   "2": 23,
+   "3": 564,
+   "4": 11
+  },
+  "ncomp_hist": [
+   [
+    4,
+    3069
+   ],
+   [
+    3,
+    85
+   ],
+   [
+    2,
+    62
+   ],
+   [
+    0,
+    37
+   ],
+   [
+    1,
+    16
+   ],
+   [
+    5,
+    2
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "1. fgg",
+    3
+   ],
+   [
+    "11. fg",
+    2
+   ],
+   [
+    "3. fgg",
+    1
+   ],
+   [
+    "1. fg",
+    1
+   ],
+   [
+    "10. fgg",
+    1
+   ],
+   [
+    "6. fgg",
+    1
+   ],
+   [
+    "2 v. u",
+    1
+   ],
+   [
+    "1 v. u. 3",
+    1
+   ]
+  ],
+  "pwg_abbrev": "TBR",
+  "pwgbib_entry": "TAITTIRĪYABRĀHMAṆA.",
+  "sample": [
+   {
+    "headword": "krandya",
+    "ls": "TBR. 2,7,7,1"
+   },
+   {
+    "headword": "parivatsara",
+    "ls": "TBR. 1,4,10,1"
+   },
+   {
+    "headword": "maDukft",
+    "ls": "TBR. 3,10,10,1"
+   },
+   {
+    "headword": "yam",
+    "ls": "TBR. 3,3,1,3"
+   },
+   {
+    "headword": "viSva",
+    "ls": "TBR. 3,1,1,1"
+   },
+   {
+    "headword": "saMBftANga",
+    "ls": "TBR. 3,7,6,9"
+   }
+  ]
+ },
+ "TRIK": {
+  "citations_in_loci": 8692,
+  "comp_max": {
+   "0": 317,
+   "1": 413,
+   "2": 466,
+   "3": 4
+  },
+  "ncomp_hist": [
+   [
+    3,
+    3438
+   ],
+   [
+    0,
+    516
+   ],
+   [
+    2,
+    27
+   ],
+   [
+    1,
+    18
+   ],
+   [
+    4,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "196. fg",
+    2
+   ],
+   [
+    "(2",
+    1
+   ],
+   [
+    "38)",
+    1
+   ],
+   [
+    "15. fgg",
+    1
+   ],
+   [
+    "436. fg",
+    1
+   ],
+   [
+    "342. fg",
+    1
+   ],
+   [
+    "244. fg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "TRIK",
+  "pwgbib_entry": "TRIKĀṆḌAŚEṢA, ed. Calc. (GILD. Bibl. 258).",
+  "sample": [
+   {
+    "headword": "a",
+    "ls": "TRIK"
+   },
+   {
+    "headword": "AmuKa",
+    "ls": "TRIK. 3,2,30"
+   },
+   {
+    "headword": "kariBa",
+    "ls": "TRIK. 2,4,2"
+   },
+   {
+    "headword": "kOkkuwikandala",
+    "ls": "TRIK. 1,2,4"
+   },
+   {
+    "headword": "cakzuzya",
+    "ls": "TRIK. 3,3,311"
+   },
+   {
+    "headword": "tulADawa",
+    "ls": "TRIK. 1,2,13"
+   }
+  ]
+ },
+ "VET": {
+  "citations_in_loci": 623,
+  "comp_max": {
+   "0": 45,
+   "1": 1733,
+   "2": 12
+  },
+  "ncomp_hist": [
+   [
+    2,
+    596
+   ],
+   [
+    0,
+    18
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    3,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "8. fg",
+    1
+   ],
+   [
+    "11. fgg",
+    1
+   ],
+   [
+    "13. fg",
+    1
+   ],
+   [
+    "5. fgg",
+    1
+   ],
+   [
+    "9 (4",
+    1
+   ],
+   [
+    "12)",
+    1
+   ],
+   [
+    "17. fg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "VET",
+  "pwgbib_entry": "VETĀLAPAÑCAVIṂŚATI in LASSEN'S Anthologie (LA).",
+  "sample": [
+   {
+    "headword": "agamya",
+    "ls": "VET. 30,1"
+   },
+   {
+    "headword": "i",
+    "ls": "VET. 11,9"
+   },
+   {
+    "headword": "kutsay",
+    "ls": "VET. 3"
+   },
+   {
+    "headword": "grAmabAlajana",
+    "ls": "VET. 11,7"
+   },
+   {
+    "headword": "tatpraBAte",
+    "ls": "VET 13,8"
+   },
+   {
+    "headword": "durmuKa",
+    "ls": "VET. 9,15"
+   }
+  ]
+ },
+ "VET. IN LA. (III)": {
+  "citations_in_loci": 501,
+  "comp_max": {
+   "0": 92,
+   "1": 22
+  },
+  "ncomp_hist": [
+   [
+    2,
+    499
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "20. fg",
+    2
+   ],
+   [
+    "11. fg",
+    2
+   ],
+   [
+    "11. fgg",
+    1
+   ],
+   [
+    "14. fg",
+    1
+   ],
+   [
+    "18. fg",
+    1
+   ],
+   [
+    "7. fg",
+    1
+   ],
+   [
+    "15. fgg",
+    1
+   ],
+   [
+    "16. fgg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "VET. IN LA. (III)",
+  "pwgbib_entry": "VETĀLAPAÑCAVIṂŚATI in LASSEN'S Anthologie (LA).",
+  "sample": [
+   {
+    "headword": "ya",
+    "ls": "VET. in LA. (III) 7,14"
+   },
+   {
+    "headword": "ruh",
+    "ls": "VET. in LA. (III) 31,13"
+   },
+   {
+    "headword": "vart",
+    "ls": "VET. in LA. (III) 16,8"
+   },
+   {
+    "headword": "vivAda",
+    "ls": "VET. in LA. (III) 31,4"
+   },
+   {
+    "headword": "SUnya",
+    "ls": "VET. in LA. (III) 23,11. fg"
+   },
+   {
+    "headword": "sahasra",
+    "ls": "VET. in LA. (III) 24,4"
+   }
+  ]
+ },
+ "VP": {
+  "citations_in_loci": 4037,
+  "comp_max": {
+   "0": 2087,
+   "1": 411,
+   "2": 475,
+   "3": 80
+  },
+  "ncomp_hist": [
+   [
+    1,
+    2679
+   ],
+   [
+    2,
+    886
+   ],
+   [
+    3,
+    263
+   ],
+   [
+    0,
+    171
+   ],
+   [
+    4,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "N. 3",
+    93
+   ],
+   [
+    "N. 1",
+    71
+   ],
+   [
+    "N. 2",
+    51
+   ],
+   [
+    "N. 17",
+    35
+   ],
+   [
+    "N. 21",
+    35
+   ],
+   [
+    "N. 13",
+    33
+   ],
+   [
+    "N. 5",
+    31
+   ],
+   [
+    "N. 80",
+    30
+   ]
+  ],
+  "pwg_abbrev": "VP",
+  "pwgbib_entry": "VIṢṆUPURĀṆA. Es wird die WILSON'sche Uebersetzung (GILD. Bibl. 133) citirt.",
+  "sample": [
+   {
+    "headword": "aMSa",
+    "ls": "VP"
+   },
+   {
+    "headword": "kirAta",
+    "ls": "VP 192"
+   },
+   {
+    "headword": "dAha",
+    "ls": "VP. 192, N. 100"
+   },
+   {
+    "headword": "pradyota",
+    "ls": "VP. 466"
+   },
+   {
+    "headword": "yuvanASva",
+    "ls": "VP 369"
+   },
+   {
+    "headword": "SiSira",
+    "ls": "VP. 3,4,22"
+   }
+  ]
+ },
+ "ĀŚV. GṚHY": {
+  "citations_in_loci": 1712,
+  "comp_max": {
+   "0": 31,
+   "1": 41,
+   "2": 43,
+   "3": 13
+  },
+  "ncomp_hist": [
+   [
+    3,
+    946
+   ],
+   [
+    2,
+    741
+   ],
+   [
+    1,
+    19
+   ],
+   [
+    0,
+    5
+   ],
+   [
+    4,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "1. fgg",
+    2
+   ],
+   [
+    "27. fg",
+    2
+   ],
+   [
+    "13 (S. 48 bei ",
+    1
+   ],
+   [
+    "24 (1",
+    1
+   ],
+   [
+    "13)",
+    1
+   ],
+   [
+    "4. fgg",
+    1
+   ],
+   [
+    "13. fg",
+    1
+   ],
+   [
+    "10. fgg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "ĀŚV. GṚHY",
+  "pwgbib_entry": "ĀŚVALĀYANA'S GṚHYASŪTRĀṆI in 4 Adhyāya. Hdschr.",
+  "sample": [
+   {
+    "headword": "akzata",
+    "ls": "ĀŚV. GṚHY. 2,1"
+   },
+   {
+    "headword": "ci",
+    "ls": "ĀŚV. GṚHY. 4,5"
+   },
+   {
+    "headword": "parSu",
+    "ls": "ĀŚV. GṚHY. 1,15"
+   },
+   {
+    "headword": "man",
+    "ls": "ĀŚV. GṚHY. 1,1,4"
+   },
+   {
+    "headword": "lip",
+    "ls": "ĀŚV. GṚHY. 1,3,1"
+   },
+   {
+    "headword": "Sru",
+    "ls": "ĀŚV. GṚHY. 4,7,26"
+   }
+  ]
+ },
+ "ĀŚV. ŚR": {
+  "citations_in_loci": 2276,
+  "comp_max": {
+   "0": 213,
+   "1": 42,
+   "2": 38,
+   "3": 14
+  },
+  "ncomp_hist": [
+   [
+    3,
+    1137
+   ],
+   [
+    2,
+    1096
+   ],
+   [
+    1,
+    35
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    4,
+    2
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "4. fgg",
+    3
+   ],
+   [
+    "5. fgg",
+    2
+   ],
+   [
+    "6. fgg",
+    2
+   ],
+   [
+    "10. fgg",
+    2
+   ],
+   [
+    "3. fgg",
+    2
+   ],
+   [
+    "2. fgg",
+    2
+   ],
+   [
+    "13. fgg",
+    2
+   ],
+   [
+    "1. fgg",
+    2
+   ]
+  ],
+  "pwg_abbrev": "ĀŚV. ŚR",
+  "pwgbib_entry": "ĀŚVALĀYANA'S ŚRAUTASŪTRĀṆI in 12 Adhyāya. Handschrift.",
+  "sample": [
+   {
+    "headword": "agnipucCa",
+    "ls": "ĀŚV. ŚR. 4,10"
+   },
+   {
+    "headword": "ganDarva",
+    "ls": "ĀŚV. ŚR. 10,7"
+   },
+   {
+    "headword": "pOrRadarva",
+    "ls": "ĀŚV. ŚR 9,2"
+   },
+   {
+    "headword": "i",
+    "ls": "ĀŚV. ŚR. 8,14"
+   },
+   {
+    "headword": "vihAra",
+    "ls": "ĀŚV. ŚR 10,10"
+   },
+   {
+    "headword": "saMmArga",
+    "ls": "ĀŚV. ŚR 3,1,13"
+   }
+  ]
+ },
+ "ŚVETĀŚV. UP": {
+  "citations_in_loci": 588,
+  "comp_max": {
+   "0": 6,
+   "1": 46,
+   "2": 1
+  },
+  "ncomp_hist": [
+   [
+    2,
+    582
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    1,
+    1
+   ]
+  ],
+  "nonnumeric_components": [],
+  "pwg_abbrev": "ŚVETĀŚV. UP",
+  "pwgbib_entry": "ŚVETĀŚVATAROPANIṢAD in der Bibliotheca indica.",
+  "sample": [
+   {
+    "headword": "akratu",
+    "ls": "ŚVETĀŚV. UP. 3,20"
+   },
+   {
+    "headword": "ABAsa",
+    "ls": "ŚVETĀŚV. UP. 3,17"
+   },
+   {
+    "headword": "guhASaya",
+    "ls": "ŚVETĀŚV. UP. 3,11"
+   },
+   {
+    "headword": "nizkriya",
+    "ls": "ŚVETĀŚV. UP. 6, 19"
+   },
+   {
+    "headword": "akarRa",
+    "ls": "ŚVETĀŚV. UP. 3,19"
+   },
+   {
+    "headword": "SataDA",
+    "ls": "ŚVETĀŚV. UP. 5,9"
+   }
+  ]
+ },
+ "ŚĀṄKH. BR": {
+  "citations_in_loci": 871,
+  "comp_max": {
+   "0": 32,
+   "1": 42,
+   "2": 39
+  },
+  "ncomp_hist": [
+   [
+    2,
+    819
+   ],
+   [
+    0,
+    24
+   ],
+   [
+    3,
+    22
+   ],
+   [
+    1,
+    6
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "1. fgg",
+    1
+   ],
+   [
+    "6. fgg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "ŚĀṄKH. BR",
+  "pwgbib_entry": "ŚĀṄKHĀYANA'S BRĀHMAṆA.",
+  "sample": [
+   {
+    "headword": "aDvaga",
+    "ls": "ŚĀṄKH. BR. 2,9"
+   },
+   {
+    "headword": "nyUNKay",
+    "ls": "ŚĀṄKH. BR. 30,5"
+   },
+   {
+    "headword": "pradAvya",
+    "ls": "ŚĀṄKH. BR. 16,7"
+   },
+   {
+    "headword": "mftyuloka",
+    "ls": "ŚĀṄKH. BR. 20,1"
+   },
+   {
+    "headword": "rEvata",
+    "ls": "ŚĀṄKH. BR. 23,4"
+   },
+   {
+    "headword": "satyamaya",
+    "ls": "ŚĀṄKH. BR. 2,8"
+   }
+  ]
+ },
+ "ŚĀṄKH. GṚHY": {
+  "citations_in_loci": 889,
+  "comp_max": {
+   "0": 12,
+   "1": 41,
+   "2": 44
+  },
+  "ncomp_hist": [
+   [
+    2,
+    781
+   ],
+   [
+    3,
+    78
+   ],
+   [
+    0,
+    28
+   ],
+   [
+    1,
+    2
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "13. fg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "ŚĀṄKH. GṚHY",
+  "pwgbib_entry": "ŚĀṄKHĀYANA'S GṚHYASŪTRĀṆI.",
+  "sample": [
+   {
+    "headword": "azwaka",
+    "ls": "ŚĀṄKH. GṚHY"
+   },
+   {
+    "headword": "jEmini",
+    "ls": "ŚĀṄKH. GṚHY 6,6"
+   },
+   {
+    "headword": "piSita",
+    "ls": "ŚĀṄKH. GṚHY 6,1"
+   },
+   {
+    "headword": "maRqu",
+    "ls": "ŚĀṄKH. GṚHY. 4,10"
+   },
+   {
+    "headword": "ruc",
+    "ls": "ŚĀṄKH. GṚHY. 1,6"
+   },
+   {
+    "headword": "SrAdDika",
+    "ls": "ŚĀṄKH. GṚHY. 4,7"
+   }
+  ]
+ },
+ "ŚĀṄKH. ŚR": {
+  "citations_in_loci": 2679,
+  "comp_max": {
+   "0": 72,
+   "1": 9211,
+   "2": 75,
+   "3": 5
+  },
+  "ncomp_hist": [
+   [
+    3,
+    2631
+   ],
+   [
+    0,
+    27
+   ],
+   [
+    2,
+    18
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    4,
+    1
+   ]
+  ],
+  "nonnumeric_components": [
+   [
+    "1. fgg",
+    7
+   ],
+   [
+    "7. fgg",
+    3
+   ],
+   [
+    "10. fgg",
+    3
+   ],
+   [
+    "17. fgg",
+    3
+   ],
+   [
+    "3. fgg",
+    2
+   ],
+   [
+    "2. fgg",
+    2
+   ],
+   [
+    "5. fgg",
+    1
+   ],
+   [
+    "16. fgg",
+    1
+   ]
+  ],
+  "pwg_abbrev": "ŚĀṄKH. ŚR",
+  "pwgbib_entry": "ŚĀṄKHĀYANA'S ŚRAUTASŪTRĀṆI.",
+  "sample": [
+   {
+    "headword": "upANkya",
+    "ls": "ŚĀṄKH. ŚR. 10,8,33"
+   },
+   {
+    "headword": "cAturTAhnika",
+    "ls": "ŚĀṄKH. ŚR. 15,7,1"
+   },
+   {
+    "headword": "nAnA",
+    "ls": "ŚĀṄKH. ŚR. 16,7,8"
+   },
+   {
+    "headword": "plu",
+    "ls": "ŚĀṄKH. ŚR. 4,14,4"
+   },
+   {
+    "headword": "raBIyaMs",
+    "ls": "ŚĀṄKH. ŚR. 6,1,12"
+   },
+   {
+    "headword": "Svetaketu",
+    "ls": "ŚĀṄKH. ŚR. 16,29,7"
+   }
+  ]
+ }
+}

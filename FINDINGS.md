@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 21-07-2026_
+_Created: 26-06-2026 · Last updated: 27-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §460) whatever its section, so existing numbers never shift; when a finding is later
+(currently §488) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -54,6 +54,24 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§458. A Sanskrit dictionary’s big letters are big because they head *preverb families* — and testing entry-size decay needs an outlier-robust estimator, not a parametric regression](#458-a-sanskrit-dictionarys-big-letters-are-big-because-they-head-preverb-families--and-testing-entries-shrink-over-publication-needs-an-outlier-robust-estimator-not-a-parametric-regression-encyclopedic-dicts-have-single-300k-char-articles) — `a` 83.1% compounds is not unique (`u`/`p`/`s`/`v` close behind); every big letter heads a preverb family (`v`=vi-, `u`=ud-/upa-); SKD/VCP funding-decay REFUTED (ρ≈0.00), real in PWG/PWK/GRA.
 - 🔴 [§459. PWG entry-size decay is a *smooth* funding fade (−14 %/decade), not a one-time vol-1 correction — and SKD/VCP carry ~0 digitisation markup](#459-pwgs-entry-size-decay-is-a-smooth-fundingenergy-fade-across-its-whole-20-year-run-14-decade-not-a-one-time-correction-after-the-over-detailed-first-volume--and-skdvcp-carry-0-digitisation-markup) — PWG `<pc>`→volume→year maps all 123,366 entries to a real year; vols 2-7 still −15 %/decade after dropping vol-1 (settles the §458 cause question); density = digitisation apparatus, not lexicographic depth.
 - 🔴 [§460. "Gold" in this org means *frozen*, not *human-adjudicated* — 0 of 15 gold datasets have independent human annotation, and every travelling κ is model-vs-model (four contamination mechanisms)](#460-gold-in-this-org-means-frozen-not-human-adjudicated--0-of-15-gold-datasets-have-independent-human-annotation-and-every-travelling-κ-is-model-vs-model-four-contamination-mechanisms) — H1272 audit: 0 GOLD · 1 SILVER · 4 LLM-ASSISTED · 10 CONTAMINATED; the four mechanisms (self-authored gold, same-family κ as IRR, LLM output labelled human review, circular controls) are the checklist for any future eval set.
+- 🟠 [§461. The r2 kośa-fusion "separable" class is substantially an orthographic sandhi artifact](#461-the-r2-kośa-fusion-separable-class-is-substantially-an-orthographic-sandhi-artifact--whether-an-skd-citation-counts-fused-depends-on-whether-the-authoritys-name-begins-with-a-vowel) — whether an SKD citation counts "fused" depends on whether the authority's name begins with a vowel.
+- 🟠 [§462. On Windows, repeated repository discovery can dominate a Python pipeline](#462-on-windows-repeated-repository-discovery-can-dominate-a-python-pipeline-cache-checkout-identity-not-mutable-path-overrides) — 88 Git subprocesses cost 4.50 s of 5.29 s; cache the immutable checkout identity, not mutable path overrides.
+- 🔴 [§470. The Cologne scan-viewer page PDFs can carry an embedded digitized text layer](#470-the-cologne-scan-viewer-page-pdfs-can-carry-an-embedded-digitized-text-layer--check-get_text-before-declaring-no-e-text-exists-or-commissioning-ocr) — the ramayanagorr Google-sourced page PDFs held a clean Devanagari text layer; the full Gorresio e-text (10,225 vv) was extracted with zero new OCR the same day "no e-text exists" was concluded. Check `get_text()` per VOLUME before commissioning OCR; anchor ॥N॥ segmentation to an external per-page verse index (OCR drops digits).
+- 🔴 [§473. OCR the canonical page files themselves — mapping a third-party OCR of "the same" scan onto them loses to offset drift, thumbnail decoys, and digit aliasing](#473-ocr-the-canonical-page-files-themselves--mapping-a-third-party-ocr-of-the-same-scan-onto-them-loses-to-offset-drift-thumbnail-decoys-and-digit-aliasing) — the DLI vol-2 leaf offset drifts +48→+20 and verse-number anchors alias across short sargas; tesseract-5 `san` on the Cologne pages' own embedded full-res images closed the §470 vols-2/4/uk gap (e-text 10,225→19,852 vv, all 672 sargas) with zero mapping risk. Take the LARGEST embedded image, never `get_images()[0]` (thumbnail decoy); normalize `।।`→`॥` before ॥N॥ segmentation.
+- 🔴 [§480. A non-empty PDF text layer proves nothing — check the SCRIPT; and "extract the largest embedded image" breaks when the PDF CROPS a 2-up scan](#480-a-non-empty-pdf-text-layer-proves-nothing--check-the-script-and-extract-the-largest-embedded-image-breaks-when-the-pdf-crops-a-2-up-scan) — the ramayanabom page PDFs return ~1,100–2,300 chars each, all of it Latin garbage from a Latin-alphabet OCR of Devanagari; and each 1128×420 pt page embeds a 4700×3500 TWO-page scan it crops in half, so §473's largest-image rule silently OCRs two pages at once. Render the page instead. Amends §470 and §473 for the next edition.
+- 🔴 [§481. A corpus file's PRESENCE is not evidence of its contents — `07_ramayana-uttarakanda.jsonl` is Sanskrit-only CRITICAL-edition text under a "Southern/Leonov" label, and a handoff was minted off the filename](#481-a-corpus-files-presence-is-not-evidence-of-its-contents--07_ramayana-uttarakandajsonl-is-sanskrit-only-critical-edition-text-under-a-southernleonov-label-and-a-handoff-was-minted-off-the-filename) — 2,690 `sa` segments and 0 `ru`; 99.9% of its verses align to the DCS critical edition at the identical `sarga.verse` while kāṇḍas 1/2/3/5 sit at 1–3%. H1705 was written to "bridge the Bombay numbering" for a book whose blocker is that no Russian uttarakāṇḍa exists.
+- 🟠 [§482. A count column with no stated provenance is not data — it is a ranking, and the difference decides whether you may divide by it](#482-a-count-column-with-no-stated-provenance-is-not-data-it-is-a-ranking-and-the-difference-decides-whether-you-may-divide-by-it) — a corpus count column whose provenance is unstated supports a ranking but not a rate — check before dividing by it.
+- 🔴 [§483. A resolver that fails closed is a gap; one that fails *open* is a wrong answer — and only the second is an integrity defect](#483-a-resolver-that-fails-closed-is-a-gap-one-that-fails-open-is-a-wrong-answer-and-only-the-second-is-an-integrity-defect) — a resolver that returns nothing is a gap; one that returns the wrong thing is an integrity defect — only the second corrupts downstream data.
+- 🔴 [§484. A quarter of the DCS nominal mass has no case at all — `feat_case='Cpd'` is a compound member, not a ninth case](#484-a-quarter-of-the-dcs-nominal-mass-has-no-case-at-all-feat_casecpd-is-a-compound-member-not-a-ninth-case) — 724,676 of 2,996,410 NOUN/ADJ tokens are `feat_case='Cpd'` compound members with no case, and 8,542 more are untagged — a "case distribution" is wrong whether it silently includes them or silently drops them.
+- 🟡 [§485. The 2021-sourced "Nom.Sg = 34.6% of nominal forms, dual < 1% everywhere" does not reproduce on DCS-2026 — and the second half only survives read per cell](#485-the-2021-sourced-nomsg-346-of-nominal-forms-dual-1-everywhere-does-not-reproduce-on-dcs-2026-and-the-second-half-only-survives-read-per-cell) — recomputed on DCS-2026: Nom.Sg 33.7% (not 34.6%), dual 2.07% pooled / 0.91% at the largest cell — a non-reproduction, not a refutation, since the 2021 denominator is unstated.
+- 🔴 [§486. Before OCR-ing a library scan, check whether the library already published its OCR — and measure against it rather than guessing](#486-before-ocr-ing-a-library-scan-check-whether-the-library-already-published-its-ocr--and-measure-against-it-rather-than-guessing) — the BSB publishes per-page hOCR via `seeAlso` on every IIIF canvas, 2.5× better than local tesseract 5 `san`; the scans carry no text layer, but the OCR still did not need doing.
+- 🔴 [§471. A corpus-candidate matcher keyed on a dictionary's OWN bibliographic prose will bury its biggest wins in the "no corpus side exists" class](#471-a-corpus-candidate-matcher-keyed-on-a-dictionarys-own-bibliographic-prose-will-bury-its-biggest-wins-in-the-no-corpus-side-exists-class--pwgs-pāṇini-and-manu-41910-citations-sat-in-dcs-lacks) — a `Verzeichniss der Abkürzungen` names works by author in the editor's language, not by the Sanskrit title a corpus indexes; PWG's Pāṇini and Manu (41,910 citations) sat in `DCS-LACKS` until matched on the work, not the prose.
+- 🔴 [§472. Choosing a confidence tier ONCE PER SENSE and then stamping it on many passages inflates the strongest tier](#472-choosing-a-confidence-tier-once-per-sense-and-then-stamping-it-on-many-passages-inflates-the-strongest-tier--413-of-h1670s-exact-verse-rows-were-chapter-level) — 4.13% of H1670's exact-verse rows were chapter-level addresses; let the level travel with the passage, and grep the strongest tier for the address shape it is supposed to exclude.
+- 🔴 [§468. PWG's plain `R.` is a THREE-edition composite](#468-pwgs-plain-r-is-a-three-edition-composite--books-36-carry-gorresio-bengal-recension-numbering-so-keying-them-into-a-southern-recension-text-silently-returns-the-wrong-verse) — books 1–2 cite Schlegel, books 3–6 Gorresio (Bengal recension), book 7 Bombay (pwgbib 1.247; store sarga maxima 79/63/94 = Gorresio's counts). `citation_tm` had returned the wrong verse's RU silently for ~900 in-range R. 3/5 refs; books 3–6 now `unmapped_locus_scheme` until the Gorresio↔Southern concordance validates (H1656).
+- 🔴 [§467. corpus_lexicon.jsonl gets its first intrinsic BLI quality number](#467-corpus_lexiconjsonl-gets-its-first-intrinsic-bli-quality-number--and-the-obvious-gold-source-the-corpuss-own-glossary-is-circular-so-the-fix-is-an-independent-dictionary-ranked-by-an-independent-frequency-source) — P@1 0.402 / MRR 0.539 / coverage 99.5% against an independent Kochergina+DCS gold set; the corpus's own 3-layer glossary was rejected as gold because it is built FROM this same file.
+- 🔴 [§469. `to_slp1` is case-preserving, so a capitalised IAST headword transliterates into a DIFFERENT SLP1 letter](#469-to_slp1-is-case-preserving-so-a-capitalised-iast-headword-transliterates-into-a-different-slp1-letter--60-of-ncc-match-keys-are-wrong-and-14379-exact-accncc-matches-were-never-proposed) — 60% of NCC match-keys were wrong, 93.3% of Tier D was an artefact, and 14,379 true exact matches were never proposed because the corrupted key changed the blocking letter. ✅ fixed + re-run 26-07-2026 (H1671), incl. the org-wide caller audit: the library and csl-atlas already defend silently, csl-apidev does not.
+- 🔴 [§463. The pwg_ru store's `de` field is NOT a faithful copy of the csl-orig German](#463-the-pwg_ru-stores-de-field-is-not-a-faithful-copy-of-the-csl-orig-german--russian-connectives-have-been-substituted-into-the-source-of-truth-string) — 11 rows have `и`/`для`/`в`/`С` substituted for German connectives and do not round-trip against csl-orig; `sense_tag` (110 rows) and `h` carry Russian prose, so `h` is unusable as a homonym key.
+- 🔴 [§464. The H1624 G1 `gloss_lang` classifier mislabels German as Latin/English about half the time it fires](#464-the-h1624-g1-gloss_lang-classifier-mislabels-german-as-latinenglish-about-half-the-time-it-fires--and-those-spans-are-then-withheld-from-translation) — 122 of 229 non-DE spans are German (77% FP on `english_content`), and `la`/`en` are marked `translate: False`, so those glosses never reach the model.
 - 🟠 [§62. Varga distribution is almost epoch-stable (Cramér's V = 0.037)](#62-varga-distribution-is-almost-epoch-stable-cramérs-v--0037--and-the-gasūns-2014-dissertation-prose-read-its-own-χ²-table-backwards) — p-values carry no signal at DCS scale; the 2014 dissertation prose read high p as «growth»; shares agree with the p-table against the prose.
 - 🔴 [§9. DCS OccId and sent_id are not unique keys](#9-dcs-occid-and-sent_id-are-not-unique-keys) — PK collisions silently dropped tokens and 449 sentences before synthetic keys.
 - 🟠 [§10. DCS UD tense marking conflates aorist and perfect](#10-dcs-ud-tense-marking-conflates-aorist-and-perfect) — both surface as Tense=Past; recover via the 2021 export.
@@ -96,6 +114,13 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§453. PWG's sense-closing glyph "〉" nests FOUR enumeration tiers, not two](#453-pwgs-sense-closing-glyph--nests-four-enumeration-tiers-not-two--greek-letters-and-roman-numeral-markers-are-unrecognised-by-the-ru-pipelines-splitter) — Greek letters (1,444 occurrences) and roman-numeral markers (30) unrecognised by `microstructure.py`'s `MARK` regex, the same bug class as §447 one tier deeper.
 - 🟠 [§454. The pwg_ru RU store's `h` field has inconsistent semantics — not a reliable homograph-number join key](#454-the-pwg_ru-ru-stores-h-field-has-inconsistent-semantics--not-a-reliable-homograph-number-join-key) — holds a digit, an empty string, or a root-word string within the same file; 93.78% of store rows (10,881/11,603) touch a headword whose corrected `〉` segmentation changed sense count.
 - 🟡 [§455. PWG `<ls>` citation resolution is already at 98%+, far above the previously-cited 72.4% baseline](#455-pwg-ls-citation-resolution-is-already-at-98-far-above-the-previously-cited-724-baseline) — `pwgbib.txt` grew to 4,390 entries since the 72.4% measurement; re-measure with `pwg_sources.py coverage` before citing a stale ceiling.
+- 🔴 [§465. PWG sense × DCS attestation collapses from ~40% at lemma level to 0.67% at sense level — and three independent constrictions cause it](#465-pwg-sense--dcs-attestation-collapses-from-40-at-lemma-level-to-067-at-sense-level--and-three-independent-constrictions-cause-it) — measured over ALL 109,050 PWG headwords: 60.2% absent from DCS entirely, 88.8% of DCS token mass untagged. **The 0.67% sense-level figure is superseded: H1670 found it was a matcher-reach artefact (the locus tier saw 0.299% of available passages, and a dead `"RV"` map key hid the Ṛgveda) and raised it to 12.25% with no criterion changed.** The two data-availability ceilings stand. Grounding outside the aligner's reach is *unknown*, never 0%.
+- 🔴 [§474. PWG's etymology parenthesis is NESTED — a first `+`-chain regex reads the inner sub-analysis, not the compound's members](#474-pwgs-etymology-parenthesis-is-nested--a-first--chain-regex-reads-the-inner-sub-analysis-not-the-compounds-members) — 344/16,738 (2.06%) of published `pwg_compound_split` gold ship an inner or neighbouring word's `+`-chain; blank balanced `[...]` before splitting; keep only the first `{#…#}` per `+`-part.
+- 🟠 [§475. MW's `<k2>` carries a variant LIST after `;` and two different boundary marks — stripping the punctuation welds variants into a member that is not a word](#475-mws-k2-carries-a-variant-list-after--and-two-different-boundary-marks--stripping-the-punctuation-welds-variants-into-a-member-that-is-not-a-word) — 41/106,603 MW compound records; split on `;` first (take first variant), then em-dash; keep hyphen as deliberate non-boundary. **✅ FIXED 26-07-2026 (H1703)** — with the correction that it must be the first variant *carrying the segmentation*.
+- 🟠 [§476. Repairing an extractor GROWS the disagreement queue it feeds — plan for that, not for a shrink](#476-repairing-an-extractor-grows-the-disagreement-queue-it-feeds--plan-for-that-not-for-a-shrink) — two repairs expected to shrink a 4,123-card queue grew it to 4,246 (118 left, 241 entered); re-derive the queue before sizing any human sample against it.
+- 🟡 [§477. 35 cards is the floor for a 0.90 Wilson gate — and a censused stratum needs no interval at all](#477-35-cards-is-the-floor-for-a-090-wilson-gate--and-a-censused-stratum-needs-no-interval-at-all) — `wilson_lower(35,35)=0.9010` vs `0.8983` at 34, so "~30 per stratum" spends the votes and still cannot promote; a fully censused stratum promotes with its bound below threshold.
+- 🟠 [§478. A blind arm stratified on an agent's own rules must not render the rule — and its card ids must come from the lock, not the frame](#478-a-blind-arm-stratified-on-an-agents-own-rules-must-not-render-the-rule--and-its-card-ids-must-come-from-the-lock-not-the-frame) — pin the no-leak rule with a test; the lock is the only id list an export can be validated against.
+- 🟡 [§479. PWG's etymology parenthesis: "first `{#…#}` per `+`-part" is right until PWG writes a derivation ladder](#479-pwgs-etymology-parenthesis-first--per--part-is-right-until-pwg-writes-a-derivation-ladder) — 1,564 multi-member parts: 1,308 where first-wins is right, ~357 ladders/disjunctions where it ships a base; arbitrate by surface coverage, drop what stays ambiguous.
 
 **Etymology & derivation**
 
@@ -103,6 +128,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§34. The E abbreviation tag is polysemous across dicts](#34-the-e-abbreviation-tag-is-polysemous-across-dicts) — Etymology / Epithet / Epic; count the meaning, not the marker.
 - 🟠 [§35. Root-recovery tiers err on root form, not identity](#35-root-recovery-tiers-err-on-root-form-not-identity) — normalize to dhātupāṭha citation form; gate LLM roots through a known-dhātu set.
 - 🟠 [§103. The §83/§97 witness-collapse deflates the union's published "corroboration" 55.9% → 34.7%](#103-quantified-the-8397-witness-collapse-deflates-the-published-15-dict-union-corroboration-from-559-to-347--and-the-unions-own-table-is-pre-fold) — 68,651 "corroborated" headwords rest on one European lineage; Apte kept independent per §83; UNION.md table is pre-fold.
+- 🔴 [§466. MW's `cf.` and PWG's `Vgl.` are NOT independent witnesses](#466-mws-cf-and-pwgs-vgl-are-not-independent-witnesses--they-agree-2950-above-chance-so-a-shared-cross-reference-never-counts-as-double-attestation) — they agree on the target 21.8% of the time vs 0.007% expected (≈2,953×, p < 0.005) on the 2,750 headwords both cross-reference. MW 1899 rests on Böhtlingk–Roth, so "N dictionaries agree" is not N witnesses; the containment asymmetry (~3.2×) is a set-size artifact, not direction.
 
 **Encoding & normalization**
 
@@ -114,6 +140,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟡 [§39. devanagari_to_slp1 mis-routes retroflex la](#39-devanagari_to_slp1-mis-routes-retroflex-la) — ळ → x instead of L.
 - 🟠 [§40. Gloss-language spelling drift tracks reform type, not age](#40-gloss-language-spelling-drift-tracks-reform-type-not-age) — legislated ≫ convention ≫ none; the metric saturates post-1890 for English.
 - 🟡 [§60. Practical Russian transcription of Sanskrit names has no safe reverse transliteration](#60-practical-russian-transcription-of-sanskrit-names-has-no-safe-reverse-transliteration) — dental/retroflex collapse in Cyrillic-only name glossaries blocks a deterministic SLP1 join key.
+- 🟠 [§487. A cross-scheme join is a transliteration step, not a string comparison](#487-a-cross-scheme-join-is-a-transliteration-step-not-a-string-comparison--a-naive-iast-to-slp1-match-selects-on-diacritics) — a direct IAST→SLP1 match keeps only the diacritic-free 29 % of a root catalogue and biased a token-weighted result upward by 26 points; route through `to_slp1` and report the join rate beside the result.
 
 **External platforms & services**
 
@@ -3422,3 +3449,1004 @@ the frozen comparison and is therefore excluded from the percentage.
 > **Source:** [`docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PIPELINE_AUDIT_pwg_ru_2026-07-21.md) +
 > [`RussianTranslation/src/store_path.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/store_path.py) +
 > [`RussianTranslation/src/pilot/coordinator.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py) — offline Codex audit, 21-07-2026; no live/model/promotion/store call.
+
+### §463. The pwg_ru store's `de` field is NOT a faithful copy of the csl-orig German — Russian connectives have been substituted into the source-of-truth string
+
+🚨 **Data-integrity.** Eleven of 11,603 pwg_ru store rows (0.09%) carry Cyrillic **inside the
+German `de` field**, and the substitutions are German function words replaced by their Russian
+equivalents: `и` for `und`, `для` for `für`, `в` for `in`, `С` for `Mit`, plus a literal
+`корригенда`. Verified against upstream: csl-orig `v02/pwg/pwg.txt` line 570640 reads
+`{%Opfer%} in {#sarva˚#} **und** {#havirhuti#}` for `huti`, while the store row reads `… **и** …`
+— *and* silently drops the `(von <hom>1.</hom> {#hu#})` etymology parenthesis. So the store's
+German is a **mangled derivative**, not a verbatim carry-through, in at least these rows.
+
+Two DE-side *structural* fields are contaminated at a higher rate: `sense_tag` in 110 rows
+(0.95%) — e.g. `c) с dat. лица и instr. предмета`, `Mit <div n="p"> — корригенда` — and `h`,
+which carries free-text Russian disambiguation prose such as `PW 3 (с sam, о супружеском
+намерении)`. `h` is therefore unusable as a homonym key; derive the homonym from `subcard`
+(`edition_rel.homonym_of`) instead.
+
+**Why it matters beyond cosmetics.** Every German-side derivation — the H1624 G1–G6 layers, any
+FAIR export, any "compare the store against the scan" audit — treats `de` as the public-domain
+source of truth. A German string that has been partly Russified is a silently corrupted
+canonical field: it will not round-trip against csl-orig, and it leaks Russian into anything
+built on the German side. **Any DE export must therefore validate purity rather than assume it**
+— `export_de_edition.py` quarantines `de`-contaminated rows, reduces a contaminated `sense_tag`
+to its ASCII skeleton, and drops `h` from its input allowlist entirely.
+
+> **Source:** measured 26-07-2026 (H1629, Opus 5 `claude-opus-5[1m]`) over the full 11,603-row
+> canonical store, cross-checked against
+> [`csl-orig v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt);
+> tables in [`RussianTranslation/RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md);
+> guard in [`RussianTranslation/src/export_de_edition.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_de_edition.py).
+
+### §464. The H1624 G1 `gloss_lang` classifier mislabels German as Latin/English about half the time it fires — and those spans are then withheld from translation
+
+🚨 **Data-integrity.** A census of all 15,901 `{%…%}` glosses in the pwg_ru store's German text
+found 229 (1.44%) classified non-German by
+[`pwg_mask.gloss_lang_spans`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_mask.py).
+Of those, ~122 (53.3%) carry unambiguous German evidence:
+
+| lang | rule_id | spans | German-looking | FP rate |
+|---|---|---|---|---|
+| en | `english_content` | 153 | 117 | **76.5%** |
+| la | `botany_binomial` | 68 | 5 | 7.4% |
+| ambig | `homograph_ambig` | 8 | 0 | 0.0% |
+
+Misfires are not marginal cases: `bis an's Ziel bringen` and `an sich nehmen, empfangen,
+erlangen, erhalten` are classified **English**; `Gelegenheit gefunden habend` and `Willens
+sein` are classified as **Latin botany binomials**.
+
+**The consequence is silent, not cosmetic.** `classify_pct_detail` returns `translate: False`
+for both `la` and `en`, so a false positive means a genuinely German gloss is masked to `{Tn}`
+and **never reaches the translation model** — content dropped from the output with no error and
+no counter. The `english_content` rule is the dominant contributor and the right place to look
+first. Fixing it changes masking behaviour pipeline-wide, so it needs its own measured A/B
+rather than an in-passing patch; downstream consumers should meanwhile treat a non-DE
+`gloss_lang` as a hint, not a fact.
+
+Caveat on the number: "German-looking" is a heuristic proxy (umlaut/eszett, a German function
+word, or an `-en`/`-eln`/`-ern` verb ending, excluding genuine binomial shape), so 53.3% is
+±; the sampled examples leave the direction beyond doubt.
+
+> **Source:** measured 26-07-2026 (H1629, Opus 5 `claude-opus-5[1m]`) over the full canonical
+> store; table + examples in
+> [`RussianTranslation/RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md);
+> limitation recorded in
+> [`RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md) §5.
+
+---
+
+### §465. PWG sense × DCS attestation collapses from ~40% at lemma level to 0.67% at sense level — and three independent constrictions cause it
+
+🔴 **Lemma-level corpus attestation for PWG is essentially free; sense-level attestation is
+not, and the gap is caused by two ceilings that must not be conflated — one inside the
+dictionary, one in the corpus.** Anyone promising "corpus frequency per PWG sense" is
+promising something the current data cannot deliver at scale.
+
+`Evidence:` measured on the frozen H1455/H1456 500-headword pilot frame (reused verbatim, not
+re-derived). Of 943,877 DCS tokens under those lemmas, **102,085 (10.8%)** carry a
+`m_wordsem` sense tag at all — the hard ceiling on any sense-level claim over this corpus.
+Only **52 of 7,746 PWG leaf senses (0.67%)** are grounded to a DCS attestation by a shared
+locus; against the other denominator, 52/5,201 DCS `wn` senses in frame (1.00%). Meanwhile
+**500/500** groups attest at lemma level — but that is **true by construction**: every frame
+row carries `dcs_attested=1`, so the frame was *selected* DCS-attested.
+
+**Update 26-07-2026 (same handoff) — the unbiased frames now exist, and the real lemma-level
+rate is ~40%, not 100%.** Re-run over a seeded uniform sample (2,000 groups) and over **every
+PWG headword (109,050 groups)**: **43,352/109,050 = 39.8%** of PWG headwords have a DCS lemma,
+so **60.2% have no DCS attestation at any granularity** — for those no sense-level join is even
+conceivable. The 2,000-group sample estimates 40.4% (±2.2% at 95%), an interval that covers the
+population value, so the sampling frame is sound. The `m_wordsem` mass ceiling is **stable
+across all three frames** (10.8% / 11.9% / 11.2%), confirming it is a property of the corpus
+annotation rather than of headword selection. Sense-level grounding did **not** scale and is
+deliberately **not** reported as zero outside the H1455 aligner's 500-headword run (class
+`R0_grounding_not_computed`) — a 0% there would be the absence of a job, not a measurement.
+Full comparison:
+[`PWG_SENSE_DCS_FRAME_COMPARISON.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_FRAME_COMPARISON.md).
+
+**⚠️ Update 26-07-2026 (H1670) — the 0.67% was a MATCHER-REACH artefact, not a data limit.
+Corrected figure: 7,372 grounded leaf senses, 12.25%.** Two independent limits, neither of
+them data availability, had capped the number:
+
+- **Passage depth.** The aligner compared each sense's `<ls>` against only the **3 passages
+  per DCS lemma** that `dcs_kwic()` sampled *for the viewer* — **3,435 of 1,148,630
+  available passages, 0.299%**. The exact-verse test was measuring the sample, not the corpus.
+- **A dead map key.** `PWG_TO_DCS_TEXT` keyed the Ṛgveda as ASCII `"RV"` while PWG's abbrev
+  is `ṚV`, so the corpus's most canonically-numbered text — **50,972 `<ls>` citations, 6.89%
+  of the dictionary's total, second only to the Mahābhārata** — never matched anything.
+
+With the **same** `verse_equal()` predicate, the same tiers and no heuristic added, running
+the aligner at full passage depth over a 32× wider frame (16,208 groups, identical selection
+query) gives **52 → 7,372 grounded leaf senses (0.67% → 12.25%)**, of which 5,647 are
+exact-verse. Dictionary-wide, `R0_grounding_not_computed` fell **18,438 → 10,515 (−43.0%)**
+and `R4_grounded_alignment` rose **50 → 5,058**. Attribution per lever, plus the three
+precision defects the wider scan exposed and fixed (named books collapsing into one numbering
+space; chapter-level matches mis-reported as exact-verse; the `ṚV` key):
+[`PWG_SENSE_DCS_GROUNDING_LEVERS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_GROUNDING_LEVERS.md).
+
+**What did NOT move — and this is the durable half of the finding.** `R1_lemma_absent_from_dcs`
+fell by 52 groups and `R2_no_wordsem_tag` by 754, out of 109,050. Those two are genuine
+data-availability constrictions and no amount of matcher reach touches them; the ~40%
+lemma-level rate and the ~11% `m_wordsem` mass ceiling below stand exactly as measured. The
+lesson generalises: **before concluding "the data cannot support this", check what fraction
+of the data the measurement actually looked at.** Ceiling 2 below is also partly corrected —
+it names Kathāsaritsāgara as a text DCS lacks, but DCS carries it (111,298 tokens); the
+obstacle is its numbering. The remaining reach work (443 cited texts DCS carries but the map
+never pointed at, 13.9% of `<ls>` mass) is
+[H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md).
+
+The two ceilings:
+
+1. **Inside the dictionary, before DCS is consulted.** **12,953** `<ls>` citations hang on a
+   *structural parent* sense node — a numbered sense like `1〉 m.` that has lettered children
+   `1a`/`1b` and carries the citation itself. PWG never assigns these to a leaf sense, so no
+   join can. A perfect corpus with perfect locus matching would still leave them lemma-level.
+2. **In the corpus.** **86.8%** of groups are class `R3`: DCS *has* sense-tagged tokens, PWG
+   *has* senses, and no shared locus links them — because PWG cites texts DCS lacks
+   (Pañcatantra, Kathāsaritsāgara, kośa literature) or cites the Mahābhārata in continuous
+   Böhtlingk–Roth numbering whose vulgate↔BORI-critical drift yields only adhyāya-level
+   corroboration (H1455 wave-1.5). This is missing *evidence*, not absence of the sense.
+
+Two further traps found while building it, both of which silently distort the denominator:
+
+- **Structural parents are not leaf senses.** Counting every `sense_id` from
+  `microstructure.leaf_senses` inflates the sense inventory ~16% (8,859 vs 7,746 on this
+  frame), because a numbered node with lettered children is a container carrying only
+  gender/grammar. The child test must be an *alphabetic* suffix — sense `11` is not a child
+  of sense `1` (PWG entries reach 70+ numbered senses).
+- **The committed `pwg_sense_loci.sample.tsv` is not the pilot frame.** It samples a
+  *different* 500 headwords and overlaps the H1455 frame in **16 keys**. Joining it yields a
+  near-zero coverage that is an artefact of the wrong input, not a fact about PWG; regenerate
+  the frame's rows with `research/export_frame_sense_loci.py`.
+
+`Implication:` do **not** promise per-sense corpus frequency for PWG, and do not read H1455's
+concordance as corpus attestation — its dominant `ls` tier (85,472 rows in frame) is PWG
+citing *itself*, excellent evidence for the dictionary's sense division and none at all that
+DCS attests it. Growing sense-level coverage means **adding texts and locus crosswalks**, not
+tuning a matcher. When quoting the "mass under a grounded lemma" figure (4.2%), quote it as the
+upper bound it is — a grounded link identifies one sense at one locus, not every token of the
+lemma.
+
+**Scaling settled it (26-07-2026): three independent constrictions multiply, and compute fixes
+none of the first two.** (1) 60.2% of PWG headwords are absent from DCS entirely. (2) 88.8% of
+DCS token mass carries no `m_wordsem` tag — upstream annotation coverage, 219/270 texts.
+(3) Only the *residue* after those two is a matcher/locus problem, and it needs texts and
+crosswalks (Pañcatantra, Kathāsaritsāgara, vulgate↔BORI drift), not a better algorithm. So the
+honest ceiling for any sense-level PWG×DCS product is set by (1) and (2) long before matcher
+quality matters — running the pilot over the whole dictionary raised confidence in the
+diagnosis, not the coverage.
+
+**"Get a bigger corpus" is NOT an available lever for (1) — MG, 26-07-2026.** DCS already *is*
+the largest **tagged** Sanskrit corpus; the corpora that are bigger carry **no markup**
+(wisdomlib, currently under scrape). An untagged corpus therefore **can** raise *lemma-level*
+attestation — shrinking the 60.2% "absent everywhere" class, which is a real and separate
+result — but **cannot** raise *sense-level* grounding, because there are no sense tags to bind
+to and none to be had without lemmatising and tagging it ourselves. Treating an untagged corpus
+as a fix for the sense-level number is a category error; keep the two rates in separate tables.
+This repo already consumes a `wl` wisdomlib signal for period-state tagging (§14) — extend that
+lane rather than opening a second one, and check the Cloudflare reality
+([Uprava FINDINGS §4](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)) before any
+scrape. Follow-on:
+[H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md).
+
+**Update 26-07-2026 (H1691) — 7,372 → 8,208 grounded leaf senses (+11.3%), and the "no corpus
+side exists" class was itself unreliable.** Working H1670's 443-abbrev crosswalk backlog
+top-down mapped 12 further texts, each verified against its `pwgbib` entry, ~20 real `<ls>`
+samples, address containment, and a competitive rank against all 270 DCS texts, then
+hand-checked at ≥10 rows apiece (120/120 confirmed). The two largest additions — Pāṇini
+(21,305 citations) and Manu (20,605) — had been classified `DCS-LACKS`, "a genuine corpus gap
+that no crosswalk can close": see §471, which is the transferable lesson. `MAPPED` rose from
+36.4% to **44.7%** of the dictionary's `<ls>` mass and the actionable backlog above 0.05% is
+now empty. Two caveats belong with the number: the Aṣṭādhyāyī rows attest that Pāṇini *treats*
+a word at a sūtra, not that a passage uses it in the glossed sense (excluding them the delta is
++483, +6.6%), and the net is +1,152 newly grounded senses against **316 relocated** to a
+sibling sense of the same entry, because the aligner assigns one sense per (headword,
+DCS-lemma) link. Full report:
+[`PWG_DCS_TEXT_CROSSWALK_H1691.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_DCS_TEXT_CROSSWALK_H1691.md).
+
+> **Source:** H1632 pilot join + 26-07-2026 scale-up (random + full-PWG frames,
+> [PR #763](https://github.com/gasyoun/SanskritLexicography/pull/763)),
+> Opus 5 (`claude-opus-5[1m]`) ·
+> [`RussianTranslation/research/PWG_SENSE_DCS_ATTESTATION_PILOT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_ATTESTATION_PILOT.md)
+> + generator
+> [`pwg_sense_dcs_attestation_pilot.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_sense_dcs_attestation_pilot.py)
+> ([PR #755](https://github.com/gasyoun/SanskritLexicography/pull/755)); deterministic, no LLM
+> in the measurement path, five inputs SHA-256 pinned. Consumes §78's successor state — the
+> `m_wordsem` decode inventory recovered in H1453 — and the DCS master
+> `VisualDCS/src/DCS-data-2026/dcs_full.sqlite` (the `src/` and repo-root copies are 0-byte
+> decoys and were not read).
+### §466. MW's `cf.` and PWG's `Vgl.` are NOT independent witnesses — they agree ~2,950× above chance, so a shared cross-reference never counts as double attestation
+
+⚠️ **Kills a whole class of "two dictionaries agree, therefore it's real" argument.** A csl-atlas
+review sheet asked a human to confirm an MW↔PWG cross-reference edge on the grounds that "both
+dictionaries, **independently**, print a cross-reference … two editorial traditions made the same
+link". MG rejected that outright (26-07-2026): **MW depends on PWG and PW** — Monier-Williams 1899
+was built on Böhtlingk–Roth, so a shared reference can be one tradition copied, not two agreeing.
+
+Measured rather than argued
+([`m9_xref_marker_agreement.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/lexico/m9_xref_marker_agreement.py)
+→ [`xref_marker_agreement.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/lexico/xref_marker_agreement.json),
+full `xref_edges.csv`, normalisation shared with `m6_xref_lineage.py`, seed 20260726):
+
+| Measure | Value |
+|---|---|
+| MW `cf.` edges (normalized, deduped) | 7,637 |
+| PWG `Vgl.` + `s.` edges | 25,766 |
+| Headwords cross-referenced in **both** | 2,750 |
+| MW edges on those headwords | 3,184 |
+| …whose target PWG also points to | **694 (21.8%)** |
+| Expected under a degree-preserving null (200 draws) | 0.235 (**0.007%**) |
+| Enrichment | **≈2,953×** |
+| Null draws ≥ observed | 0/200 (p < 0.005) |
+
+**Two traps this finding also closes.** (1) The raw containment asymmetry — 11.2% of MW's edges
+appear somewhere in PWG vs 3.5% the other way, ≈3.2× — looks like directional evidence but is
+almost exactly the 3.4× edge-count ratio, i.e. a **set-size artifact**. Do not cite it as showing
+who copied whom; direction comes from the bibliographic record, not this statistic. (2) Enrichment
+proves non-independence, **not** copying specifically: both dictionaries recording the same
+language facts would also produce it. What it does establish is that the *count* of agreeing
+dictionaries is not evidence you may add up.
+
+**Reusable rule.** For any MW/PW/PWG-family corroboration claim, "N dictionaries agree" is not N
+witnesses. State what a shared record actually asserts (here: the edge is *real and lexical*) and
+drop the independence premise. The same caution applies to any derived dataset that scores
+confidence by counting dictionaries in the Petersburg lineage.
+
+Companion trap on the same pipeline: MW and PWG follow **opposite** headword conventions in four
+cases documented by Patel 2016 (śatṛ `-at`/`-a`, vatup/matup `-vat`/`-v`, ṛ-stems `-ṛ`/`-ar`,
+vas/yas `-vas`/`-vaṃs`) which the normaliser does not reconcile — so the 641-edge MW∩PWG
+intersection is an **undercount**, and a ṛ-stem edge cannot intersect at all. (The pool was
+quoted as 642 when this entry first landed — a `wc -l` counting the CSV header as a data
+row; the packet now computes it and a docs-vs-data test pins the prose to it.) See
+[XREF_SHARED_CORE_LABEL_TAXONOMY.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/XREF_SHARED_CORE_LABEL_TAXONOMY.md).
+
+_26-07-2026 · [H1648](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1648-Opus_csl-atlas_xref-sheet-ru-and-mw-pwg-dependence_26.07.26.md) · csl-atlas [PR #310](https://github.com/sanskrit-lexicon/csl-atlas/pull/310), [v0.11.0](https://github.com/sanskrit-lexicon/csl-atlas/releases/tag/v0.11.0) · Opus 5 (1M context) `claude-opus-5[1m]`_
+
+### §467. corpus_lexicon.jsonl gets its first intrinsic BLI quality number — and the obvious gold source (the corpus's own glossary) is circular, so the fix is an independent dictionary ranked by an independent frequency source
+
+🔴 **`RussianTranslation/src/corpus_lexicon.jsonl` (1.09M Sa→Ru word-alignment pairs, feeds the
+3-layer glossary, the translation memory, and `mw_ru`) had never been quantitatively evaluated
+before H1521. First measurement, over a frozen 400-lemma gold set: P@1 = 0.402, MRR = 0.539,
+coverage = 0.995 (398/400).** Ranking method: for each gold Sanskrit lemma, rank the corpus's
+attested Russian renderings by raw alignment count (the file carries no per-pair weight — a
+`head -1` on `corpus_lexicon.jsonl` confirmed this), then match the ranked list's top hit(s)
+against the gold lemma's Russian content-word tokens (Cyrillic, ≥4 letters — a lenient
+free-text-gloss-vs-single-rendering overlap proxy, not exact string equality).
+
+⚠️ **The default gold-set choice named in the H1521 handoff turned out to be circular and had
+to be overridden by inspection.** The repo's own 3-layer Sa→Ru glossary
+([`glossary/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/glossary/README.md))
+is a direct group-by/count aggregation *of*
+`corpus_lexicon.jsonl` itself
+([`build_surface_glossary.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_surface_glossary.py):
+"Direct group-by on corpus_lexicon.jsonl ... no lemmatizer needed") — grading the lexicon
+against a glossary built FROM the lexicon would score P@1 ≈ 1.0 by construction, a variant of
+the [§460](#460-gold-in-this-org-means-frozen-not-human-adjudicated--0-of-15-gold-datasets-have-independent-human-annotation-and-every-travelling-κ-is-model-vs-model-four-contamination-mechanisms)
+"evaluated system authored its own gold" contamination mechanism, just with a deterministic
+aggregation standing in for an LLM judge. The fix used two *independent* sources instead: gold
+CONTENT from Kochergina's published Sanskrit-Russian dictionary (`src/koch.jsonl`, 29,177
+entries, never derived from this corpus), and the "high-frequency" SELECTION criterion from
+VisualDCS's `dcs_lemma_summary.json` (Hellwig's DCS ~2021 whole-corpus frequency bands — a
+different, much larger corpus than the 1.09M-pair translated subset). Both axes of
+independence mattered: an earlier pass that ranked candidate gold lemmas by their own frequency
+*inside* `corpus_lexicon.jsonl` produced coverage = 1.0 by construction (every selected lemma
+was guaranteed present) — a second, subtler circularity that the DCS-frequency swap fixed
+(coverage dropped to the genuine 0.995 above). Unlike the org's audited "gold" sets, Kochergina
+is a bona fide human-scholarly source (V. A. Kochergina's printed dictionary), not an LLM
+label — so this gold set's *content* provenance is stronger than most in [§460](#460-gold-in-this-org-means-frozen-not-human-adjudicated--0-of-15-gold-datasets-have-independent-human-annotation-and-every-travelling-κ-is-model-vs-model-four-contamination-mechanisms)'s
+audit, though the word-overlap match criterion is still a lenient proxy, not exact-gloss
+agreement.
+
+> **Source:** [H1521](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1521-Sonnet_RussianTranslation_bli-eval-corpus-lexicon-p1-mrr_23.07.26.md),
+> [`src/eval/bli_eval.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/bli_eval.py) +
+> [`src/eval/build_gold_koch.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/build_gold_koch.py) +
+> [`src/eval/gold_sa_ru_koch_400.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/gold_sa_ru_koch_400.tsv) —
+> RussianTranslation · 26-07-2026, Sonnet 5 (`claude-sonnet-5`).
+### §468. PWG's plain `R.` is a THREE-edition composite — books 3–6 carry Gorresio (Bengal-recension) numbering, so keying them into a Southern-recension text silently returns the wrong verse
+
+🔴 **PWG's plain `R.` is not one citation scheme: books 1–2 cite Schlegel, books 3–6 cite
+Gorresio's Bengal recension, book 7 the Bombay edition — so `citation_tm.py` had been
+returning the wrong verse's Russian translation, silently and in-range, for ~900 R. 3/5
+refs.** PWG's own bibliography (pwgbib 1.247) says it plainly: without further indication, `R.` cites
+**Schlegel's edition for books 1–2** and **Gorresio's for books 3–6** (book 7 → Bombay ed.);
+Cologne's scan links have always routed accordingly
+([`ls_resolver.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver.py)
+sends R. 3–6 to the `ramayanagorr` viewer). But Gorresio prints the **Gauḍīya/Bengal
+recension**, whose sarga divisions and verse numbers differ from the Southern/vulgate text
+behind Leonov's Russian translation — so any consumer that treats an `R.` locus as
+Southern-keyed for books 3–6 gets the **wrong verse**, in-range and error-free.
+
+Empirical check (H1656, current pwg_ru store): the maximum sarga cited per book is 77 (R. 1),
+115 (R. 2), **79 (R. 3), 63 (R. 4), 94 (R. 5)**, 112 (R. 6) — books 3–5 land exactly on the
+Gorresio sarga counts (79 / 63 / 95) and **past** the Southern ones (75 / – / 68).
+`citation_tm.py` had been resolving in-range book-3/5 loci against the Southern corpus and
+returning that verse's Russian translation as a clean `hit` — ~900 refs were exposed; fixed by
+returning `unmapped_locus_scheme` for books 3–6
+([issue #770](https://github.com/gasyoun/SanskritLexicography/issues/770),
+[PR #769](https://github.com/gasyoun/SanskritLexicography/pull/769)).
+
+Corollary: the explicit `R. GORR.` abbreviation clusters ~98% in books 1–2 (139+230 of 375
+store loci) — Böhtlingk only wrote "GORR." where plain `R.` would have meant Schlegel. So the
+Gorresio↔Southern concordance is load-bearing for ~2,200 refs (657 R. GORR. + ~1,560 plain-R.
+books 3–6), not 657. Reusable rule: **an `<ls>` abbreviation names a citation *scheme*, not a
+text — resolve the edition per book/coordinate-range before keying into any aligned corpus.**
+
+_26-07-2026 · [H1656](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1656-Opus_SanskritLexicography_gorresio-southern-critical-concordances_26.07.26.md) · [PR #769](https://github.com/gasyoun/SanskritLexicography/pull/769), [issue #770](https://github.com/gasyoun/SanskritLexicography/issues/770) · Fable 5 `claude-fable-5`_
+
+### §469. `to_slp1` is case-preserving, so a capitalised IAST headword transliterates into a DIFFERENT SLP1 letter — 60% of NCC match-keys are wrong and 14,379 exact ACC×NCC matches were never proposed
+
+🔴 **Feeding capitalised IAST into `sanskrit_util.to_slp1` silently produces a different word.**
+SLP1 uses uppercase letters as distinct phonemes (`K` = kh, `G` = gh, `C` = ch, `J` = jh,
+`T` = th, `D` = dh, `P` = ph, `B` = bh, `N` = ṅ, `Y` = ñ, `R` = ṇ, `E` = ai, `O` = au), and
+`to_slp1` passes an uppercase ASCII initial through untouched rather than mapping it — so
+`slp1_simplify` then reads that capital as the *other* letter. Non-ASCII capitals (`Ś`, `Ī`,
+`Ā`, `Ṛ`, `Ṇ`, `Ṭ`, `Ḍ`, `Ṣ`, `Ṃ`) are not transliterated at all and survive verbatim into the
+key. The failure is silent, produces a plausible-looking ASCII string, and has no error path:
+
+```python
+su.slp1_simplify(su.to_slp1("Rāmāyaṇa"))          # -> 'namayana'   (wrong)
+su.slp1_simplify(su.to_slp1("Rāmāyaṇa".lower()))  # -> 'ramayana'   (correct)
+```
+
+⚠️ **Measured blast radius in the ACC×NCC works crosswalk**, whose
+[`parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/parse_ncc.py)
+keys off the raw (capitalised) NCC headword: **91,548 of 152,526 keys (60.0%) are wrong**,
+20,571 (13.5%) still contain non-ASCII. Two opposite consequences, and the recall one is the
+serious one:
+
+| effect | measured |
+|---|---:|
+| Tier D rows that are actually EXACT title matches (the inserted `h` was the whole edit distance) | 40,757 of 43,666 — **93.3%** |
+| exact-key (Tier A) overlap as shipped | 8,397 keys |
+| exact-key overlap once the keys are repaired | **22,775 keys** |
+| true matches never proposed as candidates at all | **14,379** |
+
+The recall loss is structural, not marginal: where the corruption changes the FIRST letter,
+`build_works_crosswalk.py`'s Tier D first-letter blocking and Tier C prefix bisect never
+compare the pair, so no candidate row is generated for a human or an agent to adjudicate.
+Every `Rāmāyaṇa`, `Yoga-`, `Ekā-` and `Ś-` initial NCC work is currently invisible to the
+crosswalk. **Generalisable lesson: a normalisation bug upstream of a blocking key does not
+degrade a fuzzy match, it deletes the candidate** — and the deletion is invisible downstream,
+because a pair that was never proposed looks exactly like a pair that does not exist.
+**✅ Fixed and re-run 26-07-2026 ([H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)).**
+`parse_ncc.match_key_for` now case-folds + NFC-normalizes before transliteration, pinned by
+[`test_parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/test_parse_ncc.py).
+P0→P1→P2 re-ran on the repaired keys and every prediction in the table above held to the row:
+exact overlap 8,397 → **22,775**, Tier D 43,666 → **1,575** rows of which 40,757 migrated
+straight to Tier A, the adjudication set fell 49,019 → 10,614, and the
+`exact_after_key_repair` rule now fires **zero** times. All 3,711 candidate rows the repair
+*removed* were classified and none was a true link — 1,382 were collisions the corruption
+manufactured (ACC `Nāmamuktāvalī` had been matching NCC `Rāmamuktāvali`), the other 2,329 were
+superseded by P1's tier partition. Before/after:
+[`NCC_KEY_REPAIR_MIGRATION_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md).
+
+**Org-wide caller audit (H1671 deliverable 2, done 26-07-2026).** Every `to_slp1` call site in
+the org was checked. The trap is real, but the blast radius outside this repo is small — and
+the striking part is that the library and two of its consumers *already work around it,
+silently*:
+
+| caller | input | status |
+|---|---|---|
+| `sanskrit_util.iast_to_devanagari` (the library itself) | any IAST | **already defends** — calls `to_slp1(text.lower())` |
+| [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) `lookup-normalize.js` `iastToSlp1()` | user lookup value | **already defends** — `.normalize("NFC").trim().toLowerCase()`, with no comment saying why |
+| csl-atlas `sanskrit-util.js:155` `iastToDeva()` | any IAST | **already defends** — `.toLowerCase()` |
+| [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev) `app.js` `rowSlp1()` | **user-typed IAST search term** | was undefended — ✅ **fixed 26-07-2026** ([H1695](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1695-Opus_csl-apidev_rowslp1-iast-case-fold_26.07.26.md), [PR #127](https://github.com/sanskrit-lexicon/csl-apidev/pull/127)) |
+| WhitneyRoots `emit_crosswalk.py` · VisualDCS `import_archive.py` / `build_lsc_pilot.py` · Uprava `titov_parametric_core.py` · SanskritGrammar `build_rq4_item_bank.py` | roots / DCS lemmas | safe in practice — these arrive lowercase, but none of them *asserts* it |
+| SanskritLexicography `parse_ncc.py` | capitalised NCC headword | **was the victim; fixed** |
+
+**Ruling: keep `to_slp1` byte-compatible; make the trap loud instead.** Lowercasing inside a
+transcoder shared by ~8 repos would silently change every caller's output — the same class of
+unannounced semantic change that caused this bug. What is actually wrong is that the behaviour
+is *unspecified*: `to_slp1` is documented as "IAST → SLP1" with no word on case, and its tests
+only ever pass lowercase, so nothing pins what a capital does. Upstream should gain a
+documented case-folding entry point plus a test pinning the current passthrough — **still
+unclaimed**. **Generalisable lesson: when a library's own code defends against its own
+function — `iast_to_devanagari` calling `to_slp1(text.lower())` — that defence is a bug report
+nobody filed.**
+
+**Correction, 26-07-2026 ([H1695](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1695-Opus_csl-apidev_rowslp1-iast-case-fold_26.07.26.md)):
+the csl-apidev row above originally read "a silent lookup miss, no corrupted data". That
+understated it.** Tracing the value through `app.js` showed *both* consumers were hit:
+`renderHeadword()` **displayed the wrong headword** — `Rāma` → `RAma` → rendered back as
+**ṇāma**, `Bhāgavata` as `bhhāgavata`, `Ekāvalī` as `aikāvalī` — and the `dalglob|` lookup and
+cache key addressed the wrong entry. Visible corruption in the results list, not a silent
+miss. `IAST_RE` there deliberately auto-detects capitalised input (it lists
+`ĀĪŪṚṜḶḸṂṄṆṢṬṰḌŚ`), so the path was reachable by design. Fixed by
+[PR #127](https://github.com/sanskrit-lexicon/csl-apidev/pull/127): `foldIast()` (NFC +
+lowercase) before transcoding, SLP1 input explicitly never folded, and a zero-dependency
+`app/rowSlp1.check.js` wired into CI — because the root cause here was never the bug, it was
+that nothing pinned what a capital does. **Second-order lesson: an audit that classifies a
+call site by reading only the call line will under-rate it — the severity lives in what
+consumes the return value.**
+
+> **Source:** [H1657](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1657-Opus_SanskritLexicography_acc-ncc-p2-agent-adjudication-49k_26.07.26.md)
+> (measurement) + [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
+> (repair, re-run, caller audit),
+> [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779),
+> [`NCC_KEY_REPAIR_MIGRATION_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md),
+> [`P2_AGENT_ADJUDICATION_REPORT.md` §0](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_AGENT_ADJUDICATION_REPORT.md) —
+> SanskritLexicography · 26-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
+
+### §470. The Cologne scan-viewer page PDFs can carry an embedded digitized text layer — check `get_text()` BEFORE declaring "no e-text exists" or commissioning OCR
+
+The H1656 first pass concluded (and MG believed) that **no Gorresio Rāmāyaṇa e-text
+exists** — GRETIL has none, archive.org has only scans with rough tesseract OCR. Both
+true — and beside the point: the [sanskrit-lexicon-scans/ramayanagorr](https://github.com/sanskrit-lexicon-scans/ramayanagorr)
+per-page PDFs (`pdfpages/rgorr_*.pdf`), sourced from **Google Books** digitizations,
+carry an embedded, clean Devanagari **text layer** — a full e-text was extractable the
+same day with zero new OCR (10,225 verses;
+[src/gorresio_etext.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gorresio_etext.jsonl)).
+Caveats that made it work, all reusable for the next edition trapped in scans:
+
+- **Coverage follows the SCAN SOURCE, not the viewer**: only the Google-sourced volumes
+  (1/3/5 — Bāla, Ayodhyā 1–9, Āraṇya, Kiṣkindhā-part, Yuddha) have the layer; the
+  DLI/digitale-sammlungen volumes (2/4/uk) are image-only, and their archive.org
+  tesseract `_djvu.txt` is too noisy to trust (heavy akshara confusion, no page
+  separators). Per-volume check, not per-work.
+- **OCR drops digits in verse numbers** (॥91॥ reads as ॥1॥), so ॥N॥ segmentation must
+  be anchored to an external per-page verse-range index — here the viewer's own
+  hand-made `ksverse.js` (kāṇḍa/sarga/verse-range per page) — with parsed numbers
+  trusted only inside the page's known range.
+- **Extraction speed**: PyMuPDF `get_text()` is ~100× faster than pypdf on these
+  (0.03 s vs 3 s per page — 2,822 pages in ~90 s vs ~2.4 h).
+- The uttarakāṇḍa volume is filed as `rgorr_uk.*` while the page index calls it
+  volume "6" — map before fetching.
+
+_26-07-2026 · [H1656](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1656-Opus_SanskritLexicography_gorresio-southern-critical-concordances_26.07.26.md) · [PR #784](https://github.com/gasyoun/SanskritLexicography/pull/784) · Fable 5 `claude-fable-5`_
+
+### §471. A corpus-candidate matcher keyed on a dictionary's OWN bibliographic prose will bury its biggest wins in the "no corpus side exists" class — PWG's Pāṇini and Manu, 41,910 citations, sat in `DCS-LACKS`
+
+🔴 **When you auto-classify a dictionary's cited sources against a corpus, never derive the
+candidate from the dictionary's bibliography text.** A `Verzeichniss der Abkürzungen` names
+works the way a 19th-century philologist would introduce them — by author, in the editor's
+language — not by the Sanskrit title a corpus indexes them under. Match on the prose and the
+most-cited authorities in the dictionary silently land in the class you have labelled
+"a genuine corpus gap that no crosswalk can close", where nobody will ever look again.
+
+`Evidence:` H1670's [`build_ls_text_crosswalk_backlog.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/build_ls_text_crosswalk_backlog.py)
+classified all 4,207 PWG `<ls>` abbrevs against DCS by prefix-matching the resolved `pwgbib`
+entry. PWG's entries read "PĀṆINI'S acht Bücher grammatischer Regeln" and "MANU'S Gesetzbuch
+in der Ausg. von LOISELEUR DESLONGCHAMPS" — neither contains *Aṣṭādhyāyī* or *Manusmṛti*, both
+of which DCS carries. So `P.` (21,305 citations, 2.88% of the dictionary's `<ls>` mass) and
+`M.` (20,605, 2.79%) were filed as `DCS-LACKS`. Mapped in H1691 they contribute **827 of the
+1,152 newly grounded senses** — the two largest crosswalk wins available, hidden in the class
+declared untouchable.
+
+The same generator fails the other way too, and both failures are one-line habits worth
+banning outright:
+
+- **`max(candidates, key=tokens)`** — picking the *largest* name-alike paired `SĀṂKHYAK` with
+  the Sāṃkhyakārikā**bhāṣya** when DCS also carries the bare kārikā.
+- **prefix-matching a name-alike at all** — six abbrevs were paired with a *different work*
+  whose correct counterpart DCS also carries (`TBR` with the Taittirīya**saṃhitā** not the
+  **brāhmaṇa**; likewise `KĀTY. ŚR`, `ĀŚV. ŚR`, `ŚĀṄKH. BR`, `ŚĀṄKH. GṚHY`, `TAITT. ĀR`/`UP`).
+  Spelling variation defeats it as well: DCS spells the Āśvalāyana Śrautasūtra
+  *Āśvālāyana*śrautasūtra, so the prefix never fired.
+
+`So:` treat such a class as **"no name-alike was found"**, never as a fact about the corpus,
+and say so in the column header. Adjudicate against the corpus's own text list, and commit the
+verdicts to a sidecar the generator reads back so a regeneration cannot discard them
+([`pwg_ls_dcs_scheme_verdicts.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_ls_dcs_scheme_verdicts.tsv)).
+Re-classified, `DCS-LACKS` fell from 367,670 citations (49.7%) to 275,268 (37.2%) — and it is
+*still* only an upper bound, because the remaining 3,735 abbrevs were not audited.
+
+_26-07-2026 · [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md) · [`PWG_DCS_TEXT_CROSSWALK_H1691.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_DCS_TEXT_CROSSWALK_H1691.md) · Opus 5 `claude-opus-5[1m]`_
+
+### §472. Choosing a confidence tier ONCE PER SENSE and then stamping it on many passages inflates the strongest tier — 4.13% of H1670's exact-verse rows were chapter-level
+
+🔴 **A tier is a property of a row, not of a sense.** H1670 correctly separated exact-verse
+matches from chapter-level ones into `locus` (conf 0.90) and `locus-chapter` (0.70). But the
+decision was taken once per sense and then applied to every passage that sense matched — and a
+single sense routinely matches several passages whose addresses bottom out at different levels
+(20.9% of DCS's Ṛgveda and 24.1% of its Atharvaveda sentences carry no `sent_counter` at all).
+
+`Evidence:` 507 of the 12,280 `locus` rows in H1670's wide-frame run (**4.13%**) carried an
+address with no `sent_counter` — i.e. a chapter-level address published in the exact-verse tier
+at confidence 0.90. 504 were Aitareyabrāhmaṇa, which an independent containment test shows is a
+chapter-level-only text for PWG's citation scheme (verse 0.3%, chapter 95.9%). Fixed in H1691
+by letting the level travel with the passage: after the fix **zero** exact-verse rows carry a
+counter-less address, 522 rows moved to `locus-chapter`, and the grounded-sense count is
+unchanged (8,208 either way) because the fix relabels within the locus family rather than
+adding or removing groundings. Wave-1 is provably unaffected — its run contains 0 such rows.
+
+`So:` whenever a per-item confidence is derived from a per-group decision, assert the invariant
+in the writer, not in the reviewer's memory. The cheap regression test is the one that caught
+this: `grep` the strongest tier's rows for an address shape that tier is supposed to exclude.
+
+_26-07-2026 · [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md) · [`build_sense_corpus_concordance.py`](https://github.com/gasyoun/kosha/blob/main/scripts/build_sense_corpus_concordance.py) · Opus 5 `claude-opus-5[1m]`_
+
+### §473. OCR the canonical page files themselves — mapping a THIRD-PARTY OCR of "the same" scan onto them loses to offset drift, thumbnail decoys, and digit aliasing
+
+Closing the Gorresio vols-2/4/uk e-text gap (the §470 residue) looked cheapest via
+archive.org's ready-made tesseract derivatives of the same physical scans (DLI vol 2,
+`bub_gb` vol 4) — per-page hOCR/DjVu-XML exists and the Devanagari quality is fine. It
+still lost to the direct route, for reasons that generalize to any "reuse someone
+else's OCR of the same book" plan:
+
+- **Leaf↔page offsets are NOT constant across a volume.** The DLI vol-2 copy drifts
+  from +48 to +20 relative to the Cologne page files (extra/missing leaves), and in
+  the drift zone the only per-page anchor — printed verse numbers — **aliases**:
+  short sargas restart 1…9, 10…19, so a wrong offset still "agrees". A banded
+  monotone DP found A mapping (mean agreement 0.635) but its transition zone was
+  provably smeared. Vol 4 happened to be constant (+26); you can't know in advance
+  which kind you have.
+- **Printed page numbers in the running heads don't rescue it** — the ९↔१↔४ digit
+  confusions are exactly the glyphs page numbers are made of.
+- **The direct route is trivially correct by construction**: the Cologne per-page
+  PDFs carry the full-resolution scan image inside (2,900×4,700 px class), so
+  extracting the embedded image and running tesseract 5 `san` keys every output by
+  `(vol, page)` with no mapping step at all. 1,427 pages OCRed locally in ~25 min
+  (6 workers), 99–100% of pages yield verse markers; the concordance consumer
+  (8-gram fuzzy matching, 0.25 floor) is insensitive to the residual noise.
+  12/12 sampled new mappings verified true.
+- **Two extraction traps**: (1) some pages embed a low-res THUMBNAIL alongside the
+  scan — `page.get_images()[0]` silently returns it (vol 4 first-pass yield: 8% of
+  pages with verse markers, vs 100% after taking the largest image by pixel area);
+  (2) tesseract renders the double daṇḍa ॥ as two single daṇḍas often enough that a
+  `॥N॥`-splitter loses whole verses — normalize `।।` → `॥` before segmenting.
+
+`So:` when a canonical page-keyed store already exists, OCR **its own pages** and pay
+the compute; reuse third-party OCR of "the same" edition only when you can anchor
+every page independently, not via a constant offset you haven't proven. And when
+mining images out of PDFs, always take the largest image on the page, never `[0]`.
+
+_26-07-2026 · [H1689](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1689-Opus_SanskritLexicography_gorresio-vols-2-4-uk-ocr-etext_26.07.26.md) · [`build_ramayana_concordance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py) · Fable 5 `claude-fable-5`_
+### §474. PWG's etymology parenthesis is NESTED — a "first `+`-chain" regex reads the inner sub-analysis, not the compound's members
+
+🔴 **`({#akftta#} [<hom>3.</hom> {#a#} + {#kftta#} …] + {#ruc#})` is `akftta + ruc`, not `a + kftta`.**
+Böhtlingk & Roth decompose a *member* inside square brackets, and they also write a *different
+word's* parenthesis in the same entry head (`{#aDikazAzwika#}¦ <lex>adj.</lex> von {#aDikazazwi#}
+({#aDika#} + {#zazwi#})` — those members compose `aDikazazwi`, not the headword). A regex that
+takes the first `{#…#} + {#…#}` chain in the entry head therefore captures the wrong analysis,
+and a "first member is a lead-compatible prefix of the headword" filter does not catch it,
+because the privative `a` *is* such a prefix.
+
+`Evidence:` a bracket-aware re-parse of every entry behind
+[`SanskritGrammar/data/pwg_compound_split/`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pwg_compound_split/README.md),
+joined by `L_id`: **344 of 16,738 rows (2.06%) ship an inner or a neighbouring word's chain**,
+and a further 368 (2.20%) resolve to no verifiable top-level chain — 4.25% of a dataset whose
+README offers it as high-precision splitter gold to kosha and SanskritSpellCheck. Issue
+[SanskritGrammar#527](https://github.com/gasyoun/SanskritGrammar/issues/527).
+
+`So:` anchor on the headword's own `{#…#}¦`, take the **balanced** paren, blank every balanced
+`[...]` before splitting on `+`, and keep only the FIRST `{#…#}` of each `+`-part — what follows
+it is PWG's annotation of that member (`<ab>acc.</ab> von {#agni#}`, `<lex>f.</lex> von
+{#agamya#}`, `= {#loman#}`), not a second member. Reference implementation: `pwg_toplevel()` in
+[`adjudicate_compound_differs.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/adjudicate_compound_differs.py).
+
+_26-07-2026 · [H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §475. MW's `<k2>` carries a variant LIST after `;` and two different boundary marks — stripping the punctuation welds variants into a member that is not a word
+
+🟠 **`gaRa—kAri; gaRakAri` is one compound written twice, not a three-member compound.**
+MW `<k2>` uses `—` (em-dash) for a member boundary and `-` (hyphen) for a juncture where MW
+deliberately does *not* put one (`a-kAma—karSana` = the privative bound to member 1). It also
+lists spelling/accent variants inside the same field, separated by `; `. Splitting on the
+em-dash first and stripping punctuation second fuses the variants: `mw_compounds._clean_member`
+removes `;` **and the space**, so `gaRa—kAri; gaRakAri` yields the member `kArigaRakAri`.
+
+`Evidence:` 41 of 106,603 MW compound records (0.04%) — small, but each produces a member string
+that is not a Sanskrit word and an arity that is wrong, which then propagates into
+`compound:N_members` and the Zaliznyak `+N` index (`citpati` shipped as 3 members). Issue
+[SL#801](https://github.com/gasyoun/SanskritLexicography/issues/801).
+
+`So:` split `<k2>` on `;` first and take the first variant, then on the em-dash. Keep the hyphen
+rather than stripping it — it is MW stating where a boundary is *not*, which is usable evidence
+when reconciling MW's segmentation against another dictionary's.
+
+`✅ FIXED 26-07-2026` (H1703, [PR #817](https://github.com/gasyoun/SanskritLexicography/pull/817),
+[v1.87.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.87.0)) — with one
+correction to the `So:` above: take the first variant that **carries the segmentation**, not
+simply the first variant. MW sometimes lists the unsegmented spelling first
+(`gaRakAri; gaRa—kAri`), and "first variant wins" silently drops those records instead of
+fixing them. All 41 records corrected (22 arity-corrected); `--selftest` pins the case.
+The hyphen is still stripped in `mw_compounds.py` — only the adjudicator's `mw_variants()`
+keeps it — so the second half of this finding remains open, deliberately: changing the member
+spelling downstream is a bigger change than the defect warranted.
+
+_26-07-2026 · [H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §476. Repairing an extractor GROWS the disagreement queue it feeds — plan for that, not for a shrink
+
+🟠 **Two upstream repairs were expected to shrink a 4,123-card PWG-vs-MW disagreement queue.
+They grew it by 3 %.**
+A repair does two things at once: it removes rows that only disagreed because of the defect,
+and it *adds* rows that were previously absent or unresolvable and now produce a real
+comparison. The second effect is easy to forget when writing the plan, because the defect is
+what you are thinking about.
+
+`Evidence:` after [SanskritGrammar#527](https://github.com/gasyoun/SanskritGrammar/issues/527)
+(PWG chain now headword-anchored: 512 rows dropped, **879 added**) and
+[SL#801](https://github.com/gasyoun/SanskritLexicography/issues/801) (MW variant fusion),
+the `differs` queue moved 4,123 → **4,246 cards**: 118 left, 241 entered (163 brand-new PWG
+comparisons, 74 that previously had no PWG chain, 4 from `agrees`). The defect strata did
+vanish as predicted — `pwg_layer_inner_chain` 75 → 0, `pwg_layer_no_headword_paren` 82 → 2,
+`mw_variant_fusion` 10 → 0 — so both halves of the prediction were individually right and the
+net was still the wrong sign.
+
+`So:` when a handoff says "land the repair first, the queue will shrink", treat the shrink as
+an unmeasured assumption, and re-derive the queue before sizing any human sample against it. A
+blind arm drawn against the pre-repair queue keeps its value in the strata that survive, but
+some of its cards will have left the queue entirely (9 of 200 here) — count them and say so
+rather than reporting the arm at full size.
+
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §477. 35 cards is the floor for a 0.90 Wilson gate — and a censused stratum needs no interval at all
+
+🟡 **`wilson_lower(35, 35) = 0.9010`; `wilson_lower(34, 34) = 0.8983`.**
+When promotion is gated on a per-stratum Wilson-95 % lower bound ≥ 0.90, a stratum sampled with
+34 cards cannot clear the gate *even if the human agrees with every single card*. Sizing a
+review arm at "about 30 per stratum" therefore buys nothing: the votes are spent and the
+stratum still cannot promote.
+
+`Evidence:` the H1628 arm put 16, 11, 10, 10, 1 and 0 cards into six of eight strata — every
+one of them unpriceable at the 0.90 gate, capping promotion at 3,018 of 4,226 rows however the
+human voted. Re-drawing at 35/stratum lifted all of them past 0.90 (0.901–0.906) for 232 cards
+of human time.
+
+`So:` derive the per-stratum floor from the gate before drawing, not after. And note the
+corollary that is easy to miss: **a stratum small enough to census does not need an interval
+at all** — if every row in it carries a human vote there is nothing to extrapolate to, so it
+promotes by census while its Wilson bound is still below the threshold. The 31-row
+`granularity_ic_vs_full_decomposition` stratum promotes on `promotion_basis: census` with a
+bound of 0.890; reporting it as "unpromotable" because 0.890 < 0.90 would be wrong.
+
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §478. A blind arm stratified on an agent's own rules must not render the rule — and its card ids must come from the lock, not the frame
+
+🟠 **Stratifying a verification sample by the agent's classification is right; showing that
+classification on the card destroys the thing being measured.**
+An arm exists to price the agent. If the card displays the stratum, the rule, the verdict or
+the reason, the human is being asked to agree with a labelled claim rather than to judge the
+evidence, and the resulting precision is unmeasurable.
+
+`Evidence:` the H1703 arm is stratified on the H1681 rule ladder (`mw_cut_leaves_nonword`,
+`pwg_lexeme_vs_mw_suffixed_tail`, …). Those names are self-fulfilling as prompts. The card
+therefore carries only the two member lists, the source PWG parenthesis, the source MW `<k2>`
+and neutral badges (length, DCS frequency, member-count class); the stratum, rule and verdict
+live in the frame TSV. A selftest asserts no card JSON contains any of them.
+
+`So:` two rules for any blind arm built on top of an agent pass — (1) the sampling key never
+appears on the voting surface, and it is worth pinning that with a test rather than a comment,
+because the natural way to build a card is to reuse the row dict that already carries the
+label; (2) take the arm's card ids from the **committed lock**, not the frame TSV. The lock is
+what `validate_decisions.py` checks the human's export against, so it is the only list that can
+actually pay out — an unbound sheet must count as pricing nothing rather than silently falling
+back to its frame, which is how the unbound-sheet defect (H1703 item 1) stayed invisible until
+someone went looking.
+
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §479. PWG's etymology parenthesis: "first `{#…#}` per `+`-part" is right until PWG writes a derivation ladder
+
+🟡 **`(von {#BAnumant#} oder von {#BAnu#} + {#mati#})` — first-wins ships `BAnumant`, but the
+compound is `BAnu + mati`.**
+Extracting PWG's member chain needs three rules, and only the first is obvious. (a) Blank every
+balanced `[...]` — PWG nests a member's own sub-analysis there. (b) Within a `+`-part, the
+member is normally the *first* `{#…#}`; what follows is PWG's annotation of it
+(`{#agnim#} <ab>acc.</ab> von {#agni#}`, `{#Sira#} = {#Siras#}`). (c) But PWG also writes
+disjunctions and derivation ladders inside a part — `von X oder von Y`,
+`von X und dieses von Y` — where the first `{#…#}` is a *base*, not a member.
+
+`Evidence:` over the whole of `pwg.txt`, 1,564 `+`-parts carry more than one `{#…#}`: 1,056
+`von`-annotations and 252 `=`-glosses where first-wins is correct, against ~357 ladders and
+disjunctions where it is not. Settling the ambiguous ones against the headword's surface —
+first-wins if the members account for the headword within ±1 char per seam, else the unique
+candidate chain that does, else **drop** — resolves `BAnumatin` → `BAnu + mati` correctly and
+drops `DvajAgravatI` (a *derivative* of a compound: nothing composes it, so it is not surface
+segmentation gold at all). Also measured: PWG's analysis paren does **not** always sit
+immediately after the headword's `¦` (`{#BUsuta#}¦ 1〉 <lex>m.</lex> ({#BU#} + {#suta#})`), so
+requiring adjacency loses ~2,500 correct rows; accepting it across annotation-only material,
+and across a citation or gloss only when the chain composes the headword, keeps them without
+re-admitting the neighbouring-word defect.
+
+`So:` do not treat "first `{#…#}` per part" as the whole rule, and never guess when a part is
+ambiguous — drop and count by reason. The extractor
+([`pwg_compound_split.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/pwg_compound_split.py))
+and the adjudicator
+([`adjudicate_compound_differs.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/adjudicate_compound_differs.py))
+must stay in sync on all of this: if they disagree about what PWG says, the PWG-vs-MW queue
+measures the extractors instead of the dictionaries.
+
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §480. A non-empty PDF text layer proves nothing — check the SCRIPT; and "extract the largest embedded image" breaks when the PDF CROPS a 2-up scan
+
+🔴 **§470 and §473 were both written off one edition's page PDFs (ramayanagorr) and both
+mis-fire on the next one (ramayanabom).** The recipes are still right; what was missing is
+the check that tells you which branch you are on. Two traps, each of which silently
+produces plausible output:
+
+- **The text layer is a decoy.** Every `pdfpagesv3/ram-III-NNN.pdf` returns 1,100–2,300
+  characters from `page.get_text()` — a §470 check keyed on "is `get_text()` non-empty?"
+  passes with room to spare. The characters are Latin:
+  `*kitihtell18.1b1,1111qhMakkhd-lie Ifkkt12111414A 11W,Ilkihk11/1111 II`. Google's
+  digitisation OCRed this Devanagari page with a Latin-alphabet model, and the result is
+  embedded as a real, searchable text layer. **So: §470's check is on the SCRIPT of the
+  returned text, not its length** — one `re.search(r'[ऀ-ॿ]', txt)` is the whole
+  fix, and without it a session concludes "e-text recovered, zero OCR needed" and ships
+  noise.
+- **The largest embedded image can be the WRONG UNIT.** §473 says take the largest image
+  by pixel area, never `get_images()[0]` — correct, and still insufficient. Each page here
+  is 1128×420 pt (pothi/landscape, aspect 2.69) but embeds a single 4700×3500 image
+  (aspect 1.34) that is a **2-up scan of two printed pages**, which the PDF crops in half.
+  Extracting it yields two pages of text keyed to one page number, and nothing errors.
+  Verified by geometry (image aspect = exactly half the page aspect) and by rendering.
+  **So: when the embedded image's aspect ratio does not match the page rect's, the PDF is
+  cropping — render the page (`get_pixmap(dpi=…)`) and let the crop apply.** Here
+  `dpi=300` is native resolution, so rendering costs no fidelity.
+
+Corollaries measured on the same volume, all reusable: `ram-III-NNN.pdf` **is** printed
+page N (offset 0, verified visually at pp. 505 and 810); the index's folio column
+**restarts at 1 for each kāṇḍa** inside a volume, so a volume-wide page→folio map is ~250
+folios out at the tail; a commentary edition prints **three verse-numbered zones per page**
+(commentary above, mūla, commentary below), so a whole-page `॥N॥` split multiplies the
+verse count (14 markers vs 3 in the mūla band on p. 600; 22 vs 1 on p. 700) and word-height
+filtering under `--psm 6` does not separate them — tesseract merges lines across zones on a
+wide layout; and resolution is **not uniform** across a volume (most pages DeviceGray/JBIG2
+at 4700×3500, some sepia DeviceRGB JPEG at half that, which OCR to nothing unbinarised).
+
+_27-07-2026 · [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §481. A corpus file's PRESENCE is not evidence of its contents — `07_ramayana-uttarakanda.jsonl` is Sanskrit-only CRITICAL-edition text under a "Southern/Leonov" label, and a handoff was minted off the filename
+
+🔴 **H1705 was written on the sentence "the corpus HAS `07_ramayana-uttarakanda.jsonl`, so
+the missing piece is the Bombay-numbering bridge, not the RU side."** The file exists. Both
+inferences from its existence are false, and the code that consumes it already said so —
+[`citation_tm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/citation_tm.py)
+carries a comment stating that no Russian translation of kiṣkindhā, yuddha or uttara exists
+at all. The handoff was minted off a directory listing; the contradiction sat one `grep`
+away.
+
+| check | kāṇḍas 1 / 2 / 3 / 5 | kāṇḍa 6 | kāṇḍa 7 |
+|---|---|---|---|
+| `sa` segments | 2,268 / 4,307 / 2,447 / 2,859 | 4,436 | 2,690 |
+| `ru` segments | **same count, fully paired** | **0** | **0** |
+| rows identical to the DCS critical ed. (same `sarga.verse`) | 1.2–3.0% | **99.8%** | **99.9%** (95.5% at score 1.0) |
+
+So kāṇḍas 6–7 were ingested from a different source than 1/2/3/5 — they are the Baroda
+critical text, carrying a label ("Southern", the Leonov translation-of-record keying) that
+is true of the other four. Two consequences beyond the wasted handoff: the committed
+`ramayana_southern_critical_concordance.tsv` is, for those two kāṇḍas, **a text aligned
+against itself** — its 99.8%/99.9% agreement is not evidence that the recensions agree; and
+any consumer treating `06`/`07` as vulgate-keyed inherits a silent recension swap of the
+kind §468 documents for R. books 3–6.
+
+`So:` **before planning work against a corpus asset, measure the asset, not the manifest** —
+segment counts per language, and an identity check against whatever else claims to be the
+same text. Both are one pass over the file. The generalisable form: a filename, a manifest
+row and a directory listing are all *claims*; a handoff premised on one of them without a
+read is a handoff premised on nothing. Related: §471 (a class label that is a fact about
+the matcher, not about the corpus), §472 (a tier decided once per group and stamped on
+rows).
+
+Integrity issue: [SL#822](https://github.com/gasyoun/SanskritLexicography/issues/822).
+
+_27-07-2026 · [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §482. A count column with no stated provenance is not data — it is a ranking, and the difference decides whether you may divide by it
+
+🔴 **The PWG scan-index tracker's `Citation count` column reproduces no extraction that
+exists in this org.** Measured against the full-dictionary `<ls>` extraction
+([`sortedcrefs.txt`](https://github.com/sanskrit-lexicon/PWG/blob/main/pwg_ls/pwg_dhaval/abbrvwork/abbrvoutput/sortedcrefs.txt),
+9,321 cleaned citation strings, 344,229 occurrences) the sheet/extraction ratio spreads
+from **1.2× to 433×** with a median of 2.09×, and a leading-abbreviation rollup does not
+close it either. The two count different objects: the extraction keys on a *cleaned
+citation string* (canto and śloka numbers stripped, section letters kept — so `MED.`,
+`MED. k.`, `MED. im ŚKDR.` are three keys for one book), the sheet keys on a *book*.
+
+| `<ls>` code | sheet | bare-string occurrences | ratio |
+|---|--:|--:|--:|
+| `MED.` | 12,990 | 30 | 433× |
+| `H. an.` | 9,781 | 1,907 | 5.1× |
+| `NAIGH.` | 1,477 | 1,227 | 1.2× |
+
+**The temptation this kills.** With the campaign's indexed mass at 197,876 and a
+dictionary-wide total of 344,229 sitting right there, "**57.5 % of PWG's citations are now
+page-indexed**" writes itself — a clean, quotable, and entirely unsupported headline,
+because numerator and denominator come from different counting rules. The published report
+carries a coverage-of-the-tracked-set figure instead (73.7 %), states the denominator it is
+*not* using, and records the provenance question as open.
+
+`So:` **a count you did not derive is usable for ORDER and unusable for RATIO until its
+provenance is written down.** Ranking only needs monotonicity, which survives an unknown
+scale factor; any percentage needs numerator and denominator to count the same object,
+which an unknown scale factor destroys. The test is one question — *what would I have to
+believe for this division to be valid?* — and when the answer is "that two numbers I
+cannot reconcile measure the same thing", the division does not get published. Do not
+paper the gap over with a plausible mechanism either: "book vs abbreviation" explains a
+2× ratio, not a 433× one, and offering it as *the* explanation would have converted an
+open question into a false answer. Related: §481 (a filename is a claim, not a
+measurement), §471 (a label that is a fact about the matcher, not the corpus).
+
+Registry, report §6.2 and the full ratio table:
+[csl-observatory `data/pwg_scan_index_tracker/`](https://github.com/sanskrit-lexicon/csl-observatory/tree/main/data/pwg_scan_index_tracker).
+The provenance question is an open MG `@DECIDE` in
+[GTD](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) — it needs whoever
+built the column, not more computation.
+
+_27-07-2026 · [H1706](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1706-Opus_csl-observatory_pwg-scan-index-tracker-reuse_26.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+
+### §483. A resolver that fails closed is a gap; one that fails *open* is a wrong answer — and only the second is an integrity defect
+
+🔴 **A Ṛgveda-Prātiśākhya citation in PWG does not fail to resolve — it resolves to an
+Ṛgveda *hymn* anchor.** Auditing which of the 37 scan directories the citation resolver is
+wired to, 36 came back fine and one came back worse than missing:
+[`ls_resolver.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver.py)
+contains the string `rvps` zero times, and the only Prātiśākhya-shaped pattern routes to
+the `rvlinks` hymn pages. So the reader is handed a link to a different text, silently.
+The undotted `RV. PRAT.` spelling reaches the same wrong place by a second route, emitting
+a `rv00.*` mandala-00 URL that does not exist.
+
+Four further codes were found failing **closed** in the same audit (`TS.` and `TBR.`
+resolve only at 4-parameter arity, `PANCAR.` only at 3; `amara_col` is reachable only via
+`COL.`, never from a bare `AK.`), plus 38 of 90 prefix-map values whose dispatch branch can
+never fire. Those are backlog. The Prātiśākhya case is not.
+
+`So:` **when auditing a resolver, sort the misses by failure direction before sorting them
+by frequency.** A `None` is visible to the caller and costs a missing link; a
+plausible-looking URL to the wrong text is invisible and costs the reader's trust in every
+other link on the page. The audit that finds both should escalate only the second — and
+should assert the emitted *host and path*, not merely "not None", or the test suite will
+happily bless the wrong answer. Errors here are swallowed by design
+(`_warn_swallowed`, suppressible with `LS_RESOLVER_QUIET=1`), which is exactly why the
+defect survived until an outside pass looked.
+
+Method: the module was imported and `generate_href()` called for ~110 probe citations
+across every tracked code at every plausible arity, each result classified with the
+resolver's own `link_type()` — not read off the source. The canonical
+[`csl-app/lib/core/ls_service.dart`](https://github.com/sanskrit-lexicon/csl-app/blob/main/lib/core/ls_service.dart),
+of which this file is a port, was **not** audited; fixing only the port would leave the
+app wrong and create fork drift.
+
+Integrity issue: [SL#826](https://github.com/gasyoun/SanskritLexicography/issues/826) ·
+fix queued as [H1714](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1714-Sonnet_SanskritLexicography_ls-resolver-rvps-mislink-wiring-fix_27.07.26.md) ·
+per-directory table: [`scan_target_audit.tsv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/data/pwg_scan_index_tracker/scan_target_audit.tsv).
+
+_27-07-2026 · [H1706](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1706-Opus_csl-observatory_pwg-scan-index-tracker-reuse_26.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+
+### §484. A quarter of the DCS nominal mass has no case at all — `feat_case='Cpd'` is a compound member, not a ninth case
+
+🔴 **NOUN + ADJ = 2,996,410 tokens; only 2,263,192 (75.5%) carry a case. 724,676 (24.2%) are
+`feat_case='Cpd'`, and 8,542 (0.3%) carry no case tag.**
+`Cpd` marks a token's membership in a compound, where it is caseless by construction; 733,218
+NOUN/ADJ tokens likewise have `feat_number IS NULL`, almost exactly the same set. So a "case
+distribution over the DCS nominals" is wrong in both directions: include `Cpd` and a quarter of
+the mass is counted as a case it does not have; drop it silently and the reader is shown 75.5%
+of the nominal layer as if it were all of it.
+
+`Evidence:` the H1472 nominal grid, built over the pinned master (`04e0778`). Per-class the
+share varies sharply — `-a` 512,037 `Cpd` against 1,467,730 cased (25.9%), `-in` 5,115 against
+47,676 (9.7%) — so the correction is not a constant that can be applied after the fact.
+
+`So:` state the three buckets and assert they sum to the universe. Any nominal slice owes
+`grid + Cpd + untagged == COUNT(*)`; a query that returns only the grid has not measured the
+nominal layer, it has measured the case-bearing part of it. The same discipline that makes
+E46's verbal cells honest applies here — and the assertion is not decorative: it is what caught
+a NULL-logic complement silently dropping the 8,542 untagged tokens from *both* sides of the
+split (the infra form of that trap is [Uprava FINDINGS §218](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)).
+
+_27-07-2026 · [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md) · [`reports/paradigm_nominal_build.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/paradigm_nominal_build.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §485. The 2021-sourced "Nom.Sg = 34.6% of nominal forms, dual < 1% everywhere" does not reproduce on DCS-2026 — and the second half only survives read per cell
+
+🟡 **Measured on the 2026 master over the 2,263,192-token cased grid: Nom.Sg = 761,605 =
+33.7%. Dual pooled across all eight cases = 46,909 = 2.07%; the largest single dual cell
+(Nom.Dual, 20,590) = 0.91%.**
+Both numbers have been quoted for a year from a 2021 `cs.csv` note carried in VisualDCS'
+`roadmap.md` and re-printed on its landing page. The first does not reproduce. The second
+reproduces only under the per-cell reading — pooled, the dual is more than twice the claimed
+ceiling, and "dual < 1%" is the kind of claim a reader will apply to the category, not the cell.
+
+`Evidence:` recomputed 27-07-2026 in the H1472 build report, denominator stated explicitly.
+The residual gap on the first figure is not diagnosed here: the 2021 note does not say whether
+its denominator included `Cpd` members (§482), and no attempt was made to reconstruct the 2021
+computation — so this is a non-reproduction, not a refutation of the 2021 number on its own
+terms.
+
+`So:` a corpus statistic quoted without its denominator is not re-checkable, and one quoted
+across a corpus vintage is not portable. When re-printing an inherited figure, restate the
+denominator and the vintage or drop the figure.
+
+_27-07-2026 · [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md) · [`reports/paradigm_nominal_build.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/paradigm_nominal_build.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §486. Before OCR-ing a library scan, check whether the library already published its OCR — and measure against it rather than guessing
+
+🔴 **The Bayerische Staatsbibliothek publishes per-page hOCR for every page it scans, and
+it is 2.5× better than what tesseract 5 `san` produces locally.** H1715 was written to OCR
+two 19th-century Sanskrit kośa editions from the `sanskrit-lexicon-scans` page images. The
+scans genuinely carry no text layer (0 chars, 0 fonts, one embedded JPEG per page — checked
+by [[§480]]'s script-test, not by length). But the OCR did not need doing: every canvas in
+the BSB IIIF manifest carries a `seeAlso` pointing at
+`https://api.digitale-sammlungen.de/ocr/<bsb_id>/<n>`, full hOCR with word-level bounding
+boxes, free.
+
+| engine, same 12 pages, same metric | tokens | valid Sanskrit | rate |
+|---|--:|--:|--:|
+| tesseract 5 `san`, local | 658 | 117 | **17.8 %** |
+| BSB's published per-page hOCR | 722 | 316 | **43.8 %** |
+| _control — reference text through the same tokenizer_ | 1,071 | 1,071 | _100.0 %_ |
+
+The metric is a **valid-token rate**, not a CER: the share of extracted Devanagari tokens
+that are real Sanskrit words, scored against the same work's already-digitized e-text in
+`csl-orig` (`abch` + `acph` + `acsj`) plus MW headwords. That instrument cost nothing and
+needed no hand transcription — which matters, because 1839/1847 Devanagari with archaic
+orthography is not material one can transcribe reliably enough to serve as ground truth,
+and a CER asserted off an unreliable transcription is worse than no CER.
+
+An 18-configuration sweep (dpi × psm × {raw, Otsu, aggressive threshold}) topped out at
+30.5 % — and that configuration scored higher only by emitting half as many tokens. The low
+rate is the material, not the settings: show-through from the reverse leaf is visible on
+every page of the 1847 printing, and thresholding it away removes ink with it.
+
+`So:` **three rules, in order.** (1) A scanned book has a provenance chain — repo →
+digitising library → IIIF manifest — and the manifest is a *machine-readable* claim about
+what else the library ships. Read it before generating what it already gives you; two HTTP
+calls settled a question a week of OCR would have answered worse. (2) When two engines are
+in play, an *existing e-text of the same work* is a free comparison instrument even when it
+is a different edition — the absolute level is conservative, but scoring both engines
+against the identical reference makes the comparison sound. (3) Report the metric you
+actually computed. "Valid-token rate, n=12 pages, edition-variant caveat stated" is
+publishable; a CER invented from a transcription one cannot vouch for is not.
+Related: [[§480]] (test the script of `get_text()`, not its length), §473 (the OCR recipe
+this supersedes for library-scanned material), §59 (the prior-art check that catches this
+class).
+
+Verdict, report and the reproducible probe:
+[csl-observatory `reports/pwg_kosa_etext_pilot.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/pwg_kosa_etext_pilot.md)
+· [`scripts/pwg_kosa_ocr_probe.py`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/scripts/pwg_kosa_ocr_probe.py).
+Re-scoped execution: [H1720](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1720-Sonnet_csl-observatory_pwg-kosa-bsb-hocr-ingest-align_27.07.26.md).
+
+**Provenance to carry, not a gate.** The page images are the Bayerische
+Staatsbibliothek's (`bsb10250868`, `bsb10250953`), and both scan repositories already
+credit the library in their own `app1/info.html` — derived artifacts keep that credit.
+Publication of everything derived from them was ruled open on 27-07-2026; there is no
+rights gate on this line of work.
+
+_27-07-2026 · [H1715](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1715-Opus_csl-observatory_pwg-kosa-etext-pilot-amara-abhidhana_27.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+
+### §487. A cross-scheme join is a transliteration step, not a string comparison — a naive IAST-to-SLP1 match selects on diacritics
+
+🟠 **Joining an IAST-spelled root list straight onto SLP1 lemma keys matched 29 % of the
+catalogue and inflated the answer by 26 points — because the matches are exactly the
+diacritic-free roots, which are frequency-enriched by construction.**
+
+Measuring PM6 (how much of the Талмуд's 745-root Приложение 1 the Zaliznyak on-ramp's four
+taught ablaut rows actually cover) needs the catalogue joined to kosha's
+[`lemma_frequency.tsv`](https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv)
+for token counts. The catalogue spells roots in **IAST** (`akṣ`, `īṅkh`, `ṛt`); the frequency
+table keys on **SLP1** (`akz`, `INK`, `ft`). A direct string join runs without error and
+returns a plausible-looking 218 of 745 roots — and reported the on-ramp's rows as carrying
+**82.7 %** of verb-root token mass.
+
+Through the canonical [`sanskrit_util.to_slp1`](https://github.com/sanskrit-lexicon/sanskrit-util/blob/main/py/sanskrit_util/__init__.py)
+the same join matches 616 of 745 and the answer is **56.2 %**. The naive join was off by
+**+26.5 points** — and in the direction that flatters the deliverable.
+
+`Why:` the direct join is not a random sample of the catalogue. IAST and SLP1 coincide
+**exactly on the roots that contain no diacritic** — so the join silently selects the
+ASCII-spellable subset (short, old, high-frequency roots: `yat`, `vat`, `kal`) and discards
+every retroflex, long vowel and syllabic liquid. The surviving sample is frequency-enriched
+by construction, so any token-weighted statistic computed over it is biased upward. Nothing
+in the run signals this: no exception, no empty result, a 29 % match rate that reads as
+"partial coverage, as expected" rather than "systematically the wrong 29 %".
+
+`So:` **a cross-scheme join is a transliteration step, never a string comparison** — route
+every one through the canonical converter, and *report the join rate next to the result*
+(the number that would have exposed this was 29 % vs 82.7 %, printed side by side). The
+general form: when a join key can be spelled two ways and one spelling is a subset of the
+other's character set, silent non-matches are **selection on that character set**, not
+random loss. Sanity-check by asking what the unmatched rows have in common — here, a single
+glance at `akṣ`/`īṅkh`/`ṛt` versus `yat`/`kal` answers it.
+
+Related: §59 (the prior-art check — the converter already existed and
+[`build_rq4_item_bank.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py)
+already imported it for this exact catalogue).
+
+Committed as a reproducible probe with the trap in its docstring:
+[`measure_onramp_scope.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/measure_onramp_scope.py).
+
+_27-07-2026 · [H1476](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1476-Opus_SanskritGrammar_pedagogy-aspect-measurable-result-metrics_22.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_

@@ -1,6 +1,6 @@
 # DEAD_ENDS — the Sanskrit-data negative-results graveyard
 
-_Created: 08-07-2026 · Last updated: 20-07-2026_
+_Created: 08-07-2026 · Last updated: 27-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is *confirmed-true*. This file holds the act FINDINGS cannot: **abandoning** an approach — a whole method that was tried and does not work, so the next session does not pay to rediscover the failure. Distinct from a single refuted hypothesis (that lives per-row in [`Uprava/QUESTIONS_LOG.md`](https://github.com/gasyoun/Uprava/blob/main/QUESTIONS_LOG.md)); a dead end is per-*approach*. One of the seven epistemic registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). Its infra twin is [`Uprava/DEAD_ENDS.md`](https://github.com/gasyoun/Uprava/blob/main/DEAD_ENDS.md).
 
@@ -166,5 +166,19 @@ Lesson: перед OCR-проектом проверять существова�
 > **Source:** ✍️ registered via /artifact-propagate epistemic pass 11-07-2026 (Fable 5 `claude-fable-5`).
 
 ---
+
+### §13. Building a Bombay↔corpus verse concordance for PWG's `R.` book 7 — abandoned before the OCR was spent
+
+🔴 ✍️ **OCRing the 308 Bombay-edition uttarakāṇḍa pages to build a Bombay↔corpus verse map so `R. 7,x,y` citations can reuse a Russian translation.**
+
+Failed because: **there is no Russian translation to reuse, and none is expected.** `07_ramayana-uttarakanda.jsonl` carries 2,690 Sanskrit segments and **zero** Russian (kāṇḍa 6 likewise; kāṇḍas 1/2/3/5 are fully paired). Gryntser's academic translation stopped after book 3, Leonov's covers Sundara, and the [RussianRamayana](https://github.com/gasyoun/RussianRamayana) pipeline's own `project-status.json` has book IV blocked, V in progress, VI draft-ready (~2029) — book VII is not in it. A perfect concordance would resolve an `R. 7` locus to a Sanskrit verse nobody can pair with Russian, which is not what `citation_tm` does. The cheaper fallback failed independently and first: the Bombay uttarakāṇḍa runs to **111 sargas + 13 interpolated** against the corpus's **100**, with identical verse counts in only **11 of 100** shared sargas (delta −14…+18, mean +4.7), so no direct-with-offset scheme is honest either.
+
+Evidence: [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md); the structural side is committed and re-derivable as [`ramayana_bombay_inventory.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_bombay_inventory.tsv) (`build_ramayana_concordance.py build-bombay`, no OCR); 1,765 plain `R.` book-7 citations are at stake, 127 of them naming a sarga >100 that a 100-sarga text cannot carry.
+
+Don't retry unless: **a Russian Uttarakāṇḍa exists** ([GAPS §13](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md)). Then the order is (1) ingest it against the *vulgate* numbering PWG cites, not the critical text now in the corpus file — that step alone may make `R. 7` resolve directly; (2) only if the translation follows a different Sanskrit, OCR pages 505–812 per [FINDINGS §480](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md), solving the three-zone commentary layout FIRST (a whole-page `॥N॥` split multiplies the verse count); (3) build the map.
+
+↔ Interlinks: the same wrong-witness species as [§9](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) — there a concordance could not separate two hypotheses, here it would answer a question no consumer is asking. The premise that failed is registered as [FINDINGS §481](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (measure the asset, not the manifest).
+> **Source:** [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [PR #823](https://github.com/gasyoun/SanskritLexicography/pull/823) · 27-07-2026 · Opus 5 1M `claude-opus-5[1m]`
+
 
 _Dr. Mārcis Gasūns_

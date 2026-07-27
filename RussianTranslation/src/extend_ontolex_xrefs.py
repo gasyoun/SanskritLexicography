@@ -42,7 +42,7 @@ def entries_in(base_ttl_path):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--base-ttl', required=True)
-    ap.add_argument('--base-iri', default='https://w3id.org/sanskrit-lexicon/pwg-ru/')
+    ap.add_argument('--base-iri', default='https://w3id.org/sanskrit-lexicon/repwg/')
     ap.add_argument('--out', default=None)
     args = ap.parse_args()
 

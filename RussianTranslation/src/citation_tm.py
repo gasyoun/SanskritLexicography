@@ -27,15 +27,36 @@ TWO layers, deliberately separate:
   'miss'                 — a clean, honest non-hit, with a `reason`:
         'text-not-covered'    the text has no RU asset at all (TS., SUŚR., …).
         'locus-not-in-corpus' the text IS covered but this passage isn't ingested
-                              (e.g. Rāmāyaṇa kiṣkindhā/yuddha kāṇḍas — absent).
+                              — a real coverage hole, closable by ingestion.
+        'ru-translation-unpublished'
+                              the text is covered elsewhere but THIS kāṇḍa has no
+                              Russian translation of record anywhere — Rāmāyaṇa
+                              kāṇḍas 4 (kiṣkindhā), 6 (yuddha), 7 (uttara), which
+                              carry a `blocker` field naming the kāṇḍa. Split off
+                              from 'locus-not-in-corpus' 27-07-2026 (H1705): the
+                              two had shared one reason string, and reading book
+                              7's miss as an ingest/numbering gap is what got a
+                              Bombay-concordance handoff minted for a book whose
+                              real blocker is that nobody has translated it.
         'locus-parse-failed'  the citation locus didn't parse.
   'unmapped_locus_scheme'— the text is covered but its PWG citation scheme does
                            NOT map 1:1 to the corpus keying, so no lookup is
-                           possible without an external concordance. The two
-                           documented cases: MBH. (PWG cites continuous Calcutta
-                           ślokas; corpus keys critical parvan.adhyaya.verse) and
-                           R. GORR. (Gorresio Bengal recension ≠ Leonov Southern).
-                           NOT a miss — a GAP awaiting a concordance (see the doc).
+                           possible without an external concordance. Remaining
+                           case: MBH. (PWG cites continuous Calcutta ślokas;
+                           corpus keys critical parvan.adhyaya.verse). H1652
+                           built and MEASURED the cumulative-adhyāya candidate
+                           map and REJECTED it — see `_mbh_unmapped`.
+                           R. GORR. + plain R. books 3-6 (Gorresio-keyed per
+                           pwgbib 1.247) LEFT this bucket 26-07-2026: they now
+                           resolve through the content-based Gorresio-Southern
+                           verse concordance (reuse ON per MG), with two typed
+                           miss reasons instead of a scheme gap:
+                             'no-southern-counterpart' - Bengal-only verse, the
+                                Southern text genuinely lacks it;
+                             'gorresio-etext-gap' - sarga not in the e-text.
+                                Extinct since 26-07-2026 (H1689 OCRed the
+                                vols 2/4/uk scans; all 672 sargas covered) —
+                                the branch stays as a defensive guard.
   'evidence_unavailable' — the corpus DB is absent, so a resolved hit could not be
                            confirmed (distinct from 'miss': we simply couldn't look).
 
@@ -74,10 +95,30 @@ UNMAPPED = object()
 # `canonical_id` passage (without the #ru/#sa suffix), per COVERED_TEXTS_RU.md.
 # Return None on a parse failure; return UNMAPPED for a documented scheme gap.
 
-_RAMA_KANDA = {  # PWG book number -> corpus kāṇḍa file (04 kiṣkindhā / 06 yuddha absent)
+_RAMA_KANDA = {  # PWG book number -> corpus kāṇḍa file (Schlegel books only; see below)
     1: '01_ramayana-balakanda', 2: '02_ramayana-ayodhyakanda',
-    3: '03_ramayana-aranyakanda', 5: '05_ramayana-sundarakanda',
 }
+# PWG's plain "R." is a THREE-edition composite (pwgbib 1.247): books 1-2 cite
+# SCHLEGEL (numbering ~vulgate; the R. 2,91,26 fixture is human-validated),
+# books 3-6 cite GORRESIO — the Gauḍīya/Bengal recension, NOT the Southern
+# text Leonov translated — and book 7 the Bombay edition (~vulgate uttara).
+# Verified empirically (H1656): store citations reach R. 3,79 / 4,63 / 5,94 —
+# exactly the Gorresio sarga counts (79/63/95), far past the Southern ones
+# (75/–/68). So books 3-6 MUST NOT key into the Southern corpus: an in-range
+# locus would return the WRONG verse's translation silently. They stay
+# UNMAPPED until the Gorresio<->Southern concordance validates
+# (src/build_ramayana_concordance.py, DRAFT-STRUCTURAL).
+_RAMA_GORRESIO_BOOKS = {3, 4, 5, 6}
+
+# Kāṇḍas for which NO Russian translation of record exists anywhere — not in the
+# corpus, not in the archive, not in print. Gryntser's academic translation
+# stopped after book 3, Leonov's covers Sundara (5); kiṣkindhā (4) is blocked on
+# Serebryany's introduction, yuddha (6) is a literary draft targeted at ~2029 and
+# uttara (7) is not in the pipeline at all (RussianRamayana `project-status`).
+# These are NOT corpus-coverage holes, and saying `locus-not-in-corpus` for them
+# invites exactly the wrong fix — H1705 was minted to "bridge the numbering" for
+# book 7 on that reading, when the numbering was never the blocker.
+_RAMA_NO_RU_KANDA = {4: 'kiṣkindhā', 6: 'yuddha', 7: 'uttara'}
 
 
 def _nums(locus):
@@ -89,9 +130,15 @@ def _rama(locus):
     if len(n) != 3:
         return None
     book, sarga, verse = n
+    if book in _RAMA_GORRESIO_BOOKS:   # Gorresio-keyed loci -> content concordance
+        return _rama_gorresio(locus)
     work = _RAMA_KANDA.get(book)
-    if work is None:  # kiṣkindhā (4) / yuddha (6) not ingested -> covered-but-absent
-        return ('__ramayana_absent_kanda__', book)
+    if work is None:
+        # book 7 — cited from the Bombay ed. (111 sargas + 13 interpolated),
+        # measured NOT ≈1:1 against the 100-sarga corpus text under H1705, and
+        # with no Russian uttarakāṇḍa to reuse either way.
+        return ('__ramayana_no_ru_kanda__', book) if book in _RAMA_NO_RU_KANDA \
+            else ('__ramayana_absent_kanda__', book)
     return '%s:%d.%d' % (work, sarga, verse)
 
 
@@ -125,14 +172,87 @@ def _manu(locus):
 def _mbh_unmapped(locus):
     # PWG cites the Calcutta edition's continuous per-parvan śloka number
     # (e.g. MBH. 5,7331); corpus keys the critical edition's parvan.adhyaya.verse.
-    # No 1:1 map without a Calcutta<->critical concordance (see the doc GAP + @DECIDE).
+    # H1652 BUILT the obvious candidate map — a cumulative adhyāya-length table
+    # over the eighteen-parvan Nīlakaṇṭha-vulgate<->critical concordances that
+    # CommentaryStrategies already ships — and MEASURED it against the store:
+    # 11.2% of 1,327 locatable citations land within ±2 verses (random null
+    # 2.5%), 16% under a fitted per-parvan rescale, 1/43 on the anchors whose
+    # true verse is unambiguous. The vulgate witness is also shorter than the
+    # text PWG counts in 8/18 parvans, so 145 citations have no ordinal at all.
+    # REJECTED: numbers + method in `build_mbh_concordance.py` and
+    # pwg_ru/H1652_MBH_CALCUTTA_VALIDATION_2026-07-26.md. Closing this needs the
+    # Calcutta text itself, not arithmetic over a different witness.
     return UNMAPPED
 
 
-def _rama_gorresio_unmapped(locus):
-    # Gorresio Gauḍīya/Bengal recension != Leonov Southern (only ~1/3 verse-for-verse;
-    # no published concordance). Documented GAP + @DECIDE.
-    return UNMAPPED
+# Gorresio kāṇḍa -> corpus work. ONLY kāṇḍas the corpus actually carries may
+# appear here: `corpus.db` holds Rāmāyaṇa 1, 2, 3 (Gryntser 2006/2014) and 5
+# (Leonov 2024) and nothing else, because no Russian translation of record for
+# kiṣkindhā (4), yuddha (6) or uttara (7) exists at all — Gryntser's academic
+# translation stopped after book 3, Leonov's covers Sundara (H1652 census of
+# `sources`). Naming an absent work here does not fail loudly; it fabricates a
+# `canonical_id` for a passage that cannot be fetched, so a consumer reading
+# that field sees a resolution where there is none. Kāṇḍas 4/6/7 therefore fall
+# through to the covered-but-absent branch below — a typed miss, no id.
+_RAMA_GORR_WORK = {
+    1: '01_ramayana-balakanda', 2: '02_ramayana-ayodhyakanda',
+    3: '03_ramayana-aranyakanda', 5: '05_ramayana-sundarakanda',
+}
+
+_GORR_MAP = None
+
+
+def _gorr_map():
+    """Lazy-load the CONTENT-BASED Gorresio->Southern verse concordance
+    (`ramayana_gorresio_southern_verse_map.tsv`, built by
+    `build_ramayana_concordance.py build-gorresio` from the Gorresio e-text
+    recovered out of the Cologne scan PDFs' embedded Google text layer).
+    Only `matched`/`fuzzy` rows key reuse; `moved` (off-backbone formulaic
+    repeats) deliberately does NOT — that was the disagreement class in the
+    H783 cross-validation."""
+    global _GORR_MAP
+    if _GORR_MAP is None:
+        rows, covered = {}, set()
+        path = os.path.join(HERE, 'ramayana_gorresio_southern_verse_map.tsv')
+        if os.path.exists(path):
+            import csv
+            with open(path, encoding='utf-8') as fh:
+                for r in csv.DictReader(fh, delimiter='\t'):
+                    key = (int(r['g_kanda']), int(r['g_sarga']), int(r['g_verse']))
+                    covered.add(key[:2])
+                    if r['class'] in ('matched', 'fuzzy') and r['s_sarga']:
+                        rows[key] = (int(r['s_sarga']), int(r['s_verse']),
+                                     r['score'], r['class'])
+        _GORR_MAP = (rows, covered)
+    return _GORR_MAP
+
+
+def _rama_gorresio(locus):
+    # Reuse ON by default (MG ruling 26-07-2026): a Gorresio locus resolves via
+    # the content-based verse concordance; where the Bengal recension has no
+    # Southern counterpart the lookup stays an HONEST miss
+    # ('no-southern-counterpart') — never an invented offset (166k lesson).
+    n = _nums(locus)
+    if len(n) != 3:
+        return None
+    k, s, v = n
+    if k not in _RAMA_GORR_WORK:      # kiṣkindhā (4), yuddha (6) — no RU exists
+        return ('__ramayana_no_ru_kanda__', k) if k in _RAMA_NO_RU_KANDA \
+            else ('__ramayana_absent_kanda__', k)
+    rows, covered = _gorr_map()
+    row = rows.get((k, s, v))
+    if row is None:
+        # e-text covers a sarga -> a missing verse is a REAL recension gap;
+        # an uncovered sarga (vols 2/4/uk have no PDF text layer yet) is an
+        # e-text acquisition gap, not evidence about the recension.
+        if (k, s) in covered:
+            return ('__gorresio_unmatched__', k)
+        return ('__gorresio_etext_gap__', k)
+    ss, sv, score, cls = row
+    return ('__gorresio_mapped__',
+            '%s:%d.%d' % (_RAMA_GORR_WORK[k], ss, sv),
+            {'map': 'gorresio_southern_verse_map', 'class': cls, 'score': score,
+             'g_locus': '%d,%d,%d' % (k, s, v)})
 
 
 # PWG abbreviation (normalized, trailing dot/space-insensitive) -> (resolver, meta).
@@ -140,7 +260,9 @@ def _rama_gorresio_unmapped(locus):
 # anything not here is 'text-not-covered' (a clean miss: TS., SUŚR., HARIV., ŚAT. BR.).
 RESOLVERS = {
     'R.':        (_rama,      ('Rāmāyaṇa (Southern)', 'Leonov', 'metadata-only')),
-    'R. GORR.':  (_rama_gorresio_unmapped, ('Rāmāyaṇa (Gauḍīya, Gorresio)', '—', 'metadata-only')),
+    'R. GORR.':  (_rama_gorresio, ('Rāmāyaṇa (Gauḍīya, Gorresio)', 'Leonov via H1656 concordance', 'metadata-only')),
+    'R. ed. GORR.': (_rama_gorresio, ('Rāmāyaṇa (Gauḍīya, Gorresio)', 'Leonov via H1656 concordance', 'metadata-only')),
+    'GORR.':     (_rama_gorresio, ('Rāmāyaṇa (Gauḍīya, Gorresio)', 'Leonov via H1656 concordance', 'metadata-only')),
     'MBH.':      (_mbh_unmapped, ('Mahābhārata', 'SamudraManthanam', 'metadata-only')),
     'ṚV.':       (_rigveda,   ('Ṛgveda', 'Elizarenkova (1:1)', 'metadata-only')),
     'RV.':       (_rigveda,   ('Ṛgveda', 'Elizarenkova (1:1)', 'metadata-only')),
@@ -193,9 +315,29 @@ def lookup(prefix, locus):
                 'reason': 'citation scheme has no 1:1 corpus map (needs a concordance)'}
     if resolved is None:
         return {**base, 'status': 'miss', 'reason': 'locus-parse-failed'}
+    if isinstance(resolved, tuple) and resolved[0] == '__ramayana_no_ru_kanda__':
+        # The blocker is the TRANSLATION, not the corpus and not the locus map:
+        # no Russian kiṣkindhā/yuddha/uttara exists to reuse. Typed apart from
+        # `locus-not-in-corpus` (a real coverage hole, closable by ingestion) so
+        # the two never again get one fix aimed at the other — H1705.
+        return {**base, 'status': 'miss', 'reason': 'ru-translation-unpublished',
+                'canonical_id': None,
+                'blocker': {'kanda': resolved[1],
+                            'name': _RAMA_NO_RU_KANDA[resolved[1]]}}
     if isinstance(resolved, tuple) and resolved[0] == '__ramayana_absent_kanda__':
         return {**base, 'status': 'miss', 'reason': 'locus-not-in-corpus',
                 'canonical_id': None}
+    if isinstance(resolved, tuple) and resolved[0] == '__gorresio_unmatched__':
+        # Bengal-recension verse with no Southern counterpart in the content
+        # concordance — an honest, typed miss, NOT a scheme gap.
+        return {**base, 'status': 'miss', 'reason': 'no-southern-counterpart'}
+    if isinstance(resolved, tuple) and resolved[0] == '__gorresio_etext_gap__':
+        # Sarga not yet in the Gorresio e-text (vols 2/4/uk scans carry no
+        # text layer) — reuse pending e-text completion, not a recension verdict.
+        return {**base, 'status': 'miss', 'reason': 'gorresio-etext-gap'}
+    if isinstance(resolved, tuple) and resolved[0] == '__gorresio_mapped__':
+        base['map'] = resolved[2]
+        resolved = resolved[1]
     ru, db_status = _fetch_ru(resolved)
     base['canonical_id'] = resolved
     if db_status == 'db_absent':
@@ -284,8 +426,47 @@ def selftest():
     check(mbh['status'] == 'unmapped_locus_scheme',
           'MBH. 5,7331 -> %s (Calcutta<->critical GAP, N1)' % mbh['status'])
     gorr = lookup('R. GORR.', '2,5,27')
-    check(gorr['status'] == 'unmapped_locus_scheme',
-          'R. GORR. 2,5,27 -> %s (Gorresio Bengal GAP, N11)' % gorr['status'])
+    check(gorr['canonical_id'] == '02_ramayana-ayodhyakanda:6.27',
+          'R. GORR. 2,5,27 -> %s via content concordance (reuse ON, MG 26-07)'
+          % gorr['canonical_id'])
+    r3 = lookup('R.', '3,79,10')
+    check(r3['status'] == 'miss' and r3['reason'] == 'no-southern-counterpart',
+          'R. 3,79,10 -> %s/%s (Bengal-only verse, honest miss)'
+          % (r3['status'], r3.get('reason')))
+    gap = lookup('R. GORR.', '2,16,46')
+    check(gap['status'] == 'miss' and gap['reason'] == 'no-southern-counterpart',
+          'R. GORR. 2,16,46 -> %s/%s (H1689 OCR closed the vol-2 e-text gap; '
+          'the verse itself is Bengal-only — best Southern score 0.109 < 0.25 floor)'
+          % (gap['status'], gap.get('reason')))
+    sun = lookup('R. GORR.', '5,10,1')
+    check(sun.get('canonical_id') == '05_ramayana-sundarakanda:2.51',
+          'R. GORR. 5,10,1 -> %s (Sundara live via the H1689 OCR e-text)'
+          % sun.get('canonical_id'))
+    # H1652: kāṇḍas 4/6/7 have NO Russian translation of record, so no corpus
+    # work exists for them. The failure mode being pinned is a resolution that
+    # LOOKS real — a canonical_id naming a work `corpus.db` does not carry.
+    # H1705 retyped the reason: these are a TRANSLATION gap, and the old shared
+    # 'locus-not-in-corpus' string read like an ingestion/numbering one.
+    for locus, name in (('4,10,1', 'kiṣkindhā'), ('6,20,1', 'yuddha'),
+                        ('7,5,1', 'uttara')):
+        ab = lookup('R. GORR.', locus)
+        check(ab['status'] == 'miss'
+              and ab['reason'] == 'ru-translation-unpublished'
+              and ab.get('blocker', {}).get('name') == name
+              and ab['canonical_id'] is None,
+              'R. GORR. %s (%s) -> %s/%s, no canonical_id (no RU translation exists)'
+              % (locus, name, ab['status'], ab.get('reason')))
+    # H1705, plain `R.` book 7 — the Bombay ed. PWG cites there runs to sarga 111
+    # (+13 interpolated); the corpus text stops at 100, so 127 of the 1,781 R.-7
+    # citations name a sarga no corpus verse can carry. Both a low and an
+    # out-of-range sarga must land on the same honest, typed miss.
+    for locus in ('7,5,1', '7,108,3'):
+        b7 = lookup('R.', locus)
+        check(b7['status'] == 'miss'
+              and b7['reason'] == 'ru-translation-unpublished'
+              and b7['canonical_id'] is None,
+              'R. %s -> %s/%s, no canonical_id (Bombay uttara, no RU)'
+              % (locus, b7['status'], b7.get('reason')))
 
     print('LIVE corpus checks (DB-gated):')
     if not os.path.exists(CORPUS_DB):
@@ -296,6 +477,10 @@ def selftest():
               'R. 2,91,26 -> hit, RU %d chars (N1)' % (len(r2['ru']) if r2['ru'] else 0))
         m = lookup('M.', '1,1')
         check(m['status'] == 'hit' and m['ru'], 'M. 1,1 -> hit, RU %d chars' % (len(m['ru']) if m['ru'] else 0))
+        g = lookup('R. GORR.', '1,22,1')
+        check(g['status'] == 'hit' and g['ru'] and g.get('map', {}).get('class') == 'matched',
+              'R. GORR. 1,22,1 -> hit via concordance, RU %d chars, class %s'
+              % (len(g['ru']) if g['ru'] else 0, g.get('map', {}).get('class')))
 
     print()
     if fails:

@@ -9,7 +9,7 @@
 @prefix ontolex:  <http://www.w3.org/ns/lemon/ontolex#> .
 @prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
 @prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
-@prefix pwglex:   <https://w3id.org/sanskrit-lexicon/pwg-ru/vocab#> .
+@prefix pwglex:   <https://w3id.org/sanskrit-lexicon/repwg/vocab#> .
 
 pwglex:EntryShape a sh:NodeShape ;
   sh:targetClass ontolex:LexicalEntry ;

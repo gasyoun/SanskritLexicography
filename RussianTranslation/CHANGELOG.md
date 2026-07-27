@@ -10,6 +10,429 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed — LOD namespace ruled: `pwg-ru` → `repwg` ("rePWG"), one namespace for all graphs (27-07-2026)
+
+- Publication-IRI `@DECIDE` **closed** ([#809](https://github.com/gasyoun/SanskritLexicography/issues/809)).
+  Namespace is now `https://w3id.org/sanskrit-lexicon/repwg/`, replacing
+  `…/pwg-ru/` in every graph, SPARQL query, SHACL shape, fixture and generator —
+  8,138 occurrences across 18 files.
+- **Why `repwg` and not `pwg`:** the graphs carry derived structure and the RU
+  side is machine translation (`gr:machine-preview`, non-citable), so a namespace
+  reading as plain `pwg` would claim to *be* the Cologne text. `repwg` = "rePWG",
+  a *re-edition* of PWG. Lowercase in the path (IRI paths are case-sensitive);
+  spelled **rePWG** in labels and prose.
+- **Why not `pwg-ru`:** it encoded a fact that stopped being true — four of the
+  five graphs (DE enrichment, DE edition, DCS frequency, grammar) are not
+  Russian, and the German material is public domain. A maintainer name in the
+  path was considered and rejected for repeating the same mistake with a
+  different contingent fact.
+- A future project-owned domain changes **no IRI**: w3id.org is a redirector, so
+  the w3id IRI stays the permanent identifier and the project domain becomes the
+  redirect target behind it. Rationale recorded in
+  [LOD_GRAPH.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LOD_GRAPH.md)
+  § Namespace ruling, which replaces the old `## Open decision` section.
+- Still open, and now stated instead of implied: the w3id PURL is **not
+  registered**, so these are permanent identifiers that currently 404 — the docs
+  no longer claim dereferenceable IRIs. `dct:creator`/`dct:publisher` are still
+  not emitted.
+
+### Fixed — `release/.gitattributes` did not pin LF for the H1629 XML/JSON artifacts
+
+- `*.ttl`/`*.rq`/`fixture.keys` were pinned; `pwg_de_edition.tei.xml` and
+  `pwg_de_edition.manifest.json` were not, so a Windows checkout got CRLF while
+  the generator writes LF — every regeneration looked like a full-file diff and
+  would have broken the profile's byte-determinism selftest on a fresh clone.
+
+### Added — H1703 second blind arm: every stratum of the compound `differs` queue can now be priced (26-07-2026)
+
+- The H1628 arm samples along length × DCS-frequency × member-count, which cuts across
+  the H1681 adjudicator's rules: it lands 139 cards in `same_split_pwg_lemma_form` and
+  0–16 in each of the other seven strata, so it could promote 3,018 of 4,226 rows and
+  **no more, however the human voted**. New
+  [`src/pilot/compound_differs_arm2_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/compound_differs_arm2_sample.py)
+  (seed 1703) draws a second arm stratified on the rules themselves — **232 cards**,
+  35 per unpriced stratum, disjoint from arm 1, stamped + locked. 35 because
+  `wilson_lower(35, 35) = 0.901` and `wilson_lower(34, 34) = 0.898`: it is the smallest
+  arm that can clear the 0.90 gate at all.
+- **Result: all 4,353 rows now sit in a priceable stratum** (was 3,018 promotable,
+  1,208 unpriceable). Seven strata clear 0.90 on arm 2 alone; the 31-row
+  `granularity_ic_vs_full_decomposition` is **censused in full** across the two arms, so
+  it is promotable by direct vote with no interval to extrapolate — the plan records
+  `promotion_basis: census` rather than pretending its 0.890 bound cleared.
+- Arm 2 is blind by construction: the card shows the two member lists and the source
+  PWG/MW text, never the stratum, rule, agent verdict or reason (asserted by selftest) —
+  otherwise an arm stratified by the agent's own classification would be scoring the
+  human against it.
+- Binding verified end-to-end on both sheets rather than assumed: a complete synthetic
+  export validates (200 / 232 items), and a tampered hash, a missing vote and an unknown
+  card id are each rejected. **9 of arm 1's 200 cards left the queue** when the upstream
+  repairs landed; the plan reports them (`cards_left_the_queue`) and arm 1 was not re-cut
+  a second time — its lock is live and its 139 `same_split` cards still price that
+  stratum at 0.973.
+- Queue re-adjudicated against the repaired extractors: the three defect strata are gone
+  (`pwg_layer_inner_chain` 75 → **0**, `pwg_layer_no_headword_paren` 82 → **2**,
+  `mw_variant_fusion` 10 → **0**). The queue did **not** shrink as H1703 predicted — 118
+  cards left, 241 entered (mostly new PWG coverage), 4,123 → **4,246 cards**. Report:
+  [PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md §8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md).
+  Nothing applied to the store; no `human_reviewed` flag set. Opus 5 1M
+  (`claude-opus-5[1m]`).
+
+### Fixed — [integrity] MW `<k2>` variant fusion welded a non-word member ([#801](https://github.com/gasyoun/SanskritLexicography/issues/801), H1703, 26-07-2026)
+
+- MW lists spelling/accent variants of a headword inside one `<k2>`, separated by `; `
+  (`gaRa—kAri; gaRakAri`). [`mw_compounds.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mw_compounds.py)
+  split on the em-dash first and cleaned second, and `_ACCENT_STRIP` removes both `;`
+  and the space — so the variants were welded into a member that is not a word
+  (`gaRa` + **`kArigaRakAri`**). The bogus member also inflated the arity, so
+  `nominal_grammar._irregularities` emitted `compound:3_members` and the Zaliznyak
+  index `+3` for a two-member compound (`citpati` shipped as `m·3a+3`).
+- The variant list is now separated **first**, taking the first variant that actually
+  carries the segmentation. **41 of 106,603** MW compound records corrected, 22 of them
+  arity-corrected; [`headword_index.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/headword_index.tsv)
+  (36 rows), `paradigm_stats.tsv` and `reverse_paradigm_index.json` regenerated
+  accordingly. New `--selftest` (7 fixtures), wired into CI. Opus 5 1M
+  (`claude-opus-5[1m]`).
+
+### Added — H1702 boundary-anchored auto-wrap for the H1651 D4 `ru_n==0` sub-pattern (26-07-2026)
+
+- H1651 flagged 2,539 rows where `de` carries a `{%...%}` gloss but `ru` never wraps its
+  (present, correct) translation, and declined to auto-fix pending a boundary-anchored
+  method. This pass builds it: exact-affix positional anchoring on invariant markup
+  (`{#...#}`, `<ls>`, `<ab>`, `<is>`) never guesses a boundary it can't verify
+  byte-for-byte. 1,430/2,539 rows fixed; 1,109 left as a manual-review worklist (joins
+  the pre-existing 46-row D3 residual, left untouched by a guard added mid-pass after it
+  was found to be at risk of detector-masking). New CI gate
+  `test_h1702_boundary_wrap_gate`. Full report:
+  [pwg_ru/H1702_D4_BOUNDARY_ANCHORED_WRAP_REPORT_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1702_D4_BOUNDARY_ANCHORED_WRAP_REPORT_2026-07-26.md).
+
+## [1.82.0] - 2026-07-26
+
+### Added — H1689: Gorresio vols 2/4/uk OCRed, e-text now covers all 7 kāṇḍas — `gorresio-etext-gap` extinct (26-07-2026)
+
+- The 1,427 image-only Cologne pages (vol 2 Ayodhyā sargas 10–127 · vol 4
+  Kiṣkindhā-tail + Sundara · uk Uttara) OCRed locally with tesseract 5.5 `san`
+  on the full-resolution embedded page images;
+  [gorresio_etext.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gorresio_etext.jsonl)
+  grows 10,225 → **19,852 verses (all 672 sargas)**, the
+  [verse map](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_gorresio_southern_verse_map.tsv)
+  4,066 → **5,926 mapped** (new: k2 581 · Sundara 345 · Uttara 760); 12/12
+  sampled new pairs verified true; the 4 audit-rejected pairs are now
+  re-applied by the build itself (pair-keyed veto in
+  [build_ramayana_concordance.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py)).
+- `citation_tm` fixture flip: R. GORR. 2,16,46 (MG's original N11 locus) is
+  `no-southern-counterpart` — genuinely Bengal-only (best Southern score 0.109
+  vs 0.25 floor); R. GORR. 5,10,1 resolves to `05_ramayana-sundarakanda:2.51`.
+  Segmentation hardened: `।।`→`॥` normalization (tesseract double-daṇḍa split).
+  Method + traps: [FINDINGS §473](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+
+### Added — H1682: h1303_abbrev review-sheet rule-collapse (26-07-2026)
+
+- New review sheet `review/h1682_abbrev_rules_sheet.html` (sheet_id
+  `h1682_abbrev_rules`, H1404-stamped + locked) replaces the 273-card
+  `h1303_abbrev` (never voted) with 33 cards: 12 rule cards (one per
+  `build_h1303_abbrev_sheet.py`'s own `O`-overlay section header) + 17
+  individually-flagged ambiguous tokens + 3 `ls`-border + 1 meta-card. No
+  token reclassified; every proposed RU/precedent is unchanged from H1303
+  Session 1. New modules:
+  [`h1682_abbrev_collapse.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/h1682_abbrev_collapse.py),
+  [`build_h1682_abbrev_classification_tsv.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_h1682_abbrev_classification_tsv.py),
+  [`build_h1682_abbrev_rules_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_h1682_abbrev_rules_sheet.py).
+  Full report:
+  [H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md).
+  Old sheet marked superseded-unvoted in `REVIEW_SHEETS_INDEX.md`, never
+  deleted.
+
+## [1.79.0] - 2026-07-26
+
+### Changed — Gorresio map audit round 1: 28/32 approve; 4 half-verse-shift rows switched off (26-07-2026)
+
+- The 32-card audit sheet was voted (agent vote by Fable 5 `claude-fable-5` on MG's
+  direct delegation) — 28 approve incl. all 5 scan-verified gold anchors; the 4 rejects
+  are a single OCR-segmentation sub-class (merged half-verses pairing with the tail
+  verse) now marked `audit-rejected` in
+  [ramayana_gorresio_southern_verse_map.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_gorresio_southern_verse_map.tsv)
+  and inert for reuse (selftest pins the 4 rows). Detection heuristic queued into H1689.
+
+### Added — H1651 store wrapper-defect sweep D1-D4, live gate follow-up (26-07-2026)
+
+- Main pass ([#789](https://github.com/gasyoun/SanskritLexicography/pull/789)): D1
+  repaired (34 rows/58 spans, closes
+  [#752](https://github.com/gasyoun/SanskritLexicography/issues/752)); D3 ruled and
+  bulk-applied (343/463 rows, 46 residual); D4 triaged (2,860 rows, no auto-fix — see
+  [pwg_ru/H1651_WRAPPER_DEFECT_SWEEP_REPORT_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1651_WRAPPER_DEFECT_SWEEP_REPORT_2026-07-26.md)).
+- Addendum (this follow-up): the main pass's CI gate only tested the standalone scan/fix
+  tools, not the live per-card generation-time audit. New
+  `cyrillic_in_sanskrit_wrapper` (HIGH_CONFIDENCE) and `gloss_wrapper_became_guillemet`
+  (report-only) risks in
+  [prompt_rule_audit.markup_sigla_risks](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/prompt_rule_audit.py)
+  close that gap.
+
+## [1.78.0] - 2026-07-26
+
+> Backfilled section (26-07-2026): the v1.78.0 tag + GitHub release (H1670) were cut
+> by a concurrent session WITHOUT a changelog section, and a second same-day cut then
+> claimed the [1.78.0] heading for different content — renumbered to [1.79.0] above.
+> This section reconstructs the released content from the frozen release body.
+
+### Fixed — H1670: PWG-sense × DCS grounding 0.67% → 12.25% (26-07-2026)
+
+- The H1632 conclusion that sense-level grounding was capped by data availability was a
+  **reach artefact**: the matcher's reach, not the corpus, was the limiting factor.
+  H1670 raised sense-level grounding **0.67% → 12.25%**
+  ([PR #791](https://github.com/gasyoun/SanskritLexicography/pull/791),
+  [release v1.78.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.78.0),
+  [H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md)).
+
+## [1.77.0] - 2026-07-26
+
+### Added — H1656 follow-on: Gorresio e-text recovered; Rāmāyaṇa citation reuse ON (26-07-2026)
+
+- **MG ruled: reuse always ON by default** — the validation gate is an audit, not a
+  months-long blocker. And the "no Gorresio OCR exists" premise fell the same day:
+  the Cologne [ramayanagorr](https://github.com/sanskrit-lexicon-scans/ramayanagorr)
+  page PDFs carry an embedded Google **text layer**. New `build-gorresio` subcommand
+  ([src/build_ramayana_concordance.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py))
+  extracts the full **Gorresio e-text**
+  ([src/gorresio_etext.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gorresio_etext.jsonl),
+  10,225 verses, ॥N॥ segmentation anchored to ksverse per-page ranges) and builds a
+  **CONTENT-BASED Gorresio↔Southern verse concordance**
+  ([src/ramayana_gorresio_southern_verse_map.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_gorresio_southern_verse_map.tsv)):
+  **4,066 verses mapped** (1,857 matched + 2,209 fuzzy), 4,955 Bengal-only, 200
+  `moved` excluded. All scan-verified gold anchors reproduce (G 1,22,1→S 19,1 at
+  0.774 etc.). `citation_tm` now resolves R. GORR. + plain R. books 3–6 through the
+  map — hits carry `map` class+score; misses are typed (`no-southern-counterpart`,
+  `gorresio-etext-gap`). Coverage bound: vols 2/4/uk scans are image-only (Ayodhyā
+  bulk, Sundara, Uttara) — queued for a modern-OCR pass.
+
+### Fixed — shingle phase-parity bug in the concordance aligner (26-07-2026)
+
+- Candidate retrieval indexed AND probed shingles on the same stride, so shared runs
+  at an off-phase relative shift were invisible — G 1,22,1 ↔ S 19,1 scored 0.774 yet
+  was never retrieved. Index now covers every offset. Southern↔Critical rebuilt:
+  **81.4% matched/fuzzy** (was 74%); the sarga map is a content-based majority
+  roll-up of the verse map (the content-blind DTW draft drifted ±1–3 sargas and is
+  superseded; `build` no longer clobbers it).
+
+## [1.76.0] — 2026-07-26
+
+### Changed — H1664 voting-queue triage: every pending sheet ruled A/HYBRID/HUMAN-ONLY (26-07-2026)
+
+Fable 5 (`claude-fable-5`). The 2,962-judgment pending queue (42 sheets org-wide) now
+carries a verdict per sheet with the enabling dataset named —
+[audit §11](https://github.com/gasyoun/Uprava/blob/main/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md);
+after the routed adjudications run, the human owes ~1,329 (−55 %). pwg_ru lanes: compound
+`differs` → В2 full-queue adjudication (H1681, the 200-sheet becomes the blind verification
+arm), h1303_abbrev → rule-collapse (H1682, 273 → ~30), article-comparison → pre-vote
+source-check (H1683); G6/G5v3/h1306/Renou-pilot stay HUMAN-ONLY with the reason recorded.
+Results table: [RESULTS_LOG.md 26-07-2026](RESULTS_LOG.md).
+
+## [1.75.0] — 2026-07-26
+
+### Changed — H1633 rulings R1–R5 recorded; G6b gate born; A51 deferred to 2028 (26-07-2026)
+
+- MG ruled the five gold-cut sign-off items in one pass (chat, 26-07-2026):
+  **R1** n=400 · **R2** six-label DE→RU vocabulary adopted · **R3** no second
+  reviewer — «not even in 2027», intra-rater test–retest is the permanent
+  agreement plan · **R4** the cut is named gate **G6b** · **R5** sequenced
+  after the g6 starter + g5 batch1v3 votes. Recorded in
+  [gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md) §8;
+  G6b wired into [HUMAN_REVIEW_MINIMIZATION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/HUMAN_REVIEW_MINIMIZATION.md)
+  (gate table, G6b section, print-evidence path).
+- **A51 deferred until 2028** (same ruling) — deferral banner on
+  [pwg_ru/PAPER_LLM_LEXICOGRAPHY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PAPER_LLM_LEXICOGRAPHY.md);
+  methods draft re-marked BANKED, claims register C1–C3 updated (h178 arms
+  retired per P1/A2; no inter-annotator cell anywhere per R3).
+- Execution routed: [H1665](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1665-Fable_SanskritLexicography_pwg-store-gold-cut-execute-r1-r5_26.07.26.md)
+  (gold cut, hard-gated) and [H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md)
+  (triage of the 2,818-judgment voting queue for agent-ruleable sheets — MG:
+  «2818 judgments is too much»).
+
+## [1.74.0] - 2026-07-26
+
+### Fixed — "a bigger corpus" was the wrong lever for H1632 constriction 1 (26-07-2026)
+
+- The H1632 frame-comparison report and SL FINDINGS §465 said the 60.2% of PWG
+  headwords absent from DCS needs "a bigger corpus". **Misleading as written**
+  (MG): *DCS already is the largest **tagged** Sanskrit corpus*; the corpora that
+  are bigger carry **no markup** — wisdomlib, currently under scrape.
+- Both now state the split precisely: an untagged corpus **can** raise
+  *lemma-level* attestation (shrinking the "absent everywhere" class) but
+  **cannot** raise *sense-level* grounding, since there are no sense tags to bind
+  to. Conflating the two is a category error; the rates stay in separate tables.
+- Points at the existing `wl` wisdomlib period-state signal (§14) so a second
+  wisdomlib lane is not opened, and at the Cloudflare constraint before any scrape.
+- Follow-on work minted as
+  [H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md):
+  the only real levers on the sense-level number are running the H1455 aligner
+  past its own 500 headwords, and adding texts / locus crosswalks.
+
+### Added — H1666: Wave-2 coverage monitor + monthly cloud routine (26-07-2026)
+
+- [`research/WAVE2_COVERAGE_MONITOR.md`](research/WAVE2_COVERAGE_MONITOR.md) tracks
+  `verb_worklist.py`'s promoted/749-DCS-root % against
+  [ROADMAP_ACL_LESSONS_2026.md](research/ROADMAP_ACL_LESSONS_2026.md)'s Wave-2
+  "~50% coverage" trigger — currently 48/749 ≈ 6.4%, stalled since 04-07-2026. A
+  monthly `claude.ai` cloud routine (RemoteTrigger) recomputes and appends a row,
+  and flags a GTD `@DECIDE` in Uprava once coverage crosses 50%. Registered in
+  `research/README.md`'s Living monitors table.
+
+## [1.73.0] - 2026-07-26
+
+### Added — H1656 Rāmāyaṇa recension concordances (Gorresio↔Southern + Southern↔Critical) (26-07-2026)
+
+- MG ruled 21-07-2026 (weekly `@DECIDE`): build the Gorresio↔Southern concordance —
+  «NEVER propose to skip» citation reuse. New
+  [src/build_ramayana_concordance.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py)
+  builds three committed, metadata-only TSVs: the **Gorresio structural inventory**
+  (672 sargas, verse counts + volume/page, from the Cologne
+  [ramayanagorr](https://github.com/sanskrit-lexicon-scans/ramayanagorr) scan-viewer
+  page index — no OCR chased, none exists), the **Southern↔Critical verse
+  concordance** (18,993 Southern verses vs DCS critical, content-based, 74%
+  matched), and a **Gorresio↔Southern sarga map** (DTW over verse-count profiles,
+  DRAFT-STRUCTURAL: 319 plausible / 212 weak / 165 unpaired). Selftest wired into
+  the CI gates job. R. GORR. stays `unmapped_locus_scheme` until the validation
+  gate in [pwg_ru/COVERED_TEXTS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/COVERED_TEXTS_RU.md)
+  § R. GORR. passes (≥30-pair scan spot-check + human review sheet).
+
+### Fixed — plain R. books 3–6 are Gorresio-keyed; resolver was silently wrong (26-07-2026)
+
+- **Integrity find (H1656):** PWG's plain `R.` is a three-edition composite
+  (pwgbib 1.247): books 1–2 Schlegel, **books 3–6 Gorresio (Bengal recension)**,
+  book 7 Bombay. Verified against the store's cited sarga ranges (R. 3 → 79,
+  R. 4 → 63, R. 5 → 94 = exactly Gorresio's counts; Southern has 75/–/68).
+  `citation_tm.py` keyed in-range book-3/5 loci into the Southern corpus and
+  returned the **wrong verse's RU translation** silently — ~900 refs exposed.
+  Books 3–6 now return `unmapped_locus_scheme` (selftest fixture added) until the
+  Gorresio↔Southern concordance validates. ~2,200 refs total ride on that
+  concordance (657 R. GORR. + ~1,560 plain-R. books 3–6).
+
+## [1.72.0] — 2026-07-26
+
+### Added — H1491: Leonchenko Sinonimy digitized to a synonym evidence lane (26-07-2026)
+
+- [`research/sinonimy/sinonimy.jsonl`](research/sinonimy/README.md) (47,273 rows) digitizes
+  V.V. Leonchenko's Sinonimy xlsx workbooks (`VisualDCS/derived-data/Sinonimy`) into
+  sense-inventory + gloss-anchored synonym-ring rows, per
+  [ROADMAP_ACL_LESSONS_2026.md](research/ROADMAP_ACL_LESSONS_2026.md) B2/Wave 1. Also
+  registered in [REUSE_MAP.md](REUSE_MAP.md) §5. Dedup finding: the folder's four named
+  source groups reduce to three distinct datasets — S_P_D_F/Works-Share-Syn hold confirmed
+  duplicate re-exports, not new content. Evidence-only, not yet wired into `corpus_gate.py`.
+
+### Added — H1633 human gold cut design + A51 methods packet (26-07-2026)
+
+- **Store gold-cut sample frame** (design only, parked for sign-off):
+  [gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/STORE_DE_RU_GOLD_CUT_SAMPLE_FRAME.md)
+  — the first sampling design for a **human-measured DE→RU store precision**
+  figure, distinct from the existing Sa→Ru harvest gold (320) and the A/B/C
+  grade gold. Population = the machine-clean G5-eligible pool (post
+  residue-gate, P1 auto-reject); 12 strata (entry class × edition layer × DE
+  length terciles); recommended n=400 with the cluster penalty stated;
+  proposed six-label DE→RU vocabulary (needs a D6-style ruling); tiered κ plan
+  honest about the 2026 second-annotator deferral — **no κ target, no
+  placeholder κ**. Binding per the H1404 standard.
+- **A51 methods-section draft** with honest floors:
+  [pwg_ru/A51_METHODS_DRAFT_DE_LAYERS_RU_PIPELINE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/A51_METHODS_DRAFT_DE_LAYERS_RU_PIPELINE.md)
+  — source graph, G1–G6 layer floors, pipeline + judge-policy figures kept as
+  LLM×LLM calibration (not quality validation), three-channel evaluation
+  design, refused-claims section, and a 10-row **claims register** mapping
+  every submission claim to its blocking human gate (N1/N2/N3/N9/N11/N13/N18 +
+  h178 votes + COMETKiwi license).
+- Metadocs for both; pwg_ru.md §8.3 N3 row now points at the frame.
+
+## [1.71.0] — 2026-07-26
+
+### Added — H1628: stratified 200-item review sheet for the compound `differs` queue (26-07-2026)
+
+- [`src/pilot/compound_differs_review_sample.py`](src/pilot/compound_differs_review_sample.py)
+  draws a deterministic (seed=1628), two-stage stratified sample of 200 from the ~4226-row
+  PWG-vs-index compound `differs` queue (H1624 G6 residual): a flat 20-item quota for the
+  rare `member_count_diff` sub-class, the rest proportional across length x DCS-frequency
+  cells. Sample frame committed
+  ([`review/sanskritlexicography-pwg-compound-differs_stratified200_frame.tsv`](review/sanskritlexicography-pwg-compound-differs_stratified200_frame.tsv));
+  the interactive sheet stays gitignored (personal voting artifact). Vote → store contract
+  documented in [RESULTS_LOG.md](RESULTS_LOG.md) so applying the vote can never bulk-overwrite
+  `derivation.human_reviewed` beyond the sampled ids. Does not close the ~4.2k queue —
+  ~4026 rows stay `needs_human` pending a future sampling round.
+
+### Added — first intrinsic BLI quality gate for corpus_lexicon.jsonl (H1521, 26-07-2026)
+[`src/eval/bli_eval.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/bli_eval.py)
+streams `corpus_lexicon.jsonl` (never loads it whole) and scores P@1/MRR/coverage
+against a frozen 400-lemma gold set,
+[`src/eval/gold_sa_ru_koch_400.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/gold_sa_ru_koch_400.tsv),
+built by [`build_gold_koch.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/build_gold_koch.py)
+from Kochergina (`src/koch.jsonl`, independently authored, never derived from the
+corpus) ranked by VisualDCS's independent `dcs_lemma_summary.json` frequency band —
+the obvious default gold source, the corpus's own 3-layer glossary, was rejected as
+circular (it is a group-by aggregation OF `corpus_lexicon.jsonl`, so grading against
+it would score the file against itself). **Result: P@1 = 0.402, MRR = 0.539,
+coverage = 0.995 (398/400)** — first quantitative quality number for the
+1.09M-pair lexicon. Fixture selftest (`python src/eval/bli_eval.py selftest`) wired
+into CI's RussianTranslation gates.
+
+## [1.69.0] - 2026-07-26
+
+> Version numbering follows the repository's **git tag** sequence (…v1.67.0,
+> v1.68.0), which had drifted ahead of the version headings in this file (last
+> heading was `[1.62.0]`). Continuing the tag sequence, per `/cut-release`.
+
+### Added — H1632 scale-up: unbiased random frame + full-PWG run (26-07-2026)
+
+- The original H1632 pilot ran on a frame **selected DCS-attested**, so its "100%
+  attested at lemma level" was true by construction. Two unbiased frames now
+  answer the question it could not — a seeded random sample (2,000 groups) and
+  **every PWG headword (109,050 groups)**. Synthesis:
+  [research/PWG_SENSE_DCS_FRAME_COMPARISON.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_FRAME_COMPARISON.md).
+- **Lemma-level attestation is ~40%, not 100%.** 43,352 / 109,050 PWG headword
+  groups (39.8%) have a DCS lemma — so **60.2% have no DCS attestation at any
+  granularity**. The 2,000-group sample estimates 40.4% (±2.2% at 95%) and its
+  interval covers the population value, validating the sampling frame.
+- **The sense-tag ceiling is a corpus property, not a frame artefact** — 10.8% /
+  11.9% / 11.2% of DCS token mass across the three frames.
+- **Grounding is reported as *unknown*, never as zero.** The H1455 aligner covers
+  500 of 109,050 groups; the rest are classed `R0_grounding_not_computed`.
+  Publishing 0% there would manufacture a dictionary-wide rate out of the absence
+  of a job. Selftest asserts the join rates come back `None`, not `0.0`.
+- New `--frame-mode kosha|random|all` (+ `--n`/`--seed`) on the pilot script,
+  `--all` on the loci exporter, and
+  [research/compare_frames.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/compare_frames.py),
+  which reads the three `meta.json` files so the synthesis cannot drift from the runs.
+
+### Added — edition-diff reading surface over edition_rel (H1631, N14 pilot, 26-07-2026)
+
+- New
+  [`src/pilot/build_edition_diff_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_edition_diff_site.py):
+  a fixture-driven static page showing the PWG sense skeleton with PW/SCH/PWKVN/NWS
+  supplements attached at their `edition_rel` insertion point, each badged with its
+  H1624 G4 subtype (`base`/`restate`/`pw_correct`/`sch_star`/`derived_sense`/`a2a`/
+  `nws_at_sense`/`foreign_fragment`) — no new typology, no re-translation, DE text
+  read-only. `--selftest` uses a synthetic fixture (never real store content — N9) and
+  is wired into CI. See [RESULTS_LOG.md](RESULTS_LOG.md) 26-07-2026 for the pilot
+  subtype counts (7 REGLUE_SPEC roots, 1077 rows). Partial N14 close — see
+  [`pwg_ru/REGLUE_SPEC.md`](pwg_ru/REGLUE_SPEC.md) Sec.7.
+
+### Added — H1632 PWG-sense × DCS attestation pilot join (26-07-2026)
+
+- New
+  [research/PWG_SENSE_DCS_ATTESTATION_PILOT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_ATTESTATION_PILOT.md)
+  + generator
+  [research/pwg_sense_dcs_attestation_pilot.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_sense_dcs_attestation_pilot.py)
+  and input builder
+  [research/export_frame_sense_loci.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/export_frame_sense_loci.py):
+  the first join of **PWG's own sense divisions** to DCS attestation *and*
+  frequency, on the frozen H1455/H1456 500-headword frame.
+- **The number: sense-level attribution collapses.** 500/500 groups attest at
+  lemma level (by construction — the frame was selected DCS-attested), but only
+  **52 of 7,746 PWG leaf senses (0.67%)** are grounded to a DCS attestation by a
+  shared locus. 10.8% of the frame's 943,877 DCS tokens carry a `m_wordsem` tag
+  at all — that is the ceiling on *any* sense-level claim over this corpus.
+- **Two ceilings separated.** 12,953 `<ls>` citations hang on structural parent
+  sense nodes, unattributable to a leaf sense by PWG's own structure — before DCS
+  is consulted at all. The corpus-side residue (86.8% of groups, class `R3`) fails
+  on missing texts and vulgate↔BORI locus drift, not on absence of evidence.
+- Reuses, never rebuilds: H1453 `sense_frequency.tsv` (`wn` = `m_wordsem` gold),
+  H1455 `sense_corpus_concordance.tsv`, H1456 `microstructure.leaf_senses`.
+  Deterministic, no LLM in the measurement path; all five inputs SHA-256 pinned.
+
 ### Hardened — Codex pipeline-hardening audit, step 1 of 2 (26-07-2026)
 
 - New
@@ -31,6 +454,43 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
   reconciliation. That sealing is **step 2** — it invalidates 7 existing fixtures
   that still pass placeholder preflight paths and v1 outputs, tracked in
   [pwg_ru/CODEX_HARDENING_REBASE_STATUS_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/CODEX_HARDENING_REBASE_STATUS_2026-07-26.md).
+
+### Added — DE edition-graph export profile: OntoLex-Lemon + TEI Lex-0 (H1629)
+
+- New
+  [src/export_de_edition.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_de_edition.py):
+  serializes the **German** edition graph — one entry per (key1, homonym) over the
+  PWG/PW/SCH/PWKVN/NWS editions — carrying all five H1624 layers (`gloss_lang`
+  spans G1, `government` G2, `form_notes`, `citation_edges` G3, `edition_rel` G4)
+  as OntoLex-Lemon Turtle **and** TEI Lex-0 XML, plus a manifest. Federates with
+  the existing RU / DCS-frequency / grammar graphs on the shared `lemma/<key1>` IRI.
+- Rights fence (N9): input allowlist → Cyrillic quarantine → post-serialization
+  guard on the emitted bytes. The store's `h` field is deliberately excluded (it
+  carries Russian prose); a Russian `sense_tag` is reduced to its ASCII skeleton
+  and logged in the manifest rather than exported.
+- Golden fixture
+  [release/fixture/de_edition/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/release/fixture/de_edition)
+  from a 22-row DE-only fixture that exercises every layer and every edition
+  layer; `--selftest` fails if any layer's count drops to zero, if a TEI pointer
+  dangles, or if the output stops being byte-deterministic.
+- Mapping + provenance + limitations:
+  [DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md)
+  (+ metadoc). LANG_PARITY entry `de_edition_export_profile_h1629` (SHARED).
+- **Not** done: TEI Lex-0 ODD validation (structure-checked only), RDF-parser /
+  SHACL round-trip, full-store run, base-IRI `@DECIDE`.
+
+### Documented — data-integrity findings surfaced by the DE export (H1629)
+
+- Measured and reported, **not** silently worked around: 11 store rows carry
+  Russian tokens inside the German `de` field; ~110 rows carry Russian
+  `sense_tag` prose; and the G1 `gloss_lang` classifier mislabels ~122 of 229
+  non-DE spans as Latin/English (77% false-positive rate on the
+  `english_content` rule), which also masks those German glosses out of the
+  translate path upstream. See
+  [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+  and the tracking integrity issues
+  ([#749](https://github.com/gasyoun/SanskritLexicography/issues/749),
+  [#750](https://github.com/gasyoun/SanskritLexicography/issues/750)).
 
 ### Documented — German-side editorial principles datasheet (H1634)
 

@@ -52,7 +52,7 @@ jobs:
 
       - name: Open/refresh a tracking issue when master is red
         if: failure() && github.event_name == 'push'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const title = "⚠️ Epistemic integrity gate RED on master";

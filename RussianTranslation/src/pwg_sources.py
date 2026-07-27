@@ -28,10 +28,23 @@ def norm(s):
 
 _BIB = None
 def bib():
+    """The PWG bibliography, or an EMPTY map when the sibling repo is not checked out.
+
+    `BIB` lives in `csl-pywork`, a SIBLING repo that is optional: CI checks out only this
+    one, and so does a fresh clone. This used to raise FileNotFoundError, which turned an
+    absent *enrichment* source into a hard failure of the promotion path itself --
+    `promote_final_cards.rows_for` -> `extract_citation_edges` -> here. Citation edges are
+    additive metadata; a missing bibliography must degrade to "no expansions resolved",
+    never to "the store cannot be written". Cached either way, so the miss costs one stat.
+    """
     global _BIB
     if _BIB is None:
         _BIB = {}
-        for line in open(BIB, encoding='utf-8'):
+        try:
+            handle = open(BIB, encoding='utf-8')
+        except OSError:
+            return _BIB
+        for line in handle:
             h = HI.search(line)
             if not h:
                 continue

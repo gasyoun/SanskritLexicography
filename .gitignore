@@ -29,6 +29,9 @@ RussianTranslation/src/_review_queue.triage.csv
 RussianTranslation/src/*.jsonl
 RussianTranslation/src/*.jsonl.backup.*
 RussianTranslation/src/*.jsonl.tmp
+# Gorresio e-text: small PD-derived canonical asset (H1656) — committed,
+# exception to the blanket src/*.jsonl rule above.
+!RussianTranslation/src/gorresio_etext.jsonl
 # Renou Step-0 pilot sample IS committed (small, 70 items, evidence for the review
 # sheet) — exception to the blanket src/*.jsonl rule above. See RENOU_HYPOTHESES.md.
 !RussianTranslation/src/renou_pilot_sample.jsonl
@@ -104,6 +107,14 @@ HeadwordLists/heritage_mirror/
 # anchored to the repo root so the ACTIVE RussianTranslation/review/ stays tracked
 /review/
 
+# G5/G6 live-queue sheets embed unpublished store translations, and their
+# decisions exports are personal voting artifacts — only the metadata lock
+# (RussianTranslation/review/locks/) is committed (H1404 binding standard)
+RussianTranslation/review/g5_*_sheet.html
+RussianTranslation/review/g6_*_sheet.html
+RussianTranslation/review/g5-live-queue-*_decisions.json
+RussianTranslation/review/g6-mqm-*_decisions.json
+
 # semdom.json fetch cache (semdom_varga_crosswalk.py / semdom_ak_annex_table.py) — CC BY-SA input, fetched on demand, never committed
 /data/semdom.json
 /data/wn-links-semdom-words-all.tsv
@@ -114,3 +125,7 @@ papers/sanskrit_in_numbers/.cache/
 
 # H737: scheduled-task refresh log (written into the main checkout by Task Scheduler)
 findings_dashboard/refresh.log
+
+# H1657: regenerable in seconds from p2_agent_verdicts.jsonl.gz, ~5 MB each
+HeadwordLists/works_catalogue/p2_agent_decisions.json
+HeadwordLists/works_catalogue/p2_gated_decisions.json

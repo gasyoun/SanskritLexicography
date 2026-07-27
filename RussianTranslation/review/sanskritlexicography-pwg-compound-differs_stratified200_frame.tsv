@@ -1,0 +1,201 @@
+k1	hom	pwg_members	index_members	vs_index_class	length_bucket	freq_bucket	freq_count	panini_sutras	deriv_base	deriv_suffix	ganas
+durvftta	1	duz + vftta	dur + vftta	same_count_diff_split	short(<=8)	high(>=10)	63	P.4.14.7|P.10.44.32|P.22.3			
+ADArarUpA		ADAra + rUpa	ADAra + rUpA	same_count_diff_split	medium(9-10)	low(1-2)	1				
+gOrIpuzpa		gOrI + puspa	gOrI + puzpa	same_count_diff_split	medium(9-10)	no_dcs_freq					
+bahumAya		bahu + mAyA	bahu + mAya	same_count_diff_split	short(<=8)	no_dcs_freq					
+gatanAsika		gata + nAsikA	gata + nAsika	same_count_diff_split	medium(9-10)	no_dcs_freq					
+mfzArTaka		mfzA + arTa	mfzA + rTa + ka	member_count_diff	medium(9-10)	no_dcs_freq					
+paYcapada		paYcan + pada	paYca + pada	same_count_diff_split	medium(9-10)	no_dcs_freq					
+payoda		payas + da	payo + da	same_count_diff_split	short(<=8)	high(>=10)	34				
+nfsena		nar + senA	nf + sena	same_count_diff_split	short(<=8)	no_dcs_freq					
+nirASin		nis + ASA	nir + ASin	same_count_diff_split	short(<=8)	no_dcs_freq					
+satkriya		sant + kriyA	sat + kriya	same_count_diff_split	short(<=8)	no_dcs_freq					
+suKaduHKamaya		suKa + duHKa	suKa + duHKa + maya	member_count_diff	long(>=11)	no_dcs_freq					
+dvAdaSaviDa		dvAdaSan + viDA	dvAdaSa + viDa	same_count_diff_split	long(>=11)	mid(3-9)	4				
+satPala		sant + Pala	sat + Pala	same_count_diff_split	short(<=8)	no_dcs_freq					
+yaTArTatas		yaTA + arTa	yaTA + rTa + tas	member_count_diff	medium(9-10)	no_dcs_freq					
+gozAti		go + sAti	go + zAti	same_count_diff_split	short(<=8)	low(1-2)	2				
+gaRqUpada		gaRqu + pada	gaRqU + pada	same_count_diff_split	medium(9-10)	high(>=10)	19				
+marmaspfS		marman + spfS	marma + spfS	same_count_diff_split	medium(9-10)	no_dcs_freq					
+raktapittahA		raktapitta + hA	rakta + pitta + hA	member_count_diff	long(>=11)	no_dcs_freq					
+devacCanda		deva + Canda	deva + cCanda	same_count_diff_split	medium(9-10)	low(1-2)	1				
+duHsTita		duz + sTita	duH + sTita	same_count_diff_split	short(<=8)	high(>=10)	12	P.1.5.14			
+bfhanmanas		bfhant + manas	bfhan + manas	same_count_diff_split	medium(9-10)	mid(3-9)	8	P.9.23.11			
+tatpada		tad + pada	tat + pada	same_count_diff_split	short(<=8)	low(1-2)	1				
+dAtfpura		dAtar + pura	dAtf + pura	same_count_diff_split	short(<=8)	no_dcs_freq					
+pakzimfgatA		pakzin + mfga	pakzi + mfgatA	same_count_diff_split	long(>=11)	no_dcs_freq					
+DarmameGA		Darma + meGa	Darma + meGA	same_count_diff_split	medium(9-10)	mid(3-9)	3				
+DAmakeSin		DAman + keSa	DAma + keSin	same_count_diff_split	medium(9-10)	no_dcs_freq					
+kiMvid		kim + vid	kiM + vid	same_count_diff_split	short(<=8)	no_dcs_freq					
+viSAKa		vi + SAKA	vi + SAKa	same_count_diff_split	short(<=8)	high(>=10)	50	P.1.2.62|P.4.3.34|P.6.6.14|P.7.3.21|P.33.12|P.58.33			
+nirgarva		nis + garva	nir + garva	same_count_diff_split	short(<=8)	no_dcs_freq					
+bahutvakka		bahu + tvac	bahu + tvakka	same_count_diff_split	medium(9-10)	no_dcs_freq					
+turaRyasad		turaRy + sad	turaRya + sad	same_count_diff_split	medium(9-10)	low(1-2)	1				
+bfhatkAya		bfhant + kAya	bfhat + kAya	same_count_diff_split	medium(9-10)	no_dcs_freq		P.9.21.22			
+uzmasveda		uzman + sveda	uzma + sveda	same_count_diff_split	medium(9-10)	no_dcs_freq					
+nirajina		nis + ajina	nir + ajina	same_count_diff_split	short(<=8)	no_dcs_freq		P.6.2.184			nirudakAdiH
+jvAlAjihva		jvAlA + jihvA	jvAlA + jihva	same_count_diff_split	medium(9-10)	mid(3-9)	3				
+girizad		giri + sad	giri + zad	same_count_diff_split	short(<=8)	no_dcs_freq					
+trayodaSaviDa		trayodaSan + viDA	trayo + daSa + viDa	member_count_diff	long(>=11)	high(>=10)	19				
+aBimAtizAha		aBimAti + sAha	aBimAti + zAha	same_count_diff_split	long(>=11)	mid(3-9)	4				
+parauru		paras + uru	para + uru	same_count_diff_split	short(<=8)	no_dcs_freq					
+kAlarUpin		kAla + rUpa	kAla + rUpin	same_count_diff_split	medium(9-10)	mid(3-9)	3				
+putraSfNgI		putra + SfNga	putra + SfNgI	same_count_diff_split	medium(9-10)	no_dcs_freq					
+pIvoaSva		pIvas + aSva	pIvo + aSva	same_count_diff_split	short(<=8)	no_dcs_freq					
+tryaMSa		tri + aMSa	try + aMSa	same_count_diff_split	short(<=8)	low(1-2)	2				
+gozWAgAra		gozWa + AgAra	go + zWAgAra	same_count_diff_split	medium(9-10)	no_dcs_freq					
+vipAdikA		vi + pAda	vi + pAdikA	same_count_diff_split	short(<=8)	high(>=10)	11	P.1.3.20			jyotsnAdiH
+tryASir		tri + ASir	try + ASir	same_count_diff_split	short(<=8)	no_dcs_freq					
+udaksena		udaYc + senA	udak + sena	same_count_diff_split	short(<=8)	low(1-2)	2				
+BUtapattrI		BUta + pattra	BUta + pattrI	same_count_diff_split	medium(9-10)	no_dcs_freq					
+alaMjuza		alam + juza	alaM + juza	same_count_diff_split	short(<=8)	no_dcs_freq					
+tantuBa		tantu + BA	tantu + Ba	same_count_diff_split	short(<=8)	low(1-2)	1				
+gotrapawa		gotra + pawa	go + tra + pawa	member_count_diff	medium(9-10)	no_dcs_freq					
+sarvacarmIRa		sarva + carman	sarva + carmIRa	same_count_diff_split	long(>=11)	no_dcs_freq		P.5.2.5			
+manaApa		manas + Apa	mana + Apa	same_count_diff_split	short(<=8)	mid(3-9)	3				
+sanmati	1	sant + mati	san + mati	same_count_diff_split	short(<=8)	mid(3-9)	4	P.8.24.47|P.9.4.27			
+saGfRa		sa + GfRA	sa + GfRa	same_count_diff_split	short(<=8)	no_dcs_freq		P.5.5.17			
+paYcavarga	2	paYcan + varga	paYca + varga	same_count_diff_split	medium(9-10)	high(>=10)	10				
+bahudantIsuta		bahu + danta	bahu + dantI + suta	member_count_diff	long(>=11)	no_dcs_freq					
+droRadugDA		droRa + dugDa	droRa + dugDA	same_count_diff_split	medium(9-10)	no_dcs_freq					
+purojava		puras + java	puro + java	same_count_diff_split	short(<=8)	high(>=10)	17	P.4.30.22|P.5.20.25			
+atikalyam		ati + kalya	ati + kalyam	same_count_diff_split	medium(9-10)	no_dcs_freq					
+SaMtanu		Sam + tanu	SaM + tanu	same_count_diff_split	short(<=8)	high(>=10)	173	P.9.21.36			
+samakriya		sama + kriyA	sama + kriya	same_count_diff_split	medium(9-10)	no_dcs_freq					
+vfzaRaSva		vfzan + aSva	vfzaR + aSva	same_count_diff_split	medium(9-10)	low(1-2)	2	P.1.4.18			
+ekadevata		eka + devatA	eka + devata	same_count_diff_split	medium(9-10)	no_dcs_freq					
+tizyaPalA		tizya + Pala	tizya + PalA	same_count_diff_split	medium(9-10)	low(1-2)	2				
+viSAKadatta		viSAKA + datta	vi + SAKa + datta	member_count_diff	long(>=11)	no_dcs_freq		P.6.3.63			
+dvimAtra		dvi + mAtrA	dvi + mAtra	same_count_diff_split	short(<=8)	no_dcs_freq					
+vfzapARa		vfzan + pAna	vfza + pARa	same_count_diff_split	short(<=8)	no_dcs_freq					
+triSAlaka		tri + SAlA	tri + SAlaka	same_count_diff_split	medium(9-10)	no_dcs_freq					
+yaTADikAram		yaTA + aDikAra	yaTA + DikAram	same_count_diff_split	long(>=11)	no_dcs_freq		P.4.21.32			
+paScAdvAta		paScAt + vAta	paScAd + vAta	same_count_diff_split	medium(9-10)	no_dcs_freq					
+bfhaddarBa		bfhant + darBa	bfhad + darBa	same_count_diff_split	medium(9-10)	no_dcs_freq					
+triRAman		tri + nAman	tri + RAman	same_count_diff_split	short(<=8)	no_dcs_freq					
+yannimittam		yad + nimitta	yan + nimittam	same_count_diff_split	long(>=11)	no_dcs_freq		P.119.7			
+ekavarzikA		eka + varza	eka + varzikA	same_count_diff_split	medium(9-10)	no_dcs_freq					
+advezarAgin		a + dvezarAga	adveza + rAgin	same_count_diff_split	long(>=11)	no_dcs_freq					
+SAkavAwa		SAka + vAwA	SAka + vAwa	same_count_diff_split	short(<=8)	no_dcs_freq					
+karmaDAraya		karman + DAraya	karma + DAraya	same_count_diff_split	long(>=11)	high(>=10)	10	P.1.2.42			
+brahmajyezWa	1	brahman + jyezWa	brahma + jyezWa	same_count_diff_split	long(>=11)	no_dcs_freq					
+pakzirAja		pakzin + rAja	pakzi + rAja	same_count_diff_split	medium(9-10)	high(>=10)	10				
+mahattattva		mahant + tattva	mahat + tattva	same_count_diff_split	long(>=11)	no_dcs_freq		P.3.5|P.3.5.29			
+aparadakziRam		apara + dakziRa	apara + dakziRam	same_count_diff_split	long(>=11)	no_dcs_freq					tizWadgupraBftiH
+jaladakzaya		jalada + kzaya	jala + da + kzaya	member_count_diff	long(>=11)	no_dcs_freq					
+citradaRqaka		citra + daRqa	citra + daRqaka	same_count_diff_split	long(>=11)	no_dcs_freq					
+Darasena		Dara + senA	Dara + sena	same_count_diff_split	short(<=8)	no_dcs_freq					
+gozWAzwamI		gozWa + azwamI	go + zWAzwamI	same_count_diff_split	medium(9-10)	no_dcs_freq					
+aDyarDapAdya		aDyarDa + pAda	aDyarDa + pAdya	same_count_diff_split	long(>=11)	no_dcs_freq		P.5.1.34			
+diNnAga		diS + nAga	diN + nAga	same_count_diff_split	short(<=8)	mid(3-9)	6				
+jAlagoRikA		jAla + goRI	jAla + goRikA	same_count_diff_split	medium(9-10)	no_dcs_freq					
+nfzUta		nar + sUta	nf + zUta	same_count_diff_split	short(<=8)	low(1-2)	1				
+kiMdAsa		kim + dAsa	kiM + dAsa	same_count_diff_split	short(<=8)	no_dcs_freq		P.4.1.104			
+antaHsuKa		antar + suKa	antaH + suKa	same_count_diff_split	medium(9-10)	no_dcs_freq					
+SaMvada		Sam + vada	SaM + vada	same_count_diff_split	short(<=8)	no_dcs_freq		P.3.2.14			
+gurvarTa		guru + arTa	gurv + arTa	same_count_diff_split	short(<=8)	mid(3-9)	5				
+gaRacakraka		gaRa + cakra	gaRa + cakraka	same_count_diff_split	long(>=11)	no_dcs_freq					
+manoja		manas + ja	mano + ja	same_count_diff_split	short(<=8)	mid(3-9)	9				
+karmajit		karman + jit	karma + jit	same_count_diff_split	short(<=8)	no_dcs_freq		P.9.22.45			
+niraMSa		nis + aMSa	nir + aMSa	same_count_diff_split	short(<=8)	high(>=10)	10				
+daSaSata		daSan + Sata	daSa + Sata	same_count_diff_split	short(<=8)	no_dcs_freq					
+nfpasaBa		nfpa + saBA	nfpa + saBa	same_count_diff_split	short(<=8)	no_dcs_freq					
+duryoga		duz + yoga	dur + yoga	same_count_diff_split	short(<=8)	low(1-2)	1				
+nirIti		nis + Iti	nir + Iti	same_count_diff_split	short(<=8)	no_dcs_freq					
+BadradantikA		Badra + danta	Badra + dantikA	same_count_diff_split	long(>=11)	low(1-2)	1				
+nirgranTa		nis + granTa	nir + granTa	same_count_diff_split	medium(9-10)	high(>=10)	23	P.1.7.10			
+kzudravaMSA		kzudra + vaMSa	kzudra + vaMSA	same_count_diff_split	long(>=11)	no_dcs_freq					
+bAhvaNka		bAhu + aNka	bAhv + aNka	same_count_diff_split	short(<=8)	no_dcs_freq					
+navagraha	2	navan + graha	nava + graha	same_count_diff_split	medium(9-10)	no_dcs_freq					
+BAgaMjaya		BAga + jaya	BAga + Mjaya	same_count_diff_split	medium(9-10)	no_dcs_freq					
+rAyaskAma		rE + kAma	rAyas + kAma	same_count_diff_split	medium(9-10)	mid(3-9)	3				
+SataKaRqamaya		Sata + KaRqa	Sata + KaRqa + maya	member_count_diff	long(>=11)	no_dcs_freq					
+kAmamAlin		kAma + mAlA	kAma + mAlin	same_count_diff_split	medium(9-10)	no_dcs_freq					
+mfdulomaka		mfdu + loman	mfdu + lomaka	same_count_diff_split	medium(9-10)	no_dcs_freq					
+niHsaMKya		nis + saMKyA	niH + saMKya	same_count_diff_split	medium(9-10)	mid(3-9)	8				
+dviguRa		dvi + guRa	dvi + guRadviguRa	same_count_diff_split	short(<=8)	high(>=10)	701				
+yAvadIpsitam		yAvant + Ipsita	yAvad + Ipsitam	same_count_diff_split	long(>=11)	no_dcs_freq					
+brahmaganDa		brahman + ganDa	brahma + ganDa	same_count_diff_split	long(>=11)	no_dcs_freq					
+sanmitra		sant + mitra	san + mitra	same_count_diff_split	short(<=8)	no_dcs_freq					
+nfloka		nar + loka	nf + loka	same_count_diff_split	short(<=8)	low(1-2)	2	P.1.16.9			
+antaHkopa		antar + kopa	antaH + kopa	same_count_diff_split	medium(9-10)	low(1-2)	2				
+gozWeSUra		gozWe + SUra	go + zWe + SUra	member_count_diff	medium(9-10)	no_dcs_freq		P.2.1.48			
+niryuktika		nis + yukti	nir + yuktika	same_count_diff_split	medium(9-10)	low(1-2)	2				
+SUramUrDamaya		SUra + mUrDan	SUra + mUrDamaya	same_count_diff_split	long(>=11)	no_dcs_freq					
+viqbanDa		viz + banDa	viq + banDa	same_count_diff_split	short(<=8)	mid(3-9)	7				
+maDuBUmika		maDu + BUmikA	maDu + BUmika	same_count_diff_split	medium(9-10)	no_dcs_freq					
+vItihotra		vIti + hotrA	vIti + hotra	same_count_diff_split	medium(9-10)	high(>=10)	21	P.5.1|P.5.1.25			
+nfbAhu		nar + bAhu	nf + bAhu	same_count_diff_split	short(<=8)	no_dcs_freq					
+vizkanDa		vi + skanDa	vi + zkanDa	same_count_diff_split	short(<=8)	high(>=10)	11				
+nirnara		nis + nara	nir + nara	same_count_diff_split	short(<=8)	no_dcs_freq					
+BUpaputra		BUpa + putra	BU + pa + putra	member_count_diff	medium(9-10)	no_dcs_freq		P.124.2			
+pratyakpuzpI		pratyaYc + puzpa	pratyak + puzpI	same_count_diff_split	long(>=11)	high(>=10)	17	P.4.1.64			
+paroSIta		paras + aSIti	paro + SIta	same_count_diff_split	short(<=8)	no_dcs_freq					
+sAraPalgutA		sAra + Palgu	sAra + Palgu + tA	member_count_diff	long(>=11)	no_dcs_freq					
+nizpratiBa		nis + pratiBA	niz + pratiBa	same_count_diff_split	medium(9-10)	mid(3-9)	3				
+SvovasIyasa		Svas + vasIyaMs	Svo + vasIyasa	same_count_diff_split	long(>=11)	low(1-2)	1	P.5.4.80			
+Kagavaktra		Kaga + vaktra	Ka + ga + vaktra	member_count_diff	medium(9-10)	no_dcs_freq					
+puraHsad		puras + sad	puraH + sad	same_count_diff_split	short(<=8)	low(1-2)	2				
+SiraSCeda		Siras + Ceda	SiraS + Ceda	same_count_diff_split	medium(9-10)	no_dcs_freq					
+tacCIla		tad + SIla	tac + CIla	same_count_diff_split	short(<=8)	no_dcs_freq		P.3.2.134			
+puroBAga	2	puras + BAga	puro + BAga	same_count_diff_split	short(<=8)	mid(3-9)	4				
+cetoBava		cetas + Bava	ceto + Bava	same_count_diff_split	short(<=8)	no_dcs_freq					
+vAjinIvasu		vAjin + vasu	vAjinI + vasu	same_count_diff_split	medium(9-10)	high(>=10)	21				
+gojavAja		go + aja + vAja	go + javAja	member_count_diff	short(<=8)	no_dcs_freq		P.2.2.31			
+triBajIvA		triBa + jIvA	tri + Ba + jIvA	member_count_diff	medium(9-10)	no_dcs_freq					
+niramarza		nis + amarza	nir + amarza	same_count_diff_split	medium(9-10)	low(1-2)	2				
+aBimuKIkaraRa		aBimuKa + kar	aBimuKI + karaRa	same_count_diff_split	long(>=11)	no_dcs_freq		P.2.3.47			
+paYcamAsya	2	paYcan + mAsa	paYca + mAsya	same_count_diff_split	medium(9-10)	no_dcs_freq					
+viqganDa		viz + ganDa	viq + ganDa	same_count_diff_split	short(<=8)	no_dcs_freq					
+narmagarBa		narman + garBa	narma + garBa	same_count_diff_split	medium(9-10)	no_dcs_freq					
+nirjala		nis + jala	nir + jala	same_count_diff_split	short(<=8)	high(>=10)	16				
+karmapravacanIya		karman + pravacana	karma + pravacanIya	same_count_diff_split	long(>=11)	low(1-2)	2	P.1.4.83			
+BaNgavAsA		BaNga + vAsa	BaNga + vAsA	same_count_diff_split	medium(9-10)	no_dcs_freq					
+sakftpraja		sakft + prajA	sakft + praja	same_count_diff_split	medium(9-10)	mid(3-9)	3				
+tadarTIya		tad + arTa	tad + arTIya	same_count_diff_split	medium(9-10)	no_dcs_freq					
+paYcasidDAntikA		paYcan + sidDAnta	paYca + sidDAntikA	same_count_diff_split	long(>=11)	no_dcs_freq					
+agnizwoma		agni + stoma	agni + zwoma	same_count_diff_split	medium(9-10)	high(>=10)	167	P.4.3.66|P.8.3.82			
+marmaga		marman + ga	marma + ga	same_count_diff_split	short(<=8)	no_dcs_freq					
+tejapattra		tejas + pattra	teja + pattra	same_count_diff_split	medium(9-10)	no_dcs_freq					
+himakaRin		hima + kaRa	hima + kaRin	same_count_diff_split	medium(9-10)	no_dcs_freq					
+BadraparRA		Badra + parRa	Badra + parRA	same_count_diff_split	medium(9-10)	no_dcs_freq					
+adyaSva		adya + Svas	adya + Sva	same_count_diff_split	short(<=8)	low(1-2)	1				
+camUzad		camU + sad	camU + zad	same_count_diff_split	short(<=8)	mid(3-9)	6				
+alaMjIvika		alam + jIvikA	alaM + jIvika	same_count_diff_split	medium(9-10)	no_dcs_freq					
+aDamarRa		aDama + fRa	aDama + rRa	same_count_diff_split	short(<=8)	mid(3-9)	8				
+nfmeDa	1	nar + meDa	nf + meDa	same_count_diff_split	short(<=8)	low(1-2)	2				
+sarvadevatAmaya		sarva + devatA	sarva + deva + tAmaya	member_count_diff	long(>=11)	no_dcs_freq		P.5.23.8			
+haryaSva	2	hari + aSva	hary + aSva	same_count_diff_split	short(<=8)	high(>=10)	75	P.4.1.104|P.6.5|P.6.5.1|P.8.11.21|P.9.6.24|P.9.7.4|P.9.13.15			bidAdiH
+carmasAra		carman + sAra	carma + sAra	same_count_diff_split	medium(9-10)	low(1-2)	1				
+aviganDikA		avi + ganDa	avi + ganDikA	same_count_diff_split	medium(9-10)	low(1-2)	1				
+puMnAga		pumaMs + nAga	puM + nAga	same_count_diff_split	short(<=8)	high(>=10)	56				
+huraScit		huras + cit	huraS + cit	same_count_diff_split	short(<=8)	low(1-2)	2				
+samidDAra		samiD + hAra	samid + DAra	same_count_diff_split	medium(9-10)	no_dcs_freq					
+BadrasomA		Badra + soma	Badra + somA	same_count_diff_split	medium(9-10)	no_dcs_freq		P.59.23			
+sadarTa	1	sant + arTa	sad + arTa	same_count_diff_split	short(<=8)	low(1-2)	1	P.137.5			
+arDanAva		arDa + nO	arDa + nAva	same_count_diff_split	short(<=8)	low(1-2)	1	P.5.4.100			
+navapattrikA		nava + pattra	nava + pattrikA	same_count_diff_split	long(>=11)	low(1-2)	2				
+viqBuj		viz + Buj	viq + Buj	same_count_diff_split	short(<=8)	low(1-2)	2	P.11.27.54			
+nirduHKa		nis + duHKa	nir + duHKa	same_count_diff_split	short(<=8)	mid(3-9)	8				
+tatkAlaDI		tatkAla + DI	tat + kAla + DI	member_count_diff	medium(9-10)	no_dcs_freq					
+triviDa		tri + viDA	tri + viDa	same_count_diff_split	short(<=8)	high(>=10)	534				
+pAYcalohitika		paYcan + lohita	pAYca + lohitika	same_count_diff_split	long(>=11)	no_dcs_freq		P.5.1.28|P.7.3.17			
+KagasTAna		Kaga + sTAna	Ka + ga + sTAna	member_count_diff	medium(9-10)	no_dcs_freq					
+jIvanASam		jIva + naS	jIva + nASam	same_count_diff_split	medium(9-10)	no_dcs_freq		P.3.4.43			
+brahmaDara		brahman + Dara	brahma + Dara	same_count_diff_split	medium(9-10)	no_dcs_freq					
+naBaHsad		naBas + sad	naBaH + sad	same_count_diff_split	short(<=8)	no_dcs_freq					
+Srotranetramaya		Srotra + netra	Srotra + netramaya	same_count_diff_split	long(>=11)	no_dcs_freq					
+darakaRwikA		dara + kaRwaka	dara + kaRwikA	same_count_diff_split	long(>=11)	no_dcs_freq					
+triguRAkfta		triguRa + kfta	tri + guRAkfta	same_count_diff_split	long(>=11)	no_dcs_freq					
+BadrarUpA		Badra + rUpa	Badra + rUpA	same_count_diff_split	medium(9-10)	no_dcs_freq					
+gopAjihva		gopA + jihvA	go + pA + jihva	member_count_diff	medium(9-10)	no_dcs_freq					
+maYjukeSin		maYju + keSa	maYju + keSin	same_count_diff_split	medium(9-10)	no_dcs_freq					
+vyarTa		vi + arTa	vy + arTa	same_count_diff_split	short(<=8)	high(>=10)	74	P.1.2.54|P.1.16.10|P.116.53			
+brahmarasa		brahman + rasa	brahma + rasa	same_count_diff_split	medium(9-10)	no_dcs_freq					
+karmakzama		karman + kzama	karma + kzama	same_count_diff_split	medium(9-10)	no_dcs_freq					
+dvigu		dvi + go	dvi + gu	same_count_diff_split	short(<=8)	high(>=10)	19	P.2.1|P.2.1.52			
+purUruc		puru + ruc	purU + ruc	same_count_diff_split	short(<=8)	no_dcs_freq					
+nirvega		nis + vega	nir + vega	same_count_diff_split	short(<=8)	mid(3-9)	3				
+sapAduka		sa + pAdukA	sa + pAduka	same_count_diff_split	short(<=8)	no_dcs_freq					
+mfccaya		mfd + caya	mfc + caya	same_count_diff_split	short(<=8)	no_dcs_freq					
+cIrapattrikA		cIra + pattra	cIra + pattrikA	same_count_diff_split	long(>=11)	no_dcs_freq					

@@ -1,6 +1,6 @@
 # pwg_ru — Russian reuse-source map
 
-_Created: 05-07-2026 · Last updated: 11-07-2026_
+_Created: 05-07-2026 · Last updated: 26-07-2026_
 
 Canonical inventory of every Russian Sa→Ru reuse asset available to the `pwg_ru`
 (PWG→RU) pipeline, and how to consume each — written so no future session
@@ -108,6 +108,14 @@ currently does with these sources — H186 is the tracked plan to go further.
   before joining. Not yet wired; a future addition, not scoped into H184.
 - **EWA**, **PD (Deccan College)** — future additions; compare against KEWA
   when they land. Not yet available locally.
+- **Leonchenko Sinonimy** — [`research/sinonimy/sinonimy.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/sinonimy/sinonimy.jsonl)
+  (H1491, 26-07-2026): 47,273 rows digitized from
+  [VisualDCS/derived-data/Sinonimy](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Sinonimy/README.md)
+  — sense inventories + gloss-anchored Sanskrit synonym rings (verb/noun),
+  evidence-only (rights unconfirmed, same posture as `grin12`/`grin3`). Digitized
+  but **not yet wired** into `corpus_gate.py` — that step (SPECIALIST-tier
+  registration, or a standalone PWG-sense crosswalk per the roadmap's "Sinonimy
+  as its own published crosswalk" bullet) is future work.
 
 ## 6. Explicitly parked (not reuse candidates)
 

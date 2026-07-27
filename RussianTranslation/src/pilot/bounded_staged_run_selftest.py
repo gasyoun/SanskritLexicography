@@ -30,6 +30,13 @@ import tempfile
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+# Isolation from production data, established before any repo import (several modules
+# resolve store/coordinator constants at import time). See selftest_isolation.py.
+if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from selftest_isolation import guard as _isolation_guard  # noqa: E402
+_isolation_guard()
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
@@ -144,12 +151,17 @@ def test_c_historical_jobs_excluded(td):
     db = os.path.join(td, 'scope.sqlite')
     mao.main(['--db', db, 'init', '--account', 'acc=' + os.path.join(td, 'acc'),
               '--skip-profile-check'])
-    for ext in ('other_plan_w99', 'no_pwg_w02'):
-        mao.main(['--db', db, 'enqueue', '--external-id', ext, '--argv-json',
-                  json.dumps([sys.executable, '-c', 'print(1)']), '--cwd', td,
-                  '--output', os.path.join(td, ext + '.json')])
+    # The `enqueue` CLI is now a hard refusal (generic argv jobs are disabled in favour of
+    # sealed coordinator manifests), so seeding through it aborts the whole suite. This test
+    # is about SCOPE ISOLATION -- which jobs a plan's scoped queries can see -- and needs two
+    # rows in the table, not a particular way of putting them there. Insert them directly.
     con = mao.connect(db)
     with con:
+        for ext in ('other_plan_w99', 'no_pwg_w02'):
+            con.execute('INSERT INTO jobs(external_id, argv_json, cwd, output_path) '
+                        'VALUES(?,?,?,?)',
+                        (ext, json.dumps([sys.executable, '-c', 'print(1)']), td,
+                         os.path.join(td, ext + '.json')))
         con.execute("UPDATE jobs SET state='failed' WHERE external_id='other_plan_w99'")
     con.close()
     scope = {'no_pwg_w02'}
@@ -467,6 +479,11 @@ def test_k_requeue_materialisation(td):
                                  'validation_method': 'audit_window+final_schema',
                                  'model_identifier': 'claude-sonnet-5'},
                    'key_provenance': {'k~~h0_zz_pw': 'real'}}, f)
+    rq_preflight = os.path.join(rq_dir, 'preflight.json')
+    with open(rq_preflight, 'w', encoding='utf-8') as f:
+        json.dump({'schema': 'pwg.performance_preflight.v1',
+                   'selected_keys': ['k~~h0_zz_pw'],
+                   'cost_gate': {'over_ceiling': False}}, f)
     state_path = os.path.join(coord, 'state.json')
 
     def write_state(state_name, with_attempt):
@@ -475,9 +492,14 @@ def test_k_requeue_materialisation(td):
         if with_attempt:
             lease.update({'requeue_attempt': 1, 'requeue_kind': 'transient',
                           'execution_manifest': rq_manifest,
+                          'preflight_path': rq_preflight,
+                          'preflight_sha256': mao.sha256_path(rq_preflight),
                           'current_attempt': {'number': 1, 'kind': 'transient',
                                               'artifact_dir': rq_dir,
-                                              'execution_manifest': rq_manifest}})
+                                              'execution_manifest': rq_manifest,
+                                              'preflight': rq_preflight,
+                                              'preflight_sha256':
+                                                  mao.sha256_path(rq_preflight)}})
         with open(state_path, 'w', encoding='utf-8') as f:
             json.dump({'leases': [lease]}, f)
 
@@ -637,21 +659,27 @@ def test_l_resume_recovers_abandoned_jobs(td):
         def run(self):
             return {'stop_reason': STOP_CLEAN_TARGET}
 
-    _pf, _rr, _bsup = mao.probe_fleet, mao.release_runtime, bsr.build_supervisor
+    _pf, _rr, _cc, _bsup = (mao.probe_fleet, mao.release_runtime,
+                             mao.coordinator_command, bsr.build_supervisor)
     mao.probe_fleet = lambda *a, **k: {'acc1': 10}
     mao.release_runtime = lambda *a, **k: argparse.Namespace(returncode=0, stdout='', stderr='')
+    mao.coordinator_command = lambda *a, **k: argparse.Namespace(
+        returncode=0, stdout='', stderr='')
     bsr.build_supervisor = lambda *a, **k: _NoopSup()
     try:
+        checkpoint = os.path.join(td, 'l_cp.json')
+        bsr.CallReservationLedger(checkpoint + '.calls.json', 'l', None)
         rc = bsr.run(argparse.Namespace(
             plan=plan_path, coord_dir=coord, coordinator=os.path.join(HERE, 'coordinator.py'),
-            cwd=td, db=db, checkpoint=os.path.join(td, 'l_cp.json'), lease_id=None,
+            cwd=td, db=db, checkpoint=checkpoint, lease_id=None,
             execute=True, resume=True, report=None, run_id='l', events=None,
             claude_bin='claude', timeout=5, gen_model_version=bsr.DEFAULT_GEN_MODEL_VERSION,
             only_profile=None, drop_unhealthy=False, stop_before_promote=False,
             max_windows=None, max_calls=None, max_clean=None, cost_ceiling=None,
             empty_streak=None, max_accounts=0))
     finally:
-        mao.probe_fleet, mao.release_runtime, bsr.build_supervisor = _pf, _rr, _bsup
+        mao.probe_fleet, mao.release_runtime, mao.coordinator_command, bsr.build_supervisor = (
+            _pf, _rr, _cc, _bsup)
     assert rc == 0, rc
     dbc = mao.connect(db)
     state = dbc.execute("SELECT state FROM jobs WHERE external_id='no_pwg_w02'").fetchone()['state']
@@ -693,14 +721,92 @@ def test_n_cli_defines_execute_path_args(td):
     args = ap.parse_args(['--plan', 'p.json', '--coord-dir', 'cd'])
     for attr in ('claude_bin', 'db', 'coordinator', 'cwd', 'events', 'run_id',
                  'timeout', 'gen_model_version', 'only_profile', 'max_accounts',
-                 'drop_unhealthy', 'checkpoint', 'stop_before_promote', 'resume'):
+                 'drop_unhealthy', 'checkpoint', 'stop_before_promote', 'resume',
+                 'call_reservation'):
         assert hasattr(args, attr), 'execute path reads args.%s but the CLI never defines it' % attr
     assert args.claude_bin == 'claude', args.claude_bin
     print('  (n) H1447: CLI defines every attr the --execute path dereferences '
           '(incl. --claude-bin): PASS')
 
 
-def test_o_cohort_width_cli_and_live_refusal(td):
+def test_o_preflight_before_probe(td):
+    plan_path = os.path.join(td, 'o_plan.json')
+    coord = os.path.join(td, 'o_coord')
+    os.makedirs(coord)
+    with open(plan_path, 'w', encoding='utf-8') as f:
+        json.dump(_plan(['no_pwg_w02']), f)
+    with open(os.path.join(coord, 'state.json'), 'w', encoding='utf-8') as f:
+        json.dump({'leases': [{'id': 'no_pwg_w02', 'state': 'prepared'}]}, f)
+    probed = []
+    original_command, original_probe = mao.coordinator_command, mao.probe_fleet
+    mao.coordinator_command = lambda *a, **k: argparse.Namespace(
+        returncode=2, stdout='', stderr='synthetic preflight refusal')
+    mao.probe_fleet = lambda *a, **k: probed.append(1)
+    calls = os.path.join(td, 'o.calls.json')
+    try:
+        try:
+            bsr.run(argparse.Namespace(
+                plan=plan_path, coord_dir=coord, coordinator='coordinator.py', cwd=td,
+                db=os.path.join(td, 'absent.sqlite'), checkpoint=os.path.join(td, 'o.cp.json'),
+                lease_id=None, execute=True, resume=False, report=None, run_id='o',
+                events='events.jsonl', claude_bin='claude', timeout=5,
+                gen_model_version=bsr.DEFAULT_GEN_MODEL_VERSION, only_profile=None,
+                drop_unhealthy=False, stop_before_promote=False, max_windows=None,
+                max_calls=2, call_reservation=calls, max_clean=None, cost_ceiling=None,
+                empty_streak=None, max_accounts=0))
+            raise AssertionError('preflight refusal was ignored')
+        except SystemExit as exc:
+            assert 'preflight refused before probe' in str(exc), exc
+        assert not probed and not os.path.exists(calls)
+    finally:
+        mao.coordinator_command, mao.probe_fleet = original_command, original_probe
+    print('  (o) coordinator preflight refusal occurs before ledger reservation/probe: PASS')
+
+
+def test_p_resume_requires_existing_ledger_run(td):
+    plan_path = os.path.join(td, 'p_plan.json')
+    coord = os.path.join(td, 'p_coord')
+    os.makedirs(coord)
+    with open(plan_path, 'w', encoding='utf-8') as f:
+        json.dump(_plan(['no_pwg_w02']), f)
+    with open(os.path.join(coord, 'state.json'), 'w', encoding='utf-8') as f:
+        json.dump({'leases': [{'id': 'no_pwg_w02', 'state': 'prepared'}]}, f)
+    db_path = os.path.join(td, 'p.sqlite')
+    db = mao.connect(db_path)
+    with db:
+        db.execute(
+            'INSERT INTO accounts(name,config_dir,parked_until,validated,updated_at) '
+            'VALUES(?,?,0,1,?)', ('acc', td, mao.now_iso()))
+    db.close()
+    calls = os.path.join(td, 'p.calls.json')
+    with open(calls, 'w', encoding='utf-8') as f:
+        json.dump({'schema': 'pwg.call_reservation.v1', 'runs': {}}, f)
+    probed = []
+    original_command, original_probe = mao.coordinator_command, mao.probe_fleet
+    mao.coordinator_command = lambda *a, **k: argparse.Namespace(
+        returncode=0, stdout='ok', stderr='')
+    mao.probe_fleet = lambda *a, **k: probed.append(1)
+    try:
+        try:
+            bsr.run(argparse.Namespace(
+                plan=plan_path, coord_dir=coord, coordinator='coordinator.py', cwd=td,
+                db=db_path, checkpoint=os.path.join(td, 'p.cp.json'),
+                lease_id=None, execute=True, resume=True, report=None, run_id=None,
+                events='events.jsonl', claude_bin='claude', timeout=5,
+                gen_model_version=bsr.DEFAULT_GEN_MODEL_VERSION, only_profile=None,
+                drop_unhealthy=False, stop_before_promote=False, max_windows=None,
+                max_calls=2, call_reservation=calls, max_clean=None, cost_ceiling=None,
+                empty_streak=None, max_accounts=0))
+            raise AssertionError('resume created a fresh run in an empty call ledger')
+        except SystemExit as exc:
+            assert 'no existing run' in str(exc), exc
+        assert not probed
+    finally:
+        mao.coordinator_command, mao.probe_fleet = original_command, original_probe
+    print('  (p) --resume requires a pre-existing durable call-ledger run: PASS')
+
+
+def test_q_cohort_width_cli_and_live_refusal(td):
     """H1437 Phase 3: --cohort-width is EXPERIMENTAL / OFFLINE-ONLY. The parser defaults it
     to 1 (the serial route, byte-for-byte unchanged); the --execute path REFUSES any width
     > 1 with a message naming the missing live-acceptance gate, BEFORE touching the plan,
@@ -719,11 +825,11 @@ def test_o_cohort_width_cli_and_live_refusal(td):
     try:
         try:
             bsr.run(argparse.Namespace(
-                plan=os.path.join(td, 'o_no_such_plan.json'), coord_dir=os.path.join(td, 'o_cd'),
-                db=os.path.join(td, 'o_no.sqlite'), checkpoint=os.path.join(td, 'o_cp.json'),
+                plan=os.path.join(td, 'q_no_such_plan.json'), coord_dir=os.path.join(td, 'q_cd'),
+                db=os.path.join(td, 'q_no.sqlite'), checkpoint=os.path.join(td, 'q_cp.json'),
                 lease_id=None, execute=True, cohort_width=2, resume=False, report=None,
                 coordinator=os.path.join(HERE, 'coordinator.py'), cwd=td, events=None,
-                run_id='o', claude_bin='claude', timeout=5,
+                run_id='q', claude_bin='claude', timeout=5,
                 gen_model_version=bsr.DEFAULT_GEN_MODEL_VERSION, only_profile=None,
                 drop_unhealthy=False, stop_before_promote=False,
                 max_windows=None, max_calls=None, max_clean=None, cost_ceiling=None,
@@ -739,20 +845,20 @@ def test_o_cohort_width_cli_and_live_refusal(td):
 
     # The dry-run planning view carries the cohort block (policy visible without a live run).
     view = bsr.plan_view(_plan(['no_pwg_w02']), {'leases': []}, _ceilings(),
-                         os.path.join(td, 'o_v.json'), cohort_width=3)
+                         os.path.join(td, 'q_v.json'), cohort_width=3)
     cohort = view.get('cohort') or {}
     assert cohort.get('requested_width') == 3, view
     assert 'OFFLINE' in (cohort.get('mode') or ''), cohort
     assert 'live-acceptance gate' in (cohort.get('live_policy') or ''), cohort
     serial_view = bsr.plan_view(_plan(['no_pwg_w02']), {'leases': []}, _ceilings(),
-                                os.path.join(td, 'o_v.json'))
+                                os.path.join(td, 'q_v.json'))
     assert (serial_view.get('cohort') or {}).get('requested_width') == 1, serial_view
     assert 'serial' in ((serial_view.get('cohort') or {}).get('mode') or ''), serial_view
-    print('  (o) H1437 P3: --cohort-width defaults 1; --execute width>1 refused naming the '
+    print('  (q) H1437 P3: --cohort-width defaults 1; --execute width>1 refused naming the '
           'live-acceptance gate before any plan/db/fleet access; dry-run shows policy: PASS')
 
 
-def test_p_cohort_offline_serial_equivalence(td):
+def test_r_cohort_offline_serial_equivalence(td):
     """H1437 Phase 3 reviewer checkpoint: the SAME fixture at widths 1/2/3 with DELAYED fake
     workers (w1 slowest, w3 fastest — completion order is the REVERSE of plan order at width
     3) must yield identical clean/requeue decisions, identical fake-store bytes, exact equal
@@ -771,7 +877,7 @@ def test_p_cohort_offline_serial_equivalence(td):
 
     results = {}
     for width in (1, 2, 3):
-        wdir = os.path.join(td, 'p_w%d' % width); os.makedirs(wdir)
+        wdir = os.path.join(td, 'r_w%d' % width); os.makedirs(wdir)
         store = os.path.join(wdir, 'store.json')
         promote_calls, tm_calls = [], []
 
@@ -836,11 +942,11 @@ def test_p_cohort_offline_serial_equivalence(td):
     # meaningless without a profile binding, so offline fixtures must declare one.
     try:
         bsr.run_cohort_offline([{'id': 'wx'}], 2, lambda w: None,
-                               os.path.join(td, 'p_x.json'))
+                               os.path.join(td, 'r_x.json'))
         raise AssertionError('a profile-less window was accepted by run_cohort_offline')
     except SystemExit as exc:
         assert 'profile' in str(exc), exc
-    print('  (p) H1437 P3: widths 1/2/3 — identical decisions/store bytes/ledger, one '
+    print('  (r) H1437 P3: widths 1/2/3 — identical decisions/store bytes/ledger, one '
           'promote+TM per wave, overlap proven (peak>=2), wall time '
           '%.2fs/%.2fs/%.2fs: PASS' % (results[1]['elapsed'], results[2]['elapsed'],
                                        results[3]['elapsed']))
@@ -862,8 +968,10 @@ def main():
         test_l_resume_recovers_abandoned_jobs(td)
         test_m_requeue_resume_after_crash(td)
         test_n_cli_defines_execute_path_args(td)
-        test_o_cohort_width_cli_and_live_refusal(td)
-        test_p_cohort_offline_serial_equivalence(td)
+        test_o_preflight_before_probe(td)
+        test_p_resume_requires_existing_ledger_run(td)
+        test_q_cohort_width_cli_and_live_refusal(td)
+        test_r_cohort_offline_serial_equivalence(td)
     print('bounded_staged_run_selftest: PASS')
 
 

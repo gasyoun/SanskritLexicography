@@ -1,0 +1,187 @@
+{
+  "handoff": "H1632",
+  "model": "Opus 5 (claude-opus-5[1m])",
+  "generator": "research/pwg_sense_dcs_attestation_pilot.py",
+  "frame": "the H1670 wide frame (16208 groups)",
+  "frame_mode": "file",
+  "frame_seed": null,
+  "frame_n_requested": null,
+  "join_key": "SLP1 <-> SLP1 (both sides already ASCII SLP1; form_key() is identity here, no NFD/strip-Mn normalisation applied)",
+  "gold_layer": "wn",
+  "grounded_tiers": [
+    "locus",
+    "locus-mbh",
+    "locus-chapter"
+  ],
+  "excluded_tiers": {
+    "ls": "PWG self-citation, no DCS token",
+    "overlap": "gloss-token heuristic, not a sense id"
+  },
+  "dcs_master": "VisualDCS/src/DCS-data-2026/dcs_full.sqlite (921 MB; the src/ and repo-root copies are 0-byte decoys and were not read)",
+  "pins": [
+    {
+      "name": "kosha/data/concordance/sense_pilot_headwords.tsv",
+      "role": "frozen 500-headword pilot frame (H1455)",
+      "sha256": "c0d35b798c722308c3e124383f112c5b9f48c107b017205eff0286a137be925b"
+    },
+    {
+      "name": "RussianTranslation/research/pwg_sense_loci.all.tsv",
+      "role": "PWG leaf senses + `<ls>` loci for THIS frame (export_frame_sense_loci.py over microstructure.py, H1456 parser)",
+      "sha256": "82e93521d23ca7692896daadee843a8dded5a4c69ab92ea440b5ebc69c41b2e8"
+    },
+    {
+      "name": "kosha/data/frequency/lemma_frequency.tsv",
+      "role": "DCS lemma-level token counts",
+      "sha256": "3d54e4dbf4fc90c75fdd10b7ab538ddde548718b703c935cadb4c22e43314d07"
+    },
+    {
+      "name": "kosha/data/frequency/sense_frequency.tsv",
+      "role": "DCS per-sense counts, `wn` = m_wordsem gold (H1453)",
+      "sha256": "2816b02e0e22529f1bccb8be1f39523ef84fd37f0e25b772431ffc069c6762f1"
+    },
+    {
+      "name": "kosha/data/concordance/sense_corpus_concordance.tsv",
+      "role": "PWG-sense ↔ DCS attestation links (H1455)",
+      "sha256": "5483a24ffe3fe9ef5d26657a2098732646f0eea4722bdd6918d8d9aab4fcd8a1"
+    }
+  ],
+  "summary": {
+    "n_pilot_groups": 16208,
+    "n_lemma_attested": 12726,
+    "n_wordsem_tagged": 8403,
+    "n_groups_grounded": 6663,
+    "mass_dcs_lemma_tokens": 3856643,
+    "mass_dcs_sensetagged_tokens": 440962,
+    "sensetagged_mass_share": 0.11433829887806572,
+    "mass_under_grounded_upper_bound": 3422494,
+    "attributable_mass_share_upper_bound": 0.8874282633886518,
+    "pwg_senses_total": 60190,
+    "pwg_senses_with_ls": 57980,
+    "dcs_wn_senses_total": 30393,
+    "n_groups_grounding_computed": 16208,
+    "n_groups_grounding_unknown": 0,
+    "pwg_senses_grounded": 7372,
+    "pwg_senses_grounded_verse": 5647,
+    "pwg_senses_total_known": 60190,
+    "dcs_wn_senses_total_known": 30393,
+    "pwg_sense_join_rate": 0.12247881707924904,
+    "pwg_sense_join_rate_verse": 0.09381957135736833,
+    "dcs_sense_join_rate": 0.24255585167637284,
+    "median_pwg_senses_tagged_lemmas": 3.0,
+    "median_dcs_senses_tagged_lemmas": 2.0,
+    "spearman_pwg_vs_dcs_sense_count": 0.43628783534118815,
+    "residual_classes": {
+      "R3_tagged_but_unaligned": 3051,
+      "R4_grounded_alignment": 6663,
+      "R1_lemma_absent_from_dcs": 3424,
+      "R2_no_wordsem_tag": 3070
+    },
+    "concordance_tier_rows": {
+      "ls": 473198,
+      "locus-mbh": 3168,
+      "locus": 12280,
+      "overlap": 7825,
+      "locus-chapter": 162
+    }
+  },
+  "disclosures": {
+    "frame_mode": "file",
+    "frame_label": "the H1670 wide frame (16208 groups)",
+    "frame_note": "The SAME selection query as the H1455 500 (≥2 leaf senses, ≥2 of them carrying an `<ls>`, DCS-attested ranked first) run to exhaustion instead of truncated at 500 — so a grounding delta measured against the 500 is attributable to frame WIDTH, not to a changed selection rule.",
+    "frame_note_long": "The frame is the **H1670 wide frame** — `select_sense_pilot.py` with the identical selection query and `--size` raised past exhaustion, yielding 16208 (slp1, hom) groups (32.4× the frozen 500). The frozen 500 frame file is untouched; this one is written beside it.",
+    "repro_export": "python export_frame_sense_loci.py --all",
+    "repro_join": "python pwg_sense_dcs_attestation_pilot.py --frame-mode file --frame frame_wide.tsv --concordance sense_corpus_concordance.tsv --tag widefulltextmap",
+    "dropped_parent_loci": 27727,
+    "grounded_without_wordsem": 1310,
+    "leaf_mismatch": {
+      "n_match": 16008,
+      "n_mismatch": 200,
+      "frame_total": 59976,
+      "mine_total": 60190,
+      "direction": 1,
+      "pct": 0.003568093904228358,
+      "examples": [
+        [
+          [
+            "han",
+            "1"
+          ],
+          39,
+          40
+        ],
+        [
+          [
+            "padma",
+            ""
+          ],
+          31,
+          33
+        ],
+        [
+          [
+            "viS",
+            "1"
+          ],
+          29,
+          30
+        ],
+        [
+          [
+            "puzkara",
+            ""
+          ],
+          27,
+          30
+        ],
+        [
+          [
+            "go",
+            ""
+          ],
+          26,
+          28
+        ],
+        [
+          [
+            "piRqa",
+            ""
+          ],
+          26,
+          28
+        ],
+        [
+          [
+            "cakra",
+            ""
+          ],
+          22,
+          23
+        ],
+        [
+          [
+            "tIkzRa",
+            ""
+          ],
+          22,
+          23
+        ],
+        [
+          [
+            "sA",
+            "3"
+          ],
+          21,
+          22
+        ],
+        [
+          [
+            "parigraha",
+            ""
+          ],
+          21,
+          23
+        ]
+      ]
+    }
+  }
+}

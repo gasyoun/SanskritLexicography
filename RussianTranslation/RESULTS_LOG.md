@@ -1,8 +1,397 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 25-07-2026_
+_Created: 09-07-2026 · Last updated: 26-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 26-07-2026 - H1681 follow-up: the compound-`differs` blind arm re-cut, deduped and BOUND
+
+Executor: Opus 5 1M (`claude-opus-5[1m]`). MG ruled **re-cut** on the H1681 `@DECIDE`
+(re-cut vs retro-lock). Generator
+[`src/pilot/compound_differs_review_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/compound_differs_review_sample.py)
+repaired on both counts and the sheet re-drawn from the same `seed=1628`.
+
+| | before | after |
+|---|---|---|
+| frame sampled from | 4,226 rows (103 sharing a card id) | **4,123**, one per `(k1, hom)` card id |
+| sample | 200 rows / **199** distinct ids | 200 rows / **200** distinct ids |
+| binding | none — `validate_decisions.py` would reject the export | `sha256:31c106bb13cd2bad…`, lock committed, gate `G6-compound` |
+
+**The duplicate card was the visible end of a queue-wide mismatch:** `headword_index.tsv`
+carries one row per part-of-speech reading (`agraRI` as `adj.` and as `m.`; 2,383 of its
+keys are multi-row), while a card id is only `(k1, hom)`. So the `differs` queue's 4,226
+rows are **4,123 distinct cards**. The adjudication is unaffected — all 103 duplicate rows
+agree with their twin on both members and verdict (0 disagreements), since a compound's
+analysis does not depend on the entry's `lex`.
+
+Arm coverage after the re-cut (200 cards): `same_split_pwg_lemma_form` 138 → max Wilson-95
+lb 0.973, still the only stratum that can clear the 0.90 gate; `pwg_lexeme_vs_mw_suffixed_tail`
+17 · `mw_cut_leaves_nonword` 11 · rest unchanged. **Promotion ceiling stays 3,018/4,226
+(71.4 %)** — the second, rule-stratified arm remains [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md)
+and is still sequenced behind [SanskritGrammar#527](https://github.com/gasyoun/SanskritGrammar/issues/527)
++ [#801](https://github.com/gasyoun/SanskritLexicography/issues/801).
+
+The HTML stays gitignored; `generated` is pinned to `26-07-2026` so a regeneration
+reproduces the exact bytes the lock binds. `csl_pyutil` is **0.4.0** here, not the 0.3.1
+the H1404 manual records — the stamp anchors still matched.
+
+## 26-07-2026 - H1681: all 4,226 PWG-vs-MW compound `differs` rows adjudicated by rule
+
+Executor: Opus 5 1M (`claude-opus-5[1m]`), Claude Code. В2 arm of the H1664 triage. Full
+method + limitations:
+[research/PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_COMPOUND_DIFFERS_AGENT_ADJUDICATION.md);
+verdicts:
+[research/pwg_compound_differs_adjudication.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_compound_differs_adjudication.tsv).
+**No store field changed; the 200-card blind arm was not touched.**
+
+The queue is not "one dictionary is wrong": PWG's parenthesis states the compound's
+members **as lexemes**, MW's `<k2>` is a **surface segmentation** — MW's members
+concatenate back to the headword in 4,215/4,226 rows (99.7 %), PWG's in 81 (1.9 %).
+
+| Verdict | rows | share | = sheet vote |
+|---|---:|---:|---|
+| `pwg_members-right` | 3,724 | 88.1 % | approve |
+| `index_members-right` | 180 | 4.3 % | reject |
+| `unresolved` | 322 | 7.6 % | defer |
+
+20 rules, first-match-wins; the five largest: `same_split_pwg_lemma_form` 3,018 ·
+`pwg_lexeme_vs_mw_suffixed_tail` 323 · `mw_cut_leaves_nonword` 277 ·
+`cut_moved_both_readings_lexical` 253 (unresolved — both readings lexical) ·
+`pwg_layer_no_headword_paren` 82.
+
+**Four upstream defects found and worked around in memory (nothing rewritten):**
+
+| Defect | In queue | Whole dataset |
+|---|---:|---|
+| `pwg_compound_split.py` takes the first `+`-chain with no bracket awareness — inner sub-analysis or a *different word's* parenthesis | 162 | 344/16,738 wrong chain (2.06 %) + 368 unverifiable (2.20 %) |
+| `mw_compounds._clean_member` strips `;` and the space, fusing MW `<k2>` variants into one bogus member | 10 | 41/106,603 MW compound records (0.04 %) |
+| transcription typos in PWG's own member strings (`sda` for *sūda*, `hasaM` for *haṃsa*) | 12 | csl-orig batch candidates, not swept further |
+| the H1628 sheet has no lock/content-hash and a duplicate card (200 rows, 199 ids) | — | `validate_decisions.py` would reject the vote export |
+
+**Promotion plan (gate: per-stratum Wilson-95 % lb ≥ 0.90, provenance `agent`, never
+`human_reviewed`):** only `same_split_pwg_lemma_form` (3,018 rows, 140 arm cards, max lb
+0.973) can clear the gate — **the 200 votes close 3,018 of 4,226 rows (71.4 %), not all
+of them.** A stratum needs ≥ 35 arm cards at 100 % agreement to reach 0.90, and the H1628
+sample was stratified by length × DCS frequency before these rule strata existed. The
+remaining 1,208 rows need a second, rule-stratified arm of ~280 cards.
+
+## 26-07-2026 - H1682: h1303_abbrev rule-collapse — 273 → 33 cards
+
+Executor: Sonnet 5 (`claude-sonnet-5`),
+[H1682](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1682-Sonnet_SanskritLexicography_h1303-abbrev-rule-collapse_26.07.26.md).
+Full method + per-section table:
+[H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md);
+100% classification: [H1682_ABBREV_RULE_COLLAPSE_CLASSIFICATION_2026-07-26.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1682_ABBREV_RULE_COLLAPSE_CLASSIFICATION_2026-07-26.tsv).
+
+| | count |
+|---|--:|
+| ab-tokens classified (100%) | 269 |
+| rule-bulk (folds into a section policy) | 252 |
+| residue (classifier-flagged ambiguous) | 17 |
+| Rule cards | 12 |
+| Residue + ls-border + meta cards | 17 + 3 + 1 |
+| **New sheet total** (`h1682_abbrev_rules`) | **33** |
+| Old sheet (`h1303_abbrev`, superseded-unvoted) | 273 |
+
+No token reclassified — every rule/residue label is re-grouped from
+`build_h1303_abbrev_sheet.py`'s existing `O` overlay (H1303 Session 1,
+21-07-2026) via its own 12 `# --- ...` section headers, parsed straight from
+source (no hand-retyped token lists). Found + fixed in passing: the H1682
+mandate's own "CONTRADICTIONS §7" (and `.ai_state.md`'s) is stale — renumbered
+to §4 by H1364 (20-07-2026).
+
+## 26-07-2026 - H1664: voting-queue triage — a verdict for every pending sheet, human bill recounted
+
+Executor: Fable 5 (`claude-fable-5`),
+[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md).
+Full verdict table (all 42 pending sheets org-wide, each with its enabling dataset):
+[VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md §11](https://github.com/gasyoun/Uprava/blob/main/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md).
+
+| Bucket | Sheets | Judgments now | Owed after routing |
+|---|---|---|---|
+| AGENT-RULEABLE | 1 (+2 zombie rows) | 17 | 0 |
+| HYBRID (В2: agent adjudicates, human votes a blind stratified arm) | 20 | 2,282 | ~666 |
+| HUMAN-ONLY | 21 | 663 | 663 |
+| **Pending queue total** | **42** | **2,962** | **~1,329 (−55 %)** |
+| acc_ncc lane (rerouted 26-07, executed; post-H1671 key repair the C/D set is 10,614) | 1 | 49,019 | 698 |
+
+SL-specific outcomes: compound-`differs` goes В2 —
+[H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md)
+adjudicates all ~4,226 and the H1628 200-card sheet becomes the blind verification arm (same
+200 votes then close the whole queue); h1303_abbrev collapses to rule-level cards
+([H1682](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1682-Sonnet_SanskritLexicography_h1303-abbrev-rule-collapse_26.07.26.md),
+273 → ~30); the 32 article-comparison edits get source-checked pre-vote
+([H1683](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1683-Sonnet_SanskritLexicography_article-comparison-source-check_26.07.26.md));
+h180 stays routed via H1650. HUMAN-ONLY (kept, with the why): G6 gold starter (the label is
+the instrument), G5 batch1v3 (already the В2 human arm), h1306 style, Renou pilot 70,
+Kochergina 4. The acc_ncc blind spot-check (698 rows post-H1671 re-draw; the pre-repair 686 sample was voided unvoted) is now registered in
+[REVIEW_SHEETS_INDEX.md](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md)
+the H1671 sequencing gate resolved itself the same day — the key repair merged ([PR #785](https://github.com/gasyoun/SanskritLexicography/pull/785)) and the fresh sample is safe to vote. HY "after" numbers
+are planning estimates — exact arm sizes derive per stratum at execution
+([PR #783](https://github.com/gasyoun/SanskritLexicography/pull/783) pattern).
+
+## 26-07-2026 - H1628: stratified 200-item review sheet, PWG-vs-index compound `differs` (H1624 G6 residual)
+
+Executor: Sonnet 5 (`claude-sonnet-5`). Sampled from the ~4226-row `differs` queue the
+[H1624 G6](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1624-Opus_SanskritLexicography_pwg-german-layers-backlog-ordered_25.07.26.md)
+`enrich_portrait_derivation.py --conflict-rate` flags (39539 rows scanned, 4226/39539 =
+10.69% conflict, 10577/39539 = 26.75% needs_human — unchanged from G6's freeze). Sampling
+script:
+[`src/pilot/compound_differs_review_sample.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/compound_differs_review_sample.py)
+(`--selftest` wired; `--report` dry-runs the strata; `--write` emits the frame + sheet).
+
+**Sample frame — two-stage stratified, seed=1628 (deterministic, reproducible):**
+
+1. `vs_index_class` (how PWG's split disagrees with the pre-existing
+   `headword_index.tsv` `compound_members`, not itself stratifiable since the whole
+   queue is `compound_status=differs`): `member_count_diff` (76/4226, 1.8%) gets a flat
+   **guaranteed quota of 20** — proportional allocation would round it to ~1-2 items and
+   bury a structurally distinct failure mode; `same_count_diff_split` (4150/4226) fills
+   the remaining 180 proportionally across length x frequency cells (largest-remainder
+   rounding to land exactly on 180).
+2. `length_bucket` (`len(k1)`): short ≤8 / medium 9-10 / long ≥11 (quartile-derived cuts
+   on the full differs frame).
+3. `freq_bucket` (DCS attestation count via
+   [`src/pwg_freq_order.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_freq_order.tsv)):
+   `no_dcs_freq` (no match, 58.1% of the frame) / low 1-2 / mid 3-9 / high ≥10.
+
+| stratum | full differs frame (n=4226) | sample (n=200) |
+|---|---:|---:|
+| vs_index_class: member_count_diff | 76 (1.8%) | 20 (10.0%, oversampled by design) |
+| vs_index_class: same_count_diff_split | 4150 (98.2%) | 180 (90.0%) |
+| length: short(≤8) | 1904 (45.1%) | 83 (41.5%) |
+| length: medium(9-10) | 1622 (38.4%) | 78 (39.0%) |
+| length: long(≥11) | 700 (16.6%) | 39 (19.5%) |
+| freq: no_dcs_freq | 2456 (58.1%) | 123 (61.5%) |
+| freq: low(1-2) | 660 (15.6%) | 28 (14.0%) |
+| freq: mid(3-9) | 503 (11.9%) | 22 (11.0%) |
+| freq: high(≥10) | 607 (14.4%) | 27 (13.5%) |
+
+Sample frame (metadata only — k1/hom/both splits/strata/panini/gaṇa, no `ru`/`de` store
+text) committed at
+[`review/sanskritlexicography-pwg-compound-differs_stratified200_frame.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/sanskritlexicography-pwg-compound-differs_stratified200_frame.tsv).
+The interactive sheet itself
+(`review/sanskritlexicography-pwg-compound-differs_stratified200_review.html`) stays
+**gitignored**, per the `/review-sheet` contract — personal voting artifact, not a repo
+deliverable.
+
+**Vote → store contract (so `derivation.human_reviewed` never gets a bulk overwrite):**
+`decisions.json` export carries one decision per `(k1, hom)` id — `approve` = PWG's split
+is correct (a future apply step sets that entry's `derivation.compound.human_reviewed =
+true` with `members` taken from `pwg_members`); `reject` = the index's split is correct
+(same overlay, `members` taken from `index_members`, PWG layer flagged
+`needs_correction`); `defer` = no vote, stays `needs_human`. The overlay write touches
+**only the ~200 sampled `(k1, hom)` keys** — `enrich_portrait_derivation.enrich_portrait_obj`
+already refuses to touch any entry whose `derivation.human_reviewed` is truthy, so applying
+this batch cannot silently re-stamp the other ~4026 unsampled `differs` rows.
+
+**Explicit non-goal:** the remaining ~4026 `differs` rows (4226 − 200) stay `needs_human`;
+this sheet closes zero rows on its own until MG votes and `/decisions-apply` runs.
+
+## 26-07-2026 - P1 ruling applied: machine-flag layer over the live queue, batch1v3 (H1655)
+
+Executor: Fable 5 (`claude-fable-5`). MG ruled the voting-queue triage `@DECIDE` «auto-reject»
+(screening-audit §7: machine-flagged cards never reach a human sheet). `machine_flags` (D1/D3/D4)
+added to
+[`review_residue_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_residue_gate.py);
+batch1v2 superseded UNVOTED by `g5-live-queue-batch1v3-2026-07-26`.
+
+| Metric | n |
+|---|---:|
+| queue rows | 11,163 |
+| excluded: reader-visible German | 636 |
+| excluded: machine flags D1/D3/D4 | 3,236 |
+| ... D4 slot-count mismatch / D3 gloss-drift «…» / D1 Cyrillic in `{#…#}` | 3,067 / 370 / 20 |
+| already decided | 5 |
+| eligible for sheets | 7,286 (65.3%) |
+| batch1v3 cards (0 leaks, both layers) | 150 |
+
+D5 (gloss byte-identical to DE) deliberately not flagged — audit-measured ~false-positive.
+Store-side repair of flagged rows: H1651 (queued, Sonnet).
+
+## 26-07-2026 - H1631: edition-diff reading surface (N14 pilot) — subtype counts on the 7 REGLUE_SPEC pilot roots
+
+Executor: Sonnet 5 (`claude-sonnet-5`). Fixture-driven static page +
+[`src/pilot/build_edition_diff_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_edition_diff_site.py)
+(`--selftest` wired into CI). Renders the PWG sense skeleton with PW/SCH/PWKVN/NWS
+supplements attached at their `edition_rel` insertion point, each badged with its
+subtype — the H1624 G4 classifier is the only typology used, no new classes invented.
+Table below is a local `--out` run against the (gitignored, uncommitted) live store's
+5-layer pilot keys from [`REGLUE_SPEC.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/REGLUE_SPEC.md) Sec.5 — counts only, no store text
+published (N9).
+
+| subtype | count (7 pilot roots, 1077 rows) |
+|---|---|
+| base | 433 |
+| restate | 475 |
+| pw_correct | 0 |
+| sch_star | 11 |
+| derived_sense | 3 |
+| a2a | 13 |
+| nws_at_sense | 111 |
+| foreign_fragment | 31 |
+
+Pilot roots: `gA`, `Cid`, `Sam`, `jIv`, `rakz`, `vraj`, `yat` (the 5-layer set). No
+`pw_correct` (gender-conflict) instance among these 7 — consistent with REGLUE_SPEC's own
+finding that PW mostly *restates* rather than corrects at this sample. N14 partial close:
+demo covers PWG/PW/SCH/PWKVN/NWS badges for the pilot set; scaling to the full store,
+per-sense visual grouping polish, and any editorial adjudication of `differs` cases are
+explicitly out of scope (non-goals).
+
+## 26-07-2026 - H1629 DE edition-graph export (OntoLex + TEI Lex-0) + three integrity findings
+
+Executor: Opus 5 (`claude-opus-5[1m]`). New generator
+[`src/export_de_edition.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_de_edition.py);
+profile doc
+[`DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md).
+
+**Golden-fixture export** (22 DE-only rows → `release/fixture/de_edition/`, `--generated-at 2026-07-26`):
+
+| entries | senses exported | quarantined | sanitized tags | government | form_notes | citation_edges | gloss_spans | edition_rel |
+|---|---|---|---|---|---|---|---|---|
+| 7 | 20 | 2 | 1 | 15 | 2 | 42 | 3 | 17 |
+
+Edition-layer coverage in the fixture: `pwg` 3 · `pw` 6 · `sch` 3 · `pwkvn` 5 · `nws` 3.
+Artifacts: `pwg_de_edition.ttl` 42 KB · `pwg_de_edition.tei.xml` 23 KB · manifest 1.4 KB.
+
+**Finding 1 — Russian tokens inside the German `de` field.** 11 of 11,603 store rows
+(0.09%). Verified against csl-orig: `huti` reads `{%Opfer%} in {#sarva˚#} **und**
+{#havirhuti#}` upstream but `… **и** …` in the store (and the store row also dropped the
+`(von 1. {#hu#})` etymology parenthesis).
+
+| symptom | example row |
+|---|---|
+| `и` for `und` | `huti`: `{%Opfer%} in {#sarva˚#} и {#havirhuti#}` |
+| `для` for `für` | `parihara`: `<ab>v. l.</ab> для {#parihAra#}` |
+| `в` for `in` | `nI` desid-3: `<ls>VĀRĀHA-P.</ls> в <ls>Verz. d. Oxf. H. 59,a,3.</ls>` |
+| `С` for `Mit` | `viS` 175: `<div n="p">— С {#anUpa#}` |
+| `корригенда` | `DA` pw: `Mit <div n="p"> — корригенда` |
+| **total rows with Cyrillic in `de`** | **11 / 11,603 (0.09%)** |
+
+**Finding 2 — Russian prose in DE-side structural fields.** `sense_tag`: 110/11,603 rows
+(0.95%), e.g. `c) с dat. лица и instr. предмета`. The `h` field likewise carries Russian
+disambiguation prose (`PW 3 (с sam, о супружеском намерении)`). The export quarantines
+`de`-contaminated rows, reduces a contaminated `sense_tag` to its ASCII skeleton, and drops
+`h` from the allowlist entirely.
+
+**Finding 3 — G1 `gloss_lang` classifier false positives.** Census over every `{%…%}` span
+in the store's German text:
+
+| lang | rule_id | spans | German-looking | FP rate |
+|---|---|---|---|---|
+| en | `english_content` | 153 | 117 | **76.5%** |
+| la | `botany_binomial` | 68 | 5 | 7.4% |
+| ambig | `homograph_ambig` | 8 | 0 | 0.0% |
+| **total non-DE** | | **229** | **122** | **53.3%** |
+
+Base: 15,901 spans scanned; 229 (1.44%) classified non-DE. Examples of misfires — all
+unmistakably German: `bis an's Ziel bringen`, `an sich nehmen, empfangen, erlangen,
+erhalten` (→ `en`); `Gelegenheit gefunden habend`, `Willens sein` (→ `la` botany binomial).
+Because `pwg_mask.classify_pct_detail` marks `la`/`en` spans `translate: False`, these
+German glosses are also masked out of the translate path upstream. "German-looking" is a
+heuristic proxy (umlaut / German function word / `-en` verb ending), so the rate is ±;
+the direction is not in doubt. **Not fixed here** — changing the classifier changes masking
+behaviour pipeline-wide and needs its own measured A/B.
+## 26-07-2026 - G5 batch1 decisions applied + reader-visible German gate over the live queue (H1655)
+
+Executor: Fable 5 (`claude-fable-5`). Reviewer MG aborted batch 1 at 5/150 votes («Переделай
+все» — German must be screened BEFORE a human sees a card). Votes applied through
+`apply_decisions --gate G5` → `run_batch apply_review`; new
+[`review_residue_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_residue_gate.py)
+swept the queue; batch1v2 rebuilt gate-clean. Full audit:
+[decisions_applied_2026-07-26_g5-batch1.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_2026-07-26_g5-batch1.md).
+
+| Metric | n |
+|---|---:|
+| batch1 votes: approve / reject / unvoted (abort) | 3 / 2 / 145 |
+| live queue rows swept | 11,163 |
+| flagged: reader-visible German | 637 (5.7%) |
+| ... hits by layer: prose (H1302 class b) / ls-tail `fg.` / German `ab` | 457 / 371 / 145 |
+| clean rows eligible for sheets | 10,526 |
+| batch1v2 cards (all verified German-free) | 150 |
+| positional-id drift: votes initially unresolvable against grown store | 2/5 (fixed: suffix fallback + CI pin) |
+
+## 26-07-2026 — H1630 top-N `citation_edges` sigla → Cologne scan/HTML link coverage
+
+Executor: Sonnet 5 (`claude-sonnet-5`), isolated worktree. Script: `src/citation_edges.py`
+(`topn` subcommand, new; `scan_href` field, new — H1624 G3 parent). Store: the live
+11,603-row `pwg_ru_translated.jsonl` (gitignored, main-worktree canonical copy).
+
+**What's new.** `extract_citation_edges()` gained an additive `scan_href` field —
+`ls_resolver.generate_href('pwg', n_attr, raw_ls)` when it actually resolves a Cologne
+scan/HTML target, else `null`. This is a *different* axis from the existing
+`resolver_status` (map/bib/orphan): `resolver_status` only asks "is this siglum a known
+work", not "does a clickable Cologne target exist for this exact locator" — e.g. `AK. 1`
+is `map` (Amarakośa is a known work) but `scan_href` is `null` (the resolver pattern for
+Amarakośa needs 3–4 coordinate parts, not one).
+
+**Top-25 sigla by raw citation frequency → `scan_href` coverage:**
+
+| siglum | citations | `scan_href` resolved | coverage | sample target |
+|---|---:|---:|---:|---|
+| MBH | 5,753 | 5,737 | 99.7% | [mbhcalc?1.1090](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1090) |
+| ṚV | 3,705 | 3,697 | 99.8% | [rv01.100.html#rv01.100.05](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.100.html#rv01.100.05) |
+| R | 3,126 | 3,123 | 99.9% | [ramayanaschl/?1,4,18](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,18) |
+| BHĀG. P | 2,167 | 2,152 | 99.3% | [bhagp_bom/app1/?10,19,13](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,19,13) |
+| ŚAT. BR | 1,781 | 1,770 | 99.4% | [shatapathabr/app1?10,1,2,1](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?10,1,2,1) |
+| M | 1,636 | 1,635 | 99.9% | [manu/index.html?2,109](https://sanskrit-lexicon-scans.github.io/manu/index.html?2,109) |
+| KATHĀS | 1,472 | 1,472 | 100.0% | [kss/index.html?17,32](https://sanskrit-lexicon-scans.github.io/kss/index.html?17,32) |
+| AV | 1,207 | 1,199 | 99.3% | [av09.005.html#av09.005.12](https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.12) |
+| P (Pāṇini) | 1,049 | 1,034 | 98.6% | [sutraani/6/4/57](https://ashtadhyayi.com/sutraani/6/4/57) |
+| Spr | 1,039 | 1,038 | 99.9% | [boesp1/app1/?1402](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?1402) |
+| HARIV | 905 | 902 | 99.7% | [hariv?3964](https://sanskrit-lexicon-scans.github.io/hariv?3964) |
+| R. GORR | 671 | 671 | 100.0% | [ramayanagorr/?2,5,27](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,5,27) |
+| RAGH | 668 | 668 | 100.0% | [raghuvamsa/app1?12,52](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?12,52) |
+| PAÑCAT | 607 | 606 | 99.8% | [pantankose/app2?71,24](https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,24) |
+| VARĀH. BṚH. S | 576 | 555 | 96.4% | [brihatsam/app1?79,14](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?79,14) |
+| RĀJA-TAR | 575 | 575 | 100.0% | [rajatar/app1?5,424](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,424) |
+| ŚĀK | 525 | 522 | 99.4% | [shakuntala/app1?62](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?62) |
+| BHAṬṬ | 460 | 431 | 93.7% | [bhattikavya/app1?2,28](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?2,28) |
+| Spr. (II) | 450 | 450 | 100.0% | [boesp2/web1/boesp.html?7515](https://sanskrit-lexicon-scans.github.io/boesp2/web1/boesp.html?7515) |
+| VOP | 428 | 404 | 94.4% | [mugdhabodha/app1?26,215](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,215) |
+| AIT. BR | 409 | 407 | 99.5% | [aitbr/app1?2,16](https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,16) |
+| TS | 394 | 390 | 99.0% | [taittiriyas/app1?6,6,11,5](https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,11,5) |
+| MĀRK. P | 367 | 367 | 100.0% | [markandeyapurana/app1?101,8](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?101,8) |
+| KĀTY. ŚR | 328 | 328 | 100.0% | [katyasr/app1?22,6,16](https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,6,16) |
+| HIT | 308 | 307 | 99.7% | [hitopadesha/app2?20,15](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?20,15) |
+
+**Residual (top-25 sigla with ZERO `scan_href` hits): none.** Every one of the 25
+highest-frequency works (33,251 of 41,115 total citations, 80.9%) already resolves to a
+Cologne scan/HTML target for the overwhelming majority of its individual locators
+(93.7%–100%); the small per-siglum shortfalls (BHAṬṬ 93.7%, VOP 94.4%, VARĀH. BṚH. S 96.4%)
+are individual malformed/unusual coordinates, not missing targets — the pattern-driven
+resolver already covers this frequency band essentially completely.
+
+**Where the real gaps are (beyond top-25): genuinely-uncovered high-frequency works.**
+`resolver_status == "orphan"` (siglum unknown to `ls_source_map`/`pwgbib` at all — a
+different, stricter failure than a `scan_href` miss) ranked by occurrences with a numeric
+locator (excludes non-coordinate labels like "ed. Bomb."/"ed. Calc." — edition/cross-ref
+notes with no locus, never linkable per the existing `build_citation_index.py` convention):
+
+| rank | siglum | citations | work |
+|---:|---|---:|---|
+| 1 | JĀTAKAM / Jātakam | 95 | Jātaka tales |
+| 2 | MAHĀVY / Mahāvy | 32 | Mahāvyutpatti |
+| 3 | VAJRACCH / Vajracch | 24 | Vajracchedikā |
+| 4 | CAMPAKA | 20 | (Buddhist Skt. text) |
+| 5 | Journ. of the Am | 19 | Journal of the American Oriental Society |
+| 6 | S | 18 | (ambiguous single-letter siglum) |
+| 7 | KĀRAṆḌ | 18 | Kāraṇḍavyūha |
+| 8 | Divyāvad | 16 | Divyāvadāna |
+| 9 | HARṢAC / Harṣac | 14 | Harṣacarita |
+| 10 | Kir | 8 | Kirātārjunīya |
+| 11 | Maitr. S | 8 | Maitrāyaṇī Saṃhitā |
+| 12 | Kauṭ | 8 | Kauṭilīya (Arthaśāstra) |
+
+These are almost entirely Buddhist-Sanskrit / less-common works with **no scan repository
+in `sanskrit-lexicon-scans`** — matches the pre-existing note in `build_citation_index.py`
+("coverage is target-limited, not resolver-limited"). Hard gaps (no Cologne target exists
+to link to at all) — route through [`/cologne-link-target`](https://github.com/gasyoun/claude-config/blob/main/commands/cologne-link-target.md)
+if/when digitization work is prioritized; not attempted here (N15 out of scope, per H1630).
+
+Reproduce: `python src/citation_edges.py topn --n 25` (JSON; the store resolves via
+`store_path.canonical_store`, so this also works unmodified from a linked worktree).
+Selftest for `scan_href` + `topn_scan_coverage`: `python src/citation_edges.py --selftest`.
 
 ## 26-07-2026 - H858 c1 live gate: HEALTH_NOGO (rate_limit) - profile sweep now 3/3 NO-GO
 
@@ -26,6 +415,37 @@ the answer rather than assume a date change cleared anything.
 
 No canary, no window, nothing promoted. Per-account evidence:
 `src/pilot/output/h963_<account>_gate0_probe_events.jsonl`.
+
+## 25-07-2026 — medium50 “all without --max-agents”: LIVE STOP (auth 403) + offline prep
+
+Executor: Grok 4.5 · intent: fresh live-gate then **all five** medium50 windows
+(`h1447-m50-w1…w5`, 48 keys) headless with **no** production `--max-agents`.
+
+### Live gate (paid) — mechanical NO-GO
+
+| profile | config_dir | health | detail |
+|---|---|---|---|
+| **c4** | `D:\ClaudeTools\profiles\claude4\.claude` | **NO-GO** | `h963_c4_gate0_probe`: warmup **auth**; events also show rate_limit/auth; measured history 168s ceiling breach |
+| **c2** | `D:\ClaudeTools\profiles\claude2\.claude` | **NO-GO** | warmup **auth** 7358 ms |
+| c1 / c4 / c5 / default | same stack | **403** | direct `claude -p` → `Failed to authenticate. API Error: 403 Request not allowed` for default, sonnet, opus, `claude-sonnet-5` |
+
+**Stop reason:** `HEALTH_NOGO` / org-wide CLI **403** — no canary, no production calls, no store write.
+Probe log rows: `gate0-c4-fresh-2026-07-25`, `gate0-c2-fresh-2026-07-25`.
+
+**Human unblock:** re-auth / fix Max org permission so `claude -p` succeeds on a roster profile, then re-run live-gate.
+
+### Offline prep completed (ready when GO returns)
+
+| artifact | n |
+|---|---:|
+| merged 5-layer inputs (`_pilot_gen_merged`) | 48 keys |
+| bare-key input aliases for `gen_opt_harness2.input_paths` | 48 |
+| execution_manifest.v2 + harness per window | **5** (`w1` 3 keys agent_exp=3; `w2` 12→20; `w3` 11→14; `w4` 11→12; `w5` 11→12) |
+| manifest `max_translate_agents` (no CLI max-agents) | 19 / 34 / 31 / 34 / 40 |
+
+Resume recipe (gitignored output tree):
+`src/pilot/output/MEDIUM50_NO_MAX_AGENTS_RESUME_2026-07-25.md` — headless lines
+**omit** `--max-agents` on multi-key windows; canary alone may use `--max-agents 1`.
 
 ## 25-07-2026 - H858 c5 live gate: HEALTH_NOGO (latency ~2x ceiling) - orthogonal to c4
 
