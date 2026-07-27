@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.90.1] — 2026-07-27
+
 ### Fixed
 - **Review sheets are now default-denied in `.gitignore`, not enumerated per
   generator.** `RussianTranslation/.gitignore` listed each sheet family by prefix
