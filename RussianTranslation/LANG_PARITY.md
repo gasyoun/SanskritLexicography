@@ -633,7 +633,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H321 (code review 2026-07-04 item #5). ls_resolver resolves an <ls> citation to a scan/hymns URL independent of the translation language (it keys on the citation abbreviation + numbers, never on RU/EN prose), so both language editions' link-targets share it. The anchored _is_rv_prefix and the _warn_swallowed exception surfacing are pure link-resolution correctness, no lang branch. Pinned by test_ls_resolver_rv_av_anchored.",
     "tracking": "",
     "verified_sha256": {
-      "src/ls_resolver.py": "78f1a17e80d7b0ed9fb4dd79fdd5c076f8ef2f1fee245ab0cda9f5e4da8fcfec",
+      "src/ls_resolver.py": "d7c8da35c6a420b9f9431dd1cb672ed12431e2b27830b9b560a60cff42509eec",
       "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
     }
   },
@@ -1333,7 +1333,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1307 (19-07-2026). The enrichment is render-time and keys only on the citation abbreviation + numbers (P. adhyaya/pada/sutra, Spr. (II) saying number) — never on RU/EN translation prose — so both language editions' <ls> link-targets and tooltips share it with no --lang branch. The Spr. (II) saying text is identical across editions. Pinned by src/pilot/ls_enrichment_selftest.py.",
     "tracking": "",
     "verified_sha256": {
-      "src/ls_resolver.py": "78f1a17e80d7b0ed9fb4dd79fdd5c076f8ef2f1fee245ab0cda9f5e4da8fcfec",
+      "src/ls_resolver.py": "d7c8da35c6a420b9f9431dd1cb672ed12431e2b27830b9b560a60cff42509eec",
       "src/spr_fulltext.py": "446fe8ce8146cfdda3a0cd0b2e6f62c3b76e08cfb872823116549ed3992fe0d5",
       "src/pilot/build_article_site.py": "09ce9d51e88bcfdebfb86ac74b86d57317faa6f182922041a212b96871b24987"
     }
