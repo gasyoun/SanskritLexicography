@@ -4350,3 +4350,60 @@ across a corpus vintage is not portable. When re-printing an inherited figure, r
 denominator and the vintage or drop the figure.
 
 _27-07-2026 · [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md) · [`reports/paradigm_nominal_build.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/paradigm_nominal_build.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §486. Before OCR-ing a library scan, check whether the library already published its OCR — and measure against it rather than guessing
+
+🔴 **The Bayerische Staatsbibliothek publishes per-page hOCR for every page it scans, and
+it is 2.5× better than what tesseract 5 `san` produces locally.** H1715 was written to OCR
+two 19th-century Sanskrit kośa editions from the `sanskrit-lexicon-scans` page images. The
+scans genuinely carry no text layer (0 chars, 0 fonts, one embedded JPEG per page — checked
+by [[§480]]'s script-test, not by length). But the OCR did not need doing: every canvas in
+the BSB IIIF manifest carries a `seeAlso` pointing at
+`https://api.digitale-sammlungen.de/ocr/<bsb_id>/<n>`, full hOCR with word-level bounding
+boxes, free.
+
+| engine, same 12 pages, same metric | tokens | valid Sanskrit | rate |
+|---|--:|--:|--:|
+| tesseract 5 `san`, local | 658 | 117 | **17.8 %** |
+| BSB's published per-page hOCR | 722 | 316 | **43.8 %** |
+| _control — reference text through the same tokenizer_ | 1,071 | 1,071 | _100.0 %_ |
+
+The metric is a **valid-token rate**, not a CER: the share of extracted Devanagari tokens
+that are real Sanskrit words, scored against the same work's already-digitized e-text in
+`csl-orig` (`abch` + `acph` + `acsj`) plus MW headwords. That instrument cost nothing and
+needed no hand transcription — which matters, because 1839/1847 Devanagari with archaic
+orthography is not material one can transcribe reliably enough to serve as ground truth,
+and a CER asserted off an unreliable transcription is worse than no CER.
+
+An 18-configuration sweep (dpi × psm × {raw, Otsu, aggressive threshold}) topped out at
+30.5 % — and that configuration scored higher only by emitting half as many tokens. The low
+rate is the material, not the settings: show-through from the reverse leaf is visible on
+every page of the 1847 printing, and thresholding it away removes ink with it.
+
+`So:` **three rules, in order.** (1) A scanned book has a provenance chain — repo →
+digitising library → IIIF manifest — and the manifest is a *machine-readable* claim about
+what else the library ships. Read it before generating what it already gives you; two HTTP
+calls settled a question a week of OCR would have answered worse. (2) When two engines are
+in play, an *existing e-text of the same work* is a free comparison instrument even when it
+is a different edition — the absolute level is conservative, but scoring both engines
+against the identical reference makes the comparison sound. (3) Report the metric you
+actually computed. "Valid-token rate, n=12 pages, edition-variant caveat stated" is
+publishable; a CER invented from a transcription one cannot vouch for is not.
+Related: [[§480]] (test the script of `get_text()`, not its length), §473 (the OCR recipe
+this supersedes for library-scanned material), §59 (the prior-art check that catches this
+class).
+
+Verdict, report and the reproducible probe:
+[csl-observatory `reports/pwg_kosa_etext_pilot.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/pwg_kosa_etext_pilot.md)
+· [`scripts/pwg_kosa_ocr_probe.py`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/scripts/pwg_kosa_ocr_probe.py).
+Re-scoped execution: [H1720](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1720-Sonnet_csl-observatory_pwg-kosa-bsb-hocr-ingest-align_27.07.26.md).
+
+⚠️ **Rights travel with the scans, and they are asserted rather than granted.** Both BSB
+editions carry [`NoC-NC/1.0`](https://rightsstatements.org/vocab/NoC-NC/1.0/) — *No
+Copyright, Non-Commercial use only* — a condition the library places on **its images**, not
+a licence permitting reuse; the underlying 1839/1847 works are public domain. Neither scan
+repository declares a licence at all. Harvesting and measuring are internal and unaffected;
+publishing derived text is a human decision, open in
+[GTD](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
+
+_27-07-2026 · [H1715](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1715-Opus_csl-observatory_pwg-kosa-etext-pilot-amara-abhidhana_27.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
