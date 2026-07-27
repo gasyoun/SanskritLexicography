@@ -1,0 +1,1142 @@
+{
+  "handoff": "H1746",
+  "gap": "SanskritLexicography/GAPS.md §6",
+  "measured_at": "2026-07-27T11:33:29.133459+00:00",
+  "model": "Grok 4.5 (grok-4.5)",
+  "files_scanned": 152,
+  "files_with_inline_iast": 61,
+  "files_cyrillic_heavy_no_iast": 47,
+  "verdict": "FINDINGS §60 stands: reverse-transcription rules remain unsafe. Recoverable path is a validated proper-noun LOOKUP table seeded from IAST-bearing indices (Гринцер / Rāmāyaṇa), not character rules. This probe inventories seed candidates; full table build needs human spot-check against an onomasticon for the 3 fully-Cyrillic glossaries.",
+  "with_iast_top": [
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\add\\To_add\\dsg_index.html",
+      "bytes": 4902257,
+      "lines_scanned": 4668,
+      "cyrillic_lines": 4378,
+      "iast_paren_hits": 977,
+      "samples": [
+        "<tr><td><a id=\"1\">1</a>/<span class=\"page-link\"data-text=\"1\">1</span></td><td><a class=\"sa\">अ</a><br> <a class=\"iast\">/a/</a><br> <a class=\"HK\"> </a></td><td><p",
+        "<tr><td><a id=\"2\">2</a>/<span class=\"page-link\"data-text=\"1\">1</span></td><td><a class=\"sa\">अं</a><br> <a class=\"iast\">/aṃ/</a><br> <a class=\"HK\">/aM/ </a></td>",
+        "<tr><td><a id=\"6\">6</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अ ೱ क्, जिह्वामूलीय</a><br> <a class=\"iast\">/a ೱ k/, /jihvāmūlīya/</",
+        "<tr><td><a id=\"7\">7</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अ ೱ प्, उपध्मानीय</a><br> <a class=\"iast\">/a ೱ p/, /upadhmānīya/</a>",
+        "<tr><td><a id=\"9\">9</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अक्</a><br> <a class=\"iast\">/ak/</a><br> <a class=\"HK\"> </a></td><td",
+        "<tr><td><a id=\"11\">11</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अकङ्</a><br> <a class=\"iast\">/akaṅ/</a><br> <a class=\"HK\">/akaG/ <",
+        "<tr><td><a id=\"13\">13</a>/<span class=\"page-link\"data-text=\"2-3\">2-3</span></td><td><a class=\"sa\">अकथित</a><br> <a class=\"iast\">/akathita/</a><br> <a class=\"HK\"",
+        "<tr><td><a id=\"16\">16</a>/<span class=\"page-link\"data-text=\"3\">3</span></td><td><a class=\"sa\">अकर्मक</a><br> <a class=\"iast\">/akarmaka/</a><br> <a class=\"HK\"> <"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\Index\\lib\\x86_64-win64\\add\\To_add\\dsg_index.html",
+      "bytes": 4906924,
+      "lines_scanned": 4668,
+      "cyrillic_lines": 4378,
+      "iast_paren_hits": 977,
+      "samples": [
+        "<tr><td><a id=\"1\">1</a>/<span class=\"page-link\"data-text=\"1\">1</span></td><td><a class=\"sa\">अ</a><br> <a class=\"iast\">/a/</a><br> <a class=\"HK\"> </a></td><td><p",
+        "<tr><td><a id=\"2\">2</a>/<span class=\"page-link\"data-text=\"1\">1</span></td><td><a class=\"sa\">अं</a><br> <a class=\"iast\">/aṃ/</a><br> <a class=\"HK\">/aM/ </a></td>",
+        "<tr><td><a id=\"6\">6</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अ ೱ क्, जिह्वामूलीय</a><br> <a class=\"iast\">/a ೱ k/, /jihvāmūlīya/</",
+        "<tr><td><a id=\"7\">7</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अ ೱ प्, उपध्मानीय</a><br> <a class=\"iast\">/a ೱ p/, /upadhmānīya/</a>",
+        "<tr><td><a id=\"9\">9</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अक्</a><br> <a class=\"iast\">/ak/</a><br> <a class=\"HK\"> </a></td><td",
+        "<tr><td><a id=\"11\">11</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अकङ्</a><br> <a class=\"iast\">/akaṅ/</a><br> <a class=\"HK\">/akaG/ <",
+        "<tr><td><a id=\"13\">13</a>/<span class=\"page-link\"data-text=\"2-3\">2-3</span></td><td><a class=\"sa\">अकथित</a><br> <a class=\"iast\">/akathita/</a><br> <a class=\"HK\"",
+        "<tr><td><a id=\"16\">16</a>/<span class=\"page-link\"data-text=\"3\">3</span></td><td><a class=\"sa\">अकर्मक</a><br> <a class=\"iast\">/akarmaka/</a><br> <a class=\"HK\"> <"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\intelligent-nightingale-117af2\\Index\\lib\\x86_64-win64\\add\\To_add\\dsg_index.html",
+      "bytes": 4906924,
+      "lines_scanned": 4668,
+      "cyrillic_lines": 4378,
+      "iast_paren_hits": 977,
+      "samples": [
+        "<tr><td><a id=\"1\">1</a>/<span class=\"page-link\"data-text=\"1\">1</span></td><td><a class=\"sa\">अ</a><br> <a class=\"iast\">/a/</a><br> <a class=\"HK\"> </a></td><td><p",
+        "<tr><td><a id=\"2\">2</a>/<span class=\"page-link\"data-text=\"1\">1</span></td><td><a class=\"sa\">अं</a><br> <a class=\"iast\">/aṃ/</a><br> <a class=\"HK\">/aM/ </a></td>",
+        "<tr><td><a id=\"6\">6</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अ ೱ क्, जिह्वामूलीय</a><br> <a class=\"iast\">/a ೱ k/, /jihvāmūlīya/</",
+        "<tr><td><a id=\"7\">7</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अ ೱ प्, उपध्मानीय</a><br> <a class=\"iast\">/a ೱ p/, /upadhmānīya/</a>",
+        "<tr><td><a id=\"9\">9</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अक्</a><br> <a class=\"iast\">/ak/</a><br> <a class=\"HK\"> </a></td><td",
+        "<tr><td><a id=\"11\">11</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अकङ्</a><br> <a class=\"iast\">/akaṅ/</a><br> <a class=\"HK\">/akaG/ <",
+        "<tr><td><a id=\"13\">13</a>/<span class=\"page-link\"data-text=\"2-3\">2-3</span></td><td><a class=\"sa\">अकथित</a><br> <a class=\"iast\">/akathita/</a><br> <a class=\"HK\"",
+        "<tr><td><a id=\"16\">16</a>/<span class=\"page-link\"data-text=\"3\">3</span></td><td><a class=\"sa\">अकर्मक</a><br> <a class=\"iast\">/akarmaka/</a><br> <a class=\"HK\"> <"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\Data\\Словарь Гринцера из Рамаяны 1-2.txt",
+      "bytes": 88939,
+      "lines_scanned": 463,
+      "cyrillic_lines": 463,
+      "iast_paren_hits": 186,
+      "samples": [
+        "Агастья\t(Agastya) — божественный мудрец, сын Митры и Варуны, герой многих индийских мифов, покровитель юга Индии; ему приписываются более двадцати гимнов «Ригве",
+        "Агни\t(Agni) — бог огня во всех его проявлениях (космический огонь, небесный огонь, жертвенный огонь, домашний огонь и т. д.). Один из древнейших ведийских богов",
+        "Адити\t(Aditi) — одна из дочерей мудреца Дакши, жена Кашьяпы, мать двенадцати богов-адитьев, в том числе Индры.",
+        "Акша\t(Akṣa) — старший сын Раваны, убитый Хануманом.",
+        "Аламбуша\t(Alambuṣā) — жена царя Икшваку.",
+        "Аламбуша\t(Alambuṣā) — одна из апсар.",
+        "Аларка\t(Alarka) — благочестивый царь Каши (Варанаси) и Каруши.",
+        "Амбариша\t(Ambarīṣa) — царь Солнечной династии, потомок Икшваку."
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\Index\\lib\\x86_64-win64\\Data\\Словарь Гринцера из Рамаяны 1-2.txt",
+      "bytes": 88939,
+      "lines_scanned": 463,
+      "cyrillic_lines": 463,
+      "iast_paren_hits": 186,
+      "samples": [
+        "Агастья\t(Agastya) — божественный мудрец, сын Митры и Варуны, герой многих индийских мифов, покровитель юга Индии; ему приписываются более двадцати гимнов «Ригве",
+        "Агни\t(Agni) — бог огня во всех его проявлениях (космический огонь, небесный огонь, жертвенный огонь, домашний огонь и т. д.). Один из древнейших ведийских богов",
+        "Адити\t(Aditi) — одна из дочерей мудреца Дакши, жена Кашьяпы, мать двенадцати богов-адитьев, в том числе Индры.",
+        "Акша\t(Akṣa) — старший сын Раваны, убитый Хануманом.",
+        "Аламбуша\t(Alambuṣā) — жена царя Икшваку.",
+        "Аламбуша\t(Alambuṣā) — одна из апсар.",
+        "Аларка\t(Alarka) — благочестивый царь Каши (Варанаси) и Каруши.",
+        "Амбариша\t(Ambarīṣa) — царь Солнечной династии, потомок Икшваку."
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\intelligent-nightingale-117af2\\Index\\lib\\x86_64-win64\\Data\\Словарь Гринцера из Рамаяны 1-2.txt",
+      "bytes": 88939,
+      "lines_scanned": 463,
+      "cyrillic_lines": 463,
+      "iast_paren_hits": 186,
+      "samples": [
+        "Агастья\t(Agastya) — божественный мудрец, сын Митры и Варуны, герой многих индийских мифов, покровитель юга Индии; ему приписываются более двадцати гимнов «Ригве",
+        "Агни\t(Agni) — бог огня во всех его проявлениях (космический огонь, небесный огонь, жертвенный огонь, домашний огонь и т. д.). Один из древнейших ведийских богов",
+        "Адити\t(Aditi) — одна из дочерей мудреца Дакши, жена Кашьяпы, мать двенадцати богов-адитьев, в том числе Индры.",
+        "Акша\t(Akṣa) — старший сын Раваны, убитый Хануманом.",
+        "Аламбуша\t(Alambuṣā) — жена царя Икшваку.",
+        "Аламбуша\t(Alambuṣā) — одна из апсар.",
+        "Аларка\t(Alarka) — благочестивый царь Каши (Варанаси) и Каруши.",
+        "Амбариша\t(Ambarīṣa) — царь Солнечной династии, потомок Икшваку."
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\Data\\bhagavadgita-erman.html",
+      "bytes": 830765,
+      "lines_scanned": 720,
+      "cyrillic_lines": 720,
+      "iast_paren_hits": 100,
+      "samples": [
+        "<div class=\"citation_block\" id=\"1.35\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 1. 35\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 50\">35</div><di",
+        "<div class=\"chapter_title\" id=\"2\">Глава 2 [24]<a href='#comment_2_69' class='comment_sub'><sup><small>69</small></sup></a></div><div class=\"comments\"><div class",
+        "<div class=\"citation_block\" id=\"2.7\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 7\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 51\">7</div><div c",
+        "<div class=\"citation_block\" id=\"2.11\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 11\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 51\">11</div><di",
+        "<div class=\"citation_block\" id=\"2.13\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 13\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 51\">13</div><di",
+        "<div class=\"citation_block\" id=\"2.15\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 15\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 52\">15</div><di",
+        "<div class=\"citation_block\" id=\"2.16\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 16\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 52\">16</div><di",
+        "<div class=\"citation_block\" id=\"2.17\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 17\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 52\">17</div><di"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\Index\\lib\\x86_64-win64\\Data\\bhagavadgita-erman.html",
+      "bytes": 830765,
+      "lines_scanned": 720,
+      "cyrillic_lines": 720,
+      "iast_paren_hits": 100,
+      "samples": [
+        "<div class=\"citation_block\" id=\"1.35\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 1. 35\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 50\">35</div><di",
+        "<div class=\"chapter_title\" id=\"2\">Глава 2 [24]<a href='#comment_2_69' class='comment_sub'><sup><small>69</small></sup></a></div><div class=\"comments\"><div class",
+        "<div class=\"citation_block\" id=\"2.7\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 7\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 51\">7</div><div c",
+        "<div class=\"citation_block\" id=\"2.11\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 11\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 51\">11</div><di",
+        "<div class=\"citation_block\" id=\"2.13\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 13\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 51\">13</div><di",
+        "<div class=\"citation_block\" id=\"2.15\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 15\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 52\">15</div><di",
+        "<div class=\"citation_block\" id=\"2.16\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 16\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 52\">16</div><di",
+        "<div class=\"citation_block\" id=\"2.17\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 17\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 52\">17</div><di"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\intelligent-nightingale-117af2\\Index\\lib\\x86_64-win64\\Data\\bhagavadgita-erman.html",
+      "bytes": 830765,
+      "lines_scanned": 720,
+      "cyrillic_lines": 720,
+      "iast_paren_hits": 100,
+      "samples": [
+        "<div class=\"citation_block\" id=\"1.35\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 1. 35\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 50\">35</div><di",
+        "<div class=\"chapter_title\" id=\"2\">Глава 2 [24]<a href='#comment_2_69' class='comment_sub'><sup><small>69</small></sup></a></div><div class=\"comments\"><div class",
+        "<div class=\"citation_block\" id=\"2.7\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 7\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 51\">7</div><div c",
+        "<div class=\"citation_block\" id=\"2.11\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 11\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 51\">11</div><di",
+        "<div class=\"citation_block\" id=\"2.13\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 13\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 51\">13</div><di",
+        "<div class=\"citation_block\" id=\"2.15\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 15\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 52\">15</div><di",
+        "<div class=\"citation_block\" id=\"2.16\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 16\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 52\">16</div><di",
+        "<div class=\"citation_block\" id=\"2.17\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 17\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 52\">17</div><di"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\web\\corpus_builder\\jsonl\\bhagavadgita-erman.jsonl",
+      "bytes": 1567318,
+      "lines_scanned": 1701,
+      "cyrillic_lines": 1701,
+      "iast_paren_hits": 99,
+      "samples": [
+        "{\"id\": \"bhagavadgita-erman:1.35.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"1.35.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:1.35\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.70.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.70.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.70\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.11.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.11.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.11\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.13.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.13.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.13\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.15.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.15.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.15\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.16.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.16.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.16\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.16.comm2\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.16.comm2\", \"seg\": \"comm2\", \"group\": \"bhagavadgita-erman:2.16\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.17.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.17.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.17\", \"lang\": \"ru\","
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\web\\corpus_builder\\jsonl\\bhagavadgita-erman.jsonl",
+      "bytes": 1567318,
+      "lines_scanned": 1701,
+      "cyrillic_lines": 1701,
+      "iast_paren_hits": 99,
+      "samples": [
+        "{\"id\": \"bhagavadgita-erman:1.35.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"1.35.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:1.35\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.70.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.70.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.70\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.11.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.11.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.11\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.13.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.13.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.13\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.15.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.15.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.15\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.16.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.16.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.16\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.16.comm2\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.16.comm2\", \"seg\": \"comm2\", \"group\": \"bhagavadgita-erman:2.16\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.17.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.17.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.17\", \"lang\": \"ru\","
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\intelligent-nightingale-117af2\\web\\corpus_builder\\jsonl\\bhagavadgita-erman.jsonl",
+      "bytes": 1567318,
+      "lines_scanned": 1701,
+      "cyrillic_lines": 1701,
+      "iast_paren_hits": 99,
+      "samples": [
+        "{\"id\": \"bhagavadgita-erman:1.35.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"1.35.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:1.35\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.70.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.70.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.70\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.11.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.11.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.11\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.13.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.13.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.13\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.15.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.15.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.15\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.16.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.16.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.16\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.16.comm2\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.16.comm2\", \"seg\": \"comm2\", \"group\": \"bhagavadgita-erman:2.16\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.17.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.17.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.17\", \"lang\": \"ru\","
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\Data\\Рамаяна 3. Словарь.txt",
+      "bytes": 43195,
+      "lines_scanned": 209,
+      "cyrillic_lines": 209,
+      "iast_paren_hits": 81,
+      "samples": [
+        "Агастья (Agastya) — божественный мудрец, сын Митры и Варуны, покровитель юга Индии, герой многих индийских легенд и мифов. Агастье приписываются более двадцати ",
+        "Агни (Agni) — бог огня во всех его проявлениях (космический огонь, небесный огонь, жертвенный огонь, домашний огонь и т. д.). Один из древнейших ведийских богов",
+        "Адити (Aditi) — одна из дочерей мудреца Дакши, жена Кашьяпы, мать двенадцати богов адитьев, в том числе Индры и Варуны.",
+        "Айомукхи (Ayomukhī) — «[имеющая] железное лицо», «железноликая») — ракшаси, обезображенная Лакшманой за нападение на него.",
+        "Ангирас (Aṅgiras) — один из великих риши и праотцов всех живых существ, которому приписываются многие гимны «Ригведы»; родоначальник класса полубогов — небесных",
+        "Ариштанеми (Ariṣṭanemi) — согласно «Рамаяне», один их семнадцати прародителей живых существ (праджапати).",
+        "Атри (Atri) — один из прародителей живых существ (праджапати), великий риши, обитель которого посетил Рама во второй книге «Рамаяны».",
+        "Бала (Bala), или Вала (Vala), — асура, брат Вритры. По ведийскому мифу, спрятал в одноименной пещере (vala) принадлежащих небесным певцам ангирасам коров. Ангир"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\Index\\lib\\x86_64-win64\\Data\\Рамаяна 3. Словарь.txt",
+      "bytes": 43195,
+      "lines_scanned": 209,
+      "cyrillic_lines": 209,
+      "iast_paren_hits": 81,
+      "samples": [
+        "Агастья (Agastya) — божественный мудрец, сын Митры и Варуны, покровитель юга Индии, герой многих индийских легенд и мифов. Агастье приписываются более двадцати ",
+        "Агни (Agni) — бог огня во всех его проявлениях (космический огонь, небесный огонь, жертвенный огонь, домашний огонь и т. д.). Один из древнейших ведийских богов",
+        "Адити (Aditi) — одна из дочерей мудреца Дакши, жена Кашьяпы, мать двенадцати богов адитьев, в том числе Индры и Варуны.",
+        "Айомукхи (Ayomukhī) — «[имеющая] железное лицо», «железноликая») — ракшаси, обезображенная Лакшманой за нападение на него.",
+        "Ангирас (Aṅgiras) — один из великих риши и праотцов всех живых существ, которому приписываются многие гимны «Ригведы»; родоначальник класса полубогов — небесных",
+        "Ариштанеми (Ariṣṭanemi) — согласно «Рамаяне», один их семнадцати прародителей живых существ (праджапати).",
+        "Атри (Atri) — один из прародителей живых существ (праджапати), великий риши, обитель которого посетил Рама во второй книге «Рамаяны».",
+        "Бала (Bala), или Вала (Vala), — асура, брат Вритры. По ведийскому мифу, спрятал в одноименной пещере (vala) принадлежащих небесным певцам ангирасам коров. Ангир"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\intelligent-nightingale-117af2\\Index\\lib\\x86_64-win64\\Data\\Рамаяна 3. Словарь.txt",
+      "bytes": 43195,
+      "lines_scanned": 209,
+      "cyrillic_lines": 209,
+      "iast_paren_hits": 81,
+      "samples": [
+        "Агастья (Agastya) — божественный мудрец, сын Митры и Варуны, покровитель юга Индии, герой многих индийских легенд и мифов. Агастье приписываются более двадцати ",
+        "Агни (Agni) — бог огня во всех его проявлениях (космический огонь, небесный огонь, жертвенный огонь, домашний огонь и т. д.). Один из древнейших ведийских богов",
+        "Адити (Aditi) — одна из дочерей мудреца Дакши, жена Кашьяпы, мать двенадцати богов адитьев, в том числе Индры и Варуны.",
+        "Айомукхи (Ayomukhī) — «[имеющая] железное лицо», «железноликая») — ракшаси, обезображенная Лакшманой за нападение на него.",
+        "Ангирас (Aṅgiras) — один из великих риши и праотцов всех живых существ, которому приписываются многие гимны «Ригведы»; родоначальник класса полубогов — небесных",
+        "Ариштанеми (Ariṣṭanemi) — согласно «Рамаяне», один их семнадцати прародителей живых существ (праджапати).",
+        "Атри (Atri) — один из прародителей живых существ (праджапати), великий риши, обитель которого посетил Рама во второй книге «Рамаяны».",
+        "Бала (Bala), или Вала (Vala), — асура, брат Вритры. По ведийскому мифу, спрятал в одноименной пещере (vala) принадлежащих небесным певцам ангирасам коров. Ангир"
+      ]
+    }
+  ],
+  "pure_cyr_top": [
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\archive\\sanskrit_names.txt",
+      "bytes": 399952,
+      "lines_scanned": 5000,
+      "cyrillic_lines": 5000,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography-h1746-22440\\RussianTranslation\\release\\reverse_index.jsonl",
+      "bytes": 20024555,
+      "lines_scanned": 5000,
+      "cyrillic_lines": 5000,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\Рамаяна_3.txt",
+      "bytes": 524667,
+      "lines_scanned": 5000,
+      "cyrillic_lines": 4955,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\add\\To_add2\\ramayana-potapovoy.html",
+      "bytes": 2027841,
+      "lines_scanned": 5000,
+      "cyrillic_lines": 2467,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\Index\\lib\\x86_64-win64\\add\\To_add2\\ramayana-potapovoy.html",
+      "bytes": 2027841,
+      "lines_scanned": 5000,
+      "cyrillic_lines": 2467,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\intelligent-nightingale-117af2\\Index\\lib\\x86_64-win64\\add\\To_add2\\ramayana-potapovoy.html",
+      "bytes": 2027841,
+      "lines_scanned": 5000,
+      "cyrillic_lines": 2467,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\deeppavlov_Рамаяна_3.txt",
+      "bytes": 4276769,
+      "lines_scanned": 2466,
+      "cyrillic_lines": 2466,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\archive\\03_all_index.txt",
+      "bytes": 32127,
+      "lines_scanned": 1876,
+      "cyrillic_lines": 1876,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\archive\\index_3.txt",
+      "bytes": 46924,
+      "lines_scanned": 1786,
+      "cyrillic_lines": 1786,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\3_INDEX_oneword.txt",
+      "bytes": 21030,
+      "lines_scanned": 1206,
+      "cyrillic_lines": 1206,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\intelligent-nightingale-117af2\\nkrya-parallel\\diplom-rubanova\\3_INDEX_oneword.txt",
+      "bytes": 21030,
+      "lines_scanned": 1206,
+      "cyrillic_lines": 1206,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\INDEX3_extra.txt",
+      "bytes": 11603,
+      "lines_scanned": 785,
+      "cyrillic_lines": 785,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\intelligent-nightingale-117af2\\nkrya-parallel\\diplom-rubanova\\INDEX3_extra.txt",
+      "bytes": 11603,
+      "lines_scanned": 785,
+      "cyrillic_lines": 785,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\web\\corpus_builder\\jsonl\\erman-temkin.jsonl",
+      "bytes": 235090,
+      "lines_scanned": 597,
+      "cyrillic_lines": 597,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\web\\corpus_builder\\jsonl\\erman-temkin.jsonl",
+      "bytes": 235090,
+      "lines_scanned": 597,
+      "cyrillic_lines": 597,
+      "iast_paren_hits": 0,
+      "samples": []
+    }
+  ],
+  "all_hits": [
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\DOCUMENTATION_INDEX.md",
+      "bytes": 4089,
+      "lines_scanned": 77,
+      "cyrillic_lines": 0,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\web\\templates\\compare_index.html",
+      "bytes": 3885,
+      "lines_scanned": 129,
+      "cyrillic_lines": 8,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\web\\templates\\index.html",
+      "bytes": 13262,
+      "lines_scanned": 304,
+      "cyrillic_lines": 28,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\web\\corpus_builder\\chronology\\index.html",
+      "bytes": 288144,
+      "lines_scanned": 166,
+      "cyrillic_lines": 2,
+      "iast_paren_hits": 1,
+      "samples": [
+        "<script id=\"data\" type=\"application/json\">{\"periods\": [{\"period\": \"Vedic Saṃhitā\", \"bucket_date\": -1030}, {\"period\": \"Brāhmaṇa\", \"bucket_date\": -792}, {\"period\""
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\web\\corpus_builder\\jsonl\\bhagavadgita-erman.jsonl",
+      "bytes": 1567318,
+      "lines_scanned": 1701,
+      "cyrillic_lines": 1701,
+      "iast_paren_hits": 99,
+      "samples": [
+        "{\"id\": \"bhagavadgita-erman:1.35.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"1.35.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:1.35\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.70.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.70.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.70\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.11.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.11.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.11\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.13.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.13.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.13\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.15.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.15.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.15\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.16.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.16.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.16\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.16.comm2\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.16.comm2\", \"seg\": \"comm2\", \"group\": \"bhagavadgita-erman:2.16\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.17.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.17.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.17\", \"lang\": \"ru\","
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\web\\corpus_builder\\jsonl\\erman-temkin.jsonl",
+      "bytes": 235090,
+      "lines_scanned": 597,
+      "cyrillic_lines": 597,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\web\\corpus_builder\\jsonl\\slovar-grintsera-iz-bada-kadambari.jsonl",
+      "bytes": 282894,
+      "lines_scanned": 464,
+      "cyrillic_lines": 464,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\web\\corpus_builder\\jsonl\\slovar-potapovoy.jsonl",
+      "bytes": 236160,
+      "lines_scanned": 339,
+      "cyrillic_lines": 339,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\web\\corpus_builder\\wisdomlib\\books_index.jsonl",
+      "bytes": 272543,
+      "lines_scanned": 848,
+      "cyrillic_lines": 0,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\web\\corpus_builder\\wisdomlib\\entries_index.jsonl",
+      "bytes": 272535,
+      "lines_scanned": 848,
+      "cyrillic_lines": 0,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\.docusaurus\\routesChunkNames.json",
+      "bytes": 742,
+      "lines_scanned": 27,
+      "cyrillic_lines": 1,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\3_INDEX.txt",
+      "bytes": 57097,
+      "lines_scanned": 1831,
+      "cyrillic_lines": 1831,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\3_INDEX_oneword.txt",
+      "bytes": 21030,
+      "lines_scanned": 1206,
+      "cyrillic_lines": 1206,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\3_INDEX_options.txt",
+      "bytes": 4930,
+      "lines_scanned": 38,
+      "cyrillic_lines": 38,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\3_INDEX_phrases.txt",
+      "bytes": 58448,
+      "lines_scanned": 721,
+      "cyrillic_lines": 721,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва: билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\automated_index_01.txt",
+      "bytes": 20515,
+      "lines_scanned": 779,
+      "cyrillic_lines": 779,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\automated_index_01_part.txt",
+      "bytes": 781,
+      "lines_scanned": 32,
+      "cyrillic_lines": 32,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\automated_index_02.txt",
+      "bytes": 16987,
+      "lines_scanned": 591,
+      "cyrillic_lines": 591,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\automated_index_forms_01.txt",
+      "bytes": 59702,
+      "lines_scanned": 779,
+      "cyrillic_lines": 779,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине : ['билвы', '"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\automated_index_forms_01_part.txt",
+      "bytes": 1983,
+      "lines_scanned": 32,
+      "cyrillic_lines": 32,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\automated_index_forms_02.txt",
+      "bytes": 44304,
+      "lines_scanned": 591,
+      "cyrillic_lines": 591,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине : ['билва', '"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\automated_index_forms_Рам_01_02.txt",
+      "bytes": 83561,
+      "lines_scanned": 1103,
+      "cyrillic_lines": 1103,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине : ['билва', '"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\automated_index_forms_Рам_03.txt",
+      "bytes": 44279,
+      "lines_scanned": 578,
+      "cyrillic_lines": 578,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине : ['билву', '"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\automated_index_forms_Рамаяна_3.txt",
+      "bytes": 28828,
+      "lines_scanned": 376,
+      "cyrillic_lines": 376,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине : ['билва', '"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\automated_index_Рам_01_02.txt",
+      "bytes": 28276,
+      "lines_scanned": 1103,
+      "cyrillic_lines": 1103,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\automated_index_Рам_03.txt",
+      "bytes": 16193,
+      "lines_scanned": 578,
+      "cyrillic_lines": 578,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\automated_index_Рамаяна_3.txt",
+      "bytes": 11493,
+      "lines_scanned": 376,
+      "cyrillic_lines": 376,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\deeppavlov_Рамаяна_3.txt",
+      "bytes": 4276769,
+      "lines_scanned": 2466,
+      "cyrillic_lines": 2466,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\INDEX3_extra.txt",
+      "bytes": 11603,
+      "lines_scanned": 785,
+      "cyrillic_lines": 785,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\INDEX3_intersection.txt",
+      "bytes": 55923,
+      "lines_scanned": 1794,
+      "cyrillic_lines": 1794,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – aegle marmelos (correa), вид дикой яблони, листья которой используются в церемониях почитания шивы, недозрелые плоды – в народной медицине"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\INDEX3_lack.txt",
+      "bytes": 1061,
+      "lines_scanned": 33,
+      "cyrillic_lines": 33,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\Ram3_automated_index_forms.txt",
+      "bytes": 28828,
+      "lines_scanned": 376,
+      "cyrillic_lines": 376,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине : ['билва', '"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\Ramayana_names.txt",
+      "bytes": 13836,
+      "lines_scanned": 525,
+      "cyrillic_lines": 525,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – aegle marmelos (correa), вид дикой яблони, листья которой используются в церемониях почитания шивы, недозрелые плоды – в народной медицине"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\Ramayana_names_clean.txt",
+      "bytes": 12236,
+      "lines_scanned": 414,
+      "cyrillic_lines": 414,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\Ramayana_names_clean_united.txt",
+      "bytes": 11501,
+      "lines_scanned": 380,
+      "cyrillic_lines": 380,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\rus_index.txt",
+      "bytes": 8962,
+      "lines_scanned": 293,
+      "cyrillic_lines": 293,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\rus_index_declined.txt",
+      "bytes": 69041,
+      "lines_scanned": 293,
+      "cyrillic_lines": 293,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\rus_index_declined_manual_gold.json",
+      "bytes": 25776,
+      "lines_scanned": 109,
+      "cyrillic_lines": 107,
+      "iast_paren_hits": 1,
+      "samples": [
+        "  \"_comment\": \"Manual gold for ru_rubric_decline.py's accuracy gate (H1207). The 2024-11 note's own gold (index_lone_declined_manual.json) is not in this repo n"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\Рамаяна_3.txt",
+      "bytes": 524667,
+      "lines_scanned": 5000,
+      "cyrillic_lines": 4955,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\node_modules\\unicode-canonical-property-names-ecmascript\\LICENSE-MIT.txt",
+      "bytes": 1077,
+      "lines_scanned": 20,
+      "cyrillic_lines": 0,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\node_modules\\unicode-canonical-property-names-ecmascript\\package.json",
+      "bytes": 903,
+      "lines_scanned": 34,
+      "cyrillic_lines": 0,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\node_modules\\unicode-canonical-property-names-ecmascript\\README.md",
+      "bytes": 1686,
+      "lines_scanned": 58,
+      "cyrillic_lines": 0,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\node_modules\\web-namespaces\\package.json",
+      "bytes": 2097,
+      "lines_scanned": 81,
+      "cyrillic_lines": 0,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\node_modules\\web-namespaces\\readme.md",
+      "bytes": 3767,
+      "lines_scanned": 156,
+      "cyrillic_lines": 0,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\node_modules\\@babel\\plugin-transform-export-namespace-from\\package.json",
+      "bytes": 888,
+      "lines_scanned": 34,
+      "cyrillic_lines": 0,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\node_modules\\@babel\\plugin-transform-export-namespace-from\\README.md",
+      "bytes": 435,
+      "lines_scanned": 19,
+      "cyrillic_lines": 0,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\marsel\\test_2\\automated_index_forms_volume_3.txt",
+      "bytes": 164091,
+      "lines_scanned": 1872,
+      "cyrillic_lines": 1872,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине : ['билва']"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\marsel\\test_2\\automated_index_volume_3.txt",
+      "bytes": 53348,
+      "lines_scanned": 1872,
+      "cyrillic_lines": 1872,
+      "iast_paren_hits": 1,
+      "samples": [
+        "билва – Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды – в народной медицине"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\archive\\03_all_index.txt",
+      "bytes": 32127,
+      "lines_scanned": 1876,
+      "cyrillic_lines": 1876,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\archive\\index_3.txt",
+      "bytes": 46924,
+      "lines_scanned": 1786,
+      "cyrillic_lines": 1786,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\diplom-rubanova\\archive\\sanskrit_names.txt",
+      "bytes": 399952,
+      "lines_scanned": 5000,
+      "cyrillic_lines": 5000,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\build\\docs\\Arkhangelskiy_otzyv_na_VKR_Rubanovoy\\index.html",
+      "bytes": 19897,
+      "lines_scanned": 40,
+      "cyrillic_lines": 25,
+      "iast_paren_hits": 1,
+      "samples": [
+        "<script>!function(){function t(t){document.documentElement.setAttribute(\"data-theme\",t)}var e=function(){try{return new URLSearchParams(window.location.search)."
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\build\\docs\\Prilozhenie_VKR_otzyv_ruk_retsenzenta_Gasuns\\index.html",
+      "bytes": 17960,
+      "lines_scanned": 37,
+      "cyrillic_lines": 23,
+      "iast_paren_hits": 1,
+      "samples": [
+        "<script>!function(){function t(t){document.documentElement.setAttribute(\"data-theme\",t)}var e=function(){try{return new URLSearchParams(window.location.search)."
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\nkrya-parallel\\build\\docs\\diplom-rubanova\\ВКР\\index.html",
+      "bytes": 209493,
+      "lines_scanned": 487,
+      "cyrillic_lines": 313,
+      "iast_paren_hits": 5,
+      "samples": [
+        "<script>!function(){function t(t){document.documentElement.setAttribute(\"data-theme\",t)}var e=function(){try{return new URLSearchParams(window.location.search).",
+        "<p>Для обработки текста используются готовые технологии и хорошо известные <strong>методы</strong> NLP: <em>russian stemmer snowball, pymorphy2, mystem, deeppav",
+        "<p>Первая задача, стоящая перед нами в этом исследовании, состоит в извлечении санскритских имен из русского текста. Сегодня существует большое количество работ",
+        "<p>Способы извлечения именованных сущностей в русском языке предложены в следующих статьях: [Подобряев 2013], [Антонова, Соловьев 2013] и [Трофимов 2014]. В раб",
+        "<mark>билва -- Aegle marmelos (Correa), вид дикой яблони, листья которой используются в церемониях почитания Шивы, недозрелые плоды -- в народной медицине</mark"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\Index_pr_stat.txt",
+      "bytes": 0,
+      "lines_scanned": 0,
+      "cyrillic_lines": 0,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\Data\\bhagavadgita-erman.html",
+      "bytes": 830765,
+      "lines_scanned": 720,
+      "cyrillic_lines": 720,
+      "iast_paren_hits": 100,
+      "samples": [
+        "<div class=\"citation_block\" id=\"1.35\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 1. 35\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 50\">35</div><di",
+        "<div class=\"chapter_title\" id=\"2\">Глава 2 [24]<a href='#comment_2_69' class='comment_sub'><sup><small>69</small></sup></a></div><div class=\"comments\"><div class",
+        "<div class=\"citation_block\" id=\"2.7\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 7\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 51\">7</div><div c",
+        "<div class=\"citation_block\" id=\"2.11\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 11\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 51\">11</div><di",
+        "<div class=\"citation_block\" id=\"2.13\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 13\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 51\">13</div><di",
+        "<div class=\"citation_block\" id=\"2.15\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 15\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 52\">15</div><di",
+        "<div class=\"citation_block\" id=\"2.16\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 16\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 52\">16</div><di",
+        "<div class=\"citation_block\" id=\"2.17\"><div class=\"range\" title=\"Бхагавадгита в переводе В.Г.Эрмана VI. 2. 17\" id=\"Бхагавадгита, В.Г.Эрман, 2009: 52\">17</div><di"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\Data\\bhagavadgita-erman.html.meta.json",
+      "bytes": 785,
+      "lines_scanned": 22,
+      "cyrillic_lines": 6,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\Data\\Рамаяна 3. Словарь.txt",
+      "bytes": 43195,
+      "lines_scanned": 209,
+      "cyrillic_lines": 209,
+      "iast_paren_hits": 81,
+      "samples": [
+        "Агастья (Agastya) — божественный мудрец, сын Митры и Варуны, покровитель юга Индии, герой многих индийских легенд и мифов. Агастье приписываются более двадцати ",
+        "Агни (Agni) — бог огня во всех его проявлениях (космический огонь, небесный огонь, жертвенный огонь, домашний огонь и т. д.). Один из древнейших ведийских богов",
+        "Адити (Aditi) — одна из дочерей мудреца Дакши, жена Кашьяпы, мать двенадцати богов адитьев, в том числе Индры и Варуны.",
+        "Айомукхи (Ayomukhī) — «[имеющая] железное лицо», «железноликая») — ракшаси, обезображенная Лакшманой за нападение на него.",
+        "Ангирас (Aṅgiras) — один из великих риши и праотцов всех живых существ, которому приписываются многие гимны «Ригведы»; родоначальник класса полубогов — небесных",
+        "Ариштанеми (Ariṣṭanemi) — согласно «Рамаяне», один их семнадцати прародителей живых существ (праджапати).",
+        "Атри (Atri) — один из прародителей живых существ (праджапати), великий риши, обитель которого посетил Рама во второй книге «Рамаяны».",
+        "Бала (Bala), или Вала (Vala), — асура, брат Вритры. По ведийскому мифу, спрятал в одноименной пещере (vala) принадлежащих небесным певцам ангирасам коров. Ангир"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\Data\\Рамаяна 3. Словарь.txt.meta.json",
+      "bytes": 791,
+      "lines_scanned": 21,
+      "cyrillic_lines": 2,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\Data\\Словарь Гринцера из Бада Кадамбари.txt",
+      "bytes": 63958,
+      "lines_scanned": 465,
+      "cyrillic_lines": 465,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\Data\\Словарь Гринцера из Бада Кадамбари.txt.meta.json",
+      "bytes": 830,
+      "lines_scanned": 20,
+      "cyrillic_lines": 2,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\Data\\Словарь Гринцера из Рамаяны 1-2.txt",
+      "bytes": 88939,
+      "lines_scanned": 463,
+      "cyrillic_lines": 463,
+      "iast_paren_hits": 186,
+      "samples": [
+        "Агастья\t(Agastya) — божественный мудрец, сын Митры и Варуны, герой многих индийских мифов, покровитель юга Индии; ему приписываются более двадцати гимнов «Ригве",
+        "Агни\t(Agni) — бог огня во всех его проявлениях (космический огонь, небесный огонь, жертвенный огонь, домашний огонь и т. д.). Один из древнейших ведийских богов",
+        "Адити\t(Aditi) — одна из дочерей мудреца Дакши, жена Кашьяпы, мать двенадцати богов-адитьев, в том числе Индры.",
+        "Акша\t(Akṣa) — старший сын Раваны, убитый Хануманом.",
+        "Аламбуша\t(Alambuṣā) — жена царя Икшваку.",
+        "Аламбуша\t(Alambuṣā) — одна из апсар.",
+        "Аларка\t(Alarka) — благочестивый царь Каши (Варанаси) и Каруши.",
+        "Амбариша\t(Ambarīṣa) — царь Солнечной династии, потомок Икшваку."
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\Data\\Словарь Гринцера из Рамаяны 1-2.txt.meta.json",
+      "bytes": 750,
+      "lines_scanned": 21,
+      "cyrillic_lines": 2,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\add\\To_add\\dsg_index.html",
+      "bytes": 4902257,
+      "lines_scanned": 4668,
+      "cyrillic_lines": 4378,
+      "iast_paren_hits": 977,
+      "samples": [
+        "<tr><td><a id=\"1\">1</a>/<span class=\"page-link\"data-text=\"1\">1</span></td><td><a class=\"sa\">अ</a><br> <a class=\"iast\">/a/</a><br> <a class=\"HK\"> </a></td><td><p",
+        "<tr><td><a id=\"2\">2</a>/<span class=\"page-link\"data-text=\"1\">1</span></td><td><a class=\"sa\">अं</a><br> <a class=\"iast\">/aṃ/</a><br> <a class=\"HK\">/aM/ </a></td>",
+        "<tr><td><a id=\"6\">6</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अ ೱ क्, जिह्वामूलीय</a><br> <a class=\"iast\">/a ೱ k/, /jihvāmūlīya/</",
+        "<tr><td><a id=\"7\">7</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अ ೱ प्, उपध्मानीय</a><br> <a class=\"iast\">/a ೱ p/, /upadhmānīya/</a>",
+        "<tr><td><a id=\"9\">9</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अक्</a><br> <a class=\"iast\">/ak/</a><br> <a class=\"HK\"> </a></td><td",
+        "<tr><td><a id=\"11\">11</a>/<span class=\"page-link\"data-text=\"2\">2</span></td><td><a class=\"sa\">अकङ्</a><br> <a class=\"iast\">/akaṅ/</a><br> <a class=\"HK\">/akaG/ <",
+        "<tr><td><a id=\"13\">13</a>/<span class=\"page-link\"data-text=\"2-3\">2-3</span></td><td><a class=\"sa\">अकथित</a><br> <a class=\"iast\">/akathita/</a><br> <a class=\"HK\"",
+        "<tr><td><a id=\"16\">16</a>/<span class=\"page-link\"data-text=\"3\">3</span></td><td><a class=\"sa\">अकर्मक</a><br> <a class=\"iast\">/akarmaka/</a><br> <a class=\"HK\"> <"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\Index\\lib\\x86_64-win64\\add\\To_add2\\ramayana-potapovoy.html",
+      "bytes": 2027841,
+      "lines_scanned": 5000,
+      "cyrillic_lines": 2467,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\docs_site\\_site\\index.html",
+      "bytes": 21868,
+      "lines_scanned": 476,
+      "cyrillic_lines": 24,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\docs_site\\_site\\guide\\how-to-cite\\index.html",
+      "bytes": 21064,
+      "lines_scanned": 486,
+      "cyrillic_lines": 33,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\docs_site\\_site\\guide\\how-to-search\\index.html",
+      "bytes": 21146,
+      "lines_scanned": 486,
+      "cyrillic_lines": 33,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\docs_site\\_site\\guide\\what-is-the-corpus\\index.html",
+      "bytes": 21981,
+      "lines_scanned": 487,
+      "cyrillic_lines": 34,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\docs_site\\_site\\faq\\mobile-access\\index.html",
+      "bytes": 21125,
+      "lines_scanned": 484,
+      "cyrillic_lines": 31,
+      "iast_paren_hits": 2,
+      "samples": [
+        "  <script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Работает ли корпус на ",
+        "<ul><li>мобильная оптимизация интерфейса и более лёгкие шрифты;</li><li>установка как веб-приложения (PWA) и офлайн-чтение;</li><li>в перспективе — офлайн-поиск"
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\docs_site\\_site\\faq\\rights-and-access\\index.html",
+      "bytes": 21351,
+      "lines_scanned": 486,
+      "cyrillic_lines": 33,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\docs_site\\_site\\faq\\what-is-inside\\index.html",
+      "bytes": 20666,
+      "lines_scanned": 484,
+      "cyrillic_lines": 31,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\intelligent-nightingale-117af2\\DOCUMENTATION_INDEX.md",
+      "bytes": 4089,
+      "lines_scanned": 77,
+      "cyrillic_lines": 0,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\DOCUMENTATION_INDEX.md",
+      "bytes": 4089,
+      "lines_scanned": 77,
+      "cyrillic_lines": 0,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\web\\templates\\compare_index.html",
+      "bytes": 4014,
+      "lines_scanned": 129,
+      "cyrillic_lines": 8,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\web\\templates\\index.html",
+      "bytes": 13566,
+      "lines_scanned": 304,
+      "cyrillic_lines": 28,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\web\\corpus_builder\\chronology\\index.html",
+      "bytes": 288144,
+      "lines_scanned": 166,
+      "cyrillic_lines": 2,
+      "iast_paren_hits": 1,
+      "samples": [
+        "<script id=\"data\" type=\"application/json\">{\"periods\": [{\"period\": \"Vedic Saṃhitā\", \"bucket_date\": -1030}, {\"period\": \"Brāhmaṇa\", \"bucket_date\": -792}, {\"period\""
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\web\\corpus_builder\\jsonl\\bhagavadgita-erman.jsonl",
+      "bytes": 1567318,
+      "lines_scanned": 1701,
+      "cyrillic_lines": 1701,
+      "iast_paren_hits": 99,
+      "samples": [
+        "{\"id\": \"bhagavadgita-erman:1.35.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"1.35.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:1.35\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.70.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.70.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.70\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.11.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.11.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.11\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.13.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.13.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.13\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.15.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.15.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.15\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.16.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.16.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.16\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.16.comm2\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.16.comm2\", \"seg\": \"comm2\", \"group\": \"bhagavadgita-erman:2.16\", \"lang\": \"ru\",",
+        "{\"id\": \"bhagavadgita-erman:2.17.comm1\", \"work\": \"bhagavadgita-erman\", \"passage\": \"2.17.comm1\", \"seg\": \"comm1\", \"group\": \"bhagavadgita-erman:2.17\", \"lang\": \"ru\","
+      ]
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\web\\corpus_builder\\jsonl\\erman-temkin.jsonl",
+      "bytes": 235090,
+      "lines_scanned": 597,
+      "cyrillic_lines": 597,
+      "iast_paren_hits": 0,
+      "samples": []
+    },
+    {
+      "path": "C:\\Users\\user\\Documents\\GitHub\\SamudraManthanam\\.claude\\worktrees\\vigilant-swirles-07eb86\\web\\corpus_builder\\jsonl\\slovar-grintsera-iz-bada-kadambari.jsonl",
+      "bytes": 282894,
+      "lines_scanned": 464,
+      "cyrillic_lines": 464,
+      "iast_paren_hits": 0,
+      "samples": []
+    }
+  ]
+}
