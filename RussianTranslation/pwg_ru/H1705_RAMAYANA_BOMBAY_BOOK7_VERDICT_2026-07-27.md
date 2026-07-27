@@ -24,7 +24,7 @@ missing piece is the Bombay-numbering bridge, not the RU side."* Both clauses fa
 | 1 | the corpus file backs a Russian translation | `07_…jsonl` holds **2,690 `sa` segments and 0 `ru`**; `06_…jsonl` likewise (4,436 `sa`, 0 `ru`). Kāṇḍas 1/2/3/5 are fully paired (2,268 / 4,307 / 2,447 / 2,859 of each) | ❌ the RU side **is** the missing piece |
 | 2 | that Sanskrit is the Southern text of record | **2,688 of 2,690** rows in [`ramayana_southern_critical_concordance.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_southern_critical_concordance.tsv) pair kāṇḍa-7 verses with the DCS **critical** edition at the *identical* `sarga.verse`, 95.5% at score 1.0. Kāṇḍa 6: 99.8% identity. Kāṇḍas 1/2/3/5: **1.2–3.0%** | ❌ kāṇḍas 6–7 are critical-edition text wearing a "Southern" label ([SL#822](https://github.com/gasyoun/SanskritLexicography/issues/822)) |
 | 3 | Bombay ≈1:1 with the corpus numbering | Bombay **111** sargas + **13** interpolated vs the corpus's **100**; identical max-verse in **11 of 100** shared sargas; delta −14…+18, mean **+4.7** | ❌ no offset scheme is honest |
-| 4 | the prize justifies an OCR pass | **1,781** plain `R.` book-7 citations in the full csl-orig digitisation (4.5% of 39,845 located `R.` refs), sargas 1–111 — of which **127 cite a sarga > 100**, structurally unresolvable against a 100-sarga text | ⚠️ real mass, zero reachable payoff |
+| 4 | the prize justifies an OCR pass | **1,765** plain `R.` book-7 citations in the full csl-orig digitisation (4.5% of 39,222 located plain-`R.` refs), sargas 1–111, plus 16 edition-qualified ones (`R. ed. Bomb.` 14, `R. SCHL.` 2) — of which **127 cite a sarga > 100**, structurally unresolvable against a 100-sarga text | ⚠️ real mass, zero reachable payoff |
 
 ### Why the corpus file exists but cannot help
 
@@ -123,6 +123,15 @@ in short, the Gorresio recipe (§470/§473) does **not** transfer unmodified:
 - **Kāṇḍa 6 in `indexv3.txt` reaches sarga 130 with 70, 122 and 123 absent** (127 present
   against the vulgate's 128). Out of scope for book 7 — **observed, not repaired**; anyone
   keying book-6 work off this inventory must resolve it first.
+
+> **Counting correction, 27-07-2026 (same day).** The first pass reported 1,781 plain
+> `R.` book-7 citations out of 39,845. Its abbreviation regex ended in a bare `R\.`
+> alternative, so `R. ed. Bomb.` and `R. SCHL.` fell into the plain-`R.` bucket — 16
+> book-7 refs, 623 across all books. Re-counted with every edition qualifier split out:
+> **1,765 plain of 39,222**. The 127 out-of-range figure and every conclusion are
+> unchanged. Worth keeping in view separately: PWG carries **319** explicit
+> `R. ed. Bomb.` citations across all books (only 14 of them in book 7), so Böhtlingk
+> names the Bombay edition well outside the book-7 default.
 
 ## Reproduce
 

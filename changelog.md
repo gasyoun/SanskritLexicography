@@ -14,6 +14,22 @@ not an error.
 
 ## [Unreleased]
 
+## [1.89.1] — 2026-07-27
+
+### Fixed
+- **H1705 counting correction (same day).** v1.89.0 reported **1,781** plain `R.`
+  book-7 citations out of 39,845. The abbreviation regex ended in a bare `R\.`
+  alternative, so `R. ed. Bomb.` and `R. SCHL.` were folded into the plain-`R.`
+  bucket — 16 book-7 refs, 623 across all books. Re-counted with every edition
+  qualifier split out: **1,765 plain of 39,222**, plus 16 edition-qualified book-7
+  refs. The 127 out-of-range (sarga >100) figure and every conclusion in the
+  verdict are unchanged. Recorded separately because it is independently useful:
+  PWG carries **319** explicit `R. ed. Bomb.` citations across all books, only 14
+  of them in book 7 — Böhtlingk names the Bombay edition well outside the book-7
+  default. Corrected in
+  [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md)
+  and `pwg_ru/COVERED_TEXTS_RU.md`.
+
 ## [1.89.0] — 2026-07-27
 
 ### Added
