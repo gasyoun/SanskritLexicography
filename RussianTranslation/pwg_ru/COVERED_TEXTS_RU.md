@@ -1,6 +1,6 @@
 # Covered texts — Russian translations of record for PWG citations
 
-_Created: 19-07-2026 · Last updated: 26-07-2026_
+_Created: 19-07-2026 · Last updated: 27-07-2026_
 
 When a PWG card cites a passage of a text that **already has a published or aligned
 Russian translation** (R., MBH., ṚV., KATHĀS., …), the card's citation should **reuse
@@ -150,7 +150,7 @@ Per-text translation-of-record assignment:
 | text | translation of record | note |
 |---|---|---|
 | ṚV. | Elizarenkova, 1:1 (MG N6) | German divergence → `divergence_note`, never overwrite |
-| R. | Leonov (Southern recension) | books 1–2 direct (Schlegel); books 3–6 via the Gorresio concordance (flagged hits); book 7 misses until ingested |
+| R. | Leonov (Southern recension) | books 1–2 direct (Schlegel); books 3–6 via the Gorresio concordance (flagged hits); book 7 misses until a Russian uttarakāṇḍa exists — not until it is "ingested" (H1705) |
 | MBH. | SamudraManthanam per-parvan alignment | **blocked on the Calcutta↔critical concordance** (§Locus mapping) |
 | KATHĀS. | «Океан сказаний» | best-effort locus map (2-number PWG vs 3-number corpus) |
 | AV. / Manu / RAGH. / KUMĀRAS. / MEGH. / GĪT. / AMAR. | corpus RU | clean locus map |
@@ -171,7 +171,8 @@ encodes the clean ones and reports a typed non-hit for the rest.
 | M. (Manu) | `adhyaya,verse` | `manavadharmashastra:{adhyaya}.{verse}` | clean |
 | KATHĀS. | `taranga,verse` (2-number) | `lambaka.taranga.verse` (3-number) | best-effort |
 | **MBH.** | **continuous Calcutta śloka** (5,7331) | `parvan.adhyaya.verse` (critical) | **UNMAPPED** — the cumulative-adhyāya candidate was built and measured 26-07-2026 (H1652) at 11–16% verse accuracy and REJECTED; needs the Calcutta text itself |
-| **R. GORR.** (+ plain R. books 3–6) | Gorresio Bengal recension | Southern recension (Leonov) | **CONTENT-BASED verse concordance (H1656 + H1689)** — matched/fuzzy → hit; Bengal-only → `no-southern-counterpart`; kāṇḍas 4/6/7 → `locus-not-in-corpus` (`gorresio-etext-gap` extinct since the H1689 OCR pass) |
+| **R. GORR.** (+ plain R. books 3–6) | Gorresio Bengal recension | Southern recension (Leonov) | **CONTENT-BASED verse concordance (H1656 + H1689)** — matched/fuzzy → hit; Bengal-only → `no-southern-counterpart`; kāṇḍas 4/6/7 → `ru-translation-unpublished` (`gorresio-etext-gap` extinct since the H1689 OCR pass) |
+| **R. book 7** | Bombay ed. 1859 — 111 sargas + 13 interpolated (`23.1–23.5`, `37.1–37.5`, `59.1–59.3`) | corpus `07_ramayana-uttarakanda`, 100 sargas, **Sanskrit-only, critical text** | **NO MAP, and none is owed** — measured NOT ≈1:1 under H1705 (11/100 sargas share a verse count); 127 of 1,781 citations name a sarga the corpus cannot carry. Returns `ru-translation-unpublished`: no Russian uttarakāṇḍa exists |
 
 The remaining UNMAPPED case returns `unmapped_locus_scheme` (a documented GAP, **not** a miss):
 
@@ -312,8 +313,10 @@ through the CONTENT-BASED verse concordance: `matched`/`fuzzy` rows return the L
 segment as a normal hit **with the map class + score attached** (`map` field travels
 with every consult, so downstream can weight or display it); everything else is a
 typed, honest state — `no-southern-counterpart` (Bengal-only verse, ~⅔ of the
-recension) and `locus-not-in-corpus` (kāṇḍas 4, 6 and 7 — see the next section: those
-are a **translation** gap, not an ingest queue); `gorresio-etext-gap` is **extinct since
+recension) and `ru-translation-unpublished` (kāṇḍas 4, 6 and 7 — see the next section:
+those are a **translation** gap, not an ingest queue; renamed from
+`locus-not-in-corpus` 27-07-2026 under H1705, which found the shared string was being
+read as an ingest/numbering gap); `gorresio-etext-gap` is **extinct since
 26-07-2026** — the H1689 tesseract-5 `san` OCR pass put all 672 sargas in the e-text.
 A miss never becomes an invented offset — the 166k lesson stands. The `/review-sheet` audit sheet
 remains as a quality surface (votes refine the map), not a blocker.
@@ -344,12 +347,39 @@ What *does* exist is the Sanskrit and, for kāṇḍa 6, the alignment work:
 |---|---:|---|---|---|---|
 | 4 kiṣkindhā | 376 | yes — [CommentaryStrategies `data/valmiki_shlokas/kanda_4_kishkindakanda`](https://github.com/gasyoun/CommentaryStrategies/tree/main/data/valmiki_shlokas) (Gita Supersite, Southern) + a gitasupersite alignment (1,987↔2,235 vv) | no — all 1,004 rows are `no_southern_corpus` | **none** | the Russian, then a Southern corpus, then the map |
 | 6 yuddha | 288 | yes — same source, 132 sargas | **yes — 1,172 matched + 1,123 fuzzy already in the verse map** | **none** | the Russian only |
-| 7 uttara | 232 | not in the Southern set; Gorresio vol. uk is image-only (no text layer) | inventory only | **none** | text layer (OCR), then the Russian |
+| 7 uttara | 232 | yes — `07_ramayana-uttarakanda.jsonl`, 2,690 verses, **Sanskrit-only and CRITICAL-edition text** (H1705, see below) | inventory only | **none** | the Russian — and, before any map, a Bombay↔critical bridge the numbering does not give for free |
 
 Kāṇḍa 6 is the sharp line: H1656's concordance already maps 2,295 Gorresio verses onto
 Southern yuddha loci, so the day a Russian yuddhakāṇḍa is ingested, 288 PWG references
-become reusable with no further alignment work. Kāṇḍa 4 needs the whole chain. Kāṇḍa 7
-needs an OCR pass before anything else can start.
+become reusable with no further alignment work. Kāṇḍa 4 needs the whole chain.
+
+### Kāṇḍa 7 — what H1705 measured (27-07-2026)
+
+H1705 was minted to bridge the Bombay numbering for book 7 on the reading that
+"the corpus HAS `07_ramayana-uttarakanda.jsonl`, so the missing piece is the
+numbering, not the RU side". Both halves of that reading are wrong, and the
+measurements say so without ambiguity:
+
+| question | measured | consequence |
+|---|---|---|
+| does the corpus file carry Russian? | **no — 2,690 `sa` segments, 0 `ru`** (kāṇḍa 6 likewise; kāṇḍas 1/2/3/5 are fully paired) | there is nothing to reuse even from a perfect map |
+| is it the Southern text of record? | **no** — 2,688/2,690 rows of `ramayana_southern_critical_concordance.tsv` align to the DCS **critical** edition at the identical `sarga.verse`, 95.5% at score 1.0; kāṇḍas 1/2/3/5 sit at 1–3% identity | the "Southern" column is a mislabel for kāṇḍas 6–7 |
+| is Bombay ≈1:1 with it? | **no** — Bombay 111 sargas + 13 interpolated vs 100; identical verse count in **11/100** sargas; delta −14…+18, mean +4.7 | a direct-with-offset scheme would be dishonest |
+| how much PWG mass is at stake? | **1,781** plain `R.` book-7 citations in the full digitisation (4.5% of 39,845), sargas 1–111; **127** cite a sarga >100 | those 127 cannot resolve against a 100-sarga text at all |
+
+So the blocker order for book 7 is **the Russian first**, and it is not near: the
+[RussianRamayana](https://github.com/gasyoun/RussianRamayana) pipeline lists book IV
+blocked, V in progress, VI draft-ready (~2029) — book VII is not in it. The OCR pass
+that H1705 was authorised to run was **deliberately not spent**: its only product
+would be a Bombay↔critical Sanskrit map with no RU consumer. The scan-side
+groundwork that makes that pass cheap when it is finally worth running is committed
+as [`src/ramayana_bombay_inventory.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_bombay_inventory.tsv)
+(658 sargas, all 7 kāṇḍas, no OCR) and the traps are in
+[FINDINGS §480](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+
+> Counting scope: the 232/288/376 figures in the table above are **store** counts
+> (the pwg_ru working set); the 1,781 is every `<ls>` in the full csl-orig `pwg.txt`.
+> Different denominators, both correct — do not compare them directly.
 
 **Resolver consequence, applied 26-07-2026.** `_RAMA_GORR_WORK` in
 [`citation_tm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/citation_tm.py)
@@ -357,9 +387,15 @@ previously named `06_ramayana-yuddhakanda` and `07_ramayana-uttarakanda` — wor
 `corpus.db` does not carry. That did not fail loudly; it populated `canonical_id` with a
 fabricated key for a passage nobody can fetch, so a consumer reading that field saw a
 resolution where there was none. Those kāṇḍas now fall through to the covered-but-absent
-branch: a typed `locus-not-in-corpus` miss with **no** `canonical_id`, pinned by three
-new selftest checks. This is the same defect class H1656 removed from plain `R.` books
-3–6, caught one layer further in.
+branch: a typed miss with **no** `canonical_id`, pinned by three new selftest checks.
+This is the same defect class H1656 removed from plain `R.` books 3–6, caught one layer
+further in. **H1705 (27-07-2026) retyped that miss** from `locus-not-in-corpus` to
+`ru-translation-unpublished`, carrying a `blocker` field naming the kāṇḍa: the old
+string was shared with genuine corpus-coverage holes, and reading book 7's miss as an
+ingest/numbering gap is what got a Bombay-concordance handoff minted for a book whose
+real blocker is that nobody has translated it. Plain `R.` book 7 now lands on the same
+typed miss as `R. GORR.` book 7 (two more selftest checks, one of them an
+out-of-corpus-range sarga).
 
 ## Retro-application plan
 

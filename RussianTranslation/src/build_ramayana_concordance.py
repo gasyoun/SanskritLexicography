@@ -51,6 +51,13 @@ Outputs (committed, metadata only — loci, counts, scores; never translation te
       sarga-level majority roll-up of the verse map (CONTENT-BASED; owned by
       `build-gorresio`). The original content-blind DTW draft was superseded
       26-07-2026 — scan-anchor checks showed ±1–3-sarga drift.
+  src/ramayana_bombay_inventory.tsv
+      Bombay (Gujarātī Printing Press, 1859) structural inventory — the
+      edition PWG's plain `R.` cites for book 7: kāṇḍa → sarga → verse count →
+      volume/page span, read off the ramayanabom scan-viewer per-page index
+      (NO OCR involved, same shape as the Gorresio inventory). Built by
+      `build-bombay`, which also emits the Bombay↔corpus numbering study that
+      decided H1705.
 
 Build (needs the LOCAL-ONLY stores; absent in CI by design):
 
@@ -61,6 +68,8 @@ Build (needs the LOCAL-ONLY stores; absent in CI by design):
   python src/build_ramayana_concordance.py build-gorresio \
       --pdf-dir <ramayanagorr clone>/pdfpages --ksverse <ksverse.js> \
       [--corpus-dir ...] [--cache <page_texts.jsonl>]
+  python src/build_ramayana_concordance.py build-bombay \
+      --index-dir <ramayanabom clone>/app1/pywork [--corpus-dir ...]
 
 Selftest (CI gate — validates the COMMITTED TSVs only, no stores, no network):
 
@@ -91,6 +100,7 @@ OUT_GINV = os.path.join(HERE, 'ramayana_gorresio_inventory.tsv')
 OUT_GS = os.path.join(HERE, 'ramayana_gorresio_southern_sarga_map.tsv')
 OUT_GETEXT = os.path.join(HERE, 'gorresio_etext.jsonl')
 OUT_GSV = os.path.join(HERE, 'ramayana_gorresio_southern_verse_map.tsv')
+OUT_BINV = os.path.join(HERE, 'ramayana_bombay_inventory.tsv')
 
 # Southern corpus file → kāṇḍa number; kāṇḍa 4 (kiṣkindhā) is not ingested.
 SOUTHERN_FILES = {
@@ -105,6 +115,14 @@ SOUTHERN_FILES = {
 DCS_KANDA = {'Bā': 1, 'Ay': 2, 'Ār': 3, 'Ki': 4, 'Su': 5, 'Yu': 6, 'Utt': 7}
 
 KSVERSE_COMMIT = '609a28669e3d8f4648a153c7af0105f3dca03ead'  # provenance pin
+# sanskrit-lexicon-scans/ramayanabom @ app1/pywork/indexv{1,2,3}.txt — the
+# hand-made per-page index for the Bombay ed. (PWG's `R.` book 7). Pin the
+# commit that last touched those files, not HEAD.
+BOMINDEX_COMMIT = '841764ad48e13ed3db998b32f1a8dcc1b1787750'
+# `app1/pywork/index.txt` in that repo is NOT the Rāmāyaṇa index — it is
+# Śatapatha-brāhmaṇa template residue (14 kāṇḍas, brāhmaṇa/kaṇḍikā columns)
+# left over from the app it was cloned from. Read indexv1/2/3 only.
+BOMINDEX_FILES = ('indexv1.txt', 'indexv2.txt', 'indexv3.txt')
 
 # Verse-map pairs voted OFF in the 26-07-2026 human audit sheet
 # (review/sanskritlexicography-gorresio-southern-map_audit-26-07-26_decisions.json,
@@ -201,6 +219,134 @@ def load_gorresio_inventory(ksverse_path):
             rows.append((int(kanda), int(sarga), n, vol, min(pages), max(pages)))
     rows.sort(key=lambda t: (t[0], t[1]))
     return rows
+
+
+# ---------------------------------------------------------------------------
+# Bombay (1859) structural inventory — from the scan-viewer per-page index
+# ---------------------------------------------------------------------------
+
+# The uttarakāṇḍa's LAST sarga is typed `11` in indexv3.txt where 111 is meant:
+# it follows sarga 110, restarts its verse numbering at 1, and sits at pages
+# 810-812 — while the real sarga 11 sits ~280 pages earlier. Page 810's colophon
+# reads `इत्यार्षे … दशाधिकशततमः सर्गः ॥ ११० ॥` and the mūla under it restarts at
+# ॥१॥, so the block below it is the 111th and last. Repaired here EXPLICITLY (the
+# TSV marks the row `index_typo_111`) rather than silently, and asserted in
+# selftest: a duplicate sarga id with a disjoint page span is the detector.
+# (kāṇḍa, typed sarga, page_lo, page_hi) -> (corrected sarga, flag)
+BOM_INDEX_REPAIRS = {(7, '11', 800, 899): ('111', 'index_typo_111')}
+
+
+def _bom_repair(kanda, sarga, page):
+    for (k, s, lo, hi), fix in BOM_INDEX_REPAIRS.items():
+        if (k, s) == (kanda, sarga) and lo <= page <= hi:
+            return fix
+    return None
+
+
+def _bom_int(tok):
+    m = re.match(r'^(\d+)', (tok or '').strip())
+    return int(m.group(1)) if m else None
+
+
+def load_bombay_inventory(index_dir):
+    """[(kanda, sarga, n_verses, volume, page_first, page_last, ipage_first,
+        ipage_last, flags), ...] from ramayanabom's indexv{1,2,3}.txt.
+
+    Columns are `vol page kāṇḍa sarga from-v. to-v. ipage remark(s)`; `---`
+    marks an unnumbered/missing page. `sarga` is a STRING because the Bombay ed.
+    prints interpolated sargas as `23.1 … 23.5`, `37.1 … 37.5`, `59.1 … 59.3` —
+    numbering PWG's `R. 7,<sarga>,<verse>` cannot address at all.
+    """
+    per = {}
+    for fname in BOMINDEX_FILES:
+        path = os.path.join(index_dir, fname)
+        if not os.path.exists(path):
+            sys.exit('%s not found in %s (ramayanabom clone @ %s)'
+                     % (fname, index_dir, BOMINDEX_COMMIT[:8]))
+        with open(path, encoding='utf-8') as fh:
+            next(fh)                                   # header
+            for line in fh:
+                p = line.rstrip('\n').split('\t')
+                if len(p) < 7 or not p[2].strip().isdigit():
+                    continue                           # front matter / blank pages
+                vol, page = p[0].strip(), _bom_int(p[1])
+                kanda, sarga = int(p[2]), p[3].strip()
+                if page is None or not sarga or sarga == '---':
+                    continue
+                repaired = _bom_repair(kanda, sarga, page)
+                if repaired:
+                    sarga = repaired[0]
+                d = per.setdefault((kanda, sarga), {
+                    'vol': vol, 'n': 0, 'pages': [], 'ipages': [],
+                    'flags': set()})
+                for v in (_bom_int(p[4]), _bom_int(p[5])):
+                    if v and v > d['n']:
+                        d['n'] = v
+                d['pages'].append(page)
+                if p[6].strip() and p[6].strip() != '---':
+                    d['ipages'].append(p[6].strip())
+                if '.' in sarga:
+                    d['flags'].add('interpolated')
+                if repaired:
+                    d['flags'].add(repaired[1])
+    rows = []
+    for (kanda, sarga), d in per.items():
+        rows.append((kanda, sarga, d['n'], d['vol'],
+                     min(d['pages']), max(d['pages']),
+                     d['ipages'][0] if d['ipages'] else '',
+                     d['ipages'][-1] if d['ipages'] else '',
+                     ','.join(sorted(d['flags']))))
+    rows.sort(key=lambda t: (t[0], [int(x) for x in t[1].split('.')]))
+    return rows
+
+
+def cmd_build_bombay(args):
+    """Bombay inventory + the Bombay↔corpus numbering study (H1705).
+
+    NO OCR: the whole verdict rests on the hand-made per-page index and the
+    corpus's own verse numbering. The e-text route is deliberately NOT taken —
+    see pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md for why
+    (no Russian uttarakāṇḍa exists to reuse, so a concordance has no consumer).
+    """
+    rows = load_bombay_inventory(args.index_dir)
+    with open(OUT_BINV, 'w', encoding='utf-8', newline='') as fh:
+        w = csv.writer(fh, delimiter='\t', lineterminator='\n')
+        w.writerow(['kanda', 'sarga', 'n_verses', 'volume',
+                    'page_first', 'page_last', 'ipage_first', 'ipage_last',
+                    'flags'])
+        w.writerows(rows)
+    per_kanda = defaultdict(int)
+    for r in rows:
+        per_kanda[r[0]] += 1
+    print('bombay inventory: %d sargas -> %s' % (len(rows), OUT_BINV))
+    print('  sargas per kāṇḍa: %s' % dict(sorted(per_kanda.items())))
+
+    if not os.path.exists(args.corpus_dir):
+        print('corpus dir absent — numbering study skipped')
+        return
+    corpus = load_southern(args.corpus_dir)
+    bom7 = {r[1]: r[2] for r in rows if r[0] == 7 and 'interpolated' not in r[8]}
+    cor7 = defaultdict(int)
+    for sarga, verse, _ in corpus.get(7, []):
+        cor7[sarga] = max(cor7[sarga], verse)
+    bom_int = {int(s): n for s, n in bom7.items()}
+    both = sorted(set(bom_int) & set(cor7))
+    same = [s for s in both if bom_int[s] == cor7[s]]
+    print()
+    print('=== Bombay ↔ corpus numbering study, kāṇḍa 7 ===')
+    print('bombay sargas      : %d (+%d interpolated)'
+          % (len(bom_int), sum(1 for r in rows
+                               if r[0] == 7 and 'interpolated' in r[8])))
+    print('corpus sargas      : %d' % len(cor7))
+    print('bombay-only sargas : %s' % sorted(set(bom_int) - set(cor7)))
+    print('identical verse count: %d/%d (%.1f%%)'
+          % (len(same), len(both), 100.0 * len(same) / len(both) if both else 0))
+    deltas = [bom_int[s] - cor7[s] for s in both]
+    if deltas:
+        print('delta bombay-corpus : min %+d  max %+d  mean %+.1f'
+              % (min(deltas), max(deltas), sum(deltas) / len(deltas)))
+    print('VERDICT: the two numberings are NOT ≈1:1 — a direct-with-offset '
+          'scheme would be dishonest (H1705).')
 
 
 # ---------------------------------------------------------------------------
@@ -511,6 +657,36 @@ def cmd_selftest(_args):
                          % (r['kanda'], r['sarga']))
             break
 
+    binv = list(csv.DictReader(open(OUT_BINV, encoding='utf-8'), delimiter='\t'))
+    check({int(r['kanda']) for r in binv} == {1, 2, 3, 4, 5, 6, 7},
+          'bombay inventory covers all 7 kandas')
+    b7 = [r for r in binv if r['kanda'] == '7']
+    b7_int = sorted(int(r['sarga']) for r in b7 if '.' not in r['sarga'])
+    check(b7_int == list(range(1, 112)),
+          'bombay uttarakanda = 111 consecutive sargas (got %d, max %s)'
+          % (len(b7_int), b7_int[-1] if b7_int else '-'))
+    # The whole H1705 verdict rests on this: the Bombay ed. PWG cites for book 7
+    # runs 11 sargas PAST the 100-sarga corpus text, so no offset scheme is honest.
+    check(len(b7_int) - 100 == 11,
+          'bombay uttarakanda exceeds the corpus 100 sargas by 11')
+    interp7 = sorted(r['sarga'] for r in b7 if 'interpolated' in r['flags'])
+    check(interp7 == ['23.1', '23.2', '23.3', '23.4', '23.5',
+                      '37.1', '37.2', '37.3', '37.4', '37.5',
+                      '59.1', '59.2', '59.3'],
+          'bombay uttarakanda interpolated sargas intact (%d)' % len(interp7))
+    fix111 = [r for r in b7 if 'index_typo_111' in r['flags']]
+    check(len(fix111) == 1 and fix111[0]['sarga'] == '111'
+          and int(fix111[0]['page_first']) > 800,
+          'indexv3 sarga-11/111 typo repaired at the tail, not at the real 11')
+    real11 = [r for r in b7 if r['sarga'] == '11']
+    check(real11 and int(real11[0]['page_last']) < 600,
+          'the genuine uttarakanda sarga 11 kept its own page span')
+    for r in binv:
+        if int(r['page_first']) > int(r['page_last']):
+            fails.append('bombay inventory page range inverted at %s,%s'
+                         % (r['kanda'], r['sarga']))
+            break
+
     sc = list(csv.DictReader(open(OUT_SC, encoding='utf-8'), delimiter='\t'))
     check(len(sc) > 15000, 'southern<->critical has %d verse rows (>15000)' % len(sc))
     matched = [r for r in sc if r['class'] in ('matched', 'fuzzy')]
@@ -615,6 +791,12 @@ def main():
     g.add_argument('--cache', default=None,
                    help='page-text cache jsonl (reused across runs)')
     g.set_defaults(func=cmd_build_gorresio)
+    bo = sub.add_parser('build-bombay',
+                        help='Bombay structural inventory + numbering study')
+    bo.add_argument('--index-dir', required=True,
+                    help='local ramayanabom app1/pywork/ (indexv1-3.txt)')
+    bo.add_argument('--corpus-dir', default=DEFAULT_CORPUS_DIR)
+    bo.set_defaults(func=cmd_build_bombay)
     s = sub.add_parser('selftest', help='CI gate over committed TSVs')
     s.set_defaults(func=cmd_selftest)
     args = ap.parse_args()
