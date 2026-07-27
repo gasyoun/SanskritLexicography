@@ -4220,3 +4220,84 @@ rows).
 Integrity issue: [SL#822](https://github.com/gasyoun/SanskritLexicography/issues/822).
 
 _27-07-2026 · [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md) · Opus 5 1M `claude-opus-5[1m]`_
+
+### §482. A count column with no stated provenance is not data — it is a ranking, and the difference decides whether you may divide by it
+
+🔴 **The PWG scan-index tracker's `Citation count` column reproduces no extraction that
+exists in this org.** Measured against the full-dictionary `<ls>` extraction
+([`sortedcrefs.txt`](https://github.com/sanskrit-lexicon/PWG/blob/main/pwg_ls/pwg_dhaval/abbrvwork/abbrvoutput/sortedcrefs.txt),
+9,321 cleaned citation strings, 344,229 occurrences) the sheet/extraction ratio spreads
+from **1.2× to 433×** with a median of 2.09×, and a leading-abbreviation rollup does not
+close it either. The two count different objects: the extraction keys on a *cleaned
+citation string* (canto and śloka numbers stripped, section letters kept — so `MED.`,
+`MED. k.`, `MED. im ŚKDR.` are three keys for one book), the sheet keys on a *book*.
+
+| `<ls>` code | sheet | bare-string occurrences | ratio |
+|---|--:|--:|--:|
+| `MED.` | 12,990 | 30 | 433× |
+| `H. an.` | 9,781 | 1,907 | 5.1× |
+| `NAIGH.` | 1,477 | 1,227 | 1.2× |
+
+**The temptation this kills.** With the campaign's indexed mass at 197,876 and a
+dictionary-wide total of 344,229 sitting right there, "**57.5 % of PWG's citations are now
+page-indexed**" writes itself — a clean, quotable, and entirely unsupported headline,
+because numerator and denominator come from different counting rules. The published report
+carries a coverage-of-the-tracked-set figure instead (73.7 %), states the denominator it is
+*not* using, and records the provenance question as open.
+
+`So:` **a count you did not derive is usable for ORDER and unusable for RATIO until its
+provenance is written down.** Ranking only needs monotonicity, which survives an unknown
+scale factor; any percentage needs numerator and denominator to count the same object,
+which an unknown scale factor destroys. The test is one question — *what would I have to
+believe for this division to be valid?* — and when the answer is "that two numbers I
+cannot reconcile measure the same thing", the division does not get published. Do not
+paper the gap over with a plausible mechanism either: "book vs abbreviation" explains a
+2× ratio, not a 433× one, and offering it as *the* explanation would have converted an
+open question into a false answer. Related: §481 (a filename is a claim, not a
+measurement), §471 (a label that is a fact about the matcher, not the corpus).
+
+Registry, report §6.2 and the full ratio table:
+[csl-observatory `data/pwg_scan_index_tracker/`](https://github.com/sanskrit-lexicon/csl-observatory/tree/main/data/pwg_scan_index_tracker).
+The provenance question is an open MG `@DECIDE` in
+[GTD](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) — it needs whoever
+built the column, not more computation.
+
+_27-07-2026 · [H1706](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1706-Opus_csl-observatory_pwg-scan-index-tracker-reuse_26.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+
+### §483. A resolver that fails closed is a gap; one that fails *open* is a wrong answer — and only the second is an integrity defect
+
+🔴 **A Ṛgveda-Prātiśākhya citation in PWG does not fail to resolve — it resolves to an
+Ṛgveda *hymn* anchor.** Auditing which of the 37 scan directories the citation resolver is
+wired to, 36 came back fine and one came back worse than missing:
+[`ls_resolver.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver.py)
+contains the string `rvps` zero times, and the only Prātiśākhya-shaped pattern routes to
+the `rvlinks` hymn pages. So the reader is handed a link to a different text, silently.
+The undotted `RV. PRAT.` spelling reaches the same wrong place by a second route, emitting
+a `rv00.*` mandala-00 URL that does not exist.
+
+Four further codes were found failing **closed** in the same audit (`TS.` and `TBR.`
+resolve only at 4-parameter arity, `PANCAR.` only at 3; `amara_col` is reachable only via
+`COL.`, never from a bare `AK.`), plus 38 of 90 prefix-map values whose dispatch branch can
+never fire. Those are backlog. The Prātiśākhya case is not.
+
+`So:` **when auditing a resolver, sort the misses by failure direction before sorting them
+by frequency.** A `None` is visible to the caller and costs a missing link; a
+plausible-looking URL to the wrong text is invisible and costs the reader's trust in every
+other link on the page. The audit that finds both should escalate only the second — and
+should assert the emitted *host and path*, not merely "not None", or the test suite will
+happily bless the wrong answer. Errors here are swallowed by design
+(`_warn_swallowed`, suppressible with `LS_RESOLVER_QUIET=1`), which is exactly why the
+defect survived until an outside pass looked.
+
+Method: the module was imported and `generate_href()` called for ~110 probe citations
+across every tracked code at every plausible arity, each result classified with the
+resolver's own `link_type()` — not read off the source. The canonical
+[`csl-app/lib/core/ls_service.dart`](https://github.com/sanskrit-lexicon/csl-app/blob/main/lib/core/ls_service.dart),
+of which this file is a port, was **not** audited; fixing only the port would leave the
+app wrong and create fork drift.
+
+Integrity issue: [SL#826](https://github.com/gasyoun/SanskritLexicography/issues/826) ·
+fix queued as [H1714](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1714-Sonnet_SanskritLexicography_ls-resolver-rvps-mislink-wiring-fix_27.07.26.md) ·
+per-directory table: [`scan_target_audit.tsv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/data/pwg_scan_index_tracker/scan_target_audit.tsv).
+
+_27-07-2026 · [H1706](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1706-Opus_csl-observatory_pwg-scan-index-tracker-reuse_26.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
