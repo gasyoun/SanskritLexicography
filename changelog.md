@@ -15,6 +15,7 @@ not an error.
 ## [Unreleased]
 
 ### Added
+- **FINDINGS §496 — edit-distance record linkage over Sanskrit headwords is 70–98% false matches** (27-07-2026, Opus 5 1M `claude-opus-5[1m]`, [H1477](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1477-Opus_csl-observatory_capture-recapture-fuzzy-linkage-corrector-pair_22.07.26.md) / [csl-observatory PR #120](https://github.com/sanskrit-lexicon/csl-observatory/pull/120)): measured on the OBS-T correction corpus — 606/863 pw, 474/616 mw, 128/220 bur edit-distance-1 links join *distinct real headwords*, because a 20k–290k-record Sanskrit inventory is saturated with minimal pairs. The entry gives what works instead (decode provable SLP1 residue; fold only non-phonemic features — `form_key` collides 0.2–0.4% of a dictionary's own records where `norm` collides 9–16%; use the correction payload where available) and, more importantly, the two annotation-free ways to *measure* any headword matcher's false-match rate against `csl-orig`. Applies to SanskritSpellCheck candidate generation, csl-atlas crosswalks, WhitneyRoots form matching and kosha joins.
 - **GAPS residual H1745–H1747** (27-07-2026, Grok 4.5): FINDINGS §493–§495 (routing κ=1.0 LLM second pass; homonym 38 single-lemma_id ceiling; Cyrillic name seed inventory 61/47).
 
 
