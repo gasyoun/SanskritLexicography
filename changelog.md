@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Changed
+- **H1724 worktree backlog drain (Sonnet 5 `claude-sonnet-5`, 27-07-2026):** 20 of 23 linked worktrees resolved — 17 turned out already-landed under a different squash-commit (PRs #692/#695/#697/#715–#724/#746/#815/#719), removed with zero content loss; 2 stale drafts (a superseded release-notes scratch file, a retroactive changelog footnote for a burnt `v1.15.0` tag) parked as patches in [`Uprava/parked_patches/`](https://github.com/gasyoun/Uprava/tree/main/parked_patches) and removed; 1 genuinely unlanded H1437 phase-3 branch handed off for rebase-through-conflicts and PR. 3 escalated for a human ruling, not resolved: a disconnected 2014–2026 parallel git history (434/458 commits, no shared ancestor with `master`) and a Codex worktree carrying 30 uncommitted files that look like live in-progress work. Full disposition table: [H1724](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1724-Sonnet_SanskritLexicography_worktree-backlog-drain-unpushed-work_27.07.26.md).
+
 ## [1.92.0] — 2026-07-27
 
 ### Added
