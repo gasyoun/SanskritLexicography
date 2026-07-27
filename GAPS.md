@@ -1,6 +1,6 @@
 # GAPS — the Sanskrit-data known-unknowns frontier
 
-_Created: 08-07-2026 · Last updated: 11-07-2026_
+_Created: 08-07-2026 · Last updated: 27-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is what is *known*. This file is its **negative space** — the act FINDINGS cannot hold: **not-yet-knowing**, the frontier of things we have explicitly NOT measured. The moment a gap is measured, it **graduates** to a FINDINGS row (delete it here, cite the finding there). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/GAPS.md`](https://github.com/gasyoun/Uprava/blob/main/GAPS.md).
 
@@ -132,5 +132,17 @@ How to close: письмо Леонова → либо влить прислан
 > **Source:** ✍️ H497 role-guide session, 10-07-2026 (Fable 5 `claude-fable-5`); registered via /artifact-propagate epistemic pass 11-07-2026.
 
 ---
+
+### §13. No Russian Uttarakāṇḍa (or Kiṣkindhā, or Yuddha) exists — 1,765 PWG `R.` book-7 citations wait on a translator
+
+🟠 ✍️ **We have NOT got, and cannot compute, a Russian translation of record for Rāmāyaṇa kāṇḍas 4, 6 and 7.**
+
+Why it matters: `citation_tm` reuse is live for `R.` books 1–2 (Schlegel, direct) and 3–6 (Gorresio, via the H1656/H1689 content concordance), but every book-7 lookup — **1,765** plain `R.` citations in the full digitisation, 4.5% of the `R.` mass — returns `ru-translation-unpublished`. Kāṇḍa 6 is the sharpest case: H1656's map already pairs 2,295 Gorresio verses with yuddha loci, so the day a Russian yuddhakāṇḍa is ingested, 288 store references become reusable with **no further alignment work**.
+
+Blocker: **external and human** — not data, not method. Gryntser's academic translation stopped after book 3; Leonov's covers Sundara. [RussianRamayana](https://github.com/gasyoun/RussianRamayana) `data/project-status.json`: book IV `blocked` (awaiting Serebryany's introduction), V `in-progress` (manuscript ~2027), VI `draft-ready` (~2029). Book VII is not in the pipeline.
+
+How to close: watch the RussianRamayana project status; on ingest, key the RU against the **vulgate** numbering PWG cites rather than the critical text currently in `07_ramayana-uttarakanda.jsonl` ([CONTRADICTIONS §9](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)) — that choice decides whether any Bombay concordance is needed at all ([DEAD_ENDS §13](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md)).
+> **Source:** [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/COVERED_TEXTS_RU.md` § kāṇḍas 4/6/7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/COVERED_TEXTS_RU.md) · 27-07-2026 · Opus 5 1M `claude-opus-5[1m]`
+
 
 _Dr. Mārcis Gasūns_

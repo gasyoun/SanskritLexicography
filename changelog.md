@@ -14,6 +14,25 @@ not an error.
 
 ## [Unreleased]
 
+## [1.90.0] — 2026-07-27
+
+
+### Added
+- **H1705 artifact propagation — the deliverable registered on every surface that
+  applies.** `FEATURES_INDEX.md` gains **E50**, one row for the whole Rāmāyaṇa
+  edition-alignment family (Gorresio inventory + 19,852-verse e-text + Gorresio↔Southern
+  verse map + the new Bombay inventory + Southern↔critical map) — H1656 and H1689 had
+  never been registered there either, so this closes three handoffs' worth of index gap
+  at once. The epistemic residue is now recorded rather than left in a report:
+  **DEAD_ENDS §13** (the Bombay concordance route, with the "don't retry unless" order of
+  operations), **GAPS §13** (no Russian Uttarakāṇḍa — an external, human blocker, with
+  what it would unblock: 288 kāṇḍa-6 references are already mapped and waiting), and
+  **CONTRADICTIONS §9** (the "Southern"-labelled critical text, 🔴 unresolved, blocking
+  three downstream reads). Plus a metadoc for the verdict doc — limitations first, since
+  the doc's subject is a *non*-action whose reasoning leaves no other artifact — and the
+  `RussianTranslation/.ai_state.md` entry, flagged **not next-actionable** so the lane is
+  not re-opened as a numbering task.
+
 ## [1.89.1] — 2026-07-27
 
 ### Fixed
