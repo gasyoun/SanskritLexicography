@@ -38,7 +38,7 @@ that every emitted triple/element has a named producer and a stated reliability.
 | 5 | Validate the Turtle with a real RDF parser + SHACL (`release/shapes.ttl`) | open — emitter is string-based, never parsed back |
 | 6 | Full-store run + scale/coverage report (fixture is 22 rows) | open |
 | 7 | Resolve the base-IRI `@DECIDE` before anything is published | **done** 27-07-2026 — ruled `…/repwg/` ([#809](https://github.com/gasyoun/SanskritLexicography/issues/809)) |
-| 7a | Register the w3id PURL so the IRIs actually resolve | open — until then they are permanent identifiers that 404 |
+| 7a | Register the w3id PURL so the IRIs actually resolve | **was already done** — [#6386](https://github.com/perma-id/w3id.org/pull/6386) 19-07-2026, live since; `repwg` rules + permanent `pwg-ru` 301 in [#6440](https://github.com/perma-id/w3id.org/pull/6440). The "not registered" claim in v1 of this profile was wrong — see FINDINGS §487 |
 | 7b | Emit `dct:creator` / `dct:publisher` on the lexicons | open — currently only source/license/wasGeneratedBy/created |
 | 8 | Re-export once the G1 `gloss_lang` false-positive rate is fixed | open (blocked on the classifier issue) |
 | 9 | Hand the *published* graph + SPARQL surface to `csl-standards` | open — boundary rule, not this repo's job |

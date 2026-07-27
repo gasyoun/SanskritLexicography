@@ -7,10 +7,10 @@ This is the LOD upgrade of the flat one-way string export in
 (``https://example.org/pwg/ru/``), string-only ``ontolex:usage`` and no query
 surface, this emitter adds the five things a real LOD graph needs:
 
-  1. a real, **configurable** IRI namespace (``--base-iri``; defaults to the
-     ruled w3id namespace, see LOD_GRAPH.md "Namespace ruling". The PURL is not
-     registered yet, so the IRIs are permanent identifiers that do not yet
-     resolve -- do not claim dereferenceability until it is);
+  1. a real, dereferenceable, **configurable** IRI namespace (``--base-iri``;
+     defaults to the ruled w3id namespace, registered and resolving since
+     19-07-2026 -- see LOD_GRAPH.md "Namespace ruling". The namespace resolves;
+     instance DATA behind it is still withheld by the G5 gate);
   2. ``vartrans`` sense<->sense relations, fed from ``pwg_ru_relationships.jsonl``
      (restate / add / relocate / correct, abridging vs additive, per layer);
   3. PROV-O evidence grades on every sense (approved / human-reviewed /
@@ -60,8 +60,10 @@ DEFAULT_RELEASE = os.path.join(ROOT, 'release')
 # which would claim to BE the Cologne text, and not the superseded `pwg-ru`,
 # which named a language four of the five graphs do not carry. w3id.org is the
 # community PURL redirector, so a future project domain becomes the redirect
-# target behind this IRI and no identifier ever changes. NOT yet registered:
-# these resolve to nothing today. Overridable with --base-iri.
+# target behind this IRI and no identifier ever changes. REGISTERED and live
+# (w3id #6386 since 19-07-2026; #6440 adds `repwg` + a permanent 301 from
+# `pwg-ru`) -- changing this constant changes a namespace that RESOLVES, so any
+# further edit needs a matching w3id PR. Overridable with --base-iri.
 DEFAULT_BASE = 'https://w3id.org/sanskrit-lexicon/repwg/'
 
 APPROVED_STATUSES = {'approved', 'human_reviewed'}

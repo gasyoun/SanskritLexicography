@@ -10,6 +10,30 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — the `repwg` rename shipped on a false premise; namespace was already live (27-07-2026)
+
+- The rename landed with docs stating the w3id PURL was **not registered** and
+  the IRIs "404 today". That was wrong: `/sanskrit-lexicon/` has been registered
+  and content-negotiating since 19-07-2026
+  ([w3id #6386](https://github.com/perma-id/w3id.org/pull/6386), H1319), with the
+  rewrite rule hardcoded to `pwg-ru` — so the rename pointed every generated IRI
+  at a namespace with no rule.
+- **Repaired the way permanent identifiers must be — redirect, never withdraw:**
+  [w3id #6440](https://github.com/perma-id/w3id.org/pull/6440) adds the `repwg`
+  rules and keeps every `^pwg-ru/…` as a permanent `301` to its `repwg`
+  equivalent, so anything minted under the old name still resolves.
+- Published target updated in step
+  ([pwg-ru-lod](https://github.com/gasyoun/pwg-ru-lod)): `shapes.ttl` prefix,
+  namespace index, and the IRI-scheme row that claimed a single lexicon (there
+  are four; language belongs at `lexicon/{id}`, not in the namespace root).
+- Corrected the false claims in `LOD_GRAPH.md`, `export_lod.py`, the DE-edition
+  profile §5 and its metadoc.
+- **Root cause recorded as [FINDINGS §487](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md):**
+  `LOD_GRAPH.md` still carried `## Open decision` eight days after
+  [GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)
+  recorded the ruling. A stale doc is more dangerous than a missing one — a
+  missing section prompts a search, one asserting "still open" terminates it.
+
 ### Changed — LOD namespace ruled: `pwg-ru` → `repwg` ("rePWG"), one namespace for all graphs (27-07-2026)
 
 - Publication-IRI `@DECIDE` **closed** ([#809](https://github.com/gasyoun/SanskritLexicography/issues/809)).

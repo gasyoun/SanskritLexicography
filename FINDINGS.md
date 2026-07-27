@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §487) whatever its section, so existing numbers never shift; when a finding is later
+(currently §488) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -65,6 +65,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§484. A quarter of the DCS nominal mass has no case at all — `feat_case='Cpd'` is a compound member, not a ninth case](#484-a-quarter-of-the-dcs-nominal-mass-has-no-case-at-all-feat_casecpd-is-a-compound-member-not-a-ninth-case) — 724,676 of 2,996,410 NOUN/ADJ tokens are `feat_case='Cpd'` compound members with no case, and 8,542 more are untagged — a "case distribution" is wrong whether it silently includes them or silently drops them.
 - 🟡 [§485. The 2021-sourced "Nom.Sg = 34.6% of nominal forms, dual < 1% everywhere" does not reproduce on DCS-2026 — and the second half only survives read per cell](#485-the-2021-sourced-nomsg-346-of-nominal-forms-dual-1-everywhere-does-not-reproduce-on-dcs-2026-and-the-second-half-only-survives-read-per-cell) — recomputed on DCS-2026: Nom.Sg 33.7% (not 34.6%), dual 2.07% pooled / 0.91% at the largest cell — a non-reproduction, not a refutation, since the 2021 denominator is unstated.
 - 🔴 [§486. Before OCR-ing a library scan, check whether the library already published its OCR — and measure against it rather than guessing](#486-before-ocr-ing-a-library-scan-check-whether-the-library-already-published-its-ocr--and-measure-against-it-rather-than-guessing) — the BSB publishes per-page hOCR via `seeAlso` on every IIIF canvas, 2.5× better than local tesseract 5 `san`; the scans carry no text layer, but the OCR still did not need doing.
+- 🔴 [§487. A repo doc can contradict the hub for days — and an agent that trusts the doc will renumber a live, registered identifier](#487-a-repo-doc-can-contradict-the-hub-for-days--and-an-agent-that-trusts-the-doc-will-renumber-a-live-registered-identifier) — `LOD_GRAPH.md` still said `## Open decision` eight days after the hub recorded the ruling and the w3id PURL went live; the rename that followed pointed every IRI at a namespace with no rewrite rule. A doc asserting a decision is OPEN is unverified until the hub agrees.
 - 🔴 [§471. A corpus-candidate matcher keyed on a dictionary's OWN bibliographic prose will bury its biggest wins in the "no corpus side exists" class](#471-a-corpus-candidate-matcher-keyed-on-a-dictionarys-own-bibliographic-prose-will-bury-its-biggest-wins-in-the-no-corpus-side-exists-class--pwgs-pāṇini-and-manu-41910-citations-sat-in-dcs-lacks) — a `Verzeichniss der Abkürzungen` names works by author in the editor's language, not by the Sanskrit title a corpus indexes; PWG's Pāṇini and Manu (41,910 citations) sat in `DCS-LACKS` until matched on the work, not the prose.
 - 🔴 [§472. Choosing a confidence tier ONCE PER SENSE and then stamping it on many passages inflates the strongest tier](#472-choosing-a-confidence-tier-once-per-sense-and-then-stamping-it-on-many-passages-inflates-the-strongest-tier--413-of-h1670s-exact-verse-rows-were-chapter-level) — 4.13% of H1670's exact-verse rows were chapter-level addresses; let the level travel with the passage, and grep the strongest tier for the address shape it is supposed to exclude.
 - 🔴 [§468. PWG's plain `R.` is a THREE-edition composite](#468-pwgs-plain-r-is-a-three-edition-composite--books-36-carry-gorresio-bengal-recension-numbering-so-keying-them-into-a-southern-recension-text-silently-returns-the-wrong-verse) — books 1–2 cite Schlegel, books 3–6 Gorresio (Bengal recension), book 7 Bombay (pwgbib 1.247; store sarga maxima 79/63/94 = Gorresio's counts). `citation_tm` had returned the wrong verse's RU silently for ~900 in-range R. 3/5 refs; books 3–6 now `unmapped_locus_scheme` until the Gorresio↔Southern concordance validates (H1656).
@@ -4406,3 +4407,50 @@ Publication of everything derived from them was ruled open on 27-07-2026; there 
 rights gate on this line of work.
 
 _27-07-2026 · [H1715](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1715-Opus_csl-observatory_pwg-kosa-etext-pilot-amara-abhidhana_27.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+
+### §487. A repo doc can contradict the hub for days — and an agent that trusts the doc will renumber a live, registered identifier
+
+🚨 **Process integrity.** On 27-07-2026 a session renamed the project's LOD namespace
+(`w3id.org/sanskrit-lexicon/pwg-ru` → `…/repwg`) after reading, in
+[`RussianTranslation/LOD_GRAPH.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LOD_GRAPH.md),
+a section headed **`## Open decision`** that called the IRI "a documented placeholder pending
+the publication-domain `@DECIDE`". On that basis it told a human the rename was free —
+nothing published, nothing citable, "now or never".
+
+Every part of that premise was false. The decision had been **closed eight days earlier**:
+[`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)
+carried `✅ RESOLVED 19-07-2026 (MG) → option (a): w3id.org PURL`, with the registration
+([w3id #6386](https://github.com/perma-id/w3id.org/pull/6386)) merged and the redirect
+**live and content-negotiating**. The rename therefore pointed every generated IRI at a
+namespace with no rewrite rule, while the rule that did exist was hardcoded to the old name.
+
+**The generalisable trap: a stale doc is more dangerous than a missing one.** A missing
+section prompts a search; a section that positively asserts "still open" *terminates* the
+search. Freshness cannot be inferred from a file's own contents — `LOD_GRAPH.md` looked
+authoritative, was well-written, and was wrong. The org's own rule already says the hub is
+the source of truth for decisions; what this incident adds is that **an in-repo doc asserting
+a decision is OPEN must be treated as unverified until the hub agrees**, because the failure
+is asymmetric: a doc lagging *behind* a resolution invites re-deciding something already
+settled, and for identifiers that is irreversible by construction.
+
+**Cheap check that would have caught it**, before touching any published identifier:
+
+```
+git -C Uprava grep -niE "w3id|base.?iri|publication.?domain" -- GTD_NEXT_ACTIONS.md
+curl -sI https://w3id.org/<namespace>/            # or read perma-id/w3id.org/<ns>/.htaccess
+```
+
+Note the second one has a failure mode of its own: from this network `w3id.org` returns curl
+`000` (connection refused, not `404`), so a naive probe reads as "not registered". The
+authoritative check is the **rewrite rule in `perma-id/w3id.org`**, reachable via
+`raw.githubusercontent.com`, not an HTTP probe of the PURL.
+
+Damage was contained because only the schema layer was published (namespace index +
+`shapes.ttl`; graph data withheld behind the G5 gate), and the repair is the correct one for
+permanent identifiers: **redirect, never withdraw** — [w3id #6440](https://github.com/perma-id/w3id.org/pull/6440)
+adds the `repwg` rules and keeps every `^pwg-ru/…` as a permanent `301`.
+
+> **Source:** [issue #809](https://github.com/gasyoun/SanskritLexicography/issues/809) ·
+> [PR #837](https://github.com/gasyoun/SanskritLexicography/pull/837) (the rename) ·
+> [w3id #6386](https://github.com/perma-id/w3id.org/pull/6386) / [#6440](https://github.com/perma-id/w3id.org/pull/6440) —
+> 27-07-2026, Opus 5 (`claude-opus-5[1m]`).
