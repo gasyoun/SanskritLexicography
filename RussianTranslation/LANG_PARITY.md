@@ -88,7 +88,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "ru"
     ],
     "verdict": "INTENTIONAL-DIVERGENCE",
-    "note": "H1304: the citation translation-memory is RU-only by construction. The reuse assets are Russian translations of record (Elizarenkova RV, Leonov Ramayana, Ocean of Stories, ...); there is NO parallel English citation-TM corpus, so there is nothing to port to the EN path. If an EN citation-TM corpus is ever assembled, this becomes a GAP to port; until then RU-only is intended, not an oversight.",
+    "note": "H1304: the citation translation-memory is RU-only by construction. The reuse assets are Russian translations of record (Elizarenkova RV, Leonov Ramayana, Ocean of Stories, ...); there is NO parallel English citation-TM corpus, so there is nothing to port to the EN path. If an EN citation-TM corpus is ever assembled, this becomes a GAP to port; until then RU-only is intended, not an oversight. H1717 (27-07-2026): re-affirmed after H1705/#823 split a new miss reason, ru-translation-unpublished, out of locus-not-in-corpus. The new reason is about Russian translations of record, RU-only by the same construction as the entry it lives under, and assembles no EN citation-TM corpus, so the verdict still holds; re-pinned (hash already re-verified in #837/b060e35a).",
     "tracking": "",
     "verified_sha256": {
       "src/citation_tm.py": "af4f42298469ccd36e037ef53fdfe818d0fd54a3e6a0618a6cc29f63b3b8baa1"
