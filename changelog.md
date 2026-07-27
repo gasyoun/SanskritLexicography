@@ -14,6 +14,20 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **Review sheets are now default-denied in `.gitignore`, not enumerated per
+  generator.** `RussianTranslation/.gitignore` listed each sheet family by prefix
+  (`h178_`/`h1303_`/`h1306_`/`h1682_`/`g5_`/`g6_`) plus one line per
+  compound-differs sheet, so every *new* generator leaked until someone remembered
+  to add a line — the gorresio southern-map audit sheet did exactly that and sat
+  stageable in a public repo. Replaced with three shape rules
+  (`review/*_sheet.html`, `review/*_review.html`, `review/*_decisions.json`) plus
+  an explicit `!` allowlist for the three sheets that are intentionally published
+  (renou pilot ×2, kochergina 4rows). Publishing a sheet is now a deliberate act;
+  the H1404 `review/locks/` and `*_frame.tsv` counterparts stay committed.
+  Verified: all 8 leaking local artifacts are ignored, and every currently-tracked
+  file under `RussianTranslation/review/` is still trackable.
+
 ## [1.90.0] — 2026-07-27
 
 
