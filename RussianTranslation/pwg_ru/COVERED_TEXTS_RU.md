@@ -172,7 +172,7 @@ encodes the clean ones and reports a typed non-hit for the rest.
 | KATHĀS. | `taranga,verse` (2-number) | `lambaka.taranga.verse` (3-number) | best-effort |
 | **MBH.** | **continuous Calcutta śloka** (5,7331) | `parvan.adhyaya.verse` (critical) | **UNMAPPED** — the cumulative-adhyāya candidate was built and measured 26-07-2026 (H1652) at 11–16% verse accuracy and REJECTED; needs the Calcutta text itself |
 | **R. GORR.** (+ plain R. books 3–6) | Gorresio Bengal recension | Southern recension (Leonov) | **CONTENT-BASED verse concordance (H1656 + H1689)** — matched/fuzzy → hit; Bengal-only → `no-southern-counterpart`; kāṇḍas 4/6/7 → `ru-translation-unpublished` (`gorresio-etext-gap` extinct since the H1689 OCR pass) |
-| **R. book 7** | Bombay ed. 1859 — 111 sargas + 13 interpolated (`23.1–23.5`, `37.1–37.5`, `59.1–59.3`) | corpus `07_ramayana-uttarakanda`, 100 sargas, **Sanskrit-only, critical text** | **NO MAP, and none is owed** — measured NOT ≈1:1 under H1705 (11/100 sargas share a verse count); 127 of 1,781 citations name a sarga the corpus cannot carry. Returns `ru-translation-unpublished`: no Russian uttarakāṇḍa exists |
+| **R. book 7** | Bombay ed. 1859 — 111 sargas + 13 interpolated (`23.1–23.5`, `37.1–37.5`, `59.1–59.3`) | corpus `07_ramayana-uttarakanda`, 100 sargas, **Sanskrit-only, critical text** | **NO MAP, and none is owed** — measured NOT ≈1:1 under H1705 (11/100 sargas share a verse count); 127 of 1,765 citations name a sarga the corpus cannot carry. Returns `ru-translation-unpublished`: no Russian uttarakāṇḍa exists |
 
 The remaining UNMAPPED case returns `unmapped_locus_scheme` (a documented GAP, **not** a miss):
 
@@ -365,7 +365,7 @@ measurements say so without ambiguity:
 | does the corpus file carry Russian? | **no — 2,690 `sa` segments, 0 `ru`** (kāṇḍa 6 likewise; kāṇḍas 1/2/3/5 are fully paired) | there is nothing to reuse even from a perfect map |
 | is it the Southern text of record? | **no** — 2,688/2,690 rows of `ramayana_southern_critical_concordance.tsv` align to the DCS **critical** edition at the identical `sarga.verse`, 95.5% at score 1.0; kāṇḍas 1/2/3/5 sit at 1–3% identity | the "Southern" column is a mislabel for kāṇḍas 6–7 |
 | is Bombay ≈1:1 with it? | **no** — Bombay 111 sargas + 13 interpolated vs 100; identical verse count in **11/100** sargas; delta −14…+18, mean +4.7 | a direct-with-offset scheme would be dishonest |
-| how much PWG mass is at stake? | **1,781** plain `R.` book-7 citations in the full digitisation (4.5% of 39,845), sargas 1–111; **127** cite a sarga >100 | those 127 cannot resolve against a 100-sarga text at all |
+| how much PWG mass is at stake? | **1,765** plain `R.` book-7 citations in the full digitisation (4.5% of 39,222), sargas 1–111, + 16 edition-qualified (`R. ed. Bomb.` 14, `R. SCHL.` 2); **127** cite a sarga >100 | those 127 cannot resolve against a 100-sarga text at all |
 
 So the blocker order for book 7 is **the Russian first**, and it is not near: the
 [RussianRamayana](https://github.com/gasyoun/RussianRamayana) pipeline lists book IV
@@ -378,7 +378,8 @@ as [`src/ramayana_bombay_inventory.tsv`](https://github.com/gasyoun/SanskritLexi
 [FINDINGS §480](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
 
 > Counting scope: the 232/288/376 figures in the table above are **store** counts
-> (the pwg_ru working set); the 1,781 is every `<ls>` in the full csl-orig `pwg.txt`.
+> (the pwg_ru working set); the 1,765 is every plain-`R.` `<ls>` in the full csl-orig
+> `pwg.txt`, edition-qualified forms counted separately.
 > Different denominators, both correct — do not compare them directly.
 
 **Resolver consequence, applied 26-07-2026.** `_RAMA_GORR_WORK` in
