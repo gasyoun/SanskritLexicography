@@ -201,14 +201,18 @@ Edition-layer coverage: `pwg` 3 · `pw` 6 · `sch` 3 · `pwkvn` 5 · `nws` 3.
 5. **`edition_rel` is rule-confidence only** (`confidence: "rule"`), inherited
    from H1624 G4 — the H180 typology *display names* are still unvoted, so the
    machine classes are exported under their rollup names.
-6. **The base IRI is ruled but does not resolve yet.** The namespace
-   `https://w3id.org/sanskrit-lexicon/repwg/` is settled
-   ([issue #809](https://github.com/gasyoun/SanskritLexicography/issues/809),
+6. **The base IRI is ruled and registered; the instance data behind it is not
+   published.** The namespace `https://w3id.org/sanskrit-lexicon/repwg/` is
+   settled ([issue #809](https://github.com/gasyoun/SanskritLexicography/issues/809),
    rationale in [LOD_GRAPH.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LOD_GRAPH.md)
    § Namespace ruling) — `repwg` = "rePWG", a *re-edition* of PWG, deliberately
-   not `pwg`. But the w3id PURL is **not registered**, so every IRI here is a
-   permanent identifier that currently 404s. Do not describe the graph as having
-   dereferenceable IRIs until that PR lands. Override with `--base-iri`.
+   not `pwg`. The `/sanskrit-lexicon/` PURL has resolved since 19-07-2026
+   ([w3id #6386](https://github.com/perma-id/w3id.org/pull/6386)); the `repwg`
+   rules plus a permanent 301 from `pwg-ru` are
+   [w3id #6440](https://github.com/perma-id/w3id.org/pull/6440). What is
+   published behind it is the namespace index + `shapes.ttl` only — an instance
+   IRI from this export resolves to a 404 until the G5 gate clears the data, so
+   do not cite one as a live resource. Override with `--base-iri`.
 7. **Scale is untested beyond the fixture.** The profile has been exercised on
    the 22-row golden fixture and on store slices, not on a full-store run.
 

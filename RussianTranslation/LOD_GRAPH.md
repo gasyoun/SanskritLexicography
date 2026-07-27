@@ -42,12 +42,13 @@ upgrades it in place (it does **not** replace `export_interop.py`, which still
 produces the TEI Lex-0 + reverse-index artifacts) and adds the five things a real
 LOD graph needs:
 
-1. **Real, configurable IRIs** — `--base-iri`, defaulting to the **ruled**
-   namespace `https://w3id.org/sanskrit-lexicon/repwg/` (see *Namespace ruling*
-   below). The w3id PURL is **not yet registered**, so these are permanent
-   identifiers that do not yet resolve — do not claim dereferenceability until
-   it is. Instance resources are absolute `<base+path>` IRIs; vocabulary terms
-   are the `pwglex:`/`gr:` prefixes.
+1. **Real, dereferenceable, configurable IRIs** — `--base-iri`, defaulting to
+   the **ruled** namespace `https://w3id.org/sanskrit-lexicon/repwg/` (see
+   *Namespace ruling* below). The `/sanskrit-lexicon/` PURL is **registered and
+   live** ([w3id #6386](https://github.com/perma-id/w3id.org/pull/6386),
+   19-07-2026): content-negotiated 303 to GitHub Pages, Turtle for an RDF
+   `Accept`, HTML otherwise. Instance resources are absolute `<base+path>` IRIs;
+   vocabulary terms are the `pwglex:`/`gr:` prefixes.
 2. **`vartrans` sense↔sense relations** from
    [`pwg_ru_relationships.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ru_relationships.jsonl)
    — `restate`/`add`/`relocate`/`correct`, `abridging`/`additive`, per source
@@ -214,14 +215,31 @@ domain becomes the redirect target behind it. This is why w3id-first is the
 correct order — publishing on a project domain first would have been the
 unfixable choice.
 
+### Registration state
+
+The `/sanskrit-lexicon/` PURL has been **registered and resolving since
+19-07-2026** ([w3id #6386](https://github.com/perma-id/w3id.org/pull/6386),
+H1319) — a parent-level claim, so sibling datasets need no further w3id PR. The
+rename adds the `repwg` rules and keeps every `^pwg-ru/…` as a **permanent 301**
+to its `repwg` equivalent ([w3id #6440](https://github.com/perma-id/w3id.org/pull/6440)):
+an identifier is never withdrawn, only redirected. Published surface today is the
+namespace index + `shapes.ttl` at
+[gasyoun.github.io/pwg-ru-lod](https://gasyoun.github.io/pwg-ru-lod/) (repo name
+unchanged — it is the redirect target, not part of any identifier); graph data
+stays withheld behind the G5 sense-approval gate.
+
+> **Read the hub, not only this file.** This section stood as `## Open decision`
+> for eight days *after* the ruling had been recorded in
+> [`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md),
+> and a session that trusted it renamed a live, registered namespace believing
+> nothing was published. See FINDINGS §487.
+
 ### Still open
 
-- **The w3id PURL is not registered** — a PR against
-  [perma-id/w3id.org](https://github.com/perma-id/w3id.org) is needed before the
-  IRIs resolve. Until then they are valid permanent identifiers that 404, which
-  must be stated rather than implied away (FAIR requires resolution).
 - **`dct:creator` / `dct:publisher` are not emitted** — the graphs carry
   `dct:source`, `dct:license`, `prov:wasGeneratedBy`, `dct:created` only. This
   is the right place to answer "whose edition is this", and it is still empty.
+- **53 `pwglex:` terms are declared nowhere** — the vocabulary document is the
+  top RDF-release prerequisite (H1319), and `…/repwg/vocab#` currently 404s.
 
 _Dr. Mārcis Gasūns_
