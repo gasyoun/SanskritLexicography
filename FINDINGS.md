@@ -45,6 +45,8 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§494. Homonym token-attribution residual is a 38-group single-lemma_id ceiling](#494-homonym-token-attribution-residual-is-a-38-group-single-lemma_id-ceiling)
 - 🟡 [§495. Cyrillic name indices: 61 IAST-bearing seed files vs 47 pure-Cyrillic — rules still unsafe](#495-cyrillic-name-indices-61-iast-bearing-seed-files-vs-47-pure-cyrillic--rules-still-unsafe)
 - 🔴 [§496. Edit-distance record linkage over Sanskrit headwords is 70–98% false matches — measure the key, don't trust it](#496-edit-distance-record-linkage-over-sanskrit-headwords-is-7098--false-matches--use-a-length-preserving-normalization-key-and-measure-the-false-match-rate-against-the-dictionarys-own-inventory)
+- 🔴 [§497. The csl-orig L-number is not a join key — only 35 % of form-era L-codes still point at their own headword](#497-the-csl-orig-l-number-is-not-a-join-key--only-35--of-form-era-l-codes-still-point-at-their-own-headword)
+- 🟠 [§498. Word-initial Harvard-Kyoto capitals never decode — 113 correction-event headwords entered the corpus mis-transcoded](#498-word-initial-harvard-kyoto-capitals-never-decode--113-correction-event-headwords-entered-the-corpus-mis-transcoded)
 
 
 **Grammar & morphology data**
@@ -4609,3 +4611,114 @@ had been an artefact of the join rather than a fact about the dictionary.
 > the "Site linkage" section of [`reports/error_recapture.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/error_recapture.md) ·
 > [H1477](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1477-Opus_csl-observatory_capture-recapture-fuzzy-linkage-corrector-pair_22.07.26.md)
 > ([PR #120](https://github.com/sanskrit-lexicon/csl-observatory/pull/120)) — csl-observatory · 27-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
+
+### 497. The csl-orig L-number is not a join key — only 35 % of form-era L-codes still point at their own headword
+
+⚠️ **The most tempting key in the corpus, and the worst.** Joining two records of the same
+dictionary by their csl-orig `<L>` number looks strictly better than any string key: every
+correction event carries one, it is ~99 % populated in both OBS-T eras, it is an exact integer, and
+it involves no similarity judgement at all — so none of the false-match failure modes of
+[§496](#496-edit-distance-record-linkage-over-sanskrit-headwords-is-7098--false-matches--use-a-length-preserving-normalization-key-and-measure-the-false-match-rate-against-the-dictionarys-own-inventory)
+appear to apply. They do not need to. **The L-numbers themselves have drifted.**
+
+Measured over all 22,826 form-era (2014–2019 web-form) correction events carrying an L-code, asking
+only whether that `<L>` record in *current* csl-orig v02 still carries the headword the event claims:
+
+| Dict | Events with an L-code | Still valid | Valid % |
+|---|---:|---:|---:|
+| pw | 11,775 | 6,343 | **53.9 %** |
+| mwe | 53 | 26 | 49.1 % |
+| mw | 1,382 | 654 | 47.3 % |
+| pui | 643 | 245 | 38.1 % |
+| inm | 73 | 27 | 37.0 % |
+| bur | 693 | 215 | 31.0 % |
+| sch | 73 | 22 | 30.1 % |
+| pwg | 150 | 39 | 26.0 % |
+| ben | 462 | 78 | 16.9 % |
+| ap90 | 413 | 47 | 11.4 % |
+| gra | 378 | 32 | 8.5 % |
+| ccs | 2,229 | 136 | 6.1 % |
+| wil | 1,132 | 18 | 1.6 % |
+| ap | 495 | 6 | 1.2 % |
+| cae | 1,298 | 3 | **0.2 %** |
+| **TOTAL (26 dicts ≥ 25 events)** | **22,826** | **7,978** | **35.0 %** |
+
+**Even the best dictionary is a coin flip.** Two thirds of form-era L-codes no longer resolve to
+their own headword, and in cae, ap, wil, yat, skd and ieg the key is essentially noise (≤ 2.3 %).
+Record numbers were renumbered, split and merged across a decade of csl-orig editing; the number in
+a 2014 submission is a *historical* address, not a stable identifier. Anything that treats a stored
+`<L>` as a durable foreign key — crosswalks, citation resolvers, correction back-references,
+"same record" joins across snapshots — is resolving addresses that mostly no longer exist.
+
+**The spread is itself the control.** A broken lookup would read ~0 % everywhere; a range of
+0.2 %–53.9 % across dictionaries, on a single code path, measures per-dictionary renumbering
+history rather than a bug in the measurement. (No non-form OBS-T layer stores an L-code, so a direct
+same-method control on the git era is not available — the git-era join reads `<L>` out of csl-orig
+at build time and is stable by construction.)
+
+**Method, fully offline and annotation-free** — build `lcode → {<k1> spellings}` for the dictionary
+from current csl-orig v02, then for each event ask whether the claimed headword is among them. The
+comparison is deliberately generous (exact, Harvard-Kyoto-decoded and diacritic-folded spellings all
+count as a match) and an L-code absent from csl-orig counts as invalid, so **35 % is an upper bound
+on validity, i.e. a lower bound on drift.**
+
+> **Source:** re-derived independently over
+> [`correction_events.csv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/observatory/site/src/data/correction_events.csv)
+> (24,441 events) against [csl-orig v02](https://github.com/sanskrit-lexicon/csl-orig) ·
+> [H1766](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1766-Opus_csl-observatory_h1477-salvage-lcode-drift-hk-residue_27.07.26.md)
+> — salvaged from a duplicate [H1477](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1477-Opus_csl-observatory_capture-recapture-fuzzy-linkage-corrector-pair_22.07.26.md)
+> session whose figures were re-measured, not imported · 27-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
+
+### 498. Word-initial Harvard-Kyoto capitals never decode — 113 correction-event headwords entered the corpus mis-transcoded
+
+🐛 **A live data defect with a one-character cause.** `build_correction_events.looks_hk` decides
+whether a roman cell is Harvard-Kyoto and needs transcoding to IAST:
+
+```python
+if any(c.isupper() for c in tok[1:]):
+    return True
+return 'z' in tok
+```
+
+`tok[1:]` skips index 0 **by construction**, so a token whose only capital is *word-initial* is
+never recognised as HK. In Harvard-Kyoto the capitals at word-initial position are exactly the long
+vowels and vocalic r — `A` = ā, `I` = ī, `U` = ū, `R` = ṛ — which is precisely the set that matters
+for Sanskrit headwords. `Adeya` (= ādeya) and `Ahnika` (= āhnika) therefore reach the corpus
+un-decoded, keep their ASCII spelling, and can never match their git-era twin.
+
+571 form-era cells sit in this state. Attestation-testing each against the dictionary's own `<k1>`
+inventory — the decoded form is a real headword of that dictionary and the raw form is not —
+confirms **113 of them across 14 dictionaries as proven missed decodes (84 distinct pairs), with
+zero ambiguous cases** where both spellings are attested:
+
+| Dict | Proven | Examples |
+|---|---:|---|
+| pw | 81 | `Acidoha` → ācidoha, `Adeya` → ādeya, `Adinava` → ādinava, `Amantrayitavya` → āmantrayitavya |
+| bur | 6 | `Adi` → ādi, `Ahnika` → āhnika |
+| ap90 | 4 | `Ama` → āma, `Atmaka` → ātmaka |
+| ben | 4 | `Alambana` → ālambana, `Una` → ūna |
+| gra | 4 | `At` → āt, `Im` → īm |
+| ap · mw | 3 each | `Ayus` → āyus, `Adya` → ādya, `Atura` → ātura |
+| ccs · inm · pe · vei | 1 each | `Adideva` → ādideva, `Urjavya` → ūrjavya |
+
+**The naive fix is wrong and would corrupt data.** Firing `looks_hk` on any word-initial capital
+would transcode ordinary capitalised English cells (`Tear` → ṭear), which is how a handful of
+single-letter and English-headword hits — mwe, wil, cae — enter the count above as artefacts of
+applying an SLP1→IAST decode to dictionaries whose `<k1>` is English; the Sanskrit-headword core
+(pw, bur, ap90, ben, gra, ap, mw ≈ 105 of the 113) is unaffected by that caveat. **The safe fix is
+attestation-gated:** decode a word-initial capital only when the token is otherwise all-lowercase
+ASCII *and* the decoded form is attested as a `<k1>` of that dictionary while the raw form is not —
+the same measure-don't-guess discipline §496 argues for, applied to the decoder itself.
+
+**Direction of the error is known:** each missed decode suppresses a true recapture, and missed
+matches inflate a capture–recapture population estimate ([§496](#496-edit-distance-record-linkage-over-sanskrit-headwords-is-7098--false-matches--use-a-length-preserving-normalization-key-and-measure-the-false-match-rate-against-the-dictionarys-own-inventory)),
+so every affected dictionary's published "work remaining" is biased *upward* — small against pw's
+11.7k events, but the defect is in the shared ingest path, not in one report.
+
+> **Source:** confirmed at source in
+> [`scripts/build_correction_events.py`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/scripts/build_correction_events.py)
+> and measured over
+> [`correction_events.csv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/observatory/site/src/data/correction_events.csv)
+> with attestation against [csl-orig v02](https://github.com/sanskrit-lexicon/csl-orig) ·
+> [H1766](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1766-Opus_csl-observatory_h1477-salvage-lcode-drift-hk-residue_27.07.26.md)
+> · tracked as a csl-observatory `[integrity]` issue · 27-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
