@@ -17,6 +17,9 @@ not an error.
 ### Added
 - **GAPS residual H1745–H1747** (27-07-2026, Grok 4.5): FINDINGS §493–§495 (routing κ=1.0 LLM second pass; homonym 38 single-lemma_id ceiling; Cyrillic name seed inventory 61/47).
 
+### Changed
+- **H1724 worktree backlog drain** (27-07-2026, Sonnet 5 `claude-sonnet-5`): re-measured the 23-row H1724 inventory — 20 of 23 were already resolved by other sessions between mint and execution; landed the 1 genuinely-unlanded worktree (PR [#847](https://github.com/gasyoun/SanskritLexicography/pull/847), FINDINGS §496) and removed 1 clean/already-merged worktree; escalated the remaining 3 (`h1080-raw624`/`h1080-raw629` detached 434/458-commit parallel histories, `rt-harden-codex` live 30-dirty-file Codex session) to a human per the handoff's own escalation rule.
+
 
 ## [1.93.0] — 2026-07-27
 
