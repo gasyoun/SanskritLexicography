@@ -4398,12 +4398,10 @@ Verdict, report and the reproducible probe:
 · [`scripts/pwg_kosa_ocr_probe.py`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/scripts/pwg_kosa_ocr_probe.py).
 Re-scoped execution: [H1720](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1720-Sonnet_csl-observatory_pwg-kosa-bsb-hocr-ingest-align_27.07.26.md).
 
-⚠️ **Rights travel with the scans, and they are asserted rather than granted.** Both BSB
-editions carry [`NoC-NC/1.0`](https://rightsstatements.org/vocab/NoC-NC/1.0/) — *No
-Copyright, Non-Commercial use only* — a condition the library places on **its images**, not
-a licence permitting reuse; the underlying 1839/1847 works are public domain. Neither scan
-repository declares a licence at all. Harvesting and measuring are internal and unaffected;
-publishing derived text is a human decision, open in
-[GTD](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
+**Provenance to carry, not a gate.** The page images are the Bayerische
+Staatsbibliothek's (`bsb10250868`, `bsb10250953`), and both scan repositories already
+credit the library in their own `app1/info.html` — derived artifacts keep that credit.
+Publication of everything derived from them was ruled open on 27-07-2026; there is no
+rights gate on this line of work.
 
 _27-07-2026 · [H1715](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1715-Opus_csl-observatory_pwg-kosa-etext-pilot-amara-abhidhana_27.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
