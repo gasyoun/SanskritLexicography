@@ -15,3 +15,13 @@ _Created: 27-07-2026 · Last updated: 27-07-2026_
 Systema deploy: root SSH → `deploy.sh` → `5049b4c` + migration; external smoke hairpin fail only.
 
 _Dr. Mārcis Gasūns_
+
+## 27-07-2026 — GAPS residual measure batch H1745–H1747 / H1746 (Grok 4.5)
+
+| Gap | Finding | Headline |
+|---|---|---|
+| SL §10 routing κ | §493 | Grok second pass 24/24, κ=1.0 (not human IAA) |
+| SL §4 homonym residual | §494 | 26 reliable / 46 unreliable (38 single-lemma_id) |
+| SL §6 Cyrillic names | §495 | 61 IAST seeds / 47 pure-Cyrillic; rules unsafe |
+
+Handoffs: H1745, H1746, H1747. Model: Grok 4.5 (`grok-4.5`).
