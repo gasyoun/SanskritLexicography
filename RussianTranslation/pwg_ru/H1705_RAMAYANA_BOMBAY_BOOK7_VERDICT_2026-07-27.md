@@ -83,7 +83,7 @@ the excess is per-sarga and unpredictable, not a constant.
 
 ## Scan-side findings for whoever does eventually OCR this
 
-Recorded in full as [FINDINGS §476](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md);
+Recorded in full as [FINDINGS §480](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md);
 in short, the Gorresio recipe (§470/§473) does **not** transfer unmodified:
 
 - **The text layer is a decoy.** `page.get_text()` returns ~1,100–2,300 chars per page — and

@@ -116,14 +116,40 @@ def stamp(html_text):
     return stamped, chash
 
 
+class LockCollision(Exception):
+    """A lock already exists for this sheet_id and binds a DIFFERENT sheet."""
+
+
 def write_lock(sheet_id, chash, ids, generated, locks_dir=None, gate=None,
-               source_html=None, mode="stamped"):
+               source_html=None, mode="stamped", force=False):
     """Emit the committed, metadata-only lock. ``mode`` is ``stamped`` (sheet
     HTML embeds CONTENT_HASH) or ``retro-unstamped`` (lock derived from a
     pre-standard source-of-record; its exports carry no content_hash and pass
-    validation only through --allow-legacy)."""
+    validation only through --allow-legacy).
+
+    Refuses to overwrite an existing lock that binds a DIFFERENT content hash
+    (raises ``LockCollision``), unless ``force`` or ``REVIEW_LOCK_FORCE=1``.
+    A sheet generator reads live data, so re-running one after its inputs have
+    moved silently re-cuts the sheet — and overwriting the lock is exactly what
+    makes votes already cast against the committed generation unapplicable, with
+    no signal until `validate_decisions.py` rejects the export AFTER the human
+    has spent them. An intentional re-cut is one flag away; an accidental one
+    now stops. (H1703: re-running the H1628 generator on a later master re-cut
+    its 200 cards and rewrote its live lock, because the upstream extractor
+    repairs had moved the queue underneath it.)
+    """
     locks_dir = locks_dir or DEFAULT_LOCKS_DIR
     os.makedirs(locks_dir, exist_ok=True)
+    existing = read_lock(sheet_id, locks_dir)
+    if (existing and existing.get("content_hash") not in (None, chash)
+            and not force and os.environ.get("REVIEW_LOCK_FORCE") != "1"):
+        raise LockCollision(
+            "lock for '%s' already binds %s, this run rendered %s.\n"
+            "  Votes cast against the committed generation would stop validating.\n"
+            "  Deliberate re-cut: pass force=True or set REVIEW_LOCK_FORCE=1.\n"
+            "  To REPRODUCE the committed generation instead, check out the commit\n"
+            "  that created the lock — its inputs have since moved — and run there."
+            % (sheet_id, existing.get("content_hash"), chash))
     lock = {
         "schema": LOCK_SCHEMA,
         "sheet_id": sheet_id,
@@ -245,6 +271,24 @@ def _selftest():
         blob = io.open(lock_path, encoding="utf-8").read()
         check("Generated 2026-07-25" not in blob and "<div" not in blob,
               "lock is metadata-only (no sheet body)")
+
+        # H1703: re-running a generator whose inputs moved must NOT silently
+        # rewrite a live lock — that is what invalidates votes already cast.
+        try:
+            write_lock("selftest-mini", "sha256:" + "0" * 64, ["a|1"], "2026-07-27",
+                       locks_dir=td)
+            check(False, "lock collision refused")
+        except LockCollision:
+            check(True, "lock collision refused")
+        again = write_lock("selftest-mini", chash, ["a|1", "b|2"], "2026-07-27",
+                           locks_dir=td)
+        check(read_lock("selftest-mini", locks_dir=td)["content_hash"] == chash,
+              "same-hash rewrite still allowed (idempotent regeneration)")
+        forced = write_lock("selftest-mini", "sha256:" + "1" * 64, ["a|1"], "2026-07-27",
+                            locks_dir=td, force=True)
+        check(read_lock("selftest-mini", locks_dir=td)["content_hash"].endswith("1" * 8),
+              "force=True re-cuts deliberately")
+        check(bool(again) and bool(forced), "write_lock returns its path")
 
         p2 = os.path.join(td, "retro_sheet.html")
         with io.open(p2, "w", encoding="utf-8", newline="\n") as fh:

@@ -129,6 +129,7 @@ jobs:
       - name: Validate research-layer sidecars (capability cards 5, 23)
         working-directory: RussianTranslation
         run: |
+          python src/mw_compounds.py --selftest
           python src/mfs_baseline.py --selftest
           python src/government_census.py selftest
           python src/government_sidecar.py --selftest

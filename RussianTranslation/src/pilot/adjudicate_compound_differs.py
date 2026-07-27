@@ -53,6 +53,7 @@ Usage:
 """
 import csv
 import io
+import itertools
 import json
 import os
 import re
@@ -73,6 +74,15 @@ INDEX_TSV = os.path.join(SRC, 'headword_index.tsv')
 FREQ_TSV = os.path.join(SRC, 'pwg_freq_order.tsv')
 FRAME_TSV = os.path.join(REPO, 'review',
                          'sanskritlexicography-pwg-compound-differs_stratified200_frame.tsv')
+LOCK_DIR = os.path.join(REPO, 'review', 'locks')
+
+# The blind arms, in the order they were drawn. Card ids come from each sheet's
+# COMMITTED LOCK, not its frame TSV: the lock is what `validate_decisions.py` will
+# check the human's export against, so it is the only list that can actually pay out.
+ARMS = (
+    ('arm1 (H1628)', 'sanskritlexicography-pwg-compound-differs_stratified200'),
+    ('arm2 (H1703)', 'sanskritlexicography-pwg-compound-differs_rulestrat_arm2'),
+)
 HWL_DIR = os.path.join(SL, 'HeadwordLists', 'now-2026')
 SG_ROOT = os.environ.get('SANSKRITGRAMMAR_ROOT', os.path.join(GITHUB, 'SanskritGrammar'))
 CSL_ORIG = os.environ.get('CSL_ORIG_ROOT', os.path.join(GITHUB, 'csl-orig'))
@@ -91,6 +101,8 @@ HEAD_RE = re.compile(r'\{#[^#]+#\}¦\s*')      # `{#headword#}¦ `
 ENTRY_RE = re.compile(r'<L>([\d.]+).*?<k1>([^<]*)<k2>([^<]*)')
 K2_STRIP = str.maketrans('', '', "/'^;| ")          # accents + the variant separator
 EMDASH = '—'
+GAP_MAX = 120          # chars of annotation a paren may sit behind and still be ours
+MAX_CANDIDATES = 24    # product cap when a part offers several candidate members
 
 
 def mask_brackets(s):
@@ -122,33 +134,93 @@ def balanced_paren(s):
     return None
 
 
-def pwg_toplevel(body):
-    """PWG's TOP-LEVEL member chain for the entry's own headword.
+def head_paren(body):
+    """The balanced paren belonging to THIS entry's own headword, or (None, why).
 
-    Returns (members|None, paren_text|None, status). Bracket-aware, and within each
-    `+`-separated part only the FIRST `{#…#}` is the member — what follows it is
-    PWG's annotation of that member (`<lex>f.</lex> von {#agamya#}`, `= {#loman#}`,
-    `<ab>acc.</ab> von {#agni#}`), not a second member.
+    Anchored on the entry's `{#headword#}¦`. The paren may open after annotation-only
+    material (`<lex>m.</lex>`, a sense number `1〉`) — but never after another
+    `{#word#}` (that paren analyses the OTHER word), nor too far into the article. A
+    paren behind a citation or a gloss is only PROVISIONALLY the headword's: it has to
+    compose the headword to count.
     """
     m = HEAD_RE.search(body)
     if not m:
-        return None, None, 'no_head'
+        return None, 'no_head'
     rest = body[m.end():]
-    if not rest.startswith('('):
-        return None, None, 'no_paren'
-    paren = balanced_paren(rest)
+    i = 0 if rest.startswith('(') else rest.find('(')
+    if i < 0:
+        return None, 'no_paren'
+    provisional = False
+    if i:
+        gap = rest[:i]
+        if MEMBER_RE.search(gap):
+            return None, 'paren_after_other_word'
+        if len(gap) > GAP_MAX:
+            return None, 'paren_too_far'
+        provisional = '<ls' in gap or '{%' in gap
+    paren = balanced_paren(rest[i:])
     if not paren:
-        return None, None, 'unbalanced'
+        return None, 'unbalanced'
+    return paren, 'ok_provisional' if provisional else 'ok'
+
+
+def covers_surface(hw, members):
+    """Do these members account for the headword's surface? Sandhi at a seam moves the
+    length by about a character, so a chain that accounts for the headword lands within
+    ±1 per member; one that falls short by more is analysing something else — typically
+    the base of a *derivative* of the compound (`DvajAgravatI` ← `DvajAgravant` ←
+    `Dvaja + agra`)."""
+    return abs(sum(len(m) for m in members) - len(hw)) <= len(members)
+
+
+def pwg_toplevel(body, hw=None):
+    """PWG's TOP-LEVEL member chain for the entry's own headword.
+
+    Returns (members|None, paren_text|None, status). Bracket-aware, and within each
+    `+`-separated part the member is normally the FIRST `{#…#}` — what follows it is
+    PWG's annotation of that member (`<lex>f.</lex> von {#agamya#}`, `= {#loman#}`,
+    `<ab>acc.</ab> von {#agni#}`), not a second member. Where a part offers several
+    candidates (a derivation ladder or disjunction: `von {#BAnumant#} oder von
+    {#BAnu#} + {#mati#}`) the chain is settled against the headword's surface, and
+    ambiguity is dropped rather than guessed.
+
+    Kept in sync with `pwg_toplevel()` in SanskritGrammar's
+    `scripts/pwg_compound_split.py` (SanskritGrammar#527), which BUILDS the layer this
+    pass adjudicates: if the two disagree about what PWG says, this queue measures the
+    extractors instead of the dictionaries.
+    """
+    paren, status = head_paren(body)
+    if not paren:
+        return None, None, status
     inner = mask_brackets(paren[1:-1])
-    members = []
+    parts = []
     for part in inner.split('+'):
         found = MEMBER_RE.findall(part)
         if not found:
             return None, paren, 'part_without_member'
-        members.append(found[0])
-    if len(members) < 2:
+        if len(found) > 1 and EMDASH in part.split('{#', 1)[1]:
+            return None, paren, 'ambiguous_sense_divider'
+        parts.append(found)
+    if len(parts) < 2:
         return None, paren, 'single_member'
-    return members, paren, 'ok'
+    first = [p[0] for p in parts]
+    if hw is None:
+        return first, paren, 'ok'
+    if covers_surface(hw, first):
+        return first, paren, 'ok'
+    if status == 'ok_provisional':
+        return None, paren, 'paren_after_article_text'
+    if all(len(p) == 1 for p in parts):
+        return first, paren, 'ok'
+    total = 1
+    for p in parts:
+        total *= len(p)
+    if total > MAX_CANDIDATES:
+        return None, paren, 'ambiguous_too_many_candidates'
+    covering = [c for c in itertools.product(*parts) if covers_surface(hw, c)]
+    if len(covering) == 1:
+        return list(covering[0]), paren, 'ok'
+    return None, paren, 'ambiguous_no_unique_cover'
 
 
 def mw_variants(k2):
@@ -310,6 +382,11 @@ APPROVE = 'pwg_members-right'
 REJECT = 'index_members-right'
 DEFER = 'unresolved'
 
+# `pwg_toplevel` statuses that mean PWG's entry states NO member chain for this
+# headword at all (as opposed to stating one this extractor could not resolve).
+NO_CHAIN_FOR_HEADWORD = frozenset((
+    'no_head', 'no_paren', 'paren_after_other_word', 'paren_after_article_text'))
+
 
 def adjudicate(k1, P, I, Pstar, why, Istar, n_variants, attested, freq):
     """First rule that fires wins. Returns (verdict, rule, reason, extras).
@@ -334,7 +411,7 @@ def adjudicate(k1, P, I, Pstar, why, Istar, n_variants, attested, freq):
                 'decided without repairing both extractors first'
                 % (why or 'mismatch', n_variants), ex)
     if not p_faithful and i_faithful:
-        if Pstar is None and why == 'no_paren':
+        if Pstar is None and why in NO_CHAIN_FOR_HEADWORD:
             return (REJECT, 'pwg_layer_no_headword_paren',
                     "PWG's entry states no member chain for this headword — the "
                     "shipped PWG members were lifted from a neighbouring chain (a "
@@ -597,6 +674,22 @@ def load_rows():
     return rows
 
 
+def lock_path_for(sheet_id):
+    return os.path.join(LOCK_DIR, sheet_id + '.lock.json')
+
+
+def load_arm_ids(sheet_id):
+    """A blind arm's card ids, from its committed lock. An unbound sheet yields an
+    empty arm on purpose: votes cast on it cannot be validated, so it prices nothing
+    and must not be counted as if it could."""
+    path = lock_path_for(sheet_id)
+    if not os.path.exists(path):
+        return set()
+    with io.open(path, encoding='utf-8') as fh:
+        data = json.load(fh)
+    return set(data.get('ids') or data.get('item_ids') or ())
+
+
 def load_freq():
     out = {}
     for r in read_tsv(FREQ_TSV):
@@ -656,7 +749,16 @@ def selftest():
     body2 = '{#agnizwut#}¦ ({#agni#} + {#stut#} von {#stu#}) <ls>P.</ls>'
     assert pwg_toplevel(body2)[0] == ['agni', 'stut']
     body3 = '{#aDikazAzwika#}¦ <lex>adj.</lex> von {#aDikazazwi#} ({#aDika#} + {#zazwi#})'
-    assert pwg_toplevel(body3)[2] == 'no_paren'
+    assert pwg_toplevel(body3)[2] == 'paren_after_other_word'
+    assert pwg_toplevel(body3)[2] in NO_CHAIN_FOR_HEADWORD
+    # the paren need not touch `¦`; a derivation ladder is settled by surface coverage
+    body4 = '{#BUsuta#}¦ 1〉 <lex>m.</lex> (<hom>2.</hom> {#BU#} + {#suta#})'
+    assert pwg_toplevel(body4, 'BUsuta')[0] == ['BU', 'suta']
+    body5 = '{#BAnumatin#}¦ (von {#BAnumant#} oder von {#BAnu#} + {#mati#})'
+    assert pwg_toplevel(body5, 'BAnumatin')[0] == ['BAnu', 'mati']
+    body6 = ('{#DvajAgravatI#}¦ (<lex>f.</lex> von {#DvajAgravant#} und dieses von '
+             '{#Dvaja#} + {#agra#})')
+    assert pwg_toplevel(body6, 'DvajAgravatI')[2] == 'ambiguous_no_unique_cover'
     v, segs = mw_variants('gaRa—kAri; gaRakAri')
     assert len(v) == 2 and segs == ['gaRa', 'kAri'], (v, segs)
     assert mw_variants('a/-kAma—karSana')[1] == ['a-kAma', 'karSana']
@@ -731,7 +833,7 @@ def run(write=False):
     for r in rows:
         Pstar, paren, why = (None, None, 'no_lid')
         if r['L_id'] and r['L_id'] in pwg:
-            Pstar, paren, why = pwg_toplevel(pwg[r['L_id']])
+            Pstar, paren, why = pwg_toplevel(pwg[r['L_id']], r['k1'])
         k2 = mw.get(r['k1'], '')
         variants, Istar = mw_variants(k2)
         verdict, rule, reason, ex = adjudicate(
@@ -762,27 +864,51 @@ def run(write=False):
     by_rule = Counter(v['rule'] for v in verdicts)
     by_stratum = Counter(v['stratum'] for v in verdicts)
 
-    # --- the blind arm: which of the 200 sampled rows land in which stratum
-    sampled = set()
-    if os.path.exists(FRAME_TSV):
-        for r in read_tsv(FRAME_TSV):
-            sampled.add((r['k1'], r['hom']))
-    arm = Counter(v['stratum'] for v in verdicts if (v['k1'], v['hom']) in sampled)
+    # --- the blind arms: which sampled cards land in which stratum
+    ids_in_queue = {v['id'] for v in verdicts}
+    arms = []
+    for label, sheet_id in ARMS:
+        ids = load_arm_ids(sheet_id)
+        live = ids & ids_in_queue
+        arms.append({
+            'label': label, 'sheet_id': sheet_id, 'cards': len(ids),
+            'cards_still_in_queue': len(live), 'cards_left_the_queue': len(ids - live),
+            'bound': os.path.exists(lock_path_for(sheet_id)),
+            '_by_stratum': Counter(v['stratum'] for v in verdicts if v['id'] in live),
+        })
+    arm = arms[0]['_by_stratum'] if arms else Counter()
+    pooled = Counter()
+    for a in arms:
+        pooled.update(a['_by_stratum'])
 
     print('\nverdicts: %s' % dict(by_verdict))
     print('\nby rule:')
     for rule, n in by_rule.most_common():
         print('   %-42s %6d  %5.1f%%' % (rule, n, 100.0 * n / len(verdicts)))
-    print('\n%d strata; arm = how many of the %d sampled cards land in it:'
-          % (len(by_stratum), len(sampled)))
-    print('   %-52s %7s %5s %s' % ('stratum', 'rows', 'arm', 'max Wilson-95 lb if arm is perfect'))
+    for a in arms:
+        print('\n%s [%s]: %d cards, %d still in the queue%s'
+              % (a['label'], 'bound' if a['bound'] else 'UNBOUND', a['cards'],
+                 a['cards_still_in_queue'],
+                 '' if not a['cards_left_the_queue']
+                 else ', %d no longer `differs` (drawn before the extractor repairs)'
+                 % a['cards_left_the_queue']))
+    print('\n%d strata; per arm: cards / max Wilson-95 lb if that arm votes perfectly'
+          % len(by_stratum))
+    head = '   %-42s %7s' % ('stratum', 'rows')
+    for a in arms:
+        head += ' %14s' % a['label']
+    print(head + ' %14s' % 'pooled')
     for s, n in by_stratum.most_common():
-        a = arm.get(s, 0)
-        print('   %-52s %7d %5d   %s' % (s, n, a,
-                                         '%.3f' % wilson_lower(a, a) if a else '— unpriceable'))
+        line = '   %-42s %7d' % (s, n)
+        for a in arms:
+            c = a['_by_stratum'].get(s, 0)
+            line += ' %6d %7s' % (c, ('%.3f' % wilson_lower(c, c)) if c else '—')
+        p = pooled.get(s, 0)
+        line += ' %6d %7s' % (p, ('%.3f' % wilson_lower(p, p)) if p else '—')
+        print(line)
 
     if not write:
-        return verdicts, by_stratum, arm, sampled
+        return verdicts, by_stratum, arm, arms
 
     os.makedirs(os.path.dirname(OUT_TSV), exist_ok=True)
     cols = ['id', 'k1', 'hom', 'L_id', 'verdict', 'rule', 'stratum', 'pwg_members',
@@ -794,43 +920,70 @@ def run(write=False):
         for v in sorted(verdicts, key=lambda x: (x['k1'], x['hom'])):
             w.writerow(v)
 
+    def stratum_entry(s, n):
+        e = {'stratum': s, 'rows': n, 'arms': {}}
+        for a in arms:
+            c = a['_by_stratum'].get(s, 0)
+            e['arms'][a['sheet_id']] = {
+                'cards': c,
+                'max_wilson_lb_if_perfect': round(wilson_lower(c, c), 4),
+                'can_promote_alone_if_perfect': wilson_lower(c, c) >= 0.90,
+            }
+        p = pooled.get(s, 0)
+        e['pooled_cards'] = p
+        e['pooled_max_wilson_lb_if_perfect'] = round(wilson_lower(p, p), 4)
+        e['priceable'] = p >= 5
+        # A stratum whose every row carries a human vote needs no interval at all:
+        # there is nothing to extrapolate to. A small stratum can therefore be
+        # promotable by CENSUS while its Wilson bound sits below the threshold.
+        e['censused'] = p >= n
+        e['promotable_at_threshold_if_arms_perfect'] = (
+            e['censused'] or wilson_lower(p, p) >= 0.90)
+        e['promotion_basis'] = ('census' if e['censused']
+                                else ('wilson' if wilson_lower(p, p) >= 0.90 else 'none'))
+        e['promoted_by'] = [a['sheet_id'] for a in arms
+                            if e['arms'][a['sheet_id']]['can_promote_alone_if_perfect']]
+        return e
+
     plan = {
-        'handoff': 'H1681',
+        'handoff': 'H1703 (queue + arms) / H1681 (adjudicator)',
         'adjudicator': ADJUDICATOR,
         'generated': '26-07-2026',
         'queue_rows': len(verdicts),
-        'blind_arm_sheet': 'sanskritlexicography-pwg-compound-differs_stratified200',
-        'blind_arm_cards': len(sampled),
+        'queue_cards': len(ids_in_queue),
+        'upstream_repairs_applied': [
+            'SanskritGrammar#527 — pwg_compound_split.py headword-anchored + bracket-aware',
+            'SanskritLexicography#801 — mw_compounds.py <k2> variant fusion',
+        ],
+        'blind_arms': [{k: v for k, v in a.items() if not k.startswith('_')}
+                       for a in arms],
         'verdicts': dict(by_verdict),
         'by_rule': dict(by_rule),
         'gate': {
             'rule': 'per-stratum Wilson 95% lower bound on agent precision, measured '
-                    'against the human vote of the 200-card blind arm',
+                    'against the human vote of a blind arm. Each arm prices a stratum '
+                    'on its own; `pooled` combines the arms, which is legitimate only '
+                    'because they are disjoint random samples of the same strata.',
             'threshold': 0.90,
             'min_arm_cards': 5,
+            'cards_needed_for_threshold': 35,
             'provenance_on_promotion': 'agent',
             'never': 'human_reviewed',
         },
-        'strata': [
-            {'stratum': s, 'rows': n, 'arm_cards': arm.get(s, 0),
-             'priceable': arm.get(s, 0) >= 5,
-             'max_wilson_lb_if_arm_perfect': round(wilson_lower(arm.get(s, 0),
-                                                                arm.get(s, 0)), 4),
-             'promotable_at_threshold_if_arm_perfect':
-                 wilson_lower(arm.get(s, 0), arm.get(s, 0)) >= 0.90}
-            for s, n in by_stratum.most_common()
-        ],
+        'strata': [stratum_entry(s, n) for s, n in by_stratum.most_common()],
     }
     plan['rows_in_priceable_strata'] = sum(
         s['rows'] for s in plan['strata'] if s['priceable'])
-    plan['rows_promotable_if_arm_perfect'] = sum(
-        s['rows'] for s in plan['strata'] if s['promotable_at_threshold_if_arm_perfect'])
+    plan['rows_promotable_if_arms_perfect'] = sum(
+        s['rows'] for s in plan['strata'] if s['promotable_at_threshold_if_arms_perfect'])
+    plan['rows_unpriceable'] = sum(
+        s['rows'] for s in plan['strata'] if not s['priceable'])
     with io.open(OUT_PLAN, 'w', encoding='utf-8', newline='\n') as fh:
         json.dump(plan, fh, ensure_ascii=False, indent=1)
         fh.write('\n')
     print('\nwrote %d verdicts -> %s' % (len(verdicts), OUT_TSV))
     print('wrote promotion plan -> %s' % OUT_PLAN)
-    return verdicts, by_stratum, arm, sampled
+    return verdicts, by_stratum, arm, arms
 
 
 def main():
