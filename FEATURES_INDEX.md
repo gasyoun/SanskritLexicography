@@ -478,4 +478,9 @@ lookup URLs verified for MW & AP90); interfaces, data and tools compiled from
 [`REUSE_INDEX.md`](https://github.com/gasyoun/Uprava/blob/main/REUSE_INDEX.md) and a repository
 sweep with verbatim sample rows + git first-introduced dates (03–04-07-2026)._
 
+## Related documents (awareness weave H1728)
+
+- Org repo census twin: [MASTER_INDEX.md](https://github.com/gasyoun/Uprava/blob/main/MASTER_INDEX.md)
+
+
 _Dr. Mārcis Gasūns_
