@@ -1,6 +1,6 @@
 # CONTRADICTIONS — Sanskrit-data source disagreements with no verdict
 
-_Created: 08-07-2026 · Last updated: 20-07-2026_
+_Created: 08-07-2026 · Last updated: 27-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS states *one* fact. This file holds the act FINDINGS cannot: **disagreeing** — ≥2 sources give incompatible values and no ruling has been made. The moment a contradiction is ruled, it **graduates** to a [`CROSS_REPO_DECISIONS`](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##` (leave a one-line "→ D##, resolved" tombstone here). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/CONTRADICTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/CONTRADICTIONS.md).
 
@@ -123,5 +123,23 @@ Blocks: — (unblocked) the FAIR/DOI sprint's re-mint decision: csl-observatory'
 - **Where they point:** a ruled row exits to [CROSS_REPO_DECISIONS](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##`; the unmeasured evidence that would force a ruling lives in [GAPS](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md), and the reproducible methods that adjudicate them in [RECIPES](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md).
 
 ---
+
+### §9. Corpus kāṇḍas 6–7 are labelled "Southern (Leonov)" but their text is the Baroda critical edition
+
+🔴 ✍️ **The same two files are consumed as the Southern recension and align, verse for verse, to the critical one.**
+
+Positions:
+
+| source | value | evidence loc |
+|---|---|---|
+| `build_ramayana_concordance.py` `SOUTHERN_FILES` + the `COVERED_TEXTS_RU.md` census | `06`/`07_ramayana-*kanda.jsonl` are the Southern recension, Leonov's translation-of-record keying | [builder](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py) |
+| the files' own text | kāṇḍa 7: 2,688 of 2,690 verses pair with the DCS **critical** edition at the *identical* `sarga.verse`, 95.5% at score 1.0; kāṇḍa 6: 99.8% identity — against 1.2–3.0% for kāṇḍas 1/2/3/5 | [`ramayana_southern_critical_concordance.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_southern_critical_concordance.tsv) |
+| the files' `seg` census | kāṇḍas 6 and 7 carry **0** `ru` segments, so neither can be a translation-of-record keying at all | [FINDINGS §481](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) |
+
+Status: 🔴 unresolved — needs a corpus-side ruling on provenance (which edition each kāṇḍa was ingested from), not a code patch here.
+
+Blocks: (a) the committed Southern↔critical concordance is, for those two kāṇḍas, **a text aligned against itself** — its 99.8%/99.9% agreement must not be read as recension evidence; (b) any consumer treating `06`/`07` as vulgate-keyed inherits the silent recension swap [FINDINGS §468](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) documents for `R.` books 3–6; (c) it decides how a future Russian uttarakāṇḍa should be keyed ([GAPS §13](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md)).
+> **Source:** [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [integrity issue #822](https://github.com/gasyoun/SanskritLexicography/issues/822) · 27-07-2026 · Opus 5 1M `claude-opus-5[1m]`
+
 
 _Dr. Mārcis Gasūns_
