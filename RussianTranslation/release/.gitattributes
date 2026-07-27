@@ -4,3 +4,8 @@
 *.ttl        text eol=lf
 *.rq         text eol=lf
 fixture.keys text eol=lf
+# Same reason for the H1629 DE-edition artifacts: export_de_edition.py writes
+# LF and its selftest asserts byte-determinism, so a CRLF checkout would make
+# every regeneration look like a diff.
+*.xml        text eol=lf
+*.json       text eol=lf

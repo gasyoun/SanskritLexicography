@@ -10,6 +10,39 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed — LOD namespace ruled: `pwg-ru` → `repwg` ("rePWG"), one namespace for all graphs (27-07-2026)
+
+- Publication-IRI `@DECIDE` **closed** ([#809](https://github.com/gasyoun/SanskritLexicography/issues/809)).
+  Namespace is now `https://w3id.org/sanskrit-lexicon/repwg/`, replacing
+  `…/pwg-ru/` in every graph, SPARQL query, SHACL shape, fixture and generator —
+  8,138 occurrences across 18 files.
+- **Why `repwg` and not `pwg`:** the graphs carry derived structure and the RU
+  side is machine translation (`gr:machine-preview`, non-citable), so a namespace
+  reading as plain `pwg` would claim to *be* the Cologne text. `repwg` = "rePWG",
+  a *re-edition* of PWG. Lowercase in the path (IRI paths are case-sensitive);
+  spelled **rePWG** in labels and prose.
+- **Why not `pwg-ru`:** it encoded a fact that stopped being true — four of the
+  five graphs (DE enrichment, DE edition, DCS frequency, grammar) are not
+  Russian, and the German material is public domain. A maintainer name in the
+  path was considered and rejected for repeating the same mistake with a
+  different contingent fact.
+- A future project-owned domain changes **no IRI**: w3id.org is a redirector, so
+  the w3id IRI stays the permanent identifier and the project domain becomes the
+  redirect target behind it. Rationale recorded in
+  [LOD_GRAPH.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LOD_GRAPH.md)
+  § Namespace ruling, which replaces the old `## Open decision` section.
+- Still open, and now stated instead of implied: the w3id PURL is **not
+  registered**, so these are permanent identifiers that currently 404 — the docs
+  no longer claim dereferenceable IRIs. `dct:creator`/`dct:publisher` are still
+  not emitted.
+
+### Fixed — `release/.gitattributes` did not pin LF for the H1629 XML/JSON artifacts
+
+- `*.ttl`/`*.rq`/`fixture.keys` were pinned; `pwg_de_edition.tei.xml` and
+  `pwg_de_edition.manifest.json` were not, so a Windows checkout got CRLF while
+  the generator writes LF — every regeneration looked like a full-file diff and
+  would have broken the profile's byte-determinism selftest on a fresh clone.
+
 ### Added — H1703 second blind arm: every stratum of the compound `differs` queue can now be priced (26-07-2026)
 
 - The H1628 arm samples along length × DCS-frequency × member-count, which cuts across
