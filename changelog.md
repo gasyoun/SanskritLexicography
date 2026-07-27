@@ -14,6 +14,51 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H1705 — R. (Bomb.) book 7: measured verdict, no OCR spent.** The Bombay
+  uttarakāṇḍa does **not** map ≈1:1 onto the corpus text (111 sargas + 13
+  interpolated vs 100; identical verse count in 11/100 shared sargas; delta
+  −14…+18, mean +4.7), so the direct-with-offset option is rejected. The
+  concordance option was rejected too, on a ground the handoff did not consider:
+  `07_ramayana-uttarakanda.jsonl` holds **2,690 Sanskrit segments and 0 Russian**
+  (kāṇḍa 6 likewise), so a Bombay↔corpus map would have no consumer — there is no
+  Russian uttarakāṇḍa, and none is in the RussianRamayana pipeline. Full numbers,
+  including the 1,781 plain `R.` book-7 citations (127 of them naming a sarga
+  >100 that a 100-sarga text cannot carry):
+  [`RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md).
+- **`RussianTranslation/src/ramayana_bombay_inventory.tsv`** — Bombay (1859)
+  structural inventory, 658 sargas across all 7 kāṇḍas (kāṇḍa → sarga →
+  n_verses → volume/page/folio span + flags), read off the ramayanabom
+  scan-viewer's hand-made per-page index with **no OCR**. Built by the new
+  `build-bombay` command in `build_ramayana_concordance.py`; 9 selftest checks,
+  two of which pin the verdict (111 consecutive sargas; exceeds the corpus by 11).
+
+### Changed
+- **`citation_tm.py` retypes the Rāmāyaṇa 4/6/7 miss** from `locus-not-in-corpus`
+  to **`ru-translation-unpublished`**, with a `blocker` field naming the kāṇḍa.
+  The old string was shared with genuine corpus-coverage holes, and reading book
+  7's miss as an ingest/numbering gap is what got a Bombay-concordance handoff
+  minted for a book whose real blocker is that nobody has translated it. Plain
+  `R.` book 7 now lands on the same typed miss as `R. GORR.` book 7 (5 selftest
+  checks, one an out-of-corpus-range sarga).
+
+### Fixed
+- **Documented an upstream index typo** in ramayanabom's `indexv3.txt`: the last
+  uttarakāṇḍa sarga is typed `11` where `111` is meant (pages 810–812), colliding
+  with the genuine sarga 11 at pages 538–541. Repaired explicitly in the builder
+  (`BOM_INDEX_REPAIRS`, flag `index_typo_111`) against the page-810 colophon, and
+  asserted in selftest.
+
+### Notes
+- **[integrity] [#822](https://github.com/gasyoun/SanskritLexicography/issues/822)** —
+  corpus kāṇḍas 6–7 are Sanskrit-only **critical-edition** text under a
+  "Southern/Leonov" label (99.8%/99.9% identical to DCS critical at the same
+  `sarga.verse`, vs 1.2–3.0% for kāṇḍas 1/2/3/5), so
+  `ramayana_southern_critical_concordance.tsv` aligns those two kāṇḍas against
+  themselves. FINDINGS §476 (the ramayanabom scan traps: a Latin-garbage text
+  layer that passes a non-empty check, and a 2-up embedded image the PDF crops)
+  and §477 (measure the asset, not the manifest).
+
 ## [1.85.0] — 2026-07-26
 
 ### Added
