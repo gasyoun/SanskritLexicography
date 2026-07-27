@@ -146,6 +146,16 @@ The **code is the ID** and the **Year** column is the edition's publication year
 column links a real sample headword (or *browse*) to that dictionary's live Cologne interface
 (URL pattern `…/scans/<CODE>Scan/<YEAR>/web/index.php`, MW & AP90 verified).
 
+**Repo column** — all 44 cells re-verified against the live
+[`sanskrit-lexicon`](https://github.com/orgs/sanskrit-lexicon/repositories) org on
+27-07-2026 (H1722; 3 were wrong, 41 correct). A dictionary repo here is normally an
+**issue venue**, not a data repo — the text itself lives in
+[csl-orig](https://github.com/sanskrit-lexicon/csl-orig) either way. So:
+`csl-orig only` = no repo of any kind exists (13 such dictionaries, enumerated in the
+[consolidation spike](https://github.com/gasyoun/Uprava/blob/main/CONSOLIDATION_SPIKE_REPOLESS_DICTIONARIES_THIN_VIEW_REPOS_2026Q3.md));
+"— venue only" = the repo exists but holds no dictionary content beyond issues and a
+Pages shell.
+
 | Code | Dictionary | Language | Author | Year | Pages | Repo | Example |
 |---|---|---|---|---:|---:|---|---|
 | MW | Monier-Williams Sanskrit-English Dictionary | Skt→Eng | Monier-Williams | 1899 | 1,333 | [MWS](https://github.com/sanskrit-lexicon/MWS) | [`a` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/index.php) |
@@ -164,7 +174,7 @@ column links a real sample headword (or *browse*) to that dictionary's live Colo
 | CAE | Cappeller Sanskrit-English Dictionary | Skt→Eng | Carl Cappeller | 1891 | 672 | [CAE](https://github.com/sanskrit-lexicon/CAE) | [`a` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/CAEScan/2020/web/index.php) |
 | MD | Macdonell Sanskrit-English Dictionary | Skt→Eng | A. A. Macdonell | 1893 | 384 | [MD](https://github.com/sanskrit-lexicon/MD) | [`a` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/MDScan/2020/web/index.php) |
 | SHS | Śabda-Sāgara Sanskrit-English Dictionary | Skt→Eng | J. Vidyasagara | 1900 | 839 | [SHS](https://github.com/sanskrit-lexicon/SHS) | [`a` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/SHSScan/2020/web/index.php) |
-| PD | Encyclopedic Dictionary of Sanskrit on Historical Principles | Skt→Eng | Ghatage · Bhatta | 1976 | 4,328 | [Cologne scan ↗](https://sanskrit-lexicon.uni-koeln.de/scans/PDScan/2020/web/index.php) | [browse ↗](https://sanskrit-lexicon.uni-koeln.de/scans/PDScan/2020/web/index.php) |
+| PD | Encyclopedic Dictionary of Sanskrit on Historical Principles | Skt→Eng | Ghatage · Bhatta | 1976 | 4,328 | [PD](https://github.com/sanskrit-lexicon/PD) | [browse ↗](https://sanskrit-lexicon.uni-koeln.de/scans/PDScan/2020/web/index.php) |
 | MWE | Monier-Williams English-Sanskrit Dictionary | Eng→Skt | Monier Williams | 1851 | 860 | csl-orig only | [`A` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/MWEScan/2020/web/index.php) |
 | BOR | Borooah English-Sanskrit Dictionary | Eng→Skt | Anundoram Borooah | 1877 | 772 | [BOR](https://github.com/sanskrit-lexicon/BOR) | [`A` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/BORScan/2020/web/index.php) |
 | AE | Apte Student's English-Sanskrit Dictionary | Eng→Skt | V. S. Apte | 1920 | 501 | [ApteES](https://github.com/sanskrit-lexicon/ApteES) | [browse ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/AEScan/2020/web/index.php) |
@@ -182,12 +192,12 @@ column links a real sample headword (or *browse*) to that dictionary's live Colo
 | NMMB | Nāmamālikā of Bhoja | Skt→Skt | Bhoja | 1955 | 40 | csl-orig only | [browse ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2026/web/index.php) |
 | INM | Index to the Names in the Mahābhārata | Specialized | S. Sörensen | 1904 | 852 | [INM](https://github.com/sanskrit-lexicon/INM) | [`Abala` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/INMScan/2020/web/index.php) |
 | VEI | Vedic Index of Names and Subjects | Specialized | Macdonell & Keith | 1912 | 560 | [VEI](https://github.com/sanskrit-lexicon/VEI) | [`Aṃśu` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/VEIScan/2020/web/index.php) |
-| PUI | The Purāṇa Index | Specialized | V. R. R. Dikshitar | 1951 | 2,232 | csl-orig only | [browse ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/PUIScan/2020/web/index.php) |
+| PUI | The Purāṇa Index | Specialized | V. R. R. Dikshitar | 1951 | 2,232 | [PUI](https://github.com/sanskrit-lexicon/PUI) — venue only | [browse ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/PUIScan/2020/web/index.php) |
 | BHS | Buddhist Hybrid Sanskrit Dictionary | Specialized | Franklin Edgerton | 1953 | 634 | [BHS](https://github.com/sanskrit-lexicon/BHS) | [`a` ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/BHSScan/2020/web/index.php) |
 | FRI | Friš Sanskrit Reader Vocabulary | Specialized | Oldřich Friš | 1956 | 349 | [FRI](https://github.com/sanskrit-lexicon/FRI) | [browse ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2025/web/index.php) |
 | ACC | Aufrecht's Catalogus Catalogorum | Specialized | Theodor Aufrecht | 1962 | 1,216 | [ACC](https://github.com/sanskrit-lexicon/ACC) | [browse ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/ACCScan/2020/web/index.php) |
 | KRM | Kṛdantarūpamālā | Specialized | S. Ramasubba Sastri | 1965 | 1,489 | [KRM](https://github.com/sanskrit-lexicon/KRM) | [browse ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/KRMScan/2020/web/index.php) |
-| IEG | Indian Epigraphical Glossary | Specialized | D. C. Sircar | 1966 | 580 | csl-orig only | [browse ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/IEGScan/2020/web/index.php) |
+| IEG | Indian Epigraphical Glossary | Specialized | D. C. Sircar | 1966 | 580 | [IEG](https://github.com/sanskrit-lexicon/IEG) — venue only | [browse ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/IEGScan/2020/web/index.php) |
 | SNP | Meulenbeld's Sanskrit Names of Plants | Specialized | G. J. Meulenbeld | 1974 | 94 | csl-orig only | [browse ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/SNPScan/2020/web/index.php) |
 | PE | Puranic Encyclopedia | Specialized | Vettam Mani | 1975 | 922 | csl-orig only | [browse ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/PEScan/2020/web/index.php) |
 | PGN | Names in the Gupta Inscriptions | Specialized | Tej Ram Sharma | 1978 | 378 | csl-orig only | [browse ↗](https://www.sanskrit-lexicon.uni-koeln.de/scans/PGNScan/2020/web/index.php) |
