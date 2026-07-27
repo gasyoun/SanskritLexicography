@@ -186,38 +186,26 @@ pwg_ru/reglue/synth_outputs/*
 # (repo is PUBLIC): keep local-only; only the generator + protocol doc are
 # committed. decisions.json votes land here too (personal review artifacts).
 pwg_ru/eval/
-review/h178_*_sheet.html
 
-# H1303 abbreviation-ratification sheet (csl_pyutil emitter) — same class as the
-# h178/h180 sheets above: personal voting artifact, local-only (repo is PUBLIC).
-review/h1303_*_sheet.html
-
-# H1306 style-rulings ratification sheet (csl_pyutil emitter) — same class:
-# personal voting artifact, local-only (repo is PUBLIC).
-review/h1306_*_sheet.html
-
-# H1682 rule-collapse replacement for h1303_abbrev (csl_pyutil emitter) — same
-# class: personal voting artifact, local-only (repo is PUBLIC). Committed
-# counterpart: review/locks/h1682_abbrev_rules.lock.json (H1404 standard).
-review/h1682_*_sheet.html
-
-# H1404 starter packet (build_g5_review_sheet.py / build_g6_mqm_gold_sheet.py):
-# the G5 sheet embeds unpublished `ru`+`de` from the gitignored store; the G6
-# sheet stays local for consistency. COMMITTED counterpart: the metadata-only
+# ---- Review sheets: DEFAULT-DENY (27-07-2026) --------------------------------
+# Every /review-sheet HTML embeds unpublished `ru`/`de` from the gitignored
+# store, and every downloaded decisions.json is a personal voting artifact —
+# and this repo is PUBLIC. These used to be enumerated per generator
+# (h178_/h1303_/h1306_/h1682_/g5_/g6_ prefixes, plus one line per
+# compound-differs sheet), so every NEW generator leaked until someone
+# remembered to add a line: the gorresio southern-map sheet did exactly that.
+# Deny the shapes instead, and make publishing a sheet a deliberate `!` line.
+# COMMITTED counterpart for a gated sheet: the metadata-only
 # review/locks/<sheet_id>.lock.json binding record (H1404 standard) — never
-# gitignore review/locks/.
-review/g5_*_sheet.html
-review/g6_*_sheet.html
-# downloaded/auto-saved votes are personal working artifacts until applied
+# gitignore review/locks/. Sample-design frames (review/*_frame.tsv, no store
+# text) also stay committed as the sample-design audit trail.
+review/*_sheet.html
+review/*_review.html
 review/*_decisions.json
+# Intentionally published sheets (evidence for committed findings):
+!review/sanskritlexicography-renou-hypotheses_pilot_review.html
 !review/sanskritlexicography-renou-hypotheses_pilot_decisions.json
-
-# H1628 compound-differs review sheet (compound_differs_review_sample.py): personal
-# voting artifact per the /review-sheet contract — local-only. The metadata-only sample
-# frame TSV (no ru/de store text) IS committed as the sample-design audit trail.
-review/sanskritlexicography-pwg-compound-differs_stratified200_review.html
-# H1703 arm 2 (compound_differs_arm2_sample.py) — same contract, same reasons.
-review/sanskritlexicography-pwg-compound-differs_rulestrat_arm2_review.html
+!review/sanskritlexicography-kochergina-okas-guda-sphic_4rows_review.html
 
 # Generated Workflow harnesses embed source/portrait payloads and are local-only.
 src/pilot/run_pilot_wf.*.js
