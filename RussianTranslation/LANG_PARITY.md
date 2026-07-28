@@ -572,7 +572,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "ad72df81bc7299a870edfdc67f6d81b45e4acfb1d79ea9976355c1e4b488da94",
-      "src/make_edition_cut.py": "5a24d8c96611f50f008689609f8140ef47b02731524dbc255438426b36d306fd",
+      "src/make_edition_cut.py": "2948897974d52ff307eeef35f0e69456c94210ec85fd225241f586f8426cad70",
       "src/preflight_remaining_gates.py": "00386c837b97986c9702abfceed9c29534736c3df3063af202ddfaae6b078b8f",
       "src/release_readiness.py": "db38a870bbc8b5dbe694e706e4a7b9089ba41211a3881ad9a1bd4eb02950c8a9",
       "save_and_audit.py": "e1d7a3b6c5a8c47dbc414dbcf991e9ead82b76a013e4624cffe76066e576c8b6",
@@ -1403,7 +1403,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Russian ё-orthography policy and Russian terse editorial metalanguage («вм.», «в знач.», «Бомбейская ред.») have no EN counterpart by construction -- EN output contains no Cyrillic and uses its own English editorial conventions (no ё letter, no «вместо»/«в значении» abbreviation question). Register §4's h178-vote row \"(SHARED)\" annotation is refined here: the GATE WIRING MECHANISM (an RU-only-detector slot added to audit_window.py's existing commands list, alongside translation/stage2_mechanical/coverage/sense_dupes) is SHARED-capable machinery -- a hypothetical 3rd Cyrillic-scripted language could reuse the same gate-list slot -- but the RULES THEMSELVES (R1-R4, the ё-whitelist, the вм./в знач. terse forms) are RU-only INTENTIONAL-DIVERGENCE, not something to port to audit_window_en.py, which this handoff deliberately does not touch.",
     "tracking": "",
     "verified_sha256": {
-      "src/ru_style_sweep.py": "018aee3c3262405b493a5dac74f937684fcbac6f763923583d83604a4e5dcb93",
+      "src/ru_style_sweep.py": "097e3780bfaac430741391514b3209c22fcf1f1cd7f473623a8fd18477e914a0",
       "src/pilot/audit_window.py": "979d8f98e889dd3444320dc7f4b9de177610b7e7fb139f836f98be0a7cffc21b",
       "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1",
       "src/pilot/prompt_rule_audit.py": "b235136ea95a7c77eb2cee0a3a6bc393c75df221ba587253a7949d9e3cbe4927",
