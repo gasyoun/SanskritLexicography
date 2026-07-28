@@ -11,10 +11,18 @@ fixed 6-label error typology
 
 Vote contract (matches ``apply_decisions.py`` G6):
   approve = the shown LLM label is right;
-  reject  = it is wrong — write the CORRECT label as the FIRST word of the note
-            (same "correct answer in the note" convention as the H180 typology
-            sheet), free-text rationale after it;
+  reject  = it is wrong — pick the CORRECT label from the required select
+            control (H1802); the note stays free-text rationale only;
   defer   = needs adjudication (row lands with needs_adjudication=true).
+
+**H1802.** The first real vote on this sheet (H1796) measured 5/6 rejects
+writing prose instead of the label as the note's first word — an
+unenforceable convention that made all 20 votes (including 14 clean
+approves) fail ``apply_decisions.py``'s all-or-nothing apply. Replaced with
+``config["reject_labels"]``, a required single-select control; the note
+textarea remains for the rationale. A NEW sheet_id/generation is used below
+since the 2026-07-25 generation already carries applied votes (H1796) and a
+voted sheet is never regenerated in place.
 
 Export flow: decisions.json → ``validate_decisions`` → ``apply_decisions
 --gate G6`` (builds the 11-column CSV and runs ``gold_ingest.py`` with an
@@ -48,8 +56,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RT = os.path.dirname(HERE)
 REVIEW = os.path.join(RT, "review")
 
-SHEET_ID = "g6-mqm-gold-starter-2026-07-25"
-GENERATED = "2026-07-25"
+LEGACY_SHEET_ID = "g6-mqm-gold-starter-2026-07-25"
+LEGACY_GENERATED = "2026-07-25"
+
+#: H1802 re-cut with the reject_labels picker. The pre-picker generation keeps
+#: its own id + lock (LEGACY_SHEET_ID above) — its votes are already applied
+#: (H1796) and must stay validatable.
+SHEET_ID = "g6-mqm-gold-starter-reject-picker-2026-07-28"
+GENERATED = "2026-07-28"
 
 LABELS = ("correct", "lemma-variant", "proper-name", "partial", "wrong-sense",
           "hallucinated")
@@ -108,12 +122,11 @@ def main():
             "id": str(r["id"]),
             "filt": r["period"],
             "question": ("Верен ли ярлык LLM <b>«%s»</b> для этого перевода? "
-                         '<span class="muted">(reject → ПЕРВЫМ словом заметки — '
-                         "правильный ярлык из типологии)</span>" % esc(r["label"])),
+                         '<span class="muted">(reject → выберите правильный ярлык '
+                         "из списка ниже)</span>" % esc(r["label"])),
             "title": r.get("sa") or r.get("slp1") or str(r["id"]),
             "badges": [r["period"], r["kind"], r.get("work") or ""],
-            "note_placeholder": ("если reject: сначала ярлык (%s), потом почему"
-                                 % "|".join(LABELS)),
+            "note_placeholder": "необязательный комментарий к решению",
             "panels": [("Санскрит (sa)", "<pre>%s</pre>" % esc(r.get("sa"))),
                        ("Русский (ru)", "<pre>%s</pre>" % mark_cyrillic(esc(r.get("ru")))),
                        ("Ярлык LLM · типология MQM",
@@ -129,14 +142,15 @@ def main():
         "title": "G6 · золотой стандарт — стартовый лист MQM",
         "subtitle": ("%d карточек из gold/gold_set.jsonl (320), стратификация "
                      "period × kind; типология из 6 ярлыков" % len(items)),
-        "footer": ("Approve = ярлык LLM верен · Reject = неверен (правильный ярлык — "
-                   "первым словом заметки) · Defer = на адjudication. Экспорт "
+        "footer": ("Approve = ярлык LLM верен · Reject = неверен (выберите правильный "
+                   "ярлык из списка) · Defer = на адjudication. Экспорт "
                    "валидируется против review/locks/%s.lock.json." % SHEET_ID),
         "approve_label": "Label верен", "reject_label": "Label неверен",
         "filters": [(p, p) for p in sorted(periods)],
         "generated": GENERATED,
         "strict_review": {"reviewer": "", "require_all_votes": True,
                           "require_reject_note": True},
+        "reject_labels": [(l, LABEL_RU[l]) for l in LABELS if l != "correct"],
     }
     config.update(standard_config(
         save_as="RussianTranslation\\review\\%s_decisions.json" % SHEET_ID))
