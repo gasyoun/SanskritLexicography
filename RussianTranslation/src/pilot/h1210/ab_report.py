@@ -63,6 +63,37 @@ def worklist_index(worklist):
             [card_id(d) for d in worklist['detail']])
 
 
+def audit_index(audit, worklist):
+    """Key the canonical audit by pipeline card id — NOT by its own `key1`.
+
+    `canonical_audit.py` reports whatever key1 its source record carried, which is a THIRD
+    form again: the SLP1 headword for the pwg layer (`SAluqa`, `durgA`), but the safe stem
+    or the sub-card id for cards that reached it already safe-named (`_svetakar_ra`,
+    `arvant~~h0_zz_pw`). The arms' results key exclusively on the pipeline id. Joining the
+    two dicts on the raw `key1` therefore matched 42 of 87 arm-A rows and silently scored
+    the other 45 as NOT clean — reporting arm A at 46% when the audit it was reading says
+    95.4%. Every audit row is resolved here instead, and an unresolvable one is a hard
+    error rather than a silently-dropped denominator.
+    """
+    alias = {}
+    for d in worklist['detail']:
+        cid = card_id(d)
+        alias[cid] = cid
+        alias[d['key1']] = cid
+        alias[safe_name(d['key1'])] = cid
+    out, unresolved = {}, []
+    for r in audit['reports']:
+        cid = alias.get(r['key1']) or alias.get(safe_name(r['key1']))
+        if not cid:
+            unresolved.append(r['key1'])
+            continue
+        out[cid] = r
+    if unresolved:
+        raise SystemExit('audit rows not resolvable to a worklist card id: %s'
+                         % ', '.join(sorted(unresolved)))
+    return out
+
+
 def merge_results(paths):
     merged = {'slice': [], 'results': [], 'cards_out': [], 'control_rounds': []}
     for p in paths:
@@ -76,7 +107,7 @@ def merge_results(paths):
 
 def arm_metrics(name, res, audit, telem, worklist):
     rows = {r['key1']: r for r in res['results']}
-    reports = {r['key1']: r for r in audit['reports']}
+    reports = audit_index(audit, worklist)
     strata, all_ids = worklist_index(worklist)
     complex_flag = {r['key1']: bool(r.get('complexity_flag')) for r in res['results']}
 
@@ -173,9 +204,9 @@ def md_table(a, b):
         ('**audit-clean % (canonical promote-DRY)**',
          '**%s%% (%d/%d)** ' % (fmt(a['canonical_clean_pct']), a['canonical_clean'], a['cards_attempted']),
          '**%s%% (%d/%d)**' % (fmt(b['canonical_clean_pct']), b['canonical_clean'], b['cards_attempted'])),
-        ('rig self-report clean (overstatement)',
-         '%d (+%d)' % (a['rig_self_report_clean'], a['self_report_overstatement']),
-         '%d (+%d)' % (b['rig_self_report_clean'], b['self_report_overstatement'])),
+        ('rig self-report clean (vs audit)',
+         '%d (%+d)' % (a['rig_self_report_clean'], a['self_report_overstatement']),
+         '%d (%+d)' % (b['rig_self_report_clean'], b['self_report_overstatement'])),
         ('generation calls', a['generation_calls'], b['generation_calls']),
         ('controller calls', a['controller_calls'], b['controller_calls']),
         ('calls / clean card', fmt(a['calls_per_clean']), fmt(b['calls_per_clean'])),

@@ -1341,12 +1341,12 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/h1210/pack_chunks.py": "7f33369396084a3fb474481c2f81830e17a0aea1220164acf741f207c56b570b",
       "src/pilot/h1210/det_gate.py": "4e654dda9fa68ecbe17bc85e986de6e4c527b9fbb9211b05b12e1de0aaad2954",
       "src/pilot/h1210/deepseek_arm.py": "216d91ef7bf9277e90110e029f774aa8814ee71048dff07cb34c64eda4350de8",
-      "src/pilot/h1210/arm_b_control.py": "6fe7fa492b6b974e9c4abd60e3bc74dbae57ac8a2d14d2d1ae78e6783f6c6a9d",
-      "src/pilot/h1210/control_template.js": "2e6c7b72a6f1a4b4f8be7c5903fef2eee316e60d233fc89dacdefb0ea9b7ab24",
+      "src/pilot/h1210/arm_b_control.py": "28b0c7ec0c2b6e268039dbb42cb6550bfdb0e78f5f3540cd0e41f3f253c88d6e",
+      "src/pilot/h1210/control_template.js": "5700b540185d65d598060ccaa8431c1c5606066302005f8fc6bacc25037e22df",
       "src/pilot/h1210/wf_template_ab.js": "47a9c7640c8b1e59d19a0f7b716eaec873c6f10f69eb030e75de044d3b7d8119",
       "src/pilot/h1210/collect_arm_a.py": "e957743cfdbaf8cd20958257096741bd8c7824b9ae09b433938908b3731aa503",
-      "src/pilot/h1210/ab_report.py": "aa25da79d78debb4c4e91b9eb52441ecc6b293c5906ca56d3a0dda28768a1c40",
-      "src/pilot/h1210/build_ab_review_sheet.py": "0d5307312285a66ba98ea293d7c96957721ff150cc7727f80a4c89a5832b1d18"
+      "src/pilot/h1210/ab_report.py": "4039fa57487f2b7fd1de3aa0eee2f0106c972d6a04e1e9f91e861ff95a248ad0",
+      "src/pilot/h1210/build_ab_review_sheet.py": "1f096272e07adb262e780f413a8de600f23d01201df1ba7d1937436bbea728de"
     }
   },
   {
