@@ -134,13 +134,24 @@ def g6_rows(doc, gold_meta, reviewer):
         if decision == "approve":
             human_label = llm_label
         elif decision == "reject":
-            first = note.split()[0].strip(".,;:—-").lower() if note else ""
-            if first not in G6_LABELS:
-                problems.append("%s: reject note must START with the correct label "
-                                "(one of %s); got %r"
-                                % (it["id"], "|".join(sorted(G6_LABELS)), note[:40]))
-                continue
-            human_label = first
+            reject_label = (it.get("reject_label") or "").strip().lower()
+            if reject_label:
+                # H1802: the emitter's required single-select control — preferred
+                # over the note-prefix convention whenever the export carries it.
+                if reject_label not in G6_LABELS:
+                    problems.append("%s: reject_label %r is not one of %s"
+                                    % (it["id"], reject_label, "|".join(sorted(G6_LABELS))))
+                    continue
+                human_label = reject_label
+            else:
+                # Legacy fallback for sheets exported before H1802.
+                first = note.split()[0].strip(".,;:—-").lower() if note else ""
+                if first not in G6_LABELS:
+                    problems.append("%s: reject note must START with the correct label "
+                                    "(one of %s); got %r"
+                                    % (it["id"], "|".join(sorted(G6_LABELS)), note[:40]))
+                    continue
+                human_label = first
         else:  # defer
             human_label = llm_label
             needs_adj = "true"
@@ -307,6 +318,20 @@ def _selftest():
             labels = [json.loads(l) for l in io.open(labels_path, encoding="utf-8")]
             check(sorted(r["human_label"] for r in labels) == ["correct", "wrong-sense"],
                   "approve confirms LLM label; reject note's first token becomes the label")
+
+        # 2b. H1802: csl-pyutil's reject_labels picker field is preferred over
+        # the note-prefix convention (note carries free-text rationale only).
+        field_good = dict(good, items=[
+            {"id": ids[0], "decision": "approve", "note": ""},
+            {"id": ids[1], "decision": "reject", "note": "плохая глосса, не связана",
+             "reject_label": "hallucinated"}])
+        rc = main([dump("field_good.json", field_good), "--locks-dir", td,
+                   "--gold-set", os.path.join(td, "gs.jsonl"), "--out-dir", td])
+        check(rc == 0, "G6 route accepts a reject_label field (rc=%s)" % rc)
+        if rc == 0 and os.path.exists(labels_path):
+            labels = [json.loads(l) for l in io.open(labels_path, encoding="utf-8")]
+            check(sorted(r["human_label"] for r in labels) == ["correct", "hallucinated"],
+                  "reject_label field wins over a note that doesn't start with the label")
 
         # 3. G6 abort on an unparseable reject note — nothing written.
         badnote = dict(good, items=[{"id": ids[0], "decision": "reject", "note": "nope"},
