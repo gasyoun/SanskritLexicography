@@ -162,6 +162,11 @@ jobs:
           python src/apply_decisions.py --selftest
           python src/review_residue_gate.py --selftest
           python src/pilot/german_residue_scan.py --selftest
+          # H1801 G6 evidence panels. Fixture-only by construction: none of the
+          # eight source assets (csl-orig, SanskritRussian, MWS, WhitneyRoots,
+          # SamudraManthanam) is checked out here, and sanskrit-util is absent
+          # too, so this also exercises the markup fallback path.
+          python src/gold_evidence_panel.py --selftest
       - name: LOD graph acceptance (fixture-only, H350/E7)
         working-directory: RussianTranslation
         run: |
