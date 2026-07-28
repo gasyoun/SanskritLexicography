@@ -61,6 +61,10 @@
           "rating": {
             "type": ["number", "null"],
             "description": "V1/V5 rating layer (e.g. Direct Assessment 1-5); absent on sheets without a rating config."
+          },
+          "reject_label": {
+            "type": ["string", "null"],
+            "description": "H1802 required typology-label picker; present on sheets with config[\"reject_labels\"] set. apply_decisions.py's G6 gate prefers this over the note-prefix convention, falling back to the note's first token on sheets exported before H1802."
           }
         },
         "additionalProperties": true
