@@ -1318,6 +1318,38 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     }
   },
   {
+    "id": "h1210_ab_arm_scaffold",
+    "mechanism": "H1210 A/B scaffold on top of the H1209 rig: size-bounded chunk packer (pack_chunks.py), the Python twin of the in-JS deterministic gate (det_gate.py, selftested), the DeepSeek generation arm (deepseek_arm.py) and its shared-Opus-controller shuttle (arm_b_control.py, control_template.js), the parallel-card arm-A template (wf_template_ab.js), arm-A telemetry collection (collect_arm_a.py), the comparative report (ab_report.py) and the blind human-vote sheet (build_ab_review_sheet.py)",
+    "files": [
+      "src/pilot/h1210/pack_chunks.py",
+      "src/pilot/h1210/det_gate.py",
+      "src/pilot/h1210/deepseek_arm.py",
+      "src/pilot/h1210/arm_b_control.py",
+      "src/pilot/h1210/control_template.js",
+      "src/pilot/h1210/wf_template_ab.js",
+      "src/pilot/h1210/collect_arm_a.py",
+      "src/pilot/h1210/ab_report.py",
+      "src/pilot/h1210/build_ab_review_sheet.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "GAP",
+    "note": "Run 28-07-2026 on the RU lane only. Three of the nine files are already language-neutral by construction: pack_chunks.py and collect_arm_a.py never look at a field, and ab_report.py reads whatever the arms produced. det_gate.py, deepseek_arm.py and arm_b_control.py take the target field from the manifest (`field`, russian/english) and thread it through, so EN needs no code change there — but they were only exercised on russian. The genuinely RU-bound parts are the same two the parent H1209 GAP names: wf_template_ab.js (hardcoded russian target field + RU controller prompt, inherited verbatim from h1209/wf_template.js) and control_template.js (the same RU controller prompt, lifted out for arm B); build_ab_review_sheet.py renders a RU/DE panel pair. An EN A/B must therefore fix the SAME two prompts H1209's mini-EN step owes, not a new set — do not fork a second EN scaffold.",
+    "tracking": "H1210 (Uprava/handoffs/H1210-Opus_SanskritLexicography_pwg-ab-deepseek-vs-claude-100_17.07.26.md); inherits the EN debt of the h1209_controller_worker_rig entry above (H1209 mini-EN step)",
+    "verified_sha256": {
+      "src/pilot/h1210/pack_chunks.py": "7f33369396084a3fb474481c2f81830e17a0aea1220164acf741f207c56b570b",
+      "src/pilot/h1210/det_gate.py": "4e654dda9fa68ecbe17bc85e986de6e4c527b9fbb9211b05b12e1de0aaad2954",
+      "src/pilot/h1210/deepseek_arm.py": "216d91ef7bf9277e90110e029f774aa8814ee71048dff07cb34c64eda4350de8",
+      "src/pilot/h1210/arm_b_control.py": "6fe7fa492b6b974e9c4abd60e3bc74dbae57ac8a2d14d2d1ae78e6783f6c6a9d",
+      "src/pilot/h1210/control_template.js": "2e6c7b72a6f1a4b4f8be7c5903fef2eee316e60d233fc89dacdefb0ea9b7ab24",
+      "src/pilot/h1210/wf_template_ab.js": "47a9c7640c8b1e59d19a0f7b716eaec873c6f10f69eb030e75de044d3b7d8119",
+      "src/pilot/h1210/collect_arm_a.py": "e957743cfdbaf8cd20958257096741bd8c7824b9ae09b433938908b3731aa503",
+      "src/pilot/h1210/ab_report.py": "aa25da79d78debb4c4e91b9eb52441ecc6b293c5906ca56d3a0dda28768a1c40",
+      "src/pilot/h1210/build_ab_review_sheet.py": "0d5307312285a66ba98ea293d7c96957721ff150cc7727f80a4c89a5832b1d18"
+    }
+  },
+  {
     "id": "ls_link_enrichment_panini_spr_h1307",
     "mechanism": "H1307 <ls> link enrichment: Pāṇini P. gains guarded chapter/book browse patterns (2-param a,p -> /sutraani/a/p, 1-param a -> /sutraani/a; pada 1-4 / adhyaya 1-8 guarded so page-refs like 'P. II, S. 3' and bogus 'P. 1,23' never mislink); Spr. (II) N gains a full-text hover tooltip (IAST + German from the Indische Sprüche corpus) via spr_fulltext, with a 1st-ed edition guard (plain Spr. N never resolves against the 2nd-ed corpus); the shared _render()/_ls_tooltip layer carries both.",
     "files": [

@@ -218,3 +218,24 @@ research/frame_wide.tsv
 research/pwg_sense_dcs_attestation_h1670base.tsv
 research/pwg_sense_dcs_attestation_h1691.tsv
 research/pwg_sense_dcs_attestation_h1691final.tsv
+
+# H1210 A/B (src/pilot/h1210/): the generated payload/harness artifacts are large
+# (22 MB) and, like every other card-bearing artifact here, embed unpublished RU/DE
+# store-grade text. The COMMITTED evidence is the worklist, the slim audit verdicts,
+# the telemetry, the report and the code — everything below is regenerable from those
+# per src/pilot/h1210/README.md.
+src/pilot/h1210/slice_payload.json
+src/pilot/h1210/probe_payload.json
+src/pilot/h1210/probe.args.json
+src/pilot/h1210/probe.wf.js
+src/pilot/h1210/h1210_ab100.manifest.json
+src/pilot/h1210/h1210_ab100.opt2.js
+src/pilot/h1210/ab100.chunk*.json
+src/pilot/h1210/ab100.chunk*.wf.js
+src/pilot/h1210/arm_a.chunk*.slice_result.json
+src/pilot/h1210/arm_b.slice_result.json
+src/pilot/h1210/arm_b.journal.jsonl
+src/pilot/h1210/arm_b.run.log
+src/pilot/h1210/arm_b.control_r*.payload.json
+src/pilot/h1210/arm_b.control_r*.wf.js
+src/pilot/h1210/arm_*.canonical_audit.json
