@@ -23,7 +23,11 @@ if _SRC not in sys.path:
 from proc_tree import run_tree_kill, terminate_tree, windows_hidden_flags  # noqa: E402  (shared D-J tree-kill runner)
 import card_fields  # noqa: E402  (C-01: the one restore/promote field set, shared with the JS lane)
 from window_common import portrait_key_iast  # noqa: E402  (B02: one iast derivation for both stitch twins)
-from execution_contract import ActiveCallClaim, SCHEMA_V1, SCHEMA_V2, validate_manifest, validate_profile  # noqa: E402
+from execution_contract import (ActiveCallClaim, SCHEMA_V1, SCHEMA_V2,
+                                config_dir_fingerprint, validate_manifest,
+                                validate_profile)  # noqa: E402
+from call_reservation import (CallLimitReached, CallReservationLedger,
+                              telemetry_from_cli_wrapper, unevaluable_telemetry)  # noqa: E402
 
 AUTH_RE = re.compile(r'401|authentication|not logged in|invalid.*credential', re.I)
 RATE_RE = re.compile(r'429|rate.?limit|usage limit|too many requests', re.I)
@@ -86,6 +90,58 @@ def sha256_path(path):
     return h.hexdigest()
 
 
+def validate_preflight_artifact(path, manifest=None, expected_sha256=None):
+    """Fail closed on malformed, over-ceiling, drifted, or wrong-scope paid-call evidence."""
+    if not path:
+        raise ValueError('paid v2 execution requires --preflight')
+    try:
+        with open(path, 'rb') as f:
+            preflight_bytes = f.read()
+        if (expected_sha256
+                and hashlib.sha256(preflight_bytes).hexdigest() != expected_sha256):
+            raise ValueError('preflight hash changed before paid execution')
+        data = json.loads(preflight_bytes.decode('utf-8'))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+        raise ValueError('preflight is unreadable: %s' % exc)
+    if not isinstance(data, dict):
+        raise ValueError('preflight top level must be an object')
+    schema = data.get('schema')
+    if schema == 'pwg.performance_preflight.v1':
+        reports = [data]
+    elif schema == 'pwg.performance_preflight.matrix.v1':
+        reports = data.get('reports')
+    else:
+        raise ValueError('unsupported preflight schema: %r' % schema)
+    if not isinstance(reports, list) or not reports:
+        raise ValueError('preflight must contain nonempty reports')
+    scoped = []
+    for index, report in enumerate(reports):
+        if not isinstance(report, dict):
+            raise ValueError('preflight report %d is not an object' % index)
+        gate = report.get('cost_gate')
+        if not isinstance(gate, dict) or not isinstance(gate.get('over_ceiling'), bool):
+            raise ValueError('preflight report %d has no boolean over_ceiling' % index)
+        if gate['over_ceiling']:
+            raise ValueError('preflight report %d is over ceiling' % index)
+        if manifest is not None:
+            if report.get('synthetic_probe_only'):
+                raise ValueError(
+                    'synthetic probe preflight cannot authorize manifest execution')
+            keys = report.get('selected_keys')
+            if (not isinstance(keys, list)
+                    or not all(isinstance(key, str) and key for key in keys)
+                    or len(keys) != len(set(keys))):
+                raise ValueError(
+                    'preflight report %d has missing/malformed selected_keys' % index)
+            scoped.extend(keys)
+    if manifest is not None:
+        expected = list((manifest.get('meta') or {}).get('selected_keys') or [])
+        if (len(scoped) != len(set(scoped))
+                or sorted(scoped) != sorted(expected)):
+            raise ValueError('preflight selected-key scope does not match manifest')
+    return data
+
+
 def atomic_json(path, payload):
     os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
     tmp = path + '.tmp.%d' % os.getpid()
@@ -127,11 +183,25 @@ def build_prompt(manifest, keys):
             ''.join(card_block(manifest, key) for key in keys))
 
 
-def extract_structured(stdout):
+def parse_cli_wrapper(stdout):
+    """Parse the Claude CLI JSON envelope without yet trusting its structured result.
+
+    Usage/cost belongs to the paid invocation, not to the validity of ``cards[]``.  Keeping
+    envelope parsing separate lets :meth:`HeadlessEngine.call` account for a malformed result
+    before it retries.  An unreadable envelope is returned as a loud ``ValueError`` so the caller
+    can mark the spawned call cost-unevaluable instead of silently pricing it at zero.
+    """
     try:
         wrapper = json.loads(stdout)
     except json.JSONDecodeError as exc:
         raise ValueError('Claude output is not JSON: %s' % exc)
+    if not isinstance(wrapper, dict):
+        raise ValueError('Claude output envelope is not an object')
+    return wrapper
+
+
+def structured_from_wrapper(wrapper):
+    """Extract and validate the schema result from an already-accounted CLI envelope."""
     value = wrapper.get('structured_output')
     if value is None:
         value = wrapper.get('result')
@@ -142,7 +212,13 @@ def extract_structured(stdout):
             raise ValueError('Claude result is not structured JSON: %s' % exc)
     if not isinstance(value, dict) or not isinstance(value.get('cards'), list):
         raise ValueError('Claude result has no cards[] object')
-    return value, wrapper
+    return value
+
+
+def extract_structured(stdout):
+    """Compatibility helper returning ``(structured, wrapper)`` for existing callers/tests."""
+    wrapper = parse_cli_wrapper(stdout)
+    return structured_from_wrapper(wrapper), wrapper
 
 
 def restore_text(text, placeholders, unmapped=None):
@@ -348,9 +424,15 @@ def card_token_multiset(card):
 
 
 class HeadlessEngine:
-    def __init__(self, manifest, claude, timeout, runner, max_agents_override=None):
+    def __init__(self, manifest, claude, timeout, runner, max_agents_override=None,
+                 call_reservation=None, config_dir=None, active_claim=None):
         self.m = manifest
         self.claude = claude
+        if not config_dir:
+            raise ValueError('paid headless execution requires an explicit config directory')
+        self.config_dir = os.path.abspath(config_dir)
+        self.profile_fingerprint = config_dir_fingerprint(self.config_dir)
+        self.active_claim = active_claim
         budgets = manifest.get('budgets') or {}
         # R4 (C-15): clamp every subprocess to min(operator, budgets.timeout_ceil_ms, HARD).
         eff_ms = min(int(timeout) * 1000, HARD_TIMEOUT_MS)
@@ -381,6 +463,7 @@ class HeadlessEngine:
                       'cache_creation_tokens': 0, 'subagent_tokens': 0,
                       'observed_cost_usd': 0.0, 'cost_evaluable': True, 'priced_calls': 0,
                       'missing_usage_calls': 0}
+        self.call_reservation = call_reservation
 
     def note(self, key, error, preserve=False):
         # H1610 / H1618: mirror JS `if (!FAIL[k]) noteFail(...)` so a later terminal
@@ -390,29 +473,16 @@ class HeadlessEngine:
             return
         self.failures[key] = str(error)[:300]
 
-    def _accumulate_usage(self, wrapper):
-        """R5: fold one CLI wrapper's usage/cost into the running totals. A missing usage or cost
-        field flips `cost_evaluable` False (so a real call is never priced at $0) instead of being
-        silently dropped. `subagent_tokens` is the field the economy pricer reads."""
+    def _accumulate_usage(self, telemetry):
+        """Fold one already-validated call finalization into the in-memory result summary."""
         self.usage['priced_calls'] += 1
-        u = wrapper.get('usage') if isinstance(wrapper, dict) else None
-        if isinstance(u, dict):
-            # These are disjoint Claude usage fields; sum them, never overwrite. Prior calls'
-            # totals are retained even when a later call arrives with no usage.
-            self.usage['input_tokens'] += int(u.get('input_tokens') or 0)
-            self.usage['output_tokens'] += int(u.get('output_tokens') or 0)
-            self.usage['cache_read_tokens'] += int(u.get('cache_read_input_tokens') or 0)
-            self.usage['cache_creation_tokens'] += int(u.get('cache_creation_input_tokens') or 0)
-        else:
-            # Retain known telemetry; mark the whole run unpriceable and count the gap.
+        for name in ('input_tokens', 'output_tokens', 'cache_read_tokens',
+                     'cache_creation_tokens'):
+            self.usage[name] += telemetry[name]
+        if not telemetry['cost_evaluable']:
             self.usage['cost_evaluable'] = False
             self.usage['missing_usage_calls'] += 1
-        cost = wrapper.get('total_cost_usd') if isinstance(wrapper, dict) else None
-        if cost is None:
-            self.usage['cost_evaluable'] = False
-        else:
-            # observed_cost_usd stays authoritative (accumulated CLI cost), not recomputed from tokens.
-            self.usage['observed_cost_usd'] += float(cost)
+        self.usage['observed_cost_usd'] += telemetry['observed_cost_usd']
         self.usage['subagent_tokens'] = (
             self.usage['input_tokens'] + self.usage['output_tokens']
             + self.usage['cache_read_tokens'] + self.usage['cache_creation_tokens'])
@@ -433,10 +503,26 @@ class HeadlessEngine:
             # R3: a refused call consumes NO spawn and returns a typed stop reason.
             self.budget_stops += 1
             return None, 'budget_exceeded:%s' % ('heal' if heal else 'translate')
+        if self.call_reservation is None:
+            raise RuntimeError(
+                'paid headless spawn requires a durable call reservation ledger')
+        if (not isinstance(self.active_claim, ActiveCallClaim)
+                or not self.active_claim.is_live_canonical_for(
+                    self.profile_fingerprint)):
+            raise RuntimeError(
+                'paid headless spawn requires the live canonical profile claim')
         argv = claude_argv_prefix(self.claude) + [
                 '-p', '--output-format', 'json', '--json-schema',
                 json.dumps(self.m['output_schema'], ensure_ascii=False, separators=(',', ':')),
                 '--model', self.m['model'], '--permission-mode', 'plan']
+        try:
+            reservation = self.call_reservation.reserve(
+                'headless:%s' % ('heal' if heal else 'translate'),
+                profile=(self.m.get('execution') or {}).get('profile_slot'),
+                detail=label)
+        except CallLimitReached:
+            self.budget_stops += 1
+            return None, 'budget_exceeded:max_calls'
         started = time.monotonic()
         if heal:
             self.heal_calls += 1
@@ -446,6 +532,11 @@ class HeadlessEngine:
             proc = self.run(argv, input=prompt, text=True, encoding='utf-8',
                             capture_output=True, timeout=self.timeout)
         except subprocess.TimeoutExpired as exc:
+            # A timeout happened after a real spawn. No trustworthy wrapper survived, so count the
+            # call and fail closed on cost instead of leaving a paid timeout looking like $0.
+            telemetry = unevaluable_telemetry()
+            self.call_reservation.finalize(reservation, telemetry)
+            self._accumulate_usage(telemetry)
             self.kill_timeouts += 1
             attempt = {'label': label, 'keys': keys, 'returncode': 124,
                        'elapsed_ms': int((time.monotonic() - started) * 1000),
@@ -455,7 +546,37 @@ class HeadlessEngine:
                 attempt['cleanup_trouble'] = cleanup
             self.attempts.append(attempt)
             return None, 'timeout'
+        except BaseException:
+            # Reservation authority is irreversible. A spawn/runner exception
+            # cannot turn the attempt back into an apparent zero-cost call.
+            telemetry = unevaluable_telemetry()
+            self.call_reservation.finalize(reservation, telemetry)
+            self._accumulate_usage(telemetry)
+            raise
         elapsed = int((time.monotonic() - started) * 1000)
+        try:
+            wrapper = parse_cli_wrapper(proc.stdout)
+        except ValueError:
+            wrapper = None
+        # Account for EVERY spawned process before classifying its result. This covers non-zero
+        # provider exits and rc=0 wrappers whose structured_output is malformed. A missing envelope
+        # increments missing_usage_calls and makes the whole run unevaluable.
+        telemetry = telemetry_from_cli_wrapper(wrapper)
+        structured = None
+        structured_error = None
+        if not proc.returncode:
+            try:
+                if wrapper is None:
+                    raise ValueError('Claude output is not a JSON object envelope')
+                structured = structured_from_wrapper(wrapper)
+            except ValueError as exc:
+                structured_error = exc
+                # Malformed output is permanently unevaluable even if its outer wrapper claimed
+                # a price: the paid/result association itself failed validation.
+                telemetry = dict(telemetry, cost_evaluable=False)
+        # Durable finalization occurs before any classification branch returns or raises.
+        self.call_reservation.finalize(reservation, telemetry)
+        self._accumulate_usage(telemetry)
         if proc.returncode:
             classification, code = classify_process(proc)
             if classification == 'connection':
@@ -463,13 +584,10 @@ class HeadlessEngine:
             self.attempts.append({'label': label, 'keys': keys, 'returncode': proc.returncode,
                                   'elapsed_ms': elapsed, 'classification': classification})
             raise HardFailure(classification, code, (proc.stderr or proc.stdout or '')[-2000:])
-        try:
-            structured, wrapper = extract_structured(proc.stdout)
-        except ValueError as exc:
+        if structured_error is not None:
             self.attempts.append({'label': label, 'keys': keys, 'returncode': 0,
                                   'elapsed_ms': elapsed, 'classification': 'malformed_output'})
-            return None, 'malformed_output:%s' % exc
-        self._accumulate_usage(wrapper)     # R5: capture spend instead of discarding it
+            return None, 'malformed_output:%s' % structured_error
         self.attempts.append({'label': label, 'keys': keys, 'returncode': 0,
                               'elapsed_ms': elapsed, 'classification': 'success'})
         return structured, None
@@ -758,16 +876,34 @@ def refuse_starvation_max_agents(manifest, max_agents_override):
             % (max_agents_override, n))
 
 
-def execute(manifest, claude='claude', timeout=7200, runner=None, max_agents_override=None):
+def execute(manifest, claude='claude', timeout=7200, runner=None, max_agents_override=None,
+            call_reservation=None, config_dir=None):
     validate_manifest(manifest, require_v2=False)
     _validate_fragment_tm(manifest)      # R6: refuse a null-owner fragment_tm slot BEFORE any call
     refuse_starvation_max_agents(manifest, max_agents_override)
-    engine = HeadlessEngine(manifest, claude, timeout, runner, max_agents_override)
+    config_dir = config_dir or os.environ.get('CLAUDE_CONFIG_DIR')
+    if not config_dir:
+        raise ValueError('CLAUDE_CONFIG_DIR is required for paid headless execution')
+    config_dir = os.path.abspath(config_dir)
+    if manifest.get('schema') == SCHEMA_V2:
+        # Public execute() is itself a paid boundary. Do not rely on a CLI
+        # caller having validated the manifest against the actual profile.
+        validate_profile(manifest, config_dir)
+    fingerprint = config_dir_fingerprint(config_dir)
+    engine = None
     try:
-        results, healed, presplit = engine.run_all()
+        # One kernel-backed profile claim covers every translation/heal spawn
+        # in this generation attempt. Public execute() therefore cannot bypass
+        # the same lock that the CLI route uses.
+        with ActiveCallClaim(fingerprint) as active_claim:
+            engine = HeadlessEngine(
+                manifest, claude, timeout, runner, max_agents_override,
+                call_reservation=call_reservation, config_dir=config_dir,
+                active_claim=active_claim)
+            results, healed, presplit = engine.run_all()
     except HardFailure as exc:
         return None, {'classification': exc.classification, 'error': exc.detail,
-                      'attempts': engine.attempts}, exc.code
+                      'attempts': engine.attempts, 'usage': engine.usage}, exc.code
     for key, card in manifest.get('tm_resolved', {}).items():
         results.append({'key': key, 'card': card, 'judge': None, 'judge_sonnet': None,
                         'escalated': False, 'tm': True})
@@ -816,28 +952,65 @@ def main(argv=None):
                     help='R3: hard cap on TOTAL model spawns (translate+heal), not concurrency '
                          'width. Canary-only: refuse when N < selected key count (H1610). '
                          'Omit for multi-key windows so manifest budgets apply.')
+    ap.add_argument('--call-reservation',
+                    help='pwg.call_reservation.v1 ledger shared by probes and workers')
+    ap.add_argument('--run-id', help='run key in --call-reservation')
+    ap.add_argument('--max-calls', type=int, default=None,
+                    help='durable total-call ceiling; must match the initialized ledger')
+    ap.add_argument('--preflight', help='validated pwg.performance_preflight.v1/matrix.v1')
+    ap.add_argument('--preflight-sha256', help='optional sealed preflight hash')
+    ap.add_argument('--manifest-sha256',
+                    help='required external seal for paid manifest v2 execution')
     args = ap.parse_args(argv)
-    manifest_hash = sha256_path(args.manifest)
-    with open(args.manifest, encoding='utf-8') as f:
-        manifest = json.load(f)
+    with open(args.manifest, 'rb') as f:
+        manifest_bytes = f.read()
+    manifest_hash = hashlib.sha256(manifest_bytes).hexdigest()
+    manifest = json.loads(manifest_bytes.decode('utf-8'))
     try:
+        if manifest.get('schema') != SCHEMA_V1:
+            if not args.manifest_sha256:
+                raise ValueError('paid v2 execution requires --manifest-sha256')
+            if manifest_hash != args.manifest_sha256:
+                raise ValueError('manifest hash changed before paid execution')
+        preflight_path = args.preflight or os.environ.get('PWG_PREFLIGHT_PATH')
+        preflight_hash = args.preflight_sha256 or os.environ.get('PWG_PREFLIGHT_SHA256')
+        if manifest.get('schema') != SCHEMA_V1:
+            validate_preflight_artifact(
+                preflight_path, manifest=manifest, expected_sha256=preflight_hash)
+        reservation_path = args.call_reservation or os.environ.get('PWG_CALL_RESERVATION_PATH')
+        reservation_run = args.run_id or os.environ.get('PWG_CALL_RESERVATION_RUN_ID')
+        reservation_max = args.max_calls
+        if reservation_max is None and 'PWG_CALL_RESERVATION_MAX_CALLS' in os.environ:
+            raw_max = os.environ.get('PWG_CALL_RESERVATION_MAX_CALLS')
+            reservation_max = None if raw_max == '' else int(raw_max)
+        call_reservation = (CallReservationLedger(
+            reservation_path, reservation_run, reservation_max) if reservation_path else None)
+        if call_reservation is None:
+            raise ValueError('paid execution requires --call-reservation and --run-id '
+                             '(or PWG_CALL_RESERVATION_* environment)')
         if manifest.get('schema') == SCHEMA_V1:
             if not args.allow_historical_v1:
                 raise ValueError('v1 manifest is historical-only; production requires %s' % SCHEMA_V2)
             payload, status, code = execute(manifest, args.claude_bin, args.timeout,
-                                            max_agents_override=args.max_agents)
+                                            max_agents_override=args.max_agents,
+                                            call_reservation=call_reservation,
+                                            config_dir=os.environ.get(
+                                                'CLAUDE_CONFIG_DIR'))
         else:
             config_dir = os.environ.get('CLAUDE_CONFIG_DIR')
             if not config_dir:
                 raise ValueError('CLAUDE_CONFIG_DIR is required for manifest v2')
             validate_profile(manifest, config_dir, args.only_profile)
-            with ActiveCallClaim(manifest['execution']['config_dir_fingerprint']):
-                payload, status, code = execute(manifest, args.claude_bin, args.timeout,
-                                            max_agents_override=args.max_agents)
+            payload, status, code = execute(
+                manifest, args.claude_bin, args.timeout,
+                max_agents_override=args.max_agents,
+                call_reservation=call_reservation, config_dir=config_dir)
     except (OSError, RuntimeError, ValueError) as exc:
         payload, status, code = None, {'classification': 'configuration', 'error': str(exc)}, 2
     status['manifest_sha256'] = manifest_hash
     if payload is not None:
+        payload.setdefault('meta', {})[
+            'execution_manifest_sha256'] = manifest_hash
         atomic_json(args.output, payload)
         status['result_sha256'] = sha256_path(args.output)
     atomic_json(args.status_out, status)

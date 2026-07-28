@@ -55,6 +55,7 @@ Pure control flow: no model calls, no network, no store mutation, no promotion. 
 side effect is writing the JSON checkpoint.
 """
 import json
+import math
 import os
 import sys
 import tempfile
@@ -148,7 +149,7 @@ class BoundedSupervisor:
     def __init__(self, plan, run_window, checkpoint_path,
                  audit=None, max_windows=None, budget_cap=None,
                  empty_streak_cap=None, cost_fn=None, input_dir=None, resume=False,
-                 max_calls=None, max_clean=None):
+                 max_calls=None, max_clean=None, call_counter=None, usage_counter=None):
         if not callable(run_window):
             raise TypeError('run_window must be callable(window) -> wf_output_path')
         self.plan = [self._normalize_plan(w, i) for i, w in enumerate(plan or [])]
@@ -160,6 +161,8 @@ class BoundedSupervisor:
         self.empty_streak_cap = empty_streak_cap
         self.max_calls = max_calls
         self.max_clean = max_clean
+        self.call_counter = call_counter
+        self.usage_counter = usage_counter
         self.cost_fn = cost_fn or (lambda window, wf_output, report: report.get('cost', 0) or 0)
         self.input_dir = input_dir
         self._own_input_dir = None
@@ -176,9 +179,36 @@ class BoundedSupervisor:
         self.history = []
         self.stop_reason = None
         self._rq_counter = 0
+        self._durable_cost_evaluable = True
 
         if resume and checkpoint_path and os.path.exists(checkpoint_path):
             self._load_checkpoint()
+        self._sync_call_counter()
+        self._sync_usage_counter()
+
+    def _sync_call_counter(self):
+        """Use a durable pre-spawn ledger as the authority when one is supplied."""
+        if self.call_counter is not None:
+            observed = int(self.call_counter())
+            if observed < self.calls_spent:
+                raise ValueError('durable call counter regressed (%d < %d)'
+                                 % (observed, self.calls_spent))
+            self.calls_spent = observed
+        return self.calls_spent
+
+    def _sync_usage_counter(self):
+        if self.usage_counter is not None:
+            usage = self.usage_counter() or {}
+            observed = usage.get('observed_cost_usd')
+            if (isinstance(observed, bool) or not isinstance(observed, (int, float))
+                    or not math.isfinite(observed) or observed < 0):
+                raise ValueError('durable observed cost is invalid: %r' % observed)
+            if observed < self.budget_spent:
+                raise ValueError('durable cost counter regressed (%r < %r)'
+                                 % (observed, self.budget_spent))
+            self.budget_spent = observed
+            self._durable_cost_evaluable = usage.get('cost_evaluable') is True
+        return self.budget_spent
 
     # ---- construction helpers -------------------------------------------------
 
@@ -249,6 +279,17 @@ class BoundedSupervisor:
             return self.summary()
         try:
             while True:
+                self._sync_call_counter()
+                self._sync_usage_counter()
+                if self.max_calls is not None and self.calls_spent >= self.max_calls:
+                    self._finish(STOP_CALL_COUNT)
+                    break
+                if self.budget_cap is not None and not self._durable_cost_evaluable:
+                    self._finish(STOP_COST_UNEVALUABLE)
+                    break
+                if self.budget_cap is not None and self.budget_spent >= self.budget_cap:
+                    self._finish(STOP_BUDGET)
+                    break
                 # (5a) window-count bound — checked before pulling/running new work, so a
                 # cap of N runs EXACTLY N windows.
                 if self.max_windows is not None and self.windows_done >= self.max_windows:
@@ -266,7 +307,18 @@ class BoundedSupervisor:
                     continue
 
                 # (2) RUN — injected; returns a wf_output handle/path.
-                wf_output = self.run_window(item)
+                try:
+                    wf_output = self.run_window(item)
+                except BaseException:
+                    # A worker timeout/crash may leave no auditable wf_output, but its
+                    # pre-spawn reservation is still durable. Under a cost ceiling, an
+                    # unfinalized/unpriced call is the authoritative stop condition.
+                    self._sync_call_counter()
+                    self._sync_usage_counter()
+                    if self.budget_cap is not None and not self._durable_cost_evaluable:
+                        self._finish(STOP_COST_UNEVALUABLE)
+                        break
+                    raise
 
                 # A4 (H1283): a requeue work-item's id (rq-NNN-<lease>) matches no coordinator
                 # lease and no sqlite job, so the injected UNATTENDED run_window no-ops and returns
@@ -299,15 +351,27 @@ class BoundedSupervisor:
                 # (3) AUDIT — injected report, or the H920 gate helper on a tmp dir.
                 report = self._run_audit(wf_output, item)
 
-                raw_cost = self.cost_fn(item, wf_output, report)
+                before_cost = self.budget_spent
+                raw_cost = (self.cost_fn(item, wf_output, report)
+                            if self.usage_counter is None else None)
                 # A None cost means UNEVALUABLE — never coerce it to 0 for accounting. It
                 # only fails the run closed when a cost ceiling (budget_cap) is active
                 # (checked below); with no cost ceiling it is a harmless 0 contribution.
-                cost_unevaluable = raw_cost is None
-                cost = 0 if cost_unevaluable else (raw_cost or 0)
-                self.budget_spent += cost
-                calls = int(report.get('calls') or 0)
-                self.calls_spent += calls
+                if self.usage_counter is None:
+                    cost_unevaluable = raw_cost is None
+                    cost = 0 if cost_unevaluable else (raw_cost or 0)
+                    self.budget_spent += cost
+                else:
+                    self._sync_usage_counter()
+                    cost_unevaluable = not self._durable_cost_evaluable
+                    cost = self.budget_spent - before_cost
+                before_calls = self.calls_spent
+                if self.call_counter is None:
+                    calls = int(report.get('calls') or 0)
+                    self.calls_spent += calls
+                else:
+                    self._sync_call_counter()
+                    calls = self.calls_spent - before_calls
                 self.windows_done += 1
                 self.completed_window_ids.append(item['id'])
 

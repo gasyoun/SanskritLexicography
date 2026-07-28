@@ -10,6 +10,7 @@ from collections import Counter
 import copy
 import datetime
 import glob
+import hashlib
 import json
 import os
 import re
@@ -60,6 +61,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import promote_final_cards  # noqa: E402
+import promotion_journal  # noqa: E402
 from safe_filename import safe_name  # noqa: E402
 import translation_memory  # noqa: E402
 import verb_worklist  # noqa: E402
@@ -68,6 +70,7 @@ from window_common import (  # noqa: E402
     atomic_write_json,
     atomic_write_text,
     defer_monster,
+    fsync_existing_path,
     sha256_file,
 )
 
@@ -101,6 +104,7 @@ def paths():
         'state': os.path.join(base, 'state.json'),
         'lock': os.path.join(base, '.state.lock'),
         'promotion_lock': os.path.join(base, '.promotion.lock'),
+        'promotions': os.path.join(base, 'promotions'),
         'registry': os.path.join(base, 'artifact_registry.jsonl'),
         'daily': os.path.join(base, 'daily_metrics.jsonl'),
         'dashboard': os.path.join(base, 'dashboard.json'),
@@ -124,6 +128,7 @@ def ensure_dirs():
     p = paths()
     os.makedirs(p['base'], exist_ok=True)
     os.makedirs(p['artifacts'], exist_ok=True)
+    os.makedirs(p['promotions'], exist_ok=True)
     return p
 
 
@@ -275,7 +280,8 @@ def load_state():
     return state
 
 
-def save_state(state):
+def prepare_state_for_save(state, updated_at=None):
+    """Normalize state exactly once so promotion can seal the bytes before replacement."""
     p = ensure_dirs()
     expire_stale_leases(state)
     normalize_lease_reservations(state)
@@ -286,7 +292,16 @@ def save_state(state):
         (int(lease.get('runtime_limit') or TRANSLATION_LIMIT) for lease in running),
         default=TRANSLATION_LIMIT) if state['runtime_mode'] == 'staged-probed'
                               else TRANSLATION_LIMIT)
-    state['updated_at'] = utc_now()
+    state['updated_at'] = updated_at or utc_now()
+    return p
+
+
+def serialized_state(state):
+    return json.dumps(state, ensure_ascii=False, indent=1).encode('utf-8')
+
+
+def save_state(state, updated_at=None):
+    p = prepare_state_for_save(state, updated_at=updated_at)
     atomic_write_json(p['state'], state, indent=1)
     write_dashboard(state)
 
@@ -444,7 +459,7 @@ def artifact_dir(lease_id):
 
 def append_jsonl(path, rec):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    append_jsonl_line(path, rec)
+    append_jsonl_line(path, rec, durable=True)
 
 
 def registry_event(lease, event_type, data=None):
@@ -460,6 +475,73 @@ def registry_event(lease, event_type, data=None):
         'data': data or {},
     }
     append_jsonl(paths()['registry'], rec)
+
+
+def promotion_registry_record(lease, promotion_id, data=None, event_ts=None):
+    """Build the deterministic registry projection sealed into the journal."""
+    payload = dict(data or {})
+    payload['promotion_id'] = promotion_id
+    return {
+        'schema': REGISTRY_SCHEMA,
+        'ts': event_ts or utc_now(),
+        'lease_id': lease.get('id'),
+        'event': 'promoted',
+        'kind': lease.get('kind'),
+        'target': lease.get('target'),
+        'state': lease.get('state'),
+        'artifact_dir': lease.get('artifact_dir'),
+        'data': payload,
+    }
+
+
+def append_promotion_registry_record(expected):
+    """Durably append or re-adopt one exact promotion registry projection."""
+    registry = paths()['registry']
+    if os.path.exists(registry):
+        raw = open(registry, 'rb').read()
+        if raw and not raw.endswith(b'\n'):
+            raise promotion_journal.JournalError(
+                'artifact registry is not newline-terminated; refusing a '
+                'possibly short/non-durable append')
+        try:
+            text = raw.decode('utf-8')
+        except UnicodeDecodeError as exc:
+            raise promotion_journal.JournalError(
+                'artifact registry is not valid UTF-8: %s' % exc) from exc
+        for line_number, line in enumerate(text.splitlines(), 1):
+            if not line.strip():
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError as exc:
+                raise promotion_journal.JournalError(
+                    'artifact registry has malformed JSONL at line %d: %s'
+                    % (line_number, exc)) from exc
+            if not isinstance(row, dict):
+                raise promotion_journal.JournalError(
+                    'artifact registry line %d is not an object'
+                    % line_number)
+            if (row.get('lease_id') == expected.get('lease_id')
+                    and row.get('event') == 'promoted'
+                    and (row.get('data') or {}).get(
+                        'promotion_id') == (
+                            expected.get('data') or {}).get('promotion_id')):
+                if row != expected:
+                    raise promotion_journal.JournalError(
+                        'artifact registry promotion identity exists with '
+                        'different payload')
+                # A prior append may have written every byte but failed its
+                # fsync.  Retry adoption only after durability succeeds now.
+                fsync_existing_path(registry)
+                return False
+    append_jsonl(registry, expected)
+    return True
+
+
+def registry_promotion_event(lease, promotion_id, data=None, event_ts=None):
+    """Append exactly one promoted event for a lease/promotion pair."""
+    return append_promotion_registry_record(promotion_registry_record(
+        lease, promotion_id, data, event_ts))
 
 
 def run_cmd(cmd, cwd=REPO, check=True, timeout=None):
@@ -616,6 +698,8 @@ def begin_run_leases(state, lease_ids, mode='standard', run_id=None,
 def begin_run(args):
     with DirLock(paths()['lock']):
         state = load_state()
+        for lease_id in args.lease_id:
+            validate_lease_preflight(lease_by_id(state, lease_id))
         leases = begin_run_leases(
             state, args.lease_id, mode=args.mode, run_id=args.run_id,
             probe_receipt=args.probe_receipt)
@@ -866,6 +950,8 @@ def register_prepared_lease(lease_id, lane, keys, harness, manifest, preflight_p
             'origin_execution_manifest': os.path.abspath(manifest),
             'origin_execution_manifest_sha256': sha256_file(manifest),
             'preflight_path': os.path.abspath(preflight_path),
+            'preflight_sha256': sha256_file(preflight_path),
+            'preflight_allow_over_cost': False,
         }
         state['leases'].append(lease)
         save_state(state)
@@ -883,10 +969,35 @@ def enforce_cost_gate(preflight_path, target, allow_over_cost=False):
     try:
         with open(preflight_path, encoding='utf-8') as f:
             data = json.load(f)
-    except (OSError, json.JSONDecodeError):
-        return
-    for rep in (data.get('reports') or [data]):
-        cg = rep.get('cost_gate') or {}
+    except (OSError, json.JSONDecodeError) as exc:
+        raise SystemExit(
+            'COST-GATE: required preflight is unreadable (%s): %s'
+            % (preflight_path, exc))
+    if not isinstance(data, dict):
+        raise SystemExit('COST-GATE: required preflight top level is not an object: %s'
+                         % preflight_path)
+    schema = data.get('schema')
+    if schema == 'pwg.performance_preflight.v1':
+        reports = [data]
+    elif schema == 'pwg.performance_preflight.matrix.v1':
+        reports = data.get('reports')
+    else:
+        raise SystemExit(
+            'COST-GATE: required preflight has unsupported schema %r: %s'
+            % (schema, preflight_path))
+    if not isinstance(reports, list) or not reports:
+        raise SystemExit('COST-GATE: required preflight has no reports: %s'
+                         % preflight_path)
+    for index, rep in enumerate(reports):
+        if not isinstance(rep, dict):
+            raise SystemExit(
+                'COST-GATE: preflight report %d is not an object: %s'
+                % (index, preflight_path))
+        cg = rep.get('cost_gate')
+        if not isinstance(cg, dict) or not isinstance(cg.get('over_ceiling'), bool):
+            raise SystemExit(
+                'COST-GATE: preflight report %d has no boolean cost verdict: %s'
+                % (index, preflight_path))
         if not cg.get('over_ceiling'):
             continue
         part = rep.get('cost_partition') or {}
@@ -905,6 +1016,47 @@ def enforce_cost_gate(preflight_path, target, allow_over_cost=False):
                 % (target or rep.get('root'), cg.get('est_cost_usd') or 0.0,
                    cg.get('est_cost_per_card_usd') or 0.0,
                    len(part.get('run_now') or []), len(part.get('defer_monster') or [])))
+
+
+def validate_lease_preflight(lease):
+    """Recheck the sealed cost estimate immediately before a lease can consume runtime."""
+    path = lease.get('preflight_path')
+    expected = lease.get('preflight_sha256')
+    if not path or not expected:
+        raise SystemExit(
+            '%s: prepared lease has no sealed preflight evidence; reprepare it'
+            % lease.get('id'))
+    try:
+        actual = sha256_file(path)
+    except OSError as exc:
+        raise SystemExit('%s: sealed preflight is unreadable: %s'
+                         % (lease.get('id'), exc))
+    if actual != expected:
+        raise SystemExit(
+            '%s: sealed preflight hash changed (expected %s, actual %s)'
+            % (lease.get('id'), expected, actual))
+    enforce_cost_gate(
+        path, lease.get('target'),
+        allow_over_cost=bool(lease.get('preflight_allow_over_cost')))
+    return path
+
+
+def validate_preflight_command(args):
+    lease_ids = list(args.lease_id or [])
+    if not lease_ids or len(lease_ids) != len(set(lease_ids)):
+        raise SystemExit('validate-preflight requires unique lease IDs')
+    with DirLock(paths()['lock']):
+        state = load_state()
+        validated = [
+            {'lease_id': lease_id,
+             'preflight': validate_lease_preflight(lease_by_id(state, lease_id))}
+            for lease_id in lease_ids
+        ]
+    print(json.dumps({
+        'schema': 'pwg.coordinator.preflight_validation.v1',
+        'ok': True,
+        'leases': validated,
+    }, ensure_ascii=False, indent=1))
 
 
 def _run_child_inproc(argv, timeout=None):
@@ -1019,6 +1171,9 @@ def prepare(args, run_child=None):
         lease['config_dir'] = os.path.abspath(args.config_dir) if args.config_dir else None
         lease['executor_lane'] = args.executor_lane
         lease['preflight_path'] = preflight_path
+        lease['preflight_sha256'] = sha256_file(preflight_path)
+        lease['preflight_allow_over_cost'] = bool(
+            getattr(args, 'allow_over_cost', False))
         clear_operation(lease)
         save_state(state)
         registry_event(lease, 'prepared', {'harness': harness, 'manifest': manifest,
@@ -1038,6 +1193,43 @@ def normalize_workflow_result(src_path, dst_path):
         raise SystemExit('workflow result is not an object')
     atomic_write_json(dst_path, result, indent=None)
     return result
+
+
+def seal_workflow_submission(src_path, artifact_path, expected_sha256):
+    """Copy once, hash the copied bytes, and audit only that immutable submission."""
+    if not expected_sha256 or not re.fullmatch(r'[0-9a-fA-F]{64}', expected_sha256):
+        raise SystemExit('record-output requires a valid --result-sha256')
+    expected_sha256 = expected_sha256.lower()
+    os.makedirs(artifact_path, exist_ok=True)
+    destination = os.path.join(
+        artifact_path, 'submitted_result.%s.json' % expected_sha256[:16])
+    if os.path.exists(destination):
+        if sha256_file(destination) != expected_sha256:
+            raise SystemExit('sealed result destination has unexpected bytes: %s'
+                             % destination)
+        return destination
+    tmp = '%s.tmp.%s' % (destination, uuid.uuid4().hex)
+    digest = hashlib.sha256()
+    try:
+        with open(src_path, 'rb') as source, open(tmp, 'wb') as target:
+            for chunk in iter(lambda: source.read(1024 * 1024), b''):
+                digest.update(chunk)
+                target.write(chunk)
+            target.flush()
+            os.fsync(target.fileno())
+        actual = digest.hexdigest()
+        if actual != expected_sha256:
+            raise SystemExit(
+                'result substitution refused (expected %s, copied %s)'
+                % (expected_sha256, actual))
+        os.replace(tmp, destination)
+    except BaseException:
+        try:
+            os.unlink(tmp)
+        except FileNotFoundError:
+            pass
+        raise
+    return destination
 
 
 def clean_result_payload(result, rejected):
@@ -1426,15 +1618,36 @@ def record_output(args):
         # any state is persisted. Raising here discards begin_operation's in-memory mutation (state
         # is not saved yet), leaving the on-disk lease 'running' for a correct retry.
         supplied_run_id = getattr(args, 'run_id', None)
+        expected_run_id = lease.get('run_id')
+        if expected_run_id and supplied_run_id is None:
+            raise SystemExit(
+                '%s: record-output --run-id is required for running lease run-id %r '
+                '(unbound result submission refused)' % (args.lease_id, expected_run_id))
         if supplied_run_id is not None and supplied_run_id != lease.get('run_id'):
             raise SystemExit(
                 '%s: record-output --run-id %r does not match the running lease run-id %r '
                 '(stale/zombie run submission refused)' %
                 (args.lease_id, supplied_run_id, lease.get('run_id')))
+        supplied_result_sha256 = getattr(args, 'result_sha256', None)
+        if expected_run_id and supplied_result_sha256 is None:
+            raise SystemExit(
+                '%s: record-output --result-sha256 is required for a sealed run '
+                '(unbound result bytes refused)' % args.lease_id)
+        processing_args = copy.copy(args)
+        if supplied_result_sha256 is not None:
+            result_artifact_dir = (
+                lease.get('current_artifact_dir')
+                or lease.get('artifact_dir')
+                or artifact_dir(args.lease_id))
+            sealed_result = seal_workflow_submission(
+                args.workflow_result, result_artifact_dir, supplied_result_sha256)
+            processing_args.workflow_result = sealed_result
+            lease['submitted_result_path'] = sealed_result
+            lease['submitted_result_sha256'] = supplied_result_sha256.lower()
         save_state(state)
         working = copy.deepcopy(lease)
     try:
-        audit, manifest, adir, pending = process_record_output(working, args)
+        audit, manifest, adir, pending = process_record_output(working, processing_args)
     except BaseException as exc:
         block_operation(args.lease_id, token, 'auditing', exc)
         raise
@@ -1475,6 +1688,58 @@ def record_output(args):
     if audit.stderr.strip():
         print(audit.stderr.rstrip(), file=sys.stderr)
     print('lease %s -> %s' % (lease['id'], lease['state']))
+
+
+RECORD_BATCH_SCHEMA = 'pwg.record_output_batch.v1'
+
+
+def _record_batch_progress(recorded, records, failed=None):
+    payload = {
+        'schema': RECORD_BATCH_SCHEMA,
+        'recorded': list(recorded),
+        'remaining': [row[0] for row in records[len(recorded):]],
+        'failed': failed,
+    }
+    print('RECORD_OUTPUT_BATCH_PROGRESS: ' +
+          json.dumps(payload, ensure_ascii=False, separators=(',', ':')))
+
+
+def record_output_batch(args):
+    """Record N completed leases in one coordinator parent process.
+
+    Each item still executes the existing :func:`record_output` unit with its own operation token,
+    locks, isolated ``audit_window`` child/timeout, report, and state commit. The batch is
+    deliberately sequential and fail-fast: earlier commits remain durable, the failing item and
+    later leases remain retryable. A machine-readable progress line after every commit (and on
+    failure) lets the outer SQLite scheduler mark exactly the completed prefix.
+    """
+    records = [tuple(row) for row in (getattr(args, 'record', None) or [])]
+    if not records:
+        raise SystemExit(
+            'record-output-batch requires at least one '
+            '--record LEASE RESULT RUN_ID RESULT_SHA256')
+    lease_ids = [row[0] for row in records]
+    if len(lease_ids) != len(set(lease_ids)):
+        raise SystemExit('record-output-batch refuses duplicate lease ids')
+    recorded = []
+    for lease_id, workflow_result, run_id, result_sha256 in records:
+        one = argparse.Namespace(
+            lease_id=lease_id,
+            workflow_result=workflow_result,
+            transcript_dir=None,
+            allow_stale=getattr(args, 'allow_stale', False),
+            run_id=None if run_id == '-' else run_id,
+            result_sha256=None if result_sha256 == '-' else result_sha256,
+        )
+        try:
+            record_output(one)
+        except BaseException as exc:
+            _record_batch_progress(
+                recorded, records,
+                failed={'lease_id': lease_id, 'type': type(exc).__name__, 'message': str(exc)})
+            raise
+        recorded.append(lease_id)
+        _record_batch_progress(recorded, records)
 
 
 def prepare_requeue(args):
@@ -1553,6 +1818,19 @@ def prepare_requeue(args):
             os.makedirs(attempt_dir, exist_ok=False)
             created = True
             atomic_write_text(rq, '\n'.join(requeue_keys) + '\n')
+            preflight_path = os.path.join(attempt_dir, 'preflight.json')
+            preflight_cmd = [
+                sys.executable, os.path.join(HERE, 'perf_preflight.py'),
+                ('nominal_%s' % lease['id']) if nominal else root,
+                '--keys=%s' % ','.join(requeue_keys), '--json',
+            ]
+            if nominal:
+                preflight_cmd += ['--nominal', '--no-grammar']
+            preflight = run_cmd(preflight_cmd, timeout=PREPARE_TIMEOUT_SECONDS)
+            atomic_write_text(preflight_path, preflight.stdout)
+            enforce_cost_gate(
+                preflight_path, lease.get('target'),
+                allow_over_cost=bool(lease.get('preflight_allow_over_cost')))
             if which == 'defect':
                 fshas = set()
                 source_paths = {
@@ -1599,6 +1877,8 @@ def prepare_requeue(args):
         lease['requeue_kind'] = which
         lease['requeue_attempt'] = attempt
         lease['execution_manifest'] = manifest
+        lease['preflight_path'] = preflight_path
+        lease['preflight_sha256'] = sha256_file(preflight_path)
         lease['current_artifact_dir'] = attempt_dir
         known_orphans = {
             os.path.abspath(row.get('artifact_dir'))
@@ -1613,6 +1893,8 @@ def prepare_requeue(args):
             'artifact_dir': attempt_dir,
             'harness': harness,
             'execution_manifest': manifest,
+            'preflight': preflight_path,
+            'preflight_sha256': lease['preflight_sha256'],
             'prepared_at': prepared_at,
             'selected_keys': requeue_keys,
             'remaining_pending': remaining_pending,
@@ -1638,20 +1920,320 @@ def prepare_requeue(args):
     print('harness: %s' % harness)
 
 
-def rebuild_ru_translation_memory():
-    """Rebuild + validate the RU translation memory from the committed canonical store. Must run
-    after any store-mutating promotion -- including from a `finally` -- so a mid-promotion raise
-    can never leave store and TM divergent (P10, H1420)."""
-    run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'build', '--lang', 'ru'])
-    # C7: detection and the build-frags call MUST target the same tree (see _frag_prov_glob).
-    # build_frags joins its --glob with REPO, but this pattern is absolute (coord_dir() abspath's),
-    # so that join is a no-op and both sides resolve to the same coordinator dir.
-    frag_glob = _frag_prov_glob()
-    if any('"frag_prov"' in open(fp, encoding='utf-8').read()
-           for fp in glob.glob(frag_glob, recursive=True)):
-        run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'build-frags',
-                 '--lang', 'ru', '--glob', frag_glob])
-    run_cmd([sys.executable, os.path.join(HERE, 'translation_memory.py'), 'validate', '--lang', 'ru'])
+def completed_run_binding(lease):
+    """Return the durable run/attempt identity that produced a recorded lease.
+
+    ``record-output`` releases the live runtime reservation, so the current
+    ``run_id`` is deliberately removed from the lease.  The completed attempt is
+    the immutable source of promotion attribution.
+    """
+    attempts = lease.get('run_attempts') or []
+    if not attempts:
+        return {'run_id': None, 'attempt_id': None}
+    attempt = attempts[-1]
+    return {
+        'run_id': attempt.get('run_id'),
+        'attempt_id': attempt.get('run_operation_id'),
+    }
+
+
+def promotion_identity(ready, model_identifier):
+    """Content-address one exact promotion intent for stable crash retries."""
+    intent = {
+        'schema': 'pwg.coordinator.promotion_intent.v1',
+        'model_identifier': model_identifier,
+        'review_status': 'ai_translated',
+        'leases': [{
+            'lease_id': lease['id'],
+            'run': completed_run_binding(lease),
+            'clean_output_sha256': lease.get('clean_output_sha256'),
+        } for lease in sorted(ready, key=lambda row: row['id'])],
+    }
+    payload = json.dumps(
+        intent, ensure_ascii=False, sort_keys=True,
+        separators=(',', ':')).encode('utf-8')
+    return 'pwg-prom-' + hashlib.sha256(payload).hexdigest()[:24]
+
+
+def journal_paths(promotion_id):
+    base = os.path.join(paths()['promotions'], promotion_id)
+    return {
+        'journal': base + '.journal.json',
+        'manifest': base + '.manifest.json',
+        'report': base + '.report.json',
+    }
+
+
+def batch_from_journal(journal):
+    """Reconstruct the exact clean-output bundle sealed in a journal."""
+    batch = []
+    for lease_id in journal['lease_ids']:
+        metrics = journal['leases'][lease_id]
+        files = (metrics.get('clean_output') or {}).get('files') or []
+        if len(files) != 1 or not files[0].get('path'):
+            raise promotion_journal.JournalError(
+                '%s: coordinator recovery requires exactly one sealed clean output'
+                % lease_id)
+        binding = journal['bindings'][lease_id]
+        batch.append({
+            'lease_id': lease_id,
+            'run_id': binding.get('run_id'),
+            'attempt_id': binding.get('attempt_id'),
+            'glob': files[0]['path'],
+            'expected_subcards': list(metrics['subcard_keys']),
+        })
+    return batch
+
+
+def build_promotion_derived(journal_path, store_claim_held=False):
+    """Build, validate, and seal the store-derived RU artifacts idempotently."""
+    journal = promotion_journal.load(journal_path)
+    if journal['phase'] != 'store_committed':
+        return journal
+    if not store_claim_held:
+        with promote_final_cards.PromoteClaim(journal['store']['path']):
+            return build_promotion_derived(
+                journal_path, store_claim_held=True)
+    promotion_journal.reconcile(
+        journal_path, adopt_after=False, store_claim_held=True)
+    store = journal['store']['path']
+    clean_files = [
+        row['path']
+        for lease_id in journal['lease_ids']
+        for row in journal['leases'][lease_id]['clean_output']['files']
+    ]
+    card_path, _count, _skipped = translation_memory.build(
+        store, 'ru', journal_path=journal_path)
+    frag_path, _added, _total = translation_memory.build_frags(
+        clean_files, 'ru', journal_path=journal_path)
+    try:
+        best, conflicts, null_keys = promote_final_cards.collect_cards(clean_files)
+        if conflicts or null_keys or sorted(best) != sorted(
+                key for lease_id in journal['lease_ids']
+                for key in journal['leases'][lease_id]['subcard_keys']):
+            raise promotion_journal.JournalError(
+                'clean-output membership changed before denylist unblock')
+        cleared_addr, cleared_frag = promote_final_cards.clear_denials_for_promotion(
+            best, timestamp=journal['artifact_timestamp'])
+        if cleared_addr or cleared_frag:
+            print('TM denylist: cleared %d card address(es) + %d fragment sha(s)'
+                  % (len(cleared_addr), len(cleared_frag)))
+    except Exception as exc:
+        promotion_journal.record_derived_observation(
+            journal_path, 'denylist',
+            artifact_path=translation_memory.denylist_path(),
+            error=str(exc))
+        raise
+    promotion_journal.record_derived_observation(
+        journal_path, 'denylist',
+        artifact_path=translation_memory.denylist_path(),
+        error=None)
+    return promotion_journal.mark_derived_validated(
+        journal_path,
+        denylist_path=translation_memory.denylist_path(),
+        card_tm_path=card_path,
+        fragment_tm_path=frag_path,
+    )
+
+
+def apply_journal_outcomes(state, journal):
+    """Apply one journal's complete lease metrics to an in-memory state."""
+    intent = (journal.get('coordinator') or {}).get('intent') or {}
+    sealed_outcomes = intent.get('lease_outcomes')
+    outcomes = {}
+    promoted_at = journal['artifact_timestamp']
+    report = journal['report']
+    store_before = report['store_rows_before']
+    store_after = report['store_rows_after']
+    for lease_id in journal['lease_ids']:
+        lease = lease_by_id(state, lease_id)
+        if sealed_outcomes:
+            outcome = sealed_outcomes[lease_id]
+        elif lease.get('promotion_id') == journal['promotion_id']:
+            outcome = lease.get('state')
+        elif lease.get('state') == 'ready_partial':
+            outcome = 'promoted_partial'
+        elif lease.get('state') == 'ready':
+            outcome = 'promoted'
+        else:
+            raise promotion_journal.JournalError(
+                '%s: coordinator lease is %r, expected ready/ready_partial or '
+                'this promotion marker' % (lease_id, lease.get('state')))
+        if outcome not in ('promoted', 'promoted_partial'):
+            raise promotion_journal.JournalError(
+                '%s: invalid sealed promotion outcome %r' % (lease_id, outcome))
+        per = journal['leases'][lease_id]
+        lease.update({
+            'state': outcome,
+            'promoted_at': promoted_at,
+            'promotion_id': journal['promotion_id'],
+            'promotion_journal': os.path.abspath(
+                journal_paths(journal['promotion_id'])['journal']),
+            'model_version': journal['model_identifier'],
+            'store_before': store_before,
+            'store_after': store_after,
+            'store_delta': per['store_delta'],
+            'bundle_store_delta': store_after - store_before,
+            'promoted_subcards': per['subcards'],
+            'promoted_rows': per['rows'],
+            'rows_added': per['rows_added'],
+            'rows_replaced': per['rows_replaced'],
+        })
+        outcomes[lease_id] = outcome
+    state['last_promotion'] = {
+        'promotion_id': journal['promotion_id'],
+        'journal': os.path.abspath(
+            journal_paths(journal['promotion_id'])['journal']),
+        'lease_outcomes': outcomes,
+        'model_identifier': journal['model_identifier'],
+        'store_sha256': journal['store']['expected_after_sha256'],
+        'committed_at': promoted_at,
+    }
+    # A fixed journal timestamp makes a retry reconstruct byte-identical state.
+    state['updated_at'] = promoted_at
+    return outcomes
+
+
+def promotion_registry_rows(state, journal, journal_path):
+    """Return the exact per-lease registry projection for one promotion."""
+    rows = []
+    for lease_id in journal['lease_ids']:
+        lease = lease_by_id(state, lease_id)
+        per = journal['leases'][lease_id]
+        rows.append(promotion_registry_record(
+            lease, journal['promotion_id'], {
+                'glob': ((per.get('clean_output') or {}).get(
+                    'files') or [{}])[0].get('path'),
+                'journal': os.path.abspath(journal_path),
+                'store_before': journal['report']['store_rows_before'],
+                'store_after': journal['report']['store_rows_after'],
+                'store_delta': per['store_delta'],
+                'bundle_store_delta': (
+                    journal['report']['store_rows_after']
+                    - journal['report']['store_rows_before']),
+                'rows_added': per['rows_added'],
+                'rows_replaced': per['rows_replaced'],
+                'batch_subcards': per['subcards'],
+                'batch_rows': per['rows'],
+            }, event_ts=journal['artifact_timestamp']))
+    return rows
+
+
+def commit_journal_coordinator(journal_path, store_claim_held=False):
+    """Seal/commit every lease update in one coordinator-state replacement."""
+    journal = promotion_journal.load(journal_path)
+    if journal['phase'] == 'complete':
+        return journal
+    if not store_claim_held:
+        with promote_final_cards.PromoteClaim(journal['store']['path']):
+            return commit_journal_coordinator(
+                journal_path, store_claim_held=True)
+    if journal['phase'] not in ('derived_validated', 'coordinator_committed'):
+        raise promotion_journal.JournalError(
+            'coordinator commit requires derived_validated, got %s'
+            % journal['phase'])
+    promotion_journal.reconcile(
+        journal_path, adopt_after=False, store_claim_held=True)
+    with DirLock(paths()['lock']):
+        state_path = paths()['state']
+        state = load_state()
+        outcomes = apply_journal_outcomes(state, journal)
+        expected_state_bytes = promotion_journal.stable_json_bytes(state)
+        registry_rows = promotion_registry_rows(state, journal, journal_path)
+        if journal['phase'] == 'derived_validated':
+            promotion_journal.prepare_coordinator_commit(
+                journal_path,
+                state_path=state_path,
+                expected_state_bytes=expected_state_bytes,
+                lease_outcomes=outcomes,
+                promotion_marker=journal['promotion_id'],
+                registry_path=paths()['registry'],
+                registry_events=registry_rows,
+                store_claim_held=True,
+            )
+            journal = promotion_journal.load(journal_path)
+            reconciled = promotion_journal.reconcile_coordinator(
+                journal_path, adopt_after=False, store_claim_held=True)
+            if reconciled['action'] == 'adopt_coordinator_commit':
+                promotion_journal.reconcile_coordinator(
+                    journal_path, adopt_after=True, store_claim_held=True)
+            elif reconciled['action'] == 'write_coordinator_state':
+                promotion_journal.commit_coordinator_state(
+                    journal_path, expected_state_bytes,
+                    store_claim_held=True)
+            elif reconciled['action'] != 'already_coordinator_committed':
+                raise promotion_journal.JournalError(
+                    'unexpected coordinator reconciliation action %r'
+                    % reconciled['action'])
+        else:
+            promotion_journal.reconcile_coordinator(
+                journal_path, adopt_after=False, store_claim_held=True)
+        # Dashboard and registry are replayable projections.  Registry events are
+        # deduplicated by promotion ID, so a crash at any line below converges.
+        write_dashboard(state)
+        sealed_registry = (
+            promotion_journal.load(journal_path)['coordinator']['intent']['registry'])
+        for expected in sealed_registry['events']:
+            append_promotion_registry_record(expected)
+        return promotion_journal.mark_complete(
+            journal_path, store_claim_held=True)
+
+
+def finish_promotion_journal(journal_path, store_claim_held=False):
+    """Drive one incomplete journal forward while holding the canonical-store claim."""
+    journal = promotion_journal.load(journal_path)
+    if journal['phase'] == 'complete':
+        return journal
+    if not store_claim_held:
+        # The store hash checks and the coordinator/journal replacements are one
+        # transaction boundary.  Releasing the writer claim after only the store
+        # replace permits a second canonical writer to land between verification
+        # and COMPLETE.
+        with promote_final_cards.PromoteClaim(journal['store']['path']):
+            return finish_promotion_journal(
+                journal_path, store_claim_held=True)
+    if journal['phase'] in ('prepared', 'store_committed'):
+        batch = batch_from_journal(journal)
+        promote_final_cards.batch_promote(
+            batch,
+            journal['store']['path'],
+            journal['review_status'],
+            journal['model_identifier'],
+            report_path=journal['report'].get('report_path'),
+            journal_path=journal_path,
+            promotion_id=journal['promotion_id'],
+            store_claim_held=True,
+        )
+        journal = promotion_journal.load(journal_path)
+    if journal['phase'] == 'store_committed':
+        journal = build_promotion_derived(
+            journal_path, store_claim_held=True)
+    if journal['phase'] in ('derived_validated', 'coordinator_committed'):
+        journal = commit_journal_coordinator(
+            journal_path, store_claim_held=True)
+    if journal['phase'] != 'complete':
+        raise promotion_journal.JournalError(
+            'promotion recovery stopped unexpectedly at %s' % journal['phase'])
+    return journal
+
+
+def reconcile_promotion_journals():
+    """Automatically converge the single active promotion before any command."""
+    promotion_dir = paths()['promotions']
+    os.makedirs(promotion_dir, exist_ok=True)
+    active = []
+    for journal_path in sorted(glob.glob(os.path.join(
+            promotion_dir, '*.journal.json'))):
+        journal = promotion_journal.load(journal_path)
+        if journal['phase'] != 'complete':
+            active.append(journal_path)
+    if len(active) > 1:
+        raise promotion_journal.JournalError(
+            'multiple incomplete promotion journals require manual ordering: %s'
+            % ', '.join(active))
+    if active:
+        with DirLock(paths()['promotion_lock']):
+            finish_promotion_journal(active[0])
 
 
 def promote_ready(args):
@@ -1673,7 +2255,7 @@ def promote_ready(args):
         # replacement -- instead of a full store read/copy/rewrite + interpreter startup
         # PER LEASE. All-or-nothing: any diverging lease fails the bundle with the store
         # byte-identical; per-lease attribution comes back in the batch report.
-        batch, lease_pending = [], {}
+        batch = []
         for lease in ready:
             source = lease['clean_output']
             try:
@@ -1705,77 +2287,37 @@ def promote_ready(args):
             if errors:
                 raise SystemExit('%s: promotion refused: %s' %
                                  (lease['id'], '; '.join(errors)))
-            lease_pending[lease['id']] = has_pending
-            batch.append({'lease_id': lease['id'],
-                          'glob': os.path.abspath(source),
-                          'expected_subcards': sorted({row.get('key') for row in clean_rows})})
-        batch_dir = ready[0].get('artifact_dir') or paths()['artifacts']
-        batch_manifest = os.path.join(batch_dir, 'batch_promotion.manifest.json')
-        batch_report = os.path.join(batch_dir, 'batch_promotion.report.json')
+            binding = completed_run_binding(lease)
+            batch.append({
+                'lease_id': lease['id'],
+                'run_id': binding['run_id'],
+                'attempt_id': binding['attempt_id'],
+                'glob': os.path.abspath(source),
+                'expected_subcards': sorted({row.get('key') for row in clean_rows}),
+            })
+        promotion_id = promotion_identity(ready, args.gen_model_version)
+        promotion_files = journal_paths(promotion_id)
+        batch_manifest = promotion_files['manifest']
+        batch_report = promotion_files['report']
+        journal_path = promotion_files['journal']
         atomic_write_json(batch_manifest, batch, indent=1)
-        run_cmd([sys.executable, os.path.join(SRC, 'promote_final_cards.py'),
-                 '--batch-manifest', batch_manifest, '--report', batch_report,
-                 '--gen-model-version', args.gen_model_version])
-        # P10 (H1420): the batch promote above is all-or-nothing and raises on failure, so reaching
-        # here means the store IS committed. From this point the RU TM MUST be rebuilt to match the
-        # committed store -- otherwise a raise while reading the batch report or updating per-lease
-        # state leaves store and TM divergent until the next clean run. Rebuild in a `finally` so a
-        # partial-promotion raise still lands a consistent TM.
-        try:
-            try:
-                batch_payload = json.load(open(batch_report, encoding='utf-8'))
-                if not isinstance(batch_payload, dict):
-                    raise TypeError('top level is not an object')
-                landed = batch_payload['leases']
-                store_before = batch_payload['store_rows_before']
-                store_after = batch_payload['store_rows_after']
-            except (OSError, KeyError, TypeError, json.JSONDecodeError) as e:
-                raise SystemExit('batch promotion report unreadable: %s' % e)
-            if (batch_payload.get('schema') != 'pwg.batch_promotion.v1'
-                    or not isinstance(landed, dict)
-                    or any(not isinstance(value, int) or isinstance(value, bool) or value < 0
-                           for value in (store_before, store_after))):
-                raise SystemExit('batch promotion report has invalid schema/store counters')
-            for lease in ready:
-                per = landed.get(lease['id']) or {}
-                if lease.get('clean_count') and not per.get('subcards'):
-                    raise SystemExit('%s: batch promotion landed no subcards for the lease'
-                                     % lease['id'])
-                has_pending = lease_pending[lease['id']]
-                with DirLock(paths()['lock']):
-                    state = load_state()
-                    fresh = lease_by_id(state, lease['id'])
-                    fresh['state'] = 'promoted_partial' if has_pending else 'promoted'
-                    fresh['promoted_at'] = utc_now()
-                    fresh['model_version'] = args.gen_model_version
-                    # H1386 D3: store_delta is the PER-LEASE figure from the batch report
-                    # (its three consumers -- promotion_classification, bad_deltas, the
-                    # windows100 GO gate -- all read it per lease); the bundle-wide
-                    # before/after stays as separate bundle-level context fields.
-                    fresh['store_before'] = store_before
-                    fresh['store_after'] = store_after
-                    fresh['store_delta'] = per.get('store_delta',
-                                                   store_after - store_before)
-                    fresh['bundle_store_delta'] = store_after - store_before
-                    fresh['promoted_subcards'] = per.get('subcards')
-                    fresh['promoted_rows'] = per.get('rows')
-                    fresh['rows_added'] = per.get('rows_added')
-                    fresh['rows_replaced'] = per.get('rows_replaced')
-                    save_state(state)
-                    registry_event(fresh, 'promoted', {'glob': lease['clean_output'],
-                                                       'store_before': store_before,
-                                                       'store_after': store_after,
-                                                       'store_delta': per.get(
-                                                           'store_delta',
-                                                           store_after - store_before),
-                                                       'bundle_store_delta':
-                                                           store_after - store_before,
-                                                       'rows_added': per.get('rows_added'),
-                                                       'rows_replaced': per.get('rows_replaced'),
-                                                       'batch_subcards': per.get('subcards'),
-                                                       'batch_rows': per.get('rows')})
-        finally:
-            rebuild_ru_translation_memory()
+        # Hold the same canonical-store claim from PREPARED through COMPLETE.
+        # All later store-hash checks therefore remain atomic with the batched
+        # coordinator state update and durable registry projection.
+        with promote_final_cards.PromoteClaim(
+                promote_final_cards.DEFAULT_STORE):
+            promote_final_cards.batch_promote(
+                batch,
+                promote_final_cards.DEFAULT_STORE,
+                'ai_translated',
+                args.gen_model_version,
+                report_path=batch_report,
+                journal_path=journal_path,
+                promotion_id=promotion_id,
+                store_claim_held=True,
+            )
+            finish_promotion_journal(
+                journal_path, store_claim_held=True)
     print('promoted %d lease(s)' % len(ready))
 
 
@@ -1896,6 +2438,11 @@ def main(argv=None):
     pb.add_argument('--config-dir', help='canonical CLAUDE_CONFIG_DIR bound into manifest v2')
     pb.add_argument('--executor-lane', default='serial-whole-card')
     pb.set_defaults(func=prepare_batch)
+    vp = sub.add_parser(
+        'validate-preflight',
+        help='revalidate sealed preparation evidence before any live probe or worker')
+    vp.add_argument('--lease-id', action='append', required=True)
+    vp.set_defaults(func=validate_preflight_command)
     br = sub.add_parser('begin-run')
     br.add_argument('--lease-id', action='append', required=True)
     br.add_argument('--mode', choices=('standard', 'staged'), default='standard')
@@ -1919,7 +2466,16 @@ def main(argv=None):
     r.add_argument('--run-id',
                    help='if set, must match the running lease run_id sealed at begin-run '
                         '(P11: refuses a stale/zombie run recording against a re-leased run)')
+    r.add_argument('--result-sha256',
+                   help='sealed SHA-256 of the exact submitted result; required with a run ID')
     r.set_defaults(func=record_output)
+    rb = sub.add_parser('record-output-batch')
+    rb.add_argument(
+        '--record', action='append', nargs=4, required=True,
+        metavar=('LEASE_ID', 'WORKFLOW_RESULT', 'RUN_ID', 'RESULT_SHA256'),
+        help='repeatable record tuple; use - sentinels only for a legacy unsealed lease')
+    rb.add_argument('--allow-stale', action='store_true')
+    rb.set_defaults(func=record_output_batch)
     rq = sub.add_parser('prepare-requeue')
     rq.add_argument('lease_id')
     g = rq.add_mutually_exclusive_group(required=True)
@@ -1934,6 +2490,11 @@ def main(argv=None):
     d = sub.add_parser('daily-close')
     d.set_defaults(func=daily_close)
     args = ap.parse_args(argv)
+    try:
+        reconcile_promotion_journals()
+    except (promotion_journal.JournalError,
+            promote_final_cards.PromotionContractError) as exc:
+        raise SystemExit('promotion reconciliation blocked: %s' % exc) from exc
     args.func(args)
 
 
