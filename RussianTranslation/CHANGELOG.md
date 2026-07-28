@@ -10,6 +10,26 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — first human gold labels: the G6 MQM starter vote is applied (H1796, 28-07-2026)
+
+- Sheet `g6-mqm-gold-starter-2026-07-25` (20 cards from the 320-row
+  [`gold/gold_set.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/gold_set.jsonl)
+  scaffold) voted by MG and ingested through
+  `validate_decisions.py` → `apply_decisions.py --gate G6` → `gold_ingest.py`:
+  [`gold/decisions_g6-mqm-gold-starter-2026-07-25.labels.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/decisions_g6-mqm-gold-starter-2026-07-25.labels.jsonl).
+  16 LLM labels confirmed, 3 overturned (ids 2, 105, 221), 1 deferred (id 118).
+- **Do not quote 84.2 % as pwg_ru label accuracy.** n=19 resolved rows gives a
+  Wilson 95 % interval of [62.4 %, 94.5 %]; `hallucinated` was never exercised and
+  `wrong-sense` was exercised once and overturned. The figure that will carry
+  weight is the n=400 store cut (H1665, gate G6b).
+- The vote could not be applied as cast: 5 of 6 rejects carried no typology
+  label, so the all-or-nothing applier refused the whole file. MG ruled the five
+  in chat; the adjudicated export sits beside the raw one (both gitignored) and
+  every ruling is recorded in
+  [`review/decisions_applied_2026-07-28_g6-mqm-gold-starter.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_2026-07-28_g6-mqm-gold-starter.md).
+  Root cause and the two structural fixes:
+  [FINDINGS §499](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+
 ### Fixed — `make_edition_cut.py`'s `release_manifest.json` sha256 was a property of the build host, not the content (H1769, 28-07-2026)
 
 - `copy_file` was a bare `shutil.copy2` and `copy_tree` a bare `shutil.copytree`
