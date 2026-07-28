@@ -3069,6 +3069,10 @@ def test_coordinator_nominal_reservations():
             json.dump({'schema': 'pwg.headless_execution_manifest.v1',
                        'meta': {'selected_keys': ['c_safe'],
                                 'nominal_keymap': {'c_safe': 'c'}}}, f)
+        preflight = os.path.join(tmp, 'preflight.json')
+        with open(preflight, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.performance_preflight.v1',
+                       'cost_gate': {'over_ceiling': False}}, f)
         try:
             state = coordinator.default_state()
             state['leases'] = [
@@ -3100,7 +3104,7 @@ def test_coordinator_nominal_reservations():
 
             try:
                 coordinator.register_prepared_lease(
-                    'overlap', 'test', ['b', 'd'], 'harness.js', manifest, 'preflight.json')
+                    'overlap', 'test', ['b', 'd'], 'harness.js', manifest, preflight)
             except SystemExit as exc:
                 if 'already active' not in str(exc):
                     raise
@@ -3133,7 +3137,7 @@ def test_coordinator_nominal_reservations():
                 try:
                     coordinator.register_prepared_lease(
                         lease_id, 'test', ['e', 'f'], 'harness.js', manifest,
-                        'preflight.json')
+                        preflight)
                     outcomes.append('accepted')
                 except SystemExit:
                     outcomes.append('rejected')
@@ -3236,10 +3240,18 @@ def test_coordinator_runtime_state_machine_and_cas():
             # Two independent dispatchers racing disjoint batches may both validate against an
             # empty snapshot, but the state lock must serialize the commit and keep the cap <=3.
             state = coordinator.default_state()
+            race_preflight = os.path.join(tmp, 'race-preflight.json')
+            with open(race_preflight, 'w', encoding='utf-8') as f:
+                json.dump({'schema': 'pwg.performance_preflight.v1',
+                           'cost_gate': {'over_ceiling': False}}, f)
+            race_preflight_sha = coordinator.sha256_file(race_preflight)
             for i in range(5):
                 state['leases'].append({
                     'id': 'race%d' % i, 'kind': 'verb', 'target': 'root%d' % i,
                     'state': 'prepared', 'artifact_dir': os.path.join(tmp, 'r%d' % i),
+                    'preflight_path': race_preflight,
+                    'preflight_sha256': race_preflight_sha,
+                    'preflight_allow_over_cost': False,
                 })
             coordinator.save_state(state)
             barrier = threading.Barrier(2)
@@ -3285,7 +3297,13 @@ def test_coordinator_runtime_state_machine_and_cas():
                 if script == 'perf_preflight.py':
                     entered.set()
                     release.wait(5)
-                    return SimpleNamespace(returncode=0, stdout='{}', stderr='')
+                    return SimpleNamespace(
+                        returncode=0,
+                        stdout=json.dumps({
+                            'schema': 'pwg.performance_preflight.v1',
+                            'cost_gate': {'over_ceiling': False},
+                        }),
+                        stderr='')
                 harness = next(value.split('=', 1)[1] for value in cmd if value.startswith('--out='))
                 manifest = next(value.split('=', 1)[1] for value in cmd
                                 if value.startswith('--manifest-out='))
@@ -3805,6 +3823,14 @@ def test_coordinator_requeue_attempt_manifests():
         fail_once = [True]
 
         def fake_run(cmd, **_kwargs):
+            if os.path.basename(cmd[1]) == 'perf_preflight.py':
+                return SimpleNamespace(
+                    returncode=0,
+                    stdout=json.dumps({
+                        'schema': 'pwg.performance_preflight.v1',
+                        'cost_gate': {'over_ceiling': False},
+                    }),
+                    stderr='')
             out = next(arg.split('=', 1)[1] for arg in cmd if arg.startswith('--out='))
             manifest = next(arg.split('=', 1)[1] for arg in cmd
                             if arg.startswith('--manifest-out='))
@@ -4016,21 +4042,42 @@ def test_coordinator_mixed_lane_public_state_sequence():
     from types import SimpleNamespace
 
     old_coord = os.environ.get('PWG_COORDINATOR_DIR')
+    old_tm_dir = os.environ.get('PWG_RU_TM_DIR')
     original_run = coordinator.run_cmd
     original_store = coordinator.promote_final_cards.DEFAULT_STORE
     original_count = coordinator.nonempty_line_count
     with tempfile.TemporaryDirectory() as tmp:
         os.environ['PWG_COORDINATOR_DIR'] = tmp
+        os.environ['PWG_RU_TM_DIR'] = os.path.join(tmp, 'tm')
         store = os.path.join(tmp, 'store.jsonl')
         open(store, 'w', encoding='utf-8').close()
         coordinator.promote_final_cards.DEFAULT_STORE = store
         initial_dir = os.path.join(tmp, 'artifacts', 'lease')
         os.makedirs(initial_dir)
         origin_manifest = os.path.join(initial_dir, 'execution_manifest.lease.json')
+        input_hashes = {
+            key: {'raw_sha256': char * 64, 'portrait_sha256': char.upper() * 64}
+            for key, char in (('a~~x', 'a'), ('b~~x', 'b'))
+        }
         origin = {
-            'schema': 'pwg.headless_execution_manifest.v1',
+            'schema': 'pwg.headless_execution_manifest.v2',
             'meta': {'root': 'nominal_mixed', 'nominal': True,
-                     'selected_keys': ['a~~x', 'b~~x'], 'input_hashes': {}},
+                     'nominal_keymap': {'a~~x': 'a', 'b~~x': 'b'},
+                     'selected_keys': ['a~~x', 'b~~x'],
+                     'input_hashes': input_hashes,
+                     'generator': 'window_selftest',
+                     'schema_version': 'v1',
+                     'generated_at': '2026-07-25T00:00:00Z',
+                     'provenance_classes': {'a~~x': 'real', 'b~~x': 'real'},
+                     'execution_manifest_schema': 'pwg.headless_execution_manifest.v2',
+                     'execution': {
+                         'profile_slot': 'c4',
+                         'config_dir_fingerprint': 'f' * 64,
+                         'execution_route': 'claude-cli-headless',
+                         'executor_lane': 'serial-whole-card',
+                         'validation_method': 'audit_window+final_schema',
+                         'model_identifier': 'claude-sonnet-5',
+                     }},
         }
         with open(origin_manifest, 'w', encoding='utf-8') as f:
             json.dump(origin, f)
@@ -4079,35 +4126,32 @@ def test_coordinator_mixed_lane_public_state_sequence():
                           'w', encoding='utf-8') as f:
                     json.dump(report, f)
                 return SimpleNamespace(returncode=spec['returncode'], stdout='', stderr='')
-            if script == 'promote_final_cards.py':
-                # H1339 Phase 3: promote-ready now invokes ONE batched transaction
-                # (--batch-manifest + --report) instead of one subprocess per lease; the
-                # fake must honour that contract (write the per-lease report + rows).
-                batch_arg = cmd[cmd.index('--batch-manifest') + 1]
-                report_arg = cmd[cmd.index('--report') + 1]
-                batch_spec = json.load(open(batch_arg, encoding='utf-8'))
-                leases_out = {}
-                with open(store, encoding='utf-8') as f:
-                    before = sum(1 for line in f if line.strip())
-                with open(store, 'a', encoding='utf-8') as f:
-                    for item in batch_spec:
-                        subs = item.get('expected_subcards') or []
-                        for sub in subs:
-                            f.write(json.dumps({'promoted': True, 'subcard': sub}) + '\n')
-                        leases_out[item['lease_id']] = {'subcards': len(subs),
-                                                        'rows': len(subs)}
-                with open(report_arg, 'w', encoding='utf-8') as f:
-                    json.dump({'schema': 'pwg.batch_promotion.v1',
-                               'store_rows_before': before,
-                               'store_rows_after': before + sum(
-                                   row['rows'] for row in leases_out.values()),
-                               'leases': leases_out}, f)
             return SimpleNamespace(returncode=0, stdout='', stderr='')
 
         def result_file(name, keys):
             path = os.path.join(tmp, name)
-            payload = {'results': [
-                {'key': key, 'card': {'key1': key, 'records': []}} for key in keys]}
+            meta = dict(origin['meta'])
+            meta['selected_keys'] = list(keys)
+            meta['input_hashes'] = {key: input_hashes[key] for key in keys}
+            meta['provenance_classes'] = {key: 'real' for key in keys}
+            meta['nominal_keymap'] = {
+                key: origin['meta']['nominal_keymap'][key] for key in keys}
+            payload = {'meta': meta, 'results': [{
+                'key': key,
+                'card': {
+                    'key1': key, 'iast': key.split('~~', 1)[0], 'notes': '',
+                    'records': [{
+                        'h': key.split('~~', 1)[0], 'grammar': '',
+                        'senses': [{
+                            'tag': '1', 'german': 'Sinn',
+                            'russian': 'смысл ' + key,
+                            'equivalence_type': 'equivalent',
+                            'source_type': 'lexicographic',
+                            'stratum': '', 'differentia': '',
+                        }],
+                    }],
+                },
+            } for key in keys]}
             with open(path, 'w', encoding='utf-8') as f:
                 json.dump(payload, f)
             return path
@@ -4191,6 +4235,10 @@ def test_coordinator_mixed_lane_public_state_sequence():
                 os.environ.pop('PWG_COORDINATOR_DIR', None)
             else:
                 os.environ['PWG_COORDINATOR_DIR'] = old_coord
+            if old_tm_dir is None:
+                os.environ.pop('PWG_RU_TM_DIR', None)
+            else:
+                os.environ['PWG_RU_TM_DIR'] = old_tm_dir
 
 
 def test_promote_nominal_key1():
@@ -6078,14 +6126,19 @@ def test_coordinator_cost_gate_enforced():
     tmp = tempfile.mkdtemp()
     flagged = os.path.join(tmp, 'preflight.json')
     with open(flagged, 'w', encoding='utf-8') as f:
-        json.dump({'reports': [{'root': 'kAla',
+        json.dump({'schema': 'pwg.performance_preflight.matrix.v1',
+                   'reports': [{'schema': 'pwg.performance_preflight.v1',
+                                'root': 'kAla',
                                 'cost_gate': {'over_ceiling': True, 'est_cost_usd': 79.83,
                                               'est_cost_per_card_usd': 4.0},
                                 'cost_partition': {'run_now': ['a'],
                                                    'defer_monster': ['b', 'c']}}]}, f)
     clean = os.path.join(tmp, 'preflight_clean.json')
     with open(clean, 'w', encoding='utf-8') as f:
-        json.dump({'reports': [{'root': 'vah', 'cost_gate': {'over_ceiling': False}}]}, f)
+        json.dump({'schema': 'pwg.performance_preflight.matrix.v1',
+                   'reports': [{'schema': 'pwg.performance_preflight.v1',
+                                'root': 'vah',
+                                'cost_gate': {'over_ceiling': False}}]}, f)
     captured = []
     old = co.defer_monster
     co.defer_monster = lambda *a, **k: captured.append((a, k))
@@ -7208,6 +7261,24 @@ def test_h1420_p11_record_output_binds_run_id():
             if coordinator.load_state()['leases'][0]['state'] != 'running':
                 fail('P11: a refused record-output must leave the on-disk lease running')
 
+            # Omitting either half of the binding is also refused without a lease mutation.
+            for supplied in (
+                    {'run_id': None,
+                     'result_sha256': coordinator.sha256_file(result_path)},
+                    {'run_id': 'run-X', 'result_sha256': None}):
+                fresh_running_state()
+                try:
+                    coordinator.record_output(SimpleNamespace(
+                        lease_id='run', workflow_result=result_path,
+                        allow_stale=False, transcript_dir=None, **supplied))
+                    fail('P11: record-output accepted an incomplete run/result binding')
+                except SystemExit as exc:
+                    if ('run-id' not in str(exc)
+                            and 'result-sha256' not in str(exc)):
+                        raise
+                if coordinator.load_state()['leases'][0]['state'] != 'running':
+                    fail('P11: incomplete binding changed the running lease')
+
             # The matching run identity proceeds (the lease leaves 'running').
             fresh_running_state()
 
@@ -7221,7 +7292,8 @@ def test_h1420_p11_record_output_binds_run_id():
             coordinator.run_cmd = fake_audit
             coordinator.record_output(SimpleNamespace(
                 lease_id='run', workflow_result=result_path, allow_stale=False,
-                transcript_dir=None, run_id='run-X'))
+                transcript_dir=None, run_id='run-X',
+                result_sha256=coordinator.sha256_file(result_path)))
             if coordinator.load_state()['leases'][0]['state'] == 'running':
                 fail('P11: a matching --run-id must let record-output proceed')
             print('  P11: record-output binds a supplied --run-id to the running lease run_id')
@@ -7234,15 +7306,21 @@ def test_h1420_p11_record_output_binds_run_id():
 
 
 def test_h1420_p10_promote_rebuilds_tm_in_finally():
-    """P10 (H1420): once the batch store commit lands, a raise while reading the batch report or
-    updating per-lease state must NOT skip the RU TM rebuild -- else store and TM diverge. The
-    rebuild runs in a `finally`, so it happens even when per-lease promotion raises."""
+    """The journal resumes a death after store replacement to identical store/TMs/state."""
     import coordinator
+    import glob
     from types import SimpleNamespace
     old = os.environ.get('PWG_COORDINATOR_DIR')
-    original_run = coordinator.run_cmd
+    old_tm = os.environ.get('PWG_RU_TM_DIR')
+    original_store = coordinator.promote_final_cards.DEFAULT_STORE
+    original_batch = coordinator.promote_final_cards.batch_promote
+    original_registry_append = coordinator.append_promotion_registry_record
     with tempfile.TemporaryDirectory() as tmp:
         os.environ['PWG_COORDINATOR_DIR'] = tmp
+        os.environ['PWG_RU_TM_DIR'] = os.path.join(tmp, 'tm')
+        store = os.path.join(tmp, 'store.jsonl')
+        open(store, 'w', encoding='utf-8').close()
+        coordinator.promote_final_cards.DEFAULT_STORE = store
         try:
             adir = os.path.join(tmp, 'artifacts', 'lease')
             os.makedirs(adir)
@@ -7251,13 +7329,43 @@ def test_h1420_p10_promote_rebuilds_tm_in_finally():
             status_path = os.path.join(adir, 'window_status.json')
             report_path = os.path.join(adir, 'audit_window.report.json')
             manifest = os.path.join(adir, 'manifest.json')
-            payload = {'results': [{'key': 'k', 'card': {'key1': 'k'}}]}
+            meta = {
+                'root': 'nominal_journal', 'nominal': True,
+                'nominal_keymap': {'k~~x': 'k'},
+                'selected_keys': ['k~~x'],
+                'input_hashes': {'k~~x': {
+                    'raw_sha256': 'a' * 64, 'portrait_sha256': 'b' * 64}},
+                'generator': 'window_selftest', 'schema_version': 'v1',
+                'generated_at': '2026-07-25T00:00:00Z',
+                'provenance_classes': {'k~~x': 'real'},
+                'execution_manifest_schema': 'pwg.headless_execution_manifest.v2',
+                'execution': {
+                    'profile_slot': 'c4', 'config_dir_fingerprint': 'f' * 64,
+                    'execution_route': 'claude-cli-headless',
+                    'executor_lane': 'serial-whole-card',
+                    'validation_method': 'audit_window+final_schema',
+                    'model_identifier': 'claude-sonnet-5',
+                },
+            }
+            payload = {'meta': meta, 'results': [{
+                'key': 'k~~x',
+                'card': {
+                    'key1': 'k~~x', 'iast': 'k', 'notes': '',
+                    'records': [{'h': 'k', 'grammar': '', 'senses': [{
+                        'tag': '1', 'german': 'Sinn', 'russian': 'смысл',
+                        'equivalence_type': 'equivalent',
+                        'source_type': 'lexicographic',
+                        'stratum': '', 'differentia': '',
+                    }]}],
+                },
+            }]}
             for path, value in ((wf, payload), (clean, payload),
                                 (status_path, {'state': 'clean', 'requeue_keys': []}),
                                 (report_path, {'workflow': wf, 'requeue': [], 'crashed': [],
                                                'stale_check': {'ok': True}}),
-                                (manifest, {'schema': 'pwg.headless_execution_manifest.v1',
-                                            'meta': {'selected_keys': ['k'], 'input_hashes': {}}})):
+                                (manifest, {
+                                    'schema': 'pwg.headless_execution_manifest.v2',
+                                    'meta': meta})):
                 with open(path, 'w', encoding='utf-8') as f:
                     json.dump(value, f)
             state = coordinator.default_state()
@@ -7268,40 +7376,112 @@ def test_h1420_p10_promote_rebuilds_tm_in_finally():
                 'clean_output_sha256': coordinator.sha256_file(clean), 'clean_count': 1,
                 'audit_state': 'clean', 'audit_returncode': 0,
                 'status_path': status_path, 'audit_report': report_path,
+                'run_attempts': [{
+                    'run_id': 'run-1', 'run_operation_id': 'attempt-1',
+                    'outcome': 'ready',
+                }],
             }]
             coordinator.save_state(state)
 
-            tm_builds = []
+            def crash_after_store(*args, **kwargs):
+                def die(point):
+                    if point == 'after_store_replace_before_phase':
+                        raise RuntimeError('synthetic death after store replacement')
+                kwargs['fault_hook'] = die
+                return original_batch(*args, **kwargs)
 
-            def fake_run(cmd, cwd=coordinator.REPO, check=True, timeout=None):
-                if '--batch-manifest' in cmd:
-                    # Store commit "succeeds", but the report lists NO subcards for the lease, so
-                    # the per-lease loop raises AFTER the store is committed (the P10 window).
-                    report = cmd[cmd.index('--report') + 1]
-                    with open(report, 'w', encoding='utf-8') as f:
-                        json.dump({'schema': 'pwg.batch_promotion.v1',
-                                   'store_rows_before': 10, 'store_rows_after': 11,
-                                   'leases': {'lease': {}}}, f)
-                elif 'translation_memory.py' in ' '.join(cmd) and 'build' in cmd:
-                    tm_builds.append(cmd)
-                return SimpleNamespace(returncode=0, stdout='', stderr='')
-            coordinator.run_cmd = fake_run
+            coordinator.promote_final_cards.batch_promote = crash_after_store
             try:
                 coordinator.promote_ready(SimpleNamespace(
                     gen_model_version='claude-sonnet-5', lease_id=None))
-                fail('P10: promotion with no landed subcards must raise')
-            except SystemExit as e:
-                if 'no subcards' not in str(e):
+                fail('P10: injected post-store death did not propagate')
+            except RuntimeError as exc:
+                if 'after store replacement' not in str(exc):
                     raise
-            if not tm_builds:
-                fail('P10: the RU TM rebuild must run in a finally even when per-lease promotion raises')
-            print('  P10: promote_ready rebuilds the RU TM in a finally after the store commit')
+            journals = glob.glob(os.path.join(tmp, 'promotions', '*.journal.json'))
+            if len(journals) != 1:
+                fail('P10: promotion did not durably create exactly one journal')
+            if coordinator.promotion_journal.load(journals[0])['phase'] != 'prepared':
+                fail('P10: death window should leave PREPARED journal for adoption')
+            if coordinator.nonempty_line_count(store) != 1:
+                fail('P10: store replacement did not land before injected death')
+
+            coordinator.promote_final_cards.batch_promote = original_batch
+            store_claim_checks = []
+
+            def checked_registry_append(*args, **kwargs):
+                try:
+                    with coordinator.promote_final_cards.PromoteClaim(store):
+                        fail('P10: canonical store claim was released before registry')
+                except coordinator.promote_final_cards.ClaimBusy:
+                    store_claim_checks.append(True)
+                return original_registry_append(*args, **kwargs)
+
+            coordinator.append_promotion_registry_record = checked_registry_append
+            # A short but parseable registry projection must fail closed after the
+            # coordinator state lands, leaving a replayable journal rather than
+            # blessing COMPLETE without a durable exactly-once event.
+            with open(coordinator.paths()['registry'], 'w', encoding='utf-8') as f:
+                json.dump({'schema': coordinator.REGISTRY_SCHEMA}, f)
+            try:
+                coordinator.reconcile_promotion_journals()
+                fail('P10: short registry row did not block promotion completion')
+            except coordinator.promotion_journal.JournalError as exc:
+                if 'not newline-terminated' not in str(exc):
+                    raise
+            blocked = coordinator.promotion_journal.load(journals[0])
+            if blocked['phase'] != 'coordinator_committed':
+                fail('P10: short registry must leave a replayable coordinator commit')
+            with open(coordinator.paths()['registry'], 'w', encoding='utf-8'):
+                pass
+            coordinator.reconcile_promotion_journals()
+            sealed = coordinator.promotion_journal.load(journals[0])
+            lease = coordinator.load_state()['leases'][0]
+            if sealed['phase'] != 'complete' or lease['state'] != 'promoted':
+                fail('P10: startup recovery did not converge journal + coordinator')
+            card_tm = coordinator.translation_memory.tm_path('ru')
+            frag_tm = coordinator.translation_memory.frag_tm_path('ru')
+            card_ok, card_stats = coordinator.translation_memory.validate_tm_file(
+                'ru', card_tm, kind='card')
+            frag_ok, frag_stats = coordinator.translation_memory.validate_tm_file(
+                'ru', frag_tm, kind='fragment')
+            if (not coordinator.translation_memory.validation_ok(card_stats)
+                    or not coordinator.translation_memory.validation_ok(frag_stats)
+                    or card_ok != 1 or frag_ok != 0):
+                fail('P10: recovered store-derived TMs are not valid/exact')
+            hashes = (
+                coordinator.sha256_file(store),
+                coordinator.sha256_file(card_tm),
+                coordinator.sha256_file(frag_tm),
+            )
+            coordinator.reconcile_promotion_journals()
+            if hashes != (
+                    coordinator.sha256_file(store),
+                    coordinator.sha256_file(card_tm),
+                    coordinator.sha256_file(frag_tm)):
+                fail('P10: completed-journal startup replay changed store/TM bytes')
+            promoted_events = [
+                json.loads(line) for line in open(
+                    coordinator.paths()['registry'], encoding='utf-8')
+                if line.strip() and json.loads(line).get('event') == 'promoted'
+            ]
+            if len(promoted_events) != 1:
+                fail('P10: recovery duplicated or omitted the promotion registry event')
+            if len(store_claim_checks) < 2:
+                fail('P10: store claim was not held across registry retry and COMPLETE')
+            print('  P10: store-death + short registry converge store/TMs/state/event')
         finally:
-            coordinator.run_cmd = original_run
+            coordinator.promote_final_cards.batch_promote = original_batch
+            coordinator.append_promotion_registry_record = original_registry_append
+            coordinator.promote_final_cards.DEFAULT_STORE = original_store
             if old is None:
                 os.environ.pop('PWG_COORDINATOR_DIR', None)
             else:
                 os.environ['PWG_COORDINATOR_DIR'] = old
+            if old_tm is None:
+                os.environ.pop('PWG_RU_TM_DIR', None)
+            else:
+                os.environ['PWG_RU_TM_DIR'] = old_tm
 
 
 def test_h1283_a5_max_wide_default_bounded():

@@ -30,6 +30,8 @@ sys.path.insert(0, str(HERE))
 
 import max_account_orchestrator as mao  # noqa: E402
 from headless_worker import claude_argv_prefix  # noqa: E402
+from call_reservation import (CallLimitReached, CallReservationLedger,
+                              run_ids)  # noqa: E402
 
 
 def resolve_claude_bin():
@@ -51,6 +53,8 @@ CONFIG_DIR = r"D:\ClaudeTools\profiles\claude4\.claude"
 ACCOUNT = "c4"
 RUN_ID = "h963-c4-single-profile-gate0-2026-07-16"
 EVENTS = HERE / "output" / "h963_c4_gate0_probe_events.jsonl"
+CALL_LEDGER = HERE / "output" / "h963_c4_gate0_calls.json"
+PREFLIGHT = HERE / "output" / "h963_c4_gate0_preflight.json"
 PAYLOAD_BYTES = 6491          # repo default; actual prompt 6828 B (H909 runbook, v1.9.19)
 CEILING_MS = mao.PROBE_LATENCY_CEILING_MS   # 30 000
 STRICT_CEILING_MS = 30_000    # resume brief: EITHER reading >= this is NO-GO
@@ -78,6 +82,8 @@ print("actual prompt B   : %d  (floor %d B / 5 KiB=5120)" % (actual_prompt_bytes
 print("ceiling           : %d ms (strict: either reading >= %d ms => NO-GO)" % (CEILING_MS, STRICT_CEILING_MS))
 print("run_id            : %s" % RUN_ID)
 print("events            : %s" % EVENTS)
+print("call ledger       : %s" % CALL_LEDGER)
+print("preflight         : %s" % PREFLIGHT)
 print("claude bin        : %s" % CLAUDE_BIN)
 print("resolved argv     : %s" % ARGV_PREFIX)
 print("-" * 72)
@@ -95,9 +101,26 @@ if os.name == "nt" and (len(ARGV_PREFIX) != 2 or not ARGV_PREFIX[0].lower().ends
     print("  CreateProcess. This is a tooling-resolution defect (D-R), NOT a c4 health signal.")
     raise SystemExit(3)
 
+# This file is a one-shot dated gate. Reusing its fixed run ID would make old
+# append-only readings indistinguishable from the current invocation.
+if CALL_LEDGER.exists() and RUN_ID in run_ids(str(CALL_LEDGER)):
+    print("PRE-FLIGHT ABORT: this fixed gate run_id already exists in the call ledger.")
+    print("Mint a fresh dated gate/run_id; historical evidence is never a fresh PASS.")
+    raise SystemExit(4)
+if EVENTS.exists():
+    for line in EVENTS.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        row = json.loads(line)
+        if row.get("run_id") == RUN_ID:
+            print("PRE-FLIGHT ABORT: this fixed gate run_id already exists in events.")
+            raise SystemExit(4)
+
 verdict_exc = None
 t0 = time.monotonic()
 try:
+    mao.write_synthetic_preflight(str(PREFLIGHT), RUN_ID, [])
+    call_ledger = CallReservationLedger(str(CALL_LEDGER), RUN_ID, 2)
     measured_ms = mao.live_probe(
         CONFIG_DIR,
         claude=CLAUDE_BIN,
@@ -107,8 +130,9 @@ try:
         events_path=str(EVENTS),
         run_id=RUN_ID,
         account=ACCOUNT,
+        call_reservation=call_ledger,
     )
-except SystemExit as exc:
+except (SystemExit, CallLimitReached) as exc:
     verdict_exc = str(exc)
     measured_ms = None
 wall_s = time.monotonic() - t0
@@ -139,6 +163,14 @@ print("-" * 72)
 fails = []
 if verdict_exc:
     print("live_probe fail-closed: %s" % verdict_exc)
+    fails.append("live_probe fail-closed: %s" % verdict_exc)
+if len(readings) != 2:
+    fails.append("current invocation emitted %d probe readings, expected exactly 2"
+                 % len(readings))
+snapshot = call_ledger.snapshot()
+if (snapshot.get("calls_spent") != 2
+        or (snapshot.get("usage") or {}).get("finalized_calls") != 2):
+    fails.append("current call ledger does not contain exactly two finalized reservations")
 
 CONN_ERR_CLASSES = {"process", "timeout"}
 for label, r in (("warm-up", warm), ("measured", meas)):

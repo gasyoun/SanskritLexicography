@@ -14,6 +14,30 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+
+- **PWG→RU paid-route and promotion hardening (unreleased implementation,
+  25-07-2026; no paid translation started):** all probes and generation calls
+  now share a durable `pwg.call_reservation.v1` ledger. `max_calls` is consumed
+  atomically before each process spawn and is never refunded after a crash;
+  `--cost-ceiling` is explicitly an observed-cost stop after completed calls,
+  not a strict pre-spend dollar cap, and missing/invalid cost telemetry stops
+  cost-capped runs as unevaluable. The same profile lock covers each warm-up +
+  measured probe pair and each worker generation run. Paid manifest-v2
+  dispatch also binds the run ID, manifest hash, preflight hash/scope, profile,
+  result hash, and reservation ledger before output can be recorded.
+- **PWG→RU crash closure (unreleased implementation, 25-07-2026):** Windows
+  Claude subprocesses are placed in a kill-on-close Job Object before their
+  first instruction, so timeout/exception cleanup reaches the native child
+  tree. Sequential `record-output-batch` reports its exact durably committed
+  prefix. Promotion now uses `pwg.promotion_journal.v1`
+  (`prepared → store_committed → derived_validated →
+  coordinator_committed → complete`), startup-reconciles the single incomplete
+  journal, holds one canonical-store claim through `complete`, and seals the
+  store, backup, TM/denylist, coordinator state, and deterministic promotion
+  registry identities for idempotent recovery. Store or coordinator bytes that
+  match neither sealed before nor expected-after state fail closed.
+
 ### Changed
 - **H1623 docs-freshness (Grok 4.5 grok-4.5, 25-07-2026):** re-verify big-manuals estate — LAST_VERIFIED 25-07-2026 on workspace AGENTS/HUMAN_RU + 6 docs/manuals deep manuals; RT deep metadoc COMMANDS_SPOT_RUN forced to integer 4 (was free-text, broke manual_staleness.py); MAINTAINER papers range updated A30-A67.
 
