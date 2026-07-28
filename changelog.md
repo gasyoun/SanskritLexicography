@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.96.0] — 2026-07-28
+
 ### Added
 - **G6 MQM gold starter — MG's vote applied, first human gold labels for pwg_ru** (28-07-2026, Opus 5 1M `claude-opus-5[1m]`, [H1796](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1796-Opus_SanskritLexicography_g6-mqm-gold-starter-vote-apply_28.07.26.md)): 20/20 cards of sheet `g6-mqm-gold-starter-2026-07-25` bound to their lock and ingested — [`gold/decisions_g6-mqm-gold-starter-2026-07-25.labels.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/decisions_g6-mqm-gold-starter-2026-07-25.labels.jsonl) (16 LLM labels confirmed, 3 overturned, 1 deferred; LLM label accuracy 16/19 = 84.2 %, Wilson 95 % [62.4 %, 94.5 %] — a starter packet, **not** a precision figure of record). Audit record: [`review/decisions_applied_2026-07-28_g6-mqm-gold-starter.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_2026-07-28_g6-mqm-gold-starter.md). Satisfies hard gate 1 (R5) of [H1665](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1665-Fable_SanskritLexicography_pwg-store-gold-cut-execute-r1-r5_26.07.26.md).
 - **PWG→RU finish action brief** (28-07-2026, Grok 4.5 `grok-4.5`, [H1778](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1778-Grok_SanskritLexicography_pwg-ru-finish-action-brief_28.07.26.md)): ADHD-shaped checklist of remaining human votes, costs, open handoffs, and do-not-vote rules — [`RussianTranslation/PWG_RU_FINISH_ACTION_BRIEF_28-07-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_RU_FINISH_ACTION_BRIEF_28-07-2026.md).
