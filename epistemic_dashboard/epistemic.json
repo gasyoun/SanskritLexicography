@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-07-26T04:41:06Z",
+ "generated_at": "2026-07-28T04:49:15Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 124,
+  "total": 156,
   "by_importance": {
-   "3": 26,
-   "2": 80,
-   "1": 18
+   "3": 41,
+   "2": 90,
+   "1": 25
   },
   "by_origin": {
    "auto": 0,
-   "human": 124
+   "human": 156
   }
  },
  "layers": [
@@ -22,18 +22,18 @@
    "key": "ASSUMPTIONS",
    "act": "relying on an unproven premise",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md",
-   "total": 7,
+   "total": 10,
    "by_importance": {
-    "3": 5,
-    "2": 2,
+    "3": 6,
+    "2": 4,
     "1": 0
    },
    "by_origin": {
     "auto": 0,
-    "human": 7
+    "human": 10
    },
-   "categories": 3,
-   "interlinks": 6,
+   "categories": 4,
+   "interlinks": 9,
    "entries": [
     {
      "title": "§1. DCS lemma == CDSL headword",
@@ -46,6 +46,12 @@
      "importance": 3,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md#2-one-transliteration-scheme-keys-all-dcs-files"
+    },
+    {
+     "title": "§8. A lemma's declension class can be read off its citation form",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md#8-a-lemmas-declension-class-can-be-read-off-its-citation-form"
     },
     {
      "title": "§3. A dict's giant verb root lives at homonym index 0",
@@ -72,6 +78,18 @@
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md#6-a-verified-correction-queue-stays-valid-until-filed"
     },
     {
+     "title": "§9. A threshold set by argument is a decision rule",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md#9-a-threshold-set-by-argument-is-a-decision-rule"
+    },
+    {
+     "title": "§10. A gold-agreement rate transfers between aspects",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/ASSUMPTIONS.md#10-a-gold-agreement-rate-transfers-between-aspects"
+    },
+    {
      "title": "§7. «Рамаяна. Книга 5. Сундараканда 2026.html» — финальная редакция перевода",
      "importance": 3,
      "origin": "human",
@@ -83,15 +101,15 @@
    "key": "CONTRADICTIONS",
    "act": "≥2 sources disagree, no verdict",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md",
-   "total": 8,
+   "total": 9,
    "by_importance": {
-    "3": 1,
+    "3": 2,
     "2": 6,
     "1": 0
    },
    "by_origin": {
     "auto": 0,
-    "human": 8
+    "human": 9
    },
    "categories": 3,
    "interlinks": 6,
@@ -143,6 +161,12 @@
      "importance": 2,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#8-the-ch-14-correction-dataset-doi-false-and-unminted-vs-genuinely-minted-bookplan-vs-fairrelease1---ruled"
+    },
+    {
+     "title": "§9. Corpus kāṇḍas 6–7 are labelled \"Southern (Leonov)\" but their text is the Baroda critical edition",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#9-corpus-kāṇḍas-67-are-labelled-southern-leonov-but-their-text-is-the-baroda-critical-edition"
     }
    ]
   },
@@ -150,15 +174,15 @@
    "key": "GAPS",
    "act": "not-yet-knowing (the frontier)",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md",
-   "total": 12,
+   "total": 14,
    "by_importance": {
     "3": 1,
-    "2": 4,
+    "2": 6,
     "1": 7
    },
    "by_origin": {
     "auto": 5,
-    "human": 7
+    "human": 9
    },
    "categories": 3,
    "interlinks": 11,
@@ -234,6 +258,18 @@
      "importance": 3,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#12-сундараканда-стихи-песней-2-и-28--пропуск-оцифровки-или-воля-переводчика"
+    },
+    {
+     "title": "§14. Which `-ī` stems are the monosyllabic type, and which `-at` citations are genuine `-ant` stems?",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#14-which--ī-stems-are-the-monosyllabic-type-and-which--at-citations-are-genuine--ant-stems"
+    },
+    {
+     "title": "§13. No Russian Uttarakāṇḍa (or Kiṣkindhā, or Yuddha) exists — 1,765 PWG `R.` book-7 citations wait on a translator",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md#13-no-russian-uttarakāṇḍa-or-kiṣkindhā-or-yuddha-exists--1765-pwg-r-book-7-citations-wait-on-a-translator"
     }
    ]
   },
@@ -241,18 +277,18 @@
    "key": "DEAD_ENDS",
    "act": "abandoning an approach",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md",
-   "total": 13,
+   "total": 14,
    "by_importance": {
-    "3": 9,
+    "3": 10,
     "2": 3,
     "1": 0
    },
    "by_origin": {
     "auto": 1,
-    "human": 12
+    "human": 13
    },
    "categories": 4,
-   "interlinks": 12,
+   "interlinks": 13,
    "entries": [
     {
      "title": "§1. Body-text / reverse-dict headword mining — abandoned",
@@ -331,6 +367,12 @@
      "importance": 2,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#10-gemini-ocr-санскритских-комментариев-сундараканды--вытеснен-скрейпом"
+    },
+    {
+     "title": "§13. Building a Bombay↔corpus verse concordance for PWG's `R.` book 7 — abandoned before the OCR was spent",
+     "importance": 3,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md#13-building-a-bombaycorpus-verse-concordance-for-pwgs-r-book-7--abandoned-before-the-ocr-was-spent"
     }
    ]
   },
@@ -541,19 +583,19 @@
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md"
  },
  "totals": {
-  "rows": 175,
+  "rows": 182,
   "auto": 120,
-  "human": 55,
+  "human": 62,
   "by_importance": {
-   "3": 22,
-   "2": 29,
+   "3": 25,
+   "2": 33,
    "1": 8
   },
   "layers": 7,
-  "entry_rows": 61,
+  "entry_rows": 68,
   "candidates": 6,
-  "categories": 20,
-  "interlinks": 56,
-  "findings": 124
+  "categories": 21,
+  "interlinks": 60,
+  "findings": 156
  }
 }

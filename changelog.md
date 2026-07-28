@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.95.0] — 2026-07-28
+
+### Fixed
+- **Epistemic-integrity gate repair — FINDINGS §488–§498 headings were missing their `§` marker** (28-07-2026, Sonnet 5 `claude-sonnet-5`, [H1752](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1752-Sonnet_SanskritLexicography_red-branch-repair-findings-488-492-dangling-index_27.07.26.md)): `master` went red at PR #845/H1735's GAPS→FINDINGS graduation — the checker reported §488–§492 (later §488–§498) as dangling Index rows with no heading. The section bodies were never missing; eleven headings were written as `### 488.` instead of `### §488.` (`§` required by `epistemic_integrity_check.py`'s heading regex), so heading↔Index parity failed. Fixed by adding the missing `§`, bumping the next-free marker to §499, and regenerating both dashboards (156 distinct FINDINGS headings, up from the stale 124). `python tools/epistemic_integrity_check.py --dir .` now reports 0 defects.
+
 ## [1.94.0] — 2026-07-27
 
 ### Added

@@ -40,7 +40,7 @@
    }
   },
   {
-   "date": "2026-07-26",
+   "date": "2026-07-28",
    "source": "build",
    "metrics": {
     "dcs_cdsl_linkage_pct": 81.4,
@@ -68,11 +68,11 @@
     "queue_decay_pct": 0.82
    },
    "registry": {
-    "total": 124,
+    "total": 156,
     "by_importance": {
-     "2": 80,
-     "1": 18,
-     "3": 26
+     "2": 90,
+     "1": 25,
+     "3": 41
     },
     "stale": 0
    }

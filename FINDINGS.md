@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §493) whatever its section, so existing numbers never shift; when a finding is later
+(currently §499) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -4467,7 +4467,7 @@ Committed as a reproducible probe with the trap in its docstring:
 
 _27-07-2026 · [H1476](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1476-Opus_SanskritGrammar_pedagogy-aspect-measurable-result-metrics_22.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
 
-### 488. DCS stem co-occurrence graph is extreme-sparse with function-word hubs
+### §488. DCS stem co-occurrence graph is extreme-sparse with function-word hubs
 
 🟠 **The full Sanskrit-stem co-occurrence table (dcs-stem-cooccurrence-full) is a directed L/R adjacency list over 176,676 stems (353,352 directed rows): 57.2% of directed rows have degree 0, median degree is 0, mean ~9.2, and the degree tail is dominated by function words (ca, 	ad, va, iti, 	u, pi).** Class A.
 
@@ -4481,7 +4481,7 @@ Implication: any collocation / distributional-semantics claim over this table mu
 
 > **Source:** graduates [GAPS §7](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · manifest dcs-stem-cooccurrence-full · [VisualDCS](https://github.com/gasyoun/VisualDCS) · H1735 · 27-07-2026 · Grok 4.5 (grok-4.5)
 
-### 489. Sintagmatic appendix-6 is a 6.3k-lemma core nested in the 80k all-corpus table
+### §489. Sintagmatic appendix-6 is a 6.3k-lemma core nested in the 80k all-corpus table
 
 🟡 **DCS syntagmatic appendix 7 (all-corpus) has 79,985 lemmas; the seven period files of appendix 6 cover a 6,338-lemma union that is almost entirely nested in appendix 7 (6,337/6,338), while period-to-period lemma Jaccard is low (1∩3=0.23, 1∩7=0.17, 3∩7=0.30).** Class A.
 
@@ -4491,7 +4491,7 @@ Implication: appendix 6 is a **frequency-core slice by historical period**, not 
 
 > **Source:** graduates [GAPS §8](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · manifest dcs-sintagmatic-appendix7 / dcs-sintagmatic-appendix6-periods · [VisualDCS](https://github.com/gasyoun/VisualDCS) · H1735 · 27-07-2026 · Grok 4.5 (grok-4.5)
 
-### 490. Heritage×kosha form intersection agrees 78.3%; disagreements are classifiable
+### §490. Heritage×kosha form intersection agrees 78.3%; disagreements are classifiable
 
 🟠 **On the 94,264-form Heritage∩kosha intersection, 78.26% agree on lemma and 21.74% (20,496) disagree; disagreement classes are genuine-or-ambiguous 12,905 (63.0%), stem-granularity 7,132 (34.8%), 
 asal-variant 459 (2.2%), with participles the largest Heritage category among disagreements (8,289).** Class A (re-derive from committed TSV + stats JSON).
@@ -4503,7 +4503,7 @@ asal-variant are mostly mechanical, genuine-or-ambiguous needs human/lexicograph
 
 > **Source:** graduates [GAPS §9](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · [heritage_forms_oracle_stats.json](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_forms_oracle_stats.json) · H1735 · 27-07-2026 · Grok 4.5 (grok-4.5)
 
-### 491. Verb-form frequency prelim is an unlabeled 42-row XLS with empty tense names
+### §491. Verb-form frequency prelim is an unlabeled 42-row XLS with empty tense names
 
 🟡 **The file registered as dcs-verb-form-frequency-prelim is OLE2 Excel (magic d0cf11e0), mis-suffixed .csv, with 42 data rows whose Tense/Mood column is entirely empty — only numeric IDs 1–42 and frequencies (sum 781,618; max 233,080 on ID 19; four IDs at frequency 0). It cannot be finalised as a labelled tense/mood frequency table without recovering the ID→label legend from an external source.** Class A.
 
@@ -4513,7 +4513,7 @@ Implication: keep the manifest preliminary marker; do not feed this table into a
 
 > **Source:** graduates [GAPS §11](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · manifest dcs-verb-form-frequency-prelim · [VisualDCS](https://github.com/gasyoun/VisualDCS) · H1735 · 27-07-2026 · Grok 4.5 (grok-4.5)
 
-### 492. Stopovye is a 102-file subset of Polnorazmernye, not a stopword filter of the full 506k
+### §492. Stopovye is a 102-file subset of Polnorazmernye, not a stopword filter of the full 506k
 
 🟠 **PARA/Stopovye is a proper subset of PARA/Polnorazmernye by filename (102 of 245 CSVs; 0 stop-only names), with 139,817 stop rows vs 506,787 full rows (~27.6%); content is related but not identical (sample first-500 line Jaccard 0.23–0.50; some orthographic ṃ/m drift and extra commentary lines).** Class A.
 
@@ -4529,7 +4529,7 @@ Implication: Stopovye is **not** «the full parallel export with stopwords remov
 
 
 
-### 493. Cross-vendor LLM second pass on routing gold is κ=1.0 — still not human IAA
+### §493. Cross-vendor LLM second pass on routing gold is κ=1.0 — still not human IAA
 
 🟡 **A Grok 4.5 second annotation of the 24-scenario which-dictionary routing benchmark agrees with Fable 5 gold on 24/24 (Cohen's κ = 1.0 strict); this is cross-vendor LLM agreement, not human inter-annotator reliability.** Graduates GAPS §10 only partially.
 
@@ -4539,7 +4539,7 @@ Implication: the scenarios are **highly determinate** for current model families
 
 > **Source:** graduates [GAPS §10](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) (partial — human IAA still open) · [routing-benchmark.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/routing-benchmark.json) · H1745 · 27-07-2026 · Grok 4.5 (grok-4.5)
 
-### 494. Homonym token-attribution residual is a 38-group single-lemma_id ceiling
+### §494. Homonym token-attribution residual is a 38-group single-lemma_id ceiling
 
 🟠 **Of 72 homonym groups in WhitneyRoots `token_attribution.json`, 26 are reliable and 46 are not: 38 fail because DCS exposes a single verb lemma_id for the whole lump, and 8 collapse onto one homonym under the current gloss map. Lowering the coverage≥0.55 floor cannot create splits when n_lemma_id=1.**
 
@@ -4549,7 +4549,7 @@ Implication: residual work is **sense/gloss gold or DCS sense-level IDs**, not m
 
 > **Source:** measures [GAPS §4](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · [token_attribution.json](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/token_attribution.json) · H1747 · 27-07-2026 · Grok 4.5 (grok-4.5)
 
-### 495. Cyrillic name indices: 61 IAST-bearing seed files vs 47 pure-Cyrillic — rules still unsafe
+### §495. Cyrillic name indices: 61 IAST-bearing seed files vs 47 pure-Cyrillic — rules still unsafe
 
 🟡 **A filesystem probe of SamudraManthanam + RussianTranslation name-like files found 61 files with inline IAST parentheses (seedable for a proper-noun lookup table) and 47 Cyrillic-heavy files with zero IAST hits; character-rule reverse transcription remains unsafe (FINDINGS §60 stands).**
 
@@ -4559,7 +4559,7 @@ Implication: GAPS §6 is not closed — the 3 fully-Cyrillic glossaries still ne
 
 > **Source:** measures [GAPS §6](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) · [FINDINGS §60](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) · H1746 · 27-07-2026 · Grok 4.5 (grok-4.5)
 
-### 496. Edit-distance record linkage over Sanskrit headwords is 70–98 % false matches — use a length-preserving normalization key and measure the false-match rate against the dictionary's own inventory
+### §496. Edit-distance record linkage over Sanskrit headwords is 70–98 % false matches — use a length-preserving normalization key and measure the false-match rate against the dictionary's own inventory
 
 ⚠️ **Reusable method gotcha, and a load-bearing one:** any join between two spellings of the same
 Sanskrit headword (correction logs, OCR vs. clean text, cross-dictionary crosswalks, spell-check
@@ -4612,7 +4612,7 @@ had been an artefact of the join rather than a fact about the dictionary.
 > [H1477](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1477-Opus_csl-observatory_capture-recapture-fuzzy-linkage-corrector-pair_22.07.26.md)
 > ([PR #120](https://github.com/sanskrit-lexicon/csl-observatory/pull/120)) — csl-observatory · 27-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
 
-### 497. The csl-orig L-number is not a join key — only 35 % of form-era L-codes still point at their own headword
+### §497. The csl-orig L-number is not a join key — only 35 % of form-era L-codes still point at their own headword
 
 ⚠️ **The most tempting key in the corpus, and the worst.** Joining two records of the same
 dictionary by their csl-orig `<L>` number looks strictly better than any string key: every
@@ -4669,7 +4669,7 @@ on validity, i.e. a lower bound on drift.**
 > — salvaged from a duplicate [H1477](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1477-Opus_csl-observatory_capture-recapture-fuzzy-linkage-corrector-pair_22.07.26.md)
 > session whose figures were re-measured, not imported · 27-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
 
-### 498. Word-initial Harvard-Kyoto capitals never decode — 113 correction-event headwords entered the corpus mis-transcoded
+### §498. Word-initial Harvard-Kyoto capitals never decode — 113 correction-event headwords entered the corpus mis-transcoded
 
 🐛 **A live data defect with a one-character cause.** `build_correction_events.looks_hk` decides
 whether a roman cell is Harvard-Kyoto and needs transcoding to IAST:
