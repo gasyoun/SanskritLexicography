@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **PWG→RU finish action brief** (28-07-2026, Grok 4.5 `grok-4.5`, [H1778](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1778-Grok_SanskritLexicography_pwg-ru-finish-action-brief_28.07.26.md)): ADHD-shaped checklist of remaining human votes, costs, open handoffs, and do-not-vote rules — [`RussianTranslation/PWG_RU_FINISH_ACTION_BRIEF_28-07-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_RU_FINISH_ACTION_BRIEF_28-07-2026.md).
+
 ## [1.95.0] — 2026-07-28
 
 ### Fixed
