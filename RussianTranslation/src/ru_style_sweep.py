@@ -348,7 +348,12 @@ def _write_rows_atomic(store, rows, initial_hash, backup_dir=None, stamp=None):
     backup = _create_verified_backup(store, backup_dir=backup_dir, stamp=stamp)
     tmp = '%s.tmp.%d' % (store, os.getpid())
     try:
-        with open(tmp, 'x', encoding='utf-8') as stream:
+        # newline='\n' (H1769): a bare text-mode 'x' open applies universal
+        # newline translation (LF -> CRLF on Windows), which would silently
+        # convert the canonical JSONL store's line endings on every apply and
+        # make its sha256 (recorded in before_sha256/after_sha256 below, and
+        # in the backup's verified hash) a property of the build host.
+        with open(tmp, 'x', encoding='utf-8', newline='\n') as stream:
             for row in rows:
                 stream.write(json.dumps(row, ensure_ascii=False) + '\n')
         if _file_sha256(store) != initial_hash:

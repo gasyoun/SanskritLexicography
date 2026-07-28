@@ -10,6 +10,26 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — `make_edition_cut.py`'s `release_manifest.json` sha256 was a property of the build host, not the content (H1769, 28-07-2026)
+
+- `copy_file` was a bare `shutil.copy2` and `copy_tree` a bare `shutil.copytree`
+  over CHANGELOG.md / DOI_PLAN.md / CITATION.cff / `schemas/` / `roadmap/` —
+  none of which carry a `.gitattributes eol=lf` pin. On a Windows checkout with
+  `core.autocrlf=true` those source bytes are already CRLF, so a Windows-cut
+  edition and a Linux-cut edition of the identical commit pinned two different
+  sha256 values for the same logical file in the "immutable" release manifest.
+  `copy_file` now LF-normalises text assets before writing (binary assets pass
+  through verbatim); `copy_tree` routes through the same helper. Regression:
+  [`tests/test_make_edition_cut_lf_determinism.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_make_edition_cut_lf_determinism.py).
+- `ru_style_sweep.py`'s `_write_rows_atomic` (the sole writer of the canonical
+  `pwg_ru_translated.jsonl` store on `--apply`/`--repair-from --apply`) opened
+  its temp file in plain text mode with no `newline=` guard, so a Windows run
+  applied universal-newline translation to every row and silently converted
+  the store's line endings to CRLF — and its `before_sha256`/`after_sha256`,
+  recorded into the persisted repair report for audit, inherited the same
+  host-dependence. Now opens with `newline='\n'`. Regression:
+  [`tests/test_ru_style_sweep_lf_determinism.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_ru_style_sweep_lf_determinism.py).
+
 ### Changed — LOD namespace ruled: `pwg-ru` → `repwg` ("rePWG"), one namespace for all graphs (27-07-2026)
 
 - Publication-IRI `@DECIDE` **closed** ([#809](https://github.com/gasyoun/SanskritLexicography/issues/809)).

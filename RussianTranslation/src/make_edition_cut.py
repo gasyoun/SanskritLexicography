@@ -47,11 +47,41 @@ def sha256(path):
     return h.hexdigest()
 
 
+def _looks_like_text(data):
+    """Heuristic: no NUL byte and decodes as UTF-8 -> treat as a text asset."""
+    if b'\x00' in data:
+        return False
+    try:
+        data.decode('utf-8')
+        return True
+    except UnicodeDecodeError:
+        return False
+
+
 def copy_file(src, dst):
+    """Copy src -> dst, normalising text assets to LF (H1769).
+
+    release_manifest.json pins a sha256 per file below, and that manifest
+    ships as part of an "immutable" edition -- the hash must be a property
+    of CONTENT, not of the build host's checkout newline translation.
+    `shutil.copy2` is itself a byte-for-byte copy, but its SOURCE (a tracked
+    text file with no `.gitattributes eol=lf` pin) can already be CRLF on a
+    Windows checkout, so a Windows-cut edition and a Linux-cut edition would
+    pin different hashes for identical content. Binary assets are copied
+    verbatim; only files that decode cleanly as UTF-8 text are normalised.
+    """
     if not os.path.exists(src):
         raise FileNotFoundError(src)
     os.makedirs(os.path.dirname(dst), exist_ok=True)
-    shutil.copy2(src, dst)
+    with open(src, 'rb') as f:
+        data = f.read()
+    if _looks_like_text(data):
+        text = data.decode('utf-8').replace('\r\n', '\n').replace('\r', '\n')
+        with open(dst, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(text)
+    else:
+        with open(dst, 'wb') as f:
+            f.write(data)
 
 
 def copy_tree(src, dst):
@@ -59,7 +89,7 @@ def copy_tree(src, dst):
         raise FileNotFoundError(src)
     if os.path.exists(dst):
         shutil.rmtree(dst)
-    shutil.copytree(src, dst)
+    shutil.copytree(src, dst, copy_function=copy_file)
 
 
 def ensure_interop(args):
