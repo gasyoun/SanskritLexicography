@@ -10,6 +10,41 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — the G6 gold card now carries its evidence BEFORE the vote (H1801, 29-07-2026)
+
+- New [`src/gold_evidence_panel.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_evidence_panel.py):
+  four panels joined from assets the project already owns — a **period-routed
+  dictionary sense list** (Vedic ⇒ GRA first, else MW + PWG), a **Whitney root
+  line** (DCS `lemma2root` · `mw_etymology` · `pwg_etymology` → `mw_roots.tsv` →
+  MW↔Whitney `root_crosswalk` → Whitney's own gloss), **attested contexts from
+  the card's own work** with their published Russian, and the **ranked A2/A4
+  Sa→Ru glossary**. Nothing new is derived.
+- `build_g6_mqm_gold_sheet.py` renders them between the Russian rendering and
+  the LLM label, so the evidence is read before the label is judged. New sheet
+  id `g6-mqm-gold-starter-evidence-picker-2026-07-29`, which also carries
+  H1802's required reject-label picker (the two H1796 follow-ups re-cut one
+  sheet, so they share one generation; H1802's unvoted picker-only id is
+  superseded). The H1796 lock is untouched and its votes stay validatable. `--no-evidence` reproduces the old layout for diffing.
+- Coverage on the regenerated 20-card starter (identical ids): glossary 20/20,
+  dictionary 16/20, contexts 14/20, root 8/20 — the 12 rootless cards are proper
+  names, a pronoun and a particle, and say so.
+  [`review/G6_EVIDENCE_PANEL_DIFF_2026-07-28.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/G6_EVIDENCE_PANEL_DIFF_2026-07-28.md).
+- **Never fake completeness.** Every panel reports what it searched; an empty one
+  prints `evidence not found: искали — …`. Context hits are graded
+  `token`/`substring`/`glossary`; variant key hits are labelled; DCS homographs
+  below 10 % of the top candidate's corpus count are rejected out loud (this
+  stopped Grassmann's √mad being served as a sense of the particle `na`).
+- `--selftest` (wired into CI) covers the four cases H1801 names plus the
+  homograph guard, the key-variant layer and whole-compound-before-parts
+  ordering; fixture-only, so it is green where none of the eight assets exists.
+
+### Fixed — the reversed G6 card is id 122, not 118 (H1801, 29-07-2026)
+
+- The H1796 commit message, the H1801 handoff and FINDINGS §499 all recorded the
+  card reversed on withheld Rigvedic evidence as "id 118". Card 118 is
+  `aruRAmSub` / `raghuvamsha`, ruled `defer`; the reversed card is **122**
+  (`na` / `08_rigveda`). Corrected in FINDINGS §499; counts unaffected.
+
 ### Added — first human gold labels: the G6 MQM starter vote is applied (H1796, 28-07-2026)
 
 - Sheet `g6-mqm-gold-starter-2026-07-25` (20 cards from the 320-row
