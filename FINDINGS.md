@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §499) whatever its section, so existing numbers never shift; when a finding is later
+(currently §500) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -47,6 +47,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§496. Edit-distance record linkage over Sanskrit headwords is 70–98% false matches — measure the key, don't trust it](#496-edit-distance-record-linkage-over-sanskrit-headwords-is-7098--false-matches--use-a-length-preserving-normalization-key-and-measure-the-false-match-rate-against-the-dictionarys-own-inventory)
 - 🔴 [§497. The csl-orig L-number is not a join key — only 35 % of form-era L-codes still point at their own headword](#497-the-csl-orig-l-number-is-not-a-join-key--only-35--of-form-era-l-codes-still-point-at-their-own-headword)
 - 🟠 [§498. Word-initial Harvard-Kyoto capitals never decode — 113 correction-event headwords entered the corpus mis-transcoded](#498-word-initial-harvard-kyoto-capitals-never-decode--113-correction-event-headwords-entered-the-corpus-mis-transcoded)
+- 🔴 [§499. Gold cards without evidence yield unusable votes — 5 of 6 MQM rejects carried no typology label, 1 of 20 labels reversed on adjudication](#499-gold-cards-without-evidence-yield-unusable-votes--5-of-6-mqm-rejects-carried-no-typology-label-1-of-20-labels-reversed-on-adjudication)
 
 
 **Grammar & morphology data**
@@ -4722,3 +4723,58 @@ so every affected dictionary's published "work remaining" is biased *upward* —
 > with attestation against [csl-orig v02](https://github.com/sanskrit-lexicon/csl-orig) ·
 > [H1766](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1766-Opus_csl-observatory_h1477-salvage-lcode-drift-hk-residue_27.07.26.md)
 > · tracked as a csl-observatory `[integrity]` issue · 27-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
+
+### §499. Gold cards without evidence yield unusable votes — 5 of 6 MQM rejects carried no typology label, 1 of 20 labels reversed on adjudication
+
+🔴 **Two independent defects in one review instrument, both measured on the first real G6
+vote** ([`g6-mqm-gold-starter-2026-07-25`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/locks/g6-mqm-gold-starter-2026-07-25.lock.json),
+20 cards, voted 28-07-2026). The card showed exactly three things: the Sanskrit form, the Russian
+rendering, and the LLM's typology label. Nothing else — no dictionary sense, no root, no attested
+context, no visible source work.
+
+**Defect 1 — the correct label lives in an unenforced prose convention, and reviewers do not follow
+it.** The G6 contract is "on `reject`, write the correct label as the FIRST word of the note"
+(`build_g6_mqm_gold_sheet.py`, enforced downstream by `apply_decisions.py`). The sheet's own
+strict-review policy requires a note on reject but cannot require its *shape*, because
+`csl_pyutil.render_review_sheet` has no label control — only a free-text box. Result: **5 of 6
+rejects** opened with `aruṇāmśub` / `kāpālika` / `na` / `Почему` / `звуки` instead of a label, and since
+`apply_decisions.py` is deliberately all-or-nothing, **the whole 20-card file failed to apply** —
+including the 14 clean approves. The votes were recoverable only through a second human round.
+Extrapolated to the n=400 store cut (H1665) at the observed 83 % non-compliance, that is ~100+
+unusable rejects and a second full reviewer pass.
+
+**Defect 2 — withholding the evidence does not test the reviewer, it corrupts the label.** Card 118
+(`na` → «словно», work `08_rigveda`) was rejected with «na это всегда нет, никогда не словно».
+In Rigvedic usage `na` is a regular particle of comparison (Grassmann s.v. `na` 2; Macdonell §180,
+`śyeno na` «словно сокол») — a fact the project already owns in GRA, and one the card never
+showed. Presented with it at adjudication the reviewer reversed the vote and left the LLM's
+`correct` in force. **Had the sheet been machine-applied as cast, the gold standard would carry a
+wrong label on a Rigvedic function word** — the class of word most likely to recur in any downstream
+evaluation. Four further cards of the same 20 carry the identical complaint unprompted (id 3: «не
+говоришь от какого корня … не приводишь контексты, а у нас их десятки, если не сотни»; id 6:
+«Недостаточно данных для однозначного ответа»; id 92: «не видя контекста, а он у тебя есть, но
+отсутствует у меня»; id 1 on stems vs case forms) — so the reversal is the visible tip of a
+5-in-20 low-information-vote rate, not a one-off.
+
+**The rule this settles (MG, 28-07-2026):** «Это все надо давать ДО, а не ПОСЛЕ» — evidence the
+project already holds belongs **in the card**, not in the post-hoc adjudication. This is the
+epistemic twin of the V9 screening gate (do not ask a human what an agent could decide): do not ask
+a human to decide *without* the data the repo already has.
+
+**Generalises past this sheet.** Any label-confirmation instrument — MQM typology, sense
+disambiguation, gloss adjudication, spell-check verdicts — inherits both defects: a free-text
+"answer in the note" convention is unenforceable, and an evidence-free card measures the
+reviewer's recall rather than the datum. Fixes are structural, not editorial: a required label
+control in the emitter ([H1802](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1802-Sonnet_csl-pyutil_review-sheet-reject-label-picker_28.07.26.md))
+and an evidence panel joined from the dictionaries/roots/corpus the project already publishes
+([H1801](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1801-Opus_SanskritLexicography_g6-gold-card-evidence-panel_28.07.26.md)).
+Both now gate the n=400 store gold cut.
+
+> **Source:** measured on the applied labels
+> ([`gold/decisions_g6-mqm-gold-starter-2026-07-25.labels.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/decisions_g6-mqm-gold-starter-2026-07-25.labels.jsonl),
+> 20 rows: 16 confirmed / 3 overturned / 1 deferred; LLM label accuracy 16/19 = 84.2 %,
+> Wilson 95 % [62.4 %, 94.5 %] — a starter packet, not a precision figure of record) and on the
+> reviewer's own note text · full audit record
+> [`review/decisions_applied_2026-07-28_g6-mqm-gold-starter.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_2026-07-28_g6-mqm-gold-starter.md)
+> · [H1796](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1796-Opus_SanskritLexicography_g6-mqm-gold-starter-vote-apply_28.07.26.md)
+> · 28-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
