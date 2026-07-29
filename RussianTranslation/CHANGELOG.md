@@ -34,6 +34,8 @@ normalisation.
   [`pwg_ru/H1809_NWS_LS_MARKUP_REPORT_2026-07-29.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1809_NWS_LS_MARKUP_REPORT_2026-07-29.md).
   Tests: [`tests/test_nws_ls_markup.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_nws_ls_markup.py).
 
+## [1.106.0] - 2026-07-29
+
 ### Added — review sheets must reuse what the repo already knows, enforced before write (H1887, 29-07-2026)
 
 MG, voting the 200-card compound-differs sheet: «Я не понимаю, зачем мне

@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.105.0] — 2026-07-29
+
+### Fixed
+- **The divergence gate sheet made a human re-derive what the model had already computed — v2 highlights the differing span and explains it in Russian** (29-07-2026, Opus 5 `claude-opus-5[1m]`, [H1906](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1906-Opus_RussianTranslation_rv-gate-sheet-v2-highlight-explain_29.07.26.md)). MG's verdict on v1: *«нужна подсветка и мотивация, я не буду 100 раз читать 4 перевода, выискивая глазами то, что ты уже и так пометил»* — and it was worse than a missing feature: the typer **already stored a `why` on every pair** (e.g. *"Grassmann has 'nehmet wahr' (perceive), Geldner 'versteht euch auf' (understand)"*) and the sheet discarded all 12,000 of them. New [`src/rv_divergence_explain.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_divergence_explain.py) re-queries only the 100 sheet items for a **verbatim** `span_a`/`span_b`, a Russian `why_ru`, and an `asymmetry_note` for pairs spanning a large era/quality gap (MG: comparing Griffith 1896 with a modern critical translation is not symmetric — 22 of 100 cards carry one). Spans are **verified as exact substrings, not trusted**: 20 of 100 came back non-verbatim and are quoted rather than force-highlighted, with the count stated in the sheet's own subtitle. v2 renders 109 highlight marks and 100 explanation blocks; sheet id `rv_divergence_gate_2026-07-29-v2`, freshly locked, same 100 item ids so no vote is lost. Cost $0.024.
+
 ## [1.104.0] — 2026-07-29
 
 ### Changed
