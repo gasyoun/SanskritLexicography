@@ -46,7 +46,7 @@ import rv_divergence_type as dv                     # noqa: E402
 
 STANZA_PATH = os.path.join(PWG_RU_DIR, 'rv_stanza_translations.jsonl')
 GENERATED = '2026-07-29'
-SHEET_ID = 'rv_divergence_gate_2026-07-29-v3'
+SHEET_ID = 'rv_divergence_gate_2026-07-29-v4'
 EXPLAINED = os.path.join(PWG_RU_DIR, 'h1844', 'rv_divergence_explained.jsonl')
 DEFAULT_N = 100
 DEFAULT_SEED = 1844
@@ -302,23 +302,35 @@ def main():
         'sheet_id': SHEET_ID,
         'title': 'RV · типология расхождений — калибровочный гейт (H1844, шаг 8)',
         'subtitle': (
-            '%d пар (строфа × пара переводчиков), по 25 на класс. <b>Читать целиком '
-            'четыре перевода не нужно:</b> на каждой карточке жёлтым подсвечено то '
-            'самое место, из-за которого присвоен класс, а над переводами сказано '
-            'по-русски, в чём именно разница. Подсветка дословная — если модель не '
-            'смогла указать место в тексте буквально, карточка честно пишет об этом '
-            'вместо подсветки (%d карточек из %d). Выборка стратифицирована по классу, '
-            'а не равномерна: в пилоте классы распределены как %s, и равномерная '
-            'выборка ушла бы почти целиком на подтверждение одного класса. Гейт '
-            'открывает полный прогон при согласии ≥ 80 %% (R15).'
-            % (len(items), n_unmarked, len(items),
-               ', '.join('%s %.0f%%' % (c, 100.0 * dist[c] / total)
-                         for c in dv.FIVE_CLASSES if dist[c]))),
+            '%d пар (строфа × пара переводчиков), по 25 на класс. Гейт открывает '
+            'полный прогон при согласии ≥ 80 %% (R15). Методика — внизу страницы.'
+            % len(items)),
         'footer': (
-            'Approve = класс модели верен · Reject = неверен (обязательно выберите класс, '
-            'который должен быть) · Defer = не решается по двум переводам.<br>'
-            'Согласие = approve / (approve + reject). Экспорт валидируется против '
-            'review/locks/%s.lock.json перед применением.' % SHEET_ID),
+            'Approve = класс модели верен · Reject = неверен (<b>обязательно выберите '
+            'класс</b>, который должен быть) · Defer = не решается по двум переводам.'
+            '<div class="rv-method">'
+            '<h3>Методика</h3>'
+            '<b>Читать целиком четыре перевода не нужно.</b> На каждой карточке жёлтым '
+            'подсвечено то самое место, из-за которого присвоен класс, а над переводами '
+            'сказано по-русски, в чём именно разница. Подсветка дословная: там, где модель '
+            'не смогла указать место в тексте буквально, карточка честно пишет об этом '
+            'вместо подсветки — <b>%d карточек из %d</b>.<br><br>'
+            '<b>Хронология.</b> Переводы идут Грассман 1876–77 → Гриффит 1896 → '
+            'Гельднер 1951–57 → Елизаренкова 1989–99, и каждый более поздний мог читать '
+            'более ранних. Поэтому расхождение позднего с ранним — чаще <i>сознательный '
+            'отход</i>, чем независимое чтение; на карточке пара показана в хронологическом '
+            'порядке. Единственный английский свидетель здесь — Гриффит 1896, а современный '
+            'стандарт (Джеймисон–Бреретон 2014) в волну 1 не входит, поэтому английская '
+            'сторона меряется викторианским английским.<br><br>'
+            '<b>Выборка</b> стратифицирована по классу, а не равномерна: в пилоте классы '
+            'распределены как %s, и равномерная выборка ушла бы почти целиком на '
+            'подтверждение одного класса.<br><br>'
+            'Экспорт валидируется против review/locks/%s.lock.json перед применением.'
+            '</div>'
+            % (n_unmarked, len(items),
+               ', '.join('%s %.0f%%' % (c, 100.0 * dist[c] / total)
+                         for c in dv.FIVE_CLASSES if dist[c]),
+               SHEET_ID)),
         'approve_label': 'Класс верен',
         'reject_label': 'Класс неверен',
         'reject_labels': [(c, '%s — %s' % (c, CLASS_HELP[c])) for c in dv.FIVE_CLASSES],
@@ -328,18 +340,29 @@ def main():
         'strict_review': {'reviewer': '', 'require_all_votes': False,
                           'require_reject_note': False},
         'extra_css': (
+            # Every block below sets BOTH background and color. v3 set only the
+            # background and inherited the theme foreground, which rendered white
+            # text on the yellow highlight and pale text on the pale-blue panel.
             '.rv-rend{font-size:1.2em;line-height:1.6}'
-            '.rv-ctx{opacity:.7;font-size:.95em}'
-            'mark.rv-hit{background:#ffe27a;color:inherit;padding:.06em .18em;'
-            'border-radius:.2em;box-shadow:0 0 0 1px #e0b400 inset;font-weight:600}'
-            '.rv-why{margin:.5em 0;padding:.5em .7em;background:#eef6ff;'
-            'border-left:4px solid #4a90d9;border-radius:.2em;font-size:1.05em}'
-            '.rv-nowhy{background:#fff0f0;border-left-color:#d9534f}'
-            '.rv-asym{margin:.4em 0;padding:.45em .7em;background:#fff8e6;'
-            'border-left:4px solid #e0a800;border-radius:.2em}'
-            '.rv-quote{margin-top:.35em;font-size:.92em;opacity:.8;font-style:italic}'
-            '.rv-chrono{margin:.35em 0;padding:.45em .7em;background:#f3f0fa;'
-            'border-left:4px solid #7a5cb8;border-radius:.2em;font-size:.97em}'),
+            '.rv-ctx{opacity:.75;font-size:.95em}'
+            'mark.rv-hit{background:#ffd54a;color:#1a1a1a;padding:.06em .2em;'
+            'border-radius:.2em;box-shadow:0 0 0 1px #c79100 inset;font-weight:700}'
+            '.rv-why{margin:.5em 0;padding:.55em .75em;background:#e8f1fb;'
+            'color:#12243a;border-left:4px solid #2f6fb0;border-radius:.2em;'
+            'font-size:1.05em}'
+            '.rv-why b{color:#0d1b2c}'
+            '.rv-nowhy{background:#fdecea;color:#5c1a15;border-left-color:#c0392b}'
+            '.rv-asym{margin:.4em 0;padding:.5em .75em;background:#fff6df;'
+            'color:#4a3608;border-left:4px solid #c79100;border-radius:.2em}'
+            '.rv-asym b{color:#3a2a05}'
+            '.rv-chrono{margin:.4em 0;padding:.5em .75em;background:#f0ecf9;'
+            'color:#2b2140;border-left:4px solid #6a4fa3;border-radius:.2em;'
+            'font-size:.97em}'
+            '.rv-chrono b{color:#1e1730}'
+            '.rv-quote{margin-top:.35em;font-size:.93em;color:#444;font-style:italic}'
+            '.rv-method{margin-top:2.5em;padding:1em 1.2em;background:#f6f6f8;'
+            'color:#222;border-top:2px solid #bbb;border-radius:.2em;font-size:.95em}'
+            '.rv-method h3{margin:0 0 .5em;font-size:1.05em;color:#111}'),
     }
     config.update(standard_config(
         save_as='RussianTranslation\\review\\%s_decisions.json' % SHEET_ID))
