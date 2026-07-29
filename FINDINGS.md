@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §501) whatever its section, so existing numbers never shift; when a finding is later
+(currently §502) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -49,6 +49,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§498. Word-initial Harvard-Kyoto capitals never decode — 113 correction-event headwords entered the corpus mis-transcoded](#498-word-initial-harvard-kyoto-capitals-never-decode--113-correction-event-headwords-entered-the-corpus-mis-transcoded)
 - 🔴 [§499. Gold cards without evidence yield unusable votes — 5 of 6 MQM rejects carried no typology label, 1 of 20 labels reversed on adjudication](#499-gold-cards-without-evidence-yield-unusable-votes--5-of-6-mqm-rejects-carried-no-typology-label-1-of-20-labels-reversed-on-adjudication)
 - 🔴 [§500. A batch that never runs deletes a *band* of the sample, not a random subset — byte-packed chunking makes an incomplete A/B silently flatter the arm that failed](#500-a-batch-that-never-runs-deletes-a-band-of-the-sample-not-a-random-subset--byte-packed-chunking-makes-an-incomplete-ab-silently-flatter-the-arm-that-failed)
+- 🔴 [§501. An A/B whose "clean" metric scores the last attempt that RETURNED, not what the pipeline would ship, can name the wrong winner — and did](#501-an-ab-whose-clean-metric-scores-the-last-attempt-that-returned-not-what-the-pipeline-would-ship-can-name-the-wrong-winner--and-did)
 
 
 **Grammar & morphology data**
@@ -4825,3 +4826,46 @@ chunked run in this repo — bounded windows, cohort barriers, residual drains �
 > · [H1210](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1210-Opus_SanskritLexicography_pwg-ab-deepseek-vs-claude-100_17.07.26.md)
 > · runs 28-07-2026 (controller Opus 4.8 `claude-opus-4-8`, workers Sonnet 5 `claude-sonnet-5`,
 > generator `deepseek-chat`); coverage audit 29-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
+
+### §501. An A/B whose "clean" metric scores the last attempt that RETURNED, not what the pipeline would ship, can name the wrong winner — and did
+
+🔴 **Same 100 cards, same two arms, two defensible definitions of clean, opposite conclusions.**
+Measured on the H1210 PWG A/B once arm A's coverage gap was filled
+([H1846](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1846-Opus_SanskritLexicography_h1210-arm-a-coverage-fill_29.07.26.md), 29-07-2026).
+
+The rig's per-card loop keeps `rec.card` from the last attempt that **returned**, while
+`final_status` records how the card **ended**. A card whose controller rejected attempt 1 and
+whose attempt 2 died mid-stream ends `worker-null-death` and still carries attempt 1's text
+into `cards_out` — which is exactly what `canonical_audit.py` scores. So:
+
+| metric | arm A | arm B |
+|---|---:|---:|
+| audit-clean (`promote_dry`) | 93/100 | 78/100 |
+| shippable (`promote_dry` AND rig ended clean) | **72/100** | **70/100** |
+| Q4 long entries, audit-clean | 20/23 (87%) | 8/23 (35%) |
+| Q4 long entries, shippable | **3/23 (13%)** | **4/23 (17%)** |
+
+A 15-point lead becomes a 2-card tie, and the long-entry quartile — the one the first report
+called decisive — **reverses**. The gap is not noise: 21 of arm A's 93 audit-clean cards were
+ones its own pipeline refused (vs 8 in arm B), because the arms fail differently (arm A
+retries into API transport failures; arm B returns unusable output outright). Any metric that
+scores *text produced at some point* rather than *what the pipeline delivers* silently rewards
+the arm that fails later in the chain.
+
+**The rule this yields:** for any pipeline A/B, report the pair — the artifact-quality metric
+AND the delivery metric — and state which population each describes. Where they agree, the
+result is robust; where they diverge, the divergence IS the finding. Reporting only the one
+that flatters a conclusion is not a summary, it is a selection.
+[`status_vs_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/status_vs_audit.py)
+(per-card cross-tab) and
+[`dual_metric_breakdown.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/dual_metric_breakdown.py)
+(both metrics per stratum) are the reusable form. Companion to
+[§500](#500-a-batch-that-never-runs-deletes-a-band-of-the-sample-not-a-random-subset--byte-packed-chunking-makes-an-incomplete-ab-silently-flatter-the-arm-that-failed):
+that one is about which cards enter the denominator, this one about which cards count as
+success.
+
+> **Source:** [`H1210_dual_metric.29.07.26b.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/H1210_dual_metric.29.07.26b.json)
+> · full report
+> [`pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md)
+> · 29-07-2026, Opus 5 1M (`claude-opus-5[1m]`); the 13 filled cards ran with workers
+> `claude-sonnet-5` and a controller the template's alias resolved to `claude-opus-5[1m]`.

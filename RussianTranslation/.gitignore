@@ -238,5 +238,5 @@ src/pilot/h1210/arm_b.journal.jsonl
 src/pilot/h1210/arm_b.run.log
 src/pilot/h1210/arm_b.control_r*.payload.json
 src/pilot/h1210/arm_b.control_r*.wf.js
-src/pilot/h1210/arm_*.canonical_audit.json
+src/pilot/h1210/arm_*.canonical_audit*.json
 src/pilot/h1210/qc_*_senses.json
