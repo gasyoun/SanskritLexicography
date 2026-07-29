@@ -46,7 +46,8 @@ import rv_divergence_type as dv                     # noqa: E402
 
 STANZA_PATH = os.path.join(PWG_RU_DIR, 'rv_stanza_translations.jsonl')
 GENERATED = '2026-07-29'
-SHEET_ID = 'rv_divergence_gate_2026-07-29'
+SHEET_ID = 'rv_divergence_gate_2026-07-29-v2'
+EXPLAINED = os.path.join(PWG_RU_DIR, 'h1844', 'rv_divergence_explained.jsonl')
 DEFAULT_N = 100
 DEFAULT_SEED = 1844
 
@@ -115,16 +116,81 @@ def esc(s):
     return (s or '').replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
 
 
-def build_items(picked, stanzas):
+def _question(cls, ex):
+    """The card's ask. v1 printed only the class name and made the reviewer hunt for
+    the difference; this states WHAT the difference is, in Russian, above the fold."""
+    why = (ex.get('why_ru') or '').strip()
+    parts = ['Модель присвоила класс <b>%s</b> — <i>%s</i>.'
+             % (esc(cls), esc(CLASS_HELP.get(cls, '')))]
+    if why:
+        parts.append('<div class="rv-why"><b>В чём разница:</b> %s</div>' % esc(why))
+    else:
+        parts.append('<div class="rv-why rv-nowhy"><b>Модель не объяснила разницу</b> — '
+                     'это само по себе повод для Reject или Defer.</div>')
+    if ex.get('asymmetry_note'):
+        parts.append('<div class="rv-asym"><b>⚠ Асимметрия переводов:</b> %s</div>'
+                     % esc(ex['asymmetry_note']))
+    parts.append('<span class="muted">Подсвеченное ниже — то место, из-за которого '
+                 'присвоен класс. Approve = класс верен · Reject = неверен, '
+                 '<b>выберите правильный класс</b> · Defer = по двум переводам не '
+                 'решить.</span>')
+    return '<br>'.join(parts)
+
+
+def load_explanations(path=EXPLAINED):
+    """'<loc>|<a>|<b>' -> {span_a, span_b, why_ru, asymmetry_note, *_verbatim}."""
+    out = {}
+    if not os.path.exists(path):
+        return out
+    with io.open(path, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                r = json.loads(line)
+                out['%s|%s' % (r['location'], r['pair'])] = r
+    return out
+
+
+def highlight(text, span, verbatim):
+    """Escape the rendering, then wrap the FIRST occurrence of `span` in a mark.
+
+    Escaping happens before matching so the mark tags are the only markup in the
+    output. A non-verbatim span (the model paraphrased instead of copying) is never
+    force-fitted -- the caller quotes it separately instead.
+    """
+    safe = esc(text or '')
+    if not span or not verbatim:
+        return safe.replace('\n', '<br>'), False
+    needle = esc(span)
+    idx = safe.find(needle)
+    if idx < 0:
+        return safe.replace('\n', '<br>'), False
+    marked = (safe[:idx] + '<mark class="rv-hit">' + needle + '</mark>'
+              + safe[idx + len(needle):])
+    return marked.replace('\n', '<br>'), True
+
+
+def build_items(picked, stanzas, explained):
     items = []
     for location, pair_key, entry in picked:
         a, b = pair_key.split('|')
         stanza = stanzas[location]
+        ex = explained.get('%s|%s' % (location, pair_key)) or {}
+        spans = {a: (ex.get('span_a'), ex.get('span_a_verbatim', False)),
+                 b: (ex.get('span_b'), ex.get('span_b_verbatim', False))}
         panels = []
         for key in (a, b):
             t = stanza['translations'][key]
-            text = esc((t['text'] or '')).replace('\n', '<br>')
-            panels.append((dv.TRANSLATOR_LABEL[key], '<div class="rv-rend">%s</div>' % text))
+            span, verbatim = spans[key]
+            body, marked = highlight(t['text'], span, verbatim)
+            note = ''
+            if span and not marked:
+                note = ('<div class="rv-quote">Модель указала на: «%s» '
+                        '(не удалось подсветить дословно)</div>' % esc(span))
+            elif not span:
+                note = '<div class="rv-quote">Здесь выделять нечего.</div>'
+            panels.append((dv.TRANSLATOR_LABEL[key],
+                           '<div class="rv-rend">%s</div>%s' % (body, note)))
         other = [k for k in dv.TRANSLATORS if k not in (a, b)]
         ctx = []
         for key in other:
@@ -140,11 +206,7 @@ def build_items(picked, stanzas):
             'filt': entry['class'],
             'title': 'RV %s — %s ↔ %s' % (location, a.split('_')[0], b.split('_')[0]),
             'badges': [entry['class'], 'маṇḍала %d' % stanza['mandala']],
-            'question': (
-                'Модель присвоила этой паре класс <b>%s</b> (%s).<br>'
-                'Approve = класс верен · Reject = неверен, выберите правильный класс '
-                'в списке · Defer = по двум переводам не решить.'
-                % (esc(entry['class']), esc(CLASS_HELP.get(entry['class'], '')))),
+            'question': _question(entry['class'], ex),
             'note_placeholder': 'reject → почему именно этот класс неверен',
             'panels': panels,
         })
@@ -167,20 +229,41 @@ def main():
     if not rows:
         sys.exit('no model-decided pairs in %s' % a.pilot)
     picked = stratified_by_class(rows, a.n, a.seed)
-    items = build_items(picked, stanzas)
+    explained = load_explanations()
+    if not explained:
+        sys.exit('no %s — run `python src/rv_divergence_explain.py run --ids …` first. '
+                 'A sheet without spans and explanations is the v1 defect (H1906).'
+                 % EXPLAINED)
+    missing = [p for p in picked if '%s|%s' % (p[0], p[1]) not in explained]
+    if missing:
+        print('WARN: %d of %d items have no explanation and will render bare'
+              % (len(missing), len(picked)))
+    items = build_items(picked, stanzas, explained)
 
     dist = collections.Counter(r[2]['class'] for r in rows)
     total = sum(dist.values())
+    # cards where the model named a place but could not point at it verbatim, so the
+    # card quotes instead of highlighting -- stated in the subtitle rather than hidden
+    n_unmarked = 0
+    for loc, pair_key, _ in picked:
+        ex = explained.get('%s|%s' % (loc, pair_key)) or {}
+        if ((ex.get('span_a') and not ex.get('span_a_verbatim'))
+                or (ex.get('span_b') and not ex.get('span_b_verbatim'))):
+            n_unmarked += 1
     config = {
         'sheet_id': SHEET_ID,
         'title': 'RV · типология расхождений — калибровочный гейт (H1844, шаг 8)',
         'subtitle': (
-            '%d пар (станза × пара переводчиков) из пилота на %d стансах. Выборка '
-            'стратифицирована по классу, присвоенному моделью, а НЕ равномерна: в самом '
-            'пилоте классы распределены как %s, поэтому равномерная выборка потратила бы '
-            'весь человеческий бюджет на подтверждение одного класса. Гейт открывает '
-            'полный прогон при согласии ≥ 80 %% (R15).'
-            % (len(items), len({r[0] for r in rows}),
+            '%d пар (строфа × пара переводчиков), по 25 на класс. <b>Читать целиком '
+            'четыре перевода не нужно:</b> на каждой карточке жёлтым подсвечено то '
+            'самое место, из-за которого присвоен класс, а над переводами сказано '
+            'по-русски, в чём именно разница. Подсветка дословная — если модель не '
+            'смогла указать место в тексте буквально, карточка честно пишет об этом '
+            'вместо подсветки (%d карточек из %d). Выборка стратифицирована по классу, '
+            'а не равномерна: в пилоте классы распределены как %s, и равномерная '
+            'выборка ушла бы почти целиком на подтверждение одного класса. Гейт '
+            'открывает полный прогон при согласии ≥ 80 %% (R15).'
+            % (len(items), n_unmarked, len(items),
                ', '.join('%s %.0f%%' % (c, 100.0 * dist[c] / total)
                          for c in dv.FIVE_CLASSES if dist[c]))),
         'footer': (
@@ -196,8 +279,17 @@ def main():
         'generated': GENERATED,
         'strict_review': {'reviewer': '', 'require_all_votes': False,
                           'require_reject_note': False},
-        'extra_css': ('.rv-rend{font-size:1.15em;line-height:1.5}'
-                      '.rv-ctx{opacity:.75;font-size:.95em}'),
+        'extra_css': (
+            '.rv-rend{font-size:1.2em;line-height:1.6}'
+            '.rv-ctx{opacity:.7;font-size:.95em}'
+            'mark.rv-hit{background:#ffe27a;color:inherit;padding:.06em .18em;'
+            'border-radius:.2em;box-shadow:0 0 0 1px #e0b400 inset;font-weight:600}'
+            '.rv-why{margin:.5em 0;padding:.5em .7em;background:#eef6ff;'
+            'border-left:4px solid #4a90d9;border-radius:.2em;font-size:1.05em}'
+            '.rv-nowhy{background:#fff0f0;border-left-color:#d9534f}'
+            '.rv-asym{margin:.4em 0;padding:.45em .7em;background:#fff8e6;'
+            'border-left:4px solid #e0a800;border-radius:.2em}'
+            '.rv-quote{margin-top:.35em;font-size:.92em;opacity:.8;font-style:italic}'),
     }
     config.update(standard_config(
         save_as='RussianTranslation\\review\\%s_decisions.json' % SHEET_ID))
