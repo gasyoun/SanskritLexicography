@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""nws_tag_census — the real vocabulary of NWS sense tags, counted (H1820).
+"""nws_tag_census — the real vocabulary of NWS sense tags, counted (H1847).
 
 MG, reading a G5 card whose tooltip said «unsp — домен не указан»: «А какие
 вообще бывают домены? … По всем аббревиатурам и их комбинациям нужна
