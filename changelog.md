@@ -14,7 +14,7 @@ not an error.
 
 ## [Unreleased]
 
-## [1.99.0] — 2026-07-29
+## [1.100.0] — 2026-07-29
 
 ### Changed
 - **H1210's conclusion is overturned by its own coverage fill — the A/B is a tie, and the "length-routed hybrid" recommendation is withdrawn** (29-07-2026, Opus 5 1M `claude-opus-5[1m]`, [H1846](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1846-Opus_SanskritLexicography_h1210-arm-a-coverage-fill_29.07.26.md)): arm A's 13 unattempted cards were run from the frozen payloads, putting both arms at **100/100**. The new cards barely moved the audit metric (93 vs 78) — but running them exposed *why* that metric flatters arm A. `canonical_audit.py` scores `cards_out`, which holds the last attempt that **returned**, while `final_status` records how the card **ended**; a card whose controller rejected attempt 1 and whose attempt 2 died mid-stream ends `worker-null-death` yet still carries attempt 1's text into the audit. Counting only cards each pipeline would actually ship unattended (`promote_dry` AND a clean rig status): **arm A 72/100, arm B 70/100 — a tie**, and the long-entry quartile **reverses** (A 3/23 = 13%, B 4/23 = 17%). The S2 defect-culprit stratum shows it sharpest: arm A 13 audit-clean → 4 shippable. Full revision in [the report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md) §3/§7 and a new [`RESULTS_LOG`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md) row. Caveats that bound the tie: the 13 filled cards ran on a later controller tier (`claude-opus-5[1m]` vs `claude-opus-4-8`) and **8 of them lost attempts to API transport failures**, so arm A's Q4 13% is a floor.
@@ -27,6 +27,11 @@ not an error.
 
 ### Added
 - **`refresh_after_fill.py`** (29-07-2026, Opus 5 1M `claude-opus-5[1m]`, [H1846](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1846-Opus_SanskritLexicography_h1210-arm-a-coverage-fill_29.07.26.md)): the post-fill recompute of the H1210 A/B as ONE chain — collect → telemetry → canonical audit over all ten chunks → `ab_report` + `length_breakdown` + `coverage_gap`. Collecting a chunk without re-auditing, or re-auditing without refreshing the coverage table, is precisely how a stale denominator survives into a report ([FINDINGS §500](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)); the script also stamps its outputs with a new date so the 87-card artifacts behind that finding stay reproducible.
+
+## [1.99.0] — 2026-07-29
+
+### Added
+- **RV multi-translation evidence spine, wave 1a** (29-07-2026, [H1843](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1843-Opus_RussianTranslation_rv-multitranslation-evidence-w1a_29.07.26.md), [PR #867](https://github.com/gasyoun/SanskritLexicography/pull/867)): griffith / stanza / lemma / renou layers — see the [v1.99.0 release notes](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.99.0) for the full description. _Recorded here after the fact (H1846, 29-07-2026): that release was tagged without promoting its entries into this file, so the changelog had no 1.99.0 section at all while a published release carried the number._
 
 ## [1.98.0] — 2026-07-29
 
