@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.107.0] — 2026-07-29
+
 ### Added
 - **Chronology as a first-class dimension of the divergence gate, and the Jamison–Brereton gap stated out loud** (29-07-2026, Opus 5 `claude-opus-5[1m]`, [H1908](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1908-Opus_RussianTranslation_rv-gate-chronology-jamison-brereton_29.07.26.md)). MG: *"the chronology matters a lot and must be noted and used"*. The four translators run **Grassmann 1876–77 → Griffith 1896 → Geldner 1951–57 → Elizarenkova 1989–99**, and each later one could read the earlier — Griffith worked from Grassmann and Wilson, Elizarenkova argues explicitly with Geldner and Renou. So a divergence between a later and an earlier rendering is **not symmetric**: the later translator is often departing *knowingly*. ARCHITECTURE §3.5 defines the classes purely pairwise with no notion of precedence, so nothing in the taxonomy could express that. Sheet v3 now puts a **deterministic chronology band** on every card (computed from publication years, never asked of a model) and orders the two renderings **earliest-first** instead of by arbitrary pair-key order. Separately, the epistemic consequence of R4's rights decision is now stated rather than implied: Griffith 1896 is the layer's **only** English witness while the current standard is **Jamison–Brereton 2014**, deliberately excluded as in-copyright — so every English-side finding rests on a translation **118 years older** than the standard, and the 66 of 100 cards involving Griffith say so. Full reasoning and the three consequences for wave 2 in [`docs/DECISIONS_LOG_rv_multitranslation.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/DECISIONS_LOG_rv_multitranslation.md).
 
