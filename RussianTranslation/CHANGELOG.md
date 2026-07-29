@@ -10,6 +10,22 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — audit record for the Gorresio map audit sheet; G2.4.7 flagged for re-vote (29-07-2026)
+
+The 26-07-2026 audit sheet (32 cards, 28 approve / 4 reject) was applied in
+[#793](https://github.com/gasyoun/SanskritLexicography/pull/793) but never got the
+`/decisions-apply` audit record its sibling sheets carry. Backfilled as
+[`review/decisions_applied_29-07-2026_gorresio-southern-map-audit.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_29-07-2026_gorresio-southern-map-audit.md)
+by Opus 5 (`claude-opus-5[1m]`) — no data changed; all 32 votes re-verified against the
+committed TSV (28 reuse ON / 4 `audit-rejected` inert, no stray `audit-rejected` rows),
+selftest all-green, and the 4 rejects confirmed to degrade to honest
+`no-southern-counterpart` misses in `citation_tm.lookup`.
+
+One finding for audit round 2: **G 2,4,7 → S 2,5,7 scored 0.286 when it was rejected and
+scores 0.741 today** — the H1689 e-text rebuild changed the evidence under that judgement,
+and 0.741 would classify `matched`. The full-pair denylist correctly held the veto; the row
+stays off pending a fresh human vote rather than being flipped silently.
+
 ### Added — execution-ready plan: the Rig-Veda multi-translation evidence layer (H1843/H1844, 29-07-2026)
 
 Five cross-linked layer docs under [`docs/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/docs),
