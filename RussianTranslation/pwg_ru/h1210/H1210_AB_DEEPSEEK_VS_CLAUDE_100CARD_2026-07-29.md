@@ -223,6 +223,12 @@ defect H1646 and H1808 already fixed twice; it was replaced with the shared rend
 that module landed on `master` mid-session. Measured on arm B's cards, the shared path also
 links strictly more (2,227 of 2,992 citation spans) than the hand-rolled one did.
 
+**Blinding verified, not asserted:** the rendered HTML contains no arm-revealing token
+(`deepseek`, `claude`, `sonnet`, `opus`, `arm_a/arm_b`), all 40 item ids appear exactly
+once, and the arm sequence by item id is a real interleave — `AABAAAABBABAAABBABBBABABBBAABBAAABBAABBB`,
+longest same-arm run 4, 20/20 split. The lock binds the sheet by content hash
+(`sha256:37194f2a89a0…`), so a regenerated sheet that does not match cannot be voted into it.
+
 **Publish safety:** the HTML embeds unpublished RU/DE store-grade text and is gitignored;
 only the lock is committed.
 
