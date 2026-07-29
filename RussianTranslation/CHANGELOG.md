@@ -10,6 +10,32 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.108.0] - 2026-07-29
+
+### Fixed — NWS-layer citations in the Roman-numeral convention now resolve to Cologne links (H1809, 29-07-2026)
+
+MG, voting `g5_batch1v3_sheet.html`: «ṚV(Sā) I 165, 11 is not clickable? Why? All such
+entries are long ago clickable even at Cologne». The NWS (`Nachträge`) layer cites in its
+own convention (Roman-numeral maṇḍala, optional `(Sā)` recension marker) that
+`ls_resolver` — a faithful port of Cologne's `ls_service.dart` — cannot resolve without
+normalisation.
+
+- **[`src/nws_ls_markup.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/nws_ls_markup.py)**
+  — census + apply: normalises the NWS convention into the `n=` attribute of a
+  `<ls n="normalised-locus">` wrapper around the ORIGINAL, byte-identical span (so the
+  `(Sā)` recension marker is never discarded — no ruling on its semantics was needed).
+  Gated on PWG's own bibliography so no siglum is guessed into a fabricated link.
+  Store-wide: 6 candidate spans (not ~230 as a linear scale-up from the 150-card sample
+  would suggest) — 2 resolved (`ṚV(Sā) I 165, 11`, `ṚV IV 42, 8`), 4 honest residue
+  (`ChU`/`Harisv`, not in PWG's bibliography).
+- Same pass migrated the store's half-translated `[diasystem, domain]` tag values
+  (`без уточн.` / `Мед.` / `Линг.` / `Лингв.` → canonical Latin `unsp`/`Med`/`Ling`,
+  17 occurrences) — a second defect the citation census surfaced in the same bracket-tag
+  scan.
+- Full report:
+  [`pwg_ru/H1809_NWS_LS_MARKUP_REPORT_2026-07-29.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1809_NWS_LS_MARKUP_REPORT_2026-07-29.md).
+  Tests: [`tests/test_nws_ls_markup.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_nws_ls_markup.py).
+
 ## [1.106.0] - 2026-07-29
 
 ### Added — review sheets must reuse what the repo already knows, enforced before write (H1887, 29-07-2026)
