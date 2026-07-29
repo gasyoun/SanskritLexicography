@@ -105,9 +105,10 @@ RULES = {
                   'стоит. Списку членов нужна лексема — значит, верен PWG.'),
     },
     'pwg_lexeme_vs_mw_suffixed_tail': {
-        'ru': 'MW оставляет суффикс в хвосте, PWG называет лексему',
+        # MG 29-07-2026: «MW оставляет с суффиксом, PWG приводит основу».
+        'ru': 'MW оставляет с суффиксом, PWG приводит основу',
         'claim': ('Хвостовой член у MW несёт словообразовательный суффикс, PWG '
-                  'называет лексему без него. Членение то же; верен PWG.'),
+                  'приводит основу без него. Членение то же; верен PWG.'),
     },
     'mw_cut_leaves_nonword': {
         'ru': 'Разрез MW оставляет не-слово',
@@ -116,9 +117,16 @@ RULES = {
                   'верен PWG.'),
     },
     'mw_anusvara_right_of_boundary': {
-        'ru': 'Анусвара справа от границы',
-        'claim': ('MW ставит границу так, что анусвара отходит вправо; это '
-                  'орфографическая деталь записи, не другое членение. Верен PWG.'),
+        # MG 29-07-2026: «Анусвара справа от первой части», и — важнее — никто не
+        # утверждает, что ṃtapa отдельное слово: читается janaṃ + tapa. Поэтому
+        # членение MW на карточке теперь показывается с анусварой, приклеенной
+        # ВЛЕВО (см. mw_display_split), а не как index_members из TSV.
+        'ru': 'Анусвара справа от первой части',
+        'claim': ('MW печатает границу как <code>jana—ṃ-tapa</code>: анусвара '
+                  'вынесена за дефис вправо. Это деталь записи, а не утверждение, '
+                  'что <i>ṃtapa</i> — отдельное слово; читается '
+                  '<b>janaṃ + tapa</b>. PWG пишет тот же член как <i>janam</i> '
+                  '(винительный падеж). Это одно и то же членение — верен PWG.'),
     },
     'mw_cut_absorbs_initial_vowel': {
         'ru': 'Разрез MW поглощает начальный гласный',
@@ -136,6 +144,18 @@ RULES = {
                   'самостоятельный член сложного слова — верен PWG.'),
     },
 }
+
+# MG's structural ruling, 29-07-2026: любая самаса состоит РОВНО из двух частей
+# (кроме двандвы, где частей может быть сколько угодно). Поэтому трёхчленный
+# список MW — это не конкурирующий анализ, а самаса внутри самасы: для
+# `gozWIpati` виграха — `gozWI + pati`, а `go + zWI` это уже разбор первого члена.
+# Измерено: PWG даёт ровно 2 члена в 4 342 из 4 353 строк (99,7 %); MW даёт 3
+# члена в 66 строках, и во ВСЕХ 66 у PWG ровно два.
+BINARY_NOTE = (
+    'Самаса состоит ровно из двух частей (исключение — двандва, где частей может '
+    'быть сколько угодно). Трёхчленный список MW — это не другое членение, а '
+    '<b>самаса внутри самасы</b>: MW заодно разбирает и первый член. Виграха для '
+    'этого заголовка — двучленная, то есть PWG.')
 
 REJECT_LABELS = [
     ('rule_wrong_here', 'Правило здесь не работает — членение PWG неверно'),
@@ -274,6 +294,22 @@ _EV_KEYS = {
 }
 
 
+def _ev_val(v):
+    """Transliterate an evidence VALUE only when it is Sanskrit.
+
+    `mw_is_finer=True` is a boolean flag, not a word: running it through
+    slp1_iast turned it into "thrue" (T->th) on the goṣṭhīpati card. Flags carry
+    no information beyond the key, so they render as nothing.
+    """
+    if v in ('True', 'true', '1'):
+        return ''
+    if v in ('False', 'false', '0'):
+        return 'нет'
+    if re.fullmatch(r'[\d.,]+', v):
+        return v
+    return slp1_iast(v)
+
+
 def iast_evidence(s):
     """`form_diffs=bfhant|bfhat; mw_hyphen_members=A-DAra` ->
     `формы членов = bṛhant | bṛhat; дефисные члены MW = ā-dhāra`."""
@@ -285,8 +321,8 @@ def iast_evidence(s):
         if '=' in chunk:
             k, v = chunk.split('=', 1)
             k = _EV_KEYS.get(k.strip(), k.strip())
-            vals = ' | '.join(slp1_iast(p.strip()) for p in v.split('|') if p.strip())
-            out.append('%s = %s' % (k, vals))
+            vals = ' | '.join(_ev_val(p.strip()) for p in v.split('|') if p.strip())
+            out.append(('%s: %s' % (k, vals)) if vals else k)
         else:
             out.append(slp1_iast(chunk))
     return '; '.join(out)
@@ -300,6 +336,44 @@ def src_cell(raw, body_html):
     if not (raw or '').strip():
         return '—'
     return '<code title="источник (SLP1): %s">%s</code>' % (esc(raw), body_html)
+
+
+# --------------------------------------------------------- MW display split
+# MG 29-07-2026, point 3: «Никто, конечно, не имеет ввиду, что jana + ṃtapa, что
+# существует отдельное слово ṃtapa … Имеется ввиду janaṃ + tapa.» The TSV's
+# `index_members` splits MW's `jana—ṃ-tapa` at the em-dash, which strands the
+# anusvāra on the second member and makes MW look like it is claiming a word
+# that does not exist. MW's own notation says otherwise: `ṃ-` is hyphen-attached
+# leftward material, not the head of the second member.
+#
+# Point 5: `tejo—'hvā` — the apostrophe is an avagraha, i.e. an elided initial
+# `a` produced by sandhi. Printing it bare invites the same misreading.
+_ANUSVARA_TAIL = re.compile(r'^M(.+)$')
+
+
+def mw_display_split(index_members, rule, k2_raw=''):
+    """MW's split as a reader should read it, plus a note when the raw notation
+    needed interpreting. Returns (iast_split, note_html_or_None)."""
+    parts = [p.strip() for p in (index_members or '').split('+') if p.strip()]
+    note = None
+    # Every quotation of the raw `<k2>` goes through iast_mw_k2 for the VISIBLE
+    # text, keeping the exact SLP1 bytes in the tooltip — the same contract as
+    # src_cell. Printing the raw string here is what the preflight caught.
+    k2_shown = src_cell(k2_raw, iast_mw_k2(k2_raw)) if k2_raw else '—'
+    if rule == 'mw_anusvara_right_of_boundary' and len(parts) == 2:
+        m = _ANUSVARA_TAIL.match(parts[1])
+        if m:
+            parts = [parts[0] + 'M', m.group(1)]
+            note = ('MW печатает %s: анусвара отделена дефисом и стоит справа от '
+                    'границы. Это запись, а не утверждение, что <i>%s</i> — '
+                    'самостоятельное слово; здесь она приклеена обратно к первой '
+                    'части.' % (k2_shown, esc(slp1_iast(m.group(0)))))
+    if "'" in (k2_raw or ''):
+        note = ((note + ' ') if note else '') + (
+            'В %s апостроф — <b>аваграха</b>: он стоит на месте начального '
+            '<i>a</i>, выпавшего по сандхи, то есть восходит к <i>%s</i>.'
+            % (k2_shown, esc(iast_mw_k2(k2_raw.replace("'", 'a')))))
+    return ' + '.join(slp1_iast(p) for p in parts), note
 
 
 def load_derivation():
@@ -339,7 +413,24 @@ def load_columns():
     return m
 
 
-def build_items(sample, columns, deriv):
+def _thou(n):
+    return '{:,}'.format(int(n)).replace(',', ' ')      # 3 975 -> 3 975
+
+
+_GERMAN_GLUE = re.compile(r'^\s*von\s+|\s*\bvon\b\s*')
+
+
+def _same_text(a, b):
+    """Do these two renderings say the same thing? German editorial glue («von»
+    = "from") is not content — MG point 8: drop it rather than print the split
+    twice with a German preposition in front of the second copy."""
+    def n(s):
+        s = _GERMAN_GLUE.sub(' ', (s or ''))
+        return re.sub(r'[\s()​]+', '', re.sub(r'<[^>]+>', '', s))
+    return bool(n(a)) and n(a) == n(b)
+
+
+def build_items(sample, columns, deriv, rule_sizes, queue_total):
     items, suppressed_total, card_ev = [], 0, {}
     for r in sample:
         k1 = r['k1']
@@ -347,28 +438,45 @@ def build_items(sample, columns, deriv):
         rule = RULES[r['rule']]
         iast = slp1_iast(k1)
         pwg_i = iast_split(r['pwg_members'])
-        idx_i = iast_split(r['index_members'])
+        idx_i, mw_note = mw_display_split(r['index_members'], r['rule'],
+                                          r.get('mw_k2_raw') or '')
 
         fields, omitted = [], []
 
-        # ---- the claim being ratified
-        q = ['<p class="claim"><b>Правило:</b> %s</p>' % esc(rule['ru']),
-             '<p>%s</p>' % esc(rule['claim'])]
+        # ---- the claim being ratified, with how much of the queue rides on it
+        n_rule = rule_sizes.get(r['rule'], 0)
+        q = ['<p class="claim"><b>Правило:</b> %s '
+             '<span class="stat">— покрывает %s строк очереди (%.1f %% из %s)</span></p>'
+             % (esc(rule['ru']), _thou(n_rule), 100.0 * n_rule / max(1, queue_total),
+                _thou(queue_total)),
+             '<p>%s</p>' % rule['claim']]
 
-        # ---- both sides, IAST, with what each side IS
+        # ---- both sides, IAST, with what each side IS.
+        # The source cell is dropped when it would only repeat the split (MG
+        # point 8: `aṅghri + parṇa   (von aṅghri + parṇa)` says nothing twice).
+        pwg_src = iast_pwg_paren(r.get('pwg_source_paren'))
+        pwg_src_cell = ('<span class="same">= членение</span>'
+                        if _same_text(pwg_src, pwg_i)
+                        else src_cell(r.get('pwg_source_paren'), pwg_src))
+        mw_src = iast_mw_k2(r.get('mw_k2_raw'))
+        mw_src_cell = ('<span class="same">= членение</span>'
+                       if _same_text(mw_src, idx_i)
+                       else src_cell(r.get('mw_k2_raw'), mw_src))
         q.append(
             '<table class="sides"><tr><th></th><th>членение</th><th>что напечатано в словаре</th></tr>'
             '<tr><td><b>PWG</b><br><span class="prov">члены как ЛЕКСЕМЫ, '
             'из этимологической скобки статьи</span></td>'
             '<td class="split">%s</td><td>%s</td></tr>'
-            '<tr><td><b>Указатель</b><br><span class="prov">сегментация MW '
+            '<tr><td><b>MW split</b><br><span class="prov">сегментация MW '
             '&lt;k2&gt; эм-дефисами (Дж. Фундербёрк); по построению склады&shy;вается '
             'обратно в заголовок</span></td>'
             '<td class="split">%s</td><td>%s</td></tr></table>'
-            % (esc(pwg_i),
-               src_cell(r.get('pwg_source_paren'), iast_pwg_paren(r.get('pwg_source_paren'))),
-               esc(idx_i),
-               src_cell(r.get('mw_k2_raw'), iast_mw_k2(r.get('mw_k2_raw')))))
+            % (esc(pwg_i), pwg_src_cell, esc(idx_i), mw_src_cell))
+        if mw_note:
+            q.append('<p class="note">%s</p>' % mw_note)
+        # MG's binary ruling — only where MW actually lists more than two.
+        if len([p for p in (r['index_members'] or '').split('+') if p.strip()]) > 2:
+            q.append('<p class="note">%s</p>' % BINARY_NOTE)
         fields += ['pwg_members', 'index_members']
         if (r.get('pwg_source_paren') or '').strip():
             fields.append('pwg_source_paren')
@@ -416,15 +524,11 @@ def build_items(sample, columns, deriv):
                            'поэтому примера употребления показать нельзя.</span>'))
             omitted.append('частота/цитата DCS: лемма не засвидетельствована в DCS')
 
-        # samasa layer — honest about what does and does not exist
-        panels.append((
-            'Самаса',
-            'Тип сложного слова для этого заголовка <b>не назначен</b>: в '
-            '<a href="%s">SamasaChakram</a> есть таксономия (4 класса / 10 семейств / '
-            '58 подтипов) и 20 разобранных примеров, но пословного соответствия '
-            '«заголовок → подтип» нет ни в одном репозитории. Колесо и метод '
-            'чтения справа налево — по ссылке.' % KOSHA_WHEEL))
-        omitted.append('тип самасы: пословного соответствия заголовок→подтип не существует')
+        # No per-card samasa panel. MG point 4: the type is unassigned for EVERY
+        # headword, so repeating that on 30 cards is 30 copies of one sentence.
+        # It is stated once in the footer, together with what is actually missing.
+        omitted.append('тип самасы: пословного соответствия заголовок→подтип не существует '
+                       '(сказано один раз в подвале, а не на каждой карточке)')
 
         # Panini — only what can exist
         drow = deriv.get((k1, r.get('hom', '')), {})
@@ -462,7 +566,11 @@ def build_items(sample, columns, deriv):
             # dimension separate, labelled and filterable.
             'facets': {'rule': [rule['ru']],
                        'dcs': ['есть' if (f and f != '0') else 'нет']},
-            'badges': [rule['ru']],
+            # No `badges`. MG point 1: the rule name was printed twice — once as a
+            # badge beside the title and again in the «Правило:» line. It stays in
+            # «Правило:» (where it carries its claim and its row count) and in the
+            # facet bar (where it filters); the badge said nothing the other two
+            # did not already say.
             'title': '%s' % iast,
             'title_href': href,
             'question': ''.join(q),
@@ -483,35 +591,80 @@ table.sides td.split{font-size:1.25em;white-space:nowrap}
 .prov{opacity:.65;font-size:.8em;font-weight:400}
 .miss{opacity:.75;font-style:italic}
 .ev code{font-size:.95em}
+.stat{opacity:.7;font-weight:400;font-size:.85em}
+.same{opacity:.55;font-style:italic;font-size:.9em}
+.note{opacity:.9;border-left:3px solid rgba(128,128,160,.5);padding-left:.7em;margin:.5em 0}
+table.stats{border-collapse:collapse;margin:.8em 0;font-size:.85em}
+table.stats th{text-align:left;opacity:.7;font-weight:600;padding:.2em .8em .2em 0}
+table.stats td{padding:.15em .8em .15em 0;border-top:1px solid rgba(128,128,128,.25)}
+table.stats td.num{text-align:right;font-variant-numeric:tabular-nums}
+table.stats tr.tot td{font-weight:700;border-top:2px solid rgba(128,128,128,.5)}
 """
 
 
-def render(sample, columns, deriv, generated=GENERATED):
+def stats_table(rule_sizes, quota, queue_total, resolved_total):
+    """MG point 2 — «Добавь статистику по каждому в голосовании и вообще».
+    One table, up front: what each rule covers and how many cards test it."""
+    rows = ['<table class="stats"><tr><th>Правило</th><th>строк очереди</th>'
+            '<th>доля</th><th>карточек здесь</th></tr>']
+    for k in sorted(RULES, key=lambda x: -rule_sizes.get(x, 0)):
+        n = rule_sizes.get(k, 0)
+        rows.append('<tr><td>%s</td><td class="num">%s</td><td class="num">%.1f %%</td>'
+                    '<td class="num">%d</td></tr>'
+                    % (esc(RULES[k]['ru']), _thou(n),
+                       100.0 * n / max(1, queue_total), quota.get(k, 0)))
+    rows.append('<tr class="tot"><td>Итого</td><td class="num">%s</td>'
+                '<td class="num">%.1f %%</td><td class="num">%d</td></tr>'
+                % (_thou(resolved_total), 100.0 * resolved_total / max(1, queue_total),
+                   sum(quota.values())))
+    rows.append('</table>')
+    return ''.join(rows)
+
+
+def render(sample, columns, deriv, rule_sizes, quota, queue_total, generated=GENERATED):
     from csl_pyutil import render_review_sheet
-    items, suppressed, card_ev = build_items(sample, columns, deriv)
+    items, suppressed, card_ev = build_items(sample, columns, deriv,
+                                             rule_sizes, queue_total)
     n_rules = len({i['filt'] for i in items})
+    resolved = sum(rule_sizes.values())
     config = {
         'sheet_id': SHEET_ID,
         'title': 'Правила членения сложных слов PWG: ратификация',
         'subtitle': (
             '%d карточек, %d правил. Вы решаете НЕ отдельные слова, а <b>правила</b>: '
             'каждое правило уже разобрало целый класс строк очереди <code>differs</code> '
-            '(всего 4&nbsp;246). Приняв правило, вы снимаете весь его класс с '
+            '(всего %s). Приняв правило, вы снимаете весь его класс с '
             'голосования навсегда; отклонив — возвращаете класс в очередь. '
-            'Ратификация всех семи правил снимает <b>3&nbsp;975 строк</b>.'
-            % (len(items), n_rules)),
+            'Ратификация всех %d правил снимает <b>%s строк</b> (%.1f %% очереди).%s'
+            % (len(items), n_rules, _thou(queue_total), n_rules, _thou(resolved),
+               100.0 * resolved / max(1, queue_total),
+               stats_table(rule_sizes, quota, queue_total, resolved))),
         'footer': (
             '<b>Принять</b> = правило на этой карточке работает, членение PWG верно. '
             '<b>Отклонить</b> = правило здесь ломается — выберите, как именно, и '
             'по возможности укажите верное членение в примечании. '
             '<b>Отложить</b> = нужен скан или источник. '
             'Что показано на карточке: оба членения в IAST, исходный текст обоих '
-            'словарей (этимологическая скобка PWG и &lt;k2&gt; MW), частота DCS, '
-            'ссылки на статью и скан. Чего нет — написано прямо на карточке, с причиной.'),
+            'словарей (этимологическая скобка PWG и &lt;k2&gt; MW — если он не '
+            'повторяет членение слово в слово), частота DCS, ссылки на статью и скан. '
+            '<b>Тип самасы не показан ни на одной карточке</b>, и это не пропуск '
+            'конкретной карточки: в <a href="%s">SamasaChakram</a> есть таксономия '
+            '(4 класса / 10 семейств / 58 подтипов) и 20 разобранных примеров, но '
+            'соответствия «заголовок → подтип» нет ни в одном репозитории. Чтобы его '
+            'назначить, нужен классификатор по двум членам и их падежному отношению '
+            '(татпуруша / кармадхарая / бахуврихи / двандва / авьяибхава) — '
+            'отдельная работа, не побочный продукт этого голосования.'
+            % KOSHA_WHEEL),
         'approve_label': 'Правило верно',
         'reject_label': 'Правило ломается',
         'reject_labels': REJECT_LABELS,
-        'filters': [(k, RULES[k]['ru']) for k in sorted(RULES)],
+        # MG point 1: the emitter's filter bar and the facet bar each printed the
+        # same seven rule labels, one above the other. The facet bar wins — it is
+        # the one labelled «Правило» and it composes with the DCS dimension; the
+        # plain filter bar could only ever repeat it. `filters` is a required key
+        # in csl-pyutil 0.7.0, so it is emptied rather than dropped (only the
+        # automatic "all" / "unvoted only" buttons remain, which are not labels).
+        'filters': [],
         'facets': [
             {'key': 'rule', 'label': 'Правило',
              'values': [RULES[k]['ru'] for k in sorted(RULES)]},
@@ -623,7 +776,8 @@ def selftest():
     ids = [r['id'] for r in sample]
     assert len(set(ids)) == len(ids), 'duplicate card id'
     columns, deriv = load_columns(), load_derivation()
-    html, items, suppressed, card_ev = render(sample, columns, deriv)
+    html, items, suppressed, card_ev = render(sample, columns, deriv,
+                                              sizes, quota, len(rows))
     assert len(items) == TARGET
     man, rep = gate(html, items, card_ev)          # raises if it would ship broken
     assert rep['mixed_script'] == [], rep['mixed_script']
@@ -645,7 +799,8 @@ def main():
         rows = load_adjudication()
         sample, quota, sizes = stratified(rows)
         columns, deriv = load_columns(), load_derivation()
-        html, items, suppressed, card_ev = render(sample, columns, deriv)
+        html, items, suppressed, card_ev = render(sample, columns, deriv,
+                                                  sizes, quota, len(rows))
         man, rep = gate(html, items, card_ev)
         os.makedirs(REVIEW_DIR, exist_ok=True)
         with io.open(SHEET_HTML, 'w', encoding='utf-8', newline='\n') as f:
