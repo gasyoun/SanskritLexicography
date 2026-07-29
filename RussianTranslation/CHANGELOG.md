@@ -10,6 +10,33 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — review sheets must reuse what the repo already knows, enforced before write (H1887, 29-07-2026)
+
+MG, voting the 200-card compound-differs sheet: «Я не понимаю, зачем мне
+голосовать». Measured: **191 of its 200 cards already had a machine verdict, a
+named rule and cited evidence** in
+[`research/pwg_compound_differs_adjudication.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_compound_differs_adjudication.tsv)
+(H1681) — computed from the same two input files the sheet itself reads, sharing
+4,246/4,246 row ids — and the sheet rendered none of it. Separately, 69 of the 200
+cards (34.5 %) were not split disagreements at all, and 18 of the 44 cards showing
+a «Пāṇini» line showed a structurally impossible reference.
+
+- **[`src/review_evidence_preflight.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_evidence_preflight.py)**
+  — a gate that runs BEFORE a sheet is written and raises instead of warning.
+  Mechanical prior-art overlap (join it or state why not, per artifact) · evidence
+  floor · Cyrillic/IAST script purity · SLP1 leakage · citation linkability ·
+  structural validity of cited references. Replayed against the sheet MG
+  complained about it returns **12 blocking findings**.
+- **[`src/pilot/build_compound_rule_ratification_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_compound_rule_ratification_sheet.py)**
+  — the replacement ask: **30 cards, not 200**. The human ratifies the seven
+  auto-resolving rules, retiring **3,975 rows**. Every card carries both splits in
+  IAST, both dictionaries' own printed text, the glossed difference, DCS frequency
+  or a stated reason there is none, and 157 links across the sheet.
+- **[`research/REVIEW_SHEET_EVIDENCE_REUSE_H1887.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/REVIEW_SHEET_EVIDENCE_REUSE_H1887.md)**
+  — the full measurement, every one of MG's nine points checked, and why no
+  existing layer caught it (the standard is entirely presentation; the H1628 sheet
+  is fully standard-compliant and still unanswerable).
+
 ## [1.99.0] - 2026-07-29
 
 ### Added — RV multi-translation evidence spine, wave 1a: griffith/stanza/lemma/renou (H1843, 29-07-2026)
