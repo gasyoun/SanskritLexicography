@@ -981,3 +981,57 @@ sidecar so the scan is not re-run on every question. This is the corpus answer t
 | entries with ≥1 marker | 1476 |
 | sense units with ≥1 marker | 3222 |
 
+## 29-07-2026 — RV multi-translation evidence layer, wave 1b (H1844)
+
+Context: [H1844](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1844-Opus_RussianTranslation_rv-multitranslation-typing-w1b_29.07.26.md) — divergence taxonomy, advisory word-level layer B, and the pwg_ru/en pipeline wiring, over the wave-1a spine. Orchestration and adjudication: **Opus 5 (`claude-opus-5[1m]`)**. Divergence typing generator: **`deepseek-chat`** (DeepSeek V3, OpenAI-compatible endpoint). Alignment models: **`bert-base-multilingual-cased`** (committed default) and **`sentence-transformers/LaBSE`**, both via the committed `tm_align.embed_aligner_factory`.
+
+### Divergence-class distribution — pilot, 2,000 stanzas × 6 translator pairs
+
+12,000 labels, of which 11,997 model-decided and 3 deterministic. Cost **$1.0582** (849,276 cache-miss + 1,033,344 cache-hit input, 687,741 output tokens).
+
+| Class | Pilot n=12,000 | Spike n=300 |
+|---|--:|--:|
+| `agreement` | 37.2 % (4,462) | 37.7 % |
+| `semantic_shift` | 54.4 % (6,533) | 62.0 % |
+| `lexical_variant` | 6.0 % (719) | 0.3 % |
+| `omitted_by_one` | 2.4 % (286) | 0.0 % |
+| `added_by_one` | **0.0 % (0)** | 0.0 % |
+| coarse: agreement / divergence / omission | 37.2 % / 60.4 % / 2.4 % | 37.7 % / 62.3 % / 0.0 % |
+
+The spike/pilot column split is itself the result: a 300-observation spike read `lexical_variant` as dead (1 label) when its rate at scale is 6.0 %. `added_by_one` is inert at both scales — 0 of 12,000 — which is implausible against Griffith's freely supplied material and is flagged as a prompt/taxonomy defect, not a fact about the corpus.
+
+### Layer-B word-level precision — 300-token gold, 69 adjudicated
+
+Bar: ≥ 85 % per target language (R14). Annotator Opus 5 (`claude-opus-5[1m]`); sample frequency-stratified, seed 1844.
+
+| Target | n | Correct | Precision | Verdict |
+|---|--:|--:|--:|---|
+| de | 24 | 7 | 29.2 % | **FAIL** |
+| ru | 26 | 5 | 19.2 % | **FAIL** |
+| en | 19 | 2 | 10.5 % | **FAIL** |
+
+All three below the bar ⇒ **stop condition 3**: spine A ships alone, layer B ships flagged `low_confidence` and excluded from the contradiction gate, the 0.20 gate is not re-tuned, and the ~8.8 h full-scale run is **not** executed.
+
+### Layer-B alignment run — 150 stanzas per model arm
+
+| Metric | `bert-base-multilingual-cased` | `sentence-transformers/LaBSE` |
+|---|--:|--:|
+| Candidate token→span alignments | 9,400 | 9,400 |
+| Dropped by the 0.20 ALIGN_GATE | **0** | **0** |
+| Mutual-argmax confirmed | 30.2 % | 28.6 % |
+| Modal confidence bucket | [0.5,0.6) — 6,016 | [0.5,0.6) — 6,462 |
+| Throughput | 3.03 s/stanza | 2.83 s/stanza |
+
+A gate that rejects 0 of 9,400 is not a gate: the H1457 A3 threshold (calibrated on 30 mined rows with one negative) carries no discriminative power on Vedic. Swapping the alignment model reproduces the signature rather than fixing it, so the failure is a property of subword-embedding alignment on transliterated Vedic, not of one checkpoint (risk K1/K2 landing as predicted). Full-scale extrapolation: 10,552 stanzas ≈ **8.8 h**, not the 52 h a cold-start probe suggested.
+
+### wisdomlib, four roles (R11) — coverage
+
+| Role | Status | Rows |
+|---|---|--:|
+| 1 · EN gloss tier | not populated — no gloss text on disk | 0 |
+| 2 · tradition disambiguation | zero overlap — Buddhist probe set vs RV lemmas | 0 |
+| 3 · fifth gate witness | not populated — same missing gloss text | 0 |
+| 4 · AV citation locus | staged — no AV data, wave-1 non-goal (R3) | 0 |
+
+`word_traditions.jsonl` holds 63 Vajrayāna Buddhist terms against the RV's 9,539 lemmas; the join key was verified sound in both directions (`agni`→`agní-`, `indra`→`índra-`), so the empty intersection is correct. **W1.13 cannot be met as written** — recorded rather than asserted away.
+

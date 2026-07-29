@@ -1896,6 +1896,25 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/bounded_staged_run.py": "e7e60839425b324de940a1913e1983f9d21807d4a906500dea018224d7dff7ee",
       "src/pilot/cohort_engine.py": "81bd38b495034d3da5b0ebc2afc2de500f38066f626b8e0fc8254d5acd53881a"
     }
+  },
+  {
+    "id": "rv_corpus_translation_witness_tm_tier",
+    "mechanism": "H1844 W1.12: the Rigveda multi-translation evidence layer adds a new TM tier -- trust_level \"corpus_translation_witness\" with reuse_policy \"suggest_only\" -- supplying candidate glosses from four scholarly RV translations (Grassmann 1876-77 de, Geldner 1951-57 de, Elizarenkova 1989-99 ru, Griffith 1896 en), with per-translator source priors keyed by work.",
+    "files": [
+      "schemas/translation_memory.schema.json",
+      "src/tm_source_weights.json"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "SHARED by construction, and verified as such rather than assumed (ruling R7 asks for a tier that is \"not for Russian only\"). Two facts make it configuration rather than code: `lang` in translation_memory.schema.json is already an enum over [ru, en] and the new trust_level sits beside the existing four with no lang branch anywhere near it; and tm_source_weights.json is keyed BY WORK, not by language, so the four per-translator rows added here (rigveda-{grassmann-de-1876, geldner-de-1951, elizarenkova-ru-1989, griffith-en-1896}) are reachable from any target language that consults the weights. Concretely the tier already serves EN today: griffith-en-1896 is an English witness carrying its own prior, so the EN path is not a promise but a populated row. A third target language is therefore a new `lang` enum member plus a weights row -- not a rewrite, which is the structural property this ledger entry exists to pin. Scope note: this entry covers the TM TIER only. Layer B (rv_wordlevel_align.py) failed its R14 precision bar on all three languages equally (de 29.2%, ru 19.2%, en 10.5%) and is excluded from the contradiction gate for ALL languages, so its failure is symmetric and creates no parity gap.",
+    "tracking": "",
+    "verified_sha256": {
+      "schemas/translation_memory.schema.json": "323e83381b73900d269aaca28f0ed4db2da82d1047c57f94f6cb2f2204c88701",
+      "src/tm_source_weights.json": "911e7ef7ae8d491fe86bee6f144b4aab4362cc9cb2331c3b47777bffd2916665"
+    }
   }
 ]
 ```
