@@ -1,0 +1,59 @@
+{
+ "schema": "pwg.h1210_coverage_gap.v1",
+ "arm_a_attempted": 87,
+ "arm_b_attempted": 100,
+ "n_selected": 100,
+ "rows": [
+  {
+   "stratum": "Q1 (28-176 B)",
+   "n_selected": 22,
+   "arm_a_attempted": 22,
+   "arm_b_attempted": 22,
+   "arm_a_missing": []
+  },
+  {
+   "stratum": "Q2 (180-526 B)",
+   "n_selected": 23,
+   "arm_a_attempted": 22,
+   "arm_b_attempted": 23,
+   "arm_a_missing": [
+    "tip"
+   ]
+  },
+  {
+   "stratum": "Q3 (670-4349 B)",
+   "n_selected": 22,
+   "arm_a_attempted": 19,
+   "arm_b_attempted": 22,
+   "arm_a_missing": [
+    "sa_b_ajay",
+    "vi_d",
+    "ras"
+   ]
+  },
+  {
+   "stratum": "Q4 (4553-11974 B)",
+   "n_selected": 23,
+   "arm_a_attempted": 14,
+   "arm_b_attempted": 23,
+   "arm_a_missing": [
+    "j_u",
+    "jalp",
+    "nanda",
+    "va_yc",
+    "g_ora",
+    "akza",
+    "_s_a",
+    "las",
+    "k_a_s"
+   ]
+  },
+  {
+   "stratum": "no_pwg (no byte size)",
+   "n_selected": 10,
+   "arm_a_attempted": 10,
+   "arm_b_attempted": 10,
+   "arm_a_missing": []
+  }
+ ]
+}

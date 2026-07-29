@@ -1,0 +1,351 @@
+{
+ "schema": "pwg.h1210_arm_telemetry.v1",
+ "arm": "A_claude_native",
+ "model": "workers claude-sonnet-5 / controller claude-opus-4-8",
+ "cards": 87,
+ "chunks": [
+  {
+   "agentCount": 130,
+   "totalTokens": 7306070,
+   "totalToolCalls": 195,
+   "chunk": "chunk01",
+   "cards": 54,
+   "roles": {
+    "worker": {
+     "agents": 76,
+     "tokens": 4748038,
+     "errors": 2,
+     "duration_ms": 7814879
+    },
+    "controller": {
+     "agents": 54,
+     "tokens": 2558032,
+     "errors": 0,
+     "duration_ms": 2964172
+    }
+   },
+   "agents_error": 2,
+   "worker_latency_ms": [
+    16722,
+    21983,
+    21986,
+    26621,
+    29237,
+    29695,
+    32358,
+    32364,
+    32495,
+    32915,
+    33125,
+    34548,
+    36821,
+    36847,
+    38595,
+    38992,
+    40029,
+    42520,
+    43751,
+    44374,
+    44485,
+    44966,
+    49660,
+    49977,
+    50816,
+    51931,
+    51998,
+    54097,
+    54378,
+    55797,
+    56243,
+    59524,
+    60951,
+    65768,
+    66344,
+    66771,
+    66885,
+    70246,
+    77565,
+    77832,
+    82087,
+    83856,
+    84862,
+    85949,
+    89618,
+    92087,
+    92513,
+    92653,
+    95787,
+    97510,
+    99967,
+    107233,
+    111986,
+    116144,
+    122148,
+    127074,
+    128929,
+    129458,
+    130800,
+    146083,
+    148465,
+    157769,
+    178490,
+    185566,
+    190049,
+    192125,
+    233596,
+    235625,
+    246960,
+    269739,
+    283147,
+    291272,
+    303593,
+    305904,
+    306537,
+    327086
+   ],
+   "durationMs": 2108289
+  },
+  {
+   "agentCount": 19,
+   "totalTokens": 1520075,
+   "totalToolCalls": 29,
+   "chunk": "chunk02",
+   "cards": 5,
+   "roles": {
+    "worker": {
+     "agents": 12,
+     "tokens": 1160171,
+     "errors": 1,
+     "duration_ms": 2799952
+    },
+    "controller": {
+     "agents": 7,
+     "tokens": 359904,
+     "errors": 0,
+     "duration_ms": 439033
+    }
+   },
+   "agents_error": 1,
+   "worker_latency_ms": [
+    54661,
+    148102,
+    173926,
+    193144,
+    212421,
+    221650,
+    290649,
+    298315,
+    303556,
+    386111,
+    517417
+   ],
+   "durationMs": 1278443
+  },
+  {
+   "agentCount": 11,
+   "totalTokens": 1258198,
+   "totalToolCalls": 18,
+   "chunk": "chunk03",
+   "cards": 3,
+   "roles": {
+    "worker": {
+     "agents": 9,
+     "tokens": 1090883,
+     "errors": 1,
+     "duration_ms": 4004141
+    },
+    "controller": {
+     "agents": 2,
+     "tokens": 167315,
+     "errors": 0,
+     "duration_ms": 751526
+    }
+   },
+   "agents_error": 1,
+   "worker_latency_ms": [
+    218673,
+    239781,
+    328284,
+    437102,
+    443511,
+    487379,
+    505636,
+    1343775
+   ],
+   "durationMs": 1852227
+  },
+  {
+   "agentCount": 11,
+   "totalTokens": 1323647,
+   "totalToolCalls": 14,
+   "chunk": "chunk04",
+   "cards": 3,
+   "roles": {
+    "worker": {
+     "agents": 9,
+     "tokens": 1204800,
+     "errors": 2,
+     "duration_ms": 6466486
+    },
+    "controller": {
+     "agents": 2,
+     "tokens": 118847,
+     "errors": 0,
+     "duration_ms": 115607
+    }
+   },
+   "agents_error": 2,
+   "worker_latency_ms": [
+    293009,
+    355972,
+    399048,
+    421525,
+    439426,
+    463861,
+    569829,
+    1706675,
+    1817141
+   ],
+   "durationMs": 1885088
+  },
+  {
+   "agentCount": 5,
+   "totalTokens": 502112,
+   "totalToolCalls": 4,
+   "chunk": "chunk05",
+   "cards": 2,
+   "roles": {
+    "worker": {
+     "agents": 4,
+     "tokens": 444489,
+     "errors": 2,
+     "duration_ms": 1280173
+    },
+    "controller": {
+     "agents": 1,
+     "tokens": 57623,
+     "errors": 0,
+     "duration_ms": 46382
+    }
+   },
+   "agents_error": 2,
+   "worker_latency_ms": [
+    250669,
+    281486,
+    313233,
+    434785
+   ],
+   "durationMs": 846038
+  },
+  {
+   "agentCount": 50,
+   "totalTokens": 3219058,
+   "totalToolCalls": 116,
+   "chunk": "chunk07",
+   "cards": 15,
+   "roles": {
+    "worker": {
+     "agents": 31,
+     "tokens": 2232001,
+     "errors": 0,
+     "duration_ms": 3128428
+    },
+    "controller": {
+     "agents": 19,
+     "tokens": 987057,
+     "errors": 1,
+     "duration_ms": 1388936
+    }
+   },
+   "agents_error": 1,
+   "worker_latency_ms": [
+    17015,
+    17081,
+    21442,
+    25008,
+    27174,
+    30146,
+    31609,
+    32131,
+    40854,
+    42971,
+    52772,
+    55013,
+    60353,
+    60901,
+    66022,
+    79512,
+    88956,
+    113920,
+    114054,
+    119200,
+    124332,
+    126498,
+    130711,
+    138064,
+    149411,
+    170286,
+    217826,
+    218342,
+    223470,
+    258086,
+    275268
+   ],
+   "durationMs": 962064
+  },
+  {
+   "agentCount": 20,
+   "totalTokens": 1410766,
+   "totalToolCalls": 54,
+   "chunk": "chunk10",
+   "cards": 5,
+   "roles": {
+    "worker": {
+     "agents": 11,
+     "tokens": 938925,
+     "errors": 0,
+     "duration_ms": 1620442
+    },
+    "controller": {
+     "agents": 9,
+     "tokens": 471841,
+     "errors": 0,
+     "duration_ms": 754021
+    }
+   },
+   "agents_error": 0,
+   "worker_latency_ms": [
+    92394,
+    95502,
+    98446,
+    119638,
+    138300,
+    140099,
+    153582,
+    160604,
+    165034,
+    218749,
+    238094
+   ],
+   "durationMs": 693089
+  }
+ ],
+ "agents_total": 246,
+ "agents_error": 9,
+ "tokens": {
+  "subagent_tokens": 16539926,
+  "worker_tokens": 11819307,
+  "controller_tokens": 4720619
+ },
+ "controller_token_share_pct": 28.5,
+ "wall_clock_s": 9625.2,
+ "wall_clock_note": "sum of per-chunk Workflow durations; chunks partly overlapped, so this is agent-time, not calendar time",
+ "cost": {},
+ "usd_note": "subscription lane (Workflow agent() on the session plan) — no per-call USD is exposed, so $/clean is reported as n/a rather than guessed; token counts are the comparable quantity",
+ "latency_s_per_card_median": 114.1,
+ "worker_latency_s": {
+  "min": 16.7,
+  "p90": 386.1,
+  "max": 1817.1
+ }
+}

@@ -1,8 +1,48 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 26-07-2026_
+_Created: 09-07-2026 · Last updated: 29-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 29-07-2026 — H1210: DeepSeek vs Claude-native on 100 stratified PWG cards
+
+Runs 28-07-2026, report 29-07-2026. Controller in **both** arms Opus 4.8
+(`claude-opus-4-8`); arm-A workers Sonnet 5 (`claude-sonnet-5`); arm-B generator
+`deepseek-chat`. Report, coverage audit and blind sheet: Opus 5 1M (`claude-opus-5[1m]`).
+Full method, limitations and what the numbers do *not* support:
+[pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md).
+Both arms promote-DRY; nothing entered the store.
+
+**Read the coverage row before the clean rates.** Arm A completed 87 of 100 cards — three
+size-bounded chunks never ran — and because chunks pack by BYTES the gap is a contiguous
+band, not a random 13: 9 of the 13 fall in Q4, and **all ten S4 verb-root cards are missing**.
+The two headline percentages are therefore *not* a head-to-head; the quartile table is.
+
+| metric | arm A — Claude-native | arm B — DeepSeek + same controller |
+|---|---|---|
+| cards attempted | 87/100 (S4 verb roots: 0/10) | 100/100 |
+| audit-clean % (canonical promote-DRY) | 95.4% (83/87) — not comparable, see above | 78.0% (78/100) |
+| **Q1 28–176 B / Q2 180–526 B** | **100% (22/22) / 100% (22/22)** | **95% (21/22) / 91% (21/23)** |
+| **Q3 670–4349 B / Q4 4553–11974 B** | **89% (17/19) / 93% (13/14)** | **86% (19/22) / 35% (8/23)** |
+| defect-culprit stratum S2 | 11/12 | 3/15 |
+| NULL-CARD / worker-null-death | 0 / 5 | 9 / 13 |
+| calls per clean card (controller share) | 2.96 (38.2%) | 2.55 (25.1%) |
+| escalated to review-sheet | 12 (13.8%) | 15 (15.0%) |
+| generation USD → per clean card | n/a (subscription lane); 16.54 M subagent tokens | **$0.7255 → $0.0093** |
+| wall clock | 9,625 s (median 114 s/card) | 1,255 s |
+
+The two arms are a wash below ~4.5 kB and diverge sharply above it — a single averaged
+percentage over a length-stratified sample is a weighted artifact of the selection rule, not
+a quality delta. Arm B's $ figure is **generation only** (its controller runs on the same
+subscription lane, uncosted), and the 7.7× wall-clock difference is lane latency (Workflow
+agent harness vs a direct HTTP loop), not model latency.
+
+Generator-independent findings from the same run: the rig's self-report **understates**
+audited cleanliness in both arms (70 vs 83; 72 vs 78 — H1209 v1 saw it overstate, so the
+canonical audit is the verdict either way), and the complexity trigger false-flags 77.8%
+(A) / 63.2% (B) of the cards it escalates. Blind 40-item human vote (20/arm, unlabelled) is
+generated and pending a reviewer; verdicts are the top quality layer and can still move the
+conclusion.
 
 ## 26-07-2026 - H1681 follow-up: the compound-`differs` blind arm re-cut, deduped and BOUND
 

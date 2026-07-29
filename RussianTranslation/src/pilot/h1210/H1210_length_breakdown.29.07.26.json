@@ -1,0 +1,50 @@
+{
+ "schema": "pwg.h1210_length_breakdown.v1",
+ "rows": [
+  {
+   "stratum": "Q1 (28–176 B)",
+   "lo": 28,
+   "hi": 176,
+   "arm_a_clean": 22,
+   "arm_a_n": 22,
+   "arm_b_clean": 21,
+   "arm_b_n": 22
+  },
+  {
+   "stratum": "Q2 (180–526 B)",
+   "lo": 180,
+   "hi": 526,
+   "arm_a_clean": 22,
+   "arm_a_n": 22,
+   "arm_b_clean": 21,
+   "arm_b_n": 23
+  },
+  {
+   "stratum": "Q3 (670–4349 B)",
+   "lo": 670,
+   "hi": 4349,
+   "arm_a_clean": 17,
+   "arm_a_n": 19,
+   "arm_b_clean": 19,
+   "arm_b_n": 22
+  },
+  {
+   "stratum": "Q4 (4553–11974 B)",
+   "lo": 4553,
+   "hi": 11974,
+   "arm_a_clean": 13,
+   "arm_a_n": 14,
+   "arm_b_clean": 8,
+   "arm_b_n": 23
+  },
+  {
+   "stratum": "no_pwg",
+   "lo": null,
+   "hi": null,
+   "arm_a_clean": 9,
+   "arm_a_n": 10,
+   "arm_b_clean": 9,
+   "arm_b_n": 10
+  }
+ ]
+}

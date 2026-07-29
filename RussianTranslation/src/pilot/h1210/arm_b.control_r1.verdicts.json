@@ -1,0 +1,359 @@
+{
+ "arm": "B_deepseek",
+ "round": 1,
+ "verdicts": [
+  {
+   "key1": "harinma_ri",
+   "verdict": {
+    "ok": true,
+    "issues": [],
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "pari_b_ava",
+   "verdict": {
+    "ok": true,
+    "severity": "minor",
+    "issues": [
+     "Sense 3 (tag 1): German {%Geringachtung%} is rendered as bare 'пренебрежение' — meaning faithful, register correct, but the {%...%} italic-markup wrapper is dropped, unlike {%paribhāva%}/{%paribhāvanā%} in the fourth sense where it is preserved. Non-blocking: confirm whether translated glosses are meant to shed {%...%} (then correct as-is) or retain it (then {%пренебрежение%})."
+    ]
+   }
+  },
+  {
+   "key1": "_badramusta",
+   "verdict": {
+    "ok": true,
+    "issues": [],
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "prajas",
+   "verdict": {
+    "issues": [],
+    "ok": true,
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "sara_g_a",
+   "verdict": {
+    "issues": [
+     "Sense tag \"1\" (\"{T25} 1〉 {T3} {T4}. ...\"): the Russian inserts \"то же, что\" before {T3}, with no counterpart in the German, which there contains only the sense number and masked spans. If {T3} masks \"s. v. a.\", the restored line duplicates the gloss (\"s. v. a. то же, что …\"); otherwise the phrase is invented. Fix: \"{T25} 1〉 {T3} {T4}. {T5}. {T6}. {T7}. {T8}. {T9}. {T10}.\"",
+     "Sense tag \"3\" (\"{T12} der Gattin {T13}ʼs und Mutter {T14}ʼs {T15}.\"): the Russian adds \"имя собств.\", which stands nowhere in the German outside masked {T12} — an unmasking/duplication of what {T12} carries (presumably N. pr.). Internally inconsistent with the parallel sense tag \"4\" (\"{T22} der Gattin {T23}ʼs.\" → \"{T22} жены {T23}.\"), which correctly adds nothing. Fix: \"{T12} жены {T13} и матери {T14} {T15}.\""
+    ],
+    "ok": false,
+    "severity": "minor"
+   }
+  },
+  {
+   "key1": "v_avad_uka",
+   "verdict": {
+    "issues": [],
+    "ok": true,
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "vfd_damanu",
+   "verdict": {
+    "ok": true,
+    "issues": [],
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "vya_sana",
+   "verdict": {
+    "ok": true,
+    "severity": "minor",
+    "issues": [
+     "Sense 3 ({T33}2.{T34}): German \"nach der Lesart der neueren {T18}\" rendered \"по чтению новейшего {T18}\" — comparative \"neueren\" (more recent) shifted to superlative singular \"новейшего\"; suggest \"по чтению более новых {T18}\" with agreement matching the masked source token. Non-blocking. Everything else checks out: all {Tn} in each German string appear in the Russian with none invented or dropped, no meanings merged or omitted, the {%sich des Essens enthaltend%} span is faithfully rendered \"воздерживающийся от еды\" in both senses 3 and 5, and the register is scholarly-philological throughout."
+    ]
+   }
+  },
+  {
+   "key1": "dar_imu_ka",
+   "verdict": {
+    "ok": true,
+    "severity": "minor",
+    "issues": [
+     "ADVISORY (non-blocking, not a fidelity defect): the German gloss delimiters {%...%} are dropped in every Russian rendering (1a, 1b, 1c, 2, PW1a, PW1b, PW1c). The stripping is uniform across all senses, so it reads as an intentional pipeline convention (the {%...%} span is exactly what gets translated), but if downstream consumers expect the italic/gloss markers to survive into the RU column, they are absent."
+    ]
+   }
+  },
+  {
+   "key1": "dr_ava_ra",
+   "verdict": {
+    "ok": false,
+    "severity": "minor",
+    "issues": [
+     "Senses tag 1, 2a (first block) and tag 1, 2a (second block): German has TWO distinct glosses — 'zum Laufen bringend' (causative of dru: 'заставляющий бежать / приводящий в движение') and 'in die Flucht jagend/schlagend' ('обращающий в бегство'). The Russian renders both as put-to-flight synonyms ('приводящий в бегство, обращающий в бегство'), dropping the first meaning and producing a tautological pair. Same in the nominal forms: 'das zum-Laufen-Bringen, in-die-Flucht-Jagen' -> 'приведение в бегство, обращение в бегство'; expected 'побуждение к бегу / приведение в движение, обращение в бегство'.",
+     "Sense tag 2b ('2〉b〉 so {T15} {%das Weichmachen, Rühren%}'): German 'so {T15}' is the PW formula 'so [liest/hat] {T15}' — that source reads thus. Russian 'то же, что {T15}' ('same as {T15}') turns a reading-attestation into an invented cross-reference equivalence; expected 'так {T15}' / 'так читает {T15}'."
+    ]
+   }
+  },
+  {
+   "key1": "nizkula",
+   "verdict": {
+    "issues": [],
+    "ok": true,
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "vi_sa",
+   "verdict": {
+    "issues": [],
+    "ok": true,
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "vi_svaha",
+   "verdict": {
+    "issues": [],
+    "ok": true,
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "ya_tepsita",
+   "verdict": {
+    "issues": [],
+    "ok": true,
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "a_ngaja",
+   "verdict": {
+    "issues": [],
+    "ok": true,
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "kakz_ivant",
+   "verdict": {
+    "ok": false,
+    "severity": "minor",
+    "issues": [
+     "Sense 1 (tag 1), final clause: the italic German gloss inside the {%...%} spans is left untranslated — \"{T35} {%die Angehörigen%} или {%Abkömmlinge des%} {T36} {T37}\". These spans are German prose carrying the actual meaning of the patronymic sense (not masked Sanskrit like {%kakṣī́vant%} in another sense), so the Russian drops that meaning. Fix: {%принадлежащие к%} или {%потомки%} {T36} {T37}, keeping the {%...%} wrappers and span count unchanged."
+    ]
+   }
+  },
+  {
+   "key1": "par_rin",
+   "verdict": {
+    "issues": [],
+    "ok": true,
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "roza",
+   "verdict": {
+    "ok": true,
+    "issues": [],
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "sa_msargin",
+   "verdict": {
+    "ok": true,
+    "severity": "minor",
+    "issues": [
+     "Sense tag 2 ({T41}— 2〉): German \"{%theilhaftig, im Besitz seinend von%}\" carries an explicit government marker (\"von\"), dropped in Russian \"{%причастный, обладающий%}\". The parallel sense ({T40}— 1〉) did preserve its marker (\"— mit%\" → \"— с%\"), so this is an inconsistency; suggest \"{%причастный, обладающий — чем%}\". No meaning invented, dropped or merged elsewhere; all {Tn} placeholders match the German one-for-one in every sense."
+    ]
+   }
+  },
+  {
+   "key1": "vyatyaya",
+   "verdict": {
+    "issues": [],
+    "ok": true,
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "anar_ta",
+   "verdict": {
+    "ok": true,
+    "issues": [
+     "Sense {T87} (1. anarta 2〉): German {%sich auf Unheil verstehend%} ('versed in / knowing how to work mischief') is rendered «sведущий в беде», which reads as 'knowledgeable about misfortune' rather than 'skilled at causing harm'; the parallel gloss immediately after ({%Unheil zu stiften verstehend%} → «умеющий причинять беду») shows the intended active nuance. Suggested: «сведущий в причинении вреда» / «искушённый во зле». Minor nuance shift only — no sense dropped, merged, or invented."
+    ],
+    "severity": "minor"
+   }
+  },
+  {
+   "key1": "ml_a",
+   "verdict": {
+    "issues": [
+     "Sense 9 / PW 14.2: German \"um sein Ansehen gekommen\" (paired with \"verwelkt\") is rendered \"потерявший свое достоинство\". In this entry Ansehen elsewhere is consistently taken as physical appearance (PW 7bβ \"ein leidendes, verstelltes Ansehen habend\" → \"имеющий страдальческий, искаженный вид\"; sense 1 \"ein welkes ... Ansehen erhält\" → \"получает вялый ... вид\"). The pun on withering favours \"утративший свой (прежний) вид\" / \"потерявший привлекательный вид\"; \"достоинство\" narrows it to social standing and breaks internal consistency. Minor, not a hard defect."
+    ],
+    "ok": true,
+    "severity": "minor"
+   }
+  },
+  {
+   "key1": "p_avana",
+   "verdict": {
+    "ok": false,
+    "severity": "major",
+    "issues": [
+     "Sense 4a (both occurrences: tag '4a' with {T217} and with {T249} context): German '{%um diese Schuld zu reinigen%}' rendered '{%чтобы очистить этот долг%}'. In a purificatory context Schuld = guilt/sin, not monetary debt. Render e.g. 'чтобы очиститься от этой вины' / 'чтобы искупить эту вину'.",
+     "Sense 4b ({T218}): German '{%Reinigungsmittel, Läuterungsmittel%}' rendered '{%Очистительное средство, очистительное средство%}' — the identical phrase twice. The second German term (Läuterungsmittel = means of refining/purifying) is not distinguished; supply a distinct equivalent, e.g. 'очистительное средство, средство очищения/рафинирования'.",
+     "Sense 4a (both occurrences): 'das Reinigen, Läutern, Heiligen' rendered 'Очищение, очистительный обряд, освящение'. 'Läutern' = refining/purifying, not a rite; 'очистительный обряд' invents a ritual meaning absent from the German. Use e.g. 'очищение, очистка/просветление, освящение'.",
+     "Sense 1 (both occurrences, after {T5} and after {T151}): 'reinigend, entsündigend, heiligend' → 'очищающий, очистительный, освящающий'. 'entsündigend' (freeing from sin) is flattened into 'очистительный', which merely restates 'очищающий' and drops the sin-specific sense; render e.g. 'снимающий грех / избавляющий от греха'.",
+     "Sense IV.5 (both masked occurrences, {T180} and {T196}): German has two separate gloss spans '{%von Wind%} ({T183}) {%lebend%}', but the Russian moves the whole predicate into the first span ('{%живущий ветром%}') and then repeats '{%живущий%}' in the second. Content is displaced across spans and duplicated; the first span should be 'ветром'/'от ветра', the second 'живущий' (the unmasked variant with the single span 'живущий ветром (pavana)' is correct)."
+    ]
+   }
+  },
+  {
+   "key1": "v_ajin",
+   "verdict": {
+    "ok": false,
+    "severity": "major",
+    "issues": [
+     "Large-scale untranslated German prose left verbatim in the Russian column. The Russian is in many senses a copy of the German with only the {%...%} glosses swapped, while the connective/explanatory scholarly prose (which carries real lexicographic content: attribution, textual-critical remarks, semantic notes) was never rendered. This is dropped meaning, not style.",
+     "Sense 1: untranslated spans 'die Sonne als {%Ross%}', '(nach {T41}; ...)', 'des {T33} {T34}', 'Später', '(wo mit der neueren {T75} {T76} zu lesen ist)', 'Wie alle Worte für {%Pferd%}'. Required RU: 'солнце как {%конь%}', 'по {T41}', 'позднее', '(где вместе с более новым {T75} следует читать {T76})', 'как все слова для {%коня%}'.",
+     "Sense 1: the gloss {%der Zahl sieben%} is left in German, although the very same gloss IS translated in PW2c as {%числа семь%} — internal inconsistency confirming this is an omission rather than a deliberate policy. Same for {%Pferd%} (translated elsewhere as 'лошадь').",
+     "Sense 2: 'mit dem {%beutemachenden Krieger%} verglichen' untranslated (the RU translates only {%игральная кость%} and leaves the comparison clause plus its gloss in German). Required: '...сравнивается с {%воином, захватывающим добычу%}'.",
+     "Sense 3: the textual-critical parenthesis '(so {T163} und {T164}-{T165}, {T166} und {T167} lesen {T168})' is left in German; 'lesen' ('читают') is a load-bearing verb here.",
+     "Sense 4: the gloss '{%ein {T181} Vogel%}' is left untranslated inside the italic-gloss markers (should be '{%некая {T181} птица%}' / 'птица {T181}'), while the neighbouring glosses were translated.",
+     "Sense 6: nearly the whole scholarly discussion is untranslated — 'nach {T197} zu {T198}', 'wobei er auf {T199} sich zu beziehen scheint; nach {T200}', 'Es sind aber {%die Rosse%} oder {T204} {%Gespanne der Götter%} zu verstehen', 'Oefters auf die {T214} bezogen', '(der Vers {T221})'. Only the head gloss {%скакун%} and 'божественных существ' were rendered.",
+     "Sense 7: 'so genannt, weil die Sonne als {%Ross%} dem {T229} die {T230} offenbarte' and the connector '_bei_' left in German; this etymological explanation is the substance of the sense.",
+     "Sense 8: 'nach {T239}' and 'im {T240}' left in German ('по {T239}', 'в {T240}').",
+     "PW2gα: 'nach {T272}', the gloss {%und%}, 'Gemeint sind aber {%die [Page6-057-b] Rosse%} — oder {T276} {%Gespanne der Götter%}.' and 'Name eines {T278}.' all untranslated.",
+     "PW2gβ: 'so genannt, weil der Sonnengott als {%Ross%} dem {T280} die {T281} offenbarte' untranslated — the parallel to sense 7, with the same omission.",
+     "Sense 2 gloss {%reisig%} rendered as {%верхом%} (adverb, 'on horseback'). The German is an adjective meaning 'конный, верховой' (of a mounted warrior); an adverbial rendering breaks the adjectival gloss series of this entry. Substitute {%конный%}."
+    ]
+   }
+  },
+  {
+   "key1": "vazawk_ara",
+   "verdict": {
+    "ok": true,
+    "issues": [],
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "vel_a",
+   "verdict": null
+  },
+  {
+   "key1": "purast_at",
+   "verdict": {
+    "ok": false,
+    "severity": "minor",
+    "issues": [
+     "Sense \"PW 1\", subsense 2〉b〉: German meta-label \"{%vor%} (zeitlich)\" is rendered \"{%перед%} (временно)\". Russian «временно» means \"temporarily\", not \"temporally / in the temporal sense\" — it misstates the grammatical note (its sibling 2〉a〉 \"(räumlich)\" → «пространственно» is correct). Fix to «(во временном значении)» or «(о времени)»; for parity 2〉a〉 may read «(о месте)» / «(в пространственном значении)».",
+     "Sense \"PW 1\", subsense 1〉e〉: German \"(als die Krieger)\" is rendered \"(чем кшатрии)\". \"Krieger\" = warriors; substituting the varṇa term «кшатрии» imports a specific technical identification not present in Böhtlingk's German. Use «(чем воины)» to stay faithful."
+    ]
+   }
+  },
+  {
+   "key1": "pf_tak",
+   "verdict": null
+  },
+  {
+   "key1": "hanta",
+   "verdict": {
+    "ok": false,
+    "severity": "minor",
+    "issues": [
+     "Sense 1: \"Einfluss auf den Ton des verbi finiti\" is rendered as \"влияние на тон глагола\" — the Latin technical specification *verbi finiti* (the FINITE verb) is dropped, widening the claim from the finite verb to any verb. Restore the scope, e.g. \"влияние на ударение (тон) verbi finiti\" / \"...личной формы глагола\". Note also that in PWG's accentual terminology 'Ton' is the word-accent (ударение), so \"тон\" alone risks a phonetic-pitch misreading.",
+     "Sense 1: \"(so {T134} {T135} zu lesen {T136})\" → \"(так {T134} {T135} читать {T136})\" — the German 'zu lesen' is deontic ('is to be read / should be read'); the bare Russian infinitive loses that modality. Use \"(так следует читать {T134} {T135} ... {T136})\" or \"...надлежит читать...\"."
+    ]
+   }
+  },
+  {
+   "key1": "sva_b_ava",
+   "verdict": {
+    "ok": false,
+    "severity": "minor",
+    "issues": [
+     "Sense 1, structural note mistranslated: German \"am {T114} eines {T115} in dieser {T116}:\" is rendered \"у {T114} одного {T115} в этом {T116}:\". Two errors: (a) \"am\" (= \"am Anfang/Ende\", a position-in-compound note) becomes \"у\" (\"at/with\"), losing the positional sense; (b) the genitive article \"eines\" is read as the numeral \"one\" and rendered \"одного\", inventing a quantity not in the German. The parallel construction later in the same sense — \"Am Ende eines {T184}\" → \"В конце {T184}\" — shows the correct handling (positional preposition + no article), so this earlier instance is inconsistent with the translation's own practice. Fix to e.g. \"в {T114} {T115} в этом {T116}:\" (mirroring \"В конце {T184}\")."
+    ]
+   }
+  },
+  {
+   "key1": "yatna",
+   "verdict": null
+  },
+  {
+   "key1": "apr_apta~~h0_zz_pw",
+   "verdict": {
+    "issues": [],
+    "ok": true,
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "b_ahlika~~h0_zz_pw",
+   "verdict": {
+    "ok": true,
+    "issues": [],
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "j_u",
+   "verdict": {
+    "ok": false,
+    "severity": "minor",
+    "issues": [
+     "Sense tag \"3\" (first block) and tag \"4\" (root-summary block): German {%betreiben, urgere%} is rendered {%побуждать, понуждать%}, which (a) silently DROPS the Latin equivalent \"urgere\" — PWG's Latin glosses are part of the entry's scholarly content and are normally retained verbatim — and (b) makes this sense verbally identical to the first half of {%anregen, drängen; fördern, begeistern%} (also {%побуждать, понуждать%}), collapsing two distinct PWG senses into indistinguishable Russian. Suggested: {%вести (дело), настойчиво добиваться, urgere%}.",
+     "Sense tag \"1a\" (first block), Böhtlingk's conjectural rendering: German {%den%} {T120} {%decket%} — \"den\" is the accusative definite article governing the masked object, but the Russian has {%его%} (\"his/its\"), inventing a possessive absent from the German; it should be article-less or a demonstrative ({%тот%}). In the same clause {%mit%} is rendered {%чем%} (\"with what/than\"), which reads as interrogative rather than the instrumental preposition — German \"mit + noun\" should surface as bare instrumental of {T122} or {%с%}.",
+     "Sense tag \"2b\" (second block): German (im {T177} vorangehend) = \"the preceding [word] stands in the {T177}\" is rendered \"(в {T177} предшествующее)\", where the neuter adjective agrees with nothing and the modifier function of \"vorangehend\" is lost. Suggested: \"(предшествующее слово — в {T177})\"."
+    ]
+   }
+  },
+  {
+   "key1": "jalp",
+   "verdict": null
+  },
+  {
+   "key1": "ras",
+   "verdict": null
+  },
+  {
+   "key1": "vi_d",
+   "verdict": null
+  },
+  {
+   "key1": "_srama",
+   "verdict": null
+  },
+  {
+   "key1": "d_ikz_a",
+   "verdict": null
+  },
+  {
+   "key1": "div_a",
+   "verdict": null
+  },
+  {
+   "key1": "pras_u",
+   "verdict": null
+  },
+  {
+   "key1": "vicitra",
+   "verdict": null
+  }
+ ],
+ "usage": {
+  "agents": 42,
+  "errors": 0,
+  "tokens": 1814545,
+  "duration_ms": 1122660,
+  "models": [
+   "claude-opus-5",
+   "opus"
+  ]
+ }
+}

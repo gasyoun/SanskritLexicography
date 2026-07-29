@@ -1,0 +1,124 @@
+{
+ "schema": "pwg.h1210_ab_results.v1",
+ "handoff": "H1210",
+ "worklist": "H1210_ab100_worklist.28.07.26.json",
+ "n_cards_selected": 100,
+ "arm_a": {
+  "arm": "A_claude_native",
+  "model": "workers claude-sonnet-5 / controller claude-opus-4-8",
+  "cards_attempted": 87,
+  "cards_missing": [
+   "akza",
+   "nanda",
+   "g_ora",
+   "_s_a",
+   "j_u",
+   "jalp",
+   "k_a_s",
+   "las",
+   "ras",
+   "sa_b_ajay",
+   "tip",
+   "va_yc",
+   "vi_d"
+  ],
+  "canonical_clean": 83,
+  "canonical_clean_pct": 95.4,
+  "rig_self_report_clean": 70,
+  "self_report_overstatement": -13,
+  "defect_classes": {
+   "translation-fidelity-reject": 4,
+   "fidelity-reject": 2,
+   "soft:tnmask-mismatch": 2
+  },
+  "soft_flags": {
+   "tnmask-mismatch": 5
+  },
+  "final_status": {
+   "clean-controller-approved": 60,
+   "escalate-review-sheet": 12,
+   "clean-no-review": 10,
+   "worker-null-death": 5
+  },
+  "retries": 65,
+  "retry_rate_per_card": 0.75,
+  "escalations": 12,
+  "review_sheet_rate_pct": 13.8,
+  "generation_calls": 152,
+  "controller_calls": 94,
+  "calls_per_clean": 2.96,
+  "controller_call_share_pct": 38.2,
+  "tokens": {
+   "subagent_tokens": 16539926,
+   "worker_tokens": 11819307,
+   "controller_tokens": 4720619
+  },
+  "usd_total": null,
+  "usd_per_clean": null,
+  "usd_note": "subscription lane (Workflow agent() on the session plan) — no per-call USD is exposed, so $/clean is reported as n/a rather than guessed; token counts are the comparable quantity",
+  "wall_clock_s": 9625.2,
+  "latency_s_per_card_median": 114.1,
+  "complexity_flagged": 45,
+  "complexity_false_flags": 35,
+  "complexity_false_flag_pct": 77.8,
+  "clean_by_stratum": {
+   "S1": "58/60",
+   "S2": "11/12",
+   "S3": "9/10",
+   "S5": "5/5"
+  }
+ },
+ "arm_b": {
+  "arm": "B_deepseek",
+  "model": "deepseek-chat",
+  "cards_attempted": 100,
+  "cards_missing": [],
+  "canonical_clean": 78,
+  "canonical_clean_pct": 78.0,
+  "rig_self_report_clean": 72,
+  "self_report_overstatement": -6,
+  "defect_classes": {
+   "translation-fidelity-reject": 13,
+   "fidelity-reject": 12,
+   "soft:tnmask-mismatch": 11,
+   "NULL-CARD": 9
+  },
+  "soft_flags": {
+   "tnmask-mismatch": 12
+  },
+  "final_status": {
+   "clean-no-review": 42,
+   "clean-controller-approved": 30,
+   "escalate-review-sheet": 15,
+   "worker-null-death": 13
+  },
+  "retries": 69,
+  "retry_rate_per_card": 0.69,
+  "escalations": 15,
+  "review_sheet_rate_pct": 15.0,
+  "generation_calls": 149,
+  "controller_calls": 50,
+  "calls_per_clean": 2.55,
+  "controller_call_share_pct": 25.1,
+  "tokens": {
+   "cache_miss_in_tokens": 11932,
+   "cache_hit_in_tokens": 2749952,
+   "out_tokens": 481613
+  },
+  "usd_total": 0.7255,
+  "usd_per_clean": 0.0093,
+  "usd_note": null,
+  "wall_clock_s": 1254.6,
+  "latency_s_per_card_median": null,
+  "complexity_flagged": 57,
+  "complexity_false_flags": 36,
+  "complexity_false_flag_pct": 63.2,
+  "clean_by_stratum": {
+   "S1": "56/60",
+   "S2": "3/15",
+   "S3": "9/10",
+   "S4": "5/10",
+   "S5": "5/5"
+  }
+ }
+}

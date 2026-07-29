@@ -1,0 +1,194 @@
+{
+ "arm": "B_deepseek",
+ "round": 2,
+ "verdicts": [
+  {
+   "key1": "dr_ava_ra",
+   "verdict": {
+    "issues": [],
+    "ok": true,
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "p_avana",
+   "verdict": {
+    "issues": [
+     "Sense tag \"0\" (\"{%pāvana%}¦ 2. f. statt {%vyāse%} ist {T185} {%'dhyāse = śūrpe%} zu lesen; vgl. {T186} Beitr. 88. — Adj. nach {T187} von Wind (pavana) lebend, {T188}\"): the Russian is byte-identical to the German — the entire editorial note is left untranslated (statt / ist … zu lesen / vgl. / Beitr. / Adj. nach … von Wind (pavana) lebend). Must be rendered, e.g. 'вместо {%vyāse%} следует читать … ; ср. … — Прил. по … живущий ветром (pavana)'.",
+     "Senses tagged \"0\" with German \"{T172}¦ 2〉f〉 {T173} {T174} ist {T175} {T176} = {T177} zu lesen; …\" and \"{T189}¦ 2〉f〉 {T190} {T191} ist {T192} {T193} zu lesen; …\": the German construction 'ist … zu lesen' is copied verbatim into the Russian column instead of being translated ('следует читать / надлежит читать').",
+     "Both \"IV.5\" senses (\"{T181} nach {T182}\" / \"{T197} nach {T198}\"): the German preposition 'nach' is left untranslated in the Russian ('по', 'согласно').",
+     "Senses 4e (twice: '{T221}— e〉 {%Kuhmist%}' and '{T253}— e〉 *{%Kuhmist%}'): Russian '{%коровый навоз%}' is not a Russian word — should be 'коровий навоз' (or 'коровий помёт'). Same misspelling in both occurrences."
+    ],
+    "ok": false,
+    "severity": "major"
+   }
+  },
+  {
+   "key1": "v_ajin",
+   "verdict": {
+    "issues": [
+     "Sense tag \"1\": German \"des {T33} {T34}.\" is rendered as \"{T33} {T34}.\" — the genitive governor \"des\" is dropped, so the possessive/attributive relation to the preceding item is lost. Restore it (e.g. \"{T33} {T34}\" in genitive framing / \"из {T33}\" equivalent per house style), matching how other genitive links in the entry are handled.",
+     "Sense tag \"7\": German \"{T225} so {T226} {T227}\" — here \"so\" is the standard PWG source-attribution marker (\"so [reads] X\"), correctly rendered elsewhere in this very entry as \"так\" (sense tag \"3\": \"(so {T163} ... lesen {T168})\" → \"(так {T163} ... читают {T168})\"). It is translated here as \"то есть\" (= \"that is\"), converting a witness/reading citation into an explicative gloss — an invented semantic relation.",
+     "Sense tag \"PW1aα\": same defect as tag \"7\" — German \"{%rascher Wagen,%} so {T253} {%Kriegswagen%}\" renders \"so {T253}\" as \"то есть {T253}\". \"so\" + siglum marks the source in which the reading occurs, not an equivalence; should be \"так {T253}\" for consistency with tag \"3\"."
+    ],
+    "ok": false,
+    "severity": "minor"
+   }
+  },
+  {
+   "key1": "vel_a",
+   "verdict": {
+    "issues": [
+     "Sense tag 4 (first block) and tag 12: German {%gelegentlich%} is rendered \"случайно\" (= by chance/accidentally). In this sense-group (\"Zeitgrenze … Gelegenheit\" / случай) gelegentlich means \"при случае, от случая к случаю, иногда\". Replace \"случайно\" with \"при случае\" in both places ({T238} … {T239}, and ({%gelegentlich%} {T313}))",
+     "Sense tag 2: \"{T104} ({T105} zu schreiben)\" is rendered \"({T105} писать)\" — the modal \"zu schreiben\" (= is to be written) is dropped, leaving an ungrammatical bare infinitive. Should be \"(следует писать {T105})\", matching the correct handling of \"(so ist zu verbessern)\" → \"(так следует исправить)\" in sense 7",
+     "Sense tag 4 (first block): \"{%über die Dauer von%} {T140}\" → \"{%на протяжении%} {T140}\". German \"über die Dauer von X\" = beyond/in excess of a period of X, whereas \"на протяжении\" means throughout/during — the exceeding sense is lost. Suggest \"сверх срока в\" / \"свыше продолжительности в\"",
+     "Sense tag 7: \"{T288} für {T289}\" → \"{T288} для {T289}\". In this text-critical context (immediately after \"(so ist zu verbessern)\") German \"für\" means \"вместо\" (i.e. read T288 in place of T289); \"для\" misreads it as a purposive dative"
+    ],
+    "ok": false,
+    "severity": "minor"
+   }
+  },
+  {
+   "key1": "pf_tak",
+   "verdict": {
+    "ok": true,
+    "severity": "minor",
+    "issues": [
+     "Non-blocking, sense 1 and PW 1〉: German deictic 'so' in 'daher oft so {T11}' is unrendered in Russian ('поэтому часто {T11}'); it points at the reduplicated/adverbial form and could be rendered 'поэтому часто так {T11}'.",
+     "Non-blocking, PW 1〉: 'Häufig verdoppelt.' rendered as adjectival 'Часто удвоенное.'; the German is a predication about usage, so 'Часто удваивается.' matches better."
+    ]
+   }
+  },
+  {
+   "key1": "hanta",
+   "verdict": {
+    "ok": false,
+    "severity": "minor",
+    "issues": [
+     "Sense 1 (tag \"1\", near the end): the German connective `_im_` in the run `{T160} und {T161}_im_{T162}` is left untranslated in the Russian column. The adjacent `und` in the same run was correctly rendered as `и`, so `im` is ordinary German connective prose, not a preserve-verbatim artifact. Fix: replace `{T161}_im_{T162}` with `{T161}_в_{T162}` in the Russian text (keep the underscore italic wrappers and both placeholders unchanged)."
+    ]
+   }
+  },
+  {
+   "key1": "sva_b_ava",
+   "verdict": {
+    "ok": true,
+    "severity": "none",
+    "issues": [
+     "ADVISORY (non-blocking, no action required): in sense 1 the German connective in \"{T153}_zu_{T154}\" is carried over verbatim into the Russian column; it reads as an underscore-delimited source-markup token (parallel to the retained Latin \"ad\" in \"{T143} ad {T144}\"), so it is treated as intentional pass-through, not an untranslated German word.",
+     "ADVISORY (non-blocking): \"am {T114} eines {T115} in dieser {T116}\" -> \"в {T114} {T115} в этом {T116}\" shifts the preposition (am -> в) and the demonstrative gender (dieser -> этом); both governed nouns are masked, so fidelity is unjudgeable and no meaning is added or lost. The parallel \"Am Ende eines {T184}\" -> \"В конце {T184}\" is correct."
+    ]
+   }
+  },
+  {
+   "key1": "yatna",
+   "verdict": {
+    "ok": false,
+    "severity": "minor",
+    "issues": [
+     "Sense 1, gloss «злодей весьма заботится о чужих недостатках»: the German «der Bösewicht kümmert sich gar sehr um Fehler» has no possessor — «чужих» is invented content. Render as «злодей весьма печётся о недостатках» (leave the possessor unspecified).",
+     "Sense 1, split gloss {%sich Mühe geben, Mühe auf Etwas%} ({T43}) {%wenden, sich Etwas angelegen sein lassen%}: the German splits the separable construction «Mühe auf Etwas ... wenden» around the placeholder, but the RU packs the whole «обращать старание на что-л.» into the FIRST span and leaves the second span as a dangling duplicate «прилагать, заботиться о чем-л.». The verb «прилагать» is thus doubled and «wenden» is not rendered in its own span. Re-split so the first span carries «прилагать старание, обращать старание на» and the second carries only «(что-л.), заботиться о чем-л.»",
+     "Senses 1 and PW-3, «Die Ergänzung im {T34} vorangehend» / «({T167} oder im {T168} vorangehend)» rendered as «в {T34} предшествующее» / «или в {T168} предшествующее»: the calqued participle has no antecedent noun in PW-3 and is left dangling, obscuring that the complement STANDS in that case and PRECEDES. Use a finite construction, e.g. «дополнение стоит в {T34} и предшествует» / «({T167} или стоит в {T168} и предшествует)»."
+    ]
+   }
+  },
+  {
+   "key1": "jalp",
+   "verdict": {
+    "ok": false,
+    "severity": "minor",
+    "issues": [
+     "Sense tag 2 of the second block ({T221}): German gloss lists FOUR verbs — {%reden, sprechen, sagen, sich unterhalten, — mit%} — but the Russian gives only three ({%говорить, разговаривать, беседовать — с%}); 'sagen' is dropped. Restore it, e.g. {%говорить, разговаривать, сказать, беседовать — с%}.",
+     "Sense tag 14 ({T216}): German {%antworten, erwiedern%} is collapsed to a single Russian gloss {%отвечать%}; the second synonym ('erwiedern' = возражать / отвечать в ответ) is dropped. Elsewhere in this entry synonym counts are preserved (e.g. {%mittheilen, verkünden, bekannt machen%} → {%сообщать, возвещать, объявлять%}), so this is an inconsistent omission.",
+     "Sense tag 26 of the second block ({T245}): same drop — German {%antworten, erwiedern;%} → Russian {%отвечать;%}, losing 'erwiedern'.",
+     "Sense tag 8 ({T210}): German span structure {%einer Sache%} ({T102}) {%das Wort reden, zu Etwas rathen%} is re-segmented in Russian as {%заступаться за что-л.%} ({T102}), {%советовать что-л.%} — the head noun is folded into the first verbal gloss and the comma moved outside the masked span, so span boundaries no longer align with the German (meaning itself survives)."
+    ]
+   }
+  },
+  {
+   "key1": "ras",
+   "verdict": {
+    "ok": false,
+    "severity": "minor",
+    "issues": [
+     "Sense 15 (`{T219}— Mit {T172}, {T173} {%von einem Geschrei%} {T174} {%begleitet%}.`): the German has TWO gloss spans wrapping the masked token ({%von einem Geschrei%} … {%begleitet%}); the Russian merges them into a single span {%сопровождаемый криком%} and pushes {T174} outside the gloss. Gloss-span count 2→1 (the only count mismatch in the whole entry). Fix: preserve the discontinuous frame, e.g. `{T173} {%сопровождаемый криком%} {T174} {%(букв. в сопровождении крика)%}` — or minimally keep two spans around {T174} so the masked span stays inside the gloss frame as in the source.",
+     "Sense 22 (`{T228}— 2〉 {%schmackhaft finden,%} so {T192} {%gern kosten wollen%} {T193}.`): the PWG idiom `so {T192}` (= `so v. a.`, 'i.e., equivalent to') is rendered as «так что» (= 'so that / hence', a consequence clause), which asserts an implication the German does not. The same construction is correctly rendered «в знач.» in the `2. √{T128}` sense (`{%schmecken%} so {T147} {%empfinden%}` → «в знач.»). Fix for consistency and fidelity: «{%находить вкусным,%} в знач. {T192} {%охотно хотеть попробовать%}»."
+    ]
+   }
+  },
+  {
+   "key1": "vi_d",
+   "verdict": {
+    "issues": [],
+    "ok": true,
+    "severity": "none"
+   }
+  },
+  {
+   "key1": "_srama",
+   "verdict": {
+    "issues": [
+     "Sense 2: German gloss \"Waffenübung\" is rendered \"упражнение в оружии\", which is ungrammatical/non-idiomatic Russian for the intended \"упражнение с оружием\" / \"воинское упражнение\"; meaning is recoverable, so this is a minor register defect, not a fidelity failure."
+    ],
+    "ok": true,
+    "severity": "minor"
+   }
+  },
+  {
+   "key1": "d_ikz_a",
+   "verdict": {
+    "ok": false,
+    "severity": "major",
+    "issues": [
+     "Sense 2 (and the same gloss embedded in sense 1): reflexive 'das Sichweihen einer Person oder Sache' (= dedicating ONESELF to a person or thing) is rendered 'посвящение лица или вещи', which reverses the relation into 'consecration OF a person/thing'. This is the load-bearing definition gloss; expected e.g. 'посвящение себя лицу или вещи, полная преданность, погружение во что-либо'. Fix in both places (sense 1 '{%das sich — Weihen einer Person%} oder {%Sache…%}' and sense 2 '{T137}— 2〉').",
+     "Sense 1: 'Eine spielende {T110} des Wortes: {T111} {T112}' is not translated — the German frame ('a playful {T110} of the word', where {T110} masks the head noun) is replaced by the invented phrase 'Игра слов:' and {T110} is silently demoted into the following placeholder run. Both the masked head noun's syntactic role and 'des Wortes' are lost. Expected shape: 'Шутливое {T110} этого слова: {T111} {T112}'.",
+     "Sense 1: '{T101} ist die {%Weihe%} die Gemahlin {T102}ʼs' (Weihe IS the wife of {T102}) becomes '{T101} есть {%посвящение%} супруга {T102}ʼs', which reads as 'is the consecration OF the spouse' — the predicative identification is destroyed, and the German genitive clitic 'ʼs' is left untranslated in the Russian. Expected: '{T101} — {%Посвящение%} есть супруга {T102}'.",
+     "Sense 1: the genitive articles in 'des {T104} {T105} {T106}. des {T107} {T108} {T109}.' are dropped entirely ('{T104} {T105} {T106}. {T107} {T108} {T109}.'), so the possessive link between the masked spans is no longer expressed anywhere in the Russian; needs an explicit genitive/linking rendering (e.g. '— супруга {T104}…')."
+    ]
+   }
+  },
+  {
+   "key1": "div_a",
+   "verdict": {
+    "ok": false,
+    "severity": "minor",
+    "issues": [
+     "Sense 1 (tag 1), clause 'Das {T55} als {T56} an Stelle des {T57} {T58}': the German article 'Das' is left untranslated in the Russian ('Das {T55} как {T56} вместо {T57} {T58}'). Untranslated German residue in the RU column — should be a Russian demonstrative or simply dropped, never a bare German 'Das'.",
+     "Sense 2 (tag 1), 'oder am {T72} eines {T73}': the Russian inserts two lexical items present nowhere in the German outside the masked spans — 'начале' and 'предложения' ('или в начале {T72} предложения {T73}'). The German is only 'am {T72} eines {T73}', so the RU should be 'или в {T72} {T73}' with case adjusted; as written it pre-empts the content of the masked spans and will read as a duplication if T72/T73 expand to 'Anfang'/'Satzes'.",
+     "Both senses drop the {%...%} emphasis markup on the RU side: '{%am Tage%}' → 'днем', '{%nicht bei Tage%}' → 'не днем', '{%Tag%} … {%Nacht%}' → 'день … ночи'. If {%...%} is a live formatting delimiter, the Russian equivalents should be wrapped identically ('{%днём%}', '{%не днём%}', '{%день%}', '{%ночи%}') unless the pipeline deliberately strips it."
+    ]
+   }
+  },
+  {
+   "key1": "pras_u",
+   "verdict": {
+    "issues": [
+     "Advisory only (not a fidelity defect): 2c/1c \"mit Blüthenähren versehene Gras\" → \"трава с колосьями\" drops the \"Blüthen-\" (flowering) nuance; \"трава с цветущими колосьями\" would be closer."
+    ],
+    "ok": true,
+    "severity": "minor"
+   }
+  },
+  {
+   "key1": "vicitra",
+   "verdict": {
+    "ok": false,
+    "severity": "major",
+    "issues": [
+     "Sense tag \"1\" (first block: \"{T170} 1〉 {T4} ({T5} {T6}) Accent eines mit {T7} anlautenden {T8}, dessen zweites Glied ein {T9} ist, {T10} {T11} zu {T12}.\") is left VERBATIM German in the Russian column — an entire substantive definitional clause is untranslated (\"Accent eines mit ... anlautenden ..., dessen zweites Glied ein ... ist\" -> e.g. \"ударение ... начинающегося с {T7} ..., второй член которого есть {T9}\"). Not a protected span: sibling senses with comparable German prose (\"eines Fürsten\", \"eines Sohnes des\", \"eines Reihers\", \"eines Flusses\") are all translated.",
+     "Residual untranslated German function words inside otherwise-translated senses: \"{T89} {T90}_zu_{T91}\" (sense 1c) and \"{T138}_im_{T139}\" (sense 3, first block) keep German \"zu\"/\"im\" in the Russian text. Should be \"к\"/\"в\" unless the underscore-flanked form is a pipeline-protected join token — verify against the masking spec and fix or confirm.",
+     "Confirm-only (not counted as a defect): every {%...%} gloss delimiter is stripped in the Russian column throughout (1a/1b/1c/1d, 3a, 3b, 4, and 2a of the second block). It is systematic across all senses, so it reads as the RU-column convention, but downstream markup consumers should be checked once to ensure {%...%} is not required there."
+    ]
+   }
+  }
+ ],
+ "usage": {
+  "agents": 16,
+  "errors": 0,
+  "tokens": 853791,
+  "duration_ms": 1351113,
+  "models": [
+   "claude-opus-5"
+  ]
+ }
+}
