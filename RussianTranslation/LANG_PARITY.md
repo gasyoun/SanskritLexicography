@@ -91,7 +91,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1304: the citation translation-memory is RU-only by construction. The reuse assets are Russian translations of record (Elizarenkova RV, Leonov Ramayana, Ocean of Stories, ...); there is NO parallel English citation-TM corpus, so there is nothing to port to the EN path. If an EN citation-TM corpus is ever assembled, this becomes a GAP to port; until then RU-only is intended, not an oversight. H1717 (27-07-2026): re-affirmed after H1705/#823 split a new miss reason, ru-translation-unpublished, out of locus-not-in-corpus. The new reason is about Russian translations of record, RU-only by the same construction as the entry it lives under, and assembles no EN citation-TM corpus, so the verdict still holds; re-pinned (hash already re-verified in #837/b060e35a).",
     "tracking": "",
     "verified_sha256": {
-      "src/citation_tm.py": "af4f42298469ccd36e037ef53fdfe818d0fd54a3e6a0618a6cc29f63b3b8baa1"
+      "src/citation_tm.py": "b64cca6afa3b15ff64ceb09d2809b396e4000a465aab14c21a1583f2e0cb6fbd"
     }
   },
   {
@@ -614,7 +614,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H321 (architecture audit FL7 / code review 2026-07-04 item #4). corpus_gate.py is the RU-only stage-4 correctness gate: it joins a PWG headword to the independent Sanskrit->RUSSIAN dictionaries (Кочергина/Кнауэр/Фриш/Смирнов/Коссович) and the SamudraManthanam RU-aligned verse corpus. The EN pilot has no analogous corpus gate (no Sanskrit-English authority set is wired here), so this fix is inherently Russian-only — an INTENTIONAL-DIVERGENCE, not a GAP to port. The marker mechanism (SOURCES_PRESENT / evidence_status() / corpus_examples_with_status) would generalize if an EN correctness gate is ever built; revisit then. Pinned by test_corpus_gate_evidence_and_db_markers.",
     "tracking": "",
     "verified_sha256": {
-      "src/corpus_gate.py": "65429923536739d8b0410092aa65a679ef7e8c69140ad0a3a95fa41ff0ec7a89",
+      "src/corpus_gate.py": "c2d74982aa1291c5460d316817450815e866fd8017e26c1cedfda87aed858ab6",
       "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
     }
   },
@@ -874,7 +874,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H339 (08-07-2026). The join reads <ls> citation markup shared verbatim by both RU and EN editions (renou.keys_in_text is the same siglum parser annotate_renou.py already treats as language-independent) and never touches translation text itself. Read-only over the store; selftest-gated.",
     "tracking": "",
     "verified_sha256": {
-      "src/annotate_genres.py": "5eea7d5269c716d5c96ceb81be5c22358fe45542b066f66963a8fdd1562d89e3"
+      "src/annotate_genres.py": "321ad8eca20db23db7d5181727026f8880160e8d99a327daace83a132d919196"
     }
   },
   {
