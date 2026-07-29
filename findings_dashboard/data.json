@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-07-29T11:56:15Z",
+ "generated_at": "2026-07-29T15:56:48Z",
  "stale_days_threshold": 180,
  "counts": {
-  "total": 159,
+  "total": 161,
   "by_importance": {
-   "2": 90,
+   "2": 91,
    "1": 25,
-   "3": 44
+   "3": 45
   },
   "stale": 0
  },
@@ -1432,6 +1432,24 @@
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#500-a-batch-that-never-runs-deletes-a-band-of-the-sample-not-a-random-subset--byte-packed-chunking-makes-an-incomplete-ab-silently-flatter-the-arm-that-failed"
+  },
+  {
+   "n": 503,
+   "title": "A git worktree silently disables every sibling-repo lookup in `src/` — artifacts rebuilt there lose layers without failing",
+   "section": "External platforms & services",
+   "importance": 3,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#503-a-git-worktree-silently-disables-every-sibling-repo-lookup-in-src--artifacts-rebuilt-there-lose-layers-without-failing"
+  },
+  {
+   "n": 504,
+   "title": "The NWS tag layer reaches only 2.2 % of the RU store — a facet bar over it is right, but it is not the sheet's main axis",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis"
   },
   {
    "n": 501,
