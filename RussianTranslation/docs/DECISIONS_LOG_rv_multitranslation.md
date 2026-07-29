@@ -44,6 +44,30 @@ The 50-stanza spike said collapse. On 300 model-decided pairs, `deepseek-chat` a
 
 Decision: **the five-class taxonomy stands; no collapse.** Two caveats carried forward rather than buried. (1) `added_by_one` is genuinely inert -- **0 of 12,000** -- which is implausible on its face, since Griffith 1896 pads freely with supplied and bracketed material that the class exists to catch. That is a prompt or taxonomy defect, not evidence about the Rigveda, and it is the first thing the step-8 gate should be read against. (2) Whether `lexical_variant` and `semantic_shift` are *separable* -- as opposed to merely both used -- is still unmeasured: that needs the human gate (step 8, built and awaiting a vote) and the second, independently-trained model arm. The arm is specified and wired (`--provider openrouter`) but unrun: no `OPENROUTER_API_KEY` is reachable from this session, so inter-model kappa could not be computed. This entry is therefore a NOT-YET, not a verdict. Logged per the autonomy contract; did not stop, did not ask.
 
+**RESOLVED 29-07-2026 (H1901) — and the resolution REVERSES the ruling above. See the next entry.**
+
+## 29-07-2026 (H1901) -- spike S2 answered on three model arms: the fine distinction is NOT separable, and the entry above was decided on the wrong statistic
+
+The operator supplied an `OPENROUTER_API_KEY`, so the second and third arms of spike S2 ran on the SAME seeded 50-stanza sample as the DeepSeek arm. Three independently-trained models, three vendors, two of them non-Chinese:
+
+| Pair | five-class kappa | coarse kappa | `lexical_variant` vs `semantic_shift` kappa |
+|---|--:|--:|--:|
+| `deepseek-chat` ↔ `openai/gpt-4o-mini` | 0.222 | 0.235 | **0.089** |
+| `deepseek-chat` ↔ `google/gemini-2.5-flash` | 0.357 | 0.350 | **−0.012** |
+| `openai/gpt-4o-mini` ↔ `google/gemini-2.5-flash` | 0.227 | 0.216 | **0.256** |
+
+**Verdict: `lexical_variant` and `semantic_shift` are not being distinguished.** Kappa on that subset is 0.089, −0.012 and 0.256 — mean ≈ 0.11, one of them literally worse than chance. K3's collapse trigger has fired, on exactly the evidence VERIFICATION Sec.4 specified.
+
+**The trap this caught, recorded because it nearly shipped.** Raw agreement on that same subset reads 89.0 %, 95.1 % and 85.7 % — which looks like near-consensus and is worthless. All three models overwhelmingly return `semantic_shift`, so they "agree" by defaulting to the majority class together; kappa corrects for that expected agreement and leaves almost nothing. Under extreme base-rate skew, raw agreement measures the skew, not the agreement. Any future gate in this repo that reports percent-agreement without a chance-corrected statistic is reporting the prior.
+
+**This reverses the preceding entry, and the error is worth naming precisely.** That entry declined to collapse the taxonomy because the 12,000-label pilot used `lexical_variant` 6.0 % of the time — i.e. it argued from **usage rate**. Usage rate is not separability: a class can be assigned often and still be assigned unreproducibly, which is exactly what three arms now show. The earlier entry did flag the separability half as unmeasured and explicitly labelled itself a NOT-YET, so this is a completion rather than a contradiction — but the ruling it provisionally recorded was wrong and is withdrawn.
+
+**Not collapsing blindly either.** The coarse three-class projection scores kappa 0.235 / 0.350 / 0.216 — better than the fine distinction, but still only "fair" on the Landis–Koch scale, not reliable. So the honest position is: the five-class taxonomy is not defensible as an inter-annotator-reproducible instrument; the coarse one is more reproducible but not yet demonstrated *reliable*. That is a question the step-8 human gate is the right instrument for, and it makes that gate MORE load-bearing than when it was generated, not less. The gate sheet is unchanged and still awaits a vote; the full 10,552-stanza run stays queued (R13).
+
+**`added_by_one` is inert across all three arms — 0/300, 0/300, 0/267.** Three independently-trained models never once assign it. That is now strong evidence for the reading already recorded in H1844: a prompt or taxonomy defect, not a fact about the Rigveda. Griffith 1896 pads freely with supplied and bracketed material, so a class meant to catch exactly that firing zero times across three models indicts the instrument.
+
+Two operational notes. `google/gemini-2.0-flash-001` was a **guessed** model id and 404'd for all 50 calls at $0.00 — the arm was re-run against `google/gemini-2.5-flash` after querying OpenRouter's live model list, and the failed rows were never reported as data. Look the id up; do not guess it. Gemini also returned 9 out-of-enum classes (267 of 276 model-decided labels usable), which the typer records as `class: null` rather than silently coercing. Spike cost across both new arms: **$0.054**. Logged per the autonomy contract; did not stop, did not ask.
+
 ## 29-07-2026 (H1844) -- STOP CONDITION 3: layer B fails the R14 bar on all three languages
 
 Measured, not inferred. The 300-token frequency-stratified gold sample (`gold/rv_wordlevel_gold.jsonl`, seed 1844, 100 rows per target language, 75 per frequency stratum) was adjudicated by Opus 5 (`claude-opus-5[1m]`) over 69 read rows, and precision lands at **de 29.2 % (7/24) · ru 19.2 % (5/26) · en 10.5 % (2/19)** against a bar of 85 %. That is stop condition 3 as written in PLAN Sec.4: *"The layer-B gold sample scores below 85 % on all three languages -- that is not a parameter to tune blind; ship spine A alone, mark B `low_confidence`, and report."*
