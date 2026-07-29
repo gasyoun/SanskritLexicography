@@ -976,14 +976,6 @@ PR: [#769](https://github.com/gasyoun/SanskritLexicography/pull/769) · Handoff:
   and draft [PR #744](https://github.com/gasyoun/SanskritLexicography/pull/744).
 
 ### Added
-- **Heritage (INRIA) frequency-tables ingest + diff (26-07-2026, H1490).** Roadmap
-  Phase 3: 7 `DATA/*.tsv` files decoded out of Heritage's internal WX romanization
-  (new WX→SLP1 transcoder) and diffed against VisualDCS's M1–M8 `dcs_full.sqlite`
-  and `RussianTranslation/src/corpus_lexicon.jsonl` — Spearman ρ 0.70–0.74 vs DCS
-  across surface-form/lemma/compound-stem series, 0.53 vs `corpus_lexicon`.
-  [`heritage_frequency_diff.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_frequency_diff.md) /
-  [`.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_frequency_diff.tsv) /
-  [`heritage_freq_diff.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_freq_diff.py).
 
 ## [1.65.0] — 2026-07-26
 
