@@ -2,7 +2,7 @@
 
 ## Roadmap 2026–2027 · public portrait + book/monograph appendix
 
-_Created: 12-07-2026 · Last updated: 13-07-2026_
+_Created: 12-07-2026 · Last updated: 29-07-2026_
 
 > **What this is.** A plan to build the Sanskrit analog of Duden's *Sprache in Zahlen* — the
 > quantitative "language in numbers" appendix that closes the [Duden Universalwörterbuch](https://www.duden.de/)
@@ -83,7 +83,7 @@ Counts from this repo's [`HeadwordLists/now-2026/`](https://github.com/gasyoun/S
 | PWG | große Petersburger Wörterbuch (Böhtlingk-Roth, 1855–75) | **110,438** | the 7-volume "big" PW — the *Universalwörterbuch*-scale anchor |
 | PWK | Böhtlingk, kürzere Fassung (1879–89) | **155,688** | the abridgement is *larger* by headword count (finer splitting) |
 | SCH | Schmidt, *Nachträge* | **28,519** | addenda layer |
-| PW / PD | kleineres PW | ≈ 104,941 (2014 export) | **prerequisite: needs a now-2026 re-export** — see [§8](#8-open-decisions--prerequisites) |
+| PW / PD | kleineres PW | **104,968** (now-2026 re-export) | prerequisite satisfied — see [§8](#8-open-decisions--prerequisites) |
 
 The de-duplicated union is **not** the sum; it comes from the A40/A55 overlap matrix.
 
@@ -216,8 +216,13 @@ Considered and ruled out — a future session should not re-propose these withou
    учебник that the PDF booklet appends to (D5). **`@DECIDE`:** name its repo/build (is it a
    Systema-Sanscriticum asset, an ORS-FAQ asset, or a separate LaTeX/book project?). Blocks
    wave 2's PDF render only — not wave 0/1.
-2. **PW / PD now-2026 re-export.** The kleineres PW headword list exists only as a 2014 export
-   ([`then-2014/PD-unique-key2-104941.txt`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014)). Re-run the extractor for a current count before the vocabulary-size table is frozen.
+2. ~~**PW / PD now-2026 re-export.**~~ **DONE (verified 29-07-2026).** The kleineres PW
+   now-2026 re-export already exists —
+   [`now-2026/PD-unique-key1-104959.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/now-2026/PD-unique-key1-104959.txt) /
+   [`now-2026/PD-unique-key2-104968.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/now-2026/PD-unique-key2-104968.txt) —
+   superseding the 2014 export
+   ([`then-2014/PD-unique-key2-104941.txt`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014)).
+   No further extractor run is needed before the vocabulary-size table is frozen.
 3. **samskrte.ru publish surface + rights.** samskrte.ru is Systema/LMS territory; confirm the
    publish surface and run [`/publish-safety-check`](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md) before go-live (wave 4).
 4. **Module 9 depth.** Decide whether best-effort samāsa typing (segmentation-based) is enough for
