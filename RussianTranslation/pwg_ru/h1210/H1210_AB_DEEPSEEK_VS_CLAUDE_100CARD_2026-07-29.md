@@ -173,7 +173,8 @@ what the measurements actually carry:
   Claude-native lane over it — is supported by Q1–Q4 as measured, and needs no new
   experiment to justify trying.
 - **"Bury the DeepSeek arm" is not supported.** Its failure is concentrated, not diffuse: it
-  is at parity on 67 of the 100 cards, and its worst class (`NULL-CARD`, null-death) is
+  is at parity across the 77 cards outside the top quartile (70 of them clean, 91%), and its
+  worst class (`NULL-CARD`, null-death) is
   detectable by the free gate rather than silently wrong text.
 - **"Make DeepSeek the production track" is not supported either** — not without a decided
   policy for long entries and for the 9 NULL-CARDs.
