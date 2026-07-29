@@ -46,10 +46,32 @@ import rv_divergence_type as dv                     # noqa: E402
 
 STANZA_PATH = os.path.join(PWG_RU_DIR, 'rv_stanza_translations.jsonl')
 GENERATED = '2026-07-29'
-SHEET_ID = 'rv_divergence_gate_2026-07-29-v2'
+SHEET_ID = 'rv_divergence_gate_2026-07-29-v3'
 EXPLAINED = os.path.join(PWG_RU_DIR, 'h1844', 'rv_divergence_explained.jsonl')
 DEFAULT_N = 100
 DEFAULT_SEED = 1844
+
+# Chronology is a first-class dimension, not decoration (H1908, MG 29-07-2026:
+# "хронология имеет большое значение и должна быть отмечена и использована").
+#
+# Our four run 1876 -> 1896 -> 1951 -> 1989, and each later translator could read the
+# earlier ones: Griffith knew Grassmann and Wilson, Elizarenkova argues explicitly with
+# Geldner and Renou. So a divergence between a LATER and an EARLIER rendering is not a
+# symmetric disagreement between peers -- the later one is often departing KNOWINGLY, and
+# a reviewer judging "who is right" without that ordering is judging blind.
+TRANSLATOR_CHRONO = {
+    'grassmann_de_1876': (1876, '1876–77', 'Грассман'),
+    'griffith_en_1896': (1896, '1896', 'Гриффит'),
+    'geldner_de_1951': (1951, '1951–57', 'Гельднер'),
+    'elizarenkova_ru_1989': (1989, '1989–99', 'Елизаренкова'),
+}
+
+# R4 excluded Jamison–Brereton 2014 from wave 1 (in copyright, sample-scale reference
+# only). The consequence has to be stated on the sheet rather than left implicit: our
+# ONLY English witness is 118 years older than the current scholarly standard, so an
+# English-side "divergence" is measured against Victorian English, not against modern
+# English Vedic scholarship.
+LATEST_EN = 'Джеймисон–Бреретон 2014'
 
 CLASS_HELP = {
     'agreement': 'одно и то же содержание; разные слова и разные языки — норма',
@@ -116,11 +138,37 @@ def esc(s):
     return (s or '').replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
 
 
-def _question(cls, ex):
+def _chronology(a, b):
+    """Deterministic chronology band: who came first, the gap, and what that implies.
+
+    Computed from the years, never asked of a model -- publication dates are facts.
+    """
+    ya, la, na = TRANSLATOR_CHRONO[a]
+    yb, lb, nb = TRANSLATOR_CHRONO[b]
+    (ey, el, en), (ly, ll, ln) = ((ya, la, na), (yb, lb, nb)) if ya < yb else \
+                                 ((yb, lb, nb), (ya, la, na))
+    gap = ly - ey
+    parts = ['<b>Хронология:</b> %s %s → %s %s (позже на %d лет).'
+             % (esc(en), esc(el), esc(ln), esc(ll), gap)]
+    parts.append('%s мог знать перевод %s — расхождение здесь скорее '
+                 '<i>сознательный отход</i>, чем независимое чтение.'
+                 % (esc(ln), esc(en)))
+    if 'griffith_en_1896' in (a, b):
+        parts.append('<b>Единственный английский свидетель здесь — Гриффит 1896</b>, '
+                     'а современный научный стандарт по-английски — %s, '
+                     'намеренно не включённый в волну 1 (R4: в копирайте, только '
+                     'выборочно). Английская сторона расхождения меряется '
+                     'викторианским английским, а не современной ведологией.'
+                     % esc(LATEST_EN))
+    return '<div class="rv-chrono">%s</div>' % ' '.join(parts)
+
+
+def _question(cls, ex, a, b):
     """The card's ask. v1 printed only the class name and made the reviewer hunt for
     the difference; this states WHAT the difference is, in Russian, above the fold."""
     why = (ex.get('why_ru') or '').strip()
-    parts = ['Модель присвоила класс <b>%s</b> — <i>%s</i>.'
+    parts = [_chronology(a, b),
+             'Модель присвоила класс <b>%s</b> — <i>%s</i>.'
              % (esc(cls), esc(CLASS_HELP.get(cls, '')))]
     if why:
         parts.append('<div class="rv-why"><b>В чём разница:</b> %s</div>' % esc(why))
@@ -179,7 +227,7 @@ def build_items(picked, stanzas, explained):
         spans = {a: (ex.get('span_a'), ex.get('span_a_verbatim', False)),
                  b: (ex.get('span_b'), ex.get('span_b_verbatim', False))}
         panels = []
-        for key in (a, b):
+        for key in sorted((a, b), key=lambda k: TRANSLATOR_CHRONO[k][0]):
             t = stanza['translations'][key]
             span, verbatim = spans[key]
             body, marked = highlight(t['text'], span, verbatim)
@@ -206,7 +254,7 @@ def build_items(picked, stanzas, explained):
             'filt': entry['class'],
             'title': 'RV %s — %s ↔ %s' % (location, a.split('_')[0], b.split('_')[0]),
             'badges': [entry['class'], 'маṇḍала %d' % stanza['mandala']],
-            'question': _question(entry['class'], ex),
+            'question': _question(entry['class'], ex, a, b),
             'note_placeholder': 'reject → почему именно этот класс неверен',
             'panels': panels,
         })
@@ -289,7 +337,9 @@ def main():
             '.rv-nowhy{background:#fff0f0;border-left-color:#d9534f}'
             '.rv-asym{margin:.4em 0;padding:.45em .7em;background:#fff8e6;'
             'border-left:4px solid #e0a800;border-radius:.2em}'
-            '.rv-quote{margin-top:.35em;font-size:.92em;opacity:.8;font-style:italic}'),
+            '.rv-quote{margin-top:.35em;font-size:.92em;opacity:.8;font-style:italic}'
+            '.rv-chrono{margin:.35em 0;padding:.45em .7em;background:#f3f0fa;'
+            'border-left:4px solid #7a5cb8;border-radius:.2em;font-size:.97em}'),
     }
     config.update(standard_config(
         save_as='RussianTranslation\\review\\%s_decisions.json' % SHEET_ID))
