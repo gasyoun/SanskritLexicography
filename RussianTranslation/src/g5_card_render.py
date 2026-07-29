@@ -44,8 +44,13 @@ all (`ṚV(Sā) I 165, 11` is one). Their sigla use a different convention from
 PWG's own (`ṚV(Sā) I 165, 11` vs `ṚV. 1,165,11`), so `ls_resolver` returns None.
 Across this batch there are exactly 3 such spans on 3 of 150 cards, so they are
 MARKED as citations with a source tooltip and left unlinked rather than guessed
-at — honest gap over a fabricated link. Normalising the NWS citation convention
-store-side is H1809.
+at — honest gap over a fabricated link. **Fixed store-side by H1809**
+(`nws_ls_markup.py`): store-wide the NWS-Roman-numeral convention turned out to
+be only 6 spans (2 resolvable, wrapped in `<ls n="normalised-locus">`; 4 residue
+-- `ChU`/`Harisv`, sigla PWG's own bibliography does not carry, left as bare
+text and logged rather than guessed). `_bare_citation_html` below still marks
+whatever bare-citation-shaped text remains (general prose, non-NWS sigla,
+future drift) — this docstring paragraph records what H1809 already closed.
 """
 import io
 import json
