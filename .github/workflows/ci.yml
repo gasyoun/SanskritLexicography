@@ -150,6 +150,11 @@ jobs:
           python src/mined_filter_bicleaner.py selftest
           python src/tm_saru_align_labse.py selftest
           python src/tm_retrieval_eval.py selftest
+      - name: Install the shared review-sheet emitter (H1808)
+        # g5_card_render imports csl_pyutil.anatomy at module load, so this lane
+        # needs the package rather than just py_compile. Pinned to the TAG, not
+        # `@main` as the repo requirements.txt does, so a CI run stays reproducible.
+        run: pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.6.0"
       - name: Review-sheet binding + decisions + residue-gate selftests (H1404 lane)
         working-directory: RussianTranslation
         run: |
