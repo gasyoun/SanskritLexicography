@@ -10,6 +10,52 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed — the G5 card is legible: печатный вид, кликабельные цитаты, подсказки к пометам (H1808, 29-07-2026)
+
+MG filed five defects while voting
+[g5_batch1v3](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/locks/g5-live-queue-batch1v3-2026-07-26.lock.json).
+Two were the shared emitter's and were fixed a level down in
+[csl-pyutil v0.6.0](https://github.com/sanskrit-lexicon/csl-pyutil/releases/tag/v0.6.0)
+(a +150% default type scale — the panel `<pre>` holding the text under judgement had
+been the *smallest* type on the page — and `csl_pyutil.anatomy`, the entry-anatomy
+colouring previously reachable only from csl-atlas). Three were this repo's, and the
+per-card rendering now lives in
+[`src/g5_card_render.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/g5_card_render.py):
+
+- **Citations are clickable.** «ṚV(Sā) I 165, 11 is not clickable? … All such
+  entries are long ago clickable even at Cologne» — and they already were on our own
+  public article site: the print panel now goes through the same
+  `build_article_site._render()`, so `<ls>` becomes a Cologne scan/edition link (the
+  [`ls_resolver`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver.py)
+  port of Cologne's `ls_service.dart`) with a `pwg_sources` bibliography tooltip.
+  Batch1v3: **988 links across 60 cards**, where the old sheet printed
+  `&lt;ls&gt;…` as literal text on all 69 cards that carry citations.
+- **The two RU panels are no longer indistinguishable.** Measured cause: on **50 of
+  150** cards they were textually identical, differing only by the Cyrillic
+  highlight. Panel 1 is now the rendered print view; panel 2 is the raw store markup
+  **colour-coded by part class**; headings say what each is for, and a card whose two
+  panels genuinely still read alike says so in one line instead of leaving the reader
+  to diff them.
+- **The NWS bracket tags have tooltips.** «почему аббревиатуры без tooltips?
+  например [Gen, unsp] не очевидно что это» — `<ab>` had tooltips; the `[diasystem,
+  domain]` tags never did, because they are not markup, just text. Both slots are now
+  glossed in Russian from a store-wide census (11,030 rows): slot 1 Ved 103 · Śā 50 ·
+  Gen 28 · Buddh 9 · Reg 8 …; slot 2 `unsp` 153 (= *не указан*) · Med 28 · Ling 11 ·
+  Soc 8. `[ifc (Bhvr)]` and `[NWS: source : page]` are glossed too.
+
+**Honest gap:** NWS-layer citations carrying no `<ls>` markup use a different siglum
+convention from PWG's own (`ṚV(Sā) I 165, 11` vs `ṚV. 1,165,11`), so the resolver
+returns nothing. There are exactly **3 such spans on 3 of 150 cards**; they are marked
+as citations with a source tooltip and left unlinked rather than guessed at.
+Normalising them store-side is
+[H1809](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1809-Sonnet_SanskritLexicography_nws-bare-citation-ls-markup_28.07.26.md).
+
+The sheet was **re-issued without disturbing the vote**: `--pin-ids <lock>` re-renders
+exactly the locked ids after proving every card's content digest is unchanged (150/150
+byte-identical), so the same `sheet_id` + same ids keep the browser's localStorage
+votes bound. The lock now carries `item_digests` so the next presentation re-issue can
+prove that from the lock alone. Recurrence is watched by a new claude-config hook.
+
 ### Added — the G6 gold card now carries its evidence BEFORE the vote (H1801, 29-07-2026)
 
 - New [`src/gold_evidence_panel.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_evidence_panel.py):
