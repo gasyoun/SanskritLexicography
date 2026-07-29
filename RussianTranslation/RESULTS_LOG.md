@@ -4,6 +4,42 @@ _Created: 09-07-2026 · Last updated: 29-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 29-07-2026 (later) — H1210 coverage fill (H1846): the A/B at 100 vs 100, and the metric flips the winner
+
+Arm A's 13 unattempted cards run from the frozen payloads (Opus 5 1M `claude-opus-5[1m]`
+session; workers Sonnet 5 `claude-sonnet-5`, controller resolved to `claude-opus-5[1m]` for
+these 13 vs `claude-opus-4-8` for the original 87). Both arms now at **100/100 attempted**.
+Report updated in place:
+[H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md).
+
+**The fill overturned the earlier conclusion — via the metric, not the new cards.**
+`canonical_audit.py` scores `cards_out`, which holds the last attempt that *returned*, while
+`final_status` records how the card *ended*; a card whose controller rejected attempt 1 and
+whose attempt 2 died mid-stream ends `worker-null-death` yet still carries attempt 1's text
+into the audit. So "audit-clean" includes cards the pipeline refused to ship — 21 in arm A,
+8 in arm B.
+
+| entry-length quartile | A audit-clean | B audit-clean | A shippable | B shippable |
+|---|---:|---:|---:|---:|
+| Q1 (28–176 B) | 22/22 (100%) | 21/22 (95%) | 22/22 (100%) | 21/22 (95%) |
+| Q2 (180–526 B) | 23/23 (100%) | 21/23 (91%) | 23/23 (100%) | 21/23 (91%) |
+| Q3 (670–4349 B) | 19/22 (86%) | 19/22 (86%) | 15/22 (68%) | 15/22 (68%) |
+| Q4 (4553–11974 B) | 20/23 (87%) | 8/23 (35%) | **3/23 (13%)** | **4/23 (17%)** |
+| no_pwg | 9/10 (90%) | 9/10 (90%) | 9/10 (90%) | 9/10 (90%) |
+| **TOTAL** | **93/100** | **78/100** | **72/100** | **70/100** |
+
+`shippable` = audit promote-DRY **and** the rig ended the card `clean-no-review` /
+`clean-controller-approved`. On that metric the arms **tie (72 vs 70)** and Q4 **reverses**
+(13% vs 17%): neither pipeline ships long entries unattended. The S2 defect-culprit stratum
+shows it sharpest — arm A 13 audit-clean → **4** shippable (9 refused), arm B 3 → **2**.
+
+**The earlier "length-routed hybrid" recommendation is withdrawn** — it rested on arm A's
+93% vs 35% on Q4, which does not survive the pipeline metric. Two caveats bound the tie:
+the 13 filled cards ran on a later controller tier, and **8 of them lost attempts to API
+transport failures** (`stalled mid-stream` / `connection closed`), so arm A's Q4 13% is a
+floor. Largest available lever is now the retry/transport layer (a null attempt consumes one
+of three), not the generator.
+
 ## 29-07-2026 — H1210: DeepSeek vs Claude-native on 100 stratified PWG cards
 
 Runs 28-07-2026, report 29-07-2026. Controller in **both** arms Opus 4.8

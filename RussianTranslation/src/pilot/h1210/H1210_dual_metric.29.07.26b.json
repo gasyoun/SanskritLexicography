@@ -1,0 +1,55 @@
+{
+ "schema": "pwg.h1210_dual_metric.v1",
+ "definitions": {
+  "audit_clean": "canonical_audit promote_dry",
+  "shippable": "promote_dry AND rig final_status in ['clean-controller-approved', 'clean-no-review']"
+ },
+ "rows": [
+  {
+   "stratum": "Q1 (28-176 B)",
+   "n": 22,
+   "arm_a_audit_clean": 22,
+   "arm_b_audit_clean": 21,
+   "arm_a_shippable": 22,
+   "arm_b_shippable": 21
+  },
+  {
+   "stratum": "Q2 (180-526 B)",
+   "n": 23,
+   "arm_a_audit_clean": 23,
+   "arm_b_audit_clean": 21,
+   "arm_a_shippable": 23,
+   "arm_b_shippable": 21
+  },
+  {
+   "stratum": "Q3 (670-4349 B)",
+   "n": 22,
+   "arm_a_audit_clean": 19,
+   "arm_b_audit_clean": 19,
+   "arm_a_shippable": 15,
+   "arm_b_shippable": 15
+  },
+  {
+   "stratum": "Q4 (4553-11974 B)",
+   "n": 23,
+   "arm_a_audit_clean": 20,
+   "arm_b_audit_clean": 8,
+   "arm_a_shippable": 3,
+   "arm_b_shippable": 4
+  },
+  {
+   "stratum": "no_pwg",
+   "n": 10,
+   "arm_a_audit_clean": 9,
+   "arm_b_audit_clean": 9,
+   "arm_a_shippable": 9,
+   "arm_b_shippable": 9
+  }
+ ],
+ "total": {
+  "arm_a_audit_clean": 93,
+  "arm_b_audit_clean": 78,
+  "arm_a_shippable": 72,
+  "arm_b_shippable": 70
+ }
+}
