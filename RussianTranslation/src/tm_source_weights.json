@@ -22,6 +22,11 @@
     "bhagavadgita-smirnov": 0.88,
     "bhagavadgita-erman": 0.88,
     "manavadharmashastra": 0.82,
-    "kama-sutra": 0.8
-  }
+    "kama-sutra": 0.8,
+    "rigveda-grassmann-de-1876": 0.74,
+    "rigveda-geldner-de-1951": 0.78,
+    "rigveda-elizarenkova-ru-1989": 0.78,
+    "rigveda-griffith-en-1896": 0.68
+  },
+  "_rv_witness_comment": "H1844 W1.12 -- per-translator priors for the corpus_translation_witness tier (trust_level: corpus_translation_witness, reuse_policy: suggest_only). Keyed by WORK, not by language, so the tier serves ru and en alike (R7) and a third language is a new row, not a rewrite. Ranked on scholarly standing rather than convenience: Geldner 1951-57 and Elizarenkova 1989-99 are the modern critical translations and sit above the generic rigveda 0.72 prior; Grassmann 1876-77 is a century older and metrically constrained; Griffith 1896 is the lowest of the four -- Victorian, freely padded, and the one layer whose supplied bracketed material this layer's own divergence typing has to treat as added_by_one."
 }

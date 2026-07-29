@@ -215,3 +215,201 @@ def test_renou_naming_does_not_collide_with_the_1956_register_axis():
     assert not os.path.exists(os.path.join(PWG_RU_DIR, 'renou_citation_index.jsonl'))
     for rec in _read_jsonl(RENOU_PATH)[:1]:
         assert rec['source'] == 'elizarenkova_commentary'
+
+
+# =============================================================================
+# Wave 1b (H1844) — typing, layer B, pipeline bridge, wisdomlib
+# =============================================================================
+
+import rv_divergence_type  # noqa: E402
+import rv_pipeline_bridge  # noqa: E402
+import rv_wisdomlib_bridge  # noqa: E402
+import rv_wordlevel_align  # noqa: E402
+
+PILOT_PATH = os.path.join(PWG_RU_DIR, 'rv_divergence_pilot.jsonl')
+PRECISION_REPORT = os.path.normpath(
+    os.path.join(HERE, '..', 'gold', 'rv_wordlevel_precision_report.md'))
+GOLD_WORDLEVEL = os.path.normpath(
+    os.path.join(HERE, '..', 'gold', 'rv_wordlevel_gold.jsonl'))
+TM_SCHEMA = os.path.join(SCHEMAS_DIR, 'translation_memory.schema.json')
+TM_WEIGHTS = os.path.normpath(os.path.join(HERE, '..', 'src', 'tm_source_weights.json'))
+
+
+# --- W1.6 · divergence pilot --------------------------------------------------
+
+def test_divergence_module_selftests_pass():
+    """Every wave-1b module carries deterministic asserts that need no model and no
+    network; they must stay green in CI, which has neither."""
+    assert rv_divergence_type.selftest() == 0
+    assert rv_wordlevel_align.selftest() == 0
+    assert rv_pipeline_bridge.selftest() == 0
+    assert rv_wisdomlib_bridge.selftest() == 0
+
+
+def test_divergence_absent_pairs_are_deterministic_not_model_decided():
+    """W1.6 acceptance: every `absent_from_source` pair is labelled `omitted_by_one`
+    WITHOUT a model call. RV 10.106.5–8 (Geldner's gap) is the known ground truth."""
+    stanza = {
+        'location': '10.106.5', 'mandala': 10, 'hymn': 106, 'stanza': 5,
+        'translations': {
+            'grassmann_de_1876': {'status': 'present', 'text': 'x'},
+            'geldner_de_1951': {'status': 'absent_from_source', 'text': None},
+            'elizarenkova_ru_1989': {'status': 'present', 'text': 'y'},
+            'griffith_en_1896': {'status': 'present', 'text': 'z'},
+        }}
+    det = rv_divergence_type.deterministic_pairs(stanza)
+    assert len(det) == 3
+    for key, entry in det.items():
+        assert 'geldner' in key
+        assert entry['class'] == 'omitted_by_one'
+        assert entry['method'] == 'deterministic'
+
+
+def test_divergence_taxonomy_projects_losslessly_to_the_coarse_fallback():
+    """K3's fallback taxonomy must be a projection of the five classes, so a run typed
+    at five classes is still usable if the fine distinction is ruled non-separable."""
+    assert set(rv_divergence_type.COARSE_MAP) == set(rv_divergence_type.FIVE_CLASSES)
+    assert set(rv_divergence_type.COARSE_MAP.values()) == set(rv_divergence_type.COARSE_CLASSES)
+    assert rv_divergence_type.COARSE_MAP['omitted_by_one'] == 'omission'
+    assert rv_divergence_type.COARSE_MAP['agreement'] == 'agreement'
+
+
+@pytest.mark.skipif(not os.path.exists(PILOT_PATH), reason='pilot not run in this checkout')
+def test_divergence_pilot_rows_are_well_formed():
+    rows = _read_jsonl(PILOT_PATH)
+    assert rows
+    for rec in rows[:200]:
+        assert rec['location'] and rec['arm'] and rec['model']
+        for key, entry in rec['pairs'].items():
+            assert key in rv_divergence_type.PAIR_KEYS
+            assert entry['method'] in ('model', 'deterministic')
+            if entry['class'] is not None:
+                assert entry['class'] in rv_divergence_type.FIVE_CLASSES
+
+
+# --- W1.10 · judge witness ----------------------------------------------------
+
+def test_witness_present_for_spine_headword_absent_otherwise():
+    """W1.10 acceptance, verbatim: a headword with an `id_pwg` in the spine receives a
+    witness block; one without receives none."""
+    stanzas, lemmas = _tiny_spine()
+    idx = rv_pipeline_bridge.index_by_id_pwg(lemmas)
+    assert rv_pipeline_bridge.witness_block_for_headword('349', idx, stanzas) is not None
+    assert rv_pipeline_bridge.witness_block_for_headword('404404', idx, stanzas) is None
+
+
+def test_witness_is_capped_at_three_loci_and_marked_advisory():
+    stanzas, lemmas = _tiny_spine()
+    idx = rv_pipeline_bridge.index_by_id_pwg(lemmas)
+    w = rv_pipeline_bridge.witness_block_for_headword('349', idx, stanzas)
+    assert len(w['loci']) <= rv_pipeline_bridge.WITNESS_N == 3
+    assert w['advisory'] is True
+
+
+# --- W1.11 · contradiction gate ----------------------------------------------
+
+def test_gate_queues_contradicting_card_and_passes_agreeing_one():
+    """W1.11 acceptance, verbatim: a synthetic contradicting card is queued, a synthetic
+    agreeing card is not."""
+    stanzas, lemmas = _tiny_spine()
+    idx = rv_pipeline_bridge.index_by_id_pwg(lemmas)
+    w = rv_pipeline_bridge.witness_block_for_headword('349', idx, stanzas)
+    queued = rv_pipeline_bridge.gate_decision('колесница, боевая повозка', w)
+    passed = rv_pipeline_bridge.gate_decision('Agni, der Priester des Opfers', w)
+    assert queued['action'] == 'queue_for_review'
+    assert passed['action'] != 'queue_for_review'
+
+
+def test_gate_never_rejects_and_never_consults_layer_b():
+    """ARCHITECTURE Sec.5 (queue, never reject) and R14 (layer B excluded after its gold
+    precision failed on all three languages)."""
+    stanzas, lemmas = _tiny_spine()
+    idx = rv_pipeline_bridge.index_by_id_pwg(lemmas)
+    w = rv_pipeline_bridge.witness_block_for_headword('349', idx, stanzas)
+    for gloss in ('колесница', 'Agni', '', 'Priester'):
+        d = rv_pipeline_bridge.gate_decision(gloss, w)
+        assert d['action'] in ('queue_for_review', 'log_only', 'none')
+        assert 'reject' not in d['action']
+        assert d['layer_b_used'] is False
+
+
+def _tiny_spine():
+    stanzas = {
+        '1.1.1': {'location': '1.1.1', 'translations': {
+            'grassmann_de_1876': {'status': 'present', 'text': 'Den Priester Agni preise ich'},
+            'geldner_de_1951': {'status': 'present', 'text': 'Agni berufe ich als Bevollmächtigten'},
+            'elizarenkova_ru_1989': {'status': 'present', 'text': 'Агни призываю я жреца'},
+            'griffith_en_1896': {'status': 'present', 'text': 'I Laud Agni the chosen Priest'}}},
+    }
+    lemmas = [{'lemma': 'agní-', 'id_pwg': ['349'], 'occurrence_count': 1724,
+               'occurrences': [{'location': '1.1.1', 'form': 'agním',
+                                'token_index': 0, 'wordlevel': None}]}]
+    return stanzas, lemmas
+
+
+# --- W1.12 · TM tier ----------------------------------------------------------
+
+def test_tm_tier_added_and_reachable_on_both_languages():
+    """W1.12: the new trust_level validates against the TM schema and the tier is
+    reachable on BOTH `ru` and `en` (R7 — not for Russian only)."""
+    with open(TM_SCHEMA, encoding='utf-8') as f:
+        schema = json.load(f)
+    assert 'corpus_translation_witness' in schema['$defs']['trust_level']['enum']
+    assert 'suggest_only' in schema['$defs']['reuse_policy']['enum']
+    assert set(schema['$defs']['lang']['enum']) == {'ru', 'en'}
+
+
+def test_tm_source_weights_are_keyed_by_work_not_language():
+    """The structural claim behind the SHARED parity verdict: a third language is a new
+    row, not a rewrite. An English witness must already carry its own prior."""
+    with open(TM_WEIGHTS, encoding='utf-8') as f:
+        weights = json.load(f)
+    by_work = weights['by_work']
+    for translator in ('rigveda-grassmann-de-1876', 'rigveda-geldner-de-1951',
+                       'rigveda-elizarenkova-ru-1989', 'rigveda-griffith-en-1896'):
+        assert translator in by_work, translator
+        assert 0.0 <= by_work[translator] <= 1.0
+    assert by_work['rigveda-griffith-en-1896'] > 0, 'the EN path must be populated, not promised'
+
+
+# --- W1.9 · layer-B precision (recorded failure) ------------------------------
+
+@pytest.mark.skipif(not os.path.exists(PRECISION_REPORT), reason='gold not scored here')
+def test_layer_b_precision_failure_is_recorded_not_silently_passed():
+    """R14 / stop condition 3. Layer B measured de 29.2 % · ru 19.2 % · en 10.5 % against
+    an 85 % bar. This test pins that the FAILURE is recorded — a future change that makes
+    layer B look passing without new gold must break here."""
+    text = open(PRECISION_REPORT, encoding='utf-8').read()
+    assert 'stop condition 3' in text.lower()
+    gold = _read_jsonl(GOLD_WORDLEVEL)
+    labelled = [r for r in gold if r['verdict'] in ('correct', 'incorrect')]
+    assert labelled, 'no adjudicated rows'
+    for r in labelled:
+        assert r['annotator'], 'every verdict must name its annotator (tier + version)'
+    for target in ('de', 'ru', 'en'):
+        rows = [r for r in labelled if r['target'] == target]
+        if rows:
+            precision = sum(1 for r in rows if r['verdict'] == 'correct') / len(rows)
+            assert precision < 0.85, (target, precision)
+
+
+# --- W1.13 · wisdomlib --------------------------------------------------------
+
+def test_wisdomlib_join_key_is_sound_so_the_empty_result_is_a_data_fact():
+    """The role-2 join returned 0 rows. This pins that the KEY is not why: the folded key
+    demonstrably carries ASCII slugs onto IAST headwords. The zero is a property of the
+    63-word Buddhist-terminology feed, not of the join."""
+    assert rv_wisdomlib_bridge.fold_key('akshobhya') == rv_wisdomlib_bridge.fold_key('akṣobhya')
+    assert rv_wisdomlib_bridge.fold_key(rv_wisdomlib_bridge.strip_lemma('agní-')) == 'agni'
+    assert rv_wisdomlib_bridge.fold_key(rv_wisdomlib_bridge.strip_lemma('índra-')) == 'indra'
+    wl = {'agni': {'word': 'agni', 'traditions': ['vedic'], 'gloss_count': 3, 'headings': []}}
+    rv = {'agni': {'lemma': 'agní-', 'occurrence_count': 9, 'id_pwg': ['349']}}
+    assert len(rv_wisdomlib_bridge.build_role2(wl, rv)) == 1
+
+
+def test_wisdomlib_bridge_makes_no_network_calls():
+    """W1.13 acceptance: the run makes zero network calls (R17)."""
+    src = open(rv_wisdomlib_bridge.__file__, encoding='utf-8').read()
+    import re as _re
+    assert not _re.findall(
+        r'^\s*(?:import|from)\s+(urllib|requests|httpx|socket|aiohttp|http)\b', src, _re.M)
