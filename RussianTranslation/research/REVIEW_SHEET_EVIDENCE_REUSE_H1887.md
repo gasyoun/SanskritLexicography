@@ -1,6 +1,6 @@
 # Why the compound review sheet was unanswerable — and the gate that stops it recurring
 
-_Created: 29-07-2026 · Last updated: 29-07-2026_
+_Created: 29-07-2026 · Last updated: 30-07-2026_
 
 _Measured by Opus 5 (1M context) (`claude-opus-5[1m]`) for [H1887](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1887-Opus_SanskritLexicography_compound-differs-sheet-evidence-recut_29.07.26.md).
 Deterministic; no LLM in the measurement path. Scripts:
@@ -159,6 +159,41 @@ Each card carries both splits in IAST, both dictionaries' own printed text
 difference, DCS frequency or a stated reason there is none, and 157 links across
 the sheet (kosha co-location, PWG scan column, Cologne MW, ashtadhyayi.com).
 `<ab>` abbreviations are glossed through `pwg_ab_ru.display()`.
+
+## v2 (30-07-2026) — eight corrections from the first read of the sheet
+
+MG read the ratification sheet and filed eight points. All eight are applied; three
+were substantive rather than cosmetic.
+
+| # | Point | What changed |
+|---|---|---|
+| 1 | The rule label printed three times (badge · «Правило:» · filter bar), and «Анусвара справа от границы» is the wrong name | Renamed **«Анусвара справа от первой части»**; `badges` dropped; the emitter's `filters` bar emptied so the seven labels appear once, in the «Правило» facet row |
+| 2 | No statistics | A rule × rows × share × cards-here table in the header, and each card states how much of the queue its rule carries |
+| 3 | «Указатель» is opaque; and nobody claims `ṃtapa` is a word | Relabelled **«MW split»**; the anusvāra is reattached leftward for display, so the card now shows **`janaṃ + tapa`**, with a note explaining MW's `jana—ṃ-tapa` notation |
+| 4 | "Тип самасы не назначен" repeated on every card | Removed from the cards; stated once in the footer **with what is actually missing** — a classifier over the two members and their case relation |
+| 5 | `tejo—'hvā` — the apostrophe is avagraha | Cards carrying `'` now say so and give the pre-sandhi form (`tamo—'ri` → восходит к `tamo—ari`) |
+| 6 | A samāsa has exactly two parts (dvandva excepted); MW's three-member list is a samāsa inside a samāsa | Cards where MW lists >2 members carry that ruling explicitly |
+| 7 | «MW оставляет суффикс в хвосте, PWG называет лексему» | Renamed **«MW оставляет с суффиксом, PWG приводит основу»** |
+| 8 | `aṅghri + parṇa (von aṅghri + parṇa)` — German glue, and the same thing twice | The source cell collapses to «= членение» when it only repeats the split; `von` is not treated as content. It appears in **780 of 4,353** parens |
+
+### Point 6 is a ruling, not a preference — and it reaches past this sheet
+
+Measured after MG stated it: **PWG gives exactly two members in 4,342 of 4,353 rows
+(99.7 %)**. MW gives three in 66 rows, and in **all 66** PWG gives two. So the binary
+principle is already what PWG does, and MW's extra members are the recursive
+decomposition of the first member, not a competing analysis.
+
+That reclassifies rows the adjudicator currently leaves **unresolved**:
+
+| rule | rows | current verdict | under MG's ruling |
+|---|---:|---|---|
+| `granularity_ic_vs_full_decomposition` | 31 | `unresolved` | resolves for PWG |
+| `arity_differs_no_alignment` | 13 | `unresolved` | needs a look — arity differs *without* alignment, so not automatically the same case |
+
+Applying it would retire **~31 further rows** and shrink the unresolved bucket from
+247. Not applied here: it requires re-running `adjudicate_compound_differs.py` with the
+rule added, which is a separate change to a file this sheet only reads. Queued as [H1918](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1918-Sonnet_SanskritLexicography_compound-binary-samasa-rule-rerun_30.07.26.md)
+rather than done silently.
 
 ## Known gaps, stated rather than hidden
 
