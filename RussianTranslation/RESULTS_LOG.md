@@ -1039,6 +1039,30 @@ Context: [H1844](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1844-Opus
 
 The spike/pilot column split is itself the result: a 300-observation spike read `lexical_variant` as dead (1 label) when its rate at scale is 6.0 %. `added_by_one` is inert at both scales — 0 of 12,000 — which is implausible against Griffith's freely supplied material and is flagged as a prompt/taxonomy defect, not a fact about the corpus.
 
+### Spike S2 — inter-model agreement on the divergence taxonomy (H1901, 29-07-2026)
+
+Three arms, same seeded 50-stanza sample (seed 1844), 300 (stanza × pair) labels each. Arms: **`deepseek-chat`** (DeepSeek, direct), **`openai/gpt-4o-mini`** and **`google/gemini-2.5-flash`** (both via OpenRouter). Orchestration Opus 5 (`claude-opus-5[1m]`). Cost for the two new arms: **$0.054**.
+
+| Pair | n | five-class κ | coarse κ | `lexical_variant` vs `semantic_shift` κ |
+|---|--:|--:|--:|--:|
+| deepseek ↔ gpt-4o-mini | 300 | 0.222 | 0.235 | **0.089** |
+| deepseek ↔ gemini-2.5-flash | 267 | 0.357 | 0.350 | **−0.012** |
+| gpt-4o-mini ↔ gemini-2.5-flash | 267 | 0.227 | 0.216 | **0.256** |
+
+Per-arm class usage on the shared sample:
+
+| Class | deepseek | gpt-4o-mini | gemini-2.5-flash |
+|---|--:|--:|--:|
+| `agreement` | 37.7 % | 20.3 % | 27.3 % |
+| `lexical_variant` | 0.3 % | 11.0 % | 6.7 % |
+| `semantic_shift` | 62.0 % | 68.7 % | 65.9 % |
+| `omitted_by_one` | 0.0 % | 0.0 % | 0.0 % |
+| `added_by_one` | **0.0 %** | **0.0 %** | **0.0 %** |
+
+**Verdict: the fine distinction is not separable** (mean κ ≈ 0.11, one arm-pair below chance) — K3 fires. Collapsing to coarse raises κ only to 0.216–0.350, "fair" but not reliable, so the coarse taxonomy is *more* reproducible without being demonstrated *reliable*; the step-8 human gate is the instrument for that and is now more load-bearing, not less.
+
+**Methodological caution, recorded because it nearly shipped as a positive result:** raw agreement on the `lexical_variant`/`semantic_shift` subset reads 89.0 % / 95.1 % / 85.7 % — near-consensus by appearance, worthless in fact. All three models default to `semantic_shift`, so they agree by sharing a prior; κ removes that expected agreement and leaves ~nothing. Under extreme base-rate skew, percent-agreement measures the skew. `added_by_one` never fires in any arm (0/300, 0/300, 0/267), which indicts the instrument rather than the corpus.
+
 ### Layer-B word-level precision — 300-token gold, 69 adjudicated
 
 Bar: ≥ 85 % per target language (R14). Annotator Opus 5 (`claude-opus-5[1m]`); sample frequency-stratified, seed 1844.
