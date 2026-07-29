@@ -1,0 +1,41 @@
+{
+  "sheet_id": "sanskritlexicography-pwg-compound-rules_ratify30",
+  "rows": 30,
+  "joined": {
+    "research/pwg_compound_differs_adjudication.tsv": [
+      "verdict",
+      "rule",
+      "reason",
+      "evidence",
+      "pwg_members",
+      "index_members",
+      "pwg_source_paren",
+      "mw_k2_raw",
+      "dcs_freq",
+      "L_id"
+    ],
+    "src/pwg_columns.tsv": [
+      "column"
+    ],
+    "src/headword_index.tsv": [
+      "compound_members"
+    ],
+    "src/pwg_derivation_layer.tsv": [
+      "panini_sutras"
+    ],
+    "src/pwg_freq_order.tsv": [
+      "count_all"
+    ]
+  },
+  "omitted": {
+    "src/mw_compounds.json": "the index side IS MW: headword_index.compound_members is Funderburk's em-dash segmentation of MW <k2>, already shown as one of the two sides — joining this again would double-count one source as two opinions",
+    "src/pwg_entry_locations.tsv": "pagination only; pwg_columns.tsv already supplies the printed column used for the scan link, and entry location bears on neither split nor rule",
+    "src/pwg_pages.tsv": "page-level index, superseded here by pwg_columns.tsv which is column-level and is what the PWG scan URL actually needs",
+    "src/reverse_paradigm_index.json": "inflectional paradigms keyed on the same headwords; the question under ratification is compound segmentation, on which paradigm data is silent",
+    "research/lex_noun_link_pwg.tsv": "noun-sense linking layer; covers 16 of these 30 headwords but carries sense links, not segmentation evidence, so it cannot bear on the rule",
+    "samasa subtype per headword": "SamasaChakram carries a 58-subtype taxonomy and 20 worked plates but no headword-to-subtype mapping exists in any repo; the wheel is linked instead",
+    "DCS attested sentence": "the DCS attestation tables in research/ are SENSE-level for PWG entries, not headword-level for compounds; no per-compound sentence map exists yet"
+  },
+  "cards": 30,
+  "notes": []
+}
