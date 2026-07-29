@@ -17,6 +17,11 @@ not an error.
 ### Fixed
 - **A git worktree can no longer silently ship a degraded RussianTranslation artifact — sibling-repo root resolution is now one shared, worktree-aware helper across all 11 `src/` modules** (29-07-2026, Sonnet 5 `claude-sonnet-5`, [H1902](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1902-Sonnet_SanskritLexicography_sibling-root-worktree-hardening_29.07.26.md)). FINDINGS §503 / issue [#875](https://github.com/gasyoun/SanskritLexicography/issues/875): eleven modules guessed `GitHub/` as three levels up from `src/`, true only in the canonical checkout — a worktree (which the org's own shared-tree rule requires) lands beside `GitHub/`, not inside it, so every optional sibling-repo lookup (`pwgab`, `pwgbib`, `csl-orig`, …) silently returned nothing instead of failing. New [`src/sibling_root.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/sibling_root.py) resolves the root via `CSL_SIBLING_ROOT` override, then **auto-detects a linked worktree** (`git rev-parse --git-common-dir` vs `--git-dir`) and resolves from the main checkout with no env var needed, then falls back to the historical guess. When the root is pinned (override or auto-detected worktree), a missing table now **raises** instead of degrading — silence is only legitimate on the unpinned fallback (a fresh CI clone). Verified live from a worktree with no env var: `pwg_ab.py coverage` resolved all 836 pwgab entries — the exact scenario that shipped the degraded H1847 G5 sheet.
 
+## [1.109.0] — 2026-07-29
+
+### Fixed
+- **Gate sheet v4 — two contrast bugs I introduced, and a 10-line header cut to one** (29-07-2026, Opus 5 `claude-opus-5[1m]`). MG could not read white text on the yellow highlight, nor the pale "В чём разница" text on its pale-blue panel. Both were the same defect: v2/v3 set a `background` on `mark.rv-hit`, `.rv-why`, `.rv-asym` and `.rv-chrono` and left the foreground to `inherit`, so each block took the theme's colour. Every coloured block now sets **both** background and an explicit dark `color`. The 10-line subtitle is reduced to one line (item count + the 80 % bar) with the full methodology — highlighting, chronology, sampling — moved to a `.rv-method` block at the **end** of the page.
+
 ## [1.107.0] — 2026-07-29
 
 ### Added

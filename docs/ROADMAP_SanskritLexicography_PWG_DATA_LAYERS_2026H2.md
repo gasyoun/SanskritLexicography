@@ -1,4 +1,4 @@
-_Created: 19-07-2026 · Last updated: 19-07-2026_
+_Created: 19-07-2026 · Last updated: 29-07-2026_
 
 # ROADMAP — PWG data layers 2026 H2
 
@@ -27,6 +27,30 @@ Ordered; each step states what unblocks it. Full file-level steps in [IMPLEMENTA
 
 - MG reviews the staged csl-corrections change files, runs [/cologne-batch-pr](https://github.com/gasyoun/claude-config/blob/main/commands/cologne-batch-pr.md) → one consolidated PR to csl-orig at most ~monthly.
 - Sense-segmentation disagreements (an editorial claim about Böhtlingk, higher evidence bar) get a separate review sheet before any are proposed.
+
+**Gate — three open `@DECIDE`s block Wave-2 execution** (filed from the 20-07-2026 Wave-1 pass
+in [Uprava GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md);
+restated here so this roadmap is self-contained and does not require cross-referencing
+`.ai_state.md`/GTD):
+
+1. **RU-store quarantine — re-translate or not.** W1.4 quarantined the `〉`-contaminated RU
+   cards into a side marker (`reports/pwg_ru_glyph_quarantine.jsonl`) without touching the RU
+   store itself. A human must rule whether those quarantined cards get re-translated against
+   the corrected `〉` segmentation (this is also the trigger condition for Wave 3) or left as-is
+   with the contamination flagged in place.
+2. **`senses_pwg.jsonl` full-corpus build scope.** W1.7 extended `senses_pwg.jsonl` only over
+   the data Wave 1 touched; a human must decide whether Wave 2 commits to a full-corpus
+   `senses_pwg.jsonl` build (all 123,366 PWG records) versus staying scoped to the subset
+   already covered.
+3. **The untraceable "12 PWG typos" list.** A previously-cited count of "12 PWG typos" cannot be
+   traced back to a concrete, itemized source list; a human must rule whether to (a) re-derive
+   the list from the current typo-candidate pool, (b) treat the number as stale and drop it, or
+   (c) accept it unverified for Wave-2 planning purposes.
+
+Until all three are ruled, Wave-2 candidates (4)/(5) in
+[PLAN_SanskritLexicography_PWG_DATA_LAYERS_2026H2.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_PWG_DATA_LAYERS_2026H2.md)
+— the `〉` glyph-tier xref/OntoLex follow-ons and the DeepSeek sanity-check fix — can be staged
+but not shipped.
 
 ## Wave 3 — requeue the `〉`-contaminated RU cards (budget-gated)
 
