@@ -29,7 +29,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-GITHUB_ROOT = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB_ROOT, _ = sibling_root()  # GitHub/ (H1902: worktree-safe root resolution)
 VEDAWEB_DIR = os.path.join(GITHUB_ROOT, 'VisualDCS', 'non-derived', 'vedaweb')
 PWG_RU_DIR = os.path.normpath(os.path.join(HERE, '..', 'pwg_ru'))
 SCHEMAS_DIR = os.path.normpath(os.path.join(HERE, '..', 'schemas'))

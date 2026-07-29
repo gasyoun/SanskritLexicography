@@ -67,7 +67,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
-GITHUB = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB, _ = sibling_root()  # GitHub/ (H1902: worktree-safe root resolution)
 
 CS_DIR = os.environ.get('MBH_EDITION_COMPARISON_DIR', os.path.join(
     GITHUB, 'CommentaryStrategies', 'data', 'edition_comparison_mbh'))

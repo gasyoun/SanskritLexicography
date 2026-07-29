@@ -129,6 +129,9 @@ jobs:
       - name: Validate research-layer sidecars (capability cards 5, 23)
         working-directory: RussianTranslation
         run: |
+          # H1902: worktree-safe sibling-root resolution -- proves both the
+          # unpinned-warn and pinned-raise directions (FINDINGS #503).
+          python src/sibling_root.py --selftest
           python src/mw_compounds.py --selftest
           python src/mfs_baseline.py --selftest
           python src/government_census.py selftest

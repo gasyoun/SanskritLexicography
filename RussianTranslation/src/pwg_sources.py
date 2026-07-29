@@ -15,10 +15,12 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-# `CSL_SIBLING_ROOT` override: see the same note in pwg_ab.py — a git worktree
-# sits BESIDE GitHub/, so the three-levels-up guess misses every sibling repo
-# and the bibliography degrades to "no citation tooltips" without failing.
-GH = os.environ.get('CSL_SIBLING_ROOT') or os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+from sibling_root import sibling_root, require_sibling  # noqa: E402
+
+# See sibling_root.py / pwg_ab.py — a git worktree sits BESIDE GitHub/, so the
+# three-levels-up guess misses every sibling repo and the bibliography
+# degrades to "no citation tooltips" without failing (H1847/H1902).
+GH, _ = sibling_root()
 BIB = os.path.join(GH, 'csl-pywork', 'v02', 'distinctfiles', 'pwg', 'pywork', 'pwgauth', 'pwgbib.txt')
 PWG = os.path.join(GH, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 HI = re.compile(r'<HI code="([^"]*)" iast="([^"]*)">(.*)')
@@ -31,22 +33,25 @@ def norm(s):
 
 _BIB = None
 def bib():
-    """The PWG bibliography, or an EMPTY map when the sibling repo is not checked out.
+    """The PWG bibliography, or an EMPTY map when the sibling repo is not checked out
+    under an UNPINNED root.
 
     `BIB` lives in `csl-pywork`, a SIBLING repo that is optional: CI checks out only this
-    one, and so does a fresh clone. This used to raise FileNotFoundError, which turned an
-    absent *enrichment* source into a hard failure of the promotion path itself --
-    `promote_final_cards.rows_for` -> `extract_citation_edges` -> here. Citation edges are
-    additive metadata; a missing bibliography must degrade to "no expansions resolved",
-    never to "the store cannot be written". Cached either way, so the miss costs one stat.
+    one, and so does a fresh clone -- `promote_final_cards.rows_for` -> `extract_citation_edges`
+    -> here must degrade to "no expansions resolved" there, never to "the store cannot be
+    written". But when the root is PINNED (H1902), a missing bibliography is a build defect,
+    not an optional degradation, and `require_sibling` raises instead. Cached either way, so
+    the miss costs one stat.
     """
     global _BIB
     if _BIB is None:
         _BIB = {}
-        try:
-            handle = open(BIB, encoding='utf-8')
-        except OSError:
+        # PINNED root (CSL_SIBLING_ROOT set, or a detected worktree auto-resolved to
+        # its main checkout) + missing bibliography = a build defect, not an optional
+        # degradation (H1902 / FINDINGS #503) -- require_sibling raises in that case.
+        if not require_sibling(BIB, 'pwg_sources: bibliography'):
             return _BIB
+        handle = open(BIB, encoding='utf-8')
         for line in handle:
             h = HI.search(line)
             if not h:

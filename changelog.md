@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **A git worktree can no longer silently ship a degraded RussianTranslation artifact — sibling-repo root resolution is now one shared, worktree-aware helper across all 11 `src/` modules** (29-07-2026, Sonnet 5 `claude-sonnet-5`, [H1902](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1902-Sonnet_SanskritLexicography_sibling-root-worktree-hardening_29.07.26.md)). FINDINGS §503 / issue [#875](https://github.com/gasyoun/SanskritLexicography/issues/875): eleven modules guessed `GitHub/` as three levels up from `src/`, true only in the canonical checkout — a worktree (which the org's own shared-tree rule requires) lands beside `GitHub/`, not inside it, so every optional sibling-repo lookup (`pwgab`, `pwgbib`, `csl-orig`, …) silently returned nothing instead of failing. New [`src/sibling_root.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/sibling_root.py) resolves the root via `CSL_SIBLING_ROOT` override, then **auto-detects a linked worktree** (`git rev-parse --git-common-dir` vs `--git-dir`) and resolves from the main checkout with no env var needed, then falls back to the historical guess. When the root is pinned (override or auto-detected worktree), a missing table now **raises** instead of degrading — silence is only legitimate on the unpinned fallback (a fresh CI clone). Verified live from a worktree with no env var: `pwg_ab.py coverage` resolved all 836 pwgab entries — the exact scenario that shipped the degraded H1847 G5 sheet.
+
 ## [1.107.0] — 2026-07-29
 
 ### Added

@@ -40,7 +40,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-GITHUB = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+from sibling_root import require_sibling, sibling_root  # noqa: E402
+GITHUB, _ = sibling_root()  # GitHub/ (H1902: worktree-safe root resolution)
 CSL_ORIG = os.path.join(GITHUB, 'csl-orig', 'v02')
 
 _TAG_RE = re.compile(r'<[^>]+>')
@@ -146,7 +147,9 @@ def report(limit=None):
     print('=== Part B — CDSL English/German dictionary redirect discovery (H404) ===')
     print('%-8s %10s %8s %14s %14s %s' % ('dict', 'records', 'lang', 'marker-present', 'bare(no-defn)', 'marker'))
     for code, info in DICTS.items():
-        if not os.path.exists(info['path']):
+        # Under a PINNED sibling root a missing csl-orig source is a build defect,
+        # not an expected gap (H1902 / FINDINGS #503) -- require_sibling raises there.
+        if not require_sibling(info['path'], '%s source' % code):
             print('%-8s  MISSING SOURCE (%s)' % (code, info['path']))
             continue
         n_total, n_marker, n_bare = count_dict(code, info, limit=limit)
