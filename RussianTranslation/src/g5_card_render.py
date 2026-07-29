@@ -48,6 +48,7 @@ at — honest gap over a fabricated link. Normalising the NWS citation conventio
 store-side is H1809.
 """
 import io
+import json
 import os
 import re
 import sys
@@ -105,6 +106,13 @@ DOMAIN_RU = {
     "Bio": "биология (растения, животные)",
     "Mat": "материалы / вещества",
     "Astr": "астрономия / астрология",
+    # Half-translated tags — the defect the census flagged (12 `без уточн.` +
+    # 2 `Мед.` corpus-wide). Measured again over the RU store for H1847: 13
+    # `без уточн` · 2 `Мед` · 1 `Линг` · 1 `Лингв` in 11,603 rows. They are
+    # glossed rather than left blank because a reviewer meeting one still needs
+    # to know what it says; the repair belongs store-side, not here.
+    "Линг": "лингвистика / грамматика",
+    "Лингв": "лингвистика / грамматика",
     # 119 senses, all under Gen. Almost certainly "эпическое" as a DOMAIN,
     # but the corpus also has Ep as a DIASYSTEM, so the reading is not
     # settled — say so rather than guess twice in one map (H1847).
@@ -138,6 +146,23 @@ _BRACKET_TAG = re.compile(
 _BRACKET_POS = re.compile(r"\[(?P<inner>[a-zA-Z]{2,4}(?:\s*\([A-Za-z]+\))?)\]")
 _BRACKET_NWS = re.compile(r"\[NWS:\s*(?P<src>[^\]]+)\]")
 _TAG_SPLIT = re.compile(r"(<[^>]+>)")
+
+#: The census's own aggregate, counts only — no dictionary text, so it is
+#: committable while `src/pilot/nws/` (the 168k scraped cards it was read off)
+#: stays gitignored. Its absence degrades to a legend without corpus shares,
+#: never to a wrong number.
+VOCAB_JSON = os.path.join(os.path.dirname(HERE), "pwg_ru",
+                          "NWS_TAG_VOCABULARY_CENSUS_2026-07.json")
+CENSUS_URL = ("https://github.com/gasyoun/SanskritLexicography/blob/master/"
+              "RussianTranslation/pwg_ru/NWS_TAG_VOCABULARY_CENSUS_2026-07.md")
+
+#: Which census counter answers for which slot. `position` spans two: the census
+#: counts `[ifc]`-style keys and their `(Bhvr)` qualifiers separately, because
+#: they are different things — a slot and a sub-classification of it.
+_VOCAB_SLOTS = {"diasystem": ("diasystem",), "domain": ("domain",),
+                "position": ("bracket", "bracket_qualifier")}
+
+_vocab_cache = {}
 
 
 def _norm(tok):
@@ -187,6 +212,116 @@ def _gloss_nws(m):
     return _abbr(m.group(0),
                  "NWS — слой «Nachträge»: источник добавления и страница (%s). "
                  "Это провенанс пометы, а не цитата из текста." % m.group("src").strip())
+
+
+# --------------------------------------------------------------------- the card's own tags
+#: Slot -> Russian name, in the order a reader meets them in `[Ved, unsp] [ifc]`.
+SLOT_RU = [("diasystem", "Диасистема"), ("domain", "Домен"),
+           ("position", "Позиция в сложном слове")]
+
+_SLOT_GLOSS = {"diasystem": DIASYSTEM_RU, "domain": DOMAIN_RU, "position": POSITION_RU}
+
+
+#: A value the bracket regex produced that cannot be a tag. `_BRACKET_TAG` is
+#: deliberately permissive about slot 2 (domains carry `(s.v. …)` suffixes and
+#: Cyrillic half-translations), which lets a malformed source bracket through
+#: whole: the store holds one `[Gen, unsp , 1349 A.D. , Delhi]`. The census
+#: REPORTS such residue on purpose — it is evidence — but a facet chip is a
+#: control, and a control labelled `unsp , 1349 A.D. , Delhi` is a defect. So
+#: the tooltips still gloss whatever is there; only the tag INDEX rejects it.
+_TAG_JUNK = re.compile(r"[\d,;:]|^.{15,}$")
+
+
+def _add(seq, value):
+    if value and value not in seq and not _TAG_JUNK.search(value):
+        seq.append(value)
+
+
+def card_tags(text):
+    """Which NWS tags this card actually carries, by slot (H1847).
+
+    Read with the SAME matchers that gloss them on hover, so the in-card legend
+    can never list a tag the tooltips do not know or miss one they do. Values
+    keep first-appearance order; a card with no NWS layer returns {}."""
+    out = {"diasystem": [], "domain": [], "position": []}
+    for m in _BRACKET_TAG.finditer(text or ""):
+        _add(out["diasystem"], _norm(m.group("a")))
+        b = m.group("b").strip()
+        msv = re.match(r"(?P<head>[^(]+)\((?P<sv>s\.v\.[^)]*)\)\s*$", b)
+        _add(out["domain"], _norm(msv.group("head").strip() if msv else b))
+    for m in _BRACKET_POS.finditer(text or ""):
+        parts = re.match(r"(?P<k>[a-zA-Z]+)(?:\s*\((?P<sub>[A-Za-z]+)\))?$",
+                         m.group("inner").strip())
+        if not parts or parts.group("k") not in POSITION_RU:
+            continue
+        _add(out["position"], parts.group("k"))
+        if parts.group("sub") and parts.group("sub") in POSITION_RU:
+            _add(out["position"], parts.group("sub"))
+    return {k: v for k, v in out.items() if v}
+
+
+def vocabulary(path=None):
+    """The census aggregate as `{counter_name: {tag: count}}`, or {} when the
+    JSON has not been generated in this clone. Cached per path."""
+    path = path or VOCAB_JSON
+    if path not in _vocab_cache:
+        try:
+            with io.open(path, encoding="utf-8") as fh:
+                _vocab_cache[path] = json.load(fh)
+        except (OSError, ValueError):
+            _vocab_cache[path] = {}
+    return _vocab_cache[path]
+
+
+def corpus_share(slot, tag, vocab=None):
+    """`tag`'s share of its slot across the WHOLE NWS corpus, as a percentage —
+    or None when the census JSON is absent or the tag is not in it. The share is
+    the number MG asked for («по всем аббревиатурам … нужна статистика»): a
+    reviewer meeting `[Reg, unsp]` on one card cannot tell from the card whether
+    `Reg` is a major tradition or a rounding error. It is 2.0%."""
+    vocab = vocabulary() if vocab is None else vocab
+    for counter in _VOCAB_SLOTS.get(slot, ()):
+        counts = vocab.get(counter) or {}
+        if tag in counts:
+            total = sum(counts.values())
+            return 100.0 * counts[tag] / total if total else None
+    return None
+
+
+def card_legend_html(tags, vocab=None):
+    """The in-card legend (H1847) — every tag ON THIS CARD, spelled out.
+
+    The tooltips added in H1808 answer «что такое [Gen, unsp]» only for a
+    reviewer who thinks to hover, one tag at a time, and not at all in print or
+    on a touch screen; the sheet-wide footer legend (`legend_html`) names the
+    COLOURS, not the vocabulary. So each card now states its own tags in full,
+    with each tag's corpus share beside it, and links the census for the rest of
+    the vocabulary. Returns "" for a card with no NWS tags — most cards — so
+    nothing is added where there is nothing to explain."""
+    if not tags:
+        return ""
+    vocab = vocabulary() if vocab is None else vocab
+    rows = []
+    for slot, slot_ru in SLOT_RU:
+        vals = tags.get(slot)
+        if not vals:
+            continue
+        bits = []
+        for v in vals:
+            gloss = _SLOT_GLOSS[slot].get(v) or _SLOT_GLOSS[slot].get(_norm(v))
+            share = corpus_share(slot, v, vocab)
+            bits.append('<span class="tagname">%s</span> — %s%s'
+                        % (v, gloss or "значение не установлено",
+                           "" if share is None else
+                           ' <span class="tagshare">%.1f%% корпуса</span>' % share))
+        rows.append('<div class="tagrow"><span class="tagslot">%s</span>%s</div>'
+                    % (slot_ru, " · ".join(bits)))
+    if tags.get("domain"):
+        rows.append('<div class="tagnote">%s</div>' % DOMAIN_NOTE_RU)
+    rows.append('<div class="tagnote">Полный словарь помет со статистикой: '
+                '<a href="%s" target="_blank" rel="noopener">NWS_TAG_VOCABULARY_CENSUS_2026-07.md</a>'
+                '</div>' % CENSUS_URL)
+    return '<div class="cardtags">%s</div>' % "".join(rows)
 
 
 # --------------------------------------------------------------------- bare citations
@@ -265,6 +400,7 @@ def annotate(html_text, *, bare_citations=True):
 PANEL_PRINT = "1 · Печатный вид — это и оценивается"
 PANEL_STORE = "2 · Та же строка в разметке store — цвета = части статьи, отсюда копировать в заметку"
 PANEL_DE = "3 · Немецкий источник (de), та же разметка"
+PANEL_TAGS = "4 · Пометы NWS на этой карточке — расшифровка и доля в корпусе"
 
 #: Which anatomy classes a PWG card can actually show — the legend lists only these.
 PWG_LEGEND_PARTS = ["sanskrit", "gloss", "citation", "grammar", "abbreviation",
@@ -320,6 +456,12 @@ EXTRA_CSS = """  .printview { line-height:1.6; }
   abbr.nwstag { border-bottom:1px dashed #7f8c9b; text-decoration:none; cursor:help; }
   span.barecit { border-bottom:1px dotted #e06c75; color:#e06c75; cursor:help; }
   .panelnote { color:#9aa0aa; font-style:italic; margin-top:6px; }
+  .cardtags .tagrow { margin-bottom:4px; }
+  .cardtags .tagslot { color:#9aa0aa; display:inline-block; min-width:12em; }
+  .cardtags .tagname { color:#e6c07b; }
+  .cardtags .tagshare { color:#9aa0aa; }
+  .cardtags .tagnote { color:#9aa0aa; font-style:italic; margin-top:6px; }
+  .cardtags a { color:#7fb2ff; }
 """
 
 
@@ -397,6 +539,46 @@ def _selftest():
     check(same_text(ls) is False, "same_text: a marked-up row does not")
 
     check("цитата со ссылкой" in legend_html(), "legend names the citation states")
+
+    # --- H1847: the card's own tags, the in-card legend, the facet values
+    t = card_tags(nws)
+    check(t["diasystem"] == ["Ved"] and t["domain"] == ["unsp"],
+          "card_tags reads both slots of [Ved, unsp]")
+    check(t["position"] == ["ifc", "Bhvr"],
+          "card_tags reads [ifc (Bhvr)] as BOTH the slot and its qualifier")
+    check(card_tags("обычная строка без помет") == {},
+          "a card with no NWS layer carries no tags — and gets no legend panel")
+    check(card_tags("[Śā, Med (s.v. ādi)]")["domain"] == ["Med"],
+          "a (s.v. …) suffix is not mistaken for part of the domain value")
+    # measured over the RU store: exactly one row carries this malformed bracket
+    junk = card_tags("[Gen, unsp , 1349 A.D. , Delhi]")
+    check(junk.get("domain") is None and junk["diasystem"] == ["Gen"],
+          "a malformed bracket yields no facet chip, but its good slot survives")
+    check(DOMAIN_RU.get("Линг"), "the Cyrillic half-translated domains are glossed")
+
+    leg = card_legend_html(t)
+    check("ведийское" in leg and "unspecified" in leg,
+          "the in-card legend spells out what the tooltips only hover")
+    check("in fine compositi" in leg and "бахуврихи" in leg,
+          "both positional tags are spelled out, qualifier included")
+    check("шастра" in leg, "the domain note (census headline) rides with a domain tag")
+    check(CENSUS_URL in leg, "the legend links the full vocabulary census")
+    check(card_legend_html({}) == "", "no tags -> no legend, not an empty box")
+
+    voc = vocabulary()
+    if voc:
+        share = corpus_share("diasystem", "Ved", voc)
+        check(share is not None and 25 < share < 35,
+              "corpus share is read from the census: Ved ~29% of diasystems")
+        check(corpus_share("position", "Bhvr", voc) is not None,
+              "a bracket QUALIFIER resolves too, not just the bracket key")
+        check("%" in card_legend_html(t), "the share reaches the rendered legend")
+    else:
+        print("  skip corpus-share checks  (census JSON absent — run "
+              "nws_tag_census.py --json)")
+    check(corpus_share("diasystem", "нет-такой-пометы", voc) is None,
+          "an unknown tag yields no share rather than a fabricated 0.0%")
+
     print("SELFTEST", "PASS" if ok else "FAIL")
     return 0 if ok else 1
 

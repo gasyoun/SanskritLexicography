@@ -14,7 +14,14 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-GH = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+# Sibling repos resolve three levels up from src/ — true for the canonical
+# checkout, FALSE in a git worktree, which the org's shared-tree rule requires
+# for exactly this repo. A worktree lands beside GitHub/, not inside it, so the
+# table silently "disappears" and every artifact rebuilt there loses its <ab>
+# tooltips without failing (H1847: a pinned sheet re-issue did exactly that).
+# The override makes the degradation opt-out rather than a property of where
+# the checkout happens to sit.
+GH = os.environ.get('CSL_SIBLING_ROOT') or os.path.normpath(os.path.join(HERE, '..', '..', '..'))
 AB = os.path.join(GH, 'csl-pywork', 'v02', 'distinctfiles', 'pwg', 'pywork', 'pwgab', 'pwgab_input.txt')
 PWG = os.path.join(GH, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 DISP = re.compile(r'<disp>(.*?)</disp>')
