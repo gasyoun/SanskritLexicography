@@ -14,14 +14,12 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-# Sibling repos resolve three levels up from src/ — true for the canonical
-# checkout, FALSE in a git worktree, which the org's shared-tree rule requires
-# for exactly this repo. A worktree lands beside GitHub/, not inside it, so the
-# table silently "disappears" and every artifact rebuilt there loses its <ab>
-# tooltips without failing (H1847: a pinned sheet re-issue did exactly that).
-# The override makes the degradation opt-out rather than a property of where
-# the checkout happens to sit.
-GH = os.environ.get('CSL_SIBLING_ROOT') or os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+from sibling_root import sibling_root, require_sibling  # noqa: E402
+
+# See sibling_root.py: three-levels-up resolves GitHub/ only in the canonical
+# checkout, not in a git worktree, which the org's shared-tree rule requires
+# for exactly this repo (H1847/H1902).
+GH, _ = sibling_root()
 AB = os.path.join(GH, 'csl-pywork', 'v02', 'distinctfiles', 'pwg', 'pywork', 'pwgab', 'pwgab_input.txt')
 PWG = os.path.join(GH, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 DISP = re.compile(r'<disp>(.*?)</disp>')
@@ -41,14 +39,13 @@ def table():
     global _AB
     if _AB is None:
         _AB = {}
-        if not os.path.exists(AB):
-            # The pwgab tooltip source lives in the sibling csl-pywork repo, which is
-            # not checked out in every environment (CI runs only this repo). A missing
-            # OPTIONAL tooltip table must degrade to "no expansion", never crash the
-            # site build (H1308): resolve() then returns None and <ab> tags render
-            # without a hover title. Warn once so a genuinely misconfigured local run
-            # stays visible.
-            sys.stderr.write('pwg_ab: table source not found (%s); <ab> tooltips disabled\n' % AB)
+        # The pwgab tooltip source lives in the sibling csl-pywork repo, which is not
+        # checked out in every environment (CI runs only this repo) -- require_sibling
+        # degrades that to "no expansion" (H1308). But when the sibling root is PINNED
+        # (CSL_SIBLING_ROOT set, or a worktree auto-resolved to its main checkout), a
+        # missing table there is a build defect, not an optional degradation, and raises
+        # (H1902 / FINDINGS #503).
+        if not require_sibling(AB, 'pwg_ab: table source'):
             return _AB
         for line in open(AB, encoding='utf-8'):
             if '\t' not in line:

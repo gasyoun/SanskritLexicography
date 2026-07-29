@@ -4862,7 +4862,22 @@ The other nine modules still carry the bare three-levels-up guess; porting the o
 not done. A stronger fix would make an *expected-but-absent* table a hard error when an env var
 says the operator expects it, so this cannot degrade quietly again.
 
-_29-07-2026 · [H1847](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1847-Opus_SanskritLexicography_nws-tag-vocabulary-facets_29.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+**Resolved (H1902).** All eleven modules now call one shared
+[`sibling_root.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/sibling_root.py)
+helper. Its `sibling_root()` tries, in order: (1) the `CSL_SIBLING_ROOT` env override, (2)
+auto-detection — `git rev-parse --git-common-dir` vs `--git-dir` differ inside a linked worktree,
+so the helper resolves the root from the *main* checkout automatically, with **no env var
+required** — and only then (3) the historical three-levels-up guess. Cases (1) and (2) are
+*pinned*: the operator (or the auto-detector) is asserting the siblings exist, so
+`require_sibling()` **raises** `FileNotFoundError` on an absent table instead of warning; case (3)
+(a fresh CI clone) keeps the original warn-and-continue path. Verified live: `pwg_ab.py coverage`
+run from this handoff's own worktree, no env var set, resolved all 836 pwgab entries via
+auto-detection — the exact scenario that shipped the degraded G5 sheet. Issue
+[#875](https://github.com/gasyoun/SanskritLexicography/issues/875) closed.
+
+_29-07-2026 · [H1847](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1847-Opus_SanskritLexicography_nws-tag-vocabulary-facets_29.07.26.md)
+· resolved [H1902](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1902-Sonnet_SanskritLexicography_sibling-root-worktree-hardening_29.07.26.md)
+· Opus 5 1M (`claude-opus-5[1m]`) → Sonnet 5 (`claude-sonnet-5`)_
 
 ### §504. The NWS tag layer reaches only 2.2 % of the RU store — a facet bar over it is right, but it is not the sheet's main axis
 

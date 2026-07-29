@@ -33,7 +33,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-GITHUB_ROOT = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB_ROOT, _ = sibling_root()  # GitHub/ (H1902: worktree-safe root resolution)
 COMMENTARY_DIR = os.path.join(
     GITHUB_ROOT, 'SamudraManthanam', 'Index', 'lib', 'x86_64-win64', 'add', 'To_add')
 PWG_RU_DIR = os.path.normpath(os.path.join(HERE, '..', 'pwg_ru'))
