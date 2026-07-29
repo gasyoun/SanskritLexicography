@@ -290,5 +290,7 @@
   "h1210-ab-038",
   "h1210-ab-039",
   "h1210-ab-040"
- ]
+ ],
+ "superseded_by": "h1210-ab-blind-100card-2026-07-29",
+ "superseded_note": "Never voted. Drawn from arm A's 87-card audit, before H1846 filled the 13 missing cards; its arm-A sample therefore excluded the top length band entirely and predates the FINDINGS §501 shippable/refused-but-audit-clean split. Superseded 29-07-2026."
 }

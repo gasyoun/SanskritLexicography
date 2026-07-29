@@ -14,6 +14,14 @@ not an error.
 
 ## [Unreleased]
 
+## [1.101.0] — 2026-07-29
+
+### Changed
+- **The blind A/B vote sheet redrawn on the 100-card data, and balanced across the §501 split** (29-07-2026, Opus 5 1M `claude-opus-5[1m]`, [H1846](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1846-Opus_SanskritLexicography_h1210-arm-a-coverage-fill_29.07.26.md)): the previous sheet was drawn from arm A's 87-card audit, so its arm-A sample excluded the top length band entirely; it was never voted and is now marked superseded in its own lock. The new sheet [`h1210-ab-blind-100card-2026-07-29`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/locks/h1210-ab-blind-100card-2026-07-29.lock.json) draws 20 per arm **half from `shippable` cards and half from `refused-but-audit-clean` ones** (arm A 10+10 of a 72/21 pool; arm B 12+8 of 70/8, taking all 8 it has and backfilling — reported, not silently rebalanced). Whether the refused half is publishable is the one question the machine cannot settle, and a uniform draw would have under-sampled it. Blinding verified on both axes: the HTML contains no arm token **and** no class or rig-status token; 40 unique ids, longest same-arm run 5, lock bound by content hash.
+
+### Fixed
+- **The sheet builder re-introduced the rig's own key-join trap** (29-07-2026, same handoff): `pick()` looked rig `final_status` up by the audit's `key1`, but the audit reports a third key form, so most lookups missed and the misses defaulted into `refused` — the split read **38/55 instead of the true 72/21**. Caught by comparing against [`status_vs_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/status_vs_audit.py) before the sheet was published. Both audits are now resolved through `ab_report.audit_index` — the one place that knows all three key forms and hard-errors on an unresolvable row instead of dropping it.
+
 ## [1.100.0] — 2026-07-29
 
 ### Changed

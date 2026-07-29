@@ -1352,7 +1352,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/h1210/wf_template_ab.js": "47a9c7640c8b1e59d19a0f7b716eaec873c6f10f69eb030e75de044d3b7d8119",
       "src/pilot/h1210/collect_arm_a.py": "153d58a3cc04c4e8ca120c8f42c4668be3266d7c3be33dd21e5afcc7f944058c",
       "src/pilot/h1210/ab_report.py": "4039fa57487f2b7fd1de3aa0eee2f0106c972d6a04e1e9f91e861ff95a248ad0",
-      "src/pilot/h1210/build_ab_review_sheet.py": "60c85ceda4564be231580b8940187d34ba5bb418b3da0bf7b34e02bc444e3d2c",
+      "src/pilot/h1210/build_ab_review_sheet.py": "b63464858a08c99db666c44309938f9997b7a36dfe3bdb458d87ad8fe5944b1b",
       "src/pilot/h1210/length_breakdown.py": "a77313540e96d2cb547af8080c0e16fe5ff769065b8f6afeede4830eef77057d",
       "src/pilot/h1210/coverage_gap.py": "7f63c07f4259688d35ec2d54302c3fdf46f8e96bb7762a24037508fcab093bd3",
       "src/pilot/h1210/qc_gloss_arity.py": "104067deaaacae102b55c83d7dfda7e8dcb99d37d7a0cb5e61aea6b086947307",
