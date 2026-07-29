@@ -208,13 +208,20 @@ the HTML carries no arm label in any id, badge or DOM order, and item order is a
 deterministic hash of `(sheet_id, key1, arm)`. Only cards the audit already passed are
 offered — rating a card the free gate hard-rejected measures nothing.
 
-The sheet renders both the Russian rendering and the German source through
-`csl_pyutil.anatomy.highlight()` with a legend, and every `<ls>` citation resolves to its
-scan through the repo's ported resolver
-([`src/ls_resolver.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver.py)) —
-1,430 linked citations in this sheet; abbreviation-only citations (`MED.`, `ŚKDR.`) stay
-plain rather than becoming dead links. This is the H1646/H1808 legibility standard, which
-every new sheet generator has so far had to re-learn.
+The sheet does not render its own panels: it calls
+[`src/g5_card_render.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/g5_card_render.py),
+the module H1808 made canonical for review cards, so the A/B vote and the G5 vote show
+markup the same way. The Russian goes through `print_panel` (the renderer the public
+article site uses — Cologne scan links with a bibliography tooltip, `<ab>` in Russian,
+italic IAST), the German through `de_panel`, and the sheet carries that module's legend and
+CSS. In this sheet: **715 linked citations**, plus 204 citations that carry a bibliography
+tooltip but no link because their sigla resolve to no scan (`RĀJAN.`, `ŚKDR.`) — an honest
+gap rather than a guessed URL.
+
+The first version of this generator hand-rolled its own colouring and linking, which is the
+defect H1646 and H1808 already fixed twice; it was replaced with the shared renderer once
+that module landed on `master` mid-session. Measured on arm B's cards, the shared path also
+links strictly more (2,227 of 2,992 citation spans) than the hand-rolled one did.
 
 **Publish safety:** the HTML embeds unpublished RU/DE store-grade text and is gitignored;
 only the lock is committed.

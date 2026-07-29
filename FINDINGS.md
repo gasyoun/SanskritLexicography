@@ -4744,7 +4744,7 @@ including the 14 clean approves. The votes were recoverable only through a secon
 Extrapolated to the n=400 store cut (H1665) at the observed 83 % non-compliance, that is ~100+
 unusable rejects and a second full reviewer pass.
 
-**Defect 2 — withholding the evidence does not test the reviewer, it corrupts the label.** Card 118
+**Defect 2 — withholding the evidence does not test the reviewer, it corrupts the label.** Card 122
 (`na` → «словно», work `08_rigveda`) was rejected with «na это всегда нет, никогда не словно».
 In Rigvedic usage `na` is a regular particle of comparison (Grassmann s.v. `na` 2; Macdonell §180,
 `śyeno na` «словно сокол») — a fact the project already owns in GRA, and one the card never
@@ -4779,6 +4779,14 @@ Both now gate the n=400 store gold cut.
 > [`review/decisions_applied_2026-07-28_g6-mqm-gold-starter.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_2026-07-28_g6-mqm-gold-starter.md)
 > · [H1796](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1796-Opus_SanskritLexicography_g6-mqm-gold-starter-vote-apply_28.07.26.md)
 > · 28-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
+>
+> **Correction (29-07-2026, H1801, Opus 5 1M `claude-opus-5[1m]`):** the reversed card is id
+> **122**, not 118 — the H1796 commit message, the H1801 handoff and this section's first
+> version all carried the same slip. Card **118** is `aruRAmSub` / `raghuvamsha` / Classical,
+> ruled `defer` with `needs_adjudication=true`; card **122** is `na` / `08_rigveda` / Vedic,
+> the one reversed on withheld Rigvedic evidence. Checked against rows 11 and 18 of
+> [`gold/decisions_g6-mqm-gold-starter-2026-07-25.csv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/decisions_g6-mqm-gold-starter-2026-07-25.csv).
+> The ruling and every count above are unaffected — only the id was misrecorded.
 
 ### §500. A batch that never runs deletes a *band* of the sample, not a random subset — byte-packed chunking makes an incomplete A/B silently flatter the arm that failed
 
