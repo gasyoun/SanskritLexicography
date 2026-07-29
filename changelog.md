@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.109.0] — 2026-07-29
+
 ### Fixed
 - **Gate sheet v4 — two contrast bugs I introduced, and a 10-line header cut to one** (29-07-2026, Opus 5 `claude-opus-5[1m]`). MG could not read white text on the yellow highlight, nor the pale "В чём разница" text on its pale-blue panel. Both were the same defect: v2/v3 set a `background` on `mark.rv-hit`, `.rv-why`, `.rv-asym` and `.rv-chrono` and left the foreground to `inherit`, so each block took the theme's colour. Every coloured block now sets **both** background and an explicit dark `color`. The 10-line subtitle is reduced to one line (item count + the 80 % bar) with the full methodology — highlighting, chronology, sampling — moved to a `.rv-method` block at the **end** of the page.
 
