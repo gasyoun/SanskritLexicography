@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §502) whatever its section, so existing numbers never shift; when a finding is later
+(currently §505) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -50,6 +50,8 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§499. Gold cards without evidence yield unusable votes — 5 of 6 MQM rejects carried no typology label, 1 of 20 labels reversed on adjudication](#499-gold-cards-without-evidence-yield-unusable-votes--5-of-6-mqm-rejects-carried-no-typology-label-1-of-20-labels-reversed-on-adjudication)
 - 🔴 [§500. A batch that never runs deletes a *band* of the sample, not a random subset — byte-packed chunking makes an incomplete A/B silently flatter the arm that failed](#500-a-batch-that-never-runs-deletes-a-band-of-the-sample-not-a-random-subset--byte-packed-chunking-makes-an-incomplete-ab-silently-flatter-the-arm-that-failed)
 - 🔴 [§501. An A/B whose "clean" metric scores the last attempt that RETURNED, not what the pipeline would ship, can name the wrong winner — and did](#501-an-ab-whose-clean-metric-scores-the-last-attempt-that-returned-not-what-the-pipeline-would-ship-can-name-the-wrong-winner--and-did)
+- 🔴 [§503. A git worktree silently disables every sibling-repo lookup in `src/` — artifacts rebuilt there lose layers without failing](#503-a-git-worktree-silently-disables-every-sibling-repo-lookup-in-src--artifacts-rebuilt-there-lose-layers-without-failing)
+- 🟠 [§504. The NWS tag layer reaches only 2.2 % of the RU store — a facet bar over it is right, but it is not the sheet's main axis](#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis)
 
 
 **Grammar & morphology data**
@@ -4826,6 +4828,75 @@ chunked run in this repo — bounded windows, cohort barriers, residual drains �
 > · [H1210](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1210-Opus_SanskritLexicography_pwg-ab-deepseek-vs-claude-100_17.07.26.md)
 > · runs 28-07-2026 (controller Opus 4.8 `claude-opus-4-8`, workers Sonnet 5 `claude-sonnet-5`,
 > generator `deepseek-chat`); coverage audit 29-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
+
+### §503. A git worktree silently disables every sibling-repo lookup in `src/` — artifacts rebuilt there lose layers without failing
+
+🔴 **`GH = normpath(join(HERE, '..', '..', '..'))` resolves to `GitHub/` only in the canonical
+checkout.** A worktree created the way this org's shared-tree rule *requires*
+(`git worktree add ../<Repo>-h###-<pid>`) lands beside `GitHub/`, not inside it, so that same
+expression resolves to `Documents/` — where no sibling repo exists. Eleven modules under
+`RussianTranslation/src/` compute their sibling root this way ([`pwg_ab.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_ab.py),
+[`pwg_sources.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_sources.py),
+`ls_coverage.py`, `citation_tm.py`, `corpus_gate.py`, `annotate_genres.py`,
+`build_mbh_concordance.py`, `part_b_xref_discovery.py`, `rv_griffith_extract.py`,
+`rv_renou_citations.py`, `rv_spine_build.py`).
+
+**The failure is silent by design.** These lookups are *optional* — a missing `pwgab`/`pwgbib`
+table degrades to "no tooltip" rather than crashing, because CI checks out only this repo (§ the
+H1308 rule). That is right for CI and wrong for a worktree: the operator has the tables, believes
+they are in use, and ships a thinner artifact. Measured on the H1847 pinned re-issue of the G5
+batch1v3 sheet, same command, same inputs, only the checkout differing:
+
+| Layer in the 150-card sheet | built in a worktree | built with `CSL_SIBLING_ROOT` set |
+|---|---:|---:|
+| `<ab>` abbreviation spans with German/Russian expansion | 0 | 253 |
+| unlinked-citation marks (needs `pwgbib`) | 1 | 8 |
+| Cologne `<ls>` links (needs neither) | 988 | 988 |
+
+The sheet was byte-valid, passed its own drift check 150/150, and would have gone to a reviewer
+missing exactly the layer that reviewer had asked for two days earlier (H1808).
+
+`So:` both tables now honour a `CSL_SIBLING_ROOT` env override, and any worktree-based rebuild of
+a reader-facing artifact must set it — `$env:CSL_SIBLING_ROOT="C:\Users\user\Documents\GitHub"`.
+The other nine modules still carry the bare three-levels-up guess; porting the override is queued,
+not done. A stronger fix would make an *expected-but-absent* table a hard error when an env var
+says the operator expects it, so this cannot degrade quietly again.
+
+_29-07-2026 · [H1847](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1847-Opus_SanskritLexicography_nws-tag-vocabulary-facets_29.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+
+### §504. The NWS tag layer reaches only 2.2 % of the RU store — a facet bar over it is right, but it is not the sheet's main axis
+
+🟠 **255 of 11,603 translated rows carry an NWS `[diasystem, domain]` bracket at all.** The tag
+vocabulary the whole-corpus census measured (48,214 tagged senses over 34,101 scraped NWS lemma
+cards) is a property of the *Nachträge* layer, not of the PWG rows our translation queue is made
+of — so on a 150-card G5 slice exactly 4 cards (2.7 %) show any tag, and the facet bar built for
+them offers 7–8 chips. The feature is still the right one (those 4 cards were previously
+unfindable), but sizing expectations off the census's 48k would be a category error: that number
+counts senses in the source dictionary, not cards in the review queue.
+
+What the store's own slice contains, and how it differs from the corpus:
+
+| Slot | distinct in the RU store | top values (store) | note |
+|---|---:|---|---|
+| diasystem | 10 | `Ved` 115 · `Śā` 67 · `Gen` 33 · `Buddh` 16 | `mahat` ×1 is parse residue |
+| domain | 12 | `unsp` 170 · `Med` 34 · `Soc` 15 · `Ling` 12 | 17 rows are half-translated (below) |
+| position | 2 | `ifc` 3 · `Bhvr` 1 | the corpus has ~10 more this slice never shows |
+
+Two data defects fell out of the same pass, both store-side, neither repaired here:
+
+1. **Half-translated machine-readable tags** — `без уточн` ×13, `Мед` ×2, `Линг` ×1, `Лингв` ×1.
+   The census flagged 12+2 corpus-wide; the RU store has 17. A tag that is sometimes Latin and
+   sometimes Russian cannot be grouped, counted, or faceted without an alias table.
+2. **One malformed bracket** — `[Gen, unsp , 1349 A.D. , Delhi]`, where a date and a place ran
+   into the domain slot. Harmless in a tooltip, a defect as a *control*: it would have rendered a
+   facet chip labelled `unsp , 1349 A.D. , Delhi`. The tag index now rejects values carrying
+   digits/commas while the tooltips still gloss whatever is present.
+
+`So:` facet a tag vocabulary off what the *cards in hand* carry (with the corpus share beside it
+for context), never off the corpus inventory — a chip that selects nothing is a dead control, and
+a corpus-sized expectation makes a working feature look broken.
+
+_29-07-2026 · [H1847](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1847-Opus_SanskritLexicography_nws-tag-vocabulary-facets_29.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
 
 ### §501. An A/B whose "clean" metric scores the last attempt that RETURNED, not what the pipeline would ship, can name the wrong winner — and did
 

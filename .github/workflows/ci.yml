@@ -154,7 +154,7 @@ jobs:
         # g5_card_render imports csl_pyutil.anatomy at module load, so this lane
         # needs the package rather than just py_compile. Pinned to the TAG, not
         # `@main` as the repo requirements.txt does, so a CI run stays reproducible.
-        run: pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.6.0"
+        run: pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.7.0"
       - name: Review-sheet binding + decisions + residue-gate selftests (H1404 lane)
         working-directory: RussianTranslation
         run: |
@@ -177,6 +177,12 @@ jobs:
           # in the sibling csl-pywork checkout, absent here, which also exercises
           # the no-tooltip degradation path.
           python src/g5_card_render.py
+          # H1847 NWS tag vocabulary: the in-card legend + the facet bar.
+          # Fixture-only — neither the queue nor the store is checked out here.
+          # The census aggregate IS committed (counts only), so the corpus-share
+          # path runs for real rather than self-skipping.
+          python src/nws_tag_census.py --selftest
+          python src/build_g5_review_sheet.py --selftest
       - name: LOD graph acceptance (fixture-only, H350/E7)
         working-directory: RussianTranslation
         run: |
