@@ -10,6 +10,50 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — RV multi-translation evidence spine, wave 1a: griffith/stanza/lemma/renou (H1843, 29-07-2026)
+
+Executes wave 1a (steps 1-6) of
+[IMPLEMENTATION](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/IMPLEMENTATION_RussianTranslation_rv-multitranslation-evidence.md),
+by Sonnet 5 (`claude-sonnet-5`). Five new committed feeds under
+[`pwg_ru/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/pwg_ru),
+built by three new deterministic scripts under
+[`src/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src)
+([`rv_griffith_extract.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_griffith_extract.py),
+[`rv_spine_build.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_spine_build.py),
+[`rv_renou_citations.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_renou_citations.py)),
+all invariants pinned by
+[`tests/test_rv_spine.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_rv_spine.py)
+(20/20 green):
+
+- **`griffith_en_1896.json`** — the Griffith 1896 English RV layer, extracted from
+  `rvlinks/RV_sa-hn-ru-de-en_1.html` (S1 spike: 10,552/10,552 loci matched the VedaWeb
+  set, 0% unmatched — no K5 mapping decision needed).
+- **`rv_stanza_translations.jsonl`** (10,552) + **`rv_lemma_occurrences.jsonl`** (9,961
+  lemma/form-keyed groups, 164,758 tokens) + **`rv_translation_spine.tsv`** (659,032 rows,
+  173.6 MB, under the 200 MB gitignore threshold) + `schemas/rv_translation_spine.schema.json`.
+  Every VERIFICATION §2 hard invariant reproduced exactly: Geldner `absent_from_source`
+  is 4 and exactly RV 10.106.5-8; Grassmann/Elizarenkova 0; zero empty rows; 164,758 tokens.
+- **`rv_renou_citation_index.jsonl`** (2,213 mentions) — reproduces the handoff's stated
+  grand total exactly via whole-word `Рену` counting over the ten
+  `SamudraManthanam/.../NN_rigveda.no_tags` commentary files (an undocumented dialect:
+  opening `<div>`/`<span>` tags carry attributes but no closing tags are ever emitted —
+  a footnote runs to the next tag-open, not to a `</span>`).
+
+**Two published reference numbers did not reconcile, logged rather than silently
+forced** (full reasoning in
+[`docs/DECISIONS_LOG_rv_multitranslation.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/DECISIONS_LOG_rv_multitranslation.md),
+per the plan's R16 autonomy contract — did not stop, did not ask): VERIFICATION §1.1's
+per-mandala Renou table (459/117/161/.../287) sums to 1,930, not the 2,213 it claims as
+its own total; this script's per-mandala breakdown (527/124/179/.../333) is internally
+consistent and used as the corrected reference going forward. Separately, the
+"368 quoted_fr" invariant was not independently reproduced by any of three tried
+heuristics (this script's literal ~25-char/Latin-script reading gives 459); recorded as
+an open question for wave 1b rather than hand-tuned to match an unverified number.
+
+Wave 1b (typing/alignment/wiring) is
+[H1844](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1844-Opus_RussianTranslation_rv-multitranslation-typing-w1b_29.07.26.md),
+still queued.
+
 ### Added — audit record for the Gorresio map audit sheet; G2.4.7 flagged for re-vote (29-07-2026)
 
 The 26-07-2026 audit sheet (32 cards, 28 approve / 4 reject) was applied in
