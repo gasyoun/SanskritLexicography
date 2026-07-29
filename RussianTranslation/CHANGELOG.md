@@ -10,7 +10,13 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
-### Changed — ratification sheet v2: eight corrections from MG's first read (H1907, 30-07-2026)
+## [1.110.0] - 2026-07-30
+
+### Changed — ratification sheet v2: eight corrections from MG's first read ([H1923](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1923-Opus_SanskritLexicography_ratification-sheet-v2-mg-eight-points_30.07.26.md), 30-07-2026)
+
+> The merged commits and [PR #889](https://github.com/gasyoun/SanskritLexicography/pull/889)
+> say **H1907** — an id that was never minted, invented as a label mid-session. H1923 is
+> the real claim for this work. Merged history is not rewritten; this note is the pointer.
 
 MG read the 30-card sheet and filed eight points; all eight applied. Three were
 substantive rather than cosmetic:
