@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 27-07-2026_
+_Created: 26-06-2026 · Last updated: 29-07-2026_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §500) whatever its section, so existing numbers never shift; when a finding is later
+(currently §501) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -48,6 +48,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§497. The csl-orig L-number is not a join key — only 35 % of form-era L-codes still point at their own headword](#497-the-csl-orig-l-number-is-not-a-join-key--only-35--of-form-era-l-codes-still-point-at-their-own-headword)
 - 🟠 [§498. Word-initial Harvard-Kyoto capitals never decode — 113 correction-event headwords entered the corpus mis-transcoded](#498-word-initial-harvard-kyoto-capitals-never-decode--113-correction-event-headwords-entered-the-corpus-mis-transcoded)
 - 🔴 [§499. Gold cards without evidence yield unusable votes — 5 of 6 MQM rejects carried no typology label, 1 of 20 labels reversed on adjudication](#499-gold-cards-without-evidence-yield-unusable-votes--5-of-6-mqm-rejects-carried-no-typology-label-1-of-20-labels-reversed-on-adjudication)
+- 🔴 [§500. A batch that never runs deletes a *band* of the sample, not a random subset — byte-packed chunking makes an incomplete A/B silently flatter the arm that failed](#500-a-batch-that-never-runs-deletes-a-band-of-the-sample-not-a-random-subset--byte-packed-chunking-makes-an-incomplete-ab-silently-flatter-the-arm-that-failed)
 
 
 **Grammar & morphology data**
@@ -4786,3 +4787,41 @@ Both now gate the n=400 store gold cut.
 > the one reversed on withheld Rigvedic evidence. Checked against rows 11 and 18 of
 > [`gold/decisions_g6-mqm-gold-starter-2026-07-25.csv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/decisions_g6-mqm-gold-starter-2026-07-25.csv).
 > The ruling and every count above are unaffected — only the id was misrecorded.
+
+### §500. A batch that never runs deletes a *band* of the sample, not a random subset — byte-packed chunking makes an incomplete A/B silently flatter the arm that failed
+
+🔴 **An arm that completes 87 of 100 cards has not run "87 % of the experiment."** Measured on
+the H1210 PWG A/B (DeepSeek vs Claude-native, 28-07-2026). Arm A's harness packs its work into
+size-bounded chunks — equal BYTES per chunk, not equal card counts, because a length-stratified
+slice makes equal-count chunks unusable. Three of ten chunks never produced a `slice_result`, so
+13 cards were never attempted. Those 13 were not spread across the sample: **9 of them fell in
+the top length quartile, and all ten cards of the verb-root stratum were among them.** The arm
+completed every short card and skipped the hardest band.
+
+The consequence is a number that looks like a result and is not one: arm A scored 95.4 %
+(83/87) against arm B's 78.0 % (100/100), while the per-quartile comparison on cards *both*
+arms attempted shows them level everywhere except the longest quartile (Q1–Q3: 100/100/89 % vs
+95/91/86 %). The uncompleted band is exactly where both arms degrade, so the incomplete arm is
+flattered by construction — and the direction is not luck. **Any size-aware batching has this
+property**: chunk index correlates with the payload dimension, so a failed chunk removes a
+contiguous interval of that dimension. The same holds for frequency-ordered, alphabetical, and
+date-ordered batching.
+
+**Why it survives review:** a per-stratum summary prints missing strata as *absent rows*, not as
+zeros. Arm A's stratum table read `S1 58/60 · S2 11/12 · S3 9/10 · S5 5/5` — nothing on that line
+says S4 exists and scored nothing. The omission is invisible unless the report joins back to the
+selection worklist and names what is not there.
+
+**The cheap defence, in the emitter rather than the reader:** compute `attempted` against the
+frozen worklist and report the gap per stratum *by name* before any rate
+([`coverage_gap.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/coverage_gap.py)),
+and make an unresolvable row a hard error instead of a dropped denominator. Generalises to every
+chunked run in this repo — bounded windows, cohort barriers, residual drains — not only to A/Bs.
+
+> **Source:** [`H1210_coverage_gap.29.07.26.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/H1210_coverage_gap.29.07.26.json)
+> + [`H1210_length_breakdown.29.07.26.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/H1210_length_breakdown.29.07.26.json)
+> · full report
+> [`pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md)
+> · [H1210](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1210-Opus_SanskritLexicography_pwg-ab-deepseek-vs-claude-100_17.07.26.md)
+> · runs 28-07-2026 (controller Opus 4.8 `claude-opus-4-8`, workers Sonnet 5 `claude-sonnet-5`,
+> generator `deepseek-chat`); coverage audit 29-07-2026, Opus 5 1M (`claude-opus-5[1m]`).

@@ -1,0 +1,51 @@
+{
+ "arm": "B_deepseek",
+ "round": 3,
+ "verdicts": [
+  {
+   "key1": "vel_a",
+   "verdict": {
+    "ok": false,
+    "severity": "minor",
+    "issues": [
+     "Sense 3_pw: dropped gloss term. German {%Grenze des Landes und der See, Gestade, Küste, Ufer,%} lists four members, Russian {%Граница суши и моря, побережье, берег,%} lists only three — 'Ufer' is unrendered. (Sense 2 correctly maps the shorter PWG list Gestade, Küste -> побережье, берег 2:2, so this is a PW-only synonym falling out.) Fix: render all four, e.g. {%Граница суши и моря, побережье, взморье, берег,%}.",
+     "Sense 1: interpolated verb not present in the German. {%Zeichen, welche die bestimmten Punkte%} -> {%знаки, которые (определяют) определенные пункты%}. The German fragment is deliberately verb-less (the governing verb falls past the masked span {T20}); the Russian supplies '(определяют)'. It is honestly bracketed, so severity is low, but it asserts a relation the source does not state at that point. Fix: drop the parenthetical ({%знаки, которые определенные пункты%}) or mark the addition with editorial square brackets."
+    ]
+   }
+  },
+  {
+   "key1": "jalp",
+   "verdict": {
+    "ok": true,
+    "severity": "minor",
+    "issues": [
+     "ADVISORY (non-blocking), 3rd block tag 4: German '4〉 {%reden —, sprechen über%} ({T181})' collapses to Russian '{%говорить о%}' — the reden/sprechen doublet is reduced to one verb, whereas the same doublet is rendered 'говорить, разговаривать' at tags 16/18/28. Suggest 'говорить, разговаривать о' for consistency.",
+     "ADVISORY, 1st block tag 1: '{%Jmd%} ({T54}) {%anreden, mit Jmd sprechen%}' → '{%кого-л.%} ({T54}) {%обращаться, говорить с кем-л.%}' — the accusative 'кого-л.' cannot govern with 'обращаться' (which takes к + dat.); the parallel sense (3rd block tag 3) gets it right as 'обращаться к кому-л., говорить с кем-л.'. Align the two.",
+     "ADVISORY, consistency: the same German lemma 'Gerede' is rendered 'толки' at tag 10 but 'речь' inside 'Gerede, gesprochene Worte' at tags 1/13/16. Pick one equivalent for the entry (both are defensible in isolation; 'толки' is the closer match for 'Gerede').",
+     "ADVISORY, segmentation only (no meaning change), 3rd block tags 14 and 17 (and mildly 15): German's two-span frame '{%Jmd%} ({T190}) {%erwiedern%}' / '{%Etwas%} ({T193}) {%besprechen%}' is merged into a single Russian span with the case-marking parenthetical pushed to the end, so the masked case abbreviation no longer sits adjacent to the argument it governs. All {Tn} are preserved; only the alignment of gloss-span to case marker shifts.",
+     "ADVISORY, tags 5 and 11: 'sprachen zu einander' / 'zu einander sprechen' → 'говорили друг другу' / 'говорить друг другу' (dative, implying 'said to each other <something>'); 'говорить друг с другом' renders the German more exactly — the collision with 'mit einander plaudern' → 'болтать друг с другом' is already avoided by the different verb."
+    ]
+   }
+  },
+  {
+   "key1": "div_a",
+   "verdict": {
+    "issues": [
+     "Sense 1, editorial frame: German \"Das {T55} als {T56} an Stelle des {T57} {T58}:\" opens a headed noun phrase with the definite article; Russian \"Это {T55} как {T56} вместо {T57} {T58}:\" converts the article into a demonstrative pronoun (\"this\"), which Russian does not require. Idiomatic scholarly form drops it: \"{T55} как {T56} вместо {T57} {T58}:\". Non-blocking — no meaning added or lost, but the demonstrative is an insertion.",
+     "Sense 1, terminology: \"mit nicht vorgeschobenem Tone\" → \"с непродвинутым ударением\". The sense (accent not shifted forward) is conveyed, but \"продвинутое ударение\" is not the received Russian term; \"с непередвинутым (вперёд) ударением\" / \"без переноса ударения вперёд\" is the standard philological register. Non-blocking."
+    ],
+    "ok": true,
+    "severity": "minor"
+   }
+  }
+ ],
+ "usage": {
+  "agents": 3,
+  "errors": 0,
+  "tokens": 198601,
+  "duration_ms": 556798,
+  "models": [
+   "claude-opus-5"
+  ]
+ }
+}

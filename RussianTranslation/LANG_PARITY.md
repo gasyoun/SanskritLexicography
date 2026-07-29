@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 26-07-2026 (H1631 edition-diff coverage exempt)
+_Created: 04-07-2026 · Last updated: 29-07-2026 (H1210 A/B scaffold re-affirmed)
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -1315,6 +1315,44 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/h1209/prep_slice.py": "d065d685dced6ef237ca9ba65836d0e3426105d563bcde7390a61572bcd9a59c",
       "src/pilot/h1209/build_args.py": "6f245108c60ae7c777c66900c1da4a53670399e949fbc474b6556d6bd0ed3024",
       "src/pilot/h1209/canonical_audit.py": "5866af157fd42ae76a903d448a1762a5224411e9842197eed870d21ee36d0315"
+    }
+  },
+  {
+    "id": "h1210_ab_arm_scaffold",
+    "mechanism": "H1210 A/B scaffold on top of the H1209 rig: size-bounded chunk packer (pack_chunks.py), the Python twin of the in-JS deterministic gate (det_gate.py, selftested), the DeepSeek generation arm (deepseek_arm.py) and its shared-Opus-controller shuttle (arm_b_control.py, control_template.js), the parallel-card arm-A template (wf_template_ab.js), arm-A telemetry collection (collect_arm_a.py), the comparative report (ab_report.py) and the blind human-vote sheet (build_ab_review_sheet.py)",
+    "files": [
+      "src/pilot/h1210/pack_chunks.py",
+      "src/pilot/h1210/det_gate.py",
+      "src/pilot/h1210/deepseek_arm.py",
+      "src/pilot/h1210/arm_b_control.py",
+      "src/pilot/h1210/control_template.js",
+      "src/pilot/h1210/wf_template_ab.js",
+      "src/pilot/h1210/collect_arm_a.py",
+      "src/pilot/h1210/ab_report.py",
+      "src/pilot/h1210/length_breakdown.py",
+      "src/pilot/h1210/coverage_gap.py",
+      "src/pilot/h1210/qc_gloss_arity.py",
+      "src/pilot/h1210/build_ab_review_sheet.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "GAP",
+    "note": "Re-affirmed 29-07-2026 (H1210 close-out): build_ab_review_sheet.py now delegates both panels to the shared src/g5_card_render.py (H1808) rather than rendering its own, which is language-neutral and does not narrow this GAP — an EN A/B would reuse the same renderer; coverage_gap.py joins the audit to the worklist's byte sizes and never reads a translated field. Run 28-07-2026 on the RU lane only. Four of the ten files are already language-neutral by construction: pack_chunks.py and collect_arm_a.py never look at a field, and ab_report.py / length_breakdown.py read whatever the arms produced (the latter joins the canonical audit to the worklist's byte sizes and never touches a translated field at all). det_gate.py, deepseek_arm.py and arm_b_control.py take the target field from the manifest (`field`, russian/english) and thread it through, so EN needs no code change there — but they were only exercised on russian. The genuinely RU-bound parts are the same two the parent H1209 GAP names: wf_template_ab.js (hardcoded russian target field + RU controller prompt, inherited verbatim from h1209/wf_template.js) and control_template.js (the same RU controller prompt, lifted out for arm B); build_ab_review_sheet.py renders a RU/DE panel pair. An EN A/B must therefore fix the SAME two prompts H1209's mini-EN step owes, not a new set — do not fork a second EN scaffold.",
+    "tracking": "H1210 (Uprava/handoffs/H1210-Opus_SanskritLexicography_pwg-ab-deepseek-vs-claude-100_17.07.26.md); inherits the EN debt of the h1209_controller_worker_rig entry above (H1209 mini-EN step)",
+    "verified_sha256": {
+      "src/pilot/h1210/pack_chunks.py": "7f33369396084a3fb474481c2f81830e17a0aea1220164acf741f207c56b570b",
+      "src/pilot/h1210/det_gate.py": "4e654dda9fa68ecbe17bc85e986de6e4c527b9fbb9211b05b12e1de0aaad2954",
+      "src/pilot/h1210/deepseek_arm.py": "216d91ef7bf9277e90110e029f774aa8814ee71048dff07cb34c64eda4350de8",
+      "src/pilot/h1210/arm_b_control.py": "28b0c7ec0c2b6e268039dbb42cb6550bfdb0e78f5f3540cd0e41f3f253c88d6e",
+      "src/pilot/h1210/control_template.js": "5700b540185d65d598060ccaa8431c1c5606066302005f8fc6bacc25037e22df",
+      "src/pilot/h1210/wf_template_ab.js": "47a9c7640c8b1e59d19a0f7b716eaec873c6f10f69eb030e75de044d3b7d8119",
+      "src/pilot/h1210/collect_arm_a.py": "e957743cfdbaf8cd20958257096741bd8c7824b9ae09b433938908b3731aa503",
+      "src/pilot/h1210/ab_report.py": "4039fa57487f2b7fd1de3aa0eee2f0106c972d6a04e1e9f91e861ff95a248ad0",
+      "src/pilot/h1210/build_ab_review_sheet.py": "60c85ceda4564be231580b8940187d34ba5bb418b3da0bf7b34e02bc444e3d2c",
+      "src/pilot/h1210/length_breakdown.py": "a77313540e96d2cb547af8080c0e16fe5ff769065b8f6afeede4830eef77057d",
+      "src/pilot/h1210/coverage_gap.py": "7f63c07f4259688d35ec2d54302c3fdf46f8e96bb7762a24037508fcab093bd3",
+      "src/pilot/h1210/qc_gloss_arity.py": "104067deaaacae102b55c83d7dfda7e8dcb99d37d7a0cb5e61aea6b086947307"
     }
   },
   {
