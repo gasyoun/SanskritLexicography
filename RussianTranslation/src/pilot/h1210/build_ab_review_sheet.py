@@ -20,6 +20,13 @@ Content comes from the canonical audit's `restored_card` — i.e. what the card 
 after {Tn} restoration, the same text a promote would write — so the human is rating the
 real artifact, not masked skeleton text.
 
+LEGIBILITY (H1646 csl-atlas -> H1808 here; do not regress it again): the sense bodies are
+raw CDSL markup, so they go through `csl_pyutil.anatomy.highlight()` — a wall of escaped
+`&lt;ls&gt;` / `{#...#}` is not something a human can rate — with `legend_html()` once per
+sheet, and every `<ls>` citation rendered as a link to the scan via the repo's own ported
+resolver (`src/ls_resolver.py`). Each new sheet generator has re-introduced this defect;
+the fix is cheap and belongs in the generator, not in the reviewer's patience.
+
 PUBLISH SAFETY: the sheet embeds unpublished RU/DE store-grade text → the HTML is
 gitignored (`review/*_sheet.html`); only `review/locks/<sheet_id>.lock.json` is committed.
 
@@ -35,6 +42,7 @@ import hashlib
 import html
 import json
 import os
+import re
 import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -47,7 +55,8 @@ if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
 import review_sheet_standard as STD                          # noqa: E402
-from csl_pyutil import render_review_sheet                   # noqa: E402
+from csl_pyutil import anatomy, render_review_sheet          # noqa: E402
+from ls_resolver import generate_href                        # noqa: E402
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 from ab_report import worklist_index                         # noqa: E402  (same card-id join)
@@ -56,6 +65,36 @@ from safe_filename import decode_safe_name                   # noqa: E402
 
 def load(p):
     return json.load(open(p, encoding='utf-8'))
+
+
+_N_ATTR = re.compile(r'\bn\s*=\s*"([^"]*)"')
+
+
+def ls_payload(part, inner, attrs):
+    """Render an `<ls>` citation as a link to the scan; everything else falls through.
+
+    `ls_resolver.generate_href` is the repo's port of the Cologne resolver, so the sheet
+    links exactly where csl-app links. An unresolvable citation stays plain text rather
+    than becoming a dead link — the resolver returns None/'' for what it cannot place.
+    """
+    if part != 'citation':
+        return None
+    href = None
+    try:
+        href = generate_href('pwg', (_N_ATTR.search(attrs or '') or [None, ''])[1], inner)
+    except Exception:                                        # a resolver miss is not fatal
+        href = None
+    body = html.escape(str(inner))
+    if not href:
+        return '<span style="color:#e06c75">%s</span>' % body
+    return ('<a href="%s" target="_blank" rel="noopener" '
+            'style="color:#e06c75;text-decoration:underline dotted">%s</a>'
+            % (html.escape(href, quote=True), body))
+
+
+def body_html(text):
+    """One raw CDSL body -> colour-coded, citation-linked HTML (never escaped-only)."""
+    return anatomy.highlight(str(text or ''), payload_hook=ls_payload)
 
 
 def senses_html(card):
@@ -68,7 +107,7 @@ def senses_html(card):
             out.append('<div style="margin:.45em 0">'
                        '<b>%s</b> %s</div>'
                        % (html.escape(str(s.get('tag') or '')),
-                          html.escape(str(s.get('russian') or ''))))
+                          body_html(s.get('russian'))))
     return '\n'.join(out) or '<i>(no senses)</i>'
 
 
@@ -79,7 +118,7 @@ def source_html(card):
             out.append('<div style="margin:.45em 0;color:#333">'
                        '<b>%s</b> %s</div>'
                        % (html.escape(str(s.get('tag') or '')),
-                          html.escape(str(s.get('german') or ''))))
+                          body_html(s.get('german'))))
     return '\n'.join(out) or '<i>(no senses)</i>'
 
 
@@ -143,9 +182,14 @@ def main():
     cfg.update({
         'sheet_id': sheet_id,
         'title': 'H1210 — blind quality vote, 100-card PWG A/B',
+        # The anatomy legend goes here (the one place rendered once per sheet, above the
+        # cards) — `subtitle` is interpolated as raw HTML by render_review_sheet.
         'subtitle': ('%d cards from two generation pipelines, interleaved and UNLABELLED. '
                      'Rate each card on its own merits; do not try to guess which system '
-                     'produced it. (Approve = publishable as-is.)' % len(items)),
+                     'produced it. (Approve = publishable as-is.)%s' % (
+                         len(items),
+                         anatomy.legend_html(['sanskrit', 'gloss', 'citation', 'grammar',
+                                              'abbreviation', 'structure']))),
         'footer': 'H1210 · handoff deliverable 2 · verdicts are the top layer of the A/B '
                   'quality comparison',
         'approve_label': 'publishable',

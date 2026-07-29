@@ -1,0 +1,294 @@
+{
+ "schema": "review-lock/v1",
+ "sheet_id": "h1210-ab-blind-2026-07-29",
+ "content_hash": "sha256:a20df11423beab9b39cbd01e642b9be0f652bb8daa396b6f0698450ae9323b7e",
+ "generated": "29-07-2026",
+ "gate": "H1210-AB",
+ "n_items": 40,
+ "blinding": "arm labels appear ONLY in this lock file; the HTML carries none",
+ "per_arm": 20,
+ "items": [
+  {
+   "item_id": "h1210-ab-001",
+   "key1": "vel_a",
+   "arm": "A",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-002",
+   "key1": "viBindu",
+   "arm": "A",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-003",
+   "key1": "mahAhiganDA",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-004",
+   "key1": "pramanyu",
+   "arm": "A",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-005",
+   "key1": "t_araja",
+   "arm": "A",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-006",
+   "key1": "avyagra~~h0_zz_pw",
+   "arm": "A",
+   "stratum": "S3"
+  },
+  {
+   "item_id": "h1210-ab-007",
+   "key1": "vinikfntana",
+   "arm": "A",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-008",
+   "key1": "mlA",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-009",
+   "key1": "darImuKa",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-010",
+   "key1": "vya_sana",
+   "arm": "A",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-011",
+   "key1": "pramanyu",
+   "arm": "B",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-012",
+   "key1": "kramu",
+   "arm": "A",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-013",
+   "key1": "roza",
+   "arm": "A",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-014",
+   "key1": "avyAhata",
+   "arm": "A",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-015",
+   "key1": "tAraja",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-016",
+   "key1": "kranda",
+   "arm": "B",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-017",
+   "key1": "nizkula",
+   "arm": "A",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-018",
+   "key1": "zazwivrata",
+   "arm": "B",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-019",
+   "key1": "viBindu",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-020",
+   "key1": "bAhlika",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-021",
+   "key1": "vAvadUka",
+   "arm": "A",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-022",
+   "key1": "vfdDamanu",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-023",
+   "key1": "divA",
+   "arm": "A",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-024",
+   "key1": "vazawkAra",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-025",
+   "key1": "sAri",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-026",
+   "key1": "ras",
+   "arm": "B",
+   "stratum": "S4"
+  },
+  {
+   "item_id": "h1210-ab-027",
+   "key1": "viSvaha",
+   "arm": "A",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-028",
+   "key1": "aSmagarBaja",
+   "arm": "A",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-029",
+   "key1": "vaYc",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-030",
+   "key1": "viSvasfj",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-031",
+   "key1": "vyatyaya",
+   "arm": "A",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-032",
+   "key1": "kranda",
+   "arm": "A",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-033",
+   "key1": "kAntapAzARa",
+   "arm": "A",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-034",
+   "key1": "aprApta",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-035",
+   "key1": "vyatyaya",
+   "arm": "B",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-036",
+   "key1": "parRin",
+   "arm": "A",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-037",
+   "key1": "dar_imu_ka",
+   "arm": "A",
+   "stratum": "S1"
+  },
+  {
+   "item_id": "h1210-ab-038",
+   "key1": "tubarI",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-039",
+   "key1": "kajjalikA",
+   "arm": "B",
+   "stratum": "S?"
+  },
+  {
+   "item_id": "h1210-ab-040",
+   "key1": "jalp",
+   "arm": "B",
+   "stratum": "S4"
+  }
+ ],
+ "ids": [
+  "h1210-ab-001",
+  "h1210-ab-002",
+  "h1210-ab-003",
+  "h1210-ab-004",
+  "h1210-ab-005",
+  "h1210-ab-006",
+  "h1210-ab-007",
+  "h1210-ab-008",
+  "h1210-ab-009",
+  "h1210-ab-010",
+  "h1210-ab-011",
+  "h1210-ab-012",
+  "h1210-ab-013",
+  "h1210-ab-014",
+  "h1210-ab-015",
+  "h1210-ab-016",
+  "h1210-ab-017",
+  "h1210-ab-018",
+  "h1210-ab-019",
+  "h1210-ab-020",
+  "h1210-ab-021",
+  "h1210-ab-022",
+  "h1210-ab-023",
+  "h1210-ab-024",
+  "h1210-ab-025",
+  "h1210-ab-026",
+  "h1210-ab-027",
+  "h1210-ab-028",
+  "h1210-ab-029",
+  "h1210-ab-030",
+  "h1210-ab-031",
+  "h1210-ab-032",
+  "h1210-ab-033",
+  "h1210-ab-034",
+  "h1210-ab-035",
+  "h1210-ab-036",
+  "h1210-ab-037",
+  "h1210-ab-038",
+  "h1210-ab-039",
+  "h1210-ab-040"
+ ]
+}

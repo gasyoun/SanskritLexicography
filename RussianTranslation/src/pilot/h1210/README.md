@@ -27,6 +27,9 @@ Results, method and the human-vote design:
 | [`arm_b_control.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/arm_b_control.py) | the `build` / `apply` shuttle between arm B and that controller (rounds) |
 | [`collect_arm_a.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/collect_arm_a.py) · [`extract_verdicts.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/extract_verdicts.py) | lift Workflow return values + per-role token usage out of the task-output files |
 | [`ab_report.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/ab_report.py) | the comparative table (audit-clean %, defect classes, $/clean, calls/clean, retry/escalation, controller share) |
+| [`length_breakdown.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/length_breakdown.py) | audit-clean rate by entry-length quartile — the interaction the headline % hides |
+| [`coverage_gap.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/coverage_gap.py) | which cards each arm never attempted, per quartile and by name — run it BEFORE quoting any rate ([FINDINGS §500](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)) |
+| [`qc_gloss_arity.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/qc_gloss_arity.py) | one-card probe for gloss-arity drift — the axis the `{Tn}` multiset gate cannot see |
 | [`build_ab_review_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/build_ab_review_sheet.py) | the BLIND human-vote sheet (arm labels exist only in `review/locks/…lock.json`) |
 
 ## Reproduce

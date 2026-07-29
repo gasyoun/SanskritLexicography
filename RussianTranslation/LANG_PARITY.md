@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 26-07-2026 (H1631 edition-diff coverage exempt)
+_Created: 04-07-2026 · Last updated: 29-07-2026 (H1210 A/B scaffold re-affirmed)
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -1330,13 +1330,15 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/h1210/collect_arm_a.py",
       "src/pilot/h1210/ab_report.py",
       "src/pilot/h1210/length_breakdown.py",
+      "src/pilot/h1210/coverage_gap.py",
+      "src/pilot/h1210/qc_gloss_arity.py",
       "src/pilot/h1210/build_ab_review_sheet.py"
     ],
     "languages": [
       "ru"
     ],
     "verdict": "GAP",
-    "note": "Run 28-07-2026 on the RU lane only. Four of the ten files are already language-neutral by construction: pack_chunks.py and collect_arm_a.py never look at a field, and ab_report.py / length_breakdown.py read whatever the arms produced (the latter joins the canonical audit to the worklist's byte sizes and never touches a translated field at all). det_gate.py, deepseek_arm.py and arm_b_control.py take the target field from the manifest (`field`, russian/english) and thread it through, so EN needs no code change there — but they were only exercised on russian. The genuinely RU-bound parts are the same two the parent H1209 GAP names: wf_template_ab.js (hardcoded russian target field + RU controller prompt, inherited verbatim from h1209/wf_template.js) and control_template.js (the same RU controller prompt, lifted out for arm B); build_ab_review_sheet.py renders a RU/DE panel pair. An EN A/B must therefore fix the SAME two prompts H1209's mini-EN step owes, not a new set — do not fork a second EN scaffold.",
+    "note": "Re-affirmed 29-07-2026 (H1210 close-out): the review-sheet legibility fix — anatomy colouring + linked <ls> citations — renders BOTH the RU and the DE panel through the same helper, so it is language-neutral and does not narrow this GAP; coverage_gap.py joins the audit to the worklist's byte sizes and never reads a translated field. Run 28-07-2026 on the RU lane only. Four of the ten files are already language-neutral by construction: pack_chunks.py and collect_arm_a.py never look at a field, and ab_report.py / length_breakdown.py read whatever the arms produced (the latter joins the canonical audit to the worklist's byte sizes and never touches a translated field at all). det_gate.py, deepseek_arm.py and arm_b_control.py take the target field from the manifest (`field`, russian/english) and thread it through, so EN needs no code change there — but they were only exercised on russian. The genuinely RU-bound parts are the same two the parent H1209 GAP names: wf_template_ab.js (hardcoded russian target field + RU controller prompt, inherited verbatim from h1209/wf_template.js) and control_template.js (the same RU controller prompt, lifted out for arm B); build_ab_review_sheet.py renders a RU/DE panel pair. An EN A/B must therefore fix the SAME two prompts H1209's mini-EN step owes, not a new set — do not fork a second EN scaffold.",
     "tracking": "H1210 (Uprava/handoffs/H1210-Opus_SanskritLexicography_pwg-ab-deepseek-vs-claude-100_17.07.26.md); inherits the EN debt of the h1209_controller_worker_rig entry above (H1209 mini-EN step)",
     "verified_sha256": {
       "src/pilot/h1210/pack_chunks.py": "7f33369396084a3fb474481c2f81830e17a0aea1220164acf741f207c56b570b",
@@ -1347,8 +1349,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/h1210/wf_template_ab.js": "47a9c7640c8b1e59d19a0f7b716eaec873c6f10f69eb030e75de044d3b7d8119",
       "src/pilot/h1210/collect_arm_a.py": "e957743cfdbaf8cd20958257096741bd8c7824b9ae09b433938908b3731aa503",
       "src/pilot/h1210/ab_report.py": "4039fa57487f2b7fd1de3aa0eee2f0106c972d6a04e1e9f91e861ff95a248ad0",
-      "src/pilot/h1210/build_ab_review_sheet.py": "1f096272e07adb262e780f413a8de600f23d01201df1ba7d1937436bbea728de",
-      "src/pilot/h1210/length_breakdown.py": "a77313540e96d2cb547af8080c0e16fe5ff769065b8f6afeede4830eef77057d"
+      "src/pilot/h1210/build_ab_review_sheet.py": "854d5f80ec44720e0c6f428056f74069dcdc110cf623fb01255cc9f545de9b20",
+      "src/pilot/h1210/length_breakdown.py": "a77313540e96d2cb547af8080c0e16fe5ff769065b8f6afeede4830eef77057d",
+      "src/pilot/h1210/coverage_gap.py": "7f63c07f4259688d35ec2d54302c3fdf46f8e96bb7762a24037508fcab093bd3",
+      "src/pilot/h1210/qc_gloss_arity.py": "104067deaaacae102b55c83d7dfda7e8dcb99d37d7a0cb5e61aea6b086947307"
     }
   },
   {
