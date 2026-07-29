@@ -28,10 +28,11 @@ csl-pyutil v0.6.0.
 3. **«почему аббревиатуры без tooltips? например [Gen, unsp] не очевидно что
    это»** — `<ab>` tokens did get tooltips; the NWS layer's bracketed
    `[diasystem, domain]` tags never did, because they are not markup at all, just
-   text. Store-wide census (11,030 rows) of what actually occurs:
-   slot 1 Ved 103 · Śā 50 · Gen 28 · Buddh 9 · Reg 8 · Epigr 4 · Jin 4 · Kāv 2 ·
-   Tan 2; slot 2 `unsp` 153 · Med 28 · Ling 11 · Soc 8. Both slots are glossed
-   here, in Russian, from that census and `nws_split.DIASET`.
+   text. Both slots are now glossed here in Russian from a MEASURED vocabulary —
+   `nws_tag_census.py` over the whole scraped NWS corpus (34,101 lemma cards
+   carrying 48,214 tagged senses), not over our translation slice and not from
+   `nws_split.DIASET`, which is a token-peeling helper rather than an attested
+   vocabulary. Using it as one produced two wrong tooltips; see `DIASYSTEM_RU`.
 
    That census also surfaced a data defect worth its own look: 12 rows carry
    `без уточн.` and 2 carry `Мед.` — the tag itself translated into Russian in a
@@ -83,6 +84,7 @@ DIASYSTEM_RU = {
     "Reg": "региональное / местное употребление",
     "Kāv": "кавья (поэзия)",
     "Jin": "джайнское",
+    "Ep": "эпическое",
 }
 
 #: Slot 2 — the subject domain. `unsp` (153 of 202 occurrences store-wide) is the
@@ -103,6 +105,10 @@ DOMAIN_RU = {
     "Bio": "биология (растения, животные)",
     "Mat": "материалы / вещества",
     "Astr": "астрономия / астрология",
+    # 119 senses, all under Gen. Almost certainly "эпическое" as a DOMAIN,
+    # but the corpus also has Ep as a DIASYSTEM, so the reading is not
+    # settled — say so rather than guess twice in one map (H1820).
+    "Epi": "Epi — значение не установлено (119 значений, все при Gen)",
 }
 
 #: What the domain slot MEANS, for the legend — the striking fact the census
