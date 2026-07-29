@@ -15,7 +15,10 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-GH = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+# `CSL_SIBLING_ROOT` override: see the same note in pwg_ab.py — a git worktree
+# sits BESIDE GitHub/, so the three-levels-up guess misses every sibling repo
+# and the bibliography degrades to "no citation tooltips" without failing.
+GH = os.environ.get('CSL_SIBLING_ROOT') or os.path.normpath(os.path.join(HERE, '..', '..', '..'))
 BIB = os.path.join(GH, 'csl-pywork', 'v02', 'distinctfiles', 'pwg', 'pywork', 'pwgauth', 'pwgbib.txt')
 PWG = os.path.join(GH, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 HI = re.compile(r'<HI code="([^"]*)" iast="([^"]*)">(.*)')

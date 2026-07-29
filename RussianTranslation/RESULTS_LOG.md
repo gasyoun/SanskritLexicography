@@ -4,6 +4,45 @@ _Created: 09-07-2026 · Last updated: 29-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 29-07-2026 — H1847: NWS tag vocabulary — in-card legend + faceted browse
+
+Opus 5 1M (`claude-opus-5[1m]`),
+[H1847](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1847-Opus_SanskritLexicography_nws-tag-vocabulary-facets_29.07.26.md).
+Tag reach measured over the whole RU store (`src/pwg_ru_translated.jsonl` — local-only,
+gitignored) with [`g5_card_render.card_tags`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/g5_card_render.py);
+corpus figures from the committed census aggregate.
+
+| Scope | Denominator | Carrying an NWS tag | Rate |
+|---|---:|---:|---:|
+| RU translation store | 11,603 rows | 255 | 2.20% |
+| G5 batch1v3 sheet (150-card live slice) | 150 cards | 4 | 2.7% |
+| NWS corpus (census denominator, for contrast) | 34,101 cards | 48,214 tagged senses | — |
+
+Vocabulary actually present in our slice — the facet bar is built from this, the chip's
+percentage from the corpus census:
+
+| Slot | Distinct in store | Top values (store counts) |
+|---|---:|---|
+| diasystem | 10 | `Ved` 115 · `Śā` 67 · `Gen` 33 · `Buddh` 16 · `Reg` 8 |
+| domain | 12 | `unsp` 170 · `Med` 34 · `Soc` 15 · `без уточн` 13 · `Ling` 12 |
+| position | 2 | `ifc` 3 · `Bhvr` 1 |
+
+Worktree sibling-path degradation — same command, same inputs, only the checkout differing
+(FINDINGS §503; the left column is what would have reached the reviewer):
+
+| Layer in the re-issued 150-card sheet | Built in a worktree | With `CSL_SIBLING_ROOT` set |
+|---|---:|---:|
+| `<ab>` spans with German/Russian expansion | 0 | 253 |
+| unlinked-citation marks (needs `pwgbib`) | 1 | 8 |
+| Cologne `<ls>` links (needs neither table) | 988 | 988 |
+| NWS tag tooltips | 47 | 47 |
+| facet chips / in-card tag panels | 8 / 4 | 8 / 4 |
+
+Non-goals / caveats: the two store-side tag defects (17 half-translated tags, 1 malformed
+bracket) are **reported, not repaired** — repair is store-side. Nine further `src/` modules still
+carry the worktree-fragile sibling-root guess. The pinned re-issue proved 150/150 card digests
+byte-identical, so votes already cast still bind. Findings: §503, §504.
+
 ## 29-07-2026 (later) — H1210 coverage fill (H1846): the A/B at 100 vs 100, and the metric flips the winner
 
 Arm A's 13 unattempted cards run from the frozen payloads (Opus 5 1M `claude-opus-5[1m]`
