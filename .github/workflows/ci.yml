@@ -167,6 +167,11 @@ jobs:
           # SamudraManthanam) is checked out here, and sanskrit-util is absent
           # too, so this also exercises the markup fallback path.
           python src/gold_evidence_panel.py --selftest
+          # H1808 G5 card rendering (Cologne <ls> links, NWS bracket tooltips,
+          # anatomy panels). Table-dependent checks self-skip: pwgab/pwgbib live
+          # in the sibling csl-pywork checkout, absent here, which also exercises
+          # the no-tooltip degradation path.
+          python src/g5_card_render.py
       - name: LOD graph acceptance (fixture-only, H350/E7)
         working-directory: RussianTranslation
         run: |
