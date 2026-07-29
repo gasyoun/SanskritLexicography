@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-07-29T07:53:30Z",
+ "generated_at": "2026-07-29T11:56:15Z",
  "stale_days_threshold": 180,
  "counts": {
-  "total": 158,
+  "total": 159,
   "by_importance": {
    "2": 90,
    "1": 25,
-   "3": 43
+   "3": 44
   },
   "stale": 0
  },
@@ -1432,6 +1432,15 @@
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#500-a-batch-that-never-runs-deletes-a-band-of-the-sample-not-a-random-subset--byte-packed-chunking-makes-an-incomplete-ab-silently-flatter-the-arm-that-failed"
+  },
+  {
+   "n": 501,
+   "title": "An A/B whose \"clean\" metric scores the last attempt that RETURNED, not what the pipeline would ship, can name the wrong winner — and did",
+   "section": "External platforms & services",
+   "importance": 3,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#501-an-ab-whose-clean-metric-scores-the-last-attempt-that-returned-not-what-the-pipeline-would-ship-can-name-the-wrong-winner--and-did"
   }
  ]
 }

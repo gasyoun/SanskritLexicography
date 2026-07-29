@@ -121,16 +121,19 @@ def main():
         # The exact H1846 case: some chunks recorded their real ids, the pre-existing ones
         # did not. Naming BOTH populations with their card counts is the only honest form —
         # collapsing them to one string misattributes whichever population is silent.
+        # NB: the unmeasured half is described by the LEGACY constant, never by
+        # `prev['model']` — that field may already hold a composed string, and feeding it
+        # back in nests one composition inside the next on every re-collection.
         model_str = ('%d chunk(s)/%d cards measured: %s | %d chunk(s)/%d cards not recorded '
                      '(pre-H1846 collection), documented as: %s'
                      % (len(measured), sum(c.get('cards', 0) for c in measured), derived,
-                        len(unmeasured), sum(c.get('cards', 0) for c in unmeasured),
-                        prev.get('model') or LEGACY))
+                        len(unmeasured), sum(c.get('cards', 0) for c in unmeasured), LEGACY))
     elif measured:
         model_str = derived + (' (MIXED across chunks — see per-chunk `models`)'
                                if any(len(v) > 1 for v in per_role.values()) else '')
     else:                                        # pre-H1846 telemetry carries no per-chunk models
-        model_str = prev.get('model') or LEGACY
+        model_str = LEGACY if ' measured: ' in str(prev.get('model') or '') \
+            else (prev.get('model') or LEGACY)
 
     telem = {
         'schema': 'pwg.h1210_arm_telemetry.v1',
