@@ -10,6 +10,34 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed — ratification sheet v2: eight corrections from MG's first read (H1907, 30-07-2026)
+
+MG read the 30-card sheet and filed eight points; all eight applied. Three were
+substantive rather than cosmetic:
+
+- **The anusvāra was misrendered.** `index_members` splits MW's `jana—ṃ-tapa` at the
+  em-dash, stranding the anusvāra on the second member so MW appeared to claim a word
+  `ṃtapa` that does not exist. The card now shows **`janaṃ + tapa`** with a note on MW's
+  notation. 107 rows.
+- **Avagraha was printed bare.** `tejo—'hvā` — the apostrophe is an elided initial `a`
+  from sandhi. Cards carrying `'` (21 rows) now say so and give the pre-sandhi form.
+- **A samāsa has exactly two parts** (dvandva excepted), so MW's three-member list is a
+  samāsa inside a samāsa, not a competing analysis — MG's ruling. Measured after: PWG
+  gives exactly two members in **4,342 of 4,353 rows (99.7 %)**, and in all 66 rows where
+  MW gives three, PWG gives two. Cards where MW lists >2 now carry the ruling. Applying it
+  to the adjudicator (~31 further `unresolved` rows resolve for PWG) is queued as H1918,
+  not done silently.
+
+Also: statistics table (rule × rows × share × cards) in the header and a per-card row
+count; «Указатель» → «MW split»; the rule label no longer printed three times (badge
+dropped, `filters` bar emptied — it duplicated the facet bar); «MW оставляет с суффиксом,
+PWG приводит основу»; the samāsa-type note moved off every card into the footer **with
+what is missing to assign one**; the source cell collapses to «= членение» when it only
+repeats the split, and German `von` (780 of 4,353 parens) is not treated as content.
+
+The preflight gate caught two of my own defects while building this — a raw-SLP1 quotation
+inside the new anusvāra note, and `mw_is_finer=True` transliterated to "thrue".
+
 ## [1.108.0] - 2026-07-29
 
 ### Fixed — NWS-layer citations in the Roman-numeral convention now resolve to Cologne links (H1809, 29-07-2026)
