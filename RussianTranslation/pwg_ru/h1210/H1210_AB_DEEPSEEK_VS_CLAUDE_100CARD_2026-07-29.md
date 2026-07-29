@@ -211,7 +211,7 @@ The sheet renders both the Russian rendering and the German source through
 `csl_pyutil.anatomy.highlight()` with a legend, and every `<ls>` citation resolves to its
 scan through the repo's ported resolver
 ([`src/ls_resolver.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver.py)) —
-1,431 linked citations in this sheet; abbreviation-only citations (`MED.`, `ŚKDR.`) stay
+1,430 linked citations in this sheet; abbreviation-only citations (`MED.`, `ŚKDR.`) stay
 plain rather than becoming dead links. This is the H1646/H1808 legibility standard, which
 every new sheet generator has so far had to re-learn.
 
