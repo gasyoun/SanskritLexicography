@@ -10,6 +10,41 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — execution-ready plan: the Rig-Veda multi-translation evidence layer (H1843/H1844, 29-07-2026)
+
+Five cross-linked layer docs under [`docs/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/docs),
+authored by Opus 5 (`claude-opus-5[1m]`) via `/ask` after a 4-round interview (17 rulings):
+[PLAN](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_rv-multitranslation-evidence_2026H2.md)
+(+ its [metadoc](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_rv-multitranslation-evidence_2026H2.meta.md)) ·
+[ROADMAP](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/ROADMAP_RussianTranslation_rv-multitranslation-evidence_2026H2.md) ·
+[ARCHITECTURE](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/ARCHITECTURE_RussianTranslation_rv-multitranslation-evidence.md) ·
+[IMPLEMENTATION](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/IMPLEMENTATION_RussianTranslation_rv-multitranslation-evidence.md) ·
+[VERIFICATION](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/VERIFICATION_RussianTranslation_rv-multitranslation-evidence.md).
+
+The layer joins the Ṛgveda to four translations (Grassmann 1876–77 · Geldner 1951–57 ·
+Elizarenkova 1989–99 · Griffith 1896) at lemma granularity, types where the translators diverge,
+and wires the result into the pipeline three ways — judge witness, contradiction gate, and a new
+TM tier serving **`ru` and `en` alike**. It extends the G6 evidence panel shipped the same day
+([H1801](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1801-Opus_SanskritLexicography_g6-gold-card-evidence-panel_28.07.26.md),
+after the `na` → «словно» reversal at id 122): that panel already routes a Vedic card to GRA's
+sense list plus Russian passage context, but carries nothing about what the *other* translators
+did with the same stanza — Geldner, Griffith, and Grassmann's own **translation** as distinct
+from his dictionary. This layer supplies exactly that, plus the divergence signal.
+
+**Measured during the audit, and load-bearing for the design** (full list in VERIFICATION §2):
+the Ṛgveda has 10,552 stanzas and **164,758 tokens**; `lemmatization.json`'s `transformContext`
+already carries `id_gra`/`id_pwg`/`id_mw` **per token**, so the dictionary anchor need not be
+built; Grassmann and Elizarenkova cover all 10,552 stanzas but **Geldner covers 10,548** —
+the four he does not translate are exactly **RV 10.106.5–8**, which turns the `omitted_by_one`
+class into a regression test with known ground truth; and Elizarenkova's commentary carries
+**2,213** mentions of Renou, **368** with a directly quoted French fragment.
+
+No code and no data shipped in this entry — plan only. Execution is
+[H1843](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1843-Sonnet_RussianTranslation_rv-multitranslation-spine-w1a_29.07.26.md)
+(wave 1a, deterministic) and
+[H1844](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1844-Opus_RussianTranslation_rv-multitranslation-typing-w1b_29.07.26.md)
+(wave 1b, gated).
+
 ### Changed — the G5 card is legible: печатный вид, кликабельные цитаты, подсказки к пометам (H1808, 29-07-2026)
 
 MG filed five defects while voting
