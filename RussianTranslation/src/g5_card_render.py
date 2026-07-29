@@ -65,7 +65,7 @@ from build_article_site import _render as site_render  # noqa: E402  the canonic
 # --------------------------------------------------------------------- NWS bracket tags
 #: Slot 1 of an NWS `[X, Y]` tag — the diasystem (tradition the sense belongs to).
 #:
-#: MEASURED, not guessed (H1820, `nws_tag_census.py` over the scraped NWS corpus).
+#: MEASURED, not guessed (H1847, `nws_tag_census.py` over the scraped NWS corpus).
 #: The first version of this map was copied from `nws_split.DIASET` — a helper for
 #: PEELING a leading token, not an attested vocabulary — and carried six values
 #: (`Class`, `Epic`, `Gramm`, `Lex`, `Skt`, `Pkt`) that never occur, while
@@ -107,12 +107,12 @@ DOMAIN_RU = {
     "Astr": "астрономия / астрология",
     # 119 senses, all under Gen. Almost certainly "эпическое" as a DOMAIN,
     # but the corpus also has Ep as a DIASYSTEM, so the reading is not
-    # settled — say so rather than guess twice in one map (H1820).
+    # settled — say so rather than guess twice in one map (H1847).
     "Epi": "Epi — значение не установлено (119 значений, все при Gen)",
 }
 
 #: What the domain slot MEANS, for the legend — the striking fact the census
-#: turned up (H1820): the domain is essentially a **śāstra** classification.
+#: turned up (H1847): the domain is essentially a **śāstra** classification.
 #: `Ved`, `Epigr`, `Tan`, `Reg`, `Jin` are 100% `unsp`; `Śā` is the near-inverse,
 #: only ~1% `unsp`. So «домен не указан» on a Vedic sense is not a gap in the
 #: data — that dimension simply does not apply to that tradition.
