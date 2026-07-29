@@ -218,6 +218,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§99. Output gates must audit structured semantic fields, and sample-clean editorial rewrites still require a full-population ambiguity pass](#99-output-gates-must-audit-structured-semantic-fields-and-sample-clean-editorial-rewrites-still-require-a-full-population-ambiguity-pass)
 - 🟠 [§101. DCS's compound dictionary carries splits whose member **order** does not match the surface form — invisible to a type-drill, fatal to any head-first analysis](#101-dcss-compound-dictionary-carries-splits-whose-member-order-does-not-match-the-surface-form--invisible-to-a-type-drill-fatal-to-any-head-first-analysis)
 - 🟠 [§104. The DCS `dcs-conllu` treebank is only ~3.9 % dependency-parsed — corpus government/valency work must lean on co-occurrence, not arcs, and read absence as "unknown"](#104-the-dcs-dcs-conllu-treebank-is-only-39--dependency-parsed--corpus-governmentvalency-work-must-lean-on-co-occurrence-not-arcs-and-read-absence-as-unknown)
+- 🔴 [§505. SamudraManthanam stores canonical line IDs but drops them from durable references — corpus rebuilds can silently retarget exports and corrections](#505-samudramanthanam-stores-canonical-line-ids-but-drops-them-from-durable-references--corpus-rebuilds-can-silently-retarget-exports-and-corrections)
 - 🟠 [§448. CORRECTED — the MWScan/2020 `servepdf.php` endpoint is RIGHT (serves 1899); the 1872 first-edition scan coexists on the portal with colliding page numbers](#448-corrected--the-mwscan2020-servepdfphp-endpoint-is-right-serves-1899-the-1872-first-edition-scan-coexists-on-the-portal-with-colliding-page-numbers)
 - 🟠 [§449. Samāsa-type frequency does not exist in any org corpus — and the grammarians' canonical examples are corpus-ghosts (8/58 attested, max freq 147)](#449-samāsa-type-frequency-does-not-exist-in-any-org-corpus--and-the-grammarians-canonical-examples-are-corpus-ghosts-858-attested-max-freq-147)
 - 🟠 [§450. The roadmap's "OBS-T κ=0.42" was a phantom figure — no measured agreement exists for any OBS-T axis](#450-the-roadmaps-obs-t-κ042-was-a-phantom-figure--no-measured-agreement-exists-for-any-obs-t-axis)
@@ -4940,3 +4941,33 @@ success.
 > [`pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md)
 > · 29-07-2026, Opus 5 1M (`claude-opus-5[1m]`); the 13 filled cards ran with workers
 > `claude-sonnet-5` and a controller the template's alias resolved to `claude-opus-5[1m]`.
+
+### §505. SamudraManthanam stores canonical line IDs but drops them from durable references — corpus rebuilds can silently retarget exports and corrections
+
+🔴 **The corpus has a stable-identity field, but the paths expected to survive an ingest still
+persist only mutable ordinals.** The FTS5 `corpus_lines` schema includes `canonical_id`, while:
+
+- [`search_service.py`](https://github.com/gasyoun/SamudraManthanam/blob/main/web/app/services/search_service.py)
+  selects `source_id`, `line_num`, and `link_id`, but not `canonical_id`;
+- [`models.py`](https://github.com/gasyoun/SamudraManthanam/blob/main/web/app/models.py) has no
+  canonical identity field on `SearchResultItem`;
+- [`search.py`](https://github.com/gasyoun/SamudraManthanam/blob/main/web/app/routers/search.py)
+  exports ordinal `source_id` + `line_num`; and
+- [`state_db.py`](https://github.com/gasyoun/SamudraManthanam/blob/main/web/app/state_db.py) plus
+  [`corrections.py`](https://github.com/gasyoun/SamudraManthanam/blob/main/web/app/routers/corrections.py)
+  retain the same ordinal pair for correction proposals.
+
+The corpus table is rebuildable. If source ordering or a source's line structure changes, an old
+ordinal may still resolve successfully — to different content. This is worse than a broken link:
+the failure is plausible and silent, even though a stable identity was already computed.
+
+`So:` every durable external reference must carry
+`{source_slug, canonical_id, corpus_version}`. Migration must map every retained legacy ordinal to
+that identity and fail on any orphan or ambiguity; it must never silently fall back to the new
+content at the old ordinal. The architecture audit adopted this as a zero-orphan Wave-1 gate in
+[PR #116](https://github.com/gasyoun/SamudraManthanam/pull/116), with implementation packet
+[`H1920`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1920-Codex_SamudraManthanam_durable-reference-zero-orphan_30.07.26.md).
+The owning defect is tracked as
+[SamudraManthanam #117](https://github.com/gasyoun/SamudraManthanam/issues/117).
+
+_30-07-2026 · repository architecture audit · Codex GPT-5_
