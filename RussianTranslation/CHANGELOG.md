@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.106.0] - 2026-07-29
+
 ### Added — review sheets must reuse what the repo already knows, enforced before write (H1887, 29-07-2026)
 
 MG, voting the 200-card compound-differs sheet: «Я не понимаю, зачем мне
