@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.104.0] — 2026-07-29
+
 ### Changed
 - **Spike S2 answered on three model arms — the fine divergence classes are NOT separable, reversing the same-day H1844 ruling** (29-07-2026, Opus 5 `claude-opus-5[1m]`, [H1901](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1901-Opus_RussianTranslation_rv-divergence-s2-three-arm-kappa_29.07.26.md)). With an OpenRouter key supplied, the second and third arms ran on the same seeded 50-stanza sample: `deepseek-chat` ↔ `openai/gpt-4o-mini` ↔ `google/gemini-2.5-flash`. Cohen's κ for `lexical_variant` vs `semantic_shift` is **0.089 / −0.012 / 0.256** (mean ≈ 0.11, one below chance) — K3 fires. H1844 had declined to collapse the taxonomy on the grounds that the pilot *used* `lexical_variant` 6.0 % of the time; **usage rate is not separability**, and that provisional ruling (explicitly flagged NOT-YET pending this arm) is withdrawn. Collapsing to coarse only reaches κ 0.216–0.350 — "fair", not reliable — so the step-8 human gate becomes more load-bearing, not less; it still awaits a vote and the full run stays queued (R13). `added_by_one` fires **0 times in all three arms** (0/300, 0/300, 0/267), confirming it as a prompt/taxonomy defect rather than a fact about the Ṛgveda. Recorded caution: raw agreement on that subset reads 85.7–95.1 % and is worthless — under this base-rate skew percent-agreement measures the skew, not the agreement. Tables in [`RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md), reasoning in [`docs/DECISIONS_LOG_rv_multitranslation.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/DECISIONS_LOG_rv_multitranslation.md). Two new arms cost **$0.054**.
 
