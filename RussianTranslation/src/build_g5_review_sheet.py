@@ -139,9 +139,10 @@ def legacy_digests_from_sheet(path):
     return out
 
 
-def card_panels(ru, de):
+def card_panels(ru, de, tags=None):
     """The three panels, per H1808 — see g5_card_render for what each one is and
-    which of MG's five defects it answers."""
+    which of MG's five defects it answers — plus, since H1847, a fourth that
+    spells out this card's own NWS tags when it has any."""
     panels = [(cardrender.PANEL_PRINT, cardrender.print_panel(ru)),
               (cardrender.PANEL_STORE, cardrender.store_panel(ru))]
     if cardrender.same_text(ru):
@@ -152,7 +153,43 @@ def card_panels(ru, de):
                      'панели 1 — эта строка не несёт разметки, кроме показанной '
                      'цветом; панель нужна только для точной цитаты в заметке.</div>')
     panels.append((cardrender.PANEL_DE, cardrender.de_panel(de)))
+    legend = cardrender.card_legend_html(
+        cardrender.card_tags(ru) if tags is None else tags)
+    if legend:
+        panels.append((cardrender.PANEL_TAGS, legend))
     return panels
+
+
+#: Facet order = the order the reader meets the slots in `[Ved, unsp] [ifc]`.
+FACET_SLOTS = [("diasystem", "Диасистема"), ("domain", "Домен"),
+               ("position", "Позиция в сложном слове")]
+
+
+def facet_config(items):
+    """Facet dimensions for THIS sheet's cards (H1847).
+
+    Values are drawn from the cards actually present, not from the corpus
+    vocabulary: a chip that filters to zero cards is a dead control, and the
+    whole vocabulary is one click away in the census the in-card legend links.
+    Each chip carries both numbers the census argued a reviewer needs — how many
+    cards it selects HERE, and what the tag is worth in the whole corpus.
+    Dimensions no card carries are dropped rather than rendered empty."""
+    vocab = cardrender.vocabulary()
+    dims = []
+    for key, label in FACET_SLOTS:
+        counts = collections.Counter()
+        for it in items:
+            for v in (it.get("facets") or {}).get(key, ()):
+                counts[v] += 1
+        if not counts:
+            continue
+        values = []
+        for v, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])):
+            share = cardrender.corpus_share(key, v, vocab)
+            values.append((v, "%s · %d" % (v, n) if share is None
+                           else "%s · %d · %.1f%%" % (v, n, share)))
+        dims.append({"key": key, "label": label, "values": values})
+    return dims
 
 
 def pick(queue_rows, n):
@@ -172,8 +209,73 @@ def pick(queue_rows, n):
     return out
 
 
+#: Two cards with deliberately different tag profiles, so the facet selftest can
+#: prove intersection behaviour without the gitignored queue+store.
+_FIXTURE_CARDS = [
+    ("{#Adika#} [Ved, unsp] [ifc (Bhvr)] ṚV(Sā) I 165, 11 [NWS: Windisch 1883 : 106]",
+     "de row one"),
+    ("{#Adi#} [Śā, Med] [ifc] Hoernle 1908 : 249", "de row two"),
+    ("обычная строка без помет", "de row three"),
+]
+
+
+def _selftest():
+    ok = True
+
+    def check(cond, label):
+        nonlocal ok
+        print(("  ok   " if cond else "  FAIL ") + label)
+        ok = ok and bool(cond)
+
+    items = []
+    for i, (ru, de) in enumerate(_FIXTURE_CARDS):
+        tags = cardrender.card_tags(ru)
+        items.append({"id": "fix:%d" % i, "filt": "na", "title": "t", "badges": [],
+                      "question": "q", "facets": tags,
+                      "panels": card_panels(ru, de, tags)})
+
+    check(len(items[0]["panels"]) == 4 and len(items[2]["panels"]) == 3,
+          "the tag panel appears only on cards that carry tags")
+    check(items[0]["panels"][3][0] == cardrender.PANEL_TAGS,
+          "the tag panel is panel 4, after the German source")
+
+    dims = facet_config(items)
+    check([d["key"] for d in dims] == ["diasystem", "domain", "position"],
+          "all three slots become facet dimensions, in reading order")
+    by_key = {d["key"]: dict((v, l) for v, l in d["values"]) for d in dims}
+    check(sorted(by_key["diasystem"]) == ["Ved", "Śā"],
+          "facet values come from the cards present, not the whole vocabulary")
+    check(by_key["position"]["ifc"].startswith("ifc · 2"),
+          "a chip states how many cards it selects HERE (ifc: 2 of 3)")
+    check("%" in by_key["diasystem"]["Ved"] or not cardrender.vocabulary(),
+          "with the census present a chip also states the corpus share")
+
+    doc = render_review_sheet(items, {
+        "sheet_id": "selftest", "title": "t", "subtitle": "s", "footer": "f",
+        "approve_label": "A", "reject_label": "R", "filters": [("na", "na")],
+        "generated": GENERATED, "facets": dims,
+        "facet_count_label": "показано {shown} из {total}",
+        "facet_reset_label": "снять все пометы",
+        "extra_css": cardrender.EXTRA_CSS})
+    check('id="facetbar"' in doc, "the sheet renders a facet bar")
+    check(doc.count('data-facet-key=') == sum(len(d["values"]) for d in dims),
+          "every facet value reaches the bar as a chip")
+    check('data-facet-key="position" data-facet-val="Bhvr"' in doc,
+          "a bracket qualifier is filterable in its own right")
+    check(doc.count("data-facets=") == 2,
+          "only the two tagged cards carry facet values")
+    check("показано {shown} из {total}" in doc, "the count line is Russian")
+    check("in fine compositi" in doc, "the in-card legend is in the rendered sheet")
+    check(doc.count("<script>") == doc.count("</script>"), "the document's scripts balance")
+    print("SELFTEST", "PASS" if ok else "FAIL")
+    return 0 if ok else 1
+
+
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--selftest", action="store_true",
+                    help="fixture-driven check of the H1847 tag panel + facet "
+                         "bar; needs neither the queue nor the store")
     ap.add_argument("--n", type=int, default=150)
     ap.add_argument("--queue", default=os.path.join(HERE, "_review_queue.jsonl"))
     ap.add_argument("--store",
@@ -194,6 +296,8 @@ def main():
                          "localStorage votes still bind (H1808). Refuses if any "
                          "pinned card's RU text has drifted since the lock.")
     args = ap.parse_args()
+    if args.selftest:
+        return _selftest()
 
     queue = load_jsonl(args.queue)
     store = {}
@@ -259,9 +363,13 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
         ru = rec.get("ru") or r.get("ru") or ""
         de = rec.get("de") or "(store row not found)"
         digests[r["review_id"]] = card_digest(ru, de)
+        tags = cardrender.card_tags(ru)
         items.append({
             "id": r["review_id"],
             "filt": stratum,
+            # H1847: the same tags drive the in-card legend and the facet bar,
+            # so a chip can never select on something the card does not explain.
+            "facets": tags,
             "title": rec.get("iast") or slp1_iast(r.get("key1") or ""),
             "title_href": pwg_entry_href(root),
             "badges": [rec.get("source_type") or "?", stratum],
@@ -270,7 +378,7 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
                          "Reject = нет (почему — в заметку) · Defer = отложить "
                          "в needs_review)</span>"),
             "note_placeholder": "reject → что именно не так; частичная правка — тоже сюда",
-            "panels": card_panels(ru, de),
+            "panels": card_panels(ru, de, tags),
         })
 
     force_lock = False
@@ -299,6 +407,7 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
         force_lock = True
 
     strata = sorted({it["filt"] for it in items})
+    facets = facet_config(items) or None
     if pinned_lock is not None:
         subtitle = ("%d карточек — переиздание партии 1v3 БЕЗ смены состава "
                     "(те же %d review_id, что в локе; голоса в браузере "
@@ -319,10 +428,20 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
         "footer": ("Approve = print-ready (run_batch пометит approved) · Reject = "
                    "не годен · Defer = needs_review. Экспорт валидируется против "
                    "review/locks/%s.lock.json перед любым применением.<br>"
+                   "Пометы NWS расшифрованы прямо на карточке (панель 4) и "
+                   "фильтруются полосой фасетов над карточками; полный словарь "
+                   "со статистикой — <a href=\"%s\" target=\"_blank\" "
+                   "rel=\"noopener\">NWS_TAG_VOCABULARY_CENSUS_2026-07.md</a>.<br>"
                    "Цвета в панелях 2–3 (разметка store и немецкий источник): %s"
-                   % (SHEET_ID, cardrender.legend_html())),
+                   % (SHEET_ID, cardrender.CENSUS_URL, cardrender.legend_html())),
         "approve_label": "Print-ready", "reject_label": "Reject",
         "filters": [(s, s) for s in strata],
+        # H1847 — browse by the NWS tag vocabulary, not just by stratum. Chips
+        # within one row are OR, rows intersect: «Ved» + «ifc» = Vedic senses
+        # standing at the end of a compound.
+        "facets": facets,
+        "facet_count_label": "показано {shown} из {total}",
+        "facet_reset_label": "снять все пометы",
         "generated": GENERATED,
         "extra_css": cardrender.EXTRA_CSS,
         "strict_review": {"reviewer": "", "require_all_votes": False,

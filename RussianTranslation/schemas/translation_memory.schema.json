@@ -33,7 +33,8 @@
         "reviewed_exact",
         "machine_exact",
         "legacy_promoted",
-        "suggestion"
+        "suggestion",
+        "corpus_translation_witness"
       ]
     },
     "reuse_policy": {
