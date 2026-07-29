@@ -240,3 +240,5 @@ src/pilot/h1210/arm_b.control_r*.payload.json
 src/pilot/h1210/arm_b.control_r*.wf.js
 src/pilot/h1210/arm_*.canonical_audit*.json
 src/pilot/h1210/qc_*_senses.json
+src/pilot/h1210/*.task_output.json
+src/pilot/h1210/README_ARM_A_FILL.txt

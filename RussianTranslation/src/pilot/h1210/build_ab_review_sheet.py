@@ -61,7 +61,8 @@ import g5_card_render as cardrender                          # noqa: E402  (H180
 from csl_pyutil import render_review_sheet                   # noqa: E402
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
-from ab_report import worklist_index                         # noqa: E402  (same card-id join)
+from ab_report import (CLEAN_STATUSES, audit_index, merge_results,   # noqa: E402
+                       worklist_index)
 from safe_filename import decode_safe_name                   # noqa: E402
 
 
@@ -103,19 +104,63 @@ def sort_key(sheet_id, key1, arm):
     return hashlib.sha256(('%s|%s|%s' % (sheet_id, key1, arm)).encode('utf-8')).hexdigest()
 
 
-def pick(audit, per_arm, sheet_id, arm):
-    """Deterministic per-arm sample: promote-DRY PASS cards only (a human rating a card the
-    machine already hard-rejected measures nothing the free gate did not), spread across
-    the hash order so no stratum or size band dominates."""
-    rows = [r for r in audit['reports'] if r.get('promote_dry') and r.get('restored_card')]
+def pick(reports, per_arm, sheet_id, arm, statuses=None):
+    """Deterministic per-arm sample, BALANCED across the two populations of §501.
+
+    Candidates are promote-DRY PASS cards with restored text (a human rating a card the free
+    gate already hard-rejected measures nothing the gate did not). But since H1846 we know
+    those candidates are two different things:
+
+      * `shippable`  — the rig also ended the card clean; the pipeline would have written it;
+      * `refused`    — audit-clean, yet the rig ended it `worker-null-death` /
+                       `escalate-review-sheet`, so the pipeline would NOT have shipped it.
+
+    21 of arm A's 93 audit-clean cards and 8 of arm B's 78 are `refused`, and whether that
+    text is actually publishable is precisely the open question the machine cannot settle.
+    Sampling audit-clean cards uniformly would under-represent it, so the sample is split
+    half and half per arm, falling back to the other class (and saying so) when one is short.
+
+    `reports` must be the RESOLVED index (pipeline card id -> report) from
+    `ab_report.audit_index`, and `statuses` must be keyed the same way. Keying either side on
+    the audit's own `key1` is the join trap this rig documents: the audit reports a third key
+    form, so a raw `key1` lookup misses most cards and silently dumps them into `refused`
+    (measured here: 38/55 instead of the true 72/21 before the fix).
+    """
+    rows = [r for r in reports.values() if r.get('promote_dry') and r.get('restored_card')]
     rows.sort(key=lambda r: sort_key(sheet_id, r['key1'], arm))
-    return rows[:per_arm]
+    if statuses is None:
+        return [(r, 'unclassified') for r in rows[:per_arm]]
+
+    ship, refused = [], []
+    by_id = {id(r): cid for cid, r in reports.items()}
+    for r in rows:
+        st = statuses.get(by_id[id(r)])
+        (ship if st in CLEAN_STATUSES else refused).append(r)
+    half = per_arm // 2
+    take_ship, take_ref = ship[:half], refused[:per_arm - half]
+    # Backfill from whichever class has spares, so the sheet always reaches per_arm.
+    if len(take_ship) + len(take_ref) < per_arm:
+        spare = ship[len(take_ship):] + refused[len(take_ref):]
+        need = per_arm - len(take_ship) - len(take_ref)
+        take_ship += [r for r in spare
+                      if statuses.get(by_id[id(r)]) in CLEAN_STATUSES][:need]
+        need = per_arm - len(take_ship) - len(take_ref)
+        take_ref += [r for r in spare
+                     if statuses.get(by_id[id(r)]) not in CLEAN_STATUSES][:need]
+    out = [(r, 'shippable') for r in take_ship] + [(r, 'refused-but-audit-clean')
+                                                   for r in take_ref]
+    print('  %s: %d shippable + %d refused-but-audit-clean (pool %d/%d)'
+          % (arm, len(take_ship), len(take_ref), len(ship), len(refused)))
+    return out
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--arm-a-audit', required=True)
     ap.add_argument('--arm-b-audit', required=True)
+    ap.add_argument('--arm-a-result', nargs='+', default=None,
+                    help='arm A slice_result(s) — enables the §501 shippable/refused split')
+    ap.add_argument('--arm-b-result', nargs='+', default=None)
     ap.add_argument('--worklist', required=True)
     ap.add_argument('--per-arm', type=int, default=20)
     ap.add_argument('--generated', required=True, help='DD-MM-YYYY, passed explicitly')
@@ -128,12 +173,25 @@ def main():
     worklist = load(a.worklist)
     strata, _ids = worklist_index(worklist)
 
-    chosen = ([(r, 'A') for r in pick(load(a.arm_a_audit), a.per_arm, sheet_id, 'A')]
-              + [(r, 'B') for r in pick(load(a.arm_b_audit), a.per_arm, sheet_id, 'B')])
+    def statuses(paths):
+        if not paths:
+            return None
+        return {r['key1']: r['final_status'] for r in merge_results(paths)['results']}
+
+    # Resolve BOTH audits to pipeline card ids first — ab_report.audit_index is the one
+    # place that knows the three key forms in play, and it hard-errors on an
+    # unresolvable row instead of dropping it.
+    reports_a = audit_index(load(a.arm_a_audit), worklist)
+    reports_b = audit_index(load(a.arm_b_audit), worklist)
+    print('sample composition (lock-only — none of this reaches the HTML):')
+    chosen = ([(r, 'A', cls) for r, cls in pick(reports_a, a.per_arm, sheet_id, 'A',
+                                                statuses(a.arm_a_result))]
+              + [(r, 'B', cls) for r, cls in pick(reports_b, a.per_arm, sheet_id, 'B',
+                                                  statuses(a.arm_b_result))])
     chosen.sort(key=lambda t: sort_key(sheet_id, t[0]['key1'], t[1]))
 
     items, lock_rows = [], []
-    for i, (rep, arm) in enumerate(chosen, 1):
+    for i, (rep, arm, cls) in enumerate(chosen, 1):
         item_id = 'h1210-ab-%03d' % i
         key = rep['key1']
         card = rep['restored_card']
@@ -153,7 +211,10 @@ def main():
             ],
             'note_placeholder': 'What is wrong, concretely (sense tag + what it should say)?',
         })
-        lock_rows.append({'item_id': item_id, 'key1': key, 'arm': arm, 'stratum': stratum})
+        # `cls` is the §501 population (shippable vs refused-but-audit-clean).
+        # Like `arm`, it lives ONLY here — the reviewer must not see either.
+        lock_rows.append({'item_id': item_id, 'key1': key, 'arm': arm,
+                          'stratum': stratum, 'class': cls})
 
     cfg = dict(STD.standard_config(save_as='review/%s_decisions.json' % sheet_id))
     cfg.update({

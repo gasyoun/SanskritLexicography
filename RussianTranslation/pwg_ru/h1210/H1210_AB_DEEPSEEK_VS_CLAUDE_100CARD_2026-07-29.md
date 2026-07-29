@@ -268,10 +268,29 @@ the 72-vs-70 tie should be read as "no measured difference", not as "arm B prove
 [`build_ab_review_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/build_ab_review_sheet.py)
 draws **40 items — 20 per arm, interleaved and unlabelled**. The arm mapping exists only in
 the committed lock
-[`review/locks/h1210-ab-blind-2026-07-29.lock.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/locks/h1210-ab-blind-2026-07-29.lock.json);
+[`review/locks/h1210-ab-blind-100card-2026-07-29.lock.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/locks/h1210-ab-blind-100card-2026-07-29.lock.json);
 the HTML carries no arm label in any id, badge or DOM order, and item order is a
 deterministic hash of `(sheet_id, key1, arm)`. Only cards the audit already passed are
 offered — rating a card the free gate hard-rejected measures nothing.
+
+**The sample is deliberately balanced across the two populations of §3**, because a uniform
+draw over audit-clean cards would under-represent exactly the disputed one:
+
+| | shippable | refused but audit-clean | pool |
+|---|---:|---:|---|
+| arm A | 10 | 10 | 72 / 21 |
+| arm B | 12 | 8 | 70 / 8 |
+
+Arm B carries only 8 refused cards in total, so its sample takes all of them and backfills
+with shippable ones — reported here rather than silently rebalanced. Like the arm, the class
+is recorded **only in the lock**: the HTML contains no occurrence of `shippable`,
+`refused-but-audit-clean`, or any rig status, so a reviewer cannot infer which population a
+card comes from. That is the point — human verdicts on the refused half are the only way to
+settle whether text the pipeline threw away was actually publishable.
+
+The earlier 87-card sheet ([`…blind-2026-07-29.lock.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/locks/h1210-ab-blind-2026-07-29.lock.json))
+was never voted and is **superseded**, with that reason recorded in the lock itself: its
+arm-A sample was drawn before the fill and so excluded the top length band entirely.
 
 The sheet does not render its own panels: it calls
 [`src/g5_card_render.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/g5_card_render.py),
