@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.108.0] - 2026-07-29
+
 ### Fixed — NWS-layer citations in the Roman-numeral convention now resolve to Cologne links (H1809, 29-07-2026)
 
 MG, voting `g5_batch1v3_sheet.html`: «ṚV(Sā) I 165, 11 is not clickable? Why? All such
