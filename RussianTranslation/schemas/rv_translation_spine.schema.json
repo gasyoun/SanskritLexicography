@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pwg.rv_translation_spine.v1",
+  "title": "RV multi-translation evidence spine",
+  "description": "Schema for pwg_ru/rv_stanza_translations.jsonl and pwg_ru/rv_lemma_occurrences.jsonl (H1843 wave 1a). Each line of either file is one JSON object matching stanza_record or lemma_record below.",
+  "type": "object",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/stanza_record"
+    },
+    {
+      "$ref": "#/$defs/lemma_record"
+    }
+  ],
+  "$defs": {
+    "status": {
+      "enum": [
+        "present",
+        "absent_from_source",
+        "empty"
+      ]
+    },
+    "translator": {
+      "enum": [
+        "grassmann_de_1876",
+        "geldner_de_1951",
+        "elizarenkova_ru_1989",
+        "griffith_en_1896"
+      ]
+    },
+    "divergence_class": {
+      "enum": [
+        "agreement",
+        "lexical_variant",
+        "semantic_shift",
+        "omitted_by_one",
+        "added_by_one"
+      ]
+    },
+    "translation_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "text"
+      ],
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "stanza_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "location",
+        "mandala",
+        "hymn",
+        "stanza",
+        "translations",
+        "divergence"
+      ],
+      "properties": {
+        "location": {
+          "type": "string"
+        },
+        "mandala": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "hymn": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "stanza": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "translations": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "grassmann_de_1876": {
+              "$ref": "#/$defs/translation_status"
+            },
+            "geldner_de_1951": {
+              "$ref": "#/$defs/translation_status"
+            },
+            "elizarenkova_ru_1989": {
+              "$ref": "#/$defs/translation_status"
+            },
+            "griffith_en_1896": {
+              "$ref": "#/$defs/translation_status"
+            }
+          }
+        },
+        "divergence": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object"
+            }
+          ]
+        }
+      }
+    },
+    "occurrence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "location",
+        "form",
+        "token_index",
+        "wordlevel"
+      ],
+      "properties": {
+        "location": {
+          "type": "string"
+        },
+        "form": {
+          "type": "string"
+        },
+        "token_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "wordlevel": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object"
+            }
+          ]
+        }
+      }
+    },
+    "lemma_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lemma",
+        "lemma_ewaia",
+        "id_gra",
+        "id_pwg",
+        "id_mw",
+        "occurrence_count",
+        "occurrences"
+      ],
+      "properties": {
+        "lemma": {
+          "type": "string"
+        },
+        "lemma_ewaia": {
+          "type": "string"
+        },
+        "lemma_missing": {
+          "type": "boolean"
+        },
+        "id_gra": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "id_pwg": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "id_mw": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "occurrence_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "occurrences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/occurrence"
+          }
+        }
+      }
+    }
+  }
+}
