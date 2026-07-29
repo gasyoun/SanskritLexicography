@@ -28,10 +28,11 @@ csl-pyutil v0.6.0.
 3. **«почему аббревиатуры без tooltips? например [Gen, unsp] не очевидно что
    это»** — `<ab>` tokens did get tooltips; the NWS layer's bracketed
    `[diasystem, domain]` tags never did, because they are not markup at all, just
-   text. Store-wide census (11,030 rows) of what actually occurs:
-   slot 1 Ved 103 · Śā 50 · Gen 28 · Buddh 9 · Reg 8 · Epigr 4 · Jin 4 · Kāv 2 ·
-   Tan 2; slot 2 `unsp` 153 · Med 28 · Ling 11 · Soc 8. Both slots are glossed
-   here, in Russian, from that census and `nws_split.DIASET`.
+   text. Both slots are now glossed here in Russian from a MEASURED vocabulary —
+   `nws_tag_census.py` over the whole scraped NWS corpus (34,101 lemma cards
+   carrying 48,214 tagged senses), not over our translation slice and not from
+   `nws_split.DIASET`, which is a token-peeling helper rather than an attested
+   vocabulary. Using it as one produced two wrong tooltips; see `DIASYSTEM_RU`.
 
    That census also surfaced a data defect worth its own look: 12 rows carry
    `без уточн.` and 2 carry `Мед.` — the tag itself translated into Russian in a
@@ -62,25 +63,28 @@ import pwg_sources                                    # noqa: E402  <ls> siglum 
 from build_article_site import _render as site_render  # noqa: E402  the canonical renderer
 
 # --------------------------------------------------------------------- NWS bracket tags
-#: Slot 1 of an NWS `[X, Y]` tag — the diasystem (tradition / period the sense
-#: belongs to). Keys are `nws_split.DIASET`; the glosses are Russian because the
-#: only surface rendering them is a Russian-read review sheet.
+#: Slot 1 of an NWS `[X, Y]` tag — the diasystem (tradition the sense belongs to).
+#:
+#: MEASURED, not guessed (H1820, `nws_tag_census.py` over the scraped NWS corpus).
+#: The first version of this map was copied from `nws_split.DIASET` — a helper for
+#: PEELING a leading token, not an attested vocabulary — and carried six values
+#: (`Class`, `Epic`, `Gramm`, `Lex`, `Skt`, `Pkt`) that never occur, while
+#: glossing `Śā` as "шайва". The census refutes that gloss: `Śā` is the ONLY
+#: diasystem whose senses carry subject domains (Soc, Ling, Med, Al, Math, Art,
+#: Bio, Astr), which is śāstra — technical/scientific literature — not Śaiva;
+#: tantric material has its own tag, `Tan`. Nine values, in frequency order.
+#: Glosses are Russian because the only surface rendering them is a Russian sheet.
 DIASYSTEM_RU = {
-    "Gen": "общеупотребительное (вне конкретной традиции)",
+    "Śā": "шастра — научно-техническая литература",
     "Ved": "ведийское",
-    "Class": "классический санскрит",
-    "Epic": "эпическое",
+    "Gen": "общеупотребительное (вне конкретной традиции)",
     "Buddh": "буддийское",
-    "Jin": "джайнское",
-    "Śā": "шайва / тантрическая шиваитская традиция",
-    "Tan": "тантрическое",
     "Epigr": "эпиграфика (надписи)",
-    "Kāv": "кавья (поэзия)",
+    "Tan": "тантрическое",
     "Reg": "региональное / местное употребление",
-    "Gramm": "грамматическая традиция",
-    "Lex": "лексикографы (кошa)",
-    "Skt": "санскрит",
-    "Pkt": "пракрит",
+    "Kāv": "кавья (поэзия)",
+    "Jin": "джайнское",
+    "Ep": "эпическое",
 }
 
 #: Slot 2 — the subject domain. `unsp` (153 of 202 occurrences store-wide) is the
@@ -88,14 +92,35 @@ DIASYSTEM_RU = {
 DOMAIN_RU = {
     "unsp": "домен не указан (unspecified)",
     "без уточн.": "домен не указан (unspecified)",
+    "Soc": "общественные отношения",
+    "Ling": "лингвистика / грамматика",
+    "Phil": "философия",
     "Med": "медицина",
     "Мед.": "медицина",
-    "Ling": "лингвистика / грамматика",
-    "Soc": "общественные отношения",
-    "Astr": "астрономия / астрология",
+    "Rit": "ритуал",
+    "Al": "алхимия",
+    "Poe": "поэтика",
+    "Art": "искусство / ремесло",
     "Math": "математика",
-    "Phil": "философия",
+    "Bio": "биология (растения, животные)",
+    "Mat": "материалы / вещества",
+    "Astr": "астрономия / астрология",
+    # 119 senses, all under Gen. Almost certainly "эпическое" as a DOMAIN,
+    # but the corpus also has Ep as a DIASYSTEM, so the reading is not
+    # settled — say so rather than guess twice in one map (H1820).
+    "Epi": "Epi — значение не установлено (119 значений, все при Gen)",
 }
+
+#: What the domain slot MEANS, for the legend — the striking fact the census
+#: turned up (H1820): the domain is essentially a **śāstra** classification.
+#: `Ved`, `Epigr`, `Tan`, `Reg`, `Jin` are 100% `unsp`; `Śā` is the near-inverse,
+#: only ~1% `unsp`. So «домен не указан» on a Vedic sense is not a gap in the
+#: data — that dimension simply does not apply to that tradition.
+DOMAIN_NOTE_RU = (
+    "Домен — предметная область (шастра). Он заполнен почти только у Śā "
+    "(шастровая литература); у Ved / Epigr / Tan / Reg / Jin он всегда «unsp», "
+    "то есть измерение к этой традиции просто не применяется, а не «данных нет»."
+)
 
 #: `[ifc (Bhvr)]`-style positional tags: where in a compound the word stands.
 POSITION_RU = {
