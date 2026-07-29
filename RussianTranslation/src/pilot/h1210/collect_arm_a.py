@@ -43,10 +43,17 @@ def collect(tag, path):
     # task-output progress block, one level up from the journal.
     roles = {}
     lat = []
+    models = {}
     for row in (d.get('workflowProgress') or []):
         if row.get('type') != 'workflow_agent':
             continue
         role = 'controller' if str(row.get('label', '')).startswith('control:') else 'worker'
+        # The template pins ALIASES (model:'sonnet'/'opus'), which resolve to whatever the
+        # tier currently is — so the run's real model id is a MEASUREMENT, not a constant.
+        # H1846 proved why: the 13-card fill ran months-of-versions later than the original
+        # 87 and its controller alias resolved to a different Opus. Record what actually ran.
+        if row.get('model'):
+            models.setdefault(role, set()).add(str(row['model']))
         r = roles.setdefault(role, {'agents': 0, 'tokens': 0, 'errors': 0, 'duration_ms': 0})
         r['agents'] += 1
         r['tokens'] += row.get('tokens') or 0
@@ -61,6 +68,7 @@ def collect(tag, path):
     usage['cards'] = len(res['results'])
     usage['roles'] = roles
     usage['agents_error'] = sum(r['errors'] for r in roles.values())
+    usage['models'] = {k: sorted(v) for k, v in models.items()}
     usage['worker_latency_ms'] = sorted(lat)
     usage['durationMs'] = max((row.get('lastProgressAt') or 0)
                               for row in (d.get('workflowProgress') or [])
@@ -97,10 +105,37 @@ def main():
     for p in sorted(glob.glob(os.path.join(HERE, 'arm_a.chunk*.slice_result.json'))):
         n_results += len(json.load(open(p, encoding='utf-8'))['results'])
 
+    # Derive the arm's model string from what the chunks actually recorded, and say so
+    # honestly when the chunks disagree (H1846: the 13-card fill ran on a later controller
+    # tier than the original 87 — a hardcoded string would have quietly misattributed it).
+    LEGACY = 'workers claude-sonnet-5 / controller claude-opus-4-8'
+    measured, unmeasured = [c for c in chunks if c.get('models')], [c for c in chunks
+                                                                    if not c.get('models')]
+    per_role = {}
+    for c in measured:
+        for role, ids in c['models'].items():
+            per_role.setdefault(role, set()).update(ids)
+    derived = ' / '.join('%ss %s' % (role, ' + '.join(sorted(ids)))
+                         for role, ids in sorted(per_role.items()))
+    if measured and unmeasured:
+        # The exact H1846 case: some chunks recorded their real ids, the pre-existing ones
+        # did not. Naming BOTH populations with their card counts is the only honest form —
+        # collapsing them to one string misattributes whichever population is silent.
+        model_str = ('%d chunk(s)/%d cards measured: %s | %d chunk(s)/%d cards not recorded '
+                     '(pre-H1846 collection), documented as: %s'
+                     % (len(measured), sum(c.get('cards', 0) for c in measured), derived,
+                        len(unmeasured), sum(c.get('cards', 0) for c in unmeasured),
+                        prev.get('model') or LEGACY))
+    elif measured:
+        model_str = derived + (' (MIXED across chunks — see per-chunk `models`)'
+                               if any(len(v) > 1 for v in per_role.values()) else '')
+    else:                                        # pre-H1846 telemetry carries no per-chunk models
+        model_str = prev.get('model') or LEGACY
+
     telem = {
         'schema': 'pwg.h1210_arm_telemetry.v1',
         'arm': 'A_claude_native',
-        'model': 'workers claude-sonnet-5 / controller claude-opus-4-8',
+        'model': model_str,
         'cards': n_results,
         'chunks': chunks,
         'agents_total': sum(c.get('agentCount', 0) for c in chunks),

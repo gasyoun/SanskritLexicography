@@ -14,6 +14,12 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **Arm-A telemetry asserted its model ids instead of measuring them** (29-07-2026, Opus 5 1M `claude-opus-5[1m]`, [H1846](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1846-Opus_SanskritLexicography_h1210-arm-a-coverage-fill_29.07.26.md)): [`collect_arm_a.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/collect_arm_a.py) hardcoded `workers claude-sonnet-5 / controller claude-opus-4-8` into `arm_a.telemetry.json` — the string the A/B report prints as its "generator model" row. But [`wf_template_ab.js`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/wf_template_ab.js) pins harness **aliases** (`model: 'sonnet'`, `model: 'opus'`), which resolve to whatever each tier currently is, so the recorded ids were an assumption that silently decays with every model release. It now reads the real per-agent `model` off each chunk's task-output rows, and — when only some chunks carry them, as when a run is refilled later — names **both populations with their card counts** rather than collapsing to one string that misattributes whichever population is silent.
+
+### Added
+- **`refresh_after_fill.py`** (29-07-2026, Opus 5 1M `claude-opus-5[1m]`, [H1846](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1846-Opus_SanskritLexicography_h1210-arm-a-coverage-fill_29.07.26.md)): the post-fill recompute of the H1210 A/B as ONE chain — collect → telemetry → canonical audit over all ten chunks → `ab_report` + `length_breakdown` + `coverage_gap`. Collecting a chunk without re-auditing, or re-auditing without refreshing the coverage table, is precisely how a stale denominator survives into a report ([FINDINGS §500](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)); the script also stamps its outputs with a new date so the 87-card artifacts behind that finding stay reproducible.
+
 ## [1.98.0] — 2026-07-29
 
 ### Added
