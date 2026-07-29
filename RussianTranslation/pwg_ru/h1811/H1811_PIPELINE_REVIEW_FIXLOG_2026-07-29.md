@@ -1,0 +1,92 @@
+# H1811 — PWG→RU pipeline review: verified findings + fix log (hardening + offline speed)
+
+_Created: 29-07-2026 · Last updated: 29-07-2026_
+
+> **Provenance.** Handoff [H1811](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1811-Kimi_RussianTranslation_pwg-ru-offline-pipeline-review-hardening-speed_29.07.26.md).
+> Executor: Kimi K3 (`moonshotai/kimi-k3`). Method: hermetic bench baseline
+> ([`h1339_offline_bench.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1339_offline_bench.py)),
+> 3 parallel survey agents (audit-stage profile, store-write cProfile, orchestration
+> adversarial review), then **every claim re-verified against fresh origin/master**
+> (`d5650afe`) before any edit — 154 commits had landed since the agents' read base,
+> incl. Codex hardening PR #761, so several original findings were already fixed upstream.
+> Zero model calls; offline path only.
+
+## 0. Scope and prior-art check
+
+Task: code review of the PWG→RU pipeline → harden + increase speed. Prior art honored
+(per repo rules): [H1403 22-agent speed audit](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_RU_SPEED_ORCHESTRATION_BOTTLENECK_AUDIT_2026-07-20.md)
+("idea saturation — execute, don't design"), H1339 (−23 % offline), H1386 (prepare-batch
+−72 %), H1420 (P10/P11), H1618 (budget-note preservation). This pass covers the **still-open
+residue**, verified live on master — nothing below re-proposes shipped work.
+
+**Bench baseline (fixture, 5 leases / 10 cards):** audit stage ≈ 50–55 % of total,
+store-write ≈ 30 %. Per-lease `record-output` still pays 2 interpreter spawns
+(`coordinator` already amortized by upstream `record-output-batch`; `audit_window` +
+`_pilot_collect` remain).
+
+## 1. SPEED fixes (verified live on master)
+
+| # | Finding | Evidence | Fix | Est. saving |
+|---|---|---|---|---|
+| S1 | `process_record_output` spawns `audit_window.py` per lease | [`coordinator.py:1537-1546`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py) | run audit in-proc via the proven `run_py_inproc` pattern (already used by prepare-batch, `coordinator.py:1069`); 30-min audit timeout re-imposed via worker thread | ~0.5–0.9 s/lease |
+| S2 | `_pilot_collect` is the last subprocess gate | [`audit_window.py:234-237`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py) | route through existing `run_py_inproc` (H1339 pattern; the other 5 gates already in-proc) | ~0.3–0.5 s/lease |
+| S3 | `component_sha` re-hashes the same files per `stamp()` — 30 calls/promote batch, ~27 % of batch-promote in-proc time (cProfile) | [`pipeline_version.py:90-108`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pipeline_version.py) | per-process memo keyed on (patterns, root) | ~0.27 s/promote |
+
+Already upstream (verified, **no work**): `record-output-batch` (one coordinator process
+for N leases), TM `build`/`build_frags` in-proc via `promotion_journal`, prepare-batch.
+
+## 2. HARDENING fixes (verified live on master)
+
+| # | Sev | Finding | Evidence | Fix |
+|---|---|---|---|---|
+| H9 | P1 | `cohort_engine`: a transient probe exception persists `_failed_profiles` into the checkpoint (never re-probed, even on resume); the terminal barrier skips those leases and the wave still settles `promoted/tm_done=True` → leases **silently stranded forever** | `cohort_engine.py` (probe/restore/barrier) | don't persist failed profiles (re-probe on resume); `stop_reason` when the wave settles with runnable-undispatched leases |
+| H2a | P1 | `self_heal`: presplit base key gets soft `selfheal-nothing-resolved` while the real cause `budget_exceeded:heal` sits only on frag keys → transient budget stop misclassified as content defect (C-49 lane) | [`headless_worker.py:791-792`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/headless_worker.py) | stamp the base key with the frag budget note (exact frag-key set, not prefix) |
+| H8 | P1 | `claim` holds the global state DirLock while running a **no-timeout** `perf_preflight` subprocess + full store/worklist scans — a hung preflight wedges every coordinator op until lock TTL | [`coordinator.py:865+`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py) | timeout on the preflight `run_cmd` (moving candidate computation out of the lock deferred as larger refactor) |
+| H1 | P2 | manifest `open` + `json.loads` outside the try; `KeyError`/`TypeError` not in the except tuple → malformed/drifted manifest crashes with **no status file**; orchestrator burns retries on a deterministic defect | [`headless_worker.py:1001-1004,1044`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/headless_worker.py) | move into try; add `(KeyError, TypeError)` → `classification: configuration` |
+| H2b | P2 | `resolve_group` blanket `budget_exceeded:translate` note (preserve=False) overwrites attempt-1 per-key content notes | [`headless_worker.py:636-638`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/headless_worker.py) | `preserve=True` for budget notes |
+| H3 | P2 | checkpoint writes lack fsync (headless_worker, bounded_supervisor, cohort_engine) — power loss loses the last checkpoint → wasteful full re-audit | three files vs fsyncing `window_common.atomic_write_text` | route through the fsynced atomic writer |
+| H4 | P2 | `claim` accepts a duplicate `--lease-id` (`register_prepared_lease` refuses, `claim` doesn't) → unreachable second lease breaks the single-id CAS assumption | [`coordinator.py:865+`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py) | same existence guard in `claim` |
+| H5 | P2 | corrupt/missing `window_status.json`/`audit_window.report.json` swallowed to `{}` → lease recorded with meaningless `'unknown'` audit state | [`coordinator.py:1549-1557`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py) | unreadable status/report + rc ∈ {0,1} → append to `audit_errors` |
+| H7 | P2 | zero-claim drain pass hot-spins (no sleep) until `max_drain_iterations` | `bounded_staged_run.py` | consecutive-no-progress backstop (mirror staged C4) |
+| H10 | P2 | `_pilot_collect.py:14` hardcodes `OUT = src/pilot/output` — even the **hermetic bench** rewrites live `.merged.md` sidecars + quarantine renames (same class as H1386 P3f) | [`_pilot_collect.py:14`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_pilot_collect.py) | `PWG_OUTPUT_DIR` env override |
+
+Verified **sound / obsolete** (no work): promotion-journal TM rebuild (= tm-dirty idea done
+properly), `record-output` run-id binding (P11 active), ActiveCallClaim kernel lock,
+receipt binding, claim CAS/stale-token recovery, bounded-staged crash-resume exactly-once,
+journal-scoped `build_frags(clean_files)` (the full-artifact frag grep is gone).
+
+## 3. Contention note
+
+A dormant Codex branch (`codex/rt-pipeline-hardening-speed`, worktree
+`SanskritLexicography-rt-harden-codex`) holds 3 unmerged `ai-wip` commits on a **stale
+base** (last 28-07 09:31; two-dot diff would delete 746k master lines). Its valuable parts
+already landed via PR #761 et al. This pass branches from fresh `origin/master` and does
+not touch that branch; a human may archive it.
+
+## 4. Fix log
+
+| Fix | Status | Commit | Selftest pin |
+|---|---|---|---|
+| S3 component_sha memo | ✅ DONE (pipeline_version selftest OK) | this branch | `pipeline_version.selftest` stamp-memo block |
+| S2 collect in-proc | ✅ DONE (bench-verified) | this branch | bench outcomes == baseline |
+| S1 audit in-proc | ✅ DONE (bench-verified) | this branch | bench outcomes == baseline |
+| H5 corrupt status | ✅ DONE (code; gate pending) | this branch | — |
+| H10 collect OUT override | ✅ DONE — needed **five** readers patched, not one: `_pilot_collect`, `audit_window`, `audit_translation` (feeds `stage2_pregate` via `at.merged_output_path`), `root_glue_translated`, **and shared `window_common.OUT`** (feeds `window_reports.merged_exists` → `audit_state`). Missing the 4th/5th caused first NO-OUTPUT defects, then phantom `partial` states — the bench caught both instantly | this branch | bench hermeticity + outcomes == baseline |
+| H1 manifest crash | ⏳ handed to Opus 5 (H####) | — | — |
+| H2a/H2b budget notes | ⏳ handed to Opus 5 | — | — |
+| H3 fsync checkpoints | ⏳ handed to Opus 5 | — | — |
+| H4 dup lease-id | ⏳ handed to Opus 5 | — | — |
+| H7 drain spin | ⏳ handed to Opus 5 | — | — |
+| H8 preflight timeout | ⏳ handed to Opus 5 | — | — |
+| H9 cohort stranding | ⏳ handed to Opus 5 | — | — |
+
+**Bench verification (fixture, per-lease outcomes must equal the pre-change baseline):**
+fx1 clean=3/promoted · fx2 clean=1/promoted_partial (transient `_a_g_ata`, defect
+`_a_dikya`) · fx3 clean=2/promoted · fx4 clean=1/promoted · fx5 clean=3/promoted ·
+deterministic signature stable — **MATCH** after the fixes (29-07-2026).
+
+## 5. Bench A/B
+
+_Pending — filled after implementation (medians over ≥10 runs per mode, same tree)._
+
+_Dr. Mārcis Gasūns_
