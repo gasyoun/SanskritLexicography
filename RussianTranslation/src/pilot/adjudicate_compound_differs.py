@@ -567,6 +567,21 @@ def adjudicate(k1, P, I, Pstar, why, Istar, n_variants, attested, freq):
                         'MW cuts the same string finer and its extra piece(s) `%s` '
                         'are not attested headwords, i.e. bound morphs, while every '
                         'PWG member is attested' % ', '.join(extra), ex)
+            # MG's ruling, 30-07-2026 (H1918): a compound's vigraha is always binary
+            # (a dvandva excepted, and a dvandva is never detectable from arity
+            # alone — so this rule only fires where PWG's OWN list is length 2). An
+            # n-member MW list past that point is not a competing arity for the
+            # headword: it is the RECURSIVE decomposition, with the first member
+            # analysed in turn (`goṣṭhīpati` = `goṣṭhī + pati`; MW's `go + ṣṭhī +
+            # pati` is samāsa-within-samāsa, not a rival split of the headword).
+            if len(P) == 2:
+                return (APPROVE, 'mw_recursive_decomposition',
+                        'MW lists %d members (`%s`) against PWG\'s binary vigraha '
+                        '(`%s`) and they concatenate to the same string; a samāsa is '
+                        'always binary (dvandva excepted), so MW\'s extra granularity '
+                        'is the recursive decomposition of the first member, not a '
+                        'competing arity for the headword itself'
+                        % (len(I), ' + '.join(I), ' + '.join(P)), ex)
             return (DEFER, 'granularity_ic_vs_full_decomposition',
                     'MW decomposes a lexicalised member further (`%s` vs `%s`) and '
                     'every piece is an attested headword — immediate constituents vs '
@@ -813,6 +828,19 @@ def selftest():
     v4 = adjudicate('aDikazAzwika', ['aDika', 'zazwi'], ['aDika', 'zAzwika'], None,
                     'no_paren', ['aDika', 'zAzwika'], 1, att, {})
     assert v4[0] == REJECT and v4[1] == 'pwg_layer_no_headword_paren', v4
+    # H1918 — MG's binary-samasa ruling: MW's 3-member list is the RECURSIVE
+    # decomposition of PWG's binary vigraha (goSWIpati = goSWI + pati; MW also
+    # decomposes goSWI itself into go + SWI), so PWG's binary split wins.
+    v9 = adjudicate('goSWIpati', ['goSWI', 'pati'], ['go', 'SWI', 'pati'],
+                    ['goSWI', 'pati'], 'ok', ['go', 'SWI', 'pati'], 1,
+                    {'goSWI', 'pati', 'go', 'SWI'}, {})
+    assert v9[0] == APPROVE and v9[1] == 'mw_recursive_decomposition', v9
+    # a genuine dvandva (PWG itself gives >2 members) must NOT be swept in here —
+    # the rule only fires where PWG's OWN list is binary.
+    v10 = adjudicate('aBgo', ['a', 'B', 'go'], ['a', 'B', 'g', 'o'],
+                     ['a', 'B', 'go'], 'ok', ['a', 'B', 'g', 'o'], 1,
+                     {'a', 'B', 'go', 'g', 'o'}, {})
+    assert v10[1] == 'granularity_ic_vs_full_decomposition', v10
     assert abs(wilson_lower(9, 10) - 0.5958) < 0.01, wilson_lower(9, 10)
     assert wilson_lower(0, 0) == 0.0
     print('selftest OK — paren/bracket parser, MW variant split, member fold, '
