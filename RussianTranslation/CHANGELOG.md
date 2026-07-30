@@ -10,6 +10,40 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — a transient probe failure could strand cohort leases forever, silently (H9 / H1940 Phase 2, 30-07-2026)
+
+`cohort_engine` treated a probe exception as a **durable** verdict about a profile. The
+failed profile was written into the checkpoint twice over: into `failed_profiles`, and
+into `probed` (the in-process marker that stops a wave re-paying the ledger for a probe
+it already attempted). On resume, both came back — so the profile was never re-probed,
+`_is_window_runnable` kept rejecting it, the terminal barrier skipped its leases as
+"no work will ever run here", and the wave still settled `promoted`/`tm_done=True`. Its
+leases were then unreachable forever: a settled wave returns immediately on every later
+resume. A transient network blip during one probe was enough to lose those leases with
+**no error, no warning, and no trace in the summary** — the wave reported plain success.
+
+Two changes, both surgical:
+
+- **A probe failure is now per-life evidence, not a durable verdict.** `failed_profiles`
+  is no longer persisted at all, and only *successfully* probed profiles are written to
+  `probed`. A resumed life re-probes and, when the failure really was transient,
+  dispatches the leases normally. Older checkpoints carrying the key are ignored, not
+  read back.
+- **Settling with undispatched leases is no longer silent.** When a wave settles while
+  admitted, unparked leases were never dispatched, `stop_reason` now names each one with
+  its profile and cause (`probe_failed` / `budget_exhausted`), and that reason is
+  persisted to the checkpoint so an operator sees it without attaching to the process.
+  It is recomputed on each settle, so a life that recovers the leases clears a stale
+  reason from an earlier one.
+
+Settling itself is deliberately unchanged — promoting the clean subset is the same
+partial-wave behaviour the budget path already had. What changed is that it now says so.
+
+Pinned by `cohort_engine_selftest` pins 8 and 9, **each verified to fail against the
+pre-H9 engine** — the H1811 S3 lesson that a gate which passes both ways certifies
+nothing. Gates: `window_selftest` 194/194, `lang_parity_check` 89 entries no drift
+(`h1437_cohort_width_offline` SHARED verdict re-derived, not rubber-stamped).
+
 ### Fixed — the audit timeout could not cancel the audit, and provenance stamps could go stale (H1957, 30-07-2026)
 
 Two correctness defects shipped inside H1811's speed work below. Both were invisible

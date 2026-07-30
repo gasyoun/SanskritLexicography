@@ -1890,11 +1890,11 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "Language-agnostic single-source control plane (26-07-2026, Fable 5 `claude-fable-5`): the bounded driver drains whichever lane's prepared leases it is pointed at and never reads or writes a target-language field; there is no per-language twin file to port. Pinned by bounded_staged_run_selftest tests (q)/(r) (renamed from (o)/(p) during the H1724 worktree-drain merge — master had since claimed those letters for test_o_preflight_before_probe/test_p_resume_requires_existing_ledger_run).",
+    "note": "Language-agnostic single-source control plane (26-07-2026, Fable 5 `claude-fable-5`): the bounded driver drains whichever lane's prepared leases it is pointed at and never reads or writes a target-language field; there is no per-language twin file to port. Pinned by bounded_staged_run_selftest tests (q)/(r) (renamed from (o)/(p) during the H1724 worktree-drain merge — master had since claimed those letters for test_o_preflight_before_probe/test_p_resume_requires_existing_ledger_run). SHARED re-derived 30-07-2026 (H1940 Phase 2 / H9, Opus 5 `claude-opus-5[1m]`) against this session's own diff, not rubber-stamped: H9 stops persisting the per-life `_failed_profiles` set (so a transient probe exception is re-probed on resume instead of stranding its leases forever) and records a `stop_reason` when a wave settles with runnable-undispatched leases. Both touch only checkpoint bookkeeping and the terminal barrier — no target-language field is read or written, and no per-language branch is introduced — so the language-agnostic control-plane rationale above is unchanged. Pinned by cohort_engine_selftest pins 8 and 9, each verified to FAIL against the pre-H9 engine.",
     "tracking": "H1437",
     "verified_sha256": {
       "src/pilot/bounded_staged_run.py": "e7e60839425b324de940a1913e1983f9d21807d4a906500dea018224d7dff7ee",
-      "src/pilot/cohort_engine.py": "81bd38b495034d3da5b0ebc2afc2de500f38066f626b8e0fc8254d5acd53881a"
+      "src/pilot/cohort_engine.py": "c8c587cf07ad7802a164eb4a9dbb8454eab418cbda37dc1e3933acfa6ff96bb8"
     }
   },
   {
