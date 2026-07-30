@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.111.1] - 2026-07-30
+
 ### Fixed — LANG_PARITY hash re-stamped on human authorisation; the selftest suite is fully green (H1910 follow-up, 30-07-2026)
 
 1.111.0 shipped with one deliberate loose end: `src/tm_source_weights.json` had changed, so
