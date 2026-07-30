@@ -24,7 +24,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-GITHUB = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 PWG_KEY1 = os.path.join(HERE, '..', '..', 'HeadwordLists', 'then-2014', 'PWG-unique-key1-106085.txt')
 CORPUS_DB = os.environ.get('SAMUDRA_CORPUS_DB',
                            os.path.join(GITHUB, 'SamudraManthanam', 'web', 'corpus.db'))
