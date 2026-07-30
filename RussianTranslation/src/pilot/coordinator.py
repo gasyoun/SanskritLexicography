@@ -797,8 +797,23 @@ def verb_candidates(state, limit=20):
     roots = roots[:limit]
     if not roots:
         return [], payload
-    p = run_cmd([sys.executable, os.path.join(HERE, 'perf_preflight.py')] +
-                roots + ['--json'], check=False)
+    # H8 (H1940): the only caller, claim(), holds the global state DirLock across this
+    # call, so a hung preflight wedged EVERY coordinator operation until the lock TTL.
+    # Bound it with the same PREPARE_TIMEOUT_SECONDS the other preflight call sites use
+    # (:1901, :1918). subprocess.run kills and reaps the child before raising (see the
+    # run_audit note at :1576), and raising here unwinds ahead of the artifact-dir
+    # makedirs / leases.append / save_state below, so the DirLock is released with no
+    # lease, no artifact directory and no partial state. Moving the candidate scan out
+    # of the lock is the larger refactor and stays deferred.
+    try:
+        p = run_cmd([sys.executable, os.path.join(HERE, 'perf_preflight.py')] +
+                    roots + ['--json'], check=False,
+                    timeout=PREPARE_TIMEOUT_SECONDS)
+    except subprocess.TimeoutExpired:
+        raise SystemExit(
+            'claim: perf_preflight timed out after %ss while scanning %d candidate '
+            'root(s); the preflight child was killed and no lease was created' %
+            (PREPARE_TIMEOUT_SECONDS, len(roots)))
     reports = []
     if p.returncode == 0:
         try:
