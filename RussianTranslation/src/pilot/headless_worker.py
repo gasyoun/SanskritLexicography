@@ -449,6 +449,19 @@ def card_token_multiset(card):
 # run_tree_kill / terminate_tree moved to proc_tree (shared D-J runner); imported above.
 
 
+def _fragment_index(frag_key):
+    """H2a sort key: the NUMERIC fragment index of a `<key>_f<index>` fragment key.
+
+    Plain lexicographic order would put `_f10` before `_f2`, making the reported stop
+    reason depend on how many fragments a card happens to have. Unparseable keys sort
+    first and deterministically rather than raising.
+    """
+    try:
+        return int(frag_key.rsplit('_f', 1)[1])
+    except (IndexError, ValueError):
+        return -1
+
+
 class HeadlessEngine:
     def __init__(self, manifest, claude, timeout, runner, max_agents_override=None,
                  call_reservation=None, config_dir=None, active_claim=None):
@@ -718,6 +731,43 @@ class HeadlessEngine:
             pending = [index for index in pending if index not in resolved]
         return resolved, pending
 
+    def _fragment_keys(self, key):
+        """H2a: the EXACT fragment-key set for `key`, derived from `fragment_groups`.
+
+        Never a prefix match. Fragment keys are `<key>_f<index>` (see `fragment_prompt` /
+        `heal_group`), so a `startswith('ab_f')` test also captures `ab_foo_f0` — a
+        DIFFERENT card's fragment. Set membership built from this card's own groups
+        cannot make that mistake.
+        """
+        groups = self.m.get('fragment_groups', {}).get(key) or []
+        return {'%s_f%d' % (key, index)
+                for group in groups for index in range(len(group))}
+
+    def _selfheal_stop_reason(self, key):
+        """H2a: classify a zero-sense `self_heal` outcome as infrastructure vs content.
+
+        A heal-lane budget refusal is a TRANSIENT INFRASTRUCTURE stop, not a content
+        defect. `call()` returns the typed `budget_exceeded:*` reason and `heal_group`
+        stamps it on the FRAGMENT keys, but the presplit base key was then stamped
+        `selfheal-nothing-resolved` — routing a budget stop into the content-defect lane
+        (the C-49 residual class). `note(..., preserve=True)` could not save it: preserve
+        only protects an EARLIER note on the base key, and a presplit key has none,
+        because it never ran a whole-card translate attempt. So propagate the typed
+        reason to the base key instead.
+
+        Precedence is deterministic: fragment keys are examined in ascending NUMERIC
+        fragment index (so `_f10` sorts after `_f2`, not before it) and the first
+        `budget_exceeded:*` wins — several failed fragments cannot make the reported
+        reason depend on set/dict iteration order. Any other fragment error (fidelity
+        reject, missing/mismatched key, timeout) leaves the historical
+        `selfheal-nothing-resolved` classification exactly as it was.
+        """
+        for frag_key in sorted(self._fragment_keys(key), key=_fragment_index):
+            error = self.failures.get(frag_key)
+            if error and error.startswith('budget_exceeded'):
+                return error
+        return 'selfheal-nothing-resolved'
+
     def self_heal(self, key):
         groups = self.m.get('fragment_groups', {}).get(key) or []
         if not groups:
@@ -789,7 +839,9 @@ class HeadlessEngine:
                         senses.append(sense)
                         owners.append((rec_h, rec_grammar))
         if not senses:
-            self.note(key, 'selfheal-nothing-resolved', preserve=True)
+            # H2a: a heal-budget stop recorded on this card's own fragments is the real
+            # cause and must not be reported as a content defect.
+            self.note(key, self._selfheal_stop_reason(key), preserve=True)
             return None
         card = stitched_card(
             key,

@@ -10,6 +10,39 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — a heal-budget stop was filed as a content defect on presplit cards (H2a / H1940 Phase 2, 30-07-2026)
+
+When `self_heal` finished with no senses, the base key was stamped
+`selfheal-nothing-resolved` unconditionally. But the *actual* cause of a starved heal lane
+is recorded on the FRAGMENT keys as a typed `budget_exceeded:heal` — so a transient
+infrastructure stop arrived downstream looking like a content defect, which is the wrong
+lane (C-49 residual triage) and the wrong remedy: the card needs re-running with budget,
+not editorial attention.
+
+The existing H1610 `preserve=True` guard could not catch this. Preserve only protects an
+*earlier* note on the base key, and a presplit card never runs a whole-card translate
+attempt — so there was no earlier note, and the soft stamp was written unopposed.
+
+- **The typed reason is propagated.** If any of this card's own fragments recorded
+  `budget_exceeded:*`, the base key reports that instead of the soft stamp. Genuine
+  zero-resolution and content failures (fidelity reject, missing/mismatched key, timeout)
+  are untouched and still report `selfheal-nothing-resolved`.
+- **The fragment-key set is exact, never a prefix.** Fragment keys are `<key>_f<index>`,
+  so matching on `startswith('ab_f')` also captures `ab_foo_f0` — a *different* card's
+  fragment, whose budget stop would then be misattributed. The set is derived from
+  `fragment_groups[key]` directly, so that mistake is not expressible.
+- **Precedence is deterministic.** Fragments are examined in ascending *numeric* index
+  (`_f2` before `_f10`, which plain lexicographic order gets backwards), so with several
+  failed fragments the reported reason cannot depend on set iteration order. A non-budget
+  error on a lower-numbered fragment does not mask a budget stop, and the typed reason
+  remains readable on the fragment key itself.
+
+Pinned by four `headless_worker_selftest` tests. Two go RED against pre-H2a master; the
+exactness pin is instead verified RED against a deliberately prefix-matching
+implementation (it cannot fail on master, which never propagates at all); the fourth is a
+regression guard on the preserved content path. Gates: `headless_worker_selftest` PASS,
+`window_selftest` 194/194, `lang_parity_check` 89 entries no drift.
+
 ### Fixed — a transient probe failure could strand cohort leases forever, silently (H9 / H1940 Phase 2, 30-07-2026)
 
 `cohort_engine` treated a probe exception as a **durable** verdict about a profile. The

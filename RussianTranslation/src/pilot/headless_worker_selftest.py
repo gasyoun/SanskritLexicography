@@ -724,6 +724,140 @@ def test_headless_heal_stitch_translation_fidelity_reject():
     print('  C1 headless heal: german-faithful, target-dropped complete stitch -> rejected (card None)')
 
 
+def _h2a_engine(test_manifest):
+    """A bare HeadlessEngine for the H2a classification pins.
+
+    `self_heal`'s zero-sense classification is pure bookkeeping over `self.failures` and
+    `fragment_groups`, so the pins that need EXACT control of which fragment keys carry
+    which error drive the engine directly instead of through a paid `execute()` run.
+    """
+    return h.HeadlessEngine(
+        test_manifest, claude=sys.executable, timeout=1,
+        runner=lambda argv, **kwargs: proc(
+            stdout=json.dumps({'structured_output': {'cards': []}})),
+        call_reservation=MemoryCallLedger(), config_dir=_FIXTURE_CONFIG_DIR)
+
+
+def _h2a_presplit_manifest(key='agni', fragments=2, served_empty=False):
+    m = manifest()
+    m['batches'] = []
+    m['presplit_keys'] = [key]
+    m['meta'] = dict(m['meta'], selected_keys=[key])
+    m['inputs'][key] = {'skeleton': '{T1}', 'portrait': '{}', 'ls': 1, 'sk': 0, 'nws': 0}
+    m['placeholder_maps'][key] = ['<ls>A</ls>']
+    m['fragment_groups'] = {key: [[{'skeleton': '{T1}', 'ls': 1, 'sk': 0,
+                                    'fsha': 'f%d' % i, 'si': i + 1}
+                                   for i in range(fragments)]]}
+    m['fragment_placeholder_maps'] = {key: [[['<ls>A</ls>'] for _ in range(fragments)]]}
+    # served_empty: every fragment is a WARM frag-TM slot carrying zero senses, so
+    # self_heal reaches its zero-sense branch having spawned nothing at all. That lets a
+    # pin drive the real `self_heal` (not just its private helper) with no paid-call
+    # machinery, and with `failures` seeded to exactly the shape under test.
+    m['fragment_tm'] = {key: [[{'senses': [], 'owners': []} for _ in range(fragments)]]
+                        if served_empty else []}
+    return m
+
+
+def test_h2a_heal_budget_stop_is_not_a_content_defect():
+    """H2a: a presplit base key whose OWN fragments hit the heal ceiling must report the
+    typed `budget_exceeded:heal`, not `selfheal-nothing-resolved`.
+
+    Before H2a the typed reason landed only on the fragment keys and the base key was
+    stamped with the soft content-defect note, routing a transient infrastructure stop
+    into the C-49 content lane. `preserve=True` could not save it: a presplit key runs no
+    whole-card translate attempt, so there is no earlier base note to preserve.
+    """
+    m = _h2a_presplit_manifest()
+    m['budgets'] = {'max_heal_agents': 0}      # every heal spawn refuses, typed
+    r = _soft_nonresolve_runner()
+    payload, status, code = execute(m, r)
+    assert code == 0 and payload is not None, (code, status)
+    failures = payload['summary']['failures']
+    assert 'agni' in failures, failures
+    err = failures['agni']
+    assert 'budget_exceeded' in err, (
+        'a heal-budget stop was reported as a content defect: failures[agni]=%r '
+        '(budget_stops=%s)' % (err, payload['summary'].get('budget_stops')))
+    assert err != 'selfheal-nothing-resolved', failures
+    assert r.n == 0, 'a refused heal call must spawn nothing: %d' % r.n
+    print('  H2a budget: presplit base failures[agni]=%r (was selfheal-nothing-resolved)' % err)
+
+
+def test_h2a_fragment_key_match_is_exact_not_prefix():
+    """H2a req 1: `ab_f` must not capture `ab_foo`.
+
+    Fragment keys are `<key>_f<index>`, so `startswith('ab_f')` also matches `ab_foo_f0`
+    — a different card's fragment. Here ONLY the foreign card's fragment carries a budget
+    stop; the audited card's own fragment fails on content. A prefix-matching classifier
+    steals the foreign reason and misreports this card as budget-stopped.
+    """
+    m = _h2a_presplit_manifest(key='ab', fragments=1, served_empty=True)
+    m['fragment_groups']['ab_foo'] = [[{'skeleton': '{T1}', 'ls': 1, 'sk': 0,
+                                        'fsha': 'x', 'si': 1}]]
+    engine = _h2a_engine(m)
+    engine.failures['ab_foo_f0'] = 'budget_exceeded:heal'     # a DIFFERENT card's stop
+    engine.failures['ab_f0'] = 'fragment-fidelity-reject'     # this card: content defect
+
+    assert engine._fragment_keys('ab') == {'ab_f0'}, engine._fragment_keys('ab')
+    assert 'ab_foo_f0' not in engine._fragment_keys('ab'), (
+        'ab_foo_f0 leaked into the exact fragment set for ab')
+    assert engine.self_heal('ab') is None
+    assert engine.failures['ab'] == 'selfheal-nothing-resolved', (
+        "a prefix match stole ab_foo_f0's budget stop for card ab: %r"
+        % engine.failures['ab'])
+    print('  H2a exact: ab_foo_f0 ignored for base ab -> %r' % engine.failures['ab'])
+
+
+def test_h2a_content_failure_without_budget_stop_unchanged():
+    """H2a req 4: with no budget stop anywhere, the historical classification stands."""
+    m = _h2a_presplit_manifest(key='agni', fragments=2, served_empty=True)
+    engine = _h2a_engine(m)
+    engine.failures['agni_f0'] = 'fragment-fidelity-reject'
+    engine.failures['agni_f1'] = 'missing-or-mismatched-fragment-key'
+    assert engine.self_heal('agni') is None
+    assert engine.failures['agni'] == 'selfheal-nothing-resolved', engine.failures['agni']
+    # ... and with no fragment failures recorded at all.
+    engine2 = _h2a_engine(_h2a_presplit_manifest(key='agni', fragments=2,
+                                                 served_empty=True))
+    assert engine2.self_heal('agni') is None
+    assert engine2.failures['agni'] == 'selfheal-nothing-resolved', engine2.failures['agni']
+    print('  H2a unchanged: genuine zero-resolution still selfheal-nothing-resolved')
+
+
+def test_h2a_precedence_is_deterministic_and_budget_stays_observable():
+    """H2a req 5: mixed fragment errors resolve deterministically, budget stop observable.
+
+    Fragments are examined in ascending NUMERIC index, so the answer cannot depend on set
+    iteration order — and `_f10` must not be read before `_f2`.
+    """
+    m = _h2a_presplit_manifest(key='agni', fragments=12, served_empty=True)
+    engine = _h2a_engine(m)
+    engine.failures['agni_f0'] = 'fragment-fidelity-reject'
+    engine.failures['agni_f2'] = 'budget_exceeded:heal'
+    engine.failures['agni_f10'] = 'budget_exceeded:max_calls'
+    assert engine.self_heal('agni') is None
+    first = engine.failures['agni']
+    assert first == 'budget_exceeded:heal', (
+        'precedence must take the lowest-numbered budget stop (_f2 before _f10): %r' % first)
+    for _ in range(25):                       # order-independence, not luck
+        probe = _h2a_engine(_h2a_presplit_manifest(key='agni', fragments=12,
+                                                   served_empty=True))
+        probe.failures.update({'agni_f0': 'fragment-fidelity-reject',
+                               'agni_f2': 'budget_exceeded:heal',
+                               'agni_f10': 'budget_exceeded:max_calls'})
+        probe.self_heal('agni')
+        assert probe.failures['agni'] == first, probe.failures['agni']
+    # A non-budget error on a LOWER index must not mask the budget stop.
+    masked = _h2a_engine(_h2a_presplit_manifest(key='agni', fragments=12,
+                                                served_empty=True))
+    masked.failures.update({'agni_f1': 'timeout', 'agni_f2': 'budget_exceeded:heal'})
+    masked.self_heal('agni')
+    assert masked.failures['agni'] == 'budget_exceeded:heal', masked.failures['agni']
+    # The typed reason also stays readable on the fragment key itself.
+    assert masked.failures['agni_f2'] == 'budget_exceeded:heal'
+    print('  H2a precedence: lowest-index budget stop wins deterministically (%r)' % first)
+
+
 def main():
     payload, status, code = execute(manifest(), success_runner)
     assert code == 0 and status['classification'] == 'success'
@@ -962,6 +1096,10 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_normalize_batch_translation_fidelity_reject()
     test_normalize_batch_german_anchor_repair()
     test_headless_heal_stitch_translation_fidelity_reject()
+    test_h2a_heal_budget_stop_is_not_a_content_defect()
+    test_h2a_fragment_key_match_is_exact_not_prefix()
+    test_h2a_content_failure_without_budget_stop_unchanged()
+    test_h2a_precedence_is_deterministic_and_budget_stays_observable()
     print('headless_worker_selftest: PASS')
 
 
