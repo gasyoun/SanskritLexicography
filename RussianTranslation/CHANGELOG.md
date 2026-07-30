@@ -10,6 +10,30 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — LANG_PARITY hash re-stamped on human authorisation; the selftest suite is fully green (H1910 follow-up, 30-07-2026)
+
+1.111.0 shipped with one deliberate loose end: `src/tm_source_weights.json` had changed, so
+the `rv_corpus_translation_witness_tm_tier` entry in
+[`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md)
+was carrying a stale `verified_sha256`. The agent that made the change did not stamp its own
+work — re-stamping is the human reaffirmation that ledger exists to collect — and surfaced the
+red gate instead. **A human authorised the stamp in-session the same day.**
+
+- Before stamping, both structural grounds of the SHARED verdict were re-checked
+  **mechanically rather than asserted** (9/9): no key in the weights file is language-keyed
+  and no per-language section exists; `by_work` now carries **two** populated EN rows
+  (`rigveda-griffith-en-1896` 0.68, `rigveda-jamison-brereton-en-2014` 0.92) where the verdict
+  required only one, so H1910 *strengthened* it; the `lang` enum is still exactly `[ru, en]`;
+  and `corpus_translation_witness` / `suggest_only` sit in their enums with no language
+  condition on the tier. The reasoning is now in the ledger entry's own note, and the note's
+  earlier "deliberately NOT refreshed" sentence is corrected rather than left contradicting
+  the file it sits in.
+- Ledger: **88 entries, all verdicts complete, no drift**; 25 language-aware files tracked or
+  exempt.
+- `python src/pilot/window_selftest.py` → **193/193, 0 failed**. This is the first fully green
+  run: the parity gate is the one the harness itself documents as having been "RED BY DESIGN",
+  and which — before the per-test isolation fix — took the last 27 tests dark with it.
+
 ## [1.111.0] - 2026-07-30
 
 ### Added — Jamison–Brereton 2014 as a fifth translation column, Renou EVP as a locus witness (H1910, 30-07-2026)
