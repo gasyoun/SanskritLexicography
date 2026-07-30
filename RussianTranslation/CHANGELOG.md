@@ -10,6 +10,50 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — Jamison–Brereton 2014 as a fifth translation column, Renou EVP as a locus witness (H1910, 30-07-2026)
+
+MG lifted R4's exclusion of Jamison–Brereton ("we can add Jamison, ignore copyright") and
+asked for Renou in the chronology. The two additions are deliberately **not** symmetric, and
+conflating them was the whole failure mode to avoid: J–B is a complete parallel translation
+and becomes a fifth column; Renou's EVP is a selective commentary and stays a witness layer.
+
+- **The fifth column.** [`src/rv_jamison_brereton_extract.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_jamison_brereton_extract.py)
+  extracts all **10,552 / 10,552** loci with **0 unmatched, 0 duplicate, 0 commentary leaks**
+  from the archive.org OCR of the three print volumes. The OCR is an input and is never
+  committed. Segmentation is positional, anchored on the VedaWeb canonical hymn sequence,
+  because the printed numbers cannot be trusted: `^[IVX]+\.\d+` matches 2,303 lines that are
+  overwhelmingly prose cross-references, the heading form differs between volumes (`I.l Agni`
+  vs `IV.44(340) Asvins`), and the OCR renders Mandala II as `11`. Eight headings the OCR
+  destroyed outright (`mil (527) Agni`, `m103(619) Frogs`) are recovered positionally rather
+  than by loosening the pattern.
+- **Requirement 3 is checked, not assumed.** Three kinds of J–B editorial matter were caught
+  leaking into stanza text — a heading block, a `Mandala N` section introduction, and a
+  hymn-group introduction — plus embedded page furniture affecting 1,031 stanzas. All four
+  were invisible to the locus count, which read 10,552/10,552 throughout. Now gated, with the
+  independently-extracted Griffith layer as control (2.50% vs 1.87% open-ended stanzas).
+- **Renou stays out of the columns.** [`src/rv_renou_evp_witness.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_renou_evp_witness.py)
+  joins the committed 2,213-mention H1843 index onto **1,908 distinct loci** (458 with a
+  quoted French fragment) as a witness file beside the spine. A `translations` column for EVP
+  would be mostly `absent_from_source` and would corrupt `omitted_by_one`, whose meaning rests
+  on absence being meaningful. `renou_fr_1955` enters the chronology (1955–69, between Geldner
+  and Elizarenkova) as a witness; a test pins that it never becomes pair-eligible.
+- **Consequences.** Translator pairs 6 → **10**; the deterministic omission arm now decides
+  4 of 10 rather than 3 of 6; the flat TSV mirror 659,032 → 823,790 rows. Griffith is demoted
+  from "the English column" to the *Victorian* English one, and H1908's asymmetry note is
+  re-derived rather than kept — its claim that R4 excluded J–B is now false, and a test fails
+  if it survives anywhere in the gate-sheet builder.
+- **Gate sheet v5** carries the fifth translator and a Renou witness band (14 of the 100
+  sampled items sit at a locus where Elizarenkova cites him). v4's voted lock is untouched.
+- **Measured philological fact:** at RV 10.106.5–8, the four stanzas Geldner omits, J–B print
+  transliterated Vedic rather than English — they decline to translate rather than skip.
+- **One human action owed:** `src/tm_source_weights.json` changed, so the `LANG_PARITY.md`
+  entry `rv_corpus_translation_witness_tm_tier` needs its `verified_sha256` re-stamped. The
+  SHARED verdict was re-verified in the ledger note and is *strengthened* (EN now has two
+  populated witness rows), but re-stamping is the human reaffirmation the ledger exists to
+  collect, so `--update-hash` was deliberately not run by the agent that made the change.
+
+### Changed — ratification sheet v2: eight corrections from MG's first read (H1907, 30-07-2026)
+
 ## [1.110.0] - 2026-07-30
 
 ### Changed — ratification sheet v2: eight corrections from MG's first read ([H1923](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1923-Opus_SanskritLexicography_ratification-sheet-v2-mg-eight-points_30.07.26.md), 30-07-2026)

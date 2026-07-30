@@ -25,7 +25,8 @@
         "grassmann_de_1876",
         "geldner_de_1951",
         "elizarenkova_ru_1989",
-        "griffith_en_1896"
+        "griffith_en_1896",
+        "jamison_brereton_en_2014"
       ]
     },
     "divergence_class": {
@@ -97,6 +98,9 @@
               "$ref": "#/$defs/translation_status"
             },
             "griffith_en_1896": {
+              "$ref": "#/$defs/translation_status"
+            },
+            "jamison_brereton_en_2014": {
               "$ref": "#/$defs/translation_status"
             }
           }

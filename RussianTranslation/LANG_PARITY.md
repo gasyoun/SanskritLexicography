@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 29-07-2026 (H1210 A/B scaffold re-affirmed)
+_Created: 04-07-2026 · Last updated: 30-07-2026 (H1910: RV TM tier now five translators — verdict re-verified, hash stamp left for human reaffirmation)
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -1899,7 +1899,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
   },
   {
     "id": "rv_corpus_translation_witness_tm_tier",
-    "mechanism": "H1844 W1.12: the Rigveda multi-translation evidence layer adds a new TM tier -- trust_level \"corpus_translation_witness\" with reuse_policy \"suggest_only\" -- supplying candidate glosses from four scholarly RV translations (Grassmann 1876-77 de, Geldner 1951-57 de, Elizarenkova 1989-99 ru, Griffith 1896 en), with per-translator source priors keyed by work.",
+    "mechanism": "H1844 W1.12, extended by H1910: the Rigveda multi-translation evidence layer adds a new TM tier -- trust_level \"corpus_translation_witness\" with reuse_policy \"suggest_only\" -- supplying candidate glosses from five scholarly RV translations (Grassmann 1876-77 de, Geldner 1951-57 de, Elizarenkova 1989-99 ru, Griffith 1896 en, Jamison-Brereton 2014 en), with per-translator source priors keyed by work.",
     "files": [
       "schemas/translation_memory.schema.json",
       "src/tm_source_weights.json"
@@ -1909,7 +1909,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "SHARED by construction, and verified as such rather than assumed (ruling R7 asks for a tier that is \"not for Russian only\"). Two facts make it configuration rather than code: `lang` in translation_memory.schema.json is already an enum over [ru, en] and the new trust_level sits beside the existing four with no lang branch anywhere near it; and tm_source_weights.json is keyed BY WORK, not by language, so the four per-translator rows added here (rigveda-{grassmann-de-1876, geldner-de-1951, elizarenkova-ru-1989, griffith-en-1896}) are reachable from any target language that consults the weights. Concretely the tier already serves EN today: griffith-en-1896 is an English witness carrying its own prior, so the EN path is not a promise but a populated row. A third target language is therefore a new `lang` enum member plus a weights row -- not a rewrite, which is the structural property this ledger entry exists to pin. Scope note: this entry covers the TM TIER only. Layer B (rv_wordlevel_align.py) failed its R14 precision bar on all three languages equally (de 29.2%, ru 19.2%, en 10.5%) and is excluded from the contradiction gate for ALL languages, so its failure is symmetric and creates no parity gap.",
+    "note": "SHARED by construction, and verified as such rather than assumed (ruling R7 asks for a tier that is \"not for Russian only\"). Two facts make it configuration rather than code: `lang` in translation_memory.schema.json is already an enum over [ru, en] and the new trust_level sits beside the existing four with no lang branch anywhere near it; and tm_source_weights.json is keyed BY WORK, not by language, so the four per-translator rows added here (rigveda-{grassmann-de-1876, geldner-de-1951, elizarenkova-ru-1989, griffith-en-1896}) are reachable from any target language that consults the weights. Concretely the tier already serves EN today: griffith-en-1896 is an English witness carrying its own prior, so the EN path is not a promise but a populated row. A third target language is therefore a new `lang` enum member plus a weights row -- not a rewrite, which is the structural property this ledger entry exists to pin. H1910 re-verified this verdict rather than assuming it survived: adding Jamison-Brereton 2014 changed tm_source_weights.json, and the change is a FIFTH by-work row (rigveda-jamison-brereton-en-2014, at 0.92) which is itself English. So the SHARED verdict is not merely intact but strengthened -- EN now has two populated witness rows rather than one, and still no lang branch anywhere in the mechanism. The verified_sha256 stamp is deliberately NOT refreshed by the agent that made the change: re-stamping is the human reaffirmation this ledger exists to collect (`--update-hash` is a human's call, and window_selftest documents this gate as red-by-design until then). Scope note: this entry covers the TM TIER only. Layer B (rv_wordlevel_align.py) failed its R14 precision bar on all three languages equally (de 29.2%, ru 19.2%, en 10.5%) and is excluded from the contradiction gate for ALL languages, so its failure is symmetric and creates no parity gap.",
     "tracking": "",
     "verified_sha256": {
       "schemas/translation_memory.schema.json": "323e83381b73900d269aaca28f0ed4db2da82d1047c57f94f6cb2f2204c88701",
