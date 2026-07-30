@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §505) whatever its section, so existing numbers never shift; when a finding is later
+(currently §511) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -51,6 +51,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§500. A batch that never runs deletes a *band* of the sample, not a random subset — byte-packed chunking makes an incomplete A/B silently flatter the arm that failed](#500-a-batch-that-never-runs-deletes-a-band-of-the-sample-not-a-random-subset--byte-packed-chunking-makes-an-incomplete-ab-silently-flatter-the-arm-that-failed)
 - 🔴 [§501. An A/B whose "clean" metric scores the last attempt that RETURNED, not what the pipeline would ship, can name the wrong winner — and did](#501-an-ab-whose-clean-metric-scores-the-last-attempt-that-returned-not-what-the-pipeline-would-ship-can-name-the-wrong-winner--and-did)
 - 🔴 [§503. A git worktree silently disables every sibling-repo lookup in `src/` — artifacts rebuilt there lose layers without failing](#503-a-git-worktree-silently-disables-every-sibling-repo-lookup-in-src--artifacts-rebuilt-there-lose-layers-without-failing)
+- 🔴 [§510. A frozen local checkout is an actively misleading source for any append-only registry — read the numbering contract from `origin/`, not from disk](#510-a-frozen-local-checkout-is-an-actively-misleading-source-for-any-append-only-registry--read-the-numbering-contract-from-origin-not-from-disk) — one session, two collisions: a 177-commits-behind checkout showed §462 as the ceiling when `origin` had 166 findings, and the in-file next-free marker was stale too. Read the contract from `origin/`, derive the ceiling from the headings, and assert the marker sits above every used number.
 - 🟠 [§504. The NWS tag layer reaches only 2.2 % of the RU store — a facet bar over it is right, but it is not the sheet's main axis](#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis)
 
 
@@ -179,6 +180,10 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟡 [§57. samskrtam.ru/z/ is id-addressed with no name lookup — deep-linking needs a scraped root→id table; 8 primer-basic roots are absent](#57-samskrtamruz-is-id-addressed-with-no-name-lookup-deep-linking-needs-a-scraped-rootid-table-8-primer-basic-roots-are-absent)
 - 🟡 [§58. PWG-RU promoted store has input-level provenance, but old RU rows lacked exact model versions](#58-pwg-ru-promoted-store-has-input-level-provenance-but-old-ru-rows-lacked-exact-model-versions)
 - 🟠 [§103. `10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos](#103-105281zenodo15834721-is-a-false-doi-cited-as-genuine-in-two-different-repos) — resolves to an unrelated topology preprint, not any Sanskrit-lexicon dataset; csl-observatory's own `CITATION.cff` carried it as OBS-T's "concept DOI".
+- 🔴 [§506. A complete-coverage count cannot see commentary leaking into an extracted translation layer](#506-a-complete-coverage-count-cannot-see-commentary-leaking-into-an-extracted-translation-layer) — the two checks that DID find them — a length distribution, and a terminal-punctuation rate against an independently-extracted sibling layer — are cheap enough to keep permanently.
+- 🔴 [§507. Do not find hymn headings in an OCR'd Vedic translation by matching roman numerals](#507-do-not-find-hymn-headings-in-an-ocrd-vedic-translation-by-matching-roman-numerals) — 2,303 matches, overwhelmingly prose cross-references; anchoring is not enough, the heading form differs by volume, and 8 headings are destroyed outright.
+- 🟠 [§508. archive.org OCR: use `/download/`, not `/stream/` — and expect no diacritics](#508-archiveorg-ocr-use-download-not-stream--and-expect-no-diacritics) — `/stream/` returns the viewer page wrapped in HTML; printed line structure is not recoverable and Latin diacritics are flattened.
+- 🟠 [§509. J–B decline to translate RV 10.106.5–8 rather than omit them](#509-jb-decline-to-translate-rv-1010658-rather-than-omit-them) — transliterated Vedic, not English, at exactly the four stanzas Geldner skips — convergent evidence about the text, not about either translator.
 - 🟠 [§65. 6.6 % of the DeepSeek corpus word-alignments ground to nothing in their verse](#65-66-of-the-deepseek-corpus-word-alignments-ground-to-nothing-in-their-verse)
 - 🔴 [§66. The DCS `QL` frequency workbook's `SLP1` and length columns are truncated at ṣṭh/ḍh clusters](#66-the-dcs-ql-frequency-workbooks-slp1-and-length-columns-are-truncated-at-ṣṭhḍh-clusters)
 - 🟠 [§67. In PWG, article size dwarfs every "parametric" statistic you can extract from the entry](#67-in-pwg-article-size-dwarfs-every-parametric-statistic-you-can-extract-from-the-entry)
@@ -573,8 +578,7 @@ over [VisualDCS derived-data/Fonetika/regen-2026/varna_freq.csv](https://github.
 > **Source:** H246 print-prep session ([SanskritGrammar PR #29](https://github.com/gasyoun/SanskritGrammar/pull/29)),
 > Fable 5 `claude-fable-5` · 2026-07-07
 
-### §463. A complete-coverage count cannot see commentary leaking into an extracted translation layer
-
+### §506. A complete-coverage count cannot see commentary leaking into an extracted translation layer
 🔴 **`10,552/10,552, 0 unmatched` held while four separate defect classes were putting the
 book's editorial matter and page furniture inside the translation text.** Evidence: extracting
 Jamison–Brereton 2014 from the archive.org OCR of the three print volumes
@@ -602,8 +606,7 @@ truncation is structurally impossible).
 
 > Opus 5 1M `claude-opus-5[1m]` · 2026-07-30
 
-### §464. Do not find hymn headings in an OCR'd Vedic translation by matching roman numerals
-
+### §507. Do not find hymn headings in an OCR'd Vedic translation by matching roman numerals
 🔴 **`^[IVX]+\.\d+` matches 2,303 lines in the J–B OCR, and they are overwhelmingly prose
 cross-references rather than headings.** Evidence (H1910; two of these were paid for in wrong
 probes before the parser existed): a parser built on that pattern reconstructs 767 hymns and
@@ -635,8 +638,7 @@ introduction as the text of stanza 1.
 
 > Opus 5 1M `claude-opus-5[1m]` · 2026-07-30
 
-### §465. archive.org OCR: use `/download/`, not `/stream/` — and expect no diacritics
-
+### §508. archive.org OCR: use `/download/`, not `/stream/` — and expect no diacritics
 🟠 **`/stream/<ident>/<file>_djvu.txt` returns the viewer page** — HTML wrapper, an analytics
 `<script>`, and a closing `</body></html>` around the text. `/download/<ident>/<file>_djvu.txt`
 returns clean text (H1910: 4.2 MB, 116,661 lines, no wrapper). Two further properties worth
@@ -649,8 +651,7 @@ transliterated Vedic instead of a translation).
 
 > Opus 5 1M `claude-opus-5[1m]` · 2026-07-30
 
-### §466. J–B decline to translate RV 10.106.5–8 rather than omit them
-
+### §509. J–B decline to translate RV 10.106.5–8 rather than omit them
 🟠 **At the four stanzas Geldner omits (RV 10.106.5–8), Jamison–Brereton print transliterated
 Vedic, not English.** Evidence (H1910): those loci are `present` in the spine, with non-empty
 text carrying no English function words at all. This matters for any pairwise comparison over
@@ -5057,5 +5058,40 @@ content at the old ordinal. The architecture audit adopted this as a zero-orphan
 [`H1920`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1920-Codex_SamudraManthanam_durable-reference-zero-orphan_30.07.26.md).
 The owning defect is tracked as
 [SamudraManthanam #117](https://github.com/gasyoun/SamudraManthanam/issues/117).
+
+### §510. A frozen local checkout is an actively misleading source for any append-only registry — read the numbering contract from `origin/`, not from disk
+
+🔴 **Two consecutive §-number collisions in one session, both from reading a stale working
+copy.** Evidence (H1910, 30-07-2026): the propagation pass needed the next free FINDINGS
+number, read `FINDINGS.md` in `GitHub/SanskritLexicography` — a checkout the session-start
+scan had already reported as diverged and unable to fast-forward — and saw a highest number
+of **§462**. On `origin/master` the file carried **166** findings and §463–§466 were all
+taken, so four numbers briefly held two different claims each, which
+[`tools/epistemic_integrity_check.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tools/epistemic_integrity_check.py)
+exists to catch. The repair then hit the *same class of error a second time*: the file's own
+`(currently §505)` marker was itself stale, because a concurrent session had appended §505
+without bumping it.
+
+Three things follow, and they generalise past this file to every append-only registry in the
+org (handoff IDs, `Axx`/`Mxx` article IDs, review-sheet ids, DEAD_ENDS/GAPS numbering):
+
+1. **Never read an ID contract from a local working tree.** `git show origin/<default>:<file>`
+   costs one command and is immune to a clone that is days behind. A dirty-or-diverged clone
+   does not announce itself at the point of the read — this repo's checkout was 177 commits
+   behind and still served a perfectly well-formed file.
+2. **The in-file "next free" marker is a cache, not the truth.** It is only correct if every
+   previous appender remembered to bump it, and one had not. Derive the ceiling from the
+   actual headings (`max`) and treat the marker as a cross-check that must agree — then
+   assert, as a post-condition, that the marker sits *above* every used number.
+3. **A count is not a coverage check.** Renumbering left the total at 166 either way; only
+   `uniq -d` over the heading numbers distinguished four-numbers-used-twice from
+   four-numbers-appended. Same shape as [§506](#506-a-complete-coverage-count-cannot-see-commentary-leaking-into-an-extracted-translation-layer).
+
+This is the registry-side twin of §503 (a `git worktree` silently disabling sibling-repo
+lookups in `src/`): both are cases where the *location* of the checkout, not the code, decided
+the outcome — and in both the failure was silent rather than loud.
+
+> Opus 5 1M `claude-opus-5[1m]` · 2026-07-30
+
 
 _30-07-2026 · repository architecture audit · Codex GPT-5_
