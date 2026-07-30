@@ -1,132 +1,178 @@
 {
  "sheet_id": "sanskritlexicography-acc_ncc_p2_spotcheck",
- "handoff": "H1657",
+ "handoff": "H1951",
+ "supersedes": {
+  "handoff": "H1657/H1671",
+  "seed": 16572026,
+  "n_approve_target": 50,
+  "n_reject_target": 40,
+  "sample_total": 698,
+  "note": "unvoted; re-drawn so a 0.95 Wilson bar is attainable (MG vote 4c, 30-07-2026)"
+ },
  "adjudicator": "adjudicate_p2.py (Opus 5 1M `claude-opus-5[1m]`)",
- "seed": 16572026,
- "n_approve_target": 50,
- "n_reject_target": 40,
+ "seed": 19512026,
+ "n_approve_target": 73,
+ "n_reject_target": 73,
+ "wilson_bar_design_target": 0.95,
+ "min_n_for_bar": 73,
  "population_total": 10614,
- "sample_total": 698,
+ "sample_total": 1111,
  "blind": true,
+ "content_hash": "sha256:c17e140ca32c306ce26525fc9bbef349176789319af7ce745b1f8d2968f4cdd6",
+ "generated": "30-07-2026",
  "plan": [
   {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "population": 383,
-   "n": 40,
-   "census": false
+   "n": 73,
+   "census": false,
+   "max_wilson_lb_if_perfect": 0.95,
+   "clears_0_95_if_perfect": true
   },
   {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "population": 471,
-   "n": 40,
-   "census": false
+   "n": 73,
+   "census": false,
+   "max_wilson_lb_if_perfect": 0.95,
+   "clears_0_95_if_perfect": true
   },
   {
    "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
    "population": 442,
-   "n": 40,
-   "census": false
+   "n": 73,
+   "census": false,
+   "max_wilson_lb_if_perfect": 0.95,
+   "clears_0_95_if_perfect": true
   },
   {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "population": 3028,
-   "n": 40,
-   "census": false
+   "n": 73,
+   "census": false,
+   "max_wilson_lb_if_perfect": 0.95,
+   "clears_0_95_if_perfect": true
   },
   {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "population": 4017,
-   "n": 40,
-   "census": false
+   "n": 73,
+   "census": false,
+   "max_wilson_lb_if_perfect": 0.95,
+   "clears_0_95_if_perfect": true
   },
   {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "population": 62,
-   "n": 50,
-   "census": false
+   "n": 62,
+   "census": true,
+   "max_wilson_lb_if_perfect": 0.9417,
+   "clears_0_95_if_perfect": false
   },
   {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "population": 328,
-   "n": 50,
-   "census": false
+   "n": 73,
+   "census": false,
+   "max_wilson_lb_if_perfect": 0.95,
+   "clears_0_95_if_perfect": true
   },
   {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "population": 308,
-   "n": 50,
-   "census": false
+   "n": 73,
+   "census": false,
+   "max_wilson_lb_if_perfect": 0.95,
+   "clears_0_95_if_perfect": true
   },
   {
    "stratum": "D-different_author-lo",
    "decision": "reject",
    "population": 27,
    "n": 27,
-   "census": true
+   "census": true,
+   "max_wilson_lb_if_perfect": 0.8754,
+   "clears_0_95_if_perfect": false
   },
   {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "population": 53,
-   "n": 40,
-   "census": false
+   "n": 53,
+   "census": true,
+   "max_wilson_lb_if_perfect": 0.9324,
+   "clears_0_95_if_perfect": false
   },
   {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "population": 62,
-   "n": 40,
-   "census": false
+   "n": 62,
+   "census": true,
+   "max_wilson_lb_if_perfect": 0.9417,
+   "clears_0_95_if_perfect": false
   },
   {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "population": 212,
-   "n": 40,
-   "census": false
+   "n": 73,
+   "census": false,
+   "max_wilson_lb_if_perfect": 0.95,
+   "clears_0_95_if_perfect": true
   },
   {
    "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "population": 471,
-   "n": 40,
-   "census": false
+   "n": 73,
+   "census": false,
+   "max_wilson_lb_if_perfect": 0.95,
+   "clears_0_95_if_perfect": true
   },
   {
    "stratum": "D-person_vs_work-hi",
    "decision": "reject",
    "population": 31,
    "n": 31,
-   "census": true
+   "census": true,
+   "max_wilson_lb_if_perfect": 0.8897,
+   "clears_0_95_if_perfect": false
   },
   {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "population": 138,
-   "n": 40,
-   "census": false
+   "n": 73,
+   "census": false,
+   "max_wilson_lb_if_perfect": 0.95,
+   "clears_0_95_if_perfect": true
   },
   {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "population": 359,
-   "n": 40,
-   "census": false
+   "n": 73,
+   "census": false,
+   "max_wilson_lb_if_perfect": 0.95,
+   "clears_0_95_if_perfect": true
   },
   {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "population": 222,
-   "n": 50,
-   "census": false
+   "n": 73,
+   "census": false,
+   "max_wilson_lb_if_perfect": 0.95,
+   "clears_0_95_if_perfect": true
   }
  ],
  "agent_verdicts": {
@@ -140,23 +186,28 @@
    "decision": "reject",
    "rule": "manual_extension_unsupported"
   },
-  "10135__9_84_a_1360": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
+  "10216__9_105_a_1730": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
   },
-  "10244__9_110_b_1847": {
-   "stratum": "C-person_vs_work-c",
+  "10292__9_123_a_2075": {
+   "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "10390__9_164_a_2635": {
-   "stratum": "D-edit_distance_unsupported-lo",
+  "10292__9_123_a_2076": {
+   "stratum": "D-person_vs_work-lo",
    "decision": "reject",
-   "rule": "edit_distance_unsupported"
+   "rule": "person_vs_work"
   },
   "10406__9_165_b_2656": {
    "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "10414__9_169_a_2760": {
+   "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
   },
@@ -165,25 +216,60 @@
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "10458__9_178_b_2967": {
+  "10456__9_178_a_2965": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "10457__9_178_a_2966": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
+  },
+  "1056__1_345_b_5129": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "10578__9_209_a_3622": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
   },
+  "10582__9_210_b_3639": {
+   "stratum": "D-different_author-mid",
+   "decision": "reject",
+   "rule": "different_author"
+  },
   "10592__9_213_b_3692": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "10844__9_283_b_4727": {
+  "10672__9_253_a_4275": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "10733__9_263_a_4411": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
+  },
+  "10932__9_315_a_5324": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "10994__9_326_b_5555": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "1103__1_368_a_5524": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "11078__9_370_a_6318": {
    "stratum": "D-different_author-lo",
@@ -195,20 +281,30 @@
    "decision": "approve",
    "rule": "shared_citation"
   },
+  "11180__9_374_a_6403": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "11189__9_376_a_6439": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "11313__10_3_a_35": {
+  "11200__9_382_a_6471": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "1133__1_376_a_5665": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "11351__10_11_b_189": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
+  "11356__10_19_b_218": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "11397__10_31_a_395": {
    "stratum": "D-edit_distance_unsupported-hi",
@@ -220,7 +316,12 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "11659__10_92_a_1417": {
+  "11504.1__10_56_b_904": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "11686__10_64_b_1024": {
    "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
@@ -234,6 +335,11 @@
    "stratum": "D-person_vs_work-hi",
    "decision": "reject",
    "rule": "person_vs_work"
+  },
+  "11687__10_84_b_1276": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "11688__10_76_b_1154": {
    "stratum": "D-person_vs_work-hi",
@@ -250,28 +356,23 @@
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "11710__10_99_a_1575": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
+  "11721__10_101_a_1607": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
   },
-  "11793__10_118_a_1888": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
+  "11747.2__9_348_a_5920": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
-  "11887__10_143_a_2349": {
+  "11931__10_150_b_2486": {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "11950__10_155_b_2589": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "12059__10_175_a_2933": {
-   "stratum": "C-shared_citation-c",
+  "11995__10_165_a_2764": {
+   "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
   },
@@ -285,25 +386,40 @@
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
+  "12112__17_31_a_287": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "12199__10_209_b_3475": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "12228__9_408_a_7122": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "12327__10_252_a_4011": {
-   "stratum": "C-person_vs_work-c",
+  "12251__10_229_b_3845": {
+   "stratum": "C-same_author_prefix-c",
+   "decision": "approve",
+   "rule": "same_author_prefix"
+  },
+  "12283__10_240_b_3867": {
+   "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "prefix_extension_unsupported"
   },
   "1236__1_400_a_6105": {
    "stratum": "D-different_author-lo",
    "decision": "reject",
    "rule": "different_author"
   },
-  "12460__11_3_b_13": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
+  "12391__10_240_b_3867": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
   },
   "12527__11_18_b_290": {
    "stratum": "D-shared_citation",
@@ -315,48 +431,53 @@
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
+  "12540__12_33_b_465": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "12548__11_49_b_769": {
    "stratum": "D-different_author-lo",
    "decision": "reject",
    "rule": "different_author"
+  },
+  "12614__11_54_a_827": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
   },
   "12623__11_57_a_883": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "12705__11_84_a_1366": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
+  "1263__1_408_b_6237": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
-  "12712__12_24_b_312": {
+  "12672__11_11_b_206": {
    "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
+  },
+  "12683__11_74_b_1258": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
   },
   "12795__11_107_b_1746": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "12823__11_115_a_1818": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "1288__1_413_a_6329": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "12903__11_163_a_2283": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
   "1297__1_416_b_6375": {
    "stratum": "D-different_author-mid",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "13044__11_203_b_2978": {
+   "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
@@ -365,30 +486,65 @@
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "13372__12_47_a_632": {
+  "13060.1__26_272_a_2844": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "13229__11_254_b_3662": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "13394__12_53_a_730": {
-   "stratum": "C-manual_extension_unsupported-c",
+  "13269__12_9_b_104": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "13319__12_27_b_374": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
-   "rule": "manual_extension_unsupported"
+   "rule": "person_vs_work"
+  },
+  "13364__12_40_a_579": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "1342__1_432_a_6668": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "13440__12_81_a_1257": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
   },
   "13484__12_99_b_1542": {
    "stratum": "D-person_vs_work-hi",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "13585__12_121_a_2016": {
-   "stratum": "C-person_vs_work-c",
+  "13555__12_115_a_1871": {
+   "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "manual_extension_unsupported"
+  },
+  "13594__12_123_b_2056": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "13610__12_126_b_2129": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
+  },
+  "13698__12_153_a_2423": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "13698__12_153_a_2424": {
    "stratum": "D-person_vs_work-lo",
@@ -405,12 +561,22 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "13770.1__11_202_a_2948": {
-   "stratum": "D-person_vs_work-lo",
+  "13780__12_180_b_2942": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "13804__12_183_a_2990": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "13830__12_193_a_3151": {
+   "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "13851__12_196_a_3198": {
+  "13851__12_196_a_3199": {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
@@ -420,40 +586,80 @@
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "14092__12_276_b_4401": {
+  "13938__12_219_b_3556": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "1401__1_446_b_6967": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "14330__13_55_b_630": {
+  "14061__12_262_b_4197": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "14100__12_280_b_4489": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "14115__12_286_a_4574": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
+  },
+  "14145__12_292_a_4707": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "14322__13_78_a_830": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "14390__13_89_a_973": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "14400__13_94_a_1036": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
+  "14460.1__13_116_b_1326": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "14536__12_218_a_3529": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
   "14594__13_155_a_1849": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
+  },
+  "14635__13_161_b_1919": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
   },
   "14689__13_188_b_2248": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "14689__13_189_a_2252": {
-   "stratum": "D-person_vs_work-lo",
+  "14782__13_223_b_2817": {
+   "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "14696__13_192_a_2312": {
-   "stratum": "D-person_vs_work-mid",
-   "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "manual_extension_unsupported"
   },
   "14782__13_224_a_2833": {
    "stratum": "C-shared_citation-c",
@@ -465,48 +671,113 @@
    "decision": "approve",
    "rule": "stem_variant"
   },
+  "14887__13_251_a_3353": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "14950__13_262_a_3530": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
   "15044__13_288_b_3905": {
    "stratum": "D-person_vs_work-hi",
    "decision": "reject",
    "rule": "person_vs_work"
+  },
+  "15052__13_290_a_3924": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "15091__13_308_b_4246": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "15150__14_17_a_250": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "15156__14_29_b_395": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "15251__14_99_b_1061": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
+  "15279__14_117_b_1277": {
+   "stratum": "D-different_author-mid",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "15282__14_118_b_1296": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
   "15303__14_153_b_1639": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
+  },
+  "15319__14_160_b_1740": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "15323__14_162_b_1761": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
   },
   "15345__15_107_a_324": {
    "stratum": "D-different_author-lo",
    "decision": "reject",
    "rule": "different_author"
   },
-  "15386__14_204_b_2106": {
+  "15351__14_190_b_2040": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "15360__14_182_a_1963": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "15364__14_183_a_1984": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "1562__2_11_b_142": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "15645__15_258_b_1515": {
-   "stratum": "C-person_vs_work-c",
+  "15393__14_205_b_2125": {
+   "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "edit_distance_unsupported"
+  },
+  "15474__14_170_a_1866": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "15603__15_236_a_1275": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "15658__16_69_a_509": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "15718__16_156_b_1124": {
-   "stratum": "D-shared_citation",
+  "15682__16_127_b_827": {
+   "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
   },
@@ -515,57 +786,82 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
+  "15730__16_167_a_1158": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "15732__16_168_b_1176": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "15774__16_186_b_1312": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "15774__17_60_a_558": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "15804__16_237_b_1460": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
   "15805__16_156_b_1126": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "15824__16_308_b_1568": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "15853__15_172_a_943": {
-   "stratum": "C-person_vs_work-c",
+  "1582__2_17_b_288": {
+   "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "manual_extension_unsupported"
+  },
+  "15863__16_322_a_1736": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "15928.1__16_156_a_1119": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "15928.1__17_46_a_402": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
   },
   "15957__16_322_b_1741": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "16156__17_144_b_1186": {
-   "stratum": "D-person_vs_work-lo",
+  "16162__17_147_b_1215": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "16206__17_162_b_1435": {
-   "stratum": "D-edit_distance_unsupported-mid",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
+  "16241__17_180_a_1618": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "16251__17_177_b_1598": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "16413__17_258_b_2530": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
-  },
-  "16451__17_281_a_2781": {
-   "stratum": "C-person_vs_work-c",
-   "decision": "reject",
-   "rule": "person_vs_work"
+  "16284__17_206_b_1974": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "16453__14_177_a_1897": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "16453__15_103_b_242": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
@@ -575,10 +871,20 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "16598__18_80_a_953": {
+  "1653__2_37_b_672": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "16598__18_80_a_951": {
    "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
    "rule": "manual_extension_unsupported"
+  },
+  "16616__18_90_a_1095": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
   },
   "16630__18_100_b_1162": {
    "stratum": "C-shared_citation-c",
@@ -590,70 +896,55 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "16818__18_199_a_2079": {
+  "16745__18_162_a_1723": {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "16839.1__18_201_a_2106": {
-   "stratum": "C-person_vs_work-c",
+  "1687__2_47_a_869": {
+   "stratum": "D-different_author-mid",
    "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "16886__18_202_a_2107": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
-  },
-  "16888__18_201_a_2106": {
-   "stratum": "C-person_vs_work-c",
-   "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "different_author"
   },
   "16927__18_173_b_1859": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "16946.1__19_270_b_2461": {
-   "stratum": "D-person_vs_work-mid",
+  "16995__18_287_a_3162": {
+   "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "prefix_extension_unsupported"
   },
-  "17087__19_38_a_520": {
-   "stratum": "C-manual_extension_unsupported-c",
+  "17054__19_4_a_61": {
+   "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
-   "rule": "manual_extension_unsupported"
+   "rule": "prefix_extension_unsupported"
   },
-  "17114__19_48_b_650": {
+  "17056__19_4_a_61": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "17114__19_49_a_653": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
-  },
-  "17114__19_49_a_651": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
-  },
-  "1711__2_55_a_964": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "17185__19_90_b_991": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
   },
   "17185__19_91_b_1009": {
    "stratum": "D-different_author-lo",
    "decision": "reject",
    "rule": "different_author"
   },
-  "17282__19_212_b_1798": {
+  "17247__19_189_a_1498": {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
+  },
+  "17289__19_218_a_1833": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
   },
   "17306__19_232_a_1931": {
    "stratum": "C-same_author_prefix-c",
@@ -670,6 +961,11 @@
    "decision": "reject",
    "rule": "different_author"
   },
+  "174__1_68_a_1181": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
   "17631__20_105_a_894": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
@@ -680,43 +976,73 @@
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "17770__20_212_a_2031": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "17676__20_139_b_1253": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "17769__20_212_a_2023": {
+   "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
-   "rule": "edit_distance_unsupported"
+   "rule": "prefix_extension_unsupported"
   },
   "17790__20_218_a_2089": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "17914__20_279_b_2549": {
-   "stratum": "C-different_author-c",
+  "17818__20_229_b_2244": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "17914__20_279_b_2550": {
+   "stratum": "C-commentary_extension-c",
    "decision": "reject",
-   "rule": "different_author"
+   "rule": "commentary_extension"
+  },
+  "18006__21_14_b_139": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "18022__21_33_b_329": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "18035__21_42_a_431": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "18035__21_42_a_432": {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "18037__21_42_a_435": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "18103__20_234_b_2295": {
+   "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
+  },
+  "18230__21_173_a_1663": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "18232__21_172_b_1660": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "18236__21_176_b_1695": {
-   "stratum": "D-person_vs_work-mid",
+  "18235.3__21_183_b_1764": {
+   "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "edit_distance_unsupported"
   },
-  "18284__21_203_a_2040": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "18249__19_294_a_2602": {
+   "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
@@ -724,6 +1050,11 @@
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
+  },
+  "18354__21_232_a_2413": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "18354__21_232_a_2414": {
    "stratum": "D-person_vs_work-hi",
@@ -765,33 +1096,58 @@
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "18388__21_244_b_2587": {
-   "stratum": "C-manual_extension_unsupported-c",
+  "18356__21_232_b_2417": {
+   "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
-   "rule": "manual_extension_unsupported"
+   "rule": "edit_distance_unsupported"
+  },
+  "18379__21_241_b_2556": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "18388__21_244_b_2588": {
    "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
    "rule": "manual_extension_unsupported"
   },
-  "18417__21_260_a_2763": {
-   "stratum": "C-commentary_extension-c",
-   "decision": "reject",
-   "rule": "commentary_extension"
+  "18388__21_244_b_2589": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
-  "18471__21_275_b_2962": {
-   "stratum": "C-commentary_extension-c",
-   "decision": "reject",
-   "rule": "commentary_extension"
+  "18415__21_259_a_2741": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "18471__21_275_b_2963": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
   },
-  "18561__22_19_a_120": {
-   "stratum": "D-person_vs_work-mid",
+  "18495__21_305_a_3335": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "18540__21_331_a_3543": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "18550__22_3_b_54": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "18555__22_6_a_93": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "18604__21_316_a_3416": {
+   "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
@@ -800,95 +1156,155 @@
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "18742__22_144_b_1204": {
+  "18833__23_191_b_1809": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "18925__22_184_a_1708": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "1910.1__31_118_b_1263": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "18836__22_181_a_1661": {
+  "19128__22_306_b_2738": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "19204__23_76_b_749": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
-  },
-  "1910.1__31_90_a_996": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
   },
   "19204__23_76_b_751": {
    "stratum": "D-different_author-lo",
    "decision": "reject",
    "rule": "different_author"
   },
-  "19251__23_97_a_973": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
+  "19386__23_156_a_1488": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "19387__23_156_a_1489": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "19424__25_107_a_751": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "19428__23_172_a_1646": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "19431__23_175_a_1660": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "19446__23_188_a_1765": {
-   "stratum": "C-person_vs_work-c",
+  "19441__23_184_a_1721": {
+   "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "edit_distance_unsupported"
   },
   "19452__23_190_a_1796": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "19564__23_250_a_2306": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
+  "19564__23_250_a_2307": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "19587__23_273_b_2567": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
+  "19612__23_292_a_2721": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "19612__23_292_a_2722": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "19619__24_297_b_2976": {
    "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "19657__23_306_b_2913": {
-   "stratum": "C-prefix_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "prefix_extension_unsupported"
-  },
-  "19686__24_1_a_2": {
+  "19673__23_311_b_2987": {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
-  },
-  "19686__24_1_a_3": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
   },
   "19690__24_1_a_3": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
   },
-  "19692__23_306_b_2913": {
+  "19692__24_1_a_3": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
+  },
+  "19809__24_47_a_549": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "19854__16_32_b_252": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "19854__16_32_b_253": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "19854__16_66_b_483": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "19854__16_66_b_484": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "19888__23_109_a_1137": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "19889__24_72_b_761": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
+  "20044__25_102_a_709": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "20052__24_216_b_2214": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "20053__24_141_a_1386": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
   },
   "20090__24_152_a_1510": {
    "stratum": "D-edit_distance_unsupported-hi",
@@ -896,11 +1312,6 @@
    "rule": "edit_distance_unsupported"
   },
   "20134__24_174_b_1735": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "2013__2_142_a_2394": {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
@@ -915,10 +1326,15 @@
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "20245__24_236_a_2441": {
-   "stratum": "C-manual_extension_unsupported-c",
+  "20243__24_236_b_2442": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "20322.1__36_168_b_1848": {
+   "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
-   "rule": "manual_extension_unsupported"
+   "rule": "prefix_extension_unsupported"
   },
   "20390__25_72_a_326": {
    "stratum": "C-same_author_prefix-c",
@@ -930,75 +1346,90 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "20965__26_147_a_1603": {
-   "stratum": "C-commentary_extension-c",
-   "decision": "reject",
-   "rule": "commentary_extension"
-  },
-  "21023__26_120_a_1313": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "21092__26_245_a_2576": {
-   "stratum": "D-edit_distance_unsupported-mid",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "21093__26_245_a_2577": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "21093__26_270_a_2815": {
-   "stratum": "D-edit_distance_unsupported-mid",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "21101__26_245_a_2579": {
-   "stratum": "C-commentary_extension-c",
-   "decision": "reject",
-   "rule": "commentary_extension"
-  },
-  "21133__26_245_a_2578": {
+  "20566__25_155_b_1140": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
   },
-  "21145__26_272_a_2846": {
-   "stratum": "D-edit_distance_unsupported-lo",
+  "20576.1__25_163_a_1189": {
+   "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
-   "rule": "edit_distance_unsupported"
+   "rule": "prefix_extension_unsupported"
+  },
+  "20678__25_276_b_1848": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "20703__25_295_b_2111": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "20715__26_4_b_56": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "207__1_74_b_1279": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "20810__26_46_a_493": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "20950__26_140_a_1505": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "21007__26_188_b_1947": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "21095__26_245_a_2579": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "21133__26_262_b_2779": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "21145__26_272_b_2848": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "21183__26_302_b_3147": {
+  "21235__26_323_b_3415": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "21184__26_302_b_3148": {
-   "stratum": "D-person_vs_work-mid",
+  "21331__27_83_b_1187": {
+   "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "manual_extension_unsupported"
   },
-  "21207__26_315_a_3314": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
+  "21402__28_149_a_1362": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
   },
-  "21300__27_60_b_851": {
+  "21519__27_194_b_2383": {
    "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "21520__27_194_b_2383": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "21520__27_195_b_2384": {
+   "stratum": "D-different_author-mid",
    "decision": "reject",
-   "rule": "edit_distance_unsupported"
+   "rule": "different_author"
   },
   "21569__27_215_a_2665": {
    "stratum": "C-stem_variant",
@@ -1020,7 +1451,12 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "21891__28_134_a_1219": {
+  "21818__28_91_a_840": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "21884__28_134_b_1225": {
    "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
@@ -1030,7 +1466,52 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "22227__29_85_b_1032": {
+  "21930__28_163_b_1564": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "21951__28_174_b_1688": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "21978__28_184_b_1792": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "22084__29_1_a_8": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "2215__2_217_a_3717": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "22165.1__17_147_b_1216": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "22165.1__17_149_a_1230": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "22171.2__29_63_b_854": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "22185__29_65_b_876": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "22273__29_119_b_1385": {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
@@ -1040,12 +1521,27 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
+  "22292__29_129_a_1468": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
   "22302__29_133_b_1515": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "22323__28_18_+_141": {
+  "22351__29_161_b_1827": {
+   "stratum": "D-different_author-mid",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "22356__29_163_b_1856": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "22362__29_166_a_1878": {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
@@ -1055,92 +1551,197 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "22526__29_263_b_3022": {
+  "22433__29_208_b_2329": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "22523__29_263_b_3019": {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "22594__29_298_a_3343": {
-   "stratum": "C-commentary_extension-c",
-   "decision": "reject",
-   "rule": "commentary_extension"
+  "22538__29_268_b_3067": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
-  "2270__2_241_b_4174": {
-   "stratum": "C-commentary_extension-c",
+  "22545__29_271_a_3101": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
-   "rule": "commentary_extension"
+   "rule": "person_vs_work"
+  },
+  "22671__30_30_b_363": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "22706__30_46_a_521": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "22727__30_59_a_658": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "22727__30_59_b_660": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "22727__30_62_a_661": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "22737__30_80_b_790": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "2277__2_243_b_4227": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "2277__2_243_b_4228": {
    "stratum": "D-different_author-lo",
    "decision": "reject",
    "rule": "different_author"
   },
-  "22884__30_129_a_1244": {
-   "stratum": "C-prefix_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+  "22780__30_78_a_776": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
-  "2292__2_248_a_4304": {
+  "2281__2_244_b_4255": {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
+  },
+  "22881__30_127_b_1231": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "22884__30_129_b_1247": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "22895__30_135_a_1338": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "22982__30_174_b_1778": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "22995__30_188_a_1840": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "23000__30_192_b_1892": {
+   "stratum": "C-same_author_prefix-c",
+   "decision": "approve",
+   "rule": "same_author_prefix"
+  },
+  "23010__30_198_b_1962": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "23046__30_213_b_2121": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "23161__30_302_a_2985": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "23260__31_42_a_399": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "23289__31_56_b_563": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "23343__31_104_a_1113": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "23347__31_104_a_1113": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "23388__31_102_b_1093": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "23443__31_134_b_1400": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
+  "23466__31_147_b_1523": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
   "23467__31_149_a_1548": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "23508__31_172_a_1772": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
-  },
-  "23558__31_213_a_2007": {
-   "stratum": "D-person_vs_work-lo",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "23585__31_223_b_2114": {
-   "stratum": "C-commentary_extension-c",
-   "decision": "reject",
-   "rule": "commentary_extension"
-  },
-  "23621__31_242_a_2243": {
+  "23507__31_172_a_1774": {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "23621__31_244_a_2269": {
-   "stratum": "C-different_author-c",
+  "23585__31_223_b_2113": {
+   "stratum": "C-commentary_extension-c",
    "decision": "reject",
-   "rule": "different_author"
+   "rule": "commentary_extension"
+  },
+  "23604__31_181_b_1819": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "23604__31_228_a_2176": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "23621__31_243_b_2265": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "23621__31_243_b_2266": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "23709__31_278_a_2626": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "23846__31_297_b_2912": {
-   "stratum": "C-person_vs_work-c",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
   "23864__32_35_a_311": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "23869__32_36_a_331": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "23872__32_40_b_340": {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
@@ -1149,6 +1750,21 @@
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
+  },
+  "23926__32_83_b_792": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "23949__32_84_b_798": {
+   "stratum": "C-same_author_prefix-c",
+   "decision": "approve",
+   "rule": "same_author_prefix"
+  },
+  "23958__32_98_a_1037": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "23964__32_106_a_1139": {
    "stratum": "D-different_author-mid",
@@ -1165,22 +1781,32 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "23985__32_114_b_1220": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "24064__32_143_a_1526": {
-   "stratum": "C-manual_extension_unsupported-c",
+  "23984__32_114_a_1215": {
+   "stratum": "D-person_vs_work-lo",
    "decision": "reject",
-   "rule": "manual_extension_unsupported"
+   "rule": "person_vs_work"
   },
-  "24064__32_143_b_1530": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
+  "24023__32_120_b_1278": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "24044__32_132_a_1372": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "24123__28_203_b_2028": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "24123__28_203_b_2029": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "24123__28_203_b_2030": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
@@ -1190,155 +1816,245 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "24168__32_181_b_1936": {
+  "24129__28_149_b_1376": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "24168__32_182_a_1937": {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
+  },
+  "24176__32_184_b_1972": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "24179__32_184_a_1967": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "24183__32_184_a_1968": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "24188__32_185_b_1989": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "24189__32_186_b_2001": {
+  "24265__32_220_a_2476": {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "24265__32_216_a_2390": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
-  },
-  "24265__32_220_a_2475": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
-  },
-  "24284__32_216_a_2390": {
+  "24289__32_230_a_2593": {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "24310__32_262_a_2879": {
-   "stratum": "D-person_vs_work-mid",
+  "24339__32_239_a_2674": {
+   "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
+  },
+  "24354__32_244_b_2759": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "24359__32_251_b_2814": {
    "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "24363__32_252_b_2835": {
-   "stratum": "D-person_vs_work-mid",
+  "24363__32_252_b_2834": {
+   "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "edit_distance_unsupported"
   },
-  "24364__32_255_a_2839": {
-   "stratum": "D-person_vs_work-mid",
+  "24365__32_252_b_2834": {
+   "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "24365__32_252_b_2837": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
+   "rule": "edit_distance_unsupported"
   },
   "24397__33_11_a_96": {
    "stratum": "D-person_vs_work-hi",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "24475__33_57_b_575": {
-   "stratum": "C-person_vs_work-c",
+  "24493__33_71_b_825": {
+   "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "24554__33_255_b_2754": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
-  },
-  "24554__33_99_a_1060": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
-  },
-  "24684__33_142_b_1494": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
+   "rule": "manual_extension_unsupported"
   },
   "24776__33_182_b_2061": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
+  "24791__33_195_a_2179": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "24791__33_195_a_2184": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "248.1__23_25_a_254": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
   "24812__33_205_a_2284": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "25109__34_80_b_789": {
+  "24831__33_217_a_2379": {
    "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
+  },
+  "24834__33_217_b_2389": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "24920__33_274_b_2966": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "24960__34_1_b_15": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "25030__34_48_b_454": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "25040__34_51_b_496": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "25115__34_228_a_2141": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "25130__34_90_a_898": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
   },
   "2513__2_309_a_5315": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "25171__34_115_b_1159": {
+  "25158__34_231_b_2185": {
    "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
    "rule": "manual_extension_unsupported"
   },
-  "25180__34_118_b_1209": {
+  "25180__34_118_b_1208": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
   },
-  "25240__34_155_a_1541": {
+  "25222__34_142_a_1418": {
+   "stratum": "D-different_author-mid",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "25254__34_167_b_1617": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "25316__34_192_b_1931": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "25397__34_253_a_2362": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "25427__34_281_a_2541": {
+   "stratum": "D-different_author-mid",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "25430__34_282_a_2552": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "25554__35_64_a_751": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
   },
-  "25547__35_60_b_687": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
-  },
-  "25548__35_63_a_730": {
-   "stratum": "C-commentary_extension-c",
+  "25649__35_112_a_1281": {
+   "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
-   "rule": "commentary_extension"
+   "rule": "edit_distance_unsupported"
   },
-  "25717__35_137_a_1605": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
+  "25651__35_111_b_1272": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "25768__35_168_a_1928": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "25780__35_174_a_2019": {
    "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
    "rule": "manual_extension_unsupported"
   },
+  "25780__35_175_a_2026": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "25797__35_173_a_2007": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
   "25797__35_181_b_2101": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "2595__2_335_a_5737": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
-  },
-  "25963__35_289_b_3218": {
-   "stratum": "C-manual_extension_unsupported-c",
+  "25902__35_256_a_2744": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
-   "rule": "manual_extension_unsupported"
+   "rule": "person_vs_work"
+  },
+  "2591__2_333_b_5690": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "25943__35_270_a_2944": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "25968__36_5_a_58": {
    "stratum": "D-edit_distance_unsupported-mid",
@@ -1350,38 +2066,63 @@
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "25999__36_16_b_177": {
+  "25999__36_17_a_180": {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "25999__36_17_a_178": {
-   "stratum": "D-person_vs_work-mid",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "26001__36_16_b_171": {
-   "stratum": "D-person_vs_work-mid",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "26003__33_176_a_1986": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "26019__36_28_b_298": {
+  "26000__33_176_a_1986": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
+  },
+  "26000__36_16_a_168": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "26000__36_16_b_171": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "26001__36_16_a_168": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "26009__36_19_b_203": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "26009__36_21_b_210": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "26020__36_28_b_298": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "26020__36_29_a_306": {
+  "26020__36_29_a_305": {
    "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "26041__36_58_b_549": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "26050__36_58_b_549": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "26077__36_58_b_549": {
+   "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
@@ -1390,52 +2131,72 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "26091__36_58_b_549": {
+  "26088__36_58_b_549": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "26175__36_110_b_1171": {
+  "26132__36_86_b_814": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "26132__36_86_b_815": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "26174__36_110_b_1174": {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "26203__36_125_a_1384": {
+  "26203__36_124_b_1373": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
   },
-  "26203__36_126_b_1416": {
+  "26203__36_125_a_1387": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
   },
-  "26203__36_127_b_1433": {
+  "26203__36_128_a_1442": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
   },
-  "26203__36_128_a_1439": {
-   "stratum": "C-prefix_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "prefix_extension_unsupported"
-  },
-  "26203__36_130_a_1467": {
+  "26203__36_130_b_1473": {
    "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
    "rule": "manual_extension_unsupported"
+  },
+  "26203__36_130_b_1474": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "26203__36_130_b_1479": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "26203__36_131_b_1494": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "26203__36_135_a_1545": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
   },
   "26204__36_125_a_1389": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
   },
-  "26204__36_126_a_1410": {
-   "stratum": "C-person_vs_work-c",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "26204__36_129_b_1462": {
+  "26204__36_131_b_1495": {
    "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
    "rule": "manual_extension_unsupported"
@@ -1445,15 +2206,45 @@
    "decision": "reject",
    "rule": "commentary_extension"
   },
-  "26288__36_185_b_2060": {
+  "26204__36_133_a_1509": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "26204__36_133_b_1519": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "26204__36_134_b_1542": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "26204__36_135_a_1552": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "26204__36_135_a_1554": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "26288__36_182_b_2038": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
-  "26288__36_200_a_2144": {
-   "stratum": "C-person_vs_work-c",
+  "26288__36_202_a_2165": {
+   "stratum": "C-different_author-c",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "different_author"
+  },
+  "26359__36_205_b_2221": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "26375__32_243_a_2736": {
    "stratum": "D-different_author-lo",
@@ -1465,25 +2256,30 @@
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "26461__36_297_b_3304": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "26602__37_53_a_625": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "26673.1__31_227_b_2160": {
-   "stratum": "C-prefix_extension_unsupported-c",
+  "26470__36_299_a_3336": {
+   "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+   "rule": "manual_extension_unsupported"
   },
-  "26698__38_245_a_2971": {
+  "26482__36_309_b_3507": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "26485__36_299_a_3336": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
+  },
+  "26488__36_315_a_3587": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "26532__38_313_a_3732": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "26759__37_132_a_1555": {
    "stratum": "D-edit_distance_unsupported-lo",
@@ -1495,45 +2291,75 @@
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "26797__37_159_b_1837": {
-   "stratum": "C-commentary_extension-c",
+  "26818__38_13_b_156": {
+   "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
-   "rule": "commentary_extension"
+   "rule": "edit_distance_unsupported"
   },
   "26818__38_308_b_3686": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "26842__37_177_a_2078": {
+  "2693__2_368_a_6241": {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "27009__34_249_a_2354": {
+  "26954__35_22_b_233": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "27011__37_227_a_2663": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "27081__39_69_b_807": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "27110__37_307_b_3469": {
-   "stratum": "D-person_vs_work-lo",
+  "27110__37_307_b_3468": {
+   "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "edit_distance_unsupported"
   },
   "27122__37_309_b_3505": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "27186__37_368_a_4165": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
+  "27200__33_121_a_1255": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
-  "27306__38_25_b_364": {
-   "stratum": "C-shared_citation-c",
+  "27208__37_379_a_4339": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "27228__37_395_a_4492": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "27228__37_396_a_4494": {
+   "stratum": "C-stem_variant",
    "decision": "approve",
-   "rule": "shared_citation"
+   "rule": "stem_variant"
+  },
+  "27251__37_413_a_4634": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "27315__38_30_a_424": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "2731__2_378_a_6421": {
    "stratum": "C-shared_citation-c",
@@ -1550,15 +2376,15 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
+  "27372__38_380_b_4316": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "27480__38_153_a_1901": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
-  },
-  "27483__38_154_b_1926": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
   },
   "27546__38_196_a_2408": {
    "stratum": "C-same_author_prefix-c",
@@ -1580,52 +2406,102 @@
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "27653__38_245_a_2971": {
-   "stratum": "C-prefix_extension_unsupported-c",
+  "27547__38_196_a_2407": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "27595__38_209_b_2608": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+   "rule": "person_vs_work"
+  },
+  "27635__38_245_a_2971": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "27640__38_245_a_2971": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
   },
   "27665__33_67_b_744": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "27675__37_385_b_4417": {
-   "stratum": "D-person_vs_work-mid",
+  "27665__38_220_a_2759": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "27665__38_247_a_3011": {
+   "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "27774__38_300_a_3629": {
+  "27670__34_18_a_168": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "27683__38_252_a_3085": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
+  },
+  "27778__38_300_a_3629": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "27822__38_339_a_3986": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "27852__38_344_a_4040": {
+   "stratum": "D-different_author-mid",
+   "decision": "reject",
+   "rule": "different_author"
   },
   "27909__39_1_a_8": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
   },
+  "27946__39_17_a_205": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
   "27948__39_18_b_231": {
    "stratum": "D-person_vs_work-hi",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "27963__39_38_a_409": {
-   "stratum": "C-person_vs_work-c",
+  "27963__39_34_b_377": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "28091__39_112_a_1116": {
+   "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
-  },
-  "28154__39_140_a_1331": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
   },
   "28193__39_147_a_1392": {
    "stratum": "D-different_author-lo",
    "decision": "reject",
    "rule": "different_author"
   },
-  "28253__34_176_a_1707": {
+  "28219__39_173_b_1582": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "28253__34_176_a_1706": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
@@ -1645,70 +2521,85 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "28262__33_35_a_362": {
+  "28262__34_162_a_1572": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "28265__39_203_a_1973": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
-  },
-  "28283__39_215_b_2138": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "28298__39_225_b_2284": {
-   "stratum": "C-different_author-c",
+  "28262__34_72_a_718": {
+   "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
-   "rule": "different_author"
+   "rule": "edit_distance_unsupported"
+  },
+  "28262__39_193_a_1825": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "28298__39_225_b_2286": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "28309__39_235_a_2432": {
-   "stratum": "C-manual_extension_unsupported-c",
+  "28306.1__8_327_b_4978": {
+   "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
-   "rule": "manual_extension_unsupported"
+   "rule": "prefix_extension_unsupported"
+  },
+  "28325__39_246_a_2556": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "28325__39_251_b_2600": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "28374__38_267_b_3289": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
   },
   "28380__37_271_a_3139": {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "28503__35_52_b_628": {
+  "28405__39_283_a_3031": {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "28566__39_365_a_3935": {
+  "28631__37_198_b_2332": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "2864__3_10_a_175": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "2864__3_25_b_238": {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "28629__39_1_b_12": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "2864__3_26_a_245": {
+   "stratum": "C-different_author-c",
    "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "2864__3_26_a_244": {
-   "stratum": "C-prefix_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+   "rule": "different_author"
   },
   "2864__3_26_a_247": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "2864__3_9_a_157": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
+  "2864__3_26_b_257": {
+   "stratum": "C-same_author_prefix-c",
+   "decision": "approve",
+   "rule": "same_author_prefix"
   },
   "2864__3_9_b_161": {
    "stratum": "C-same_author_prefix-c",
@@ -1720,38 +2611,53 @@
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "2864__3_9_b_170": {
-   "stratum": "C-prefix_extension_unsupported-c",
+  "28741.1__24_245_b_2517": {
+   "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
-   "rule": "prefix_extension_unsupported"
-  },
-  "28680__38_92_a_1021": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
+   "rule": "manual_extension_unsupported"
   },
   "28741.2__25_91_b_544": {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "28751__37_246_a_2901": {
+  "28751__37_246_a_2900": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
+  },
+  "28797__39_341_a_3623": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "287__1_109_b_1856": {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "28800__39_341_a_3623": {
+  "287__1_109_b_1858": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "28801__39_341_a_3623": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "28802__39_341_a_3623": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "28834__38_276_a_3425": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "28953__38_339_a_3987": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "28986__34_81_b_802": {
+   "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
@@ -1760,25 +2666,15 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "28986__37_200_a_2359": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "29104__36_169_a_1856": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "29150__36_173_a_1916": {
-   "stratum": "D-person_vs_work-lo",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
   "29164__33_243_b_2636": {
    "stratum": "D-different_author-lo",
    "decision": "reject",
    "rule": "different_author"
+  },
+  "29166.1__36_177_b_1969": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "29168__36_177_b_1969": {
    "stratum": "D-different_author-lo",
@@ -1790,11 +2686,6 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "29232__38_275_a_3411": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
   "29252__38_158_b_1992": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
@@ -1804,6 +2695,21 @@
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
+  },
+  "29318__33_132_b_1369": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "2939__3_47_b_654": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "2944__3_49_a_682": {
+   "stratum": "D-different_author-mid",
+   "decision": "reject",
+   "rule": "different_author"
   },
   "2956__3_72_b_1131": {
    "stratum": "D-edit_distance_unsupported-lo",
@@ -1815,20 +2721,20 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
+  "29646__16_99_a_711": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "2968__3_54_a_789": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "30123__1_459_b_7321": {
-   "stratum": "C-prefix_extension_unsupported-c",
+  "30220__2_217_a_3717": {
+   "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
-   "rule": "prefix_extension_unsupported"
-  },
-  "30230__2_243_b_4227": {
-   "stratum": "D-person_vs_work-lo",
-   "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "edit_distance_unsupported"
   },
   "30251__2_308_b_5300": {
    "stratum": "D-person_vs_work-hi",
@@ -1840,45 +2746,45 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "30288__3_12_b_192": {
-   "stratum": "C-commentary_extension-c",
-   "decision": "reject",
-   "rule": "commentary_extension"
-  },
-  "30288__3_17_b_221": {
+  "30288__3_10_a_178": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
-  "30288__3_27_a_265": {
+  "30288__3_12_b_194": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "30288__3_9_b_165": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
-  "3036__3_89_a_1286": {
-   "stratum": "C-manual_extension_unsupported-c",
+  "30293__3_35_a_431": {
+   "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
-   "rule": "manual_extension_unsupported"
-  },
-  "30566__5_222_b_3090": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
+   "rule": "edit_distance_unsupported"
   },
   "30567__5_193_a_2728": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
-  "30722__7_16_b_187": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "30726__7_22_a_327": {
+   "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
-   "rule": "edit_distance_unsupported"
+   "rule": "prefix_extension_unsupported"
   },
-  "30928__8_230_a_3204": {
-   "stratum": "D-person_vs_work-mid",
+  "30797__14_49_a_588": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
+  },
+  "30907__8_167_a_2181": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
   },
   "30928__8_230_a_3205": {
    "stratum": "D-different_author-mid",
@@ -1895,87 +2801,92 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "30928__8_230_a_3208": {
-   "stratum": "D-person_vs_work-mid",
+  "30948__8_279_a_4120": {
+   "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "manual_extension_unsupported"
   },
   "30948__8_279_b_4121": {
    "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
    "rule": "manual_extension_unsupported"
   },
-  "3098__3_102_b_1517": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "3103__3_103_a_1538": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
-  },
-  "31087__10_39_b_583": {
-   "stratum": "C-prefix_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "prefix_extension_unsupported"
-  },
-  "31115__10_240_b_3867": {
-   "stratum": "C-commentary_extension-c",
-   "decision": "reject",
-   "rule": "commentary_extension"
-  },
-  "31116__10_289_a_4366": {
-   "stratum": "C-person_vs_work-c",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
   "31134__12_145_b_2337": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
-  },
-  "31137__12_218_b_3531": {
-   "stratum": "C-prefix_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "prefix_extension_unsupported"
   },
   "31137__12_219_a_3546": {
    "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
    "rule": "manual_extension_unsupported"
   },
+  "31137__12_219_b_3556": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "31179__17_144_b_1186": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "31182__17_206_b_1974": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
+  },
+  "31359__1_80_a_1332": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "31369__1_99_b_1692": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "31528__1_354_b_5275": {
-   "stratum": "C-prefix_extension_unsupported-c",
+  "31376__1_115_b_1920": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "31448__1_210_b_3412": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+   "rule": "person_vs_work"
+  },
+  "31450__1_211_a_3422": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
   },
   "31572__1_411_b_6290": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "31639__2_7_b_83": {
-   "stratum": "C-commentary_extension-c",
-   "decision": "reject",
-   "rule": "commentary_extension"
+  "31779__2_244_a_4240": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
-  "3176__3_305_b_4446": {
-   "stratum": "C-person_vs_work-c",
+  "31799__2_276_b_4757": {
+   "stratum": "C-different_author-c",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "different_author"
   },
-  "31891__3_17_b_221": {
+  "31863.1__2_345_b_5972": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "31891__3_10_b_189": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "31891__3_12_b_193": {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
@@ -1985,37 +2896,67 @@
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "31891__3_25_b_237": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
-  },
-  "31891__3_26_a_240": {
+  "31891__3_27_a_265": {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "31891__3_9_b_165": {
+  "31917__3_54_b_795": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "31917__3_54_b_796": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "31970__3_156_a_2287": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "32110__3_391_a_5534": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "32161__4_84_b_1030": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "32196__4_151_a_1654": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "3219__3_146_a_2118": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "32324__5_25_b_318": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "32340__5_50_a_556": {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "31891__3_9_b_171": {
-   "stratum": "C-different_author-c",
+  "32402__5_129_a_1781": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
-   "rule": "different_author"
+   "rule": "person_vs_work"
   },
-  "32324__5_25_b_320": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
+  "32441__5_172_a_2470": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
-  "32324__5_25_b_322": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
-  },
-  "32340__5_52_a_593": {
+  "32483__5_221_b_3088": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
@@ -2025,13 +2966,23 @@
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "32568__5_333_a_4538": {
-   "stratum": "C-person_vs_work-c",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "3276__5_76_a_970": {
+  "3275__5_76_a_971": {
    "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "3276__5_75_b_969": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "3276__5_76_a_971": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "3281__3_171_b_2481": {
+   "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
@@ -2040,110 +2991,250 @@
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "33354__8_159_b_2056": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
+  "33298__8_103_a_1213": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "33413__8_228_b_3198": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
+  "33413__8_229_a_3199": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "33413__8_229_a_3201": {
+   "stratum": "D-different_author-mid",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "33413__8_229_b_3203": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "33413__8_230_a_3204": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "33447__8_244_a_3493": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
-  },
-  "33512__8_298_a_4481": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
-  },
-  "34268__10_240_b_3867": {
-   "stratum": "C-commentary_extension-c",
+  "33413__8_230_a_3206": {
+   "stratum": "D-person_vs_work-mid",
    "decision": "reject",
-   "rule": "commentary_extension"
+   "rule": "person_vs_work"
   },
-  "34303__11_27_a_387": {
+  "33413__8_230_a_3208": {
+   "stratum": "D-different_author-mid",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "33438__8_241_a_3433": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "33491__8_276_a_4045": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "33509__8_296_b_4448": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "33527__8_308_a_4606": {
    "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "34542__12_47_a_632": {
+  "33527__8_310_a_4653": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
+  },
+  "33740__9_164_a_2634": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "34092__10_99_a_1575": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "34244__10_240_b_3867": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "34253__10_240_b_3867": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "34258__10_240_b_3867": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "34302__11_26_a_360": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "34348__11_69_b_1135": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "34357__11_64_a_980": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "343__1_125_b_2071": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "34468__31_29_a_262": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "34550__12_55_a_774": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "34554.1__12_54_b_760": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "34618__12_153_a_2428": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "34554.1__12_55_a_774": {
+   "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
+  },
+  "34605__12_126_b_2130": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "34626__12_152_a_2414": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
+  "34656__12_182_b_2969": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "3465__3_232_b_3410": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
   "34686__12_219_a_3546": {
    "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
    "rule": "manual_extension_unsupported"
   },
-  "35171__15_135_a_594": {
+  "34773__13_55_b_630": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "34794__13_55_b_630": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "34864__13_129_b_1470": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "34874__12_218_a_3529": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "34968__13_250_b_3349": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "35057__14_96_a_1026": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "35076__15_107_a_324": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "35080__14_178_a_1916": {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "35210__15_172_a_943": {
-   "stratum": "C-person_vs_work-c",
+  "35084__14_182_b_1975": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "35085__14_183_a_1977": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "35216__15_172_a_943": {
+   "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "prefix_extension_unsupported"
   },
   "35299__17_144_b_1186": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "352__1_128_a_2096": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
   "35326__17_177_b_1598": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "35398__18_76_b_892": {
-   "stratum": "D-edit_distance_unsupported-mid",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "35486__18_202_a_2107": {
+  "35402__18_80_a_954": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
+  },
+  "35472__18_202_a_2107": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "35486__18_240_a_2539": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "35540__19_16_b_223": {
    "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
    "rule": "manual_extension_unsupported"
   },
-  "35611__19_213_a_1807": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
+  "3565__3_278_a_4004": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
   },
   "35664__20_21_a_234": {
    "stratum": "D-different_author-lo",
@@ -2155,20 +3246,20 @@
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "35861__21_134_a_1359": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
+  "35772__20_279_b_2550": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
   },
-  "35863__21_134_b_1365": {
-   "stratum": "D-person_vs_work-mid",
+  "3584__3_284_a_4089": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "35884__19_294_a_2602": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
+  "35855__21_125_a_1219": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "35904__21_232_a_2413": {
    "stratum": "D-person_vs_work-hi",
@@ -2176,6 +3267,11 @@
    "rule": "person_vs_work"
   },
   "35904__21_232_a_2414": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "35904__21_232_a_2415": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
@@ -2190,55 +3286,105 @@
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
+  "35923__21_260_b_2766": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "35968__21_331_a_3542": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "3600__3_287_b_4162": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
+  },
+  "36082__22_184_a_1708": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "36110__22_301_b_2699": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "3619__3_293_b_4251": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "36222__23_175_a_1660": {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "36223__23_176_a_1665": {
-   "stratum": "C-commentary_extension-c",
-   "decision": "reject",
-   "rule": "commentary_extension"
-  },
-  "36255__23_113_b_1165": {
-   "stratum": "D-person_vs_work-mid",
+  "36411__24_225_a_2295": {
+   "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "36525__25_232_b_1440": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "36415__24_236_a_2441": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "36415__24_236_b_2442": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "36469__25_93_a_556": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "36502__25_163_a_1190": {
+   "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
-   "rule": "edit_distance_unsupported"
+   "rule": "manual_extension_unsupported"
+  },
+  "36515__25_222_b_1335": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
   },
   "36556__26_17_a_184": {
    "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
+  "36593__26_82_a_881": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "3659__3_340_a_4649": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
   "36624__26_147_a_1603": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
   },
-  "36703__27_165_b_1978": {
-   "stratum": "D-person_vs_work-lo",
-   "decision": "reject",
-   "rule": "person_vs_work"
+  "36676__26_272_b_2848": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
-  "36703__28_177_b_1729": {
+  "36703__28_125_b_1165": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "36931.1__17_149_b_1237": {
-   "stratum": "C-prefix_extension_unsupported-c",
+  "36865__28_160_b_1513": {
+   "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+   "rule": "manual_extension_unsupported"
   },
   "36933__29_62_a_827": {
    "stratum": "D-different_author-mid",
@@ -2250,105 +3396,220 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "37078__30_44_a_519": {
-   "stratum": "C-shared_citation-c",
+  "36999__29_188_b_2111": {
+   "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
+  },
+  "37186__30_227_b_2147": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "37196__30_239_a_2220": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "37200__30_245_b_2283": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "37238__30_308_a_3049": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "37316__31_118_b_1263": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "37316__31_90_a_996": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "37320__31_267_b_2512": {
+  "37341__31_172_a_1772": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "37363__31_181_b_1819": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "37430__32_34_b_307": {
-   "stratum": "C-commentary_extension-c",
+  "37415.1__31_297_b_2912": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
-   "rule": "commentary_extension"
+   "rule": "person_vs_work"
+  },
+  "37422__31_297_b_2912": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
   },
   "37431__32_35_a_311": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "37458__32_83_b_792": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "37466__32_107_b_1164": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
-  },
   "37484__32_120_b_1278": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "37548__32_216_a_2391": {
+  "37509__28_149_b_1376": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "37563__32_252_b_2836": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "37564__32_252_b_2834": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "37564__32_252_b_2835": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "37657__33_167_a_1844": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "37688__33_230_b_2518": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "37691.1__33_237_a_2585": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "37691.1__33_237_a_2586": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "37748__34_59_a_608": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
   },
-  "37551__32_262_a_2877": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "37773__34_90_a_898": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
-   "rule": "edit_distance_unsupported"
+   "rule": "person_vs_work"
   },
-  "37654__33_158_b_1721": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "37684__33_216_a_2368": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
-  },
-  "38007__35_181_b_2101": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
-  },
-  "38053__35_257_b_2762": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
-  },
-  "38069__36_16_a_169": {
-   "stratum": "D-edit_distance_unsupported-mid",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "38089__36_55_a_513": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
-  },
-  "38093__36_86_b_814": {
-   "stratum": "D-edit_distance_unsupported-mid",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "38113__36_131_a_1480": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
-  },
-  "38113__36_131_a_1486": {
+  "37782__34_104_b_1032": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
   },
-  "38113__36_134_b_1542": {
+  "37783__34_110_a_1103": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "37787__34_115_b_1159": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "37833__34_182_a_1767": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "37846__35_141_a_1660": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "37912__35_36_a_451": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "38001__35_172_b_1995": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "38069__36_16_a_168": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "38071__36_21_b_204": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "38071__36_21_b_205": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "38071__36_21_b_208": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "38073__36_28_b_298": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "38073__36_29_a_306": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "38093__36_86_b_818": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "38113__36_126_b_1419": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
+  },
+  "38113__36_130_b_1473": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "38137__36_175_a_1935": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "38153__36_203_b_2200": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "38340__37_268_a_3084": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "38358__37_299_a_3376": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "38378__37_331_b_3783": {
    "stratum": "D-edit_distance_unsupported-mid",
@@ -2360,62 +3621,47 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "38489__38_155_b_1941": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "38457__38_92_b_1025": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "38480__39_15_a_161": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "38501__38_128_a_1515": {
+   "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "38502__38_197_a_2415": {
+  "38502__38_196_b_2410": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
-  "38523__38_230_a_2911": {
-   "stratum": "D-person_vs_work-mid",
+  "38609__39_18_b_231": {
+   "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "edit_distance_unsupported"
   },
-  "38549__38_275_b_3415": {
-   "stratum": "C-shared_citation-c",
+  "38710__39_203_a_1973": {
+   "stratum": "C-stem_variant",
    "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "38559__38_304_b_3660": {
-   "stratum": "C-person_vs_work-c",
-   "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "stem_variant"
   },
   "38747__38_267_b_3289": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "38824__37_187_a_2183": {
-   "stratum": "D-edit_distance_unsupported-mid",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
   "38834__33_173_b_1943": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "38850.2__25_91_b_544": {
-   "stratum": "D-person_vs_work-mid",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "38866__38_274_a_3394": {
-   "stratum": "D-person_vs_work-mid",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "38867__39_341_a_3623": {
-   "stratum": "D-person_vs_work-lo",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "38912__39_310_a_3371": {
+  "38932__34_81_b_802": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
@@ -2425,27 +3671,62 @@
    "decision": "reject",
    "rule": "different_author"
   },
+  "38932__37_200_a_2359": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "3893__3_389_b_5504": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
   "38984__33_218_a_2402": {
    "stratum": "D-different_author-lo",
    "decision": "reject",
    "rule": "different_author"
+  },
+  "38985__33_218_a_2402": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "39009__36_177_b_1969": {
    "stratum": "D-different_author-lo",
    "decision": "reject",
    "rule": "different_author"
   },
+  "3903__3_391_a_5535": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "39046__39_366_b_3953": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "39300__1_111_b_1863": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
   },
-  "3935__4_16_b_220": {
-   "stratum": "D-person_vs_work-mid",
+  "39309__1_136_a_2215": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "39388__1_441_b_6859": {
+  "3935__4_18_a_249": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "39382__1_200_b_3229": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "39393__1_459_b_7321": {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
@@ -2460,33 +3741,58 @@
    "decision": "reject",
    "rule": "commentary_extension"
   },
-  "39404__2_6_b_54": {
-   "stratum": "D-person_vs_work-mid",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "39439__2_114_b_2004": {
+  "39455__2_183_a_3213": {
    "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "39531__3_12_b_196": {
+  "3945__4_21_b_320": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "39531__3_10_b_180": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
   },
-  "39531__3_9_a_158": {
-   "stratum": "C-prefix_extension_unsupported-c",
+  "39531__3_10_b_181": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+   "rule": "person_vs_work"
   },
-  "39557.1__18_142_b_1532": {
-   "stratum": "C-prefix_extension_unsupported-c",
+  "39531__3_13_a_203": {
+   "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+   "rule": "manual_extension_unsupported"
   },
-  "39619__4_38_a_556": {
-   "stratum": "C-shared_citation-c",
+  "39531__3_26_b_251": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "39531__3_26_b_257": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "39531__3_27_a_265": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "39531__3_9_b_165": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "39637__4_80_b_963": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "39652__4_151_a_1654": {
+   "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
   },
@@ -2494,6 +3800,31 @@
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
+  },
+  "39708__5_25_b_322": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "39759__5_245_b_3518": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "39873__6_225_b_3620": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "40122__8_228_b_3198": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "40122__8_229_a_3201": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "40122__8_230_a_3205": {
    "stratum": "D-different_author-mid",
@@ -2510,27 +3841,27 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "40122__8_230_a_3208": {
-   "stratum": "D-person_vs_work-mid",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "40147__8_291_b_4347": {
-   "stratum": "C-stem_variant",
+  "40143__8_290_b_4321": {
+   "stratum": "C-shared_citation-c",
    "decision": "approve",
-   "rule": "stem_variant"
+   "rule": "shared_citation"
+  },
+  "40149__8_290_b_4321": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "40157__8_317_a_4803": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "40283__10_98_b_1560": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
+  "40349__11_29_a_426": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
   },
-  "40329__10_227_a_3768": {
+  "40349__11_29_a_433": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
@@ -2545,90 +3876,185 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "40469__13_78_a_830": {
-   "stratum": "C-prefix_extension_unsupported-c",
+  "40422__12_129_a_2177": {
+   "stratum": "C-commentary_extension-c",
    "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+   "rule": "commentary_extension"
   },
-  "40578__14_170_a_1866": {
-   "stratum": "C-prefix_extension_unsupported-c",
+  "40430__12_180_b_2941": {
+   "stratum": "C-different_author-c",
    "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+   "rule": "different_author"
   },
-  "40602__16_192_a_1391": {
+  "40565__14_178_a_1916": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "40631__17_144_b_1186": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "40634__17_162_b_1437": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "40645__17_250_a_2441": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "40676__18_190_b_1971": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "40699__19_62_b_747": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "40697__19_38_a_520": {
-   "stratum": "C-manual_extension_unsupported-c",
+  "40699__19_62_b_748": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "40706__19_89_b_987": {
+   "stratum": "D-person_vs_work-mid",
    "decision": "reject",
-   "rule": "manual_extension_unsupported"
+   "rule": "person_vs_work"
+  },
+  "40716__19_207_b_1736": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "40735__18_86_b_1047": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "40735__20_21_a_234": {
    "stratum": "D-different_author-lo",
    "decision": "reject",
    "rule": "different_author"
   },
+  "40765__20_279_b_2550": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
   "40821__22_46_a_440": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "40844__22_148_b_1263": {
-   "stratum": "C-commentary_extension-c",
+  "40848__22_175_a_1565": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "40853__22_207_b_1864": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "40937__24_101_b_1049": {
+   "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
-   "rule": "commentary_extension"
+   "rule": "edit_distance_unsupported"
   },
   "40951__24_225_a_2295": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "41097__29_6_a_89": {
+  "41007__26_98_b_1091": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "41021__26_211_b_2212": {
    "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
    "rule": "manual_extension_unsupported"
   },
-  "41177__30_216_a_2146": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
+  "41036__26_302_b_3148": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "41055__27_169_b_2055": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "41177__30_227_b_2147": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
+  "41238__32_41_a_347": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "41245__32_77_b_711": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "41245__32_91_b_924": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
   "41251__28_149_b_1376": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "41297__38_344_b_4053": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "41287__33_127_b_1338": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
-   "rule": "edit_distance_unsupported"
+   "rule": "person_vs_work"
   },
-  "41304__33_217_b_2389": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
+  "41345__34_193_b_1947": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "41370__35_82_b_990": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
   },
   "41397__35_240_a_2537": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "41488__38_29_b_423": {
-   "stratum": "D-shared_citation",
+  "41459__37_225_b_2648": {
+   "stratum": "C-stem_variant",
    "decision": "approve",
-   "rule": "shared_citation"
+   "rule": "stem_variant"
+  },
+  "41470__37_309_b_3505": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "41488__38_30_a_424": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
+  },
+  "41570__39_266_b_2802": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
   },
   "41615__33_218_a_2402": {
    "stratum": "D-different_author-lo",
@@ -2640,15 +4066,15 @@
    "decision": "reject",
    "rule": "different_author"
   },
+  "41745__1_82_a_1380": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
   "41747__1_87_a_1454": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
-  },
-  "41829__1_196_a_3122": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
   },
   "41932__1_315_a_4836": {
    "stratum": "C-same_author_prefix-c",
@@ -2660,45 +4086,70 @@
    "decision": "reject",
    "rule": "different_author"
   },
+  "42195__2_234_a_4004": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "42324__3_10_b_184": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "42324__3_12_b_196": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "42324__3_13_a_202": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "42324__3_26_b_257": {
+   "stratum": "C-same_author_prefix-c",
+   "decision": "approve",
+   "rule": "same_author_prefix"
+  },
+  "42324__3_9_b_161": {
+   "stratum": "C-same_author_prefix-c",
+   "decision": "approve",
+   "rule": "same_author_prefix"
+  },
   "42324__3_9_b_165": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "42409__3_154_b_2259": {
-   "stratum": "C-manual_extension_unsupported-c",
+  "42412__3_156_a_2287": {
+   "stratum": "D-person_vs_work-mid",
    "decision": "reject",
-   "rule": "manual_extension_unsupported"
+   "rule": "person_vs_work"
   },
-  "4242__4_150_b_1635": {
-   "stratum": "D-edit_distance_unsupported-lo",
+  "42465__3_285_b_4117": {
+   "stratum": "D-person_vs_work-mid",
    "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "42485__3_374_b_5197": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "42577__4_50_b_681": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
+   "rule": "person_vs_work"
   },
   "42582__4_56_a_749": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "42589__4_72_b_845": {
-   "stratum": "C-prefix_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+  "42582__4_56_b_750": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
   },
   "42611__4_104_b_1127": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
+  },
+  "42619__4_120_b_1257": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "42652__4_174_a_1866": {
    "stratum": "D-edit_distance_unsupported-hi",
@@ -2715,55 +4166,115 @@
    "decision": "approve",
    "rule": "same_author_prefix"
   },
+  "42878__5_129_b_1794": {
+   "stratum": "C-same_author_prefix-c",
+   "decision": "approve",
+   "rule": "same_author_prefix"
+  },
+  "42935__5_222_b_3090": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "42936__5_222_a_3089": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
   "42958__5_249_b_3573": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "42959__5_249_b_3569": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "42987__5_281_b_4019": {
-   "stratum": "C-stem_variant",
+  "42960__5_250_a_3577": {
+   "stratum": "C-shared_citation-c",
    "decision": "approve",
-   "rule": "stem_variant"
+   "rule": "shared_citation"
+  },
+  "43022__5_340_b_4684": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
   },
   "43091__6_95_b_1534": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "43231__6_243_a_3883": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
+  "43131__6_136_a_2202": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
   },
-  "4345__4_192_b_2183": {
+  "43205__6_218_a_3500": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "43250__6_257_a_4233": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "43366__7_16_a_182": {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
+  },
+  "4342.1__13_200_b_2438": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
   },
   "43464__7_132_a_2236": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "43517__7_204_a_3459": {
-   "stratum": "C-person_vs_work-c",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "43639__8_7_b_114": {
+  "43526__7_215_b_3616": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
+  },
+  "43542__7_231_a_3846": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "43598__7_320_a_5216": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "43765__8_186_a_2536": {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
+  },
+  "43775__8_196_a_2751": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "43777__8_197_a_2772": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "43803__8_228_b_3198": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "43803__8_229_a_3199": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "43803__8_229_a_3202": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "43803__8_229_b_3203": {
    "stratum": "D-person_vs_work-mid",
@@ -2775,70 +4286,115 @@
    "decision": "reject",
    "rule": "different_author"
   },
+  "43803__8_230_a_3206": {
+   "stratum": "D-different_author-mid",
+   "decision": "reject",
+   "rule": "different_author"
+  },
   "43803__8_230_a_3207": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "43869__8_292_a_4351": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "44348__10_60_a_931": {
-   "stratum": "C-person_vs_work-c",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "44541__11_92_a_1501": {
+  "43862__9_53_b_881": {
    "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "44554__11_29_a_433": {
+  "43866__8_290_b_4318": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "43871__8_290_b_4321": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "43900__8_317_a_4803": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "43904__8_319_a_4830": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "43981__9_29_a_436": {
+   "stratum": "C-same_author_prefix-c",
+   "decision": "approve",
+   "rule": "same_author_prefix"
+  },
+  "44059.1__38_338_b_3971": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
   },
-  "44554__11_30_a_438": {
-   "stratum": "C-prefix_extension_unsupported-c",
+  "44354__10_74_a_1137": {
+   "stratum": "D-person_vs_work-mid",
    "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+   "rule": "person_vs_work"
+  },
+  "44360__10_92_a_1417": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "44391__10_118_a_1888": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "44492__10_209_b_3476": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "44541__11_6_a_68": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "44581__11_69_b_1136": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "44615__11_131_b_2036": {
-   "stratum": "C-prefix_extension_unsupported-c",
+  "44615__11_131_b_2038": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+   "rule": "person_vs_work"
+  },
+  "4465__4_256_a_2867": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
   },
   "44708__12_43_b_581": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
+  "44716__12_53_a_730": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
   "44718__12_55_a_774": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "44729__12_76_b_1158": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
-  },
-  "44756__12_108_b_1747": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "44785__12_145_b_2337": {
+   "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "44813__12_178_b_2898": {
-   "stratum": "C-stem_variant",
+  "44822__12_188_b_3081": {
+   "stratum": "D-shared_citation",
    "decision": "approve",
-   "rule": "stem_variant"
+   "rule": "shared_citation"
   },
   "44869__12_289_b_4658": {
    "stratum": "C-same_author_prefix-c",
@@ -2855,40 +4411,40 @@
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "45105__13_306_b_4225": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
-  },
   "45114__14_7_a_140": {
    "stratum": "D-person_vs_work-hi",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "45263__16_186_b_1314": {
+  "45165__15_107_a_324": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "45172__14_182_b_1971": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "45273__15_172_a_944": {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "45269__16_304_a_1541": {
-   "stratum": "C-commentary_extension-c",
+  "4527__4_280_a_3269": {
+   "stratum": "D-different_author-mid",
    "decision": "reject",
-   "rule": "commentary_extension"
-  },
-  "4527__4_279_b_3268": {
-   "stratum": "D-edit_distance_unsupported-mid",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
+   "rule": "different_author"
   },
   "4527__4_280_a_3270": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "45313__17_66_b_627": {
-   "stratum": "D-person_vs_work-mid",
+  "45334__17_144_b_1186": {
+   "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
-   "rule": "person_vs_work"
+   "rule": "edit_distance_unsupported"
   },
   "45350__17_177_b_1598": {
    "stratum": "D-different_author-mid",
@@ -2900,80 +4456,170 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "45583__19_213_a_1807": {
+  "45470__18_215_b_2303": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "45470__18_216_a_2304": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "45483__18_202_a_2107": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "45525__19_13_b_173": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "45583__19_214_b_1808": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
+  "45558__19_92_a_1011": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "45595__19_232_a_1931": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
+  "45610__19_283_b_2501": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "45637__18_86_b_1047": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "45637__20_21_b_242": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "45640__20_38_a_300": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
   "45670__20_119_a_1068": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "45694__20_204_a_1889": {
-   "stratum": "D-shared_citation",
+  "45720__20_279_b_2549": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "45787__21_167_b_1585": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "45818__21_243_a_2570": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "45950__22_184_a_1709": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "45951__22_217_a_1952": {
+   "stratum": "C-stem_variant",
    "decision": "approve",
-   "rule": "shared_citation"
+   "rule": "stem_variant"
   },
-  "45919__22_148_b_1265": {
-   "stratum": "C-person_vs_work-c",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "45922__22_148_b_1263": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
-  },
-  "45923__22_148_b_1264": {
-   "stratum": "C-commentary_extension-c",
-   "decision": "reject",
-   "rule": "commentary_extension"
-  },
-  "45926__22_51_a_504": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "45959__22_184_a_1708": {
-   "stratum": "C-person_vs_work-c",
-   "decision": "reject",
-   "rule": "person_vs_work"
+  "45958__22_207_b_1864": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
   },
   "46044__23_161_a_1540": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
+  "46044__23_161_a_1541": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "46058__23_191_a_1805": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "46112__24_1_a_3": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "46142__24_39_a_482": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "46156__24_241_a_2485": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "46177__24_92_b_929": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "46193__24_150_b_1487": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "46241__24_236_b_2442": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
+  "46193__24_210_b_2150": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "46275__23_89_b_886": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
   },
   "46275__25_80_a_418": {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "46399.1__26_260_b_2742": {
+  "46280__24_71_a_730": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "46399.1__26_245_a_2578": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
+  },
+  "46402__26_245_a_2579": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "46456__27_106_b_1524": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "46575__28_178_a_1741": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
   },
   "46618__29_90_a_1081": {
    "stratum": "D-person_vs_work-lo",
@@ -2985,22 +4631,27 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "46737__30_62_a_661": {
+  "46620__29_92_b_1106": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "46737__30_59_a_658": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "46737__30_62_a_662": {
+  "46739__30_59_b_659": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "46740__30_59_b_660": {
+  "46740__30_62_a_661": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "46740__30_62_a_662": {
+  "46742__30_59_a_658": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
@@ -3010,7 +4661,12 @@
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "46743__30_62_a_662": {
+  "46743__30_59_a_658": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "46743__30_59_b_660": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
@@ -3020,22 +4676,37 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "46796__30_227_b_2147": {
+  "46777__30_172_b_1776": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "46796__30_216_a_2146": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "46898__31_242_a_2249": {
+  "46898__31_241_b_2240": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
-  "46898__31_244_a_2268": {
+  "46898__31_242_a_2243": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "46898__31_244_a_2269": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "46923__31_300_b_2963": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
   },
-  "46898__31_244_b_2271": {
+  "46945__32_34_b_307": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
@@ -3045,27 +4716,32 @@
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "47013__32_198_a_2139": {
-   "stratum": "D-person_vs_work-mid",
+  "46959__32_77_b_712": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "47044__32_255_a_2838": {
+  "47034__32_262_a_2877": {
    "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "47064__33_28_b_317": {
-   "stratum": "C-manual_extension_unsupported-c",
+  "47037__32_262_a_2879": {
+   "stratum": "D-person_vs_work-mid",
    "decision": "reject",
-   "rule": "manual_extension_unsupported"
+   "rule": "person_vs_work"
   },
-  "47077__33_71_b_825": {
-   "stratum": "C-prefix_extension_unsupported-c",
+  "47050__32_267_a_2915": {
+   "stratum": "D-person_vs_work-mid",
    "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+   "rule": "person_vs_work"
   },
   "47095__33_81_a_908": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "47095__33_81_a_910": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
@@ -3075,135 +4751,285 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "47104__26_125_b_1380": {
+  "47104__26_126_a_1392": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "47104__26_126_b_1400": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "47104__26_126_b_1403": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47104__26_127_b_1406": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
   },
-  "47104__26_125_b_1382": {
+  "47104__26_134_b_1455": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "47104__26_137_a_1466": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "47104__26_137_b_1476": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
-  },
-  "47104__26_130_a_1422": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
-  },
-  "47104__26_134_a_1442": {
-   "stratum": "C-prefix_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "prefix_extension_unsupported"
   },
   "47104__26_138_a_1482": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
   },
-  "47104__26_142_a_1533": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
-  },
-  "47104__26_143_a_1546": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
-  },
-  "47104__26_143_a_1549": {
-   "stratum": "C-different_author-c",
-   "decision": "reject",
-   "rule": "different_author"
-  },
-  "47104__26_145_a_1570": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
-  },
-  "47104__26_145_b_1575": {
-   "stratum": "C-prefix_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "prefix_extension_unsupported"
-  },
-  "47104__26_148_b_1615": {
+  "47104__26_138_a_1487": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
   },
-  "47104__26_151_b_1645": {
+  "47104__26_145_a_1566": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "47104__26_146_b_1594": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
-  "47104__26_152_b_1651": {
+  "47104__26_147_a_1600": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
-  "47104__26_155_b_1707": {
+  "47104__26_147_b_1607": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
-  "47104__26_161_b_1751": {
+  "47104__26_150_a_1620": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
-  "47104__26_172_b_1807": {
+  "47104__26_151_b_1646": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "47104__26_154_b_1679": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
-  "47104__26_173_a_1814": {
+  "47104__26_154_b_1688": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
-  "47104__26_178_a_1873": {
+  "47104__26_157_a_1711": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "47104__26_158_b_1725": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
   },
-  "47124__33_176_b_2004": {
-   "stratum": "C-shared_citation-c",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "47193__34_228_a_2141": {
+  "47104__26_159_a_1735": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
+  },
+  "47104__26_161_b_1755": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "47104__26_161_b_1756": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47104__26_162_a_1761": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47104__26_162_a_1762": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47104__26_172_b_1806": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47104__26_174_a_1831": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47104__26_174_a_1838": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47104__26_174_b_1846": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47104__26_175_b_1855": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "47104__26_176_b_1857": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47104__26_177_b_1867": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47104__26_177_b_1870": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47104__26_178_b_1879": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "47104__26_182_a_1897": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "47104__26_182_a_1900": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47104__26_185_b_1908": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "47104__26_185_b_1909": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47104__26_186_b_1921": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "47104__26_187_a_1927": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47197__34_90_a_896": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "47197__34_90_a_898": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "47198__34_90_a_894": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "47207__34_108_a_1068": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
   },
   "47230__34_167_b_1614": {
    "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
    "rule": "manual_extension_unsupported"
   },
+  "47230__34_168_a_1621": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "47303__35_52_b_628": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "47311__35_81_b_972": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "47402__36_28_b_304": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
   "47402__36_29_a_305": {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "47502__36_315_a_3587": {
-   "stratum": "C-different_author-c",
+  "47498__36_309_b_3506": {
+   "stratum": "C-manual_extension_unsupported-c",
    "decision": "reject",
-   "rule": "different_author"
+   "rule": "manual_extension_unsupported"
+  },
+  "47552__37_72_b_879": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "47572__37_100_a_1241": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "47649__37_355_a_4009": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "47660__37_384_b_4403": {
-   "stratum": "C-commentary_extension-c",
-   "decision": "reject",
-   "rule": "commentary_extension"
-  },
-  "4769__4_346_b_4162": {
-   "stratum": "C-person_vs_work-c",
+  "47677__38_30_a_424": {
+   "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
+  },
+  "47693__38_90_a_986": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "47723__38_162_a_2048": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "47732__38_196_a_2408": {
    "stratum": "C-same_author_prefix-c",
@@ -3215,11 +5041,6 @@
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "47732__38_197_a_2413": {
-   "stratum": "C-prefix_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "prefix_extension_unsupported"
-  },
   "47732__38_197_a_2414": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
@@ -3230,22 +5051,42 @@
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "47881__39_272_b_2875": {
-   "stratum": "C-prefix_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "prefix_extension_unsupported"
+  "47885__39_276_a_2933": {
+   "stratum": "C-same_author_prefix-c",
+   "decision": "approve",
+   "rule": "same_author_prefix"
   },
-  "47933__34_198_a_1988": {
-   "stratum": "D-person_vs_work-lo",
+  "47886__39_272_b_2875": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "47887__39_277_a_2953": {
+   "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "47933__34_257_a_2385": {
+  "47888__39_279_a_2971": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "47889__39_279_b_2976": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "47925__39_256_b_2655": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "47933__36_142_b_1671": {
+  "47933__33_275_a_2973": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "47963__35_254_b_2723": {
    "stratum": "D-edit_distance_unsupported-lo",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
@@ -3255,25 +5096,65 @@
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
+  "48005__35_192_b_2220": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "48010__33_170_b_1903": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
+  },
+  "48038__36_177_b_1969": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "48052__36_211_b_2302": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "4812__4_358_b_4316": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "4870__5_25_b_322": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
   },
   "4871__5_26_a_329": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "4931__5_51_a_578": {
+  "4917__5_48_a_511": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "4931__5_50_b_575": {
    "stratum": "C-stem_variant",
    "decision": "approve",
    "rule": "stem_variant"
   },
-  "4937__5_51_b_589": {
-   "stratum": "C-stem_variant",
+  "4934__5_50_a_556": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "4937__5_51_b_590": {
+   "stratum": "C-shared_citation-c",
    "decision": "approve",
-   "rule": "stem_variant"
+   "rule": "shared_citation"
+  },
+  "4937__5_51_b_591": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "5045__5_75_b_967": {
    "stratum": "D-edit_distance_unsupported-lo",
@@ -3285,20 +5166,30 @@
    "decision": "reject",
    "rule": "different_author"
   },
-  "5045__5_76_a_971": {
-   "stratum": "D-edit_distance_unsupported-lo",
+  "5064__5_116_b_1628": {
+   "stratum": "D-edit_distance_unsupported-mid",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
+  },
+  "5099__5_90_a_1178": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "5112__5_96_a_1278": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "5124__5_97_b_1318": {
-   "stratum": "C-shared_citation-c",
+  "5131__5_100_b_1351": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "5164__5_108_b_1466": {
+   "stratum": "C-same_author_prefix-c",
    "decision": "approve",
-   "rule": "shared_citation"
+   "rule": "same_author_prefix"
   },
   "5264__5_139_a_1941": {
    "stratum": "D-shared_citation",
@@ -3310,95 +5201,150 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "5436.1__17_150_a_1250": {
+  "5436.1__17_149_b_1237": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
   },
-  "5505__5_193_a_2728": {
+  "5480__5_192_b_2717": {
    "stratum": "C-person_vs_work-c",
    "decision": "reject",
    "rule": "person_vs_work"
+  },
+  "5519__5_193_a_2728": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
   },
   "5588__5_243_b_3479": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
+  "5595__5_340_b_4676": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "5606__5_249_b_3573": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "5722__5_282_a_4021": {
-   "stratum": "C-stem_variant",
-   "decision": "approve",
-   "rule": "stem_variant"
+  "566__2_106_a_1871": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "5723__5_282_a_4021": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "5767__5_293_b_4194": {
    "stratum": "D-person_vs_work-hi",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "5782__5_303_a_4230": {
+  "5788__5_305_b_4255": {
+   "stratum": "C-same_author_prefix-c",
+   "decision": "approve",
+   "rule": "same_author_prefix"
+  },
+  "5830__6_16_a_265": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "5869__5_235_a_3313": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "590__1_183_b_2952": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "5914__6_7_a_97": {
+   "stratum": "C-manual_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "manual_extension_unsupported"
+  },
+  "6006__5_208_b_2938": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "6068__6_70_a_991": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "6123__6_83_a_1302": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "6123__6_83_a_1303": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "6133__6_87_b_1369": {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "5823__6_16_a_266": {
+  "6189__6_102_a_1682": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
-  },
-  "6131__6_87_a_1364": {
-   "stratum": "D-edit_distance_unsupported-mid",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
   },
   "6217__6_116_a_1881": {
    "stratum": "C-commentary_extension-c",
    "decision": "reject",
    "rule": "commentary_extension"
   },
+  "6332__6_143_a_2276": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
   "6401__6_167_a_2696": {
    "stratum": "D-person_vs_work-hi",
    "decision": "reject",
    "rule": "person_vs_work"
+  },
+  "6443__6_168_b_2714": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "6563__6_203_a_3270": {
    "stratum": "D-person_vs_work-hi",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "6567__16_29_a_215": {
-   "stratum": "C-prefix_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "prefix_extension_unsupported"
-  },
-  "6567__16_29_b_221": {
-   "stratum": "C-prefix_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "prefix_extension_unsupported"
-  },
   "6586__6_200_b_3232": {
    "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "660.1__38_162_a_2048": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "6609__6_215_b_3459": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "6649.1__6_226_b_3623": {
+   "stratum": "D-person_vs_work-mid",
    "decision": "reject",
-   "rule": "edit_distance_unsupported"
+   "rule": "person_vs_work"
   },
   "6652__6_226_a_3621": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
-  },
-  "6798__6_257_a_4220": {
-   "stratum": "D-edit_distance_unsupported-lo",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
   },
   "6846__6_282_b_4674": {
    "stratum": "C-different_author-c",
@@ -3415,15 +5361,20 @@
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "6912__6_297_b_5050": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
-  },
-  "7019__6_321_a_5490": {
+  "687__1_210_a_3400": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
+  },
+  "6902__6_296_b_5018": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "6988__6_311_b_5345": {
+   "stratum": "D-edit_distance_unsupported-hi",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "7098__7_18_a_235": {
    "stratum": "C-same_author_prefix-c",
@@ -3435,25 +5386,85 @@
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
+  "714__1_211_b_3429": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
   "7219__6_405_a_6639": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
+  },
+  "7221__6_406_b_6660": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "7259__7_15_a_158": {
    "stratum": "D-person_vs_work-hi",
    "decision": "reject",
    "rule": "person_vs_work"
   },
+  "7336__7_36_a_585": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
   "7363__7_42_b_700": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
   },
+  "742__1_215_b_3507": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "7449__7_68_a_1231": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "7558__7_101_b_1830": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
+  },
+  "7644__7_124_a_2130": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "7758__7_149_b_2542": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "8069__7_238_b_4004": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "8124__7_287_b_4728": {
+   "stratum": "C-same_author_prefix-c",
+   "decision": "approve",
+   "rule": "same_author_prefix"
+  },
+  "8142__7_293_a_4810": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "8192__7_320_a_5215": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "8252__7_320_a_5216": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "8339__7_360_a_5885": {
    "stratum": "C-same_author_prefix-c",
@@ -3465,15 +5476,70 @@
    "decision": "approve",
    "rule": "same_author_prefix"
   },
-  "8483__8_15_a_285": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
+  "8442__8_6_a_71": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "8489__8_16_a_302": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "8491__8_16_a_308": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "8573__8_49_b_521": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "8658__8_72_b_812": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "8666__8_75_a_850": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "8672__8_76_a_863": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "8672__8_76_a_864": {
+   "stratum": "C-person_vs_work-c",
+   "decision": "reject",
+   "rule": "person_vs_work"
   },
   "8714__8_90_b_1091": {
    "stratum": "C-same_author_prefix-c",
    "decision": "approve",
    "rule": "same_author_prefix"
+  },
+  "873__1_244_a_4013": {
+   "stratum": "C-prefix_extension_unsupported-c",
+   "decision": "reject",
+   "rule": "prefix_extension_unsupported"
+  },
+  "8820__8_111_a_1374": {
+   "stratum": "C-different_author-c",
+   "decision": "reject",
+   "rule": "different_author"
+  },
+  "8829__8_111_a_1374": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
+  },
+  "8919__8_165_a_2130": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "8979__8_159_b_2055": {
    "stratum": "D-edit_distance_unsupported-hi",
@@ -3485,25 +5551,20 @@
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "913.1__27_209_a_2562": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
-  },
-  "9132__8_195_a_2739": {
+  "9056__8_179_a_2398": {
    "stratum": "D-shared_citation",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "9187__8_206_a_2966": {
-   "stratum": "C-person_vs_work-c",
+  "9229__8_223_b_3070": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "9235__8_224_a_3091": {
+   "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
-  },
-  "9196__8_206_a_2975": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
   },
   "9239__8_225_b_3113": {
    "stratum": "C-shared_citation-c",
@@ -3515,88 +5576,143 @@
    "decision": "reject",
    "rule": "different_author"
   },
+  "9249__8_229_a_3200": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "9249__8_229_a_3201": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
-  },
-  "9249__8_229_a_3202": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
   },
   "9249__8_230_a_3204": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "9249__8_230_a_3206": {
-   "stratum": "D-person_vs_work-mid",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
   "9249__8_230_a_3208": {
    "stratum": "D-different_author-mid",
    "decision": "reject",
    "rule": "different_author"
   },
-  "9283__8_237_b_3365": {
-   "stratum": "C-person_vs_work-c",
-   "decision": "reject",
-   "rule": "person_vs_work"
-  },
-  "9306__8_243_a_3469": {
+  "9253__8_231_a_3227": {
    "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
    "rule": "prefix_extension_unsupported"
+  },
+  "9306__8_243_a_3470": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
+  },
+  "9308__8_244_a_3493": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "9336__8_250_b_3631": {
+   "stratum": "C-stem_variant",
+   "decision": "approve",
+   "rule": "stem_variant"
+  },
+  "9402.1__33_52_a_488": {
+   "stratum": "D-edit_distance_unsupported-mid",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "9419__8_248_b_3588": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "9419__8_248_b_3589": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
   },
   "9442__8_277_a_4073": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
-  "9511__8_293_a_4385": {
-   "stratum": "D-edit_distance_unsupported-mid",
+  "9460.1__8_281_b_4180": {
+   "stratum": "C-prefix_extension_unsupported-c",
    "decision": "reject",
-   "rule": "edit_distance_unsupported"
+   "rule": "prefix_extension_unsupported"
+  },
+  "9511__8_292_a_4354": {
+   "stratum": "D-shared_citation",
+   "decision": "approve",
+   "rule": "shared_citation"
   },
   "9548__8_304_b_4543": {
    "stratum": "D-edit_distance_unsupported-hi",
    "decision": "reject",
    "rule": "edit_distance_unsupported"
   },
-  "9588__8_311_b_4687": {
-   "stratum": "D-shared_citation",
-   "decision": "approve",
-   "rule": "shared_citation"
+  "9549__8_304_b_4549": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
   },
-  "9597__8_314_a_4733": {
-   "stratum": "C-shared_citation-c",
+  "9612__8_317_a_4803": {
+   "stratum": "C-stem_variant",
    "decision": "approve",
-   "rule": "shared_citation"
+   "rule": "stem_variant"
   },
   "9654__8_327_b_4973": {
    "stratum": "C-shared_citation-c",
    "decision": "approve",
    "rule": "shared_citation"
   },
-  "9692__8_337_b_5123": {
-   "stratum": "D-edit_distance_unsupported-mid",
-   "decision": "reject",
-   "rule": "edit_distance_unsupported"
-  },
-  "9751__8_351_a_5362": {
+  "968__1_306_a_4699": {
    "stratum": "C-different_author-c",
    "decision": "reject",
    "rule": "different_author"
+  },
+  "9710__9_101_b_1659": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
+  "9752__8_351_b_5368": {
+   "stratum": "C-commentary_extension-c",
+   "decision": "reject",
+   "rule": "commentary_extension"
   },
   "9798__8_359_b_5461": {
    "stratum": "D-person_vs_work-lo",
    "decision": "reject",
    "rule": "person_vs_work"
   },
+  "9798__8_359_b_5462": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "9798__9_32_b_506": {
+   "stratum": "D-edit_distance_unsupported-lo",
+   "decision": "reject",
+   "rule": "edit_distance_unsupported"
+  },
   "9798__9_3_a_33": {
    "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "9798__9_3_a_34": {
+   "stratum": "D-person_vs_work-lo",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "9847__9_11_a_153": {
+   "stratum": "D-person_vs_work-mid",
+   "decision": "reject",
+   "rule": "person_vs_work"
+  },
+  "9857__9_13_b_191": {
+   "stratum": "D-person_vs_work-mid",
    "decision": "reject",
    "rule": "person_vs_work"
   },
@@ -3610,15 +5726,10 @@
    "decision": "reject",
    "rule": "manual_extension_unsupported"
   },
-  "9912__9_24_a_387": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
-  },
-  "9912__9_24_a_388": {
-   "stratum": "C-manual_extension_unsupported-c",
-   "decision": "reject",
-   "rule": "manual_extension_unsupported"
+  "9912__9_24_a_386": {
+   "stratum": "C-shared_citation-c",
+   "decision": "approve",
+   "rule": "shared_citation"
   }
  }
 }

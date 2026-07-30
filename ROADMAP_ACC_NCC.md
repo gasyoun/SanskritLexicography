@@ -115,18 +115,27 @@ migration, including every one of the 3,711 candidate rows the repair removed:
   [`apply_p2_decisions.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/apply_p2_decisions.py)
   is the smoke-tested `decisions.json` consumer. [Draft PR #264](https://github.com/gasyoun/SanskritLexicography/pull/264),
   branch `feat/acc-ncc-p2-adjudication`.
-- **Status (26-07-2026, [H1657](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1657-Opus_SanskritLexicography_acc-ncc-p2-agent-adjudication-49k_26.07.26.md),
-  Opus 5 1M `claude-opus-5[1m]`): all 49,019 rows adjudicated by agent; awaiting the
+- **Status (26-07-2026, [H1657](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1657-Opus_SanskritLexicography_acc-ncc-p2-agent-adjudication-49k_26.07.26.md),
+  Opus 5 1M `claude-opus-5[1m]`): all Tier C/D rows adjudicated by agent; awaiting the
   precision bar.** MG's ruling В2 of 26-07-2026 kept the 09-07 full-coverage ruling and
-  moved only the adjudicator: the sheet was never votable by a human (~14 working days at
+  moved only the adjudicator: the full sheet was never votable by a human (~14 working days at
   1 s/row). [`adjudicate_p2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/adjudicate_p2.py)
-  casts 41,947 approve / 7,072 reject with cited evidence;
+  casts agent verdicts with cited evidence;
   [`build_p2_spotcheck_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/build_p2_spotcheck_sheet.py)
-  draws a blind 686-card stratified sample over 16 strata;
+  draws a blind stratified sample;
   [`p2_precision_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/p2_precision_gate.py)
   publishes Wilson 95% lower bounds per stratum and gates promotion. **Nothing is promoted
-  yet** — all 49,019 sit in `works_crosswalk_agent_proposed.tsv` until a human rules the bar.
+  yet** — all 10,614 post-repair C/D rows sit in `works_crosswalk_agent_proposed.tsv` until
+  a human votes the sample and rules the bar.
   Full report: [`P2_AGENT_ADJUDICATION_REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_AGENT_ADJUDICATION_REPORT.md).
+- **Status (30-07-2026, [H1951](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1951-Grok_SanskritLexicography_acc-ncc-p2-larger-sample_30.07.26.md),
+  Grok 4.5 `grok-4.5`): larger blind sample re-drawn.** MG vote 4c (H1948) chose option (c)
+  over locking 0.85/0.90: re-draw first so a **0.95** Wilson bar is attainable. New frame:
+  **1,111 cards · 17 strata · n=73** per side (seed `19512026`; min n with perfect-agreement
+  LB ≥ 0.95). Prior unvoted 698-card frame (n=50/40) superseded. Sheet stamped + locked
+  (H1404). On a perfect vote, bar 0.95 promotes **858/920** approve rows (62-row census
+  stratum cannot clear 0.95 by construction). **Next human:** vote the spot-check, then set
+  the bar. Feasibility table: [`P2_PRECISION.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_PRECISION.md).
 - ✅ **The corrupted-NCC-key defect is FIXED (26-07-2026, H1671).** 60.0% of `ncc.jsonl`
   match-keys were wrong (uppercase IAST initials read as different SLP1 letters), which made
   93.3% of Tier D an artefact and hid **14,379 exact matches that were never proposed as
