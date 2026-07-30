@@ -137,7 +137,8 @@ claim. Per-lease outcomes match §5 exactly and the deterministic signature
 `9bd2a14297` is byte-identical across both sides, which is the load-bearing
 result: **semantic equality still holds against new master.**
 
-Gate status on the rebased branch, and the one red:
+**The inherited red gate, and how it was cleared.** The first pass over these
+gates was red, and not through any fault of this PR:
 
 - `window_selftest` — 194 defined, **193 PASS / 1 FAIL**.
 - `lang_parity_check` — **3 violations**, all inherited: `citation_tm.py`,
@@ -145,11 +146,32 @@ Gate status on the rebased branch, and the one red:
   ([PR #892](https://github.com/gasyoun/SanskritLexicography/pull/892),
   `af299375`). All three are **byte-identical between `origin/master` and this
   branch** (`git diff --name-only origin/master HEAD` lists none of them), so
-  the drift is master's own re-affirm debt. Not stamped here — per H1940, a
-  human re-affirms the verdicts on files this PR did not touch.
+  the drift is master's own re-affirm debt — `lang_parity_check` on a clean
+  `origin/master` worktree reproduces the identical 3 violations.
 - The single `window_selftest` failure is `test_lang_parity_ledger_complete`,
   i.e. the same three inherited entries surfacing through the suite. No other
   test fails.
+
+That debt was then paid on master in its own PR rather than smuggled through
+this one: each of the three verdicts was re-derived against H1902's actual diff
+(the same `+2/-1` swap of a hard-coded sibling-root guess for `sibling_root(HERE)`,
+whose resolver carries no language-conditional logic at all), re-affirmed with the
+reasoning written into each ledger note, and merged as
+[PR #894](https://github.com/gasyoun/SanskritLexicography/pull/894) / `459ee452`.
+
+This branch was then rebased a second time onto that green master. The
+`LANG_PARITY.md` collision it produced is worth recording, because it is
+structural rather than accidental: `corpus_gate_evidence_markers_fl7_h321`
+tracks **two** files, `src/corpus_gate.py` (re-stamped by #894) and
+`src/pilot/window_selftest.py` (modified and stamped by this PR), so the two
+PRs necessarily rewrote adjacent lines of the same `verified_sha256` object.
+Resolved keep-both — #894's `corpus_gate.py` hash beside this branch's
+`window_selftest.py` hash — and confirmed by re-running the gate rather than by
+inspection. Final state on the rebased branch: `lang_parity_check` **89 entries,
+no drift**; `window_selftest` **194/194, 0 failed**; bench per-lease outcomes
+unchanged with signature `9bd2a14297` intact. The `f15bcf0f → 459ee452` delta is
+`CHANGELOG.md` + `LANG_PARITY.md` only, so the A/B table above still stands on
+identical code.
 
 ## 6. Session notes
 

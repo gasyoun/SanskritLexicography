@@ -45,11 +45,14 @@ Executor: Kimi K3 (`moonshotai/kimi-k3`); rebase + re-verification: Opus 5
   two coordinator fixtures moved to the `run_audit` seam); LANG_PARITY 89 entries,
   no drift (new SHARED entry `h1811_inproc_audit_pwg_output_dir`;
   `h1339_offline_bench.py` moved exempt → tracked).
-- Post-rebase the suite is **193/194**, the one failure being
+- The first rebase surfaced a **193/194** suite, the one failure being
   `test_lang_parity_ledger_complete`: `citation_tm.py`, `corpus_gate.py` and
-  `annotate_genres.py` drifted under H1902 and await re-affirmation. Those three
-  files are byte-identical between master and this branch, so the debt is
-  master's, not this change's — deliberately **not** `--update-hash`'d here.
+  `annotate_genres.py` had drifted under H1902 and were awaiting re-affirmation.
+  Those three files are byte-identical between master and this branch, so the
+  debt was master's, not this change's; it was paid separately in
+  [#894](https://github.com/gasyoun/SanskritLexicography/pull/894) rather than
+  `--update-hash`'d here. After rebasing onto that green master:
+  `lang_parity_check` **89 entries, no drift**, `window_selftest` **194/194**.
 
 ## [1.111.2] - 2026-07-30
 
