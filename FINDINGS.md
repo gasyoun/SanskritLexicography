@@ -50,7 +50,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§499. Gold cards without evidence yield unusable votes — 5 of 6 MQM rejects carried no typology label, 1 of 20 labels reversed on adjudication](#499-gold-cards-without-evidence-yield-unusable-votes--5-of-6-mqm-rejects-carried-no-typology-label-1-of-20-labels-reversed-on-adjudication)
 - 🔴 [§500. A batch that never runs deletes a *band* of the sample, not a random subset — byte-packed chunking makes an incomplete A/B silently flatter the arm that failed](#500-a-batch-that-never-runs-deletes-a-band-of-the-sample-not-a-random-subset--byte-packed-chunking-makes-an-incomplete-ab-silently-flatter-the-arm-that-failed)
 - 🔴 [§501. An A/B whose "clean" metric scores the last attempt that RETURNED, not what the pipeline would ship, can name the wrong winner — and did](#501-an-ab-whose-clean-metric-scores-the-last-attempt-that-returned-not-what-the-pipeline-would-ship-can-name-the-wrong-winner--and-did)
-- 🔴 [§503. A git worktree silently disables every sibling-repo lookup in `src/` — artifacts rebuilt there lose layers without failing](#503-a-git-worktree-silently-disables-every-sibling-repo-lookup-in-src--artifacts-rebuilt-there-lose-layers-without-failing)
+- ✅ [§503. A git worktree silently disables every sibling-repo lookup in `src/` — artifacts rebuilt there lose layers without failing](#503-a-git-worktree-silently-disables-every-sibling-repo-lookup-in-src--artifacts-rebuilt-there-lose-layers-without-failing)
 - 🔴 [§510. A frozen local checkout is an actively misleading source for any append-only registry — read the numbering contract from `origin/`, not from disk](#510-a-frozen-local-checkout-is-an-actively-misleading-source-for-any-append-only-registry--read-the-numbering-contract-from-origin-not-from-disk) — one session, two collisions: a 177-commits-behind checkout showed §462 as the ceiling when `origin` had 166 findings, and the in-file next-free marker was stale too. Read the contract from `origin/`, derive the ceiling from the headings, and assert the marker sits above every used number.
 - 🟠 [§504. The NWS tag layer reaches only 2.2 % of the RU store — a facet bar over it is right, but it is not the sheet's main axis](#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis)
 
@@ -4920,6 +4920,17 @@ chunked run in this repo — bounded windows, cohort barriers, residual drains �
 > generator `deepseek-chat`); coverage audit 29-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
 
 ### §503. A git worktree silently disables every sibling-repo lookup in `src/` — artifacts rebuilt there lose layers without failing
+
+✅ **RESOLVED 30-07-2026 (H1902, Sonnet 5 `claude-sonnet-5`).** All 11 modules now call one
+shared resolver, [`sibling_root.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/sibling_root.py)
+(`$CSL_SIBLING_ROOT` override → upward marker-directory auto-detection → the historical guess as
+last resort), so the auto-detection path fixes the worktree case even with **no env var set at
+all** — verified from inside a real `git worktree` (`g5_card_render.py` /
+`build_g5_review_sheet.py --selftest` both report "pwgab table present · pwgbib bibliography
+present"). `require_sibling()` also lands the "stronger fix" this entry called for: a table
+missing when `CSL_SIBLING_ROOT` is explicitly set now raises `FileNotFoundError` rather than
+degrading, applied to `pwg_ab.table()`, `pwg_sources.bib()`, and
+`part_b_xref_discovery.iter_records()`. Closes [SanskritLexicography#875](https://github.com/gasyoun/SanskritLexicography/issues/875).
 
 🔴 **`GH = normpath(join(HERE, '..', '..', '..'))` resolves to `GitHub/` only in the canonical
 checkout.** A worktree created the way this org's shared-tree rule *requires*

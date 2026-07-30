@@ -42,7 +42,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 import renou
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-GH = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+from sibling_root import sibling_root  # noqa: E402
+GH = sibling_root(HERE)
 PWG_TXT = os.path.join(GH, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 
 # Coarse rollup: the curated genre label's prefix before " -- " (or the whole label

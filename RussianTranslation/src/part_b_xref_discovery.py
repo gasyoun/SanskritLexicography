@@ -40,7 +40,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-GITHUB = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+from sibling_root import sibling_root, require_sibling  # noqa: E402
+GITHUB = sibling_root(HERE)
 CSL_ORIG = os.path.join(GITHUB, 'csl-orig', 'v02')
 
 _TAG_RE = re.compile(r'<[^>]+>')
@@ -84,8 +85,11 @@ DICTS = {
 
 def iter_records(path):
     """Yield (header_line, body_text) for each `<L>...` record. Body runs until
-    the next `<L>` header or `<LEND>`, whichever comes first."""
-    if not os.path.exists(path):
+    the next `<L>` header or `<LEND>`, whichever comes first. A missing dictionary
+    silently yields nothing (some environments check out only a subset of
+    csl-orig) UNLESS CSL_SIBLING_ROOT was explicitly set, in which case that is
+    an operator assertion the siblings exist and a miss raises (H1902)."""
+    if not require_sibling(path, 'csl-orig dictionary'):
         return
     header, body = None, []
     with open(path, encoding='utf-8') as f:

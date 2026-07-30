@@ -15,10 +15,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-# `CSL_SIBLING_ROOT` override: see the same note in pwg_ab.py — a git worktree
-# sits BESIDE GitHub/, so the three-levels-up guess misses every sibling repo
-# and the bibliography degrades to "no citation tooltips" without failing.
-GH = os.environ.get('CSL_SIBLING_ROOT') or os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+from sibling_root import sibling_root, require_sibling  # noqa: E402
+GH = sibling_root(HERE)
 BIB = os.path.join(GH, 'csl-pywork', 'v02', 'distinctfiles', 'pwg', 'pywork', 'pwgauth', 'pwgbib.txt')
 PWG = os.path.join(GH, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 HI = re.compile(r'<HI code="([^"]*)" iast="([^"]*)">(.*)')
@@ -39,14 +37,15 @@ def bib():
     `promote_final_cards.rows_for` -> `extract_citation_edges` -> here. Citation edges are
     additive metadata; a missing bibliography must degrade to "no expansions resolved",
     never to "the store cannot be written". Cached either way, so the miss costs one stat.
+    `require_sibling` upgrades this back to a raise when CSL_SIBLING_ROOT is explicitly
+    set (H1902) — the operator is then asserting the siblings exist.
     """
     global _BIB
     if _BIB is None:
         _BIB = {}
-        try:
-            handle = open(BIB, encoding='utf-8')
-        except OSError:
+        if not require_sibling(BIB, 'pwg_sources bibliography'):
             return _BIB
+        handle = open(BIB, encoding='utf-8')
         for line in handle:
             h = HI.search(line)
             if not h:
