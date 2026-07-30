@@ -43,6 +43,22 @@ implementation (it cannot fail on master, which never propagates at all); the fo
 regression guard on the preserved content path. Gates: `headless_worker_selftest` PASS,
 `window_selftest` 194/194, `lang_parity_check` 89 entries no drift.
 
+### Fixed — NWS `[diasystem, domain]` tags still translated into Russian in 34 more places after H1809 (H1903, 30-07-2026)
+
+H1809 migrated 17 domain-slot half-translations, but its regex anchored on a Latin
+diasystem in slot 1 — so a row where the diasystem was *also* mistranslated, or one using
+the unbracketed `DIA , DOM >` header form, slipped through untouched. Repaired store-side
+(16 more Cyrillic-tag rows restored from the `de` field, 3 rows with a dropped `>`
+separator, 10 rows where a manuscript date+place had run into the domain slot — confirmed
+against the raw scraped NWS card — and one gloss-bracket false-positive reformatted so it
+no longer collides with the tag-detector's shape). Store-wide verification: 0
+Cyrillic-valued and 0 comma/digit-bearing tag slots across all 11,603 rows. A new
+write-time guard, `validate_final_card_schema.nws_tag_defects()`, rejects a future
+generation run that reintroduces either defect. The compensating Cyrillic aliases in
+`g5_card_render.DOMAIN_RU` (no longer reachable by anything) are retired. See
+[RESULTS_LOG.md § 30-07-2026](RESULTS_LOG.md#30-07-2026--nws-tag-half-translation-store-repair-beforeafter-h1903)
+and [FINDINGS §504](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis).
+
 ### Fixed — a transient probe failure could strand cohort leases forever, silently (H9 / H1940 Phase 2, 30-07-2026)
 
 `cohort_engine` treated a probe exception as a **durable** verdict about a profile. The

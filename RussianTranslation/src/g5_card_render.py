@@ -34,10 +34,14 @@ csl-pyutil v0.6.0.
    `nws_split.DIASET`, which is a token-peeling helper rather than an attested
    vocabulary. Using it as one produced two wrong tooltips; see `DIASYSTEM_RU`.
 
-   That census also surfaced a data defect worth its own look: 12 rows carry
-   `без уточн.` and 2 carry `Мед.` — the tag itself translated into Russian in a
-   handful of rows while 153/28 stayed Latin. Machine-readable tags should not be
-   half-translated; logged in the handoff, not repaired here.
+   That census also surfaced a data defect worth its own look: a handful of RU
+   store rows carried the tag itself translated into Russian (`без уточн.`,
+   `Мед.`, `Линг`, `Лингв` …) while the rest stayed Latin. **Repaired store-side
+   by H1903** (17 rows across both the diasystem and domain slots, plus a
+   distinct "date/place ran into the domain slot" source-fidelity class and one
+   gloss-bracket false-positive) — a write-time guard now lives in
+   `validate_final_card_schema.nws_tag_defects()`; the compensating Cyrillic
+   aliases that used to sit in `DOMAIN_RU` were retired in the same pass.
 
 The one thing NOT fixed here: NWS-layer citations that carry no `<ls>` markup at
 all (`ṚV(Sā) I 165, 11` is one). Their sigla use a different convention from
@@ -97,12 +101,10 @@ DIASYSTEM_RU = {
 #: default "not specified", which is exactly what MG could not guess from `[Gen, unsp]`.
 DOMAIN_RU = {
     "unsp": "домен не указан (unspecified)",
-    "без уточн.": "домен не указан (unspecified)",
     "Soc": "общественные отношения",
     "Ling": "лингвистика / грамматика",
     "Phil": "философия",
     "Med": "медицина",
-    "Мед.": "медицина",
     "Rit": "ритуал",
     "Al": "алхимия",
     "Poe": "поэтика",
@@ -111,18 +113,18 @@ DOMAIN_RU = {
     "Bio": "биология (растения, животные)",
     "Mat": "материалы / вещества",
     "Astr": "астрономия / астрология",
-    # Half-translated tags — the defect the census flagged (12 `без уточн.` +
-    # 2 `Мед.` corpus-wide). Measured again over the RU store for H1847: 13
-    # `без уточн` · 2 `Мед` · 1 `Линг` · 1 `Лингв` in 11,603 rows. They are
-    # glossed rather than left blank because a reviewer meeting one still needs
-    # to know what it says; the repair belongs store-side, not here.
-    "Линг": "лингвистика / грамматика",
-    "Лингв": "лингвистика / грамматика",
     # 119 senses, all under Gen. Almost certainly "эпическое" as a DOMAIN,
     # but the corpus also has Ep as a DIASYSTEM, so the reading is not
     # settled — say so rather than guess twice in one map (H1847).
     "Epi": "Epi — значение не установлено (119 значений, все при Gen)",
 }
+# H1903 store repair retired the half-translated Cyrillic aliases that used to
+# live here (`без уточн.`, `Мед.`, `Линг`, `Лингв`): the store is now 0
+# Cyrillic-valued (validate_final_card_schema.nws_tag_defects() guards against
+# a regression), and the scraped NWS corpus these tags are copied from is
+# German/English/French by construction (compile_translatable.py) — it never
+# carried the Russian forms, so no consumer of DIASYSTEM_RU/DOMAIN_RU can still
+# need them.
 
 #: What the domain slot MEANS, for the legend — the striking fact the census
 #: turned up (H1847): the domain is essentially a **śāstra** classification.
@@ -559,7 +561,9 @@ def _selftest():
     junk = card_tags("[Gen, unsp , 1349 A.D. , Delhi]")
     check(junk.get("domain") is None and junk["diasystem"] == ["Gen"],
           "a malformed bracket yields no facet chip, but its good slot survives")
-    check(DOMAIN_RU.get("Линг"), "the Cyrillic half-translated domains are glossed")
+    check("Линг" not in DOMAIN_RU and "без уточн." not in DOMAIN_RU,
+          "H1903: the Cyrillic half-translated-domain aliases stay retired "
+          "(the store is repaired; re-adding them would mask a regression)")
 
     leg = card_legend_html(t)
     check("ведийское" in leg and "unspecified" in leg,

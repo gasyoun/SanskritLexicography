@@ -4993,6 +4993,22 @@ Two data defects fell out of the same pass, both store-side, neither repaired he
    facet chip labelled `unsp , 1349 A.D. , Delhi`. The tag index now rejects values carrying
    digits/commas while the tooltips still gloss whatever is present.
 
+🟢 **Repaired store-side by [H1903](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1903-Sonnet_SanskritLexicography_nws-tag-halftranslation-store-repair_29.07.26.md)
+(30-07-2026).** [H1809](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1809-Sonnet_SanskritLexicography_nws-bare-citation-ls-markup_28.07.26.md)
+had already migrated the 17 *domain-only* half-translations the census counted here — but its
+`_BRACKET_TAG_DOMAIN` regex anchored on a **Latin** diasystem in slot 1, so it silently skipped
+every row where the diasystem was *also* mistranslated (`[Будд., без уточн.]`) or the header used
+the unbracketed `DIA , DOM >` form — leaving 17 more rows (both slots, or dropped entirely) plus a
+distinct source-fidelity class (a manuscript date+place genuinely embedded in the source's own
+`[Jin, unsp, DATE, PLACE]` header — confirmed against the raw `pilot/nws/br_ahm_i.json` card — split
+2-slot `[Jin, unsp]` + `(DATE, PLACE)` restored to the body) and the `mahat` gloss-bracket
+false-positive (reformatted `[…]`→`(…)` so it no longer collides with the tag-detector shape).
+0 Cyrillic / 0 comma-digit-bearing tag slots remain, verified two ways: a standalone scan AND
+`validate_final_card_schema.nws_tag_defects()`, a new write-time guard wired into
+`validate_sense()` so a future generation run rejects the row instead of landing it. The
+compensating Cyrillic aliases in `g5_card_render.DOMAIN_RU` are retired (the corpus is
+German/English/French by construction, so nothing can re-need them).
+
 `So:` facet a tag vocabulary off what the *cards in hand* carry (with the corpus share beside it
 for context), never off the corpus inventory — a chip that selects nothing is a dead control, and
 a corpus-sized expectation makes a working feature look broken.

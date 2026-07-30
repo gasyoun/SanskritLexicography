@@ -12,7 +12,15 @@ a real judge finding.
   SCH/PWKVN and many NWS sub-sources) but ALSO English and French in the NWS layer
   (see Guard 7). Translate each gloss FROM ITS OWN language, never relayed through German.
 - KEEP VERBATIM: Sanskrit (IAST/Devanāgarī in `{#…#}`/`{%…%}`); literary sigla
-  (ṚV., MBH., AK., MW, R., TS., …); German grammar abbrevs (m./f./n./Pl./Du./v.l.).
+  (ṚV., MBH., AK., MW, R., TS., …); German grammar abbrevs (m./f./n./Pl./Du./v.l.); the
+  NWS `[diasystem, domain]` tag (`Ved`, `Gen`, `Buddh`, `Śā`, `Jin`, `Epigr`, `Tan`,
+  `Kāv`, `Reg`, `Ep` / `unsp`, `Soc`, `Ling`, `Phil`, `Med`, `Rit`, `Al`, `Poe`, `Art`,
+  `Math`, `Bio`, `Mat`, `Astr` …) — a machine-readable classification KEY, not prose.
+  It looks like an ordinary bracketed abbreviation but must NEVER be translated or
+  abbreviated into Russian (`Будд.`, `без уточн.`, `Мед.`, `Линг`… are all defects — H1903
+  measured 17+ store rows where the model rendered this tag in Russian). Render every
+  NWS sub-source's OWN gloss to Russian per the rules above; the `[tag]` immediately
+  before it stays exactly as given in the source.
 - TWO-SOURCE PRINCIPLE: text-cited sense = `attested`; kośa/grammarian-only =
   `lexicographic`.
 

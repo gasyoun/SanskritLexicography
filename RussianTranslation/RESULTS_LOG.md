@@ -1189,3 +1189,29 @@ A gate that rejects 0 of 9,400 is not a gate: the H1457 A3 threshold (calibrated
 
 `word_traditions.jsonl` holds 63 Vajrayāna Buddhist terms against the RV's 9,539 lemmas; the join key was verified sound in both directions (`agni`→`agní-`, `indra`→`índra-`), so the empty intersection is correct. **W1.13 cannot be met as written** — recorded rather than asserted away.
 
+## 30-07-2026 — NWS tag half-translation store repair, before/after (H1903)
+
+Continuation of [H1809](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1809-Sonnet_SanskritLexicography_nws-bare-citation-ls-markup_28.07.26.md)'s
+domain-only migration (17 rows, `_BRACKET_TAG_DOMAIN` anchored on a Latin diasystem in slot 1) —
+its own `nws_ls_markup.py census` reports 0 domain-slot half-translations both before and after
+this pass, confirming no overlap/double-processing. This pass covers what that regex's Latin-only
+anchor structurally could not reach: a Cyrillic diasystem, the unbracketed `DIA , DOM >` header
+form, source-fidelity date/place residue, and one gloss-bracket false-positive.
+
+| Defect class | Rows touched | Fix |
+|---|--:|---|
+| Cyrillic diasystem and/or domain slot (bracketed) | 16 | Latin restored from the same row's `de` field (never mistranslated), position-aligned, occurrence-count verified |
+| `>`-separator dropped when the tag was translated (`ajA` card) | 3 | restored `Ved , unsp >` verbatim from `de` |
+| Manuscript date+place ran into the domain slot (source-fidelity — confirmed against the raw `pilot/nws/br_ahm_i.json` scraped card) | 14 (ru+de, 10 distinct rows) | split to 2-slot `[DIA, DOM]` + `(DATE, PLACE)` restored to the body, both fields |
+| `[mahat, n. (…)]` gloss-note bracket read as a spurious tag by the shape-only detector | 1 | `[…]` → `(…)` so the shape no longer collides |
+
+**Verify:** a vocabulary-anchored direct-text scan and `validate_final_card_schema.nws_tag_defects()`
+(new write-time guard, wired into `validate_sense()`) both report **0** Cyrillic-valued and **0**
+comma/digit-bearing NWS tag slots store-wide (11,603 rows, JSONL integrity re-checked — same row
+count before/after). `python nws_ls_markup.py census`, `nws_tag_census.py --selftest`,
+`g5_card_render.py`, `build_g5_review_sheet.py --selftest`, `validate_final_card_schema.py
+--selftest` all pass. The compensating Cyrillic aliases in `g5_card_render.DOMAIN_RU` (`без
+уточн.`, `Мед.`, `Линг`, `Лингв`) are retired — see [FINDINGS §504](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis).
+
+Model: Sonnet 5 (`claude-sonnet-5`).
+
