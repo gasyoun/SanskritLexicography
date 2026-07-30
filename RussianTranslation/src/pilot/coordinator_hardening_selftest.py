@@ -6,6 +6,7 @@ import json
 import os
 import sys
 import tempfile
+import time
 from types import SimpleNamespace
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -243,11 +244,172 @@ def test_registry_projection_fail_closed():
     print('  registry: malformed/short/substituted rows fail; retry re-fsyncs exact row')
 
 
+# H8 pin (H1940). A real child that announces its pid, then sleeps far longer than the
+# injected timeout. If the timeout kills it, PWG_H8_PIN_FINISHED is never written and the
+# pid is dead; if the claim path still runs unbounded, the child completes and says so.
+_HANGING_PREFLIGHT = '''\
+import os
+import sys
+import time
+
+with open(os.environ['PWG_H8_PIN_STARTED'], 'w', encoding='utf-8') as f:
+    f.write(str(os.getpid()))
+    f.flush()
+    os.fsync(f.fileno())
+time.sleep(float(os.environ['PWG_H8_PIN_SLEEP']))
+with open(os.environ['PWG_H8_PIN_FINISHED'], 'w', encoding='utf-8') as f:
+    f.write('child ran to completion -- it was NOT killed\\n')
+'''
+
+# Deliberately short so the suite never waits out the production 10-minute timeout. The
+# child sleep only has to dominate the injected timeout by enough that "did claim wait for
+# the child?" is unambiguous; on pre-H8 code the pin fails after this sleep, not sooner.
+_H8_INJECTED_TIMEOUT = 3.0
+_H8_CHILD_SLEEP = 20.0
+
+
+def _h8_claim_args():
+    return SimpleNamespace(kind='verb', lane='b0', owner='h8-pin', lease_id=None,
+                           batch_size=12, ttl_seconds=coordinator.LEASE_TTL_SECONDS)
+
+
+def _h8_worklist():
+    return {'runnable_remaining': ['h8root'], 'blocked_missing_rootmap': []}
+
+
+@contextlib.contextmanager
+def _h8_isolated():
+    """Restore every module/env knob the H8 pins patch, whatever the outcome."""
+    saved = {
+        'run_cmd': coordinator.run_cmd,
+        'build_worklist': coordinator.verb_worklist.build_worklist,
+        'HERE': coordinator.HERE,
+        'PREPARE_TIMEOUT_SECONDS': coordinator.PREPARE_TIMEOUT_SECONDS,
+    }
+    env_keys = ('PWG_COORDINATOR_DIR', 'PWG_H8_PIN_STARTED', 'PWG_H8_PIN_FINISHED',
+                'PWG_H8_PIN_SLEEP')
+    saved_env = {key: os.environ.get(key) for key in env_keys}
+    coordinator.verb_worklist.build_worklist = _h8_worklist
+    try:
+        with tempfile.TemporaryDirectory() as tmp:
+            os.environ['PWG_COORDINATOR_DIR'] = os.path.join(tmp, 'coord')
+            yield tmp
+    finally:
+        coordinator.run_cmd = saved['run_cmd']
+        coordinator.verb_worklist.build_worklist = saved['build_worklist']
+        coordinator.HERE = saved['HERE']
+        coordinator.PREPARE_TIMEOUT_SECONDS = saved['PREPARE_TIMEOUT_SECONDS']
+        for key, value in saved_env.items():
+            if value is None:
+                os.environ.pop(key, None)
+            else:
+                os.environ[key] = value
+
+
+def test_h8_claim_preflight_timeout_is_bounded():
+    """H8 (H1940) pin 1 of 2 -- the contract.
+
+    claim() holds the global state DirLock across verb_candidates(), which shells out to
+    perf_preflight.py. That call carried NO timeout, so a single hung preflight wedged
+    every coordinator operation until the lock TTL expired. The claim-path call must
+    receive a finite timeout, and specifically PREPARE_TIMEOUT_SECONDS; pre-H8 it receives
+    None, which is what makes this pin RED on master.
+    """
+    with _h8_isolated():
+        seen = []
+
+        def recording_run_cmd(cmd, cwd=None, check=True, timeout=None):
+            seen.append(timeout)
+            return SimpleNamespace(returncode=0, stderr='', stdout=json.dumps(
+                {'reports': [{'root': 'h8root', 'agent_expected_after_tm': 1,
+                              'selected_keys': ['k']}]}))
+
+        coordinator.run_cmd = recording_run_cmd
+        with contextlib.redirect_stdout(io.StringIO()):
+            coordinator.claim(_h8_claim_args())
+        if seen != [coordinator.PREPARE_TIMEOUT_SECONDS]:
+            raise AssertionError(
+                'claim-path perf_preflight must be bounded by PREPARE_TIMEOUT_SECONDS '
+                '(%r); saw %r' % (coordinator.PREPARE_TIMEOUT_SECONDS, seen))
+    print('  H8 contract: claim-path perf_preflight receives timeout='
+          'PREPARE_TIMEOUT_SECONDS')
+
+
+def test_h8_claim_preflight_timeout_unwinds_clean():
+    """H8 (H1940) pin 2 of 2 -- the behaviour, with a real hanging child.
+
+    With a short injected timeout, claim must terminate bounded with a deterministic
+    operator error, kill the child, leave no lease / no artifact directory / no saved
+    state / no registry event, and release the global DirLock immediately. Pre-H8 the
+    unbounded call runs the child to completion and then claims a lease, so this pin is
+    RED on master -- after _H8_CHILD_SLEEP, not after the production 10-minute timeout.
+    """
+    with _h8_isolated() as tmp:
+        here = os.path.join(tmp, 'here')
+        os.makedirs(here)
+        with open(os.path.join(here, 'perf_preflight.py'), 'w', encoding='utf-8') as f:
+            f.write(_HANGING_PREFLIGHT)
+        started = os.path.join(tmp, 'child.started')
+        finished = os.path.join(tmp, 'child.finished')
+        os.environ['PWG_H8_PIN_STARTED'] = started
+        os.environ['PWG_H8_PIN_FINISHED'] = finished
+        os.environ['PWG_H8_PIN_SLEEP'] = str(_H8_CHILD_SLEEP)
+        coordinator.HERE = here
+        coordinator.PREPARE_TIMEOUT_SECONDS = _H8_INJECTED_TIMEOUT
+
+        began = time.monotonic()
+        expect_refusal(lambda: coordinator.claim(_h8_claim_args()),
+                       'perf_preflight timed out after')
+        elapsed = time.monotonic() - began
+
+        # Bounded termination: claim returned on the timeout, not on the child.
+        if elapsed >= _H8_CHILD_SLEEP:
+            raise AssertionError(
+                'claim waited %.1fs -- it ran the preflight to completion instead of '
+                'timing out at %.1fs' % (elapsed, _H8_INJECTED_TIMEOUT))
+
+        # The child really spawned, and was killed rather than merely abandoned.
+        if not os.path.exists(started):
+            raise AssertionError(
+                'the hanging preflight never started, so this pin proved nothing about '
+                'killing it; raise _H8_INJECTED_TIMEOUT above interpreter startup')
+        child_pid = int(open(started, encoding='utf-8').read().strip())
+        for _ in range(50):
+            if not coordinator.pid_alive(child_pid):
+                break
+            time.sleep(0.1)
+        else:
+            raise AssertionError('preflight child %d survived the timeout' % child_pid)
+        if os.path.exists(finished):
+            raise AssertionError('the preflight child ran to completion: %s' %
+                                 open(finished, encoding='utf-8').read().strip())
+
+        # No lease, no partial state, no artifact directory, no registry event.
+        p = coordinator.paths()
+        if os.path.exists(p['state']):
+            raise AssertionError('a timed-out claim saved coordinator state')
+        if coordinator.load_state().get('leases'):
+            raise AssertionError('a timed-out claim appended a lease')
+        if os.path.exists(p['artifacts']) and os.listdir(p['artifacts']):
+            raise AssertionError('a timed-out claim left artifact dirs: %r' %
+                                 os.listdir(p['artifacts']))
+        if os.path.exists(p['registry']):
+            raise AssertionError('a timed-out claim emitted a registry event')
+
+        # The global DirLock unwound with the exception and is free right now.
+        with coordinator.DirLock(p['lock'], wait_seconds=0):
+            pass
+    print('  H8 unwind: hung preflight killed, no lease/artifact/state/registry row, '
+          'DirLock reacquirable')
+
+
 def main():
     test_preflight_fail_closed()
     test_record_output_batch_progress()
     test_result_submission_seal()
     test_registry_projection_fail_closed()
+    test_h8_claim_preflight_timeout_is_bounded()
+    test_h8_claim_preflight_timeout_unwinds_clean()
     print('coordinator_hardening_selftest: PASS')
 
 

@@ -10,6 +10,42 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — one hung preflight could wedge every coordinator operation (H8 / H1940 Phase 2, 30-07-2026)
+
+`coordinator claim` takes the global state `DirLock` and holds it for the whole claim,
+including `verb_candidates()`, which shells out to `perf_preflight.py` to cost-gate the
+candidate roots. That `run_cmd` carried **no timeout**. A preflight that hung — a wedged
+child, a stalled read, a machine under load — therefore held the lock indefinitely, and
+every other coordinator operation (`claim`, `prepare`, `record-output`, `promote`, the
+dashboard) blocked behind it until the lock's TTL expired. Nothing recovered sooner,
+because a live holder is correctly never reclaimed: `DirLock.stale()` requires the owner
+pid to be *dead*, and the wedged process was very much alive.
+
+The fix is the one the H1811 review specified, and no more:
+
+- **The claim-path preflight is bounded by `PREPARE_TIMEOUT_SECONDS`** — the same constant
+  the requeue-preparation preflight and harness-generation calls already use, so there is
+  now one timeout policy for every `perf_preflight` invocation rather than two.
+- **A timeout is a deterministic operator error, not a hang.** `subprocess.TimeoutExpired`
+  becomes a `SystemExit` naming the elapsed bound and the candidate count. `subprocess.run`
+  kills and reaps the child before raising, so no orphan preflight is left behind.
+- **The unwind is clean by construction.** The raise happens ahead of `os.makedirs` on the
+  artifact dir, `leases.append` and `save_state`, so a timed-out claim leaves no lease, no
+  artifact directory, no saved state and no registry row — and the `with DirLock(...)`
+  block releases the lock on the way out, immediately.
+
+Moving the candidate computation and the store/worklist scans *out* of the lock is the
+larger refactor the review flagged; it stays deferred, and is unaffected by this change.
+
+Pinned by two new `coordinator_hardening_selftest` tests, both verified RED against
+pre-H8 master: the contract pin (the claim path must receive `timeout=600`, not `None`)
+and the unwind pin, which runs a **real** hanging child under a short injected timeout and
+asserts bounded termination, that the child pid is dead, and that no lease / artifact /
+state / registry row survives — on master that pin shows the child running to completion
+*and a lease being claimed anyway*. Gates: `coordinator_hardening_selftest` PASS,
+`window_selftest` 194/194, `lang_parity_check` 89 entries no drift (four SHARED verdicts
+re-derived against the diff, not hash-refreshed).
+
 ### Fixed — a heal-budget stop was filed as a content defect on presplit cards (H2a / H1940 Phase 2, 30-07-2026)
 
 When `self_heal` finished with no senses, the base key was stamped
