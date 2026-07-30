@@ -3790,27 +3790,81 @@ def test_coordinator_runtime_state_machine_and_cas():
                 os.environ['PWG_COORDINATOR_DIR'] = old_coord
 
 
-def test_h1811_inproc_audit_timeout_seam():
-    """H1811 S1: run_audit maps a wedged in-proc audit to rc=124 (the run_py timeout
-    shape) and passes argv/stdout/stderr through the namespace contract."""
-    import audit_window
+def test_h1957_audit_timeout_actually_kills_the_child():
+    """H1957: run_audit's timeout must CANCEL the audit, not merely stop waiting for it.
+
+    H1811 S1 ran audit_window in-process on a daemon thread, so a timeout returned
+    rc=124 while the audit kept running -- still writing window_status.json / the
+    report / requeue files the caller reads next, and still holding the process-global
+    sys.argv, cwd and stdout/stderr that run_py_inproc mutates (its own docstring
+    forbids exactly this concurrency). The old test monkeypatched run_py_inproc and
+    asserted only the rc=124 mapping, so it passed either way; nothing pinned the part
+    that matters.
+
+    This drives a REAL child that sleeps and then writes a sentinel. After the timeout
+    we wait past the child's write moment: if the sentinel appears, the work outlived
+    its own timeout."""
+    import os
+    import sys
+    import tempfile
+    import threading
+    import time
+
     import coordinator
 
-    original = audit_window.run_py_inproc
-    try:
-        audit_window.run_py_inproc = lambda argv: (
-            __import__('time').sleep(5) or {'returncode': 0, 'stdout': '', 'stderr': '',
-                                             'seconds': 5.0})
-        wedged = coordinator.run_audit(['audit_window.py', 'wf'], timeout=0.2)
-        if wedged.returncode != 124 or 'timeout' not in wedged.stderr:
-            fail('run_audit did not map a wedged in-proc audit to rc=124')
-        audit_window.run_py_inproc = lambda argv: {
-            'returncode': 1, 'stdout': 'out', 'stderr': 'err', 'seconds': 0.01}
-        ok = coordinator.run_audit(['audit_window.py', 'wf'], timeout=5)
-        if (ok.returncode, ok.stdout, ok.stderr) != (1, 'out', 'err'):
-            fail('run_audit broke the returncode/stdout/stderr contract')
-    finally:
-        audit_window.run_py_inproc = original
+    child_sleep = 2.5
+    d = tempfile.mkdtemp(prefix='h1957_')
+    sentinel = os.path.join(d, 'sentinel.txt')
+    child = os.path.join(d, 'slow_audit.py')
+    with open(child, 'w', encoding='utf-8') as fh:
+        fh.write(
+            'import time\n'
+            'time.sleep(%r)\n'
+            'open(%r, "w", encoding="utf-8").write("the audit outlived its timeout")\n'
+            % (child_sleep, sentinel))
+
+    before_cwd = os.getcwd()
+    before_argv = list(sys.argv)
+    before_stdout, before_stderr = sys.stdout, sys.stderr
+    before_threads = threading.active_count()
+
+    t0 = time.monotonic()
+    wedged = coordinator.run_audit([child], timeout=0.4)
+    if wedged.returncode != 124:
+        fail('run_audit did not map a timed-out audit to rc=124 (got %r)' % wedged.returncode)
+    if 'timed out' not in wedged.stderr:
+        fail('run_audit timeout did not explain itself in stderr: %r' % wedged.stderr)
+
+    # Wait past the moment the child would have written, plus margin.
+    remaining = (t0 + child_sleep + 1.0) - time.monotonic()
+    if remaining > 0:
+        time.sleep(remaining)
+    if os.path.exists(sentinel):
+        fail('the audit child survived its timeout and wrote %s -- the timeout did not '
+             'cancel the work, it only stopped waiting for it' % sentinel)
+
+    # run_py_inproc mutates all four of these; a survivor would leave them wrong.
+    if os.getcwd() != before_cwd:
+        fail('run_audit left the process cwd at %r, expected %r' % (os.getcwd(), before_cwd))
+    if sys.argv != before_argv:
+        fail('run_audit mutated sys.argv: %r' % (sys.argv,))
+    if sys.stdout is not before_stdout or sys.stderr is not before_stderr:
+        fail('run_audit left stdout/stderr redirected')
+    if threading.active_count() != before_threads:
+        fail('run_audit leaked a background thread (%d -> %d)'
+             % (before_threads, threading.active_count()))
+
+    # The pass-through contract, driven through a real child rather than a stub.
+    talker = os.path.join(d, 'talker.py')
+    with open(talker, 'w', encoding='utf-8') as fh:
+        fh.write('import sys\n'
+                 'sys.stdout.write("out")\n'
+                 'sys.stderr.write("err")\n'
+                 'sys.exit(1)\n')
+    ok = coordinator.run_audit([talker], timeout=60)
+    if (ok.returncode, ok.stdout.strip(), ok.stderr.strip()) != (1, 'out', 'err'):
+        fail('run_audit broke the returncode/stdout/stderr contract: %r'
+             % ((ok.returncode, ok.stdout, ok.stderr),))
 
 
 def test_coordinator_fail_closed_audit_states():
@@ -8395,7 +8449,7 @@ def main():
         test_h1420_p2_win32_openprocess_error_leans_alive,
         test_h1420_p11_record_output_binds_run_id,
         test_h1420_p10_promote_rebuilds_tm_in_finally,
-        test_h1811_inproc_audit_timeout_seam,
+        test_h1957_audit_timeout_actually_kills_the_child,
         test_h1283_a5_max_wide_default_bounded,
         test_h1283_a6_prep_slice_flattens_batches,
         test_h1386_d1_medium50_script_size_cap,

@@ -10,6 +10,55 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — the audit timeout could not cancel the audit, and provenance stamps could go stale (H1957, 30-07-2026)
+
+Two correctness defects shipped inside H1811's speed work below. Both were invisible
+to CI: every gate was green with them present, and one was actively *pinned* as
+correct by a selftest.
+
+**1. The audit timeout stopped waiting without stopping the work.** H1811 S1 ran
+`audit_window` in-process via `run_py_inproc` on a **daemon thread**, which breaks
+that function's own documented contract — *"callers must not run two of these
+concurrently (sys.argv/stdout are process-global)"*. On timeout `run_audit` returned
+rc=124 while the audit kept running, so: the abandoned thread continued **writing the
+very `window_status.json` / report / requeue files the caller reads next**; the
+coordinator's own `sys.argv`, cwd (`run_py_inproc` chdirs) and `stdout`/`stderr`
+stayed hijacked meanwhile; and `run_py_inproc`'s `finally` restored argv/cwd at an
+arbitrary later moment, clobbering whatever the main thread had set since. Fixed by
+running `audit_window` in a **killable subprocess** under the same timeout — the only
+boundary where a timeout can actually cancel the work. The stdout-hijack is not
+theoretical: while reproducing this, the reproduction script's own diagnostic output
+vanished into the abandoned thread's capture buffer and only resumed once that thread
+finished.
+
+**2. `stamp()` could certify a row with a hash of code that had already changed.**
+H1811 S3 memoized `component_sha` in a module-global keyed on the component's file
+*patterns* — never on content — so the cache had **no invalidation at all**. In any
+process outliving a source edit (a `bounded_staged_run` / `cohort_engine` wave runs
+for hours) every row stamped afterwards carried the **pre-edit `<name>_sha`**: a row
+claiming to have been produced by code that did not produce it, which is precisely
+the claim that field exists to make. `check()`/`freeze()` stayed exact, but they read
+the manifest — they cannot repair provenance already written into the store. The memo
+is removed; `stamp()` always re-reads.
+
+The selftest for #2 asserted `st2['prompt_sha'] == st['prompt_sha']` with the message
+*"stamp memo must return the first hash"* — i.e. it certified stale provenance as
+correct behaviour. It now asserts the opposite. The timeout test for #1 monkeypatched
+`run_py_inproc` and checked only the rc=124 mapping, so it passed either way; it is
+replaced by one that drives a real child which sleeps and then writes a sentinel, and
+fails if the sentinel ever appears. That replacement test fails against the old
+implementation, which was verified rather than assumed.
+
+**Honest cost.** Interleaved A/B against master `3070941b` (5 alternating pairs, host
+under variable load, minimum per side as the robust estimator): **audit +34.7 %**
+(3.95 s → 5.32 s, the restored interpreter spawn), **store-write +24.0 %** (4.00 s →
+4.96 s, `stamp()` re-hashing per promoted row), **total +15.0 %** (10.79 s → 12.41 s).
+This gives back most of the speed the entry below reports. The deterministic signature
+`9bd2a14297` is byte-identical across both sides, so the outputs are unchanged.
+S2 (`_pilot_collect` in-process), H5 and H10 are **retained** — only S1 and S3 are
+reverted. Gates: `window_selftest` **194/194**, `lang_parity_check` **89 entries, no
+drift**, `pipeline_version --selftest` OK. Model: Opus 5 (`claude-opus-5[1m]`).
+
 ### Changed — binary-samāsa ruling applied to the compound adjudicator (H1918, 30-07-2026)
 
 MG's ruling: a samāsa's vigraha is always binary (dvandva excepted, and a
@@ -34,6 +83,11 @@ stratification.
 
 ### Changed — offline pipeline speed + hermeticity: in-proc audit chain, stamp memo, PWG_OUTPUT_DIR (H1811, 30-07-2026)
 
+> **Superseded in part by H1957 above: S1 and S3 were reverted for correctness, so the
+> speed figures in this entry no longer describe the shipped code.** They are kept as
+> the record of what was measured at the time. Net effect after H1957 is roughly
+> +15 % total against master — S2/H5/H10 remain.
+
 Measured on the hermetic [`h1339_offline_bench`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1339_offline_bench.py)
 (interleaved A/B vs `origin/master` `d5650afe`, medians of 3): **audit stage −39.3 %**
 (3.60 s → 2.19 s), store-write −12.4 %, **total −22.9 %** (7.23 s → 5.58 s) —
@@ -47,14 +101,13 @@ Executor: Kimi K3 (`moonshotai/kimi-k3`); rebase + re-verification: Opus 5
 (`claude-opus-5[1m]`); review + fix log:
 [`pwg_ru/h1811/H1811_PIPELINE_REVIEW_FIXLOG_2026-07-29.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1811/H1811_PIPELINE_REVIEW_FIXLOG_2026-07-29.md).
 
-- **S1** — `coordinator record-output` runs `audit_window` **in-process** (runpy
-  via the H1339 `run_py_inproc` pattern; new `run_audit` seam, 30-min timeout kept
-  via daemon thread → rc=124). One interpreter spawn per lease eliminated.
+- **S1** — ~~`coordinator record-output` runs `audit_window` **in-process**~~ —
+  **REVERTED by H1957**: the daemon-thread timeout could not cancel the audit. The
+  `run_audit` seam is kept, now backed by a killable subprocess.
 - **S2** — `audit_window` runs `_pilot_collect` in-process too (the last
-  subprocess gate after H1339 Phase 3).
-- **S3** — `pipeline_version.stamp` memoizes `component_sha` per process (~27 % of
-  the batch-promote in-process time was re-hashing identical file sets);
-  `check()`/`freeze()` bypass the memo and always read fresh bytes.
+  subprocess gate after H1339 Phase 3). **Retained.**
+- **S3** — ~~`pipeline_version.stamp` memoizes `component_sha` per process~~ —
+  **REVERTED by H1957**: the memo had no invalidation and stamped stale provenance.
 - **H5** — a corrupt/missing `window_status.json` / audit report with rc ∈ {0,1}
   is now an audit error instead of a silent `unknown` lease state.
 - **H10** — `PWG_OUTPUT_DIR` (output-side twin of H1386's `PWG_INPUT_DIR`) honored

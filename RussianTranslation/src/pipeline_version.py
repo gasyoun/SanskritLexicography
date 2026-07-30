@@ -108,9 +108,6 @@ def component_sha(patterns, root=ROOT):
     return h.hexdigest()[:16]
 
 
-_STAMP_MEMO = {}
-
-
 def stamp(manifest=None, model_version=None, root=ROOT):
     """Build the ``provenance.pipeline`` dict to embed in a translated row.
 
@@ -118,22 +115,23 @@ def stamp(manifest=None, model_version=None, root=ROOT):
     ``model_version`` for convenience; the canonical model id still lives in
     ``provenance.model_version``.
 
-    H1811 S3: stamp() runs per promoted row (30 identical component_sha calls per
-    batch promote, ~27 % of the batch's in-process time) — memoize the content
-    hash per process. check()/freeze() call component_sha() directly and always
-    read fresh bytes, so drift detection and freeze stay correctness-exact.
+    Always reads fresh bytes. H1811 S3 memoized the content hash in a module-global
+    ``_STAMP_MEMO`` keyed on the component's file PATTERNS — never on content — so
+    the cache had no invalidation at all: in any process that outlives a source
+    edit (a ``bounded_staged_run`` / ``cohort_engine`` wave runs for hours), every
+    row stamped after the edit carried the PRE-edit ``<name>_sha``. That is a row
+    claiming to have been produced by code it was not produced by, which is exactly
+    the claim this field exists to make. ``check()``/``freeze()`` stayed exact, but
+    they inspect the manifest — they cannot repair provenance already written into
+    the store. H1957 removed the memo: the ~0.27 s/promote it saved does not buy
+    anything worth a false provenance record.
     """
     manifest = manifest or load_manifest()
     out = {'schema': PIPELINE_SCHEMA}
     for name in COMPONENTS:
         comp = manifest['components'][name]
         out['%s_version' % name] = comp['version']
-        key = (tuple(comp['files']), os.path.abspath(root))
-        sha = _STAMP_MEMO.get(key)
-        if sha is None:
-            sha = component_sha(comp['files'], root)
-            _STAMP_MEMO[key] = sha
-        out['%s_sha' % name] = sha
+        out['%s_sha' % name] = component_sha(comp['files'], root)
     if model_version:
         out['model_version'] = model_version
     return out
@@ -430,11 +428,17 @@ def selftest():
     open(os.path.join(d, 'pwg_ru_prompts', '1.txt'), 'w').write('p-EDITED')
     drifts = check(frozen, root=d)
     assert len(drifts) == 1 and drifts[0]['component'] == 'prompt', drifts
-    # H1811 S3: stamp() memoizes per process (fresh check() above still saw the edit)
+    # H1957: after a component file changes, a subsequent stamp() must report the NEW
+    # hash. The H1811 S3 memo made this assertion's opposite true -- it pinned
+    # `st2 == st` ("stamp memo must return the first hash"), i.e. the selftest
+    # certified stale provenance as correct behaviour.
+    fresh_prompt_sha = component_sha(manifest['components']['prompt']['files'], d)
+    assert fresh_prompt_sha != st['prompt_sha'], 'the edit must change the content hash'
     st2 = stamp(manifest, model_version='claude-sonnet-5', root=d)
-    assert st2['prompt_sha'] == st['prompt_sha'], 'stamp memo must return the first hash'
-    assert component_sha(manifest['components']['prompt']['files'], d) != st['prompt_sha'], \
-        'component_sha itself always reads fresh bytes'
+    assert st2['prompt_sha'] == fresh_prompt_sha, \
+        'stamp() must re-read after a source edit, never serve a cached hash'
+    assert st2['prompt_sha'] != st['prompt_sha'], \
+        'a row stamped after the edit must not claim the pre-edit sha'
     # staleness: a row below min_valid and a fresh row
     stale = stale_reasons({'prompt_version': '0.9.0', 'glossary_version': '1.0.0',
                            'script_version': '2.0.0'}, frozen)
