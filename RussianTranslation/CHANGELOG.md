@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.111.2] - 2026-07-30
+
 ### Fixed — FINDINGS citation-number collision from the H1910 propagation pass (30-07-2026)
 
 The H1910 sweep appended four print-OCR findings as **§463–§466**. Those numbers were picked
