@@ -87,6 +87,37 @@ deterministic signature stable — **MATCH** after the fixes (29-07-2026).
 
 ## 5. Bench A/B
 
-_Pending — filled after implementation (medians over ≥10 runs per mode, same tree)._
+Interleaved A/B on the same host (candidate branch vs detached `origin/master`
+worktree, 1 warmup + 3 measured runs per side, alternating; 30-07-2026, Python
+3.14/win32). Per-lease outcomes, deterministic signature (`9bd2a14297…`) and store
+semantic hash (`c72281ca…`) **byte-identical on both sides** — semantic equality
+proven, same criterion as H1339/H1386.
+
+| Stage | base median | cand median | Δ |
+|---|---|---|---|
+| prepare | 1.18 s | 1.21 s | +2.3 % (noise) |
+| normalize | 0.05 s | 0.05 s | noise |
+| **audit** | 3.60 s | 2.19 s | **−39.3 %** |
+| promotion-plan | 0.45 s | 0.28 s | −36.2 % |
+| store-write | 2.35 s | 2.06 s | −12.4 % |
+| **total** | 7.23 s | 5.58 s | **−22.9 %** |
+
+Machine-readable: `h1811_ab_summary.json` (session temp); per-run JSONs
+`h1811_ab_{base,cand}_N.json`. Gates at close: `window_selftest` **194/194 PASS**,
+`lang_parity_check` **0 violations** (89 entries), `pipeline_version` selftest OK.
+
+## 6. Session notes
+
+- The first in-proc attempt regressed the bench twice (NO-OUTPUT false defects,
+  then phantom `partial`): `PWG_OUTPUT_DIR` had to be honored by **every** merged.md
+  reader — `_pilot_collect` (writer), `audit_translation` (+`stage2_pregate` via
+  `at.merged_output_path`), `root_glue_translated`, and shared `window_common.OUT`
+  (via `window_reports.merged_exists` → `audit_state`). The bench caught both
+  regressions instantly — it is the real gate for this class.
+- Two coordinator selftests pinned the `run_cmd` seam for the audit step; they now
+  fixture `run_audit` (same scripted specs, same assertions), and
+  `test_h1811_inproc_audit_timeout_seam` pins the rc=124 timeout mapping +
+  namespace contract.
+- Dormant `codex/rt-pipeline-hardening-speed` branch: see §3 — archive candidate.
 
 _Dr. Mārcis Gasūns_

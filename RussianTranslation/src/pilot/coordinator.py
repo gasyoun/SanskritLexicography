@@ -1524,7 +1524,7 @@ def recorded_lease_state(state_name, audit_errors, clean_rows, pending=None):
     return 'blocked', False
 
 
-def run_audit(argv):
+def run_audit(argv, timeout=AUDIT_TIMEOUT_SECONDS):
     """H1811 S1: run audit_window IN-PROCESS (runpy via audit_window.run_py_inproc)
     instead of paying one interpreter spawn per lease. The audited code is
     byte-identical (same script file, same argv); stdout/stderr/returncode carry the
@@ -1534,7 +1534,8 @@ def run_audit(argv):
     conventional timeout code run_py also uses). An in-proc thread cannot be killed,
     so a wedged audit is reported and left to die with the process -- documented
     residual; the deterministic gates have never hit the 30-min ceiling, and the
-    blocked lease + recover-operation path is unchanged."""
+    blocked lease + recover-operation path is unchanged. This function is the ONE
+    audit seam: tests substitute it (never run_cmd) to fixture the audit step."""
     import threading
     import types
     from audit_window import run_py_inproc
@@ -1546,12 +1547,12 @@ def run_audit(argv):
 
     worker = threading.Thread(target=_target, daemon=True)
     worker.start()
-    worker.join(AUDIT_TIMEOUT_SECONDS)
+    worker.join(timeout)
     if worker.is_alive():
         return types.SimpleNamespace(
             returncode=124, stdout='',
             stderr='run_audit: in-proc audit_window timeout after %ss '
-                   '(daemon thread left to die with the process)' % AUDIT_TIMEOUT_SECONDS)
+                   '(daemon thread left to die with the process)' % timeout)
     r = box['result']
     return types.SimpleNamespace(returncode=r['returncode'], stdout=r['stdout'],
                                  stderr=r['stderr'])
