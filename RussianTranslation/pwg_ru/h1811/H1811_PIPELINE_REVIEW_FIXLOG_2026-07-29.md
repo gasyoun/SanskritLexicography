@@ -1,6 +1,6 @@
 # H1811 — PWG→RU pipeline review: verified findings + fix log (hardening + offline speed)
 
-_Created: 29-07-2026 · Last updated: 29-07-2026_
+_Created: 29-07-2026 · Last updated: 30-07-2026_
 
 > **Provenance.** Handoff [H1811](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1811-Kimi_RussianTranslation_pwg-ru-offline-pipeline-review-hardening-speed_29.07.26.md).
 > Executor: Kimi K3 (`moonshotai/kimi-k3`). Method: hermetic bench baseline
@@ -105,6 +105,51 @@ proven, same criterion as H1339/H1386.
 Machine-readable: `h1811_ab_summary.json` (session temp); per-run JSONs
 `h1811_ab_{base,cand}_N.json`. Gates at close: `window_selftest` **194/194 PASS**,
 `lang_parity_check` **0 violations** (89 entries), `pipeline_version` selftest OK.
+
+### 5.1 Re-verification on fresh master (H1940 Phase 1, 30-07-2026)
+
+[PR #893](https://github.com/gasyoun/SanskritLexicography/pull/893) went
+`CONFLICTING` after 26 commits landed on master. Rebased onto `f15bcf0f`
+(release 1.111.3); the only conflict was
+[`CHANGELOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md)
+— master had cut the H1887 block into `## [1.106.0]` while the branch still
+carried it under `## [Unreleased]`; resolved keep-both, H1811's `### Changed`
+restored to the top of `[Unreleased]`.
+[`LANG_PARITY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md)
+auto-merged. Bench re-run 1 warmup + 3 runs per side on one host, Opus 5
+(`claude-opus-5[1m]`):
+
+| Stage | master `f15bcf0f` | rebased branch | Δ |
+|---|---|---|---|
+| prepare | 1.367 s | 1.584 s | +15.9 % (noise, see below) |
+| normalize | 0.068 s | 0.066 s | noise |
+| **audit** | 4.188 s | 2.643 s | **−36.9 %** |
+| promotion-plan | 0.585 s | 0.403 s | −31.1 % |
+| store-write | 2.880 s | 2.585 s | −10.2 % |
+| **total** | 8.421 s | 6.797 s | **−19.3 %** |
+
+The headline deltas are smaller than §5's −39.3 %/−22.9 % because the **base
+moved, not the candidate**: master's own total rose 7.23 s → 8.42 s over those
+26 commits. The candidate's absolute total also rose (5.58 s → 6.80 s), so both
+sides drifted upward on this host and the ordering is unchanged. `prepare` is
+below the noise floor at 3 runs (branch spread 1.53–1.79 s) — not a regression
+claim. Per-lease outcomes match §5 exactly and the deterministic signature
+`9bd2a14297` is byte-identical across both sides, which is the load-bearing
+result: **semantic equality still holds against new master.**
+
+Gate status on the rebased branch, and the one red:
+
+- `window_selftest` — 194 defined, **193 PASS / 1 FAIL**.
+- `lang_parity_check` — **3 violations**, all inherited: `citation_tm.py`,
+  `corpus_gate.py`, `annotate_genres.py` drifted under H1902
+  ([PR #892](https://github.com/gasyoun/SanskritLexicography/pull/892),
+  `af299375`). All three are **byte-identical between `origin/master` and this
+  branch** (`git diff --name-only origin/master HEAD` lists none of them), so
+  the drift is master's own re-affirm debt. Not stamped here — per H1940, a
+  human re-affirms the verdicts on files this PR did not touch.
+- The single `window_selftest` failure is `test_lang_parity_ledger_complete`,
+  i.e. the same three inherited entries surfacing through the suite. No other
+  test fails.
 
 ## 6. Session notes
 

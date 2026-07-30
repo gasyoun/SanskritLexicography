@@ -13,10 +13,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 ### Changed — offline pipeline speed + hermeticity: in-proc audit chain, stamp memo, PWG_OUTPUT_DIR (H1811, 30-07-2026)
 
 Measured on the hermetic [`h1339_offline_bench`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1339_offline_bench.py)
-(interleaved A/B vs `origin/master`, medians of 3): **audit stage −39.3 %**
+(interleaved A/B vs `origin/master` `d5650afe`, medians of 3): **audit stage −39.3 %**
 (3.60 s → 2.19 s), store-write −12.4 %, **total −22.9 %** (7.23 s → 5.58 s) —
 with the deterministic output signature **and** store semantic hash byte-identical
-on both sides. Executor: Kimi K3 (`moonshotai/kimi-k3`); review + fix log:
+on both sides. **Re-verified 30-07-2026 after rebase onto master `f15bcf0f`**
+(26 commits later): **audit −36.9 %** (4.19 s → 2.64 s), **total −19.3 %**
+(8.42 s → 6.80 s), signature `9bd2a14297` still byte-identical across both sides.
+The smaller headline is base drift, not candidate regression — master's own total
+rose 7.23 s → 8.42 s over those commits (fix log §5.1).
+Executor: Kimi K3 (`moonshotai/kimi-k3`); rebase + re-verification: Opus 5
+(`claude-opus-5[1m]`); review + fix log:
 [`pwg_ru/h1811/H1811_PIPELINE_REVIEW_FIXLOG_2026-07-29.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1811/H1811_PIPELINE_REVIEW_FIXLOG_2026-07-29.md).
 
 - **S1** — `coordinator record-output` runs `audit_window` **in-process** (runpy
@@ -39,6 +45,11 @@ on both sides. Executor: Kimi K3 (`moonshotai/kimi-k3`); review + fix log:
   two coordinator fixtures moved to the `run_audit` seam); LANG_PARITY 89 entries,
   no drift (new SHARED entry `h1811_inproc_audit_pwg_output_dir`;
   `h1339_offline_bench.py` moved exempt → tracked).
+- Post-rebase the suite is **193/194**, the one failure being
+  `test_lang_parity_ledger_complete`: `citation_tm.py`, `corpus_gate.py` and
+  `annotate_genres.py` drifted under H1902 and await re-affirmation. Those three
+  files are byte-identical between master and this branch, so the debt is
+  master's, not this change's — deliberately **not** `--update-hash`'d here.
 
 ## [1.111.2] - 2026-07-30
 
