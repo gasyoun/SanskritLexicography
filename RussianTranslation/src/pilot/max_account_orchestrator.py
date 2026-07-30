@@ -361,6 +361,36 @@ def fail_or_retry(db_path, job_id, returncode, error, failure_class=None,
     return state
 
 
+# H1 (H1940): the classes whose verdict cannot change on a re-run. A malformed manifest, a
+# profile/preflight refusal, a drifted seal — nothing about attempt 2 differs from attempt 1,
+# so retrying only reproduces the same verdict and consumes the budget a genuinely transient
+# failure would have needed.
+DETERMINISTIC_FAILURE_CLASSES = frozenset({'configuration', 'manifest_drift'})
+
+# Classes the windows100 readiness report surfaces as hard failures. H1 (H1940) added
+# `configuration` when it became TERMINAL: a class that permanently kills a job and never
+# appears here is the silent-loss shape the report exists to prevent — the window would
+# simply be absent, with nothing saying why. Module-level so a selftest can pin membership
+# instead of re-typing the literal.
+HARD_FAILURE_CLASSES = frozenset({'authentication', 'configuration', 'manifest_drift',
+                                  'malformed_output', 'rate_limit'})
+
+
+def fail_terminal(db_path, job_id, returncode, error, failure_class,
+                  attempt_log_path=None):
+    """Fail a job outright, on this attempt, without consulting the retry budget.
+
+    Deliberately a SEPARATE entry point rather than a classification branch inside
+    fail_or_retry: transient classes ('process', 'timeout', 'result_drift', a bare
+    worker failure) must keep their retry budget exactly as before, and one shared
+    function that decided by class is the shape in which that is easy to regress.
+    Callers opt in per site; fail_or_retry is unchanged.
+    """
+    finish(db_path, job_id, 'failed', returncode, error, failure_class=failure_class,
+           attempt_log_path=attempt_log_path)
+    return 'failed'
+
+
 def park(db_path, account, until, error):
     db = connect(db_path)
     with db:
@@ -429,16 +459,29 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
                                % (saved_run_id, run_id))
         if not call_reservation_path:
             raise RuntimeError('manifest worker spawn requires a call reservation ledger')
-        if sha256_path(job['manifest_path']) != job['manifest_sha256']:
-            return fail_or_retry(db_path, job['id'], 2, 'manifest hash changed',
-                                 'manifest_drift', attempt_log)
-        manifest = json.load(open(job['manifest_path'], encoding='utf-8'))
+        # H1 (H1940): this pre-launch hash + read was unguarded, so a missing manifest
+        # (sha256_path -> FileNotFoundError) or invalid JSON escaped run_claimed entirely
+        # and took the orchestrator down with it — the job never even reached a verdict,
+        # let alone the worker's own status file. Both are deterministic, so both are
+        # terminal here rather than returned to 'pending'.
+        try:
+            if sha256_path(job['manifest_path']) != job['manifest_sha256']:
+                return fail_terminal(db_path, job['id'], 2, 'manifest hash changed',
+                                     'manifest_drift', attempt_log)
+            manifest = json.load(open(job['manifest_path'], encoding='utf-8'))
+        except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+            return fail_terminal(db_path, job['id'], 2,
+                                 'sealed manifest is unreadable: %s' % exc,
+                                 'configuration', attempt_log)
         try:
             validate_profile(manifest, config_dir, account)
             validate_preflight_artifact(
                 job['preflight_path'], manifest, job['preflight_sha256'])
-        except (OSError, ValueError) as exc:
-            return fail_or_retry(db_path, job['id'], 2, str(exc), 'configuration', attempt_log)
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            return fail_terminal(db_path, job['id'], 2,
+                                 '%s: %s' % (type(exc).__name__, exc)
+                                 if isinstance(exc, (KeyError, TypeError)) else str(exc),
+                                 'configuration', attempt_log)
         argv = [sys.executable, os.path.join(os.path.dirname(__file__), 'headless_worker.py'),
                 job['manifest_path'], '--output', job['output_path'],
                 '--status-out', status_path, '--timeout', str(timeout),
@@ -447,7 +490,7 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
                 '--preflight-sha256', job['preflight_sha256'],
                 '--manifest-sha256', job['manifest_sha256']]
     else:
-        return fail_or_retry(
+        return fail_terminal(
             db_path, job['id'], 2,
             'legacy generic argv jobs are disabled; re-enqueue through a sealed '
             'coordinator manifest',
@@ -473,7 +516,7 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
                 worker_status = {}
         if (job['manifest_path']
                 and worker_status.get('manifest_sha256') != job['manifest_sha256']):
-            state = fail_or_retry(
+            state = fail_terminal(
                 db_path, job['id'], 2,
                 'worker manifest hash does not match the sealed job manifest',
                 'manifest_drift', attempt_log)
@@ -515,8 +558,15 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
                 append_event(events_path, stage='dispatch', event='attempt_end',
                              classification='success', result_hash=result_hash, **event_base)
             return 'done'
-        state = fail_or_retry(db_path, job['id'], proc.returncode, combined[-2000:],
-                              failure_class or 'process', attempt_log)
+        # H1 (H1940): the worker's own classification now decides retry-vs-terminal for the
+        # deterministic classes. Previously every non-zero worker exit went to fail_or_retry,
+        # which keys purely on `attempts < max_attempts` — so a `configuration` verdict (a
+        # manifest that will never parse) was retried exactly like a dropped connection.
+        # Anything else, including a bare failure with no classification, retries as before.
+        failer = (fail_terminal if failure_class in DETERMINISTIC_FAILURE_CLASSES
+                  else fail_or_retry)
+        state = failer(db_path, job['id'], proc.returncode, combined[-2000:],
+                       failure_class or 'process', attempt_log)
         if events_path:
             append_event(events_path, stage='dispatch', event='attempt_end',
                          classification=failure_class or 'process', **event_base)
@@ -1480,7 +1530,7 @@ def cmd_staged_run(args):
     result_keys = [row.get('key') for payload in outputs for row in payload.get('results', [])]
     duplicate_results = len(result_keys) - len(set(result_keys))
     unaccounted = sorted(unique_keys - set(result_keys))
-    hard_classes = {'authentication', 'manifest_drift', 'malformed_output', 'rate_limit'}
+    hard_classes = set(HARD_FAILURE_CLASSES)
     hard_failures = sorted({job['failure_class'] for job in jobs if job['failure_class'] in hard_classes})
     for value in failures.values():
         text_value = str(value).lower()

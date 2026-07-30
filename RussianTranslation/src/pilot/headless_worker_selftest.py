@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+import contextlib
+import hashlib
 import json
 import subprocess
 import sys
@@ -403,6 +405,158 @@ def test_cli_reservation_and_preflight_gates():
                 os.environ['CLAUDE_CONFIG_DIR'] = original_config_dir
     print('  CLI gates: exact manifest seal + real-scope preflight required; malformed, '
           'synthetic, duplicate/wrong/empty scope spawn zero; result/status hashes bound')
+
+
+@contextlib.contextmanager
+def _h1_worker_env():
+    """Scratch dir + CLAUDE_CONFIG_DIR + a spawn tracker, all restored on exit.
+
+    Every H1 pin must prove **zero** model spawns, so the runner is replaced and counted
+    rather than trusted to be unreachable.
+    """
+    original_runner = h.run_tree_kill
+    original_prefix = h.claude_argv_prefix
+    original_config_dir = os.environ.get('CLAUDE_CONFIG_DIR')
+    spawned = []
+    h.run_tree_kill = lambda *_a, **_k: spawned.append(1)
+    h.claude_argv_prefix = lambda _c: [sys.executable]
+    try:
+        with tempfile.TemporaryDirectory() as td:
+            os.environ['CLAUDE_CONFIG_DIR'] = os.path.join(td, 'h1-profile')
+            os.makedirs(os.environ['CLAUDE_CONFIG_DIR'], exist_ok=True)
+            yield td, spawned
+    finally:
+        h.run_tree_kill = original_runner
+        h.claude_argv_prefix = original_prefix
+        if original_config_dir is None:
+            os.environ.pop('CLAUDE_CONFIG_DIR', None)
+        else:
+            os.environ['CLAUDE_CONFIG_DIR'] = original_config_dir
+
+
+def _h1_drive_main(td, manifest_path, tag):
+    """Run main() over `manifest_path` as a historical-v1 invocation with a zero-call
+    budget. Returns (exit_code, status_or_None, output_exists).
+
+    Pre-H1 the exception escapes main() instead of becoming a SystemExit, so on master
+    this call RAISES rather than returning — which is precisely the defect, and is what
+    makes every pin below red there.
+    """
+    out = os.path.join(td, '%s.out.json' % tag)
+    status_path = os.path.join(td, '%s.status.json' % tag)
+    code = None
+    try:
+        h.main([manifest_path, '--output', out, '--status-out', status_path,
+                '--allow-historical-v1', '--claude-bin', sys.executable,
+                '--call-reservation', os.path.join(td, '%s.calls.json' % tag),
+                '--run-id', tag, '--max-calls', '0'])
+    except SystemExit as exc:
+        code = exc.code
+    status = (json.load(open(status_path, encoding='utf-8'))
+              if os.path.exists(status_path) else None)
+    return code, status, os.path.exists(out)
+
+
+def _h1_assert_configuration(code, status, produced_output, spawned, tag):
+    if code != 2:
+        raise AssertionError('%s: expected exit 2, got %r' % (tag, code))
+    if status is None:
+        raise AssertionError('%s: no status file was written' % tag)
+    if status.get('classification') != 'configuration':
+        raise AssertionError('%s: classification %r, expected configuration'
+                             % (tag, status.get('classification')))
+    if not (status.get('error') or '').strip():
+        raise AssertionError('%s: status carries no error detail' % tag)
+    if produced_output:
+        raise AssertionError('%s: a result output was written for a configuration failure' % tag)
+    if spawned:
+        raise AssertionError('%s: %d model spawn(s) on a configuration failure'
+                             % (tag, len(spawned)))
+
+
+def test_h1_unreadable_manifest_is_configuration_status():
+    """H1 (H1940) pin 1 of 4 — the manifest cannot be read at all.
+
+    `open()`/`read()` sat outside main()'s try, so OSError escaped with no status file
+    and the orchestrator retried a permanent defect. The hash must stay null: nothing was
+    read, so nothing may be attested.
+    """
+    with _h1_worker_env() as (td, spawned):
+        missing = os.path.join(td, 'does-not-exist.json')
+        code, status, produced = _h1_drive_main(td, missing, 'missing')
+        _h1_assert_configuration(code, status, produced, spawned, 'missing manifest')
+        if 'manifest_sha256' not in status:
+            raise AssertionError('status dropped the manifest_sha256 key entirely')
+        if status['manifest_sha256'] is not None:
+            raise AssertionError('a manifest that was never read was attested with hash %r'
+                                 % status['manifest_sha256'])
+    print('  H1 unreadable manifest: exit 2, configuration status, no output/spawn, '
+          'hash null (not fabricated)')
+
+
+def test_h1_invalid_json_manifest_keeps_real_byte_hash():
+    """H1 (H1940) pin 2 of 4 — bytes read fine, JSON decoding fails.
+
+    Distinct from pin 1: the bytes DID arrive, so their hash is real evidence of exactly
+    what was rejected and must survive into the status unchanged. Expected hash is
+    computed from the literal bytes written here, never from the code under test.
+    """
+    with _h1_worker_env() as (td, spawned):
+        bad_bytes = b'{"schema": "pwg.headless_execution_manifest.v1", "meta": '
+        bad_path = os.path.join(td, 'truncated.json')
+        with open(bad_path, 'wb') as f:
+            f.write(bad_bytes)
+        expected = hashlib.sha256(bad_bytes).hexdigest()
+        code, status, produced = _h1_drive_main(td, bad_path, 'badjson')
+        _h1_assert_configuration(code, status, produced, spawned, 'invalid JSON manifest')
+        if status.get('manifest_sha256') != expected:
+            raise AssertionError('status hash %r != sha256 of the malformed bytes %r'
+                                 % (status.get('manifest_sha256'), expected))
+    print('  H1 invalid JSON: exit 2, configuration status, hash of the ACTUAL '
+          'malformed bytes retained')
+
+
+def test_h1_structural_key_error_is_configuration_status():
+    """H1 (H1940) pin 3 of 4 — structurally malformed manifest raising KeyError.
+
+    A manifest that decodes and passes `validate_manifest` can still be missing a section
+    the executor subscripts directly: `build_prompt` does `manifest['inputs'][k]`. That
+    KeyError was absent from the except tuple, so it escaped. It is raised while building
+    the prompt — an argument to `HeadlessEngine.call` — so it precedes any reservation or
+    spawn, which is why this pin can also assert zero calls.
+    """
+    with _h1_worker_env() as (td, spawned):
+        broken = manifest()
+        del broken['inputs']
+        path = os.path.join(td, 'no-inputs.json')
+        json.dump(broken, open(path, 'w', encoding='utf-8'))
+        code, status, produced = _h1_drive_main(td, path, 'keyerror')
+        _h1_assert_configuration(code, status, produced, spawned, 'KeyError manifest')
+        if 'KeyError' not in (status.get('error') or ''):
+            raise AssertionError('KeyError stringifies to a bare key; the status must name '
+                                 'the type, got %r' % status.get('error'))
+    print('  H1 structural KeyError: exit 2, configuration status, type named in the error')
+
+
+def test_h1_structural_type_error_is_configuration_status():
+    """H1 (H1940) pin 4 of 4 — structurally malformed manifest raising TypeError.
+
+    `_validate_fragment_tm` iterates `for group in groups or []`; a scalar where the
+    generator always emits a list makes that `for` a TypeError. It runs inside `execute`
+    before the config-dir check, the profile claim and the engine, so this is the earliest
+    of the four failures and likewise reaches no paid call.
+    """
+    with _h1_worker_env() as (td, spawned):
+        broken = manifest()
+        broken['fragment_tm'] = {'agni': 7}
+        path = os.path.join(td, 'scalar-fragment-tm.json')
+        json.dump(broken, open(path, 'w', encoding='utf-8'))
+        code, status, produced = _h1_drive_main(td, path, 'typeerror')
+        _h1_assert_configuration(code, status, produced, spawned, 'TypeError manifest')
+        if 'TypeError' not in (status.get('error') or ''):
+            raise AssertionError('TypeError stringifies without naming its type; the status '
+                                 'must name it, got %r' % status.get('error'))
+    print('  H1 structural TypeError: exit 2, configuration status, type named in the error')
 
 
 def test_non_timeout_communicate_cleanup():
@@ -1087,6 +1241,10 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_call_timeout_clamped()
     test_durable_call_reservation()
     test_cli_reservation_and_preflight_gates()
+    test_h1_unreadable_manifest_is_configuration_status()
+    test_h1_invalid_json_manifest_keeps_real_byte_hash()
+    test_h1_structural_key_error_is_configuration_status()
+    test_h1_structural_type_error_is_configuration_status()
     test_non_timeout_communicate_cleanup()
     test_card_tokens_include_grammar()
     test_cost_telemetry_survives()

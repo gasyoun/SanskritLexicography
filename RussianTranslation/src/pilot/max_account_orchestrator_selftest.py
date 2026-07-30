@@ -313,6 +313,148 @@ def main():
         con.close()
     print('  generic argv guard: all arbitrary enqueues + legacy rows refuse before spawn')
 
+    # H1 (H1940): a DETERMINISTIC defect must be terminal on the first attempt.
+    # fail_or_retry keys purely on `attempts < max_attempts`, so a configuration verdict —
+    # a manifest that will never parse — used to go back to 'pending' and burn the whole
+    # budget re-deriving it. Two of these shapes never even reached a verdict: the
+    # pre-launch hash + json.load were unguarded, so they escaped run_claimed entirely.
+    # Every job below carries max_attempts=3 and fails on attempt 1, so 'failed' proves
+    # the CLASS ended it, not exhaustion.
+    with tempfile.TemporaryDirectory() as td:
+        h1_db = os.path.join(td, 'h1-terminal.sqlite')
+        acc_dir = os.path.join(td, 'acc1')
+        os.makedirs(acc_dir)
+        m.main(['--db', h1_db, 'init', '--account', 'acc1=' + acc_dir,
+                '--skip-profile-check'])
+        h1_ledger = os.path.join(td, 'h1.calls.json')
+
+        def h1_manifest(keys):
+            return {'schema': 'pwg.headless_execution_manifest.v2',
+                    'model': 'claude-sonnet-5',
+                    'meta': {'lang': 'ru', 'selected_keys': keys},
+                    'execution': {'profile_slot': 'acc1',
+                                  'config_dir_fingerprint': config_dir_fingerprint(acc_dir),
+                                  'execution_route': 'claude-cli-headless',
+                                  'executor_lane': 'serial-whole-card',
+                                  'validation_method': 'audit_window+final_schema',
+                                  'model_identifier': 'claude-sonnet-5'},
+                    'key_provenance': {key: 'real' for key in keys}}
+
+        h1_preflight = os.path.join(td, 'h1.preflight.json')
+        with open(h1_preflight, 'w', encoding='utf-8') as f:
+            json.dump({'schema': 'pwg.performance_preflight.v1',
+                       'selected_keys': ['h1key'],
+                       'cost_gate': {'over_ceiling': False}}, f)
+        h1_preflight_sha = m.sha256_path(h1_preflight)
+
+        def h1_seed(external_id, manifest_path, manifest_sha):
+            con = m.connect(h1_db)
+            with con:
+                con.execute(
+                    'INSERT INTO jobs(external_id,cwd,output_path,manifest_path,'
+                    'manifest_sha256,profile_slot,preflight_path,preflight_sha256,'
+                    'max_attempts,run_id) VALUES(?,?,?,?,?,?,?,?,3,?)',
+                    (external_id, td, os.path.join(td, external_id + '.out.json'),
+                     manifest_path, manifest_sha, 'acc1', h1_preflight,
+                     h1_preflight_sha, 'h1run'))
+            con.close()
+            job = m.claim(h1_db, 'acc1', only_external_ids=[external_id])
+            assert job and job['external_id'] == external_id, (external_id, job)
+            assert job['attempts'] == 1 < job['max_attempts'], dict(job)
+            return job
+
+        def h1_row(external_id):
+            con = m.connect(h1_db)
+            row = con.execute(
+                'SELECT state,failure_class,error,attempts,max_attempts FROM jobs '
+                'WHERE external_id=?', (external_id,)).fetchone()
+            con.close()
+            return dict(row)
+
+        original_runner = m.run_tree_kill
+        h1_spawns = []
+
+        def h1_worker(status_payload, returncode):
+            def runner(argv, **_kwargs):
+                h1_spawns.append(argv)
+                with open(argv[argv.index('--status-out') + 1], 'w',
+                          encoding='utf-8') as fh:
+                    json.dump(status_payload, fh)
+                return types.SimpleNamespace(returncode=returncode, stdout='', stderr='')
+            return runner
+
+        try:
+            # (1) The sealed manifest is missing. Pre-H1 sha256_path raised
+            # FileNotFoundError straight out of run_claimed — no verdict at all.
+            m.run_tree_kill = lambda *_a, **_k: h1_spawns.append('SPAWNED')
+            job = h1_seed('h1-missing', os.path.join(td, 'gone.json'), 'f' * 64)
+            state = m.run_claimed(h1_db, 'acc1', acc_dir, job, 5, run_id='h1run',
+                                  call_reservation_path=h1_ledger)
+            row = h1_row('h1-missing')
+            assert state == 'failed', ('missing manifest retried', state, row)
+            assert row['state'] == 'failed' and row['failure_class'] == 'configuration', row
+            assert row['attempts'] < row['max_attempts'], ('terminal by exhaustion, '
+                                                           'not by class', row)
+            assert 'unreadable' in (row['error'] or ''), row
+            assert not h1_spawns, h1_spawns
+
+            # (2) Bytes read fine, JSON invalid. The seal matches, so the drift branch
+            # is passed and the decode is what fails.
+            bad_path = os.path.join(td, 'invalid.json')
+            with open(bad_path, 'wb') as f:
+                f.write(b'{"schema": "pwg.headless_execution_manifest.v2", ')
+            job = h1_seed('h1-badjson', bad_path, m.sha256_path(bad_path))
+            state = m.run_claimed(h1_db, 'acc1', acc_dir, job, 5, run_id='h1run',
+                                  call_reservation_path=h1_ledger)
+            row = h1_row('h1-badjson')
+            assert state == 'failed', ('invalid JSON retried', state, row)
+            assert row['state'] == 'failed' and row['failure_class'] == 'configuration', row
+            assert row['attempts'] < row['max_attempts'], row
+            assert not h1_spawns, h1_spawns
+
+            # (3) The manifest is fine here; the WORKER returns a configuration verdict
+            # (its own H1 status path). Pre-H1 this went to fail_or_retry -> 'pending'.
+            good_path = os.path.join(td, 'good.json')
+            with open(good_path, 'w', encoding='utf-8') as f:
+                json.dump(h1_manifest(['h1key']), f)
+            good_sha = m.sha256_path(good_path)
+            m.run_tree_kill = h1_worker(
+                {'classification': 'configuration', 'error': "KeyError: 'inputs'",
+                 'manifest_sha256': good_sha}, 2)
+            job = h1_seed('h1-worker-config', good_path, good_sha)
+            state = m.run_claimed(h1_db, 'acc1', acc_dir, job, 5, run_id='h1run',
+                                  call_reservation_path=h1_ledger)
+            row = h1_row('h1-worker-config')
+            assert state == 'failed', ('worker configuration verdict retried', state, row)
+            assert row['state'] == 'failed' and row['failure_class'] == 'configuration', row
+            assert row['attempts'] < row['max_attempts'], row
+            assert len(h1_spawns) == 1, h1_spawns
+
+            # (4) REGRESSION GUARD, not a defect pin: an ordinary process failure must
+            # still consume an attempt and return to 'pending'. This one is GREEN on
+            # pre-H1 master by construction — it exists to prove the terminal path did
+            # not globally disable retry.
+            h1_spawns.clear()
+            m.run_tree_kill = h1_worker(
+                {'classification': 'process', 'error': 'transient boom',
+                 'manifest_sha256': good_sha}, 1)
+            job = h1_seed('h1-transient', good_path, good_sha)
+            state = m.run_claimed(h1_db, 'acc1', acc_dir, job, 5, run_id='h1run',
+                                  call_reservation_path=h1_ledger)
+            row = h1_row('h1-transient')
+            assert state == 'pending', ('transient failure lost its retry', state, row)
+            assert row['state'] == 'pending' and row['failure_class'] == 'process', row
+        finally:
+            m.run_tree_kill = original_runner
+    # A class that permanently kills a job must be visible in the readiness report, or the
+    # window simply goes missing from it with nothing saying why.
+    assert 'configuration' in m.HARD_FAILURE_CLASSES, m.HARD_FAILURE_CLASSES
+    assert m.DETERMINISTIC_FAILURE_CLASSES <= m.HARD_FAILURE_CLASSES, (
+        'a class terminal enough to kill a job must also be reported as a hard failure')
+    print('  H1 terminal config: unreadable/invalid manifest + worker configuration verdict '
+          'fail terminally on attempt 1 (max_attempts=3, zero pre-launch spawns); '
+          'process failure still retries')
+
     # Required profile selection happens before the standard three-account concurrency slice.
     # Otherwise acc4 is permanently hidden behind three alphabetically earlier idle accounts.
     with tempfile.TemporaryDirectory() as td:
