@@ -72,13 +72,13 @@ not touch that branch; a human may archive it.
 | S1 audit in-proc | ✅ DONE (bench-verified) | this branch | bench outcomes == baseline |
 | H5 corrupt status | ✅ DONE (code; gate pending) | this branch | — |
 | H10 collect OUT override | ✅ DONE — needed **five** readers patched, not one: `_pilot_collect`, `audit_window`, `audit_translation` (feeds `stage2_pregate` via `at.merged_output_path`), `root_glue_translated`, **and shared `window_common.OUT`** (feeds `window_reports.merged_exists` → `audit_state`). Missing the 4th/5th caused first NO-OUTPUT defects, then phantom `partial` states — the bench caught both instantly | this branch | bench hermeticity + outcomes == baseline |
-| H1 manifest crash | ⏳ handed to Opus 5 (H####) | — | — |
-| H2a/H2b budget notes | ⏳ handed to Opus 5 | — | — |
-| H3 fsync checkpoints | ⏳ handed to Opus 5 | — | — |
-| H4 dup lease-id | ⏳ handed to Opus 5 | — | — |
-| H7 drain spin | ⏳ handed to Opus 5 | — | — |
-| H8 preflight timeout | ⏳ handed to Opus 5 | — | — |
-| H9 cohort stranding | ⏳ handed to Opus 5 | — | — |
+| H1 manifest crash | ⏳ handed to Opus 5 ([H1940](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1940-Opus_RussianTranslation_pwg-ru-h1811-integrate-verify_30.07.26.md)) | — | — |
+| H2a/H2b budget notes | ⏳ handed to Opus 5 (H1940) | — | — |
+| H3 fsync checkpoints | ⏳ handed to Opus 5 (H1940) | — | — |
+| H4 dup lease-id | ⏳ handed to Opus 5 (H1940) | — | — |
+| H7 drain spin | ⏳ handed to Opus 5 (H1940) | — | — |
+| H8 preflight timeout | ⏳ handed to Opus 5 (H1940) | — | — |
+| H9 cohort stranding | ⏳ handed to Opus 5 (H1940) | — | — |
 
 **Bench verification (fixture, per-lease outcomes must equal the pre-change baseline):**
 fx1 clean=3/promoted · fx2 clean=1/promoted_partial (transient `_a_g_ata`, defect
