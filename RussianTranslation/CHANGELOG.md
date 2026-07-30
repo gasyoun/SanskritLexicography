@@ -10,6 +10,52 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed — offline pipeline speed + hermeticity: in-proc audit chain, stamp memo, PWG_OUTPUT_DIR (H1811, 30-07-2026)
+
+Measured on the hermetic [`h1339_offline_bench`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1339_offline_bench.py)
+(interleaved A/B vs `origin/master` `d5650afe`, medians of 3): **audit stage −39.3 %**
+(3.60 s → 2.19 s), store-write −12.4 %, **total −22.9 %** (7.23 s → 5.58 s) —
+with the deterministic output signature **and** store semantic hash byte-identical
+on both sides. **Re-verified 30-07-2026 after rebase onto master `f15bcf0f`**
+(26 commits later): **audit −36.9 %** (4.19 s → 2.64 s), **total −19.3 %**
+(8.42 s → 6.80 s), signature `9bd2a14297` still byte-identical across both sides.
+The smaller headline is base drift, not candidate regression — master's own total
+rose 7.23 s → 8.42 s over those commits (fix log §5.1).
+Executor: Kimi K3 (`moonshotai/kimi-k3`); rebase + re-verification: Opus 5
+(`claude-opus-5[1m]`); review + fix log:
+[`pwg_ru/h1811/H1811_PIPELINE_REVIEW_FIXLOG_2026-07-29.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1811/H1811_PIPELINE_REVIEW_FIXLOG_2026-07-29.md).
+
+- **S1** — `coordinator record-output` runs `audit_window` **in-process** (runpy
+  via the H1339 `run_py_inproc` pattern; new `run_audit` seam, 30-min timeout kept
+  via daemon thread → rc=124). One interpreter spawn per lease eliminated.
+- **S2** — `audit_window` runs `_pilot_collect` in-process too (the last
+  subprocess gate after H1339 Phase 3).
+- **S3** — `pipeline_version.stamp` memoizes `component_sha` per process (~27 % of
+  the batch-promote in-process time was re-hashing identical file sets);
+  `check()`/`freeze()` bypass the memo and always read fresh bytes.
+- **H5** — a corrupt/missing `window_status.json` / audit report with rc ∈ {0,1}
+  is now an audit error instead of a silent `unknown` lease state.
+- **H10** — `PWG_OUTPUT_DIR` (output-side twin of H1386's `PWG_INPUT_DIR`) honored
+  by `_pilot_collect`, `audit_window`, `audit_translation`, `root_glue_translated`
+  and shared `window_common.OUT`; the "hermetic" bench no longer rewrites live
+  `src/pilot/output` sidecars. Five readers needed patching — missing two of them
+  produced first NO-OUTPUT false defects, then phantom `partial` states (the bench
+  caught both).
+- Gates: `window_selftest` **194/194** (new `test_h1811_inproc_audit_timeout_seam`;
+  two coordinator fixtures moved to the `run_audit` seam); LANG_PARITY 89 entries,
+  no drift (new SHARED entry `h1811_inproc_audit_pwg_output_dir`;
+  `h1339_offline_bench.py` moved exempt → tracked).
+- The first rebase surfaced a **193/194** suite, the one failure being
+  `test_lang_parity_ledger_complete`: `citation_tm.py`, `corpus_gate.py` and
+  `annotate_genres.py` had drifted under H1902 and were awaiting re-affirmation.
+  Those three files are byte-identical between master and this branch, so the
+  debt was master's, not this change's; it was paid separately in
+  [#894](https://github.com/gasyoun/SanskritLexicography/pull/894) rather than
+  `--update-hash`'d here. After rebasing onto that green master:
+  `lang_parity_check` **89 entries, no drift**, `window_selftest` **194/194**.
+
+## [1.111.2] - 2026-07-30
+
 ### Fixed — LANG_PARITY re-affirmed for the three files H1902 left drifting; master is green again (H1940, 30-07-2026)
 
 H1902 ([#892](https://github.com/gasyoun/SanskritLexicography/pull/892)) unified

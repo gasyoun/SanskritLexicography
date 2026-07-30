@@ -1524,6 +1524,40 @@ def recorded_lease_state(state_name, audit_errors, clean_rows, pending=None):
     return 'blocked', False
 
 
+def run_audit(argv, timeout=AUDIT_TIMEOUT_SECONDS):
+    """H1811 S1: run audit_window IN-PROCESS (runpy via audit_window.run_py_inproc)
+    instead of paying one interpreter spawn per lease. The audited code is
+    byte-identical (same script file, same argv); stdout/stderr/returncode carry the
+    run_py_inproc semantics (crash -> rc=3 + traceback, the SAME fail-loud path as a
+    crashed subprocess, H169 defect 2). AUDIT_TIMEOUT_SECONDS is re-imposed with a
+    daemon worker thread: on timeout the lease is recorded with rc=124 (the
+    conventional timeout code run_py also uses). An in-proc thread cannot be killed,
+    so a wedged audit is reported and left to die with the process -- documented
+    residual; the deterministic gates have never hit the 30-min ceiling, and the
+    blocked lease + recover-operation path is unchanged. This function is the ONE
+    audit seam: tests substitute it (never run_cmd) to fixture the audit step."""
+    import threading
+    import types
+    from audit_window import run_py_inproc
+
+    box = {}
+
+    def _target():
+        box['result'] = run_py_inproc(argv)
+
+    worker = threading.Thread(target=_target, daemon=True)
+    worker.start()
+    worker.join(timeout)
+    if worker.is_alive():
+        return types.SimpleNamespace(
+            returncode=124, stdout='',
+            stderr='run_audit: in-proc audit_window timeout after %ss '
+                   '(daemon thread left to die with the process)' % timeout)
+    r = box['result']
+    return types.SimpleNamespace(returncode=r['returncode'], stdout=r['stdout'],
+                                 stderr=r['stderr'])
+
+
 def process_record_output(lease, args):
     """Normalize and audit a detached lease snapshot without holding the state lock."""
     base_adir = lease.get('artifact_dir') or artifact_dir(args.lease_id)
@@ -1534,32 +1568,44 @@ def process_record_output(lease, args):
     if lease.get('kind') == 'nominal':
         result.setdefault('meta', {})['nominal_keymap'] = lease.get('details', {}).get('keymap') or {}
         atomic_write_json(wf, result, indent=None)
-    cmd = [sys.executable, os.path.join(HERE, 'audit_window.py'), wf,
-           '--write-requeue', '--out-dir', adir]
+    argv = [os.path.join(HERE, 'audit_window.py'), wf,
+            '--write-requeue', '--out-dir', adir]
     manifest = lease.get('execution_manifest') or os.path.join(
         adir, '__missing_execution_manifest__.json')
-    cmd += ['--execution-manifest', manifest]
+    argv += ['--execution-manifest', manifest]
     if lease.get('kind') == 'verb':
-        cmd += ['--root', lease['target']]
+        argv += ['--root', lease['target']]
     if args.allow_stale:
-        cmd.append('--allow-stale')
-    audit = run_cmd(cmd, check=False, timeout=AUDIT_TIMEOUT_SECONDS)
+        argv.append('--allow-stale')
+    audit = run_audit(argv)
     status_path = os.path.join(adir, 'window_status.json')
     report_path = os.path.join(adir, 'audit_window.report.json')
+    status_corrupt = report_corrupt = False
     try:
         status = json.load(open(status_path, encoding='utf-8'))
     except (OSError, json.JSONDecodeError):
         status = {}
+        status_corrupt = True
     try:
         report = json.load(open(report_path, encoding='utf-8'))
     except (OSError, json.JSONDecodeError):
         report = {}
+        report_corrupt = True
     state_name = status.get('state') or ('blocked' if audit.returncode not in (0, 1) else 'unknown')
     rejected = set(report.get('requeue') or status.get('requeue_keys') or [])
     clean_payload = clean_result_payload(result, rejected)
     clean_rows = clean_payload['results']
     audit_errors = validate_promotable_audit(
         wf, status, report, state_name, audit.returncode)
+    # H1811 H5: a truncated/missing status or report with a clean-looking rc used to
+    # record a meaningless 'unknown' state silently -- surface it as an audit error.
+    if audit.returncode in (0, 1):
+        if status_corrupt:
+            audit_errors.append('window_status.json unreadable despite audit rc=%d'
+                                % audit.returncode)
+        if report_corrupt:
+            audit_errors.append('audit_window.report.json unreadable despite audit rc=%d'
+                                % audit.returncode)
     pending = lease.get('pending_requeue') or empty_pending_requeue()
     if not audit_errors:
         try:
