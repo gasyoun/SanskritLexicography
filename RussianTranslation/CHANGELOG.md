@@ -20,10 +20,27 @@ try, because `KeyError` and `TypeError` were absent from its `except` tuple: a m
 that decodes and passes `validate_manifest` can still be missing a section the executor
 subscripts directly, or carry a scalar where a list is required.
 
-The consequence was not just an ugly crash. The orchestrator's whole retry policy keys off
-the worker's own `classification`; with no status file there is nothing to key off, so a
-**permanent, deterministic** defect — a manifest that will never parse — was retried like a
-transient one.
+Fixing the worker alone would not have stopped the retries, and the first draft of this
+entry wrongly claimed it did. Measured against `origin/master`, the orchestrator had three
+separate problems of its own:
+
+- `max_account_orchestrator.run_claimed` hashes and `json.load`s the manifest **before**
+  launching the worker, unguarded — so a missing file (`FileNotFoundError` out of
+  `sha256_path`) or invalid JSON escaped `run_claimed` entirely. The worker's new status
+  path was never even reached. Worse, the escaping exception left the job stuck
+  `in_progress`, and `_claim_tx` refuses an account that already owns an `in_progress`
+  row — so one unreadable manifest wedged the whole account.
+- `fail_or_retry` decides purely on `attempts < max_attempts`, ignoring
+  `failure_class` entirely. A `configuration` verdict — the worker's, or the
+  orchestrator's own from `validate_profile`/preflight — went straight back to
+  `pending`. Verified directly: on master a worker `configuration` result with
+  `attempts=1, max_attempts=3` returns `'pending'`.
+- The windows100 readiness report's hard-failure set omitted `configuration`, so a job
+  that died on one would have vanished from the report with nothing saying why.
+
+So H1 covers both halves.
+
+**Worker side.**
 
 - **The read is inside the try.** `open`/`read`/`sha256`/`json.loads` moved in, so all
   five shapes land on the existing `classification: configuration`, exit code 2, status
@@ -44,15 +61,33 @@ transient one.
   `max_account_orchestrator` feeds `status['error']` into `parse_reset` on the rate-limit
   path, so that text is not free to reword.
 
+**Orchestrator side.** `run_claimed`'s pre-launch hash + decode is now guarded, and a new
+`fail_terminal()` ends a job on the attempt that produced a **deterministic** verdict —
+`configuration` or `manifest_drift`, the classes whose outcome cannot change on a re-run.
+It is a separate entry point rather than a branch inside `fail_or_retry` on purpose:
+transient classes (`process`, `timeout`, `result_drift`, an unclassified failure) keep
+their retry budget byte-for-byte, and a single shared function deciding by class is the
+shape in which that is easy to regress later. `configuration` also joins the readiness
+report's hard-failure set, so a job it kills is still visible there.
+
 Successful execution, the v2 manifest seal, preflight validation, the call reservation and
 profile validation are untouched and still run in the same order. Zero paid calls on every
-one of these failures — both structural pins reach their exception before any reservation
-or spawn, and each asserts the spawn counter is zero rather than assuming it.
+one of these failures — both worker-side structural pins reach their exception before any
+reservation or spawn, and the two pre-launch orchestrator pins assert the spawn counter is
+zero rather than assuming it.
 
-Pinned by four new `headless_worker_selftest` tests, **all four verified RED against
-pre-H1 master**, where the exception escapes and no status file exists. Gates:
-`headless_worker_selftest` PASS, `window_selftest` 194/194, `lang_parity_check` 89 entries
-no drift (five SHARED verdicts re-derived against the diff, not hash-refreshed).
+Pinned by four new `headless_worker_selftest` tests — all four verified RED against pre-H1
+master, where the exception escapes and no status file exists — and four new
+production-path pins in `max_account_orchestrator_selftest` driving the real
+`run_claimed` with `max_attempts=3`, so a `failed` state proves the *class* ended the job
+and not exhaustion. Three of those four are master-failing (missing manifest → escapes;
+invalid JSON → escapes; worker `configuration` → `'pending'`). The fourth is a deliberate
+**regression guard**, green on master by construction: an ordinary `process` failure must
+still return to `pending`. Stated rather than rounded up to "4/4 RED".
+
+Gates: `headless_worker_selftest` PASS, `max_account_orchestrator_selftest` PASS,
+`window_selftest` 194/194, `lang_parity_check` 89 entries no drift (SHARED verdicts
+re-derived against the diff, not hash-refreshed).
 
 ### Fixed — one hung preflight could wedge every coordinator operation (H8 / H1940 Phase 2, 30-07-2026)
 
