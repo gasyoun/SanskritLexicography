@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 29-07-2026_
+_Created: 26-06-2026 · Last updated: 30-07-2026 (H1910: §463–§466 — print-OCR extraction traps; a coverage count does not measure correctness)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -572,6 +572,94 @@ over [VisualDCS derived-data/Fonetika/regen-2026/varna_freq.csv](https://github.
 
 > **Source:** H246 print-prep session ([SanskritGrammar PR #29](https://github.com/gasyoun/SanskritGrammar/pull/29)),
 > Fable 5 `claude-fable-5` · 2026-07-07
+
+### §463. A complete-coverage count cannot see commentary leaking into an extracted translation layer
+
+🔴 **`10,552/10,552, 0 unmatched` held while four separate defect classes were putting the
+book's editorial matter and page furniture inside the translation text.** Evidence: extracting
+Jamison–Brereton 2014 from the archive.org OCR of the three print volumes
+([`src/rv_jamison_brereton_extract.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_jamison_brereton_extract.py),
+H1910) hit the canonical-coverage bar early and held it through every one of these:
+
+| Defect | Extent | Longest "stanza" |
+|---|---:|---:|
+| Next hymn's whole heading block swallowed (its heading was OCR-destroyed) | 8 hymns | 5,751 chars |
+| `Mandala N` section introduction swallowed at a mandala boundary | 9 stanzas | 4,387 |
+| Hymn-**group** introduction swallowed — no heading, no metre line, no keyword | 11 detected | 2,434 |
+| Page number + running head embedded mid-text (stripped at detection, not at assembly) | 1,031 stanzas | — |
+| Mangled running head glued to the last word (`V111.78`, `VI.43^4`) | 16 stanzas | — |
+
+The general lesson, applicable to any print-source extraction: **completeness and correctness
+are independent, and the cheap gate only measures completeness.** Two checks did find these,
+and both are cheap enough to keep permanently: (1) a length distribution — a stanza of 5,751
+characters against a median of 190 is not a long stanza; (2) a **terminal-punctuation rate
+compared against an independently-extracted sibling layer** — J–B measured 9.77 % of stanzas
+ending without terminal punctuation against Griffith's 1.87 %, and the whole gap was embedded
+furniture. Griffith works as a control precisely because a different script built it from a
+different source. After the fixes: 2.50 % vs 1.87 %, longest stanza 454, and the residual is
+OCR-dropped periods (298 of them mid-hymn, where the next stanza marker bounds the text and
+truncation is structurally impossible).
+
+> Opus 5 1M `claude-opus-5[1m]` · 2026-07-30
+
+### §464. Do not find hymn headings in an OCR'd Vedic translation by matching roman numerals
+
+🔴 **`^[IVX]+\.\d+` matches 2,303 lines in the J–B OCR, and they are overwhelmingly prose
+cross-references rather than headings.** Evidence (H1910; two of these were paid for in wrong
+probes before the parser existed): a parser built on that pattern reconstructs 767 hymns and
+6,986 loci, all of it assembled from citations like "V.84 could be a later composition…" or
+"III.31.1-3), a fact that may point…". Three compounding traps:
+
+1. **Anchoring is not enough.** Accepting a candidate that resolves to a hymn "at or after the
+   current position" still fails — a *forward*-pointing citation hijacks the pointer and every
+   hymn it skipped is lost. That reading found **358 of 1,028** headings, because the general
+   introduction cites hymns before Mandala I even begins.
+2. **The heading form is not constant across the volumes.** Mandalas I–II use `I.l Agni` (the
+   OCR renders the digit `1` as lowercase `l`); from III.8 the headings carry a continuous
+   hymn serial, `IV.44(340) Asvins`; and **Mandala II is rendered as arabic `11`**
+   (`11.1(192) Agni`). That serial runs 1..**1017**, not 1..1028, because J–B number the
+   eleven Vālakhilya hymns (VIII.49–59) separately — so it can be recorded but never used as
+   a key.
+3. **Some headings are destroyed outright** — `mil (527) Agni` is VII.11, `m103(619) Frogs` is
+   VII.103, `V.IO (364) Agni` is V.10. Eight of 1,028. Widening the regex to catch those tokens
+   buys 8 hymns at the cost of an unknown number of false anchors, so they are better recovered
+   **positionally**: group the canonical hymns under the heading that opens their line range,
+   and resolve them from the last one backwards.
+
+What does work: segment **positionally against the canonical locus set** (here VedaWeb's
+`lemmatization.json`), and match stanza markers **in reverse** within a hymn's range, taking
+the last candidate for each number. Reverse matching is what keeps a per-hymn introduction out
+of the column — an introduction sits *before* stanza 1, so a line-initial "1." inside it is
+never the last candidate for stanza 1, whereas forward-greedy silently adopts the whole
+introduction as the text of stanza 1.
+
+> Opus 5 1M `claude-opus-5[1m]` · 2026-07-30
+
+### §465. archive.org OCR: use `/download/`, not `/stream/` — and expect no diacritics
+
+🟠 **`/stream/<ident>/<file>_djvu.txt` returns the viewer page** — HTML wrapper, an analytics
+`<script>`, and a closing `</body></html>` around the text. `/download/<ident>/<file>_djvu.txt`
+returns clean text (H1910: 4.2 MB, 116,661 lines, no wrapper). Two further properties worth
+knowing before planning work on an archive.org OCR: the **printed line structure is not
+recoverable** — it inserts blank lines *within* a printed line as often as between them, so a
+pāda/verse-line layout cannot be reconstructed and the honest output is one normalised
+paragraph per unit; and **Latin diacritics are flattened**, so transliterated Sanskrit inside
+the OCR is unreliable *as* transliteration (measured at RV 10.106.5–8, where J–B print
+transliterated Vedic instead of a translation).
+
+> Opus 5 1M `claude-opus-5[1m]` · 2026-07-30
+
+### §466. J–B decline to translate RV 10.106.5–8 rather than omit them
+
+🟠 **At the four stanzas Geldner omits (RV 10.106.5–8), Jamison–Brereton print transliterated
+Vedic, not English.** Evidence (H1910): those loci are `present` in the spine, with non-empty
+text carrying no English function words at all. This matters for any pairwise comparison over
+the layer — a naive reading treats them as an English rendering and ends up comparing
+transliteration against translation. It is also the substantive point: the stanza that made
+Geldner skip is the stanza J–B refuse to render, which is convergent evidence about the text
+rather than about either translator. Griffith, by contrast, does render them.
+
+> Opus 5 1M `claude-opus-5[1m]` · 2026-07-30
 
 ### §65. 6.6 % of the DeepSeek corpus word-alignments ground to nothing in their verse
 

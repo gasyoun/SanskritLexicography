@@ -1,6 +1,6 @@
 # FEATURES_INDEX.md — what the Sanskrit Lexicon project actually has
 
-_Created: 04-07-2026 · Last updated: 27-07-2026_
+_Created: 04-07-2026 · Last updated: 30-07-2026 (H1910: A5 J–B 2014 fifth RV column, A6 Renou EVP locus witness)_
 
 **Purpose.** A clickable, capability-first map of the working assets across the ~85
 repositories: the **dictionaries** digitised, the **interfaces** that serve them, the
@@ -24,7 +24,7 @@ carries a **real example** and its **first-introduced month/year**.
 > Some linked repos are private ([`github-spine`](https://github.com/gasyoun/github-spine),
 > [`Uprava`](https://github.com/gasyoun/Uprava)).
 
-**At a glance:** 44 dictionaries · 22 interfaces (17 live) · 45 data assets · 14 tools · 4 external stacks · 11 learner-facing drill/practice sets (P1–P11) · 30 catalogued methods/algorithms (Q1–Q30).
+**At a glance:** 44 dictionaries · 22 interfaces (17 live) · 47 data assets · 14 tools · 4 external stacks · 11 learner-facing drill/practice sets (P1–P11) · 30 catalogued methods/algorithms (Q1–Q30).
 
 **IDs & tiers.** Every asset has a **stable ID** — a **running number within its category**
 (1–N; it does *not* restart at each sub-section) prefixed by a **section letter** (`A`–`F` data ·
@@ -55,6 +55,8 @@ actual files (⚪-tier / *schema*-marked = gitignored / binary / too large, so t
 | 🟢 A2 | SanskritRussian glossary (3-layer) | Ranked Sa→Ru glossary: surface 190,838 · lemma 40,370 · root 2,021; 87% coverage | 233k entries · 61.3 MB | `A → принеси · freq 43 · ADP` (lemma layer) | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
 | 🟢 A3 | `mw_en_tm.json` | SLP1-keyed MW English-gloss translation memory behind the RU/EN kits | 187,506 · 11.1 MB | `"a": "the first letter of the alphabet · the first short vowel…"` | 06/26 | [RussianTranslation/src](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src) |
 | 🟢 A4 | lemma / root glossary (DCS) | DCS lemma→gloss and root→gloss glossaries, bilingual, TSV + JSONL | lemma 16– · root · 20.3 MB | `AGozi → Распространяя звуки · verb` (root layer) | 07/26 | [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
+| 🟢 A5 | `jamison_brereton_en_2014.json` | Jamison–Brereton 2014, the current scholarly RV standard in English — the **fifth** translation column of the RV evidence spine (with Grassmann 1876-77 de, Griffith 1896 en, Geldner 1951-57 de, Elizarenkova 1989-99 ru), so translator pairs are 10, not 6. Extracted from the archive.org OCR of all three print volumes; the OCR itself is an input and is not committed | 10,552 / 10,552 loci · 3.2 MB · 0 unmatched | `1.1.1 → "Agni do I invoke—the one placed to the fore, god and priest of the sacrifice…"` | 07/26 | [rv_jamison_brereton_extract.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_jamison_brereton_extract.py) |
+| 🟢 A6 | `rv_renou_evp_witness.jsonl` | Renou's *Études védiques et pāṇinéennes* (1955–69) as a locus-keyed **witness** beside the RV spine, never a column — EVP is a selective commentary, so a `translations` layer would be mostly `absent_from_source` and would corrupt `omitted_by_one`. Mined from Elizarenkova's own commentary: where she cites Renou, an Elizarenkova↔Geldner divergence is likely her following Renou against Geldner | 1,908 loci · 2,182 mentions · 458 quoted fr · 928 KB | `{"location":"1.1.1","witness":"renou_fr_1955","mention_count":2,"quotes_fr":[…]}` | 07/26 | [rv_renou_evp_witness.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_renou_evp_witness.py) |
 
 ### B · Roots & etymology
 
