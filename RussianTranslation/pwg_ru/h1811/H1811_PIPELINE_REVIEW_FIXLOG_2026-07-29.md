@@ -67,9 +67,9 @@ not touch that branch; a human may archive it.
 
 | Fix | Status | Commit | Selftest pin |
 |---|---|---|---|
-| S3 component_sha memo | ❌ **REVERTED by H1957** — the memo keyed on file patterns, never content, so it had no invalidation and stamped pre-edit provenance onto rows promoted after a mid-run source change | [PR #895](https://github.com/gasyoun/SanskritLexicography/pull/895) | `pipeline_version.selftest` fresh-stamp block (assertion inverted — it previously certified the stale hash) |
+| S3 component_sha memo | ❌ **REVERTED by H1957** — the memo keyed on file patterns, never content, so it had no invalidation and stamped pre-edit provenance onto rows promoted after a mid-run source change | [PR #897](https://github.com/gasyoun/SanskritLexicography/pull/897) | `pipeline_version.selftest` fresh-stamp block (assertion inverted — it previously certified the stale hash) |
 | S2 collect in-proc | ✅ DONE (bench-verified), **retained** | this branch | bench outcomes == baseline |
-| S1 audit in-proc | ❌ **REVERTED by H1957** — the daemon-thread timeout returned rc=124 while the audit kept running and kept writing the files the caller then read | [PR #895](https://github.com/gasyoun/SanskritLexicography/pull/895) | `window_selftest.test_h1957_audit_timeout_actually_kills_the_child` |
+| S1 audit in-proc | ❌ **REVERTED by H1957** — the daemon-thread timeout returned rc=124 while the audit kept running and kept writing the files the caller then read | [PR #897](https://github.com/gasyoun/SanskritLexicography/pull/897) | `window_selftest.test_h1957_audit_timeout_actually_kills_the_child` |
 | H5 corrupt status | ✅ DONE (code; gate pending) | this branch | — |
 | H10 collect OUT override | ✅ DONE — needed **five** readers patched, not one: `_pilot_collect`, `audit_window`, `audit_translation` (feeds `stage2_pregate` via `at.merged_output_path`), `root_glue_translated`, **and shared `window_common.OUT`** (feeds `window_reports.merged_exists` → `audit_state`). Missing the 4th/5th caused first NO-OUTPUT defects, then phantom `partial` states — the bench caught both instantly | this branch | bench hermeticity + outcomes == baseline |
 | H1 manifest crash | ⏳ handed to Opus 5 ([H1940](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1940-Opus_RussianTranslation_pwg-ru-h1811-integrate-verify_30.07.26.md)) | — | — |
