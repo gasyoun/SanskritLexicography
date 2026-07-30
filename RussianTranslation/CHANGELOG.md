@@ -10,7 +10,36 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
-## [1.111.2] - 2026-07-30
+### Fixed — LANG_PARITY re-affirmed for the three files H1902 left drifting; master is green again (H1940, 30-07-2026)
+
+H1902 ([#892](https://github.com/gasyoun/SanskritLexicography/pull/892)) unified
+sibling-root resolution across `src/` but did not re-affirm the parity verdicts of
+the three tracked files it touched, so `lang_parity_check` reported **3 violations
+on master itself** and `test_lang_parity_ledger_complete` took the whole
+`window_selftest` suite red. Every PR opened since inherited that failure —
+[#893](https://github.com/gasyoun/SanskritLexicography/pull/893) is where it
+surfaced, though it neither caused nor could fix it (the three files are
+byte-identical between master and that branch).
+
+Each verdict was re-derived rather than rubber-stamped. H1902's edit is the same
+`+2/-1` substitution in all three files — the hard-coded
+`os.path.join(HERE,'..','..','..')` guess replaced by `sibling_root(HERE)` — and
+[`src/sibling_root.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/sibling_root.py)
+contains **no language-conditional logic whatsoever** (0 language tokens in 108
+lines). Since all three verdicts rest on *which language assets exist*, not on how
+paths resolve, none of their grounds moved:
+
+- `citation_tm_ru_translation_of_record` — INTENTIONAL-DIVERGENCE holds; `GITHUB`
+  feeds `CORPUS_DB` only, and no EN citation-TM corpus was assembled.
+- `corpus_gate_evidence_markers_fl7_h321` — INTENTIONAL-DIVERGENCE holds; the
+  marker mechanism and the wired authority set are unchanged, no Sanskrit-English
+  authority was added.
+- `genre_sense_join_h339` — SHARED holds, and is arguably *strengthened*: `GH`
+  feeds the shared German `pwg.txt`, and the removed hard-coded guess was
+  precisely what could resolve differently between checkouts.
+
+The reasoning is recorded in each ledger note, not only here. Gates after:
+`lang_parity_check` **88 entries, no drift**, `window_selftest` **193/193**.
 
 ### Fixed — FINDINGS citation-number collision from the H1910 propagation pass (30-07-2026)
 
