@@ -28,9 +28,9 @@ store-write ≈ 30 %. Per-lease `record-output` still pays 2 interpreter spawns
 
 | # | Finding | Evidence | Fix | Est. saving |
 |---|---|---|---|---|
-| S1 | `process_record_output` spawns `audit_window.py` per lease | [`coordinator.py:1537-1546`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py) | run audit in-proc via the proven `run_py_inproc` pattern (already used by prepare-batch, `coordinator.py:1069`); 30-min audit timeout re-imposed via worker thread | ~0.5–0.9 s/lease |
+| S1 | `process_record_output` spawns `audit_window.py` per lease | [`coordinator.py:1537-1546`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py) | ~~run audit in-proc via `run_py_inproc`; 30-min timeout re-imposed via worker thread~~ — **reverted, §5.2**: a thread cannot be killed, so the timeout never cancelled the audit | ~0.5–0.9 s/lease (given back) |
 | S2 | `_pilot_collect` is the last subprocess gate | [`audit_window.py:234-237`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py) | route through existing `run_py_inproc` (H1339 pattern; the other 5 gates already in-proc) | ~0.3–0.5 s/lease |
-| S3 | `component_sha` re-hashes the same files per `stamp()` — 30 calls/promote batch, ~27 % of batch-promote in-proc time (cProfile) | [`pipeline_version.py:90-108`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pipeline_version.py) | per-process memo keyed on (patterns, root) | ~0.27 s/promote |
+| S3 | `component_sha` re-hashes the same files per `stamp()` — 30 calls/promote batch, ~27 % of batch-promote in-proc time (cProfile) | [`pipeline_version.py:90-108`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pipeline_version.py) | ~~per-process memo keyed on (patterns, root)~~ — **reverted, §5.2**: keyed on patterns, not content, so it never invalidated and stamped stale provenance | ~0.27 s/promote (given back) |
 
 Already upstream (verified, **no work**): `record-output-batch` (one coordinator process
 for N leases), TM `build`/`build_frags` in-proc via `promotion_journal`, prepare-batch.
@@ -67,9 +67,9 @@ not touch that branch; a human may archive it.
 
 | Fix | Status | Commit | Selftest pin |
 |---|---|---|---|
-| S3 component_sha memo | ✅ DONE (pipeline_version selftest OK) | this branch | `pipeline_version.selftest` stamp-memo block |
-| S2 collect in-proc | ✅ DONE (bench-verified) | this branch | bench outcomes == baseline |
-| S1 audit in-proc | ✅ DONE (bench-verified) | this branch | bench outcomes == baseline |
+| S3 component_sha memo | ❌ **REVERTED by H1957** — the memo keyed on file patterns, never content, so it had no invalidation and stamped pre-edit provenance onto rows promoted after a mid-run source change | [PR #897](https://github.com/gasyoun/SanskritLexicography/pull/897) | `pipeline_version.selftest` fresh-stamp block (assertion inverted — it previously certified the stale hash) |
+| S2 collect in-proc | ✅ DONE (bench-verified), **retained** | this branch | bench outcomes == baseline |
+| S1 audit in-proc | ❌ **REVERTED by H1957** — the daemon-thread timeout returned rc=124 while the audit kept running and kept writing the files the caller then read | [PR #897](https://github.com/gasyoun/SanskritLexicography/pull/897) | `window_selftest.test_h1957_audit_timeout_actually_kills_the_child` |
 | H5 corrupt status | ✅ DONE (code; gate pending) | this branch | — |
 | H10 collect OUT override | ✅ DONE — needed **five** readers patched, not one: `_pilot_collect`, `audit_window`, `audit_translation` (feeds `stage2_pregate` via `at.merged_output_path`), `root_glue_translated`, **and shared `window_common.OUT`** (feeds `window_reports.merged_exists` → `audit_state`). Missing the 4th/5th caused first NO-OUTPUT defects, then phantom `partial` states — the bench caught both instantly | this branch | bench hermeticity + outcomes == baseline |
 | H1 manifest crash | ⏳ handed to Opus 5 ([H1940](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1940-Opus_RussianTranslation_pwg-ru-h1811-integrate-verify_30.07.26.md)) | — | — |
@@ -172,6 +172,71 @@ no drift**; `window_selftest` **194/194, 0 failed**; bench per-lease outcomes
 unchanged with signature `9bd2a14297` intact. The `f15bcf0f → 459ee452` delta is
 `CHANGELOG.md` + `LANG_PARITY.md` only, so the A/B table above still stands on
 identical code.
+
+### 5.2 Correction: S1 and S3 reverted for correctness (H1957, 30-07-2026)
+
+Opus 5 (`claude-opus-5[1m]`). Both speed fixes above were correct about the *cost* they
+removed and wrong about what they cost in exchange. Neither defect was visible to any
+gate — §5.1 recorded 194/194 green with both present.
+
+**S1 — the timeout could not cancel the audit.** `run_audit` ran `audit_window`
+in-process on a daemon thread. [`run_py_inproc`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py)'s
+own docstring forbids exactly that usage: *"callers must not run two of these
+concurrently (sys.argv/stdout are process-global)."* On timeout the caller returned
+rc=124 and moved on while the worker kept running, producing three concurrent-access
+failures: (1) the live thread kept **writing `window_status.json`, the audit report and
+requeue files** that `process_record_output` reads on the next line; (2) `sys.argv`,
+the process cwd (`run_py_inproc` chdirs to `SRC`) and `stdout`/`stderr` stayed
+redirected out from under the coordinator; (3) the `finally` restored argv/cwd whenever
+the thread ended, clobbering any value the main thread had set meanwhile. Failure (2)
+was observed directly while reproducing this: the reproduction script's own `print`
+output disappeared into the abandoned thread's capture buffer and only resumed after
+that thread exited. Fixed by restoring a **killable subprocess** boundary — the pre-H1811
+shape — while keeping the `run_audit` test seam and H1811's rc=124 timeout contract
+(so H5's `rc ∉ {0,1}` handling is unchanged) and keeping S2 in-process inside the child.
+
+**S3 — provenance could be stamped stale.** `_STAMP_MEMO` keyed on
+`(tuple(comp['files']), abspath(root))` — the file *patterns*. Nothing in the key
+varies with content, so the entry never expired: any process that outlived a source
+edit stamped every later row with the pre-edit hash. Long-lived waves
+(`bounded_staged_run`, `cohort_engine`) are exactly that case. `check()`/`freeze()`
+remained exact, but they inspect the manifest and cannot repair provenance already
+written into the store. Removed; `stamp()` re-reads.
+
+**The gates were not merely silent — one was inverted.** The S3 selftest asserted
+`st2['prompt_sha'] == st['prompt_sha']` under the message *"stamp memo must return the
+first hash"*, certifying the stale result as the contract. The S1 test monkeypatched
+`run_py_inproc` and asserted only the rc=124 mapping, so it could not fail for the
+reason that mattered. Both replaced; the new timeout test drives a real child that
+sleeps then writes a sentinel, and was checked to **fail against the old
+implementation** rather than assumed to.
+
+**Cost of the correction.** Interleaved A/B vs master `3070941b`, 5 alternating pairs,
+host under variable load (base totals ranged 10.79–13.29 s), minimum per side as the
+robust estimator:
+
+| Stage | base `3070941b` | H1957 | Δ (min) | Δ (median) |
+|---|---|---|---|---|
+| prepare | 2.240 s | 2.000 s | −10.7 % | −9.6 % |
+| **audit** | 3.950 s | 5.320 s | **+34.7 %** | +41.4 % |
+| promotion-plan | 0.650 s | 0.760 s | +16.9 % | +45.6 % |
+| **store-write** | 4.000 s | 4.960 s | **+24.0 %** | +8.9 % |
+| **total** | 10.790 s | 12.410 s | **+15.0 %** | +25.3 % |
+
+`audit` carries the restored interpreter spawn; `store-write` carries `stamp()`
+re-hashing per promoted row. `prepare` moved without being touched, which is the
+scale of the noise floor here — treat the small deltas as unresolved. The
+deterministic signature `9bd2a14297` is byte-identical on both sides, so **outputs are
+unchanged**; only the cost is.
+
+**A structural note for whoever edits this file next.** Editing
+`window_selftest.py` at all drifted **32** LANG_PARITY entries that pin a test in it,
+plus 5 more on `coordinator.py`/`pipeline_version.py`. Each nominally requires a human
+re-affirmation, which at 32-at-once is rubber-stamping by construction. Here the 5
+substantive ones were re-derived individually and the 32 were stamped only under a
+mechanically verified precondition — that the diff to `window_selftest.py` touches
+exactly the replaced audit-timeout test and one runner line, nothing else. The ledger
+would carry more signal if entries pinned test *names* rather than the monolith's hash.
 
 ## 6. Session notes
 

@@ -1525,37 +1525,63 @@ def recorded_lease_state(state_name, audit_errors, clean_rows, pending=None):
 
 
 def run_audit(argv, timeout=AUDIT_TIMEOUT_SECONDS):
-    """H1811 S1: run audit_window IN-PROCESS (runpy via audit_window.run_py_inproc)
-    instead of paying one interpreter spawn per lease. The audited code is
-    byte-identical (same script file, same argv); stdout/stderr/returncode carry the
-    run_py_inproc semantics (crash -> rc=3 + traceback, the SAME fail-loud path as a
-    crashed subprocess, H169 defect 2). AUDIT_TIMEOUT_SECONDS is re-imposed with a
-    daemon worker thread: on timeout the lease is recorded with rc=124 (the
-    conventional timeout code run_py also uses). An in-proc thread cannot be killed,
-    so a wedged audit is reported and left to die with the process -- documented
-    residual; the deterministic gates have never hit the 30-min ceiling, and the
-    blocked lease + recover-operation path is unchanged. This function is the ONE
-    audit seam: tests substitute it (never run_cmd) to fixture the audit step."""
-    import threading
+    """Run audit_window in a KILLABLE SUBPROCESS under the audit timeout.
+
+    H1957 correction of H1811 S1, which ran audit_window in-process (runpy via
+    audit_window.run_py_inproc) on a daemon worker thread. That broke
+    run_py_inproc's OWN documented contract -- "callers must not run two of these
+    concurrently (sys.argv/stdout are process-global)" -- because on timeout the
+    worker was left running alongside the caller. Three consequences, none of them
+    covered by the deterministic gates:
+
+      1. The abandoned thread keeps executing audit code that WRITES the very
+         window_status.json / audit_window.report.json / requeue files the caller
+         reads immediately after receiving rc=124.
+      2. While it runs, the coordinator's own sys.argv, cwd (run_py_inproc chdirs
+         to SRC) and stdout/stderr remain hijacked -- so coordinator output goes
+         into a dead capture buffer and relative paths resolve against the wrong
+         directory.
+      3. run_py_inproc's `finally` restores argv/cwd whenever the thread finally
+         ends, clobbering whatever the main thread had set in the meantime.
+
+    A separate process is the only boundary where the timeout can actually cancel
+    the work: subprocess.run kills the child, so nothing survives to race the
+    caller. The cost is one interpreter spawn per lease.
+
+    H1811 S2 is deliberately RETAINED -- _pilot_collect still runs in-process
+    INSIDE audit_window -- so this restores one spawn, not the five H1339 removed.
+
+    Semantics preserved from the in-proc form: a crash still surfaces the child's
+    own returncode + stderr (the fail-loud path of H169 defect 2), and a timeout
+    is still reported as rc=124 (the conventional timeout code) rather than raising
+    TimeoutExpired, so process_record_output's H5 corrupt-status handling -- which
+    keys on rc not in {0, 1} -- is unchanged.
+
+    This function remains the ONE audit seam: tests substitute it (never run_cmd)
+    to fixture the audit step."""
     import types
-    from audit_window import run_py_inproc
 
-    box = {}
+    def _text(chunk):
+        if chunk is None:
+            return ''
+        if isinstance(chunk, bytes):
+            return chunk.decode('utf-8', 'replace')
+        return chunk
 
-    def _target():
-        box['result'] = run_py_inproc(argv)
-
-    worker = threading.Thread(target=_target, daemon=True)
-    worker.start()
-    worker.join(timeout)
-    if worker.is_alive():
+    cmd = [sys.executable] + list(argv)
+    try:
+        p = subprocess.run(cmd, cwd=REPO, text=True, encoding='utf-8',
+                           capture_output=True, timeout=timeout)
+    except subprocess.TimeoutExpired as exc:
+        # subprocess.run has already killed the child and reaped it before raising.
         return types.SimpleNamespace(
-            returncode=124, stdout='',
-            stderr='run_audit: in-proc audit_window timeout after %ss '
-                   '(daemon thread left to die with the process)' % timeout)
-    r = box['result']
-    return types.SimpleNamespace(returncode=r['returncode'], stdout=r['stdout'],
-                                 stderr=r['stderr'])
+            returncode=124,
+            stdout=_text(exc.stdout),
+            stderr=(_text(exc.stderr) +
+                    'run_audit: audit_window timed out after %ss; the child process '
+                    'was killed, so no audit output can still be written.\n' % timeout))
+    return types.SimpleNamespace(returncode=p.returncode, stdout=p.stdout,
+                                 stderr=p.stderr)
 
 
 def process_record_output(lease, args):
