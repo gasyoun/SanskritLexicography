@@ -87,7 +87,8 @@ still return to `pending`. Stated rather than rounded up to "4/4 RED".
 
 Gates: `headless_worker_selftest` PASS, `max_account_orchestrator_selftest` PASS,
 `window_selftest` 194/194, `lang_parity_check` 89 entries no drift (SHARED verdicts
-re-derived against the diff, not hash-refreshed).
+re-derived against the diff, not hash-refreshed). Landed as
+[PR #904](https://github.com/gasyoun/SanskritLexicography/pull/904), merged `62993b6b`.
 
 ### Fixed — one hung preflight could wedge every coordinator operation (H8 / H1940 Phase 2, 30-07-2026)
 
