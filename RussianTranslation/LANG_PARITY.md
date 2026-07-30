@@ -152,7 +152,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H1412",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/headless_worker.py": "bb6bc5468a3fca6e3257022be7b5878adff190a9a557206e5597c21d76e36c2d",
+      "src/pilot/headless_worker.py": "96906289cb35298268769b1d704f7e80ae1b0f89fa3cc09b41d2a966d6d1cbe4",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
       "src/pilot/window_selftest.py": "60eaa90e3803431305d6e142a7bc4b773638293cd68f0ef0ece96e639b658d50"
     }
@@ -1119,10 +1119,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/headless_worker.py": "bb6bc5468a3fca6e3257022be7b5878adff190a9a557206e5597c21d76e36c2d",
+      "src/pilot/headless_worker.py": "96906289cb35298268769b1d704f7e80ae1b0f89fa3cc09b41d2a966d6d1cbe4",
       "src/pilot/max_account_orchestrator.py": "a850df79a48a8b309b94411dac0d5dd42d4d88c6c484e19c6eba681fce33ec81",
       "src/pilot/coordinator.py": "a3547d79d552ebe497e7cdc51093061bf3dfec01add8258ef51fde3ce6c61f84",
-      "src/pilot/headless_worker_selftest.py": "cc32949c87bd392348a4679a4d341d5c0f887dc40e48c166576887c62587eb5c",
+      "src/pilot/headless_worker_selftest.py": "8a70ae7d48f549b9038e801e0292ee7ceb74d64d7e69b74c6627417007f03dda",
       "src/pilot/max_account_orchestrator_selftest.py": "8c3800e99bd14e1fdef29820a26696f64f07c71eb7fa19033d8169b7eb38f040",
       "src/pilot/no_pwg_scale_plan.py": "7e4bb02a2f2865a3447afe47cf1f4106209bdc24f403cb6dd2b8c524b6928d63",
       "src/pilot/windows100_selftest.py": "cb010a7452d1a68fb3a793c3d0ea77d1784eb158d985488cfd09177a1215515d",
@@ -1475,7 +1475,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/card_fields.py": "976c5aa943a35da1691e2ce72e9cb4a14ac53d3bae37f8c68345cc68cb233e2b",
       "src/promote_final_cards.py": "ec11849e0f3a77515862bfd0baeb059e0d44706eb476a500bdd56d538bb2ec32",
       "src/pilot/translation_memory.py": "e5014c7a872ca6c89458a052690de45576fae15e09094be72bfa7aa30b1d0b76",
-      "src/pilot/headless_worker.py": "bb6bc5468a3fca6e3257022be7b5878adff190a9a557206e5597c21d76e36c2d",
+      "src/pilot/headless_worker.py": "96906289cb35298268769b1d704f7e80ae1b0f89fa3cc09b41d2a966d6d1cbe4",
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2"
     }
   },
@@ -1553,7 +1553,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/headless_worker.py": "bb6bc5468a3fca6e3257022be7b5878adff190a9a557206e5597c21d76e36c2d"
+      "src/pilot/headless_worker.py": "96906289cb35298268769b1d704f7e80ae1b0f89fa3cc09b41d2a966d6d1cbe4"
     }
   },
   {
@@ -1819,7 +1819,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H858",
     "verified_sha256": {
       "src/german_anchor.py": "751a6bf9c1cf9bc6201397d28f429cd02c680f668c1b2340be8ca55f54e8a276",
-      "src/pilot/headless_worker.py": "bb6bc5468a3fca6e3257022be7b5878adff190a9a557206e5597c21d76e36c2d",
+      "src/pilot/headless_worker.py": "96906289cb35298268769b1d704f7e80ae1b0f89fa3cc09b41d2a966d6d1cbe4",
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
       "src/promote_final_cards.py": "ec11849e0f3a77515862bfd0baeb059e0d44706eb476a500bdd56d538bb2ec32"
     }
