@@ -29,24 +29,35 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-GITHUB_ROOT = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
-VEDAWEB_DIR = os.path.join(GITHUB_ROOT, 'VisualDCS', 'non-derived', 'vedaweb')
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+from rv_org_root import find_github_root, vedaweb_dir  # noqa: E402
+
+GITHUB_ROOT = find_github_root(HERE)
+VEDAWEB_DIR = vedaweb_dir(HERE)
 PWG_RU_DIR = os.path.normpath(os.path.join(HERE, '..', 'pwg_ru'))
 SCHEMAS_DIR = os.path.normpath(os.path.join(HERE, '..', 'schemas'))
 RUN_LOG_DIR = os.path.join(PWG_RU_DIR, 'h1843')
 
 LEMMATIZATION_PATH = os.path.join(VEDAWEB_DIR, 'lemmatization.json')
 
-# translator key -> path. griffith is this handoff's own step-1 output, the
-# other three are the read-only VedaWeb feed (ARCHITECTURE Sec.3.1 keys).
+# translator key -> path. griffith (H1843 step 1) and jamison_brereton (H1910) are this
+# repo's own extraction outputs, the other three are the read-only VedaWeb feed
+# (ARCHITECTURE Sec.3.1 keys).
 TRANSLATOR_PATHS = {
     'grassmann_de_1876': os.path.join(VEDAWEB_DIR, 'grassmann_de_1876_1877.json'),
     'geldner_de_1951': os.path.join(VEDAWEB_DIR, 'geldner_de_1951_1957.json'),
     'elizarenkova_ru_1989': os.path.join(VEDAWEB_DIR, 'elizarenkova_ru_1989_1999.json'),
     'griffith_en_1896': os.path.join(PWG_RU_DIR, 'griffith_en_1896.json'),
+    'jamison_brereton_en_2014': os.path.join(PWG_RU_DIR, 'jamison_brereton_en_2014.json'),
 }
+# H1910: five translators, appended rather than re-sorted -- the order is the column order
+# of the flat TSV mirror, and re-sorting it would silently invalidate every committed
+# consumer of that file. Chronology is carried explicitly by TRANSLATOR_CHRONO in
+# build_rv_divergence_gate_sheet.py, not implied by this list.
 TRANSLATOR_ORDER = [
     'grassmann_de_1876', 'geldner_de_1951', 'elizarenkova_ru_1989', 'griffith_en_1896',
+    'jamison_brereton_en_2014',
 ]
 
 STANZA_OUT = os.path.join(PWG_RU_DIR, 'rv_stanza_translations.jsonl')
@@ -70,7 +81,15 @@ EXPECTED_ABSENT = {
     'geldner_de_1951': 4,
     'elizarenkova_ru_1989': 0,
     'griffith_en_1896': 0,
+    # J-B translate the complete RV, so the bar is Griffith's, not Geldner's (H1910
+    # requirement 4). Note they are `present` at 10.106.5-8, the four stanzas Geldner
+    # omits -- but what they print there is transliterated Vedic, not English: they
+    # decline to translate rather than skip. Measured, and load-bearing for the
+    # divergence typer, which must not read that as an English rendering.
+    'jamison_brereton_en_2014': 0,
 }
+# The loci where J-B print transliteration in place of a translation (see above).
+JB_UNTRANSLATED_LOCATIONS = {'10.106.5', '10.106.6', '10.106.7', '10.106.8'}
 EXPECTED_GELDNER_ABSENT_LOCATIONS = {'10.106.5', '10.106.6', '10.106.7', '10.106.8'}
 
 
@@ -326,6 +345,7 @@ SCHEMA_DOC = {
             "enum": [
                 "grassmann_de_1876", "geldner_de_1951",
                 "elizarenkova_ru_1989", "griffith_en_1896",
+                "jamison_brereton_en_2014",
             ],
         },
         "divergence_class": {
@@ -360,6 +380,7 @@ SCHEMA_DOC = {
                         "geldner_de_1951": {"$ref": "#/$defs/translation_status"},
                         "elizarenkova_ru_1989": {"$ref": "#/$defs/translation_status"},
                         "griffith_en_1896": {"$ref": "#/$defs/translation_status"},
+                        "jamison_brereton_en_2014": {"$ref": "#/$defs/translation_status"},
                     },
                 },
                 "divergence": {

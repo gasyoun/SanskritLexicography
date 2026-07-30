@@ -33,7 +33,11 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-GITHUB_ROOT = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+from rv_org_root import find_github_root  # noqa: E402
+
+GITHUB_ROOT = find_github_root(HERE)
 COMMENTARY_DIR = os.path.join(
     GITHUB_ROOT, 'SamudraManthanam', 'Index', 'lib', 'x86_64-win64', 'add', 'To_add')
 PWG_RU_DIR = os.path.normpath(os.path.join(HERE, '..', 'pwg_ru'))

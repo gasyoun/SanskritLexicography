@@ -1,8 +1,99 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 29-07-2026_
+_Created: 09-07-2026 · Last updated: 30-07-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 30-07-2026 — H1910: Jamison–Brereton 2014 as the fifth column, Renou EVP as a witness
+
+Opus 5 1M (`claude-opus-5[1m]`),
+[H1910](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1910-Opus_RussianTranslation_rv-jamison-brereton-renou-fifth-witness_29.07.26.md).
+J–B extracted by [`src/rv_jamison_brereton_extract.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_jamison_brereton_extract.py)
+from the archive.org OCR of all three print volumes (an INPUT, never committed); Renou joined
+from the committed H1843 citation index by
+[`src/rv_renou_evp_witness.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_renou_evp_witness.py).
+
+### J–B coverage — the acceptance bar was Griffith's, not Geldner's
+
+J–B translate the complete RV, so anything short of 10,552 with 0 unmatched means the parser
+is wrong rather than the book incomplete (handoff requirement 4).
+
+| Gate | Result |
+|---|---:|
+| Canonical loci covered | **10,552 / 10,552** |
+| Unmatched loci | **0** |
+| Duplicate loci | 0 |
+| Loci outside the canonical set | 0 |
+| Hymns short of their canonical stanza count | 0 |
+| Hymn headings anchored from the OCR | 1,020 / 1,028 |
+| Hymns resolved positionally (heading destroyed by OCR) | 8 |
+| Commentary leaks (J–B introductions/notes inside a stanza) | **0** |
+| Stanzas ending in page/running-head furniture | **0** |
+
+### Text-quality controls, against the Griffith layer as an independent control
+
+Griffith was extracted by a different script from a different source, so its rates are a
+usable baseline rather than a self-comparison. Every defect below is one a locus count cannot
+see — each held at 10,552/10,552 while it was present, which is the point.
+
+| Measure | J–B 2014 | Griffith 1896 (control) |
+|---|---:|---:|
+| Stanzas | 10,552 | 10,552 |
+| Characters of text | 1,937,825 | 1,618,483 |
+| Median stanza length | 188 | — |
+| Longest stanza | 454 | — |
+| No terminal punctuation | 264 (2.50%) | 197 (1.87%) |
+
+| Defect found during the run | Extent | Longest stanza |
+|---|---:|---:|
+| Next hymn's whole heading block swallowed (OCR-destroyed heading) | 8 hymns | 5,751 |
+| `Mandala N` section introduction swallowed at a mandala boundary | 9 stanzas | 4,387 |
+| Hymn-group introduction swallowed (no heading, no metre line) | 11 detected | 2,434 |
+| Page number + running head embedded mid-text | 1,031 open-ended (9.77%) | — |
+| Mangled running head glued to the last word (`V111.78`, `VI.43^4`) | 16 stanzas | — |
+| **After the fixes** | **0** | **454** |
+
+### Renou EVP as a locus-keyed witness — not a sixth column
+
+EVP is a selective commentary, so a `translations` column would be mostly
+`absent_from_source` and would corrupt `omitted_by_one`, whose meaning rests on absence being
+meaningful.
+
+| Measure | Value |
+|---|---:|
+| Renou mentions in the committed H1843 index | 2,213 |
+| `locus_unresolved` (front matter / hymn-group intro) | 31 |
+| Resolved onto a locus | 2,182 |
+| — of those, carrying a quoted French fragment | 458 |
+| **Distinct loci carrying a Renou witness** | **1,908** |
+| Loci with at least one quoted fragment | 431 |
+| Of the 100 sampled gate-sheet items, those at a Renou locus | 14 |
+
+Per mandala (loci with a witness): 1:457 · 2:116 · 3:160 · 4:116 · 5:156 · 6:110 · 7:169 ·
+8:122 · 9:223 · 10:279.
+
+The 458 quoted figure sits one below H1843's measured 459 because one quoted mention is
+`locus_unresolved` and so carries no locus. Neither reconciles to the H1843 spec's published
+368 — H1843 logged that discrepancy rather than tuning to match, and this pass does not
+re-open it.
+
+### Scope impact of the fifth translator
+
+| Quantity | Before (4 translators) | After (5) |
+|---|---:|---:|
+| Translator pairs (n choose 2) | 6 | **10** |
+| Pairs decided deterministically by Geldner's gap | 3 of 6 | **4 of 10** |
+| Flat TSV mirror rows | 659,032 | **823,790** |
+| Flat TSV mirror size | 173.6 MB | **216.6 MB** (gitignored; 500-row sample committed) |
+| Labels for a full typing run | 63,312 | **105,520** |
+| Cost at the measured pilot rate ($1.06/12,000 labels) | ≈ $5.6 | **≈ $9.3** |
+
+### One measured philological fact worth keeping
+
+At **RV 10.106.5–8** — the four stanzas Geldner omits — J–B print *transliterated Vedic*,
+not English: they decline to translate rather than skip. Those loci are therefore `present`
+in the spine but are not an English rendering, and the divergence typer must not read them as
+one. Pinned by `test_jb_untranslated_loci_are_present_not_absent`.
 
 ## 29-07-2026 — H1847: NWS tag vocabulary — in-card legend + faceted browse
 

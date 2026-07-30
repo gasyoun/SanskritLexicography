@@ -1,3 +1,7 @@
 rv_translation_spine.tsv
 h1844/wordlevel.mbert.jsonl
 h1844/wordlevel.labse.jsonl
+# H1910: the Jamison-Brereton archive.org OCR is an INPUT, not an artifact -- 4.2 MB of
+# in-copyright print text. Regenerate with the curl command in the docstring of
+# src/rv_jamison_brereton_extract.py (use /download/, not /stream/).
+sources/

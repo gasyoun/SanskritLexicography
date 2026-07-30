@@ -4,7 +4,7 @@ r"""rv_divergence_type.py -- typed divergence taxonomy over the RV spine (H1844 
 Consumes `pwg_ru/rv_stanza_translations.jsonl` (H1843 wave 1a) and emits one typed
 label per (stanza x translator pair) over the five classes of ARCHITECTURE Sec.3.5:
 `agreement` / `lexical_variant` / `semantic_shift` / `omitted_by_one` / `added_by_one`.
-Four translators give six ordered-by-convention pairs.
+Five translators give ten ordered-by-convention pairs (H1910; four gave six).
 
 Two label sources, and the split is the point:
 
@@ -63,14 +63,17 @@ FULL_OUT = os.path.join(PWG_RU_DIR, 'rv_divergence.jsonl')
 sys.path.insert(0, os.path.join(HERE, 'pilot', 'h1210'))
 import deepseek_arm as ds_arm  # noqa: E402
 
+# H1910: five translators, so 5-choose-2 = 10 ordered-by-convention pairs, not 6.
 TRANSLATORS = [
     'grassmann_de_1876', 'geldner_de_1951', 'elizarenkova_ru_1989', 'griffith_en_1896',
+    'jamison_brereton_en_2014',
 ]
 TRANSLATOR_LABEL = {
     'grassmann_de_1876': 'Grassmann 1876-77, German',
     'geldner_de_1951': 'Geldner 1951-57, German',
     'elizarenkova_ru_1989': 'Elizarenkova 1989-99, Russian',
     'griffith_en_1896': 'Griffith 1896, English',
+    'jamison_brereton_en_2014': 'Jamison-Brereton 2014, English',
 }
 PAIRS = [(a, b) for i, a in enumerate(TRANSLATORS) for b in TRANSLATORS[i + 1:]]
 PAIR_KEYS = ['%s|%s' % (a, b) for a, b in PAIRS]
@@ -453,11 +456,13 @@ def selftest():
             'geldner_de_1951': {'status': 'absent_from_source', 'text': None},
             'elizarenkova_ru_1989': {'status': 'present', 'text': 'B'},
             'griffith_en_1896': {'status': 'present', 'text': 'C'},
+            'jamison_brereton_en_2014': {'status': 'present', 'text': 'D'},
         },
     }
     det = deterministic_pairs(stanza)
-    # every pair involving geldner is decided without a model; the other three are not
-    assert len(det) == 3, det
+    # Every pair involving geldner is decided without a model; the others are not. With
+    # five translators that is 4 of the 10 pairs, not 3 of 6 (H1910).
+    assert len(det) == 4, det
     assert all(v['class'] == 'omitted_by_one' and v['method'] == 'deterministic'
                for v in det.values()), det
     assert all('geldner' in k for k in det), det
@@ -468,7 +473,9 @@ def selftest():
                   'translations': {k: dict(full) for k in TRANSLATORS}}
     assert deterministic_pairs(allpresent) == {}
 
-    assert len(PAIRS) == 6 and len(set(PAIR_KEYS)) == 6
+    assert len(TRANSLATORS) == 5
+    assert len(PAIRS) == 10 and len(set(PAIR_KEYS)) == 10
+    assert set(TRANSLATOR_LABEL) == set(TRANSLATORS)
     assert set(COARSE_MAP) == set(FIVE_CLASSES)
     assert normalise_class('Semantic Shift') == 'semantic_shift'
     assert normalise_class('lexical-variant') == 'lexical_variant'
@@ -494,7 +501,8 @@ def selftest():
     assert cohens_kappa([])[2] == 0
 
     print('rv_divergence_type selftest OK -- deterministic omission arm (Geldner 10.106.5 '
-          'decides 3/6 pairs with no model), seeded stratified sampler, class normaliser, kappa')
+          'decides %d/%d pairs with no model), seeded stratified sampler, class '
+          'normaliser, kappa' % (len(det), len(PAIRS)))
     return 0
 
 

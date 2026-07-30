@@ -45,9 +45,13 @@ from review_sheet_standard import standard_config   # noqa: E402
 import rv_divergence_type as dv                     # noqa: E402
 
 STANZA_PATH = os.path.join(PWG_RU_DIR, 'rv_stanza_translations.jsonl')
-GENERATED = '2026-07-29'
-SHEET_ID = 'rv_divergence_gate_2026-07-29-v4'
+# v5 (H1910): five translators, and the Renou witness band. A NEW id on purpose -- v4 was
+# voted against a locked HTML whose content_hash must stay valid, so this must not
+# overwrite it.
+GENERATED = '2026-07-30'
+SHEET_ID = 'rv_divergence_gate_2026-07-30-v5'
 EXPLAINED = os.path.join(PWG_RU_DIR, 'h1844', 'rv_divergence_explained.jsonl')
+RENOU_WITNESS = os.path.join(PWG_RU_DIR, 'rv_renou_evp_witness.jsonl')
 DEFAULT_N = 100
 DEFAULT_SEED = 1844
 
@@ -64,14 +68,28 @@ TRANSLATOR_CHRONO = {
     'griffith_en_1896': (1896, '1896', 'Гриффит'),
     'geldner_de_1951': (1951, '1951–57', 'Гельднер'),
     'elizarenkova_ru_1989': (1989, '1989–99', 'Елизаренкова'),
+    'jamison_brereton_en_2014': (2014, '2014', 'Джеймисон–Бреретон'),
 }
 
-# R4 excluded Jamison–Brereton 2014 from wave 1 (in copyright, sample-scale reference
-# only). The consequence has to be stated on the sheet rather than left implicit: our
-# ONLY English witness is 118 years older than the current scholarly standard, so an
-# English-side "divergence" is measured against Victorian English, not against modern
-# English Vedic scholarship.
-LATEST_EN = 'Джеймисон–Бреретон 2014'
+# Renou belongs in the CHRONOLOGY but not in TRANSLATORS (H1910). EVP is a selective
+# commentary, so it is a locus-keyed witness; a `translations` column for it would be
+# mostly `absent_from_source` and would corrupt `omitted_by_one`, whose meaning depends on
+# absence being meaningful. Kept in a separate map on purpose: anything merged into
+# TRANSLATOR_CHRONO becomes pair-eligible via dv.PAIRS, which is exactly what must not
+# happen here. He sits between Geldner 1951-57 and Elizarenkova 1989-99, which is why he
+# matters -- she argues with him constantly.
+WITNESS_CHRONO = {
+    'renou_fr_1955': (1955, '1955–69', 'Рену'),
+}
+CHRONO_ALL = dict(TRANSLATOR_CHRONO, **WITNESS_CHRONO)
+
+# H1908's asymmetry note is RE-DERIVED here, not carried over (H1910). It used to read:
+# "our only English witness is Griffith 1896, 118 years older than the current standard,
+# because R4 excluded Jamison-Brereton as in-copyright". R4 is lifted and J-B is now a
+# full column, so that sentence is simply false. What survives the change is the opposite,
+# and sharper: Griffith is no longer "the English column" but the VICTORIAN English one,
+# and a Griffith↔J-B divergence is a 118-year gap between two English renderings.
+EN_TRANSLATORS = ('griffith_en_1896', 'jamison_brereton_en_2014')
 
 CLASS_HELP = {
     'agreement': 'одно и то же содержание; разные слова и разные языки — норма',
@@ -153,23 +171,50 @@ def _chronology(a, b):
     parts.append('%s мог знать перевод %s — расхождение здесь скорее '
                  '<i>сознательный отход</i>, чем независимое чтение.'
                  % (esc(ln), esc(en)))
-    if 'griffith_en_1896' in (a, b):
-        parts.append('<b>Единственный английский свидетель здесь — Гриффит 1896</b>, '
-                     'а современный научный стандарт по-английски — %s, '
-                     'намеренно не включённый в волну 1 (R4: в копирайте, только '
-                     'выборочно). Английская сторона расхождения меряется '
-                     'викторианским английским, а не современной ведологией.'
-                     % esc(LATEST_EN))
+    if a in EN_TRANSLATORS and b in EN_TRANSLATORS:
+        parts.append('<b>Оба свидетеля здесь английские</b>, и между ними 118 лет: '
+                     'Гриффит 1896 — викторианский, Джеймисон–Бреретон 2014 — '
+                     'современный научный стандарт. Расхождение здесь — это не разница '
+                     'языков, а разница прочтений внутри одного языка.')
+    elif 'griffith_en_1896' in (a, b):
+        parts.append('<b>Гриффит 1896 — это <i>викторианский</i> английский столбец</b>, '
+                     'а не «английский» как таковой: с 2014 года в слое есть и '
+                     'Джеймисон–Бреретон. Английская сторона этого расхождения — '
+                     'старая, и её стоит сверить с Дж.–Б. в блоке ниже.')
     return '<div class="rv-chrono">%s</div>' % ' '.join(parts)
 
 
-def _question(cls, ex, a, b):
+def _renou_band(witness):
+    """The Renou witness band: what Elizarenkova was arguing with at this locus.
+
+    Renou is not a rendering to judge, so he never appears as a votable panel. But an
+    Elizarenkova↔Geldner divergence at a locus where she quotes Renou is very likely her
+    following Renou AGAINST Geldner, and a reviewer should see that in one glance rather
+    than reconstruct it.
+    """
+    if not witness:
+        return ''
+    year, label, name = WITNESS_CHRONO['renou_fr_1955']
+    bits = ['<b>Свидетель Рену (EVP %s):</b> Елизаренкова ссылается на него в этом '
+            'месте %d раз.' % (esc(label), witness['mention_count'])]
+    for q in witness.get('quotes_fr') or []:
+        bits.append('<span class="rv-renou-q">«%s»</span>' % esc(q))
+    if not witness.get('quotes_fr'):
+        bits.append('<span class="muted">Прямой французской цитаты здесь нет — только '
+                    'упоминание.</span>')
+    return '<div class="rv-renou">%s</div>' % ' '.join(bits)
+
+
+def _question(cls, ex, a, b, witness=None):
     """The card's ask. v1 printed only the class name and made the reviewer hunt for
     the difference; this states WHAT the difference is, in Russian, above the fold."""
     why = (ex.get('why_ru') or '').strip()
-    parts = [_chronology(a, b),
-             'Модель присвоила класс <b>%s</b> — <i>%s</i>.'
-             % (esc(cls), esc(CLASS_HELP.get(cls, '')))]
+    parts = [_chronology(a, b)]
+    band = _renou_band(witness)
+    if band:
+        parts.append(band)
+    parts.append('Модель присвоила класс <b>%s</b> — <i>%s</i>.'
+                 % (esc(cls), esc(CLASS_HELP.get(cls, ''))))
     if why:
         parts.append('<div class="rv-why"><b>В чём разница:</b> %s</div>' % esc(why))
     else:
@@ -218,7 +263,23 @@ def highlight(text, span, verbatim):
     return marked.replace('\n', '<br>'), True
 
 
-def build_items(picked, stanzas, explained):
+def load_renou_witness(path=RENOU_WITNESS):
+    """location -> witness record. Absent file is not an error: the witness is an
+    enrichment, and a sheet built without it must still be a valid sheet."""
+    out = {}
+    if not os.path.exists(path):
+        return out
+    with io.open(path, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                r = json.loads(line)
+                out[r['location']] = r
+    return out
+
+
+def build_items(picked, stanzas, explained, witnesses=None):
+    witnesses = witnesses or {}
     items = []
     for location, pair_key, entry in picked:
         a, b = pair_key.split('|')
@@ -247,14 +308,21 @@ def build_items(picked, stanzas, explained):
                 ctx.append('<b>%s:</b> %s' % (esc(dv.TRANSLATOR_LABEL[key]),
                                               esc(t['text'] or '').replace('\n', ' / ')))
         if ctx:
-            panels.append(('Остальные два перевода (для контекста, не голосуются)',
+            # Count it rather than hardcoding "два": with J-B the layer has five
+            # translators, so a pair leaves three others, not two (H1910).
+            panels.append(('Остальные переводы — %d (для контекста, не голосуются)'
+                           % len(ctx),
                            '<div class="rv-ctx">%s</div>' % '<br><br>'.join(ctx)))
+        witness = witnesses.get(location)
+        badges = [entry['class'], 'маṇḍала %d' % stanza['mandala']]
+        if witness:
+            badges.append('Рену' + (' ⟨цитата⟩' if witness.get('has_quote') else ''))
         items.append({
             'id': '%s|%s' % (location, pair_key),
             'filt': entry['class'],
             'title': 'RV %s — %s ↔ %s' % (location, a.split('_')[0], b.split('_')[0]),
-            'badges': [entry['class'], 'маṇḍала %d' % stanza['mandala']],
-            'question': _question(entry['class'], ex, a, b),
+            'badges': badges,
+            'question': _question(entry['class'], ex, a, b, witness),
             'note_placeholder': 'reject → почему именно этот класс неверен',
             'panels': panels,
         })
@@ -286,7 +354,12 @@ def main():
     if missing:
         print('WARN: %d of %d items have no explanation and will render bare'
               % (len(missing), len(picked)))
-    items = build_items(picked, stanzas, explained)
+    witnesses = load_renou_witness()
+    print('Renou witness loci loaded: %d' % len(witnesses))
+    hits = sum(1 for p in picked if p[0] in witnesses)
+    print('  of the %d sampled items, %d sit at a locus Elizarenkova cites Renou at'
+          % (len(picked), hits))
+    items = build_items(picked, stanzas, explained, witnesses)
 
     dist = collections.Counter(r[2]['class'] for r in rows)
     total = sum(dist.values())
@@ -316,12 +389,20 @@ def main():
             'не смогла указать место в тексте буквально, карточка честно пишет об этом '
             'вместо подсветки — <b>%d карточек из %d</b>.<br><br>'
             '<b>Хронология.</b> Переводы идут Грассман 1876–77 → Гриффит 1896 → '
-            'Гельднер 1951–57 → Елизаренкова 1989–99, и каждый более поздний мог читать '
-            'более ранних. Поэтому расхождение позднего с ранним — чаще <i>сознательный '
-            'отход</i>, чем независимое чтение; на карточке пара показана в хронологическом '
-            'порядке. Единственный английский свидетель здесь — Гриффит 1896, а современный '
-            'стандарт (Джеймисон–Бреретон 2014) в волну 1 не входит, поэтому английская '
-            'сторона меряется викторианским английским.<br><br>'
+            'Гельднер 1951–57 → Елизаренкова 1989–99 → Джеймисон–Бреретон 2014, и каждый '
+            'более поздний мог читать более ранних. Поэтому расхождение позднего с ранним — '
+            'чаще <i>сознательный отход</i>, чем независимое чтение; на карточке пара '
+            'показана в хронологическом порядке. Английских свидетелей теперь два, и между '
+            'ними 118 лет: Гриффит 1896 — это <i>викторианский</i> английский, а не '
+            '«английский» вообще; современный научный стандарт — Джеймисон–Бреретон 2014.'
+            '<br><br>'
+            '<b>Рену.</b> Рену (EVP 1955–69) стоит в хронологии между Гельднером и '
+            'Елизаренковой, но он <i>не</i> шестой столбец: EVP — выборочный комментарий, '
+            'а не полный перевод, и столбец для него был бы почти сплошь '
+            '<code>absent_from_source</code>. Поэтому он показан отдельной полосой-'
+            'свидетелем там, где Елизаренкова на него ссылается — расхождение '
+            'Елизаренкова↔Гельднер в таком месте, скорее всего, значит, что она идёт за '
+            'Рену против Гельднера.<br><br>'
             '<b>Выборка</b> стратифицирована по классу, а не равномерна: в пилоте классы '
             'распределены как %s, и равномерная выборка ушла бы почти целиком на '
             'подтверждение одного класса.<br><br>'

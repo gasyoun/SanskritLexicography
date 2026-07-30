@@ -18,6 +18,7 @@
     "-up": 0.74
   },
   "by_work": {
+    "rigveda-jamison-brereton-en-2014": 0.92,
     "bhagavadgita-sementsov": 0.9,
     "bhagavadgita-smirnov": 0.88,
     "bhagavadgita-erman": 0.88,
@@ -28,5 +29,6 @@
     "rigveda-elizarenkova-ru-1989": 0.78,
     "rigveda-griffith-en-1896": 0.68
   },
-  "_rv_witness_comment": "H1844 W1.12 -- per-translator priors for the corpus_translation_witness tier (trust_level: corpus_translation_witness, reuse_policy: suggest_only). Keyed by WORK, not by language, so the tier serves ru and en alike (R7) and a third language is a new row, not a rewrite. Ranked on scholarly standing rather than convenience: Geldner 1951-57 and Elizarenkova 1989-99 are the modern critical translations and sit above the generic rigveda 0.72 prior; Grassmann 1876-77 is a century older and metrically constrained; Griffith 1896 is the lowest of the four -- Victorian, freely padded, and the one layer whose supplied bracketed material this layer's own divergence typing has to treat as added_by_one."
+  "_rv_witness_comment": "H1844 W1.12 -- per-translator priors for the corpus_translation_witness tier (trust_level: corpus_translation_witness, reuse_policy: suggest_only). Keyed by WORK, not by language, so the tier serves ru and en alike (R7) and a third language is a new row, not a rewrite. Ranked on scholarly standing rather than convenience: Geldner 1951-57 and Elizarenkova 1989-99 are the modern critical translations and sit above the generic rigveda 0.72 prior; Grassmann 1876-77 is a century older and metrically constrained; Griffith 1896 is the lowest of the four -- Victorian, freely padded, and the one layer whose supplied bracketed material this layer's own divergence typing has to treat as added_by_one.",
+  "_h1910_jb_comment": "H1910 -- Jamison-Brereton 2014 enters at 0.92, deliberately the HIGHEST row in by_work: it is the current scholarly standard for the Rigveda in English. Two caveats a consumer of this weight must know, because the prior alone hides them. (1) The layer is derived from an archive.org OCR of the print volumes, not from a publisher text, so stanzas carry OCR noise -- 2.50 % of them end without terminal punctuation against 1.87 % for the independently-extracted Griffith layer, and the printed pada line structure is not recoverable at all. The prior expresses trust in the TRANSLATION, not in the fidelity of this transcription of it. (2) At RV 10.106.5-8 J-B print transliterated Vedic instead of English -- they decline to translate rather than omit -- so those four loci are `present` but are not an English rendering."
 }
