@@ -327,11 +327,16 @@ def one_run(tag, keep=False, prepare_mode='batch', record_mode='batch'):
     store = os.path.join(sandbox, 'store.jsonl')
     for d in (coord_dir, profile_dir, tm_dir):
         os.makedirs(d)
+    # H1811 H10: sandbox the merged.md/pilot_review.md sidecars too — before this,
+    # the "hermetic" bench still rewrote live src/pilot/output via _pilot_collect.
+    pilot_out = os.path.join(sandbox, 'pilot_output')
+    os.makedirs(pilot_out)
     env = dict(os.environ,
                PWG_COORDINATOR_DIR=coord_dir, PWG_RU_STORE=store, PWG_RU_TM_DIR=tm_dir,
                # H1386 P3f: every pipeline subprocess reads the SANDBOX input dir and
                # appends events to the sandbox ledger -- never the live checkout's.
                PWG_INPUT_DIR=INPUT_DIR,
+               PWG_OUTPUT_DIR=pilot_out,
                PWG_EVENTS_PATH=os.path.join(sandbox, 'dashboard_events.jsonl'),
                PYTHONIOENCODING='utf-8')
 

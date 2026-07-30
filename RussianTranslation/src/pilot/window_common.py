@@ -15,7 +15,10 @@ REPO = os.path.dirname(SRC)
 # pipeline stage at a SANDBOX input dir instead of the live shared src/pilot/input/.
 # Unset (production) resolves exactly as before.
 INP = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'input')
-OUT = os.path.join(HERE, 'output')
+# H1811 H10: PWG_OUTPUT_DIR is the output-side twin of PWG_INPUT_DIR (H1386 P3f) —
+# without it, sandboxed runs still read/write live src/pilot/output sidecars
+# (merged.md, window_ledger.jsonl, judge_sample.keys.txt).
+OUT = os.environ.get('PWG_OUTPUT_DIR') or os.path.join(HERE, 'output')
 # Canonical live production harness (batched + masked, gen_opt_harness2.py).
 # The legacy per-card run_pilot_wf.opt.js is deprecated; consumers point here.
 OPT_HARNESS = os.path.join(HERE, 'run_pilot_wf.opt2.js')

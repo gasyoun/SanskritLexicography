@@ -21,7 +21,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))          # .../src/pilot
 SRC = os.path.dirname(HERE)                                # .../src
-OUT = os.path.join(HERE, 'output')
+OUT = os.environ.get('PWG_OUTPUT_DIR') or os.path.join(HERE, 'output')  # H1811 H10
 # H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
 INPUT_DIR = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'input')  # .../src/pilot/input (portrait sidecars)
 
@@ -232,9 +232,20 @@ def quarantine(key):
 
 
 def collect_cards(wf, protected):
-    env = os.environ.copy()
-    env['PILOT_COLLECT_PROTECTED'] = ','.join(sorted(protected))
-    return run_py([COLLECT, wf], env=env)
+    """H1811 S2: run the collector IN-PROCESS via run_py_inproc — the last
+    subprocess gate left after H1339 Phase 3. _pilot_collect reads
+    PILOT_COLLECT_PROTECTED at module top level, so set it around the runpy
+    call and restore it after (run_py_inproc is documented sequential-only;
+    os.environ is process-global exactly like the sys.argv/cwd it already swaps)."""
+    old = os.environ.get('PILOT_COLLECT_PROTECTED')
+    os.environ['PILOT_COLLECT_PROTECTED'] = ','.join(sorted(protected))
+    try:
+        return run_py_inproc([COLLECT, wf])
+    finally:
+        if old is None:
+            os.environ.pop('PILOT_COLLECT_PROTECTED', None)
+        else:
+            os.environ['PILOT_COLLECT_PROTECTED'] = old
 
 
 def run_nws_gate(keys, protected):

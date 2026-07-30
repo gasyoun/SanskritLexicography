@@ -108,19 +108,32 @@ def component_sha(patterns, root=ROOT):
     return h.hexdigest()[:16]
 
 
+_STAMP_MEMO = {}
+
+
 def stamp(manifest=None, model_version=None, root=ROOT):
     """Build the ``provenance.pipeline`` dict to embed in a translated row.
 
     Flat keys per component (``<name>_version`` / ``<name>_sha``) plus an echoed
     ``model_version`` for convenience; the canonical model id still lives in
     ``provenance.model_version``.
+
+    H1811 S3: stamp() runs per promoted row (30 identical component_sha calls per
+    batch promote, ~27 % of the batch's in-process time) — memoize the content
+    hash per process. check()/freeze() call component_sha() directly and always
+    read fresh bytes, so drift detection and freeze stay correctness-exact.
     """
     manifest = manifest or load_manifest()
     out = {'schema': PIPELINE_SCHEMA}
     for name in COMPONENTS:
         comp = manifest['components'][name]
         out['%s_version' % name] = comp['version']
-        out['%s_sha' % name] = component_sha(comp['files'], root)
+        key = (tuple(comp['files']), os.path.abspath(root))
+        sha = _STAMP_MEMO.get(key)
+        if sha is None:
+            sha = component_sha(comp['files'], root)
+            _STAMP_MEMO[key] = sha
+        out['%s_sha' % name] = sha
     if model_version:
         out['model_version'] = model_version
     return out
@@ -417,6 +430,11 @@ def selftest():
     open(os.path.join(d, 'pwg_ru_prompts', '1.txt'), 'w').write('p-EDITED')
     drifts = check(frozen, root=d)
     assert len(drifts) == 1 and drifts[0]['component'] == 'prompt', drifts
+    # H1811 S3: stamp() memoizes per process (fresh check() above still saw the edit)
+    st2 = stamp(manifest, model_version='claude-sonnet-5', root=d)
+    assert st2['prompt_sha'] == st['prompt_sha'], 'stamp memo must return the first hash'
+    assert component_sha(manifest['components']['prompt']['files'], d) != st['prompt_sha'], \
+        'component_sha itself always reads fresh bytes'
     # staleness: a row below min_valid and a fresh row
     stale = stale_reasons({'prompt_version': '0.9.0', 'glossary_version': '1.0.0',
                            'script_version': '2.0.0'}, frozen)

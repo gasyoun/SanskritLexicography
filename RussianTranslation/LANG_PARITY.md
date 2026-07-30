@@ -110,7 +110,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "ad72df81bc7299a870edfdc67f6d81b45e4acfb1d79ea9976355c1e4b488da94",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -131,7 +131,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pwg_mask.py": "ad72df81bc7299a870edfdc67f6d81b45e4acfb1d79ea9976355c1e4b488da94",
       "src/pilot/prompt_rule_audit.py": "b235136ea95a7c77eb2cee0a3a6bc393c75df221ba587253a7949d9e3cbe4927",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -154,7 +154,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
       "src/pilot/headless_worker.py": "bb6bc5468a3fca6e3257022be7b5878adff190a9a557206e5597c21d76e36c2d",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -190,7 +190,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -209,7 +209,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -228,7 +228,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -352,7 +352,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/audit_coverage.py": "a60b8c0ed3b0022a6527a029d1e818cedab3dfcbbb545fc2c78b6a5dd514dcfa",
       "src/pilot/prompt_rule_audit.py": "b235136ea95a7c77eb2cee0a3a6bc393c75df221ba587253a7949d9e3cbe4927",
-      "src/pilot/audit_window.py": "979d8f98e889dd3444320dc7f4b9de177610b7e7fb139f836f98be0a7cffc21b",
+      "src/pilot/audit_window.py": "63403fc426374533d7765a627f7c9cc5c727aca572e8bdce60ad7b6c08a49e73",
       "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd"
     }
   },
@@ -373,7 +373,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1618 closed EN half (fsha emit + --write-requeue).",
     "tracking": "Uprava/handoffs/archive/H304-Fable_RussianTranslation_coordinator-driver-remake_07.07.26.md (EN-emitter port is the recorded follow-up)",
     "verified_sha256": {
-      "src/pilot/audit_window.py": "979d8f98e889dd3444320dc7f4b9de177610b7e7fb139f836f98be0a7cffc21b",
+      "src/pilot/audit_window.py": "63403fc426374533d7765a627f7c9cc5c727aca572e8bdce60ad7b6c08a49e73",
       "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
       "src/pilot/requeue_from_audit.py": "511f4bb258a27bfd03a755e7512c2e25196fdbdd99e2aa5f712d68e082c2eb00",
       "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd"
@@ -431,7 +431,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -450,7 +450,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -488,7 +488,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -547,7 +547,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
       "src/pilot/perf_preflight.py": "3dc1d44f0054da4278e7c6eb34f03477b697431e22bcf7ea0c201afad2009e13",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -576,9 +576,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/preflight_remaining_gates.py": "00386c837b97986c9702abfceed9c29534736c3df3063af202ddfaae6b078b8f",
       "src/release_readiness.py": "db38a870bbc8b5dbe694e706e4a7b9089ba41211a3881ad9a1bd4eb02950c8a9",
       "save_and_audit.py": "e1d7a3b6c5a8c47dbc414dbcf991e9ead82b76a013e4624cffe76066e576c8b6",
-      "src/pilot/audit_window.py": "979d8f98e889dd3444320dc7f4b9de177610b7e7fb139f836f98be0a7cffc21b",
+      "src/pilot/audit_window.py": "63403fc426374533d7765a627f7c9cc5c727aca572e8bdce60ad7b6c08a49e73",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -597,7 +597,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/translation_memory.py": "e5014c7a872ca6c89458a052690de45576fae15e09094be72bfa7aa30b1d0b76",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -615,7 +615,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/corpus_gate.py": "323af2fa393955f320d534111a92cf14270bb78c1044252b5858e7c39e8047ea",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -634,7 +634,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/ls_resolver.py": "d7c8da35c6a420b9f9431dd1cb672ed12431e2b27830b9b560a60cff42509eec",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -764,7 +764,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/promote_lock.py": "f8dda14a7423dfecac77893f10f7735361db8bd6c79297172243aafaf1d28ef4",
       "src/promote_final_cards.py": "ec11849e0f3a77515862bfd0baeb059e0d44706eb476a500bdd56d538bb2ec32",
       "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -785,11 +785,11 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H336 (08-07-2026). window_reports.write_reports/write_window_status already took an out_dir parameter (pre-existing --out-dir escape hatch); --window-tag is a thin, lang-agnostic sugar layer over that same parameter computed once in audit_window.py and threaded through unchanged to requeue_from_audit.py/root_window_status.py. Neither RU nor EN branch differently. Pinned by test_audit_window_tag_routing.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/audit_window.py": "979d8f98e889dd3444320dc7f4b9de177610b7e7fb139f836f98be0a7cffc21b",
+      "src/pilot/audit_window.py": "63403fc426374533d7765a627f7c9cc5c727aca572e8bdce60ad7b6c08a49e73",
       "src/pilot/requeue_from_audit.py": "511f4bb258a27bfd03a755e7512c2e25196fdbdd99e2aa5f712d68e082c2eb00",
       "src/pilot/root_window_status.py": "ab13516c5ffa824ddc45b2dc0d482c09f06de57d5963dcc31d73ecc638a116f3",
       "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -812,13 +812,13 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H336 (08-07-2026). append_jsonl_line is a single shared primitive (window_common.py) used identically by every JSONL append site regardless of --lang; the TM denylist stores 'ru'/'en' addresses in the same file with no per-language code path. Pinned by test_denylist_torn_line_warns.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/window_common.py": "96ec3a72e189bc48bab7c464189cfaad0b91c10a31e996f3d9dcb45968be45af",
+      "src/pilot/window_common.py": "3a8a51917c9b898d9b3d262aaf9339e14fb30cddbb507242266858aec8727331",
       "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
       "src/pilot/requeue_from_audit.py": "511f4bb258a27bfd03a755e7512c2e25196fdbdd99e2aa5f712d68e082c2eb00",
       "src/pilot/layer_versions.py": "42e44f32db2628e3137522f5d15827cf0641b642bdacfdb76be04cdd41eaefba",
       "src/pilot/failure_capture.py": "c0ca940b54fc326e0a0b67320758c81aa5a48dd29247250996c38a85a7786e4d",
       "src/pilot/translation_memory.py": "e5014c7a872ca6c89458a052690de45576fae15e09094be72bfa7aa30b1d0b76",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -838,7 +838,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
       "src/annotation_report.py": "747f46c0c213b178cfeba22c04314696f4312a55eaf738d946dac08ead06c9d0",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -856,8 +856,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "09-07-2026 orchestration audit. The coordinator governs Workflow leases before language-specific promotion/audit branches; lease target/state handling and JSONL append hygiene are lang-agnostic. The expiry guard deliberately does NOT expire prepared harnesses, because H151-style prepared artifacts can wait days for Workflow capture. Pinned by test_coordinator_expired_leases_release_cap.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/coordinator.py": "016c91c2d3b650a0fb7e33df6a3dd82f5d4ab95d32d8fd293dce76ec8044e091",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/coordinator.py": "9ae680042522200f10fb31afe74d7d76410d2bf2ba4019dc677f54270e90bbe7",
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -894,7 +894,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/koch_xref.py": "b6b3c3524f446862a25cf0f086125d53977dabf02a26cc6724972d0a05c69013",
       "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -913,7 +913,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/stage2_pregate.py": "8f07422d3c416e32d1882f0777d56cc44ba781d19c8097fd9500ddefbfd22945",
-      "src/pilot/audit_window.py": "979d8f98e889dd3444320dc7f4b9de177610b7e7fb139f836f98be0a7cffc21b"
+      "src/pilot/audit_window.py": "63403fc426374533d7765a627f7c9cc5c727aca572e8bdce60ad7b6c08a49e73"
     }
   },
   {
@@ -952,7 +952,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/fri_xref.py": "6574a4cc3a10e0697dce552b3b3082418410500b8417818c712c5abb02037233",
       "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -971,7 +971,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -990,7 +990,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -1010,7 +1010,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1",
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26",
       "src/pilot/classify_run.py": "6061958062ef7ae4b673aa77b2f2c9823663d8d083a61a792fabfbefb732fb71"
     }
   },
@@ -1032,7 +1032,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/agent_budget.py": "9683c7c24903b95e39e85839d64e4623ebe68dda1271f0cf85ec60c19251cb61",
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -1091,7 +1091,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
       "src/pilot/boundedparallel_test.js": "3d768f874e13607e235e55f9300771dabd25f6173e256001e956150ce9b33401",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -1121,7 +1121,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
       "src/pilot/headless_worker.py": "bb6bc5468a3fca6e3257022be7b5878adff190a9a557206e5597c21d76e36c2d",
       "src/pilot/max_account_orchestrator.py": "a850df79a48a8b309b94411dac0d5dd42d4d88c6c484e19c6eba681fce33ec81",
-      "src/pilot/coordinator.py": "016c91c2d3b650a0fb7e33df6a3dd82f5d4ab95d32d8fd293dce76ec8044e091",
+      "src/pilot/coordinator.py": "9ae680042522200f10fb31afe74d7d76410d2bf2ba4019dc677f54270e90bbe7",
       "src/pilot/headless_worker_selftest.py": "cc32949c87bd392348a4679a4d341d5c0f887dc40e48c166576887c62587eb5c",
       "src/pilot/max_account_orchestrator_selftest.py": "8c3800e99bd14e1fdef29820a26696f64f07c71eb7fa19033d8169b7eb38f040",
       "src/pilot/no_pwg_scale_plan.py": "7e4bb02a2f2865a3447afe47cf1f4106209bdc24f403cb6dd2b8c524b6928d63",
@@ -1151,7 +1151,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
       "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
       "src/pilot/harvest_launch_stats.py": "751f4089cc2cbff3354d0f5b9506268a4ddd82e1c0f654755ffc88a11b8b6f3b",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -1170,7 +1170,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -1193,9 +1193,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/sense_count.py": "e3ad886f8751f5e5ef877bf96219140bc5c8ccca5b02bb2e33f7f6620ec5db2c",
       "src/_pilot_gen_merged.py": "0c350f3ddfb9d33edf04e7e1a9fd88939ffa886066f05116e959255b29fa381f",
-      "src/pilot/audit_window.py": "979d8f98e889dd3444320dc7f4b9de177610b7e7fb139f836f98be0a7cffc21b",
+      "src/pilot/audit_window.py": "63403fc426374533d7765a627f7c9cc5c727aca572e8bdce60ad7b6c08a49e73",
       "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -1217,7 +1217,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
       "src/pilot/sense_count.py": "e3ad886f8751f5e5ef877bf96219140bc5c8ccca5b02bb2e33f7f6620ec5db2c",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1",
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26",
       "src/pilot/accept_sensecount_test.js": "fbf8d37f8ae360c286f646361025d56adb0caeff09da30a0abfef5f6b7289937"
     }
   },
@@ -1237,7 +1237,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/cohort_clean_rates.py": "1d2a1da68eb4e897422696ec42c7845cecf9e94a2a0b8a587f8a68d3b44bfb7e",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -1292,7 +1292,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -1448,8 +1448,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/ru_style_sweep.py": "097e3780bfaac430741391514b3209c22fcf1f1cd7f473623a8fd18477e914a0",
-      "src/pilot/audit_window.py": "979d8f98e889dd3444320dc7f4b9de177610b7e7fb139f836f98be0a7cffc21b",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1",
+      "src/pilot/audit_window.py": "63403fc426374533d7765a627f7c9cc5c727aca572e8bdce60ad7b6c08a49e73",
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26",
       "src/pilot/prompt_rule_audit.py": "b235136ea95a7c77eb2cee0a3a6bc393c75df221ba587253a7949d9e3cbe4927",
       "src/pilot/run_pilot_wf.js": "b194ceb034b458ffc470e7feb2d9c921c6f391c88088e7f05a00a1e790bcf7a4"
     }
@@ -1629,7 +1629,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "save_and_audit.py": "e1d7a3b6c5a8c47dbc414dbcf991e9ead82b76a013e4624cffe76066e576c8b6",
       "src/stage2_pregate.py": "8f07422d3c416e32d1882f0777d56cc44ba781d19c8097fd9500ddefbfd22945",
-      "src/audit_translation.py": "0c8bb16fb854f18f31ca0838bc18e436eb0e75f55a28ff0e8f1336c09dcb7016"
+      "src/audit_translation.py": "c38661123456c363688a5de37c1ed166b7aa9f6a8811811a67e76724858e027a"
     }
   },
   {
@@ -1697,11 +1697,11 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/bounded_supervisor.py": "30113cd5a9c41b72f5b05d4a76b4370152f7b12c0d149311cc0e65a60f4cb717",
       "src/pilot/max_account_orchestrator.py": "a850df79a48a8b309b94411dac0d5dd42d4d88c6c484e19c6eba681fce33ec81",
       "src/pilot/translation_memory.py": "e5014c7a872ca6c89458a052690de45576fae15e09094be72bfa7aa30b1d0b76",
-      "src/pilot/coordinator.py": "016c91c2d3b650a0fb7e33df6a3dd82f5d4ab95d32d8fd293dce76ec8044e091",
+      "src/pilot/coordinator.py": "9ae680042522200f10fb31afe74d7d76410d2bf2ba4019dc677f54270e90bbe7",
       "src/promote_final_cards.py": "ec11849e0f3a77515862bfd0baeb059e0d44706eb476a500bdd56d538bb2ec32",
       "src/promote_lock.py": "f8dda14a7423dfecac77893f10f7735361db8bd6c79297172243aafaf1d28ef4",
-      "src/pilot/audit_window.py": "979d8f98e889dd3444320dc7f4b9de177610b7e7fb139f836f98be0a7cffc21b",
-      "src/pilot/window_common.py": "96ec3a72e189bc48bab7c464189cfaad0b91c10a31e996f3d9dcb45968be45af",
+      "src/pilot/audit_window.py": "63403fc426374533d7765a627f7c9cc5c727aca572e8bdce60ad7b6c08a49e73",
+      "src/pilot/window_common.py": "3a8a51917c9b898d9b3d262aaf9339e14fb30cddbb507242266858aec8727331",
       "src/pilot/dashboard_events.py": "f28f4a42568479f16d759d5e6aa63f4066c4e54920555102f77c2b0b9311bae6",
       "src/pilot/window_provenance.py": "2f1240e321004228d94f6bea7ae661a896c4bc93c60f9d47871d248766900d50",
       "src/pilot/probe_log.py": "bc5d21b48541c410eaed9b4bccb97619272b4ef542f6ce76257d247303efb067"
@@ -1727,10 +1727,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "https://github.com/gasyoun/Uprava/blob/main/handoffs/H1553-Opus_RussianTranslation_rt-fullaudit-w1-a-h1403-residues_23.07.26.md",
     "verified_sha256": {
       "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
-      "src/pilot/audit_window.py": "979d8f98e889dd3444320dc7f4b9de177610b7e7fb139f836f98be0a7cffc21b",
+      "src/pilot/audit_window.py": "63403fc426374533d7765a627f7c9cc5c727aca572e8bdce60ad7b6c08a49e73",
       "src/pilot/dashboard_events.py": "f28f4a42568479f16d759d5e6aa63f4066c4e54920555102f77c2b0b9311bae6",
       "src/promote_final_cards.py": "ec11849e0f3a77515862bfd0baeb059e0d44706eb476a500bdd56d538bb2ec32",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1",
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26",
       "src/pilot/audit_window_en.py": "19e81796a4b0482d563a45c4438927844a3ba9bab13166f77aa9f0ae0c2ab6cd"
     }
   },
@@ -1838,8 +1838,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "RU-only BY CONSTRUCTION, not by omission (26-07-2026, Opus 5 `claude-opus-5[1m]`, landed from the Codex hardening branch). The EN twin `audit_window_en.py` runs no threaded gate at all -- zero ThreadPoolExecutor/future.result occurrences -- and carries no NWS quarantine (0 occurrences of apply_nws_quarantine vs 2 on the RU lane), so NEITHER hardened mechanism exists on EN. There is nothing to port: not a GAP (no EN behaviour is missing) and not SHARED (the code is not shared). If the EN lane ever adopts threaded gates or NWS quarantine, this entry must be revisited and both guards carried across. Pinned by window_selftest.test_threaded_gate_exception_requeues_full_window and test_quarantine_replace_failure_preserves_previous_destination.",
     "tracking": "codex/rt-pipeline-hardening-speed",
     "verified_sha256": {
-      "src/pilot/audit_window.py": "979d8f98e889dd3444320dc7f4b9de177610b7e7fb139f836f98be0a7cffc21b",
-      "src/pilot/window_selftest.py": "95e847ba8e2a549b3640ca0f94cb56146a42bd1fa06e6fd1e0d80fc3c84c2ac1"
+      "src/pilot/audit_window.py": "63403fc426374533d7765a627f7c9cc5c727aca572e8bdce60ad7b6c08a49e73",
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
     }
   },
   {
@@ -1915,6 +1915,39 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "schemas/translation_memory.schema.json": "323e83381b73900d269aaca28f0ed4db2da82d1047c57f94f6cb2f2204c88701",
       "src/tm_source_weights.json": "5cefa3ee6bd5e0167bcca849a46768f96f5220b0dbdc2f1d9b0f4a51ba8a917d"
     }
+  },
+  {
+    "id": "h1811_inproc_audit_pwg_output_dir",
+    "mechanism": "H1811 offline speed + hermeticity: S1 coordinator record-output runs audit_window IN-PROCESS via run_py_inproc (new run_audit seam; daemon-thread timeout -> rc=124, the run_py timeout shape); S2 audit_window runs _pilot_collect in-proc (the last subprocess gate after H1339 Phase 3); S3 pipeline_version.stamp memoizes component_sha per process (check()/freeze() bypass the memo, always fresh-read); H5 a corrupt/missing window_status.json or audit report with rc in {0,1} is now an audit error instead of a silent unknown lease state; H10 PWG_OUTPUT_DIR (output-side twin of H1386 P3f PWG_INPUT_DIR) honored by _pilot_collect/audit_window/audit_translation/root_glue_translated/window_common and sandboxed by h1339_offline_bench.",
+    "files": [
+      "src/pilot/coordinator.py",
+      "src/pilot/audit_window.py",
+      "src/_pilot_collect.py",
+      "src/audit_translation.py",
+      "src/root_glue_translated.py",
+      "src/pilot/window_common.py",
+      "src/pipeline_version.py",
+      "src/pilot/h1339_offline_bench.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H1811 (29-07-2026, Kimi K3 moonshotai/kimi-k3). Every change is language-neutral execution mechanics/plumbing: the AUDITED code is byte-identical (runpy executes the same script files with the same argv; a crash still feeds the rc=3 fail-loud path), so no RU/EN audit-logic divergence is introduced. The EN auditor (audit_window_en.py) imports none of window_common/_pilot_collect/run_py_inproc, so the EN lane is unaffected by construction; PWG_OUTPUT_DIR defaults preserve production behavior (unset -> live src/pilot/output). Pinned by window_selftest test_h1811_inproc_audit_timeout_seam (run_audit rc=124 + namespace contract), the adapted run_audit-seam fixtures in test_coordinator_runtime_state_machine_and_cas and test_coordinator_mixed_lane_public_state_sequence, the pipeline_version selftest stamp-memo block, and the h1339_offline_bench per-lease outcomes byte-equal to the pre-change baseline.",
+    "tracking": "H1811",
+    "verified_sha256": {
+      "src/pilot/coordinator.py": "9ae680042522200f10fb31afe74d7d76410d2bf2ba4019dc677f54270e90bbe7",
+      "src/pilot/audit_window.py": "63403fc426374533d7765a627f7c9cc5c727aca572e8bdce60ad7b6c08a49e73",
+      "src/_pilot_collect.py": "76245fbea2bed2e136fd82acc0d1e00688de7335a7d1db35ed52b46f8fcb44c3",
+      "src/audit_translation.py": "c38661123456c363688a5de37c1ed166b7aa9f6a8811811a67e76724858e027a",
+      "src/root_glue_translated.py": "3c9c40c085861240d6089001706781922949f3575f1fa64dc9fcddcc9f3a2ebb",
+      "src/pilot/window_common.py": "3a8a51917c9b898d9b3d262aaf9339e14fb30cddbb507242266858aec8727331",
+      "src/pipeline_version.py": "0f9319a046c6ff44a9d541a67e268a27654b018ca75c93f4b91a4a156e95da3f",
+      "src/pilot/h1339_offline_bench.py": "970ad8ab948c4aae724efc2076883e21a5bfc7e203ed1c68b5fbb14f3bdbb8cd",
+      "src/pilot/window_selftest.py": "1e8707d9741d578e266922eefcb86bb35cba3f6695dc849fd76dde07aa64fc26"
+    }
   }
 ]
 ```
@@ -1929,7 +1962,6 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "src/gold_sample_en.py": "Read-only human-gold sampler: loads the store, selects rows carrying `en`, writes a working JSONL sample + blank reviewer CSV + METHODS note; never writes back to the store or emits a gate verdict.",
     "src/pilot/calibrate_perf_harness.py": "Benchmark scaffolding generator: builds scratch harness arms + manifest + REPORT_TEMPLATE and passes --lang straight through to gen_opt_harness2.py (the actual parity surface); never translates/audits/gates/promotes or writes the store.",
     "src/pilot/en_split_triage.py": "Pure triage reporter: json.load stores + read source inputs, then print() a SPLIT/RETRY/MISSING-INPUT report for a human (not piped into an automated requeue); no store write, card transform, or gate verdict.",
-    "src/pilot/h1339_offline_bench.py": "Frozen offline benchmark: drives real coordinator/promote commands ONLY inside a scratch env-overridden sandbox with a deterministic fake model to time the path; defines no translate/audit/promote logic — a change alters timing/fixtures, not production behavior.",
     "src/pilot/lang_parity_check.py": "The parity-coverage guard ITSELF: it contains the LANG_SIGNAL detection regexes (english/--lang/FIELD[/CARD_FIELD) as string literals, so the detector matches its own patterns. Meta-tooling that ENFORCES parity, not a translation surface — a change alters the guard's behaviour, not RU/EN pipeline output.",
     "src/pilot/trilingual_sample.py": "Read-only join sampler: aligns already-produced RU (wf_output.sc.*) and EN (wf_output.en.*) senses by key, strips markup, prints/writes a DE|RU|EN comparison table; never transforms cards, writes the store, or emits gate verdicts."
   }

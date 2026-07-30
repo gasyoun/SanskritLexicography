@@ -24,7 +24,7 @@ import pipeline_version
 HERE = os.path.dirname(os.path.abspath(__file__))
 # H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
 INP = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'pilot', 'input')
-OUT = os.path.join(HERE, 'pilot', 'output')
+OUT = os.environ.get('PWG_OUTPUT_DIR') or os.path.join(HERE, 'pilot', 'output')  # H1811 H10
 
 
 def body_of(md):

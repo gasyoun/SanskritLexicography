@@ -24,7 +24,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 # H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
 IN = os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'pilot', 'input')
-OUT = os.path.join(HERE, 'pilot', 'output')
+OUT = os.environ.get('PWG_OUTPUT_DIR') or os.path.join(HERE, 'pilot', 'output')  # H1811 H10
 
 if HERE not in sys.path:
     sys.path.insert(0, HERE)

@@ -11,7 +11,10 @@ from safe_filename import safe_name
 import pipeline_version
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(HERE, 'pilot', 'output')
+# H1811 H10: PWG_OUTPUT_DIR overrides the live sidecar dir — without it even the
+# hermetic h1339 bench (PWG_INPUT_DIR-sandboxed) rewrote live src/pilot/output
+# merged.md files and quarantine-renamed them (same pollution class as H1386 P3f).
+OUT = os.environ.get('PWG_OUTPUT_DIR') or os.path.join(HERE, 'pilot', 'output')
 PROTECTED = {k for k in os.environ.get('PILOT_COLLECT_PROTECTED', '').split(',') if k}
 
 

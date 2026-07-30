@@ -3550,6 +3550,7 @@ def test_coordinator_runtime_state_machine_and_cas():
 
     old_coord = os.environ.get('PWG_COORDINATOR_DIR')
     original_run = coordinator.run_cmd
+    original_audit = coordinator.run_audit
     with tempfile.TemporaryDirectory() as tmp:
         os.environ['PWG_COORDINATOR_DIR'] = tmp
         try:
@@ -3740,10 +3741,10 @@ def test_coordinator_runtime_state_machine_and_cas():
             audit_release = threading.Event()
             audit_errors = []
 
-            def blocking_audit(cmd, cwd=coordinator.REPO, check=True, timeout=None):
-                if timeout != coordinator.AUDIT_TIMEOUT_SECONDS:
-                    fail('audit subprocess did not receive the explicit 30-minute timeout')
-                adir = cmd[cmd.index('--out-dir') + 1]
+            def blocking_audit(argv):
+                # H1811 S1: the audit step's seam moved from run_cmd (subprocess) to
+                # run_audit (in-proc, argv form) -- this fixture substitutes THAT seam.
+                adir = argv[argv.index('--out-dir') + 1]
                 audit_entered.set()
                 audit_release.wait(5)
                 with open(os.path.join(adir, 'window_status.json'), 'w', encoding='utf-8') as f:
@@ -3753,7 +3754,7 @@ def test_coordinator_runtime_state_machine_and_cas():
                     json.dump({}, f)
                 return SimpleNamespace(returncode=2, stdout='', stderr='')
 
-            coordinator.run_cmd = blocking_audit
+            coordinator.run_audit = blocking_audit
 
             def do_audit():
                 try:
@@ -3782,10 +3783,34 @@ def test_coordinator_runtime_state_machine_and_cas():
                 fail('stale audit completion overwrote recovered runtime state')
         finally:
             coordinator.run_cmd = original_run
+            coordinator.run_audit = original_audit
             if old_coord is None:
                 os.environ.pop('PWG_COORDINATOR_DIR', None)
             else:
                 os.environ['PWG_COORDINATOR_DIR'] = old_coord
+
+
+def test_h1811_inproc_audit_timeout_seam():
+    """H1811 S1: run_audit maps a wedged in-proc audit to rc=124 (the run_py timeout
+    shape) and passes argv/stdout/stderr through the namespace contract."""
+    import audit_window
+    import coordinator
+
+    original = audit_window.run_py_inproc
+    try:
+        audit_window.run_py_inproc = lambda argv: (
+            __import__('time').sleep(5) or {'returncode': 0, 'stdout': '', 'stderr': '',
+                                             'seconds': 5.0})
+        wedged = coordinator.run_audit(['audit_window.py', 'wf'], timeout=0.2)
+        if wedged.returncode != 124 or 'timeout' not in wedged.stderr:
+            fail('run_audit did not map a wedged in-proc audit to rc=124')
+        audit_window.run_py_inproc = lambda argv: {
+            'returncode': 1, 'stdout': 'out', 'stderr': 'err', 'seconds': 0.01}
+        ok = coordinator.run_audit(['audit_window.py', 'wf'], timeout=5)
+        if (ok.returncode, ok.stdout, ok.stderr) != (1, 'out', 'err'):
+            fail('run_audit broke the returncode/stdout/stderr contract')
+    finally:
+        audit_window.run_py_inproc = original
 
 
 def test_coordinator_fail_closed_audit_states():
@@ -4425,6 +4450,7 @@ def test_coordinator_mixed_lane_public_state_sequence():
 
     old_coord = os.environ.get('PWG_COORDINATOR_DIR')
     original_run = coordinator.run_cmd
+    original_audit = coordinator.run_audit
     original_store = coordinator.promote_final_cards.DEFAULT_STORE
     original_count = coordinator.nonempty_line_count
     with tempfile.TemporaryDirectory() as tmp:
@@ -4464,29 +4490,32 @@ def test_coordinator_mixed_lane_public_state_sequence():
             'transient': [], 'defect': [],
         }]
 
+        def fake_audit(argv):
+            # H1811 S1: the audit step's seam is run_audit (in-proc, argv form);
+            # this fixture substitutes THAT seam with the same scripted specs.
+            spec = audit_specs.pop(0)
+            wf = argv[1]
+            adir = argv[argv.index('--out-dir') + 1]
+            status = {'state': spec['state'], 'requeue_keys': spec['requeue']}
+            report = {
+                'workflow': wf, 'keys': json.load(open(
+                    argv[argv.index('--execution-manifest') + 1], encoding='utf-8'))[
+                        'meta']['selected_keys'],
+                'requeue': spec['requeue'],
+                'requeue_transient': spec['transient'],
+                'requeue_defect': spec['defect'],
+                'requeue_defect_fshas': ['frag-b'] if spec['defect'] else [],
+                'crashed': [], 'stale_check': {'ok': True},
+            }
+            with open(os.path.join(adir, 'window_status.json'), 'w', encoding='utf-8') as f:
+                json.dump(status, f)
+            with open(os.path.join(adir, 'audit_window.report.json'),
+                      'w', encoding='utf-8') as f:
+                json.dump(report, f)
+            return SimpleNamespace(returncode=spec['returncode'], stdout='', stderr='')
+
         def fake_run(cmd, cwd=coordinator.REPO, check=True, timeout=None):
             script = os.path.basename(cmd[1]) if len(cmd) > 1 else ''
-            if script == 'audit_window.py':
-                spec = audit_specs.pop(0)
-                wf = cmd[2]
-                adir = cmd[cmd.index('--out-dir') + 1]
-                status = {'state': spec['state'], 'requeue_keys': spec['requeue']}
-                report = {
-                    'workflow': wf, 'keys': json.load(open(
-                        cmd[cmd.index('--execution-manifest') + 1], encoding='utf-8'))[
-                            'meta']['selected_keys'],
-                    'requeue': spec['requeue'],
-                    'requeue_transient': spec['transient'],
-                    'requeue_defect': spec['defect'],
-                    'requeue_defect_fshas': ['frag-b'] if spec['defect'] else [],
-                    'crashed': [], 'stale_check': {'ok': True},
-                }
-                with open(os.path.join(adir, 'window_status.json'), 'w', encoding='utf-8') as f:
-                    json.dump(status, f)
-                with open(os.path.join(adir, 'audit_window.report.json'),
-                          'w', encoding='utf-8') as f:
-                    json.dump(report, f)
-                return SimpleNamespace(returncode=spec['returncode'], stdout='', stderr='')
             if script == 'promote_final_cards.py':
                 # H1339 Phase 3: promote-ready now invokes ONE batched transaction
                 # (--batch-manifest + --report) instead of one subprocess per lease; the
@@ -4556,6 +4585,7 @@ def test_coordinator_mixed_lane_public_state_sequence():
             coordinator.save_state(state)
 
         coordinator.run_cmd = fake_run
+        coordinator.run_audit = fake_audit
         coordinator.nonempty_line_count = lambda _path: (_ for _ in ()).throw(
             AssertionError('coordinator must use transaction report counts, not rescan store'))
         try:
@@ -4599,6 +4629,7 @@ def test_coordinator_mixed_lane_public_state_sequence():
                 fail('mixed-lane integration did not consume every planned audit')
         finally:
             coordinator.run_cmd = original_run
+            coordinator.run_audit = original_audit
             coordinator.nonempty_line_count = original_count
             coordinator.promote_final_cards.DEFAULT_STORE = original_store
             if old_coord is None:
@@ -8364,6 +8395,7 @@ def main():
         test_h1420_p2_win32_openprocess_error_leans_alive,
         test_h1420_p11_record_output_binds_run_id,
         test_h1420_p10_promote_rebuilds_tm_in_finally,
+        test_h1811_inproc_audit_timeout_seam,
         test_h1283_a5_max_wide_default_bounded,
         test_h1283_a6_prep_slice_flattens_batches,
         test_h1386_d1_medium50_script_size_cap,
