@@ -87,8 +87,15 @@ class CohortEngine:
             'accepted_order': list(self.accepted_order),
             'stop_reason': self.stop_reason,
             'effective_width': self.effective_width,
-            'probed': sorted(self._probed),
-            'failed_profiles': sorted(self._failed_profiles),
+            # H9: persist ONLY profiles whose probe actually succeeded, and do not
+            # persist the failed set at all. `_probed` deliberately absorbs a failed
+            # profile in-process (a failed probe already consumed the ledger, so this
+            # life must not pay for it twice) — but persisting that marker turned a
+            # TRANSIENT probe exception into a permanent one: on resume the profile was
+            # never re-probed, `_is_window_runnable` kept rejecting it, the terminal
+            # barrier skipped its leases, and the wave still settled promoted/tm_done,
+            # stranding those leases forever. A fresh life re-probes and can recover.
+            'probed': sorted(self._probed - self._failed_profiles),
             'coord_dir': self.coord_dir,
         }
 
@@ -122,7 +129,10 @@ class CohortEngine:
         self.stop_reason = data.get('stop_reason')
         self.effective_width = int(data.get('effective_width') or 1)
         self._probed = set(data.get('probed') or [])
-        self._failed_profiles = set(data.get('failed_profiles') or [])
+        # H9: `_failed_profiles` is intentionally NOT restored — it is per-life state.
+        # A probe failure is evidence about one process, not a durable verdict on the
+        # profile. Older checkpoints may still carry a 'failed_profiles' key; it is
+        # ignored on purpose rather than read back.
         # Clear non-terminal running phases so resume re-dispatches them.
         for wid, lease in list(self.leases.items()):
             if lease.get('phase') == PHASE_RUNNING:
@@ -361,6 +371,22 @@ class CohortEngine:
             self.wave['tm_done'] = True
             self._save_checkpoint()
 
+    # ---- stranded-lease reporting ---------------------------------------------
+
+    @staticmethod
+    def _undispatched_stop_reason(undispatched):
+        """H9: one-line reason for a wave that settled with leases that never ran.
+
+        `undispatched` is a list of (lease_id, profile, cause). Returns None when the
+        wave settled cleanly, so this is safe to assign unconditionally at settle time.
+        """
+        if not undispatched:
+            return None
+        detail = '; '.join('%s(profile=%s, %s)' % (wid, profile, cause)
+                           for wid, profile, cause in sorted(undispatched))
+        return ('wave settled with %d runnable lease(s) never dispatched: %s'
+                % (len(undispatched), detail))
+
     # ---- summary --------------------------------------------------------------
 
     def summary(self):
@@ -433,6 +459,7 @@ class CohortEngine:
             # campaign ledger is exhausted (partial wave of what finished), OR the
             # wave was already promoted (TM-only resume).
             terminal_ok = True
+            undispatched = []   # H9: admitted+unparked leases this wave will never run
             for w in self.plan:
                 profile = w.get('profile')
                 if self.admitted and profile not in self.admitted:
@@ -443,12 +470,22 @@ class CohortEngine:
                 if lease.get('phase') != PHASE_DONE:
                     # Budget-exhausted partial wave: allow promote of what finished.
                     if self.max_calls is not None and self.calls_reserved >= self.max_calls:
+                        undispatched.append((w['id'], profile, 'budget_exhausted'))
                         continue
-                    # Profile probe failed: no work will ever run here this life.
+                    # Profile probe failed: no work will run for it in THIS life.
                     if profile in self._failed_profiles:
+                        undispatched.append((w['id'], profile, 'probe_failed'))
                         continue
                     terminal_ok = False
                     break
+
+            if terminal_ok:
+                # H9: settling while runnable leases were never dispatched used to be
+                # entirely silent — the wave reported success, promoted/tm_done went
+                # True, and those leases were stranded with no signal anywhere. Record
+                # WHY. Recomputed (not appended) on every settle, so a life that
+                # recovers the stranded leases clears a stale reason from an earlier one.
+                self.stop_reason = self._undispatched_stop_reason(undispatched)
 
             if terminal_ok or self.wave.get('promoted'):
                 self._promote_and_tm()
