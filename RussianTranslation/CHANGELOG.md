@@ -10,6 +10,50 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — a malformed manifest crashed the worker with no status file, and the orchestrator retried it (H1 / H1940 Phase 2, 30-07-2026)
+
+`headless_worker main()` read, hashed and decoded the execution manifest *before* entering
+its configuration `try`. So the three ways that read can fail — the file is missing or
+unreadable (`OSError`), the bytes are not UTF-8, the JSON is invalid — escaped `main()` as
+a bare traceback. No status file was written at all. Two more escaped from *inside* the
+try, because `KeyError` and `TypeError` were absent from its `except` tuple: a manifest
+that decodes and passes `validate_manifest` can still be missing a section the executor
+subscripts directly, or carry a scalar where a list is required.
+
+The consequence was not just an ugly crash. The orchestrator's whole retry policy keys off
+the worker's own `classification`; with no status file there is nothing to key off, so a
+**permanent, deterministic** defect — a manifest that will never parse — was retried like a
+transient one.
+
+- **The read is inside the try.** `open`/`read`/`sha256`/`json.loads` moved in, so all
+  five shapes land on the existing `classification: configuration`, exit code 2, status
+  written. `json.JSONDecodeError` and `UnicodeDecodeError` are already `ValueError`
+  subclasses, so moving them in was sufficient for those; `KeyError` and `TypeError` were
+  added explicitly.
+- **The hash is never fabricated, and never discarded.** `manifest_hash` is pre-bound to
+  `None` — which is what stops the move from introducing an `UnboundLocalError` at the
+  unconditional status write, and what keeps a manifest whose bytes were never read from
+  being attested with a hash. `null` is not a new convention: it is the absent-hash shape
+  `bounded_staged_run` (`headless.get('manifest_sha256')`) and
+  `max_account_orchestrator.emit_call_events` (`or 'call'`) already handle. When bytes
+  *were* read, their hash is retained exactly as before, so an invalid-JSON status still
+  carries real evidence of precisely what was rejected.
+- **The new error details name their type.** `str(KeyError('inputs'))` is `"'inputs'"` —
+  a bare key naming no cause. `KeyError`/`TypeError` are therefore qualified with the
+  exception type. The pre-H1 types keep their exact wording deliberately:
+  `max_account_orchestrator` feeds `status['error']` into `parse_reset` on the rate-limit
+  path, so that text is not free to reword.
+
+Successful execution, the v2 manifest seal, preflight validation, the call reservation and
+profile validation are untouched and still run in the same order. Zero paid calls on every
+one of these failures — both structural pins reach their exception before any reservation
+or spawn, and each asserts the spawn counter is zero rather than assuming it.
+
+Pinned by four new `headless_worker_selftest` tests, **all four verified RED against
+pre-H1 master**, where the exception escapes and no status file exists. Gates:
+`headless_worker_selftest` PASS, `window_selftest` 194/194, `lang_parity_check` 89 entries
+no drift (five SHARED verdicts re-derived against the diff, not hash-refreshed).
+
 ### Fixed — one hung preflight could wedge every coordinator operation (H8 / H1940 Phase 2, 30-07-2026)
 
 `coordinator claim` takes the global state `DirLock` and holds it for the whole claim,

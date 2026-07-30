@@ -1050,11 +1050,24 @@ def main(argv=None):
     ap.add_argument('--manifest-sha256',
                     help='required external seal for paid manifest v2 execution')
     args = ap.parse_args(argv)
-    with open(args.manifest, 'rb') as f:
-        manifest_bytes = f.read()
-    manifest_hash = hashlib.sha256(manifest_bytes).hexdigest()
-    manifest = json.loads(manifest_bytes.decode('utf-8'))
+    # H1 (H1940): the manifest read/decode used to sit OUTSIDE this try, so an unreadable
+    # file (OSError), undecodable bytes or invalid JSON escaped main() with NO status file
+    # written at all -- the orchestrator saw a bare traceback instead of a deterministic
+    # `configuration` verdict and burned its retries on a defect that can never succeed.
+    # KeyError/TypeError from a structurally malformed manifest escaped the same way, from
+    # inside the try, because they were absent from the except tuple.
+    #
+    # manifest_hash is bound to None FIRST so the unconditional status write below can
+    # neither raise UnboundLocalError nor attest a hash for bytes that were never read.
+    # null is the shape downstream already handles for an absent hash --
+    # bounded_staged_run reads it as `headless.get('manifest_sha256')` and
+    # max_account_orchestrator.emit_call_events falls back via `or 'call'`.
+    manifest_hash = None
     try:
+        with open(args.manifest, 'rb') as f:
+            manifest_bytes = f.read()
+        manifest_hash = hashlib.sha256(manifest_bytes).hexdigest()
+        manifest = json.loads(manifest_bytes.decode('utf-8'))
         if manifest.get('schema') != SCHEMA_V1:
             if not args.manifest_sha256:
                 raise ValueError('paid v2 execution requires --manifest-sha256')
@@ -1093,8 +1106,13 @@ def main(argv=None):
                 manifest, args.claude_bin, args.timeout,
                 max_agents_override=args.max_agents,
                 call_reservation=call_reservation, config_dir=config_dir)
-    except (OSError, RuntimeError, ValueError) as exc:
-        payload, status, code = None, {'classification': 'configuration', 'error': str(exc)}, 2
+    except (OSError, RuntimeError, ValueError, KeyError, TypeError) as exc:
+        # KeyError/TypeError stringify to a bare quoted key or a bare internal message
+        # ("'inputs'", "'int' object is not iterable") that names no cause, so those two
+        # are qualified with their type. The pre-H1 types keep their exact wording.
+        detail = (str(exc) if isinstance(exc, (OSError, RuntimeError, ValueError))
+                  else '%s: %s' % (type(exc).__name__, exc))
+        payload, status, code = None, {'classification': 'configuration', 'error': detail}, 2
     status['manifest_sha256'] = manifest_hash
     if payload is not None:
         payload.setdefault('meta', {})[
