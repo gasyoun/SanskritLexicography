@@ -27,26 +27,28 @@
   }
  ],
  "verdicts": {
-  "pwg_members-right": 3975,
-  "unresolved": 354,
-  "index_members-right": 24
+  "index_members-right": 268,
+  "pwg_members-right": 3780,
+  "unresolved": 305
  },
  "by_rule": {
-  "mw_cut_leaves_nonword": 293,
-  "granularity_ic_vs_full_decomposition": 31,
+  "pwg_layer_unparsed_chain": 243,
+  "mw_recursive_decomposition": 28,
   "privative_scope_disputed": 14,
-  "same_split_pwg_lemma_form": 3152,
-  "cut_moved_neither_reading_lexical": 22,
-  "cut_moved_both_readings_lexical": 263,
-  "pwg_lexeme_vs_mw_suffixed_tail": 334,
-  "pwg_cut_leaves_nonword": 10,
+  "same_split_pwg_lemma_form": 3046,
+  "mw_cut_leaves_nonword": 279,
+  "cut_moved_neither_reading_lexical": 17,
+  "cut_moved_both_readings_lexical": 253,
+  "pwg_lexeme_vs_mw_suffixed_tail": 324,
+  "pwg_cut_leaves_nonword": 8,
   "granularity_pwg_finer": 2,
   "pwg_member_typo_in_source": 12,
-  "mw_anusvara_right_of_boundary": 107,
-  "arity_differs_no_alignment": 22,
-  "mw_cut_absorbs_initial_vowel": 67,
-  "mw_splits_bound_morph": 8,
+  "arity_differs_no_alignment": 19,
+  "mw_anusvara_right_of_boundary": 19,
+  "mw_cut_absorbs_initial_vowel": 63,
+  "mw_splits_bound_morph": 7,
   "pwg_layer_no_headword_paren": 2,
+  "pwg_layer_inner_chain": 3,
   "mw_splits_derivational_suffix": 14
  },
  "gate": {
@@ -60,7 +62,7 @@
  "strata": [
   {
    "stratum": "same_split_pwg_lemma_form",
-   "rows": 3152,
+   "rows": 3046,
    "arms": {
     "sanskritlexicography-pwg-compound-differs_stratified200": {
      "cards": 139,
@@ -85,7 +87,7 @@
   },
   {
    "stratum": "pwg_lexeme_vs_mw_suffixed_tail",
-   "rows": 334,
+   "rows": 324,
    "arms": {
     "sanskritlexicography-pwg-compound-differs_stratified200": {
      "cards": 16,
@@ -93,13 +95,13 @@
      "can_promote_alone_if_perfect": false
     },
     "sanskritlexicography-pwg-compound-differs_rulestrat_arm2": {
-     "cards": 36,
-     "max_wilson_lb_if_perfect": 0.9036,
+     "cards": 35,
+     "max_wilson_lb_if_perfect": 0.9011,
      "can_promote_alone_if_perfect": true
     }
    },
-   "pooled_cards": 52,
-   "pooled_max_wilson_lb_if_perfect": 0.9312,
+   "pooled_cards": 51,
+   "pooled_max_wilson_lb_if_perfect": 0.93,
    "priceable": true,
    "censused": false,
    "promotable_at_threshold_if_arms_perfect": true,
@@ -110,7 +112,7 @@
   },
   {
    "stratum": "mw_cut_leaves_nonword",
-   "rows": 293,
+   "rows": 279,
    "arms": {
     "sanskritlexicography-pwg-compound-differs_stratified200": {
      "cards": 11,
@@ -135,46 +137,44 @@
   },
   {
    "stratum": "cut_moved_both_readings_lexical",
-   "rows": 263,
+   "rows": 253,
    "arms": {
     "sanskritlexicography-pwg-compound-differs_stratified200": {
-     "cards": 10,
-     "max_wilson_lb_if_perfect": 0.7225,
+     "cards": 9,
+     "max_wilson_lb_if_perfect": 0.7008,
      "can_promote_alone_if_perfect": false
     },
     "sanskritlexicography-pwg-compound-differs_rulestrat_arm2": {
-     "cards": 36,
-     "max_wilson_lb_if_perfect": 0.9036,
-     "can_promote_alone_if_perfect": true
+     "cards": 34,
+     "max_wilson_lb_if_perfect": 0.8985,
+     "can_promote_alone_if_perfect": false
     }
    },
-   "pooled_cards": 46,
-   "pooled_max_wilson_lb_if_perfect": 0.9229,
+   "pooled_cards": 43,
+   "pooled_max_wilson_lb_if_perfect": 0.918,
    "priceable": true,
    "censused": false,
    "promotable_at_threshold_if_arms_perfect": true,
    "promotion_basis": "wilson",
-   "promoted_by": [
-    "sanskritlexicography-pwg-compound-differs_rulestrat_arm2"
-   ]
+   "promoted_by": []
   },
   {
-   "stratum": "mw_anusvara_right_of_boundary",
-   "rows": 107,
+   "stratum": "pwg_layer_unparsed_chain",
+   "rows": 243,
    "arms": {
     "sanskritlexicography-pwg-compound-differs_stratified200": {
-     "cards": 1,
-     "max_wilson_lb_if_perfect": 0.2065,
+     "cards": 0,
+     "max_wilson_lb_if_perfect": 0.0,
      "can_promote_alone_if_perfect": false
     },
     "sanskritlexicography-pwg-compound-differs_rulestrat_arm2": {
-     "cards": 37,
-     "max_wilson_lb_if_perfect": 0.9059,
+     "cards": 43,
+     "max_wilson_lb_if_perfect": 0.918,
      "can_promote_alone_if_perfect": true
     }
    },
-   "pooled_cards": 38,
-   "pooled_max_wilson_lb_if_perfect": 0.9082,
+   "pooled_cards": 43,
+   "pooled_max_wilson_lb_if_perfect": 0.918,
    "priceable": true,
    "censused": false,
    "promotable_at_threshold_if_arms_perfect": true,
@@ -185,21 +185,21 @@
   },
   {
    "stratum": "residual-undersized",
-   "rows": 106,
+   "rows": 117,
    "arms": {
     "sanskritlexicography-pwg-compound-differs_stratified200": {
-     "cards": 10,
-     "max_wilson_lb_if_perfect": 0.7225,
+     "cards": 12,
+     "max_wilson_lb_if_perfect": 0.7575,
      "can_promote_alone_if_perfect": false
     },
     "sanskritlexicography-pwg-compound-differs_rulestrat_arm2": {
-     "cards": 36,
-     "max_wilson_lb_if_perfect": 0.9036,
+     "cards": 38,
+     "max_wilson_lb_if_perfect": 0.9082,
      "can_promote_alone_if_perfect": true
     }
    },
-   "pooled_cards": 46,
-   "pooled_max_wilson_lb_if_perfect": 0.9229,
+   "pooled_cards": 50,
+   "pooled_max_wilson_lb_if_perfect": 0.9286,
    "priceable": true,
    "censused": false,
    "promotable_at_threshold_if_arms_perfect": true,
@@ -210,7 +210,7 @@
   },
   {
    "stratum": "mw_cut_absorbs_initial_vowel",
-   "rows": 67,
+   "rows": 63,
    "arms": {
     "sanskritlexicography-pwg-compound-differs_stratified200": {
      "cards": 0,
@@ -218,24 +218,22 @@
      "can_promote_alone_if_perfect": false
     },
     "sanskritlexicography-pwg-compound-differs_rulestrat_arm2": {
-     "cards": 36,
-     "max_wilson_lb_if_perfect": 0.9036,
-     "can_promote_alone_if_perfect": true
+     "cards": 34,
+     "max_wilson_lb_if_perfect": 0.8985,
+     "can_promote_alone_if_perfect": false
     }
    },
-   "pooled_cards": 36,
-   "pooled_max_wilson_lb_if_perfect": 0.9036,
+   "pooled_cards": 34,
+   "pooled_max_wilson_lb_if_perfect": 0.8985,
    "priceable": true,
    "censused": false,
-   "promotable_at_threshold_if_arms_perfect": true,
-   "promotion_basis": "wilson",
-   "promoted_by": [
-    "sanskritlexicography-pwg-compound-differs_rulestrat_arm2"
-   ]
+   "promotable_at_threshold_if_arms_perfect": false,
+   "promotion_basis": "none",
+   "promoted_by": []
   },
   {
-   "stratum": "granularity_ic_vs_full_decomposition",
-   "rows": 31,
+   "stratum": "mw_recursive_decomposition",
+   "rows": 28,
    "arms": {
     "sanskritlexicography-pwg-compound-differs_stratified200": {
      "cards": 9,
@@ -243,13 +241,13 @@
      "can_promote_alone_if_perfect": false
     },
     "sanskritlexicography-pwg-compound-differs_rulestrat_arm2": {
-     "cards": 22,
-     "max_wilson_lb_if_perfect": 0.8513,
+     "cards": 19,
+     "max_wilson_lb_if_perfect": 0.8318,
      "can_promote_alone_if_perfect": false
     }
    },
-   "pooled_cards": 31,
-   "pooled_max_wilson_lb_if_perfect": 0.8897,
+   "pooled_cards": 28,
+   "pooled_max_wilson_lb_if_perfect": 0.8794,
    "priceable": true,
    "censused": true,
    "promotable_at_threshold_if_arms_perfect": true,
@@ -258,6 +256,6 @@
   }
  ],
  "rows_in_priceable_strata": 4353,
- "rows_promotable_if_arms_perfect": 4353,
+ "rows_promotable_if_arms_perfect": 4290,
  "rows_unpriceable": 0
 }
