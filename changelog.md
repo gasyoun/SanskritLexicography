@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Changed
+- **ACC×NCC P2 blind spot-check re-drawn larger so a 0.95 Wilson bar is attainable** (30-07-2026, Grok 4.5 `grok-4.5`, [H1951](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1951-Grok_SanskritLexicography_acc-ncc-p2-larger-sample_30.07.26.md)). MG vote 4c (H1948) chose re-draw over locking 0.85/0.90: at n=50 max Wilson LB is 0.929, so 0.95 promoted nothing by sample construction. New frame: **1,111 cards · 17 strata · n=73** per side (seed `19512026`; min n with perfect-agreement LB ≥ 0.95). Prior unvoted 698-card frame superseded. Sheet stamped + locked (H1404). Feasibility: on a perfect vote, bar 0.95 promotes **858/920** approve rows (62-row census stratum tops out at LB 0.942). No crosswalk rows promoted in this handoff — human votes the sample, then sets the bar. See [`P2_PRECISION.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_PRECISION.md).
+
 ## [1.111.3] — 2026-07-30
 
 ### Fixed
