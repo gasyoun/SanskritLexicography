@@ -9,7 +9,7 @@ schemas/pwg_ru_final_card.schema.json. It validates workflow results shaped as
   python validate_final_card_schema.py --selftest
 """
 import argparse
-import copy, json, os, sys
+import copy, json, os, re, sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
@@ -41,6 +41,37 @@ EQ_TYPES = {'equivalent', 'explanatory'}
 SOURCE_TYPES = {'attested', 'lexicographic', 'mixed'}
 DISCRIMINATION_QUALITY = {'strong', 'adequate', 'weak', 'missing'}
 HIGH_DISCRIMINATION = {'strong', 'adequate'}
+
+# NWS [diasystem, domain] tag guard (H1903): the tag is a machine-readable key
+# and must stay Latin. Anchored on the closed diasystem vocabulary -- BOTH the
+# canonical Latin forms and their observed Cyrillic mistranslations, so a tag
+# that got fully mistranslated (diasystem AND domain both Cyrillic) is still
+# recognized as a tag and rejected, not silently skipped for lacking a Latin
+# anchor. This anchoring is what keeps ordinary Russian prose in brackets from
+# being mistaken for a tag (a bare bracket regex without it false-positives --
+# see H1903's own investigation).
+NWS_DIASYSTEMS = ('Śā', 'Ved', 'Gen', 'Buddh', 'Epigr', 'Tan', 'Reg', 'Kāv', 'Jin', 'Ep',
+                   'Вед', 'Общ', 'Будд', 'Эпигр', 'Рег', 'Джайн', 'Поэт', 'Эп', 'Тан', 'Шастр')
+_NWS_TAG_RE = re.compile(
+    r'\[\s*(?:%s)\.?\s*,\s*(?P<dom1>[^\]]{1,60})\]'
+    r'|(?:%s)\.?\s*,\s*(?P<dom2>[^\s,()>]{1,15})\s*(?:\(|>)'
+    % ('|'.join(re.escape(d) for d in NWS_DIASYSTEMS),
+       '|'.join(re.escape(d) for d in NWS_DIASYSTEMS)))
+_CYRILLIC_RE = re.compile(r'[Ѐ-ӿ]')
+_JUNK_RE = re.compile(r'[\d,]')
+
+
+def nws_tag_defects(text):
+    """-> list of offending `[diasystem, domain...]` spans in `text` whose domain
+    slot is Cyrillic-valued or carries a digit/comma (H1903 store-repair ruling:
+    NWS tags are machine-readable keys, never translated, never source-fidelity
+    residue in the slot itself)."""
+    out = []
+    for m in _NWS_TAG_RE.finditer(text or ''):
+        dom = (m.group('dom1') or m.group('dom2') or '').strip()
+        if _CYRILLIC_RE.search(dom) or _JUNK_RE.search(dom):
+            out.append(m.group(0)[:60])
+    return out
 
 
 def fail(msg):
@@ -164,6 +195,10 @@ def validate_sense(sense, where):
     need_keys(sense, SENSE_REQUIRED, where)
     for key in ('tag', 'german', 'russian'):
         need_str(sense, key, where, nonempty=(key == 'tag'))
+    defects = nws_tag_defects(sense.get('russian', ''))
+    if defects:
+        fail('%s.russian: Cyrillic-valued or comma/digit-bearing NWS tag slot: %s'
+             % (where, '; '.join(defects)))
     # Annotator fields: validated only when present (relaxed 2026-07-01 so dense
     # main-head cards recovered under the trimmed generation schema stay valid).
     for key in ('stratum', 'differentia'):
@@ -267,6 +302,14 @@ def cmd_selftest():
     bad_government = copy.deepcopy(base)
     bad_government['card']['records'][0]['senses'][0]['government'] = ['+ Acc.']
     cases.append(('government not a string', bad_government))
+
+    cyrillic_tag = copy.deepcopy(base)
+    cyrillic_tag['card']['records'][0]['senses'][0]['russian'] += ' [Будд., без уточн.]'
+    cases.append(('H1903: Cyrillic-valued NWS tag slot', cyrillic_tag))
+
+    residue_tag = copy.deepcopy(base)
+    residue_tag['card']['records'][0]['senses'][0]['russian'] += ' [Jin , unsp , 1349 A.D. , Delhi]'
+    cases.append(('H1903: comma/digit-bearing NWS tag slot', residue_tag))
 
     for name, bad in cases:
         try:
