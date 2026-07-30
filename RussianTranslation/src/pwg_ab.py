@@ -14,14 +14,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-# Sibling repos resolve three levels up from src/ — true for the canonical
-# checkout, FALSE in a git worktree, which the org's shared-tree rule requires
-# for exactly this repo. A worktree lands beside GitHub/, not inside it, so the
-# table silently "disappears" and every artifact rebuilt there loses its <ab>
-# tooltips without failing (H1847: a pinned sheet re-issue did exactly that).
-# The override makes the degradation opt-out rather than a property of where
-# the checkout happens to sit.
-GH = os.environ.get('CSL_SIBLING_ROOT') or os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+from sibling_root import sibling_root, require_sibling  # noqa: E402
+GH = sibling_root(HERE)
 AB = os.path.join(GH, 'csl-pywork', 'v02', 'distinctfiles', 'pwg', 'pywork', 'pwgab', 'pwgab_input.txt')
 PWG = os.path.join(GH, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 DISP = re.compile(r'<disp>(.*?)</disp>')
@@ -41,13 +35,16 @@ def table():
     global _AB
     if _AB is None:
         _AB = {}
-        if not os.path.exists(AB):
+        if not require_sibling(AB, 'pwg_ab table'):
             # The pwgab tooltip source lives in the sibling csl-pywork repo, which is
             # not checked out in every environment (CI runs only this repo). A missing
             # OPTIONAL tooltip table must degrade to "no expansion", never crash the
             # site build (H1308): resolve() then returns None and <ab> tags render
             # without a hover title. Warn once so a genuinely misconfigured local run
-            # stays visible.
+            # stays visible. `require_sibling` upgrades this to a hard failure instead
+            # when CSL_SIBLING_ROOT was explicitly set (H1902) — that is the operator
+            # asserting the siblings exist, so a missing table there is an error, not
+            # a degradation.
             sys.stderr.write('pwg_ab: table source not found (%s); <ab> tooltips disabled\n' % AB)
             return _AB
         for line in open(AB, encoding='utf-8'):

@@ -41,7 +41,8 @@ import pwg_sources as pwgsrc     # noqa: E402
 import spr_fulltext as spr       # noqa: E402
 
 REPO = os.path.dirname(HERE)                                   # RussianTranslation/
-GH = os.path.normpath(os.path.join(HERE, '..', '..', '..'))    # GitHub/ (csl-orig is a sibling repo)
+from sibling_root import sibling_root  # noqa: E402
+GH = sibling_root(HERE)    # GitHub/ (csl-orig is a sibling repo)
 STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 PWG = os.path.join(GH, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 DEFAULT_OUT = os.path.join(REPO, 'pwg_ru', 'eval', 'ls_coverage.json')

@@ -82,7 +82,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-GITHUB = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
+from sibling_root import sibling_root  # noqa: E402
+GITHUB = sibling_root(HERE)
 CORPUS_DB = os.environ.get(
     'SAMUDRA_CORPUS_DB', os.path.join(GITHUB, 'SamudraManthanam', 'web', 'corpus.db'))
 
