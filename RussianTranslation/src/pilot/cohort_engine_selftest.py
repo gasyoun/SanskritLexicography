@@ -837,6 +837,144 @@ def test_7_coord_dir_and_admitted_parked_filtering(td):
 # Runner — run ALL pins, report each RED with its missing-behavior reason.
 # ---------------------------------------------------------------------------
 
+def test_8_transient_probe_failure_is_reprobed_on_resume(td):
+    """H9: a probe exception is per-life evidence, never a durable verdict.
+
+    The stranding chain this pins: a TRANSIENT probe failure used to be written into the
+    checkpoint twice over — the profile landed in the persisted `probed` set (so resume
+    never re-probed it) and in a persisted `failed_profiles` set (so `_is_window_runnable`
+    kept rejecting it). Its leases were then skipped by the terminal barrier while the wave
+    settled promoted/tm_done=True, i.e. stranded with no signal. A fresh life must re-probe.
+    """
+    td = os.path.join(td, 't8'); os.makedirs(td)
+    windows = [{'id': 'leaseA', 'profile': 'c1'}, {'id': 'leaseB', 'profile': 'c2'}]
+    checkpoint = os.path.join(td, 'cp.json')
+    store = os.path.join(td, 'store.txt')
+    promoter = FakePromoter(store)
+    tm = FakeTM()
+
+    # Life 1: c1's probe fails TRANSIENTLY; leaseB crashes so the wave cannot settle.
+    probe_calls_1 = []
+
+    def transient_probe(profile):
+        probe_calls_1.append(profile)
+        if profile == 'c1':
+            raise SimulatedCrash('transient probe failure on c1')
+        return 1.0
+
+    meter1 = ConcurrencyProbe()
+    engine = build_engine(
+        windows, FakeWorker(td, meter1, crash_ids={'leaseB'}), checkpoint,
+        audit=clean_audit, promote_wave=promoter, rebuild_tm=tm, width=2,
+        admitted={'c1', 'c2'}, probe=transient_probe,
+        contract='a transient probe failure must not be persisted as a permanent verdict; '
+                 'a resumed life must re-probe the profile and dispatch its leases')
+    crashed = False
+    try:
+        engine.run()
+    except SimulatedCrash:
+        crashed = True
+    assert crashed, 'fixture defect: the injected leaseB crash must propagate'
+    assert 'c1' in probe_calls_1, ('fixture defect: c1 must have been probed in life 1: %r'
+                                   % probe_calls_1)
+    assert 'leaseA' not in meter1.launches, (
+        'fixture defect: leaseA must not have launched behind a failed probe: %r'
+        % meter1.launches)
+
+    # THE PIN (durability half): the failure must not survive on disk in EITHER form.
+    with open(checkpoint, encoding='utf-8') as f:
+        cp = json.load(f)
+    assert 'c1' not in (cp.get('probed') or []), (
+        'a FAILED probe was persisted as probed — resume will never re-probe c1 and its '
+        'leases strand forever: probed=%r' % (cp.get('probed'),))
+    assert 'c1' not in (cp.get('failed_profiles') or []), (
+        'the per-life failed-profile set was persisted — resume inherits a permanent '
+        'verdict from one transient exception: failed_profiles=%r'
+        % (cp.get('failed_profiles'),))
+
+    _forget_engine_module()
+
+    # Life 2: resume with a now-healthy probe. c1 MUST be re-probed and leaseA MUST run.
+    probe_calls_2 = []
+
+    def healthy_probe(profile):
+        probe_calls_2.append(profile)
+        return 1.0
+
+    meter2 = ConcurrencyProbe()
+    engine2 = build_engine(
+        windows, FakeWorker(td, meter2), checkpoint, audit=clean_audit,
+        promote_wave=promoter, rebuild_tm=tm, width=2, admitted={'c1', 'c2'},
+        resume=True, probe=healthy_probe,
+        contract='a transient probe failure must not be persisted as a permanent verdict; '
+                 'a resumed life must re-probe the profile and dispatch its leases')
+    summary = engine2.run()
+
+    # THE PIN (recovery half).
+    assert 'c1' in probe_calls_2, (
+        'c1 was never re-probed on resume — the transient failure became permanent: %r'
+        % probe_calls_2)
+    assert 'leaseA' in meter2.launches, (
+        'leaseA never dispatched on resume — it is stranded behind a stale probe verdict: '
+        '%r' % meter2.launches)
+    assert 'c2' not in probe_calls_2, (
+        'c2 probed twice — a SUCCESSFUL probe is durable and must not be repaid: %r'
+        % probe_calls_2)
+    assert summary.get('stop_reason') is None, (
+        'a fully-dispatched wave must settle with no stranding reason: %r'
+        % summary.get('stop_reason'))
+    assert len(promoter.commits) == 1, promoter.commits
+    assert set(promoter.commits[0]) == {'leaseA', 'leaseB'}, promoter.commits
+
+
+def test_9_settling_with_undispatched_leases_reports_stop_reason(td):
+    """H9: a wave that settles while runnable leases were never dispatched must say so.
+
+    Settling is deliberate here (the same partial-wave semantics the budget path uses), so
+    this pins the SIGNAL, not a behaviour change: before H9 the wave reported plain success
+    and the skipped leases were invisible in the summary and on disk.
+    """
+    td = os.path.join(td, 't9'); os.makedirs(td)
+    windows = [{'id': 'leaseA', 'profile': 'c1'}, {'id': 'leaseB', 'profile': 'c2'}]
+    checkpoint = os.path.join(td, 'cp.json')
+    store = os.path.join(td, 'store.txt')
+
+    def hard_down_probe(profile):
+        if profile == 'c1':
+            raise SimulatedCrash('c1 is down for this whole wave')
+        return 1.0
+
+    meter = ConcurrencyProbe()
+    promoter = FakePromoter(store)
+    engine = build_engine(
+        windows, FakeWorker(td, meter), checkpoint, audit=clean_audit,
+        promote_wave=promoter, rebuild_tm=FakeTM(), width=2, admitted={'c1', 'c2'},
+        probe=hard_down_probe,
+        contract='a wave that settles with runnable-but-undispatched leases must record a '
+                 'stop_reason naming them, instead of reporting silent success')
+    summary = engine.run()
+
+    # The wave still settles (partial-wave semantics unchanged) ...
+    assert summary['wave']['promoted'] is True, summary['wave']
+    assert promoter.commits == [('leaseB',)], (
+        'only the dispatched lease may be promoted: %r' % promoter.commits)
+    assert meter.launches == ['leaseB'], meter.launches
+
+    # ... but it must NO LONGER do so silently.
+    reason = summary.get('stop_reason')
+    assert reason, (
+        'the wave settled with leaseA never dispatched and reported NO stop_reason — this '
+        'is the silent stranding H9 exists to end: %r' % summary)
+    assert 'leaseA' in reason, ('the stop_reason must name the stranded lease: %r' % reason)
+    assert 'c1' in reason, ('the stop_reason must name the stranded profile: %r' % reason)
+
+    # Durable: an operator reading the checkpoint (not just this process) must see it.
+    with open(checkpoint, encoding='utf-8') as f:
+        cp = json.load(f)
+    assert cp.get('stop_reason') == reason, (
+        'the stranding reason was not persisted to the checkpoint: %r' % cp.get('stop_reason'))
+
+
 TESTS = [
     ('1 two profile-bound leases: peak_concurrency >= 2', test_1_barrier_concurrency),
     ('2 reverse completion == serial order/store bytes', test_2_reverse_completion_determinism),
@@ -845,6 +983,8 @@ TESTS = [
     ('5 promotion-barrier crash: exactly one promotion+TM', test_5_promotion_barrier_crash_exactly_once),
     ('6 max_calls=0/1/3 reservation never exceeded', test_6_reservation_ledger_max_calls),
     ('7 coord-dir exactness + admitted/parked filtering', test_7_coord_dir_and_admitted_parked_filtering),
+    ('8 H9: transient probe failure re-probed on resume', test_8_transient_probe_failure_is_reprobed_on_resume),
+    ('9 H9: settling with undispatched leases reports stop_reason', test_9_settling_with_undispatched_leases_reports_stop_reason),
 ]
 
 

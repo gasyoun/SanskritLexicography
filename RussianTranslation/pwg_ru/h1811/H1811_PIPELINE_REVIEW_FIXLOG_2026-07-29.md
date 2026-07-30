@@ -78,7 +78,7 @@ not touch that branch; a human may archive it.
 | H4 dup lease-id | ⏳ handed to Opus 5 (H1940) | — | — |
 | H7 drain spin | ⏳ handed to Opus 5 (H1940) | — | — |
 | H8 preflight timeout | ⏳ handed to Opus 5 (H1940) | — | — |
-| H9 cohort stranding | ⏳ handed to Opus 5 (H1940) | — | — |
+| H9 cohort stranding | ✅ DONE 30-07-2026 (H1940 Phase 2) — `_failed_profiles` is no longer persisted and a failed probe no longer persists into `probed`, so a **transient** probe exception is re-probed on resume instead of becoming a permanent verdict; a wave that settles with runnable-undispatched leases now records a `stop_reason` naming each lease/profile/cause. Settling itself is unchanged (same partial-wave semantics as the budget path) — what changed is that it is no longer silent | [PR #899](https://github.com/gasyoun/SanskritLexicography/pull/899) | `cohort_engine_selftest` pins **8** (transient probe re-probed on resume) and **9** (settle records `stop_reason`), each verified to FAIL against the pre-H9 engine |
 
 **Bench verification (fixture, per-lease outcomes must equal the pre-change baseline):**
 fx1 clean=3/promoted · fx2 clean=1/promoted_partial (transient `_a_g_ata`, defect
