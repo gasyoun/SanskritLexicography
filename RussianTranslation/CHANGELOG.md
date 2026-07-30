@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.111.0] - 2026-07-30
+
 ### Added — Jamison–Brereton 2014 as a fifth translation column, Renou EVP as a locus witness (H1910, 30-07-2026)
 
 MG lifted R4's exclusion of Jamison–Brereton ("we can add Jamison, ignore copyright") and
