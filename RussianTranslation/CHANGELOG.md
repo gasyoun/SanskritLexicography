@@ -10,6 +10,28 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed — binary-samāsa ruling applied to the compound adjudicator (H1918, 30-07-2026)
+
+MG's ruling: a samāsa's vigraha is always binary (dvandva excepted, and a
+dvandva is never detectable from arity alone). Added `mw_recursive_decomposition`
+to
+[`src/pilot/adjudicate_compound_differs.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/adjudicate_compound_differs.py):
+when PWG's own list is binary and MW lists more members that concatenate to the
+same string, the verdict is `pwg_members-right` — MW's extra granularity is the
+recursive decomposition of the first member (`goṣṭhīpati` = `goṣṭhī + pati`; MW's
+`go + ṣṭhī + pati` also decomposes `goṣṭhī` itself), not a rival split of the
+headword. The 11 rows where PWG itself gives >2 members (possible dvandva) are
+deliberately left out of scope for a human. `--selftest` green, `--write`
+regenerated
+([`research/pwg_compound_differs_adjudication.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_compound_differs_adjudication.tsv)):
+28 rows now carry `mw_recursive_decomposition`.
+[`src/pilot/build_compound_rule_ratification_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_compound_rule_ratification_sheet.py)
+re-cut with the new rule's Russian gloss + claim in its `RULES` book (8 rules,
+30 cards); preflight gate stays green. Per-stratum Wilson bounds in
+[`research/pwg_compound_differs_promotion_plan.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/pwg_compound_differs_promotion_plan.json)
+were recomputed by the same `--write`, not carried forward from the old
+stratification.
+
 ### Changed — offline pipeline speed + hermeticity: in-proc audit chain, stamp memo, PWG_OUTPUT_DIR (H1811, 30-07-2026)
 
 Measured on the hermetic [`h1339_offline_bench`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1339_offline_bench.py)
