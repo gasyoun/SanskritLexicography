@@ -1,6 +1,9 @@
 # Стилевые решения pwg_ru: дублетные глоссы (Апресян) · v. l. · формула «im Comp., vorangehend»
 
-_Created: 21-07-2026 · Last updated: 21-07-2026_
+_Created: 21-07-2026 · Last updated: 31-07-2026_
+
+> Статусная сводка этих трёх вопросов (что ратифицировано, что ждёт голосования) — в
+> стилевом своде: [PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md) (H1859).
 
 Research memo по [H1306](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1306-Fable_RussianTranslation_pwg-ru-style-research-doublets-apresyan_19.07.26.md)
 (поток ратификации веера H1300). Источник вопросов — заметки MG к голосованию DA-листа

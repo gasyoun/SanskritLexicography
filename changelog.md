@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.112.0] — 2026-07-31
+
+### Added
+- **PWG-RU Russian style guide of record** (31-07-2026, Fable 5 `claude-fable-5`, [H1859](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1859-Fable_SanskritLexicography_pwg-ru-russian-style-guide-of-record_29.07.26.md)). [`RussianTranslation/pwg_ru/PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md) (+ sibling metadoc) consolidates every ratified pwg_ru Russian style rule — R1–R4 mechanical orthography/terseness (H1305), German-residue rules (H1302), abbreviation architecture + the 19-07 vote principles (H1303 stream), doublet/`v. l.`/Comp.-formula status (H1306), `{%…%}` gloss-boundary conventions previously report/code-only (H1651/H1702), `<ls>` store-immutability, H858 field-integrity consequences, D2 machine-preview labelling — each rule citing the vote/handoff/PR that ruled it; append-only ledger governance. Honest-status finding baked in: neither `h1303_abbrev.decisions.json` nor `h1306_style.decisions.json` exists on disk (31-07-2026), so the per-token abbreviation list and the A1/B1/C1 recommendations are recorded as awaiting-vote proposals, and the open 10-07 vs 19-07 abbreviation contradiction ([CONTRADICTIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) §4) is surfaced, not silently harmonised. Pointers added from [`pwg_ru.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md) §9b, [`ABBREVIATIONS_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md), [`RU_STYLE_MECHANICAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/RU_STYLE_MECHANICAL.md), [`STYLE_RESEARCH_DOUBLETS_VL_COMP.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/STYLE_RESEARCH_DOUBLETS_VL_COMP.md).
+
 ## [1.111.5] — 2026-07-31
 
 ### Fixed

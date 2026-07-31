@@ -1,6 +1,6 @@
 # Словарь `pwg_ru` — русский перевод Большого Петербургского словаря
 
-_Created: 09-07-2026 · Last updated: 26-07-2026
+_Created: 09-07-2026 · Last updated: 31-07-2026
 
 > Документ для **редактора**. Описывает, **как устроен** AI-перевод Большого
 > Петербургского словаря (`pwg_ru`, Бетлингк–Рот): кто переводит и кто судит
@@ -508,5 +508,6 @@ G7 Palsule остаётся [H1333](https://github.com/gasyoun/Uprava/blob/main/
 | Очередь / WIP | [.ai_state.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md) |
 | MW-редакторский twin | [mw_ru.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/mw_ru.md) |
 | Сокращения / Rektion | [ABBREVIATIONS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md) |
+| **Русский стилевой свод (guide of record)** — все ратифицированные стилевые правила с провенансом | [PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md) (H1859) |
 
 _Dr. Mārcis Gasūns_
