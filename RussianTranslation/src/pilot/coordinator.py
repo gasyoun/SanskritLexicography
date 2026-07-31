@@ -53,7 +53,14 @@ PROBE_RECEIPT_MAX_AGE_SECONDS = 6 * 60 * 60
 PROBE_RECEIPT_SCHEMA = 'pwg.runtime_probe_receipt.v1'
 PROBE_MODEL = 'claude-sonnet-5'
 PROBE_POLICY = 'production_v1'
-PROBE_LATENCY_CEILING_MS = 30000
+# MG ruling 31-07-2026: 30 000 -> 65 000, in lockstep with
+# max_account_orchestrator.PROBE_LATENCY_CEILING_MS (see the full rationale there).
+# These are two INDEPENDENT definitions of the same policy number and must be changed
+# together; that duplication is exactly why the production ceiling stayed at 30 000 and
+# silently kept translation blocked after the gate probe's own ceiling was raised. Not
+# collapsed into one import here because coordinator must not take an import dependency on
+# the orchestrator; the cross-reference comment is the guard instead.
+PROBE_LATENCY_CEILING_MS = 65000
 
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
