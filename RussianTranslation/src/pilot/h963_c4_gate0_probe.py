@@ -29,9 +29,13 @@ so a NO-GO leaves the same immutable trace as a PASS. No retry, no re-warm,
 no reroll. The historical NO-GO (warm-up 29 743 ms / measured 52 815 ms,
 15-07-2026) is NOT overwritten or reinterpreted -- this is a new dated reading.
 
-Gate rule applied here is STRICTER than live_probe's own gate: live_probe
-excludes the warm-up from the ceiling, but the H963 c4 resume brief requires
-that EITHER reading at >= 30 000 ms is a NO-GO. Both are reported.
+Gate rule (MG ruling 31-07-2026): the ceiling is 33 000 ms and applies to the
+MEASURED reading only -- which RESTORES live_probe's own original policy. The
+H963 c4 resume brief's stricter "EITHER reading >= 30 000 ms is a NO-GO" rule is
+what was reverted: it gated on a cold-start warm-up, and on 31-07 that blocked a
+route whose measured call had become the fastest c4 ever recorded. Both readings
+are still taken and reported; the warm-up is advisory for latency only, and a
+warm-up that errors or is absent still fails the gate.
 
 RUN SCOPE (issue #729, fixed 25-07-2026)
 ----------------------------------------
@@ -104,7 +108,23 @@ CAMPAIGN = "h963-c4-single-profile-gate0-2026-07-16"
 EVENTS = HERE / "output" / "h963_c4_gate0_probe_events.jsonl"
 PAYLOAD_BYTES = 6491          # repo default; actual prompt 6828 B (H909 runbook, v1.9.19)
 CEILING_MS = mao.PROBE_LATENCY_CEILING_MS   # 30 000
-STRICT_CEILING_MS = 30_000    # resume brief: EITHER reading >= this is NO-GO
+# MG ruling 31-07-2026: raised 30 000 -> 33 000 (+10 %) and the WARM-UP is no longer a
+# latency NO-GO input. Rationale, from the three dated readings in the c4 gate log: the
+# measured latency has moved 52 815 -> 104 870 -> 31 623 ms, i.e. the 31-07 reading is the
+# best c4 has recorded and missed the old ceiling by 1 623 ms (5.4 %), while the warm-up in
+# the same run was 131 737 ms — 4.2x the measured call. A warm-up that large next to a
+# measured call that small is cold-start cost, not the workload the gate is meant to price,
+# so gating on it blocked a route that had actually become usable. This RESTORES live_probe's
+# own original policy (measured-only); the H963 resume brief's "either reading" rule, noted in
+# this module's header, is the thing being reverted.
+#
+# Honest limitation, stated rather than buried: 33 000 leaves only ~4.2 % headroom over the
+# single reading that motivated it, so a noisy call can still flip this to NO-GO. That is
+# accepted deliberately — the point is to stop blocking translation on a near-miss, not to
+# claim the route is fast. Warm-up remains MEASURED, RECORDED and REPORTED for exactly the
+# tracking/optimisation MG asked for; it simply no longer vetoes.
+STRICT_CEILING_MS = 33_000    # measured reading only; warm-up is observational (MG 31-07-2026)
+WARMUP_IS_ADVISORY = True     # warm-up latency never fails the gate; errors on it still do
 CONN_ERR_CLASSES = {"process", "timeout"}
 
 
@@ -200,10 +220,15 @@ def readings_for(events_path, run_id):
 def derive_fails(readings, strict_ceiling_ms=STRICT_CEILING_MS):
     """The gate policy as a pure function of THIS run's readings. Empty list == PASS.
 
-    Both readings must be present, `success`, free of connection/process errors, and
-    strictly below the ceiling. A missing reading is a FAIL, never a skip -- that is what
-    makes a run whose measured phase never executed a NO-GO instead of silently
-    inheriting someone else's measured row.
+    BOTH readings must still be present, `success`, and free of connection/process errors.
+    A missing reading is a FAIL, never a skip -- that is what makes a run whose measured
+    phase never executed a NO-GO instead of silently inheriting someone else's measured row.
+
+    LATENCY, since MG's 31-07-2026 ruling, is judged on the MEASURED reading only. The
+    warm-up is still taken, recorded and reported -- it is simply advisory, because a
+    cold-start figure prices the first call rather than the workload. Note what did NOT
+    change: a warm-up that errors, is absent, or is not `success` still fails the gate. Only
+    its elapsed time stopped being a veto, so this loosens exactly one input and no other.
     """
     by_purpose = {r.get("purpose"): r for r in readings}
     fails = []
@@ -218,7 +243,8 @@ def derive_fails(readings, strict_ceiling_ms=STRICT_CEILING_MS):
             fails.append("%s classification=%s (not success)" % (label, cls))
         if cls in CONN_ERR_CLASSES:
             fails.append("%s connection/process error (%s)" % (label, cls))
-        if isinstance(ms, int) and ms >= strict_ceiling_ms:
+        latency_gated = not (WARMUP_IS_ADVISORY and key == "warmup")
+        if latency_gated and isinstance(ms, int) and ms >= strict_ceiling_ms:
             fails.append("%s latency %d ms >= %d ms ceiling" % (label, ms, strict_ceiling_ms))
     return fails
 
@@ -406,10 +432,30 @@ def selftest():
         assert derive_fails([by_purpose["measured"], _row(new, "warmup", 17878)]) == [], \
             'the contaminated pairing must be demonstrably PASS-shaped (that is the hazard)'
 
-        # 4. a genuine clean pair still passes; a slow one still fails
+        # 4. a genuine clean pair still passes; a slow MEASURED one still fails
         assert derive_fails([_row(new, "warmup", 17972), _row(new, "measured", 16621)]) == []
         slow = derive_fails([_row(new, "warmup", 17972), _row(new, "measured", 40003)])
-        assert len(slow) == 1 and "40003 ms >= 30000 ms" in slow[0], slow
+        assert len(slow) == 1 and "40003 ms >= 33000 ms" in slow[0], slow
+
+        # 4b. MG ruling 31-07-2026, pinned against the exact reading that motivated it:
+        #     warm-up 131 737 ms + measured 31 623 ms is a PASS. Under the pre-ruling policy
+        #     (30 000 ms ceiling applied to BOTH readings) this same pair produced TWO fails,
+        #     which is what blocked translation on a route whose measured call was the
+        #     fastest c4 had ever recorded.
+        real = [_row(new, "warmup", 131_737), _row(new, "measured", 31_623)]
+        assert derive_fails(real) == [], derive_fails(real)
+        assert len(derive_fails(real, strict_ceiling_ms=30_000)) == 1, \
+            'at the old ceiling the MEASURED reading must still be the only latency fail'
+
+        # 4c. the loosening is exactly one input wide: a warm-up that ERRORS or is ABSENT
+        #     still fails, however fast it was. Only its elapsed time stopped being a veto.
+        assert any("warm-up classification=rate_limit" in f for f in derive_fails(
+            [_row(new, "warmup", 900, "rate_limit"), _row(new, "measured", 16621)]))
+        assert any("warm-up reading absent" in f for f in derive_fails(
+            [_row(new, "measured", 16621)]))
+        # ...and a slow warm-up is never *silently* dropped: it stays in the readings the
+        # caller reports, it simply contributes no fail.
+        assert derive_fails([_row(new, "warmup", 999_999), _row(new, "measured", 16621)]) == []
 
         # 5. run ids are unique per invocation even within the same UTC second
         assert new_run_id(now=0, pid=1) != new_run_id(now=0, pid=2)
