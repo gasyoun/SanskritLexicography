@@ -10,6 +10,16 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — a translate-budget retry erased the card's actual content diagnosis (H2b / H1940 Phase 2, 31-07-2026, OpenAI GPT-5.6 Sol `openrouter/openai/gpt-5.6-sol`)
+
+`headless_worker.resolve_group` used the same unconditional failure-note write for every
+whole-card call error. If attempt 1 returned a card-specific rejection and the next retry
+was refused by the translate-agent ceiling, the blanket `budget_exceeded:translate` note
+replaced the useful diagnosis on every pending key. Budget notes now preserve an existing
+per-key note; non-budget errors retain the prior last-error behavior. A real two-attempt
+selftest is RED on pre-H2b master (`translation-fidelity-reject` was overwritten) and GREEN
+with the fix.
+
 ### Fixed — a malformed manifest crashed the worker with no status file, and the orchestrator retried it (H1 / H1940 Phase 2, 30-07-2026)
 
 `headless_worker main()` read, hashed and decoded the execution manifest *before* entering
