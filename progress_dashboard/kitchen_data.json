@@ -1,0 +1,1264 @@
+{
+  "generated_at": "2026-07-31T18:23:31Z",
+  "schema": "pwg.kitchen.v1",
+  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
+  "site_url": "https://gasyoun.github.io/SanskritLexicography/",
+  "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
+  "local_ops_note": "For sub-second run/gate telemetry on the residential machine, run `python RussianTranslation/src/pilot/dashboard_server.py` (default http://127.0.0.1:8765/, polls every 5s).",
+  "activity": {
+    "translation_on": false,
+    "active_within_seconds": 900,
+    "youngest_artifact_age_seconds": 88006,
+    "window_state": "needs_requeue",
+    "window_root": "no_pwg_w05",
+    "next_action": "Run python src\\pilot\\requeue_from_audit.py <root>, rerun Max Workflow, then rerun audit_window.py.",
+    "artifacts": {
+      "store": {
+        "exists": true,
+        "mtime": "2026-07-30T17:56:39Z",
+        "age_seconds": 88006,
+        "size": 24904391
+      },
+      "window_status": {
+        "exists": true,
+        "mtime": "2026-07-15T20:26:10Z",
+        "age_seconds": 1375035,
+        "size": 53853
+      },
+      "window_ledger": {
+        "exists": true,
+        "mtime": "2026-07-15T20:26:10Z",
+        "age_seconds": 1375035,
+        "size": 314319
+      },
+      "events": {
+        "exists": true,
+        "mtime": "2026-07-24T18:39:44Z",
+        "age_seconds": 603822,
+        "size": 3486985
+      }
+    }
+  },
+  "speed": {
+    "cards_last_hour": 0,
+    "cards_last_24h": 0,
+    "mean_cards_per_active_day_14d": 891.846,
+    "mean_wall_clock_minutes": 3.0,
+    "newest_card_at": "2026-07-14T04:10:54Z",
+    "measured": true
+  },
+  "cost": {
+    "mean_tokens_per_window": null,
+    "windows_in_ledger": 473,
+    "economy": {
+      "measured": true,
+      "source": "generation_api_probe_log.jsonl",
+      "schema": "pwg.economy_ledger.v1",
+      "summary": {
+        "agents_per_clean_incl_requeues": 2.836735,
+        "agents_per_clean_incl_requeues_label": "total agents to fully drain incl. requeues",
+        "agents_per_clean_incl_requeues_basis": "139 agents / 49 clean over 5 rows w/ structured agents_used & clean>0 (fresh windows + their requeues pooled)",
+        "agents_per_clean_first_pass": 3.518519,
+        "agents_per_clean_first_pass_basis": "95 agents / 27 clean over 3 fresh (non-_rq) rows; LEXICAL _rq heuristic — wf_a2b29683-835/no_pwg_w03 is semantically a w02 requeue but carries a fresh-looking label, so first-pass is an approximation",
+        "cost_per_clean_band": {
+          "floor_usd": 0.069861,
+          "ceil_usd": 0.698609,
+          "true_upper_output_rate_usd": 3.493045,
+          "basis": "floor=cache_read rate, ceil=fresh-input rate; EXCLUDES output premium"
+        },
+        "cost_per_clean_band_basis": "pooled 13739312 subagent_tokens over 59 clean cards (blunt total / total clean, all priced outcome rows incl. mixed lanes and the clean=0 wasted run)",
+        "total_tokens": 13739312,
+        "total_clean": 59,
+        "wasted_agents": 58,
+        "wasted_tokens": 1798042,
+        "coverage": {
+          "outcome_rows": 9,
+          "structured_agents_used": 6,
+          "enter_agents_per_clean": 5,
+          "clean0_wasted": 1,
+          "nulled_incomplete": 3,
+          "line": "6/9 outcome rows carry structured agents_used; 5/9 enter agents-per-clean (1 has clean=0 -> wasted_calls; 3 nulled -> incomplete)"
+        },
+        "price_basis_usd_per_million": {
+          "input": 3.0,
+          "output": 15.0,
+          "cache_write": 3.75,
+          "cache_read": 0.3
+        },
+        "agents_per_clean": 2.836735
+      }
+    },
+    "measured": true
+  },
+  "idle": {
+    "measured": true,
+    "min_idle_seconds": 120,
+    "gap_count": 127,
+    "total_idle_seconds": 1549947,
+    "total_idle_hours": 430.54,
+    "mean_gap_seconds": 12204.307,
+    "current_idle_seconds": 88011,
+    "recent_gaps": [
+      {
+        "from": "2026-07-04T20:44:40Z",
+        "to": "2026-07-04T20:52:05Z",
+        "seconds": 445,
+        "after_root": "dah",
+        "before_root": "dah",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-04T20:52:05Z",
+        "to": "2026-07-05T21:37:54Z",
+        "seconds": 89149,
+        "after_root": "dah",
+        "before_root": "nominal_w1_100small",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-05T21:37:54Z",
+        "to": "2026-07-05T21:40:01Z",
+        "seconds": 127,
+        "after_root": "nominal_w1_100small",
+        "before_root": "nominal_w1_100small",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-05T21:40:01Z",
+        "to": "2026-07-05T22:10:50Z",
+        "seconds": 1849,
+        "after_root": "nominal_w1_100small",
+        "before_root": "nominal_w1_100small",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-05T22:10:50Z",
+        "to": "2026-07-06T08:46:37Z",
+        "seconds": 38147,
+        "after_root": "nominal_w1_100small",
+        "before_root": "no_pwg_w1",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-06T08:48:41Z",
+        "to": "2026-07-06T20:55:18Z",
+        "seconds": 43597,
+        "after_root": "no_pwg_w1",
+        "before_root": "dah",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-06T20:55:18Z",
+        "to": "2026-07-10T17:29:32Z",
+        "seconds": 333254,
+        "after_root": "dah",
+        "before_root": "no_pwg_w02",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-10T17:29:32Z",
+        "to": "2026-07-11T12:35:01Z",
+        "seconds": 68729,
+        "after_root": "no_pwg_w02",
+        "before_root": "no_pwg_w03",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T12:35:01Z",
+        "to": "2026-07-11T14:07:24Z",
+        "seconds": 5543,
+        "after_root": "no_pwg_w03",
+        "before_root": "no_pwg_w03",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T14:07:24Z",
+        "to": "2026-07-11T14:11:53Z",
+        "seconds": 269,
+        "after_root": "no_pwg_w03",
+        "before_root": "no_pwg_w03_rq1",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T14:11:53Z",
+        "to": "2026-07-11T17:49:52Z",
+        "seconds": 13079,
+        "after_root": "no_pwg_w03_rq1",
+        "before_root": "no_pwg_w04",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T17:49:52Z",
+        "to": "2026-07-11T17:54:25Z",
+        "seconds": 273,
+        "after_root": "no_pwg_w04",
+        "before_root": "no_pwg_w04_rq1",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T17:54:25Z",
+        "to": "2026-07-11T18:28:43Z",
+        "seconds": 2058,
+        "after_root": "no_pwg_w04_rq1",
+        "before_root": "no_pwg_w05",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T18:28:43Z",
+        "to": "2026-07-11T18:34:18Z",
+        "seconds": 335,
+        "after_root": "no_pwg_w05",
+        "before_root": "no_pwg_w05_rq1",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T18:34:18Z",
+        "to": "2026-07-15T20:25:23Z",
+        "seconds": 352265,
+        "after_root": "no_pwg_w05_rq1",
+        "before_root": null,
+        "source": "ledger_gap"
+      }
+    ]
+  },
+  "calendar": {
+    "start": "2026-04-03",
+    "end": "2026-07-31",
+    "days": 120,
+    "cells": [
+      {
+        "date": "2026-04-03",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-04",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-05",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-06",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-07",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-08",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-09",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-10",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-11",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-12",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-13",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-14",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-15",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-16",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-17",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-18",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-19",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-20",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-21",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-22",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-23",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-24",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-25",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-26",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-27",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-28",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-29",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-04-30",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-01",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-02",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-03",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-04",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-05",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-06",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-07",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-08",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-09",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-10",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-11",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-12",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-13",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-14",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-15",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-16",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-17",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-18",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-19",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-20",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-21",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-22",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-23",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-24",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-25",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-26",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-27",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-28",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-29",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-30",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-05-31",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-01",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-02",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-03",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-04",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-05",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-06",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-07",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-08",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-09",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-10",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-11",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-12",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-13",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-14",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-15",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-16",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-17",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-18",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-19",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-20",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-21",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-22",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-23",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-24",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-25",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-26",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-06-27",
+        "cards": 0,
+        "windows": 13,
+        "level": 0
+      },
+      {
+        "date": "2026-06-28",
+        "cards": 0,
+        "windows": 40,
+        "level": 0
+      },
+      {
+        "date": "2026-06-29",
+        "cards": 6033,
+        "windows": 174,
+        "level": 4
+      },
+      {
+        "date": "2026-06-30",
+        "cards": 2530,
+        "windows": 52,
+        "level": 4
+      },
+      {
+        "date": "2026-07-01",
+        "cards": 1194,
+        "windows": 119,
+        "level": 4
+      },
+      {
+        "date": "2026-07-02",
+        "cards": 0,
+        "windows": 16,
+        "level": 0
+      },
+      {
+        "date": "2026-07-03",
+        "cards": 673,
+        "windows": 20,
+        "level": 4
+      },
+      {
+        "date": "2026-07-04",
+        "cards": 416,
+        "windows": 9,
+        "level": 4
+      },
+      {
+        "date": "2026-07-05",
+        "cards": 306,
+        "windows": 3,
+        "level": 4
+      },
+      {
+        "date": "2026-07-06",
+        "cards": 79,
+        "windows": 4,
+        "level": 3
+      },
+      {
+        "date": "2026-07-07",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-08",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-09",
+        "cards": 14,
+        "windows": 0,
+        "level": 2
+      },
+      {
+        "date": "2026-07-10",
+        "cards": 61,
+        "windows": 1,
+        "level": 3
+      },
+      {
+        "date": "2026-07-11",
+        "cards": 188,
+        "windows": 7,
+        "level": 4
+      },
+      {
+        "date": "2026-07-12",
+        "cards": 48,
+        "windows": 0,
+        "level": 3
+      },
+      {
+        "date": "2026-07-13",
+        "cards": 37,
+        "windows": 0,
+        "level": 3
+      },
+      {
+        "date": "2026-07-14",
+        "cards": 15,
+        "windows": 0,
+        "level": 2
+      },
+      {
+        "date": "2026-07-15",
+        "cards": 0,
+        "windows": 15,
+        "level": 0
+      },
+      {
+        "date": "2026-07-16",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-17",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-18",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-19",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-20",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-21",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-22",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-23",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-24",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-25",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-26",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-27",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-28",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-29",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-30",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-07-31",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      }
+    ],
+    "max_cards": 6033,
+    "active_days": 17
+  },
+  "changelog": {
+    "measured": true,
+    "source": "RussianTranslation/CHANGELOG.md",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md",
+    "entries": [
+      {
+        "version": "1.111.5",
+        "date": "2026-07-31",
+        "bullets": [
+          {
+            "title": "Fixed — checkpoints and status files were atomic but never flushed to disk (H3 / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)",
+            "summary": ""
+          },
+          {
+            "title": "Fixed — `claim` accepted a duplicate `--lease-id` and persisted an unreachable second lease (H4 / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)",
+            "summary": ""
+          },
+          {
+            "title": "Changed — the residual ledger re-read itself once per key (O(n²) / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)",
+            "summary": ""
+          },
+          {
+            "title": "Fixed — a stalled window burned its whole iteration ceiling at full speed instead of stopping (H7 / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)",
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "version": "1.111.2",
+        "date": "2026-07-30",
+        "bullets": [
+          {
+            "title": "Fixed — LANG_PARITY re-affirmed for the three files H1902 left drifting; master is green again (H1940, 30-07-2026)",
+            "summary": ""
+          },
+          {
+            "title": "Fixed — FINDINGS citation-number collision from the H1910 propagation pass (30-07-2026)",
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "version": "1.111.1",
+        "date": "2026-07-30",
+        "bullets": [
+          {
+            "title": "Fixed — LANG_PARITY hash re-stamped on human authorisation; the selftest suite is fully green (H1910 follow-up, 30-07-2026)",
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "version": "1.111.0",
+        "date": "2026-07-30",
+        "bullets": [
+          {
+            "title": "Added — Jamison–Brereton 2014 as a fifth translation column, Renou EVP as a locus witness (H1910, 30-07-2026)",
+            "summary": ""
+          },
+          {
+            "title": "Changed — ratification sheet v2: eight corrections from MG's first read (H1907, 30-07-2026)",
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "version": "1.110.0",
+        "date": "2026-07-30",
+        "bullets": [
+          {
+            "title": "Changed — ratification sheet v2: eight corrections from MG's first read ([H1923](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1923-Opus_SanskritLexicography_ratification-sheet-v2-mg-eight-points_30.07.26.md), 30-07-2026)",
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "version": "1.108.0",
+        "date": "2026-07-29",
+        "bullets": [
+          {
+            "title": "Fixed — NWS-layer citations in the Roman-numeral convention now resolve to Cologne links (H1809, 29-07-2026)",
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "version": "1.106.0",
+        "date": "2026-07-29",
+        "bullets": [
+          {
+            "title": "Added — review sheets must reuse what the repo already knows, enforced before write (H1887, 29-07-2026)",
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "version": "1.99.0",
+        "date": "2026-07-29",
+        "bullets": [
+          {
+            "title": "Added — RV multi-translation evidence spine, wave 1a: griffith/stanza/lemma/renou (H1843, 29-07-2026)",
+            "summary": ""
+          },
+          {
+            "title": "Added — audit record for the Gorresio map audit sheet; G2.4.7 flagged for re-vote (29-07-2026)",
+            "summary": ""
+          },
+          {
+            "title": "Added — execution-ready plan: the Rig-Veda multi-translation evidence layer (H1843/H1844, 29-07-2026)",
+            "summary": ""
+          },
+          {
+            "title": "Changed — the G5 card is legible: печатный вид, кликабельные цитаты, подсказки к пометам (H1808, 29-07-2026)",
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "version": "1.82.0",
+        "date": "2026-07-26",
+        "bullets": [
+          {
+            "title": "Added — H1689: Gorresio vols 2/4/uk OCRed, e-text now covers all 7 kāṇḍas — `gorresio-etext-gap` extinct (26-07-2026)",
+            "summary": ""
+          },
+          {
+            "title": "Added — H1682: h1303_abbrev review-sheet rule-collapse (26-07-2026)",
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "version": "1.79.0",
+        "date": "2026-07-26",
+        "bullets": [
+          {
+            "title": "Changed — Gorresio map audit round 1: 28/32 approve; 4 half-verse-shift rows switched off (26-07-2026)",
+            "summary": ""
+          },
+          {
+            "title": "Added — H1651 store wrapper-defect sweep D1-D4, live gate follow-up (26-07-2026)",
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "version": "1.78.0",
+        "date": "2026-07-26",
+        "bullets": [
+          {
+            "title": "Fixed — H1670: PWG-sense × DCS grounding 0.67% → 12.25% (26-07-2026)",
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "version": "1.77.0",
+        "date": "2026-07-26",
+        "bullets": [
+          {
+            "title": "Added — H1656 follow-on: Gorresio e-text recovered; Rāmāyaṇa citation reuse ON (26-07-2026)",
+            "summary": ""
+          },
+          {
+            "title": "Fixed — shingle phase-parity bug in the concordance aligner (26-07-2026)",
+            "summary": ""
+          },
+          {
+            "title": "Changed — H1664 voting-queue triage: every pending sheet ruled A/HYBRID/HUMAN-ONLY (26-07-2026)",
+            "summary": ""
+          },
+          {
+            "title": "Changed — H1633 rulings R1–R5 recorded; G6b gate born; A51 deferred to 2028 (26-07-2026)",
+            "summary": ""
+          }
+        ]
+      }
+    ]
+  },
+  "recent_windows": [
+    {
+      "recorded_at": "2026-07-15T20:25:28Z",
+      "root": null,
+      "state": "needs_requeue",
+      "workflow_keys": 47,
+      "translated": 40,
+      "requeue_count": 29,
+      "wall_clock_minutes": null,
+      "tokens": null
+    },
+    {
+      "recorded_at": "2026-07-15T20:25:30Z",
+      "root": null,
+      "state": "needs_requeue",
+      "workflow_keys": 13,
+      "translated": 11,
+      "requeue_count": 4,
+      "wall_clock_minutes": null,
+      "tokens": null
+    },
+    {
+      "recorded_at": "2026-07-15T20:25:31Z",
+      "root": null,
+      "state": "transient_only",
+      "workflow_keys": 2,
+      "translated": 1,
+      "requeue_count": 1,
+      "wall_clock_minutes": null,
+      "tokens": null
+    },
+    {
+      "recorded_at": "2026-07-15T20:25:33Z",
+      "root": null,
+      "state": "needs_requeue",
+      "workflow_keys": 35,
+      "translated": 31,
+      "requeue_count": 17,
+      "wall_clock_minutes": null,
+      "tokens": null
+    },
+    {
+      "recorded_at": "2026-07-15T20:25:35Z",
+      "root": null,
+      "state": "needs_requeue",
+      "workflow_keys": 13,
+      "translated": 10,
+      "requeue_count": 5,
+      "wall_clock_minutes": null,
+      "tokens": null
+    },
+    {
+      "recorded_at": "2026-07-15T20:25:38Z",
+      "root": null,
+      "state": "needs_requeue",
+      "workflow_keys": 44,
+      "translated": 37,
+      "requeue_count": 25,
+      "wall_clock_minutes": null,
+      "tokens": null
+    },
+    {
+      "recorded_at": "2026-07-15T20:25:40Z",
+      "root": null,
+      "state": "needs_requeue",
+      "workflow_keys": 21,
+      "translated": 17,
+      "requeue_count": 7,
+      "wall_clock_minutes": null,
+      "tokens": null
+    },
+    {
+      "recorded_at": "2026-07-15T20:25:42Z",
+      "root": null,
+      "state": "needs_requeue",
+      "workflow_keys": 5,
+      "translated": 5,
+      "requeue_count": 1,
+      "wall_clock_minutes": null,
+      "tokens": null
+    },
+    {
+      "recorded_at": "2026-07-15T20:25:44Z",
+      "root": null,
+      "state": "needs_requeue",
+      "workflow_keys": 58,
+      "translated": 46,
+      "requeue_count": 55,
+      "wall_clock_minutes": null,
+      "tokens": null
+    },
+    {
+      "recorded_at": "2026-07-15T20:25:46Z",
+      "root": null,
+      "state": "needs_requeue",
+      "workflow_keys": 52,
+      "translated": 45,
+      "requeue_count": 51,
+      "wall_clock_minutes": null,
+      "tokens": null
+    },
+    {
+      "recorded_at": "2026-07-15T20:25:49Z",
+      "root": null,
+      "state": "needs_requeue",
+      "workflow_keys": 46,
+      "translated": 40,
+      "requeue_count": 41,
+      "wall_clock_minutes": null,
+      "tokens": null
+    },
+    {
+      "recorded_at": "2026-07-15T20:26:10Z",
+      "root": null,
+      "state": "needs_requeue",
+      "workflow_keys": 44,
+      "translated": 37,
+      "requeue_count": 25,
+      "wall_clock_minutes": null,
+      "tokens": null
+    }
+  ],
+  "last_window": {
+    "recorded_at": "2026-07-15T20:26:10Z",
+    "root": null,
+    "state": "needs_requeue",
+    "workflow_keys": 44,
+    "translated": 37,
+    "requeue_count": 25,
+    "wall_clock_minutes": null,
+    "tokens": null
+  }
+}
