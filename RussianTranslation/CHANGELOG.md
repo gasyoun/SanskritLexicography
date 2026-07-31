@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.111.5] - 2026-07-31
+
 ### Fixed — checkpoints and status files were atomic but never flushed to disk (H3 / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)
 
 `headless_worker.atomic_json`, `bounded_supervisor._write_checkpoint` and
