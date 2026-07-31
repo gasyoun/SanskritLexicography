@@ -1,0 +1,35 @@
+{
+  "upload_type": "software",
+  "access_right": "open",
+  "title": "SanskritLexicography — a data and research workspace for Sanskrit digital lexicography",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Gasūns, Mārcis",
+      "orcid": "0000-0003-4513-884X",
+      "affiliation": "Independent scholar"
+    }
+  ],
+  "description": "<p>A data and research workspace for Sanskrit digital lexicography, built around the Cologne Digital Sanskrit Lexicon (CDSL) ecosystem. It holds headword exports and cross-dictionary comparison material for some 16 dictionaries (key1 normalised and key2 print-faithful forms), AI-assisted Russian translations of Monier-Williams (<em>mw_ru</em>) and of the Petersburg Dictionary / Böhtlingk-Roth (<em>pwg_ru</em>) together with the pipelines that produce and audit them, research notes and roadmaps, and Russian-language teaching material on Sanskrit lexical and syntactic study.</p><p><strong>Licensing is deliberately split.</strong> Repository code and tooling are MIT. Derived statistics datasets published under FAIR Release #1 (the markup-tag census and the headword-overlap matrix) are CC-BY-4.0 — see <code>data/FAIR_RELEASE_1.md</code> and <code>DATA_LICENSE.md</code> in the repository. A derived dataset released from this workspace carries its <em>own</em> DOI; this record's DOI covers the repository, not any dataset within it.</p><p>Part of the wider <a href=\"https://github.com/sanskrit-lexicon\">Sanskrit Lexicon</a> project. Source dictionary texts are corrected upstream in <code>csl-orig</code> and are not redistributed here.</p>",
+  "keywords": [
+    "sanskrit",
+    "lexicography",
+    "cdsl",
+    "digital humanities",
+    "russian translation",
+    "statistics census",
+    "headword lists",
+    "monier-williams",
+    "petersburg dictionary",
+    "machine translation",
+    "corpus linguistics"
+  ],
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/sanskrit-lexicon",
+      "relation": "isPartOf",
+      "scheme": "url"
+    }
+  ]
+}
