@@ -128,19 +128,29 @@ on the same clock.
    reports stale/idle/on from snapshot age.
 4. Localhost is never a substitute for the Pages URL (and vice versa).
 
-**Start local:**
+**Autostart (preferred — no manual step).** Residential Task Scheduler at logon:
+
+| Task | Role |
+|---|---|
+| `SL progress dashboard server` | local ops :8765 |
+| `SL progress live refresh` | web kitchen publish (`--idle-stop 0`) |
 
 ```powershell
-# from RussianTranslation/
-python src\pilot\dashboard_server.py
-# → http://127.0.0.1:8765/   (default --refresh-ms 5000)
+# once per machine; -StartNow launches without waiting for next logon
+powershell -ExecutionPolicy Bypass -File progress_dashboard\windows\register_tasks.ps1 -StartNow
 ```
 
-**Publish web kitchen while translating:**
+Full notes: [progress_dashboard/windows/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md).
+
+**Manual start (fallback if tasks are off):**
 
 ```powershell
-# from SanskritLexicography repo root (PWG_DATA_ROOT if worktree lacks the store)
-python progress_dashboard\live_refresh.py
+# local ops — from RussianTranslation/
+python src\pilot\dashboard_server.py
+# → http://127.0.0.1:8765/   (default --refresh-ms 5000)
+
+# web kitchen — from SanskritLexicography repo root
+python progress_dashboard\live_refresh.py --idle-stop 0
 ```
 
 Each HTML surface carries the same dual-surface callout and links back here and

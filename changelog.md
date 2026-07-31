@@ -14,6 +14,12 @@ not an error.
 
 ## [Unreleased]
 
+## [1.114.5] - 2026-07-31
+
+### Added
+
+- **Task Scheduler autostart for both PWG→RU dashboards** (31-07-2026, Grok 4.5 `grok-4.5`, H2032 follow-up): no manual start required after logon. New [`progress_dashboard/windows/`](https://github.com/gasyoun/SanskritLexicography/tree/master/progress_dashboard/windows) — `run_dashboard_server.cmd` (single-instance on :8765), `run_live_refresh.cmd` (`live_refresh.py --idle-stop 0`), and `register_tasks.ps1` which creates **`SL progress dashboard server`** + **`SL progress live refresh`** (logon trigger, StartWhenAvailable, RestartOnFailure every 1 min × 999, InteractiveToken, same shape as `SL findings dashboard refresh` / H737). Register once: `powershell -ExecutionPolicy Bypass -File progress_dashboard\windows\register_tasks.ps1 -StartNow`. Docs: windows/README + progress_dashboard/README + RU deep manual §2d.
+
 ## [1.114.4] - 2026-07-31
 
 ### Fixed
