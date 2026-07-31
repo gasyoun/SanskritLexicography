@@ -2,6 +2,22 @@
 
 _Created: 10-07-2026 · Last updated: 31-07-2026_
 
+## Autostart (no manual step)
+
+On the residential machine, Task Scheduler starts both surfaces at **logon**:
+
+| Task | Surface |
+|---|---|
+| `SL progress dashboard server` | local ops http://127.0.0.1:8765/ (5 s) |
+| `SL progress live refresh` | web kitchen publish every 60 s while translating |
+
+```powershell
+# once per machine (or after clone path change)
+powershell -ExecutionPolicy Bypass -File progress_dashboard\windows\register_tasks.ps1 -StartNow
+```
+
+Details: [`windows/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md).
+
 Public companion to the [article site](https://gasyoun.github.io/SanskritLexicography/).
 Where the article site shows the **finished** PWG→Russian translations, this shows:
 

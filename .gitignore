@@ -129,6 +129,7 @@ papers/sanskrit_in_numbers/.cache/
 # H737: scheduled-task refresh log (written into the main checkout by Task Scheduler)
 findings_dashboard/refresh.log
 progress_dashboard/live_refresh.log
+progress_dashboard/windows/*.log
 
 # H1657: regenerable in seconds from p2_agent_verdicts.jsonl.gz, ~5 MB each
 HeadwordLists/works_catalogue/p2_agent_decisions.json
