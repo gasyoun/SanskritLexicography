@@ -1,6 +1,9 @@
 # RU_STYLE_MECHANICAL.md — mechanical Russian-output style rules (no-ё, terse metalanguage)
 
-_Created: 19-07-2026 · Last updated: 19-07-2026_
+_Created: 19-07-2026 · Last updated: 31-07-2026_
+
+> Rules R1–R4 are consolidated, with all other ratified pwg_ru style rules, in the guide
+> of record: [PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md) (H1859).
 
 Handoff: [H1305](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1305-Sonnet_RussianTranslation_pwg-ru-style-mechanical-yo-terseness-sweep_19.07.26.md)
 · Model: Sonnet 5 (`claude-sonnet-5`) · Register:
