@@ -214,8 +214,12 @@ EN-стор на этой машине отсутствует (gitignored), за
 
 ## 5. Дальше (фаза 2 — после голосования)
 
-Лист ратификации `h1306_style` (эмиттер `csl_pyutil.render_review_sheet`):
-`RussianTranslation/review/h1306_style_sheet.html` (local-only, gitignored), экспорт голосов —
+Лист ратификации `h1306_style` (эмиттер `csl_pyutil.render_review_sheet` + H1404
+`review_binding` stamp/lock; **remade 31-07-2026** — the 21-07 local copy was
+unstamped, unreadable under blanket `mark_cyrillic`, and had no committed generator):
+regen `python src/build_h1306_style_sheet.py` →
+`RussianTranslation/review/h1306_style_sheet.html` (local-only, gitignored) + lock
+`review/locks/h1306_style.lock.json`. Экспорт голосов —
 `pwg_ru/eval/h1306_style.decisions.json`. Зарегистрирован в
 [REVIEW_SHEETS_INDEX.md](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md);
 процедура — [HUMAN_VOTE_GUIDE.md](https://github.com/gasyoun/Uprava/blob/main/HUMAN_VOTE_GUIDE.md).

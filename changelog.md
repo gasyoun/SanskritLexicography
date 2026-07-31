@@ -14,6 +14,10 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+
+- **h1306_style ratification sheet remade for vote** (31-07-2026, Grok 4.5 `grok-4.5`): the 21-07 Phase-1 local sheet was unstamped (no H1404 `content_hash`/lock), lacked `font_scale`, and had blanket `mark_cyrillic` on pure-Russian policy prose (464 yellow marks / 9 cards — unreadable). Zero votes cast, so supersession-by-remake is legal (H1655). New committed generator [`RussianTranslation/src/build_h1306_style_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_h1306_style_sheet.py) re-emits the same A1–C3 cards from the research memo, on current emitter + binding; lock at [`RussianTranslation/review/locks/h1306_style.lock.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/locks/h1306_style.lock.json) (`sha256:c760510d…`). Sibling `h1682_abbrev_rules` re-verified reproduce-stable against its #917 lock (`sha256:14403a33…`). HTML remains gitignored under `review/`; regen from `RussianTranslation/`.
+
 ## [1.114.3] - 2026-07-31
 
 ### Fixed
