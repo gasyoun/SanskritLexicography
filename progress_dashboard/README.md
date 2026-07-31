@@ -9,7 +9,17 @@ Where the article site shows the **finished** PWG→Russian translations, this s
 2. **Kitchen** — the process behind the work: speed, cost, idle gaps, campaign calendar,
    and the project web changelog.
 
-Published at **`/progress/`** on gh-pages.
+## Two dashboards — do not conflate them
+
+| Surface | URL | Browser poll | Data publisher | Audience |
+|---|---|---|---|---|
+| **Web kitchen (this folder)** | [gasyoun.github.io/…/progress/](https://gasyoun.github.io/SanskritLexicography/progress/) | **every 60 s** | residential [`live_refresh.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/live_refresh.py) while translation is on | anyone with the link |
+| **Local ops** | `http://127.0.0.1:8765/` | **every 5 s** | live read of gitignored store/ledger on this machine | operator on the residential box |
+
+- **Web ≠ live socket.** The public page only moves when `live_refresh.py` (or a manual rebuild + gh-pages publish) has run since the last store change. A rendered page can still be **stale**.
+- **Local ≠ public.** [`dashboard_server.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/dashboard_server.py) never leaves localhost; GitHub Actions cannot see the store.
+- Operator depth (when to open which surface): [RUSSIANTRANSLATION_DEEP_MANUAL.md §2d](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md).
+- Orientation row: [MAINTAINER_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/MAINTAINER_MANUAL.md) (progress_dashboard + local ops).
 
 > **Caveat (still true):** a dashboard that *renders* is not a dashboard that is *current*.
 > Trust the numbers only when a generator has re-run since the last store change. The fix

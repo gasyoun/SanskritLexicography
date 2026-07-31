@@ -1,6 +1,6 @@
 # RussianTranslation deep manual — the mw_ru and pwg_ru pipelines
 
-_Created: 11-07-2026 · Last updated: 25-07-2026_
+_Created: 11-07-2026 · Last updated: 31-07-2026_
 
 The subsystem deep manual for
 [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation)
@@ -102,10 +102,50 @@ in this order on first contact.
 | The five harvested Sa→Ru dictionaries (Russian) | [src/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/README.md) |
 | **What markup layers can / cannot answer** (Q/N matrix) | [pwg_ru.md §8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md) (canonical; editor RU) + **§2b below** (EN summary) |
 | **DE editorial principles** (derived vs voted vs undecided) | [EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md) (H1634) |
+| **Web kitchen vs local ops** (60 s public · 5 s localhost) | **§2d below** + [progress_dashboard/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/README.md) |
 
 Trust order when they disagree: **command output** (`root_window_status.py`,
 `window_status.json`) > `.ai_state.md` > the dated docs. Several docs carry
 explicit staleness banners — respect them.
+
+## 2d. Dashboards — local 5 s vs web 60 s (interlinked)
+
+There are **two** PWG→RU operator surfaces. They share the same underlying
+gitignored artifacts, but they are not the same page and they do not refresh
+on the same clock.
+
+| Surface | URL | Browser poll | What it is | How numbers update |
+|---|---|---|---|---|
+| **Local ops** | `http://127.0.0.1:8765/` | **every 5 s** | Run status, gates, ledger tail, events, evolution timelapse | Live read of files on *this* machine via [`dashboard_server.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/dashboard_server.py) |
+| **Web kitchen** | [gasyoun.github.io/…/progress/](https://gasyoun.github.io/SanskritLexicography/progress/) | **every 60 s** | Public progress + kitchen (speed, cost, idle, calendar, changelog) | Residential [`live_refresh.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/live_refresh.py) rebuilds aggregates and pushes **only** `gh-pages/progress/` while translation artifacts are moving |
+
+**Rules of thumb.**
+
+1. During a paid window on the residential box → open **local 5 s** for gates/next action.
+2. To show campaign progress on the public internet → open **web 60 s**; keep
+   `python progress_dashboard/live_refresh.py` running so Pages stays current.
+3. A web page that *loads* is not automatically *current* — the chip on `/progress/`
+   reports stale/idle/on from snapshot age.
+4. Localhost is never a substitute for the Pages URL (and vice versa).
+
+**Start local:**
+
+```powershell
+# from RussianTranslation/
+python src\pilot\dashboard_server.py
+# → http://127.0.0.1:8765/   (default --refresh-ms 5000)
+```
+
+**Publish web kitchen while translating:**
+
+```powershell
+# from SanskritLexicography repo root (PWG_DATA_ROOT if worktree lacks the store)
+python progress_dashboard\live_refresh.py
+```
+
+Each HTML surface carries the same dual-surface callout and links back here and
+to [progress_dashboard/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/README.md).
+Orientation row also in [MAINTAINER_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/MAINTAINER_MANUAL.md).
 
 ## 2b. Capability map — questions layers answer (and do not)
 
