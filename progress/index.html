@@ -90,12 +90,11 @@
   <b>Web vs local (do not conflate).</b>
   This page is the <b>public web kitchen</b>: the browser re-fetches JSON
   <b>every 60&nbsp;s</b>; numbers only move when residential
-  <code>progress_dashboard/live_refresh.py</code> has published to gh-pages.
-  For <b>5&nbsp;s</b> run/gate telemetry on the machine doing the work, open the
-  local ops dashboard (not on the public internet):
-  <code>python RussianTranslation/src/pilot/dashboard_server.py</code>
-  → <a class="mono" href="http://127.0.0.1:8765/">http://127.0.0.1:8765/</a>
-  (opens on <em>this</em> PC only — only works when <code>dashboard_server.py</code> is running here).
+  <code>live_refresh.py</code> has published to gh-pages (Task Scheduler
+  <code>SL progress live refresh</code> at logon — no manual start while logged on).
+  For <b>5&nbsp;s</b> run/gate telemetry on the machine doing the work:
+  <a class="mono" href="http://127.0.0.1:8765/">http://127.0.0.1:8765/</a>
+  (task <code>SL progress dashboard server</code>; opens on <em>this</em> PC only).
   <table>
     <tr><th>Surface</th><th>Poll</th><th>Where</th></tr>
     <tr><td>Web kitchen (this page)</td><td class="num">60&nbsp;s</td><td><a href="https://gasyoun.github.io/SanskritLexicography/progress/">/progress/</a></td></tr>
@@ -103,6 +102,8 @@
   </table>
   Docs:
   <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/README.md">progress_dashboard/README</a>
+  ·
+  <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md">windows autostart + human @DO</a>
   ·
   <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md">RU deep manual §2d</a>
   ·
