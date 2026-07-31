@@ -14,6 +14,12 @@ not an error.
 
 ## [Unreleased]
 
+## [1.114.8] - 2026-07-31
+
+### Changed
+
+- **Dashboard logon-only policy** (31-07-2026, Grok 4.5 `grok-4.5`): kitchen/local ops stay **`InteractiveToken`** (run at logon). When Windows is off there is no translation on that box, so logged-off stored credentials are **not** an open `@DO`. Revisit only for multi-PC concurrent translation. Docs: [windows/README](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md), [progress_dashboard/README](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/README.md), [RU deep manual §2d](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md). Closes the residual filed as Uprava GTD PR #1574.
+
 ## [1.114.7] - 2026-07-31
 
 ### Changed
