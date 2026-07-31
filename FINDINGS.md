@@ -52,6 +52,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§501. An A/B whose "clean" metric scores the last attempt that RETURNED, not what the pipeline would ship, can name the wrong winner — and did](#501-an-ab-whose-clean-metric-scores-the-last-attempt-that-returned-not-what-the-pipeline-would-ship-can-name-the-wrong-winner--and-did)
 - ✅ [§503. A git worktree silently disables every sibling-repo lookup in `src/` — artifacts rebuilt there lose layers without failing](#503-a-git-worktree-silently-disables-every-sibling-repo-lookup-in-src--artifacts-rebuilt-there-lose-layers-without-failing)
 - 🔴 [§510. A frozen local checkout is an actively misleading source for any append-only registry — read the numbering contract from `origin/`, not from disk](#510-a-frozen-local-checkout-is-an-actively-misleading-source-for-any-append-only-registry--read-the-numbering-contract-from-origin-not-from-disk) — one session, two collisions: a 177-commits-behind checkout showed §462 as the ceiling when `origin` had 166 findings, and the in-file next-free marker was stale too. Read the contract from `origin/`, derive the ceiling from the headings, and assert the marker sits above every used number.
+- 🔴 [§511. MW72 carries ZERO `<ls>` source citations — every cross-dictionary citation test that names it shrinks to MW](#511-mw72-carries-zero-ls-source-citations--every-cross-dictionary-citation-test-that-names-it-shrinks-to-mw) — `csl-orig/v02/mw72/mw72.txt` is 17.2 MB and contains not one `<ls>` tag, while MW has 320,828. Any apparatus/citation comparison that lists MW72 as a target silently produces a zero, not an error. Verify a dictionary's tag layer before scoping a test around it.
 - 🟠 [§504. The NWS tag layer reaches only 2.2 % of the RU store — a facet bar over it is right, but it is not the sheet's main axis](#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis)
 
 
@@ -5119,6 +5120,55 @@ lookups in `src/`): both are cases where the *location* of the checkout, not the
 the outcome — and in both the failure was silent rather than loud.
 
 > Opus 5 1M `claude-opus-5[1m]` · 2026-07-30
+
+
+### §511. MW72 carries ZERO `<ls>` source citations — every cross-dictionary citation test that names it shrinks to MW
+
+🔴 **A dictionary named in a plan is not a dictionary that carries the tag layer the plan
+needs.** Evidence (H1827, 31-07-2026, csl-atlas): the PET-MW-CITE citation-truncation
+handoff scoped its test as "PWG/PW/PWK ↔ MW/MW72". A one-line count before writing the
+builder:
+
+| dict | file | `<ls>` tags |
+|---|---|---:|
+| PWG | `csl-orig/v02/pwg/pwg.txt` (54.6 MB) | 801,788 |
+| MW | `csl-orig/v02/mw/mw.txt` (50.2 MB) | 320,828 |
+| PWK | `csl-orig/v02/pw/pw.txt` (31.5 MB) | 98,485 |
+| PWKVN | `csl-orig/v02/pwkvn/pwkvn.txt` | 17,627 |
+| **MW72** | `csl-orig/v02/mw72/mw72.txt` (17.2 MB) | **0** |
+
+MW72 is a full 17.2 MB digitisation with 55,390 entries and a working `<h>` homonym index —
+it is not a stub. It simply has no tagged source-citation layer at all. csl-atlas's
+`scripts/lib/dict-feature-adapters.mjs` already encodes this (MW72 appears under `homonyms`
+and `senses`, and is **absent** from `citations`), but the absence is a missing key, not a
+stated fact, so a plan written from the dictionary roster rather than from the adapter table
+will name MW72 as a citation target and read nothing back.
+
+Three consequences worth carrying:
+
+1. **A missing tag layer produces a zero, not an error.** Every `<ls>`-driven metric —
+   apparatus density, source overlap, citation cosine, truncation depth — evaluates cleanly
+   to 0 / empty for MW72. Without an explicit guard the packet ships a confident zero. The
+   fix that generalises: assert the tag layer per dictionary *before* the loop and fail loudly
+   on a dictionary declared tagged that yields nothing, rather than validating totals after.
+2. **Report the shrinkage in the artifact, in both directions.** The csl-atlas packet carries
+   an `excludedDictionaries` block naming MW72 and its reason, and its validator checks the
+   contract *both* ways — a zero-citation dictionary must be listed as excluded, and a listed
+   one must have zero citations. A one-way check lets a silent re-inclusion pass.
+3. **"PW" and "PWK" are one digitisation** (csl-orig code `pw`), so a plan naming
+   "PWG/PW/PWK" is naming two works, not three. PWKVN, the *kürzere-Fassung* Nachträge, is the
+   third Petersburg witness with a validated `<ls>` adapter.
+
+Same shape as [§503](#503-a-git-worktree-silently-disables-every-sibling-repo-lookup-in-src--artifacts-rebuilt-there-lose-layers-without-failing)
+and [§510](#510-a-frozen-local-checkout-is-an-actively-misleading-source-for-any-append-only-registry--read-the-numbering-contract-from-origin-not-from-disk):
+the failure is silent and comes from *what the input actually is*, not from the code. Measure
+the input's capability first; it costs one `grep -c`.
+
+Shipped in [csl-atlas#325](https://github.com/sanskrit-lexicon/csl-atlas/pull/325)
+([`data/lexico/citation_truncation_hapax.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/lexico/citation_truncation_hapax.json),
+[`scripts/build-citation-truncation.mjs`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/build-citation-truncation.mjs)).
+
+> Opus 5 1M `claude-opus-5[1m]` · 2026-07-31
 
 
 _30-07-2026 · repository architecture audit · Codex GPT-5_
