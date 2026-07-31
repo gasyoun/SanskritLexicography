@@ -1,6 +1,8 @@
 # SanskritLexicography
 
-_Created: 14-06-2026 · Last updated: 24-07-2026_
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21306715.svg)](https://doi.org/10.5281/zenodo.21306715)
+
+_Created: 14-06-2026 · Last updated: 31-07-2026_
 
 A **data and research workspace** for Sanskrit digital lexicography — not a
 software project. Its focus is Cologne Digital Sanskrit Lexicon headword lists,
@@ -192,6 +194,25 @@ In short: fork, create a feature branch, submit a pull request referencing any
 related issue. For larger data changes, include the source of the data, the
 transformation method, and enough counts or checksums for another maintainer to
 reproduce the result.
+
+## Citation
+
+Archived on Zenodo; every published GitHub release is deposited automatically and
+gets its own version DOI.
+
+**Cite the concept DOI — [10.5281/zenodo.21306715](https://doi.org/10.5281/zenodo.21306715)** —
+unless you need to pin an exact snapshot. It is version-independent and always
+resolves to the newest release, so a citation written against it does not rot.
+To cite the precise state you used instead, take the **version** DOI from that
+release's own notes.
+
+Full metadata (author, ORCID, licence, version) is in
+[CITATION.cff](https://github.com/gasyoun/SanskritLexicography/blob/master/CITATION.cff),
+which carries the concept DOI for the same reason.
+
+A **derived dataset** released from this repository carries its own DOI, separate
+from the repository's — see
+[data/FAIR_RELEASE_1.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/FAIR_RELEASE_1.md).
 
 ## License
 
