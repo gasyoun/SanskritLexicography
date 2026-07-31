@@ -1,6 +1,6 @@
 # ROADMAP — VedaWeb 2.0 data reuse across the Sanskrit Lexicon repos
 
-_Created: 03-07-2026 · Last updated: 11-07-2026_
+_Created: 03-07-2026 · Last updated: 01-08-2026_
 
 Scope ruled by M.G. 03-07-2026 (4 decisions, elicited in-session): **full breadth**
 (validation + persistent feed + GRA crosswalk + meter/translation layers) · feed home =
@@ -54,13 +54,21 @@ Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H096-Sonnet_VisualDCS_vedawe
 
 Sonnet-tier chat in `GitHub\VisualDCS`.
 
-### Phase 2 — WhitneyRoots accent-validation run (already queued as H063)
+### Phase 2 — WhitneyRoots accent-validation run — ✅ DONE (H063, discovered already-merged 01-08-2026)
 
-- [ ] Score the 18 rules / 19 cells against attested RV accents; per-cell GO/NO-GO for
+- [x] Score the 18 rules / 19 cells against attested RV accents; per-cell GO/NO-GO for
   the ZALIZNYAK a–f accent-axis emission
   ([ZALIZNYAK_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md)).
   Independent of Phase 1 (its spec can hit the live API), but if the feed has landed,
-  read from it instead.
+  read from it instead. **Result: 18/19 cells GO** (2 thin-evidence
+  measurement-only cells with 0 attested lemmas; the remaining `T8c·oxytone` exception
+  was resolved to a clean 100% GO by H115). Deliverables:
+  [`crosswalk/accent_validation.json`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_validation.json) +
+  [`docs/ACCENT_VALIDATION_REPORT.md`](https://github.com/gasyoun/WhitneyRoots/blob/main/docs/ACCENT_VALIDATION_REPORT.md),
+  landed via [WhitneyRoots PR #24](https://github.com/gasyoun/WhitneyRoots/pull/24)
+  (Sonnet 5 `claude-sonnet-5`) + follow-up
+  [WhitneyRoots PR #29](https://github.com/gasyoun/WhitneyRoots/pull/29). This roadmap
+  checkbox was merely stale — the checkbox tick itself is this session's only change.
 
 ```
 Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H063-Sonnet_WhitneyRoots_accent_validation_02.07.26.md and execute it.
