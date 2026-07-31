@@ -65,9 +65,12 @@ SECTION_CITATION = {
         'varies per occurrence -- no context-independent fixed correspondence '
         'is possible at the token level (O dict notes, H1303 Session 1)',
     'grammatical: cases (uniform internationalism: 8 cases vs 6 русских)':
-        'DA-vote N3/N5/N8 (19-07-2026): grammatical Latin sigla translate to a '
-        'fixed RU abbreviation by ratified policy ("uniform internationalism: '
-        '8 cases vs 6 русских" — own section rationale)',
+        'MG 31-07-2026 LOCK: cases stay Latin visible (Acc./Loc./Instr./Dat./'
+        'Abl./Gen./Nom./Voc.); tooltip/legend = full Latin + Russian case name '
+        '(Kochergina model: A. - accusativus - винительный падеж). LES forms '
+        '(акк., вин. п.) metalanguage only, never visible replacement. N5 does '
+        'NOT mean "translate Acc." — cases are Latin-stay by MG 31-07 (overrules '
+        'prior LES-sanctioned акк. for visible tokens; H2047)',
     'grammatical: number / gender / person':
         'DA-vote N3/N5/N8 (19-07-2026), same grammatical-translate policy as cases',
     'grammatical: voice / secondary stems':

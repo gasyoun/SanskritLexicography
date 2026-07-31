@@ -10,6 +10,28 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed — H1682 abbrev rules sheet content remake v3 (H2047, 31-07-2026, Grok 4.5 `grok-4.5` override for Opus comparison)
+
+Regenerates `review/h1682_abbrev_rules_sheet.html` (sheet_id `h1682_abbrev_rules`,
+gitignored + lock re-stamped) so cards meet the MG 31-07 content bar:
+
+- **Cases stay Latin** (LOCKED): `build_h1303_abbrev_sheet.py` O overlay no longer
+  proposes `Acc.→акк.` / `Loc.→лок.` etc.; proposed visible form is the Latin case
+  itself; section citation + rule card frame stay-Latin ratification (tooltip/legend
+  only for full Latin + RU case names).
+- **Expansion + frequency + case-fold families** on rule cards (`caus.`/`Caus.` under
+  one family with separate `n=`).
+- **Up to 5 clickable KWIC** examples per bulk family / residue token (kosha colocation
+  hrefs via `pwg_entry_href`).
+- **Emitter hygiene:** `note_min_height_px=88` via `standard_config`; `mark_cyrillic`
+  only on strings under judgment (not whole chrome).
+- Residue (`geder.`, `d.`, …) framed as leave-original + tooltip, not invent RU.
+
+Generators: `src/build_h1682_abbrev_rules_sheet.py`, `src/h1682_abbrev_collapse.py`,
+`src/build_h1303_abbrev_sheet.py` (case O + `dopp.` note). Reproduce:
+`python src/build_h1682_abbrev_rules_sheet.py` from `RussianTranslation/` (needs local
+store). **Do not vote** until a human re-opens the sheet and confirms the case section.
+
 ## [1.111.5] - 2026-07-31
 
 ### Fixed — checkpoints and status files were atomic but never flushed to disk (H3 / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)
