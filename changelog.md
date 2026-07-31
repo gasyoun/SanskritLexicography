@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.113.0] - 2026-07-31
+### Added
+
+- **Counting-conventions methods report shipped (H1871)** (31-07-2026): [METHODS_HOW_WE_COUNT_A_TRADITION_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/METHODS_HOW_WE_COUNT_A_TRADITION_2026.md) — the WS4.1 deliverable of the statistics roadmap. Defines every counting convention in use (dictionaries, headwords key1/key2, union, summed census, entries/records, lemmas, kosha.db rows, senses, `<ls>` citations, DCS denominators, tokens, correction events), each with artifact + exact reproduction query; reconciles 16 groups of divergent published figures; logs the four unreconcilable pairs as [CONTRADICTIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) §10–§13 instead of picking. New surfaced caveats: the 828,505-citation graph is 64.7 % PWG with MW at 5 placeholder nodes; "210 correctors" is superseded (208); the bare "180,176 DCS lemmas" roadmap figure is unciteable until provenanced. Cites, does not restate, the [C7 drift registry](https://github.com/gasyoun/Uprava/blob/main/CANONICAL_FIGURES_CROSS_PAPER_DRIFT_C7.md). Fable 5 (`claude-fable-5`).
+
 ## [1.112.1] - 2026-07-31
 ### Changed
 
