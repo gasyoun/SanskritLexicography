@@ -2,6 +2,7 @@
 
 _Created: 11-07-2026 · Last updated: 31-07-2026_
 
+
 The subsystem deep manual for
 [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation)
 — first item of the deep-manual queue in
@@ -122,25 +123,28 @@ on the same clock.
 **Rules of thumb.**
 
 1. During a paid window on the residential box → open **local 5 s** for gates/next action.
-2. To show campaign progress on the public internet → open **web 60 s**; keep
-   `python progress_dashboard/live_refresh.py` running so Pages stays current.
+2. To show campaign progress on the public internet → open **web 60 s**. Prefer
+   the Task Scheduler daemon (`SL progress live refresh`) over a manual
+   `live_refresh.py` shell.
 3. A web page that *loads* is not automatically *current* — the chip on `/progress/`
    reports stale/idle/on from snapshot age.
 4. Localhost is never a substitute for the Pages URL (and vice versa).
 
-**Autostart (preferred — no manual step).** Residential Task Scheduler at logon:
+**Autostart (preferred — no manual step after logon).** Residential Task Scheduler:
 
-| Task | Role |
-|---|---|
-| `SL progress dashboard server` | local ops :8765 |
-| `SL progress live refresh` | web kitchen publish (`--idle-stop 0`) |
+| Task | Role | When it runs (default) |
+|---|---|---|
+| `SL progress dashboard server` | local ops :8765 | user **logged on** |
+| `SL progress live refresh` | web kitchen publish (`--idle-stop 0`) | user **logged on** |
 
 ```powershell
 # once per machine; -StartNow launches without waiting for next logon
 powershell -ExecutionPolicy Bypass -File progress_dashboard\windows\register_tasks.ps1 -StartNow
 ```
 
-Full notes: [progress_dashboard/windows/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md).
+- Full notes + residual inventory: [progress_dashboard/windows/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md).
+- **Human `@DO` (optional):** if the kitchen must publish while Windows is **logged off**, upgrade both tasks to stored credentials (`schtasks /Change /TN "…" /RU WIN-NJTORH3267V\user /RP *`) — same residual as findings monthly. Commands live in that windows README.
+- **Not automatic by default:** logged-off headless mode; other PCs (re-register after clone); GitHub release tags for every changelog section.
 
 **Manual start (fallback if tasks are off):**
 

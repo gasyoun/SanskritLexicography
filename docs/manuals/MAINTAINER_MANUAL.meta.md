@@ -49,6 +49,7 @@ Refreshed by [/workspace-manual](https://github.com/gasyoun/claude-config/blob/m
 
 | Date | Change | By |
 |---|---|---|
+| 31-07-2026 | Subproject map: Task Scheduler task names + optional human `@DO` for logged-off; links windows/README | Grok 4.5 (grok-4.5) |
 | 31-07-2026 | Subproject map: progress_dashboard = public web kitchen (60 s); local ops row 5 s localhost; links to §2d + README | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |
 | 10-07-2026 | Subject manual authored (H479/H535); consolidated H604 11-07-2026 | Fable 5 (`claude-fable-5`) / Opus 4.8 (`claude-opus-4-8`) |
