@@ -1,6 +1,6 @@
 # Maintainer Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 25-07-2026_
+_Created: 10-07-2026 · Last updated: 31-07-2026_
 
 For the person (or agent) who **operates and extends** this repository. If you
 just want to *use* the data, read the
@@ -51,7 +51,8 @@ live tooling embedded in the active subprojects.
 | [literature/](https://github.com/gasyoun/SanskritLexicography/tree/master/literature) | Reference PDF/EPUB library + Markdown extractions + Lexicography-Manuals | Reference store | researcher |
 | [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) | Static site built from research docs (zettelkasten); built and tested, **not deployed** (origin/gh-pages has no `research/` directory) — deploy is human-gated | Active | maintainer |
 | [epistemic_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/epistemic_dashboard) · [findings_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/findings_dashboard) | Generated HTML dashboards over the governance registries below | Active | maintainer |
-| [progress_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/progress_dashboard) | Generated HTML dashboard tracking PWG→RU translation progress (per-lane denominators), companion to the article site | Active | maintainer |
+| [progress_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/progress_dashboard) | **Public web kitchen** for PWG→RU — progress + speed/cost/idle/calendar/changelog at […/progress/](https://gasyoun.github.io/SanskritLexicography/progress/). Browser poll **60 s**; publish with `live_refresh.py` while translating. **Not** the same as local ops (below). See [README](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/README.md) · [RU deep manual §2d](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) | Active | maintainer |
+| Local ops dashboard | `python RussianTranslation/src/pilot/dashboard_server.py` → `http://127.0.0.1:8765/` — run/gate/ledger, browser poll **5 s**, **localhost only** (never Pages) | Active | maintainer |
 
 ## 3. The governance / epistemic layer — the load-bearing part
 

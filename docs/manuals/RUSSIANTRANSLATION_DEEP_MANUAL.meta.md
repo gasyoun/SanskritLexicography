@@ -1,6 +1,6 @@
 # RUSSIANTRANSLATION_DEEP_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 25-07-2026 (H1634 link)_
+_Created: 18-07-2026 · Last updated: 31-07-2026_
 
 Companion record for [docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) (subsystem deep manual, H606).
 
@@ -35,6 +35,7 @@ COMMANDS_SPOT_RUN: 4
 | 9 | pwg_ru.md sibling metadoc | open |
 | 10 | Capability Q/N matrix (layers → questions) | **done** 25-07 — pwg_ru.md §8 + deep manual §2b |
 | 11 | Link DE editorial principles datasheet (H1634) | **done** 25-07 — §2c + cold-start table → EDITORIAL_PRINCIPLES_DE_LAYERS_2026-07.md |
+| 12 | Document web kitchen 60 s vs local ops 5 s + interlink both UIs | **done** 31-07 — §2d + progress_dashboard dual banner + local dashboard dual banner |
 
 ## Known limitations
 
@@ -57,6 +58,7 @@ Re-run `script_census.py` and `harvest_launch_stats.py` when the pipeline tree o
 
 | Date | Change | By |
 |---|---|---|
+| 31-07-2026 | §2d dual dashboards (local 5 s · web 60 s) + doc map row; interlinked with progress_dashboard + dashboard_server UIs (H2032 follow-up) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |
 | 11-07-2026 | Subject manual authored (H606) | Fable 5 (`claude-fable-5`) |
 | 18-07-2026 | Metadoc created (H1245) | Fable 5 (`claude-fable-5`) |
