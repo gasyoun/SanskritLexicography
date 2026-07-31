@@ -176,6 +176,27 @@ def test_h1610_refuse_max_agents_starves_multikey():
     print('  H1610 refuse: multi-key --max-agents=1 raises before any spawn')
 
 
+def test_h2b_translate_budget_preserves_attempt_content_note():
+    """H2b: a retry refused by the translate budget must not erase attempt 1's
+    per-key content diagnosis with the batch-wide budget stop."""
+    m = manifest()
+    m['budgets'] = {'max_translate_agents': 1}
+    m['runtime'] = dict(m['runtime'], whole_attempts=2, binary_split=False)
+    dropped = {'key1': 'agni', 'records': [{'grammar': '', 'senses': [
+        {'tag': '1', 'german': '{T1} Feuer', 'russian': 'огонь'}]}]}
+
+    def content_reject_runner(argv, **kwargs):
+        return proc(stdout=json.dumps({'structured_output': {'cards': [dropped]}}))
+
+    payload, status, code = execute(m, content_reject_runner)
+    assert code == 0 and payload is not None, (code, status)
+    assert payload['summary']['budget_stops'] == 1, payload['summary']
+    assert payload['summary']['failures']['agni'] == 'translation-fidelity-reject', (
+        'retry budget clobbered attempt-1 content diagnosis: %r'
+        % payload['summary']['failures']['agni'])
+    print('  H2b preserve: retry budget leaves attempt-1 translation-fidelity-reject observable')
+
+
 def test_call_timeout_clamped():
     """R4 (C-15): the timeout handed to subprocess is min(operator, budgets.timeout_ceil_ms, HARD)."""
     seen = {}
@@ -1238,6 +1259,7 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_translate_budget_binds()
     test_h1610_preserve_budget_exceeded_over_selfheal_stamp()
     test_h1610_refuse_max_agents_starves_multikey()
+    test_h2b_translate_budget_preserves_attempt_content_note()
     test_call_timeout_clamped()
     test_durable_call_reservation()
     test_cli_reservation_and_preflight_gates()
