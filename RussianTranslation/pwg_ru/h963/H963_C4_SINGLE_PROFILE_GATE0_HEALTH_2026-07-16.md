@@ -345,18 +345,31 @@ health reading:
 | 9 | + `--json-schema` | c4 | ~44 B | TIMEOUT 61 676 ms |
 | 10 | full probe argv (+ `--permission-mode plan`) | c4 | ~44 B | TIMEOUT 63 321 ms |
 | 11 | recovery ping, native exe, 120 s ceiling | c4 | ~46 B | TIMEOUT 120 211 ms |
+| 12 | recovery ping, native exe, 150 s ceiling (+40 min) | c4 | ~46 B | TIMEOUT 150 444 ms |
+| 13 | `--debug -p`, cwd `C:\Users\user` | c4 | ~8 B | started, printed the untrusted-workspace warning, then **silent for 75 s** |
+| 14 | tiny ping, cwd = the **long-trusted** main tree `SanskritLexicography\RussianTranslation` | c4 | ~8 B | TIMEOUT 90 s (rc 124) |
+| 15 | outbound TLS reachability, same host, same minute | — | — | `api.anthropic.com` **OK, TLS 748 ms** (TLSv1.3, 160.79.104.10); `api.github.com` OK 936 ms; `github.com`, `registry.npmjs.org`, `www.google.com` all OK |
 
 Rows 6–10 rule out every flag the probe adds, including `--json-schema` (the historical H818
 Windows suspect). Row 4 rules out the Node shim resolution in `headless_worker.claude_argv_prefix`
 — the D-R defect the `/pwg-live-gate` skill warns about — because the native binary hangs
 identically. Row 3 rules out anything c4-specific: a **different config directory hangs the same
 way**. Row 5 proves the binary itself runs and the machine is not wedged, though 11.3 s for a
-version string that makes no API call is itself a load signal. Row 11, ~25 minutes after row 1,
-shows the condition persisting rather than blipping.
+version string that makes no API call is itself a load signal. Rows 11–12, at +25 and +40 minutes,
+show the condition persisting rather than blipping.
 
-**Conclusion: the headless `claude -p` route was unresponsive machine-wide for the whole window.
-Nothing here measures c4's route health, and nothing here revises the 31-07 12:05Z / 13:33Z
-readings.**
+Rows 13–15 close off three tempting wrong answers. Row 14 rules out the **fresh-worktree trust
+state**: a gate run's cwd is a directory created minutes earlier and never trusted, and row 13
+shows the CLI does emit an untrusted-workspace warning — but the same call hangs identically from
+a main tree trusted for months, so the trust dialog is not what blocks. Row 15 rules out **raw
+network reachability**: `api.anthropic.com` completed a TLS 1.3 handshake in 748 ms from this host
+in the same minute a `-p` call was hanging. Row 13 also locates the stall: the process *starts*,
+reaches its own warning path, and only then goes silent — it is not failing to launch.
+
+**Conclusion: the headless `claude -p` route was unresponsive on this host for the whole window,
+and the fault is neither c4-specific, nor flag-specific, nor the Windows shim, nor cwd/trust, nor
+raw connectivity. Nothing here measures c4's route health, and nothing here revises the 31-07
+12:05Z / 13:33Z readings.**
 
 ### The most probable cause — self-contention, and it is a campaign-level constraint
 
@@ -372,10 +385,23 @@ CPU-seconds:
 | 31-07-2026 | 3 | includes this session |
 
 That is the ordinary reading of a headless call that never returns a byte while `--version` still
-works: new `-p` invocations get no slot. It is **not proven** here — this evidence establishes
-*machine/account-fleet-wide, not c4-specific*, and does not separate "account concurrency limit"
-from "network". Proving it needs one ping taken after the abandoned sessions are gone, which is a
-human's call to make (killing another session's process is destructive and outside this run).
+works and the API host is reachable: new `-p` invocations get no slot. Row 15 makes it the
+**leading** hypothesis rather than one of two, since it removes "the network is down" from the
+table — the CLI starts, warns, and then waits, with a healthy TLS path to `api.anthropic.com`
+available to it.
+
+It is still **not proven**. What this evidence establishes is *host/account-fleet-wide, not
+c4-specific*; what it cannot separate is an account concurrency/quota wall from a CLI-internal
+stall. Proving it needs one ping taken after the abandoned sessions are gone — a human's call,
+since killing another session's process is destructive and outside this run.
+
+One loose thread, recorded because it is cheap to re-check and easy to over-read: **`statsig.anthropic.com`
+fails DNS resolution from this host** (`getaddrinfo` failure, 11 544 ms on the cold lookup, then
+negative-cached), while `statsig.com`, `featureassets.org`, `console.anthropic.com`, `claude.ai`
+and both Sentry hosts all resolve normally. The 11.5 s cold-miss is suspiciously close to the
+11 314 ms that a no-API-call `--version` took. That may be nothing — a hostname that simply does
+not exist would also fail — and **no causal claim is made here**; it is noted so the next session
+does not spend the same twenty minutes rediscovering it.
 
 The campaign-level point stands either way: **the gate does not measure c4 in isolation — it
 measures c4 under whatever else this machine is running.** A bounded paid window would face the
