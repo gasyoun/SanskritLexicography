@@ -29,7 +29,9 @@ so a NO-GO leaves the same immutable trace as a PASS. No retry, no re-warm,
 no reroll. The historical NO-GO (warm-up 29 743 ms / measured 52 815 ms,
 15-07-2026) is NOT overwritten or reinterpreted -- this is a new dated reading.
 
-Gate rule (MG ruling 31-07-2026): the ceiling is 33 000 ms and applies to the
+Gate rule (MG ruling 31-07-2026): the ceiling is 65 000 ms -- derived from
+max_account_orchestrator.PROBE_LATENCY_CEILING_MS so gate and production can
+never drift -- and applies to the
 MEASURED reading only -- which RESTORES live_probe's own original policy. The
 H963 c4 resume brief's stricter "EITHER reading >= 30 000 ms is a NO-GO" rule is
 what was reverted: it gated on a cold-start warm-up, and on 31-07 that blocked a
@@ -107,23 +109,20 @@ PROFILE_ROOT = r"D:\ClaudeTools\profiles"
 CAMPAIGN = "h963-c4-single-profile-gate0-2026-07-16"
 EVENTS = HERE / "output" / "h963_c4_gate0_probe_events.jsonl"
 PAYLOAD_BYTES = 6491          # repo default; actual prompt 6828 B (H909 runbook, v1.9.19)
-CEILING_MS = mao.PROBE_LATENCY_CEILING_MS   # 30 000
-# MG ruling 31-07-2026: raised 30 000 -> 33 000 (+10 %) and the WARM-UP is no longer a
-# latency NO-GO input. Rationale, from the three dated readings in the c4 gate log: the
-# measured latency has moved 52 815 -> 104 870 -> 31 623 ms, i.e. the 31-07 reading is the
-# best c4 has recorded and missed the old ceiling by 1 623 ms (5.4 %), while the warm-up in
-# the same run was 131 737 ms — 4.2x the measured call. A warm-up that large next to a
-# measured call that small is cold-start cost, not the workload the gate is meant to price,
-# so gating on it blocked a route that had actually become usable. This RESTORES live_probe's
-# own original policy (measured-only); the H963 resume brief's "either reading" rule, noted in
-# this module's header, is the thing being reverted.
+CEILING_MS = mao.PROBE_LATENCY_CEILING_MS   # 65 000 since MG's 31-07-2026 ruling
+# WARM-UP POLICY (MG ruling 31-07-2026, first pass): the warm-up is no longer a latency
+# NO-GO input. A 131 737 ms warm-up next to a 31 623 ms measured call is cold-start cost,
+# not the workload the gate prices, and gating on it blocked a usable route. This restores
+# live_probe's own measured-only policy. Warm-up is still MEASURED, RECORDED and REPORTED
+# for tracking; it simply no longer vetoes, and a warm-up that ERRORS still fails.
 #
-# Honest limitation, stated rather than buried: 33 000 leaves only ~4.2 % headroom over the
-# single reading that motivated it, so a noisy call can still flip this to NO-GO. That is
-# accepted deliberately — the point is to stop blocking translation on a near-miss, not to
-# claim the route is fast. Warm-up remains MEASURED, RECORDED and REPORTED for exactly the
-# tracking/optimisation MG asked for; it simply no longer vetoes.
-STRICT_CEILING_MS = 33_000    # measured reading only; warm-up is observational (MG 31-07-2026)
+# MG ruling 31-07-2026 (second pass): 33 000 -> 65 000, and DERIVED from the production
+# constant rather than restated. The first pass raised only this gate and left
+# max_account_orchestrator.PROBE_LATENCY_CEILING_MS at 30 000, so a probe could report GO
+# while probe_fleet still parked the account -- translation stayed blocked by a number nobody
+# was looking at. Deriving it means the gate can never again be more permissive than the
+# production path it is supposed to predict.
+STRICT_CEILING_MS = CEILING_MS   # == mao.PROBE_LATENCY_CEILING_MS; measured reading only
 WARMUP_IS_ADVISORY = True     # warm-up latency never fails the gate; errors on it still do
 CONN_ERR_CLASSES = {"process", "timeout"}
 
@@ -434,8 +433,8 @@ def selftest():
 
         # 4. a genuine clean pair still passes; a slow MEASURED one still fails
         assert derive_fails([_row(new, "warmup", 17972), _row(new, "measured", 16621)]) == []
-        slow = derive_fails([_row(new, "warmup", 17972), _row(new, "measured", 40003)])
-        assert len(slow) == 1 and "40003 ms >= 33000 ms" in slow[0], slow
+        slow = derive_fails([_row(new, "warmup", 17972), _row(new, "measured", 80003)])
+        assert len(slow) == 1 and "80003 ms >= 65000 ms" in slow[0], slow
 
         # 4b. MG ruling 31-07-2026, pinned against the exact reading that motivated it:
         #     warm-up 131 737 ms + measured 31 623 ms is a PASS. Under the pre-ruling policy

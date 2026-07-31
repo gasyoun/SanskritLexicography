@@ -1082,7 +1082,23 @@ def cmd_status(args):
 
 EXACT_GEN_MODEL = 'claude-sonnet-5'      # D-F: exact generation model under test
 PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-representative floor
-PROBE_LATENCY_CEILING_MS = 30000         # D-F: health ceiling; a reading over this is NO-GO
+# D-F: health ceiling; a probe reading over this parks the account (probe_fleet) and is NO-GO.
+# MG ruling 31-07-2026: 30 000 -> 65 000. This is the PRODUCTION ceiling -- the one that decides
+# whether a paid window may dispatch to c4 -- and is deliberately a separate decision from the
+# gate probe's, made only after the gate ruling proved insufficient on its own.
+#
+# Measured basis (c4 gate log, four dated readings): 52 815 (15-07) · 104 870 (16-07) ·
+# 31 623 (31-07 12:05) · 47 953 (31-07 13:07). 65 000 clears today's whole observed band with
+# ~35 % headroom over its worst reading, where the earlier 33 000 sat BELOW that worst reading
+# and so could only flap. It does NOT clear 16-07's 104 870 ms -- stated rather than smoothed
+# over: this buys the CURRENT band, not every band c4 has ever shown.
+#
+# What this does and does not do: it decides whether dispatch is ALLOWED, never how fast the
+# route is. At ~32-48 s per call a window still costs roughly that per card; raising the ceiling
+# converts a hard block into a throughput cost, which is the trade being made deliberately in
+# order to start translating. If readings return to the 16-07 regime this parks c4 again, by
+# design.
+PROBE_LATENCY_CEILING_MS = 65000
 PROBE_POLICY = 'production_v1'
 PROBE_LANE = 'claude-cli-headless/readiness-schema'
 PROBE_RECEIPT_SCHEMA = 'pwg.runtime_probe_receipt.v1'
