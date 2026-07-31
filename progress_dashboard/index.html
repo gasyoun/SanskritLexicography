@@ -3,19 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PWG→RU progress — SanskritLexicography</title>
+<title>PWG→RU progress &amp; kitchen — SanskritLexicography</title>
 <style>
   :root { --fg:#1f2328; --mut:#59636e; --bg:#fff; --card:#f6f8fa; --line:#d1d9e0;
-          --accent:#0969da; --done:#1a7f37; --run:#9a6700; --block:#d1242f; }
+          --accent:#0969da; --done:#1a7f37; --run:#9a6700; --block:#d1242f;
+          --heat0:#ebedf0; --heat1:#9be9a8; --heat2:#40c463; --heat3:#30a14e; --heat4:#216e39; }
   @media (prefers-color-scheme: dark) {
     :root { --fg:#e6edf3; --mut:#9198a1; --bg:#0d1117; --card:#161b22; --line:#30363d;
-            --accent:#4493f8; --done:#3fb950; --run:#d29922; --block:#f85149; }
+            --accent:#4493f8; --done:#3fb950; --run:#d29922; --block:#f85149;
+            --heat0:#161b22; --heat1:#0e4429; --heat2:#006d32; --heat3:#26a641; --heat4:#39d353; }
   }
   body { font: 15px/1.5 system-ui, sans-serif; color:var(--fg); background:var(--bg);
-         max-width: 1080px; margin: 0 auto; padding: 1.5rem; }
+         max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   h1 { font-size: 1.5rem; margin-bottom:.2rem; } h2 { font-size: 1.15rem; margin-top: 2.2rem; }
   .mut { color: var(--mut); font-size: .85rem; }
   a { color: var(--accent); }
+  .top-live { display:flex; flex-wrap:wrap; gap:.8rem 1.2rem; align-items:center;
+              margin: .8rem 0 1.2rem; padding:.7rem 1rem; background:var(--card);
+              border:1px solid var(--line); border-radius:8px; font-size:.9rem; }
+  .chip { display:inline-block; padding:.1rem .55rem; border-radius:999px; font-size:.78rem;
+          font-weight:600; border:1px solid var(--line); background:var(--bg); }
+  .chip.on { color:var(--done); border-color:var(--done); }
+  .chip.off { color:var(--mut); }
+  .chip.stale { color:var(--block); border-color:var(--block); }
+  .chip.warn { color:var(--run); border-color:var(--run); }
   .cards { display: flex; gap: .8rem; flex-wrap: wrap; margin: 1rem 0; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px;
           padding: .7rem 1.1rem; min-width: 8.5rem; }
@@ -25,7 +36,6 @@
   th, td { text-align: left; padding: .35rem .6rem; border-bottom: 1px solid var(--line); }
   th { color: var(--mut); font-weight: 600; }
   td.num { text-align: right; font-variant-numeric: tabular-nums; }
-  /* funnel + bars */
   .bar-wrap { background: var(--card); border:1px solid var(--line); border-radius:8px;
               padding:.9rem 1.1rem; margin:.6rem 0; }
   .bar-row { display:flex; align-items:center; gap:.7rem; margin:.35rem 0; }
@@ -43,27 +53,74 @@
            border-radius:6px; padding:.7rem 1rem; font-size:.83rem; color:var(--mut); margin:1rem 0; }
   .trust b { color:var(--fg); }
   .chart { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding:.6rem; }
-  .flags { font-size:.8rem; }
   .est { color:var(--run); cursor:help; }
   footer { margin-top:2.5rem; color:var(--mut); font-size:.8rem; }
+  .cal { display:grid; grid-template-columns: repeat(auto-fill, 12px); gap:3px;
+         background:var(--card); border:1px solid var(--line); border-radius:8px; padding:.8rem; }
+  .cal i { width:12px; height:12px; border-radius:2px; display:block; }
+  .cal i.l0{background:var(--heat0);} .cal i.l1{background:var(--heat1);}
+  .cal i.l2{background:var(--heat2);} .cal i.l3{background:var(--heat3);}
+  .cal i.l4{background:var(--heat4);}
+  .clog { border-left:3px solid var(--line); padding-left:1rem; margin:.8rem 0; }
+  .clog h3 { margin:.2rem 0; font-size:1rem; }
+  .clog ul { margin:.3rem 0 .8rem; padding-left:1.1rem; }
+  .clog li { margin:.25rem 0; }
+  .two { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+  @media (max-width:720px){ .two { grid-template-columns:1fr; } }
+  .note { color:var(--mut); font-size:.85rem; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:.85rem; }
 </style>
 </head>
 <body>
-<h1>PWG → Russian — translation progress</h1>
+<h1>PWG → Russian — progress &amp; kitchen</h1>
 <p class="mut">How the machine-assisted translation of the <b>Petersburg Dictionary</b>
-  (Böhtlingk–Roth, PWG) into Russian is progressing. The finished articles are browsable at the
-  <a id="sitelink" href="https://gasyoun.github.io/SanskritLexicography/">article site</a>;
-  this page is the <em>backlog-and-coverage</em> companion. <span id="stamp"></span></p>
-<p class="mut">Glossary-layer coverage across dicts (sibling chart):
-  <a href="../data/viz/ru_gloss_gaps.html">RU-gloss gap ranking cards</a>
-  (committed H685 stats — not the full gitignored gap list).</p>
+  (Böhtlingk–Roth, PWG) into Russian is progressing — both the <em>results</em> (lane
+  denominators) and the <em>kitchen</em> (speed, cost, idle time, calendar, changelog).
+  Finished articles:
+  <a id="sitelink" href="https://gasyoun.github.io/SanskritLexicography/">article site</a>.
+  Sibling dashboards:
+  <a href="../findings/">findings</a> ·
+  <a href="../episteme/">epistemic</a>.</p>
+
+<div class="top-live" id="livebar">
+  <span id="liveChip" class="chip off">loading</span>
+  <span class="mut">Snapshot <b id="stamp">—</b></span>
+  <span class="mut">Page poll <b id="pollAge">—</b></span>
+  <span class="mut">Data age <b id="dataAge">—</b></span>
+  <span class="mut" id="nextPoll">auto-refresh every 60s</span>
+</div>
 
 <div class="cards" id="cards"></div>
 
+<h2 id="kitchen">Kitchen — process while translation is on</h2>
+<p class="mut">Speed, cost, time when nothing was going on, campaign calendar, and the project
+  web changelog. Numbers come from local pipeline ledgers; this page re-fetches JSON every
+  minute. A residential <code>live_refresh.py</code> loop rebuilds + publishes to gh-pages while
+  the store is moving.</p>
+<div class="cards" id="kitchenCards"></div>
+<div class="two">
+  <div>
+    <h3>Recent windows</h3>
+    <div id="recentWindows" class="note">—</div>
+  </div>
+  <div>
+    <h3>Idle gaps</h3>
+    <div id="idleGaps" class="note">—</div>
+  </div>
+</div>
+
+<h3>Campaign calendar</h3>
+<p class="mut" id="calLegend">cards written per day (store provenance)</p>
+<div class="cal" id="calendar" aria-label="activity calendar"></div>
+
+<h3>Web changelog</h3>
+<p class="mut">Recent method/pipeline versions from
+  <a id="clogLink" href="https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md">RussianTranslation/CHANGELOG.md</a>.</p>
+<div id="changelog"></div>
+
 <h2>Verb lane — the priority workstream (H151)</h2>
 <p class="mut">The dictionary is topped by verbal roots (<code>sTA</code> 379 senses, <code>i</code> 272,
-  <code>gam</code> 213…). They are translated root-by-root through the Claude Workflow harness. Funnel
-  from every vetted PWG verb root down to what is actually promoted:</p>
+  <code>gam</code> 213…). Funnel from every vetted PWG verb root down to what is actually promoted:</p>
 <div class="bar-wrap" id="verbfunnel"></div>
 <div class="legend">
   <span><i class="sw c-univ"></i>vetted universe</span>
@@ -87,22 +144,39 @@
 <table id="misc"></table>
 
 <h2>Trend</h2>
-<p class="mut">One point per dashboard rebuild. A single point shows the current value; the line
+<p class="mut">One point per dashboard rebuild day. A single point shows the current value; the line
   appears once a second snapshot exists.</p>
 <div class="cards" id="charts"></div>
 
 <div class="trust" id="trust"></div>
 
 <footer>
-  Built by <code>progress_dashboard/build_progress_data.py</code> from local-only pipeline artifacts;
-  published to <code>/progress/</code> on gh-pages. Source:
+  Built by <code>progress_dashboard/build_progress_data.py</code> +
+  <code>build_kitchen_data.py</code>; published to <code>/progress/</code> on gh-pages by
+  <code>live_refresh.py</code> (every minute while translation is on) or the monthly
+  findings-dashboard workflow. Local sub-second ops:
+  <code>python RussianTranslation/src/pilot/dashboard_server.py</code>.
+  Source:
   <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/">progress_dashboard/</a>.
 </footer>
 
 <script>
 'use strict';
-const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const fmt = n => (n == null ? '—' : n.toLocaleString('en-US'));
+const POLL_MS = 60_000;
+const STALE_WARN_S = 10 * 60;   // snapshot older than 10 min → warn
+const STALE_BAD_S  = 60 * 60;   // older than 1 h → stale
+
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = n => (n == null || Number.isNaN(n) ? '—' : Number(n).toLocaleString('en-US'));
+const fmtDur = secs => {
+  if (secs == null || !Number.isFinite(secs)) return '—';
+  secs = Math.max(0, Math.floor(secs));
+  if (secs < 60) return secs + 's';
+  if (secs < 3600) return Math.floor(secs/60) + 'm ' + (secs%60) + 's';
+  const h = Math.floor(secs/3600), m = Math.floor((secs%3600)/60);
+  if (h < 48) return h + 'h ' + m + 'm';
+  return Math.floor(h/24) + 'd ' + (h%24) + 'h';
+};
 
 function barRow(label, sub, value, total, cls, valText) {
   const pct = total ? Math.max(1.5, value / total * 100) : 0;
@@ -142,19 +216,55 @@ function line(el, series, label, suffix) {
      </svg></div>`);
 }
 
-async function j(f) { try { const r = await fetch(f); return r.ok ? r.json() : null; } catch { return null; } }
+async function j(f) {
+  try {
+    const r = await fetch(f + (f.includes('?') ? '&' : '?') + 't=' + Date.now(), { cache: 'no-store' });
+    return r.ok ? r.json() : null;
+  } catch { return null; }
+}
 
-(async () => {
-  const d = await j('progress_data.json');
+function parseIso(s) {
+  if (!s) return null;
+  const d = new Date(s);
+  return Number.isNaN(d.getTime()) ? null : d;
+}
+
+function ageSeconds(iso) {
+  const d = parseIso(iso);
+  if (!d) return null;
+  return Math.floor((Date.now() - d.getTime()) / 1000);
+}
+
+function setLiveBar(d, k) {
+  const gen = (k && k.generated_at) || (d && d.generated_at) || null;
+  document.getElementById('stamp').textContent = gen || '—';
+  const age = ageSeconds(gen);
+  document.getElementById('dataAge').textContent = age == null ? '—' : fmtDur(age);
+  const on = k && k.activity && k.activity.translation_on;
+  const chip = document.getElementById('liveChip');
+  if (age != null && age > STALE_BAD_S) {
+    chip.className = 'chip stale';
+    chip.textContent = 'snapshot stale';
+  } else if (on) {
+    chip.className = 'chip on';
+    chip.textContent = 'translation on';
+  } else if (age != null && age > STALE_WARN_S) {
+    chip.className = 'chip warn';
+    chip.textContent = 'idle / aging';
+  } else {
+    chip.className = 'chip off';
+    chip.textContent = on === false ? 'translation idle' : 'snapshot ok';
+  }
+}
+
+function renderProgress(d) {
   if (!d) {
-    document.getElementById('cards').innerHTML = '<p class="bad">progress_data.json not found.</p>';
+    document.getElementById('cards').innerHTML = '<p class="note">progress_data.json not found.</p>';
     return;
   }
   const v = d.lanes.verb, nm = d.lanes.nominal, st = d.store, cov = d.coverage, cor = d.corpus;
-  document.getElementById('stamp').textContent = 'Snapshot ' + d.generated_at + '.';
   if (d.site_url) document.getElementById('sitelink').href = d.site_url;
 
-  // headline cards
   document.getElementById('cards').innerHTML = [
     `<div class="card"><b>${fmt(st.senses)}</b><span class="sub">sense-rows translated (RU)</span></div>`,
     `<div class="card"><b>${fmt(st.roots)}</b><span class="sub">roots with translations</span></div>`,
@@ -162,35 +272,34 @@ async function j(f) { try { const r = await fetch(f); return r.ok ? r.json() : n
     `<div class="card"><b>${cov.pct}%</b><span class="sub">of PWG is DCS-attested</span></div>`,
   ].join('');
 
-  // verb funnel
   const vf = document.getElementById('verbfunnel');
   const U = v.universe || 0;
+  const scopePct = v.dcs_attested ? (v.promoted / v.dcs_attested * 100).toFixed(1) : '—';
   vf.innerHTML =
     barRow('Vetted PWG verb roots', 'universe_verbs01', v.universe, U, 'c-univ') +
     barRow('DCS-attested (in scope)', 'first-pass target', v.dcs_attested, U, 'c-att') +
     barRow('Promoted', 'shipped to store', v.promoted, U, 'c-done',
-           `${fmt(v.promoted)} <span class="mut">(${(v.promoted / v.dcs_attested * 100).toFixed(1)}% of scope)</span>`) +
+           `${fmt(v.promoted)} <span class="mut">(${scopePct}% of scope)</span>`) +
     barRow('Runnable now', 'has rootmap', v.runnable, U, 'c-run') +
     barRow('Blocked', 'missing rootmap', v.blocked, U, 'c-block');
 
-  // store review split
   const rb = document.getElementById('reviewbar');
   const human = st.human_reviewed || 0;
   const ai = (st.senses || 0) - human;
+  const aiPct = st.senses ? (ai / st.senses * 100).toFixed(1) : '—';
+  const huPct = st.senses ? (human / st.senses * 100).toFixed(1) : '—';
   rb.innerHTML =
     barRow('AI first pass', 'awaiting human QA', ai, st.senses, 'c-run',
-           `${fmt(ai)} <span class="mut">(${(ai / st.senses * 100).toFixed(1)}%)</span>`) +
+           `${fmt(ai)} <span class="mut">(${aiPct}%)</span>`) +
     barRow('Human-reviewed', 'signed off', human, st.senses, 'c-done',
-           `${fmt(human)} <span class="mut">(${(human / st.senses * 100).toFixed(1)}%)</span>`);
+           `${fmt(human)} <span class="mut">(${huPct}%)</span>`);
 
-  // coverage bar
   const cb = document.getElementById('covbar');
   cb.innerHTML =
     barRow('DCS-attested headwords', 'in first-pass scope', cov.dcs_attested_headwords, cov.total_headwords, 'c-att',
            `${fmt(cov.dcs_attested_headwords)} <span class="mut">(${cov.pct}%)</span>`) +
     barRow('Total PWG headwords', 'whole dictionary', cov.total_headwords, cov.total_headwords, 'c-univ');
 
-  // misc table
   const est = t => `<span class="est" title="documented constant, not counted live">${esc(t)} *</span>`;
   document.getElementById('misc').innerHTML =
     '<tr><th>Item</th><th class="num">Value</th><th>Note</th></tr>' +
@@ -199,18 +308,6 @@ async function j(f) { try { const r = await fetch(f); return r.ok ? r.json() : n
     `<tr><td>Corpus lexicon (TM source)</td><td class="num">${cor.pairs_measured ? fmt(cor.pairs) : est(fmt(cor.pairs))}</td><td class="mut">Sa→Ru alignment pairs</td></tr>` +
     `<tr><td>Alignment recall</td><td class="num">${est(cor.recall_pct + '%')}</td><td class="mut">measured H309</td></tr>`;
 
-  // trend charts
-  const ts = await j('progress_timeseries.json');
-  if (ts && ts.snapshots && ts.snapshots.length) {
-    const el = document.getElementById('charts');
-    const pick = key => ts.snapshots.filter(s => s[key] != null).map(s => [s.date, s[key]]);
-    let s;
-    if ((s = pick('senses')).length) line(el, s, 'Sense-rows translated');
-    if ((s = pick('verb_promoted')).length) line(el, s, 'Verb roots promoted');
-    if ((s = pick('coverage_pct')).length) line(el, s, 'DCS coverage', '%');
-  }
-
-  // trust block
   const flag = ok => ok ? '<b style="color:var(--done)">measured live</b>' : '<span class="est">documented constant *</span>';
   document.getElementById('trust').innerHTML =
     `<b>Provenance.</b> Snapshot <b>${esc(d.generated_at)}</b>. ` +
@@ -218,8 +315,125 @@ async function j(f) { try { const r = await fetch(f); return r.ok ? r.json() : n
     `the frequency denominator (${fmt(cov.total_headwords)} headwords) and the ${cor.recall_pct}% recall are ` +
     `documented constants (marked <span class="est">*</span>). ` +
     `Store: ${flag(st.measured)}. Verb lane: ${flag(v.measured)}. Coverage numerator: ${flag(cov.measured)}. ` +
-    `“Promoted” = passed the mechanical + review gate and written to the shipped store, not merely generated.`;
-})();
+    `"Promoted" = passed the mechanical + review gate and written to the shipped store, not merely generated. ` +
+    `A dashboard that renders is not automatically current — trust this page only when ` +
+    `<code>live_refresh.py</code> (or a manual rebuild) has run since the last store change.`;
+}
+
+function renderKitchen(k) {
+  if (!k) {
+    document.getElementById('kitchenCards').innerHTML =
+      '<p class="note">kitchen_data.json not found yet — run <code>build_kitchen_data.py</code> or <code>live_refresh.py --once --force</code>.</p>';
+    return;
+  }
+  const sp = k.speed || {}, co = k.cost || {}, id = k.idle || {};
+  const econ = (co.economy && co.economy.summary) || {};
+  const agents = econ.agents_per_clean ?? econ.agents_per_clean_incl_requeues;
+  const band = econ.cost_per_clean_band || econ.cost_band_usd_per_clean || econ.usd_per_clean;
+  let costLabel = '—';
+  if (co.mean_tokens_per_window != null) costLabel = fmt(Math.round(co.mean_tokens_per_window));
+  let bandLabel = null;
+  if (band && typeof band === 'object' && (band.floor_usd != null || band.ceil_usd != null)) {
+    bandLabel = `$${Number(band.floor_usd).toFixed(2)}–$${Number(band.ceil_usd).toFixed(2)}`;
+  } else if (band != null && typeof band !== 'object') {
+    bandLabel = String(band);
+  }
+  document.getElementById('kitchenCards').innerHTML = [
+    `<div class="card"><b>${fmt(sp.cards_last_hour)}</b><span class="sub">cards last hour</span></div>`,
+    `<div class="card"><b>${fmt(sp.cards_last_24h)}</b><span class="sub">cards last 24h</span></div>`,
+    `<div class="card"><b>${sp.mean_wall_clock_minutes != null ? sp.mean_wall_clock_minutes : '—'}</b><span class="sub">mean min / window</span></div>`,
+    `<div class="card"><b>${costLabel}</b><span class="sub">mean tokens / window</span></div>`,
+    `<div class="card"><b>${fmtDur(id.current_idle_seconds != null ? id.current_idle_seconds : id.mean_gap_seconds)}</b><span class="sub">${id.current_idle_seconds != null ? 'current idle' : 'mean idle gap'}</span></div>`,
+    `<div class="card"><b>${id.total_idle_hours != null ? id.total_idle_hours + 'h' : '—'}</b><span class="sub">recorded idle total</span></div>`,
+    agents != null ? `<div class="card"><b>${esc(typeof agents === 'number' ? agents.toFixed(2) : agents)}</b><span class="sub">agents / clean card</span></div>` : '',
+    bandLabel ? `<div class="card"><b>${esc(bandLabel)}</b><span class="sub">$ band / clean card</span></div>` : '',
+    econ.total_clean != null ? `<div class="card"><b>${fmt(econ.total_clean)}</b><span class="sub">clean cards in economy log</span></div>` : '',
+  ].join('');
+
+  const recent = k.recent_windows || [];
+  if (recent.length) {
+    document.getElementById('recentWindows').innerHTML =
+      '<table><thead><tr><th>When</th><th>Root</th><th>State</th><th class="num">Keys</th><th class="num">Tr</th><th class="num">Rq</th><th class="num">Min</th></tr></thead><tbody>' +
+      recent.slice().reverse().map(r =>
+        `<tr><td class="mono">${esc((r.recorded_at||'').replace('T',' ').replace('Z',''))}</td>` +
+        `<td>${esc(r.root||'—')}</td><td>${esc(r.state||'—')}</td>` +
+        `<td class="num">${fmt(r.workflow_keys)}</td><td class="num">${fmt(r.translated)}</td>` +
+        `<td class="num">${fmt(r.requeue_count)}</td><td class="num">${r.wall_clock_minutes ?? '—'}</td></tr>`
+      ).join('') + '</tbody></table>';
+  } else {
+    document.getElementById('recentWindows').textContent = 'no window ledger rows yet';
+  }
+
+  const gaps = (id.recent_gaps || []).slice().reverse();
+  if (gaps.length) {
+    document.getElementById('idleGaps').innerHTML =
+      '<table><thead><tr><th>From</th><th>To</th><th class="num">Idle</th><th>Roots</th></tr></thead><tbody>' +
+      gaps.map(g =>
+        `<tr><td class="mono">${esc((g.from||'').replace('T',' ').replace('Z',''))}</td>` +
+        `<td class="mono">${esc((g.to||'').replace('T',' ').replace('Z',''))}</td>` +
+        `<td class="num">${fmtDur(g.seconds)}</td>` +
+        `<td class="mut">${esc(g.after_root||'—')} → ${esc(g.before_root||'—')}</td></tr>`
+      ).join('') + '</tbody></table>';
+  } else if (id.current_idle_seconds != null) {
+    document.getElementById('idleGaps').textContent =
+      'Currently idle for ' + fmtDur(id.current_idle_seconds) + ' (no recent stage_boundary pairs).';
+  } else {
+    document.getElementById('idleGaps').textContent = 'no idle gaps measured yet';
+  }
+
+  const cal = k.calendar || {};
+  const cells = cal.cells || [];
+  document.getElementById('calLegend').textContent =
+    `cards/day · ${cal.start || '?'} → ${cal.end || '?'} · ${cal.active_days || 0} active days · max ${cal.max_cards || 0}`;
+  document.getElementById('calendar').innerHTML = cells.map(c =>
+    `<i class="l${c.level||0}" title="${esc(c.date)}: ${c.cards||0} cards, ${c.windows||0} windows"></i>`
+  ).join('');
+
+  if (k.changelog && k.changelog.url) document.getElementById('clogLink').href = k.changelog.url;
+  const entries = (k.changelog && k.changelog.entries) || [];
+  document.getElementById('changelog').innerHTML = entries.length ? entries.map(e =>
+    `<div class="clog"><h3>${esc(e.version)}${e.date ? ' <span class="mut">· ' + esc(e.date) + '</span>' : ''}</h3>` +
+    (e.bullets && e.bullets.length
+      ? `<ul>${e.bullets.map(b => `<li><b>${esc(b.title)}</b> — ${esc(b.summary)}</li>`).join('')}</ul>`
+      : '<p class="note">no bullets parsed</p>') +
+    `</div>`
+  ).join('') : '<p class="note">changelog not available</p>';
+}
+
+async function renderTrends() {
+  const el = document.getElementById('charts');
+  el.innerHTML = '';
+  const ts = await j('progress_timeseries.json');
+  if (ts && ts.snapshots && ts.snapshots.length) {
+    const pick = key => ts.snapshots.filter(s => s[key] != null).map(s => [s.date, s[key]]);
+    let s;
+    if ((s = pick('senses')).length) line(el, s, 'Sense-rows translated');
+    if ((s = pick('verb_promoted')).length) line(el, s, 'Verb roots promoted');
+    if ((s = pick('coverage_pct')).length) line(el, s, 'DCS coverage', '%');
+  }
+}
+
+let lastPoll = null;
+async function refresh() {
+  const [d, k] = await Promise.all([j('progress_data.json'), j('kitchen_data.json')]);
+  lastPoll = new Date();
+  document.getElementById('pollAge').textContent = lastPoll.toLocaleTimeString();
+  setLiveBar(d, k);
+  renderProgress(d);
+  renderKitchen(k);
+  await renderTrends();
+}
+
+refresh();
+setInterval(refresh, POLL_MS);
+// keep the "data age" label honest even between polls
+setInterval(() => {
+  const stamp = document.getElementById('stamp').textContent;
+  if (stamp && stamp !== '—') {
+    const age = ageSeconds(stamp);
+    document.getElementById('dataAge').textContent = age == null ? '—' : fmtDur(age);
+  }
+}, 15_000);
 </script>
 </body>
 </html>

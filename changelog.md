@@ -14,6 +14,12 @@ not an error.
 
 ## [Unreleased]
 
+## [1.114.0] - 2026-07-31
+
+### Added
+
+- **PWG→RU progress kitchen + minute-level live refresh** (31-07-2026, Grok 4.5 `grok-4.5`, [H2032](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2032-Grok_SanskritLexicography_progress-kitchen-live-refresh_31.07.26.md)): public `/progress/` now shows the **kitchen** behind the article site — speed (cards/hour & /24h, mean min/window), cost (tokens/window + economy-ledger agents/$ band per clean card), idle gaps (stage_boundary audit_end→start), campaign calendar heatmap, and a web changelog feed from `RussianTranslation/CHANGELOG.md`. New builders [`build_kitchen_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_kitchen_data.py) + [`live_refresh.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/live_refresh.py) rebuild from local store/ledger and push **only** `gh-pages/progress/` every 60s while translation artifacts are moving (no master spam). The page re-fetches JSON every minute with `cache: 'no-store'` and surfaces a stale/idle/on chip. Closes the standing caveat that a rendered dashboard is not automatically current.
+
 ## [1.113.1] - 2026-07-31
 
 ### Added
@@ -24,6 +30,7 @@ not an error.
 ### Added
 
 - **Counting-conventions methods report shipped (H1871)** (31-07-2026): [METHODS_HOW_WE_COUNT_A_TRADITION_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/METHODS_HOW_WE_COUNT_A_TRADITION_2026.md) — the WS4.1 deliverable of the statistics roadmap. Defines every counting convention in use (dictionaries, headwords key1/key2, union, summed census, entries/records, lemmas, kosha.db rows, senses, `<ls>` citations, DCS denominators, tokens, correction events), each with artifact + exact reproduction query; reconciles 16 groups of divergent published figures; logs the four unreconcilable pairs as [CONTRADICTIONS](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md) §10–§13 instead of picking. New surfaced caveats: the 828,505-citation graph is 64.7 % PWG with MW at 5 placeholder nodes; "210 correctors" is superseded (208); the bare "180,176 DCS lemmas" roadmap figure is unciteable until provenanced. Cites, does not restate, the [C7 drift registry](https://github.com/gasyoun/Uprava/blob/main/CANONICAL_FIGURES_CROSS_PAPER_DRIFT_C7.md). Fable 5 (`claude-fable-5`).
+
 ## [1.112.1] - 2026-07-31
 ### Changed
 
