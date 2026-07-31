@@ -14,6 +14,12 @@ not an error.
 
 ## [Unreleased]
 
+## [1.113.0] - 2026-07-31
+
+### Added
+
+- **PWG→RU progress kitchen + minute-level live refresh** (31-07-2026, Grok 4.5 `grok-4.5`, [H2032](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2032-Grok_SanskritLexicography_progress-kitchen-live-refresh_31.07.26.md)): public `/progress/` now shows the **kitchen** behind the article site — speed (cards/hour & /24h, mean min/window), cost (tokens/window + economy-ledger agents/$ band per clean card), idle gaps (stage_boundary audit_end→start), campaign calendar heatmap, and a web changelog feed from `RussianTranslation/CHANGELOG.md`. New builders [`build_kitchen_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_kitchen_data.py) + [`live_refresh.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/live_refresh.py) rebuild from local store/ledger and push **only** `gh-pages/progress/` every 60s while translation artifacts are moving (no master spam). The page re-fetches JSON every minute with `cache: 'no-store'` and surfaces a stale/idle/on chip. Closes the standing caveat that a rendered dashboard is not automatically current.
+
 ## [1.112.1] - 2026-07-31
 ### Changed
 

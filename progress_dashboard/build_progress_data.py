@@ -167,7 +167,9 @@ def corpus():
 
 
 def main():
-    today = datetime.now(timezone.utc).date().isoformat()
+    now = datetime.now(timezone.utc)
+    today = now.date().isoformat()
+    generated_at = now.isoformat(timespec="seconds").replace("+00:00", "Z")
     verb = verb_lane()
     nom = nominal_lane()
     st = store_depth()
@@ -175,9 +177,12 @@ def main():
     cor = corpus()
 
     data = {
-        "generated_at": today,
+        "generated_at": generated_at,
+        "snapshot_date": today,
         "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
         "site_url": "https://gasyoun.github.io/SanskritLexicography/",
+        "kitchen_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
+        "refresh_hint_seconds": 60,
         "lanes": {"verb": verb, "nominal": nom},
         "store": st,
         "coverage": cov,
@@ -187,7 +192,7 @@ def main():
     (OUT / "progress_data.json").write_text(
         json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    print(f"progress_data.json written ({today}).")
+    print(f"progress_data.json written ({generated_at}).")
 
     # append-only timeseries: one row per build date (last write per date wins)
     ts_path = OUT / "progress_timeseries.json"
@@ -199,6 +204,7 @@ def main():
             ts = {"snapshots": []}
     row = {
         "date": today,
+        "generated_at": generated_at,
         "verb_promoted": verb.get("promoted"),
         "verb_dcs_attested": verb.get("dcs_attested"),
         "senses": st.get("senses"),
