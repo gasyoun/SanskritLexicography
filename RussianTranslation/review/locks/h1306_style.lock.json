@@ -1,0 +1,23 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h1306_style",
+  "content_hash": "sha256:c760510d7128d50fa51c11d89fe33c90a3c9fa0ce9c49589619f06405ce94525",
+  "generated": "2026-07-31",
+  "gate": null,
+  "n_items": 9,
+  "ids": [
+    "h1306-A1",
+    "h1306-A2",
+    "h1306-A3",
+    "h1306-B1",
+    "h1306-B2",
+    "h1306-B3",
+    "h1306-C1",
+    "h1306-C2",
+    "h1306-C3"
+  ],
+  "source_html": "h1306_style_sheet.html",
+  "mode": "stamped",
+  "created": "2026-07-31",
+  "tool": "review_binding.py (H1404 binding standard)"
+}
