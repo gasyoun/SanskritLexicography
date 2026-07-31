@@ -1,6 +1,6 @@
 # Statistics for the Sanskrit Lexicon — a 12-month org-wide census & analytics roadmap 2026–2027
 
-_Created: 12-07-2026 · Last updated: 24-07-2026_
+_Created: 12-07-2026 · Last updated: 31-07-2026_
 
 **What this is.** The *measurement* counterpart to the two existing hubs. Where
 [`FEATURES_INDEX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FEATURES_INDEX.md)
@@ -245,7 +245,11 @@ product dashboard live *if* creds land, otherwise parked with the blocker named.
 
 - **WS4.1 — Internal methods report → monograph chapter.** "How we count a lexicographic
   tradition" — the corpus-methods chapter (**M01** `@DECIDE`, currently new-chapter-vs-
-  Ch.2-section). 📄.
+  Ch.2-section). 📄. **Internal report SHIPPED 31-07-2026 (H1871):**
+  [METHODS_HOW_WE_COUNT_A_TRADITION_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/METHODS_HOW_WE_COUNT_A_TRADITION_2026.md)
+  — every counting convention with artifact + exact query, 16-row reconciliation table,
+  CONTRADICTIONS §10–§13 for the unreconcilable pairs. The M01 chapter-form `@DECIDE`
+  stays open; the report is the chapter's source text.
 - **WS4.2 — Public observatory launch.** The whole statistics board goes public after
   `/publish-safety-check`, every figure citing its FAIR DOI. 📊 (public).
 - **WS4.3 — Complete the FAIR release set.** Every derived stat dataset versioned on Zenodo

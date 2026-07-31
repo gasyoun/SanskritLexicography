@@ -1,6 +1,6 @@
 # CONTRADICTIONS — Sanskrit-data source disagreements with no verdict
 
-_Created: 08-07-2026 · Last updated: 27-07-2026_
+_Created: 08-07-2026 · Last updated: 31-07-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS states *one* fact. This file holds the act FINDINGS cannot: **disagreeing** — ≥2 sources give incompatible values and no ruling has been made. The moment a contradiction is ruled, it **graduates** to a [`CROSS_REPO_DECISIONS`](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##` (leave a one-line "→ D##, resolved" tombstone here). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/CONTRADICTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/CONTRADICTIONS.md).
 
@@ -140,6 +140,62 @@ Status: 🔴 unresolved — needs a corpus-side ruling on provenance (which edit
 
 Blocks: (a) the committed Southern↔critical concordance is, for those two kāṇḍas, **a text aligned against itself** — its 99.8%/99.9% agreement must not be read as recension evidence; (b) any consumer treating `06`/`07` as vulgate-keyed inherits the silent recension swap [FINDINGS §468](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) documents for `R.` books 3–6; (c) it decides how a future Russian uttarakāṇḍa should be keyed ([GAPS §13](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md)).
 > **Source:** [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [integrity issue #822](https://github.com/gasyoun/SanskritLexicography/issues/822) · 27-07-2026 · Opus 5 1M `claude-opus-5[1m]`
+
+### §10. Union headword total: 323,425 vs 323,426
+
+🟠 ✍️ **Two committed row counts for the same union asset, one row apart, with no document explaining the difference.**
+
+Positions:
+
+| Source | Value | Evidence loc |
+|---|---|---|
+| SanskritLexicography surfaces ([FINDINGS §29](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md), [HEADWORDLISTS_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/HEADWORDLISTS_DEEP_MANUAL.md), [ch03](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch03_headword_inventory.md)) + kosha's own [datasets.json](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json) `union-headwords` row | **323,425** | post-fold `build_union.py` output |
+| [kosha/README.md](https://github.com/gasyoun/kosha/blob/main/README.md) (twice) + three archived handoffs (H054, H105, H106) | **323,426** | kosha `lemmas` table load |
+Status: 🔴 unresolved — likely a load-time off-by-one (header row?) in the kosha `lemmas` ingest, but no document states it; needs a `SELECT COUNT(*) FROM lemmas;` against a named kosha.db build vs `wc -l` of the source TSV.
+Blocks: any paper citing "the union" out of kosha inherits a figure that disagrees with the canonical asset by 1; A55's "323,425 rows" title-adjacent claim.
+> **Source:** [H1871 methods report](https://github.com/gasyoun/SanskritLexicography/blob/master/METHODS_HOW_WE_COUNT_A_TRADITION_2026.md) §3 row 1 · kosha `[integrity]` issue (same pass) · 31-07-2026 · Fable 5 `claude-fable-5`
+
+### §11. kosha.db: manifest build vs live-build census disagree under one name
+
+🟠 ✍️ **The kosha manifest and the org data census describe different kosha.db builds as if they were one database.**
+
+Positions:
+
+| Source | Value | Evidence loc |
+|---|---|---|
+| [kosha/data/manifest/datasets.json](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json) | 10 tables incl. `heritage_anchor` (185,803) · **6,917,018** inflections | manifest kosha.db row |
+| [Uprava/DATA_LAYERS_CENSUS.md](https://github.com/gasyoun/Uprava/blob/main/DATA_LAYERS_CENSUS.md) + [H687 census](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H687-Sonnet_kosha_koshadb-completeness-census_11.07.26.md) | live 05-07 build, **no** `heritage_anchor` · **6,916,522** inflections | census kosha.db row |
+Status: 🔴 unresolved — a 496-row inflection gap plus a whole-table presence disagreement; needs one dated rebuild via `scripts/build_db.py` with per-table `COUNT(*)` published, then both surfaces repointed at it.
+Blocks: [METHODS_HOW_WE_COUNT_A_TRADITION_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/METHODS_HOW_WE_COUNT_A_TRADITION_2026.md) §2.8's rule that a kosha.db count names its build — currently impossible to follow, since the two published builds are not distinguished at their sources.
+> **Source:** H1871 survey · kosha `[integrity]` issue (same pass) · 31-07-2026 · Fable 5 `claude-fable-5`
+
+### §12. Petersburg-family naive sum: 285,799 vs 285,950
+
+🟡 ✍️ **Two committed sums of the same four headword lists differ by 151 rows, unexplained.**
+
+Positions:
+
+| Source | Value | Evidence loc |
+|---|---|---|
+| [MODULES_OWNED.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/sanskrit_in_numbers/MODULES_OWNED.md) | **285,799** (vs de-duplicated 167,904, "+70.2 % inflation") | §naive-sum module |
+| [WAVE1_SUMMARY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/sanskrit_in_numbers/WAVE1_SUMMARY.md) + [ROADMAP_SANSKRIT_IN_NUMBERS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/ROADMAP_SANSKRIT_IN_NUMBERS_2026_2027.md) | **285,950** ("family (285,950 headwords)") | summary + roadmap |
+Status: 🔴 unresolved — probably different list vintages or key1/key2 mixing; neither doc states its component figures, so the gap cannot be attributed without re-running the sum against named files.
+Blocks: the "naive sum vs union" inflation headline (+70.2 %) — its numerator is ambiguous by 151.
+> **Source:** [H1871 methods report](https://github.com/gasyoun/SanskritLexicography/blob/master/METHODS_HOW_WE_COUNT_A_TRADITION_2026.md) §3 row 9 · 31-07-2026 · Fable 5 `claude-fable-5`
+
+### §13. corpus_lexicon row count: 1,093,391 vs 1,091,528
+
+🟡 ✍️ **The hub/roadmap figure and the A42 paper figure for the same 3-layer glossary differ by 1,863 rows.**
+
+Positions:
+
+| Source | Value | Evidence loc |
+|---|---|---|
+| [ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md) + [heritage_frequency_diff.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/heritage_frequency_diff.md) | **1,093,391** | census rows |
+| [A42_corpus_lexicon_resource.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A42_corpus_lexicon_resource.md) | **1,091,528** | paper §data |
+Status: 🔴 unresolved — regeneration drift or a filtered export; A42 is the publication-facing figure, so the drift must be attributed before A42 submits.
+Blocks: A42's data statement; the "1.09M pairs" rounding used in FEATURES_INDEX is safe either way.
+> **Source:** [H1871 methods report](https://github.com/gasyoun/SanskritLexicography/blob/master/METHODS_HOW_WE_COUNT_A_TRADITION_2026.md) §3 row 15 · 31-07-2026 · Fable 5 `claude-fable-5`
 
 
 _Dr. Mārcis Gasūns_
