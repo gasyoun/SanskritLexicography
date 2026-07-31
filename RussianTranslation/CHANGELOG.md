@@ -10,6 +10,39 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — a stalled window burned its whole iteration ceiling at full speed instead of stopping (H7 / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)
+
+`bounded_staged_run.make_run_window`'s per-lease drain loop had no idle handling. When a
+pass changed nothing — the standard case being a pending job that no admitted account can
+claim — the loop simply went round again immediately: re-dispatch, re-record, and (unless
+`--stop-before-promote`) another `promote-ready` subprocess, with no pause, until
+`max_drain_iterations` (default **1000**) was exhausted. The run then died with
+`exceeded 1000 drain iterations`, a message naming a counter rather than the stall, after
+spending up to a thousand pointless subprocess spawns getting there.
+
+The loop now computes a per-pass progress signature — `(pending, done_unrecorded, done)` —
+and when it is unchanged from the previous pass it sleeps `DRAIN_IDLE_POLL_SECONDS` (3 s,
+the same bound `max_account_orchestrator.STAGED_RUN_IDLE_POLL_SECONDS` already uses for the
+staged C4 backstop) and counts the pass. After `DRAIN_NO_PROGRESS_PASSES` (20) *consecutive*
+dead passes it fails closed, naming the lease and all three counters. Notes on the shape:
+
+- The counter is **consecutive, not cumulative** — any real forward progress resets it, so a
+  long window that stalls, recovers and stalls again still completes.
+- `done` (total) is in the signature, not just the unrecorded slice: a requeue that lands a
+  new pending job in the same pass another completes leaves the other two counters equal,
+  and would otherwise be misread as a stall.
+- The check sits *ahead* of the `if pending:` branch, so it also covers a done-but-
+  unrecordable job — a stall shape the staged C4 backstop, guarded inside its own pending
+  branch, does not catch. It sits *after* the existing clean-completion `break`, so the
+  H1386 C2 resume path still breaks on its first pass and never reaches the backstop.
+- `max_drain_iterations` is untouched and still bounds total passes; the new cap is a
+  separate, earlier, more specific stop, deliberately not derived from it (that ceiling
+  legitimately covers many *productive* passes).
+
+Both stall shapes were measured against pre-H7 `origin/master` with the iteration ceiling
+lowered to 30 for tractability: master ran the full 30 passes with **zero** polls and died on
+the iteration count; the fixed loop stops after 20 passes and 19 polls, naming the stall.
+
 ### Fixed — a translate-budget retry erased the card's actual content diagnosis (H2b / H1940 Phase 2, 31-07-2026, OpenAI GPT-5.6 Sol `openrouter/openai/gpt-5.6-sol`, [PR #906](https://github.com/gasyoun/SanskritLexicography/pull/906), merged `9a5bddbc`)
 
 `headless_worker.resolve_group` used the same unconditional failure-note write for every
