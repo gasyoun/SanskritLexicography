@@ -14,6 +14,12 @@ not an error.
 
 ## [Unreleased]
 
+## [1.114.1] - 2026-07-31
+
+### Added
+
+- **Sixth c4 gate-0 reading — and the decomposition showing ~65 s of a headless call is CLI startup, not the route** (31-07-2026, Opus 5 `claude-opus-5[1m]`, [H2011](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2011-Opus_RussianTranslation_c4-gate-ceiling-decision-and-live-optimisation_31.07.26.md)): after the host-wide stall cleared, a fresh representative reading came back **warm-up 94 606 ms / measured 78 415 ms, both `success`** — a real c4 latency NO-GO at 1.21× the 65 000 ms ceiling, and the session's second consecutive NO-GO (H2011's stop condition). The recovery ping's own result envelope splits the wall clock: **70 987 ms total vs `duration_api_ms` 4 028 ms**, i.e. ≈65 s spent outside the API call. Under this host's load the ceiling is therefore consumed by process launch before a token moves, so c4 cannot pass regardless of route health — which promotes the abandoned-`claude`-process cleanup from housekeeping to the actual blocker. Explicitly **not** a reason to raise the ceiling again: the fix is to reduce startup cost or gate on `duration_api_ms`, which the envelope already carries. Economics captured per H2011's instrument-everything mandate: 2 calls, **$0.5848** (~$0.29/call), 4 input / 1 507 output tokens, 64 237 cache-read and **90 485 cache-creation** tokens — a ~90 k-token fixed scaffolding overhead per call that the one-card-per-call window will pay once per card. Reading taken from the main tree on purpose, so the two rows join the surviving 11-row series instead of dying in a worktree. Recorded in [`H963_C4_SINGLE_PROFILE_GATE0_HEALTH_2026-07-16.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h963/H963_C4_SINGLE_PROFILE_GATE0_HEALTH_2026-07-16.md).
+
 ## [1.114.0] - 2026-07-31
 
 ### Added
