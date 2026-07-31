@@ -1,15 +1,18 @@
 {
-  "generated_at": "2026-07-18",
+  "generated_at": "2026-07-31T18:43:47Z",
+  "snapshot_date": "2026-07-31",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
+  "kitchen_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
+  "refresh_hint_seconds": 60,
   "lanes": {
     "verb": {
       "measured": true,
       "universe": 1882,
       "dcs_attested": 749,
       "promoted": 48,
-      "runnable": 701,
-      "blocked": 0
+      "runnable": 0,
+      "blocked": 701
     },
     "nominal": {
       "measured": true,
@@ -27,7 +30,9 @@
     "senses": 11603,
     "roots": 254,
     "review": {
-      "ai_translated": 11603
+      "approved": 3,
+      "ai_translated": 11598,
+      "needs_review": 2
     },
     "human_reviewed": 0
   },
