@@ -1,8 +1,8 @@
 {
   "schema": "review-lock/v1",
   "sheet_id": "h1682_abbrev_rules",
-  "content_hash": "sha256:14403a330a1e4f715967309b9d5f2b2b39902d9232b23e8b01c8b8a0f2b7cba6",
-  "generated": "2026-07-26",
+  "content_hash": "sha256:88f7db782d96a824651f38b74edb3a20ffa3676f872c04b9df9b4d53c0247d0f",
+  "generated": "2026-07-31",
   "gate": null,
   "n_items": 33,
   "ids": [
