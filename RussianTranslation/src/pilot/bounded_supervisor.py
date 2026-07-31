@@ -560,6 +560,12 @@ class BoundedSupervisor:
         with open(tmp, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(self._state_dict(), f, ensure_ascii=False, indent=2)
             f.write('\n')
+            # H3 (H1940 Phase 2): atomic, but not durable without this. The checkpoint is the
+            # crash-resume authority -- losing the last one costs a full re-audit of work that
+            # already completed. Inline rather than routed through the shared writer; see the
+            # measured byte-impact note on headless_worker.atomic_json.
+            f.flush()
+            os.fsync(f.fileno())
         os.replace(tmp, self.checkpoint_path)
 
     def _load_checkpoint(self):

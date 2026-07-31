@@ -518,6 +518,44 @@ def test_p_durable_cost_counter(td):
     print('  (p) durable probe/worker cost drives post-call ceiling; unevaluable fails before next spawn: PASS')
 
 
+def test_q_h3_checkpoint_fsync(td):
+    """H3 (H1940 Phase 2) — the crash-resume checkpoint must reach DISK before the rename.
+
+    _write_checkpoint used os.replace with no flush: atomic, but not durable. A power loss
+    between write and flush loses the last checkpoint, and the resume then re-audits work
+    that had already completed. RED on master, where no fsync happens at all. os.fstat inside
+    the probe proves the descriptor was still open, so the pin cannot pass against a stale-fd
+    implementation.
+    """
+    calls = []
+    real_fsync, real_replace = os.fsync, os.replace
+    path = os.path.join(td, 'q_h3.cp.json')
+
+    def fake_fsync(fd):
+        calls.append(('fsync', os.fstat(fd).st_size))
+        return real_fsync(fd)
+
+    def fake_replace(src, dst):
+        calls.append(('replace', os.path.basename(dst)))
+        return real_replace(src, dst)
+
+    sup = bs.BoundedSupervisor([], lambda w: None, checkpoint_path=path)
+    os.fsync, os.replace = fake_fsync, fake_replace
+    try:
+        sup._write_checkpoint()
+    finally:
+        os.fsync, os.replace = real_fsync, real_replace
+
+    if [kind for kind, _ in calls] != ['fsync', 'replace']:
+        raise AssertionError('expected exactly fsync-then-replace, got %r' % calls)
+    if calls[0][1] <= 0:
+        raise AssertionError('fsynced an empty descriptor: %r' % calls)
+    raw = open(path, 'rb').read()
+    if b'\r\n' in raw or not raw.endswith(b'\n'):
+        raise AssertionError('checkpoint bytes changed (CRLF or missing trailing newline)')
+    print('  (q) H3: the checkpoint fsyncs the live fd before os.replace; bytes unchanged: PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_a_window_count(td)
@@ -536,6 +574,7 @@ def main():
         test_n_default_audit_fail_closed(td)
         test_o_durable_call_counter(td)
         test_p_durable_cost_counter(td)
+        test_q_h3_checkpoint_fsync(td)
     print('bounded_supervisor_selftest: PASS')
 
 

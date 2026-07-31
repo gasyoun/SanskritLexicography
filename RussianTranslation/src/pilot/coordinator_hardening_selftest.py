@@ -403,6 +403,86 @@ def test_h8_claim_preflight_timeout_unwinds_clean():
           'DirLock reacquirable')
 
 
+def _h4_worklist():
+    """TWO runnable roots on purpose. verb_candidates filters out active_targets(state), so
+    after the first claim leases root 1 a single-root worklist would make the second claim die
+    at 'no runnable verb candidate' -- BEFORE reaching the duplicate-id guard, and the pin
+    would pass on pre-H4 master for entirely the wrong reason. With two roots the second claim
+    reaches the guard with a fresh target and the SAME explicit --lease-id, which is exactly
+    the shape of the real bug: one id reused across different targets."""
+    return {'runnable_remaining': ['h4root1', 'h4root2'], 'blocked_missing_rootmap': []}
+
+
+def _h4_run_cmd(cmd, cwd=None, check=True, timeout=None):
+    """Stand in for perf_preflight.py: report on whatever roots this call actually asked
+    about, so both claims get a live candidate without spawning a child."""
+    roots = [arg for arg in cmd if arg.startswith('h4root')]
+    return SimpleNamespace(returncode=0, stderr='', stdout=json.dumps(
+        {'reports': [{'root': root, 'agent_expected_after_tm': 1, 'selected_keys': ['k']}
+                     for root in roots]}))
+
+
+def _h4_claim_args(lease_id):
+    return SimpleNamespace(kind='verb', lane='b0', owner='h4-pin', lease_id=lease_id,
+                           batch_size=12, ttl_seconds=coordinator.LEASE_TTL_SECONDS)
+
+
+def test_h4_claim_rejects_duplicate_lease_id():
+    """H4 (H1940 Phase 2) -- claim must refuse an id that already exists, as
+    register_prepared_lease always has.
+
+    Pre-H4, claim appended a SECOND lease under the same id. Every lookup goes through
+    lease_by_id, which returns the FIRST match, so that second lease was
+    unreachable-but-persisted: it still consumed a preparation slot and still showed up in
+    active_targets, while breaking the single-id CAS assumption the rest of the coordinator
+    rests on. RED on master, where the second claim succeeds and leaves two leases and two
+    registry events.
+    """
+    with _h8_isolated():
+        coordinator.run_cmd = _h4_run_cmd
+        coordinator.verb_worklist.build_worklist = _h4_worklist
+
+        with contextlib.redirect_stdout(io.StringIO()):
+            coordinator.claim(_h4_claim_args('h4-dup-lease'))
+
+        p = coordinator.paths()
+        first = coordinator.load_state().get('leases') or []
+        if len(first) != 1:
+            raise AssertionError('setup: expected exactly one lease, got %d' % len(first))
+        registry_before = (open(p['registry'], encoding='utf-8').read().splitlines()
+                           if os.path.exists(p['registry']) else [])
+
+        expect_refusal(lambda: coordinator.claim(_h4_claim_args('h4-dup-lease')),
+                       'lease already exists')
+
+        after = coordinator.load_state().get('leases') or []
+        if len(after) != 1:
+            raise AssertionError(
+                'a duplicate --lease-id appended a second lease: %r' %
+                [lease.get('id') for lease in after])
+        if after != first:
+            raise AssertionError('the refused claim mutated the existing lease')
+        registry_after = (open(p['registry'], encoding='utf-8').read().splitlines()
+                          if os.path.exists(p['registry']) else [])
+        if registry_after != registry_before:
+            raise AssertionError('the refused claim emitted a registry event: %r' %
+                                 registry_after[len(registry_before):])
+
+        # Same wording as register_prepared_lease, so both entry points speak with one voice.
+        with coordinator.DirLock(p['lock'], wait_seconds=0):
+            pass
+
+        # A DIFFERENT id on the still-free second root is still claimable -- the guard
+        # refuses duplicates, it does not wedge the lane.
+        with contextlib.redirect_stdout(io.StringIO()):
+            coordinator.claim(_h4_claim_args('h4-other-lease'))
+        final = [lease.get('id') for lease in coordinator.load_state().get('leases') or []]
+        if final != ['h4-dup-lease', 'h4-other-lease']:
+            raise AssertionError('expected both distinct leases, got %r' % final)
+    print('  H4: duplicate --lease-id refused (no second lease, no registry event, lock '
+          'free); a distinct id still claims')
+
+
 def main():
     test_preflight_fail_closed()
     test_record_output_batch_progress()
@@ -410,6 +490,7 @@ def main():
     test_registry_projection_fail_closed()
     test_h8_claim_preflight_timeout_is_bounded()
     test_h8_claim_preflight_timeout_unwinds_clean()
+    test_h4_claim_rejects_duplicate_lease_id()
     print('coordinator_hardening_selftest: PASS')
 
 

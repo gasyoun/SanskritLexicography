@@ -10,6 +10,48 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — checkpoints and status files were atomic but never flushed to disk (H3 / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)
+
+`headless_worker.atomic_json`, `bounded_supervisor._write_checkpoint` and
+`cohort_engine._save_checkpoint` all wrote a temp file and `os.replace`d it — atomic, but
+never durable. A power loss between the write and the OS flush leaves a valid-looking
+truncated or empty file: for the checkpoint that means the crash-resume authority is gone
+and completed work is re-audited; for the status sidecar it means the orchestrator reads a
+window that never finished. All three now `flush()` + `os.fsync(f.fileno())` before the
+replace, matching the durability `window_common.atomic_write_text` has always had.
+
+Landed **inline rather than routed through the shared writer**, which is what the original
+sketch proposed, because routing was measured and is not byte-neutral:
+`atomic_write_text` passes no `newline=` to `os.fdopen`, so it emits CRLF on Windows and
+drops the trailing newline (246 vs 232 bytes on the probe payload, diverging at offset 1).
+Those bytes are hash-bound, and the same writer also emits the execution manifest whose
+digest is `manifest_sha256` — so pinning the newline there is a hash migration across
+gate-pinned artifacts, not a durability fix. The measurement is committed as
+`src/pilot/h3_byte_probe.py` and the residual is recorded as Uprava FINDINGS §262.
+
+### Fixed — `claim` accepted a duplicate `--lease-id` and persisted an unreachable second lease (H4 / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)
+
+`coordinator.register_prepared_lease` has always refused a lease id that already exists;
+`claim` did not, so `--lease-id <existing>` appended a *second* lease under the same id.
+Because every lookup goes through `lease_by_id`, which returns the first match, that second
+lease was unreachable but still persisted — it consumed a preparation slot, appeared in
+`active_targets` and reserved-key scans, and broke the single-id CAS assumption the rest of
+the coordinator is built on. `claim` now carries the same existence guard, placed before the
+artifact-dir creation, the lease append and the state save, so a refused claim leaves
+nothing behind. The guard also covers the auto-generated id, since `make_lease_id` embeds a
+second-resolution timestamp and the pid and a collision there would itself be a duplicate;
+two claims for the same *target* still get distinct ids and are unaffected.
+
+### Changed — the residual ledger re-read itself once per key (O(n²) / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)
+
+`append_residual` re-read the entire append-only ledger on every call, making
+`append_from_audit_report` O(keys × ledger bytes) on a path that runs per audited window
+against a file that only grows. It now accepts an optional pre-read snapshot; omitted, the
+behaviour is exactly as before. On a successful append the new row is written back into the
+snapshot, so batched dedupe stays identical to the per-call re-read — a batch containing the
+same key twice still writes it once. `backfill_documented` had the same shape and the same
+fix. Measured: a 12-key batch went from 13 ledger reads to 1.
+
 ### Fixed — a stalled window burned its whole iteration ceiling at full speed instead of stopping (H7 / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)
 
 `bounded_staged_run.make_run_window`'s per-lease drain loop had no idle handling. When a

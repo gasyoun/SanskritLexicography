@@ -91,16 +91,26 @@ def make_row(key, reason, source_window, status='blocked', updated_at=None):
 
 
 def append_residual(path, key, reason, source_window, status='blocked',
-                    updated_at=None, force=False):
+                    updated_at=None, force=False, latest=None):
     """Append one residual row if the latest status for `key` is not already `status`
-    (unless force). Returns True when a row was written."""
-    latest = read_residuals(path)
+    (unless force). Returns True when a row was written.
+
+    `latest` is an OPTIONAL pre-read snapshot from `read_residuals(path)`. Omitting it keeps
+    the historical single-call contract exactly (this function re-reads the ledger itself),
+    so every existing caller is unaffected. Batch callers pass one snapshot for the whole
+    batch and MUST let this function update it: on a successful append the freshly written
+    row is written back into `latest`, so a later key in the same batch sees this one without
+    re-reading the file. That write-back is what makes the shared snapshot behave like a
+    re-read; without it a batch containing the same key twice would append it twice."""
+    if latest is None:
+        latest = read_residuals(path)
     cur = latest.get(key)
     if cur and cur.get('status') == status and not force:
         return False
     row = make_row(key, reason, source_window, status=status, updated_at=updated_at)
     os.makedirs(os.path.dirname(os.path.abspath(path)) or '.', exist_ok=True)
     append_jsonl_line(path, row)
+    latest[key] = row      # mirrors what a re-read would now return
     return True
 
 
@@ -113,23 +123,34 @@ def append_from_audit_report(report_path, source_window, path=RESIDUALS,
     # Also accept EN-style hard_keys when requeue_defect is absent.
     if not keys:
         keys = list(report.get('hard_keys') or [])
+    # H1940 Phase 2 (the fixlog's O(n^2) waste item): read the ledger ONCE for the whole
+    # batch instead of once per key. append_residual re-read the entire file on every call,
+    # making this loop O(keys x ledger bytes) -- and this is the hot path, called per audited
+    # window with a growing append-only ledger. append_residual writes each new row back into
+    # the snapshot, so the dedupe decision is identical to the per-call re-read.
+    latest = read_residuals(path)
     n = 0
     for key in keys:
         if append_residual(
                 path, key,
                 reason='%s (%s)' % (reason_prefix, source_window),
-                source_window=source_window):
+                source_window=source_window, latest=latest):
             n += 1
     return n, keys
 
 
 def backfill_documented(path=RESIDUALS, documented=None):
     documented = documented if documented is not None else DOCUMENTED_RESIDUALS
+    # Same one-read-per-batch fix as append_from_audit_report above. The fixlog named only
+    # that function, but this loop is byte-for-byte the same O(rows x ledger bytes) shape and
+    # the same two-line change; fixing one and leaving the other would just re-file the bug.
+    latest = read_residuals(path)
     written = 0
     for row in documented:
         if append_residual(
                 path, row['key'], row['reason'], row['source_window'],
-                status='blocked', updated_at=row.get('updated_at') or '2026-07-15T00:00:00Z'):
+                status='blocked', updated_at=row.get('updated_at') or '2026-07-15T00:00:00Z',
+                latest=latest):
             written += 1
     return written, len(documented)
 
@@ -169,6 +190,39 @@ def selftest():
         n, keys = append_from_audit_report(rep, 'no_pwg_w04', path=path)
         assert n == 1 and keys == ['c~~h0_zz_pw']
         assert 'c~~h0_zz_pw' in read_residuals(path)
+
+        # H1940 Phase 2 (O(n^2) waste item): a batch reads the ledger ONCE, not once per key,
+        # and the batched dedupe decision stays identical to the per-call re-read.
+        # RED on master: reads == number of keys.
+        import no_pwg_residual_ledger as self_mod
+        real_read = self_mod.read_residuals
+        reads = []
+
+        def counting_read(p=RESIDUALS):
+            reads.append(p)
+            return real_read(p)
+
+        big = os.path.join(td, 'batch.jsonl')
+        report = os.path.join(td, 'batch.report.json')
+        batch_keys = ['bk%02d~~h0_zz_pw' % i for i in range(12)]
+        # The same key twice in one batch must still be written ONCE -- this is what the
+        # snapshot write-back buys, and it fails if `latest` is merely read and never updated.
+        with open(report, 'w', encoding='utf-8') as f:
+            json.dump({'requeue_defect': batch_keys + [batch_keys[0]]}, f)
+        self_mod.read_residuals = counting_read
+        try:
+            written, returned = self_mod.append_from_audit_report(report, 'no_pwg_w09',
+                                                                  path=big)
+        finally:
+            self_mod.read_residuals = real_read
+        assert len(reads) == 1, 'batch re-read the ledger %d times (O(n^2))' % len(reads)
+        assert written == len(batch_keys), (written, len(batch_keys))
+        assert len(returned) == len(batch_keys) + 1, returned
+        final = real_read(big)
+        assert len(final) == len(batch_keys), sorted(final)
+        with open(big, encoding='utf-8') as f:
+            assert sum(1 for line in f if line.strip()) == len(batch_keys), \
+                'the duplicate key in the batch was appended twice'
     print('no_pwg_residual_ledger selftest: PASS')
     return 0
 
