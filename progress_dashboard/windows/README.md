@@ -1,6 +1,6 @@
 # Windows autostart — PWG→RU dashboards
 
-_Created: 31-07-2026 · Last updated: 31-07-2026_
+_Created: 31-07-2026 · Last updated: 31-07-2026 (logon-only ruling)_
 
 Keeps both dashboard surfaces running **without a manual start after logon** on the residential machine (WIN-NJTORH3267V / user `WIN-NJTORH3267V\user`), matching the `SL findings dashboard refresh` Task Scheduler pattern (H737).
 
@@ -28,27 +28,19 @@ powershell -ExecutionPolicy Bypass -File progress_dashboard\windows\register_tas
 | Mode | Behaviour | Status |
 |---|---|---|
 | **Default (shipped)** | `InteractiveToken` — tasks run when this Windows user is **logged on** (desktop session). RestartOnFailure every 1 min × 999. `StartWhenAvailable` (missed logon fires later). | **Registered on WIN-NJTORH3267V** (31-07-2026) |
-| **Logged-off / locked headless** | “Run whether user is logged on or not” needs **stored credentials** typed once at the keyboard | **Open human `@DO`** — see below |
+| **Logged-off / headless** | “Run whether user is logged on or not” needs stored credentials | **Not wanted** while one PC does translation (ruling 31-07-2026) — see below |
 
-### Human `@DO` — stored credentials (optional)
+### Logged-off stored credentials — closed for now
 
-Only needed if the kitchen must keep publishing while the session is **logged off** or the machine is locked without an interactive token.
+**Ruling 31-07-2026:** when Windows is off, there is no translation on that box, so the kitchen does **not** need to keep publishing. Logon-only is enough for a single residential machine.
+
+Revisit **only if several PCs translate at once** and an always-on publisher is required. Recipe (then, not now):
 
 ```powershell
-# Type the password when prompted (*). Run as the same user (or admin).
+# Type the password when prompted (*). Only if multi-PC / always-on is decided.
 schtasks /Change /TN "SL progress dashboard server" /RU WIN-NJTORH3267V\user /RP *
 schtasks /Change /TN "SL progress live refresh"     /RU WIN-NJTORH3267V\user /RP *
 ```
-
-Same residual as findings monthly (`SL findings dashboard refresh` still InteractiveToken for the same reason). After changing, verify:
-
-```powershell
-schtasks /Query /TN "SL progress dashboard server" /V /FO LIST
-schtasks /Query /TN "SL progress live refresh" /V /FO LIST
-# Logon Mode should show the stored-credentials form, not "Interactive only"
-```
-
-Smoke after next full logoff/logon (or reboot): open http://127.0.0.1:8765/ and https://gasyoun.github.io/SanskritLexicography/progress/ without starting anything by hand.
 
 ## Logs (gitignored)
 
@@ -70,7 +62,7 @@ Smoke after next full logoff/logon (or reboot): open http://127.0.0.1:8765/ and 
 | Item | Status |
 |---|---|
 | Autostart while **logged on** | Done (tasks registered) |
-| Autostart while **logged off** | Open `@DO` (stored credentials above) |
+| Autostart while **logged off** | **Closed** — not needed until multi-PC concurrent translation (ruling 31-07-2026) |
 | Public Pages + local ops code | Done (H2032 PRs #927–#935) |
 | Dual-surface docs interlinked | Done |
 | GitHub release tags for every `1.114.x` changelog section | Optional hygiene (`/cut-release`) — not required for autostart |

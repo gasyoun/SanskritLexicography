@@ -16,9 +16,9 @@ On the residential machine (WIN-NJTORH3267V), Task Scheduler starts both surface
 powershell -ExecutionPolicy Bypass -File progress_dashboard\windows\register_tasks.ps1 -StartNow
 ```
 
-- **Default:** runs when this Windows user is **logged on** (`InteractiveToken`).
-- **Optional human `@DO`:** stored credentials so tasks run while logged off — commands in [`windows/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md) § “Human `@DO`”.
-- Full residual list (tags, handoff, multi-PC paths): same [windows/README](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md) § “Residual inventory”.
+- **Default (and current policy):** runs when this Windows user is **logged on** (`InteractiveToken`). When Windows is off there is no translation on that box, so the kitchen does not need to publish — ruling 31-07-2026.
+- **Logged-off / multi-PC:** deferred until several PCs translate at once; recipe parked in [`windows/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md).
+- Residual inventory: same [windows/README](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md) § “Residual inventory”.
 
 Public companion to the [article site](https://gasyoun.github.io/SanskritLexicography/).
 Where the article site shows the **finished** PWG→Russian translations, this shows:

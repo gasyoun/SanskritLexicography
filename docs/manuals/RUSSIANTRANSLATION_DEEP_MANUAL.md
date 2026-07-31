@@ -143,8 +143,8 @@ powershell -ExecutionPolicy Bypass -File progress_dashboard\windows\register_tas
 ```
 
 - Full notes + residual inventory: [progress_dashboard/windows/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md).
-- **Human `@DO` (optional):** if the kitchen must publish while Windows is **logged off**, upgrade both tasks to stored credentials (`schtasks /Change /TN "…" /RU WIN-NJTORH3267V\user /RP *`) — same residual as findings monthly. Commands live in that windows README.
-- **Not automatic by default:** logged-off headless mode; other PCs (re-register after clone); GitHub release tags for every changelog section.
+- **Policy (31-07-2026):** logon-only is enough. If Windows is off, translation is not running on that box, so the kitchen need not publish. Revisit only for **multi-PC concurrent translation** (stored-credentials recipe stays in the windows README, not as an open `@DO`).
+- **Not automatic by default:** other PCs (re-register after clone); GitHub release tags for every changelog section.
 
 **Manual start (fallback if tasks are off):**
 

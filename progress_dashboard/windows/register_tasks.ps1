@@ -6,9 +6,9 @@
 #
 # Pattern matches "SL findings dashboard refresh" (H737): InteractiveToken,
 # StartWhenAvailable, explicit WorkingDirectory, RestartOnFailure, no battery block.
-# LogonType stays InteractiveToken — "run whether user is logged on or not" needs
-# stored credentials typed at the keyboard (human @DO). Exact commands:
-#   progress_dashboard/windows/README.md  § "Human @DO — stored credentials"
+# LogonType stays InteractiveToken by policy (31-07-2026): kitchen only needed
+# while the residential PC is on / translating. Logged-off multi-PC recipe:
+#   progress_dashboard/windows/README.md  § "Logged-off stored credentials"
 #
 # Usage (elevated not required for current-user tasks):
 #   powershell -ExecutionPolicy Bypass -File progress_dashboard\windows\register_tasks.ps1
