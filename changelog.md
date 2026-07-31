@@ -14,6 +14,12 @@ not an error.
 
 ## [Unreleased]
 
+## [1.114.7] - 2026-07-31
+
+### Changed
+
+- **Dashboard autostart residual documented (human `@DO` for logged-off run)** (31-07-2026, Grok 4.5 `grok-4.5`, H2032 follow-up): [`progress_dashboard/windows/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md) now carries the honest residual inventory + the exact `schtasks /Change /RU … /RP *` commands for “run whether logged on or not”; §2d of the [RU deep manual](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md), [progress_dashboard/README](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/README.md), [MAINTAINER_MANUAL](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/MAINTAINER_MANUAL.md), and both HTML dual-surface banners link that residual and name the Task Scheduler task titles.
+
 ## [1.114.6] - 2026-07-31
 
 ### Added

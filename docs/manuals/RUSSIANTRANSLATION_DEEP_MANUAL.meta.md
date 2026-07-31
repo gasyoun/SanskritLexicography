@@ -58,6 +58,7 @@ Re-run `script_census.py` and `harvest_launch_stats.py` when the pipeline tree o
 
 | Date | Change | By |
 |---|---|---|
+| 31-07-2026 | §2d: autostart residual + human `@DO` for logged-off stored credentials; links windows/README inventory | Grok 4.5 (grok-4.5) |
 | 31-07-2026 | §2d dual dashboards (local 5 s · web 60 s) + doc map row; interlinked with progress_dashboard + dashboard_server UIs (H2032 follow-up) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |
 | 11-07-2026 | Subject manual authored (H606) | Fable 5 (`claude-fable-5`) |

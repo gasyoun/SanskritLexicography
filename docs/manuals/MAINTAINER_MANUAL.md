@@ -2,6 +2,7 @@
 
 _Created: 10-07-2026 · Last updated: 31-07-2026_
 
+
 For the person (or agent) who **operates and extends** this repository. If you
 just want to *use* the data, read the
 [Data-Reuse Manual](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/DATA_REUSE_MANUAL.md)
@@ -51,8 +52,8 @@ live tooling embedded in the active subprojects.
 | [literature/](https://github.com/gasyoun/SanskritLexicography/tree/master/literature) | Reference PDF/EPUB library + Markdown extractions + Lexicography-Manuals | Reference store | researcher |
 | [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) | Static site built from research docs (zettelkasten); built and tested, **not deployed** (origin/gh-pages has no `research/` directory) — deploy is human-gated | Active | maintainer |
 | [epistemic_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/epistemic_dashboard) · [findings_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/findings_dashboard) | Generated HTML dashboards over the governance registries below | Active | maintainer |
-| [progress_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/progress_dashboard) | **Public web kitchen** for PWG→RU — progress + speed/cost/idle/calendar/changelog at […/progress/](https://gasyoun.github.io/SanskritLexicography/progress/). Browser poll **60 s**; publish with `live_refresh.py` while translating. **Not** the same as local ops (below). See [README](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/README.md) · [RU deep manual §2d](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) | Active | maintainer |
-| Local ops dashboard | `python RussianTranslation/src/pilot/dashboard_server.py` → `http://127.0.0.1:8765/` — run/gate/ledger, browser poll **5 s**, **localhost only** (never Pages) | Active | maintainer |
+| [progress_dashboard/](https://github.com/gasyoun/SanskritLexicography/tree/master/progress_dashboard) | **Public web kitchen** for PWG→RU — […/progress/](https://gasyoun.github.io/SanskritLexicography/progress/), browser poll **60 s**. Autostart: Task Scheduler `SL progress live refresh` (logon; `live_refresh.py --idle-stop 0`). **Not** the same as local ops. [README](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/README.md) · [windows/README](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md) · [§2d](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) | Active | maintainer |
+| Local ops dashboard | Task `SL progress dashboard server` → `http://127.0.0.1:8765/` (5 s), **localhost only**. Manual fallback: `python RussianTranslation/src/pilot/dashboard_server.py`. Logged-off run = optional human `@DO` (stored credentials) — [windows/README](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/windows/README.md) | Active | maintainer |
 
 ## 3. The governance / epistemic layer — the load-bearing part
 
