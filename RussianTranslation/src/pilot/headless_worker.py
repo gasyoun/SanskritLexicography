@@ -145,11 +145,27 @@ def validate_preflight_artifact(path, manifest=None, expected_sha256=None):
 
 
 def atomic_json(path, payload):
+    # H3 (H1940 Phase 2): os.replace is atomic but NOT durable -- a power loss between the
+    # write and the disk flush leaves a valid-looking, truncated or empty status/output file,
+    # and the orchestrator then re-audits the whole window. flush+fsync before the replace
+    # gives the same durability window_common.atomic_write_text has always had.
+    #
+    # Deliberately INLINE rather than routed through window_common.atomic_write_json, which
+    # is what the fixlog sketch proposed. Measured 31-07-2026 (src/pilot/h3_byte_probe.py):
+    # routing through it changes these bytes -- CRLF instead of LF on Windows (atomic_write_text
+    # passes no newline= to os.fdopen) and no trailing newline, 246 bytes vs 232 on the probe
+    # payload, diverging at offset 1. Those bytes are hash-bound (window_status/output sidecars),
+    # and the same shared writer also emits the execution manifest whose sha256_path digest is
+    # manifest_sha256, plus the preflight evidence -- so pinning newline= there is a hash
+    # migration across several gate-pinned artifacts, not a durability fix. Recorded as its own
+    # item in Uprava FINDINGS §262; H3 stays surgical and byte-identical.
     os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
     tmp = path + '.tmp.%d' % os.getpid()
     with open(tmp, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
         f.write('\n')
+        f.flush()
+        os.fsync(f.fileno())
     os.replace(tmp, path)
 
 

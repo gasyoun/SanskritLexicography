@@ -562,9 +562,25 @@ def test_6_reservation_ledger_max_calls(td):
     reserved BEFORE spawn and never exceeded."""
     td = os.path.join(td, 't6'); os.makedirs(td)
 
-    # EVIDENCE — today's ceiling is post-hoc accounting, not a reservation. (These runs
-    # exercise the CURRENT BoundedSupervisor; its own selftest pins this overshoot as the
-    # backward-compatible ceiling semantics, so no existing green pin is contradicted.)
+    # EVIDENCE — the legacy BoundedSupervisor ceiling is POST-HOC accounting, not a
+    # reservation. (These runs exercise the CURRENT BoundedSupervisor; its own selftest pins
+    # these semantics, so no existing green pin is contradicted.)
+    #
+    # Re-stamped 31-07-2026 (H1940 Phase 2 item 4, Opus 5 `claude-opus-5[1m]`). As written on
+    # 24-07-2026 (H1618) this block asserted that max_calls=0 STILL launched one window and
+    # spent two calls. PR #761 (26-07-2026) made max_calls=0 launch nothing, so the baseline
+    # went stale two days after it was written and this pin was RED on clean origin/master
+    # ever since — asserting nothing about cohort_engine while training every reader to treat
+    # a red suite as normal. H9 correctly left it alone as out of scope ("never weaken a guard
+    # to pass a gate" cuts both ways); it is corrected here as its own ruled item.
+    #
+    # What actually changed, and what did NOT: #761 moved only the max_calls=0 case to a
+    # PRE-spawn refusal (0 launches, 0 spent, stop_reason='call_count'). The max_calls=1 case
+    # is untouched and still overshoots — a window whose audit reports 3 calls runs to
+    # completion against a ceiling of 1, finishing with calls_spent=3. So the contrast this
+    # EVIDENCE exists to draw is intact; it now lives in the max_calls=1 half. Both halves are
+    # asserted against measured current behaviour, so the block is a live guard again rather
+    # than a stale one, and it will fail loudly if either semantic drifts.
     launches = []
 
     def worker(window):
@@ -582,10 +598,16 @@ def test_6_reservation_ledger_max_calls(td):
                                 audit=audit_calls(2), max_calls=0).run()
     one = bs.BoundedSupervisor([{'id': 'w1'}], worker, os.path.join(td, 'cp1.json'),
                                audit=audit_calls(3), max_calls=1).run()
-    print('    (6) EVIDENCE post-hoc ceiling today: max_calls=0 still launched %d '
-          'window(s) and spent %d call(s); max_calls=1 finished with calls_spent=%d'
-          % (launches.count('w0'), zero['calls_spent'], one['calls_spent']))
-    assert launches.count('w0') == 1 and zero['calls_spent'] == 2, (launches, zero)
+    print('    (6) EVIDENCE legacy ceiling: max_calls=0 launched %d window(s), spent %d '
+          'call(s), stop_reason=%r (pre-spawn refusal since #761); max_calls=1 still '
+          'OVERSHOOTS post-hoc with calls_spent=%d against a ceiling of 1'
+          % (launches.count('w0'), zero['calls_spent'], zero.get('stop_reason'),
+             one['calls_spent']))
+    # Post-#761: max_calls=0 refuses BEFORE spawning.
+    assert launches.count('w0') == 0 and zero['calls_spent'] == 0, (launches, zero)
+    assert zero.get('stop_reason') == 'call_count', zero
+    # Unchanged by #761, and the surviving contrast with the engine's reservation: the
+    # window runs to completion and the ceiling is only noticed afterwards.
     assert one['calls_spent'] == 3, one
 
     # THE PIN — the engine's campaign reservation ledger.
@@ -975,6 +997,46 @@ def test_9_settling_with_undispatched_leases_reports_stop_reason(td):
         'the stranding reason was not persisted to the checkpoint: %r' % cp.get('stop_reason'))
 
 
+def test_10_h3_checkpoint_fsync(td):
+    """H3 (H1940 Phase 2): _save_checkpoint must flush to DISK before the atomic rename.
+
+    Same durability gap as the other two checkpoint writers — os.replace is atomic but not
+    durable, so a power loss between write and flush loses the wave's last checkpoint and the
+    resume re-does settled work. RED on master, where no fsync happens at all. os.fstat inside
+    the probe proves the descriptor was still open, so this cannot pass against a stale fd.
+    """
+    td = os.path.join(td, 't10'); os.makedirs(td)
+    checkpoint = os.path.join(td, 'cp.json')
+    engine = build_engine([{'id': 'leaseA', 'profile': 'c1'}], lambda w: None, checkpoint)
+    if engine is None:
+        raise AssertionError(ENGINE_MISSING % 'build_engine returned None')
+
+    calls = []
+    real_fsync, real_replace = os.fsync, os.replace
+
+    def fake_fsync(fd):
+        calls.append(('fsync', os.fstat(fd).st_size))
+        return real_fsync(fd)
+
+    def fake_replace(src, dst):
+        calls.append(('replace', os.path.basename(dst)))
+        return real_replace(src, dst)
+
+    os.fsync, os.replace = fake_fsync, fake_replace
+    try:
+        engine._save_checkpoint()
+    finally:
+        os.fsync, os.replace = real_fsync, real_replace
+
+    if [kind for kind, _ in calls] != ['fsync', 'replace']:
+        raise AssertionError('expected exactly fsync-then-replace, got %r' % calls)
+    if calls[0][1] <= 0:
+        raise AssertionError('fsynced an empty descriptor: %r' % calls)
+    raw = open(checkpoint, 'rb').read()
+    if b'\r\n' in raw or not raw.endswith(b'\n'):
+        raise AssertionError('checkpoint bytes changed (CRLF or missing trailing newline)')
+
+
 TESTS = [
     ('1 two profile-bound leases: peak_concurrency >= 2', test_1_barrier_concurrency),
     ('2 reverse completion == serial order/store bytes', test_2_reverse_completion_determinism),
@@ -985,6 +1047,7 @@ TESTS = [
     ('7 coord-dir exactness + admitted/parked filtering', test_7_coord_dir_and_admitted_parked_filtering),
     ('8 H9: transient probe failure re-probed on resume', test_8_transient_probe_failure_is_reprobed_on_resume),
     ('9 H9: settling with undispatched leases reports stop_reason', test_9_settling_with_undispatched_leases_reports_stop_reason),
+    ('10 H3: _save_checkpoint fsyncs the live fd before os.replace', test_10_h3_checkpoint_fsync),
 ]
 
 

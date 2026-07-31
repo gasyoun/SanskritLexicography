@@ -110,6 +110,11 @@ class CohortEngine:
         with open(tmp, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
             f.write('\n')
+            # H3 (H1940 Phase 2): same durability gap as the other two checkpoint writers --
+            # atomic replace, no flush to disk. Inline rather than routed through the shared
+            # writer; see the measured byte-impact note on headless_worker.atomic_json.
+            f.flush()
+            os.fsync(f.fileno())
         os.replace(tmp, self.checkpoint_path)
 
     def _load_checkpoint(self):
