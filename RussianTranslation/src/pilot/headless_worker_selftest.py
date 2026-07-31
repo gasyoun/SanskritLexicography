@@ -1033,6 +1033,67 @@ def test_h2a_precedence_is_deterministic_and_budget_stays_observable():
     print('  H2a precedence: lowest-index budget stop wins deterministically (%r)' % first)
 
 
+def h3_fsync_order_probe(write_call):
+    """Run `write_call` with os.fsync/os.replace instrumented; return the ordered log.
+
+    Each entry is ('fsync', size_of_that_fd) or ('replace', basename). `os.fstat` inside the
+    fake fsync is the load-bearing part: it raises if the descriptor is already closed, so a
+    pin built on this cannot pass against an implementation that fsyncs a stale fd. Shared by
+    the three H3 pins (headless_worker / bounded_supervisor / cohort_engine)."""
+    calls = []
+    real_fsync, real_replace = os.fsync, os.replace
+
+    def fake_fsync(fd):
+        calls.append(('fsync', os.fstat(fd).st_size))
+        return real_fsync(fd)
+
+    def fake_replace(src, dst):
+        calls.append(('replace', os.path.basename(dst)))
+        return real_replace(src, dst)
+
+    os.fsync, os.replace = fake_fsync, fake_replace
+    try:
+        write_call()
+    finally:
+        os.fsync, os.replace = real_fsync, real_replace
+    return calls
+
+
+def test_h3_atomic_json_fsyncs_before_replace():
+    """H3 (H1940 Phase 2) — atomic_json must flush to DISK before the atomic rename.
+
+    os.replace is atomic but not durable: pre-H3 a power loss between the write and the
+    flush left a valid-looking truncated/empty status file, and the orchestrator re-audited
+    the whole window. RED on master, where no fsync happens at all.
+
+    Also pins that the fix is BYTE-IDENTICAL — the deliberate reason H3 landed inline
+    instead of routing through window_common.atomic_write_json (which would have emitted
+    CRLF and dropped the trailing newline; see src/pilot/h3_byte_probe.py).
+    """
+    with tempfile.TemporaryDirectory() as td:
+        path = os.path.join(td, 'window_status.json')
+        payload = {'schema': 'pwg.window_status.v1', 'cards': 3, 'unicode': 'ā ī ū'}
+        calls = h3_fsync_order_probe(lambda: h.atomic_json(path, payload))
+
+    kinds = [kind for kind, _ in calls]
+    if kinds != ['fsync', 'replace']:
+        raise AssertionError('expected exactly fsync-then-replace, got %r' % calls)
+    if calls[0][1] <= 0:
+        raise AssertionError('fsynced an empty descriptor: %r' % calls)
+
+    # Re-write uninstrumented to assert the on-disk bytes are unchanged by H3.
+    with tempfile.TemporaryDirectory() as td:
+        path = os.path.join(td, 'window_status.json')
+        h.atomic_json(path, payload)
+        raw = open(path, 'rb').read()
+    if b'\r\n' in raw:
+        raise AssertionError('atomic_json emitted CRLF — the newline pin was lost')
+    if not raw.endswith(b'\n'):
+        raise AssertionError('atomic_json lost its trailing newline')
+    print('  H3: atomic_json fsyncs the live fd before os.replace; bytes unchanged '
+          '(LF, trailing newline)')
+
+
 def main():
     payload, status, code = execute(manifest(), success_runner)
     assert code == 0 and status['classification'] == 'success'
@@ -1280,6 +1341,7 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_h2a_fragment_key_match_is_exact_not_prefix()
     test_h2a_content_failure_without_budget_stop_unchanged()
     test_h2a_precedence_is_deterministic_and_budget_stays_observable()
+    test_h3_atomic_json_fsyncs_before_replace()
     print('headless_worker_selftest: PASS')
 
 
