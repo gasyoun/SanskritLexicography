@@ -1,5 +1,24 @@
 #!/usr/bin/env python
-"""Local read-only dashboard server for RussianTranslation operations."""
+"""Local read-only dashboard server for RussianTranslation operations.
+
+Serves http://127.0.0.1:8765/ with a default browser poll of **5 seconds**
+(`/api/status`). This is the *local ops* surface — run gates, ledger tail,
+events, evolution — over gitignored artifacts on this machine.
+
+It is **not** the public campaign kitchen. That lives on GitHub Pages:
+
+  https://gasyoun.github.io/SanskritLexicography/progress/
+
+Public poll = **60 s**; numbers move only when
+`progress_dashboard/live_refresh.py` rebuilds and pushes `gh-pages/progress/`.
+
+| Surface | Interval | How to open |
+|---|---|---|
+| Local ops (this server) | 5 s | `python src/pilot/dashboard_server.py` |
+| Web kitchen | 60 s | open the Pages URL above (after live_refresh) |
+
+Docs: progress_dashboard/README.md · docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md §2d.
+"""
 import argparse
 import datetime
 import json

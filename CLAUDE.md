@@ -20,7 +20,12 @@ carry substantial Python tooling — the two translation pipelines under
 [`docs_site/build_site.py`](docs_site/build_site.py), the three dashboard
 generators ([`epistemic_dashboard/`](epistemic_dashboard),
 [`findings_dashboard/`](findings_dashboard),
-[`progress_dashboard/`](progress_dashboard)) — plus a root
+[`progress_dashboard/`](progress_dashboard) — public web kitchen at
+[/progress/](https://gasyoun.github.io/SanskritLexicography/progress/), browser
+poll **60 s**; local ops twin is
+`RussianTranslation/src/pilot/dashboard_server.py` → `127.0.0.1:8765`, poll
+**5 s** — see [progress_dashboard/README](progress_dashboard/README.md) and
+[RU deep manual §2d](docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md)) — plus a root
 [`requirements.txt`](requirements.txt). Treat the repo as **hybrid**: a
 data/docs workspace with live tooling embedded in the active subprojects, so
 "working in the codebase" spans inspecting/transforming text data, authoring

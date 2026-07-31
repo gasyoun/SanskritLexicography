@@ -16,8 +16,25 @@
       <span id="healthChip" class="chip neutral">loading</span>
       <span>Last refresh <b id="lastRefresh">--</b></span>
       <span>Data age <b id="dataAge">--</b></span>
+      <span class="subtle">local poll <b>5&nbsp;s</b></span>
     </div>
   </header>
+
+  <div class="dual-surface" id="dualSurface">
+    <b>Local ops (this page) vs public web kitchen.</b>
+    This server reads the gitignored store/ledger on <em>this machine</em> and
+    refreshes the browser <b>every 5&nbsp;s</b> — it is <b>not</b> published to
+    GitHub Pages. The public campaign kitchen (progress + speed/cost/idle/calendar/changelog)
+    is at
+    <a href="https://gasyoun.github.io/SanskritLexicography/progress/" target="_blank" rel="noopener">
+      gasyoun.github.io/…/progress/</a>
+    (browser poll <b>60&nbsp;s</b>; numbers move when
+    <code>progress_dashboard/live_refresh.py</code> publishes).
+    Docs:
+    <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/README.md" target="_blank" rel="noopener">progress_dashboard/README</a>
+    ·
+    <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md" target="_blank" rel="noopener">RU deep manual §2d</a>.
+  </div>
 
   <main>
     <section>

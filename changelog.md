@@ -14,6 +14,12 @@ not an error.
 
 ## [Unreleased]
 
+## [1.114.2] - 2026-07-31
+
+### Changed
+
+- **Documented and interlinked the dual PWG→RU dashboards** (31-07-2026, Grok 4.5 `grok-4.5`, H2032 follow-up): **local ops = 5 s** (`dashboard_server.py` → `127.0.0.1:8765`) vs **web kitchen = 60 s** ([`/progress/`](https://gasyoun.github.io/SanskritLexicography/progress/) + `live_refresh.py`). Both HTML UIs now carry a dual-surface callout with cross-links; [`progress_dashboard/README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/README.md) opens with the comparison table; operator depth is [RUSSIANTRANSLATION_DEEP_MANUAL.md §2d](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md); orientation rows in [MAINTAINER_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/MAINTAINER_MANUAL.md) + root [README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/README.md); `dashboard_server.py` module docstring matches.
+
 ## [1.114.1] - 2026-07-31
 
 ### Added

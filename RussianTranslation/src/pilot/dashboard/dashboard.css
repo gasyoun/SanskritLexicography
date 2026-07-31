@@ -38,6 +38,24 @@ body {
   z-index: 2;
 }
 
+/* Cross-link to the public /progress/ kitchen (60s) — this page is local 5s only. */
+.dual-surface {
+  margin: 12px 20px 0;
+  padding: 12px 14px;
+  background: var(--blue-bg);
+  color: var(--blue-fg);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--blue-fg);
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.dual-surface a { color: var(--blue-fg); font-weight: 600; }
+.dual-surface code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+
 h1, h2, h3 {
   margin: 0;
   font-weight: 650;
