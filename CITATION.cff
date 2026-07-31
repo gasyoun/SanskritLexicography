@@ -8,8 +8,12 @@ message: >
   data/FAIR_RELEASE_1.md.
 license: MIT
 repository-code: https://github.com/gasyoun/SanskritLexicography
-version: 1.103.0
-date-released: "2026-07-29"
+version: 1.111.5
+date-released: "2026-07-31"
+# DOI: pending — the Zenodo–GitHub integration is not wired for this repository
+# (no .zenodo.json, no concept DOI). Until it is, a release mints no version DOI.
+# Human @DO (needs MG's Zenodo login): enable the integration, then record the
+# CONCEPT doi here and the per-version DOI in each release's notes.
 abstract: >
   A data and research workspace for the Sanskrit Lexicon project: exported
   headword lists, AI-produced Russian translations of Monier-Williams and
