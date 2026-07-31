@@ -913,6 +913,23 @@ def claim(args):
             raise SystemExit('unknown kind: %s' % args.kind)
 
         lease_id = args.lease_id or make_lease_id(args.kind, args.lane, target)
+        # H4 (H1940 Phase 2): register_prepared_lease has refused a duplicate id since it was
+        # written; claim did not, so `--lease-id <existing>` appended a SECOND lease under the
+        # same id. Every later lookup goes through lease_by_id, which returns the FIRST match,
+        # so the second lease was unreachable-but-persisted: it consumed a preparation slot,
+        # showed up in active_targets/reserved-key scans, and broke the single-id CAS
+        # assumption the rest of the coordinator is built on. Placed before the artifact-dir
+        # makedirs / leases.append / save_state, so a refused claim leaves no directory, no
+        # lease, no saved state and no registry event -- the unwind is clean by construction
+        # (the H8 pattern), and `with DirLock(...)` releases on the way out.
+        #
+        # This also covers the auto-generated id, not just an explicit --lease-id: make_lease_id
+        # embeds a second-resolution UTC stamp AND os.getpid(), so a collision there requires
+        # the same kind+lane+target within the same second from the same pid -- which is itself
+        # a genuine duplicate and equally worth refusing. Two claims for the same TARGET remain
+        # legal; they get distinct ids and this guard never sees them.
+        if any(existing.get('id') == lease_id for existing in state.get('leases', [])):
+            raise SystemExit('lease already exists: %s' % lease_id)
         adir = artifact_dir(lease_id)
         lease = {
             'id': lease_id,
