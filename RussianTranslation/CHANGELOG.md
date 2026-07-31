@@ -10,6 +10,31 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — H2056 call/retry/classification path review (01-08-2026, Opus 5 `claude-opus-5[1m]`)
+
+[`pwg_ru/h2056/H2056_CALL_PATH_REVIEW_2026-08.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2056/H2056_CALL_PATH_REVIEW_2026-08.md)
+— an adversarially-verified defect report for the paid call path, commissioned by
+[H2056](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2056-Opus_RussianTranslation_pwg-live-gate-retry-classification-code-review_01.08.26.md)
+after [Uprava FINDINGS §270](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) established by
+measurement that a rate-limited Claude Code CLI **hangs instead of reporting the 429**.
+
+Method: a 22-agent Workflow (1 map · 5 review · 15 verify · 1 synthesise), every finding put through
+three refute-primed lenses (correctness / does-it-reproduce / already-handled-elsewhere) with
+majority-refute killing it. **24 findings raised, 13 survived, 11 refuted** — the refuted ones are
+listed with their refutations, so the review is auditable rather than self-flattering.
+
+Headline result: the rate-limit signal is destroyed **below** the two handlers that were suspected.
+[`proc_tree.py:270`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/proc_tree.py#L270)
+drains the killed CLI's stdout/stderr into locals and re-raises without attaching them, so both
+`except subprocess.TimeoutExpired` handlers hardcode `'timeout'` over text that no longer exists.
+All sixteen time gates in the path are wall-clock; `duration_api_ms` — the one field that separates
+route health from in-CLI backoff — is parsed nowhere in `src/*.py`. Worst permanent harm: a quota
+hang can denylist a *healthy* card and discard its correctly-translated fragments' TM
+([`audit_window.py:484`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py#L484)).
+
+Review-only by construction: **no fixes applied, no ceiling changed, no gate re-run, zero paid calls.**
+Eleven findings carry `data_integrity=true` and are filed as `[integrity]` issues.
+
 ### Changed — H1682 abbrev rules sheet content remake v3 (H2047, 31-07-2026, Grok 4.5 `grok-4.5` override for Opus comparison)
 
 Regenerates `review/h1682_abbrev_rules_sheet.html` (sheet_id `h1682_abbrev_rules`,
