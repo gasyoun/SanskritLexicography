@@ -69,6 +69,10 @@
   @media (max-width:720px){ .two { grid-template-columns:1fr; } }
   .note { color:var(--mut); font-size:.85rem; }
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:.85rem; }
+  .dual { background:var(--card); border:1px solid var(--line); border-left:3px solid var(--done);
+          border-radius:8px; padding:.75rem 1rem; margin: .6rem 0 1.1rem; font-size:.88rem; }
+  .dual table { margin:.4rem 0 0; font-size:.85rem; }
+  .dual th { font-weight:600; }
 </style>
 </head>
 <body>
@@ -82,12 +86,34 @@
   <a href="../findings/">findings</a> ·
   <a href="../episteme/">epistemic</a>.</p>
 
+<div class="dual" id="dualSurfaces">
+  <b>Web vs local (do not conflate).</b>
+  This page is the <b>public web kitchen</b>: the browser re-fetches JSON
+  <b>every 60&nbsp;s</b>; numbers only move when residential
+  <code>progress_dashboard/live_refresh.py</code> has published to gh-pages.
+  For <b>5&nbsp;s</b> run/gate telemetry on the machine doing the work, open the
+  local ops dashboard (not on the public internet):
+  <code>python RussianTranslation/src/pilot/dashboard_server.py</code>
+  → <span class="mono">http://127.0.0.1:8765/</span>.
+  <table>
+    <tr><th>Surface</th><th>Poll</th><th>Where</th></tr>
+    <tr><td>Web kitchen (this page)</td><td class="num">60&nbsp;s</td><td><a href="https://gasyoun.github.io/SanskritLexicography/progress/">/progress/</a></td></tr>
+    <tr><td>Local ops</td><td class="num">5&nbsp;s</td><td><span class="mono">127.0.0.1:8765</span> (this PC only)</td></tr>
+  </table>
+  Docs:
+  <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/README.md">progress_dashboard/README</a>
+  ·
+  <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md">RU deep manual §2d</a>
+  ·
+  <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/MAINTAINER_MANUAL.md">MAINTAINER_MANUAL</a>.
+</div>
+
 <div class="top-live" id="livebar">
   <span id="liveChip" class="chip off">loading</span>
   <span class="mut">Snapshot <b id="stamp">—</b></span>
   <span class="mut">Page poll <b id="pollAge">—</b></span>
   <span class="mut">Data age <b id="dataAge">—</b></span>
-  <span class="mut" id="nextPoll">auto-refresh every 60s</span>
+  <span class="mut" id="nextPoll">web auto-refresh every 60s</span>
 </div>
 
 <div class="cards" id="cards"></div>
@@ -153,9 +179,10 @@
 <footer>
   Built by <code>progress_dashboard/build_progress_data.py</code> +
   <code>build_kitchen_data.py</code>; published to <code>/progress/</code> on gh-pages by
-  <code>live_refresh.py</code> (every minute while translation is on) or the monthly
-  findings-dashboard workflow. Local sub-second ops:
-  <code>python RussianTranslation/src/pilot/dashboard_server.py</code>.
+  <code>live_refresh.py</code> (every <b>60&nbsp;s</b> while translation is on) or the monthly
+  findings-dashboard workflow. Local ops twin (<b>5&nbsp;s</b> poll, not public):
+  <code>python RussianTranslation/src/pilot/dashboard_server.py</code>
+  → <span class="mono">http://127.0.0.1:8765/</span>.
   Source:
   <a href="https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/">progress_dashboard/</a>.
 </footer>

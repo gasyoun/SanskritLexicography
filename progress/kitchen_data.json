@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T18:43:52Z",
+  "generated_at": "2026-07-31T19:36:19Z",
   "schema": "pwg.kitchen.v1",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
@@ -8,7 +8,7 @@
   "activity": {
     "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 89231,
+    "youngest_artifact_age_seconds": 92378,
     "window_state": "needs_requeue",
     "window_root": "no_pwg_w05",
     "next_action": "Run python src\\pilot\\requeue_from_audit.py <root>, rerun Max Workflow, then rerun audit_window.py.",
@@ -16,25 +16,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-07-30T17:56:39Z",
-        "age_seconds": 89231,
+        "age_seconds": 92378,
         "size": 24904391
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-07-15T20:26:10Z",
-        "age_seconds": 1376260,
+        "age_seconds": 1379407,
         "size": 53853
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-07-15T20:26:10Z",
-        "age_seconds": 1376260,
+        "age_seconds": 1379407,
         "size": 314319
       },
       "events": {
         "exists": true,
         "mtime": "2026-07-24T18:39:44Z",
-        "age_seconds": 605046,
+        "age_seconds": 608193,
         "size": 3486985
       }
     }
@@ -97,7 +97,7 @@
     "total_idle_seconds": 1549947,
     "total_idle_hours": 430.54,
     "mean_gap_seconds": 12204.307,
-    "current_idle_seconds": 89232,
+    "current_idle_seconds": 92379,
     "recent_gaps": [
       {
         "from": "2026-07-04T20:44:40Z",
