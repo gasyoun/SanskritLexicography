@@ -14,6 +14,16 @@ not an error.
 
 ## [Unreleased]
 
+## [1.112.1] - 2026-07-31
+### Changed
+
+- **c4 live-gate latency ceiling raised twice, gate now PASSES** (31-07-2026, [#921](https://github.com/gasyoun/SanskritLexicography/pull/921), [#922](https://github.com/gasyoun/SanskritLexicography/pull/922), [#923](https://github.com/gasyoun/SanskritLexicography/pull/923)): gate-0's third dated `/pwg-live-gate` reading came back NO-GO (5.4% near-miss on the original 30,000 ms ceiling). MG ruling raised the ceiling 30,000→33,000 ms and made warm-up advisory rather than a NO-GO input, then raised both ceilings again to 65,000 ms — the gate now PASSES.
+- **pwg_ru `h1682_abbrev_rules` sheet lock re-bound to a fresh generation** (31-07-2026, [#917](https://github.com/gasyoun/SanskritLexicography/pull/917)): deliberate `REVIEW_LOCK_FORCE=1` re-cut for the MG vote — the committed 26-07 generation (#802) could not be reproduced locally (gitignored HTML absent, inputs since drifted).
+
+### Fixed
+
+- **Zenodo concept DOI recorded; "not wired" claim corrected** (31-07-2026, [#916](https://github.com/gasyoun/SanskritLexicography/pull/916) closes #915, plus [#920](https://github.com/gasyoun/SanskritLexicography/pull/920) pinning `.zenodo.json`): the Zenodo-GitHub integration is live for this repo and has been minting DOIs — a prior note claiming otherwise was wrong. `.zenodo.json` added to pin deposit metadata that Zenodo's inference was already producing correctly.
+
 ## [1.112.0] — 2026-07-31
 
 ### Added
