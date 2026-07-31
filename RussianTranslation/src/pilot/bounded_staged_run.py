@@ -93,6 +93,18 @@ COHORT_LIVE_GATE = (
 # 'claude-sonnet'); the staged loop hardcodes this same value. Never a bare tier alias.
 DEFAULT_GEN_MODEL_VERSION = 'claude-sonnet-5'
 
+# H7 (H1940 Phase 2): the per-lease drain backstop. Mirrors the staged C4 pattern
+# (mao.STAGED_RUN_IDLE_POLL_SECONDS) -- same 3 s poll, so a bounded window and a staged run
+# back off at the same rate -- and adds the consecutive-pass cap that cmd_staged_run has no
+# need of. cmd_staged_run polls indefinitely by design; a bounded window is spending a
+# budgeted, reserved call ledger, so a stall must end fast and say what stalled instead of
+# grinding to max_drain_iterations (1000 passes, each of which spawns a promote-ready
+# subprocess). The cap is deliberately NOT derived from max_drain_iterations: that ceiling
+# bounds TOTAL passes including productive ones, and a long healthy window legitimately
+# uses many of them.
+DRAIN_IDLE_POLL_SECONDS = 3
+DRAIN_NO_PROGRESS_PASSES = 20
+
 
 # ---------------------------------------------------------------------------
 # Scope — reuse staged_plan_scope verbatim so the bounded windows are exactly the
@@ -278,7 +290,9 @@ class RunContext:
     def __init__(self, db, coord_dir, coordinator, cwd, events, run_id, probe_latencies,
                  claude_bin='claude', timeout=7200, gen_model_version=DEFAULT_GEN_MODEL_VERSION,
                  max_drain_iterations=1000, only_profile=None, checkpoint=None,
-                 stop_before_promote=False, call_reservation=None, max_calls=None):
+                 stop_before_promote=False, call_reservation=None, max_calls=None,
+                 drain_idle_poll_seconds=DRAIN_IDLE_POLL_SECONDS,
+                 drain_no_progress_passes=DRAIN_NO_PROGRESS_PASSES):
         self.db = db
         self.coord_dir = coord_dir
         self.coordinator = coordinator
@@ -295,6 +309,8 @@ class RunContext:
         self.stop_before_promote = stop_before_promote     # R10
         self.call_reservation = call_reservation
         self.max_calls = max_calls
+        self.drain_idle_poll_seconds = drain_idle_poll_seconds        # H7
+        self.drain_no_progress_passes = drain_no_progress_passes      # H7
 
     @property
     def coord_state_path(self):
@@ -523,6 +539,8 @@ def make_run_window(ctx):
             scope = {lease_id}
             _ensure_imported(ctx, lease_id)
         iterations = 0
+        prev_progress_sig = None       # H7: the PREVIOUS pass's entry state
+        no_progress = 0                # H7: consecutive passes that changed nothing
         while True:
             iterations += 1
             if iterations > ctx.max_drain_iterations:
@@ -533,6 +551,12 @@ def make_run_window(ctx):
             done_unrecorded = mao.scoped_job_count(
                 db, scope, "state='done' AND coordinator_recorded=0")
             failed = mao.scoped_job_count(db, scope, "state='failed'")
+            # H7: 'done' TOTAL, not just the unrecorded slice. A requeue that lands a new
+            # pending job in the same pass that another completes leaves (pending,
+            # done_unrecorded) unchanged -- counting only those two would misread real
+            # forward progress as a stall. This is the scoped twin of cmd_staged_run's
+            # completed_before term.
+            done_total = mao.scoped_job_count(db, scope, "state='done'")
             db.close()
             if failed:
                 # H1386 P3c: print the failed jobs' FULL external_ids -- the documented
@@ -547,6 +571,31 @@ def make_run_window(ctx):
                                  % (lease_id, failed, ', '.join(sorted(failed_ids))))
             if not pending and not done_unrecorded:
                 break
+            # H7: forward progress = a job drained, recorded, or reaching 'done'. When a full
+            # pass changes none of those the loop must POLL and then STOP naming the stall,
+            # never hot-spin. The classic shape is a pending job no admitted account can
+            # claim: the all-parked guard below does not fire (accounts ARE runnable), so
+            # pre-H7 the loop re-dispatched, re-recorded and re-promoted at full speed until
+            # max_drain_iterations, burning ~1000 promote-ready subprocesses to reach an
+            # error message that named an iteration count rather than the stall. Checked
+            # ahead of the `if pending` branch on purpose -- a done_unrecorded row that
+            # cmd_record_done cannot clear stalls exactly the same way and gets the same
+            # treatment, which the staged C4 backstop (guarded inside its pending branch)
+            # does not cover.
+            progress_sig = (pending, done_unrecorded, done_total)
+            if progress_sig == prev_progress_sig:
+                no_progress += 1
+                if no_progress >= ctx.drain_no_progress_passes:
+                    raise SystemExit(
+                        'bounded_staged_run: lease %s made no drain progress in %d '
+                        'consecutive passes (pending=%d, done-unrecorded=%d, done=%d) — '
+                        'nothing in scope is claimable or recordable; fail closed, rerun '
+                        'with --resume once the block is cleared'
+                        % (lease_id, no_progress, pending, done_unrecorded, done_total))
+                time.sleep(ctx.drain_idle_poll_seconds)
+            else:
+                no_progress = 0
+            prev_progress_sig = progress_sig
             if pending:
                 now_ts = int(time.time())
                 db = mao.connect(ctx.db)

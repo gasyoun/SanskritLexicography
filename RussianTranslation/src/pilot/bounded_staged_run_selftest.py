@@ -18,6 +18,9 @@ characterization/regression case is exercised end to end:
                           pre-run economy-ledger cost check refuses an unpriceable ceiling
   (h) consecutive-empty — a non-productive streak stops the run
   (i) audit seam        — audit_from_coordinator reads a lease's clean/requeue/satisfied/calls
+  (s) H7 drain backstop — a zero-claim (and an unrecordable-done) drain polls and then stops
+                          naming the stall instead of hot-spinning to max_drain_iterations;
+                          forward progress resets the CONSECUTIVE counter
 
   python src/pilot/bounded_staged_run_selftest.py
 """
@@ -26,6 +29,7 @@ import json
 import os
 import sys
 import tempfile
+import time
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -952,6 +956,140 @@ def test_r_cohort_offline_serial_equivalence(td):
                                        results[3]['elapsed']))
 
 
+def _h7_ctx(td, tag, pending=True, cap=6):
+    """A RunContext over a REAL sqlite db holding exactly one scoped job for the lease, plus
+    one validated, unparked, ADMITTED account — so the drain loop's all-parked guard cannot
+    fire and the only thing left to stall on is the dispatch itself. `pending=False` seeds
+    the job done-but-unrecorded instead. Poll is 0 s (time.sleep is patched and counted by
+    the caller; the real 3 s bound is asserted separately)."""
+    db_path = os.path.join(td, tag + '.sqlite')
+    lease_id = 'no_pwg_w02'
+    db = mao.connect(db_path)
+    with db:
+        db.execute('INSERT INTO accounts(name,config_dir,parked_until,validated,updated_at) '
+                   'VALUES(?,?,0,1,?)', ('acc', td, mao.now_iso()))
+        db.execute('INSERT INTO jobs(external_id, argv_json, cwd, output_path) VALUES(?,?,?,?)',
+                   (lease_id, json.dumps([sys.executable, '-c', 'print(1)']), td,
+                    os.path.join(td, tag + '.out.json')))
+        if not pending:
+            db.execute("UPDATE jobs SET state='done', coordinator_recorded=0 "
+                       "WHERE external_id=?", (lease_id,))
+    db.close()
+    ctx = bsr.RunContext(
+        db=db_path, coord_dir=td, coordinator=os.path.join(HERE, 'coordinator.py'), cwd=td,
+        events=None, run_id='h7', probe_latencies={'acc': 1.0},
+        stop_before_promote=True,      # keeps the pin off the promote-ready subprocess
+        drain_idle_poll_seconds=0, drain_no_progress_passes=cap)
+    return ctx, lease_id, db_path
+
+
+def _mark_done(db_path, lease_id):
+    db = mao.connect(db_path)
+    with db:
+        db.execute("UPDATE jobs SET state='done', coordinator_recorded=0 WHERE external_id=?",
+                   (lease_id,))
+    db.close()
+
+
+def test_s_h7_zero_claim_drain_stops_instead_of_spinning(td):
+    """H7 (H1940 Phase 2): a pending job that no admitted account ever claims used to
+    hot-spin the per-lease drain — no sleep, a full dispatch/record/promote pass every
+    iteration — until max_drain_iterations (1000), then die naming an iteration count
+    rather than the stall. It must now poll and stop on the consecutive-no-progress cap."""
+    assert bsr.DRAIN_IDLE_POLL_SECONDS == mao.STAGED_RUN_IDLE_POLL_SECONDS, \
+        'the bounded poll must mirror the staged C4 poll (%r vs %r)' % (
+            bsr.DRAIN_IDLE_POLL_SECONDS, mao.STAGED_RUN_IDLE_POLL_SECONDS)
+    ctx, lease_id, _ = _h7_ctx(td, 's_h7', cap=6)
+    seen = {'run_once': 0, 'record': 0, 'sleeps': []}
+    orig = (mao.cmd_run_once, mao.cmd_record_done, time.sleep)
+    mao.cmd_run_once = lambda a: seen.__setitem__('run_once', seen['run_once'] + 1)
+    mao.cmd_record_done = lambda a: seen.__setitem__('record', seen['record'] + 1)
+    time.sleep = lambda s: seen['sleeps'].append(s)
+    try:
+        try:
+            bsr.make_run_window(ctx)({'id': lease_id})
+            raise AssertionError('a zero-claim drain returned normally')
+        except SystemExit as exc:
+            msg = str(exc)
+    finally:
+        mao.cmd_run_once, mao.cmd_record_done, time.sleep = orig
+    assert 'no drain progress in 6 consecutive passes' in msg, msg
+    assert 'pending=1' in msg and 'done-unrecorded=0' in msg and 'done=0' in msg, msg
+    assert 'exceeded' not in msg, 'died on the iteration ceiling, not the H7 backstop: %s' % msg
+    # The cap is CONSECUTIVE passes: 6 dispatch passes, a poll before each retry after the
+    # first, and the raise on the 7th pass before it can dispatch again.
+    assert seen['run_once'] == 6, 'expected 6 dispatch passes, got %d' % seen['run_once']
+    assert seen['sleeps'] == [0] * 5, 'expected one poll per no-progress retry: %r' % seen['sleeps']
+    print('  (s) H7: a zero-claim drain polls, then stops naming the stall: PASS')
+
+
+def test_s2_h7_progress_resets_the_consecutive_counter(td):
+    """The backstop counts CONSECUTIVE no-progress passes, not cumulative ones. A drain that
+    stalls, advances, stalls again and finishes must complete — even though its TOTAL
+    no-progress passes exceed the cap. Also pins that progress is read from the full
+    (pending, done_unrecorded, done) signature: the second stall moves none of the first
+    two counters that the staged C4 backstop watches."""
+    ctx, lease_id, db_path = _h7_ctx(td, 's2_h7', cap=3)
+    seen = {'run_once': 0, 'record': 0, 'sleeps': []}
+    orig = (mao.cmd_run_once, mao.cmd_record_done, time.sleep)
+
+    def fake_run_once(a):
+        seen['run_once'] += 1
+        if seen['run_once'] == 3:        # two dead passes, then the job lands
+            _mark_done(db_path, lease_id)
+
+    def fake_record_done(a):
+        seen['record'] += 1
+        if seen['record'] == 6:          # ...then two more dead passes before it records
+            db = mao.connect(db_path)
+            with db:
+                db.execute("UPDATE jobs SET coordinator_recorded=1 WHERE external_id=?",
+                           (lease_id,))
+            db.close()
+
+    mao.cmd_run_once, mao.cmd_record_done = fake_run_once, fake_record_done
+    time.sleep = lambda s: seen['sleeps'].append(s)
+    try:
+        bsr.make_run_window(ctx)({'id': lease_id})      # must NOT raise
+    finally:
+        mao.cmd_run_once, mao.cmd_record_done, time.sleep = orig
+    assert seen['record'] == 6, 'loop did not run to the recording pass: %d' % seen['record']
+    # 4 no-progress passes in total (2 before the job lands, 2 before it records) against a
+    # cap of 3 — a cumulative counter would have raised on the third.
+    assert seen['sleeps'] == [0] * 4, 'expected 4 polls across two stalls: %r' % seen['sleeps']
+    db = mao.connect(db_path)
+    assert mao.scoped_job_count(db, {lease_id}, "state='done' AND coordinator_recorded=1") == 1
+    db.close()
+    print('  (s2) H7: forward progress resets the consecutive-no-progress counter: PASS')
+
+
+def test_s3_h7_unrecordable_done_job_also_stops(td):
+    """The stall shape the staged C4 backstop does NOT cover: nothing pending, but a done
+    job that cmd_record_done never clears. Pre-H7 this spun to max_drain_iterations exactly
+    like the zero-claim case; H7 checks the signature ahead of the `if pending` branch, so
+    it stops here too — and never dispatches, because nothing is pending."""
+    ctx, lease_id, _ = _h7_ctx(td, 's3_h7', pending=False, cap=4)
+    seen = {'record': 0, 'sleeps': []}
+    orig = (mao.cmd_run_once, mao.cmd_record_done, time.sleep)
+    mao.cmd_run_once = lambda a: (_ for _ in ()).throw(
+        AssertionError('nothing is pending — the drain must not dispatch'))
+    mao.cmd_record_done = lambda a: seen.__setitem__('record', seen['record'] + 1)
+    time.sleep = lambda s: seen['sleeps'].append(s)
+    try:
+        try:
+            bsr.make_run_window(ctx)({'id': lease_id})
+            raise AssertionError('an unrecordable done job returned normally')
+        except SystemExit as exc:
+            msg = str(exc)
+    finally:
+        mao.cmd_run_once, mao.cmd_record_done, time.sleep = orig
+    assert 'no drain progress in 4 consecutive passes' in msg, msg
+    assert 'pending=0' in msg and 'done-unrecorded=1' in msg and 'done=1' in msg, msg
+    assert seen['record'] == 4, 'expected 4 record passes, got %d' % seen['record']
+    assert seen['sleeps'] == [0] * 3, 'expected one poll per no-progress retry: %r' % seen['sleeps']
+    print('  (s3) H7: an unrecordable done job stops on the same backstop: PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_a_plan_scope(td)
@@ -972,6 +1110,9 @@ def main():
         test_p_resume_requires_existing_ledger_run(td)
         test_q_cohort_width_cli_and_live_refusal(td)
         test_r_cohort_offline_serial_equivalence(td)
+        test_s_h7_zero_claim_drain_stops_instead_of_spinning(td)
+        test_s2_h7_progress_resets_the_consecutive_counter(td)
+        test_s3_h7_unrecordable_done_job_also_stops(td)
     print('bounded_staged_run_selftest: PASS')
 
 
