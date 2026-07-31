@@ -661,7 +661,12 @@ def main():
 
     # D-F/D-K: the two-phase probe protocol. payload<5KB / non-exact model raise before any call.
     # Then EXACTLY one warm-up call (latency excluded) + one measured call (gated): policy is
-    # strictly below 30000; 30000 is an honest NO-GO.
+    # strictly below the ceiling; the ceiling value itself is an honest NO-GO.
+    # Boundary values are DERIVED from m.PROBE_LATENCY_CEILING_MS, never hard-coded: this
+    # pin asserted 29999/30000 literally, so raising the ceiling to 65 000 (MG 31-07-2026)
+    # silently turned it into a false pass. Deriving them tests the strictly-below POLICY.
+    _ceil = m.PROBE_LATENCY_CEILING_MS
+    _under, _at = _ceil - 1, _ceil
     try:
         m.live_probe('cfg', payload_bytes=100); assert False, 'payload floor not enforced'
     except SystemExit as e:
@@ -689,23 +694,23 @@ def main():
             return _mock
 
         # warm-up 99999 ms (EXCLUDED) + measured 29999 ms -> PASS
-        seen.clear(); m._probe_call = fake([(99999, 'success', 120), (29999, 'success', 120)])
+        seen.clear(); m._probe_call = fake([(99999, 'success', 120), (_under, 'success', 120)])
         with tempfile.TemporaryDirectory() as td:
             ev = os.path.join(td, 'e.jsonl')
             assert m.live_probe(
                 'cfg', events_path=ev, run_id='r', account='a',
-                call_reservation=MemoryCallLedger()) == 29999
+                call_reservation=MemoryCallLedger()) == _under
             rows = ro.read_events(ev)
             assert len([r for r in rows if r.get('purpose') == 'warmup']) == 1
             assert len([r for r in rows if r.get('purpose') == 'measured']) == 1
             assert len(seen) == 2                       # exactly one warm-up + one measured
             cen = ro.build_census(rows)
-            assert cen['latency_ms']['max'] == 29999    # the 99999 warm-up is NOT in the latency census
+            assert cen['latency_ms']['max'] == _under   # the warm-up is NOT in the latency census
             assert len(cen['probe']['warmup']) == 1 and len(cen['probe']['measured']) == 1
-        # measured 30000 -> honest NO-GO (no retry)
-        seen.clear(); m._probe_call = fake([(9000, 'success', 120), (30000, 'success', 120)])
+        # measured AT the ceiling -> honest NO-GO (no retry)
+        seen.clear(); m._probe_call = fake([(9000, 'success', 120), (_at, 'success', 120)])
         try:
-            m.live_probe('cfg', call_reservation=MemoryCallLedger()); assert False, '30000 ms measured must NO-GO'
+            m.live_probe('cfg', call_reservation=MemoryCallLedger()); assert False, 'a measured reading AT the ceiling must NO-GO'
         except SystemExit as e:
             assert 'health ceiling' in str(e)
         assert len(seen) == 2
@@ -725,7 +730,7 @@ def main():
         assert len(seen) == 2
     finally:
         m._probe_call = _pc
-    print('  D-F/D-K probe protocol: 1 warm-up (excluded) + 1 measured; 29999 pass / 30000 NO-GO; warm-up fail STOPs before measured')
+    print('  D-F/D-K probe protocol: 1 warm-up (excluded) + 1 measured; %d pass / %d NO-GO (derived from PROBE_LATENCY_CEILING_MS); warm-up fail STOPs before measured' % (_under, _at))
 
     # D-K _probe_call: rc 0 is NOT enough. The Claude CLI result envelope must indicate success
     # (type=result, subtype=success, not is_error) AND carry the structured schema result
