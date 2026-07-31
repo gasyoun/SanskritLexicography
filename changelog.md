@@ -14,11 +14,17 @@ not an error.
 
 ## [Unreleased]
 
-## [1.114.5] - 2026-07-31
+## [1.114.6] - 2026-07-31
 
 ### Added
 
 - **Task Scheduler autostart for both PWG→RU dashboards** (31-07-2026, Grok 4.5 `grok-4.5`, H2032 follow-up): no manual start required after logon. New [`progress_dashboard/windows/`](https://github.com/gasyoun/SanskritLexicography/tree/master/progress_dashboard/windows) — `run_dashboard_server.cmd` (single-instance on :8765), `run_live_refresh.cmd` (`live_refresh.py --idle-stop 0`), and `register_tasks.ps1` which creates **`SL progress dashboard server`** + **`SL progress live refresh`** (logon trigger, StartWhenAvailable, RestartOnFailure every 1 min × 999, InteractiveToken, same shape as `SL findings dashboard refresh` / H737). Register once: `powershell -ExecutionPolicy Bypass -File progress_dashboard\windows\register_tasks.ps1 -StartNow`. Docs: windows/README + progress_dashboard/README + RU deep manual §2d.
+
+## [1.114.5] - 2026-07-31
+
+### Fixed
+
+- **ROOT CAUSE of the c4 gate stall — the account is RATE-LIMITED, and the "≈65 s is CLI startup" conclusion is RETRACTED** (31-07-2026, Opus 5 `claude-opus-5[1m]`, [H2011](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2011-Opus_RussianTranslation_c4-gate-ceiling-decision-and-live-optimisation_31.07.26.md)): an authenticated request issued **outside** the CLI with the profile's own OAuth token returns **HTTP 400 in 892 ms** on an invalid body (proving token, scopes, tunnel and authenticated path all healthy) and **HTTP 429 `rate_limit_error` in 754–1 103 ms** on a real 1-token completion (tier `default_claude_max_20x`). The API refuses in under a second; the CLI evidently retries with backoff instead of surfacing it, so `claude -p` *appears* to hang for 120–300 s. This **withdraws** the sixth reading's inference that ~65 s of a call is process startup — `--version` returns in 1 071 ms, `auth status` in 1 106 ms, an authenticated call in <1.1 s, so the wall-clock gap is retry delay, not launch cost. Consequences: the 78 415 ms "measured latency" is mostly backoff rather than model time; **the whole latency series is contaminated**, since any reading taken while rate-limited measured retry delay rather than route health, which puts the 15-07 / 16-07 / 31-07 figures in doubt as route evidence and means the 30 000 → 65 000 ms ceiling was calibrated partly against backoff; the intermittency (18:56Z worked, 15:03Z and 19:45Z did not) is explained by whether the retry loop lands in a window with capacity. Practical consequence for the campaign: probe with the authenticated one-liner (~1 s) instead of the 300 s representative call, do not raise the ceiling again, and re-examine the one-card-per-call lane, which maximises call count exactly when call count is the binding constraint. No rate-limit reset headers are exposed on the 429. Recorded in [`H963_C4_SINGLE_PROFILE_GATE0_HEALTH_2026-07-16.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h963/H963_C4_SINGLE_PROFILE_GATE0_HEALTH_2026-07-16.md) § "ROOT CAUSE"; generalised as [Uprava FINDINGS §269](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
 
 ## [1.114.4] - 2026-07-31
 
