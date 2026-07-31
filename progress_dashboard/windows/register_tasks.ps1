@@ -48,13 +48,18 @@ $tasks = @(
 )
 
 function Unregister-One([string]$Name) {
-    $exists = schtasks /Query /TN $Name 2>$null
-    if ($LASTEXITCODE -eq 0) {
+    # schtasks prints ERROR to stderr when the task is missing — do not treat as fatal.
+    $prev = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    schtasks /Query /TN $Name 2>$null | Out-Null
+    $found = ($LASTEXITCODE -eq 0)
+    if ($found) {
         Write-Host "Removing task: $Name"
-        schtasks /Delete /TN $Name /F | Out-Null
+        schtasks /Delete /TN $Name /F 2>$null | Out-Null
     } else {
         Write-Host "Not registered: $Name"
     }
+    $ErrorActionPreference = $prev
 }
 
 function Register-One($t) {
