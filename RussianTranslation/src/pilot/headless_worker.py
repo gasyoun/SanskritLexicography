@@ -647,7 +647,7 @@ class HeadlessEngine:
                                           pending)
             if error:
                 for key in pending:
-                    self.note(key, error)
+                    self.note(key, error, preserve=error.startswith('budget_exceeded'))
                 if error.startswith('budget_exceeded'):
                     break                    # R3: retrying/bisecting would only refuse again
                 timed_out = error == 'timeout'
