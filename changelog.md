@@ -14,6 +14,12 @@ not an error.
 
 ## [Unreleased]
 
+## [1.114.3] - 2026-07-31
+
+### Fixed
+
+- **Local ops URL on the public kitchen is a real link** (31-07-2026, Grok 4.5 `grok-4.5`, H2032 follow-up, [#930](https://github.com/gasyoun/SanskritLexicography/pull/930)/[#931](https://github.com/gasyoun/SanskritLexicography/pull/931)): `/progress/` dual-surface callout had rendered `127.0.0.1:8765` as monospace text (`<span>`), so it looked linked but was not clickable. All three sites (callout, table, footer) now use `href="http://127.0.0.1:8765/"` (opens the *viewer's* localhost when `dashboard_server.py` is running). `.ai_state.md` updated with H2032 Completed + operator Next Step.
+
 ## [1.114.2] - 2026-07-31
 
 ### Changed
