@@ -10,7 +10,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
-### Fixed — a translate-budget retry erased the card's actual content diagnosis (H2b / H1940 Phase 2, 31-07-2026, OpenAI GPT-5.6 Sol `openrouter/openai/gpt-5.6-sol`)
+### Fixed — a translate-budget retry erased the card's actual content diagnosis (H2b / H1940 Phase 2, 31-07-2026, OpenAI GPT-5.6 Sol `openrouter/openai/gpt-5.6-sol`, [PR #906](https://github.com/gasyoun/SanskritLexicography/pull/906), merged `9a5bddbc`)
 
 `headless_worker.resolve_group` used the same unconditional failure-note write for every
 whole-card call error. If attempt 1 returned a card-specific rejection and the next retry
