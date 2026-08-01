@@ -473,7 +473,12 @@ def emit_audit_event(event_type, level='info', root=None, state=None, summary=''
 
 
 def classify_harness_requeues(null_cards, partial_cards, gate_requeue, failure_reasons):
-    """Split incomplete harness output from independently gate-flagged defects."""
+    """Split incomplete harness output from independently gate-flagged defects.
+
+    `partial_cards` may be a plain key set (legacy) or the `collect_harness_quality` dict; only
+    the dict form carries the H2077 `partial_cause_infra` marker, and a set degrades to the
+    pre-H2077 shape-only behaviour.
+    """
     null_set = set(null_cards or [])
     partial_set = set(partial_cards or [])
     gate_set = set(gate_requeue or [])
@@ -481,7 +486,24 @@ def classify_harness_requeues(null_cards, partial_cards, gate_requeue, failure_r
         k for k, e in (failure_reasons or {}).items()
         if e.startswith('fidelity-reject') or e.startswith('stitched-fidelity')
     }
-    defect = (gate_set - null_set) | fidelity_nulls
+    # H2077 / #947: a card left PARTIAL because its heal call DIED (timeout, budget stop, quota
+    # hang) is incomplete for an infrastructure reason, not a content one. Judging it on senses it
+    # never got to produce filed a HEALTHY card as a defect — which denylists the card AND, via
+    # `requeue_defect_fshas` below, discards the frag_prov fshas of the fragments that DID
+    # translate (paid-for TM, permanently). A null key was already exempt for exactly this reason
+    # ("fails coverage only because it is absent"); a partial key is the same argument applied to
+    # the part that is absent.
+    #
+    # Narrow by construction: only an EXPLICITLY RECORDED infrastructure cause exempts. A partial
+    # card whose cause is content, or which carries no cause at all (older wf files), is treated
+    # exactly as before — and `fidelity_nulls` still overrides on the next line, so a genuine
+    # fidelity reject on a partial card remains a defect.
+    infra_partial = {
+        key for key in partial_set
+        if isinstance(partial_cards, dict)
+        and (partial_cards.get(key) or {}).get('partial_cause_infra')
+    }
+    defect = (gate_set - null_set - infra_partial) | fidelity_nulls
     transient = (null_set | partial_set) - defect
     return transient, defect, fidelity_nulls
 
@@ -498,7 +520,11 @@ def collect_harness_quality(results):
             partial_cards[key] = {
                 name: (card.get(name) if card.get(name) is not None else row.get(name))
                 for name in ('missing_fragments', 'missing_groups', 'total_groups',
-                             'missing_senses', 'total_senses')
+                             'missing_senses', 'total_senses',
+                             # H2077 / #947: WHY the card is partial. `partial_cause_infra`
+                             # drives the transient-vs-defect split below; older wf files carry
+                             # neither key and degrade to the pre-H2077 shape-only behaviour.
+                             'partial_cause', 'partial_cause_infra')
                 if card.get(name) is not None or row.get(name) is not None
             }
         if not card and row.get('error'):
@@ -773,8 +799,10 @@ def main():
     # construction (the model answered; the deterministic guard refused it — observed live
     # as the Sam/Buj/naS 'stubborn null' loop) -> classify as defect, not transient, so the
     # cheap-re-run lane stops burning quota on it.
+    # H2077 / #947: pass the partial_cards DICT, not the bare key set — the split needs each
+    # card's recorded `partial_cause_infra` to tell an infrastructure gap from a content defect.
     transient, defect, fidelity_nulls = classify_harness_requeues(
-        null_cards, partial_set, gate_requeue, failure_reasons)
+        null_cards, partial_cards, gate_requeue, failure_reasons)
     report['requeue_transient'] = sorted(transient)
     report['requeue_defect'] = sorted(defect)
     # H304 gate-outcome memory: the fragment TM is harvested from raw wf_output BEFORE any
