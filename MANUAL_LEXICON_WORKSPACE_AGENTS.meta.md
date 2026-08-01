@@ -1,6 +1,6 @@
 # MANUAL_LEXICON_WORKSPACE_AGENTS.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 25-07-2026_
+_Created: 18-07-2026 · Last updated: 01-08-2026_
 
 Companion record for [MANUAL_LEXICON_WORKSPACE_AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_AGENTS.md) (root thin sheet).
 
@@ -15,8 +15,8 @@ Authored 10-07-2026 (H479), consolidated H604. Re-thinned 18-07-2026 under [H124
 ## Verification
 
 ```
-LAST_VERIFIED: 25-07-2026
-VERIFIED_BY: Grok 4.5 (grok-4.5), H1623
+LAST_VERIFIED: 01-08-2026
+VERIFIED_BY: Grok 4.5 (grok-4.5), H2078
 COMMANDS_SPOT_RUN: 2
 ```
 
@@ -46,6 +46,7 @@ Re-checked on each [/workspace-manual](https://github.com/gasyoun/claude-config/
 
 | Date | Change | By |
 |---|---|---|
+| 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |
 | 10-07-2026 | Sheet authored (H479); consolidated H604 11-07-2026 | Fable 5 (`claude-fable-5`) |
 | 18-07-2026 | Metadoc created (H1245); §4 → live-pointer, §5 → deep manual §13 | Fable 5 (`claude-fable-5`) |

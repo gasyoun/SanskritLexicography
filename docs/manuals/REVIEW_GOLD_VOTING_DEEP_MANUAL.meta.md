@@ -1,6 +1,6 @@
 # REVIEW_GOLD_VOTING_DEEP_MANUAL.md — metadoc
 
-_Created: 25-07-2026 · Last updated: 25-07-2026_
+_Created: 25-07-2026 · Last updated: 01-08-2026_
 
 Companion record for
 [REVIEW_GOLD_VOTING_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/REVIEW_GOLD_VOTING_DEEP_MANUAL.md).
@@ -23,9 +23,9 @@ Companion record for
 ## Staleness contract (H1246 detector)
 
 ```text
-LAST_VERIFIED: 25-07-2026
-VERIFIED_BY: Fable 5 (claude-fable-5), H1404
-COMMANDS_SPOT_RUN: 9
+LAST_VERIFIED: 01-08-2026
+VERIFIED_BY: Grok 4.5 (grok-4.5), H2078
+COMMANDS_SPOT_RUN: 2
 ```
 
 ## Verification block — what ran, 25-07-2026 (authoring pass)
@@ -81,6 +81,7 @@ secret grep clean, no personal data (reviewer fields empty).
 
 | Date | Change | Model |
 |---|---|---|
+| 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | Manual + metadoc authored; binding standard shipped; starter packet generated (Wave 1, H1404) | Fable 5 (`claude-fable-5`) |
 
 _Dr. Mārcis Gasūns_
