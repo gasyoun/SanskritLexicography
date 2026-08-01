@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **ZALIZNYAK full a–f accent-mobility emission (H2103, Grok 4.5 `grok-4.5`, 01-08-2026):** `nominal_grammar._accent_scheme` now emits Whitney schemes `a`/`b`/`c`/`d`/`f` (plus `—` unmarked) from the 19-cell matrix in WhitneyRoots `accent_rules.json`, joined on `(T-code, accent_position)` + lexical exceptions. Regenerated `headword_index.tsv` / reverse index / paradigm stats (98,639 headwords; `—` 80,014 · `a` 9,885 · `b` 8,346 · `d` 349 · `c` 43 · `f` 2). Docs: [ZALIZNYAK_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md). Gated on VedaWeb Phase 2 GO (H063/H115). Advisory only — never written into reviewed spine.
+
 ## [1.114.10] - 2026-08-01
 
 ### Changed
