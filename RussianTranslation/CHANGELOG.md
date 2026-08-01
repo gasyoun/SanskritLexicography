@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.115.0] - 2026-08-01
+
 ### Fixed — the last four H2056 integrity issues (H2095, issues #946 · #949 · #950 · #956, 01-08-2026, Opus 5 `claude-opus-5[1m]`)
 
 **[#949](https://github.com/gasyoun/SanskritLexicography/issues/949) — `budget_spent` was published without the qualifier that makes it readable.**
