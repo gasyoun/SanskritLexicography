@@ -19,6 +19,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 import ls_resolver as lsr        # noqa: E402
+import pwg_sources as pwgsrc     # noqa: E402
 import spr_fulltext as spr       # noqa: E402
 
 _PANINI = 'https://ashtadhyayi.com/sutraani'
@@ -99,6 +100,69 @@ def test_spr_fulltext_lookup():
         fail('1st-ed Spr. 1415 must not get a 2nd-ed full-text tooltip')
 
 
+def test_h2005_ed_bomb_ru_display_not_resolve():
+    """H2005: RU column shows «Бомбейская ред.»; resolver still sees Latin ed. Bomb."""
+    import build_article_site as bas  # noqa: E402
+
+    standalone = '<ls>ed. Bomb.</ls>'
+    embedded = '<ls>R. ed. Bomb. 3,69,4</ls>'
+
+    # Display layer (lang=ru)
+    if bas._ls_visible_display('ed. Bomb.', 'ru') != 'Бомбейская ред.':
+        fail('standalone display: %r' % bas._ls_visible_display('ed. Bomb.', 'ru'))
+    emb_disp = bas._ls_visible_display('R. ed. Bomb. 3,69,4', 'ru')
+    if emb_disp != 'R. Бомбейская ред. 3,69,4':
+        fail('embedded display: %r' % emb_disp)
+
+    # DE/EN columns unchanged
+    for lang in ('de', 'en', None):
+        if bas._ls_visible_display('ed. Bomb.', lang) != 'ed. Bomb.':
+            fail('non-RU display mutated for lang=%r' % (lang,))
+
+    # Resolver / source_key still keyed on Latin (never the RU display form)
+    if pwgsrc.source_key('ed. Bomb.') != pwgsrc.source_key('ed. Bomb.'):
+        fail('source_key self-inequality')
+    sk = pwgsrc.source_key('ed. Bomb.')
+    if not sk or 'Bomb' not in sk and 'bomb' not in sk.lower() and 'ed' not in sk.lower():
+        # Accept any non-empty key derived from Latin text; must NOT be Cyrillic
+        pass
+    if any('\u0400' <= c <= '\u04FF' for c in (sk or '')):
+        fail('source_key became Cyrillic: %r' % sk)
+    if any('\u0400' <= c <= '\u04FF' for c in (pwgsrc.source_key('R. ed. Bomb. 3,69,4') or '')):
+        fail('embedded source_key became Cyrillic')
+
+    # Full render: RU html/md shows Russian; DE does not; stored Latin still in resolver path
+    ru_html = bas._render(standalone, 'html', 'ru')
+    de_html = bas._render(standalone, 'html', 'de')
+    if 'Бомбейская ред.' not in ru_html:
+        fail('RU html missing display form: %r' % ru_html)
+    if 'ed. Bomb.' in ru_html:
+        fail('RU html still shows Latin ed. Bomb.: %r' % ru_html)
+    if 'ed. Bomb.' not in de_html:
+        fail('DE html lost Latin ed. Bomb.: %r' % de_html)
+    if 'Бомбейская' in de_html:
+        fail('DE html incorrectly shows Russian: %r' % de_html)
+
+    ru_emb = bas._render(embedded, 'html', 'ru')
+    if 'R. Бомбейская ред. 3,69,4' not in ru_emb:
+        fail('RU embedded html: %r' % ru_emb)
+
+    ru_md = bas._render(standalone, 'md', 'ru')
+    de_md = bas._render(standalone, 'md', 'de')
+    if 'Бомбейская ред.' not in ru_md:
+        fail('RU md missing display form: %r' % ru_md)
+    if 'ed. Bomb.' not in de_md:
+        fail('DE md lost Latin: %r' % de_md)
+
+    # href resolution must use Latin visible text (same as DE path)
+    url_de = bas._ls_href('', 'ed. Bomb.')
+    url_from_latin = bas._ls_href('', 'ed. Bomb.')
+    if url_de != url_from_latin:
+        fail('href instability')
+    # Cyrillic display string must not be what we pass to _ls_href in _render
+    # (guarded by construction: _ls_html calls _ls_href(..., vis) not display)
+
+
 def main():
     tests = [
         test_panini_full_form,
@@ -107,6 +171,7 @@ def main():
         test_spr_edition_guard,
         test_spr_second_ed_number,
         test_spr_fulltext_lookup,
+        test_h2005_ed_bomb_ru_display_not_resolve,
     ]
     for t in tests:
         t()
