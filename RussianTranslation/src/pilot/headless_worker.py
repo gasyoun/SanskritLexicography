@@ -856,18 +856,37 @@ class HeadlessEngine:
         because it never ran a whole-card translate attempt. So propagate the typed
         reason to the base key instead.
 
-        Precedence is deterministic: fragment keys are examined in ascending NUMERIC
-        fragment index (so `_f10` sorts after `_f2`, not before it) and the first
-        `budget_exceeded:*` wins — several failed fragments cannot make the reported
-        reason depend on set/dict iteration order. Any other fragment error (fidelity
-        reject, missing/mismatched key, timeout) leaves the historical
-        `selfheal-nothing-resolved` classification exactly as it was.
+        Precedence is deterministic and RANKED, in two passes over the fragment keys in
+        ascending NUMERIC index (so `_f10` sorts after `_f2`, not before it):
+
+        1. the first `budget_exceeded:*` — H2a's invariant, deliberately unchanged. A budget
+           stop must stay observable and must NOT be masked by another reason on a lower
+           index (pinned by `test_h2a_precedence_is_deterministic_and_budget_stays_observable`);
+        2. failing that, the first OTHER typed infrastructure reason — H2091 (#948);
+        3. failing that, the historical `selfheal-nothing-resolved`.
+
+        H2091 (#948) added rank 2. H2a's argument was never budget-specific: a heal lane that
+        died because the CALL died is a transient infrastructure stop whatever killed it, yet a
+        `timeout` fell through to `selfheal-nothing-resolved` — a CONTENT verdict, and the ONLY
+        per-key cause an operator or any downstream tool ever sees (`row['error']`,
+        `summary['failures'][key]`, `report['failure_reasons'][key]`). The typed reason survived
+        only on the discarded `<key>_f<i>` fragment keys. Widening had to be RANKED rather than
+        flat, because a flat "first infra wins" lets a low-index `timeout` mask a budget stop and
+        silently repeals H2a.
+
+        A genuine content failure (fidelity reject, missing/mismatched key) still leaves
+        `selfheal-nothing-resolved` exactly as it was — that string must keep meaning "the model
+        answered and nothing usable came back".
         """
-        for frag_key in sorted(self._fragment_keys(key), key=_fragment_index):
-            error = self.failures.get(frag_key)
+        ordered = sorted(self._fragment_keys(key), key=_fragment_index)
+        errors = [self.failures.get(frag_key) for frag_key in ordered]
+        for error in errors:                                   # rank 1: budget stop (H2a)
             if error and error.startswith('budget_exceeded'):
                 return error
-        return 'selfheal-nothing-resolved'
+        for error in errors:                                   # rank 2: any other infra (#948)
+            if is_infra_failure(error):
+                return error
+        return 'selfheal-nothing-resolved'                     # rank 3: genuine content
 
     def self_heal(self, key):
         groups = self.m.get('fragment_groups', {}).get(key) or []
