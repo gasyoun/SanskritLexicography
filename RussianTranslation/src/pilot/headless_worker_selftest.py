@@ -1094,6 +1094,130 @@ def test_h3_atomic_json_fsyncs_before_replace():
           '(LF, trailing newline)')
 
 
+def test_h2056_943_tree_kill_attaches_drained_output():
+    """H2056 #943: run_tree_kill must ATTACH the output it drains from a tree-killed child.
+
+    Before the fix it bound `out`/`err` to locals and bare-`raise`d, so the only copy of what the
+    killed CLI said died with the frame — which is why every caller hardcoded 'timeout'. Pins that
+    a 429 printed before the hang survives on the exception."""
+    original_popen = proc_tree.subprocess.Popen
+    original_terminate = proc_tree.terminate_tree
+    original_job = getattr(proc_tree, '_WindowsKillJob', None)
+
+    class FakeProc:
+        def __init__(self, *_a, **_k):
+            self.returncode = None
+            self._tree_job = None
+            self._tree_setup_trouble = None
+            self.calls = 0
+
+        def communicate(self, **_kwargs):
+            self.calls += 1
+            if self.calls == 1:                       # the call that blows the wall ceiling
+                raise subprocess.TimeoutExpired('synthetic', 1)
+            return 'partial stdout', 'Claude API error: 429 rate limit exceeded'
+
+        def poll(self):
+            return self.returncode
+
+        def kill(self):
+            self.returncode = -9
+
+        def wait(self, timeout=None):
+            self.returncode = -9
+            return -9
+
+    def popen(*args, **kwargs):
+        return FakeProc(*args, **kwargs)
+
+    def terminate(proc, deadline):
+        proc.returncode = -9
+        return None
+
+    proc_tree.subprocess.Popen = popen
+    proc_tree.terminate_tree = terminate
+    if original_job is not None:
+        class FakeJob:
+            def create(self): pass
+            def assign(self, proc): pass
+            def resume(self, proc): pass
+            def close(self): return None
+        proc_tree._WindowsKillJob = FakeJob
+    try:
+        try:
+            proc_tree.run_tree_kill(['synthetic'], capture_output=True, timeout=1)
+            raise AssertionError('timeout was swallowed')
+        except subprocess.TimeoutExpired as exc:
+            assert exc.stdout == 'partial stdout', 'drained stdout not attached: %r' % (exc.stdout,)
+            assert '429' in (exc.stderr or ''), 'drained stderr not attached: %r' % (exc.stderr,)
+            # .stdout is TimeoutExpired's alias for .output — both must see it.
+            assert exc.output == exc.stdout
+            assert h.classify_timeout(exc) == ('rate_limit', h.EXIT_RATE_LIMIT)
+    finally:
+        proc_tree.subprocess.Popen = original_popen
+        proc_tree.terminate_tree = original_terminate
+        if original_job is not None:
+            proc_tree._WindowsKillJob = original_job
+    print('  H2056 #943: tree-kill attaches drained child output; a hung 429 is classifiable')
+
+
+def test_h2056_944_hung_rate_limit_is_not_recorded_as_success():
+    """H2056 #944: a rate-limited CLI hangs instead of returning 429 (FINDINGS §270).
+
+    The hang must reach the SAME HardFailure path a non-hanging 429 takes — worker classification
+    `rate_limit` + exit 21 — because that is what the orchestrator's is_rate_limited() reads to
+    park the account. Before the fix the run continued, produced null cards and exited 0, so the
+    job row was written `state='done', failure_class='success'` for a window that made nothing."""
+    def hung_rate_limited_runner(argv, **kwargs):
+        hung_rate_limited_runner.n += 1
+        exc = subprocess.TimeoutExpired(argv, 180)
+        exc.output = ''
+        exc.stderr = 'Claude API error: 429 usage limit reached; resets at 2026-08-01T12:00:00Z'
+        raise exc
+    hung_rate_limited_runner.n = 0
+
+    payload, status, code = execute(manifest(), hung_rate_limited_runner)
+    assert code == h.EXIT_RATE_LIMIT, 'expected exit 21, got %r' % (code,)
+    assert status['classification'] == 'rate_limit', status['classification']
+    assert payload is None, 'a rate-limited run must not publish a result payload'
+    assert hung_rate_limited_runner.n == 1, (
+        'run continued spending against a locked account: %d spawns' % hung_rate_limited_runner.n)
+    # The orchestrator gate that parks the account keys off exactly this field.
+    import max_account_orchestrator as mao
+    assert mao.is_rate_limited(status, ''), 'is_rate_limited() would not park this account'
+    attempt = status['attempts'][-1]
+    assert attempt['classification'] == 'rate_limit', attempt
+    print('  H2056 #944: a hung 429 exits 21 as rate_limit, stops the run, and would park the account')
+
+
+def test_h2056_944_plain_hang_still_classifies_as_timeout():
+    """Regression guard for the #944 fix: only ACCOUNT-level causes are promoted.
+
+    A genuine slow-call timeout — nothing said about 429/401 — must keep its historical 'timeout'
+    classification and must NOT raise HardFailure, or every slow window would be misreported as a
+    quota stall and parked. Also covers a runner that raises a bare TimeoutExpired with no attached
+    output at all (older runners, stubs)."""
+    for label, build in (
+            ('silent hang', lambda argv: subprocess.TimeoutExpired(argv, 180)),
+            ('chatty non-account hang', None)):
+        def runner(argv, **kwargs):
+            runner.n += 1
+            if build is not None:
+                raise build(argv)
+            exc = subprocess.TimeoutExpired(argv, 180)
+            exc.output = 'thinking...'
+            exc.stderr = 'socket hang up'      # connection-ish, deliberately NOT promoted
+            raise exc
+        runner.n = 0
+        payload, status, code = execute(manifest(), runner)
+        assert code == 0, '%s: expected exit 0, got %r' % (label, code)
+        assert status['classification'] != 'rate_limit', label
+        assert runner.n >= 1
+        assert all(a['classification'] == 'timeout' for a in status['attempts']), (
+            '%s: %r' % (label, status['attempts']))
+    print('  H2056 #944: a non-account hang stays a plain timeout (no false park)')
+
+
 def main():
     payload, status, code = execute(manifest(), success_runner)
     assert code == 0 and status['classification'] == 'success'
@@ -1342,6 +1466,9 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_h2a_content_failure_without_budget_stop_unchanged()
     test_h2a_precedence_is_deterministic_and_budget_stays_observable()
     test_h3_atomic_json_fsyncs_before_replace()
+    test_h2056_943_tree_kill_attaches_drained_output()
+    test_h2056_944_hung_rate_limit_is_not_recorded_as_success()
+    test_h2056_944_plain_hang_still_classifies_as_timeout()
     print('headless_worker_selftest: PASS')
 
 
