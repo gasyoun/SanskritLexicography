@@ -295,18 +295,142 @@ def _consonant_subtype(slp1):
     return '8√'
 
 
-def _accent_scheme(accented, slp1):
-    """Coarse Vedic citation accent from the udātta mark '/' (barytone 'a' / oxytone 'b' /
-    unknown '—'). '/' follows the accented vowel (a/MSa = áṃśa 'a'; agni/ = agní 'b')."""
+# ---------------------------------------------------------------------------
+# Stress scheme S — full Whitney a–f mobility (H2103), not just citation a/b.
+# Source of truth: WhitneyRoots/crosswalk/accent_rules.json matrix (19 cells) +
+# lexical_exceptions; validation GO on 17/19 cells (0 NO-GO) via H063/H115.
+# Classical (no key2 '/') still emits '—' (omitted from the compact token).
+# Advisory only — never write predicted accent into reviewed spine/app data.
+# ---------------------------------------------------------------------------
+_SLP1_VOWELS = 'aAiIuUfFxXeEoO'
+
+# Lemma-level scheme overrides (SLP1 citation form → scheme). From
+# accent_rules.json lexical_exceptions with a non-null scheme letter.
+_LEXICAL_SCHEME = {
+    'go': 'f',      # gó §361c
+    'div': 'f',     # dyó/dyú (div) §361d/e
+    'dyo': 'f',
+    'dyu': 'f',
+    'nO': 'c',      # nāú §361a
+    'nau': 'c',
+    'rE': 'c',      # rāí §361b
+    'nf': 'f',      # nṛ́ §372
+    'stf': 'f',     # stṛ́ §372
+    'Svan': 'f',    # śván §427
+    'yuvan': 'f',   # yúvan §427
+    'usf': 'f',     # usṛ́ §371j
+}
+
+# Compact (stem T-code, accent_position) → scheme. Mirrors accent_rules.json matrix[].
+# accent_position ∈ {barytone, oxytone, monosyllable}; root-compound is a special branch.
+_MATRIX_SCHEME = {
+    # barytones: fixed stem (scheme a) for every class
+    ('1', 'barytone'): 'a',
+    ('2', 'barytone'): 'a',
+    ('3', 'barytone'): 'a',
+    ('4', 'barytone'): 'a',
+    ('5', 'barytone'): 'a',
+    ('6', 'barytone'): 'a',
+    ('7', 'barytone'): 'a',
+    ('8n', 'barytone'): 'a',
+    ('8i', 'barytone'): 'a',
+    ('8s', 'barytone'): 'a',
+    ('8t', 'barytone'): 'a',
+    ('8c', 'barytone'): 'a',
+    ('8√', 'barytone'): 'a',
+    # oxytones
+    ('1', 'oxytone'): 'b',
+    ('2', 'oxytone'): 'b',
+    ('3', 'oxytone'): 'b',
+    ('4', 'oxytone'): 'b',   # polysyllabic derivative / Vedic (nadī́)
+    ('5', 'oxytone'): 'b',
+    ('6', 'oxytone'): 'b',
+    ('7', 'oxytone'): 'b',
+    ('8√', 'oxytone'): 'b',
+    ('8s', 'oxytone'): 'b',
+    ('8i', 'oxytone'): 'b',
+    ('8t', 'oxytone'): 'd',  # weakest-mobile (§446)
+    ('8n', 'oxytone'): 'd',  # weakest-mobile with syncope (§423)
+    ('8c', 'oxytone'): 'd',  # añc contraction (H115 GO)
+    # monosyllables
+    ('2', 'monosyllable'): 'a',   # root-ā, thin evidence but Whitney scheme a
+    ('4', 'monosyllable'): 'c',   # dhī́ / fully mobile
+    ('6', 'monosyllable'): 'c',   # bhū́
+    ('8√', 'monosyllable'): 'c',  # vā́c etc.
+}
+
+
+def _vowel_count_slp1(slp1):
+    return sum(1 for c in (slp1 or '') if c in _SLP1_VOWELS)
+
+
+def _t_code(slp1, stem_class):
+    """Zaliznyak T-code used as the matrix join key (1–7 or 8n/8i/8s/8t/8c/8√)."""
+    tnum = _STEM_TYPE_NUM.get(stem_class, '8')
+    if tnum == '8':
+        return _consonant_subtype(slp1)
+    return tnum
+
+
+def _accent_position(accented, slp1):
+    """unmarked | barytone | oxytone | monosyllable — from PWG key2 '/' + vowel count."""
+    if not accented or '/' not in accented:
+        return 'unmarked'
+    if _vowel_count_slp1(slp1) == 1:
+        return 'monosyllable'
+    i = accented.index('/')
+    last_vowel_pos = max(
+        (j for j, c in enumerate(accented) if c in _SLP1_VOWELS), default=-1)
+    # accented vowel is at i-1; final vowel → oxytone (citation-final)
+    return 'oxytone' if (i - 1) >= last_vowel_pos else 'barytone'
+
+
+def _is_root_compound_long_vowel(tcode, compound_members):
+    """T4/T6 final-member root compound (-dhī́, -bhū́): matrix cell scheme a (R08)."""
+    if tcode not in ('4', '6') or not compound_members:
+        return False
+    final = compound_members[-1]
+    return _vowel_count_slp1(final) == 1
+
+
+def _accent_scheme(accented, slp1, stem_class=None, compound_members=None, tcode=None):
+    """Full Whitney mobility scheme letter a/b/c/d/f, or '—' when unrecorded.
+
+    Replaces the pre-H2103 citation-only a/b split. Join:
+      (T-code, accent_position) → matrix scheme, with lexical_exceptions first
+      and T4/T6 root-compound override. Unmarked Classical headwords stay '—'.
+    """
+    if stem_class == 'indeclinable':
+        return '—'
     if not accented or '/' not in accented:
         return '—'
-    # position of the (first) udātta mark; the char before it is the accented vowel
-    i = accented.index('/')
-    # oxytone if the accent mark sits at/after the last vowel of the form
-    vowels = 'aAiIuUfFeEoO'
-    last_vowel_pos = max((j for j, c in enumerate(accented) if c in vowels), default=-1)
-    # the accented vowel is at i-1; if that is the final vowel → oxytone
-    return 'b' if (i - 1) >= last_vowel_pos else 'a'
+
+    base = (slp1 or '').split()[0]
+    if base in _LEXICAL_SCHEME:
+        return _LEXICAL_SCHEME[base]
+
+    if tcode is None:
+        if stem_class is None:
+            stem_class = _stem_class(slp1, '')
+        tcode = _t_code(slp1, stem_class)
+
+    pos = _accent_position(accented, slp1)
+    if pos == 'unmarked':
+        return '—'
+
+    # R08: ī/ū root-compounds keep stem accent (scheme a), not monosyllable c
+    if _is_root_compound_long_vowel(tcode, compound_members):
+        return 'a'
+
+    scheme = _MATRIX_SCHEME.get((tcode, pos))
+    if scheme is not None:
+        return scheme
+
+    if pos == 'barytone':
+        return 'a'
+    if pos == 'monosyllable':
+        return 'c'
+    return 'b'
 
 
 def zaliznyak_index(slp1, lex, accented=None, stem_class=None,
@@ -314,6 +438,7 @@ def zaliznyak_index(slp1, lex, accented=None, stem_class=None,
     """Compact Zaliznyak-style inflection index, e.g. 'm·3b', 'f·2b', 'm·8n*', 'mfn·1+2'.
 
     accented: optional accent-bearing form (e.g. PWG key2 with '/') for the stress slot.
+    Stress letter is the full a–f mobility scheme (H2103), not citation-only a/b.
     The other args are reused if already computed; otherwise derived here.
     """
     lex = (lex or '').strip()
@@ -332,7 +457,10 @@ def zaliznyak_index(slp1, lex, accented=None, stem_class=None,
     tnum = _STEM_TYPE_NUM.get(stem_class, '8')
     if tnum == '8':
         tnum = _consonant_subtype(slp1)
-    stress = _accent_scheme(accented, slp1) if stem_class != 'indeclinable' else '—'
+    stress = _accent_scheme(
+        accented, slp1, stem_class=stem_class,
+        compound_members=compound_members, tcode=tnum,
+    ) if stem_class != 'indeclinable' else '—'
 
     flags = ''
     if tnum in _GRADATION_SUBTYPES:
@@ -420,12 +548,19 @@ def selftest():
         assert paradigm_for('ca', 'adv.') is None
     # Zaliznyak index token
     idx_cases = [
-        ('deva', 'm.', 'deva/', 'm·1b'),      # oxytone a-stem (devá)
-        ('aMSa', 'm.', 'a/MSa', 'm·1a'),      # barytone a-stem (áṃśa)
-        ('agni', 'm.', 'agni/', 'm·3b'),      # oxytone i-stem (agní)
-        ('senA', 'f.', 'senA/', 'f·2b'),      # ā-stem f — NORMAL class, no ° (ā_stem_f is not a deviation)
-        ('BU', 'f.', None, 'f·6°'),           # monosyllabic ū-stem → genuine deviation °
-        ('rAjan', 'm.', None, 'm·8n*'),       # an-stem, gradation
+        ('deva', 'm.', 'deva/', 'm·1b'),      # oxytone a-stem (devá) — scheme b
+        ('aMSa', 'm.', 'a/MSa', 'm·1a'),      # barytone a-stem (áṃśa) — scheme a
+        ('agni', 'm.', 'agni/', 'm·3b'),      # oxytone i-stem (agní) — scheme b
+        ('senA', 'f.', 'senA/', 'f·2b'),      # ā-stem f oxytone — scheme b; NORMAL class, no °
+        ('BU', 'f.', None, 'f·6°'),           # monosyllabic ū-stem unmarked → no stress; genuine deviation °
+        ('BU', 'f.', 'BU/', 'f·6c°'),         # monosyllabic ū-stem accented → full mobile c (H2103)
+        ('DI', 'f.', 'DI/', 'f·4c°'),         # monosyllabic ī-stem → c
+        ('vAc', 'f.', 'vAc/', 'f·8√c'),       # monosyllabic consonant → c
+        ('adant', 'm.', 'ada/nt', 'm·8td*'),  # oxytone -ant participle → weakest-mobile d
+        ('Atman', 'm.', 'AtmA/n', 'm·8nd*'),  # oxytone an-stem → d
+        ('go', 'm.', 'go/', 'm·8√f'),         # lexical irregular gó → f (stem class 8√)
+        ('rAjan', 'm.', 'rA/jan', 'm·8na*'),  # barytone an-stem → a + gradation
+        ('rAjan', 'm.', None, 'm·8n*'),       # an-stem unmarked
         ('manas', 'n.', None, 'n·8s'),        # as-stem
         ('ca', 'adv.', None, 'ind·0'),        # indeclinable
     ]
