@@ -1605,15 +1605,33 @@ def _test_h2079_945_probe_emits_api_time():
             assert row['api_gap_ms'] == 27013, row          # 40000 - 12987
             assert {'duration_api_ms', 'api_gap_ms'} <= obs.ALLOWED
             # H2095 (#946): the row records the ceiling THAT JUDGED IT, so it can be read
-            # standalone. `policy` alone cannot: the token stayed 'production_v1' across
-            # 30000 -> 33000 -> 65000 on 31-07, and probe_log.POLICIES still maps that same
-            # token to 30000 — two gates, one name, a 2.2x disagreement.
+            # standalone. H2118 (#946) then made `policy` sufficient on its own too, by giving
+            # each ceiling value its own token instead of re-pointing one name across
+            # 30000 -> 33000 -> 65000. The two gates can no longer drift apart: both derive.
             assert row['latency_ceiling_ms'] == 65000, row
             assert 'latency_ceiling_ms' in obs.ALLOWED
             import probe_log
-            assert probe_log.POLICIES['production_v1']['latency_ceil_ms'] != m.PROBE_LATENCY_CEILING_MS, (
-                'the two ceilings agree now — reconcile probe_log.POLICIES and drop this pin '
-                'plus the divergence warning above it')
+            import coordinator
+            # H2118 replaces H2095's divergence pin (which asserted the two ceilings DISAGREE
+            # and fired the moment they were reconciled — it had done its job). The invariant
+            # now worth pinning is the derivation itself: one table, no second copy.
+            assert m.PROBE_LATENCY_CEILING_MS == probe_log.ceiling_for(m.PROBE_POLICY), (
+                'max_account_orchestrator stopped deriving its ceiling from probe_log.POLICIES '
+                '— re-derive it rather than restating the number')
+            assert coordinator.PROBE_LATENCY_CEILING_MS == m.PROBE_LATENCY_CEILING_MS, (
+                'coordinator and max_account_orchestrator disagree on the dispatch ceiling; '
+                'both must derive from probe_log.POLICIES[probe_log.CURRENT_POLICY]')
+            assert coordinator.PROBE_POLICY == m.PROBE_POLICY, (
+                'the two gates stamp rows with different policy tokens')
+            # ONE POLICY NAME PER CEILING VALUE. A future ceiling change adds a new token; it
+            # must never re-point an existing one, or rows judged differently claim one policy
+            # again — the exact defect #946 was opened for.
+            assert probe_log.POLICIES['production_v1']['latency_ceil_ms'] == 30_000, (
+                'production_v1 is frozen at its historical 30 000 — rows stamped with it were '
+                'judged at that ceiling, and moving it falsifies them retroactively')
+            _ceilings = [spec['latency_ceil_ms'] for spec in probe_log.POLICIES.values()]
+            assert len(_ceilings) == len(set(_ceilings)), (
+                'two policy names share one ceiling value: %r' % (probe_log.POLICIES,))
 
             # a probe that yields no envelope must emit NEITHER key (not an explicit null)
             ev2 = os.path.join(td, 'e2.jsonl')

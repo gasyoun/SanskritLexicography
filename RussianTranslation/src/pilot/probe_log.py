@@ -46,22 +46,47 @@ PAYLOAD_FLOOR_BYTES = 5 * 1024
 
 KINDS = ('warmup', 'launch', 'abort')
 VERDICTS = ('GO', 'NO-GO')
-# ⚠️ H2095 (#946) — TWO GATES, ONE POLICY NAME, DIFFERENT CEILINGS. This table's
-# `production_v1` latency ceiling is 30 000 ms and is NOT the ceiling the live dispatch gate
-# uses: `max_account_orchestrator.PROBE_LATENCY_CEILING_MS` was raised 30 000 -> 33 000 -> 65 000
-# on 31-07-2026 and the policy token was never bumped, so both gates stamp rows `production_v1`
-# while disagreeing by 2.2x. A 50 000 ms reading PASSES live_probe and FAILS verdict_for() here.
+# THE ONE SOURCE OF TRUTH FOR PROBE CEILINGS (H2118, #946). Every gate derives its ceiling
+# from this table; nothing hard-codes a probe ceiling anywhere else in the tree. Before H2118
+# there were THREE independent copies of the number (`probe_log` 30 000,
+# `max_account_orchestrator` 65 000, `coordinator` 65 000) kept in lockstep by comments rather
+# than by code — and they had already fallen out of step.
 #
-# Deliberately NOT unified in H2095: reconciling them means choosing a ceiling, and H2056 reserved
-# that for a human — the 65 000 value is itself suspect (calibrated partly against rate-limit
-# backoff, FINDINGS §270) and re-deriving it needs readings paired with a same-moment quota check.
-# Until then, trust a row's own recorded `latency_ceiling_ms` (emitted since H2095) over this
-# table, and treat a `policy` token alone as insufficient provenance.
+# ⚠️ ONE POLICY NAME PER CEILING VALUE — never re-point an existing name. H2095 (#946) recorded
+# the defect this rule exists to prevent: the ceiling moved 30 000 -> 33 000 -> 65 000 in a single
+# day (31-07-2026) while the token stayed `production_v1`, so rows judged 2.2x apart all claim the
+# same policy and a `policy` token stopped being sufficient provenance. Bumping the name is how a
+# reader tells which gate judged a row; that is the whole point of the token.
+#
+# `production_v1` (30 000) is therefore FROZEN at its historical value, not "the old wrong one" —
+# every row stamped `production_v1` before 31-07-2026 was genuinely judged at 30 000, and moving
+# this number would retroactively falsify those rows.
+#
+# ⚠️ `production_v2` (65 000) IS NOT A DERIVED NUMBER — it is MG's 31-07-2026 ruling, and
+# FINDINGS §270 established it was calibrated partly against rate-limit BACKOFF rather than route
+# latency (a rate-limited CLI hangs instead of reporting 429, so the readings behind it may be
+# measuring retry delay). H2118 could not re-derive it: the paired same-moment quota check that
+# would make new readings trustworthy was unavailable, and no clean reading exists — as of
+# 01-08-2026 not one probe row in the tree carries the `duration_api_ms` H2095 added. Whoever
+# lands clean readings adds `production_v3` with the derived ceiling; do NOT edit this value.
 POLICIES = {
     'production_v1': {'latency_ceil_ms': 30_000, 'conn_error_ceil': 0,
                       'payload_floor_bytes': PAYLOAD_FLOOR_BYTES,
                       'require_schema_valid': True},
+    'production_v2': {'latency_ceil_ms': 65_000, 'conn_error_ceil': 0,
+                      'payload_floor_bytes': PAYLOAD_FLOOR_BYTES,
+                      'require_schema_valid': True},
 }
+# The policy the live dispatch + receipt gates run under. Importers derive their ceiling from
+# `POLICIES[CURRENT_POLICY]` rather than restating the number, so a future bump is one edit here.
+CURRENT_POLICY = 'production_v2'
+
+
+def ceiling_for(policy=CURRENT_POLICY):
+    """The latency ceiling of `policy`, for importers that must not hard-code it."""
+    if policy not in POLICIES:
+        raise ValueError('unknown probe policy %r' % policy)
+    return POLICIES[policy]['latency_ceil_ms']
 
 
 def _now():
