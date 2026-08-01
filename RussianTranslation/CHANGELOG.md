@@ -10,6 +10,43 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — a quota hang no longer denylists a healthy card or discards its fragments' TM (H2077, issue #947, 01-08-2026, Opus 5 `claude-opus-5[1m]`)
+
+The worst harm found by the [H2056 review](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2056/H2056_CALL_PATH_REVIEW_2026-08.md),
+and the one with **permanent** consequences.
+
+[`classify_harness_requeues`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py#L475)
+split transient-vs-defect on output **shape** alone — `defect = (gate_set - null_set) | fidelity_nulls`.
+A null key was exempt ("it fails coverage only because it is absent"), but a **partial** key was not,
+even though the absent part is absent for the same reason. So a card left incomplete because its heal
+call *died* (timeout, budget stop, quota hang) was filed as a content defect, and via
+`requeue_defect` that (a) denylisted a **healthy** card and (b) discarded the `frag_prov` fshas of
+the fragments that **did** translate — paid-for TM, permanently — and (c) wrote the key to
+`no_pwg_residuals.jsonl` as `blocked`, the planner skip-list. All three consume the one
+`requeue_defect` set, so all three are fixed at one point.
+
+**The fix makes the split evidence-based instead of shape-based.** A partial card recorded *which*
+fragments were missing but never *why*; it now also records **why**. `headless_worker._partial_cause()`
+derives a typed cause from that card's own fragments' recorded call failures (same deterministic
+ascending-numeric-index precedence as `_selfheal_stop_reason`), stamps `partial_cause` +
+`partial_cause_infra`, and the audit subtracts explicitly-infrastructure partials from the defect lane.
+
+Deliberately narrow — `INFRA_FAILURE_REASONS` is a **closed** list (timeout · budget_exceeded ·
+rate_limit · authentication · connection). A partial card with a *content* cause, or with **no**
+recorded cause (older wf files), behaves exactly as before, and `fidelity_nulls` still overrides the
+exemption. Over-exempting would let a genuinely defective card back into the cheap-re-run lane — the
+"stubborn null" loop the fidelity rule exists to stop.
+
+Pinned by `test_h2077_947_infra_partial_is_not_a_content_defect`, which fixes all four quadrants
+(infra→transient · content→defect · no-cause→defect · fidelity-override→defect), asserts the good
+fragment's fsha stays out of the denylist, and pins the legacy set-shaped caller as unchanged.
+`window_selftest` 195/195, pilot suite green, LANG_PARITY 89 entries with 44 re-derived.
+
+**Surfaced, not silently assumed:** `audit_window_en.py` is a separate auditor with no partial-card
+model at all, so the same defect cannot arise there in that form — but whether an EN card can be
+hard-flagged for content a dead call never produced is a different question, filed as
+[#956](https://github.com/gasyoun/SanskritLexicography/issues/956) rather than guessed at here.
+
 ### Fixed — a rate-limited account no longer looks like a local timeout (H2063, issues #943 + #944, 01-08-2026, Opus 5 `claude-opus-5[1m]`)
 
 The first two fixes off the [H2056 review](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2056/H2056_CALL_PATH_REVIEW_2026-08.md).

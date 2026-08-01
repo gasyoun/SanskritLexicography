@@ -5848,6 +5848,61 @@ def test_partial_cards_requeue_and_stay_out_of_clean_sample():
              sample['clean_sample_keys'])
 
 
+def test_h2077_947_infra_partial_is_not_a_content_defect():
+    """H2077 / #947: a card left partial because its heal CALL died must not be filed as a
+    content defect — that denylists a healthy card and discards its translated fragments' TM.
+
+    Pins all four quadrants of the split so the exemption cannot silently widen:
+      infra cause + gate flag   -> transient (the fix)
+      content cause + gate flag -> defect    (unchanged)
+      no cause + gate flag      -> defect    (older wf files, unchanged)
+      infra cause + fidelity    -> defect    (fidelity_nulls still overrides)
+    """
+    import audit_window as aw
+
+    fixture = [
+        {'key': 'hung', 'card': {'partial': True, 'missing_fragments': ['g1:f2'],
+                                 'partial_cause': 'timeout', 'partial_cause_infra': True,
+                                 'frag_prov': [{'fsha': 'sha-good-1'}]}},
+        {'key': 'budget', 'card': {'partial': True, 'missing_fragments': ['g1:f3'],
+                                   'partial_cause': 'budget_exceeded:heal',
+                                   'partial_cause_infra': True}},
+        {'key': 'bad_content', 'card': {'partial': True, 'missing_fragments': ['g2:f1'],
+                                        'partial_cause': 'fragment-fidelity-reject',
+                                        'partial_cause_infra': False}},
+        {'key': 'legacy', 'card': {'partial': True, 'missing_fragments': ['g3:f1']}},
+    ]
+    partial_cards, failure_reasons = aw.collect_harness_quality(fixture)
+    if not partial_cards['hung'].get('partial_cause_infra'):
+        fail('partial_cause_infra did not survive collect_harness_quality: %r'
+             % partial_cards['hung'])
+
+    gate_flagged = {'hung', 'budget', 'bad_content', 'legacy'}
+    transient, defect, _ = aw.classify_harness_requeues(
+        [], partial_cards, gate_flagged, failure_reasons)
+    if transient != {'hung', 'budget'} or defect != {'bad_content', 'legacy'}:
+        fail('#947 split wrong: transient=%r defect=%r' % (sorted(transient), sorted(defect)))
+
+    # The whole point: an infra-partial card's fragments must stay OUT of the TM denylist,
+    # which is built from requeue_defect membership.
+    defect_fshas = {fp['fsha'] for row in fixture if row['key'] in defect
+                    for fp in (row['card'].get('frag_prov') or []) if fp.get('fsha')}
+    if 'sha-good-1' in defect_fshas:
+        fail('#947: a hung card\'s correctly-translated fragment TM was denylisted')
+
+    # fidelity_nulls must still win over the exemption, even with an infra cause recorded.
+    transient2, defect2, _ = aw.classify_harness_requeues(
+        [], partial_cards, {'hung'}, {'hung': 'fidelity-reject: <ls> 1/2'})
+    if 'hung' not in defect2 or 'hung' in transient2:
+        fail('#947: fidelity_nulls no longer overrides the infra-partial exemption')
+
+    # A set (legacy caller shape) carries no cause and must behave exactly as before.
+    transient3, defect3, _ = aw.classify_harness_requeues(
+        [], set(partial_cards), gate_flagged, failure_reasons)
+    if defect3 != gate_flagged:
+        fail('#947: legacy set-shaped partial_cards changed behaviour: %r' % sorted(defect3))
+
+
 def test_classify_run_verdicts():
     """H462: classify_run.py mechanizes the code-vs-infra rule H442 applied by hand
     ('if connection errors recur, record as infra-confounded, not a code failure') from
@@ -8435,6 +8490,7 @@ def main():
         test_heal_group_kill_timeout_does_not_bisect,
         test_run_telemetry_counters_returned,
         test_partial_cards_requeue_and_stay_out_of_clean_sample,
+        test_h2077_947_infra_partial_is_not_a_content_defect,
         test_classify_run_verdicts,
         test_grammar_field_restore_behavioral,
         test_threaded_gate_exception_requeues_full_window,

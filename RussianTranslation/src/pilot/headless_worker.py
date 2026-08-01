@@ -431,6 +431,21 @@ def classify_process(proc):
     return 'process', proc.returncode or 1
 
 
+# H2077 / #947: reasons meaning "the CALL died", not "the card is defective". A fragment missing
+# for one of these leaves an otherwise healthy card incomplete, so the audit must not file it as a
+# content defect — that denylists the card AND discards the frag_prov fshas of the fragments that
+# DID translate (paid-for TM, permanently). Deliberately a CLOSED list: anything unrecognised (a
+# fidelity reject, a mismatched fragment key, malformed output) stays content, because
+# over-exempting would let a genuinely defective card back into the cheap-re-run lane — the
+# 'stubborn null' loop that the fidelity-reject rule exists to stop.
+INFRA_FAILURE_REASONS = ('timeout', 'budget_exceeded', 'rate_limit', 'authentication', 'connection')
+
+
+def is_infra_failure(reason):
+    """True when a recorded failure reason means the call failed, not that the card is bad."""
+    return bool(reason) and str(reason).startswith(INFRA_FAILURE_REASONS)
+
+
 def timeout_output_text(exc):
     """Text drained from a killed child and attached to its ``TimeoutExpired`` by ``run_tree_kill``.
 
@@ -803,6 +818,32 @@ class HeadlessEngine:
         return {'%s_f%d' % (key, index)
                 for group in groups for index in range(len(group))}
 
+    def _partial_cause(self, key):
+        """H2077 / #947: the typed reason this card came back PARTIAL, for the audit's
+        transient-vs-defect split.
+
+        Before this, a partial card recorded WHICH fragments were missing but never WHY, so the
+        audit could only judge it by SHAPE — and a card left incomplete by a hung/budget-stopped
+        heal call was filed as a content defect, permanently denylisting a healthy card and
+        discarding the TM of the fragments that did translate.
+
+        Same deterministic precedence as `_selfheal_stop_reason`: fragment keys in ascending
+        NUMERIC index, first INFRASTRUCTURE reason wins, so several failed fragments cannot make
+        the reported cause depend on set/dict iteration order. Falls back to the first recorded
+        reason of any kind, so a content cause is still reported — and still classified as
+        content by `is_infra_failure`. Returns None when nothing was recorded, which the audit
+        treats exactly as it did before (unchanged behaviour)."""
+        first = None
+        for frag_key in sorted(self._fragment_keys(key), key=_fragment_index):
+            error = self.failures.get(frag_key)
+            if not error:
+                continue
+            if is_infra_failure(error):
+                return error
+            if first is None:
+                first = error
+        return first
+
     def _selfheal_stop_reason(self, key):
         """H2a: classify a zero-sense `self_heal` outcome as infrastructure vs content.
 
@@ -913,6 +954,13 @@ class HeadlessEngine:
             card.update({'partial': True, 'missing_fragments': missing,
                          'missing_groups': len({item.split(':')[0] for item in missing}),
                          'total_groups': len(groups)})
+            # H2077 / #947: record WHY it is partial, not just which fragments are absent. The
+            # audit's transient-vs-defect split consumes `partial_cause_infra`; without it the
+            # split can only see shape, and an infrastructure gap reads as a content defect.
+            cause = self._partial_cause(key)
+            if cause:
+                card['partial_cause'] = cause
+                card['partial_cause_infra'] = is_infra_failure(cause)
         else:
             inp = self.m['inputs'][key]
             ls_count, sk_count = count_card(card, '<ls'), count_card(card, '{#')
