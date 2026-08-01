@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.117.0] - 2026-08-01
+
 ### Added
 - **H1702 Grok override dual-run verify (01-08-2026, Grok 4.5 `grok-4.5`):** independent re-measure of the shipped D4 boundary-wrap pipeline against the live store — residual **1,109** with **byte-identical** ineligible breakdown vs the Sonnet report; dry-run eligible **0** (no store rewrite); selftest **198/198**, pytest **96/96**. Net-new probe only: `〉`/fullwidth-paren normalize would unlock **63** residual rows (not applied; needs precision bar). Report: [`pwg_ru/H1702_GROK_OVERRIDE_DUAL_RUN_VERIFY_2026-08-01.md`](pwg_ru/H1702_GROK_OVERRIDE_DUAL_RUN_VERIFY_2026-08-01.md).
 - **Full Zaliznyak a–f mobility on the stress slot (H2103, Grok 4.5 `grok-4.5`, 01-08-2026):** citation-only `a`/`b` replaced by Whitney matrix schemes (`c` fully mobile monosyllables, `d` weakest-mobile -ant/-an/añc, `f` lexical irregulars). Rebuild: `python src/reverse_index.py --build`. Selftest covers c/d/f fixtures.
