@@ -328,11 +328,36 @@ def test_workflow_payload_nested():
             {'key': 'k2', 'card': None},
         ]}}, f)
     try:
-        _payload, meta, _results, keys, nulls = workflow_payload(path)
+        _payload, meta, results, keys, nulls = workflow_payload(path)
     finally:
         os.remove(path)
     if meta.get('root') != 'sTA' or keys != ['k1', 'k2'] or nulls != ['k2']:
         fail('workflow_payload nested extraction failed')
+    # H2089: null card must carry synthetic failure_REASON
+    null_row = next(r for r in results if r.get('key') == 'k2')
+    if null_row.get('failure_REASON') != 'null_card_no_card_object':
+        fail('null card missing synthetic failure_REASON: %r' % null_row)
+
+
+def test_workflow_payload_missing_results_hard_fail():
+    """H2089: no results list must not become a clean empty window."""
+    from workflow_payload import WorkflowPayloadError
+    with tempfile.NamedTemporaryFile('w', encoding='utf-8', suffix='.json', delete=False) as f:
+        path = f.name
+        json.dump({'meta': {'root': 'x'}, 'status': 'ok'}, f)
+    try:
+        try:
+            workflow_payload(path)
+            fail('missing results did not raise WorkflowPayloadError')
+        except WorkflowPayloadError as exc:
+            if 'silent-empty' not in str(exc) and 'no results' not in str(exc):
+                fail('wrong error: %r' % exc)
+        # opt-in soft path for diagnostics
+        _p, _m, results, keys, nulls = workflow_payload(path, allow_missing_results=True)
+        if results != [] or keys != [] or nulls != []:
+            fail('allow_missing_results soft path not empty')
+    finally:
+        os.remove(path)
 
 
 def test_harness_scope_and_tools():
@@ -8428,6 +8453,7 @@ def main():
         test_launch_failure_ledger_rejects_incomplete_entry,
         test_autosplit_topup_targets_and_reassembles,
         test_workflow_payload_nested,
+        test_workflow_payload_missing_results_hard_fail,
         test_sense_dupe_norm_strips_trailing_period,
         test_sense_dupe_batch_override,
         test_sense_dupe_cross_level_exempt,
