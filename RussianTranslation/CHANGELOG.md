@@ -10,6 +10,22 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — offline Sonnet-tier batch (H2005 + glyph sample + gloss_lang, 01-08-2026, Grok 4.5 `grok-4.5`)
+
+- **H2005:** RU article render substitutes `ed. Bomb.` → «Бомбейская ред.» inside
+  `<ls>` (standalone + embedded) without rewriting the store or breaking
+  `pwg_sources.source_key()` / href resolution. DE/EN unchanged.
+  [`build_article_site._ls_visible_display`](src/pilot/build_article_site.py);
+  pin [`ls_enrichment_selftest.test_h2005_ed_bomb_ru_display_not_resolve`](src/pilot/ls_enrichment_selftest.py).
+- **Glyph quarantine sample (report only):** stratified n=200 from the 10 881-row
+  quarantine; 200/200 `segmentation_flag` — not a RU-quality fail label.
+  [`src/sample_glyph_quarantine.py`](src/sample_glyph_quarantine.py);
+  [report](pwg_ru/H_GLYPH_QUARANTINE_SAMPLE_REPORT_20260801.md);
+  [sample JSON](reports/pwg_ru_glyph_quarantine_sample_2026-08-01.json).
+- **gloss_lang §464:** `english_content` no longer fires on a single weak marker
+  (`a`/`an`/`of`/`and`/`or`/`with`/`as`/`one`/`war`); strong markers or dual `-ing`
+  still mask as EN. Pins in `pwg_mask --selftest`.
+
 ## [1.115.0] - 2026-08-01
 
 ### Fixed — the last four H2056 integrity issues (H2095, issues #946 · #949 · #950 · #956, 01-08-2026, Opus 5 `claude-opus-5[1m]`)
