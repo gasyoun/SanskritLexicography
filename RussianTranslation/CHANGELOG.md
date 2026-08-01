@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.119.0] - 2026-08-01
+
 ### Added
 - **First decomposed c4 probe readings, and c4 auth restored (01-08-2026, Opus 5 1M `claude-opus-5[1m]`):** the H2095 `duration_api_ms` instrumentation produced its first rows ever — warm-up wall 39 437 ms / API **21 171** ms, measured wall 50 336 ms / API **27 557** ms, so ~45 % of each wall reading (18.3 s / 22.8 s) is in-CLI scaffolding rather than route time. Both API readings clear the stricter 30 000 ms bar the `/pwg-live-gate` text names, so the gate did not need the widened 65 000 ms ceiling — an independent measurement of the same 30 s-vs-65 s divergence the H2025 audit reports below. Not a masked rate-limit, since both calls returned real envelopes where [FINDINGS §270](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) says a throttled CLI hangs. Evidence toward [#946](https://github.com/gasyoun/SanskritLexicography/issues/946)/H2138 but **not** its ≥5 paired readings (n=1 measured, no same-moment quota check). Separately, `claude auth status` on c4 now returns `loggedIn: true` / Max — the HTTP 403 that stopped the paid lane on 25-07-2026 is **cleared**. Table: [`RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md). Raw rows are gitignored (`.gitignore:67`), so that table is the only committed copy.
 
