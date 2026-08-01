@@ -106,13 +106,15 @@ change the exact key `source_key()` extracts and **break source resolution outri
 confirmed by inspection of `pwg_sources.resolve()`, not merely suspected. Per the handoff's
 decision rule, the store-level substitution therefore applies **only to the 1 free-prose
 occurrence**; the 282 in-`<ls>` occurrences (221 standalone + 61 embedded) stay verbatim
-Latin at the store level. Their eventual Russian *display* (e.g. rendering `<ls>ed.
-Bomb.</ls>` as «Бомбейская ред.» at render time while keeping the underlying citation text
-resolvable) is a render-time display-layer concern, not a store-sweep — handed off as a
-PROPOSED follow-up (see below); it is NOT part of
-[H1307](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1307-Opus_RussianTranslation_pwg-ru-ls-link-enrichment-panini-spr-dhatup_19.07.26.md)'s
-shipped scope (that handoff covers Panini/Spr./DHATUP link enrichment specifically, not
-`ed. Bomb.` display) — a future handoff should pick this up explicitly.
+Latin **in the store**.
+
+**H2005 (01-08-2026) — render-time RU display SHIPPED.**
+[`build_article_site._ls_visible_display`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_article_site.py)
+substitutes `ed. Bomb.` → «Бомбейская ред.» only when `lang=='ru'`, for both standalone
+`<ls>ed. Bomb.</ls>` and embedded `<ls>R. ed. Bomb. 3,69,4</ls>`. Href / tooltip /
+`source_key()` always receive the stored Latin visible text. DE/EN columns unchanged.
+Pinned by [`ls_enrichment_selftest.test_h2005_ed_bomb_ru_display_not_resolve`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/ls_enrichment_selftest.py).
+No generalisation to other sigla without a new vote.
 
 ## Sweep and review-repair results (applied)
 
@@ -161,9 +163,8 @@ already the full set of terseness items the DA vote (N4/N12) ratified. The appli
 stays exactly R1–R4. Two items are explicitly OUT of this session's scope and are
 listed here for the sibling streams that own them:
 
-- **In-`<ls>` `ed. Bomb.` display substitution** (282 occurrences) — a render-time
-  display-layer concern, not mined/ratified here; needs its own handoff (see placement
-  check above).
+- ~~**In-`<ls>` `ed. Bomb.` display substitution** (282 occurrences)~~ — **done H2005**
+  (render-only RU display; store stays Latin; see placement check above).
 - **Doublet / v.l. / Comp.-formula terseness** — research-grade (not mechanical), explicitly
   routed to [H1306](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1306-Fable_RussianTranslation_pwg-ru-style-research-doublets-apresyan_19.07.26.md)
   per the register.
