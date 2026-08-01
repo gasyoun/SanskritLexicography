@@ -10,6 +10,11 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.118.0] - 2026-08-01
+
+### Added
+- **H2025 Fable dual-run pipeline audit of the PWG->RU money lane (01-08-2026, Fable 5 `claude-fable-5`):** full `/pipeline-audit` with mandatory Phase 2b money checks at rev `b4db4259`, dual-compared against the same-day Grok 4.5 (`grok-4.5`) lane (H2089/PR #960 confirmed shipped). Headline residuals: the FINDINGS-hub overlay-wipe class is still live in `merge_store_rows` + supersede mode with 5 human-reviewed store rows exposed; 13 non-promote store mutators bypass `PromoteClaim`; cost/call ceilings default to `None` and pass when unset; the live-gate GO is never consumed by code (canary half prose-only, skill states the reverted 30 s policy vs the enforced 65 s); a scheduler swallow can dispatch a duplicate paid window; a 1.29 MB store content change passed the row-count-only delta gate invisibly. Memo with 10 ranked gap specs: [`PIPELINE_AUDIT_PWG_RU_H2025_01-08-2026.md`](PIPELINE_AUDIT_PWG_RU_H2025_01-08-2026.md).
+
 ## [1.117.0] - 2026-08-01
 
 ### Added
