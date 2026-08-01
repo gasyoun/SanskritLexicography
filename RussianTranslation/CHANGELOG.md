@@ -10,6 +10,50 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — the last four H2056 integrity issues (H2095, issues #946 · #949 · #950 · #956, 01-08-2026, Opus 5 `claude-opus-5[1m]`)
+
+**[#949](https://github.com/gasyoun/SanskritLexicography/issues/949) — `budget_spent` was published without the qualifier that makes it readable.**
+A hung call finalizes with `unevaluable_telemetry()` (all-zero token fields), so it adds 0 to the
+total: a run that burned real money on hung calls could publish `budget_spent: 0.0` with nothing in
+the operator-facing artifact to say the number is a **floor**, not the cost. `summary()` now carries
+`cost_evaluable`, `unevaluable_calls` and `pending_calls`, all already present in the ledger. The
+`STOP_COST_UNEVALUABLE` gate arms only when a `--budget` cap is set, so on an uncapped run this
+marker is the *only* signal — surfaced, but the stop policy itself deliberately unchanged.
+
+**[#946](https://github.com/gasyoun/SanskritLexicography/issues/946) — a probe row could not be read standalone.**
+Rows now record `latency_ceiling_ms`, the ceiling that actually judged them. The `policy` token was
+never sufficient provenance, and this pass found why it is worse than reported: `PROBE_POLICY`
+stayed `production_v1` across 30 000 → 33 000 → 65 000 on 31-07, **and
+[`probe_log.POLICIES`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/probe_log.py)
+still maps that same token to 30 000 ms** — so `probe_log.verdict_for()` and `live_probe` are two
+mechanical gates sharing one policy name while disagreeing by 2.2×. A 50 000 ms reading passes one
+and fails the other. **Deliberately not reconciled:** choosing a ceiling is the human call H2056
+reserved, and 65 000 is itself suspect. The divergence is now documented at the table and pinned by
+a selftest that will fail the moment someone unifies them, so it cannot be closed silently.
+
+**[#950](https://github.com/gasyoun/SanskritLexicography/issues/950) — settled, no constant moved.**
+The claim was that the healthy cost gate is calibrated below the real per-call floor
+(`~90 485` tokens / `~$0.29` per call). Resolved from the committed H963 record, which states
+`calls | 2`: **90 485 is a two-call aggregate** (~45 243/call) — the premise was wrong — while
+`$0.5848 ÷ 2 ≈ $0.29`/call is correct. The comparison is category-confused regardless:
+`PER_AGENT_TOKENS_HEALTHY` prices a *translation agent* in a batched lane (59 250 tok/agent c4
+canary, ~60K/agent `nominal_w1_100small` — two independent sources), while those figures come from
+a *readiness probe* dominated by CLI cache-creation scaffolding. Re-calibrating a spend gate off a
+single 2-call sample would be worse than the fiction it replaced. The arithmetic is recorded so it
+is not re-derived.
+
+**[#956](https://github.com/gasyoun/SanskritLexicography/issues/956) — the EN twin of #947, and it was real.**
+The question #947 left open is now answered by enumeration: **6 of the 11 EN `HARD` flags fire on
+absence** (`MISSING-EN`, `MISSING-SENSE`, `LS-LOSS`, `SAN-LOSS`, `AB-LOSS`, `IS-LOSS`) — `SAN-LOSS`
+being literally the gate named in #947's RU harm — so a card left incomplete by a dead call did land
+in `requeue_defect` and the same H304 fsha denylist. `audit_window_en` now reads the same
+`partial_cause_infra` marker the worker stamps language-agnostically, at **finer granularity than the
+RU fix**: only absence-bearing flags are exempted, so `ANCHOR-*`, `SENSE-DUPE` and `DUP` still make a
+partial card a defect — the EN mirror of `fidelity_nulls` overriding on RU.
+
+`window_selftest` 196/196, pilot suite green, LANG_PARITY 89 entries with 45 re-derived (including a
+first-ever note on `h1339_measurement_integrity`, which owns both files #946/#950 touched).
+
 ### Fixed — a dead heal call no longer reports itself as a content verdict (H2091, issue #948, 01-08-2026, Opus 5 `claude-opus-5[1m]`)
 
 `_selfheal_stop_reason` tested only for `budget_exceeded:*`, so a `timeout` fell through to

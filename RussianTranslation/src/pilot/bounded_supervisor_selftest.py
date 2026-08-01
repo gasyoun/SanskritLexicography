@@ -575,7 +575,63 @@ def main():
         test_o_durable_call_counter(td)
         test_p_durable_cost_counter(td)
         test_q_h3_checkpoint_fsync(td)
+    test_h2095_949_summary_carries_evaluability()
     print('bounded_supervisor_selftest: PASS')
+
+
+def test_h2095_949_summary_carries_evaluability():
+    """H2095 / #949: `budget_spent` must not be published without the qualifier that reads it.
+
+    A hung call finalizes with `unevaluable_telemetry()` — all-zero token fields — so it adds 0 to
+    `observed_cost_usd`. A run that burned real money on hung calls could therefore publish
+    `budget_spent: 0.0` with nothing in the artifact an operator reads to say the number is a
+    FLOOR rather than the cost. The discriminating fields already existed in the ledger; they just
+    never reached `summary()`. Note the STOP_COST_UNEVALUABLE gate only arms when a --budget cap
+    is set, so on an uncapped run this marker is the ONLY signal.
+    """
+    import bounded_supervisor as bs
+
+    def make(usage):
+        sup = bs.BoundedSupervisor.__new__(bs.BoundedSupervisor)
+        sup.usage_counter = lambda: usage
+        sup.budget_spent = 0.0
+        sup._durable_cost_evaluable = True
+        sup._unevaluable_calls = 0
+        sup._pending_calls = 0
+        return sup
+
+    # a run whose every call was unevaluable: cost reads 0.0, and that must be self-evidently
+    # NOT the same statement as "this run was free"
+    hung = make({'observed_cost_usd': 0.0, 'cost_evaluable': False,
+                 'unevaluable_calls': 3, 'pending_calls': 0})
+    hung._sync_usage_counter()
+    assert hung.budget_spent == 0.0
+    assert hung._durable_cost_evaluable is False
+    assert hung._unevaluable_calls == 3, hung._unevaluable_calls
+
+    clean = make({'observed_cost_usd': 1.25, 'cost_evaluable': True,
+                  'unevaluable_calls': 0, 'pending_calls': 0})
+    clean._sync_usage_counter()
+    assert clean._durable_cost_evaluable is True and clean._unevaluable_calls == 0
+
+    # and the fields must actually reach summary() — the artifact a human reads
+    for sup in (hung, clean):
+        sup.stop_reason = None
+        sup.windows_done = 0
+        sup.calls_spent = 3
+        sup.clean_total = 0
+        sup.requeue_backlog = []
+        sup.empty_streak = 0
+        sup.next_index = 0
+        sup.completed_window_ids = []
+        sup.history = []
+        out = sup.summary()
+        for field in ('cost_evaluable', 'unevaluable_calls', 'pending_calls'):
+            assert field in out, '%s missing from summary(): %r' % (field, sorted(out))
+    assert sup.summary()['cost_evaluable'] is True
+    assert hung.summary()['cost_evaluable'] is False
+    assert hung.summary()['budget_spent'] == 0.0 and hung.summary()['unevaluable_calls'] == 3
+    print('  H2095 #949: summary() publishes cost_evaluable/unevaluable_calls beside budget_spent')
 
 
 if __name__ == '__main__':

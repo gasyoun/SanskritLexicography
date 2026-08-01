@@ -1284,7 +1284,11 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
                          policy=PROBE_POLICY, executor_lane=PROBE_LANE,
                          schema_valid=(cls == 'success'),
                          duration_api_ms=api_ms,
-                         api_gap_ms=(latency - api_ms) if api_ms is not None else None)
+                         api_gap_ms=(latency - api_ms) if api_ms is not None else None,
+                         # H2095 (#946): the ceiling in force for THIS reading, so the row is
+                         # self-describing. `policy` alone is not enough — the token did not
+                         # change across three ceiling values on 31-07.
+                         latency_ceiling_ms=latency_ceiling_ms)
 
     # One profile claim covers the WHOLE pair. Releasing between warmup and measured allowed
     # another paid worker to interleave on the same config directory and invalidated the reading.

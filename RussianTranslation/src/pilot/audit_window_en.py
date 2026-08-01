@@ -380,9 +380,26 @@ def run_sense_dupes(mod, path):
 HARD = ('MISSING-EN', 'MISSING-SENSE', 'LS-LOSS', 'SAN-LOSS', 'AB-LOSS', 'IS-LOSS',
         'STRANDED-ANCHOR', 'ANCHOR-LEAK', 'ANCHOR-MISMATCH', 'SENSE-DUPE', 'DUP')
 
+# H2095 (#956): the HARD set split by WHAT EACH FLAG ACTUALLY FIRES ON — the enumeration #956
+# asked for, and the answer was yes, the #947 hazard reaches this lane too.
+#
+# ABSENCE-bearing: these fire because something is MISSING, so a card left incomplete by a dead
+# CALL trips them for a reason that is not its content. Six of the eleven — including SAN-LOSS,
+# which is literally the gate named in #947's RU harm.
+#
+# The rest (STRANDED-ANCHOR, ANCHOR-LEAK, ANCHOR-MISMATCH, SENSE-DUPE, DUP) fire on what the card
+# DOES say, and a dead call cannot manufacture them, so they stay defects on a partial card — the
+# EN twin of `fidelity_nulls` still overriding the RU exemption.
+ABSENCE_HARD = ('MISSING-EN', 'MISSING-SENSE', 'LS-LOSS', 'SAN-LOSS', 'AB-LOSS', 'IS-LOSS')
+
 
 def is_hard(flag):
     return any(flag.startswith(h) for h in HARD)
+
+
+def is_absence_hard(flag):
+    """True when a HARD flag fires on ABSENCE rather than on what the card says."""
+    return any(flag.startswith(h) for h in ABSENCE_HARD)
 
 
 def main():
@@ -440,11 +457,18 @@ def main():
                 null_keys.append(row.get('key') or '?')
                 continue
             totals['cards'] += 1
+            # H2095 (#956): the EN twin of #947. `headless_worker` stamps `partial_cause_infra`
+            # language-agnostically, so this lane can read the same marker. A card left incomplete
+            # because its CALL died must not be filed as a content defect on an ABSENCE flag —
+            # `requeue_defect` here feeds the same H304 fsha denylist, so the harm is identical.
+            # The flag is still counted and still reported; only defect MEMBERSHIP is skipped, and
+            # only for absence-bearing flags.
+            infra_partial = bool((res.get('card') or {}).get('partial_cause_infra'))
             for loc, fl in row['flags']:
                 base = fl.split('(')[0]
                 flag_counts[base] = flag_counts.get(base, 0) + 1
                 file_flags.append({'loc': loc, 'flag': fl})
-                if is_hard(fl):
+                if is_hard(fl) and not (infra_partial and is_absence_hard(fl)):
                     hard_keys.add(row['key'])
             totals['senses'] += sum(len(r.get('senses') or [])
                                     for r in (res.get('card') or {}).get('records') or [])

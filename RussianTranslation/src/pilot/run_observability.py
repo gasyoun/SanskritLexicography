@@ -29,6 +29,12 @@ ALLOWED = {
     # time vs time the CLI spent retrying internally (a rate-limited CLI hangs rather than
     # reporting 429, FINDINGS §270). Absent on any call that returned no envelope.
     'duration_api_ms', 'api_gap_ms',
+    # H2095 (#946): the ceiling THAT ACTUALLY JUDGED this reading. Without it a probe row cannot
+    # be read standalone — `PROBE_LATENCY_CEILING_MS` moved 30 000 -> 33 000 -> 65 000 in a single
+    # day (31-07) while the `policy` token stayed 'production_v1', and `probe_log.POLICIES` still
+    # maps that same token to 30 000. A row now carries its own ceiling instead of depending on a
+    # name whose meaning has drifted.
+    'latency_ceiling_ms',
 }
 
 # per-key relation events: kept for key<->call provenance / repeated-failure tracking, but
