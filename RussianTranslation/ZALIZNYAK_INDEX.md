@@ -48,71 +48,59 @@ Consonant subtypes (letter after `8`, by SLP1 final cluster):
 
 ## Stress scheme (S) — the Vedic accent axis
 
-Zaliszniak's a–f encode accent *mobility* across the whole paradigm. Sanskrit's full mobility
-(Whitney's hysterodynamic shifts, §317 etc.) needs the per-case Vedic paradigm, which our data
-does not carry per word. So we emit a **coarse, honest** accent on the *citation form* only,
-read from the udātta mark (`/` after the accented vowel in the accented key, e.g. `a/MSa` = áṃśa,
-`agni/` = agní):
+**Status (H2103, 01-08-2026):** full Whitney **a–f mobility** is emitted on every accented
+PWG headword. Implementation:
+[`RussianTranslation/src/nominal_grammar.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/nominal_grammar.py)
+(`_accent_scheme` + `_MATRIX_SCHEME` + `_LEXICAL_SCHEME`). Source matrix:
+[WhitneyRoots `crosswalk/accent_rules.json`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_rules.json)
+(19 cells). Validation (VedaWeb 2.0): **17/19 GO, 0 NO-GO**
+([WhitneyRoots PR #24](https://github.com/gasyoun/WhitneyRoots/pull/24) / H063;
+T8c polish [PR #29](https://github.com/gasyoun/WhitneyRoots/pull/29) / H115). Regenerated FAIR
+tables: `headword_index.tsv` · `reverse_paradigm_index.json` · `paradigm_stats.tsv`
+(98,639 indexed headwords; scheme counts on 01-08-2026 rebuild: `—` 80,014 · `a` 9,885 ·
+`b` 8,346 · `d` 349 · `c` 43 · `f` 2).
 
-- `a` = **barytone** — udātta not on the final stem vowel (accent stays on the stem). E.g. áṃśa.
-- `b` = **oxytone** — udātta on the final stem vowel (accent tends to move to endings in the
-  weak cases). E.g. agní, senā́, devá.
-- `—` = accent unrecorded (Classical headword, no Vedic accent). The common case.
+Letters keep Zaliznyak's spirit but follow Whitney's strong/middle/weakest mobility (not
+Russian sg/pl number mobility — see `schemes` in `accent_rules.json`):
 
-This is **not yet** Zaliznyak's full a–f mobility — it is a citation-accent flag (where the
-accent sits on the lemma), not how it moves across cases.
+- `a` = **fixed non-final** — accent stays on the lexically accented (non-final) stem syllable
+  through the paradigm (§315). Barytones of every stem class; root-ā monosyllables; ī/ū
+  root-compounds (-dhī́, -bhū́). E.g. áṃśa → `m·1a`.
+- `b` = **columnar-final** — accent stays on the stem-final syllable in its grades; shifts only
+  under fusion / semivowelization / ṛ→r / Vedic G.pl -nā́m (§§316–320, §372). Oxytone vowel
+  stems and non-syncopating oxytone consonant stems. E.g. agní → `m·3b`, devá → `m·1b`.
+- `c` = **fully mobile (hysterodynamic)** — strong on stem, all weak on ending (§317, §350,
+  §390). Monosyllabic ī/ū and radical consonant stems. E.g. bhū́ → `f·6c`, vā́c → `f·8√c`.
+- `d` = **weakest-mobile** — strong + middle on stem-final; only weakest cases shift (§318,
+  §423, §446). Oxytone -ant participles, oxytone an-stems, añc-stems. E.g. adánt → `m·8td*`,
+  ātmán → `m·8nd*`.
+- `f` = **lexically irregular** — lemma property, not class (gó §361c, nṛ́ §372, śván/yúvan
+  §427, …). See `lexical_exceptions` in `accent_rules.json`. E.g. gó → `m·8√f`.
+- `—` = accent unrecorded (Classical headword, no `/` in key2). Omitted from the compact
+  token. Still the common case (~81% of indexed headwords).
 
-### Vedic accent mobility (a–f) — the data IS in Whitney; this is an extraction task, not a missing source
+Join key: `(T-code, accent_position)` where `accent_position` is recomputed from key2 `/`
+(barytone / oxytone / monosyllable), not read from the old citation-only a/b letter.
 
-Correcting an earlier overstatement: it is **not** that "Whitney might supply it but our data
-can't." Both halves of the data already exist here:
+**Advisory only** — VedaWeb-derived / rule-predicted accent is never written into reviewed
+spine or app data (I/VI accent-collapse lesson). The index is a structured-grammar FAIR
+asset; translation portraits stay grammar-OFF per `NOMINAL_GRAMMAR_AB.md`.
 
-1. **The mobility RULES — in Whitney, already ingested** (`whitney_sections.json`, declension
-   ch. IV–V). The accent-in-declension rules are concrete and per-(stem-class, accent-position):
-   - **§§315–317** — change of accent affects monosyllables and final-accented stems; *"the
-     accent falls upon the ending in all the weak cases"* (`nāvā́, vācí, vākṣú`). The mobile scheme.
-   - **§318** — polysyllabic consonant stems shift only in the *weakest* cases; present participles
-     in -ánt: `tudatā́` but `tudátsu`.
-   - **§319** — polysyllabic stems in an accented short vowel *retain* the accent: `agnínā, agnáye`
-     (agní stays — a *fixed*, not mobile, scheme).
-   - Per-class accent paragraphs: **§350** (ī/ū monosyllables), **§372** (ṛ-stems), **§390**
-     (consonant monosyllables), **§423** (an-stems lose suffix á → tone to ending), **§446**
-     (final-accented in-stems shift in the weakest cases), **§314** (vocative → first syllable).
-2. **The per-word accent POSITION — in PWG, already in hand.** The udātta `/` in `key2`
-   (`agni/` = agní, `se/nA` = sénā) gives each lemma's lexical accent. Whitney's rules are
-   *conditioned* on exactly this (oxytone stems shift; barytone/retaining stems do not), so the
-   two compose.
+### Provenance of the axis (rules + validation already shipped before emission)
 
-**So the gap is encoding, not sourcing.** Build steps for the full a–f axis:
-- Hand-encode the ~10 Whitney accent rules above into a table keyed by (stem-class,
-  accent-position) → per-case accent pattern (strong / middle / weakest), i.e. the Zaliznyak
-  a–f scheme. This is the accent analog of the existing stem-class→§ concordance.
-- Join each word's accent position (`key2` `/`) with its stem-class rule → assign `a`–`f`.
-- Validate the generated accent paradigm against accented Vedic text. **Validation set PROBED +
-  CONFIRMED (2026-06-29): VedaWeb 2.0** — API live at `vedaweb.uni-koeln.de/api` (FastAPI, OpenAPI
-  at `/api/openapi.json`). `POST /api/search {"type":"quick","q":"<lemma>"}` returns hits with
-  per-resource highlights; the **accented word-split** comes from the Casaretto et al. (2025)
-  annotation resource `66695e4a14f6d337f7788740` (e.g. searching `agni` → RV 6.59.3 highlight
-  `… índrā; nú; agnī́; ávasā; ihá; vajríṇā; vayám; devā́` — udātta-marked, position-aligned).
-  Companion layers at the same locations: lemmatization `679b7da2d5b833a67f64b3f7`, Scarlata–Widmer
-  accented text `66695c4b14f6d337f778873f`, Lubotsky padapatha `668ba4460b5942c9849a8684`. Bulk:
-  `GET /api/resources/{id}/export`. So per lemma, collect all attested inflected+accented forms,
-  bucket by the Casaretto morphology (case/number), and compare to the generated paradigm — turnkey.
-  (Build note: the older legacy `/rigveda/api/search` is superseded by this 2.0 platform.)
-- _(superseded validation note retained for context): VedaWeb_ ([vedaweb.uni-koeln.de](https://vedaweb.uni-koeln.de), GitHub
-  [VedaWebProject/vedaweb](https://github.com/VedaWebProject/vedaweb)) — the accented Rigveda with
-  per-word UZH morphology (lemma/case/number/gender) and accent-sensitive search
-  (`rigveda/api/search`, `accents` param; ~10,522 stanzas), **CC BY 4.0**, and already linked to
-  CDSL via the **C-SALT APIs** (same integration as the org's Salt/Kosh work). It gives, per
-  attested RV word-form, the real case/number **and accent**, with a lemma to join back to PWG —
-  so a generated accent paradigm (e.g. predicted ins.sg `agnínā`) can be checked against the
-  attested form. This is in-ecosystem and redistributable; it removes the last blocker named above.
+1. **Rules** — Whitney §§315–320 / 350 / 372 / 390 / 423 / 446 / 314 encoded as the 18-rule
+   / 19-cell matrix in WhitneyRoots `accent_rules.json` (Fable 5, H018 / session S8).
+2. **Per-word accent position** — PWG `key2` udātta `/` (`agni/` = agní, `a/MSa` = áṃśa).
+3. **Validation** — VedaWeb 2.0 Casaretto accented word-split
+   (`66695e4a14f6d337f7788740`) + lemmatization layer; bulk feed under
+   [VisualDCS/non-derived/vedaweb/](https://github.com/gasyoun/VisualDCS/tree/main/non-derived/vedaweb).
+   Roadmap closeout:
+   [ROADMAP_VEDAWEB_REUSE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_VEDAWEB_REUSE.md)
+   (Phases 0–4 COMPLETE).
 
-**Honest limits** (why it is staged, not blocked): (a) the axis is **Vedic-only** — Classical
-headwords carry no recorded accent (`key2` has no `/`), so `—` stays the common value; (b) it is
-genuine philological encoding work (~10 rules + exception §§ like §350/§423), not a parse; (c) it
-needs the accented-RV validation set to trust the output. The current `a`/`b`/`—` citation flag
-is the honest interim; full a–f is the next concrete axis, with the source already on disk.
+Residual (not this emission): D3 ī/ū G.pl thin-n wider VedaWeb pull in WhitneyRoots
+`DECISIONS_NEEDED` / accent_validation `d3_genitive_plural_split` — measurement polish,
+does not block a–f letters on the GO cells.
 
 ## Flags (F)
 
