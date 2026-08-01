@@ -431,6 +431,39 @@ def classify_process(proc):
     return 'process', proc.returncode or 1
 
 
+def timeout_output_text(exc):
+    """Text drained from a killed child and attached to its ``TimeoutExpired`` by ``run_tree_kill``.
+
+    Empty string when nothing was captured (an older runner, or a stub that raises a bare
+    ``TimeoutExpired``), so every caller degrades to the historical 'timeout' classification."""
+    out = getattr(exc, 'output', None) or ''
+    err = getattr(exc, 'stderr', None) or ''
+    if isinstance(out, bytes):
+        out = out.decode('utf-8', 'replace')
+    if isinstance(err, bytes):
+        err = err.decode('utf-8', 'replace')
+    return out + '\n' + err
+
+
+def classify_timeout(exc):
+    """Classify a KILLED call from the output ``run_tree_kill`` attached to its ``TimeoutExpired``.
+
+    A rate-limited or unauthenticated Claude CLI does not exit with 429/401 — it retries internally
+    until our wall ceiling kills it (Uprava FINDINGS §270), so the provider's own message reaches
+    the pipeline only through the attached text. Without this, an account-level refusal is recorded
+    as a local `timeout` and the run keeps spending against a locked account.
+
+    Deliberately narrower than ``classify_process``: only ACCOUNT-level causes are promoted. A
+    `connection`-looking string in a killed call's output stays 'timeout', because the call really
+    did exceed the wall ceiling and 'connection' would claim more than the evidence supports."""
+    text = timeout_output_text(exc)
+    if AUTH_RE.search(text):
+        return 'authentication', EXIT_AUTH
+    if RATE_RE.search(text):
+        return 'rate_limit', EXIT_RATE_LIMIT
+    return 'timeout', EXIT_TIMEOUT
+
+
 def card_by_key(cards):
     out = {}
     for card in cards or []:
@@ -593,13 +626,24 @@ class HeadlessEngine:
             self.call_reservation.finalize(reservation, telemetry)
             self._accumulate_usage(telemetry)
             self.kill_timeouts += 1
+            # H2056 / #944: a rate-limited CLI HANGS rather than reporting 429 (FINDINGS §270), so
+            # this handler — not classify_process below — is where an account-level refusal actually
+            # lands. run_tree_kill now attaches the killed child's drained output (#943), so the
+            # cause is finally visible here. Route it into the SAME HardFailure path a non-hanging
+            # 429 takes: that is what makes the worker exit 21 and lets the orchestrator's existing
+            # is_rate_limited -> park + requeue_rate_limited fire. Without it the run continues
+            # against a locked account, returns all-null cards, and is recorded done/success.
+            classification, code = classify_timeout(exc)
             attempt = {'label': label, 'keys': keys, 'returncode': 124,
                        'elapsed_ms': int((time.monotonic() - started) * 1000),
-                       'classification': 'timeout'}
+                       'classification': classification}
             cleanup = getattr(exc, 'cleanup_trouble', None)
-            if cleanup:                                # D-J: diagnostic only; classification stays 'timeout'
+            if cleanup:                                # D-J: diagnostic only, about cleanup not cause
                 attempt['cleanup_trouble'] = cleanup
             self.attempts.append(attempt)
+            if classification != 'timeout':
+                # Account-level: stop the run. Every remaining call would hit the same wall.
+                raise HardFailure(classification, code, timeout_output_text(exc)[-2000:])
             return None, 'timeout'
         except BaseException:
             # Reservation authority is irreversible. A spawn/runner exception

@@ -10,6 +10,37 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — a rate-limited account no longer looks like a local timeout (H2063, issues #943 + #944, 01-08-2026, Opus 5 `claude-opus-5[1m]`)
+
+The first two fixes off the [H2056 review](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2056/H2056_CALL_PATH_REVIEW_2026-08.md).
+A rate-limited Claude CLI does not return 429 — it hangs until our wall ceiling kills it
+([Uprava FINDINGS §270](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)), and the pipeline
+had no way to tell that apart from a slow call.
+
+**[#943](https://github.com/gasyoun/SanskritLexicography/issues/943) — the signal was destroyed before any handler saw it.**
+[`proc_tree.run_tree_kill`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/proc_tree.py#L270)
+drained the tree-killed child's stdout/stderr into locals and re-raised the original
+`TimeoutExpired` carrying only `cleanup_trouble`, so the provider's own message died with the
+frame. It is now attached to the exception (`.output`/`.stderr`). This was the **root blocker**:
+wiring a classifier into either handler first would have classified an empty string.
+
+**[#944](https://github.com/gasyoun/SanskritLexicography/issues/944) — a hung 429 was recorded as `done`/`success`.**
+Both timeout handlers hardcoded `'timeout'`. New `classify_timeout()` reads the now-attached text
+and promotes an **account-level** cause (429/401) to the *existing* `HardFailure` path, so the
+worker exits 21, the run stops instead of spending into a locked account, and the orchestrator's
+long-standing `is_rate_limited` → `park` + `requeue_rate_limited` finally fires. The probe in
+[`max_account_orchestrator._probe_call`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/max_account_orchestrator.py#L1182)
+gets the same treatment — it was the only exit that skipped `_probe_err_class`.
+
+Deliberately **narrower than `classify_process`**: only account-level causes are promoted. A
+`connection`-looking string in a killed call stays `'timeout'`, because the call really did exceed
+the ceiling — so a slow window is never mistaken for a quota stall and falsely parked.
+
+Pinned by three new `headless_worker_selftest` cases (output actually attached; a hung 429 exits 21
+and would park; a non-account hang stays a plain timeout). Full pilot gate green, `window_selftest`
+194/194, LANG_PARITY 89 entries re-derived with no drift. **No ceiling was changed** — `#944`'s open
+question (is 180 s right, should repeated `kill_timeouts` park?) is left for a human, per H2056.
+
 ### Added — H2056 call/retry/classification path review (01-08-2026, Opus 5 `claude-opus-5[1m]`)
 
 [`pwg_ru/h2056/H2056_CALL_PATH_REVIEW_2026-08.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2056/H2056_CALL_PATH_REVIEW_2026-08.md)

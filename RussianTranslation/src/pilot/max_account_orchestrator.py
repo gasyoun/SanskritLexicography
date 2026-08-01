@@ -17,8 +17,8 @@ import sys
 import time
 
 from run_observability import append_event, write_census
-from headless_worker import (claude_argv_prefix, run_tree_kill, validate_preflight_artifact,
-                             windows_hidden_flags)
+from headless_worker import (claude_argv_prefix, run_tree_kill, timeout_output_text,
+                             validate_preflight_artifact, windows_hidden_flags)
 from window_common import atomic_write_text
 from execution_contract import (ActiveCallClaim, config_dir_fingerprint, validate_manifest,
                                 validate_profile)
@@ -1177,9 +1177,16 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
              '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
              '--model', model, '--permission-mode', 'plan'],
             input=prompt, env=env, text=True, encoding='utf-8', capture_output=True, timeout=300)
-    except subprocess.TimeoutExpired:
+    except subprocess.TimeoutExpired as exc:
         call_reservation.finalize(reservation, unevaluable_telemetry())
-        return int((time.monotonic() - started) * 1000), 'timeout', 0
+        # H2056 / #944: this was the ONLY exit from _probe_call that skipped _probe_err_class, so a
+        # rate-limited profile — which hangs instead of returning 429 (FINDINGS §270) — was reported
+        # as a bare 'timeout'. The gate then read that as a connection/process fault and sent the
+        # operator down a branch of the exclusion ladder that §266-271 already closed. run_tree_kill
+        # attaches the killed child's output (#943), so the provider's message is classifiable here;
+        # 'timeout' remains the fall-through when nothing account-level was said.
+        return (int((time.monotonic() - started) * 1000),
+                (_probe_err_class(timeout_output_text(exc)) or 'timeout'), 0)
     except BaseException:
         call_reservation.finalize(reservation, unevaluable_telemetry())
         raise
