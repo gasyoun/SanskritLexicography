@@ -508,6 +508,25 @@ def classify_harness_requeues(null_cards, partial_cards, gate_requeue, failure_r
     return transient, defect, fidelity_nulls
 
 
+def failure_reason_text(error):
+    """Normalise a row's `error` to TEXT at the audit boundary.
+
+    H2095: H2089 changed a bare null card's `row['error']` from a plain string to a structured
+    object (`{'failure_REASON': 'null_card_no_card_object', ...}`), but every consumer downstream
+    does string matching — `classify_harness_requeues` calls `.startswith('fidelity-reject')` on
+    it. The result was `AttributeError: 'dict' object has no attribute 'startswith'`, which crashes
+    the audit on ANY window containing a bare null card, so the transient-vs-defect split never
+    runs at all. Normalising once here beats teaching every call site both shapes.
+    """
+    if isinstance(error, dict):
+        for field in ('failure_REASON', 'failure-REASON', 'reason', 'error', 'message'):
+            value = error.get(field)
+            if isinstance(value, str) and value:
+                return value
+        return json.dumps(error, ensure_ascii=False, sort_keys=True)
+    return error if isinstance(error, str) else str(error)
+
+
 def collect_harness_quality(results):
     """Extract explicit partial-card and null-failure metadata from harness rows."""
     partial_cards, failure_reasons = {}, {}
@@ -528,7 +547,7 @@ def collect_harness_quality(results):
                 if card.get(name) is not None or row.get(name) is not None
             }
         if not card and row.get('error'):
-            failure_reasons[key] = row['error']
+            failure_reasons[key] = failure_reason_text(row['error'])
     return partial_cards, failure_reasons
 
 

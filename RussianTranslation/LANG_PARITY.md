@@ -110,7 +110,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "ad72df81bc7299a870edfdc67f6d81b45e4acfb1d79ea9976355c1e4b488da94",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -131,7 +131,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pwg_mask.py": "ad72df81bc7299a870edfdc67f6d81b45e4acfb1d79ea9976355c1e4b488da94",
       "src/pilot/prompt_rule_audit.py": "b235136ea95a7c77eb2cee0a3a6bc393c75df221ba587253a7949d9e3cbe4927",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -154,7 +154,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
       "src/pilot/headless_worker.py": "a754caf055c0592013311a299ed9d0d8c7c0c278693a7f583684050de0c52588",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -190,7 +190,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -209,7 +209,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -228,7 +228,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -347,12 +347,12 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "RESOLVED 2026-07-04 (was GAP, task_d29bb788): audited audit_window_en.py against all 3 fixes. (1) multi-layer over-count is N/A -- EN has no analogous raw-marker-vs-card-sense coverage check to carry the bug. (2) the Sanskrit-span leak is already safe -- audit_window_en.py's prose() already scrubs {#..#} spans before residue matching, unlike RU's pre-fix braced_gloss_risks. (3) a REAL EN analogue existed in DE-RESIDUE: 'des' is both a German article and a French partitive article, and gen_fidelity_judge_en.py's own prompt preserves French/Latin literals verbatim -- fixed by extracting LATIN_WORDS/FRENCH_WORDS into a new shared src/pilot/foreign_literal_guards.py imported by both prompt_rule_audit.py and audit_window_en.py, with a French-context guard on the ambiguous 'des' hit. Pinned by test_en_de_residue_french_guard in window_selftest.py. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU).",
+    "note": "RESOLVED 2026-07-04 (was GAP, task_d29bb788): audited audit_window_en.py against all 3 fixes. (1) multi-layer over-count is N/A -- EN has no analogous raw-marker-vs-card-sense coverage check to carry the bug. (2) the Sanskrit-span leak is already safe -- audit_window_en.py's prose() already scrubs {#..#} spans before residue matching, unlike RU's pre-fix braced_gloss_risks. (3) a REAL EN analogue existed in DE-RESIDUE: 'des' is both a German article and a French partitive article, and gen_fidelity_judge_en.py's own prompt preserves French/Latin literals verbatim -- fixed by extracting LATIN_WORDS/FRENCH_WORDS into a new shared src/pilot/foreign_literal_guards.py imported by both prompt_rule_audit.py and audit_window_en.py, with a French-context guard on the ambiguous 'des' hit. Pinned by test_en_de_residue_french_guard in window_selftest.py. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
       "src/audit_coverage.py": "a60b8c0ed3b0022a6527a029d1e818cedab3dfcbbb545fc2c78b6a5dd514dcfa",
       "src/pilot/prompt_rule_audit.py": "b235136ea95a7c77eb2cee0a3a6bc393c75df221ba587253a7949d9e3cbe4927",
-      "src/pilot/audit_window.py": "9ff16ae49ca0c9783a0499a479c4a31a87edd9f69e45812171d0fab94b8e5688",
+      "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec",
       "src/pilot/audit_window_en.py": "a6721309757d5eb6571174c9465bf4aacd2e646f905846973777f7f18b8e283f"
     }
   },
@@ -370,10 +370,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H1618 closed EN half (fsha emit + --write-requeue). H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. This entry is the one the fix is ABOUT: the H304 denylist harvests `frag_prov` fshas from `requeue_defect` membership, so an infrastructure-partial card wrongly in that set discarded the paid-for TM of fragments that had translated correctly. The denylist mechanism itself is untouched — only which cards reach it. **Stated rather than assumed, because this entry covers BOTH auditors:** the change lands in `audit_window.py` only. `audit_window_en.py` derives `requeue_defect` from `hard_keys` — content flags on rows it parsed — and models no partial card at all (`partial` does not appear in it), so it has no partial-vs-defect split to correct and the #947 defect cannot arise there in the same form. That is why this stays SHARED rather than becoming an INTENTIONAL-DIVERGENCE: the shared contract (defect membership drives the denylist) is unchanged on both lanes. **Open follow-up, not closed here:** whether an EN card left incomplete by the same dead call can still be hard-flagged for content it never produced is a DIFFERENT question about `is_hard` flag selection in the EN auditor, and was not investigated under #947 — see [#956](https://github.com/gasyoun/SanskritLexicography/issues/956). H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU).",
+    "note": "H1618 closed EN half (fsha emit + --write-requeue). H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. This entry is the one the fix is ABOUT: the H304 denylist harvests `frag_prov` fshas from `requeue_defect` membership, so an infrastructure-partial card wrongly in that set discarded the paid-for TM of fragments that had translated correctly. The denylist mechanism itself is untouched — only which cards reach it. **Stated rather than assumed, because this entry covers BOTH auditors:** the change lands in `audit_window.py` only. `audit_window_en.py` derives `requeue_defect` from `hard_keys` — content flags on rows it parsed — and models no partial card at all (`partial` does not appear in it), so it has no partial-vs-defect split to correct and the #947 defect cannot arise there in the same form. That is why this stays SHARED rather than becoming an INTENTIONAL-DIVERGENCE: the shared contract (defect membership drives the denylist) is unchanged on both lanes. **Open follow-up, not closed here:** whether an EN card left incomplete by the same dead call can still be hard-flagged for content it never produced is a DIFFERENT question about `is_hard` flag selection in the EN auditor, and was not investigated under #947 — see [#956](https://github.com/gasyoun/SanskritLexicography/issues/956). H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "Uprava/handoffs/archive/H304-Fable_RussianTranslation_coordinator-driver-remake_07.07.26.md (EN-emitter port is the recorded follow-up)",
     "verified_sha256": {
-      "src/pilot/audit_window.py": "9ff16ae49ca0c9783a0499a479c4a31a87edd9f69e45812171d0fab94b8e5688",
+      "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec",
       "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
       "src/pilot/requeue_from_audit.py": "511f4bb258a27bfd03a755e7512c2e25196fdbdd99e2aa5f712d68e082c2eb00",
       "src/pilot/audit_window_en.py": "a6721309757d5eb6571174c9465bf4aacd2e646f905846973777f7f18b8e283f"
@@ -431,7 +431,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -450,7 +450,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "a6721309757d5eb6571174c9465bf4aacd2e646f905846973777f7f18b8e283f",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -488,7 +488,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -547,7 +547,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
       "src/pilot/perf_preflight.py": "bc03b5b9878e526d3ffd9d2e5352bd1c1bcf69c8961ac37d673bafb9d6bf645b",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -576,9 +576,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/preflight_remaining_gates.py": "00386c837b97986c9702abfceed9c29534736c3df3063af202ddfaae6b078b8f",
       "src/release_readiness.py": "db38a870bbc8b5dbe694e706e4a7b9089ba41211a3881ad9a1bd4eb02950c8a9",
       "save_and_audit.py": "e1d7a3b6c5a8c47dbc414dbcf991e9ead82b76a013e4624cffe76066e576c8b6",
-      "src/pilot/audit_window.py": "9ff16ae49ca0c9783a0499a479c4a31a87edd9f69e45812171d0fab94b8e5688",
+      "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -597,7 +597,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/translation_memory.py": "e5014c7a872ca6c89458a052690de45576fae15e09094be72bfa7aa30b1d0b76",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -615,7 +615,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/corpus_gate.py": "323af2fa393955f320d534111a92cf14270bb78c1044252b5858e7c39e8047ea",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -634,7 +634,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/ls_resolver.py": "d7c8da35c6a420b9f9431dd1cb672ed12431e2b27830b9b560a60cff42509eec",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -764,7 +764,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/promote_lock.py": "f8dda14a7423dfecac77893f10f7735361db8bd6c79297172243aafaf1d28ef4",
       "src/promote_final_cards.py": "b270f276578444cd5a23c26743d62b79225b31c3783500ef2ddd31572718eefa",
       "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -785,11 +785,11 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H336 (08-07-2026). window_reports.write_reports/write_window_status already took an out_dir parameter (pre-existing --out-dir escape hatch); --window-tag is a thin, lang-agnostic sugar layer over that same parameter computed once in audit_window.py and threaded through unchanged to requeue_from_audit.py/root_window_status.py. Neither RU nor EN branch differently. Pinned by test_audit_window_tag_routing. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/audit_window.py": "9ff16ae49ca0c9783a0499a479c4a31a87edd9f69e45812171d0fab94b8e5688",
+      "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec",
       "src/pilot/requeue_from_audit.py": "511f4bb258a27bfd03a755e7512c2e25196fdbdd99e2aa5f712d68e082c2eb00",
       "src/pilot/root_window_status.py": "ab13516c5ffa824ddc45b2dc0d482c09f06de57d5963dcc31d73ecc638a116f3",
       "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -818,7 +818,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/layer_versions.py": "42e44f32db2628e3137522f5d15827cf0641b642bdacfdb76be04cdd41eaefba",
       "src/pilot/failure_capture.py": "c0ca940b54fc326e0a0b67320758c81aa5a48dd29247250996c38a85a7786e4d",
       "src/pilot/translation_memory.py": "e5014c7a872ca6c89458a052690de45576fae15e09094be72bfa7aa30b1d0b76",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -838,7 +838,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
       "src/annotation_report.py": "747f46c0c213b178cfeba22c04314696f4312a55eaf738d946dac08ead06c9d0",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -857,7 +857,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/coordinator.py": "f726ee7a66fa102f10a23412101fb1dfc36f3a7b8018df9cadbd8dde51482bde",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -894,7 +894,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/koch_xref.py": "b6b3c3524f446862a25cf0f086125d53977dabf02a26cc6724972d0a05c69013",
       "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -909,11 +909,11 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H405 (09-07-2026, PIPELINE_CAPABILITY_AUDIT W5 recommendation). Language-agnostic by construction: it compares markup/anchor STRUCTURE across the source↔translation pair and never inspects meaning, so the RU and EN editions are gated identically (the untranslatable spans it preserves — <ls>/{#…#}/<ab>/<is>/<lex>/<lang> and {Tn} — are the same in both). The only language-touching check, NO-RUSSIAN, keys on presence of ANY translation-script letters and is a non-blocking warning; the EN edition would swap the Cyrillic class for a Latin-prose check but the SHARED gate logic is unchanged. The pregate MODULE + the RU audit_window.py wiring shipped first; the EN audit_window_en.py wiring followed same-day via an in-process per-sense adapter (see stage2_pregate_en_wiring_h405, now SHARED) — that edition audits in-process (audit_sense), not via the .raw.txt/.merged.md subprocess file-pair model this gate reuses for RU. Pinned by stage2_pregate.py's own pure-function --selftest (11 cases + a masker-sync assertion; no store file IO, runs in CI). H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before.",
+    "note": "H405 (09-07-2026, PIPELINE_CAPABILITY_AUDIT W5 recommendation). Language-agnostic by construction: it compares markup/anchor STRUCTURE across the source↔translation pair and never inspects meaning, so the RU and EN editions are gated identically (the untranslatable spans it preserves — <ls>/{#…#}/<ab>/<is>/<lex>/<lang> and {Tn} — are the same in both). The only language-touching check, NO-RUSSIAN, keys on presence of ANY translation-script letters and is a non-blocking warning; the EN edition would swap the Cyrillic class for a Latin-prose check but the SHARED gate logic is unchanged. The pregate MODULE + the RU audit_window.py wiring shipped first; the EN audit_window_en.py wiring followed same-day via an in-process per-sense adapter (see stage2_pregate_en_wiring_h405, now SHARED) — that edition audits in-process (audit_sense), not via the .raw.txt/.merged.md subprocess file-pair model this gate reuses for RU. Pinned by stage2_pregate.py's own pure-function --selftest (11 cases + a masker-sync assertion; no store file IO, runs in CI). H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
       "src/stage2_pregate.py": "8f07422d3c416e32d1882f0777d56cc44ba781d19c8097fd9500ddefbfd22945",
-      "src/pilot/audit_window.py": "9ff16ae49ca0c9783a0499a479c4a31a87edd9f69e45812171d0fab94b8e5688"
+      "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec"
     }
   },
   {
@@ -952,7 +952,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/fri_xref.py": "6574a4cc3a10e0697dce552b3b3082418410500b8417818c712c5abb02037233",
       "src/annotate_evidence.py": "641a96e9b111737d8e93eb88a508480a2360acc12aeff59d05db0b4399a084ef",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -971,7 +971,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -990,7 +990,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -1010,7 +1010,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794",
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86",
       "src/pilot/classify_run.py": "6061958062ef7ae4b673aa77b2f2c9823663d8d083a61a792fabfbefb732fb71"
     }
   },
@@ -1032,7 +1032,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/agent_budget.py": "9683c7c24903b95e39e85839d64e4623ebe68dda1271f0cf85ec60c19251cb61",
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -1091,7 +1091,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
       "src/pilot/boundedparallel_test.js": "3d768f874e13607e235e55f9300771dabd25f6173e256001e956150ce9b33401",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -1152,7 +1152,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
       "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
       "src/pilot/harvest_launch_stats.py": "751f4089cc2cbff3354d0f5b9506268a4ddd82e1c0f654755ffc88a11b8b6f3b",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -1171,7 +1171,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -1194,9 +1194,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/sense_count.py": "e3ad886f8751f5e5ef877bf96219140bc5c8ccca5b02bb2e33f7f6620ec5db2c",
       "src/_pilot_gen_merged.py": "0c350f3ddfb9d33edf04e7e1a9fd88939ffa886066f05116e959255b29fa381f",
-      "src/pilot/audit_window.py": "9ff16ae49ca0c9783a0499a479c4a31a87edd9f69e45812171d0fab94b8e5688",
+      "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec",
       "src/pilot/audit_window_en.py": "a6721309757d5eb6571174c9465bf4aacd2e646f905846973777f7f18b8e283f",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -1218,7 +1218,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
       "src/pilot/sense_count.py": "e3ad886f8751f5e5ef877bf96219140bc5c8ccca5b02bb2e33f7f6620ec5db2c",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794",
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86",
       "src/pilot/accept_sensecount_test.js": "fbf8d37f8ae360c286f646361025d56adb0caeff09da30a0abfef5f6b7289937"
     }
   },
@@ -1238,7 +1238,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/cohort_clean_rates.py": "1d2a1da68eb4e897422696ec42c7845cecf9e94a2a0b8a587f8a68d3b44bfb7e",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -1293,7 +1293,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "a6721309757d5eb6571174c9465bf4aacd2e646f905846973777f7f18b8e283f",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -1449,8 +1449,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/ru_style_sweep.py": "097e3780bfaac430741391514b3209c22fcf1f1cd7f473623a8fd18477e914a0",
-      "src/pilot/audit_window.py": "9ff16ae49ca0c9783a0499a479c4a31a87edd9f69e45812171d0fab94b8e5688",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794",
+      "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec",
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86",
       "src/pilot/prompt_rule_audit.py": "b235136ea95a7c77eb2cee0a3a6bc393c75df221ba587253a7949d9e3cbe4927",
       "src/pilot/run_pilot_wf.js": "b194ceb034b458ffc470e7feb2d9c921c6f391c88088e7f05a00a1e790bcf7a4"
     }
@@ -1701,7 +1701,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/coordinator.py": "f726ee7a66fa102f10a23412101fb1dfc36f3a7b8018df9cadbd8dde51482bde",
       "src/promote_final_cards.py": "b270f276578444cd5a23c26743d62b79225b31c3783500ef2ddd31572718eefa",
       "src/promote_lock.py": "f8dda14a7423dfecac77893f10f7735361db8bd6c79297172243aafaf1d28ef4",
-      "src/pilot/audit_window.py": "9ff16ae49ca0c9783a0499a479c4a31a87edd9f69e45812171d0fab94b8e5688",
+      "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec",
       "src/pilot/window_common.py": "3a8a51917c9b898d9b3d262aaf9339e14fb30cddbb507242266858aec8727331",
       "src/pilot/dashboard_events.py": "f28f4a42568479f16d759d5e6aa63f4066c4e54920555102f77c2b0b9311bae6",
       "src/pilot/window_provenance.py": "2f1240e321004228d94f6bea7ae661a896c4bc93c60f9d47871d248766900d50",
@@ -1728,10 +1728,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "https://github.com/gasyoun/Uprava/blob/main/handoffs/H1553-Opus_RussianTranslation_rt-fullaudit-w1-a-h1403-residues_23.07.26.md",
     "verified_sha256": {
       "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
-      "src/pilot/audit_window.py": "9ff16ae49ca0c9783a0499a479c4a31a87edd9f69e45812171d0fab94b8e5688",
+      "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec",
       "src/pilot/dashboard_events.py": "f28f4a42568479f16d759d5e6aa63f4066c4e54920555102f77c2b0b9311bae6",
       "src/promote_final_cards.py": "b270f276578444cd5a23c26743d62b79225b31c3783500ef2ddd31572718eefa",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794",
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86",
       "src/pilot/audit_window_en.py": "a6721309757d5eb6571174c9465bf4aacd2e646f905846973777f7f18b8e283f"
     }
   },
@@ -1839,8 +1839,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "RU-only BY CONSTRUCTION, not by omission (26-07-2026, Opus 5 `claude-opus-5[1m]`, landed from the Codex hardening branch). The EN twin `audit_window_en.py` runs no threaded gate at all -- zero ThreadPoolExecutor/future.result occurrences -- and carries no NWS quarantine (0 occurrences of apply_nws_quarantine vs 2 on the RU lane), so NEITHER hardened mechanism exists on EN. There is nothing to port: not a GAP (no EN behaviour is missing) and not SHARED (the code is not shared). If the EN lane ever adopts threaded gates or NWS quarantine, this entry must be revisited and both guards carried across. Pinned by window_selftest.test_threaded_gate_exception_requeues_full_window and test_quarantine_replace_failure_preserves_previous_destination. H1957 (30-07-2026, Opus 5 `claude-opus-5[1m]`): incidental re-stamp only. H1957 replaced coordinator.run_audit's daemon thread with a subprocess, which is a DIFFERENT thread than this entry's subject — the ThreadPoolExecutor gate loop lives inside audit_window.py, which H1957 does not touch and which still runs its gates threaded (now within the audit subprocess). Both pinned tests are untouched and still pass, so the INTENTIONAL-DIVERGENCE ruling is unaffected. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "codex/rt-pipeline-hardening-speed",
     "verified_sha256": {
-      "src/pilot/audit_window.py": "9ff16ae49ca0c9783a0499a479c4a31a87edd9f69e45812171d0fab94b8e5688",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec",
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   },
   {
@@ -1940,14 +1940,14 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H1811",
     "verified_sha256": {
       "src/pilot/coordinator.py": "f726ee7a66fa102f10a23412101fb1dfc36f3a7b8018df9cadbd8dde51482bde",
-      "src/pilot/audit_window.py": "9ff16ae49ca0c9783a0499a479c4a31a87edd9f69e45812171d0fab94b8e5688",
+      "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec",
       "src/_pilot_collect.py": "76245fbea2bed2e136fd82acc0d1e00688de7335a7d1db35ed52b46f8fcb44c3",
       "src/audit_translation.py": "c38661123456c363688a5de37c1ed166b7aa9f6a8811811a67e76724858e027a",
       "src/root_glue_translated.py": "3c9c40c085861240d6089001706781922949f3575f1fa64dc9fcddcc9f3a2ebb",
       "src/pilot/window_common.py": "3a8a51917c9b898d9b3d262aaf9339e14fb30cddbb507242266858aec8727331",
       "src/pipeline_version.py": "b461d0c78b5df3f598007eb1e7ee284d84596ae19b5106d5329fdab1a93f00be",
       "src/pilot/h1339_offline_bench.py": "970ad8ab948c4aae724efc2076883e21a5bfc7e203ed1c68b5fbb14f3bdbb8cd",
-      "src/pilot/window_selftest.py": "358a22d084f0ed4f39f8a6979501098bb3e3e02c2163a7bca27d234dcf4dc794"
+      "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
   }
 ]
