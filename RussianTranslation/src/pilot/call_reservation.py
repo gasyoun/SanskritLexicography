@@ -16,6 +16,17 @@ import uuid
 SCHEMA = 'pwg.call_reservation.v1'
 TOKEN_FIELDS = ('input_tokens', 'output_tokens', 'cache_read_tokens',
                 'cache_creation_tokens', 'subagent_tokens')
+# H2079 / #945: the CLI result envelope's OWN timings, recorded beside the tokens. Wall clock alone
+# cannot say whether a slow call was a slow route or an in-CLI retry storm (a rate-limited CLI hangs
+# rather than reporting 429 — Uprava FINDINGS §270), which is what made the 15-07 / 16-07 / 31-07 c4
+# readings unusable as route evidence and left a published "~65 s CLI startup" claim untestable.
+# `duration_api_ms` is the discriminator, and it was already sitting in the envelope, parsed and
+# discarded one line away.
+#
+# OPTIONAL and OMITTED when absent — never emitted as an explicit None. `_read()` re-validates every
+# stored item and `finalize()` compares an already-finalized item against a freshly normalized one,
+# so a ledger written before this change must round-trip byte-identically or those invariants trip.
+DURATION_FIELDS = ('duration_ms', 'duration_api_ms')
 
 
 def _valid_number(value):
@@ -42,6 +53,16 @@ def normalize_telemetry(value):
     if evaluable and 'observed_cost_usd' not in value:
         raise ValueError('evaluable telemetry requires observed_cost_usd')
     out['observed_cost_usd'] = cost
+    # H2079 / #945: carried only when the envelope actually reported them, so pre-H2079 ledgers
+    # normalize to exactly the bytes they already hold. Validated like any other number, but a bad
+    # timing never affects `cost_evaluable` — evaluability is a statement about COST, and demoting a
+    # run because a duration was malformed would be a new, unrelated failure mode.
+    for name in DURATION_FIELDS:
+        if value.get(name) is None:
+            continue
+        if not _valid_number(value[name]):
+            raise ValueError('%s must be finite, non-negative and non-boolean' % name)
+        out[name] = value[name]
     return out
 
 
@@ -75,6 +96,13 @@ def telemetry_from_cli_wrapper(wrapper):
         cost = 0
     values['observed_cost_usd'] = cost
     values['cost_evaluable'] = valid
+    # H2079 / #945: the envelope's own timings, deliberately read AFTER `valid` is settled and never
+    # folded into it. A missing/garbage duration leaves the call fully cost-evaluable; it just means
+    # this particular reading cannot be decomposed into route time vs in-CLI backoff.
+    for name in DURATION_FIELDS:
+        raw = wrapper.get(name)
+        if _valid_number(raw):
+            values[name] = raw
     return normalize_telemetry(values)
 
 

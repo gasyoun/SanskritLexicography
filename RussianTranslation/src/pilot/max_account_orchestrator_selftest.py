@@ -1553,7 +1553,70 @@ def main():
             m.coordinator_command = original_command
     print('  record-done: hash+run forwarded; substitution refused; batch partial prefix exact')
 
+    _test_h2079_945_probe_emits_api_time()
     print('max_account_orchestrator_selftest: PASS')
+
+
+def _test_h2079_945_probe_emits_api_time():
+    """H2079 / #945: the probe records API time and the wall-minus-API gap beside the wall reading.
+
+    The gate still decides on `elapsed_ms` — nothing here changes what passes. The point is that a
+    reading becomes DECOMPOSABLE after the fact: a 78 s wall reading that spent 13 s at the API was
+    measuring in-CLI backoff, not the route, and the whole c4 series lacked the field that says so.
+    """
+    import max_account_orchestrator as m
+    import run_observability as obs
+
+    _rtk = m.run_tree_kill
+    _pc = m._probe_call
+    try:
+        # An envelope reporting a large wall/API divergence — the §270 shape.
+        wrapper = ('{"type":"result","subtype":"success","is_error":false,'
+                   '"structured_output":{"ok":true},"total_cost_usd":0.29,'
+                   '"duration_ms":78415,"duration_api_ms":12987}')
+        m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(
+            returncode=0, stdout=wrapper, stderr='')
+        timing = {}
+        _lat, cls, _ob = m._probe_call(
+            'cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+            call_reservation=MemoryCallLedger(), timing_out=timing)
+        assert cls == 'success', cls
+        assert timing == {'duration_ms': 78415, 'duration_api_ms': 12987}, timing
+
+        # end to end through live_probe's event emission
+        with tempfile.TemporaryDirectory() as td:
+            ev = os.path.join(td, 'e.jsonl')
+
+            def _mock(config_dir, claude, payload_bytes, model, *_args, **_kwargs):
+                out = _kwargs.get('timing_out')
+                if out is not None:
+                    out.update({'duration_ms': 40000, 'duration_api_ms': 12987})
+                return 40000, 'success', 120
+            m._probe_call = _mock
+            m.live_probe('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                         latency_ceiling_ms=65000, events_path=ev, run_id='h2079',
+                         account='c4', call_reservation=MemoryCallLedger())
+            rows = [json.loads(line) for line in open(ev, encoding='utf-8') if line.strip()]
+            measured = [r for r in rows if r.get('purpose') == 'measured']
+            assert len(measured) == 1, rows
+            row = measured[0]
+            assert row['elapsed_ms'] == 40000, row          # the gated number is UNCHANGED
+            assert row['duration_api_ms'] == 12987, row
+            assert row['api_gap_ms'] == 27013, row          # 40000 - 12987
+            assert {'duration_api_ms', 'api_gap_ms'} <= obs.ALLOWED
+
+            # a probe that yields no envelope must emit NEITHER key (not an explicit null)
+            ev2 = os.path.join(td, 'e2.jsonl')
+            m._probe_call = lambda *a, **k: (30000, 'success', 120)   # populates no timing_out
+            m.live_probe('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                         latency_ceiling_ms=65000, events_path=ev2, run_id='h2079',
+                         account='c4', call_reservation=MemoryCallLedger())
+            bare = [json.loads(line) for line in open(ev2, encoding='utf-8') if line.strip()]
+            assert all('duration_api_ms' not in r and 'api_gap_ms' not in r for r in bare), bare
+    finally:
+        m.run_tree_kill = _rtk
+        m._probe_call = _pc
+    print('  H2079 #945: probe emits duration_api_ms + api_gap_ms; ceiling still gates elapsed_ms')
 
 
 if __name__ == '__main__':
