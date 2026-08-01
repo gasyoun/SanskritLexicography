@@ -5848,6 +5848,34 @@ def test_partial_cards_requeue_and_stay_out_of_clean_sample():
              sample['clean_sample_keys'])
 
 
+def test_h2095_956_en_absence_flags_exempt_infra_partial():
+    """H2095 / #956: the EN twin of #947, and the answer to the question #947 left open.
+
+    The EN auditor has no partial-card model and derives defects from HARD content flags. Six of
+    the eleven fire on ABSENCE (MISSING-EN, MISSING-SENSE, LS-LOSS, SAN-LOSS, AB-LOSS, IS-LOSS) —
+    SAN-LOSS being literally the gate named in #947's RU harm — so a card left incomplete by a dead
+    CALL trips them and lands in the same H304 fsha denylist. The other five fire on what the card
+    DOES say and must stay defects even on a partial card.
+    """
+    import audit_window_en as en
+
+    for flag in ('MISSING-EN', 'MISSING-SENSE', 'LS-LOSS', 'SAN-LOSS', 'AB-LOSS', 'IS-LOSS'):
+        if not (en.is_hard(flag) and en.is_absence_hard(flag)):
+            fail('%s must be both HARD and absence-bearing' % flag)
+    for flag in ('STRANDED-ANCHOR', 'ANCHOR-LEAK', 'ANCHOR-MISMATCH', 'SENSE-DUPE', 'DUP'):
+        if not en.is_hard(flag):
+            fail('%s must stay HARD' % flag)
+        if en.is_absence_hard(flag):
+            fail('%s fires on content, not absence — exempting it would hide a real defect' % flag)
+    # the split must cover the HARD set exactly, so a new HARD flag cannot silently default
+    # into the exempt half
+    if not set(en.ABSENCE_HARD) <= set(en.HARD):
+        fail('ABSENCE_HARD drifted outside HARD: %r' % (en.ABSENCE_HARD,))
+    # suffixed forms (the real flags carry "(...)" detail) classify identically
+    if not en.is_absence_hard('SAN-LOSS(3 spans)') or en.is_absence_hard('DUP(x2)'):
+        fail('suffixed flag classification drifted')
+
+
 def test_h2077_947_infra_partial_is_not_a_content_defect():
     """H2077 / #947: a card left partial because its heal CALL died must not be filed as a
     content defect — that denylists a healthy card and discards its translated fragments' TM.
@@ -8491,6 +8519,7 @@ def main():
         test_run_telemetry_counters_returned,
         test_partial_cards_requeue_and_stay_out_of_clean_sample,
         test_h2077_947_infra_partial_is_not_a_content_defect,
+        test_h2095_956_en_absence_flags_exempt_infra_partial,
         test_classify_run_verdicts,
         test_grammar_field_restore_behavioral,
         test_threaded_gate_exception_requeues_full_window,

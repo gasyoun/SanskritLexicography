@@ -1604,6 +1604,16 @@ def _test_h2079_945_probe_emits_api_time():
             assert row['duration_api_ms'] == 12987, row
             assert row['api_gap_ms'] == 27013, row          # 40000 - 12987
             assert {'duration_api_ms', 'api_gap_ms'} <= obs.ALLOWED
+            # H2095 (#946): the row records the ceiling THAT JUDGED IT, so it can be read
+            # standalone. `policy` alone cannot: the token stayed 'production_v1' across
+            # 30000 -> 33000 -> 65000 on 31-07, and probe_log.POLICIES still maps that same
+            # token to 30000 — two gates, one name, a 2.2x disagreement.
+            assert row['latency_ceiling_ms'] == 65000, row
+            assert 'latency_ceiling_ms' in obs.ALLOWED
+            import probe_log
+            assert probe_log.POLICIES['production_v1']['latency_ceil_ms'] != m.PROBE_LATENCY_CEILING_MS, (
+                'the two ceilings agree now — reconcile probe_log.POLICIES and drop this pin '
+                'plus the divergence warning above it')
 
             # a probe that yields no envelope must emit NEITHER key (not an explicit null)
             ev2 = os.path.join(td, 'e2.jsonl')

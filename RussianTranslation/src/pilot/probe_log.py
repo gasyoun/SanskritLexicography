@@ -46,6 +46,17 @@ PAYLOAD_FLOOR_BYTES = 5 * 1024
 
 KINDS = ('warmup', 'launch', 'abort')
 VERDICTS = ('GO', 'NO-GO')
+# ⚠️ H2095 (#946) — TWO GATES, ONE POLICY NAME, DIFFERENT CEILINGS. This table's
+# `production_v1` latency ceiling is 30 000 ms and is NOT the ceiling the live dispatch gate
+# uses: `max_account_orchestrator.PROBE_LATENCY_CEILING_MS` was raised 30 000 -> 33 000 -> 65 000
+# on 31-07-2026 and the policy token was never bumped, so both gates stamp rows `production_v1`
+# while disagreeing by 2.2x. A 50 000 ms reading PASSES live_probe and FAILS verdict_for() here.
+#
+# Deliberately NOT unified in H2095: reconciling them means choosing a ceiling, and H2056 reserved
+# that for a human — the 65 000 value is itself suspect (calibrated partly against rate-limit
+# backoff, FINDINGS §270) and re-deriving it needs readings paired with a same-moment quota check.
+# Until then, trust a row's own recorded `latency_ceiling_ms` (emitted since H2095) over this
+# table, and treat a `policy` token alone as insufficient provenance.
 POLICIES = {
     'production_v1': {'latency_ceil_ms': 30_000, 'conn_error_ceil': 0,
                       'payload_floor_bytes': PAYLOAD_FLOOR_BYTES,
