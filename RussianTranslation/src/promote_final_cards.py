@@ -1675,6 +1675,10 @@ def main():
                          'translated sub-cards not in this run). Use for a per-root catch-up — the '
                          'default full overwrite WIPES any root whose wf_output file is no longer '
                          'on disk (the gam-RU loss mode).')
+    ap.add_argument('--allow-raw-default-merge', action='store_true',
+                    help='H2089: override the refuse of --merge into the default pwg_ru store '
+                         'without --promotion-id. Prefer coordinator journaled --batch-manifest. '
+                         'Env twin: PWG_ALLOW_RAW_MERGE_DEFAULT_STORE=1.')
     ap.add_argument('--steal-lock', action='store_true',
                     help='H336/H-1: bypass a live promotion claim on --store unconditionally. Only '
                          'for a claim you are certain is dead (crashed run) — no PID-liveness check '
@@ -1734,8 +1738,10 @@ def main():
             sys.exit(str(e))
         return report
 
-    if args.journal or args.promotion_id:
-        sys.exit('REFUSED: --journal/--promotion-id currently require --batch-manifest')
+    if args.journal and not args.batch_manifest:
+        sys.exit('REFUSED: --journal currently requires --batch-manifest')
+    # --promotion-id alone is allowed as the H2089 coordinator-intent token for
+    # single-mode --merge into the default store (no journal write in that path).
 
     if args.ready_partial_report:
         try:
@@ -1760,6 +1766,24 @@ def main():
         sys.exit(
             'refusing --merge with the implicit broad glob %r; pass --glob explicitly '
             '(normally src/pilot/output/wf_output.<window>.json)' % DEFAULT_GLOB)
+    # H2089: single-mode --merge into the LIVE default store without a promotion id
+    # is a coordinator bypass (silent route around journaled batch_promote). Refuse
+    # unless override flag/env is set.
+    if args.merge and not args.dry_run:
+        _def = os.path.normpath(os.path.abspath(DEFAULT_STORE))
+        _tgt = os.path.normpath(os.path.abspath(args.store))
+        if _tgt == _def:
+            override = (
+                args.allow_raw_default_merge
+                or os.environ.get('PWG_ALLOW_RAW_MERGE_DEFAULT_STORE') == '1'
+            )
+            if not args.promotion_id and not override:
+                sys.exit(
+                    'REFUSED: --merge into default pwg_ru store without --promotion-id '
+                    '(H2089 route-bypass). Use coordinator --batch-manifest + --journal, '
+                    'or pass --promotion-id, or --allow-raw-default-merge / '
+                    'PWG_ALLOW_RAW_MERGE_DEFAULT_STORE=1'
+                )
     try:
         validate_store_target(args.store, args.init_store)
     except PromotionContractError as exc:
