@@ -1218,6 +1218,110 @@ def test_h2056_944_plain_hang_still_classifies_as_timeout():
     print('  H2056 #944: a non-account hang stays a plain timeout (no false park)')
 
 
+def test_h2091_948_infra_stop_is_not_a_content_verdict():
+    """H2091 / #948 (Q3-F2): a heal lane that died because the CALL died must say so.
+
+    `_selfheal_stop_reason` tested only for `budget_exceeded:*`, so a `timeout` fell through to
+    `selfheal-nothing-resolved` — a CONTENT verdict, and the only per-key cause an operator or any
+    downstream tool ever sees (`row['error']`, `summary['failures'][k]`,
+    `report['failure_reasons'][k]`). The typed reason survived only on the discarded fragment keys.
+
+    H2a's argument was never budget-specific; this widens it to any typed infrastructure class
+    while leaving a genuine content failure's verdict untouched.
+    """
+    for reason in ('timeout', 'budget_exceeded:heal', 'rate_limit',
+                   'authentication', 'connection'):
+        m = _h2a_presplit_manifest(key='agni', fragments=2, served_empty=True)
+        engine = _h2a_engine(m)
+        engine.failures['agni_f0'] = reason
+        assert engine.self_heal('agni') is None
+        assert engine.failures['agni'] == reason, (reason, engine.failures['agni'])
+
+    # content failures keep the historical verdict — that string must keep meaning
+    # "the model answered and nothing usable came back"
+    for reason in ('fragment-fidelity-reject', 'missing-or-mismatched-fragment-key',
+                   'malformed_output:boom'):
+        m = _h2a_presplit_manifest(key='agni', fragments=2, served_empty=True)
+        engine = _h2a_engine(m)
+        engine.failures['agni_f0'] = reason
+        assert engine.self_heal('agni') is None
+        assert engine.failures['agni'] == 'selfheal-nothing-resolved', (
+            reason, engine.failures['agni'])
+
+    # infra wins over content regardless of which fragment index carries it, and the
+    # ascending-NUMERIC precedence from H2a is preserved
+    m = _h2a_presplit_manifest(key='agni', fragments=2, served_empty=True)
+    engine = _h2a_engine(m)
+    engine.failures['agni_f0'] = 'fragment-fidelity-reject'
+    engine.failures['agni_f1'] = 'timeout'
+    assert engine.self_heal('agni') is None
+    assert engine.failures['agni'] == 'timeout', engine.failures['agni']
+
+    # RANKED, not flat: a budget stop outranks any other infra reason even from a HIGHER
+    # index. A flat "first infra wins" would let this timeout mask the budget stop and
+    # silently repeal H2a — the exact regression this widening risked.
+    ranked = _h2a_engine(_h2a_presplit_manifest(key='agni', fragments=12, served_empty=True))
+    ranked.failures.update({'agni_f1': 'timeout', 'agni_f2': 'budget_exceeded:heal'})
+    assert ranked.self_heal('agni') is None
+    assert ranked.failures['agni'] == 'budget_exceeded:heal', ranked.failures['agni']
+    # ...and the lowest-index budget stop still wins among budget stops (H2a, _f2 before _f10)
+    ranked2 = _h2a_engine(_h2a_presplit_manifest(key='agni', fragments=12, served_empty=True))
+    ranked2.failures.update({'agni_f1': 'timeout', 'agni_f2': 'budget_exceeded:heal',
+                             'agni_f10': 'budget_exceeded:max_calls'})
+    assert ranked2.self_heal('agni') is None
+    assert ranked2.failures['agni'] == 'budget_exceeded:heal', ranked2.failures['agni']
+    print('  H2091 #948: a dead heal call reports its typed infra cause, not a content verdict '
+          '(ranked: budget stop still outranks it)')
+
+
+def test_h2091_948_account_refusal_aborts_before_any_bisect():
+    """H2091 / #948 (Q3-F3): an ACCOUNT-level refusal must not be re-attributed to card density.
+
+    The whole-card lane bisects a failed batch on purpose — "isolate the slow one", the JS twin
+    does the same deliberately — so bisecting after a plain timeout is CORRECT and is left alone.
+    It was only wrong when the timeout was really the account refusing, because then every half is
+    a further doomed paid call.
+
+    H2063 closed that by promoting an account-level cause to HardFailure, which `resolve_group`
+    does not catch. This pins it on a MULTI-key batch, where the bisect is actually reachable, so
+    the guarantee cannot regress silently.
+    """
+    m = manifest()
+    m['meta'] = dict(m['meta'], selected_keys=['a', 'b', 'c', 'd'])
+    m['batches'] = [['a', 'b', 'c', 'd']]          # one batch of 4 -> bisect is reachable
+    for k in ('a', 'b', 'c', 'd'):
+        m['inputs'][k] = m['inputs']['agni']
+        m['placeholder_maps'][k] = m['placeholder_maps']['agni']
+
+    def hung_429(argv, **kwargs):
+        hung_429.n += 1
+        exc = subprocess.TimeoutExpired(argv, 180)
+        exc.output = ''
+        exc.stderr = 'Claude API error: 429 usage limit reached'
+        raise exc
+    hung_429.n = 0
+
+    payload, status, code = execute(m, hung_429)
+    assert code == h.EXIT_RATE_LIMIT, code
+    assert status['classification'] == 'rate_limit', status['classification']
+    assert payload is None
+    assert hung_429.n == 1, (
+        'account refusal was re-attributed to card density and bisected into %d paid calls'
+        % hung_429.n)
+
+    # ...while a plain (non-account) timeout still bisects — deliberate, twin-parity behaviour
+    def hung_plain(argv, **kwargs):
+        hung_plain.n += 1
+        raise subprocess.TimeoutExpired(argv, 180)
+    hung_plain.n = 0
+    _payload2, status2, code2 = execute(m, hung_plain)
+    assert code2 == 0, code2
+    assert status2['classification'] != 'rate_limit', status2['classification']
+    assert hung_plain.n > 1, (
+        'a plain timeout must still bisect to isolate a slow card (got %d call(s))' % hung_plain.n)
+    print('  H2091 #948: account refusal aborts at 1 call; a plain timeout still bisects')
+
+
 def main():
     payload, status, code = execute(manifest(), success_runner)
     assert code == 0 and status['classification'] == 'success'
@@ -1469,6 +1573,8 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_h2056_943_tree_kill_attaches_drained_output()
     test_h2056_944_hung_rate_limit_is_not_recorded_as_success()
     test_h2056_944_plain_hang_still_classifies_as_timeout()
+    test_h2091_948_infra_stop_is_not_a_content_verdict()
+    test_h2091_948_account_refusal_aborts_before_any_bisect()
     print('headless_worker_selftest: PASS')
 
 

@@ -10,6 +10,37 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed — a dead heal call no longer reports itself as a content verdict (H2091, issue #948, 01-08-2026, Opus 5 `claude-opus-5[1m]`)
+
+`_selfheal_stop_reason` tested only for `budget_exceeded:*`, so a `timeout` fell through to
+`selfheal-nothing-resolved` — a **content** verdict, and the only per-key cause an operator or any
+downstream tool ever sees (`row['error']`, `summary['failures'][key]`,
+`report['failure_reasons'][key]`). The typed reason survived only on the discarded
+`<key>_f<i>` fragment keys.
+
+H2a's argument was never budget-specific: a heal lane that died because the **call** died is a
+transient infrastructure stop whatever killed it. The test is now **ranked**, not flat:
+
+1. the first `budget_exceeded:*` — H2a's invariant, deliberately unchanged;
+2. failing that, the first other typed infrastructure reason (`is_infra_failure`) — new;
+3. failing that, the historical `selfheal-nothing-resolved`.
+
+**The ranking is the fix, not an implementation detail.** A flat "first infra wins" lets a
+low-index `timeout` mask a budget stop and silently repeals H2a — caught by
+`test_h2a_precedence_is_deterministic_and_budget_stays_observable` during this work, and now pinned
+from both directions.
+
+**Q3-F3 of the same issue needed no change and was verified rather than assumed.** The whole-card
+lane bisects a failed batch *on purpose* — "isolate the slow one", and the JS twin does the same
+deliberately — so bisecting after a plain timeout is correct. It was only wrong when the timeout was
+really the account refusing, and H2063 already closed that by promoting an account-level cause to
+`HardFailure`, which `resolve_group` does not catch. Now pinned on a **multi-key** batch (where the
+bisect is actually reachable): an account refusal stops at exactly **one** call, while a plain
+timeout still bisects.
+
+Genuine content failures keep `selfheal-nothing-resolved` exactly as before — that string must keep
+meaning "the model answered and nothing usable came back". LANG_PARITY 89 entries with 5 re-derived.
+
 ### Added — `duration_api_ms` is captured, so a latency reading can be decomposed (H2079, issue #945, 01-08-2026, Opus 5 `claude-opus-5[1m]`)
 
 The measurement-integrity fix from the [H2056 review](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2056/H2056_CALL_PATH_REVIEW_2026-08.md),
