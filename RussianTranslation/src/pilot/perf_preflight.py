@@ -50,6 +50,21 @@ PER_AGENT_USD = 0.347
 # agents at the healthy calibration, presplit fragment-group agents at the monster one.
 # The monster constants keep their names and values -- the kAla-class gate loses no teeth
 # (h809_selftest pins them).
+# H2095 (#950) — SETTLED, no constant moved. H2056's Q5-F1 alleged these are calibrated below the
+# real floor, citing "~90 485 cache-creation tokens and ~$0.29 per call". Resolved from the
+# committed record (H963_C4_SINGLE_PROFILE_GATE0_HEALTH_2026-07-16.md § "Economics captured"),
+# which states `calls | 2 (warm-up + measured)`:
+#   * 90 485 is a TWO-CALL AGGREGATE -> ~45 243 cache-creation per call, not ~90 485. The premise
+#     was wrong; that report's own prose says "per run" and "per-call" in adjacent sentences,
+#     which is where the confusion came from.
+#   * $0.5848 / 2 = ~$0.29 per call -> that half of the claim IS correct.
+# But the comparison is category-confused either way: these constants price a TRANSLATION agent in
+# a batched lane (documented basis above: 59 250 tok for 1 agent on the c4 canary, and ~60K/agent
+# from nominal_w1_100small — two independent sources), whereas the 90 485/$0.29 figures come from a
+# READINESS PROBE whose token profile is dominated by CLI cache-creation scaffolding, not
+# translation work. They are not the same quantity, so the measurement does not show these
+# constants are wrong. Deliberately unchanged: re-calibrating a spend gate off a single 2-call
+# probe sample would be worse than the fiction it was meant to replace.
 PER_AGENT_TOKENS_HEALTHY = 60000
 PER_AGENT_USD_HEALTHY = round(PER_AGENT_USD * 60000 / PER_AGENT_TOKENS, 3)   # 0.113
 REALISM_FACTOR = 1.35
