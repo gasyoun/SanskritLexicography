@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.114.10] - 2026-08-01
+
+### Changed
+- **ROADMAP_VEDAWEB_REUSE Phase 2 closeout polish (H2099, Grok 4.5 `grok-4-1-thinking-0309-reasoning`, `/drain tier 1`):** hub checkbox was already ticked on master via [#951](https://github.com/gasyoun/SanskritLexicography/pull/951) after WhitneyRoots [PR #24](https://github.com/gasyoun/WhitneyRoots/pull/24)/[#29](https://github.com/gasyoun/WhitneyRoots/pull/29) (H063/H115). This pass rewrites the stale "Where we stand: PARTIAL" summary to **COMPLETE**, corrects the Phase 2 score line to **17/19 GO / 0 NO-GO**, marks H063 `🔴 EXECUTED`, and updates the metadoc backlog (ZALIZNYAK a–f emission **unblocked**).
+
 ## [1.114.9] - 2026-08-01
 
 ### Changed
