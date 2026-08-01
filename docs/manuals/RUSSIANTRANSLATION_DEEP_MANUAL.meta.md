@@ -1,6 +1,6 @@
 # RUSSIANTRANSLATION_DEEP_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 31-07-2026_
+_Created: 18-07-2026 · Last updated: 01-08-2026_
 
 Companion record for [docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) (subsystem deep manual, H606).
 
@@ -15,16 +15,16 @@ Authored 11-07-2026 (H606). Refreshed 18-07-2026 under H1245. Headless-first rew
 ## Verification
 
 ```
-LAST_VERIFIED: 25-07-2026
-VERIFIED_BY: Grok 4.5 (grok-4.5), H1623
-COMMANDS_SPOT_RUN: 4
+LAST_VERIFIED: 01-08-2026
+VERIFIED_BY: Grok 4.5 (grok-4.5), H2071 (residual re-verify; production path still headless/manifest-v2)
+COMMANDS_SPOT_RUN: 0 (docs truth-pass; no paid window)
 ```
 
 ## Improvement backlog
 
 | # | Item | Status |
 |---|---|---|
-| 1 | Steps 4–7 still narrate Workflow as primary | **done** H1622 |
+| 1 | Steps 4–7 still narrate Workflow as primary | **done** H1622; **re-verified closed** H2071 (01-08-2026) |
 | 2 | §10 script census generated | **done** 24-07 (script_census.py + SCRIPT_CENSUS.md) |
 | 3 | Re-harvest LAUNCH_STATS | **done** 24-07 (473 rows; still mostly Workflow-era date span — re-harvest after headless windows fill ledger) |
 | 4 | Cold start + skill-primary + symptom cookbook | **done** 24-07 |

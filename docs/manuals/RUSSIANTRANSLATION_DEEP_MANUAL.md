@@ -1,7 +1,8 @@
 # RussianTranslation deep manual — the mw_ru and pwg_ru pipelines
 
-_Created: 11-07-2026 · Last updated: 31-07-2026_
+_Created: 11-07-2026 · Last updated: 01-08-2026_
 
+**LAST_VERIFIED:** 01-08-2026 · Grok 4.5 (`grok-4.5`) · [H2071](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2071-Grok_SanskritLexicography_rt-deep-manual-manifest-v2-steps-rewrite_01.08.26.md) — census residual “steps 4–7 still narrate historical Workflow” **closed**: §5 steps 4–9 document headless CLI + manifest v2 only; Workflow is forensics / historical note only (see §0 line 1 and step 4 historical note).
 
 The subsystem deep manual for
 [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation)
