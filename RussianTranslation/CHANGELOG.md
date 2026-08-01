@@ -14,6 +14,41 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - **H1702 Grok override dual-run verify (01-08-2026, Grok 4.5 `grok-4.5`):** independent re-measure of the shipped D4 boundary-wrap pipeline against the live store — residual **1,109** with **byte-identical** ineligible breakdown vs the Sonnet report; dry-run eligible **0** (no store rewrite); selftest **198/198**, pytest **96/96**. Net-new probe only: `〉`/fullwidth-paren normalize would unlock **63** residual rows (not applied; needs precision bar). Report: [`pwg_ru/H1702_GROK_OVERRIDE_DUAL_RUN_VERIFY_2026-08-01.md`](pwg_ru/H1702_GROK_OVERRIDE_DUAL_RUN_VERIFY_2026-08-01.md).
 - **Full Zaliznyak a–f mobility on the stress slot (H2103, Grok 4.5 `grok-4.5`, 01-08-2026):** citation-only `a`/`b` replaced by Whitney matrix schemes (`c` fully mobile monosyllables, `d` weakest-mobile -ant/-an/añc, `f` lexical irregulars). Rebuild: `python src/reverse_index.py --build`. Selftest covers c/d/f fixtures.
 
+### Fixed — probe ceiling provenance: one table, one name per value (H2118, issue #946, 01-08-2026, Opus 5 `claude-opus-5[1m]`)
+
+**The `production_v1` token had been re-pointed instead of bumped, and there were THREE
+hard-coded copies of the ceiling, not two.** `probe_log.POLICIES` said 30 000 while
+`max_account_orchestrator` and `coordinator` both said 65 000 — the third copy kept in step by a
+comment rather than by code. A 50 000 ms reading **passed** `live_probe` and **failed**
+`verdict_for()`, with both stamping the row `production_v1`.
+
+- [`probe_log.POLICIES`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/probe_log.py) is now the **single source of truth**, with a new
+  `ceiling_for()` accessor and `CURRENT_POLICY`. `max_account_orchestrator` and `coordinator`
+  **derive**; nothing hard-codes a probe ceiling anywhere else. The old objection — "coordinator
+  must not import the orchestrator" — is satisfied: it imports `probe_log`, a stdlib-only leaf.
+- **`production_v1` frozen at 30 000** (rows stamped with it were genuinely judged there; moving
+  it would retroactively falsify them). **`production_v2` = 65 000** added and stamped by the live
+  gates. One policy name per ceiling value, pinned in `max_account_orchestrator_selftest`.
+- H2095's deliberate divergence pin — which asserted the two ceilings *disagree* and fired the
+  moment they were reconciled — has done its job and is **replaced**, not deleted, by pins on the
+  derivation itself plus a no-two-names-share-a-ceiling guard.
+- Receipts stamped `production_v1` are now rejected by `coordinator` — correct fail-closed
+  behaviour (a receipt judged at 30 000 must not authorise dispatch at 65 000); receipts expire
+  after 6 h regardless.
+
+### Not changed — the ceiling VALUE (H2118)
+
+`PROBE_LATENCY_CEILING_MS` remains **65 000 ms and was not re-derived**. The §270 quota check
+that makes a reading trustworthy needs a credential read the harness classifier denied, so **zero
+paid calls were made** and no ceiling is proposed. Measured while there:
+**not one probe row in the tree carries `duration_api_ms`** — the H2095 instrumentation has never
+produced a row — and of the 13 historical c4 rows only 5 are `success`, **three of which exceed
+the 65 000 ceiling they were used to justify**. Report:
+[H2118_PROBE_CEILING_PROVENANCE_2026-08-01.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2118/H2118_PROBE_CEILING_PROVENANCE_2026-08-01.md).
+Residual: [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md).
+Gates: `window_selftest` **198/198**, `max_account_orchestrator_selftest` PASS,
+`execution_contract_selftest` PASS; LANG_PARITY 6 entries re-derived, SHARED stands.
+
 ## [1.116.0] - 2026-08-01
 
 ### Added — offline Sonnet-tier batch (H2005 + glyph sample + gloss_lang, 01-08-2026, Grok 4.5 `grok-4.5`)

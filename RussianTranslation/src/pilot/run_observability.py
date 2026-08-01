@@ -31,9 +31,11 @@ ALLOWED = {
     'duration_api_ms', 'api_gap_ms',
     # H2095 (#946): the ceiling THAT ACTUALLY JUDGED this reading. Without it a probe row cannot
     # be read standalone — `PROBE_LATENCY_CEILING_MS` moved 30 000 -> 33 000 -> 65 000 in a single
-    # day (31-07) while the `policy` token stayed 'production_v1', and `probe_log.POLICIES` still
-    # maps that same token to 30 000. A row now carries its own ceiling instead of depending on a
-    # name whose meaning has drifted.
+    # day (31-07) while the `policy` token stayed 'production_v1'. H2118 then repaired the token
+    # itself (one name per ceiling value, every gate deriving from `probe_log.POLICIES`), so
+    # `policy` is sufficient provenance again — but this key stays: it records what judged a row
+    # at the moment it was written, which no later reading of a policy table can reconstruct for
+    # rows written before the repair.
     'latency_ceiling_ms',
 }
 

@@ -16,6 +16,7 @@ import subprocess
 import sys
 import time
 
+import probe_log
 from run_observability import append_event, write_census
 from headless_worker import (claude_argv_prefix, run_tree_kill, timeout_output_text,
                              validate_preflight_artifact, windows_hidden_flags)
@@ -1093,13 +1094,23 @@ PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-represent
 # and so could only flap. It does NOT clear 16-07's 104 870 ms -- stated rather than smoothed
 # over: this buys the CURRENT band, not every band c4 has ever shown.
 #
+# ⚠️ FINDINGS §270 puts that basis in doubt: a rate-limited CLI HANGS instead of reporting 429,
+# so readings taken while c4 was throttled measured retry backoff, not route latency. The number
+# is kept because H2118 could not re-derive it (no clean paired reading exists anywhere in the
+# tree), NOT because it was re-confirmed. See probe_log.POLICIES for the standing instruction.
+#
 # What this does and does not do: it decides whether dispatch is ALLOWED, never how fast the
 # route is. At ~32-48 s per call a window still costs roughly that per card; raising the ceiling
 # converts a hard block into a throughput cost, which is the trade being made deliberately in
 # order to start translating. If readings return to the 16-07 regime this parks c4 again, by
 # design.
-PROBE_LATENCY_CEILING_MS = 65000
-PROBE_POLICY = 'production_v1'
+#
+# H2118 (#946): DERIVED, never restated. This used to be a second hard-coded copy of the number
+# that had already drifted 2.2x from probe_log's, with both gates still stamping rows
+# `production_v1`. The policy token now carries its own ceiling, so `verdict_for()` and
+# `live_probe` agree by construction and a row's `policy` is sufficient provenance again.
+PROBE_POLICY = probe_log.CURRENT_POLICY
+PROBE_LATENCY_CEILING_MS = probe_log.ceiling_for(PROBE_POLICY)
 PROBE_LANE = 'claude-cli-headless/readiness-schema'
 PROBE_RECEIPT_SCHEMA = 'pwg.runtime_probe_receipt.v1'
 # GAP #5 (four-profile): an account dropped by --drop-unhealthy is parked far in the future so the
