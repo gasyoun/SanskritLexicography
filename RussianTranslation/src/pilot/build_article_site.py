@@ -108,6 +108,26 @@ def _ls_tooltip(attrs, visible):
     return _ls_title(attrs, visible)
 
 
+# H2005 / H1305 R4: `ed. Bomb.` → «Бомбейская ред.» is ruled for RU *display*, but a
+# store rewrite of in-<ls> text breaks pwg_sources.source_key() (Latin/German keys).
+# Render-time substitution only; href/title always use the stored Latin visible text.
+_ED_BOMB_DISPLAY = re.compile(r'\bed\.\s*Bomb\.', re.I)
+_ED_BOMB_RU = 'Бомбейская ред.'
+
+
+def _ls_visible_display(visible, lang):
+    """Visible <ls> text for one language column.
+
+    RU: substitute the ratified Bombay-edition siglum display form.
+    DE/EN/None: byte-identical to the stored citation text.
+    Never used as input to href/title/source_key resolution.
+    """
+    vis = (visible or '').strip()
+    if lang != 'ru' or not vis:
+        return vis
+    return _ED_BOMB_DISPLAY.sub(_ED_BOMB_RU, vis)
+
+
 _AB = re.compile(r'<ab\b[^>]*>(.*?)</ab>', re.S)
 _LEX = re.compile(r'<lex\b[^>]*>(.*?)</lex>', re.S)
 _IS = re.compile(r'<is\b[^>]*>(.*?)</is>', re.S)
@@ -213,15 +233,18 @@ def _render(text, mode, lang=None):
             # Attribute values are left unquoted so the later html.escape (which
             # escapes " ' & < >) cannot mangle them; scan URLs contain none of the
             # quote/space chars that would require quoting.
+            # Resolver always sees stored Latin `vis`; display may RU-substitute
+            # ed. Bomb. (H2005) without touching the store or href input.
             vis = m.group(2).strip()
+            display = _ls_visible_display(vis, lang)
             url = _ls_href(m.group(1), vis)
             title = _ls_tooltip(m.group(1), vis)
             tattr = ' title=%s' % title.replace(' ', '\xa0') if title else ''
             if url:
-                # <a class=ls href=URL title=T target=_blank rel=noopener>VIS</a>
+                # <a class=ls href=URL title=T target=_blank rel=noopener>DISPLAY</a>
                 return '%sa class=ls href=%s%s target=_blank rel=noopener%s%s%s/a%s' % (
-                    LT, url, tattr, GT, vis, LT, GT)
-            return '%sspan class=ls%s%s%s%s/span%s' % (LT, tattr, GT, vis, LT, GT)
+                    LT, url, tattr, GT, display, LT, GT)
+            return '%sspan class=ls%s%s%s%s/span%s' % (LT, tattr, GT, display, LT, GT)
         t = _LS.sub(_ls_html, t)
 
         def _ab_html(m):
@@ -251,16 +274,17 @@ def _render(text, mode, lang=None):
 
         def _ls_md(m):
             vis = m.group(2).strip()
+            display = _ls_visible_display(vis, lang)
             url = _ls_href(m.group(1), vis)
             if not url:
-                return '[%s]' % vis
+                return '[%s]' % display
             # Carry the Spr. (II) full-text enrichment (H1307) into the md link
             # title so the md surface has parity with the html tooltip; other
             # citations stay a plain link to keep the md output unchanged.
             rich = spr.tooltip(m.group(1), vis)
             if rich:
-                return '[%s](%s "%s")' % (vis, url, rich.replace('"', "'"))
-            return '[%s](%s)' % (vis, url)
+                return '[%s](%s "%s")' % (display, url, rich.replace('"', "'"))
+            return '[%s](%s)' % (display, url)
         t = _LS.sub(_ls_md, t)
         t = _AB.sub(lambda m: _ab_display(m.group(1), lang, m.string[:m.start()])[0], t)
         t = _LEX.sub(lambda m: '_%s_' % m.group(1).strip(), t)

@@ -82,15 +82,37 @@ GERMAN_GLOSS_GUARD = re.compile(
     r'Beginn|Vater|Collyrium|Honig|Weber|Grube|Hure|Zinn|Krystall|'
     r'Sonnenscheibe|Testikeln|Trinkglas|Seidenraupe|Urinblase)\b',
     re.I)
-# Clear English prose markers (function words + common Wilson gloss lemmata).
-ENGLISH_MARKERS = re.compile(
-    r'\b(?:the|a|an|of|or|and|with|who|only|one|as|used|leaving|abandoning|'
+# Clear English prose markers — split strong vs weak (H offline gloss_lang FP fix).
+# FINDINGS §464 / DE export memo: english_content was ~77% FP on non-DE labels because
+# weak tokens (a/an/of/and/or/with/as/war) match German or bare Latin too easily when
+# used as a *sole* signal. Strong markers (the/who/leaving/…/Wilson lemmata) stay
+# single-hit; weak markers need ≥2 distinct hits, or a near WILS/engl cue path.
+ENGLISH_STRONG = re.compile(
+    r'\b(?:the|who|only|used|leaving|abandoning|'
     r'water|fire|sun|moon|king|sacrifice|rice|wind|knowledge|law|right|wrong|'
     r'place|time|body|mind|widower|absent|lover|husband|shell|coin|Cowri|'
     r'thinks|enjoyment|informer|quantity|bubbles|specks|inauspicious|period|'
     r'evil|aspect|planets|vessel|marrow|spread|cowdung|array|variegated|'
-    r'girdle|sleepy|lazy|fellow|terrestrial|latitude|mimic|war|conflict|'
+    r'girdle|sleepy|lazy|fellow|terrestrial|latitude|mimic|conflict|'
     r'rind|fruit|boundary|passion|soft|down|homes|persons|hogweed)\b',
+    re.I)
+# Shared/ambiguous short words — never alone sufficient for english_content.
+# Note: German "war" (was) and "an" (preposition) are deliberate exclusions from
+# any single-hit path; "a"/"of"/"and"/"or"/"with"/"as"/"one" need a second weak
+# or any strong hit.
+ENGLISH_WEAK = re.compile(
+    r'\b(?:a|an|of|or|and|with|as|one|war)\b',
+    re.I)
+# Back-compat alias (tests / callers that imported ENGLISH_MARKERS).
+ENGLISH_MARKERS = re.compile(
+    r'\b(?:the|who|only|used|leaving|abandoning|'
+    r'water|fire|sun|moon|king|sacrifice|rice|wind|knowledge|law|right|wrong|'
+    r'place|time|body|mind|widower|absent|lover|husband|shell|coin|Cowri|'
+    r'thinks|enjoyment|informer|quantity|bubbles|specks|inauspicious|period|'
+    r'evil|aspect|planets|vessel|marrow|spread|cowdung|array|variegated|'
+    r'girdle|sleepy|lazy|fellow|terrestrial|latitude|mimic|conflict|'
+    r'rind|fruit|boundary|passion|soft|down|homes|persons|hogweed|'
+    r'a|an|of|or|and|with|as|one|war)\b',
     re.I)
 
 # Kinds that leave the translate path (mask as {Tn}).
@@ -150,11 +172,25 @@ def looks_botany_binomial(content):
 
 
 def looks_english_content(content):
-    """High-confidence English braced gloss (Wilson EN / engl. literals)."""
+    """High-confidence English braced gloss (Wilson EN / engl. literals).
+
+    Strong English markers (or dual -ing forms) are enough alone. Weak markers
+    (a/an/of/and/or/with/as/one/war) need ≥2 distinct hits so German/Latin
+    residue does not take the english_content → translate:False path (§464).
+    """
     value = (content or '').strip()
     if not value or _has_german_markers(value):
         return False
-    return bool(ENGLISH_MARKERS.search(value))
+    if ENGLISH_STRONG.search(value):
+        return True
+    weak = {m.group(0).lower() for m in ENGLISH_WEAK.finditer(value)}
+    if len(weak) >= 2:
+        return True
+    # Two distinct -ing tokens ("leaving, abandoning") without a listed lemma.
+    ings = re.findall(r'\b[A-Za-z]{3,}ing\b', value)
+    if len({t.lower() for t in ings}) >= 2:
+        return True
+    return False
 
 
 def classify_pct_detail(content, preceding, following=''):
@@ -434,6 +470,18 @@ def _selftest():
     # Wilson + German content stays DE (WILS übersetzt … durch {%Honig%})
     d = classify_pct_detail('Honig', 'WILS. übersetzt durch ')
     check(d['gloss_lang'] == 'de', 'Wilson+German stays DE: %r' % d)
+    # §464 FP class: lone weak markers / German "war" must not take english_content
+    d = classify_pct_detail('war', '')
+    check(d['gloss_lang'] == 'de' and d['translate'], 'German war not EN: %r' % d)
+    d = classify_pct_detail('and', '')
+    check(d['gloss_lang'] == 'de' and d['translate'], 'lone weak and not EN: %r' % d)
+    d = classify_pct_detail('an', '')
+    check(d['rule_id'] != RULE_ENGLISH_CONTENT,
+          'bare an not english_content: %r' % d)
+    # true English without cue still works via strong markers
+    d = classify_pct_detail('terrestrial latitude', '')
+    check(d['gloss_lang'] == 'en' and d['rule_id'] == RULE_ENGLISH_CONTENT,
+          'uncued strong EN: %r' % d)
 
     # gloss_lang_spans offsets + raw-body cues inside tags
     body = ('Feuer <ab>lat.</ab> {%ignis%} und {%Trapa bispinosa%} '
@@ -468,7 +516,7 @@ def _selftest():
         for f in fails:
             print('FAIL:', f, file=sys.stderr)
         sys.exit(1)
-    print('pwg_mask --selftest: %d checks OK' % 16)
+    print('pwg_mask --selftest: %d checks OK' % 20)
 
 
 def main():
