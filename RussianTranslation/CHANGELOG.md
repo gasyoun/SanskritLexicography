@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added
+- **Full Zaliznyak a–f mobility on the stress slot (H2103, Grok 4.5 `grok-4.5`, 01-08-2026):** citation-only `a`/`b` replaced by Whitney matrix schemes (`c` fully mobile monosyllables, `d` weakest-mobile -ant/-an/añc, `f` lexical irregulars). Rebuild: `python src/reverse_index.py --build`. Selftest covers c/d/f fixtures.
+
 ## [1.116.0] - 2026-08-01
 
 ### Added — offline Sonnet-tier batch (H2005 + glyph sample + gloss_lang, 01-08-2026, Grok 4.5 `grok-4.5`)
