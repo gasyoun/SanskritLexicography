@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.114.9] - 2026-08-01
+
+### Changed
+- **RUSSIANTRANSLATION_DEEP_MANUAL residual re-verify (H2071, Grok 4.5 `grok-4.5`, 01-08-2026):** LAST_VERIFIED stamp + metadoc backlog row 1 closed — production steps remain headless/manifest-v2 only (Workflow forensics); no production-path rewrite required.
+
 ## [1.114.8] - 2026-07-31
 
 ### Changed
