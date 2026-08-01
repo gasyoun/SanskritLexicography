@@ -1,8 +1,68 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 30-07-2026_
+_Created: 09-07-2026 · Last updated: 01-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 01-08-2026 — H2118: the c4 probe-latency evidence base, and why no ceiling was derived
+
+Opus 5 1M (`claude-opus-5[1m]`),
+[H2118](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2118-Opus_RussianTranslation_rederive-probe-latency-ceiling-946_01.08.26.md),
+issue [#946](https://github.com/gasyoun/SanskritLexicography/issues/946). **Zero paid calls.**
+Full report:
+[H2118_PROBE_CEILING_PROVENANCE_2026-08-01.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2118/H2118_PROBE_CEILING_PROVENANCE_2026-08-01.md).
+
+### Every c4 probe reading on record (13 rows, `output/h963_c4_gate0_probe_events.jsonl`)
+
+**None carries `duration_api_ms`** — the H2095 instrumentation this mission was built to consume
+has never produced a single row, so no reading anywhere is decomposable into route time vs the
+retry backoff [FINDINGS §270](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) identified.
+
+| # | timestamp (UTC) | purpose | `elapsed_ms` | classification |
+|---|---|---|---|---|
+| 1 | 2026-07-22T14:57 | warmup | 21 280 | content |
+| 2 | 2026-07-22T20:03 | warmup | 59 831 | success |
+| 3 | 2026-07-22T20:04 | measured | 102 874 | auth |
+| 4 | 2026-07-23T06:06 | warmup | 40 003 | success |
+| 5 | 2026-07-23T06:09 | measured | 168 352 | success |
+| 6 | 2026-07-24T04:23 | warmup | 10 838 | rate_limit |
+| 7 | 2026-07-24T07:35 | warmup | 9 949 | rate_limit |
+| 8 | 2026-07-25T03:16 | warmup | 17 587 | auth |
+| 9 | 2026-07-25T03:18 | warmup | 10 918 | auth |
+| 10 | 2026-07-25T16:02 | warmup | 17 878 | rate_limit |
+| 11 | 2026-07-25T18:18 | warmup | 19 903 | rate_limit |
+| 12 | 2026-07-31T18:59 | warmup | 94 606 | success |
+| 13 | 2026-07-31T19:01 | measured | 78 415 | success |
+
+### Derived distribution — the ceiling clears only 2 of 5 successes
+
+| statistic | value |
+|---|---|
+| `success` readings | 5 of 13 |
+| success band | 40 003 – 168 352 ms |
+| success median | 78 415 ms |
+| **clear the 65 000 ms ceiling** | **2 of 5** (40 003 · 59 831) |
+| **exceed it** | **3 of 5** (78 415 · 94 606 · 168 352) |
+| `rate_limit`-classified | 4 of 13, band 9 949 – 19 903 ms |
+
+The four readings cited in the constant's own justification (52 815 · 104 870 · 31 623 · 47 953)
+live in the H963/H994/H1447 gate reports, **not in this log** — the two populations barely
+overlap, and neither is decomposable. A reading is also not self-certifying: rows 11 and 13 are
+the same account, minutes apart, at 19 903 ms `rate_limit` and 78 415 ms `success`.
+
+### Gate ceilings before and after
+
+| site | before | after | mechanism |
+|---|---|---|---|
+| `probe_log.POLICIES['production_v1']` | 30 000 | 30 000 | frozen — historical rows were judged here |
+| `probe_log.POLICIES['production_v2']` | — | 65 000 | **new**; what the live gates stamp |
+| `max_account_orchestrator.PROBE_LATENCY_CEILING_MS` | 65 000 hard-coded | 65 000 **derived** | `probe_log.ceiling_for()` |
+| `coordinator.PROBE_LATENCY_CEILING_MS` | 65 000 hard-coded | 65 000 **derived** | `probe_log.ceiling_for()` |
+| `h963_c4_gate0_probe.CEILING_MS` | derived from orchestrator | unchanged | transitively one table |
+
+**The value did not move.** What moved is that a 50 000 ms reading no longer passes one gate and
+fails the other under one policy name. Gates: `window_selftest` 198/198,
+`max_account_orchestrator_selftest` PASS, `execution_contract_selftest` PASS.
 
 ## 30-07-2026 — H1910: Jamison–Brereton 2014 as the fifth column, Renou EVP as a witness
 
