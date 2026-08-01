@@ -52,20 +52,23 @@ AUDIT_TIMEOUT_SECONDS = 30 * 60
 PROBE_RECEIPT_MAX_AGE_SECONDS = 6 * 60 * 60
 PROBE_RECEIPT_SCHEMA = 'pwg.runtime_probe_receipt.v1'
 PROBE_MODEL = 'claude-sonnet-5'
-PROBE_POLICY = 'production_v1'
-# MG ruling 31-07-2026: 30 000 -> 65 000, in lockstep with
-# max_account_orchestrator.PROBE_LATENCY_CEILING_MS (see the full rationale there).
-# These are two INDEPENDENT definitions of the same policy number and must be changed
-# together; that duplication is exactly why the production ceiling stayed at 30 000 and
-# silently kept translation blocked after the gate probe's own ceiling was raised. Not
-# collapsed into one import here because coordinator must not take an import dependency on
-# the orchestrator; the cross-reference comment is the guard instead.
-PROBE_LATENCY_CEILING_MS = 65000
+# PROBE_POLICY / PROBE_LATENCY_CEILING_MS are DERIVED from probe_log below, once sys.path is
+# set up -- they cannot be defined here because the import has to follow that setup.
 
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
+
+import probe_log  # noqa: E402
+# H2118 (#946): DERIVED from the one source of truth, never restated. This was previously a
+# third hard-coded `65000` held in lockstep with max_account_orchestrator by a comment; the
+# comment's own rationale conceded that duplication is what let the production ceiling sit at
+# 30 000 and silently keep translation blocked after the gate probe's ceiling was raised.
+# The old objection -- "coordinator must not take an import dependency on the orchestrator" --
+# is satisfied: this imports `probe_log`, a stdlib-only leaf module, not the orchestrator.
+PROBE_POLICY = probe_log.CURRENT_POLICY
+PROBE_LATENCY_CEILING_MS = probe_log.ceiling_for(PROBE_POLICY)
 
 import promote_final_cards  # noqa: E402
 import promotion_journal  # noqa: E402
