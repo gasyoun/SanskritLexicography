@@ -4,6 +4,49 @@ _Created: 09-07-2026 · Last updated: 01-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 01-08-2026 (later) — the first decomposed c4 readings; c4 auth restored
+
+Opus 5 1M (`claude-opus-5[1m]`), live `/pwg-live-gate c4` Step 1 only — **2 paid calls, no
+canary, no bounded window, no store write.** Directly supersedes the "no reading is
+decomposable" finding in the H2118 entry immediately below: the H2095 instrumentation has now
+produced rows.
+
+**Context.** The paid lane had been stopped since 25-07-2026 on HTTP 403 across every profile.
+A free `claude auth status --json` on the c4 config dir now returns `loggedIn: true`,
+`authMethod: claude.ai`, `subscriptionType: max` — **the 403 blocker is cleared.**
+
+### `h963_c4_gate0_probe.py`, run `…2026-08-01T20:20:23Z-pid5664`, model `claude-sonnet-5`
+
+| purpose | wall `elapsed_ms` | `duration_api_ms` | `api_gap_ms` | ceiling recorded | policy | class |
+|---|---|---|---|---|---|---|
+| warm-up | 39 437 | **21 171** | 18 266 | 65 000 | `production_v2` | success |
+| measured | 50 336 | **27 557** | 22 779 | 65 000 | `production_v2` | success |
+| *(prior, 31-07)* | 78 415 | *absent* | *absent* | *absent* | `production_v1` | success |
+
+Prompt 6 828 B (≥ 5 KiB floor), schema-carrying; wall clock 89.8 s; zero connection errors.
+
+**Why this matters for [#946](https://github.com/gasyoun/SanskritLexicography/issues/946) /
+H2138.** These are the first rows in the series carrying `duration_api_ms`, so for the first
+time a c4 reading can be split into route time and in-CLI overhead:
+
+- **Real API time is 21.2 s / 27.6 s — both under the 30 000 ms `STRICT_CEILING_MS` that the
+  `/pwg-live-gate` skill text still names.** The wall readings fail that bar; the API readings
+  pass it. The gap is **18.3 s / 22.8 s — about 45 % of each wall reading** — which is exactly
+  the conflation Q1-F4 said made wall-clock gating unable to mean anything.
+- **This is not a masked rate-limit.** Per [FINDINGS §270](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)
+  a throttled CLI hangs rather than answering; both calls returned `classification=success`
+  with real envelopes inside the ceiling. The gap is process/startup scaffolding, not backoff.
+- The verdict PASSed on the code's 65 000 ms ceiling, but **it did not need the widened
+  ceiling** — it passes the stricter 30 000 ms bar too, once measured on the axis that means
+  something. That is evidence for the H2138 re-derivation, though **not** the ≥5 paired
+  readings it requires: this is n=1 measured (plus 1 warm-up), taken without the same-moment
+  quota check §270 calls for.
+
+⚠️ **The raw rows live only in `src/pilot/output/h963_c4_gate0_probe_events.jsonl`, which is
+gitignored** (`.gitignore:67`, `RussianTranslation/src/pilot/output/`). This table is the only
+committed copy — the same durability gap that let the whole pre-H2095 c4 series become
+undecomposable in the first place.
+
 ## 01-08-2026 — H2118: the c4 probe-latency evidence base, and why no ceiling was derived
 
 Opus 5 1M (`claude-opus-5[1m]`),
