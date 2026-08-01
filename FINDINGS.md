@@ -5172,3 +5172,18 @@ Shipped in [csl-atlas#325](https://github.com/sanskrit-lexicon/csl-atlas/pull/32
 
 
 _30-07-2026 · repository architecture audit · Codex GPT-5_
+
+---
+
+### 512. A ruling that reaches a register but never reaches the card is re-litigated by the next human (N1 loop)
+
+**Measured defect (H1650 / pramuc, 26-07 → 01-08-2026).** Card `muc|muc~~h0_20_pra|8` was
+**N1 in the 19-07 H178 DA vote register**: reuse SamudraManthanam RU for R./MBH. citations.
+H1304 shipped `citation_tm.py` the same day. The voting sheet was never re-rendered with the
+attested line, so MG had to write the same objection again in `pramuc.md`.
+
+**Rule:** if a human ruling is about what the *next* sheet must show, the sheet generator is
+part of the delivery — register rows alone are not. H1650 wires `citation_evidence_panel()`
+into h178/h180 generators and a screening banner (csl-pyutil ≥0.8.0).
+
+> Grok 4.5 (`grok-4.5`) · 01-08-2026 · H1650
