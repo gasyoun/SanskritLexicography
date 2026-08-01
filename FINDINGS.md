@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 30-07-2026 (H1910: §463–§466 — print-OCR extraction traps; a coverage count does not measure correctness)_
+_Created: 26-06-2026 · Last updated: 01-08-2026 (H2025: §513 — path-scoped promote lock + row-count-blind delta gate)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -5187,3 +5187,30 @@ part of the delivery — register rows alone are not. H1650 wires `citation_evid
 into h178/h180 generators and a screening banner (csl-pyutil ≥0.8.0).
 
 > Grok 4.5 (`grok-4.5`) · 01-08-2026 · H1650
+
+---
+
+### 513. A lock that guards a path, not the file — and a delta gate that counts rows, not bytes
+
+**Two measured exposures from the H2025 dual-run pipeline audit
+([memo](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_AUDIT_PWG_RU_H2025_01-08-2026.md), rev `b4db4259`).**
+
+1. **`PromoteClaim` is acquired by every promote entry point — and by nothing else.** 13
+   non-promote store mutators (`annotate_*`, `fix_*`, `backfill_tn_residue`,
+   `mark_reconstructed_headwords`, `ru_style_sweep`, `repair_h178_da_cards`) plus the human
+   overlay writer `apply_editorial_decisions.py` write `pwg_ru_translated.jsonl` with no lock,
+   no backup, no fsync. Concurrent with a promote they are last-writer-wins. Meanwhile
+   `merge_store_rows` decides replacement purely on `_attempt_quality` and never reads
+   `review_status`/`reviewer` — the live store's 5 human-reviewed rows would come back
+   `ai_translated` on re-promote (the overlay-wipe class, still live).
+2. **A row-count delta gate is blind to content.** `h1809.bak` → live store: both 11,603
+   rows, yet 26,198,939 → 24,904,391 bytes — a 1.29 MB change (apparently JSON-separator
+   compaction; writer unidentified) passed every promote invariant. Rows and field-name sets
+   identical; `ru`/`de` content moved 149 bytes.
+
+**Rule:** a mutual-exclusion claim protects a *file* only if every writer of that file
+acquires it — audit writers, not entry points. And a promote delta gate must bound content
+mass (bytes/chars), not just cardinality: identical row counts are compatible with megabytes
+of silent change.
+
+> Fable 5 (`claude-fable-5`) · 01-08-2026 · H2025
