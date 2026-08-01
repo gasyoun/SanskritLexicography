@@ -10,6 +10,41 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added — `duration_api_ms` is captured, so a latency reading can be decomposed (H2079, issue #945, 01-08-2026, Opus 5 `claude-opus-5[1m]`)
+
+The measurement-integrity fix from the [H2056 review](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2056/H2056_CALL_PATH_REVIEW_2026-08.md),
+and the one that makes the contaminated c4 series re-interpretable going forward.
+
+Every latency gate in the paid path measured **wall clock**. Wall clock cannot distinguish a slow
+route from a CLI retrying internally against a rate limit (it hangs rather than reporting 429 —
+[FINDINGS §270](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)). The discriminator,
+`duration_api_ms`, was **already in the result envelope, already parsed, and discarded one line
+away** — parsed nowhere in `src/*.py`. That is why the 15-07 (52 815 ms), 16-07 (104 870 ms) and
+31-07 (78 415 ms) readings are unusable as route evidence, why the `PROBE_LATENCY_CEILING_MS` raise
+30 000 → 65 000 ms was calibrated partly against backoff, and why a "~65 s CLI startup" claim was
+published and then retracted rather than tested. Recommended in prose on 16-07 in the H963 report;
+never implemented until now.
+
+- [`telemetry_from_cli_wrapper`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/call_reservation.py#L52)
+  now carries `duration_ms` / `duration_api_ms` into the durable reservation ledger, so every paid
+  call's API time is persisted per call.
+- `live_probe` emits `duration_api_ms` and `api_gap_ms` (wall − API) beside `elapsed_ms`, added to
+  `run_observability.ALLOWED`.
+- `_probe_call` gained an optional `timing_out` dict — no return-arity change, so every existing
+  caller and test stub is untouched.
+
+**Recording only — nothing is gated on it.** `elapsed_ms` remains the number the ceiling tests, and
+no threshold moved: H2056 was explicit that re-deriving the suspect ceiling needs readings paired
+with a same-moment quota check, which is separate work ([#946](https://github.com/gasyoun/SanskritLexicography/issues/946)).
+
+**Backward compatibility is load-bearing and pinned.** The fields are **omitted when absent**, never
+written as an explicit `None`: `_read()` re-validates every stored item and `finalize()` compares an
+already-finalized item against a freshly normalized one, so a pre-H2079 ledger must normalize to
+exactly the bytes it already holds. A malformed duration never demotes `cost_evaluable` —
+evaluability is a statement about cost. Both properties are asserted, along with the ledger
+round-trip and the absent-is-invisible probe row. `window_selftest` 195/195, pilot suite green,
+LANG_PARITY 89 entries with 3 re-derived.
+
 ### Fixed — a quota hang no longer denylists a healthy card or discards its fragments' TM (H2077, issue #947, 01-08-2026, Opus 5 `claude-opus-5[1m]`)
 
 The worst harm found by the [H2056 review](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2056/H2056_CALL_PATH_REVIEW_2026-08.md),

@@ -24,6 +24,11 @@ ALLOWED = {
     'purpose', 'output_bytes', 'model',
     # H1080 launch-control follow-up: typed probe policy/lane and measured schema verdict.
     'policy', 'executor_lane', 'schema_valid',
+    # H2079 (#945): the CLI envelope's own API time, and wall-minus-API. `elapsed_ms` remains the
+    # gated wall reading — these exist so a reading can be DECOMPOSED after the fact into route
+    # time vs time the CLI spent retrying internally (a rate-limited CLI hangs rather than
+    # reporting 429, FINDINGS §270). Absent on any call that returned no envelope.
+    'duration_api_ms', 'api_gap_ms',
 }
 
 # per-key relation events: kept for key<->call provenance / repeated-failure tracking, but
