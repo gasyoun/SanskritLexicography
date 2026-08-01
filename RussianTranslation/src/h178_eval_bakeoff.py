@@ -38,15 +38,18 @@ Usage (in order):
   python src/h178_eval_bakeoff.py sample     # build the 30-gloss held-out sample
   python src/h178_eval_bakeoff.py baseline   # DeepSeek DE->RU baseline (pairwise arm B)
   python src/h178_eval_bakeoff.py judge      # DeepSeek second-channel annotations (all 4 rubrics)
-  python src/h178_eval_bakeoff.py sheets     # emit the 4 HTML voting sheets for MG
+  python src/h178_eval_bakeoff.py sheets     # emit sheets (H1650: only h178_da by default;
+                                               # mqm/likert/pairwise RETIRED A2 — use --all-rubrics to remake)
+  python src/h178_eval_bakeoff.py agent_pass # agent labels on mqm/likert/pairwise for H274 compute
   python src/h178_eval_bakeoff.py comet      # COMETKiwi QE scores (needs HF token; else prints steps)
-  python src/h178_eval_bakeoff.py compute    # post-vote: kappa/alpha, discrimination, cost, correlations
+  python src/h178_eval_bakeoff.py compute    # post-vote: labels every metric agent-vs-human | agent-only
 """
 import sys, os, io, json, html, random, re, time, argparse, collections, math
 
 from csl_pyutil import mark_cyrillic, render_review_sheet
 from review_binding import stamp, write_lock
 from review_sheet_standard import DA_RATING, pwg_entry_href, slp1_iast, standard_config
+from sheet_screening import citation_evidence_panel, screening_block
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -391,6 +394,14 @@ def _rubric_panel(kind, it, blinded):
     return ""
 
 
+# H1650 / MG A2 (26-07-2026): mqm/likert/pairwise RETIRED from the human queue.
+# Instrument comparison = voted h178_da + agent_pass on the other three rubrics.
+RETIRED_A2 = frozenset({"h178_mqm", "h178_likert", "h178_pairwise"})
+FROZEN_SAMPLE_NOTE = (
+    "FROZEN eval sample (H1301) — not the live store after H1302/H1305. "
+    "Correct for instrument bake-off; wrong as a live translation-quality vote."
+)
+
 SHEETS = [
     ("h178_mqm", "MQM-adapted error annotation", "mqm",
      "Mark error severities per category; approve if the Russian gloss has NO errors.",
@@ -408,7 +419,7 @@ SHEETS = [
 ]
 
 
-def cmd_sheets():
+def cmd_sheets(all_rubrics=False):
     os.makedirs(REVIEW, exist_ok=True)
     items_raw = load_sample()
     base = {json.loads(l)["id"]: json.loads(l) for l in io.open(BASELINE, encoding="utf-8")} \
@@ -418,7 +429,12 @@ def cmd_sheets():
     for it in items_raw:
         blinding[it["id"]] = rng.random() < 0.5  # a_is_store
     for sheet_id, title, kind, question, alab, rlab in SHEETS:
+        if sheet_id in RETIRED_A2 and not all_rubrics:
+            print("skip retired A2 (H1650): %s — use --all-rubrics only for deliberate remake"
+                  % sheet_id)
+            continue
         items = []
+        n_cite = 0
         for it in items_raw:
             panels = [("German source (PWG 5-layer)", "<pre>%s</pre>" % esc(it["de"]))]
             # V7: highlight the Russian under judgment (mark_cyrillic AFTER
@@ -435,6 +451,11 @@ def cmd_sheets():
             else:
                 panels.append(("Russian translation (promoted store)",
                                "<pre>%s</pre>" % mark_cyrillic(esc(it["ru"]))))
+            # H1650: citation_tm evidence (N1 loop — ruling must reach the card)
+            cite_h, cite_html = citation_evidence_panel(it.get("de") or "")
+            panels.append((cite_h, cite_html))
+            if "No &lt;ls&gt;" not in cite_html and "No <ls>" not in cite_html:
+                n_cite += 1
             item = {
                 "id": it["id"], "filt": it["stratum"],
                 # V4: IAST headword as the card title (subcard · sense demoted
@@ -451,11 +472,22 @@ def cmd_sheets():
             if href:  # V4 entry deep link; omitted when the root has no column row
                 item["title_href"] = href
             items.append(item)
+        retired_note = ""
+        if sheet_id in RETIRED_A2:
+            retired_note = (
+                " ⛔ RETIRED 26-07-2026 (MG A2 / H1650) — do not vote; "
+                "instrument arm is agent_pass + h178_da human only."
+            )
         config = {
             "sheet_id": sheet_id, "title": title, "generated": GENERATED,
-            "subtitle": "H178 B-1 bake-off — one human channel (MG); DeepSeek is the model channel; "
-                        "agreement is reported human×model, never human×human.",
-            "footer": "Sheet %s of 4 — all four rubrics run on the SAME 30 glosses. " % sheet_id,
+            "subtitle": (
+                "H178 B-1 bake-off. %s One human channel (MG) on DA only after A2; "
+                "DeepSeek is the model channel; agreement is human×model or agent×human — "
+                "never human×human cross-rubric. %s"
+                % (FROZEN_SAMPLE_NOTE, retired_note)
+            ),
+            "footer": "Sheet %s — same 30 frozen glosses. H1650 citation_tm panel on every card."
+                      % sheet_id,
             "approve_label": alab, "reject_label": rlab,
             # reproduces the original all/unvoted/flagged/random filter set; render_review_sheet
             # always prepends "all" and appends "unvoted only" itself.
@@ -467,7 +499,16 @@ def cmd_sheets():
             save_as="RussianTranslation\\pwg_ru\\eval\\%s.decisions.json" % sheet_id))
         if kind == "da":
             config["rating"] = DA_RATING
-        html_out = render_review_sheet(items, config, extras=True)
+        # H1649/H1650 screening banner (csl-pyutil ≥0.8.0)
+        sc = screening_block(
+            deterministic=0,
+            lookup=n_cite,  # citation_tm panels attached (dataset lookup)
+            agent=0,
+            human=len(items),
+            evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
+            rules=["citation_tm", "frozen-eval-sample", "A2-retire-mqm-likert-pairwise"],
+        )
+        html_out = render_review_sheet(items, config, extras=True, screening=sc)
         html_out = html_out.replace("</body>", RUBRIC_JS % {
             "sheet_id_json": json.dumps(sheet_id), "generated_json": json.dumps(GENERATED),
         } + "</body>")
@@ -480,7 +521,7 @@ def cmd_sheets():
         io.open(out, "w", encoding="utf-8").write(html_out)
         write_lock(sheet_id, chash, [it["id"] for it in items], GENERATED,
                    source_html=out)
-        print("sheet:", out, "(%d items)" % len(items))
+        print("sheet:", out, "(%d items, citation panels on %d cards)" % (len(items), n_cite))
 
 
 # ------------------------------------------------------------------------ comet
@@ -642,11 +683,21 @@ def cmd_compute(args):
             # register section 5 — per-item record of which DA scale each vote
             # was cast on (mixed generations are expected mid-bake-off).
             entry["da_scale_by_item"] = da_scales
+        # H1650 / A2: every number names the comparison kind (no unlabelled
+        # "cross-rubric agreement"). After A2 only DA has a human arm; mqm/
+        # likert/pairwise agent files are agent-only unless a human decisions
+        # file was still present from pre-A2.
+        comparison = "agent-vs-human" if sheet_id == "h178_da" else "agent-vs-human-if-votes-else-agent-only"
+        if sheet_id in RETIRED_A2:
+            comparison = "agent-only-preferred-after-A2 (human votes retired)"
+        entry["comparison_kind"] = comparison
         if human_bin:
             labels = sorted(set(human_bin) | set(model_bin))
-            entry["kappa_human_x_model"] = round(_kappa(human_bin, model_bin, labels), 3)
+            entry["kappa_agent_vs_human"] = round(_kappa(human_bin, model_bin, labels), 3)
+            entry["kappa_human_x_model"] = entry["kappa_agent_vs_human"]  # alias
         if h_scores and m_scores and len(h_scores) == len(m_scores) and len(h_scores) > 2:
-            entry["spearman_human_x_model"] = round(_spearman(h_scores, m_scores), 3)
+            entry["spearman_agent_vs_human"] = round(_spearman(h_scores, m_scores), 3)
+            entry["spearman_human_x_model"] = entry["spearman_agent_vs_human"]
             mean = sum(h_scores) / len(h_scores)
             entry["human_score_sd"] = round(math.sqrt(
                 sum((x - mean) ** 2 for x in h_scores) / len(h_scores)), 3)  # discrimination
@@ -654,10 +705,63 @@ def cmd_compute(args):
             entry["spearman_human_x_cometkiwi"] = round(
                 _spearman([a for a, _ in c_scores], [b for _, b in c_scores]), 3)
         report[sheet_id] = entry
+    report["_meta"] = {
+        "H1650": "A2 retired mqm/likert/pairwise human arms; metrics labelled agent-vs-human or agent-only",
+        "no_human_x_human_cross_rubric": True,
+        "frozen_sample": True,
+    }
     out = os.path.join(EVAL_DIR, "h178_bakeoff_report.json")
     json.dump(report, io.open(out, "w", encoding="utf-8"), indent=1)
     print(json.dumps(report, indent=1))
     print("->", out)
+
+
+def cmd_agent_pass():
+    """H1650: write agent-channel labels for retired mqm/likert/pairwise arms.
+
+    Uses DeepSeek channel (DS_CHANNEL) when present; otherwise a deterministic
+    structural fallback so compute can still label agent-only metrics.
+    Does NOT re-open human sheets.
+    """
+    os.makedirs(EVAL_DIR, exist_ok=True)
+    items_raw = load_sample() if os.path.exists(SAMPLE) else []
+    if not items_raw:
+        print("no sample — run: python src/h178_eval_bakeoff.py sample")
+        return 1
+    ds = {}
+    if os.path.exists(DS_CHANNEL):
+        for l in io.open(DS_CHANNEL, encoding="utf-8"):
+            d = json.loads(l)
+            ds[d["id"]] = d
+    out_path = os.path.join(EVAL_DIR, "h178_agent_pass_A2.jsonl")
+    n = 0
+    with io.open(out_path, "w", encoding="utf-8") as fh:
+        for it in items_raw:
+            iid = it["id"]
+            dj = (ds.get(iid) or {}).get("verdict") or {}
+            # structural MQM: omission/addition from gloss-slot counts
+            de, ru = it.get("de") or "", it.get("ru") or ""
+            de_n = len(re.findall(r"\{%[\s\S]*?%\}", de))
+            ru_n = len(re.findall(r"\{%[\s\S]*?%\}", ru))
+            mqm = {c: "none" for c in MQM_CATS}
+            if de_n != ru_n:
+                mqm["omission" if ru_n < de_n else "addition"] = "minor"
+            rec = {
+                "id": iid,
+                "source": "deepseek_channel" if dj else "structural_fallback",
+                "mqm": dj.get("mqm") or mqm,
+                "adequacy": dj.get("adequacy"),
+                "fluency": dj.get("fluency"),
+                "da": dj.get("da"),
+                "pairwise": dj.get("pairwise"),
+                "comparison_kind": "agent-only",
+            }
+            fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
+            n += 1
+    print("agent_pass A2: %d rows -> %s" % (n, out_path))
+    print("H274: use h178_da human decisions + this file for agent arms; "
+          "every metric must say agent-vs-human or agent-only.")
+    return 0
 
 
 def selftest():
@@ -685,8 +789,10 @@ def selftest():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("cmd", choices=["sample", "baseline", "judge", "sheets",
-                                    "comet", "compute", "selftest"])
+                                    "agent_pass", "comet", "compute", "selftest"])
     ap.add_argument("--decisions", help="dir with h178_<rubric>.decisions.json votes")
+    ap.add_argument("--all-rubrics", action="store_true",
+                    help="H1650: also remake RETIRED A2 sheets (mqm/likert/pairwise)")
     args = ap.parse_args()
     if args.cmd == "sample":
         cmd_sample()
@@ -695,7 +801,9 @@ def main():
     elif args.cmd == "judge":
         cmd_judge()
     elif args.cmd == "sheets":
-        cmd_sheets()
+        cmd_sheets(all_rubrics=args.all_rubrics)
+    elif args.cmd == "agent_pass":
+        sys.exit(cmd_agent_pass() or 0)
     elif args.cmd == "comet":
         sys.exit(cmd_comet() or 0)
     elif args.cmd == "compute":

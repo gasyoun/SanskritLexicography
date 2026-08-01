@@ -73,6 +73,7 @@ import re
 import sys
 
 from csl_pyutil import render_review_sheet
+from sheet_screening import screening_block
 from review_binding import stamp, write_lock
 from review_residue_gate import machine_flags, visible_german
 from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config
@@ -450,11 +451,37 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
     config.update(standard_config(
         save_as="RussianTranslation\\review\\%s_decisions.json" % SHEET_ID))
 
-    doc = render_review_sheet(items, config, extras=True)
+    # H1650 / Б: machine-flags auto-rejected count as rejects in N=150 stats
+    n_human = len(items)
+    sc = screening_block(
+        deterministic=n_mflag + n_german,
+        lookup=0,
+        agent=0,
+        human=n_human,
+        evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
+        rules=["visible_german_residue", "machine_flags_D1_D3_D4", "P1-auto-reject"],
+    )
+    doc = render_review_sheet(items, config, extras=True, screening=sc)
     doc, chash = stamp(doc)
     os.makedirs(REVIEW, exist_ok=True)
     with io.open(args.out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(doc)
+    # Ledger: every print-readiness figure must state N = queue-window with
+    # machine rejects in the denominator (Б ruling).
+    ledger = {
+        "N_print_readiness_window": n_decided + n_german + n_mflag + n_human,
+        "human_cards_on_sheet": n_human,
+        "machine_rejects_D1_D3_D4": n_mflag,
+        "german_residue_excluded": n_german,
+        "already_decided": n_decided,
+        "rule": "MG Б 26-07-2026 — auto-reject counts as reject, not dropped from N",
+        "H1650": True,
+    }
+    ledger_path = os.path.join(REVIEW, "g5_machine_rejects_h1650.json")
+    with io.open(ledger_path, "w", encoding="utf-8") as fh:
+        json.dump(ledger, fh, ensure_ascii=False, indent=2)
+        fh.write("\n")
+    print("G5 stats ledger (N includes machine rejects):", ledger)
     lock_path = write_lock(SHEET_ID, chash, [it["id"] for it in items], GENERATED,
                            locks_dir=args.locks_dir, gate="G5", source_html=args.out,
                            force=force_lock)

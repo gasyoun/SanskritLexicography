@@ -46,6 +46,7 @@ import sys, os, io, json, html, re, collections
 from csl_pyutil import render_review_sheet, mark_cyrillic
 from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config, slp1_iast, pwg_entry_href
+from sheet_screening import citation_evidence_panel, screening_block
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -82,7 +83,13 @@ def write_sheet(slug, cfg, items):
         save_as="RussianTranslation\\pwg_ru\\eval\\h180_%s.decisions.json" % slug)
     config.update(cfg)
     config["generated"] = GENERATED
-    doc = render_review_sheet(items, config, extras=True)
+    # H1650/H1649: screening banner required (csl-pyutil ≥0.8.0)
+    sc = screening_block(
+        deterministic=0, lookup=0, agent=0, human=len(items),
+        evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
+        rules=["citation_tm", "h180-%s" % slug],
+    )
+    doc = render_review_sheet(items, config, extras=True, screening=sc)
     # H1404 binding standard: stamp the content_hash into every export site and
     # commit-safe lock the sheet's identity (metadata only — no RU leaves the
     # gitignored HTML). NB voted.md item 2: do not regenerate these sheets while
@@ -143,6 +150,7 @@ def build_typology(by_sub):
             f'op/dir    : {esc(rel["op"])} / {esc(rel["direction"])}\n'
             f'target    : {esc(ip["target_sense"])} (anchor {esc(ip["anchor"])})\n'
             f'evidence  : {esc(rel.get("evidence",""))}</pre>')
+        cite_h, cite_b = citation_evidence_panel(rec.get("de") or "")
         items.append({
             "id": f'{r["subcard"]}::{r["sense_tag"]}',
             "filt": r["layer"],
@@ -155,7 +163,8 @@ def build_typology(by_sub):
             "note_placeholder": "if reject: correct subtype + why (e.g. 'nws_at_sense, attaches to sense 2')",
             "panels": [("LLM proposal (confidence: llm)", proposal),
                        ("Sub-card — Russian (ru)", f'<pre>{mark_cyrillic(ru)}</pre>'),
-                       ("Sub-card — source (de)", f'<pre>{de}</pre>')],
+                       ("Sub-card — source (de)", f'<pre>{de}</pre>'),
+                       (cite_h, cite_b)],
         })
     return items
 
