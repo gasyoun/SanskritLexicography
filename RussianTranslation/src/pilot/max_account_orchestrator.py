@@ -1146,7 +1146,8 @@ def _probe_prompt(payload_bytes):
 
 
 def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
-                reservation_purpose='probe', account=None, active_claim=None):
+                reservation_purpose='probe', account=None, active_claim=None,
+                timing_out=None):
     """One raw >=5 KB exact-model probe call. Returns (latency_ms, classification, output_bytes);
     classification is 'success' | 'auth' | 'rate_limit' | 'malformed' | 'content' | 'process' |
     'timeout'. NEVER raises on a non-zero rc — the two-phase gate (``live_probe``) decides what to
@@ -1163,7 +1164,8 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
         with ActiveCallClaim(fingerprint) as claim:
             return _probe_call(
                 config_dir, claude, payload_bytes, model, call_reservation,
-                reservation_purpose, account, active_claim=claim)
+                reservation_purpose, account, active_claim=claim,
+                timing_out=timing_out)
     if (not isinstance(active_claim, ActiveCallClaim)
             or not active_claim.is_live_canonical_for(fingerprint)):
         raise ValueError('probe active-call claim does not bind config directory')
@@ -1199,6 +1201,14 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
     except (ValueError, TypeError):
         wrapper = None
     telemetry = telemetry_from_cli_wrapper(wrapper)
+    # H2079 / #945: hand the envelope's own timings back to the caller so a reading can be recorded
+    # as route-time + gap rather than as one opaque wall number. Populated for ANY call that
+    # produced a parseable envelope — including a failed one, where the decomposition is most
+    # informative. Stays empty on a timeout (no envelope survives), and the caller emits nothing.
+    if timing_out is not None:
+        for name in ('duration_ms', 'duration_api_ms'):
+            if telemetry.get(name) is not None:
+                timing_out[name] = telemetry[name]
     if proc.returncode:
         call_reservation.finalize(reservation, telemetry)
         return latency_ms, (_probe_err_class(combined) or 'process'), output_bytes
@@ -1261,28 +1271,37 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
     if call_reservation is None:
         raise ValueError('paid probe requires a call reservation ledger')
 
-    def _emit(purpose, latency, cls, obytes):
+    def _emit(purpose, latency, cls, obytes, timing=None):
         if events_path:
+            # H2079 / #945: record API time and the wall-minus-API gap BESIDE the wall reading.
+            # `elapsed_ms` stays the gated number and the ceiling is unchanged — this only makes a
+            # reading decomposable after the fact, which is exactly what the 15-07 / 16-07 / 31-07
+            # c4 series lacked. Both are dropped by append_event when absent (timeout, no envelope).
+            api_ms = (timing or {}).get('duration_api_ms')
             append_event(events_path, run_id=run_id, account=account, stage='probe',
                          event='probe_call', purpose=purpose, elapsed_ms=latency,
                          model=model, output_bytes=obytes, classification=cls,
                          policy=PROBE_POLICY, executor_lane=PROBE_LANE,
-                         schema_valid=(cls == 'success'))
+                         schema_valid=(cls == 'success'),
+                         duration_api_ms=api_ms,
+                         api_gap_ms=(latency - api_ms) if api_ms is not None else None)
 
     # One profile claim covers the WHOLE pair. Releasing between warmup and measured allowed
     # another paid worker to interleave on the same config directory and invalidated the reading.
     with ActiveCallClaim(config_dir_fingerprint(config_dir)) as active_claim:
+        warm_timing = {}
         warm_ms, warm_cls, warm_bytes = _probe_call(
             config_dir, claude, payload_bytes, model, call_reservation,
-            'probe:warmup', account, active_claim=active_claim)
-        _emit('warmup', warm_ms, warm_cls, warm_bytes)
+            'probe:warmup', account, active_claim=active_claim, timing_out=warm_timing)
+        _emit('warmup', warm_ms, warm_cls, warm_bytes, warm_timing)
         if warm_cls != 'success':
             raise SystemExit('warm-up probe %s -> STOP (auth/model/output/rate-limit/timeout)' % warm_cls)
 
+        meas_timing = {}
         meas_ms, meas_cls, meas_bytes = _probe_call(
             config_dir, claude, payload_bytes, model, call_reservation,
-            'probe:measured', account, active_claim=active_claim)
-        _emit('measured', meas_ms, meas_cls, meas_bytes)
+            'probe:measured', account, active_claim=active_claim, timing_out=meas_timing)
+        _emit('measured', meas_ms, meas_cls, meas_bytes, meas_timing)
         if meas_cls != 'success':
             raise SystemExit('measured probe %s -> honest NO-GO (no retry, no re-warm)' % meas_cls)
         if meas_ms >= latency_ceiling_ms:

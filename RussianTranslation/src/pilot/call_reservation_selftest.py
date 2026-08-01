@@ -168,7 +168,69 @@ def main():
         except CallLimitReached:
             pass
         assert sweep_zero.spent() == 0
-    print('call_reservation_selftest: PASS (0/1/N, race/resume, finalization, probes/cost)')
+    _test_h2079_945_duration_capture()
+    print('call_reservation_selftest: PASS (0/1/N, race/resume, finalization, probes/cost, durations)')
+
+
+def _test_h2079_945_duration_capture():
+    """H2079 / #945: the envelope's own timings are captured, and their absence is byte-invisible.
+
+    Wall clock alone cannot separate a slow route from an in-CLI retry storm, which is what made the
+    c4 latency series unusable as route evidence. The discriminator was already in the envelope and
+    thrown away. The backward-compat half matters as much as the capture: `_read()` re-validates
+    every stored item and `finalize()` compares an already-finalized item against a freshly
+    normalized one, so a pre-H2079 ledger must normalize to EXACTLY the bytes it already holds.
+    """
+    import call_reservation as cr
+
+    # 1. captured from the envelope, alongside (not instead of) the token/cost fields
+    tel = cr.telemetry_from_cli_wrapper({
+        'usage': {'input_tokens': 10, 'output_tokens': 2,
+                  'cache_read_input_tokens': 0, 'cache_creation_input_tokens': 90485},
+        'total_cost_usd': 0.29, 'duration_ms': 78415, 'duration_api_ms': 12987,
+    })
+    assert tel['duration_api_ms'] == 12987 and tel['duration_ms'] == 78415, tel
+    assert tel['cost_evaluable'] is True and tel['cache_creation_tokens'] == 90485, tel
+    # the decomposition the whole issue exists to make possible
+    assert tel['duration_ms'] - tel['duration_api_ms'] == 65428
+
+    # 2. ABSENT -> the keys must not appear at all (never an explicit None)
+    bare = cr.telemetry_from_cli_wrapper({'usage': {}, 'total_cost_usd': 0.0})
+    assert 'duration_ms' not in bare and 'duration_api_ms' not in bare, bare
+    assert cr.normalize_telemetry(dict(bare)) == bare, 'pre-H2079 telemetry did not round-trip'
+    assert 'duration_ms' not in cr.unevaluable_telemetry()
+
+    # 3. a garbage duration must NOT demote cost evaluability (evaluability is about COST)
+    for junk in (-1, float('nan'), True, 'fast', None):
+        noisy = cr.telemetry_from_cli_wrapper({
+            'usage': {'input_tokens': 1, 'output_tokens': 1,
+                      'cache_read_input_tokens': 0, 'cache_creation_input_tokens': 0},
+            'total_cost_usd': 0.01, 'duration_api_ms': junk})
+        assert noisy['cost_evaluable'] is True, (junk, noisy)
+        assert 'duration_api_ms' not in noisy, (junk, noisy)
+
+    # 4. an explicitly invalid duration handed straight to the validator is still refused
+    for junk in (-1, float('inf'), True):
+        try:
+            cr.normalize_telemetry({'cost_evaluable': False, 'duration_api_ms': junk})
+        except ValueError:
+            pass
+        else:
+            raise AssertionError('normalize_telemetry accepted duration %r' % (junk,))
+
+    # 5. it survives a real reserve/finalize round trip AND the ledger's own consistency re-read
+    with tempfile.TemporaryDirectory() as td:
+        path = os.path.join(td, 'ledger.json')
+        ledger = CallReservationLedger(path, 'h2079', max_calls=2)
+        item = ledger.finalize(ledger.reserve('probe'), tel)
+        assert item['telemetry']['duration_api_ms'] == 12987, item
+        reread = CallReservationLedger(path, 'h2079', max_calls=2).snapshot()
+        assert reread['reservations'][0]['telemetry']['duration_api_ms'] == 12987
+        # durations must NOT leak into the cumulative usage block (that is tokens + cost only)
+        assert 'duration_api_ms' not in reread['usage'], reread['usage']
+        # finalize() is idempotent only if normalization is stable across the new field
+        assert ledger.finalize(item, tel)['telemetry']['duration_api_ms'] == 12987
+    print('  H2079 #945: duration_ms/duration_api_ms captured, absent-is-invisible, ledger-stable')
 
 
 if __name__ == '__main__':
