@@ -83,6 +83,32 @@ tracked-file drift and is wired into `window_selftest.py`
   saved run ID, manifest SHA-256, profile binding, sealed preflight SHA-256 and exact
   selected-key scope, plus the reservation ledger. The worker seals its result SHA-256;
   `record-output`/`record-output-batch` require the matching run and result hash.
+- **Run every headless call from a BARE cwd — not from the repo (02-08-2026, measured).**
+  The CLI injects `CLAUDE.md` + git state into its prompt prefix, and that injection is worth
+  **~11–17 k re-created cache tokens per call**. Measured on identical `--max-turns 1` calls:
+  repo cwd **$0.3036 / 26–29 s**, bare cwd **$0.2040 / 19–20 s** — **−33 % cost, −30 % wall
+  clock for changing one directory**, no code change and no guard weakened. Pass an empty
+  scratch dir as the subprocess `cwd`; the manifest carries every input the worker needs, so
+  nothing depends on being inside the repo.
+- **The per-call cache is NEVER reused — budget for it, do not try to tune it away.** Two
+  *identical* back-to-back calls each re-created ~49 k tokens (49 153 → 49 165, cache read
+  pinned at 28 882): the second re-wrote exactly what the first had just written. The write is
+  a premium **cache create** (~$6/M), not a **read** (~$0.30/M), and at ~$0.30 it *is* the cost
+  of a call that translates nothing. **This is not TTL expiry** — the write lands in
+  `ephemeral_1h_input_tokens` and a 1-hour TTL cannot lapse between calls issued seconds apart.
+  A one-shot subprocess cannot amortise its own system prompt; that is a property of the route.
+  Do not "fix" it by batching (see the shape ruling below). Route change tracked in
+  [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md);
+  measurement in [`RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md)
+  + [Uprava FINDINGS §284](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
+- **Call shape: ONE card per call — and shape is not the lever (H2152, 02-08-2026).** Quota and
+  the 180 s per-call wall bind in **opposite** directions: a quota ceiling penalises *many*
+  calls, a wall-clock ceiling penalises *large* ones. Whichever binds decides the shape, and as
+  of 02-08 it is wall clock, so the small shape wins — which is also what MG's
+  instrument-everything mandate asks for, so the two are not in conflict. `--output-budget=1`
+  is the existing one-card lane; nothing needs building. **Do not flip to batching to save
+  cost:** batching also makes one unevaluable call destroy per-card attribution for *all* N
+  cards in it. Full reasoning: [`pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md).
 - **Live-gate before every paid window:** fresh
   [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
   (representative ≥5 KB health + separate `dq_canary_puregloss`). A previous session's GO
@@ -512,6 +538,15 @@ For each bounded headless window, record:
 - wall-clock minutes;
 - CLI-reported input/output/cache tokens and observed cost, or the explicit
   unevaluable-cost stop;
+- **`cache_creation_input_tokens` vs `cache_read_input_tokens` SEPARATELY, per call** — not a
+  combined total. Creation is billed ~20× read, so the split is the whole cost story, and a
+  combined figure hides it. Record the TTL bucket too (`cache_creation.ephemeral_1h…` vs
+  `…_5m…`): that single field is what refuted the "cache expired" explanation without needing
+  an experiment (FINDINGS §284). Note that `subagent_tokens` is a **legacy misnomer** for the
+  sum of the four token fields — no subagents are involved; never read it as scaffolding cost;
+- **`duration_api_ms` alongside wall clock**, and the derived `api_gap_ms` between them. Gating
+  on wall clock alone silently encodes machine load and CLI startup into what is supposed to be
+  a route measurement (§267/§270 both mis-attributed the same gap);
 - whether the weekly cap fired, and cumulative tokens at that moment.
 
 `audit_window.py` records the operational state, next action, sample counts, and any token/time
