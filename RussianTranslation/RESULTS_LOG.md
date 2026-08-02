@@ -36,6 +36,186 @@ $1.3182 with `cost_evaluable=false` (one 300 s dead call contributes 0).
 
 ⚠️ Raw ledger is gitignored (`.gitignore:67`) — this table is the only committed copy.
 
+## 02-08-2026 (H2011, at the OLD 180 s ceiling) — c4 gate **PASS**, canary **PASS**, and the first per-CARD observed economics on the production route
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2011](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2011-Opus_RussianTranslation_c4-gate-ceiling-decision-and-live-optimisation_31.07.26.md)
+via [/pwg-live-gate](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+then [/pwg-bounded-run](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-bounded-run.md).
+**8 paid calls total** (2 gate + 1 canary + 5 window), **no promotion, no store write, no TM
+mutation, no constant moved.** Run from worktree `SL-h2011-15072` off `origin/master`
+[`64a4fa62`](https://github.com/gasyoun/SanskritLexicography/commit/64a4fa62).
+
+⚠️ **Ceiling context:** this window ran at `HARD_TIMEOUT_MS = 180000`, i.e. **before**
+[v1.128.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.128.0) raised it to
+300 s. Read alongside the 300 s re-run entry above — the two agree and each supplies what the
+other lacks. That entry shows `translate b0` dying at **both** 180 044 and 300 073 ms (a
+non-terminating call, not a tight ceiling); this one shows the *heal* lane's kills are pure
+variance, with the identical fragment failing twice and then finishing in 142.6 s. Together:
+**raise the ceiling for the heal lane, and stop filing the whole-card hang under "ceiling".**
+
+### Step 1 — health, `h963_c4_gate0_probe.py`, run `…2026-08-02T05:46:22Z-pid25748`
+
+| purpose | wall `elapsed_ms` | `duration_api_ms` | `api_gap_ms` | ceiling | class |
+|---|---|---|---|---|---|
+| warm-up | 55 390 | 37 690 | 17 700 | 65 000 | success |
+| **measured** | **43 815** | **26 386** | **17 429** | 65 000 | success |
+| *(prior, 01-08)* | 50 336 | 27 557 | 22 779 | 65 000 | success |
+
+**GATE-0 VERDICT: PASS** — measured 43 815 ms is 1.48× under the ceiling and the **fastest
+decomposed** c4 reading on record. `api_gap` has now been ~17–23 s across three consecutive
+uncontaminated readings, i.e. the non-API overhead is **stable**, not drifting.
+
+### Step 2 — canary `dq_canary_puregloss~~h0_zz_pw`, manifest v2, headless CLI, ONE call
+
+Manifest built by the canonical builder ([`gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py)
+`--nominal --no-grammar --manifest-out`), **never hand-written** — so the prompt is production's
+own (preamble 1 226 ch + translation 12 423 ch), which is the H2011 trap this avoids.
+`validate_manifest(require_v2=True)` OK, live `config_dir_fingerprint` match, sha256
+`47e10d4b…5ce2`.
+
+| axis | value |
+|---|---|
+| wall clock | **121 693 ms** (68 % of the 180 000 ms `HARD_TIMEOUT_MS`) |
+| classification | `success`, 0 null, 0 heal, 0 budget stops |
+| senses | **3/3** rendered |
+| audit ([`audit_window.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py) `--ephemeral`) | 1/1 clean, 0 requeue; SAN-LOSS sense-count **PASS**, sense-dupe **PASS**, ru_style **PASS**, coverage 1/1 |
+| `observed_cost_usd` | **$0.8660853**, `cost_evaluable: true` |
+
+**`gate_reason = LIVE_GO`, `verdict = GO`** — derived mechanically, not asserted.
+
+### The cost decomposition reproduces to the seventh decimal — a third independent confirmation
+
+| component | tokens | list rate | cost | share |
+|---|---|---|---|---|
+| **cache creation** | **106 072** | $6/M | **$0.636432** | **73.5 %** |
+| cache read | 380 511 | $0.30/M | $0.114153 | 13.2 % |
+| output | 7 698 | $15/M | $0.115470 | 13.3 % |
+| input | 10 | $3/M | $0.000030 | 0.0 % |
+| **total** | | | **$0.8660853** | vs recorded **$0.8660853** |
+
+So [PR #986](https://github.com/gasyoun/SanskritLexicography/pull/986)'s ~71 % (a heal call) and
+[PR #994](https://github.com/gasyoun/SanskritLexicography/pull/994)'s 87.6 % (a trivial ping) are
+now joined by **73.5 % on a real, schema-carrying, single-card translation** — the one call class
+none of the earlier probes covered. The finding is not an artefact of trivial payloads.
+
+### The preflight cost model is 5.8× low on a real card
+
+[`perf_preflight.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/perf_preflight.py)
+projected **$0.15** for this exact key; the ledger recorded **$0.8661**. That is a **5.8×**
+underestimate, sharper than the 4.7× recorded against `PER_AGENT_USD_HEALTHY = 0.113` in
+[issue #949](https://github.com/gasyoun/SanskritLexicography/issues/949) — and it is measured on
+one card, with `cost_evaluable: true`, so it is not the missing-telemetry class.
+
+⚠️ **n = 1 card.** This is an observed per-card figure, not a campaign rate. ⚠️ The worker records
+`elapsed_ms` only, so the canary's wall clock is **not** decomposable into API vs overhead the way
+the gate rows are.
+
+### Soft advisory, reported because it is not zero
+
+The canary card came back with the `{%…%}` gloss wrapper **dropped on all three senses**
+(`markup_wrapper_dropped` ×3, `high_confidence=0`). Classified low-severity by
+[`prompt_rule_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/prompt_rule_audit.py)
+— meaning intact, wrapper gone — so it never blocks the gate, and the canary's own gate (the
+SAN-LOSS sense-count guard) passed. Noted because [PR #789](https://github.com/gasyoun/SanskritLexicography/pull/789)
+ruled `{%…%}` the store's documented convention and a dropped wrapper drift, not an alternative.
+
+### Step 3 — the bounded one-card-per-call window: 5 calls, 1 partial card, 4 kills at the wall
+
+3 real cards (`rAtra` 2 418 B · `divA` 2 993 B · `SvAsa` 11 480 B), `--output-budget=1`,
+`--max-agents 5 --max-calls 5 --timeout 180`, driven straight through
+[`headless_worker.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/headless_worker.py)
+on the validated nominal manifest. **5 paid calls. No promotion, no store write** — the audit ran
+`--ephemeral`.
+
+| # | call | keys | rc | wall | class |
+|---|---|---|---|---|---|
+| 1 | `b0` (whole-card translate) | `rAtra` | 124 | **180 025 ms** | timeout |
+| 2 | `heal:rAtra#g1` | `rAtra_f0` | 124 | **180 020 ms** | timeout |
+| 3 | `heal:rAtra#g2` | `rAtra_f0` | 124 | **180 072 ms** | timeout |
+| 4 | `heal:rAtra#g3` | `rAtra_f0` | 0 | **142 638 ms** | **success** |
+| 5 | `heal:divA#g1` | `divA_f0..f2` | 124 | **180 100 ms** | timeout |
+
+Result: `completed_with_residuals` — **1 of 3 cards**, and that one only **partial**.
+`divA` → `timeout`, `SvAsa` → `budget_exceeded:heal` (never reached). `kill_timeouts: 4`,
+`conn_errors: 0`, `budget_stops: 2`.
+
+**The single most useful number here: `rAtra`, the smallest real card in the input set, cost
+682 755 ms — 11.4 minutes — and 4 calls to yield one partial card.** The 02-08 morning run's "16
+calls, 0 cards" was not a big-card problem; it reproduces at the floor.
+
+**But the wall is a variance problem, not a size problem, and that is new.** Calls 2, 3 and 4 are
+the *identical* fragment `rAtra_f0`. Two died at 180 s; the third finished in **142.6 s**. The work
+fits inside the ceiling — the ceiling just clips a heavy right tail. So "the lane cannot finish"
+is too strong: what is true is that a fixed 180 s wall turns a long-tailed latency distribution
+into a ~75 % kill rate, and each kill costs a full call.
+
+### Failure-class composition — the axis H1940 Phase 2 was supposed to move
+
+| class | count | detail |
+|---|---|---|
+| **defect** (real content failure) | **0** | — |
+| transient (cheap re-run) | 3 | `rAtra` (partial), `divA`, `SvAsa` |
+| null reasons | 2 | `timeout` ×1, `budget_exceeded` ×1 |
+
+**This is the before/after result MG asked for, and it is a pass on the axis that was actually
+worked.** [PR #911](https://github.com/gasyoun/SanskritLexicography/pull/911) and predecessors were
+durability and classification work, not speed work — and every failure in this window is
+classified `transient`/`budget_exceeded`, **none misfiled as a content defect** (the H2a/H2b class),
+with no hot-spin, no stranded cohort and no lost checkpoint. Throughput did not improve, exactly as
+the handoff predicted it might not; correctness of attribution did.
+
+### Cost: the ledger under-reports this window ~5×
+
+| field | value |
+|---|---|
+| `observed_cost_usd` | **$0.6206808** |
+| `cost_evaluable` | **false** |
+| `priced_calls` / `missing_usage_calls` | 5 / **4** |
+| tokens (the one priced call) | in 6 · out 8 702 · cache read 208 636 · **cache create 71 257** |
+
+The recorded figure is the **one successful call**; the four kills return no envelope, so
+[`unevaluable_telemetry()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/call_reservation.py)
+books them as zero. Real spend is ≈5× the recorded number. The priced call again decomposes to the
+cent — 71 257 × $6/M + 208 636 × $0.30/M + 8 702 × $15/M + 6 × $3/M = **$0.6206808** vs recorded
+**$0.6206808** — with **cache creation at 68.9 %**. That is the third call class in one day
+(heal 71 %, ping 87.6 %, canary 73.5 %, this heal 68.9 %) where the dominant charge is
+payload-independent scaffolding.
+
+⚠️ **Do not scale this to the campaign.** n = 3 cards, 1 completed, on one profile in one hour.
+A projection would multiply a 4-call-per-card figure that is itself a variance artefact.
+
+### And the shape finding, free from the build
+
+At `--output-budget=1`, `divA` (47 `<ls>`) and `SvAsa` (82 `<ls>`) **exceed the budget and route to
+direct fragment translation** before any call is made. So "one card per call" is one call only for
+small cards; citation-heavy cards expand into the presplit/heal lane, which is where 4 of these 5
+calls went. Option A in [H2152](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2152-Opus_RussianTranslation_c4-quota-call-shape-audit_02.08.26.md)
+§4 is therefore not a one-call-per-card lane in practice, and its per-card attribution is diluted
+by exactly the fragment groups the ledger cannot price.
+
+**First attempt, same window, blocked and recorded:** an earlier launch was refused before any paid
+call with `classification: configuration`, `profile already has an active model call` — the
+kernel-backed `ActiveCallClaim` on the c4 fingerprint was held by a **concurrent live session**.
+Zero spend; the R9 guard did exactly its job.
+
+### The `h1339_offline_bench` byte-identity control is STALE
+
+H2011 names `9bd2a14297` as the control that must be unchanged. It does not reproduce:
+
+| commit | date | interpreter | signature |
+|---|---|---|---|
+| [`64a4fa62`](https://github.com/gasyoun/SanskritLexicography/commit/64a4fa62) (HEAD) | 02-08 | 3.14.4 | `586d012b3d` |
+| [`a75eaa17`](https://github.com/gasyoun/SanskritLexicography/commit/a75eaa17) | 31-07 | 3.14.4 | `586d012b3d` |
+| [`a75eaa17`](https://github.com/gasyoun/SanskritLexicography/commit/a75eaa17) | 31-07 | 3.12 | `586d012b3d` |
+| [`005d2f0f`](https://github.com/gasyoun/SanskritLexicography/commit/005d2f0f) | 30-07 | 3.14.4 | `586d012b3d` |
+
+`a75eaa17` is the **very commit** whose close-out recorded "signature `9bd2a14297` unchanged".
+Fixture content hash `569660c689d0659b`, 24 files, untouched since 25-07-2026; the bench still
+reports `deterministic outputs: True (1 signature)` and identical fx1–fx5 outcomes. So determinism
+holds and the *relative* control still works — what is broken is the **documented absolute value**,
+which has been carried forward in prose across at least three commits without reproducing. A
+byte-identity control nobody can reproduce is not a control.
+
 ## 02-08-2026 (later still) — the cache prefix is UNSTABLE, not expiring: a second identical call re-creates what the first just wrote
 
 Opus 5 1M (`claude-opus-5[1m]`), follow-on to the H2152 audit. **4 paid calls, $1.0469, no
