@@ -13,5 +13,6 @@ _Created: 02-08-2026 · Last updated: 02-08-2026_
 - **Limitations:** weekly-cap figures for Max plans are Anthropic-side and drift; the plan pins none. Routine session capabilities (length, env) are assumed sufficient for a mini-window — Wave-2 spike verifies before build.
 - **Revision history:**
   - 02-08-2026 — created with the four layer docs (Fable 5, `claude-fable-5`).
+  - 02-08-2026 — amendments R5.1 (profile fallback c4→c1→c5→c6) + R5.2 (DeepSeek key found in `ORS-FAQ/.env`, OpenRouter on Systema prod — Wave-0 key @DO resolved) recorded same day (Fable 5, `claude-fable-5`).
 
 _Dr. Mārcis Gasūns_

@@ -43,6 +43,8 @@ Interview: 4 rounds / 16 rulings, MG, 02-08-2026, elicited by Fable 5 (`claude-f
 | R4.2 | Ambiguity | Park-and-skip: unclassifiable item → `parked/` queue with a one-line reason; lane continues; parked items surface in the weekly review. |
 | R4.3 | Fence | All four: (a) TM store written ONLY by the promoter path; (b) csl-orig + Cologne dictionary repos never touched by automation; (c) on samskrte.ru the runner gets its own user + systemd CPU/memory/disk limits, zero contact with the Systema stack; (d) profile dirs scp-only, and the interactive account is never used by an automated lane. |
 | R4.4 | Human loop | 5-min daily digest + one 30-min weekly review (packet: per-lane throughput/cost/defect table, parked items, experiment verdicts, staged decisions due). |
+| R5.1 | Profile fallback (amendment, MG 02-08-2026) | If c4 does not work, try **c1, c5, c6 in this order** for the Claude CLI lane — the scheduler's live-gate NO-GO/unbindable path walks this roster (each slot still needs its own validated fingerprint; `STOP_PROFILE_UNBINDABLE` semantics unchanged). |
+| R5.2 | External-lane credentials (amendment, MG 02-08-2026) | Agent finds the OpenRouter/DeepSeek credentials in the org, not MG: **DeepSeek key is live in `ORS-FAQ/.env`** (`DEEPSEEK_API_KEY`, base `https://api.deepseek.com/`); **OpenRouter key sits in Systema prod `.env`** on 193.232.229.92 (fetch via `/ssh`; local clone has only the `.env.example` placeholder). Key VALUES never enter a repo — runners read them from env/`.secrets`. |
 
 ## Autonomy contract (binding on every automated lane)
 
@@ -59,8 +61,8 @@ Interview: 4 rounds / 16 rulings, MG, 02-08-2026, elicited by Fable 5 (`claude-f
 
 ## Prerequisites (Wave 0 — human, non-blocking for the wave-1 build)
 
-- @DO MG: provide logins for the 3 non-interactive Max accounts (PC, prod box, routines) — the build proceeds with c4 alone until then.
-- @DO MG: provide a DeepSeek (or OpenRouter) API key for E1 — experiments are staged until it lands.
+- @DO MG: provide logins for the 3 non-interactive Max accounts (PC, prod box, routines) — the build proceeds with c4 alone until then (fallback roster c4 → c1 → c5 → c6 per R5.1).
+- ~~@DO MG: DeepSeek/OpenRouter API key~~ — resolved by R5.2 (02-08-2026): DeepSeek key found live in `ORS-FAQ/.env`; OpenRouter fetchable from Systema prod `.env` via `/ssh`. Agent-doable, no human input needed.
 - @DO MG: confirm Grok 4.5 access route for E2 (subscription session or API).
 
 _Dr. Mārcis Gasūns_
