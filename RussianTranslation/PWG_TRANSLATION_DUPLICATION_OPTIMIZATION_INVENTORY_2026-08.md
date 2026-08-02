@@ -137,17 +137,18 @@ Ranked by **leverage × risk** for a refactor session. Line counts measured
 
 **Optimize** only if a third language lane appears or a shared CLI bug is fixed twice.
 
-### OPT-6 — Citation index coverage double-count (CODE_REVIEW debt)
+### OPT-6 — Citation index coverage double-count (CODE_REVIEW debt) — ✅ DONE H2225
 
 [`CODE_REVIEW_2026-07-04.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CODE_REVIEW_2026-07-04.md):
-`build_citation_index.py` vs `occurrence_stats()` disagree on coverage semantics →
-`CITATION_SOURCES.md` / `UNCOVERED_SOURCES.md` can diverge.
+`build_citation_index.py` vs `occurrence_stats()` disagreed on coverage semantics →
+`CITATION_SOURCES.md` / `UNCOVERED_SOURCES.md` could diverge.
 
 | | |
 |--|--|
 | **Optimize** | One pure function `coverage_key(ls)` used by both. |
 | **Risk** | Low. |
 | **Prove** | Fixed fixture set: both emitters print identical coverage rows. |
+| **Shipped** | 02-08-2026 · Grok 4.5 (`grok-4.5`) · H2225 — `coverage_key` + `coverage_bucket` + `coverage_rows_from_pairs` in [`build_citation_index.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_citation_index.py); `build()` and `occurrence_stats()` both call the kernel; `python src/build_citation_index.py --selftest` green. **Totals shift:** CITATION_SOURCES `unresolved` no longer includes non-coordinate labels (same rule UNCOVERED already used). |
 
 ### OPT-7 — TM serve of failed content (process, not file twin)
 
