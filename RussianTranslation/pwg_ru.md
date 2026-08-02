@@ -326,6 +326,7 @@ HTML, regenerable ledgers.
 | PWG source layer | `csl-orig/v02/pwg/pwg.txt` | read-only input |
 | Operator loop | [RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md) | headless v2 |
 | Parity | [LANG_PARITY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LANG_PARITY.md) | SHARED / INTENTIONAL-DIVERGENCE / GAP |
+| Dup → optimize | [PWG_TRANSLATION_DUPLICATION_OPTIMIZATION_INVENTORY_2026-08.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_TRANSLATION_DUPLICATION_OPTIMIZATION_INVENTORY_2026-08.md) | intentional vs code-twin waste; ranked OPT-1–8 |
 | Live queue | [.ai_state.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md) | subordinate to repo-root journal |
 
 ### 7.3. Открытые / human-gated (не «до запуска»)
