@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.130.0] - 2026-08-02
+
 ### Added
 - **The CLI child now spawns from a bare cwd, not the repo (02-08-2026, Opus 5 1M `claude-opus-5[1m]`, H2158/[#983](https://github.com/gasyoun/SanskritLexicography/issues/983)):** v1.127.0 measured the win (**−33 % cost, −30 % wall clock**) but made no code change. `proc_tree.run_tree_kill` had always accepted `cwd` and passed it to `Popen` — nothing ever supplied one, so the child silently inherited the repo and paid CLAUDE.md + git-state injection (~11–17 k volatile prefix tokens) on **every** call. New `bare_cli_cwd()` returns a **stable** directory (a fresh one per call would re-break the very prefix this stabilises) and **fails safe**: if the candidate still sits inside a git repo or under a `CLAUDE.md` it returns `None` and the historical inherited-cwd behaviour is kept, rather than silently spawning from a directory that still injects context. Pinned by `headless_worker_selftest.test_cli_spawns_from_a_bare_cwd`, which asserts both halves — that a cwd is passed at all, and that what it points at carries no `CLAUDE.md` and no `.git`. The wall-clock half matters beyond cost: a 30 % shorter call is 30 % more headroom against the ceiling.
 
