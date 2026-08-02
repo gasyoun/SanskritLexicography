@@ -44,8 +44,28 @@ comparable numbers are the 01-08 gate readings on schema-carrying prompts (`api_
 directions and only one binds at a time; today it is wall clock, so the small shape is correct —
 MG's instrument-everything mandate and §270 are not in conflict right now. But neither shape
 fixes the current failure: single-fragment heal calls already time out, so there is no smaller
-shape left. The levers are the `HARD_TIMEOUT_MS` ruling (human), the ~50 k-token per-call
-scaffolding, and [#949](https://github.com/gasyoun/SanskritLexicography/issues/949).
+shape left. The levers are the `HARD_TIMEOUT_MS` ruling (human), the **per-call cache
+re-creation** (below), and [#949](https://github.com/gasyoun/SanskritLexicography/issues/949).
+
+### The ping prices out exactly — independent corroboration of the cache-creation finding
+
+The [#986](https://github.com/gasyoun/SanskritLexicography/pull/986) correction landed the same
+night on a *heal* call (cache creation ~71 % of cost). The same arithmetic on this ping — a
+different call class, a trivial 30 B prompt with no translation work — reproduces the ledger to
+the fourth decimal:
+
+| component | tokens | list rate | cost |
+|---|---|---|---|
+| cache creation | 50 450 | $6/M | **$0.3027** |
+| cache read | 107 416 | $0.30/M | $0.0322 |
+| output | 713 | $15/M | $0.0107 |
+| input | 4 | $3/M | $0.00001 |
+| **total** | | | **$0.3456** vs recorded **$0.3456318** |
+
+**Cache creation is 87.6 % of the cost of asking for one word.** The dominant per-call charge is
+entirely payload-independent — not a translation cost, and not something a smaller shape can
+avoid. Since writing ~50–60 k tokens also costs wall clock, this is the one lever that attacks
+both the 4.7× cost overrun and the 180 s wall without touching the 3-minute ruling.
 
 **Premise corrected:** the "~90 k cache-creation per call" figure carried by H2011/H2152 is a
 **two-call aggregate**. Per call it is ~45–50 k ([`perf_preflight.py:55–67`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/perf_preflight.py#L55)

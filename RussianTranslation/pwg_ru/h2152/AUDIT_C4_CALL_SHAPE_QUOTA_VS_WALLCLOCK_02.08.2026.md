@@ -38,10 +38,18 @@ all right now, and the audit's job is to say so rather than to trade one off aga
 **But the honest conclusion goes further, and it is the one worth carrying forward: neither
 shape fixes the current failure.** The 02-08 run died with heal groups **already at the floor** —
 six of `nakzatra`'s eight groups held a *single fragment*, and single-fragment calls still hit
-180 s, because one fragment's heal call burned 199 370 subagent tokens. There is no smaller
-shape than one. Shrinking cannot rescue a lane whose *fixed* per-call cost already consumes the
-budget. So a session that spends itself tuning batch sizes will spend itself on the wrong
-variable. The levers that matter are in §6.
+180 s. There is no smaller shape than one. Shrinking cannot rescue a lane whose *fixed* per-call
+cost already consumes the budget. So a session that spends itself tuning batch sizes will spend
+itself on the wrong variable. The levers that matter are in §6.
+
+> **Folded in after first publication — [PR #986](https://github.com/gasyoun/SanskritLexicography/pull/986), landed the same night.** The 02-08 run's
+> "199 370 **subagent** tokens" was a misnomer, not a measurement of subagent scaffolding:
+> [`call_reservation.py:92`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/call_reservation.py#L92)
+> sets `values['subagent_tokens'] = sum(values.values())`, so the field is the **sum of the other
+> four token fields** under a legacy name. No subagents are involved. The real composition —
+> every call re-creating 56–68 k tokens of **cache** at the premium write rate, ~71 % of its cost —
+> is what the misnomer was hiding. **This does not change the recommendation; it sharpens §6
+> item 2 from "cut per-call overhead" to a named mechanism, and §2 corroborates it independently.**
 
 ---
 
@@ -78,6 +86,25 @@ quota signal.
 
 **Verdict: NOT rate-limited.** A throttled CLI hangs without returning (§270); this returned a
 real envelope with real usage.
+
+**Independent corroboration of the cache-creation finding — this ping prices out exactly.**
+[PR #986](https://github.com/gasyoun/SanskritLexicography/pull/986) reproduced a *heal* call's
+ledger cost from list rates and found cache creation to be ~71 % of it. The same arithmetic on
+this ping — a different call class entirely, a trivial 30 B prompt with no translation work at
+all — reproduces the recorded figure to the fourth decimal:
+
+| component | tokens | list rate | cost |
+|---|---|---|---|
+| cache creation | 50 450 | $6/M | **$0.3027** |
+| cache read | 107 416 | $0.30/M | $0.0322 |
+| output | 713 | $15/M | $0.0107 |
+| input | 4 | $3/M | $0.00001 |
+| **total** | | | **$0.3456** vs recorded **$0.3456318** |
+
+**Cache creation is 87.6 % of the cost of asking for one word.** That is the strongest form of
+the §4 argument: the dominant per-call charge is *entirely independent of the payload*, so it is
+neither a translation cost nor something a smaller shape can avoid — and the ~50 k write also
+costs wall clock, which is why it attacks the 180 s wall and the 4.7× cost overrun at once.
 
 **Caveat, stated so the number is not over-read:** the ping ran a plain agentic loop in a repo
 cwd, so `num_turns: 5` means the 45.7 s gap includes four inter-turn round trips, not pure
@@ -208,10 +235,18 @@ retrospectively. Design deltas, in order of value:
 
 1. **Human ruling on `HARD_TIMEOUT_MS`** (§7). Nothing downstream can be planned around a
    3-minute wall that single-fragment calls already exceed. **Blocking.**
-2. **Cut per-call overhead.** ~50 k cache-creation and 18–46 s of non-API wall per call is the
-   quantity that makes *both* shapes fail: it is what batching exists to amortise and what
-   one-card pays per card. Target the ~25–30 k framework prompt plus subagent scaffolding named
-   in the 02-08 entry. This is the highest-value engineering item and it is shape-independent.
+2. **Stop re-creating the cache on every call.** This is the sharpened form of "cut per-call
+   overhead", and after [PR #986](https://github.com/gasyoun/SanskritLexicography/pull/986) it has
+   a named mechanism: the framework prompt is written to cache **on each invocation** instead of
+   being amortised across them — 56–68 k tokens at the premium write rate on a heal call, 50 450
+   on this memo's trivial ping, while reads sit at only ~35.6 k. That single quantity is **71 %
+   of a heal call's cost and 87.6 % of the ping's**, and it makes *both* shapes fail: it is what
+   batching exists to amortise and what one-card pays per card. Because writing ~60 k tokens also
+   costs wall clock, it is the one lever that attacks the 4.7× cost overrun **and** the 180 s wall
+   **without** touching the "NOTHING runs past 3 min (MG)" ruling. Stated there as a hypothesis
+   and still untested: either the cache prefix is not stable across `claude -p` invocations, or
+   the TTL lapses between 2–3-minute calls. **Testing that is the highest-value next experiment in
+   this whole arc** — and it is cheap.
 3. **Attach drained output on the timeout path** (§5.1) — zero-cost, unblocks quota
    classification permanently.
 4. **Fix cost-unevaluable accounting** ([#949](https://github.com/gasyoun/SanskritLexicography/issues/949)).
