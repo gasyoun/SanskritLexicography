@@ -4,6 +4,59 @@ _Created: 09-07-2026 · Last updated: 02-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 02-08-2026 (later) — H2152 call-shape audit: quota is not binding; wall clock is
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2152](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2152-Opus_RussianTranslation_c4-quota-call-shape-audit_02.08.26.md),
+audit only — **1 paid call, no gate run, no window, no store write, no constant moved.**
+Full memo: [`pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md).
+
+### Same-moment quota/route ping — `claude -p --model claude-sonnet-5`, ~30 B prompt, c4
+
+| field | value |
+|---|---|
+| wall clock | 58 765 ms |
+| `duration_api_ms` | 13 110 ms |
+| derived `api_gap_ms` | **45 655 ms (78 % of wall)** |
+| `cache_creation_input_tokens` | **50 450** (one call) |
+| `cache_read_input_tokens` | 107 416 |
+| `input_tokens` / `output_tokens` | 4 / 713 |
+| `total_cost_usd` | **$0.3456** |
+| `num_turns` | 5 |
+
+**Verdict: NOT rate-limited.** A throttled CLI hangs without returning ([FINDINGS §270](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md));
+this returned a real envelope. Free `claude auth status --json` also green (`loggedIn`, `max`) —
+but that proves credentials, **not** quota: it read the same on 31-07 during the throttle.
+
+⚠️ The ping ran an agentic loop in a repo cwd (`num_turns: 5`), so the 45.7 s gap includes four
+inter-turn round trips and is an **upper bound**, not a clean startup figure. The directly
+comparable numbers are the 01-08 gate readings on schema-carrying prompts (`api_gap` 18 266 /
+22 779 ms, ~45 % of wall). The **token** figures are payload-independent and need no discount.
+
+### Call-shape verdict
+
+| Option | Quota load | Wall-clock load | Viable today |
+|---|---|---|---|
+| A. one card per call (`--output-budget=1`, already implemented) | worst | **best** | **yes** |
+| B. multi-card batch (`OUTPUT_BUDGET=90`, today's default) | best | worst | **no** — successes already at 67 %→91 % of the 180 s budget |
+| C. hybrid | middle | middle | **no** — its bulk half is B |
+
+**HOLD one-card, and stop treating call shape as the lever.** The two ceilings pull in opposite
+directions and only one binds at a time; today it is wall clock, so the small shape is correct —
+MG's instrument-everything mandate and §270 are not in conflict right now. But neither shape
+fixes the current failure: single-fragment heal calls already time out, so there is no smaller
+shape left. The levers are the `HARD_TIMEOUT_MS` ruling (human), the ~50 k-token per-call
+scaffolding, and [#949](https://github.com/gasyoun/SanskritLexicography/issues/949).
+
+**Premise corrected:** the "~90 k cache-creation per call" figure carried by H2011/H2152 is a
+**two-call aggregate**. Per call it is ~45–50 k ([`perf_preflight.py:55–67`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/perf_preflight.py#L55)
+already says ~45 243; this ping measures 50 450). The amortisation prize from batching is **half**
+what both handoffs assumed.
+
+**Attribution amplification, previously unrecorded:** [`call_reservation.py:378`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/call_reservation.py#L378)
+propagates `cost_evaluable=False` from one call to the whole record, so under a batch of N a
+single unevaluable call destroys attribution for **all N** cards. At the 02-08 run's 12/16 rate
+that is a first-class argument for one-card, independent of wall clock.
+
 ## 02-08-2026 — medium50 w1 aborted: the heal lane cannot finish inside its own 3-minute ceiling
 
 Opus 5 1M (`claude-opus-5[1m]`), live paid run on c4 (`h1447-m50-2026-08-02`), **16 calls,
