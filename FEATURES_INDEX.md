@@ -1,6 +1,6 @@
 # FEATURES_INDEX.md — what the Sanskrit Lexicon project actually has
 
-_Created: 04-07-2026 · Last updated: 02-08-2026 (H1909: L5 nws_ls_markup.py bare-citation discriminator)_
+_Created: 04-07-2026 · Last updated: 02-08-2026 (H2110: H8 Systema in-cabinet reading packs; H1909: L5 nws_ls_markup.py bare-citation discriminator)_
 
 **Purpose.** A clickable, capability-first map of the working assets across the ~85
 repositories: the **dictionaries** digitised, the **interfaces** that serve them, the
@@ -24,7 +24,7 @@ carries a **real example** and its **first-introduced month/year**.
 > Some linked repos are private ([`github-spine`](https://github.com/gasyoun/github-spine),
 > [`Uprava`](https://github.com/gasyoun/Uprava)).
 
-**At a glance:** 44 dictionaries · 22 interfaces (17 live) · 47 data assets · 14 tools · 4 external stacks · 11 learner-facing drill/practice sets (P1–P11) · 30 catalogued methods/algorithms (Q1–Q30).
+**At a glance:** 44 dictionaries · 23 interfaces (17 live) · 47 data assets · 14 tools · 4 external stacks · 11 learner-facing drill/practice sets (P1–P11) · 30 catalogued methods/algorithms (Q1–Q30).
 
 **IDs & tiers.** Every asset has a **stable ID** — a **running number within its category**
 (1–N; it does *not* restart at each sub-section) prefixed by a **section letter** (`A`–`F` data ·
@@ -230,6 +230,7 @@ first appearance where the repo predates it).
 | H5 | [Sanskrit→Russian Glossary](https://gasyoun.github.io/SanskritRussian/) | Three-layer word-aligned glossary, fuzzy search | 🟢 Live | a form → its surface / lemma / root Russian renderings | 07/26 | Static · Fuse.js · [SanskritRussian](https://github.com/gasyoun/SanskritRussian) |
 | H6 | [Russian Rāmāyaṇa portal](https://gasyoun.github.io/RussianRamayana/) | Parallel-text reader + crowdfunding portal | 🟢 Live | read Book IV with the parallel Sanskrit–Russian reader | 05/26 | Static · Leaflet · [RussianRamayana](https://github.com/gasyoun/RussianRamayana) |
 | H7 | [Sanskrit Karaoke](https://gasyoun.github.io/SanskritKaraoke/) | Verse wave-diagram visualiser + karaoke exporter | 🟢 Live | wave diagram + meter detection for an anuṣṭubh verse | 04/26 | Standalone JS · Chart.js · [SanskritKaraoke](https://github.com/gasyoun/SanskritKaraoke) |
+| H8 | Systema **in-cabinet reading packs** («Старт чтения») | Guided graded reading inside the LMS: a frozen pack (Hitopadeśa lesson 0) rendered per-verse with its RU gloss, listed and opened from the student cabinet | 🟡 Built, flags OFF | `/dvaram/reading{,/slug}` — gated by `features.kosha_reader` **AND** cohort entitlement, so it is 404 for everyone until the cohort launches; the public demo `/reading/kosha-demo` is a separate, unchanged surface | 08/26 | Laravel · [ReadingPackController](https://github.com/gasyoun/Systema-Sanscriticum/blob/main/app/Http/Controllers/ReadingPackController.php) · pack data vendored from kosha `cohort-start-chteniya-pack-freeze` ([Systema-Sanscriticum](https://github.com/gasyoun/Systema-Sanscriticum)) |
 
 ### I · Dashboards & data-viz
 
