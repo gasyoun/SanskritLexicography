@@ -1870,6 +1870,57 @@ def test_h1702_boundary_wrap_gate():
         fail('H1702: expected gloss-span-crosses-anchor, got %r' % (reason6,))
 
 
+def test_h2144_d4b_bracket_normalize():
+    """H2144: D4b bracket-normalize unlock. de's fullwidth/CJK corner-bracket numbering
+    marker (e.g. `〉`) and ru's plain ASCII equivalent (`)`) must be treated as the same
+    affix boundary when normalize_brackets=True, WITHOUT rewriting ru's own bracket
+    character into de's form and WITHOUT changing default (normalize_brackets=False)
+    behavior at all."""
+    from d4_boundary_wrap import try_boundary_wrap
+
+    # POSITIVE: de uses the fullwidth corner bracket, ru already uses plain ASCII ")" --
+    # refused by default (exact-affix), unlocked under normalize_brackets=True, and ru's
+    # own ")" is preserved verbatim in the result (not rewritten to de's "〉").
+    de = '<div n="2">— e〉 {%zum Vorschein gekommen%}.'
+    ru = '<div n="2">— e) появившийся.'
+    ok_default, reason_default = try_boundary_wrap(de, ru)
+    if ok_default:
+        fail('H2144: bracket-mismatched affix must be refused by default (normalize_brackets=False)')
+    if reason_default != 'prefix-no-match':
+        fail('H2144: expected prefix-no-match by default, got %r' % (reason_default,))
+    ok_norm, result_norm = try_boundary_wrap(de, ru, normalize_brackets=True)
+    want = '<div n="2">— e) {%появившийся%}.'
+    if not ok_norm or result_norm != want:
+        fail('H2144: bracket-normalize wrap did not reproduce the expected wrap (ru bracket must survive verbatim): %r' % (result_norm,))
+
+    # POSITIVE (reverse pairing): de uses ASCII, ru uses the fullwidth bracket -- ru's own
+    # fullwidth bracket must survive the wrap untouched.
+    de_rev = '<div n="2">— e) {%zum Vorschein gekommen%}.'
+    ru_rev = '<div n="2">— e〉 появившийся.'
+    ok_rev, result_rev = try_boundary_wrap(de_rev, ru_rev, normalize_brackets=True)
+    want_rev = '<div n="2">— e〉 {%появившийся%}.'
+    if not ok_rev or result_rev != want_rev:
+        fail('H2144: reverse bracket-normalize wrap must preserve ru\'s fullwidth bracket verbatim: %r' % (result_rev,))
+
+    # CONTROL: an already-exact-match row must produce an IDENTICAL result under
+    # normalize_brackets=True as under the default -- the flag must never change behavior
+    # for rows that did not need it.
+    de_exact = '<div n="2">— 2〉 {%an sich nehmen%}.'
+    ru_exact = '<div n="2">— 2〉 принимать на себя.'
+    ok_a, result_a = try_boundary_wrap(de_exact, ru_exact)
+    ok_b, result_b = try_boundary_wrap(de_exact, ru_exact, normalize_brackets=True)
+    if not (ok_a and ok_b and result_a == result_b):
+        fail('H2144: normalize_brackets=True must not change the outcome for an already-exact-match row')
+
+    # NEGATIVE: a genuine (non-bracket) affix mismatch stays refused even with
+    # normalize_brackets=True -- the flag only widens bracket equivalence, nothing else.
+    de_bad = '<div n="1">— 2〉 {%an sich nehmen%}.'
+    ru_bad = 'принимать на себя.'
+    ok_bad, reason_bad = try_boundary_wrap(de_bad, ru_bad, normalize_brackets=True)
+    if ok_bad:
+        fail('H2144: a dropped-<div>-prefix row must still be refused under normalize_brackets=True: %r' % (reason_bad,))
+
+
 def test_semantic_review_prioritizer():
     high = {
         'key': 'high',
@@ -8531,6 +8582,7 @@ def main():
         test_h1651_wrapper_defect_gate,
         test_h1651_live_gate_cyrillic_and_guillemet,
         test_h1702_boundary_wrap_gate,
+        test_h2144_d4b_bracket_normalize,
         test_semantic_review_prioritizer,
         test_noisy_source_type_not_requeue,
         test_report_only_risks_never_requeue,

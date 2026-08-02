@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed
+- **H2144 D4b bracket-normalize unlock for the 63-row PWG fullwidth-paren residual (02-08-2026, Sonnet 5 `claude-sonnet-5`):** extends [`d4_boundary_wrap.try_boundary_wrap`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/d4_boundary_wrap.py) with an opt-in `normalize_brackets` param (default `False`, zero behavior change for existing rows) that treats DE's fullwidth/CJK corner-bracket numbering marker as equivalent to RU's ASCII parens before the exact-affix check, per the adjudication in [H1702_SONNET_DUAL_RUN_COMPARE_2026-08-01.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1702_SONNET_DUAL_RUN_COMPARE_2026-08-01.md). The comparison-only normalization always splices from RU's own bytes, so its native bracket form is never rewritten into DE's. Hand-checked all 63 newly-eligible rows (full population) — 100% clean, no anchor/citation swallowing. Applied to the live store: `ru_n==0` residual 1,109 -> 1,046. New apply script [`fix_d4b_bracket_normalize.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/fix_d4b_bracket_normalize.py) uses H2146's `locked_store_rewrite`. Report: [H1702_D4B_BRACKET_NORMALIZE_REPORT_2026-08-02.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1702_D4B_BRACKET_NORMALIZE_REPORT_2026-08-02.md). Also fixed a missing `store_write` import in `annotate_renou.py` inherited from H2146 that broke `master`'s own Python-lint CI. PR [#981](https://github.com/gasyoun/SanskritLexicography/pull/981).
+
 ## [1.125.0] - 2026-08-02
 
 ### Fixed
