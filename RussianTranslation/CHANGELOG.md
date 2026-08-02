@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added
+- **`src/pilot/cache_prefix_stability_probe.py` — settle WHY every call re-creates its cache (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** [#986](https://github.com/gasyoun/SanskritLexicography/pull/986) left two candidates — an unstable prefix across `claude -p` invocations, or a lapsing TTL. **It is the prefix; the TTL hypothesis is refuted.** Two arms (repo cwd vs bare cwd) × 2 identical `--max-turns 1` calls, **4 paid calls, $1.0469**. Every write went to `ephemeral_1h_input_tokens` and a **1-hour** TTL cannot lapse between calls issued seconds apart; two identical repo-cwd calls re-created **49 153 → 49 165** tokens with cache read pinned at 28 882, i.e. **the second re-wrote exactly what the first had just written and nothing carried over**. The prefix decomposes into a stable **~29 k** core plus a volatile **~49 k** segment; in a bare cwd the volatile part falls to ~32–38 k and is the only place any cross-call reuse appears (read **+5 553** / create **−5 553**, exactly complementary), so **CLAUDE.md + git-state injection is what breaks it**, worth ~11–17 k tokens per call. **Free measured win: running the lane from a bare cwd is −33 % cost and −30 % wall clock**, no code change and no guard weakened. Structural read: with `--max-turns 1` the floor is **~19–29 s of non-API overhead against ~2–3 s of API time** and ~32–49 k tokens re-written per call regardless of payload — a one-shot CLI subprocess **cannot amortise its own system prompt**, which is a property of the route, not a tuning knob. Table: [`RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md). Port tracked as [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md).
+
 ## [1.126.0] - 2026-08-02
 
 ### Fixed
