@@ -33,6 +33,101 @@ under-refusal spends money and an over-refusal only asks a human to look.
 [FINDINGS §289](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) ·
 [PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032).
 
+## 02-08-2026 (H2174) — second consecutive c4 health NO-GO: the named stop fired, and this time *every* candidate gate number fails
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2174](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2174-Opus_RussianTranslation_medium50-presplit-live-run-after-health-pass_02.08.26.md)
+(residual of [H2160](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2160-Opus_RussianTranslation_whole-card-b0-hang-and-medium50-completion_02.08.26.md)).
+**2 paid calls (the health probe only), $1.0929. No canary, no window, no store write.**
+H2174's own `Fail =` clause names "a second health NO-GO" as a terminal stop; it fired at
+Step 1, so per the handoff nothing downstream was attempted — no re-roll, no re-warm, no
+reaching for the friendlier number.
+
+### The reading (run `…/2026-08-02T11:04:20Z-pid11056`)
+
+| purpose | wall `elapsed_ms` | CLI `duration_ms` | `duration_api_ms` | `api_gap_ms` | class |
+|---|---:|---:|---:|---:|---|
+| warmup | 55 803 | 35 272 | 28 603 | 27 200 | success |
+| **measured** | **96 520** | **77 966** | **69 137** | 27 383 | success |
+
+Ceiling 65 000 ms. **All three candidate measured numbers exceed it** — 96 520 / 77 966 /
+69 137.
+
+### The finding: the open "which number gates?" question would not have unblocked this window
+
+H2174 inherited an unresolved disagreement — [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+prose says gate on `duration_api_ms`, `probe_log.derive_fails` gates on the measured wall
+reading — and on the 02-08 07:49 H2160 run the two **disagreed on the verdict** (wall 75 561
+NO-GO vs api 29 069 comfortable PASS). That made the ruling look like the unblocker.
+
+It is not. On this reading the two **agree**, and so does the third number nobody had named
+(the CLI's own `duration_ms`). This is the first measured c4 row where `duration_api_ms`
+itself breaches the ceiling. Whichever way a human rules, **this** window was NO-GO. The
+ruling is still owed — it governs future runs — but it is no longer load-bearing for the
+question "was H2160's fix blocked by a mis-read gate?" It was not.
+
+### Why that matters: c4 is intermittent, not down
+
+The full per-account series (`h963_c4_gate0_probe_events.jsonl`, both the canonical and this
+run's worktree copy, deduped by `(ts, run_id, purpose)`):
+
+| # | date (UTC) | purpose | wall `elapsed_ms` | wall | `duration_api_ms` | api | `api_gap_ms` | class |
+|---:|---|---|---:|---|---:|---|---:|---|
+| 1 | 2026-07-22 14:57:34 | warmup | 21 280 | PASS | — | n/a | — | content |
+| 2 | 2026-07-22 20:03:04 | warmup | 59 831 | PASS | — | n/a | — | success |
+| 3 | 2026-07-22 20:04:47 | measured | 102 874 | NO-GO | — | n/a | — | auth |
+| 4 | 2026-07-23 06:06:52 | warmup | 40 003 | PASS | — | n/a | — | success |
+| 5 | 2026-07-23 06:09:40 | measured | 168 352 | NO-GO | — | n/a | — | success |
+| 6 | 2026-07-24 04:23:53 | warmup | 10 838 | PASS | — | n/a | — | rate_limit |
+| 7 | 2026-07-24 07:35:29 | warmup | 9 949 | PASS | — | n/a | — | rate_limit |
+| 8 | 2026-07-25 03:16:04 | warmup | 17 587 | PASS | — | n/a | — | auth |
+| 9 | 2026-07-25 03:18:34 | warmup | 10 918 | PASS | — | n/a | — | auth |
+| 10 | 2026-07-25 16:02:31 | warmup | 17 878 | PASS | — | n/a | — | rate_limit |
+| 11 | 2026-07-25 18:18:27 | warmup | 19 903 | PASS | — | n/a | — | rate_limit |
+| 12 | 2026-07-31 18:59:59 | warmup | 94 606 | NO-GO | — | n/a | — | success |
+| 13 | 2026-07-31 19:01:17 | measured | 78 415 | NO-GO | — | n/a | — | success |
+| 14 | 2026-08-01 20:21:03 | warmup | 39 437 | PASS | 21 171 | PASS | 18 266 | success |
+| 15 | 2026-08-01 20:21:53 | measured | 50 336 | PASS | 27 557 | PASS | 22 779 | success |
+| 16 | 2026-08-02 05:47:17 | warmup | 55 390 | PASS | 37 690 | PASS | 17 700 | success |
+| 17 | 2026-08-02 05:48:01 | **measured** | **43 815** | **PASS** | 26 386 | PASS | 17 429 | success |
+| 18 | 2026-08-02 07:48:25 | warmup | 236 328 | NO-GO | 43 646 | PASS | 192 682 | success |
+| 19 | 2026-08-02 07:49:40 | measured | 75 561 | NO-GO | 29 069 | PASS | 46 492 | success |
+| 20 | 2026-08-02 11:05:16 | warmup | 55 803 | PASS | 28 603 | PASS | 27 200 | success |
+| 21 | 2026-08-02 11:06:53 | **measured** | **96 520** | **NO-GO** | **69 137** | **NO-GO** | 27 383 | success |
+
+Measured readings: **7**; wall PASS **2/7**; api PASS **3/4** of those carrying the field.
+
+Three measured attempts today (rows 17, 19, 21) — **PASS, NO-GO, NO-GO**, spanning 43 815 →
+96 520 ms wall on the same profile, same prompt, same ceiling, within 5¼ hours. So the route
+is **not dead and not reliably healthy**: it is bimodal on a timescale of hours. Two further
+consequences fall out of the table:
+
+- **`api_gap_ms` — the in-CLI scaffolding overhead — is itself unstable**, 17 429 → 192 682 ms
+  across the rows that carry it. H2160's "~45 % of a wall reading is scaffolding" is a
+  property of *that* reading, not a constant, so wall and api cannot be related by a fixed
+  correction factor. This is a second, independent reason the wall-vs-api ruling cannot be
+  settled by arithmetic and needs a human.
+- **The `--selftest`-able gate logic behaved exactly as specified.** Both readings were
+  written to the append-only events log *before* the fail-closed exit, so this NO-GO leaves
+  the same immutable trace as a PASS (the #729 discipline). Nothing here is a tooling defect.
+
+### Also verified offline (no spend): the prepared artifacts are still pre-fix
+
+`h2160_regen_medium50.py --dry-run` against the five prepared windows, read from the
+canonical checkout (`src/pilot/output/` is gitignored, so a fresh worktree has none):
+
+| window | `presplit_keys` on disk | n_batches | n_inputs |
+|---|---|---:|---:|
+| h1447-m50-w1 | `[]` | 3 | 3 |
+| h1447-m50-w2 | `Srama, samIpa, vAhana, vfzwi` | 8 | 12 |
+| h1447-m50-w3 | `rAzwra, vicitra, vyavasTA` | 7 | 11 |
+| h1447-m50-w4 | `SoDana, aDastAt` | 8 | 11 |
+| h1447-m50-w5 | `sAhasra` | 10 | 11 |
+
+**10/48 keys presplit** — exactly H2160's "before" figure, confirming the artifacts on disk
+predate the merged fix and that regeneration is a genuine prerequisite, not a precaution. The
+fix (v1.134.0, presplit 10/48 → 44/48) therefore **remains merged and undemonstrated**, for
+the second session running.
+
 ## 02-08-2026 (H2160) — `b0` was never non-terminating: it was killed BY US at exactly the ceiling, because a per-card presplit floor was masked by the batch budget
 
 Opus 5 1M (`claude-opus-5[1m]`), [H2160](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2160-Opus_RussianTranslation_whole-card-b0-hang-and-medium50-completion_02.08.26.md).
