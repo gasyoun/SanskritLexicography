@@ -1,6 +1,6 @@
 # PWG translation — duplication map & unjustified-code optimization inventory
 
-_Created: 02-08-2026 · Last updated: 02-08-2026_
+_Created: 02-08-2026 · Last updated: 02-08-2026 (H2229 OPT-8 kitchen banner)_
 
 **Purpose.** One place to hunt **optimization**: where the PWG→RU/EN pipeline
 _duplicates logic or code without a good reason_. Companion to the product-
@@ -170,6 +170,7 @@ same work (historical H963/H994 shape).
 |--|--|
 | **Optimize** | Already: store-hit preflight, coordinator occupied-keys, worktree claim, `--max-wide=1` bounded run. Residual: surface **store-hit / lease collision** louder in progress kitchen / ledger so a human does not start a second paid window. |
 | **Risk** | Low (observability only). |
+| **Status (H2229)** | **Shipped observability:** collision aborts emit `dashboard_events` (`lease_collision` / `store_hit` / `occupied_keys_unreadable`); kitchen `collision_guard` + red banner + operator one-liner. Selftest `progress_dashboard/kitchen_collision_selftest.py`. Not a new concurrency protocol. |
 
 ---
 

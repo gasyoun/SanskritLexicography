@@ -972,3 +972,138 @@ def article_site_parity(store: Path, article_site: Path, missing_cap: int = 20) 
         "note": "Root names only — no DE/RU body on the public kitchen",
     }
 
+
+# OPT-8 / H2229 — lease collision / store-hit banner (observability only).
+COLLISION_EVENT_TYPES = frozenset({
+    "lease_collision",
+    "store_hit",
+    "occupied_keys_unreadable",
+    "key_overlap",
+})
+
+OPERATOR_ONE_LINER_COLLISION = (
+    "If the kitchen collision banner is red (or collision_guard.blocked=true): "
+    "DO NOT start a second paid window on those keys/root — a live job or recent "
+    "store-hit / lease collision already holds them. Wait for the live job to "
+    "finish or requeue that lease; only then import another window."
+)
+
+_COLLISION_SUMMARY_RE = re.compile(
+    r"key overlap|occupied-keys|SECOND paid window|keys already active|"
+    r"DO NOT START A SECOND PAID WINDOW|store.?hit",
+    re.I,
+)
+
+
+def _is_collision_event(e: dict) -> bool:
+    if not isinstance(e, dict):
+        return False
+    et = e.get("type") or ""
+    if et in COLLISION_EVENT_TYPES:
+        return True
+    if e.get("state") == "blocked_second_window":
+        return True
+    summary = e.get("summary") or ""
+    return bool(_COLLISION_SUMMARY_RE.search(summary))
+
+
+def _live_orchestrator_jobs(db_path: Path | None, cap: int = 12) -> list[dict]:
+    """Optional advisory: pending/in_progress jobs from max_orchestrator.sqlite."""
+    if not db_path or not db_path.exists():
+        return []
+    try:
+        import sqlite3
+    except ImportError:
+        return []
+    out = []
+    try:
+        con = sqlite3.connect(str(db_path))
+        con.row_factory = sqlite3.Row
+        rows = con.execute(
+            "SELECT external_id, state, started_at, profile_slot FROM jobs "
+            "WHERE state IN ('pending','in_progress') ORDER BY id DESC LIMIT ?",
+            (cap,),
+        ).fetchall()
+        for r in rows:
+            out.append(
+                {
+                    "external_id": r["external_id"],
+                    "state": r["state"],
+                    "started_at": r["started_at"],
+                    "profile_slot": r["profile_slot"],
+                }
+            )
+        con.close()
+    except Exception:  # noqa: BLE001
+        return []
+    return out
+
+
+def collision_guard(
+    events_path: Path,
+    *,
+    orchestrator_db: Path | None = None,
+    recent_limit: int = 12,
+) -> dict:
+    """OPT-8 / H2229 — surface store-hit / lease collision for the public kitchen.
+
+    Reads dashboard_events.jsonl for collision types (emitted when existing
+    occupied-keys / nominal-active guards abort). Optional orchestrator sqlite
+    lists live jobs as advisory context. Never changes paid spend — display only.
+    """
+    collisions: list[dict] = []
+    if events_path.exists():
+        with events_path.open(encoding="utf-8") as fh:
+            for line in fh:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    e = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if not _is_collision_event(e):
+                    continue
+                data = e.get("data") if isinstance(e.get("data"), dict) else {}
+                collisions.append(
+                    {
+                        "ts": e.get("ts"),
+                        "type": e.get("type"),
+                        "root": e.get("root"),
+                        "level": e.get("level"),
+                        "summary": (e.get("summary") or "")[:200],
+                        "kind": data.get("kind"),
+                        "overlap_count": data.get("overlap_count"),
+                        "overlap_sample": data.get("overlap_sample"),
+                    }
+                )
+
+    live = _live_orchestrator_jobs(orchestrator_db)
+    recent = collisions[-recent_limit:]
+    blocked = bool(collisions)
+    last = recent[-1] if recent else None
+    kinds = Counter(
+        (c.get("kind") or c.get("type") or "unknown") for c in collisions
+    )
+    return {
+        "measured": bool(collisions) or events_path.exists() or bool(live),
+        "blocked": blocked,
+        "banner": (
+            "DO NOT START A SECOND PAID WINDOW"
+            if blocked
+            else None
+        ),
+        "operator_one_liner": OPERATOR_ONE_LINER_COLLISION,
+        "collision_count": len(collisions),
+        "kind_counts": dict(kinds),
+        "last": last,
+        "recent": recent,
+        "live_jobs": live,
+        "live_job_count": len(live),
+        "note": (
+            "Observability for existing store-hit preflight / occupied-keys / "
+            "nominal lease collision aborts (OPT-8). Red banner means a recorded "
+            "collision event — not a new concurrency protocol."
+        ),
+    }
+
