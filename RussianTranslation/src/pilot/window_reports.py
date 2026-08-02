@@ -161,6 +161,8 @@ def build_production_metrics(args, wf_path=None, workflow_meta=None):
     """
     wall_minutes, wall_source = derive_wall_clock_minutes(
         wf_path, workflow_meta, getattr(args, 'wall_clock_minutes', None))
+    # K6 (H2212): always emit metric keys so ledger rows never silently omit
+    # wall-clock / token slots (null is better than missing for coverage stats).
     fields = {
         'wall_clock_minutes': wall_minutes,
         'wall_clock_source': wall_source,
@@ -232,8 +234,14 @@ def append_ledger(status, out_dir=None):
         # H390 Phase 1: which model generated this window, read from the run's own
         # workflow meta (gen_opt_harness2 stamps meta.gen_model). Makes per-model
         # rates (the Fable-vs-Sonnet A/B) computable straight off the ledger.
-        'gen_model': (status.get('workflow_meta') or {}).get('gen_model'),
-        'production_metrics': status.get('production_metrics'),
+        # K6: stamp gen_model even when null so coverage % is honest.
+        'gen_model': (status.get('workflow_meta') or {}).get('gen_model')
+        if (status.get('workflow_meta') or {}).get('gen_model') is not None
+        else status.get('gen_model'),
+        'production_metrics': status.get('production_metrics') or {
+            'wall_clock_minutes': None,
+            'wall_clock_source': 'unavailable',
+        },
         # H1618: agent-lane telemetry from headless summary (translate/heal spent +
         # budget_stops/kill/conn). Was on wf_output.summary only; ledger rows stayed
         # open-loop for the H1403 "instrumentation blindness" bottleneck.
