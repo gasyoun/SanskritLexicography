@@ -4,6 +4,35 @@ _Created: 09-07-2026 · Last updated: 02-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 02-08-2026 (H2190) — the cost table under-reported every 1 h cache write by 1.6×; repriced against the vendor's own figure
+
+Opus 5 (`claude-opus-5`), [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md)
+(executed inside [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md)).
+**Offline — 0 paid calls.** Every committed H2158 envelope repriced with
+[`parse_workflow_cost`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/parse_workflow_cost.py)
+before and after the TTL split, checked against each envelope's own
+`modelUsage.costUSD` — the vendor's number, not ours.
+
+| envelope | 1 h write (tok) | output (tok) | flat-5 m $ (old) | TTL-aware $ (new) | billed $ (vendor) |
+|---|---:|---:|---:|---:|---:|
+| [`raw/liveness_clean`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2158/raw/liveness_clean.envelope.json) | 126 | 1 070 | 0.056525 | **0.056809** | 0.056809 |
+| [`raw_slow/cli_nakzatra_1`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2158/raw_slow/cli_nakzatra_1.envelope.json) | 46 117 | 34 215 | 0.696736 | **0.800499** | 0.800499 |
+| **total** | | | **0.753261** | **0.857308** | **0.857308** |
+
+**The TTL-aware figure reconciles to the cent on both; the old one reconciles on
+neither.** The gap is **$0.104047 = 12.1 % of the true bill**, and it ran in the
+dangerous direction: every gate and projection computed from `PRICE` believed the
+CLI lane cheaper than it is. Both envelopes report
+`cache_creation.ephemeral_1h_input_tokens` with zero 5 m tokens, so this is not an
+estimate — the bucket was in the data all along and the rate table had no field for it.
+
+Fallback is deliberately asymmetric: TTL-less legacy envelopes stay on the 5 m rate
+for **reporting** (so the $79.83 golden window and every pre-split figure are
+unchanged), while **cost gates** pass `unknown_ttl='1h'` and fail closed, because an
+under-refusal spends money and an over-refusal only asks a human to look.
+[FINDINGS §289](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) ·
+[PR #1031](https://github.com/gasyoun/SanskritLexicography/pull/1031).
+
 ## 02-08-2026 (H2160) — `b0` was never non-terminating: it was killed BY US at exactly the ceiling, because a per-card presplit floor was masked by the batch budget
 
 Opus 5 1M (`claude-opus-5[1m]`), [H2160](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2160-Opus_RussianTranslation_whole-card-b0-hang-and-medium50-completion_02.08.26.md).

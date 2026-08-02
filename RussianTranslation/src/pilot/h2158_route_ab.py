@@ -66,19 +66,21 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from headless_worker import (                                        # noqa: E402
     bare_cli_cwd, build_prompt, card_block, claude_argv_prefix, parse_cli_wrapper)
-from parse_workflow_cost import PRICE                                # noqa: E402
+from parse_workflow_cost import PRICE, cache_write_rate              # noqa: E402
 
 # The profile-bound config dir the paid CLI lane runs under (cache_prefix_stability_probe
 # pins the same one). Without it the child inherits whatever profile the session has.
 CONFIG_DIR = r'D:\ClaudeTools\profiles\claude4\.claude'
 
-# PRICE['cache_write'] = 3.75 is the FIVE-MINUTE cache-write rate (1.25x the $3.00 base).
 # Every write v1.127.0 observed went to `ephemeral_1h_input_tokens`, and the 1-hour TTL
-# bills at 2x base = $6.00/Mtok. Pricing 1h writes at the 5m rate understates the CLI
-# lane's true cost by 1.6x, which is the wrong direction for a GO/NO-GO. Rates are still
-# single-sourced from PRICE -- only the multiplier differs.
-CACHE_WRITE_1H = PRICE['input'] * 2.0
-CACHE_WRITE_5M = PRICE['cache_write']
+# bills at 2x base = $6.00/Mtok against the 5-minute bucket's 1.25x = $3.75. Pricing 1h
+# writes at the 5m rate understates the CLI lane by 1.6x, which is the wrong direction
+# for a GO/NO-GO. Both rates now come from `parse_workflow_cost.cache_write_rate` -- the
+# TTL dimension this harness used to carry alone is in the shared table (§289), so a
+# cost script that does NOT know about the 1h bucket can no longer disagree with one
+# that does.
+CACHE_WRITE_1H = cache_write_rate('1h')
+CACHE_WRITE_5M = cache_write_rate('5m')
 
 
 def price(tokens, per_mtok):
