@@ -57,6 +57,15 @@ CALENDAR_DAYS = 120
 # Changelog entries kept for the web feed.
 CHANGELOG_VERSIONS = 12
 CHANGELOG_BULLETS_PER = 4
+# Recent windows + idle gaps lists are 1:1 length on the public page.
+RECENT_LIST_LEN = 12
+# Default Sonnet-class list prices (USD / million tokens) — same as economy_ledger.
+DEFAULT_PRICE_USD_PER_M = {
+    "input": 3.0,
+    "output": 15.0,
+    "cache_write": 3.75,
+    "cache_read": 0.3,
+}
 
 
 def utc_now() -> datetime:
@@ -226,15 +235,120 @@ def ledger_cost_speed() -> dict:
                 "tokens": tok,
             }
         )
+    shown = recent[-RECENT_LIST_LEN:]
     return {
         "measured": True,
         "windows": len(rows),
-        "recent_windows_shown": len(recent),
+        "recent_windows_shown": len(shown),
+        "list_len": RECENT_LIST_LEN,
         "mean_wall_clock_minutes": _mean(minutes),
         "mean_tokens_per_window": _mean(tokens),
         "last_window": recent[-1] if recent else None,
-        "recent": recent[-12:],
+        "recent": shown,
     }
+
+
+def _token_spend_band(tokens: float | int | None, price: dict) -> dict | None:
+    """Absolute $ band for a token pile (not per-clean)."""
+    if not isinstance(tokens, (int, float)) or tokens <= 0:
+        return None
+    cr = float(price.get("cache_read") or DEFAULT_PRICE_USD_PER_M["cache_read"])
+    inp = float(price.get("input") or DEFAULT_PRICE_USD_PER_M["input"])
+    out = float(price.get("output") or DEFAULT_PRICE_USD_PER_M["output"])
+    return {
+        "floor_usd": round(tokens * cr / 1e6, 4),
+        "ceil_usd": round(tokens * inp / 1e6, 4),
+        "true_upper_usd": round(tokens * out / 1e6, 4),
+        "tokens": int(tokens),
+        "basis": "floor=cache_read rate, ceil=fresh-input rate; EXCLUDES output premium",
+    }
+
+
+def _spend_totals_from_economy(summary: dict, runs: list | None = None) -> dict:
+    """Split total $ into clean-dictionary path vs prep/redo (wasted + requeues).
+
+    When per-run rows are available:
+      clean_path  = tokens on non-requeue rows with clean > 0
+      prep_redo   = tokens on requeue rows + clean=0 wasted rows
+    Fallback (summary aggregates only):
+      clean_path  = total_tokens - wasted_tokens
+      prep_redo   = wasted_tokens  (requeue split unavailable)
+    """
+    price = summary.get("price_basis_usd_per_million") or DEFAULT_PRICE_USD_PER_M
+    total_tokens = summary.get("total_tokens")
+    wasted_tokens = summary.get("wasted_tokens") or 0
+    total_clean = summary.get("total_clean")
+
+    clean_tokens = None
+    prep_tokens = None
+    split_source = "summary_fallback"
+
+    if runs:
+        c_tok = 0
+        p_tok = 0
+        saw = False
+        for r in runs:
+            tok = r.get("tokens")
+            if not isinstance(tok, (int, float)) or tok <= 0:
+                continue
+            saw = True
+            clean = r.get("clean")
+            is_rq = bool(r.get("is_requeue"))
+            if clean == 0:
+                p_tok += tok
+            elif is_rq:
+                p_tok += tok
+            elif isinstance(clean, (int, float)) and clean > 0:
+                c_tok += tok
+            else:
+                # unknown clean — pool into prep so we never understate overhead
+                p_tok += tok
+        if saw:
+            clean_tokens = c_tok
+            prep_tokens = p_tok
+            total_tokens = c_tok + p_tok
+            split_source = "runs_requeue_and_wasted"
+
+    if clean_tokens is None:
+        if isinstance(total_tokens, (int, float)):
+            wt = wasted_tokens if isinstance(wasted_tokens, (int, float)) else 0
+            clean_tokens = max(0, int(total_tokens) - int(wt))
+            prep_tokens = int(wt)
+        else:
+            clean_tokens = None
+            prep_tokens = None
+
+    out = {
+        "measured": clean_tokens is not None or prep_tokens is not None,
+        "split_source": split_source,
+        "total_clean_cards": total_clean,
+        "price_basis_usd_per_million": price,
+        "clean_dictionary": _token_spend_band(clean_tokens, price),
+        "prep_or_redo": _token_spend_band(prep_tokens, price),
+        "all_priced": _token_spend_band(total_tokens, price)
+        if isinstance(total_tokens, (int, float))
+        else None,
+        "notes": {
+            "clean_dictionary": (
+                "tokens on first-pass (non-_rq) runs that produced clean cards — "
+                "the production spend toward a clean dictionary"
+            ),
+            "prep_or_redo": (
+                "tokens on clean=0 wasted runs plus requeue (_rq) windows — "
+                "preparation, failed drains, and work that had to be redone"
+            ),
+            "band": (
+                "same economy band rates as $/clean card (cache-read floor … fresh-input ceil); "
+                "true_upper prices every token at the output rate"
+            ),
+        },
+    }
+    if split_source == "summary_fallback":
+        out["notes"]["caveat"] = (
+            "per-run requeue split unavailable; prep_or_redo = wasted clean=0 tokens only; "
+            "requeue tokens remain inside clean_dictionary"
+        )
+    return out
 
 
 def economy_band() -> dict:
@@ -276,11 +390,13 @@ def economy_band() -> dict:
                     band[key] = summary[key]
             if band:
                 summary["cost_band_usd_per_clean"] = band
+            spend = _spend_totals_from_economy(summary, runs=data.get("runs"))
             return {
                 "measured": True,
                 "source": "generation_api_probe_log.jsonl",
                 "schema": data.get("schema"),
                 "summary": summary,
+                "spend": spend,
             }
         except Exception as e:  # noqa: BLE001
             return {"measured": False, "error": str(e)[:200]}
@@ -288,12 +404,69 @@ def economy_band() -> dict:
         data = json.loads(ECONOMY.read_text(encoding="utf-8"))
     except Exception as e:  # noqa: BLE001
         return {"measured": False, "error": str(e)[:200]}
+    summary = data.get("summary") or data.get("aggregate") or data
+    if not isinstance(summary, dict):
+        summary = {}
+    # Prefer embedded price basis when present at top level.
+    if "price_basis_usd_per_million" not in summary and data.get(
+        "price_basis_usd_per_million"
+    ):
+        summary = dict(summary)
+        summary["price_basis_usd_per_million"] = data["price_basis_usd_per_million"]
+    runs = data.get("runs") if isinstance(data.get("runs"), list) else None
     return {
         "measured": True,
         "source": "economy_ledger.json",
         "schema": data.get("schema"),
-        "summary": data.get("summary") or data.get("aggregate") or data,
+        "summary": summary,
+        "spend": _spend_totals_from_economy(summary, runs=runs),
     }
+
+
+def _idle_by_month(gaps: list[dict], current_idle: int | None) -> list[dict]:
+    """Sum idle seconds per calendar month (UTC) from campaign start → now.
+
+    Each completed gap is attributed to the month of its ``from`` timestamp.
+    Open current idle (if any) is added to the current month so the latest
+    month reflects time since the last artifact moved.
+    """
+    month_secs: dict[str, int] = {}
+    for g in gaps:
+        frm = g.get("from") or ""
+        if len(frm) < 7:
+            continue
+        ym = frm[:7]
+        month_secs[ym] = month_secs.get(ym, 0) + int(g.get("seconds") or 0)
+
+    if current_idle is not None and current_idle > 0:
+        ym = utc_now().strftime("%Y-%m")
+        month_secs[ym] = month_secs.get(ym, 0) + int(current_idle)
+
+    if not month_secs:
+        return []
+
+    # Fill every month from first recorded idle through current month.
+    first = min(month_secs)
+    y, m = int(first[:4]), int(first[5:7])
+    end = utc_now()
+    end_y, end_m = end.year, end.month
+    rows = []
+    while (y, m) <= (end_y, end_m):
+        ym = f"{y:04d}-{m:02d}"
+        secs = month_secs.get(ym, 0)
+        rows.append(
+            {
+                "month": ym,
+                "idle_seconds": secs,
+                "idle_days": round(secs / 86400, 2),
+                "idle_hours": round(secs / 3600, 2),
+            }
+        )
+        m += 1
+        if m > 12:
+            m = 1
+            y += 1
+    return rows
 
 
 def idle_gaps() -> dict:
@@ -369,15 +542,28 @@ def idle_gaps() -> dict:
     if not act["translation_on"] and act["youngest_artifact_age_seconds"] is not None:
         current_idle = act["youngest_artifact_age_seconds"]
 
+    # last completed idle gap (not the open current idle)
+    last_gap = gaps[-1] if gaps else None
+    last_idle_seconds = last_gap["seconds"] if last_gap else None
+
+    by_month = _idle_by_month(gaps, current_idle)
+    # Keep payload bounded: full list is for the expand-on-click UI; recent is 1:1 with windows.
+    recent = gaps[-RECENT_LIST_LEN:]
+
     return {
         "measured": bool(gaps) or current_idle is not None,
         "min_idle_seconds": MIN_IDLE_SECONDS,
+        "list_len": RECENT_LIST_LEN,
         "gap_count": len(gaps),
         "total_idle_seconds": total_idle,
         "total_idle_hours": round(total_idle / 3600, 2) if gaps else 0,
         "mean_gap_seconds": _mean([g["seconds"] for g in gaps]),
         "current_idle_seconds": current_idle,
-        "recent_gaps": gaps[-15:],
+        "last_idle_seconds": last_idle_seconds,
+        "last_idle": last_gap,
+        "idle_by_month": by_month,
+        "recent_gaps": recent,
+        "all_gaps": gaps,
     }
 
 
@@ -497,11 +683,15 @@ def main():
             "mean_tokens_per_window": ledger.get("mean_tokens_per_window"),
             "windows_in_ledger": ledger.get("windows"),
             "economy": econ,
+            "spend": (econ.get("spend") if isinstance(econ, dict) else None) or {
+                "measured": False
+            },
             "measured": bool(ledger.get("measured") or econ.get("measured")),
         },
         "idle": idle,
         "calendar": cal,
         "changelog": clog,
+        "list_len": RECENT_LIST_LEN,
         "recent_windows": ledger.get("recent") or [],
         "last_window": ledger.get("last_window"),
     }

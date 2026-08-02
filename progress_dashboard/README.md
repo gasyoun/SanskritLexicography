@@ -1,6 +1,6 @@
 # PWG→RU progress & kitchen dashboard
 
-_Created: 10-07-2026 · Last updated: 31-07-2026_
+_Created: 10-07-2026 · Last updated: 02-08-2026_
 
 ## Autostart (no manual step after logon)
 
@@ -56,8 +56,13 @@ Where the article site shows the **finished** PWG→Russian translations, this s
 
 ### Kitchen
 - **Speed** — cards last hour / 24h, mean wall-clock minutes per window.
-- **Cost** — mean tokens per window; optional economy-ledger agents/$ per clean card.
-- **Idle** — gaps between `stage_boundary` audit_end → next audit_start (ledger fallback).
+- **Cost** — mean tokens per window; optional economy-ledger agents/$ per clean card;
+  absolute **total $ band** split into *clean dictionary* (first-pass clean tokens) vs
+  *prep / redo* (clean=0 wasted + requeue windows).
+- **Idle** — current idle, last completed gap, total recorded idle, and **idle days by month**
+  since campaign start; gaps between `stage_boundary` audit_end → next audit_start
+  (ledger fallback). Recent windows and idle gaps lists are **1:1 length** (default 12);
+  full idle-gap history expands on click.
 - **Calendar** — day heatmap of cards written (store provenance) + window counts.
 - **Web changelog** — recent version bullets from `RussianTranslation/CHANGELOG.md`.
 

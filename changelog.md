@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Changed
+- **Progress kitchen idle + spend cards + equal lists (H2204, Grok 4.5 `grok-4.5`, 02-08-2026):** public `/progress/` kitchen now shows **last idle** beside current idle, **idle days by month** (UTC, open idle counted in the current month), absolute **total $ band** split into *clean dictionary* vs *prep/redo* (wasted clean=0 + requeue tokens), and keeps **Recent windows** / **Idle gaps** at the same length (12) with a click-to-expand full gap history. Builder: [`build_kitchen_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_kitchen_data.py); page: [`progress_dashboard/index.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/index.html). Handoff: [H2204](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2204-Grok_SanskritLexicography_progress-kitchen-idle-spend-lists_02.08.26.md).
+
 ## [1.137.2] - 2026-08-02
 
 ### Added

@@ -73,6 +73,14 @@
           border-radius:8px; padding:.75rem 1rem; margin: .6rem 0 1.1rem; font-size:.88rem; }
   .dual table { margin:.4rem 0 0; font-size:.85rem; }
   .dual th { font-weight:600; }
+  .card b.sm { font-size:1.15rem; }
+  .linkish { background:none; border:none; color:var(--accent); cursor:pointer;
+             font:inherit; padding:0; text-decoration:underline; }
+  .list-head { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between;
+               gap:.4rem 1rem; margin-top:1rem; }
+  .list-head h3 { margin:0; }
+  .month-idle { margin:.8rem 0 0; font-size:.88rem; max-width:28rem; }
+  .month-idle th, .month-idle td { padding:.25rem .5rem; }
 </style>
 </head>
 <body>
@@ -126,13 +134,20 @@
   minute. A residential <code>live_refresh.py</code> loop rebuilds + publishes to gh-pages while
   the store is moving.</p>
 <div class="cards" id="kitchenCards"></div>
+<div id="idleByMonth" class="note"></div>
 <div class="two">
   <div>
-    <h3>Recent windows</h3>
+    <div class="list-head">
+      <h3>Recent windows</h3>
+      <span class="mut" id="windowsCount"></span>
+    </div>
     <div id="recentWindows" class="note">—</div>
   </div>
   <div>
-    <h3>Idle gaps</h3>
+    <div class="list-head">
+      <h3>Idle gaps</h3>
+      <span class="mut" id="idleCount"></span>
+    </div>
     <div id="idleGaps" class="note">—</div>
   </div>
 </div>
@@ -349,14 +364,38 @@ function renderProgress(d) {
     `<code>live_refresh.py</code> (or a manual rebuild) has run since the last store change.`;
 }
 
+function fmtUsdBand(b) {
+  if (!b || typeof b !== 'object') return null;
+  const lo = b.floor_usd, hi = b.ceil_usd;
+  if (lo == null && hi == null) return null;
+  const f = n => (n == null || !Number.isFinite(Number(n))) ? '—' : '$' + Number(n).toFixed(2);
+  return `${f(lo)}–${f(hi)}`;
+}
+
+function renderIdleGapTable(gaps) {
+  return '<table><thead><tr><th>From</th><th>To</th><th class="num">Idle</th><th>Roots</th></tr></thead><tbody>' +
+    gaps.map(g =>
+      `<tr><td class="mono">${esc((g.from||'').replace('T',' ').replace('Z',''))}</td>` +
+      `<td class="mono">${esc((g.to||'').replace('T',' ').replace('Z',''))}</td>` +
+      `<td class="num">${fmtDur(g.seconds)}</td>` +
+      `<td class="mut">${esc(g.after_root||'—')} → ${esc(g.before_root||'—')}</td></tr>`
+    ).join('') + '</tbody></table>';
+}
+
+// Keep expand state across 60s refresh when user opened the full list.
+let idleGapsExpanded = false;
+let _kitchenCache = null;
+
 function renderKitchen(k) {
   if (!k) {
     document.getElementById('kitchenCards').innerHTML =
       '<p class="note">kitchen_data.json not found yet — run <code>build_kitchen_data.py</code> or <code>live_refresh.py --once --force</code>.</p>';
     return;
   }
+  _kitchenCache = k;
   const sp = k.speed || {}, co = k.cost || {}, id = k.idle || {};
   const econ = (co.economy && co.economy.summary) || {};
+  const spend = co.spend || (co.economy && co.economy.spend) || {};
   const agents = econ.agents_per_clean ?? econ.agents_per_clean_incl_requeues;
   const band = econ.cost_per_clean_band || econ.cost_band_usd_per_clean || econ.usd_per_clean;
   let costLabel = '—';
@@ -367,19 +406,48 @@ function renderKitchen(k) {
   } else if (band != null && typeof band !== 'object') {
     bandLabel = String(band);
   }
+  const cleanSpend = fmtUsdBand(spend.clean_dictionary);
+  const prepSpend = fmtUsdBand(spend.prep_or_redo);
+  const lastIdleSecs = id.last_idle_seconds != null
+    ? id.last_idle_seconds
+    : (id.last_idle && id.last_idle.seconds);
+
   document.getElementById('kitchenCards').innerHTML = [
     `<div class="card"><b>${fmt(sp.cards_last_hour)}</b><span class="sub">cards last hour</span></div>`,
     `<div class="card"><b>${fmt(sp.cards_last_24h)}</b><span class="sub">cards last 24h</span></div>`,
     `<div class="card"><b>${sp.mean_wall_clock_minutes != null ? sp.mean_wall_clock_minutes : '—'}</b><span class="sub">mean min / window</span></div>`,
     `<div class="card"><b>${costLabel}</b><span class="sub">mean tokens / window</span></div>`,
     `<div class="card"><b>${fmtDur(id.current_idle_seconds != null ? id.current_idle_seconds : id.mean_gap_seconds)}</b><span class="sub">${id.current_idle_seconds != null ? 'current idle' : 'mean idle gap'}</span></div>`,
+    `<div class="card"><b>${fmtDur(lastIdleSecs)}</b><span class="sub">last idle</span></div>`,
     `<div class="card"><b>${id.total_idle_hours != null ? id.total_idle_hours + 'h' : '—'}</b><span class="sub">recorded idle total</span></div>`,
     agents != null ? `<div class="card"><b>${esc(typeof agents === 'number' ? agents.toFixed(2) : agents)}</b><span class="sub">agents / clean card</span></div>` : '',
-    bandLabel ? `<div class="card"><b>${esc(bandLabel)}</b><span class="sub">$ band / clean card</span></div>` : '',
+    bandLabel ? `<div class="card"><b class="sm">${esc(bandLabel)}</b><span class="sub">$ band / clean card</span></div>` : '',
+    cleanSpend ? `<div class="card"><b class="sm">${esc(cleanSpend)}</b><span class="sub">total $ · clean dictionary</span></div>` : '',
+    prepSpend ? `<div class="card"><b class="sm">${esc(prepSpend)}</b><span class="sub">total $ · prep / redo</span></div>` : '',
     econ.total_clean != null ? `<div class="card"><b>${fmt(econ.total_clean)}</b><span class="sub">clean cards in economy log</span></div>` : '',
   ].join('');
 
-  const recent = k.recent_windows || [];
+  // Monthly idle days (every month since campaign idle tracking started)
+  const months = id.idle_by_month || [];
+  const monthEl = document.getElementById('idleByMonth');
+  if (months.length) {
+    monthEl.innerHTML =
+      '<p class="mut" style="margin:.4rem 0 .3rem">Idle days by month (UTC; open current idle counted in the latest month)</p>' +
+      '<table class="month-idle"><thead><tr><th>Month</th><th class="num">Idle days</th><th class="num">Hours</th></tr></thead><tbody>' +
+      months.map(m =>
+        `<tr><td class="mono">${esc(m.month)}</td>` +
+        `<td class="num">${m.idle_days != null ? Number(m.idle_days).toFixed(2) : '—'}</td>` +
+        `<td class="num">${m.idle_hours != null ? Number(m.idle_hours).toFixed(1) : '—'}</td></tr>`
+      ).join('') + '</tbody></table>';
+  } else {
+    monthEl.innerHTML = '';
+  }
+
+  // 1:1 list lengths — cap both to the same N (builder list_len, default 12)
+  const listLen = k.list_len || id.list_len || 12;
+  const recent = (k.recent_windows || []).slice(-listLen);
+  document.getElementById('windowsCount').textContent =
+    recent.length ? `last ${recent.length}` : '';
   if (recent.length) {
     document.getElementById('recentWindows').innerHTML =
       '<table><thead><tr><th>When</th><th>Root</th><th>State</th><th class="num">Keys</th><th class="num">Tr</th><th class="num">Rq</th><th class="num">Min</th></tr></thead><tbody>' +
@@ -393,20 +461,32 @@ function renderKitchen(k) {
     document.getElementById('recentWindows').textContent = 'no window ledger rows yet';
   }
 
-  const gaps = (id.recent_gaps || []).slice().reverse();
-  if (gaps.length) {
-    document.getElementById('idleGaps').innerHTML =
-      '<table><thead><tr><th>From</th><th>To</th><th class="num">Idle</th><th>Roots</th></tr></thead><tbody>' +
-      gaps.map(g =>
-        `<tr><td class="mono">${esc((g.from||'').replace('T',' ').replace('Z',''))}</td>` +
-        `<td class="mono">${esc((g.to||'').replace('T',' ').replace('Z',''))}</td>` +
-        `<td class="num">${fmtDur(g.seconds)}</td>` +
-        `<td class="mut">${esc(g.after_root||'—')} → ${esc(g.before_root||'—')}</td></tr>`
-      ).join('') + '</tbody></table>';
+  const allGaps = (id.all_gaps && id.all_gaps.length) ? id.all_gaps : (id.recent_gaps || []);
+  const recentGaps = (id.recent_gaps || allGaps).slice(-listLen);
+  const showFull = idleGapsExpanded && allGaps.length > recentGaps.length;
+  const gapsView = (showFull ? allGaps : recentGaps).slice().reverse();
+  const countEl = document.getElementById('idleCount');
+  if (allGaps.length) {
+    const more = allGaps.length > listLen;
+    countEl.innerHTML = showFull
+      ? `all ${allGaps.length} · <button type="button" class="linkish" id="idleToggle">show recent ${listLen}</button>`
+      : (more
+        ? `last ${recentGaps.length} of ${allGaps.length} · <button type="button" class="linkish" id="idleToggle">full list</button>`
+        : `last ${recentGaps.length}`);
+    document.getElementById('idleGaps').innerHTML = renderIdleGapTable(gapsView);
+    const btn = document.getElementById('idleToggle');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        idleGapsExpanded = !idleGapsExpanded;
+        if (_kitchenCache) renderKitchen(_kitchenCache);
+      });
+    }
   } else if (id.current_idle_seconds != null) {
+    countEl.textContent = '';
     document.getElementById('idleGaps').textContent =
       'Currently idle for ' + fmtDur(id.current_idle_seconds) + ' (no recent stage_boundary pairs).';
   } else {
+    countEl.textContent = '';
     document.getElementById('idleGaps').textContent = 'no idle gaps measured yet';
   }
 
