@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 02-08-2026 (H1909: §514 — PWG `R.`/Rāmāyaṇa siglum is edition-ambiguous)_
+_Created: 26-06-2026 · Last updated: 02-08-2026 (§515 — WIL 1819 vs 1832 edition-basis split for PWG/MW)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §511) whatever its section, so existing numbers never shift; when a finding is later
+(currently §516) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -53,6 +53,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - ✅ [§503. A git worktree silently disables every sibling-repo lookup in `src/` — artifacts rebuilt there lose layers without failing](#503-a-git-worktree-silently-disables-every-sibling-repo-lookup-in-src--artifacts-rebuilt-there-lose-layers-without-failing)
 - 🔴 [§510. A frozen local checkout is an actively misleading source for any append-only registry — read the numbering contract from `origin/`, not from disk](#510-a-frozen-local-checkout-is-an-actively-misleading-source-for-any-append-only-registry--read-the-numbering-contract-from-origin-not-from-disk) — one session, two collisions: a 177-commits-behind checkout showed §462 as the ceiling when `origin` had 166 findings, and the in-file next-free marker was stale too. Read the contract from `origin/`, derive the ceiling from the headings, and assert the marker sits above every used number.
 - 🔴 [§511. MW72 carries ZERO `<ls>` source citations — every cross-dictionary citation test that names it shrinks to MW](#511-mw72-carries-zero-ls-source-citations--every-cross-dictionary-citation-test-that-names-it-shrinks-to-mw) — `csl-orig/v02/mw72/mw72.txt` is 17.2 MB and contains not one `<ls>` tag, while MW has 320,828. Any apparatus/citation comparison that lists MW72 as a target silently produces a zero, not an error. Verify a dictionary's tag layer before scoping a test around it.
+- 🔴 [§515. PWG rests on WIL 1819; MW/MW72 English on WIL 1832 — CDSL has only 1832 OCR; do not treat Wilson as edition-free](#515-pwg-rests-on-wil-1819-mwmw72-english-on-wil-1832--cdsl-has-only-1832-ocr-do-not-treat-wilson-as-edition-free) — house edition-basis rule + OCR gap + preface-only scope for 1819; `L.` stays "native lexicons" with European transmission via 1819, not a Wilson siglum (`W.` is Wilson/1832).
 - 🟠 [§504. The NWS tag layer reaches only 2.2 % of the RU store — a facet bar over it is right, but it is not the sheet's main axis](#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis)
 
 
@@ -5243,3 +5244,23 @@ the same siglum — check whether the accepted spellings are actually the SAME t
 this pipeline where they aren't.
 
 > Sonnet 5 (`claude-sonnet-5`) · 02-08-2026 · H1909
+
+### §515. PWG rests on WIL 1819; MW/MW72 English on WIL 1832 — CDSL has only 1832 OCR; do not treat Wilson as edition-free
+
+🔴 **Wilson is two print editions that feed two different European lines; CDSL digitises only one of them.** Treating "Wilson" as a single text confounds PWG-side vs MW-side ancestry work.
+
+| Edition | Role | Full body at Cologne/CDSL? |
+|---|---|---|
+| **WIL 1819** (1st, Calcutta) | **Print base of PWG**; European intermediate for the dictionary-tradition stream MW compresses under `<ls>L.</ls>` | **No** |
+| **WIL 1832** (2nd, Calcutta) | **English-gloss base of MW72** (with PWG matter added); MW1899 brings English meanings forward from MW72; MW `W.` / CDSL `wil` | **Yes** — `csl-orig/v02/wil/wil.txt` |
+
+**Do not collapse markers:**
+
+- MW **`L.`** = *native lexicons only* (MW 1899 preface) — not a Wilson siglum. Transmission path of that European stream: **WIL 1819 → PWG (named koshas) → MW `L.` hedge**.
+- MW **`W.`** = Wilson's authority; CDSL text for comparison is **1832**.
+
+**Scope discipline (MG, 02-08-2026):** full WIL 1819 body digitisation is **not** needed now; the **1819 preface** is the bounded next OCR unit (`/cologne-preface-ocr`). Sample residue only: [WIL `WIL_1819_page59_iast.pdf`](https://github.com/sanskrit-lexicon/WIL/blob/main/WIL_1819_page59_iast.pdf).
+
+Canonical note: [WIL `docs/WIL_EDITION_LINEAGE_1819_1832.md`](https://github.com/sanskrit-lexicon/WIL/blob/main/docs/WIL_EDITION_LINEAGE_1819_1832.md). Cross-wired into [MWS DICT_PROFILE](https://github.com/sanskrit-lexicon/MWS/blob/master/DICT_PROFILE.md), [PWG README](https://github.com/sanskrit-lexicon/PWG/blob/main/README.md), [MW72 README](https://github.com/sanskrit-lexicon/MW72/blob/master/README.md). Related: [§511](#511-mw72-carries-zero-ls-source-citations--every-cross-dictionary-citation-test-that-names-it-shrinks-to-mw) (MW72 has zero `<ls>`).
+
+> Grok 4.5 (`grok-4.5`) · 02-08-2026 · MG standing note (edition lineage + OCR scope)
