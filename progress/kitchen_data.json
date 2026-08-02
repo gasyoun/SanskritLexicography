@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-02T12:03:49Z",
-  "schema": "pwg.kitchen.v1",
+  "generated_at": "2026-08-02T15:45:53Z",
+  "schema": "pwg.kitchen.v2",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
@@ -8,7 +8,7 @@
   "activity": {
     "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 16938,
+    "youngest_artifact_age_seconds": 30260,
     "window_state": "needs_requeue",
     "window_root": "no_pwg_w05",
     "next_action": "Run python src\\pilot\\requeue_from_audit.py <root>, rerun Max Workflow, then rerun audit_window.py.",
@@ -16,39 +16,420 @@
       "store": {
         "exists": true,
         "mtime": "2026-08-02T07:21:30Z",
-        "age_seconds": 16938,
+        "age_seconds": 30260,
         "size": 26192750
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-07-15T20:26:10Z",
-        "age_seconds": 1525058,
+        "age_seconds": 1538380,
         "size": 53853
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-07-15T20:26:10Z",
-        "age_seconds": 1525058,
+        "age_seconds": 1538380,
         "size": 314319
       },
       "events": {
         "exists": true,
         "mtime": "2026-07-24T18:39:44Z",
-        "age_seconds": 753844,
+        "age_seconds": 767167,
         "size": 3486985
       }
     }
+  },
+  "operator": {
+    "measured": true,
+    "root": "no_pwg_w05",
+    "state": "needs_requeue",
+    "next_action": "Run python src\\pilot\\requeue_from_audit.py <root>, rerun Max Workflow, then rerun audit_window.py.",
+    "recorded_at": "2026-07-15T20:26:10Z",
+    "requeue_count": 25,
+    "clean_key_count": 19,
+    "translated": 37,
+    "pending": 7,
+    "newest_card_at": "2026-07-14T04:10:54Z",
+    "oldest_card_at": "2026-06-29T11:40:48Z",
+    "days_since_last_card": 19.48,
+    "campaign_days": 35
+  },
+  "yield_quality": {
+    "measured": true,
+    "windows": 473,
+    "outcome_mix": {
+      "needs_requeue": 350,
+      "stale_artifact": 108,
+      "partial": 5,
+      "blocked": 5,
+      "clean": 3,
+      "transient_only": 2
+    },
+    "clean_windows": 3,
+    "clean_window_pct": 0.63,
+    "requeue_sum": 4422,
+    "mean_requeue": 9.349,
+    "transient_sum": 903,
+    "defect_sum": 1428,
+    "clean_key_sum": 13666,
+    "mean_clean_keys": 29.516,
+    "top_roots": [
+      {
+        "root": "sTA",
+        "windows": 98
+      },
+      {
+        "root": "gam",
+        "windows": 19
+      },
+      {
+        "root": "vraj",
+        "windows": 11
+      },
+      {
+        "root": "Sam",
+        "windows": 11
+      },
+      {
+        "root": "hi",
+        "windows": 11
+      },
+      {
+        "root": "naS",
+        "windows": 11
+      },
+      {
+        "root": "jan",
+        "windows": 10
+      },
+      {
+        "root": "pA",
+        "windows": 10
+      }
+    ]
+  },
+  "gates": {
+    "measured": true,
+    "gate_summaries": 3661,
+    "exit0": 1886,
+    "exit0_pct": 51.5,
+    "recent_shown": 200,
+    "recent": [
+      {
+        "ts": "2026-07-24T18:39:28Z",
+        "root": null,
+        "summary": "prompt_semantic exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-07-24T18:39:28Z",
+        "root": null,
+        "summary": "sense_loss exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-07-24T18:39:28Z",
+        "root": null,
+        "summary": "ru_style exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-07-24T18:39:44Z",
+        "root": "zzqq",
+        "summary": "final_schema exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-07-24T18:39:44Z",
+        "root": "zzqq",
+        "summary": "nws exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-07-24T18:39:44Z",
+        "root": "zzqq",
+        "summary": "translation exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-07-24T18:39:44Z",
+        "root": "zzqq",
+        "summary": "stage2_mechanical exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-07-24T18:39:44Z",
+        "root": "zzqq",
+        "summary": "coverage exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-07-24T18:39:44Z",
+        "root": "zzqq",
+        "summary": "sense_dupes exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-07-24T18:39:44Z",
+        "root": "zzqq",
+        "summary": "prompt_semantic exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-07-24T18:39:44Z",
+        "root": "zzqq",
+        "summary": "sense_loss exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      },
+      {
+        "ts": "2026-07-24T18:39:44Z",
+        "root": "zzqq",
+        "summary": "ru_style exit=0 requeue=0",
+        "returncode": 0,
+        "requeue": []
+      }
+    ]
+  },
+  "instrumentation": {
+    "measured": true,
+    "windows": 473,
+    "wall_clock_present": 12,
+    "wall_clock_coverage_pct": 2.5,
+    "token_metrics_present": 12,
+    "token_coverage_pct": 2.5,
+    "gen_model_present": 0,
+    "gen_model_coverage_pct": 0.0,
+    "gen_models": {},
+    "note": "audit_window already stamps production_metrics when wall-clock can be derived; historical ledger rows predate that path — coverage <100% is expected"
+  },
+  "health": {
+    "measured": true,
+    "ceiling_ms": 65000,
+    "probes": 31,
+    "go_count": 22,
+    "nogo_count": 9,
+    "go_pct": 71.0,
+    "last": {
+      "ts": "2026-08-02T12:46:42.735Z",
+      "account": "c4",
+      "elapsed_ms": 66291,
+      "duration_api_ms": 16445,
+      "ceiling_ms": 65000,
+      "verdict": "NO-GO",
+      "model": "claude-sonnet-5",
+      "source": "h963_c4_gate0_probe_events.jsonl"
+    },
+    "last_verdict": "NO-GO",
+    "recent": [
+      {
+        "ts": "2026-07-25T18:58:49.376Z",
+        "account": "c5",
+        "elapsed_ms": 52960,
+        "duration_api_ms": null,
+        "ceiling_ms": 65000,
+        "verdict": "GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c5_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-07-26T02:37:26.786Z",
+        "account": "c1",
+        "elapsed_ms": 6424,
+        "duration_api_ms": null,
+        "ceiling_ms": 65000,
+        "verdict": "GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c1_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-07-31T18:59:59.255Z",
+        "account": "c4",
+        "elapsed_ms": 94606,
+        "duration_api_ms": null,
+        "ceiling_ms": 65000,
+        "verdict": "NO-GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-07-31T19:01:17.695Z",
+        "account": "c4",
+        "elapsed_ms": 78415,
+        "duration_api_ms": null,
+        "ceiling_ms": 65000,
+        "verdict": "NO-GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-08-01T20:21:03.067Z",
+        "account": "c4",
+        "elapsed_ms": 39437,
+        "duration_api_ms": 21171,
+        "ceiling_ms": 65000,
+        "verdict": "GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-08-01T20:21:53.433Z",
+        "account": "c4",
+        "elapsed_ms": 50336,
+        "duration_api_ms": 27557,
+        "ceiling_ms": 65000,
+        "verdict": "GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-08-02T05:47:17.844Z",
+        "account": "c4",
+        "elapsed_ms": 55390,
+        "duration_api_ms": 37690,
+        "ceiling_ms": 65000,
+        "verdict": "GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-08-02T05:48:01.692Z",
+        "account": "c4",
+        "elapsed_ms": 43815,
+        "duration_api_ms": 26386,
+        "ceiling_ms": 65000,
+        "verdict": "GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-08-02T07:48:25.138Z",
+        "account": "c4",
+        "elapsed_ms": 236328,
+        "duration_api_ms": 43646,
+        "ceiling_ms": 65000,
+        "verdict": "NO-GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-08-02T07:49:40.754Z",
+        "account": "c4",
+        "elapsed_ms": 75561,
+        "duration_api_ms": 29069,
+        "ceiling_ms": 65000,
+        "verdict": "NO-GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-08-02T11:05:16.821Z",
+        "account": "c4",
+        "elapsed_ms": 55803,
+        "duration_api_ms": 28603,
+        "ceiling_ms": 65000,
+        "verdict": "GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-08-02T11:06:53.389Z",
+        "account": "c4",
+        "elapsed_ms": 96520,
+        "duration_api_ms": 69137,
+        "ceiling_ms": 65000,
+        "verdict": "NO-GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-08-02T12:45:36.391Z",
+        "account": "c4",
+        "elapsed_ms": 61662,
+        "duration_api_ms": 27834,
+        "ceiling_ms": 65000,
+        "verdict": "GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-08-02T12:46:42.735Z",
+        "account": "c4",
+        "elapsed_ms": 66291,
+        "duration_api_ms": 16445,
+        "ceiling_ms": 65000,
+        "verdict": "NO-GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
+      }
+    ],
+    "note": "GO if elapsed_ms ≤ latency ceiling (default 65s; H2011/H2174 c4 series)"
+  },
+  "quality": {
+    "measured": true,
+    "fidelity": {
+      "n": 100,
+      "good": 98,
+      "bad": 2,
+      "precision": 0.98,
+      "ci95_wilson": [
+        0.93,
+        0.994
+      ]
+    },
+    "clean_windows": 3,
+    "promotion_vs_generation": {
+      "clean_ledger_windows": 3,
+      "total_windows": 473,
+      "note": "clean = mechanically clean window state, not article-site publish"
+    },
+    "judge_coverage": {
+      "windows_with_sample": 360,
+      "windows": 473,
+      "pct": 76.1
+    },
+    "crashes": 5,
+    "last_crash": {
+      "ts": "2026-07-05T22:10:51Z",
+      "root": "nominal_w1_100small",
+      "summary": "crashed gates: glue, glue-missing-nested"
+    },
+    "crashes_per_100_windows": 1.06
+  },
+  "eta": {
+    "measured": true,
+    "verb_promoted": 48,
+    "verb_scope_dcs": 749,
+    "verb_remaining": 701,
+    "verb_pct": 6.41,
+    "mean_cards_per_active_day_14d": 891.846,
+    "estimated_days_at_14d_card_rate": 0.8,
+    "estimate_label": "estimate",
+    "note": "ETA divides remaining DCS-attested verb roots by mean cards/active-day (14d). Units differ (roots vs cards) — treat as order-of-magnitude only, not a schedule.",
+    "basis": "cards_rate_only"
   },
   "speed": {
     "cards_last_hour": 0,
     "cards_last_24h": 0,
     "mean_cards_per_active_day_14d": 891.846,
     "mean_wall_clock_minutes": 3.0,
+    "wall_clock_sample_n": 1,
     "newest_card_at": "2026-07-14T04:10:54Z",
+    "oldest_card_at": "2026-06-29T11:40:48Z",
     "measured": true
   },
   "cost": {
-    "mean_tokens_per_window": null,
+    "mean_tokens_per_window": 1246313.0,
     "windows_in_ledger": 473,
     "economy": {
       "measured": true,
@@ -83,7 +464,9 @@
           "input": 3.0,
           "output": 15.0,
           "cache_write": 3.75,
-          "cache_read": 0.3
+          "cache_read": 0.3,
+          "cache_write_5m": 3.75,
+          "cache_write_1h": 6.0
         },
         "agents_per_clean": 2.836735
       },
@@ -95,7 +478,9 @@
           "input": 3.0,
           "output": 15.0,
           "cache_write": 3.75,
-          "cache_read": 0.3
+          "cache_read": 0.3,
+          "cache_write_5m": 3.75,
+          "cache_write_1h": 6.0
         },
         "clean_dictionary": {
           "floor_usd": 2.2794,
@@ -133,7 +518,9 @@
         "input": 3.0,
         "output": 15.0,
         "cache_write": 3.75,
-        "cache_read": 0.3
+        "cache_read": 0.3,
+        "cache_write_5m": 3.75,
+        "cache_write_1h": 6.0
       },
       "clean_dictionary": {
         "floor_usd": 2.2794,
@@ -162,6 +549,15 @@
         "band": "same economy band rates as $/clean card (cache-read floor … fresh-input ceil); true_upper prices every token at the output rate"
       }
     },
+    "honesty": {
+      "measured": true,
+      "priced_clean_cards": 59,
+      "economy_source": "generation_api_probe_log.jsonl",
+      "outcome_rows": 9,
+      "structured_agents_used": 6,
+      "badge": "priced sample n=59 clean cards",
+      "note": "Economy band is list-price extremes on a probe/log sample — not the Claude Max subscription invoice and not full-campaign billed spend"
+    },
     "measured": true
   },
   "idle": {
@@ -172,7 +568,7 @@
     "total_idle_seconds": 1549947,
     "total_idle_hours": 430.54,
     "mean_gap_seconds": 12204.307,
-    "current_idle_seconds": 16938,
+    "current_idle_seconds": 30262,
     "last_idle_seconds": 352265,
     "last_idle": {
       "from": "2026-07-11T18:34:18Z",
@@ -197,9 +593,9 @@
       },
       {
         "month": "2026-08",
-        "idle_seconds": 16938,
-        "idle_days": 0.2,
-        "idle_hours": 4.71
+        "idle_seconds": 30262,
+        "idle_days": 0.35,
+        "idle_hours": 8.41
       }
     ],
     "recent_gaps": [
@@ -1328,731 +1724,1102 @@
         "date": "2026-04-05",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-06",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-07",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-08",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-09",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-10",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-11",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-12",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-13",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-14",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-15",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-16",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-17",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-18",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-19",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-20",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-21",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-22",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-23",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-24",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-25",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-26",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-27",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-28",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-29",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-04-30",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-01",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-02",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-03",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-04",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-05",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-06",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-07",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-08",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-09",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-10",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-11",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-12",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-13",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-14",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-15",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-16",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-17",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-18",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-19",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-20",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-21",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-22",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-23",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-24",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-25",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-26",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-27",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-28",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-29",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-30",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-05-31",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-01",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-02",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-03",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-04",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-05",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-06",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-07",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-08",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-09",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-10",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-11",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-12",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-13",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-14",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-15",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-16",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-17",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-18",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-19",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-20",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-21",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-22",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-23",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-24",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-25",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-26",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-06-27",
         "cards": 0,
         "windows": 13,
-        "level": 0
+        "idle_seconds": 15931,
+        "idle_hours": 4.43,
+        "level": 0,
+        "idle": true
       },
       {
         "date": "2026-06-28",
         "cards": 0,
         "windows": 40,
-        "level": 0
+        "idle_seconds": 85074,
+        "idle_hours": 23.63,
+        "level": 0,
+        "idle": true
       },
       {
         "date": "2026-06-29",
         "cards": 6033,
         "windows": 174,
-        "level": 4
+        "idle_seconds": 77556,
+        "idle_hours": 21.54,
+        "level": 4,
+        "idle": false
       },
       {
         "date": "2026-06-30",
         "cards": 2530,
         "windows": 52,
-        "level": 4
+        "idle_seconds": 85681,
+        "idle_hours": 23.8,
+        "level": 4,
+        "idle": false
       },
       {
         "date": "2026-07-01",
         "cards": 1194,
         "windows": 119,
-        "level": 4
+        "idle_seconds": 98777,
+        "idle_hours": 27.44,
+        "level": 4,
+        "idle": false
       },
       {
         "date": "2026-07-02",
         "cards": 0,
         "windows": 16,
-        "level": 0
+        "idle_seconds": 73226,
+        "idle_hours": 20.34,
+        "level": 0,
+        "idle": true
       },
       {
         "date": "2026-07-03",
         "cards": 673,
         "windows": 20,
-        "level": 4
+        "idle_seconds": 87159,
+        "idle_hours": 24.21,
+        "level": 4,
+        "idle": false
       },
       {
         "date": "2026-07-04",
         "cards": 416,
         "windows": 9,
-        "level": 4
+        "idle_seconds": 122439,
+        "idle_hours": 34.01,
+        "level": 4,
+        "idle": false
       },
       {
         "date": "2026-07-05",
         "cards": 306,
         "windows": 3,
-        "level": 4
+        "idle_seconds": 65623,
+        "idle_hours": 18.23,
+        "level": 4,
+        "idle": false
       },
       {
         "date": "2026-07-06",
         "cards": 79,
         "windows": 4,
-        "level": 3
+        "idle_seconds": 129320,
+        "idle_hours": 35.92,
+        "level": 3,
+        "idle": false
       },
       {
         "date": "2026-07-07",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 66650,
+        "idle_hours": 18.51,
+        "level": 0,
+        "idle": true
       },
       {
         "date": "2026-07-08",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 66650,
+        "idle_hours": 18.51,
+        "level": 0,
+        "idle": true
       },
       {
         "date": "2026-07-09",
         "cards": 14,
         "windows": 0,
-        "level": 2
+        "idle_seconds": 66650,
+        "idle_hours": 18.51,
+        "level": 2,
+        "idle": false
       },
       {
         "date": "2026-07-10",
         "cards": 61,
         "windows": 1,
-        "level": 3
+        "idle_seconds": 101014,
+        "idle_hours": 28.06,
+        "level": 3,
+        "idle": false
       },
       {
         "date": "2026-07-11",
         "cards": 188,
         "windows": 7,
-        "level": 4
+        "idle_seconds": 126374,
+        "idle_hours": 35.1,
+        "level": 4,
+        "idle": false
       },
       {
         "date": "2026-07-12",
         "cards": 48,
         "windows": 0,
-        "level": 3
+        "idle_seconds": 70453,
+        "idle_hours": 19.57,
+        "level": 3,
+        "idle": false
       },
       {
         "date": "2026-07-13",
         "cards": 37,
         "windows": 0,
-        "level": 3
+        "idle_seconds": 70453,
+        "idle_hours": 19.57,
+        "level": 3,
+        "idle": false
       },
       {
         "date": "2026-07-14",
         "cards": 15,
         "windows": 0,
-        "level": 2
+        "idle_seconds": 70453,
+        "idle_hours": 19.57,
+        "level": 2,
+        "idle": false
       },
       {
         "date": "2026-07-15",
         "cards": 0,
         "windows": 15,
-        "level": 0
+        "idle_seconds": 70453,
+        "idle_hours": 19.57,
+        "level": 0,
+        "idle": true
       },
       {
         "date": "2026-07-16",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-17",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-18",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-19",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-20",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-21",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-22",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-23",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-24",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-25",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-26",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-27",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-28",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-29",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-30",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-07-31",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-08-01",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       },
       {
         "date": "2026-08-02",
         "cards": 0,
         "windows": 0,
-        "level": 0
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       }
     ],
     "max_cards": 6033,
-    "active_days": 17
+    "active_days": 17,
+    "idle_days": 6
   },
   "changelog": {
     "measured": true,
     "source": "RussianTranslation/CHANGELOG.md",
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md",
     "entries": [
+      {
+        "version": "1.137.3",
+        "date": "2026-08-02",
+        "bullets": [
+          {
+            "title": "Fixed",
+            "summary": "- **The cost table priced 1 h cache writes at the 5 m rate, under-reporting every CLI call by 1.6× on that line (H2190, 02-08-2026, Opus 5 `claude-opus-5`):** `PRICE['cache_write'] = 3.75` is the **five-minute** rate (1.25× base); every write the pwg_ru CLI lane produces lands…"
+          }
+        ]
+      },
       {
         "version": "1.137.0",
         "date": "2026-08-02",
@@ -2174,16 +2941,6 @@
             "summary": "- **H2144 D4b bracket-normalize unlock for the 63-row PWG fullwidth-paren residual (02-08-2026, Sonnet 5 `claude-sonnet-5`):** extends [`d4_boundary_wrap.try_boundary_wrap`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/d4_boundary_wr…"
           }
         ]
-      },
-      {
-        "version": "1.125.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Fixed",
-            "summary": "- **Fail-closed occupied-keys guard (H2154, 02-08-2026, Fable 5 `claude-fable-5`):** H2025 audit gap G2 (census S1-1/S1-2, the lane's only remaining duplicate-paid-spend path). The scheduler's `occupied` set — keys owned by queued/running jobs — was built under a per-manifest …"
-          }
-        ]
       }
     ]
   },
@@ -2196,8 +2953,10 @@
       "workflow_keys": 47,
       "translated": 40,
       "requeue_count": 29,
+      "clean_key_count": 18,
       "wall_clock_minutes": null,
-      "tokens": null
+      "tokens": null,
+      "gen_model": null
     },
     {
       "recorded_at": "2026-07-15T20:25:30Z",
@@ -2206,8 +2965,10 @@
       "workflow_keys": 13,
       "translated": 11,
       "requeue_count": 4,
+      "clean_key_count": 9,
       "wall_clock_minutes": null,
-      "tokens": null
+      "tokens": null,
+      "gen_model": null
     },
     {
       "recorded_at": "2026-07-15T20:25:31Z",
@@ -2216,8 +2977,10 @@
       "workflow_keys": 2,
       "translated": 1,
       "requeue_count": 1,
+      "clean_key_count": 1,
       "wall_clock_minutes": null,
-      "tokens": null
+      "tokens": null,
+      "gen_model": null
     },
     {
       "recorded_at": "2026-07-15T20:25:33Z",
@@ -2226,8 +2989,10 @@
       "workflow_keys": 35,
       "translated": 31,
       "requeue_count": 17,
+      "clean_key_count": 18,
       "wall_clock_minutes": null,
-      "tokens": null
+      "tokens": null,
+      "gen_model": null
     },
     {
       "recorded_at": "2026-07-15T20:25:35Z",
@@ -2236,8 +3001,10 @@
       "workflow_keys": 13,
       "translated": 10,
       "requeue_count": 5,
+      "clean_key_count": 8,
       "wall_clock_minutes": null,
-      "tokens": null
+      "tokens": null,
+      "gen_model": null
     },
     {
       "recorded_at": "2026-07-15T20:25:38Z",
@@ -2246,8 +3013,10 @@
       "workflow_keys": 44,
       "translated": 37,
       "requeue_count": 25,
+      "clean_key_count": 19,
       "wall_clock_minutes": null,
-      "tokens": null
+      "tokens": null,
+      "gen_model": null
     },
     {
       "recorded_at": "2026-07-15T20:25:40Z",
@@ -2256,8 +3025,10 @@
       "workflow_keys": 21,
       "translated": 17,
       "requeue_count": 7,
+      "clean_key_count": 14,
       "wall_clock_minutes": null,
-      "tokens": null
+      "tokens": null,
+      "gen_model": null
     },
     {
       "recorded_at": "2026-07-15T20:25:42Z",
@@ -2266,8 +3037,10 @@
       "workflow_keys": 5,
       "translated": 5,
       "requeue_count": 1,
+      "clean_key_count": 4,
       "wall_clock_minutes": null,
-      "tokens": null
+      "tokens": null,
+      "gen_model": null
     },
     {
       "recorded_at": "2026-07-15T20:25:44Z",
@@ -2276,8 +3049,10 @@
       "workflow_keys": 58,
       "translated": 46,
       "requeue_count": 55,
+      "clean_key_count": 3,
       "wall_clock_minutes": null,
-      "tokens": null
+      "tokens": null,
+      "gen_model": null
     },
     {
       "recorded_at": "2026-07-15T20:25:46Z",
@@ -2286,8 +3061,10 @@
       "workflow_keys": 52,
       "translated": 45,
       "requeue_count": 51,
+      "clean_key_count": 1,
       "wall_clock_minutes": null,
-      "tokens": null
+      "tokens": null,
+      "gen_model": null
     },
     {
       "recorded_at": "2026-07-15T20:25:49Z",
@@ -2296,8 +3073,10 @@
       "workflow_keys": 46,
       "translated": 40,
       "requeue_count": 41,
+      "clean_key_count": 5,
       "wall_clock_minutes": null,
-      "tokens": null
+      "tokens": null,
+      "gen_model": null
     },
     {
       "recorded_at": "2026-07-15T20:26:10Z",
@@ -2306,8 +3085,10 @@
       "workflow_keys": 44,
       "translated": 37,
       "requeue_count": 25,
+      "clean_key_count": 19,
       "wall_clock_minutes": null,
-      "tokens": null
+      "tokens": null,
+      "gen_model": null
     }
   ],
   "last_window": {
@@ -2317,7 +3098,9 @@
     "workflow_keys": 44,
     "translated": 37,
     "requeue_count": 25,
+    "clean_key_count": 19,
     "wall_clock_minutes": null,
-    "tokens": null
+    "tokens": null,
+    "gen_model": null
   }
 }

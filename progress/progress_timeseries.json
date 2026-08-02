@@ -27,12 +27,15 @@
     },
     {
       "date": "2026-08-02",
-      "generated_at": "2026-08-02T12:03:46Z",
+      "generated_at": "2026-08-02T15:45:47Z",
       "verb_promoted": 48,
       "verb_dcs_attested": 749,
       "senses": 11603,
       "roots": 254,
-      "coverage_pct": 41.4
+      "coverage_pct": 41.4,
+      "approved": 3,
+      "ai_translated": 11598,
+      "needs_review": 2
     }
   ]
 }
