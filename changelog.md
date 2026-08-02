@@ -15,6 +15,7 @@ not an error.
 ## [Unreleased]
 
 ### Added
+- **H2158 pwg_ru route A/B, Phase 1 (Opus 5 `claude-opus-5`, 02-08-2026):** `h2158_route_ab.py` (byte-identity-asserted two-arm harness, CLI-headless vs Messages API with an explicit 1h `cache_control` prefix), `h2158_route_ab_report.py`, `h2158_liveness_probe.py`; committed raw envelopes under `pwg_ru/h2158/`; report `ROUTE_AB_MESSAGES_API_VS_CLI_HEADLESS_02-08-2026.md`. **Measured:** a real card completes in **375 s** (never hung — 25 % past the 300 s ceiling) at **$0.8005**, of which **output tokens are 64 %** and cache-write only 34.6 % — so the Messages API port addresses the smaller half. API arm **not run** (no credential); verdict **INCONCLUSIVE**, interim NO-GO. Also: `PRICE['cache_write']` is the 5-minute rate, but this lane's writes are `ephemeral_1h` (2× base), understating CLI cost 1.6×; and bare-cwd strips *project* but not *profile* context — the profile `CLAUDE.md` overrode an explicit task instruction in a probe call.
 - **H1650 h178/h180 rescreen (Grok 4.5 `grok-4.5`, 01-08-2026):** `sheet_screening.py` (citation_tm evidence panel + screening= block); h178 A2 skip of retired mqm/likert/pairwise on regen + `agent_pass` + compute labels agent-vs-human/agent-only; h180/g5 pass screening=; FINDINGS §512 N1 loop; `pwg_ru/SCREENING_H1650.md`.
 
 ### Added
