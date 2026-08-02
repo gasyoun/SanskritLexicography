@@ -102,6 +102,16 @@
   @media (max-width:720px){ .section-grid { grid-template-columns:1fr; } }
   .panel { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:.7rem 1rem; }
   .panel h3 { margin:.1rem 0 .5rem; font-size:1rem; }
+  .collision-banner { display:none; background:#fff1f0; border:2px solid var(--block);
+    border-radius:8px; padding:.85rem 1.1rem; margin:.8rem 0 1rem; color:var(--block); }
+  .collision-banner.on { display:block; }
+  .collision-banner b.banner-title { font-size:1.05rem; letter-spacing:.02em; }
+  .collision-banner .one-liner { color:var(--text); margin-top:.35rem; font-size:.9rem; }
+  .collision-banner table { width:100%; margin-top:.5rem; font-size:.85rem; color:var(--text); }
+  .collision-banner th, .collision-banner td { text-align:left; padding:.2rem .4rem; border-bottom:1px solid var(--line); }
+  @media (prefers-color-scheme: dark) {
+    .collision-banner { background:#3d1214; }
+  }
 </style>
 </head>
 <body>
@@ -146,6 +156,8 @@
   <span class="mut">Data age <b id="dataAge">—</b></span>
   <span class="mut" id="nextPoll">web auto-refresh every 60s</span>
 </div>
+
+<div id="collisionBanner" class="collision-banner" role="alert" aria-live="assertive"></div>
 
 <div class="cards" id="cards"></div>
 <div id="etaStrip" class="note"></div>
@@ -461,6 +473,36 @@ function renderKitchen(k) {
   const eta = k.eta || {};
   const quality = k.quality || {};
   const gates = k.gates || {};
+  const cg = k.collision_guard || {};
+
+  // OPT-8 / H2229 — lease collision / store-hit banner (loud; before operator strip)
+  const cgEl = document.getElementById('collisionBanner');
+  if (cg.blocked) {
+    cgEl.classList.add('on');
+    const last = cg.last || {};
+    const recent = (cg.recent || []).slice(-5).reverse();
+    const rows = recent.map(r =>
+      `<tr><td class="mono">${esc((r.ts||'').replace('T',' ').replace('Z',''))}</td>` +
+      `<td><span class="badge">${esc(r.kind || r.type || '—')}</span></td>` +
+      `<td class="mono">${esc(r.root || '—')}</td>` +
+      `<td>${esc(r.summary || '')}</td></tr>`
+    ).join('');
+    cgEl.innerHTML =
+      `<b class="banner-title">${esc(cg.banner || 'DO NOT START A SECOND PAID WINDOW')}</b>` +
+      ` <span class="badge">OPT-8 · collision</span>` +
+      `<div class="one-liner">${esc(cg.operator_one_liner || '')}</div>` +
+      `<div class="mut" style="margin-top:.35rem">Last: <b>${esc(last.root || '—')}</b> · ` +
+      `${esc(last.kind || last.type || '—')} · n=${fmt(cg.collision_count)}` +
+      (cg.live_job_count ? ` · live jobs ${fmt(cg.live_job_count)}` : '') +
+      `</div>` +
+      (rows
+        ? `<table><thead><tr><th>When</th><th>Kind</th><th>Root/lease</th><th>Reason</th></tr></thead>` +
+          `<tbody>${rows}</tbody></table>`
+        : '');
+  } else {
+    cgEl.classList.remove('on');
+    cgEl.innerHTML = '';
+  }
 
   // K1 operator strip
   const opEl = document.getElementById('operatorStrip');

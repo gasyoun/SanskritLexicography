@@ -27,6 +27,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 REPO = os.path.dirname(SRC)
 
+from dashboard_events import emit_collision  # noqa: E402
+
 def input_dir():
     """H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
     Resolved PER CALL (never a module constant): callers that rebind HERE (the
@@ -978,6 +980,19 @@ def register_prepared_lease(lease_id, lane, keys, harness, manifest, preflight_p
         target = 'nominal:%s' % keys[0]
         overlap = sorted(set(keys) & active)
         if overlap:
+            sample = ','.join(overlap[:12])
+            msg = 'nominal lease keys already active: %s' % sample
+            # OPT-8 / H2229 — surface lease collision on the kitchen, not only stderr.
+            emit_collision(
+                'nominal_keys_active',
+                root=lease_id,
+                summary=msg,
+                source='coordinator',
+                data={
+                    'lease_id': lease_id,
+                    'overlap_count': len(overlap),
+                    'overlap_sample': overlap[:20],
+                })
             raise SystemExit('nominal lease keys already active: %s' % ','.join(overlap))
         run_keys = [safe_name(k) for k in keys]
         lease = {

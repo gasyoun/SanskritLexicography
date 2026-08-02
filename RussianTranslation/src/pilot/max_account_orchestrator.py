@@ -25,6 +25,7 @@ from execution_contract import (ActiveCallClaim, config_dir_fingerprint, validat
                                 validate_profile)
 from call_reservation import (CallLimitReached, CallReservationLedger, run_ids,
                               telemetry_from_cli_wrapper, unevaluable_telemetry)
+from dashboard_events import emit_collision
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -689,11 +690,23 @@ def occupied_keys(db):
             with open(row['manifest_path'], encoding='utf-8') as fh:
                 occupied.update(json.load(fh)['meta']['selected_keys'])
         except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
-            raise SystemExit(
+            msg = (
                 'occupied-keys guard: cannot read the manifest of queued/running job '
                 '%s (%s): %s -- refusing to import; an unreadable live manifest would '
                 'let its keys dispatch into a SECOND paid window (H2154)'
                 % (row['external_id'], row['manifest_path'], exc))
+            # OPT-8 / H2229 — kitchen banner, not a new concurrency protocol.
+            emit_collision(
+                'occupied_keys_unreadable',
+                root=row['external_id'],
+                summary=msg,
+                source='max_account_orchestrator',
+                data={
+                    'job_external_id': row['external_id'],
+                    'manifest_path': row['manifest_path'],
+                    'error': str(exc),
+                })
+            raise SystemExit(msg)
     return occupied
 
 
@@ -731,6 +744,18 @@ def cmd_import_coordinator(args):
             keys = set(manifest['meta']['selected_keys'])
             overlap = keys & occupied
             if overlap:
+                sample = ','.join(sorted(overlap)[:12])
+                msg = '%s: key overlap with queued/done job: %s' % (lease['id'], sample)
+                emit_collision(
+                    'occupied_keys_overlap',
+                    root=lease['id'],
+                    summary=msg,
+                    source='max_account_orchestrator',
+                    data={
+                        'lease_id': lease['id'],
+                        'overlap_count': len(overlap),
+                        'overlap_sample': sorted(overlap)[:20],
+                    })
                 raise SystemExit('%s: key overlap with queued/done job: %s' %
                                  (lease['id'], ','.join(sorted(overlap))))
             output = os.path.join(lease['artifact_dir'], 'workflow_result.headless.%s.json' % lease['id'])
@@ -796,6 +821,19 @@ def cmd_import_requeue(args):
     keys = set(manifest['meta']['selected_keys'])
     overlap = keys & occupied
     if overlap:
+        sample = ','.join(sorted(overlap)[:12])
+        msg = '%s: requeue key overlap with a queued/running job: %s' % (
+            args.lease_id, sample)
+        emit_collision(
+            'requeue_key_overlap',
+            root=args.lease_id,
+            summary=msg,
+            source='max_account_orchestrator',
+            data={
+                'lease_id': args.lease_id,
+                'overlap_count': len(overlap),
+                'overlap_sample': sorted(overlap)[:20],
+            })
         raise SystemExit('%s: requeue key overlap with a queued/running job: %s' %
                          (args.lease_id, ','.join(sorted(overlap))))
     adir = attempt.get('artifact_dir') or lease.get('artifact_dir')

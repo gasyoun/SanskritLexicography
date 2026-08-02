@@ -16,6 +16,31 @@ OUT = os.path.join(HERE, 'output')
 # dashboard_events.jsonl. Unset (production) resolves exactly as before.
 EVENT_LOG = os.environ.get('PWG_EVENTS_PATH') or os.path.join(OUT, 'dashboard_events.jsonl')
 
+# OPT-8 / H2229 — second paid window is already aborted by guards; these types make
+# the abort visible on the public kitchen (not only console stderr).
+COLLISION_EVENT_TYPES = frozenset({
+    'lease_collision',
+    'store_hit',
+    'occupied_keys_unreadable',
+    'key_overlap',
+})
+
+OPERATOR_ONE_LINER_COLLISION = (
+    'If the kitchen collision banner is red (or collision_guard.blocked=true): '
+    'DO NOT start a second paid window on those keys/root — a live job or recent '
+    'store-hit / lease collision already holds them. Wait for the live job to '
+    'finish or requeue that lease; only then import another window.'
+)
+
+_KIND_TO_TYPE = {
+    'occupied_keys_overlap': 'lease_collision',
+    'requeue_key_overlap': 'lease_collision',
+    'nominal_keys_active': 'lease_collision',
+    'occupied_keys_unreadable': 'occupied_keys_unreadable',
+    'store_hit': 'store_hit',
+    'key_overlap': 'key_overlap',
+}
+
 
 def utc_now():
     return datetime.datetime.now(datetime.timezone.utc).isoformat(
@@ -43,6 +68,27 @@ def append_event(source, event_type, level='info', root=None, state=None,
     except Exception as e:
         print('warning: dashboard event append failed: %s' % e, file=sys.stderr)
     return rec
+
+
+def emit_collision(kind, *, root=None, summary='', data=None, source=None,
+                   log_path=EVENT_LOG):
+    """OPT-8 / H2229 — record a store-hit / lease-collision abort for the kitchen.
+
+    Best-effort like append_event. Does not change spend behaviour — callers still
+    SystemExit after this. Kind maps to a stable event type for kitchen_slices.
+    """
+    payload = dict(data or {})
+    payload.setdefault('kind', kind)
+    payload.setdefault('operator_one_liner', OPERATOR_ONE_LINER_COLLISION)
+    etype = _KIND_TO_TYPE.get(kind, 'lease_collision')
+    banner = 'DO NOT START A SECOND PAID WINDOW'
+    sum_text = summary or ('%s — %s' % (banner, kind))
+    if banner not in sum_text:
+        sum_text = '%s — %s' % (banner, sum_text)
+    return append_event(
+        source or 'collision_guard', etype, level='error', root=root,
+        state='blocked_second_window', summary=sum_text, data=payload,
+        log_path=log_path)
 
 
 def emit_stage_boundary(stage, window_tag=None, root=None, ts=None, data=None,

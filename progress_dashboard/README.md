@@ -1,6 +1,6 @@
 # PWG→RU progress & kitchen dashboard
 
-_Created: 10-07-2026 · Last updated: 02-08-2026_
+_Created: 10-07-2026 · Last updated: 02-08-2026 (H2229 OPT-8 collision banner)_
 
 **Improvement backlog (measured / show / should-measure):**
 [ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md).
@@ -70,6 +70,13 @@ Where the article site shows the **finished** PWG→Russian translations, this s
   `human` · `weekly_cap` · `health_nogo` · `machine_off` · `waiting_requeue` · `unknown`
   (operator log and measured auto-rules only — silence stays `unknown`).
 - **Article-site parity** — store unique roots vs `article_site/md/*.md` (B10); `measured: false` if the site is not built locally.
+- **Lease collision / store-hit banner (OPT-8, H2229)** — red kitchen banner when
+  `dashboard_events.jsonl` records a store-hit or lease-collision abort (occupied-keys
+  overlap, unreadable live manifest, nominal keys already active). **Operator one-liner:**
+  if the banner is red (or `collision_guard.blocked=true`), **do not start a second paid
+  window** on those keys/root — wait for the live job to finish or requeue that lease.
+  Fixture: [`examples/collision_events.example.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/examples/collision_events.example.jsonl).
+  Selftest: `python progress_dashboard/kitchen_collision_selftest.py`.
 - **Calendar** — day heatmap of cards written (store provenance) + window counts.
 - **Web changelog** — recent version bullets from `RussianTranslation/CHANGELOG.md`.
 
