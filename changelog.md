@@ -14,6 +14,10 @@ not an error.
 
 ## [Unreleased]
 
+## [1.137.8] - 2026-08-03
+### Fixed
+- **OPT-6 citation coverage single source of truth (H2225, Grok 4.5 `grok-4.5`, 02-08-2026):** `build_citation_index.py` extracts pure `coverage_key` + `coverage_bucket` + shared kernel so `CITATION_SOURCES` / `UNCOVERED_SOURCES` cannot disagree on covered vs truly-uncovered vs non-coordinate labels. Labels no longer inflate distinct-ref `unresolved`. `python src/build_citation_index.py --selftest` green. [PR #1049](https://github.com/gasyoun/SanskritLexicography/pull/1049).
+
 ## [1.137.7] - 2026-08-03
 ### Fixed
 - **OPT-1 EN promote parity (H2224, Grok 4.5 `grok-4.5`, 02-08-2026):** `promote_en.py` gains B08 better-attempt-wins, B20 model-identity cross-check, and H1553 defect-key refuse (+ optional ready_partial filter); helpers single-sourced from `promote_final_cards` (EN stays attach-overlay). LANG_PARITY `h1339_en_promote_parity_gap` + `h1553_wall_clock_defect_ready_partial` → SHARED. [PR #1047](https://github.com/gasyoun/SanskritLexicography/pull/1047).
