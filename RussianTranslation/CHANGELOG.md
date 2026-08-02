@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed
+- **Correction to 1.121.0, and the actionable cost finding it was hiding (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** 1.121.0 reported "199 370 **subagent** tokens" for a single-fragment heal call, implying subagent scaffolding. That was a misreading and it pointed at the wrong remedy — `call_reservation.py:92` sets `subagent_tokens = sum(values.values())`, i.e. the **sum of the other four token fields** under a legacy misnomer (`economy_ledger.py:35-37` already documents it as "the blunt totalTokens"). **No subagents are involved.** The true composition: **every call re-creates 56–68 k tokens of cache at the premium write rate, ~71 % of the call's cost** (`g1`: cache_creation 63 860 × $6/M = $0.383 of $0.540, reproducing the recorded `0.5399832` exactly). The framework prompt is written to cache per invocation instead of amortised — `g2`/`g6` read only ~35.6 k while still creating ~56 k. Because writing ~60 k tokens also costs wall-clock, this is the one lever that attacks **both** the 4.7× cost overrun and the 180 s timeout wall without touching the `"NOTHING runs past 3 min (MG)"` ruling. Table: [`RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md); tracking [#983](https://github.com/gasyoun/SanskritLexicography/issues/983).
+
 ## [1.121.0] - 2026-08-02
 
 ### Added

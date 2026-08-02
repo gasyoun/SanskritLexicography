@@ -37,8 +37,16 @@ The heal groups are **already at the floor** — splitting further is arithmetic
 
 Six of `nakzatra`'s eight groups hold a **single fragment**, and single-fragment heal calls
 still time out. The whole-card batches `b0` and `b1` timed out too, so it is not lane-specific.
-The cost is per-call overhead, not content: one heal call for **one fragment** burned
-**199 370 subagent tokens**. Lowering `SELFHEAL_GROUP_BUDGET` therefore cannot fix this.
+The cost is per-call overhead, not content: one heal call for **one fragment** billed
+**199 370 tokens in total**. Lowering `SELFHEAL_GROUP_BUDGET` therefore cannot fix this.
+
+> **Correction (same day, same session).** An earlier revision of this entry called that
+> figure "199 370 **subagent** tokens", implying subagent scaffolding. That is wrong and it
+> points at the wrong remedy. `call_reservation.py:92` computes
+> `values['subagent_tokens'] = sum(values.values())` — the field is the **sum of the other
+> four token fields** under a legacy misnomer, and `economy_ledger.py:35-37` already
+> documents it as "the blunt `subagent_tokens` totalTokens". **No subagents are involved.**
+> The real composition is in *Where the money actually goes* below.
 
 ### The margin is gone, and shrinking
 
@@ -50,12 +58,33 @@ budget. Any call above the median dies. That is the mechanical answer to H818's 
 
 `observed_cost_usd` = **$2.1543** with `cost_evaluable=false` — a **floor, not the spend**
 ([#949](https://github.com/gasyoun/SanskritLexicography/issues/949)). The 12 unevaluable calls
-were real paid spawns that each burned up to a full 180 s of subagent compute and contributed
-**0** to that total. 609 106 subagent tokens are recorded across the 4 evaluable calls alone
+were real paid spawns that each burned up to a full 180 s of compute and contributed
+**0** to that total. 609 106 tokens are billed across the 4 evaluable calls alone
 (~152 k each). **75 % of the calls, and the majority of real spend, produced nothing.**
 
 Measured per-call cost on the evaluable calls is **~$0.53**, against the `PER_AGENT_USD_HEALTHY
 = $0.113` that `perf_preflight` prices windows with — 4.7×. The preflight put w1 at $0.46.
+
+### Where the money actually goes — cache creation is ~71 % of every call
+
+| call | in | out | cache_read | **cache_creation** | usd |
+|---|---|---|---|---|---|
+| `heal:nakzatra#g1` | 4 | 7 902 | 127 604 | **63 860** | 0.5400 |
+| `heal:nakzatra#g2` | 2 | 11 335 | 35 590 | **56 379** | 0.5190 |
+| `heal:nakzatra#g6` | 2 | 8 348 | 35 597 | **56 308** | 0.4738 |
+| `heal:sarvatra#g2` | 4 | 11 791 | 126 595 | **67 785** | 0.6216 |
+
+Pricing `g1` out at list rates reproduces the recorded figure exactly: cache_creation
+63 860 × $6/M = **$0.383** · cache_read 127 604 × $0.30/M = $0.038 · output 7 902 × $15/M =
+$0.119 → **$0.540** against a recorded `0.5399832`.
+
+**Every call re-creates 56–68 k tokens of cache**, billed at the premium write rate, and that
+is **~71 % of the call's cost**. The framework prompt is being written to cache on each
+invocation instead of amortised across them — note `g2`/`g6` read only ~35.6 k while still
+creating ~56 k. Since writing ~60 k tokens also costs wall-clock, this is the one lever that
+attacks **both** the cost overrun and the 180 s timeout wall **without** touching the
+`"NOTHING runs past 3 min (MG)"` ruling. Untested hypothesis, stated as such: the cache prefix
+is not stable across `claude -p` invocations, or the TTL lapses between 2–3 minute calls.
 
 ⚠️ `HARD_TIMEOUT_MS` carries an explicit standing ruling in code — `"NOTHING runs past 3 min
 (MG)"` (R4/C-15) — so raising the ceiling is a human decision, not a tuning fix. The open
