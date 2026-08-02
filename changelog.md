@@ -14,7 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+## [1.137.7] - 2026-08-03
 ### Fixed
+- **OPT-1 EN promote parity (H2224, Grok 4.5 `grok-4.5`, 02-08-2026):** `promote_en.py` gains B08 better-attempt-wins, B20 model-identity cross-check, and H1553 defect-key refuse (+ optional ready_partial filter); helpers single-sourced from `promote_final_cards` (EN stays attach-overlay). LANG_PARITY `h1339_en_promote_parity_gap` + `h1553_wall_clock_defect_ready_partial` → SHARED. [PR #1047](https://github.com/gasyoun/SanskritLexicography/pull/1047).
 - **Master CI red: LANG_PARITY re-affirm for H2212 window_reports.py drift (H2210, Grok 4.5 grok-4.5, 02-08-2026):** five ledger hashes re-stamped; SHARED/GAP verdicts stand. RussianTranslation gates unblocked.
 
 ## [1.137.6] - 2026-08-02
