@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **Master CI red: LANG_PARITY re-affirm for H2212 window_reports.py drift (H2210, Grok 4.5 grok-4.5, 02-08-2026):** five ledger hashes re-stamped; SHARED/GAP verdicts stand. RussianTranslation gates unblocked.
+
 ## [1.137.6] - 2026-08-02
 ### Added
 - **PWG translation duplication → optimization inventory (H2222, Grok 4.5 `grok-4.5`, 02-08-2026):** durable map of intentional vs unjustified duplication so optimization hunts **code/logic twins** (EN promote GAP, audit_window fork, H1209 JS field, citation coverage SoT), not edition restates or style doublets. Doc: [`RussianTranslation/PWG_TRANSLATION_DUPLICATION_OPTIMIZATION_INVENTORY_2026-08.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_TRANSLATION_DUPLICATION_OPTIMIZATION_INVENTORY_2026-08.md). [PR #1043](https://github.com/gasyoun/SanskritLexicography/pull/1043).
