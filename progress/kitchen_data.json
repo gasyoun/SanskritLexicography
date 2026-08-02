@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T20:32:10Z",
+  "generated_at": "2026-08-02T12:03:49Z",
   "schema": "pwg.kitchen.v1",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
@@ -8,33 +8,33 @@
   "activity": {
     "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 95729,
+    "youngest_artifact_age_seconds": 16938,
     "window_state": "needs_requeue",
     "window_root": "no_pwg_w05",
     "next_action": "Run python src\\pilot\\requeue_from_audit.py <root>, rerun Max Workflow, then rerun audit_window.py.",
     "artifacts": {
       "store": {
         "exists": true,
-        "mtime": "2026-07-30T17:56:39Z",
-        "age_seconds": 95729,
-        "size": 24904391
+        "mtime": "2026-08-02T07:21:30Z",
+        "age_seconds": 16938,
+        "size": 26192750
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-07-15T20:26:10Z",
-        "age_seconds": 1382758,
+        "age_seconds": 1525058,
         "size": 53853
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-07-15T20:26:10Z",
-        "age_seconds": 1382758,
+        "age_seconds": 1525058,
         "size": 314319
       },
       "events": {
         "exists": true,
         "mtime": "2026-07-24T18:39:44Z",
-        "age_seconds": 611545,
+        "age_seconds": 753844,
         "size": 3486985
       }
     }
@@ -86,6 +86,80 @@
           "cache_read": 0.3
         },
         "agents_per_clean": 2.836735
+      },
+      "spend": {
+        "measured": true,
+        "split_source": "runs_requeue_and_wasted",
+        "total_clean_cards": 59,
+        "price_basis_usd_per_million": {
+          "input": 3.0,
+          "output": 15.0,
+          "cache_write": 3.75,
+          "cache_read": 0.3
+        },
+        "clean_dictionary": {
+          "floor_usd": 2.2794,
+          "ceil_usd": 22.7938,
+          "true_upper_usd": 113.969,
+          "tokens": 7597934,
+          "basis": "floor=cache_read rate, ceil=fresh-input rate; EXCLUDES output premium"
+        },
+        "prep_or_redo": {
+          "floor_usd": 1.8424,
+          "ceil_usd": 18.4241,
+          "true_upper_usd": 92.1207,
+          "tokens": 6141378,
+          "basis": "floor=cache_read rate, ceil=fresh-input rate; EXCLUDES output premium"
+        },
+        "all_priced": {
+          "floor_usd": 4.1218,
+          "ceil_usd": 41.2179,
+          "true_upper_usd": 206.0897,
+          "tokens": 13739312,
+          "basis": "floor=cache_read rate, ceil=fresh-input rate; EXCLUDES output premium"
+        },
+        "notes": {
+          "clean_dictionary": "tokens on first-pass (non-_rq) runs that produced clean cards — the production spend toward a clean dictionary",
+          "prep_or_redo": "tokens on clean=0 wasted runs plus requeue (_rq) windows — preparation, failed drains, and work that had to be redone",
+          "band": "same economy band rates as $/clean card (cache-read floor … fresh-input ceil); true_upper prices every token at the output rate"
+        }
+      }
+    },
+    "spend": {
+      "measured": true,
+      "split_source": "runs_requeue_and_wasted",
+      "total_clean_cards": 59,
+      "price_basis_usd_per_million": {
+        "input": 3.0,
+        "output": 15.0,
+        "cache_write": 3.75,
+        "cache_read": 0.3
+      },
+      "clean_dictionary": {
+        "floor_usd": 2.2794,
+        "ceil_usd": 22.7938,
+        "true_upper_usd": 113.969,
+        "tokens": 7597934,
+        "basis": "floor=cache_read rate, ceil=fresh-input rate; EXCLUDES output premium"
+      },
+      "prep_or_redo": {
+        "floor_usd": 1.8424,
+        "ceil_usd": 18.4241,
+        "true_upper_usd": 92.1207,
+        "tokens": 6141378,
+        "basis": "floor=cache_read rate, ceil=fresh-input rate; EXCLUDES output premium"
+      },
+      "all_priced": {
+        "floor_usd": 4.1218,
+        "ceil_usd": 41.2179,
+        "true_upper_usd": 206.0897,
+        "tokens": 13739312,
+        "basis": "floor=cache_read rate, ceil=fresh-input rate; EXCLUDES output premium"
+      },
+      "notes": {
+        "clean_dictionary": "tokens on first-pass (non-_rq) runs that produced clean cards — the production spend toward a clean dictionary",
+        "prep_or_redo": "tokens on clean=0 wasted runs plus requeue (_rq) windows — preparation, failed drains, and work that had to be redone",
+        "band": "same economy band rates as $/clean card (cache-read floor … fresh-input ceil); true_upper prices every token at the output rate"
       }
     },
     "measured": true
@@ -93,12 +167,1036 @@
   "idle": {
     "measured": true,
     "min_idle_seconds": 120,
+    "list_len": 12,
     "gap_count": 127,
     "total_idle_seconds": 1549947,
     "total_idle_hours": 430.54,
     "mean_gap_seconds": 12204.307,
-    "current_idle_seconds": 95730,
+    "current_idle_seconds": 16938,
+    "last_idle_seconds": 352265,
+    "last_idle": {
+      "from": "2026-07-11T18:34:18Z",
+      "to": "2026-07-15T20:25:23Z",
+      "seconds": 352265,
+      "after_root": "no_pwg_w05_rq1",
+      "before_root": null,
+      "source": "ledger_gap"
+    },
+    "idle_by_month": [
+      {
+        "month": "2026-06",
+        "idle_seconds": 326470,
+        "idle_days": 3.78,
+        "idle_hours": 90.69
+      },
+      {
+        "month": "2026-07",
+        "idle_seconds": 1223477,
+        "idle_days": 14.16,
+        "idle_hours": 339.85
+      },
+      {
+        "month": "2026-08",
+        "idle_seconds": 16938,
+        "idle_days": 0.2,
+        "idle_hours": 4.71
+      }
+    ],
     "recent_gaps": [
+      {
+        "from": "2026-07-05T21:40:01Z",
+        "to": "2026-07-05T22:10:50Z",
+        "seconds": 1849,
+        "after_root": "nominal_w1_100small",
+        "before_root": "nominal_w1_100small",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-05T22:10:50Z",
+        "to": "2026-07-06T08:46:37Z",
+        "seconds": 38147,
+        "after_root": "nominal_w1_100small",
+        "before_root": "no_pwg_w1",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-06T08:48:41Z",
+        "to": "2026-07-06T20:55:18Z",
+        "seconds": 43597,
+        "after_root": "no_pwg_w1",
+        "before_root": "dah",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-06T20:55:18Z",
+        "to": "2026-07-10T17:29:32Z",
+        "seconds": 333254,
+        "after_root": "dah",
+        "before_root": "no_pwg_w02",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-10T17:29:32Z",
+        "to": "2026-07-11T12:35:01Z",
+        "seconds": 68729,
+        "after_root": "no_pwg_w02",
+        "before_root": "no_pwg_w03",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T12:35:01Z",
+        "to": "2026-07-11T14:07:24Z",
+        "seconds": 5543,
+        "after_root": "no_pwg_w03",
+        "before_root": "no_pwg_w03",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T14:07:24Z",
+        "to": "2026-07-11T14:11:53Z",
+        "seconds": 269,
+        "after_root": "no_pwg_w03",
+        "before_root": "no_pwg_w03_rq1",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T14:11:53Z",
+        "to": "2026-07-11T17:49:52Z",
+        "seconds": 13079,
+        "after_root": "no_pwg_w03_rq1",
+        "before_root": "no_pwg_w04",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T17:49:52Z",
+        "to": "2026-07-11T17:54:25Z",
+        "seconds": 273,
+        "after_root": "no_pwg_w04",
+        "before_root": "no_pwg_w04_rq1",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T17:54:25Z",
+        "to": "2026-07-11T18:28:43Z",
+        "seconds": 2058,
+        "after_root": "no_pwg_w04_rq1",
+        "before_root": "no_pwg_w05",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T18:28:43Z",
+        "to": "2026-07-11T18:34:18Z",
+        "seconds": 335,
+        "after_root": "no_pwg_w05",
+        "before_root": "no_pwg_w05_rq1",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-11T18:34:18Z",
+        "to": "2026-07-15T20:25:23Z",
+        "seconds": 352265,
+        "after_root": "no_pwg_w05_rq1",
+        "before_root": null,
+        "source": "ledger_gap"
+      }
+    ],
+    "all_gaps": [
+      {
+        "from": "2026-06-27T20:53:31Z",
+        "to": "2026-06-27T21:01:15Z",
+        "seconds": 464,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-27T21:01:29Z",
+        "to": "2026-06-27T21:03:33Z",
+        "seconds": 124,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-27T21:03:34Z",
+        "to": "2026-06-27T21:18:40Z",
+        "seconds": 906,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-27T21:19:36Z",
+        "to": "2026-06-28T05:20:50Z",
+        "seconds": 28874,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T05:20:50Z",
+        "to": "2026-06-28T05:35:11Z",
+        "seconds": 861,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T05:35:11Z",
+        "to": "2026-06-28T06:32:44Z",
+        "seconds": 3453,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T06:32:44Z",
+        "to": "2026-06-28T06:43:44Z",
+        "seconds": 660,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T06:43:44Z",
+        "to": "2026-06-28T07:08:21Z",
+        "seconds": 1477,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T07:09:28Z",
+        "to": "2026-06-28T07:16:23Z",
+        "seconds": 415,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T07:16:50Z",
+        "to": "2026-06-28T07:22:59Z",
+        "seconds": 369,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T07:22:59Z",
+        "to": "2026-06-28T07:28:03Z",
+        "seconds": 304,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T07:28:38Z",
+        "to": "2026-06-28T07:50:07Z",
+        "seconds": 1289,
+        "after_root": "sTA",
+        "before_root": null,
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T07:50:07Z",
+        "to": "2026-06-28T08:05:00Z",
+        "seconds": 893,
+        "after_root": null,
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T08:05:00Z",
+        "to": "2026-06-28T08:20:20Z",
+        "seconds": 920,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T08:20:20Z",
+        "to": "2026-06-28T08:32:16Z",
+        "seconds": 716,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T08:32:16Z",
+        "to": "2026-06-28T12:47:49Z",
+        "seconds": 15333,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T12:47:49Z",
+        "to": "2026-06-28T12:56:51Z",
+        "seconds": 542,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T12:57:34Z",
+        "to": "2026-06-28T13:04:26Z",
+        "seconds": 412,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T13:04:26Z",
+        "to": "2026-06-28T13:06:35Z",
+        "seconds": 129,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T13:07:54Z",
+        "to": "2026-06-28T13:11:24Z",
+        "seconds": 210,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T13:15:15Z",
+        "to": "2026-06-28T13:18:39Z",
+        "seconds": 204,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T13:18:39Z",
+        "to": "2026-06-28T14:09:18Z",
+        "seconds": 3039,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T14:10:07Z",
+        "to": "2026-06-28T14:21:57Z",
+        "seconds": 710,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T14:21:57Z",
+        "to": "2026-06-28T17:43:48Z",
+        "seconds": 12111,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T17:43:48Z",
+        "to": "2026-06-28T17:46:20Z",
+        "seconds": 152,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T17:46:20Z",
+        "to": "2026-06-28T18:37:35Z",
+        "seconds": 3075,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T18:39:31Z",
+        "to": "2026-06-28T19:08:13Z",
+        "seconds": 1722,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T19:10:07Z",
+        "to": "2026-06-28T19:19:23Z",
+        "seconds": 556,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T19:19:23Z",
+        "to": "2026-06-28T20:05:51Z",
+        "seconds": 2788,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-28T20:05:51Z",
+        "to": "2026-06-29T06:15:45Z",
+        "seconds": 36594,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T06:15:45Z",
+        "to": "2026-06-29T06:26:23Z",
+        "seconds": 638,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T06:26:23Z",
+        "to": "2026-06-29T06:58:19Z",
+        "seconds": 1916,
+        "after_root": "sTA",
+        "before_root": "BU",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T06:58:19Z",
+        "to": "2026-06-29T07:10:19Z",
+        "seconds": 720,
+        "after_root": "BU",
+        "before_root": "as",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T07:10:19Z",
+        "to": "2026-06-29T07:23:35Z",
+        "seconds": 796,
+        "after_root": "as",
+        "before_root": "i",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T07:23:53Z",
+        "to": "2026-06-29T07:51:27Z",
+        "seconds": 1654,
+        "after_root": "i",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T07:51:27Z",
+        "to": "2026-06-29T08:10:52Z",
+        "seconds": 1165,
+        "after_root": "gam",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T08:10:52Z",
+        "to": "2026-06-29T08:13:55Z",
+        "seconds": 183,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T08:14:11Z",
+        "to": "2026-06-29T08:19:43Z",
+        "seconds": 332,
+        "after_root": "gam",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T08:19:43Z",
+        "to": "2026-06-29T08:30:23Z",
+        "seconds": 640,
+        "after_root": "gam",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T08:31:18Z",
+        "to": "2026-06-29T09:29:03Z",
+        "seconds": 3465,
+        "after_root": "sTA",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T09:29:03Z",
+        "to": "2026-06-29T10:02:02Z",
+        "seconds": 1979,
+        "after_root": "gam",
+        "before_root": "yuj",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T10:02:02Z",
+        "to": "2026-06-29T10:18:27Z",
+        "seconds": 985,
+        "after_root": "yuj",
+        "before_root": "yuj",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T10:18:27Z",
+        "to": "2026-06-29T11:40:22Z",
+        "seconds": 4915,
+        "after_root": "yuj",
+        "before_root": "vid",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T11:40:22Z",
+        "to": "2026-06-29T11:46:56Z",
+        "seconds": 394,
+        "after_root": "vid",
+        "before_root": "han",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T11:46:56Z",
+        "to": "2026-06-29T12:28:51Z",
+        "seconds": 2515,
+        "after_root": "han",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T12:28:51Z",
+        "to": "2026-06-29T12:47:19Z",
+        "seconds": 1108,
+        "after_root": "sTA",
+        "before_root": "DA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T12:47:41Z",
+        "to": "2026-06-29T12:55:28Z",
+        "seconds": 467,
+        "after_root": "DA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T12:58:29Z",
+        "to": "2026-06-29T13:00:36Z",
+        "seconds": 127,
+        "after_root": "man",
+        "before_root": "banD",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T13:00:36Z",
+        "to": "2026-06-29T13:06:11Z",
+        "seconds": 335,
+        "after_root": "banD",
+        "before_root": "BU",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T13:06:11Z",
+        "to": "2026-06-29T13:09:23Z",
+        "seconds": 192,
+        "after_root": "BU",
+        "before_root": "jIv",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T13:11:37Z",
+        "to": "2026-06-29T13:17:30Z",
+        "seconds": 353,
+        "after_root": "naS",
+        "before_root": "as",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T13:17:30Z",
+        "to": "2026-06-29T13:24:56Z",
+        "seconds": 446,
+        "after_root": "as",
+        "before_root": "i",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T13:24:56Z",
+        "to": "2026-06-29T13:30:20Z",
+        "seconds": 324,
+        "after_root": "i",
+        "before_root": "i",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T13:30:20Z",
+        "to": "2026-06-29T13:37:50Z",
+        "seconds": 450,
+        "after_root": "i",
+        "before_root": "i",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T13:38:18Z",
+        "to": "2026-06-29T13:44:43Z",
+        "seconds": 385,
+        "after_root": "i",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T13:46:44Z",
+        "to": "2026-06-29T13:54:21Z",
+        "seconds": 457,
+        "after_root": "jan",
+        "before_root": "jan",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T13:54:59Z",
+        "to": "2026-06-29T14:15:08Z",
+        "seconds": 1209,
+        "after_root": "jan",
+        "before_root": "dA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T14:18:53Z",
+        "to": "2026-06-29T17:39:12Z",
+        "seconds": 12019,
+        "after_root": "ji",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T17:39:12Z",
+        "to": "2026-06-29T19:11:54Z",
+        "seconds": 5562,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T19:11:54Z",
+        "to": "2026-06-29T19:31:13Z",
+        "seconds": 1159,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-29T19:35:00Z",
+        "to": "2026-06-30T02:27:19Z",
+        "seconds": 24739,
+        "after_root": "Ap",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-30T02:27:19Z",
+        "to": "2026-06-30T02:38:23Z",
+        "seconds": 664,
+        "after_root": "sTA",
+        "before_root": "siD",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-30T02:38:23Z",
+        "to": "2026-06-30T02:40:24Z",
+        "seconds": 121,
+        "after_root": "siD",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-30T02:40:24Z",
+        "to": "2026-06-30T02:58:24Z",
+        "seconds": 1080,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-30T02:58:24Z",
+        "to": "2026-06-30T03:19:22Z",
+        "seconds": 1258,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-30T03:19:22Z",
+        "to": "2026-06-30T03:54:03Z",
+        "seconds": 2081,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-30T03:54:07Z",
+        "to": "2026-06-30T04:12:42Z",
+        "seconds": 1115,
+        "after_root": "sTA",
+        "before_root": "vad",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-30T04:14:00Z",
+        "to": "2026-06-30T05:15:31Z",
+        "seconds": 3691,
+        "after_root": "gA",
+        "before_root": "vraj",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-30T05:15:33Z",
+        "to": "2026-06-30T05:22:08Z",
+        "seconds": 395,
+        "after_root": "Buj",
+        "before_root": "Bid",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-30T05:24:59Z",
+        "to": "2026-06-30T05:27:55Z",
+        "seconds": 176,
+        "after_root": "Cid",
+        "before_root": "naS",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-30T05:32:02Z",
+        "to": "2026-06-30T05:34:20Z",
+        "seconds": 138,
+        "after_root": "hi",
+        "before_root": "mad",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-30T05:34:20Z",
+        "to": "2026-06-30T05:40:26Z",
+        "seconds": 366,
+        "after_root": "mad",
+        "before_root": "pat",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-06-30T05:41:54Z",
+        "to": "2026-07-01T16:16:08Z",
+        "seconds": 124454,
+        "after_root": "mad",
+        "before_root": "Ap",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-01T16:19:18Z",
+        "to": "2026-07-01T16:24:07Z",
+        "seconds": 289,
+        "after_root": "viS",
+        "before_root": "ji",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-01T16:25:29Z",
+        "to": "2026-07-01T16:27:41Z",
+        "seconds": 132,
+        "after_root": "vas",
+        "before_root": "ji",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-01T16:28:41Z",
+        "to": "2026-07-01T17:08:10Z",
+        "seconds": 2369,
+        "after_root": "vas",
+        "before_root": "ji",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-01T17:09:20Z",
+        "to": "2026-07-01T17:21:39Z",
+        "seconds": 739,
+        "after_root": "vas",
+        "before_root": "ji",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-01T17:22:43Z",
+        "to": "2026-07-02T11:43:26Z",
+        "seconds": 66043,
+        "after_root": "vas",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T11:43:26Z",
+        "to": "2026-07-02T16:44:46Z",
+        "seconds": 18080,
+        "after_root": "sTA",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T16:44:46Z",
+        "to": "2026-07-02T16:56:06Z",
+        "seconds": 680,
+        "after_root": "gam",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T16:56:06Z",
+        "to": "2026-07-02T17:19:42Z",
+        "seconds": 1416,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T17:19:42Z",
+        "to": "2026-07-02T17:23:48Z",
+        "seconds": 246,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T17:23:48Z",
+        "to": "2026-07-02T17:30:18Z",
+        "seconds": 390,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T17:30:18Z",
+        "to": "2026-07-02T17:34:27Z",
+        "seconds": 249,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T17:34:27Z",
+        "to": "2026-07-02T17:36:59Z",
+        "seconds": 152,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T17:36:59Z",
+        "to": "2026-07-02T17:39:08Z",
+        "seconds": 129,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T17:40:48Z",
+        "to": "2026-07-02T17:43:00Z",
+        "seconds": 132,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T17:43:00Z",
+        "to": "2026-07-02T19:39:28Z",
+        "seconds": 6988,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T19:39:28Z",
+        "to": "2026-07-02T19:52:33Z",
+        "seconds": 785,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T19:52:33Z",
+        "to": "2026-07-02T20:01:55Z",
+        "seconds": 562,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T20:01:55Z",
+        "to": "2026-07-02T20:18:11Z",
+        "seconds": 976,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T20:18:11Z",
+        "to": "2026-07-02T20:28:38Z",
+        "seconds": 627,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-02T20:28:38Z",
+        "to": "2026-07-03T01:21:45Z",
+        "seconds": 17587,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-03T01:21:45Z",
+        "to": "2026-07-03T01:59:54Z",
+        "seconds": 2289,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-03T01:59:54Z",
+        "to": "2026-07-03T02:06:33Z",
+        "seconds": 399,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-03T02:07:55Z",
+        "to": "2026-07-03T02:13:19Z",
+        "seconds": 324,
+        "after_root": "sTA",
+        "before_root": "sTA",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-03T02:15:09Z",
+        "to": "2026-07-03T17:06:17Z",
+        "seconds": 53468,
+        "after_root": "sTA",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-03T17:08:14Z",
+        "to": "2026-07-03T17:44:05Z",
+        "seconds": 2151,
+        "after_root": "gam",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-03T17:44:05Z",
+        "to": "2026-07-03T18:04:44Z",
+        "seconds": 1239,
+        "after_root": "gam",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-03T18:04:44Z",
+        "to": "2026-07-03T18:19:27Z",
+        "seconds": 883,
+        "after_root": "gam",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-03T18:19:27Z",
+        "to": "2026-07-03T18:27:02Z",
+        "seconds": 455,
+        "after_root": "gam",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-03T18:27:36Z",
+        "to": "2026-07-03T19:08:44Z",
+        "seconds": 2468,
+        "after_root": "gam",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-03T19:08:44Z",
+        "to": "2026-07-03T19:12:06Z",
+        "seconds": 202,
+        "after_root": "gam",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-03T19:12:06Z",
+        "to": "2026-07-03T19:21:58Z",
+        "seconds": 592,
+        "after_root": "gam",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-03T19:21:58Z",
+        "to": "2026-07-03T19:42:01Z",
+        "seconds": 1203,
+        "after_root": "gam",
+        "before_root": "gam",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-03T19:42:01Z",
+        "to": "2026-07-04T02:45:08Z",
+        "seconds": 25387,
+        "after_root": "gam",
+        "before_root": "vid",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-04T02:45:53Z",
+        "to": "2026-07-04T03:15:00Z",
+        "seconds": 1747,
+        "after_root": "vid",
+        "before_root": "vid",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-04T03:15:00Z",
+        "to": "2026-07-04T05:29:14Z",
+        "seconds": 8054,
+        "after_root": "vid",
+        "before_root": "vid",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-04T05:29:14Z",
+        "to": "2026-07-04T05:37:10Z",
+        "seconds": 476,
+        "after_root": "vid",
+        "before_root": "vid",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-04T05:37:10Z",
+        "to": "2026-07-04T05:43:23Z",
+        "seconds": 373,
+        "after_root": "vid",
+        "before_root": "vid",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-04T05:43:23Z",
+        "to": "2026-07-04T05:47:21Z",
+        "seconds": 238,
+        "after_root": "vid",
+        "before_root": "vid",
+        "source": "ledger_gap"
+      },
+      {
+        "from": "2026-07-04T05:47:21Z",
+        "to": "2026-07-04T20:44:40Z",
+        "seconds": 53839,
+        "after_root": "vid",
+        "before_root": "dah",
+        "source": "ledger_gap"
+      },
       {
         "from": "2026-07-04T20:44:40Z",
         "to": "2026-07-04T20:52:05Z",
@@ -222,22 +1320,10 @@
     ]
   },
   "calendar": {
-    "start": "2026-04-03",
-    "end": "2026-07-31",
+    "start": "2026-04-05",
+    "end": "2026-08-02",
     "days": 120,
     "cells": [
-      {
-        "date": "2026-04-03",
-        "cards": 0,
-        "windows": 0,
-        "level": 0
-      },
-      {
-        "date": "2026-04-04",
-        "cards": 0,
-        "windows": 0,
-        "level": 0
-      },
       {
         "date": "2026-04-05",
         "cards": 0,
@@ -945,6 +2031,18 @@
         "cards": 0,
         "windows": 0,
         "level": 0
+      },
+      {
+        "date": "2026-08-01",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
+      },
+      {
+        "date": "2026-08-02",
+        "cards": 0,
+        "windows": 0,
+        "level": 0
       }
     ],
     "max_cards": 6033,
@@ -956,179 +2054,140 @@
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md",
     "entries": [
       {
-        "version": "1.111.5",
-        "date": "2026-07-31",
+        "version": "1.137.0",
+        "date": "2026-08-02",
         "bullets": [
           {
-            "title": "Fixed — checkpoints and status files were atomic but never flushed to disk (H3 / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)",
-            "summary": ""
-          },
-          {
-            "title": "Fixed — `claim` accepted a duplicate `--lease-id` and persisted an unreachable second lease (H4 / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)",
-            "summary": ""
-          },
-          {
-            "title": "Changed — the residual ledger re-read itself once per key (O(n²) / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)",
-            "summary": ""
-          },
-          {
-            "title": "Fixed — a stalled window burned its whole iteration ceiling at full speed instead of stopping (H7 / H1940 Phase 2, 31-07-2026, Opus 5 `claude-opus-5[1m]`)",
-            "summary": ""
+            "title": "Added",
+            "summary": "- **Prompt-caching playbook of record + Opus practical handoffs (02-08-2026, Grok 4.5 `grok-4.5`):** single file [`PROMPT_CACHING_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PROMPT_CACHING_PWG_RU.md) consolidates standing truth (C…"
           }
         ]
       },
       {
-        "version": "1.111.2",
-        "date": "2026-07-30",
+        "version": "1.135.0",
+        "date": "2026-08-02",
         "bullets": [
           {
-            "title": "Fixed — LANG_PARITY re-affirmed for the three files H1902 left drifting; master is green again (H1940, 30-07-2026)",
-            "summary": ""
-          },
-          {
-            "title": "Fixed — FINDINGS citation-number collision from the H1910 propagation pass (30-07-2026)",
-            "summary": ""
+            "title": "Added",
+            "summary": "- **H2158 Phase 1 — the pwg_ru route A/B, and the measurement that reframes it (02-08-2026, Opus 5 `claude-opus-5`):** two-arm harness [`h2158_route_ab.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2158_route_ab.py) (CLI-headles…"
           }
         ]
       },
       {
-        "version": "1.111.1",
-        "date": "2026-07-30",
+        "version": "1.134.0",
+        "date": "2026-08-02",
         "bullets": [
           {
-            "title": "Fixed — LANG_PARITY hash re-stamped on human authorisation; the selftest suite is fully green (H1910 follow-up, 30-07-2026)",
-            "summary": ""
+            "title": "Fixed",
+            "summary": "- **`b0` was never non-terminating — a per-card presplit floor was masked by the per-batch budget (H2160, 02-08-2026, Opus 5 1M `claude-opus-5[1m]`, [#983](https://github.com/gasyoun/SanskritLexicography/issues/983)):** the \"non-terminating call\" reading carried by 1.130.0 and…"
+          },
+          {
+            "title": "Added",
+            "summary": "- **`src/pilot/h2160_regen_medium50.py` — re-prepare the medium50 windows on the fixed predicate (H2160, 02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** replays the coordinator's own `prepare` invocation with every argument read back out of the existing manifest (no hand-retyped…"
           }
         ]
       },
       {
-        "version": "1.111.0",
-        "date": "2026-07-30",
+        "version": "1.133.0",
+        "date": "2026-08-02",
         "bullets": [
           {
-            "title": "Added — Jamison–Brereton 2014 as a fifth translation column, Renou EVP as a locus witness (H1910, 30-07-2026)",
-            "summary": ""
+            "title": "Added",
+            "summary": "- **c4 live gate returns `LIVE_GO` — first PASS of both halves, and the first per-CARD observed economics (H2011, 02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** `/pwg-live-gate` Steps 1–3 on c4, **3 paid calls** (2 gate + 1 canary), **no bounded window, no promotion, no store w…"
           },
           {
-            "title": "Changed — ratification sheet v2: eight corrections from MG's first read (H1907, 30-07-2026)",
-            "summary": ""
+            "title": "Fixed",
+            "summary": "- **The `h1339_offline_bench` byte-identity control is stale — filed, not silently re-baselined (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** H2011's Definition of Done requires re-verifying deterministic signature `9bd2a14297`. It does not reproduce at **any** commit tested …"
           }
         ]
       },
       {
-        "version": "1.110.0",
-        "date": "2026-07-30",
+        "version": "1.132.0",
+        "date": "2026-08-02",
         "bullets": [
           {
-            "title": "Changed — ratification sheet v2: eight corrections from MG's first read ([H1923](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1923-Opus_SanskritLexicography_ratification-sheet-v2-mg-eight-points_30.07.26.md), 30-07-2026)",
-            "summary": ""
+            "title": "Changed",
+            "summary": "- **The operator playbook now carries the H2152/H2158 cost rules — and a stale rule surfaced while propagating them (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** the measurements had landed in `RESULTS_LOG`/FINDINGS and the code fix in 1.130.0, but not in the docs a session r…"
           }
         ]
       },
       {
-        "version": "1.108.0",
-        "date": "2026-07-29",
+        "version": "1.131.0",
+        "date": "2026-08-02",
         "bullets": [
           {
-            "title": "Fixed — NWS-layer citations in the Roman-numeral convention now resolve to Cologne links (H1809, 29-07-2026)",
-            "summary": ""
+            "title": "Added",
+            "summary": "- **`src/pilot/canary_gate.py` — the canary half of the live gate, as code (H2159, 02-08-2026, Fable 5 `claude-fable-5`):** H2025 audit gap G4 (F-B2/F-B3, the largest non-money gap). The `/pwg-live-gate` canary verdict (\"3/3 senses + zero SAN-LOSS/TNMASK\") existed only as skil…"
           }
         ]
       },
       {
-        "version": "1.106.0",
-        "date": "2026-07-29",
+        "version": "1.130.0",
+        "date": "2026-08-02",
         "bullets": [
           {
-            "title": "Added — review sheets must reuse what the repo already knows, enforced before write (H1887, 29-07-2026)",
-            "summary": ""
+            "title": "Added",
+            "summary": "- **The CLI child now spawns from a bare cwd, not the repo (02-08-2026, Opus 5 1M `claude-opus-5[1m]`, H2158/[#983](https://github.com/gasyoun/SanskritLexicography/issues/983)):** v1.127.0 measured the win (**−33 % cost, −30 % wall clock**) but made no code change. `proc_tree.…"
+          },
+          {
+            "title": "Fixed",
+            "summary": "- **The 300 s ceiling is validated for the heal lane and refuted for the whole-card lane (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** re-run `h1447-m50-2026-08-02b` after [v1.128.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.128.0), stopped externally af…"
           }
         ]
       },
       {
-        "version": "1.99.0",
-        "date": "2026-07-29",
+        "version": "1.129.0",
+        "date": "2026-08-02",
         "bullets": [
           {
-            "title": "Added — RV multi-translation evidence spine, wave 1a: griffith/stanza/lemma/renou (H1843, 29-07-2026)",
-            "summary": ""
-          },
-          {
-            "title": "Added — audit record for the Gorresio map audit sheet; G2.4.7 flagged for re-vote (29-07-2026)",
-            "summary": ""
-          },
-          {
-            "title": "Added — execution-ready plan: the Rig-Veda multi-translation evidence layer (H1843/H1844, 29-07-2026)",
-            "summary": ""
-          },
-          {
-            "title": "Changed — the G5 card is legible: печатный вид, кликабельные цитаты, подсказки к пометам (H1808, 29-07-2026)",
-            "summary": ""
+            "title": "Fixed",
+            "summary": "- **`--execute` now requires both ceilings (H2157, 02-08-2026, Fable 5 `claude-fable-5`):** H2025 audit gap G3 (F-B1) — `--max-calls` and `--cost-ceiling` both defaulted to `None`, `cost_ceiling_evaluable` explicitly passed when unset, and the supervisor skipped both checks on…"
           }
         ]
       },
       {
-        "version": "1.82.0",
-        "date": "2026-07-26",
+        "version": "1.128.0",
+        "date": "2026-08-02",
         "bullets": [
           {
-            "title": "Added — H1689: Gorresio vols 2/4/uk OCRed, e-text now covers all 7 kāṇḍas — `gorresio-etext-gap` extinct (26-07-2026)",
-            "summary": ""
-          },
-          {
-            "title": "Added — H1682: h1303_abbrev review-sheet rule-collapse (26-07-2026)",
-            "summary": ""
+            "title": "Changed",
+            "summary": "- **The per-call ceiling relaxed 180 s → 300 s, by explicit human ruling (02-08-2026, Opus 5 1M `claude-opus-5[1m]`, [#983](https://github.com/gasyoun/SanskritLexicography/issues/983)):** the standing `\"NOTHING runs past 3 min (MG)\"` rule (R4/C-15, H189) was the direct cause o…"
           }
         ]
       },
       {
-        "version": "1.79.0",
-        "date": "2026-07-26",
+        "version": "1.127.0",
+        "date": "2026-08-02",
         "bullets": [
           {
-            "title": "Changed — Gorresio map audit round 1: 28/32 approve; 4 half-verse-shift rows switched off (26-07-2026)",
-            "summary": ""
-          },
-          {
-            "title": "Added — H1651 store wrapper-defect sweep D1-D4, live gate follow-up (26-07-2026)",
-            "summary": ""
+            "title": "Added",
+            "summary": "- **`src/pilot/cache_prefix_stability_probe.py` — settle WHY every call re-creates its cache (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** [#986](https://github.com/gasyoun/SanskritLexicography/pull/986) left two candidates — an unstable prefix across `claude -p` invocations,…"
           }
         ]
       },
       {
-        "version": "1.78.0",
-        "date": "2026-07-26",
+        "version": "1.126.0",
+        "date": "2026-08-02",
         "bullets": [
           {
-            "title": "Fixed — H1670: PWG-sense × DCS grounding 0.67% → 12.25% (26-07-2026)",
-            "summary": ""
+            "title": "Fixed",
+            "summary": "- **H2144 D4b bracket-normalize unlock for the 63-row PWG fullwidth-paren residual (02-08-2026, Sonnet 5 `claude-sonnet-5`):** extends [`d4_boundary_wrap.try_boundary_wrap`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/d4_boundary_wr…"
           }
         ]
       },
       {
-        "version": "1.77.0",
-        "date": "2026-07-26",
+        "version": "1.125.0",
+        "date": "2026-08-02",
         "bullets": [
           {
-            "title": "Added — H1656 follow-on: Gorresio e-text recovered; Rāmāyaṇa citation reuse ON (26-07-2026)",
-            "summary": ""
-          },
-          {
-            "title": "Fixed — shingle phase-parity bug in the concordance aligner (26-07-2026)",
-            "summary": ""
-          },
-          {
-            "title": "Changed — H1664 voting-queue triage: every pending sheet ruled A/HYBRID/HUMAN-ONLY (26-07-2026)",
-            "summary": ""
-          },
-          {
-            "title": "Changed — H1633 rulings R1–R5 recorded; G6b gate born; A51 deferred to 2028 (26-07-2026)",
-            "summary": ""
+            "title": "Fixed",
+            "summary": "- **Fail-closed occupied-keys guard (H2154, 02-08-2026, Fable 5 `claude-fable-5`):** H2025 audit gap G2 (census S1-1/S1-2, the lane's only remaining duplicate-paid-spend path). The scheduler's `occupied` set — keys owned by queued/running jobs — was built under a per-manifest …"
           }
         ]
       }
     ]
   },
+  "list_len": 12,
   "recent_windows": [
     {
       "recorded_at": "2026-07-15T20:25:28Z",
