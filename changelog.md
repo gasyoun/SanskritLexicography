@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.136.1] - 2026-08-02
+
 ### Changed
 - **PWG nonstop plan amendments R5.1/R5.2 (Fable 5 `claude-fable-5`, 02-08-2026):** Claude CLI profile fallback roster c4 -> c1 -> c5 -> c6; Wave-0 key @DO resolved without human input — DeepSeek key found live in `ORS-FAQ/.env`, OpenRouter key on Systema prod `.env` (via /ssh). [PLAN](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_pwg_nonstop_multilane_2026.md) decisions table + metadoc updated.
 
