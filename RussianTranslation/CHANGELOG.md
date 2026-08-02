@@ -10,6 +10,11 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.129.0] - 2026-08-02
+
+### Fixed
+- **`--execute` now requires both ceilings (H2157, 02-08-2026, Fable 5 `claude-fable-5`):** H2025 audit gap G3 (F-B1) — `--max-calls` and `--cost-ceiling` both defaulted to `None`, `cost_ceiling_evaluable` explicitly passed when unset, and the supervisor skipped both checks on `None`: the lane's excellent fail-closed ceiling machinery was inert unless the operator remembered two flags, so a billed run had **no ceiling at all by default**. A paid `bounded_staged_run.py --execute` now refuses to start unless both are supplied; the explicit `--allow-unbounded` flag is the only escape, visible in command review. Dry-run and offline lanes unaffected. Operator docs synced in the same pass ([`RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md), [`Agents.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/Agents.md), `/pwg-bounded-run` skill). Pinned by `test_q2_execute_requires_ceilings_h2157`; `bounded_staged_run_selftest` green, `window_selftest` 199/199, parity 3 entries re-derived (0 language-keyed diff tokens).
+
 ## [1.128.0] - 2026-08-02
 
 ### Changed

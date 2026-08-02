@@ -968,7 +968,10 @@ def build_parser():
                          'store or rebuild TM; write a durable hash-bound AWAITING_REVIEW terminal '
                          'checkpoint after a clean audit for human/Opus review (the bounded c4 '
                          'ladder requires this).')
-    # Ceilings (all optional / default-disabled).
+    # Ceilings. H2157 (H2025 G3 / F-B1): --max-calls and --cost-ceiling are MANDATORY on
+    # --execute — the fail-closed machinery below is excellent and was completely inert
+    # unless the operator remembered two flags, so a billed run had no ceiling at all by
+    # default. --allow-unbounded is the explicit, visible-in-command-review escape hatch.
     ap.add_argument('--max-windows', type=int, default=None)
     ap.add_argument('--max-calls', type=int, default=None)
     ap.add_argument('--call-reservation',
@@ -978,6 +981,11 @@ def build_parser():
                     help='observed-cost stop after completed calls (USD), not a hard dollar '
                          'guarantee. UNEVALUABLE telemetry fails closed.')
     ap.add_argument('--empty-streak', type=int, default=None)
+    ap.add_argument('--allow-unbounded', action='store_true',
+                    help='H2157: explicitly run --execute WITHOUT --max-calls and/or '
+                         '--cost-ceiling. Without this flag a paid run refuses to start '
+                         'unbounded — a deliberate unbounded window must say so in the '
+                         'command line where a reviewer can see it.')
     ap.add_argument('--max-accounts', type=int, default=0)
     ap.add_argument('--only-profile', help='enforce one manifest-bound logical profile slot')
     ap.add_argument('--drop-unhealthy', action='store_true')
@@ -994,6 +1002,17 @@ def main(argv=None):
     args = ap.parse_args(argv)
     if args.execute and not (args.coordinator and args.cwd and args.events):
         ap.error('--execute requires --coordinator, --cwd and --events')
+    # H2157 (H2025 G3 / F-B1): a PAID run must be bounded by default. Both ceilings are
+    # required on --execute; --allow-unbounded is the explicit escape hatch. Dry-run and
+    # offline paths are unaffected.
+    if args.execute and not args.allow_unbounded:
+        missing = [name for name, value in
+                   (('--max-calls', args.max_calls), ('--cost-ceiling', args.cost_ceiling))
+                   if value is None]
+        if missing:
+            ap.error('--execute is a PAID run and refuses to start unbounded: missing %s '
+                     '(H2157). Pass explicit ceilings, or --allow-unbounded for a '
+                     'deliberate unbounded window.' % ' and '.join(missing))
     return run(args)
 
 
