@@ -81,6 +81,16 @@ ANCHOR_RE = re.compile(
 )
 BAD_CHARS = set('{}<>')
 
+# H2144: fullwidth/CJK corner-bracket numbering markers that PWG's DE column uses where
+# RU carries the plain ASCII equivalent (or vice versa). A one-to-one, length-preserving
+# char map -- used ONLY to decide whether an affix matches; the actual prefix/suffix text
+# written back to `ru` is always sliced from the ORIGINAL (non-normalized) string, so a
+# fullwidth bracket already present in `ru` is never silently rewritten to ASCII.
+BRACKET_NORMALIZE = str.maketrans({
+    '〉': ')', '）': ')',  # 〉 ）
+    '〈': '(', '（': '(',  # 〈 （
+})
+
 
 def split_by_anchors(text):
     """Return (gaps, anchors): len(gaps) == len(anchors) + 1."""
@@ -104,13 +114,22 @@ def is_ru_n0_candidate(de_text, ru_text):
     return de_n > 0 and ru_n == 0
 
 
-def try_boundary_wrap(de_text, ru_text):
+def try_boundary_wrap(de_text, ru_text, normalize_brackets=False):
     """Attempt the boundary-anchored wrap. Returns (ok: bool, result: str).
 
     On success, result is the repaired ru text. On failure, result is a short reason code
     (residual-d3-guillemet-present, gloss-span-crosses-anchor, anchor-mismatch,
     multi-gloss-in-gap, prefix-no-match, suffix-no-match, overlap, empty-candidate,
     bad-chars-in-candidate, no-gloss-found) -- never a guess.
+
+    H2144: when `normalize_brackets` is True, the prefix/suffix affix comparison treats
+    the fullwidth/CJK corner-bracket numbering markers in BRACKET_NORMALIZE as equivalent
+    to their ASCII counterparts on BOTH sides -- e.g. de's `e〉` matches ru's `e)`. This is
+    comparison-only: BRACKET_NORMALIZE is a 1:1, length-preserving char map, so the actual
+    prefix/suffix/candidate text spliced into the result is always sliced from the
+    ORIGINAL (non-normalized) `de_text`/`ru_text` -- a fullwidth bracket already present in
+    the stored gloss is never silently rewritten to ASCII. Default False keeps the H1702
+    fixer's existing exact-affix behavior (and its already-passing rows) unchanged.
     """
     de_text = de_text or ''
     ru_text = ru_text or ''
@@ -148,9 +167,15 @@ def try_boundary_wrap(de_text, ru_text):
             return False, 'multi-gloss-in-gap'
         prefix, _gloss_de, suffix = GLOSS_SPAN.split(gap_de)
         gap_ru = gaps_ru[i]
-        if not gap_ru.startswith(prefix):
+        if normalize_brackets:
+            prefix_cmp = prefix.translate(BRACKET_NORMALIZE)
+            suffix_cmp = suffix.translate(BRACKET_NORMALIZE)
+            gap_ru_cmp = gap_ru.translate(BRACKET_NORMALIZE)
+        else:
+            prefix_cmp, suffix_cmp, gap_ru_cmp = prefix, suffix, gap_ru
+        if not gap_ru_cmp.startswith(prefix_cmp):
             return False, 'prefix-no-match'
-        if not gap_ru.endswith(suffix):
+        if not gap_ru_cmp.endswith(suffix_cmp):
             return False, 'suffix-no-match'
         if len(gap_ru) < len(prefix) + len(suffix):
             return False, 'overlap'
@@ -159,7 +184,14 @@ def try_boundary_wrap(de_text, ru_text):
             return False, 'empty-candidate'
         if BAD_CHARS & set(candidate):
             return False, 'bad-chars-in-candidate'
-        new_gaps_ru[i] = prefix + '{%' + candidate + '%}' + suffix
+        # Splice using RU's OWN prefix/suffix bytes, not DE's. Under exact-affix matching
+        # (normalize_brackets=False) the two are guaranteed byte-identical, so this is a
+        # no-op for existing rows. Under bracket-normalize matching they may differ only in
+        # bracket form (e.g. de `e〉` / ru `e)`) -- using ru's own slice keeps ru's native
+        # bracket character untouched, so only the added {%...%} markers are new content.
+        ru_prefix = gap_ru[:len(prefix)]
+        ru_suffix = gap_ru[len(gap_ru) - len(suffix):] if suffix else ''
+        new_gaps_ru[i] = ru_prefix + '{%' + candidate + '%}' + ru_suffix
 
     if not any_gloss:
         return False, 'no-gloss-found'
