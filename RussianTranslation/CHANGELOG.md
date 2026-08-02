@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added
+- **Prompt-caching playbook of record + Opus practical handoffs (02-08-2026, Grok 4.5 `grok-4.5`):** single file [`PROMPT_CACHING_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PROMPT_CACHING_PWG_RU.md) consolidates standing truth (CLI cannot amortise system prompt; bare cwd shipped; one-card shape; lean-TR rejected; real-card cost is majority **output**), ranked levers, harness map, and executor checklist. Pointers from [`RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md) and [`PIPELINE_HISTORY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HISTORY.md). Remaining practical steps minted for Opus 5: [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md) minimal profile · [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) dual-rate 1 h pricing · [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md) prefix reorder · existing [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md) Messages API A/B. No production code path change in this pass.
+
 ## [1.135.0] - 2026-08-02
 
 ### Added
