@@ -97,7 +97,10 @@ tracked-file drift and is wired into `window_selftest.py`
   of a call that translates nothing. **This is not TTL expiry** — the write lands in
   `ephemeral_1h_input_tokens` and a 1-hour TTL cannot lapse between calls issued seconds apart.
   A one-shot subprocess cannot amortise its own system prompt; that is a property of the route.
-  Do not "fix" it by batching (see the shape ruling below). Route change tracked in
+  Do not "fix" it by batching (see the shape ruling below). **Single playbook of
+  record** (ranked levers + Opus handoffs H2189–H2191 + H2158):
+  [`PROMPT_CACHING_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PROMPT_CACHING_PWG_RU.md).
+  Route change tracked in
   [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md);
   measurement in [`RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md)
   + [Uprava FINDINGS §284](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
