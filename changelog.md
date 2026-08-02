@@ -14,6 +14,10 @@ not an error.
 
 ## [Unreleased]
 
+## [1.137.6] - 2026-08-02
+### Added
+- **PWG translation duplication → optimization inventory (H2222, Grok 4.5 `grok-4.5`, 02-08-2026):** durable map of intentional vs unjustified duplication so optimization hunts **code/logic twins** (EN promote GAP, audit_window fork, H1209 JS field, citation coverage SoT), not edition restates or style doublets. Doc: [`RussianTranslation/PWG_TRANSLATION_DUPLICATION_OPTIMIZATION_INVENTORY_2026-08.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_TRANSLATION_DUPLICATION_OPTIMIZATION_INVENTORY_2026-08.md). [PR #1043](https://github.com/gasyoun/SanskritLexicography/pull/1043).
+
 ## [1.137.5] - 2026-08-02
 ### Added
 - **Progress kitchen residual B1+B9+B10 + historical metric backfill (H2218, Grok 4.5 `grok-4.5`, 02-08-2026):** optional subscription-window $ card from gitignored `economy_subscription.json` (never invent dollars); idle-gap **reason** classes (`human` · `weekly_cap` · `health_nogo` · `machine_off` · `waiting_requeue` · `unknown`) from operator log + measured auto-rules; store-vs-`article_site` root parity card; [`backfill_ledger_metrics.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/backfill_ledger_metrics.py) best-effort wall-clock/gen_model recovery with provenance flags. Additive keys on `pwg.kitchen.v2`. Examples under [`progress_dashboard/examples/`](https://github.com/gasyoun/SanskritLexicography/tree/master/progress_dashboard/examples).
