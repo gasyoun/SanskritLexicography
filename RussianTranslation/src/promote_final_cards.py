@@ -657,6 +657,51 @@ def merge_store_rows(existing_rows, promoted_rows, override_reviewed=False):
     return kept + landed, downgraded, protected
 
 
+#: H2153 (G7 / #977): the fields whose characters ARE the store's content. Separator/
+#: formatting bytes are deliberately excluded — the 01-08 incident was a 1.29 MB byte
+#: change at identical row count that was pure serializer formatting, and the same
+#: row-count blindness would also have passed a real content wipe.
+CONTENT_MASS_FIELDS = ('ru', 'de', 'en', 'h', 'sense_tag', 'grammar', 'iast')
+
+#: Refuse when the store's content mass would drop by more than this fraction.
+CONTENT_MASS_MAX_LOSS = 0.10
+
+
+def content_mass(rows):
+    """Total characters across the content-bearing fields — serializer-independent."""
+    total = 0
+    for row in rows:
+        for name in CONTENT_MASS_FIELDS:
+            value = row.get(name)
+            if isinstance(value, str):
+                total += len(value)
+    return total
+
+
+def refuse_content_mass_shrink(existing_rows, rows_to_write, force=False):
+    """H2153 (G7 / #977): bound the CONTENT delta of a promote, not just the row count.
+
+    The row-count guards are blind to content: identical row counts are compatible with
+    megabytes of silent change (FINDINGS §513). This gate compares character mass over
+    ``CONTENT_MASS_FIELDS`` — immune to separator reformatting — and refuses a promote
+    that would shed more than ``CONTENT_MASS_MAX_LOSS`` of it. Returns
+    (before_mass, after_mass); raises ``PromotionContractError`` unless ``force``."""
+    before = content_mass(existing_rows)
+    after = content_mass(rows_to_write)
+    if before and after < before * (1 - CONTENT_MASS_MAX_LOSS):
+        if force:
+            print('content-mass guard: --force overrides a %d -> %d char shrink (%.1f%%)'
+                  % (before, after, 100.0 * (before - after) / before))
+        else:
+            raise PromotionContractError(
+                'would shed %.1f%% of store content mass (%d -> %d chars over %s) at '
+                'row delta %d -> %d — a content loss the row-count guards cannot see '
+                '(H2153 / #977). Inspect, or --force for a deliberate reduction.'
+                % (100.0 * (before - after) / before, before, after,
+                   '/'.join(CONTENT_MASS_FIELDS), len(existing_rows), len(rows_to_write)))
+    return before, after
+
+
 def tn_residue(card, rec, sense):
     """Report every promoted field of this row that still holds a raw `{Tn}`.
 
@@ -981,6 +1026,9 @@ def batch_promote(batch, store, review_status, gen_model_version,
         if before and len(rows_to_write) < before * 0.5:
             raise PromotionContractError(
                 'would shrink store %d -> %d rows (>50%% loss)' % (before, len(rows_to_write)))
+        # H2153 (G7 / #977): the batch lane has no --force — a content-mass shed in a
+        # coordinator bundle is always a refusal, never an override.
+        refuse_content_mass_shrink(existing_rows, rows_to_write)
         before_fp = promotion_journal.file_fingerprint(store)
         expected_payload = _serialize_rows(rows_to_write)
         expected_fp = promotion_journal.bytes_fingerprint(store, expected_payload)
@@ -1443,6 +1491,25 @@ def selftest():
             pass
     swb = store_write.locked_store_rewrite(sw_store, [{'subcard': 's3'}], tag='selftest')
     assert swb and os.path.isfile(swb), 'mutator rewrite must leave a unique backup'
+
+    # H2153 (G7 / #977): the content-mass gate sees what the row-count guard cannot —
+    # a same-row-count content wipe — and ignores what fooled the byte size: formatting.
+    fat = [{'subcard': 'm~~%d' % i, 'ru': 'x' * 100, 'de': 'y' * 50, 'provenance': {}}
+           for i in range(10)]
+    thin = [dict(r, ru='x' * 5) for r in fat]
+    try:
+        refuse_content_mass_shrink(fat, thin)
+        raise AssertionError('a same-row-count content wipe must be refused')
+    except PromotionContractError:
+        pass
+    refuse_content_mass_shrink(fat, list(reversed(fat)))     # reorder/format-only: passes
+    refuse_content_mass_shrink(fat, thin, force=True)        # deliberate reduction: --force
+    grown = fat + [{'subcard': 'm~~new', 'ru': 'z' * 40, 'provenance': {}}]
+    refuse_content_mass_shrink(fat, grown)                   # growth always passes
+    mild = [dict(r, ru='x' * 95) for r in fat]
+    refuse_content_mass_shrink(fat, mild)                    # <10% shed passes
+    assert content_mass([{'ru': 'ab', 'de': None, 'h': 'c'}]) == 3, \
+        'content_mass counts only string content fields'
     # Atomic failure leaves the old store intact and removes the temporary file.
     atomic = os.path.join(d, 'atomic.jsonl')
     with open(atomic, 'w', encoding='utf-8') as f:
@@ -2004,6 +2071,7 @@ def main():
             kept = 0
             downgraded = []
             protected = []
+            store_rows_before = None
             if args.merge and os.path.exists(args.store):
                 promoted_subs = {r['subcard'] for r in rows}
                 touched_roots = {r['key1'] for r in rows}
@@ -2014,6 +2082,7 @@ def main():
                         if not line:
                             continue
                         existing_rows.append(json.loads(line))
+                store_rows_before = existing_rows
                 rows_to_write, downgraded, protected = merge_store_rows(
                     existing_rows, rows, override_reviewed=args.override_reviewed)
                 if downgraded:
@@ -2043,8 +2112,9 @@ def main():
                 # wipes the review overlay wholesale. Refuse; --force does NOT cover this
                 # (it bypasses the shrink guard, a different hazard) -- only the explicit
                 # --override-reviewed does.
-                if os.path.exists(args.store) and not args.override_reviewed:
+                if os.path.exists(args.store):
                     overlay_subs = set()
+                    store_rows_before = []
                     try:
                         with open(args.store, encoding='utf-8') as f:
                             for line in f:
@@ -2052,12 +2122,13 @@ def main():
                                 if not line:
                                     continue
                                 row = json.loads(line)
+                                store_rows_before.append(row)
                                 if human_touched(row):
                                     overlay_subs.add(row.get('subcard'))
                     except (OSError, json.JSONDecodeError) as exc:
                         sys.exit('REFUSED: cannot verify the store overlay state before a '
                                  'full rebuild (%s) -- fix the store or use --merge' % exc)
-                    if overlay_subs:
+                    if overlay_subs and not args.override_reviewed:
                         sys.exit(
                             'REFUSED: full (non---merge) rebuild would wipe HUMAN-REVIEWED '
                             'rows for %d subcard(s): %s (FINDINGS §513). Use --merge (which '
@@ -2075,6 +2146,16 @@ def main():
             if duplicates:
                 sys.exit('REFUSED: promotion would create %d duplicate sense identity/identities'
                          % len(duplicates))
+
+            # H2153 (G7 / #977): content-mass gate — the row-count guard below cannot see
+            # a same-row-count content loss; this one compares character mass over the
+            # content fields and is immune to serializer formatting.
+            if store_rows_before is not None:
+                try:
+                    refuse_content_mass_shrink(store_rows_before, rows_to_write,
+                                               force=args.force)
+                except PromotionContractError as exc:
+                    sys.exit('REFUSED: %s' % exc)
 
             # OVERWRITE GUARD: refuse to shrink the store to a small fraction of its current
             # size. A default (non-merge) run rebuilds the store from whatever wf_output files

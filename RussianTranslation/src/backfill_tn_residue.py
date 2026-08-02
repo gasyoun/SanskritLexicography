@@ -347,7 +347,11 @@ def plan_repair(store_path, source_dirs, harness_dirs):
 
 
 def jsonl_bytes(rows):
-    return ''.join(json.dumps(row, ensure_ascii=False, separators=(',', ':')) + '\n'
+    # H2153 (G7 / #977): the HOUSE serialization — spaced json.dumps, matching
+    # promote_final_cards._serialize_rows and the annotate_* family. This module and
+    # nws_ls_markup were the lane's only compact-separator writers; each full rewrite
+    # by either flipped ~1.3 MB of pure formatting against the next spaced writer.
+    return ''.join(json.dumps(row, ensure_ascii=False) + '\n'
                    for row in rows).encode('utf-8')
 
 

@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 02-08-2026 (H2146: `promotion_scripts_separate` re-derived, INTENTIONAL-DIVERGENCE stands — RU merge/supersede now overlay-preserving (`human_touched`, `--override-reviewed`), 17 mutators routed through the shared locked `store_write` writer; EN attach replaces no rows so the wipe class does not arise there. Previously H2118 #946: 6 entries re-derived across 5 files, SHARED stands — the probe latency ceiling is now derived from one table instead of three hard-coded copies, and the policy token carries its own ceiling again. Grounds re-checked mechanically, not asserted: every added line in the diff was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) and **none** appears — the change is language-agnostic dispatch infrastructure that cannot reach the RU/EN split. Previously H2095 #946/#949/#950/#956: 45 entries re-derived, SHARED stands — probe rows carry the ceiling that judged them, `summary()` publishes cost evaluability beside `budget_spent`, the cost-gate calibration question settled with NO constant moved, and the EN auditor exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags, closing the EN twin of #947)_
+_Created: 04-07-2026 · Last updated: 02-08-2026 (H2153: 17 entries re-derived, verdicts stand — the promote gains a serializer-independent content-mass gate (`refuse_content_mass_shrink`, 10% bound) and the two compact-separator writers (`nws_ls_markup`, `backfill_tn_residue`) converge on the house spaced serialization + the locked writer; 0 language-keyed tokens in the diff, grounds mechanical as before. Previously H2146: `promotion_scripts_separate` re-derived, INTENTIONAL-DIVERGENCE stands — RU merge/supersede now overlay-preserving (`human_touched`, `--override-reviewed`), 17 mutators routed through the shared locked `store_write` writer; EN attach replaces no rows so the wipe class does not arise there. Previously H2118 #946: 6 entries re-derived across 5 files, SHARED stands — the probe latency ceiling is now derived from one table instead of three hard-coded copies, and the policy token carries its own ceiling again. Grounds re-checked mechanically, not asserted: every added line in the diff was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) and **none** appears — the change is language-agnostic dispatch infrastructure that cannot reach the RU/EN split. Previously H2095 #946/#949/#950/#956: 45 entries re-derived, SHARED stands — probe rows carry the ceiling that judged them, `summary()` publishes cost evaluability beside `budget_spent`, the cost-gate calibration question settled with NO constant moved, and the EN auditor exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags, closing the EN twin of #947)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -411,7 +411,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "The two stores (pwg_ru_translated.jsonl vs the EN store) have different schemas and provenance history (RU predates the EN pilot by months); a merged script was never worth the risk of cross-contaminating the two promotion paths for a mechanical CLI split. Revisit only if the two stores' schemas converge. C6 (21-07-2026, Opus 4.8 claude-opus-4-8): the SCRIPTS stay separate, but the {Tn}-residue promotion guard is now SHARED — promote_en.py imports TN_RE + UnrestoredPlaceholder from promote_final_cards.py rather than duplicating them, closing the gap where the RU C-01 path refused a card carrying an unrestored {Tn} while the EN attach() silently wrote it into the store. Pinned by the C6 block in promote_en.selftest(). C9 (21-07-2026, Opus 4.8 claude-opus-4-8): the EN backup used a second-resolution timestamp + a plain open('w'), so two lock-serialized runs in the SAME second overwrote the earlier .preEN recovery copy (defeating the docstring's per-run-backup promise). Fixed to a µs+pid+uuid name (_en_backup_path) + the RU lane's O_EXCL fsynced copier (_fsynced_backup, imported — single source). Pinned by the C9 block in promote_en.selftest(). H1425 W3 audit (21-07-2026, Opus 4.8 claude-opus-4-8): confirmed nothing new to share — the shared primitives (TN_RE / UnrestoredPlaceholder / _fsynced_backup) are already imported (C6/C9); the rest of promote_en (norm_de / en_index / match_en / attach) is EN-ATTACH-specific — it attaches an `en` field onto the existing RU store, a different job from promote_final_cards' RU store WRITER — and _en_backup_path's `.preEN` marker is intentionally per-lane. P9 (21-07-2026, Opus 4.8 claude-opus-4-8, H1421): the last shareable primitive is now SHARED too — promote_en.py imports _atomic_write_rows from promote_final_cards.py and its store write is fsync-before-replace durable. The old EN write was a bare open('w') + os.replace: atomic (the rename is all-or-nothing) but NOT durable — a crash/power-loss between the write and the metadata flush could leave a non-durable/truncated store even after the rename, and under --no-backup that write is the ONLY thing between an interrupted write and total loss. As a bonus both lanes now write the store byte-identically ('\\n' newlines; the old EN write CRLF-translated on Windows). Pinned by the P9 block in promote_en.selftest() (fsync-called + round-trip + single-source identity assertion). Adversarial verification note: bug-hunt P1 (merge_store_rows had no better-attempt-wins guard) was ALSO an H1421 item but was already fixed upstream by B08 (H1339) — merge_store_rows is better-attempt-wins with pinned regression selftests — so P1 needed no code change. INTENTIONAL-DIVERGENCE re-affirmed (the scripts stay separate; every low-level store-safety primitive — {Tn} residue, fsynced backup, durable atomic write — is now single-sourced from the RU lane). H2146 (02-08-2026, Fable 5 `claude-fable-5`): re-derived, INTENTIONAL-DIVERGENCE stands — the scripts stay separate. RU-lane change: merge_store_rows/supersede now PRESERVE human-touched rows (human_touched(): named reviewer, non-ai_* review_status, or an editorial_decision* stamp) unless --override-reviewed, and the 17 non-promote store mutators write through the new shared store_write.locked_store_rewrite (PromoteClaim + unique fsynced backup + atomic replace) — FINDINGS §513. EN classification: promote_en ATTACHES an `en` field onto existing RU store rows in place — it replaces no rows, so the overlay-wipe class cannot arise there in the same form, and it already holds PromoteClaim + the single-sourced backup/atomic primitives (C9/P9). The narrower residual question — whether en-attach onto an `approved` row should require review re-affirmation — is recorded on SanskritLexicography#976 rather than opened as a GAP: no EN attach touches the 5 human rows today. H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d"
     }
   },
@@ -468,7 +468,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "RESOLVED same day (2026-07-04): PR #140 (feat(provenance): pipeline versioning) added pipeline_version stamping only to promote_final_cards.py; found as a GAP while re-affirming H169's parity re-hash, closed immediately. promote_en.py now calls `pipeline_version.stamp(model_version=gen_model_version)` inside `en_index()`'s per-subcard provenance block, stored as `en_provenance.pipeline` (mirrors RU's `provenance.pipeline`; a distinct field since EN attaches onto an existing RU row rather than owning it). Pinned by an added assertion in `promote_en.selftest()`. H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d"
     }
   },
@@ -506,7 +506,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H179 Step 1.1. The layer is derived purely from the sub-card KEY structure, which is identical for RU and EN. promote_en.py ATTACHES english onto the RU-owned row and leaves it otherwise untouched, so EN inherits `layer` for free — no EN-specific code needed. layer_of() pinned by dict_merge.py selftest + a promote_final_cards.selftest assertion. H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/dict_merge.py": "0266e11980e3b8b12d0699665b2051b9f7b8b16ed89d5810adfe5a458e880eea"
     }
   },
@@ -526,7 +526,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768"
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4"
     }
   },
   {
@@ -689,7 +689,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1624 G2 (25-07-2026, Grok 4.5): closes the gap where government only appeared after a separate annotate_government backfill. New windows stamp at promote; new portraits stamp at microstructure gen. Schema shape unchanged (array of hit dicts per D4/H338). PW capitalized (Instr.) still caught (H1308). government.html still re-extracts from de_raw (honest floor banner). Pinned by promote_final_cards --selftest, enrich_portrait_government --selftest, government_census selftest, build_article_site --selftest. H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "H1624",
     "verified_sha256": {
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/microstructure.py": "3da158ac30613de5f226f749eb41cd5852d8e6d8a3e521a2472054aac3fe6cd9",
       "src/pilot/enrich_portrait_government.py": "dcbcaaeabd4754436c295ad08eaf18acefab8cf9263fe2262d7f92c6ecf49660",
       "src/annotate_government.py": "ff00bdce1aa9174d726edfbb516ed938125d2e0aa003ca8e5f86ca81ffafc153",
@@ -716,7 +716,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/form_labels.py": "ddd51c21bc86e84cf1abbc46ba78fdb477d1906283a3deae4a840b6bbd38311b",
       "src/annotate_form_labels.py": "267cecdef3be3b8ca3cece9c33422016b323ec653d3ac4b9c600a6771ba4493a",
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/microstructure.py": "3da158ac30613de5f226f749eb41cd5852d8e6d8a3e521a2472054aac3fe6cd9",
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2"
     }
@@ -740,7 +740,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/form_labels.py": "ddd51c21bc86e84cf1abbc46ba78fdb477d1906283a3deae4a840b6bbd38311b",
       "src/annotate_form_labels.py": "267cecdef3be3b8ca3cece9c33422016b323ec653d3ac4b9c600a6771ba4493a",
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/microstructure.py": "3da158ac30613de5f226f749eb41cd5852d8e6d8a3e521a2472054aac3fe6cd9"
     }
   },
@@ -762,7 +762,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/promote_lock.py": "f8dda14a7423dfecac77893f10f7735361db8bd6c79297172243aafaf1d28ef4",
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d",
       "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86"
     }
@@ -1069,7 +1069,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/store_path.py": "4967ab7ea748da995367fd0520f89f4bf9a39b84c428310314291b85be26f73c",
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d"
     }
   },
@@ -1444,7 +1444,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d",
       "src/pilot/tnmask_offline.py": "c857fe425fadbe18c1cdf398892f53b590709048ca66faf94fd05e046730ffea"
     }
@@ -1492,7 +1492,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/card_fields.py": "976c5aa943a35da1691e2ce72e9cb4a14ac53d3bae37f8c68345cc68cb233e2b",
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/pilot/translation_memory.py": "e5014c7a872ca6c89458a052690de45576fae15e09094be72bfa7aa30b1d0b76",
       "src/pilot/headless_worker.py": "a754caf055c0592013311a299ed9d0d8c7c0c278693a7f583684050de0c52588",
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2"
@@ -1593,7 +1593,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/requeue_from_audit.py": "511f4bb258a27bfd03a755e7512c2e25196fdbdd99e2aa5f712d68e082c2eb00",
       "src/pilot/translation_memory.py": "e5014c7a872ca6c89458a052690de45576fae15e09094be72bfa7aa30b1d0b76",
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768"
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4"
     }
   },
   {
@@ -1717,7 +1717,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/max_account_orchestrator.py": "733902a7410a4a8fce704252386106a2be21c7ffd5f6ab29c3372ffa80fb85ab",
       "src/pilot/translation_memory.py": "e5014c7a872ca6c89458a052690de45576fae15e09094be72bfa7aa30b1d0b76",
       "src/pilot/coordinator.py": "a060e34e1733fb6469653f05bafab2756dfcca026f7324c83c9186808a21f9e6",
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/promote_lock.py": "f8dda14a7423dfecac77893f10f7735361db8bd6c79297172243aafaf1d28ef4",
       "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec",
       "src/pilot/window_common.py": "3a8a51917c9b898d9b3d262aaf9339e14fb30cddbb507242266858aec8727331",
@@ -1748,7 +1748,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/window_reports.py": "a20e2b64361f62b1a2b8dfaf10953663a159acd44ba326e868bb31dcc642e2f3",
       "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec",
       "src/pilot/dashboard_events.py": "f28f4a42568479f16d759d5e6aa63f4066c4e54920555102f77c2b0b9311bae6",
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/pilot/window_selftest.py": "675d06dbe7d8a40a8da705c45bce747fe276d68e697c9e63146445e29baaeb86",
       "src/pilot/audit_window_en.py": "a6721309757d5eb6571174c9465bf4aacd2e646f905846973777f7f18b8e283f"
     }
@@ -1773,7 +1773,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/citation_edges.py": "e9ebe19853b9541a7e283fd6ff089eea3de81ff00ca640c410cbc51183cb04c0",
       "src/annotate_citation_edges.py": "b5462244bcaa5c5712b73bd1c67ae5414549f2fd55760d6704dc5559218a701c",
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/microstructure.py": "3da158ac30613de5f226f749eb41cd5852d8e6d8a3e521a2472054aac3fe6cd9",
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2"
     }
@@ -1799,7 +1799,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/edition_rel.py": "bb4ae2271dad9e9f30ced97d60fa14f5c9dee8d810b9dd43f422c7d2659883a9",
       "src/annotate_edition_rel.py": "54141c6723ca144eead648e4cf70ade4de667d1df2be94f9554a1c10f23f5ed6",
       "src/build_relationships.py": "76d03cc81a79f83624065d79bd47845c3a72b8e2f993a01dfc4fbe9931049725",
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768",
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2"
     }
   },
@@ -1840,7 +1840,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/german_anchor.py": "751a6bf9c1cf9bc6201397d28f429cd02c680f668c1b2340be8ca55f54e8a276",
       "src/pilot/headless_worker.py": "a754caf055c0592013311a299ed9d0d8c7c0c278693a7f583684050de0c52588",
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
-      "src/promote_final_cards.py": "e2b3e9343c35c1a90b04774ce0d102472d995c967d76d73508a0f4501ba8c768"
+      "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4"
     }
   },
   {
