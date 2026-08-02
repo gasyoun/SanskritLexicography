@@ -15,6 +15,7 @@ page can show the *process* behind the article site:
   - changelog  recent version bullets from RussianTranslation/CHANGELOG.md
   - K1–K8      operator strip, yield/requeue, ETA, health, instrumentation,
                cost honesty (see kitchen_slices.py / ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026)
+  - residual   B1 subscription $, B9 idle reasons, B10 article-site parity (H2218)
 
 All inputs are local-only / gitignored pipeline artifacts under
 RussianTranslation/. Missing files degrade that slice; the build never raises.
@@ -55,6 +56,9 @@ EVENTS = PILOT_OUT / "dashboard_events.jsonl"
 WINDOW_STATUS = PILOT_OUT / "window_status.json"
 CHANGELOG = RT / "CHANGELOG.md"
 ECONOMY = PILOT_OUT / "economy_ledger.json"
+SUBSCRIPTION = PILOT_OUT / "economy_subscription.json"
+IDLE_REASON_LOG = PILOT_OUT / "idle_reason_log.jsonl"
+ARTICLE_SITE = RT / "article_site"
 
 # "Translation is on" if any of these artifacts moved within this window.
 ACTIVE_WITHIN_SECONDS = 15 * 60
@@ -675,12 +679,39 @@ def main():
     cost_h = ks.cost_honesty(econ if isinstance(econ, dict) else {}, spend)
     eta = ks.eta_verb(RT, speed)
 
+    # H2218 residual slices (B1 / B9 / B10) — additive keys on kitchen v2.
+    subscription = ks.load_subscription(SUBSCRIPTION)
+    idle_reasons = ks.annotate_idle_reasons(
+        idle.get("all_gaps") or [],
+        log_path=IDLE_REASON_LOG,
+        ledger_rows=all_rows,
+        health=health if isinstance(health, dict) else {},
+    )
+    # Publish reason-annotated gaps (bounded lists) instead of bare gaps.
+    annotated_all = idle_reasons.get("annotated_gaps") or idle.get("all_gaps") or []
+    idle_pub = dict(idle)
+    idle_pub["all_gaps"] = annotated_all
+    idle_pub["recent_gaps"] = annotated_all[-RECENT_LIST_LEN:]
+    idle_pub["reasons"] = {
+        k: v
+        for k, v in idle_reasons.items()
+        if k != "annotated_gaps"
+    }
+    # last_idle picks up reason when present
+    if idle_pub.get("last_idle") and annotated_all:
+        idle_pub["last_idle"] = annotated_all[-1]
+    parity = ks.article_site_parity(STORE, ARTICLE_SITE)
+
     # Drop bulk rows from published JSON (keep aggregates only).
     ledger_pub = {k: v for k, v in ledger.items() if k != "all_rows"}
 
     data = {
         "generated_at": utc_now_iso(),
         "schema": "pwg.kitchen.v2",
+        "schema_note": (
+            "H2218 additive keys: cost.subscription, idle.reasons, article_parity "
+            "(still pwg.kitchen.v2 — non-breaking)"
+        ),
         "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
         "site_url": "https://gasyoun.github.io/SanskritLexicography/",
         "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
@@ -697,6 +728,7 @@ def main():
         "health": health,
         "quality": quality,
         "eta": eta,
+        "article_parity": parity,
         "speed": {
             "cards_last_hour": speed.get("last_hour"),
             "cards_last_24h": speed.get("last_24h"),
@@ -713,9 +745,14 @@ def main():
             "economy": econ,
             "spend": spend,
             "honesty": cost_h,
-            "measured": bool(ledger.get("measured") or econ.get("measured")),
+            "subscription": subscription,
+            "measured": bool(
+                ledger.get("measured")
+                or econ.get("measured")
+                or subscription.get("measured")
+            ),
         },
-        "idle": idle,
+        "idle": idle_pub,
         "calendar": cal,
         "changelog": clog,
         "list_len": RECENT_LIST_LEN,
@@ -731,6 +768,9 @@ def main():
         f"cards_24h={speed.get('last_24h')}  "
         f"mean_min/window={ledger.get('mean_wall_clock_minutes')}  "
         f"idle_gaps={idle.get('gap_count')}  "
+        f"idle_known_reasons={idle_reasons.get('known_reason_count')}  "
+        f"subscription={subscription.get('measured')}  "
+        f"article_parity={parity.get('measured')}  "
         f"health={health.get('last_verdict')}  "
         f"yield_clean={yld.get('clean_windows')}/{yld.get('windows')}  "
         f"changelog_entries={len(clog.get('entries') or [])}"
