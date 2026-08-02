@@ -4,6 +4,66 @@ _Created: 09-07-2026 · Last updated: 02-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 02-08-2026 (later still) — the cache prefix is UNSTABLE, not expiring: a second identical call re-creates what the first just wrote
+
+Opus 5 1M (`claude-opus-5[1m]`), follow-on to the H2152 audit. **4 paid calls, $1.0469, no
+window, no store write.** Tool: [`src/pilot/cache_prefix_stability_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/cache_prefix_stability_probe.py) (new).
+
+[#986](https://github.com/gasyoun/SanskritLexicography/pull/986) left two candidates for why every
+call re-creates 56–68 k tokens of cache: **(a)** the prefix is not stable across `claude -p`
+invocations, or **(b)** the TTL lapses between 2–3-minute calls. **It is (a). (b) is refuted.**
+
+Identical `claude -p --max-turns 1` calls, ~30 B prompt, output 4 tokens, back-to-back:
+
+| arm | # | wall ms | `duration_api_ms` | cache **create** | cache **read** | USD |
+|---|---|---|---|---|---|---|
+| repo cwd | 1 | 26 262 | 2 995 | **49 153** | 28 882 | $0.3036 |
+| repo cwd | 2 | 29 087 | 2 813 | **49 165** | 28 882 | $0.3037 |
+| bare cwd | 1 | 20 401 | 2 193 | 37 814 | 28 882 | $0.2356 |
+| bare cwd | 2 | 19 057 | 2 624 | **32 261** | **34 435** | **$0.2040** |
+
+**(b) is dead on arithmetic.** Every write went to `ephemeral_1h_input_tokens` (`5m` = 0), and a
+**1-hour** TTL cannot lapse between calls issued seconds apart. Two identical repo-cwd calls
+re-created **49 153 → 49 165** tokens — the second re-wrote what the first had just written, with
+cache read pinned at 28 882 both times. **Nothing carried over at all.**
+
+**The prefix decomposes cleanly:** a stable cached core of **~29 k** that reads every time, plus a
+**volatile ~49 k** segment that is re-written every time. In a bare cwd the volatile segment shrinks
+to ~32–38 k, and bare #2 shows the only cross-call reuse in the whole run — read **+5 553**, create
+**−5 553**, exactly complementary. So **project-context injection (CLAUDE.md + git state) is what
+breaks the prefix**, and it is worth ~11–17 k tokens per call.
+
+### The free win, measured
+
+Running the lane from a **bare cwd** instead of the repo:
+
+| | repo cwd | bare cwd | delta |
+|---|---|---|---|
+| cost/call | $0.3036 | $0.2040 | **−33 %** |
+| wall/call | 26–29 s | 19–20 s | **−30 %** |
+| `duration_api_ms` | 2 813–2 995 | 2 193–2 624 | −13 % |
+
+Zero code change, no guard weakened, no ceiling moved.
+
+### What it means for scaling
+
+With `--max-turns 1` the floor is visible: **~19–29 s of every call is non-API overhead against
+~2–3 s of actual API time**, and **~32–49 k tokens are re-written per call regardless of payload**.
+At $6/M that fixed write **is** the ~$0.30, i.e. it is the entire cost of a call that translates
+nothing. A one-shot CLI subprocess **cannot amortise its own system prompt** — each invocation is a
+cold process paying a fresh cache write, which is structural to the route, not a tuning knob.
+
+The equivalent stable prefix on the Messages API would be a **cache read of ~15 k at $0.30/M ≈
+$0.0045/call** — roughly **65× cheaper** on the fixed component. That is the scaling lever, and it
+also dissolves the 180 s subprocess ceiling, [§270](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)'s
+hang-instead-of-429, and [§273](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)'s destroyed
+rate-limit signal in one move. Ported under
+[H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md).
+
+⚠️ These are 4-token-output calls; they isolate the **fixed** overhead and say nothing about
+per-card translation cost. ⚠️ The 65× figure is an estimate from list rates and an assumed ~15 k
+prefix, not a measurement — H2158 must measure it.
+
 ## 02-08-2026 (later) — H2152 call-shape audit: quota is not binding; wall clock is
 
 Opus 5 1M (`claude-opus-5[1m]`), [H2152](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2152-Opus_RussianTranslation_c4-quota-call-shape-audit_02.08.26.md),
