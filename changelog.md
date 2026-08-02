@@ -14,8 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+## [1.137.10] - 2026-08-03
 ### Added
-- **OPT-8 kitchen lease-collision banner (H2229, Grok 4.5 `grok-4.5`, 02-08-2026):** store-hit / occupied-keys / nominal lease collision aborts now append typed `dashboard_events` rows and surface as a red **DO NOT START A SECOND PAID WINDOW** banner on the public kitchen (`collision_guard` on `pwg.kitchen.v2`). Display-only — no spend-path change. Fixture + `python progress_dashboard/kitchen_collision_selftest.py`. Inventory residual closed on OPT-8.
+- **OPT-8 kitchen lease-collision banner (H2229, Grok 4.5 `grok-4.5`, 02-08-2026):** store-hit / occupied-keys / nominal lease collision aborts now append typed `dashboard_events` rows and surface as a red **DO NOT START A SECOND PAID WINDOW** banner on the public kitchen (`collision_guard` on `pwg.kitchen.v2`). Display-only — no spend-path change. Fixture + `python progress_dashboard/kitchen_collision_selftest.py`. Inventory residual closed on OPT-8. [PR #1054](https://github.com/gasyoun/SanskritLexicography/pull/1054).
 
 ## [1.137.9] - 2026-08-03
 ### Fixed
