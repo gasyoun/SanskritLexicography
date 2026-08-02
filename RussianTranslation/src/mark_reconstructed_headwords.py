@@ -170,15 +170,19 @@ def main():
     for r in gram_syn:
         r['provenance']['grammar_defaulted_empty'] = True
 
-    stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
-    backup = '%s.pre-hstamp.%s.bak' % (STORE, stamp)
-    with open(STORE, 'rb') as s, open(backup, 'wb') as d:
-        d.write(s.read())
-    tmp = STORE + '.tmp'
-    with open(tmp, 'w', encoding='utf-8', newline='\n') as fh:
-        for r in cur:
-            fh.write(json.dumps(r, ensure_ascii=False) + '\n')
-    os.replace(tmp, STORE)
+    # H2146: hold PromoteClaim across the backup/replace window — the stamp pass was
+    # atomic but unlocked (last-writer-wins against a concurrent promote, FINDINGS §513).
+    from promote_lock import PromoteClaim
+    with PromoteClaim(STORE):
+        stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+        backup = '%s.pre-hstamp.%s.bak' % (STORE, stamp)
+        with open(STORE, 'rb') as s, open(backup, 'wb') as d:
+            d.write(s.read())
+        tmp = STORE + '.tmp'
+        with open(tmp, 'w', encoding='utf-8', newline='\n') as fh:
+            for r in cur:
+                fh.write(json.dumps(r, ensure_ascii=False) + '\n')
+        os.replace(tmp, STORE)
 
     print()
     print('APPLIED: %d row(s) stamped h_reconstructed=true' % len(targets))

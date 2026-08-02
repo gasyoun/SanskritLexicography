@@ -26,6 +26,7 @@ if HERE not in sys.path:
 
 from citation_edges import extract_citation_edges, coverage_stats, report_store
 from store_path import canonical_store
+from store_write import locked_store_rewrite
 
 STORE = canonical_store(os.path.join(HERE, 'pwg_ru_translated.jsonl'))
 
@@ -35,11 +36,9 @@ def load_rows(store):
 
 
 def write_rows(store, rows, no_backup):
-    if not no_backup:
-        os.replace(store, store + '.precite.bak')
-    with open(store, 'w', encoding='utf-8') as f:
-        for r in rows:
-            f.write(json.dumps(r, ensure_ascii=False) + '\n')
+    # H2146: locked (PromoteClaim) + unique fsynced backup + atomic replace — the old
+    # in-place rewrite was unlocked and left a truncated store on crash (FINDINGS §513).
+    locked_store_rewrite(store, rows, tag='precite', no_backup=no_backup)
 
 
 def selftest():
