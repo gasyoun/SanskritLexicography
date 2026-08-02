@@ -1,0 +1,2 @@
+{"ts": "2026-08-02T12:00:00Z", "reason": "human", "gap_from": "2026-07-20T10:00:00Z", "gap_to": "2026-07-21T09:00:00Z", "evidence": "operator pause", "note": "weekend off", "tagged_by": "operator"}
+{"ts": "2026-08-02T12:05:00Z", "reason": "health_nogo", "gap_from": "2026-07-22T08:00:00Z", "gap_to": "2026-07-22T14:00:00Z", "evidence": "c4 probe NO-GO series", "note": null, "tagged_by": "operator"}
