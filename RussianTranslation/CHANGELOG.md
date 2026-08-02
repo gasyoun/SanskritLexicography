@@ -10,8 +10,10 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.137.6] - 2026-08-02
+
 ### Added
-- **PWG translation duplication → optimization inventory (02-08-2026, Grok 4.5 `grok-4.5`, H2222):** durable map of *intentional* vs *unjustified* duplication so the next session hunts **code/logic twins**, not edition restates or style doublets. Taxonomy A–D (lexicographic / target-language product / process / code twin); §2 leave-alone (relationship restates, doublets, SHARED stage-0, resolveGroup/healGroup); ranked **OPT-1–8** (EN promote GAP, audit_window twin extract, selfheal↔autosplit defer, H1209 JS field param, citation coverage single source, TM defect invalidation, ops double-run); content spend C-1–5; drain order P0–P3. Doc: [`PWG_TRANSLATION_DUPLICATION_OPTIMIZATION_INVENTORY_2026-08.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_TRANSLATION_DUPLICATION_OPTIMIZATION_INVENTORY_2026-08.md). Pointers from [`pwg_ru.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md). No production code path change.
+- **PWG translation duplication → optimization inventory (02-08-2026, Grok 4.5 `grok-4.5`, H2222):** durable map of *intentional* vs *unjustified* duplication so the next session hunts **code/logic twins**, not edition restates or style doublets. Taxonomy A–D (lexicographic / target-language product / process / code twin); §2 leave-alone (relationship restates, doublets, SHARED stage-0, resolveGroup/healGroup); ranked **OPT-1–8** (EN promote GAP, audit_window twin extract, selfheal↔autosplit defer, H1209 JS field param, citation coverage single source, TM defect invalidation, ops double-run); content spend C-1–5; drain order P0–P3. Doc: [`PWG_TRANSLATION_DUPLICATION_OPTIMIZATION_INVENTORY_2026-08.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_TRANSLATION_DUPLICATION_OPTIMIZATION_INVENTORY_2026-08.md). Pointers from [`pwg_ru.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md). No production code path change. [PR #1043](https://github.com/gasyoun/SanskritLexicography/pull/1043).
 
 ## [1.137.3] - 2026-08-02
 
