@@ -16,6 +16,7 @@ page can show the *process* behind the article site:
   - K1–K8      operator strip, yield/requeue, ETA, health, instrumentation,
                cost honesty (see kitchen_slices.py / ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026)
   - residual   B1 subscription $, B9 idle reasons, B10 article-site parity (H2218)
+  - OPT-8      collision_guard — store-hit / lease collision kitchen banner (H2229)
 
 All inputs are local-only / gitignored pipeline artifacts under
 RussianTranslation/. Missing files degrade that slice; the build never raises.
@@ -59,6 +60,12 @@ ECONOMY = PILOT_OUT / "economy_ledger.json"
 SUBSCRIPTION = PILOT_OUT / "economy_subscription.json"
 IDLE_REASON_LOG = PILOT_OUT / "idle_reason_log.jsonl"
 ARTICLE_SITE = RT / "article_site"
+# Scheduler sqlite (cwd-relative when operators run from pilot/); also under pilot/output.
+ORCHESTRATOR_DB_CANDIDATES = (
+    PILOT_OUT / "max_orchestrator.sqlite",
+    RT / "src" / "pilot" / "max_orchestrator.sqlite",
+    DATA_REPO / "max_orchestrator.sqlite",
+)
 
 # "Translation is on" if any of these artifacts moved within this window.
 ACTIVE_WITHIN_SECONDS = 15 * 60
@@ -702,6 +709,9 @@ def main():
         idle_pub["last_idle"] = annotated_all[-1]
     parity = ks.article_site_parity(STORE, ARTICLE_SITE)
 
+    orch_db = next((p for p in ORCHESTRATOR_DB_CANDIDATES if p.exists()), None)
+    collision = ks.collision_guard(EVENTS, orchestrator_db=orch_db)
+
     # Drop bulk rows from published JSON (keep aggregates only).
     ledger_pub = {k: v for k, v in ledger.items() if k != "all_rows"}
 
@@ -709,7 +719,8 @@ def main():
         "generated_at": utc_now_iso(),
         "schema": "pwg.kitchen.v2",
         "schema_note": (
-            "H2218 additive keys: cost.subscription, idle.reasons, article_parity "
+            "H2218 additive keys: cost.subscription, idle.reasons, article_parity; "
+            "H2229 collision_guard (OPT-8 lease/store-hit banner) "
             "(still pwg.kitchen.v2 — non-breaking)"
         ),
         "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -729,6 +740,7 @@ def main():
         "quality": quality,
         "eta": eta,
         "article_parity": parity,
+        "collision_guard": collision,
         "speed": {
             "cards_last_hour": speed.get("last_hour"),
             "cards_last_24h": speed.get("last_24h"),
@@ -773,6 +785,8 @@ def main():
         f"article_parity={parity.get('measured')}  "
         f"health={health.get('last_verdict')}  "
         f"yield_clean={yld.get('clean_windows')}/{yld.get('windows')}  "
+        f"collision_blocked={collision.get('blocked')}  "
+        f"collision_n={collision.get('collision_count')}  "
         f"changelog_entries={len(clog.get('entries') or [])}"
     )
 
