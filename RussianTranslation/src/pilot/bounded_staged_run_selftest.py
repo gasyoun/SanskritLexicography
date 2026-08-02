@@ -47,6 +47,7 @@ if HERE not in sys.path:
 
 import bounded_staged_run as bsr
 import bounded_supervisor as bs
+import economy_ledger as el
 import max_account_orchestrator as mao
 from bounded_supervisor import (
     STOP_CLEAN_TARGET, STOP_CALL_COUNT, STOP_COST_UNEVALUABLE, STOP_CONSECUTIVE_EMPTY,
@@ -1192,6 +1193,61 @@ def test_s3_h7_unrecordable_done_job_also_stops(td):
     print('  (s3) H7: an unrecordable done job stops on the same backstop: PASS')
 
 
+def test_t_data_root_env_shim(td):
+    """H2175 step 4: --data-root maps the standard pwg-ru-data layout onto the env seams
+    (PWG_RU_STORE / PWG_RU_TM_DIR / PWG_INPUT_DIR / PWG_OUTPUT_DIR / PWG_ECONOMY_LOG /
+    PWG_COORDINATOR_DIR) BEFORE any path resolution, derives --coord-dir / --db /
+    --checkpoint only when left at parser defaults, creates the layout skeleton, and
+    keeps the old contract when absent (no coord-dir from anywhere -> parser error)."""
+    import data_root as dr
+    root = os.path.join(td, 't_dataroot')
+    os.makedirs(root)
+    captured = {}
+    _run = bsr.run
+    bsr.run = lambda a: captured.update(vars(a)) or 0
+    saved = {k: os.environ.get(k) for k in dr.ENV_LAYOUT}
+    try:
+        plan = os.path.join(td, 't_plan.json')
+        bsr.main(['--plan', plan, '--data-root', root])
+        absroot = os.path.abspath(root)
+        assert os.environ['PWG_RU_STORE'] == os.path.join(
+            absroot, 'tm', 'pwg_ru_translated.jsonl'), os.environ['PWG_RU_STORE']
+        assert os.environ['PWG_RU_TM_DIR'] == os.path.join(absroot, 'tm')
+        assert os.environ['PWG_ECONOMY_LOG'] == os.path.join(
+            absroot, 'telemetry', 'generation_api_probe_log.jsonl')
+        assert captured['coord_dir'] == os.path.join(absroot, 'manifests', 'coordinator')
+        assert os.path.isdir(captured['coord_dir']), 'derived coord dir must exist'
+        assert captured['db'] == os.path.join(absroot, 'manifests',
+                                              'max_orchestrator.sqlite'), captured['db']
+        assert captured['checkpoint'] == os.path.join(
+            absroot, 'manifests', 'bounded_staged_run.checkpoint.json')
+        for sub in dr.SUBDIRS:
+            assert os.path.isdir(os.path.join(root, sub)), 'skeleton dir %s' % sub
+        # the lazy economy-ledger seam follows the applied env
+        assert el.frozen_log() == os.environ['PWG_ECONOMY_LOG']
+        # an explicit --coord-dir / --db keeps winning over the derived defaults
+        own_cd = os.path.join(td, 't_own_cd')
+        os.makedirs(own_cd)
+        bsr.main(['--plan', plan, '--data-root', root, '--coord-dir', own_cd,
+                  '--db', os.path.join(td, 'own.sqlite')])
+        assert captured['coord_dir'] == own_cd
+        assert captured['db'] == os.path.join(td, 'own.sqlite')
+        # neither --coord-dir nor --data-root -> the old required-flag refusal (exit 2)
+        try:
+            bsr.main(['--plan', plan])
+            raise AssertionError('missing coord-dir must be refused')
+        except SystemExit as exc:
+            assert getattr(exc, 'code', None) == 2, exc
+    finally:
+        bsr.run = _run
+        for k, v in saved.items():
+            if v is None:
+                os.environ.pop(k, None)
+            else:
+                os.environ[k] = v
+    print('  (t) H2175: --data-root env shim, derived defaults, explicit-flag wins: PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_a_plan_scope(td)
@@ -1217,6 +1273,7 @@ def main():
         test_s_h7_zero_claim_drain_stops_instead_of_spinning(td)
         test_s2_h7_progress_resets_the_consecutive_counter(td)
         test_s3_h7_unrecordable_done_job_also_stops(td)
+        test_t_data_root_env_shim(td)
     print('bounded_staged_run_selftest: PASS')
 
 

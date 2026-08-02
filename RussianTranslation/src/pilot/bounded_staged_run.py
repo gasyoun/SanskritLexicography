@@ -73,6 +73,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import bounded_supervisor as bs                      # noqa: E402
+import data_root                                     # noqa: E402
 import economy_ledger as el                          # noqa: E402
 import max_account_orchestrator as mao               # noqa: E402
 from call_reservation import CallReservationLedger, run_ids  # noqa: E402
@@ -719,7 +720,7 @@ def plan_view(plan, coord_state, ceilings, checkpoint_path, requested_lease_ids=
     not_prepared = [w['id'] for w in windows if w['id'] not in prepared]
     if ledger is None:
         try:
-            ledger = el.build_ledger(el.read_rows(el.FROZEN_LOG))
+            ledger = el.build_ledger(el.read_rows(el.frozen_log()))
         except (OSError, ValueError):
             ledger = {'aggregate': {}}
     cost_ok, cost_reason = cost_ceiling_evaluable(ceilings.get('cost_ceiling'), ledger)
@@ -830,8 +831,8 @@ def run(args):
         'empty_streak': args.empty_streak, 'max_accounts': args.max_accounts,
     }
     accounts = _validated_accounts(args.db)
-    ledger = el.build_ledger(el.read_rows(el.FROZEN_LOG)) if os.path.exists(el.FROZEN_LOG) else \
-        {'aggregate': {}}
+    ledger = el.build_ledger(el.read_rows(el.frozen_log())) if os.path.exists(el.frozen_log()) \
+        else {'aggregate': {}}
     view = plan_view(plan, coord_state, ceilings, args.checkpoint,
                      requested_lease_ids=args.lease_id, accounts=accounts, ledger=ledger,
                      cohort_width=cohort_width)
@@ -942,7 +943,11 @@ def run(args):
 def build_parser():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--plan', required=True, help='the pwg.no_pwg_scale_plan.v1 plan JSON')
-    ap.add_argument('--coord-dir', required=True, help='coordinator dir holding state.json')
+    # H2175 step 4: --coord-dir is now derivable from --data-root (<root>/manifests/
+    # coordinator); main() still refuses when NEITHER is given, so the old contract holds.
+    ap.add_argument('--coord-dir', help='coordinator dir holding state.json (required '
+                                        'unless derived from --data-root)')
+    data_root.add_arg(ap)
     ap.add_argument('--coordinator', help='path to coordinator.py (required for --execute)')
     ap.add_argument('--cwd', help='working dir for record/promote subprocesses (--execute)')
     ap.add_argument('--db', default='max_orchestrator.sqlite')
@@ -1013,6 +1018,23 @@ def build_parser():
 def main(argv=None):
     ap = build_parser()
     args = ap.parse_args(argv)
+    # H2175 step 4: apply the data root BEFORE any path resolution (store_path caches
+    # per-process; economy_ledger.frozen_log() and the coordinator/audit env seams all
+    # read os.environ lazily, and _coord_env() forwards the environment to every child).
+    # Flags the operator passed explicitly keep winning over derived defaults.
+    if args.data_root:
+        data_root.apply(args.data_root, ensure_dirs=True)
+        if not args.coord_dir:
+            args.coord_dir = data_root.resolve(args.data_root, 'coord_dir')
+            os.makedirs(args.coord_dir, exist_ok=True)
+        if args.db == ap.get_default('db'):
+            args.db = os.path.join(
+                data_root.resolve(args.data_root, 'manifests_dir'), args.db)
+        if args.checkpoint == ap.get_default('checkpoint'):
+            args.checkpoint = os.path.join(
+                data_root.resolve(args.data_root, 'manifests_dir'), args.checkpoint)
+    if not args.coord_dir:
+        ap.error('--coord-dir is required (pass it directly or derive it via --data-root)')
     if args.execute and not (args.coordinator and args.cwd and args.events):
         ap.error('--execute requires --coordinator, --cwd and --events')
     # H2157 (H2025 G3 / F-B1): a PAID run must be bounded by default. Both ceilings are
