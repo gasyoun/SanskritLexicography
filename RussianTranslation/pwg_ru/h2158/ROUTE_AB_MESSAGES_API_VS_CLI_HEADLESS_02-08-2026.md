@@ -52,13 +52,35 @@ so both routes are compared on one rate table:
 The port addresses the 34.6 % cache-write line and nothing else — unless the output volume
 is itself an artifact of the route (§4), which is exactly what the missing arm would settle.
 
+**Output dominates *because Phase 0 worked*.** H2011's live-gate card, measured the same day
+but **before** the bare-cwd change, decomposed to `$0.8660853` with **cache creation at
+73.5 % (106 072 tokens)**:
+
+| | H2011 (pre-bare-cwd) | H2158 (post-bare-cwd) | change |
+|---|---:|---:|---:|
+| cache create (tokens) | 106 072 | 46 117 | **−57 %** |
+| cache create (share) | 73.5 % | 34.6 % | — |
+| total per card | $0.8661 | $0.8005 | −7.6 % |
+
+So this is not a contradiction of [#986](https://github.com/gasyoun/SanskritLexicography/pull/986)/H2011's
+"cache creation is most of the cost" — it is what that finding looks like *after* the fix
+they motivated. The cache half was cut by more than half; what remains standing is output.
+Note the total moved only −7.6 %: **cutting creation 57 % bought 7.6 %**, because output was
+always underneath. That is the clearest single argument for reordering the backlog (§6).
+
 ### 1.3 Rate-table correction (applies beyond this handoff)
 
 `PRICE['cache_write'] = 3.75` is the **5-minute** cache-write rate (1.25× base). Every write
 this lane produces lands in `ephemeral_1h_input_tokens`, and the 1-hour TTL bills at **2×
 base = $6.00/Mtok**. Pricing 1h writes at the 5m rate understates the CLI lane by 1.6×.
-Both figures are emitted side by side (`cost_usd_1h_write`, `cost_usd_5m_write`) rather than
-silently picking one.
+
+**The prose already knows this; the code constant does not.** H2011's changelog entry and
+`RUN_FREQ_MAX.md` both price cache creation at $6/M and explicitly note the write is
+`ephemeral_1h` — but `PRICE`, the table every cost script imports, still carries 3.75 with no
+TTL dimension. So a hand-written memo gets it right while anything computed from `PRICE`
+silently under-reports. This harness emits both figures side by side
+(`cost_usd_1h_write`, `cost_usd_5m_write`) rather than picking one; the durable fix is to
+give `PRICE` a TTL-aware write rate so the two cannot diverge again.
 
 ### 1.4 Trivial-call floor — the scaffolding tax, isolated
 
