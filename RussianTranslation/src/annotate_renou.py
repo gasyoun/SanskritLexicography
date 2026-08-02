@@ -26,6 +26,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 import renou
+from store_write import locked_store_rewrite
 
 STATES = renou.STATES
 
