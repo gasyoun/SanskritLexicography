@@ -183,11 +183,22 @@ KILL_FLOOR_MS = 45000       # H189 recalibration (MG: ">~60 s per subcard is sus
                             #  fragment: it guaranteed nothing was killed before 2 min even for a
                             #  tiny call, so the pril10_w1 fragments ran 3-6.5 min each. 45 s floor
                             #  + BASE/SLOPE puts a tiny fragment's hard-kill at ~60-70 s.
-KILL_CEIL_MS = 180000       # hard ceiling — NOTHING runs past 3 min (MG). Was 480000 (8 min); the
-                            #  worst pril10_w1 agent ran 390 s (6.5 min) inside the old ceiling. On
-                            #  kill the call is abandoned and its cards fall to the bounded fragment
-                            #  lane / binary-split, so a killed unit is REQUEUED, never silently
-                            #  lost (see resolveGroup/healGroup below).
+KILL_CEIL_MS = 300000       # hard ceiling. On kill the call is abandoned and its cards fall to the
+                            #  bounded fragment lane / binary-split, so a killed unit is REQUEUED,
+                            #  never silently lost (see resolveGroup/healGroup below).
+                            #  History: 480000 (8 min) -> 180000 ("NOTHING runs past 3 min", MG,
+                            #  after the worst pril10_w1 agent ran 390 s) -> 300000 on 02-08-2026,
+                            #  when that rule was RELAXED by explicit human ruling (issue #983).
+                            #  Evidence: the first paid run since 25-07 returned ZERO cards because
+                            #  12 of 16 calls died at exactly the 180 s ceiling; it was not tunable
+                            #  from below, since this gate saturates at CEIL for any fragment
+                            #  >~3.5 KB and heal groups were already down to ONE fragment.
+                            #  Successful calls ran 120.4-164.3 s (67-91% of the old budget).
+                            #  300 s keeps ~1.8x headroom over the worst success and stays below
+                            #  the 390 s that prompted the original ruling. MUST stay in step with
+                            #  `headless_worker.HARD_TIMEOUT_MS` — the Python subprocess ceiling
+                            #  clamps from the outside, this one kills from the inside, and the
+                            #  effective bound is min(operator, budgets.timeout_ceil_ms, HARD).
 # --- live budget kill-switch (H189, 2026-07-05) -----------------------------------
 # The per-call kill gate above bounds ANY SINGLE agent() call, but nothing bounded the
 # WHOLE WINDOW: pril10_w1 spawned 230 agents (est. 174) and burned 42 M tokens before MG

@@ -5628,16 +5628,22 @@ def test_presplit_card_uses_amortized_grouping():
 
 
 def test_kill_gate_recalibrated_envelope():
-    """H189 (MG: '>~60s per subcard suspicious; >3 min unacceptable'): the kill envelope
-    must be the tightened one — floor <= 45s, ceil <= 180s (3 min) — never a regression
-    back to the 2 min floor / 8 min ceiling that let pril10_w1 fragments run 6.5 min."""
+    """H189: the kill envelope must stay tightened — floor <= 45s — and must never regress
+    to the 2 min floor / 8 min (480000) ceiling that let pril10_w1 fragments run 6.5 min.
+
+    The ceiling bound was 180000 ('>3 min unacceptable', MG). Relaxed to 300000 on
+    02-08-2026 by explicit human ruling (issue #983) after measurement showed the 3 min
+    ceiling was itself the reason a paid window returned zero cards: 12 of 16 calls died at
+    exactly 180 04x-180 23x ms, and it was not tunable from below because heal groups were
+    already at ONE fragment. The anti-regression intent is unchanged and still enforced --
+    480000 remains refused, and 300000 stays below the 390 s agent that prompted H189."""
     import gen_opt_harness2 as gh
     if gh.KILL_FLOOR_MS > 45000:
         fail('KILL_FLOOR_MS must be <= 45000 (was 120000) so a tiny subcard is killed '
              'near MG\'s ~60s suspicion line; got %d' % gh.KILL_FLOOR_MS)
-    if gh.KILL_CEIL_MS > 180000:
-        fail('KILL_CEIL_MS must be <= 180000 (3 min hard ceiling, was 480000); got %d'
-             % gh.KILL_CEIL_MS)
+    if gh.KILL_CEIL_MS > 300000:
+        fail('KILL_CEIL_MS must be <= 300000 (5 min, #983; was 180000, before that 480000); '
+             'got %d' % gh.KILL_CEIL_MS)
 
 
 def test_agent_budget_plan_separates_translate_and_heal_pools():
