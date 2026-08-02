@@ -1,0 +1,37 @@
+{
+  "manifest": "h1209_slice3.manifest.json",
+  "model": "claude-sonnet-5",
+  "keys": [
+    "nakzatra"
+  ],
+  "repeats": 1,
+  "rates": {
+    "input": 3.0,
+    "output": 15.0,
+    "cache_write_1h": 6.0,
+    "cache_write_5m": 3.75,
+    "cache_read": 0.3
+  },
+  "rows": [
+    {
+      "arm": "cli",
+      "key": "nakzatra",
+      "wall_ms": 375003,
+      "returncode": 0,
+      "api_ms": 356727,
+      "failure_class": null,
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 34215,
+        "cache_creation_input_tokens": 46117,
+        "cache_read_input_tokens": 35220
+      },
+      "ttl_1h_tokens": 46117,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.800499,
+      "n": 1,
+      "cost_usd_1h_write": 0.800499,
+      "cost_usd_5m_write": 0.696736
+    }
+  ]
+}

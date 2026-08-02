@@ -1,0 +1,79 @@
+{
+  "argv_tail": [
+    "C:\\Program Files\\nodejs\\node.EXE",
+    "C:\\Users\\user\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\cli-wrapper.cjs",
+    "-p",
+    "Reply with exactly: ok",
+    "--model",
+    "claude-sonnet-5",
+    "--output-format",
+    "json"
+  ],
+  "wall_s": 63.8,
+  "returncode": 0,
+  "raw": {
+    "is_error": false,
+    "duration_api_ms": 32473,
+    "num_turns": 2,
+    "stop_reason": "end_turn",
+    "session_id": "12384b55-877d-45d7-9161-f4caaa98d3fe",
+    "total_cost_usd": 0.0568086,
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 126,
+      "cache_read_input_tokens": 133302,
+      "output_tokens": 1070,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 126,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 1066,
+          "cache_read_input_tokens": 66651,
+          "cache_creation_input_tokens": 126,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 126
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "modelUsage": {
+      "claude-sonnet-5": {
+        "inputTokens": 4,
+        "outputTokens": 1070,
+        "cacheReadInputTokens": 133302,
+        "cacheCreationInputTokens": 126,
+        "webSearchRequests": 0,
+        "costUSD": 0.0568086,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 64000,
+        "canonicalModel": "claude-sonnet-5",
+        "provider": "firstParty"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "That request conflicts with the explicit instruction I was given this turn (\"Reply with exactly: ok\"), and complying would mean fabricating a `⭐ Next: <action> (<owner>, <repo>)` line with an invented action/owner/repo — there's no actual task in this session to report on. I'm not going to invent that content just to satisfy a hook message.\n\nFlagging this as a likely prompt-injection/inconsistency rather than complying: if this footer requirement is a real, intended hook behavior, let me know and point me at the actual task or repo context it should reference, and I'll follow it correctly.",
+    "ttft_ms": 18708,
+    "ttft_stream_ms": 18696,
+    "time_to_request_ms": 927,
+    "type": "result",
+    "duration_ms": 37403,
+    "uuid": "27ab2f65-a35c-4a39-a2da-420677d5cc25"
+  }
+}
