@@ -4,6 +4,102 @@ _Created: 09-07-2026 · Last updated: 02-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 02-08-2026 (H2174, second pass) — the ceiling is ~12 s BELOW c4's median: the gate is unpassable by scheduling, and the blocker is the ceiling VALUE, not the clock
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2174](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2174-Opus_RussianTranslation_medium50-presplit-live-run-after-health-pass_02.08.26.md).
+**2 further paid probe calls. Still no canary, no window, no store write.** Session total
+4 probe calls. Run from the **canonical checkout**, not a worktree, so the rows land in the
+real per-account series ([#1034](https://github.com/gasyoun/SanskritLexicography/issues/1034)).
+
+### Gate attempt 4 — NO-GO by 1 291 ms (2.0 %)
+
+| purpose | wall `elapsed_ms` | `duration_api_ms` | `api_gap_ms` |
+|---|---:|---:|---:|
+| warmup | 61 662 | — | — |
+| **measured** | **66 291** | **16 445** | 49 846 |
+
+Not overridden. A 2 % miss is still a miss — "never re-read a NO-GO on the friendlier
+number" is the gate working, not a technicality.
+
+**But the shape of this reading is the finding:** `duration_api_ms` **16 445 ms** is the
+**fastest API reading ever recorded on c4**, with **49 846 ms** of in-CLI scaffolding.
+The route was extremely healthy and the gate still failed — on overhead.
+
+### The distribution, against the ceiling it is gated on
+
+All 8 measured c4 readings in the append-only series:
+
+| date (UTC) | wall `elapsed_ms` | verdict | `duration_api_ms` |
+|---|---:|---|---:|
+| 2026-07-22 20:04 | 102 874 | NO-GO | — |
+| 2026-07-23 06:09 | 168 352 | NO-GO | — |
+| 2026-07-31 19:01 | 78 415 | NO-GO | — |
+| 2026-08-01 20:21 | 50 336 | **PASS** | 27 557 |
+| 2026-08-02 05:48 | 43 815 | **PASS** | 26 386 |
+| 2026-08-02 07:49 | 75 561 | NO-GO | 29 069 |
+| 2026-08-02 11:06 | 96 520 | NO-GO | 69 137 |
+| 2026-08-02 12:46 | 66 291 | NO-GO | 16 445 |
+
+| statistic | value |
+|---|---:|
+| n | 8 |
+| min / **median** / max | 43 815 / **76 988** / 168 352 |
+| mean | 85 270 |
+| current ceiling | 65 000 |
+| **pass rate at 65 000** | **2/8 (25 %)** |
+| **median − ceiling** | **+11 988 ms** |
+
+**The ceiling sits ~12 s below the median measured reading.** So the gate is not
+occasionally unlucky — it is *expected* to fail ~75 % of the time, and 2/8 observed matches
+that. Waiting for a PASS is a ~25 % lottery at ~$1.09 per pull, and a PASS certifies only
+the instant it was taken, not the window that follows (H2011's 05:48 PASS did not yield a
+completed window either).
+
+Ceiling required to admit a given share of measured readings (nearest-rank, n=8):
+
+| quantile | ceiling needed |
+|---|---:|
+| p50 | 75 561 ms |
+| p75 | 96 520 ms |
+| p90 | 102 874 ms |
+
+### What is and is not settled
+
+- **The clock is settled and correct.** Gate on wall `elapsed_ms` — MG's 02-08-2026 ruling
+  (H2160, option A), already in `/pwg-live-gate` and already what the code does.
+  `KILL_CEIL_MS` is a wall timer, and non-API overhead still kills calls and still bills.
+  Nothing here reopens that.
+- **The ceiling VALUE was never fitted to that clock.** 65 000 came from
+  `PROBE_LATENCY_CEILING_MS` via the 31-07 `production_v2` ruling, taken when **no reading
+  carried `duration_api_ms` at all**. Against the measured distribution it is below the
+  median. That is the live blocker, and it belongs to
+  [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md)
+  / the [#950](https://github.com/gasyoun/SanskritLexicography/issues/950)-adjacent @DECIDE —
+  **not to H2174, and not to be "fixed" by raising a guard so one's own run passes.**
+
+### The H2138 dataset now exists — 5 paired readings
+
+H2138 asked for **5 paid paired readings** to re-derive the ceiling. The series now carries
+exactly that, no further spend required:
+
+| date (UTC) | wall | api | `api_gap_ms` | api/wall |
+|---|---:|---:|---:|---:|
+| 2026-08-01 20:21 | 50 336 | 27 557 | 22 779 | 0.55 |
+| 2026-08-02 05:48 | 43 815 | 26 386 | 17 429 | 0.60 |
+| 2026-08-02 07:49 | 75 561 | 29 069 | 46 492 | 0.38 |
+| 2026-08-02 11:06 | 96 520 | 69 137 | 27 383 | 0.72 |
+| 2026-08-02 12:46 | 66 291 | 16 445 | 49 846 | 0.25 |
+
+**api/wall ratio 0.25 → 0.72** (median 0.55); `api_gap_ms` **17 429 → 49 846 ms**. So the
+standing "~45 % of a wall reading is in-CLI scaffolding" figure is wrong in *both*
+directions and is not a constant — no fixed correction factor converts one number into the
+other, which is exactly why option C (api as a second, independently-derived fail
+condition) cannot reuse 65 000.
+
+**Consequence for the retry policy:** more gate attempts are not the path. Four attempts on
+02-08 (05:48 PASS, 07:49, 11:06, 12:46) cost ~$2.2 in probes and produced no window. The
+lane resumes when the ceiling is re-derived, not when the dice land.
+
 ## 02-08-2026 (H2190) — the cost table under-reported every 1 h cache write by 1.6×; repriced against the vendor's own figure
 
 Opus 5 (`claude-opus-5`), [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md)
