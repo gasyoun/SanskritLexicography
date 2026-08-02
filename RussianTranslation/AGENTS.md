@@ -49,6 +49,15 @@ lock class serializes generation for that profile. Paid manifest-v2 execution
 must preserve the run/manifest/preflight/profile/reservation binding through
 the sealed result SHA passed to `record-output` or `record-output-batch`.
 
+Since H2157 (02-08-2026) BOTH ceilings are mandatory on `--execute`: a paid
+run refuses to start without `--max-calls` and `--cost-ceiling`, and a
+deliberate unbounded window must say `--allow-unbounded` in the command line.
+Since H2159 (02-08-2026) the live-gate canary verdict is consumed
+MECHANICALLY: `canary_gate.py judge` writes a GO/NO-GO receipt from the canary
+wf_output, and `--execute` refuses to start without a fresh (≤6 h) GO receipt
+for the same profile (`--canary-receipt`; `--skip-canary-gate` is the explicit
+escape hatch).
+
 On Windows, all Claude process trees use a kill-on-close Job Object assigned
 while the child is suspended; timeout and non-timeout cleanup therefore reach
 the native descendant instead of leaving an orphaned paid call. Batch
