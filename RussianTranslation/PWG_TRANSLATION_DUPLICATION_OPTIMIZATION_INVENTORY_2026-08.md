@@ -1,6 +1,6 @@
 # PWG translation — duplication map & unjustified-code optimization inventory
 
-_Created: 02-08-2026 · Last updated: 02-08-2026_
+_Created: 02-08-2026 · Last updated: 02-08-2026 (H2226 OPT-4 closed)_
 
 **Purpose.** One place to hunt **optimization**: where the PWG→RU/EN pipeline
 _duplicates logic or code without a good reason_. Companion to the product-
@@ -118,15 +118,15 @@ Ranked by **leverage × risk** for a refactor session. Line counts measured
 | **Prove** | golden fragment fixtures: same input → identical stitched card + missing-ids from both entry points. |
 | **Risk** | High (translation control flow). Default: **defer**. |
 
-### OPT-4 — H1209 / H1210 Workflow templates hardcode RU (LANG_PARITY **GAP**)
+### OPT-4 — H1209 / H1210 Workflow templates hardcode RU (LANG_PARITY **SHARED** — closed H2226)
 
 | | |
 |--|--|
 | **Files** | `src/pilot/h1209/wf_template.js`, `h1210/wf_template_ab.js`, `h1210/control_template.js` (+ already field-parameterized Python: `canonical_audit.py`, `det_gate.py`, …) |
-| **Waste** | JS hardcodes `russian` target + RU controller prompt; Python side is already parameterized. Second EN scaffold would **duplicate the wrong layer**. |
-| **Optimize** | Parameterize the **two prompts / target field in JS** once; EN A/B reuses the same scaffold (ledger note on `h1210_ab_arm_scaffold` forbids forking a second EN tree). |
-| **Prove** | mini-EN canary + existing RU 3-card canary still green. |
-| **Risk** | Medium. |
+| **Waste** | ~~JS hardcodes `russian` target + RU controller prompt.~~ **Closed H2226** (Grok 4.5 `grok-4.5`, 02-08-2026): `TARGET_FIELD` + `CONTROLLER_PROMPT` from payload (`prep_slice` / `arm_b_control`); EN inject build without a second scaffold tree. |
+| **Optimize** | ~~Parameterize the two prompts / target field in JS once.~~ Done; live paid EN campaign remains optional follow-up. |
+| **Prove** | `js_field_param_selftest` RU/EN inject; `det_gate selftest` EN field path; RU 3-card canary fixture + `canonical_audit` green. LANG_PARITY `h1209_controller_worker_rig` + `h1210_ab_arm_scaffold` → SHARED. |
+| **Risk** | Residual: first live EN Workflow run still the consumer. |
 
 ### OPT-5 — Judge / gold-sample twins (small, low urgency)
 
@@ -224,8 +224,8 @@ rg -n '"verdict": "GAP"' RussianTranslation/LANG_PARITY.md
 | Priority | Item | Why first |
 |----------|------|-----------|
 | **P0** | ~~OPT-1 EN promote parity~~ **done H2224** | Guards landed; first real EN promote still the consumer |
-| **P1** | OPT-6 citation coverage single source | Pure function, low risk, doc honesty |
-| **P1** | OPT-4 H1209/H1210 JS field parameterize | Unblocks EN canary without forking scaffold |
+| **P1** | ~~OPT-6 citation coverage single source~~ **done H2225** | Pure function shipped |
+| **P1** | ~~OPT-4 H1209/H1210 JS field parameterize~~ **done H2226** | Scaffold field-param; first live EN Workflow still the consumer |
 | **P2** | OPT-2 extract lang-agnostic markup gates | High leverage, needs staged PRs |
 | **P3** | OPT-7 TM invalidation on defect | Cost insurance on requeues |
 | **P3** | C-1 restate short-path | Product spend; needs policy + measurement |
