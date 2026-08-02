@@ -181,6 +181,10 @@
   <div class="panel"><h3>Top roots (ledger)</h3><div id="topRoots" class="note">—</div></div>
   <div class="panel"><h3>Quality / gates</h3><div id="qualityBody" class="note">—</div></div>
 </div>
+<div class="section-grid">
+  <div class="panel"><h3>Article-site parity</h3><div id="parityBody" class="note">—</div></div>
+  <div class="panel"><h3>Idle reason mix</h3><div id="idleReasonBody" class="note">—</div></div>
+</div>
 
 <h3>Campaign calendar</h3>
 <p class="mut" id="calLegend">cards/day · amber outline = idle day (≥1h idle, 0 cards)</p>
@@ -409,11 +413,12 @@ function fmtUsdBand(b) {
 }
 
 function renderIdleGapTable(gaps) {
-  return '<table><thead><tr><th>From</th><th>To</th><th class="num">Idle</th><th>Roots</th></tr></thead><tbody>' +
+  return '<table><thead><tr><th>From</th><th>To</th><th class="num">Idle</th><th>Reason</th><th>Roots</th></tr></thead><tbody>' +
     gaps.map(g =>
       `<tr><td class="mono">${esc((g.from||'').replace('T',' ').replace('Z',''))}</td>` +
       `<td class="mono">${esc((g.to||'').replace('T',' ').replace('Z',''))}</td>` +
       `<td class="num">${fmtDur(g.seconds)}</td>` +
+      `<td title="${esc(g.reason_evidence || g.reason_source || '')}"><span class="badge">${esc(g.reason || 'unknown')}</span></td>` +
       `<td class="mut">${esc(g.after_root||'—')} → ${esc(g.before_root||'—')}</td></tr>`
     ).join('') + '</tbody></table>';
 }
@@ -533,6 +538,15 @@ function renderKitchen(k) {
     cleanSpend ? `<div class="card"><b class="sm">${esc(cleanSpend)}</b><span class="sub">total $ · clean dictionary</span></div>` : '',
     prepSpend ? `<div class="card"><b class="sm">${esc(prepSpend)}</b><span class="sub">total $ · prep / redo</span></div>` : '',
     econ.total_clean != null ? `<div class="card"><b>${fmt(econ.total_clean)}</b><span class="sub">clean cards in economy log</span></div>` : '',
+    (() => {
+      const sub = co.subscription || {};
+      if (sub.measured && sub.amount != null) {
+        const per = [sub.period_start, sub.period_end].filter(Boolean).join(' → ');
+        return `<div class="card"><b class="sm">${esc(sub.currency || 'USD')} ${esc(String(sub.amount))}</b>` +
+          `<span class="sub">subscription window${per ? ' · ' + esc(per) : ''} <span class="badge">${esc(sub.badge || 'pasted')}</span></span></div>`;
+      }
+      return `<div class="card"><b class="sm">—</b><span class="sub">subscription $ <span class="badge">${esc((sub && sub.badge) || 'not pasted')}</span></span></div>`;
+    })(),
   ].join('');
 
   // K2 yield panel
@@ -576,6 +590,45 @@ function renderKitchen(k) {
     (jdg.pct != null ? `<p>Judge sample coverage <b>${jdg.pct}%</b> (${fmt(jdg.windows_with_sample)}/${fmt(jdg.windows)})</p>` : '') +
     (quality.crashes != null ? `<p>Crash events <b>${fmt(quality.crashes)}</b>${quality.crashes_per_100_windows != null ? ' (' + quality.crashes_per_100_windows + '/100 windows)' : ''}</p>` : '') +
     (quality.promotion_vs_generation ? `<p class="mut">Clean ledger windows: ${fmt(quality.promotion_vs_generation.clean_ledger_windows)} / ${fmt(quality.promotion_vs_generation.total_windows)}</p>` : '');
+
+  // B10 article-site parity
+  const par = k.article_parity || {};
+  const parityEl = document.getElementById('parityBody');
+  if (parityEl) {
+    if (par.measured) {
+      const miss = par.missing_from_article_sample || [];
+      parityEl.innerHTML =
+        `<p>Store roots <b>${fmt(par.store_roots)}</b> · article roots <b>${fmt(par.article_roots)}</b> · ` +
+        `parity <b>${par.parity_pct != null ? par.parity_pct + '%' : '—'}</b></p>` +
+        `<p>In store not article <b>${fmt(par.in_store_not_article)}</b> · ` +
+        `in article not store <b>${fmt(par.in_article_not_store)}</b></p>` +
+        (miss.length
+          ? `<p class="mut">Missing sample: ${miss.map(esc).join(', ')}</p>`
+          : '') +
+        `<p class="mut">${esc(par.note || '')}</p>`;
+    } else {
+      parityEl.innerHTML =
+        `<p><span class="badge">measured: false</span> ${esc(par.note || 'article_site not available')}</p>` +
+        (par.store_roots != null ? `<p class="mut">Store roots known: ${fmt(par.store_roots)}</p>` : '');
+    }
+  }
+
+  // B9 idle reason mix
+  const ir = (id.reasons) || {};
+  const irEl = document.getElementById('idleReasonBody');
+  if (irEl) {
+    const rc = ir.reason_counts || {};
+    const tax = ir.taxonomy || [];
+    if (Object.keys(rc).length || tax.length) {
+      irEl.innerHTML =
+        `<p>Known <b>${fmt(ir.known_reason_count)}</b> · unknown <b>${fmt(ir.unknown_reason_count)}</b> · log rows <b>${fmt(ir.log_entries)}</b></p>` +
+        `<p>${Object.entries(rc).map(([k, v]) => `<span class="badge">${esc(k)}</span> ${v}`).join(' · ')}</p>` +
+        `<p class="mut">Taxonomy: ${(tax.length ? tax : ['human','weekly_cap','health_nogo','machine_off','waiting_requeue','unknown']).map(esc).join(' · ')}</p>` +
+        `<p class="mut">${esc(ir.note || '')}</p>`;
+    } else {
+      irEl.innerHTML = '<p class="mut">no idle gaps yet</p>';
+    }
+  }
 
   // Monthly idle days
   const months = id.idle_by_month || [];

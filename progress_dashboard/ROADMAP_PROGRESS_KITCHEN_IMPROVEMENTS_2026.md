@@ -2,6 +2,8 @@
 
 _Created: 02-08-2026 · Last updated: 02-08-2026_
 
+**Shipped residual (H2218, 02-08-2026):** B1 subscription loader+UI · B9 idle-reason taxonomy · B10 article-site parity · R4 ledger metric backfill script (best-effort; unrecoverable rows stay null).
+
 **Surface:** [gasyoun.github.io/…/progress/](https://gasyoun.github.io/SanskritLexicography/progress/)  
 **Builders:** [`build_progress_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_progress_data.py) · [`build_kitchen_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_kitchen_data.py) · [`kitchen_slices.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_slices.py)  
 **Inventory handoff:** [H2211](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2211-Grok_SanskritLexicography_progress-kitchen-improvements-inventory_02.08.26.md)  
@@ -75,7 +77,7 @@ Instrumentation gaps — no honest number on the page until a writer exists.
 
 | # | Gap | Why it matters | How to measure (sketch) |
 |---|---|---|---|
-| B1 | **True billed $ (or subscription units)** | Band is extremes (cache-read vs fresh-input); Claude Max is subscription, not list-price | Optional: paste weekly usage export → `economy_subscription.json`; or agent-minutes proxy from wall-clock once dense |
+| B1 | **True billed $ (or subscription units)** | Band is extremes (cache-read vs fresh-input); Claude Max is subscription, not list-price | **H2218 shipped:** loader + UI + example schema; paste weekly usage export → `economy_subscription.json` (first real $ still needs human paste) |
 | B2 | **Per-window wall-clock + token completeness** | Speed/cost cards are statistically weak | Always write `production_metrics` on every audit close (not 12/473) |
 | B3 | **Health / route readiness (c4 …)** | Nonstop plan blocked on bimodal c4; kitchen never says GO/NO-GO | Append-only `health_probe_log.jsonl` (profile, wall_ms, api_ms, verdict) → sparkline + last verdict |
 | B4 | **Quality / fidelity over time** | Throughput without quality is vanity | Sample judge scores or fidelity aggregate per root/window; % gates green |
@@ -83,8 +85,8 @@ Instrumentation gaps — no honest number on the page until a writer exists.
 | B6 | **Promotion vs generation** | Store grows without “promoted clean window” | Count ledger `state==clean` and promote events; cards promoted this week |
 | B7 | **Lane burn-down beyond verb** | Nominal medium-50 paused; no public reason depth | Structured pause reasons + runnable backlog age |
 | B8 | **Multi-PC / multi-profile split** | Future nonstop multilane | `gen_model` / host / profile tags on ledger (only 15 rows have `gen_model` today) |
-| B9 | **Idle reason class** | Idle days are opaque | Tag long gaps: human, weekly cap, health NO-GO, machine off, waiting requeue |
-| B10 | **Article-site parity** | Progress store count vs published articles | Diff store roots vs article_site index |
+| B9 | **Idle reason class** | Idle days are opaque | **H2218 shipped:** taxonomy + `idle_reason_log.jsonl` + auto-rules with evidence; silence → unknown |
+| B10 | **Article-site parity** | Progress store count vs published articles | **H2218 shipped:** kitchen card diffs store roots vs article_site; measured=false if site absent |
 | B11 | **Error / crash rate** | `crash_state` events rare but load-bearing | Crashes per 100 windows; last crash root |
 | B12 | **Judge coverage** | `judge_sample_*` on ledger | % windows with judge sample; mean sample size |
 

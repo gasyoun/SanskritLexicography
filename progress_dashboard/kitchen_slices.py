@@ -566,3 +566,409 @@ def enrich_store_speed_oldest(store: Path, speed: dict) -> dict:
             "+00:00", "Z"
         )
     return speed
+
+
+# ---------------------------------------------------------------------------
+# H2218 residual — B1 subscription $ · B9 idle reasons · B10 article parity
+# ---------------------------------------------------------------------------
+
+IDLE_REASON_TAXONOMY = (
+    "human",
+    "weekly_cap",
+    "health_nogo",
+    "machine_off",
+    "waiting_requeue",
+    "unknown",
+)
+
+SUBSCRIPTION_SOURCES = (
+    "usage_export_paste",
+    "manual",
+    "weekly_receipt_summary",
+)
+
+
+def load_subscription(path: Path) -> dict:
+    """B1 — optional Claude Max / subscription spend paste (never invent $).
+
+    Expected JSON (gitignored under pilot/output/economy_subscription.json):
+      {
+        "period_start": "YYYY-MM-DD",
+        "period_end": "YYYY-MM-DD",
+        "currency": "USD",
+        "amount": 100.0,
+        "source": "usage_export_paste" | "manual" | "weekly_receipt_summary",
+        "notes": "optional free text (no account emails)"
+      }
+    """
+    if not path.exists():
+        return {
+            "measured": False,
+            "badge": "subscription not pasted",
+            "note": (
+                "Paste a weekly Max receipt or usage-export summary into "
+                "RussianTranslation/src/pilot/output/economy_subscription.json "
+                "(schema in progress_dashboard/examples/economy_subscription.example.json). "
+                "Until then the kitchen only shows list-price sample bands (K8)."
+            ),
+        }
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as e:  # noqa: BLE001
+        return {
+            "measured": False,
+            "error": str(e)[:200],
+            "badge": "subscription file unreadable",
+        }
+    if not isinstance(raw, dict):
+        return {"measured": False, "badge": "subscription file not an object"}
+
+    amount = raw.get("amount")
+    try:
+        amount_f = float(amount) if amount is not None else None
+    except (TypeError, ValueError):
+        amount_f = None
+    source = raw.get("source") or "manual"
+    if source not in SUBSCRIPTION_SOURCES:
+        source = "manual"
+    currency = (raw.get("currency") or "USD").strip() or "USD"
+    period_start = raw.get("period_start")
+    period_end = raw.get("period_end")
+    notes = raw.get("notes")
+    if isinstance(notes, str) and len(notes) > 280:
+        notes = notes[:277] + "…"
+    # Never surface emails if a human pasted one by mistake.
+    if isinstance(notes, str):
+        notes = re.sub(
+            r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}",
+            "<email>",
+            notes,
+        )
+
+    measured = amount_f is not None and amount_f >= 0
+    return {
+        "measured": measured,
+        "amount": amount_f if measured else None,
+        "currency": currency if measured else None,
+        "period_start": period_start,
+        "period_end": period_end,
+        "source": source if measured else None,
+        "notes": notes if measured else None,
+        "badge": (
+            f"subscription window {currency} {amount_f:g} (pasted)"
+            if measured
+            else "subscription amount missing"
+        ),
+        "note": (
+            "Human-pasted subscription/usage total — not list-price token math"
+            if measured
+            else "File present but amount missing or invalid"
+        ),
+    }
+
+
+def _load_idle_reason_log(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    rows = []
+    with path.open(encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rows.append(json.loads(line))
+            except json.JSONDecodeError:
+                continue
+    return rows
+
+
+def append_idle_reason(
+    path: Path,
+    *,
+    reason: str,
+    gap_from: str | None = None,
+    gap_to: str | None = None,
+    evidence: str | None = None,
+    note: str | None = None,
+    tagged_by: str = "operator",
+) -> dict:
+    """Append one idle-reason tag (operator or measured auto-rule). B9 writer path."""
+    if reason not in IDLE_REASON_TAXONOMY:
+        raise ValueError(
+            f"idle reason must be one of {IDLE_REASON_TAXONOMY}, got {reason!r}"
+        )
+    row = {
+        "ts": datetime.now(timezone.utc)
+        .isoformat(timespec="seconds")
+        .replace("+00:00", "Z"),
+        "reason": reason,
+        "gap_from": gap_from,
+        "gap_to": gap_to,
+        "evidence": evidence,
+        "note": note,
+        "tagged_by": tagged_by,
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as fh:
+        fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+    return row
+
+
+def _nogo_intervals(health: dict) -> list[tuple[datetime, datetime, dict]]:
+    """Turn probe NO-GO points into short evidence intervals (±30 min)."""
+    out = []
+    for p in health.get("recent") or []:
+        if p.get("verdict") != "NO-GO":
+            continue
+        dt = _parse_ts(p.get("ts"))
+        if not dt:
+            continue
+        out.append(
+            (
+                dt - timedelta(minutes=30),
+                dt + timedelta(minutes=30),
+                p,
+            )
+        )
+    return out
+
+
+def _reason_from_log(logs: list[dict], gap_from: str | None, gap_to: str | None) -> dict | None:
+    """Exact or overlapping log hit for a gap."""
+    gf = _parse_ts(gap_from)
+    gt = _parse_ts(gap_to)
+    best = None
+    for row in logs:
+        reason = row.get("reason")
+        if reason not in IDLE_REASON_TAXONOMY:
+            continue
+        lf = _parse_ts(row.get("gap_from"))
+        lt = _parse_ts(row.get("gap_to"))
+        # exact key match preferred
+        if gap_from and row.get("gap_from") == gap_from and (
+            not gap_to or row.get("gap_to") == gap_to
+        ):
+            return {
+                "reason": reason,
+                "source": "idle_reason_log",
+                "evidence": row.get("evidence") or row.get("note"),
+                "tagged_by": row.get("tagged_by"),
+            }
+        if gf and gt and lf and lt:
+            # overlap
+            if lf <= gt and lt >= gf:
+                best = {
+                    "reason": reason,
+                    "source": "idle_reason_log",
+                    "evidence": row.get("evidence") or row.get("note"),
+                    "tagged_by": row.get("tagged_by"),
+                }
+    return best
+
+
+def annotate_idle_reasons(
+    gaps: list[dict],
+    *,
+    log_path: Path,
+    ledger_rows: list[dict],
+    health: dict,
+) -> dict:
+    """B9 — attach reason class to each idle gap (unknown unless measured/tagged).
+
+    Auto-rules only with named evidence:
+      - health_nogo: gap overlaps a probe NO-GO interval
+      - weekly_cap: a ledger row with weekly_cap_fired=true ends within 2h before gap start
+      - waiting_requeue: last ledger row before gap has state needs_requeue
+    Historical silence alone → unknown (never guessed).
+    """
+    logs = _load_idle_reason_log(log_path)
+    nogo = _nogo_intervals(health if isinstance(health, dict) else {})
+
+    # ledger timeline for cap / requeue rules
+    timeline = []
+    for r in ledger_rows:
+        dt = _parse_ts(r.get("recorded_at"))
+        if not dt:
+            continue
+        timeline.append((dt, r))
+    timeline.sort(key=lambda x: x[0])
+
+    counts: Counter = Counter()
+    annotated = []
+    for g in gaps:
+        entry = dict(g)
+        hit = _reason_from_log(logs, g.get("from"), g.get("to"))
+        if hit:
+            entry["reason"] = hit["reason"]
+            entry["reason_source"] = hit["source"]
+            entry["reason_evidence"] = hit.get("evidence")
+        else:
+            reason = "unknown"
+            source = "default"
+            evidence = None
+            gf = _parse_ts(g.get("from"))
+            gt = _parse_ts(g.get("to"))
+            if gf and gt:
+                for lo, hi, probe in nogo:
+                    if lo <= gt and hi >= gf:
+                        reason = "health_nogo"
+                        source = "health_probe_overlap"
+                        evidence = (
+                            f"probe NO-GO {probe.get('elapsed_ms')}ms "
+                            f"@{probe.get('ts')} account={probe.get('account')}"
+                        )
+                        break
+            if reason == "unknown" and gf and timeline:
+                # last ledger row at or before gap start
+                prev = None
+                for dt, r in timeline:
+                    if dt <= gf:
+                        prev = (dt, r)
+                    else:
+                        break
+                if prev:
+                    pdt, prow = prev
+                    pm = prow.get("production_metrics") or {}
+                    if pm.get("weekly_cap_fired") is True and (
+                        gf - pdt
+                    ).total_seconds() <= 2 * 3600:
+                        reason = "weekly_cap"
+                        source = "ledger_weekly_cap_fired"
+                        evidence = f"ledger {prow.get('root')} @ {prow.get('recorded_at')}"
+                    elif (prow.get("state") == "needs_requeue") and (
+                        gf - pdt
+                    ).total_seconds() <= 3600:
+                        reason = "waiting_requeue"
+                        source = "ledger_needs_requeue"
+                        evidence = f"ledger {prow.get('root')} @ {prow.get('recorded_at')}"
+            entry["reason"] = reason
+            entry["reason_source"] = source
+            if evidence:
+                entry["reason_evidence"] = evidence
+        counts[entry["reason"]] += 1
+        annotated.append(entry)
+
+    known = sum(v for k, v in counts.items() if k != "unknown")
+    return {
+        "measured": bool(annotated) or bool(logs),
+        "taxonomy": list(IDLE_REASON_TAXONOMY),
+        "gap_count": len(annotated),
+        "reason_counts": dict(counts),
+        "known_reason_count": known,
+        "unknown_reason_count": counts.get("unknown", 0),
+        "log_entries": len(logs),
+        "log_path": str(log_path.name) if log_path else None,
+        "annotated_gaps": annotated,
+        "note": (
+            "Reasons from operator log or measured auto-rules only; "
+            "historical silence stays unknown"
+        ),
+    }
+
+
+def store_root_set(store: Path) -> set[str]:
+    """Unique PWG roots in the RU store (provenance.root preferred)."""
+    roots: set[str] = set()
+    if not store.exists():
+        return roots
+    with store.open(encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            prov = row.get("provenance") or {}
+            root = (
+                prov.get("root")
+                or row.get("root")
+                or prov.get("window_root")
+            )
+            if not root:
+                sc = row.get("subcard") or ""
+                if sc:
+                    root = sc.split("~~", 1)[0].lstrip("_")
+            if root:
+                roots.add(str(root))
+    return roots
+
+
+def article_site_root_set(article_site: Path) -> set[str] | None:
+    """Roots published under article_site/, or None if the tree is absent."""
+    if not article_site.exists():
+        return None
+    roots: set[str] = set()
+    md = article_site / "md"
+    if md.is_dir():
+        for p in md.glob("*.md"):
+            # skip subcards dir handled separately; only top-level md/<root>.md
+            if p.is_file():
+                roots.add(p.stem)
+    articles_js = article_site / "articles.js"
+    if articles_js.exists():
+        try:
+            text = articles_js.read_text(encoding="utf-8")
+        except OSError:
+            text = ""
+        for m in re.finditer(r'"(?:root|id)"\s*:\s*"([^"]+)"', text):
+            roots.add(m.group(1))
+        # Prefer keys of ARTICLES object: "sTA": {
+        for m in re.finditer(
+            r'["\']([A-Za-z_~0-9]+)["\']\s*:\s*\{',
+            text,
+        ):
+            key = m.group(1)
+            if key in ("schema", "meta", "version", "generated"):
+                continue
+            if len(key) <= 40:
+                roots.add(key)
+    # empty tree still "measured" as zero articles
+    return roots
+
+
+def article_site_parity(store: Path, article_site: Path, missing_cap: int = 20) -> dict:
+    """B10 — store root inventory vs published article_site (names only, no DE/RU)."""
+    store_roots = store_root_set(store)
+    if not store.exists():
+        return {
+            "measured": False,
+            "note": "store missing — cannot compute parity",
+        }
+    art = article_site_root_set(article_site)
+    if art is None:
+        return {
+            "measured": False,
+            "store_roots": len(store_roots),
+            "article_roots": None,
+            "in_store_not_article": None,
+            "in_article_not_store": None,
+            "parity_pct": None,
+            "missing_from_article_sample": [],
+            "note": (
+                "article_site/ not built on this machine — run "
+                "python RussianTranslation/src/pilot/build_article_site.py "
+                "then rebuild kitchen"
+            ),
+        }
+    in_store_not = sorted(store_roots - art)
+    in_art_not = sorted(art - store_roots)
+    n_store = len(store_roots)
+    n_art = len(art)
+    # parity: share of store roots that have an article page
+    covered = n_store - len(in_store_not)
+    parity = round(100 * covered / n_store, 1) if n_store else None
+    return {
+        "measured": True,
+        "store_roots": n_store,
+        "article_roots": n_art,
+        "in_store_not_article": len(in_store_not),
+        "in_article_not_store": len(in_art_not),
+        "parity_pct": parity,
+        "missing_from_article_sample": in_store_not[:missing_cap],
+        "extra_in_article_sample": in_art_not[:missing_cap],
+        "note": "Root names only — no DE/RU body on the public kitchen",
+    }
+
