@@ -17,6 +17,10 @@ not an error.
 ### Added
 - **OPT-8 kitchen lease-collision banner (H2229, Grok 4.5 `grok-4.5`, 02-08-2026):** store-hit / occupied-keys / nominal lease collision aborts now append typed `dashboard_events` rows and surface as a red **DO NOT START A SECOND PAID WINDOW** banner on the public kitchen (`collision_guard` on `pwg.kitchen.v2`). Display-only — no spend-path change. Fixture + `python progress_dashboard/kitchen_collision_selftest.py`. Inventory residual closed on OPT-8.
 
+## [1.137.9] - 2026-08-03
+### Fixed
+- **OPT-4 H1209/H1210 JS field + controller prompt parameterize (H2226, Grok 4.5 `grok-4.5`, 02-08-2026):** `wf_template.js`, `wf_template_ab.js`, `control_template.js` take `TARGET_FIELD` + `CONTROLLER_PROMPT` from the payload (`prep_slice` / `arm_b_control`); no second EN scaffold. `js_field_param_selftest` + `det_gate` EN path; RU 3-card canary fixture still clean. LANG_PARITY `h1209_controller_worker_rig` + `h1210_ab_arm_scaffold` → SHARED.
+
 ## [1.137.8] - 2026-08-03
 ### Fixed
 - **OPT-6 citation coverage single source of truth (H2225, Grok 4.5 `grok-4.5`, 02-08-2026):** `build_citation_index.py` extracts pure `coverage_key` + `coverage_bucket` + shared kernel so `CITATION_SOURCES` / `UNCOVERED_SOURCES` cannot disagree on covered vs truly-uncovered vs non-coordinate labels. Labels no longer inflate distinct-ref `unresolved`. `python src/build_citation_index.py --selftest` green. [PR #1049](https://github.com/gasyoun/SanskritLexicography/pull/1049).
