@@ -10,6 +10,11 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.120.0] - 2026-08-02
+
+### Fixed
+- **Overlay-preserving promote + store-writer lock discipline (H2146, 02-08-2026, Fable 5 `claude-fable-5`):** closes the two [integrity] exposures from the H2025 audit ([#976](https://github.com/gasyoun/SanskritLexicography/issues/976), FINDINGS §513). (1) `merge_store_rows` and the full-rebuild (supersede) path now PRESERVE human-touched store rows — named `reviewer`, non-`ai_*` `review_status`, or an `editorial_decision*` stamp — refusing machine replacement unless the new explicit `--override-reviewed` is passed; the coordinator batch lane fails the bundle loudly on a protected subcard; the clean-subset (`ready_partial`) lane preserves unconditionally. (2) All 17 non-promote store writers (9 `annotate_*`, `backfill_tn_residue`, `mark_reconstructed_headwords`, `ru_style_sweep`, `apply_editorial_decisions`, `repair_h178_da_cards`, 3 pilot `fix_*`) now write through the new shared [`src/store_write.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/store_write.py) `locked_store_rewrite` — `PromoteClaim` held across the read-guard-write window + unique fsynced backup + atomic LF-only replace — ending the last-writer-wins seam against a concurrent promote (7 of them previously rewrote the store IN PLACE with a fixed backup name). Selftests: `window_selftest` 198/198 (incl. parity ledger re-derived, INTENTIONAL-DIVERGENCE stands, 0 language-keyed tokens in the diff), `promote_final_cards --selftest` with new overlay fixtures (approved/needs_review/editorial each protect; override lands; siblings still merge; `ClaimBusy` under a held claim), `store_write --selftest`, `promote_en --selftest`.
+
 ## [1.119.0] - 2026-08-01
 
 ### Added

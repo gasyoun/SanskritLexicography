@@ -36,6 +36,7 @@ if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
 from store_path import canonical_store  # noqa: E402
+from store_write import locked_store_rewrite  # noqa: E402
 
 SCHEMA = 'pwg_ru.editorial_apply.v1'
 ENV_ALLOW_APPLY = 'PWG_RU_ALLOW_EDITORIAL_APPLY'
@@ -237,16 +238,15 @@ def apply_stamps(
             written += 1
         out_lines.append(json.dumps(row, ensure_ascii=False))
 
-    tmp = store_path + '.editorial.tmp'
-    with open(tmp, 'w', encoding='utf-8', newline='\n') as f:
-        f.write('\n'.join(out_lines))
-        if out_lines:
-            f.write('\n')
-    os.replace(tmp, store_path)
+    # H2146: THE overlay writer gets the full discipline — PromoteClaim + unique fsynced
+    # backup + atomic replace. The old fixed '.editorial.tmp' was unlocked, unbacked-up
+    # and shared between concurrent runs (FINDINGS §513).
+    backup = locked_store_rewrite(store_path, out_lines, tag='editorial')
     return {
         'status': 'applied',
         'written': written,
         'store_path': store_path,
+        'backup': backup,
     }
 
 

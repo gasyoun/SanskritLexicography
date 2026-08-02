@@ -36,6 +36,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 from build_dcs_freq import norm_lemma, sandhi_key   # canonical normalizer + sandhi joiner
+from store_write import locked_store_rewrite
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FREQ = os.path.join(HERE, 'dcs_freq.json')
@@ -187,11 +188,9 @@ def main():
     if args.dry_run:
         print('\n(dry run — store not written)')
         return
-    if not args.no_backup:
-        os.replace(args.store, args.store + '.prefreq.bak')
-    with open(args.store, 'w', encoding='utf-8') as f:
-        for r in rows:
-            f.write(json.dumps(r, ensure_ascii=False) + '\n')
+    # H2146: locked (PromoteClaim) + unique fsynced backup + atomic replace — the old
+    # in-place rewrite was unlocked and left a truncated store on crash (FINDINGS §513).
+    locked_store_rewrite(args.store, rows, tag='prefreq', no_backup=args.no_backup)
     print('\nwrote annotated store -> %s' % args.store)
 
 

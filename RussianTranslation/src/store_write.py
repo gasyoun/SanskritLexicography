@@ -1,0 +1,146 @@
+#!/usr/bin/env python
+"""H2146 — the ONE sanctioned rewrite path for canonical sense stores.
+
+Before this module, only the promote entry points held ``PromoteClaim`` while
+rewriting ``pwg_ru_translated.jsonl``; 17 non-promote mutators (the annotate_*
+family, the pilot fix_*/repair_* scripts, ru_style_sweep, backfill_tn_residue,
+mark_reconstructed_headwords, apply_editorial_decisions) wrote the same file
+with no lock — a mutator run concurrent with a promote was last-writer-wins
+(FINDINGS §513). Seven of them also rewrote the store IN PLACE (truncate-then-
+write, a crash leaves the live file half-written), and several kept a FIXED
+backup name each run overwrote.
+
+``locked_store_rewrite`` gives every mutator the same guarantees the promote
+path already has:
+
+  1. ``PromoteClaim`` held across the whole read-guard-write window (TTL lock,
+     ``ClaimBusy`` raised loudly when a promote/mutator is already in flight);
+  2. a UNIQUE fsynced backup copy per run (O_EXCL — never overwrites a prior
+     recovery artifact);
+  3. an atomic replace: fsynced temp file in the store's own directory, then
+     ``os.replace`` (the store is never observable half-written);
+  4. LF-only bytes (``newline='\\n'`` semantics via binary write) — the
+     in-place writers opened text-mode without ``newline=`` and so emitted
+     CRLF on Windows (the §262 class).
+
+Serialization defaults to each mutator's existing form —
+``json.dumps(row, ensure_ascii=False)`` — so a retrofit changes no payload
+bytes, only locking, backup and atomicity.
+"""
+import json
+import os
+import sys
+import tempfile
+import uuid
+
+from promote_lock import PromoteClaim, ClaimBusy, DEFAULT_TTL_SECONDS  # noqa: F401
+
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+
+
+def unique_backup_path(store, tag):
+    """Collision-resistant per-run backup name (never a fixed suffix)."""
+    import datetime
+    stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S.%fZ')
+    return '%s.%s.%s.p%d.%s.bak' % (store, tag, stamp, os.getpid(), uuid.uuid4().hex[:12])
+
+
+def _fsynced_backup(source, destination):
+    """Exclusive fsynced copy; refuses to overwrite a prior recovery artifact."""
+    import shutil
+    fd = os.open(destination, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+    try:
+        with open(source, 'rb') as src, os.fdopen(fd, 'wb') as dst:
+            fd = None
+            shutil.copyfileobj(src, dst, length=1024 * 1024)
+            dst.flush()
+            os.fsync(dst.fileno())
+    except BaseException:
+        if fd is not None:
+            os.close(fd)
+        try:
+            os.unlink(destination)
+        except FileNotFoundError:
+            pass
+        raise
+
+
+def locked_store_rewrite(store, rows, tag, no_backup=False, steal_lock=False,
+                         ttl_seconds=None, serialize=None):
+    """Locked + backed-up + atomic full rewrite of ``store`` with ``rows``.
+
+    ``rows`` is an iterable of dicts (or pre-serialized strings when
+    ``serialize`` is ``str``); ``tag`` names the mutator in the backup filename
+    (e.g. ``'precite'``). Returns the backup path, or ``None`` when no backup
+    was taken (fresh store or ``no_backup``). Raises ``ClaimBusy`` when a
+    promote or another mutator holds the store claim — callers must NOT catch
+    it silently.
+    """
+    serialize = serialize or (lambda row: json.dumps(row, ensure_ascii=False))
+    ttl_kwargs = {'ttl_seconds': ttl_seconds} if ttl_seconds else {}
+    bak = None
+    with PromoteClaim(store, steal=steal_lock, **ttl_kwargs):
+        if not no_backup and os.path.exists(store):
+            bak = unique_backup_path(store, tag)
+            _fsynced_backup(store, bak)
+        directory = os.path.dirname(os.path.abspath(store)) or '.'
+        os.makedirs(directory, exist_ok=True)
+        fd, tmp = tempfile.mkstemp(prefix='.%s.' % os.path.basename(store),
+                                   suffix='.tmp', dir=directory)
+        try:
+            with os.fdopen(fd, 'wb') as fh:
+                for row in rows:
+                    line = row if isinstance(row, str) else serialize(row)
+                    fh.write(line.encode('utf-8') + b'\n')
+                fh.flush()
+                os.fsync(fh.fileno())
+            os.replace(tmp, store)
+        except BaseException:
+            try:
+                os.unlink(tmp)
+            except FileNotFoundError:
+                pass
+            raise
+    return bak
+
+
+def selftest():
+    import tempfile as _tf
+    d = _tf.mkdtemp()
+    store = os.path.join(d, 'store.jsonl')
+    rows = [{'subcard': 'x~~a', 'ru': 'старый'}, {'subcard': 'y~~a', 'ru': 'row2'}]
+
+    # Fresh store: no backup, exact LF payload bytes.
+    bak = locked_store_rewrite(store, rows, tag='t1')
+    assert bak is None, 'fresh store must not fabricate a backup'
+    payload = open(store, 'rb').read()
+    assert payload == b''.join(
+        (json.dumps(r, ensure_ascii=False) + '\n').encode('utf-8') for r in rows), \
+        'payload bytes must match the historical mutator serialization, LF-only'
+
+    # Rewrite: unique backup holds the prior bytes; two runs -> two backups.
+    bak1 = locked_store_rewrite(store, rows[:1], tag='t1')
+    bak2 = locked_store_rewrite(store, rows, tag='t1')
+    assert bak1 and bak2 and bak1 != bak2, 'backup names must be unique per run'
+    assert open(bak1, 'rb').read() == payload, 'backup must hold the pre-rewrite bytes'
+
+    # A held PromoteClaim blocks the rewrite loudly (never last-writer-wins).
+    with PromoteClaim(store):
+        try:
+            locked_store_rewrite(store, rows, tag='t1')
+            raise AssertionError('rewrite under a live claim must raise ClaimBusy')
+        except ClaimBusy:
+            pass
+
+    # Pre-serialized string rows pass through byte-identically.
+    locked_store_rewrite(store, ['{"raw": 1}'], tag='t2', no_backup=True)
+    assert open(store, 'rb').read() == b'{"raw": 1}\n'
+    print('store_write selftest OK')
+
+
+if __name__ == '__main__':
+    if '--selftest' in sys.argv[1:]:
+        selftest()
+    else:
+        sys.exit('usage: python store_write.py --selftest')
