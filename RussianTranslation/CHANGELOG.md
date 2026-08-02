@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed
+- **OPT-6 citation coverage single source of truth (H2225, 02-08-2026, Grok 4.5 `grok-4.5`):** [`build_citation_index.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_citation_index.py) extracts pure `coverage_key` + `coverage_bucket` and a shared `coverage_rows_from_pairs` kernel used by both the distinct-ref path (`CITATION_SOURCES.md`) and occurrence path (`UNCOVERED_SOURCES.md` / `COVERAGE_COMPARISON.md`), so the two reports cannot disagree on covered vs truly-uncovered vs non-coordinate label by construction (CODE_REVIEW 2026-07-04 debt). **Before/after:** CITATION_SOURCES `unresolved` previously = `total − resolved` (labels counted as unresolved debt); after = explicit `unresolved` bucket only, with labels broken out as their own metric — same classifier as UNCOVERED. Pinned by `python src/build_citation_index.py --selftest`. Inventory OPT-6 flipped done.
+
 ## [1.137.7] - 2026-08-03
 
 ### Fixed
