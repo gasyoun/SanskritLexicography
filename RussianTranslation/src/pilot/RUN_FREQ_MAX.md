@@ -1,6 +1,6 @@
 # Runbook — frequency queue on the headless CLI (manifest v2)
 
-_Created: 09-07-2026 · Last updated: 25-07-2026_
+_Created: 09-07-2026 · Last updated: 02-08-2026_
 
 Goal: scale the PWG→Russian production run in DCS-frequency order, with giant
 roots split into single-pass units and re-glued after translation. This is the
@@ -589,9 +589,17 @@ matters; never reuse H1447's GO a day later.
 | `--max-agents` | **1** is correct **only** for this single-key canary |
 
 Command shape (illustrative): `headless_worker.py <manifest> --output … --status-out …
---only-profile c4 --max-agents 1 --timeout 180` with `CLAUDE_CONFIG_DIR` bound to
+--only-profile c4 --max-agents 1 --timeout 300` with `CLAUDE_CONFIG_DIR` bound to
 the c4 profile. Synthetic output is **never** promoted
 (`provenance_class = synthetic_control`).
+
+> **`--timeout` is part of the ceiling, not just a safety net (#983, 02-08-2026).** The
+> effective per-call bound is `min(--timeout × 1000, budgets.timeout_ceil_ms,
+> HARD_TIMEOUT_MS)`, so passing `--timeout 180` pins the old 3-minute ceiling **even after
+> the constants were raised to 300000** — which is how a paid window returned zero cards
+> with 12 of 16 calls killed at exactly 180 s. A sealed manifest's own
+> `budgets.timeout_ceil_ms` clamps it too and only ever *lowers*, so an artifact prepared
+> before this change must be re-budgeted, not merely re-run.
 
 ### A3 — mechanical LIVE_GO → then stop or spend
 
