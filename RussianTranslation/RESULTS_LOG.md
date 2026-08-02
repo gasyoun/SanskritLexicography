@@ -4,6 +4,38 @@ _Created: 09-07-2026 · Last updated: 02-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 02-08-2026 (300 s re-run) — the ceiling relaxation is VALIDATED for the heal lane and REFUTED for the whole-card lane
+
+Opus 5 1M (`claude-opus-5[1m]`), run `h1447-m50-2026-08-02b` on c4 after
+[v1.128.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.128.0) raised the
+per-call ceiling 180 s → 300 s and the five prepared artifacts were re-budgeted. **Run stopped
+externally after 4 calls**, so w1 is incomplete — but the calls it did make settle the question.
+
+### Same two calls, both ceilings
+
+| call | 180 s run | 300 s run | verdict |
+|---|---|---|---|
+| `translate b0` | killed at **180 044 ms** | killed at **300 073 ms** | **hangs at ANY ceiling** |
+| `heal:nakzatra#g1` | 120 375 ms ✓ | 82 459 ms ✓ | completes; huge variance |
+| `heal:nakzatra#g2` | 134 511 ms ✓ | **176 952 ms ✓** | **3 048 ms of margin under the old ceiling** |
+
+**Validated for the heal lane.** `g2` returning at 176 952 ms is the proof: under the old
+180 000 ms bound that call had **three seconds** to spare. Across the two runs the same heal
+groups ranged 82–120 s and 134–177 s, so the lane's upper tail was being systematically killed
+by a ceiling it had outgrown — exactly the failure the relaxation targeted.
+
+**Refuted for the whole-card lane, and this corrects the earlier entry's framing.** The
+180 s-run diagnosis read "12 of 16 calls die at the ceiling" as "the ceiling is slightly too
+tight". For `b0` that is false: it died at 180 044 ms and then at 300 073 ms, converging on
+neither. It is a **non-terminating call**, and for that lane a higher ceiling strictly
+*increases* waste — 300 s burned per dead attempt instead of 180 s. The whole-card hang is a
+separate, still-unfixed defect and should not be filed under the ceiling fix.
+
+Cost: `g2` alone billed **$0.8850**; 646 904 tokens across the 2 evaluable calls; recorded floor
+$1.3182 with `cost_evaluable=false` (one 300 s dead call contributes 0).
+
+⚠️ Raw ledger is gitignored (`.gitignore:67`) — this table is the only committed copy.
+
 ## 02-08-2026 (later still) — the cache prefix is UNSTABLE, not expiring: a second identical call re-creates what the first just wrote
 
 Opus 5 1M (`claude-opus-5[1m]`), follow-on to the H2152 audit. **4 paid calls, $1.0469, no

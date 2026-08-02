@@ -10,6 +10,12 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added
+- **The CLI child now spawns from a bare cwd, not the repo (02-08-2026, Opus 5 1M `claude-opus-5[1m]`, H2158/[#983](https://github.com/gasyoun/SanskritLexicography/issues/983)):** v1.127.0 measured the win (**−33 % cost, −30 % wall clock**) but made no code change. `proc_tree.run_tree_kill` had always accepted `cwd` and passed it to `Popen` — nothing ever supplied one, so the child silently inherited the repo and paid CLAUDE.md + git-state injection (~11–17 k volatile prefix tokens) on **every** call. New `bare_cli_cwd()` returns a **stable** directory (a fresh one per call would re-break the very prefix this stabilises) and **fails safe**: if the candidate still sits inside a git repo or under a `CLAUDE.md` it returns `None` and the historical inherited-cwd behaviour is kept, rather than silently spawning from a directory that still injects context. Pinned by `headless_worker_selftest.test_cli_spawns_from_a_bare_cwd`, which asserts both halves — that a cwd is passed at all, and that what it points at carries no `CLAUDE.md` and no `.git`. The wall-clock half matters beyond cost: a 30 % shorter call is 30 % more headroom against the ceiling.
+
+### Fixed
+- **The 300 s ceiling is validated for the heal lane and refuted for the whole-card lane (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** re-run `h1447-m50-2026-08-02b` after [v1.128.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.128.0), stopped externally after 4 calls but decisive. `heal:nakzatra#g2` returned at **176 952 ms** — **3 048 ms inside the old 180 000 ms bound** — and the same heal groups ranged 82–120 s and 134–177 s across the two runs, so the lane's upper tail was genuinely being killed by an outgrown ceiling. **But `translate b0` died at 180 044 ms and then at 300 073 ms**, converging on neither: it is a **non-terminating call**, not a marginally slow one, so for the whole-card lane a higher ceiling strictly *increases* waste (300 s burned per dead attempt instead of 180 s). This corrects the previous entry's framing, which read all 12 timeouts as one phenomenon. The whole-card hang is a separate, still-unfixed defect. Table: [`RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md).
+
 ## [1.129.0] - 2026-08-02
 
 ### Fixed

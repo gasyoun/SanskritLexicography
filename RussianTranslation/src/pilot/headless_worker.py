@@ -11,6 +11,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -57,6 +58,49 @@ EXIT_CONTENT = 24
 # (8 min) this replaced. Must stay in step with `gen_opt_harness2.KILL_CEIL_MS`: the JS
 # harness kills from the inside, so raising only this constant is inert.
 HARD_TIMEOUT_MS = 300000
+
+# H2158 (#983, 02-08-2026): spawn the CLI from a BARE directory, not the repo.
+#
+# v1.127.0 measured why every call re-creates its cache: the prompt prefix is a stable ~29 k
+# core plus a VOLATILE ~49 k segment that is re-written every call, and project-context
+# injection (CLAUDE.md + git state) is what makes it volatile -- worth ~11-17 k tokens per
+# call. Measured back-to-back on identical `--max-turns 1` calls: repo cwd $0.3036 / 26-29 s
+# vs bare cwd $0.2040 / 19-20 s, i.e. **-33 % cost and -30 % wall clock**, and the only
+# cross-call cache reuse in the whole experiment appeared in the bare arm (read +5 553 /
+# create -5 553, exactly complementary).
+#
+# The wall-clock half is why this sits next to HARD_TIMEOUT_MS rather than in a cost note: a
+# 30 % shorter call is 30 % more headroom against the ceiling that killed 12 of 16 calls.
+# `proc_tree.run_tree_kill` already accepted `cwd` and passed it to Popen -- nothing ever
+# supplied one, so the child silently inherited the repo.
+#
+# The directory is STABLE (not per-call): a fresh temp dir per call would give the model a
+# different cwd string each time and re-break the very prefix this is stabilising.
+BARE_CLI_CWD_NAME = 'pwg_ru_cli_cwd'
+
+
+def bare_cli_cwd():
+    """A stable, empty, project-context-free directory to spawn the CLI from.
+
+    Fails SAFE: if the candidate would still sit inside a git repo or under a CLAUDE.md, this
+    returns None and the caller keeps the historical inherited-cwd behaviour. Silently
+    spawning from a directory that still injects project context would reintroduce the cost
+    without any signal that it had.
+    """
+    path = os.path.join(tempfile.gettempdir(), BARE_CLI_CWD_NAME)
+    try:
+        os.makedirs(path, exist_ok=True)
+    except OSError:
+        return None
+    probe = os.path.abspath(path)
+    while True:
+        if (os.path.exists(os.path.join(probe, 'CLAUDE.md'))
+                or os.path.exists(os.path.join(probe, '.git'))):
+            return None
+        parent = os.path.dirname(probe)
+        if parent == probe:
+            return path
+        probe = parent
 
 
 def claude_argv_prefix(claude_bin):
@@ -557,6 +601,7 @@ class HeadlessEngine:
         if ceil_ms:
             eff_ms = min(eff_ms, int(ceil_ms))
         self.timeout = eff_ms / 1000.0
+        self.cli_cwd = bare_cli_cwd()   # H2158: None => inherit, the historical behaviour
         self.run = runner or run_tree_kill
         self.attempts = []
         self.failures = {}
@@ -647,7 +692,7 @@ class HeadlessEngine:
             self.translate_calls += 1
         try:
             proc = self.run(argv, input=prompt, text=True, encoding='utf-8',
-                            capture_output=True, timeout=self.timeout)
+                            capture_output=True, timeout=self.timeout, cwd=self.cli_cwd)
         except subprocess.TimeoutExpired as exc:
             # A timeout happened after a real spawn. No trustworthy wrapper survived, so count the
             # call and fail closed on cost instead of leaving a paid timeout looking like $0.

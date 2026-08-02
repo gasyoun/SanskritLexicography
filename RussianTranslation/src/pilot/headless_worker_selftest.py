@@ -213,6 +213,30 @@ def test_call_timeout_clamped():
           % (h.HARD_TIMEOUT_MS, h.HARD_TIMEOUT_MS / 1000.0))
 
 
+def test_cli_spawns_from_a_bare_cwd():
+    """H2158 (#983): the CLI child must not inherit the repo cwd.
+
+    v1.127.0 measured that CLAUDE.md + git-state injection is what makes ~49 k of the prompt
+    prefix volatile and re-written every call (-33 % cost / -30 % wall clock when removed).
+    `proc_tree.run_tree_kill` always accepted `cwd`; nothing supplied one, so the child
+    inherited the repo and paid that every call. Pin BOTH halves: a cwd is passed at all, and
+    what it points at carries no project context.
+    """
+    seen = {}
+    def capture_runner(argv, **kwargs):
+        seen['cwd'] = kwargs.get('cwd')
+        return success_runner(argv, **kwargs)
+    execute(manifest(), capture_runner)
+    cwd = seen.get('cwd')
+    assert cwd is not None, 'no cwd passed -- the child inherits the repo (#983/H2158)'
+    assert os.path.isdir(cwd), 'cwd must exist before the spawn: %r' % cwd
+    assert not os.path.exists(os.path.join(cwd, 'CLAUDE.md')), 'cwd injects CLAUDE.md: %r' % cwd
+    assert not os.path.exists(os.path.join(cwd, '.git')), 'cwd injects git state: %r' % cwd
+    repo = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+    assert os.path.abspath(cwd) != repo, 'cwd is the repo itself: %r' % cwd
+    print('  H2158 bare cwd: CLI spawned from %s (no CLAUDE.md, no .git)' % cwd)
+
+
 def test_kill_ceiling_in_step_with_harness():
     """#983: the per-call ceiling lives in TWO places and raising only one is inert.
 
@@ -1593,6 +1617,7 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_h2091_948_infra_stop_is_not_a_content_verdict()
     test_h2091_948_account_refusal_aborts_before_any_bisect()
     test_kill_ceiling_in_step_with_harness()
+    test_cli_spawns_from_a_bare_cwd()
     print('headless_worker_selftest: PASS')
 
 
