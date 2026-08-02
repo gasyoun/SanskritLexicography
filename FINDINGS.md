@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 01-08-2026 (H2025: §513 — path-scoped promote lock + row-count-blind delta gate)_
+_Created: 26-06-2026 · Last updated: 02-08-2026 (H1909: §514 — PWG `R.`/Rāmāyaṇa siglum is edition-ambiguous)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -5214,3 +5214,32 @@ mass (bytes/chars), not just cardinality: identical row counts are compatible wi
 of silent change.
 
 > Fable 5 (`claude-fable-5`) · 01-08-2026 · H2025
+
+### 514. PWG's own `R.` (Rāmāyaṇa) siglum is edition-ambiguous — Arabic vs. Roman book numbers route to different critical editions
+
+**Measured directly against `ls_resolver.generate_href` while building the H1909 NWS
+bare-citation discriminator
+([nws_ls_markup.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/nws_ls_markup.py)).**
+`R.` resolves in PWG's own bibliography and `ls_resolver` accepts more than one locus
+spelling for it — but they are NOT interchangeable:
+
+- `generate_href('pwg', 'R. 1,44,6', '')` → `ramayanaschl` (**Schlegel** edition).
+- `generate_href('pwg', 'R. i,44,6', '')` → `ramayanagorr` (**Gorresio** edition) — same
+  book/chapter/verse, lowercase Roman book number instead of Arabic.
+
+The NWS-layer store cites this convention as uppercase Roman + period-separated locus
+(`'R I.44.6'`), which matches NEITHER accepted form — `href_ramayana`'s regex wants
+`[iv]+[ ,]+` (lowercase, space/comma), so naively normalising the visible Roman numeral to
+Arabic (the standard move for every OTHER PWG siglum, e.g. `ṚV`/`AV` mandala numbers) would
+silently pick the Schlegel edition for a citation whose original spelling gives no signal
+either way. H1909's discriminator deliberately does NOT guess here — 4 such spans (`R
+I.44.6`, `R VII.21.42`, `R II.12.110`, `R III.61.3`) are left as honest residue
+(`residue_no_href`) rather than auto-linked to a possibly-wrong edition.
+
+**Rule:** a siglum resolving in PWG's bibliography + `ls_resolver` accepting SOME locus
+spelling for it is NOT sufficient evidence to auto-normalise a differently-spelled locus for
+the same siglum — check whether the accepted spellings are actually the SAME target first
+(same edition/source), not just "some href exists." `R.`/Rāmāyaṇa is the one measured case in
+this pipeline where they aren't.
+
+> Sonnet 5 (`claude-sonnet-5`) · 02-08-2026 · H1909
