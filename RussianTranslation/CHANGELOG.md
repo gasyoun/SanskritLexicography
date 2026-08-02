@@ -10,6 +10,12 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added
+- **`src/pilot/reservation_timeline.py` — difference the ledger's `time_ns` stamps (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** H2056 Q2 noted `call_reservation.py` persists wall stamps that nothing differences. That gap is load-bearing, because an unevaluable call finalizes through `unevaluable_telemetry()` with no `duration_ms` at all — so its duration exists nowhere else, and "hung to the ceiling" cannot be told from "failed fast". Read-only reporter over an existing ledger; zero paid calls.
+
+### Fixed
+- *(diagnosis, no code change)* **medium50 w1 aborted — the heal lane cannot finish inside its own 3-minute ceiling (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** first paid run since 25-07 produced **zero cards** in 16 calls. Differencing the stamps put **12 of 16 calls at 180 04x–180 23x ms**, i.e. `HARD_TIMEOUT_MS = 180000` hit to the millisecond — a hard-timeout wall, not the §270 rate-limit hang and not content failure. It cannot be tuned at the group level: heal groups are already at the floor (six of `nakzatra`'s eight hold a **single fragment**) and single-fragment calls still time out, because one fragment's heal call burns **199 370 subagent tokens**. Successful calls ran 120.4→164.3 s, i.e. 67 %→**91 %** of budget, so the margin is gone and shrinking. Recorded `$2.1543` is a **floor** ([#949](https://github.com/gasyoun/SanskritLexicography/issues/949)) — the 12 dead calls burned real compute and contributed 0. Measured **~$0.53/call vs the $0.113** `perf_preflight` prices with (4.7×). Raising the ceiling is a human decision: `HARD_TIMEOUT_MS` carries the standing in-code ruling `"NOTHING runs past 3 min (MG)"` (R4/C-15). Table: [`RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md).
+
 ## [1.120.0] - 2026-08-02
 
 ### Fixed

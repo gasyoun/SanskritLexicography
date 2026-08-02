@@ -1,8 +1,69 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 01-08-2026_
+_Created: 09-07-2026 · Last updated: 02-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 02-08-2026 — medium50 w1 aborted: the heal lane cannot finish inside its own 3-minute ceiling
+
+Opus 5 1M (`claude-opus-5[1m]`), live paid run on c4 (`h1447-m50-2026-08-02`), **16 calls,
+run stopped by the operator after 2 of 3 keys, ZERO cards produced**. The first paid PWG→RU
+attempt since 25-07-2026. Health gate had PASSed the same night (entry below); the Step 2
+canary was **not** run, so this window ran on a half-satisfied gate.
+
+### Per-call timeline (`src/pilot/reservation_timeline.py`, new)
+
+| bucket | n | min | median | max |
+|---|---|---|---|---|
+| evaluable | 4 | 120 375 ms | 134 511 ms | 164 266 ms |
+| **UNEVALUABLE** | **12** | 18 845 ms¹ | **180 128 ms** | **180 231 ms** |
+
+¹ the single sub-ceiling row is the in-flight call killed by the operator stop.
+
+**Every other unevaluable call landed at 180 04x–180 23x ms — `HARD_TIMEOUT_MS = 180000`, hit
+to the millisecond.** This is a hard-timeout wall, not the FINDINGS §270 rate-limit hang (a
+throttled CLI hangs *without* returning; these were killed by our own ceiling) and not content
+failure. Route health was fine, exactly as the gate measured.
+
+### Why it cannot be tuned away at the group level
+
+The heal groups are **already at the floor** — splitting further is arithmetically impossible:
+
+| key | groups | fragment sizes |
+|---|---|---|
+| `nakzatra` | 8 | 1, 1, 1, 1, 1, 1, 2, 2 |
+| `sarvatra` | 7 | 1, 1, 1, 1, 1, 1, 3 |
+| `sakft` | 6 | 1, 1, 1, 1, 1, 7 |
+
+Six of `nakzatra`'s eight groups hold a **single fragment**, and single-fragment heal calls
+still time out. The whole-card batches `b0` and `b1` timed out too, so it is not lane-specific.
+The cost is per-call overhead, not content: one heal call for **one fragment** burned
+**199 370 subagent tokens**. Lowering `SELFHEAL_GROUP_BUDGET` therefore cannot fix this.
+
+### The margin is gone, and shrinking
+
+Successful calls: 120.4 s → 132.0 s → 134.5 s → **164.3 s**, i.e. 67 % → **91 %** of the 180 s
+budget. Any call above the median dies. That is the mechanical answer to H818's owner brief
+("1 month, nothing works, I want to start translating").
+
+### Spend
+
+`observed_cost_usd` = **$2.1543** with `cost_evaluable=false` — a **floor, not the spend**
+([#949](https://github.com/gasyoun/SanskritLexicography/issues/949)). The 12 unevaluable calls
+were real paid spawns that each burned up to a full 180 s of subagent compute and contributed
+**0** to that total. 609 106 subagent tokens are recorded across the 4 evaluable calls alone
+(~152 k each). **75 % of the calls, and the majority of real spend, produced nothing.**
+
+Measured per-call cost on the evaluable calls is **~$0.53**, against the `PER_AGENT_USD_HEALTHY
+= $0.113` that `perf_preflight` prices windows with — 4.7×. The preflight put w1 at $0.46.
+
+⚠️ `HARD_TIMEOUT_MS` carries an explicit standing ruling in code — `"NOTHING runs past 3 min
+(MG)"` (R4/C-15) — so raising the ceiling is a human decision, not a tuning fix. The open
+options are all human: relax that ruling, cut per-call overhead (the ~25–30 k framework prompt
+plus subagent scaffolding), or accept partial cards.
+
+⚠️ Raw ledger is gitignored (`.gitignore:67`); this table and the timeline tool are the only
+committed record.
 
 ## 01-08-2026 (later) — the first decomposed c4 readings; c4 auth restored
 
