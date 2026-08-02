@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.121.0] - 2026-08-02
+
 ### Added
 - **`src/pilot/reservation_timeline.py` — difference the ledger's `time_ns` stamps (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** H2056 Q2 noted `call_reservation.py` persists wall stamps that nothing differences. That gap is load-bearing, because an unevaluable call finalizes through `unevaluable_telemetry()` with no `duration_ms` at all — so its duration exists nowhere else, and "hung to the ceiling" cannot be told from "failed fast". Read-only reporter over an existing ledger; zero paid calls.
 
