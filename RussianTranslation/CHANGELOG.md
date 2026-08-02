@@ -10,6 +10,11 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.131.0] - 2026-08-02
+
+### Added
+- **`src/pilot/canary_gate.py` — the canary half of the live gate, as code (H2159, 02-08-2026, Fable 5 `claude-fable-5`):** H2025 audit gap G4 (F-B2/F-B3, the largest non-money gap). The `/pwg-live-gate` canary verdict ("3/3 senses + zero SAN-LOSS/TNMASK") existed only as skill prose — nothing recorded it and `--execute` could not tell whether a gate had run, passed, or run two days ago. `canary_gate.py judge <wf_output> --receipt <path>` now derives GO/NO-GO mechanically (synthetic-key refusal via the promote lane's `SYNTHETIC_KEY_RE`, expected-sense shortfall, unresolved `{Tn}` via the same single-sourced `TN_RE` as the promote C-01 guard, literal SAN-LOSS/UNMAPPED markers) and writes an atomic `pwg.canary_gate_receipt.v1`; `bounded_staged_run.py --execute` now **refuses to start without a fresh (≤6 h) GO receipt for the same profile** (`--canary-receipt`; `--skip-canary-gate` is the explicit command-review-visible escape). Also lands the H2157 `AGENTS.md` paragraph that a case-mismatched path (`Agents.md`) silently dropped from PR #996. Docs synced: `RUN_FREQ_MAX.md`, `AGENTS.md`, `/pwg-live-gate` + `/pwg-bounded-run` skills (claude-config). Pinned by `test_q3_execute_requires_canary_go_receipt_h2159`; `bounded_staged_run_selftest` green, `window_selftest` 199/199, parity 3 entries re-derived (the gate reads `sense['russian']` — the RU-lane canary field — noted explicitly, no `--lang` branch added).
+
 ## [1.130.0] - 2026-08-02
 
 ### Added

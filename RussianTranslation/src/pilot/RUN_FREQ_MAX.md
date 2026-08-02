@@ -624,9 +624,14 @@ python src\pilot\bounded_staged_run.py `
   --events <events.jsonl> --only-profile c4 --max-accounts 1 `
   --max-windows 1 --max-calls <N> --cost-ceiling <USD> --run-id <stable-run-id> `
   --call-reservation <calls.json> --checkpoint <checkpoint.json> `
+  --canary-receipt <canary_receipt.json> `
   --execute --stop-before-promote
 # H2157: --execute now REQUIRES both --max-calls and --cost-ceiling (a paid run
 # refuses to start unbounded); --allow-unbounded is the explicit escape hatch.
+# H2159: --execute now also REQUIRES a fresh canary GO receipt — after the live-gate
+# canary run `python src\pilot\canary_gate.py judge <out.json> --receipt <path>`;
+# verdict/age(≤6h)/profile are validated mechanically. --skip-canary-gate is the
+# explicit escape hatch.
 # No --max-agents 1 on multi-key; clean output stops at AWAITING_REVIEW.
 python src\pilot\audit_window.py wf_output.json --root <root> --write-requeue
 # /pwg-window-close: promote only if bound manifest-v2 + gates green
