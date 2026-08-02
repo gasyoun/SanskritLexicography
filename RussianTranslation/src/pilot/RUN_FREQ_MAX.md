@@ -102,13 +102,20 @@ tracked-file drift and is wired into `window_selftest.py`
   measurement in [`RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md)
   + [Uprava FINDINGS §284](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
 - **Call shape: ONE card per call — and shape is not the lever (H2152, 02-08-2026).** Quota and
-  the 180 s per-call wall bind in **opposite** directions: a quota ceiling penalises *many*
-  calls, a wall-clock ceiling penalises *large* ones. Whichever binds decides the shape, and as
-  of 02-08 it is wall clock, so the small shape wins — which is also what MG's
-  instrument-everything mandate asks for, so the two are not in conflict. `--output-budget=1`
-  is the existing one-card lane; nothing needs building. **Do not flip to batching to save
-  cost:** batching also makes one unevaluable call destroy per-card attribution for *all* N
-  cards in it. Full reasoning: [`pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md).
+  the per-call wall-clock ceiling (`HARD_TIMEOUT_MS`) bind in **opposite** directions: a quota
+  ceiling penalises *many* calls, a wall-clock ceiling penalises *large* ones. Whichever binds
+  decides the shape, and as of 02-08 it is wall clock, so the small shape wins — which is also
+  what MG's instrument-everything mandate asks for, so the two are not in conflict.
+  `--output-budget=1` is the existing one-card lane; nothing needs building. **Do not flip to
+  batching to save cost:** batching also makes one unevaluable call destroy per-card attribution
+  for *all* N cards in it. Full reasoning: [`pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2152/AUDIT_C4_CALL_SHAPE_QUOTA_VS_WALLCLOCK_02.08.2026.md).
+  > **Ceiling status, later the same day: `HARD_TIMEOUT_MS` is now 300 000, and the two lanes
+  > diverged.** The heal lane WAS being killed by an outgrown bound — `heal:nakzatra#g2`
+  > returned at **176 952 ms**, 3 048 ms inside the old 180 000. But `translate b0` died at
+  > 180 044 ms *and* at 300 073 ms, converging on neither: the whole-card lane holds a
+  > **non-terminating** call, so for it a higher ceiling strictly *increases* waste. Do not read
+  > "the ceiling was raised" as "the timeouts are fixed" — that hang is a separate, still-open
+  > defect (v1.130.0).
 - **Live-gate before every paid window:** fresh
   [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
   (representative ≥5 KB health + separate `dq_canary_puregloss`). A previous session's GO
