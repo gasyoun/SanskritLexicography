@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 02-08-2026 (H2153: 17 entries re-derived, verdicts stand — the promote gains a serializer-independent content-mass gate (`refuse_content_mass_shrink`, 10% bound) and the two compact-separator writers (`nws_ls_markup`, `backfill_tn_residue`) converge on the house spaced serialization + the locked writer; 0 language-keyed tokens in the diff, grounds mechanical as before. Previously H2146: `promotion_scripts_separate` re-derived, INTENTIONAL-DIVERGENCE stands — RU merge/supersede now overlay-preserving (`human_touched`, `--override-reviewed`), 17 mutators routed through the shared locked `store_write` writer; EN attach replaces no rows so the wipe class does not arise there. Previously H2118 #946: 6 entries re-derived across 5 files, SHARED stands — the probe latency ceiling is now derived from one table instead of three hard-coded copies, and the policy token carries its own ceiling again. Grounds re-checked mechanically, not asserted: every added line in the diff was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) and **none** appears — the change is language-agnostic dispatch infrastructure that cannot reach the RU/EN split. Previously H2095 #946/#949/#950/#956: 45 entries re-derived, SHARED stands — probe rows carry the ceiling that judged them, `summary()` publishes cost evaluability beside `budget_spent`, the cost-gate calibration question settled with NO constant moved, and the EN auditor exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags, closing the EN twin of #947)_
+_Created: 04-07-2026 · Last updated: 02-08-2026 (H2154: 3 entries re-derived, verdicts stand — the occupied-keys guard fails closed on an unreadable live-job manifest; reads how a JOB is stored, never a target-language field; 0 language-keyed diff tokens. Previously H2153: 17 entries re-derived, verdicts stand — the promote gains a serializer-independent content-mass gate (`refuse_content_mass_shrink`, 10% bound) and the two compact-separator writers (`nws_ls_markup`, `backfill_tn_residue`) converge on the house spaced serialization + the locked writer; 0 language-keyed tokens in the diff, grounds mechanical as before. Previously H2146: `promotion_scripts_separate` re-derived, INTENTIONAL-DIVERGENCE stands — RU merge/supersede now overlay-preserving (`human_touched`, `--override-reviewed`), 17 mutators routed through the shared locked `store_write` writer; EN attach replaces no rows so the wipe class does not arise there. Previously H2118 #946: 6 entries re-derived across 5 files, SHARED stands — the probe latency ceiling is now derived from one table instead of three hard-coded copies, and the policy token carries its own ceiling again. Grounds re-checked mechanically, not asserted: every added line in the diff was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) and **none** appears — the change is language-agnostic dispatch infrastructure that cannot reach the RU/EN split. Previously H2095 #946/#949/#950/#956: 45 entries re-derived, SHARED stands — probe rows carry the ceiling that judged them, `summary()` publishes cost evaluability beside `budget_spent`, the cost-gate calibration question settled with NO constant moved, and the EN auditor exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags, closing the EN twin of #947)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -1121,10 +1121,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "3789b480c7a72cde0b568a2d431d8718746256fc9c7626f3997c753b0dab2cd2",
       "src/pilot/headless_worker.py": "a754caf055c0592013311a299ed9d0d8c7c0c278693a7f583684050de0c52588",
-      "src/pilot/max_account_orchestrator.py": "733902a7410a4a8fce704252386106a2be21c7ffd5f6ab29c3372ffa80fb85ab",
+      "src/pilot/max_account_orchestrator.py": "7815732245d5c095d485e3d382a9865ce7e9fc8c2958299099e4ae695ca79ecb",
       "src/pilot/coordinator.py": "a060e34e1733fb6469653f05bafab2756dfcca026f7324c83c9186808a21f9e6",
       "src/pilot/headless_worker_selftest.py": "d1021cbe0e8263a1246824514b987b5301055259021d81c79ccaaebfce0897c3",
-      "src/pilot/max_account_orchestrator_selftest.py": "13cf76461cca502271eca951354c9bda7da3743d88526d273fb38e8f97c560b8",
+      "src/pilot/max_account_orchestrator_selftest.py": "543d8d2a2eb6e770a324b3e5b7cf6f8d61e12aa66225acdffcee6c124008be23",
       "src/pilot/no_pwg_scale_plan.py": "7e4bb02a2f2865a3447afe47cf1f4106209bdc24f403cb6dd2b8c524b6928d63",
       "src/pilot/windows100_selftest.py": "cb010a7452d1a68fb3a793c3d0ea77d1784eb158d985488cfd09177a1215515d",
       "src/pilot/run_observability.py": "ec64afa551a718aa33894a30b4ce738be1306792465953f60fd485b5b01d9c81",
@@ -1553,7 +1553,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/bounded_staged_run.py": "043a6ec7a29cd36181bf021aafdbe3f2f34e2ca2eddc71c0d4505d13dd45c29a",
       "src/pilot/bounded_supervisor.py": "b90fe5d634b832b1a9ce73d62ce4a19b2d74ceaee5a863f0469b156c9bdecc02",
-      "src/pilot/max_account_orchestrator.py": "733902a7410a4a8fce704252386106a2be21c7ffd5f6ab29c3372ffa80fb85ab"
+      "src/pilot/max_account_orchestrator.py": "7815732245d5c095d485e3d382a9865ce7e9fc8c2958299099e4ae695ca79ecb"
     }
   },
   {
@@ -1714,7 +1714,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/bounded_staged_run.py": "043a6ec7a29cd36181bf021aafdbe3f2f34e2ca2eddc71c0d4505d13dd45c29a",
       "src/pilot/bounded_supervisor.py": "b90fe5d634b832b1a9ce73d62ce4a19b2d74ceaee5a863f0469b156c9bdecc02",
-      "src/pilot/max_account_orchestrator.py": "733902a7410a4a8fce704252386106a2be21c7ffd5f6ab29c3372ffa80fb85ab",
+      "src/pilot/max_account_orchestrator.py": "7815732245d5c095d485e3d382a9865ce7e9fc8c2958299099e4ae695ca79ecb",
       "src/pilot/translation_memory.py": "e5014c7a872ca6c89458a052690de45576fae15e09094be72bfa7aa30b1d0b76",
       "src/pilot/coordinator.py": "a060e34e1733fb6469653f05bafab2756dfcca026f7324c83c9186808a21f9e6",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
