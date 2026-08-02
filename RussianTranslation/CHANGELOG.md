@@ -10,10 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
-## [1.137.8] - 2026-08-03
-
 ### Fixed
-- **OPT-6 citation coverage single source of truth (H2225, 02-08-2026, Grok 4.5 `grok-4.5`):** [`build_citation_index.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_citation_index.py) extracts pure `coverage_key` + `coverage_bucket` and a shared `coverage_rows_from_pairs` kernel used by both the distinct-ref path (`CITATION_SOURCES.md`) and occurrence path (`UNCOVERED_SOURCES.md` / `COVERAGE_COMPARISON.md`), so the two reports cannot disagree on covered vs truly-uncovered vs non-coordinate label by construction (CODE_REVIEW 2026-07-04 debt). **Before/after:** CITATION_SOURCES `unresolved` previously = `total − resolved` (labels counted as unresolved debt); after = explicit `unresolved` bucket only, with labels broken out as their own metric — same classifier as UNCOVERED. Pinned by `python src/build_citation_index.py --selftest`. Inventory OPT-6 flipped done. [PR #1049](https://github.com/gasyoun/SanskritLexicography/pull/1049).
+- **OPT-7 TM last-audit defect invalidation (H2228, 02-08-2026, Grok 4.5 `grok-4.5`):** residual hardening beyond defect-requeue `--no-tm` (FINDINGS §31). New `translation_memory.stamp_denylist_from_last_audit` stamps card + fragment denylist rows with `last_audit_outcome=defect` at **audit write-requeue** time (`window_reports.write_reports` RU + `audit_window_en --write-requeue` EN), so a default `--tm=auto` path cannot silently re-serve failed content when the operator skips `--no-tm`. Controls: defect keys only (never transient); crashed audits refuse stamp (B11); ephemeral/temp out_dir uses local denylist only (no live sidecar poison); clean held-out keys still serve; promote still unblocks. `requeue_from_audit.append_tm_denylist` delegates to the same stamp. Fixture `test_opt7_last_audit_tm_refuse_without_no_tm` (gam-class). LANG_PARITY `defect_fragment_denylist_h304` + `requeue_no_tm_enforcement` re-stamped SHARED; sibling hash refresh after touch.
 
 ## [1.137.7] - 2026-08-03
 
