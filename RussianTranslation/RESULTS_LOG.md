@@ -4,6 +4,171 @@ _Created: 09-07-2026 · Last updated: 02-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 02-08-2026 (H2160) — `b0` was never non-terminating: it was killed BY US at exactly the ceiling, because a per-card presplit floor was masked by the batch budget
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2160](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2160-Opus_RussianTranslation_whole-card-b0-hang-and-medium50-completion_02.08.26.md).
+**2 paid calls (the health probe only), $0.9459. No canary, no window, no store write** — the
+live gate returned NO-GO before any translation call (below). The entire `b0` diagnosis below
+is **offline**, from the two committed 02-08 ledgers plus the harness source.
+
+### The `b0` verdict — three prior framings corrected
+
+**1. `b0` is not a 3-key batch.** The handoff and the earlier entries assumed the whole-card
+call batches all three w1 cards. The manifest says otherwise: w1 holds **three separate
+1-key batches**, and `b0` is `nakzatra` **alone** — 80 citation-units, 5 495 B skeleton, 10
+fragments. So "does a 1-key whole-card batch terminate?" was already answered by the data:
+`b0` **is** the 1-key case. Batch size is not the variable.
+
+**2. The `b0` kill is OUR kill, and it fires at exactly `KILL_CEIL_MS`.** A single-card batch
+is granted the ceiling unconditionally — [`killBudgetForCur`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py),
+`cur.length === 1 ? KILL_CEIL_MS : killBudgetMs(...)` — so `b0`'s budget IS the ceiling,
+whatever the ceiling is set to. That is why it "converged on no bound":
+
+| ceiling | `b0` died at | overshoot |
+|---|---|---|
+| 180 000 ms | 180 044 ms | +44 ms |
+| 300 000 ms | 300 073 ms | +73 ms |
+
+The overshoot is `setTimeout` dispatch latency, not provider behaviour. **`b0` has never been
+allowed to run to completion, so it has never been observed to hang.** "Non-terminating" was
+an inference from a gate that was re-firing at its own new value.
+
+**3. It is not a whole-card-lane property at all — the heal lane hit the identical wall.** The
+180 s run's full ledger, which the "heal works / whole-card hangs" framing was drawn from:
+
+| # | detail | evaluable | wall ms |
+|---|---|---|---|
+| 1 | `translate b0` | NO | 180 044 |
+| 2 | `heal:nakzatra#g1` | yes | 120 375 |
+| 3 | `heal:nakzatra#g1.retry1` | NO | 180 041 |
+| 4 | `heal:nakzatra#g2` | yes | 134 511 |
+| 5 | `heal:nakzatra#g2.retry1` | NO | 180 040 |
+| 6–8 | `heal:nakzatra#g3` · `#g4` · `#g5` | NO | 180 148 · 180 176 · 180 102 |
+| 9 | `heal:nakzatra#g6` | yes | 132 042 |
+| 10 | `heal:nakzatra#g6.retry1` | NO | 180 231 |
+| 11–12 | `heal:nakzatra#g7` · `#g8` | NO | 180 138 · 180 076 |
+| 13 | `translate b1` | NO | 180 134 |
+| 14 | `heal:sarvatra#g1` | NO | 180 128 |
+| 15 | `heal:sarvatra#g2` | yes | 164 266 |
+| 16 | `heal:sarvatra#g2.retry1` | NO | 18 845 (run stopped) |
+
+**11 of 16 calls died at 180 0xx–180 2xx ms, and only ONE of them was whole-card.** Five of
+`nakzatra`'s eight heal groups and all three retries died on the same gate. The heal lane was
+not working — it was succeeding 3 times in 11 and being read as healthy. Both lanes saturate
+the ceiling because `killBudgetMs = 2·(20 000 + 45·B)` clamps to CEIL for any payload above
+~1.6 KB (old ceiling) / ~2.9 KB (new): **every call in these windows runs on a flat ceiling
+budget**, so the gate provides no differentiation and a ceiling change moves every death at once.
+
+### Independently corroborated by H2011, from the opposite direction — and it bounds this fix
+
+[H2011](#02-08-2026-h2011-at-the-old-180-s-ceiling--c4-gate-pass-canary-pass-and-the-first-per-card-observed-economics-on-the-production-route)
+ran the same morning and reached the same place by spending instead of reading. Its decisive
+control: **calls 2–4 were the *identical* fragment `rAtra_f0`, at 180.0 / 180.1 / 142.6 s
+success.** Same input, same lane, same profile — three outcomes. Held against this entry's
+finding that the deaths land at exactly `KILL_CEIL_MS` whatever it is set to, the two runs pin
+the phenomenon between them:
+
+> **The wall is our ceiling meeting a heavy right tail.** Not a lane (whole-card vs heal), not
+> card size, not the provider hanging. A fixed ceiling clips the tail of a highly variable
+> latency distribution, and moving the ceiling moves the clip.
+
+`rAtra` is also the sharpest available check on card size: at **2 418 B it is the smallest real
+card in the set**, and H2011 spent **682 755 ms and 4 calls** on it for one partial card. So the
+morning's "16 calls, 0 cards" reproduces at the floor.
+
+**This bounds the fix below.** Routing citation-heavy cards away from a doomed whole-card attempt
+is worth doing — it stops paying ceiling-length calls for a card that was never going to fit —
+but the fragments it routes them into are drawn from the same distribution, and H2011 measured a
+~75 % kill rate on one small card's fragments. **The presplit correction is necessary, not
+sufficient**, and it should not be reported as "the zero-card problem is fixed" until a window
+lands cards. Two further consequences worth carrying: `rAtra` (33 units) is one of the four cards
+this fix deliberately leaves whole-card, so those four are *below the citation threshold*, not
+*proven safe*; and H2011's Step 1 PASS at **43 815 ms** sits ~23 minutes before this entry's
+NO-GO at **75 586 ms** — a 1.7× swing in the gating number itself, which is the same variance
+arriving in the gate.
+
+### The actual defect: a per-card threshold masked by a per-batch one
+
+`_presplit_hit` routed a card to the fragment lane when
+
+```
+(1 + <ls>) > max(OUTPUT_BUDGET, PRESPLIT_SOLO_CITE_FLOOR)      # 90 vs 40
+```
+
+`PRESPLIT_SOLO_CITE_FLOOR = 40` is a per-**card** fail-solo fact (its own comment: "well above
+the whole-card-safe 34 and below the 150 giants"). `OUTPUT_BUDGET = 90` is a per-**batch**
+packing cap. Taking the `max()` let the batch number mask the card number, so the floor was
+inert at every default run — the source said so outright: *"For OUTPUT_BUDGET >= 40 (default 90)
+nothing changes."*
+
+w1's three cards sit exactly in the gap this opened:
+
+| card | citation-units | skeleton B | fragments | > floor 40 | > budget 90 | presplit before | after |
+|---|---|---|---|---|---|---|---|
+| `nakzatra` | 80 | 5 495 | 10 | ✅ | ❌ | no | **yes** |
+| `sarvatra` | 79 | 3 008 | 9 | ✅ | ❌ | no | **yes** |
+| `sakft` | 75 | 3 318 | 12 | ✅ | ❌ | no | **yes** |
+
+All three were above the threshold that says a card cannot be emitted whole, all three below
+the unrelated batch cap — so `presplit_keys` came out `[]`, all three were attempted whole, and
+all three whole-card attempts were killed at the ceiling. **A card is not made easier to emit
+whole by raising the number of cards you would have liked to batch beside it.**
+
+Fix: the citation trigger now compares against `PRESPLIT_SOLO_CITE_FLOOR` and nothing else
+(`OUTPUT_BUDGET` remains the on/off switch for citation mode). RED-verified pin
+`test_presplit_cite_floor_is_not_masked_by_batch_budget` — RED on pre-fix master with the exact
+observed `PRESPLIT=[]`.
+
+### Re-planning all five windows on the fixed predicate
+
+Regenerated with [`h2160_regen_medium50.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2160_regen_medium50.py)
+(same invocation the coordinator's `prepare` uses, every argument read back out of the existing
+manifest; `config_dir_fingerprint` verified unchanged on all five):
+
+| window | presplit before | presplit after | whole-card batches left | keys still whole-card |
+|---|---|---|---|---|
+| w1 | 0 | **3** | 0 | — |
+| w2 | 4 | **12** | 0 | — |
+| w3 | 3 | **9** | 1 | `rAtra` (33) · `spfS` (30) |
+| w4 | 2 | **9** | 1 | `idAnIm` (36) · `prasU` (31) |
+| w5 | 1 | **11** | 0 | — |
+| **total** | **10 / 48** | **44 / 48** | **2** | 4 keys, all ≤ 40 units |
+
+The boundary behaves: the only four cards still attempted whole are the only four scoring at or
+below the 40-unit fail-solo floor. Gates: `window_selftest` **200/200** (199 baseline + the new
+pin), `lang_parity_check` **90 entries, all verdicts complete, no drift** (52 entries re-stamped
+— both touched files are hash-tracked; the one functional line changed is language-blind, so
+every SHARED/INTENTIONAL-DIVERGENCE verdict stands on unchanged structural grounds).
+
+### The live gate said NO-GO, so the fix is UNPROVEN in production
+
+`/pwg-live-gate` Step 1, `h963_c4_gate0_probe.py`, run `…2026-08-02T07:44:28Z-pid35600`:
+
+| purpose | wall ms | `duration_ms` | `duration_api_ms` | USD | classification |
+|---|---|---|---|---|---|
+| warm-up | 236 358 | 53 300 | 43 646 | $0.5953 | success |
+| measured | **75 586** | 38 179 | **29 069** | $0.3506 | success |
+
+`GATE-0 VERDICT: NO-GO` — measured 75 561 ms ≥ the 65 000 ms `STRICT_CEILING_MS`. Policy is
+unambiguous ("STOP. No canary. No production window. No reroll."), so **no canary was built and
+no translation call was made**; the c4-bound canary manifest the previous two windows lacked is
+still not built, and that gap is now moot until health passes. The presplit route is therefore
+**implemented and gated but not yet demonstrated live** — proving it needs one w1 window after a
+fresh health PASS.
+
+⚠️ **Gate prose and gate code disagree about which number gates, and it decided this run.** The
+skill text says "Gate on `duration_api_ms`"; `probe_log.derive_fails` gates on the measured
+**wall** reading. On this run wall 75 586 ms fails and `duration_api_ms` 29 069 ms passes
+comfortably — the same reading is NO-GO or GO depending on which of the two the operator
+believes. The measured NO-GO is recorded as the verdict and **was not overridden** (re-reading
+the gate on the friendlier number would be weakening a guard to pass it). Filed as a residual,
+not fixed here.
+
+⚠️ The 02-08 whole-card cost figures elsewhere in this log stand, but note the corrected
+attribution: a `b0` "hang" is a call **we abandoned**, so its cost is billed and unrecoverable
+while contributing $0 to the ledger (issue [#949](https://github.com/gasyoun/SanskritLexicography/issues/949)).
+Raising the ceiling raised that waste per dead call from 180 s to 300 s without changing any outcome.
+
 ## 02-08-2026 (300 s re-run) — the ceiling relaxation is VALIDATED for the heal lane and REFUTED for the whole-card lane
 
 Opus 5 1M (`claude-opus-5[1m]`), run `h1447-m50-2026-08-02b` on c4 after
