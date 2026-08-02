@@ -41,6 +41,7 @@ ENV_LAYOUT = {
     'PWG_OUTPUT_DIR': 'gatelogs',
     'PWG_ECONOMY_LOG': 'telemetry/generation_api_probe_log.jsonl',
     'PWG_COORDINATOR_DIR': 'manifests/coordinator',
+    'PWG_PARKED_DIR': 'parked',
 }
 
 # directories a lane is allowed to create on first use (never the store file itself:
