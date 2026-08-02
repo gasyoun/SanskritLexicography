@@ -47,7 +47,13 @@ row and open a PR that re-syncs this file — do not invent a third copy.
    loop overhead collapses (unmeasured until the API arm runs).
 6. **1 h cache writes bill at 2× base ($6/M), not the 5 m table ($3.75).**
    `PRICE['cache_write']` is the 5 m rate; pricing 1 h writes at 5 m understates
-   CLI cost by ~1.6×.
+   CLI cost by ~1.6×. **Shipped 02-08-2026 (H2190):** `parse_workflow_cost` now
+   carries `cache_write_5m` / `cache_write_1h` derived from `PRICE['input']`,
+   plus `cache_write_rate(ttl)`, `split_cache_creation()` and
+   `usage_cost(usage, unknown_ttl=…)`. Reporting keeps the 5 m fallback for
+   TTL-less legacy envelopes (history stays put); **cost gates must pass
+   `unknown_ttl='1h'`** and fail closed. Pinned against the vendor's own
+   `modelUsage.costUSD` on the committed `nakzatra` envelope.
 
 ---
 
@@ -76,7 +82,7 @@ prefix that can exceed **100 k** once profile context is included.
 | 0 | **Bare cwd** for every headless spawn | ✅ Shipped | −33 % cost / −30 % wall on fixed overhead | none — already in `bare_cli_cwd()` |
 | 1 | **Minimal headless profile** (no operator global `CLAUDE.md`) | 🟡 Open | Kill remaining ~global-prefix tax + stop profile rules overriding task text | [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md) |
 | 2 | **Messages API + explicit `cache_control` (1 h)** on stable prefix | 🟡 Open — Phase 1 CLI measured; API arm needs credential | Turn create→read on framework; typed HTTP failures; optional single-completion output cut | [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md) |
-| 3 | **Dual-rate cost tools** (`cache_write_5m` + `cache_write_1h`) | 🟡 Open | Stop understating CLI bills 1.6×; honest GO/NO-GO | [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) |
+| 3 | **Dual-rate cost tools** (`cache_write_5m` + `cache_write_1h`) | ✅ Shipped 02-08-2026 | Stopped understating CLI bills 1.6× ($0.6967 computed vs $0.8005 billed on `nakzatra`) | [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) · [PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032) |
 | 4 | **Stable prefix reorder** (`preamble` → `translation` → `grammar` before card) | 🟡 Open adjunct | Longer left-stable head for any partial prefix match; **not** lean-TR | [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md) |
 | 5 | TM / frag-TM / fewer agent calls | ✅ Standing | Zero-call reuse where hashes match | existing pipeline |
 | 6 | Presplit group budget (60 cite / 18 sense) | ✅ Shipped post-pril10 | Fewer framework re-caches on fragment lane | `gen_opt_harness2.py` |
@@ -118,13 +124,17 @@ If a spawn still inherits the repo, that is a **bug fix**, not a research topic.
   **output** collapses on single-completion API, (3) failure-class (429 vs hang).
 - **Do not** flip production route inside H2158 without human GO.
 
-### Step D — Dual-rate pricing → [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md)
+### Step D — Dual-rate pricing → ✅ [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md), shipped 02-08-2026
 
-- Extend `parse_workflow_cost.PRICE` (and consumers) so 1 h writes are not
-  priced as 5 m.
-- Emit both figures side-by-side in reports (`cost_usd_1h_write`,
-  `cost_usd_5m_write`) where a single number would mislead.
-- Selftests for the rate table and a known envelope.
+Done in [PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032):
+`cache_write_5m` / `cache_write_1h` derived from `PRICE['input']`;
+`cache_write_rate(ttl)` refuses an unknown TTL rather than guessing;
+`split_cache_creation()` reads the envelope's own `ephemeral_*_input_tokens`
+buckets; `tally()` reports `cost` **and** `cost_unknown_at_1h` side by side, and
+the H2158 harness/report import these rates instead of re-deriving `×2.0`.
+Pinned by `h809_selftest.test_cache_write_is_ttl_priced_and_reconciles_with_the_vendor`,
+which also asserts the old flat-5 m arithmetic **fails** to reconcile — so a
+revert to a TTL-blind constant cannot pass the test written to catch it.
 
 ### Step E — Prefix reorder → [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md)
 
@@ -154,7 +164,7 @@ If a spawn still inherits the repo, that is a **bug fix**, not a research topic.
 | Production spawn + `build_prompt` | [`src/pilot/headless_worker.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/headless_worker.py) | bare cwd; prompt assembly |
 | Prefix stability probe | [`src/pilot/cache_prefix_stability_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/cache_prefix_stability_probe.py) | settled unstable-prefix vs TTL |
 | Messages API A/B | [`src/pilot/h2158_route_ab.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2158_route_ab.py) | `cache_control` ttl=1h on prefix |
-| Cost rates | [`src/pilot/parse_workflow_cost.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/parse_workflow_cost.py) | `PRICE['cache_write']` = 5 m today |
+| Cost rates | [`src/pilot/parse_workflow_cost.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/parse_workflow_cost.py) | `cache_write_rate('1h'\|'5m')`; `PRICE['cache_write']` is the legacy 5 m alias |
 | Workflow / opt2 (forensics) | [`src/pilot/gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py) | PREAMBLE + GRAMMAR + CONV_TR order |
 
 ---
@@ -165,11 +175,11 @@ If a spawn still inherits the repo, that is a **bug fix**, not a research topic.
 |---|---|---|---|
 | B | [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md) minimal profile | medium | bare cwd shipped |
 | C | [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md) Messages API A/B + port | hard | human API credential for Phase 1 API arm |
-| D | [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) dual-rate 1 h pricing | medium | none |
+| D | ✅ [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) dual-rate 1 h pricing — **shipped 02-08-2026**, [PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032) | medium | none |
 | E | [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md) stable-left prefix reorder | medium | none (independent of API port) |
 
-Recommended launch order: **H2190** (offline) → **H2191** (offline) → **H2189**
-(small paid A/B) → **H2158** (needs credential + human GO for route flip).
+Recommended launch order: ~~**H2190** (offline)~~ ✅ done → **H2191** (offline) →
+**H2189** (small paid A/B) → **H2158** (needs credential + human GO for route flip).
 
 ### Starters
 
