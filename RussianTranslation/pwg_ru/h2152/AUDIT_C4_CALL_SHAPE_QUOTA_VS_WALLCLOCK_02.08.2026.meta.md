@@ -51,6 +51,7 @@ A session picking up the pwg_ru paid lane, or anyone about to change `OUTPUT_BUD
 | Date | Change | Model |
 |---|---|---|
 | 02-08-2026 | Created — full audit, HOLD one-card recommendation, 8 sections | Opus 5 1M (`claude-opus-5[1m]`) |
+| 02-08-2026 | Folded in [PR #986](https://github.com/gasyoun/SanskritLexicography/pull/986) (landed concurrently): `subagent_tokens` is a legacy misnomer for the sum of the token fields, and the real per-call charge is **cache re-creation**. Recommendation unchanged; §6 item 2 gained a named mechanism and §2 an independent price reproduction (cache creation = **87.6 %** of the ping's cost, total reproduced to $0.3456 vs $0.3456318 recorded). | Opus 5 1M (`claude-opus-5[1m]`) |
 
 ---
 
