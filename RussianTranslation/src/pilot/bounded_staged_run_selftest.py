@@ -829,13 +829,85 @@ def test_q2_execute_requires_ceilings_h2157(td):
             except SystemExit as exc:
                 assert getattr(exc, 'code', None) == 2, \
                     'parser-level refusal (exit 2) expected, got %r' % exc
-        assert bsr.main(base + ['--max-calls', '3', '--cost-ceiling', '2.50']) == 'gate-passed', \
+        assert bsr.main(base + ['--max-calls', '3', '--cost-ceiling', '2.50',
+                                '--skip-canary-gate']) == 'gate-passed', \
             'both ceilings supplied must pass the gate'
-        assert bsr.main(base + ['--allow-unbounded']) == 'gate-passed', \
+        assert bsr.main(base + ['--allow-unbounded', '--skip-canary-gate']) == 'gate-passed', \
             '--allow-unbounded must be an explicit escape hatch'
         assert bsr.main(['--plan', os.path.join(td, 'q2p.json'),
                          '--coord-dir', os.path.join(td, 'q2cd')]) == 'gate-passed', \
             'a dry-run (no --execute) must not require ceilings'
+    finally:
+        bsr.run = _run
+
+
+def test_q3_execute_requires_canary_go_receipt_h2159(td):
+    """H2159 (H2025 G4 / F-B2+F-B3): --execute consumes the live-gate canary verdict
+    MECHANICALLY. judge_payload derives GO/NO-GO from the canary wf_output (synthetic
+    keys only, expected sense count, zero {Tn}/SAN-LOSS/UNMAPPED); enforce() refuses a
+    missing/NO-GO/stale/wrong-profile receipt; --skip-canary-gate is the explicit
+    escape. run() is patched to a sentinel — a passed gate never touches plan/db."""
+    import canary_gate as cg
+    clean_card = {'records': [{'senses': [
+        {'russian': 'перевод %d' % i, 'german': 'Übersetzung %d' % i} for i in range(3)]}]}
+    go_res = {'meta': {'execution': {'profile_slot': 'c4'}},
+              'results': [{'key': 'dq_canary_puregloss', 'card': clean_card}]}
+    verdict, reasons, _ = cg.judge_payload(go_res)
+    assert verdict == 'GO' and reasons == [], reasons
+    # NO-GO derivations: sense shortfall, TNMASK residue, real key, null card.
+    short = json.loads(json.dumps(go_res))
+    short['results'][0]['card']['records'][0]['senses'].pop()
+    assert cg.judge_payload(short)[0] == 'NO-GO', 'a dropped sense must be NO-GO'
+    masked = json.loads(json.dumps(go_res))
+    masked['results'][0]['card']['records'][0]['senses'][0]['russian'] = 'ост {T4} аток'
+    assert cg.judge_payload(masked)[0] == 'NO-GO', 'a {Tn} residue must be NO-GO'
+    realkey = json.loads(json.dumps(go_res))
+    realkey['results'][0]['key'] = 'agni~~h0_00_pwg00'
+    assert cg.judge_payload(realkey)[0] == 'NO-GO', \
+        'judging a REAL window as a canary must be NO-GO'
+    nullcard = {'results': [{'key': 'dq_canary_puregloss', 'card': None}]}
+    assert cg.judge_payload(nullcard)[0] == 'NO-GO', 'a null card must be NO-GO'
+
+    # judge CLI writes an atomic receipt; enforce() accepts fresh GO, refuses the rest.
+    wf = os.path.join(td, 'q3_canary_wf.json')
+    with open(wf, 'w', encoding='utf-8') as fh:
+        json.dump(go_res, fh, ensure_ascii=False)
+    receipt = os.path.join(td, 'q3_canary_receipt.json')
+    assert cg.main(['judge', wf, '--receipt', receipt]) == 0
+    assert cg.enforce(receipt, only_profile='c4')['verdict'] == 'GO'
+    try:
+        cg.enforce(receipt, only_profile='c5')
+        raise AssertionError('a receipt for another profile must be refused')
+    except SystemExit as exc:
+        assert 'profile' in str(exc)
+    stale = cg.load_receipt(receipt)
+    stale['judged_at_epoch'] -= 8 * 3600
+    with open(receipt, 'w', encoding='utf-8') as fh:
+        json.dump(stale, fh)
+    try:
+        cg.enforce(receipt)
+        raise AssertionError('a stale GO receipt must be refused')
+    except SystemExit as exc:
+        assert 'FRESH' in str(exc)
+
+    # The --execute wiring: no receipt -> parser refusal; fresh GO receipt -> gate passed.
+    assert cg.main(['judge', wf, '--receipt', receipt]) == 0
+    base = ['--plan', os.path.join(td, 'q3p.json'), '--coord-dir', os.path.join(td, 'q3cd'),
+            '--coordinator', os.path.join(HERE, 'coordinator.py'), '--cwd', td,
+            '--events', os.path.join(td, 'q3.events.jsonl'), '--execute',
+            '--max-calls', '1', '--cost-ceiling', '1.0']
+    _run = bsr.run
+    bsr.run = lambda a: 'gate-passed'
+    try:
+        try:
+            bsr.main(base)
+            raise AssertionError('--execute without a canary receipt must be refused')
+        except SystemExit as exc:
+            assert getattr(exc, 'code', None) == 2
+        assert bsr.main(base + ['--canary-receipt', receipt, '--only-profile', 'c4']) \
+            == 'gate-passed', 'a fresh GO receipt must pass the gate'
+        assert bsr.main(base + ['--skip-canary-gate']) == 'gate-passed', \
+            '--skip-canary-gate must be an explicit escape hatch'
     finally:
         bsr.run = _run
 
@@ -1139,6 +1211,7 @@ def main():
         test_o_preflight_before_probe(td)
         test_p_resume_requires_existing_ledger_run(td)
         test_q2_execute_requires_ceilings_h2157(td)
+        test_q3_execute_requires_canary_go_receipt_h2159(td)
         test_q_cohort_width_cli_and_live_refusal(td)
         test_r_cohort_offline_serial_equivalence(td)
         test_s_h7_zero_claim_drain_stops_instead_of_spinning(td)

@@ -986,6 +986,19 @@ def build_parser():
                          '--cost-ceiling. Without this flag a paid run refuses to start '
                          'unbounded — a deliberate unbounded window must say so in the '
                          'command line where a reviewer can see it.')
+    # H2159 (H2025 G4): the canary half of the live gate, consumed MECHANICALLY.
+    ap.add_argument('--canary-receipt',
+                    help='H2159: path to the pwg.canary_gate_receipt.v1 JSON written by '
+                         '`canary_gate.py judge` after the /pwg-live-gate canary. '
+                         'REQUIRED on --execute (verdict GO, fresh, same profile) unless '
+                         '--skip-canary-gate is passed.')
+    ap.add_argument('--canary-max-age-seconds', type=int, default=None,
+                    help='override the canary GO receipt freshness bound (default: '
+                         'canary_gate.DEFAULT_MAX_AGE_SECONDS = 6h)')
+    ap.add_argument('--skip-canary-gate', action='store_true',
+                    help='H2159: explicitly run --execute WITHOUT a canary GO receipt. '
+                         'A deliberate ungated window must say so in the command line '
+                         'where a reviewer can see it.')
     ap.add_argument('--max-accounts', type=int, default=0)
     ap.add_argument('--only-profile', help='enforce one manifest-bound logical profile slot')
     ap.add_argument('--drop-unhealthy', action='store_true')
@@ -1013,6 +1026,20 @@ def main(argv=None):
             ap.error('--execute is a PAID run and refuses to start unbounded: missing %s '
                      '(H2157). Pass explicit ceilings, or --allow-unbounded for a '
                      'deliberate unbounded window.' % ' and '.join(missing))
+    # H2159 (H2025 G4 / F-B2+F-B3): a PAID run must consume the live-gate canary verdict
+    # MECHANICALLY — a fresh GO receipt from `canary_gate.py judge`, validated here
+    # (verdict, age, profile), never a verdict carried in an operator's head.
+    if args.execute and not getattr(args, 'skip_canary_gate', False):
+        if not args.canary_receipt:
+            ap.error('--execute requires a canary GO receipt: run the /pwg-live-gate '
+                     'canary, judge it with `canary_gate.py judge <wf_output> --receipt '
+                     '<path>`, and pass --canary-receipt <path> (H2159). '
+                     '--skip-canary-gate is the explicit escape hatch.')
+        import canary_gate
+        gate_kwargs = {'only_profile': args.only_profile}
+        if args.canary_max_age_seconds is not None:
+            gate_kwargs['max_age_seconds'] = args.canary_max_age_seconds
+        canary_gate.enforce(args.canary_receipt, **gate_kwargs)
     return run(args)
 
 
