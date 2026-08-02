@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.137.4] - 2026-08-02
+
+### Added
+- **H2174 second pass — the c4 health ceiling is ~12 s BELOW the median measured reading (Opus 5 `claude-opus-5[1m]`, 02-08-2026):** gate attempt 4 returned NO-GO by **1 291 ms (2.0 %)** — not overridden. Across all 8 measured c4 readings the ceiling's implied pass rate is **2/8 (25 %)** and **median − ceiling = +11 988 ms**, so the gate is *expected* to fail ~75 % of the time and more attempts cannot fix it. The 12:46 reading is the tell: wall 66 291 ms but `duration_api_ms` **16 445 ms**, the fastest API reading ever recorded on c4, with 49 846 ms of in-CLI scaffolding — a healthy route failed on overhead. **The clock is settled and not reopened** (gate on wall, MG 02-08-2026 / H2160 option A); what was never fitted is the ceiling *value*, which belongs to [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md) — not to H2174, and not to be fixed by raising a guard so one's own run passes. **H2138's requested dataset now exists at zero further cost:** 5 paired readings, api/wall **0.25 → 0.72** and `api_gap_ms` **17 429 → 49 846 ms**, disproving the standing "~45 % is scaffolding" constant in both directions. Distribution + quantile tables in [RESULTS_LOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md). Probe run from the canonical checkout so rows land in the real per-account series ([#1034](https://github.com/gasyoun/SanskritLexicography/issues/1034)).
+
 ## [1.137.3] - 2026-08-02
 
 ### Fixed
