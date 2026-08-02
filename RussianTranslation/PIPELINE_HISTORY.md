@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 26-07-2026_
+_Created: 04-07-2026 · Last updated: 02-08-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -8,6 +8,42 @@ This is the orientation document for anyone (human or session) who needs the
 narrated). Read this first; go to `.ai_state.md` for exact dates/PRs/numbers on
 any specific claim below, and to [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
 for the current operating procedure.
+
+### H2152/H2158 — the ceiling was never the problem: every call re-writes its own cache (02-08-2026)
+
+The 25-07 → 02-08 arc looks from the outside like five separate failures, and it was one.
+A paid run on 02-08 produced **zero cards in 16 calls**; 12 died at exactly
+`HARD_TIMEOUT_MS = 180000`. The obvious readings were all wrong, and each had already cost a
+session:
+
+| Reading | Verdict |
+|---|---|
+| "the route is down" | wrong — network was healthy throughout ([§268](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md), 9 hypotheses excluded) |
+| "~65 s is CLI startup" | **withdrawn** ([§267](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)) |
+| "it's a rate limit hanging silently" | correct **for 31-07** ([§270](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)), not for 02-08 |
+| "one card per call is the wrong shape under quota" | conditional — quota was not binding ([H2152](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2152-Opus_RussianTranslation_c4-quota-call-shape-audit_02.08.26.md)) |
+| "199 370 subagent tokens" | a **misnomer** — `subagent_tokens` is the sum of the four token fields; no subagents exist |
+
+**The actual cause:** every `claude -p` invocation re-creates ~32–49 k tokens of cache at the
+premium write rate. Two *identical* back-to-back calls re-created 49 153 → 49 165 with cache read
+pinned at 28 882 — **the second re-wrote exactly what the first had just written.** Not TTL
+expiry: the write lands in `ephemeral_1h_input_tokens`, and a 1-hour TTL cannot lapse between
+calls seconds apart. A one-shot subprocess cannot amortise its own system prompt.
+
+**Two things follow, and they are why this entry exists.** (1) **Call shape is not the lever** —
+heal groups were already at one fragment and still timed out, so there is nothing left to shrink;
+don't spend a session tuning batch sizes. (2) **cwd is a free lever** — `CLAUDE.md` + git-state
+injection is worth ~11–17 k tokens/call, and running from a bare cwd measured **−33 % cost,
+−30 % wall clock** with no code change.
+
+The standing ruling `"NOTHING runs past 3 min (MG)"` was **not** relaxed: raising a ceiling to fit
+an overhead it was never meant to measure is the weaken-a-guard-to-pass-a-gate move this whole arc
+exists to refuse. Route change (Messages API with a prefix we control) is
+[H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md),
+blocked on one human trade: the CLI bills against the Max subscription, the API is metered.
+Evidence: [v1.124.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.124.0) ·
+[v1.127.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.127.0) ·
+[FINDINGS §283](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)–[§284](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
 
 ### H1655 — the reviewer abort that made "no German before a human" a hard gate (26-07-2026)
 
