@@ -1248,6 +1248,115 @@ def test_t_data_root_env_shim(td):
     print('  (t) H2175: --data-root env shim, derived defaults, explicit-flag wins: PASS')
 
 
+def test_u_auto_promote_until(td):
+    """H2175 R2.1 (--auto-promote-until): promote-on-clean-audit with expiring authority.
+    (1) parse: bare ISO date = end of that UTC day; ISO datetime honored; junk refused.
+    (2) CLI gate: a past date refuses to start; combining with --stop-before-promote
+        refuses (exit 2 both ways). (3) mechanics: clean audit -> AWAITING_REVIEW
+    checkpoint -> verified -> promote-ready spawned -> pwg.auto_promotion.v1 record
+    binding the checkpoint hashes. (4) expired authority mid-run: NO promote, NO
+    record, window left AWAITING_REVIEW. (5) a tampered checkpoint refuses to promote."""
+    from types import SimpleNamespace
+
+    # (1) parsing
+    end_of_day = bsr.parse_auto_promote_until('2026-08-09')
+    import datetime as _dt
+    dt = _dt.datetime.fromtimestamp(end_of_day, _dt.timezone.utc)
+    assert (dt.year, dt.month, dt.day, dt.hour, dt.minute, dt.second) == \
+        (2026, 8, 9, 23, 59, 59), dt
+    assert bsr.parse_auto_promote_until('2026-08-09T12:00:00Z') < end_of_day
+    try:
+        bsr.parse_auto_promote_until('next-tuesday')
+        raise AssertionError('junk date must raise')
+    except ValueError:
+        pass
+
+    # (2) CLI fail-closed gates (run() patched to a sentinel; never reached)
+    _run = bsr.run
+    bsr.run = lambda a: 'gate-passed'
+    try:
+        base = ['--plan', os.path.join(td, 'u_p.json'), '--coord-dir', os.path.join(td, 'u_cd')]
+        for bad in (base + ['--auto-promote-until', '2020-01-01'],
+                    base + ['--auto-promote-until', '2999-01-01', '--stop-before-promote'],
+                    base + ['--auto-promote-until', 'next-tuesday']):
+            try:
+                bsr.main(bad)
+                raise AssertionError('must be refused: %r' % bad)
+            except SystemExit as exc:
+                assert getattr(exc, 'code', None) == 2, (bad, exc)
+        assert bsr.main(base + ['--auto-promote-until', '2999-01-01']) == 'gate-passed'
+    finally:
+        bsr.run = _run
+
+    # fake coordinator: append argv to a log, exit 0 (stdout says nothing to rescue)
+    udir = os.path.join(td, 'u_apu'); os.makedirs(udir)
+    coord_log = os.path.join(udir, 'coordinator_calls.jsonl')
+    fake_coord = os.path.join(udir, 'fake_coordinator.py')
+    with open(fake_coord, 'w', encoding='utf-8', newline='\n') as f:
+        f.write('import json, sys\n'
+                "open(%r, 'a', encoding='utf-8').write(json.dumps(sys.argv[1:]) + '\\n')\n"
+                "print('promoted')\n" % coord_log)
+
+    def _wf(path, keys):
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump({'meta': {'selected_keys': keys, 'gen_model': 'claude-sonnet-5',
+                                'execution': {'profile_slot': 'c4',
+                                              'execution_route': 'claude-cli-headless',
+                                              'executor_lane': 'serial',
+                                              'validation_method': 'audit',
+                                              'config_dir_fingerprint': 'f' * 64,
+                                              'model_identifier': 'claude-sonnet-5'}},
+                       'summary': {'usage': {'input_tokens': 10, 'observed_cost_usd': 0.01,
+                                             'cost_evaluable': True}}, 'results': []}, f)
+        return path
+
+    report = {'clean_count': 1, 'requeue_keys': [], 'satisfied_keys': [], 'state': 'clean'}
+    ctx = SimpleNamespace(checkpoint=os.path.join(udir, 'cp.json'), run_id='u1',
+                          stop_before_promote=False,
+                          auto_promote_until=time.time() + 3600,
+                          coordinator=fake_coord, cwd=udir, coord_dir=udir,
+                          gen_model_version='claude-sonnet-5')
+
+    # (3) live authority: verified checkpoint -> promote-ready -> bound promotion record
+    wf = _wf(os.path.join(udir, 'wf_u.json'), ['k1'])
+    ar_path, ar_record = bsr.write_awaiting_review_checkpoint(
+        ctx, {'id': 'lease_u', 'attempt': 1}, wf, report)
+    assert bsr.auto_promote_window(ctx, {'id': 'lease_u'}, ar_path, ar_record) is True
+    calls = [json.loads(line) for line in open(coord_log, encoding='utf-8')]
+    assert len(calls) == 1 and 'promote-ready' in calls[0] and \
+        calls[0][calls[0].index('--lease-id') + 1] == 'lease_u', calls
+    rec = json.load(open(ar_path + '.PROMOTED.json', encoding='utf-8'))
+    assert rec['schema'] == 'pwg.auto_promotion.v1'
+    assert rec['payload_sha256'] == ar_record['payload_sha256']
+    assert rec['bound_hashes'] == ar_record['payload']['bound']['hashes']
+    assert rec['lease_id'] == 'lease_u' and rec['run_id'] == 'u1'
+
+    # (4) expired authority: refuse to promote, leave AWAITING_REVIEW, no record
+    ctx_exp = SimpleNamespace(**{**vars(ctx), 'run_id': 'u2',
+                                 'checkpoint': os.path.join(udir, 'cp2.json'),
+                                 'auto_promote_until': time.time() - 5})
+    wf2 = _wf(os.path.join(udir, 'wf_u2.json'), ['k2'])
+    ar2, rec2 = bsr.write_awaiting_review_checkpoint(
+        ctx_exp, {'id': 'lease_u2', 'attempt': 1}, wf2, report)
+    assert bsr.auto_promote_window(ctx_exp, {'id': 'lease_u2'}, ar2, rec2) is False
+    assert not os.path.exists(ar2 + '.PROMOTED.json'), 'expired trial must not promote'
+    assert len(open(coord_log, encoding='utf-8').readlines()) == 1, 'no second promote call'
+    assert bsr.verify_awaiting_review_checkpoint(ar2), 'window must stay AWAITING_REVIEW'
+
+    # (5) a tampered checkpoint refuses to promote (SystemExit, no promote call)
+    with open(wf2, 'a', encoding='utf-8') as f:
+        f.write('\n#tampered')
+    ctx_ok = SimpleNamespace(**{**vars(ctx_exp), 'auto_promote_until': time.time() + 3600})
+    try:
+        bsr.auto_promote_window(ctx_ok, {'id': 'lease_u2'}, ar2, rec2)
+        raise AssertionError('tampered checkpoint must refuse to promote')
+    except SystemExit as exc:
+        assert 'failed verification' in str(exc), exc
+    assert len(open(coord_log, encoding='utf-8').readlines()) == 1, calls
+    print('  (u) H2175 R2.1: --auto-promote-until parse+CLI gates; clean-audit promote '
+          'with bound record; expired/tampered refusals: PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_a_plan_scope(td)
@@ -1274,6 +1383,7 @@ def main():
         test_s2_h7_progress_resets_the_consecutive_counter(td)
         test_s3_h7_unrecordable_done_job_also_stops(td)
         test_t_data_root_env_shim(td)
+        test_u_auto_promote_until(td)
     print('bounded_staged_run_selftest: PASS')
 
 
