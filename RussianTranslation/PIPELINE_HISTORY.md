@@ -45,6 +45,15 @@ Evidence: [v1.124.0](https://github.com/gasyoun/SanskritLexicography/releases/ta
 [v1.127.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.127.0) ·
 [FINDINGS §283](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)–[§284](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
 
+**Playbook of record (02-08-2026):** all ranked levers and the remaining Opus 5
+practical steps live in one file —
+[`PROMPT_CACHING_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PROMPT_CACHING_PWG_RU.md)
+— with handoffs [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md)
+(minimal profile) · [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md)
+(1 h write pricing) · [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md)
+(stable-left prefix reorder) · H2158 (Messages API). Do not re-scatter cache
+guidance into new ad-hoc memos; update that file.
+
 ### H1655 — the reviewer abort that made "no German before a human" a hard gate (26-07-2026)
 
 The first G5 sheet off the live queue (`g5-live-queue-batch1-2026-07-25`, 150 cards) was
@@ -987,10 +996,6 @@ deep manual:
 
 ## Where to go next
 
-- **Why did the *approach* change (harvest → free gates → headless → nonstop)?** →
-  [`EVOLUTION_OF_APPROACHES_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/EVOLUTION_OF_APPROACHES_PWG_RU.md)
-  — method eras, codebase layer cake, and a catalogue of related timelines still
-  worth writing (execution-route, gate genealogy, cost-model, store-integrity, …).
 - **Doing the actual drain right now?** → [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
   is the exact loop, verbatim.
 - **Touching RU or EN-specific code?** → [`LANG_PARITY.md`](LANG_PARITY.md)'s
