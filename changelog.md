@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.137.2] - 2026-08-02
+
+### Added
+- **H2174 — second consecutive c4 health NO-GO recorded; the presplit fix stays undemonstrated (Opus 5 `claude-opus-5[1m]`, 02-08-2026):** [H2174](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2174-Opus_RussianTranslation_medium50-presplit-live-run-after-health-pass_02.08.26.md)'s own `Fail =` clause ("a second health NO-GO") fired at Step 1, so no canary, no window and no store write followed — 2 paid probe calls, $1.0929. Measured 96 520 ms against the 65 000 ms ceiling. **New:** this is the first measured c4 row where `duration_api_ms` (69 137 ms) *also* breaches the ceiling — together with the CLI's own `duration_ms` (77 966 ms), **all three** candidate gate numbers fail, so the still-open "which number gates?" ruling would not have unblocked this window. The 21-row per-account series shows three measured attempts on 02-08 going PASS → NO-GO → NO-GO (43 815 → 96 520 ms wall, same profile/prompt/ceiling, 5¼ h apart): c4 is **bimodal on a timescale of hours**, not down. `api_gap_ms` is itself unstable (17 429 → 192 682 ms), so wall and api are not related by a fixed correction factor. Also verified offline: the five prepared `h1447-m50-w{1..5}` artifacts are still **10/48 keys presplit** (pre-fix), confirming regeneration is a genuine prerequisite. Trend + per-call tables in [RESULTS_LOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md). H2174 stays open (its goal is unchanged and a mint of the residual was correctly refused by the semantic-collision guard as a duplicate of itself); what is newly owed is two *human* rulings, tabled in [GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) — which number gates, and what the retry policy is against a demonstrably bimodal route. Status on [SanskritLexicography#983](https://github.com/gasyoun/SanskritLexicography/issues/983).
+
 ## [1.136.1] - 2026-08-02
 
 ### Changed
