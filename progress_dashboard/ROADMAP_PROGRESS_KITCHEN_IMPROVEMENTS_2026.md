@@ -3,8 +3,9 @@
 _Created: 02-08-2026 · Last updated: 02-08-2026_
 
 **Surface:** [gasyoun.github.io/…/progress/](https://gasyoun.github.io/SanskritLexicography/progress/)  
-**Builders:** [`build_progress_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_progress_data.py) · [`build_kitchen_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_kitchen_data.py)  
-**Handoff:** [H2211](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2211-Grok_SanskritLexicography_progress-kitchen-improvements-inventory_02.08.26.md) (inventory only; implement as separate units)
+**Builders:** [`build_progress_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_progress_data.py) · [`build_kitchen_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_kitchen_data.py) · [`kitchen_slices.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_slices.py)  
+**Inventory handoff:** [H2211](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2211-Grok_SanskritLexicography_progress-kitchen-improvements-inventory_02.08.26.md)  
+**Implement handoff:** [H2212](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2212-Grok_SanskritLexicography_progress-kitchen-k1-k8-implement_02.08.26.md) — **K1–K8 shipped** (02-08-2026)
 
 This is a **measurement / product** backlog for the public kitchen + progress page — not a rewrite plan. Local ops (`:8765`, 5 s) stays the place for sub-second gates; the web page should answer *how is the campaign going?* for a human who opens the link once a day or once a week.
 
@@ -107,16 +108,18 @@ Instrumentation gaps — no honest number on the page until a writer exists.
 
 Each slice is one PR / handoff-sized unit.
 
-| Unit | Delivers | Depends on |
-|---|---|---|
-| **K1 — Operator strip** | Cards: last root, window state, next_action (sanitized), days since last card | A4, A9 (show-only) |
-| **K2 — Yield quality** | Outcome mix + requeue/transient/defect + clean-key yield | A1–A3 |
-| **K3 — Review honesty** | Three-way store bar (approved / needs_review / ai_translated); fix human_reviewed | A8 |
-| **K4 — ETA strip** | Verb % + estimated days at 14d rate; confidence note | A10 |
-| **K5 — Health ribbon** | Last c4 (or active profile) GO/NO-GO + 14d sparkline | B3 |
-| **K6 — Instrumentation harden** | Every audit writes wall-clock + tokens + gen_model | B2, B8 |
-| **K7 — Calendar + idle fusion** | Heatmap shows idle / active / zero | A12 |
-| **K8 — Cost honesty** | Sample-size badge; optional cumulative band from full ledger tokens when complete | A11, B1 |
+| Unit | Delivers | Depends on | Status |
+|---|---|---|---|
+| **K1 — Operator strip** | Last root, window state, next_action (sanitized), days since last card | A4, A9 | ✅ H2212 |
+| **K2 — Yield quality** | Outcome mix + requeue/transient/defect + clean-key yield + top roots | A1–A3, A6 | ✅ H2212 |
+| **K3 — Review honesty** | Three-way store bar (approved / needs_review / ai_translated); human_reviewed = approved | A8 | ✅ H2212 |
+| **K4 — ETA strip** | Verb % + estimated days at 14d card rate (labelled estimate) | A10 | ✅ H2212 |
+| **K5 — Health ribbon** | Last probe GO/NO-GO + recent sparkline from gate0 probe logs | B3 (read existing probes) | ✅ H2212 |
+| **K6 — Instrumentation harden** | Coverage % on wall-clock/tokens/gen_model; audit path always stamps metric keys | B2, B8 | ✅ H2212 (forward + coverage UI) |
+| **K7 — Calendar + idle fusion** | Heatmap idle-marked days (≥1h idle, 0 cards) | A12 | ✅ H2212 |
+| **K8 — Cost honesty** | Sample-size badge on $/clean band | A11 | ✅ H2212 |
+
+Also surfaced: gate exit=0 rate, fidelity aggregate, judge coverage, crash count (quality panel).
 
 H2204 already shipped last idle, monthly idle days, spend split, equal lists — do not re-mint those.
 

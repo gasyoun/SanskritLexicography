@@ -127,12 +127,26 @@ def store_depth():
                 roots.add(k)
             rs = d.get("review_status", "unknown")
             review[rs] = review.get(rs, 0) + 1
+    # K3 review honesty: human_reviewed = approved (signed-off), not a phantom key.
+    approved = int(review.get("approved", 0) or 0)
+    ai = int(review.get("ai_translated", 0) or 0)
+    needs = int(review.get("needs_review", 0) or 0)
+    # legacy key some writers used
+    if review.get("human_reviewed"):
+        approved = max(approved, int(review.get("human_reviewed") or 0))
+    other = senses - approved - ai - needs
     return {
         "measured": True,
         "senses": senses,
         "roots": len(roots),
         "review": review,
-        "human_reviewed": review.get("human_reviewed", 0),
+        "human_reviewed": approved,
+        "review_breakdown": {
+            "approved": approved,
+            "ai_translated": ai,
+            "needs_review": needs,
+            "other": max(0, other),
+        },
     }
 
 
@@ -202,6 +216,7 @@ def main():
             ts = json.loads(ts_path.read_text(encoding="utf-8"))
         except Exception:  # noqa: BLE001
             ts = {"snapshots": []}
+    rb = st.get("review_breakdown") or {}
     row = {
         "date": today,
         "generated_at": generated_at,
@@ -210,6 +225,9 @@ def main():
         "senses": st.get("senses"),
         "roots": st.get("roots"),
         "coverage_pct": cov.get("pct"),
+        "approved": rb.get("approved"),
+        "ai_translated": rb.get("ai_translated"),
+        "needs_review": rb.get("needs_review"),
     }
     ts["snapshots"] = [s for s in ts.get("snapshots", []) if s.get("date") != today] + [row]
     ts["snapshots"].sort(key=lambda s: s["date"])

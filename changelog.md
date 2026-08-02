@@ -15,6 +15,7 @@ not an error.
 ## [Unreleased]
 
 ### Added
+- **Progress kitchen K1–K8 full implement (H2212, Grok 4.5 `grok-4.5`, 02-08-2026):** public `/progress/` gains operator strip (root/state/next_action), yield/requeue mix + top roots, three-way review bar (approved/needs_review/ai_translated), verb burn-down estimate, c4 health GO/NO-GO sparkline, instrumentation coverage, calendar idle overlay, cost sample-size badge, quality/gates panel. Builders: [`kitchen_slices.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_slices.py) + [`build_kitchen_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_kitchen_data.py) schema `pwg.kitchen.v2`; audit path always stamps production_metrics keys ([`window_reports.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/window_reports.py)). Roadmap: [ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md).
 - **FINDINGS §515 — WIL 1819 vs 1832 edition-basis split** (Grok 4.5 `grok-4.5`, 02-08-2026): PWG ← WIL 1819; MW72/MW English ← WIL 1832; CDSL OCR is 1832 only; full 1819 body out of scope; 1819 preface is the bounded next OCR unit; `L.`/`W.` kept distinct. Canonical: [WIL docs/WIL_EDITION_LINEAGE_1819_1832.md](https://github.com/sanskrit-lexicon/WIL/blob/main/docs/WIL_EDITION_LINEAGE_1819_1832.md).
 
 ## [1.137.4] - 2026-08-02
