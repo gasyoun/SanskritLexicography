@@ -88,15 +88,15 @@ harder to read than the duplication. Leave unless a third consumer appears.
 Ranked by **leverage × risk** for a refactor session. Line counts measured
 02-08-2026 on `origin/master` (~4118e6a6).
 
-### OPT-1 — EN promote lacks RU merge discipline (LANG_PARITY **GAP**)
+### OPT-1 — EN promote lacks RU merge discipline (LANG_PARITY **SHARED** — closed H2224)
 
 | | |
 |--|--|
-| **Files** | [`promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_final_cards.py) (~2080 lines) vs [`promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py) (~400 lines) |
-| **Waste** | EN attach overwrites `en` without better-attempt-wins ranking and without the RU model-identity cross-check (B08/B20 twins). Ledger: `h1339_en_promote_parity_gap`, residual of `h1553_wall_clock_defect_ready_partial` (defect-key refuse + `ready_partial` RU-only). |
-| **Optimize** | Port **merge ranking + refuse-defect + model-id** into promote_en (or extract `promote_common.py` used by both). Do **not** merge the whole 2k-line RU bridge into EN — EN is attach-overlay by design (INTENTIONAL store shape). |
-| **Prove** | LANG_PARITY entry → SHARED; window_selftest EN promote cases; dry-run on H1209 mini-EN when EN store non-empty. |
-| **Risk** | Medium — first real `promote_en` production run is the consumer; gap noted as pre-req. |
+| **Files** | [`promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_final_cards.py) (~2080 lines) vs [`promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py) (attach-overlay + B08/B20/H1553 twins) |
+| **Waste** | ~~EN attach overwrote `en` without better-attempt-wins / model-id / defect refuse.~~ **Closed H2224** (Grok 4.5 `grok-4.5`, 02-08-2026): better-attempt-wins on `en`/`en_provenance`, `model_tier` + execution.model_identifier refuse, defect-key refuse + `--ready-partial-report`. Ledger: `h1339_en_promote_parity_gap` + `h1553_wall_clock_defect_ready_partial` → SHARED. |
+| **Optimize** | ~~Port merge ranking + refuse-defect + model-id.~~ Done without folding the full RU bridge into EN (helpers single-sourced from `promote_final_cards`). |
+| **Prove** | LANG_PARITY SHARED; `promote_en --selftest` (B08/B20/H1553 pins); fixture dry-run defect refuse. |
+| **Risk** | First real `promote_en` production run remains the consumer — guards now present. |
 
 ### OPT-2 — RU audit orchestrator vs EN all-in-one auditor (structural twin)
 
@@ -222,7 +222,7 @@ rg -n '"verdict": "GAP"' RussianTranslation/LANG_PARITY.md
 
 | Priority | Item | Why first |
 |----------|------|-----------|
-| **P0** | OPT-1 EN promote parity (GAP) | Blocks safe EN production promote; small surface vs RU promote |
+| **P0** | ~~OPT-1 EN promote parity~~ **done H2224** | Guards landed; first real EN promote still the consumer |
 | **P1** | OPT-6 citation coverage single source | Pure function, low risk, doc honesty |
 | **P1** | OPT-4 H1209/H1210 JS field parameterize | Unblocks EN canary without forking scaffold |
 | **P2** | OPT-2 extract lang-agnostic markup gates | High leverage, needs staged PRs |
