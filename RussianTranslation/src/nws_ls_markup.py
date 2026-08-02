@@ -66,6 +66,7 @@ import g5_card_render as g5cr           # noqa: E402  reuse _BRACKET_TAG, _norm
 import ls_resolver                      # noqa: E402  generate_href, roman_int20
 import pwg_sources                      # noqa: E402  the PWG-bibliography gate
 import store_path                       # noqa: E402  canonical_store() -- H255 loss-safety
+from store_write import locked_store_rewrite  # noqa: E402  H2146/H2153 locked writer
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -135,7 +136,12 @@ def _load_rows(path):
 
 
 def _dump_row(row):
-    return json.dumps(row, ensure_ascii=False, separators=(',', ':'))
+    # H2153 (G7 / #977): the HOUSE serialization — spaced json.dumps, matching
+    # promote_final_cards._serialize_rows and every annotate_* writer. This module's
+    # old compact separators were the 29-07 "1.29 MB shrink": a full compact rewrite
+    # that the next spaced writer reverted, churning ~1.3 MB of pure formatting per
+    # flip and breaking cross-writer byte comparability.
+    return json.dumps(row, ensure_ascii=False)
 
 
 def normalize_nws_locus(sig, roman, loc):
@@ -256,23 +262,11 @@ def apply(path, backup=True, dry_run=False):
         return {'resolved': resolved, 'residue': residue,
                 'domain_migrations': domain_hits, 'rows_changed': rows_changed}
 
-    if backup:
-        stamp = None
-        for i in range(1, 1000):
-            cand = path + '.h1809.bak' + ('' if i == 1 else '.%d' % i)
-            if not os.path.exists(cand):
-                stamp = cand
-                break
-        if stamp is None:
-            raise SystemExit('could not find a free H1809 backup name near %s' % path)
-        with io.open(path, encoding='utf-8') as src, io.open(stamp, 'w', encoding='utf-8') as dst:
-            dst.write(src.read())
-
-    tmp = path + '.h1809.tmp'
-    with io.open(tmp, 'w', encoding='utf-8', newline='\n') as fh:
-        for row in rows:
-            fh.write(_dump_row(row) + '\n')
-    os.replace(tmp, path)
+    # H2146/H2153: locked (PromoteClaim) + unique fsynced backup + atomic replace via
+    # the shared writer. The old path was unlocked, and its text-mode backup copy
+    # CRLF-translated on Windows — the recovery artifact was not byte-identical.
+    locked_store_rewrite(path, rows, tag='h1809nws', no_backup=not backup,
+                         serialize=_dump_row)
 
     return {'resolved': resolved, 'residue': residue,
             'domain_migrations': domain_hits, 'rows_changed': rows_changed}
