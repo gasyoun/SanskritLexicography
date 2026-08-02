@@ -5441,6 +5441,73 @@ def test_no_fallback_single_gets_ceil_kill_budget():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_presplit_cite_floor_is_not_masked_by_batch_budget():
+    """H2160: the per-card fail-solo citation trigger must NOT be suppressed by a LARGER
+    batch budget.
+
+    `PRESPLIT_SOLO_CITE_FLOOR` (40) encodes a per-CARD fact — a card carrying >=40
+    citation-units cannot be emitted whole inside any acceptable wall-clock ceiling.
+    `OUTPUT_BUDGET` (90) encodes an unrelated per-BATCH fact — how many citation-units
+    to pack into one call. Combining them as `max(budget, floor)` let the larger BATCH
+    number mask the per-card one, so with the default budget the floor was inert by
+    construction ("For OUTPUT_BUDGET >= 40 (default 90) nothing changes").
+
+    That is the medium50 `b0` defect measured 02-08-2026: w1's three cards score 80 / 79 /
+    75 citation-units — all above the 40 fail-solo floor, all below the 90 batch budget —
+    so `presplit_keys` came out `[]`, every card was attempted whole, and every whole-card
+    call was abandoned at exactly `KILL_CEIL_MS` (180 044 ms under the old ceiling, then
+    300 073 ms under the new one). A card is not made easier to emit whole by raising the
+    number of cards you would have liked to batch beside it.
+
+    RED before the fix: a 50-<ls> card under the default budget 90 does not presplit.
+    """
+    import re as _re
+    import gen_opt_harness2 as gh
+    senses = ''.join(
+        '— %d〉 {%%Bedeutung %d%%} %s.\n' % (i + 1, i + 1,
+                                                 ' '.join('<ls>Ref. %d.%d</ls>' % (i + 1, j + 1)
+                                                          for j in range(10)))
+        for i in range(5))
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '{#word#}¦ <lex>Adj.</lex>\n' + senses)
+    key = 'zz~~h0_zz_pw'
+    d = tempfile.mkdtemp()
+    saved_ip, saved_ob = gh.input_paths, gh.OUTPUT_BUDGET
+    saved_floor = gh.PRESPLIT_SOLO_CITE_FLOOR
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        # The medium50 shape: 51 citation-units — above the 40 fail-solo floor, below the
+        # 90 batch budget. 5 senses keeps it under SENSE_PRESPLIT_BUDGET (20), so this
+        # isolates the CITATION trigger from the orthogonal sense-density one.
+        gh.OUTPUT_BUDGET = 90
+        gh.PRESPLIT_SOLO_CITE_FLOOR = 40
+        js, _b = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+        presplit = json.loads(_re.search(r'^const PRESPLIT = (.*)$', js, _re.M).group(1))
+        if key not in presplit:
+            fail('a card above the per-card fail-solo cite floor (40) must presplit even when '
+                 'the BATCH budget (90) is larger — the batch number must not mask the per-card '
+                 'one (H2160 medium50 b0); got PRESPLIT=%r' % presplit)
+        # The floor must still be load-bearing in the other direction: raise it above the
+        # card and the SAME card translates whole.
+        gh.PRESPLIT_SOLO_CITE_FLOOR = 200
+        js2, _b2 = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+        presplit2 = json.loads(_re.search(r'^const PRESPLIT = (.*)$', js2, _re.M).group(1))
+        if key in presplit2:
+            fail('with the fail-solo floor raised above the card, it must NOT presplit — proves '
+                 'the trigger is driven by the per-card floor; got PRESPLIT=%r' % presplit2)
+    finally:
+        gh.input_paths = saved_ip
+        gh.OUTPUT_BUDGET = saved_ob
+        gh.PRESPLIT_SOLO_CITE_FLOOR = saved_floor
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def test_presplit_cite_floor_and_single_ceil():
     """H255/H823: the CITATION presplit trigger must not misfire under --output-budget=1.
     With a 1-card batch budget, (1+<ls>) > budget fires on ANY citation-bearing card, force-
@@ -8537,6 +8604,7 @@ def main():
         test_kill_gate_wired,
         test_no_fallback_single_gets_ceil_kill_budget,
         test_presplit_cite_floor_and_single_ceil,
+        test_presplit_cite_floor_is_not_masked_by_batch_budget,
         test_nominal_key_echo_tolerance_scoped,
         test_selfheal_no_fallback_preserves_upstream_reason,
         test_group_by_budget_count_cap,

@@ -131,18 +131,22 @@ SENSE_PRESPLIT_BUDGET = 20  # --sense-presplit-budget=N (0/off to disable). SECO
                    #  below it (sam 6, pari 8). Senses are far heavier per unit than citations
                    #  (sam translates fine at 34 <ls>), so this budget is intentionally much
                    #  lower than OUTPUT_BUDGET and independent of byte/citation batching mode.
-PRESPLIT_SOLO_CITE_FLOOR = 40  # --presplit-solo-cite-floor=N. The CITATION presplit trigger
-                   #  compares (1 + <ls>) to the per-batch OUTPUT_BUDGET, which correctly catches
-                   #  the 150-<ls> pwg00 heads when the budget is the default 90 — but DEGENERATES
-                   #  under --output-budget=1 (the no-PWG single-card lane): there the budget is 1,
-                   #  so ANY card with >=1 citation "exceeds" it and is force-routed to the fragment
-                   #  heal lane. Those tiny cards (H255 presplit cohort: 1-11 <ls>, 307-1131 B) then
-                   #  die on the heal groups' byte-scaled kill budgets (~60 s) instead of getting a
-                   #  whole-card attempt — a misfire, since the SAME cards translate whole fine (sam
-                   #  is fine at 34 <ls>). So the cite trigger fires only when (1+<ls>) exceeds
-                   #  max(OUTPUT_BUDGET, this floor): a card genuinely fails-solo (>=40 citation-units,
-                   #  well above the whole-card-safe 34 and below the 150 giants), not merely because
-                   #  the batch holds one card. For OUTPUT_BUDGET >= 40 (default 90) nothing changes.
+PRESPLIT_SOLO_CITE_FLOOR = 40  # --presplit-solo-cite-floor=N. THE citation presplit threshold,
+                   #  and since H2160 the only one: a card presplits when (1 + <ls>) exceeds this
+                   #  value. It is a per-CARD fail-solo fact — >=40 citation-units is well above
+                   #  the whole-card-safe 34 (`sam` translates whole fine at 34 <ls>) and below
+                   #  the 150-<ls> pwg00 giants — and it is deliberately independent of
+                   #  OUTPUT_BUDGET, which sizes BATCHES and says nothing about whether one card
+                   #  can be emitted whole.
+                   #  History: the trigger originally compared (1 + <ls>) to OUTPUT_BUDGET alone,
+                   #  which DEGENERATED under --output-budget=1 (the no-PWG single-card lane):
+                   #  there the budget is 1, so ANY card with >=1 citation "exceeded" it and was
+                   #  force-routed to the fragment heal lane. Those tiny cards (H255 presplit
+                   #  cohort: 1-11 <ls>, 307-1131 B) then died on the heal groups' byte-scaled
+                   #  kill budgets (~60 s) instead of getting a whole-card attempt. This floor was
+                   #  added to stop that misfire, but as `max(OUTPUT_BUDGET, floor)` — which fixed
+                   #  the small-budget end and broke the large-budget end, leaving the floor inert
+                   #  at every default run. H2160 dropped the max(): see _presplit_hit.
 # --- wall-clock kill gate (H155 follow-up, 2026-07-04) ----------------------------
 # The structural presplit triggers above catch the KNOWN whole-card failure drivers
 # (citation + sense density) BEFORE a run. The kill gate is the runtime BACKSTOP for
@@ -567,10 +571,20 @@ def _presplit_hit(ls, nfrag, cite_budget):
     presplit-primary fragment lane? Returns (cite_hit, sense_hit). Kept in one place so
     the frags-loop grouping choice and the presplit-list construction can never drift
     (H189 — before this, the two sites replicated the condition independently)."""
-    # Floor the citation trigger at PRESPLIT_SOLO_CITE_FLOOR so --output-budget=1 (no-PWG lane)
-    # doesn't force every citation-bearing card into the heal lane — only genuine fail-solo
-    # citation giants presplit. For OUTPUT_BUDGET >= the floor (default 90) this is a no-op.
-    cite_hit = cite_budget is not None and (1 + ls) > max(cite_budget, PRESPLIT_SOLO_CITE_FLOOR)
+    # The citation trigger compares the card's own weight to PRESPLIT_SOLO_CITE_FLOOR — a
+    # per-CARD fail-solo threshold — and to NOTHING ELSE. `cite_budget` (OUTPUT_BUDGET) is a
+    # per-BATCH packing cap and is read here only as the on/off switch for citation mode
+    # (None => byte mode, no citation trigger at all).
+    #
+    # H2160 (02-08-2026): this used to be `> max(cite_budget, PRESPLIT_SOLO_CITE_FLOOR)`, which
+    # let the larger BATCH number mask the per-card one and made the floor inert at the default
+    # budget by construction. That is the medium50 defect: w1's cards score 80 / 79 / 75
+    # citation-units — every one above the 40 fail-solo floor, every one below the 90 batch
+    # budget — so `presplit_keys` came out empty, all three were attempted whole, and every
+    # whole-card call was abandoned at exactly KILL_CEIL_MS (180 044 ms, then 300 073 ms once
+    # the ceiling was raised). A card is not made easier to emit whole by raising the number of
+    # cards you would have liked to batch beside it.
+    cite_hit = cite_budget is not None and (1 + ls) > PRESPLIT_SOLO_CITE_FLOOR
     sense_hit = SENSE_PRESPLIT_BUDGET is not None and nfrag > SENSE_PRESPLIT_BUDGET
     return cite_hit, sense_hit
 
