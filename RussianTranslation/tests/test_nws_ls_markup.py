@@ -14,6 +14,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 
+import g5_card_render as g5cr  # noqa: E402
 import nws_ls_markup as nlm  # noqa: E402
 
 
@@ -141,6 +142,115 @@ def test_apply_round_trip_on_a_scratch_store(tmp_path):
     assert new_rows[2]['ru'] == rows[2]['ru']  # non-NWS row untouched
 
     assert os.path.exists(str(store) + '.h1809.bak')
+
+
+# --- H1909: general bare-citation discriminator ------------------------------
+# MG's H1809 census found 929 g5cr._BARE_CIT-shaped spans across NWS rows --
+# far more than the Roman-numeral convention above catches -- mostly
+# author-name+year provenance-note fragments, not genuine citations. These
+# probes are the "measured, not guessed at" acceptance test for the
+# discriminator that tells them apart (H1909 goal: <5% false-positive rate).
+
+def test_classify_bracket_interior_is_provenance_not_citation():
+    ru = '{#x#} [NWS: Windisch 1883 : 106]'
+    m = list(g5cr._BARE_CIT.finditer(ru))[0]
+    verdict, payload = nlm.classify_general_bare_citation(ru, m)
+    assert verdict == 'provenance_bracket'
+    assert payload is None
+
+
+def test_classify_bare_year_outside_bracket_is_provenance():
+    ru = 'ādi. Lévi 1925 says so.'
+    m = list(g5cr._BARE_CIT.finditer(ru))[0]
+    verdict, payload = nlm.classify_general_bare_citation(ru, m)
+    assert verdict == 'provenance_year'
+
+
+def test_classify_h_dot_century_descriptor_is_provenance_short_sig():
+    """The one measured false-positive source: 'H.' resolves in PWG's own
+    bibliography (Hemacandra) and even generates a valid href for a bare
+    small-number locus -- but every actual occurrence of this shape in the
+    NWS layer is "2. H. 12. Jh." = "2nd half, 12th century", not a
+    citation."""
+    ru = '[Jin, unsp] (2. H. 12. Jh. , Gujarat) говорить.'
+    m = list(g5cr._BARE_CIT.finditer(ru))[0]
+    assert m.group(0) == 'H. 12'
+    verdict, payload = nlm.classify_general_bare_citation(ru, m)
+    assert verdict == 'provenance_short_sig'
+
+
+def test_classify_genuine_arabic_citation_resolves():
+    ru = 'смысл. ṚV 1,116,15 говорит X.'
+    m = list(g5cr._BARE_CIT.finditer(ru))[0]
+    verdict, payload = nlm.classify_general_bare_citation(ru, m)
+    assert verdict == 'resolved'
+    n_attr, href = payload
+    assert n_attr == 'ṚV. 1,116,15'
+    assert href == 'https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.15'
+
+
+def test_classify_comma_attached_roman_mandala_resolves():
+    """H1909's generalisation of H1809's Roman-mandala normalisation to the
+    comma-attached NWS spelling ('I,85,12'), not just the space-separated one
+    ('I 165, 11') the Roman-specific pass above already handles."""
+    ru = 'смысл. ṚV I,85,12 говорит X.'
+    m = list(g5cr._BARE_CIT.finditer(ru))[0]
+    verdict, payload = nlm.classify_general_bare_citation(ru, m)
+    assert verdict == 'resolved'
+    assert payload[0] == 'ṚV. 1,85,12'
+
+
+def test_classify_ramayana_period_locus_is_honest_residue_not_a_guess():
+    """'R' resolves in PWG's bibliography and even generates an href for SOME
+    locus spellings -- but Arabic vs. Roman book numbers there route to
+    DIFFERENT critical editions (Schlegel vs. Gorresio). This module does not
+    guess which edition a period-separated Roman locus like 'I.44.6' means,
+    so it stays residue rather than risking a wrong link."""
+    ru = 'смысл. R I.44.6 цитата.'
+    m = list(g5cr._BARE_CIT.finditer(ru))[0]
+    verdict, payload = nlm.classify_general_bare_citation(ru, m)
+    assert verdict == 'residue_no_href'
+
+
+def test_classify_unknown_siglum_is_residue_no_bib():
+    ru = 'смысл. ChU VI 4, 1 says X.'
+    m = list(g5cr._BARE_CIT.finditer(ru))[0]
+    verdict, payload = nlm.classify_general_bare_citation(ru, m)
+    assert verdict == 'residue_no_bib'
+    assert payload == 'ChU'
+
+
+def test_apply_h1909_general_pass_end_to_end(tmp_path):
+    """One row exercising every discriminator branch at once: two genuine
+    citations (plain Arabic + comma-attached Roman) get marked; a bare-year
+    fragment, the 'H.' century-descriptor collision, a Rāmāyaṇa citation with
+    an edition-ambiguous locus, and a bracket-interior provenance note all
+    stay untouched."""
+    store = tmp_path / 'scratch3.jsonl'
+    ru = ('смысл. ṚV 1,116,15 говорит X. ṚV I,85,12 тоже. '
+          'Lévi 1925 предполагает Y. R I.44.6 цитата. '
+          '(2. H. 12. Jh. , Gujarat) говорить. [NWS: Windisch 1883 : 106]')
+    row = {'key1': 'test1', 'layer': 'nws', 'sense_tag': 'NWS-1', 'ru': ru}
+    import json
+    with open(store, 'w', encoding='utf-8') as fh:
+        fh.write(json.dumps(row, ensure_ascii=False) + '\n')
+
+    result = nlm.apply(str(store), backup=False)
+    assert result['rows_changed'] == 1
+    assert len(result['general_resolved']) == 2
+    assert len(result['general_residue']) == 1
+    assert result['general_provenance'] == {
+        'provenance_bracket': 1, 'provenance_short_sig': 1, 'provenance_year': 1}
+
+    with open(store, encoding='utf-8') as fh:
+        new_row = json.loads(fh.readline())
+    new_ru = new_row['ru']
+    assert '<ls n="ṚV. 1,116,15">ṚV 1,116,15</ls>' in new_ru
+    assert '<ls n="ṚV. 1,85,12">ṚV I,85,12</ls>' in new_ru
+    assert new_ru.count('<ls') == 2
+    assert 'Lévi 1925' in new_ru
+    assert 'R I.44.6' in new_ru
+    assert 'H. 12' in new_ru
 
 
 def test_apply_never_rewraps_a_span_already_inside_ls(tmp_path):
