@@ -987,6 +987,10 @@ deep manual:
 
 ## Where to go next
 
+- **Why did the *approach* change (harvest → free gates → headless → nonstop)?** →
+  [`EVOLUTION_OF_APPROACHES_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/EVOLUTION_OF_APPROACHES_PWG_RU.md)
+  — method eras, codebase layer cake, and a catalogue of related timelines still
+  worth writing (execution-route, gate genealogy, cost-model, store-integrity, …).
 - **Doing the actual drain right now?** → [`src/pilot/RUN_FREQ_MAX.md`](src/pilot/RUN_FREQ_MAX.md)
   is the exact loop, verbatim.
 - **Touching RU or EN-specific code?** → [`LANG_PARITY.md`](LANG_PARITY.md)'s
