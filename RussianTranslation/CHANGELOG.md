@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed
+- **LANG_PARITY hash drift on window_reports.py reddened master CI (H2210 bleed P1, 02-08-2026, Grok 4.5 grok-4.5):** H2212 kitchen K6 always-emit metric keys (+10/−2, language-agnostic) changed src/pilot/window_reports.py without re-stamping five ledger entries (defect_fragment_denylist_h304, window_tag_output_namespacing_h336, jsonl_append_hygiene_h336, gen_model_ledger_stamp_h390, h1553_wall_clock_defect_ready_partial). 	est_lang_parity_ledger_complete failed 1/200 and took RussianTranslation gates red on master (#1042–#1044 merges). Verdicts re-derived (SHARED×4, GAP×1 stand); hashes refreshed to 56a2ad340173…. lang_parity_check 90 entries no drift.
+
 ## [1.137.6] - 2026-08-02
 
 ### Added
