@@ -810,6 +810,36 @@ def test_p_resume_requires_existing_ledger_run(td):
     print('  (p) --resume requires a pre-existing durable call-ledger run: PASS')
 
 
+def test_q2_execute_requires_ceilings_h2157(td):
+    """H2157 (H2025 G3 / F-B1): --execute REFUSES to start without BOTH --max-calls and
+    --cost-ceiling (the fail-closed ceiling machinery was inert unless the operator
+    remembered the flags — a billed run had no ceiling by default). --allow-unbounded is
+    the explicit escape hatch; dry-run (no --execute) is unaffected. run() is patched to
+    a sentinel so a PASSED gate is proven without touching plan/db/coordinator."""
+    base = ['--plan', os.path.join(td, 'q2p.json'), '--coord-dir', os.path.join(td, 'q2cd'),
+            '--coordinator', os.path.join(HERE, 'coordinator.py'), '--cwd', td,
+            '--events', os.path.join(td, 'q2.events.jsonl'), '--execute']
+    _run = bsr.run
+    bsr.run = lambda a: 'gate-passed'
+    try:
+        for extra in ([], ['--max-calls', '3'], ['--cost-ceiling', '2.5']):
+            try:
+                bsr.main(base + extra)
+                raise AssertionError('unbounded --execute must be refused: %r' % extra)
+            except SystemExit as exc:
+                assert getattr(exc, 'code', None) == 2, \
+                    'parser-level refusal (exit 2) expected, got %r' % exc
+        assert bsr.main(base + ['--max-calls', '3', '--cost-ceiling', '2.50']) == 'gate-passed', \
+            'both ceilings supplied must pass the gate'
+        assert bsr.main(base + ['--allow-unbounded']) == 'gate-passed', \
+            '--allow-unbounded must be an explicit escape hatch'
+        assert bsr.main(['--plan', os.path.join(td, 'q2p.json'),
+                         '--coord-dir', os.path.join(td, 'q2cd')]) == 'gate-passed', \
+            'a dry-run (no --execute) must not require ceilings'
+    finally:
+        bsr.run = _run
+
+
 def test_q_cohort_width_cli_and_live_refusal(td):
     """H1437 Phase 3: --cohort-width is EXPERIMENTAL / OFFLINE-ONLY. The parser defaults it
     to 1 (the serial route, byte-for-byte unchanged); the --execute path REFUSES any width
@@ -1108,6 +1138,7 @@ def main():
         test_n_cli_defines_execute_path_args(td)
         test_o_preflight_before_probe(td)
         test_p_resume_requires_existing_ledger_run(td)
+        test_q2_execute_requires_ceilings_h2157(td)
         test_q_cohort_width_cli_and_live_refusal(td)
         test_r_cohort_offline_serial_equivalence(td)
         test_s_h7_zero_claim_drain_stops_instead_of_spinning(td)
