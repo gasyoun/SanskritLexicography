@@ -40,9 +40,23 @@ EXIT_TIMEOUT = 22
 EXIT_MALFORMED = 23
 EXIT_CONTENT = 24
 
-# R4 (C-15): the hard per-call subprocess ceiling. "NOTHING runs past 3 min (MG)". The bare
-# operator default was 7200 s -- 40x this -- because `budgets.timeout_ceil_ms` was never read.
-HARD_TIMEOUT_MS = 180000
+# R4 (C-15): the hard per-call subprocess ceiling. The bare operator default was 7200 s -- 40x
+# this -- because `budgets.timeout_ceil_ms` was never read.
+#
+# 180000 -> 300000, 02-08-2026 (issue #983). The "NOTHING runs past 3 min (MG)" rule was
+# RELAXED by an explicit human ruling, on measurement rather than preference: the first paid
+# run since 25-07 produced ZERO cards because 12 of 16 calls were killed at exactly this
+# ceiling (180 04x-180 23x ms, `reservation_timeline.py`). It is not tunable from below --
+# heal groups were already at the arithmetic floor (six of nakzatra's eight held a SINGLE
+# fragment) and single-fragment calls still hit it, because the kill gate
+# clamp(KILL_BASE + 45*bytes, FLOOR, CEIL) saturates at CEIL for any fragment >~3.5 KB.
+# Successful calls measured 120.4 / 132.0 / 134.5 / 164.3 s, i.e. 67% -> 91% of the old
+# budget, so the margin was already gone and shrinking. 300 s gives ~1.8x headroom over the
+# worst observed success while staying BELOW the 390 s (6.5 min) pril10_w1 agent that
+# prompted the original ruling -- a middle path, deliberately not a revert to the 480000
+# (8 min) this replaced. Must stay in step with `gen_opt_harness2.KILL_CEIL_MS`: the JS
+# harness kills from the inside, so raising only this constant is inert.
+HARD_TIMEOUT_MS = 300000
 
 
 def claude_argv_prefix(claude_bin):
