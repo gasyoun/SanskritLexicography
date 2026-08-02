@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 02-08-2026 (H2210: 5 entries re-derived on window_reports.py after H2212 K6 metric-key stamps — SHARED×4 + GAP×1 stand; language-agnostic always-emit keys, 0 lang tokens in the +10/-2 diff. Previously H2159: 3 entries re-derived, verdicts stand — `--execute` now consumes a mechanical canary GO receipt (`canary_gate.py`); the new gate reads `sense['russian']` because the shipped canary IS the RU-lane synthetic — stated explicitly rather than claiming a token-free diff; no `--lang` branch added anywhere. Previously H2157: 3 entries re-derived, verdicts stand — `--execute` now requires both ceilings (`--allow-unbounded` escape); a CLI arg gate, no target-language field touched, 0 language-keyed diff tokens. Previously H2154: 3 entries re-derived, verdicts stand — the occupied-keys guard fails closed on an unreadable live-job manifest; reads how a JOB is stored, never a target-language field; 0 language-keyed diff tokens. Previously H2153: 17 entries re-derived, verdicts stand — the promote gains a serializer-independent content-mass gate (`refuse_content_mass_shrink`, 10% bound) and the two compact-separator writers (`nws_ls_markup`, `backfill_tn_residue`) converge on the house spaced serialization + the locked writer; 0 language-keyed tokens in the diff, grounds mechanical as before. Previously H2146: `promotion_scripts_separate` re-derived, INTENTIONAL-DIVERGENCE stands — RU merge/supersede now overlay-preserving (`human_touched`, `--override-reviewed`), 17 mutators routed through the shared locked `store_write` writer; EN attach replaces no rows so the wipe class does not arise there. Previously H2118 #946: 6 entries re-derived across 5 files, SHARED stands — the probe latency ceiling is now derived from one table instead of three hard-coded copies, and the policy token carries its own ceiling again. Grounds re-checked mechanically, not asserted: every added line in the diff was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) and **none** appears — the change is language-agnostic dispatch infrastructure that cannot reach the RU/EN split. Previously H2095 #946/#949/#950/#956: 45 entries re-derived, SHARED stands — probe rows carry the ceiling that judged them, `summary()` publishes cost evaluability beside `budget_spent`, the cost-gate calibration question settled with NO constant moved, and the EN auditor exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags, closing the EN twin of #947)_
+_Created: 04-07-2026 · Last updated: 02-08-2026 (H2224 OPT-1: h1339_en_promote_parity_gap + h1553 residual → SHARED; promote_en B08/B20/H1553 twins. Previously H2210: 5 entries re-derived on window_reports.py after H2212 K6 metric-key stamps — SHARED×4 + GAP×1 stand; language-agnostic always-emit keys, 0 lang tokens in the +10/-2 diff. Previously H2159: 3 entries re-derived, verdicts stand — `--execute` now consumes a mechanical canary GO receipt (`canary_gate.py`); the new gate reads `sense['russian']` because the shipped canary IS the RU-lane synthetic — stated explicitly rather than claiming a token-free diff; no `--lang` branch added anywhere. Previously H2157: 3 entries re-derived, verdicts stand — `--execute` now requires both ceilings (`--allow-unbounded` escape); a CLI arg gate, no target-language field touched, 0 language-keyed diff tokens. Previously H2154: 3 entries re-derived, verdicts stand — the occupied-keys guard fails closed on an unreadable live-job manifest; reads how a JOB is stored, never a target-language field; 0 language-keyed diff tokens. Previously H2153: 17 entries re-derived, verdicts stand — the promote gains a serializer-independent content-mass gate (`refuse_content_mass_shrink`, 10% bound) and the two compact-separator writers (`nws_ls_markup`, `backfill_tn_residue`) converge on the house spaced serialization + the locked writer; 0 language-keyed tokens in the diff, grounds mechanical as before. Previously H2146: `promotion_scripts_separate` re-derived, INTENTIONAL-DIVERGENCE stands — RU merge/supersede now overlay-preserving (`human_touched`, `--override-reviewed`), 17 mutators routed through the shared locked `store_write` writer; EN attach replaces no rows so the wipe class does not arise there. Previously H2118 #946: 6 entries re-derived across 5 files, SHARED stands — the probe latency ceiling is now derived from one table instead of three hard-coded copies, and the policy token carries its own ceiling again. Grounds re-checked mechanically, not asserted: every added line in the diff was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) and **none** appears — the change is language-agnostic dispatch infrastructure that cannot reach the RU/EN split. Previously H2095 #946/#949/#950/#956: 45 entries re-derived, SHARED stands — probe rows carry the ceiling that judged them, `summary()` publishes cost evaluability beside `budget_spent`, the cost-gate calibration question settled with NO constant moved, and the EN auditor exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags, closing the EN twin of #947)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -412,7 +412,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
-      "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d"
+      "src/promote_en.py": "9ff2b119687d997373d9743bb1474b158c2543af0756dcc61bc24034c38f00f8"
     }
   },
   {
@@ -469,7 +469,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
-      "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d"
+      "src/promote_en.py": "9ff2b119687d997373d9743bb1474b158c2543af0756dcc61bc24034c38f00f8"
     }
   },
   {
@@ -763,7 +763,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/promote_lock.py": "f8dda14a7423dfecac77893f10f7735361db8bd6c79297172243aafaf1d28ef4",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
-      "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d",
+      "src/promote_en.py": "9ff2b119687d997373d9743bb1474b158c2543af0756dcc61bc24034c38f00f8",
       "src/pilot/window_selftest.py": "bf3297182536a2c25890211b920fe648648fa981358654dec60f00607e80473b"
     }
   },
@@ -1070,7 +1070,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/store_path.py": "4967ab7ea748da995367fd0520f89f4bf9a39b84c428310314291b85be26f73c",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
-      "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d"
+      "src/promote_en.py": "9ff2b119687d997373d9743bb1474b158c2543af0756dcc61bc24034c38f00f8"
     }
   },
   {
@@ -1445,7 +1445,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "a12ce11933d54742d015bc7b65ed112f9640dfb134ae3be69993d48a4296cac0",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
-      "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d",
+      "src/promote_en.py": "9ff2b119687d997373d9743bb1474b158c2543af0756dcc61bc24034c38f00f8",
       "src/pilot/tnmask_offline.py": "c857fe425fadbe18c1cdf398892f53b590709048ca66faf94fd05e046730ffea"
     }
   },
@@ -1500,18 +1500,18 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
   },
   {
     "id": "h1339_en_promote_parity_gap",
-    "mechanism": "promote_en.py: {Tn}-residue refuse is CLOSED (C6 UnrestoredPlaceholder on attach). Still GAP: no better-attempt-wins merge for the en field and no model-identity cross-check twin of promote_final_cards B08/B20 — EN attach path overwrites en idempotently without ranking prior attempts.",
+    "mechanism": "promote_en.py EN attach-overlay: C6 UnrestoredPlaceholder; B08 better-attempt-wins on en/en_provenance (complete beats partial; ties favour incoming); B20 model_tier(gen_model_version) + execution.model_identifier cross-check refuse; H1553 defect-key refuse without --force + optional --ready-partial-report clean-key filter. Single-sources helpers from promote_final_cards (not a full RU bridge clone).",
     "files": [
       "src/promote_en.py"
     ],
     "languages": [
       "en"
     ],
-    "verdict": "GAP",
-    "note": "H1618: narrowed — TN residue no longer part of the gap; better-attempt/model-id remain.",
-    "tracking": "H1339 Tier-B report pwg_ru/h1339/H1339_TIER_B_STATUS_2026-07-19.md — port before the first real promote_en run (EN store currently 0 rows; H1209 mini-EN is the first consumer)",
+    "verdict": "SHARED",
+    "note": "H2224 (02-08-2026, Grok 4.5 `grok-4.5`): closed residual better-attempt + model-id + defect refuse. EN remains attach-overlay by design (INTENTIONAL store shape vs RU full-row promote).",
+    "tracking": "https://github.com/gasyoun/Uprava/blob/main/handoffs/H2224-Grok_SanskritLexicography_pwg-opt1-en-promote-parity_02.08.26.md",
     "verified_sha256": {
-      "src/promote_en.py": "f801b86d267f346e2a11ebbee681103e68e01f6520da0e70e4a20b460ee27d9d"
+      "src/promote_en.py": "9ff2b119687d997373d9743bb1474b158c2543af0756dcc61bc24034c38f00f8"
     }
   },
   {
@@ -1728,27 +1728,29 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
   },
   {
     "id": "h1553_wall_clock_defect_ready_partial",
-    "mechanism": "H1403 A2+A3 residues (H1553): auto-derive wall_clock_minutes + wall_clock_source; stage_boundary dashboard events; promote refuses defect keys without --force; ready_partial clean-subset helper (dry-run default). H1618: EN audit wires build_production_metrics (wall_clock_source) into --report; defect refuse + ready_partial remain RU promote_final_cards only.",
+    "mechanism": "H1403 A2+A3 residues (H1553): auto-derive wall_clock_minutes + wall_clock_source; stage_boundary dashboard events; promote refuses defect keys without --force; ready_partial clean-subset helper. RU: promote_final_cards. EN: promote_en --defect-keys / auto-discover + --force override + --ready-partial-report clean-key filter (attach-overlay twin; helpers single-sourced from promote_final_cards). EN audit wires build_production_metrics (wall_clock_source) into --report.",
     "files": [
       "src/pilot/window_reports.py",
       "src/pilot/audit_window.py",
       "src/pilot/audit_window_en.py",
       "src/pilot/dashboard_events.py",
       "src/promote_final_cards.py",
+      "src/promote_en.py",
       "src/pilot/window_selftest.py"
     ],
     "languages": [
       "ru",
       "en"
     ],
-    "verdict": "GAP",
-    "note": "H1618: wall_clock half SHARED with audit_window_en. Residual GAP = EN promote defect-key refuse + ready_partial (no EN promote twin of promote_final_cards). H1957 (30-07-2026, Opus 5 `claude-opus-5[1m]`): incidental re-stamp only — window_selftest.py drifted because an unrelated audit-timeout test was replaced; nothing in the wall_clock / defect-refuse / ready_partial mechanism changed, so the GAP stands unaltered. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. Directly adjacent: this entry's partial/defect-ready accounting now sees an infrastructure-partial card as transient rather than defect. The wall-clock trigger and the partial bookkeeping are unchanged; only the cause-based classification is new, and it reads no language field. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
-    "tracking": "https://github.com/gasyoun/Uprava/blob/main/handoffs/H1553-Opus_RussianTranslation_rt-fullaudit-w1-a-h1403-residues_23.07.26.md",
+    "verdict": "SHARED",
+    "note": "H2224 (02-08-2026, Grok 4.5 `grok-4.5`): residual EN defect refuse + ready_partial filter closed on promote_en (OPT-1). Prior history: wall_clock SHARED via audit_window_en (H1618); H2077/H2095 infra-partial classification; incidental re-stamps H1957/H2095 merge.",
+    "tracking": "https://github.com/gasyoun/Uprava/blob/main/handoffs/H2224-Grok_SanskritLexicography_pwg-opt1-en-promote-parity_02.08.26.md",
     "verified_sha256": {
       "src/pilot/window_reports.py": "56a2ad3401734efc33082cddea24224553258415aa66c7e51f524617a8a56181",
       "src/pilot/audit_window.py": "4687fc9ad0e546519ae95ec54ca5583cf51c57ebaf50fe655e1c288fb0113eec",
       "src/pilot/dashboard_events.py": "f28f4a42568479f16d759d5e6aa63f4066c4e54920555102f77c2b0b9311bae6",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
+      "src/promote_en.py": "9ff2b119687d997373d9743bb1474b158c2543af0756dcc61bc24034c38f00f8",
       "src/pilot/window_selftest.py": "bf3297182536a2c25890211b920fe648648fa981358654dec60f00607e80473b",
       "src/pilot/audit_window_en.py": "a6721309757d5eb6571174c9465bf4aacd2e646f905846973777f7f18b8e283f"
     }
