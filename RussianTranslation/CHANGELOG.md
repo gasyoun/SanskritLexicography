@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed
+- **The per-call ceiling relaxed 180 s → 300 s, by explicit human ruling (02-08-2026, Opus 5 1M `claude-opus-5[1m]`, [#983](https://github.com/gasyoun/SanskritLexicography/issues/983)):** the standing `"NOTHING runs past 3 min (MG)"` rule (R4/C-15, H189) was the direct cause of a paid window returning **zero cards** — 12 of 16 calls died at exactly 180 04x–180 23x ms, and it was not tunable from below because heal groups were already at a **single fragment** while the kill gate `clamp(BASE + 45×bytes, FLOOR, CEIL)` saturates at CEIL for any fragment >~3.5 KB. Successful calls had crept to 67–**91 %** of the old budget. **The ceiling is enforced in five independent places and raising one is inert** — `headless_worker.HARD_TIMEOUT_MS`, `gen_opt_harness2.KILL_CEIL_MS`, each sealed manifest's `budgets.timeout_ceil_ms`, the `KILL_CEIL_MS` baked into every generated `run_pilot_wf.*.js`, and the operator's own `--timeout`, since the effective bound is their `min()`. The two source constants are now **pinned equal** by a new `headless_worker_selftest.test_kill_ceiling_in_step_with_harness` (verified RED against the drift it guards). 300 s keeps ~1.8× headroom over the worst observed success (164.3 s) and stays below the 390 s agent that prompted H189, so the anti-regression guard against the old 480 000 (8 min) is unchanged and still enforced. Gates: `window_selftest` **199/199**, `lang_parity_check` **90 entries no drift** (52 entries re-stamped; `wall_clock_kill_gate` re-derived in writing — the diff is three integer constants plus comments and greps ZERO hits for any language-keyed token).
+
 ## [1.126.0] - 2026-08-02
 
 ### Fixed

@@ -203,13 +203,30 @@ def test_call_timeout_clamped():
     def capture_runner(argv, **kwargs):
         seen['timeout'] = kwargs.get('timeout')
         return success_runner(argv, **kwargs)
-    execute(manifest(), capture_runner)   # operator default 7200 s -> clamp to HARD (180 s)
+    execute(manifest(), capture_runner)   # operator default 7200 s -> clamp to HARD
     assert seen['timeout'] == h.HARD_TIMEOUT_MS / 1000.0, 'not clamped to HARD: %r' % seen['timeout']
     seen.clear()
     m = manifest(); m['budgets'] = {'timeout_ceil_ms': 45000}
     execute(m, capture_runner)
     assert seen['timeout'] == 45.0, 'timeout_ceil_ms not honoured: %r' % seen['timeout']
-    print('  R4 timeout: clamped to min(operator,ceil,180000ms) -> 180.0s then 45.0s')
+    print('  R4 timeout: clamped to min(operator,ceil,%dms) -> %.1fs then 45.0s'
+          % (h.HARD_TIMEOUT_MS, h.HARD_TIMEOUT_MS / 1000.0))
+
+
+def test_kill_ceiling_in_step_with_harness():
+    """#983: the per-call ceiling lives in TWO places and raising only one is inert.
+
+    `HARD_TIMEOUT_MS` clamps the subprocess from the outside; `gen_opt_harness2.KILL_CEIL_MS`
+    kills the agent from the inside. When the 180 s ceiling was relaxed to 300 s (02-08-2026),
+    a change to either constant alone would have left the other still killing at the old bound
+    -- the run would have looked "fixed" and still returned zero cards. Pin them equal.
+    """
+    import gen_opt_harness2 as g
+    assert h.HARD_TIMEOUT_MS == g.KILL_CEIL_MS, (
+        'ceiling drift: HARD_TIMEOUT_MS=%d but KILL_CEIL_MS=%d -- raising one without the '
+        'other is inert (#983)' % (h.HARD_TIMEOUT_MS, g.KILL_CEIL_MS))
+    assert g.KILL_FLOOR_MS < g.KILL_CEIL_MS, 'kill floor must stay below the ceiling'
+    print('  #983 ceiling parity: HARD_TIMEOUT_MS == KILL_CEIL_MS == %d ms' % h.HARD_TIMEOUT_MS)
 
 
 def test_durable_call_reservation():
@@ -1575,6 +1592,7 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_h2056_944_plain_hang_still_classifies_as_timeout()
     test_h2091_948_infra_stop_is_not_a_content_verdict()
     test_h2091_948_account_refusal_aborts_before_any_bisect()
+    test_kill_ceiling_in_step_with_harness()
     print('headless_worker_selftest: PASS')
 
 
