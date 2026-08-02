@@ -152,7 +152,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H1412",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "574012eb389908ddfc10f2ac9d295143f7086132e77e44b6bd40e053e2755fdf",
-      "src/pilot/headless_worker.py": "237fec8907194adfbfb6d1485efdd6a0ad391966f72c849a057fce0e8ec63f6a",
+      "src/pilot/headless_worker.py": "a2aedb51b3f0c3d7a10c83398a73978f30624ef0d27dae013289fc6406568181",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
       "src/pilot/window_selftest.py": "237d93d23384e569713ffce1a9f814718b7347cd7b454a0a90e78d6bb84b911f"
     }
@@ -1120,10 +1120,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note_h1940_h2b": "31-07-2026, OpenAI GPT-5.6 Sol (`openrouter/openai/gpt-5.6-sol`): SHARED re-derived against the H2b diff. resolve_group changes only failure-note precedence when a retry is refused by a typed translate budget; manifest schema, field selection, split/heal/stitch, scheduler dispatch and all paid boundaries are untouched. The same HeadlessEngine path serves RU and EN with no language branch. The added two-attempt selftest drives the shared manifest fixture and proves the previous clobber.",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "574012eb389908ddfc10f2ac9d295143f7086132e77e44b6bd40e053e2755fdf",
-      "src/pilot/headless_worker.py": "237fec8907194adfbfb6d1485efdd6a0ad391966f72c849a057fce0e8ec63f6a",
+      "src/pilot/headless_worker.py": "a2aedb51b3f0c3d7a10c83398a73978f30624ef0d27dae013289fc6406568181",
       "src/pilot/max_account_orchestrator.py": "7815732245d5c095d485e3d382a9865ce7e9fc8c2958299099e4ae695ca79ecb",
       "src/pilot/coordinator.py": "a060e34e1733fb6469653f05bafab2756dfcca026f7324c83c9186808a21f9e6",
-      "src/pilot/headless_worker_selftest.py": "874fa17fdb72e3bd5d0125ed61f959653c73ca381db54f880c13f3fced71d2fd",
+      "src/pilot/headless_worker_selftest.py": "00ca8f39d8ec66707a30888c533fb212d3ea153bcdcf87bc3ae9a03e746df9e1",
       "src/pilot/max_account_orchestrator_selftest.py": "543d8d2a2eb6e770a324b3e5b7cf6f8d61e12aa66225acdffcee6c124008be23",
       "src/pilot/no_pwg_scale_plan.py": "7e4bb02a2f2865a3447afe47cf1f4106209bdc24f403cb6dd2b8c524b6928d63",
       "src/pilot/windows100_selftest.py": "cb010a7452d1a68fb3a793c3d0ea77d1784eb158d985488cfd09177a1215515d",
@@ -1494,7 +1494,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/card_fields.py": "976c5aa943a35da1691e2ce72e9cb4a14ac53d3bae37f8c68345cc68cb233e2b",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/pilot/translation_memory.py": "e5014c7a872ca6c89458a052690de45576fae15e09094be72bfa7aa30b1d0b76",
-      "src/pilot/headless_worker.py": "237fec8907194adfbfb6d1485efdd6a0ad391966f72c849a057fce0e8ec63f6a",
+      "src/pilot/headless_worker.py": "a2aedb51b3f0c3d7a10c83398a73978f30624ef0d27dae013289fc6406568181",
       "src/pilot/gen_opt_harness2.py": "574012eb389908ddfc10f2ac9d295143f7086132e77e44b6bd40e053e2755fdf"
     }
   },
@@ -1572,7 +1572,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "574012eb389908ddfc10f2ac9d295143f7086132e77e44b6bd40e053e2755fdf",
-      "src/pilot/headless_worker.py": "237fec8907194adfbfb6d1485efdd6a0ad391966f72c849a057fce0e8ec63f6a"
+      "src/pilot/headless_worker.py": "a2aedb51b3f0c3d7a10c83398a73978f30624ef0d27dae013289fc6406568181"
     }
   },
   {
@@ -1838,7 +1838,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H858",
     "verified_sha256": {
       "src/german_anchor.py": "751a6bf9c1cf9bc6201397d28f429cd02c680f668c1b2340be8ca55f54e8a276",
-      "src/pilot/headless_worker.py": "237fec8907194adfbfb6d1485efdd6a0ad391966f72c849a057fce0e8ec63f6a",
+      "src/pilot/headless_worker.py": "a2aedb51b3f0c3d7a10c83398a73978f30624ef0d27dae013289fc6406568181",
       "src/pilot/gen_opt_harness2.py": "574012eb389908ddfc10f2ac9d295143f7086132e77e44b6bd40e053e2755fdf",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4"
     }
