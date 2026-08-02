@@ -59,6 +59,48 @@ def finish_fixture_worker(db_path, account, config_dir, job, timeout, *_args, **
 
 
 def main():
+    # H2154 (H2025 census S1-1/S1-2): the occupied-keys guard FAILS CLOSED — an
+    # unreadable manifest on a queued/running job aborts the import instead of
+    # contributing zero keys (which let the same headwords dispatch into a second
+    # paid window). Terminal jobs with lost manifests stay ignorable.
+    with tempfile.TemporaryDirectory() as okd:
+        okdb = os.path.join(okd, 'jobs.sqlite')
+        good = os.path.join(okd, 'good.json')
+        with open(good, 'w', encoding='utf-8') as fh:
+            json.dump({'meta': {'selected_keys': ['agni~~h0']}}, fh)
+        torn = os.path.join(okd, 'torn.json')
+        with open(torn, 'w', encoding='utf-8') as fh:
+            fh.write('{"meta": {"selected_keys": ["bhU~~')
+        con = m.connect(okdb)
+        with con:
+            con.execute("INSERT INTO jobs(external_id,cwd,output_path,manifest_path,state) "
+                        "VALUES('j-good','.','o1',?, 'pending')", (good,))
+            con.execute("INSERT INTO jobs(external_id,cwd,output_path,manifest_path,state) "
+                        "VALUES('j-done-lost','.','o2',?, 'done')",
+                        (os.path.join(okd, 'gone.json'),))
+        assert m.occupied_keys(con) == {'agni~~h0'}, \
+            'a terminal job with a lost manifest must stay ignorable'
+        with con:
+            con.execute("INSERT INTO jobs(external_id,cwd,output_path,manifest_path,state) "
+                        "VALUES('j-live-lost','.','o3',?, 'pending')",
+                        (os.path.join(okd, 'gone.json'),))
+        try:
+            m.occupied_keys(con)
+            raise AssertionError('a LIVE job with an unreadable manifest must abort, '
+                                 'not contribute zero keys (duplicate paid window)')
+        except SystemExit as exc:
+            assert 'j-live-lost' in str(exc) and 'H2154' in str(exc)
+        with con:
+            con.execute("UPDATE jobs SET manifest_path=? WHERE external_id='j-live-lost'",
+                        (torn,))
+        try:
+            m.occupied_keys(con)
+            raise AssertionError('a torn live manifest must abort the import')
+        except SystemExit as exc:
+            assert 'j-live-lost' in str(exc)
+        con.close()
+    print('PASS: test_occupied_keys_guard_fails_closed_h2154')
+
     staged_plan = {
         'selected_headwords': 2,
         'prepared_headwords': 1,

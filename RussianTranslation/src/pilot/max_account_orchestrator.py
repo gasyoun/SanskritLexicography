@@ -671,6 +671,32 @@ def cmd_enqueue(args):
         'so run/preflight/reservation/profile/result binding is mandatory')
 
 
+def occupied_keys(db):
+    """H2154 (H2025 census S1-1/S1-2): keys owned by queued/running jobs — FAIL-CLOSED.
+
+    The old inline loops swallowed ``(OSError, KeyError, JSONDecodeError)`` per
+    manifest, so an unreadable/renamed/mid-write manifest contributed ZERO keys,
+    the downstream overlap check passed, and the same headwords could be
+    dispatched into a SECOND paid window (duplicate spend + a store
+    double-promote race). A live job whose manifest cannot be read now ABORTS
+    the import — duplicate paid spend is never the silent branch. Terminal
+    (done/failed) jobs are not consulted, exactly as before."""
+    occupied = set()
+    for row in db.execute("SELECT external_id, manifest_path FROM jobs "
+                          "WHERE state IN ('pending','in_progress') "
+                          "AND manifest_path IS NOT NULL"):
+        try:
+            with open(row['manifest_path'], encoding='utf-8') as fh:
+                occupied.update(json.load(fh)['meta']['selected_keys'])
+        except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
+            raise SystemExit(
+                'occupied-keys guard: cannot read the manifest of queued/running job '
+                '%s (%s): %s -- refusing to import; an unreadable live manifest would '
+                'let its keys dispatch into a SECOND paid window (H2154)'
+                % (row['external_id'], row['manifest_path'], exc))
+    return occupied
+
+
 def cmd_import_coordinator(args):
     state_path = os.path.join(os.path.abspath(args.coord_dir), 'state.json')
     with open(state_path, encoding='utf-8') as f:
@@ -681,12 +707,7 @@ def cmd_import_coordinator(args):
     if wanted - {lease.get('id') for lease in leases}:
         raise SystemExit('requested lease is not prepared')
     db = connect(args.db)
-    occupied = set()
-    for row in db.execute("SELECT manifest_path FROM jobs WHERE state IN ('pending','in_progress') AND manifest_path IS NOT NULL"):
-        try:
-            occupied.update(json.load(open(row['manifest_path'], encoding='utf-8'))['meta']['selected_keys'])
-        except (OSError, KeyError, json.JSONDecodeError):
-            pass
+    occupied = occupied_keys(db)
     added = 0
     with db:
         for lease in leases:
@@ -771,12 +792,7 @@ def cmd_import_requeue(args):
         db.close()
         print('imported=0 (attempt job exists: %s)' % external_id)
         return external_id
-    occupied = set()
-    for row in db.execute("SELECT manifest_path FROM jobs WHERE state IN ('pending','in_progress') AND manifest_path IS NOT NULL"):
-        try:
-            occupied.update(json.load(open(row['manifest_path'], encoding='utf-8'))['meta']['selected_keys'])
-        except (OSError, KeyError, json.JSONDecodeError):
-            pass
+    occupied = occupied_keys(db)
     keys = set(manifest['meta']['selected_keys'])
     overlap = keys & occupied
     if overlap:

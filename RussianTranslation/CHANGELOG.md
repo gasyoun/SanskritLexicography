@@ -10,6 +10,11 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.125.0] - 2026-08-02
+
+### Fixed
+- **Fail-closed occupied-keys guard (H2154, 02-08-2026, Fable 5 `claude-fable-5`):** H2025 audit gap G2 (census S1-1/S1-2, the lane's only remaining duplicate-paid-spend path). The scheduler's `occupied` set — keys owned by queued/running jobs — was built under a per-manifest `except: pass`, so an unreadable/renamed/mid-write manifest contributed **zero** keys, the overlap check passed, and the same headwords could dispatch into a **second paid window**. Both import paths (`cmd_import_coordinator`, `cmd_import_requeue`) now share one `occupied_keys(db)` helper that **aborts the import** naming the job + manifest when a live job's manifest cannot be read; terminal jobs with lost manifests stay ignorable, and the manifest read no longer leaks a file handle (the Windows sharing-violation class). Pinned by `test_occupied_keys_guard_fails_closed_h2154` (`max_account_orchestrator_selftest` green; `window_selftest` 198/198; parity 3 entries re-derived, 0 language-keyed diff tokens).
+
 ## [1.124.0] - 2026-08-02
 
 ### Added
