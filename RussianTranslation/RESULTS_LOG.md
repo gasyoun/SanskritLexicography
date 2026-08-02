@@ -1,8 +1,20 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 02-08-2026_
+_Created: 09-07-2026 · Last updated: 03-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 02-08-2026 (H2225) — OPT-6 citation coverage_key single source of truth
+
+Grok 4.5 (`grok-4.5`), [H2225](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2225-Grok_SanskritLexicography_pwg-opt6-citation-coverage-sot_02.08.26.md). Pure-function extract; no store rebuild, no paid call.
+
+| check | result |
+|---|---|
+| Shared kernel | `coverage_key` + `coverage_bucket` + `coverage_rows_from_pairs` |
+| Call sites | `build()` (distinct → CITATION_SOURCES) · `occurrence_stats()` (occ → UNCOVERED) |
+| Fixture selftest | `python src/build_citation_index.py --selftest` green |
+| Coverage class parity | both modes same per-abbr class on 10-pair fixture |
+| Totals shift | CITATION_SOURCES `unresolved` no longer includes non-coordinate labels |
 
 ## 02-08-2026 (H2174, second pass) — the ceiling is ~12 s BELOW c4's median: the gate is unpassable by scheduling, and the blocker is the ceiling VALUE, not the clock
 
