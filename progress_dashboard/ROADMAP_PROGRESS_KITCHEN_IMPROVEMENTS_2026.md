@@ -1,6 +1,6 @@
 # Progress kitchen — improvements inventory
 
-_Created: 02-08-2026 · Last updated: 02-08-2026_
+_Created: 02-08-2026 · Last updated: 03-08-2026_
 
 **Shipped residual (H2218, 02-08-2026):** B1 subscription loader+UI · B9 idle-reason taxonomy · B10 article-site parity · R4 ledger metric backfill script (best-effort; unrecoverable rows stay null).
 
@@ -141,12 +141,31 @@ Local main checkout census (gitignored artifacts; not CI):
 
 ---
 
-## 7. Default recommendation
+## 7. Residual Grok queue (minted 03-08-2026)
 
-If only one more pass after H2204: **K1 + K2 + K3** (operator strip, yield/requeue, review honesty). They use existing files, change only builders + HTML, and answer the three questions the page still cannot:
+K1–K8 UI is shipped (H2212). Remaining measurement gaps → **Grok 4.5** handoffs (execute in order; H2230 first):
 
-1. *What is stuck right now?*  
-2. *Is the machine producing clean windows or spinning requeues?*  
-3. *Has any human actually signed off?*
+| Order | ID | Effort | Title / gap |
+|---|---|---|---|
+| 1 | [H2230](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2230-Grok_SanskritLexicography_progress-kitchen-wallclock-token-dense_03.08.26.md) | hard | Dense wall-clock + tokens (B2 / K6 residual) |
+| 2 | [H2231](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2231-Grok_SanskritLexicography_progress-kitchen-gen-model-host-profile_03.08.26.md) | medium | gen_model / host / profile (B8) |
+| 3 | [H2232](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2232-Grok_SanskritLexicography_progress-kitchen-true-cost-subscription_03.08.26.md) | medium | True $ / subscription units (B1) |
+| 4 | [H2233](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2233-Grok_SanskritLexicography_progress-kitchen-verb-eta-roots-per-day_03.08.26.md) | medium | Verb ETA roots/day (K4 residual) |
+| 5 | [H2234](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2234-Grok_SanskritLexicography_progress-kitchen-idle-reason-tags_03.08.26.md) | medium | Idle reason tags (B9) |
+| 6 | [H2235](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2235-Grok_SanskritLexicography_progress-kitchen-review-throughput-series_03.08.26.md) | medium | Review throughput series (B5) |
+| 7 | [H2236](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2236-Grok_SanskritLexicography_progress-kitchen-quality-timeseries_03.08.26.md) | hard | Quality timeseries (B4) |
+| 8 | [H2237](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2237-Grok_SanskritLexicography_progress-kitchen-promote-vs-generate_03.08.26.md) | medium | Promote vs generate (B6) |
+| 9 | [H2238](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2238-Grok_SanskritLexicography_progress-kitchen-nominal-burn-down_03.08.26.md) | medium | Nominal burn-down (B7) |
+| 10 | [H2239](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2239-Grok_SanskritLexicography_progress-kitchen-article-parity_03.08.26.md) | medium | Article-site parity (B10) |
+| 11 | [H2240](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2240-Grok_SanskritLexicography_progress-kitchen-health-probe-log_03.08.26.md) | medium | Canonical health_probe_log (B3 residual) |
+| 12 | [H2241](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2241-Grok_SanskritLexicography_progress-kitchen-timeseries-slices_03.08.26.md) | medium | Kitchen slices in progress_timeseries |
+
+**Starter (first residual):**
+
+```
+Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H2230-Grok_SanskritLexicography_progress-kitchen-wallclock-token-dense_03.08.26.md and execute it.
+```
+
+Grok 4.5 (`grok-4.5`) · worktree off `origin/master` in SanskritLexicography.
 
 _Dr. Mārcis Gasūns_
