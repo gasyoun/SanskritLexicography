@@ -1,6 +1,6 @@
 # RussianTranslation — Sanskrit dictionaries into Russian, at scale
 
-_Created: 28-06-2026 · Last updated: 24-07-2026_
+_Created: 28-06-2026 · Last updated: 02-08-2026_
 
 This directory holds two independent machine-translation efforts that bring the
 great 19th-century Sanskrit dictionaries to Russian readers, plus the
@@ -100,6 +100,15 @@ its FAIR public release is queued behind a rights clearance.
   the measured fixes.
 - **A working translator with CAT tooling** can import the TMX 1.4b export
   directly once the TM release clears.
+
+## How the approach evolved (read this first for the *shape*)
+
+Method pivots (harvest-first → frequency-first → free gates → headless factory →
+nonstop multilane), how the codebase rose as a layer cake, and a map of **other
+related timelines** that can still be written:
+[`EVOLUTION_OF_APPROACHES_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/EVOLUTION_OF_APPROACHES_PWG_RU.md).
+Engineering phase detail and incident ledger remain in
+[`PIPELINE_HISTORY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HISTORY.md).
 
 ## Milestones
 

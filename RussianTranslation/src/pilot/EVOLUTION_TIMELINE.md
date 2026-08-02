@@ -1,5 +1,14 @@
 # PWG → Russian pilot — evolution timeline (failure-driven)
 
+_Created: 29-06-2026 · Last updated: 02-08-2026_
+
+> **Scope note (02-08-2026).** This file is the **early** failure ledger (through
+> ~29-06). For the full methodological arc (seven approach eras, codebase layer
+> cake, related timelines still to write) see
+> [`EVOLUTION_OF_APPROACHES_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/EVOLUTION_OF_APPROACHES_PWG_RU.md).
+> For engineering phases 0–15 and post-July factory incidents see
+> [`PIPELINE_HISTORY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HISTORY.md).
+
 Purpose: a faithful, no-gloss record of how the PWG→Russian translation harness
 got to its current shape — **including every fuckup**, what it cost, and the fix
 that hardened against it. New operators should read this before assuming any gate

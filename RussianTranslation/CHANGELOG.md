@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added
+- **Methodological evolution narrative for PWG→RU** — seven approach eras (full-gloss → harvest-first → corpus/frequency-first → production windows + free gates → TM/fragments → headless factory → nonstop multilane plan), codebase layer cake, and a ranked map of related timelines still worth writing (execution-route, gate genealogy, cost-model, store-integrity, …). Complements `PIPELINE_HISTORY.md` (engineering phases) and `src/pilot/EVOLUTION_TIMELINE.md` (early F-series). Doc: [`EVOLUTION_OF_APPROACHES_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/EVOLUTION_OF_APPROACHES_PWG_RU.md). Author: Grok 4.5 (`grok-4.5`), 02-08-2026.
+
 ## [1.135.0] - 2026-08-02
 
 ### Added
