@@ -576,6 +576,22 @@ def main():
                 f.write('\n'.join(requeue_defect) + ('\n' if requeue_defect else ''))
             with open(defect_fshas, 'w', encoding='utf-8', newline='\n') as f:
                 f.write('\n'.join(requeue_defect_fshas) + ('\n' if requeue_defect_fshas else ''))
+            # H2228 / OPT-7 EN twin: stamp last-audit defect denylist so --tm=auto cannot
+            # re-serve hard-flagged content without --no-tm. Skip on crashed sense-dupe
+            # gates (blast radius). Local denylist under report dir when under tempdir.
+            if requeue_defect or requeue_defect_fshas:
+                if not crashed_files:
+                    import translation_memory as tm
+                    import tempfile as _tf
+                    deny_path = None
+                    abs_out = os.path.abspath(out_dir)
+                    if abs_out.startswith(os.path.abspath(_tf.gettempdir()) + os.sep):
+                        deny_path = os.path.join(out_dir, 'translation_memory.denylist.jsonl')
+                    n_deny, nf_deny = tm.stamp_denylist_from_last_audit(
+                        requeue_defect, lang='en', fshas=requeue_defect_fshas,
+                        root='', reason='last_audit_defect', path=deny_path)
+                    print('tm denylist   : +%d card +%d frag (last_audit_defect)'
+                          % (n_deny, nf_deny))
             print('requeue defect: %s (%d keys, %d fsha)' %
                   (defect_keys, len(requeue_defect), len(requeue_defect_fshas)))
     if production_metrics:

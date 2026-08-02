@@ -1,6 +1,6 @@
 # PWG translation — duplication map & unjustified-code optimization inventory
 
-_Created: 02-08-2026 · Last updated: 02-08-2026 (H2229 OPT-8 kitchen banner; H2226 OPT-4 closed)_
+_Created: 02-08-2026 · Last updated: 02-08-2026 (H2228 OPT-7 last-audit denylist; H2229 OPT-8 kitchen banner; H2226 OPT-4 closed)_
 
 **Purpose.** One place to hunt **optimization**: where the PWG→RU/EN pipeline
 _duplicates logic or code without a good reason_. Companion to the product-
@@ -157,9 +157,9 @@ audit-failed card (`agent_expected_after_tm: 0` real work).
 
 | | |
 |--|--|
-| **Optimize** | Already mitigated by `--no-tm` on defect requeue. Residual hardening: TM invalidation keyed on **last audit outcome** (or fragment denylist always applied before TM hit), so a default requeue cannot silently no-op. |
-| **Risk** | Medium (false-invalidates good TM if audit is wrong). |
-| **Prove** | gam-class fixture: requeue without flags still refuses failed hash. |
+| **Optimize** | ~~Already mitigated by `--no-tm` on defect requeue. Residual: last-audit denylist stamp.~~ **Closed H2228** (Grok 4.5 `grok-4.5`, 02-08-2026): `stamp_denylist_from_last_audit` at `write_reports` / EN `--write-requeue`; `load_tm` already applies denylist before hit; defect requeue still forces `--no-tm`. |
+| **Risk** | Medium (false-invalidates good TM if audit is wrong) — controls: defect-only, skip-crashed, clean held-out keys serve, promote unblocks. |
+| **Prove** | `test_opt7_last_audit_tm_refuse_without_no_tm` gam-class fixture: stamp without `--no-tm` refuses failed hash; clean key still hits. |
 
 ### OPT-8 — Multi-execution of the same root (ops)
 
