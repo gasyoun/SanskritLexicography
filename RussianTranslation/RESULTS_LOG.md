@@ -31,7 +31,7 @@ for **reporting** (so the $79.83 golden window and every pre-split figure are
 unchanged), while **cost gates** pass `unknown_ttl='1h'` and fail closed, because an
 under-refusal spends money and an over-refusal only asks a human to look.
 [FINDINGS §289](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) ·
-[PR #1031](https://github.com/gasyoun/SanskritLexicography/pull/1031).
+[PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032).
 
 ## 02-08-2026 (H2160) — `b0` was never non-terminating: it was killed BY US at exactly the ceiling, because a per-card presplit floor was masked by the batch budget
 

@@ -82,7 +82,7 @@ prefix that can exceed **100 k** once profile context is included.
 | 0 | **Bare cwd** for every headless spawn | ✅ Shipped | −33 % cost / −30 % wall on fixed overhead | none — already in `bare_cli_cwd()` |
 | 1 | **Minimal headless profile** (no operator global `CLAUDE.md`) | 🟡 Open | Kill remaining ~global-prefix tax + stop profile rules overriding task text | [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md) |
 | 2 | **Messages API + explicit `cache_control` (1 h)** on stable prefix | 🟡 Open — Phase 1 CLI measured; API arm needs credential | Turn create→read on framework; typed HTTP failures; optional single-completion output cut | [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md) |
-| 3 | **Dual-rate cost tools** (`cache_write_5m` + `cache_write_1h`) | ✅ Shipped 02-08-2026 | Stopped understating CLI bills 1.6× ($0.6967 computed vs $0.8005 billed on `nakzatra`) | [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) · [PR #1031](https://github.com/gasyoun/SanskritLexicography/pull/1031) |
+| 3 | **Dual-rate cost tools** (`cache_write_5m` + `cache_write_1h`) | ✅ Shipped 02-08-2026 | Stopped understating CLI bills 1.6× ($0.6967 computed vs $0.8005 billed on `nakzatra`) | [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) · [PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032) |
 | 4 | **Stable prefix reorder** (`preamble` → `translation` → `grammar` before card) | 🟡 Open adjunct | Longer left-stable head for any partial prefix match; **not** lean-TR | [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md) |
 | 5 | TM / frag-TM / fewer agent calls | ✅ Standing | Zero-call reuse where hashes match | existing pipeline |
 | 6 | Presplit group budget (60 cite / 18 sense) | ✅ Shipped post-pril10 | Fewer framework re-caches on fragment lane | `gen_opt_harness2.py` |
@@ -126,7 +126,7 @@ If a spawn still inherits the repo, that is a **bug fix**, not a research topic.
 
 ### Step D — Dual-rate pricing → ✅ [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md), shipped 02-08-2026
 
-Done in [PR #1031](https://github.com/gasyoun/SanskritLexicography/pull/1031):
+Done in [PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032):
 `cache_write_5m` / `cache_write_1h` derived from `PRICE['input']`;
 `cache_write_rate(ttl)` refuses an unknown TTL rather than guessing;
 `split_cache_creation()` reads the envelope's own `ephemeral_*_input_tokens`
@@ -175,7 +175,7 @@ revert to a TTL-blind constant cannot pass the test written to catch it.
 |---|---|---|---|
 | B | [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md) minimal profile | medium | bare cwd shipped |
 | C | [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md) Messages API A/B + port | hard | human API credential for Phase 1 API arm |
-| D | ✅ [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) dual-rate 1 h pricing — **shipped 02-08-2026**, [PR #1031](https://github.com/gasyoun/SanskritLexicography/pull/1031) | medium | none |
+| D | ✅ [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) dual-rate 1 h pricing — **shipped 02-08-2026**, [PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032) | medium | none |
 | E | [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md) stable-left prefix reorder | medium | none (independent of API port) |
 
 Recommended launch order: ~~**H2190** (offline)~~ ✅ done → **H2191** (offline) →
