@@ -20,7 +20,10 @@ Standard pwg-ru-data layout (ARCHITECTURE_RussianTranslation_pwg_nonstop_multila
     ├─ raws/       card raw inputs (window input portraits)
     ├─ telemetry/  per-call usage ledger rows, economy probe log
     ├─ gatelogs/   live-gate + canary receipts, audit reports, window status
-    └─ parked/     park-and-skip queue (R4.2)
+    ├─ parked/     park-and-skip queue (R4.2)
+    └─ corpus/     corpus-gate dictionaries (data_inventory.py's wave-1 layout
+                   addition; H2246 propagated it here so --data-root creates and
+                   resolves the bucket instead of leaving consumers to hardcode it)
 
 Precedence: an explicit `--data-root` WINS over ambient env (a flag visible in the
 command line beats inherited shell state), but `apply()` never overrides a value the
@@ -49,7 +52,8 @@ ENV_LAYOUT = {
 
 # directories a lane is allowed to create on first use (never the store file itself:
 # an absent store at a claimed root is a wiring error, not a bootstrap case)
-SUBDIRS = ('layers', 'tm', 'manifests', 'raws', 'telemetry', 'gatelogs', 'parked')
+SUBDIRS = ('layers', 'tm', 'manifests', 'raws', 'telemetry', 'gatelogs', 'parked',
+           'corpus')
 
 # non-env conveniences resolved for callers that take paths, not env
 REL = {
@@ -59,6 +63,7 @@ REL = {
     'gatelogs_dir': 'gatelogs',
     'parked_dir': 'parked',
     'layers_dir': 'layers',
+    'corpus_dir': 'corpus',
 }
 
 
@@ -125,6 +130,11 @@ def selftest():
         assert resolve(d, 'coord_dir') == os.path.join(
             os.path.abspath(d), 'manifests', 'coordinator')
         assert resolve(d, 'PWG_RU_TM_DIR') == os.path.join(os.path.abspath(d), 'tm')
+        # H2246: corpus/ is a real bucket in the live data repo (592 MB of corpus-gate
+        # dictionaries, migrated by data_inventory.py) — it must be created and
+        # resolvable here, not left out of the layout the way the merge left it.
+        assert resolve(d, 'corpus_dir') == os.path.join(os.path.abspath(d), 'corpus')
+        assert os.path.isdir(os.path.join(d, 'corpus'))
         try:
             resolve(d, 'nope')
             raise AssertionError('unknown key must raise')
