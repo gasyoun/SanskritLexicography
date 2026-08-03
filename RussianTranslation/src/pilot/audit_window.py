@@ -4,6 +4,11 @@
 Runs the free Python gates against the SAME wf_output.json key set, writes one
 machine-readable report plus a requeue list, and optionally glues a root article.
 
+Lang-agnostic HARD markup span survival (LS/SAN) is single-sourced in
+`markup_fidelity_gates.py` (H2227 OPT-2) and reached here via the child
+`audit_translation.py` gate. Soft RU semantics (NO-RUSSIAN, register) stay in
+the child auditors / prompt_rule_audit. EN twin: `audit_window_en.py`.
+
   python src/pilot/audit_window.py wf_output.json --root sTA --write-requeue
 """
 import argparse
