@@ -291,6 +291,68 @@ def test_divergence_taxonomy_projects_losslessly_to_the_coarse_fallback():
     assert rv_divergence_type.COARSE_MAP['agreement'] == 'agreement'
 
 
+# --- H2192 · the asymmetric classes are directional, or they are one class -------
+
+def test_converse_classes_share_a_coarse_class():
+    """`added_by_one` and `omitted_by_one` name ONE undirected event from opposite ends, so
+    the coarse projection must not move when a labeller picks one name over the other.
+
+    RED before H2192: the map sent added_by_one -> 'divergence' and omitted_by_one ->
+    'omission', so a semantically vacuous relabelling changed the coarse class too. The
+    defect was latent (added_by_one had fired 0/12,000), which is why every published
+    coarse kappa is unchanged by the fix -- see rv_added_by_one_diagnosis.py coarse-kappa.
+    """
+    cm = rv_divergence_type.COARSE_MAP
+    assert cm['added_by_one'] == cm['omitted_by_one'] == 'omission'
+    assert set(rv_divergence_type.ASYMMETRIC_CLASSES) == {'added_by_one', 'omitted_by_one'}
+
+
+def test_asymmetric_labels_demand_a_direction():
+    """The prompt must fix a reading point and require `surplus_side`. Without it the two
+    converse names are indistinguishable and one absorbs the whole event class -- measured
+    at added_by_one 0/12,000 in the H1844 pilot, and 0/300, 0/300, 0/267 across H1901's
+    three independently-trained arms."""
+    assert 'surplus_side' in rv_divergence_type.SYSTEM
+    assert 'FIRST translator named in the pair key' in rv_divergence_type.SYSTEM
+
+
+def test_surplus_side_is_resolved_against_its_own_pair_never_coerced():
+    pk = 'grassmann_de_1876|griffith_en_1896'
+    assert rv_divergence_type.normalise_side('griffith_en_1896', pk) == ('griffith_en_1896', None)
+    # A model asked for `griffith_en_1896` will sometimes answer `Griffith`.
+    assert rv_divergence_type.normalise_side('Griffith', pk) == ('griffith_en_1896', None)
+    # A translator outside THIS pair, an absent value, and an unresolvable one are each
+    # recorded as a gap rather than snapped to the nearest side — the posture H1901 already
+    # took with out-of-enum classes (`class: null`, never a nearest-class coercion).
+    assert rv_divergence_type.normalise_side('geldner_de_1951', pk)[0] is None
+    assert rv_divergence_type.normalise_side(None, pk) == (None, 'missing')
+    assert rv_divergence_type.normalise_side('both', pk)[0] is None
+
+
+def test_deterministic_arm_carries_the_same_direction():
+    """Where the direction is a fact about the source rather than a judgment, it is emitted
+    both ways round: the side missing the stanza, and the side holding the surplus."""
+    stanza = {
+        'location': '10.106.5', 'mandala': 10, 'hymn': 106, 'stanza': 5,
+        'translations': {
+            t: {'status': 'absent_from_source' if t == 'geldner_de_1951' else 'present',
+                'text': None if t == 'geldner_de_1951' else 'x'}
+            for t in rv_divergence_type.TRANSLATORS}}
+    det = rv_divergence_type.deterministic_pairs(stanza)
+    assert det
+    for pair_key, row in det.items():
+        assert row['missing_side'] == 'geldner_de_1951'
+        assert row['surplus_side'] in pair_key.split('|')
+        assert row['surplus_side'] != row['missing_side']
+
+
+def test_added_by_one_diagnosis_selftest_passes():
+    """The H2192 diagnosis module carries the guard properties for this defect: the
+    direction field, the non-coercing resolver, and the invariant coarse projection."""
+    import rv_added_by_one_diagnosis
+    assert rv_added_by_one_diagnosis.selftest() == 0
+
+
 @pytest.mark.skipif(not os.path.exists(PILOT_PATH), reason='pilot not run in this checkout')
 def test_divergence_pilot_rows_are_well_formed():
     rows = _read_jsonl(PILOT_PATH)

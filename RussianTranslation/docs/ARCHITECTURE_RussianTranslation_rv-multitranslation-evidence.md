@@ -1,6 +1,6 @@
 # ARCHITECTURE — Rig-Veda multi-translation evidence layer
 
-_Created: 29-07-2026 · Last updated: 29-07-2026_
+_Created: 29-07-2026 · Last updated: 03-08-2026_
 
 Component boundaries, data model and contracts for the layer specified in
 [PLAN_RussianTranslation_rv-multitranslation-evidence_2026H2.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_rv-multitranslation-evidence_2026H2.md).
@@ -183,11 +183,24 @@ at once is not a well-formed claim.
 | `agreement` | Both render the token with semantically equivalent material | no — model |
 | `lexical_variant` | Same referent, different word choice (*Priester* vs *Bevollmächtigter*) | no — model |
 | `semantic_shift` | The two readings are not interchangeable; a real interpretive difference | no — model |
-| `omitted_by_one` | One translator's stanza does not render the token at all | partly — `absent_from_source` is deterministic, in-stanza omission is not |
-| `added_by_one` | One translator supplies material with no counterpart in the other | no — model |
+| `omitted_by_one` | The **first**-named translator of the pair does not render material the second renders | partly — `absent_from_source` is deterministic, in-stanza omission is not |
+| `added_by_one` | The **first**-named translator of the pair supplies material with no counterpart in the second | no — model |
 
 The `absent_from_source` sub-case of `omitted_by_one` is computed by C2 without any model and
 must match the measured baseline (4 stanzas for Geldner, 0 for the other three).
+
+**Amendment, H2192 (03-08-2026) — the last two classes are DIRECTIONAL.** As originally worded
+they were converse readings of one undirected event ("one translator omits" and "one translator
+supplies" describe the same configuration from opposite ends), the pair key is unordered, and
+the model reply carried no direction field. The consequence was measured, not theorised:
+`added_by_one` fired **0 of 12,000** times in the H1844 pilot and 0/300, 0/300, 0/267 across
+H1901's three independently-trained arms, while **8,744** pilot pairs carry supplied material on
+exactly one side. Both classes now carry a mandatory `surplus_side` naming which of that pair's
+two translators holds the surplus, read from the **first** translator in the pair key; and
+`COARSE_MAP` sends both to `omission`, so the K3 projection cannot move under a semantically
+vacuous relabelling. This amends the wording of two rows — no class was added, removed or
+merged, and the five-class taxonomy stands. Full measurement:
+[`pwg_ru/h2192/RV_ADDED_BY_ONE_INSTRUMENT_DEFECT_2026-08.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2192/RV_ADDED_BY_ONE_INSTRUMENT_DEFECT_2026-08.md).
 
 ### 3.6 TM tier extension
 

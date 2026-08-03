@@ -4,6 +4,60 @@ _Created: 09-07-2026 · Last updated: 03-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 03-08-2026 (H2192) — `added_by_one` fires 0/12,000 because it and `omitted_by_one` are one undirected class
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2192](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2192-Opus_RussianTranslation_askbatch-rv-residual-2026-08_02.08.26.md).
+**Zero model calls, $0.00** — every number below is derived from committed data by
+[`src/rv_added_by_one_diagnosis.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_added_by_one_diagnosis.py).
+Closes the cause H1844 and H1901 both flagged and neither measured.
+
+### The population the class should have caught — the pilot's own 2,000 stanzas
+
+Supplied-material markers are a **proxy**, not proof: the convention differs by edition, so this
+measures where the direction is textually recoverable, not who padded more.
+
+| Translator | present | marked | `[…]` | `(…)` | marked % |
+|---|--:|--:|--:|--:|--:|
+| Grassmann 1876–77 | 2,000 | 91 | 75 | 25 | 4.5 % |
+| Geldner 1951–57 | 1,999 | 802 | 9 | 797 | 40.1 % |
+| Elizarenkova 1989–99 | 2,000 | 1,434 | 0 | 1,434 | **71.7 %** |
+| Griffith 1896 | 2,000 | 2 | 0 | 2 | **0.1 %** |
+| Jamison–Brereton 2014 | 2,000 | 1,027 | 362 | 903 | 51.4 % |
+
+**8,744** pilot pairs carry a marker on exactly one side (2,339 on both). Against that population
+`added_by_one` fired **0** times. **This corrects the reason given in the H1844 entry below while
+confirming its verdict:** Griffith is the *least*-marked witness here — his Victorian padding is
+italicised in print and survives extraction with no delimiter — not the most. The padder in our
+data is Elizarenkova.
+
+### The direction was in the prose all along
+
+| Source | rows | share |
+|---|--:|--:|
+| deterministic (`missing_side` already present) | 3 | 1.0 % |
+| recovered — exactly one translator named in `why` | 232 | 81.1 % |
+| ambiguous — both named, not guessed | 51 | 17.8 % |
+| unrecoverable — neither named | **0** | 0.0 % |
+
+**283 of 283** model-decided `omitted_by_one` rows name a translator in the free-text `why`; 235
+of 286 asymmetric rows (82.2 %) get their side back with no model call.
+
+### What the second defect (a non-invariant coarse map) cost — nothing, yet
+
+| Arm A | Arm B | n | κ old map | κ fixed map |
+|---|---|--:|--:|--:|
+| `spike.ds-v3` | `spike.gpt4o-mini` | 300 | 0.235 | 0.235 |
+| `spike.ds-v3` | `spike.gemini-flash` | 267 | 0.350 | 0.350 |
+| `spike.gpt4o-mini` | `spike.gemini-flash` | 267 | 0.216 | 0.216 |
+
+Bit-identical, because the defect kept the unstable half of the map unexercised — so **H1901's
+published coarse kappas need no caveat**, and these three values independently reproduce them.
+
+Gates: `tests/test_rv_spine.py` **54/54** (+5 pins, each verified RED on pre-fix master),
+`window_selftest` **201/201**, `lang_parity_check` 91 entries no drift. The pilot was **not**
+re-typed — the fix is to the instrument, not the data. Full write-up:
+[`pwg_ru/h2192/RV_ADDED_BY_ONE_INSTRUMENT_DEFECT_2026-08.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2192/RV_ADDED_BY_ONE_INSTRUMENT_DEFECT_2026-08.md).
+
 ## 03-08-2026 (H2174, #983) — the medium50 presplit route proven LIVE on w1: 2/3 cards, zero whole-card batches
 
 Opus 5 1M (`claude-opus-5[1m]`), [H2174](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2174-Opus_RussianTranslation_medium50-presplit-live-run-after-health-pass_02.08.26.md).
@@ -2263,6 +2317,8 @@ Context: [H1844](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1844-Opus
 | coarse: agreement / divergence / omission | 37.2 % / 60.4 % / 2.4 % | 37.7 % / 62.3 % / 0.0 % |
 
 The spike/pilot column split is itself the result: a 300-observation spike read `lexical_variant` as dead (1 label) when its rate at scale is 6.0 %. `added_by_one` is inert at both scales — 0 of 12,000 — which is implausible against Griffith's freely supplied material and is flagged as a prompt/taxonomy defect, not a fact about the corpus.
+
+> **Superseded in part, 03-08-2026 (H2192) — see the entry at the top of this log.** The defect verdict holds; the *reason* stated here does not. Griffith is the least-marked of the five witnesses in our extracted text (0.1 % of stanzas), because his padding is italicised in print and carries no delimiter after extraction. The measured cause is that `added_by_one` and `omitted_by_one` are converse readings of one undirected event with no direction field in the reply schema, against a population of 8,744 one-sided pairs.
 
 ### Spike S2 — inter-model agreement on the divergence taxonomy (H1901, 29-07-2026)
 
