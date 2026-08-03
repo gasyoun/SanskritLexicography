@@ -27,11 +27,11 @@ MG design rulings (07-07-2026), all honored:
   4. Grade = source-weight PENALTY only (NOT a hard cap): oral units carry the lowered
      base grade already set in Slice 4 (tm_grade.ORAL_PENALTY). MG ruling 4 further
      wants an oral unit to reach A when it AGREES WITH A WRITTEN translation (consensus
-     promotes). NOTE: the merged Slice-4 build_tmx.oral_cap() currently BARS oral from
-     A unless human-adjudicated -- these conflict. This scaffold does NOT silently flip
-     that merged publication-grade gate; the policy reconciliation is deferred to the
-     real-data step (needs oral graded output to validate) and tracked as an @DECIDE.
-     See ORAL_INGEST.md "Slice 4a" + the FINDINGS caveat.
+     promotes). RESOLVED 19-07-2026 (MG @DECIDE) and implemented 03-08-2026 (H2193):
+     build_tmx.oral_cap() now lifts the A-cap on written_agree (>=1 distinct written
+     work with the same normalized rendering, carried per-work through
+     tm_grade.build_consensus/consensus_signal); oral-alone still caps at B.
+     See ORAL_INGEST.md "Resolved policy conflict" for the over-promote verification.
 
 STATUS: data-independent SCAFFOLD. The source-type detector, the PDF-role classifier,
 the docx-to-md companion wiring, the three per-shape extractors and the multi-reference
