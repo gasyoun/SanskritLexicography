@@ -325,9 +325,25 @@ def card_block(manifest, key):
 
 
 def build_prompt(manifest, keys):
+    """Assemble the production prompt STABLE-LEFT: framework first, volatile last.
+
+    Order is `preamble + translation + grammar + [nws] + card blocks` (H2191, playbook
+    PROMPT_CACHING_PWG_RU §3 rank 4 / §4 Step E).  ``preamble`` and ``translation`` are the
+    only two segments that are byte-identical across every card of every window, so they
+    sit leftmost: any provider-side prefix match (CLI partial reuse, Messages API
+    ``cache_control`` breakpoint) sees the longest possible stable head before the
+    per-window ``grammar`` block and the per-card blocks that change on every call.
+    ``grammar`` moved right of ``translation`` because it is window-scoped (the root's
+    conjugation / the headword's declension), not run-scoped.
+
+    This is a REORDER, not compression: every segment that was sent before is still sent,
+    byte-for-byte.  Trimming CONV_TR/NWS for cache was measured and rejected
+    (``AB_TEST_LEAN_TR.md``) -- do not re-open it here.  ``nws`` stays after the whole
+    framework so TR remains contiguous, and per-card grammar stays inside ``card_block``.
+    """
     prompt = manifest['prompt']
     nws = prompt.get('nws_rule', '') if any(manifest['inputs'][k].get('nws') for k in keys) else ''
-    return (prompt['preamble'] + prompt.get('grammar', '') + prompt['translation'] +
+    return (prompt['preamble'] + prompt['translation'] + prompt.get('grammar', '') +
             ('\n\n' + nws + '\n' if nws else '') +
             ''.join(card_block(manifest, key) for key in keys))
 
@@ -894,10 +910,13 @@ class HeadlessEngine:
         # own evidence (per-card grammar, the ONLY grammar in nominal windows; and the
         # portrait), mirroring build_prompt's card_block and the JS healGroup twin.
         # Presplit giants were translated with ZERO evidence before this.
+        # H2191: same stable-left order as build_prompt -- preamble + translation are the
+        # run-invariant head, then the window's shared grammar, then this card's own
+        # grammar (the most volatile of the three framework segments), then the fragments.
         card_grammar = (prompt.get('grammars') or {}).get(key, '')
         portrait = (self.m.get('inputs', {}).get(key) or {}).get('portrait') or ''
-        return (prompt['preamble'] + prompt.get('grammar', '') + card_grammar
-                + prompt['translation'] + ''.join(blocks)
+        return (prompt['preamble'] + prompt['translation'] + prompt.get('grammar', '')
+                + card_grammar + ''.join(blocks)
                 + '\n--- portrait (evidence) ---\n' + portrait)
 
     def heal_group(self, key, group, indices, label, budget):

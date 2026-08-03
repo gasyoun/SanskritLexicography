@@ -98,13 +98,14 @@ def repriced(usage, write_rate):
 def split_prompt(manifest, key):
     """Return (stable_prefix, volatile_tail) whose concatenation IS build_prompt's output.
 
-    build_prompt is `preamble + grammar + translation + [nws] + ''.join(card blocks)`.
+    build_prompt is `preamble + translation + grammar + [nws] + ''.join(card blocks)`
+    (stable-left since H2191; it was `preamble + grammar + translation + …` before).
     Splitting before the first card block is therefore the only breakpoint that keeps
     byte-identity with the production prompt while isolating the per-card remainder.
     """
     prompt = manifest['prompt']
     nws = prompt.get('nws_rule', '') if manifest['inputs'][key].get('nws') else ''
-    prefix = (prompt['preamble'] + prompt.get('grammar', '') + prompt['translation']
+    prefix = (prompt['preamble'] + prompt['translation'] + prompt.get('grammar', '')
               + ('\n\n' + nws + '\n' if nws else ''))
     tail = card_block(manifest, key)
     whole = build_prompt(manifest, [key])

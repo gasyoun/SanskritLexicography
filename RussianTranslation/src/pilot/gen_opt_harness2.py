@@ -1368,7 +1368,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                  len(fallback_keys)))
 
     # Grammar injection. Root mode: one shared GRAMMAR block (the root conjugation,
-    # identical across sub-cards) before CONV_TR; GRAMMARS empty. Nominal mode: each
+    # identical across sub-cards) after CONV_TR (H2191 stable-left); GRAMMARS empty. Nominal mode: each
     # headword has its OWN block (distinct stem class / compound members), so inject
     # PER CARD via GRAMMARS and leave the shared block empty. --no-grammar = arm A.
     if nominal:
@@ -1843,7 +1843,7 @@ function restoreCard(card, k) {
   return card
 }
 // Per-card grammar (nominal mode): each headword carries its own block. Empty in root
-// mode (the shared GRAMMAR is injected once before CONV_TR) and in the --no-grammar arm.
+// mode (the shared GRAMMAR is injected once after CONV_TR, H2191) and in the --no-grammar arm.
 const suggestionBlock = k => {
   const rows = SUGGEST_TM[k] || []
   if (!rows.length) return ''
@@ -2005,7 +2005,9 @@ async function healGroup(k, idxs, grp, label, budget) {
     // GRAMMAR constant is empty) and the portrait (Sanskrit citation evidence), exactly as
     // the whole-card batch lane's cardBlock does. Presplit giants -- the densest,
     // highest-value cards -- were translated with ZERO evidence before this.
-    const prompt = PREAMBLE + GRAMMAR + (GRAMMARS[k] || '') + CONV_TR + blocks
+    // H2191: stable-left order, the JS twin of headless_worker.fragment_prompt --
+    // PREAMBLE + CONV_TR (run-invariant) before the window's GRAMMAR and this card's own.
+    const prompt = PREAMBLE + CONV_TR + GRAMMAR + (GRAMMARS[k] || '') + blocks
       + '\\n--- portrait (evidence) ---\\n' + (INPUTS[k] ? INPUTS[k].portrait : '')
     const gskel = pending.reduce((n, fi) => n + (grp[fi].skeleton ? grp[fi].skeleton.length : 0), 0)
     let res
@@ -2222,7 +2224,10 @@ async function resolveGroup(pending, label) {
     // lean mode: NWS_RULE is non-empty and injected only when the batch has an NWS card
     // (full mode: NWS_RULE is '' and the NWS rule already lives inside CONV_TR).
     const nws = (NWS_RULE && cur.some(k => INPUTS[k].nws)) ? ('\\n\\n' + NWS_RULE + '\\n') : ''
-    const prompt = PREAMBLE + GRAMMAR + CONV_TR + nws + cur.map(cardBlock).join('')
+    // H2191: stable-left order, the JS twin of headless_worker.build_prompt --
+    // PREAMBLE + CONV_TR (identical on every call) before the window-scoped GRAMMAR,
+    // then [nws], then the volatile card blocks (per-card grammar stays in cardBlock).
+    const prompt = PREAMBLE + CONV_TR + GRAMMAR + nws + cur.map(cardBlock).join('')
     let res
     try {
       res = await agentKill(prompt, { label: label + '[' + cur.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] }, skelBytesOfKeys(cur), killBudgetForCur(cur))

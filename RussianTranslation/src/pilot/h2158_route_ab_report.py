@@ -69,7 +69,8 @@ def prompt_shape(manifest, keys):
     for key in keys:
         prompt = manifest['prompt']
         nws = prompt.get('nws_rule', '') if manifest['inputs'][key].get('nws') else ''
-        prefix = (prompt['preamble'] + prompt.get('grammar', '') + prompt['translation']
+        # H2191 stable-left order; must stay in step with h2158_route_ab.split_prompt.
+        prefix = (prompt['preamble'] + prompt['translation'] + prompt.get('grammar', '')
                   + ('\n\n' + nws + '\n' if nws else ''))
         whole = build_prompt(manifest, [key])
         words = len((manifest['inputs'][key]['skeleton'] or '').split())
