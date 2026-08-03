@@ -161,6 +161,8 @@ def build_production_metrics(args, wf_path=None, workflow_meta=None):
     """
     wall_minutes, wall_source = derive_wall_clock_minutes(
         wf_path, workflow_meta, getattr(args, 'wall_clock_minutes', None))
+    # K6 (H2212): always emit metric keys so ledger rows never silently omit
+    # wall-clock / token slots (null is better than missing for coverage stats).
     fields = {
         'wall_clock_minutes': wall_minutes,
         'wall_clock_source': wall_source,
@@ -232,8 +234,14 @@ def append_ledger(status, out_dir=None):
         # H390 Phase 1: which model generated this window, read from the run's own
         # workflow meta (gen_opt_harness2 stamps meta.gen_model). Makes per-model
         # rates (the Fable-vs-Sonnet A/B) computable straight off the ledger.
-        'gen_model': (status.get('workflow_meta') or {}).get('gen_model'),
-        'production_metrics': status.get('production_metrics'),
+        # K6: stamp gen_model even when null so coverage % is honest.
+        'gen_model': (status.get('workflow_meta') or {}).get('gen_model')
+        if (status.get('workflow_meta') or {}).get('gen_model') is not None
+        else status.get('gen_model'),
+        'production_metrics': status.get('production_metrics') or {
+            'wall_clock_minutes': None,
+            'wall_clock_source': 'unavailable',
+        },
         # H1618: agent-lane telemetry from headless summary (translate/heal spent +
         # budget_stops/kill/conn). Was on wf_output.summary only; ledger rows stayed
         # open-loop for the H1403 "instrumentation blindness" bottleneck.
@@ -420,6 +428,60 @@ def audit_state(report):
     return 'clean'
 
 
+def _is_ephemeral_out_dir(out_dir):
+    """True when out_dir is a fixture/ephemeral scratch — never stamp the live denylist."""
+    if not out_dir:
+        return False
+    abs_out = os.path.abspath(out_dir)
+    if 'pwg_audit_ephemeral_' in abs_out:
+        return True
+    try:
+        import tempfile
+        tmp_root = os.path.abspath(tempfile.gettempdir())
+        if abs_out == tmp_root or abs_out.startswith(tmp_root + os.sep):
+            return True
+    except Exception:  # noqa: BLE001 — tempdir probe is advisory only
+        pass
+    return False
+
+
+def _stamp_last_audit_denylist(report, out_dir):
+    """OPT-7: apply last-audit defect outcome to the TM denylist (or a local fixture path).
+
+    Returns a small status dict for the report; never raises into the audit path for
+    missing raws (stamp skips unknown keys). Crashed audits and empty defect sets no-op.
+    """
+    crashed = report.get('crashed') or []
+    defect_keys = list(report.get('requeue_defect') or [])
+    defect_fshas = list(report.get('requeue_defect_fshas') or [])
+    if crashed:
+        return {'stamped': False, 'reason': 'crashed_audit_refused', 'crashed': list(crashed)}
+    if not defect_keys and not defect_fshas:
+        return {'stamped': False, 'reason': 'no_defect_keys'}
+    import translation_memory as tm  # late: keep window_reports import surface thin
+    lang = report.get('lang') or 'ru'
+    if lang not in ('ru', 'en'):
+        lang = 'ru'
+    # Ephemeral/temp audits: stamp a *local* denylist under out_dir so fixtures can prove
+    # refuse-on-fail without poisoning the shared live sidecar.
+    deny_path = None
+    if _is_ephemeral_out_dir(out_dir):
+        deny_path = os.path.join(out_dir, 'translation_memory.denylist.jsonl')
+    n, nf = tm.stamp_denylist_from_last_audit(
+        defect_keys, lang=lang, fshas=defect_fshas,
+        root=report.get('root') or '',
+        reason='last_audit_defect', path=deny_path)
+    return {
+        'stamped': True,
+        'cards': n,
+        'frags': nf,
+        'lang': lang,
+        'denylist': deny_path or tm.denylist_path(),
+        'false_invalidation_controls': (
+            'defect-only; skip-crashed; clean keys untouched; promote unblocks'),
+    }
+
+
 def write_reports(report, write_requeue, write_requeue_file=True, out_dir=None):
     # out_dir defaults to the live OUT dir. An ephemeral/fixture audit (see audit_window.py
     # --ephemeral) passes a throwaway scratch dir so a self-test or temp-file run can NEVER
@@ -536,6 +598,15 @@ def write_reports(report, write_requeue, write_requeue_file=True, out_dir=None):
             atomic_write_text(
                 os.path.join(out_dir, fname),
                 '\n'.join(keys_) + ('\n' if keys_ else ''))
+        # H2228 / OPT-7: stamp TM denylist from last *defect* audit outcome at write-requeue
+        # time (not only when requeue_from_audit runs). load_tm always applies the denylist
+        # before a hit, so a default --tm=auto requeue cannot silently re-serve failed
+        # content even without operator --no-tm. Controls:
+        #   * defect keys/fshas only (never transient)
+        #   * skip crashed blast-radius sets (B11)
+        #   * never touch the live canonical denylist from ephemeral/temp out_dir
+        #   * clean held-out keys stay serveable
+        report['tm_denylist_stamped'] = _stamp_last_audit_denylist(report, out_dir)
     status_json, status_md = write_window_status(report, out_dir)
     return (json_path, md_path,
             requeue_path if write_requeue and write_requeue_file else None,

@@ -1,0 +1,70 @@
+{
+  "manifest": "h1209_slice3.manifest.json",
+  "model": "claude-sonnet-5",
+  "keys": [
+    "nakzatra",
+    "sarvatra"
+  ],
+  "repeats": 2,
+  "rates": {
+    "input": 3.0,
+    "output": 15.0,
+    "cache_write_1h": 6.0,
+    "cache_write_5m": 3.75,
+    "cache_read": 0.3
+  },
+  "rows": [
+    {
+      "arm": "api",
+      "key": "nakzatra",
+      "wall_ms": 4442,
+      "failure_class": "http_401",
+      "error_type": "authentication_error",
+      "retry_after": null,
+      "detail": "Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CddwedrRzkGDcxofksH9H'}",
+      "usage": {},
+      "n": 1,
+      "cost_usd_1h_write": 0.0,
+      "cost_usd_5m_write": 0.0
+    },
+    {
+      "arm": "api",
+      "key": "nakzatra",
+      "wall_ms": 287,
+      "failure_class": "http_401",
+      "error_type": "authentication_error",
+      "retry_after": null,
+      "detail": "Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CddwefBoPqWPAEfP4rAdQ'}",
+      "usage": {},
+      "n": 2,
+      "cost_usd_1h_write": 0.0,
+      "cost_usd_5m_write": 0.0
+    },
+    {
+      "arm": "api",
+      "key": "sarvatra",
+      "wall_ms": 277,
+      "failure_class": "http_401",
+      "error_type": "authentication_error",
+      "retry_after": null,
+      "detail": "Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CddwegKm1tHgwcJsG8kUi'}",
+      "usage": {},
+      "n": 1,
+      "cost_usd_1h_write": 0.0,
+      "cost_usd_5m_write": 0.0
+    },
+    {
+      "arm": "api",
+      "key": "sarvatra",
+      "wall_ms": 261,
+      "failure_class": "http_401",
+      "error_type": "authentication_error",
+      "retry_after": null,
+      "detail": "Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CddwehWCgpJg4X9Ra9uv5'}",
+      "usage": {},
+      "n": 2,
+      "cost_usd_1h_write": 0.0,
+      "cost_usd_5m_write": 0.0
+    }
+  ]
+}

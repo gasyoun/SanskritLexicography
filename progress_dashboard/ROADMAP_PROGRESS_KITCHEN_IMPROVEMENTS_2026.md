@@ -1,10 +1,13 @@
 # Progress kitchen — improvements inventory
 
-_Created: 02-08-2026 · Last updated: 02-08-2026_
+_Created: 02-08-2026 · Last updated: 03-08-2026_
+
+**Shipped residual (H2218, 02-08-2026):** B1 subscription loader+UI · B9 idle-reason taxonomy · B10 article-site parity · R4 ledger metric backfill script (best-effort; unrecoverable rows stay null).
 
 **Surface:** [gasyoun.github.io/…/progress/](https://gasyoun.github.io/SanskritLexicography/progress/)  
-**Builders:** [`build_progress_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_progress_data.py) · [`build_kitchen_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_kitchen_data.py)  
-**Handoff:** [H2211](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2211-Grok_SanskritLexicography_progress-kitchen-improvements-inventory_02.08.26.md) (inventory only; implement as separate units)
+**Builders:** [`build_progress_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_progress_data.py) · [`build_kitchen_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_kitchen_data.py) · [`kitchen_slices.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_slices.py)  
+**Inventory handoff:** [H2211](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2211-Grok_SanskritLexicography_progress-kitchen-improvements-inventory_02.08.26.md)  
+**Implement handoff:** [H2212](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2212-Grok_SanskritLexicography_progress-kitchen-k1-k8-implement_02.08.26.md) — **K1–K8 shipped** (02-08-2026)
 
 This is a **measurement / product** backlog for the public kitchen + progress page — not a rewrite plan. Local ops (`:8765`, 5 s) stays the place for sub-second gates; the web page should answer *how is the campaign going?* for a human who opens the link once a day or once a week.
 
@@ -74,7 +77,7 @@ Instrumentation gaps — no honest number on the page until a writer exists.
 
 | # | Gap | Why it matters | How to measure (sketch) |
 |---|---|---|---|
-| B1 | **True billed $ (or subscription units)** | Band is extremes (cache-read vs fresh-input); Claude Max is subscription, not list-price | Optional: paste weekly usage export → `economy_subscription.json`; or agent-minutes proxy from wall-clock once dense |
+| B1 | **True billed $ (or subscription units)** | Band is extremes (cache-read vs fresh-input); Claude Max is subscription, not list-price | **H2218 shipped:** loader + UI + example schema; paste weekly usage export → `economy_subscription.json` (first real $ still needs human paste) |
 | B2 | **Per-window wall-clock + token completeness** | Speed/cost cards are statistically weak | Always write `production_metrics` on every audit close (not 12/473) |
 | B3 | **Health / route readiness (c4 …)** | Nonstop plan blocked on bimodal c4; kitchen never says GO/NO-GO | Append-only `health_probe_log.jsonl` (profile, wall_ms, api_ms, verdict) → sparkline + last verdict |
 | B4 | **Quality / fidelity over time** | Throughput without quality is vanity | Sample judge scores or fidelity aggregate per root/window; % gates green |
@@ -82,8 +85,8 @@ Instrumentation gaps — no honest number on the page until a writer exists.
 | B6 | **Promotion vs generation** | Store grows without “promoted clean window” | Count ledger `state==clean` and promote events; cards promoted this week |
 | B7 | **Lane burn-down beyond verb** | Nominal medium-50 paused; no public reason depth | Structured pause reasons + runnable backlog age |
 | B8 | **Multi-PC / multi-profile split** | Future nonstop multilane | `gen_model` / host / profile tags on ledger (only 15 rows have `gen_model` today) |
-| B9 | **Idle reason class** | Idle days are opaque | Tag long gaps: human, weekly cap, health NO-GO, machine off, waiting requeue |
-| B10 | **Article-site parity** | Progress store count vs published articles | Diff store roots vs article_site index |
+| B9 | **Idle reason class** | Idle days are opaque | **H2218 shipped:** taxonomy + `idle_reason_log.jsonl` + auto-rules with evidence; silence → unknown |
+| B10 | **Article-site parity** | Progress store count vs published articles | **H2218 shipped:** kitchen card diffs store roots vs article_site; measured=false if site absent |
 | B11 | **Error / crash rate** | `crash_state` events rare but load-bearing | Crashes per 100 windows; last crash root |
 | B12 | **Judge coverage** | `judge_sample_*` on ledger | % windows with judge sample; mean sample size |
 
@@ -107,16 +110,18 @@ Instrumentation gaps — no honest number on the page until a writer exists.
 
 Each slice is one PR / handoff-sized unit.
 
-| Unit | Delivers | Depends on |
-|---|---|---|
-| **K1 — Operator strip** | Cards: last root, window state, next_action (sanitized), days since last card | A4, A9 (show-only) |
-| **K2 — Yield quality** | Outcome mix + requeue/transient/defect + clean-key yield | A1–A3 |
-| **K3 — Review honesty** | Three-way store bar (approved / needs_review / ai_translated); fix human_reviewed | A8 |
-| **K4 — ETA strip** | Verb % + estimated days at 14d rate; confidence note | A10 |
-| **K5 — Health ribbon** | Last c4 (or active profile) GO/NO-GO + 14d sparkline | B3 |
-| **K6 — Instrumentation harden** | Every audit writes wall-clock + tokens + gen_model | B2, B8 |
-| **K7 — Calendar + idle fusion** | Heatmap shows idle / active / zero | A12 |
-| **K8 — Cost honesty** | Sample-size badge; optional cumulative band from full ledger tokens when complete | A11, B1 |
+| Unit | Delivers | Depends on | Status |
+|---|---|---|---|
+| **K1 — Operator strip** | Last root, window state, next_action (sanitized), days since last card | A4, A9 | ✅ H2212 |
+| **K2 — Yield quality** | Outcome mix + requeue/transient/defect + clean-key yield + top roots | A1–A3, A6 | ✅ H2212 |
+| **K3 — Review honesty** | Three-way store bar (approved / needs_review / ai_translated); human_reviewed = approved | A8 | ✅ H2212 |
+| **K4 — ETA strip** | Verb % + estimated days at 14d card rate (labelled estimate) | A10 | ✅ H2212 |
+| **K5 — Health ribbon** | Last probe GO/NO-GO + recent sparkline from gate0 probe logs | B3 (read existing probes) | ✅ H2212 |
+| **K6 — Instrumentation harden** | Coverage % on wall-clock/tokens/gen_model; audit path always stamps metric keys | B2, B8 | ✅ H2212 (forward + coverage UI) |
+| **K7 — Calendar + idle fusion** | Heatmap idle-marked days (≥1h idle, 0 cards) | A12 | ✅ H2212 |
+| **K8 — Cost honesty** | Sample-size badge on $/clean band | A11 | ✅ H2212 |
+
+Also surfaced: gate exit=0 rate, fidelity aggregate, judge coverage, crash count (quality panel).
 
 H2204 already shipped last idle, monthly idle days, spend split, equal lists — do not re-mint those.
 
@@ -136,12 +141,31 @@ Local main checkout census (gitignored artifacts; not CI):
 
 ---
 
-## 7. Default recommendation
+## 7. Residual Grok queue (minted 03-08-2026)
 
-If only one more pass after H2204: **K1 + K2 + K3** (operator strip, yield/requeue, review honesty). They use existing files, change only builders + HTML, and answer the three questions the page still cannot:
+K1–K8 UI is shipped (H2212). Remaining measurement gaps → **Grok 4.5** handoffs (execute in order; H2230 first):
 
-1. *What is stuck right now?*  
-2. *Is the machine producing clean windows or spinning requeues?*  
-3. *Has any human actually signed off?*
+| Order | ID | Effort | Title / gap |
+|---|---|---|---|
+| 1 | [H2230](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2230-Grok_SanskritLexicography_progress-kitchen-wallclock-token-dense_03.08.26.md) | hard | Dense wall-clock + tokens (B2 / K6 residual) |
+| 2 | [H2231](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2231-Grok_SanskritLexicography_progress-kitchen-gen-model-host-profile_03.08.26.md) | medium | gen_model / host / profile (B8) |
+| 3 | [H2232](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2232-Grok_SanskritLexicography_progress-kitchen-true-cost-subscription_03.08.26.md) | medium | True $ / subscription units (B1) |
+| 4 | [H2233](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2233-Grok_SanskritLexicography_progress-kitchen-verb-eta-roots-per-day_03.08.26.md) | medium | Verb ETA roots/day (K4 residual) |
+| 5 | [H2234](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2234-Grok_SanskritLexicography_progress-kitchen-idle-reason-tags_03.08.26.md) | medium | Idle reason tags (B9) |
+| 6 | [H2235](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2235-Grok_SanskritLexicography_progress-kitchen-review-throughput-series_03.08.26.md) | medium | Review throughput series (B5) |
+| 7 | [H2236](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2236-Grok_SanskritLexicography_progress-kitchen-quality-timeseries_03.08.26.md) | hard | Quality timeseries (B4) |
+| 8 | [H2237](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2237-Grok_SanskritLexicography_progress-kitchen-promote-vs-generate_03.08.26.md) | medium | Promote vs generate (B6) |
+| 9 | [H2238](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2238-Grok_SanskritLexicography_progress-kitchen-nominal-burn-down_03.08.26.md) | medium | Nominal burn-down (B7) |
+| 10 | [H2239](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2239-Grok_SanskritLexicography_progress-kitchen-article-parity_03.08.26.md) | medium | Article-site parity (B10) |
+| 11 | [H2240](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2240-Grok_SanskritLexicography_progress-kitchen-health-probe-log_03.08.26.md) | medium | Canonical health_probe_log (B3 residual) |
+| 12 | [H2241](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2241-Grok_SanskritLexicography_progress-kitchen-timeseries-slices_03.08.26.md) | medium | Kitchen slices in progress_timeseries |
+
+**Starter (first residual):**
+
+```
+Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H2230-Grok_SanskritLexicography_progress-kitchen-wallclock-token-dense_03.08.26.md and execute it.
+```
+
+Grok 4.5 (`grok-4.5`) · worktree off `origin/master` in SanskritLexicography.
 
 _Dr. Mārcis Gasūns_
