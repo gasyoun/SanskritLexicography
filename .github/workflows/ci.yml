@@ -129,6 +129,9 @@ jobs:
       - name: Validate research-layer sidecars (capability cards 5, 23)
         working-directory: RussianTranslation
         run: |
+          # H1902: worktree-safe sibling-root resolution -- proves both the
+          # unpinned-warn and pinned-raise directions (FINDINGS #503).
+          python src/sibling_root.py --selftest
           python src/mw_compounds.py --selftest
           python src/mfs_baseline.py --selftest
           python src/government_census.py selftest
@@ -213,6 +216,21 @@ jobs:
           python src/build_mbh_concordance.py selftest
           python src/pilot/lang_parity_check.py
           python src/pilot/check_launch_ledger.py --since 2026-07-05
+      - name: Validate nonstop multilane runtime (H2175 wave 1)
+        working-directory: RussianTranslation
+        run: |
+          python src/pilot/data_root.py --selftest
+          python src/pilot/parked_queue.py --selftest
+          python src/pilot/spot_check_daily.py --selftest
+          python src/pilot/lane_guard.py --selftest
+          python src/pilot/nonstop_scheduler.py --selftest
+          python src/pilot/digest_daily.py --selftest
+          python src/pilot/weekly_packet.py --selftest
+          python src/pilot/data_inventory.py --selftest
+          python src/pilot/data_migrate.py --selftest
+          python src/pilot/cloud_window.py
+          python src/pilot/openrouter_worker.py --selftest
+          python src/pilot/ci_gate_runner.py --selftest
       - name: Validate <ls> link enrichment (Panini + Spr. (II), H1307)
         working-directory: RussianTranslation
         run: python src/pilot/ls_enrichment_selftest.py

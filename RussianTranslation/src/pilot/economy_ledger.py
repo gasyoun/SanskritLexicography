@@ -67,7 +67,18 @@ import parse_workflow_cost as pwc  # noqa: E402  (path insertion above must run 
 PRICE = pwc.PRICE
 
 SCHEMA = 'pwg.economy_ledger.v1'
-FROZEN_LOG = os.path.join(HERE, 'generation_api_probe_log.jsonl')
+# H2175 step 4: $PWG_ECONOMY_LOG is the --data-root seam (data_root.py maps it to
+# <root>/telemetry/generation_api_probe_log.jsonl); absent -> the historical local path.
+# frozen_log() resolves LAZILY so a caller that sets the env var in its main() (after
+# importing this module) still wins; the module constant stays for import-time consumers.
+
+
+def frozen_log():
+    return os.environ.get('PWG_ECONOMY_LOG') or os.path.join(
+        HERE, 'generation_api_probe_log.jsonl')
+
+
+FROZEN_LOG = frozen_log()
 
 # note key=int pattern (e.g. "subagent_tokens=1836200 clean=6 store=11562")
 _NOTE_KV = re.compile(r'(\w+)=(-?\d+)\b')

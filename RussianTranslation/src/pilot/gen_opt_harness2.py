@@ -1047,15 +1047,32 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         '$defs': defs,
     }
 
+    # H2175 step 8 (R4.2 park-and-skip): with $PWG_PARK_AND_SKIP=1 an automated lane
+    # parks an unbuildable key (missing input / lossy mask round-trip) with a one-line
+    # reason and continues with the remaining keys; the historical fail-loud die() stays
+    # the default for every human-driven invocation. An all-parked window still dies —
+    # an empty manifest is a wiring error, not an ambiguity.
+    import parked_queue
     inputs, phmaps, input_hashes, raws, portraits = {}, {}, {}, {}, {}
-    for k in keys:
+    keys = list(keys)   # park-and-skip mutates OUR view, never the caller's list
+    for k in list(keys):
         rp, pp = input_paths(k)
         if not (os.path.exists(rp) and os.path.exists(pp)):
+            if parked_queue.enabled():
+                parked_queue.park(k, 'missing input (raw/portrait) — unclassifiable for '
+                                     'this window', source='gen_opt_harness2')
+                keys.remove(k)
+                continue
             die('missing input for %s' % k)
         raw = read_text(rp)
         portrait = read_text(pp)
         skel, ph, _ = pwg_mask.mask(raw)
         if pwg_mask.restore(skel, ph) != raw:
+            if parked_queue.enabled():
+                parked_queue.park(k, 'mask round-trip not lossless — card unclassifiable',
+                                  source='gen_opt_harness2')
+                keys.remove(k)
+                continue
             die('mask round-trip not lossless for %s' % k)
         inputs[k] = {'skeleton': skel, 'portrait': portrait,
                      'ls': raw.count('<ls'), 'sk': raw.count('{#'),
@@ -1070,6 +1087,8 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         portraits[k] = portrait
         phmaps[k] = ph
         input_hashes[k] = {'raw_sha256': sha256_file(rp), 'portrait_sha256': sha256_file(pp)}
+    if not keys:
+        die('all selected keys parked (R4.2) — nothing left to build for this window')
 
     # --tm: content-addressed pre-resolution. A card whose masked-input SHA is already in the
     # translation memory is served from cache (ZERO agent() calls) instead of re-translated —

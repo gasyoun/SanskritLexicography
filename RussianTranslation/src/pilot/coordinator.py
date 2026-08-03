@@ -72,6 +72,7 @@ import probe_log  # noqa: E402
 PROBE_POLICY = probe_log.CURRENT_POLICY
 PROBE_LATENCY_CEILING_MS = probe_log.ceiling_for(PROBE_POLICY)
 
+import data_root  # noqa: E402  (H2175 step 4: --data-root env-seam shim)
 import promote_final_cards  # noqa: E402
 import promotion_journal  # noqa: E402
 from safe_filename import safe_name  # noqa: E402
@@ -2538,6 +2539,8 @@ def status(args):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
+    # H2175 step 4: global flag, must precede the subcommand on the command line.
+    data_root.add_arg(ap)
     sub = ap.add_subparsers(dest='cmd', required=True)
     s = sub.add_parser('status')
     s.set_defaults(func=status)
@@ -2619,6 +2622,14 @@ def main(argv=None):
     d = sub.add_parser('daily-close')
     d.set_defaults(func=daily_close)
     args = ap.parse_args(argv)
+    if getattr(args, 'data_root', None):
+        # H2175 step 4: env seams first (children + lazy resolvers), then re-resolve the
+        # two import-time store constants — canonical_store() was already evaluated at
+        # module import, before the flag existed. With $PWG_RU_STORE now set, the env
+        # value IS the canonical resolution (store_path precedence rule 1).
+        data_root.apply(args.data_root, ensure_dirs=True)
+        promote_final_cards.DEFAULT_STORE = os.environ['PWG_RU_STORE']
+        translation_memory.DEFAULT_STORE = os.environ['PWG_RU_STORE']
     try:
         reconcile_promotion_journals()
     except (promotion_journal.JournalError,

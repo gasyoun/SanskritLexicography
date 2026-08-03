@@ -66,20 +66,47 @@ VERDICTS = ('GO', 'NO-GO')
 # FINDINGS §270 established it was calibrated partly against rate-limit BACKOFF rather than route
 # latency (a rate-limited CLI hangs instead of reporting 429, so the readings behind it may be
 # measuring retry delay). H2118 could not re-derive it: the paired same-moment quota check that
-# would make new readings trustworthy was unavailable, and no clean reading exists — as of
-# 01-08-2026 not one probe row in the tree carries the `duration_api_ms` H2095 added. Whoever
-# lands clean readings adds `production_v3` with the derived ceiling; do NOT edit this value.
+# would make new readings trustworthy was unavailable, and at that date not one probe row in the
+# tree carried the `duration_api_ms` H2095 added. Superseded by `production_v3`; do NOT edit it —
+# rows stamped `production_v2` were genuinely judged at 65 000.
+#
+# ✅ `production_v3` IS DERIVED — H2138 (#946), 02-08-2026, from the 8-reading measured c4 series
+# (5 of them decomposable). Reproduce with `python src/pilot/h2138_ceiling_derive.py`, which
+# carries the readings and the two rules. Two ceilings, because ONE NUMBER CANNOT DO THE JOB:
+#
+#     wall elapsed_ms  =  duration_api_ms  +  api_gap_ms
+#                         (route health)     (in-CLI scaffolding)
+#
+# and they move independently — the api/wall ratio measured 0.25..0.72, so no fixed factor
+# converts one into the other (H2174). The 02-08 12:46 reading is the proof: the FASTEST API
+# time ever recorded on c4 (16 445 ms) failed the 65 000 ms wall gate on 49 846 ms of
+# scaffolding. At 65 000 the gate passed 2/8 — its median reading sat ~12 s ABOVE the ceiling,
+# so it failed ~75 % of the time at ~$1.09 a pull and was a lottery, not a gate.
+#
+#   `latency_ceil_ms` 80 000 = worst LEGITIMATE call = healthy-route max (29 069) + largest
+#                              scaffolding tax ever observed (49 846), rounded up.
+#   `api_ceil_ms`     45 000 = healthy-route cluster max (29 069) x 1.5. A SECOND, INDEPENDENT
+#                              fail condition (h2152 §5.2 item 2; H2174 "option C") — an ADDED
+#                              guard the wall number never had.
+#
+# The clock is NOT reopened here: v3 still gates on wall `elapsed_ms` per MG's 02-08-2026 ruling
+# (H2160 option A). Honest limit: the ROUTE guard changes no historical verdict, because the one
+# degraded-route reading (69 137 ms api) also breached the wall ceiling. It is a FORWARD guard
+# for a class the series proves exists but has not yet seen in isolation.
 POLICIES = {
-    'production_v1': {'latency_ceil_ms': 30_000, 'conn_error_ceil': 0,
+    'production_v1': {'latency_ceil_ms': 30_000, 'api_ceil_ms': None, 'conn_error_ceil': 0,
                       'payload_floor_bytes': PAYLOAD_FLOOR_BYTES,
                       'require_schema_valid': True},
-    'production_v2': {'latency_ceil_ms': 65_000, 'conn_error_ceil': 0,
+    'production_v2': {'latency_ceil_ms': 65_000, 'api_ceil_ms': None, 'conn_error_ceil': 0,
+                      'payload_floor_bytes': PAYLOAD_FLOOR_BYTES,
+                      'require_schema_valid': True},
+    'production_v3': {'latency_ceil_ms': 80_000, 'api_ceil_ms': 45_000, 'conn_error_ceil': 0,
                       'payload_floor_bytes': PAYLOAD_FLOOR_BYTES,
                       'require_schema_valid': True},
 }
 # The policy the live dispatch + receipt gates run under. Importers derive their ceiling from
 # `POLICIES[CURRENT_POLICY]` rather than restating the number, so a future bump is one edit here.
-CURRENT_POLICY = 'production_v2'
+CURRENT_POLICY = 'production_v3'
 
 
 def ceiling_for(policy=CURRENT_POLICY):
@@ -111,8 +138,15 @@ def _append(row):
 
 
 def verdict_for(latency_ms, conn_errors, payload_bytes=None, kind=None,
-                policy='production_v1', schema_valid=None):
-    """The mechanical gate. Returns (verdict, reason)."""
+                policy='production_v1', schema_valid=None, api_ms=None):
+    """The mechanical gate. Returns (verdict, reason).
+
+    `latency_ms` is wall `elapsed_ms` — the gating clock, MG 02-08-2026 (H2160 option A).
+    `api_ms` is the envelope's `duration_api_ms`, checked against the policy's
+    `api_ceil_ms` as a SECOND, INDEPENDENT fail condition (H2138). A policy with
+    `api_ceil_ms: None`, or a reading that carries no `duration_api_ms`, gates on wall
+    alone exactly as before — absent instrumentation must not silently change a verdict.
+    """
     if policy not in POLICIES:
         raise ValueError('unknown probe policy %r' % policy)
     spec = POLICIES[policy]
@@ -120,6 +154,10 @@ def verdict_for(latency_ms, conn_errors, payload_bytes=None, kind=None,
         return 'NO-GO', f'{conn_errors} connection error(s) > {spec["conn_error_ceil"]}'
     if latency_ms is None or latency_ms >= spec['latency_ceil_ms']:
         return 'NO-GO', f'latency {latency_ms}ms is not < {spec["latency_ceil_ms"]}ms'
+    api_ceil = spec.get('api_ceil_ms')
+    if api_ceil is not None and api_ms is not None and api_ms >= api_ceil:
+        return 'NO-GO', (f'route latency {api_ms}ms is not < {api_ceil}ms '
+                         f'(duration_api_ms; wall was within its own ceiling)')
     # H462: only a load-representative warm-up may authorize a launch. A missing
     # payload size is treated as trivial — the burden of proof is on the probe.
     if kind == 'warmup' and (payload_bytes is None or payload_bytes < spec['payload_floor_bytes']):
