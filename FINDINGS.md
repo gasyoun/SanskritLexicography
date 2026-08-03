@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 02-08-2026 (§515 — WIL 1819 vs 1832 edition-basis split for PWG/MW)_
+_Created: 26-06-2026 · Last updated: 03-08-2026 (§516 — a later PR's stale-base merge silently reverting an earlier PR's ledger-doc re-stamp)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §516) whatever its section, so existing numbers never shift; when a finding is later
+(currently §517) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -54,6 +54,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§510. A frozen local checkout is an actively misleading source for any append-only registry — read the numbering contract from `origin/`, not from disk](#510-a-frozen-local-checkout-is-an-actively-misleading-source-for-any-append-only-registry--read-the-numbering-contract-from-origin-not-from-disk) — one session, two collisions: a 177-commits-behind checkout showed §462 as the ceiling when `origin` had 166 findings, and the in-file next-free marker was stale too. Read the contract from `origin/`, derive the ceiling from the headings, and assert the marker sits above every used number.
 - 🔴 [§511. MW72 carries ZERO `<ls>` source citations — every cross-dictionary citation test that names it shrinks to MW](#511-mw72-carries-zero-ls-source-citations--every-cross-dictionary-citation-test-that-names-it-shrinks-to-mw) — `csl-orig/v02/mw72/mw72.txt` is 17.2 MB and contains not one `<ls>` tag, while MW has 320,828. Any apparatus/citation comparison that lists MW72 as a target silently produces a zero, not an error. Verify a dictionary's tag layer before scoping a test around it.
 - 🔴 [§515. PWG rests on WIL 1819; MW/MW72 English on WIL 1832 — CDSL has only 1832 OCR; do not treat Wilson as edition-free](#515-pwg-rests-on-wil-1819-mwmw72-english-on-wil-1832--cdsl-has-only-1832-ocr-do-not-treat-wilson-as-edition-free) — house edition-basis rule + OCR gap + preface-only scope for 1819; `L.` stays "native lexicons" with European transmission via 1819, not a Wilson siglum (`W.` is Wilson/1832).
+- 🔴 [§516. A later PR's stale-base merge can silently revert an EARLIER PR's ledger-doc-only re-stamp while leaving that earlier PR's CODE change fully intact](#516-a-later-prs-stale-base-merge-can-silently-revert-an-earlier-prs-ledger-doc-only-re-stamp-while-leaving-that-earlier-prs-code-change-fully-intact) — H2226's SHARED re-stamp of two LANG_PARITY entries was reverted by H2227's stale-base merge while the underlying code stayed field-parameterized; detect by re-hashing the working tree against the last legitimate re-stamp commit, not by trusting the ledger's currently-recorded hash.
 - 🟠 [§504. The NWS tag layer reaches only 2.2 % of the RU store — a facet bar over it is right, but it is not the sheet's main axis](#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis)
 
 
@@ -5264,3 +5265,37 @@ this pipeline where they aren't.
 Canonical note: [WIL `docs/WIL_EDITION_LINEAGE_1819_1832.md`](https://github.com/sanskrit-lexicon/WIL/blob/main/docs/WIL_EDITION_LINEAGE_1819_1832.md). Cross-wired into [MWS DICT_PROFILE](https://github.com/sanskrit-lexicon/MWS/blob/master/DICT_PROFILE.md), [PWG README](https://github.com/sanskrit-lexicon/PWG/blob/main/README.md), [MW72 README](https://github.com/sanskrit-lexicon/MW72/blob/master/README.md). Related: [§511](#511-mw72-carries-zero-ls-source-citations--every-cross-dictionary-citation-test-that-names-it-shrinks-to-mw) (MW72 has zero `<ls>`).
 
 > Grok 4.5 (`grok-4.5`) · 02-08-2026 · MG standing note (edition lineage + OCR scope)
+
+### §516. A later PR's stale-base merge can silently revert an EARLIER PR's ledger-doc-only re-stamp while leaving that earlier PR's CODE change fully intact
+
+H2226/OPT-4 (`dc81f89a`, 02-08-2026, Grok 4.5) correctly field-parameterized
+`RussianTranslation/src/pilot/h1209/wf_template.js` + `h1210/wf_template_ab.js` +
+`h1210/control_template.js` (TARGET_FIELD/CONTROLLER_PROMPT from the payload instead of a
+hardcoded `russian`) and, in the SAME commit, re-stamped the two `LANG_PARITY.md` ledger
+entries this closed (`h1209_controller_worker_rig`, `h1210_ab_arm_scaffold`) from GAP to
+SHARED with the new file hashes. The very next `LANG_PARITY.md`-touching commit,
+H2227/OPT-2 (`72c8311d`), was authored/rebased against a base that predated H2226's ledger
+edit — when it landed, git's merge silently carried the OLDER (pre-H2226) content of just
+those two ledger entries forward, reverting `verdict`/`languages`/`verified_sha256` back to
+GAP and the old hashes, **while H2226's actual code files were never touched and stayed
+fully parameterized**. `lang_parity_check.py` correctly flagged the resulting hash mismatch
+as "drift" on the next `origin/master` checkout ([H2243](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2243-Sonnet_SanskritLexicography_pwg-lang-parity-drift-reverify_03.08.26.md)),
+but the mechanical drift-check gives no signal on WHICH side moved — a naive
+`--update-hash` re-stamp at that point would have accepted the reverted-to-GAP verdict as
+current truth, permanently losing H2226's SHARED determination in the ledger's own history.
+The only way to tell "code drifted, re-verify the verdict" apart from "the ledger doc itself
+regressed under the code" was to directly re-hash the current working-tree files and compare
+against the LAST commit that legitimately re-stamped them (`dc81f89a`), not just diff
+against the ledger's own currently-recorded (possibly-reverted) hash.
+
+**Detection recipe:** when a ledger/registry `--update-hash`-style drift-checker flags an
+entry, before blindly re-stamping, `git log --oneline -N -- <file>` on every tracked file in
+that entry and read each intervening commit's diff — if a commit touched the doc file itself
+(not just the tracked source files), check whether IT reverted a sibling entry rather than
+advancing it. A merge/rebase that predates a doc-only re-stamp is a silent-revert vector for
+any append-only-in-intent but git-merged registry (LANG_PARITY-style ledgers, `CROSS_REPO_DECISIONS`-style
+files, hand-maintained `verified_sha256` snapshots) — the failure mode is invisible to a
+plain `git diff` review of the newer PR alone, since that PR's author never edited those
+lines on purpose and the PR's own file-list looks unrelated.
+
+> Sonnet 5 (`claude-sonnet-5`) · 03-08-2026 · H2243 LANG_PARITY drift re-verify

@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed
+- **LANG_PARITY drift re-verify — FINDINGS write-up (H2243, 03-08-2026, Sonnet 5 `claude-sonnet-5`):** independently landed the same ledger fix as [H2209 (#1060)](https://github.com/gasyoun/SanskritLexicography/pull/1060), which shipped first — its `LANG_PARITY.md` content (9 violations across 4 entries, all re-derived/restored SHARED) is what's live on master; this PR's residual contribution is the root-cause write-up at [FINDINGS §516](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#516-a-later-prs-stale-base-merge-can-silently-revert-an-earlier-prs-ledger-doc-only-re-stamp-while-leaving-that-earlier-prs-code-change-fully-intact) — a later PR's stale-base merge can silently revert an earlier PR's ledger-doc-only re-stamp while leaving that earlier PR's code change fully intact (traced to H2226/OPT-4 vs. the H2227/OPT-2 merge `72c8311d`). `lang_parity_check.py`: 0 violations. `window_selftest.py`: 201/201 passed.
+
 ## [1.138.0] - 2026-08-03
 
 ### Added
