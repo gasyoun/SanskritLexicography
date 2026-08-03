@@ -112,3 +112,53 @@ def test_vidyut_single_candidate_has_no_trail():
     assert (lemma, pos, cnt) == ('BU', 'verb', 5)
     assert alts == []
     assert build_vidyut_fallback.pick_primary_and_alts(collections.Counter()) is None
+
+
+# --- Fixture D · H2194 krdanta-collapse guard (wave-2 defect class 2) --------
+# Tallies below are the REAL kosha-0.4.0 entry counts observed for the panel's
+# failing examples (janitf, liNgin) and for rAmeRa, the same collapse on the
+# commonest of nouns.
+
+def test_krdanta_collapse_repicks_basic_stem():
+    """janitf: 12 krdanta entries say lemma 'jan', 3 Basic entries say 'janitf'.
+    With the Basic set the nominal stem must win; the dhatu stays an alternate."""
+    lp = collections.Counter({('jan', 'noun'): 12, ('janitf', 'noun'): 3})
+    basic = {('janitf', 'noun')}
+    lemma, pos, cnt, alts = build_vidyut_fallback.pick_primary_and_alts(lp, basic)
+    assert (lemma, pos, cnt) == ('janitf', 'noun', 3)
+    assert ('jan', 'noun', 12) in alts            # demoted, not dropped (trail intact)
+
+
+def test_krdanta_guard_beats_shortest_tiebreak():
+    """liNgin: krdanta collapses liNg/liNgi outnumber the Basic stem liNgin;
+    the old count-then-shortest pick chose liNg. Basic must now win."""
+    lp = collections.Counter(
+        {('liNg', 'noun'): 4, ('liNgi', 'noun'): 4, ('liNgin', 'noun'): 2})
+    basic = {('liNgin', 'noun')}
+    lemma, pos, cnt, alts = build_vidyut_fallback.pick_primary_and_alts(lp, basic)
+    assert lemma == 'liNgin'
+    assert {a[0] for a in alts} == {'liNg', 'liNgi'}
+
+
+def test_no_basic_candidate_keeps_old_pick():
+    """viDunvAna: every candidate is a krdanta collapse (no Basic entry exists);
+    nothing better is available, so the pre-guard pick stands unchanged."""
+    lp = collections.Counter({('viDu', 'noun'): 4})
+    assert build_vidyut_fallback.pick_primary_and_alts(lp, set()) == \
+        build_vidyut_fallback.pick_primary_and_alts(lp)
+
+
+def test_krdanta_guard_never_demotes_verb_candidates():
+    """A genuine Tinanta parse outnumbering a Basic noun still wins by count —
+    the guard demotes only krdanta-collapsed NOUN candidates."""
+    lp = collections.Counter({('gam', 'verb'): 3, ('gamana', 'noun'): 2})
+    basic = {('gamana', 'noun')}
+    lemma, pos, cnt, alts = build_vidyut_fallback.pick_primary_and_alts(lp, basic)
+    assert (lemma, pos) == ('gam', 'verb')
+
+
+def test_krdanta_guard_none_is_backward_compatible():
+    """basic=None (the legacy call shape) reproduces the pre-H2194 ranking."""
+    lp = collections.Counter({('jan', 'noun'): 12, ('janitf', 'noun'): 3})
+    lemma, pos, cnt, alts = build_vidyut_fallback.pick_primary_and_alts(lp)
+    assert lemma == 'jan'                          # old behavior, deliberately
