@@ -1,8 +1,38 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 03-08-2026_
+_Created: 09-07-2026 · Last updated: 04-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 04-08-2026 (H2194) — Sa→Ru gloss vidyut tier: krdanta-collapse lemma guard (wave-2 defect class 2)
+
+Fable 5 (`claude-fable-5`), [H2194](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2194-Fable_RussianTranslation_askbatch-saru-gloss-residual-2026-08_02.08.26.md)
+(ask-batch residual W1-GL). The wave-2 panel's lemma-defect **class 2** — derived nominals
+lemmatized to a bare verbal root (`janitṛ`→jan, `liṅgin`→liṅg; vidyut tier lemma precision
+71.8 %) — traced to entry-count voting in
+[`src/build_vidyut_fallback.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_vidyut_fallback.py):
+kosha lists a krdanta-derived Subanta under the bare dhatu, so collapses outnumber the real
+stem. Fix: vidyut's own `PratipadikaEntry.Basic` vs `.Krdanta` distinction now demotes
+krdanta-collapsed noun candidates whenever a Basic stem candidate exists (demoted lemmas stay
+in the `vidyut_ambiguity.tsv` trail). Before/after primary pick on real kosha 0.4.0 entries:
+
+| form | old pick | new pick | changed |
+|---|---|---|---|
+| janitf (janitṛ, panel example) | jan | **janitf** | ✅ |
+| liNgin (liṅgin, panel example) | liNg | **liNgin** | ✅ |
+| rAmeRa (rāmeṇa — same collapse on the commonest noun) | ram | **rAma** | ✅ |
+| rAma | ram | **rAma** | ✅ |
+| viDunvAna (no Basic candidate in kosha) | viDu | viDu | no (nothing better exists) |
+| gacCati (verb lemma already right) | gam | gam | no (guard never touches verbs) |
+
+Regressions pinned by 5 new Fixture-D tests in
+[`tests/test_saru_gloss_pipeline.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_saru_gloss_pipeline.py)
+(12 passing, real-kosha tallies as fixtures; `basic=None` reproduces the old ranking exactly).
+`vidyut_form2lemma.tsv` is **not** regenerated here (worktree-local derived data; D8 fences
+republish behind a human GO) — the layer-wide repick count will surface as the new
+`krdanta_repick` stat on the next gated regen. Defect classes 1 (ṛ/ṝ length collapse — its
+example forms get **0 entries** from kosha 0.4.0, unreachable in this function) and 3
+(compound final-member, marker tier) remain open wave-3 targets.
 
 ## 03-08-2026 (H2191) — stable-left prompt reorder: cross-window stable head 1 226 → 12 249 chars (offline, no paid call)
 
