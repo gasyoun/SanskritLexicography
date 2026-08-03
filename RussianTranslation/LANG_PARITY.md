@@ -110,7 +110,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "f4ea220f7dd4c503adf3c36f7c7b345785982a1f96aa5d8c65fa55f7a3c5a90e",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -131,7 +131,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pwg_mask.py": "f4ea220f7dd4c503adf3c36f7c7b345785982a1f96aa5d8c65fa55f7a3c5a90e",
       "src/pilot/prompt_rule_audit.py": "b235136ea95a7c77eb2cee0a3a6bc393c75df221ba587253a7949d9e3cbe4927",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -151,10 +151,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "C1 (bug-hunt review, Opus 4.8 claude-opus-4-8, 21-07-2026). The check keys off TARGET_FIELD (JS) / manifest['field'] (Python) = the per-language field, so it applies identically to ru and en with no language branching. Ported to every off-batch lane the batch accept() H1152 guard never reached: JS heal (stitched-translation-fidelity-reject), headless normalize_batch + selfheal stitch (translation-fidelity-reject / stitched-translation-fidelity-reject), autosplit cmd_merge + stitch_topup (complete-stitch fidelity drift -> reject). Tests: window_selftest test_heal_lane_target_field_fidelity_wired / test_autosplit_stitch_topup_rejects_target_field_drop / test_autosplit_merge_rejects_target_field_drop; headless_worker_selftest test_normalize_batch_translation_fidelity_reject / test_headless_heal_stitch_translation_fidelity_reject. H1940 H1 (30-07-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. headless_worker.py drifted only in main()'s manifest-read boundary -- the open/read/sha256/json.loads moved inside the pre-existing configuration try, and KeyError/TypeError joined its except tuple. The TARGET_FIELD / manifest['field'] fidelity count itself, normalize_batch, the selfheal stitch and both autosplit stitch writers are byte-unchanged. The only interaction is upstream and strictly narrowing: a malformed manifest is now refused as `configuration` before any lane runs, so the guard is never handed one -- it cannot change a verdict it no longer reaches. No language branch is added; the field stays data, not a condition. H1940 H2b (31-07-2026, OpenAI GPT-5.6 Sol `openrouter/openai/gpt-5.6-sol`): re-derived, SHARED stands. The fidelity check is byte-unchanged; only a later typed translate-budget note now preserves its per-key rejection instead of erasing it. The same manifest field still selects RU or EN data without a language branch, and the new pin drives `translation-fidelity-reject` through the real shared path. H1940 H4/H3 (31-07-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. headless_worker.py drifted only by the H3 durability call in atomic_json. This is the most language-sensitive entry in the drifted set, so it is re-derived explicitly rather than by the blanket argument: a flush()+fsync before an already-existing os.replace cannot alter target-field selection, markup fidelity comparison, or the per-field verdict -- it only guarantees the already-decided bytes survive a power loss. The written bytes are unchanged (measured), so even a byte-level fidelity check is unaffected. H2063 (#943/#944, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift is the rate-limit-through-timeout classification: proc_tree now attaches a tree-killed child's drained stdout/stderr to its TimeoutExpired, headless_worker classifies that text and promotes an ACCOUNT-level cause (429/401) to HardFailure exit 21 instead of a bare 'timeout', and the orchestrator probe does the same. It fires only when a call was KILLED and therefore produced no card at all, and it branches on the PROVIDER's message, never on a target-language field — a locked account refuses RU and EN identically. The <ls>/{#..#} target-field guard is untouched and still runs on every promotable lane; a killed call yields no target column to count. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2091 (#948, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift makes `_selfheal_stop_reason` RANKED — a budget stop still wins first (H2a, unchanged), then any other typed INFRASTRUCTURE reason, then the historical `selfheal-nothing-resolved`. A `timeout` previously fell through to that last branch, reporting a dead CALL as a CONTENT verdict on the only per-key cause an operator ever sees. Language-independent by construction: the reason is read from how the call died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Genuine content failures (fidelity reject, missing/mismatched key) keep `selfheal-nothing-resolved` exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established. H2189 (02-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, verdict stands. The drift is the opt-in `--safe-mode` spawn flag: `resolve_safe_mode` reads `execution.cli_safe_mode` from the manifest, `cli_supports_safe_mode` probes the installed CLI once and fails SAFE to the historical argv, and `HeadlessEngine.call` appends the flag when both agree. It changes WHICH profile context the CLI child loads (operator CLAUDE.md, skills, commands, agents, hooks) -- a property of the spawn, never of the target language: the RU and EN lanes send the same argv shape and a stripped profile strips identically for both. Re-derived mechanically, not asserted: every added line in the diff was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) and the only hits are a prose measurement line quoting '13/13 senses carrying Russian', not a branch. The schema and `--permission-mode plan` posture that make this a pwg_ru translation call are pinned as surviving the flag by `headless_worker_selftest.test_safe_mode_is_carried_when_the_manifest_requests_it`, and the default-OFF posture by `test_safe_mode_is_opt_in_and_off_by_default`.",
     "tracking": "H1412",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
       "src/pilot/headless_worker.py": "227a80037d477722f5649343d43d45103e540149e543005b2a1574d55707f385",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -171,7 +171,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a"
     }
   },
   {
@@ -189,8 +189,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H155 (2026-07-04): tyaj~~h0_zz_pw (a PW addenda card compressing a whole root article — base verb + Caus/Desid + every prefix combo) packs 35 senses into 11 <ls>, so 1+<ls>=12 ranked it as trivial while its real output surface was the heaviest of the root; it deterministically blew the whole-card StructuredOutput retry cap and stalled ~7 min retrying the identical call. The frag-count trigger is computed from split_plan() length (lang-agnostic; no RU/EN branching) and applies whenever SELFHEAL is on, independent of the citation trigger and of byte/citation batching mode — so it protects both language paths identically. Validated live: the [sam, zz_pw] pair that stalled now returns ok:2/null:0 with zz_pw healed complete via 4 fragment groups. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -208,8 +208,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H155 follow-up (2026-07-04): the runtime BACKSTOP for whole-card StructuredOutput stalls whose driver isn't yet a structural presplit trigger (gloss volume, masked-token count, multi-layer nesting, novel shapes). Entirely lang-agnostic — the budget keys on masked-skeleton bytes (INPUTS[k].skeleton.length) and setTimeout, no RU/EN branching; both paths get the same gate. Budget calibrated from a tyaj --no-tm timing benchmark (skeleton bytes are the best single time predictor since output ~= 2x skeleton). setTimeout is a relative timer (Date.now() is banned); AbortController is unavailable so a killed call keeps running in the background until its own cap, but the harness stops blocking. Default ON; --no-kill / --kill-factor=N tune it. See FAILURE_MODES_AND_KILL_GATE_2026-07-04.md. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established. #983 ceiling relaxation (02-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. `KILL_CEIL_MS` and `headless_worker.HARD_TIMEOUT_MS` both moved 180000 -> 300000 after an explicit human ruling relaxed 'NOTHING runs past 3 min (MG)'; the ceiling was itself why a paid window returned zero cards (12 of 16 calls died at exactly 180 04x-180 23x ms). The re-derivation is mechanical, not asserted: the whole diff is three integer constants plus comments, and grepping it for lang/ru/en/de/field returns ZERO hits, so nothing language-keyed was touched. The gate still keys on masked-skeleton bytes and a relative timer with no RU/EN branch, and a raised ceiling raises it identically for both lanes. The two constants are now pinned EQUAL by headless_worker_selftest.test_kill_ceiling_in_step_with_harness, because the ceiling is enforced in two places and raising one alone is inert.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -227,8 +227,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H220 (2026-07-06, Opus 4.8 claude-opus-4-8): root-caused the no-PWG lane's ~36% single-card yield to the wall-clock kill gate abandoning valid-but-slow single supplement cards. All three parts are entirely lang-agnostic — (A) keys on FRAGS emptiness + skeleton bytes + KILL_CEIL_MS (no RU/EN branch), (B) keys on META.nominal + nominal_keymap which both RU and EN builds emit identically, (C) is a FAIL[k] message-precedence guard. PWG root windows (nominal=False) keep strict key matching: the tolerance is gated on META.nominal so it is inert there (test_generated_harness_strict_key_matching still green). Pinned by test_no_fallback_single_gets_ceil_kill_budget, test_nominal_key_echo_tolerance_scoped, test_selfheal_no_fallback_preserves_upstream_reason. Extends wall_clock_kill_gate (the kill gate stays for multi-card/splittable batches). H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -245,7 +245,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a"
     }
   },
   {
@@ -262,7 +262,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a"
     }
   },
   {
@@ -296,7 +296,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "_reachable_defs() walks $ref pointers regardless of lang; _strip_post_generation_fields() runs before it and is called unconditionally in build() for both lang paths (no lang-specific field list).",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a"
     }
   },
   {
@@ -313,7 +313,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Applies identically on both paths per the 2026-07-01 EN-schema-relaxation commit; RU keeps the same optionality, not a stricter EN-only rule.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a"
     }
   },
   {
@@ -330,7 +330,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H818 closes the former divergence: exact model provenance is required across four accounts, so both RU and EN now request and stamp claude-sonnet-5. This prevents account/profile alias resolution from making cross-window provenance incomparable.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a"
     }
   },
   {
@@ -432,8 +432,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04: the estimator undercounted a 150+-<ls> presplit giant as 1 agent instead of its true ~10-20 fragment calls, making the vid preflight read 13 when the real run spent 102. Computed identically for both langs (frags/presplit/batches are lang-agnostic); fix + pinning test apply to both. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -452,7 +452,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "af981a0f4c11f7021ecad2c23eaa444455a743bfeca7eb0457a5f2ef9c2b68d6",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -489,8 +489,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "Fixed 2026-07-04 after the vid run showed 10/10 null cards traced to 2 batches that hard-failed the StructuredOutput retry cap outright, with every null a no-fallback card riding along with a fallback-having card in the same batch. batch_keys is split into fallback/no-fallback lists BEFORE _group_by_budget grouping (both grouped independently, same sizer/budget), which is lang-agnostic (frags/batch_keys carry no lang branching). H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -527,7 +527,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H179 Step 3 pre-run fix. Before this, the nominal promote path (meta.get('nominal') + nominal_keymap) existed in promote_final_cards but the harness never emitted those fields, so a --nominal run's cards would all key to the label (e.g. pril10_w1) instead of kAla/rasa/rUpa. The keymap is built from each card's portrait key1 (_slp1_lex_for_key), which is lang-independent — the identical meta is emitted for RU and EN nominal runs. Pinned by a promote_final_cards.selftest nominal-keying assertion. H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4"
     }
   },
@@ -547,9 +547,28 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H189 (2026-07-05): fixes the pril10_w1 nominal-window cost blow-up (230 agents / 42.3M tokens / ~$80 / ~3 of 8 cards). Every mechanism keys on lang-agnostic signals — citation/sense counts, masked-skeleton bytes, agent-call count, harness bytes, token/$ estimates — with NO RU/EN branching, so RU and EN get identical behaviour; the presplit lane already ran both languages through the same grouping. Also guards _slp1_lex_for_key against an empty-list portrait ([]) crashing the nominal_keymap emission (the real tyaj~~h0_zz_pw / addenda shape). See POSTMORTEM_pril10_w1.md + H189. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "H189",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
       "src/pilot/perf_preflight.py": "bc03b5b9878e526d3ffd9d2e5352bd1c1bcf69c8961ac37d673bafb9d6bf645b",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
+    }
+  },
+  {
+    "id": "presplit_group_call_weight_h2248",
+    "mechanism": "The presplit fragment lane caps a call's total VARIABLE WEIGHT -- the card's portrait (evidence) plus the group's fragment skeleton bytes -- at PRESPLIT_GROUP_CALL_WEIGHT(12000), via a second independent dimension on _group_by_budget (extra_sizer/extra_budget, closing a group when EITHER budget would be exceeded). The two pre-existing presplit budgets weighed only group CONTENT (citation-units 1+<ls>, fragment count) and were blind to the portrait that heal_group re-sends on every fragment call, so a byte-heavy but citation-light fragment was priced at nearly zero and packed into a group whose real weight was the largest of the window. A 0 B content allowance (portrait alone over the cap) degrades to one fragment per call rather than reading as 'no cap'.",
+    "files": [
+      "src/pilot/gen_opt_harness2.py",
+      "src/pilot/window_selftest.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H2248 (#983, 03-08-2026, Opus 5 `claude-opus-5[1m]`): residual of H2174, which proved the medium50 presplit route live on w1 (9/9 fragment-group calls, zero whole-card batches) with `nakzatra` as the one key that did not land -- its #g2 died at the 300 s ceiling. Measured cause: the call's weight is dominated by the per-card portrait (9 761 B for `nakzatra`, 68-94% of every call in the window), which no grouping budget counted; the one call that died was the heaviest at 14 378 B, against a heaviest-landing call of 11 476 B. Language-independent by construction: the cap is arithmetic over masked-skeleton bytes, citation counts and portrait length -- signals that are byte-identical on the RU and EN lanes -- with NO RU/EN branching, no target-language field read, and no `--lang` branch added. Mechanically re-checked, not asserted: all 134 added lines across both files were grepped for `russian`/`english`/`--lang`/`lang`/`_ru`/`_en`/`FIELD[`/`CARD_FIELD` and NONE appears. The whole-card BATCH lane has always sized on `skeleton + portrait`, so this makes the fragment lane agree with the lane beside it rather than introducing a new rule. RED-verified pin: `test_presplit_group_call_weight_caps_portrait_plus_bytes_h2248` fails against the pre-fix grouping (one group, 14 976 B on the fixture) and passes after (9+1 split), with `test_presplit_group_call_weight_zero_allowance_degrades_to_one_per_call_h2248` guarding the 0-allowance truthiness trap.",
+    "tracking": "H2248",
+    "verified_sha256": {
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -580,7 +599,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "save_and_audit.py": "e1d7a3b6c5a8c47dbc414dbcf991e9ead82b76a013e4624cffe76066e576c8b6",
       "src/pilot/audit_window.py": "674c0886d6fea0ed15032c14c9e31739071ae137180d69aa9a1953233f5f206d",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -599,7 +618,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/translation_memory.py": "e5452394c8f3bbebef9f6038362e6a9d0e162a338201cdf425191412c7cf3a38",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -617,7 +636,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/corpus_gate.py": "323af2fa393955f320d534111a92cf14270bb78c1044252b5858e7c39e8047ea",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -636,7 +655,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/ls_resolver.py": "d7c8da35c6a420b9f9431dd1cb672ed12431e2b27830b9b560a60cff42509eec",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -720,7 +739,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/annotate_form_labels.py": "267cecdef3be3b8ca3cece9c33422016b323ec653d3ac4b9c600a6771ba4493a",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/microstructure.py": "3da158ac30613de5f226f749eb41cd5852d8e6d8a3e521a2472054aac3fe6cd9",
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a"
     }
   },
   {
@@ -766,7 +785,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/promote_lock.py": "f8dda14a7423dfecac77893f10f7735361db8bd6c79297172243aafaf1d28ef4",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/promote_en.py": "9ff2b119687d997373d9743bb1474b158c2543af0756dcc61bc24034c38f00f8",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -791,7 +810,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/requeue_from_audit.py": "c99752277f85228dec175c1c331382a1d3ead769dc71b0d64cdfbb6e517a6345",
       "src/pilot/root_window_status.py": "ab13516c5ffa824ddc45b2dc0d482c09f06de57d5963dcc31d73ecc638a116f3",
       "src/pilot/window_reports.py": "e3b1c4a5034ca7fb721578e0c3ad354fb2ea84f842c0bad3a7877f745b3a6724",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -820,7 +839,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/layer_versions.py": "42e44f32db2628e3137522f5d15827cf0641b642bdacfdb76be04cdd41eaefba",
       "src/pilot/failure_capture.py": "c0ca940b54fc326e0a0b67320758c81aa5a48dd29247250996c38a85a7786e4d",
       "src/pilot/translation_memory.py": "e5452394c8f3bbebef9f6038362e6a9d0e162a338201cdf425191412c7cf3a38",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -840,7 +859,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/annotate_evidence.py": "3ba83e6475c856cdc58a68526f2a0a5baa208754abd789dc3e3ec14e71bb9258",
       "src/annotation_report.py": "747f46c0c213b178cfeba22c04314696f4312a55eaf738d946dac08ead06c9d0",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -859,7 +878,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/coordinator.py": "2a00251954723066680c408cfab41535d158f319d7493746e13f6e0381b3129c",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -896,7 +915,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/koch_xref.py": "b6b3c3524f446862a25cf0f086125d53977dabf02a26cc6724972d0a05c69013",
       "src/annotate_evidence.py": "3ba83e6475c856cdc58a68526f2a0a5baa208754abd789dc3e3ec14e71bb9258",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -954,7 +973,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/fri_xref.py": "6574a4cc3a10e0697dce552b3b3082418410500b8417818c712c5abb02037233",
       "src/annotate_evidence.py": "3ba83e6475c856cdc58a68526f2a0a5baa208754abd789dc3e3ec14e71bb9258",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -972,8 +991,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H442 (10-07-2026, Opus 4.8 claude-opus-4-8). The heal/kill budget is language-agnostic: healGroup/selfHeal run identically for the RU and EN lanes (the only per-language pin is the model alias, already tracked in sonnet5_explicit_model_pin_en), so a per-card ceiling that bounds the RU-observed medium50 cascade applies verbatim to EN. Sibling of the SHARED wall_clock_kill_gate and selfheal_binary_split entries. Pinned by test_per_card_heal_budget_wired in window_selftest.py. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -991,8 +1010,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H442 P0 (10-07-2026). healGroup/selfHeal are language-agnostic generated harness logic shared by RU and EN; the guard keys on wall-clock kill-timeout behavior, not translation language. Pinned by test_heal_group_kill_timeout_does_not_bisect in window_selftest.py. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. The kill-timeout/no-bisect behaviour is unchanged; the timeout reason it already records on fragment keys is now also propagated to the card as `partial_cause`, which is a read of existing state, not a new policy. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -1011,8 +1030,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H462 (10-07-2026, Fable 5 claude-fable-5). The counters live in the language-agnostic generated harness JS (agentKill/healGroup are shared by --lang ru/en; the only per-language pin is the model alias, tracked in sonnet5_explicit_model_pin_en), and classify_run.py reads summary fields that exist identically for both lanes. Pinned by test_run_telemetry_counters_returned and test_classify_run_verdicts in window_selftest.py. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048",
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733",
       "src/pilot/classify_run.py": "6061958062ef7ae4b673aa77b2f2c9823663d8d083a61a792fabfbefb732fb71"
     }
   },
@@ -1033,8 +1052,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/agent_budget.py": "9683c7c24903b95e39e85839d64e4623ebe68dda1271f0cf85ec60c19251cb61",
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -1091,9 +1110,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "New mechanism 12-07-2026 (H811, from the H255 w07 concurrency finding). The dispatch width control is language-INDEPENDENT: the same MAX_WIDE/STAGGER_MS constants + boundedParallel helper are emitted for every --lang (the harness is lang-parameterized; nothing here branches on language), so a RU or EN requeue uses --max-wide=3 identically. Behavioral test: node src/pilot/boundedparallel_test.js against the REAL emitted fn (caps concurrency, staggers, order-preserving, null-on-throw), wired into window_selftest.test_lowwide_staggered_dispatch. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
       "src/pilot/boundedparallel_test.js": "3d768f874e13607e235e55f9300771dabd25f6173e256001e956150ce9b33401",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -1121,7 +1140,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "note_h1940_h2b": "31-07-2026, OpenAI GPT-5.6 Sol (`openrouter/openai/gpt-5.6-sol`): SHARED re-derived against the H2b diff. resolve_group changes only failure-note precedence when a retry is refused by a typed translate budget; manifest schema, field selection, split/heal/stitch, scheduler dispatch and all paid boundaries are untouched. The same HeadlessEngine path serves RU and EN with no language branch. The added two-attempt selftest drives the shared manifest fixture and proves the previous clobber.",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
       "src/pilot/headless_worker.py": "227a80037d477722f5649343d43d45103e540149e543005b2a1574d55707f385",
       "src/pilot/max_account_orchestrator.py": "5b460b0ddb96a7bf12aa5a9baf023d9dbb5c528438c91e9b80469f7d49d55123",
       "src/pilot/coordinator.py": "2a00251954723066680c408cfab41535d158f319d7493746e13f6e0381b3129c",
@@ -1151,10 +1170,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H390 Phase 1 (12-07-2026, Opus 4.8 claude-opus-4-8), extended by H818. gen_model is written into language-agnostic run meta and flows through the shared ledger writer and harvester identically for RU/EN; both paths now stamp exact claude-sonnet-5. Pinned by test_ledger_stamps_gen_model in window_selftest.py. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
       "src/pilot/window_reports.py": "e3b1c4a5034ca7fb721578e0c3ad354fb2ea84f842c0bad3a7877f745b3a6724",
       "src/pilot/harvest_launch_stats.py": "751f4089cc2cbff3354d0f5b9506268a4ddd82e1c0f654755ffc88a11b8b6f3b",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -1172,8 +1191,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "New mechanism 12-07-2026 (H823, fixes the H255 presplit-cohort loss). Both the citation presplit trigger (_presplit_hit) and the single-card kill budget (killBudgetForCur) are language-independent — they key on <ls>/fragment counts and FRAGS, never on --lang; the same floor + CEIL apply to RU and EN identically. Extends no_fallback_single_kill_budget_and_nominal_key_echo (H220) from no-fallback singles to all singles. Pinned by test_presplit_cite_floor_and_single_ceil. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -1198,7 +1217,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/_pilot_gen_merged.py": "0c350f3ddfb9d33edf04e7e1a9fd88939ffa886066f05116e959255b29fa381f",
       "src/pilot/audit_window.py": "674c0886d6fea0ed15032c14c9e31739071ae137180d69aa9a1953233f5f206d",
       "src/pilot/audit_window_en.py": "af981a0f4c11f7021ecad2c23eaa444455a743bfeca7eb0457a5f2ef9c2b68d6",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -1218,9 +1237,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H960 (15-07-2026, Opus 4.8 claude-opus-4-8[1m]): closes H920's explicitly-deferred accept()-side sense-count consumption. Language-neutral: accept() counts SENSE OBJECTS (records[].senses[]), never a gloss language, and source_senses is sense_count.count_source_senses over the German source markers (identical for the RU and EN lanes — the source is German for both). SOFT by default (SANLOSS_HARD_REJECT=false): a shortfall is telemetry only (no reject/requeue), so live traffic can measure the true drop-vs-false-flag rate before the reject is armed (owner-gated ladder). The shared counter is hardened against the ~4.78%-of-cards cross-reference over-count the naive count carried (gam~~h2_31_pari 2->1, s_ud~~h0_05_pra 4->2, _a_srayatva 2->0); under-counting is the safe direction, never a false shortfall. Pinned by test_h960_accept_sanloss_soft_gate (builds the real harness, extracts the emitted accept()+countOf, asserts soft-keep / surplus-ok / FP-regression / ls-sk-first / armed-hard-reject via accept_sensecount_test.js) plus the 3 cross-reference fixtures in sense_count._selftest. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. The SAN-LOSS soft gate still FLAGS an infrastructure-partial card exactly as before; what changes is only that the flag no longer routes that card into the permanent defect lane. Gate thresholds and their RU/EN symmetry are untouched. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
       "src/pilot/sense_count.py": "e3ad886f8751f5e5ef877bf96219140bc5c8ccca5b02bb2e33f7f6620ec5db2c",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733",
       "src/pilot/accept_sensecount_test.js": "fbf8d37f8ae360c286f646361025d56adb0caeff09da30a0abfef5f6b7289937"
     }
   },
@@ -1240,7 +1259,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/cohort_clean_rates.py": "1d2a1da68eb4e897422696ec42c7845cecf9e94a2a0b8a587f8a68d3b44bfb7e",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -1258,7 +1277,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1152 guard 2 (17-07-2026, Sonnet 4.6 claude-sonnet-4-6), closing H1070's r102 finding (PWG->EN FU1 pilot, vac~~h0_00_pwg00: a {#uc#} span inside a <F> footnote survived the german echo 33/33 but was dropped from english 32/33 -- invisible to the pre-existing check because it never reads the translation field). accept() is lang-parameterized code shared by both lanes (field = 'russian' or 'english', same code path); the new check is symmetric and applies identically to RU and EN generation. Verified against the live RU regression suite: window_selftest.py full run stays green (137/137 baseline, +2 new content-check tests for guards 1/3), and the new/updated fixtures in accept_sensecount_test.js reproduce the exact r102 shape (RED before this change -- proven via git-stash against the pre-fix accept(), the fixture is silently ACCEPTED -- GREEN after). No RU store data touched; this only changes the generation-time accept-path gate for FUTURE generation, never re-validates the 11,605 already-promoted RU rows.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
       "src/pilot/accept_sensecount_test.js": "fbf8d37f8ae360c286f646361025d56adb0caeff09da30a0abfef5f6b7289937"
     }
   },
@@ -1295,7 +1314,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "af981a0f4c11f7021ecad2c23eaa444455a743bfeca7eb0457a5f2ef9c2b68d6",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -1445,7 +1464,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1226: the {Tn} pairing is stamped in the SHARED accept() (runs for both languages) and BOTH promote lanes (promote_final_cards.py RU, promote_en.py EN) carry it to provenance.tnmask, so neither store silently drops the field accept() stamps. Only accept() stamps it: the heal path's acceptFrag hard-rejects fragment {Tn} mismatches, so no un-rejected expansion reaches a healed card. Makes the TNMASK false-flag rate MEASURABLE (H1150 DO_NOT_ARM, denominator 1); TNMASK_HARD_REJECT stays = false — arming is a human @DECIDE. Pinned by window_selftest.test_tnmask_persist_and_offline_detect + tnmask_offline.selftest. H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/promote_en.py": "9ff2b119687d997373d9743bb1474b158c2543af0756dcc61bc24034c38f00f8",
       "src/pilot/tnmask_offline.py": "c857fe425fadbe18c1cdf398892f53b590709048ca66faf94fd05e046730ffea"
@@ -1470,7 +1489,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/ru_style_sweep.py": "9184e1859428312866623e25bd1e1e8a1b08bec773cc339303a1f4fcd7fbc64f",
       "src/pilot/audit_window.py": "674c0886d6fea0ed15032c14c9e31739071ae137180d69aa9a1953233f5f206d",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733",
       "src/pilot/prompt_rule_audit.py": "b235136ea95a7c77eb2cee0a3a6bc393c75df221ba587253a7949d9e3cbe4927",
       "src/pilot/run_pilot_wf.js": "b194ceb034b458ffc470e7feb2d9c921c6f391c88088e7f05a00a1e790bcf7a4"
     }
@@ -1497,7 +1516,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/pilot/translation_memory.py": "e5452394c8f3bbebef9f6038362e6a9d0e162a338201cdf425191412c7cf3a38",
       "src/pilot/headless_worker.py": "227a80037d477722f5649343d43d45103e540149e543005b2a1574d55707f385",
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a"
     }
   },
   {
@@ -1573,7 +1592,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1940 H1 (30-07-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Neither fragment_prompt nor build_prompt is modified; both twins still carry the per-card grammar and portrait. The H1 KeyError pin merely OBSERVES that build_prompt subscripts manifest['inputs'] directly (which is what made a missing section escape as KeyError) -- it does not change that access, and the JS twin in gen_opt_harness2.py is untouched, so the two lanes have not diverged. Language-neutral. H1940 H2b (31-07-2026, OpenAI GPT-5.6 Sol `openrouter/openai/gpt-5.6-sol`): re-derived, SHARED stands. `whole_prompt`, `fragment_prompt`, per-card grammar and portrait injection are untouched; only whole-card failure-note precedence changes after a typed translate-budget refusal. Both language lanes still use the same prompts and engine. H1940 H4/H3 (31-07-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. headless_worker.py drifted only by the H3 durability call in atomic_json. Fragment prompt construction and the per-card evidence it carries are untouched -- H3 sits in the status/output writer, downstream of every prompt decision. The mechanism stays --lang-parameterized exactly as recorded. H2063 (#943/#944, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift is the rate-limit-through-timeout classification: proc_tree now attaches a tree-killed child's drained stdout/stderr to its TimeoutExpired, headless_worker classifies that text and promotes an ACCOUNT-level cause (429/401) to HardFailure exit 21 instead of a bare 'timeout', and the orchestrator probe does the same. It fires only when a call was KILLED and therefore produced no card at all, and it branches on the PROVIDER's message, never on a target-language field — a locked account refuses RU and EN identically. Fragment prompt construction is byte-unchanged; the classification happens after the call is already dead, so no prompt on either twin is affected. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2091 (#948, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift makes `_selfheal_stop_reason` RANKED — a budget stop still wins first (H2a, unchanged), then any other typed INFRASTRUCTURE reason, then the historical `selfheal-nothing-resolved`. A `timeout` previously fell through to that last branch, reporting a dead CALL as a CONTENT verdict on the only per-key cause an operator ever sees. Language-independent by construction: the reason is read from how the call died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Genuine content failures (fidelity reject, missing/mismatched key) keep `selfheal-nothing-resolved` exactly as before. H2189 (02-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, verdict stands. The drift is the opt-in `--safe-mode` spawn flag: `resolve_safe_mode` reads `execution.cli_safe_mode` from the manifest, `cli_supports_safe_mode` probes the installed CLI once and fails SAFE to the historical argv, and `HeadlessEngine.call` appends the flag when both agree. It changes WHICH profile context the CLI child loads (operator CLAUDE.md, skills, commands, agents, hooks) -- a property of the spawn, never of the target language: the RU and EN lanes send the same argv shape and a stripped profile strips identically for both. Re-derived mechanically, not asserted: every added line in the diff was grepped for a language-keyed token (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) and the only hits are a prose measurement line quoting '13/13 senses carrying Russian', not a branch. The schema and `--permission-mode plan` posture that make this a pwg_ru translation call are pinned as surviving the flag by `headless_worker_selftest.test_safe_mode_is_carried_when_the_manifest_requests_it`, and the default-OFF posture by `test_safe_mode_is_opt_in_and_off_by_default`.",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
       "src/pilot/headless_worker.py": "227a80037d477722f5649343d43d45103e540149e543005b2a1574d55707f385"
     }
   },
@@ -1753,7 +1772,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/dashboard_events.py": "e967ba0993cba28b62923f93ddd206da9986fddbfccdeb56063b3f8fb4869ef1",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/promote_en.py": "9ff2b119687d997373d9743bb1474b158c2543af0756dcc61bc24034c38f00f8",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048",
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733",
       "src/pilot/audit_window_en.py": "af981a0f4c11f7021ecad2c23eaa444455a743bfeca7eb0457a5f2ef9c2b68d6"
     }
   },
@@ -1779,7 +1798,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/annotate_citation_edges.py": "b5462244bcaa5c5712b73bd1c67ae5414549f2fd55760d6704dc5559218a701c",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
       "src/microstructure.py": "3da158ac30613de5f226f749eb41cd5852d8e6d8a3e521a2472054aac3fe6cd9",
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a"
     }
   },
   {
@@ -1804,7 +1823,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/annotate_edition_rel.py": "54141c6723ca144eead648e4cf70ade4de667d1df2be94f9554a1c10f23f5ed6",
       "src/build_relationships.py": "76d03cc81a79f83624065d79bd47845c3a72b8e2f993a01dfc4fbe9931049725",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4",
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5"
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a"
     }
   },
   {
@@ -1843,7 +1862,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/german_anchor.py": "751a6bf9c1cf9bc6201397d28f429cd02c680f668c1b2340be8ca55f54e8a276",
       "src/pilot/headless_worker.py": "227a80037d477722f5649343d43d45103e540149e543005b2a1574d55707f385",
-      "src/pilot/gen_opt_harness2.py": "2f6dd14a6b7d723bafa860f993061b0abc4ac292b9a7c77830fdbd0351f413b5",
+      "src/pilot/gen_opt_harness2.py": "994605b771da3e189bd511f833262d315dd50885ab155ddd9630a7fa4de5844a",
       "src/promote_final_cards.py": "085735b03cb6649789264eb309fd0ce6cd58bc0dd10319a7e54382ff4b301ec4"
     }
   },
@@ -1862,7 +1881,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "codex/rt-pipeline-hardening-speed",
     "verified_sha256": {
       "src/pilot/audit_window.py": "674c0886d6fea0ed15032c14c9e31739071ae137180d69aa9a1953233f5f206d",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
@@ -1969,7 +1988,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/window_common.py": "3a8a51917c9b898d9b3d262aaf9339e14fb30cddbb507242266858aec8727331",
       "src/pipeline_version.py": "b461d0c78b5df3f598007eb1e7ee284d84596ae19b5106d5329fdab1a93f00be",
       "src/pilot/h1339_offline_bench.py": "970ad8ab948c4aae724efc2076883e21a5bfc7e203ed1c68b5fbb14f3bdbb8cd",
-      "src/pilot/window_selftest.py": "834b91e52b9d3564fecf9f5f2ef85519fb1a71f2d5daa14166be7606b853f048"
+      "src/pilot/window_selftest.py": "6ebb6f28f73b92dd2f1f2d548c71532d938130a13b8b7678ea5dc67224d2e733"
     }
   },
   {
