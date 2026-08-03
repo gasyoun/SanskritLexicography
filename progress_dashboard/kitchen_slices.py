@@ -150,6 +150,92 @@ def yield_quality(rows: list[dict]) -> dict:
     }
 
 
+def _promote_event_count(events: Path) -> int | None:
+    """Count events whose type/summary names a promote action.
+
+    The dashboard_events.jsonl schema currently emits no ``promote``-typed
+    event (audit_start/audit_end/gate_summary/glue_result/requeue_summary/
+    stale_refusal/crash_state/stage_boundary/print_gate_snapshot only, as of
+    H2237) — this stays a forward-compatible hook, not a claim such an event
+    exists today. Returns None (not merely 0) when the log itself is absent,
+    so callers can tell "no file" from "file has zero promote events".
+    """
+    if not events.exists():
+        return None
+    n = 0
+    with events.open(encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                e = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            t = str(e.get("type") or "")
+            summary = str(e.get("summary") or "")
+            if "promote" in t.lower() or "promote" in summary.lower():
+                n += 1
+    return n
+
+
+def promote_vs_generate(speed: dict, rows: list[dict], events: Path, now) -> dict:
+    """B6 — generation volume vs promoted/clean outcome, this week + lifetime.
+
+    ``speed`` is build_kitchen_data.store_speed()'s output (cards_by_day +
+    total_cards); ``rows`` is the full window_ledger (state==clean is the
+    promoted-outcome proxy — see _promote_event_count docstring for why).
+    """
+    cards_by_day = (speed or {}).get("cards_by_day") or {}
+    week_days = {(now - timedelta(days=d)).date().isoformat() for d in range(7)}
+    cards_week = sum(n for day, n in cards_by_day.items() if day in week_days)
+    cards_lifetime = (speed or {}).get("total_cards") or 0
+
+    cutoff_week = now - timedelta(days=7)
+    clean_week = 0
+    windows_week = 0
+    clean_lifetime = 0
+    for r in rows or []:
+        state = r.get("state")
+        if state == "clean":
+            clean_lifetime += 1
+        dt = _parse_ts(r.get("recorded_at"))
+        if dt is not None and dt >= cutoff_week:
+            windows_week += 1
+            if state == "clean":
+                clean_week += 1
+
+    windows_lifetime = len(rows or [])
+    promote_events = _promote_event_count(events)
+
+    return {
+        "measured": bool(cards_by_day or rows),
+        "weekly": {
+            "cards_generated": cards_week,
+            "clean_windows": clean_week,
+            "windows_total": windows_week,
+            "promote_events": promote_events,
+        },
+        "lifetime": {
+            "cards_generated": cards_lifetime,
+            "clean_windows": clean_lifetime,
+            "windows_total": windows_lifetime,
+            "clean_window_pct": (
+                round(100 * clean_lifetime / windows_lifetime, 2)
+                if windows_lifetime
+                else None
+            ),
+            "promote_events": promote_events,
+        },
+        "promote_events_source": (
+            "no promote-typed event exists in dashboard_events.jsonl yet — "
+            "ledger state==clean is used as the promoted-outcome proxy "
+            "(B6 acceptance: distinguish generation volume from clean/"
+            "promoted outcomes)"
+        ),
+    }
+
+
 def gate_summary(events: Path, limit: int = 200) -> dict:
     """A5 — recent gate_summary pass-ish rate (exit=0 vs not)."""
     if not events.exists():

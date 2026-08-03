@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-03T10:53:00Z",
+  "generated_at": "2026-08-03T12:07:53Z",
   "schema": "pwg.kitchen.v2",
-  "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner) (still pwg.kitchen.v2 — non-breaking)",
+  "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
@@ -9,7 +9,7 @@
   "activity": {
     "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 61257,
+    "youngest_artifact_age_seconds": 65751,
     "window_state": "needs_requeue",
     "window_root": "no_pwg_w05",
     "next_action": "Run python src\\pilot\\requeue_from_audit.py <root>, rerun Max Workflow, then rerun audit_window.py.",
@@ -17,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-08-02T07:21:30Z",
-        "age_seconds": 99086,
+        "age_seconds": 103580,
         "size": 26192750
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-07-15T20:26:10Z",
-        "age_seconds": 1607206,
+        "age_seconds": 1611700,
         "size": 53853
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-02T17:51:59Z",
-        "age_seconds": 61257,
+        "age_seconds": 65751,
         "size": 327781
       },
       "events": {
         "exists": true,
         "mtime": "2026-07-24T18:39:44Z",
-        "age_seconds": 835992,
+        "age_seconds": 840486,
         "size": 3486985
       }
     }
@@ -52,8 +52,8 @@
     "pending": 7,
     "newest_card_at": "2026-07-14T04:10:54Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 20.28,
-    "campaign_days": 35
+    "days_since_last_card": 20.33,
+    "campaign_days": 36
   },
   "yield_quality": {
     "measured": true,
@@ -450,6 +450,23 @@
     "missing_from_article_sample": [],
     "note": "article_site/ not built on this machine — run python RussianTranslation/src/pilot/build_article_site.py then rebuild kitchen"
   },
+  "promote_vs_generate": {
+    "measured": true,
+    "weekly": {
+      "cards_generated": 0,
+      "clean_windows": 0,
+      "windows_total": 0,
+      "promote_events": 0
+    },
+    "lifetime": {
+      "cards_generated": 11594,
+      "clean_windows": 3,
+      "windows_total": 473,
+      "clean_window_pct": 0.63,
+      "promote_events": 0
+    },
+    "promote_events_source": "no promote-typed event exists in dashboard_events.jsonl yet — ledger state==clean is used as the promoted-outcome proxy (B6 acceptance: distinguish generation volume from clean/promoted outcomes)"
+  },
   "collision_guard": {
     "measured": true,
     "blocked": false,
@@ -618,7 +635,7 @@
     "total_idle_seconds": 1549947,
     "total_idle_hours": 430.54,
     "mean_gap_seconds": 12204.307,
-    "current_idle_seconds": 61258,
+    "current_idle_seconds": 65751,
     "last_idle_seconds": 352265,
     "last_idle": {
       "from": "2026-07-11T18:34:18Z",
@@ -646,9 +663,9 @@
       },
       {
         "month": "2026-08",
-        "idle_seconds": 61258,
-        "idle_days": 0.71,
-        "idle_hours": 17.02
+        "idle_seconds": 65751,
+        "idle_days": 0.76,
+        "idle_hours": 18.26
       }
     ],
     "recent_gaps": [
@@ -3233,6 +3250,38 @@
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md",
     "entries": [
       {
+        "version": "1.141.7",
+        "date": "2026-08-03",
+        "bullets": [
+          {
+            "title": "Changed",
+            "summary": "- **The translation prompt is assembled stable-left (H2191, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** `build_prompt` now emits `preamble + translation + grammar + [nws] + card blocks` instead of `preamble + grammar + translation + …`, putting the run-invariant framework (p…"
+          }
+        ]
+      },
+      {
+        "version": "1.141.4",
+        "date": "2026-08-03",
+        "bullets": [
+          {
+            "title": "Fixed",
+            "summary": "- **The nonstop scheduler swallowed its own failures, corrupting the metric that judges it (H2246, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** [`nonstop_scheduler.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/nonstop_scheduler.…"
+          },
+          {
+            "title": "Added",
+            "summary": "- **`corpus/` is part of the `--data-root` layout at last (H2246):** [`data_inventory.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/data_inventory.py) migrates a ~592 MB `corpus/` bucket of corpus-gate dictionaries and calls it a…"
+          },
+          {
+            "title": "Changed",
+            "summary": "- **The oral→A grade gate now honors the 19-07-2026 MG ruling: consensus with a written work promotes (H2193, 03-08-2026, Fable 5 `claude-fable-5`).** [`tm_grade.build_consensus`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py) c…"
+          },
+          {
+            "title": "Fixed",
+            "summary": "- **The presplit group budget was blind to the evidence block that dominates every fragment call (H2248, [#983](https://github.com/gasyoun/SanskritLexicography/issues/983), 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** `heal_group` re-sends the card's whole portrait on **every…"
+          }
+        ]
+      },
+      {
         "version": "1.141.3",
         "date": "2026-08-03",
         "bullets": [
@@ -3353,30 +3402,6 @@
           {
             "title": "Added",
             "summary": "- **`src/pilot/h2160_regen_medium50.py` — re-prepare the medium50 windows on the fixed predicate (H2160, 02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** replays the coordinator's own `prepare` invocation with every argument read back out of the existing manifest (no hand-retyped…"
-          }
-        ]
-      },
-      {
-        "version": "1.133.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Added",
-            "summary": "- **c4 live gate returns `LIVE_GO` — first PASS of both halves, and the first per-CARD observed economics (H2011, 02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** `/pwg-live-gate` Steps 1–3 on c4, **3 paid calls** (2 gate + 1 canary), **no bounded window, no promotion, no store w…"
-          },
-          {
-            "title": "Fixed",
-            "summary": "- **The `h1339_offline_bench` byte-identity control is stale — filed, not silently re-baselined (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** H2011's Definition of Done requires re-verifying deterministic signature `9bd2a14297`. It does not reproduce at **any** commit tested …"
-          }
-        ]
-      },
-      {
-        "version": "1.132.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Changed",
-            "summary": "- **The operator playbook now carries the H2152/H2158 cost rules — and a stale rule surfaced while propagating them (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** the measurements had landed in `RESULTS_LOG`/FINDINGS and the code fix in 1.130.0, but not in the docs a session r…"
           }
         ]
       }

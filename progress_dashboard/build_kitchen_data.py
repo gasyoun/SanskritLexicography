@@ -708,6 +708,7 @@ def main():
     if idle_pub.get("last_idle") and annotated_all:
         idle_pub["last_idle"] = annotated_all[-1]
     parity = ks.article_site_parity(STORE, ARTICLE_SITE)
+    promote_vs_generate = ks.promote_vs_generate(speed, all_rows, EVENTS, utc_now())
 
     orch_db = next((p for p in ORCHESTRATOR_DB_CANDIDATES if p.exists()), None)
     collision = ks.collision_guard(EVENTS, orchestrator_db=orch_db)
@@ -720,7 +721,8 @@ def main():
         "schema": "pwg.kitchen.v2",
         "schema_note": (
             "H2218 additive keys: cost.subscription, idle.reasons, article_parity; "
-            "H2229 collision_guard (OPT-8 lease/store-hit banner) "
+            "H2229 collision_guard (OPT-8 lease/store-hit banner); "
+            "H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome) "
             "(still pwg.kitchen.v2 — non-breaking)"
         ),
         "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -740,6 +742,7 @@ def main():
         "quality": quality,
         "eta": eta,
         "article_parity": parity,
+        "promote_vs_generate": promote_vs_generate,
         "collision_guard": collision,
         "speed": {
             "cards_last_hour": speed.get("last_hour"),
@@ -794,7 +797,11 @@ def main():
         f"yield_clean={yld.get('clean_windows')}/{yld.get('windows')}  "
         f"collision_blocked={collision.get('blocked')}  "
         f"collision_n={collision.get('collision_count')}  "
-        f"changelog_entries={len(clog.get('entries') or [])}"
+        f"changelog_entries={len(clog.get('entries') or [])}  "
+        f"promote_week={promote_vs_generate['weekly']['clean_windows']}/"
+        f"{promote_vs_generate['weekly']['cards_generated']}  "
+        f"promote_lifetime={promote_vs_generate['lifetime']['clean_windows']}/"
+        f"{promote_vs_generate['lifetime']['cards_generated']}"
     )
 
 
