@@ -1,0 +1,56 @@
+{
+  "rows": [
+    {
+      "arm": "paid",
+      "phase": "card",
+      "key": "nakzatra",
+      "wall_ms": 300000,
+      "failure_class": "timeout",
+      "usage": {},
+      "n": 1,
+      "cost_usd_1h_write": 0.0
+    },
+    {
+      "arm": "safe",
+      "phase": "card",
+      "key": "nakzatra",
+      "wall_ms": 115373,
+      "returncode": 0,
+      "api_ms": 124926,
+      "num_turns": 2,
+      "failure_class": null,
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 10040,
+        "cache_creation_input_tokens": 18615,
+        "cache_read_input_tokens": 29667
+      },
+      "ttl_1h_tokens": 18615,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.2813721,
+      "cards_returned": 1,
+      "schema_compliant": true,
+      "profile_vocab_leaked": [],
+      "result_head": "{\"cards\":[{\"key1\":\"nakzatra\",\"iast\":\"nakṣatra\",\"notes\":\"PWG main entry + PW revision + PW/PWKVN addenda + SCH Nachtrag, all rendered; {Tn} placeholders preserved verbatim in original order per sense.\",\"records\":[{\"h\":\"{T1}\",\"grammar\":\"{T2}\",\"senses\":[{\"tag\":\"0\",\"german\":\"{T1}¦ {T2}. {T3}\",\"russian\":",
+      "n": 1,
+      "cost_usd_1h_write": 0.271196
+    }
+  ],
+  "summary": {
+    "safe/card": {
+      "n": 1,
+      "create": 18615,
+      "read": 29667,
+      "input": 2,
+      "output": 10040,
+      "ttl_1h": 18615,
+      "wall_ms": 115373,
+      "api_ms": 124926,
+      "cost_usd_1h_write": 0.271196,
+      "envelope_cost_usd": 0.281372
+    }
+  },
+  "manifest": "h1209_slice3.manifest.json",
+  "model": "claude-sonnet-5",
+  "cache_write_1h_rate": 6.0
+}
