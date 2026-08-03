@@ -13,6 +13,8 @@ at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentiona
 not an error.
 
 ## [Unreleased]
+
+## [1.141.1] - 2026-08-03
 ### Changed
 - **H2230 override (Sonnet 5 `claude-sonnet-5`, 03-08-2026):** progress-kitchen `instrumentation_coverage()` (`progress_dashboard/kitchen_slices.py`) split its blended `wall_clock_coverage_pct`/`token_coverage_pct` into `post_cut` (rows stamped by the H1553/H2212 auto-derive path, keyed on presence of a `wall_clock_source` field) vs `historical` (pre-instrumentation rows, where a null was never recoverable) buckets, so the coverage card no longer conflates "legitimately unknown" with "should have it but missing". The dense-instrumentation requirement itself (`append_ledger` always stamping `wall_clock_minutes`/`max_total_tokens`) was already shipped in H2212, and the optional historical backfill script (`backfill_ledger_metrics.py`) already existed from H2218 R4 — H2230's only real remaining gap was this honesty split. `progress_dashboard/index.html` now renders the `post_cut`/`historical` split alongside the blended figure. Dual-run residual for the intended Grok 4.5 executor: [H2255](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2255-Grok_SanskritLexicography_h2230-grok-dual-run-compare_03.08.26.md).
 
