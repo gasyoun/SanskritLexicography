@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed
+- **The oral→A grade gate now honors the 19-07-2026 MG ruling: consensus with a written work promotes (H2193, 03-08-2026, Fable 5 `claude-fable-5`).** [`tm_grade.build_consensus`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py) carries per-work modality, `consensus_signal` returns a `written_agree` flag (≥1 *distinct* written work with the unit's own normalized rendering for the same `(passage, slp1)`), and [`build_tmx.oral_cap`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_tmx.py) lifts the oral A-cap on `adjudicated` **or** `written_agree`; oral-alone — even full oral-only consensus — still tops out at B, and the flag rides the grades sidecar so the TMX export can't re-demote a promoted A. Closes the "⚠️ Open policy conflict" in [`src/ORAL_INGEST.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ORAL_INGEST.md) (now "✅ Resolved", with the verification table). Over-promote check per the ruling's shipping condition: real oral sample (2 spoken-sanskrit-corpus transcripts) → 0 joins / 0 promotions; counterfactual over 300k real written units → 0.39% promoted B→A (1,163), each requiring exact-rendering written agreement + corroboration + the penalized composite ≥ `T_A`. Selftests extended (`python src/tm_grade.py selftest`, `python src/build_tmx.py selftest`).
+
 ## [1.141.0] - 2026-08-03
 
 ### Added
