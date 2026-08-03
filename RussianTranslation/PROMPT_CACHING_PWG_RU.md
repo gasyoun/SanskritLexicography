@@ -1,6 +1,6 @@
 # PWG→RU prompt caching — single playbook of record
 
-_Created: 02-08-2026 · Last updated: 02-08-2026_
+_Created: 02-08-2026 · Last updated: 03-08-2026_
 
 **Audience.** Operators and executors about to spend tokens on the PWG→Russian
 (headless / manifest-v2) lane, or about to “optimise cache” again.
@@ -33,6 +33,13 @@ row and open a PR that re-syncs this file — do not invent a third copy.
    cache tokens with read pinned at **28 882** — the second re-wrote what the
    first had just written. Not TTL: every write landed in
    `ephemeral_1h_input_tokens` (1 h cannot lapse between seconds-apart calls).
+   **⚠️ Contradicted 03-08-2026 (H2189), not yet re-measured.** In all five arms of the
+   H2189 trivial phase — same prompt shape, same seconds-apart cadence, same 1 h bucket —
+   the second call created **zero** and its `read` equalled the first call's
+   `create + read` **exactly**. That is amortisation, and it looks like a CLI behaviour
+   change rather than a methodology difference. This truth is left standing until a run
+   designed to test it says otherwise, because it underpins the whole rank-2 case; see
+   [report §7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md).
 2. **Bare project cwd is free and shipped.** Repo cwd injects `CLAUDE.md` + git
    state (~11–17 k volatile tokens/call). Bare cwd measured **−33 % cost,
    −30 % wall**. Code: `headless_worker.bare_cli_cwd()`; selftest pins spawn cwd.
@@ -80,7 +87,8 @@ prefix that can exceed **100 k** once profile context is included.
 | Rank | Lever | Status | Expected effect | Handoff / owner |
 |---:|---|---|---|---|
 | 0 | **Bare cwd** for every headless spawn | ✅ Shipped | −33 % cost / −30 % wall on fixed overhead | none — already in `bare_cli_cwd()` |
-| 1 | **Minimal headless profile** (no operator global `CLAUDE.md`) | 🟡 Open | Kill remaining ~global-prefix tax + stop profile rules overriding task text | [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md) |
+| 1 | **Strip the profile surface** — shipped as `--safe-mode`, **not** as a minimal profile dir | ✅ Measured 03-08-2026, wired **opt-in (default OFF)** | Real card: create **−69 %**, output **−49 %**, wall **−55 %**, cost **−61 %** ($0.6921 → $0.2712) with identical card content. A dedicated minimal `CLAUDE_CONFIG_DIR` measured only **−8.7 %** and was REJECTED as the lever | [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md) · [report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md) |
+| 1b | **`bare_cli_cwd()` ancestry leak** — the helper rejects an ancestor with `CLAUDE.md`/`.git`, not one with `.claude\CLAUDE.md`, and its `%TEMP%` dir sits under the Windows user profile | 🔴 Open defect | **32 779 B of operator memory in every paid call** since H2158. `--safe-mode` masks it; any lane without that flag still pays it | [H2189 report §1.1](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md) |
 | 2 | **Messages API + explicit `cache_control` (1 h)** on stable prefix | 🟡 Open — Phase 1 CLI measured; API arm needs credential | Turn create→read on framework; typed HTTP failures; optional single-completion output cut | [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md) |
 | 3 | **Dual-rate cost tools** (`cache_write_5m` + `cache_write_1h`) | ✅ Shipped 02-08-2026 | Stopped understating CLI bills 1.6× ($0.6967 computed vs $0.8005 billed on `nakzatra`) | [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) · [PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032) |
 | 4 | **Stable prefix reorder** (`preamble` → `translation` → `grammar` before card) | 🟡 Open adjunct | Longer left-stable head for any partial prefix match; **not** lean-TR | [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md) |
@@ -106,14 +114,24 @@ subscription-vs-metered ruling.
 
 If a spawn still inherits the repo, that is a **bug fix**, not a research topic.
 
-### Step B — Minimal headless profile → [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md)
+### Step B — Strip the profile surface → ✅ [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md), measured 03-08-2026
 
-- Design a dedicated `CLAUDE_CONFIG_DIR` for translation: empty or minimal
-  `CLAUDE.md` (no GTD / “⭐ Next” / operator rituals).
-- A/B vs current profile under **bare cwd**, identical cards, sequential
-  (not parallel — cache confounds).
-- Record create/read/TTL/wall/`duration_api_ms` per call.
-- Wire only on measured GO; fail-safe if profile path missing.
+Done, but **not** the way this step originally proposed. Full numbers:
+[PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md).
+
+- A dedicated minimal `CLAUDE_CONFIG_DIR` was **rejected as the lever**: −8.7 % cold-call
+  `create`, against −88.1 % for the `--safe-mode` flag the CLI already ships. It also costs
+  a duplicated OAuth credential and a second `ActiveCallClaim` fingerprint (same account,
+  different kernel lock — two concurrent runs would bypass the one-active-call guard).
+- The paid profile has **no `CLAUDE.md` of its own**. The H2158 instruction-override came
+  from its **hooks**: the two arms keeping all 63 hooks could not answer a five-token
+  prompt within one turn (`error_max_turns`); every hook-free arm answered in one.
+- The bigger token leak is **cwd ancestry, not the profile** — see rank 1b above.
+- Wired opt-in via manifest `execution.cli_safe_mode`, default OFF, with a `--help` support
+  probe that fails safe to the historical argv and warns loudly. Flipping the default needs
+  a canary GO on the safe-mode arm (report §5.1).
+- `--bare` was NOT adopted: it forces `ANTHROPIC_API_KEY` auth, i.e. moves this lane off the
+  subscription identity — a human ruling, not a cache tweak.
 
 ### Step C — Finish H2158 route A/B → [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md)
 
