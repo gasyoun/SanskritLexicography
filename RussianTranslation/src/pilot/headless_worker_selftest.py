@@ -1019,6 +1019,60 @@ def test_headless_heal_stitch_translation_fidelity_reject():
     print('  C1 headless heal: german-faithful, target-dropped complete stitch -> rejected (card None)')
 
 
+def test_h2191_prompt_is_assembled_stable_left():
+    """H2191: `build_prompt` emits preamble + translation + grammar + [nws] + cards.
+
+    The point of the order is cache economics, so the pin is on the ORDER, not on the
+    presence of the segments: the run-invariant framework (preamble + CONV_TR) must be
+    the leftmost bytes, ahead of the window-scoped grammar block, ahead of everything
+    per-card. A future edit that restores the historical
+    `preamble + grammar + translation` shortens the stable head and must fail here.
+
+    It also pins that this stayed a REORDER: every segment is still present exactly once,
+    so a later 'optimisation' that drops or compresses CONV_TR/NWS to shorten the prefix
+    (lean-TR, rejected in AB_TEST_LEAN_TR.md) cannot pass itself off as a cache change.
+    """
+    m = manifest()
+    m['prompt'] = {'preamble': 'PRE.', 'translation': 'TR.', 'grammar': 'GRAM.',
+                   'grammars': {'agni': 'PERCARD.'}, 'nws_rule': 'NWS'}
+    m['inputs']['agni']['nws'] = 1
+    got = h.build_prompt(m, ['agni'])
+
+    head = 'PRE.TR.GRAM.\n\nNWS\n'
+    assert got.startswith(head), 'stable-left order broken; prompt starts %r' % got[:60]
+    assert got == head + h.card_block(m, 'agni'), 'card blocks must follow the framework'
+    # order, stated as positions so a reordering edit fails with a readable message
+    at = {name: got.index(mark) for name, mark in
+          (('preamble', 'PRE.'), ('translation', 'TR.'), ('grammar', 'GRAM.'),
+           ('nws', 'NWS'), ('card_grammar', 'PERCARD.'), ('card', '=== CARD agni ==='))}
+    assert at['preamble'] < at['translation'] < at['grammar'] < at['nws'], \
+        'framework segments out of stable-left order: %r' % at
+    # per-card grammar stays INSIDE the card block, not hoisted into the shared head
+    assert at['nws'] < at['card_grammar'] < at['card'], \
+        'per-card grammar must stay with its card block: %r' % at
+    # reorder, not compression: nothing dropped, nothing duplicated
+    for mark in ('PRE.', 'TR.', 'GRAM.', 'NWS', 'PERCARD.'):
+        assert got.count(mark) == 1, 'segment %r appears %d times' % (mark, got.count(mark))
+
+    # the H2158 split must still cut byte-identically at the first card block
+    import h2158_route_ab as ab
+    prefix, tail = ab.split_prompt(m, 'agni')          # raises if not byte-identical
+    assert prefix == head and prefix + tail == got, 'split_prompt drifted from build_prompt'
+
+    # heal/fragment lane carries the same order (preamble + TR before either grammar)
+    eng = _h2a_engine(m)
+    frag = eng.fragment_prompt('agni', [{'skeleton': '{T1}'}], [0])
+    assert frag.startswith('PRE.TR.GRAM.PERCARD.'), \
+        'fragment_prompt not stable-left: %r' % frag[:60]
+
+    # the JS twins in the generated harness must not drift back to the old order
+    js = open(generator.__file__, encoding='utf-8').read()
+    assert js.count('PREAMBLE + CONV_TR + GRAMMAR') == 2, \
+        'generated-harness prompt assembly is not stable-left in both lanes'
+    assert 'PREAMBLE + GRAMMAR + CONV_TR' not in js, 'old JS prompt order still present'
+    print('  H2191: prompt is stable-left (preamble+TR before grammar) in all four lanes')
+
+
 def _h2a_engine(test_manifest):
     """A bare HeadlessEngine for the H2a classification pins.
 
@@ -1701,6 +1755,7 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_safe_mode_is_opt_in_and_off_by_default()
     test_safe_mode_is_carried_when_the_manifest_requests_it()
     test_safe_mode_degrades_loudly_when_the_cli_cannot_do_it()
+    test_h2191_prompt_is_assembled_stable_left()
     print('headless_worker_selftest: PASS')
 
 

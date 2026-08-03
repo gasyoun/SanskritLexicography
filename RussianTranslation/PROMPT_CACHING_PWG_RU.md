@@ -91,7 +91,7 @@ prefix that can exceed **100 k** once profile context is included.
 | 1b | **`bare_cli_cwd()` ancestry leak** — the helper rejects an ancestor with `CLAUDE.md`/`.git`, not one with `.claude\CLAUDE.md`, and its `%TEMP%` dir sits under the Windows user profile | 🔴 Open defect | **32 779 B of operator memory in every paid call** since H2158. `--safe-mode` masks it; any lane without that flag still pays it | [H2189 report §1.1](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md) |
 | 2 | **Messages API + explicit `cache_control` (1 h)** on stable prefix | 🟡 Open — Phase 1 CLI measured; API arm needs credential | Turn create→read on framework; typed HTTP failures; optional single-completion output cut | [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md) |
 | 3 | **Dual-rate cost tools** (`cache_write_5m` + `cache_write_1h`) | ✅ Shipped 02-08-2026 | Stopped understating CLI bills 1.6× ($0.6967 computed vs $0.8005 billed on `nakzatra`) | [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) · [PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032) |
-| 4 | **Stable prefix reorder** (`preamble` → `translation` → `grammar` before card) | 🟡 Open adjunct | Longer left-stable head for any partial prefix match; **not** lean-TR | [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md) |
+| 4 | **Stable prefix reorder** (`preamble` → `translation` → `grammar` before card) | ✅ Shipped 03-08-2026, offline | Cross-**window** stable head **1 226 → 12 249 chars** (4.9 % → 49.5 % of a representative prompt). Within one window: no change. **Not** lean-TR — no byte dropped | [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md) |
 | 5 | TM / frag-TM / fewer agent calls | ✅ Standing | Zero-call reuse where hashes match | existing pipeline |
 | 6 | Presplit group budget (60 cite / 18 sense) | ✅ Shipped post-pril10 | Fewer framework re-caches on fragment lane | `gen_opt_harness2.py` |
 | — | Trim TR / NWS for cache | ❌ Rejected | Noise floor; quality risk | `AB_TEST_LEAN_TR.md` |
@@ -154,17 +154,41 @@ Pinned by `h809_selftest.test_cache_write_is_ttl_priced_and_reconciles_with_the_
 which also asserts the old flat-5 m arithmetic **fails** to reconcile — so a
 revert to a TTL-blind constant cannot pass the test written to catch it.
 
-### Step E — Prefix reorder → [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md)
+### Step E — Prefix reorder → ✅ [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md), shipped 03-08-2026 (offline only, no paid call)
 
-- Today `build_prompt` is
-  `preamble + grammar + translation + [nws] + card_blocks`
-  ([`headless_worker.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/headless_worker.py)).
-- Target stable-left order: **`preamble + translation + grammar + [nws] + cards`**
-  (and keep per-card grammar with the card block).
-- Reorder only; **do not** compress CONV_TR (lean rejected).
-- Offline identity tests + one canary if any paid call is needed.
-- Update harness JS path in `gen_opt_harness2.py` if still forensics-relevant
-  (LANG_PARITY: SHARED).
+`build_prompt` now emits **`preamble + translation + grammar + [nws] + cards`**
+(was `preamble + grammar + translation + …`); per-card grammar stays inside
+`card_block`. Reorder only — every segment is still sent, byte for byte; lean-TR
+stays rejected.
+
+**Four lanes carried the same assembly and all four were moved** (each would have
+drifted independently — the reason this step was worth more than a one-line edit):
+
+| Lane | Surface |
+|---|---|
+| production CLI | `headless_worker.build_prompt` |
+| heal / fragment | `headless_worker.HeadlessEngine.fragment_prompt` |
+| generated harness JS ×2 | `gen_opt_harness2.py` (batch + `healGroup`) |
+| manifest-v2 payload | `h1209/prep_slice.prompt_common` |
+
+Plus the two prefix computations that must agree with it byte-for-byte:
+`h2158_route_ab.split_prompt` and `h2158_route_ab_report.prompt_shape`.
+
+**Measured offline** on the committed `h1209_slice3` manifest — the cross-**window**
+stable head (the leading bytes two windows with *different* grammar blocks still share)
+goes **1 226 → 12 249 chars**, i.e. 4.9 % → **49.5 %** of a 24 770-char representative
+prompt. Within a single window the order changes nothing (every call there already
+shares the whole framework), and this nominal fixture has an empty shared `grammar`,
+so its own prompt bytes are unchanged. Chars, not tokens: this sizes the **lever**, not
+a billed saving — turning it into money needs the rank-2 Messages API arm or a
+provider that partial-prefix-matches the CLI route.
+
+**Gates:** `headless_worker_selftest` PASS (new
+`test_h2191_prompt_is_assembled_stable_left` pins the order, single-occurrence of every
+segment, the `split_prompt` byte-identity and the absence of the old JS order) ·
+`window_selftest` 201/201 · `h2189_profile_ab_selftest` 12/12 ·
+`h2158_route_ab.py --check` byte-identical on 3 real cards · LANG_PARITY 91 entries,
+32 re-derived (SHARED/GAP stand; zero language-keyed tokens in the diff).
 
 ### Step F — Instrument every paid A/B (standing, all handoffs)
 
@@ -194,9 +218,9 @@ revert to a TTL-blind constant cannot pass the test written to catch it.
 | B | [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md) minimal profile | medium | bare cwd shipped |
 | C | [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md) Messages API A/B + port | hard | human API credential for Phase 1 API arm |
 | D | ✅ [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) dual-rate 1 h pricing — **shipped 02-08-2026**, [PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032) | medium | none |
-| E | [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md) stable-left prefix reorder | medium | none (independent of API port) |
+| E | ✅ [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md) stable-left prefix reorder — **shipped 03-08-2026** | medium | none (independent of API port) |
 
-Recommended launch order: ~~**H2190** (offline)~~ ✅ done → **H2191** (offline) →
+Recommended launch order: ~~**H2190** (offline)~~ ✅ done → ~~**H2191** (offline)~~ ✅ done →
 **H2189** (small paid A/B) → **H2158** (needs credential + human GO for route flip).
 
 ### Starters
@@ -205,9 +229,7 @@ Recommended launch order: ~~**H2190** (offline)~~ ✅ done → **H2191** (offlin
 Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md and execute it.
 ```
 
-```
-Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md and execute it.
-```
+🔴 EXECUTED: [H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md)
 
 ```
 Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md and execute it.
@@ -229,7 +251,7 @@ read this playbook first.
 - [ ] Minimal profile measured + wired or rejected with numbers
 - [ ] H2158 two-arm A/B complete + human GO/NO-GO on route
 - [ ] Cost tools never silently price 1 h writes at 5 m rates
-- [ ] Prefix order stable-left; LANG_PARITY SHARED note if both surfaces touch
+- [x] Prefix order stable-left; LANG_PARITY SHARED note if both surfaces touch (H2191, 03-08-2026)
 - [ ] RUN_FREQ_MAX + PIPELINE_HISTORY point here (no third narrative)
 
 ---
