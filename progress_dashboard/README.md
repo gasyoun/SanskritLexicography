@@ -1,6 +1,6 @@
 # PWG→RU progress & kitchen dashboard
 
-_Created: 10-07-2026 · Last updated: 02-08-2026 (H2229 OPT-8 collision banner)_
+_Created: 10-07-2026 · Last updated: 03-08-2026 (H2236 B4 quality/fidelity timeseries)_
 
 **Improvement backlog (measured / show / should-measure):**
 [ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md).
@@ -102,6 +102,7 @@ python RussianTranslation/src/pilot/dashboard_server.py
 | [`progress_data.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/progress_data.json) | progress snapshot (committed occasionally; live ticks go to gh-pages only) |
 | [`progress_timeseries.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/progress_timeseries.json) | append-only daily trend rows |
 | [`kitchen_data.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_data.json) | kitchen snapshot |
+| [`quality_timeseries.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/quality_timeseries.json) | B4 — append-only daily fidelity/judge-coverage trend, one row per build date (`kitchen_slices.quality_timeseries_append`, sourced from `quality_slice()`'s `fidelity_aggregate.json` + ledger judge-sample counts) |
 | [`index.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/index.html) | self-contained page; polls JSON every 60s |
 
 ## Refresh

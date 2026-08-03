@@ -412,6 +412,37 @@ def quality_slice(pilot_out: Path, rows: list[dict], events: Path) -> dict:
     return out
 
 
+def quality_timeseries_append(ts_path: Path, quality: dict, generated_at: str, today: str) -> dict:
+    """B4 — append-only quality/fidelity/judge points, one row per build date.
+
+    Same last-write-per-date-wins pattern as build_progress_data.py's
+    progress_timeseries.json, applied to the quality_slice() snapshot so the
+    kitchen page can chart fidelity precision / judge coverage as a trend
+    instead of a single overwritten fidelity_aggregate.json aggregate.
+    """
+    ts: dict = {"snapshots": []}
+    if ts_path.exists():
+        try:
+            ts = json.loads(ts_path.read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            ts = {"snapshots": []}
+    fid = quality.get("fidelity") or {}
+    jdg = quality.get("judge_coverage") or {}
+    row = {
+        "date": today,
+        "generated_at": generated_at,
+        "fidelity_precision": fid.get("precision"),
+        "fidelity_n": fid.get("n"),
+        "judge_coverage_pct": jdg.get("pct"),
+        "clean_windows": quality.get("clean_windows"),
+        "crashes": quality.get("crashes"),
+    }
+    ts["snapshots"] = [s for s in ts.get("snapshots", []) if s.get("date") != today] + [row]
+    ts["snapshots"].sort(key=lambda s: s["date"])
+    ts_path.write_text(json.dumps(ts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return ts
+
+
 def cost_honesty(econ: dict, spend: dict) -> dict:
     """K8 — sample-size badge so band is not read as full invoice."""
     summary = {}
