@@ -4,6 +4,50 @@ _Created: 09-07-2026 · Last updated: 03-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 03-08-2026 (`/pwg-live-gate`) — c4 gate-0 **HEALTH_NOGO**: the route, not our kill
+
+Opus 5 1M (`claude-opus-5[1m]`) drove the gate; the probe's own executor is **Sonnet 5**
+(`claude-sonnet-5`). One sitting, **2 paid calls, $0.976** observed. Verdict derived
+mechanically by [`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
+under policy `production_v3` (wall ceiling **80 000 ms**, route ceiling **45 000 ms**,
+`conn_error_ceil` 0) — not asserted here.
+
+| Reading | wall `elapsed_ms` | route `duration_api_ms` | gap (scaffolding) | classification | vs ceilings |
+|---|--:|--:|--:|---|---|
+| warm-up (advisory) | 69 082 | 15 315 | 53 767 | success | wall under 80 000; route far under 45 000 |
+| **measured (the gate)** | **297 949** | **276 183** | 21 766 | **process** | **wall 3.7× over · route 6.1× over** |
+
+`gate_reason = HEALTH_NOGO` → **verdict NO-GO**. Four independent fail conditions fired:
+classification ≠ success, a process/connection error, wall ≥ ceiling, route ≥ api ceiling.
+
+**This is a route failure, not our own kill — the distinction the gate is required to make.**
+297 949 ms sits ~2 s under `HARD_TIMEOUT_MS` (300 000), which is exactly the our-kill
+signature, so it had to be ruled out rather than assumed. The call ledger settles it: the CLI
+itself reported `duration_ms` **277 894** and `duration_api_ms` **276 183**, i.e. the process
+*returned* with telemetry instead of being tree-killed, and the API leg alone burned 276 s.
+It also came back effectively empty — `output_tokens` **2**, 1 146 output bytes — while still
+billing $0.412 for that call. A killed call leaves no such finalized telemetry.
+
+The warm-up is the sharpest evidence that this is bimodality, not a dead profile: the same
+profile, same prompt, ~5 minutes earlier, returned a **15 315 ms** route reading — the
+*second-fastest* ever recorded on c4 — and then the measured leg was 18× slower. That is the
+hours-scale bimodality MG's 02-08 retry ruling was written for.
+
+**Consequences, per the gate's own hand-off clause:** no canary, no bounded window, nothing
+further billed; the manifest-bound lease is left intact and unconsumed. Resume requires a
+**new** health PASS — a prior GO never authorizes it. Ration state: this was attempt **1 of 2**
+for 03-08 UTC; the next probe is legal no earlier than **15:27 UTC** (≥6 h spacing). Under v3
+this is NO-GO **day 1**; at 3 consecutive NO-GO days the lane stops and the ceiling goes back to
+[H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md)
+for re-derivation instead of to another probe. Ceiling re-fitting is **not** indicated yet: a
+single reading 3.7× over is not the "median sits just under the ceiling" shape that justified
+the v2→v3 fit.
+
+Machine-readable rows are **local-only** (the probe's output dir is gitignored):
+[src/pilot/output/h963_c4_gate0_probe_events.jsonl](file:///C:/Users/user/Documents/GitHub/SanskritLexicography/RussianTranslation/src/pilot/output/h963_c4_gate0_probe_events.jsonl)
+and the call ledger [h963_c4_gate0_calls.json](file:///C:/Users/user/Documents/GitHub/SanskritLexicography/RussianTranslation/src/pilot/output/h963_c4_gate0_calls.json)
+(run `#729`, `run_id …2026-08-03T09:27:25Z-pid21980`).
+
 ## 03-08-2026 (H2192) — `added_by_one` fires 0/12,000 because it and `omitted_by_one` are one undirected class
 
 Opus 5 1M (`claude-opus-5[1m]`), [H2192](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2192-Opus_RussianTranslation_askbatch-rv-residual-2026-08_02.08.26.md).

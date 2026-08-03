@@ -10,6 +10,11 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.141.3] - 2026-08-03
+
+### Changed
+- **c4 gate-0 reading 03-08-2026 — `HEALTH_NOGO`, and the first sitting to exercise the unblocked canary path (Opus 5 1M `claude-opus-5[1m]`; probe executor Sonnet 5 `claude-sonnet-5`):** one sitting, 2 paid calls, **$0.976**. Measured **297 949 ms** wall / **276 183 ms** route against `production_v3`'s 80 000 / 45 000 ceilings — 3.7× and 6.1× over, `classification=process`, 2 output tokens. **Classified a route failure, not our own kill**, though it landed ~2 s under `HARD_TIMEOUT_MS` (300 000): the CLI returned finalized telemetry (`duration_ms` 277 894, `duration_api_ms` 276 183), which a tree-killed call never produces — the distinction the gate is required to make and the reason the ledger, not the wall clock, settles it. The warm-up ~5 min earlier read **15 315 ms** route, c4's second-fastest ever, then the measured leg came back 18× slower: textbook hours-scale bimodality. No canary, no bounded window, lease intact and unconsumed. Ration: attempt 1 of 2 for the UTC day, next legal from 15:27 UTC; NO-GO day 1 of 3 before the ceiling returns to [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md) for re-derivation. Ceiling re-fitting is **not** indicated — a single 3.7×-over reading is not the "median just under the ceiling" shape that justified the v2→v3 fit. Full table in [RESULTS_LOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md).
+
 ## [1.141.0] - 2026-08-03
 
 ### Added
