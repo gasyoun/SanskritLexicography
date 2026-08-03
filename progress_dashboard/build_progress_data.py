@@ -220,6 +220,33 @@ def corpus():
     }
 
 
+def kitchen_slice():
+    """H2241 K-slice: daily kitchen operator/yield/health points for the trend
+    charts, read from the sibling kitchen_data.json build (same directory,
+    always co-located since both are committed progress_dashboard/ outputs).
+    """
+    p = OUT / "kitchen_data.json"
+    if not p.exists():
+        return {"measured": False}
+    try:
+        with p.open(encoding="utf-8-sig") as fh:
+            kd = json.load(fh)
+    except Exception as e:  # noqa: BLE001 — a malformed kitchen build must not crash this one
+        print(f"  ! could not read kitchen_data.json: {e}")
+        return {"measured": False}
+    yq = kd.get("yield_quality") or {}
+    health = kd.get("health") or {}
+    idle = kd.get("idle") or {}
+    verdict = health.get("last_verdict")
+    return {
+        "measured": True,
+        "yield_clean_pct": yq.get("clean_window_pct"),
+        "health_last_verdict": verdict,
+        "health_last_go": {"GO": 1, "NO-GO": 0}.get(verdict),
+        "idle_hours": idle.get("total_idle_hours"),
+    }
+
+
 def main():
     now = datetime.now(timezone.utc)
     today = now.date().isoformat()
@@ -230,6 +257,7 @@ def main():
     cov = coverage()
     cor = corpus()
     rq = review_queue()
+    kit = kitchen_slice()
 
     data = {
         "generated_at": generated_at,
@@ -272,6 +300,11 @@ def main():
         "needs_review": rb.get("needs_review"),
         "g5_open": rq.get("g5_open") if rq.get("measured") else None,
         "g5_total": rq.get("g5_total") if rq.get("measured") else None,
+        # H2241 K-slice: daily kitchen operator/yield/health points.
+        "kitchen_yield_clean_pct": kit.get("yield_clean_pct") if kit.get("measured") else None,
+        "kitchen_health_last_verdict": kit.get("health_last_verdict") if kit.get("measured") else None,
+        "kitchen_health_last_go": kit.get("health_last_go") if kit.get("measured") else None,
+        "kitchen_idle_hours": kit.get("idle_hours") if kit.get("measured") else None,
     }
     ts["snapshots"] = [s for s in ts.get("snapshots", []) if s.get("date") != today] + [row]
     ts["snapshots"].sort(key=lambda s: s["date"])
@@ -288,6 +321,12 @@ def main():
     print(f"  corpus/TM:   {cor.get('pairs')} pairs, {cor.get('recall_pct')}% recall")
     if rq.get("measured"):
         print(f"  G5 queue:    {rq.get('g5_open')} open / {rq.get('g5_total')} across {rq.get('sheet_count')} sheet(s)")
+    if kit.get("measured"):
+        print(
+            f"  K-slice:     yield_clean={kit.get('yield_clean_pct')}%  "
+            f"health_last={kit.get('health_last_verdict')}  "
+            f"idle_hours={kit.get('idle_hours')}"
+        )
 
 
 if __name__ == "__main__":
