@@ -1,0 +1,120 @@
+{
+ "classification": "completed_with_residuals",
+ "attempts": [
+  {
+   "label": "heal:nakzatra#g1",
+   "keys": [
+    "nakzatra_f0",
+    "nakzatra_f1",
+    "nakzatra_f2",
+    "nakzatra_f3"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 176854,
+   "classification": "success"
+  },
+  {
+   "label": "heal:nakzatra#g1.retry1",
+   "keys": [
+    "nakzatra_f0",
+    "nakzatra_f1",
+    "nakzatra_f2",
+    "nakzatra_f3"
+   ],
+   "returncode": 124,
+   "elapsed_ms": 300037,
+   "classification": "timeout"
+  },
+  {
+   "label": "heal:nakzatra#g2",
+   "keys": [
+    "nakzatra_f0",
+    "nakzatra_f1",
+    "nakzatra_f2",
+    "nakzatra_f3",
+    "nakzatra_f4",
+    "nakzatra_f5"
+   ],
+   "returncode": 124,
+   "elapsed_ms": 300028,
+   "classification": "timeout"
+  },
+  {
+   "label": "heal:sarvatra#g1",
+   "keys": [
+    "sarvatra_f0",
+    "sarvatra_f1",
+    "sarvatra_f2",
+    "sarvatra_f3"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 196938,
+   "classification": "success"
+  },
+  {
+   "label": "heal:sarvatra#g2",
+   "keys": [
+    "sarvatra_f0",
+    "sarvatra_f1",
+    "sarvatra_f2",
+    "sarvatra_f3",
+    "sarvatra_f4"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 289574,
+   "classification": "success"
+  },
+  {
+   "label": "heal:sarvatra#g2.retry1",
+   "keys": [
+    "sarvatra_f4"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 48450,
+   "classification": "success"
+  },
+  {
+   "label": "heal:sakft#g1",
+   "keys": [
+    "sakft_f0",
+    "sakft_f1",
+    "sakft_f2",
+    "sakft_f3"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 232633,
+   "classification": "success"
+  },
+  {
+   "label": "heal:sakft#g2",
+   "keys": [
+    "sakft_f0",
+    "sakft_f1",
+    "sakft_f2",
+    "sakft_f3",
+    "sakft_f4",
+    "sakft_f5",
+    "sakft_f6",
+    "sakft_f7"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 192277,
+   "classification": "success"
+  },
+  {
+   "label": "heal:sakft#g2.retry1",
+   "keys": [
+    "sakft_f0",
+    "sakft_f7"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 209581,
+   "classification": "success"
+  }
+ ],
+ "null_keys": [
+  "nakzatra"
+ ],
+ "manifest_sha256": "05a1de55cc0883459c77613aa93fd50f9810146254dab24567553378b4f8fda9",
+ "result_sha256": "1bd6abcc5bfe3c7a8ae33a0ec8e7bcbd8dc9f101f86eb4204366f58c12d32015"
+}

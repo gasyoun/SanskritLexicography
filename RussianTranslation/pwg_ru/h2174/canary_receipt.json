@@ -1,0 +1,23 @@
+{
+  "schema": "pwg.canary_gate_receipt.v1",
+  "verdict": "GO",
+  "judged_at_epoch": 1785739143.681103,
+  "wf_output": "C:\\Users\\user\\Documents\\GitHub\\SL-h2174-875324\\RussianTranslation\\src\\pilot\\output\\h2174\\out.canary.json",
+  "wf_sha256": "72c61183f42b15b447638d5305eb6efbfddd6279e7daeda770c75a6a66d81260",
+  "expect_senses": 3,
+  "profile_slot": "c4",
+  "reasons": [],
+  "facts": {
+    "keys": [
+      "dq_canary_puregloss~~h0_zz_pw"
+    ],
+    "sense_counts": [
+      [
+        "dq_canary_puregloss~~h0_zz_pw",
+        3
+      ]
+    ],
+    "tn_hits": [],
+    "marker_hits": []
+  }
+}

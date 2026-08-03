@@ -1,0 +1,1258 @@
+{
+ "meta": {
+  "schema_version": "pwg_ru.workflow_meta.v1",
+  "generator": "gen_opt_harness2.batched-masked",
+  "generated_at": "2026-08-03T06:41:41Z",
+  "root": "h1447-m50-w1",
+  "safe_root": "h1447-m50-w1",
+  "lang": "ru",
+  "gen_model": "claude-sonnet-5",
+  "source_profile": null,
+  "source_profiles": {
+   "nakzatra": "pwg_with_supplements",
+   "sarvatra": "pwg_with_supplements",
+   "sakft": "pwg_with_supplements"
+  },
+  "mode": "nominal_masked",
+  "nominal": true,
+  "nominal_keymap": {
+   "nakzatra": "nakzatra",
+   "sarvatra": "sarvatra",
+   "sakft": "sakft"
+  },
+  "grammar_layer": "none",
+  "selected_keys": [
+   "nakzatra",
+   "sarvatra",
+   "sakft"
+  ],
+  "batches": [],
+  "batch_count": 0,
+  "rootmap_sha256": null,
+  "input_hashes": {
+   "nakzatra": {
+    "raw_sha256": "43b683f20a94ab6dd676a6666a7f3a300560031545d3ec0eed0499b2caf10e9f",
+    "portrait_sha256": "fb6c7e18460da55b05ff9c3c209305ae78439d5097875aa14701a3cdbeadf426"
+   },
+   "sarvatra": {
+    "raw_sha256": "3957dee35745a41008bbd557f9da1763a0bd3c4f966964897acf7bc234f33ea7",
+    "portrait_sha256": "daef0917feb84994923f72d10e8a4b0375384c03f0218e5276b6ff027068b9f0"
+   },
+   "sakft": {
+    "raw_sha256": "b8160e46bd69a9ab87acf31211d82a8d420a532b58992fb8eb4a5ff8f05a4d69",
+    "portrait_sha256": "5700d3802f37a295a12a496b292a5ab3dfb5d5f5fe3a6bc6ccfe29247df385aa"
+   }
+  },
+  "input_payload_keys": [
+   "nakzatra",
+   "sakft",
+   "sarvatra"
+  ],
+  "selfheal": true,
+  "selfheal_group_budget": 12,
+  "selfheal_cards": {
+   "nakzatra": 2,
+   "sarvatra": 2,
+   "sakft": 2
+  },
+  "binary_split": true,
+  "output_budget": 90,
+  "sense_presplit_budget": 20,
+  "kill": true,
+  "kill_gate": {
+   "factor": 2.0,
+   "base_ms": 20000,
+   "slope_ms": 45,
+   "floor_ms": 45000,
+   "ceil_ms": 300000
+  },
+  "kill_switch": true,
+  "agent_budget_strategy": "split-pools-per-card-heal",
+  "max_agents": 18,
+  "max_translate_agents": 0,
+  "max_heal_agents": 18,
+  "translate_agent_expected": 0,
+  "heal_budget_groups": 6,
+  "heal_budget_cards": 3,
+  "max_agents_factor": 3.0,
+  "max_agents_headroom": 10,
+  "max_wide": 3,
+  "stagger_ms": 2000,
+  "per_card_heal_budget": true,
+  "per_card_heal_factor": 1.5,
+  "per_card_heal_headroom": 3,
+  "kill_timeout_no_bisect": true,
+  "presplit_group_cite_budget": 60,
+  "presplit_group_sense_cap": 18,
+  "presplit_keys": [
+   "nakzatra",
+   "sarvatra",
+   "sakft"
+  ],
+  "tm": "translation_memory.ru.json",
+  "tm_auto": true,
+  "tm_available": true,
+  "tm_cards": 0,
+  "tm_hits": [],
+  "frag_tm": null,
+  "frag_tm_cards": [],
+  "frag_tm_fragments": 0,
+  "suggest_tm": null,
+  "suggest_profile": "semantic",
+  "suggest_tm_cards": [],
+  "suggest_tm_top": {},
+  "degenerate_passthrough_keys": [],
+  "agent_expected_after_tm": 6,
+  "execution_manifest_schema": "pwg.headless_execution_manifest.v2",
+  "execution": {
+   "profile_slot": "c4",
+   "config_dir_fingerprint": "e96ee46471ec057e985b40d5ba6c5887bd4e17cc7cb89cb4dbb9c96a09704d4f",
+   "execution_route": "claude-cli-headless",
+   "executor_lane": "serial-whole-card",
+   "validation_method": "audit_window+final_schema",
+   "model_identifier": "claude-sonnet-5"
+  },
+  "provenance_classes": {
+   "nakzatra": "real",
+   "sarvatra": "real",
+   "sakft": "real"
+  },
+  "execution_manifest_sha256": "05a1de55cc0883459c77613aa93fd50f9810146254dab24567553378b4f8fda9"
+ },
+ "summary": {
+  "root": "h1447-m50-w1",
+  "lang": "ru",
+  "cards": 3,
+  "ok": 2,
+  "null": 1,
+  "healed": 2,
+  "presplit": 3,
+  "tm": 0,
+  "degenerate_passthrough": 0,
+  "null_keys": [
+   "nakzatra"
+  ],
+  "partial_keys": [],
+  "failures": {
+   "nakzatra": "timeout"
+  },
+  "german_anchor_repairs": 0,
+  "german_anchor_detail": [],
+  "translate_agents_spent": 0,
+  "heal_agents_spent": 9,
+  "budget_stops": 0,
+  "usage": {
+   "input_tokens": 24,
+   "output_tokens": 108595,
+   "cache_read_tokens": 682821,
+   "cache_creation_tokens": 410796,
+   "subagent_tokens": 1202236,
+   "observed_cost_usd": 4.2986193,
+   "cost_evaluable": false,
+   "priced_calls": 9,
+   "missing_usage_calls": 2
+  },
+  "kill_timeouts": 2,
+  "conn_errors": 0,
+  "headless_attempts": [
+   {
+    "label": "heal:nakzatra#g1",
+    "keys": [
+     "nakzatra_f0",
+     "nakzatra_f1",
+     "nakzatra_f2",
+     "nakzatra_f3"
+    ],
+    "returncode": 0,
+    "elapsed_ms": 176854,
+    "classification": "success"
+   },
+   {
+    "label": "heal:nakzatra#g1.retry1",
+    "keys": [
+     "nakzatra_f0",
+     "nakzatra_f1",
+     "nakzatra_f2",
+     "nakzatra_f3"
+    ],
+    "returncode": 124,
+    "elapsed_ms": 300037,
+    "classification": "timeout"
+   },
+   {
+    "label": "heal:nakzatra#g2",
+    "keys": [
+     "nakzatra_f0",
+     "nakzatra_f1",
+     "nakzatra_f2",
+     "nakzatra_f3",
+     "nakzatra_f4",
+     "nakzatra_f5"
+    ],
+    "returncode": 124,
+    "elapsed_ms": 300028,
+    "classification": "timeout"
+   },
+   {
+    "label": "heal:sarvatra#g1",
+    "keys": [
+     "sarvatra_f0",
+     "sarvatra_f1",
+     "sarvatra_f2",
+     "sarvatra_f3"
+    ],
+    "returncode": 0,
+    "elapsed_ms": 196938,
+    "classification": "success"
+   },
+   {
+    "label": "heal:sarvatra#g2",
+    "keys": [
+     "sarvatra_f0",
+     "sarvatra_f1",
+     "sarvatra_f2",
+     "sarvatra_f3",
+     "sarvatra_f4"
+    ],
+    "returncode": 0,
+    "elapsed_ms": 289574,
+    "classification": "success"
+   },
+   {
+    "label": "heal:sarvatra#g2.retry1",
+    "keys": [
+     "sarvatra_f4"
+    ],
+    "returncode": 0,
+    "elapsed_ms": 48450,
+    "classification": "success"
+   },
+   {
+    "label": "heal:sakft#g1",
+    "keys": [
+     "sakft_f0",
+     "sakft_f1",
+     "sakft_f2",
+     "sakft_f3"
+    ],
+    "returncode": 0,
+    "elapsed_ms": 232633,
+    "classification": "success"
+   },
+   {
+    "label": "heal:sakft#g2",
+    "keys": [
+     "sakft_f0",
+     "sakft_f1",
+     "sakft_f2",
+     "sakft_f3",
+     "sakft_f4",
+     "sakft_f5",
+     "sakft_f6",
+     "sakft_f7"
+    ],
+    "returncode": 0,
+    "elapsed_ms": 192277,
+    "classification": "success"
+   },
+   {
+    "label": "heal:sakft#g2.retry1",
+    "keys": [
+     "sakft_f0",
+     "sakft_f7"
+    ],
+    "returncode": 0,
+    "elapsed_ms": 209581,
+    "classification": "success"
+   }
+  ]
+ },
+ "results": [
+  {
+   "key": "nakzatra",
+   "card": null,
+   "judge": null,
+   "judge_sonnet": null,
+   "escalated": false,
+   "presplit": true,
+   "error": "timeout"
+  },
+  {
+   "key": "sarvatra",
+   "card": {
+    "key1": "sarvatra",
+    "iast": "sarvatra",
+    "notes": "",
+    "records": [
+     {
+      "h": "",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{#sarva/tra#}¦ (von {#sarva#}) <lex>adv.</lex> <ls>P. 5,3,10</ls>. <ls>VOP. 7,99</ls>.",
+        "russian": "{#sarva/tra#}¦ (от {#sarva#}) <lex>adv.</lex> <ls>P. 5,3,10</ls>. <ls>VOP. 7,99</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "0",
+        "german": "<div n=\"1\"> 1〉 {%überall, stets, in allen Fällen, jederzeit%} <ls>ŚAT. BR. 2,4,3,9</ls>. <ls n=\"ŚAT. BR.\">4,4,1,18</ls>. <ls>ĀŚV. ŚR. 9,2,5</ls>. <ls>KĀTY. ŚR. 3,2,6</ls>. <ls n=\"KĀTY. ŚR. 3,\">5,8</ls>. <ls n=\"KĀTY. ŚR.\">4,10,5</ls>. <ls n=\"KĀTY. ŚR.\">9,6,10</ls>. <ls n=\"KĀTY. ŚR.\">11,1,7</ls>. {#svAhAkAraH sa˚#} <ls n=\"KĀTY. ŚR.\">4,4,18</ls>. <ls>LĀṬY. 6,10,17</ls>. {#sa˚ catvAri#} <ls n=\"LĀṬY.\">7,11,9</ls>. {#devaSabdaM sa˚ varjayeyuH#} <ls n=\"LĀṬY.\">8,9,3</ls>. <ls>KAUŚ. 8</ls>. <ls n=\"KAUŚ.\">57</ls>. <ls n=\"KAUŚ.\">136</ls>. <ls>VS. PRĀT. 2,15</ls>. <ls n=\"VS. PRĀT.\">4,16</ls>. <ls n=\"VS. PRĀT. 4,\">24</ls>.",
+        "russian": "<div n=\"1\"> 1) везде, всегда, во всех случаях, в любое время <ls>ŚAT. BR. 2,4,3,9</ls>. <ls n=\"ŚAT. BR.\">4,4,1,18</ls>. <ls>ĀŚV. ŚR. 9,2,5</ls>. <ls>KĀTY. ŚR. 3,2,6</ls>. <ls n=\"KĀTY. ŚR. 3,\">5,8</ls>. <ls n=\"KĀTY. ŚR.\">4,10,5</ls>. <ls n=\"KĀTY. ŚR.\">9,6,10</ls>. <ls n=\"KĀTY. ŚR.\">11,1,7</ls>. {#svAhAkAraH sa˚#} <ls n=\"KĀTY. ŚR.\">4,4,18</ls>. <ls>LĀṬY. 6,10,17</ls>. {#sa˚ catvAri#} <ls n=\"LĀṬY.\">7,11,9</ls>. {#devaSabdaM sa˚ varjayeyuH#} <ls n=\"LĀṬY.\">8,9,3</ls>. <ls>KAUŚ. 8</ls>. <ls n=\"KAUŚ.\">57</ls>. <ls n=\"KAUŚ.\">136</ls>. <ls>VS. PRĀT. 2,15</ls>. <ls n=\"VS. PRĀT.\">4,16</ls>. <ls n=\"VS. PRĀT. 4,\">24</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": "Синонимический ряд «везде, всегда, во всех случаях, в любое время» передаёт немецкий ряд «überall, stets, in allen Fällen, jederzeit» с равным числом членов (принцип кардинальности синонимов); «везде» покрывает пространственную всеобщность, «всегда»/«в любое время» — временную, «во всех случаях» — обстоятельственную; запятые в оригинале маркируют взаимозаменяемые синонимы внутри одного значения, а не границу нового значения."
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "adj.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "<ls n=\"VS. PRĀT. 4,\">77</ls>. <ls n=\"VS. PRĀT. 4,\">97</ls>. <ls>AV. PRĀT. 3,60</ls>. <ls>TS. PRĀT. 2,25</ls>. <ls n=\"TS. PRĀT.\">12,11</ls>. <ls n=\"TS. PRĀT.\">17,2</ls>. <ls>P. 4,3,22</ls>. <ls n=\"P.\">6,1,122</ls>. <ls n=\"P.\">1,1,34</ls>, <ab>Schol.</ab> <ls>M. 2,180</ls>. <ls n=\"M.\">7,52</ls>. <ls n=\"M.\">8,241</ls>. <ls>R. 1,4,24</ls>. <ls>ŚĀK. 15</ls>. <ls>VIKR. 39,14</ls>. <ls>Spr. (II) 149. fg.</ls> <ls n=\"Spr. (II)\">2999</ls>. <ls n=\"Spr. (II)\">6859. fg.</ls>",
+        "russian": "<ls n=\"VS. PRĀT. 4,\">77</ls>. <ls n=\"VS. PRĀT. 4,\">97</ls>. <ls>AV. PRĀT. 3,60</ls>. <ls>TS. PRĀT. 2,25</ls>. <ls n=\"TS. PRĀT.\">12,11</ls>. <ls n=\"TS. PRĀT.\">17,2</ls>. <ls>P. 4,3,22</ls>. <ls n=\"P.\">6,1,122</ls>. <ls n=\"P.\">1,1,34</ls>, <ab>Schol.</ab> <ls>M. 2,180</ls>. <ls n=\"M.\">7,52</ls>. <ls n=\"M.\">8,241</ls>. <ls>R. 1,4,24</ls>. <ls>ŚĀK. 15</ls>. <ls>VIKR. 39,14</ls>. <ls>Spr. (II) 149. fg.</ls> <ls n=\"Spr. (II)\">2999</ls>. <ls n=\"Spr. (II)\">6859. fg.</ls>",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       },
+       {
+        "tag": "0",
+        "german": "<ls n=\"Spr. (II)\">6916</ls>. <ls n=\"Spr. (II)\">6918. fg.</ls> <ls n=\"Spr. (II)\">7453</ls>. <ls>VARĀH. BṚH. S. 11,18</ls>. <ls n=\"VARĀH. BṚH. S.\">19,1</ls>. <ls n=\"VARĀH. BṚH. S.\">53,69</ls>. <ls>KATHĀS. 24,104</ls>. <ls>BHĀG. P. 7,7,55</ls>. <ls>HIT. Pr. 2</ls>. <ls n=\"HIT. Pr.\">10,14</ls>. <ls>DHŪRTAS. 85,10</ls>. {#sarvatrEva#} <ls>ṚV. PRĀT. 2,27</ls>. <ls n=\"ṚV. PRĀT.\">4,14</ls>. <ls>Spr. (II) 6262</ls>. {#sarvatrApi#} <ls n=\"Spr. (II)\">6174</ls>. {#sarvatra sarvadA#} <ls n=\"Spr. (II)\">2338</ls>. <ls>HARIV. 15055</ls>. <ls>KAP. 1,117</ls>.",
+        "russian": "<ls n=\"Spr. (II)\">6916</ls>. <ls n=\"Spr. (II)\">6918. fg.</ls> <ls n=\"Spr. (II)\">7453</ls>. <ls>VARĀH. BṚH. S. 11,18</ls>. <ls n=\"VARĀH. BṚH. S.\">19,1</ls>. <ls n=\"VARĀH. BṚH. S.\">53,69</ls>. <ls>KATHĀS. 24,104</ls>. <ls>BHĀG. P. 7,7,55</ls>. <ls>HIT. Pr. 2</ls>. <ls n=\"HIT. Pr.\">10,14</ls>. <ls>DHŪRTAS. 85,10</ls>. {#sarvatrEva#} <ls>ṚV. PRĀT. 2,27</ls>. <ls n=\"ṚV. PRĀT.\">4,14</ls>. <ls>Spr. (II) 6262</ls>. {#sarvatrApi#} <ls n=\"Spr. (II)\">6174</ls>. {#sarvatra sarvadA#} <ls n=\"Spr. (II)\">2338</ls>. <ls>HARIV. 15055</ls>. <ls>KAP. 1,117</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "sarvatra",
+      "grammar": "adj., adv.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "<ls>BHĀG. P. 2,2,36</ls>. {#sarvaTA sarvatra sarvadA#} <ls>SARVADARŚANAS. 42,6</ls>. {#na sa˚#} {%in keinem Falle%} <ls>VARĀH. BṚH. S. 2,16</ls>.",
+        "russian": "<ls>BHĀG. P. 2,2,36</ls>. {#sarvaTA sarvatra sarvadA#} <ls>SARVADARŚANAS. 42,6</ls>. {#na sa˚#} ни в коем случае <ls>VARĀH. BṚH. S. 2,16</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "sarvatra",
+      "grammar": "adj., subst.",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "<div n=\"1\">— 2〉 = {#sarvasmin#} <lex>adj.</lex> und <ab>subst.</ab> {#SAntikarmaRi#} <ls>MĀRK. P. 92,15</ls>. {#ASrame#} <ab>Schol.</ab> zu <ls>ŚĀK. 7,10</ls>. {#kuSalaH#} <ls>HARIV. 15054</ls>. {#kuSalam#} <ls>MBH. 3,2471</ls>. <ls>R. 1,52,5</ls>. <ls n=\"R. 1,52,\">10</ls> {#Badram#} <ls>PRAB. 30,4</ls>. {#pramAdI#} <ls>VIKR. 30,14</ls>. {#ramate prAjYaH#} <ls>Spr. (II) 6917</ls>. {#parAjitaH#} <ls n=\"Spr. (II)\">7476</ls>. {#yogyatvam#} <ls n=\"Spr. (II)\">7478</ls>. {#samadfzwitvam#} <ls>RĀJA-TAR. 1,357</ls>. <ls>BHĀG. P. 3,24,47</ls>. <ls n=\"BHĀG. P.\">6,17,34</ls>. {#padaM hi sarvatra guRErniDIyate#} <ls>RAGH. 3,62</ls>. {#sarvatrAByAgato guruH#} (<ab>v. l.</ab> {#sarvasyA˚#}) <ls>Spr. (II) 2172</ls>. <ls n=\"Spr. (II)\">4448</ls>. {#dayAM kar#} <ls n=\"Spr. (II)\">4313</ls>. {#sarvatra na SoBanaM dAru#} {%Holz für Nichts gut%}",
+        "russian": "<div n=\"1\">— 2〉 = {#sarvasmin#} <lex>adj.</lex> и <ab>subst.</ab> {#SAntikarmaRi#} <ls>MĀRK. P. 92,15</ls>. {#ASrame#} <ab>Schol.</ab> к <ls>ŚĀK. 7,10</ls>. {#kuSalaH#} <ls>HARIV. 15054</ls>. {#kuSalam#} <ls>MBH. 3,2471</ls>. <ls>R. 1,52,5</ls>. <ls n=\"R. 1,52,\">10</ls> {#Badram#} <ls>PRAB. 30,4</ls>. {#pramAdI#} <ls>VIKR. 30,14</ls>. {#ramate prAjYaH#} <ls>Spr. (II) 6917</ls>. {#parAjitaH#} <ls n=\"Spr. (II)\">7476</ls>. {#yogyatvam#} <ls n=\"Spr. (II)\">7478</ls>. {#samadfzwitvam#} <ls>RĀJA-TAR. 1,357</ls>. <ls>BHĀG. P. 3,24,47</ls>. <ls n=\"BHĀG. P.\">6,17,34</ls>. {#padaM hi sarvatra guRErniDIyate#} <ls>RAGH. 3,62</ls>. {#sarvatrAByAgato guruH#} (<ab>v. l.</ab> {#sarvasyA˚#}) <ls>Spr. (II) 2172</ls>. <ls n=\"Spr. (II)\">4448</ls>. {#dayAM kar#} <ls n=\"Spr. (II)\">4313</ls>. {#sarvatra na SoBanaM dAru#} дерево, ни на что не годное",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "sarvatra",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "<ls>VARĀH. BṚH. S. 79,37</ls>.\n<div n=\"v\">— <ab>Vgl.</ab> {#sArvatrika#}.",
+        "russian": "<ls>VARĀH. BṚH. S. 79,37</ls>.\n<div n=\"v\">— <ab>Vgl.</ab> {#sArvatrika#}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "{#sarva/tra#}¦ <lex>Adv.</lex>",
+        "russian": "{#sarva/tra#}¦ <lex>Adv.</lex>",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "1",
+        "german": "<div n=\"1\">— 1〉 {%überall, stets, in allen Fällen, jederzeit%}. Verstärkt {#sarvatrApi#} {#sarvatra#} {#sarvaTA#} {#sarvatra#} {#srvadA#}. Mit einer Negation {%in keinem Falle%}.",
+        "russian": "<div n=\"1\">— 1〉 везде, всегда, во всех случаях, в любое время. Усилено {#sarvatrApi#} {#sarvatra#} {#sarvaTA#} {#sarvatra#} {#srvadA#}. С отрицанием ни в коем случае.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": "Четыре синонима PWG (место — время — случай — время) переданы русским рядом равной кардинальности «везде, всегда, во всех случаях, в любое время»; ср. корпусные «везде», «повсюду», «во всех случаях»."
+       }
+      ]
+     },
+     {
+      "h": "sarvatra",
+      "grammar": "adj., adv.",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "<div n=\"1\">— 2〉 = {#sarvasmin#} mit einer Negation {%für Nichts%} <ab>u. s. w.</ab>",
+        "russian": "<div n=\"1\"> — 2) = {#sarvasmin#}, с отрицанием {%ни во что не ставящий, ничего не значащий%} <ab>u. s. w.</ab>",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "sarvátra",
+      "grammar": "Indekl",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "[NWS: MW : 1189] {#sarvátra#} [Gen , unsp] Indekl = sarvasmin . Mbh , Kāvya(MW) . with na : in no case, not at all",
+        "russian": "[NWS: MW : 1189] {#sarvátra#} [Gen , unsp] indecl. = sarvasmin. Mbh, Kāvya(MW). с na: ни в коем случае, вовсе не. MW : 1189",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "[NWS: Renou 1997 : 1029] {#sarvatra#} [Gen , unsp] de façon nécessaire. Renou 1997, S. 330 . signalant l'étendue d'une rubrique. Renou 1997, S. 436 . dans la Saṃhitā et dans le Padapāṭha. Renou 1997, S. 453",
+        "russian": "[NWS: Renou 1997 : 1029] {#sarvatra#} [Gen , unsp] непременным образом. Renou 1997, S. 330. обозначая объём рубрики. Renou 1997, S. 436. в Саṃхите и в Падапатхе. Renou 1997, S. 453",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "[NWS: Windisch 1883 : 160] [Ved , unsp] überall, überallhin, stets",
+        "russian": "[NWS: Windisch 1883 : 160] [Ved, unsp] везде, повсюду, всегда",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": "нейтральное «везде, повсюду» по корпусу для ведийского пласта, ср. corpus_synonyms.by_stratum.Classical «везде»"
+       },
+       {
+        "tag": "2",
+        "german": "[NWS: MW : 1189 (s.v. sarvátra)] {#sarvatragāminīpratipattijñānabala#} [Gen , unsp] Subst n the faculty of knowing the means of going everywhere. Dhsgr 76 . [ one of the 10 faculties of a Tathāgata. ] MW : 1189 (s.v. sarvátra )",
+        "russian": "[NWS: MW : 1189 (s.v. sarvátra)] {#sarvatragāminīpratipattijñānabala#} [Gen, unsp] subst. n. способность знать средства, ведущие повсюду. Dhsgr 76. [одна из 10 способностей Татхагаты.] MW : 1189 (s.v. sarvátra)",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "frag_prov": [
+     {
+      "fsha": "17da0f62ee1d4d948cf373ccd88d948f92a4a1a27c95a8697f6100d541f4d0f1",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{#sarva/tra#}¦ (von {#sarva#}) <lex>adv.</lex> <ls>P. 5,3,10</ls>. <ls>VOP. 7,99</ls>.",
+        "russian": "{#sarva/tra#}¦ (от {#sarva#}) <lex>adv.</lex> <ls>P. 5,3,10</ls>. <ls>VOP. 7,99</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ],
+      "owners": [
+       [
+        "",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "83be11aa6f7d9af2a1590703ab316b7d5f8c3b827073acdff0c989f7e5f073ae",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "<div n=\"1\"> 1〉 {%überall, stets, in allen Fällen, jederzeit%} <ls>ŚAT. BR. 2,4,3,9</ls>. <ls n=\"ŚAT. BR.\">4,4,1,18</ls>. <ls>ĀŚV. ŚR. 9,2,5</ls>. <ls>KĀTY. ŚR. 3,2,6</ls>. <ls n=\"KĀTY. ŚR. 3,\">5,8</ls>. <ls n=\"KĀTY. ŚR.\">4,10,5</ls>. <ls n=\"KĀTY. ŚR.\">9,6,10</ls>. <ls n=\"KĀTY. ŚR.\">11,1,7</ls>. {#svAhAkAraH sa˚#} <ls n=\"KĀTY. ŚR.\">4,4,18</ls>. <ls>LĀṬY. 6,10,17</ls>. {#sa˚ catvAri#} <ls n=\"LĀṬY.\">7,11,9</ls>. {#devaSabdaM sa˚ varjayeyuH#} <ls n=\"LĀṬY.\">8,9,3</ls>. <ls>KAUŚ. 8</ls>. <ls n=\"KAUŚ.\">57</ls>. <ls n=\"KAUŚ.\">136</ls>. <ls>VS. PRĀT. 2,15</ls>. <ls n=\"VS. PRĀT.\">4,16</ls>. <ls n=\"VS. PRĀT. 4,\">24</ls>.",
+        "russian": "<div n=\"1\"> 1) везде, всегда, во всех случаях, в любое время <ls>ŚAT. BR. 2,4,3,9</ls>. <ls n=\"ŚAT. BR.\">4,4,1,18</ls>. <ls>ĀŚV. ŚR. 9,2,5</ls>. <ls>KĀTY. ŚR. 3,2,6</ls>. <ls n=\"KĀTY. ŚR. 3,\">5,8</ls>. <ls n=\"KĀTY. ŚR.\">4,10,5</ls>. <ls n=\"KĀTY. ŚR.\">9,6,10</ls>. <ls n=\"KĀTY. ŚR.\">11,1,7</ls>. {#svAhAkAraH sa˚#} <ls n=\"KĀTY. ŚR.\">4,4,18</ls>. <ls>LĀṬY. 6,10,17</ls>. {#sa˚ catvAri#} <ls n=\"LĀṬY.\">7,11,9</ls>. {#devaSabdaM sa˚ varjayeyuH#} <ls n=\"LĀṬY.\">8,9,3</ls>. <ls>KAUŚ. 8</ls>. <ls n=\"KAUŚ.\">57</ls>. <ls n=\"KAUŚ.\">136</ls>. <ls>VS. PRĀT. 2,15</ls>. <ls n=\"VS. PRĀT.\">4,16</ls>. <ls n=\"VS. PRĀT. 4,\">24</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": "Синонимический ряд «везде, всегда, во всех случаях, в любое время» передаёт немецкий ряд «überall, stets, in allen Fällen, jederzeit» с равным числом членов (принцип кардинальности синонимов); «везде» покрывает пространственную всеобщность, «всегда»/«в любое время» — временную, «во всех случаях» — обстоятельственную; запятые в оригинале маркируют взаимозаменяемые синонимы внутри одного значения, а не границу нового значения."
+       }
+      ],
+      "owners": [
+       [
+        "",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "6ba07297d3f74267f2c788e53668ceeaae017e236a7b97871ce73a11919d099c",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "<ls n=\"VS. PRĀT. 4,\">77</ls>. <ls n=\"VS. PRĀT. 4,\">97</ls>. <ls>AV. PRĀT. 3,60</ls>. <ls>TS. PRĀT. 2,25</ls>. <ls n=\"TS. PRĀT.\">12,11</ls>. <ls n=\"TS. PRĀT.\">17,2</ls>. <ls>P. 4,3,22</ls>. <ls n=\"P.\">6,1,122</ls>. <ls n=\"P.\">1,1,34</ls>, <ab>Schol.</ab> <ls>M. 2,180</ls>. <ls n=\"M.\">7,52</ls>. <ls n=\"M.\">8,241</ls>. <ls>R. 1,4,24</ls>. <ls>ŚĀK. 15</ls>. <ls>VIKR. 39,14</ls>. <ls>Spr. (II) 149. fg.</ls> <ls n=\"Spr. (II)\">2999</ls>. <ls n=\"Spr. (II)\">6859. fg.</ls>",
+        "russian": "<ls n=\"VS. PRĀT. 4,\">77</ls>. <ls n=\"VS. PRĀT. 4,\">97</ls>. <ls>AV. PRĀT. 3,60</ls>. <ls>TS. PRĀT. 2,25</ls>. <ls n=\"TS. PRĀT.\">12,11</ls>. <ls n=\"TS. PRĀT.\">17,2</ls>. <ls>P. 4,3,22</ls>. <ls n=\"P.\">6,1,122</ls>. <ls n=\"P.\">1,1,34</ls>, <ab>Schol.</ab> <ls>M. 2,180</ls>. <ls n=\"M.\">7,52</ls>. <ls n=\"M.\">8,241</ls>. <ls>R. 1,4,24</ls>. <ls>ŚĀK. 15</ls>. <ls>VIKR. 39,14</ls>. <ls>Spr. (II) 149. fg.</ls> <ls n=\"Spr. (II)\">2999</ls>. <ls n=\"Spr. (II)\">6859. fg.</ls>",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ],
+      "owners": [
+       [
+        "",
+        "adj."
+       ]
+      ]
+     },
+     {
+      "fsha": "2c5e948dd5468e36da315cabbe2b7a86cb0a42c6a3eddc224f8473f44742f104",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "<ls n=\"Spr. (II)\">6916</ls>. <ls n=\"Spr. (II)\">6918. fg.</ls> <ls n=\"Spr. (II)\">7453</ls>. <ls>VARĀH. BṚH. S. 11,18</ls>. <ls n=\"VARĀH. BṚH. S.\">19,1</ls>. <ls n=\"VARĀH. BṚH. S.\">53,69</ls>. <ls>KATHĀS. 24,104</ls>. <ls>BHĀG. P. 7,7,55</ls>. <ls>HIT. Pr. 2</ls>. <ls n=\"HIT. Pr.\">10,14</ls>. <ls>DHŪRTAS. 85,10</ls>. {#sarvatrEva#} <ls>ṚV. PRĀT. 2,27</ls>. <ls n=\"ṚV. PRĀT.\">4,14</ls>. <ls>Spr. (II) 6262</ls>. {#sarvatrApi#} <ls n=\"Spr. (II)\">6174</ls>. {#sarvatra sarvadA#} <ls n=\"Spr. (II)\">2338</ls>. <ls>HARIV. 15055</ls>. <ls>KAP. 1,117</ls>.",
+        "russian": "<ls n=\"Spr. (II)\">6916</ls>. <ls n=\"Spr. (II)\">6918. fg.</ls> <ls n=\"Spr. (II)\">7453</ls>. <ls>VARĀH. BṚH. S. 11,18</ls>. <ls n=\"VARĀH. BṚH. S.\">19,1</ls>. <ls n=\"VARĀH. BṚH. S.\">53,69</ls>. <ls>KATHĀS. 24,104</ls>. <ls>BHĀG. P. 7,7,55</ls>. <ls>HIT. Pr. 2</ls>. <ls n=\"HIT. Pr.\">10,14</ls>. <ls>DHŪRTAS. 85,10</ls>. {#sarvatrEva#} <ls>ṚV. PRĀT. 2,27</ls>. <ls n=\"ṚV. PRĀT.\">4,14</ls>. <ls>Spr. (II) 6262</ls>. {#sarvatrApi#} <ls n=\"Spr. (II)\">6174</ls>. {#sarvatra sarvadA#} <ls n=\"Spr. (II)\">2338</ls>. <ls>HARIV. 15055</ls>. <ls>KAP. 1,117</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": ""
+       }
+      ],
+      "owners": [
+       [
+        "",
+        "adj."
+       ]
+      ]
+     },
+     {
+      "fsha": "1cb901edbb1fc27787bf428c1f6c59cd320dc10967307208771f22e5f5fc66fc",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "<ls>BHĀG. P. 2,2,36</ls>. {#sarvaTA sarvatra sarvadA#} <ls>SARVADARŚANAS. 42,6</ls>. {#na sa˚#} {%in keinem Falle%} <ls>VARĀH. BṚH. S. 2,16</ls>.",
+        "russian": "<ls>BHĀG. P. 2,2,36</ls>. {#sarvaTA sarvatra sarvadA#} <ls>SARVADARŚANAS. 42,6</ls>. {#na sa˚#} ни в коем случае <ls>VARĀH. BṚH. S. 2,16</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       }
+      ],
+      "owners": [
+       [
+        "sarvatra",
+        "adj., adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "3b169a682d14987b60c9724cecfaa234e260111e08a74b2782c64eef03900306",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "<div n=\"1\">— 2〉 = {#sarvasmin#} <lex>adj.</lex> und <ab>subst.</ab> {#SAntikarmaRi#} <ls>MĀRK. P. 92,15</ls>. {#ASrame#} <ab>Schol.</ab> zu <ls>ŚĀK. 7,10</ls>. {#kuSalaH#} <ls>HARIV. 15054</ls>. {#kuSalam#} <ls>MBH. 3,2471</ls>. <ls>R. 1,52,5</ls>. <ls n=\"R. 1,52,\">10</ls> {#Badram#} <ls>PRAB. 30,4</ls>. {#pramAdI#} <ls>VIKR. 30,14</ls>. {#ramate prAjYaH#} <ls>Spr. (II) 6917</ls>. {#parAjitaH#} <ls n=\"Spr. (II)\">7476</ls>. {#yogyatvam#} <ls n=\"Spr. (II)\">7478</ls>. {#samadfzwitvam#} <ls>RĀJA-TAR. 1,357</ls>. <ls>BHĀG. P. 3,24,47</ls>. <ls n=\"BHĀG. P.\">6,17,34</ls>. {#padaM hi sarvatra guRErniDIyate#} <ls>RAGH. 3,62</ls>. {#sarvatrAByAgato guruH#} (<ab>v. l.</ab> {#sarvasyA˚#}) <ls>Spr. (II) 2172</ls>. <ls n=\"Spr. (II)\">4448</ls>. {#dayAM kar#} <ls n=\"Spr. (II)\">4313</ls>. {#sarvatra na SoBanaM dAru#} {%Holz für Nichts gut%}",
+        "russian": "<div n=\"1\">— 2〉 = {#sarvasmin#} <lex>adj.</lex> и <ab>subst.</ab> {#SAntikarmaRi#} <ls>MĀRK. P. 92,15</ls>. {#ASrame#} <ab>Schol.</ab> к <ls>ŚĀK. 7,10</ls>. {#kuSalaH#} <ls>HARIV. 15054</ls>. {#kuSalam#} <ls>MBH. 3,2471</ls>. <ls>R. 1,52,5</ls>. <ls n=\"R. 1,52,\">10</ls> {#Badram#} <ls>PRAB. 30,4</ls>. {#pramAdI#} <ls>VIKR. 30,14</ls>. {#ramate prAjYaH#} <ls>Spr. (II) 6917</ls>. {#parAjitaH#} <ls n=\"Spr. (II)\">7476</ls>. {#yogyatvam#} <ls n=\"Spr. (II)\">7478</ls>. {#samadfzwitvam#} <ls>RĀJA-TAR. 1,357</ls>. <ls>BHĀG. P. 3,24,47</ls>. <ls n=\"BHĀG. P.\">6,17,34</ls>. {#padaM hi sarvatra guRErniDIyate#} <ls>RAGH. 3,62</ls>. {#sarvatrAByAgato guruH#} (<ab>v. l.</ab> {#sarvasyA˚#}) <ls>Spr. (II) 2172</ls>. <ls n=\"Spr. (II)\">4448</ls>. {#dayAM kar#} <ls n=\"Spr. (II)\">4313</ls>. {#sarvatra na SoBanaM dAru#} дерево, ни на что не годное",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ],
+      "owners": [
+       [
+        "sarvatra",
+        "adj., subst."
+       ]
+      ]
+     },
+     {
+      "fsha": "9ed1d28bca73d15918b24333facc7f2bb22dd13e85154b9d79c588aa092dd63b",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "<ls>VARĀH. BṚH. S. 79,37</ls>.\n<div n=\"v\">— <ab>Vgl.</ab> {#sArvatrika#}.",
+        "russian": "<ls>VARĀH. BṚH. S. 79,37</ls>.\n<div n=\"v\">— <ab>Vgl.</ab> {#sArvatrika#}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "{#sarva/tra#}¦ <lex>Adv.</lex>",
+        "russian": "{#sarva/tra#}¦ <lex>Adv.</lex>",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ],
+      "owners": [
+       [
+        "sarvatra",
+        "adv."
+       ],
+       [
+        "sarvatra",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "6f0e5817cc0df64f642f0b81d1de2285bc399d113e34a1eb91637f869ac37582",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "<div n=\"1\">— 1〉 {%überall, stets, in allen Fällen, jederzeit%}. Verstärkt {#sarvatrApi#} {#sarvatra#} {#sarvaTA#} {#sarvatra#} {#srvadA#}. Mit einer Negation {%in keinem Falle%}.",
+        "russian": "<div n=\"1\">— 1〉 везде, всегда, во всех случаях, в любое время. Усилено {#sarvatrApi#} {#sarvatra#} {#sarvaTA#} {#sarvatra#} {#srvadA#}. С отрицанием ни в коем случае.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": "Четыре синонима PWG (место — время — случай — время) переданы русским рядом равной кардинальности «везде, всегда, во всех случаях, в любое время»; ср. корпусные «везде», «повсюду», «во всех случаях»."
+       }
+      ],
+      "owners": [
+       [
+        "sarvatra",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "81ba72b26677fc5a2565fd3c5899974ed7961a8e003c445bf77913774847c6ed",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "<div n=\"1\">— 2〉 = {#sarvasmin#} mit einer Negation {%für Nichts%} <ab>u. s. w.</ab>",
+        "russian": "<div n=\"1\"> — 2) = {#sarvasmin#}, с отрицанием {%ни во что не ставящий, ничего не значащий%} <ab>u. s. w.</ab>",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "[NWS: MW : 1189] {#sarvátra#} [Gen , unsp] Indekl = sarvasmin . Mbh , Kāvya(MW) . with na : in no case, not at all",
+        "russian": "[NWS: MW : 1189] {#sarvátra#} [Gen , unsp] indecl. = sarvasmin. Mbh, Kāvya(MW). с na: ни в коем случае, вовсе не. MW : 1189",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "[NWS: Renou 1997 : 1029] {#sarvatra#} [Gen , unsp] de façon nécessaire. Renou 1997, S. 330 . signalant l'étendue d'une rubrique. Renou 1997, S. 436 . dans la Saṃhitā et dans le Padapāṭha. Renou 1997, S. 453",
+        "russian": "[NWS: Renou 1997 : 1029] {#sarvatra#} [Gen , unsp] непременным образом. Renou 1997, S. 330. обозначая объём рубрики. Renou 1997, S. 436. в Саṃхите и в Падапатхе. Renou 1997, S. 453",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "[NWS: Windisch 1883 : 160] [Ved , unsp] überall, überallhin, stets",
+        "russian": "[NWS: Windisch 1883 : 160] [Ved, unsp] везде, повсюду, всегда",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": "нейтральное «везде, повсюду» по корпусу для ведийского пласта, ср. corpus_synonyms.by_stratum.Classical «везде»"
+       },
+       {
+        "tag": "2",
+        "german": "[NWS: MW : 1189 (s.v. sarvátra)] {#sarvatragāminīpratipattijñānabala#} [Gen , unsp] Subst n the faculty of knowing the means of going everywhere. Dhsgr 76 . [ one of the 10 faculties of a Tathāgata. ] MW : 1189 (s.v. sarvátra )",
+        "russian": "[NWS: MW : 1189 (s.v. sarvátra)] {#sarvatragāminīpratipattijñānabala#} [Gen, unsp] subst. n. способность знать средства, ведущие повсюду. Dhsgr 76. [одна из 10 способностей Татхагаты.] MW : 1189 (s.v. sarvátra)",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ],
+      "owners": [
+       [
+        "sarvatra",
+        "adj., adv."
+       ],
+       [
+        "sarvátra",
+        "Indekl"
+       ],
+       [
+        "sarvátra",
+        "Indekl"
+       ],
+       [
+        "sarvátra",
+        "Indekl"
+       ],
+       [
+        "sarvátra",
+        "Indekl"
+       ]
+      ]
+     }
+    ]
+   },
+   "judge": null,
+   "judge_sonnet": null,
+   "escalated": true,
+   "presplit": true
+  },
+  {
+   "key": "sakft",
+   "card": {
+    "key1": "sakft",
+    "iast": "sakṛt",
+    "notes": "",
+    "records": [
+     {
+      "h": "sakṛt",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{#sakf/t#}¦ (<hom>2.</hom> {#sa#} + {#kft#}) <lex>adv.</lex> <ls>P. 5,4,19</ls>.",
+        "russian": "{#sakf/t#}¦ (<hom>2.</hom> {#sa#} + {#kft#}) <lex>adv.</lex> <ls>P. 5,4,19</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Этимологическая/грамматическая заметка (композиция из двух элементов + ссылка на Pāṇini), не самостоятельное значение."
+       },
+       {
+        "tag": "0",
+        "german": "<div n=\"1\"> 1〉 {%auf ein Mal, mit einem Male%}; = {#saha#} <ls>AK. 3,4,32 (28), 4</ls>. <ls>MED. avy. 33</ls>. {#sa\\kftsu te\\ anu\\ stoma^M mudImahi#} <ls>ṚV. 8,1,14</ls>. <ls n=\"ṚV.\">2,16,8</ls>. {#sa\\kftsu no^ mfLaya#} <ls n=\"ṚV.\">10,33,3</ls>. {#a\\ru\\Ro mA^ sa\\kfdvfko^ dadarSa#} <ls n=\"ṚV.\">1,105,18</ls>. <ls n=\"ṚV.\">6,66,1</ls>. {#na vE sakfdevAgre sarvaH saMBavati#} <ls>AIT. BR. 6,21</ls>. <ls>TS. 3,4,2,2</ls>. {#sakfdAcCinna/#} {%mit einem Ruck abgetrennt%} <ls>ĀŚV. ŚR. 2,6,4</ls>. <ls>ŚAT. BR. 2,4,2,17</ls>. {#sakfllUna#} <ls>ŚĀṄKH. ŚR. 4,4,6</ls>. {#sakfllU#} <ls>P. 8,2,4</ls>, <ab>Schol.</ab> {#sakfdAdIpana#} <ls>KAUŚ. 80</ls>. <ls>M. 8,151</ls>. so <ab>v. a.</ab> {%plötzlich%} <ls>MBH. 1,4418</ls>.",
+        "russian": "<div n=\"1\"> 1〉 разом, за один раз, сразу; = {#saha#} <ls>AK. 3,4,32 (28), 4</ls>. <ls>MED. avy. 33</ls>. {#sa\\kftsu te\\ anu\\ stoma^M mudImahi#} <ls>ṚV. 8,1,14</ls>. <ls n=\"ṚV.\">2,16,8</ls>. {#sa\\kftsu no^ mfLaya#} <ls n=\"ṚV.\">10,33,3</ls>. {#a\\ru\\Ro mA^ sa\\kfdvfko^ dadarSa#} <ls n=\"ṚV.\">1,105,18</ls>. <ls n=\"ṚV.\">6,66,1</ls>. {#na vE sakfdevAgre sarvaH saMBavati#} <ls>AIT. BR. 6,21</ls>. <ls>TS. 3,4,2,2</ls>. {#sakfdAcCinna/#} отделённый одним рывком <ls>ĀŚV. ŚR. 2,6,4</ls>. <ls>ŚAT. BR. 2,4,2,17</ls>. {#sakfllUna#} <ls>ŚĀṄKH. ŚR. 4,4,6</ls>. {#sakfllU#} <ls>P. 8,2,4</ls>, <ab>Schol.</ab> {#sakfdAdIpana#} <ls>KAUŚ. 80</ls>. <ls>M. 8,151</ls>. так <ab>v. a.</ab> внезапно <ls>MBH. 1,4418</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic; Epic / early-Classical",
+        "differentia": "«Разом, за один раз» подчёркивает единство/цельность действия (в противоположность постепенному), а не просто счёт «один раз» (ср. значение 2); ср. корпусное «внезапный» для ведийского пласта."
+       },
+       {
+        "tag": "2",
+        "german": "<div n=\"1\">— 2〉 {%einmal, semel%} <ls>AK.</ls> <ls>MED.</ls> <ls>ṚV. 6,48,22</ls>. {#sa\\kfdahna^H#} <ls n=\"ṚV.\">10,95,16</ls>. <ls>TBR. 2,1,9,1</ls>. <ls>AIT. BR. 1,26</ls>. <ls n=\"AIT. BR.\">2,24</ls>. <ls n=\"AIT. BR.\">7,17</ls>. <ls>ŚAT. BR. 1,2,3,11</ls>. <ls n=\"ŚAT. BR.\">2,4,3,9</ls>. [Page7-0508] {#sakfdindraM BUtAnyatyaricyanta#} <ls n=\"ŚAT. BR.\">4,5,3,1</ls>. <ls>ĀŚV. GṚHY. 1,3,3</ls>. {#sakfnmantravacanam#} <ls>KĀTY. ŚR. 1,7,9</ls>. {#sakfdgfhIta#} <ls n=\"KĀTY. ŚR.\">8,46</ls>. {#sakfdupamaTita/#} <ls>ŚAT. BR. 2,6,1,6</ls>. <ls>KĀTY. ŚR. 24,3,34</ls>. <ls>M. 6,20</ls>. <ls n=\"M.\">11,92</ls>.",
+        "russian": "<div n=\"1\">— 2〉 однажды, semel <ls>AK.</ls> <ls>MED.</ls> <ls>ṚV. 6,48,22</ls>. {#sa\\kfdahna^H#} <ls n=\"ṚV.\">10,95,16</ls>. <ls>TBR. 2,1,9,1</ls>. <ls>AIT. BR. 1,26</ls>. <ls n=\"AIT. BR.\">2,24</ls>. <ls n=\"AIT. BR.\">7,17</ls>. <ls>ŚAT. BR. 1,2,3,11</ls>. <ls n=\"ŚAT. BR.\">2,4,3,9</ls>. [Page7-0508] {#sakfdindraM BUtAnyatyaricyanta#} <ls n=\"ŚAT. BR.\">4,5,3,1</ls>. <ls>ĀŚV. GṚHY. 1,3,3</ls>. {#sakfnmantravacanam#} <ls>KĀTY. ŚR. 1,7,9</ls>. {#sakfdgfhIta#} <ls n=\"KĀTY. ŚR.\">8,46</ls>. {#sakfdupamaTita/#} <ls>ŚAT. BR. 2,6,1,6</ls>. <ls>KĀTY. ŚR. 24,3,34</ls>. <ls>M. 6,20</ls>. <ls n=\"M.\">11,92</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic; Epic / early-Classical; Classical; Medieval",
+        "differentia": "Чисто числовое «один раз» (лат. semel), в отличие от значения 1), где акцент на цельности/одномоментности действия."
+       },
+       {
+        "tag": "2",
+        "german": "<ls n=\"M. 11,\">97</ls>. <ls n=\"M. 11,\">100</ls>. <ls n=\"M. 11,\">214</ls>. <ls n=\"M. 11,\">250</ls>. <ls>Spr. (II) 5253. fgg.</ls> <ls n=\"Spr. (II)\">6650. fgg.</ls> <ls n=\"Spr. (II)\">6656</ls>. <ls>ŚĀK. 27,2</ls>. <ls>VIKR. 10</ls>. <ls>VARĀH. BṚH. S. 11,44</ls>. {#sakfduktaM na gfhRAti#} <ls>Spr. (II) 6655</ls>. {#sakfduktagfhItArTa#} <ls n=\"Spr. (II)\">6654</ls>. {#sakfcCrutaDara#} <ls>KATHĀS. 2,61</ls>. {#sakftsakft#} <ls>ŚAT. BR. 1,8,2,5</ls>. <ls>ĀŚV. GṚHY. 4,7,14</ls>. <ls>M. 5,139</ls>. <ls n=\"M.\">9,70</ls>. <ls>YĀJÑ. 1,240</ls>. {%einmal%} so <ab>v. a.</ab> {%irgend ein Mal%}",
+        "russian": "<ls n=\"M. 11,\">97</ls>. <ls n=\"M. 11,\">100</ls>. <ls n=\"M. 11,\">214</ls>. <ls n=\"M. 11,\">250</ls>. <ls>Spr. (II) 5253. fgg.</ls> <ls n=\"Spr. (II)\">6650. fgg.</ls> <ls n=\"Spr. (II)\">6656</ls>. <ls>ŚĀK. 27,2</ls>. <ls>VIKR. 10</ls>. <ls>VARĀH. BṚH. S. 11,44</ls>. {#sakfduktaM na gfhRAti#} <ls>Spr. (II) 6655</ls>. {#sakfduktagfhItArTa#} <ls n=\"Spr. (II)\">6654</ls>. {#sakfcCrutaDara#} <ls>KATHĀS. 2,61</ls>. {#sakftsakft#} <ls>ŚAT. BR. 1,8,2,5</ls>. <ls>ĀŚV. GṚHY. 4,7,14</ls>. <ls>M. 5,139</ls>. <ls n=\"M.\">9,70</ls>. <ls>YĀJÑ. 1,240</ls>. однажды так <ab>v. a.</ab> какой-нибудь раз",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic; Epic / early-Classical; Classical; Medieval",
+        "differentia": "Здесь «einmal» поясняется как «какой-нибудь раз» (неопределённая кратность), а не строго «один раз»."
+       },
+       {
+        "tag": "2",
+        "german": "<ls>Spr. (II) 1707</ls>. {#sakftkftapraRayo 'yaM janaH#} so <ab>v. a.</ab> {%einst, ehemals%} <ls>ŚĀK. 59,13</ls>. {#mA — sakft#} {%nie%} <ls>Spr. (II) 2304</ls>.",
+        "russian": "<ls>Spr. (II) 1707</ls>. {#sakftkftapraRayo 'yaM janaH#} так <ab>v. a.</ab> некогда, прежде <ls>ŚĀK. 59,13</ls>. {#mA — sakft#} никогда <ls>Spr. (II) 2304</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": "Идиоматическое расширение «einmal»: положительно — «некогда, прежде» (об однократном событии в прошлом), при отрицании — «никогда» (ни разу)."
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "3",
+        "german": "<div n=\"1\">— 3〉 {%ein für allemal, für immer%}: {#sakfddivA hEvAsmE Bavati#} <ls>CHĀND. UP. 3,11,3</ls>. {#sakfdviBAta#} <ls n=\"CHĀND. UP.\">8,4,2</ls>. <ls>NṚS. TĀP. UP.</ls>_in_<ls>Ind. St. 9,165</ls>. <ls>VEDĀNTAS. (Allah.) No. 124</ls>. {#BAnuH sakfdyuktaturaMga eva#} <ls>Spr. (II) 4569</ls>. <ls>MĀRK. P. 109,67</ls>.\n<div n=\"v\">— <ab>Vgl.</ab> {#a˚#} (auch <ls>MBH. 5,7160</ls>. <ls>VARĀH. BṚH. S. 28,4</ls>. <ls n=\"VARĀH. BṚH. S.\">30,3</ls>. <ls n=\"VARĀH. BṚH. S.\">68,74</ls>. <ls>BHĀG. P. 1,5,36</ls> nach der Lesart der <ls>ed. Bomb.</ls>).",
+        "russian": "<div n=\"1\"> — 3) раз и навсегда, навсегда: {#sakfddivA hEvAsmE Bavati#} <ls>CHĀND. UP. 3,11,3</ls>. {#sakfdviBAta#} <ls n=\"CHĀND. UP.\">8,4,2</ls>. <ls>NṚS. TĀP. UP.</ls> _в_ <ls>Ind. St. 9,165</ls>. <ls>VEDĀNTAS. (Allah.) No. 124</ls>. {#BAnuH sakfdyuktaturaMga eva#} <ls>Spr. (II) 4569</ls>. <ls>MĀRK. P. 109,67</ls>.\n<div n=\"v\"> — <ab>Vgl.</ab> {#a˚#} (также <ls>MBH. 5,7160</ls>. <ls>VARĀH. BṚH. S. 28,4</ls>. <ls n=\"VARĀH. BṚH. S.\">30,3</ls>. <ls n=\"VARĀH. BṚH. S.\">68,74</ls>. <ls>BHĀG. P. 1,5,36</ls> по чтению <ls>ed. Bomb.</ls>).",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": "Значение «раз и навсегда» отличается от чисто количественных «однажды»/«один раз» (сенсы 1-2) тем, что подчёркивает окончательность, необратимость действия, а не факт однократности."
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "3",
+        "german": "{#sakf/t#}¦",
+        "russian": "{#sakf/t#}¦",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Строка слоя PW (сокращённая редакция Бётлингка) — чисто ссылочная/санскритская, без переводимого текста; приводится как ревизия к основной статье."
+       }
+      ]
+     },
+     {
+      "h": "sakṛt",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "<div n=\"1\">— 1〉 <lex>Adj.</lex> {%gleichzeitig thätig%} <ls>AV. 11,1,10</ls>. {#sayuj#} <ls>{{PAIPP.->AV.PAIPP.||20160118|Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/237|inferred}}</ls>",
+        "russian": "<div n=\"1\">— 1) <lex>Adj.</lex> одновременно действующий <ls>AV. 11,1,10</ls>. {#sayuj#} <ls>{{PAIPP.->AV.PAIPP.||20160118|Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/237|inferred}}</ls>",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": "«одновременно действующий» — о совместности/синхронности действия двух субъектов, а не о единичности (см. b/c ниже)."
+       },
+       {
+        "tag": "2",
+        "german": "<div n=\"1\">— 2〉 <lex>Adv.</lex>",
+        "russian": "<div n=\"1\">— 2) <lex>Adv.</lex>",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "a",
+        "german": "<div n=\"2\">— a〉 {%auf ein Mal, mit einem Male, mit einem Ruck, plötzlich%}. <ab>Nom. abstr.</ab> {#sakfttva#} <lex>n.</lex> <ls>Comm. zu NYĀYAM. 9,3,13</ls>.",
+        "russian": "<div n=\"2\">— a) разом, за один раз, одним рывком, внезапно. <ab>Nom. abstr.</ab> {#sakfttva#} <lex>n.</lex> <ls>Comm. zu NYĀYAM. 9,3,13</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": "«разом/одним рывком» — о резком единократном действии (напр. отсечении), в отличие от нейтрального «однажды» (b)."
+       },
+       {
+        "tag": "b",
+        "german": "<div n=\"2\">— b〉 {%einmal, semel%}. {#a/hnas#} {%einmal am Tage%}. Wiederholt {%immer nur einmal%}. {#sakfdA#} (!) <ls>VET. (U.) 204,23</ls>.",
+        "russian": "<div n=\"2\">— b) однажды, semel. {#a/hnas#} один раз в день. При повторении — всегда лишь один раз. {#sakfdA#} (!) <ls>VET. (U.) 204,23</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": "«однажды» в счетном значении (один раз, а не совместно/синхронно, ср. sense 1 выше)."
+       },
+       {
+        "tag": "c",
+        "german": "<div n=\"2\">— c〉 {%einmal,%} so <ab>v. a.</ab> {%irgend ein mal;%} mit der <ab>Neg.</ab> {%nie%}.",
+        "russian": "<div n=\"2\">— c) однажды, так <ab>v. a.</ab> когда-нибудь; с <ab>Neg.</ab> никогда.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": "Употребление в союзной конструкции («когда-нибудь») и с отрицанием («никогда»), в отличие от простого счетного «однажды» (b)."
+       },
+       {
+        "tag": "d",
+        "german": "<div n=\"2\">— d〉 {%einst, ehemals%}.",
+        "russian": "<div n=\"2\">— d) некогда, прежде.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "Classical",
+        "differentia": "Временнóе «некогда, в прошлом», а не количественное «однажды» (b/c)."
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "e",
+        "german": "<div n=\"2\">— e〉 {%ein für allemal, für immer%}.",
+        "russian": "<div n=\"2\"> — e) раз и навсегда, навсегда.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": "Та же формула окончательности, что и в сенсе 3) выше; продолжение перечисления под литерой e)."
+       },
+       {
+        "tag": "e",
+        "german": "°{%sakṛt%}¦ <ls>Pūrṇabh. 56,12,</ls> wrong spelling of our author for {%śakṛt%} (pun with {%asakṛt%}). {part=,seq=25923,type=˚,n=3}",
+        "russian": "°{%sakṛt%}¦ <ls>Pūrṇabh. 56,12,</ls> — ошибочное написание нашего автора вместо {%śakṛt%} (каламбур с {%asakṛt%}). {part=,seq=25923,type=˚,n=3}",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Примечание Schmidt Nachträge 1928 о неверном написании у данного автора вместо {%śakṛt%}, обусловленном каламбуром с {%asakṛt%}; не самостоятельное значение, а орфографическая заметка."
+       },
+       {
+        "tag": "e",
+        "german": "[NWS: MW : 1124] {#sakṛ́t#} [Gen , unsp] Adj mfn acting at once. AV xi, 1, 10 . Indekl at once, together. W(MW)",
+        "russian": "[NWS: MW : 1124] {#sakṛ́t#} [Gen , unsp] Adj mfn действующий тотчас же. AV xi, 1, 10 . Indekl тотчас же, совместно. W(MW)",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": "«Действующий тотчас же» (Adj mfn) vs «тотчас же, совместно» (Indekl) — разграничение по части речи, как в источнике."
+       },
+       {
+        "tag": "e",
+        "german": "[NWS: Geldner 1907 : 185] [Ved , unsp] Indekl einmal, noch einmal (+ Gen). ṚV 8,1,14 , ṚV 10,95,16",
+        "russian": "[NWS: Geldner 1907 : 185] [Ved , unsp] Indekl однажды, ещё раз (+ Gen). ṚV 8,1,14 , ṚV 10,95,16",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": "«Однажды» — количественное значение, отличное от «раз и навсегда» (сенс 3/e) выше)."
+       },
+       {
+        "tag": "e",
+        "german": "[NWS: Hoernle 1908 : 333 (s.v. sakṛt)] {#sakṛnmauhūrtika#} [Śā , Med] only one moment. Hoernle 1893-1912 (VI) 223.2 . Hoernle 1908 : 333 (s.v. sakṛt )",
+        "russian": "[NWS: Hoernle 1908 : 333 (s.v. sakṛt)] {#sakṛnmauhūrtika#} [Śā , Med] лишь один миг. Hoernle 1893-1912 (VI) 223.2 . Hoernle 1908 : 333 (s.v. sakṛt )",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "Medieval",
+        "differentia": "Sub-lemma sakṛnmauhūrtika — «лишь один миг», отличается от «однажды» (NWS-2) указанием на минимальность длительности, а не на однократность действия."
+       },
+       {
+        "tag": "e",
+        "german": "[NWS: Hoernle 1908 : 333 (s.v. sakṛt)] {#sakṛtsarva#} [Śā , Med] all at once. Hoernle 1893-1912 (II) 57.636 . Hoernle 1908 : 333 (s.v. sakṛt )",
+        "russian": "[NWS: Hoernle 1908 : 333 (s.v. sakṛt)] {#sakṛtsarva#} [Śā , Med] все одновременно. Hoernle 1893-1912 (II) 57.636 . Hoernle 1908 : 333 (s.v. sakṛt )",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "Medieval",
+        "differentia": "Sub-lemma sakṛtsarva — «все одновременно» (совокупность), в отличие от «действующий тотчас же» (NWS-1), где акцент на моментальности, а не на всеохватности."
+       }
+      ]
+     }
+    ],
+    "frag_prov": [
+     {
+      "fsha": "10e6ee03d139667e828669d91dd62f1044888f5a290809fb29651505df059d84",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{#sakf/t#}¦ (<hom>2.</hom> {#sa#} + {#kft#}) <lex>adv.</lex> <ls>P. 5,4,19</ls>.",
+        "russian": "{#sakf/t#}¦ (<hom>2.</hom> {#sa#} + {#kft#}) <lex>adv.</lex> <ls>P. 5,4,19</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Этимологическая/грамматическая заметка (композиция из двух элементов + ссылка на Pāṇini), не самостоятельное значение."
+       },
+       {
+        "tag": "0",
+        "german": "<div n=\"1\"> 1〉 {%auf ein Mal, mit einem Male%}; = {#saha#} <ls>AK. 3,4,32 (28), 4</ls>. <ls>MED. avy. 33</ls>. {#sa\\kftsu te\\ anu\\ stoma^M mudImahi#} <ls>ṚV. 8,1,14</ls>. <ls n=\"ṚV.\">2,16,8</ls>. {#sa\\kftsu no^ mfLaya#} <ls n=\"ṚV.\">10,33,3</ls>. {#a\\ru\\Ro mA^ sa\\kfdvfko^ dadarSa#} <ls n=\"ṚV.\">1,105,18</ls>. <ls n=\"ṚV.\">6,66,1</ls>. {#na vE sakfdevAgre sarvaH saMBavati#} <ls>AIT. BR. 6,21</ls>. <ls>TS. 3,4,2,2</ls>. {#sakfdAcCinna/#} {%mit einem Ruck abgetrennt%} <ls>ĀŚV. ŚR. 2,6,4</ls>. <ls>ŚAT. BR. 2,4,2,17</ls>. {#sakfllUna#} <ls>ŚĀṄKH. ŚR. 4,4,6</ls>. {#sakfllU#} <ls>P. 8,2,4</ls>, <ab>Schol.</ab> {#sakfdAdIpana#} <ls>KAUŚ. 80</ls>. <ls>M. 8,151</ls>. so <ab>v. a.</ab> {%plötzlich%} <ls>MBH. 1,4418</ls>.",
+        "russian": "<div n=\"1\"> 1〉 разом, за один раз, сразу; = {#saha#} <ls>AK. 3,4,32 (28), 4</ls>. <ls>MED. avy. 33</ls>. {#sa\\kftsu te\\ anu\\ stoma^M mudImahi#} <ls>ṚV. 8,1,14</ls>. <ls n=\"ṚV.\">2,16,8</ls>. {#sa\\kftsu no^ mfLaya#} <ls n=\"ṚV.\">10,33,3</ls>. {#a\\ru\\Ro mA^ sa\\kfdvfko^ dadarSa#} <ls n=\"ṚV.\">1,105,18</ls>. <ls n=\"ṚV.\">6,66,1</ls>. {#na vE sakfdevAgre sarvaH saMBavati#} <ls>AIT. BR. 6,21</ls>. <ls>TS. 3,4,2,2</ls>. {#sakfdAcCinna/#} отделённый одним рывком <ls>ĀŚV. ŚR. 2,6,4</ls>. <ls>ŚAT. BR. 2,4,2,17</ls>. {#sakfllUna#} <ls>ŚĀṄKH. ŚR. 4,4,6</ls>. {#sakfllU#} <ls>P. 8,2,4</ls>, <ab>Schol.</ab> {#sakfdAdIpana#} <ls>KAUŚ. 80</ls>. <ls>M. 8,151</ls>. так <ab>v. a.</ab> внезапно <ls>MBH. 1,4418</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic; Epic / early-Classical",
+        "differentia": "«Разом, за один раз» подчёркивает единство/цельность действия (в противоположность постепенному), а не просто счёт «один раз» (ср. значение 2); ср. корпусное «внезапный» для ведийского пласта."
+       }
+      ],
+      "owners": [
+       [
+        "sakṛt",
+        "adv."
+       ],
+       [
+        "sakṛt",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "0e0b3ea9fe25a48ea160bc03d51beb9dce8c5d929d3c5f36327d58a665c7f7c3",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "<div n=\"1\">— 2〉 {%einmal, semel%} <ls>AK.</ls> <ls>MED.</ls> <ls>ṚV. 6,48,22</ls>. {#sa\\kfdahna^H#} <ls n=\"ṚV.\">10,95,16</ls>. <ls>TBR. 2,1,9,1</ls>. <ls>AIT. BR. 1,26</ls>. <ls n=\"AIT. BR.\">2,24</ls>. <ls n=\"AIT. BR.\">7,17</ls>. <ls>ŚAT. BR. 1,2,3,11</ls>. <ls n=\"ŚAT. BR.\">2,4,3,9</ls>. [Page7-0508] {#sakfdindraM BUtAnyatyaricyanta#} <ls n=\"ŚAT. BR.\">4,5,3,1</ls>. <ls>ĀŚV. GṚHY. 1,3,3</ls>. {#sakfnmantravacanam#} <ls>KĀTY. ŚR. 1,7,9</ls>. {#sakfdgfhIta#} <ls n=\"KĀTY. ŚR.\">8,46</ls>. {#sakfdupamaTita/#} <ls>ŚAT. BR. 2,6,1,6</ls>. <ls>KĀTY. ŚR. 24,3,34</ls>. <ls>M. 6,20</ls>. <ls n=\"M.\">11,92</ls>.",
+        "russian": "<div n=\"1\">— 2〉 однажды, semel <ls>AK.</ls> <ls>MED.</ls> <ls>ṚV. 6,48,22</ls>. {#sa\\kfdahna^H#} <ls n=\"ṚV.\">10,95,16</ls>. <ls>TBR. 2,1,9,1</ls>. <ls>AIT. BR. 1,26</ls>. <ls n=\"AIT. BR.\">2,24</ls>. <ls n=\"AIT. BR.\">7,17</ls>. <ls>ŚAT. BR. 1,2,3,11</ls>. <ls n=\"ŚAT. BR.\">2,4,3,9</ls>. [Page7-0508] {#sakfdindraM BUtAnyatyaricyanta#} <ls n=\"ŚAT. BR.\">4,5,3,1</ls>. <ls>ĀŚV. GṚHY. 1,3,3</ls>. {#sakfnmantravacanam#} <ls>KĀTY. ŚR. 1,7,9</ls>. {#sakfdgfhIta#} <ls n=\"KĀTY. ŚR.\">8,46</ls>. {#sakfdupamaTita/#} <ls>ŚAT. BR. 2,6,1,6</ls>. <ls>KĀTY. ŚR. 24,3,34</ls>. <ls>M. 6,20</ls>. <ls n=\"M.\">11,92</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic; Epic / early-Classical; Classical; Medieval",
+        "differentia": "Чисто числовое «один раз» (лат. semel), в отличие от значения 1), где акцент на цельности/одномоментности действия."
+       }
+      ],
+      "owners": [
+       [
+        "sakṛt",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "7c7005ac914765c4f279e3a085a128cbeaa1009a1623f9ee4710949db1104af2",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "<ls n=\"M. 11,\">97</ls>. <ls n=\"M. 11,\">100</ls>. <ls n=\"M. 11,\">214</ls>. <ls n=\"M. 11,\">250</ls>. <ls>Spr. (II) 5253. fgg.</ls> <ls n=\"Spr. (II)\">6650. fgg.</ls> <ls n=\"Spr. (II)\">6656</ls>. <ls>ŚĀK. 27,2</ls>. <ls>VIKR. 10</ls>. <ls>VARĀH. BṚH. S. 11,44</ls>. {#sakfduktaM na gfhRAti#} <ls>Spr. (II) 6655</ls>. {#sakfduktagfhItArTa#} <ls n=\"Spr. (II)\">6654</ls>. {#sakfcCrutaDara#} <ls>KATHĀS. 2,61</ls>. {#sakftsakft#} <ls>ŚAT. BR. 1,8,2,5</ls>. <ls>ĀŚV. GṚHY. 4,7,14</ls>. <ls>M. 5,139</ls>. <ls n=\"M.\">9,70</ls>. <ls>YĀJÑ. 1,240</ls>. {%einmal%} so <ab>v. a.</ab> {%irgend ein Mal%}",
+        "russian": "<ls n=\"M. 11,\">97</ls>. <ls n=\"M. 11,\">100</ls>. <ls n=\"M. 11,\">214</ls>. <ls n=\"M. 11,\">250</ls>. <ls>Spr. (II) 5253. fgg.</ls> <ls n=\"Spr. (II)\">6650. fgg.</ls> <ls n=\"Spr. (II)\">6656</ls>. <ls>ŚĀK. 27,2</ls>. <ls>VIKR. 10</ls>. <ls>VARĀH. BṚH. S. 11,44</ls>. {#sakfduktaM na gfhRAti#} <ls>Spr. (II) 6655</ls>. {#sakfduktagfhItArTa#} <ls n=\"Spr. (II)\">6654</ls>. {#sakfcCrutaDara#} <ls>KATHĀS. 2,61</ls>. {#sakftsakft#} <ls>ŚAT. BR. 1,8,2,5</ls>. <ls>ĀŚV. GṚHY. 4,7,14</ls>. <ls>M. 5,139</ls>. <ls n=\"M.\">9,70</ls>. <ls>YĀJÑ. 1,240</ls>. однажды так <ab>v. a.</ab> какой-нибудь раз",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic; Epic / early-Classical; Classical; Medieval",
+        "differentia": "Здесь «einmal» поясняется как «какой-нибудь раз» (неопределённая кратность), а не строго «один раз»."
+       }
+      ],
+      "owners": [
+       [
+        "sakṛt",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "8be23aa567472ef3b67fbedd17017f1f2703af1d196fe6b3a057b5b0ddabb161",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "<ls>Spr. (II) 1707</ls>. {#sakftkftapraRayo 'yaM janaH#} so <ab>v. a.</ab> {%einst, ehemals%} <ls>ŚĀK. 59,13</ls>. {#mA — sakft#} {%nie%} <ls>Spr. (II) 2304</ls>.",
+        "russian": "<ls>Spr. (II) 1707</ls>. {#sakftkftapraRayo 'yaM janaH#} так <ab>v. a.</ab> некогда, прежде <ls>ŚĀK. 59,13</ls>. {#mA — sakft#} никогда <ls>Spr. (II) 2304</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": "Идиоматическое расширение «einmal»: положительно — «некогда, прежде» (об однократном событии в прошлом), при отрицании — «никогда» (ни разу)."
+       }
+      ],
+      "owners": [
+       [
+        "sakṛt",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "351f0f02403ffaac9fb50953be8bced25f622ecec63206aa6ee5934f5bcf25af",
+      "senses": [
+       {
+        "tag": "3",
+        "german": "<div n=\"1\">— 3〉 {%ein für allemal, für immer%}: {#sakfddivA hEvAsmE Bavati#} <ls>CHĀND. UP. 3,11,3</ls>. {#sakfdviBAta#} <ls n=\"CHĀND. UP.\">8,4,2</ls>. <ls>NṚS. TĀP. UP.</ls>_in_<ls>Ind. St. 9,165</ls>. <ls>VEDĀNTAS. (Allah.) No. 124</ls>. {#BAnuH sakfdyuktaturaMga eva#} <ls>Spr. (II) 4569</ls>. <ls>MĀRK. P. 109,67</ls>.\n<div n=\"v\">— <ab>Vgl.</ab> {#a˚#} (auch <ls>MBH. 5,7160</ls>. <ls>VARĀH. BṚH. S. 28,4</ls>. <ls n=\"VARĀH. BṚH. S.\">30,3</ls>. <ls n=\"VARĀH. BṚH. S.\">68,74</ls>. <ls>BHĀG. P. 1,5,36</ls> nach der Lesart der <ls>ed. Bomb.</ls>).",
+        "russian": "<div n=\"1\"> — 3) раз и навсегда, навсегда: {#sakfddivA hEvAsmE Bavati#} <ls>CHĀND. UP. 3,11,3</ls>. {#sakfdviBAta#} <ls n=\"CHĀND. UP.\">8,4,2</ls>. <ls>NṚS. TĀP. UP.</ls> _в_ <ls>Ind. St. 9,165</ls>. <ls>VEDĀNTAS. (Allah.) No. 124</ls>. {#BAnuH sakfdyuktaturaMga eva#} <ls>Spr. (II) 4569</ls>. <ls>MĀRK. P. 109,67</ls>.\n<div n=\"v\"> — <ab>Vgl.</ab> {#a˚#} (также <ls>MBH. 5,7160</ls>. <ls>VARĀH. BṚH. S. 28,4</ls>. <ls n=\"VARĀH. BṚH. S.\">30,3</ls>. <ls n=\"VARĀH. BṚH. S.\">68,74</ls>. <ls>BHĀG. P. 1,5,36</ls> по чтению <ls>ed. Bomb.</ls>).",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": "Значение «раз и навсегда» отличается от чисто количественных «однажды»/«один раз» (сенсы 1-2) тем, что подчёркивает окончательность, необратимость действия, а не факт однократности."
+       },
+       {
+        "tag": "3",
+        "german": "{#sakf/t#}¦",
+        "russian": "{#sakf/t#}¦",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Строка слоя PW (сокращённая редакция Бётлингка) — чисто ссылочная/санскритская, без переводимого текста; приводится как ревизия к основной статье."
+       }
+      ],
+      "owners": [
+       [
+        "",
+        "adv."
+       ],
+       [
+        "",
+        ""
+       ]
+      ]
+     },
+     {
+      "fsha": "d9b0d33b8a57bebcc476e84f3058ecd427e063fb6acc912dba621e879acf98e2",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "<div n=\"1\">— 1〉 <lex>Adj.</lex> {%gleichzeitig thätig%} <ls>AV. 11,1,10</ls>. {#sayuj#} <ls>{{PAIPP.->AV.PAIPP.||20160118|Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/237|inferred}}</ls>",
+        "russian": "<div n=\"1\">— 1) <lex>Adj.</lex> одновременно действующий <ls>AV. 11,1,10</ls>. {#sayuj#} <ls>{{PAIPP.->AV.PAIPP.||20160118|Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/237|inferred}}</ls>",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": "«одновременно действующий» — о совместности/синхронности действия двух субъектов, а не о единичности (см. b/c ниже)."
+       }
+      ],
+      "owners": [
+       [
+        "sakṛt",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "0bc39d5502502a2f4717317f3a29ba2f17fb930fdeb4ad168d17b97a2db24cde",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "<div n=\"1\">— 2〉 <lex>Adv.</lex>",
+        "russian": "<div n=\"1\">— 2) <lex>Adv.</lex>",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ],
+      "owners": [
+       [
+        "sakṛt",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "ec44d2d44ddb0ec9647cf70319e6cc103394046e1d37bcf71ca9132ff32aa99f",
+      "senses": [
+       {
+        "tag": "a",
+        "german": "<div n=\"2\">— a〉 {%auf ein Mal, mit einem Male, mit einem Ruck, plötzlich%}. <ab>Nom. abstr.</ab> {#sakfttva#} <lex>n.</lex> <ls>Comm. zu NYĀYAM. 9,3,13</ls>.",
+        "russian": "<div n=\"2\">— a) разом, за один раз, одним рывком, внезапно. <ab>Nom. abstr.</ab> {#sakfttva#} <lex>n.</lex> <ls>Comm. zu NYĀYAM. 9,3,13</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": "«разом/одним рывком» — о резком единократном действии (напр. отсечении), в отличие от нейтрального «однажды» (b)."
+       }
+      ],
+      "owners": [
+       [
+        "sakṛt",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "935076f00712f7e749a691ca6defc864f032a4de0901134a2a65ac615fcd7718",
+      "senses": [
+       {
+        "tag": "b",
+        "german": "<div n=\"2\">— b〉 {%einmal, semel%}. {#a/hnas#} {%einmal am Tage%}. Wiederholt {%immer nur einmal%}. {#sakfdA#} (!) <ls>VET. (U.) 204,23</ls>.",
+        "russian": "<div n=\"2\">— b) однажды, semel. {#a/hnas#} один раз в день. При повторении — всегда лишь один раз. {#sakfdA#} (!) <ls>VET. (U.) 204,23</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": "«однажды» в счетном значении (один раз, а не совместно/синхронно, ср. sense 1 выше)."
+       }
+      ],
+      "owners": [
+       [
+        "sakṛt",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "5d06c009ebf0aa8004fde0f3ec3e8082f5a79dda081ecaf5b0167a848e0a990a",
+      "senses": [
+       {
+        "tag": "c",
+        "german": "<div n=\"2\">— c〉 {%einmal,%} so <ab>v. a.</ab> {%irgend ein mal;%} mit der <ab>Neg.</ab> {%nie%}.",
+        "russian": "<div n=\"2\">— c) однажды, так <ab>v. a.</ab> когда-нибудь; с <ab>Neg.</ab> никогда.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": "Употребление в союзной конструкции («когда-нибудь») и с отрицанием («никогда»), в отличие от простого счетного «однажды» (b)."
+       }
+      ],
+      "owners": [
+       [
+        "sakṛt",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "4ac2a417359a9b469c4b1c79b120829e49cee897276512151974c74f036f1373",
+      "senses": [
+       {
+        "tag": "d",
+        "german": "<div n=\"2\">— d〉 {%einst, ehemals%}.",
+        "russian": "<div n=\"2\">— d) некогда, прежде.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "Classical",
+        "differentia": "Временнóе «некогда, в прошлом», а не количественное «однажды» (b/c)."
+       }
+      ],
+      "owners": [
+       [
+        "sakṛt",
+        "adv."
+       ]
+      ]
+     },
+     {
+      "fsha": "3b2771a3d1c7136e6991488b0179afd7e479e93e2a2d4a6e2db83509cc02428b",
+      "senses": [
+       {
+        "tag": "e",
+        "german": "<div n=\"2\">— e〉 {%ein für allemal, für immer%}.",
+        "russian": "<div n=\"2\"> — e) раз и навсегда, навсегда.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": "Та же формула окончательности, что и в сенсе 3) выше; продолжение перечисления под литерой e)."
+       },
+       {
+        "tag": "e",
+        "german": "°{%sakṛt%}¦ <ls>Pūrṇabh. 56,12,</ls> wrong spelling of our author for {%śakṛt%} (pun with {%asakṛt%}). {part=,seq=25923,type=˚,n=3}",
+        "russian": "°{%sakṛt%}¦ <ls>Pūrṇabh. 56,12,</ls> — ошибочное написание нашего автора вместо {%śakṛt%} (каламбур с {%asakṛt%}). {part=,seq=25923,type=˚,n=3}",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Примечание Schmidt Nachträge 1928 о неверном написании у данного автора вместо {%śakṛt%}, обусловленном каламбуром с {%asakṛt%}; не самостоятельное значение, а орфографическая заметка."
+       },
+       {
+        "tag": "e",
+        "german": "[NWS: MW : 1124] {#sakṛ́t#} [Gen , unsp] Adj mfn acting at once. AV xi, 1, 10 . Indekl at once, together. W(MW)",
+        "russian": "[NWS: MW : 1124] {#sakṛ́t#} [Gen , unsp] Adj mfn действующий тотчас же. AV xi, 1, 10 . Indekl тотчас же, совместно. W(MW)",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": "«Действующий тотчас же» (Adj mfn) vs «тотчас же, совместно» (Indekl) — разграничение по части речи, как в источнике."
+       },
+       {
+        "tag": "e",
+        "german": "[NWS: Geldner 1907 : 185] [Ved , unsp] Indekl einmal, noch einmal (+ Gen). ṚV 8,1,14 , ṚV 10,95,16",
+        "russian": "[NWS: Geldner 1907 : 185] [Ved , unsp] Indekl однажды, ещё раз (+ Gen). ṚV 8,1,14 , ṚV 10,95,16",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": "«Однажды» — количественное значение, отличное от «раз и навсегда» (сенс 3/e) выше)."
+       },
+       {
+        "tag": "e",
+        "german": "[NWS: Hoernle 1908 : 333 (s.v. sakṛt)] {#sakṛnmauhūrtika#} [Śā , Med] only one moment. Hoernle 1893-1912 (VI) 223.2 . Hoernle 1908 : 333 (s.v. sakṛt )",
+        "russian": "[NWS: Hoernle 1908 : 333 (s.v. sakṛt)] {#sakṛnmauhūrtika#} [Śā , Med] лишь один миг. Hoernle 1893-1912 (VI) 223.2 . Hoernle 1908 : 333 (s.v. sakṛt )",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "Medieval",
+        "differentia": "Sub-lemma sakṛnmauhūrtika — «лишь один миг», отличается от «однажды» (NWS-2) указанием на минимальность длительности, а не на однократность действия."
+       },
+       {
+        "tag": "e",
+        "german": "[NWS: Hoernle 1908 : 333 (s.v. sakṛt)] {#sakṛtsarva#} [Śā , Med] all at once. Hoernle 1893-1912 (II) 57.636 . Hoernle 1908 : 333 (s.v. sakṛt )",
+        "russian": "[NWS: Hoernle 1908 : 333 (s.v. sakṛt)] {#sakṛtsarva#} [Śā , Med] все одновременно. Hoernle 1893-1912 (II) 57.636 . Hoernle 1908 : 333 (s.v. sakṛt )",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "Medieval",
+        "differentia": "Sub-lemma sakṛtsarva — «все одновременно» (совокупность), в отличие от «действующий тотчас же» (NWS-1), где акцент на моментальности, а не на всеохватности."
+       }
+      ],
+      "owners": [
+       [
+        "",
+        "adv."
+       ],
+       [
+        "",
+        "adv."
+       ],
+       [
+        "",
+        "adv."
+       ],
+       [
+        "",
+        "adv."
+       ],
+       [
+        "",
+        "adv."
+       ],
+       [
+        "",
+        "adv."
+       ]
+      ]
+     }
+    ]
+   },
+   "judge": null,
+   "judge_sonnet": null,
+   "escalated": true,
+   "presplit": true
+  }
+ ]
+}

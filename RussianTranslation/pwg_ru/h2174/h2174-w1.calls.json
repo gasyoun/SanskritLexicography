@@ -1,0 +1,218 @@
+{
+ "schema": "pwg.call_reservation.v1",
+ "runs": {
+  "h2174-m50-w1": {
+   "max_calls": 20,
+   "calls_spent": 9,
+   "next_ordinal": 10,
+   "reservations": [
+    {
+     "reservation_id": "6538fd2067e942398984050076dec4d4",
+     "ordinal": 1,
+     "reserved_at_ns": 1785739454770234600,
+     "pid": 8688,
+     "purpose": "headless:heal",
+     "profile": "c4",
+     "detail": "heal:nakzatra#g1",
+     "finalized": true,
+     "finalized_at_ns": 1785739631641610700,
+     "telemetry": {
+      "cost_evaluable": true,
+      "input_tokens": 2,
+      "output_tokens": 14390,
+      "cache_read_tokens": 35220,
+      "cache_creation_tokens": 47568,
+      "subagent_tokens": 97180,
+      "observed_cost_usd": 0.51183,
+      "duration_ms": 155462,
+      "duration_api_ms": 153303
+     }
+    },
+    {
+     "reservation_id": "4c2bd6dea4bf46e082dd896fac80ce11",
+     "ordinal": 2,
+     "reserved_at_ns": 1785739631690649700,
+     "pid": 8688,
+     "purpose": "headless:heal",
+     "profile": "c4",
+     "detail": "heal:nakzatra#g1.retry1",
+     "finalized": true,
+     "finalized_at_ns": 1785739931729452300,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 0,
+      "subagent_tokens": 0,
+      "observed_cost_usd": 0
+     }
+    },
+    {
+     "reservation_id": "52ecdd0a436f4358aa6720288e4950a5",
+     "ordinal": 3,
+     "reserved_at_ns": 1785739931769038700,
+     "pid": 8688,
+     "purpose": "headless:heal",
+     "profile": "c4",
+     "detail": "heal:nakzatra#g2",
+     "finalized": true,
+     "finalized_at_ns": 1785740231794004700,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 0,
+      "subagent_tokens": 0,
+      "observed_cost_usd": 0
+     }
+    },
+    {
+     "reservation_id": "dd43cf41856041acaa8faf7add9e9100",
+     "ordinal": 4,
+     "reserved_at_ns": 1785740231832988000,
+     "pid": 8688,
+     "purpose": "headless:heal",
+     "profile": "c4",
+     "detail": "heal:sarvatra#g1",
+     "finalized": true,
+     "finalized_at_ns": 1785740428781773700,
+     "telemetry": {
+      "cost_evaluable": true,
+      "input_tokens": 4,
+      "output_tokens": 14208,
+      "cache_read_tokens": 117016,
+      "cache_creation_tokens": 58988,
+      "subagent_tokens": 190216,
+      "observed_cost_usd": 0.6021648,
+      "duration_ms": 179029,
+      "duration_api_ms": 177395
+     }
+    },
+    {
+     "reservation_id": "da0afae1001b4f7ba4ba2a1b931832b5",
+     "ordinal": 5,
+     "reserved_at_ns": 1785740428811345200,
+     "pid": 8688,
+     "purpose": "headless:heal",
+     "profile": "c4",
+     "detail": "heal:sarvatra#g2",
+     "finalized": true,
+     "finalized_at_ns": 1785740718396665900,
+     "telemetry": {
+      "cost_evaluable": true,
+      "input_tokens": 6,
+      "output_tokens": 25685,
+      "cache_read_tokens": 223604,
+      "cache_creation_tokens": 77884,
+      "subagent_tokens": 327179,
+      "observed_cost_usd": 0.9196782,
+      "duration_ms": 278463,
+      "duration_api_ms": 276775
+     }
+    },
+    {
+     "reservation_id": "ae885b6874a943af888ef79fab9bc248",
+     "ordinal": 6,
+     "reserved_at_ns": 1785740718442277000,
+     "pid": 8688,
+     "purpose": "headless:heal",
+     "profile": "c4",
+     "detail": "heal:sarvatra#g2.retry1",
+     "finalized": true,
+     "finalized_at_ns": 1785740766920430500,
+     "telemetry": {
+      "cost_evaluable": true,
+      "input_tokens": 2,
+      "output_tokens": 1813,
+      "cache_read_tokens": 35220,
+      "cache_creation_tokens": 46943,
+      "subagent_tokens": 83978,
+      "observed_cost_usd": 0.31942499999999996,
+      "duration_ms": 34334,
+      "duration_api_ms": 32779
+     }
+    },
+    {
+     "reservation_id": "46abb8071cd840d88f9afe0a8e8c1a6b",
+     "ordinal": 7,
+     "reserved_at_ns": 1785740766950915000,
+     "pid": 8688,
+     "purpose": "headless:heal",
+     "profile": "c4",
+     "detail": "heal:sakft#g1",
+     "finalized": true,
+     "finalized_at_ns": 1785740999587309000,
+     "telemetry": {
+      "cost_evaluable": true,
+      "input_tokens": 4,
+      "output_tokens": 17817,
+      "cache_read_tokens": 118024,
+      "cache_creation_tokens": 66419,
+      "subagent_tokens": 202264,
+      "observed_cost_usd": 0.7011882,
+      "duration_ms": 222746,
+      "duration_api_ms": 220768
+     }
+    },
+    {
+     "reservation_id": "2f3b95f24f9f41139d42015f4a30a974",
+     "ordinal": 8,
+     "reserved_at_ns": 1785740999615796400,
+     "pid": 8688,
+     "purpose": "headless:heal",
+     "profile": "c4",
+     "detail": "heal:sakft#g2",
+     "finalized": true,
+     "finalized_at_ns": 1785741191911790400,
+     "telemetry": {
+      "cost_evaluable": true,
+      "input_tokens": 2,
+      "output_tokens": 15794,
+      "cache_read_tokens": 35220,
+      "cache_creation_tokens": 48621,
+      "subagent_tokens": 99637,
+      "observed_cost_usd": 0.5392079999999999,
+      "duration_ms": 178315,
+      "duration_api_ms": 175968
+     }
+    },
+    {
+     "reservation_id": "152d65c1e3d64b63b86523b93cfeff00",
+     "ordinal": 9,
+     "reserved_at_ns": 1785741191962167000,
+     "pid": 8688,
+     "purpose": "headless:heal",
+     "profile": "c4",
+     "detail": "heal:sakft#g2.retry1",
+     "finalized": true,
+     "finalized_at_ns": 1785741401556828500,
+     "telemetry": {
+      "cost_evaluable": true,
+      "input_tokens": 4,
+      "output_tokens": 18888,
+      "cache_read_tokens": 118517,
+      "cache_creation_tokens": 64373,
+      "subagent_tokens": 201782,
+      "observed_cost_usd": 0.7051251000000001,
+      "duration_ms": 190879,
+      "duration_api_ms": 189115
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 24,
+    "output_tokens": 108595,
+    "cache_read_tokens": 682821,
+    "cache_creation_tokens": 410796,
+    "subagent_tokens": 1202236,
+    "observed_cost_usd": 4.2986193,
+    "cost_evaluable": false,
+    "finalized_calls": 9,
+    "unevaluable_calls": 2,
+    "pending_calls": 0
+   }
+  }
+ }
+}
