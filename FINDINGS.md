@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 04-08-2026 (§518 — a ceiling written as a literal in a test encodes whatever the default was the day it was typed)_
+_Created: 26-06-2026 · Last updated: 04-08-2026 (§519 — vidyut.kosha's lemma for a krdanta-derived Subanta is the bare dhatu; entry-count lemma voting collapses derived nominals to verbal roots)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §519) whatever its section, so existing numbers never shift; when a finding is later
+(currently §520) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -55,6 +55,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§511. MW72 carries ZERO `<ls>` source citations — every cross-dictionary citation test that names it shrinks to MW](#511-mw72-carries-zero-ls-source-citations--every-cross-dictionary-citation-test-that-names-it-shrinks-to-mw) — `csl-orig/v02/mw72/mw72.txt` is 17.2 MB and contains not one `<ls>` tag, while MW has 320,828. Any apparatus/citation comparison that lists MW72 as a target silently produces a zero, not an error. Verify a dictionary's tag layer before scoping a test around it.
 - 🔴 [§515. PWG rests on WIL 1819; MW/MW72 English on WIL 1832 — CDSL has only 1832 OCR; do not treat Wilson as edition-free](#515-pwg-rests-on-wil-1819-mwmw72-english-on-wil-1832--cdsl-has-only-1832-ocr-do-not-treat-wilson-as-edition-free) — house edition-basis rule + OCR gap + preface-only scope for 1819; `L.` stays "native lexicons" with European transmission via 1819, not a Wilson siglum (`W.` is Wilson/1832).
 - 🔴 [§518. A ceiling written as a LITERAL in a test silently encodes whatever the default was the day it was typed — derive it from the policy table](#518-a-ceiling-written-as-a-literal-in-a-test-silently-encodes-whatever-the-default-was-the-day-it-was-typed--derive-it-from-the-policy-table) — the PWG probe gate kept one source of truth for its ceilings and still went stale twice, because `verdict_for`'s own default and two selftests pinned the NUMBER instead of the pointer. Derive the LIVE boundary from `POLICIES[CURRENT_POLICY]`; pin only the HISTORICAL policies, whose retired numbers really did judge their rows.
+- 🟠 [§519. vidyut.kosha's `lemma` for a krdanta-derived Subanta is the bare dhatu — entry-count lemma voting collapses derived nominals to verbal roots](#519-vidyutkoshas-lemma-for-a-krdanta-derived-subanta-is-the-bare-dhatu--entry-count-lemma-voting-collapses-derived-nominals-to-verbal-roots) — `janitf` gets 12 kosha entries saying lemma `jan` vs 3 saying `janitf`; even `rAmeRa` out-votes to the root `ram`. The stem-vs-collapse distinction is in `pratipadika_entry` (`Basic` vs `Krdanta`) — rank with it, never by raw entry counts.
 - 🔴 [§516. A later PR's stale-base merge can silently revert an EARLIER PR's ledger-doc-only re-stamp while leaving that earlier PR's CODE change fully intact](#516-a-later-prs-stale-base-merge-can-silently-revert-an-earlier-prs-ledger-doc-only-re-stamp-while-leaving-that-earlier-prs-code-change-fully-intact) — H2226's SHARED re-stamp of two LANG_PARITY entries was reverted by H2227's stale-base merge while the underlying code stayed field-parameterized; detect by re-hashing the working tree against the last legitimate re-stamp commit, not by trusting the ledger's currently-recorded hash.
 - 🔴 [§517. An EMPTY spawn directory is not a context-free spawn directory — verify the ancestry, not the directory](#517-an-empty-spawn-directory-is-not-a-context-free-spawn-directory--verify-the-ancestry-not-the-directory) — `bare_cli_cwd()` checked its own directory for `CLAUDE.md`/`.git` and pointed at `%TEMP%`, i.e. under the Windows user profile: 32 779 B of operator memory reached every paid call, invisible because the directory itself was empty. Enumerate what the *child* discovers and keep that marker set in ONE place; derive and verify candidates rather than hardcoding a "clean" path; and never let "could not prove it clean" collapse into "proved it clean".
 - 🟠 [§504. The NWS tag layer reaches only 2.2 % of the RU store — a facet bar over it is right, but it is not the sheet's main axis](#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis)
@@ -5383,3 +5384,34 @@ number that a table owns is a copy waiting to rot — name the derivation, quote
 a convenience, and say which it is.
 
 > Opus 5 (`claude-opus-5`) · 03-08-2026 · [H2173](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2173-Opus_SanskritLexicography_pwg-audit-tail-g5-g8-g9-g10_02.08.26.md) · [PR #1083](https://github.com/gasyoun/SanskritLexicography/pull/1083)
+
+### §519. vidyut.kosha's `lemma` for a krdanta-derived Subanta is the bare dhatu — entry-count lemma voting collapses derived nominals to verbal roots
+
+**The trap.** For an inflected nominal form, `Kosha.get(form)` returns one `PadaEntry_Subanta`
+per parse, and for every parse whose pratipadika is **krdanta-derived**, `entry.lemma` is the
+underlying **dhatu**, not the nominal stem. Because a productive root generates many krdanta
+parses, the collapsed dhatu **outnumbers** the true stem in the entry list: `janitf` (janitṛ,
+agent noun) yields **12** entries with lemma `jan` vs **3** with lemma `janitf`; `liNgin`
+yields 4×`liNg` + 4×`liNgi` (both collapses) vs 2×`liNgin`; even `rAmeRa` (rāmeṇa, "by
+Rāma") out-votes to the root `ram` ("to delight"), 6 vs 4. Any consumer that picks a lemma by
+majority over kosha entries — the obvious first implementation — therefore systematically
+lemmatizes derived nominals to bare verbal roots. This was the measured **defect class 2** of
+the Sa→Ru gloss wave-2 panel ([gold/saru_gloss_precision_report.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/gold/saru_gloss_precision_report.md)):
+the vidyut tier's lemma precision sat at **71.8 %** against 94.9 % (dcs) / 93.3 % (marker),
+and the panel's ruling is that the nominal stem, not the root, is the lemma.
+
+**The rule.** The distinction is machine-readable on every entry: `entry.pratipadika_entry`
+is `PratipadikaEntry.Basic` for a real nominal stem and `PratipadikaEntry.Krdanta` for a
+collapse (Tinanta/avyaya entries carry none). Rank lemma candidates **with** that field —
+when any Basic-backed noun candidate exists, a Krdanta-only noun candidate is a derivation
+trail, not a lemma vote. Keep the demoted dhatu in the ambiguity trail (it is genuine
+derivational information), and leave verb candidates alone: a Tinanta's lemma really is its
+dhatu. Fixed this way in
+[`RussianTranslation/src/build_vidyut_fallback.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_vidyut_fallback.py)
+(`pick_primary_and_alts(lp, basic)`, regression-pinned by Fixture D of
+[`RussianTranslation/tests/test_saru_gloss_pipeline.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_saru_gloss_pipeline.py)
+with the real kosha-0.4.0 tallies). Caveat: when kosha holds **no** Basic parse for the form
+(`viDunvAna` → only `viDu`, a wrong krdanta collapse), re-ranking cannot help — that residue
+is a kosha-coverage gap, not a ranking defect.
+
+> Fable 5 (`claude-fable-5`) · 04-08-2026 · [H2194](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2194-Fable_RussianTranslation_askbatch-saru-gloss-residual-2026-08_02.08.26.md) · [PR #1113](https://github.com/gasyoun/SanskritLexicography/pull/1113)
