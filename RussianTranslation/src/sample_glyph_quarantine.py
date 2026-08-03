@@ -203,7 +203,7 @@ def main():
         '',
         '## Interpretation',
         '',
-        '1. **Do not treat the 93%% population flag as "93%% bad Russian."** Every sampled '
+        '1. **Do not treat the 93% population flag as "93% bad Russian."** Every sampled '
         'row that carries the default reason is a *segmentation* quarantine candidate; '
         '`ru_quality_verdict` is deliberately `unknown_not_measured`.',
         '2. **Mass re-translate is not authorised** by this sample alone. Next step if '
