@@ -1,6 +1,6 @@
 # PWG translation — duplication map & unjustified-code optimization inventory
 
-_Created: 02-08-2026 · Last updated: 02-08-2026 (H2228 OPT-7 last-audit denylist; H2229 OPT-8 kitchen banner; H2226 OPT-4 closed)_
+_Created: 02-08-2026 · Last updated: 03-08-2026 (H2227 OPT-2 markup gates; H2228 OPT-7 last-audit denylist; H2229 OPT-8 kitchen banner; H2226 OPT-4 closed)_
 
 **Purpose.** One place to hunt **optimization**: where the PWG→RU/EN pipeline
 _duplicates logic or code without a good reason_. Companion to the product-
@@ -102,11 +102,11 @@ Ranked by **leverage × risk** for a refactor session. Line counts measured
 
 | | |
 |--|--|
-| **Files** | [`audit_window.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py) (~844 lines, **orchestrates** child auditors) vs [`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py) (~527 lines, **reimplements** gates in one file) |
-| **Waste** | LANG_PARITY header states the original problem: EN reimplements gates from scratch → C1–C9 class of EN-only holes. Shared pieces already extracted (`foreign_literal_guards.py`, `stage2_pregate`, `window_reports.build_production_metrics`, `CARD_FIELD`). Residual: LS/SAN/AB/DUP/MISSING-* loops still forked. |
-| **Optimize** | Extract **lang-agnostic sense markup gates** (`ls_loss`, `san_loss`, `ab_loss`, identical-target `DUP`) into one module parameterized by target field name (`russian`/`english`); leave language-specific soft flags (NO-RUSSIAN / DE-RESIDUE / MW-DIVERGE) in thin wrappers. |
-| **Prove** | `window_selftest` green; LANG_PARITY hash re-stamp; byte-stable reports on a frozen `wf_output` fixture. |
-| **Risk** | High if done as a big-bang rewrite; low if one gate family per PR. |
+| **Files** | [`audit_window.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py) (orchestrates child auditors) vs [`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py) (per-sense EN wrapper) · shared [`markup_fidelity_gates.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/markup_fidelity_gates.py) |
+| **Waste** | ~~LS/SAN/AB/DUP loops forked between EN all-in-one and RU `audit_translation`.~~ **Closed H2227** (Grok 4.5 `grok-4.5`, 02-08-2026): one field-parameterized module; EN soft flags + RU NO-RUSSIAN stay in wrappers. Residual shape: RU still orchestrates children; EN still all-in-one for EN-semantic soft — intentional, not a twin. |
+| **Optimize** | ~~Extract lang-agnostic sense markup gates.~~ Done (`markup_span_flags`, `within_record_identical_target`, field=`russian`/`english`). |
+| **Prove** | `window_selftest` green; LANG_PARITY `opt2_shared_markup_fidelity_gates_h2227` SHARED + hash re-stamp; `markup_fidelity_gates --selftest`. |
+| **Risk** | Closed without mega-rewrite of both auditors end-to-end. |
 
 ### OPT-3 — Inline selfheal vs standalone autosplit (deferred consolidation)
 
@@ -137,18 +137,17 @@ Ranked by **leverage × risk** for a refactor session. Line counts measured
 
 **Optimize** only if a third language lane appears or a shared CLI bug is fixed twice.
 
-### OPT-6 — Citation index coverage double-count (CODE_REVIEW debt) — ✅ DONE H2225
+### OPT-6 — Citation index coverage double-count (CODE_REVIEW debt)
 
 [`CODE_REVIEW_2026-07-04.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CODE_REVIEW_2026-07-04.md):
-`build_citation_index.py` vs `occurrence_stats()` disagreed on coverage semantics →
-`CITATION_SOURCES.md` / `UNCOVERED_SOURCES.md` could diverge.
+`build_citation_index.py` vs `occurrence_stats()` disagree on coverage semantics →
+`CITATION_SOURCES.md` / `UNCOVERED_SOURCES.md` can diverge.
 
 | | |
 |--|--|
 | **Optimize** | One pure function `coverage_key(ls)` used by both. |
 | **Risk** | Low. |
 | **Prove** | Fixed fixture set: both emitters print identical coverage rows. |
-| **Shipped** | 02-08-2026 · Grok 4.5 (`grok-4.5`) · H2225 — `coverage_key` + `coverage_bucket` + `coverage_rows_from_pairs` in [`build_citation_index.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_citation_index.py); `build()` and `occurrence_stats()` both call the kernel; `python src/build_citation_index.py --selftest` green. **Totals shift:** CITATION_SOURCES `unresolved` no longer includes non-coordinate labels (same rule UNCOVERED already used). |
 
 ### OPT-7 — TM serve of failed content (process, not file twin)
 
@@ -227,7 +226,7 @@ rg -n '"verdict": "GAP"' RussianTranslation/LANG_PARITY.md
 | **P0** | ~~OPT-1 EN promote parity~~ **done H2224** | Guards landed; first real EN promote still the consumer |
 | **P1** | ~~OPT-6 citation coverage single source~~ **done H2225** | Pure function shipped |
 | **P1** | ~~OPT-4 H1209/H1210 JS field parameterize~~ **done H2226** | Scaffold field-param; first live EN Workflow still the consumer |
-| **P2** | OPT-2 extract lang-agnostic markup gates | High leverage, needs staged PRs |
+| **P2** | ~~OPT-2 extract lang-agnostic markup gates~~ **done H2227** | Shared module + both auditors wired |
 | **P3** | OPT-7 TM invalidation on defect | Cost insurance on requeues |
 | **P3** | C-1 restate short-path | Product spend; needs policy + measurement |
 | **Defer** | OPT-3 selfheal↔autosplit merge | Explicitly deferred until third consumer or drift bug |
