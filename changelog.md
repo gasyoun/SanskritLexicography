@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+## [1.142.2] - 2026-08-04
 ### Added
 - **H2241 — progress-kitchen K-slice points in `progress_timeseries.json` (Sonnet 5 `claude-sonnet-5`, override dual-run of a Grok 4.5-locked handoff, 04-08-2026):** [`build_progress_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_progress_data.py) now reads the sibling `kitchen_data.json` build and appends four daily kitchen fields to each `progress_timeseries.json` row — `kitchen_yield_clean_pct`, `kitchen_health_last_verdict` + `kitchen_health_last_go` (1/0), `kitchen_idle_hours`. [`index.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/index.html) trend charts gained two new lines (clean-window % and idle hours). [PR #1112](https://github.com/gasyoun/SanskritLexicography/pull/1112) · [H2241](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2241-Grok_SanskritLexicography_progress-kitchen-timeseries-slices_03.08.26.md). Filename-locked to Grok 4.5, executed on Sonnet 5 per human override; Grok 4.5 dual-run/compare residual open at [H2268](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2268-Grok_SanskritLexicography_h2241-dual-run-compare_04.08.26.md).
 
