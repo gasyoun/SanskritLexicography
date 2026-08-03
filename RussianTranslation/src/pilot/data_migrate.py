@@ -120,6 +120,25 @@ def migrate(inventory, target, rt_root=None):
                            'sha256': sha256_file(out),
                            'source_file_count': row.get('file_count')})
             continue
+        if os.path.isdir(src):
+            # aggregate directory row (e.g. coordinator artifacts/**): copy the tree,
+            # per-file parity (source hashed at copy time — the inventory's aggregate
+            # row carries no per-file hashes by design)
+            for dirpath, _dirs, files in os.walk(src):
+                for name in files:
+                    fsrc = os.path.join(dirpath, name)
+                    rel = os.path.relpath(fsrc, src).replace('\\', '/')
+                    dest = os.path.join(target, row['bucket'],
+                                        os.path.basename(src.rstrip('/\\')), rel)
+                    os.makedirs(os.path.dirname(dest), exist_ok=True)
+                    want = sha256_file(fsrc)
+                    shutil.copyfile(fsrc, dest)
+                    got = sha256_file(dest)
+                    entry = {'src': row['path'] + '/' + rel,
+                             'dest': os.path.relpath(dest, target),
+                             'sha256': want, 'size': os.path.getsize(dest)}
+                    (copied if got == want else mismatches).append(entry)
+            continue
         dest = dest_for(row, target)
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         shutil.copyfile(src, dest)
@@ -222,10 +241,21 @@ def selftest():
              'status': 'present', 'sha256': None, 'size': 11},
             {'path': 'src/pilot/nws', 'bucket': 'layers', 'class': 'migrate-packed',
              'status': 'present', 'file_count': 4, 'aggregate': True},
+            {'path': 'src/pilot/output/coordinator/artifacts', 'bucket': 'manifests',
+             'class': 'migrate', 'status': 'present', 'aggregate': True},
         ]}
+        adir = os.path.join(rt, 'src', 'pilot', 'output', 'coordinator', 'artifacts',
+                            'lease1')
+        os.makedirs(adir)
+        with open(os.path.join(adir, 'execution_manifest.lease1.json'), 'w',
+                  encoding='utf-8', newline='\n') as f:
+            f.write('{"schema":"v2"}')
         target = os.path.join(td, 'clone')
         copied, mismatches, packed = migrate(inv, target)
-        assert len(copied) == 2 and not mismatches and len(packed) == 1
+        assert len(copied) == 3 and not mismatches and len(packed) == 1
+        assert os.path.exists(os.path.join(
+            target, 'manifests', 'artifacts', 'lease1',
+            'execution_manifest.lease1.json')), 'aggregate dir tree not copied'
         assert os.path.exists(os.path.join(target, 'tm', 'pwg_ru_translated.jsonl'))
         assert os.path.exists(os.path.join(target, 'layers', 'nws.tar.gz'))
         with tarfile.open(os.path.join(target, 'layers', 'nws.tar.gz')) as tf:
