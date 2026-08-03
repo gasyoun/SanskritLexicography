@@ -775,6 +775,13 @@ def main():
     out_path = OUT / "kitchen_data.json"
     out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"kitchen_data.json written ({data['generated_at']}).")
+
+    # B4 — append-only quality/fidelity/judge timeseries (one row per build date).
+    qts_path = OUT / "quality_timeseries.json"
+    qts = ks.quality_timeseries_append(
+        qts_path, quality, data["generated_at"], data["generated_at"][:10]
+    )
+    print(f"quality_timeseries.json: {len(qts['snapshots'])} snapshot(s).")
     print(
         f"  translation_on={act['translation_on']}  "
         f"cards_24h={speed.get('last_24h')}  "
