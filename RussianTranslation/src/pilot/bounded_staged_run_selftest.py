@@ -869,6 +869,30 @@ def test_q3_execute_requires_canary_go_receipt_h2159(td):
     nullcard = {'results': [{'key': 'dq_canary_puregloss', 'card': None}]}
     assert cg.judge_payload(nullcard)[0] == 'NO-GO', 'a null card must be NO-GO'
 
+    # H2174: the clean_card above carries NO 'notes' key, but every REAL canary run
+    # does — and it paraphrases the fixture's own portrait note, which contains the
+    # literal string "SAN-LOSS" and is fed to the model verbatim as prompt input.
+    # Observed identically in H1447 (22-07) and H2011 (02-08). Scanning the whole
+    # card made this gate unpassable for its own fixture; the marker scan is scoped
+    # to translated content. RED before the canary_gate.py fix, GREEN after.
+    noted = json.loads(json.dumps(go_res))
+    noted['results'][0]['card']['notes'] = (
+        'Synthetic D-Q silent-SAN-LOSS canary card (H994), layer PW only. Three '
+        'line-opening pure-gloss senses; none may be dropped without failing the '
+        'SAN-LOSS soft-guard.')
+    assert cg.judge_payload(noted)[0] == 'GO', \
+        'fixture commentary echoing SAN-LOSS in notes must NOT trip the gate'
+    # ...but a marker in TRANSLATED CONTENT is still a hard NO-GO.
+    for field in ('russian', 'german'):
+        leaked = json.loads(json.dumps(noted))
+        leaked['results'][0]['card']['records'][0]['senses'][0][field] = 'SAN-LOSS'
+        assert cg.judge_payload(leaked)[0] == 'NO-GO', \
+            'a literal marker in sense.%s must stay NO-GO' % field
+    unmapped = json.loads(json.dumps(noted))
+    unmapped['results'][0]['card']['records'][0]['senses'][1]['russian'] = 'x UNMAPPED y'
+    assert cg.judge_payload(unmapped)[0] == 'NO-GO', \
+        'a literal UNMAPPED marker in sense content must stay NO-GO'
+
     # judge CLI writes an atomic receipt; enforce() accepts fresh GO, refuses the rest.
     wf = os.path.join(td, 'q3_canary_wf.json')
     with open(wf, 'w', encoding='utf-8') as fh:
