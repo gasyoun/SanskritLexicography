@@ -1,6 +1,7 @@
 {
-  "generated_at": "2026-08-02T15:45:53Z",
+  "generated_at": "2026-08-03T09:37:55Z",
   "schema": "pwg.kitchen.v2",
+  "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
@@ -8,7 +9,7 @@
   "activity": {
     "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 30260,
+    "youngest_artifact_age_seconds": 56751,
     "window_state": "needs_requeue",
     "window_root": "no_pwg_w05",
     "next_action": "Run python src\\pilot\\requeue_from_audit.py <root>, rerun Max Workflow, then rerun audit_window.py.",
@@ -16,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-08-02T07:21:30Z",
-        "age_seconds": 30260,
+        "age_seconds": 94580,
         "size": 26192750
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-07-15T20:26:10Z",
-        "age_seconds": 1538380,
+        "age_seconds": 1602700,
         "size": 53853
       },
       "window_ledger": {
         "exists": true,
-        "mtime": "2026-07-15T20:26:10Z",
-        "age_seconds": 1538380,
-        "size": 314319
+        "mtime": "2026-08-02T17:51:59Z",
+        "age_seconds": 56751,
+        "size": 327781
       },
       "events": {
         "exists": true,
         "mtime": "2026-07-24T18:39:44Z",
-        "age_seconds": 767167,
+        "age_seconds": 831486,
         "size": 3486985
       }
     }
@@ -51,7 +52,7 @@
     "pending": 7,
     "newest_card_at": "2026-07-14T04:10:54Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 19.48,
+    "days_since_last_card": 20.23,
     "campaign_days": 35
   },
   "yield_quality": {
@@ -204,8 +205,8 @@
   "instrumentation": {
     "measured": true,
     "windows": 473,
-    "wall_clock_present": 12,
-    "wall_clock_coverage_pct": 2.5,
+    "wall_clock_present": 99,
+    "wall_clock_coverage_pct": 20.9,
     "token_metrics_present": 12,
     "token_coverage_pct": 2.5,
     "gen_model_present": 0,
@@ -216,42 +217,22 @@
   "health": {
     "measured": true,
     "ceiling_ms": 65000,
-    "probes": 31,
-    "go_count": 22,
-    "nogo_count": 9,
-    "go_pct": 71.0,
+    "probes": 33,
+    "go_count": 23,
+    "nogo_count": 10,
+    "go_pct": 69.7,
     "last": {
-      "ts": "2026-08-02T12:46:42.735Z",
+      "ts": "2026-08-03T09:33:32.845Z",
       "account": "c4",
-      "elapsed_ms": 66291,
-      "duration_api_ms": 16445,
-      "ceiling_ms": 65000,
+      "elapsed_ms": 297949,
+      "duration_api_ms": 276183,
+      "ceiling_ms": 80000,
       "verdict": "NO-GO",
       "model": "claude-sonnet-5",
       "source": "h963_c4_gate0_probe_events.jsonl"
     },
     "last_verdict": "NO-GO",
     "recent": [
-      {
-        "ts": "2026-07-25T18:58:49.376Z",
-        "account": "c5",
-        "elapsed_ms": 52960,
-        "duration_api_ms": null,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c5_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-07-26T02:37:26.786Z",
-        "account": "c1",
-        "elapsed_ms": 6424,
-        "duration_api_ms": null,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c1_gate0_probe_events.jsonl"
-      },
       {
         "ts": "2026-07-31T18:59:59.255Z",
         "account": "c4",
@@ -371,6 +352,26 @@
         "verdict": "NO-GO",
         "model": "claude-sonnet-5",
         "source": "h963_c4_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-08-03T09:28:34.828Z",
+        "account": "c4",
+        "elapsed_ms": 69082,
+        "duration_api_ms": 15315,
+        "ceiling_ms": 80000,
+        "verdict": "GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
+      },
+      {
+        "ts": "2026-08-03T09:33:32.845Z",
+        "account": "c4",
+        "elapsed_ms": 297949,
+        "duration_api_ms": 276183,
+        "ceiling_ms": 80000,
+        "verdict": "NO-GO",
+        "model": "claude-sonnet-5",
+        "source": "h963_c4_gate0_probe_events.jsonl"
       }
     ],
     "note": "GO if elapsed_ms ≤ latency ceiling (default 65s; H2011/H2174 c4 series)"
@@ -412,18 +413,42 @@
     "verb_scope_dcs": 749,
     "verb_remaining": 701,
     "verb_pct": 6.41,
-    "mean_cards_per_active_day_14d": 891.846,
-    "estimated_days_at_14d_card_rate": 0.8,
+    "mean_roots_promoted_per_active_day": 8.0,
+    "roots_promoted_active_days_sampled": 6,
+    "estimated_days_at_roots_per_day_rate": 87.6,
     "estimate_label": "estimate",
-    "note": "ETA divides remaining DCS-attested verb roots by mean cards/active-day (14d). Units differ (roots vs cards) — treat as order-of-magnitude only, not a schedule.",
-    "basis": "cards_rate_only"
+    "note": "ETA divides remaining DCS-attested verb roots by the mean roots promoted per active day (from store provenance timestamps of already-promoted roots) — rate unit is roots/day, matching the remaining-roots numerator; still an estimate.",
+    "basis": "verb_remaining / mean_roots_promoted_per_active_day"
+  },
+  "article_parity": {
+    "measured": false,
+    "store_roots": 67,
+    "article_roots": null,
+    "in_store_not_article": null,
+    "in_article_not_store": null,
+    "parity_pct": null,
+    "missing_from_article_sample": [],
+    "note": "article_site/ not built on this machine — run python RussianTranslation/src/pilot/build_article_site.py then rebuild kitchen"
+  },
+  "collision_guard": {
+    "measured": true,
+    "blocked": false,
+    "banner": null,
+    "operator_one_liner": "If the kitchen collision banner is red (or collision_guard.blocked=true): DO NOT start a second paid window on those keys/root — a live job or recent store-hit / lease collision already holds them. Wait for the live job to finish or requeue that lease; only then import another window.",
+    "collision_count": 0,
+    "kind_counts": {},
+    "last": null,
+    "recent": [],
+    "live_jobs": [],
+    "live_job_count": 0,
+    "note": "Observability for existing store-hit preflight / occupied-keys / nominal lease collision aborts (OPT-8). Red banner means a recorded collision event — not a new concurrency protocol."
   },
   "speed": {
     "cards_last_hour": 0,
     "cards_last_24h": 0,
     "mean_cards_per_active_day_14d": 891.846,
-    "mean_wall_clock_minutes": 3.0,
-    "wall_clock_sample_n": 1,
+    "mean_wall_clock_minutes": 18.778,
+    "wall_clock_sample_n": 50,
     "newest_card_at": "2026-07-14T04:10:54Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
     "measured": true
@@ -558,6 +583,11 @@
       "badge": "priced sample n=59 clean cards",
       "note": "Economy band is list-price extremes on a probe/log sample — not the Claude Max subscription invoice and not full-campaign billed spend"
     },
+    "subscription": {
+      "measured": false,
+      "badge": "subscription not pasted",
+      "note": "Paste a weekly Max receipt or usage-export summary into RussianTranslation/src/pilot/output/economy_subscription.json (schema in progress_dashboard/examples/economy_subscription.example.json). Until then the kitchen only shows list-price sample bands (K8)."
+    },
     "measured": true
   },
   "idle": {
@@ -568,7 +598,7 @@
     "total_idle_seconds": 1549947,
     "total_idle_hours": 430.54,
     "mean_gap_seconds": 12204.307,
-    "current_idle_seconds": 30262,
+    "current_idle_seconds": 56752,
     "last_idle_seconds": 352265,
     "last_idle": {
       "from": "2026-07-11T18:34:18Z",
@@ -576,7 +606,10 @@
       "seconds": 352265,
       "after_root": "no_pwg_w05_rq1",
       "before_root": null,
-      "source": "ledger_gap"
+      "source": "ledger_gap",
+      "reason": "waiting_requeue",
+      "reason_source": "ledger_needs_requeue",
+      "reason_evidence": "ledger no_pwg_w05_rq1 @ 2026-07-11T18:34:18Z"
     },
     "idle_by_month": [
       {
@@ -593,9 +626,9 @@
       },
       {
         "month": "2026-08",
-        "idle_seconds": 30262,
-        "idle_days": 0.35,
-        "idle_hours": 8.41
+        "idle_seconds": 56752,
+        "idle_days": 0.66,
+        "idle_hours": 15.76
       }
     ],
     "recent_gaps": [
@@ -605,7 +638,9 @@
         "seconds": 1849,
         "after_root": "nominal_w1_100small",
         "before_root": "nominal_w1_100small",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-05T22:10:50Z",
@@ -613,7 +648,9 @@
         "seconds": 38147,
         "after_root": "nominal_w1_100small",
         "before_root": "no_pwg_w1",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-06T08:48:41Z",
@@ -621,7 +658,9 @@
         "seconds": 43597,
         "after_root": "no_pwg_w1",
         "before_root": "dah",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-06T20:55:18Z",
@@ -629,7 +668,10 @@
         "seconds": 333254,
         "after_root": "dah",
         "before_root": "no_pwg_w02",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger dah @ 2026-07-06T20:55:18Z"
       },
       {
         "from": "2026-07-10T17:29:32Z",
@@ -637,7 +679,10 @@
         "seconds": 68729,
         "after_root": "no_pwg_w02",
         "before_root": "no_pwg_w03",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w02 @ 2026-07-10T17:29:32Z"
       },
       {
         "from": "2026-07-11T12:35:01Z",
@@ -645,7 +690,10 @@
         "seconds": 5543,
         "after_root": "no_pwg_w03",
         "before_root": "no_pwg_w03",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w03 @ 2026-07-11T12:35:01Z"
       },
       {
         "from": "2026-07-11T14:07:24Z",
@@ -653,7 +701,10 @@
         "seconds": 269,
         "after_root": "no_pwg_w03",
         "before_root": "no_pwg_w03_rq1",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w03 @ 2026-07-11T14:07:24Z"
       },
       {
         "from": "2026-07-11T14:11:53Z",
@@ -661,7 +712,9 @@
         "seconds": 13079,
         "after_root": "no_pwg_w03_rq1",
         "before_root": "no_pwg_w04",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-11T17:49:52Z",
@@ -669,7 +722,10 @@
         "seconds": 273,
         "after_root": "no_pwg_w04",
         "before_root": "no_pwg_w04_rq1",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w04 @ 2026-07-11T17:49:52Z"
       },
       {
         "from": "2026-07-11T17:54:25Z",
@@ -677,7 +733,10 @@
         "seconds": 2058,
         "after_root": "no_pwg_w04_rq1",
         "before_root": "no_pwg_w05",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w04_rq1 @ 2026-07-11T17:54:25Z"
       },
       {
         "from": "2026-07-11T18:28:43Z",
@@ -685,7 +744,10 @@
         "seconds": 335,
         "after_root": "no_pwg_w05",
         "before_root": "no_pwg_w05_rq1",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w05 @ 2026-07-11T18:28:43Z"
       },
       {
         "from": "2026-07-11T18:34:18Z",
@@ -693,7 +755,10 @@
         "seconds": 352265,
         "after_root": "no_pwg_w05_rq1",
         "before_root": null,
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w05_rq1 @ 2026-07-11T18:34:18Z"
       }
     ],
     "all_gaps": [
@@ -703,7 +768,9 @@
         "seconds": 464,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-27T21:01:29Z",
@@ -711,7 +778,9 @@
         "seconds": 124,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-27T21:03:34Z",
@@ -719,7 +788,9 @@
         "seconds": 906,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-27T21:19:36Z",
@@ -727,7 +798,9 @@
         "seconds": 28874,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T05:20:50Z",
@@ -735,7 +808,9 @@
         "seconds": 861,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T05:35:11Z",
@@ -743,7 +818,9 @@
         "seconds": 3453,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T06:32:44Z",
@@ -751,7 +828,9 @@
         "seconds": 660,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T06:43:44Z",
@@ -759,7 +838,9 @@
         "seconds": 1477,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T07:09:28Z",
@@ -767,7 +848,9 @@
         "seconds": 415,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T07:16:50Z",
@@ -775,7 +858,9 @@
         "seconds": 369,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T07:22:59Z",
@@ -783,7 +868,9 @@
         "seconds": 304,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T07:28:38Z",
@@ -791,7 +878,9 @@
         "seconds": 1289,
         "after_root": "sTA",
         "before_root": null,
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T07:50:07Z",
@@ -799,7 +888,10 @@
         "seconds": 893,
         "after_root": null,
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger None @ 2026-06-28T07:50:07Z"
       },
       {
         "from": "2026-06-28T08:05:00Z",
@@ -807,7 +899,9 @@
         "seconds": 920,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T08:20:20Z",
@@ -815,7 +909,9 @@
         "seconds": 716,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T08:32:16Z",
@@ -823,7 +919,9 @@
         "seconds": 15333,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T12:47:49Z",
@@ -831,7 +929,9 @@
         "seconds": 542,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T12:57:34Z",
@@ -839,7 +939,9 @@
         "seconds": 412,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T13:04:26Z",
@@ -847,7 +949,9 @@
         "seconds": 129,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T13:07:54Z",
@@ -855,7 +959,9 @@
         "seconds": 210,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T13:15:15Z",
@@ -863,7 +969,9 @@
         "seconds": 204,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T13:18:39Z",
@@ -871,7 +979,9 @@
         "seconds": 3039,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T14:10:07Z",
@@ -879,7 +989,9 @@
         "seconds": 710,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T14:21:57Z",
@@ -887,7 +999,9 @@
         "seconds": 12111,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T17:43:48Z",
@@ -895,7 +1009,9 @@
         "seconds": 152,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T17:46:20Z",
@@ -903,7 +1019,9 @@
         "seconds": 3075,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T18:39:31Z",
@@ -911,7 +1029,9 @@
         "seconds": 1722,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T19:10:07Z",
@@ -919,7 +1039,9 @@
         "seconds": 556,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T19:19:23Z",
@@ -927,7 +1049,9 @@
         "seconds": 2788,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-28T20:05:51Z",
@@ -935,7 +1059,9 @@
         "seconds": 36594,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-29T06:15:45Z",
@@ -943,7 +1069,10 @@
         "seconds": 638,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger sTA @ 2026-06-29T06:15:45Z"
       },
       {
         "from": "2026-06-29T06:26:23Z",
@@ -951,7 +1080,10 @@
         "seconds": 1916,
         "after_root": "sTA",
         "before_root": "BU",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger sTA @ 2026-06-29T06:26:23Z"
       },
       {
         "from": "2026-06-29T06:58:19Z",
@@ -959,7 +1091,10 @@
         "seconds": 720,
         "after_root": "BU",
         "before_root": "as",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger BU @ 2026-06-29T06:58:19Z"
       },
       {
         "from": "2026-06-29T07:10:19Z",
@@ -967,7 +1102,10 @@
         "seconds": 796,
         "after_root": "as",
         "before_root": "i",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger as @ 2026-06-29T07:10:19Z"
       },
       {
         "from": "2026-06-29T07:23:53Z",
@@ -975,7 +1113,10 @@
         "seconds": 1654,
         "after_root": "i",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger i @ 2026-06-29T07:23:53Z"
       },
       {
         "from": "2026-06-29T07:51:27Z",
@@ -983,7 +1124,10 @@
         "seconds": 1165,
         "after_root": "gam",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger gam @ 2026-06-29T07:51:27Z"
       },
       {
         "from": "2026-06-29T08:10:52Z",
@@ -991,7 +1135,9 @@
         "seconds": 183,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-29T08:14:11Z",
@@ -999,7 +1145,10 @@
         "seconds": 332,
         "after_root": "gam",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger gam @ 2026-06-29T08:14:11Z"
       },
       {
         "from": "2026-06-29T08:19:43Z",
@@ -1007,7 +1156,10 @@
         "seconds": 640,
         "after_root": "gam",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger gam @ 2026-06-29T08:19:43Z"
       },
       {
         "from": "2026-06-29T08:31:18Z",
@@ -1015,7 +1167,9 @@
         "seconds": 3465,
         "after_root": "sTA",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-29T09:29:03Z",
@@ -1023,7 +1177,10 @@
         "seconds": 1979,
         "after_root": "gam",
         "before_root": "yuj",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger gam @ 2026-06-29T09:29:03Z"
       },
       {
         "from": "2026-06-29T10:02:02Z",
@@ -1031,7 +1188,10 @@
         "seconds": 985,
         "after_root": "yuj",
         "before_root": "yuj",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger yuj @ 2026-06-29T10:02:02Z"
       },
       {
         "from": "2026-06-29T10:18:27Z",
@@ -1039,7 +1199,10 @@
         "seconds": 4915,
         "after_root": "yuj",
         "before_root": "vid",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger yuj @ 2026-06-29T10:18:27Z"
       },
       {
         "from": "2026-06-29T11:40:22Z",
@@ -1047,7 +1210,10 @@
         "seconds": 394,
         "after_root": "vid",
         "before_root": "han",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger vid @ 2026-06-29T11:40:22Z"
       },
       {
         "from": "2026-06-29T11:46:56Z",
@@ -1055,7 +1221,10 @@
         "seconds": 2515,
         "after_root": "han",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger han @ 2026-06-29T11:46:56Z"
       },
       {
         "from": "2026-06-29T12:28:51Z",
@@ -1063,7 +1232,9 @@
         "seconds": 1108,
         "after_root": "sTA",
         "before_root": "DA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-29T12:47:41Z",
@@ -1071,7 +1242,10 @@
         "seconds": 467,
         "after_root": "DA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger DA @ 2026-06-29T12:47:41Z"
       },
       {
         "from": "2026-06-29T12:58:29Z",
@@ -1079,7 +1253,10 @@
         "seconds": 127,
         "after_root": "man",
         "before_root": "banD",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger man @ 2026-06-29T12:58:29Z"
       },
       {
         "from": "2026-06-29T13:00:36Z",
@@ -1087,7 +1264,10 @@
         "seconds": 335,
         "after_root": "banD",
         "before_root": "BU",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger banD @ 2026-06-29T13:00:36Z"
       },
       {
         "from": "2026-06-29T13:06:11Z",
@@ -1095,7 +1275,10 @@
         "seconds": 192,
         "after_root": "BU",
         "before_root": "jIv",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger BU @ 2026-06-29T13:06:11Z"
       },
       {
         "from": "2026-06-29T13:11:37Z",
@@ -1103,7 +1286,10 @@
         "seconds": 353,
         "after_root": "naS",
         "before_root": "as",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger naS @ 2026-06-29T13:11:37Z"
       },
       {
         "from": "2026-06-29T13:17:30Z",
@@ -1111,7 +1297,10 @@
         "seconds": 446,
         "after_root": "as",
         "before_root": "i",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger as @ 2026-06-29T13:17:30Z"
       },
       {
         "from": "2026-06-29T13:24:56Z",
@@ -1119,7 +1308,10 @@
         "seconds": 324,
         "after_root": "i",
         "before_root": "i",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger i @ 2026-06-29T13:24:56Z"
       },
       {
         "from": "2026-06-29T13:30:20Z",
@@ -1127,7 +1319,10 @@
         "seconds": 450,
         "after_root": "i",
         "before_root": "i",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger i @ 2026-06-29T13:30:20Z"
       },
       {
         "from": "2026-06-29T13:38:18Z",
@@ -1135,7 +1330,10 @@
         "seconds": 385,
         "after_root": "i",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger i @ 2026-06-29T13:38:18Z"
       },
       {
         "from": "2026-06-29T13:46:44Z",
@@ -1143,7 +1341,10 @@
         "seconds": 457,
         "after_root": "jan",
         "before_root": "jan",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger jan @ 2026-06-29T13:46:44Z"
       },
       {
         "from": "2026-06-29T13:54:59Z",
@@ -1151,7 +1352,10 @@
         "seconds": 1209,
         "after_root": "jan",
         "before_root": "dA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger jan @ 2026-06-29T13:54:59Z"
       },
       {
         "from": "2026-06-29T14:18:53Z",
@@ -1159,7 +1363,10 @@
         "seconds": 12019,
         "after_root": "ji",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger ji @ 2026-06-29T14:18:53Z"
       },
       {
         "from": "2026-06-29T17:39:12Z",
@@ -1167,7 +1374,9 @@
         "seconds": 5562,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-29T19:11:54Z",
@@ -1175,7 +1384,9 @@
         "seconds": 1159,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-29T19:35:00Z",
@@ -1183,7 +1394,10 @@
         "seconds": 24739,
         "after_root": "Ap",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger Ap @ 2026-06-29T19:35:00Z"
       },
       {
         "from": "2026-06-30T02:27:19Z",
@@ -1191,7 +1405,9 @@
         "seconds": 664,
         "after_root": "sTA",
         "before_root": "siD",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-30T02:38:23Z",
@@ -1199,7 +1415,9 @@
         "seconds": 121,
         "after_root": "siD",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-30T02:40:24Z",
@@ -1207,7 +1425,9 @@
         "seconds": 1080,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-30T02:58:24Z",
@@ -1215,7 +1435,9 @@
         "seconds": 1258,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-30T03:19:22Z",
@@ -1223,7 +1445,9 @@
         "seconds": 2081,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-30T03:54:07Z",
@@ -1231,7 +1455,9 @@
         "seconds": 1115,
         "after_root": "sTA",
         "before_root": "vad",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-06-30T04:14:00Z",
@@ -1239,7 +1465,10 @@
         "seconds": 3691,
         "after_root": "gA",
         "before_root": "vraj",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger gA @ 2026-06-30T04:14:00Z"
       },
       {
         "from": "2026-06-30T05:15:33Z",
@@ -1247,7 +1476,10 @@
         "seconds": 395,
         "after_root": "Buj",
         "before_root": "Bid",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger Buj @ 2026-06-30T05:15:33Z"
       },
       {
         "from": "2026-06-30T05:24:59Z",
@@ -1255,7 +1487,10 @@
         "seconds": 176,
         "after_root": "Cid",
         "before_root": "naS",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger Cid @ 2026-06-30T05:24:59Z"
       },
       {
         "from": "2026-06-30T05:32:02Z",
@@ -1263,7 +1498,10 @@
         "seconds": 138,
         "after_root": "hi",
         "before_root": "mad",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger hi @ 2026-06-30T05:32:02Z"
       },
       {
         "from": "2026-06-30T05:34:20Z",
@@ -1271,7 +1509,10 @@
         "seconds": 366,
         "after_root": "mad",
         "before_root": "pat",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger mad @ 2026-06-30T05:34:20Z"
       },
       {
         "from": "2026-06-30T05:41:54Z",
@@ -1279,7 +1520,10 @@
         "seconds": 124454,
         "after_root": "mad",
         "before_root": "Ap",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger mad @ 2026-06-30T05:41:54Z"
       },
       {
         "from": "2026-07-01T16:19:18Z",
@@ -1287,7 +1531,10 @@
         "seconds": 289,
         "after_root": "viS",
         "before_root": "ji",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger viS @ 2026-07-01T16:19:18Z"
       },
       {
         "from": "2026-07-01T16:25:29Z",
@@ -1295,7 +1542,10 @@
         "seconds": 132,
         "after_root": "vas",
         "before_root": "ji",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger vas @ 2026-07-01T16:25:29Z"
       },
       {
         "from": "2026-07-01T16:28:41Z",
@@ -1303,7 +1553,10 @@
         "seconds": 2369,
         "after_root": "vas",
         "before_root": "ji",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger vas @ 2026-07-01T16:28:41Z"
       },
       {
         "from": "2026-07-01T17:09:20Z",
@@ -1311,7 +1564,10 @@
         "seconds": 739,
         "after_root": "vas",
         "before_root": "ji",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger vas @ 2026-07-01T17:09:20Z"
       },
       {
         "from": "2026-07-01T17:22:43Z",
@@ -1319,7 +1575,10 @@
         "seconds": 66043,
         "after_root": "vas",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger vas @ 2026-07-01T17:22:43Z"
       },
       {
         "from": "2026-07-02T11:43:26Z",
@@ -1327,7 +1586,9 @@
         "seconds": 18080,
         "after_root": "sTA",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T16:44:46Z",
@@ -1335,7 +1596,9 @@
         "seconds": 680,
         "after_root": "gam",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T16:56:06Z",
@@ -1343,7 +1606,9 @@
         "seconds": 1416,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T17:19:42Z",
@@ -1351,7 +1616,9 @@
         "seconds": 246,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T17:23:48Z",
@@ -1359,7 +1626,9 @@
         "seconds": 390,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T17:30:18Z",
@@ -1367,7 +1636,9 @@
         "seconds": 249,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T17:34:27Z",
@@ -1375,7 +1646,9 @@
         "seconds": 152,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T17:36:59Z",
@@ -1383,7 +1656,9 @@
         "seconds": 129,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T17:40:48Z",
@@ -1391,7 +1666,9 @@
         "seconds": 132,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T17:43:00Z",
@@ -1399,7 +1676,9 @@
         "seconds": 6988,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T19:39:28Z",
@@ -1407,7 +1686,9 @@
         "seconds": 785,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T19:52:33Z",
@@ -1415,7 +1696,9 @@
         "seconds": 562,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T20:01:55Z",
@@ -1423,7 +1706,9 @@
         "seconds": 976,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T20:18:11Z",
@@ -1431,7 +1716,9 @@
         "seconds": 627,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-02T20:28:38Z",
@@ -1439,7 +1726,9 @@
         "seconds": 17587,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-03T01:21:45Z",
@@ -1447,7 +1736,9 @@
         "seconds": 2289,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-03T01:59:54Z",
@@ -1455,7 +1746,9 @@
         "seconds": 399,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-03T02:07:55Z",
@@ -1463,7 +1756,9 @@
         "seconds": 324,
         "after_root": "sTA",
         "before_root": "sTA",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-03T02:15:09Z",
@@ -1471,7 +1766,9 @@
         "seconds": 53468,
         "after_root": "sTA",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-03T17:08:14Z",
@@ -1479,7 +1776,10 @@
         "seconds": 2151,
         "after_root": "gam",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger gam @ 2026-07-03T17:08:14Z"
       },
       {
         "from": "2026-07-03T17:44:05Z",
@@ -1487,7 +1787,10 @@
         "seconds": 1239,
         "after_root": "gam",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger gam @ 2026-07-03T17:44:05Z"
       },
       {
         "from": "2026-07-03T18:04:44Z",
@@ -1495,7 +1798,10 @@
         "seconds": 883,
         "after_root": "gam",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger gam @ 2026-07-03T18:04:44Z"
       },
       {
         "from": "2026-07-03T18:19:27Z",
@@ -1503,7 +1809,10 @@
         "seconds": 455,
         "after_root": "gam",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger gam @ 2026-07-03T18:19:27Z"
       },
       {
         "from": "2026-07-03T18:27:36Z",
@@ -1511,7 +1820,10 @@
         "seconds": 2468,
         "after_root": "gam",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger gam @ 2026-07-03T18:27:36Z"
       },
       {
         "from": "2026-07-03T19:08:44Z",
@@ -1519,7 +1831,10 @@
         "seconds": 202,
         "after_root": "gam",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger gam @ 2026-07-03T19:08:44Z"
       },
       {
         "from": "2026-07-03T19:12:06Z",
@@ -1527,7 +1842,10 @@
         "seconds": 592,
         "after_root": "gam",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger gam @ 2026-07-03T19:12:06Z"
       },
       {
         "from": "2026-07-03T19:21:58Z",
@@ -1535,7 +1853,10 @@
         "seconds": 1203,
         "after_root": "gam",
         "before_root": "gam",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger gam @ 2026-07-03T19:21:58Z"
       },
       {
         "from": "2026-07-03T19:42:01Z",
@@ -1543,7 +1864,9 @@
         "seconds": 25387,
         "after_root": "gam",
         "before_root": "vid",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-04T02:45:53Z",
@@ -1551,7 +1874,10 @@
         "seconds": 1747,
         "after_root": "vid",
         "before_root": "vid",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger vid @ 2026-07-04T02:45:53Z"
       },
       {
         "from": "2026-07-04T03:15:00Z",
@@ -1559,7 +1885,10 @@
         "seconds": 8054,
         "after_root": "vid",
         "before_root": "vid",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger vid @ 2026-07-04T03:15:00Z"
       },
       {
         "from": "2026-07-04T05:29:14Z",
@@ -1567,7 +1896,10 @@
         "seconds": 476,
         "after_root": "vid",
         "before_root": "vid",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger vid @ 2026-07-04T05:29:14Z"
       },
       {
         "from": "2026-07-04T05:37:10Z",
@@ -1575,7 +1907,10 @@
         "seconds": 373,
         "after_root": "vid",
         "before_root": "vid",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger vid @ 2026-07-04T05:37:10Z"
       },
       {
         "from": "2026-07-04T05:43:23Z",
@@ -1583,7 +1918,10 @@
         "seconds": 238,
         "after_root": "vid",
         "before_root": "vid",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger vid @ 2026-07-04T05:43:23Z"
       },
       {
         "from": "2026-07-04T05:47:21Z",
@@ -1591,7 +1929,10 @@
         "seconds": 53839,
         "after_root": "vid",
         "before_root": "dah",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger vid @ 2026-07-04T05:47:21Z"
       },
       {
         "from": "2026-07-04T20:44:40Z",
@@ -1599,7 +1940,10 @@
         "seconds": 445,
         "after_root": "dah",
         "before_root": "dah",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger dah @ 2026-07-04T20:44:40Z"
       },
       {
         "from": "2026-07-04T20:52:05Z",
@@ -1607,7 +1951,10 @@
         "seconds": 89149,
         "after_root": "dah",
         "before_root": "nominal_w1_100small",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger dah @ 2026-07-04T20:52:05Z"
       },
       {
         "from": "2026-07-05T21:37:54Z",
@@ -1615,7 +1962,9 @@
         "seconds": 127,
         "after_root": "nominal_w1_100small",
         "before_root": "nominal_w1_100small",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-05T21:40:01Z",
@@ -1623,7 +1972,9 @@
         "seconds": 1849,
         "after_root": "nominal_w1_100small",
         "before_root": "nominal_w1_100small",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-05T22:10:50Z",
@@ -1631,7 +1982,9 @@
         "seconds": 38147,
         "after_root": "nominal_w1_100small",
         "before_root": "no_pwg_w1",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-06T08:48:41Z",
@@ -1639,7 +1992,9 @@
         "seconds": 43597,
         "after_root": "no_pwg_w1",
         "before_root": "dah",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-06T20:55:18Z",
@@ -1647,7 +2002,10 @@
         "seconds": 333254,
         "after_root": "dah",
         "before_root": "no_pwg_w02",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger dah @ 2026-07-06T20:55:18Z"
       },
       {
         "from": "2026-07-10T17:29:32Z",
@@ -1655,7 +2013,10 @@
         "seconds": 68729,
         "after_root": "no_pwg_w02",
         "before_root": "no_pwg_w03",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w02 @ 2026-07-10T17:29:32Z"
       },
       {
         "from": "2026-07-11T12:35:01Z",
@@ -1663,7 +2024,10 @@
         "seconds": 5543,
         "after_root": "no_pwg_w03",
         "before_root": "no_pwg_w03",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w03 @ 2026-07-11T12:35:01Z"
       },
       {
         "from": "2026-07-11T14:07:24Z",
@@ -1671,7 +2035,10 @@
         "seconds": 269,
         "after_root": "no_pwg_w03",
         "before_root": "no_pwg_w03_rq1",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w03 @ 2026-07-11T14:07:24Z"
       },
       {
         "from": "2026-07-11T14:11:53Z",
@@ -1679,7 +2046,9 @@
         "seconds": 13079,
         "after_root": "no_pwg_w03_rq1",
         "before_root": "no_pwg_w04",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "unknown",
+        "reason_source": "default"
       },
       {
         "from": "2026-07-11T17:49:52Z",
@@ -1687,7 +2056,10 @@
         "seconds": 273,
         "after_root": "no_pwg_w04",
         "before_root": "no_pwg_w04_rq1",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w04 @ 2026-07-11T17:49:52Z"
       },
       {
         "from": "2026-07-11T17:54:25Z",
@@ -1695,7 +2067,10 @@
         "seconds": 2058,
         "after_root": "no_pwg_w04_rq1",
         "before_root": "no_pwg_w05",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w04_rq1 @ 2026-07-11T17:54:25Z"
       },
       {
         "from": "2026-07-11T18:28:43Z",
@@ -1703,7 +2078,10 @@
         "seconds": 335,
         "after_root": "no_pwg_w05",
         "before_root": "no_pwg_w05_rq1",
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w05 @ 2026-07-11T18:28:43Z"
       },
       {
         "from": "2026-07-11T18:34:18Z",
@@ -1711,24 +2089,39 @@
         "seconds": 352265,
         "after_root": "no_pwg_w05_rq1",
         "before_root": null,
-        "source": "ledger_gap"
+        "source": "ledger_gap",
+        "reason": "waiting_requeue",
+        "reason_source": "ledger_needs_requeue",
+        "reason_evidence": "ledger no_pwg_w05_rq1 @ 2026-07-11T18:34:18Z"
       }
-    ]
+    ],
+    "reasons": {
+      "measured": true,
+      "taxonomy": [
+        "human",
+        "weekly_cap",
+        "health_nogo",
+        "machine_off",
+        "waiting_requeue",
+        "unknown"
+      ],
+      "gap_count": 127,
+      "reason_counts": {
+        "unknown": 65,
+        "waiting_requeue": 62
+      },
+      "known_reason_count": 62,
+      "unknown_reason_count": 65,
+      "log_entries": 0,
+      "log_path": "idle_reason_log.jsonl",
+      "note": "Reasons from operator log or measured auto-rules only; historical silence stays unknown"
+    }
   },
   "calendar": {
-    "start": "2026-04-05",
-    "end": "2026-08-02",
+    "start": "2026-04-06",
+    "end": "2026-08-03",
     "days": 120,
     "cells": [
-      {
-        "date": "2026-04-05",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
       {
         "date": "2026-04-06",
         "cards": 0,
@@ -2799,6 +3192,15 @@
         "idle_hours": 0,
         "level": 0,
         "idle": false
+      },
+      {
+        "date": "2026-08-03",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       }
     ],
     "max_cards": 6033,
@@ -2810,6 +3212,76 @@
     "source": "RussianTranslation/CHANGELOG.md",
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md",
     "entries": [
+      {
+        "version": "1.141.0",
+        "date": "2026-08-03",
+        "bullets": [
+          {
+            "title": "Added",
+            "summary": "- **The canary manifest builder's output shape is now PINNED, and the real command is documented (H2245, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** [`canary_manifest_build_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot…"
+          },
+          {
+            "title": "Fixed",
+            "summary": "- **`/pwg-live-gate` Step 2 and `RUN_FREQ_MAX.md` §A2 named no runnable command (H2245, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** both marked the canary invocation \"illustrative\" with a placeholder `<canary_manifest.json>`, which is what made the canary leg one-session fol…"
+          },
+          {
+            "title": "Changed",
+            "summary": "- **LANG_PARITY: 36 entries re-derived on `window_selftest.py` (H2245), every verdict unchanged.** Grounds mechanical: a pure `+17`-line addition of one language-agnostic test, **0** language-keyed tokens in the diff, no target-language field touched, no `--lang` branch. Ledge…"
+          }
+        ]
+      },
+      {
+        "version": "1.139.0",
+        "date": "2026-08-03",
+        "bullets": [
+          {
+            "title": "Added",
+            "summary": "- **A committed builder for the canary manifest (H2174, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** new [`canary_manifest_build.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/canary_manifest_build.py) emits an executable manifes…"
+          },
+          {
+            "title": "Fixed",
+            "summary": "- **`canary_gate.py` could never emit GO for the one fixture it exists to judge (H2174, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** the literal `SAN-LOSS`/`UNMAPPED` marker scan read the **whole card**, including the free-text `notes`. The curated H994 control's portrait `no…"
+          }
+        ]
+      },
+      {
+        "version": "1.138.0",
+        "date": "2026-08-03",
+        "bullets": [
+          {
+            "title": "Added",
+            "summary": "- **H2175 Wave 1 — nonstop multilane runtime (02-08-2026, Fable 5 `claude-fable-5`, override dual-run for Opus 5):** the idle-time fix, built end-to-end behind flags. **Data home:** private [gasyoun/pwg-ru-data](https://github.com/gasyoun/pwg-ru-data) (R2.2) created with LFS r…"
+          },
+          {
+            "title": "Fixed",
+            "summary": "- **H2116 dual-run compare — independent re-verify of PR #964 offline batch (03-08-2026, Sonnet 5 `claude-sonnet-5`):** residual for the H2005/gloss_lang-§464/glyph-quarantine override lane executed by Grok 4.5. All 5 deliverables re-verified against source + selftests: `_ls_v…"
+          },
+          {
+            "title": "Changed",
+            "summary": "- **The probe ceiling is DERIVED at last — and the number was never the bug, the single-number *shape* was (H2138, #946, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** `probe_log.POLICIES` gains **`production_v3`** — `latency_ceil_ms` **80 000** plus a new **`api_ceil_ms` 45 00…"
+          }
+        ]
+      },
+      {
+        "version": "1.137.7",
+        "date": "2026-08-03",
+        "bullets": [
+          {
+            "title": "Fixed",
+            "summary": "- **OPT-1 EN promote parity — better-attempt + defect refuse + model-id (H2224, 02-08-2026, Grok 4.5 `grok-4.5`):** [`promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py) gains RU twins of B08 better-attempt-wins (co…"
+          }
+        ]
+      },
+      {
+        "version": "1.137.6",
+        "date": "2026-08-02",
+        "bullets": [
+          {
+            "title": "Added",
+            "summary": "- **PWG translation duplication → optimization inventory (02-08-2026, Grok 4.5 `grok-4.5`, H2222):** durable map of *intentional* vs *unjustified* duplication so the next session hunts **code/logic twins**, not edition restates or style doublets. Taxonomy A–D (lexicographic / …"
+          }
+        ]
+      },
       {
         "version": "1.137.3",
         "date": "2026-08-02",
@@ -2887,60 +3359,6 @@
             "summary": "- **`src/pilot/canary_gate.py` — the canary half of the live gate, as code (H2159, 02-08-2026, Fable 5 `claude-fable-5`):** H2025 audit gap G4 (F-B2/F-B3, the largest non-money gap). The `/pwg-live-gate` canary verdict (\"3/3 senses + zero SAN-LOSS/TNMASK\") existed only as skil…"
           }
         ]
-      },
-      {
-        "version": "1.130.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Added",
-            "summary": "- **The CLI child now spawns from a bare cwd, not the repo (02-08-2026, Opus 5 1M `claude-opus-5[1m]`, H2158/[#983](https://github.com/gasyoun/SanskritLexicography/issues/983)):** v1.127.0 measured the win (**−33 % cost, −30 % wall clock**) but made no code change. `proc_tree.…"
-          },
-          {
-            "title": "Fixed",
-            "summary": "- **The 300 s ceiling is validated for the heal lane and refuted for the whole-card lane (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** re-run `h1447-m50-2026-08-02b` after [v1.128.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.128.0), stopped externally af…"
-          }
-        ]
-      },
-      {
-        "version": "1.129.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Fixed",
-            "summary": "- **`--execute` now requires both ceilings (H2157, 02-08-2026, Fable 5 `claude-fable-5`):** H2025 audit gap G3 (F-B1) — `--max-calls` and `--cost-ceiling` both defaulted to `None`, `cost_ceiling_evaluable` explicitly passed when unset, and the supervisor skipped both checks on…"
-          }
-        ]
-      },
-      {
-        "version": "1.128.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Changed",
-            "summary": "- **The per-call ceiling relaxed 180 s → 300 s, by explicit human ruling (02-08-2026, Opus 5 1M `claude-opus-5[1m]`, [#983](https://github.com/gasyoun/SanskritLexicography/issues/983)):** the standing `\"NOTHING runs past 3 min (MG)\"` rule (R4/C-15, H189) was the direct cause o…"
-          }
-        ]
-      },
-      {
-        "version": "1.127.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Added",
-            "summary": "- **`src/pilot/cache_prefix_stability_probe.py` — settle WHY every call re-creates its cache (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** [#986](https://github.com/gasyoun/SanskritLexicography/pull/986) left two candidates — an unstable prefix across `claude -p` invocations,…"
-          }
-        ]
-      },
-      {
-        "version": "1.126.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Fixed",
-            "summary": "- **H2144 D4b bracket-normalize unlock for the 63-row PWG fullwidth-paren residual (02-08-2026, Sonnet 5 `claude-sonnet-5`):** extends [`d4_boundary_wrap.try_boundary_wrap`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/d4_boundary_wr…"
-          }
-        ]
       }
     ]
   },
@@ -2954,7 +3372,7 @@
       "translated": 40,
       "requeue_count": 29,
       "clean_key_count": 18,
-      "wall_clock_minutes": null,
+      "wall_clock_minutes": 6.162,
       "tokens": null,
       "gen_model": null
     },
@@ -2966,7 +3384,7 @@
       "translated": 11,
       "requeue_count": 4,
       "clean_key_count": 9,
-      "wall_clock_minutes": null,
+      "wall_clock_minutes": 11.083,
       "tokens": null,
       "gen_model": null
     },
@@ -2978,7 +3396,7 @@
       "translated": 1,
       "requeue_count": 1,
       "clean_key_count": 1,
-      "wall_clock_minutes": null,
+      "wall_clock_minutes": 3.338,
       "tokens": null,
       "gen_model": null
     },
@@ -2990,7 +3408,7 @@
       "translated": 31,
       "requeue_count": 17,
       "clean_key_count": 18,
-      "wall_clock_minutes": null,
+      "wall_clock_minutes": 4.07,
       "tokens": null,
       "gen_model": null
     },
@@ -3002,7 +3420,7 @@
       "translated": 10,
       "requeue_count": 5,
       "clean_key_count": 8,
-      "wall_clock_minutes": null,
+      "wall_clock_minutes": 3.496,
       "tokens": null,
       "gen_model": null
     },
@@ -3014,7 +3432,7 @@
       "translated": 37,
       "requeue_count": 25,
       "clean_key_count": 19,
-      "wall_clock_minutes": null,
+      "wall_clock_minutes": 5.744,
       "tokens": null,
       "gen_model": null
     },
@@ -3026,7 +3444,7 @@
       "translated": 17,
       "requeue_count": 7,
       "clean_key_count": 14,
-      "wall_clock_minutes": null,
+      "wall_clock_minutes": 4.531,
       "tokens": null,
       "gen_model": null
     },
@@ -3038,7 +3456,7 @@
       "translated": 5,
       "requeue_count": 1,
       "clean_key_count": 4,
-      "wall_clock_minutes": null,
+      "wall_clock_minutes": 139.56,
       "tokens": null,
       "gen_model": null
     },
@@ -3050,7 +3468,7 @@
       "translated": 46,
       "requeue_count": 55,
       "clean_key_count": 3,
-      "wall_clock_minutes": null,
+      "wall_clock_minutes": 14.078,
       "tokens": null,
       "gen_model": null
     },
@@ -3062,7 +3480,7 @@
       "translated": 45,
       "requeue_count": 51,
       "clean_key_count": 1,
-      "wall_clock_minutes": null,
+      "wall_clock_minutes": 9.736,
       "tokens": null,
       "gen_model": null
     },
@@ -3074,7 +3492,7 @@
       "translated": 40,
       "requeue_count": 41,
       "clean_key_count": 5,
-      "wall_clock_minutes": null,
+      "wall_clock_minutes": 3.52,
       "tokens": null,
       "gen_model": null
     },
@@ -3086,7 +3504,7 @@
       "translated": 37,
       "requeue_count": 25,
       "clean_key_count": 19,
-      "wall_clock_minutes": null,
+      "wall_clock_minutes": 5.744,
       "tokens": null,
       "gen_model": null
     }
@@ -3099,7 +3517,7 @@
     "translated": 37,
     "requeue_count": 25,
     "clean_key_count": 19,
-    "wall_clock_minutes": null,
+    "wall_clock_minutes": 5.744,
     "tokens": null,
     "gen_model": null
   }
