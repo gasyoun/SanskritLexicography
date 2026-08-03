@@ -1235,7 +1235,13 @@ def main(argv=None):
     ap.add_argument('--preflight-sha256', help='optional sealed preflight hash')
     ap.add_argument('--manifest-sha256',
                     help='required external seal for paid manifest v2 execution')
+    import data_root
+    data_root.add_arg(ap)
     args = ap.parse_args(argv)
+    if args.data_root:
+        # H2175 step 4: set the env seams before any path resolution so the worker and
+        # every child it spawns resolve TM/input/output/telemetry under the data root.
+        data_root.apply(args.data_root, ensure_dirs=True)
     # H1 (H1940): the manifest read/decode used to sit OUTSIDE this try, so an unreadable
     # file (OSError), undecodable bytes or invalid JSON escaped main() with NO status file
     # written at all -- the orchestrator saw a bare traceback instead of a deterministic

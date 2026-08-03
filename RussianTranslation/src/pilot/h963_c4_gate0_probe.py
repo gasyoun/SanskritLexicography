@@ -77,6 +77,7 @@ if str(HERE) not in sys.path:
     sys.path.insert(0, str(HERE))
 
 import max_account_orchestrator as mao  # noqa: E402
+import probe_log  # noqa: E402  — the one source of truth for probe ceilings (H2118/H2138)
 from headless_worker import claude_argv_prefix  # noqa: E402
 # Codex hardening (26-07-2026): a PRE-spend reservation ledger. `--max-calls`-style ceilings
 # were post-hoc -- they could only report an overshoot after the calls were paid for. The
@@ -123,6 +124,17 @@ CEILING_MS = mao.PROBE_LATENCY_CEILING_MS   # 65 000 since MG's 31-07-2026 rulin
 # was looking at. Deriving it means the gate can never again be more permissive than the
 # production path it is supposed to predict.
 STRICT_CEILING_MS = CEILING_MS   # == mao.PROBE_LATENCY_CEILING_MS; measured reading only
+# H2138 (#946): the SECOND, INDEPENDENT fail condition — route latency, judged on the
+# envelope's own `duration_api_ms` rather than on wall clock. Derived from the policy table,
+# never restated. `None` for pre-v3 policies, in which case the gate behaves exactly as before.
+#
+# Why a wall ceiling alone is not enough: wall = duration_api_ms + api_gap_ms, and the two move
+# independently (api/wall measured 0.25..0.72). The 02-08-2026 12:46 reading carried c4's
+# FASTEST api time ever (16 445 ms) and still failed the 65 000 ms wall gate on 49 846 ms of
+# in-CLI scaffolding — a healthy route refused a window. Conversely a reading can sit under the
+# wall ceiling while the ROUTE is degraded; that is the case this condition exists to catch, and
+# it is the one the wall number can never distinguish.
+API_CEILING_MS = probe_log.POLICIES[probe_log.CURRENT_POLICY].get('api_ceil_ms')
 WARMUP_IS_ADVISORY = True     # warm-up latency never fails the gate; errors on it still do
 CONN_ERR_CLASSES = {"process", "timeout"}
 
@@ -216,7 +228,8 @@ def readings_for(events_path, run_id):
     return rows
 
 
-def derive_fails(readings, strict_ceiling_ms=STRICT_CEILING_MS):
+def derive_fails(readings, strict_ceiling_ms=STRICT_CEILING_MS,
+                 api_ceiling_ms=API_CEILING_MS):
     """The gate policy as a pure function of THIS run's readings. Empty list == PASS.
 
     BOTH readings must still be present, `success`, and free of connection/process errors.
@@ -245,6 +258,13 @@ def derive_fails(readings, strict_ceiling_ms=STRICT_CEILING_MS):
         latency_gated = not (WARMUP_IS_ADVISORY and key == "warmup")
         if latency_gated and isinstance(ms, int) and ms >= strict_ceiling_ms:
             fails.append("%s latency %d ms >= %d ms ceiling" % (label, ms, strict_ceiling_ms))
+        # H2138: the ROUTE condition, independent of the wall one above. Same advisory rule
+        # for the warm-up. A reading that carries no `duration_api_ms` is judged on wall
+        # alone — absent instrumentation must never silently flip a verdict either way.
+        api_ms = r.get("duration_api_ms")
+        if latency_gated and api_ceiling_ms and isinstance(api_ms, int) and api_ms >= api_ceiling_ms:
+            fails.append("%s ROUTE latency %d ms >= %d ms api ceiling (duration_api_ms)"
+                         % (label, api_ms, api_ceiling_ms))
     return fails
 
 
@@ -386,9 +406,12 @@ def main(argv=None):
 
 
 # ---------------------------------------------------------------------------
-def _row(run_id, purpose, ms, cls="success"):
-    return {"event": "probe_call", "run_id": run_id, "purpose": purpose,
-            "elapsed_ms": ms, "classification": cls, "output_bytes": 1400}
+def _row(run_id, purpose, ms, cls="success", api_ms=None):
+    row = {"event": "probe_call", "run_id": run_id, "purpose": purpose,
+           "elapsed_ms": ms, "classification": cls, "output_bytes": 1400}
+    if api_ms is not None:
+        row["duration_api_ms"] = api_ms
+    return row
 
 
 def selftest():
@@ -433,8 +456,31 @@ def selftest():
 
         # 4. a genuine clean pair still passes; a slow MEASURED one still fails
         assert derive_fails([_row(new, "warmup", 17972), _row(new, "measured", 16621)]) == []
-        slow = derive_fails([_row(new, "warmup", 17972), _row(new, "measured", 80003)])
-        assert len(slow) == 1 and "80003 ms >= 65000 ms" in slow[0], slow
+        # The ceiling is DERIVED, never restated here — H2118's lesson, and H2138 moved it
+        # (65 000 -> 80 000) which is exactly how a hard-coded copy in this pin goes stale.
+        _over = STRICT_CEILING_MS + 3
+        slow = derive_fails([_row(new, "warmup", 17972), _row(new, "measured", _over)])
+        assert len(slow) == 1 and ("%d ms >= %d ms" % (_over, STRICT_CEILING_MS)) in slow[0], slow
+
+        # 4a-bis. H2138 (#946): the ROUTE condition is INDEPENDENT of the wall one. These
+        # cases are the reason it exists — a wall ceiling alone cannot express any of them.
+        if API_CEILING_MS:
+            wall_ok = STRICT_CEILING_MS - 1000
+            # (i) THE POINT: wall is fine, the ROUTE is degraded -> NO-GO. Unreachable by a
+            #     wall-only gate, which is exactly the blind spot H2138 measured.
+            route_bad = derive_fails([_row(new, "warmup", 17972),
+                                      _row(new, "measured", wall_ok, api_ms=API_CEILING_MS + 1)])
+            assert len(route_bad) == 1 and "ROUTE latency" in route_bad[0], route_bad
+            # (ii) a healthy route under both ceilings still passes
+            assert derive_fails([_row(new, "warmup", 17972),
+                                 _row(new, "measured", wall_ok, api_ms=API_CEILING_MS - 1)]) == []
+            # (iii) ABSENT instrumentation must not flip a verdict in either direction —
+            #       old rows carry no `duration_api_ms` and must stay judged on wall alone.
+            assert derive_fails([_row(new, "warmup", 17972),
+                                 _row(new, "measured", wall_ok)]) == []
+            # (iv) the warm-up stays advisory on the route condition too, not just on wall
+            assert derive_fails([_row(new, "warmup", 17972, api_ms=API_CEILING_MS + 1),
+                                 _row(new, "measured", wall_ok, api_ms=1000)]) == []
 
         # 4b. MG ruling 31-07-2026, pinned against the exact reading that motivated it:
         #     warm-up 131 737 ms + measured 31 623 ms is a PASS. Under the pre-ruling policy
