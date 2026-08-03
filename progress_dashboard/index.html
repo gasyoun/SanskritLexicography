@@ -555,8 +555,8 @@ function renderKitchen(k) {
       `<div class="panel"><b>Verb burn-down</b> ` +
       `${fmt(eta.verb_promoted)} / ${fmt(eta.verb_scope_dcs)} promoted ` +
       `(${eta.verb_pct != null ? eta.verb_pct + '%' : '—'}) · remaining <b>${fmt(eta.verb_remaining)}</b>` +
-      (eta.estimated_days_at_14d_card_rate != null
-        ? ` · <span class="est" title="${esc(eta.note || '')}">~${eta.estimated_days_at_14d_card_rate} days</span> at 14d card rate <span class="badge">estimate</span>`
+      (eta.estimated_days_at_roots_per_day_rate != null
+        ? ` · <span class="est" title="${esc(eta.note || '')}">~${eta.estimated_days_at_roots_per_day_rate} days</span> at ${fmt(eta.mean_roots_promoted_per_active_day)} roots/day <span class="badge">estimate</span>`
         : '') +
       `<div class="mut" style="margin-top:.3rem">${esc(eta.note || '')}</div></div>`;
   } else {
