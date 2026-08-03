@@ -71,6 +71,7 @@
   "kill_timeout_no_bisect": true,
   "presplit_group_cite_budget": 60,
   "presplit_group_sense_cap": 18,
+  "presplit_group_call_weight": 12000,
   "presplit_keys": [],
   "tm": "translation_memory.ru.json",
   "tm_auto": true,
