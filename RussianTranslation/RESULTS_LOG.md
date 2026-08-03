@@ -4,6 +4,90 @@ _Created: 09-07-2026 · Last updated: 03-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 03-08-2026 (H2174, #983) — the medium50 presplit route proven LIVE on w1: 2/3 cards, zero whole-card batches
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2174](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2174-Opus_RussianTranslation_medium50-presplit-live-run-after-health-pass_02.08.26.md).
+**12 paid calls, $5.53 recorded floor** (2 health probe + 1 canary + 9 window) of a 40-call lane budget.
+The H2160 presplit fix (v1.134.0), merged but undemonstrated for two sessions, is now demonstrated live.
+
+**Gate-0 health — first PASS under `production_v3`** (both ceilings, run `…2026-08-03T06:10:26Z-pid36728`):
+
+| purpose | wall `elapsed_ms` | `duration_api_ms` | `api_gap_ms` | class |
+|---|---:|---:|---:|---|
+| warmup | 87 065 | 29 443 | 57 622 | success |
+| **measured** | **46 598** | **8 134** | 38 464 | success |
+
+Measured clears **both** v3 numbers (46 598 < 80 000 wall; 8 134 < 45 000 route), 0 connection
+errors. Under the retired v2 65 000 ms wall ceiling this would still have been a **GO** — but the
+02-08 series shows that was a 2/8 lottery; v3 made it a gate. The warm-up (87 065 ms) exceeds the
+wall ceiling and is advisory-only, which the probe banner's "either reading >= 80000 ms => NO-GO"
+prose contradicts — prose bug, not behaviour (see the caveat below).
+
+**Canary — the first c4-bound canary GO in the project's history.** H2044 closed as
+`HEALTH_GO_CANARY_UNSPENT` because no canary manifest existed "and neither does anything that
+builds it". Both halves are now fixed: a committed builder
+([`canary_manifest_build.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/canary_manifest_build.py))
+and a gate that can actually emit GO (below). Fresh c4 run `h2174-canary-c4`, 1 call, 72 349 ms,
+3/3 senses, 0 `{Tn}` residue — receipt validates against `--only-profile c4`.
+
+**w1 — the acceptance run.** Regenerated first: `presplit_keys` `[]` -> `["nakzatra","sakft","sarvatra"]`,
+batches **3 -> 0**, `config_dir_fingerprint` unchanged. Manifest
+`05a1de55cc0883459c77613aa93fd50f9810146254dab24567553378b4f8fda9`.
+
+| # | detail | evaluable | wall_ms | `dur_ms` | `api_ms` | USD |
+|---:|---|---|---:|---:|---:|---:|
+| 1 | `heal:nakzatra#g1` | yes | 176 871 | 155 462 | 153 303 | 0.5118 |
+| 2 | `heal:nakzatra#g1.retry1` | **NO** | 300 038 | — | — | — |
+| 3 | `heal:nakzatra#g2` | **NO** | 300 024 | — | — | — |
+| 4 | `heal:sarvatra#g1` | yes | 196 948 | 179 029 | 177 395 | 0.6022 |
+| 5 | `heal:sarvatra#g2` | yes | 289 585 | 278 463 | 276 775 | 0.9197 |
+| 6 | `heal:sarvatra#g2.retry1` | yes | 48 478 | 34 334 | 32 779 | 0.3194 |
+| 7 | `heal:sakft#g1` | yes | 232 636 | 222 746 | 220 768 | 0.7012 |
+| 8 | `heal:sakft#g2` | yes | 192 295 | 178 315 | 175 968 | 0.5392 |
+| 9 | `heal:sakft#g2.retry1` | yes | 209 594 | 190 879 | 189 115 | 0.7051 |
+
+Recorded floor **$4.2986** (`cost_evaluable=False`), 1 202 236 subagent tokens, 2 of 9 unevaluable.
+The floor is a floor: each killed call was a real paid spawn contributing $0
+([#949](https://github.com/gasyoun/SanskritLexicography/issues/949)).
+
+| result | value |
+|---|---|
+| cards | 3 |
+| **non-null** | **2** (`sarvatra` 14 senses, `sakft` 19 senses) |
+| null | 1 (`nakzatra`) |
+| `presplit` | **3/3** |
+| whole-card batches | **0** |
+| `kill_timeouts` | 2 | 
+| `conn_errors` | 0 |
+
+**Every one of the 9 calls is a fragment group** (`heal:<key>#g<n>` over `_f0.._fN`) — the route
+the fix was written for, exercised end-to-end for the first time. Acceptance
+(">=1 non-null card through the presplit lane, zero whole-card batches") is **met**.
+
+**`nakzatra` still does not land, and presplit did not save it.** Its `#g1` succeeded at 176 871 ms
+but its retry and `#g2` both died at the 300 s kill ceiling. H2160 established the b0 "hang" was
+our own kill gate; this run shows fragmenting the card does not by itself bring the largest head
+(80 citation-units, 10 fragments) under the ceiling — the group budget re-inherits it. So
+[#983](https://github.com/gasyoun/SanskritLexicography/issues/983) is **not** closed by this run:
+the route holds for 2 of 3 keys, and the nakzatra residual is a group-budget question, not a
+presplit question.
+
+**Caveat found while gating, now fixed —
+[`canary_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/canary_gate.py)
+could never emit GO for its own fixture.** The literal-marker scan read the whole card, and the
+curated fixture's portrait `note` contains the string `SAN-LOSS` and is fed to the model verbatim
+as prompt input — so every real canary paraphrases it back into `notes` and trips the gate.
+Confirmed on two independent runs a week apart (H1447 22-07, H2011 02-08); the committed
+[`h1447_canary_wf_output.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1447/h1447_canary_wf_output.json)
+carries the marker today. It stayed invisible because the selftest's `clean_card` has no `notes`
+key at all. The scan is now scoped to translated content; a marker in `german`/`russian` is still
+a hard NO-GO, and the fixture's real detector (3/3 senses carrying Russian) was always intact and
+always passed. RED-verified pin in `bounded_staged_run_selftest.test_q3_execute_requires_canary_go_receipt_h2159`.
+This is the [H2160](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2160-Opus_RussianTranslation_whole-card-b0-hang-and-medium50-completion_02.08.26.md)
+"inert by construction" class inverted: always-fail instead of always-pass.
+
+Gates: `window_selftest` **201/201**, `bounded_staged_run_selftest` **PASS**.
+
 ## 03-08-2026 (H2138, #946) — the ceiling re-derived: `production_v3` = 80 000 wall + 45 000 route, and one number could never have worked
 
 Opus 5 1M (`claude-opus-5[1m]`), [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md).
