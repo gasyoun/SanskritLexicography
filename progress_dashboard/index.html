@@ -773,6 +773,14 @@ async function renderTrends() {
     if ((s = pick('verb_promoted')).length) line(el, s, 'Verb roots promoted');
     if ((s = pick('coverage_pct')).length) line(el, s, 'DCS coverage', '%');
   }
+  // B4 — fidelity/judge quality as a trend, not a single overwritten snapshot.
+  const qts = await j('quality_timeseries.json');
+  if (qts && qts.snapshots && qts.snapshots.length) {
+    const pick = key => qts.snapshots.filter(s => s[key] != null).map(s => [s.date, s[key]]);
+    let s;
+    if ((s = pick('fidelity_precision')).length) line(el, s.map(p => [p[0], p[1] * 100]), 'Fidelity precision', '%');
+    if ((s = pick('judge_coverage_pct')).length) line(el, s, 'Judge sample coverage', '%');
+  }
 }
 
 let lastPoll = null;
