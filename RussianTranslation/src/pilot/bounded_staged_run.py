@@ -73,6 +73,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import bounded_supervisor as bs                      # noqa: E402
+import data_root                                     # noqa: E402
 import economy_ledger as el                          # noqa: E402
 import max_account_orchestrator as mao               # noqa: E402
 from call_reservation import CallReservationLedger, run_ids  # noqa: E402
@@ -292,7 +293,8 @@ class RunContext:
                  max_drain_iterations=1000, only_profile=None, checkpoint=None,
                  stop_before_promote=False, call_reservation=None, max_calls=None,
                  drain_idle_poll_seconds=DRAIN_IDLE_POLL_SECONDS,
-                 drain_no_progress_passes=DRAIN_NO_PROGRESS_PASSES):
+                 drain_no_progress_passes=DRAIN_NO_PROGRESS_PASSES,
+                 auto_promote_until=None):
         self.db = db
         self.coord_dir = coord_dir
         self.coordinator = coordinator
@@ -307,6 +309,7 @@ class RunContext:
         self.only_profile = only_profile
         self.checkpoint = checkpoint
         self.stop_before_promote = stop_before_promote     # R10
+        self.auto_promote_until = auto_promote_until       # H2175 R2.1 (epoch seconds | None)
         self.call_reservation = call_reservation
         self.max_calls = max_calls
         self.drain_idle_poll_seconds = drain_idle_poll_seconds        # H7
@@ -413,6 +416,77 @@ def write_awaiting_review_checkpoint(ctx, window, wf_output_path, report):
     path = awaiting_review_path(ctx, window.get('id'))
     mao.atomic_write(path, json.dumps(record, ensure_ascii=False, indent=1) + '\n')
     return path, record
+
+
+def parse_auto_promote_until(value):
+    """H2175 R2.1: parse --auto-promote-until into epoch seconds (UTC).
+
+    Accepts a bare ISO date (YYYY-MM-DD, expires at the END of that UTC day — the trial
+    includes its last calendar day) or a full ISO datetime (naive = UTC). Raises
+    ValueError on anything else; the caller turns that into a parser error."""
+    import datetime as _dt
+    value = (value or '').strip()
+    try:
+        d = _dt.date.fromisoformat(value)
+        dt = _dt.datetime(d.year, d.month, d.day, 23, 59, 59, tzinfo=_dt.timezone.utc)
+        return dt.timestamp()
+    except ValueError:
+        pass
+    dt = _dt.datetime.fromisoformat(value.replace('Z', '+00:00'))
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=_dt.timezone.utc)
+    return dt.timestamp()
+
+
+def auto_promote_window(ctx, window, ar_path, ar_record):
+    """H2175 R2.1 (--auto-promote-until): mechanically promote ONE clean-audited window.
+
+    Runs ONLY after the audit wrapper wrote (and this function re-verified) the durable
+    hash-bound AWAITING_REVIEW checkpoint — the promotion record therefore binds the
+    execution manifest hash + audit-report hash exactly as the /pwg-window-close human
+    path does (the checkpoint's bound.hashes ARE that binding). coordinator promote-ready
+    re-validates promotability independently (PROMOTABLE_AUDIT_EXITS), so auto-promote
+    cannot bypass the promoter's own gate. Authority expires at ctx.auto_promote_until
+    (contract §5): an expired trial leaves the window AWAITING_REVIEW for a human and
+    says so, it never promotes silently.
+
+    Returns True when the window was promoted, False when authority had expired."""
+    import subprocess
+    import time
+    now = time.time()
+    if now > ctx.auto_promote_until:
+        print('auto-promote: authority EXPIRED (%s past --auto-promote-until); window %s '
+              'left AWAITING_REVIEW for human review (contract §5)'
+              % (int(now - ctx.auto_promote_until), window.get('id')), file=sys.stderr)
+        return False
+    if not verify_awaiting_review_checkpoint(ar_path):
+        raise SystemExit('auto-promote: AWAITING_REVIEW checkpoint failed verification, '
+                         'refusing to promote: %s' % ar_path)
+    lease_id = window.get('id')
+    promote = subprocess.run(
+        [sys.executable, os.path.abspath(ctx.coordinator), 'promote-ready',
+         '--gen-model-version', ctx.gen_model_version, '--lease-id', lease_id],
+        cwd=os.path.abspath(ctx.cwd), env=_coord_env(ctx),
+        text=True, encoding='utf-8', capture_output=True)
+    if promote.returncode and 'no ready leases to promote' not in (
+            promote.stderr + promote.stdout):
+        raise SystemExit('auto-promote: lease %s promotion failed: %s'
+                         % (lease_id, (promote.stderr or promote.stdout)[-1000:]))
+    record = {
+        'schema': 'pwg.auto_promotion.v1',
+        'promoted_at': int(now),
+        'auto_promote_until': int(ctx.auto_promote_until),
+        'run_id': ctx.run_id,
+        'lease_id': lease_id,
+        'gen_model_version': ctx.gen_model_version,
+        'awaiting_review_checkpoint': os.path.abspath(ar_path),
+        'payload_sha256': ar_record['payload_sha256'],
+        'bound_hashes': ar_record['payload']['bound']['hashes'],
+        'promote_stdout_tail': (promote.stdout or '')[-2000:],
+    }
+    mao.atomic_write(ar_path + '.PROMOTED.json',
+                     json.dumps(record, ensure_ascii=False, indent=1) + '\n')
+    return True
 
 
 def verify_awaiting_review_checkpoint(path):
@@ -632,11 +706,14 @@ def make_run_window(ctx):
             mao.cmd_record_done(argparse.Namespace(
                 db=ctx.db, coordinator=ctx.coordinator, coord_dir=ctx.coord_dir, cwd=ctx.cwd,
                 only_external_ids=scope))
-            if ctx.stop_before_promote:
+            if ctx.stop_before_promote or ctx.auto_promote_until is not None:
                 # R10: skip promotion -- the window is recorded + auditable but NOT promoted, so the
                 # store and TM stay untouched. The durable AWAITING_REVIEW terminal checkpoint is
                 # written by the audit wrapper ONLY after a clean audit (an audit-rejected/requeued
                 # window never becomes AWAITING_REVIEW).
+                # H2175 R2.1: --auto-promote-until takes the SAME no-promote drain path -- the
+                # promotion decision moves to the audit wrapper (promote-on-clean-audit), so an
+                # audit-rejected window is never promoted in-loop before its audit has run.
                 continue
             promote = subprocess.run(
                 [sys.executable, os.path.abspath(ctx.coordinator), 'promote-ready',
@@ -653,7 +730,7 @@ def make_run_window(ctx):
         # clean cards never reach the store while the audit still counts the window productive.
         # One unconditional scoped promote here rescues that lease; it is a harmless no-op ("no
         # ready leases to promote") whenever the in-loop promote already ran.
-        if not ctx.stop_before_promote:
+        if not ctx.stop_before_promote and ctx.auto_promote_until is None:
             rescue = subprocess.run(
                 [sys.executable, os.path.abspath(ctx.coordinator), 'promote-ready',
                  '--gen-model-version', ctx.gen_model_version, '--lease-id', lease_id],
@@ -719,7 +796,7 @@ def plan_view(plan, coord_state, ceilings, checkpoint_path, requested_lease_ids=
     not_prepared = [w['id'] for w in windows if w['id'] not in prepared]
     if ledger is None:
         try:
-            ledger = el.build_ledger(el.read_rows(el.FROZEN_LOG))
+            ledger = el.build_ledger(el.read_rows(el.frozen_log()))
         except (OSError, ValueError):
             ledger = {'aggregate': {}}
     cost_ok, cost_reason = cost_ceiling_evaluable(ceilings.get('cost_ceiling'), ledger)
@@ -830,8 +907,8 @@ def run(args):
         'empty_streak': args.empty_streak, 'max_accounts': args.max_accounts,
     }
     accounts = _validated_accounts(args.db)
-    ledger = el.build_ledger(el.read_rows(el.FROZEN_LOG)) if os.path.exists(el.FROZEN_LOG) else \
-        {'aggregate': {}}
+    ledger = el.build_ledger(el.read_rows(el.frozen_log())) if os.path.exists(el.frozen_log()) \
+        else {'aggregate': {}}
     view = plan_view(plan, coord_state, ceilings, args.checkpoint,
                      requested_lease_ids=args.lease_id, accounts=accounts, ledger=ledger,
                      cohort_width=cohort_width)
@@ -900,7 +977,8 @@ def run(args):
         claude_bin=args.claude_bin, timeout=args.timeout,
         gen_model_version=args.gen_model_version, only_profile=args.only_profile,
         checkpoint=args.checkpoint, stop_before_promote=args.stop_before_promote,
-        call_reservation=reservation_path, max_calls=args.max_calls)
+        call_reservation=reservation_path, max_calls=args.max_calls,
+        auto_promote_until=getattr(args, 'auto_promote_until', None))
     run_window = make_run_window(ctx)
 
     def audit(wf_output, window):
@@ -908,8 +986,16 @@ def run(args):
         # R10: a durable, hash-bound AWAITING_REVIEW terminal checkpoint is written ONLY after a
         # clean audit (never for a rejected/requeued window). Promotion was already skipped in
         # run_window, so the store and TM are untouched.
-        if ctx.stop_before_promote and _audit_is_clean(report):
-            write_awaiting_review_checkpoint(ctx, window, wf_output, report)
+        # H2175 R2.1: --auto-promote-until writes the SAME checkpoint first, then promotes
+        # mechanically through auto_promote_window (verify -> promote-ready -> promotion
+        # record binding manifest + audit hashes). An audit-rejected window never reaches
+        # either path.
+        if (ctx.stop_before_promote or ctx.auto_promote_until is not None) \
+                and _audit_is_clean(report):
+            ar_path, ar_record = write_awaiting_review_checkpoint(
+                ctx, window, wf_output, report)
+            if ctx.auto_promote_until is not None:
+                auto_promote_window(ctx, window, ar_path, ar_record)
         return report
 
     if args.resume:
@@ -942,7 +1028,11 @@ def run(args):
 def build_parser():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--plan', required=True, help='the pwg.no_pwg_scale_plan.v1 plan JSON')
-    ap.add_argument('--coord-dir', required=True, help='coordinator dir holding state.json')
+    # H2175 step 4: --coord-dir is now derivable from --data-root (<root>/manifests/
+    # coordinator); main() still refuses when NEITHER is given, so the old contract holds.
+    ap.add_argument('--coord-dir', help='coordinator dir holding state.json (required '
+                                        'unless derived from --data-root)')
+    data_root.add_arg(ap)
     ap.add_argument('--coordinator', help='path to coordinator.py (required for --execute)')
     ap.add_argument('--cwd', help='working dir for record/promote subprocesses (--execute)')
     ap.add_argument('--db', default='max_orchestrator.sqlite')
@@ -968,6 +1058,16 @@ def build_parser():
                          'store or rebuild TM; write a durable hash-bound AWAITING_REVIEW terminal '
                          'checkpoint after a clean audit for human/Opus review (the bounded c4 '
                          'ladder requires this).')
+    ap.add_argument('--auto-promote-until', default=None,
+                    help='H2175 R2.1 (auto-promote TRIAL): promote-on-clean-audit. A window '
+                         'whose audit is clean gets the same durable AWAITING_REVIEW '
+                         'checkpoint as --stop-before-promote and is then promoted '
+                         'MECHANICALLY, with a pwg.auto_promotion.v1 record binding the '
+                         'manifest + audit hashes. Takes an ISO date (expires end of that '
+                         'UTC day) or ISO datetime; a value in the past REFUSES to start '
+                         'and mid-run expiry stops promoting (trial authority expires — '
+                         'autonomy contract §5). Mutually exclusive with '
+                         '--stop-before-promote.')
     # Ceilings. H2157 (H2025 G3 / F-B1): --max-calls and --cost-ceiling are MANDATORY on
     # --execute — the fail-closed machinery below is excellent and was completely inert
     # unless the operator remembered two flags, so a billed run had no ceiling at all by
@@ -1013,8 +1113,42 @@ def build_parser():
 def main(argv=None):
     ap = build_parser()
     args = ap.parse_args(argv)
+    # H2175 step 4: apply the data root BEFORE any path resolution (store_path caches
+    # per-process; economy_ledger.frozen_log() and the coordinator/audit env seams all
+    # read os.environ lazily, and _coord_env() forwards the environment to every child).
+    # Flags the operator passed explicitly keep winning over derived defaults.
+    if args.data_root:
+        data_root.apply(args.data_root, ensure_dirs=True)
+        if not args.coord_dir:
+            args.coord_dir = data_root.resolve(args.data_root, 'coord_dir')
+            os.makedirs(args.coord_dir, exist_ok=True)
+        if args.db == ap.get_default('db'):
+            args.db = os.path.join(
+                data_root.resolve(args.data_root, 'manifests_dir'), args.db)
+        if args.checkpoint == ap.get_default('checkpoint'):
+            args.checkpoint = os.path.join(
+                data_root.resolve(args.data_root, 'manifests_dir'), args.checkpoint)
+    if not args.coord_dir:
+        ap.error('--coord-dir is required (pass it directly or derive it via --data-root)')
     if args.execute and not (args.coordinator and args.cwd and args.events):
         ap.error('--execute requires --coordinator, --cwd and --events')
+    # H2175 R2.1: normalize + fail-closed validate the auto-promote trial authority.
+    if args.auto_promote_until is not None:
+        import time as _time
+        if args.stop_before_promote:
+            ap.error('--auto-promote-until and --stop-before-promote are mutually '
+                     'exclusive modes (auto-promote already drains without promoting '
+                     'in-loop and decides per clean audit)')
+        try:
+            args.auto_promote_until = parse_auto_promote_until(args.auto_promote_until)
+        except ValueError:
+            ap.error('--auto-promote-until takes an ISO date (YYYY-MM-DD) or ISO '
+                     'datetime, got %r' % args.auto_promote_until)
+        if _time.time() > args.auto_promote_until:
+            ap.error('--auto-promote-until is in the PAST — the auto-promote trial '
+                     'authority has expired (autonomy contract §5). Rerun with '
+                     '--stop-before-promote for human review, or renew the trial '
+                     'explicitly with a future date.')
     # H2157 (H2025 G3 / F-B1): a PAID run must be bounded by default. Both ceilings are
     # required on --execute; --allow-unbounded is the explicit escape hatch. Dry-run and
     # offline paths are unaffected.
