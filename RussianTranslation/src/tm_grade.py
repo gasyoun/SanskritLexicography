@@ -73,7 +73,10 @@ CONSENSUS_MIN_AGREE = 0.50  # ... and >=50% of them agreeing on the modal render
 # H215 Slice 4: oral units start from a lower base. The composite score carries a
 # fixed penalty for the higher noise floor of live interpretation (translationese,
 # paraphrase, hesitation), and build_tmx.oral_cap additionally forbids A unless a
-# human adjudicated it. Versioned constant so the policy is auditable.
+# human adjudicated it OR >=1 distinct WRITTEN work agrees on the same rendering
+# (written_agree -- H2193, MG ruling 19-07-2026; consensus with a written source
+# promotes, oral-alone still tops out at B). Versioned constant so the policy is
+# auditable.
 ORAL_PENALTY = 0.15
 
 CYR_TOKEN = re.compile(r'[Ѐ-ӿ]+')
@@ -230,12 +233,15 @@ def seg_key(rec):
 
 
 def build_consensus(path, limit=None):
-    """One pass over the corpus: seg_key -> {work: normalized_ru}. Distinct works
-    only (a work repeating a gloss is not corroboration)."""
+    """One pass over the corpus: seg_key -> {work: (normalized_ru, modality)}.
+    Distinct works only (a work repeating a gloss is not corroboration). Modality
+    rides along so consensus_signal can tell WRITTEN corroboration from an oral
+    echo (H2193 -- the oral->A promotion needs a written agreeing work)."""
     idx = collections.defaultdict(dict)
     n = 0
     for rec in build_tmx.iter_units(path):
-        idx[seg_key(rec)][rec.get('work')] = norm_ru(rec.get('ru'))
+        idx[seg_key(rec)][rec.get('work')] = (norm_ru(rec.get('ru')),
+                                              rec.get('modality') or 'written')
         n += 1
         if limit and n >= limit:
             break
@@ -243,17 +249,24 @@ def build_consensus(path, limit=None):
 
 
 def consensus_signal(rec, idx):
-    """Return (n_refs, consensus_score in [0,1]). n_refs = distinct works giving a
-    rendering for this (passage, key); consensus_score = share agreeing with the
-    modal normalized rendering (0 when only one work has it)."""
+    """Return (n_refs, consensus_score in [0,1], written_agree). n_refs = distinct
+    works giving a rendering for this (passage, key); consensus_score = share
+    agreeing with the modal normalized rendering (0 when only one work has it).
+    written_agree (H2193, MG ruling 19-07-2026): True iff a DIFFERENT work of
+    written modality gives this unit's own normalized rendering -- the signal that
+    lifts the oral A-cap in build_tmx.oral_cap (oral-alone agreement never does)."""
     works = idx.get(seg_key(rec))
     if not works:
-        return 1, 0.0
+        return 1, 0.0, False
+    own_ru = norm_ru(rec.get('ru'))
+    own_work = rec.get('work')
+    written_agree = any(w != own_work and mod != 'oral' and ru == own_ru
+                        for w, (ru, mod) in works.items())
     n = len(works)
     if n < 2:
-        return n, 0.0
-    modal = collections.Counter(works.values()).most_common(1)[0][1]
-    return n, modal / n
+        return n, 0.0, written_agree
+    modal = collections.Counter(ru for ru, _ in works.values()).most_common(1)[0][1]
+    return n, modal / n, written_agree
 
 
 # ---------------------------------------------------------------- composite grade
@@ -264,7 +277,7 @@ def grade_unit(rec, weights, qe_fn, consensus_idx, adjudicated=False,
     # Slice 3: a real tm_align.py cross-check score (tuid -> confidence) supersedes
     # the Slice-2 token-count proxy when supplied via `grade --align <sidecar>`.
     align = align_proxy(rec) if align_override is None else align_override
-    n_refs, cons = consensus_signal(rec, consensus_idx)
+    n_refs, cons, written_agree = consensus_signal(rec, consensus_idx)
     modality = rec.get('modality') or 'written'
     score = (W['qe'] * qe + W['source'] * src
              + W['consensus'] * cons + W['align'] * align)
@@ -279,13 +292,16 @@ def grade_unit(rec, weights, qe_fn, consensus_idx, adjudicated=False,
         grade = 'B'
     else:
         grade = 'C'
-    # oral never reaches A on automatic signals alone -- only human adjudication.
-    grade = build_tmx.oral_cap(grade, modality, adjudicated=adjudicated)
+    # oral A-gate (H2193): human adjudication OR >=1 agreeing written work lifts
+    # the cap; oral-alone (even oral-only consensus) still tops out at B.
+    grade = build_tmx.oral_cap(grade, modality, adjudicated=adjudicated,
+                               written_agree=written_agree)
     return {'grade': grade, 'score': round(score, 4),
             'qe': round(qe, 4), 'source_weight': round(src, 4),
             'alignment_confidence': round(align, 4),
             'align_source': 'proxy' if align_override is None else 'tm_align',
-            'consensus': round(cons, 4), 'n_refs': n_refs, 'modality': modality}
+            'consensus': round(cons, 4), 'n_refs': n_refs, 'modality': modality,
+            'written_agree': written_agree}
 
 
 # ------------------------------------------------------------------------- cmds
@@ -569,10 +585,20 @@ def selftest():
         {'passage': '3.1', 'slp1': 'yoga', 'ru': 'йога', 'sa': 'y', 'work': 'a'},
         {'passage': '3.1', 'slp1': 'yoga', 'ru': 'усилие', 'sa': 'y', 'work': 'b'},
     ])
-    n, c = consensus_signal({'passage': '2.47', 'slp1': 'karman'}, idx)
+    n, c, _ = consensus_signal({'passage': '2.47', 'slp1': 'karman'}, idx)
     assert n == 2 and c == 1.0, 'agreeing works -> full consensus, got %s/%s' % (n, c)
-    n2, c2 = consensus_signal({'passage': '3.1', 'slp1': 'yoga'}, idx)
+    n2, c2, _ = consensus_signal({'passage': '3.1', 'slp1': 'yoga'}, idx)
     assert n2 == 2 and c2 == 0.5, 'split works -> 0.5 consensus, got %s/%s' % (n2, c2)
+    # written_agree: a distinct written work with the same normalized rendering
+    _, _, wa = consensus_signal({'passage': '2.47', 'slp1': 'karman',
+                                 'ru': 'действие', 'work': 'oral-talk'}, idx)
+    assert wa, 'distinct written work agreeing -> written_agree True'
+    _, _, wa2 = consensus_signal({'passage': '2.47', 'slp1': 'karman',
+                                  'ru': 'поступок', 'work': 'oral-talk'}, idx)
+    assert not wa2, 'no written work with this rendering -> written_agree False'
+    _, _, wa3 = consensus_signal({'passage': '2.47', 'slp1': 'karman',
+                                  'ru': 'действие', 'work': 'a'}, idx)
+    assert wa3, 'the OTHER written work still corroborates work a'
 
     # grade: corroborated clean gloss reaches A; identical unit w/o consensus is B;
     # a defective (echo) unit is C.
@@ -587,16 +613,33 @@ def selftest():
     gAdj = grade_unit(runon, FIXTURE_WEIGHTS, qe_fn, {}, adjudicated=True)
     assert gAdj['grade'] == 'A', 'adjudicated unit should be A'
 
-    # H215 Slice 4: an oral unit gets the lowered base -- same clean corroborated
-    # gloss that reaches A when written is capped at B when oral, and its composite
-    # carries the penalty; human adjudication still lifts it to A.
+    # H215 Slice 4 + H2193 (MG ruling 19-07-2026): an oral unit keeps the lowered
+    # base (composite penalty), but the A-cap now has TWO lifts: human adjudication,
+    # or >=1 agreeing WRITTEN work (consensus with a written source promotes).
     oral = dict(clean, modality='oral')
     gOral = grade_unit(oral, FIXTURE_WEIGHTS, qe_fn, idx)
-    assert gA['grade'] == 'A' and gOral['grade'] == 'B', \
-        'oral corroborated gloss must cap at B, got %s (written was %s)' % (gOral['grade'], gA['grade'])
+    assert gOral['grade'] == 'A' and gOral['written_agree'], \
+        'oral agreeing with a written work must promote to A, got %s' % gOral
     assert gOral['score'] < gA['score'], 'oral penalty must lower the composite'
     assert gOral['modality'] == 'oral'
-    gOralAdj = grade_unit(oral, FIXTURE_WEIGHTS, qe_fn, idx, adjudicated=True)
+    # oral-only consensus: corroborated, composite over the A floor, but NO written
+    # work agrees -> the cap must hold at B (the discriminating H2193 case).
+    idx_oral = build_consensus_from_records([
+        {'passage': '5.5', 'slp1': 'dharma', 'ru': 'закон', 'sa': 'd',
+         'work': 'talk-a', 'modality': 'oral'},
+        {'passage': '5.5', 'slp1': 'dharma', 'ru': 'закон', 'sa': 'd',
+         'work': 'talk-b', 'modality': 'oral'},
+    ])
+    oral2 = {'slp1': 'dharma', 'sa': 'dharma', 'ru': 'закон', 'kind': 'translation',
+             'work': 'talk-c', 'passage': '5.5', 'modality': 'oral'}
+    gOral2 = grade_unit(oral2, FIXTURE_WEIGHTS, qe_fn, idx_oral)
+    assert gOral2['score'] >= T_A and gOral2['consensus'] == 1.0, gOral2
+    assert gOral2['grade'] == 'B' and not gOral2['written_agree'], \
+        'oral-only consensus must stay capped at B, got %s' % gOral2
+    # no consensus at all: oral stays below the A gate; adjudication still lifts.
+    gOralAlone = grade_unit(oral, FIXTURE_WEIGHTS, qe_fn, {})
+    assert gOralAlone['grade'] == 'B', 'uncorroborated oral must not reach A'
+    gOralAdj = grade_unit(oral, FIXTURE_WEIGHTS, qe_fn, {}, adjudicated=True)
     assert gOralAdj['grade'] == 'A', 'human-adjudicated oral unit may reach A'
 
     # H1457 A2: Spearman rho -- perfect monotone relation -> 1.0; a scrambled
@@ -608,14 +651,15 @@ def selftest():
     assert _spearman_rho([1, 1, 1], [1, 2, 3]) != _spearman_rho([1, 1, 1], [1, 2, 3])  # NaN != NaN
 
     print('tm_grade selftest OK -- qe ordering, source override, consensus, grade gates, '
-          'oral cap, Spearman rho')
+          'oral cap + written-agree promotion (H2193), Spearman rho')
     return 0
 
 
 def build_consensus_from_records(recs):
     idx = collections.defaultdict(dict)
     for r in recs:
-        idx[seg_key(r)][r.get('work')] = norm_ru(r.get('ru'))
+        idx[seg_key(r)][r.get('work')] = (norm_ru(r.get('ru')),
+                                          r.get('modality') or 'written')
     return idx
 
 
