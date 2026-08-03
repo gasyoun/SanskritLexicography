@@ -10,6 +10,11 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added
+- **The R4.1 halt rule finally has a trigger, and auto-promote now fails CLOSED without it (H2264, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** H2175 built both halves of ruling R4.1 — [`spot_check_daily.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/spot_check_daily.py) samples 10% of a day's auto-promoted cards, [`lane_guard.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/lane_guard.py) freezes and reverts the lane on ≥2 sev-3 or any SAN-LOSS — but wired **neither to any trigger**: H2246's dual-run compare found both invoked only as `--selftest` in CI, so the sole compensating control that makes the auto-promote trial safe (ARCHITECTURE §3) could never fire. New [`lane_spotcheck_tick.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/lane_spotcheck_tick.py) is that trigger as **one** definition all three lanes call, so PC / prod / routine cannot drift into three different halt rules. Its exit codes are the alerting contract: `0` clean · `2` lane FROZEN · **`1` the spot-check could not run — INCONCLUSIVE, never "clean"**, because a dead surveillance job must not read as a pass. Reproduces the VERIFICATION acceptance row directly (inject 2 synthetic sev-3 → lane frozen, sibling lane untouched).
+- **The ordering is now mechanical, not a checklist line a human can skip (H2264):** with `--auto-promote-until` set, `nonstop_scheduler.tick()` **refuses every window** while no spotcheck report younger than 48h exists, recording the skip as `no_fresh_spotcheck_auto_promote_refused`. A lane running without auto-promote is unaffected — nothing promotes, so there is nothing to survey. 48h not 24h: one missed daily run is tolerated, two is not.
+- **Lane wiring (H2264):** `pc_spotcheck_daily.cmd` + a registered (deliberately **disabled**) `PWG-RU spotcheck pc lane` Task Scheduler job, and installable `systemd/pwg-spotcheck.{service,timer}` units for the prod lane under fence R4.3c. Both run the deterministic half only — **zero paid calls** — so they are safe to leave enabled permanently; `--judge-cmd` gets added once E2 picks a judge.
+
 ## [1.141.7] - 2026-08-03
 
 ### Changed
