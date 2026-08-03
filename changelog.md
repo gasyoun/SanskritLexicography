@@ -13,6 +13,8 @@ at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentiona
 not an error.
 
 ## [Unreleased]
+
+## [1.141.10] - 2026-08-03
 ### Fixed
 - **H2233 override (Sonnet 5 `claude-sonnet-5`, 03-08-2026):** progress-kitchen `eta_verb()` (`progress_dashboard/kitchen_slices.py`) divided remaining DCS-attested verb roots by mean cards/active-day — an apples/oranges rate (roots numerator, cards denominator) that produced a nonsense ~0.8-day estimate for 701 remaining roots and an explicit in-code "units differ, not a schedule" caveat. Replaced with a same-unit rate: mean verb roots promoted per active day, derived from `pwg_ru_translated.jsonl` provenance timestamps of roots already in `verb_batch_worklist.json`'s `done_promoted` list. New fields `mean_roots_promoted_per_active_day` / `roots_promoted_active_days_sampled` / `estimated_days_at_roots_per_day_rate` replace the old cards-rate fields; `index.html`'s ETA strip updated to match. [PR #1085](https://github.com/gasyoun/SanskritLexicography/pull/1085). Dual-run residual for the intended Grok 4.5 executor: [H2258](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2258-Grok_SanskritLexicography_h2233-dual-run-compare_03.08.26.md).
 
