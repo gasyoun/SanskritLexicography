@@ -260,42 +260,68 @@ def tick(cfg, runners):
     if until > started:
         return done('skip', 'paused_until_reset', paused_until=int(until),
                     pause_reason=why)
-    # 3. live gate with the R5.1 fallback roster
-    profile = None
-    gate_trail = []
-    for slot in cfg.get('roster') or DEFAULT_ROSTER:
-        go, detail = runners.gate_probe(slot)
-        gate_trail.append({'profile': slot, 'go': go})
-        if go:
-            profile = slot
-            break
-    record['gate_trail'] = gate_trail
-    if not profile:
-        return done('skip', 'live_gate_no_go_all_roster')
-    record['profile'] = profile
-    # 4. canary receipt (H2159 — consumed mechanically by the bounded run too)
-    receipt = runners.canary_receipt(profile)
-    if not receipt:
-        return done('skip', 'no_fresh_canary_receipt')
-    # 5. weekly cost ceiling (R3.2: the week is the only wall)
-    ceiling = float(cfg.get('weekly_cost_ceiling') or 0)
-    spent = week_spend(ledger_path, record['week'])
-    remaining = ceiling - spent
-    if remaining <= 0:
-        return done('skip', 'weekly_cost_ceiling_exhausted', week_spent_usd=spent)
-    # 6. the bounded window
-    code, cost, rows = runners.bounded_run(profile, receipt, remaining)
-    record['window_exit'] = code
-    record['window_cost_usd'] = cost
-    # 7. §270 quota-hang classification -> pause until the next weekly reset
-    if code != 0 and classify_quota_hang(rows):
-        reset = next_weekly_reset(started, cfg.get('reset_day', 'MON'),
-                                  cfg.get('reset_hour', 0))
-        write_pause(cfg['gatelogs_dir'], lane, reset, 'quota_hang (§270 signature)')
-        return done('window_failed', 'quota_hang_pause_written',
-                    paused_until=int(reset))
-    return done('window' if code == 0 else 'window_failed',
-                None if code == 0 else 'bounded_run_exit_%d' % code)
+    # Steps 3-7 all spawn subprocesses with timeouts. H2246: a raised runner exception
+    # (subprocess.TimeoutExpired above all — the EXPECTED outcome of the very CLI-hang
+    # class this module exists to detect, and of the 4h window timeout) used to escape
+    # tick() before any append_tick(), so the ledger recorded NOTHING and the tick became
+    # exactly the "unexplained idle tick" the module's contract calls a bug by
+    # construction. The ≥95% acceptance metric is computed from this ledger, so an
+    # unrecorded crash silently inflated it. Record, then let the verdict speak.
+    try:
+        # 3. live gate with the R5.1 fallback roster
+        profile = None
+        gate_trail = []
+        for slot in cfg.get('roster') or DEFAULT_ROSTER:
+            go, detail = runners.gate_probe(slot)
+            gate_trail.append({'profile': slot, 'go': go})
+            if go:
+                profile = slot
+                break
+        record['gate_trail'] = gate_trail
+        if not profile:
+            return done('skip', 'live_gate_no_go_all_roster')
+        record['profile'] = profile
+        # 4. canary receipt (H2159 — consumed mechanically by the bounded run too)
+        receipt = runners.canary_receipt(profile)
+        if not receipt:
+            return done('skip', 'no_fresh_canary_receipt')
+        # 5. weekly cost ceiling (R3.2: the week is the only wall)
+        ceiling = float(cfg.get('weekly_cost_ceiling') or 0)
+        spent = week_spend(ledger_path, record['week'])
+        remaining = ceiling - spent
+        if remaining <= 0:
+            return done('skip', 'weekly_cost_ceiling_exhausted', week_spent_usd=spent)
+        # 6. the bounded window
+        code, cost, rows = runners.bounded_run(profile, receipt, remaining)
+        record['window_exit'] = code
+        record['window_cost_usd'] = cost
+        # 7. §270 quota-hang classification -> pause until the next weekly reset
+        if code != 0 and classify_quota_hang(rows):
+            reset = next_weekly_reset(started, cfg.get('reset_day', 'MON'),
+                                      cfg.get('reset_hour', 0))
+            write_pause(cfg['gatelogs_dir'], lane, reset, 'quota_hang (§270 signature)')
+            return done('window_failed', 'quota_hang_pause_written',
+                        paused_until=int(reset))
+        return done('window' if code == 0 else 'window_failed',
+                    None if code == 0 else 'bounded_run_exit_%d' % code)
+    except subprocess.TimeoutExpired as exc:
+        # A timed-out probe/canary/window is a RECORDED failure, never a silent gap.
+        return done('window_failed', 'runner_timeout',
+                    failed_step=_step_of(exc), timeout_s=getattr(exc, 'timeout', None))
+    except Exception as exc:                      # noqa: BLE001 — record, never vanish
+        return done('window_failed', 'runner_exception',
+                    exception='%s: %s' % (type(exc).__name__, str(exc)[:300]))
+
+
+def _step_of(exc):
+    """Best-effort name of the tool whose subprocess timed out (for the tick record)."""
+    cmd = getattr(exc, 'cmd', None)
+    text = ' '.join(cmd) if isinstance(cmd, (list, tuple)) else str(cmd or '')
+    for needle, step in (('h963_c4_gate0_probe', 'live_gate'),
+                         ('bounded_staged_run', 'bounded_window')):
+        if needle in text:
+            return step
+    return 'canary_or_unknown'
 
 
 def build_cfg(args):
@@ -433,17 +459,43 @@ def selftest():
         rec8 = tick(cfg, _FakeRunners())
         assert rec8['reason'].startswith('lane_frozen')
 
+        os.remove(lane_guard.freeze_path(cfg['gatelogs_dir'], 'pc'))   # unfreeze for 8b/8c
+
+        # (8b) H2246: a runner that TIMES OUT is recorded, not vanished. This is the
+        # expected shape of the §270 CLI hang and of the 4h window timeout; before the
+        # fix the exception escaped tick() with no ledger row at all, so the crash
+        # counted as an unexplained idle tick AND silently inflated the ≥95% metric.
+        class _TimeoutRunners(_FakeRunners):
+            def bounded_run(self, profile, receipt, remaining):
+                raise subprocess.TimeoutExpired(
+                    cmd=[sys.executable, 'bounded_staged_run.py'], timeout=14400)
+
+        rec8b = tick(cfg, _TimeoutRunners())
+        assert rec8b['verdict'] == 'window_failed', rec8b
+        assert rec8b['reason'] == 'runner_timeout' and \
+            rec8b['failed_step'] == 'bounded_window' and rec8b['timeout_s'] == 14400, rec8b
+
+        # (8c) any other runner exception is likewise recorded, never silent
+        class _BoomRunners(_FakeRunners):
+            def gate_probe(self, profile):
+                raise OSError('probe binary missing')
+
+        rec8c = tick(cfg, _BoomRunners())
+        assert rec8c['verdict'] == 'window_failed' and \
+            rec8c['reason'] == 'runner_exception' and \
+            rec8c['exception'].startswith('OSError'), rec8c
+
         # (9) EVERY branch above appended a tick record (the ≥95% metric source)
         rows = [json.loads(l) for l in open(ledger, encoding='utf-8')]
-        assert len(rows) == 8, len(rows)
+        assert len(rows) == 10, len(rows)
         assert all(r0.get('verdict') for r0 in rows)
 
         # (10) next_weekly_reset is strictly ahead and lands on the right weekday
         nr = next_weekly_reset(now_epoch(), 'MON', 0)
         assert nr > now_epoch() and time.gmtime(nr).tm_wday == 0
     print('nonstop_scheduler selftest: PASS (tick state machine, R5.1 roster, weekly '
-          'ceiling, canary + freeze + pause gates, §270 hang vs latency, every branch '
-          'recorded)')
+          'ceiling, canary + freeze + pause gates, §270 hang vs latency, runner '
+          'timeout/exception recorded (H2246), every branch recorded)')
     return 0
 
 

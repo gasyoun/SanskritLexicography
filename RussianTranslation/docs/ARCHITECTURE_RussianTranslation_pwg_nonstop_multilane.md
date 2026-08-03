@@ -1,6 +1,6 @@
 # ARCHITECTURE — PWG→RU nonstop multilane system
 
-_Created: 02-08-2026 · Last updated: 02-08-2026_
+_Created: 02-08-2026 · Last updated: 03-08-2026_
 
 Index: [PLAN_RussianTranslation_pwg_nonstop_multilane_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_pwg_nonstop_multilane_2026.md)
 
@@ -15,6 +15,7 @@ pwg-ru-data (private repo + LFS)          SanskritLexicography (code, unchanged 
 ├─ telemetry/ per-call usage ledger rows (cache fields split)
 ├─ gatelogs/  live-gate + canary receipts
 ├─ parked/    park-and-skip queue (R4.2)
+├─ corpus/    corpus-gate dictionaries (wave-1 layout addition; ~592 MB, LFS)
 └─ .github/workflows/gates.yml  (CI re-runs deterministic gates on PRs)
 
 Lane A: PC (Windows)     Lane B: samskrte.ru      Lane C: Anthropic routine
