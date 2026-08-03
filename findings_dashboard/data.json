@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-08-03T10:05:58Z",
+ "generated_at": "2026-08-03T12:29:54Z",
  "stale_days_threshold": 180,
  "counts": {
-  "total": 170,
+  "total": 171,
   "by_importance": {
    "2": 93,
    "1": 25,
-   "3": 52
+   "3": 53
   },
   "stale": 0
  },
@@ -1540,6 +1540,15 @@
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#516-a-later-prs-stale-base-merge-can-silently-revert-an-earlier-prs-ledger-doc-only-re-stamp-while-leaving-that-earlier-prs-code-change-fully-intact"
+  },
+  {
+   "n": 517,
+   "title": "An EMPTY spawn directory is not a context-free spawn directory — verify the ancestry, not the directory",
+   "section": "External platforms & services",
+   "importance": 3,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#517-an-empty-spawn-directory-is-not-a-context-free-spawn-directory--verify-the-ancestry-not-the-directory"
   }
  ]
 }
