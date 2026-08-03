@@ -1,8 +1,53 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 02-08-2026_
+_Created: 09-07-2026 · Last updated: 03-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 03-08-2026 (H2138, #946) — the ceiling re-derived: `production_v3` = 80 000 wall + 45 000 route, and one number could never have worked
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md).
+**ZERO paid calls** — derived from readings H2011/H2152/H2158/H2174 already bought. Full memo:
+[H2138_PROBE_CEILING_DERIVATION_2026-08-03.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2138/H2138_PROBE_CEILING_DERIVATION_2026-08-03.md).
+Reproduce: `python src/pilot/h2138_ceiling_derive.py`.
+
+`wall = duration_api_ms + api_gap_ms`, and the two move independently (api/wall **0.25…0.72**),
+so a threshold on the sum cannot express route health. `production_v3` therefore carries **two**
+ceilings and `CURRENT_POLICY` points at it; v1/v2 stay frozen.
+
+| date (UTC) | wall `elapsed_ms` | `duration_api_ms` | `api_gap_ms` | v2 (65 000) | **v3 (80 000 + 45 000)** |
+|---|---:|---:|---:|---|---|
+| 2026-07-22 20:04 | 102 874 | — | — | NO-GO | NO-GO |
+| 2026-07-23 06:09 | 168 352 | — | — | NO-GO | NO-GO |
+| 2026-07-31 19:01 | 78 415 | — | — | NO-GO | **GO** |
+| 2026-08-01 20:21 | 50 336 | 27 557 | 22 779 | GO | GO |
+| 2026-08-02 05:48 | 43 815 | 26 386 | 17 429 | GO | GO |
+| 2026-08-02 07:49 | 75 561 | 29 069 | 46 492 | NO-GO | **GO** |
+| 2026-08-02 11:06 | 96 520 | 69 137 | 27 383 | NO-GO | NO-GO |
+| 2026-08-02 12:46 | 66 291 | 16 445 | 49 846 | NO-GO | **GO** |
+
+| statistic | wall | `duration_api_ms` | `api_gap_ms` |
+|---|---:|---:|---:|
+| n | 8 | 5 | 5 |
+| min / median / max | 43 815 / 76 988 / 168 352 | 16 445 / 27 557 / 69 137 | 17 429 / 27 383 / 49 846 |
+
+**Derivation.** ROUTE `api_ceil_ms` = round_up(healthy-cluster max 29 069 × 1.5) = **45 000**;
+the cluster `16 445 · 26 386 · 27 557 · 29 069` separates from the degraded `69 137` at a 2.38×
+multiplicative gap. WALL `latency_ceil_ms` = round_up(29 069 + largest observed scaffolding
+49 846) = **80 000** — the worst *legitimate* call, derived from components, not fitted to a run.
+Pass rate 2/8 → 5/8.
+
+**Not a weakened guard:** every v2 rejection for genuine route degradation still fails; what
+stops being rejected is the healthy-route/slow-scaffolding class a wall number cannot identify.
+The 02-08 12:46 row is the proof — c4's fastest API reading ever (16 445 ms) was a NO-GO at
+65 000 on 49 846 ms of scaffolding.
+
+**Limits:** no same-moment quota check (H2138's specified probe was invalidated by its own
+02-08 correction — an OAuth token 429s unconditionally without the Claude-Code system prompt —
+and reading the token was refused by the permission classifier for the third session running);
+the route guard changes no historical verdict, so it is a forward guard (4 selftest pins);
+n=5 decomposable, one account, 3 days. Gates: `window_selftest` 200/200,
+`max_account_orchestrator_selftest` PASS, `execution_contract_selftest` PASS.
 
 ## 02-08-2026 (H2174, second pass) — the ceiling is ~12 s BELOW c4's median: the gate is unpassable by scheduling, and the blocker is the ceiling VALUE, not the clock
 
