@@ -30,8 +30,11 @@ that; see bounded_staged_run.main()).
 import os
 import sys
 
-sys.stdout.reconfigure(encoding='utf-8')
-sys.stderr.reconfigure(encoding='utf-8')
+# Imported by pipeline modules (bounded_staged_run/coordinator/headless_worker),
+# sometimes under a captured/StringIO stdout — guard, don't crash the importer.
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, 'reconfigure'):
+        _stream.reconfigure(encoding='utf-8')
 
 # env var -> path relative to the data root (joined with os.path.join, '/'-split)
 ENV_LAYOUT = {

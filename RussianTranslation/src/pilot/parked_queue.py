@@ -19,8 +19,11 @@ import re
 import sys
 import time
 
-sys.stdout.reconfigure(encoding='utf-8')
-sys.stderr.reconfigure(encoding='utf-8')
+# Imported by pipeline code (gen_opt_harness2.build under perf_preflight's captured
+# stdout): a StringIO has no reconfigure — guard, don't crash the importer.
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, 'reconfigure'):
+        _stream.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
