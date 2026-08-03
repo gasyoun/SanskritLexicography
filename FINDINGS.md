@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §517) whatever its section, so existing numbers never shift; when a finding is later
+(currently §518) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -54,6 +54,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§510. A frozen local checkout is an actively misleading source for any append-only registry — read the numbering contract from `origin/`, not from disk](#510-a-frozen-local-checkout-is-an-actively-misleading-source-for-any-append-only-registry--read-the-numbering-contract-from-origin-not-from-disk) — one session, two collisions: a 177-commits-behind checkout showed §462 as the ceiling when `origin` had 166 findings, and the in-file next-free marker was stale too. Read the contract from `origin/`, derive the ceiling from the headings, and assert the marker sits above every used number.
 - 🔴 [§511. MW72 carries ZERO `<ls>` source citations — every cross-dictionary citation test that names it shrinks to MW](#511-mw72-carries-zero-ls-source-citations--every-cross-dictionary-citation-test-that-names-it-shrinks-to-mw) — `csl-orig/v02/mw72/mw72.txt` is 17.2 MB and contains not one `<ls>` tag, while MW has 320,828. Any apparatus/citation comparison that lists MW72 as a target silently produces a zero, not an error. Verify a dictionary's tag layer before scoping a test around it.
 - 🔴 [§515. PWG rests on WIL 1819; MW/MW72 English on WIL 1832 — CDSL has only 1832 OCR; do not treat Wilson as edition-free](#515-pwg-rests-on-wil-1819-mwmw72-english-on-wil-1832--cdsl-has-only-1832-ocr-do-not-treat-wilson-as-edition-free) — house edition-basis rule + OCR gap + preface-only scope for 1819; `L.` stays "native lexicons" with European transmission via 1819, not a Wilson siglum (`W.` is Wilson/1832).
+- 🔴 [§518. A ceiling written as a LITERAL in a test silently encodes whatever the default was the day it was typed — derive it from the policy table](#518-a-ceiling-written-as-a-literal-in-a-test-silently-encodes-whatever-the-default-was-the-day-it-was-typed--derive-it-from-the-policy-table) — the PWG probe gate kept one source of truth for its ceilings and still went stale twice, because `verdict_for`'s own default and two selftests pinned the NUMBER instead of the pointer. Derive the LIVE boundary from `POLICIES[CURRENT_POLICY]`; pin only the HISTORICAL policies, whose retired numbers really did judge their rows.
 - 🔴 [§516. A later PR's stale-base merge can silently revert an EARLIER PR's ledger-doc-only re-stamp while leaving that earlier PR's CODE change fully intact](#516-a-later-prs-stale-base-merge-can-silently-revert-an-earlier-prs-ledger-doc-only-re-stamp-while-leaving-that-earlier-prs-code-change-fully-intact) — H2226's SHARED re-stamp of two LANG_PARITY entries was reverted by H2227's stale-base merge while the underlying code stayed field-parameterized; detect by re-hashing the working tree against the last legitimate re-stamp commit, not by trusting the ledger's currently-recorded hash.
 - 🟠 [§504. The NWS tag layer reaches only 2.2 % of the RU store — a facet bar over it is right, but it is not the sheet's main axis](#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis)
 
@@ -5338,3 +5339,46 @@ money silently instead of hiding a defect loudly. Diagnostic: `python src/pilot/
 ancestor file with byte sizes, offline and free.
 
 > Opus 5 (`claude-opus-5[1m]`) · 03-08-2026 · [H2249](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2249-Opus_SanskritLexicography_pwg-bare-cwd-ancestry-leak-fix_03.08.26.md) · [PR #1090](https://github.com/gasyoun/SanskritLexicography/pull/1090)
+
+### §518. A ceiling written as a LITERAL in a test silently encodes whatever the default was the day it was typed — derive it from the policy table
+
+The PWG probe gate keeps one source of truth for its ceilings (`probe_log.POLICIES`) and a
+pointer at the live one (`CURRENT_POLICY`). H2118 built that table precisely because three
+hard-coded copies of the number had already drifted apart. It worked — and the *tests* still
+went stale, twice, because they pinned the number instead of the pointer.
+
+**What was found (H2173 G10, 03-08-2026).** `probe_log.verdict_for`'s own `policy=` default
+was frozen at `production_v1` while `CURRENT_POLICY` advanced to v2 (65 000) and then v3
+(80 000 wall + 45 000 route). Nothing was wrongly admitted — v1's 30 000 ms is the
+*strictest* of the three, so the drift failed in the safe direction — but every default-lane
+receipt named a gate retired since 31-07-2026, and v3's `api_ceil_ms` guard could never fire
+because v1 declares none. The CLI compounded it: `api_ms` was a `verdict_for` parameter with
+**no `--api-ms` flag**, so the route guard was unreachable on the one path that writes
+receipts.
+
+**The part worth generalising.** Correcting that default immediately broke
+`execution_contract_selftest`, whose assertions read `verdict_for(29999, …) == 'GO'` and
+`verdict_for(30000, …) == 'NO-GO'`. Those had never been *about* 30 000; they were about
+"strictly under passes, at the ceiling fails" — but by writing the boundary as a literal and
+omitting `policy=`, they silently encoded the stale default and passed for the wrong reason.
+A test that pins a literal cannot distinguish "the boundary rule holds" from "the default
+never moved", so it goes green through exactly the drift it looks like it is guarding.
+
+**Rule.** Derive a boundary from the same table production reads:
+
+```python
+live = probe_log.POLICIES[probe_log.CURRENT_POLICY]
+assert verdict_for(live['latency_ceil_ms'] - 1, …)[0] == 'GO'
+assert verdict_for(live['latency_ceil_ms'], …)[0] == 'NO-GO'
+```
+
+Retired policies still get pinned at their historical numbers — rows stamped `production_v1`
+were genuinely judged at 30 000, and re-pointing a name retroactively falsifies them. So:
+**derive the LIVE boundary, pin the HISTORICAL ones.**
+
+Same shape in prose: `/pwg-live-gate` restated "65 000 ms" and was wrong within a day of
+H2138 deriving v3, having already been wrong at 30 000 before that. Any document naming a
+number that a table owns is a copy waiting to rot — name the derivation, quote the number as
+a convenience, and say which it is.
+
+> Opus 5 (`claude-opus-5`) · 03-08-2026 · [H2173](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2173-Opus_SanskritLexicography_pwg-audit-tail-g5-g8-g9-g10_02.08.26.md) · [PR #1083](https://github.com/gasyoun/SanskritLexicography/pull/1083)
