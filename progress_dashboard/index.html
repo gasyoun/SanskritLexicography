@@ -806,6 +806,9 @@ async function renderTrends() {
     if ((s = pick('approved')).length) line(el, s, 'Approved (human signed off)');
     if ((s = pick('needs_review')).length) line(el, s, 'Needs review (queued)');
     if ((s = pick('g5_open')).length) line(el, s, 'G5 live-review queue — open');
+    // H2241 K-slice: daily kitchen operator/yield/health points.
+    if ((s = pick('kitchen_yield_clean_pct')).length) line(el, s, 'Kitchen: clean windows', '%');
+    if ((s = pick('kitchen_idle_hours')).length) line(el, s, 'Kitchen: idle hours', 'h');
   }
   // B4 — fidelity/judge quality as a trend, not a single overwritten snapshot.
   const qts = await j('quality_timeseries.json');
