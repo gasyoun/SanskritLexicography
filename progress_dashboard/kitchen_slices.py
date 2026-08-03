@@ -193,10 +193,7 @@ def gate_summary(events: Path, limit: int = 200) -> dict:
     }
 
 
-def instrumentation_coverage(rows: list[dict]) -> dict:
-    """K6 / A7 — how complete wall-clock + gen_model fields are."""
-    if not rows:
-        return {"measured": False}
+def _coverage_bucket(rows: list[dict]) -> dict:
     n = len(rows)
     wc = 0
     tok = 0
@@ -218,7 +215,6 @@ def instrumentation_coverage(rows: list[dict]) -> dict:
             gm += 1
             models[str(m)] += 1
     return {
-        "measured": True,
         "windows": n,
         "wall_clock_present": wc,
         "wall_clock_coverage_pct": round(100 * wc / n, 1) if n else None,
@@ -227,9 +223,50 @@ def instrumentation_coverage(rows: list[dict]) -> dict:
         "gen_model_present": gm,
         "gen_model_coverage_pct": round(100 * gm / n, 1) if n else None,
         "gen_models": dict(models.most_common(12)),
+    }
+
+
+def instrumentation_coverage(rows: list[dict]) -> dict:
+    """K6 / A7 / K9 (H2230) — how complete wall-clock + token + gen_model fields are.
+
+    Split post_cut (the row's production_metrics carries a ``wall_clock_source``
+    key, i.e. it passed through the auto-derive path added in H1553/H2212) from
+    historical (no ``wall_clock_source`` key at all — written before that path
+    existed, so a null there was never recoverable). A single blended
+    coverage_pct silently conflated "legitimately unknown, pre-instrumentation"
+    with "should have it, something's actually missing" — this split makes the
+    post_cut number the honest instrumentation-health signal.
+    """
+    if not rows:
+        return {"measured": False}
+    post_cut_rows = []
+    historical_rows = []
+    for r in rows:
+        pm = r.get("production_metrics") or {}
+        if "wall_clock_source" in pm:
+            post_cut_rows.append(r)
+        else:
+            historical_rows.append(r)
+    overall = _coverage_bucket(rows)
+    post_cut = _coverage_bucket(post_cut_rows)
+    historical = _coverage_bucket(historical_rows)
+    return {
+        "measured": True,
+        "windows": overall["windows"],
+        "wall_clock_present": overall["wall_clock_present"],
+        "wall_clock_coverage_pct": overall["wall_clock_coverage_pct"],
+        "token_metrics_present": overall["token_metrics_present"],
+        "token_coverage_pct": overall["token_coverage_pct"],
+        "gen_model_present": overall["gen_model_present"],
+        "gen_model_coverage_pct": overall["gen_model_coverage_pct"],
+        "gen_models": overall["gen_models"],
+        "post_cut": post_cut,
+        "historical": historical,
         "note": (
-            "audit_window already stamps production_metrics when wall-clock can be "
-            "derived; historical ledger rows predate that path — coverage <100% is expected"
+            "post_cut = rows stamped by the H1553/H2212 auto-derive path (has a "
+            "wall_clock_source key) — this is the honest instrumentation-health "
+            "number; historical = rows written before that path existed, where a "
+            "null was never recoverable and is expected, not a gap"
         ),
     }
 

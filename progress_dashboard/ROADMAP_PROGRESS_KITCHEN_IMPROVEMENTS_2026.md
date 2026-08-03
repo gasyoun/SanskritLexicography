@@ -147,7 +147,7 @@ K1–K8 UI is shipped (H2212). Remaining measurement gaps → **Grok 4.5** hando
 
 | Order | ID | Effort | Title / gap |
 |---|---|---|---|
-| 1 | [H2230](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2230-Grok_SanskritLexicography_progress-kitchen-wallclock-token-dense_03.08.26.md) | hard | Dense wall-clock + tokens (B2 / K6 residual) |
+| 1 | [H2230](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2230-Grok_SanskritLexicography_progress-kitchen-wallclock-token-dense_03.08.26.md) | hard | Dense wall-clock + tokens (B2 / K6 residual) — ✅ done: append_ledger already stamped `wall_clock_minutes`/`max_total_tokens` on every row (H2212) and a backfill script already existed (`backfill_ledger_metrics.py`, H2218 R4); the real gap was the blended `wall_clock_coverage_pct` conflating historical (pre-instrumentation, legitimately null) rows with post-cut ones — fixed by splitting `instrumentation_coverage()` into `post_cut`/`historical` buckets keyed on presence of a `wall_clock_source` field |
 | 2 | [H2231](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2231-Grok_SanskritLexicography_progress-kitchen-gen-model-host-profile_03.08.26.md) | medium | gen_model / host / profile (B8) |
 | 3 | [H2232](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2232-Grok_SanskritLexicography_progress-kitchen-true-cost-subscription_03.08.26.md) | medium | True $ / subscription units (B1) |
 | 4 | [H2233](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2233-Grok_SanskritLexicography_progress-kitchen-verb-eta-roots-per-day_03.08.26.md) | medium | Verb ETA roots/day (K4 residual) |
