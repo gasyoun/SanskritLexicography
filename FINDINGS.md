@@ -5299,3 +5299,42 @@ plain `git diff` review of the newer PR alone, since that PR's author never edit
 lines on purpose and the PR's own file-list looks unrelated.
 
 > Sonnet 5 (`claude-sonnet-5`) · 03-08-2026 · H2243 LANG_PARITY drift re-verify
+
+### §517. An EMPTY spawn directory is not a context-free spawn directory — verify the ancestry, not the directory
+
+`headless_worker.bare_cli_cwd()` (H2158) existed to spawn the paid CLI from a directory with
+no project context, and it checked exactly that: no `CLAUDE.md`, no `.git`, walking up from
+the candidate. It shipped pointing at `%TEMP%\pwg_ru_cli_cwd` — an empty directory, and on
+Windows a directory **under the user profile**. The CLI's own memory discovery does not stop
+at `CLAUDE.md`: `.claude\CLAUDE.md`, `.claude\CLAUDE.local.md` and `.claude\rules` are
+picked up from any ancestor too, and `C:\Users\<user>\.claude\CLAUDE.md` is precisely
+where an operator's global memory lives. Result: **32 779 B of operator memory in every paid
+call** for the life of the helper, with no signal of any kind — `ls` on the spawn directory
+showed nothing, the selftest asserting "no `CLAUDE.md` in the cwd" passed, and the cost showed
+up only as prefix tax nobody could attribute.
+
+Three transferable rules, none of them specific to this pipeline:
+
+1. **A marker-set check is only as good as the marker set**, and the marker set belongs to
+   the tool being spawned, not to the spawner. Enumerate what the *child* discovers
+   (`h2189_min_profile.ANCESTOR_MEMORY_RELPATHS` / `ANCESTOR_MEMORY_DIRS` here), keep it in
+   ONE place, and have the spawn path consume that same list — two half-updated marker lists
+   is how a fix in one silently fails to reach the other.
+2. **Emptiness is a property of a directory; context is a property of its ancestry.** Any
+   "clean room" directory derived from `tempfile.gettempdir()` on Windows is under the user
+   profile by default and inherits from it. The cheapest clean ancestry on a Windows box is a
+   **drive root**, but a hardcoded drive letter degrades silently to nothing on another
+   machine — derive candidates, verify each, and return `None` rather than an unverified one.
+3. **"Could not prove it clean" and "proved it clean" must not collapse into the same
+   answer.** A verifier that fails open (an ImportError swallowed, a scan exception treated as
+   "no hits") converts a safety check into a no-op with no observable difference. Fail closed,
+   and say so on stderr.
+
+Sibling class, same shape: the "inert by construction" gate named in
+[H2160](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2160-Opus_RussianTranslation_whole-card-b0-hang-and-medium50-completion_02.08.26.md),
+where a check runs, passes, and was never capable of failing. Here the check ran, passed, and
+was never capable of *seeing* the thing it guarded against — the always-pass variant costs
+money silently instead of hiding a defect loudly. Diagnostic: `python src/pilot/h2189_min_profile.py --scan-cwd <dir>` prints every injectable
+ancestor file with byte sizes, offline and free.
+
+> Opus 5 (`claude-opus-5[1m]`) · 03-08-2026 · [H2249](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2249-Opus_SanskritLexicography_pwg-bare-cwd-ancestry-leak-fix_03.08.26.md) · [PR #1090](https://github.com/gasyoun/SanskritLexicography/pull/1090)

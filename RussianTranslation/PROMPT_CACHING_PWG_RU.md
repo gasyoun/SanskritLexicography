@@ -43,9 +43,14 @@ row and open a PR that re-syncs this file — do not invent a third copy.
    Registered as [Uprava CONTRADICTIONS §7](https://github.com/gasyoun/Uprava/blob/main/CONTRADICTIONS.md);
    the re-measurement that decides it is [H2250](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2250-Opus_SanskritLexicography_pwg-cli-cache-amortisation-remeasure_03.08.26.md)
    (**Opus 5**) — PWG CLI cache-amortisation re-measure against standing truth #1.
-2. **Bare project cwd is free and shipped.** Repo cwd injects `CLAUDE.md` + git
+2. **Bare project cwd is free and shipped — and since H2249 it is actually bare.**
+   The first shipping version checked only the immediate directory, so an empty dir
+   under `%TEMP%` still inherited 32 779 B of operator memory from its ancestors; the
+   helper now verifies the whole ancestry and returns `None` rather than a directory
+   that only looks bare. Repo cwd injects `CLAUDE.md` + git
    state (~11–17 k volatile tokens/call). Bare cwd measured **−33 % cost,
-   −30 % wall**. Code: `headless_worker.bare_cli_cwd()`; selftest pins spawn cwd.
+   −30 % wall**. Code: `headless_worker.bare_cli_cwd()`; selftest pins
+   both the spawn cwd and its ancestry.
 3. **Call shape is not the cache lever.** One card per call (H2152). Do not
    batch N cards to “share cache” — wall-clock binds; one bad call destroys
    per-card attribution for all N.
@@ -91,7 +96,7 @@ prefix that can exceed **100 k** once profile context is included.
 |---:|---|---|---|---|
 | 0 | **Bare cwd** for every headless spawn | ✅ Shipped | −33 % cost / −30 % wall on fixed overhead | none — already in `bare_cli_cwd()` |
 | 1 | **Strip the profile surface** — shipped as `--safe-mode`, **not** as a minimal profile dir | ✅ Measured 03-08-2026, wired **opt-in (default OFF)** | Real card: create **−69 %**, output **−49 %**, wall **−55 %**, cost **−61 %** ($0.6921 → $0.2712) with identical card content. A dedicated minimal `CLAUDE_CONFIG_DIR` measured only **−8.7 %** and was REJECTED as the lever | [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md) · [report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md) |
-| 1b | **`bare_cli_cwd()` ancestry leak** — the helper rejects an ancestor with `CLAUDE.md`/`.git`, not one with `.claude\CLAUDE.md`, and its `%TEMP%` dir sits under the Windows user profile | 🔴 Open defect | **32 779 B of operator memory in every paid call** since H2158. `--safe-mode` masks it; any lane without that flag still pays it | [H2189 report §1.1](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md) |
+| 1b | **`bare_cli_cwd()` ancestry leak** — the helper rejected an ancestor with `CLAUDE.md`/`.git`, not one with `.claude\CLAUDE.md`, and its `%TEMP%` dir sits under the Windows user profile | ✅ Fixed 03-08-2026 | Was **32 779 B of operator memory in every paid call** since H2158. The helper now derives candidates and returns one only after `cwd_ancestry_scan` proves the whole ancestry clean, else `None`; **0 injectable bytes** on this box. `--safe-mode` only *masked* it and is no longer the thing standing in the way | [H2249](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2249-Opus_SanskritLexicography_pwg-bare-cwd-ancestry-leak-fix_03.08.26.md) · [H2189 report §1.1](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md) |
 | 2 | **Messages API + explicit `cache_control` (1 h)** on stable prefix | 🟡 Open — Phase 1 CLI measured; API arm needs credential | Turn create→read on framework; typed HTTP failures; optional single-completion output cut | [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md) |
 | 3 | **Dual-rate cost tools** (`cache_write_5m` + `cache_write_1h`) | ✅ Shipped 02-08-2026 | Stopped understating CLI bills 1.6× ($0.6967 computed vs $0.8005 billed on `nakzatra`) | [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) · [PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032) |
 | 4 | **Stable prefix reorder** (`preamble` → `translation` → `grammar` before card) | ✅ Shipped 03-08-2026, offline | Cross-**window** stable head **1 226 → 12 249 chars** (4.9 % → 49.5 % of a representative prompt). Within one window: no change. **Not** lean-TR — no byte dropped | [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md) |

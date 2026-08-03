@@ -100,13 +100,24 @@ tracked-file drift and is wired into `window_selftest.py`
   clock for changing one directory**, no code change and no guard weakened. Pass an empty
   scratch dir as the subprocess `cwd`; the manifest carries every input the worker needs, so
   nothing depends on being inside the repo.
-  **Incomplete — open defect (H2189, 03-08-2026).** `bare_cli_cwd()` rejects an ancestor
-  carrying a bare `CLAUDE.md` or a `.git`, but **not** one carrying `.claude\CLAUDE.md`, and
-  its `%TEMP%` directory sits under the Windows user profile. Measured: **32 779 B** of
-  operator memory (`C:\Users\user\.claude\CLAUDE.md` + `.claude\rules`) still reaching every
-  paid call. Check any spawn dir with
-  `python src/pilot/h2189_min_profile.py --scan-cwd <dir>`. `--safe-mode` masks it by
-  disabling memory discovery outright; a lane without that flag still pays it.
+  **✅ Fixed (H2249, 03-08-2026) — was an open defect for one day.** H2158's walk rejected an
+  ancestor carrying a bare `CLAUDE.md` or a `.git`, but **not** one carrying
+  `.claude\CLAUDE.md`, and its `%TEMP%` directory sits under the Windows user profile:
+  **32 779 B** of operator memory (`C:\Users\user\.claude\CLAUDE.md` + `.claude\rules`)
+  reached every paid call between H2158 and this fix, invisible because the spawn directory
+  itself was empty. `bare_cli_cwd()` now **derives** candidates — an operator
+  `PWG_RU_CLI_CWD` override, then the historical `%TEMP%` directory, then each FIXED
+  filesystem root the OS reports (system drive last) — and returns one only after
+  `h2189_min_profile.cwd_ancestry_scan` proves the whole ancestry clean, else `None` (the
+  historical inherited-cwd behaviour). No drive letter is hardcoded. On this box it resolves
+  to `D:\pwg_ru_cli_cwd`, **0 injectable bytes**. Verify any spawn dir yourself with
+  `python src/pilot/h2189_min_profile.py --scan-cwd <dir>`; pinned by
+  `headless_worker_selftest.test_bare_cwd_ancestry_is_clean_or_none` (an assertion since
+  H2249 — it shipped as a report under H2189 precisely because it could not pass) plus
+  `test_bare_cwd_candidates_are_derived_not_hardcoded` and
+  `test_bare_cwd_refuses_a_dirty_ancestry_rather_than_returning_it`. `--safe-mode` merely
+  **masked** this and is no longer what stands between the operator's global `CLAUDE.md` and
+  a paid call; it remains the separate, opt-in **profile**-surface lever above.
 - **The per-call cache is NEVER reused — budget for it, do not try to tune it away.** Two
   *identical* back-to-back calls each re-created ~49 k tokens (49 153 → 49 165, cache read
   pinned at 28 882): the second re-wrote exactly what the first had just written. The write is

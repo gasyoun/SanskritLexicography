@@ -78,40 +78,152 @@ HARD_TIMEOUT_MS = 300000
 # different cwd string each time and re-break the very prefix this is stabilising.
 BARE_CLI_CWD_NAME = 'pwg_ru_cli_cwd'
 
+# H2249 (03-08-2026): fail safe on the ANCESTRY, not just on the immediate directory.
+#
+# H2158's walk rejected an ancestor carrying a bare `CLAUDE.md` or a `.git` -- but not one
+# carrying `.claude\CLAUDE.md`, `.claude\CLAUDE.local.md` or `.claude\rules`. The directory it
+# handed out lives under `%TEMP%`, i.e. under the Windows user profile, which is exactly where
+# the operator's global memory sits: **32 779 B measured reaching EVERY paid call since
+# H2158**, invisible because the spawn directory itself is empty. H2189's `--safe-mode` masks
+# that (it disables memory discovery outright) but is opt-in, and masking is not fixing --
+# every lane without the flag kept paying, and the helper kept claiming a bareness it did not
+# have.
+#
+# The marker set and the walk are deliberately NOT re-implemented here:
+# `h2189_min_profile.cwd_ancestry_scan` is the single source (the selftest already asserts
+# through it), so a marker added there reaches the spawn path automatically instead of drifting
+# into two half-updated lists.
+#
+# WHERE to look is derived, never hardcoded. `D:\ClaudeTools\pwg_ru_clean_cwd` was the H2189
+# arm and a drive root outside the profile is the cheapest clean ancestry on this box -- but a
+# drive letter baked into the source is a machine-specific path that silently degrades to None
+# on any other machine. So the candidates are: an operator-named override, then the historical
+# `%TEMP%` location (unchanged behaviour wherever temp is already clean, e.g. POSIX `/tmp`),
+# then each FIXED filesystem root the OS reports, system drive last. Every candidate is
+# verified before it is returned; none verifying returns None.
+BARE_CLI_CWD_ENV = 'PWG_RU_CLI_CWD'
+_BARE_CLI_CWD_CACHE = []
+
+
+def _fixed_filesystem_roots():
+    """Local fixed-disk roots, system drive last. Never guesses; degrades to no roots.
+
+    Windows-only by design. On POSIX the temp dir already sits outside the user profile, so
+    there is nothing to escape by climbing to a root -- and creating a directory at `/` is not
+    something this helper should ever attempt. A bare `os.path.isdir('A:\\')` sweep is avoided
+    because it can stall for seconds on a removable or disconnected network drive; ask the OS
+    which letters are FIXED instead.
+    """
+    if os.name != 'nt':
+        return []
+    try:
+        import ctypes
+        kernel32 = ctypes.windll.kernel32
+        mask = kernel32.GetLogicalDrives()
+        drive_fixed = 3
+        roots = [chr(ord('A') + i) + ':' + os.sep
+                 for i in range(26)
+                 if mask & (1 << i)
+                 and kernel32.GetDriveTypeW(chr(ord('A') + i) + ':' + os.sep) == drive_fixed]
+    except (AttributeError, OSError, ValueError):
+        return []
+    # The system drive is where corporate ACLs and antivirus policy are most likely to refuse a
+    # root-level directory; try it only after the others. `makedirs` failure is not fatal
+    # either way -- it just moves to the next candidate.
+    system = (os.environ.get('SystemDrive')
+              or os.path.splitdrive(os.environ.get('SystemRoot') or '')[0] or '')
+    if system:
+        key = os.path.normcase(system.rstrip(os.sep))
+        roots.sort(key=lambda r: os.path.normcase(os.path.splitdrive(r)[0]) == key)
+    return roots
+
+
+def bare_cli_cwd_candidates():
+    """Ordered spawn-directory candidates, deduplicated. Derived — no path is hardcoded."""
+    cands = []
+    override = os.environ.get(BARE_CLI_CWD_ENV)
+    if override:
+        cands.append(os.path.abspath(override))
+    try:
+        cands.append(os.path.join(tempfile.gettempdir(), BARE_CLI_CWD_NAME))
+    except (AttributeError, OSError):
+        pass
+    cands.extend(os.path.join(root, BARE_CLI_CWD_NAME) for root in _fixed_filesystem_roots())
+    seen = set()
+    ordered = []
+    for cand in cands:
+        key = os.path.normcase(os.path.abspath(cand))
+        if key not in seen:
+            seen.add(key)
+            ordered.append(cand)
+    return ordered
+
+
+def bare_cli_cwd_ancestry_clean(path):
+    """Whether an ancestor walk from `path` finds nothing the CLI could inject as memory.
+
+    Fails CLOSED: anything that stops the scan from running -- a moved `h2189_min_profile`,
+    an unreadable directory -- counts as NOT clean, because "could not prove it" and "proved
+    it clean" must never collapse into the same answer on the path that decides what the model
+    is handed. The import is loud on failure for the same reason `resolve_safe_mode` is: a
+    silent False here would cost H2158's measured -33 % on every call with no signal.
+    """
+    try:
+        from h2189_min_profile import cwd_ancestry_scan
+    except ImportError as exc:
+        sys.stderr.write('H2249: cannot import h2189_min_profile.cwd_ancestry_scan (%s) -- '
+                         'treating every spawn dir as unverified and inheriting the caller '
+                         'cwd, i.e. paying the full project prefix.\n' % exc)
+        sys.stderr.flush()
+        return False
+    try:
+        return not cwd_ancestry_scan(path)
+    except OSError:
+        return False
+
 
 def bare_cli_cwd():
-    """A stable, empty, project-context-free directory to spawn the CLI from.
+    """A stable spawn directory whose ANCESTRY carries no project or operator memory.
 
-    Fails SAFE: if the candidate would still sit inside a git repo or under a CLAUDE.md, this
-    returns None and the caller keeps the historical inherited-cwd behaviour. Silently
-    spawning from a directory that still injects project context would reintroduce the cost
-    without any signal that it had.
+    Fails SAFE: returns None -- the historical inherited-cwd behaviour -- rather than hand back
+    a directory that still injects memory. The directory is STABLE (not per-call): a fresh temp
+    dir per call would give the model a different cwd string each time and re-break the very
+    prefix this is stabilising, so the answer is resolved once and cached.
     """
-    path = os.path.join(tempfile.gettempdir(), BARE_CLI_CWD_NAME)
-    try:
-        os.makedirs(path, exist_ok=True)
-    except OSError:
-        return None
-    probe = os.path.abspath(path)
-    while True:
-        if (os.path.exists(os.path.join(probe, 'CLAUDE.md'))
-                or os.path.exists(os.path.join(probe, '.git'))):
-            return None
-        parent = os.path.dirname(probe)
-        if parent == probe:
-            return path
-        probe = parent
+    if _BARE_CLI_CWD_CACHE:
+        return _BARE_CLI_CWD_CACHE[0]
+    resolved = None
+    tried = []
+    for cand in bare_cli_cwd_candidates():
+        tried.append(cand)
+        try:
+            os.makedirs(cand, exist_ok=True)
+        except OSError:
+            continue        # unwritable root, ACL refusal, drive pulled -- try the next one
+        if bare_cli_cwd_ancestry_clean(cand):
+            resolved = cand
+            break
+    if resolved is None:
+        sys.stderr.write('H2249: no spawn directory with a clean ancestry (tried %s) -- '
+                         'inheriting the caller cwd and paying the full project prefix. Point '
+                         '%s at a directory whose parents carry no CLAUDE.md/.claude/.git.\n'
+                         % (', '.join(tried) or '<none>', BARE_CLI_CWD_ENV))
+        sys.stderr.flush()
+    _BARE_CLI_CWD_CACHE.append(resolved)
+    return resolved
 
 
 # H2189 (02-08-2026): the residual prefix tax `bare_cli_cwd()` cannot reach.
 #
-# Bare cwd removes PROJECT context. It does not remove (a) the operator PROFILE bound as
-# the CLI's config dir -- its skills, commands, agents and, above all, its SessionStart /
-# UserPromptSubmit hooks -- nor (b) the memory files an ancestor walk from the spawn
-# directory still finds. `bare_cli_cwd()` rejects an ancestor carrying a bare `CLAUDE.md`
-# or a `.git`, but NOT one carrying `.claude\CLAUDE.md`; on a Windows operator box the
-# bare dir lives under %TEMP%, i.e. under the user profile, where exactly that file sits.
-# Measured on this box: 32 779 B of operator memory reaching every paid call.
+# Bare cwd removes PROJECT context. It does not remove the operator PROFILE bound as the
+# CLI's config dir -- its skills, commands, agents and, above all, its SessionStart /
+# UserPromptSubmit hooks. That is what `--safe-mode` reaches and a spawn directory never can.
+#
+# H2189 also found a SECOND leak, the memory files an ancestor walk from the spawn directory
+# still finds (32 779 B on this box, every paid call). That one is NOT a profile problem and
+# is fixed above by H2249: `bare_cli_cwd()` now verifies the whole ancestry through
+# `h2189_min_profile.cwd_ancestry_scan`. `--safe-mode` masked it; it is no longer what stands
+# between the operator's global CLAUDE.md and a paid call.
 #
 # Measured A/B (H2189, sequential, bare cwd, claude-sonnet-5, cold call):
 #   trivial   paid 39 532 create / error_max_turns   safe-mode 4 712 create / completes
