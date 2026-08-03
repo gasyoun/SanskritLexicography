@@ -683,7 +683,13 @@ def begin_run_leases(state, lease_ids, mode='standard', run_id=None,
         raise SystemExit('begin-run requires prepared leases')
     running = running_translation_leases(state)
     if mode == 'standard':
-        limit = TRANSLATION_LIMIT
+        # G10 (H2173, audit F-B5): `state['translation_limit']` was serialized at :268,
+        # defaulted at :287 and echoed in status at :2508, but enforcement read the module
+        # constant — so an operator could set the field, watch it persist and be reported
+        # back, and have it bind nothing. `preparation_limit` two frames down (:899) already
+        # honours state, which is what makes this an inconsistency rather than a convention.
+        # State wins, constant is the default, exactly as the preparation cap does it.
+        limit = int(state.get('translation_limit') or TRANSLATION_LIMIT)
         runtime_mode = 'standard'
     elif mode == 'staged':
         receipt = validate_probe_receipt(probe_receipt, lease_ids, run_id)

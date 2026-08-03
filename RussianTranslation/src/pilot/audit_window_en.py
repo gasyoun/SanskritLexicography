@@ -393,7 +393,8 @@ def main():
     ap.add_argument('--no-mw', action='store_true', help='skip the MW divergence cross-check')
     ap.add_argument('--report', help='write the machine-readable JSON report to this path')
     ap.add_argument('--wall-clock-minutes', type=float, default=None,
-                    help='H1618/H1553: optional wall-clock for production_metrics '
+                    help='H1618/H1553: optional OBSERVED wall-clock for production_metrics — '
+                         'a recorded metric, never a cap (H2173 G10, SHARED with the RU twin) '
                          '(else derived from wf mtime - meta.generated_at when possible)')
     ap.add_argument('--write-requeue', action='store_true',
                     help='H1618/H304: when --report is set, also write requeue.defect.keys.txt '

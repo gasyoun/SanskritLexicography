@@ -1163,6 +1163,12 @@ PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-represent
 # that had already drifted 2.2x from probe_log's, with both gates still stamping rows
 # `production_v1`. The policy token now carries its own ceiling, so `verdict_for()` and
 # `live_probe` agree by construction and a row's `policy` is sufficient provenance again.
+#
+# H2173 G10 (F-B4) completed that: this line was true of the *table* but not of the *caller*
+# — `verdict_for`'s own `policy=` default stayed pinned at `production_v1` while
+# CURRENT_POLICY advanced to v2 and then v3, so anything relying on the default still judged
+# at the retired ceiling and stamped rows `production_v1`. Both `verdict_for` and the CLI
+# `--policy` default now track CURRENT_POLICY, so "agree by construction" holds end to end.
 PROBE_POLICY = probe_log.CURRENT_POLICY
 PROBE_LATENCY_CEILING_MS = probe_log.ceiling_for(PROBE_POLICY)
 PROBE_LANE = 'claude-cli-headless/readiness-schema'
