@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H1956 — wire `sibling_root.py --selftest` into CI (Sonnet 5 `claude-sonnet-5`, 03-08-2026):** the H1902 worktree-safe root resolver ([FINDINGS §503](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#503-a-git-worktree-silently-disables-every-sibling-repo-lookup-in-src--artifacts-rebuilt-there-lose-layers-without-failing), merged via [#892](https://github.com/gasyoun/SanskritLexicography/pull/892)) shipped without a CI regression guard for its own selftest — the RussianTranslation gates job now runs `python src/sibling_root.py --selftest` alongside the other capability-card selftests.
+
 ## [1.137.11] - 2026-08-03
 
 ### Added
