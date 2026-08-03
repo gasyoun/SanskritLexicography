@@ -40,6 +40,9 @@ row and open a PR that re-syncs this file — do not invent a third copy.
    change rather than a methodology difference. This truth is left standing until a run
    designed to test it says otherwise, because it underpins the whole rank-2 case; see
    [report §7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md).
+   Registered as [Uprava CONTRADICTIONS §7](https://github.com/gasyoun/Uprava/blob/main/CONTRADICTIONS.md);
+   the re-measurement that decides it is [H2250](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2250-Opus_SanskritLexicography_pwg-cli-cache-amortisation-remeasure_03.08.26.md)
+   (**Opus 5**) — PWG CLI cache-amortisation re-measure against standing truth #1.
 2. **Bare project cwd is free and shipped.** Repo cwd injects `CLAUDE.md` + git
    state (~11–17 k volatile tokens/call). Bare cwd measured **−33 % cost,
    −30 % wall**. Code: `headless_worker.bare_cli_cwd()`; selftest pins spawn cwd.
