@@ -10,7 +10,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
-## [1.140.0] - 2026-08-03
+## [1.141.0] - 2026-08-03
 
 ### Added
 - **The canary manifest builder's output shape is now PINNED, and the real command is documented (H2245, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** [`canary_manifest_build_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/canary_manifest_build_selftest.py) builds the canary against a **scratch** profile dir (zero paid calls), runs both contract validators on the real built artifact rather than a hand-written fixture, and diffs the result against a newly committed golden manifest beside the fixture ([`dq_canary_puregloss~~h0_zz_pw.manifest.v2.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h994/canary/dq_canary_puregloss~~h0_zz_pw.manifest.v2.json)); wired into `window_selftest.py` as `test_h2245_canary_manifest_builder` (**202/202 passed**). H2174 made the canary re-runnable but pinned nothing, and the control's entire diagnostic value sits in properties a schema change rots *silently*: `ls == 0`/`sk == 0` with 3 senses (the D-Q geometry — dropping a sense keeps the `accept()` fidelity gate at `0 == 0`, so it passes and only the SAN-LOSS soft guard can catch it), `key_provenance = synthetic_control`, and a **live-computed** `config_dir_fingerprint`. Each invariant was mutation-verified RED, 6/6. Worth stating: **`validate_manifest` alone does not catch a provenance flip to `real`** — `real` is a legal class — so that guard has to live in the selftest, not the contract.
