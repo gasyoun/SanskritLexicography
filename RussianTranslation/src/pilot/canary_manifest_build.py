@@ -22,6 +22,30 @@ Usage (profile-bound, from RussianTranslation/):
 Then run the printed headless_worker command. Judge the result with
 ``canary_gate.py judge`` -- never promote synthetic output (the promoter's C-05
 refusal is expected).
+
+PROMPT SHAPE -- the canary rides the PRODUCTION path, deliberately (H2245)
+-------------------------------------------------------------------------
+The canary is un-masked pure gloss (three line-opening senses, zero ``<ls>``, zero
+``{#..#}``) while production runs the masked-inline regime, so "does the canary need its
+own non-masked prompt variant?" is a real design question, not boilerplate: a silent
+mismatch changes what the canary actually tests.
+
+**Decision: reuse the production prompt path verbatim -- no canary-specific variant.**
+The builder therefore passes the same ``--nominal`` (mode ``nominal_masked``) production
+generation uses. The justification is empirical, not stylistic: on this fixture the mask is
+an *identity transform*. ``pwg_mask.mask(raw)`` returns ``skel == raw`` with **zero**
+placeholders (stats ``pct_de=3``, everything else 0), and the emitted manifest carries
+``placeholder_maps[<key>] == []``. So the model sees exactly the pure gloss, reached through
+the production code path -- which is the entire point of a synthetic *control*: a
+canary-only prompt would exercise a path no paid window ever runs, and a green canary would
+then say nothing about production.
+
+The masked-regime preamble does still ride along, vacuously (it explains ``{Tn}`` tokens
+when none exist). That is accepted deliberately: dropping it would fork the prompt and
+re-introduce the mismatch this decision exists to avoid. Both properties are pinned by
+``canary_manifest_build_selftest.py``, so a future mask change that started emitting a
+placeholder here -- i.e. that quietly stopped the canary being pure gloss -- goes red
+instead of silently degrading the control.
 """
 import argparse
 import hashlib

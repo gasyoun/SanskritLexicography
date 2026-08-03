@@ -8661,6 +8661,22 @@ def test_pwg_mask_gloss_lang_g1():
         fail('G1 residue missed translated Wilson EN: %r' % translated)
 
 
+def test_h2245_canary_manifest_builder():
+    """H2245: the canary manifest builder's output shape is PINNED, offline.
+
+    `canary_manifest_build.py` (H2174) made the canary re-runnable, but nothing pinned what
+    it emits — and the canary's diagnostic value lives entirely in properties a schema change
+    could rot silently (ls==0/sk==0 with 3 senses; provenance synthetic_control; a
+    live-computed config_dir_fingerprint). Note `validate_manifest` alone does NOT catch a
+    provenance flip to `real` — 'real' is a legal class — so that guard has to live here.
+
+    Delegated to the sibling selftest, which builds against a scratch profile dir and diffs
+    the result against the committed golden artifact. Spends nothing.
+    """
+    import canary_manifest_build_selftest
+    canary_manifest_build_selftest.selftest()
+
+
 def main():
     tests = [
         test_restore_covers_every_promoted_field,
@@ -8864,6 +8880,7 @@ def main():
         test_frag_prov_glob_honors_coordinator_dir_c7,
         test_pwg_mask_german_homograph_not_latin_c8,
         test_pwg_mask_gloss_lang_g1,
+        test_h2245_canary_manifest_builder,
     ]
     # Per-test isolation. This used to be a bare `for test in tests: test()`, so the FIRST
     # failure aborted the process and every later test silently never ran. That is not
