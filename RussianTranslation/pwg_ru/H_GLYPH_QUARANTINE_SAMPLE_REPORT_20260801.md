@@ -1,6 +1,6 @@
 # Glyph quarantine sample — 200 of 10881 (report only)
 
-_Created: 01-08-2026 · Last updated: 01-08-2026_
+_Created: 01-08-2026 · Last updated: 03-08-2026_
 
 **Model:** Grok 4.5 (`grok-4.5`) · offline Sonnet-tier batch · **no re-translate**
 
@@ -32,7 +32,7 @@ Sample-first before mass re-translate (MG 29-07-2026 weekly @DECIDE). Quarantine
 
 ## Interpretation
 
-1. **Do not treat the 93%% population flag as "93%% bad Russian."** Every sampled row that carries the default reason is a *segmentation* quarantine candidate; `ru_quality_verdict` is deliberately `unknown_not_measured`.
+1. **Do not treat the 93% population flag as "93% bad Russian."** Every sampled row that carries the default reason is a *segmentation* quarantine candidate; `ru_quality_verdict` is deliberately `unknown_not_measured`.
 2. **Mass re-translate is not authorised** by this sample alone. Next step if RU quality is in doubt: a human/paid read of a smaller nested sample of the segmentation_flag class (e.g. 30 cards), not a full paid re-run of 10k rows.
 3. Machine-readable sample: `reports/pwg_ru_glyph_quarantine_sample_2026-08-01.json`.
 
