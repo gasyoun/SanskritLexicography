@@ -1,15 +1,31 @@
-# Pipeline architecture — `pwg_ru` / `mw_ru` (harvest-first)
+# Pipeline architecture — `pwg_ru` / `mw_ru` (harvest-first) — HISTORICAL
 
-> **⚠ STALENESS BANNER (added 02-07-2026, S10 architecture audit).** Parts of this
-> document describe the ~2026-06-15 state and are superseded. The canonical operator
-> path is now [`src/pilot/gen_opt_harness2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gen_opt_harness2.py)
-> → `run_pilot_wf.opt2.js` (batched+masked, `--selfheal --binary-split --output-budget`),
-> saved via [`save_and_audit.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/save_and_audit.py)
-> and promoted via [`src/promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_final_cards.py)
-> / [`src/promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py) —
-> the "Translation runner: TODO" and "Assembly: TODO" sections below are DONE. For the
-> audited, current call-graph see
-> [`ARCHITECTURE_AUDIT_2026-07-02.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ARCHITECTURE_AUDIT_2026-07-02.md).
+_Created: 09-07-2026 · Last updated: 03-08-2026_
+
+> **🔴 HISTORICAL DOCUMENT — superseded, do not operate from it (demoted 03-08-2026,
+> H2173 G9, on a human ruling).** This describes a design state that predates the
+> ENTIRE live lane. It is kept for provenance — how the engine was conceived — and is
+> no longer a description of how anything runs.
+>
+> **Live truth, in this order:**
+>
+> - [src/pilot/RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md) — the live operating procedure.
+> - [PIPELINE_HISTORY.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HISTORY.md) — how the lane got here, and every fix already made.
+> - [docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) — operator depth.
+>
+> **Why this doc could not simply be refreshed:** it was already re-banner-ed once
+> (02-07-2026) and went stale again within a week, because it duplicates a fast-moving
+> lane that two other documents already own. The [H2025 pipeline
+> audit](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_AUDIT_PWG_RU_H2025_01-08-2026.md)
+> §9 recorded three of its claims as live drift (D1/D2/D3); each is corrected in place
+> below so a reader who lands mid-document is not misled, but no section here is
+> maintained against the code.
+>
+> **What actually runs (H1110):** a profile-bound **headless CLI on manifest v2** —
+> [headless_worker.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/headless_worker.py)
+> / [coordinator.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py)
+> / [bounded_staged_run.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/bounded_staged_run.py).
+> The Max-Workflow route this document calls "live" is **retired**, forensics only.
 
 > Engineering reference (English) for the shared two-pipeline dictionary
 > translation engine. The editor-facing process notes are
@@ -25,10 +41,18 @@
 
 ---
 
-## Current production architecture (2026-06-28)
+## Production architecture as of 2026-06-28 — RETIRED (D1)
 
-The historical component notes below describe the design path. The live
-operator path is now the frequency-window Max workflow:
+> **🔴 D1 correction (03-08-2026, H2173 G9).** Everything in this section is the
+> **retired** Max-Workflow route. It stopped being the production path at H1110, when
+> the lane moved to the profile-bound headless CLI on manifest v2. The commands below
+> are kept verbatim as a record of the 28-06-2026 procedure — **do not run them as the
+> live lane**; use [RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md).
+> In particular `save_and_audit.py` is superseded by the worker's own `--output`
+> (D7), and promotion durability is now [promotion_journal.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/promotion_journal.py), not a receipt (D8).
+
+The historical component notes below describe the design path. The 28-06-2026
+operator path was the frequency-window Max workflow:
 
 ```powershell
 python src\pilot\root_window_status.py <root>
@@ -296,8 +320,26 @@ reference vs corpus-derived vs `mw_ru`-seed). The output of this layer is a
 
 ### (3) Translation runner — Claude Code on Max
 
+> **🔴 D2 + D3 correction (03-08-2026, H2173 G9).** Two claims in this subsection were
+> actively false, not merely dated:
+>
+> - **D2 — "no runner yet" is wrong.** The runner exists and **is the money path**:
+>   [headless_worker.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/headless_worker.py)
+>   (~1 250 lines), driven by [coordinator.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py)
+>   and [bounded_staged_run.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/bounded_staged_run.py).
+>   Every paid PWG→RU card since H1110 came through it.
+> - **D3 — there is no per-card LLM judge loop.** Acceptance is **deterministic gates**
+>   ([audit_window.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py)
+>   and the schema/fidelity checks) plus a **sampled** semantic judge queue — not an
+>   Opus pass over every card. The pinned generation model is **Sonnet 5**
+>   (`claude-sonnet-5`), recorded in each window's own `meta.gen_model`; the "Sonnet 4.6
+>   translates / Opus 4.8 judges every card" cascade below was never built as written.
+>
+> The numbered cascade is retained as the original design intent only.
+
 Translates only what the harvest layer left as a gap: the masked
-source-language prose / connective text. Then the judge/retranslate loop:
+source-language prose / connective text. Then the judge/retranslate loop
+(**as designed in June 2026 — not what runs**):
 
 1. **Sonnet 4.6** translates the masked German (or English) gaps — placeholders
    untouched, on the same positions.
@@ -306,7 +348,7 @@ source-language prose / connective text. Then the judge/retranslate loop:
    and the judge's comment.
 4. **DeepSeek** double-checks (cheap validation pass; §3b).
 
-- **Status: TODO (no runner yet).** The **prompts exist** — the 6-file kit
+- **Status: BUILT and live** (was "TODO (no runner yet)" — D2). The **prompts exist** — the 6-file kit
   (5 prompts + 1 README) [pwg_ru_prompts/](pwg_ru_prompts/):
   [1_perevod.txt](pwg_ru_prompts/1_perevod.txt),
   [2_qa_sudya_opus.txt](pwg_ru_prompts/2_qa_sudya_opus.txt),
@@ -338,7 +380,8 @@ the corpus) corroborate the referent but **never** decide correctness.
 
 - **Status: BUILT (deterministic gate)** — `corpus_gate.py`. The **LLM verdict
   step** (the `4_korpus_proverka.txt` prompt) is a prompt; wiring it into the
-  runner is **TODO**.
+  runner is **TODO**. (The *runner itself* is built and live — D2; only this
+  optional LLM verdict step remains unwired.)
 
 ### (5) Assembly — the richer output card
 
@@ -389,7 +432,7 @@ Russian meaning the harvest layer found, each carrying its provenance tag.
 | 0 | Source extractor + masker | **BUILT** — [src/pwg_mask.py](src/pwg_mask.py) (123,365/123,366 lossless) | **TODO** — analogous `mw_mask` (run exists; component not committed here) |
 | 1 | Corpus word-alignment lexicon builder (DeepSeek, one-time) | **TODO** — Python/OpenRouter script; corpus query plumbing reused | shared asset (Sanskrit→Russian; language-independent) |
 | 2 | Harvest layer (5 dicts + corpus-lexicon + `mw_ru` seed) | **BUILT** join + corpus query + heuristic ([src/corpus_gate.py](src/corpus_gate.py)); corpus-lexicon lookup & seed feed **TODO** | the `mw_ru` cards are an **input** to this layer for `pwg_ru` |
-| 3 | Translation runner (Sonnet → Opus judge → Opus re-translate; DeepSeek check) | **TODO** runner — prompts exist ([pwg_ru_prompts/](pwg_ru_prompts/)), workflow not written | run completed (see [mw_ru.md](mw_ru.md)) |
+| 3 | Translation runner | **BUILT and live** (D2 correction 03-08-2026) — [src/pilot/headless_worker.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/headless_worker.py) on manifest v2, driven by [coordinator.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/coordinator.py). No per-card LLM judge (D3): deterministic gates + a sampled judge queue | run completed (see [mw_ru.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/mw_ru.md)) |
 | 4 | Stage-4 corpus gate (non-blocking, two signals) | **BUILT** deterministic gate ([src/corpus_gate.py](src/corpus_gate.py)); LLM verdict wiring **TODO** | not part of `mw_ru` (new in `pwg_ru`) |
 | 5 | Assembly → source-tagged richer card | **TODO** | n/a (plain translation) |
 
@@ -432,3 +475,5 @@ Launch tomorrow, pilot first.
   queried (the sibling repo SamudraManthanam is read-only, never duplicated).
 - The future `mw_ru` working repo and SamudraManthanam are separate
   repositories; their technical artifacts are not duplicated into this one.
+
+_Dr. Mārcis Gasūns_

@@ -110,7 +110,12 @@ PROFILE_ROOT = r"D:\ClaudeTools\profiles"
 CAMPAIGN = "h963-c4-single-profile-gate0-2026-07-16"
 EVENTS = HERE / "output" / "h963_c4_gate0_probe_events.jsonl"
 PAYLOAD_BYTES = 6491          # repo default; actual prompt 6828 B (H909 runbook, v1.9.19)
-CEILING_MS = mao.PROBE_LATENCY_CEILING_MS   # 65 000 since MG's 31-07-2026 ruling
+# DERIVED, never restated — whatever `probe_log.CURRENT_POLICY` names today. It has been
+# 30 000 (v1), 65 000 (v2, MG's 31-07-2026 ruling) and is 80 000 (v3, H2138-derived
+# 02-08-2026) — which is exactly why this line must not carry a literal. A comment that
+# names one of those numbers goes stale the next time the policy advances and then
+# contradicts the code it annotates (H2173 G9 found it naming 65 000 after v3 had landed).
+CEILING_MS = mao.PROBE_LATENCY_CEILING_MS
 # WARM-UP POLICY (MG ruling 31-07-2026, first pass): the warm-up is no longer a latency
 # NO-GO input. A 131 737 ms warm-up next to a 31 623 ms measured call is cold-start cost,
 # not the workload the gate prices, and gating on it blocked a usable route. This restores

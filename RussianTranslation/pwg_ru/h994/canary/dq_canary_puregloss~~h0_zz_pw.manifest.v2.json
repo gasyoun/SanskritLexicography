@@ -308,6 +308,7 @@
  "budgets": {
   "timeout_floor_ms": 45000,
   "timeout_ceil_ms": 300000,
+  "max_agents": 18,
   "max_translate_agents": 13,
   "max_heal_agents": 5,
   "max_wide": 3,

@@ -138,8 +138,17 @@ def _append(row):
 
 
 def verdict_for(latency_ms, conn_errors, payload_bytes=None, kind=None,
-                policy='production_v1', schema_valid=None, api_ms=None):
+                policy=CURRENT_POLICY, schema_valid=None, api_ms=None):
     """The mechanical gate. Returns (verdict, reason).
+
+    G10 (H2173, audit F-B4): this default was frozen at `production_v1` while
+    `CURRENT_POLICY` advanced twice (v2, then v3). The failure was quiet in the safe
+    direction — v1's 30 000 ms wall ceiling is the STRICTEST of the three, so the default
+    lane judged live readings against a retired number and stamped the row `production_v1`.
+    Nothing was wrongly admitted, but the receipts named a policy that had not gated the
+    live route since 31-07-2026, and the v3 `api_ceil_ms` guard never ran at all (v1
+    carries none). Defaults now track `CURRENT_POLICY`, so a ceiling bump is still the one
+    edit the table promises; callers that must pin a historical policy pass it explicitly.
 
     `latency_ms` is wall `elapsed_ms` — the gating clock, MG 02-08-2026 (H2160 option A).
     `api_ms` is the envelope's `duration_api_ms`, checked against the policy's
@@ -170,8 +179,10 @@ def verdict_for(latency_ms, conn_errors, payload_bytes=None, kind=None,
 
 
 def cmd_append(a):
+    # G10 (H2173): `api_ms` was a `verdict_for` parameter with no CLI path, so the v3
+    # route guard could never fire on the append path — the one path that writes receipts.
     auto, reason = verdict_for(a.latency_ms, a.conn_errors, a.payload_bytes, a.kind,
-                               a.policy, a.schema_valid)
+                               a.policy, a.schema_valid, api_ms=getattr(a, 'api_ms', None))
     verdict = a.verdict or auto
     if a.verdict and a.verdict != auto:
         raise SystemExit('REFUSED: stated verdict %s contradicts mechanical %s (%s)'
@@ -188,6 +199,10 @@ def cmd_append(a):
         'run_id': a.run_id,
         'probe': {
             'latency_ms': a.latency_ms,
+            # H2095/H2138 decomposition: wall = duration_api_ms + in-CLI scaffolding.
+            # Recorded when the caller has it, so a row can be re-judged against a future
+            # policy instead of being stuck as one opaque wall number.
+            'api_ms': getattr(a, 'api_ms', None),
             'conn_errors': a.conn_errors,
             'payload_bytes': a.payload_bytes,
             'agent_model': a.agent_model,
@@ -395,7 +410,12 @@ def main():
                         'this flag) is NO-GO — see `probe_log.py prompt` (H462)'
                         % PAYLOAD_FLOOR_BYTES)
     p.add_argument('--agent-model', default='claude-sonnet-5')
-    p.add_argument('--policy', choices=sorted(POLICIES), default='production_v1')
+    # G10 (F-B4): tracks CURRENT_POLICY, not a frozen literal — see `verdict_for`.
+    p.add_argument('--policy', choices=sorted(POLICIES), default=CURRENT_POLICY)
+    p.add_argument('--api-ms', type=int,
+                   help='envelope duration_api_ms; checked against the policy api_ceil_ms '
+                        '(H2138 second, independent fail condition). Omit when the reading '
+                        'carries no decomposition — the gate then falls back to wall alone.')
     p.add_argument('--schema-valid', action='store_true', default=None,
                    help='measured response passed the representative output schema')
     p.add_argument('--lane', default='nominal medium50 (band-4 singleton)')

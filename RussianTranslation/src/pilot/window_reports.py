@@ -158,6 +158,12 @@ def build_production_metrics(args, wf_path=None, workflow_meta=None):
     When ``args.wall_clock_minutes`` is omitted, auto-derives from wf mtime and
     meta.generated_at (H1403 A2). Always stamps ``wall_clock_source`` so a missing
     number is distinguishable from "operator never passed the flag".
+
+    Every field here is OBSERVATIONAL — recorded onto the report/ledger and compared to
+    nothing (H2173 G10 / audit F-B8). The token slots are likewise reports of spend, not
+    ceilings; the enforced ceilings live in the manifest ``budgets`` block and are bound by
+    ``headless_worker`` (agent pools, ``timeout_ceil_ms``) and by the coordinator cost gate.
+    Read a number here as "what happened", never as "what was allowed".
     """
     wall_minutes, wall_source = derive_wall_clock_minutes(
         wf_path, workflow_meta, getattr(args, 'wall_clock_minutes', None))

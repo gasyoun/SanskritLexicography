@@ -11,6 +11,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 from execution_contract import (ActiveCallClaim, SCHEMA_V2, bind_output_meta,
                                 config_dir_fingerprint, validate_manifest,
                                 validate_profile)
+import probe_log
 from probe_log import verdict_for
 
 
@@ -73,9 +74,23 @@ def main():
                 raise AssertionError('two concurrent c4 claims were admitted')
         with ActiveCallClaim(manifest['execution']['config_dir_fingerprint'], locks):
             pass
-        assert verdict_for(29999, 0, 6000, 'warmup', schema_valid=True)[0] == 'GO'
-        assert verdict_for(30000, 0, 6000, 'warmup', schema_valid=True)[0] == 'NO-GO'
+        # H2173 G10: these three pinned 29999/30000 as the boundary, which silently encoded
+        # `verdict_for`'s then-default policy (`production_v1`). That default was itself the
+        # F-B4 defect — it stayed at v1 while CURRENT_POLICY advanced to v2 and then v3 — so
+        # the assertions passed for the wrong reason and would have had to be re-typed on
+        # every ceiling bump. Derive the boundary from the live policy instead; the INTENT
+        # (strictly-under passes, at-the-ceiling fails, an unvalidated schema always fails)
+        # is unchanged and now cannot go stale.
+        _live_ceil = probe_log.POLICIES[probe_log.CURRENT_POLICY]['latency_ceil_ms']
+        assert verdict_for(_live_ceil - 1, 0, 6000, 'warmup', schema_valid=True)[0] == 'GO'
+        assert verdict_for(_live_ceil, 0, 6000, 'warmup', schema_valid=True)[0] == 'NO-GO'
         assert verdict_for(1000, 0, 6000, 'warmup', schema_valid=None)[0] == 'NO-GO'
+        # The retired policies must still judge at their historical numbers — rows stamped
+        # with them were genuinely gated there, and re-pointing a name falsifies that record.
+        assert verdict_for(30000, 0, 6000, 'warmup', schema_valid=True,
+                           policy='production_v1')[0] == 'NO-GO'
+        assert verdict_for(29999, 0, 6000, 'warmup', schema_valid=True,
+                           policy='production_v1')[0] == 'GO'
 
         # --- Phase-2 pins (R8 dup keys, P-1 batches subset, P-3 route enforce, R9 stale lock) ---
         # R8: duplicate selected_keys rejected (multiset), not silently deduped by set().
