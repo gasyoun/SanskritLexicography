@@ -84,6 +84,18 @@ def judge_payload(res, expect_senses=DEFAULT_EXPECT_SENSES):
             reasons.append('%s: null card' % key)
             continue
         blob = json.dumps(card, ensure_ascii=False)
+        # H2174: the literal-marker scan reads TRANSLATED CONTENT only, never the
+        # card's free-text ``notes``. The curated canary fixture's portrait ``note``
+        # (pwg_ru/h994/canary/…portrait.json) contains the literal string "SAN-LOSS"
+        # and is fed to the model VERBATIM as prompt input, so every real canary run
+        # paraphrases it back into ``notes`` — observed identically in H1447 (22-07)
+        # and H2011 (02-08). Scanning the whole card therefore made this gate
+        # UNPASSABLE for the one fixture it exists to judge (the H2160
+        # "inert by construction" class, inverted: always-fail instead of
+        # always-pass). It stayed invisible because the selftest's clean_card
+        # carries no ``notes`` key at all. Sense loss is still caught — by the
+        # sense-count check above, which is the fixture's actual detector.
+        content_blob = json.dumps(card.get('records') or [], ensure_ascii=False)
         senses = sum(1 for rec in card.get('records') or []
                      for sense in rec.get('senses') or []
                      if (sense.get('russian') or '').strip())
@@ -97,7 +109,7 @@ def judge_payload(res, expect_senses=DEFAULT_EXPECT_SENSES):
             reasons.append('%s: unresolved TNMASK placeholder(s): %s'
                            % (key, ', '.join(hits[:5])))
         for marker in LITERAL_MARKERS:
-            if marker in blob:
+            if marker in content_blob:
                 marker_hits.append((key, marker))
                 reasons.append('%s: literal %s marker in card' % (key, marker))
     facts = {'keys': keys, 'sense_counts': sense_counts,
