@@ -92,6 +92,32 @@ PRESPLIT_GROUP_SENSE_CAP = 18    # AND at most this many fragments (== senses em
                    #  so a run of many tiny (0-<ls>) fragments can't silently pack >18 senses
                    #  into one call and re-trigger the sense-density failure. 18 < the
                    #  SENSE_PRESPLIT_BUDGET=20 whole-card ceiling, with margin.
+# H2248 (#983, 03-08-2026): AND a cap on the call's total VARIABLE WEIGHT — the card's
+# portrait (evidence) plus the group's fragment bytes. The two budgets above weigh only the
+# group's CONTENT (citation-units, fragment count) and were blind to the portrait, even
+# though `heal_group`/`fragment_prompt` re-send the whole portrait on EVERY fragment call
+# (H1339/B01 injects it so presplit giants are not translated evidence-blind). On H2174's w1
+# that made the budget blind to 68-94% of what each call actually carried:
+#
+#   call            portrait   content   WEIGHT   outcome
+#   sarvatra #g1       7 713       536    8 249   196 948 ms  ok
+#   sakft    #g1       9 166       791    9 957   232 636 ms  ok
+#   sarvatra #g2       7 713     2 300   10 013   289 585 ms  ok
+#   nakzatra #g1       9 761       598   10 359   176 871 ms  ok
+#   sakft    #g2       9 166     2 310   11 476   192 295 ms  ok
+#   nakzatra #g2       9 761     4 617   14 378   TIMEOUT (300 024 ms)
+#
+# The single call that died is the heaviest, by 25% over the heaviest success — and it is
+# heaviest because `nakzatra` has both the largest portrait AND a 3 236 B mega-fragment that
+# the citation-weighted sizer packed in for free (a byte-heavy, citation-light fragment costs
+# almost nothing on the `1 + <ls>` scale). 12 000 sits above every observed success (11 476)
+# and below the one failure, the same "set the cap above the observed ceiling" convention
+# KILL_SLOPE_MS uses. The SHARED framework prompt is deliberately NOT counted: it is byte-
+# identical on every call in a window, so it cannot discriminate between groups, and it is the
+# part prefix-caching actually reuses. Note the whole-card BATCH lane has always sized on
+# `skeleton + portrait` (see `sizer` in the batch section) — this makes the fragment lane
+# agree with the lane beside it rather than inventing a new rule.
+PRESPLIT_GROUP_CALL_WEIGHT = 12000   # --presplit-group-weight=N (0/off disables the cap)
 BINARY_SPLIT = True   # DEFAULT ON since 2026-07-02 (MG decision): when a whole batch call
                    #  fails/comes back malformed (not just individual cards inside it), bisect
                    #  the still-pending cards into two halves and retry each half recursively
@@ -460,6 +486,8 @@ def parse_args(argv):
             globals()['PRESPLIT_GROUP_CITE_BUDGET'] = int(a.split('=', 1)[1])
         elif a.startswith('--presplit-sense-cap='):       # H189: fragment (sense) cap per call
             globals()['PRESPLIT_GROUP_SENSE_CAP'] = int(a.split('=', 1)[1])
+        elif a.startswith('--presplit-group-weight='):    # H2248: portrait+bytes cap per call
+            globals()['PRESPLIT_GROUP_CALL_WEIGHT'] = int(a.split('=', 1)[1])
         elif a == '--no-kill-switch':                     # H189: disable the window budget switch
             globals()['KILL_SWITCH'] = False
         elif a == '--kill-switch':
@@ -543,7 +571,8 @@ def compress_rule3(tr):
     return tr2
 
 
-def _group_by_budget(items, sizer, budget, count_cap=None):
+def _group_by_budget(items, sizer, budget, count_cap=None,
+                     extra_sizer=None, extra_budget=None):
     """Greedily group `items` (kept in order) into batches whose summed sizer() stays
     <= budget; a single oversize item still gets its own group (never dropped).
 
@@ -553,13 +582,28 @@ def _group_by_budget(items, sizer, budget, count_cap=None):
     item count == senses the model must emit and a group of 40 size-1 fragments would
     re-trigger the very sense-density failure presplit exists to avoid. Default None
     preserves the original size-only behavior for every existing caller.
+
+    extra_sizer/extra_budget (H2248): an optional SECOND, independent dimension — a group
+    closes when EITHER budget would be exceeded. Added because the presplit lane needs to
+    bound a call's byte weight as well as its citation weight, and the two do not correlate:
+    `nakzatra`'s 3 236 B mega-fragment carries almost no citations, so the `1 + <ls>` sizer
+    priced it at nearly zero and packed it into the group that then died at the ceiling.
+    Both dimensions must be honoured together — capping only the larger of the two would let
+    the other dimension re-admit exactly the group being excluded.
     """
-    groups, cur, sz = [], [], 0
+    groups, cur, sz, esz = [], [], 0, 0
+    # `is not None`, not truthiness: an extra_budget of 0 is a MEANINGFUL budget (every item
+    # is oversize, so each takes its own group) and must not silently read as "disabled" —
+    # that is exactly the card whose fixed evidence already exceeds the cap.
+    use_extra = extra_sizer is not None and extra_budget is not None
     for it in items:
         isz = sizer(it)
-        if cur and (sz + isz > budget or (count_cap and len(cur) >= count_cap)):
-            groups.append(cur); cur, sz = [], 0
-        cur.append(it); sz += isz
+        eisz = extra_sizer(it) if use_extra else 0
+        if cur and (sz + isz > budget
+                    or (use_extra and esz + eisz > extra_budget)
+                    or (count_cap and len(cur) >= count_cap)):
+            groups.append(cur); cur, sz, esz = [], 0, 0
+        cur.append(it); sz += isz; esz += eisz
     if cur:
         groups.append(cur)
     return groups
@@ -1220,9 +1264,26 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
             # heal-of-a-failed-whole-card path, where small safe groups matter more).
             _cite_hit, _sense_hit = _presplit_hit(inputs[k]['ls'], frag_n[k], OUTPUT_BUDGET)
             if _cite_hit or _sense_hit:
+                # H2248: the portrait rides on EVERY fragment call of this card, so it is a
+                # per-card CONSTANT that the group's own bytes must fit around — the content
+                # allowance is what is left of the call-weight cap after the evidence block.
+                # A card whose portrait alone already exceeds the cap gets allowance 0, which
+                # `_group_by_budget` degrades to one-fragment-per-call (each oversize item
+                # still gets its own group) rather than refusing to group at all: that is the
+                # smallest call the lane can make, and the honest response to a card whose
+                # fixed evidence is itself over budget.
+                _portrait_b = len(inputs[k].get('portrait') or '')
+                _weight_allow = (max(0, PRESPLIT_GROUP_CALL_WEIGHT - _portrait_b)
+                                 if PRESPLIT_GROUP_CALL_WEIGHT else None)
+                if PRESPLIT_GROUP_CALL_WEIGHT and _weight_allow == 0:
+                    print('  presplit: %s portrait alone (%d B) exceeds the %d B call-weight '
+                          'cap — one fragment per call' % (k, _portrait_b,
+                                                           PRESPLIT_GROUP_CALL_WEIGHT))
                 groups = _group_by_budget(fl, lambda it: 1 + it['ls'],
                                           PRESPLIT_GROUP_CITE_BUDGET,
-                                          count_cap=PRESPLIT_GROUP_SENSE_CAP)
+                                          count_cap=PRESPLIT_GROUP_SENSE_CAP,
+                                          extra_sizer=lambda it: len(it['skeleton']),
+                                          extra_budget=_weight_allow)
             else:
                 groups = _group_by_budget(fl, lambda it: 1 + it['ls'], SELFHEAL_GROUP_BUDGET)
             frags[k] = [[{'skeleton': it['skeleton'], 'ls': it['ls'], 'sk': it['sk'],
@@ -1418,6 +1479,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         # H189 presplit-lane amortization budgets (fragments packed per agent() call).
         'presplit_group_cite_budget': PRESPLIT_GROUP_CITE_BUDGET,
         'presplit_group_sense_cap': PRESPLIT_GROUP_SENSE_CAP,
+        'presplit_group_call_weight': PRESPLIT_GROUP_CALL_WEIGHT,
         'presplit_keys': presplit,
         'tm': os.path.basename(tm_path) if tm_path else None,
         'tm_auto': bool(tm_auto),

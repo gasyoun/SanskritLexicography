@@ -3298,6 +3298,70 @@ def test_perf_preflight_dense_presplit():
         fail('dense presplit key must report a nonzero expected agent lane')
 
 
+def test_presplit_group_call_weight_caps_portrait_plus_bytes_h2248():
+    """H2248 (#983): a presplit group's CALL WEIGHT — the card's portrait plus the group's
+    fragment bytes — must stay within PRESPLIT_GROUP_CALL_WEIGHT.
+
+    RED before the fix: the presplit sizer weighed only `1 + <ls>` (citation units) with a
+    fragment count cap, and was blind to the portrait that `heal_group` re-sends on EVERY
+    fragment call. On H2174's live w1 that hid 68-94% of each call's real weight, and packed
+    `nakzatra`'s 3 236 B / citation-light mega-fragment into a group whose true weight was
+    14 378 B — the heaviest call of the window, and the only one that died at the ceiling
+    (300 024 ms). Every call that landed weighed <= 11 476 B.
+
+    The fixture reproduces exactly that shape: a big portrait plus a byte-heavy but
+    citation-light fragment that the citation sizer prices at almost nothing. Under the old
+    grouping every fragment fits in one group (total cite weight is far under 60 and the
+    count is under 18), so the group's weight lands ~14 KB and this test FAILS.
+    """
+    import gen_opt_harness2 as gh
+
+    portrait = 'E' * 9761                      # nakzatra's real portrait size
+    frags = ([{'skeleton': 'x' * n, 'ls': 1} for n in (73, 230, 212, 83)]
+             + [{'skeleton': 'x' * n, 'ls': 1} for n in (335, 103, 672, 131, 140)]
+             + [{'skeleton': 'x' * 3236, 'ls': 1}])   # the citation-light mega-fragment
+    allow = max(0, gh.PRESPLIT_GROUP_CALL_WEIGHT - len(portrait))
+    groups = gh._group_by_budget(frags, lambda it: 1 + it['ls'],
+                                 gh.PRESPLIT_GROUP_CITE_BUDGET,
+                                 count_cap=gh.PRESPLIT_GROUP_SENSE_CAP,
+                                 extra_sizer=lambda it: len(it['skeleton']),
+                                 extra_budget=allow)
+    if not groups:
+        fail('presplit grouping returned no groups')
+    for gi, grp in enumerate(groups, 1):
+        content = sum(len(it['skeleton']) for it in grp)
+        weight = len(portrait) + content
+        # A group holding ONE fragment is already the smallest call the lane can make;
+        # an intrinsically oversize fragment is allowed to exceed (never dropped).
+        if len(grp) > 1 and weight > gh.PRESPLIT_GROUP_CALL_WEIGHT:
+            fail('presplit group #g%d weighs %d B (portrait %d + content %d), over the '
+                 '%d B call-weight cap — the H2174 nakzatra#g2 shape (14 378 B) that died '
+                 'at the kill ceiling' % (gi, weight, len(portrait), content,
+                                          gh.PRESPLIT_GROUP_CALL_WEIGHT))
+    # The mega-fragment must be isolated rather than packed beside its siblings.
+    mega = [gi for gi, grp in enumerate(groups, 1)
+            if any(len(it['skeleton']) == 3236 for it in grp)]
+    if len(mega) != 1 or len(groups[mega[0] - 1]) != 1:
+        fail('the 3 236 B citation-light fragment must get its own call, not ride along '
+             'with siblings the citation sizer priced identically')
+
+
+def test_presplit_group_call_weight_zero_allowance_degrades_to_one_per_call_h2248():
+    """A card whose portrait ALONE exceeds the call-weight cap gets a 0 B content allowance.
+    That must degrade to one fragment per call (the smallest call the lane can make), not
+    silently read as "no cap" — the `if extra_budget` truthiness bug this guards against
+    would have let exactly the largest-portrait cards regroup without any byte bound."""
+    import gen_opt_harness2 as gh
+
+    frags = [{'skeleton': 'x' * n, 'ls': 1} for n in (100, 200, 300)]
+    groups = gh._group_by_budget(frags, lambda it: 1 + it['ls'], 60, count_cap=18,
+                                 extra_sizer=lambda it: len(it['skeleton']),
+                                 extra_budget=0)
+    if [len(g) for g in groups] != [1, 1, 1]:
+        fail('a 0 B content allowance must yield one fragment per call, got %r'
+             % [len(g) for g in groups])
+
+
 def test_perf_preflight_presplit_counts_fragments_not_one():
     """agent_expected_after_tm for a presplit giant must be its true fragment-GROUP count,
     not 1 — the old len(presplit) formula underestimated vid's real 102-agent run as 13.
@@ -8707,6 +8771,8 @@ def main():
         test_degenerate_passthrough_rejects_glosses,
         test_perf_preflight_small_tm_and_no_tm,
         test_perf_preflight_dense_presplit,
+        test_presplit_group_call_weight_caps_portrait_plus_bytes_h2248,
+        test_presplit_group_call_weight_zero_allowance_degrades_to_one_per_call_h2248,
         test_perf_preflight_presplit_counts_fragments_not_one,
         test_perf_preflight_degenerate_zero_agent,
         test_perf_preflight_multi_root_matrix_and_order,
