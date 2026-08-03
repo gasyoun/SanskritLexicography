@@ -237,27 +237,93 @@ def test_cli_spawns_from_a_bare_cwd():
     print('  H2158 bare cwd: CLI spawned from %s (no CLAUDE.md, no .git)' % cwd)
 
 
-def test_bare_cwd_ancestry_is_reported_even_though_it_is_not_yet_clean():
-    """H2189: `bare_cli_cwd()` rejects an ancestor with `CLAUDE.md`/`.git` -- not one with
-    `.claude/CLAUDE.md`. On a Windows operator box the bare dir sits under %TEMP%, i.e.
-    under the user profile, where exactly that file lives, so ~33 KB of operator memory
-    still reaches every paid call. Pinned as a MEASUREMENT, not as a passing assertion:
-    the fix is the opt-in `--safe-mode` below (which disables memory discovery outright),
-    and a test that demanded a clean ancestry would fail on the very box this ships to.
+def test_bare_cwd_ancestry_is_clean_or_none():
+    """H2249: the spawn dir's whole ANCESTRY must be memory-free, not just the dir itself.
+
+    Was a MEASUREMENT under H2189 (it would have failed on the shipping box: `%TEMP%` sits
+    under the Windows user profile, so 32 779 B of operator `CLAUDE.md` + `.claude/rules`
+    reached every paid call). H2249 made the helper derive and VERIFY candidates, so this is
+    now an assertion. Both legs are real outcomes: a verified directory, or None -- never a
+    directory that merely looks empty.
     """
     from h2189_min_profile import cwd_ancestry_scan
     cwd = h.bare_cli_cwd()
     if cwd is None:
-        print('  H2189: bare_cli_cwd() failed safe (None); nothing to scan')
+        print('  H2249: bare_cli_cwd() failed safe (None) -- no candidate verified clean')
         return
     hits = cwd_ancestry_scan(cwd)
     leaked = sum(hit['bytes'] for hit in hits)
-    for hit in hits:
-        assert not os.path.samefile(os.path.dirname(hit['path']), cwd) \
-            if os.path.exists(os.path.dirname(hit['path'])) else True
-    print('  H2189 ancestry of %s: %d byte(s) across %d ancestor file(s)%s'
-          % (cwd, leaked, len(hits),
-             '' if not hits else ' -- removed only by --safe-mode, not by bare cwd'))
+    assert not hits, ('H2249: bare_cli_cwd() returned %r whose ancestry still injects %d '
+                      'byte(s): %s' % (cwd, leaked, [hit['path'] for hit in hits]))
+    print('  H2249 ancestry of %s: clean -- 0 injectable bytes' % cwd)
+
+
+def test_bare_cwd_candidates_are_derived_not_hardcoded():
+    """A machine-specific path in the source is an explicit `Fail =` for H2249.
+
+    The candidate list must come from the environment (an operator override, the temp dir,
+    the roots the OS reports) -- so on a box where none of them verifies the helper returns
+    None rather than a path that happens to exist on the author's machine.
+    """
+    cands = h.bare_cli_cwd_candidates()
+    assert cands, 'no spawn-directory candidates derived at all'
+    assert len(cands) == len({os.path.normcase(os.path.abspath(c)) for c in cands}), \
+        'candidate list has duplicates: %r' % (cands,)
+    for cand in cands:
+        assert os.path.basename(cand) == h.BARE_CLI_CWD_NAME or cand == os.path.abspath(
+            os.environ.get(h.BARE_CLI_CWD_ENV) or ''), \
+            'candidate %r is neither the stable name nor the operator override' % cand
+    override = os.path.join(tempfile.mkdtemp(prefix='h2249_ovr_'), 'spawn')
+    prev = os.environ.get(h.BARE_CLI_CWD_ENV)
+    try:
+        os.environ[h.BARE_CLI_CWD_ENV] = override
+        assert os.path.abspath(override) == os.path.abspath(h.bare_cli_cwd_candidates()[0]), \
+            'the operator override is not honoured first'
+    finally:
+        if prev is None:
+            os.environ.pop(h.BARE_CLI_CWD_ENV, None)
+        else:
+            os.environ[h.BARE_CLI_CWD_ENV] = prev
+    print('  H2249 candidates (derived): %s' % ', '.join(cands))
+
+
+def test_bare_cwd_refuses_a_dirty_ancestry_rather_than_returning_it():
+    """The exact class H2249 fixes: a directory that is empty but whose PARENT carries memory.
+
+    Fed through the override so no real candidate is touched. Silently returning this is what
+    shipped 32 779 B into every paid call for a day; the required outcome is None.
+    """
+    root = tempfile.mkdtemp(prefix='h2249_dirty_')
+    os.makedirs(os.path.join(root, '.claude'))
+    with open(os.path.join(root, '.claude', 'CLAUDE.md'), 'w', encoding='utf-8') as fh:
+        fh.write('operator memory that must never reach a paid call\n')
+    spawn = os.path.join(root, 'empty_child')
+    os.makedirs(spawn)
+    assert not h.bare_cli_cwd_ancestry_clean(spawn), \
+        'an ancestor .claude/CLAUDE.md was not detected -- this is the H2249 defect itself'
+    prev, prev_cache = os.environ.get(h.BARE_CLI_CWD_ENV), list(h._BARE_CLI_CWD_CACHE)
+    try:
+        os.environ[h.BARE_CLI_CWD_ENV] = spawn
+        h._BARE_CLI_CWD_CACHE.clear()
+        resolved = h.bare_cli_cwd()
+        assert resolved is None or os.path.normcase(os.path.abspath(resolved)) \
+            != os.path.normcase(os.path.abspath(spawn)), \
+            'bare_cli_cwd() handed back a dirty-ancestry directory: %r' % resolved
+        assert resolved is None or not cwd_ancestry_scan_ref()(resolved), \
+            'the fallback candidate is not clean either: %r' % resolved
+    finally:
+        h._BARE_CLI_CWD_CACHE[:] = prev_cache
+        if prev is None:
+            os.environ.pop(h.BARE_CLI_CWD_ENV, None)
+        else:
+            os.environ[h.BARE_CLI_CWD_ENV] = prev
+    print('  H2249 dirty ancestry refused (fell through to %r)' % resolved)
+
+
+def cwd_ancestry_scan_ref():
+    """The ONE ancestor walker, imported lazily so the selftest cannot fork a second one."""
+    from h2189_min_profile import cwd_ancestry_scan
+    return cwd_ancestry_scan
 
 
 def test_safe_mode_is_opt_in_and_off_by_default():
@@ -1751,7 +1817,9 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_h2091_948_account_refusal_aborts_before_any_bisect()
     test_kill_ceiling_in_step_with_harness()
     test_cli_spawns_from_a_bare_cwd()
-    test_bare_cwd_ancestry_is_reported_even_though_it_is_not_yet_clean()
+    test_bare_cwd_ancestry_is_clean_or_none()
+    test_bare_cwd_candidates_are_derived_not_hardcoded()
+    test_bare_cwd_refuses_a_dirty_ancestry_rather_than_returning_it()
     test_safe_mode_is_opt_in_and_off_by_default()
     test_safe_mode_is_carried_when_the_manifest_requests_it()
     test_safe_mode_degrades_loudly_when_the_cli_cannot_do_it()
