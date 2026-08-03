@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.139.0] - 2026-08-03
+
 ### Added
 - **A committed builder for the canary manifest (H2174, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** new [`canary_manifest_build.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/canary_manifest_build.py) emits an executable manifest v2 + real lane preflight + the `--manifest-sha256` for the curated `dq_canary_puregloss~~h0_zz_pw` control, bound to any `--profile-slot`. Closes the gap [H2044](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2044-Opus_SanskritLexicography_g46-pwg-live-health-reprobe_31.07.26.md) recorded as terminal `HEALTH_GO_CANARY_UNSPENT` — the fixture existed but "the manifest itself does not, and neither does anything that builds it", so every canary before this was hand-authored folklore on the money contour. Composes `gen_opt_harness2.py` (via `PWG_INPUT_DIR`) with `perf_preflight.py --json`; it prepares only, never spends. Note `max_account_orchestrator.write_synthetic_preflight` does **not** work here — `headless_worker` refuses it with "synthetic probe preflight cannot authorize manifest execution".
 
