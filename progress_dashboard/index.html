@@ -223,6 +223,7 @@
 <p class="mut">Sense-rows written into the RU spine (<code>pwg_ru_translated.jsonl</code>), and how many
   have passed <em>human</em> review versus still carrying only the AI first pass.</p>
 <div class="bar-wrap" id="reviewbar"></div>
+<p class="mut" id="g5queue"></p>
 
 <h2>Frequency coverage — how much of PWG is even in scope</h2>
 <p class="mut">Only DCS-attested headwords are targeted first (corpus-frequency route). This is the
@@ -389,6 +390,12 @@ function renderProgress(d) {
            `${fmt(approved)} <span class="mut">(${pct(approved)}%)</span>`) +
     (other ? barRow('Other / unknown status', '', other, st.senses, 'c-univ',
            `${fmt(other)} <span class="mut">(${pct(other)}%)</span>`) : '');
+
+  const rq = d.review_queue || {};
+  const g5El = document.getElementById('g5queue');
+  g5El.textContent = rq.measured
+    ? `G5 live-review queue: ${fmt(rq.g5_open)} open / ${fmt(rq.g5_total)} across ${rq.sheet_count} sheet(s) (aggregate count only — sheet content is local-only editorial data, not published).`
+    : 'G5 live-review queue: no local sheet data on this build (measured only when a review sheet exists on the building machine).';
 
   const cb = document.getElementById('covbar');
   cb.innerHTML =
@@ -772,6 +779,9 @@ async function renderTrends() {
     if ((s = pick('senses')).length) line(el, s, 'Sense-rows translated');
     if ((s = pick('verb_promoted')).length) line(el, s, 'Verb roots promoted');
     if ((s = pick('coverage_pct')).length) line(el, s, 'DCS coverage', '%');
+    if ((s = pick('approved')).length) line(el, s, 'Approved (human signed off)');
+    if ((s = pick('needs_review')).length) line(el, s, 'Needs review (queued)');
+    if ((s = pick('g5_open')).length) line(el, s, 'G5 live-review queue — open');
   }
 }
 

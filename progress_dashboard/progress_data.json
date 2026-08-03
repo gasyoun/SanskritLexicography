@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-02T15:40:00Z",
-  "snapshot_date": "2026-08-02",
+  "generated_at": "2026-08-03T10:28:16Z",
+  "snapshot_date": "2026-08-03",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
   "kitchen_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
@@ -55,5 +55,19 @@
     "pairs_measured": true,
     "recall_pct": 95.4,
     "recall_measured": false
+  },
+  "review_queue": {
+    "measured": true,
+    "sheet_count": 1,
+    "g5_total": 150,
+    "g5_decided": 5,
+    "g5_open": 145,
+    "sheets": [
+      {
+        "sheet_id": "g5-live-queue-batch1-2026-07-25",
+        "open": 145,
+        "total": 150
+      }
+    ]
   }
 }
