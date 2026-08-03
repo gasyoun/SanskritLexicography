@@ -197,6 +197,9 @@
   <div class="panel"><h3>Article-site parity</h3><div id="parityBody" class="note">—</div></div>
   <div class="panel"><h3>Idle reason mix</h3><div id="idleReasonBody" class="note">—</div></div>
 </div>
+<div class="section-grid">
+  <div class="panel"><h3>Promotion vs generation (B6)</h3><div id="promoteBody" class="note">—</div></div>
+</div>
 
 <h3>Campaign calendar</h3>
 <p class="mut" id="calLegend">cards/day · amber outline = idle day (≥1h idle, 0 cards)</p>
@@ -667,6 +670,27 @@ function renderKitchen(k) {
       parityEl.innerHTML =
         `<p><span class="badge">measured: false</span> ${esc(par.note || 'article_site not available')}</p>` +
         (par.store_roots != null ? `<p class="mut">Store roots known: ${fmt(par.store_roots)}</p>` : '');
+    }
+  }
+
+  // B6 promotion vs generation — weekly + lifetime store growth vs clean/promoted outcome
+  const pvg = k.promote_vs_generate || {};
+  const promoteEl = document.getElementById('promoteBody');
+  if (promoteEl) {
+    if (pvg.measured) {
+      const w = pvg.weekly || {};
+      const lt = pvg.lifetime || {};
+      promoteEl.innerHTML =
+        `<p>This week — cards generated <b>${fmt(w.cards_generated)}</b> · ` +
+        `clean ledger windows <b>${fmt(w.clean_windows)}</b> / ${fmt(w.windows_total)} · ` +
+        `promote events <b>${w.promote_events != null ? fmt(w.promote_events) : '—'}</b></p>` +
+        `<p>Lifetime — cards generated <b>${fmt(lt.cards_generated)}</b> · ` +
+        `clean ledger windows <b>${fmt(lt.clean_windows)}</b> / ${fmt(lt.windows_total)}` +
+        `${lt.clean_window_pct != null ? ` (${lt.clean_window_pct}%)` : ''} · ` +
+        `promote events <b>${lt.promote_events != null ? fmt(lt.promote_events) : '—'}</b></p>` +
+        `<p class="mut">${esc(pvg.promote_events_source || '')}</p>`;
+    } else {
+      promoteEl.innerHTML = '<p class="mut">no ledger/store data yet</p>';
     }
   }
 
