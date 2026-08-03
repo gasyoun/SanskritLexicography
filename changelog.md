@@ -14,6 +14,10 @@ not an error.
 
 ## [Unreleased]
 
+## [1.138.1] - 2026-08-03
+### Fixed
+- **H2116 dual-run compare — independent re-verify of PR #964's offline pwg_ru batch (Sonnet 5 `claude-sonnet-5`, 03-08-2026):** residual for the H2005/gloss_lang-§464/glyph-quarantine override lane Grok 4.5 executed in [#964](https://github.com/gasyoun/SanskritLexicography/pull/964). All 5 deliverables independently re-verified against source + selftests and classified identical/equivalent/conflicting/net-new: `build_article_site._ls_visible_display` (H2005 RU `ed. Bomb.` display) + its selftest — **equivalent** (7/7 pass, resolver/store correctly isolated from RU display). `pwg_mask.looks_english_content` strong/weak split (§464 FP fix) — **equivalent**, plus a **net-new** full-corpus re-measurement (192,763 spans vs. §464's original 15,901) that PR #964 never ran — 0% German-looking false positives post-fix on both spans FINDINGS §464 named by example, closing the "needs its own measured A/B" gap §464 explicitly deferred. Glyph quarantine sample script/report — **conflicting (minor)**: fixed a literal `%%` in the report template that rendered `93%%` instead of `93%`. A2/A6 already-shipped verify memo — **conflicting (minor)**: fixed a mis-citation crediting the O(n²) residual-ledger fix to H1811 (it is actually H1940, commit `a75eaa17`). No deliverable required re-implementation. Memo: [H2116_DUAL_RUN_COMPARE_2026-08-03.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H2116_DUAL_RUN_COMPARE_2026-08-03.md) · [PR #1068](https://github.com/gasyoun/SanskritLexicography/pull/1068).
+
 ## [1.137.13] - 2026-08-03
 
 ### Changed
