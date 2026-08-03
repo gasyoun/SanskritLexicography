@@ -656,10 +656,30 @@ matters; never reuse H1447's GO a day later.
 | cost | **$0.573**, `cost_evaluable=true` |
 | `--max-agents` | **1** is correct **only** for this single-key canary |
 
-Command shape (illustrative): `headless_worker.py <manifest> --output … --status-out …
---only-profile c4 --max-agents 1 --timeout 300` with `CLAUDE_CONFIG_DIR` bound to
-the c4 profile. Synthetic output is **never** promoted
-(`provenance_class = synthetic_control`).
+**The real command (H2245 — no longer "illustrative").** Build the manifest, then fire it.
+Step 1 is offline and spends nothing; only step 2 is a paid call.
+
+```
+python src/pilot/canary_manifest_build.py --profile-slot c4 \
+    --config-dir "D:\ClaudeTools\profiles\claude4\.claude" --outdir src/pilot/output/<hid>
+```
+
+It prints the manifest, harness, preflight and the `sha256` that step 2 needs, then the
+exact `headless_worker.py` invocation to paste — `--only-profile c4 --max-agents 1
+--timeout 300 --max-calls 3 --manifest-sha256 <sha> --preflight <path>
+--call-reservation <path> --run-id <run-id>`. `--max-agents 1` is correct **only** here
+(single-key canary); copying it onto a multi-key window re-creates the only-b0 starvation
+class. Judge with [`canary_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/canary_gate.py)
+`judge`. Synthetic output is **never** promoted (`provenance_class =
+synthetic_control`; the promoter's C-05 refusal is designed behaviour, not a failure).
+
+A known-good manifest is committed beside the fixture —
+[`dq_canary_puregloss~~h0_zz_pw.manifest.v2.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h994/canary/dq_canary_puregloss~~h0_zz_pw.manifest.v2.json)
+— so a fresh build can be diffed against it;
+[`canary_manifest_build_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/canary_manifest_build_selftest.py)
+does exactly that (wired into `window_selftest.py`). The canary rides the **production**
+`nominal_masked` prompt path: on pure gloss the mask is provably an identity transform
+(zero `{Tn}` placeholders), so no canary-specific prompt variant exists or is wanted.
 
 > **`--timeout` is part of the ceiling, not just a safety net (#983, 02-08-2026).** The
 > effective per-call bound is `min(--timeout × 1000, budgets.timeout_ceil_ms,

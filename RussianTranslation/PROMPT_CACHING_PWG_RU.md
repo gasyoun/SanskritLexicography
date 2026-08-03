@@ -186,7 +186,7 @@ provider that partial-prefix-matches the CLI route.
 **Gates:** `headless_worker_selftest` PASS (new
 `test_h2191_prompt_is_assembled_stable_left` pins the order, single-occurrence of every
 segment, the `split_prompt` byte-identity and the absence of the old JS order) ·
-`window_selftest` 201/201 · `h2189_profile_ab_selftest` 12/12 ·
+`window_selftest` 202/202 · `h2189_profile_ab_selftest` 12/12 ·
 `h2158_route_ab.py --check` byte-identical on 3 real cards · LANG_PARITY 91 entries,
 32 re-derived (SHARED/GAP stand; zero language-keyed tokens in the diff).
 
