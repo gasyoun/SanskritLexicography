@@ -439,8 +439,50 @@ def cost_honesty(econ: dict, spend: dict) -> dict:
     }
 
 
+def _mean_roots_promoted_per_active_day(rt: Path, promoted_roots: set) -> tuple:
+    """Mean count of newly-promoted verb roots per active day.
+
+    A root's "promotion day" is the latest store provenance.generated_at date
+    among its cards — the day its last card landed. Only roots already in
+    ``promoted_roots`` (worklist done_promoted) are counted, so unrelated
+    non-verb store rows (other translation batches sharing the same store
+    file) don't dilute the rate.
+    """
+    if not promoted_roots:
+        return None, 0
+    store = rt / "src" / "pwg_ru_translated.jsonl"
+    if not store.exists():
+        return None, 0
+    last_day_by_root: dict = {}
+    with store.open(encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            prov = row.get("provenance") or {}
+            root = prov.get("root")
+            ts = prov.get("generated_at")
+            if not root or not ts or root not in promoted_roots:
+                continue
+            day = ts[:10]
+            if root not in last_day_by_root or day > last_day_by_root[root]:
+                last_day_by_root[root] = day
+    if not last_day_by_root:
+        return None, 0
+    by_day: dict = {}
+    for day in last_day_by_root.values():
+        by_day[day] = by_day.get(day, 0) + 1
+    active_days = len(by_day)
+    rate = round(sum(by_day.values()) / active_days, 3) if active_days else None
+    return rate, active_days
+
+
 def eta_verb(rt: Path, speed: dict) -> dict:
-    """K4 — projected days to finish verb DCS scope at 14d active-day rate."""
+    """K4 — projected days to finish verb DCS scope at a roots/active-day rate."""
     wl = rt / "src" / "pilot" / "output" / "verb_batch_worklist.json"
     if not wl.exists():
         return {"measured": False}
@@ -462,34 +504,31 @@ def eta_verb(rt: Path, speed: dict) -> dict:
     remaining = None
     if isinstance(promoted, int) and isinstance(scope, int):
         remaining = max(0, scope - promoted)
-    rate = speed.get("mean_cards_per_active_day_14d")
-    # rate is cards/day not roots/day — convert roughly via mean senses? Keep as
-    # cards/day and also project roots using ledger mean translated if possible.
-    est_days = None
-    basis = None
-    if remaining is not None and isinstance(rate, (int, float)) and rate > 0:
-        # Without roots/day, use remaining roots as if 1 "unit" ~ mean cards/root from store is unknown.
-        # Conservative: treat remaining * as roots needing work; use rate as cards/day only for card ETA.
-        est_days = None
-        basis = "cards_rate_only"
+
+    promoted_roots_raw = v.get("done_promoted")
+    promoted_roots = set(promoted_roots_raw) if isinstance(promoted_roots_raw, list) else set()
+    rate, active_days = _mean_roots_promoted_per_active_day(rt, promoted_roots)
+    est_days = (
+        round(remaining / rate, 1)
+        if remaining is not None and isinstance(rate, (int, float)) and rate > 0
+        else None
+    )
     return {
         "measured": promoted is not None and scope is not None,
         "verb_promoted": promoted,
         "verb_scope_dcs": scope,
         "verb_remaining": remaining,
         "verb_pct": round(100 * promoted / scope, 2) if scope else None,
-        "mean_cards_per_active_day_14d": rate,
-        "estimated_days_at_14d_card_rate": (
-            round(remaining / rate, 1)
-            if remaining is not None and isinstance(rate, (int, float)) and rate > 0
-            else None
-        ),
+        "mean_roots_promoted_per_active_day": rate,
+        "roots_promoted_active_days_sampled": active_days,
+        "estimated_days_at_roots_per_day_rate": est_days,
         "estimate_label": "estimate",
         "note": (
-            "ETA divides remaining DCS-attested verb roots by mean cards/active-day (14d). "
-            "Units differ (roots vs cards) — treat as order-of-magnitude only, not a schedule."
+            "ETA divides remaining DCS-attested verb roots by the mean roots promoted "
+            "per active day (from store provenance timestamps of already-promoted roots) — "
+            "rate unit is roots/day, matching the remaining-roots numerator; still an estimate."
         ),
-        "basis": basis or "verb_remaining / mean_cards_per_active_day_14d",
+        "basis": "verb_remaining / mean_roots_promoted_per_active_day",
     }
 
 
