@@ -150,6 +150,46 @@ def store_depth():
     }
 
 
+def review_queue():
+    """G5 live-review-sheet open depth (B5, H2235).
+
+    G5 sheet decision files (`review/g5-live-queue-*_decisions.json`) are
+    gitignored — they carry reviewer notes on individual PWG cards, which is
+    private editorial content. Only the aggregate open/decided/total counts
+    are surfaced here, never a sheet path or item content.
+    """
+    review_dir = RT / "review"
+    if not review_dir.is_dir():
+        return {"measured": False}
+    files = sorted(review_dir.glob("g5-live-queue-*_decisions.json"))
+    if not files:
+        return {"measured": False}
+    total = decided = open_ = 0
+    sheets = []
+    for f in files:
+        data = None
+        try:
+            with f.open(encoding="utf-8-sig") as fh:
+                data = json.load(fh)
+        except Exception:  # noqa: BLE001 — a malformed sheet must not crash the build
+            continue
+        items = data.get("items") or []
+        sheet_decided = sum(1 for it in items if it.get("decision"))
+        sheet_open = len(items) - sheet_decided
+        total += len(items)
+        decided += sheet_decided
+        open_ += sheet_open
+        sheets.append({"sheet_id": data.get("sheet_id"), "open": sheet_open, "total": len(items)})
+    return {
+        "measured": True,
+        "sheet_count": len(files),
+        "g5_total": total,
+        "g5_decided": decided,
+        "g5_open": open_,
+        "sheets": sheets,
+    }
+
+
 def coverage():
     f = _load_json("src/pilot/output/scale_manifest.freq.json")
     attested = len(f) if isinstance(f, list) else None
@@ -189,6 +229,7 @@ def main():
     st = store_depth()
     cov = coverage()
     cor = corpus()
+    rq = review_queue()
 
     data = {
         "generated_at": generated_at,
@@ -201,6 +242,7 @@ def main():
         "store": st,
         "coverage": cov,
         "corpus": cor,
+        "review_queue": rq,
     }
 
     (OUT / "progress_data.json").write_text(
@@ -228,6 +270,8 @@ def main():
         "approved": rb.get("approved"),
         "ai_translated": rb.get("ai_translated"),
         "needs_review": rb.get("needs_review"),
+        "g5_open": rq.get("g5_open") if rq.get("measured") else None,
+        "g5_total": rq.get("g5_total") if rq.get("measured") else None,
     }
     ts["snapshots"] = [s for s in ts.get("snapshots", []) if s.get("date") != today] + [row]
     ts["snapshots"].sort(key=lambda s: s["date"])
@@ -242,6 +286,8 @@ def main():
     print(f"  store:       {st.get('senses')} senses across {st.get('roots')} roots")
     print(f"  coverage:    {cov.get('pct')}% DCS-attested ({cov.get('dcs_attested_headwords')}/{cov.get('total_headwords')})")
     print(f"  corpus/TM:   {cor.get('pairs')} pairs, {cor.get('recall_pct')}% recall")
+    if rq.get("measured"):
+        print(f"  G5 queue:    {rq.get('g5_open')} open / {rq.get('g5_total')} across {rq.get('sheet_count')} sheet(s)")
 
 
 if __name__ == "__main__":
