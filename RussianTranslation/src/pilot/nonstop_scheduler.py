@@ -9,6 +9,10 @@ systemd timer on samskrte.ru) fires this hourly. A tick is:
     live gate (health probe, fallback roster c4->c1->c5->c6 per R5.1) -> NO-GO? skip
     canary receipt fresh?           -> absent/stale? run --canary-cmd or skip
     weekly cost ceiling (R3.2)      -> exhausted? skip until reset
+    auto-promote only: fresh R4.1 spotcheck? -> absent? REFUSE the window (H2264:
+                    the halt rule is auto-promote's safety case, so a lane may not
+                    promote unsupervised; lanes without --auto-promote-until skip
+                    this gate entirely)
     bounded window (--execute --auto-promote-until ..., H2157 ceilings, H2159
                     canary receipt; the headless machinery keeps the H2158
                     bare-cwd rule — this module NEVER overrides the CLI cwd)
@@ -43,6 +47,7 @@ for p in (HERE, SRC):
 
 import data_root as dr                     # noqa: E402
 import lane_guard                          # noqa: E402
+import lane_spotcheck_tick                 # noqa: E402
 
 SCHEMA = 'pwg.scheduler_tick.v1'
 
@@ -291,6 +296,21 @@ def tick(cfg, runners):
         remaining = ceiling - spent
         if remaining <= 0:
             return done('skip', 'weekly_cost_ceiling_exhausted', week_spent_usd=spent)
+        # 5b. H2264: auto-promote may only run while R4.1 surveillance is LIVE.
+        # Auto-promote's whole safety case (ARCHITECTURE §3) is the daily spot-check
+        # + halt rule; H2246 found that chain had no trigger at all, so the trial
+        # could have promoted into the store with zero defect surveillance. Fail
+        # CLOSED: no fresh spotcheck report -> no auto-promoting window. A lane
+        # running WITHOUT --auto-promote-until is unaffected (nothing promotes, so
+        # there is nothing to survey) and keeps ticking normally.
+        if cfg.get('auto_promote_until'):
+            fresh = lane_spotcheck_tick.fresh_spotcheck(cfg['telemetry_dir'])
+            if not fresh:
+                return done('skip', 'no_fresh_spotcheck_auto_promote_refused',
+                            hint='run lane_spotcheck_tick.py --lane %s daily; '
+                                 'auto-promote is gated on live R4.1 surveillance'
+                                 % lane)
+            record['spotcheck'] = os.path.basename(fresh)
         # 6. the bounded window
         code, cost, rows = runners.bounded_run(profile, receipt, remaining)
         record['window_exit'] = code
@@ -485,9 +505,25 @@ def selftest():
             rec8c['reason'] == 'runner_exception' and \
             rec8c['exception'].startswith('OSError'), rec8c
 
+        # (8d) H2264: with auto-promote ON and no fresh spotcheck, the tick REFUSES
+        # the window (fail closed — R4.1 surveillance is auto-promote's safety case).
+        cfg_ap = dict(cfg, auto_promote_until='2099-01-01')
+        rec8d = tick(cfg_ap, _FakeRunners())
+        assert rec8d['verdict'] == 'skip' and \
+            rec8d['reason'] == 'no_fresh_spotcheck_auto_promote_refused', rec8d
+
+        # (8e) drop a fresh spotcheck report in and the same tick proceeds
+        os.makedirs(cfg['telemetry_dir'], exist_ok=True)
+        with open(os.path.join(cfg['telemetry_dir'], 'spotcheck_2026-08-03.json'),
+                  'w', encoding='utf-8') as f:
+            f.write('{}')
+        rec8e = tick(cfg_ap, _FakeRunners())
+        assert rec8e['verdict'] == 'window' and \
+            rec8e['spotcheck'] == 'spotcheck_2026-08-03.json', rec8e
+
         # (9) EVERY branch above appended a tick record (the ≥95% metric source)
         rows = [json.loads(l) for l in open(ledger, encoding='utf-8')]
-        assert len(rows) == 10, len(rows)
+        assert len(rows) == 12, len(rows)
         assert all(r0.get('verdict') for r0 in rows)
 
         # (10) next_weekly_reset is strictly ahead and lands on the right weekday
@@ -495,7 +531,8 @@ def selftest():
         assert nr > now_epoch() and time.gmtime(nr).tm_wday == 0
     print('nonstop_scheduler selftest: PASS (tick state machine, R5.1 roster, weekly '
           'ceiling, canary + freeze + pause gates, §270 hang vs latency, runner '
-          'timeout/exception recorded (H2246), every branch recorded)')
+          'timeout/exception recorded (H2246), auto-promote fails closed without '
+          'live R4.1 surveillance (H2264), every branch recorded)')
     return 0
 
 

@@ -223,6 +223,7 @@ jobs:
           python src/pilot/parked_queue.py --selftest
           python src/pilot/spot_check_daily.py --selftest
           python src/pilot/lane_guard.py --selftest
+          python src/pilot/lane_spotcheck_tick.py --selftest
           python src/pilot/nonstop_scheduler.py --selftest
           python src/pilot/digest_daily.py --selftest
           python src/pilot/weekly_packet.py --selftest
