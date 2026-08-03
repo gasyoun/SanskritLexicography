@@ -144,6 +144,82 @@ Gates: `tests/test_rv_spine.py` **54/54** (+5 pins, each verified RED on pre-fix
 re-typed — the fix is to the instrument, not the data. Full write-up:
 [`pwg_ru/h2192/RV_ADDED_BY_ONE_INSTRUMENT_DEFECT_2026-08.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2192/RV_ADDED_BY_ONE_INSTRUMENT_DEFECT_2026-08.md).
 
+## 03-08-2026 (H2248, #983) — `nakzatra` is not a group-BUDGET defect: the group budget never counted the portrait
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2248](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2248-Opus_RussianTranslation_nakzatra-group-budget-kill-ceiling_03.08.26.md).
+**Zero paid calls** — offline analysis of the H2174 ledger plus the manifest that produced it.
+
+H2248 was minted to fit a per-group kill budget that "re-inherits the flat `CEIL` clamp"
+(`killBudgetMs` saturating above ~2.9 KB). Reading the budget before changing it, per the
+handoff's own first instruction, showed **that clamp is not in the production lane at all**:
+
+| lane | where the budget lives | what it grants a heal group |
+|---|---|---|
+| Max Workflow JS (**forensics only**) | `gen_opt_harness2.killBudgetMs` / `killBudgetForCur` | byte-scaled, clamped to `KILL_CEIL_MS` |
+| **headless CLI (production, H1110)** | `headless_worker.HeadlessEngine.__init__` | **one flat `self.timeout`** for every call in the window |
+
+`call()` passes `timeout=self.timeout` — set once as `min(operator, budgets.timeout_ceil_ms,
+HARD_TIMEOUT_MS)` — so **no per-group, byte-scaled budget exists in the lane that produced the
+timeouts.** The ledger says the same thing independently: `nakzatra#g1` carried 598 B, whose JS
+budget would be 93 820 ms, and it ran **176 871 ms**; its retry (necessarily a *subset* of those
+598 B, by `heal_group`'s construction) reached **300 038 ms** ≈ `HARD_TIMEOUT_MS`. Nothing under
+a 93.8 s budget can do that. So the handoff's candidate "a per-GROUP budget that scales instead
+of clamping" is both **inert** here (it would edit the forensics lane) and **backwards** (a
+scaling budget can only *shorten* a call, and these calls die *at* the ceiling).
+
+**What actually predicts the failure: total call weight, which no budget counted.**
+`heal_group` re-sends the card's whole portrait on every fragment call (H1339/B01, so presplit
+giants are not translated evidence-blind). The presplit grouping sizer weighs only
+`1 + <ls>` citation-units with a fragment-count cap — the portrait is invisible to it.
+
+| call | portrait | content | **weight** | outcome |
+|---|---:|---:|---:|---|
+| `sarvatra#g1` | 7 713 | 536 | 8 249 | 196 948 ms ✓ |
+| `sakft#g1` | 9 166 | 791 | 9 957 | 232 636 ms ✓ |
+| `sarvatra#g2` | 7 713 | 2 300 | 10 013 | 289 585 ms ✓ |
+| `nakzatra#g1` | 9 761 | 598 | 10 359 | 176 871 ms ✓ |
+| `sakft#g2` | 9 166 | 2 310 | 11 476 | 192 295 ms ✓ |
+| **`nakzatra#g2`** | 9 761 | 4 617 | **14 378** | **TIMEOUT 300 024 ms** |
+
+The one call that died is the heaviest, 25 % above the heaviest that landed — and the fixed
+evidence block is **68–94 %** of every call in the window. `nakzatra` loses twice over: the
+largest portrait *and* a 3 236 B mega-fragment that the citation sizer prices at nearly zero
+(byte-heavy, citation-light), so it packed in for free.
+
+**Fix (this PR):** the presplit lane gains a second, independent grouping dimension —
+`PRESPLIT_GROUP_CALL_WEIGHT` = 12 000 B over *portrait + group bytes*, above every observed
+success (11 476) and below the failure (14 378). The whole-card **batch** lane has always sized
+on `skeleton + portrait`, so this makes the fragment lane agree with the lane beside it. Effect
+on the real w1 cards, from their actual manifest:
+
+| card | before | after |
+|---|---|---|
+| `nakzatra` | 2 calls — 10 359 · **14 378** | 3 calls — 10 359 · 11 142 · **12 997** |
+| `sarvatra` | 2 calls — 8 249 · 10 013 | **unchanged** |
+| `sakft` | 2 calls — 9 957 · 11 476 | **unchanged** |
+
+Surgical: only the card that failed regroups, at the cost of one extra call.
+
+**Stated honestly — this does not guarantee the acceptance bar.** `nakzatra#g3` is the 3 236 B
+mega-fragment alone; its weight is `portrait + 3 236 = 12 997 B` and **no grouping change can
+lower it**, since a single oversize fragment always gets its own call. That is 13 % above the
+heaviest proven success, though 10 % below the observed failure. The H2174 data also shows the
+latency is heavy-tailed independent of size (10 013 B → 289 585 ms; 10 359 B → 176 871 ms), so
+"zero timeouts" is not something this fix can promise.
+
+**The lever that would actually settle it is already built and default-OFF.** H2189 measured
+`--safe-mode` on *this exact card*: `nakzatra` whole-card wall **254 s → 115 s (−55 %)**, cost
+−61 %, with the `{Tn}` token set identical and 13/13 senses carrying Russian. It is opt-in
+(`execution.cli_safe_mode`) and default OFF only because its quality case is n=1 and needs a
+canary GO **on the safe-mode arm** — which a gated window would produce as a by-product. A 55 %
+latency cut dwarfs a 10 % weight cut; the grouping fix and that flag are complements, and the
+next paid attempt should carry both rather than spending on grouping alone.
+
+Gates: `window_selftest` **204/204**, `bounded_staged_run_selftest` PASS,
+`headless_worker_selftest` PASS (`#983` ceiling parity unchanged — `KILL_CEIL_MS` untouched).
+LANG_PARITY **SHARED**, new entry `presplit_group_call_weight_h2248`, 0 language-keyed tokens
+in all 134 added lines, 43 drifted entries re-stamped.
+
 ## 03-08-2026 (H2174, #983) — the medium50 presplit route proven LIVE on w1: 2/3 cards, zero whole-card batches
 
 Opus 5 1M (`claude-opus-5[1m]`), [H2174](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2174-Opus_RussianTranslation_medium50-presplit-live-run-after-health-pass_02.08.26.md).
