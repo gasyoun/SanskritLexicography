@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-18T04:29:24Z",
+ "generated_at": "2026-08-03T06:34:16Z",
  "probe_host": "residential (local machine)",
  "results": [
   {
@@ -8,7 +8,7 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://michaelmeyer.fr/sanskrit",
-   "ms": 1221
+   "ms": 12755
   },
   {
    "name": "CDSL simple search",
@@ -16,7 +16,7 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://www.sanskrit-lexicon.uni-koeln.de/simple/",
-   "ms": 1758
+   "ms": 4553
   },
   {
    "name": "CDSL home",
@@ -24,7 +24,7 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://www.sanskrit-lexicon.uni-koeln.de/",
-   "ms": 15405
+   "ms": 5578
   },
   {
    "name": "Heritage (Inria)",
@@ -32,7 +32,7 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://sanskrit.inria.fr/DICO/index.en.html",
-   "ms": 509
+   "ms": 1674
   },
   {
    "name": "Heritage mirror (UoHyd)",
@@ -40,7 +40,7 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://sanskrit.uohyd.ac.in/scl/",
-   "ms": 1042
+   "ms": 5323
   },
   {
    "name": "DCS (plain HTTP; cert broken)",
@@ -48,14 +48,14 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "http://www.sanskrit-linguistics.org/dcs/",
-   "ms": 737
+   "ms": 4374
   },
   {
    "name": "VedaWeb (Tekst)",
    "url": "https://vedaweb.uni-koeln.de/",
    "verdict": "http-418",
    "http": 418,
-   "ms": 590
+   "ms": 11482
   },
   {
    "name": "learnsanskrit.cc",
@@ -74,7 +74,7 @@
    "url": "https://learnsanskrit.org/dictionary",
    "verdict": "http-404",
    "http": 404,
-   "ms": 746
+   "ms": 10895
   },
   {
    "name": "Ambuda dictionaries",
@@ -82,14 +82,14 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://ambuda.org/tools/dictionaries/",
-   "ms": 1737
+   "ms": 17515
   },
   {
    "name": "sanskritdictionary.com",
    "url": "https://sanskritdictionary.com/",
    "verdict": "http-403",
    "http": 403,
-   "ms": 491
+   "ms": 4702
   }
  ]
 }
