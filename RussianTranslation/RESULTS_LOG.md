@@ -1,8 +1,65 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 02-08-2026_
+_Created: 09-07-2026 · Last updated: 03-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 02-08-2026 (H2044) — the c4 route came back: health GO on all three numbers, canary still unbuildable
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2044](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2044-Opus_SanskritLexicography_g46-pwg-live-health-reprobe_31.07.26.md)
+(goal [G46](https://github.com/gasyoun/Uprava/blob/main/GOALS_MANUAL.md) reprobe).
+**2 paid calls, $0.7232244. No canary, no window, no store write.** Full packet:
+[H2044_C4_HEALTH_GO_CANARY_UNSPENT_2026-08-02.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2044/H2044_C4_HEALTH_GO_CANARY_UNSPENT_2026-08-02.md).
+
+### The reading (run `…/2026-08-02T13:02:43Z-pid27240`, probe #729)
+
+| purpose | wall `elapsed_ms` | CLI `duration_ms` | `duration_api_ms` | `api_gap_ms` | class |
+|---|---:|---:|---:|---:|---|
+| warmup | 62 146 | 37 756 | 32 872 | 29 274 | success |
+| **measured** | **60 845** | **40 623** | **36 508** | 24 337 | success |
+
+Ceiling 65 000 ms. **All three candidate numbers pass** — the exact mirror of H2174 two
+hours earlier, where all three failed (96 520 / 77 966 / 69 137). Two readings in one day
+where wall and `duration_api_ms` agree on the verdict: the ruling is still owed, but it has
+now twice not been the thing standing between this pipeline and a window.
+
+### Four measured attempts on 02-08: PASS → NO-GO → NO-GO → PASS
+
+| # | time (UTC) | wall `elapsed_ms` | wall | `duration_api_ms` | handoff |
+|---:|---|---:|---|---:|---|
+| 17 | 05:48:01 | 43 815 | PASS | 26 386 | H2011 |
+| 19 | 07:49:40 | 75 561 | NO-GO | 29 069 | H2160 |
+| 21 | 11:06:53 | 96 520 | NO-GO | 69 137 | H2174 |
+| **23** | **13:04:46** | **60 845** | **PASS** | **36 508** | **H2044** |
+
+H2174 called the route "bimodal on a timescale of hours, not down"; this row is that claim's
+first confirmation in the recovering direction. Consequence for operations: a GO is a
+statement about a **window of minutes**, not about a day — "c4 was healthy this morning"
+authorizes nothing.
+
+### The canary leg is not reproducible, and that is now the binding constraint
+
+One paid call remained inside G46's ≤3 cap and was **deliberately not spent**. Step 2 needs a
+manifest v2 for `dq_canary_puregloss~~h0_zz_pw`; the curated fixture exists, but
+`git log --all --diff-filter=A` finds **no canary manifest and no builder anywhere in the
+history** — the only committed `synthetic_control` artifact is
+[H1447's wf_output](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1447/h1447_canary_wf_output.json),
+the result rather than the input. Both H1447's packet and
+[RUN_FREQ_MAX §A2](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
+mark the command shape "illustrative". Hand-authoring one on the money contour from a v1
+`nominal_masked` template, whose prompt does not match the canary's un-masked pure-gloss
+shape, would risk burning the last call on a tooling error. **So the health leg is now the
+cheap half of G46 and the canary is the blocked half** — every future GO stalls in the same
+place until a committed builder exists.
+
+### Offline floor (0 paid)
+
+| check | result |
+|---|---|
+| `window_selftest.py` | 200/200 passed |
+| `h963_c4_gate0_probe.py --selftest` | 7/7 |
+| `lang_parity_check.py` | 90 entries, no drift, 25 files tracked/exempt |
+| `check_launch_ledger.py` | 19 entries complete |
 
 ## 02-08-2026 (H2190) — the cost table under-reported every 1 h cache write by 1.6×; repriced against the vendor's own figure
 

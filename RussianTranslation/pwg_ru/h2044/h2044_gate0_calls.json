@@ -1,0 +1,66 @@
+{
+ "schema": "pwg.call_reservation.v1",
+ "runs": {
+  "h963-c4-single-profile-gate0-2026-07-16/2026-08-02T13:02:43Z-pid27240": {
+   "max_calls": 2,
+   "calls_spent": 2,
+   "next_ordinal": 3,
+   "reservations": [
+    {
+     "reservation_id": "38ca9f5aa85344659fe19c67888416e6",
+     "ordinal": 1,
+     "reserved_at_ns": 1785675763091521600,
+     "pid": 27240,
+     "purpose": "probe:warmup",
+     "profile": "c4",
+     "finalized": true,
+     "finalized_at_ns": 1785675825255032500,
+     "telemetry": {
+      "cost_evaluable": true,
+      "input_tokens": 2,
+      "output_tokens": 977,
+      "cache_read_tokens": 29005,
+      "cache_creation_tokens": 59162,
+      "subagent_tokens": 89146,
+      "observed_cost_usd": 0.3783345,
+      "duration_ms": 37756,
+      "duration_api_ms": 32872
+     }
+    },
+    {
+     "reservation_id": "2fe59b4e990e48f3bd809f15e4a7ca82",
+     "ordinal": 2,
+     "reserved_at_ns": 1785675825278179300,
+     "pid": 27240,
+     "purpose": "probe:measured",
+     "profile": "c4",
+     "finalized": true,
+     "finalized_at_ns": 1785675886142735500,
+     "telemetry": {
+      "cost_evaluable": true,
+      "input_tokens": 2,
+      "output_tokens": 1239,
+      "cache_read_tokens": 35563,
+      "cache_creation_tokens": 52605,
+      "subagent_tokens": 89409,
+      "observed_cost_usd": 0.34488989999999997,
+      "duration_ms": 40623,
+      "duration_api_ms": 36508
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 4,
+    "output_tokens": 2216,
+    "cache_read_tokens": 64568,
+    "cache_creation_tokens": 111767,
+    "subagent_tokens": 178555,
+    "observed_cost_usd": 0.7232244,
+    "cost_evaluable": true,
+    "finalized_calls": 2,
+    "unevaluable_calls": 0,
+    "pending_calls": 0
+   }
+  }
+ }
+}
