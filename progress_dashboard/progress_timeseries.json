@@ -36,6 +36,20 @@
       "approved": 3,
       "ai_translated": 11598,
       "needs_review": 2
+    },
+    {
+      "date": "2026-08-03",
+      "generated_at": "2026-08-03T10:28:16Z",
+      "verb_promoted": 48,
+      "verb_dcs_attested": 749,
+      "senses": 11603,
+      "roots": 254,
+      "coverage_pct": 41.4,
+      "approved": 3,
+      "ai_translated": 11598,
+      "needs_review": 2,
+      "g5_open": 145,
+      "g5_total": 150
     }
   ]
 }
