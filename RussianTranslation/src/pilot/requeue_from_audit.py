@@ -16,7 +16,6 @@ import json
 import os
 import subprocess
 import sys
-import datetime
 import argparse
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -30,7 +29,6 @@ REQUEUE = os.path.join(OUT, 'requeue.keys.txt')
 
 sys.path.insert(0, SRC)
 from safe_filename import safe_name
-from window_common import sha256_file, append_jsonl_line
 
 sys.path.insert(0, HERE)
 import translation_memory
@@ -89,45 +87,27 @@ def refuse_crashed_audit(requeue_file, tag):
                  'report.' % ', '.join(str(c) for c in crashed[:5]))
 
 
-def append_tm_denylist(root, keys, which, lang='ru', fsha_file=None):
+def append_tm_denylist(root, keys, which, lang='ru', fsha_file=None, path=None):
     """Invalidate exact card-TM addresses for defect/all requeues. Append-only and local-only.
 
     H304: also invalidate the flagged cards' FRAGMENT addresses. build_frags harvests
     frag_prov from raw wf_output before any gate runs, so without this a defect card's
     fragments stay reusable in the sidecar and --tm=auto re-serves the flagged content on
     the next window that shares a fragment. audit_window writes the fshas to
-    requeue.defect.fshas.txt next to the requeue key files."""
+    requeue.defect.fshas.txt next to the requeue key files.
+
+    H2228 / OPT-7: delegates to translation_memory.stamp_denylist_from_last_audit so the
+    same last-audit-outcome stamp is used at requeue time and at audit --write-requeue.
+    """
     if which == 'transient':
         return 0, 0
-    path = translation_memory.denylist_path()
-    now = datetime.datetime.now(datetime.timezone.utc).isoformat(
-        timespec='seconds').replace('+00:00', 'Z')
-    n = 0
-    for k in keys:
-        raw = os.path.join(INP, k + '.raw.txt')
-        if not os.path.exists(raw):
-            continue
-        address = '%s:%s' % (lang, sha256_file(raw))
-        # H336/H-3: one os.write() per row (window_common.append_jsonl_line) — a bare
-        # buffered 'a' handle can split one line across writes, and a concurrent
-        # appender (another account's requeue) can then tear it.
-        append_jsonl_line(path, {'schema': 'pwg.translation_memory.denylist.v1',
-                                 'kind': 'card', 'address': address, 'key': k,
-                                 'root': root, 'lang': lang, 'reason': 'requeue_%s' % which,
-                                 'blocked_at': now})
-        n += 1
-    nf = 0
+    fshas = []
     fp = fsha_file or os.path.join(OUT, 'requeue.defect.fshas.txt')
     if os.path.exists(fp):
         fshas = [ln.strip() for ln in open(fp, encoding='utf-8') if ln.strip()]
-        for fsha in fshas:
-            append_jsonl_line(path, {'schema': 'pwg.translation_memory.denylist.v1',
-                                     'kind': 'frag', 'fsha': fsha,
-                                     'root': root, 'lang': lang,
-                                     'reason': 'requeue_%s_fragment' % which,
-                                     'blocked_at': now})
-            nf += 1
-    return n, nf
+    return translation_memory.stamp_denylist_from_last_audit(
+        keys, lang=lang, fshas=fshas, root=root,
+        reason='requeue_%s' % which, path=path, inp_dir=INP)
 
 
 def main():

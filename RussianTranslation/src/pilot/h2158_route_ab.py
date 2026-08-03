@@ -203,14 +203,34 @@ def call_api(client, manifest, key, prefix, tail, max_tokens):
     }, msg.model_dump()
 
 
+# The operator's durable credential store, outside every clone so it cannot be staged by
+# accident (siblings: ftp_samskrtam.env, samskrtam-wp.env, x_api.json which post_tweet.py
+# reads). Checked as a FALLBACK because a key set with `setx` is invisible to shells that
+# were already running -- which is exactly how this arm stayed blocked once already.
+SECRETS_ENV = r'C:\Users\user\.secrets\anthropic.env'
+
+
 def api_client():
     """Return (client, note). Presence-only auth report -- never echo the credential."""
     import anthropic
     for var in ('ANTHROPIC_API_KEY', 'ANTHROPIC_AUTH_TOKEN'):
         if os.environ.get(var):
             return anthropic.Anthropic(), '%s present in environment' % var
-    return None, ('no ANTHROPIC_API_KEY / ANTHROPIC_AUTH_TOKEN in environment and the '
-                  '`ant` CLI is absent, so no OAuth profile can be resolved either')
+    if os.path.exists(SECRETS_ENV):
+        with open(SECRETS_ENV, encoding='utf-8') as fh:
+            for line in fh:
+                line = line.strip()
+                if line.startswith('#') or '=' not in line:
+                    continue
+                name, _, value = line.partition('=')
+                if name.strip() in ('ANTHROPIC_API_KEY', 'ANTHROPIC_AUTH_TOKEN'):
+                    value = value.strip().strip('"').strip("'")
+                    if value:
+                        return (anthropic.Anthropic(api_key=value),
+                                '%s read from %s' % (name.strip(), SECRETS_ENV))
+    return None, ('no ANTHROPIC_API_KEY / ANTHROPIC_AUTH_TOKEN in environment, none in %s, '
+                  'and the `ant` CLI is absent, so no OAuth profile can be resolved either'
+                  % SECRETS_ENV)
 
 
 def main():

@@ -49,6 +49,88 @@ the route guard changes no historical verdict, so it is a forward guard (4 selft
 n=5 decomposable, one account, 3 days. Gates: `window_selftest` 200/200,
 `max_account_orchestrator_selftest` PASS, `execution_contract_selftest` PASS.
 
+## 02-08-2026 (H2044) — the c4 route came back: health GO on all three numbers, canary still unbuildable
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2044](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2044-Opus_SanskritLexicography_g46-pwg-live-health-reprobe_31.07.26.md)
+(goal [G46](https://github.com/gasyoun/Uprava/blob/main/GOALS_MANUAL.md) reprobe).
+**2 paid calls, $0.7232244. No canary, no window, no store write.** Full packet:
+[H2044_C4_HEALTH_GO_CANARY_UNSPENT_2026-08-02.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2044/H2044_C4_HEALTH_GO_CANARY_UNSPENT_2026-08-02.md).
+
+### The reading (run `…/2026-08-02T13:02:43Z-pid27240`, probe #729)
+
+| purpose | wall `elapsed_ms` | CLI `duration_ms` | `duration_api_ms` | `api_gap_ms` | class |
+|---|---:|---:|---:|---:|---|
+| warmup | 62 146 | 37 756 | 32 872 | 29 274 | success |
+| **measured** | **60 845** | **40 623** | **36 508** | 24 337 | success |
+
+Ceiling 65 000 ms. **All three candidate numbers pass** — the mirror of the 11:06 reading,
+where all three failed (96 520 / 77 966 / 69 137). A third same-day reading where wall and
+`duration_api_ms` agree on the verdict: the clock ruling is settled (gate on wall, H2160
+option A) and, as H2174's second pass showed, it was never what stood between this pipeline
+and a window.
+
+### Five measured attempts on 02-08: PASS → NO-GO → NO-GO → NO-GO → PASS
+
+| # | time (UTC) | wall `elapsed_ms` | wall | `duration_api_ms` | handoff |
+|---:|---|---:|---|---:|---|
+| 17 | 05:48:01 | 43 815 | PASS | 26 386 | H2011 |
+| 19 | 07:49:40 | 75 561 | NO-GO | 29 069 | H2160 |
+| 21 | 11:06:53 | 96 520 | NO-GO | 69 137 | H2174 |
+| 22 | 12:46 | 66 291 | NO-GO | **16 445** | H2174 (2nd pass) |
+| **23** | **13:04:46** | **60 845** | **PASS** | **36 508** | **H2044** |
+
+**2/5 on the day — and this row does not soften H2174's second-pass verdict, it fits it.**
+That pass measured the ceiling against the whole series (**2/8 = 25 %** implied pass rate,
+**median − ceiling = +11 988 ms**) and concluded the gate is *expected* to fail ~75 % of the
+time, so the fix belongs to the ceiling **value**
+([H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md)),
+not to re-rolling. This reading is one of the 25 % — arriving 18 minutes after the 12:46
+NO-GO, on the same profile and prompt. Two things follow, and they point in opposite
+directions:
+
+- **For operations:** a GO describes a window of **minutes**. "c4 was healthy this morning"
+  authorizes nothing; the health call must be adjacent to the spend.
+- **For planning:** a GO cannot be *scheduled*. Reaching one took 4 NO-GOs and ~$2.9 in
+  probes across the day, which is why a passing health reading should be spent immediately
+  on the thing it gates — and why the canary being unbuildable (below) is expensive, not
+  merely untidy: this GO expired with nothing able to consume it.
+
+### The canary leg is not reproducible, and that is now the binding constraint
+
+One paid call remained inside G46's ≤3 cap and was **deliberately not spent**. Step 2 needs a
+manifest v2 for `dq_canary_puregloss~~h0_zz_pw`; the curated fixture exists, but
+`git log --all --diff-filter=A` finds **no canary manifest and no builder anywhere in the
+history** — the only committed `synthetic_control` artifact is
+[H1447's wf_output](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1447/h1447_canary_wf_output.json),
+the result rather than the input. Both H1447's packet and
+[RUN_FREQ_MAX §A2](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
+mark the command shape "illustrative". Hand-authoring one on the money contour from a v1
+`nominal_masked` template, whose prompt does not match the canary's un-masked pure-gloss
+shape, would risk burning the last call on a tooling error. **So the health leg is now the
+cheap half of G46 and the canary is the blocked half** — every future GO stalls in the same
+place until a committed builder exists.
+
+### Offline floor (0 paid)
+
+| check | result |
+|---|---|
+| `window_selftest.py` | 200/200 passed |
+| `h963_c4_gate0_probe.py --selftest` | 7/7 |
+| `lang_parity_check.py` | 90 entries, no drift, 25 files tracked/exempt |
+| `check_launch_ledger.py` | 19 entries complete |
+
+## 02-08-2026 (H2225) — OPT-6 citation coverage_key single source of truth
+
+Grok 4.5 (`grok-4.5`), [H2225](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2225-Grok_SanskritLexicography_pwg-opt6-citation-coverage-sot_02.08.26.md). Pure-function extract; no store rebuild, no paid call.
+
+| check | result |
+|---|---|
+| Shared kernel | `coverage_key` + `coverage_bucket` + `coverage_rows_from_pairs` |
+| Call sites | `build()` (distinct → CITATION_SOURCES) · `occurrence_stats()` (occ → UNCOVERED) |
+| Fixture selftest | `python src/build_citation_index.py --selftest` green |
+| Coverage class parity | both modes same per-abbr class on 10-pair fixture |
+| Totals shift | CITATION_SOURCES `unresolved` no longer includes non-coordinate labels |
+
 ## 02-08-2026 (H2174, second pass) — the ceiling is ~12 s BELOW c4's median: the gate is unpassable by scheduling, and the blocker is the ceiling VALUE, not the clock
 
 Opus 5 1M (`claude-opus-5[1m]`), [H2174](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2174-Opus_RussianTranslation_medium50-presplit-live-run-after-health-pass_02.08.26.md).

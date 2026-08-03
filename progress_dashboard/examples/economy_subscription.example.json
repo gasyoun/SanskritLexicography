@@ -1,0 +1,8 @@
+{
+  "period_start": "2026-07-01",
+  "period_end": "2026-07-07",
+  "currency": "USD",
+  "amount": 0,
+  "source": "usage_export_paste",
+  "notes": "Replace amount with the weekly Claude Max / usage-export total. Do not paste account emails or full receipts onto the public page — only this aggregate is loaded by the kitchen builder."
+}

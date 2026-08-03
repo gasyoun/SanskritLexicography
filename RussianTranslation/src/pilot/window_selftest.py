@@ -6454,7 +6454,7 @@ def test_defect_fragment_denylist_round_trip():
     rfa.INP = inp
     try:
         n, nf = rfa.append_tm_denylist('h304root', [key], 'defect', lang='ru',
-                                       fsha_file=fsha_file)
+                                       fsha_file=fsha_file, path=deny_path)
     finally:
         rfa.translation_memory.denylist_path = old_dp
         rfa.INP = old_inp
@@ -6487,9 +6487,136 @@ def test_defect_fragment_denylist_round_trip():
     if fsha_good not in cache:
         fail('clean fragment wrongly dropped by the denylist')
     # transient requeues must not denylist anything
-    n, nf = rfa.append_tm_denylist('h304root', [], 'transient', lang='ru')
+    n, nf = rfa.append_tm_denylist('h304root', [], 'transient', lang='ru', path=deny_path)
     if (n, nf) != (0, 0):
         fail('transient requeue must never append denylist rows')
+
+
+def test_opt7_last_audit_tm_refuse_without_no_tm():
+    """H2228 / OPT-7 / FINDINGS §31 residual: last-audit defect outcome stamps the denylist
+    so a default --tm=auto path (no operator --no-tm) still refuses the failed hash and
+    forces real re-translate work. gam-class synthetic fixture:
+
+      * defect key has a TM hit that would otherwise make agent_expected_after_tm=0
+      * write_reports(--write-requeue) stamps denylist from requeue_defect
+      * load_tm then refuses the failed address; clean held-out key still serves
+      * crashed audit does NOT stamp (blast-radius control)
+      * false-invalidation: clean key never denylisted
+    """
+    import translation_memory as tm
+    from window_reports import write_reports, _stamp_last_audit_denylist
+    tmp = tempfile.mkdtemp(prefix='pwg_audit_ephemeral_opt7_')
+    inp = os.path.join(tmp, 'input')
+    os.makedirs(inp)
+    # gam-class: one defect key + one clean key (held-out clean TM must survive)
+    defect_key = 'gam~~h0_zz_pw03'
+    clean_key = 'gam~~h0_zz_clean'
+    for key, body in ((defect_key, 'gam flagged defect raw COVERAGE-LOW'),
+                      (clean_key, 'gam clean held-out raw')):
+        with open(os.path.join(inp, key + '.raw.txt'), 'w', encoding='utf-8') as f:
+            f.write(body)
+    defect_addr = 'ru:%s' % sha256(os.path.join(inp, defect_key + '.raw.txt'))
+    clean_addr = 'ru:%s' % sha256(os.path.join(inp, clean_key + '.raw.txt'))
+    fsha_bad = tm.frag_address('ru', 'gam defect fragment body')
+    fsha_good = tm.frag_address('ru', 'gam clean fragment body')
+
+    # Pre-stamp synthetic TM as if a prior run cached both (the §31 trap: defect is cached)
+    card_tm = os.path.join(tmp, 'translation_memory.ru.json')
+    with open(card_tm, 'w', encoding='utf-8') as f:
+        json.dump({'schema': tm.CARD_SCHEMA, 'lang': 'ru', 'entries': {
+            defect_addr: {
+                'id': defect_addr,
+                'card': {'records': [{'senses': [
+                    {'russian': 'cached defect %d' % i} for i in range(47)]}]},
+                'trust_level': tm.TRUST_MACHINE,
+                'gate_status': 'machine_gated',
+                'reuse_policy': 'auto_exact',
+            },
+            clean_addr: {
+                'id': clean_addr,
+                'card': {'records': [{'senses': [{'russian': 'cached clean'}]}]},
+                'trust_level': tm.TRUST_MACHINE,
+                'gate_status': 'machine_gated',
+                'reuse_policy': 'auto_exact',
+            },
+        }}, f, ensure_ascii=False)
+    # Without denylist both serve — proves the trap surface exists for this fixture
+    before = tm.load_tm('ru', card_tm, denylist=os.path.join(tmp, 'empty_deny.jsonl'))
+    if defect_addr not in before or clean_addr not in before:
+        fail('fixture TM must serve both addresses before last-audit stamp')
+
+    old_inp = os.environ.get('PWG_INPUT_DIR')
+    os.environ['PWG_INPUT_DIR'] = inp
+    try:
+        report = {
+            'workflow': 'wf_output_gam_opt7_fixture.json',
+            'root': 'gam',
+            'lang': 'ru',
+            'keys': [defect_key, clean_key],
+            'requeue': [defect_key],
+            'requeue_transient': [],
+            'requeue_defect': [defect_key],
+            'requeue_defect_fshas': [fsha_bad],
+            'crashed': [],
+            'gates': {},
+            'state': 'needs_requeue',
+            'null_cards': [],
+            'partial_cards': {},
+            'failure_reasons': {},
+        }
+        write_reports(report, True, out_dir=tmp)
+        stamp = report.get('tm_denylist_stamped') or {}
+        if not stamp.get('stamped'):
+            fail('write_reports must stamp last-audit denylist for defect keys: %r' % stamp)
+        if stamp.get('cards', 0) < 1:
+            fail('expected ≥1 card denylist row from defect raw: %r' % stamp)
+        deny_path = stamp.get('denylist')
+        if not deny_path or not os.path.exists(deny_path):
+            fail('local last-audit denylist missing under ephemeral out_dir')
+        after = tm.load_tm('ru', card_tm, denylist=deny_path)
+        if defect_addr in after:
+            fail('last-audit defect address still served by load_tm (OPT-7 refuse failed)')
+        if clean_addr not in after:
+            fail('clean held-out TM falsely invalidated by last-audit stamp')
+        # Fragment lane: denylisted fsha refused; clean fsha still live
+        senses = [{'tag': '1', 'german': 'x', 'russian': 'y'}]
+        sidecar = os.path.join(tmp, 'translation_memory.frag.ru.jsonl')
+        with open(sidecar, 'w', encoding='utf-8') as f:
+            for fsha in (fsha_good, fsha_bad):
+                f.write(json.dumps({'schema': tm.FRAG_SCHEMA_V2, 'fsha': fsha,
+                                    'senses': senses, 'owners': [['x', '']]}) + '\n')
+        frag = tm.load_frag_tm('ru', sidecar, denylist=deny_path)
+        if fsha_bad in frag:
+            fail('last-audit defect fsha still served by load_frag_tm')
+        if fsha_good not in frag:
+            fail('clean fragment falsely invalidated')
+        # Default requeue path without operator --no-tm still forces real work for the
+        # defect key: TM miss on the failed hash means agent_expected cannot be 0 solely
+        # from that hit (simulate the gen_opt address lookup).
+        hit_after_stamp = after.get(defect_addr)
+        if hit_after_stamp is not None:
+            fail('default-path TM hit must be None for last-audit-failed hash')
+        # agent work residual: 1 defect key refused → non-zero real translate path
+        agent_expected_after_tm = 0 if hit_after_stamp else 1
+        if agent_expected_after_tm < 1:
+            fail('gam-class fixture must prove non-zero real translate path after stamp')
+        # Crashed audit must not stamp (false-invalidation / blast-radius control)
+        crash_report = {
+            'root': 'gam', 'lang': 'ru', 'keys': [clean_key],
+            'requeue': [clean_key], 'requeue_defect': [clean_key],
+            'requeue_defect_fshas': [], 'crashed': ['coverage'],
+            'gates': {}, 'state': 'blocked',
+        }
+        crash_stamp = _stamp_last_audit_denylist(crash_report, tmp)
+        if crash_stamp.get('stamped'):
+            fail('crashed audit must not stamp denylist: %r' % crash_stamp)
+        if 'false_invalidation_controls' not in (stamp or {}):
+            fail('stamp status must document false-invalidation controls')
+    finally:
+        if old_inp is None:
+            os.environ.pop('PWG_INPUT_DIR', None)
+        else:
+            os.environ['PWG_INPUT_DIR'] = old_inp
 
 
 def test_h1386_p3d_p3e_run_py_inproc_exit_semantics():
@@ -8688,6 +8815,7 @@ def main():
         test_lang_parity_hash_crlf_independent,
         test_frag_groups_presplit_parity,
         test_defect_fragment_denylist_round_trip,
+        test_opt7_last_audit_tm_refuse_without_no_tm,
         test_write_reports_emits_defect_fsha_file,
         test_ledger_stamps_gen_model,
         test_h1553_wall_clock_auto_derive,

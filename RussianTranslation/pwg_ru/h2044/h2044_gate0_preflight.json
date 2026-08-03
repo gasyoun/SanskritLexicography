@@ -1,0 +1,9 @@
+{
+ "schema": "pwg.performance_preflight.v1",
+ "root": "h963-c4-single-profile-gate0-2026-07-16/2026-08-02T13:02:43Z-pid27240",
+ "selected_keys": [],
+ "cost_gate": {
+  "over_ceiling": false
+ },
+ "synthetic_probe_only": true
+}
