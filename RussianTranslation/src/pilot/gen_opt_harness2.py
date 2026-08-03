@@ -1571,8 +1571,26 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'budgets': {
             'timeout_floor_ms': KILL_FLOOR_MS,
             'timeout_ceil_ms': KILL_CEIL_MS,
+            # G10 (H2173, audit F-B7 — the inverse of the declared-only defect: a budget the
+            # executor READS that nobody wrote. `headless_worker` does
+            # `budgets.get('max_agents')` for its TOTAL cross-pool ceiling and this block
+            # never carried the key, so `max_total_agents` was None on every live window.
+            #
+            # Enforcement impact: NONE, and the honest reason is arithmetic —
+            # `derive_agent_budget` returns `max_agents == max_translate + max_heal`, so with
+            # both per-lane caps enforced the sum can only reach the total when BOTH lanes
+            # are already refusing. The total is an implied bound, never an independent one.
+            # It is written anyway so the executor's read resolves to the plan instead of
+            # silently to None (a None ceiling reads as "unbounded" to anyone auditing the
+            # engine's state), and so manifest and `meta.max_agents` agree on one number.
+            # Do not mistake this for a cap that was missing: the live bound is the per-lane
+            # pair below, which has been enforced since R3.
+            'max_agents': budget_plan.max_agents,
             'max_translate_agents': budget_plan.max_translate_agents,
             'max_heal_agents': budget_plan.max_heal_agents,
+            # ADVISORY, not enforced on this lane — the serial headless executor ignores
+            # both (see the meta comment above: they bound INTRA-process JS dispatch only).
+            # Carried so a JS/forensic replay of this manifest reproduces the dispatch shape.
             'max_wide': MAX_WIDE,
             'stagger_ms': STAGGER_MS,
         },

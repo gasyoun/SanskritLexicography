@@ -57,6 +57,9 @@ from form_labels import extract_form_labels, extract_form_notes
 from citation_edges import extract_citation_edges
 from edition_rel import classify_edition_rel
 from pilot import promotion_journal
+# G8 (H2173): the promotable route value, owned by the same module the launch gate
+# (`validate_profile`) reads it from — never restated as a literal on this side.
+from pilot import execution_contract
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the RussianTranslation repo root
@@ -456,6 +459,17 @@ def validate_promotion_entry(subkey, entry):
                  'executor_lane', 'validation_method', 'model_identifier'):
         if not isinstance(execution.get(name), str) or not execution[name].strip():
             raise PromotionContractError('%s: missing manifest-v2 execution.%s' % (subkey, name))
+    # G8 (H2173, audit F-1): presence is not identity. The loop above only proves
+    # `execution_route` is a non-blank string, so a v2-SHAPED artifact produced off the
+    # headless route (the retired Max-Workflow lane, a hand-built envelope, a future
+    # second executor) satisfied every promotion check and could enter the canonical
+    # store indistinguishable from a live-lane card. Promotion is the last gate before
+    # the store, so it compares the route itself — `execution_contract` owns the value,
+    # exactly as `validate_profile` does at launch, so the two ends cannot drift.
+    if execution['execution_route'] != execution_contract.HEADLESS_ROUTE:
+        raise PromotionContractError(
+            '%s: execution_route %r is not the promotable headless route %r'
+            % (subkey, execution['execution_route'], execution_contract.HEADLESS_ROUTE))
     try:
         validate_final_card_schema.validate_card(card)
     except ValueError as exc:

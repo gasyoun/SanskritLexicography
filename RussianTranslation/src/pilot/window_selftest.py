@@ -8741,6 +8741,203 @@ def test_h2245_canary_manifest_builder():
     canary_manifest_build_selftest.selftest()
 
 
+def test_h2173_g5_malformed_result_rows_are_accounted():
+    """G5 (H2173, audit S1-3): a result row that is not a dict, or that carries no usable
+    `key`, used to hit a bare `continue` — counted in NEITHER `keys` NOR `nulls`. The window
+    was billed for that call and the card was invisible to every accounting surface. Pin
+    that such rows now land as FAILURES with a synthetic REASON, that the original row
+    survives as evidence, and that well-formed rows are untouched."""
+    import workflow_payload as wp
+    payload = {'meta': {'root': 'h2173'}, 'results': [
+        {'key': 'good', 'card': {'senses': [1]}},      # clean
+        {'key': 'nullcard', 'card': None},             # H2089 null-card class
+        {'card': {'senses': [1]}},                     # G5: keyed nowhere, but PAID
+        {'key': '', 'card': None},                     # G5: falsy key
+        'not-a-dict',                                  # G5: not an object at all
+    ]}
+    with tempfile.TemporaryDirectory() as tmp:
+        path = os.path.join(tmp, 'wf.json')
+        with open(path, 'w', encoding='utf-8') as fh:
+            json.dump(payload, fh)
+        _p, _meta, results, keys, nulls = wp.workflow_payload(path)
+
+    if len(keys) != 5:
+        fail('G5: every billed row must be accounted in `keys` (got %d of 5: %r)'
+             % (len(keys), keys))
+    if len(nulls) != 4:
+        fail('G5: the three malformed rows + the null card must all be failures '
+             '(got %d of 4: %r)' % (len(nulls), nulls))
+    if 'good' in nulls:
+        fail('G5: a clean keyed card must NOT be dragged into nulls')
+    malformed = [k for k in keys if wp.is_malformed_row_key(k)]
+    if len(malformed) != 3:
+        fail('G5: expected 3 synthetic malformed keys, got %r' % malformed)
+    if len(set(keys)) != len(keys):
+        fail('G5: synthetic keys must be unique per row index (got %r)' % keys)
+    for key in malformed:
+        if key not in nulls:
+            fail('G5: malformed row %s must also be a null/failure' % key)
+    # The rewritten rows carry a reason AND the original evidence.
+    stamped = [r for r in results if isinstance(r, dict) and r.get('malformed_result_row')]
+    if len(stamped) != 3:
+        fail('G5: `results` must carry the 3 rewritten rows (got %d)' % len(stamped))
+    reasons = {r['failure_REASON'] for r in stamped}
+    if reasons != {wp.MALFORMED_MISSING_KEY, wp.MALFORMED_NOT_A_DICT}:
+        fail('G5: both malformed classes need distinct REASONs (got %r)' % reasons)
+    for row in stamped:
+        if not row.get('malformed_row_raw'):
+            fail('G5: the original row must survive as evidence (malformed_row_raw)')
+        if not (row.get('error') or {}).get('failure_REASON'):
+            fail('G5: a malformed row needs the structured error shape audits already read')
+    if results[0].get('malformed_result_row'):
+        fail('G5: a well-formed row must not be rewritten')
+    print('  G5: 3 unaccountable rows now bill as failures (keys 5/5, nulls 4/4)')
+
+
+def test_h2173_g8_promote_refuses_route_foreign_artifact():
+    """G8 (H2173, audit F-1): promotion checked `execution_route` for is-a-nonblank-string
+    only, so a v2-SHAPED artifact from any other route (the retired Max-Workflow lane, a
+    hand-built envelope) could enter the canonical store. Pin that the value itself is now
+    compared against execution_contract.HEADLESS_ROUTE — and that a correct route still gets
+    PAST this gate, so the check cannot be passing by refusing everything."""
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    import promote_final_cards as pfc
+    import execution_contract
+
+    def entry(route):
+        return {'card': {}, 'meta': {
+            'execution_manifest_schema': 'pwg.headless_execution_manifest.v2',
+            'execution': {'profile_slot': 'c4', 'config_dir_fingerprint': 'abc',
+                          'execution_route': route, 'executor_lane': 'headless',
+                          'validation_method': 'schema', 'model_identifier': 'claude-sonnet-5'}}}
+
+    for foreign in ('workflow', 'max-workflow', 'CLAUDE-CLI-HEADLESS', ' '.join(
+            [execution_contract.HEADLESS_ROUTE, 'x'])):
+        try:
+            pfc.validate_promotion_entry('k1', entry(foreign))
+        except pfc.PromotionContractError as exc:
+            if 'execution_route' not in str(exc):
+                fail('G8: a route refusal must name execution_route (got %s)' % exc)
+        else:
+            fail('G8: route %r must not be promotable' % foreign)
+    # Positive control: the real route passes the ROUTE gate and dies later, on card schema.
+    try:
+        pfc.validate_promotion_entry('k1', entry(execution_contract.HEADLESS_ROUTE))
+    except pfc.PromotionContractError as exc:
+        if 'execution_route' in str(exc):
+            fail('G8: the headless route must not be refused by the route gate (%s)' % exc)
+    else:
+        fail('G8: an empty card should still fail promotion on schema grounds')
+    print('  G8: promote compares execution_route to the contract, not just its type')
+
+
+def test_h2173_g10_classify_run_reads_the_live_lane():
+    """G10 (H2173, audit F-B7): classify_run was written against the JS harness summary and
+    never re-read after the live route became the headless CLI. `heal_calls`, `agents_spent`
+    and `budget_kill_switch_tripped` do not exist in headless_worker's summary, so EVERY live
+    window answered 'unclassifiable' and the budget trip always read False. Pin that both
+    lane vocabularies now classify, and that the headless trip is actually seen."""
+    import classify_run as cr
+    # Exactly the shape headless_worker.py builds (no heal_calls, no agents_spent, no boolean).
+    headless = {'cards': 4, 'ok': 4, 'null': 0, 'null_keys': [], 'partial_keys': [],
+                'translate_agents_spent': 6, 'heal_agents_spent': 2, 'budget_stops': 0,
+                'kill_timeouts': 0, 'conn_errors': 0}
+    verdict, _reasons, signals = cr.classify(dict(headless))
+    if verdict == 'unclassifiable':
+        fail('G10: a live headless summary must be classifiable, not refused')
+    if verdict != 'clean':
+        fail('G10: an all-ok headless window must classify clean; got %r' % verdict)
+    if signals['agents_spent'] != 8:
+        fail('G10: agents_spent must sum the two headless pools (got %r)'
+             % signals['agents_spent'])
+    if signals['infra_kill_threshold'] != max(3, math.ceil(0.25 * 8)):
+        fail('G10: the kill threshold must derive from the REAL agent count, not 0')
+    # A headless budget stop IS the kill switch firing.
+    tripped = dict(headless, budget_stops=3, null_keys=['a'])
+    verdict, _reasons, signals = cr.classify(tripped)
+    if not signals['budget_kill_switch_tripped']:
+        fail('G10: budget_stops>0 must read as a budget trip on the headless lane')
+    if verdict != 'code-failure':
+        fail('G10: a quiet-network trip with nulls is a code-failure; got %r' % verdict)
+    # The JS vocabulary must keep winning when it is present — no silent overwrite.
+    js = dict(headless, heal_calls=99, agents_spent=42, budget_kill_switch_tripped=False,
+              budget_stops=7)
+    _v, _r, signals = cr.classify(js)
+    if signals['agents_spent'] != 42 or signals['budget_kill_switch_tripped']:
+        fail('G10: an explicit JS-lane value must never be overwritten by a derived one')
+    print('  G10: classify_run adjudicates the headless lane (and still the JS lane)')
+
+
+def test_h2173_g10_probe_gate_defaults_and_live_boundary():
+    """G10 (H2173, audit F-B4): `verdict_for`'s default policy and the CLI `--policy` default
+    were frozen at production_v1 while CURRENT_POLICY advanced to v2 and then v3 — the live
+    lane produced receipts naming a retired gate, and v3's api ceiling could never fire
+    because nothing passed api_ms. Pin the defaults to CURRENT_POLICY and put a boundary test
+    on the LIVE ceilings, derived from the policy table so a future bump cannot leave this
+    test asserting a dead number."""
+    import probe_log
+    import inspect
+    spec = inspect.signature(probe_log.verdict_for)
+    if spec.parameters['policy'].default != probe_log.CURRENT_POLICY:
+        fail('G10: verdict_for must default to CURRENT_POLICY (got %r)'
+             % spec.parameters['policy'].default)
+    live = probe_log.POLICIES[probe_log.CURRENT_POLICY]
+    ceil_ms = live['latency_ceil_ms']
+    floor = live['payload_floor_bytes']
+    ok = dict(conn_errors=0, payload_bytes=floor, kind='warmup', schema_valid=True)
+    # Boundary: strictly under the live ceiling is GO, exactly at it is NO-GO.
+    verdict, reason = probe_log.verdict_for(ceil_ms - 1, **ok)
+    if verdict != 'GO':
+        fail('G10: %d ms must pass the live ceiling %d (%s)' % (ceil_ms - 1, ceil_ms, reason))
+    verdict, _reason = probe_log.verdict_for(ceil_ms, **ok)
+    if verdict != 'NO-GO':
+        fail('G10: %d ms must NOT pass a ceiling of %d' % (ceil_ms, ceil_ms))
+    # The api ceiling is a SECOND, independent fail condition when the policy declares one.
+    api_ceil = live.get('api_ceil_ms')
+    if api_ceil is not None:
+        verdict, reason = probe_log.verdict_for(ceil_ms - 1, api_ms=api_ceil, **ok)
+        if verdict != 'NO-GO' or 'duration_api_ms' not in reason:
+            fail('G10: a route-time breach must fail even when wall is within ceiling')
+        verdict, _r = probe_log.verdict_for(ceil_ms - 1, api_ms=api_ceil - 1, **ok)
+        if verdict != 'GO':
+            fail('G10: a healthy route under both ceilings must pass')
+    # The CLI must be able to supply api_ms at all — the gate was unreachable without it.
+    parser_src = inspect.getsource(probe_log)
+    if "'--api-ms'" not in parser_src:
+        fail('G10: probe_log CLI must expose --api-ms or the v3 route guard cannot fire')
+    print('  G10: probe defaults track %s; boundary pinned at %d ms wall / %s ms api'
+          % (probe_log.CURRENT_POLICY, ceil_ms, api_ceil))
+
+
+def test_h2173_g10_declared_budgets_are_read_or_labelled():
+    """G10 (H2173, audit F-B7/F-B5): two halves of the same defect class — a budget the
+    executor READS that the emitter never wrote (`budgets.max_agents`, so `max_total_agents`
+    was None on every live window), and a state field the operator SETS that enforcement
+    ignored (`state['translation_limit']`, while `preparation_limit` two frames down already
+    honoured state)."""
+    import gen_opt_harness2  # noqa: F401 -- import guard only; the manifest block is source-pinned
+    import coordinator
+    src = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                            'gen_opt_harness2.py'), encoding='utf-8').read()
+    budgets_block = src.split("'budgets': {", 1)[1].split('},', 1)[0]
+    for key in ('max_agents', 'max_translate_agents', 'max_heal_agents', 'timeout_ceil_ms'):
+        if "'%s'" % key not in budgets_block:
+            fail('G10: the execution manifest budgets block must carry %r — headless_worker '
+                 'reads it' % key)
+    # F-B5: the standard-mode runtime cap must honour state, exactly as preparation does.
+    leases = [{'id': 'l1', 'kind': 'verb', 'state': 'prepared'},
+              {'id': 'l2', 'kind': 'verb', 'state': 'prepared'}]
+    state = {'leases': leases, 'translation_limit': 1, 'runtime_mode': 'standard'}
+    try:
+        coordinator.begin_run_leases(state, ['l1', 'l2'], mode='standard')
+    except SystemExit as exc:
+        if 'runtime cap reached (1)' not in str(exc):
+            fail('G10: the cap must report the STATE limit, not the constant (got %s)' % exc)
+    else:
+        fail('G10: state["translation_limit"]=1 must refuse a 2-lease standard run')
+    print('  G10: manifest budgets feed the executor; translation_limit binds from state')
+
+
 def main():
     tests = [
         test_restore_covers_every_promoted_field,
@@ -8926,6 +9123,11 @@ def main():
         test_h2095_956_en_absence_flags_exempt_infra_partial,
         test_h2095_structured_error_does_not_crash_the_audit,
         test_classify_run_verdicts,
+        test_h2173_g5_malformed_result_rows_are_accounted,
+        test_h2173_g8_promote_refuses_route_foreign_artifact,
+        test_h2173_g10_classify_run_reads_the_live_lane,
+        test_h2173_g10_probe_gate_defaults_and_live_boundary,
+        test_h2173_g10_declared_budgets_are_read_or_labelled,
         test_grammar_field_restore_behavioral,
         test_threaded_gate_exception_requeues_full_window,
         test_quarantine_replace_failure_preserves_previous_destination,

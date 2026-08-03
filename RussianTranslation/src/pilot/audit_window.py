@@ -585,7 +585,12 @@ def main():
     ap.add_argument('--judge-sample-seed',
                     help='override deterministic semantic sample seed')
     ap.add_argument('--wall-clock-minutes', type=float,
-                    help='Max workflow wall-clock minutes for this run/window')
+                    help='OBSERVED wall-clock minutes for this run/window — a RECORDED '
+                         'metric, never a cap (H2173 G10 / H2089 #4: the old help read '
+                         '"Max workflow wall-clock minutes", where "Max" named the Max '
+                         'Workflow lane but read as a ceiling; nothing compares this value '
+                         'to anything). Omit to auto-derive from wf mtime vs '
+                         'meta.generated_at; `wall_clock_source` records which happened.')
     ap.add_argument('--max-input-tokens', type=int,
                     help='Max-reported input tokens')
     ap.add_argument('--max-output-tokens', type=int,
