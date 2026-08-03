@@ -4,6 +4,48 @@ _Created: 09-07-2026 · Last updated: 03-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 03-08-2026 (H2191) — stable-left prompt reorder: cross-window stable head 1 226 → 12 249 chars (offline, no paid call)
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md),
+playbook [PROMPT_CACHING_PWG_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PROMPT_CACHING_PWG_RU.md)
+§3 rank 4 / §4 Step E. `build_prompt` moved from `preamble + grammar + translation + [nws] + cards`
+to **`preamble + translation + grammar + [nws] + cards`**. Reorder only — no segment dropped or
+compressed (lean-TR stays rejected). **Zero paid calls.**
+
+Measured on the committed `h1209_slice3` manifest (3 cards, nominal window):
+
+| segment | chars |
+|---|---:|
+| preamble | 1 226 |
+| translation (CONV_TR) | 11 023 |
+| shared grammar (this fixture is nominal) | 0 |
+| per-card grammar | 293–404 |
+
+| cross-**window** stable head | chars | share of a 24 770-char prompt |
+|---|---:|---:|
+| old order (`preamble + grammar + translation`) | 1 226 | 4.9 % |
+| **new order** (`preamble + translation + grammar`) | **12 249** | **49.5 %** |
+| gain | **+11 023** | +899 % |
+
+**What this number is and is not.** It is the leading bytes that two windows with
+*different* grammar blocks still share — the head any provider-side prefix match could
+reuse across roots. It is **not** a billed saving: chars are not tokens, and nothing is
+saved unless the provider actually prefix-matches (CLI amortisation is itself contested —
+playbook §1.1). Within a single window the order changes nothing, since every call there
+already shares the whole framework; and because this fixture is a nominal window with an
+empty shared `grammar`, its own prompt bytes are unchanged by the reorder.
+
+**Four lanes carried the same assembly** and all four were moved together (`build_prompt`,
+`fragment_prompt`, two generated-harness JS twins, `prep_slice.prompt_common`), plus the two
+prefix computations that must stay byte-identical to it (`split_prompt`, `prompt_shape`).
+
+| gate | result |
+|---|---|
+| `headless_worker_selftest` (new H2191 pin) | PASS |
+| `window_selftest` | 202/202 |
+| `h2189_profile_ab_selftest` | 12/12 |
+| `h2158_route_ab.py --check` (3 real cards) | prefix 12 249 + tail, byte-identical to `build_prompt` |
+| `lang_parity_check.py` | 91 entries, 0 drift (32 re-derived, SHARED/GAP stand) |
 ## 03-08-2026 (`/pwg-live-gate`) — c4 gate-0 **HEALTH_NOGO**: the route, not our kill
 
 Opus 5 1M (`claude-opus-5[1m]`) drove the gate; the probe's own executor is **Sonnet 5**
