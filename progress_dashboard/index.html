@@ -605,12 +605,20 @@ function renderKitchen(k) {
       `<p style="margin:.3rem 0 0">Clean keys sum <b>${fmt(yld.clean_key_sum)}</b> · clean window % <b>${yld.clean_window_pct != null ? yld.clean_window_pct + '%' : '—'}</b></p>`
     : 'no ledger yet';
 
-  // K6 + K8
+  // K6 + K8 + K9 (H2230 post_cut/historical split)
+  const pc = instr.post_cut || {};
+  const hist = instr.historical || {};
   document.getElementById('instrBody').innerHTML = (instr.measured || honesty.measured)
     ? `<p>Wall-clock present <b>${fmt(instr.wall_clock_present)}/${fmt(instr.windows)}</b> ` +
-      `(${instr.wall_clock_coverage_pct != null ? instr.wall_clock_coverage_pct + '%' : '—'})</p>` +
+      `(${instr.wall_clock_coverage_pct != null ? instr.wall_clock_coverage_pct + '%' : '—'} blended)</p>` +
       `<p>Tokens present <b>${fmt(instr.token_metrics_present)}/${fmt(instr.windows)}</b> · ` +
       `gen_model <b>${fmt(instr.gen_model_present)}</b> (${instr.gen_model_coverage_pct != null ? instr.gen_model_coverage_pct + '%' : '—'})</p>` +
+      (instr.measured
+        ? `<p class="mut">post_cut wall-clock <b>${fmt(pc.wall_clock_present)}/${fmt(pc.windows)}</b> ` +
+          `(${pc.wall_clock_coverage_pct != null ? pc.wall_clock_coverage_pct + '%' : '—'}) · ` +
+          `historical <b>${fmt(hist.wall_clock_present)}/${fmt(hist.windows)}</b> ` +
+          `(${hist.wall_clock_coverage_pct != null ? hist.wall_clock_coverage_pct + '%' : '—'})</p>`
+        : '') +
       (honesty.badge ? `<p><span class="badge">${esc(honesty.badge)}</span></p>` : '') +
       `<p class="mut">${esc(honesty.note || instr.note || '')}</p>`
     : '—';
