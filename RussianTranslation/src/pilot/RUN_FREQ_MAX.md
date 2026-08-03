@@ -1,6 +1,6 @@
 # Runbook — frequency queue on the headless CLI (manifest v2)
 
-_Created: 09-07-2026 · Last updated: 02-08-2026_
+_Created: 09-07-2026 · Last updated: 03-08-2026_
 
 Goal: scale the PWG→Russian production run in DCS-frequency order, with giant
 roots split into single-pass units and re-glued after translation. This is the
@@ -66,6 +66,16 @@ tracked-file drift and is wired into `window_selftest.py`
 - **Execution route (H1110):** production is the **headless CLI on manifest v2**, not
   Workflow-from-session. Bind a named profile (`CLAUDE_CONFIG_DIR` + roster slot) before
   any paid call; promotion hard-refuses unbound payloads (H1080 Stage 3).
+- **Profile-surface strip (H2189, 03-08-2026) — OPT-IN, default OFF:** set
+  `execution.cli_safe_mode: true` in the manifest to spawn with `--safe-mode`, which
+  strips the operator profile's CLAUDE.md/skills/commands/agents/hooks from the child.
+  Measured on a real card: create **−69 %**, output **−49 %**, wall **−55 %**, cost
+  **−61 %** ($0.6921 → $0.2712), with identical card content (7 records / 13 senses, `{Tn}`
+  token set identical). The baseline **timed out at the 300 s production ceiling** on that
+  card; the safe-mode arm finished in 115 s. An unsupported CLI degrades to the historical
+  argv with a loud stderr warning — never a hard failure. **Do not flip the default**
+  without a canary GO receipt on the safe-mode arm. Numbers:
+  [H2189 report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md).
 - **Durable call budget (25-07-2026 hardening):** the bounded run, its fleet probes,
   and every headless worker share one `pwg.call_reservation.v1` ledger keyed by
   `run_id`. `max_calls` is a strict pre-spawn ceiling: reserve first, then spawn;
@@ -90,12 +100,25 @@ tracked-file drift and is wired into `window_selftest.py`
   clock for changing one directory**, no code change and no guard weakened. Pass an empty
   scratch dir as the subprocess `cwd`; the manifest carries every input the worker needs, so
   nothing depends on being inside the repo.
+  **Incomplete — open defect (H2189, 03-08-2026).** `bare_cli_cwd()` rejects an ancestor
+  carrying a bare `CLAUDE.md` or a `.git`, but **not** one carrying `.claude\CLAUDE.md`, and
+  its `%TEMP%` directory sits under the Windows user profile. Measured: **32 779 B** of
+  operator memory (`C:\Users\user\.claude\CLAUDE.md` + `.claude\rules`) still reaching every
+  paid call. Check any spawn dir with
+  `python src/pilot/h2189_min_profile.py --scan-cwd <dir>`. `--safe-mode` masks it by
+  disabling memory discovery outright; a lane without that flag still pays it.
 - **The per-call cache is NEVER reused — budget for it, do not try to tune it away.** Two
   *identical* back-to-back calls each re-created ~49 k tokens (49 153 → 49 165, cache read
   pinned at 28 882): the second re-wrote exactly what the first had just written. The write is
   a premium **cache create** (~$6/M), not a **read** (~$0.30/M), and at ~$0.30 it *is* the cost
   of a call that translates nothing. **This is not TTL expiry** — the write lands in
   `ephemeral_1h_input_tokens` and a 1-hour TTL cannot lapse between calls issued seconds apart.
+  **⚠️ Contradicted 03-08-2026 (H2189), not yet re-measured — do not re-plan on either
+  reading yet.** In all five arms of the H2189 trivial phase the second call created
+  **zero** and its `read` equalled the first call's `create + read` exactly, at the same
+  seconds-apart cadence and the same 1 h bucket. That is amortisation. Logged as a
+  contradiction rather than a correction because this run was not designed to test it:
+  [H2189 report §7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md).
   A one-shot subprocess cannot amortise its own system prompt; that is a property of the route.
   Do not "fix" it by batching (see the shape ruling below). **Single playbook of
   record** (ranked levers + Opus handoffs H2189–H2191 + H2158):

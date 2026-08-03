@@ -237,6 +237,85 @@ def test_cli_spawns_from_a_bare_cwd():
     print('  H2158 bare cwd: CLI spawned from %s (no CLAUDE.md, no .git)' % cwd)
 
 
+def test_bare_cwd_ancestry_is_reported_even_though_it_is_not_yet_clean():
+    """H2189: `bare_cli_cwd()` rejects an ancestor with `CLAUDE.md`/`.git` -- not one with
+    `.claude/CLAUDE.md`. On a Windows operator box the bare dir sits under %TEMP%, i.e.
+    under the user profile, where exactly that file lives, so ~33 KB of operator memory
+    still reaches every paid call. Pinned as a MEASUREMENT, not as a passing assertion:
+    the fix is the opt-in `--safe-mode` below (which disables memory discovery outright),
+    and a test that demanded a clean ancestry would fail on the very box this ships to.
+    """
+    from h2189_min_profile import cwd_ancestry_scan
+    cwd = h.bare_cli_cwd()
+    if cwd is None:
+        print('  H2189: bare_cli_cwd() failed safe (None); nothing to scan')
+        return
+    hits = cwd_ancestry_scan(cwd)
+    leaked = sum(hit['bytes'] for hit in hits)
+    for hit in hits:
+        assert not os.path.samefile(os.path.dirname(hit['path']), cwd) \
+            if os.path.exists(os.path.dirname(hit['path'])) else True
+    print('  H2189 ancestry of %s: %d byte(s) across %d ancestor file(s)%s'
+          % (cwd, leaked, len(hits),
+             '' if not hits else ' -- removed only by --safe-mode, not by bare cwd'))
+
+
+def test_safe_mode_is_opt_in_and_off_by_default():
+    """A manifest that says nothing must spawn exactly as it did before H2189."""
+    seen = {}
+    def capture_runner(argv, **kwargs):
+        seen['argv'] = argv
+        return success_runner(argv, **kwargs)
+    execute(manifest(), capture_runner)
+    assert h.SAFE_MODE_FLAG not in seen['argv'], \
+        'H2189 flipped a production default; it is opt-in until a canary GO covers it'
+
+
+def test_safe_mode_is_carried_when_the_manifest_requests_it():
+    seen = {}
+    def capture_runner(argv, **kwargs):
+        seen['argv'] = argv
+        return success_runner(argv, **kwargs)
+    m = manifest()
+    m['execution'] = {'cli_safe_mode': True}
+    h._safe_mode_support[sys.executable] = True    # pretend the installed CLI supports it
+    try:
+        execute(m, capture_runner)
+    finally:
+        h._safe_mode_support.pop(sys.executable, None)
+    argv = seen['argv']
+    assert h.SAFE_MODE_FLAG in argv, 'manifest requested safe mode and the spawn ignored it'
+    # It must be an ADDITION, never a replacement: the schema and permission posture that
+    # make this a pwg_ru translation call have to survive the optimisation.
+    assert '--json-schema' in argv and argv[argv.index('--permission-mode') + 1] == 'plan'
+
+
+def test_safe_mode_degrades_loudly_when_the_cli_cannot_do_it():
+    """Requested-but-unsupported must fall back to the historical argv, not kill the run.
+
+    An unsupported flag would die in the CLI's own argument parsing -- every spawn, all
+    of them -- turning a cost optimisation into a total outage.
+    """
+    import io
+    seen = {}
+    def capture_runner(argv, **kwargs):
+        seen['argv'] = argv
+        return success_runner(argv, **kwargs)
+    m = manifest()
+    m['execution'] = {'cli_safe_mode': True}
+    h._safe_mode_support[sys.executable] = False   # pretend an older CLI
+    stderr, sys.stderr = sys.stderr, io.StringIO()
+    try:
+        execute(m, capture_runner)
+        warned = sys.stderr.getvalue()
+    finally:
+        sys.stderr = stderr
+        h._safe_mode_support.pop(sys.executable, None)
+    assert h.SAFE_MODE_FLAG not in seen['argv'], 'spawned with a flag the CLI cannot parse'
+    assert 'H2189' in warned and 'WITHOUT it' in warned, \
+        'silent downgrade: the run would report H2189 savings while paying the full tax'
+
+
 def test_kill_ceiling_in_step_with_harness():
     """#983: the per-call ceiling lives in TWO places and raising only one is inert.
 
@@ -1618,6 +1697,10 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_h2091_948_account_refusal_aborts_before_any_bisect()
     test_kill_ceiling_in_step_with_harness()
     test_cli_spawns_from_a_bare_cwd()
+    test_bare_cwd_ancestry_is_reported_even_though_it_is_not_yet_clean()
+    test_safe_mode_is_opt_in_and_off_by_default()
+    test_safe_mode_is_carried_when_the_manifest_requests_it()
+    test_safe_mode_degrades_loudly_when_the_cli_cannot_do_it()
     print('headless_worker_selftest: PASS')
 
 

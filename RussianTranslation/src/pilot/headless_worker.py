@@ -103,6 +103,79 @@ def bare_cli_cwd():
         probe = parent
 
 
+# H2189 (02-08-2026): the residual prefix tax `bare_cli_cwd()` cannot reach.
+#
+# Bare cwd removes PROJECT context. It does not remove (a) the operator PROFILE bound as
+# the CLI's config dir -- its skills, commands, agents and, above all, its SessionStart /
+# UserPromptSubmit hooks -- nor (b) the memory files an ancestor walk from the spawn
+# directory still finds. `bare_cli_cwd()` rejects an ancestor carrying a bare `CLAUDE.md`
+# or a `.git`, but NOT one carrying `.claude\CLAUDE.md`; on a Windows operator box the
+# bare dir lives under %TEMP%, i.e. under the user profile, where exactly that file sits.
+# Measured on this box: 32 779 B of operator memory reaching every paid call.
+#
+# Measured A/B (H2189, sequential, bare cwd, claude-sonnet-5, cold call):
+#   trivial   paid 39 532 create / error_max_turns   safe-mode 4 712 create / completes
+#   real card paid 60 140 create, 19 718 out, 254 s, $0.6921
+#             safe 18 615 create, 10 040 out, 115 s, $0.2712   (-69 % create, -61 % cost,
+#             -55 % wall) with IDENTICAL card content: 7 records / 13 senses on both, the
+#             {Tn} masked-span token SET identical, 13/13 senses carrying Russian, zero
+#             SAN-LOSS/UNMAPPED. The output halving is agent-loop overhead, not lost card.
+#
+# `--safe-mode` beat a dedicated minimal config dir (39 532 -> 36 092, only -8.7 %) and
+# needs no second on-disk credential copy and no second `ActiveCallClaim` fingerprint.
+# `--bare` was deliberately NOT adopted: it forces ANTHROPIC_API_KEY auth, i.e. moves this
+# lane off the subscription identity, which is a human ruling and not a cache tweak.
+#
+# OPT-IN, default OFF. The cost/latency case is measured, but the quality case rests on
+# n=1 per arm and one unattributed divergence (the free-text `tag` vocabulary differed
+# between the two samples). Flipping a production default on that evidence is exactly the
+# "flip without measured GO" this handoff forbids -- an operator turns it on per manifest
+# once a canary GO receipt covers the safe-mode arm.
+SAFE_MODE_FLAG = '--safe-mode'
+_safe_mode_support = {}
+
+
+def cli_supports_safe_mode(claude_bin='claude'):
+    """Whether the installed CLI accepts --safe-mode. Cached; fails SAFE (unknown => False).
+
+    A requested-but-unsupported flag would make every spawn die in argument parsing, i.e.
+    turn a cost optimisation into a total outage. Probing `--help` once per binary is the
+    cheap way to make the feature degrade to the historical behaviour instead.
+    """
+    if claude_bin in _safe_mode_support:
+        return _safe_mode_support[claude_bin]
+    supported = False
+    try:
+        proc = subprocess.run(claude_argv_prefix(claude_bin) + ['--help'],
+                              capture_output=True, text=True, encoding='utf-8', timeout=60)
+        supported = SAFE_MODE_FLAG in (proc.stdout or '')
+    except (OSError, subprocess.SubprocessError, ValueError):
+        supported = False
+    _safe_mode_support[claude_bin] = supported
+    return supported
+
+
+def resolve_safe_mode(manifest, claude_bin='claude'):
+    """Return True when this run should spawn with --safe-mode.
+
+    Requested by `execution.cli_safe_mode` in the manifest -- auditable, travels with the
+    run receipt, and absent from every existing manifest, so the default is unchanged.
+    """
+    requested = bool((manifest.get('execution') or {}).get('cli_safe_mode'))
+    if not requested:
+        return False
+    if not cli_supports_safe_mode(claude_bin):
+        # Loud, not silent: a run that believes it is stripping the profile but is not
+        # would report H2189's savings while paying the full tax.
+        sys.stderr.write(
+            'H2189: manifest requested execution.cli_safe_mode but the installed CLI (%s) '
+            'does not advertise %s -- spawning WITHOUT it and paying the full profile '
+            'prefix. Update the CLI or clear the manifest flag.\n' % (claude_bin, SAFE_MODE_FLAG))
+        sys.stderr.flush()
+        return False
+    return True
+
+
 def claude_argv_prefix(claude_bin):
     """Return the argv prefix that invokes the Claude CLI directly (Windows-safe).
 
@@ -602,6 +675,9 @@ class HeadlessEngine:
             eff_ms = min(eff_ms, int(ceil_ms))
         self.timeout = eff_ms / 1000.0
         self.cli_cwd = bare_cli_cwd()   # H2158: None => inherit, the historical behaviour
+        # H2189: opt-in, and resolved ONCE here rather than per call, so a mid-run CLI
+        # swap cannot make half a window's calls carry the flag and half not.
+        self.safe_mode = resolve_safe_mode(manifest, claude)
         self.run = runner or run_tree_kill
         self.attempts = []
         self.failures = {}
@@ -677,6 +753,8 @@ class HeadlessEngine:
                 '-p', '--output-format', 'json', '--json-schema',
                 json.dumps(self.m['output_schema'], ensure_ascii=False, separators=(',', ':')),
                 '--model', self.m['model'], '--permission-mode', 'plan']
+        if self.safe_mode:                       # H2189: strips profile CLAUDE.md/skills/hooks
+            argv.append(SAFE_MODE_FLAG)
         try:
             reservation = self.call_reservation.reserve(
                 'headless:%s' % ('heal' if heal else 'translate'),
