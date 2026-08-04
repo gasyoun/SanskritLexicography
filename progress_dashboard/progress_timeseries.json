@@ -39,7 +39,7 @@
     },
     {
       "date": "2026-08-03",
-      "generated_at": "2026-08-03T10:28:16Z",
+      "generated_at": "2026-08-03T22:00:24Z",
       "verb_promoted": 48,
       "verb_dcs_attested": 749,
       "senses": 11603,
@@ -49,11 +49,15 @@
       "ai_translated": 11598,
       "needs_review": 2,
       "g5_open": 145,
-      "g5_total": 150
+      "g5_total": 150,
+      "kitchen_yield_clean_pct": 0.63,
+      "kitchen_health_last_verdict": "NO-GO",
+      "kitchen_health_last_go": 0,
+      "kitchen_idle_hours": 430.54
     },
     {
       "date": "2026-08-04",
-      "generated_at": "2026-08-04T01:17:09Z",
+      "generated_at": "2026-08-04T05:54:55Z",
       "verb_promoted": 48,
       "verb_dcs_attested": 749,
       "senses": 11603,
@@ -63,7 +67,11 @@
       "ai_translated": 11598,
       "needs_review": 2,
       "g5_open": 145,
-      "g5_total": 150
+      "g5_total": 150,
+      "kitchen_yield_clean_pct": 0.63,
+      "kitchen_health_last_verdict": "NO-GO",
+      "kitchen_health_last_go": 0,
+      "kitchen_idle_hours": 430.54
     }
   ]
 }
