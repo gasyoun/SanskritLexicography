@@ -2,7 +2,7 @@
 
 _Created: 20-07-2026 · Last updated: 20-07-2026_
 
-Ruling for [H1362](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1362-Opus_SanskritLexicography_findings-rederivability-class-and-staleness-verifiability-axis_20.07.26.md) (Opus 4.8 `claude-opus-4-8`). It gives the epistemic-registry family the one axis it lacked: **whether, and how, each [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) finding can be re-verified.** Until now every finding was cited with equal authority — a number that recomputes from committed code in one command sat beside a figure whose underlying data was never committed. This ruling separates them.
+Ruling for [H1362](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1362-Opus_SanskritLexicography_findings-rederivability-class-and-staleness-verifiability-axis_20.07.26.md) (Opus 4.8 `claude-opus-4-8`). It gives the epistemic-registry family the one axis it lacked: **whether, and how, each [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) finding can be re-verified.** Until now every finding was cited with equal authority — a number that recomputes from committed code in one command sat beside a figure whose underlying data was never committed. This ruling separates them.
 
 Its machine-readable companion is [`verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json) (keyed by finding number); it drives the **Re-check recipe** column of [STALENESS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/STALENESS.md) and the `verifiability` block of the [epistemic dashboard](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/index.html). It is the re-derivability sibling of the [citation-identity ruling](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/REGISTRY_CITATION_IDENTITY_RULING.md) (which governs the §-number as a citation key); this one governs the §-number as a *reproducibility claim*.
 
@@ -25,7 +25,7 @@ D is reserved for **evidentiary-integrity failure**, not mere storage inconvenie
 
 ## 3. Counts — the honest denominator
 
-**114 distinct findings** (post-[H1361](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1361-Opus_SanskritLexicography_findings-section-number-collision-ruling-and-dashboard-audit_20.07.26.md) citation-identity ruling **and** the H1350×H1361 §448–451 collision resolved by this pass — see the ruling doc §6, which renumbered the H1350 PWG block to §452–455). The earlier published boards read 77 (a 12-07 regeneration frozen while the file grew) and 109 (H1361, before the §452–455 split); neither is the true count now.**
+**114 distinct findings** (post-[H1361](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1361-Opus_SanskritLexicography_findings-section-number-collision-ruling-and-dashboard-audit_20.07.26.md) citation-identity ruling **and** the H1350×H1361 §448–451 collision resolved by this pass — see the ruling doc §6, which renumbered the H1350 PWG block to §452–455). The earlier published boards read 77 (a 12-07 regeneration frozen while the file grew) and 109 (H1361, before the §452–455 split); neither is the true count now.**
 
 | Class | Count | Share |
 |-------|-------|-------|

@@ -23,7 +23,7 @@ confuse **lexicographic overlap** with **engineering waste**.
 parity port. Prefer closing a **LANG_PARITY GAP** over inventing a third twin.
 
 **Model provenance:** Grok 4.5 (`grok-4.5`), inventory session 02-08-2026
-([H2222](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2222-Grok_SanskritLexicography_pwg-dup-optimization-inventory_02.08.26.md)).
+([H2222](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2222-Grok_SanskritLexicography_pwg-dup-optimization-inventory_02.08.26.md)).
 
 ---
 

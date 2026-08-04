@@ -86,7 +86,7 @@ Env/runtime: Python, offline; keyed on (dict, L, k1) — line numbers are batch-
 
 ### §7. PWG article size dominates every parametric statistic (33.9×) → reproduce
 🟠 ✍️ (reproduces [FINDINGS §67](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#67-in-pwg-article-size-dwarfs-every-parametric-statistic-you-can-extract-from-the-entry))
-Inputs: PWG entry sizes over 106,082 headwords from [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt); Leonchenko's 394-lemma corpus core; [VisualDCS `derived-parametric-core/`](https://github.com/gasyoun/VisualDCS/blob/main/derived-parametric-core/README.md) parametric tallies.
+Inputs: PWG entry sizes over 106,082 headwords from [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt); Leonchenko's 394-lemma corpus core; [VisualDCS `derived-parametric-core/`](https://github.com/gasyoun/VisualDCS/blob/main/derived-parametric-core/README.md) parametric tallies.
 Command: [`titov_control_entry_size.py`](https://github.com/gasyoun/Uprava/blob/main/research/titov_control_entry_size.py) (deterministic; size-caliper matching ±10%).
 Expected: mean entry size 14,876 chars (core) vs 439 (rest) = **33.9×**; raw entry size recovers the core at top-394 (**35.5%**, tie-aware) better than any counted parameter (multiword citations 33.5%, glosses 32.4%, numbered senses 27.8%, headword length 8.5%); per-character normalisation collapses them (27.8%→0.8%); size-matched senses reverse sign (Wilcoxon p=0.038) — ties back to FINDINGS §67.
 Env/runtime: Python stdlib, offline against committed PWG text + `derived-parametric-core`; deterministic.
@@ -95,7 +95,7 @@ Env/runtime: Python stdlib, offline against committed PWG text + `derived-parame
 
 ### §8. PWG case-government census (≈3,853 marks / ≈3,222 senses) → reproduce
 🟠 ✍️ (reproduces [FINDINGS §71](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#71-pwg-marks-case-government-explicitly-3853-times-across-3222-senses--a-deterministic-census-not-an-estimate))
-Inputs: PWG German sense text from [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt) (`<ab>` case abbreviations inside sense prose).
+Inputs: PWG German sense text from [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt) (`<ab>` case abbreviations inside sense prose).
 Command: [`government_census.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/government_census.py) (deterministic regex census; no model call).
 Expected: **≈3,853** explicit government marks across **≈3,222** senses = 2,309 parenthesized single-case markers (acc 1,102 · loc 385 · instr 270 · gen 245 · abl 190 · dat 117) + 40 case-variation groups + 1,504 prose markers — a deterministic count, not an estimate; ties back to FINDINGS §71.
 Env/runtime: Python stdlib, offline against committed PWG text; deterministic.
@@ -104,7 +104,7 @@ Env/runtime: Python stdlib, offline against committed PWG text; deterministic.
 
 ### §9. MW `<ls>` two-markup-shape census → reproduce
 🟠 ✍️ (reproduces [FINDINGS §89](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#89-mw-writes-ls-citations-in-two-markup-shapes-and-locates-them-in-roman-as-well-as-arabic--a-literal-ls-regex-undercounts-its-apparatus-by-286-and-case-folding-the-roman-test-erases-the-l-hedge))
-Inputs: MW `<ls>` citations from [`csl-orig/v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt).
+Inputs: MW `<ls>` citations from [`csl-orig/v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw.txt).
 Command: [`register_census.py`](https://github.com/sanskrit-lexicon/MWS/blob/master/papers/p3_citation_registers/register_census/register_census.py) (MWS) cross-checked against [`parse_cslorig.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/forensic/parse_cslorig.py) (csl-atlas).
 Expected: MW writes `<ls>` in **two shapes** — siglum+locator inside the content (`<ls>Pāṇ. vi, 2, 161</ls>`) and the split form — and locates citations in roman as well as arabic; a literal `<ls>` regex **undercounts the apparatus by 28.6%**, and case-folding the roman test erases the `L` hedge — ties back to FINDINGS §89.
 Env/runtime: Python stdlib, offline against committed MW text; deterministic.

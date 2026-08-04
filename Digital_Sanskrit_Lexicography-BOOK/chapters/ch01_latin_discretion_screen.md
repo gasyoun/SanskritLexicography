@@ -50,7 +50,7 @@ of the St Petersburg school, taken over from Greek and Roman textual scholarship
 apparatus. The screen is **linguistic, not typographic**: the word is printed in full, in
 the body of the entry, but in a language that filters its readership. Böhtlingk's √*yabh* is
 the textbook case
-([csl-orig `pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt)):
+([csl-orig `pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt)):
 
 > *yabh*, *yábhati* Dhātup. 23,11 … **futuere** (die entsprechende slavische Wurzel
 > verzeichnet bei Miklosich …): *yabha mām* "**futue me**" spricht ein Weib AV.
@@ -105,7 +105,7 @@ discretion-screen has never been documented for Sanskrit lexicography at all, an
 ## 2. Method
 
 Source files are the SLP1-native CDSL exports in
-[`csl-orig/v02`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02) — eleven
+[`csl-orig/v02`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02) — eleven
 dictionaries grouped by metalanguage: **German** `pwg`, `pw`, `sch`, `pwkvn` (PWK), `gra`;
 **English** `mw`, `ap90`, `ap`, `wil`, `cae`; **Latin-medium** `bop`. Each `<L>…<LEND>`
 entry was scanned for a curated list of Latin sexual/scatological terms; for each hit I
@@ -483,9 +483,9 @@ to another.)
 ## 5. Cross-dictionary: who lifts the screen
 
 Cross-checking the vulgar headwords against **MW** (Monier-Williams, English, 1899,
-[`mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt)) and
+[`mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw.txt)) and
 **AP90** (Apte, 1890,
-[`ap90.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90.txt))
+[`ap90.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap90/ap90.txt))
 reveals a gradient of candour. The verified worked example, √*yabh*:
 
 | Dictionary | Audience / date | Gloss of √*yabh* |

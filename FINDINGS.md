@@ -753,8 +753,8 @@ Evidence: ~0 `<ab>`/`<div>`/`<s>`/`<ls>` tags; citations appear via `iti`/quotes
 Implication: any marker-based detector scores SKD/VCP at 0 *by construction* — never read 0
 as "no content"; use the indigenous cues. (Miscalled ≥4×.)
 
-> **Source:** data [`v02/skd/skd.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/skd/skd.txt)
-> · [`v02/vcp/vcp.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/vcp/vcp.txt) (grep: no `<ab>`/`<div>`). — SKD / VCP (csl-orig) · 2026-06
+> **Source:** data [`v02/skd/skd.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/skd.txt)
+> · [`v02/vcp/vcp.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/vcp/vcp.txt) (grep: no `<ab>`/`<div>`). — SKD / VCP (csl-orig) · 2026-06
 
 ### §20. The ls source map recognises 72.4 percent of PWG citations
 
@@ -802,7 +802,7 @@ Implication: a sense-segmenter for MW must split on `¦` inside the record, not 
 is structural, not a sense boundary, so it over-counts senses.
 
 > **Source:** measured `grep -c '<div n="m"' / '<L>'` on
-> [`v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt). — csl-orig (mw) · 2026-06-26
+> [`v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw.txt). — csl-orig (mw) · 2026-06-26
 
 ### §23. Apte is three dictionaries; keys differ stem vs nominative
 
@@ -817,7 +817,7 @@ Implication: never treat "Apte" as one source — pick AP90 / AP / AE explicitly
 headword join, normalise stem↔nominative and join on the `key1` computational key, not `key2`/printed form.
 
 > **Source:** csl-guides/.ai_state.md + csl-apidev/.ai_state.md (the `agni`/`agniH` resolver note); markup per
-> [`v02/ap90/ap90.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90.txt). — csl-guides / csl-apidev / csl-orig · 2026-06
+> [`v02/ap90/ap90.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap90/ap90.txt). — csl-guides / csl-apidev / csl-orig · 2026-06
 
 ### §24. About 9 percent of typo corrections are collisions
 
@@ -1179,8 +1179,8 @@ attribution: MW↔PWG (English √ vs German "Wurzel") 65 %, PWG↔PW 93 %.
 Implication: the Pāṇinian analysis is a stable cross-source signal usable as a consensus/QA oracle;
 Wilson's divergence is a distinct stratum, not noise.
 
-> **Source:** [`cross_dict_agreement.csv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/cross_dict_agreement.csv)
-> + [PAPER_DRAFT.md](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/PAPER_DRAFT.md)
+> **Source:** [`cross_dict_agreement.csv`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/cross_dict_agreement.csv)
+> + [PAPER_DRAFT.md](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/PAPER_DRAFT.md)
 > · dashboard https://sanskrit-lexicon.github.io/csl-orig/ — csl-orig · 2026-06-26
 
 ### §34. The E abbreviation tag is polysemous across dicts
@@ -1211,8 +1211,8 @@ surface forms keep the thematic `-a` and must NOT seed CANON): 622 variants fold
 guarded so a real distinct root (`kṝ` ≠ `kṛ`) is never collapsed; oracle-join precision then rose 74→83 %,
 nearest-root stays the weakest tier (~66–75 %, genuine wrong-token grabs) and is tagged for downweighting.
 
-> **Source:** [`nearest_root_audit.json`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/nearest_root_audit.json)
-> + [`build_root_normalization.py`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/build_root_normalization.py) — csl-orig · 2026-06-26
+> **Source:** [`nearest_root_audit.json`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/nearest_root_audit.json)
+> + [`build_root_normalization.py`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/build_root_normalization.py) — csl-orig · 2026-06-26
 
 ## Encoding & normalization
 
@@ -1313,7 +1313,7 @@ Implication: after any batch correction, verify the first 3 bytes of every touch
 error, check encoding before structure. (Complements the BOM-state finding above — this is how
 the BOM gets *introduced* and what it breaks.)
 
-> **Source:** [csl-corrections `.ai_state.md`](https://github.com/sanskrit-lexicon/csl-corrections/blob/master/.ai_state.md)
+> **Source:** [csl-corrections `.ai_state.md`](https://github.com/sanskrit-lexicon/csl-corrections/blob/main/.ai_state.md)
 > §Dev Notes — csl-corrections · 2026-06-27
 
 ### §39. devanagari_to_slp1 mis-routes retroflex la
@@ -1402,7 +1402,7 @@ must ship BY-SA — an NC restriction cannot be added to it.
 
 > **Source:** [kosha/COMPARISON.md](https://github.com/gasyoun/kosha/blob/main/COMPARISON.md)
 > (three parallel live-fetch passes, Fable 5 `claude-fable-5`) +
-> [csl-orig/LICENSE](https://github.com/sanskrit-lexicon/csl-orig/blob/master/LICENSE) —
+> [csl-orig/LICENSE](https://github.com/sanskrit-lexicon/csl-orig/blob/main/LICENSE) —
 > kosha · 2026-07-02
 
 ### §47. Heritage data is acquirable despite the Anubis wall — via a GitHub mirror; the morphology XML is not in it
@@ -2097,7 +2097,7 @@ build handoff [H338](https://github.com/gasyoun/Uprava/blob/main/handoffs/archiv
 🟢 **VedaWeb 2.0's `lemmatization.json` export (H096) already carries a per-token
 `id_gra` array resolved via its own `kosh.uni-koeln.de/cdsd/gra/restful/ids` API — and
 that internal ID is exactly the Grassmann `<L>` entry number in
-[`csl-orig/v02/gra/gra.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/gra/gra.txt)**
+[`csl-orig/v02/gra/gra.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/gra/gra.txt)**
 (confirmed live: `id_gra=79` → `<L>79<pc>0008<k1>agni…`; `id_gra=1824` →
 `<L>1824<pc>0230<k1>Iq…`). H097 built the full crosswalk
 ([`gra_vedaweb_crosswalk.tsv`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/gra_vedaweb_crosswalk.tsv),
@@ -2983,7 +2983,7 @@ cross-check). Recorded as
 
 > **Source:** [morphology-attestation build report](https://github.com/gasyoun/kosha/blob/main/data/concordance/MORPHOLOGY_ATTESTATION_BUILD_REPORT.md)
 > + manifest row `morphology-attestation-audit` ([datasets.json](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json)) ·
-> [H1262](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1262-Opus_kosha_a3_attested_form_join_morphology_audit_18.07.26.md) ·
+> [H1262](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1262-Opus_kosha_a3_attested_form_join_morphology_audit_18.07.26.md) ·
 > [kosha](https://github.com/gasyoun/kosha) · 18-07-2026, Opus 4.8 (`claude-opus-4-8`).
 
 ### §95. DharmaMitra `unsandhied` batches return MISALIGNED results on short inputs — doubled echoes and other texts' tokens — so every consumer must validate by surface reconstruction before display
@@ -3008,7 +3008,7 @@ add the gate at READ time, not just at query time.
 > **Source:** [build_subhashita_pack.py](https://github.com/gasyoun/kosha/blob/main/scripts/build_subhashita_pack.py)
 > (`accept_seg` / `label_internal_seams`) + the committed cache
 > [dharmamitra_indische_sprueche.json](https://github.com/gasyoun/kosha/blob/main/data/sandhi/_cache/dharmamitra_indische_sprueche.json) ·
-> [H1279](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1279-Fable_kosha_pedagogy-wave-ru-subhashita-reader_19.07.26.md) ·
+> [H1279](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1279-Fable_kosha_pedagogy-wave-ru-subhashita-reader_19.07.26.md) ·
 > [kosha](https://github.com/gasyoun/kosha) · 19-07-2026, Fable 5 (`claude-fable-5`).
 
 ---
@@ -3220,7 +3220,7 @@ declared canon; the printed front-matter "List of Works and Abbreviations" is wh
 close that gap.
 
 > **Source:** measured probe over `external_src/pd/pd.txt` during the scoping of
-> [H1336](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1336-Opus_csl-atlas_pd-abbrev-vs-dcs-corpus-coverage_19.07.26.md)
+> [H1336](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1336-Opus_csl-atlas_pd-abbrev-vs-dcs-corpus-coverage_19.07.26.md)
 > (PD-abbreviation-list vs DCS corpus coverage) · 19-07-2026, Opus 4.8 (`claude-opus-4-8`).
 > Identification verified by citation-context inspection, not by convention.
 
@@ -3293,7 +3293,7 @@ rows (3.3%).
 verify it against the surface form and count the rejects — never reorder silently, and
 never assume the last listed member is the head.
 
-> **Source:** [H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md) ·
+> **Source:** [H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md) ·
 > gate implemented as `order_ok()` in
 > [`sangram/data/samasa_ladder/build_samasa_ladder.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/data/samasa_ladder/build_samasa_ladder.py),
 > pinned by four regression tests in
@@ -3331,7 +3331,7 @@ machine metadata.
 Fixed same pass: `data/FAIR_RELEASE_1.md` §Related and csl-observatory's `CITATION.cff` both
 corrected to state the OBS-T dataset has **no minted DOI yet**.
 
-> **Source:** [H1364](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1364-Sonnet_SanskritLexicography_contradictions-duplicate-section-repair-and-ch14-doi-ruling_20.07.26.md) · [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) / [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) · 20-07-2026, Sonnet 5 (`claude-sonnet-5`).
+> **Source:** [H1364](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1364-Sonnet_SanskritLexicography_contradictions-duplicate-section-repair-and-ch14-doi-ruling_20.07.26.md) · [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) / [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) · 20-07-2026, Sonnet 5 (`claude-sonnet-5`).
 
 ### §104. The DCS `dcs-conllu` treebank is only ~3.9 % dependency-parsed — corpus government/valency work must lean on co-occurrence, not arcs, and read absence as "unknown"
 
@@ -3359,7 +3359,7 @@ of the same DCS-2026 master as `VisualDCS/src/DCS-data-2026/dcs_full.sqlite` —
 when you need HEAD/DEPREL (the sqlite would need a join); prefer the sqlite for lemma/preverb
 lookups.
 
-> **Source:** [H1372](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1372-Opus_SanskritGrammar_scherzl-government-relations-vs-dcs-treebank-adjudication_20.07.26.md) ·
+> **Source:** [H1372](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1372-Opus_SanskritGrammar_scherzl-government-relations-vs-dcs-treebank-adjudication_20.07.26.md) ·
 > measured by [`aggregate_dcs_gov.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/aggregate_dcs_gov.py),
 > reported in [`SCHERZL_GOVERNMENT_CORPUS_ADJUDICATION_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/SCHERZL_GOVERNMENT_CORPUS_ADJUDICATION_2026.md) ·
 > 20-07-2026, Opus 4.8 (`claude-opus-4-8`).
@@ -3434,7 +3434,7 @@ whose member-**order** caveat is
 > + join [`derived-data/Kompozity/uttarapada_dict_vs_corpus.tsv`](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Kompozity/uttarapada_dict_vs_corpus.tsv)
 > (19,177 rows) + build [`derived-data/Kompozity/build_uttarapada_dict_vs_corpus.py`](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Kompozity/build_uttarapada_dict_vs_corpus.py) ·
 > dictionary side = [MWderivations `issue15/compounds_reverse_classified.tsv`](https://github.com/gasyoun/MWderivations/blob/master/issue15/compounds_reverse_classified.tsv) ·
-> [H1328](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1328-Opus_VisualDCS_kompozity-mw-uttarapada-join-dict-vs-corpus_19.07.26.md)
+> [H1328](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1328-Opus_VisualDCS_kompozity-mw-uttarapada-join-dict-vs-corpus_19.07.26.md)
 > — VisualDCS · 20-07-2026, Opus 4.8 (`claude-opus-4-8[1m]`).
 
 ### §457. DCS covers ~25% of the Poona Dictionary's citation mass but ~78% of DCS's own tokens — the classical core, not PD's encyclopedic breadth; and a siglum prefix-merge fuses MahāBhā. (Mahābhārata) with MahāBh. (Mahābhāṣya)
@@ -3476,7 +3476,7 @@ DCS's bounded 276-text inventory and adjudicates the head by hand rather than cl
 > + [`pd_dcs_metrics.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/pd_dcs_metrics.json) ·
 > PD source = [`pd.txt`](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/external_src/pd/pd.txt) (external, read-only) ·
 > DCS = [`VisualDCS` Corpus-Delta 2021–2026](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Corpus-Delta-2021-2026/per_text_token_delta.csv) ·
-> [H1336](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1336-Opus_csl-atlas_pd-abbrev-vs-dcs-corpus-coverage_19.07.26.md)
+> [H1336](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1336-Opus_csl-atlas_pd-abbrev-vs-dcs-corpus-coverage_19.07.26.md)
 > ([csl-atlas PR #276](https://github.com/sanskrit-lexicon/csl-atlas/pull/276)) — csl-atlas · 20-07-2026, Opus 4.8 (`claude-opus-4-8[1m]`).
 > **Scope caveat:** PD published a–~`apaca-` only (6 of 37+ vols) — this is PD's canon *as exercised under a-*, not its full declared canon.
 ### §458. A Sanskrit dictionary's big letters are big because they head *preverb families* — and testing "entries shrink over publication" needs an outlier-robust estimator, not a parametric regression (encyclopedic dicts have single 300k-char articles)
@@ -3515,8 +3515,8 @@ a Petersburg-tradition fact, not a Sanskrit-encyclopedic-dictionary one. PD is u
 > + feeds [`data/pd/letter_anatomy.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/letter_anatomy.tsv)
 > / [`entry_size_by_position.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/entry_size_by_position.tsv)
 > + generator [`scripts/letter_anatomy.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/letter_anatomy.py)
-> · page `/tools/letter-anatomy` · sources = [HeadwordLists/now-2026](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026) + [csl-orig v02](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02) entry bodies ·
-> [H1416](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1416-Opus_csl-atlas_letter-anatomy-samasa-upasarga-entrysize-decay_21.07.26.md)
+> · page `/tools/letter-anatomy` · sources = [HeadwordLists/now-2026](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026) + [csl-orig v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02) entry bodies ·
+> [H1416](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1416-Opus_csl-atlas_letter-anatomy-samasa-upasarga-entrysize-decay_21.07.26.md)
 > ([csl-atlas PR #282](https://github.com/sanskrit-lexicon/csl-atlas/pull/282)) — csl-atlas · 21-07-2026, Opus 4.8 (`claude-opus-4-8`).
 
 ### §459. PWG's entry-size decay is a *smooth* funding/energy fade across its whole 20-year run (−14 %/decade), not a one-time correction after the over-detailed first volume — and SKD/VCP carry ~0 digitisation markup
@@ -3525,7 +3525,7 @@ a Petersburg-tradition fact, not a Sanskrit-encyclopedic-dictionary one. PD is u
 
 ⚠️ **Reusable gotcha for cross-dictionary "depth" metrics — markup density measures the *digitisation apparatus*, not lexicographic depth.** A per-entry density fingerprint across MW/AP/PWG/PWK/SKD/VCP shows PWG carries the richest apparatus (**20 markup tags/entry**), PWK the tersest body (**43 chars/entry**, the *kürzere Fassung* condensing as designed) — but **SKD and VCP carry ~0 Cologne markup** (0.1 tags, 0 `<s>`/`{#}` spans): they are plain Sanskrit→Sanskrit encyclopedic text with no structural tagging. So any cross-dictionary "depth" or "richness" metric built on markup counts silently ranks SKD/VCP at zero for a *digitisation* reason, not a lexicographic one. The robust cross-tradition depth signal is **chars/entry (median)** — on which the encyclopedics (SKD 169, VCP 112) run far longer than the terse EN/DE working dictionaries (MW 46, PWK 40).
 
-> **Source:** csl-atlas [H1423](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1423-Opus_csl-atlas_dict-macrostructure-anatomy-exec_21.07.26.md) ([PR #290](https://github.com/sanskrit-lexicon/csl-atlas/pull/290)); report [`LETTER_ANATOMY_AND_ENTRY_SIZE_2026.md §7`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/reports/LETTER_ANATOMY_AND_ENTRY_SIZE_2026.md); feeds [`entry_size_by_year.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/entry_size_by_year.tsv) + [`density_fingerprint.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/density_fingerprint.tsv); generators [`entry_size_chronology.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/entry_size_chronology.py) / [`density_fingerprint.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/density_fingerprint.py) · pages `/tools/letter-anatomy` (Wave-B chart) + `/tools/dictionary-density` — csl-atlas · 21-07-2026, Opus 4.8 (`claude-opus-4-8`).
+> **Source:** csl-atlas [H1423](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1423-Opus_csl-atlas_dict-macrostructure-anatomy-exec_21.07.26.md) ([PR #290](https://github.com/sanskrit-lexicon/csl-atlas/pull/290)); report [`LETTER_ANATOMY_AND_ENTRY_SIZE_2026.md §7`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/reports/LETTER_ANATOMY_AND_ENTRY_SIZE_2026.md); feeds [`entry_size_by_year.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/entry_size_by_year.tsv) + [`density_fingerprint.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/density_fingerprint.tsv); generators [`entry_size_chronology.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/entry_size_chronology.py) / [`density_fingerprint.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/density_fingerprint.py) · pages `/tools/letter-anatomy` (Wave-B chart) + `/tools/dictionary-density` — csl-atlas · 21-07-2026, Opus 4.8 (`claude-opus-4-8`).
 
 ### §460. "Gold" in this org means *frozen*, not *human-adjudicated* — 0 of 15 gold datasets have independent human annotation, and every travelling κ is model-vs-model (four contamination mechanisms)
 
@@ -3541,7 +3541,7 @@ a Petersburg-tradition fact, not a Sanskrit-encyclopedic-dictionary one. PD is u
 
 ⚠️ **Reusable rules.** Never consume the fused/separable split as a register property of SKD-vs-VCP — the "units" are different objects (SKD *iti*-micro-segments, 2.88/record, vs VCP mostly whole-record `lumped-proxy` blobs, 1.31/record) detected by different instruments (curated names + `ity`-regex vs the `<name>0` siglum regex), and the ≥20-non-whitespace-chars fusion threshold makes "fused" quasi-monotone in unit length. Corollary for prose: the committed corpus stats *invert* the "short SKD entry vs long VCP commentary" story ([`dictionary-coverage.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/dictionary-coverage.json): SKD meanChars 531 > VCP 493, medians 221 > 162, and VCP has MORE records, 50,135 > 42,531 — VCP's discursive register is a tail phenomenon, maxChars 312,261). Any segmenter for indigenous citation formulas must split *name-aware* (keep `iti <name>` together), not on bare `iti`.
 
-> **Source:** hostile referee pass [papers/A30_review_fable5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A30_review_fable5.md) (M1–M5) + model-labelled sample [papers/A30_SKD_ITI_ADJUDICATION_MODEL_PASS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A30_SKD_ITI_ADJUDICATION_MODEL_PASS.md), verified against csl-atlas `origin/main` `a56444f` ([`build-r2-kosa-fusion.mjs`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/build-r2-kosa-fusion.mjs), [`build-r2-source-anchors.mjs`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/build-r2-source-anchors.mjs), [`r2_kosa_fusion_sample.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/lexico/r2_kosa_fusion_sample.json)) · [H1382](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1382-Fable_SanskritLexicography_a30-hostile-referee-pass-skd-vcp_20.07.26.md) ([PR #662](https://github.com/gasyoun/SanskritLexicography/pull/662)) — SanskritLexicography · 21-07-2026, Fable 5 (`claude-fable-5`).
+> **Source:** hostile referee pass [papers/A30_review_fable5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A30_review_fable5.md) (M1–M5) + model-labelled sample [papers/A30_SKD_ITI_ADJUDICATION_MODEL_PASS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A30_SKD_ITI_ADJUDICATION_MODEL_PASS.md), verified against csl-atlas `origin/main` `a56444f` ([`build-r2-kosa-fusion.mjs`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/build-r2-kosa-fusion.mjs), [`build-r2-source-anchors.mjs`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/build-r2-source-anchors.mjs), [`r2_kosa_fusion_sample.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/lexico/r2_kosa_fusion_sample.json)) · [H1382](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1382-Fable_SanskritLexicography_a30-hostile-referee-pass-skd-vcp_20.07.26.md) ([PR #662](https://github.com/gasyoun/SanskritLexicography/pull/662)) — SanskritLexicography · 21-07-2026, Fable 5 (`claude-fable-5`).
 
 ### §462. On Windows, repeated repository discovery can dominate a Python pipeline: cache checkout identity, not mutable path overrides
 
@@ -3593,7 +3593,7 @@ to its ASCII skeleton, and drops `h` from its input allowlist entirely.
 
 > **Source:** measured 26-07-2026 (H1629, Opus 5 `claude-opus-5[1m]`) over the full 11,603-row
 > canonical store, cross-checked against
-> [`csl-orig v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt);
+> [`csl-orig v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt);
 > tables in [`RussianTranslation/RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md);
 > guard in [`RussianTranslation/src/export_de_edition.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_de_edition.py).
 
@@ -3691,7 +3691,7 @@ of the data the measurement actually looked at.** Ceiling 2 below is also partly
 it names Kathāsaritsāgara as a text DCS lacks, but DCS carries it (111,298 tokens); the
 obstacle is its numbering. The remaining reach work (443 cited texts DCS carries but the map
 never pointed at, 13.9% of `<ls>` mass) is
-[H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md).
+[H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md).
 
 The two ceilings:
 
@@ -3745,7 +3745,7 @@ This repo already consumes a `wl` wisdomlib signal for period-state tagging (§1
 lane rather than opening a second one, and check the Cloudflare reality
 ([Uprava FINDINGS §4](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)) before any
 scrape. Follow-on:
-[H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md).
+[H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md).
 
 **Update 26-07-2026 (H1691) — 7,372 → 8,208 grounded leaf senses (+11.3%), and the "no corpus
 side exists" class was itself unreliable.** Working H1670's 443-abbrev crosswalk backlog
@@ -3818,7 +3818,7 @@ quoted as 642 when this entry first landed — a `wc -l` counting the CSV header
 row; the packet now computes it and a docs-vs-data test pins the prose to it.) See
 [XREF_SHARED_CORE_LABEL_TAXONOMY.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/XREF_SHARED_CORE_LABEL_TAXONOMY.md).
 
-_26-07-2026 · [H1648](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1648-Opus_csl-atlas_xref-sheet-ru-and-mw-pwg-dependence_26.07.26.md) · csl-atlas [PR #310](https://github.com/sanskrit-lexicon/csl-atlas/pull/310), [v0.11.0](https://github.com/sanskrit-lexicon/csl-atlas/releases/tag/v0.11.0) · Opus 5 (1M context) `claude-opus-5[1m]`_
+_26-07-2026 · [H1648](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1648-Opus_csl-atlas_xref-sheet-ru-and-mw-pwg-dependence_26.07.26.md) · csl-atlas [PR #310](https://github.com/sanskrit-lexicon/csl-atlas/pull/310), [v0.11.0](https://github.com/sanskrit-lexicon/csl-atlas/releases/tag/v0.11.0) · Opus 5 (1M context) `claude-opus-5[1m]`_
 
 ### §467. corpus_lexicon.jsonl gets its first intrinsic BLI quality number — and the obvious gold source (the corpus's own glossary) is circular, so the fix is an independent dictionary ranked by an independent frequency source
 
@@ -3855,7 +3855,7 @@ label — so this gold set's *content* provenance is stronger than most in [§46
 audit, though the word-overlap match criterion is still a lenient proxy, not exact-gloss
 agreement.
 
-> **Source:** [H1521](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1521-Sonnet_RussianTranslation_bli-eval-corpus-lexicon-p1-mrr_23.07.26.md),
+> **Source:** [H1521](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1521-Sonnet_RussianTranslation_bli-eval-corpus-lexicon-p1-mrr_23.07.26.md),
 > [`src/eval/bli_eval.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/bli_eval.py) +
 > [`src/eval/build_gold_koch.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/build_gold_koch.py) +
 > [`src/eval/gold_sa_ru_koch_400.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/gold_sa_ru_koch_400.tsv) —
@@ -3926,7 +3926,7 @@ Every `Rāmāyaṇa`, `Yoga-`, `Ekā-` and `Ś-` initial NCC work is currently i
 crosswalk. **Generalisable lesson: a normalisation bug upstream of a blocking key does not
 degrade a fuzzy match, it deletes the candidate** — and the deletion is invisible downstream,
 because a pair that was never proposed looks exactly like a pair that does not exist.
-**✅ Fixed and re-run 26-07-2026 ([H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)).**
+**✅ Fixed and re-run 26-07-2026 ([H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)).**
 `parse_ncc.match_key_for` now case-folds + NFC-normalizes before transliteration, pinned by
 [`test_parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/test_parse_ncc.py).
 P0→P1→P2 re-ran on the repaired keys and every prediction in the table above held to the row:
@@ -3948,7 +3948,7 @@ silently*:
 | `sanskrit_util.iast_to_devanagari` (the library itself) | any IAST | **already defends** — calls `to_slp1(text.lower())` |
 | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) `lookup-normalize.js` `iastToSlp1()` | user lookup value | **already defends** — `.normalize("NFC").trim().toLowerCase()`, with no comment saying why |
 | csl-atlas `sanskrit-util.js:155` `iastToDeva()` | any IAST | **already defends** — `.toLowerCase()` |
-| [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev) `app.js` `rowSlp1()` | **user-typed IAST search term** | was undefended — ✅ **fixed 26-07-2026** ([H1695](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1695-Opus_csl-apidev_rowslp1-iast-case-fold_26.07.26.md), [PR #127](https://github.com/sanskrit-lexicon/csl-apidev/pull/127)) |
+| [csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev) `app.js` `rowSlp1()` | **user-typed IAST search term** | was undefended — ✅ **fixed 26-07-2026** ([H1695](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1695-Opus_csl-apidev_rowslp1-iast-case-fold_26.07.26.md), [PR #127](https://github.com/sanskrit-lexicon/csl-apidev/pull/127)) |
 | WhitneyRoots `emit_crosswalk.py` · VisualDCS `import_archive.py` / `build_lsc_pilot.py` · Uprava `titov_parametric_core.py` · SanskritGrammar `build_rq4_item_bank.py` | roots / DCS lemmas | safe in practice — these arrive lowercase, but none of them *asserts* it |
 | SanskritLexicography `parse_ncc.py` | capitalised NCC headword | **was the victim; fixed** |
 
@@ -3962,7 +3962,7 @@ unclaimed**. **Generalisable lesson: when a library's own code defends against i
 function — `iast_to_devanagari` calling `to_slp1(text.lower())` — that defence is a bug report
 nobody filed.**
 
-**Correction, 26-07-2026 ([H1695](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1695-Opus_csl-apidev_rowslp1-iast-case-fold_26.07.26.md)):
+**Correction, 26-07-2026 ([H1695](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1695-Opus_csl-apidev_rowslp1-iast-case-fold_26.07.26.md)):
 the csl-apidev row above originally read "a silent lookup miss, no corrupted data". That
 understated it.** Tracing the value through `app.js` showed *both* consumers were hit:
 `renderHeadword()` **displayed the wrong headword** — `Rāma` → `RAma` → rendered back as
@@ -3978,7 +3978,7 @@ call site by reading only the call line will under-rate it — the severity live
 consumes the return value.**
 
 > **Source:** [H1657](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1657-Opus_SanskritLexicography_acc-ncc-p2-agent-adjudication-49k_26.07.26.md)
-> (measurement) + [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
+> (measurement) + [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
 > (repair, re-run, caller audit),
 > [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779),
 > [`NCC_KEY_REPAIR_MIGRATION_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_KEY_REPAIR_MIGRATION_2026.md),
@@ -4048,7 +4048,7 @@ verdicts to a sidecar the generator reads back so a regeneration cannot discard 
 Re-classified, `DCS-LACKS` fell from 367,670 citations (49.7%) to 275,268 (37.2%) — and it is
 *still* only an upper bound, because the remaining 3,735 abbrevs were not audited.
 
-_26-07-2026 · [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md) · [`PWG_DCS_TEXT_CROSSWALK_H1691.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_DCS_TEXT_CROSSWALK_H1691.md) · Opus 5 `claude-opus-5[1m]`_
+_26-07-2026 · [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md) · [`PWG_DCS_TEXT_CROSSWALK_H1691.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_DCS_TEXT_CROSSWALK_H1691.md) · Opus 5 `claude-opus-5[1m]`_
 
 ### §472. Choosing a confidence tier ONCE PER SENSE and then stamping it on many passages inflates the strongest tier — 4.13% of H1670's exact-verse rows were chapter-level
 
@@ -4071,7 +4071,7 @@ adding or removing groundings. Wave-1 is provably unaffected — its run contain
 in the writer, not in the reviewer's memory. The cheap regression test is the one that caught
 this: `grep` the strongest tier's rows for an address shape that tier is supposed to exclude.
 
-_26-07-2026 · [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md) · [`build_sense_corpus_concordance.py`](https://github.com/gasyoun/kosha/blob/main/scripts/build_sense_corpus_concordance.py) · Opus 5 `claude-opus-5[1m]`_
+_26-07-2026 · [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md) · [`build_sense_corpus_concordance.py`](https://github.com/gasyoun/kosha/blob/main/scripts/build_sense_corpus_concordance.py) · Opus 5 `claude-opus-5[1m]`_
 
 ### §473. OCR the canonical page files themselves — mapping a THIRD-PARTY OCR of "the same" scan onto them loses to offset drift, thumbnail decoys, and digit aliasing
 
@@ -4108,7 +4108,7 @@ the compute; reuse third-party OCR of "the same" edition only when you can ancho
 every page independently, not via a constant offset you haven't proven. And when
 mining images out of PDFs, always take the largest image on the page, never `[0]`.
 
-_26-07-2026 · [H1689](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1689-Opus_SanskritLexicography_gorresio-vols-2-4-uk-ocr-etext_26.07.26.md) · [`build_ramayana_concordance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py) · Fable 5 `claude-fable-5`_
+_26-07-2026 · [H1689](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1689-Opus_SanskritLexicography_gorresio-vols-2-4-uk-ocr-etext_26.07.26.md) · [`build_ramayana_concordance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py) · Fable 5 `claude-fable-5`_
 ### §474. PWG's etymology parenthesis is NESTED — a "first `+`-chain" regex reads the inner sub-analysis, not the compound's members
 
 🔴 **`({#akftta#} [<hom>3.</hom> {#a#} + {#kftta#} …] + {#ruc#})` is `akftta + ruc`, not `a + kftta`.**
@@ -4132,7 +4132,7 @@ it is PWG's annotation of that member (`<ab>acc.</ab> von {#agni#}`, `<lex>f.</l
 {#agamya#}`, `= {#loman#}`), not a second member. Reference implementation: `pwg_toplevel()` in
 [`adjudicate_compound_differs.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/adjudicate_compound_differs.py).
 
-_26-07-2026 · [H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+_26-07-2026 · [H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
 
 ### §475. MW's `<k2>` carries a variant LIST after `;` and two different boundary marks — stripping the punctuation welds variants into a member that is not a word
 
@@ -4162,7 +4162,7 @@ The hyphen is still stripped in `mw_compounds.py` — only the adjudicator's `mw
 keeps it — so the second half of this finding remains open, deliberately: changing the member
 spelling downstream is a bigger change than the defect warranted.
 
-_26-07-2026 · [H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+_26-07-2026 · [H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
 
 ### §476. Repairing an extractor GROWS the disagreement queue it feeds — plan for that, not for a shrink
 
@@ -4188,7 +4188,7 @@ blind arm drawn against the pre-repair queue keeps its value in the strata that 
 some of its cards will have left the queue entirely (9 of 200 here) — count them and say so
 rather than reporting the arm at full size.
 
-_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
 
 ### §477. 35 cards is the floor for a 0.90 Wilson gate — and a censused stratum needs no interval at all
 
@@ -4210,7 +4210,7 @@ promotes by census while its Wilson bound is still below the threshold. The 31-r
 `granularity_ic_vs_full_decomposition` stratum promotes on `promotion_basis: census` with a
 bound of 0.890; reporting it as "unpromotable" because 0.890 < 0.90 would be wrong.
 
-_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
 
 ### §478. A blind arm stratified on an agent's own rules must not render the rule — and its card ids must come from the lock, not the frame
 
@@ -4235,7 +4235,7 @@ actually pay out — an unbound sheet must count as pricing nothing rather than 
 back to its frame, which is how the unbound-sheet defect (H1703 item 1) stayed invisible until
 someone went looking.
 
-_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
 
 ### §479. PWG's etymology parenthesis: "first `{#…#}` per `+`-part" is right until PWG writes a derivation ladder
 
@@ -4268,7 +4268,7 @@ and the adjudicator
 must stay in sync on all of this: if they disagree about what PWG says, the PWG-vs-MW queue
 measures the extractors instead of the dictionaries.
 
-_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
+_27-07-2026 · [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md) · Opus 5 1M `claude-opus-5[1m]`_
 
 ### §480. A non-empty PDF text layer proves nothing — check the SCRIPT; and "extract the largest embedded image" breaks when the PDF CROPS a 2-up scan
 
@@ -4306,7 +4306,7 @@ filtering under `--psm 6` does not separate them — tesseract merges lines acro
 wide layout; and resolution is **not uniform** across a volume (most pages DeviceGray/JBIG2
 at 4700×3500, some sepia DeviceRGB JPEG at half that, which OCR to nothing unbinarised).
 
-_27-07-2026 · [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md) · Opus 5 1M `claude-opus-5[1m]`_
+_27-07-2026 · [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md) · Opus 5 1M `claude-opus-5[1m]`_
 
 ### §481. A corpus file's PRESENCE is not evidence of its contents — `07_ramayana-uttarakanda.jsonl` is Sanskrit-only CRITICAL-edition text under a "Southern/Leonov" label, and a handoff was minted off the filename
 
@@ -4342,7 +4342,7 @@ rows).
 
 Integrity issue: [SL#822](https://github.com/gasyoun/SanskritLexicography/issues/822).
 
-_27-07-2026 · [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md) · Opus 5 1M `claude-opus-5[1m]`_
+_27-07-2026 · [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1705_RAMAYANA_BOMBAY_BOOK7_VERDICT_2026-07-27.md) · Opus 5 1M `claude-opus-5[1m]`_
 
 ### §482. A count column with no stated provenance is not data — it is a ranking, and the difference decides whether you may divide by it
 
@@ -4385,7 +4385,7 @@ The provenance question is an open MG `@DECIDE` in
 [GTD](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) — it needs whoever
 built the column, not more computation.
 
-_27-07-2026 · [H1706](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1706-Opus_csl-observatory_pwg-scan-index-tracker-reuse_26.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+_27-07-2026 · [H1706](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1706-Opus_csl-observatory_pwg-scan-index-tracker-reuse_26.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
 
 ### §483. A resolver that fails closed is a gap; one that fails *open* is a wrong answer — and only the second is an integrity defect
 
@@ -4420,10 +4420,10 @@ of which this file is a port, was **not** audited; fixing only the port would le
 app wrong and create fork drift.
 
 Integrity issue: [SL#826](https://github.com/gasyoun/SanskritLexicography/issues/826) ·
-fix queued as [H1714](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1714-Sonnet_SanskritLexicography_ls-resolver-rvps-mislink-wiring-fix_27.07.26.md) ·
+fix queued as [H1714](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1714-Sonnet_SanskritLexicography_ls-resolver-rvps-mislink-wiring-fix_27.07.26.md) ·
 per-directory table: [`scan_target_audit.tsv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/data/pwg_scan_index_tracker/scan_target_audit.tsv).
 
-_27-07-2026 · [H1706](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1706-Opus_csl-observatory_pwg-scan-index-tracker-reuse_26.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+_27-07-2026 · [H1706](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1706-Opus_csl-observatory_pwg-scan-index-tracker-reuse_26.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
 
 ### §484. A quarter of the DCS nominal mass has no case at all — `feat_case='Cpd'` is a compound member, not a ninth case
 
@@ -4446,7 +4446,7 @@ E46's verbal cells honest applies here — and the assertion is not decorative: 
 a NULL-logic complement silently dropping the 8,542 untagged tokens from *both* sides of the
 split (the infra form of that trap is [Uprava FINDINGS §218](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)).
 
-_27-07-2026 · [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md) · [`reports/paradigm_nominal_build.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/paradigm_nominal_build.md) · Opus 5 1M `claude-opus-5[1m]`_
+_27-07-2026 · [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md) · [`reports/paradigm_nominal_build.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/paradigm_nominal_build.md) · Opus 5 1M `claude-opus-5[1m]`_
 
 ### §485. The 2021-sourced "Nom.Sg = 34.6% of nominal forms, dual < 1% everywhere" does not reproduce on DCS-2026 — and the second half only survives read per cell
 
@@ -4468,7 +4468,7 @@ terms.
 across a corpus vintage is not portable. When re-printing an inherited figure, restate the
 denominator and the vintage or drop the figure.
 
-_27-07-2026 · [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md) · [`reports/paradigm_nominal_build.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/paradigm_nominal_build.md) · Opus 5 1M `claude-opus-5[1m]`_
+_27-07-2026 · [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md) · [`reports/paradigm_nominal_build.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/paradigm_nominal_build.md) · Opus 5 1M `claude-opus-5[1m]`_
 
 ### §486. Before OCR-ing a library scan, check whether the library already published its OCR — and measure against it rather than guessing
 
@@ -4515,7 +4515,7 @@ class).
 Verdict, report and the reproducible probe:
 [csl-observatory `reports/pwg_kosa_etext_pilot.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/pwg_kosa_etext_pilot.md)
 · [`scripts/pwg_kosa_ocr_probe.py`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/scripts/pwg_kosa_ocr_probe.py).
-Re-scoped execution: [H1720](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1720-Sonnet_csl-observatory_pwg-kosa-bsb-hocr-ingest-align_27.07.26.md).
+Re-scoped execution: [H1720](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1720-Sonnet_csl-observatory_pwg-kosa-bsb-hocr-ingest-align_27.07.26.md).
 
 **Provenance to carry, not a gate.** The page images are the Bayerische
 Staatsbibliothek's (`bsb10250868`, `bsb10250953`), and both scan repositories already
@@ -4523,7 +4523,7 @@ credit the library in their own `app1/info.html` — derived artifacts keep that
 Publication of everything derived from them was ruled open on 27-07-2026; there is no
 rights gate on this line of work.
 
-_27-07-2026 · [H1715](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1715-Opus_csl-observatory_pwg-kosa-etext-pilot-amara-abhidhana_27.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+_27-07-2026 · [H1715](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1715-Opus_csl-observatory_pwg-kosa-etext-pilot-amara-abhidhana_27.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
 
 ### §487. A cross-scheme join is a transliteration step, not a string comparison — a naive IAST-to-SLP1 match selects on diacritics
 
@@ -4566,7 +4566,7 @@ already imported it for this exact catalogue).
 Committed as a reproducible probe with the trap in its docstring:
 [`measure_onramp_scope.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/measure_onramp_scope.py).
 
-_27-07-2026 · [H1476](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1476-Opus_SanskritGrammar_pedagogy-aspect-measurable-result-metrics_22.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
+_27-07-2026 · [H1476](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1476-Opus_SanskritGrammar_pedagogy-aspect-measurable-result-metrics_22.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
 
 ### §488. DCS stem co-occurrence graph is extreme-sparse with function-word hubs
 
@@ -4710,7 +4710,7 @@ had been an artefact of the join rather than a fact about the dictionary.
 > [`linkage_ladder.csv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/observatory/site/src/data/linkage_ladder.csv) +
 > [`headword_key_collisions.csv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/observatory/site/src/data/headword_key_collisions.csv) +
 > the "Site linkage" section of [`reports/error_recapture.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/error_recapture.md) ·
-> [H1477](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1477-Opus_csl-observatory_capture-recapture-fuzzy-linkage-corrector-pair_22.07.26.md)
+> [H1477](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1477-Opus_csl-observatory_capture-recapture-fuzzy-linkage-corrector-pair_22.07.26.md)
 > ([PR #120](https://github.com/sanskrit-lexicon/csl-observatory/pull/120)) — csl-observatory · 27-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
 
 ### §497. The csl-orig L-number is not a join key — only 35 % of form-era L-codes still point at their own headword
@@ -4766,8 +4766,8 @@ on validity, i.e. a lower bound on drift.**
 > **Source:** re-derived independently over
 > [`correction_events.csv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/observatory/site/src/data/correction_events.csv)
 > (24,441 events) against [csl-orig v02](https://github.com/sanskrit-lexicon/csl-orig) ·
-> [H1766](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1766-Opus_csl-observatory_h1477-salvage-lcode-drift-hk-residue_27.07.26.md)
-> — salvaged from a duplicate [H1477](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1477-Opus_csl-observatory_capture-recapture-fuzzy-linkage-corrector-pair_22.07.26.md)
+> [H1766](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1766-Opus_csl-observatory_h1477-salvage-lcode-drift-hk-residue_27.07.26.md)
+> — salvaged from a duplicate [H1477](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1477-Opus_csl-observatory_capture-recapture-fuzzy-linkage-corrector-pair_22.07.26.md)
 > session whose figures were re-measured, not imported · 27-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
 
 ### §498. Word-initial Harvard-Kyoto capitals never decode — 113 correction-event headwords entered the corpus mis-transcoded
@@ -4821,7 +4821,7 @@ so every affected dictionary's published "work remaining" is biased *upward* —
 > and measured over
 > [`correction_events.csv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/observatory/site/src/data/correction_events.csv)
 > with attestation against [csl-orig v02](https://github.com/sanskrit-lexicon/csl-orig) ·
-> [H1766](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1766-Opus_csl-observatory_h1477-salvage-lcode-drift-hk-residue_27.07.26.md)
+> [H1766](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1766-Opus_csl-observatory_h1477-salvage-lcode-drift-hk-residue_27.07.26.md)
 > · tracked as a csl-observatory `[integrity]` issue · 27-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
 
 ### §499. Gold cards without evidence yield unusable votes — 5 of 6 MQM rejects carried no typology label, 1 of 20 labels reversed on adjudication
@@ -4865,9 +4865,9 @@ a human to decide *without* the data the repo already has.
 disambiguation, gloss adjudication, spell-check verdicts — inherits both defects: a free-text
 "answer in the note" convention is unenforceable, and an evidence-free card measures the
 reviewer's recall rather than the datum. Fixes are structural, not editorial: a required label
-control in the emitter ([H1802](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1802-Sonnet_csl-pyutil_review-sheet-reject-label-picker_28.07.26.md))
+control in the emitter ([H1802](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1802-Sonnet_csl-pyutil_review-sheet-reject-label-picker_28.07.26.md))
 and an evidence panel joined from the dictionaries/roots/corpus the project already publishes
-([H1801](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1801-Opus_SanskritLexicography_g6-gold-card-evidence-panel_28.07.26.md)).
+([H1801](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1801-Opus_SanskritLexicography_g6-gold-card-evidence-panel_28.07.26.md)).
 Both now gate the n=400 store gold cut.
 
 > **Source:** measured on the applied labels
@@ -4876,7 +4876,7 @@ Both now gate the n=400 store gold cut.
 > Wilson 95 % [62.4 %, 94.5 %] — a starter packet, not a precision figure of record) and on the
 > reviewer's own note text · full audit record
 > [`review/decisions_applied_2026-07-28_g6-mqm-gold-starter.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/decisions_applied_2026-07-28_g6-mqm-gold-starter.md)
-> · [H1796](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1796-Opus_SanskritLexicography_g6-mqm-gold-starter-vote-apply_28.07.26.md)
+> · [H1796](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1796-Opus_SanskritLexicography_g6-mqm-gold-starter-vote-apply_28.07.26.md)
 > · 28-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
 >
 > **Correction (29-07-2026, H1801, Opus 5 1M `claude-opus-5[1m]`):** the reversed card is id
@@ -4921,7 +4921,7 @@ chunked run in this repo — bounded windows, cohort barriers, residual drains �
 > + [`H1210_length_breakdown.29.07.26.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/H1210_length_breakdown.29.07.26.json)
 > · full report
 > [`pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md)
-> · [H1210](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1210-Opus_SanskritLexicography_pwg-ab-deepseek-vs-claude-100_17.07.26.md)
+> · [H1210](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1210-Opus_SanskritLexicography_pwg-ab-deepseek-vs-claude-100_17.07.26.md)
 > · runs 28-07-2026 (controller Opus 4.8 `claude-opus-4-8`, workers Sonnet 5 `claude-sonnet-5`,
 > generator `deepseek-chat`); coverage audit 29-07-2026, Opus 5 1M (`claude-opus-5[1m]`).
 
