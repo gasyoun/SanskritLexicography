@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T12:07:53Z",
+  "generated_at": "2026-08-04T05:54:54Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -9,7 +9,7 @@
   "activity": {
     "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 65751,
+    "youngest_artifact_age_seconds": 129768,
     "window_state": "needs_requeue",
     "window_root": "no_pwg_w05",
     "next_action": "Run python src\\pilot\\requeue_from_audit.py <root>, rerun Max Workflow, then rerun audit_window.py.",
@@ -17,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-08-02T07:21:30Z",
-        "age_seconds": 103580,
+        "age_seconds": 167597,
         "size": 26192750
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-07-15T20:26:10Z",
-        "age_seconds": 1611700,
+        "age_seconds": 1675717,
         "size": 53853
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-02T17:51:59Z",
-        "age_seconds": 65751,
+        "age_seconds": 129768,
         "size": 327781
       },
       "events": {
         "exists": true,
         "mtime": "2026-07-24T18:39:44Z",
-        "age_seconds": 840486,
+        "age_seconds": 904504,
         "size": 3486985
       }
     }
@@ -52,7 +52,7 @@
     "pending": 7,
     "newest_card_at": "2026-07-14T04:10:54Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 20.33,
+    "days_since_last_card": 21.07,
     "campaign_days": 36
   },
   "yield_quality": {
@@ -438,7 +438,41 @@
     "estimated_days_at_roots_per_day_rate": 87.6,
     "estimate_label": "estimate",
     "note": "ETA divides remaining DCS-attested verb roots by the mean roots promoted per active day (from store provenance timestamps of already-promoted roots) — rate unit is roots/day, matching the remaining-roots numerator; still an estimate.",
-    "basis": "verb_remaining / mean_roots_promoted_per_active_day"
+    "basis": "verb_remaining / mean_roots_promoted_per_active_day",
+    "nominal": {
+      "measured": true,
+      "nominal_promoted": 41,
+      "nominal_scope": 5039,
+      "nominal_remaining": 4251,
+      "nominal_pct": 0.81,
+      "mean_keys_promoted_per_active_day": 20.5,
+      "keys_promoted_active_days_sampled": 2,
+      "estimated_days_at_keys_per_day_rate": 207.4,
+      "estimate_label": "estimate",
+      "note": "Nominal burn-down: remaining runnable candidates divided by the mean keys promoted per active day (store provenance timestamps of already-promoted keys). The rate is measured from the H317 test-window burst, not current throughput — the lane has been paused since (see pause_reason), so the ETA is not a live projection until it resumes.",
+      "basis": "nominal_remaining / mean_keys_promoted_per_active_day",
+      "medium50": {
+        "promoted": 2,
+        "total": 50,
+        "measured": true,
+        "status": "paused — kill-gate/self-heal budget cascade on dense band-4 nominal singletons",
+        "pause_reason": {
+          "code": "killgate_cascade",
+          "label": "paused — kill-gate/self-heal budget cascade on dense band-4 nominal singletons",
+          "detail": "H437 isolated a self-heal/kill-gate budget cascade on dense band-4 nominal singleton cards (2/37 clean, every window tripped MAX_AGENTS); H442 scoped the recalibration, still open. Not a data or scope problem — a harness heal-lane design question.",
+          "docs": [
+            "H437",
+            "H442",
+            "H462"
+          ],
+          "doc_urls": [
+            "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H437-Sonnet_RussianTranslation_pwg-ru-medium50-resume-post-h428_09.07.26.md",
+            "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H442-Opus_RussianTranslation_pwg-ru-killgate-recalibration-nominal-medium_09.07.26.md",
+            "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md"
+          ]
+        }
+      }
+    }
   },
   "article_parity": {
     "measured": false,
@@ -635,7 +669,7 @@
     "total_idle_seconds": 1549947,
     "total_idle_hours": 430.54,
     "mean_gap_seconds": 12204.307,
-    "current_idle_seconds": 65751,
+    "current_idle_seconds": 129770,
     "last_idle_seconds": 352265,
     "last_idle": {
       "from": "2026-07-11T18:34:18Z",
@@ -663,9 +697,9 @@
       },
       {
         "month": "2026-08",
-        "idle_seconds": 65751,
-        "idle_days": 0.76,
-        "idle_hours": 18.26
+        "idle_seconds": 129770,
+        "idle_days": 1.5,
+        "idle_hours": 36.05
       }
     ],
     "recent_gaps": [
@@ -2155,19 +2189,10 @@
     }
   },
   "calendar": {
-    "start": "2026-04-06",
-    "end": "2026-08-03",
+    "start": "2026-04-07",
+    "end": "2026-08-04",
     "days": 120,
     "cells": [
-      {
-        "date": "2026-04-06",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
       {
         "date": "2026-04-07",
         "cards": 0,
@@ -3238,6 +3263,15 @@
         "idle_hours": 0,
         "level": 0,
         "idle": false
+      },
+      {
+        "date": "2026-08-04",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       }
     ],
     "max_cards": 6033,
@@ -3249,6 +3283,24 @@
     "source": "RussianTranslation/CHANGELOG.md",
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md",
     "entries": [
+      {
+        "version": "1.142.0",
+        "date": "2026-08-03",
+        "bullets": [
+          {
+            "title": "Fixed",
+            "summary": "- **`bare_cli_cwd()` handed out a directory that only *looked* bare — 32 779 B of operator memory in every paid call since H2158 (H2249, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** the H2158 ancestor walk rejected a parent carrying a bare `CLAUDE.md` or a `.git`, but **not**…"
+          },
+          {
+            "title": "Changed",
+            "summary": "- **LANG_PARITY: 5 entries re-derived on `headless_worker.py` (+ 1 on its selftest) (H2249), every verdict SHARED, unchanged.** Grounds mechanical: **0** language-keyed tokens (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) in the added lines. The change …"
+          },
+          {
+            "title": "Added",
+            "summary": "- **The R4.1 halt rule finally has a trigger, and auto-promote now fails CLOSED without it (H2264, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** H2175 built both halves of ruling R4.1 — [`spot_check_daily.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/Russian…"
+          }
+        ]
+      },
       {
         "version": "1.141.7",
         "date": "2026-08-03",
@@ -3388,20 +3440,6 @@
           {
             "title": "Added",
             "summary": "- **H2158 Phase 1 — the pwg_ru route A/B, and the measurement that reframes it (02-08-2026, Opus 5 `claude-opus-5`):** two-arm harness [`h2158_route_ab.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2158_route_ab.py) (CLI-headles…"
-          }
-        ]
-      },
-      {
-        "version": "1.134.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Fixed",
-            "summary": "- **`b0` was never non-terminating — a per-card presplit floor was masked by the per-batch budget (H2160, 02-08-2026, Opus 5 1M `claude-opus-5[1m]`, [#983](https://github.com/gasyoun/SanskritLexicography/issues/983)):** the \"non-terminating call\" reading carried by 1.130.0 and…"
-          },
-          {
-            "title": "Added",
-            "summary": "- **`src/pilot/h2160_regen_medium50.py` — re-prepare the medium50 windows on the fixed predicate (H2160, 02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** replays the coordinator's own `prepare` invocation with every argument read back out of the existing manifest (no hand-retyped…"
           }
         ]
       }

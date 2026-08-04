@@ -685,6 +685,7 @@ def main():
     quality = ks.quality_slice(PILOT_OUT, all_rows, EVENTS)
     cost_h = ks.cost_honesty(econ if isinstance(econ, dict) else {}, spend)
     eta = ks.eta_verb(RT, speed)
+    eta["nominal"] = ks.eta_nominal(RT)
 
     # H2218 residual slices (B1 / B9 / B10) — additive keys on kitchen v2.
     subscription = ks.load_subscription(SUBSCRIPTION)

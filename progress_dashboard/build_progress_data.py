@@ -89,20 +89,81 @@ def nominal_lane():
     nm = _load_json("src/pilot/output/nominal_batch_worklist.json")
     out = {"measured": bool(nm)}
     if nm:
+        candidates = nm.get("nominal_candidates")
+        promoted = nm.get("already_promoted_count")
+        runnable = nm.get("runnable_count")
+        remaining = runnable
+        if remaining is None and isinstance(promoted, int) and isinstance(candidates, int):
+            remaining = max(0, candidates - promoted)
         out.update(
             {
-                "candidates": nm.get("nominal_candidates"),
-                "promoted": nm.get("already_promoted_count"),
-                "runnable": nm.get("runnable_count"),
+                "candidates": candidates,
+                "promoted": promoted,
+                "runnable": runnable,
                 "pwg_hits": nm.get("pwg_hits"),
+                # B7 burn-down fields, mirroring the verb lane's universe/promoted/runnable shape.
+                "remaining": remaining,
+                "pct": round(100 * promoted / candidates, 2) if candidates else None,
             }
         )
-    # The medium-50 band-4 relaunch arc (H317 -> H389 -> H437): 2/50 promoted,
-    # lane paused on kill-gate miscalibration (H442). Documented, not in this file.
-    out["medium50_promoted"] = 2
-    out["medium50_total"] = 50
-    out["medium50_status"] = "paused (kill-gate recalibration, H442/H462)"
+    # The medium-50 band-4 relaunch arc (H317 -> H389 -> H437): promoted count
+    # is live-measured (H317 worklist keys intersected against the store) when
+    # that file is present; falls back to the last documented count otherwise.
+    m50 = _load_json_from(RT / "src" / "pilot" / "H317_medium50_worklist.08.07.26.json")
+    m50_promoted, m50_total, m50_measured = 2, 50, False
+    if m50:
+        keys = m50.get("keys") or []
+        m50_total = m50.get("n_selected") or len(keys)
+        store_keys = _store_key1_set()
+        if store_keys is not None:
+            m50_promoted = sum(1 for k in keys if k in store_keys)
+            m50_measured = True
+    out["medium50_promoted"] = m50_promoted
+    out["medium50_total"] = m50_total
+    out["medium50_measured"] = m50_measured
+    # Structured pause reason (code + link), not prose-only — B7 acceptance.
+    out["medium50_pause_reason"] = {
+        "code": "killgate_cascade",
+        "label": "paused — kill-gate/self-heal budget cascade on dense band-4 nominal singletons",
+        "docs": ["H437", "H442", "H462"],
+        "doc_urls": [
+            "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H437-Sonnet_RussianTranslation_pwg-ru-medium50-resume-post-h428_09.07.26.md",
+            "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H442-Opus_RussianTranslation_pwg-ru-killgate-recalibration-nominal-medium_09.07.26.md",
+            "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md",
+        ],
+    }
+    # legacy field, kept for any existing consumer of the old prose-only status
+    out["medium50_status"] = out["medium50_pause_reason"]["label"]
     return out
+
+
+def _load_json_from(path: Path):
+    try:
+        with path.open(encoding="utf-8-sig") as fh:
+            return json.load(fh)
+    except Exception as e:  # noqa: BLE001 — a missing local artifact must not crash the build
+        print(f"  ! could not read {path}: {e}")
+        return None
+
+
+def _store_key1_set():
+    p = RT / "src" / "pwg_ru_translated.jsonl"
+    if not p.exists():
+        return None
+    keys = set()
+    with p.open(encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                d = json.loads(line)
+            except Exception:  # noqa: BLE001
+                continue
+            k = d.get("key1")
+            if k:
+                keys.add(k)
+    return keys
 
 
 def store_depth():
