@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+## [1.142.4] - 2026-08-04
 ### Changed
 - **H2238 — progress kitchen B7: nominal + medium-50 burn-down with structured pause reasons (Sonnet 5 `claude-sonnet-5`, override dual-run of a Grok 4.5-tagged handoff, 04-08-2026):** `progress_dashboard/build_progress_data.py`'s `nominal_lane()` and the new `progress_dashboard/kitchen_slices.py:eta_nominal()` add live burn-down fields (`remaining`/`pct`, mirroring the verb lane's `universe`/`promoted`/`runnable` shape) and a "Nominal burn-down" ETA panel in `index.html`, alongside the existing verb one. The medium-50 band's promoted count is now **live-measured** (H317 worklist keys intersected against `pwg_ru_translated.jsonl`, confirmed matching the prior hardcoded 2/50) instead of a hardcoded constant, and its pause reason is a structured `{code, label, detail, docs, doc_urls}` object (`killgate_cascade`, H437/H442/H462) rendered as a badge + tooltip, not prose-only. `medium50_measured`/fallback-constant flags preserve the existing `est()` "documented constant" convention when the live worklist file is absent.
 
