@@ -28,11 +28,14 @@
 *.idx binary
 *.dz binary
 
-# --- control-character-dense document (H2173 follow-up, 04-08-2026) ---
-# NUL bytes were stripped from both former offenders. AEK_et_al_corrected_2020.md then
-# reclassified to `i/lf` and needs no exemption. This one did NOT: its garbled
-# symbol-font table is dense with control bytes (\x08 \x10 \x11 \x15 \x1a), which git's
-# binary heuristic reads as binary with or without NUL — so `--renormalize` still skips it
-# and it would read as permanently dirty on every checkout. Declared binary so git's real
-# behaviour is on the books. Fixing it properly means re-extracting the source PDF.
+# --- non-Unicode-font document (H2173 follow-up, 04-08-2026) ---
+# Measured, not assumed: 5,452 control codepoints across 3,818 runs (~35 KB, 1.4% of the
+# file). They are NOT one defect. Figure 7.2's axis labels were a symbol font offset by
+# exactly +32 and have been decoded to real text. The rest is largely comparative phonetic
+# transcription (Tibeto-Burman cognate tables) rendered through non-Unicode fonts, plus at
+# least one block on a DIFFERENT offset - each needs its own font mapping, so a blanket
+# transform would corrupt them. Re-extraction was tested and rejected: PyMuPDF's text for
+# the caption page does not contain the axis labels at all, so it would delete content
+# rather than repair it. git therefore still reads this file as binary; declared so that
+# behaviour is on the books. A real repair is a re-typesetting/OCR project.
 "literature/md/Lexicography-Manuals/THE ROUTLEDGE HANDBOOK OF HISTORICAL LINGUISTICS.md" binary

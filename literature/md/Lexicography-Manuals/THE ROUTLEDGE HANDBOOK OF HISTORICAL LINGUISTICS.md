@@ -12030,23 +12030,23 @@ wild oscillation, the search reaches a reasonably level, maximum state. The init
 equally highly likely sets of parameters (strictly speaking, they are sampled in proportion 
 to their likelihood). In phylogenetic inference these parameters typically include tree 
 topology, branch lengths, and transition probabilities.
-
-
-
-
-
-
-
-
-
-
-
-
-
-)TERATION  	
-,OG ,IKELIHOOD
--ODEL ! 0OSTBURNIN HARMONIC MEAN  
--ODEL " 0OSTBURNIN HARMONIC MEAN  
+0
+200
+400
+600
+800
+1000
+1200
+−1200
+−1150
+−1100
+−1050
+−1000
+−950
+ITERATION (× 10000)
+LOG LIKELIHOOD
+MODEL A: POST-BURN-IN HARMONIC MEAN = −1001
+MODEL B: POST-BURN-IN HARMONIC MEAN = −1025
 Figure 7.2 Likelihood trace MCMC sampling under two models, A and B
 The Bayes Factor = 2 × (likelihood of Model A – likelihood of Model B) = 48, which indicates ‘very strong’ 
 support for Model A (see Section 4.3.1)
