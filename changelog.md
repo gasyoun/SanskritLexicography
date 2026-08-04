@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.142.6] - 2026-08-04
+
 ### Fixed
 - **The last two permanently-dirty `literature/md/` files declared `binary` — they carry NUL bytes and were never normalizable (Opus 5 `claude-opus-5`, 04-08-2026).** After [#1125](https://github.com/gasyoun/SanskritLexicography/pull/1125) cleared all 29 renormalizable blobs, two files still read as modified on every checkout: `Общий синтаксис/AEK_et_al_corrected_2020.md` and `Lexicography-Manuals/THE ROUTLEDGE HANDBOOK OF HISTORICAL LINGUISTICS.md`. Cause: they contain **2 and 15 NUL bytes** respectively, which trips git's binary heuristic, so git classifies them `-text` **regardless of the `*.md text eol=lf` rule** and `git add --renormalize` silently skips them. They were simultaneously invisible to the standard audit, which greps `i/crlf|i/mixed` and never matches `i/-text` — a file can be permanently dirty *and* absent from every census of the problem. Declared `binary` so git's actual behaviour is on the books rather than leaving a rule that cannot apply. **Removing the NUL bytes was deliberately not done**: that is a content edit to source documents, not a whitespace fix, and it remains open should the bytes turn out to be extraction artefacts worth deleting. One pattern is quoted (`"…HISTORICAL LINGUISTICS.md" binary`) because `.gitattributes` splits pattern from attributes on whitespace, so an unquoted path containing spaces parses as a different pattern plus stray attribute tokens; the other uses `**/` so the space-bearing Cyrillic directory never has to appear. Verified with `git check-attr` (`binary: set`, `text: unset`) and by each pattern matching exactly one tracked file.
 
