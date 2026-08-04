@@ -1,6 +1,6 @@
 # Progress kitchen — improvements inventory
 
-_Created: 02-08-2026 · Last updated: 03-08-2026_
+_Created: 02-08-2026 · Last updated: 04-08-2026_
 
 **Shipped residual (H2218, 02-08-2026):** B1 subscription loader+UI · B9 idle-reason taxonomy · B10 article-site parity · R4 ledger metric backfill script (best-effort; unrecoverable rows stay null).
 
@@ -157,7 +157,7 @@ K1–K8 UI is shipped (H2212). Remaining measurement gaps → **Grok 4.5** hando
 | 8 | [H2237](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2237-Grok_SanskritLexicography_progress-kitchen-promote-vs-generate_03.08.26.md) | medium | Promote vs generate (B6) |
 | 9 | [H2238](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2238-Grok_SanskritLexicography_progress-kitchen-nominal-burn-down_03.08.26.md) | medium | Nominal burn-down (B7) |
 | 10 | [H2239](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2239-Grok_SanskritLexicography_progress-kitchen-article-parity_03.08.26.md) | medium | Article-site parity (B10) |
-| 11 | [H2240](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2240-Grok_SanskritLexicography_progress-kitchen-health-probe-log_03.08.26.md) | medium | Canonical health_probe_log (B3 residual) |
+| 11 | [H2240](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2240-Grok_SanskritLexicography_progress-kitchen-health-probe-log_03.08.26.md) | medium | Canonical health_probe_log (B3 residual) — ✅ done (override dual-run, Sonnet 5 lane): `live_probe`'s `_emit` (`RussianTranslation/src/pilot/max_account_orchestrator.py`) now writes every probe reading straight into `output/health_probe_log.jsonl` alongside the existing per-account file; `kitchen_slices.health_ribbon` prefers that single canonical file exclusively when present, falling back to the old per-account glob scrape otherwise; `migrate_health_probe_log.py` folds pre-H2240 history in once, idempotently; pinned by `progress_dashboard/health_ribbon_selftest.py` |
 | 12 | [H2241](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2241-Grok_SanskritLexicography_progress-kitchen-timeseries-slices_03.08.26.md) | medium | Kitchen slices in progress_timeseries |
 
 **Starter (first residual):**

@@ -1172,6 +1172,17 @@ PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-represent
 PROBE_POLICY = probe_log.CURRENT_POLICY
 PROBE_LATENCY_CEILING_MS = probe_log.ceiling_for(PROBE_POLICY)
 PROBE_LANE = 'claude-cli-headless/readiness-schema'
+# B3 residual (H2240): ONE canonical, append-only, cross-account probe log — the writer
+# target `kitchen_slices.health_ribbon` now prefers over its old per-account glob scrape
+# (`h963_*_gate0_probe_events.jsonl`, `*_probe_events.jsonl`). Every probe call routes
+# through `live_probe`'s `_emit` below regardless of which script or account invoked it
+# (h963_c4_gate0_probe.py, probe_fleet, any future probe), so writing here once makes the
+# canonical log complete by construction rather than by every caller remembering to log
+# twice. The per-account `events_path` file is kept untouched alongside it — gate reports
+# (H1110/H1447/H858) cite it by path and its exact-run_id read discipline (#729) must not
+# change.
+HEALTH_PROBE_LOG = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                'output', 'health_probe_log.jsonl')
 PROBE_RECEIPT_SCHEMA = 'pwg.runtime_probe_receipt.v1'
 # GAP #5 (four-profile): an account dropped by --drop-unhealthy is parked far in the future so the
 # dispatch loop's runnable/claim gates exclude it while the fleet proceeds on the healthy subset.
@@ -1360,6 +1371,21 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
                          # self-describing. `policy` alone is not enough — the token did not
                          # change across three ceiling values on 31-07.
                          latency_ceiling_ms=latency_ceiling_ms)
+            # B3 residual (H2240): the SAME row, ALSO appended to the canonical cross-account
+            # log. Best-effort — a failure here must never turn a health probe into a raised
+            # exception (the events_path write above is the one the gate itself depends on).
+            try:
+                append_event(HEALTH_PROBE_LOG, run_id=run_id, account=account, stage='probe',
+                             event='probe_call', purpose=purpose, elapsed_ms=latency,
+                             model=model, output_bytes=obytes, classification=cls,
+                             policy=PROBE_POLICY, executor_lane=PROBE_LANE,
+                             schema_valid=(cls == 'success'),
+                             duration_api_ms=api_ms,
+                             api_gap_ms=(latency - api_ms) if api_ms is not None else None,
+                             latency_ceiling_ms=latency_ceiling_ms)
+            except OSError as exc:
+                print('warning: canonical health_probe_log append failed: %s' % exc,
+                     file=sys.stderr)
 
     # One profile claim covers the WHOLE pair. Releasing between warmup and measured allowed
     # another paid worker to interleave on the same config directory and invalidated the reading.

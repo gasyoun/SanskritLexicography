@@ -358,14 +358,28 @@ def instrumentation_coverage(rows: list[dict]) -> dict:
 
 
 def health_ribbon(pilot_out: Path, ceiling_ms: int = 65_000) -> dict:
-    """K5 — last c4 (and siblings) probe GO/NO-GO + recent sparkline."""
-    paths = sorted(pilot_out.glob("*gate0*probe_events.jsonl")) + sorted(
-        pilot_out.glob("*_probe_events.jsonl")
-    )
-    # Prefer dedicated c4 health probe log when present.
-    preferred = pilot_out / "h963_c4_gate0_probe_events.jsonl"
-    if preferred.exists():
-        paths = [preferred] + [p for p in paths if p != preferred]
+    """K5 — last c4 (and siblings) probe GO/NO-GO + recent sparkline.
+
+    B3 residual (H2240): `health_probe_log.jsonl` is now the canonical writer
+    target — every probe call (any account, any script) lands there via
+    `max_account_orchestrator.live_probe`'s `_emit`, so it is a complete,
+    single-file source once populated. Prefer it exclusively when present;
+    fall back to the old per-account glob scrape only for a checkout that
+    predates H2240 (or whose canonical log hasn't been migrated yet — see
+    `migrate_health_probe_log.py`), so historical sparklines don't go dark
+    mid-migration.
+    """
+    canonical = pilot_out / "health_probe_log.jsonl"
+    if canonical.exists():
+        paths = [canonical]
+    else:
+        paths = sorted(pilot_out.glob("*gate0*probe_events.jsonl")) + sorted(
+            pilot_out.glob("*_probe_events.jsonl")
+        )
+        # Prefer dedicated c4 health probe log when present.
+        preferred = pilot_out / "h963_c4_gate0_probe_events.jsonl"
+        if preferred.exists():
+            paths = [preferred] + [p for p in paths if p != preferred]
 
     probes = []
     seen = set()
