@@ -5415,3 +5415,51 @@ with the real kosha-0.4.0 tallies). Caveat: when kosha holds **no** Basic parse 
 is a kosha-coverage gap, not a ranking defect.
 
 > Fable 5 (`claude-fable-5`) · 04-08-2026 · [H2194](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2194-Fable_RussianTranslation_askbatch-saru-gloss-residual-2026-08_02.08.26.md) · [PR #1113](https://github.com/gasyoun/SanskritLexicography/pull/1113)
+
+### §520. UD `Tense=Past` is not the end of the aorist/perfect story — DCS's own `feat_formation` re-splits it, and the "too sparse to use" verdict was a denominator error
+
+UD's `Tense` inventory has no Aorist or Perfect value, so both Sanskrit past tenses surface as
+`Tense=Past` (111,167 tokens in DCS-2026). VisualDCS, its README, its M7 report and the A38
+release paper all recorded this as terminal, on the ground that the DCS-specific `feat_formation`
+is "present on **<2%** of verbs — too sparse to re-split them". **That figure divided 16,100 tags
+by ALL ~1.01M verb tokens.** `feat_formation` only ever applies to the finite past indicative
+(`upos=VERB`, `Tense=Past`, `Mood=Ind`, no `VerbForm`) — 93,329 tokens — where coverage is
+**17.25%** and the split is real. Before writing off a feature as too sparse, divide by the
+population it actually has to resolve.
+
+The tag values, verified against attestations (H1486, VisualDCS
+[#68](https://github.com/gasyoun/VisualDCS/pull/68)):
+
+| value | reading | n (Tense=Past) | example |
+|---|---|---:|---|
+| `root` · `them` · `red` · `s` · `is` · `sis` · `sa` | Whitney's **seven aorist types** (ch. IX §§824–930) | 12,054 | `abhūt`, `avocat`, `ajījanat`, `akārṣīt`, `avadhīt` |
+| `peri` | **periphrastic perfect** | 4,046 | `cintayāmāsa` |
+| *(untagged)* | the **simple/reduplicated perfect** — DCS's unmarked default | 77,229 | `uvāca`, `babhūva`, `cakāra` |
+
+**Three traps, each capable of inverting a result:**
+
+1. **`peri` is tense-dependent.** On `Tense=Past` it is the periphrastic *perfect*; on `Tense=Fut`
+   the same string is the periphrastic *future* (1,340 tokens). A query on `feat_formation` that
+   does not guard on tense silently merges two different categories.
+2. **`red` is the reduplicated AORIST, not the reduplicated perfect** — only 833 tokens
+   (`ajījanat`, `avīvṛdhat`). The far commoner reduplicated *perfect* carries **no tag at all**.
+   Reading `red` as "perfect" inverts the whole split.
+3. **Untagged ≠ unknown, but untagged ≠ certain either.** The `NULL → perfect` default is sound —
+   the independent 2021 DCS dump (`visual/paradigm_endings.json`) partitions the past the same
+   nine ways and its own unmarked past category is likewise the simple perfect — but it is
+   measurably imperfect: **1.13%** of untagged tokens carry a surface form attested *elsewhere in
+   the same bucket* as a tagged aorist (`ajani` ×52, `abhūt` ×38, `avocat` ×18), and **3.54%**
+   carry a form attested as `Tense=Impf` (`abravīt`, `abhavat`, `āsīt`) — an upstream
+   tense-tagging inconsistency no re-split can repair.
+
+**So quote these as bounds, never as counts: aorist is a LOWER bound, perfect an UPPER bound.**
+Both floors are form-transfer measurements and therefore floors only — an untagged aorist whose
+surface form never appears tagged anywhere is invisible to them. Consumers needing aorist≠perfect
+must read `feat_formation` with these bounds; reading it off `Tense=Past` alone remains wrong.
+A further 8,726 non-indicative `Tense=Past` tokens (Jus/Imp/Sub/Opt/Prec) carry no formation tag
+at all and stay unresolved. Method, per-formation counts and the four validation checks:
+[`reports/past_tense_resplit_validation.md`](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/past_tense_resplit_validation.md),
+regenerable via `validate_past_tense_resplit.py`. Sibling prior art that reached the same
+taxonomy independently: SanskritGrammar's `sg_mo_018_aorist.py` / `sg_mo_019_aorist_types.py`.
+
+> Opus 5 (`claude-opus-5`) · 04-08-2026 · [H1486](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1486-Opus_VisualDCS_aorist-perfect-formation-resplit_22.07.26.md) · [VisualDCS PR #68](https://github.com/gasyoun/VisualDCS/pull/68) · measured on `dcs_full.sqlite` pin `04e0778d…`, SHA-256 `8f3b06bd…`
