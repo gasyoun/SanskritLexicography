@@ -1,6 +1,6 @@
 # CONTRADICTIONS — Sanskrit-data source disagreements with no verdict
 
-_Created: 08-07-2026 · Last updated: 31-07-2026_
+_Created: 08-07-2026 · Last updated: 05-08-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS states *one* fact. This file holds the act FINDINGS cannot: **disagreeing** — ≥2 sources give incompatible values and no ruling has been made. The moment a contradiction is ruled, it **graduates** to a [`CROSS_REPO_DECISIONS`](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##` (leave a one-line "→ D##, resolved" tombstone here). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/CONTRADICTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/CONTRADICTIONS.md).
 
@@ -196,6 +196,20 @@ Positions:
 Status: 🔴 unresolved — regeneration drift or a filtered export; A42 is the publication-facing figure, so the drift must be attributed before A42 submits.
 Blocks: A42's data statement; the "1.09M pairs" rounding used in FEATURES_INDEX is safe either way.
 > **Source:** [H1871 methods report](https://github.com/gasyoun/SanskritLexicography/blob/master/METHODS_HOW_WE_COUNT_A_TRADITION_2026.md) §3 row 15 · 31-07-2026 · Fable 5 `claude-fable-5`
+
+### §14. ls-citation-graph MW lane: CANON-CORE builds on it, CITE-4AXIS rejects it as an artifact-generator
+
+🟠 ✍️ **Two July csl-atlas promotions, one day apart, license opposite readings of the same committed file.**
+
+Positions:
+
+| Source | Value | Evidence loc |
+|---|---|---|
+| [citation_canon.json](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/src/data/citations/citation_canon.json) (CANON-CORE, 07-07-2026) | the ls-graph's 11-dict × 912-text matrix — **including MW's lane (5 resolved texts**, two of them category labels) — is a valid topology-test substrate; headline "608/912 texts private, none cited by all 11" | artifact `matrix`/`perDict`/`interpretation`; MW under-representation acknowledged only in `limitations` |
+| [four_axis_citation_independence.json](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/lexico/four_axis_citation_independence.json) (CITE-4AXIS, 08-07-2026) | the same file's MW lane "measures resolver coverage, not canon shape" (top MW abbreviations MBh./R./BhP. unresolved; BEN~MW cosine 0.0 is an artifact) — **rejected** as primary citation-vector source | artifact `citationVectorSource.whyNotLsGraph` |
+Status: 🔴 unresolved — both packets are internally honest, but CANON-CORE's "none by all 11" sub-claim is partly mechanical given MW's 5-text lane (a text in all 11 would have to be among MW's 5). Resolution path: re-run the canon topology test with MW dropped (10-dict matrix) or fed from the citation-apparatus matrix (MW fully resolved: 320,828 tagged citations); if the modular verdict holds — expected, the 10 well-resolved lanes carry it — graduate with a "direction robust, MW sub-claims resolver-shaped" ruling.
+Blocks: quoting CANON-CORE's "none cited by all 11" in A50 §4 or any paper without the resolver qualifier; the H1866 referee pass added the caveat to the [HYPOTHESIS_INDEX row](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/HYPOTHESIS_INDEX.md) in the same pass.
+> **Source:** [H1866 referee report](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/HYPOTHESIS_PROMOTIONS_JULY_2026_REFEREE.md) §Contradiction · 05-08-2026 · Fable 5 `claude-fable-5`
 
 
 _Dr. Mārcis Gasūns_
