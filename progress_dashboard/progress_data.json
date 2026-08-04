@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-03T10:28:16Z",
-  "snapshot_date": "2026-08-03",
+  "generated_at": "2026-08-04T01:17:09Z",
+  "snapshot_date": "2026-08-04",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
   "kitchen_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
@@ -20,9 +20,26 @@
       "promoted": 41,
       "runnable": 4251,
       "pwg_hits": 4292,
+      "remaining": 4251,
+      "pct": 0.81,
       "medium50_promoted": 2,
       "medium50_total": 50,
-      "medium50_status": "paused (kill-gate recalibration, H442/H462)"
+      "medium50_measured": true,
+      "medium50_pause_reason": {
+        "code": "killgate_cascade",
+        "label": "paused — kill-gate/self-heal budget cascade on dense band-4 nominal singletons",
+        "docs": [
+          "H437",
+          "H442",
+          "H462"
+        ],
+        "doc_urls": [
+          "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H437-Sonnet_RussianTranslation_pwg-ru-medium50-resume-post-h428_09.07.26.md",
+          "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H442-Opus_RussianTranslation_pwg-ru-killgate-recalibration-nominal-medium_09.07.26.md",
+          "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md"
+        ]
+      },
+      "medium50_status": "paused — kill-gate/self-heal budget cascade on dense band-4 nominal singletons"
     }
   },
   "store": {

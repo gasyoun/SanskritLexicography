@@ -649,6 +649,159 @@ def eta_verb(rt: Path, speed: dict) -> dict:
     }
 
 
+MEDIUM50_PAUSE_REASON = {
+    "code": "killgate_cascade",
+    "label": "paused — kill-gate/self-heal budget cascade on dense band-4 nominal singletons",
+    "detail": (
+        "H437 isolated a self-heal/kill-gate budget cascade on dense band-4 nominal "
+        "singleton cards (2/37 clean, every window tripped MAX_AGENTS); H442 scoped the "
+        "recalibration, still open. Not a data or scope problem — a harness heal-lane design "
+        "question."
+    ),
+    "docs": ["H437", "H442", "H462"],
+    "doc_urls": [
+        "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H437-Sonnet_RussianTranslation_pwg-ru-medium50-resume-post-h428_09.07.26.md",
+        "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H442-Opus_RussianTranslation_pwg-ru-killgate-recalibration-nominal-medium_09.07.26.md",
+        "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md",
+    ],
+}
+
+
+def _mean_keys_promoted_per_active_day(rt: Path, promoted_keys: set) -> tuple:
+    """Mean count of newly-promoted nominal keys per active day.
+
+    Same shape as `_mean_roots_promoted_per_active_day` but keyed on `key1`
+    (nominal cards have no `root` field in provenance) instead of the verb
+    lane's batch `root`.
+    """
+    if not promoted_keys:
+        return None, 0
+    store = rt / "src" / "pwg_ru_translated.jsonl"
+    if not store.exists():
+        return None, 0
+    last_day_by_key: dict = {}
+    with store.open(encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            key1 = row.get("key1")
+            prov = row.get("provenance") or {}
+            ts = prov.get("generated_at")
+            if not key1 or not ts or key1 not in promoted_keys:
+                continue
+            day = ts[:10]
+            if key1 not in last_day_by_key or day > last_day_by_key[key1]:
+                last_day_by_key[key1] = day
+    if not last_day_by_key:
+        return None, 0
+    by_day: dict = {}
+    for day in last_day_by_key.values():
+        by_day[day] = by_day.get(day, 0) + 1
+    active_days = len(by_day)
+    rate = round(sum(by_day.values()) / active_days, 3) if active_days else None
+    return rate, active_days
+
+
+def eta_nominal(rt: Path, medium50_wl_path: Path | None = None) -> dict:
+    """B7 — nominal-lane burn-down + medium-50 band, live-measured where possible.
+
+    Companion to `eta_verb`: same shape (promoted/scope/remaining/pct + a
+    keys/active-day rate), but for the nominal candidate lane, plus the
+    medium-50 band nested under `medium50` with a live-measured promoted
+    count (H317 worklist keys intersected against the store) and a
+    structured `pause_reason` (H442/H462) instead of a prose string.
+    """
+    wl = rt / "src" / "pilot" / "output" / "nominal_batch_worklist.json"
+    if not wl.exists():
+        return {"measured": False}
+    try:
+        nm = json.loads(wl.read_text(encoding="utf-8-sig"))
+    except Exception:  # noqa: BLE001
+        return {"measured": False}
+
+    def n(key):
+        val = nm.get(key)
+        if isinstance(val, list):
+            return len(val)
+        if isinstance(val, int):
+            return val
+        return None
+
+    promoted = n("already_promoted")
+    scope = n("nominal_candidates")
+    remaining = n("runnable_remaining")
+    if remaining is None and isinstance(promoted, int) and isinstance(scope, int):
+        remaining = max(0, scope - promoted)
+
+    promoted_keys_raw = nm.get("already_promoted")
+    promoted_keys = set(promoted_keys_raw) if isinstance(promoted_keys_raw, list) else set()
+    rate, active_days = _mean_keys_promoted_per_active_day(rt, promoted_keys)
+    est_days = (
+        round(remaining / rate, 1)
+        if remaining is not None and isinstance(rate, (int, float)) and rate > 0
+        else None
+    )
+
+    out = {
+        "measured": promoted is not None and scope is not None,
+        "nominal_promoted": promoted,
+        "nominal_scope": scope,
+        "nominal_remaining": remaining,
+        "nominal_pct": round(100 * promoted / scope, 2) if scope else None,
+        "mean_keys_promoted_per_active_day": rate,
+        "keys_promoted_active_days_sampled": active_days,
+        "estimated_days_at_keys_per_day_rate": est_days,
+        "estimate_label": "estimate",
+        "note": (
+            "Nominal burn-down: remaining runnable candidates divided by the mean keys "
+            "promoted per active day (store provenance timestamps of already-promoted keys). "
+            "The rate is measured from the H317 test-window burst, not current throughput — "
+            "the lane has been paused since (see pause_reason), so the ETA is not a live "
+            "projection until it resumes."
+        ),
+        "basis": "nominal_remaining / mean_keys_promoted_per_active_day",
+    }
+
+    # medium-50 band, nested: live-measured promoted count where the H317
+    # worklist is present, documented fallback constants otherwise.
+    default_wl = rt / "src" / "pilot" / "H317_medium50_worklist.08.07.26.json"
+    m50_path = medium50_wl_path or default_wl
+    m50 = {"promoted": 2, "total": 50, "measured": False}
+    if m50_path.exists():
+        try:
+            m50_wl = json.loads(m50_path.read_text(encoding="utf-8-sig"))
+            m50_keys = m50_wl.get("keys") or []
+            m50_total = m50_wl.get("n_selected") or len(m50_keys)
+            store_keys = set()
+            store = rt / "src" / "pwg_ru_translated.jsonl"
+            if store.exists():
+                with store.open(encoding="utf-8") as fh:
+                    for line in fh:
+                        line = line.strip()
+                        if not line:
+                            continue
+                        try:
+                            row = json.loads(line)
+                        except json.JSONDecodeError:
+                            continue
+                        k = row.get("key1")
+                        if k:
+                            store_keys.add(k)
+                m50_promoted = sum(1 for k in m50_keys if k in store_keys)
+                m50 = {"promoted": m50_promoted, "total": m50_total, "measured": True}
+        except Exception:  # noqa: BLE001
+            pass
+    m50["status"] = MEDIUM50_PAUSE_REASON["label"]
+    m50["pause_reason"] = MEDIUM50_PAUSE_REASON
+    out["medium50"] = m50
+    return out
+
+
 def calendar_with_idle(
     store_speed_data: dict,
     ledger: Path,
