@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H2240 — canonical `health_probe_log.jsonl` writer for the progress kitchen's health ribbon (B3 residual; Sonnet 5 `claude-sonnet-5`, override dual-run of a Grok 4.5-tagged handoff, 04-08-2026):** `kitchen_slices.health_ribbon` used to glob-scrape every `h963_*_gate0_probe_events.jsonl` / `*_probe_events.jsonl` under `pilot/output` per account. `live_probe`'s `_emit` (`RussianTranslation/src/pilot/max_account_orchestrator.py`) now ALSO appends every probe reading (any account, any script) into ONE canonical `output/health_probe_log.jsonl`, best-effort alongside the existing per-account file — which stays untouched since gate reports (H1110/H1447/H858) cite it by path and its exact-run_id read discipline (#729) is unrelated. `health_ribbon` (`progress_dashboard/kitchen_slices.py`) now prefers the canonical file **exclusively** when present, falling back to the old glob scrape only for a pre-H2240 checkout. `RussianTranslation/src/pilot/migrate_health_probe_log.py` folds any pre-existing per-account history into the canonical file once, idempotently (dedupe key `run_id, purpose, account`). Pinned by `progress_dashboard/health_ribbon_selftest.py` (3/3) plus the unchanged `h963_c4_gate0_probe.py --selftest` (7/7). **Dual-run note:** this handoff is filename-locked to Grok 4.5; executed here on Sonnet 5 per MG override — residual [H2260](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2260-Grok_SanskritLexicography_progress-kitchen-health-probe-log-dual-run-compare_04.08.26.md) requires an independent Grok 4.5 re-run + comparison.
+
 ## [1.142.0] - 2026-08-03
 
 ### Fixed
