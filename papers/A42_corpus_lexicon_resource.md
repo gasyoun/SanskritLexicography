@@ -459,7 +459,7 @@ mint once the rights scope is fixed (author action).*
 **Rights-partitioned release bundles (H1458, 22-07-2026, Sonnet 5 `claude-sonnet-5`).**
 The "settled per source" step above is now mechanized, not just stated: the sibling
 Publication-Grade Sa→Ru TM span
-([H215](https://github.com/gasyoun/Uprava/blob/main/handoffs/H215-Opus_RussianTranslation_pwg_ru_publication_grade_tm_tmx_and_oral_06.07.26.md)/[H1458](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1458-Sonnet_RussianTranslation_pubgrade-tm-track-c-release-prep_22.07.26.md))
+([H215](https://github.com/gasyoun/Uprava/blob/main/handoffs/H215-Opus_RussianTranslation_pwg_ru_publication_grade_tm_tmx_and_oral_06.07.26.md)/[H1458](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1458-Sonnet_RussianTranslation_pubgrade-tm-track-c-release-prep_22.07.26.md))
 built
 [`RussianTranslation/src/build_release_bundles.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_release_bundles.py),
 which reads this exact alignment lexicon and, per-work, consults the canonical

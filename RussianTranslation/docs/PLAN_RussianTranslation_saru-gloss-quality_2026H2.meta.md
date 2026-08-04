@@ -15,7 +15,7 @@ The execution agent (Opus 4.8, per handoff H1349) and MG for the gated republish
 - Interview: 19-07-2026, Opus 4.8 (`claude-opus-4-8`), 4 rounds × 4 questions, all ruled.
 - Audit inputs: two Explore agents (data repo `gasyoun/SanskritRussian` + pipeline
   `RussianTranslation/`), prior-art probe confirming `vidyut.cheda` v0.4.0 + `kosha` segmentation bench.
-- Handoff: [H1349-Opus_RussianTranslation_saru-gloss-quality-uplift_19.07.26](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1349-Opus_RussianTranslation_saru-gloss-quality-uplift_19.07.26.md).
+- Handoff: [H1349-Opus_RussianTranslation_saru-gloss-quality-uplift_19.07.26](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1349-Opus_RussianTranslation_saru-gloss-quality-uplift_19.07.26.md).
 
 ## Ranked improvement backlog (for the plan itself)
 1. After wave 2 lands a real precision number, fold it into the goal paragraph (currently states only the 84.4 % upstream ceiling).
