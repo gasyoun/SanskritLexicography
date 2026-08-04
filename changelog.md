@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **NUL bytes stripped from both `literature/md/` offenders — which fixed one of them and proved the other was never a NUL problem (Opus 5 `claude-opus-5`, 04-08-2026).** Follow-up to [#1127](https://github.com/gasyoun/SanskritLexicography/pull/1127), which had declared both `binary` as a holding action. **The two files needed opposite treatments**, and a blanket strip would have damaged one: in `Общий синтаксис/AEK_et_al_corrected_2020.md` the 2 NULs sat **alone on their own line** between blank lines, immediately before `Рисунок 1.2.` — a PDF image-extraction artefact standing where a figure was, so they were **deleted** (2 666 859 → 2 666 857 bytes). In `Lexicography-Manuals/THE ROUTLEDGE HANDBOOK OF HISTORICAL LINGUISTICS.md` the 15 NULs are interspersed through an already-garbled symbol-font table (`,OG\0,IKELIHOOD`, `\0HARMONIC\0MEAN\0` — i.e. "LOG LIKELIHOOD", "HARMONIC MEAN" with the leading glyph mangled), where NUL is doing the job of the **word separator**; deleting would have fused tokens into `,OG,IKELIHOOD`, so each was **replaced with a space** (length unchanged). **Outcome differs per file, and that is the finding:** AEK reclassified to `i/lf` and its `binary` exemption is **removed** — it is now ordinary `text eol=lf` like every other `.md`. Routledge stayed `i/-text` even with zero NULs, because its garbled region is dense with control bytes (`\x08 \x10 \x11 \x15 \x1a`) that git's binary heuristic reads as binary independently of NUL — so **NUL was never that file's blocker**, its exemption is retained with the corrected reason, and the real repair is re-extracting the source PDF. Verified: zero NUL bytes in both committed blobs; `git check-attr` confirms `binary: unspecified` for AEK and `binary: set` for Routledge.
+
 ## [1.142.6] - 2026-08-04
 
 ### Fixed
