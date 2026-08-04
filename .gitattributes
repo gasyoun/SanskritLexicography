@@ -28,11 +28,11 @@
 *.idx binary
 *.dz binary
 
-# --- NUL-carrying documents (H2173 follow-up, 04-08-2026) ---
-# These two .md files contain NUL bytes, so git classifies them `-text` regardless of the
-# `*.md text eol=lf` rule above: `git add --renormalize` skips them and they read as
-# permanently dirty on every checkout, while never matching an `i/crlf|i/mixed` census.
-# Declared binary so git's real behaviour is on the books. Removing the NUL bytes would be
-# a CONTENT edit to source documents and is deliberately not done here.
-literature/md/**/AEK_et_al_corrected_2020.md binary
+# --- control-character-dense document (H2173 follow-up, 04-08-2026) ---
+# NUL bytes were stripped from both former offenders. AEK_et_al_corrected_2020.md then
+# reclassified to `i/lf` and needs no exemption. This one did NOT: its garbled
+# symbol-font table is dense with control bytes (\x08 \x10 \x11 \x15 \x1a), which git's
+# binary heuristic reads as binary with or without NUL — so `--renormalize` still skips it
+# and it would read as permanently dirty on every checkout. Declared binary so git's real
+# behaviour is on the books. Fixing it properly means re-extracting the source PDF.
 "literature/md/Lexicography-Manuals/THE ROUTLEDGE HANDBOOK OF HISTORICAL LINGUISTICS.md" binary

@@ -12043,10 +12043,10 @@ topology, branch lengths, and transition probabilities.
 
 
 
-)TERATION  	
-,OG ,IKELIHOOD
--ODEL ! 0OSTBURNIN HARMONIC MEAN  
--ODEL " 0OSTBURNIN HARMONIC MEAN  
+)TERATION  	
+,OG ,IKELIHOOD
+-ODEL ! 0OSTBURNIN HARMONIC MEAN  
+-ODEL " 0OSTBURNIN HARMONIC MEAN  
 Figure 7.2 Likelihood trace MCMC sampling under two models, A and B
 The Bayes Factor = 2 × (likelihood of Model A – likelihood of Model B) = 48, which indicates ‘very strong’ 
 support for Model A (see Section 4.3.1)
