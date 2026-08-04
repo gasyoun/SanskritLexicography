@@ -14,6 +14,18 @@ not an error.
 
 ## [Unreleased]
 
+## [1.142.10] - 2026-08-04
+
+### Changed
+- **`RussianTranslation/glossary/SAMPLE_root_glossary.md` synced to its converted twin** in
+  the data repo (H2290, Fable 5 `claude-fable-5`): each showcased root now carries an
+  authored dictionary-neutral **Citation gloss** line per
+  [ROOT_GLOSS_REGISTER_POLICY.md](https://github.com/gasyoun/SanskritRussian/blob/main/ROOT_GLOSS_REGISTER_POLICY.md)
+  §§2–4 (7 roots; √dā exception-noted per §7 prefixed-lemma bleed), plus a note framing the
+  ranked lists as corpus rollup data. Canonical sweep landed in SanskritRussian
+  [PR #12](https://github.com/gasyoun/SanskritRussian/pull/12) (v1.2.1); this is the
+  mirror-copy sync only.
+
 ## [1.142.9] - 2026-08-04
 
 ### Changed
