@@ -272,6 +272,10 @@ const fmtDur = secs => {
   return Math.floor(h/24) + 'd ' + (h%24) + 'h';
 };
 
+function est(t) {
+  return `<span class="est" title="documented constant, not counted live">${esc(t)} *</span>`;
+}
+
 function barRow(label, sub, value, total, cls, valText) {
   const pct = total ? Math.max(1.5, value / total * 100) : 0;
   return `<div class="bar-row">
@@ -406,11 +410,12 @@ function renderProgress(d) {
            `${fmt(cov.dcs_attested_headwords)} <span class="mut">(${cov.pct}%)</span>`) +
     barRow('Total PWG headwords', 'whole dictionary', cov.total_headwords, cov.total_headwords, 'c-univ');
 
-  const est = t => `<span class="est" title="documented constant, not counted live">${esc(t)} *</span>`;
   document.getElementById('misc').innerHTML =
     '<tr><th>Item</th><th class="num">Value</th><th>Note</th></tr>' +
-    `<tr><td>Nominal lane — promoted</td><td class="num">${fmt(nm.promoted)} / ${fmt(nm.candidates)}</td><td class="mut">pril10 core nominal candidates</td></tr>` +
-    `<tr><td>Nominal medium-50 band</td><td class="num">${fmt(nm.medium50_promoted)} / ${fmt(nm.medium50_total)}</td><td class="mut">${esc(nm.medium50_status || '')}</td></tr>` +
+    `<tr><td>Nominal lane — promoted</td><td class="num">${fmt(nm.promoted)} / ${fmt(nm.candidates)}</td><td class="mut">pril10 core nominal candidates${nm.pct != null ? ' (' + nm.pct + '%)' : ''}</td></tr>` +
+    `<tr><td>Nominal medium-50 band</td><td class="num">${nm.medium50_measured ? fmt(nm.medium50_promoted) : est(fmt(nm.medium50_promoted))} / ${fmt(nm.medium50_total)}</td>` +
+    `<td class="mut"><span class="badge" title="${esc((nm.medium50_pause_reason && nm.medium50_pause_reason.detail) || '')}">${esc((nm.medium50_pause_reason && nm.medium50_pause_reason.code) || 'paused')}</span> ` +
+    `${esc((nm.medium50_pause_reason && nm.medium50_pause_reason.label) || nm.medium50_status || '')}</td></tr>` +
     `<tr><td>Corpus lexicon (TM source)</td><td class="num">${cor.pairs_measured ? fmt(cor.pairs) : est(fmt(cor.pairs))}</td><td class="mut">Sa→Ru alignment pairs</td></tr>` +
     `<tr><td>Alignment recall</td><td class="num">${est(cor.recall_pct + '%')}</td><td class="mut">measured H309</td></tr>`;
 
@@ -560,8 +565,9 @@ function renderKitchen(k) {
 
   // K4 ETA under progress cards (also callable from progress if kitchen loads later)
   const etaEl = document.getElementById('etaStrip');
+  let etaHtml = '';
   if (eta.measured) {
-    etaEl.innerHTML =
+    etaHtml +=
       `<div class="panel"><b>Verb burn-down</b> ` +
       `${fmt(eta.verb_promoted)} / ${fmt(eta.verb_scope_dcs)} promoted ` +
       `(${eta.verb_pct != null ? eta.verb_pct + '%' : '—'}) · remaining <b>${fmt(eta.verb_remaining)}</b>` +
@@ -569,9 +575,24 @@ function renderKitchen(k) {
         ? ` · <span class="est" title="${esc(eta.note || '')}">~${eta.estimated_days_at_roots_per_day_rate} days</span> at ${fmt(eta.mean_roots_promoted_per_active_day)} roots/day <span class="badge">estimate</span>`
         : '') +
       `<div class="mut" style="margin-top:.3rem">${esc(eta.note || '')}</div></div>`;
-  } else {
-    etaEl.innerHTML = '';
   }
+  // B7 — nominal burn-down + medium-50 band with a structured pause_reason (H442/H462).
+  const etaNom = eta.nominal || {};
+  if (etaNom.measured) {
+    const m50 = etaNom.medium50 || {};
+    const pr = m50.pause_reason || {};
+    etaHtml +=
+      `<div class="panel"><b>Nominal burn-down</b> ` +
+      `${fmt(etaNom.nominal_promoted)} / ${fmt(etaNom.nominal_scope)} promoted ` +
+      `(${etaNom.nominal_pct != null ? etaNom.nominal_pct + '%' : '—'}) · remaining <b>${fmt(etaNom.nominal_remaining)}</b>` +
+      (etaNom.estimated_days_at_keys_per_day_rate != null
+        ? ` · <span class="est" title="${esc(etaNom.note || '')}">~${etaNom.estimated_days_at_keys_per_day_rate} days</span> at ${fmt(etaNom.mean_keys_promoted_per_active_day)} keys/day <span class="badge">estimate</span>`
+        : '') +
+      `<div class="mut" style="margin-top:.3rem">medium-50 band: ${m50.measured ? fmt(m50.promoted) : est(fmt(m50.promoted))} / ${fmt(m50.total)} ` +
+      `<span class="badge" title="${esc(pr.detail || '')}">${esc(pr.code || 'paused')}</span> ${esc(pr.label || '')}</div>` +
+      `<div class="mut" style="margin-top:.15rem">${esc(etaNom.note || '')}</div></div>`;
+  }
+  etaEl.innerHTML = etaHtml;
 
   const wcN = sp.wall_clock_sample_n;
   document.getElementById('kitchenCards').innerHTML = [
