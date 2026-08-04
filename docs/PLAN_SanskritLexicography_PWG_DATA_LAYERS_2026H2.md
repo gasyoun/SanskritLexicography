@@ -2,7 +2,7 @@ _Created: 19-07-2026 · Last updated: 19-07-2026_
 
 # PLAN — PWG data layers: card anatomy, formal schema, four extraction layers, German-side enrichment
 
-**Repo:** [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) · **Subject:** PWG (Petersburger Wörterbuch / Böhtlingk–Roth) data layers · **Span:** 2026 H2 · **Handoff:** [H1350](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1350-Sonnet_SanskritLexicography_pwg-data-layers-anatomy-schema-extract_19.07.26.md)
+**Repo:** [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) · **Subject:** PWG (Petersburger Wörterbuch / Böhtlingk–Roth) data layers · **Span:** 2026 H2 · **Handoff:** [H1350](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1350-Sonnet_SanskritLexicography_pwg-data-layers-anatomy-schema-extract_19.07.26.md)
 
 This is the cover/index for a `/ask`-grade layered plan: a single unattended 5–8 h execution run that (1) reconciles the three existing PWG-card anatomy descriptions into one canonical reference, (2) authors the first-ever **formal** PWG grammar (RelaxNG over raw markup + JSON Schema over the parsed portrait) and runs it over all 123,366 records, (3) extends four extraction layers — citations, sense structure, cross-references, government — onto the existing OntoLex sidecar, and (4) turns the byproduct markup defects into staged csl-corrections change files (never a csl-orig PR).
 
@@ -65,6 +65,6 @@ No human is reachable for 5–8 h. The execution agent is bound by the following
 Read C:\Users\user\Documents\GitHub\SanskritLexicography\docs\PLAN_SanskritLexicography_PWG_DATA_LAYERS_2026H2.md and execute it.
 ```
 
-Run as Sonnet 5 (`claude-sonnet-5`) or higher; `cd C:\Users\user\Documents\GitHub` first. The handoff [H1350](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1350-Sonnet_SanskritLexicography_pwg-data-layers-anatomy-schema-extract_19.07.26.md) names the scope; this PLAN carries everything else.
+Run as Sonnet 5 (`claude-sonnet-5`) or higher; `cd C:\Users\user\Documents\GitHub` first. The handoff [H1350](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1350-Sonnet_SanskritLexicography_pwg-data-layers-anatomy-schema-extract_19.07.26.md) names the scope; this PLAN carries everything else.
 
 _Dr. Mārcis Gasūns_

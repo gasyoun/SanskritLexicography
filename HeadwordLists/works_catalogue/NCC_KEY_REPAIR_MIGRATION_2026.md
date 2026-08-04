@@ -2,7 +2,7 @@
 
 _Created: 26-07-2026 · Last updated: 26-07-2026_
 
-Handoff [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
+Handoff [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
 · executor **Opus 5 1M (`claude-opus-5[1m]`)** · closes
 [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779), found and
 measured but deliberately not acted on by

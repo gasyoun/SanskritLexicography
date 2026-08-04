@@ -8,7 +8,7 @@ _Created: 21-07-2026 · Last updated: 21-07-2026_
 сокращениями русской лингвистической литературы — эталоном взят
 [«Список основных сокращений» Лингвистического энциклопедического словаря](https://samskrtam.ru/sanskrit-lexicon/les-1990/006b.html)
 (ЛЭС, гл. ред. В. Н. Ярцева, М.: Советская энциклопедия, 1990). Ряды голосования
-и хендофф — те же, что у списка ([H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md)).
+и хендофф — те же, что у списка ([H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md)).
 
 ## Что сравнивается и как
 

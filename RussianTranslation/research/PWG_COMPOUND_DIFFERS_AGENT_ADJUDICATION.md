@@ -142,7 +142,7 @@ recording rather than papering over:
 ## 6. The blind arm had two defects — ✅ repaired 26-07-2026 by MG's `re-cut` ruling
 
 H1681 as executed was forbidden to modify the 200-card sheet, so it reported both defects
-below and routed them to [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md).
+below and routed them to [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md).
 **MG ruled option (a), re-cut**, the same day, so the generator was fixed and the sheet
 re-drawn from the same `seed=1628`:
 

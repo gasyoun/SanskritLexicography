@@ -9,7 +9,7 @@ arm-B generator (28-07-2026). Arm A's remaining 13 cards were filled 29-07-2026 
 with the same Sonnet 5 workers but a controller that the template's alias resolved to Opus 5
 (`claude-opus-5[1m]`).
 Report, coverage audit, blind sheet and this document: Opus 5 1M (`claude-opus-5[1m]`),
-29-07-2026. The handoff is [H1210](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1210-Opus_SanskritLexicography_pwg-ab-deepseek-vs-claude-100_17.07.26.md);
+29-07-2026. The handoff is [H1210](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1210-Opus_SanskritLexicography_pwg-ab-deepseek-vs-claude-100_17.07.26.md);
 the design fork it settles was MG's ruling of 17-07-2026.
 
 **Bottom line in one sentence:** with all 100 cards run in both arms, **the answer depends

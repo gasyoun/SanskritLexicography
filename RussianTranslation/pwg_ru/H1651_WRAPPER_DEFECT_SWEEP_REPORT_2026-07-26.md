@@ -2,7 +2,7 @@
 
 _Created: 26-07-2026 · Last updated: 26-07-2026_
 
-Handoff: [H1651](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1651-Sonnet_SanskritLexicography_pwg-ru-wrapper-defect-sweep-d1-d4_26.07.26.md)
+Handoff: [H1651](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1651-Sonnet_SanskritLexicography_pwg-ru-wrapper-defect-sweep-d1-d4_26.07.26.md)
 · Model: Sonnet 5 (`claude-sonnet-5`) · Evidence base:
 [VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md](https://github.com/gasyoun/Uprava/blob/main/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md)
 §5 · Data-integrity issue:

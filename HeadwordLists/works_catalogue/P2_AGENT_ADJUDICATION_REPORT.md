@@ -5,7 +5,7 @@ _Created: 26-07-2026 · Last updated: 26-07-2026_
 Handoff [H1657](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1657-Opus_SanskritLexicography_acc-ncc-p2-agent-adjudication-49k_26.07.26.md)
 · executor **Opus 5 1M (`claude-opus-5[1m]`)** · ruling **MG, 26-07-2026, option В2**
 · supersedes the human-adjudication half of
-[H264](https://github.com/gasyoun/Uprava/blob/main/handoffs/H264-Sonnet_SanskritLexicography_acc_ncc_p2_adjudication_06.07.26.md)
+[H264](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H264-Sonnet_SanskritLexicography_acc_ncc_p2_adjudication_06.07.26.md)
 (its P0/P1 lineage is untouched).
 
 MG's 09-07-2026 ruling — **full coverage, no sampling** — is not reversed. All
@@ -83,7 +83,7 @@ verdict in this report changed that.
 
 ### 0.1 Resolved — repaired and re-run, 26-07-2026 (H1671)
 
-[H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
+[H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
 fixed `parse_ncc.match_key_for` (case-fold + NFC before transliteration) and re-ran
 P0 → P1 → P2 on the corrected keys. §0's predictions held on the re-run, to the row:
 the 40,757 exact-after-repair pairs became **Tier A upstream**, and the exact-key

@@ -4,13 +4,13 @@ _Created: 13-07-2026 · Last updated: 13-07-2026_
 
 > **Provenance.** This chapter is the book-form version of the article *Cross-Dictionary
 > Consistency of Pāṇinian Derivation in the Cologne Lexica* (source draft:
-> [PAPER_DRAFT.md](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/PAPER_DRAFT.md)),
+> [PAPER_DRAFT.md](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/PAPER_DRAFT.md)),
 > which is being published separately in a journal version (target: *International Journal of
 > Lexicography* / *Lexicographica*, with the International Sanskrit Computational Linguistics
 > Symposium as a parallel venue); where the article must remain independently citable, cite
 > that version. Every count and table below is carried over from the article unchanged and is
 > regenerable from the committed pipeline
-> ([`csl-orig/v02/*/​*_etymology.tsv`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/etymology_stats)
+> ([`csl-orig/v02/*/​*_etymology.tsv`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/etymology_stats)
 > via `stats_etymology.py`). Only the framing has been converted from journal to book form —
 > the internal submission-planning and technique-assessment memos removed, the abstract folded
 > into the opening, cross-references remapped to sibling chapters, and the comparative

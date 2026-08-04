@@ -5,7 +5,7 @@ PWG) appeared in **7 volumes over 1855–1875**. The front matter is digitized a
 translated in the PWG repo:
 [prefaces/](https://github.com/sanskrit-lexicon/PWG/tree/main/prefaces) —
 German original (`*.md`), English (`*.en.md`), **Russian (`*.ru.md`)**, plus the
-combined [pwgpref_all.de.md](https://github.com/sanskrit-lexicon/PWG/blob/master/prefaces/pwgpref_all.de.md)
+combined [pwgpref_all.de.md](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.de.md)
 / `.en.md` / `.ru.md`. This note documents the dates and what the prefaces give
 the pwg_ru project.
 
@@ -117,7 +117,7 @@ Directly relevant to our parser and translation:
    Roth's program, not a departure from it.
 
 ---
-*Source: [PWG/prefaces/](https://github.com/sanskrit-lexicon/PWG/tree/master/prefaces)
+*Source: [PWG/prefaces/](https://github.com/sanskrit-lexicon/PWG/tree/main/prefaces)
 (German + English + Russian). Dates from the title pages and foreword signatures;
 volume letter-ranges and the remaining precise dates are on the per-volume title
 pages (`pwgpref12/17/20/22/25/26`).*

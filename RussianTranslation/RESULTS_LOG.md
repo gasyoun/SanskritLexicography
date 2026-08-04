@@ -1327,7 +1327,7 @@ undecomposable in the first place.
 ## 01-08-2026 — H2118: the c4 probe-latency evidence base, and why no ceiling was derived
 
 Opus 5 1M (`claude-opus-5[1m]`),
-[H2118](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2118-Opus_RussianTranslation_rederive-probe-latency-ceiling-946_01.08.26.md),
+[H2118](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2118-Opus_RussianTranslation_rederive-probe-latency-ceiling-946_01.08.26.md),
 issue [#946](https://github.com/gasyoun/SanskritLexicography/issues/946). **Zero paid calls.**
 Full report:
 [H2118_PROBE_CEILING_PROVENANCE_2026-08-01.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2118/H2118_PROBE_CEILING_PROVENANCE_2026-08-01.md).
@@ -1613,7 +1613,7 @@ analysis does not depend on the entry's `lex`.
 Arm coverage after the re-cut (200 cards): `same_split_pwg_lemma_form` 138 → max Wilson-95
 lb 0.973, still the only stratum that can clear the 0.90 gate; `pwg_lexeme_vs_mw_suffixed_tail`
 17 · `mw_cut_leaves_nonword` 11 · rest unchanged. **Promotion ceiling stays 3,018/4,226
-(71.4 %)** — the second, rule-stratified arm remains [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md)
+(71.4 %)** — the second, rule-stratified arm remains [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md)
 and is still sequenced behind [SanskritGrammar#527](https://github.com/gasyoun/SanskritGrammar/issues/527)
 + [#801](https://github.com/gasyoun/SanskritLexicography/issues/801).
 
@@ -1664,7 +1664,7 @@ remaining 1,208 rows need a second, rule-stratified arm of ~280 cards.
 ## 26-07-2026 - H1682: h1303_abbrev rule-collapse — 273 → 33 cards
 
 Executor: Sonnet 5 (`claude-sonnet-5`),
-[H1682](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1682-Sonnet_SanskritLexicography_h1303-abbrev-rule-collapse_26.07.26.md).
+[H1682](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1682-Sonnet_SanskritLexicography_h1303-abbrev-rule-collapse_26.07.26.md).
 Full method + per-section table:
 [H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md);
 100% classification: [H1682_ABBREV_RULE_COLLAPSE_CLASSIFICATION_2026-07-26.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1682_ABBREV_RULE_COLLAPSE_CLASSIFICATION_2026-07-26.tsv).
@@ -1689,7 +1689,7 @@ to §4 by H1364 (20-07-2026).
 ## 26-07-2026 - H1664: voting-queue triage — a verdict for every pending sheet, human bill recounted
 
 Executor: Fable 5 (`claude-fable-5`),
-[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md).
+[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md).
 Full verdict table (all 42 pending sheets org-wide, each with its enabling dataset):
 [VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md §11](https://github.com/gasyoun/Uprava/blob/main/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md).
 
@@ -1702,12 +1702,12 @@ Full verdict table (all 42 pending sheets org-wide, each with its enabling datas
 | acc_ncc lane (rerouted 26-07, executed; post-H1671 key repair the C/D set is 10,614) | 1 | 49,019 | 698 |
 
 SL-specific outcomes: compound-`differs` goes В2 —
-[H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md)
+[H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md)
 adjudicates all ~4,226 and the H1628 200-card sheet becomes the blind verification arm (same
 200 votes then close the whole queue); h1303_abbrev collapses to rule-level cards
-([H1682](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1682-Sonnet_SanskritLexicography_h1303-abbrev-rule-collapse_26.07.26.md),
+([H1682](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1682-Sonnet_SanskritLexicography_h1303-abbrev-rule-collapse_26.07.26.md),
 273 → ~30); the 32 article-comparison edits get source-checked pre-vote
-([H1683](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1683-Sonnet_SanskritLexicography_article-comparison-source-check_26.07.26.md));
+([H1683](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1683-Sonnet_SanskritLexicography_article-comparison-source-check_26.07.26.md));
 h180 stays routed via H1650. HUMAN-ONLY (kept, with the why): G6 gold starter (the label is
 the instrument), G5 batch1v3 (already the В2 human arm), h1306 style, Renou pilot 70,
 Kochergina 4. The acc_ncc blind spot-check (698 rows post-H1671 re-draw; the pre-repair 686 sample was voided unvoted) is now registered in
@@ -2477,7 +2477,7 @@ markup / QA / frequency families.
 ## 12-07-2026 — PWG case-government census, frozen (H778, government_census.py freeze)
 
 Script v1.1.0 · Opus 4.8 (`claude-opus-4-8`). Corpus-level marker census over the **whole
-raw** [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt)
+raw** [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt)
 (sha `430c910f8b0c9229`), frozen to the committed [`src/census_stats.json`](src/census_stats.json)
 sidecar so the scan is not re-run on every question. This is the corpus answer to "сколько
 таких помет в PWG"; the per-205-lemma store rollup above is the pwg_ru subset.

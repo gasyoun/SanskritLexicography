@@ -51,8 +51,8 @@ the `pwg_ru` schema. Executed as four parallel read-only research agents, synthe
 
 **Evidence.**
 - PWG — no class, derive from 3sg: *"Bei den Verbalwurzeln findet man keine Klasse angegeben, da diese sich aus der beigefügten 3. Person sg. praes. … von selbst ergiebt"* — [pwgpref_all.de.md L189](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.de.md).
-- PW — accent + construction + genus only where attested, grammarian-only flagged `*`: *"Accentuirt sind nur diejenigen Wörter, die in accentuirten Texten vorkommen … Ein Wort, eine Bedeutung, eine Construction oder ein Genus, die bis jetzt nur von Grammatikern … aufgeführt werden, sind mit \* bezeichnet"* — [pwpref_all.de.md L60](https://github.com/sanskrit-lexicon/PWK/blob/master/prefaces/pwpref_all.de.md).
-- AP90 — gender by headword ending + conjugation figure: *"the visarga … indicating masculine gender, and the anusvāra neuter"* (§9); *"the Arabic figure before P., A. and U. denotes the conjugation … Parasmaipada … Ātmanepada … Ubhayapada"* (§11) — [ap90_front.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90_front.txt). Real entry: `{#gam#}¦ {c1c} <ab>P.</ab> ({#gacCati, jagAma, agamat#}…)`.
+- PW — accent + construction + genus only where attested, grammarian-only flagged `*`: *"Accentuirt sind nur diejenigen Wörter, die in accentuirten Texten vorkommen … Ein Wort, eine Bedeutung, eine Construction oder ein Genus, die bis jetzt nur von Grammatikern … aufgeführt werden, sind mit \* bezeichnet"* — [pwpref_all.de.md L60](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.de.md).
+- AP90 — gender by headword ending + conjugation figure: *"the visarga … indicating masculine gender, and the anusvāra neuter"* (§9); *"the Arabic figure before P., A. and U. denotes the conjugation … Parasmaipada … Ātmanepada … Ubhayapada"* (§11) — [ap90_front.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap90/ap90_front.txt). Real entry: `{#gam#}¦ {c1c} <ab>P.</ab> ({#gacCati, jagAma, agamat#}…)`.
 - Kochergina — government inline (the model): `अर्थ … 1) цель- Acc. अर्थम्, Dat. अर्थाय, Loc. अर्थे ради, для 2) причина … Abl. अर्थद् по причине, из-за`; `गम् (P. pr. gacchati — fut. …) … 6) достигать чего-л. (Acc.) … 11) в сочет. с Acc.`
 
 **Keep / adapt / drop.**
@@ -76,7 +76,7 @@ the `pwg_ru` schema. Executed as four parallel read-only research agents, synthe
 **Evidence.**
 - PWG states the *ideal* (mark genre; Vedic attestation = a "patent of nobility") but leaves it implicit: *"Wohl aber wäre eine allgemeine Angabe der Schriftgattungen, in welchen ein Wort in einer angegebenen Bedeutung gebraucht wird, am Platz … Kommt ein Wort oder eine Wortbedeutung schon im Veda vor, so müsste dieses … vermerkt werden, da Niemand ein derartiges Adelsdiplom mit gleichgiltigem Auge betrachten darf"* — [pwgpref_all.de.md L1174/1191](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.de.md).
 - MW — encyclopedic stance: *"the articles on mythology, literature, religion, and philosophy, scattered everywhere throughout its pages"* — [mwpref_all.en.md L390](https://github.com/sanskrit-lexicon/MWS/blob/master/prefaces/mwpref_all.en.md).
-- AP90 §13 — *"Mythological allusions are explained in small type in the body of the work between rectangular brackets []."* — [ap90_front.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90_front.txt) (confirmed: 2011 `[…]` spans).
+- AP90 §13 — *"Mythological allusions are explained in small type in the body of the work between rectangular brackets []."* — [ap90_front.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap90/ap90_front.txt) (confirmed: 2011 `[…]` spans).
 
 **Renou — already solved.** The Renou I–V chronology axis is **precomputed and stored**:
 `pwg_ru_translated.renou.jsonl` carries `renou` (e.g. `["II"]`), `renou_oldest`,
@@ -108,8 +108,8 @@ needs `<ab>`/bracket mining + Koch's `грам./бот./миф.` tags.
 **Evidence.**
 - PWG — etymology recovers worn meanings: *"…da darf man zurückgreifen in den Schatz des Veda … Deshalb wird auch die Etymologie insbesondere durch die Erschliessung der alten Sprache gefördert"*; and the **big-vs-handy warning**: *"In einem grossen Wörterbuche bringt eine gewagte Etymologie … geringen Schaden … ein Handwörterbuch ist in den Händen von Anfängern, denen nur ganz Sicheres geboten werden darf"* — [pwgpref_all.de.md](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.de.md). Probe: `{#aMSala#}¦ (von {#aMSa#} {%Schulter%}) adj. {%stark, kräftig%}`.
 - MW — etymology in parens covers the whole family: *"their etymology—given in a parenthesis—applies to the whole family of cognate words … In this way all repetition of etymologies is avoided"* — [mwpref_all.en.md L355](https://github.com/sanskrit-lexicon/MWS/blob/master/prefaces/mwpref_all.en.md). Probe: `a/MSa ¦ m. (probably fr. √ 1. aS …)`.
-- GRA — short, by siglum: *"The etymology could not be missing … However, I kept the etymology as short as possible by referencing Curtius (Cu.), Fick (Fi.), Kuhn (Ku.), Böhtlingk und Roth (BR.)"* — [grapref_all.en.md L72](https://github.com/sanskrit-lexicon/GRA/blob/master/prefaces/grapref_all.en.md).
-- AP90 — native grammarians: *"I have followed the system of native grammarians who resolve every word into its 'prakṛti' and 'pratyaya' … Philological comparisons have been given only where useful"* — [ap90_front.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90_front.txt). Probe: `{#aMSaH#}¦ [{#aMS ac#}] …`.
+- GRA — short, by siglum: *"The etymology could not be missing … However, I kept the etymology as short as possible by referencing Curtius (Cu.), Fick (Fi.), Kuhn (Ku.), Böhtlingk und Roth (BR.)"* — [grapref_all.en.md L72](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/grapref_all.en.md).
+- AP90 — native grammarians: *"I have followed the system of native grammarians who resolve every word into its 'prakṛti' and 'pratyaya' … Philological comparisons have been given only where useful"* — [ap90_front.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap90/ap90_front.txt). Probe: `{#aMSaH#}¦ [{#aMS ac#}] …`.
 
 **Keep / adapt / drop.**
 - **KEEP the PWG `(von X)` derivation field, translated** (densest field, 20,729×; a *safe, native derivation reference*, not speculative): `(von {#aMSa#} {%Schulter%})` → `(от {#aMSa#} «плечо»)`, per the project's translate-the-German-wrapper rule.
@@ -130,9 +130,9 @@ needs `<ab>`/bracket mining + Koch's `грам./бот./миф.` tags.
 | **Koch** | `см.` 7522 · **of which 2636 carry a sense number** (`см. <lemma> N)`) | `см.` collapses synonym/variant lemmas onto a head | `противоп.` 24 |
 
 **Evidence.**
-- AP90 §5 (the one explicit synonymy rule): *"…several synonyms are given under the same meaning, from which the reader will have to make his choice. Where the shades of meaning are sufficiently broad, they are numbered as separate senses."* — [ap90_front.txt L216](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90_front.txt).
-- PWG `S. u.` (probe `aMSaka`): `{#aMSaka#}¦ <lex>f.</lex> {#aMSikA#} … <ab>S. u.</ab> 1. {#aMSa#}` — [pwg.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt).
-- PW `dass.` (probe `aMSaprakalpanA`): `{#aMSaprakalpanA#}¦ <lex>f.</lex> <ab>dass.</ab> <ls>M. 8,211</ls>` — [pw.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt).
+- AP90 §5 (the one explicit synonymy rule): *"…several synonyms are given under the same meaning, from which the reader will have to make his choice. Where the shades of meaning are sufficiently broad, they are numbered as separate senses."* — [ap90_front.txt L216](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap90/ap90_front.txt).
+- PWG `S. u.` (probe `aMSaka`): `{#aMSaka#}¦ <lex>f.</lex> {#aMSikA#} … <ab>S. u.</ab> 1. {#aMSa#}` — [pwg.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt).
+- PW `dass.` (probe `aMSaprakalpanA`): `{#aMSaprakalpanA#}¦ <lex>f.</lex> <ab>dass.</ab> <ls>M. 8,211</ls>` — [pw.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pw/pw.txt).
 - Kochergina sense-granular cross-ref (the model): `कृ /kṛ/ см. कर् I`; `см. लालक 2)` — `RussianTranslation/src/koch.jsonl` (gitignored/local; 2636 of 7522 `см.` carry a sense number).
 
 **Keep / adapt / drop.**

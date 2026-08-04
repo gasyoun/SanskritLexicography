@@ -7,7 +7,7 @@ A fresh agent executes it unattended by reading this file top-to-bottom, then th
 layer docs it links. Every decision a builder would hit is ruled below — a dangling
 `@DECIDE` in a wave-1 path is a defect here, not a feature.
 
-Execution handoff: [H1349-Opus_RussianTranslation_saru-gloss-quality-uplift_19.07.26](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1349-Opus_RussianTranslation_saru-gloss-quality-uplift_19.07.26.md).
+Execution handoff: [H1349-Opus_RussianTranslation_saru-gloss-quality-uplift_19.07.26](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1349-Opus_RussianTranslation_saru-gloss-quality-uplift_19.07.26.md).
 
 ## Goal (one paragraph)
 

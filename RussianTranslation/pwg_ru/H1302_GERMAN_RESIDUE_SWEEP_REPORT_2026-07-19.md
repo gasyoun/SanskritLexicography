@@ -2,7 +2,7 @@
 
 _Created: 19-07-2026 · Last updated: 19-07-2026_
 
-Handoff: [H1302](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1302-Opus_RussianTranslation_pwg-ru-german-residue-sweep-reject-repair_19.07.26.md)
+Handoff: [H1302](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1302-Opus_RussianTranslation_pwg-ru-german-residue-sweep-reject-repair_19.07.26.md)
 · Model: Opus 4.8 (`claude-opus-4-8`) · Register:
 [H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md)
 (rows N16, N17, N19; §6 item 1).
@@ -84,7 +84,7 @@ The N17 arbiter — **KATHĀS. 26,9** (Kathāsaritsāgara / Ocean of Stories, ve
 [pwg_ru/aligned_works.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/aligned_works.txt)
 lists no Kathāsaritsāgara. Per the handoff fallback the single equivalent «возвышаться» was used;
 the citation-translation check against a published RU rendering is **deferred to
-[H1304](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1304-Fable_RussianTranslation_pwg-ru-covered-texts-citation-tm-registry_19.07.26.md)**
+[H1304](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1304-Fable_RussianTranslation_pwg-ru-covered-texts-citation-tm-registry_19.07.26.md)**
 (Ocean-of-Stories ingest). If H1304 surfaces a published rendering that differs, re-verify this cell.
 
 ## Prevention (SHARED across RU + EN)

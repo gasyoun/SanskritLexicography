@@ -28,7 +28,7 @@ offset, the layout hazards, the numbering deltas) is in there.
 
 | | |
 |---|---|
-| Handoff | [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) |
+| Handoff | [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) |
 | Model | Opus 5 1M (`claude-opus-5[1m]`) |
 | PRs | [#823](https://github.com/gasyoun/SanskritLexicography/pull/823) (work) · [#824](https://github.com/gasyoun/SanskritLexicography/pull/824) (v1.89.0) · [#825](https://github.com/gasyoun/SanskritLexicography/pull/825) (count correction, v1.89.1) |
 | Inputs | [sanskrit-lexicon-scans/ramayanabom](https://github.com/sanskrit-lexicon-scans/ramayanabom) `app1/pywork/indexv{1,2,3}.txt` @ `841764ad` · SamudraManthanam `corpus_builder/jsonl` · csl-orig `v02/pwg/pwg.txt` · [RussianRamayana](https://github.com/gasyoun/RussianRamayana) `data/project-status.json` |

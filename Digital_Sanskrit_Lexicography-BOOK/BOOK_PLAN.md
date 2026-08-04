@@ -86,7 +86,7 @@ papers that belong to a **different** book (§5).
 | 6 | **A02** | Sense inheritance — condensation, not inflation | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_sense_inheritance.md) | 4/5 | EN |
 | 7 | **A33** | Genetic, not historical — what sense order encodes | [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A33_sense_ordering_note.md) | 4/5 | EN |
 | 8 | **A04** | Grammar without tags — indigenous verbal-root microstructure | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_indigenous_microstructure.md) | 4/5 | EN |
-| 9 | **A35** | Pāṇinian derivation across ten lexica | [csl-orig](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/PAPER_DRAFT.md) | 4/5 | EN |
+| 9 | **A35** | Pāṇinian derivation across ten lexica | [csl-orig](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/PAPER_DRAFT.md) | 4/5 | EN |
 | 10 | **A05** | Pointing inward — cross-reference graphs & descent (absorbs A03/A07) | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_xref_lineage.md) | 4/5 | EN |
 | 11 | **A08** | Two citation registers — European `<ls>` vs indigenous *iti* | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_citation_registers.md) | 4/5 | EN |
 | 12 | **A50** | What the tradition cites — the `<ls>` citation-frequency graph (11 dicts) | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/A50_ls_citation_frequency_graph.md) | data 4/5 | EN |

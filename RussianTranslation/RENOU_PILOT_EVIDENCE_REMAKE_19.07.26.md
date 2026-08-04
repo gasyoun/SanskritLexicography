@@ -7,7 +7,7 @@ Response to [review/decisions.md](https://github.com/gasyoun/SanskritLexicograph
 remake the approach before any further voting; count the new PWG
 register/genre layer; answer how ACC/NCC data can serve `<ls>` source markup
 for the PWG Russian and English translations. Executed as
-[H1311](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1311-Fable_RussianTranslation_renou-pilot-evidence-remake_19.07.26.md).
+[H1311](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1311-Fable_RussianTranslation_renou-pilot-evidence-remake_19.07.26.md).
 
 ## 1. The one systemic defect behind all three rejections
 
@@ -103,7 +103,7 @@ ACC (Aufrecht, *Catalogus Catalogorum*) и NCC (*New Catalogus Catalogorum*,
 но не что слово в нём встречается. Поэтому их место — в **идентификации
 источников**, а не в подтверждении словоупотреблений. У нас уже есть актив:
 кроссволк ACC×NCC (H249, P1, слит; адъюдикация P2 Tier C/D ждёт голосования —
-[H264](https://github.com/gasyoun/Uprava/blob/main/handoffs/H264-Sonnet_SanskritLexicography_acc_ncc_p2_adjudication_06.07.26.md));
+[H264](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H264-Sonnet_SanskritLexicography_acc_ncc_p2_adjudication_06.07.26.md));
 дорожная карта — [ROADMAP_ACC_NCC.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ACC_NCC.md).
 
 Четыре применения, в порядке отдачи:

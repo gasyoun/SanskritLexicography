@@ -10,7 +10,7 @@ Designed by Fable 5 (`claude-fable-5`) under
 has been drawn, no sheet generated, no label collected; execution is
 [H1665](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1665-Fable_SanskritLexicography_pwg-store-gold-cut-execute-r1-r5_26.07.26.md),
 hard-gated on the g6/g5 starter votes and the
-[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md)
+[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md)
 queue triage. Every number below is either cited from a committed artifact or
 an arithmetic consequence of a stated formula — nothing is a measurement.
 
@@ -180,7 +180,7 @@ the **N3 print gate**, not a paper deadline — and the 2,818-judgment voting
 queue was ruled too large, so execution
 ([H1665](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1665-Fable_SanskritLexicography_pwg-store-gold-cut-execute-r1-r5_26.07.26.md))
 is additionally hard-gated on the
-[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md)
+[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md)
 agent-adjudication triage shrinking that queue first.
 
 ## 9. Non-goals

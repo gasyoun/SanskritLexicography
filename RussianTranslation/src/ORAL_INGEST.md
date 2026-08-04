@@ -168,7 +168,7 @@ _Model provenance: deterministic — no LLM. Pilot generated under Opus 4.8
   (H174 not built). This slice ships the schema + tooling + an end-to-end fixture
   pilot; scale runs when H174 delivers cleaned transcripts.
 
-## Slice 4a — the text + PDF front-end ([H290](https://github.com/gasyoun/Uprava/blob/main/handoffs/H290-Opus_RussianTranslation_oral_text_pdf_tm_ingest_07.07.26.md))
+## Slice 4a — the text + PDF front-end ([H290](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H290-Opus_RussianTranslation_oral_text_pdf_tm_ingest_07.07.26.md))
 
 [`ingest_oral.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ingest_oral.py)
 above assumes the input is already a **pre-aligned parallel pair** of timecoded

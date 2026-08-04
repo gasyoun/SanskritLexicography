@@ -3,7 +3,7 @@
 _Created: 06-07-2026 · Last updated: 06-07-2026_
 
 **Deliverable 3 (comparison pilot) of
-[H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md).**
+[H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md).**
 Before committing the whole corpus to after-translation remixing
 ([`REGLUE_SPEC.md`](REGLUE_SPEC.md)), MG asked for a **bake-off**: for 10 maximally
 diverse headwords, produce two outputs and compare.

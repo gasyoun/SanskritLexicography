@@ -4,7 +4,7 @@ _Created: 18-07-2026 · Last updated: 19-07-2026_
 
 **Status:** draft 1, readiness 2/5 · registered as **A67** in
 [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) ·
-handoff [H1268](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1268-Fable_SanskritLexicography_negative-results-dead-ends-methods-paper_18.07.26.md).
+handoff [H1268](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1268-Fable_SanskritLexicography_negative-results-dead-ends-methods-paper_18.07.26.md).
 **Venue shortlist:** (1) *Insights from Negative Results in NLP* (ACL workshop — the field's
 dedicated negative-results venue; short-paper format would take §§3–4 with the taxonomy);
 (2) *Language Resources and Evaluation* (full-length; the resource-failure classes are squarely
@@ -434,7 +434,7 @@ programme-internal auditability and will not resolve for external readers; every
 result in §3 is additionally backed by a public source.
 
 _Drafted by Fable 5 (`claude-fable-5`), 18-07-2026, under
-[H1268](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1268-Fable_SanskritLexicography_negative-results-dead-ends-methods-paper_18.07.26.md);
+[H1268](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1268-Fable_SanskritLexicography_negative-results-dead-ends-methods-paper_18.07.26.md);
 fact-checked against every cited source by a read-only verification agent (Fable 5
 `claude-fable-5` subagent), findings applied 19-07-2026.
 Readiness 2/5 — pending: venue-format cut, related-work section beyond the venue sketch,

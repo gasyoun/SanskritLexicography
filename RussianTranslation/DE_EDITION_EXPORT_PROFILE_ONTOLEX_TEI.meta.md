@@ -25,7 +25,7 @@ that every emitted triple/element has a named producer and a stated reliability.
 | Parent | [H1624](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1624-Opus_SanskritLexicography_pwg-german-layers-backlog-ordered_25.07.26.md) G1–G6 |
 | Model | Opus 5 (`claude-opus-5[1m]`) |
 | Date | 26-07-2026 |
-| Prior art surveyed | `export_lod.py de-lexicon` (H772), `export_interop.py tei`, [H1495 routing contract](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1495-Sonnet_csl-observatory_obs-t-ontolex-tei-routing-contract_22.07.26.md) |
+| Prior art surveyed | `export_lod.py de-lexicon` (H772), `export_interop.py tei`, [H1495 routing contract](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1495-Sonnet_csl-observatory_obs-t-ontolex-tei-routing-contract_22.07.26.md) |
 
 ## Improvement backlog
 

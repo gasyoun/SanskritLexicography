@@ -291,7 +291,7 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
   [chapters/ch08_paninian_derivation.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch08_paninian_derivation.md),
   the book-form version of A35 *Cross-Dictionary Consistency of Pāṇinian Derivation in the
   Cologne Lexica* (csl-orig source
-  [PAPER_DRAFT.md](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/PAPER_DRAFT.md)).
+  [PAPER_DRAFT.md](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/PAPER_DRAFT.md)).
   Two internal planning memos (submission-readiness, technique-adoption assessment) stripped,
   abstract folded into the opening, provenance headnote added (A35 stays citable at IJL /
   Lexicographica / ISCLS), the A04 microstructure companion remapped to **Ch. 7**, and the

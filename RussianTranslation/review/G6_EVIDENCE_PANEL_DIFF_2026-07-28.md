@@ -3,12 +3,12 @@
 _Created: 28-07-2026 · Last updated: 28-07-2026_
 
 MG's ruling of 28-07-2026, after the first real G6 vote
-([H1796](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1796-Opus_SanskritLexicography_g6-mqm-gold-starter-vote-apply_28.07.26.md)):
+([H1796](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1796-Opus_SanskritLexicography_g6-mqm-gold-starter-vote-apply_28.07.26.md)):
 a gold card must carry the dictionary sense, the root and the corpus contexts
 **before** the vote, not after it. «Это все надо давать ДО, а не ПОСЛЕ.»
 
 Executed by Opus 5 1M (`claude-opus-5[1m]`) per
-[H1801](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1801-Opus_SanskritLexicography_g6-gold-card-evidence-panel_28.07.26.md).
+[H1801](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1801-Opus_SanskritLexicography_g6-gold-card-evidence-panel_28.07.26.md).
 
 ## What changed
 
@@ -24,7 +24,7 @@ panel change: same rows, more evidence. The old sheet's votes are already
 applied (H1796) and its lock is deliberately left in place.
 
 **Merged with H1802.** The two H1796 follow-ups re-cut the same sheet within a
-day of each other — [H1802](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1802-Sonnet_csl-pyutil_review-sheet-reject-label-picker_28.07.26.md)
+day of each other — [H1802](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1802-Sonnet_csl-pyutil_review-sheet-reject-label-picker_28.07.26.md)
 added the required reject-label select control (so the note is rationale only,
 never the carrier of the answer), H1801 the evidence panels. They are one
 instrument, not two, so this generation carries **both**. H1802's picker-only id
@@ -172,7 +172,7 @@ guard, the variant layer and the whole-compound-before-parts ordering.
 The n=400 store gold sheet is **not** cut here. That is
 [H1665](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1665-Fable_SanskritLexicography_pwg-store-gold-cut-execute-r1-r5_26.07.26.md),
 and it stays gated until
-[H1802](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1802-Sonnet_csl-pyutil_review-sheet-reject-label-picker_28.07.26.md)
+[H1802](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1802-Sonnet_csl-pyutil_review-sheet-reject-label-picker_28.07.26.md)
 (the required-label control in `csl-pyutil`) lands too.
 
 The per-card evidence JSON (`--coverage-json`) is **gitignored** for the same

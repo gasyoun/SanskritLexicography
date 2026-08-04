@@ -8,7 +8,7 @@ against. Design + rationale:
 §5; loop:
 [`Uprava/tools/skillopt/`](https://github.com/gasyoun/Uprava/tree/main/tools/skillopt);
 handoff:
-[`H388`](https://github.com/gasyoun/Uprava/blob/main/handoffs/H388-Opus_Uprava_skillopt_skill_optimizer_pwg_pilot_08.07.26.md).
+[`H388`](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H388-Opus_Uprava_skillopt_skill_optimizer_pwg_pilot_08.07.26.md).
 
 ## Files
 
@@ -66,7 +66,7 @@ refuses the opt2 harness's 8,202-char `CARDS_SCHEMA` pre-generation (*"output sc
 large to classify safely"*; 52/52 agents error, 0 tokens, 86 ms). Batch size is irrelevant
 (a 1-card split carries the same schema). Full detail + unblock path in
 [`Uprava/FINDINGS.md §49`](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) and the
-[H388 handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/H388-Opus_Uprava_skillopt_skill_optimizer_pwg_pilot_08.07.26.md).
+[H388 handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H388-Opus_Uprava_skillopt_skill_optimizer_pwg_pilot_08.07.26.md).
 
 **Authoritative preflight cost table** (`--output-budget=90`, TM-resolved; $0.347/agent,
 $25/window ceiling — from `perf_preflight.py`, 09-07-2026):

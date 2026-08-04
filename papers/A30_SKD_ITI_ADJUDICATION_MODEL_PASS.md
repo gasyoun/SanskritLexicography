@@ -3,7 +3,7 @@
 _Created: 21-07-2026 · Last updated: 21-07-2026_
 
 **This is a model-labelled pass by Fable 5 (`claude-fable-5`), 21-07-2026, under
-[H1382](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1382-Fable_SanskritLexicography_a30-hostile-referee-pass-skd-vcp_20.07.26.md).
+[H1382](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1382-Fable_SanskritLexicography_a30-hostile-referee-pass-skd-vcp_20.07.26.md).
 It is NOT the human adjudication that A30's limitation 1, A02's revision brief and A08's
 C-M1 all require — that gate remains open.** Presenting model labels as the human gold would
 reproduce the exact portfolio defect (§6.1 of

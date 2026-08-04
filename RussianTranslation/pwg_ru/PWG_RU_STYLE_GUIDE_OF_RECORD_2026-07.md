@@ -61,7 +61,7 @@ merged-PR, которым оно установлено; **правило без
 (правила R1–R4, замеры ложных срабатываний, механика свипа). Ратифицированы голосом MG по
 DA-листу 19-07-2026 (строки N7, N4, N12 реестра
 [H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md)),
-применены к стору хендоффом [H1305](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1305-Sonnet_RussianTranslation_pwg-ru-style-mechanical-yo-terseness-sweep_19.07.26.md)
+применены к стору хендоффом [H1305](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1305-Sonnet_RussianTranslation_pwg-ru-style-mechanical-yo-terseness-sweep_19.07.26.md)
 (2 013 подстановок; Sonnet 5 `claude-sonnet-5`), закреплены промптовым HARD RULE 9
 (`src/pilot/run_pilot_wf.js`), пинами `prompt_rule_audit.py` и гейтом `ru_style`.
 

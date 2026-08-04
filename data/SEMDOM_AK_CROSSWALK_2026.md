@@ -5,7 +5,7 @@ _Created: 11-07-2026 · Last updated: 12-07-2026_
 The first crosswalk between SIL's semantic domains
 ([semdom.org](https://semdom.org), 1,792 hierarchical domains, data CC BY-SA 4.0)
 and a classical thesaurus — the Amarakosha
-([sanskrit-lexicon/AMAR amar.txt](https://github.com/sanskrit-lexicon/AMAR/blob/master/amar.txt),
+([sanskrit-lexicon/AMAR amar.txt](https://github.com/sanskrit-lexicon/AMAR/blob/main/amar.txt),
 24 vargas, 5,590 `eid` synsets, ~6th c. CE). Built by
 [H742](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H742-Fable_SanskritLexicography_semdom-kosha-crosswalk-build_11.07.26.md)
 per the GO scoping memo

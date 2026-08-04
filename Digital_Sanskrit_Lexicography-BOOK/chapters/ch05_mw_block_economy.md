@@ -15,7 +15,7 @@ _Created: 09-07-2026 · Last updated: 09-07-2026_
 > reproducibility supplement. Data source: the working-notes file (Supplement:
 > [MICROANALYSIS.md](https://github.com/sanskrit-lexicon/MWS/blob/docs-pass/papers/microanalysis/MICROANALYSIS.md)).
 > All numerical claims are reproducible from the published
-> [`mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt) at
+> [`mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw.txt) at
 > the pinned commit given in §2, via the scripts archived in the supplement. Section
 > numbering is chapter-internal (§1–§10 + Appendices A–C); the book-wide renumbering and
 > bibliography merge are a later production pass.
@@ -78,7 +78,7 @@ chapter is the grounded reading plus the triangulation.
 The data is the working-notes file (Supplement:
 [MICROANALYSIS.md](https://github.com/sanskrit-lexicon/MWS/blob/docs-pass/papers/microanalysis/MICROANALYSIS.md)),
 built by parsing every `<L>...<LEND>` record in
-[`mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt)
+[`mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw.txt)
 (48.9 MB, 286,561 records) at
 [`csl-orig`](https://github.com/sanskrit-lexicon/csl-orig) commit `2e0e0f4c` (fetched
 2026-05-23) and counting formal-block occurrences. All counts in this chapter are
@@ -552,10 +552,10 @@ Three concrete implications:
   verification). The block-profile view suggests the highest-leverage editorial work is
   **filling profile-specific gaps** — e.g. systematically reducing F13 hedge incidence in
   botanical entries (currently 72%) via better named-source citation, recovering the
-  kosha sources at [ARMH](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/armh),
-  [ABCH](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/abch),
-  [ACPH](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/acph),
-  [ACSJ](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/acsj) (see
+  kosha sources at [ARMH](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/armh),
+  [ABCH](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/abch),
+  [ACPH](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/acph),
+  [ACSJ](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/acsj) (see
   [Appendix B §B.6](#appendix-b--the-atkins-rundell-practical-lexicography-reading-condensed)).
 - **For cross-dictionary work:** each CDSL dict
   ([PWG](https://github.com/sanskrit-lexicon/PWG), [AP](https://github.com/sanskrit-lexicon/ap),
@@ -975,10 +975,10 @@ lex-hedge, IE cognate) further enrich any signature without changing its class.
 pragmatic-comment is the most under-realised class in older scholarly dictionaries; MW
 confirms it. A modern revision would fill the pragmatic class (register labels),
 subdivide the Provenienz-Komment back into named-kosha citations (resolvable against
-[ARMH](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/armh) /
-[ABCH](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/abch) /
-[ACPH](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/acph) /
-[ACSJ](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/acsj)), and add a
+[ARMH](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/armh) /
+[ABCH](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/abch) /
+[ACPH](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/acph) /
+[ACSJ](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/acsj)), and add a
 Beispielkomment (examples), which requires fresh corpus work.
 
 ---

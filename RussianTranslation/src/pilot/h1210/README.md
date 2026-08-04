@@ -2,7 +2,7 @@
 
 _Created: 29-07-2026 · Last updated: 29-07-2026_
 
-Everything needed to reproduce the [H1210](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1210-Opus_SanskritLexicography_pwg-ab-deepseek-vs-claude-100_17.07.26.md)
+Everything needed to reproduce the [H1210](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1210-Opus_SanskritLexicography_pwg-ab-deepseek-vs-claude-100_17.07.26.md)
 A/B: **one variable changes — the generator.** Arm A is the Claude-native
 [H1209](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1209/canonical_audit.py)
 rig (Sonnet workers under an Opus controller); arm B replaces the worker with DeepSeek

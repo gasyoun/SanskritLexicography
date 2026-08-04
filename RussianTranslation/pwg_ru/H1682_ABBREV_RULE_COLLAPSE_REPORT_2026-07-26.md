@@ -4,7 +4,7 @@ _Created: 26-07-2026 · Last updated: 26-07-2026_
 
 ## What this is
 
-[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md)
+[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md)
 ([`VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md` §11](https://github.com/gasyoun/Uprava/blob/main/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md))
 ruled the `h1303_abbrev` review sheet (273 cards, never voted) HYBRID: "a
 ~6-rule policy asked 273 times" — a card-**design** defect, not a screening

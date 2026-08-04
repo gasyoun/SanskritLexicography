@@ -3,7 +3,7 @@
 _Created: 06-07-2026 · Last updated: 06-07-2026_
 
 **Deliverable 5 (NOW-track) of
-[H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md)**
+[H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md)**
 (MG ruling 05-07-2026: "explore Addenda-to-Addenda now, defer the rest"). Question: does
 the supplement-to-a-supplement material (PWG's *Nachträge* in vol. 7; PW's *Nachträge*)
 already live in csl-orig, and how does it fold into

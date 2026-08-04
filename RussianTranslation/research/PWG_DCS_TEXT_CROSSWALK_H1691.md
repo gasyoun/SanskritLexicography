@@ -2,9 +2,9 @@
 
 _Created: 26-07-2026 · Last updated: 26-07-2026_
 
-_Measured by Opus 5 (`claude-opus-5[1m]`) for [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md).
+_Measured by Opus 5 (`claude-opus-5[1m]`) for [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md).
 Deterministic, no LLM in the measurement path, no sampling, no RNG. Continues
-[H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md)
+[H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md)
 ([report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/PWG_SENSE_DCS_GROUNDING_LEVERS.md))._
 
 ## The headline, and the classifier error it rests on

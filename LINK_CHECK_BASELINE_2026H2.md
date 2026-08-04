@@ -2,7 +2,7 @@
 
 _Created: 22-07-2026 · Last updated: 22-07-2026_
 
-Produced by [H741](https://github.com/gasyoun/Uprava/blob/main/handoffs/H741-Fable_SanskritLexicography_repo-wide-dead-link-sweep_11.07.26.md)
+Produced by [H741](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H741-Fable_SanskritLexicography_repo-wide-dead-link-sweep_11.07.26.md)
 (repo-wide dead-link sweep, Fable 5 `claude-fable-5`). The weekly
 [link-check workflow](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/link-check.yml)
 is advisory (`continue-on-error`); this note states the accepted baseline so its

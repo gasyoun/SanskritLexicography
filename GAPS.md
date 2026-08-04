@@ -149,7 +149,7 @@ How to close: письмо Леонова → либо влить прислан
 Why it matters: the `-ī` bucket of the nominal grid (E51, 65,332 tokens) mixes the polysyllabic devī/nadī type with the monosyllabic śrī/strī/dhī type, which takes different endings in the strong cases — so its per-cell ending list is a blend of two paradigms presented as one. The `-ant` bucket (48,074) likewise pools `-ant`/`-vant`/`-mant` with the master's own `-at`/`-vat`/`-mat` citations of the same stems (`bhagavant` and `bhagavat` are two `lemma_id`s), which is harmless for counting but hides how many distinct stems there really are.
 Blocker: method/signal, not data — DCS tags case, number and gender and nothing about stem shape or syllable count; the citation form is all there is, and it is ambiguous exactly where the split matters. H1472 deliberately made no guess rather than encode a plausible-looking rule.
 How to close: bring an external lexical signal — syllable count off a transliteration-aware segmenter for the `-ī` split, and a dictionary class tag (MW/PWG grammar field, or `lemma.grammar` extended) for the `-at`/`-ant` merge. Then re-bucket, re-run the G2 reconciliation, and the row graduates to a FINDINGS measurement of how big each true class is.
-> **Source:** ✍️ [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md), 27-07-2026 (Opus 5 `claude-opus-5[1m]`); registered via /artifact-propagate epistemic pass.
+> **Source:** ✍️ [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md), 27-07-2026 (Opus 5 `claude-opus-5[1m]`); registered via /artifact-propagate epistemic pass.
 
 ---
 
@@ -162,7 +162,7 @@ Why it matters: `citation_tm` reuse is live for `R.` books 1–2 (Schlegel, dire
 Blocker: **external and human** — not data, not method. Gryntser's academic translation stopped after book 3; Leonov's covers Sundara. [RussianRamayana](https://github.com/gasyoun/RussianRamayana) `data/project-status.json`: book IV `blocked` (awaiting Serebryany's introduction), V `in-progress` (manuscript ~2027), VI `draft-ready` (~2029). Book VII is not in the pipeline.
 
 How to close: watch the RussianRamayana project status; on ingest, key the RU against the **vulgate** numbering PWG cites rather than the critical text currently in `07_ramayana-uttarakanda.jsonl` ([CONTRADICTIONS §9](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)) — that choice decides whether any Bombay concordance is needed at all ([DEAD_ENDS §13](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md)).
-> **Source:** [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/COVERED_TEXTS_RU.md` § kāṇḍas 4/6/7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/COVERED_TEXTS_RU.md) · 27-07-2026 · Opus 5 1M `claude-opus-5[1m]`
+> **Source:** [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [`pwg_ru/COVERED_TEXTS_RU.md` § kāṇḍas 4/6/7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/COVERED_TEXTS_RU.md) · 27-07-2026 · Opus 5 1M `claude-opus-5[1m]`
 
 
 _Dr. Mārcis Gasūns_

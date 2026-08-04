@@ -2,7 +2,7 @@
 
 _Created: 28-07-2026 · Last updated: 28-07-2026_
 
-**Handoff:** [H1778](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1778-Grok_SanskritLexicography_pwg-ru-finish-action-brief_28.07.26.md) · Model: Grok 4.5 (`grok-4.5`)
+**Handoff:** [H1778](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1778-Grok_SanskritLexicography_pwg-ru-finish-action-brief_28.07.26.md) · Model: Grok 4.5 (`grok-4.5`)
 
 ---
 
@@ -234,12 +234,12 @@ Split: **one sheet per sitting**. Never batch 432 compound cards in one night if
 |---|---|---|
 | [H1665](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1665-Fable_SanskritLexicography_pwg-store-gold-cut-execute-r1-r5_26.07.26.md) | Queued · gated on G6 (+ G5 path) | Vote G6 first |
 | [H1306](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1306-Fable_RussianTranslation_pwg-ru-style-research-doublets-apresyan_19.07.26.md) | Phase 1 ✅ · phase 2 waits vote | Vote 9 cards |
-| [H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md) | Session 1 ✅ · session 2 waits vote | Vote 33 cards |
-| [H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md) | Builders ✅ · sheets unvoted | Later |
-| [H1209](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1209-Opus_SanskritLexicography_pwg-ru-controller-worker-canary_17.07.26.md) | Partial | Live GO + medium50 |
+| [H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md) | Session 1 ✅ · session 2 waits vote | Vote 33 cards |
+| [H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md) | Builders ✅ · sheets unvoted | Later |
+| [H1209](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1209-Opus_SanskritLexicography_pwg-ru-controller-worker-canary_17.07.26.md) | Partial | Live GO + medium50 |
 | [H858](https://github.com/gasyoun/Uprava/blob/main/handoffs/H858-Opus_SanskritLexicography_pwg_ru_sense_fidelity_anchor_repair_13.07.26.md) | Code ✅ · paid validation ⏸ | After live GO |
 | [H274](https://github.com/gasyoun/Uprava/blob/main/handoffs/H274-Fable_DO_RussianTranslation_pwg_ru_bakeoff_compute_07.07.26.md) | Queued | After da path released (A2 done) |
-| [H255](https://github.com/gasyoun/Uprava/blob/main/handoffs/H255-Sonnet_RussianTranslation_pwg_ru_no_pwg_lane_scale_06.07.26.md) | **FROZEN** | Do not unfreeze without explicit order |
+| [H255](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H255-Sonnet_RussianTranslation_pwg_ru_no_pwg_lane_scale_06.07.26.md) | **FROZEN** | Do not unfreeze without explicit order |
 | [H151](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151-Sonnet_RussianTranslation_pwg_ru_verb_batch_drain_04.07.26.md) | **Legacy / skip** | Do not pick |
 | [H215](https://github.com/gasyoun/Uprava/blob/main/handoffs/H215-Opus_RussianTranslation_pwg_ru_publication_grade_tm_tmx_and_oral_06.07.26.md) | Agent slices mostly done | FAIR clearance = human `@DO` residual |
 

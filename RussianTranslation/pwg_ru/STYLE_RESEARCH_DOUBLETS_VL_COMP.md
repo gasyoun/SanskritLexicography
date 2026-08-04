@@ -165,7 +165,7 @@ EN-стор на этой машине отсутствует (gitignored), за
   «разночтение» (прецедент Дворецкого; ноль правок стора; соответствует архитектуре).
   Промпт-строка `v. l.` → «разночтение» **сужается** до случаев, где `v. l.` стоит голой
   прозой вне `ab` (в сторе таких 2). Токенное решение уходит в единый список H1303
-  ([H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md)),
+  ([H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md)),
   не форкается здесь.
 - **B2.** Видимый RU-текст «разночт.» через `RU_MAP` (Bucket A). Русифицирует поверхность,
   но рвёт с Дворецким и Кёльном и добавляет нестандартное сокращение (в русской традиции

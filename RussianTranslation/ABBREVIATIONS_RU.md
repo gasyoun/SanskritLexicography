@@ -42,7 +42,7 @@ token-frequency oriented, `government.html` is card-retrieval oriented; merging
 would bury N2's one-click ask. Extractor: `government_census.extract_government()`,
 now case-insensitive so the PW `zz_pw*` capitalized stratum (`(<ab>Instr.</ab>)`,
 1,116 rows previously invisible) is captured alongside the PWG lowercase one. See
-[H1308](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1308-Opus_RussianTranslation_pwg-ru-valency-government-index_19.07.26.md).
+[H1308](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1308-Opus_RussianTranslation_pwg-ru-valency-government-index_19.07.26.md).
 
 ## Architecture decision: fix at RENDER TIME, not in the data store
 
