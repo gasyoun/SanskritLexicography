@@ -14,6 +14,11 @@ not an error.
 
 ## [Unreleased]
 
+## [1.142.9] - 2026-08-04
+
+### Changed
+- **RULED: no re-typesetting of the Routledge handbook — the `binary` declaration is permanent (human ruling, 04-08-2026).** The rationale committed hours earlier ended *"a real repair is a re-typesetting/OCR project"*, which reads as an open invitation and would have had the next session propose exactly that. It is now recorded as closed. Two reasons preserved in `.gitattributes` so the decision survives without this changelog: the recoverable content **has already been recovered** (Figure 7.2's axis labels, decoded from a +32 font offset), and what remains needs a **separate font mapping per run across 3 818 runs**. Re-extraction is additionally a **measured regression**, not merely unhelpful — PyMuPDF does not emit the figure's axis labels at all and `pdftotext` returns an empty page, so any re-extraction would *delete* content this file currently preserves. Do not re-propose.
+
 ## [1.142.8] - 2026-08-04
 
 ### Fixed
