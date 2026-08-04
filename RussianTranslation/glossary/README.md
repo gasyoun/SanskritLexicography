@@ -1,6 +1,6 @@
 # Sanskrit → Russian glossary — generation pipeline (build runbook)
 
-_Created: 01-07-2026 · Last updated: 20-07-2026_
+_Created: 01-07-2026 · Last updated: 04-08-2026_
 
 **This directory holds only the generation pipeline** (`../src/build_*.py`). The data is
 git-ignored here — regenerate it locally with the runbook below. The committed data, the
@@ -11,6 +11,9 @@ accuracy) live in the data repo:
 > — three layers (surface · lemma · root), the `√gam` worked example, the coverage table, the
 > failure typology, and the **coverage ≠ accuracy** caveat.
 > 🔎 **Live site:** <https://gasyoun.github.io/SanskritRussian/>
+> 📏 **Register standard:** [ROOT_GLOSS_REGISTER_POLICY.md](https://github.com/gasyoun/SanskritRussian/blob/main/ROOT_GLOSS_REGISTER_POLICY.md)
+> — every *authored* (curated) Russian citation gloss for a verb root follows it: dictionary-neutral
+> infinitives, explicit person/aspect/voice rule, worked examples (H1860, 04-08-2026).
 
 This repo's own GitHub Pages slot serves the PWG article dashboard (`gh-pages` branch), which
 is why the glossary has its own repo.
