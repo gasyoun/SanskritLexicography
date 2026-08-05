@@ -1,8 +1,84 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 04-08-2026_
+_Created: 09-07-2026 · Last updated: 05-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 05-08-2026 (H2259) — the 03-08 c4 gate attempt 2 never spent: the schedule was anchored 6 min ahead of the ration guard's own clock
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2259](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2259-Opus_SanskritLexicography_c4-gate-attempt2-record-and-act_03.08.26.md),
+recording the outcome of the unattended one-shot armed by the 03-08
+[`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+sitting. **Ending: `REFUSING TO SPEND` (exit 3) — 0 paid calls, $0.** No latency reading
+exists for attempt 2, because no call was made; the day closed on attempt 1's single sitting.
+
+| Fire | UTC | local | sittings today | gap since last call | required | outcome |
+|---|---|---|--:|--:|--:|---|
+| smoke test (deliberate) | 10:36:58 | 13:36:58 | 1/2 | 3 806 s | 21 600 s | `REFUSING TO SPEND`, exit 3 |
+| **the real attempt 2** | **15:27:30** | **18:27:30** | **1/2** | **21 238 s** | **21 600 s** | **`REFUSING TO SPEND`, exit 3** |
+
+**Root cause — a 362 s anchor error, not a guard defect.** The Windows one-shot
+`pwg-c4-gate-attempt2-20260803` was armed at `StartBoundary 2026-08-03T18:27:30+03:00`
+(= 15:27:30 UTC), i.e. attempt 1's **`run_id` start** `2026-08-03T09:27:25Z` + 6 h. But
+[`run_gate_attempt2.py`](file:///C:/Users/user/.claude/scheduled-tasks/pwg-c4-gate-20260803/run_gate_attempt2.py)
+re-derives the ration at fire time from the **last `probe_call` row** in the events ledger —
+`2026-08-03T09:33:32.845Z`, the *measured* leg, which finished 6 min 8 s after the run began
+because that leg itself burned 297 949 ms. Six hours from **that** stamp is **15:33:33 UTC**,
+not 15:27:30. The guard was right and the schedule was wrong by **362 s**.
+
+The same wrong anchor is stated in two places that must now be read with this correction:
+attempt 1's own entry below ("the next probe is legal no earlier than **15:27 UTC**") and the
+matching [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md)
+Next-Steps row. **Standing rule for any future one-shot: arm it off the last `probe_call`
+`ts` + `MIN_SPACING_S` + a margin, never off the run-id start** — the gap between the two is
+exactly the duration of the slowest call in the sitting, so it is *largest* precisely on the
+NO-GO days that make a second sitting worth scheduling.
+
+**Consequences.**
+
+- **No reading was lost and nothing was billed** — the guard did what it is for. The cost
+  was the *opportunity*: 03-08's second sitting went unused and cannot be reclaimed.
+- **The NO-GO day count stays at 1**, not 2. Attempt 2 produced no verdict, so it cannot
+  advance the 3-consecutive-NO-GO-days trigger that routes ceiling re-derivation to
+  [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md).
+  `production_v3` (80 000 / 45 000) stands unchallenged and unre-fitted.
+- **No GO to act on**, so H2259's step 3 (a bounded window on a fresh receipt) is moot — and
+  would have been moot regardless: a canary receipt older than 6 h is refused by
+  `bounded_staged_run.py --execute`, and this is being read ~41 h after the fire.
+- **c4 has not been probed since.** The events ledger's last row is still attempt 1's measured
+  leg at `09:33:32.845Z`; 25 rows total, nothing on 04-08 or 05-08. The lane has been idle two
+  days, and 05-08's ration is untouched (0/2 sittings, no spacing constraint in force).
+
+**Evidence, quoted rather than summarised** — the runner's log lives outside the repo, is
+gitignored and would not survive a disk wipe, so it is transcribed here in full. No
+`artifacts/` directory was ever created, because a refusal happens before any artifact is
+written; that absence is itself confirmation that nothing was spent.
+
+> ```
+> ========================================================================
+> UNATTENDED c4 gate attempt 2 — fired 2026-08-03T10:36:58+00:00 UTC (local 2026-08-03T13:36:58)
+> ========================================================================
+> ration: sittings today 1/2 · last call 2026-08-03T09:33:32+00:00 · spacing 3806 s
+> REFUSING TO SPEND: 3806 s since last call < 21600 s required spacing.
+> exit code: 3
+>
+> ========================================================================
+> UNATTENDED c4 gate attempt 2 — fired 2026-08-03T15:27:30+00:00 UTC (local 2026-08-03T18:27:30)
+> ========================================================================
+> ration: sittings today 1/2 · last call 2026-08-03T09:33:32+00:00 · spacing 21238 s
+> REFUSING TO SPEND: 21238 s since last call < 21600 s required spacing.
+> exit code: 3
+> ```
+
+Windows agreed: `Get-ScheduledTaskInfo` reported `LastRunTime 03.08.2026 18:27:27`,
+`LastTaskResult 3`, `NextRunTime` empty. The task was **unregistered** as part of this pass —
+it is single-fire and inert, but dated one-shots left registered are how a machine accumulates
+jobs nobody later dares delete.
+
+**The ration guard is now twice-proven to bite rather than merely be asserted** — once by the
+10:36Z smoke test that was designed to trip it, and once here, unattended, against a real
+armed fire that a human had every reason to believe was correctly timed. That is the more
+valuable of the two demonstrations.
 
 ## 04-08-2026 (H2194) — Sa→Ru gloss vidyut tier: krdanta-collapse lemma guard (wave-2 defect class 2)
 
@@ -108,7 +184,10 @@ hours-scale bimodality MG's 02-08 retry ruling was written for.
 **Consequences, per the gate's own hand-off clause:** no canary, no bounded window, nothing
 further billed; the manifest-bound lease is left intact and unconsumed. Resume requires a
 **new** health PASS — a prior GO never authorizes it. Ration state: this was attempt **1 of 2**
-for 03-08 UTC; the next probe is legal no earlier than **15:27 UTC** (≥6 h spacing). Under v3
+for 03-08 UTC; the next probe is legal no earlier than **15:27 UTC** (≥6 h spacing) — ~~15:27~~
+**corrected to 15:33:33 UTC**, see the 05-08-2026 (H2259) entry at the top of this log: 6 h runs
+from the last `probe_call` at 09:33:32.845Z, not from the run-id start, and a one-shot armed on
+15:27:30 was refused by the ration guard for being 362 s early. Under v3
 this is NO-GO **day 1**; at 3 consecutive NO-GO days the lane stops and the ceiling goes back to
 [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md)
 for re-derivation instead of to another probe. Ceiling re-fitting is **not** indicated yet: a
