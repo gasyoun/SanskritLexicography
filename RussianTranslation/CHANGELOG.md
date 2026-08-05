@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.142.11] - 2026-08-05
+
 ### Fixed
 - **Two docs stated a next-legal-probe time 362 s too early, and an unattended one-shot was armed on it (H2259, 05-08-2026, Opus 5 1M `claude-opus-5[1m]`):** the 03-08 `/pwg-live-gate` write-up and the matching [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md) row both put c4's next legal probe at **15:27 UTC** — attempt 1's `run_id` **start** (`09:27:25Z`) + 6 h. The ration guard re-derives spacing at fire time from the last **`probe_call` row** instead (`09:33:32.845Z`, the measured leg, which itself burned 297 949 ms), so the true time was **15:33:33 UTC**. The Windows one-shot `pwg-c4-gate-attempt2-20260803` was armed at 15:27:30 UTC, fired on time, and correctly returned `REFUSING TO SPEND` (exit 3) at **21 238 s** against a required 21 600 s: **0 paid calls, $0**, no verdict, no artifacts. Both docs now carry the corrected stamp plus the standing rule — **arm any future one-shot off the last `probe_call` `ts` + `MIN_SPACING_S` + a margin, never off the run-id start**, because the gap between the two equals the slowest call in the sitting and is therefore largest exactly on the NO-GO days that make a second sitting worth scheduling. **The NO-GO day count stays at 1, not 2** (no verdict cannot advance the 3-consecutive-day trigger that routes ceiling re-derivation to H2138), `production_v3` (80 000 / 45 000) stands unre-fitted, and there was no GO to act on.
 
