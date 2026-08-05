@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 05-08-2026 (§521 — a code-keyed source read into a name-keyed dict is silent lossy aggregation, and the serialisation shape of a derived asset decides whether consumers in other repos survive it)_
+_Created: 26-06-2026 · Last updated: 05-08-2026 (§522 — a bounded re-split is displayable at per-cell granularity only because its uncertainty is degenerate: 0% or 100%, never a fraction)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -237,6 +237,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§450. The roadmap's "OBS-T κ=0.42" was a phantom figure — no measured agreement exists for any OBS-T axis](#450-the-roadmaps-obs-t-κ042-was-a-phantom-figure--no-measured-agreement-exists-for-any-obs-t-axis)
 - 🟠 [§451. `10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos](#451-105281zenodo15834721-is-a-false-doi-cited-as-genuine-in-two-different-repos)
 - 🟠 [§456. MW's derivation markup and the DCS corpus are productive over the *same* compound final members but with near-disjoint first members](#456-mws-derivation-markup-and-the-dcs-corpus-are-productive-over-the-same-compound-final-members-but-with-near-disjoint-first-members-median-jaccard-000-56-share-zero--and-the-corpus-unattested-mw-stratum-is-kośaparticiple-formations-not-ghost-words) — renumbered from §102 (H1328 collision, 20-07-2026).
+- 🟠 [§522. A bounded re-split can be displayed honestly at per-cell granularity only because its uncertainty is DEGENERATE — DCS's unmarked perfect makes the defaulted share exactly 0% or 100%, never a fraction](#522-a-bounded-re-split-can-be-displayed-honestly-at-per-cell-granularity-only-because-its-uncertainty-is-degenerate--dcss-unmarked-perfect-makes-the-defaulted-share-exactly-0-or-100-never-a-fraction) — every `Perfect` cell in the DCS paradigm dataset is 100% inferred and every `Aorist` cell 100% attested, so the evidence flag belongs to the CATEGORY, not the cell. Measured 1,955 attested vs 3,229 defaulted cells, zero in between.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -5511,3 +5512,55 @@ Residual, stated rather than implied: **cross-repo agreement of derived numbers 
 VisualDCS published 4,442. Nothing compared the two. No mechanism proposed here closes that.
 
 > Opus 5 (`claude-opus-5`) · 05-08-2026 · [H2293](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2293-Opus_VisualDCS_name-keyed-reader-sweep-issue-70_05.08.26.md) · [VisualDCS PR #72](https://github.com/gasyoun/VisualDCS/pull/72) · [SanskritGrammar PR #589](https://github.com/gasyoun/SanskritGrammar/pull/589) · sweep report [`reports/name_keyed_reader_sweep_2021_dump.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/name_keyed_reader_sweep_2021_dump.md) · class A (auto-reproducible from `src/DCS-data-2021/`)
+
+### §522. A bounded re-split can be displayed honestly at per-cell granularity only because its uncertainty is DEGENERATE — DCS's unmarked perfect makes the defaulted share exactly 0% or 100%, never a fraction
+
+🟠 **`Perfect` is DEFINED as the untagged residue, so no `Perfect` cell can carry formation
+evidence and no `Aorist` cell can lack it. That is not a convenient approximation — it makes
+the per-cell defaulted share exactly 0.0 or 1.0, which is the only reason a per-CATEGORY
+evidence flag is honest at per-cell granularity. Check this property before deciding how a
+bounded inference may be shown to a learner; if it fails, per-cell marking is mandatory.**
+
+Context: [§520](#520-ud-tensepast-is-not-the-end-of-the-aoristperfect-story--dcss-own-feat_formation-re-splits-it-and-the-too-sparse-to-use-verdict-was-a-denominator-error)
+established that DCS's `feat_formation` re-splits UD's merged `Tense=Past`, and that the
+result must be quoted as **bounds** (Aorist a LOWER bound, Perfect an UPPER bound). That is
+sufficient for an aggregate widget, which can carry an error bar in a caption. It is **not**
+sufficient for a per-root, per-cell **paradigm trainer**: a single cell rendered as plain
+"Perfect" asserts to a learner exactly the thing that was inferred.
+
+The measurement that resolves it (H2294, 05-08-2026, over the pinned `dcs_full.sqlite`),
+across the **5,184** emitted (root, category, number, person) past-indicative cells of
+[visual/paradigm_attested.json](https://github.com/gasyoun/VisualDCS/blob/main/visual/paradigm_attested.json):
+
+| defaulted share of the cell | cells |
+|---|--:|
+| 0% (every token formation-tagged) | 1,955 |
+| anything in between | **0** |
+| 100% (no token tagged) | 3,229 |
+
+**The distribution is two-valued, and it is two-valued by construction, not by luck.** The
+classifier reads `feat_formation ∈ {root, them, red, s, is, sis, sa} → Aorist`,
+`peri → Periphrastic Perfect`, `NULL → Perfect`. Since the third rule is the complement of the
+first two, a cell is either wholly tagged or wholly untagged. Consequences worth reusing:
+
+- **The honest marker is a category-level flag, and a per-cell error bar would carry zero
+  extra information** — it could only ever print 0 or 100. The dataset therefore ships a
+  `cellEvidence` map (`formation-attested` | `defaulted`) and the trainer badges it on the
+  browse grid, the flashcard, **and the exported deck**, which is where the bound would
+  otherwise be lost the moment the cards leave the page.
+- **Assert the degeneracy in the build, don't assume it.** If DCS ever tags a simple perfect,
+  or leaves an aorist type untagged inside a tagged class, the share goes fractional and a
+  category flag silently starts misdescribing individual cells. `assert_evidence_degenerate()`
+  fails the build at that point rather than shipping a flag that quietly stopped being true.
+- **A "100% defaulted" category is not a defective one** — it is a well-founded default (V1 of
+  the H1486 validation showed the independent 2021 DCS annotation uses the same unmarked
+  category for the simple perfect). What is defective is displaying it *unmarked*.
+- The generalisation beyond Sanskrit: **before choosing between a per-item and a per-class
+  uncertainty marker, measure the within-class variance of the uncertainty.** Zero variance
+  means the cheap marker is also the exact one; non-zero means the cheap marker lies.
+
+Scope note: this concerns the **display** category only. The finite-cell identity used for the
+csl-observatory E46 cross-check was deliberately left untouched, and the reconciliation re-ran
+byte-identical (6,454 roots match, 0 disagree).
+
+> Opus 5 (`claude-opus-5`) · 05-08-2026 · [H2294](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2294-Opus_VisualDCS_paradigm-attested-aorist-perfect-propagation_05.08.26.md), landed as [VisualDCS PR #74](https://github.com/gasyoun/VisualDCS/pull/74), release [paradigm-attested-resplit-2026-08-05](https://github.com/gasyoun/VisualDCS/releases/tag/paradigm-attested-resplit-2026-08-05), manifest row [kosha PR #243](https://github.com/gasyoun/kosha/pull/243). Instruments: [reports/paradigm_attested_build.md](https://github.com/gasyoun/VisualDCS/blob/main/reports/paradigm_attested_build.md) (the distribution table) and [src/DCS-data-2026/reports/past_tense_resplit_validation.md](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/reports/past_tense_resplit_validation.md) (the bounds: ≥1.13% aorist leakage, ≥3.54% imperfect contamination). Cross-repo twin on the pipeline mechanics: [Uprava FINDINGS §322](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
