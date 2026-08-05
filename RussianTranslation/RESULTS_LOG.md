@@ -4,6 +4,85 @@ _Created: 09-07-2026 · Last updated: 05-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 05-08-2026 (`/pwg-live-gate`, H2299) — c4 gate-0 **HEALTH_NOGO** again, but a different death: the measured leg was killed by us at 300 000 ms having returned nothing
+
+Opus 5 1M (`claude-opus-5[1m]`) drove the gate; the probe's own executor is **Sonnet 5**
+(`claude-sonnet-5`). One sitting, 2 paid calls. Verdict derived mechanically by
+[`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
+under policy `production_v3` (wall **80 000 ms**, route **45 000 ms**, `conn_error_ceil` 0) —
+not asserted here. Run `#730`, `run_id …2026-08-05T09:52:36Z-pid4284`, prompt 6 828 B.
+
+| Reading | wall `elapsed_ms` | route `duration_api_ms` | gap | output | classification | vs ceilings |
+|---|--:|--:|--:|--:|---|---|
+| warm-up (advisory) | 57 207 | 18 310 | 38 897 | 1 368 B | success | wall under 80 000; route far under 45 000 |
+| **measured (the gate)** | **300 099** | **— never reported** | **—** | **0 B** | **timeout** | **wall 3.75× over; route unmeasurable** |
+
+`gate_reason = HEALTH_NOGO` → **verdict NO-GO**. Three fail conditions fired: classification
+≠ success, a connection/process error, wall ≥ ceiling. `schema_valid: false`.
+
+**This is our own kill, and 03-08 was not — the two NO-GO days are not the same failure.**
+`HARD_TIMEOUT_MS` is 300 000; the measured leg landed at **300 099 ms**, i.e. the ceiling plus
+99 ms of teardown, which is the our-kill signature exactly. Everything that would make it a
+*route* reading is absent: no `duration_api_ms`, no `duration_ms`, **0 output bytes**, no
+finalized CLI telemetry of any kind. Compare 03-08, which the log below rules a route failure
+on precisely the opposite evidence — the CLI *returned* with `duration_ms` 277 894 and 1 146
+bytes after 297 949 ms, ~2 s **under** the then-relevant ceiling:
+
+| | 03-08 measured | **05-08 measured** |
+|---|--:|--:|
+| wall | 297 949 | **300 099** |
+| route `duration_api_ms` | 276 183 | **absent** |
+| CLI `duration_ms` | 277 894 | **absent** |
+| output | 1 146 B | **0 B** |
+| classification | `process` | **`timeout`** |
+| reading | route failure — the call came back | **killed by us — the call never came back** |
+
+**A ceiling re-fit cannot fix this shape, and it is important not to reach for one.** The
+documented response to a failing lane — [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md)
+re-derivation — was written for a *distribution* problem: "the median sits just under the
+ceiling", where patience cannot reach a PASS but a correctly fitted ceiling can. Today's leg
+produced **no number to fit**. No value of `STRICT_CEILING_MS` admits a call that returns zero
+bytes; a ceiling of 300 001 would "pass" a reading with no content in it, which is strictly
+worse than the NO-GO. Per [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+§270 the correct first reading of a hang is a **quota candidate**, not a latency reading — a
+throttled CLI does not return `429`, it hangs — and `claude auth status --json` (free, run
+before the sitting: `loggedIn: true`, `max`, `firstParty`) proves credentials, never quota.
+
+**The warm-up is again the sharpest counter-evidence to "c4 is down".** Same profile, same
+prompt, ~5 min earlier: **18 310 ms route**, comfortably inside 45 000, 1 368 bytes returned.
+That is now **two consecutive sittings** where the warm-up is healthy and the measured leg
+dies — 03-08 read 15 315 ms route on the warm-up before a 276 183 ms measured route. The
+profile answers; the second call of a sitting is what does not.
+
+**Cost — a floor, not a total.** The call ledger records the warm-up at **$0.569658** and the
+measured call at `observed_cost_usd: 0`, but flags the run `cost_evaluable: false` with
+`unevaluable_calls: 1`. That zero means *not evaluable*, **not free**: a killed call still
+bills, and its usage was never finalized. So this sitting cost **≥ $0.57, with the second
+call's true charge unknown** — recording it as "$0.57 spent" would understate it.
+
+**Ration and state.**
+
+- Attempt **1 of 2** for 05-08 UTC. **Next legal probe: 15:58:34 UTC** — six hours from the
+  last `probe_call` row (`09:58:33.976Z`), *not* from the run-id start (`09:52:36Z`, which
+  would give 15:52:36 and be refused). This is [Uprava FINDINGS §319](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)
+  applied on its first contact after being written.
+- **NO-GO day 2.** 03-08 was day 1; **04-08 was never probed**, so the "3 consecutive NO-GO
+  days" trigger is being read as *3 consecutive days on which a probe returned NO-GO*, not 3
+  calendar days. That reading is stated here rather than assumed silently — the rule does not
+  say which it means, and the difference decides whether the next NO-GO routes the lane to
+  H2138 or not.
+- Ceiling re-fitting is **not** indicated, for the reason argued above — and would not be even
+  on a third NO-GO of this shape.
+- Consequences per the gate's own hand-off clause: **no canary, no bounded window, nothing
+  further billed**; the manifest-bound lease is intact and unconsumed. Resume requires a
+  **new** health PASS; a prior GO never authorizes it.
+
+Diagnosis of the measured-leg hang is handed to
+[H2299](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2299-Opus_RussianTranslation_c4-measured-leg-hangs-to-kill-ceiling-diagnose_05.08.26.md).
+Machine-readable rows are **local-only** (the probe's output dir is gitignored):
+[src/pilot/output/h963_c4_gate0_probe_events.jsonl](file:///C:/Users/user/Documents/GitHub/SanskritLexicography/RussianTranslation/src/pilot/output/h963_c4_gate0_probe_events.jsonl)
+and [h963_c4_gate0_calls.json](file:///C:/Users/user/Documents/GitHub/SanskritLexicography/RussianTranslation/src/pilot/output/h963_c4_gate0_calls.json).
+
 ## 05-08-2026 (H2259) — the 03-08 c4 gate attempt 2 never spent: the schedule was anchored 6 min ahead of the ration guard's own clock
 
 Opus 5 1M (`claude-opus-5[1m]`), [H2259](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2259-Opus_SanskritLexicography_c4-gate-attempt2-record-and-act_03.08.26.md),
