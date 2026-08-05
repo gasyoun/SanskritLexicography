@@ -10,6 +10,11 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.142.12] - 2026-08-05
+
+### Added
+- **05-08-2026 c4 gate-0 sitting recorded: HEALTH_NOGO again, but a different death — and the two NO-GO days must not be conflated (`/pwg-live-gate`, 05-08-2026, Opus 5 1M `claude-opus-5[1m]`; probe executor Sonnet 5 `claude-sonnet-5`):** run `#730`, policy `production_v3`. Warm-up **57 207 ms** wall / **18 310 ms** route / 1 368 B — healthy inside both ceilings. Measured **300 099 ms** wall with **no `duration_api_ms`, no CLI `duration_ms`, 0 output bytes**, `classification=timeout`, `schema_valid=false`. `HARD_TIMEOUT_MS` is 300 000, so this is the **our-kill signature** (ceiling + 99 ms teardown) — the *opposite* evidence from 03-08, which was ruled a **route** failure precisely because the CLI returned with `duration_ms` 277 894 and 1 146 bytes. **A ceiling re-fit cannot fix this shape:** [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md) re-derivation answers a *distribution* problem ("median just under the ceiling"); this leg produced **no number to fit**, and no ceiling value admits a 0-byte call — 300 001 would "pass" a reading with no content in it. Per §270 a hang reads as a **quota candidate first**, not a latency reading. Two consecutive sittings now show **healthy warm-up → dying measured leg**, so the profile answers and the second call of a sitting does not. **Cost recorded as a floor, not a total:** warm-up **$0.569658**, measured call logged `observed_cost_usd: 0` while the run is flagged `cost_evaluable: false` / `unevaluable_calls: 1` — that zero means *not evaluable*, not free, so the sitting cost **≥ $0.57 with the second call's charge unknown**. **NO-GO day 2**, with 04-08 never probed — the 3-day trigger is read as *3 days on which a probe returned NO-GO*, stated rather than assumed because the rule does not say. Next legal probe **15:58:34 UTC**, anchored on the last `probe_call` row per [FINDINGS §319](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) rather than the run-id start. No canary, no bounded window, nothing further billed; the manifest-bound lease is intact and unconsumed. Diagnosis handed to **H2299**.
+
 ## [1.142.11] - 2026-08-05
 
 ### Fixed
