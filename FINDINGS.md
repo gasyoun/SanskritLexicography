@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 04-08-2026 (§519 — vidyut.kosha's lemma for a krdanta-derived Subanta is the bare dhatu; entry-count lemma voting collapses derived nominals to verbal roots)_
+_Created: 26-06-2026 · Last updated: 05-08-2026 (§521 — a code-keyed source read into a name-keyed dict is silent lossy aggregation, and the serialisation shape of a derived asset decides whether consumers in other repos survive it)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §520) whatever its section, so existing numbers never shift; when a finding is later
+(currently §521) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -56,6 +56,8 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§515. PWG rests on WIL 1819; MW/MW72 English on WIL 1832 — CDSL has only 1832 OCR; do not treat Wilson as edition-free](#515-pwg-rests-on-wil-1819-mwmw72-english-on-wil-1832--cdsl-has-only-1832-ocr-do-not-treat-wilson-as-edition-free) — house edition-basis rule + OCR gap + preface-only scope for 1819; `L.` stays "native lexicons" with European transmission via 1819, not a Wilson siglum (`W.` is Wilson/1832).
 - 🔴 [§518. A ceiling written as a LITERAL in a test silently encodes whatever the default was the day it was typed — derive it from the policy table](#518-a-ceiling-written-as-a-literal-in-a-test-silently-encodes-whatever-the-default-was-the-day-it-was-typed--derive-it-from-the-policy-table) — the PWG probe gate kept one source of truth for its ceilings and still went stale twice, because `verdict_for`'s own default and two selftests pinned the NUMBER instead of the pointer. Derive the LIVE boundary from `POLICIES[CURRENT_POLICY]`; pin only the HISTORICAL policies, whose retired numbers really did judge their rows.
 - 🟠 [§519. vidyut.kosha's `lemma` for a krdanta-derived Subanta is the bare dhatu — entry-count lemma voting collapses derived nominals to verbal roots](#519-vidyutkoshas-lemma-for-a-krdanta-derived-subanta-is-the-bare-dhatu--entry-count-lemma-voting-collapses-derived-nominals-to-verbal-roots) — `janitf` gets 12 kosha entries saying lemma `jan` vs 3 saying `janitf`; even `rAmeRa` out-votes to the root `ram`. The stem-vs-collapse distinction is in `pratipadika_entry` (`Basic` vs `Krdanta`) — rank with it, never by raw entry counts.
+- 🟠 [§520. UD `Tense=Past` is not the end of the aorist/perfect story — DCS's own `feat_formation` re-splits it, and the "too sparse to use" verdict was a denominator error](#520-ud-tensepast-is-not-the-end-of-the-aoristperfect-story--dcss-own-feat_formation-re-splits-it-and-the-too-sparse-to-use-verdict-was-a-denominator-error) — the seven Whitney aorist formations give Aorist 12,054 and `peri` gives Periphrastic Perfect 4,046 within the 93,329-token finite past indicative. Quote as bounds: aorist a LOWER bound, perfect an UPPER bound.
+- 🟠 [§521. A code-keyed source read into a name-keyed dict is silent lossy aggregation — and the SHAPE a derived asset is serialised in decides whether consumers in other repos survive it](#521-a-code-keyed-source-read-into-a-name-keyed-dict-is-silent-lossy-aggregation--and-the-shape-a-derived-asset-is-serialised-in-decides-whether-consumers-in-other-repos-survive-it) — `timws.csv` 42 codes → 30 names lost 39,836 examples; `_8.csv` would lose 54% of 4,577,461 tokens. Republishing such a table as a name-keyed OBJECT corrupts consumers in other repos with no code change there; a duplicate-preserving LIST leaves identical consumer code correct.
 - 🔴 [§516. A later PR's stale-base merge can silently revert an EARLIER PR's ledger-doc-only re-stamp while leaving that earlier PR's CODE change fully intact](#516-a-later-prs-stale-base-merge-can-silently-revert-an-earlier-prs-ledger-doc-only-re-stamp-while-leaving-that-earlier-prs-code-change-fully-intact) — H2226's SHARED re-stamp of two LANG_PARITY entries was reverted by H2227's stale-base merge while the underlying code stayed field-parameterized; detect by re-hashing the working tree against the last legitimate re-stamp commit, not by trusting the ledger's currently-recorded hash.
 - 🔴 [§517. An EMPTY spawn directory is not a context-free spawn directory — verify the ancestry, not the directory](#517-an-empty-spawn-directory-is-not-a-context-free-spawn-directory--verify-the-ancestry-not-the-directory) — `bare_cli_cwd()` checked its own directory for `CLAUDE.md`/`.git` and pointed at `%TEMP%`, i.e. under the Windows user profile: 32 779 B of operator memory reached every paid call, invisible because the directory itself was empty. Enumerate what the *child* discovers and keep that marker set in ONE place; derive and verify candidates rather than hardcoding a "clean" path; and never let "could not prove it clean" collapse into "proved it clean".
 - 🟠 [§504. The NWS tag layer reaches only 2.2 % of the RU store — a facet bar over it is right, but it is not the sheet's main axis](#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis)
@@ -5463,3 +5465,49 @@ regenerable via `validate_past_tense_resplit.py`. Sibling prior art that reached
 taxonomy independently: SanskritGrammar's `sg_mo_018_aorist.py` / `sg_mo_019_aorist_types.py`.
 
 > Opus 5 (`claude-opus-5`) · 04-08-2026 · [H1486](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1486-Opus_VisualDCS_aorist-perfect-formation-resplit_22.07.26.md) · [VisualDCS PR #68](https://github.com/gasyoun/VisualDCS/pull/68) · measured on `dcs_full.sqlite` pin `04e0778d…`, SHA-256 `8f3b06bd…`
+
+### §521. A code-keyed source read into a name-keyed dict is silent lossy aggregation — and the SHAPE a derived asset is serialised in decides whether consumers in other repos survive it
+
+🟠 **Keying a code-indexed table by its human-readable names cannot fail loudly: the dict just
+gets shorter. The corollary is the load-bearing half — when such a table is republished as a
+derived asset, serialising it as a name-keyed OBJECT silently corrupts every downstream consumer
+in every other repo, with no code change on their side; serialising it as a duplicate-preserving
+LIST leaves the identical consumer code correct.**
+
+Evidence: the [VisualDCS #70](https://github.com/gasyoun/VisualDCS/issues/70) sweep (H2293,
+05-08-2026) classified all 12 readers of the DCS-2021 dump in VisualDCS and SanskritGrammar by
+(the source's true key) vs (the dict key it is read into). Three measurements:
+
+- **`timws.csv`** carries 42 tense/mood **codes** but only 30 distinct names. The name-keyed
+  last-wins read in `read_2021_verbcats` dropped **39,836 examples** (2021 Imperfect Active
+  reported as 4,442 instead of 35,921 + 4,442 = 40,363) — [§520](#520-ud-tensepast-is-not-the-end-of-the-aoristperfect-story--dcss-own-feat_formation-re-splits-it-and-the-too-sparse-to-use-verdict-was-a-denominator-error)'s
+  companion defect, fixed in [VisualDCS PR #68](https://github.com/gasyoun/VisualDCS/pull/68).
+- **`_8.csv` is the same trap 63× larger.** It is keyed by (lemma, POS) — 90,954 rows, 83,275
+  distinct lemma strings, 6,340 colliding (`vid` appears 6× as `6.Ā.`/`adj`/`2.Ā.`/`adj`/`f`).
+  A last-wins name-keyed read retains 2,085,186 of **4,577,461** tokens: **54.4% silently
+  dropped**. Nothing was wrong in practice only because every live consumer already accumulates.
+- **`tense_case_data.json` is the counter-example that proves the corollary.** VisualDCS
+  republishes the 42 codes as a **list of 38 rows preserving duplicate labels** (`Imperfect`
+  twice: 35,921 + 4,442; `Aorist Act.` twice: 721 + 583; zero-count codes 17/18/31/34 omitted,
+  totals reconcile at 781,618 both sides). Four SanskritGrammar `verify_claims_dcs.py` scripts
+  consume it **by exact label name** — the highest-risk-looking pattern in the sweep — and are
+  correct, because `sum_labels()` iterates the list and therefore sums the duplicates
+  (imperfect 42,803, aorist 2,452). Had that same data been emitted as `{label: n}`, those four
+  scripts would have silently read the pre-fix numbers with no edit in SanskritGrammar at all.
+
+Implication: when the natural key of a source is a **code**, either key the dict by the code or
+**accumulate** — never assign. When republishing such a table as a derived asset, prefer a list
+of records over a name-keyed object, because the object shape moves the defect out of the
+producing repo, where it is reviewable, and into consumers that cannot see it. Two cheap guards,
+now live in [`read_2021_verbcats`](https://github.com/gasyoun/VisualDCS/blob/main/src/DCS-data-2026/regen_widgets.py):
+print every key carrying more than one code with its breakdown, and reconcile the parsed total
+against an **independently documented** figure (the 781,616 Excel-derived headline, ±10). The
+second is verified by negative control — the corrupted 741,782 is a −39,834 delta and trips it,
+i.e. the original defect was catchable at parse time for the years it shipped.
+
+Residual, stated rather than implied: **cross-repo agreement of derived numbers is unmonitored.**
+`KocherginaUchebnik_1998/verify_claims_dcs.py` aggregates the same table over explicit code lists
+(`TOK[4] + TOK[8] + …`) and so held **40,363** — the correct figure — for the entire period
+VisualDCS published 4,442. Nothing compared the two. No mechanism proposed here closes that.
+
+> Opus 5 (`claude-opus-5`) · 05-08-2026 · [H2293](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2293-Opus_VisualDCS_name-keyed-reader-sweep-issue-70_05.08.26.md) · [VisualDCS PR #72](https://github.com/gasyoun/VisualDCS/pull/72) · [SanskritGrammar PR #589](https://github.com/gasyoun/SanskritGrammar/pull/589) · sweep report [`reports/name_keyed_reader_sweep_2021_dump.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/name_keyed_reader_sweep_2021_dump.md) · class A (auto-reproducible from `src/DCS-data-2021/`)
