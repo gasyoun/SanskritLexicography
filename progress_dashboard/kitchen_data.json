@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T13:00:04Z",
+  "generated_at": "2026-08-06T15:13:15Z",
   "schema": "pwg.kitchen.v2",
   "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -9,7 +9,7 @@
   "activity": {
     "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 328079,
+    "youngest_artifact_age_seconds": 336070,
     "window_state": "needs_requeue",
     "window_root": "no_pwg_w05",
     "next_action": "Run python src\\pilot\\requeue_from_audit.py <root>, rerun Max Workflow, then rerun audit_window.py.",
@@ -17,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-08-02T07:21:30Z",
-        "age_seconds": 365908,
+        "age_seconds": 373898,
         "size": 26192750
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-07-15T20:26:10Z",
-        "age_seconds": 1874028,
+        "age_seconds": 1882018,
         "size": 53853
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-02T17:51:59Z",
-        "age_seconds": 328079,
+        "age_seconds": 336070,
         "size": 327781
       },
       "events": {
         "exists": true,
         "mtime": "2026-07-24T18:39:44Z",
-        "age_seconds": 1102814,
+        "age_seconds": 1110805,
         "size": 3486985
       }
     }
@@ -52,7 +52,7 @@
     "pending": 7,
     "newest_card_at": "2026-07-14T04:10:54Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 23.37,
+    "days_since_last_card": 23.46,
     "campaign_days": 39
   },
   "yield_quality": {
@@ -388,6 +388,7 @@
       "cards_generated": 0,
       "clean_windows": 0,
       "windows_total": 0,
+      "clean_window_pct": null,
       "promote_events": 0
     },
     "lifetime": {
@@ -397,7 +398,7 @@
       "clean_window_pct": 0.63,
       "promote_events": 0
     },
-    "promote_events_source": "no promote-typed event exists in dashboard_events.jsonl yet — ledger state==clean is used as the promoted-outcome proxy (B6 acceptance: distinguish generation volume from clean/promoted outcomes)"
+    "promote_events_source": "no promote-typed event exists in dashboard_events.jsonl yet — ledger state==clean is used as the promoted-outcome proxy (B6 acceptance: distinguish generation volume from clean/promoted outcomes); promote_events weekly count is ts-filtered when such events appear (H2265)"
   },
   "collision_guard": {
     "measured": true,
@@ -567,7 +568,7 @@
     "total_idle_seconds": 1549947,
     "total_idle_hours": 430.54,
     "mean_gap_seconds": 12204.307,
-    "current_idle_seconds": 328080,
+    "current_idle_seconds": 336071,
     "last_idle_seconds": 352265,
     "last_idle": {
       "from": "2026-07-11T18:34:18Z",
@@ -595,9 +596,9 @@
       },
       {
         "month": "2026-08",
-        "idle_seconds": 328080,
-        "idle_days": 3.8,
-        "idle_hours": 91.13
+        "idle_seconds": 336071,
+        "idle_days": 3.89,
+        "idle_hours": 93.35
       }
     ],
     "recent_gaps": [
