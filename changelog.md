@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.9] - 2026-08-06
 ### Added
 - **H2240 dual-run residual (H2269, Grok 4.5 `grok-4.5`):** independent re-run of
   B3 canonical `health_probe_log.jsonl` against Sonnet override
