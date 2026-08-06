@@ -49,6 +49,7 @@ for p in (HERE, SRC):
         sys.path.insert(0, p)
 
 from promote_final_cards import SYNTHETIC_KEY_RE, TN_RE  # noqa: E402  C-01 single source
+import marker_scan  # noqa: E402  H2253 — one marker/{Tn} scope definition, two gates
 
 RECEIPT_SCHEMA = 'pwg.canary_gate_receipt.v1'
 DEFAULT_EXPECT_SENSES = 3
@@ -83,7 +84,9 @@ def judge_payload(res, expect_senses=DEFAULT_EXPECT_SENSES):
         if not card:
             reasons.append('%s: null card' % key)
             continue
-        blob = json.dumps(card, ensure_ascii=False)
+        # H2253 (#1073): both scopes now come from ``marker_scan`` — the sibling
+        # ci_gate_runner carried the identical whole-card scan and kept failing this
+        # very fixture after H2174 fixed it here. One definition, two consumers.
         # H2174: the literal-marker scan reads TRANSLATED CONTENT only, never the
         # card's free-text ``notes``. The curated canary fixture's portrait ``note``
         # (pwg_ru/h994/canary/…portrait.json) contains the literal string "SAN-LOSS"
@@ -95,7 +98,6 @@ def judge_payload(res, expect_senses=DEFAULT_EXPECT_SENSES):
         # always-pass). It stayed invisible because the selftest's clean_card
         # carries no ``notes`` key at all. Sense loss is still caught — by the
         # sense-count check above, which is the fixture's actual detector.
-        content_blob = json.dumps(card.get('records') or [], ensure_ascii=False)
         senses = sum(1 for rec in card.get('records') or []
                      for sense in rec.get('senses') or []
                      if (sense.get('russian') or '').strip())
@@ -103,15 +105,14 @@ def judge_payload(res, expect_senses=DEFAULT_EXPECT_SENSES):
         if senses != expect_senses:
             reasons.append('%s: %d/%d senses with Russian content (canary SAN-LOSS '
                            'shortfall)' % (key, senses, expect_senses))
-        hits = TN_RE.findall(blob)
+        hits = marker_scan.tn_hits(card)
         if hits:
             tn_hits.append((key, hits[:5]))
             reasons.append('%s: unresolved TNMASK placeholder(s): %s'
                            % (key, ', '.join(hits[:5])))
-        for marker in LITERAL_MARKERS:
-            if marker in content_blob:
-                marker_hits.append((key, marker))
-                reasons.append('%s: literal %s marker in card' % (key, marker))
+        for marker in marker_scan.marker_hits(card):
+            marker_hits.append((key, marker))
+            reasons.append('%s: literal %s marker in card' % (key, marker))
     facts = {'keys': keys, 'sense_counts': sense_counts,
              'tn_hits': tn_hits, 'marker_hits': marker_hits}
     return ('GO' if not reasons else 'NO-GO'), reasons, facts

@@ -242,6 +242,24 @@ jobs:
           python src/pilot/cloud_window.py
           python src/pilot/openrouter_worker.py --selftest
           python src/pilot/ci_gate_runner.py --selftest
+          python src/pilot/marker_scan.py
+          python src/pilot/h963_c4_gate0_probe.py --selftest
+          python src/pilot/h1339_offline_bench.py --selftest
+      - name: Byte-identity control — h1339 offline bench signature (H2253, #1000)
+        working-directory: RussianTranslation
+        run: |
+          # #1000: the deterministic-output control used to be a hex string quoted in
+          # prose. It was carried across at least three close-outs that each RECORDED it
+          # as "unchanged", and it reproduces at no commit -- because nobody ever re-ran
+          # the bench to check. An unexecuted control is not a control.
+          #
+          # One measured run (no warmups) is enough: the bench's own determinism check
+          # runs inside it, and this step exists to catch a MOVED signature, not to
+          # re-measure timings. A mismatch here means the offline pipeline's output
+          # changed -- read the printed fixture hash before re-pinning, and never copy
+          # the new value into prose instead of into this line.
+          python src/pilot/h1339_offline_bench.py --warmups 0 --runs 1 \
+            --expect-signature 586d012b3d
       - name: Validate <ls> link enrichment (Panini + Spr. (II), H1307)
         working-directory: RussianTranslation
         run: python src/pilot/ls_enrichment_selftest.py

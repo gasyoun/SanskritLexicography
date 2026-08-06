@@ -4,6 +4,34 @@ _Created: 09-07-2026 · Last updated: 06-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 06-08-2026 (H2253) — the byte-identity control was inoperative, and had been silently eating a fixture lease
+
+Opus 5 (`claude-opus-5`), offline only — no model call, no promotion, no store write.
+Bisect rig: [`h2253_bisect_signature.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2253_bisect_signature.py),
+one throwaway worktree per commit, one measured run each (`--warmups 0 --runs 1`),
+CPython 3.14.4 / win32.
+
+| Commit | Date | Bench outcome | Signature | Fixture hash |
+|---|---|---|---|---|
+| [`3070941b9`](https://github.com/gasyoun/SanskritLexicography/commit/3070941b9) | 30-07 | ran | `8d0bbb2f1f` | `569660c689d0659b` |
+| [`005d2f0fd`](https://github.com/gasyoun/SanskritLexicography/commit/005d2f0fd) | 30-07 | ran | `8d0bbb2f1f` | `569660c689d0659b` |
+| [`a75eaa17c`](https://github.com/gasyoun/SanskritLexicography/commit/a75eaa17c) | 31-07 | ran | `8d0bbb2f1f` | `569660c689d0659b` |
+| [`64a4fa625`](https://github.com/gasyoun/SanskritLexicography/commit/64a4fa625) | 02-08 | ran | `8d0bbb2f1f` | `569660c689d0659b` |
+| [`196cf35e2`](https://github.com/gasyoun/SanskritLexicography/commit/196cf35e2) | 02-08 | ran | `8d0bbb2f1f` | `569660c689d0659b` |
+| [`0d1992337`](https://github.com/gasyoun/SanskritLexicography/commit/0d1992337) | 03-08 | **DIED at step 1** — `COST-GATE … over ceiling (~$10.31)` | — | `569660c689d0659b` |
+| [`15d3b2118`](https://github.com/gasyoun/SanskritLexicography/commit/15d3b2118) | 03-08 | ran (not a descendant of `0d1992337`) | `8d0bbb2f1f` | `569660c689d0659b` |
+| [`b18b76385`](https://github.com/gasyoun/SanskritLexicography/commit/b18b76385) | 06-08 | **DIED at step 1** | — | `569660c689d0659b` |
+| `b18b76385` **+ `--allow-over-cost`** | 06-08 | ran, all 5 leases | **`586d012b3d`** | `569660c689d0659b` |
+
+Three findings, in increasing order of severity:
+
+1. **`9bd2a14297` reproduces nowhere** — as [#1000](https://github.com/gasyoun/SanskritLexicography/issues/1000) reported. Unchanged verdict.
+2. **The bench has been dead on master since [`0d1992337`](https://github.com/gasyoun/SanskritLexicography/commit/0d1992337)** (H2173 budget hygiene). `git merge-base --is-ancestor` confirms the split: `0d1992337` is an ancestor of HEAD but **not** of the still-green `15d3b2118`. The control could not have been checked even by someone who tried.
+3. **The `8d0bbb2f1f` column is the real story.** The 02-08 investigation recorded `586d012b3d` at `64a4fa625`; the same commit prints `8d0bbb2f1f` today, with the fixture byte-identical. With the cost gate bypassed, `586d012b3d` reproduces at HEAD. So *before* `0d1992337` made it a hard failure, the gate was **silently parking** the over-ceiling `nominal:ADAna` lease — the bench's own cost estimate had become a hidden input to a determinism control, and the signature moved without any pipeline change.
+
+**Ruling: pin `586d012b3d`** (two independent observations four days apart, all five leases present), enforced in CI by `--expect-signature`, recorded next to its fixture hash in code. The older `9bd2a14297` → `586d012b3d` transition is **INCONCLUSIVE_REBASELINE** — not re-derived, not guessed. Note that the three close-outs which recorded "signature `9bd2a14297` unchanged" are left in the record **as written**: they are historical claims, and rewriting them would hide that the control was quoted rather than run.
+
+Residual, not fixed here: a bench run leaves an untracked `src/pilot/deferred_monsters.jsonl` in the checkout, against H1386 P3f's "leaves the checkout byte-identical" (`window_common.DEFERRED_MONSTERS` is anchored to `HERE`, outside `PWG_OUTPUT_DIR`'s redirection). Also observed: `bounded_staged_run_selftest`'s parallel-speedup assertion is wall-clock flaky under concurrent load (2 PASS / 1 FAIL at `width 3 … serial 1.162s vs 1.074s`).
 ## 06-08-2026 (`/pwg-live-gate`, H2263, #983) — c4 gate-0 **HEALTH_NOGO** a third time, and the first one that cost nothing: an explicit `rate_limit` refusal, $0, no API call made
 
 Opus 5 (`claude-opus-5`) drove the gate; the probe's own executor is **Sonnet 5**
