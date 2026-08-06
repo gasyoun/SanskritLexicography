@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.10] - 2026-08-06
 ### Added
 - **H2238 dual-run residual (H2275, Grok 4.5 `grok-4.5`):** independent re-run of
   B7 nominal + medium-50 burn-down against Sonnet override
