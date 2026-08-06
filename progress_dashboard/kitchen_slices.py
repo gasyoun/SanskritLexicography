@@ -357,6 +357,61 @@ def instrumentation_coverage(rows: list[dict]) -> dict:
     }
 
 
+def multi_lane_mix(rows: list[dict]) -> dict:
+    """B8 / H2231 — gen_model × host × profile distribution for multi-PC multilane.
+
+    Every forward audit (append_ledger) stamps gen_model / host / profile keys
+    (null when unknown). This slice counts non-null tags and sets multi_lane when
+    two or more distinct hosts, profiles, or models appear in the ledger.
+    """
+    if not rows:
+        return {"measured": False, "multi_lane": False}
+    models: Counter = Counter()
+    hosts: Counter = Counter()
+    profiles: Counter = Counter()
+    gm = host_n = prof_n = 0
+    for r in rows:
+        m = r.get("gen_model")
+        h = r.get("host")
+        p = r.get("profile") or r.get("profile_slot")
+        if m:
+            gm += 1
+            models[str(m)] += 1
+        if h:
+            host_n += 1
+            hosts[str(h)] += 1
+        if p:
+            prof_n += 1
+            profiles[str(p)] += 1
+    n = len(rows)
+    distinct_hosts = len(hosts)
+    distinct_profiles = len(profiles)
+    distinct_models = len(models)
+    multi = distinct_hosts > 1 or distinct_profiles > 1 or distinct_models > 1
+    return {
+        "measured": True,
+        "windows": n,
+        "gen_model_present": gm,
+        "gen_model_coverage_pct": round(100 * gm / n, 1) if n else None,
+        "gen_models": dict(models.most_common(12)),
+        "host_present": host_n,
+        "host_coverage_pct": round(100 * host_n / n, 1) if n else None,
+        "hosts": dict(hosts.most_common(12)),
+        "profile_present": prof_n,
+        "profile_coverage_pct": round(100 * prof_n / n, 1) if n else None,
+        "profiles": dict(profiles.most_common(12)),
+        "distinct_hosts": distinct_hosts,
+        "distinct_profiles": distinct_profiles,
+        "distinct_models": distinct_models,
+        "multi_lane": multi,
+        "note": (
+            "multi_lane=true when ≥2 distinct hosts, profiles, or gen_models appear; "
+            "forward rows (H2231+) stamp host/profile/gen_model on every audit close; "
+            "historical rows stay null until re-audited or best-effort backfill"
+        ),
+    }
+
+
 def health_ribbon(pilot_out: Path, ceiling_ms: int = 65_000) -> dict:
     """K5 — last c4 (and siblings) probe GO/NO-GO + recent sparkline.
 

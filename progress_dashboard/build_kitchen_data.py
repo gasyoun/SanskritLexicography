@@ -265,6 +265,8 @@ def ledger_cost_speed() -> dict:
                 "wall_clock_minutes": mins,
                 "tokens": tok,
                 "gen_model": r.get("gen_model"),
+                "host": r.get("host"),
+                "profile": r.get("profile") or r.get("profile_slot"),
             }
         )
     shown = recent[-RECENT_LIST_LEN:]
@@ -681,6 +683,7 @@ def main():
     yld = ks.yield_quality(all_rows)
     gates = ks.gate_summary(EVENTS)
     instr = ks.instrumentation_coverage(all_rows)
+    lane_mix = ks.multi_lane_mix(all_rows)
     health = ks.health_ribbon(PILOT_OUT)
     quality = ks.quality_slice(PILOT_OUT, all_rows, EVENTS)
     cost_h = ks.cost_honesty(econ if isinstance(econ, dict) else {}, spend)
@@ -723,7 +726,8 @@ def main():
         "schema_note": (
             "H2218 additive keys: cost.subscription, idle.reasons, article_parity; "
             "H2229 collision_guard (OPT-8 lease/store-hit banner); "
-            "H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome) "
+            "H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); "
+            "H2231 multi_lane (B8 gen_model/host/profile mix) "
             "(still pwg.kitchen.v2 — non-breaking)"
         ),
         "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -739,6 +743,7 @@ def main():
         "yield_quality": yld,
         "gates": gates,
         "instrumentation": instr,
+        "multi_lane": lane_mix,
         "health": health,
         "quality": quality,
         "eta": eta,

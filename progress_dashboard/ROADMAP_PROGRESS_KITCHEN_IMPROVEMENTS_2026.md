@@ -1,6 +1,6 @@
 # Progress kitchen — improvements inventory
 
-_Created: 02-08-2026 · Last updated: 04-08-2026_
+_Created: 02-08-2026 · Last updated: 06-08-2026_
 
 **Shipped residual (H2218, 02-08-2026):** B1 subscription loader+UI · B9 idle-reason taxonomy · B10 article-site parity · R4 ledger metric backfill script (best-effort; unrecoverable rows stay null).
 
@@ -84,7 +84,7 @@ Instrumentation gaps — no honest number on the page until a writer exists.
 | B5 | **Human review throughput** | 11.6k AI cards, almost zero approved | Daily approved count; queue of `needs_review`; G5 sheet open rate |
 | B6 | **Promotion vs generation** | Store grows without “promoted clean window” | Count ledger `state==clean` and promote events; cards promoted this week |
 | B7 | **Lane burn-down beyond verb** | Nominal medium-50 paused; no public reason depth | Structured pause reasons + runnable backlog age |
-| B8 | **Multi-PC / multi-profile split** | Future nonstop multilane | `gen_model` / host / profile tags on ledger (only 15 rows have `gen_model` today) |
+| B8 | **Multi-PC / multi-profile split** | Future nonstop multilane | **H2231 shipped:** `append_ledger` always stamps `gen_model` / `host` / `profile` (from workflow_meta + env tags); kitchen `multi_lane` mix card + UI; historical rows stay null until re-audit/backfill |
 | B9 | **Idle reason class** | Idle days are opaque | **H2218 shipped:** taxonomy + `idle_reason_log.jsonl` + auto-rules with evidence; silence → unknown |
 | B10 | **Article-site parity** | Progress store count vs published articles | **H2218 shipped:** kitchen card diffs store roots vs article_site; measured=false if site absent |
 | B11 | **Error / crash rate** | `crash_state` events rare but load-bearing | Crashes per 100 windows; last crash root |
@@ -148,7 +148,7 @@ K1–K8 UI is shipped (H2212). Remaining measurement gaps → **Grok 4.5** hando
 | Order | ID | Effort | Title / gap |
 |---|---|---|---|
 | 1 | [H2230](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2230-Grok_SanskritLexicography_progress-kitchen-wallclock-token-dense_03.08.26.md) | hard | Dense wall-clock + tokens (B2 / K6 residual) — ✅ done: append_ledger already stamped `wall_clock_minutes`/`max_total_tokens` on every row (H2212) and a backfill script already existed (`backfill_ledger_metrics.py`, H2218 R4); the real gap was the blended `wall_clock_coverage_pct` conflating historical (pre-instrumentation, legitimately null) rows with post-cut ones — fixed by splitting `instrumentation_coverage()` into `post_cut`/`historical` buckets keyed on presence of a `wall_clock_source` field |
-| 2 | [H2231](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2231-Grok_SanskritLexicography_progress-kitchen-gen-model-host-profile_03.08.26.md) | medium | gen_model / host / profile (B8) |
+| 2 | [H2231](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2231-Grok_SanskritLexicography_progress-kitchen-gen-model-host-profile_03.08.26.md) | medium | gen_model / host / profile (B8) — ✅ done: `resolve_gen_model`/`resolve_host`/`resolve_profile` + always-stamp on `append_ledger`; kitchen `multi_lane` aggregate + Multi-lane mix panel; pinned by `window_selftest.test_ledger_stamps_host_profile_b8` + `kitchen_multi_lane_selftest.py` |
 | 3 | [H2232](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2232-Grok_SanskritLexicography_progress-kitchen-true-cost-subscription_03.08.26.md) | medium | True $ / subscription units (B1) |
 | 4 | [H2233](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2233-Grok_SanskritLexicography_progress-kitchen-verb-eta-roots-per-day_03.08.26.md) | medium | Verb ETA roots/day (K4 residual) |
 | 5 | [H2234](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2234-Grok_SanskritLexicography_progress-kitchen-idle-reason-tags_03.08.26.md) | medium | Idle reason tags (B9) |
