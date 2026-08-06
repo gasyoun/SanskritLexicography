@@ -14,6 +14,19 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.10] - 2026-08-06
+### Added
+- **H2238 dual-run residual (H2275, Grok 4.5 `grok-4.5`):** independent re-run of
+  B7 nominal + medium-50 burn-down against Sonnet override
+  [PR #1119](https://github.com/gasyoun/SanskritLexicography/pull/1119)
+  (`f8c357aa5`). Confirms live medium-50 **2/50** (`yuvan`, `ftvij`), runnable
+  remaining 4251/5039, structured `killgate_cascade` pause. **Conflicting keep
+  (Grok):** `progress_data.lanes.nominal.medium50_pause_reason` now carries full
+  `detail` (misc-table tooltip was empty). **Net-new:** shared
+  `measure_medium50_band()` so progress + kitchen cannot drift;
+  `kitchen_nominal_selftest.py` (6 cases). Adjudication:
+  [H2275_H2238_DUAL_RUN_COMPARE_2026-08-06.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/H2275_H2238_DUAL_RUN_COMPARE_2026-08-06.md).
+
 ## [1.144.9] - 2026-08-06
 ### Added
 - **H2240 dual-run residual (H2269, Grok 4.5 `grok-4.5`):** independent re-run of
