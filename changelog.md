@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.8] - 2026-08-06
 ### Added
 - **H2237 dual-run residual (H2265, Grok 4.5 `grok-4.5`):** independent re-run of
   B6 promote-vs-generate against Sonnet override
