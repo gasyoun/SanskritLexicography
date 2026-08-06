@@ -14,6 +14,18 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H2238 dual-run residual (H2275, Grok 4.5 `grok-4.5`):** independent re-run of
+  B7 nominal + medium-50 burn-down against Sonnet override
+  [PR #1119](https://github.com/gasyoun/SanskritLexicography/pull/1119)
+  (`f8c357aa5` / v1.142.4). Confirms live medium-50 **2/50**, burn-down fields, and
+  `eta_nominal` keys/day rate. **Conflicting keep (Grok):** single
+  `measure_medium50_band()` + shared `MEDIUM50_PAUSE_REASON` so progress path
+  carries `detail` (progress UI tooltip was empty). **Net-new:**
+  `kitchen_nominal_selftest.py` (6 cases) + robust count/list field access on
+  `nominal_lane`. Adjudication:
+  [H2275_H2238_DUAL_RUN_COMPARE_2026-08-06.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/H2275_H2238_DUAL_RUN_COMPARE_2026-08-06.md).
+
 ## [1.144.9] - 2026-08-06
 ### Added
 - **H2240 dual-run residual (H2269, Grok 4.5 `grok-4.5`):** independent re-run of
