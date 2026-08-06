@@ -22,6 +22,7 @@ from selftest_isolation import guard as _isolation_guard  # noqa: E402
 _isolation_guard()
 
 import max_account_orchestrator as m
+import headless_worker as hw          # H2299: the paid lane's own bare-cwd helper
 from execution_contract import config_dir_fingerprint
 
 
@@ -858,6 +859,42 @@ def main():
     finally:
         m.run_tree_kill = _rtk2
     print('  D-P readiness prompt: completable task ({"ok": true}) + >=5 KB inert filler; plan mode kept; degenerate x-padding gone')
+
+    # H2299: the probe must spawn from the SAME bare cwd the PAID lane uses.
+    #
+    # `run_tree_kill(cwd=...)` defaults to None, and `_probe_call` supplied nothing — so the
+    # CLI inherited the gate's launch directory. Proof it really happened, not a code-reading:
+    # the 05-08-2026 sitting's warm-up (probe event 09:53:33Z) put the CLI session in the c4
+    # profile's project bucket `…-SanskritLexicography-RussianTranslation` at 09:53:51Z, i.e.
+    # the repo, not a bare dir. That injects CLAUDE.md + git context into every probe call:
+    # H2158 measured the same delta at -33 % cost / -30 % wall, and the c4 ledger shows the
+    # cost of it climbing (warm-up cache_creation 48 352 -> 93 462 tokens, 31-07 -> 05-08,
+    # with cache_read collapsing to 0) until the measured leg stopped fitting under the 300 s
+    # kill. Asserting EQUALITY WITH THE HELPER, never a literal path, is the point: a gate
+    # that prices a different call than the lane it gates cannot predict that lane.
+    _rtk3 = m.run_tree_kill
+    cap3 = {}
+
+    def _capture_cwd(*a, **k):
+        cap3['cwd'] = k.get('cwd')
+        return types.SimpleNamespace(
+            returncode=0, stderr='',
+            stdout='{"type":"result","subtype":"success","is_error":false,"structured_output":{"ok":true}}')
+
+    try:
+        m.run_tree_kill = _capture_cwd
+        m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                      call_reservation=MemoryCallLedger())
+        assert cap3['cwd'] is not None, (
+            'probe spawned with cwd=None -- it inherits the launch directory and pays the '
+            'project-context injection H2158 removed from the paid lane (H2299)')
+        assert cap3['cwd'] == hw.bare_cli_cwd(), (
+            'probe cwd %r != paid-lane bare_cli_cwd() %r -- the gate is pricing a different '
+            'call than the lane it gates (H2299)' % (cap3['cwd'], hw.bare_cli_cwd()))
+    finally:
+        m.run_tree_kill = _rtk3
+    print('  H2299 probe spawn cwd: == headless_worker.bare_cli_cwd() (%s), not the repo'
+          % cap3['cwd'])
 
     # D-K census: probe events distinguishable from translation calls; warm-up excluded from
     # latency, but a rate-limit warm-up is STILL counted in total quota observations.
