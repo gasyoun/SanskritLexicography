@@ -14,7 +14,7 @@ not an error.
 
 ## [Unreleased]
 
-## [1.144.1] - 2026-08-06
+## [1.144.2] - 2026-08-06
 
 ### Fixed
 - **`h2158_route_ab.py --check` now AUTHENTICATES instead of reporting presence** (H2312,
