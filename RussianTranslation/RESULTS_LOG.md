@@ -4,6 +4,113 @@ _Created: 09-07-2026 · Last updated: 06-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 06-08-2026 (`/pwg-live-gate`, H2263, #983) — c4 gate-0 **HEALTH_NOGO** a third time, and the first one that cost nothing: an explicit `rate_limit` refusal, $0, no API call made
+
+Opus 5 (`claude-opus-5`) drove the gate; the probe's own executor is **Sonnet 5**
+(`claude-sonnet-5`). One sitting, **1** of the 2 reserved calls spent, **$0.00**. Verdict
+derived mechanically by
+[`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
+under policy `production_v3` — not asserted here. Run `#729`,
+`run_id …2026-08-06T19:02:34Z-pid12680`, prompt 6 828 B.
+**This is the first sitting after [v1.143.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.143.0)**
+(H2299's `cwd=bare_cli_cwd()` fix), so its wall figure is **not** comparable with the 27 rows before it.
+
+| Reading | wall `elapsed_ms` | CLI `duration_ms` | route `duration_api_ms` | output | classification |
+|---|--:|--:|--:|--:|---|
+| **warm-up (the gate fail-closed here)** | **18 574** | **4 524** | **0** | **830 B** | **`rate_limit`** |
+| measured | — never ran | — | — | — | probe stopped first |
+
+`gate_reason = HEALTH_NOGO` → **verdict NO-GO**. Two fail conditions: warm-up classification
+≠ success, and the measured reading absent. `schema_valid: false`.
+**STOP — no canary, no bounded window, no reroll.** The manifest-bound w1 lease is intact
+and unconsumed.
+
+### This is not the 03-08/05-08 stall — it is the shape H2299 already characterised
+
+[H2299](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2299/C4_MEASURED_LEG_KILL_CEILING_HANG_CLASSIFICATION_06-08-2026.md)
+ruled quota/throttle **CONTRADICTED** *as the explanation for the 300 s hangs*, and one of its
+grounds was that this account's four real `rate_limit` rows all returned in
+**9 949–19 903 ms, never hanging**. Today's row returns in **18 574 ms** — inside that band.
+So today **confirms H2299 rather than overturning it**: the hang class and the throttle class
+are distinct, they look different, and the discriminator H2299 derived just did its job on
+first contact. Filing today next to 03-08/05-08 would undo that separation.
+
+| | 03-08 measured | 05-08 measured | **06-08 warm-up** |
+|---|--:|--:|--:|
+| wall | 297 949 | 300 099 | **18 574** |
+| route `duration_api_ms` | 276 183 | absent | **0** |
+| output | 1 146 B | 0 B | **830 B** |
+| classification | `process` | `timeout` | **`rate_limit`** |
+| reading | route stall — it came back | our kill — it never came back | **refused up front — no API call happened** |
+
+### The cost really is zero this time, and that distinction is load-bearing
+
+05-08's `observed_cost_usd: 0` meant **not evaluable** (`cost_evaluable: false`,
+`unevaluable_calls: 1`) — a killed call bills, its usage just never finalized. Today's zero is
+the opposite: `cost_evaluable: **true**`, `unevaluable_calls: 0`, and **every** token counter
+at 0 (`input` 0, `output` 0, `cache_read` 0, `cache_creation` 0, `subagent` 0) with
+`duration_api_ms: 0`. Nothing was generated, so nothing was billed. **Two identical-looking
+zeros with opposite meanings** — read `cost_evaluable` before reporting either.
+
+Incidentally the sitting is also evidence the v1.143.0 fix landed: outside-the-CLI overhead is
+`18 574 − 4 524 =` **14 050 ms**, back at the bottom of the 14 655 → 32 091 ms range H2299
+measured across the pre-fix series.
+
+### The instrumentation gap that stopped the diagnosis here
+
+`_probe_call` keeps `output_bytes` but **discards the envelope text**, and `_probe_err_class`
+only reports which *class* matched — so the 830 bytes the provider actually returned, including
+any reset time, are unrecoverable. `RATE_RE` is
+`429|rate.?limit|usage limit|too many requests`, and which of those four matched is exactly the
+difference between "account weekly cap" and "per-model capacity". Persisting the envelope on a
+non-success classification is free and offline. Filed as
+[#1172](https://github.com/gasyoun/SanskritLexicography/issues/1172).
+
+### Three hypotheses stay live; none is settled by one row
+
+1. **Account-level usage cap on c4's claude.ai account** — the plain reading.
+2. **Self-contention** — c4 is the same account hosting the driving session, and
+   [`/go`'s own guardrail](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+   warns a window competes with the operator's own quota. The probe was fired **while this
+   session was active**, which is true of most sittings and so discriminates nothing on its own.
+3. **Per-model capacity refusal** on `claude-sonnet-5` that merely matches `RATE_RE`.
+
+The one discriminating probe is **free and offline**: land #1174, then read the envelope text
+on the next refusal. No paid call should be spent to choose between these.
+
+### Ration, day count, and one rule that should not fire as written
+
+- Attempt **1 of 2** for 06-08 UTC, at **$0**. Next legal probe by the ≥6 h spacing rule:
+  **07-08 01:02:53 UTC** — six hours from the `probe_call` row (`19:02:53.523Z`), per
+  [Uprava FINDINGS §319](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
+- **This is the third day carrying a NO-GO probe** (03-08, 05-08, 06-08 — 04-08 never probed),
+  so the `/pwg-live-gate` "3 consecutive NO-GO days" clause fires and **the lane stops**. That
+  half is right and is being honoured.
+- **Its remedy is not.** The clause routes a third NO-GO to
+  [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md)
+  for *ceiling re-derivation* — a fix for a distribution problem, where readings cluster just
+  above the ceiling. Today produced **no latency reading at all**: 18 574 ms is 4.3× *under* the
+  80 000 ms wall ceiling and the route ceiling was never exercised. No value of
+  `STRICT_CEILING_MS` admits or excludes a refusal that never called the API. Counting a quota
+  refusal toward a rule whose remedy is a ceiling re-fit is a category error, and the same is
+  already conceded elsewhere in the probe: its pre-flight aborts (mis-provisioned profile, bare
+  `['claude']` resolution) explicitly consume **no attempt** because they are not health
+  readings either.
+- **Recommended amendment — a human should decide, not applied here:** read the clause as *3
+  consecutive days on which a probe returned a NO-GO **latency reading***, with quota / auth /
+  provisioning refusals excluded from the count the same way pre-flight aborts already are. Left
+  unamended, the next such refusal sends a session to re-derive a ceiling against no numbers.
+  Both readings are recorded; the conservative one (counting it) was applied to the *stop*.
+
+Making the refusal diagnosable is handed to
+[H2326](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2326-Opus_RussianTranslation_c4-rate-limit-refusal-envelope-capture-1172_06.08.26.md)
+(**Opus 5** — capture the probe envelope text so a c4 `rate_limit` refusal is diagnosable, #1172;
+offline, zero spend). The w1 acceptance run itself is **not** re-minted: H2263 already is that
+handoff and the work is still owed, so its row goes back to blocked rather than acquiring a
+near-duplicate twin — `mint_handoff.py` refused the duplicate, correctly.
+
+---
+
 ## 06-08-2026 (H2250) — CLI cache amortisation: standing truth #1 **rewritten, not re-confirmed** — v1.127.0 could not amortise, v2.1.223 does
 
 Opus 5 1M (`claude-opus-5[1m]`) drove the run; the calls themselves are **Sonnet 5**
