@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.5] - 2026-08-06
 ### Added
 - **H2233 dual-run residual (H2258, Grok 4.5 `grok-4.5`):** independent re-derivation
   of the K4 verb ETA roots/day fix against Sonnet override
