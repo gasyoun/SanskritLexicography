@@ -111,6 +111,12 @@ def _read_wf_meta(path: Path) -> dict:
     if not meta.get("gen_model") and data.get("gen_model"):
         meta = dict(meta)
         meta["gen_model"] = data.get("gen_model")
+    # H2231: headless / cloud_window often put the model on execution.model_identifier
+    if not meta.get("gen_model"):
+        execution = meta.get("execution") if isinstance(meta.get("execution"), dict) else {}
+        if execution.get("model_identifier"):
+            meta = dict(meta)
+            meta["gen_model"] = execution.get("model_identifier")
     return meta
 
 

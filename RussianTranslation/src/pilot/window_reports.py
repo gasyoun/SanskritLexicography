@@ -218,9 +218,80 @@ def next_action_for(state, report, pending):
     return 'Window is mechanically clean; advance to the next frequency root.'
 
 
+def resolve_gen_model(status):
+    """H390 / H2231 B8: model that generated the window.
+
+    Prefer workflow_meta.gen_model (gen_opt_harness2 / headless / cloud_window),
+    then execution.model_identifier, then a top-level status.gen_model override.
+    Returns None when unknown — key still stamped so coverage % is honest.
+    """
+    meta = status.get('workflow_meta') or {}
+    if not isinstance(meta, dict):
+        meta = {}
+    if meta.get('gen_model') is not None and meta.get('gen_model') != '':
+        return meta.get('gen_model')
+    execution = meta.get('execution') or {}
+    if isinstance(execution, dict) and execution.get('model_identifier'):
+        return execution.get('model_identifier')
+    if status.get('gen_model') is not None and status.get('gen_model') != '':
+        return status.get('gen_model')
+    return None
+
+
+def resolve_profile(status, env=None):
+    """H2231 B8: Claude profile slot / source_profile for multi-lane split.
+
+    Order: explicit status.profile / profile_slot → workflow_meta.execution.profile_slot
+    → meta.source_profile (legacy Max Workflow) → PWG_PROFILE_SLOT / PWG_PROFILE env.
+    """
+    env = os.environ if env is None else env
+    if status.get('profile') not in (None, ''):
+        return status.get('profile')
+    if status.get('profile_slot') not in (None, ''):
+        return status.get('profile_slot')
+    meta = status.get('workflow_meta') or {}
+    if not isinstance(meta, dict):
+        meta = {}
+    execution = meta.get('execution') or {}
+    if isinstance(execution, dict) and execution.get('profile_slot'):
+        return execution.get('profile_slot')
+    if meta.get('source_profile'):
+        return meta.get('source_profile')
+    for key in ('PWG_PROFILE_SLOT', 'PWG_PROFILE'):
+        val = env.get(key)
+        if val not in (None, ''):
+            return str(val).strip() or None
+    return None
+
+
+def resolve_host(status, env=None):
+    """H2231 B8: which machine closed this audit (multi-PC nonstop).
+
+    Order: explicit status.host → PWG_HOST → COMPUTERNAME / HOSTNAME → socket hostname.
+    """
+    env = os.environ if env is None else env
+    if status.get('host') not in (None, ''):
+        return status.get('host')
+    for key in ('PWG_HOST', 'COMPUTERNAME', 'HOSTNAME'):
+        val = env.get(key)
+        if val not in (None, ''):
+            return str(val).strip() or None
+    try:
+        import socket
+        name = socket.gethostname()
+        return name or None
+    except Exception:  # noqa: BLE001 — host is optional instrumentation
+        return None
+
+
 def append_ledger(status, out_dir=None):
     out_dir = out_dir or OUT
     os.makedirs(out_dir, exist_ok=True)
+    # H390 / K6 / H2231 B8: always stamp gen_model + host + profile keys
+    # (null is better than missing for coverage and multi-lane mix).
+    gen_model = resolve_gen_model(status)
+    host = resolve_host(status)
+    profile = resolve_profile(status)
     compact = {
         'recorded_at': status.get('recorded_at'),
         'root': status.get('root'),
@@ -241,9 +312,10 @@ def append_ledger(status, out_dir=None):
         # workflow meta (gen_opt_harness2 stamps meta.gen_model). Makes per-model
         # rates (the Fable-vs-Sonnet A/B) computable straight off the ledger.
         # K6: stamp gen_model even when null so coverage % is honest.
-        'gen_model': (status.get('workflow_meta') or {}).get('gen_model')
-        if (status.get('workflow_meta') or {}).get('gen_model') is not None
-        else status.get('gen_model'),
+        # H2231 B8: also host + profile for multi-PC / multi-profile split.
+        'gen_model': gen_model,
+        'host': host,
+        'profile': profile,
         'production_metrics': status.get('production_metrics') or {
             'wall_clock_minutes': None,
             'wall_clock_source': 'unavailable',
@@ -293,16 +365,17 @@ def write_window_status(report, out_dir=None):
     judge_sample = report.get('judge_sample') or {}
     production_metrics = report.get('production_metrics') or {}
     next_action = next_action_for(state, report, pending)
+    workflow_meta = report.get('workflow_meta') or {}
     status = {
         'root': root,
         'workflow': report['workflow'],
         'state': state,
         'recorded_at': datetime.datetime.now(datetime.timezone.utc).isoformat(
             timespec='seconds').replace('+00:00', 'Z'),
-        'workflow_meta': report.get('workflow_meta') or {},
+        'workflow_meta': workflow_meta,
         'stale_check': stale,
         'rootmap_sha256': current.get('rootmap_sha256'),
-        'selected_key_count': len((report.get('workflow_meta') or {}).get('selected_keys') or report['keys']),
+        'selected_key_count': len(workflow_meta.get('selected_keys') or report['keys']),
         'workflow_keys': len(report['keys']),
         'root_subcards': total,
         'translated': counts.get('translated', translated),
@@ -317,6 +390,10 @@ def write_window_status(report, out_dir=None):
         'clean_key_count': judge_sample.get('clean_key_count', 0),
         'next_action': next_action,
         'production_metrics': production_metrics,
+        # H2231 B8: resolve once so window_status.json + ledger share the same tags.
+        'gen_model': report.get('gen_model'),
+        'host': report.get('host'),
+        'profile': report.get('profile') or report.get('profile_slot'),
         'crashed': report['crashed'],
         'prompt_rules': report.get('prompt_rules'),
         'semantic_risks': {
@@ -336,6 +413,10 @@ def write_window_status(report, out_dir=None):
                  'nested_exists': glue.get('nested_exists'),
                  'seconds': glue.get('seconds')},
     }
+    # Resolve after the dict exists so resolve_* see workflow_meta + any report overrides.
+    status['gen_model'] = resolve_gen_model(status)
+    status['host'] = resolve_host(status)
+    status['profile'] = resolve_profile(status)
     os.makedirs(out_dir, exist_ok=True)
     json_path = os.path.join(out_dir, 'window_status.json')
     md_path = os.path.join(out_dir, 'window_status.md')
