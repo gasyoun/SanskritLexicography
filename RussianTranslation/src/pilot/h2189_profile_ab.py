@@ -108,14 +108,18 @@ ARMS = {
                    'cwd': 'clean', 'home': None},
     'safe_clean': {'config_dir': PAID_CONFIG_DIR, 'extra': ['--safe-mode'],
                    'cwd': 'clean', 'home': None},
+    'safe_excl':  {'config_dir': PAID_CONFIG_DIR,
+                   'extra': ['--safe-mode', '--exclude-dynamic-system-prompt-sections'],
+                   'cwd': 'bare', 'home': None},
 }
-ARM_ORDER = ('paid', 'minimal', 'safe', 'clean_cwd', 'safe_clean')
+ARM_ORDER = ('paid', 'minimal', 'safe', 'clean_cwd', 'safe_clean', 'safe_excl')
 
-# `--exclude-dynamic-system-prompt-sections` (move cwd/env/memory-path/git sections out of
-# the system prompt into the first user message) is a real adjunct lever but is NOT an arm
-# here: its own help scopes it to cross-USER cache reuse, and adding a sixth arm to a
-# small-N sequential run buys less than it costs. Recorded as untested residual, not as
-# measured-and-rejected.
+# `safe_excl` (`--exclude-dynamic-system-prompt-sections`: move cwd/env/memory-path/git
+# sections out of the system prompt into the first user message) was originally NOT an
+# arm — its own --help scopes it to cross-USER cache reuse, so it lost the coin-flip
+# against arms that isolate levers we control, and sat as GAPS §7's untested residual.
+# Added 06-08-2026 (H2310): one variable on top of `safe`, so its delta reads against
+# the `safe` arm, not against `paid`.
 
 
 def arm_cwd(name):

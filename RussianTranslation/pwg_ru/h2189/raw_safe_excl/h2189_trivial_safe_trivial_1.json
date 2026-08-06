@@ -1,0 +1,77 @@
+{
+  "is_error": false,
+  "duration_api_ms": 6846,
+  "num_turns": 1,
+  "stop_reason": "end_turn",
+  "session_id": "784e700a-aaa9-4c72-bc60-ea4f2d31d306",
+  "total_cost_usd": 0.037313599999999995,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 4667,
+    "cache_read_input_tokens": 28882,
+    "output_tokens": 4,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 4667,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_read_input_tokens": 28882,
+        "cache_creation_input_tokens": 4667,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4667
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 521,
+      "outputTokens": 12,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.000581,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty"
+    },
+    "claude-sonnet-5": {
+      "inputTokens": 2,
+      "outputTokens": 4,
+      "cacheReadInputTokens": 28882,
+      "cacheCreationInputTokens": 4667,
+      "webSearchRequests": 0,
+      "costUSD": 0.0367326,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "ok",
+  "ttft_ms": 3590,
+  "ttft_stream_ms": 3588,
+  "time_to_request_ms": 340,
+  "type": "result",
+  "duration_ms": 3607,
+  "uuid": "a53b53bb-7286-4986-8501-b3c1ff28dcd3"
+}
