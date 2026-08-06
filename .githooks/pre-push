@@ -21,18 +21,13 @@
 
 set -uo pipefail
 
-if [ -n "${ALLOW_STALE_BASE_PUSH:-}" ]; then
-    exit 0
-fi
-
 TOPLEVEL="$(git rev-parse --show-toplevel 2>/dev/null || true)"
 CHECKER="$TOPLEVEL/scripts/pre_push_stale_base_check.py"
-
-# Fail OPEN if the checker is missing (old worktree, partial checkout). A guard
-# that bricks pushing is worse than the defect it prevents.
-if [ ! -f "$CHECKER" ]; then
-    exit 0
-fi
+# Uprava keeps the census in tools/; cologne_batch_deploy ships it to the other
+# guarded repos as scripts/eol_census.py, beside the stale-base checker. Probe
+# both so ONE hook file is correct in every repo it is deployed to.
+EOL_CENSUS="$TOPLEVEL/tools/eol_census.py"
+[ -f "$EOL_CENSUS" ] || EOL_CENSUS="$TOPLEVEL/scripts/eol_census.py"
 
 remote_name="${1:-origin}"
 status=0
@@ -50,14 +45,50 @@ while read -r local_ref local_sha remote_ref remote_sha; do
         *) continue ;;
     esac
 
+    # BRANCHES ONLY. `git push origin <tag>` also comes through here, and a tag
+    # ref has no remote-tracking counterpart: `${remote_ref#refs/heads/}` leaves
+    # "refs/tags/vX.Y.Z" intact, so both checks below would resolve
+    # "origin/refs/tags/vX.Y.Z", fail to parse it, and report that as a defect.
+    # Caught the first time this hook met a `git push --force <tag>` (H2301) —
+    # a new tag slipped through only because the all-zeros remote_sha branch
+    # above short-circuits first, so the bug was invisible on the initial push.
+    # A guard that refuses correct pushes gets switched off, which is how the
+    # stale-base sibling above ended up WARN-only.
+    case "$remote_ref" in
+        refs/heads/*) ;;
+        *) continue ;;
+    esac
+
     # Compare against the remote-tracking ref for the branch actually being
     # updated — `git push origin HEAD:main` from a feature branch must check
     # origin/main, not origin/<feature>.
     short_remote="${remote_ref#refs/heads/}"
     tracking="$remote_name/$short_remote"
 
-    if ! python "$CHECKER" "$local_sha" "$tracking"; then
-        status=1
+    # (1) stale-base silent-revert check — WARN-only, see the header.
+    if [ -z "${ALLOW_STALE_BASE_PUSH:-}" ] && [ -f "$CHECKER" ]; then
+        if ! python "$CHECKER" "$local_sha" "$tracking"; then
+            status=1
+        fi
+    fi
+
+    # (2) CRLF-in-blob gate (H2301). Unlike (1) this BLOCKS, because it has no
+    #     judgment call in it: a CR byte in a `text`-attributed, non-binary blob
+    #     is unambiguously wrong, cheap to fix before the push, and effectively
+    #     unfixable after — `git checkout` cannot repair a bad stored object, so
+    #     every later session sees the file as permanently dirty and the standard
+    #     remedy for that false loss-signal is to DISCARD (FINDINGS §299·§305·§313).
+    #     Three passes closed this class on a per-checkout `git ls-files --eol`
+    #     measurement that structurally cannot see a remote-side violation; this
+    #     reads the pushed BLOBS instead, scoped to the paths the push changes
+    #     (~2 s, against ~34 s for a whole-repo scan).
+    #     Escape hatch: ALLOW_CRLF_BLOB_PUSH=1 git push ...
+    if [ -z "${ALLOW_CRLF_BLOB_PUSH:-}" ] && [ -f "$EOL_CENSUS" ]; then
+        if ! python "$EOL_CENSUS" --repo "$TOPLEVEL" --ref "$local_sha" \
+                    --changed-since "$tracking"; then
+            echo "pre-push: BLOCKED — see above. Override: ALLOW_CRLF_BLOB_PUSH=1" >&2
+            status=1
+        fi
     fi
 done
 
