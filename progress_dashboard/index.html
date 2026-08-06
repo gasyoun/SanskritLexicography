@@ -653,7 +653,9 @@ function renderKitchen(k) {
       (instr.measured
         ? `<p class="mut">post_cut wall-clock <b>${fmt(pc.wall_clock_present)}/${fmt(pc.windows)}</b> ` +
           `(${pc.wall_clock_coverage_pct != null ? pc.wall_clock_coverage_pct + '%' : '—'}) · ` +
-          `historical <b>${fmt(hist.wall_clock_present)}/${fmt(hist.windows)}</b> ` +
+          `post_cut tokens <b>${fmt(pc.token_metrics_present)}/${fmt(pc.windows)}</b> ` +
+          `(${pc.token_coverage_pct != null ? pc.token_coverage_pct + '%' : '—'}) · ` +
+          `historical wall-clock <b>${fmt(hist.wall_clock_present)}/${fmt(hist.windows)}</b> ` +
           `(${hist.wall_clock_coverage_pct != null ? hist.wall_clock_coverage_pct + '%' : '—'})</p>`
         : '') +
       (honesty.badge ? `<p><span class="badge">${esc(honesty.badge)}</span></p>` : '') +
