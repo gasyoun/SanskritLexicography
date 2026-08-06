@@ -66,16 +66,33 @@ tracked-file drift and is wired into `window_selftest.py`
 - **Execution route (H1110):** production is the **headless CLI on manifest v2**, not
   Workflow-from-session. Bind a named profile (`CLAUDE_CONFIG_DIR` + roster slot) before
   any paid call; promotion hard-refuses unbound payloads (H1080 Stage 3).
-- **Profile-surface strip (H2189, 03-08-2026) — OPT-IN, default OFF:** set
-  `execution.cli_safe_mode: true` in the manifest to spawn with `--safe-mode`, which
-  strips the operator profile's CLAUDE.md/skills/commands/agents/hooks from the child.
-  Measured on a real card: create **−69 %**, output **−49 %**, wall **−55 %**, cost
-  **−61 %** ($0.6921 → $0.2712), with identical card content (7 records / 13 senses, `{Tn}`
-  token set identical). The baseline **timed out at the 300 s production ceiling** on that
-  card; the safe-mode arm finished in 115 s. An unsupported CLI degrades to the historical
-  argv with a loud stderr warning — never a hard failure. **Do not flip the default**
-  without a canary GO receipt on the safe-mode arm. Numbers:
-  [H2189 report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md).
+- **Profile-surface strip (H2189 03-08-2026, flipped by H2251 06-08-2026) — DEFAULT ON.**
+  Every headless spawn now carries `--safe-mode`, which strips the operator profile's
+  CLAUDE.md/skills/commands/agents/hooks from the child. `execution.cli_safe_mode` is
+  **tri-state**: absent takes the default (ON), `true` pins it on, and **`false` still pins
+  the historical spawn** — the operator opt-out survives the flip and is asserted by
+  `headless_worker_selftest.test_safe_mode_default_is_on_and_an_explicit_false_still_opts_out`.
+  An unsupported CLI degrades to the historical argv with a loud stderr warning — never a
+  hard failure — and the run's own `status` now records `cli_safe_mode_effective`, i.e. what
+  the spawn DID rather than what the manifest asked for, so a silent downgrade is
+  identifiable from artifacts instead of a lost console.
+  - **The numbers, re-measured — H2189's headline did NOT fully replicate.** Those figures
+    (create −69 %, output −49 %, wall −55 %, cost −61 %) were **n=1 per arm**. At n=6 per
+    arm over 3 cards (H2251): create **−40 %**, output **−4.4 %**, wall **−12.3 %**, cost
+    **−22.3 %**. The saving is real and worth having, but roughly a third of what was
+    quoted; treat the output-halving claim as retired.
+  - **The load-bearing argument is the CEILING, not the price.** On `sakft` the baseline ran
+    **286 694 ms** and **266 349 ms** against the **300 000 ms** kill — twice within ~11 % of
+    dying — where the safe arm ran 232 891 and 189 106. H2189 saw the same thing as an
+    outright timeout. A window that completes beats a window that is 5 % cheaper.
+  - **Quality, at n=12 draws:** zero content loss anywhere (every sense carries Russian, no
+    `SAN-LOSS`/`UNMAPPED`), and sense segmentation moves as much *within* one arm as
+    *between* arms — so card content is not a function of the spawn shape. The free-text
+    `tag` vocabulary is not reproducible even with the flag held constant (mean within-arm
+    Jaccard 0.535), which is the condition H2189 itself named as closing its §4.2 question;
+    an arm-linked *style* component survives on top of that and is recorded as a residual.
+  - Numbers and method: [H2251 report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2251/SAFE_MODE_CANARY_GO_AND_TAG_DIVERGENCE_RULING_06-08-2026.md)
+    · original [H2189 report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md).
 - **Durable call budget (25-07-2026 hardening):** the bounded run, its fleet probes,
   and every headless worker share one `pwg.call_reservation.v1` ledger keyed by
   `run_id`. `max_calls` is a strict pre-spawn ceiling: reserve first, then spawn;

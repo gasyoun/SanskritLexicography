@@ -238,11 +238,13 @@ def bare_cli_cwd():
 # `--bare` was deliberately NOT adopted: it forces ANTHROPIC_API_KEY auth, i.e. moves this
 # lane off the subscription identity, which is a human ruling and not a cache tweak.
 #
-# OPT-IN, default OFF. The cost/latency case is measured, but the quality case rests on
-# n=1 per arm and one unattributed divergence (the free-text `tag` vocabulary differed
-# between the two samples). Flipping a production default on that evidence is exactly the
-# "flip without measured GO" this handoff forbids -- an operator turns it on per manifest
-# once a canary GO receipt covers the safe-mode arm.
+# Shipped OPT-IN, default OFF -- the quality case then rested on n=1 per arm and one
+# unattributed divergence (the free-text `tag` vocabulary differed between the two samples),
+# and flipping a production default on that is the "flip without measured GO" H2189's own
+# fail criteria forbid. H2251 (06-08-2026) bought the evidence and flipped it: see
+# DEFAULT_CLI_SAFE_MODE below. Two of the numbers quoted just above are n=1 and did NOT
+# replicate -- at n=6 per arm the output saving is -4.4 % (not -49 %) and wall is -12.3 %
+# (not -55 %); create (-40 %) and the ceiling headroom did.
 SAFE_MODE_FLAG = '--safe-mode'
 _safe_mode_support = {}
 
@@ -267,14 +269,44 @@ def cli_supports_safe_mode(claude_bin='claude'):
     return supported
 
 
+# H2251 (06-08-2026): the default is now ON. H2189 shipped it OFF pending two things, and
+# both were bought: a canary GO receipt produced ON the safe-mode arm (not inherited from a
+# baseline), and a both-ways comparison large enough to rule the §4.2 `tag` divergence.
+#
+# What the measurement actually said, stated as measured rather than as hoped:
+#   * the free-text `tag` vocabulary is NOT reproducible even with the flag held constant
+#     (mean within-arm Jaccard distance 0.535 over 3 cards x 2 arms x 2 repeats; two
+#     arm-cards were COMPLETELY disjoint against themselves). H2189's own stated closing
+#     condition -- "if tag vocabulary varies run-to-run on the SAME arm, that settles it as
+#     sampling noise" -- is therefore met. An arm-linked style component survives on top of
+#     that instability and is recorded as a residual, not waved away;
+#   * card CONTENT shows no arm effect and no loss: 12/12 draws had every sense carrying
+#     Russian and zero SAN-LOSS/UNMAPPED, sense counts moved as much within an arm as
+#     between arms, and on `nakzatra` the paid arm differed from ITSELF more than the two
+#     arms differed from each other on the {Tn} set.
+#
+# The savings are smaller than H2189's n=1 headline: -40 % create / -22 % cost / -12 % wall
+# at n=6 per arm, not -69/-61/-55. The decisive argument is the ceiling, not the price --
+# on `sakft` the baseline ran 286 694 ms and 266 349 ms against the 300 000 ms production
+# kill, i.e. twice within ~11 % of dying, where the safe arm ran 232 891 and 189 106.
+#
+# `False` remains a real, honoured value: an operator can still pin the historical spawn
+# per manifest. Only ABSENT now means ON.
+DEFAULT_CLI_SAFE_MODE = True
+
+
 def resolve_safe_mode(manifest, claude_bin='claude'):
     """Return True when this run should spawn with --safe-mode.
 
-    Requested by `execution.cli_safe_mode` in the manifest -- auditable, travels with the
-    run receipt, and absent from every existing manifest, so the default is unchanged.
+    `execution.cli_safe_mode` in the manifest decides -- auditable, and it travels with the
+    run receipt. Tri-state on purpose: absent takes DEFAULT_CLI_SAFE_MODE (ON since H2251),
+    while an explicit `false` still pins the historical spawn, so the flip cannot silently
+    override a manifest that deliberately opted out.
     """
-    requested = bool((manifest.get('execution') or {}).get('cli_safe_mode'))
-    if not requested:
+    requested = (manifest.get('execution') or {}).get('cli_safe_mode')
+    if requested is None:
+        requested = DEFAULT_CLI_SAFE_MODE
+    if not bool(requested):
         return False
     if not cli_supports_safe_mode(claude_bin):
         # Loud, not silent: a run that believes it is stripping the profile but is not
@@ -1417,7 +1449,14 @@ def execute(manifest, claude='claude', timeout=7200, runner=None, max_agents_ove
     output_meta['provenance_classes'] = manifest.get('key_provenance')
     payload = {'meta': output_meta, 'summary': summary, 'results': results}
     status = {'classification': 'completed_with_residuals' if failures else 'success',
-              'attempts': engine.attempts, 'null_keys': list(failures)}
+              'attempts': engine.attempts, 'null_keys': list(failures),
+              # H2251: what the spawn ACTUALLY did, which is not the same fact as
+              # `meta.execution.cli_safe_mode` (what the manifest REQUESTED). They differ
+              # exactly in the loud-downgrade case H2189 built the stderr warning for --
+              # a CLI that cannot parse the flag. That warning is ephemeral; this is the
+              # durable record, so a run whose savings were never actually taken can be
+              # identified afterwards from its own artifacts instead of a lost console.
+              'cli_safe_mode_effective': engine.safe_mode}
     return payload, status, 0
 
 
