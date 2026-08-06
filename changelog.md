@@ -14,6 +14,19 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H2237 dual-run residual (H2265, Grok 4.5 `grok-4.5`):** independent re-run of
+  B6 promote-vs-generate against Sonnet override
+  [PR #1107](https://github.com/gasyoun/SanskritLexicography/pull/1107)
+  (`fccb7a3fe`). Confirms store growth vs clean-window contrast (lifetime
+  3 clean / 11594 cards; idle week 0/0) and clean-as-proxy while no
+  promote-typed event exists. **Conflicting keep (Grok):** weekly
+  `promote_events` is now `ts`-filtered (`since=cutoff`) so it cannot reuse
+  the lifetime total once promote events appear. **Net-new:**
+  `kitchen_promote_selftest.py` (6 cases) + weekly `clean_window_pct`.
+  Adjudication:
+  [H2265_H2237_DUAL_RUN_COMPARE_2026-08-06.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/H2265_H2237_DUAL_RUN_COMPARE_2026-08-06.md).
+
 ## [1.144.7] - 2026-08-06
 ### Added
 - **H2235 dual-run residual (H2260, Grok 4.5 `grok-4.5`):** independent re-derivation of
@@ -23,9 +36,6 @@ not an error.
   store depth; **net-new:** `review_throughput` from `human_review.reviewed_at` (H2235
   primary path Sonnet skipped — field exists on all human-touched rows) + UI line.
   Adjudication: [H2260_H2235_DUAL_RUN_COMPARE_2026-08-06.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/H2260_H2235_DUAL_RUN_COMPARE_2026-08-06.md).
-
-## [1.144.7] - 2026-08-06
-### Added
 - **H2241 dual-run residual (H2268, Grok 4.5 `grok-4.5`):** independent re-derivation
   of kitchen K-slice → `progress_timeseries` against Sonnet override
   [PR #1112](https://github.com/gasyoun/SanskritLexicography/pull/1112).

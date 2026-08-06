@@ -150,7 +150,7 @@ def yield_quality(rows: list[dict]) -> dict:
     }
 
 
-def _promote_event_count(events: Path) -> int | None:
+def _promote_event_count(events: Path, since=None) -> int | None:
     """Count events whose type/summary names a promote action.
 
     The dashboard_events.jsonl schema currently emits no ``promote``-typed
@@ -159,6 +159,10 @@ def _promote_event_count(events: Path) -> int | None:
     H2237) — this stays a forward-compatible hook, not a claim such an event
     exists today. Returns None (not merely 0) when the log itself is absent,
     so callers can tell "no file" from "file has zero promote events".
+
+    When ``since`` is a timezone-aware datetime, only events with ``ts`` on or
+    after that instant count (H2265 dual-run residual: weekly bucket must not
+    reuse the lifetime total once promote-typed events appear).
     """
     if not events.exists():
         return None
@@ -174,8 +178,13 @@ def _promote_event_count(events: Path) -> int | None:
                 continue
             t = str(e.get("type") or "")
             summary = str(e.get("summary") or "")
-            if "promote" in t.lower() or "promote" in summary.lower():
-                n += 1
+            if "promote" not in t.lower() and "promote" not in summary.lower():
+                continue
+            if since is not None:
+                dt = _parse_ts(e.get("ts"))
+                if dt is None or dt < since:
+                    continue
+            n += 1
     return n
 
 
@@ -206,7 +215,8 @@ def promote_vs_generate(speed: dict, rows: list[dict], events: Path, now) -> dic
                 clean_week += 1
 
     windows_lifetime = len(rows or [])
-    promote_events = _promote_event_count(events)
+    promote_lifetime = _promote_event_count(events)
+    promote_week = _promote_event_count(events, since=cutoff_week)
 
     return {
         "measured": bool(cards_by_day or rows),
@@ -214,7 +224,10 @@ def promote_vs_generate(speed: dict, rows: list[dict], events: Path, now) -> dic
             "cards_generated": cards_week,
             "clean_windows": clean_week,
             "windows_total": windows_week,
-            "promote_events": promote_events,
+            "clean_window_pct": (
+                round(100 * clean_week / windows_week, 2) if windows_week else None
+            ),
+            "promote_events": promote_week,
         },
         "lifetime": {
             "cards_generated": cards_lifetime,
@@ -225,13 +238,14 @@ def promote_vs_generate(speed: dict, rows: list[dict], events: Path, now) -> dic
                 if windows_lifetime
                 else None
             ),
-            "promote_events": promote_events,
+            "promote_events": promote_lifetime,
         },
         "promote_events_source": (
             "no promote-typed event exists in dashboard_events.jsonl yet — "
             "ledger state==clean is used as the promoted-outcome proxy "
             "(B6 acceptance: distinguish generation volume from clean/"
-            "promoted outcomes)"
+            "promoted outcomes); promote_events weekly count is ts-filtered "
+            "when such events appear (H2265)"
         ),
     }
 
