@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.7] - 2026-08-06
 ### Added
 - **H2235 dual-run residual (H2260, Grok 4.5 `grok-4.5`):** independent re-derivation of
   B5 review-throughput series + G5 queue depth against Sonnet override
