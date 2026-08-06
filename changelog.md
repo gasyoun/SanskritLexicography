@@ -14,6 +14,42 @@ not an error.
 
 ## [Unreleased]
 
+### Changed
+- **Prompt-caching standing truth #1 rewritten, not re-confirmed** (H2250, Opus 5 1M
+  `claude-opus-5[1m]`; calls on Sonnet 5 `claude-sonnet-5`): a one-shot `claude -p`
+  subprocess **does** amortise its own system prompt at CLI **v2.1.223**. Identical
+  back-to-back calls create **0** and read the cold call's `create + read` exactly
+  (26 243 + 28 882 = **55 125**), measured over a 7-call sequence at gaps of 34–557 s.
+  The old "cannot amortise" was true of **v1.127.0**; the two rigs were compared knob by
+  knob, so this is a version change, not a methodology difference. One of six follow-on
+  calls re-created 20 740 at a gap *shorter* than the next call's — amortisation is usual,
+  not guaranteed, and there is no decay curve to schedule against. Updated in
+  [PROMPT_CACHING_PWG_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PROMPT_CACHING_PWG_RU.md)
+  §1 and
+  [src/pilot/RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md);
+  resolves [Uprava CONTRADICTIONS §7](https://github.com/gasyoun/Uprava/blob/main/CONTRADICTIONS.md).
+- **Rank-2 (Messages-API port) re-based on throughput, not cache-write** — its cache
+  argument is void under the rewritten truth #1. New lead evidence: one clean card call
+  ran **511 908 ms wall over 3 turns**, and 3 of 5 card spawns were killed at 300–900 s
+  (same class as [#1144](https://github.com/gasyoun/SanskritLexicography/issues/1144));
+  `HARD_TIMEOUT_MS` of 300 000 no longer separates slow calls from hung ones.
+
+### Added
+- **[pwg_ru/h2250/CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md)**
+  — the H2250 report, with 9 committed raw envelopes under
+  [pwg_ru/h2250/raw/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/pwg_ru/h2250/raw)
+  ($1.1313 spent) and a documented finding that the **card phase cannot settle
+  amortisation at all**: an agentic call's envelope sums usage over a variable turn count
+  (3 vs 4 on two identical prompts), so its totals are not comparable quantities.
+- **[src/pilot/h2250_amortisation_table.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2250_amortisation_table.py)**
+  and
+  **[src/pilot/h2250_card_turns.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2250_card_turns.py)**
+  — envelope readers (they issue no calls and spend nothing). They exist because
+  `h2189_profile_ab.py`'s `summarise()` reports `{}` for the trivial phase: a
+  `--max-turns 1` call returns `subtype: error_max_turns`, so every trivial row is dropped
+  as a failure when those rows are in fact billed calls whose create/read split **is** the
+  quantity under test.
+
 ## [1.142.10] - 2026-08-04
 
 ### Changed
