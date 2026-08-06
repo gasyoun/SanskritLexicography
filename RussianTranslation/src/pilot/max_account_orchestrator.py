@@ -1369,38 +1369,36 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
         raise ValueError('paid probe requires a call reservation ledger')
 
     def _emit(purpose, latency, cls, obytes, timing=None):
+        # H2079 / #945: record API time and the wall-minus-API gap BESIDE the wall reading.
+        # `elapsed_ms` stays the gated number and the ceiling is unchanged — this only makes a
+        # reading decomposable after the fact, which is exactly what the 15-07 / 16-07 / 31-07
+        # c4 series lacked. Both are dropped by append_event when absent (timeout, no envelope).
+        api_ms = (timing or {}).get('duration_api_ms')
+        # Shared field set for per-account + canonical writers (H2240 / H2269 dual-run).
+        # H2095 (#946): latency_ceiling_ms is self-describing; policy alone is not enough.
+        row_kw = dict(
+            run_id=run_id, account=account, stage='probe',
+            event='probe_call', purpose=purpose, elapsed_ms=latency,
+            model=model, output_bytes=obytes, classification=cls,
+            policy=PROBE_POLICY, executor_lane=PROBE_LANE,
+            schema_valid=(cls == 'success'),
+            duration_api_ms=api_ms,
+            api_gap_ms=(latency - api_ms) if api_ms is not None else None,
+            latency_ceiling_ms=latency_ceiling_ms,
+        )
         if events_path:
-            # H2079 / #945: record API time and the wall-minus-API gap BESIDE the wall reading.
-            # `elapsed_ms` stays the gated number and the ceiling is unchanged — this only makes a
-            # reading decomposable after the fact, which is exactly what the 15-07 / 16-07 / 31-07
-            # c4 series lacked. Both are dropped by append_event when absent (timeout, no envelope).
-            api_ms = (timing or {}).get('duration_api_ms')
-            append_event(events_path, run_id=run_id, account=account, stage='probe',
-                         event='probe_call', purpose=purpose, elapsed_ms=latency,
-                         model=model, output_bytes=obytes, classification=cls,
-                         policy=PROBE_POLICY, executor_lane=PROBE_LANE,
-                         schema_valid=(cls == 'success'),
-                         duration_api_ms=api_ms,
-                         api_gap_ms=(latency - api_ms) if api_ms is not None else None,
-                         # H2095 (#946): the ceiling in force for THIS reading, so the row is
-                         # self-describing. `policy` alone is not enough — the token did not
-                         # change across three ceiling values on 31-07.
-                         latency_ceiling_ms=latency_ceiling_ms)
-            # B3 residual (H2240): the SAME row, ALSO appended to the canonical cross-account
-            # log. Best-effort — a failure here must never turn a health probe into a raised
-            # exception (the events_path write above is the one the gate itself depends on).
-            try:
-                append_event(HEALTH_PROBE_LOG, run_id=run_id, account=account, stage='probe',
-                             event='probe_call', purpose=purpose, elapsed_ms=latency,
-                             model=model, output_bytes=obytes, classification=cls,
-                             policy=PROBE_POLICY, executor_lane=PROBE_LANE,
-                             schema_valid=(cls == 'success'),
-                             duration_api_ms=api_ms,
-                             api_gap_ms=(latency - api_ms) if api_ms is not None else None,
-                             latency_ceiling_ms=latency_ceiling_ms)
-            except OSError as exc:
-                print('warning: canonical health_probe_log append failed: %s' % exc,
-                     file=sys.stderr)
+            append_event(events_path, **row_kw)
+        # B3 residual (H2240) + H2269 dual-run fix: the SAME row always lands in the
+        # canonical cross-account log, even when the caller passed events_path=None
+        # (selftests, probe_fleet without a per-account file, ad-hoc scripts). Sonnet
+        # override nested this write under `if events_path:`, so a probe that never
+        # opened a per-account file also never fed the kitchen ribbon. Best-effort —
+        # a failure here must never turn a health probe into a raised exception.
+        try:
+            append_event(HEALTH_PROBE_LOG, **row_kw)
+        except OSError as exc:
+            print('warning: canonical health_probe_log append failed: %s' % exc,
+                  file=sys.stderr)
 
     # One profile claim covers the WHOLE pair. Releasing between warmup and measured allowed
     # another paid worker to interleave on the same config directory and invalidated the reading.

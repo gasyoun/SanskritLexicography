@@ -1,6 +1,6 @@
 # PWG→RU progress & kitchen dashboard
 
-_Created: 10-07-2026 · Last updated: 03-08-2026 (H2236 B4 quality/fidelity timeseries)_
+_Created: 10-07-2026 · Last updated: 06-08-2026 (H2269 dual-run: health_probe_log path)_
 
 **Improvement backlog (measured / show / should-measure):**
 [ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md).
@@ -78,6 +78,18 @@ Where the article site shows the **finished** PWG→Russian translations, this s
   Fixture: [`examples/collision_events.example.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/examples/collision_events.example.jsonl).
   Selftest: `python progress_dashboard/kitchen_collision_selftest.py`.
 - **Calendar** — day heatmap of cards written (store provenance) + window counts.
+- **Health ribbon (K5 / B3 residual, H2240 + H2269)** — last c4 (and sibling) probe
+  GO/NO-GO + recent sparkline. Writer contract: every `live_probe` reading appends to
+  the **canonical**
+  [`RussianTranslation/src/pilot/output/health_probe_log.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/output/health_probe_log.jsonl)
+  (gitignored runtime log; created on first probe). Per-account
+  `h963_*_gate0_probe_events.jsonl` / `*_probe_events.jsonl` files stay untouched for
+  gate reports. Reader (`kitchen_slices.health_ribbon`) prefers the canonical file
+  **exclusively** when present; falls back to the old glob scrape only on a pre-H2240
+  checkout. One-time history fold:
+  `python RussianTranslation/src/pilot/migrate_health_probe_log.py`
+  (`--dry-run` first; `--output-dir <path>` for another checkout). Pin:
+  `python progress_dashboard/health_ribbon_selftest.py`.
 - **Web changelog** — recent version bullets from `RussianTranslation/CHANGELOG.md`.
 
 For **sub-second** run/gate telemetry on the residential machine (not published), use the

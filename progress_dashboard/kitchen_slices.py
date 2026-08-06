@@ -429,18 +429,22 @@ def multi_lane_mix(rows: list[dict]) -> dict:
 def health_ribbon(pilot_out: Path, ceiling_ms: int = 65_000) -> dict:
     """K5 — last c4 (and siblings) probe GO/NO-GO + recent sparkline.
 
-    B3 residual (H2240): `health_probe_log.jsonl` is now the canonical writer
-    target — every probe call (any account, any script) lands there via
-    `max_account_orchestrator.live_probe`'s `_emit`, so it is a complete,
-    single-file source once populated. Prefer it exclusively when present;
-    fall back to the old per-account glob scrape only for a checkout that
-    predates H2240 (or whose canonical log hasn't been migrated yet — see
-    `migrate_health_probe_log.py`), so historical sparklines don't go dark
+    B3 residual (H2240 / H2269 dual-run): `health_probe_log.jsonl` is the
+    canonical writer target — every probe call (any account, any script)
+    lands there via `max_account_orchestrator.live_probe`'s `_emit`, so it is
+    a complete single-file source once populated. Prefer it exclusively when
+    present; fall back to the old per-account glob scrape only for a checkout
+    that predates H2240 (or whose canonical log hasn't been migrated yet —
+    see `migrate_health_probe_log.py`), so historical sparklines don't go dark
     mid-migration.
+
+    Returns ``source_mode``: ``canonical`` | ``legacy_glob`` | ``none`` so the
+    kitchen (and dual-run selftests) can tell which contract fed the ribbon.
     """
     canonical = pilot_out / "health_probe_log.jsonl"
     if canonical.exists():
         paths = [canonical]
+        source_mode = "canonical"
     else:
         paths = sorted(pilot_out.glob("*gate0*probe_events.jsonl")) + sorted(
             pilot_out.glob("*_probe_events.jsonl")
@@ -449,6 +453,7 @@ def health_ribbon(pilot_out: Path, ceiling_ms: int = 65_000) -> dict:
         preferred = pilot_out / "h963_c4_gate0_probe_events.jsonl"
         if preferred.exists():
             paths = [preferred] + [p for p in paths if p != preferred]
+        source_mode = "legacy_glob" if paths else "none"
 
     probes = []
     seen = set()
@@ -495,7 +500,11 @@ def health_ribbon(pilot_out: Path, ceiling_ms: int = 65_000) -> dict:
     if not probes:
         return {
             "measured": False,
-            "note": "no gate0 probe_events.jsonl under pilot/output",
+            "source_mode": source_mode if source_mode != "legacy_glob" else "none",
+            "note": (
+                "no health_probe_log.jsonl and no per-account *probe_events.jsonl "
+                "under pilot/output"
+            ),
             "ceiling_ms": ceiling_ms,
         }
     probes.sort(key=lambda p: p.get("ts") or "")
@@ -503,6 +512,7 @@ def health_ribbon(pilot_out: Path, ceiling_ms: int = 65_000) -> dict:
     go_n = sum(1 for p in probes if p["verdict"] == "GO")
     return {
         "measured": True,
+        "source_mode": source_mode,
         "ceiling_ms": ceiling_ms,
         "probes": len(probes),
         "go_count": go_n,
