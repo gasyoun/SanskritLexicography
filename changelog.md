@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.143.1] - 2026-08-06
+
 ### Changed
 - **Prompt-caching standing truth #1 rewritten, not re-confirmed** (H2250, Opus 5 1M
   `claude-opus-5[1m]`; calls on Sonnet 5 `claude-sonnet-5`): a one-shot `claude -p`
