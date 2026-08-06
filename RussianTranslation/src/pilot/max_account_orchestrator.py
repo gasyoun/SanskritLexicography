@@ -18,8 +18,9 @@ import time
 
 import probe_log
 from run_observability import append_event, write_census
-from headless_worker import (claude_argv_prefix, run_tree_kill, timeout_output_text,
-                             validate_preflight_artifact, windows_hidden_flags)
+from headless_worker import (bare_cli_cwd, claude_argv_prefix, run_tree_kill,
+                             timeout_output_text, validate_preflight_artifact,
+                             windows_hidden_flags)
 from window_common import atomic_write_text
 from execution_contract import (ActiveCallClaim, config_dir_fingerprint, validate_manifest,
                                 validate_profile)
@@ -1260,7 +1261,21 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
             claude_argv_prefix(claude) + ['-p', '--output-format', 'json', '--json-schema',
              '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
              '--model', model, '--permission-mode', 'plan'],
-            input=prompt, env=env, text=True, encoding='utf-8', capture_output=True, timeout=300)
+            input=prompt, env=env, text=True, encoding='utf-8', capture_output=True,
+            # H2299: spawn from the SAME bare cwd the paid lane uses. `run_tree_kill`'s
+            # `cwd` defaulted to None here, so the probe silently inherited whatever
+            # directory the gate was launched from -- in practice the repo, which injects
+            # CLAUDE.md + git context into every call. That is the exact tax H2158 measured
+            # and removed from `headless_worker` (repo cwd $0.3036 / 26-29 s vs bare cwd
+            # $0.2040 / 19-20 s: -33 % cost, -30 % wall) -- and the gate never adopted it.
+            #
+            # Two independent defects, one line: (1) the gate PRICED A DIFFERENT CALL than
+            # the lane it gates, so a GO/NO-GO was never representative; (2) the ~30 % wall
+            # it paid for that is headroom against the 300 s kill below, which is what the
+            # 03-08 (276 183 ms route, 2 output tokens) and 05-08 (killed at 300 099 ms,
+            # 0 B) measured legs ran out of. DERIVED from the paid lane's own helper, never
+            # a literal path, so the two can never drift apart again.
+            cwd=bare_cli_cwd(), timeout=300)
     except subprocess.TimeoutExpired as exc:
         call_reservation.finalize(reservation, unevaluable_telemetry())
         # H2056 / #944: this was the ONLY exit from _probe_call that skipped _probe_err_class, so a
