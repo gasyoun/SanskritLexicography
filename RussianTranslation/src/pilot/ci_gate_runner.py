@@ -20,15 +20,26 @@ consumes that in Wave 2). Any failure prints the exact violations and exits 1.
 import argparse
 import json
 import os
-import re
 import subprocess
 import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-TN_RE = re.compile(r'\{T\d+\}')
-SAN_LOSS_RE = re.compile(r'SAN-LOSS|UNMAPPED')
+HERE = os.path.dirname(os.path.abspath(__file__))
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+
+# H2253 (#1073): the marker/residue scopes are DEFINED ONCE, in marker_scan, and shared
+# with canary_gate. This runner used to json.dumps() the whole card for both checks, so
+# the curated canary fixture — which carries the literal "SAN-LOSS" in its free-text
+# ``notes`` by construction — failed CI here even after H2174 had taught canary_gate to
+# pass it. Two gates, one card, two answers. See marker_scan's docstring for why the
+# marker scope (translated content) and the {Tn} scope (whole card) must stay different.
+import marker_scan  # noqa: E402
+
+#: RussianTranslation/ — the root the committed canary fixtures are addressed from.
+RT_ROOT = os.path.dirname(os.path.dirname(HERE))
 
 
 def changed_files(base_ref, cwd='.'):
@@ -53,10 +64,9 @@ def check_wf_payload(path):
     for r in results:
         key = r.get('key') or '?'
         card = r.get('card') or {}
-        blob = json.dumps(card, ensure_ascii=False)
-        if TN_RE.search(blob):
+        if marker_scan.tn_hits(card):
             violations.append('%s: %s carries unrestored {Tn} residue' % (path, key))
-        if SAN_LOSS_RE.search(blob):
+        if marker_scan.marker_hits(card):
             violations.append('%s: %s carries SAN-LOSS/UNMAPPED' % (path, key))
         for rec in card.get('records') or []:
             for sense in rec.get('senses') or []:
@@ -140,8 +150,38 @@ def selftest():
             f.write('{nope')
         v5, _ = run_gates(['gatelogs/wf_output.junk.json'], cwd=td)
         assert v5 and 'unreadable' in v5[0]
+
+        # (4) #1073 REGRESSION, pinned on the REAL committed canary payloads — not a
+        #     hand-written card. The previous selftest passed throughout the defect's
+        #     life precisely because its fixtures carried no ``notes`` key at all, so
+        #     a synthetic pin here would re-create that blind spot. Both files carry
+        #     the literal "SAN-LOSS" in card.notes and clean translated content.
+        for real in ('pwg_ru/h1447/h1447_canary_wf_output.json',
+                     'pwg_ru/h2174/out.canary.json'):
+            src = os.path.join(RT_ROOT, real)
+            if not os.path.isfile(src):          # fixture pruned -> skip, never fake a pass
+                print('  (skip %s — not in this checkout)' % real)
+                continue
+            card = json.load(open(src, encoding='utf-8'))['results'][0]['card']
+            assert 'SAN-LOSS' in json.dumps(card, ensure_ascii=False), \
+                '%s no longer self-describes — this regression needs a new fixture' % real
+            assert not marker_scan.marker_hits(card), \
+                '%s: free-text notes still trip the marker gate (#1073)' % real
+            assert not marker_scan.tn_hits(card), real
+
+        # (5) TRUE POSITIVE through the FULL runner path: a marker in translated
+        #     content must still fail a payload, or (4) would just be a deleted check.
+        loss_wf = {'summary': {'usage': {'input_tokens': 1}}, 'results': [
+            {'key': 'k3', 'card': {'notes': 'clean', 'records': [{'senses': [
+                {'tag': 's1', 'russian': 'SAN-LOSS'}]}]}}]}
+        with open(os.path.join(td, 'gatelogs', 'wf_output.loss.json'), 'w',
+                  encoding='utf-8', newline='\n') as f:
+            json.dump(loss_wf, f, ensure_ascii=False)
+        v6, _ = run_gates(['gatelogs/wf_output.loss.json'], cwd=td)
+        assert any('SAN-LOSS/UNMAPPED' in x for x in v6), v6
     print('ci_gate_runner selftest: PASS (telemetry-required rule, card gates, '
-          'unreadable-payload violation)')
+          'unreadable-payload violation, #1073 real-canary regression + marker '
+          'true-positive)')
     return 0
 
 

@@ -64,6 +64,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
 import tempfile
 import time
@@ -144,6 +145,94 @@ WARMUP_IS_ADVISORY = True     # warm-up latency never fails the gate; errors on 
 CONN_ERR_CLASSES = {"process", "timeout"}
 
 
+def is_linked_worktree(path):
+    """True when ``path`` sits inside a LINKED git worktree (a disposable checkout).
+
+    ``git rev-parse --git-dir`` and ``--git-common-dir`` agree in a normal checkout and
+    diverge in a linked worktree — the same test the repo's own worktree tooling uses.
+    Unknown/absent git is reported as **not** disposable: this predicate gates a refusal,
+    and refusing a paid gate because git could not be questioned would be worse than the
+    evidence risk it guards. A path outside any repo is likewise not disposable.
+
+    The question is asked about the nearest EXISTING ancestor. The evidence root routinely
+    does not exist yet on a first run (``output/`` is gitignored and absent in a fresh
+    worktree), and ``git -C <missing-dir>`` simply errors — which the fail-open rule above
+    would then read as "not disposable", silently restoring the very fallback this guards.
+    """
+    probe_dir = Path(path).resolve()
+    while not probe_dir.is_dir() and probe_dir.parent != probe_dir:
+        probe_dir = probe_dir.parent
+    try:
+        probe = subprocess.run(["git", "-C", str(probe_dir), "rev-parse",
+                                "--git-dir", "--git-common-dir"],
+                               capture_output=True, text=True, encoding="utf-8",
+                               errors="replace", timeout=30)
+    except (OSError, subprocess.SubprocessError):
+        return False
+    if probe.returncode:
+        return False
+    lines = [ln.strip() for ln in probe.stdout.splitlines() if ln.strip()]
+    if len(lines) != 2:
+        return False
+    base = str(probe_dir)
+    return os.path.abspath(os.path.join(base, lines[0])) != \
+        os.path.abspath(os.path.join(base, lines[1]))
+
+
+def resolve_evidence_root(explicit=None):
+    """Where the probe's append-only evidence actually lives -> (Path, source).
+
+    #1034: the events/call/preflight series used to be pinned to ``HERE/output`` — a
+    CHECKOUT-relative, gitignored directory. The repo *mandates* that sessions work in a
+    disposable ``git worktree``, so the series silently forked per checkout and was then
+    destroyed with it: an H2174 NO-GO that terminated a handoff wrote 2 rows into a
+    worktree while the canonical file showed 19, and they survived only because the
+    session happened to have printed them.
+
+    Resolution order, highest first:
+      1. an explicit ``--evidence-dir`` path,
+      2. ``$PWG_EVIDENCE_DIR``,
+      3. the historical ``HERE/output`` default.
+
+    The default is kept so that a run in the CANONICAL checkout reproduces the historical
+    paths byte-for-byte (21 rows of c4 history, cited by path in the H1110/H1447/H858
+    reports). What is NOT kept is the silent fallback *in a worktree* — see
+    ``assert_durable_evidence_root``, which refuses instead.
+    """
+    if explicit:
+        return Path(explicit).expanduser().resolve(), "--evidence-dir"
+    env = os.environ.get("PWG_EVIDENCE_DIR")
+    if env and env.strip():
+        return Path(env.strip()).expanduser().resolve(), "PWG_EVIDENCE_DIR"
+    return (HERE / "output").resolve(), "default (checkout-relative)"
+
+
+def assert_durable_evidence_root(root, source, paid=True):
+    """Refuse a PAID probe whose only evidence would die with a disposable checkout.
+
+    A non-paid selftest may use a temporary root — it produces no gate verdict, so there
+    is no immutable trace to lose. A paid attempt is the opposite: it is the one
+    no-reroll reading, and #1034 is precisely the case where that reading was written
+    somewhere that gets deleted. So the refusal is fail-CLOSED and has no ``--force``:
+    the fix is one environment variable, and an override would restore the exact silent
+    fallback the issue was filed about.
+    """
+    if not paid or not is_linked_worktree(root):
+        return
+    raise SystemExit(
+        "EVIDENCE-ROOT REFUSAL (no probe call made, no attempt consumed):\n"
+        "  resolved evidence root : %s\n"
+        "  resolution source      : %s\n"
+        "  ...is inside a LINKED GIT WORKTREE — a disposable checkout. The probe's\n"
+        "  append-only series would be created here and destroyed with the worktree\n"
+        "  (#1034: a NO-GO that terminated a handoff was nearly lost exactly this way).\n"
+        "  Set a durable root OUTSIDE any checkout and re-run, e.g.\n"
+        "    set PWG_EVIDENCE_DIR=%s\n"
+        "  or pass --evidence-dir <path>. This is an EVIDENCE-ROUTING refusal, not a\n"
+        "  health signal: nothing was spent and no row was written."
+        % (root, source, os.path.join(os.path.expanduser("~"), ".pwg_ru_evidence")))
+
+
 def config_dir_for(account):
     """`cN` -> that profile's config dir, by the repo's own `claudeN` layout."""
     if not re.fullmatch(r"c\d+", account or ""):
@@ -152,14 +241,29 @@ def config_dir_for(account):
     return os.path.join(PROFILE_ROOT, "claude" + account[1:], ".claude")
 
 
-def ledger_paths(account):
+def evidence_dir_for(account, root=None):
+    """The directory holding ``account``'s evidence beneath the resolved root.
+
+    The DEFAULT (checkout-relative) root keeps the historical FLAT layout, because 21
+    rows of c4 history live at that exact path and the H1110/H1447/H858 reports cite it
+    by name. A durable root gets a per-account subdirectory instead: evidence identity is
+    bound to the profile, so two profiles pointed at one root can never share a series
+    (#729's contamination class, one level up).
+    """
+    if root is None:
+        return HERE / "output"
+    return Path(root) / account
+
+
+def ledger_paths(account, root=None):
     """The per-account call-reservation ledger + synthetic preflight paths.
 
     Per-account for the same reason the events log is (#729 one level up): a reservation
     written for c5 must never bound, or be read as, a c4 attempt.
     """
-    return (HERE / "output" / ("h963_%s_gate0_calls.json" % account),
-            HERE / "output" / ("h963_%s_gate0_preflight.json" % account))
+    base = evidence_dir_for(account, root)
+    return (base / ("h963_%s_gate0_calls.json" % account),
+            base / ("h963_%s_gate0_preflight.json" % account))
 
 
 def campaign_for(account):
@@ -174,16 +278,16 @@ def campaign_for(account):
     return "h963-%s-single-profile-gate0" % account
 
 
-def events_for(account):
-    """One events log PER ACCOUNT.
+def events_for(account, root=None):
+    """One events log PER ACCOUNT, beneath the resolved evidence root.
 
     Sharing one file across profiles would re-create the #729 contamination one level up:
     a c5 row answering for a c4 verdict. c4 keeps the original filename because 11 rows of
     history live there and the H1110/H1447/H858 gate reports cite it by path.
     """
-    if account == ACCOUNT:
+    if root is None and account == ACCOUNT:
         return EVENTS
-    return HERE / "output" / ("h963_%s_gate0_probe_events.jsonl" % account)
+    return evidence_dir_for(account, root) / ("h963_%s_gate0_probe_events.jsonl" % account)
 
 
 def preflight_profile(config_dir):
@@ -279,11 +383,23 @@ def main(argv=None):
                     help="profile slot to gate (default %s)" % ACCOUNT)
     ap.add_argument("--config-dir", default=None,
                     help="that profile's CLAUDE_CONFIG_DIR (default: derived from --account)")
+    ap.add_argument("--evidence-dir", default=None,
+                    help="durable root for the append-only events/call/preflight series "
+                         "(#1034). Overrides $PWG_EVIDENCE_DIR. A paid probe REFUSES to "
+                         "run when the resolved root is inside a disposable worktree.")
     args = ap.parse_args(argv)
     account = args.account
     config_dir = args.config_dir or (CONFIG_DIR if account == ACCOUNT
                                      else config_dir_for(account))
-    events = events_for(account)
+
+    # #1034: resolve, REPORT and validate the evidence root BEFORE anything is spent.
+    # The absolute path is printed unconditionally, so an operator can never again be
+    # unable to say which series a row landed in.
+    evidence_root, evidence_source = resolve_evidence_root(args.evidence_dir)
+    explicit_root = None if evidence_source.startswith("default") else evidence_root
+    assert_durable_evidence_root(evidence_root, evidence_source, paid=True)
+
+    events = events_for(account, explicit_root)
     events.parent.mkdir(parents=True, exist_ok=True)
 
     # Belt-and-suspenders: pin the store to a scratch path so nothing can touch the
@@ -292,7 +408,9 @@ def main(argv=None):
 
     campaign = campaign_for(account)
     run_id = new_run_id(campaign)
-    call_ledger_path, preflight_path = ledger_paths(account)
+    call_ledger_path, preflight_path = ledger_paths(account, explicit_root)
+    for p in (call_ledger_path, preflight_path):
+        p.parent.mkdir(parents=True, exist_ok=True)
     claude_bin = resolve_claude_bin()
     argv_prefix = claude_argv_prefix(claude_bin)
 
@@ -312,6 +430,7 @@ def main(argv=None):
           % (CEILING_MS, STRICT_CEILING_MS))
     print("run_id            : %s   (unique to THIS run — #729)" % run_id)
     print("campaign          : %s   (grouping label only, never a read scope)" % campaign)
+    print("evidence root     : %s   (source: %s)" % (evidence_root, evidence_source))
     print("events            : %s   (per-account series)" % events)
     print("call ledger       : %s" % call_ledger_path)
     print("preflight         : %s" % preflight_path)
@@ -541,7 +660,84 @@ def selftest():
         (logged_out / ".credentials.json").write_text("{}", encoding="utf-8")
         assert preflight_profile(str(logged_out)) is None, 'a provisioned profile must pass pre-flight'
 
-        print("h963_c4_gate0_probe selftest: 7/7 OK (no live call, nothing spent)")
+        # 8. #1034 — the durable-evidence-root matrix. Every branch below is a path the
+        #    probe took (or should have taken) on a real run; none of them spends anything.
+        saved_env = os.environ.pop("PWG_EVIDENCE_DIR", None)
+        try:
+            # 8a. MAIN CHECKOUT / default root: the historical paths reproduce EXACTLY.
+            #     The 21-row c4 series is cited by path in three gate reports; a fix that
+            #     silently relocated it would break every one of those citations.
+            root, src = resolve_evidence_root(None)
+            assert src.startswith("default"), src
+            assert root == (HERE / "output").resolve(), root
+            assert events_for("c4") == EVENTS, 'c4 must keep its historical events path'
+            assert ledger_paths("c4")[0] == HERE / "output" / "h963_c4_gate0_calls.json"
+
+            # 8b. EXPLICIT durable override beats the environment, which beats the default.
+            durable = Path(d) / "durable"
+            os.environ["PWG_EVIDENCE_DIR"] = str(Path(d) / "from-env")
+            root_env, src_env = resolve_evidence_root(None)
+            assert src_env == "PWG_EVIDENCE_DIR" and root_env == (Path(d) / "from-env").resolve()
+            root_cli, src_cli = resolve_evidence_root(str(durable))
+            assert src_cli == "--evidence-dir" and root_cli == durable.resolve(), root_cli
+            os.environ.pop("PWG_EVIDENCE_DIR")
+
+            # 8c. INDEPENDENT PROFILE SERIES beneath one durable root — c4/c5/c6 can share
+            #     a root without ever sharing a file (#729 one level up).
+            paths = {a: events_for(a, durable) for a in ("c4", "c5", "c6")}
+            assert len({str(p) for p in paths.values()}) == 3, paths
+            for a, p in paths.items():
+                assert p.parent == durable / a, p
+                assert a in p.name, p
+            assert ledger_paths("c5", durable)[1].parent == durable / "c5"
+
+            # 8d. LINKED-WORKTREE REFUSAL: a paid probe must not create a series that dies
+            #     with the checkout. This is the #1034 incident itself, as a test.
+            real_is_linked = globals()["is_linked_worktree"]
+            globals()["is_linked_worktree"] = lambda p: str(p).endswith("disposable")
+            try:
+                disposable = Path(d) / "disposable"
+                try:
+                    assert_durable_evidence_root(disposable, "default (checkout-relative)",
+                                                 paid=True)
+                except SystemExit as exc:
+                    assert "EVIDENCE-ROOT REFUSAL" in str(exc), exc
+                    assert "PWG_EVIDENCE_DIR" in str(exc), 'the refusal must name the fix'
+                else:
+                    raise AssertionError('a paid probe in a linked worktree must REFUSE')
+                # ...and a NON-paid selftest may still use a disposable/temporary root:
+                # it produces no verdict, so there is no immutable trace to lose.
+                assert_durable_evidence_root(disposable, "default", paid=False)
+                # a durable root is accepted for a paid run
+                assert_durable_evidence_root(durable, "--evidence-dir", paid=True)
+            finally:
+                globals()["is_linked_worktree"] = real_is_linked
+
+            # 8e. the predicate itself is FAIL-OPEN on a non-repo path: it gates a refusal,
+            #     and refusing a paid gate because git could not be questioned is worse
+            #     than the evidence risk it guards.
+            assert is_linked_worktree(Path(d)) in (True, False)
+
+            # 8f. ...but "does not exist yet" must NOT be read as "not disposable". The
+            #     evidence root is normally ABSENT on a first run (``output/`` is
+            #     gitignored), and asking git about a missing directory just errors —
+            #     which fail-open turns into a silent pass. Observed live: the refusal
+            #     above did not fire until the predicate walked up to the nearest
+            #     existing ancestor. A deep unborn path under a repo answers the same as
+            #     the repo itself.
+            here_verdict = is_linked_worktree(HERE)
+            deep_unborn = HERE / "output" / "nope" / "still-nope"
+            assert is_linked_worktree(deep_unborn) == here_verdict, deep_unborn
+            # a path with no existing repo ancestor at all is still not disposable
+            assert is_linked_worktree(Path(d) / "no-such-dir") in (True, False)
+        finally:
+            os.environ.pop("PWG_EVIDENCE_DIR", None)
+            if saved_env is not None:
+                os.environ["PWG_EVIDENCE_DIR"] = saved_env
+
+        print("h963_c4_gate0_probe selftest: 8/8 OK (no live call, nothing spent) — "
+              "incl. #1034 evidence-root matrix (main checkout / worktree refusal / "
+              "explicit override / independent profile series)")
     finally:
         shutil.rmtree(d, ignore_errors=True)
 
