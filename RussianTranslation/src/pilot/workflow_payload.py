@@ -80,7 +80,7 @@ def is_malformed_row_key(key):
     return isinstance(key, str) and key.startswith(MALFORMED_ROW_KEY_PREFIX)
 
 
-def _stamp_malformed_row(index, row):
+def _stamp_malformed_row(index, row, source=None):
     """Materialise an unaccountable result row as a visible failure (H2173 G5).
 
     A row that is not a dict, or that carries no usable ``key``, cannot be
@@ -100,8 +100,15 @@ def _stamp_malformed_row(index, row):
         reason = MALFORMED_NOT_A_DICT
         message = ('workflow result row is %s, not an object (H2173 synthetic)'
                    % type(row).__name__)
+    message = '%s [%s row %d]' % (message, source or '<unknown source>', index)
     stamped['malformed_result_row'] = True
     stamped['malformed_row_index'] = index
+    # H2252: the index alone does not locate the evidence. A window fans out over
+    # many workflow artifacts and the stamped row travels into audit/requeue
+    # surfaces detached from the file it came from, so "row 4 was unaccountable"
+    # named nothing an operator could open. Carry the source path with the index;
+    # every other refusal in this module already names the path it refused.
+    stamped['malformed_row_source'] = source
     stamped['malformed_row_raw'] = repr(row)[:500]
     stamped['key'] = malformed_row_key(index)
     stamped['error'] = {
@@ -164,7 +171,7 @@ def workflow_payload(path, *, allow_missing_results=False):
         # billed call shows up in the window's key count, `nulls` so it is never mistaken
         # for a clean card. A keyed row with a card is unaffected.
         if not isinstance(row, dict) or not row.get('key'):
-            stamped = _stamp_malformed_row(index, row)
+            stamped = _stamp_malformed_row(index, row, source=path)
             results[index] = stamped
             keys.append(stamped['key'])
             nulls.append(stamped['key'])

@@ -123,6 +123,16 @@ jobs:
           # indic_transliteration) are imported lazily inside main()/to_slp1().
           pip install pytest
           pytest tests/test_saru_gloss_pipeline.py tests/test_saru_gloss_wave2.py tests/test_saru_gloss_wave3.py tests/test_saru_gloss_tm.py -q
+      - name: Complete subsystem test suite (H2252 truth gate)
+        working-directory: RussianTranslation
+        run: |
+          # H2252: every step above names its files individually, so a test file
+          # nobody listed could rot indefinitely -- test_nws_ls_markup.py sat RED
+          # for weeks against a green CI head, still asserting the fixed `.h1809.bak`
+          # name H2146 replaced with the shared unique-backup writer. This step is
+          # additive: the focused steps keep their fast, named signal, and this one
+          # makes "the suite passes" mean the WHOLE suite.
+          pytest tests -q
       - name: BLI eval harness fixture selftest (H1521)
         working-directory: RussianTranslation
         run: python src/eval/bli_eval.py selftest
