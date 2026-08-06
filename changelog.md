@@ -14,6 +14,13 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.11] - 2026-08-06
+### Fixed
+- **Two RussianTranslation gates were RED on `master` while the head read green (H2252, Opus 5 `claude-opus-5`, [PR #1170](https://github.com/gasyoun/SanskritLexicography/pull/1170)):** the subsystem pytest suite returned **1 failed / 113 passed** — [`tests/test_nws_ls_markup.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_nws_ls_markup.py) still asserted the fixed `.h1809.bak` backup name that H2146/H2153 replaced with the shared unique fsynced writer — and CI could not have caught it, because its pytest step names four `test_saru_gloss_*.py` files and no other test file is reachable from CI by construction. Separately, `lang_parity_check.py` **and** `window_selftest.py` both exit 1 on `origin/master` (45 ledger violations from two merges that changed a hash-tracked file without stamping it), and CI runs both unconditionally. Fixed: the backup assertion now proves **exactly one** `h1809nws.*.bak` **byte-identical to the pre-apply store** (+2 negative probes), `pytest tests -q` is an **additive** CI truth gate, and 41 parity entries were **re-derived on the diffs** with every verdict standing. Suite **123 passed**, window selftest **210/210**, parity **93 entries clean**.
+
+### Added
+- **H2173's fail-closed boundaries now pin refusal *before* mutation, not just the verdict (H2252):** new [`tests/test_h2252_boundary_refusals.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_h2252_boundary_refusals.py) — a foreign-route bundle through the real `batch_promote` path leaves the scratch store byte-identical, journals nothing, and leaves no backup or `.tmp`. H2173's own probes assert only that a foreign route *is* refused, so a refactor moving the journal write or store backup above the validation loop would keep them green while letting the artifact mutate the store on its way out. Both H2173 implementations were verified correct in place and supplemented, never rewritten; the G5 stamp gained `malformed_row_source` so an unaccountable row names the artifact it came from, not only its index.
+
 ## [1.144.10] - 2026-08-06
 ### Added
 - **H2238 dual-run residual (H2275, Grok 4.5 `grok-4.5`):** independent re-run of
