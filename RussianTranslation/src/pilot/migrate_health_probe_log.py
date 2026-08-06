@@ -29,8 +29,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_DIR = os.path.join(HERE, 'output')
-CANONICAL = os.path.join(OUTPUT_DIR, 'health_probe_log.jsonl')
+DEFAULT_OUTPUT_DIR = os.path.join(HERE, 'output')
 
 
 def _dedupe_key(row):
@@ -51,28 +50,31 @@ def _read_rows(path):
     return rows
 
 
-def source_files():
+def source_files(output_dir, canonical):
     """Every legacy per-account probe events file, EXCLUDING the canonical file itself."""
     pats = ('*gate0*probe_events.jsonl', '*_probe_events.jsonl')
     seen = set()
     out = []
     for pat in pats:
-        for path in sorted(glob.glob(os.path.join(OUTPUT_DIR, pat))):
-            if path == CANONICAL or path in seen:
+        for path in sorted(glob.glob(os.path.join(output_dir, pat))):
+            if os.path.abspath(path) == os.path.abspath(canonical) or path in seen:
                 continue
             seen.add(path)
             out.append(path)
     return out
 
 
-def migrate(dry_run=False):
+def migrate(dry_run=False, output_dir=None):
+    output_dir = output_dir or DEFAULT_OUTPUT_DIR
+    canonical = os.path.join(output_dir, 'health_probe_log.jsonl')
     existing_keys = set()
-    if os.path.exists(CANONICAL):
-        for row in _read_rows(CANONICAL):
+    if os.path.exists(canonical):
+        for row in _read_rows(canonical):
             existing_keys.add(_dedupe_key(row))
 
+    sources = source_files(output_dir, canonical)
     to_write = []
-    for path in source_files():
+    for path in sources:
         for row in _read_rows(path):
             if row.get('event') != 'probe_call':
                 continue
@@ -83,23 +85,27 @@ def migrate(dry_run=False):
             to_write.append(row)
 
     print('%d source file(s) scanned; %d new row(s) to migrate%s'
-          % (len(source_files()), len(to_write), ' (dry-run)' if dry_run else ''))
+          % (len(sources), len(to_write), ' (dry-run)' if dry_run else ''))
     if dry_run or not to_write:
         return 0
 
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    with open(CANONICAL, 'a', encoding='utf-8') as fh:
+    os.makedirs(output_dir, exist_ok=True)
+    with open(canonical, 'a', encoding='utf-8') as fh:
         for row in to_write:
             fh.write(json.dumps(row, ensure_ascii=False) + '\n')
-    print('wrote %d row(s) -> %s' % (len(to_write), CANONICAL))
+    print('wrote %d row(s) -> %s' % (len(to_write), canonical))
     return 0
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument('--dry-run', action='store_true')
+    # H2269: allow pointing at another checkout's pilot/output (worktree dual-run,
+    # or a frozen snapshot) without copying files into the script's sibling dir.
+    ap.add_argument('--output-dir', default=None,
+                    help='pilot/output directory (default: sibling output/ of this script)')
     a = ap.parse_args()
-    return migrate(dry_run=a.dry_run)
+    return migrate(dry_run=a.dry_run, output_dir=a.output_dir)
 
 
 if __name__ == '__main__':
