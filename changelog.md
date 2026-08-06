@@ -14,6 +14,27 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **`h2158_route_ab.py --check` now AUTHENTICATES instead of reporting presence** (H2312,
+  Opus 5 1M `claude-opus-5[1m]`). It printed `auth: ANTHROPIC_API_KEY read from ...` —
+  which `api_client()` documented as a *presence-only* report — and the paid run that
+  followed took **4/4 HTTP 401 `invalid x-api-key`** on the API arm while the CLI arm spent
+  **$1.68**. New `verify_auth()` calls `client.models.list(limit=1)`, an authenticated
+  `GET /v1/models` that bills **no tokens**, so every `--check` now ends in
+  `auth verified : yes|NO` for free. `api_client()` stays presence-only on purpose (a `--run`
+  needs a client even with a bad key, so the 401 is recorded as a `failure_class` instead of
+  crashing before an envelope is written).
+- **Removed the superseded premise from `h2158_route_ab.py`'s docstring** — it opened with
+  v1.127.0's "a one-shot subprocess cannot amortise its own system prompt … a 20x spread",
+  the claim H2250 overturned, stated as this harness's whole reason for existing.
+
+### Added
+- **[pwg_ru/h2312/ROUTE_AB_ABORTED_INVALID_API_KEY_06-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2312/ROUTE_AB_ABORTED_INVALID_API_KEY_06-08-2026.md)**
+  — the aborted rank-2 route A/B, with all 6 raw envelopes committed. The two CLI legs that
+  did land re-confirm H2250's non-comparability point: the identical prompt took **3 vs 2
+  turns** and cost moved **3.4×** with it ($1.3040 → $0.3804).
+
+
 ## [1.144.0] - 2026-08-06
 
 ### Changed

@@ -5,15 +5,26 @@ translation call actually cost and how long does it take when issued through the
 **Messages API with an explicit cached prefix**, versus the **CLI-headless** route
 production uses today? It does not port anything and it does not flip a route.
 
-Why a cached prefix is the whole point
---------------------------------------
-v1.127.0 measured that two identical back-to-back `claude -p` calls each RE-CREATE
-their cache (49 153 -> 49 165 create, read pinned at 28 882): a one-shot subprocess
-cannot amortise its own system prompt, so every call pays a cache WRITE where it
-should pay a cache READ. On the 1-hour TTL the CLI actually uses, that is $6.00/Mtok
-against $0.30/Mtok -- a 20x spread on the identical bytes. The Messages API puts the
-breakpoint under our control, so the arm here marks the stable head of the prompt
-with `cache_control` and leaves only the card block volatile.
+Why a cached prefix WAS the whole point -- superseded premise, read before quoting
+-----------------------------------------------------------------------------------
+This harness was written against CLI v1.127.0, which measured that two identical
+back-to-back `claude -p` calls each RE-CREATE their cache (49 153 -> 49 165 create,
+read pinned at 28 882): a one-shot subprocess could not amortise its own system prompt,
+so every call paid a cache WRITE where it should pay a cache READ -- $6.00/Mtok against
+$0.30/Mtok on the 1-hour TTL, a 20x spread on identical bytes.
+
+**That is no longer true (H2250, 06-08-2026).** At v2.1.223 the second call creates
+ZERO and reads the first call's create+read exactly (26 243 + 28 882 = 55 125). The CLI
+amortises on its own, so the spread this harness was built to expose has already closed
+-- see `pwg_ru/h2250/CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md`.
+
+The API arm below still does what it says -- marks the stable head with `cache_control`,
+leaves only the card block volatile -- but that is **no longer the interesting
+comparison**. What this A/B now exists to measure is (a) whether the CLI's multi-turn
+**output** collapses on a single-completion API call, (b) failure-class (429 vs hang),
+and (c) **wall-clock and turn-count**, which is where the route case now rests: H2250
+saw one clean card take 511 908 ms over 3 turns while 3 of 5 card spawns were killed at
+300-900 s. A CLI leg killed here is therefore SIGNAL, not a wasted call.
 
 Byte-identity, not a paraphrase
 -------------------------------
@@ -211,8 +222,45 @@ def call_api(client, manifest, key, prefix, tail, max_tokens):
 SECRETS_ENV = r'C:\Users\user\.secrets\anthropic.env'
 
 
+def verify_auth(client):
+    """Does the credential actually AUTHENTICATE? Presence is not authentication.
+
+    Added 06-08-2026 (H2312) after `--check` reported
+    `auth: ANTHROPIC_API_KEY read from ...\\anthropic.env` -- which `api_client()` has
+    always documented as a *presence-only* report -- and the run that followed it took
+    four HTTP 401 `invalid x-api-key` on the API arm while the CLI arm spent $1.68. The
+    check passed for a reason unrelated to the property under test: it proved a non-empty
+    string existed, never that the string works. That is the same shape as
+    Uprava FINDINGS 320/324, and it cost a paid run to rediscover.
+
+    `client.models.list()` is the cheap discriminator: it is an authenticated GET that
+    bills **no tokens**, so the verification is free and can run on every `--check`.
+    Returns a one-line human verdict; never raises, never echoes the credential.
+    """
+    if client is None:
+        return 'NO -- no client (see the auth line above)'
+    try:
+        page = client.models.list(limit=1)
+    except Exception as exc:                                    # noqa: BLE001
+        name = type(exc).__name__
+        status = getattr(exc, 'status_code', None)
+        if status == 401:
+            return ('NO -- HTTP 401, the key is present but INVALID (expired, revoked, '
+                    'or from a different account). The API arm cannot run.')
+        return 'NO -- %s%s' % (name, '' if status is None else ' (HTTP %s)' % status)
+    n = len(getattr(page, 'data', []) or [])
+    return 'yes -- GET /v1/models authenticated (%d model%s visible), 0 tokens billed' % (
+        n, '' if n == 1 else 's')
+
+
 def api_client():
-    """Return (client, note). Presence-only auth report -- never echo the credential."""
+    """Return (client, note). Presence-only auth report -- never echo the credential.
+
+    NOTE: this function deliberately does NOT authenticate; `verify_auth()` above does.
+    Do not "improve" this one into a network call -- `--run` needs a client object even
+    when the credential is bad, so that a 401 is RECORDED as a measured failure_class
+    rather than crashing the harness before it writes an envelope.
+    """
     import anthropic
     for var in ('ANTHROPIC_API_KEY', 'ANTHROPIC_AUTH_TOKEN'):
         if os.environ.get(var):
@@ -263,6 +311,7 @@ def main():
     print('model         : %s' % manifest['model'])
     print('cards         : %s' % ', '.join(keys))
     print('auth          : %s' % auth_note)
+    print('auth verified : %s' % verify_auth(client))
     print('bare cli cwd  : %s' % bare_cli_cwd())
     for key in keys:
         prefix, tail = split_prompt(manifest, key)          # raises if not byte-identical
