@@ -369,7 +369,13 @@ def kitchen_slice():
     """H2241 K-slice: daily kitchen operator/yield/health points for the trend
     charts, read from the sibling kitchen_data.json build (same directory,
     always co-located since both are committed progress_dashboard/ outputs).
+
+    Mapping lives in kitchen_slices.progress_kitchen_slice (H2268 dual-run pin).
     """
+    # Local import: kitchen_slices is co-located; keep build_progress_data
+    # import surface small for scripts that only need progress lanes.
+    import kitchen_slices as ks  # noqa: PLC0415
+
     p = OUT / "kitchen_data.json"
     if not p.exists():
         return {"measured": False}
@@ -379,17 +385,7 @@ def kitchen_slice():
     except Exception as e:  # noqa: BLE001 — a malformed kitchen build must not crash this one
         print(f"  ! could not read kitchen_data.json: {e}")
         return {"measured": False}
-    yq = kd.get("yield_quality") or {}
-    health = kd.get("health") or {}
-    idle = kd.get("idle") or {}
-    verdict = health.get("last_verdict")
-    return {
-        "measured": True,
-        "yield_clean_pct": yq.get("clean_window_pct"),
-        "health_last_verdict": verdict,
-        "health_last_go": {"GO": 1, "NO-GO": 0}.get(verdict),
-        "idle_hours": idle.get("total_idle_hours"),
-    }
+    return ks.progress_kitchen_slice(kd)
 
 
 def main():
@@ -453,6 +449,8 @@ def main():
         "kitchen_health_last_verdict": kit.get("health_last_verdict") if kit.get("measured") else None,
         "kitchen_health_last_go": kit.get("health_last_go") if kit.get("measured") else None,
         "kitchen_idle_hours": kit.get("idle_hours") if kit.get("measured") else None,
+        # H2268 net-new: live current idle (campaign total is a stock).
+        "kitchen_current_idle_hours": kit.get("current_idle_hours") if kit.get("measured") else None,
     }
     ts["snapshots"] = [s for s in ts.get("snapshots", []) if s.get("date") != today] + [row]
     ts["snapshots"].sort(key=lambda s: s["date"])
@@ -479,7 +477,8 @@ def main():
         print(
             f"  K-slice:     yield_clean={kit.get('yield_clean_pct')}%  "
             f"health_last={kit.get('health_last_verdict')}  "
-            f"idle_hours={kit.get('idle_hours')}"
+            f"idle_hours={kit.get('idle_hours')}  "
+            f"current_idle={kit.get('current_idle_hours')}"
         )
 
 
