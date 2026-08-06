@@ -806,6 +806,57 @@ MEDIUM50_PAUSE_REASON = {
 }
 
 
+def measure_medium50_band(rt: Path, medium50_wl_path: Path | None = None) -> dict:
+    """Live-measure the H317 medium-50 band against the store key1 set.
+
+    Single source for both the progress `nominal_lane` snapshot and the kitchen
+    `eta_nominal` nested block (H2275 dual-run residual — DRY the store scan and
+    the pause_reason object so progress/kitchen cannot drift on `detail`).
+
+    Returns ``{promoted, total, measured, status, pause_reason}``. Fallback
+    promoted/total are the last documented constants (2/50) when the worklist
+    or store is missing.
+    """
+    default_wl = rt / "src" / "pilot" / "H317_medium50_worklist.08.07.26.json"
+    m50_path = medium50_wl_path or default_wl
+    out = {
+        "promoted": 2,
+        "total": 50,
+        "measured": False,
+        "status": MEDIUM50_PAUSE_REASON["label"],
+        "pause_reason": MEDIUM50_PAUSE_REASON,
+    }
+    if not m50_path.exists():
+        return out
+    try:
+        m50_wl = json.loads(m50_path.read_text(encoding="utf-8-sig"))
+    except Exception:  # noqa: BLE001 — missing/corrupt worklist must not crash builders
+        return out
+    m50_keys = m50_wl.get("keys") or []
+    m50_total = m50_wl.get("n_selected") or len(m50_keys)
+    store = rt / "src" / "pwg_ru_translated.jsonl"
+    if not store.exists():
+        out["total"] = m50_total
+        return out
+    store_keys: set = set()
+    with store.open(encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            k = row.get("key1")
+            if k:
+                store_keys.add(k)
+    out["promoted"] = sum(1 for k in m50_keys if k in store_keys)
+    out["total"] = m50_total
+    out["measured"] = True
+    return out
+
+
 def _mean_keys_promoted_per_active_day(rt: Path, promoted_keys: set) -> tuple:
     """Mean count of newly-promoted nominal keys per active day.
 
@@ -906,38 +957,9 @@ def eta_nominal(rt: Path, medium50_wl_path: Path | None = None) -> dict:
         "basis": "nominal_remaining / mean_keys_promoted_per_active_day",
     }
 
-    # medium-50 band, nested: live-measured promoted count where the H317
-    # worklist is present, documented fallback constants otherwise.
-    default_wl = rt / "src" / "pilot" / "H317_medium50_worklist.08.07.26.json"
-    m50_path = medium50_wl_path or default_wl
-    m50 = {"promoted": 2, "total": 50, "measured": False}
-    if m50_path.exists():
-        try:
-            m50_wl = json.loads(m50_path.read_text(encoding="utf-8-sig"))
-            m50_keys = m50_wl.get("keys") or []
-            m50_total = m50_wl.get("n_selected") or len(m50_keys)
-            store_keys = set()
-            store = rt / "src" / "pwg_ru_translated.jsonl"
-            if store.exists():
-                with store.open(encoding="utf-8") as fh:
-                    for line in fh:
-                        line = line.strip()
-                        if not line:
-                            continue
-                        try:
-                            row = json.loads(line)
-                        except json.JSONDecodeError:
-                            continue
-                        k = row.get("key1")
-                        if k:
-                            store_keys.add(k)
-                m50_promoted = sum(1 for k in m50_keys if k in store_keys)
-                m50 = {"promoted": m50_promoted, "total": m50_total, "measured": True}
-        except Exception:  # noqa: BLE001
-            pass
-    m50["status"] = MEDIUM50_PAUSE_REASON["label"]
-    m50["pause_reason"] = MEDIUM50_PAUSE_REASON
-    out["medium50"] = m50
+    # medium-50 band, nested — single helper (H2275) so progress + kitchen share
+    # the live measure and the structured pause_reason (incl. detail tooltip).
+    out["medium50"] = measure_medium50_band(rt, medium50_wl_path)
     return out
 
 

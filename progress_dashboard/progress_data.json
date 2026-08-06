@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T15:16:01Z",
+  "generated_at": "2026-08-06T17:02:05Z",
   "snapshot_date": "2026-08-06",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
@@ -28,6 +28,7 @@
       "medium50_pause_reason": {
         "code": "killgate_cascade",
         "label": "paused — kill-gate/self-heal budget cascade on dense band-4 nominal singletons",
+        "detail": "H437 isolated a self-heal/kill-gate budget cascade on dense band-4 nominal singleton cards (2/37 clean, every window tripped MAX_AGENTS); H442 scoped the recalibration, still open. Not a data or scope problem — a harness heal-lane design question.",
         "docs": [
           "H437",
           "H442",
