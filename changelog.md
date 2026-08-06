@@ -14,6 +14,17 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.6] - 2026-08-06
+### Added
+- **H2239 dual-run residual (H2267, Grok 4.5 `grok-4.5`):** independent re-check
+  of B10 article-site parity against the Sonnet override lane (no PR — already
+  shipped in H2218). Confirms `article_site_parity` in
+  `kitchen_slices.py`, kitchen build wiring of `article_parity`, and the
+  Article-site parity UI card; live JSON honest-false path when
+  `article_site/` is absent. Class: **identical** (5 decisions, 0 conflicting /
+  net-new) — keep master as-is. Adjudication:
+  [H2267_H2239_DUAL_RUN_COMPARE_2026-08-06.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/H2267_H2239_DUAL_RUN_COMPARE_2026-08-06.md).
+
 ## [1.144.5] - 2026-08-06
 ### Added
 - **H2233 dual-run residual (H2258, Grok 4.5 `grok-4.5`):** independent re-derivation
