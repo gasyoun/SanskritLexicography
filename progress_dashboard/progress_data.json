@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-04T05:54:55Z",
-  "snapshot_date": "2026-08-04",
+  "generated_at": "2026-08-06T15:16:01Z",
+  "snapshot_date": "2026-08-06",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
   "kitchen_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
@@ -86,5 +86,24 @@
         "total": 150
       }
     ]
+  },
+  "review_throughput": {
+    "measured": true,
+    "method": "human_review.reviewed_at",
+    "rows_with_reviewed_at": 5,
+    "approved_with_reviewed_at": 3,
+    "approved_total": 3,
+    "needs_review_with_reviewed_at": 2,
+    "needs_review_total": 2,
+    "coverage_approved": "3/3",
+    "daily": [
+      {
+        "date": "2026-07-26",
+        "approved": 3,
+        "needs_review": 2,
+        "other": 0
+      }
+    ],
+    "note": "per-day transition counts from human_review.reviewed_at; append-only stock series (progress_timeseries approved/needs_review) remains the rebuild-date depth signal"
   }
 }

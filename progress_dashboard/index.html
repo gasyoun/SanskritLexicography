@@ -228,6 +228,7 @@
   have passed <em>human</em> review versus still carrying only the AI first pass.</p>
 <div class="bar-wrap" id="reviewbar"></div>
 <p class="mut" id="g5queue"></p>
+<p class="mut" id="reviewthroughput"></p>
 
 <h2>Frequency coverage — how much of PWG is even in scope</h2>
 <p class="mut">Only DCS-attested headwords are targeted first (corpus-frequency route). This is the
@@ -404,6 +405,27 @@ function renderProgress(d) {
   g5El.textContent = rq.measured
     ? `G5 live-review queue: ${fmt(rq.g5_open)} open / ${fmt(rq.g5_total)} across ${rq.sheet_count} sheet(s) (aggregate count only — sheet content is local-only editorial data, not published).`
     : 'G5 live-review queue: no local sheet data on this build (measured only when a review sheet exists on the building machine).';
+
+  // H2260: per-day transitions from human_review.reviewed_at (H2235 primary path)
+  const thrEl = document.getElementById('reviewthroughput');
+  const thr = d.review_throughput || {};
+  if (thrEl) {
+    if (thr.measured && Array.isArray(thr.daily) && thr.daily.length) {
+      const parts = thr.daily.map(row => {
+        const a = row.approved || 0;
+        const n = row.needs_review || 0;
+        return `${row.date}: +${a} approved` + (n ? ` / +${n} needs_review` : '');
+      });
+      thrEl.textContent =
+        `Review throughput (transitions via human_review.reviewed_at): ${parts.join('; ')}` +
+        ` — coverage approved ${thr.coverage_approved || '—'} of store approved stock` +
+        ` (stock depth over rebuild days remains the trend-chart series).`;
+    } else {
+      thrEl.textContent =
+        'Review throughput transitions: no human_review.reviewed_at on store rows yet — ' +
+        'trend charts use append-only approved/needs_review stock at each rebuild.';
+    }
+  }
 
   const cb = document.getElementById('covbar');
   cb.innerHTML =
