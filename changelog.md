@@ -14,6 +14,16 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H2233 dual-run residual (H2258, Grok 4.5 `grok-4.5`):** independent re-derivation
+  of the K4 verb ETA roots/day fix against Sonnet override
+  [PR #1085](https://github.com/gasyoun/SanskritLexicography/pull/1085)
+  (`dcdaa6eae2`). Confirms promoted-only scope, last-card promotion-day proxy,
+  and all-active-days mean (not cards/day; not first-card; not a rolling-14d
+  empty rate while the lane is idle). Class: **identical** (8 decisions, 0
+  conflicting / net-new) — keep #1085 as-is. Adjudication:
+  [H2258_H2233_DUAL_RUN_COMPARE_2026-08-06.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/H2258_H2233_DUAL_RUN_COMPARE_2026-08-06.md).
+
 ## [1.144.4] - 2026-08-06
 ### Added
 - **H2230 dual-run residual (H2255, Grok 4.5 `grok-4.5`):** independent re-run
