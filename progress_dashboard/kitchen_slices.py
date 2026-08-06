@@ -567,6 +567,52 @@ def quality_slice(pilot_out: Path, rows: list[dict], events: Path) -> dict:
     return out
 
 
+def progress_kitchen_slice(kd: dict | None) -> dict:
+    """H2241 / H2268 — daily kitchen K-slice fields for progress_timeseries.
+
+    Pure reader over an already-loaded kitchen_data.json payload (or None).
+    Sonnet override #1112 inlined this in build_progress_data.kitchen_slice();
+    Grok dual-run residual extracts the pure mapping here so a selftest can pin
+    field selection + GO/NO-GO encoding without a full progress rebuild.
+
+    Field contract (prefix kitchen_ on the timeseries row):
+      yield_clean_pct       ← yield_quality.clean_window_pct
+      health_last_verdict   ← health.last_verdict (string GO/NO-GO)
+      health_last_go        ← 1/0/None from that verdict
+      idle_hours            ← idle.total_idle_hours (campaign stock)
+      current_idle_hours    ← idle.current_idle_seconds / 3600 (live gap; H2268 net-new)
+
+    "Review approved" from the H2241 acceptance text is intentionally NOT a new
+    kitchen_* field: store review_breakdown.approved is already on progress
+    timeseries as `approved` and already charted. kitchen_data has no separate
+    human-review section to project.
+    """
+    if not isinstance(kd, dict):
+        return {"measured": False}
+    yq = kd.get("yield_quality") or {}
+    health = kd.get("health") or {}
+    idle = kd.get("idle") or {}
+    if not isinstance(yq, dict):
+        yq = {}
+    if not isinstance(health, dict):
+        health = {}
+    if not isinstance(idle, dict):
+        idle = {}
+    verdict = health.get("last_verdict")
+    cur_s = idle.get("current_idle_seconds")
+    current_idle_hours = None
+    if isinstance(cur_s, (int, float)):
+        current_idle_hours = round(cur_s / 3600.0, 2)
+    return {
+        "measured": True,
+        "yield_clean_pct": yq.get("clean_window_pct"),
+        "health_last_verdict": verdict,
+        "health_last_go": {"GO": 1, "NO-GO": 0}.get(verdict),
+        "idle_hours": idle.get("total_idle_hours"),
+        "current_idle_hours": current_idle_hours,
+    }
+
+
 def quality_timeseries_append(ts_path: Path, quality: dict, generated_at: str, today: str) -> dict:
     """B4 — append-only quality/fidelity/judge points, one row per build date.
 

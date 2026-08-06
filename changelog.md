@@ -23,6 +23,18 @@ not an error.
   primary path Sonnet skipped — field exists on all human-touched rows) + UI line.
   Adjudication: [H2260_H2235_DUAL_RUN_COMPARE_2026-08-06.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/H2260_H2235_DUAL_RUN_COMPARE_2026-08-06.md).
 
+## [1.144.7] - 2026-08-06
+### Added
+- **H2241 dual-run residual (H2268, Grok 4.5 `grok-4.5`):** independent re-derivation
+  of kitchen K-slice → `progress_timeseries` against Sonnet override
+  [PR #1112](https://github.com/gasyoun/SanskritLexicography/pull/1112).
+  Confirms kitchen_data projection for yield/health/total-idle and the
+  "review approved" = store `approved` judgment (no kitchen_* invent). Net-new:
+  `kitchen_slices.progress_kitchen_slice` pure map + `kitchen_current_idle_hours`,
+  charts for health_last_go + current idle, `kitchen_progress_slice_selftest.py`
+  (7 cases). Adjudication:
+  [H2268_H2241_DUAL_RUN_COMPARE_2026-08-06.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/H2268_H2241_DUAL_RUN_COMPARE_2026-08-06.md).
+
 ## [1.144.6] - 2026-08-06
 ### Added
 - **H2239 dual-run residual (H2267, Grok 4.5 `grok-4.5`):** independent re-check

@@ -887,8 +887,12 @@ async function renderTrends() {
     if ((s = pick('needs_review')).length) line(el, s, 'Needs review (queued)');
     if ((s = pick('g5_open')).length) line(el, s, 'G5 live-review queue — open');
     // H2241 K-slice: daily kitchen operator/yield/health points.
+    // H2268: also chart health_last_go (field existed in #1112 but was uncharted)
+    // and current idle (live gap; total is campaign stock).
     if ((s = pick('kitchen_yield_clean_pct')).length) line(el, s, 'Kitchen: clean windows', '%');
-    if ((s = pick('kitchen_idle_hours')).length) line(el, s, 'Kitchen: idle hours', 'h');
+    if ((s = pick('kitchen_health_last_go')).length) line(el, s, 'Kitchen: health last GO', '0/1');
+    if ((s = pick('kitchen_idle_hours')).length) line(el, s, 'Kitchen: idle hours (total)', 'h');
+    if ((s = pick('kitchen_current_idle_hours')).length) line(el, s, 'Kitchen: current idle', 'h');
   }
   // B4 — fidelity/judge quality as a trend, not a single overwritten snapshot.
   const qts = await j('quality_timeseries.json');

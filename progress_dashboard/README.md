@@ -94,7 +94,8 @@ python RussianTranslation/src/pilot/dashboard_server.py
 |---|---|
 | [`build_progress_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_progress_data.py) | lane/store/coverage snapshot → `progress_data.json` + timeseries |
 | [`build_kitchen_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_kitchen_data.py) | speed/cost/idle/calendar/changelog + K1–K8 + H2218 residual → `kitchen_data.json` |
-| [`kitchen_slices.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_slices.py) | pure aggregators (operator, yield, health, subscription, idle reasons, parity, multi_lane B8) |
+| [`kitchen_slices.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_slices.py) | pure aggregators (operator, yield, health, subscription, idle reasons, parity, multi_lane B8, H2241 `progress_kitchen_slice`) |
+| [`kitchen_progress_slice_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_progress_slice_selftest.py) | H2268 dual-run pin — progress_kitchen_slice field map / GO encoding / no review invent |
 | [`kitchen_multi_lane_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_multi_lane_selftest.py) | H2231 B8 — gen_model/host/profile mix fixture pins |
 | [`backfill_ledger_metrics.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/backfill_ledger_metrics.py) | best-effort historical wall-clock / gen_model backfill (dry-run; `--apply` rewrites gitignored ledger) |
 | [`examples/economy_subscription.example.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/examples/economy_subscription.example.json) | paste schema for subscription $ |
