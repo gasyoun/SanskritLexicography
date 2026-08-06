@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.3] - 2026-08-06
 ### Added
 - **Progress kitchen B8 multi-lane mix (H2231, Grok 4.5 `grok-4.5`):** every
   `append_ledger` row now stamps `gen_model` / `host` / `profile` (null when
