@@ -14,6 +14,17 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.4] - 2026-08-06
+### Added
+- **H2230 dual-run residual (H2255, Grok 4.5 `grok-4.5`):** independent re-run
+  of the wall-clock / token densification goal against Sonnet override
+  [PR #1080](https://github.com/gasyoun/SanskritLexicography/pull/1080).
+  Confirms the post_cut/historical split is the right residual (append_ledger
+  dense stamp + backfill already shipped in H2212/H2218). Net-new: committed
+  `kitchen_instrumentation_selftest.py` pin (6 cases) and kitchen UI post_cut
+  **token** coverage line (blended 2.5% hid honest post_cut 12.1%). Adjudication:
+  [H2255_H2230_DUAL_RUN_COMPARE_2026-08-06.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/H2255_H2230_DUAL_RUN_COMPARE_2026-08-06.md).
+
 ## [1.144.3] - 2026-08-06
 ### Added
 - **Progress kitchen B8 multi-lane mix (H2231, Grok 4.5 `grok-4.5`):** every
