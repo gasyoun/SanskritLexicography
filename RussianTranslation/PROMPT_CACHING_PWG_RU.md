@@ -1,6 +1,6 @@
 # PWG→RU prompt caching — single playbook of record
 
-_Created: 02-08-2026 · Last updated: 03-08-2026_
+_Created: 02-08-2026 · Last updated: 06-08-2026_
 
 **Audience.** Operators and executors about to spend tokens on the PWG→Russian
 (headless / manifest-v2) lane, or about to “optimise cache” again.
@@ -9,6 +9,11 @@ _Created: 02-08-2026 · Last updated: 03-08-2026_
 committed 02-08-2026 (H2152 · H2158 · v1.127.0 · FINDINGS §284). This file does
 **not** re-derive those numbers; it is the one place that ranks levers, names
 what is settled, and points at the Opus 5 handoffs for remaining practical work.
+**Revised 06-08-2026 by Opus 5 1M (`claude-opus-5[1m]`) under
+[H2250](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2250-Opus_SanskritLexicography_pwg-cli-cache-amortisation-remeasure_03.08.26.md):**
+standing truth #1 was **rewritten, not re-confirmed** — it described CLI v1.127.0 and is
+false of v2.1.223 — and the rank-2 row was re-based on what survives that. Truth #1 is
+therefore the one entry here that *does* carry its own fresh numbers.
 
 **Sibling sources (do not fork facts away from here).** When this file and a
 sibling disagree on a *standing rule*, trust the measurement source named in the
@@ -28,21 +33,35 @@ row and open a PR that re-syncs this file — do not invent a third copy.
 
 ## 1. Standing truth (do not re-open without new measurement)
 
-1. **A one-shot CLI subprocess cannot amortise its own system prompt.** Two
-   *identical* back-to-back `claude -p` calls re-created **49 153 → 49 165**
-   cache tokens with read pinned at **28 882** — the second re-wrote what the
-   first had just written. Not TTL: every write landed in
-   `ephemeral_1h_input_tokens` (1 h cannot lapse between seconds-apart calls).
-   **⚠️ Contradicted 03-08-2026 (H2189), not yet re-measured.** In all five arms of the
-   H2189 trivial phase — same prompt shape, same seconds-apart cadence, same 1 h bucket —
-   the second call created **zero** and its `read` equalled the first call's
-   `create + read` **exactly**. That is amortisation, and it looks like a CLI behaviour
-   change rather than a methodology difference. This truth is left standing until a run
-   designed to test it says otherwise, because it underpins the whole rank-2 case; see
-   [report §7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md).
-   Registered as [Uprava CONTRADICTIONS §7](https://github.com/gasyoun/Uprava/blob/main/CONTRADICTIONS.md);
-   the re-measurement that decides it is [H2250](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2250-Opus_SanskritLexicography_pwg-cli-cache-amortisation-remeasure_03.08.26.md)
-   (**Opus 5**) — PWG CLI cache-amortisation re-measure against standing truth #1.
+1. **A one-shot CLI subprocess DOES amortise its own system prompt — usually. Rewritten
+   06-08-2026 ([H2250](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2250-Opus_SanskritLexicography_pwg-cli-cache-amortisation-remeasure_03.08.26.md))
+   on a purpose-built run: the old "cannot" was true of CLI v1.127.0 and is false of
+   v2.1.223.** Identical back-to-back `claude -p` calls now create **zero** and read the
+   first call's `create + read` exactly. Over a 7-call sequence at gaps of 34 s / 94 s /
+   120 s / 128 s / 557 s, the cold call wrote **26 243** (read 28 882, total **55 125**)
+   and six later calls reused it — five of them for a `create` of **0**.
+   **Do not read a decay curve into that.** One call re-created **20 740** at a 547 s gap
+   while the very next call, at a *longer* 557 s gap, read the full 55 125 — the miss is
+   not driven by elapsed time at this scale, and its prefix was also 14 tokens larger than
+   the cached one. **So: budget for the write, expect to save it most of the time.** The
+   past-1 h gap is deliberately **not** measured — with a demonstrated non-time-driven miss
+   in the same run, one datum there would be uninterpretable. Every write still lands in
+   `ephemeral_1h_input_tokens`; `ephemeral_5m` is 0.
+   **A version change, not a methodology difference** — the two rigs were compared knob by
+   knob and issue the same prompt, turn cap, model, launcher, profile and back-to-back
+   cadence; the only difference is the spawn cwd, which changes how *large* the prefix is,
+   not whether call #2 re-writes it.
+   **The real card prompt settles nothing either way** — a card call is a multi-turn
+   agentic loop whose envelope sums over turns (3 vs 4 turns on two identical prompts), so
+   its totals are not comparable quantities. That needs per-turn `iterations[]`
+   decomposition, not more paid calls.
+   Report + committed envelopes:
+   [pwg_ru/h2250/CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md).
+   Resolves [Uprava CONTRADICTIONS §7](https://github.com/gasyoun/Uprava/blob/main/CONTRADICTIONS.md),
+   supersedes the v1.127.0 reading (H2152 follow-on), confirms
+   [H2189 §7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md).
+   **Consequence for rank 2 below: the cache-write argument for the Messages-API port is
+   gone — re-argue it on wall-clock and turn-count.**
 2. **Bare project cwd is free and shipped — and since H2249 it is actually bare.**
    The first shipping version checked only the immediate directory, so an empty dir
    under `%TEMP%` still inherited 32 779 B of operator memory from its ancestors; the
@@ -97,7 +116,7 @@ prefix that can exceed **100 k** once profile context is included.
 | 0 | **Bare cwd** for every headless spawn | ✅ Shipped | −33 % cost / −30 % wall on fixed overhead | none — already in `bare_cli_cwd()` |
 | 1 | **Strip the profile surface** — shipped as `--safe-mode`, **not** as a minimal profile dir | ✅ Measured 03-08-2026, wired **opt-in (default OFF)** | Real card: create **−69 %**, output **−49 %**, wall **−55 %**, cost **−61 %** ($0.6921 → $0.2712) with identical card content. A dedicated minimal `CLAUDE_CONFIG_DIR` measured only **−8.7 %** and was REJECTED as the lever | [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md) · [report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md) |
 | 1b | **`bare_cli_cwd()` ancestry leak** — the helper rejected an ancestor with `CLAUDE.md`/`.git`, not one with `.claude\CLAUDE.md`, and its `%TEMP%` dir sits under the Windows user profile | ✅ Fixed 03-08-2026 | Was **32 779 B of operator memory in every paid call** since H2158. The helper now derives candidates and returns one only after `cwd_ancestry_scan` proves the whole ancestry clean, else `None`; **0 injectable bytes** on this box. `--safe-mode` only *masked* it and is no longer the thing standing in the way | [H2249](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2249-Opus_SanskritLexicography_pwg-bare-cwd-ancestry-leak-fix_03.08.26.md) · [H2189 report §1.1](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md) |
-| 2 | **Messages API + explicit `cache_control` (1 h)** on stable prefix | 🟡 Open — Phase 1 CLI measured; API arm needs credential | Turn create→read on framework; typed HTTP failures; optional single-completion output cut | [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md) |
+| 2 | **Messages API + explicit `cache_control` (1 h)** on stable prefix | 🟡 Open — **case re-based 06-08-2026 (H2250)**; API arm still needs credential | **"Turn create→read on framework" is no longer a win this lever can claim — truth #1 above now says the CLI does that by itself, for free.** What survives: typed HTTP failures, the single-completion output cut, and the *new* lead argument — **wall-clock and turn-count**. The one clean card call cost **511 s wall over 3 turns**, and 3 of 5 card spawns were killed at 300–900 s; the multi-turn loop overhead behind that is exactly what a direct API call removes. Re-argue rank 2 on throughput, not on cache-write | [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md) · [H2250 report §7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md) |
 | 3 | **Dual-rate cost tools** (`cache_write_5m` + `cache_write_1h`) | ✅ Shipped 02-08-2026 | Stopped understating CLI bills 1.6× ($0.6967 computed vs $0.8005 billed on `nakzatra`) | [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) · [PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032) |
 | 4 | **Stable prefix reorder** (`preamble` → `translation` → `grammar` before card) | ✅ Shipped 03-08-2026, offline | Cross-**window** stable head **1 226 → 12 249 chars** (4.9 % → 49.5 % of a representative prompt). Within one window: no change. **Not** lean-TR — no byte dropped | [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md) |
 | 5 | TM / frag-TM / fewer agent calls | ✅ Standing | Zero-call reuse where hashes match | existing pipeline |
