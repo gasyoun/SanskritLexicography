@@ -14,6 +14,15 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H2235 dual-run residual (H2260, Grok 4.5 `grok-4.5`):** independent re-derivation of
+  B5 review-throughput series + G5 queue depth against Sonnet override
+  [PR #1092](https://github.com/gasyoun/SanskritLexicography/pull/1092)
+  (`ac8c01cc3`). Confirms append-only stock series + G5 aggregate queue as correct for
+  store depth; **net-new:** `review_throughput` from `human_review.reviewed_at` (H2235
+  primary path Sonnet skipped — field exists on all human-touched rows) + UI line.
+  Adjudication: [H2260_H2235_DUAL_RUN_COMPARE_2026-08-06.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/H2260_H2235_DUAL_RUN_COMPARE_2026-08-06.md).
+
 ## [1.144.6] - 2026-08-06
 ### Added
 - **H2239 dual-run residual (H2267, Grok 4.5 `grok-4.5`):** independent re-check

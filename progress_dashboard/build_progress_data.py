@@ -240,6 +240,7 @@ def review_queue():
         total += len(items)
         decided += sheet_decided
         open_ += sheet_open
+        # sheet_id only (no path, no notes) — aggregate privacy contract from H2235
         sheets.append({"sheet_id": data.get("sheet_id"), "open": sheet_open, "total": len(items)})
     return {
         "measured": True,
@@ -248,6 +249,89 @@ def review_queue():
         "g5_decided": decided,
         "g5_open": open_,
         "sheets": sheets,
+    }
+
+
+def review_transitions():
+    """Daily approved / needs_review *transitions* from store review timestamps (B5, H2260).
+
+    H2235 primary path: derive daily approved transitions from review timestamps
+    when present; else fall back to append-only stock series on rebuild (that
+    stock path lives in main()'s timeseries row and was shipped by Sonnet #1092).
+
+    Field of record: ``human_review.reviewed_at`` (ISO datetime). Present on
+    every currently human-touched row (approved + needs_review); absent on the
+    bulk ``ai_translated`` population. Coverage is therefore honest but small —
+    a true full-store transition series will grow only as more rows acquire
+    reviewed_at. Never invent timestamps from provenance.generated_at (that is
+    generation day, not human-signoff day).
+    """
+    p = RT / "src" / "pwg_ru_translated.jsonl"
+    if not p.exists():
+        return {"measured": False, "method": "human_review.reviewed_at"}
+    by_day = {}  # date -> {approved, needs_review, other}
+    with_ts = 0
+    approved_total = needs_total = 0
+    approved_with_ts = needs_with_ts = 0
+    with p.open(encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                d = json.loads(line)
+            except Exception:  # noqa: BLE001
+                continue
+            rs = d.get("review_status") or "unknown"
+            if rs == "approved":
+                approved_total += 1
+            elif rs == "needs_review":
+                needs_total += 1
+            hr = d.get("human_review") or {}
+            ra = hr.get("reviewed_at") if isinstance(hr, dict) else None
+            if not ra:
+                continue
+            with_ts += 1
+            day = str(ra)[:10]
+            bucket = by_day.setdefault(day, {"approved": 0, "needs_review": 0, "other": 0})
+            if rs == "approved":
+                bucket["approved"] += 1
+                approved_with_ts += 1
+            elif rs == "needs_review":
+                bucket["needs_review"] += 1
+                needs_with_ts += 1
+            else:
+                bucket["other"] += 1
+    if not by_day:
+        return {
+            "measured": False,
+            "method": "human_review.reviewed_at",
+            "rows_with_reviewed_at": 0,
+            "approved_with_reviewed_at": 0,
+            "approved_total": approved_total,
+            "note": "no human_review.reviewed_at on any store row; use append-only stock series",
+        }
+    daily = [
+        {"date": day, **by_day[day]}
+        for day in sorted(by_day)
+    ]
+    return {
+        "measured": True,
+        "method": "human_review.reviewed_at",
+        "rows_with_reviewed_at": with_ts,
+        "approved_with_reviewed_at": approved_with_ts,
+        "approved_total": approved_total,
+        "needs_review_with_reviewed_at": needs_with_ts,
+        "needs_review_total": needs_total,
+        "coverage_approved": (
+            f"{approved_with_ts}/{approved_total}" if approved_total else "0/0"
+        ),
+        "daily": daily,
+        "note": (
+            "per-day transition counts from human_review.reviewed_at; "
+            "append-only stock series (progress_timeseries approved/needs_review) "
+            "remains the rebuild-date depth signal"
+        ),
     }
 
 
@@ -318,6 +402,7 @@ def main():
     cov = coverage()
     cor = corpus()
     rq = review_queue()
+    rt_x = review_transitions()
     kit = kitchen_slice()
 
     data = {
@@ -332,6 +417,8 @@ def main():
         "coverage": cov,
         "corpus": cor,
         "review_queue": rq,
+        # H2260 best-of-both: transition series from reviewed_at (H2235 primary path)
+        "review_throughput": rt_x,
     }
 
     (OUT / "progress_data.json").write_text(
@@ -382,6 +469,12 @@ def main():
     print(f"  corpus/TM:   {cor.get('pairs')} pairs, {cor.get('recall_pct')}% recall")
     if rq.get("measured"):
         print(f"  G5 queue:    {rq.get('g5_open')} open / {rq.get('g5_total')} across {rq.get('sheet_count')} sheet(s)")
+    if rt_x.get("measured"):
+        days = rt_x.get("daily") or []
+        print(
+            f"  transitions: {rt_x.get('rows_with_reviewed_at')} rows with reviewed_at "
+            f"across {len(days)} day(s); approved coverage {rt_x.get('coverage_approved')}"
+        )
     if kit.get("measured"):
         print(
             f"  K-slice:     yield_clean={kit.get('yield_clean_pct')}%  "
