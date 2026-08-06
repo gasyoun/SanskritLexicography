@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-04T05:54:54Z",
+  "generated_at": "2026-08-06T13:00:04Z",
   "schema": "pwg.kitchen.v2",
-  "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome) (still pwg.kitchen.v2 — non-breaking)",
+  "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
@@ -9,7 +9,7 @@
   "activity": {
     "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 129768,
+    "youngest_artifact_age_seconds": 328079,
     "window_state": "needs_requeue",
     "window_root": "no_pwg_w05",
     "next_action": "Run python src\\pilot\\requeue_from_audit.py <root>, rerun Max Workflow, then rerun audit_window.py.",
@@ -17,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-08-02T07:21:30Z",
-        "age_seconds": 167597,
+        "age_seconds": 365908,
         "size": 26192750
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-07-15T20:26:10Z",
-        "age_seconds": 1675717,
+        "age_seconds": 1874028,
         "size": 53853
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-02T17:51:59Z",
-        "age_seconds": 129768,
+        "age_seconds": 328079,
         "size": 327781
       },
       "events": {
         "exists": true,
         "mtime": "2026-07-24T18:39:44Z",
-        "age_seconds": 904504,
+        "age_seconds": 1102814,
         "size": 3486985
       }
     }
@@ -52,8 +52,8 @@
     "pending": 7,
     "newest_card_at": "2026-07-14T04:10:54Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 21.07,
-    "campaign_days": 36
+    "days_since_last_card": 23.37,
+    "campaign_days": 39
   },
   "yield_quality": {
     "measured": true,
@@ -234,164 +234,62 @@
     },
     "note": "post_cut = rows stamped by the H1553/H2212 auto-derive path (has a wall_clock_source key) — this is the honest instrumentation-health number; historical = rows written before that path existed, where a null was never recoverable and is expected, not a gap"
   },
+  "multi_lane": {
+    "measured": true,
+    "windows": 473,
+    "gen_model_present": 0,
+    "gen_model_coverage_pct": 0.0,
+    "gen_models": {},
+    "host_present": 0,
+    "host_coverage_pct": 0.0,
+    "hosts": {},
+    "profile_present": 0,
+    "profile_coverage_pct": 0.0,
+    "profiles": {},
+    "distinct_hosts": 0,
+    "distinct_profiles": 0,
+    "distinct_models": 0,
+    "multi_lane": false,
+    "note": "multi_lane=true when ≥2 distinct hosts, profiles, or gen_models appear; forward rows (H2231+) stamp host/profile/gen_model on every audit close; historical rows stay null until re-audited or best-effort backfill"
+  },
   "health": {
     "measured": true,
     "ceiling_ms": 65000,
-    "probes": 33,
-    "go_count": 23,
-    "nogo_count": 10,
-    "go_pct": 69.7,
+    "probes": 2,
+    "go_count": 1,
+    "nogo_count": 1,
+    "go_pct": 50.0,
     "last": {
-      "ts": "2026-08-03T09:33:32.845Z",
+      "ts": "2026-08-05T09:58:33.977Z",
       "account": "c4",
-      "elapsed_ms": 297949,
-      "duration_api_ms": 276183,
+      "elapsed_ms": 300099,
+      "duration_api_ms": null,
       "ceiling_ms": 80000,
       "verdict": "NO-GO",
       "model": "claude-sonnet-5",
-      "source": "h963_c4_gate0_probe_events.jsonl"
+      "source": "health_probe_log.jsonl"
     },
     "last_verdict": "NO-GO",
     "recent": [
       {
-        "ts": "2026-07-31T18:59:59.255Z",
+        "ts": "2026-08-05T09:53:33.854Z",
         "account": "c4",
-        "elapsed_ms": 94606,
-        "duration_api_ms": null,
-        "ceiling_ms": 65000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-07-31T19:01:17.695Z",
-        "account": "c4",
-        "elapsed_ms": 78415,
-        "duration_api_ms": null,
-        "ceiling_ms": 65000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-01T20:21:03.067Z",
-        "account": "c4",
-        "elapsed_ms": 39437,
-        "duration_api_ms": 21171,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-01T20:21:53.433Z",
-        "account": "c4",
-        "elapsed_ms": 50336,
-        "duration_api_ms": 27557,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T05:47:17.844Z",
-        "account": "c4",
-        "elapsed_ms": 55390,
-        "duration_api_ms": 37690,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T05:48:01.692Z",
-        "account": "c4",
-        "elapsed_ms": 43815,
-        "duration_api_ms": 26386,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T07:48:25.138Z",
-        "account": "c4",
-        "elapsed_ms": 236328,
-        "duration_api_ms": 43646,
-        "ceiling_ms": 65000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T07:49:40.754Z",
-        "account": "c4",
-        "elapsed_ms": 75561,
-        "duration_api_ms": 29069,
-        "ceiling_ms": 65000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T11:05:16.821Z",
-        "account": "c4",
-        "elapsed_ms": 55803,
-        "duration_api_ms": 28603,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T11:06:53.389Z",
-        "account": "c4",
-        "elapsed_ms": 96520,
-        "duration_api_ms": 69137,
-        "ceiling_ms": 65000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T12:45:36.391Z",
-        "account": "c4",
-        "elapsed_ms": 61662,
-        "duration_api_ms": 27834,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T12:46:42.735Z",
-        "account": "c4",
-        "elapsed_ms": 66291,
-        "duration_api_ms": 16445,
-        "ceiling_ms": 65000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-03T09:28:34.828Z",
-        "account": "c4",
-        "elapsed_ms": 69082,
-        "duration_api_ms": 15315,
+        "elapsed_ms": 57207,
+        "duration_api_ms": 18310,
         "ceiling_ms": 80000,
         "verdict": "GO",
         "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
+        "source": "health_probe_log.jsonl"
       },
       {
-        "ts": "2026-08-03T09:33:32.845Z",
+        "ts": "2026-08-05T09:58:33.977Z",
         "account": "c4",
-        "elapsed_ms": 297949,
-        "duration_api_ms": 276183,
+        "elapsed_ms": 300099,
+        "duration_api_ms": null,
         "ceiling_ms": 80000,
         "verdict": "NO-GO",
         "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
+        "source": "health_probe_log.jsonl"
       }
     ],
     "note": "GO if elapsed_ms ≤ latency ceiling (default 65s; H2011/H2174 c4 series)"
@@ -669,7 +567,7 @@
     "total_idle_seconds": 1549947,
     "total_idle_hours": 430.54,
     "mean_gap_seconds": 12204.307,
-    "current_idle_seconds": 129770,
+    "current_idle_seconds": 328080,
     "last_idle_seconds": 352265,
     "last_idle": {
       "from": "2026-07-11T18:34:18Z",
@@ -697,9 +595,9 @@
       },
       {
         "month": "2026-08",
-        "idle_seconds": 129770,
-        "idle_days": 1.5,
-        "idle_hours": 36.05
+        "idle_seconds": 328080,
+        "idle_days": 3.8,
+        "idle_hours": 91.13
       }
     ],
     "recent_gaps": [
@@ -2189,28 +2087,10 @@
     }
   },
   "calendar": {
-    "start": "2026-04-07",
-    "end": "2026-08-04",
+    "start": "2026-04-09",
+    "end": "2026-08-06",
     "days": 120,
     "cells": [
-      {
-        "date": "2026-04-07",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
-      {
-        "date": "2026-04-08",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
       {
         "date": "2026-04-09",
         "cards": 0,
@@ -3272,6 +3152,24 @@
         "idle_hours": 0,
         "level": 0,
         "idle": false
+      },
+      {
+        "date": "2026-08-05",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
+      },
+      {
+        "date": "2026-08-06",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       }
     ],
     "max_cards": 6033,
@@ -3283,6 +3181,48 @@
     "source": "RussianTranslation/CHANGELOG.md",
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md",
     "entries": [
+      {
+        "version": "1.143.0",
+        "date": "2026-08-06",
+        "bullets": [
+          {
+            "title": "Fixed",
+            "summary": "- **The live gate priced a different call than the lane it gates — the probe spawned from the repo cwd, never adopting H2158's `bare_cli_cwd()` (H2299, 06-08-2026, Opus 5 1M `claude-opus-5[1m]`):** [`max_account_orchestrator._probe_call`](https://github.com/gasyoun/SanskritLex…"
+          },
+          {
+            "title": "Added",
+            "summary": "- **c4's measured-leg hang classified against all three named candidates, offline, with zero spend (H2299, 06-08-2026, Opus 5 1M `claude-opus-5[1m]`; probe executor Sonnet 5 `claude-sonnet-5`):** [C4_MEASURED_LEG_KILL_CEILING_HANG_CLASSIFICATION_06-08-2026.md](https://github.c…"
+          },
+          {
+            "title": "Changed",
+            "summary": "- **06-08-2026 — [`review_evidence_preflight.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_evidence_preflight.py) is now a re-export shim over `csl_pyutil.evidence` (H1889, Opus 5 1M `claude-opus-5[1m]`):** the H1887 gate was wr…"
+          }
+        ]
+      },
+      {
+        "version": "1.142.12",
+        "date": "2026-08-05",
+        "bullets": [
+          {
+            "title": "Added",
+            "summary": "- **05-08-2026 c4 gate-0 sitting recorded: HEALTH_NOGO again, but a different death — and the two NO-GO days must not be conflated (`/pwg-live-gate`, 05-08-2026, Opus 5 1M `claude-opus-5[1m]`; probe executor Sonnet 5 `claude-sonnet-5`):** run `#730`, policy `production_v3`. Wa…"
+          }
+        ]
+      },
+      {
+        "version": "1.142.11",
+        "date": "2026-08-05",
+        "bullets": [
+          {
+            "title": "Fixed",
+            "summary": "- **Two docs stated a next-legal-probe time 362 s too early, and an unattended one-shot was armed on it (H2259, 05-08-2026, Opus 5 1M `claude-opus-5[1m]`):** the 03-08 `/pwg-live-gate` write-up and the matching [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/b…"
+          },
+          {
+            "title": "Added",
+            "summary": "- **The 03-08 attempt-2 gate reading is on the record with its actual ending, not a remembered one (H2259):** a dated entry in [`RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md) with both fires (the 10:36Z smoke te…"
+          }
+        ]
+      },
       {
         "version": "1.142.0",
         "date": "2026-08-03",
@@ -3412,36 +3352,6 @@
             "summary": "- **PWG translation duplication → optimization inventory (02-08-2026, Grok 4.5 `grok-4.5`, H2222):** durable map of *intentional* vs *unjustified* duplication so the next session hunts **code/logic twins**, not edition restates or style doublets. Taxonomy A–D (lexicographic / …"
           }
         ]
-      },
-      {
-        "version": "1.137.3",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Fixed",
-            "summary": "- **The cost table priced 1 h cache writes at the 5 m rate, under-reporting every CLI call by 1.6× on that line (H2190, 02-08-2026, Opus 5 `claude-opus-5`):** `PRICE['cache_write'] = 3.75` is the **five-minute** rate (1.25× base); every write the pwg_ru CLI lane produces lands…"
-          }
-        ]
-      },
-      {
-        "version": "1.137.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Added",
-            "summary": "- **Prompt-caching playbook of record + Opus practical handoffs (02-08-2026, Grok 4.5 `grok-4.5`):** single file [`PROMPT_CACHING_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PROMPT_CACHING_PWG_RU.md) consolidates standing truth (C…"
-          }
-        ]
-      },
-      {
-        "version": "1.135.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Added",
-            "summary": "- **H2158 Phase 1 — the pwg_ru route A/B, and the measurement that reframes it (02-08-2026, Opus 5 `claude-opus-5`):** two-arm harness [`h2158_route_ab.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2158_route_ab.py) (CLI-headles…"
-          }
-        ]
       }
     ]
   },
@@ -3457,7 +3367,9 @@
       "clean_key_count": 18,
       "wall_clock_minutes": 6.162,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:30Z",
@@ -3469,7 +3381,9 @@
       "clean_key_count": 9,
       "wall_clock_minutes": 11.083,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:31Z",
@@ -3481,7 +3395,9 @@
       "clean_key_count": 1,
       "wall_clock_minutes": 3.338,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:33Z",
@@ -3493,7 +3409,9 @@
       "clean_key_count": 18,
       "wall_clock_minutes": 4.07,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:35Z",
@@ -3505,7 +3423,9 @@
       "clean_key_count": 8,
       "wall_clock_minutes": 3.496,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:38Z",
@@ -3517,7 +3437,9 @@
       "clean_key_count": 19,
       "wall_clock_minutes": 5.744,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:40Z",
@@ -3529,7 +3451,9 @@
       "clean_key_count": 14,
       "wall_clock_minutes": 4.531,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:42Z",
@@ -3541,7 +3465,9 @@
       "clean_key_count": 4,
       "wall_clock_minutes": 139.56,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:44Z",
@@ -3553,7 +3479,9 @@
       "clean_key_count": 3,
       "wall_clock_minutes": 14.078,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:46Z",
@@ -3565,7 +3493,9 @@
       "clean_key_count": 1,
       "wall_clock_minutes": 9.736,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:49Z",
@@ -3577,7 +3507,9 @@
       "clean_key_count": 5,
       "wall_clock_minutes": 3.52,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:26:10Z",
@@ -3589,7 +3521,9 @@
       "clean_key_count": 19,
       "wall_clock_minutes": 5.744,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     }
   ],
   "last_window": {
@@ -3602,6 +3536,8 @@
     "clean_key_count": 19,
     "wall_clock_minutes": 5.744,
     "tokens": null,
-    "gen_model": null
+    "gen_model": null,
+    "host": null,
+    "profile": null
   }
 }

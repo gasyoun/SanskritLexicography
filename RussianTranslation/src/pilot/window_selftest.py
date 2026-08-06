@@ -6851,6 +6851,103 @@ def test_ledger_stamps_gen_model():
         fail('bare-run ledger gen_model should be None, got %r' % row.get('gen_model'))
 
 
+def test_ledger_stamps_host_profile_b8():
+    """H2231 B8: every ledger row stamps gen_model + host + profile keys.
+
+    - gen_model from workflow_meta.gen_model (and execution.model_identifier fallback)
+    - profile from execution.profile_slot / source_profile / PWG_PROFILE_SLOT
+    - host from PWG_HOST (or COMPUTERNAME / hostname)
+    Keys always present; null is honest when unknown.
+    """
+    from window_reports import (
+        write_reports, resolve_gen_model, resolve_host, resolve_profile,
+    )
+    base = {'null_cards': [], 'requeue': [], 'crashed': [], 'gates': {},
+            'glue': None, 'collect': {}, 'requeue_transient': [], 'requeue_defect': [],
+            'judge_sample': {'keys': [], 'sample_count': 0, 'seed': None,
+                             'clean_key_count': 0}}
+
+    def ledger_row_for(report, env=None):
+        tmp = tempfile.mkdtemp()
+        # resolve_* consult os.environ; set/restore for host/profile env tests
+        saved = {}
+        if env is not None:
+            for k, v in env.items():
+                saved[k] = os.environ.get(k)
+                if v is None:
+                    os.environ.pop(k, None)
+                else:
+                    os.environ[k] = v
+        try:
+            write_reports(report, True, out_dir=tmp)
+            ledger = os.path.join(tmp, 'window_ledger.jsonl')
+            rows = [json.loads(ln) for ln in open(ledger, encoding='utf-8') if ln.strip()]
+            if len(rows) != 1:
+                fail('expected exactly one ledger row, got %d' % len(rows))
+            return rows[0]
+        finally:
+            for k, old in saved.items():
+                if old is None:
+                    os.environ.pop(k, None)
+                else:
+                    os.environ[k] = old
+
+    # Full multi-lane tags from workflow_meta.execution
+    stamped = dict(
+        base, workflow='wf.json', root='h2231lane', keys=['k1'],
+        workflow_meta={
+            'gen_model': 'claude-sonnet-5',
+            'execution': {
+                'profile_slot': 'c4',
+                'model_identifier': 'claude-sonnet-5',
+            },
+        },
+    )
+    row = ledger_row_for(stamped, env={'PWG_HOST': 'desk-a'})
+    for key in ('gen_model', 'host', 'profile'):
+        if key not in row:
+            fail('ledger row missing %s key entirely' % key)
+    if row['gen_model'] != 'claude-sonnet-5':
+        fail('gen_model mismatch: %r' % row.get('gen_model'))
+    if row['host'] != 'desk-a':
+        fail('host mismatch: %r' % row.get('host'))
+    if row['profile'] != 'c4':
+        fail('profile mismatch: %r' % row.get('profile'))
+
+    # model_identifier fallback when gen_model absent
+    via_exec = dict(
+        base, workflow='wf.json', root='h2231exec', keys=['k1'],
+        workflow_meta={'execution': {'model_identifier': 'claude-fable-5',
+                                     'profile_slot': 'c2'}},
+    )
+    row = ledger_row_for(via_exec, env={'PWG_HOST': 'desk-b'})
+    if row.get('gen_model') != 'claude-fable-5':
+        fail('execution.model_identifier fallback failed: %r' % row.get('gen_model'))
+    if row.get('profile') != 'c2':
+        fail('profile from execution.profile_slot failed: %r' % row.get('profile'))
+
+    # source_profile (legacy Max Workflow) as profile fallback
+    via_sp = dict(
+        base, workflow='wf.json', root='h2231sp', keys=['k1'],
+        workflow_meta={'source_profile': 'max-legacy'},
+    )
+    row = ledger_row_for(via_sp, env={'PWG_HOST': None, 'PWG_PROFILE_SLOT': None,
+                                      'PWG_PROFILE': None})
+    if row.get('profile') != 'max-legacy':
+        fail('source_profile fallback failed: %r' % row.get('profile'))
+
+    # resolve_* pure helpers (no write path)
+    st = {'workflow_meta': {'gen_model': 'x'}}
+    if resolve_gen_model(st) != 'x':
+        fail('resolve_gen_model broken')
+    if resolve_host({'host': 'h1'}, env={}) != 'h1':
+        fail('resolve_host explicit broken')
+    if resolve_host({}, env={'PWG_HOST': 'env-host'}) != 'env-host':
+        fail('resolve_host env broken')
+    if resolve_profile({}, env={'PWG_PROFILE_SLOT': 'c5'}) != 'c5':
+        fail('resolve_profile env broken')
+
+
 def test_h1553_wall_clock_auto_derive():
     """H1553 / H1403 A2: wall_clock auto-derive + wall_clock_source stamping.
 
@@ -9097,6 +9194,7 @@ def main():
         test_opt7_last_audit_tm_refuse_without_no_tm,
         test_write_reports_emits_defect_fsha_file,
         test_ledger_stamps_gen_model,
+        test_ledger_stamps_host_profile_b8,
         test_h1553_wall_clock_auto_derive,
         test_h1553_stage_boundary_emit,
         test_save_merge_better_attempt_wins,

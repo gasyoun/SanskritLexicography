@@ -199,6 +199,7 @@
 </div>
 <div class="section-grid">
   <div class="panel"><h3>Promotion vs generation (B6)</h3><div id="promoteBody" class="note">—</div></div>
+  <div class="panel"><h3>Multi-lane mix (B8)</h3><div id="laneMixBody" class="note">—</div></div>
 </div>
 
 <h3>Campaign calendar</h3>
@@ -639,11 +640,16 @@ function renderKitchen(k) {
   // K6 + K8 + K9 (H2230 post_cut/historical split)
   const pc = instr.post_cut || {};
   const hist = instr.historical || {};
+  const gmMix = instr.gen_models || {};
+  const gmMixLine = Object.keys(gmMix).length
+    ? `<p class="mut">models: ${Object.entries(gmMix).map(([k, v]) => `${esc(k)} ${v}`).join(' · ')}</p>`
+    : '';
   document.getElementById('instrBody').innerHTML = (instr.measured || honesty.measured)
     ? `<p>Wall-clock present <b>${fmt(instr.wall_clock_present)}/${fmt(instr.windows)}</b> ` +
       `(${instr.wall_clock_coverage_pct != null ? instr.wall_clock_coverage_pct + '%' : '—'} blended)</p>` +
       `<p>Tokens present <b>${fmt(instr.token_metrics_present)}/${fmt(instr.windows)}</b> · ` +
       `gen_model <b>${fmt(instr.gen_model_present)}</b> (${instr.gen_model_coverage_pct != null ? instr.gen_model_coverage_pct + '%' : '—'})</p>` +
+      gmMixLine +
       (instr.measured
         ? `<p class="mut">post_cut wall-clock <b>${fmt(pc.wall_clock_present)}/${fmt(pc.windows)}</b> ` +
           `(${pc.wall_clock_coverage_pct != null ? pc.wall_clock_coverage_pct + '%' : '—'}) · ` +
@@ -653,6 +659,35 @@ function renderKitchen(k) {
       (honesty.badge ? `<p><span class="badge">${esc(honesty.badge)}</span></p>` : '') +
       `<p class="mut">${esc(honesty.note || instr.note || '')}</p>`
     : '—';
+
+  // B8 multi-lane mix — gen_model / host / profile counts
+  const lane = k.multi_lane || {};
+  const laneEl = document.getElementById('laneMixBody');
+  if (laneEl) {
+    if (lane.measured) {
+      const models = lane.gen_models || {};
+      const hosts = lane.hosts || {};
+      const profiles = lane.profiles || {};
+      const fmtMix = (obj) => Object.keys(obj).length
+        ? Object.entries(obj).map(([k, v]) => `<span class="badge">${esc(k)}</span> ${v}`).join(' · ')
+        : '—';
+      laneEl.innerHTML =
+        `<p><span class="badge">${lane.multi_lane ? 'multi-lane' : 'single-lane'}</span> ` +
+        `windows <b>${fmt(lane.windows)}</b></p>` +
+        `<p>gen_model <b>${fmt(lane.gen_model_present)}</b>` +
+        `${lane.gen_model_coverage_pct != null ? ` (${lane.gen_model_coverage_pct}%)` : ''} · ` +
+        `host <b>${fmt(lane.host_present)}</b>` +
+        `${lane.host_coverage_pct != null ? ` (${lane.host_coverage_pct}%)` : ''} · ` +
+        `profile <b>${fmt(lane.profile_present)}</b>` +
+        `${lane.profile_coverage_pct != null ? ` (${lane.profile_coverage_pct}%)` : ''}</p>` +
+        `<p>Models: ${fmtMix(models)}</p>` +
+        `<p>Hosts: ${fmtMix(hosts)}</p>` +
+        `<p>Profiles: ${fmtMix(profiles)}</p>` +
+        `<p class="mut">${esc(lane.note || '')}</p>`;
+    } else {
+      laneEl.innerHTML = '<p class="mut">no ledger yet</p>';
+    }
+  }
 
   // Top roots
   const tops = yld.top_roots || [];

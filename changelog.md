@@ -14,6 +14,18 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **Progress kitchen B8 multi-lane mix (H2231, Grok 4.5 `grok-4.5`):** every
+  `append_ledger` row now stamps `gen_model` / `host` / `profile` (null when
+  unknown). Model from `workflow_meta.gen_model` or
+  `execution.model_identifier`; profile from `execution.profile_slot` /
+  `source_profile` / `PWG_PROFILE_SLOT`; host from `PWG_HOST` /
+  `COMPUTERNAME` / hostname. Kitchen emits a `multi_lane` block (model/host/
+  profile counts + `multi_lane` flag) and the public progress page shows a
+  **Multi-lane mix (B8)** panel. Pins:
+  `window_selftest.test_ledger_stamps_host_profile_b8`,
+  `progress_dashboard/kitchen_multi_lane_selftest.py`.
+
 ## [1.144.2] - 2026-08-06
 
 ### Fixed
@@ -35,7 +47,6 @@ not an error.
   — the aborted rank-2 route A/B, with all 6 raw envelopes committed. The two CLI legs that
   did land re-confirm H2250's non-comparability point: the identical prompt took **3 vs 2
   turns** and cost moved **3.4×** with it ($1.3040 → $0.3804).
-
 
 ## [1.144.0] - 2026-08-06
 
