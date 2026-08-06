@@ -14,6 +14,67 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.0] - 2026-08-06
+
+### Changed
+- **`execution.cli_safe_mode` defaults ON — the H2189 profile-surface strip is now the
+  production spawn** (H2251, Opus 5 `claude-opus-5`; paid calls on Sonnet 5
+  `claude-sonnet-5`). Flipped on the two things H2189 §5.1 named as its preconditions: a
+  **canary GO receipt produced on the safe-mode arm** (health PASS 43 638 ms wall /
+  15 846 ms route, canary 3/3 senses, zero `{Tn}`/`SAN-LOSS`/`UNMAPPED`) and a **both-ways
+  comparison** — 3 cards × 2 arms × **2 repeats**, 12 calls, $6.3140. Tri-state and the
+  opt-out survives: absent ⇒ ON, `true` ⇒ ON, **`false` ⇒ the historical spawn**.
+  H2189's `test_safe_mode_is_opt_in_and_off_by_default` is **re-pointed, not deleted**, to
+  `test_safe_mode_default_is_on_and_an_explicit_false_still_opts_out`, which asserts both
+  halves. Full report:
+  [SAFE_MODE_CANARY_GO_AND_TAG_DIVERGENCE_RULING_06-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2251/SAFE_MODE_CANARY_GO_AND_TAG_DIVERGENCE_RULING_06-08-2026.md).
+- **H2189's headline savings are corrected — they were n=1 and did not replicate** (H2251).
+  At n=6 per arm: create **−40 %**, output **−4.4 %**, wall **−12.3 %**, cost **−22.3 %** —
+  against the quoted −69 / −49 / −55 / −61 %. The "output halving is agent-loop overhead"
+  inference (H2189 §4.1) is **retired** with the halving itself. What replicated is the
+  argument that actually carries the flip: on `sakft` the baseline ran **286 694 ms** and
+  **266 349 ms** against the **300 000 ms** kill ceiling, twice within ~11 % of dying, where
+  the safe arm ran 232 891 and 189 106. `RUN_FREQ_MAX.md` updated to match.
+
+### Added
+- **The H2189 §4.2 `tag` divergence is ruled, mechanically** (H2251).
+  [`h2251_tag_compare.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2251_tag_compare.py)
+  separates *the flag caused it* from *the draw caused it* by comparing within-arm against
+  between-arm Jaccard distance — repeats, not more cards, are what hold the flag constant.
+  Result: the free-text vocabulary is **not reproducible with the flag held constant** (mean
+  within-arm 0.535; two arm-cards completely disjoint against themselves), which is the
+  condition H2189 itself named as closing the question. An arm-linked **style** component
+  survives on top of that (every one of the 12 between-arm pairs disjoint) and is logged as
+  an **open residual**, not waved away.
+- **Card-content equivalence checked at n=12 instead of H2189's n=1** (H2251),
+  [`h2251_content_equivalence.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2251_content_equivalence.py).
+  Zero content loss in all 12 draws; sense segmentation moves **as much within one arm as
+  between arms** (so H2189 §4.1's "7 records / 13 senses identical" was an n=1 coincidence),
+  and on `nakzatra` the `paid` arm differs from *itself* more than the arms differ from each
+  other on the `{Tn}` set. Card content is therefore not a function of the spawn shape.
+- **A canary receipt can now name the arm it was produced on** (H2251).
+  `canary_manifest_build.py --cli-safe-mode` / `--no-cli-safe-mode` pins
+  `execution.cli_safe_mode` into the manifest **before** its SHA-256, so the digest the
+  worker verifies covers the arm the receipt claims; `canary_gate.py judge` records that arm
+  in the receipt. Until this existed, "a GO receipt produced on the safe-mode arm, not
+  inherited from a baseline run" was unverifiable from the artifact itself.
+- **`headless_worker` status records `cli_safe_mode_effective`** (H2251) — what the spawn
+  DID, distinct from what the manifest REQUESTED. They differ exactly in the loud-downgrade
+  case, whose stderr warning is otherwise ephemeral, so a run that reported H2189 savings
+  while paying the full profile tax can now be identified from its own artifacts.
+
+### Fixed
+- **Gate evidence no longer lands only in a gitignored tree** (H2251). The canary receipt,
+  envelope, status, manifest and preflight are copied into committed
+  [`pwg_ru/h2251/gate/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/pwg_ru/h2251/gate);
+  `RussianTranslation/src/pilot/output/` is `.gitignore:67`, so the acceptance artifact
+  would have been destroyed by the next cleanup (the H895 evidence-loss class).
+- **LANG_PARITY ledger back to zero drift** (H2251): 7 entries re-derived, SHARED on all
+  seven — this session's `headless_worker.py` spawn change, plus 4 pre-existing entries left
+  unstamped by [#1145](https://github.com/gasyoun/SanskritLexicography/pull/1145) (H2299).
+  `window_selftest` **209/209**, up from a 208/209 baseline in which
+  `test_lang_parity_ledger_complete` was already failing on arrival.
+
 ## [1.143.1] - 2026-08-06
 
 ### Changed

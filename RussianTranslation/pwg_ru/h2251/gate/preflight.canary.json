@@ -1,0 +1,81 @@
+{
+  "schema": "pwg.performance_preflight.v1",
+  "root": "nominal_c4canary",
+  "lang": "ru",
+  "nominal": true,
+  "selected_keys": [
+    "dq_canary_puregloss~~h0_zz_pw"
+  ],
+  "tm_sidecar": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography-h2251-1288758\\RussianTranslation\\pwg_ru\\h994\\translation_memory.ru.json",
+  "tm_available": false,
+  "tm_auto": true,
+  "tm_hits": [],
+  "tm_cards": 0,
+  "frag_tm_sidecar": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography-h2251-1288758\\RussianTranslation\\pwg_ru\\h994\\translation_memory.frag.ru.jsonl",
+  "frag_tm_available": false,
+  "frag_tm_entries": 0,
+  "frag_tm_cards": [],
+  "frag_tm_fragments": 0,
+  "fragment_hit_groups": {},
+  "degenerate_passthrough_keys": [],
+  "near_degenerate_candidates": [],
+  "presplit_keys": [],
+  "batch_count": 1,
+  "agent_expected_after_tm": 1,
+  "output_budget": 90,
+  "selfheal_group_budget": 12,
+  "recommended_action": "run-now-low",
+  "warnings": [],
+  "generator_log": [
+    "  tm: C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography-h2251-1288758\\RussianTranslation\\pwg_ru\\h994\\translation_memory.ru.json not found — no pre-resolution (run translation_memory.py build)",
+    "  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=1"
+  ],
+  "cost_gate": {
+    "est_agents_with_realism": 1.4,
+    "realism_factor": 1.35,
+    "est_tokens": 81000,
+    "est_cost_usd": 0.15,
+    "cards_to_translate": 1,
+    "est_cost_per_card_usd": 0.15,
+    "per_card_ceiling_usd": 2.0,
+    "window_ceiling_usd": 25.0,
+    "over_ceiling": false,
+    "verdict": "ok",
+    "rate_basis": "Sonnet 5 list rates; token estimate is model-independent"
+  },
+  "cost_partition": {
+    "schema": "pwg.performance_preflight.cost_partition.v1",
+    "per_card_ceiling_usd": 2.0,
+    "run_now": [
+      "dq_canary_puregloss~~h0_zz_pw"
+    ],
+    "defer_monster": [],
+    "totals": {
+      "run_now": {
+        "agent_expected_after_tm": 1,
+        "est_agents_with_realism": 1.4,
+        "est_tokens": 81000,
+        "est_cost_usd": 0.15
+      },
+      "defer_monster": {
+        "agent_expected_after_tm": 0,
+        "est_agents_with_realism": 0.0,
+        "est_tokens": 0,
+        "est_cost_usd": 0.0
+      }
+    },
+    "per_card": {
+      "dq_canary_puregloss~~h0_zz_pw": {
+        "key": "dq_canary_puregloss~~h0_zz_pw",
+        "agent_expected_after_tm": 1,
+        "est_agents_with_realism": 1.4,
+        "est_tokens": 81000,
+        "est_cost_usd": 0.15,
+        "est_cost_per_card_usd": 0.15,
+        "tm_resolved": false,
+        "degenerate_passthrough": false
+      }
+    },
+    "recommendation": "run_now window is under the per-card monster ceiling"
+  }
+}

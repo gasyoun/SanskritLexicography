@@ -1,0 +1,248 @@
+{
+  "raw_dir": "pwg_ru/h2251/raw",
+  "keys": [
+    "nakzatra",
+    "sakft",
+    "sarvatra"
+  ],
+  "per_key": [
+    {
+      "key": "nakzatra",
+      "arms": {
+        "paid": {
+          "draws": 2,
+          "tags": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "addendum",
+            "note"
+          ]
+        },
+        "safe": {
+          "draws": 2,
+          "tags": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "3-xref",
+            "SCH-add",
+            "add-n.pr",
+            "ref"
+          ]
+        }
+      },
+      "within": [
+        {
+          "arm": "paid",
+          "a": "paid#1",
+          "b": "paid#2",
+          "distance": 0.33333333333333337,
+          "free_text_distance": 0.5
+        },
+        {
+          "arm": "safe",
+          "a": "safe#1",
+          "b": "safe#2",
+          "distance": 0.5,
+          "free_text_distance": 1.0
+        }
+      ],
+      "between": [
+        {
+          "arms": "paid|safe",
+          "a": "paid#1",
+          "b": "safe#1",
+          "distance": 0.6666666666666667,
+          "free_text_distance": 1.0
+        },
+        {
+          "arms": "paid|safe",
+          "a": "paid#1",
+          "b": "safe#2",
+          "distance": 0.5714285714285714,
+          "free_text_distance": 1.0
+        },
+        {
+          "arms": "paid|safe",
+          "a": "paid#2",
+          "b": "safe#1",
+          "distance": 0.5,
+          "free_text_distance": 1.0
+        },
+        {
+          "arms": "paid|safe",
+          "a": "paid#2",
+          "b": "safe#2",
+          "distance": 0.33333333333333337,
+          "free_text_distance": 1.0
+        }
+      ]
+    },
+    {
+      "key": "sakft",
+      "arms": {
+        "paid": {
+          "draws": 2,
+          "tags": [
+            "0",
+            "1",
+            "2",
+            "2a",
+            "2b",
+            "2c",
+            "2d",
+            "2e",
+            "3",
+            "SCH",
+            "note",
+            "прим."
+          ]
+        },
+        "safe": {
+          "draws": 2,
+          "tags": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "PW-1",
+            "PW-2",
+            "PW-2a",
+            "PW-2b",
+            "PW-2c",
+            "PW-2d",
+            "PW-2e",
+            "SCH-1",
+            "SCH-add"
+          ]
+        }
+      },
+      "within": [
+        {
+          "arm": "paid",
+          "a": "paid#1",
+          "b": "paid#2",
+          "distance": 0.25,
+          "free_text_distance": 0.375
+        },
+        {
+          "arm": "safe",
+          "a": "safe#1",
+          "b": "safe#2",
+          "distance": 0.23076923076923073,
+          "free_text_distance": 0.33333333333333337
+        }
+      ],
+      "between": [
+        {
+          "arms": "paid|safe",
+          "a": "paid#1",
+          "b": "safe#1",
+          "distance": 0.7777777777777778,
+          "free_text_distance": 1.0
+        },
+        {
+          "arms": "paid|safe",
+          "a": "paid#1",
+          "b": "safe#2",
+          "distance": 0.7647058823529411,
+          "free_text_distance": 1.0
+        },
+        {
+          "arms": "paid|safe",
+          "a": "paid#2",
+          "b": "safe#1",
+          "distance": 0.7894736842105263,
+          "free_text_distance": 1.0
+        },
+        {
+          "arms": "paid|safe",
+          "a": "paid#2",
+          "b": "safe#2",
+          "distance": 0.7777777777777778,
+          "free_text_distance": 1.0
+        }
+      ]
+    },
+    {
+      "key": "sarvatra",
+      "arms": {
+        "paid": {
+          "draws": 2,
+          "tags": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        "safe": {
+          "draws": 2,
+          "tags": [
+            "0",
+            "1",
+            "2",
+            "etym",
+            "tail"
+          ]
+        }
+      },
+      "within": [
+        {
+          "arm": "paid",
+          "a": "paid#1",
+          "b": "paid#2",
+          "distance": 0.0,
+          "free_text_distance": 0.0
+        },
+        {
+          "arm": "safe",
+          "a": "safe#1",
+          "b": "safe#2",
+          "distance": 0.4,
+          "free_text_distance": 1.0
+        }
+      ],
+      "between": [
+        {
+          "arms": "paid|safe",
+          "a": "paid#1",
+          "b": "safe#1",
+          "distance": 0.25,
+          "free_text_distance": 1.0
+        },
+        {
+          "arms": "paid|safe",
+          "a": "paid#1",
+          "b": "safe#2",
+          "distance": 0.25,
+          "free_text_distance": 1.0
+        },
+        {
+          "arms": "paid|safe",
+          "a": "paid#2",
+          "b": "safe#1",
+          "distance": 0.25,
+          "free_text_distance": 1.0
+        },
+        {
+          "arms": "paid|safe",
+          "a": "paid#2",
+          "b": "safe#2",
+          "distance": 0.25,
+          "free_text_distance": 1.0
+        }
+      ]
+    }
+  ],
+  "mean_within_arm_distance": 0.2856837606837607,
+  "mean_between_arm_distance": 0.5150969744622995,
+  "mean_within_arm_free_text_distance": 0.5347222222222222,
+  "mean_between_arm_free_text_distance": 1.0,
+  "within_pairs": 6,
+  "between_pairs": 12,
+  "ruling": "mixed",
+  "why": "tag vocabulary is unstable within an arm (mean 0.286) AND differs more across arms (mean 0.515). Neither cause is excluded; do not read this as a licence to flip."
+}

@@ -149,6 +149,13 @@ def cmd_judge(args):
         'wf_sha256': hashlib.sha256(open(args.wf_output, 'rb').read()).hexdigest(),
         'expect_senses': args.expect_senses,
         'profile_slot': execution.get('profile_slot'),
+        # H2251: which SPAWN SHAPE this receipt is evidence about. A canary judged on one
+        # spawn shape says nothing about a lane running the other, and until this field
+        # existed a receipt could not distinguish the two -- which is what made "a GO
+        # receipt produced on the safe-mode arm, not inherited from a baseline run"
+        # unverifiable from the artifact itself. `None` means the manifest pinned nothing
+        # and the lane default applied at judging time; it is NOT the same as `False`.
+        'cli_safe_mode': execution.get('cli_safe_mode'),
         'reasons': reasons,
         'facts': facts,
     }

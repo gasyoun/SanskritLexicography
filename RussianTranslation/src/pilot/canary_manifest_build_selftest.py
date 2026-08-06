@@ -147,6 +147,41 @@ def assert_matches_golden(manifest):
             'and copy execution_manifest.canary.json over %s' % (differing, GOLDEN))
 
 
+def assert_safe_mode_pin_is_explicit_and_sha_bound(tmp):
+    """H2251: the spawn arm is pinnable, tri-state, and covered by the digest.
+
+    A canary receipt is only evidence about the arm it actually ran on. The three
+    properties that make it so:
+
+      * absent by default -- an ordinary gate carries no ``cli_safe_mode`` key and keeps
+        the lane default (already proven byte-for-byte by the golden diff above);
+      * ``True``/``False`` are BOTH writable, and ``False`` is not the same as absent:
+        a lane that later flips its default needs an explicit opt-OUT that survives it;
+      * the value lands BEFORE the SHA-256, so a pinned manifest cannot be swapped for the
+        other spawn shape behind a digest the worker still accepts.
+    """
+    shas = {}
+    for pin in (True, False):
+        config_dir = os.path.join(tmp, 'pin%s' % pin, '.claude')
+        os.makedirs(config_dir)
+        manifest_path, _harness, _pf, sha = cmb.build(
+            'c4', config_dir, os.path.join(tmp, 'out%s' % pin), 'nominal_c4canary',
+            cli_safe_mode=pin)
+        with open(manifest_path, encoding='utf-8') as fh:
+            manifest = json.load(fh)
+        validate_manifest(manifest, require_v2=True)     # pinning must not break the contract
+        check(manifest['execution']['cli_safe_mode'] is pin,
+              'cli_safe_mode=%r was not pinned into the execution block, got %r'
+              % (pin, manifest['execution'].get('cli_safe_mode')))
+        check(sha == cmb.sha256_file(manifest_path),
+              'the returned sha256 does not cover the pinned manifest -- the arm the '
+              'receipt claims could be swapped behind a digest the worker still accepts')
+        shas[pin] = sha
+    check(shas[True] != shas[False],
+          'the two spawn arms produced the SAME manifest digest; --manifest-sha256 could '
+          'then not tell a safe-mode canary from a baseline one')
+
+
 def selftest():
     with tempfile.TemporaryDirectory() as tmp:
         manifest, config_dir, preflight, sha = build_into(tmp)
@@ -155,6 +190,10 @@ def selftest():
         assert_matches_golden(manifest)
         check(os.path.exists(preflight), 'builder did not emit the real lane preflight')
         check(len(sha) == 64, 'builder did not return a manifest sha256')
+        check('cli_safe_mode' not in manifest['execution'],
+              'the DEFAULT canary build must leave cli_safe_mode absent (lane default); '
+              'a pinned default would silently re-arm every future gate')
+        assert_safe_mode_pin_is_explicit_and_sha_bound(tmp)
     return True
 
 

@@ -1,0 +1,24 @@
+{
+  "schema": "pwg.canary_gate_receipt.v1",
+  "verdict": "GO",
+  "judged_at_epoch": 1786003294.3814602,
+  "wf_output": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography-h2251-1288758\\RussianTranslation\\src\\pilot\\output\\h2251\\out.canary.json",
+  "wf_sha256": "6b9f5d1db094704361e99b26b4901e4984a805a0f2683b9e1f66ce7211185ff1",
+  "expect_senses": 3,
+  "profile_slot": "c4",
+  "cli_safe_mode": true,
+  "reasons": [],
+  "facts": {
+    "keys": [
+      "dq_canary_puregloss~~h0_zz_pw"
+    ],
+    "sense_counts": [
+      [
+        "dq_canary_puregloss~~h0_zz_pw",
+        3
+      ]
+    ],
+    "tn_hits": [],
+    "marker_hits": []
+  }
+}

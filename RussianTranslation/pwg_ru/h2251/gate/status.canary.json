@@ -1,0 +1,17 @@
+{
+ "classification": "success",
+ "attempts": [
+  {
+   "label": "b0",
+   "keys": [
+    "dq_canary_puregloss~~h0_zz_pw"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 39690,
+   "classification": "success"
+  }
+ ],
+ "null_keys": [],
+ "manifest_sha256": "769ffffbdbf248ee23815a69395fd66c67b3d15c50bfc3df6d43833b237da00b",
+ "result_sha256": "6b9f5d1db094704361e99b26b4901e4984a805a0f2683b9e1f66ce7211185ff1"
+}
