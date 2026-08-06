@@ -1,0 +1,50 @@
+{
+  "rows": [
+    {
+      "arm": "paid",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 61617,
+      "returncode": 1,
+      "api_ms": 21251,
+      "num_turns": 2,
+      "failure_class": "cli_error",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 55125
+      },
+      "ttl_1h_tokens": 0,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.0166035,
+      "n": 1,
+      "cost_usd_1h_write": 0.016604
+    },
+    {
+      "arm": "paid",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 30039,
+      "returncode": 1,
+      "api_ms": 18398,
+      "num_turns": 2,
+      "failure_class": "cli_error",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 55125
+      },
+      "ttl_1h_tokens": 0,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.0166035,
+      "n": 2,
+      "cost_usd_1h_write": 0.016604
+    }
+  ],
+  "summary": {},
+  "manifest": "h1209_slice3.manifest.json",
+  "model": "claude-sonnet-5",
+  "cache_write_1h_rate": 6.0
+}

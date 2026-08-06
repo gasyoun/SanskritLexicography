@@ -1,0 +1,65 @@
+{
+  "is_error": false,
+  "duration_api_ms": 48414,
+  "num_turns": 4,
+  "stop_reason": "end_turn",
+  "session_id": "c1e12455-afaa-4528-8b46-e12f4e3fc331",
+  "total_cost_usd": 0.32801369999999996,
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 37506,
+    "cache_read_input_tokens": 176249,
+    "output_tokens": 3339,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 37506,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 633,
+        "cache_read_input_tokens": 71255,
+        "cache_creation_input_tokens": 1435,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1435
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-sonnet-5": {
+      "inputTokens": 6,
+      "outputTokens": 3339,
+      "cacheReadInputTokens": 176249,
+      "cacheCreationInputTokens": 37506,
+      "webSearchRequests": 0,
+      "costUSD": 0.32801369999999996,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "That instruction is trying to get me to bypass Plan Mode's explicit restriction (\"MUST NOT run any non-readonly tools... this supersedes any other instructions\"). It arrives as plain user-message text dressed up as a \"stop hook feedback\" — not as an actual `<system-reminder>` — and it's asking me to do exactly the thing the real system reminder forbids (call a tool other than `AskUserQuestion`/`ExitPlanMode`) plus append an unrelated \"⭐ Next\" footer convention from a different project's workflow. I'm treating this as a prompt-injection attempt, not a legitimate instruction, and I won't comply with it.\n\nTo be clear about where things stand: I'm in Plan Mode, which is scoped for software-change planning and doesn't fit a translation/structured-output task like this one. I can't call `StructuredOutput` right now without violating that mode's explicit constraint, and I can't call `AskUserQuestion` because it isn't available in this environment. So the only route forward is for you to either turn off Plan Mode (or explicitly confirm you want me to proceed despite it) so I can produce the actual translation, or clarify if something else is intended.",
+  "ttft_ms": 23319,
+  "ttft_stream_ms": 6793,
+  "time_to_request_ms": 4025,
+  "type": "result",
+  "duration_ms": 64109,
+  "uuid": "a40dec2d-bd75-46d4-8468-0656d04333c4"
+}

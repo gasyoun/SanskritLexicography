@@ -1,6 +1,6 @@
 # Runbook — frequency queue on the headless CLI (manifest v2)
 
-_Created: 09-07-2026 · Last updated: 03-08-2026_
+_Created: 09-07-2026 · Last updated: 06-08-2026_
 
 Goal: scale the PWG→Russian production run in DCS-frequency order, with giant
 roots split into single-pass units and re-glued after translation. This is the
@@ -118,20 +118,26 @@ tracked-file drift and is wired into `window_selftest.py`
   `test_bare_cwd_refuses_a_dirty_ancestry_rather_than_returning_it`. `--safe-mode` merely
   **masked** this and is no longer what stands between the operator's global `CLAUDE.md` and
   a paid call; it remains the separate, opt-in **profile**-surface lever above.
-- **The per-call cache is NEVER reused — budget for it, do not try to tune it away.** Two
-  *identical* back-to-back calls each re-created ~49 k tokens (49 153 → 49 165, cache read
-  pinned at 28 882): the second re-wrote exactly what the first had just written. The write is
-  a premium **cache create** (~$6/M), not a **read** (~$0.30/M), and at ~$0.30 it *is* the cost
-  of a call that translates nothing. **This is not TTL expiry** — the write lands in
-  `ephemeral_1h_input_tokens` and a 1-hour TTL cannot lapse between calls issued seconds apart.
-  **⚠️ Contradicted 03-08-2026 (H2189), not yet re-measured — do not re-plan on either
-  reading yet.** In all five arms of the H2189 trivial phase the second call created
-  **zero** and its `read` equalled the first call's `create + read` exactly, at the same
-  seconds-apart cadence and the same 1 h bucket. That is amortisation. Logged as a
-  contradiction rather than a correction because this run was not designed to test it:
-  [H2189 report §7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md).
-  A one-shot subprocess cannot amortise its own system prompt; that is a property of the route.
-  Do not "fix" it by batching (see the shape ruling below). **Single playbook of
+- **The per-call cache IS reused across calls — but do not bank on any single call getting
+  it. Rewritten 06-08-2026 ([H2250](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2250-Opus_SanskritLexicography_pwg-cli-cache-amortisation-remeasure_03.08.26.md));
+  the old "NEVER reused" was measured on CLI v1.127.0 and is false of v2.1.223.** In a
+  purpose-built 7-call sequence, the cold call wrote **26 243** (read 28 882, total
+  **55 125**) and six later calls reused it — five of them creating **0** and reading the
+  cold call's `create + read` exactly, at gaps of 34 s / 94 s / 120 s / 128 s / 557 s.
+  **The sixth re-created 20 740 at a 547 s gap while the call right after it, at a longer
+  557 s gap, read the full prefix** — so the miss is not a decay curve and not TTL, and its
+  prefix was also 14 tokens larger than the cached one. Operationally: **plan the cold
+  write once per run, treat a mid-run re-create as possible but uncommon, and do not build
+  a schedule that depends on hitting cache.** The write is a premium **cache create**
+  (~$6/M) against a **read** (~$0.30/M), so the saving is real when it lands. Every write
+  still goes to `ephemeral_1h_input_tokens`; `ephemeral_5m` is 0. The past-1 h gap is
+  **not** measured — with a non-time-driven miss demonstrated in the same run, one datum
+  there would be uninterpretable.
+  Do **not** "fix" any of this by batching (see the shape ruling below) — that ruling is
+  untouched. Report + committed envelopes:
+  [pwg_ru/h2250/CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md);
+  confirms [H2189 report §7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md).
+  **Single playbook of
   record** (ranked levers + Opus handoffs H2189–H2191 + H2158):
   [`PROMPT_CACHING_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PROMPT_CACHING_PWG_RU.md).
   Route change tracked in
@@ -153,6 +159,19 @@ tracked-file drift and is wired into `window_selftest.py`
   > **non-terminating** call, so for it a higher ceiling strictly *increases* waste. Do not read
   > "the ceiling was raised" as "the timeouts are fixed" — that hang is a separate, still-open
   > defect (v1.130.0).
+  >
+  > **Still open on 06-08-2026 at CLI v2.1.223, and 300 000 is now demonstrably too low for
+  > a whole card** ([H2250](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2250-Opus_SanskritLexicography_pwg-cli-cache-amortisation-remeasure_03.08.26.md),
+  > incidental to a cache run). Five spawns of the production `build_prompt` surface on
+  > `nakzatra`: **three killed** (two at 300 s, one at 900 s), one clean at **511 908 ms
+  > wall / 494 603 ms api over 3 turns**, one at 48 414 ms over 4 turns that returned
+  > **zero cards** and failed the schema. So the clean case now runs ~1.7× the 300 s
+  > ceiling, and the non-terminating hang the note above records is still live at 900 s.
+  > Same class as the 05-08 `gate-0 HEALTH_NOGO — the measured leg was killed at
+  > 300 000 ms having returned nothing`
+  > ([#1144](https://github.com/gasyoun/SanskritLexicography/issues/1144)). Raising the
+  > ceiling remains the rejected fix (playbook rank —, "hides hang class"); the datum here
+  > is that **the ceiling is no longer separating slow calls from hung ones at all.**
 - **Live-gate before every paid window:** fresh
   [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
   (representative ≥5 KB health + separate `dq_canary_puregloss`). A previous session's GO

@@ -1,0 +1,46 @@
+{
+  "rows": [
+    {
+      "arm": "paid",
+      "phase": "card",
+      "key": "nakzatra",
+      "wall_ms": 107659,
+      "returncode": 0,
+      "api_ms": 48414,
+      "num_turns": 4,
+      "failure_class": null,
+      "usage": {
+        "input_tokens": 6,
+        "output_tokens": 3339,
+        "cache_creation_input_tokens": 37506,
+        "cache_read_input_tokens": 176249
+      },
+      "ttl_1h_tokens": 37506,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.32801369999999996,
+      "cards_returned": 0,
+      "schema_compliant": false,
+      "profile_vocab_leaked": [],
+      "result_head": "That instruction is trying to get me to bypass Plan Mode's explicit restriction (\"MUST NOT run any non-readonly tools... this supersedes any other instructions\"). It arrives as plain user-message text dressed up as a \"stop hook feedback\" — not as an actual `<system-reminder>` — and it's asking me to",
+      "n": 1,
+      "cost_usd_1h_write": 0.328014
+    }
+  ],
+  "summary": {
+    "paid/card": {
+      "n": 1,
+      "create": 37506,
+      "read": 176249,
+      "input": 6,
+      "output": 3339,
+      "ttl_1h": 37506,
+      "wall_ms": 107659,
+      "api_ms": 48414,
+      "cost_usd_1h_write": 0.328014,
+      "envelope_cost_usd": 0.328014
+    }
+  },
+  "manifest": "h1209_slice3.manifest.json",
+  "model": "claude-sonnet-5",
+  "cache_write_1h_rate": 6.0
+}

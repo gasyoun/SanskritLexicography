@@ -1,0 +1,56 @@
+{
+  "rows": [
+    {
+      "arm": "paid",
+      "phase": "card",
+      "key": "nakzatra",
+      "wall_ms": 511908,
+      "returncode": 0,
+      "api_ms": 494603,
+      "num_turns": 3,
+      "failure_class": null,
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4091,
+        "cache_creation_input_tokens": 15066,
+        "cache_read_input_tokens": 69811
+      },
+      "ttl_1h_tokens": 15066,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.41927460000000005,
+      "cards_returned": 1,
+      "schema_compliant": true,
+      "profile_vocab_leaked": [],
+      "result_head": "{\"cards\":[{\"key1\":\"nakzatra\",\"iast\":\"nakṣatra\",\"notes\":\"Многослойная статья: PWG — основная (большая) статья Бётлингка-Рота; PW — сокращённая позднейшая редакция Бётлингка (тот же массив + 2 короткие дополнительные записи); SCH — добавление Шмидта 1928 г. (N. pr.); PWKVN — вариантные дополнения к PW",
+      "n": 1,
+      "cost_usd_1h_write": 0.17271
+    },
+    {
+      "arm": "paid",
+      "phase": "card",
+      "key": "nakzatra",
+      "wall_ms": 900000,
+      "failure_class": "timeout",
+      "usage": {},
+      "n": 2,
+      "cost_usd_1h_write": 0.0
+    }
+  ],
+  "summary": {
+    "paid/card": {
+      "n": 1,
+      "create": 15066,
+      "read": 69811,
+      "input": 2,
+      "output": 4091,
+      "ttl_1h": 15066,
+      "wall_ms": 511908,
+      "api_ms": 494603,
+      "cost_usd_1h_write": 0.17271,
+      "envelope_cost_usd": 0.419275
+    }
+  },
+  "manifest": "h1209_slice3.manifest.json",
+  "model": "claude-sonnet-5",
+  "cache_write_1h_rate": 6.0
+}

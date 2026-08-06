@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "arm": "paid",
+      "phase": "card",
+      "key": "nakzatra",
+      "wall_ms": 300000,
+      "failure_class": "timeout",
+      "usage": {},
+      "n": 1,
+      "cost_usd_1h_write": 0.0
+    },
+    {
+      "arm": "paid",
+      "phase": "card",
+      "key": "nakzatra",
+      "wall_ms": 300000,
+      "failure_class": "timeout",
+      "usage": {},
+      "n": 2,
+      "cost_usd_1h_write": 0.0
+    }
+  ],
+  "summary": {},
+  "manifest": "h1209_slice3.manifest.json",
+  "model": "claude-sonnet-5",
+  "cache_write_1h_rate": 6.0
+}
