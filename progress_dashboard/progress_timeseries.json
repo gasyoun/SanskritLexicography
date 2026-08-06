@@ -89,7 +89,8 @@
       "kitchen_yield_clean_pct": 0.63,
       "kitchen_health_last_verdict": "NO-GO",
       "kitchen_health_last_go": 0,
-      "kitchen_idle_hours": 430.54
+      "kitchen_idle_hours": 430.54,
+      "kitchen_current_idle_hours": 91.13
     }
   ]
 }
