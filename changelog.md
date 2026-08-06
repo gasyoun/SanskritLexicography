@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.1] - 2026-08-06
+
 ### Fixed
 - **`h2158_route_ab.py --check` now AUTHENTICATES instead of reporting presence** (H2312,
   Opus 5 1M `claude-opus-5[1m]`). It printed `auth: ANTHROPIC_API_KEY read from ...` —
