@@ -40,6 +40,24 @@ the production code path -- which is the entire point of a synthetic *control*: 
 canary-only prompt would exercise a path no paid window ever runs, and a green canary would
 then say nothing about production.
 
+SPAWN SHAPE -- ``--cli-safe-mode`` / ``--no-cli-safe-mode`` (H2251)
+------------------------------------------------------------------
+The same "a control must ride the path production rides" argument applies to the *spawn*,
+not just the prompt. ``execution.cli_safe_mode`` decides whether the CLI child is spawned
+with ``--safe-mode`` (H2189), and a canary judged on one spawn shape says nothing about a
+lane running the other. So the builder can pin it explicitly:
+
+* omitted (the default) -- the manifest carries no ``cli_safe_mode`` key and
+  ``headless_worker.resolve_safe_mode`` applies the lane default. This is the shape the
+  committed golden artifact pins, so an ordinary gate is byte-identical to before.
+* ``--cli-safe-mode`` / ``--no-cli-safe-mode`` -- write ``true``/``false`` into the
+  execution block, producing a receipt that is *attributable to one arm*. H2251 needed
+  exactly this: a GO receipt on the safe-mode arm was the evidence H2189 §5.1 named as the
+  precondition for flipping the default, and it could not be inherited from a baseline run.
+
+The value is patched into the emitted manifest BEFORE the SHA-256 is taken, so the digest
+the worker's ``--manifest-sha256`` checks still binds the arm the receipt claims.
+
 The masked-regime preamble does still ride along, vacuously (it explains ``{Tn}`` tokens
 when none exist). That is accepted deliberately: dropping it would fork the prompt and
 re-introduce the mismatch this decision exists to avoid. Both properties are pinned by
@@ -49,6 +67,7 @@ instead of silently degrading the control.
 """
 import argparse
 import hashlib
+import json
 import os
 import subprocess
 import sys
@@ -75,8 +94,33 @@ def sha256_file(path):
     return h.hexdigest()
 
 
+def pin_safe_mode(manifest_path, cli_safe_mode):
+    """Write ``execution.cli_safe_mode`` into an already-generated manifest (H2251).
+
+    Called BEFORE the SHA-256 is taken, so the digest the worker verifies covers the arm
+    the receipt will claim -- a receipt whose manifest could still be swapped for the other
+    spawn shape would prove nothing about either.
+
+    ``None`` is not "false": it leaves the key absent so the lane default applies, which is
+    what keeps an ordinary gate byte-identical to the committed golden artifact.
+    """
+    if cli_safe_mode is None:
+        return
+    with open(manifest_path, encoding='utf-8') as fh:
+        manifest = json.load(fh)
+    execution = manifest.get('execution')
+    if not isinstance(execution, dict):
+        raise SystemExit(
+            'cannot pin cli_safe_mode: this manifest has no v2 execution block (build it '
+            'profile-bound, with --profile-slot and --config-dir)')
+    execution['cli_safe_mode'] = bool(cli_safe_mode)
+    with open(manifest_path, 'w', encoding='utf-8', newline='\n') as fh:
+        json.dump(manifest, fh, ensure_ascii=False, indent=2)
+        fh.write('\n')
+
+
 def build(profile_slot, config_dir, outdir, root, key=CANARY_KEY,
-          fixture_dir=FIXTURE_DIR):
+          fixture_dir=FIXTURE_DIR, cli_safe_mode=None):
     raw = os.path.join(fixture_dir, key + '.raw.txt')
     portrait = os.path.join(fixture_dir, key + '.portrait.json')
     for path in (raw, portrait):
@@ -117,6 +161,7 @@ def build(profile_slot, config_dir, outdir, root, key=CANARY_KEY,
     with open(preflight, 'w', encoding='utf-8', newline='\n') as fh:
         fh.write(pf.stdout)
 
+    pin_safe_mode(manifest, cli_safe_mode)
     return manifest, harness, preflight, sha256_file(manifest)
 
 
@@ -127,15 +172,26 @@ def main(argv=None):
     ap.add_argument('--config-dir', help='CLAUDE_CONFIG_DIR for that profile slot')
     ap.add_argument('--outdir', required=True)
     ap.add_argument('--root', help='nominal root label (default nominal_<slot>canary)')
+    # H2251: pin the SPAWN shape the receipt is attributable to. Omitted => the lane default
+    # applies and the manifest stays byte-identical to the committed golden artifact.
+    ap.add_argument('--cli-safe-mode', dest='cli_safe_mode', action='store_true',
+                    default=None,
+                    help='pin execution.cli_safe_mode=true (spawn with --safe-mode, H2189)')
+    ap.add_argument('--no-cli-safe-mode', dest='cli_safe_mode', action='store_false',
+                    help='pin execution.cli_safe_mode=false (spawn WITHOUT --safe-mode)')
     args = ap.parse_args(argv)
     root = args.root or 'nominal_%scanary' % args.profile_slot
 
     manifest, harness, preflight, sha = build(
-        args.profile_slot, args.config_dir, args.outdir, root)
+        args.profile_slot, args.config_dir, args.outdir, root,
+        cli_safe_mode=args.cli_safe_mode)
     print('manifest  :', manifest)
     print('harness   :', harness)
     print('preflight :', preflight)
     print('sha256    :', sha)
+    print('safe mode : %s' % ('(lane default -- key absent)' if args.cli_safe_mode is None
+                              else 'execution.cli_safe_mode=%s'
+                                   % json.dumps(args.cli_safe_mode)))
     print()
     print('next (ONE paid call):')
     print('  python src/pilot/headless_worker.py %s \\' % manifest)

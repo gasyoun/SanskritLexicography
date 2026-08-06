@@ -326,15 +326,39 @@ def cwd_ancestry_scan_ref():
     return cwd_ancestry_scan
 
 
-def test_safe_mode_is_opt_in_and_off_by_default():
-    """A manifest that says nothing must spawn exactly as it did before H2189."""
-    seen = {}
-    def capture_runner(argv, **kwargs):
-        seen['argv'] = argv
-        return success_runner(argv, **kwargs)
-    execute(manifest(), capture_runner)
-    assert h.SAFE_MODE_FLAG not in seen['argv'], \
-        'H2189 flipped a production default; it is opt-in until a canary GO covers it'
+def test_safe_mode_default_is_on_and_an_explicit_false_still_opts_out():
+    """H2251 flipped the default ON. Both halves of that are load-bearing.
+
+    This test is the re-pointed twin of H2189's `test_safe_mode_is_opt_in_and_off_by_default`,
+    which existed to catch an UNDOCUMENTED default flip. The flip is now documented and
+    evidenced (canary GO on the safe-mode arm + a 3-card both-ways comparison), so the
+    assertion inverts -- but it must not simply be deleted, because the property still worth
+    pinning is that `DEFAULT_CLI_SAFE_MODE` is what a silent manifest gets, and that an
+    explicit opt-out is still HONOURED. A flip implemented as `bool(...)` over a tri-state
+    field would quietly swallow `cli_safe_mode: false`, turning an operator's deliberate
+    "spawn the historical way" into a no-op.
+    """
+    h._safe_mode_support[sys.executable] = True
+    try:
+        seen = {}
+        def capture_runner(argv, **kwargs):
+            seen['argv'] = argv
+            return success_runner(argv, **kwargs)
+        execute(manifest(), capture_runner)
+        assert h.DEFAULT_CLI_SAFE_MODE is True, 'H2251 default flip was reverted silently'
+        assert h.SAFE_MODE_FLAG in seen['argv'], \
+            'a manifest that says nothing must now spawn WITH --safe-mode (H2251)'
+
+        # The opt-out. `False` is not the same as absent, and must survive the flip.
+        seen = {}
+        m = manifest()
+        m['execution'] = {'cli_safe_mode': False}
+        execute(m, capture_runner)
+        assert h.SAFE_MODE_FLAG not in seen['argv'], \
+            'an explicit cli_safe_mode: false was overridden by the new default -- the ' \
+            'operator opt-out is inert'
+    finally:
+        h._safe_mode_support.pop(sys.executable, None)
 
 
 def test_safe_mode_is_carried_when_the_manifest_requests_it():
@@ -380,6 +404,53 @@ def test_safe_mode_degrades_loudly_when_the_cli_cannot_do_it():
     assert h.SAFE_MODE_FLAG not in seen['argv'], 'spawned with a flag the CLI cannot parse'
     assert 'H2189' in warned and 'WITHOUT it' in warned, \
         'silent downgrade: the run would report H2189 savings while paying the full tax'
+
+
+def test_safe_mode_effective_is_recorded_in_status():
+    """H2251: the run's own artifacts must say which spawn shape actually ran.
+
+    `meta.execution.cli_safe_mode` records what the manifest REQUESTED. The status field
+    records what the engine RESOLVED. They agree except in the one case that matters --
+    requested-but-unsupported, where H2189's warning goes to stderr and is gone the moment
+    the console scrolls. Without this, a window that quietly paid the full profile tax
+    while believing it had stripped it is indistinguishable afterwards from one that did.
+    """
+    # An explicit opt-out records an OFF spawn. (A silent manifest now takes the H2251
+    # default and is covered by the default test above; using the opt-out here keeps this
+    # test about the REQUESTED-vs-EFFECTIVE distinction rather than about the default.)
+    m = manifest()
+    m['execution'] = {'cli_safe_mode': False}
+    _payload, status, _code = execute(m, success_runner)
+    assert status['cli_safe_mode_effective'] is False, \
+        'an explicit opt-out must record an OFF spawn, got %r' \
+        % status.get('cli_safe_mode_effective')
+
+    m = manifest()
+    m['execution'] = {'cli_safe_mode': True}
+    h._safe_mode_support[sys.executable] = True
+    try:
+        _payload, status, _code = execute(m, success_runner)
+    finally:
+        h._safe_mode_support.pop(sys.executable, None)
+    assert status['cli_safe_mode_effective'] is True, \
+        'requested and supported, but the status denies the spawn carried the flag'
+
+    # The case the field exists for: requested, NOT supported. The request says True; only
+    # the resolved value tells the truth, and a receipt built on the request would lie.
+    import io
+    m = manifest()
+    m['execution'] = {'cli_safe_mode': True}
+    h._safe_mode_support[sys.executable] = False
+    stderr, sys.stderr = sys.stderr, io.StringIO()
+    try:
+        _payload, status, _code = execute(m, success_runner)
+    finally:
+        sys.stderr = stderr
+        h._safe_mode_support.pop(sys.executable, None)
+    assert status['cli_safe_mode_effective'] is False, \
+        'a downgraded spawn recorded itself as safe-mode: the durable record would report ' \
+        'H2189 savings for a call that paid the full profile tax'
+    print('  H2251 status records the EFFECTIVE spawn shape (downgrade included)')
 
 
 def test_kill_ceiling_in_step_with_harness():
@@ -1820,9 +1891,10 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_bare_cwd_ancestry_is_clean_or_none()
     test_bare_cwd_candidates_are_derived_not_hardcoded()
     test_bare_cwd_refuses_a_dirty_ancestry_rather_than_returning_it()
-    test_safe_mode_is_opt_in_and_off_by_default()
+    test_safe_mode_default_is_on_and_an_explicit_false_still_opts_out()
     test_safe_mode_is_carried_when_the_manifest_requests_it()
     test_safe_mode_degrades_loudly_when_the_cli_cannot_do_it()
+    test_safe_mode_effective_is_recorded_in_status()
     test_h2191_prompt_is_assembled_stable_left()
     print('headless_worker_selftest: PASS')
 
