@@ -14,6 +14,17 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H2240 dual-run residual (H2269, Grok 4.5 `grok-4.5`):** independent re-run of
+  B3 canonical `health_probe_log.jsonl` against Sonnet override
+  [PR #1120](https://github.com/gasyoun/SanskritLexicography/pull/1120)
+  (`a2e9f7e25`). Confirms dual-write + exclusive reader prefer. **Conflicting keep
+  (Grok):** `_emit` always appends the canonical log even when `events_path is None`
+  (Sonnet nested that write under `if events_path:`). **Net-new:** `source_mode` on
+  `health_ribbon`, README path contract, migrate `--output-dir`, writer selftest pin.
+  Dry-run migrate on residential output: 5 sources / 25 foldable rows. Adjudication:
+  [H2269_H2240_DUAL_RUN_COMPARE_2026-08-06.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/H2269_H2240_DUAL_RUN_COMPARE_2026-08-06.md).
+
 ## [1.144.8] - 2026-08-06
 ### Added
 - **H2237 dual-run residual (H2265, Grok 4.5 `grok-4.5`):** independent re-run of
