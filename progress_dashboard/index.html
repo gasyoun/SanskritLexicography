@@ -762,7 +762,8 @@ function renderKitchen(k) {
       const lt = pvg.lifetime || {};
       promoteEl.innerHTML =
         `<p>This week — cards generated <b>${fmt(w.cards_generated)}</b> · ` +
-        `clean ledger windows <b>${fmt(w.clean_windows)}</b> / ${fmt(w.windows_total)} · ` +
+        `clean ledger windows <b>${fmt(w.clean_windows)}</b> / ${fmt(w.windows_total)}` +
+        `${w.clean_window_pct != null ? ` (${w.clean_window_pct}%)` : ''} · ` +
         `promote events <b>${w.promote_events != null ? fmt(w.promote_events) : '—'}</b></p>` +
         `<p>Lifetime — cards generated <b>${fmt(lt.cards_generated)}</b> · ` +
         `clean ledger windows <b>${fmt(lt.clean_windows)}</b> / ${fmt(lt.windows_total)}` +
