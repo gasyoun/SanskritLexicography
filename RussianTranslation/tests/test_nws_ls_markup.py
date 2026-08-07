@@ -12,10 +12,32 @@ Run: `pytest tests/test_nws_ls_markup.py` (working dir RussianTranslation).
 import os
 import sys
 
+import pytest
+
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 
 import g5_card_render as g5cr  # noqa: E402
 import nws_ls_markup as nlm  # noqa: E402
+import pwg_sources  # noqa: E402
+
+# H2254 (07-08-2026): every resolution test below needs PWG's own Verzeichniss der
+# Abkürzungen, which lives in the SIBLING repo csl-pywork
+# (.../v02/distinctfiles/pwg/pywork/pwgauth/pwgbib.txt) -- and CI checks out only this
+# repo. `pwg_sources.bib()` degrades to `{}` there by design (`sibling_root.require_sibling`
+# says so in as many words: "CI, which checks out only this one repo, depends on that
+# silence"), so `resolve()` returns None, `resolve_nws_citation` returns None, and the
+# asserts fail with a verdict literally named `residue_no_bib`.
+#
+# That is a FALSE red: the code is behaving exactly as specified, the data is simply absent.
+# Skip on absent data rather than assert against it -- and skip LOUDLY, naming the missing
+# table, so this can never read as "the NWS resolution path is green" when it was never run.
+# It stayed hidden until now because these tests died even earlier, at import: the csl_pyutil
+# install sat BELOW the whole-suite step, so collection failed and nothing here ever executed.
+_BIB_AVAILABLE = bool(pwg_sources.bib())
+requires_pwg_bib = pytest.mark.skipif(
+    not _BIB_AVAILABLE,
+    reason='PWG bibliography unavailable (sibling csl-pywork not checked out) -- '
+           'resolution cannot be exercised; this is absent DATA, not a failing code path')
 
 
 # --- normalisation -----------------------------------------------------------
@@ -36,6 +58,7 @@ def test_normalize_rejects_non_roman_token():
 
 # --- resolution (MG's actual example + a recension-free sibling) ------------
 
+@requires_pwg_bib
 def test_ms_example_ṚV_sā_resolves():
     """MG's own example: recension marker is not part of the match -- it is
     matched separately by the regex and preserved verbatim in the visible
@@ -47,6 +70,7 @@ def test_ms_example_ṚV_sā_resolves():
     assert href == 'https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.165.html#rv01.165.11'
 
 
+@requires_pwg_bib
 def test_rv_without_recension_marker_also_resolves():
     r = nlm.resolve_nws_citation('ṚV', 'IV', '42, 8')
     assert r is not None
@@ -109,6 +133,7 @@ def test_bracket_domain_regex_ignores_already_canonical_values():
 
 # --- apply(): full round-trip on a tiny in-memory store ---------------------
 
+@requires_pwg_bib
 def test_apply_round_trip_on_a_scratch_store(tmp_path):
     store = tmp_path / 'scratch.jsonl'
     rows = [
@@ -157,6 +182,7 @@ def test_apply_round_trip_on_a_scratch_store(tmp_path):
     assert backups[0].read_bytes() != store.read_bytes()  # it backs up the OLD text
 
 
+@requires_pwg_bib
 def test_apply_backup_disabled_writes_no_recovery_artifact(tmp_path):
     """Negative half of the pin above: `backup=False` must leave zero candidates.
 
@@ -231,6 +257,7 @@ def test_classify_h_dot_century_descriptor_is_provenance_short_sig():
     assert verdict == 'provenance_short_sig'
 
 
+@requires_pwg_bib
 def test_classify_genuine_arabic_citation_resolves():
     ru = 'смысл. ṚV 1,116,15 говорит X.'
     m = list(g5cr._BARE_CIT.finditer(ru))[0]
@@ -241,6 +268,7 @@ def test_classify_genuine_arabic_citation_resolves():
     assert href == 'https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.116.html#rv01.116.15'
 
 
+@requires_pwg_bib
 def test_classify_comma_attached_roman_mandala_resolves():
     """H1909's generalisation of H1809's Roman-mandala normalisation to the
     comma-attached NWS spelling ('I,85,12'), not just the space-separated one
@@ -252,6 +280,7 @@ def test_classify_comma_attached_roman_mandala_resolves():
     assert payload[0] == 'ṚV. 1,85,12'
 
 
+@requires_pwg_bib
 def test_classify_ramayana_period_locus_is_honest_residue_not_a_guess():
     """'R' resolves in PWG's bibliography and even generates an href for SOME
     locus spellings -- but Arabic vs. Roman book numbers there route to
@@ -272,6 +301,7 @@ def test_classify_unknown_siglum_is_residue_no_bib():
     assert payload == 'ChU'
 
 
+@requires_pwg_bib
 def test_apply_h1909_general_pass_end_to_end(tmp_path):
     """One row exercising every discriminator branch at once: two genuine
     citations (plain Arabic + comma-attached Roman) get marked; a bare-year

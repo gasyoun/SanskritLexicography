@@ -224,7 +224,26 @@ in §2 changes what the executor *refuses*; it authorizes no spend whatsoever.
   two of those tests transitively import `csl_pyutil`, whose install step sat four steps
   *below* it, so collection died with `ModuleNotFoundError` and the job exited 2 before ever
   reaching the install. Reproduced on unmodified `origin/master` (`02ae0fce9`, `e8809dc07`).
-  The install moved above the gate. This is out of H2254's stated scope and is flagged rather
+  The install moved above the gate — **which exposed a second red the first was hiding**:
+  10 tests assert against data CI does not have (eight need PWG's *Verzeichniss der
+  Abkürzungen* from the **sibling** repo `csl-pywork`; two need the gitignored derived
+  RV-spine JSONL). `pwg_sources.bib()` degrades to `{}` when the sibling is absent *by
+  design* — `sibling_root.require_sibling` says so outright: "CI, which checks out only this
+  one repo, depends on that silence" — so resolution returns `None` and the asserts fail with
+  a verdict literally named `residue_no_bib`. A **false red**: the code is correct, the data
+  is absent. Those 10 now carry `skipif` markers naming the missing table, the idiom two
+  other tests in the same module already used; locally, with siblings present, the suite
+  still runs **123/123 with zero skips**.
+
+  **Correction to this session's own first diagnosis, recorded rather than tidied away.**
+  The failure was first attributed to a stale `csl-pyutil@v0.7.0` pin and the pin was bumped
+  to v0.9.0. That was wrong — the same 10 tests failed identically at v0.9.0 — so the bump
+  was reverted rather than left in as a change I could no longer justify. The lesson is the
+  one this report keeps applying to the pipeline: a plausible cause that has not been
+  *tested against the failure* is a guess, and shipping it would have left a version bump in
+  the tree whose stated reason was false.
+
+  This is out of H2254's stated scope and is flagged rather
   than folded in silently — but a merge cannot be gated on a red that the branch does not
   cause and cannot outlast. The general form is worth keeping: **a whole-suite step must be
   preceded by every dependency the named steps install piecemeal**, and nothing enforces that.
