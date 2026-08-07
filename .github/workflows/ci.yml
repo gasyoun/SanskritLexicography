@@ -121,8 +121,28 @@ jobs:
           # read-only gloss TM lookup. The build_*.py and saru_gloss_*.py modules
           # import cleanly because their heavy deps (vidyut, vidyut.cheda,
           # indic_transliteration) are imported lazily inside main()/to_slp1().
-          pip install pytest
+          # H2254: `jsonschema` joins pytest here. rv_spine_build.validate_jsonl imports it
+          # lazily, and the committed RV spine JSONL it validates IS present in CI -- so
+          # unlike the sibling-data tests (which skip, because their data genuinely is not
+          # there) this one was a real, fixable missing dependency, not a false red. It only
+          # became visible once the whole-suite gate stopped dying at collection.
+          pip install pytest jsonschema
           pytest tests/test_saru_gloss_pipeline.py tests/test_saru_gloss_wave2.py tests/test_saru_gloss_wave3.py tests/test_saru_gloss_tm.py -q
+      - name: Install the shared review-sheet emitter (H1808)
+        # g5_card_render imports csl_pyutil.anatomy at module load, so this lane
+        # needs the package rather than just py_compile. Pinned to the TAG, not
+        # `@main` as the repo requirements.txt does, so a CI run stays reproducible.
+        #
+        # H2254 (07-08-2026): MOVED UP, from after the TM-hardening lane to here.
+        # The H2252 truth gate below collects the WHOLE suite, and two of its tests
+        # (test_nws_ls_markup.py, test_rv_spine.py) transitively import csl_pyutil --
+        # so with the install still downstream, `pytest tests -q` died at COLLECTION
+        # with ModuleNotFoundError and the job exited 2 before reaching this step.
+        # CI was red at master HEAD for this reason. It is the H2252 defect class in
+        # its ordering form: a step that runs the whole suite has to be preceded by
+        # every dependency the named steps install piecemeal, and nothing enforced
+        # that. Keep this install ABOVE the truth gate.
+        run: pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.7.0"
       - name: Complete subsystem test suite (H2252 truth gate)
         working-directory: RussianTranslation
         run: |
@@ -163,11 +183,6 @@ jobs:
           python src/mined_filter_bicleaner.py selftest
           python src/tm_saru_align_labse.py selftest
           python src/tm_retrieval_eval.py selftest
-      - name: Install the shared review-sheet emitter (H1808)
-        # g5_card_render imports csl_pyutil.anatomy at module load, so this lane
-        # needs the package rather than just py_compile. Pinned to the TAG, not
-        # `@main` as the repo requirements.txt does, so a CI run stays reproducible.
-        run: pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.7.0"
       - name: Review-sheet binding + decisions + residue-gate selftests (H1404 lane)
         working-directory: RussianTranslation
         run: |

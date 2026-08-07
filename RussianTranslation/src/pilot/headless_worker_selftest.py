@@ -4,6 +4,7 @@ import hashlib
 import json
 import subprocess
 import sys
+import time
 import tempfile
 import os
 from types import SimpleNamespace
@@ -211,6 +212,136 @@ def test_call_timeout_clamped():
     assert seen['timeout'] == 45.0, 'timeout_ceil_ms not honoured: %r' % seen['timeout']
     print('  R4 timeout: clamped to min(operator,ceil,%dms) -> %.1fs then 45.0s'
           % (h.HARD_TIMEOUT_MS, h.HARD_TIMEOUT_MS / 1000.0))
+
+
+def test_h2254_ceiling_boundary_is_refused_not_clamped():
+    """H2254: 299 999 / 300 000 / 300 001 ms, on BOTH inputs to the effective bound.
+
+    The pre-H2254 behaviour was `min(operator, ceil, HARD)` on every route, so a request for
+    7 200 s and a request for 300 s produced the SAME run and the operator was never told the
+    difference. The owner's 03-08-2026 ruling makes 300 000 ms an absolute maximum, and an
+    absolute maximum that silently rounds requests down is indistinguishable from no maximum
+    at all -- the discrepancy is only visible by reading the timeout off a subprocess call
+    that has already been spawned and paid for.
+
+    The boundary is pinned on the two independent inputs because they arrive by different
+    routes and a guard on one leaves the other open: the operator's `--timeout` (seconds, so
+    the ceiling is only expressible at second granularity) and the sealed manifest's
+    `budgets.timeout_ceil_ms` (milliseconds, so 299 999 and 300 001 are both expressible).
+    Every value is derived from HARD_TIMEOUT_MS, never written as a literal -- FINDINGS §518.
+    """
+    ceiling = h.HARD_TIMEOUT_MS
+    seen = {}
+
+    def capture_runner(argv, **kwargs):
+        seen['timeout'] = kwargs.get('timeout')
+        return success_runner(argv, **kwargs)
+
+    # --- manifest budget: below / at / above -------------------------------------------
+    for value, expect in ((ceiling - 1, (ceiling - 1) / 1000.0), (ceiling, ceiling / 1000.0)):
+        seen.clear()
+        m = manifest()
+        m['budgets'] = {'timeout_ceil_ms': value}
+        payload, _status, code = execute(m, capture_runner)
+        assert code == 0 and payload is not None, (value, code)
+        assert seen['timeout'] == expect, (
+            'manifest ceil %d ms must be ACCEPTED and bind exactly (got %r)' % (value, seen))
+
+    over = manifest()
+    over['budgets'] = {'timeout_ceil_ms': ceiling + 1}
+    seen.clear()
+    try:
+        execute(over, capture_runner)
+    except ValueError as exc:
+        assert str(ceiling + 1) in str(exc) and 'REFUSED' in str(exc), str(exc)
+    else:
+        raise AssertionError('a manifest sealing %d ms was accepted -- the ceiling is being '
+                             'clamped again, not enforced' % (ceiling + 1))
+    assert 'timeout' not in seen, (
+        'the refusal happened AFTER a subprocess was spawned; a money guard that fires '
+        'post-spawn has already let the call be paid for')
+
+    # --- operator --timeout: below / at / above ----------------------------------------
+    ceiling_s = ceiling // 1000
+    for seconds, expect in ((ceiling_s - 1, float(ceiling_s - 1)), (ceiling_s, float(ceiling_s))):
+        seen.clear()
+        payload, _status, code = h.execute(
+            manifest(), claude=sys.executable, timeout=seconds, runner=capture_runner,
+            call_reservation=MemoryCallLedger(), config_dir=_FIXTURE_CONFIG_DIR)
+        assert code == 0 and seen['timeout'] == expect, (seconds, seen)
+
+    seen.clear()
+    try:
+        h.execute(manifest(), claude=sys.executable, timeout=ceiling_s + 1,
+                  runner=capture_runner, call_reservation=MemoryCallLedger(),
+                  config_dir=_FIXTURE_CONFIG_DIR)
+    except ValueError as exc:
+        assert 'operator --timeout' in str(exc), str(exc)
+    else:
+        raise AssertionError('--timeout %d s was accepted above the %d s maximum'
+                             % (ceiling_s + 1, ceiling_s))
+    assert 'timeout' not in seen, 'operator refusal fired after the spawn'
+
+    # --- the supervisor's OUTER bound must stay strictly above the per-call one ---------
+    # Found while making the default equal the ceiling: both supervisor spawn sites passed
+    # the SAME number to `--timeout` and to their own `run_tree_kill(timeout=...)`. That was
+    # harmless at 7200 (24x headroom) and would have become a silent regression at 300 --
+    # the outer kill lands during teardown of a call that legitimately reached its ceiling,
+    # so the status file recording that fact is never written and the worker looks like it
+    # vanished. This assertion is what stops the two numbers being re-unified later.
+    assert h.wrapper_timeout_s(ceiling_s) > ceiling_s, 'wrapper bound must exceed per-call'
+    import max_account_orchestrator as _mao_src
+    _wrapper_src = open(_mao_src.__file__, encoding='utf-8').read()
+    assert 'timeout=timeout)' not in _wrapper_src and 'timeout=args.timeout)' not in _wrapper_src, (
+        'a supervisor is spawning the worker with its per-call ceiling as the OUTER '
+        'tree-kill bound again -- use wrapper_timeout_s()')
+
+    # --- the retired 7200 s default must be gone from every route ----------------------
+    import bounded_staged_run  # noqa: F401  (imported for its parser default only)
+    import max_account_orchestrator as mao
+    assert h.DEFAULT_TIMEOUT_S == ceiling_s == mao.DEFAULT_TIMEOUT_S, (
+        'a route still defaults to something other than the ceiling: worker=%r orch=%r'
+        % (h.DEFAULT_TIMEOUT_S, mao.DEFAULT_TIMEOUT_S))
+    print('  H2254 boundary: %d/%d accepted, %d refused pre-spawn on BOTH inputs'
+          % (ceiling - 1, ceiling, ceiling + 1))
+
+
+def test_h2254_process_tree_termination_at_the_effective_bound():
+    """H2254: the ceiling the guard admits is the one the tree-killer actually receives.
+
+    Two halves, deliberately separated because only one of them is affordable to run for
+    real. (a) The bound the engine computes is handed to `run_tree_kill` as its `timeout`
+    kwarg -- asserted at the ceiling itself, so the number under test is the production one.
+    (b) A tree-killed child is really spawned and really killed on THIS platform, at a
+    one-second scaled bound rather than 300 -- a 300-second selftest would be a five-minute
+    CI leg proving nothing the scaled one does not, since `terminate_tree` branches on
+    `os.name`, never on the magnitude of the deadline.
+    """
+    seen = {}
+
+    def capture_runner(argv, **kwargs):
+        seen['timeout'] = kwargs.get('timeout')
+        return success_runner(argv, **kwargs)
+
+    m = manifest()
+    m['budgets'] = {'timeout_ceil_ms': h.HARD_TIMEOUT_MS}
+    execute(m, capture_runner)
+    assert seen['timeout'] == h.HARD_TIMEOUT_MS / 1000.0, seen
+
+    hung = [sys.executable, '-c', 'import time; time.sleep(120)']
+    started = time.time()
+    try:
+        proc_tree.run_tree_kill(hung, capture_output=True, timeout=1)
+    except subprocess.TimeoutExpired:
+        pass
+    else:
+        raise AssertionError('a 120 s child was not killed at a 1 s deadline -- the '
+                             'process-tree kill is inert on %s' % os.name)
+    elapsed = time.time() - started
+    assert elapsed < 60, ('tree kill took %.1f s for a 1 s deadline -- the child tree is '
+                          'outliving its bound' % elapsed)
+    print('  H2254 tree kill: bound %.1f s reaches the runner; real child killed in %.1f s '
+          'on os.name=%s' % (h.HARD_TIMEOUT_MS / 1000.0, elapsed, os.name))
 
 
 def test_cli_spawns_from_a_bare_cwd():
@@ -1861,6 +1992,8 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_h1610_refuse_max_agents_starves_multikey()
     test_h2b_translate_budget_preserves_attempt_content_note()
     test_call_timeout_clamped()
+    test_h2254_ceiling_boundary_is_refused_not_clamped()
+    test_h2254_process_tree_termination_at_the_effective_bound()
     test_durable_call_reservation()
     test_cli_reservation_and_preflight_gates()
     test_h1_unreadable_manifest_is_configuration_status()

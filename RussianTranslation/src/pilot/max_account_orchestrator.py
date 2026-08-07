@@ -18,9 +18,10 @@ import time
 
 import probe_log
 from run_observability import append_event, utc_now, write_census
-from headless_worker import (bare_cli_cwd, claude_argv_prefix, run_tree_kill,
-                             timeout_output_text, validate_preflight_artifact,
-                             windows_hidden_flags)
+from headless_worker import (DEFAULT_TIMEOUT_S, bare_cli_cwd, claude_argv_prefix,
+                             run_tree_kill, timeout_output_text,
+                             validate_preflight_artifact, windows_hidden_flags,
+                             wrapper_timeout_s)
 from window_common import atomic_write_text
 from execution_contract import (ActiveCallClaim, config_dir_fingerprint, validate_manifest,
                                 validate_profile)
@@ -508,8 +509,11 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
         env['PWG_CALL_RESERVATION_RUN_ID'] = run_id or ''
         env['PWG_CALL_RESERVATION_MAX_CALLS'] = '' if max_calls is None else str(max_calls)
     try:
+        # D-J: tree-kill on timeout. H2254: the OUTER bound must exceed the per-call ceiling
+        # handed to `--timeout` -- equal bounds kill the worker during teardown of a call
+        # that legitimately reached its own ceiling, losing the status file that says so.
         proc = run_tree_kill(argv, cwd=job['cwd'], env=env, text=True, encoding='utf-8',
-                             capture_output=True, timeout=timeout)   # D-J: tree-kill on timeout
+                             capture_output=True, timeout=wrapper_timeout_s(timeout))
         payload = json.dumps({'argv': argv, 'returncode': proc.returncode,
                               'stdout': proc.stdout, 'stderr': proc.stderr}, ensure_ascii=False, indent=1)
         atomic_write(attempt_log, payload)
@@ -1870,8 +1874,9 @@ def cmd_presplit_canary(args):
            '--timeout', str(args.timeout), '--preflight', preflight_path,
            '--preflight-sha256', args.preflight_sha256,
            '--manifest-sha256', manifest_hash]
+    # D-J tree-kill (presplit canary worker); H2254 headroom over the per-call ceiling.
     proc = run_tree_kill(cmd, env=env, text=True, encoding='utf-8', capture_output=True,
-                         timeout=args.timeout)   # D-J: tree-kill on timeout (presplit canary worker)
+                         timeout=wrapper_timeout_s(args.timeout))
     status = json.load(open(args.status, encoding='utf-8')) if os.path.exists(args.status) else {}
     canary_base = {'run_id': run_id, 'account': accounts[0]['name'],
                    'manifest_hash': manifest_hash}
@@ -1918,13 +1923,13 @@ def main(argv=None):
     p = sub.add_parser('reset-failed', help='B18: audited scoped recovery of terminal failed jobs (requires --reason)'); p.add_argument('--lease-id', action='append', required=True); p.add_argument('--reason', required=True); p.add_argument('--events'); p.set_defaults(func=cmd_reset_failed)
     p = sub.add_parser('recover'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_recover)
     p = sub.add_parser('record-done'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_record_done)
-    p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=7200); p.add_argument('--claude-bin', default='claude'); p.add_argument('--only-profile'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.add_argument('--call-reservation'); p.add_argument('--run-id'); p.add_argument('--max-calls', type=int); p.set_defaults(func=cmd_run_once)
+    p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=DEFAULT_TIMEOUT_S); p.add_argument('--claude-bin', default='claude'); p.add_argument('--only-profile'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.add_argument('--call-reservation'); p.add_argument('--run-id'); p.add_argument('--max-calls', type=int); p.set_defaults(func=cmd_run_once)
     p = sub.add_parser('status'); p.set_defaults(func=cmd_status)
     p = sub.add_parser('staged-run')
     p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True)
     p.add_argument('--coordinator', required=True); p.add_argument('--lease-id', action='append')
     p.add_argument('--plan', required=True)
-    p.add_argument('--claude-bin', default='claude'); p.add_argument('--timeout', type=int, default=7200)
+    p.add_argument('--claude-bin', default='claude'); p.add_argument('--timeout', type=int, default=DEFAULT_TIMEOUT_S)
     p.add_argument('--stop-after', type=int, default=0); p.add_argument('--resume', action='store_true')
     p.add_argument('--max-accounts', type=int, default=0)          # GAP #5: cap the validated fleet
     p.add_argument('--only-profile', help='enforce one logical profile slot and its bound directory')
@@ -1939,7 +1944,7 @@ def main(argv=None):
     p.add_argument('--preflight-sha256', required=True)
     p.add_argument('--run-id'); p.add_argument('--claude-bin', default='claude')
     p.add_argument('--call-reservation'); p.add_argument('--max-calls', type=int)
-    p.add_argument('--timeout', type=int, default=7200); p.set_defaults(func=cmd_presplit_canary)
+    p.add_argument('--timeout', type=int, default=DEFAULT_TIMEOUT_S); p.set_defaults(func=cmd_presplit_canary)
     args = ap.parse_args(argv)
     try:
         args.func(args)
