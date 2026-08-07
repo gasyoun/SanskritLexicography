@@ -915,15 +915,39 @@ def main():
     # D-K integration: a hanging probe call kills its parent->child->grandchild tree (via the shared
     # run_tree_kill) and returns 'timeout' -- so live_probe stops and the measured/generation phase
     # never starts. Proves the probe path inherits the D-J tree-kill (not just subprocess.run).
+    # Timing discipline (07-08-2026): this case builds a REAL 3-deep process tree, and every level
+    # pays a Python interpreter start. Against the old fixed 5 s deadline a COLD run (fresh
+    # worktree, cold FS cache) could kill the child BEFORE it had spawned the grandchild, so
+    # `.pid3` never appeared and the run died on `probe tree never reached depth 3` — measured
+    # 1 fail in 5 consecutive runs, always the first. That message names a PRECONDITION miss (the
+    # fixture was too slow to build), but it reads to the next session as a tree-kill REGRESSION,
+    # which is the expensive part: the natural response to a suite that fails once per cold start
+    # is to stop trusting it. Two changes, neither touching what is asserted:
+    #
+    #   1. the interpreter-start cost is paid BEFORE any deadline is running;
+    #   2. a depth-3 miss ESCALATES the deadline instead of failing — only a tree that provably
+    #      reached depth 3 is judged, and exhausting every deadline reports itself as a machine
+    #      failure in those words, never as a kill regression.
+    #
+    # The grandchild's hang is now DERIVED from the deadline rather than a second hardcoded number.
+    # That is not cosmetic: at the old fixed 12 s a survivor would have written `.done3` at t≈12
+    # while the observation window closed between t≈10 and t≈16, so the survival assertion was
+    # marginally vacuous. `deadline + 2` puts a survivor's write firmly inside the window, and it
+    # also bounds any orphan a mid-spawn kill leaves behind (which used to linger the full 12 s).
     import time as _time
-    with tempfile.TemporaryDirectory() as td:
-        mk = os.path.join(td, 'm')
+    subprocess.run([sys.executable, '-c', 'pass'], capture_output=True)   # warm the interpreter
+
+    def _hanging_tree_scripts(hang_s):
+        """parent -> child -> grandchild; each records its PID, the leaf sleeps `hang_s` then
+        marks `.done3`. Parent/child outlive any deadline so they are always killed, never exiting."""
         grand = ('import time,sys,os;open(sys.argv[1]+".pid3","w").write(str(os.getpid()));'
-                 'time.sleep(12);open(sys.argv[1]+".done3","w").write("1")')
+                 'time.sleep(%d);open(sys.argv[1]+".done3","w").write("1")') % hang_s
         child = ('import subprocess,sys,os,time;open(sys.argv[1]+".pid2","w").write(str(os.getpid()));'
-                 'subprocess.Popen([sys.executable,"-c",%r,sys.argv[1]]);time.sleep(30)') % grand
-        parent = ('import subprocess,sys,os,time;open(sys.argv[1]+".pid1","w").write(str(os.getpid()));'
-                  'subprocess.Popen([sys.executable,"-c",%r,sys.argv[1]]);time.sleep(30)') % child
+                 'subprocess.Popen([sys.executable,"-c",%r,sys.argv[1]]);time.sleep(%d)') % (grand, hang_s * 6)
+        return ('import subprocess,sys,os,time;open(sys.argv[1]+".pid1","w").write(str(os.getpid()));'
+                'subprocess.Popen([sys.executable,"-c",%r,sys.argv[1]]);time.sleep(%d)') % (child, hang_s * 6)
+
+    with tempfile.TemporaryDirectory() as td:
 
         def _alive(pid):
             if os.name == 'nt':
@@ -936,17 +960,35 @@ def main():
             except OSError:
                 return False
 
-        try:
-            m.run_tree_kill([sys.executable, '-c', parent, mk], timeout=5, capture_output=True)
-            assert False, 'expected the hanging probe tree to TimeoutExpired'
-        except subprocess.TimeoutExpired:
-            pass
-        for _ in range(60):
-            if all(os.path.exists('%s.pid%d' % (mk, i)) for i in (1, 2, 3)):
+        def _reached_depth3(prefix):
+            return all(os.path.exists('%s.pid%d' % (prefix, i)) for i in (1, 2, 3))
+
+        DEADLINES_S = (5, 12, 30)          # escalate only on a fixture-too-slow miss, never on a verdict
+        mk = None
+        for attempt, deadline in enumerate(DEADLINES_S, start=1):
+            mk = os.path.join(td, 'm%d' % attempt)
+            parent = _hanging_tree_scripts(deadline + 2)
+            try:
+                m.run_tree_kill([sys.executable, '-c', parent, mk],
+                                timeout=deadline, capture_output=True)
+                assert False, 'expected the hanging probe tree to TimeoutExpired'
+            except subprocess.TimeoutExpired:
+                pass
+            for _ in range(60):
+                if _reached_depth3(mk):
+                    break
+                _time.sleep(0.1)
+            _time.sleep(5)                 # > (hang - deadline): a SURVIVING leaf would mark .done3 here
+            if _reached_depth3(mk):
+                if attempt > 1:
+                    print('    (note: depth 3 needed a %d s deadline — slow machine, not a kill defect)'
+                          % deadline)
                 break
-            _time.sleep(0.1)
-        _time.sleep(5)
-        assert all(os.path.exists('%s.pid%d' % (mk, i)) for i in (1, 2, 3)), 'probe tree never reached depth 3'
+        else:
+            raise AssertionError(
+                'the probe tree never reached depth 3 even at a %d s deadline — this is a '
+                'machine/timing failure building the fixture, NOT a tree-kill regression'
+                % DEADLINES_S[-1])
         assert not any(os.path.exists('%s.done%d' % (mk, i)) for i in (1, 2, 3)), 'a probe-tree level survived'
         pids = [int(open('%s.pid%d' % (mk, i)).read()) for i in (1, 2, 3)]
         assert not any(_alive(p) for p in pids), 'a hanging-probe tree PID survived: %s' % [p for p in pids if _alive(p)]

@@ -13,6 +13,11 @@ at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentiona
 not an error.
 
 ## [Unreleased]
+### Fixed
+- **The depth-3 tree-kill selftest failed roughly once per cold start, in the words of a kill regression (Opus 5 `claude-opus-5`).** [`max_account_orchestrator_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/max_account_orchestrator_selftest.py)'s D-K case builds a **real** parent→child→grandchild process tree and kills it, and every level pays a Python interpreter start. Against a fixed 5 s deadline a cold run (fresh worktree, cold FS cache) could kill the child *before* it had spawned the grandchild, so `.pid3` never appeared — **measured 07-08-2026: 1 fail in 5 consecutive runs, always the first**. The assertion that fired said `probe tree never reached depth 3`, which names a **precondition miss** (the fixture was too slow to build) but reads as a **tree-kill defect**; the expensive part is not the red run, it is that the standing response to a suite which fails once per cold start is to stop trusting it.
+  - The interpreter-start cost is now paid **before** any deadline runs, and a depth-3 miss **escalates** the deadline (5 → 12 → 30 s) instead of failing. Only a tree that provably reached depth 3 is judged; exhausting every deadline reports itself as a machine/timing failure **in those words**, never as a kill regression. An escalation prints a one-line note so a slow machine stays visible rather than silent.
+  - The leaf's hang is now **derived** from the deadline (`deadline + 2`) rather than a second hardcoded number. Not cosmetic: at the old fixed 12 s a *surviving* leaf would have marked `.done3` at t≈12 while the observation window closed between t≈10 and t≈16, so the survival assertion was marginally vacuous — it now lands firmly inside the window. It also bounds any orphan a mid-spawn kill leaves behind, which previously lingered the full 12 s.
+  - **Nothing about what the test asserts changed** — the tree-kill behaviour (no level survives, no PID survives) is verified exactly as before. **12/12 runs green** after the fix, one of which exercised the escalation path, i.e. a run the old code would have failed.
 
 ## [1.144.16] - 2026-08-07
 ### Changed
