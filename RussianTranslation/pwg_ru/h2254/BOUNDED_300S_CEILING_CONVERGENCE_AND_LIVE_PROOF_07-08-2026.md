@@ -219,6 +219,15 @@ in §2 changes what the executor *refuses*; it authorizes no spend whatsoever.
   a provenance record — a historical manifest that no longer round-trips through the current
   emitter loses replay value to buy nothing, since a labelled key with zero readers already
   bounds nothing. Labelling is the resolution; this is the ruling, not an omission.
+- **CI was already red at `master` HEAD, for an unrelated ordering bug — fixed here because
+  it blocks every merge.** The H2252 truth gate runs `pytest tests -q` over the whole suite;
+  two of those tests transitively import `csl_pyutil`, whose install step sat four steps
+  *below* it, so collection died with `ModuleNotFoundError` and the job exited 2 before ever
+  reaching the install. Reproduced on unmodified `origin/master` (`02ae0fce9`, `e8809dc07`).
+  The install moved above the gate. This is out of H2254's stated scope and is flagged rather
+  than folded in silently — but a merge cannot be gated on a red that the branch does not
+  cause and cannot outlast. The general form is worth keeping: **a whole-suite step must be
+  preceded by every dependency the named steps install piecemeal**, and nothing enforces that.
 - **`headless_worker_selftest`'s depth-N spawn test is flaky on this box, and it is not
   H2254's.** It fails at "level 2 never started" on unmodified `origin/master` and at
   "level 3 never started" on this branch — a timing-dependent multi-level process spawn, not
