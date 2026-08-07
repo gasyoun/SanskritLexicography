@@ -13,6 +13,8 @@ at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentiona
 not an error.
 
 ## [Unreleased]
+
+## [1.144.17] - 2026-08-07
 ### Fixed
 - **The depth-3 tree-kill selftest failed roughly once per cold start, in the words of a kill regression (Opus 5 `claude-opus-5`).** [`max_account_orchestrator_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/max_account_orchestrator_selftest.py)'s D-K case builds a **real** parent→child→grandchild process tree and kills it, and every level pays a Python interpreter start. Against a fixed 5 s deadline a cold run (fresh worktree, cold FS cache) could kill the child *before* it had spawned the grandchild, so `.pid3` never appeared — **measured 07-08-2026: 1 fail in 5 consecutive runs, always the first**. The assertion that fired said `probe tree never reached depth 3`, which names a **precondition miss** (the fixture was too slow to build) but reads as a **tree-kill defect**; the expensive part is not the red run, it is that the standing response to a suite which fails once per cold start is to stop trusting it.
   - The interpreter-start cost is now paid **before** any deadline runs, and a depth-3 miss **escalates** the deadline (5 → 12 → 30 s) instead of failing. Only a tree that provably reached depth 3 is judged; exhausting every deadline reports itself as a machine/timing failure **in those words**, never as a kill regression. An escalation prints a one-line note so a slow machine stays visible rather than silent.
