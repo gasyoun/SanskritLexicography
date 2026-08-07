@@ -121,7 +121,12 @@ jobs:
           # read-only gloss TM lookup. The build_*.py and saru_gloss_*.py modules
           # import cleanly because their heavy deps (vidyut, vidyut.cheda,
           # indic_transliteration) are imported lazily inside main()/to_slp1().
-          pip install pytest
+          # H2254: `jsonschema` joins pytest here. rv_spine_build.validate_jsonl imports it
+          # lazily, and the committed RV spine JSONL it validates IS present in CI -- so
+          # unlike the sibling-data tests (which skip, because their data genuinely is not
+          # there) this one was a real, fixable missing dependency, not a false red. It only
+          # became visible once the whole-suite gate stopped dying at collection.
+          pip install pytest jsonschema
           pytest tests/test_saru_gloss_pipeline.py tests/test_saru_gloss_wave2.py tests/test_saru_gloss_wave3.py tests/test_saru_gloss_tm.py -q
       - name: Install the shared review-sheet emitter (H1808)
         # g5_card_render imports csl_pyutil.anatomy at module load, so this lane
