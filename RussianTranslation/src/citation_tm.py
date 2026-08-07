@@ -1,13 +1,17 @@
 #!/usr/bin/env python
-r"""Citation translation-memory lookup — reuse an existing Russian translation of
-record for a PWG `<ls>` source citation instead of re-translating it (H1304).
+r"""Citation translation-memory lookup — reuse an existing translation of record
+for a PWG `<ls>` source citation instead of re-translating it (H1304 RU; H2334 EN).
 
 MG's ask (H178 vote N1/N6/N9/N11/N18): whenever a PWG card cites a passage of a
 text that ALREADY has a published/aligned Russian translation (R., MBH., ṚV.,
 KATHĀS., …), the card's citation rendering must **reuse that translation** — for
 every covered text, everywhere. This module is the lookup that makes that
-possible: `lookup(prefix, locus)` maps a PWG citation to a corpus passage and
-returns its Russian translation-of-record segment, or a clean/typed miss.
+possible: `lookup(prefix, locus, lang="ru")` maps a PWG citation to a corpus
+passage and returns its translation-of-record segment, or a clean/typed miss.
+
+`lang="en"` (H2334) is a **pilot**: only ṚV./RV. is wired, of-record =
+Griffith 1896 PD from `pwg_ru/griffith_en_1896.json` (DB-independent). Other
+prefixes miss as text-not-covered / en-translation-unpublished.
 
 TWO layers, deliberately separate:
 
@@ -72,6 +76,7 @@ missing translation-of-record from world knowledge.
   python src/citation_tm.py selftest                   # CI gate — see below
 """
 import argparse
+import json
 import os
 import re
 import sqlite3
@@ -86,6 +91,12 @@ from sibling_root import sibling_root  # noqa: E402
 GITHUB = sibling_root(HERE)
 CORPUS_DB = os.environ.get(
     'SAMUDRA_CORPUS_DB', os.path.join(GITHUB, 'SamudraManthanam', 'web', 'corpus.db'))
+# EN of-record for Ṛgveda (H2334): Griffith 1896 PD, committed under pwg_ru/.
+GRIFFITH_EN_JSON = os.path.join(
+    os.path.dirname(HERE), 'pwg_ru', 'griffith_en_1896.json')
+_GRIFFITH_BY_LOC = None  # lazy dict location -> text
+# Prefixes that have an EN of-record in this pilot (Griffith only).
+_EN_RV_PREFIXES = frozenset(('ṚV.', 'RV.'))
 
 # Sentinel returned by a resolver when the text is covered but its citation scheme
 # cannot map to the corpus keying (needs an external concordance).
@@ -296,15 +307,105 @@ def _fetch_ru(canonical):
     return (row[0] if row else None), 'ok'
 
 
-def lookup(prefix, locus):
-    """Resolve a PWG `<ls>` citation to its Russian translation of record.
+def _load_griffith_index():
+    """Lazy-load Griffith 1896 location → text (stdlib JSON; once per process)."""
+    global _GRIFFITH_BY_LOC
+    if _GRIFFITH_BY_LOC is not None:
+        return _GRIFFITH_BY_LOC
+    if not os.path.exists(GRIFFITH_EN_JSON):
+        _GRIFFITH_BY_LOC = {}
+        return _GRIFFITH_BY_LOC
+    data = json.load(open(GRIFFITH_EN_JSON, encoding='utf-8'))
+    contents = data.get('contents') if isinstance(data, dict) else data
+    idx = {}
+    for row in contents or []:
+        loc = row.get('location')
+        text = row.get('text')
+        if loc and text:
+            idx[loc] = text
+    _GRIFFITH_BY_LOC = idx
+    return _GRIFFITH_BY_LOC
+
+
+def _canonical_to_griffith_loc(canonical):
+    """Map resolver canonical_id `01_rigveda:1.1` → Griffith location `1.1.1`.
+
+    Mandala is zero-padded in the work id; Griffith keys drop the pad
+    (mandala.sukta.verse). Unit-pinned in selftest EN block (H2334).
+    """
+    if not canonical or not isinstance(canonical, str):
+        return None
+    m = re.match(r'^(\d{2})_rigveda:(\d+)\.(\d+)$', canonical)
+    if not m:
+        return None
+    return '%d.%s.%s' % (int(m.group(1)), m.group(2), m.group(3))
+
+
+def _fetch_en_rv(canonical):
+    """DB-independent EN of-record for ṚV.: Griffith 1896 by location.
+
+    Returns (en_text_or_None, griffith_location_or_None, asset_status).
+    asset_status in {'ok', 'asset_absent'}.
+    """
+    loc = _canonical_to_griffith_loc(canonical)
+    if loc is None:
+        return None, None, 'ok'
+    if not os.path.exists(GRIFFITH_EN_JSON):
+        return None, loc, 'asset_absent'
+    idx = _load_griffith_index()
+    return idx.get(loc), loc, 'ok'
+
+
+def lookup(prefix, locus, lang='ru'):
+    """Resolve a PWG `<ls>` citation to a translation of record.
+
+    `lang` defaults to ``ru`` (all existing callers unchanged). ``lang="en"``
+    (H2334) returns Griffith 1896 for ṚV./RV. only; other prefixes miss.
 
     Returns a dict: status, prefix, locus, canonical_id, text, source, rights_flag,
-    reason (on miss), and `ru` (ONLY populated for a hit; generation-time consult
-    only — never persist it to a committed/public artifact)."""
+    reason (on miss), and either `ru` or `en` (ONLY populated for a hit).
+    RU hits are generation-time consult only (in-copyright, never persist).
+    EN Griffith hits are public domain (`rights_flag=pd`) but selftest still
+    prints char-count only — never full verse bodies in CI logs.
+    """
+    lang = (lang or 'ru').strip().lower()
     p = _norm_prefix(prefix)
+    base = {'prefix': p, 'locus': locus, 'canonical_id': None, 'ru': None, 'en': None}
+
+    if lang not in ('ru', 'en'):
+        return {**base, 'status': 'miss', 'reason': 'invalid-lang',
+                'text': None, 'source': None, 'rights_flag': None}
+
+    # --- EN pilot path (H2334): Griffith for ṚV./RV. only; no corpus.db -----
+    if lang == 'en':
+        if p not in _EN_RV_PREFIXES:
+            # RU-covered texts without an EN of-record (R., MBH., AV., M., …)
+            # vs texts with no asset at all (TS., …) — honest split.
+            if p in RESOLVERS:
+                return {**base, 'status': 'miss',
+                        'reason': 'en-translation-unpublished',
+                        'text': RESOLVERS[p][1][0], 'source': None,
+                        'rights_flag': None}
+            return {**base, 'status': 'miss', 'reason': 'text-not-covered',
+                    'text': None, 'source': None, 'rights_flag': None}
+        base.update({'text': 'Ṛgveda', 'source': 'Griffith 1896',
+                     'rights_flag': 'pd'})
+        resolved = _rigveda(locus)
+        if resolved is None:
+            return {**base, 'status': 'miss', 'reason': 'locus-parse-failed'}
+        en, g_loc, asset_status = _fetch_en_rv(resolved)
+        base['canonical_id'] = resolved
+        if g_loc is not None:
+            base['griffith_location'] = g_loc
+        if asset_status == 'asset_absent':
+            return {**base, 'status': 'evidence_unavailable',
+                    'reason': 'griffith_en_1896.json absent'}
+        if en:
+            return {**base, 'status': 'hit', 'en': en}
+        return {**base, 'status': 'miss', 'reason': 'locus-not-in-corpus'}
+
+    # --- RU path (H1304): unchanged behaviour --------------------------------
     entry = RESOLVERS.get(p)
-    base = {'prefix': p, 'locus': locus, 'canonical_id': None, 'ru': None}
     if entry is None:
         return {**base, 'status': 'miss', 'reason': 'text-not-covered',
                 'text': None, 'source': None, 'rights_flag': None}
@@ -371,13 +472,15 @@ def _split_citation(n_attr, visible):
     return None
 
 
-def consult_card(*fields):
+def consult_card(*fields, lang='ru'):
     """Generation-time consult: given a card's DE/RU/EN text field(s) carrying
     `<ls>` citations, return one lookup() record per DISTINCT citation whose text
-    is covered by an RU translation of record. Intended to be called where
-    corpus_gate.build_card() assembles the LLM verdict input, so a covered
-    citation surfaces its RU rendering to the translator model instead of being
-    retranslated. Uncovered citations are omitted (a clean miss needs no consult)."""
+    is covered by a translation of record for ``lang`` (default ``ru``).
+    Intended for corpus_gate.build_card() (and EN generation) so a covered
+    citation surfaces its of-record rendering instead of being retranslated.
+    Uncovered citations are omitted (a clean miss needs no consult).
+    ``lang`` is keyword-only after *fields so existing positional callers stay safe.
+    """
     seen, out = set(), []
     for fld in fields:
         for m in _LS.finditer(fld or ''):
@@ -385,11 +488,11 @@ def consult_card(*fields):
             parsed = _split_citation(nm.group(1) if nm else None, (m.group(2) or '').strip())
             if not parsed:
                 continue
-            key = parsed
+            key = (parsed[0], parsed[1], lang)
             if key in seen:
                 continue
             seen.add(key)
-            rec = lookup(*parsed)
+            rec = lookup(parsed[0], parsed[1], lang=lang)
             if rec['status'] in ('hit', 'unmapped_locus_scheme'):
                 out.append(rec)
     return out
@@ -483,6 +586,47 @@ def selftest():
               'R. GORR. 1,22,1 -> hit via concordance, RU %d chars, class %s'
               % (len(g['ru']) if g['ru'] else 0, g.get('map', {}).get('class')))
 
+    # H2334: EN citation-TM pilot — Griffith 1896 for ṚV. only. Fully
+    # DB-independent (committed JSON); char-count only in CI logs, never verse body.
+    print('EN Griffith checks (DB-independent, H2334):')
+    check(_canonical_to_griffith_loc('01_rigveda:1.1') == '1.1.1',
+          "canonical 01_rigveda:1.1 -> Griffith location 1.1.1")
+    check(_canonical_to_griffith_loc('10_rigveda:90.1') == '10.90.1',
+          "canonical 10_rigveda:90.1 -> Griffith location 10.90.1")
+    en1 = lookup('ṚV.', '1,1,1', lang='en')
+    check(en1['status'] == 'hit'
+          and en1.get('en')
+          and en1.get('rights_flag') == 'pd'
+          and en1.get('source') == 'Griffith 1896'
+          and en1.get('griffith_location') == '1.1.1'
+          and en1.get('canonical_id') == '01_rigveda:1.1',
+          'ṚV. 1,1,1 lang=en -> hit, Griffith 1.1.1, EN %d chars, rights=pd'
+          % (len(en1['en']) if en1.get('en') else 0))
+    en10 = lookup('ṚV.', '10,90,1', lang='en')
+    check(en10['status'] == 'hit'
+          and en10.get('en')
+          and en10.get('griffith_location') == '10.90.1',
+          'ṚV. 10,90,1 lang=en -> hit, Griffith 10.90.1, EN %d chars'
+          % (len(en10['en']) if en10.get('en') else 0))
+    en_ts = lookup('TS.', '2,3,1,4', lang='en')
+    check(en_ts['status'] == 'miss' and en_ts.get('reason') == 'text-not-covered',
+          'TS. 2,3,1,4 lang=en -> %s/%s (no EN of-record, clean miss)'
+          % (en_ts['status'], en_ts.get('reason')))
+    en_r = lookup('R.', '2,91,26', lang='en')
+    check(en_r['status'] == 'miss' and en_r.get('reason') == 'en-translation-unpublished',
+          'R. 2,91,26 lang=en -> %s/%s (RU-covered, EN not wired this pilot)'
+          % (en_r['status'], en_r.get('reason')))
+    # RU path unchanged for ṚV. (may be evidence_unavailable without corpus.db)
+    ru_rv = lookup('ṚV.', '1,1,1', lang='ru')
+    check(ru_rv.get('canonical_id') == '01_rigveda:1.1'
+          and ru_rv['status'] in ('hit', 'evidence_unavailable', 'miss'),
+          'ṚV. 1,1,1 lang=ru -> %s, canonical %s (RU path unchanged)'
+          % (ru_rv['status'], ru_rv.get('canonical_id')))
+    # Default lang remains ru (no kwarg)
+    def_ru = lookup('TS.', '2,3,1,4')
+    check(def_ru['status'] == 'miss' and def_ru.get('reason') == 'text-not-covered',
+          'lookup default lang=ru still clean-misses TS.')
+
     print()
     if fails:
         sys.exit('%d selftest check(s) FAILED' % len(fails))
@@ -495,16 +639,19 @@ def main():
     lk = sub.add_parser('lookup')
     lk.add_argument('prefix')
     lk.add_argument('locus')
+    lk.add_argument('--lang', default='ru',
+                    help='ru (default) or en (ṚV. Griffith pilot, H2334)')
     sub.add_parser('selftest')
     args = ap.parse_args()
     if args.cmd == 'selftest':
         selftest()
     elif args.cmd == 'lookup':
-        rec = lookup(args.prefix, args.locus)
+        rec = lookup(args.prefix, args.locus, lang=args.lang)
         redacted = dict(rec)
         if redacted.get('ru'):
             redacted['ru'] = '<%d RU chars — metadata-only, not printed>' % len(rec['ru'])
-        import json
+        if redacted.get('en'):
+            redacted['en'] = '<%d EN chars — not printed in CLI log>' % len(rec['en'])
         print(json.dumps(redacted, ensure_ascii=False, indent=1))
     else:
         print(__doc__)
