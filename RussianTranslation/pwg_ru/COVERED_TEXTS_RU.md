@@ -1,6 +1,6 @@
 # Covered texts — Russian translations of record for PWG citations
 
-_Created: 19-07-2026 · Last updated: 27-07-2026_
+_Created: 19-07-2026 · Last updated: 07-08-2026_
 
 When a PWG card cites a passage of a text that **already has a published or aligned
 Russian translation** (R., MBH., ṚV., KATHĀS., …), the card's citation should **reuse
@@ -20,6 +20,14 @@ fan-out [H1304](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H13
 > it does not re-translate a covered citation); that text is never persisted to a
 > committed or public artifact. The 166k-hallucination lesson stands: a MISS stays a
 > miss; a model never fills a missing translation-of-record from world knowledge.
+
+> **EN of record (pilot, H2334).** For ṚV. only, `lookup(..., lang="en")` reuses
+> **Griffith 1896** (public domain) from
+> [`pwg_ru/griffith_en_1896.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/griffith_en_1896.json)
+> (10,552 stanzas; location form `1.1.1` … `10.191.4`). Jamison–Brereton 2014 is a
+> secondary scholarly EN witness and is **not** wired as of-record in this pilot.
+> RU of record for ṚV. remains Elizarenkova (unchanged). Other texts (R., MBH., AV., …)
+> have no EN citation-TM path yet.
 
 ## What the data says
 
