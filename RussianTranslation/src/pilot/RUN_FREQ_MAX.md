@@ -1,6 +1,6 @@
 # Runbook — frequency queue on the headless CLI (manifest v2)
 
-_Created: 09-07-2026 · Last updated: 06-08-2026_
+_Created: 09-07-2026 · Last updated: 07-08-2026_
 
 Goal: scale the PWG→Russian production run in DCS-frequency order, with giant
 roots split into single-pass units and re-glued after translation. This is the
@@ -679,7 +679,14 @@ H1447: **180/180** selftests PASS; parity **73** entries no drift (counts grow �
 
 ### A1 — health (representative ≥5 KB)
 
-Via [`h963_c4_gate0_probe.py`](h963_c4_gate0_probe.py) (strict: measured ≥ 30 000 ms ⇒ NO-GO):
+Via [h963_c4_gate0_probe.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py). **The pass rule is DERIVED, never
+restated here:** the probe reads `probe_log.POLICIES[probe_log.CURRENT_POLICY]` and prints the
+ceiling it judged by on its own `ceiling` header line — read that, not this page. The numbers
+in the H1447 table below were taken under `production_v1` (30 000 ms wall, no route ceiling)
+and are kept as **dated history**; the live policy has since been `production_v2` (65 000) and
+is now `production_v3` (80 000 ms wall **and** 45 000 ms route). A runbook that names a live
+threshold goes stale within days — this one had, and said "strict: measured ≥ 30 000 ms ⇒
+NO-GO" for two policy generations after that stopped being true (H2254).
 
 | Reading | Elapsed | Result |
 |---|---|---|
@@ -735,6 +742,24 @@ does exactly that (wired into `window_selftest.py`). The canary rides the **prod
 > with 12 of 16 calls killed at exactly 180 s. A sealed manifest's own
 > `budgets.timeout_ceil_ms` clamps it too and only ever *lowers*, so an artifact prepared
 > before this change must be re-budgeted, not merely re-run.
+>
+> **H2254 (07-08-2026) — above the maximum is now REFUSED, and the default IS the maximum.**
+> 300 000 ms is an absolute maximum by owner ruling (03-08-2026); raising it again needs a
+> new ruling backed by measured evidence. Three things changed, and the first is the one that
+> bites an operator:
+>
+> - **`--timeout` now defaults to 300, not 7200.** The two-hour default only ever survived
+>   because every route clamped it silently. Asking for nothing gets the maximum.
+> - **A request ABOVE the maximum raises instead of rounding down** — on `--timeout`, on a
+>   sealed `budgets.timeout_ceil_ms`, and in `validate_manifest` (so the planning routes
+>   refuse it too, not just the executor). The refusal happens *before* any subprocess is
+>   spawned, so a wrong request costs nothing. Lower values still bind exactly as before;
+>   the `min()` above is unchanged.
+> - **The number itself is imported, not copied.** `execution_contract.PRODUCTION_HARD_TIMEOUT_MS`
+>   is the single source for `headless_worker.HARD_TIMEOUT_MS`, `gen_opt_harness2.KILL_CEIL_MS`,
+>   the `KILL_CEIL_MS` baked into every generated `run_pilot_wf.*.js`, and the
+>   `budgets.timeout_ceil_ms` each manifest seals — the five-places-one-inert-edit trap #983
+>   documented.
 
 ### A3 — mechanical LIVE_GO → then stop or spend
 

@@ -35,6 +35,7 @@ import argparse
 import hashlib
 import json
 import os
+import subprocess
 import sys
 import tempfile
 import time
@@ -50,8 +51,26 @@ for p in (HERE, SRC):
 
 from promote_final_cards import SYNTHETIC_KEY_RE, TN_RE  # noqa: E402  C-01 single source
 import marker_scan  # noqa: E402  H2253 — one marker/{Tn} scope definition, two gates
+from execution_contract import PRODUCTION_HARD_TIMEOUT_MS  # noqa: E402  H2254 one ceiling
 
 RECEIPT_SCHEMA = 'pwg.canary_gate_receipt.v1'
+# H2254: the fields a bounded live proof must be able to answer FROM ITS OWN ARTIFACT.
+#
+# The v1 receipt recorded the verdict and its reasons and nothing about the run that produced
+# it -- so "how many calls did this actually cost, what did it cost in dollars, was the kill
+# switch on, which commit was it" were answerable only by correlating four separate files by
+# hand, and only while the operator still remembered which four. That is exactly the shape of
+# evidence the live-gate contract calls disposable. The keys below are ADDITIVE: `verdict`,
+# `reasons`, `facts`, `profile_slot` and `cli_safe_mode` keep their v1 meaning and position,
+# so `enforce()` and every receipt already on disk stay valid and the schema token does not
+# move. Missing evidence is recorded as None, never as a zero -- a zero cost and an unknown
+# cost are the distinction 05-08 turned on (`observed_cost_usd: 0` meaning "not evaluable"
+# versus 06-08's genuine $0 refusal), and collapsing them is how a floor gets read as a total.
+EVIDENCE_KEYS = ('commit', 'manifest_sha256', 'manifest_path', 'status_path',
+                 'call_reservation_path', 'run_id', 'calls_spent', 'max_calls',
+                 'observed_cost_usd', 'cost_evaluable', 'unevaluable_calls',
+                 'api_latency_ms', 'wall_latency_ms', 'kill_switch',
+                 'cli_safe_mode_effective', 'timeout_ceil_ms', 'hard_timeout_ms')
 DEFAULT_EXPECT_SENSES = 3
 DEFAULT_MAX_AGE_SECONDS = 6 * 3600   # same freshness posture as the probe receipts
 LITERAL_MARKERS = ('SAN-LOSS', 'UNMAPPED')
@@ -137,6 +156,122 @@ def _atomic_write_json(path, payload):
         raise
 
 
+def _abs_or_none(path):
+    return os.path.abspath(path) if path else None
+
+
+def _read_json(path):
+    """Best effort: absent or unreadable evidence is None, never a fabricated zero."""
+    if not path:
+        return None
+    try:
+        with open(path, encoding='utf-8') as fh:
+            return json.load(fh)
+    except (OSError, ValueError):
+        return None
+
+
+def _repo_commit():
+    """The commit the paid call ran from. `None` if git cannot answer -- the handoff's
+    'seal the released commit' is a claim about a real revision, so a guess is worse
+    than an absence."""
+    try:
+        out = subprocess.run(['git', 'rev-parse', 'HEAD'], cwd=HERE, capture_output=True,
+                             text=True, encoding='utf-8', timeout=30)
+    except (OSError, subprocess.SubprocessError):
+        return None
+    return out.stdout.strip() or None if out.returncode == 0 else None
+
+
+def _latencies(reservation, run_id):
+    """Wall and route latency of the MEASURED calls, from the durable reservation ledger.
+
+    Returns the maximum over finalized reservations rather than a sum or a mean: the gate's
+    question is "did any call breach the ceiling", and a mean hides exactly the bimodality
+    (a 15 s warm-up beside a 300 s measured leg) that every c4 NO-GO day so far has shown.
+    """
+    if not isinstance(reservation, dict):
+        return None, None
+    run = ((reservation.get('runs') or {}).get(str(run_id))
+           if run_id else None)
+    if run is None:
+        runs = list((reservation.get('runs') or {}).values())
+        run = runs[0] if len(runs) == 1 else None
+    if not isinstance(run, dict):
+        return None, None
+    wall, api = [], []
+    for item in run.get('reservations') or []:
+        telemetry = item.get('telemetry') or {}
+        for source, sink in (('duration_ms', wall), ('duration_api_ms', api)):
+            value = telemetry.get(source)
+            if isinstance(value, (int, float)) and not isinstance(value, bool):
+                sink.append(value)
+    return (max(wall) if wall else None), (max(api) if api else None)
+
+
+def collect_evidence(res, args):
+    """Derive the H2254 evidence block. Every value is READ, never asserted."""
+    meta = res.get('meta') or {}
+    summary = res.get('summary') or {}
+    manifest = _read_json(args.manifest)
+    status = _read_json(args.status)
+    reservation = _read_json(args.call_reservation)
+    budgets = (manifest or {}).get('budgets') or {}
+    run = None
+    if isinstance(reservation, dict):
+        runs = reservation.get('runs') or {}
+        run = runs.get(str(args.run_id)) if args.run_id else (
+            list(runs.values())[0] if len(runs) == 1 else None)
+    usage = (run or {}).get('usage') or {}
+    wall_ms, api_ms = _latencies(reservation, args.run_id)
+    # The kill switch is not a single serialized flag: `budgets.kill_switch` is an INPUT to
+    # `derive_agent_budget`, and what actually bounds a run is whether the derived per-lane
+    # ceilings came out as numbers or as None (H2173 §2 row 10 -- "kill_switch=false => every
+    # ceiling None => unbounded"). Record the observable consequence next to the declaration,
+    # so a receipt claiming a bounded run can be checked rather than believed.
+    kill_switch = {
+        'declared': budgets.get('kill_switch'),
+        'max_agents': budgets.get('max_agents'),
+        'max_translate_agents': budgets.get('max_translate_agents'),
+        'max_heal_agents': budgets.get('max_heal_agents'),
+        'bounded': all(budgets.get(name) is not None
+                       for name in ('max_translate_agents', 'max_heal_agents')) or None,
+        'budget_stops': summary.get('budget_stops'),
+    } if manifest is not None else None
+    return {
+        'commit': _repo_commit(),
+        'manifest_sha256': (sha256_file(args.manifest) if args.manifest
+                            and os.path.exists(args.manifest) else None),
+        'manifest_path': _abs_or_none(args.manifest),
+        'status_path': _abs_or_none(args.status),
+        'call_reservation_path': _abs_or_none(args.call_reservation),
+        'run_id': args.run_id,
+        'calls_spent': (run or {}).get('calls_spent'),
+        'max_calls': (run or {}).get('max_calls'),
+        'observed_cost_usd': usage.get('observed_cost_usd'),
+        'cost_evaluable': usage.get('cost_evaluable'),
+        'unevaluable_calls': usage.get('unevaluable_calls'),
+        'api_latency_ms': api_ms,
+        'wall_latency_ms': wall_ms,
+        'kill_switch': kill_switch,
+        # What the spawn ACTUALLY did (H2251), read off the worker's own status file rather
+        # than re-derived -- the manifest records the REQUEST and the two differ on a CLI that
+        # cannot parse `--safe-mode`.
+        'cli_safe_mode_effective': (status or {}).get('cli_safe_mode_effective'),
+        'timeout_ceil_ms': budgets.get('timeout_ceil_ms'),
+        'hard_timeout_ms': PRODUCTION_HARD_TIMEOUT_MS,
+        'gen_model': meta.get('gen_model'),
+    }
+
+
+def sha256_file(path):
+    h = hashlib.sha256()
+    with open(path, 'rb') as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b''):
+            h.update(chunk)
+    return h.hexdigest()
+
+
 def cmd_judge(args):
     res = _load_wf(args.wf_output)
     verdict, reasons, facts = judge_payload(res, expect_senses=args.expect_senses)
@@ -160,6 +295,10 @@ def cmd_judge(args):
         'reasons': reasons,
         'facts': facts,
     }
+    # H2254: additive evidence block. Written unconditionally so a receipt's SHAPE never
+    # depends on which optional flags the operator remembered -- an absent key and a null key
+    # look identical to a reader, and only one of them proves the evidence was looked for.
+    receipt['evidence'] = collect_evidence(res, args)
     if args.receipt:
         _atomic_write_json(args.receipt, receipt)
     print('CANARY %s%s' % (verdict, ' -> %s' % args.receipt if args.receipt else ''))
@@ -219,6 +358,13 @@ def main(argv=None):
     j.add_argument('wf_output')
     j.add_argument('--expect-senses', type=int, default=DEFAULT_EXPECT_SENSES)
     j.add_argument('--receipt', help='write the atomic receipt JSON here')
+    # H2254: the durable inputs the evidence block reads. All optional -- `judge` still works
+    # on a bare wf_output, it just records `null` for what it was not shown, which is the
+    # honest answer and is distinguishable from a measured zero.
+    j.add_argument('--manifest', help='sealed manifest the canary ran (hashed into the receipt)')
+    j.add_argument('--status', help='worker --status-out file (effective spawn shape)')
+    j.add_argument('--call-reservation', help='durable call-reservation ledger (calls + cost)')
+    j.add_argument('--run-id', help='reservation run id, when the ledger holds several')
     c = sub.add_parser('check', help='validate a receipt the way --execute does')
     c.add_argument('receipt')
     c.add_argument('--max-age-seconds', type=int, default=DEFAULT_MAX_AGE_SECONDS)

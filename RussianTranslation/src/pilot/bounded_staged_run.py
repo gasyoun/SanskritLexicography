@@ -289,7 +289,8 @@ class RunContext:
     `probe_latencies` so dispatch never reaches an unprobed account."""
 
     def __init__(self, db, coord_dir, coordinator, cwd, events, run_id, probe_latencies,
-                 claude_bin='claude', timeout=7200, gen_model_version=DEFAULT_GEN_MODEL_VERSION,
+                 claude_bin='claude', timeout=mao.DEFAULT_TIMEOUT_S,
+                 gen_model_version=DEFAULT_GEN_MODEL_VERSION,
                  max_drain_iterations=1000, only_profile=None, checkpoint=None,
                  stop_before_promote=False, call_reservation=None, max_calls=None,
                  drain_idle_poll_seconds=DRAIN_IDLE_POLL_SECONDS,
@@ -1103,7 +1104,7 @@ def build_parser():
     ap.add_argument('--only-profile', help='enforce one manifest-bound logical profile slot')
     ap.add_argument('--drop-unhealthy', action='store_true')
     ap.add_argument('--gen-model-version', default=DEFAULT_GEN_MODEL_VERSION)
-    ap.add_argument('--timeout', type=int, default=7200)
+    ap.add_argument('--timeout', type=int, default=mao.DEFAULT_TIMEOUT_S)
     ap.add_argument('--events')
     ap.add_argument('--report')
     ap.add_argument('--run-id')

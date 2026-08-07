@@ -26,7 +26,8 @@ from proc_tree import run_tree_kill, terminate_tree, windows_hidden_flags  # noq
 import card_fields  # noqa: E402  (C-01: the one restore/promote field set, shared with the JS lane)
 import german_anchor  # noqa: E402  (H858 Part B: source-anchored repair of a dropped `german` span)
 from window_common import portrait_key_iast  # noqa: E402  (B02: one iast derivation for both stitch twins)
-from execution_contract import (ActiveCallClaim, SCHEMA_V1, SCHEMA_V2,
+from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS, SCHEMA_V1,
+                                SCHEMA_V2, assert_timeout_within_ceiling,
                                 config_dir_fingerprint, validate_manifest,
                                 validate_profile)  # noqa: E402
 from call_reservation import (CallLimitReached, CallReservationLedger,
@@ -57,7 +58,43 @@ EXIT_CONTENT = 24
 # prompted the original ruling -- a middle path, deliberately not a revert to the 480000
 # (8 min) this replaced. Must stay in step with `gen_opt_harness2.KILL_CEIL_MS`: the JS
 # harness kills from the inside, so raising only this constant is inert.
-HARD_TIMEOUT_MS = 300000
+#
+# H2254 (03-08-2026 owner ruling): the literal moved to `execution_contract` and both this
+# module and `gen_opt_harness2` now IMPORT it. The equality the #983 selftest pins is
+# therefore true by construction; that test is kept as the guard against re-introducing a
+# copied literal. Exceeding the ceiling is now a REFUSAL, not a silent clamp (see
+# `execution_contract.assert_timeout_within_ceiling`).
+HARD_TIMEOUT_MS = PRODUCTION_HARD_TIMEOUT_MS
+
+# H2254: the operator default. It was 7200 (two hours) -- forty times the ceiling -- and
+# survived only because every route clamped silently. With the clamp replaced by a refusal a
+# two-hour default would refuse every ordinary invocation, so the default IS the ceiling:
+# asking for nothing gets the maximum, and asking for more than the maximum is an error
+# instead of a rounding. Any lower `--timeout` still binds exactly as before.
+DEFAULT_TIMEOUT_S = HARD_TIMEOUT_MS // 1000
+
+# H2254: the SUPERVISOR's wrapper timeout must sit strictly ABOVE the per-call ceiling.
+#
+# `max_account_orchestrator` spawns this worker under `run_tree_kill(..., timeout=timeout)`
+# using the SAME number it passes down as `--timeout`. At the old 7200 s operator default
+# that was harmless -- the outer bound was 24x the inner one -- but making the default equal
+# the ceiling would have made them identical, and an outer bound equal to the inner one kills
+# the worker at the exact moment its last call reaches its own ceiling: the tree dies during
+# teardown, `--status-out` is never written, and a call that was legitimately killed at the
+# ceiling becomes a worker that vanished without a status file (the H1 "crash without a
+# status file" class the hardening backlog closed, re-opened from the outside).
+#
+# The headroom covers worker startup, manifest+preflight validation, prompt assembly and the
+# atomic status/output writes -- all of it work that happens OUTSIDE the model call and is
+# therefore not bounded by the per-call ceiling at all. 120 s is deliberately generous
+# against measured startup (single-digit seconds): this bound exists to catch a wedged
+# supervisor, not to be tight.
+WRAPPER_TIMEOUT_HEADROOM_S = 120
+
+
+def wrapper_timeout_s(per_call_timeout_s):
+    """Outer tree-kill bound for a spawned worker, given its per-call ceiling."""
+    return int(per_call_timeout_s) + WRAPPER_TIMEOUT_HEADROOM_S
 
 # H2158 (#983, 02-08-2026): spawn the CLI from a BARE directory, not the repo.
 #
@@ -828,9 +865,23 @@ class HeadlessEngine:
         self.profile_fingerprint = config_dir_fingerprint(self.config_dir)
         self.active_claim = active_claim
         budgets = manifest.get('budgets') or {}
-        # R4 (C-15): clamp every subprocess to min(operator, budgets.timeout_ceil_ms, HARD).
-        eff_ms = min(int(timeout) * 1000, HARD_TIMEOUT_MS)
+        # R4 (C-15): the effective bound is min(operator, budgets.timeout_ceil_ms, HARD).
+        #
+        # H2254: the two INPUTS to that min() are now refused above the hard maximum instead
+        # of being clamped into it, and the refusal happens here -- in __init__, before a
+        # single model subprocess is spawned, so a bad request costs nothing. The min() below
+        # is unchanged and still selects the STRICTEST of the three; only the direction of
+        # the >ceiling case moved, from "quietly becomes 300 s" to "raises".
+        #
+        # Both are checked, not just the operator's: a sealed manifest reaches this engine
+        # through `--allow-historical-v1` and through validate_manifest, and defence in depth
+        # here means the money guard does not depend on which validation path ran first.
+        requested_ms = int(timeout) * 1000
+        assert_timeout_within_ceiling(requested_ms, 'operator --timeout', HARD_TIMEOUT_MS)
         ceil_ms = budgets.get('timeout_ceil_ms')
+        assert_timeout_within_ceiling(ceil_ms, 'manifest budgets.timeout_ceil_ms',
+                                      HARD_TIMEOUT_MS)
+        eff_ms = min(requested_ms, HARD_TIMEOUT_MS)
         if ceil_ms:
             eff_ms = min(eff_ms, int(ceil_ms))
         self.timeout = eff_ms / 1000.0
@@ -1381,7 +1432,8 @@ def refuse_starvation_max_agents(manifest, max_agents_override):
             % (max_agents_override, n))
 
 
-def execute(manifest, claude='claude', timeout=7200, runner=None, max_agents_override=None,
+def execute(manifest, claude='claude', timeout=DEFAULT_TIMEOUT_S, runner=None,
+            max_agents_override=None,
             call_reservation=None, config_dir=None):
     validate_manifest(manifest, require_v2=False)
     _validate_fragment_tm(manifest)      # R6: refuse a null-owner fragment_tm slot BEFORE any call
@@ -1469,7 +1521,11 @@ def main(argv=None):
     ap.add_argument('--only-profile', help='required profile-slot assertion for live v2 execution')
     ap.add_argument('--allow-historical-v1', action='store_true',
                     help='read-only/historical replay only; v1 is not a production contract')
-    ap.add_argument('--timeout', type=int, default=7200)
+    ap.add_argument('--timeout', type=int, default=DEFAULT_TIMEOUT_S,
+                    help='per-call subprocess ceiling in SECONDS. Default and absolute '
+                         'maximum %d s (H2254); a larger value is REFUSED before any paid '
+                         'call, never clamped. Lower values bind normally.'
+                         % DEFAULT_TIMEOUT_S)
     ap.add_argument('--max-agents', type=int, default=None,
                     help='R3: hard cap on TOTAL model spawns (translate+heal), not concurrency '
                          'width. Canary-only: refuse when N < selected key count (H1610). '

@@ -8,8 +8,8 @@ import time
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-from execution_contract import (ActiveCallClaim, SCHEMA_V2, bind_output_meta,
-                                config_dir_fingerprint, validate_manifest,
+from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS, SCHEMA_V2,
+                                bind_output_meta, config_dir_fingerprint, validate_manifest,
                                 validate_profile)
 import probe_log
 from probe_log import verdict_for
@@ -162,7 +162,51 @@ def main():
             holder.wait()
         with ActiveCallClaim(fp, r9):        # kernel released it on death -> immediate reacquire
             pass
+    _test_h2254_timeout_ceiling_boundary()
     print('execution_contract_selftest: PASS')
+
+
+def _test_h2254_timeout_ceiling_boundary():
+    """H2254: `validate_manifest` refuses a sealed budget above the production maximum.
+
+    This is the layer the executor's own guard cannot cover on its own: a manifest is
+    validated by `coordinator`, by `max_account_orchestrator` and by `headless_worker`, and
+    only the last one constructs an engine. A ceiling enforced solely in the engine would let
+    the two planning routes accept a manifest they will later be unable to run.
+
+    Boundary values are derived from the constant, never restated -- FINDINGS §518: a test
+    that writes 300001 as a literal keeps asserting a dead number after the next ruling.
+    """
+    ceiling = PRODUCTION_HARD_TIMEOUT_MS
+    with tempfile.TemporaryDirectory() as d:
+        cfg = os.path.join(d, 'profile')
+        os.makedirs(cfg)
+        for value in (None, 1, ceiling - 1, ceiling):
+            manifest = fixture(cfg)
+            if value is not None:
+                manifest['budgets'] = {'timeout_ceil_ms': value}
+            validate_manifest(manifest, require_v2=True)     # accepted: at or below maximum
+        over = fixture(cfg)
+        over['budgets'] = {'timeout_ceil_ms': ceiling + 1}
+        try:
+            validate_manifest(over, require_v2=True)
+        except ValueError as exc:
+            assert 'REFUSED' in str(exc) and str(ceiling) in str(exc), str(exc)
+        else:
+            raise AssertionError('validate_manifest accepted a %d ms ceiling above the %d ms '
+                                 'production maximum' % (ceiling + 1, ceiling))
+        # A v1 manifest is still executable via --allow-historical-v1, so the money guard must
+        # bind there too -- it is checked ahead of the schema branch for exactly this reason.
+        legacy = {'schema': 'pwg.headless_execution_manifest.v1',
+                  'budgets': {'timeout_ceil_ms': ceiling + 1}}
+        try:
+            validate_manifest(legacy, require_v2=False)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError('a v1 manifest bypassed the ceiling refusal')
+    print('  H2254 manifest ceiling: <=%d accepted, %d refused (v1 and v2)'
+          % (ceiling, ceiling + 1))
 
 
 if __name__ == '__main__':

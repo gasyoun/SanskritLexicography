@@ -161,6 +161,9 @@ def test_lemma_dictionary_anchors_carried_when_present(lemma_records):
     assert with_pwg
 
 
+@pytest.mark.skipif(not os.path.exists(rv_spine_build.LEMMATIZATION_PATH),
+                    reason='RV lemmatization not built in this checkout (derived data is '
+                           'gitignored) — the invariant cannot be exercised')
 def test_lemma_transformcontext_parsed_as_json_string_not_object():
     """Regression pin for VERIFICATION Sec.2 invariant 6: transformContext is a
     JSON string, not a nested object; a parser treating it as an object would
@@ -181,6 +184,9 @@ def test_schema_file_is_valid_json_and_draft_2020_12():
     assert schema['$schema'] == 'https://json-schema.org/draft/2020-12/schema'
 
 
+@pytest.mark.skipif(not (os.path.exists(STANZA_PATH) and os.path.exists(LEMMA_PATH)),
+                    reason='RV spine JSONL not built in this checkout (derived data is '
+                           'gitignored) — nothing to validate against the schema')
 def test_stanza_and_lemma_jsonl_validate_against_schema():
     n_stanza, errors_stanza = rv_spine_build.validate_jsonl(
         STANZA_PATH, json.load(open(SCHEMA_PATH, encoding='utf-8')))
