@@ -915,7 +915,54 @@ def test_q3_execute_requires_canary_go_receipt_h2159(td):
     except SystemExit as exc:
         assert 'FRESH' in str(exc)
 
-    # The --execute wiring: no receipt -> parser refusal; fresh GO receipt -> gate passed.
+    # H2254: the receipt must carry the bounded-run evidence, and an ABSENT input must be
+    # recorded as null rather than as a measured zero. `observed_cost_usd: 0` meant "not
+    # evaluable" on 05-08 and "genuinely free" on 06-08; a receipt that cannot tell those
+    # apart turns a cost FLOOR into a reported total.
+    assert cg.main(['judge', wf, '--receipt', receipt]) == 0
+    bare = cg.load_receipt(receipt)
+    assert 'evidence' in bare, 'the evidence block must be written unconditionally'
+    for key in cg.EVIDENCE_KEYS:
+        assert key in bare['evidence'], 'evidence key %r missing from the receipt' % key
+    assert bare['evidence']['observed_cost_usd'] is None, (
+        'an unsupplied ledger recorded a cost of %r -- absence must not read as $0'
+        % bare['evidence']['observed_cost_usd'])
+    assert bare['evidence']['hard_timeout_ms'] == cg.PRODUCTION_HARD_TIMEOUT_MS
+
+    # ...and with the durable inputs supplied, every number is READ from them.
+    ledger = os.path.join(td, 'q3_calls.json')
+    with open(ledger, 'w', encoding='utf-8') as fh:
+        json.dump({'schema': 'x', 'runs': {'run-h2254': {
+            'max_calls': 3, 'calls_spent': 3,
+            'usage': {'observed_cost_usd': 1.25, 'cost_evaluable': True,
+                      'unevaluable_calls': 0},
+            'reservations': [
+                {'telemetry': {'duration_ms': 57207, 'duration_api_ms': 18310}},
+                {'telemetry': {'duration_ms': 291004, 'duration_api_ms': 44100}}]}}}, fh)
+    statusf = os.path.join(td, 'q3_status.json')
+    with open(statusf, 'w', encoding='utf-8') as fh:
+        json.dump({'classification': 'success', 'cli_safe_mode_effective': True}, fh)
+    manf = os.path.join(td, 'q3_manifest.json')
+    with open(manf, 'w', encoding='utf-8') as fh:
+        json.dump({'budgets': {'timeout_ceil_ms': cg.PRODUCTION_HARD_TIMEOUT_MS,
+                               'kill_switch': True, 'max_translate_agents': 1,
+                               'max_heal_agents': 1, 'max_agents': 2}}, fh)
+    rich_receipt = os.path.join(td, 'q3_receipt_rich.json')
+    assert cg.main(['judge', wf, '--receipt', rich_receipt, '--manifest', manf,
+                    '--status', statusf, '--call-reservation', ledger,
+                    '--run-id', 'run-h2254']) == 0
+    ev = cg.load_receipt(rich_receipt)['evidence']
+    assert (ev['calls_spent'], ev['max_calls']) == (3, 3), ev
+    assert ev['observed_cost_usd'] == 1.25 and ev['cost_evaluable'] is True, ev
+    assert (ev['wall_latency_ms'], ev['api_latency_ms']) == (291004, 44100), (
+        'latency must be the WORST finalized call, not a mean -- a mean hides the '
+        'warm-up/measured bimodality every c4 NO-GO day has shown: %r' % ev)
+    assert ev['cli_safe_mode_effective'] is True, ev
+    assert ev['kill_switch']['declared'] is True and ev['kill_switch']['bounded'] is True, ev
+    assert ev['manifest_sha256'] and ev['timeout_ceil_ms'] == cg.PRODUCTION_HARD_TIMEOUT_MS
+    assert cg.enforce(rich_receipt, only_profile='c4')['verdict'] == 'GO', (
+        'the additive evidence block must not disturb enforce()')
+
     assert cg.main(['judge', wf, '--receipt', receipt]) == 0
     base = ['--plan', os.path.join(td, 'q3p.json'), '--coord-dir', os.path.join(td, 'q3cd'),
             '--coordinator', os.path.join(HERE, 'coordinator.py'), '--cwd', td,

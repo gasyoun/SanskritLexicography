@@ -49,7 +49,8 @@ from autosplit_requeue import plan as split_plan     # deterministic per-card se
 from sense_count import count_source_senses           # H920/H960 deterministic top-level source-sense count
 sys.path.insert(0, SRC)
 from safe_filename import safe_name
-from execution_contract import SCHEMA_V2, bind_output_meta, config_dir_fingerprint
+from execution_contract import (PRODUCTION_HARD_TIMEOUT_MS, SCHEMA_V2, bind_output_meta,
+                                config_dir_fingerprint)
 from whitney_grammar import grammar_for
 from nominal_grammar import nominal_grammar_for
 
@@ -213,7 +214,14 @@ KILL_FLOOR_MS = 45000       # H189 recalibration (MG: ">~60 s per subcard is sus
                             #  fragment: it guaranteed nothing was killed before 2 min even for a
                             #  tiny call, so the pril10_w1 fragments ran 3-6.5 min each. 45 s floor
                             #  + BASE/SLOPE puts a tiny fragment's hard-kill at ~60-70 s.
-KILL_CEIL_MS = 300000       # hard ceiling. On kill the call is abandoned and its cards fall to the
+                            # H2254: the literal moved to `execution_contract`
+                            #  (PRODUCTION_HARD_TIMEOUT_MS) and BOTH this generator and
+                            #  `headless_worker` now import it, so the value the generated JS
+                            #  bakes in, the value sealed into `budgets.timeout_ceil_ms`, and
+                            #  the value the Python subprocess clamp uses are one number by
+                            #  construction rather than three literals pinned by a test.
+KILL_CEIL_MS = PRODUCTION_HARD_TIMEOUT_MS
+                            # hard ceiling. On kill the call is abandoned and its cards fall to the
                             #  bounded fragment lane / binary-split, so a killed unit is REQUEUED,
                             #  never silently lost (see resolveGroup/healGroup below).
                             #  History: 480000 (8 min) -> 180000 ("NOTHING runs past 3 min", MG,
