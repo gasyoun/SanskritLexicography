@@ -1,8 +1,54 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 06-08-2026_
+_Created: 09-07-2026 · Last updated: 07-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 07-08-2026 (H2263, #983) — the w1 acceptance run did NOT fire: `BLOCKED_ON_LANE_STOP`, $0.00, and the ration for 07-08 UTC is untouched at 0 of 2
+
+Opus 5 (`claude-opus-5`). **No probe. No canary. No window. No model call of any kind.**
+The `h1447-m50-w1` lease is intact and unconsumed, as it has been since 22-07.
+
+[H2263](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2263-Opus_RussianTranslation_nakzatra-w1-acceptance-run-after-call-weight-cap_03.08.26.md)
+opens with "Gate first, always" and names a health NO-GO as a stop. Running its Step 1 today
+would itself have been the violation: the `/pwg-live-gate` retry policy (MG ruling 02-08-2026,
+H2174) stops the lane after **3 consecutive NO-GO days**, and those three are already on file —
+**03-08** (route stall, 297 949 ms), **05-08** (our own kill at 300 099 ms, 0 B), **06-08**
+(up-front `rate_limit` refusal, 18 574 ms, $0.00). A fourth sitting is the one move that rule
+names as wrong. Same ruling, reached independently, as
+[H2254 §4 earlier today](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2254/BOUNDED_300S_CEILING_CONVERGENCE_AND_LIVE_PROOF_07-08-2026.md).
+
+| Gate step | H2263 requires | This sitting | Cost |
+|---|---|---|--:|
+| 1 — health probe | one fresh c4 gate-0 reading | **not fired** — barred by the 3-NO-GO-day stop | $0.00 |
+| 2 — canary, safe-mode arm | only after health PASS | **not reached** | $0.00 |
+| 3 — w1 window, `--stop-before-promote` | only after LIVE_GO | **not reached** | $0.00 |
+
+**The ≥6 h spacing clock is not the binding constraint, and reading it as one is the trap.**
+H2263's row and the 06-08 entry below both record "next legal probe **07-08 01:02:53 UTC**",
+which is true of the *spacing* ration and irrelevant to the *lane stop* — spacing governs the
+gap between probes, the 3-day clause governs whether another probe is legal at all. The stop is
+the stricter of the two and it has not been lifted. That misreading was live in H2263's own
+start-here block until this pass; the file now carries the precondition above its Mission, so
+the next paste of the starter line cannot spend ~$0.55 rediscovering the stop.
+
+**What unblocks this handoff — nothing this session can do:**
+
+1. [H2299](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2299/C4_MEASURED_LEG_KILL_CEILING_HANG_CLASSIFICATION_06-08-2026.md)
+   diagnosis lands (it owns the hang class), plus the offline envelope capture of
+   [H2326](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2326-Opus_RussianTranslation_c4-rate-limit-refusal-envelope-capture-1172_06.08.26.md)
+   ([#1172](https://github.com/gasyoun/SanskritLexicography/issues/1172)) so the next refusal is
+   diagnosable — free and offline, no paid call should choose between the three live hypotheses.
+2. **A human re-authorizes the live sequence.** The lane stopped by contract; only a ruling
+   restarts it, and that ruling should come after the diagnosis, not before.
+3. The open `@DECIDE` on the clause's *remedy* is a separate question and does **not** gate the
+   above — the **stop** half fired correctly on any reading of it.
+
+Nothing here re-derives the ceiling: the 3-NO-GO clause routes to
+[H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md)
+re-derivation, and that remedy stays barred for exactly the reason recorded on 06-08 — 18 574 ms
+is 4.3× *under* the 80 000 ms wall ceiling with the route ceiling never exercised, so there is no
+distribution to fit and re-fitting would be raising a guard to pass a gate.
 
 ## 06-08-2026 (H2253) — the byte-identity control was inoperative, and had been silently eating a fixture lease
 
