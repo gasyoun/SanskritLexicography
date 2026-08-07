@@ -137,15 +137,7 @@ jobs:
         # its ordering form: a step that runs the whole suite has to be preceded by
         # every dependency the named steps install piecemeal, and nothing enforced
         # that. Keep this install ABOVE the truth gate.
-        #
-        # The PIN also moved v0.7.0 -> v0.9.0, and the ordering fix is what made that
-        # visible: while collection died on ImportError those tests never RAN, so a
-        # stale pin was hidden behind an earlier failure. Once they ran,
-        # test_nws_ls_markup.py failed 7 assertions against v0.7.0 and passes 23/23
-        # against v0.9.0 (verified locally on 0.9.0 before bumping) -- the suite had
-        # grown to depend on post-0.7 behaviour while CI kept installing 0.7.0. Still
-        # a TAG, never `@main`, so a run stays reproducible.
-        run: pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.9.0"
+        run: pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.7.0"
       - name: Complete subsystem test suite (H2252 truth gate)
         working-directory: RussianTranslation
         run: |

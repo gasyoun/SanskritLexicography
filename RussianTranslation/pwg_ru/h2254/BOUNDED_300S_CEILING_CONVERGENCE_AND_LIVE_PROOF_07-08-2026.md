@@ -224,12 +224,7 @@ in §2 changes what the executor *refuses*; it authorizes no spend whatsoever.
   two of those tests transitively import `csl_pyutil`, whose install step sat four steps
   *below* it, so collection died with `ModuleNotFoundError` and the job exited 2 before ever
   reaching the install. Reproduced on unmodified `origin/master` (`02ae0fce9`, `e8809dc07`).
-  The install moved above the gate — **which exposed a second red the first one was hiding**:
-  the pin was `csl-pyutil@v0.7.0` while the suite had grown to need post-0.7 behaviour, so
-  `test_nws_ls_markup.py` failed 7 assertions on 0.7.0 and passes 23/23 on 0.9.0 (verified
-  locally before bumping). While collection died on `ImportError` those tests never *ran*, so
-  the stale pin could not be seen. Pin bumped to `v0.9.0`, still a tag, never `@main`.
-  This is out of H2254's stated scope and is flagged rather
+  The install moved above the gate. This is out of H2254's stated scope and is flagged rather
   than folded in silently — but a merge cannot be gated on a red that the branch does not
   cause and cannot outlast. The general form is worth keeping: **a whole-suite step must be
   preceded by every dependency the named steps install piecemeal**, and nothing enforces that.
