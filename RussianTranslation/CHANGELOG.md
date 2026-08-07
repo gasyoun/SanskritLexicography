@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed
+- **`PRODUCTION_HARD_TIMEOUT_MS` raised 300 000 → 600 000 ms, derived from the observed card-spawn distribution, not a round-number guess (H2313, 07-08-2026, Sonnet 5 `claude-sonnet-5`):** every committed pwg_ru card-phase envelope under `pwg_ru/h2189/`, `pwg_ru/h2250/`, `pwg_ru/h2251/` (16 completed spawns, 4 censored/killed) read by the new [`h2313_timeout_distribution.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2313_timeout_distribution.py) reader shows the old 300 000 ms ceiling sat **below p90** (276 521 ms) of completed calls — it was killing healthy, still-completing calls, not hung ones. New ceiling = p99 (478 125 ms) + ~25% margin, above the observed max (511 908 ms). **Explicitly not claimed to separate "hung" from "very slow"** — one spawn was still running unfinished at 900 000 ms with no way to tell from total wall-clock alone which it was; a no-output-progress watchdog is the shape that could actually make that call, left as residual work. **The proof re-run required by the handoff's acceptance is BLOCKED, not done:** the `paid` profile hit its weekly usage cap mid-verification (`You've hit your weekly limit · resets Aug 10, 7am (Europe/Moscow)`, $0 spent, `pwg_ru/h2313/raw/`) — the handoff stays open against that one residual item. Full distribution table + reasoning: [HARD_TIMEOUT_MS_RECALIBRATE_07-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2313/HARD_TIMEOUT_MS_RECALIBRATE_07-08-2026.md).
+
 ## [1.144.16] - 2026-08-07
 
 ### Changed

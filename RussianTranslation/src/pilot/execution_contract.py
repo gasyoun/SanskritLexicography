@@ -67,7 +67,30 @@ HEADLESS_ROUTE = 'claude-cli-headless'
 # H2254 every route did `min(operator, ceil, HARD)`, so a manifest or an operator asking for
 # 7 200 s got 300 s and no signal: the request was wrong, the run looked normal, and the
 # discrepancy only ever surfaced by reading the effective timeout out of a subprocess call.
-PRODUCTION_HARD_TIMEOUT_MS = 300000
+#
+# H2313 owner ruling 06-08-2026 (the measured-evidence raise H2254 anticipated):
+# 300 000 ms was killing HEALTHY card spawns, not hung ones. Reading every committed
+# pwg_ru card-phase envelope (h2189/h2250/h2251, see
+# `h2313_timeout_distribution.py` and `pwg_ru/h2313/HARD_TIMEOUT_MS_RECALIBRATE_06-08-2026.md`)
+# gives 16 completed spawns spanning wall_ms 49 404-511 908 (p50=189 327, p90=276 521,
+# p95=342 997, p99=478 125) against 4 censored (killed-before-completion) spawns at
+# 300 000 ms x3 and 900 000 ms x1. The old 300 000 ms ceiling sits inside the completed
+# distribution (below p90), so it was manufacturing failures on the slow-but-healthy tail,
+# not screening hangs.
+#
+# New ceiling: 600 000 ms = p99 (478 125 ms) + ~25% margin, comfortably above the observed
+# completed max (511 908 ms) -- the chosen percentile is p99-with-margin, not a round-number
+# guess. This is NOT claimed to be a clean hang/slow separator: the one 900 000 ms censored
+# spawn proves a call can still be running well past 600 000 ms, and there is no way to tell
+# from total wall-clock alone whether that spawn was slow-but-alive or genuinely hung -- a
+# total-wall cap cannot make that distinction from a single constant. What this raise DOES
+# claim: it stops killing calls that finish inside the range every other completed call
+# finished in. Separating "hung" from "very slow" for real needs a no-output-progress
+# watchdog (kill on stalled output, not on total elapsed time), left as residual work.
+#
+# Per the 03-08-2026 ruling above: any FUTURE increase past this needs its own owner ruling
+# backed by measured evidence, same as this one was.
+PRODUCTION_HARD_TIMEOUT_MS = 600000
 
 
 def assert_timeout_within_ceiling(value_ms, source, ceiling_ms=PRODUCTION_HARD_TIMEOUT_MS):

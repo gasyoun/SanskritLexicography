@@ -1,0 +1,33 @@
+{
+  "rows": [
+    {
+      "arm": "paid",
+      "phase": "card",
+      "key": "nakzatra",
+      "wall_ms": 42851,
+      "returncode": 1,
+      "api_ms": 0,
+      "num_turns": 1,
+      "failure_class": "cli_error",
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      },
+      "ttl_1h_tokens": 0,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0,
+      "cards_returned": 0,
+      "schema_compliant": false,
+      "profile_vocab_leaked": [],
+      "result_head": "You've hit your weekly limit · resets Aug 10, 7am (Europe/Moscow)",
+      "n": 1,
+      "cost_usd_1h_write": 0.0
+    }
+  ],
+  "summary": {},
+  "manifest": "h1209_slice3.manifest.json",
+  "model": "claude-sonnet-5",
+  "cache_write_1h_rate": 6.0
+}
