@@ -1633,6 +1633,7 @@ def main():
     print('  record-done: hash+run forwarded; substitution refused; batch partial prefix exact')
 
     _test_h2079_945_probe_emits_api_time()
+    _test_h2326_1172_probe_raw_envelope_capture()
     print('max_account_orchestrator_selftest: PASS')
 
 
@@ -1724,6 +1725,144 @@ def _test_h2079_945_probe_emits_api_time():
         m.run_tree_kill = _rtk
         m._probe_call = _pc
     print('  H2079 #945: probe emits duration_api_ms + api_gap_ms; ceiling still gates elapsed_ms')
+
+
+def _test_h2326_1172_probe_raw_envelope_capture():
+    """H2326 / #1172: a NON-SUCCESS probe classification leaves the provider's own text on disk.
+
+    On 06-08-2026 a c4 gate-0 warm-up returned 830 bytes in 18 574 ms classified `rate_limit`, and
+    the 830 bytes were thrown away — so nobody could tell an account weekly cap from a per-model
+    capacity refusal, or read the reset time that decides whether the next sitting is worth an
+    attempt. The classification was CORRECT (H2263); the evidence behind it was unrecoverable, on a
+    gate that is no-reroll and rationed to two attempts a UTC day.
+
+    Pinned here: both non-success exits write, `err_pattern` says WHICH alternative fired, the
+    file lands beside the event row, the row carries the pointer — and the `success` lane still
+    writes nothing at all.
+    """
+    import max_account_orchestrator as m
+    import run_observability as obs
+
+    assert {'err_pattern', 'raw_envelope_path'} <= obs.ALLOWED, (
+        'append_event refuses the H2326 diagnostic fields; the probe row cannot carry them')
+
+    _rtk, _pc, _raw_dir = m.run_tree_kill, m._probe_call, m.PROBE_RAW_DIR
+    with tempfile.TemporaryDirectory() as td:
+        m.PROBE_RAW_DIR = os.path.join(td, 'output')
+
+        def _raw(run_id):
+            return os.path.join(m.PROBE_RAW_DIR, 'h963_c4_gate0_probe_raw_%s.txt' % run_id)
+
+        def _envelope(stdout, rc=0, stderr=''):
+            m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(
+                returncode=rc, stdout=stdout, stderr=stderr)
+
+        def _call(run_id, purpose='probe'):
+            detail = {}
+            _lat, cls, _ob = m._probe_call(
+                'cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                reservation_purpose=purpose, call_reservation=MemoryCallLedger(),
+                run_id=run_id, detail_out=detail)
+            return cls, detail
+
+        try:
+            # (1) The 06-08 shape itself: an rc-0 error envelope carrying an account usage limit
+            # AND its reset time. Pre-fix this returned 'rate_limit' and nothing else survived.
+            _envelope('{"type":"result","subtype":"error","is_error":true,"result":'
+                      '"Claude usage limit reached. Your limit will reset at 2026-08-07T01:02:53Z."}')
+            cls, detail = _call('h2326')
+            assert cls == 'rate_limit', cls
+            assert detail['err_pattern'] == 'usage limit', detail
+            assert detail['raw_envelope_path'] == os.path.basename(_raw('h2326')), detail
+            body = open(_raw('h2326'), encoding='utf-8').read()
+            assert '2026-08-07T01:02:53Z' in body, body      # the reset time SURVIVES — the point
+            assert 'classification=rate_limit' in body and 'matched=usage limit' in body, body
+
+            # (2) The distinction the class alone erased: a per-model 429 is the SAME verdict and a
+            # DIFFERENT decision. `err_pattern` now separates them without reading the file.
+            _envelope('', rc=1, stderr='429 Too Many Requests (model capacity)')
+            cls, detail = _call('h2326-429')
+            assert cls == 'rate_limit' and detail['err_pattern'] == '429', (cls, detail)
+            assert '429 Too Many Requests' in open(_raw('h2326-429'), encoding='utf-8').read()
+
+            # (3) The killed-child exit writes too — a rate-limited CLI hangs rather than
+            # answering 429 (FINDINGS §270), which is exactly when the text is worth most.
+            def _timeout(*_a, **_k):
+                raise subprocess.TimeoutExpired(
+                    'claude', 300, output='rate limit exceeded, retrying',
+                    stderr='killed after 300 s')
+            m.run_tree_kill = _timeout
+            cls, detail = _call('h2326-kill')
+            assert cls == 'rate_limit' and detail['err_pattern'] == 'rate limit', (cls, detail)
+            assert 'killed after 300 s' in open(_raw('h2326-kill'), encoding='utf-8').read()
+
+            # (4) A classification with no account-level text still parks the envelope — 'process'
+            # and 'malformed' are the hardest to diagnose from a bare class.
+            _envelope('<html>503 upstream</html>')
+            cls, detail = _call('h2326-bad')
+            assert cls == 'malformed' and 'err_pattern' not in detail, (cls, detail)
+            assert '503 upstream' in open(_raw('h2326-bad'), encoding='utf-8').read()
+
+            # (5) BOUNDED: only the tail is kept, and the header says it was cut.
+            _envelope('{"type":"result","subtype":"error","is_error":true,"result":"'
+                      + 'A' * (m.PROBE_RAW_TAIL_BYTES + 5000) + 'TAILMARKER 429"}')
+            _call('h2326-big')
+            big = open(_raw('h2326-big'), encoding='utf-8').read()
+            assert 'TAILMARKER' in big and 'TRUNCATED' in big, big[:200]
+            assert len(big.encode('utf-8')) < m.PROBE_RAW_TAIL_BYTES + 600, len(big)
+
+            # (6) THE HEALTHY LANE IS UNTOUCHED: a success writes no file and adds no row fields.
+            _envelope('{"type":"result","subtype":"success","is_error":false,'
+                      '"structured_output":{"ok":true}}')
+            cls, detail = _call('h2326-ok')
+            assert cls == 'success' and detail == {}, (cls, detail)
+            assert not os.path.exists(_raw('h2326-ok')), 'success wrote a raw-envelope file'
+
+            # (7) Two calls of one run APPEND — live_probe makes two per account, and the last
+            # failure must not erase the first.
+            _envelope('', rc=1, stderr='429 first')
+            _call('h2326-pair', purpose='probe:warmup')
+            _envelope('', rc=1, stderr='429 second')
+            _call('h2326-pair', purpose='probe:measured')
+            pair = open(_raw('h2326-pair'), encoding='utf-8').read()
+            assert '429 first' in pair and '429 second' in pair, pair
+            assert 'purpose=probe:warmup' in pair and 'purpose=probe:measured' in pair, pair
+
+            # (8) End to end through live_probe's emission: the warm-up STOP row carries both
+            # fields, so the event log alone points at the evidence.
+            ev = os.path.join(td, 'e.jsonl')
+            _envelope('{"type":"result","subtype":"error","is_error":true,'
+                      '"result":"Claude usage limit reached"}')
+            try:
+                m.live_probe('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                             latency_ceiling_ms=65000, events_path=ev, run_id='h2326-live',
+                             account='c4', call_reservation=MemoryCallLedger())
+                raise AssertionError('a rate-limited warm-up did not STOP')
+            except SystemExit as exc:
+                assert 'rate_limit' in str(exc), exc
+            rows = [json.loads(line) for line in open(ev, encoding='utf-8') if line.strip()]
+            warm = [r for r in rows if r.get('purpose') == 'warmup']
+            assert len(warm) == 1, rows
+            assert warm[0]['classification'] == 'rate_limit', warm
+            assert warm[0]['err_pattern'] == 'usage limit', warm
+            assert warm[0]['raw_envelope_path'] == os.path.basename(_raw('h2326-live')), warm
+            assert 'Claude usage limit reached' in open(_raw('h2326-live'), encoding='utf-8').read()
+
+            # a healthy live_probe leaves neither key on the row (append_event drops None)
+            ev2 = os.path.join(td, 'e2.jsonl')
+            _envelope('{"type":"result","subtype":"success","is_error":false,'
+                      '"structured_output":{"ok":true}}')
+            m.live_probe('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                         latency_ceiling_ms=65000, events_path=ev2, run_id='h2326-live-ok',
+                         account='c4', call_reservation=MemoryCallLedger())
+            ok_rows = [json.loads(line) for line in open(ev2, encoding='utf-8') if line.strip()]
+            assert ok_rows and all(
+                'err_pattern' not in r and 'raw_envelope_path' not in r for r in ok_rows), ok_rows
+            assert not os.path.exists(_raw('h2326-live-ok')), 'healthy live_probe wrote a raw file'
+        finally:
+            m.run_tree_kill, m._probe_call, m.PROBE_RAW_DIR = _rtk, _pc, _raw_dir
+    print('  H2326 #1172: non-success probe parks the raw envelope + matched pattern; '
+          'success lane writes nothing')
 
 
 if __name__ == '__main__':
