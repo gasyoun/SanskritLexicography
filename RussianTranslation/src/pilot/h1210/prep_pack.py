@@ -816,8 +816,13 @@ def write_pack(out_dir: str, pack: dict) -> str:
     }
     pack['store_write'] = False
     os.makedirs(out_dir, exist_ok=True)
-    # Windows-safe filename: keep key1 as-is (SLP1 is ASCII).
-    path = os.path.join(out_dir, '%s.json' % pack['key1'])
+    # Case-collision-safe stem (Windows: DA.json vs dA.json must not clobber).
+    try:
+        from safe_filename import safe_name  # noqa: WPS433
+        stem = safe_name(pack['key1'])
+    except Exception:  # noqa: BLE001
+        stem = pack['key1']
+    path = os.path.join(out_dir, '%s.json' % stem)
     with open(path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(pack, f, ensure_ascii=False, indent=1)
         f.write('\n')
