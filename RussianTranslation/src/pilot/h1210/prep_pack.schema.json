@@ -28,7 +28,7 @@
       "required": ["tool", "mode", "model"],
       "properties": {
         "tool": { "type": "string" },
-        "mode": { "enum": ["dry", "live"] },
+        "mode": { "enum": ["dry", "fill", "live"] },
         "model": { "type": "string" },
         "price_table": {
           "type": "object",
@@ -45,9 +45,13 @@
       "type": "array",
       "items": {
         "type": "object",
+        "additionalProperties": true,
         "properties": {
           "i": { "type": "integer" },
           "de_anchor": { "type": ["string", "null"] },
+          "sense_tag": { "type": ["string", "null"] },
+          "layer": { "type": ["string", "null"] },
+          "subcard": { "type": ["string", "null"] },
           "note": { "type": "string" }
         }
       }
@@ -56,10 +60,14 @@
       "type": "array",
       "items": {
         "type": "object",
+        "additionalProperties": true,
         "properties": {
           "rank": { "type": "integer" },
           "key1": { "type": "string" },
-          "score": { "type": "number" }
+          "score": { "type": "number" },
+          "match_type": { "type": "string" },
+          "n_store_rows": { "type": ["integer", "null"] },
+          "ru_preview": { "type": ["string", "null"] }
         }
       }
     },

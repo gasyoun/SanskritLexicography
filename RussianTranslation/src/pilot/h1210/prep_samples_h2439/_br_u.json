@@ -1,0 +1,216 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "_br_u",
+ "produced_at": 1786193950,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "fill",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  }
+ },
+ "sense_inventory": [
+  {
+   "i": 0,
+   "de_anchor": "1. [NWS: Geldner 1907 : 129] {#bhrū́#} [Ved , unsp] Subst f Augenbraue\n 2. [NWS: MW : 770 (s.v. bhrū)] {#bhrūkuṭībandha#} [Gen , unsp] Subst m bending or knitti…",
+   "sense_tag": "1",
+   "note": "de_raw:_br_u.raw.txt"
+  },
+  {
+   "i": 1,
+   "de_anchor": "2. [NWS: MW : 770 (s.v. bhrū)] {#bhrūkuṭībandha#} [Gen , unsp] Subst m bending or knitting the eyebrows. A(MW) . MW : 770 (s.v. bhrū )\n 3. [NWS: MW : 770 (s.v. …",
+   "sense_tag": "2",
+   "note": "de_raw:_br_u.raw.txt"
+  },
+  {
+   "i": 2,
+   "de_anchor": "3. [NWS: MW : 770 (s.v. bhrū)] {#bhrūkuṭīracanā#} [Gen , unsp] Subst f A(MW) ; bhrūkuṭībandha . MW : 770 (s.v. bhrū )\n 4. [NWS: MW : 770 (s.v. bhrū)] {#bhrūvikṣ…",
+   "sense_tag": "3",
+   "note": "de_raw:_br_u.raw.txt"
+  },
+  {
+   "i": 3,
+   "de_anchor": "4. [NWS: MW : 770 (s.v. bhrū)] {#bhrūvikṣepa#} [Gen , unsp] Subst m Bhartṛ(MW) ; bhrūkṣepa . MW : 770 (s.v. bhrū )",
+   "sense_tag": "4",
+   "note": "de_raw:_br_u.raw.txt"
+  }
+ ],
+ "tm_fuzzy_hits": [],
+ "compound_candidates": [],
+ "citation_normalize": [
+  {
+   "raw": "<ls>UṆĀDIS. 2,68</ls>",
+   "normalized": "<ls>UṆĀDIS. 2,68</ls>"
+  },
+  {
+   "raw": "<ls>P. 6,4,77</ls>",
+   "normalized": "<ls>P. 6,4,77</ls>"
+  },
+  {
+   "raw": "<ls>VOP. 3,80. fgg.</ls>",
+   "normalized": "<ls>VOP. 3,80. fgg.</ls>"
+  },
+  {
+   "raw": "<ls>AK. 2,6,2,43</ls>",
+   "normalized": "<ls>AK. 2,6,2,43</ls>"
+  },
+  {
+   "raw": "<ls n=\"AK.\">3,3,13,52</ls>",
+   "normalized": "<ls n=\"AK.\">3,3,13,52</ls>"
+  },
+  {
+   "raw": "<ls>H. 579</ls>",
+   "normalized": "<ls>H. 579</ls>"
+  },
+  {
+   "raw": "<ls>ṚV. 4,38,7</ls>",
+   "normalized": "<ls>ṚV. 4,38,7</ls>"
+  },
+  {
+   "raw": "<ls>VS. 19,91</ls>",
+   "normalized": "<ls>VS. 19,91</ls>"
+  },
+  {
+   "raw": "<ls n=\"VS.\">25,1</ls>",
+   "normalized": "<ls n=\"VS.\">25,1</ls>"
+  },
+  {
+   "raw": "<ls>ŚAT. BR. 3,2,1,29</ls>",
+   "normalized": "<ls>ŚAT. BR. 3,2,1,29</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR.\">12,9,1,5</ls>",
+   "normalized": "<ls n=\"ŚAT. BR.\">12,9,1,5</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR.\">14,9,4,5</ls>",
+   "normalized": "<ls n=\"ŚAT. BR.\">14,9,4,5</ls>"
+  },
+  {
+   "raw": "<ls>KĀTY. ŚR. 7,3,31</ls>",
+   "normalized": "<ls>KĀTY. ŚR. 7,3,31</ls>"
+  },
+  {
+   "raw": "<ls>SUŚR. 1,17,12</ls>",
+   "normalized": "<ls>SUŚR. 1,17,12</ls>"
+  },
+  {
+   "raw": "<ls n=\"SUŚR. 1,\">65,20</ls>",
+   "normalized": "<ls n=\"SUŚR. 1,\">65,20</ls>"
+  },
+  {
+   "raw": "<ls n=\"SUŚR. 1,\">115,9</ls>",
+   "normalized": "<ls n=\"SUŚR. 1,\">115,9</ls>"
+  },
+  {
+   "raw": "<ls n=\"SUŚR. 1,\">124,11</ls>",
+   "normalized": "<ls n=\"SUŚR. 1,\">124,11</ls>"
+  },
+  {
+   "raw": "<ls>Verz. d. Oxf. H. 103,a,30</ls>",
+   "normalized": "<ls>Verz. d. Oxf. H. 103,a,30</ls>"
+  },
+  {
+   "raw": "<ls>HALĀY. 2,365</ls>",
+   "normalized": "<ls>HALĀY. 2,365</ls>"
+  },
+  {
+   "raw": "<ls>N. 17,5</ls>",
+   "normalized": "<ls>N. 17,5</ls>"
+  },
+  {
+   "raw": "<ls>VS. PRĀT. 1,30</ls>",
+   "normalized": "<ls>VS. PRĀT. 1,30</ls>"
+  },
+  {
+   "raw": "<ls>VARĀH. BṚH. S. 50,11</ls>",
+   "normalized": "<ls>VARĀH. BṚH. S. 50,11</ls>"
+  },
+  {
+   "raw": "<ls>Verz. d. Oxf. H. 149,b,38</ls>",
+   "normalized": "<ls>Verz. d. Oxf. H. 149,b,38</ls>"
+  },
+  {
+   "raw": "<ls>WEBER, RĀMAT. UP. 349</ls>",
+   "normalized": "<ls>WEBER, RĀMAT. UP. 349</ls>"
+  },
+  {
+   "raw": "<ls n=\"WEBER, RĀMAT. UP.\">344</ls>",
+   "normalized": "<ls n=\"WEBER, RĀMAT. UP.\">344</ls>"
+  },
+  {
+   "raw": "<ls n=\"WEBER, RĀMAT. UP.\">348. fg.</ls>",
+   "normalized": "<ls n=\"WEBER, RĀMAT. UP.\">348. fg.</ls>"
+  },
+  {
+   "raw": "<ls>Spr. 2081</ls>",
+   "normalized": "<ls>Spr. 2081</ls>"
+  },
+  {
+   "raw": "<ls n=\"Spr.\">4036</ls>",
+   "normalized": "<ls n=\"Spr.\">4036</ls>"
+  },
+  {
+   "raw": "<ls>ŚĀK. 119</ls>",
+   "normalized": "<ls>ŚĀK. 119</ls>"
+  },
+  {
+   "raw": "<ls>Spr. 427</ls>",
+   "normalized": "<ls>Spr. 427</ls>"
+  },
+  {
+   "raw": "<ls n=\"Spr.\">2082</ls>",
+   "normalized": "<ls n=\"Spr.\">2082</ls>"
+  },
+  {
+   "raw": "<ls>GĪT. 3,14</ls>",
+   "normalized": "<ls>GĪT. 3,14</ls>"
+  },
+  {
+   "raw": "<ls>BHĀG. P. 3,28,32</ls>",
+   "normalized": "<ls>BHĀG. P. 3,28,32</ls>"
+  },
+  {
+   "raw": "<ls>MEGH. 48</ls>",
+   "normalized": "<ls>MEGH. 48</ls>"
+  },
+  {
+   "raw": "<ls>Spr. 472</ls>",
+   "normalized": "<ls>Spr. 472</ls>"
+  },
+  {
+   "raw": "<ls>VARĀH. BṚH. S. 12,9</ls>",
+   "normalized": "<ls>VARĀH. BṚH. S. 12,9</ls>"
+  },
+  {
+   "raw": "<ls>DAŚAK.</ls>",
+   "normalized": "<ls>DAŚAK.</ls>"
+  },
+  {
+   "raw": "<ls>BENF. Chr. 190,15</ls>",
+   "normalized": "<ls>BENF. Chr. 190,15</ls>"
+  },
+  {
+   "raw": "<ls>Verz. d. Oxf. H. 88,a,21</ls>",
+   "normalized": "<ls>Verz. d. Oxf. H. 88,a,21</ls>"
+  },
+  {
+   "raw": "<ls>Spr. 665</ls>",
+   "normalized": "<ls>Spr. 665</ls>"
+  }
+ ],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\input\\_br_u.raw.txt"
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "prep_only",
+ "store_write": false
+}
