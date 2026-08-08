@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Changed
+- **H2439 — DeepSeek V4 Flash 0731 retarget on PWG arm B:** `deepseek_arm` default model `deepseek-v4-flash` + PRICE 0.14/0.0028/0.28; prep-pack sidecar tool; E1 sample under `RussianTranslation/experiments/E1_deepseek_vs_c4/` (Grok 4.5 `grok-4.5`, 08-08-2026). Org map in Uprava.
+
 ## [1.144.19] - 2026-08-07
 ### Changed
 - **The w1 acceptance run stayed unfired for the second session running, and its handoff now says so *before* its Mission instead of after the money (H2263, Opus 5 `claude-opus-5`).** [H2263](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2263-Opus_RussianTranslation_nakzatra-w1-acceptance-run-after-call-weight-cap_03.08.26.md) opens "Gate first, always" — but firing its Step 1 today would itself have broken the gate: the `/pwg-live-gate` retry policy stops the lane after **3 consecutive NO-GO days**, and 03-08 (route stall, 297 949 ms), 05-08 (our own kill, 300 099 ms / 0 B) and 06-08 (`rate_limit` refusal, 18 574 ms, $0.00) are all on file. **Verdict `BLOCKED_ON_LANE_STOP`; $0.00 spent; the `h1447-m50-w1` lease intact; the 07-08 UTC ration untouched at 0 of 2** — the same ruling [H2254](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2254/BOUNDED_300S_CEILING_CONVERGENCE_AND_LIVE_PROOF_07-08-2026.md) reached independently earlier the same day, which is the point: two sessions in a row spent a full orientation pass rediscovering a stop that was recorded only *downstream* of the entry point.

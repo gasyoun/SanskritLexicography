@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pwg.prep_pack.v1",
+  "title": "PWG Flash prep-pack sidecar (H2439)",
+  "description": "Cheap PREP context for Opus — never a TM store write. Map: Uprava DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08 §3.1 mode A.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "key1",
+    "produced_at",
+    "producer",
+    "sense_inventory",
+    "tm_fuzzy_hits",
+    "compound_candidates",
+    "citation_normalize",
+    "hard_flags",
+    "ru_skeleton",
+    "route_hint",
+    "store_write"
+  ],
+  "properties": {
+    "schema": { "const": "pwg.prep_pack.v1" },
+    "key1": { "type": "string", "minLength": 1 },
+    "produced_at": { "type": "integer", "minimum": 0 },
+    "producer": {
+      "type": "object",
+      "required": ["tool", "mode", "model"],
+      "properties": {
+        "tool": { "type": "string" },
+        "mode": { "enum": ["dry", "live"] },
+        "model": { "type": "string" },
+        "price_table": {
+          "type": "object",
+          "properties": {
+            "cache_miss_in": { "type": "number" },
+            "cache_hit_in": { "type": "number" },
+            "out": { "type": "number" }
+          }
+        },
+        "live_call": { "type": "object" }
+      }
+    },
+    "sense_inventory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "i": { "type": "integer" },
+          "de_anchor": { "type": ["string", "null"] },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "tm_fuzzy_hits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rank": { "type": "integer" },
+          "key1": { "type": "string" },
+          "score": { "type": "number" }
+        }
+      }
+    },
+    "compound_candidates": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "citation_normalize": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "raw": { "type": "string" },
+          "normalized": { "type": "string" }
+        }
+      }
+    },
+    "hard_flags": {
+      "type": "object",
+      "required": ["polysemy", "no_pwg", "monster_length", "notes"],
+      "properties": {
+        "polysemy": { "type": "boolean" },
+        "no_pwg": { "type": "boolean" },
+        "monster_length": { "type": "boolean" },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "ru_skeleton": {
+      "type": ["array", "null"],
+      "items": { "type": "string" },
+      "description": "Optional RU draft seeds — not final cards; never auto-promoted"
+    },
+    "route_hint": {
+      "enum": ["controller_only", "full_worker", "prep_only", "park"]
+    },
+    "store_write": {
+      "const": false,
+      "description": "Hard fence R4.3a — this tool must never claim a store write"
+    }
+  }
+}

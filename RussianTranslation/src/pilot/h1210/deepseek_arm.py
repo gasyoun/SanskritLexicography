@@ -3,8 +3,9 @@ r"""H1210 arm B — cheap external generation (DeepSeek) behind the SAME H1209 g
 
 The A/B ruling (MG, 17-07-2026) fixes exactly one variable: the GENERATOR. Arm A is the
 Claude-native rig (Opus controller + Sonnet workers, `wf_template_ab.js`); arm B replaces
-the worker with DeepSeek (`deepseek-chat`, the OpenAI-compatible endpoint — no
-ANTHROPIC_API_KEY is requested or needed, standing rule) and keeps EVERYTHING else:
+the worker with DeepSeek (`deepseek-v4-flash` / Flash 0731 by default; override with
+`--model` / `$DEEPSEEK_MODEL` — OpenAI-compatible endpoint, no ANTHROPIC_API_KEY,
+standing rule) and keeps EVERYTHING else:
 
   * the same per-card prompt      — `prompt_common + card_block` from prep_slice, verbatim
   * the same output schema        — `worker_schema` derived by build_args from the manifest
@@ -24,7 +25,7 @@ JSON-repair events).
 
 Usage:
   python src/pilot/h1210/deepseek_arm.py <slice_payload.json> <manifest.json> <out_prefix>
-        [--env-file PATH] [--model deepseek-chat] [--workers 6] [--max-tokens 8192]
+        [--env-file PATH] [--model deepseek-v4-flash] [--workers 6] [--max-tokens 8192]
         [--keys k1,k2] [--limit N] [--dry-run]
 
 The API key is read from $DEEPSEEK_API_KEY, or from `--env-file` (a KEY=VALUE .env) — never
@@ -49,11 +50,16 @@ if HERE not in sys.path:
 
 import det_gate  # noqa: E402
 
-# DeepSeek published list prices, USD per 1M tokens (deepseek-chat, standard window).
-# Recorded here so the $/clean figure in RESULTS_LOG is reproducible and re-pricable.
-PRICE_CACHE_MISS_IN = 0.27
-PRICE_CACHE_HIT_IN = 0.07
-PRICE_OUT = 1.10
+# DeepSeek published list prices, USD per 1M tokens (DeepSeek-V4-Flash-0731 /
+# API id `deepseek-v4-flash`, first-party https://api-docs.deepseek.com/quick_start/pricing/
+# as of 08-08-2026). Recorded so $/clean in RESULTS_LOG is reproducible and re-pricable.
+# H1210 historical arm-B (29-07-2026) used older `deepseek-chat` table 0.27 / 0.07 / 1.10 —
+# do not reprice that run with these constants without an explicit reprice note.
+# Org lane map: Uprava docs/DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08.md (H2439).
+PRICE_CACHE_MISS_IN = 0.14
+PRICE_CACHE_HIT_IN = 0.0028
+PRICE_OUT = 0.28
+DEFAULT_MODEL = 'deepseek-v4-flash'
 
 MAX_ATTEMPTS = 3
 
@@ -74,7 +80,7 @@ def load_env_file(path):
 def extract_json(text):
     """Return the first complete JSON object in `text`.
 
-    `deepseek-chat` with response_format=json_object normally returns bare JSON, but the
+    DeepSeek with response_format=json_object normally returns bare JSON, but the
     measured failure mode (Uprava FINDINGS §68) is TRUNCATION on high-polysemy headwords —
     and occasionally a ```json fence. Both are recorded as repair events, not hidden.
     """
@@ -294,7 +300,7 @@ def main():
     base = (a.base_url or os.environ.get('DEEPSEEK_BASE_URL') or env.get('DEEPSEEK_BASE_URL')
             or 'https://api.deepseek.com')
     model = (a.model or os.environ.get('DEEPSEEK_MODEL') or env.get('DEEPSEEK_MODEL')
-             or 'deepseek-chat')
+             or DEFAULT_MODEL)
     if a.dry_run:
         print('dry-run: %d card(s), model=%s base=%s key=%s, schema %d B, prompt_common %d B'
               % (len(cards), model, base, 'present' if key else 'MISSING',

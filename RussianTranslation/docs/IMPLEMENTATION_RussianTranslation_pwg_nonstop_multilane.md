@@ -1,6 +1,6 @@
 # IMPLEMENTATION — PWG→RU nonstop multilane, Wave 1 (ordered)
 
-_Created: 02-08-2026 · Last updated: 02-08-2026_
+_Created: 02-08-2026 · Last updated: 08-08-2026_
 
 Index: [PLAN_RussianTranslation_pwg_nonstop_multilane_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_pwg_nonstop_multilane_2026.md).
 Working dir for all steps: `C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation` (via a session-unique worktree — the main tree is guarded). Executor: Opus 5 (`claude-opus-5`) per [H2175](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2175-Opus_RussianTranslation_pwg-nonstop-multilane-wave1_02.08.26.md).
@@ -65,6 +65,15 @@ Working dir for all steps: `C:\Users\user\Documents\GitHub\SanskritLexicography\
 15. **E1 scaffold.** `src/pilot/openrouter_worker.py` (minimal client) + frozen stratified
     ~40-card sample manifest under `experiments/E1_deepseek_vs_c4/` with the pre-declared verdict
     rule (R2.3/R3.4), staged until the API key lands (Wave 0). Depends on: 4.
+    **H2439 (08-08-2026) retarget:** default generator model + PRICE_* table on
+    [`deepseek_arm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/deepseek_arm.py)
+    = DeepSeek-V4-Flash-0731 (`deepseek-v4-flash`, $0.14 / $0.0028 / $0.28); prep-pack
+    sidecar producer [`prep_pack.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/prep_pack.py)
+    (store_write never); E1 sample + Flash win rule under
+    [`experiments/E1_deepseek_vs_c4/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/E1_deepseek_vs_c4/).
+    Org pricing/role map:
+    [DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08.md](https://github.com/gasyoun/Uprava/blob/main/docs/DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08.md).
+    Paid bulk E1 measurement still residual (scaffold only until deliberately run).
 
 Each step lands as its own commit in the worktree branch; PR per stage; selftest green before the next stage starts.
 

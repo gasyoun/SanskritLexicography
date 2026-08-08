@@ -136,7 +136,8 @@ def cmd_apply(a):
     key = os.environ.get('DEEPSEEK_API_KEY') or env.get('DEEPSEEK_API_KEY')
     base = (os.environ.get('DEEPSEEK_BASE_URL') or env.get('DEEPSEEK_BASE_URL')
             or 'https://api.deepseek.com')
-    model = (os.environ.get('DEEPSEEK_MODEL') or env.get('DEEPSEEK_MODEL') or 'deepseek-chat')
+    model = (os.environ.get('DEEPSEEK_MODEL') or env.get('DEEPSEEK_MODEL')
+             or getattr(ds, 'DEFAULT_MODEL', None) or 'deepseek-v4-flash')
 
     sys.path.insert(0, os.path.join(os.path.dirname(HERE), 'h1209'))
     import build_args  # noqa: E402

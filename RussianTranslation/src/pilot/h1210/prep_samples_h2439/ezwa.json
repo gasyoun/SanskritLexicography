@@ -1,0 +1,28 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "ezwa",
+ "produced_at": 1786191589,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "dry",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  }
+ },
+ "sense_inventory": [],
+ "tm_fuzzy_hits": [],
+ "compound_candidates": [],
+ "citation_normalize": [],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": []
+ },
+ "ru_skeleton": null,
+ "route_hint": "prep_only",
+ "store_write": false
+}

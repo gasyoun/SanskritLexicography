@@ -1,14 +1,15 @@
 # `src/pilot/h1210/` — the DeepSeek-vs-Claude A/B rig (H1210)
 
-_Created: 29-07-2026 · Last updated: 29-07-2026_
+_Created: 29-07-2026 · Last updated: 08-08-2026_
 
 Everything needed to reproduce the [H1210](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1210-Opus_SanskritLexicography_pwg-ab-deepseek-vs-claude-100_17.07.26.md)
 A/B: **one variable changes — the generator.** Arm A is the Claude-native
 [H1209](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1209/canonical_audit.py)
 rig (Sonnet workers under an Opus controller); arm B replaces the worker with DeepSeek
-(`deepseek-chat`, OpenAI-compatible endpoint) and keeps the prompt, the output schema, the
-free deterministic gate, the ≤2-retry chain, the **same** Opus controller, and the same
-authoritative post-run audit.
+(default **`deepseek-v4-flash`** as of H2439 / 08-08-2026; H1210 historical run used
+`deepseek-chat` — pass `--model deepseek-chat` to reproduce) and keeps the prompt, the
+output schema, the free deterministic gate, the ≤2-retry chain, the **same** Opus
+controller, and the same authoritative post-run audit.
 
 Results, method and the human-vote design:
 [`pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1210/H1210_AB_DEEPSEEK_VS_CLAUDE_100CARD_2026-07-29.md).
@@ -22,7 +23,9 @@ Results, method and the human-vote design:
 | [`pack_chunks.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/pack_chunks.py) | size-bounded repack of a `prep_slice` payload (equal-COUNT chunks are unusable on a length-stratified slice) |
 | [`wf_template_ab.js`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/wf_template_ab.js) | arm A — the H1209 v2 template with two named deltas (parallel card loop, 900 s agent deadline) |
 | [`det_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/det_gate.py) | Python twin of the in-JS free gate, so arm B is gated identically (`selftest` asserts the branches) |
-| [`deepseek_arm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/deepseek_arm.py) | arm B — DeepSeek generation + the same retry chain + per-call cost/latency telemetry |
+| [`deepseek_arm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/deepseek_arm.py) | arm B — DeepSeek generation + the same retry chain + per-call cost/latency telemetry (default Flash 0731 + PRICE 0.14/0.0028/0.28) |
+| [`prep_pack.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/prep_pack.py) · [`prep_pack.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/prep_pack.schema.json) | H2439 cheap PREP sidecars (`prep/{key}.json`) — **never** TM store write; dry or live |
+| E1 Flash sample | [`experiments/E1_deepseek_vs_c4/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/E1_deepseek_vs_c4/) — frozen ~40 keys + pre-declared win rule |
 | [`control_template.js`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/control_template.js) | the shared Opus controller, lifted out so arm B passes through the *same* stage |
 | [`arm_b_control.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/arm_b_control.py) | the `build` / `apply` shuttle between arm B and that controller (rounds) |
 | [`collect_arm_a.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/collect_arm_a.py) · [`extract_verdicts.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/extract_verdicts.py) | lift Workflow return values + per-role token usage out of the task-output files |
