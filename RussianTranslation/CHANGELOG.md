@@ -11,7 +11,11 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 ## [Unreleased]
 
 ### Added
+- **H2489 Flash PREP 200-key spike (08-08-2026, Grok 4.5 `grok-4.5`):** offline fill+det_gate for **200** keys ([worklist](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/H2489_spike200_worklist.08.08.26.json)); memo + stats ([H2489_FLASH_PREP_200_SPIKE_08.08.2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1210/H2489_FLASH_PREP_200_SPIKE_08.08.2026.md), [stats JSON](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1210/H2489_SPIKE200_STATS.08.08.26.json)); 55% det.ok / 45% park / 100% `tm_fence.may_write=false`; stratified Opus window offline token proxy (compact prep seed ≈154 tok/card vs baseline ≈5; full-sidecar inject anti-pattern ≈1442). Samples: `prep_samples_h2489/`. Bulk `prep/spike200` gitignored. No TM write; no paid Opus/Flash bulk.
 - **TM scope index — Flash vs fence, written/oral, will/won't/could questions (08-08-2026, Grok 4.5 `grok-4.5`):** [`docs/TM_SCOPE_FLASH_AND_QUESTIONS_2026-08.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/TM_SCOPE_FLASH_AND_QUESTIONS_2026-08.md) — R4.3a does **not** ban Flash from TM-related *read/rank/prep*; bans Flash **write** and Flash **sole** auto-promote. Points at D1–D14, datasheet, pubgrade H2 plan/roadmap.
+
+### Fixed
+- **`prep_pack.write_pack` uses case-safe filenames (H2489, 08-08-2026, Grok 4.5 `grok-4.5`):** Windows case-insensitive FS was clobbering distinct SLP1 keys (`DA`/`dA`, `viD`/`vid`) when writing `prep/{key}.json`; stem now via `safe_filename.safe_name`.
 
 ### Changed
 - **DeepSeek arm default model + list-price table retargeted to V4 Flash 0731 (H2439, 08-08-2026, Grok 4.5 `grok-4.5`):** [`deepseek_arm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/deepseek_arm.py) `DEFAULT_MODEL=deepseek-v4-flash`, PRICE miss/hit/out = **0.14 / 0.0028 / 0.28** USD/1M (was `deepseek-chat` 0.27 / 0.07 / 1.10). Sibling defaults: `arm_b_control.py`, `openrouter_worker.py` first-party DeepSeek. H1210 historical report stays on old model/prices unless explicitly re-run with `--model deepseek-chat`.
