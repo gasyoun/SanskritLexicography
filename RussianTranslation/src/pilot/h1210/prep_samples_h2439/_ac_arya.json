@@ -1,7 +1,7 @@
 {
  "schema": "pwg.prep_pack.v1",
  "key1": "_ac_arya",
- "produced_at": 1786193950,
+ "produced_at": 1786194858,
  "producer": {
   "tool": "prep_pack.py",
   "mode": "fill",
@@ -200,5 +200,15 @@
  },
  "ru_skeleton": null,
  "route_hint": "prep_only",
+ "det": {
+  "ok": true,
+  "gate": "prep",
+  "issues": [],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 0,
+  "source_senses": 2,
+  "had_draft_card": false
+ },
  "store_write": false
 }

@@ -1,7 +1,7 @@
 {
  "schema": "pwg.prep_pack.v1",
  "key1": "Ap",
- "produced_at": 1786193950,
+ "produced_at": 1786194858,
  "producer": {
   "tool": "prep_pack.py",
   "mode": "fill",
@@ -519,5 +519,15 @@
  },
  "ru_skeleton": null,
  "route_hint": "full_worker",
+ "det": {
+  "ok": true,
+  "gate": "full",
+  "issues": [],
+  "coverage": 1,
+  "claude": false,
+  "n_skeleton_tokens": 0,
+  "source_senses": 40,
+  "had_draft_card": true
+ },
  "store_write": false
 }
