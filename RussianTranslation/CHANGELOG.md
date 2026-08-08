@@ -10,6 +10,12 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Changed
+- **DeepSeek arm default model + list-price table retargeted to V4 Flash 0731 (H2439, 08-08-2026, Grok 4.5 `grok-4.5`):** [`deepseek_arm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/deepseek_arm.py) `DEFAULT_MODEL=deepseek-v4-flash`, PRICE miss/hit/out = **0.14 / 0.0028 / 0.28** USD/1M (was `deepseek-chat` 0.27 / 0.07 / 1.10). Sibling defaults: `arm_b_control.py`, `openrouter_worker.py` first-party DeepSeek. H1210 historical report stays on old model/prices unless explicitly re-run with `--model deepseek-chat`.
+
+### Added
+- **Flash prep-pack + E1 scaffold (H2439):** [`prep_pack.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/prep_pack.py) + schema write `prep/{key}.json` only (`store_write` hard-false); dry 5-key samples under `src/pilot/h1210/prep_samples_h2439/`; frozen E1 ~40-key sample + win rule under [`experiments/E1_deepseek_vs_c4/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/E1_deepseek_vs_c4/). Org map: [DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08.md](https://github.com/gasyoun/Uprava/blob/main/docs/DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08.md). Paid bulk E1 not run this pass.
+
 ## [1.144.20] - 2026-08-07
 
 ### Changed
