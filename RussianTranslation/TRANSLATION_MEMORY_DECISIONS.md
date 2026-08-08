@@ -6,6 +6,11 @@ This file records settled user decisions for the PWG translation-memory approach
 Do not re-ask these as open planning questions unless the user explicitly reopens
 the topic.
 
+**Flash / fence / question lists (index, 08-08-2026):** what R4.3a and “no sole
+auto-promote” ban vs allow; written+oral coverage; questions the TM will / will
+not / could later answer —
+[docs/TM_SCOPE_FLASH_AND_QUESTIONS_2026-08.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/TM_SCOPE_FLASH_AND_QUESTIONS_2026-08.md).
+
 ## Settled Decisions
 
 1. **Auto-reuse policy for draft windows**
