@@ -17,6 +17,8 @@
     "hard_flags",
     "ru_skeleton",
     "route_hint",
+    "det",
+    "tm_fence",
     "store_write"
   ],
   "properties": {
@@ -28,7 +30,7 @@
       "required": ["tool", "mode", "model"],
       "properties": {
         "tool": { "type": "string" },
-        "mode": { "enum": ["dry", "live"] },
+        "mode": { "enum": ["dry", "fill", "live"] },
         "model": { "type": "string" },
         "price_table": {
           "type": "object",
@@ -45,22 +47,49 @@
       "type": "array",
       "items": {
         "type": "object",
+        "additionalProperties": true,
         "properties": {
           "i": { "type": "integer" },
           "de_anchor": { "type": ["string", "null"] },
+          "sense_tag": { "type": ["string", "null"] },
+          "layer": { "type": ["string", "null"] },
+          "subcard": { "type": ["string", "null"] },
           "note": { "type": "string" }
         }
       }
     },
     "tm_fuzzy_hits": {
       "type": "array",
+      "description": "Step [2]b TM fuzzy rank — READ-ONLY reuse candidates (not the TM fence)",
       "items": {
         "type": "object",
+        "additionalProperties": true,
         "properties": {
           "rank": { "type": "integer" },
           "key1": { "type": "string" },
-          "score": { "type": "number" }
+          "score": { "type": "number" },
+          "match_type": {
+            "type": "string",
+            "description": "exact_content_sha | exact_key1 | key1_difflib"
+          },
+          "n_store_rows": { "type": ["integer", "null"] },
+          "ru_preview": { "type": ["string", "null"] },
+          "reuse_hint": { "type": "string" },
+          "raw_sha256": { "type": "string" }
         }
+      }
+    },
+    "tm_fence": {
+      "type": "object",
+      "description": "Step [4] TM fence declaration (R4.3a). Prep never may_write.",
+      "required": ["may_write", "writer", "rule"],
+      "properties": {
+        "may_write": { "const": false },
+        "writer": { "const": "promoter_only" },
+        "rule": { "const": "R4.3a" },
+        "step": { "type": "string" },
+        "note": { "type": "string" },
+        "n_hits_ranked": { "type": "integer" }
       }
     },
     "compound_candidates": {
@@ -94,6 +123,21 @@
     },
     "route_hint": {
       "enum": ["controller_only", "full_worker", "prep_only", "park"]
+    },
+    "det": {
+      "type": "object",
+      "description": "Free det_gate result (no Claude). prep-level always; full H1210 twin when a draft card exists.",
+      "required": ["ok", "gate", "issues", "claude"],
+      "properties": {
+        "ok": { "type": ["boolean", "null"] },
+        "gate": { "enum": ["prep", "full", "skipped", null] },
+        "issues": { "type": "array", "items": { "type": "string" } },
+        "coverage": { "type": ["number", "null"] },
+        "claude": { "const": false },
+        "n_skeleton_tokens": { "type": ["integer", "null"] },
+        "source_senses": { "type": ["integer", "null"] },
+        "had_draft_card": { "type": ["boolean", "null"] }
+      }
     },
     "store_write": {
       "const": false,
