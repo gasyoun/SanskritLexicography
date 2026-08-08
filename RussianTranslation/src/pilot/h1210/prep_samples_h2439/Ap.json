@@ -1,0 +1,523 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "Ap",
+ "produced_at": 1786193950,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "fill",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  }
+ },
+ "sense_inventory": [
+  {
+   "i": 0,
+   "de_anchor": "<div n=\"1\">— 6) {%nahe stehend, verwandt, befreundet, vertraut%}; <lex>m.</lex> {%Verwandter, Freund, Vertrauter%} (<ab>vgl.</ab> {#Api#})\n<ls>MED. t. 3</ls> ({…",
+   "sense_tag": "6",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 1,
+   "de_anchor": "<div n=\"v\">— <ab>Vgl.</ab> {#anApta#} . — <ab>caus.</ab> {#Apayati#}; <ab>gerund.</ab> mit <ab>praepp.</ab> {#Apayya#} oder {#Apya#}\n<ls>P. 6,4,57.</ls>\n<ls>VOP…",
+   "sense_tag": "note",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 2,
+   "de_anchor": "<div n=\"1\"> 1) {%erreichen lassen%}: {#atrEva mA BagavAnmohAntamApIpipat#} (<ab>ungramm.</ab> <ab>aor.</ab> für {#Apipat#}; in der <is>Mādhy</is>.-<ab>Rec.</ab>…",
+   "sense_tag": "caus-1",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 3,
+   "de_anchor": "<div n=\"1\">— 2) {%Jmd Etwas erlangen lassen%}: {#Apayato vE tAvanyo'nyasya kAmam#}\n<ls>CHĀND. UP. 1,1,6.</ls>",
+   "sense_tag": "caus-2",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 4,
+   "de_anchor": "<div n=\"1\">— 3) {%Jmd Etwas abgeben, zu fühlen geben%}: {#ApayituM BUpamAha yOgaMDarAyaRaH#}\n<ls>KATHĀS. 17,32.</ls>",
+   "sense_tag": "caus-3",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 5,
+   "de_anchor": "<div n=\"1\">— 4) = {#Ap#}\n<ls>DHĀTUP. 34,32.</ls> — <ab>desid.</ab> {#I/psati#}\n<ls>P. 7,4,55.</ls>\n<ls>VOP. 19,10.</ls> {%zu erreichen, zu erlangen streben%}: {…",
+   "sense_tag": "caus-4",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 6,
+   "de_anchor": "<div n=\"1\"> 1) {%wen%} oder {%was man zu haben wünscht, begehrt, erwünscht, genehm, lieb%}: {#pratigfhyepsitaM daRqam#}\n<ls>M. 2,48.</ls> {#kasyAsO yasyAhaM dUt…",
+   "sense_tag": "des-1",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 7,
+   "de_anchor": "<div n=\"1\">— 2) {%von einer Autorität festgesetzt, anerkannt%}: {#asyAH pESAcyAH prakftiH SOrasenIpsitA#}\n<ab>Sch.</ab> zu <ls>VARARUCI 10,2</ls> in <ls>LASSEN,…",
+   "sense_tag": "des-2",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 8,
+   "de_anchor": "<div n=\"p\">— {#aBi#} {%bis zu Etwas reichen, erreichen%}\n<ls>ŚAT. BR. 7,4,1,43.</ls> {#yatrAByApnoti tadaBimfSya#}\n<ls n=\"ŚAT. BR.\">9,1,2,16.</ls> <ls n=\"ŚAT. B…",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_01_a_bi",
+   "note": "store_row"
+  },
+  {
+   "i": 9,
+   "de_anchor": "<div n=\"p\">— {#pratyava#} {%wiedererlangen%}\n<ls>ŚIŚUP. 5,40.</ls>",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_03_pratyava",
+   "note": "store_row"
+  },
+  {
+   "i": 10,
+   "de_anchor": "<div n=\"p\">— {#ud#} {%hinaufreichen, erreichen%}\n<ls>ŚAT. BR. 2,6,2,16.</ls> {#divaM martya iva bAhuByAM nodApuH#}\n<ls n=\"ŚAT. BR.\">13,5,4,14.</ls> <ls n=\"ŚAT. …",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_05_ud",
+   "note": "store_row"
+  },
+  {
+   "i": 11,
+   "de_anchor": "<div n=\"p\">— {#upa#} {%zu Etwas gelangen%}\n<ls>TS. 6,6,11,5.</ls> {#etanmiTunamupApnavAni#}\n<ls>ŚAT. BR. 11,3,2,1.</ls> {#upa ha taM kAmamApnoti#}\n<ls n=\"ŚAT. B…",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 12,
+   "de_anchor": "<div n=\"p\">— {#pari#}\n<div n=\"1\"> 1) {%erreichen, gewinnen%}: {#ko vA^ ya\\jYEH pari\\ dakza^M ta Apa#}\n<ls>ṚV. 1,76,1.</ls>\n<ls>TS. 7,3,1,4.</ls>\n<ls>ŚAT. BR. 2,…",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_07_pari",
+   "note": "store_row"
+  },
+  {
+   "i": 13,
+   "de_anchor": "<div n=\"1\">— 2) {%ein Ende machen, genug sein lassen%}: {#BIma paryApnuhi#}\n<ls>MBH. 15,1073.</ls> — <ab>part.</ab> {#paryApta#} {%erfüllt, zum Abschluss gebrac…",
+   "sense_tag": "2",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_07_pari",
+   "note": "store_row"
+  },
+  {
+   "i": 14,
+   "de_anchor": "<div n=\"1\"> 1) {%verlangen, fordern, wünschen%}: {#dAtA — fRam — parIpsetkena hetunA#}\n<ls>M. 8,161.</ls> {#sA bahUni parIpsati#}\n<ls>MBH. 3,11368.</ls> {#putra…",
+   "sense_tag": "pari-verb-2nd-block-1",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_07_pari",
+   "note": "store_row"
+  },
+  {
+   "i": 15,
+   "de_anchor": "<div n=\"1\">— 2) {%zu erhalten wünschen, in Acht nehmen, schützen%}: {#na peyamudakam — prARAniha parIpsatA#}\n<ls>MBH. 3,17327.</ls> {#vyAyAmena parIpsasva jIvit…",
+   "sense_tag": "pari-verb-2nd-block-2",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_07_pari",
+   "note": "store_row"
+  },
+  {
+   "i": 16,
+   "de_anchor": "<div n=\"1\">— 3) {%Jmd beizukommen suchen, auf Jmd%} oder {%Etwas lauern, nachstellen%}: {#sa mayA sAgarAvarte dfzwa AsItparIpsatA#}\n<ls>MBH. 3,632.</ls> {#parIp…",
+   "sense_tag": "pari-verb-2nd-block-3",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_07_pari",
+   "note": "store_row"
+  },
+  {
+   "i": 17,
+   "de_anchor": "<div n=\"p\">— {#saMpari#} {%zusammenfassen, zusammennehmen%}: {#saMparyApya mUlAni ca prAntAni ca#}\n<ls>KAUŚ. 90.</ls>",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_08_sa_mpari",
+   "note": "store_row"
+  },
+  {
+   "i": 18,
+   "de_anchor": "<div n=\"p\">— {#pra#}\n<div n=\"1\"> 1) {%erreichen, treffen; an einen Ort gelangen; auf Jmd%} oder {%Etwas stossen, Jmd%} oder {%Etwas antreffen%}: {#memaM prApa^t…",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_0",
+   "note": "store_row"
+  },
+  {
+   "i": 19,
+   "de_anchor": "<div n=\"1\">— 2) {%erlangen, gewinnen, sich zuziehen, auf sich laden, erleiden%}; <ab>act.</ab>: {#prApe^ya\\M sarvA\\ #}\n[Page1-0653]\n{# AkU^tIH#}\n<ls>AV. 3,20,9.…",
+   "sense_tag": "2",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_0",
+   "note": "store_row"
+  },
+  {
+   "i": 20,
+   "de_anchor": "<div n=\"1\">— 3) <ab>gramm.</ab> {%in eine Form, einen Laut%} (<ab>acc.</ab>) {%übergehen%}: {#nAsikASabdaSca nasaM prApnoti#} {%und das Wort%} {#nAsikA#} {%geht…",
+   "sense_tag": "3",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_0",
+   "note": "store_row"
+  },
+  {
+   "i": 21,
+   "de_anchor": "<div n=\"1\">— 4) <ab>intrans.</ab> {%reichen bis%} {#(A): AprapadaM prApnoti#}\n<ls>P. 5,2,8.</ls>\n<ls>AK. 2,6,3,21.</ls>",
+   "sense_tag": "4",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_0",
+   "note": "store_row"
+  },
+  {
+   "i": 22,
+   "de_anchor": "<div n=\"1\">— 5) {%sich finden, vorhanden sein%}: {#yatra^ prA\\pnozyo^zaDe#}\n<ls>AV. 4,19,2.</ls> in der <ab>Gramm.</ab> {%in Folge einer Regel Geltung erhalten,…",
+   "sense_tag": "5",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_0",
+   "note": "store_row"
+  },
+  {
+   "i": 23,
+   "de_anchor": "<div n=\"1\"> 1) {%erreicht, getroffen, angetroffen%}: {#DUmaprAptaH#}\n<ls>KĀTY. ŚR. 22,6,16.</ls> <ls n=\"KĀTY. ŚR. 22,6,\">17.</ls> {#yaTEDastejasA vahniH prAptaM…",
+   "sense_tag": "PPP-1",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_0",
+   "note": "store_row"
+  },
+  {
+   "i": 24,
+   "de_anchor": "<div n=\"1\">— 2) {%erlangt, gewonnen, sich zugezogen, auf sich geladen%}\n<ls>AK. 3,2,54.</ls>\n<ls>TRIK. 3,3,172.</ls>\n<ls>H. 1490.</ls> {#yatprAptaM caratA vane …",
+   "sense_tag": "PPP-2",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_0",
+   "note": "store_row"
+  },
+  {
+   "i": 25,
+   "de_anchor": "<div n=\"1\">— 3) {%erreicht%} oder {%getroffen habend, an einem Orte angelangt seiend%}: {#tfRA^ni\\ prApta^H#}\n<ls>AV. 9,7,22.</ls> {#aprAptA hImAM Bavanti#}\n<ls…",
+   "sense_tag": "PPP-3",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_0",
+   "note": "store_row"
+  },
+  {
+   "i": 26,
+   "de_anchor": "<div n=\"1\">— 4) {%erlangt habend, sich zugezogen —, auf sich geladen —, erlitten%} — <ls>ŚAT. BR. 2,4,4,6.</ls> {#brAhmyaM prAptena saMskAraM kzatriyeRa#} <ls>M…",
+   "sense_tag": "4)",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_1",
+   "note": "store_row"
+  },
+  {
+   "i": 27,
+   "de_anchor": "<div n=\"1\">— 5) {%gekommen, angelangt, da seiend%}: {#saBAntaH sAkziRaH prAptAn#} <ls>M. 8,79.</ls> {#kAle prAptaH#} <ls n=\"M.\">3,105.</ls> <ls n=\"M. 3,\">112.</…",
+   "sense_tag": "5)",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_1",
+   "note": "store_row"
+  },
+  {
+   "i": 28,
+   "de_anchor": "<div n=\"1\">— 6) {%zum Abschluss, zur Reife gelangt, fertig%}: {#aprAptavyavahAra#} {%dessen Process nicht beendigt ist%} <ls>YĀJÑ. 2,243.</ls> {#aprAptA kanyA#}…",
+   "sense_tag": "6)",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_1",
+   "note": "store_row"
+  },
+  {
+   "i": 29,
+   "de_anchor": "<div n=\"1\">— 7) <ab>gramm.</ab> {%in Folge einer Regel Geltung habend%}: {#gaRapAWAtsarvatra prAptA saMjYA#} <ls>P. 1,1,34</ls>, <ab>Sch.</ab> {#prAptaviBAzA#} …",
+   "sense_tag": "7)",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_1",
+   "note": "store_row"
+  },
+  {
+   "i": 30,
+   "de_anchor": "<div n=\"1\"> 8) {%gestellt%} ({#praRihita#}) <ls>AK. 3,2,36.</ls>",
+   "sense_tag": "8)",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_1",
+   "note": "store_row"
+  },
+  {
+   "i": 31,
+   "de_anchor": "<div n=\"1\">— 9) {%schicklich%} <ls>H. 743.</ls> — <ab>caus.</ab> (<ab>gerund.</ab> {#prApayya#} oder {#prApya#} <ls>P. 6,4,57</ls>, <ab>Sch.</ab> <ls>VOP. 26,21…",
+   "sense_tag": "9)",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_1",
+   "note": "store_row"
+  },
+  {
+   "i": 32,
+   "de_anchor": "<div n=\"1\"> 1) {%Jmd%} oder {%Etwas wohin%} (<ab>acc.</ab> oder <ab>Ortsadv.</ab>) {%gelangen lassen, treiben, führen, bringen, befördern%}; <ab>act.</ab>: {#pr…",
+   "sense_tag": "Kaus. 1)",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_1",
+   "note": "store_row"
+  },
+  {
+   "i": 33,
+   "de_anchor": "<div n=\"1\">— 2) {%Jmd%} (<ab>acc.</ab>) {%Etwas%} (<ab>acc.</ab>) {%erlangen lassen%}: {#rAjAnam — prApayenmahatIM Sriyam#} <ls>MBH. 2,171.</ls> {#vyAkaraRaM#} …",
+   "sense_tag": "Kaus. 2)",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_1",
+   "note": "store_row"
+  },
+  {
+   "i": 34,
+   "de_anchor": "<div n=\"1\">— 3) {%erlangen%}: {#tvatprasAdAdaviGnena prApayeyaM kriyAPalam#} <ls>R. 1,21,8.</ls> — <ab>desid.</ab> {%zu erreichen suchen, streben%}: {#yaTA^ va\\…",
+   "sense_tag": "Kaus. 3)",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_09_pra_1",
+   "note": "store_row"
+  },
+  {
+   "i": 35,
+   "de_anchor": "<div n=\"p\">— {#aBipra#} {%reichen bis zu, erreichen%}: {#na hEtaM svargaM lokamaBiprApnuyAt#} <ls>ŚAT. BR. 6,7,4,11.</ls> {#yadDAsyEtA aNgaM nABiprApnuyuH#} <ls…",
+   "sense_tag": "1)",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_12_a_bipra",
+   "note": "store_row"
+  },
+  {
+   "i": 36,
+   "de_anchor": "<div n=\"p\">— {#upapra#} {%hinzukommen, nahen%}: {#mfgarkzaM mahizaM vApi — nAvarjayamupaprAptaM kzIRapuRyaH kzuDAnvitaH#} <ls>R. 3,75,17.</ls>",
+   "sense_tag": "1)",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_13_upapra",
+   "note": "store_row"
+  },
+  {
+   "i": 37,
+   "de_anchor": "<div n=\"p\">— {#saMpra#}\n<div n=\"1\"> 1) {%erreichen, gelangen zu, antreffen%}: {#etadvA etABirdevA AtaH saMprApnuvan#}\n<ls>ŚAT. BR. 9,2,3,13.</ls> <ls n=\"ŚAT. BR…",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_14_sa_mpra",
+   "note": "store_row"
+  },
+  {
+   "i": 38,
+   "de_anchor": "<div n=\"1\">— 2) {%erlangen, sich zuziehen%}: {#saMprApnuvanti duHKAni tAsu tAsviha yonizu#}\n<ls>M. 12,74.</ls> {#Apadam#}\n<ls>PAÑCAT. II,21.</ls> {#parABUtim#}\n…",
+   "sense_tag": "2",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_14_sa_mpra",
+   "note": "store_row"
+  },
+  {
+   "i": 39,
+   "de_anchor": "<div n=\"1\">— 3) {#saMprApta#} {%angelangt, gekommen%}: {#saMprAptAya tvatiTaye pradadyAdAsanodake#}\n<ls>M. 3,99.</ls> <ls n=\"M.\">9,141.</ls>\n<ls>INDṚ. 5,4.</ls>…",
+   "sense_tag": "3",
+   "layer": "pwg",
+   "subcard": "_ap~~h0_14_sa_mpra",
+   "note": "store_row"
+  }
+ ],
+ "tm_fuzzy_hits": [
+  {
+   "rank": 1,
+   "key1": "Ap",
+   "score": 1.0,
+   "match_type": "exact_key1",
+   "n_store_rows": 152,
+   "ru_preview": "6) {%близкий, родственный, дружественный, доверенный%}; <lex>m.</lex> {%родственник, друг, доверенное лицо%} (<ab>vgl.</…"
+  }
+ ],
+ "compound_candidates": [],
+ "citation_normalize": [
+  {
+   "raw": "<ls>MED. t. 3</ls>",
+   "normalized": "<ls>MED. t. 3</ls>"
+  },
+  {
+   "raw": "<ls>M. 2,109.</ls>",
+   "normalized": "<ls>M. 2,109.</ls>"
+  },
+  {
+   "raw": "<ls n=\"M.\">8,64.</ls>",
+   "normalized": "<ls n=\"M.\">8,64.</ls>"
+  },
+  {
+   "raw": "<ls>YĀJÑ. 1,28.</ls>",
+   "normalized": "<ls>YĀJÑ. 1,28.</ls>"
+  },
+  {
+   "raw": "<ls n=\"YĀJÑ.\">2,71.</ls>",
+   "normalized": "<ls n=\"YĀJÑ.\">2,71.</ls>"
+  },
+  {
+   "raw": "<ls>RAGH. 12,52.</ls>",
+   "normalized": "<ls>RAGH. 12,52.</ls>"
+  },
+  {
+   "raw": "<ls>M. 5,101.</ls>",
+   "normalized": "<ls>M. 5,101.</ls>"
+  },
+  {
+   "raw": "<ls>DEV. 1,19.</ls>",
+   "normalized": "<ls>DEV. 1,19.</ls>"
+  },
+  {
+   "raw": "<ls>P. 6,4,57.</ls>",
+   "normalized": "<ls>P. 6,4,57.</ls>"
+  },
+  {
+   "raw": "<ls>VOP. 26,215.</ls>",
+   "normalized": "<ls>VOP. 26,215.</ls>"
+  },
+  {
+   "raw": "<ls>BṚH. ĀR. UP. 4,5,14.</ls>",
+   "normalized": "<ls>BṚH. ĀR. UP. 4,5,14.</ls>"
+  },
+  {
+   "raw": "<ls>CHĀND. UP. 1,1,6.</ls>",
+   "normalized": "<ls>CHĀND. UP. 1,1,6.</ls>"
+  },
+  {
+   "raw": "<ls>KATHĀS. 17,32.</ls>",
+   "normalized": "<ls>KATHĀS. 17,32.</ls>"
+  },
+  {
+   "raw": "<ls>DHĀTUP. 34,32.</ls>",
+   "normalized": "<ls>DHĀTUP. 34,32.</ls>"
+  },
+  {
+   "raw": "<ls>P. 7,4,55.</ls>",
+   "normalized": "<ls>P. 7,4,55.</ls>"
+  },
+  {
+   "raw": "<ls>VOP. 19,10.</ls>",
+   "normalized": "<ls>VOP. 19,10.</ls>"
+  },
+  {
+   "raw": "<ls>AV. 9,5,12.</ls>",
+   "normalized": "<ls>AV. 9,5,12.</ls>"
+  },
+  {
+   "raw": "<ls>ŚAT. BR. 10,1,2,1.</ls>",
+   "normalized": "<ls>ŚAT. BR. 10,1,2,1.</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR.\">12,1,1,1.</ls>",
+   "normalized": "<ls n=\"ŚAT. BR.\">12,1,1,1.</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR.\">13,1,2,9.</ls>",
+   "normalized": "<ls n=\"ŚAT. BR.\">13,1,2,9.</ls>"
+  },
+  {
+   "raw": "<ls>MBH. 1,1090.</ls>",
+   "normalized": "<ls>MBH. 1,1090.</ls>"
+  },
+  {
+   "raw": "<ls n=\"MBH.\">2,1007.</ls>",
+   "normalized": "<ls n=\"MBH.\">2,1007.</ls>"
+  },
+  {
+   "raw": "<ls n=\"MBH.\">3,13191.</ls>",
+   "normalized": "<ls n=\"MBH.\">3,13191.</ls>"
+  },
+  {
+   "raw": "<ls>ṚV. 1,100,5</ls>",
+   "normalized": "<ls>ṚV. 1,100,5</ls>"
+  },
+  {
+   "raw": "<ls>M. 2,48.</ls>",
+   "normalized": "<ls>M. 2,48.</ls>"
+  },
+  {
+   "raw": "<ls>N. 3,2.</ls>",
+   "normalized": "<ls>N. 3,2.</ls>"
+  },
+  {
+   "raw": "<ls n=\"N.\">12,15.</ls>",
+   "normalized": "<ls n=\"N.\">12,15.</ls>"
+  },
+  {
+   "raw": "<ls>R. 1,4,18.</ls>",
+   "normalized": "<ls>R. 1,4,18.</ls>"
+  },
+  {
+   "raw": "<ls n=\"R.\">4,28,3.</ls>",
+   "normalized": "<ls n=\"R.\">4,28,3.</ls>"
+  },
+  {
+   "raw": "<ls>P. 1,4,27.</ls>",
+   "normalized": "<ls>P. 1,4,27.</ls>"
+  },
+  {
+   "raw": "<ls>MEGH. 112.</ls>",
+   "normalized": "<ls>MEGH. 112.</ls>"
+  },
+  {
+   "raw": "<ls>VID. 93.</ls>",
+   "normalized": "<ls>VID. 93.</ls>"
+  },
+  {
+   "raw": "<ls>ŚĀK. 62.</ls>",
+   "normalized": "<ls>ŚĀK. 62.</ls>"
+  },
+  {
+   "raw": "<ls>N. 1,4.</ls>",
+   "normalized": "<ls>N. 1,4.</ls>"
+  },
+  {
+   "raw": "<ls>R. 4,27,22.</ls>",
+   "normalized": "<ls>R. 4,27,22.</ls>"
+  },
+  {
+   "raw": "<ls>VIŚV. 3,1.</ls>",
+   "normalized": "<ls>VIŚV. 3,1.</ls>"
+  },
+  {
+   "raw": "<ls>MBH. 3,161.</ls>",
+   "normalized": "<ls>MBH. 3,161.</ls>"
+  },
+  {
+   "raw": "<ls>AK. 2,9,57.</ls>",
+   "normalized": "<ls>AK. 2,9,57.</ls>"
+  },
+  {
+   "raw": "<ls>H. 1505.</ls>",
+   "normalized": "<ls>H. 1505.</ls>"
+  },
+  {
+   "raw": "<ls>BHAṬṬ. 2,28.</ls>",
+   "normalized": "<ls>BHAṬṬ. 2,28.</ls>"
+  }
+ ],
+ "hard_flags": {
+  "polysemy": true,
+  "no_pwg": false,
+  "monster_length": true,
+  "notes": [
+   "de_source=store",
+   "polysemy: n_senses=40 >= 6",
+   "monster: de_bytes=42301 key1_len=2"
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "full_worker",
+ "store_write": false
+}
