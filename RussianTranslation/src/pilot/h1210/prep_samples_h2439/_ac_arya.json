@@ -1,7 +1,7 @@
 {
  "schema": "pwg.prep_pack.v1",
  "key1": "_ac_arya",
- "produced_at": 1786194858,
+ "produced_at": 1786195176,
  "producer": {
   "tool": "prep_pack.py",
   "mode": "fill",
@@ -209,6 +209,14 @@
   "n_skeleton_tokens": 0,
   "source_senses": 2,
   "had_draft_card": false
+ },
+ "tm_fence": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "step": "[4] same promoter + TM fence",
+  "note": "TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM",
+  "n_hits_ranked": 0
  },
  "store_write": false
 }
