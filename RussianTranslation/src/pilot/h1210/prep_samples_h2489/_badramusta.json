@@ -1,0 +1,50 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "Badramusta",
+ "produced_at": 1786200686,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "fill",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  }
+ },
+ "sense_inventory": [],
+ "tm_fuzzy_hits": [],
+ "compound_candidates": [],
+ "citation_normalize": [],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": true,
+  "monster_length": false,
+  "notes": [
+   "no DE source (no store row, no payload card, no raw/translate)"
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "park",
+ "det": {
+  "ok": false,
+  "gate": "prep",
+  "issues": [
+   "prep: no_pwg and empty sense_inventory — park"
+  ],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 0,
+  "source_senses": 0,
+  "had_draft_card": false
+ },
+ "tm_fence": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "step": "[4] same promoter + TM fence",
+  "note": "TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM",
+  "n_hits_ranked": 0
+ },
+ "store_write": false
+}

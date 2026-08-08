@@ -1,0 +1,542 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "As",
+ "produced_at": 1786200687,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "fill",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  }
+ },
+ "sense_inventory": [
+  {
+   "i": 0,
+   "de_anchor": "{#As#}¦ <lex>interj.</lex> {%der Freude und des Unwillens%}: {#AH#} vor {#ka, pa#} und {#sa#}\n<ls>MṚCCH. 67,3.</ls>\n<ls>PAÑCAT. 36,21.</ls> <ls n=\"PAÑCAT.\">46,2…",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_as~~h0_00_pwg00",
+   "note": "store_row"
+  },
+  {
+   "i": 1,
+   "de_anchor": "<hom>2.</hom> {#As#}¦ 9〉 {#kaTamAste tAtaH#} so <ab>v. a.</ab> {%wie geht es dem Vater ?%} <ls>HARṢAC. 126,9</ls>.",
+   "sense_tag": "9-var",
+   "layer": "pwkvn",
+   "subcard": "_as~~h0_zz_pwkvn",
+   "note": "store_row"
+  },
+  {
+   "i": 2,
+   "de_anchor": "— Mit {#anu#} 1〉 {%sich in Jmds%} (<ab>Gen.</ab>) {%Nähe aufhalten%} <ls>HEMĀDRI 1,35,20</ls>.",
+   "sense_tag": "upa-var-1",
+   "layer": "pwkvn",
+   "subcard": "_as~~h0_zz_pwkvn",
+   "note": "store_row"
+  },
+  {
+   "i": 3,
+   "de_anchor": "<hom>2.</hom> {#As#}¦ I. 1. Mit {#avasTAnam#} {%sich niederlassen an einem Orte%} <ls>R. ed. Bomb. 4,54,16</ls> ({#Asizyasi#}). — Mit {#anu#} I. 1.",
+   "sense_tag": "adhi-var",
+   "layer": "pwkvn",
+   "subcard": "_as~~h0_zz_pwkvn",
+   "note": "store_row"
+  },
+  {
+   "i": 4,
+   "de_anchor": "2. {#As#}¦, {#A/ste#} (<ab>ved.</ab> und ep. auch {#A/sate#}, ep. auch <ab>act.</ab>), {#Asse#},\n3. <ab>pl.</ab> ep. {#Asante#}; 2. <ab>du.</ab> <ab>potent.</ab…",
+   "sense_tag": "intro",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg00",
+   "note": "store_row"
+  },
+  {
+   "i": 5,
+   "de_anchor": "1) {%sitzen, sich setzen%}\n<ls>DHĀTUP. 24,11.</ls> {#ya Aste\\ yaSca\\ cara^ti#}\n<ls>ṚV. 7,55,6.</ls> {#su\\te sacA\\ maDO\\ na makza\\ Asa^te#}\n<ls n=\"ṚV. 7,\">32,2.<…",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg00",
+   "note": "store_row"
+  },
+  {
+   "i": 6,
+   "de_anchor": "<div n=\"1\">— 2) {%sich aufhalten, wohnen, seinen Wohnsitz aufschlagen%}: {#di\\vi de\\vAsa\\ Asa^te#}\n<ls>ṚV. 1,20,6.</ls> <ls n=\"ṚV.\">9,15,2.</ls> {#yatrAsa^te su…",
+   "sense_tag": "2",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg00",
+   "note": "store_row"
+  },
+  {
+   "i": 7,
+   "de_anchor": "<div n=\"1\">— 3) {%sitzen bleiben, stillsitzen, verweilen, verbleiben, aushalten, verharren%}; sowohl mit dem Begriff {%der Unthätigkeit%} als mit dem {%der Ausd…",
+   "sense_tag": "3",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg00",
+   "note": "store_row"
+  },
+  {
+   "i": 8,
+   "de_anchor": "<div n=\"1\">— 4) {%einer Handlung fortwährend obliegen, in einem Zustande%} oder {%Verhältnisse verharren, sich längere Zeit hindurch darin befinden, anhalten, d…",
+   "sense_tag": "4",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg00",
+   "note": "store_row"
+  },
+  {
+   "i": 9,
+   "de_anchor": "<div n=\"2\"> a) ein mit dem <ab>praed.</ab> congruirendes <ab>partic.</ab>, <lex>adj.</lex> oder <ab>subst.</ab>: {#f\\tasya\\ yoni^M vimf\\Santa^ Asate#}\n<ls>ṚV. 1…",
+   "sense_tag": "4a",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg00",
+   "note": "store_row"
+  },
+  {
+   "i": 10,
+   "de_anchor": "<div n=\"2\">— b) ein <ab>gerund.</ab> auf {#tvA#} ({#ya#}) oder {#am: uparuDyArimAsIta#} {%er halte den Feind eingeschlossen%}\n<ls>M. 7,195.</ls> {#tato rAjA yAv…",
+   "sense_tag": "4b",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 11,
+   "de_anchor": "<div n=\"2\">— c) ein <lex>adv.</lex>: {#pfTivIM lANgaleneha BiktvA vIjaM vapatyuta . Aste 'yaM karzakastUzRIM#} ({%er verhält sich ganz ruhig%}) {#parjanyastatra…",
+   "sense_tag": "4c",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 12,
+   "de_anchor": "<div n=\"2\">— d) ein <ab>instr.</ab>: {#hiraRyako 'pi sahasramuKaviladurgaM pravizwaH sannakutoBayaH suKenAste#} {%befindet sich ganz wohl%}\n<ls>PAÑCAT. 107,2.</…",
+   "sense_tag": "4d",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 13,
+   "de_anchor": "<div n=\"2\">— e) ein <ab>dat.</ab>: {#AstAM mAnasatuzwaye sukftinAM nItirnavoQeva vaH#} {%möge die gute Führung redlicher Leute wie eine Neuvermählte euerm Herze…",
+   "sense_tag": "4e",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 14,
+   "de_anchor": "<div n=\"1\">— 5) {%sich legen, ein Ende nehmen%}: {#tadAstAM tAvadvihaMgamAmizaloBo yAvatkuwumbajIvanopAyaBUtaM jAlamapi me nazwam#}\n<ls>PAÑCAT. 106,19.</ls> {#A…",
+   "sense_tag": "5",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 15,
+   "de_anchor": "<div n=\"1\">— 6) die Form {#A/san#}\n<ls>ṚV. 1,109,7</ls> : {#yeBi^H sapi\\tvaM pi\\taro^ na\\ Asa^n#} ist eine <ab>unregelm.</ab> Schreibung und zu 1. {#aS#} zu zie…",
+   "sense_tag": "6",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 16,
+   "de_anchor": "<div n=\"1\"> 1) <lex>adj.</lex>\n<div n=\"2\"> a) {%der gesessen%} oder {%gewohnt hat%}: {#AsitaH saH#}\n<ls>P. 3,4,76</ls>, <ab>Sch.</ab>\n<div n=\"2\">— b) {%gesessen…",
+   "sense_tag": "PPP-1",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 17,
+   "de_anchor": "<div n=\"1\">— 2) <lex>n.</lex>\n<div n=\"2\"> a) {%das Sitzen, Sichsetzen%}: {#jfmBAsitAdikft (Alasyam)#}\n<ls>SĀH. D. 68,18.</ls> {#durAsita#} {%schlechte, unschick…",
+   "sense_tag": "VN-2",
+   "layer": "pwg",
+   "subcard": "_as~~h1_00_pwg01",
+   "note": "store_row"
+  },
+  {
+   "i": 18,
+   "de_anchor": "<div n=\"p\">— {#A#} {%sich auf Etwas%} (<ab>acc.</ab>) {%setzen%}: {#ba\\rhirna\\ AstA\\madi^tiH#}\n<ls>ṚV. 7,2,11.</ls>",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_as~~h1_04__a",
+   "note": "store_row"
+  },
+  {
+   "i": 19,
+   "de_anchor": "<div n=\"p\">— {#ud#} ({%abgesondert sitzen) unbetheiligt sein, keine Theilnahme zeigen, sich gleichgültig%} oder {%passiv verhalten%}: {#pragalBA yadi DIrA syAcC…",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_as~~h1_05_ud",
+   "note": "store_row"
+  },
+  {
+   "i": 20,
+   "de_anchor": "<div n=\"p\">— {#upa#}\n<div n=\"1\"> 1) {%daneben sitzen, sich daneben setzen, neben Jmd%} (<ab>acc.</ab>) {%sitzen%} oder {%sich setzen%} (als Zeichen der Unterord…",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 21,
+   "de_anchor": "<div n=\"1\">— 2) {%sitzen%}: {#na tizWati tu yaH pUrvAM#} ({#saMDyAM#}) {#nopAste yaSca paScimAm#}\n<ls>M. 2,103.</ls> {#nihatasyAsya sattvasya jAmbUnadasamatvaci…",
+   "sense_tag": "2",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 22,
+   "de_anchor": "<div n=\"1\">— 3) {%einen Platz einnehmen, sich aufhalten%}: {#EndraM sTAnamupAsInAH#}\n<ls>M. 5,93.</ls> {#upAsya rAtriSezaM tu SoRakUle#}\n<ls>R. 1,36,1.</ls>",
+   "sense_tag": "3",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 23,
+   "de_anchor": "<div n=\"1\">— 4) {%beiwohnen, an Etwas Theil nehmen%}: {#upAsate ye gfhasTAH parapAkam#}\n<ls>M. 3,104.</ls> {#viSvAvasuSca ye cAnye te 'pyupAsantu me maKam#}\n<ls…",
+   "sense_tag": "4",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 24,
+   "de_anchor": "<div n=\"1\">— 5) {%sich nähern, sich irgend wohin begeben%}: {#tasmAtstriyamaDa upAsIta#}\n<ls>ŚAT. BR. 14,9,4,2.</ls> {#tataH kadAcidbrahmARamupAsAM cakrire surA…",
+   "sense_tag": "5",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 25,
+   "de_anchor": "<div n=\"1\">— 6) {%belagern%}: {#yadahopAsate tenemAM mAnuzIM puraM jayanti#}\n<ls>ŚAT. BR. 3,4,4,4.</ls>",
+   "sense_tag": "6",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 26,
+   "de_anchor": "<div n=\"1\">— 7) {%einer Sache obliegen, dabei bleiben, sich mit Etwas zu thun machen, ausführen, ausüben%}: {#Gf\\tameka\\ upA^sate#}\n<ls>ṚV. 10,154,1.</ls>\n<ls>A…",
+   "sense_tag": "7",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 27,
+   "de_anchor": "<div n=\"1\">— 8) {%sich unterziehen, erleiden%}: {#alaM te pARquputrARAM BaktyA kleSamupAsitum#}\n<ls>MBH. 3,15634.</ls> {#ahorAtramupAsIrannaSOcam#}\n<ls>M. 11,18…",
+   "sense_tag": "8",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 28,
+   "de_anchor": "<div n=\"1\">— 9) {%ausharren, in einer Thätigkeit%} oder {%einem Zustande verharren%}: {#AnidrO paqahorAtraM tapovanamarakzatAm .. upAsAM#}\n(<ls>WEST.</ls>: {%ex…",
+   "sense_tag": "9",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 29,
+   "de_anchor": "<div n=\"1\">— 10) {%erwartend dabeisitzen, erwarten; zuwarten; das Zuwarten, Nachsehen haben%}: {#ye cArva^to mAMsaBikzAmu\\pAsa^te#}\n<ls>ṚV. 2,162,12.</ls> {#upa…",
+   "sense_tag": "10",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 30,
+   "de_anchor": "<div n=\"1\">— 11) {%ehrend%} oder {%dienend nahen, verehren; Ehre erzeigen; sich anhänglich zeigen%}: {#na\\ma\\sviTina\\ upa^ sva\\rAja^mAsate#}\n<ls>ṚV. 1,36,7.</ls…",
+   "sense_tag": "11",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 31,
+   "de_anchor": "<div n=\"1\">— 12) {%ehren, achten, anerkennen%}: {#u\\pAsa^te pra\\Siza\\M yasya^ de\\vAH#}\n<ls>ṚV. 10,121,2.</ls> {#de\\vA BA\\gaM yaTA\\ pUrve^ saMjAnA\\nA u\\pAsa^te#}…",
+   "sense_tag": "12",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 32,
+   "de_anchor": "<div n=\"1\">— 13) {%achten%} so <ab>v. a.</ab> {%dafür halten, dafür erkennen%}: {#kaM te jye\\zWamupA^sate#}\n<ls>AV. 11,8,5.</ls> {#va\\SAM mf\\tyumupA^sate#}\n<ls …",
+   "sense_tag": "13",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 33,
+   "de_anchor": "<div n=\"1\">— 14) {%anwenden, gebrauchen%}: {#virecanaM samyagupAsyamAnam#}\n<ls>SUŚR. 2,187,19.</ls> {#vastiH samyagupAsitaH#}\n<ls n=\"SUŚR. 2,\">196,8.</ls> {#lak…",
+   "sense_tag": "14",
+   "layer": "pwg",
+   "subcard": "_as~~h1_06_upa",
+   "note": "store_row"
+  },
+  {
+   "i": 34,
+   "de_anchor": "<div n=\"p\">— {#paryupa#}\n<div n=\"1\"> 1) {%umsitzen, umgeben, umlagern%}; mit dem <ab>acc.</ab>: {#yaTeha kzuDitA bAlA mAtaraM paryupAsate#}\n<ls>CHĀND. UP. 5,24,…",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_as~~h1_07_paryupa",
+   "note": "store_row"
+  },
+  {
+   "i": 35,
+   "de_anchor": "<div n=\"1\">— 2) {%auf Etwas sitzen%}: {#prAkkUlAnparyupAsInaH#}\n(<ls>KULL.</ls>: = {#prAgagrAndarBAnaDyAsInaH#})\n<ls>M. 2,75.</ls>",
+   "sense_tag": "2",
+   "layer": "pwg",
+   "subcard": "_as~~h1_07_paryupa",
+   "note": "store_row"
+  },
+  {
+   "i": 36,
+   "de_anchor": "<div n=\"1\">— 3) {%umwohnen%}: {#etaccandramasastIrTamfzayaH paryupAsate#}\n<ls>MBH. 3,10412.</ls>",
+   "sense_tag": "3",
+   "layer": "pwg",
+   "subcard": "_as~~h1_07_paryupa",
+   "note": "store_row"
+  },
+  {
+   "i": 37,
+   "de_anchor": "<div n=\"1\">— 4) {%beiwohnen, an Etwas Theil nehmen%}: {#striyo gItasvanaM tasya muditAH paryupAsate#}\n<ls>MBH. 4,574.</ls> {#ete mayA mahAGorAH samgrAmAH paryup…",
+   "sense_tag": "4",
+   "layer": "pwg",
+   "subcard": "_as~~h1_07_paryupa",
+   "note": "store_row"
+  },
+  {
+   "i": 38,
+   "de_anchor": "<div n=\"1\">— 5) {%Jmd dienend nahen, Ehre erzeigen, verehren%}: {#tapasyantamfziM tatra ganDarvI paryupAsata . somadA nAma BadraM te UrmilatanayA tadA#} (ergänz…",
+   "sense_tag": "5",
+   "layer": "pwg",
+   "subcard": "_as~~h1_07_paryupa",
+   "note": "store_row"
+  },
+  {
+   "i": 39,
+   "de_anchor": "<div n=\"p\">— {#samupa#}\n<div n=\"1\"> 1) {%bei einander sitzen%}: {#tUzRIM te samupAsInA na SaktA BAzaRe tadA#}\n<ls>R. 2,105,1.</ls>",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_as~~h1_08_samupa",
+   "note": "store_row"
+  }
+ ],
+ "tm_fuzzy_hits": [
+  {
+   "rank": 1,
+   "key1": "As",
+   "score": 1.0,
+   "match_type": "exact_key1",
+   "n_store_rows": 90,
+   "ru_preview": "{#As#}¦ <lex>interj.</lex> {%der Freude und des Unwillens%}: {#AH#} перед {#ka, pa#} и {#sa#}\n<ls>MṚCCH. 67,3.</ls>\n<ls>…",
+   "reuse_hint": "store_key1_exact"
+  }
+ ],
+ "compound_candidates": [],
+ "citation_normalize": [
+  {
+   "raw": "<ls>MṚCCH. 67,3.</ls>",
+   "normalized": "<ls>MṚCCH. 67,3.</ls>"
+  },
+  {
+   "raw": "<ls>PAÑCAT. 36,21.</ls>",
+   "normalized": "<ls>PAÑCAT. 36,21.</ls>"
+  },
+  {
+   "raw": "<ls n=\"PAÑCAT.\">46,2.</ls>",
+   "normalized": "<ls n=\"PAÑCAT.\">46,2.</ls>"
+  },
+  {
+   "raw": "<ls>HIT. 12,20.</ls>",
+   "normalized": "<ls>HIT. 12,20.</ls>"
+  },
+  {
+   "raw": "<ls n=\"HIT.\">14,21.</ls>",
+   "normalized": "<ls n=\"HIT.\">14,21.</ls>"
+  },
+  {
+   "raw": "<ls n=\"HIT.\">17,16.</ls>",
+   "normalized": "<ls n=\"HIT.\">17,16.</ls>"
+  },
+  {
+   "raw": "<ls n=\"HIT.\">23,10.</ls>",
+   "normalized": "<ls n=\"HIT.\">23,10.</ls>"
+  },
+  {
+   "raw": "<ls>ŚĀK. CH. 16,3.</ls>",
+   "normalized": "<ls>ŚĀK. CH. 16,3.</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚĀK. CH.\">69,6.</ls>",
+   "normalized": "<ls n=\"ŚĀK. CH.\">69,6.</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚĀK. CH.\">107,1.</ls>",
+   "normalized": "<ls n=\"ŚĀK. CH.\">107,1.</ls>"
+  },
+  {
+   "raw": "<ls>PRAB. 5,18. 22,11. 24,7. 31,10. 72,11. 111,16.</ls>",
+   "normalized": "<ls>PRAB. 5,18. 22,11. 24,7. 31,10. 72,11. 111,16.</ls>"
+  },
+  {
+   "raw": "<ls>VID. 105.</ls>",
+   "normalized": "<ls>VID. 105.</ls>"
+  },
+  {
+   "raw": "<ls>ŚĀK. 94,1</ls>",
+   "normalized": "<ls>ŚĀK. 94,1</ls>"
+  },
+  {
+   "raw": "<ls>MṚCCH. 63,12.</ls>",
+   "normalized": "<ls>MṚCCH. 63,12.</ls>"
+  },
+  {
+   "raw": "<ls>PRAB. 29,9.</ls>",
+   "normalized": "<ls>PRAB. 29,9.</ls>"
+  },
+  {
+   "raw": "<ls>MṚCCH. 126,2. 146,19.</ls>",
+   "normalized": "<ls>MṚCCH. 126,2. 146,19.</ls>"
+  },
+  {
+   "raw": "<ls>MṚCCH. 132,5.</ls>",
+   "normalized": "<ls>MṚCCH. 132,5.</ls>"
+  },
+  {
+   "raw": "<ls>ŚĀK. 44,12.</ls>",
+   "normalized": "<ls>ŚĀK. 44,12.</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚĀK.\">85,15</ls>",
+   "normalized": "<ls n=\"ŚĀK.\">85,15</ls>"
+  },
+  {
+   "raw": "<ls>PRAB. 111,15.</ls>",
+   "normalized": "<ls>PRAB. 111,15.</ls>"
+  },
+  {
+   "raw": "<ls>AK. 3,4,32,1.</ls>",
+   "normalized": "<ls>AK. 3,4,32,1.</ls>"
+  },
+  {
+   "raw": "<ls>H. an. 7,2.</ls>",
+   "normalized": "<ls>H. an. 7,2.</ls>"
+  },
+  {
+   "raw": "<ls>MED. avy. 79.</ls>",
+   "normalized": "<ls>MED. avy. 79.</ls>"
+  },
+  {
+   "raw": "<ls>HARṢAC. 126,9</ls>",
+   "normalized": "<ls>HARṢAC. 126,9</ls>"
+  },
+  {
+   "raw": "<ls>HEMĀDRI 1,35,20</ls>",
+   "normalized": "<ls>HEMĀDRI 1,35,20</ls>"
+  },
+  {
+   "raw": "<ls>R. ed. Bomb. 4,54,16</ls>",
+   "normalized": "<ls>R. ed. Bomb. 4,54,16</ls>"
+  },
+  {
+   "raw": "<ls>R. 1,72,15</ls>",
+   "normalized": "<ls>R. 1,72,15</ls>"
+  },
+  {
+   "raw": "<ls>MBH. 3,10036</ls>",
+   "normalized": "<ls>MBH. 3,10036</ls>"
+  },
+  {
+   "raw": "<ls>P. 3,1,87.</ls>",
+   "normalized": "<ls>P. 3,1,87.</ls>"
+  },
+  {
+   "raw": "<ls>VOP. 8,55.</ls>",
+   "normalized": "<ls>VOP. 8,55.</ls>"
+  },
+  {
+   "raw": "<ls n=\"VOP.\">9,39</ls>",
+   "normalized": "<ls n=\"VOP.\">9,39</ls>"
+  },
+  {
+   "raw": "<ls>P. 7,2,83.</ls>",
+   "normalized": "<ls>P. 7,2,83.</ls>"
+  },
+  {
+   "raw": "<ls>VOP. 26,138</ls>",
+   "normalized": "<ls>VOP. 26,138</ls>"
+  },
+  {
+   "raw": "<ls>R. 2,97,3.</ls>",
+   "normalized": "<ls>R. 2,97,3.</ls>"
+  },
+  {
+   "raw": "<ls n=\"R.\">4,10,7</ls>",
+   "normalized": "<ls n=\"R.\">4,10,7</ls>"
+  },
+  {
+   "raw": "<ls>DHĀTUP. 24,11.</ls>",
+   "normalized": "<ls>DHĀTUP. 24,11.</ls>"
+  },
+  {
+   "raw": "<ls>ṚV. 7,55,6.</ls>",
+   "normalized": "<ls>ṚV. 7,55,6.</ls>"
+  },
+  {
+   "raw": "<ls n=\"ṚV. 7,\">32,2.</ls>",
+   "normalized": "<ls n=\"ṚV. 7,\">32,2.</ls>"
+  },
+  {
+   "raw": "<ls>AV. 18,3,70.</ls>",
+   "normalized": "<ls>AV. 18,3,70.</ls>"
+  },
+  {
+   "raw": "<ls n=\"AV.\">10,10,12.</ls>",
+   "normalized": "<ls n=\"AV.\">10,10,12.</ls>"
+  }
+ ],
+ "hard_flags": {
+  "polysemy": true,
+  "no_pwg": false,
+  "monster_length": true,
+  "notes": [
+   "de_source=store",
+   "polysemy: n_senses=40 >= 6",
+   "monster: de_bytes=35788 key1_len=2"
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "full_worker",
+ "det": {
+  "ok": true,
+  "gate": "full",
+  "issues": [],
+  "coverage": 1,
+  "claude": false,
+  "n_skeleton_tokens": 0,
+  "source_senses": 40,
+  "had_draft_card": true
+ },
+ "tm_fence": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "step": "[4] same promoter + TM fence",
+  "note": "TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM",
+  "n_hits_ranked": 1
+ },
+ "store_write": false
+}

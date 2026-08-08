@@ -134,3 +134,8 @@ progress_dashboard/windows/*.log
 # H1657: regenerable in seconds from p2_agent_verdicts.jsonl.gz, ~5 MB each
 HeadwordLists/works_catalogue/p2_agent_decisions.json
 HeadwordLists/works_catalogue/p2_gated_decisions.json
+
+# H2489 bulk prep sidecars (local fill; samples committed under prep_samples_h2489/)
+RussianTranslation/prep/
+RussianTranslation/src/pilot/h1210/prep/spike*/
+
