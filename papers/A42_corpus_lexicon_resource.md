@@ -10,7 +10,7 @@ data_source: "RussianTranslation/src/corpus_lexicon.jsonl (built & verified; 1,0
 
 # A Word-Aligned Sanskrit→Russian Corpus Lexicon: a 1.09-Million-Pair Open Alignment Resource
 
-_Created: 26-06-2026 · Last updated: 08-07-2026_
+_Created: 26-06-2026 · Last updated: 08-08-2026_
 
 > **Draft status (2026-07-08, H353; scaffolded 2026-06-26).** Manuscript skeleton built
 > directly on the verified data asset
@@ -30,13 +30,14 @@ _Created: 26-06-2026 · Last updated: 08-07-2026_
 > resource stated explicitly, in contrast with A41's deterministic extraction (§3.6);
 > claim→artifact inventory (§9) and companion-paper scope block (§10) added;
 > References (§11); all links upgraded to full blob URLs.
-> **Open before submission:** (1) **[@DO]** document the IP / redistribution rights of
-> the underlying modern Russian translations before any public deposit (what the 1.09M
-> pairs derive from and what ships openly — §6, §8); (2) **[@DO]** mint a Zenodo DOI
-> once the rights scope is fixed; (3) venue + byline/ORCID (a human decides); (4) both
-> precision and recall are **LLM-judged estimates until the human gold packets land**
-> (annotator recruit is a standing @DO) — the frozen scaffolds are committed and
-> re-checkable, but no number below may be cited as print-grade before that pass.
+> **Open before submission:** (1) ~~rights ship triage~~ **CLOSED 08-08-2026 (MG, H2440):
+> ship all** RU-derived layers; translators documented in
+> [RIGHTS_APPROVALS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RIGHTS_APPROVALS.md)
+> + [A41_TRANSLATORS.md](https://github.com/gasyoun/SamudraManthanam/blob/main/papers/data/A41_TRANSLATORS.md)
+> — never reask; (2) **[@DO]** mint a Zenodo DOI; (3) venue + byline/ORCID (a human
+> decides); (4) both precision and recall are **LLM-judged estimates until the human gold
+> packets land** (annotator recruit is a standing @DO) — the frozen scaffolds are
+> committed and re-checkable, but no number below may be cited as print-grade before that pass.
 
 ## Abstract
 
