@@ -17,6 +17,7 @@
     "hard_flags",
     "ru_skeleton",
     "route_hint",
+    "det",
     "store_write"
   ],
   "properties": {
@@ -102,6 +103,21 @@
     },
     "route_hint": {
       "enum": ["controller_only", "full_worker", "prep_only", "park"]
+    },
+    "det": {
+      "type": "object",
+      "description": "Free det_gate result (no Claude). prep-level always; full H1210 twin when a draft card exists.",
+      "required": ["ok", "gate", "issues", "claude"],
+      "properties": {
+        "ok": { "type": ["boolean", "null"] },
+        "gate": { "enum": ["prep", "full", "skipped", null] },
+        "issues": { "type": "array", "items": { "type": "string" } },
+        "coverage": { "type": ["number", "null"] },
+        "claude": { "const": false },
+        "n_skeleton_tokens": { "type": ["integer", "null"] },
+        "source_senses": { "type": ["integer", "null"] },
+        "had_draft_card": { "type": ["boolean", "null"] }
+      }
     },
     "store_write": {
       "const": false,
