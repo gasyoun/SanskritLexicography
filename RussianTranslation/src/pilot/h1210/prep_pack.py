@@ -5,7 +5,7 @@ Lane map §3.1 step [2]::
 
     [2] Flash PREP (cheap, parallel)
           → prep/{key}.json  (senses, TM hits, flags, optional draft)
-          → free det_gate path (no Claude)
+          → free det_gate (no Claude)   ← this module's gate pass
           → NEVER the TM store (R4.3a)
 
 What each sidecar carries
@@ -16,18 +16,31 @@ What each sidecar carries
 * **citation_normalize** — raw ``<ls>…</ls>`` spans from DE text
 * **compound_candidates** — crude SLP1 compound-head guesses (heuristic only)
 * **ru_skeleton** — optional RU draft seeds (Flash ``--live`` only; never promoted)
+* **det** — free det_gate result (``prep``-level always; full H1210 twin when a draft card exists)
+
+Free det_gate (no Claude)
+-------------------------
+Always runs after fill/live (``--no-gate`` to skip). Two layers, both free:
+
+1. **prep-level** — no card shape required: empty inventory, skeleton/draft length
+   mismatch, park-on-no-DE.
+2. **full** — when a draft card (``--draft-card`` / store-assembled / skeleton+ru) is
+   available, runs ``det_gate.deterministic_audit`` (same twin as arm B) with zero
+   Claude spend. Clean full gate → ``route_hint=controller_only``; issues →
+   ``full_worker`` (never auto-promote).
 
 Modes
 -----
-* **fill** (default when ``--payload`` / ``--store`` given): free deterministic fill
-* **dry**: key-only skeleton (no DE/TM sources)
-* **live**: fill first, then optional Flash call for ``ru_skeleton`` / route_hint
+* **fill** (default when ``--payload`` / ``--store`` given): free deterministic fill + gate
+* **dry**: key-only skeleton (no DE/TM sources) + gate
+* **live**: fill first, then optional Flash call for ``ru_skeleton`` / route_hint + gate
 
 Usage
 -----
   python src/pilot/h1210/prep_pack.py --worklist … --out-dir prep --store PATH
   python src/pilot/h1210/prep_pack.py --payload slice_payload.json --out-dir prep
   python src/pilot/h1210/prep_pack.py --keys a,b --out-dir prep --live --workers 8
+  python src/pilot/h1210/prep_pack.py --gate-only --out-dir prep   # re-gate existing sidecars
   python src/pilot/h1210/prep_pack.py --selftest
 
 Org map: Uprava docs/DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08.md §3.1.
@@ -57,6 +70,7 @@ if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
 import deepseek_arm as ds  # noqa: E402
+import det_gate  # noqa: E402 — free Python twin of the H1209 JS gate (no Claude)
 
 SCHEMA_ID = 'pwg.prep_pack.v1'
 SCHEMA_PATH = os.path.join(HERE, 'prep_pack.schema.json')
@@ -117,6 +131,13 @@ def empty_pack(key1: str, *, model: str | None = None, mode: str = 'dry') -> dic
         },
         'ru_skeleton': None,
         'route_hint': 'prep_only',
+        'det': {
+            'ok': None,
+            'gate': None,       # 'prep' | 'full' | 'skipped'
+            'issues': [],
+            'coverage': None,
+            'claude': False,    # hard invariant — never Claude on this path
+        },
         'store_write': False,
     }
 
@@ -425,7 +446,8 @@ def tm_fuzzy_hits(key1: str, store_idx: dict, top: int = TM_FUZZY_TOP) -> list[d
     return hits
 
 
-def apply_hard_flags(pack: dict, *, card: dict | None, slot: dict | None) -> None:
+def apply_hard_flags(pack: dict, *, card: dict | None, slot: dict | None,
+                     has_de_source: bool = False) -> None:
     hf = pack['hard_flags']
     notes = hf['notes']
     n_senses = len(pack['sense_inventory'])
@@ -442,12 +464,9 @@ def apply_hard_flags(pack: dict, *, card: dict | None, slot: dict | None) -> Non
             n_senses = max(n_senses, cx['n_senses'])
         if cx.get('complex'):
             notes.append('payload complexity.complex=true score=%s' % cx.get('score'))
-        if card.get('source_senses') is None and not slot:
-            hf['no_pwg'] = True
-            notes.append('no source_senses in payload and no store rows')
-    if not slot and not card:
+    if not has_de_source and not slot and not card and n_senses == 0:
         hf['no_pwg'] = True
-        notes.append('no DE source (no store row, no payload card)')
+        notes.append('no DE source (no store row, no payload card, no raw/translate)')
     if slot and 'pwg' not in layers and layers:
         # has store rows but none from pwg layer
         notes.append('store layers=%s (no pwg)' % ','.join(sorted(layers)))
@@ -457,7 +476,7 @@ def apply_hard_flags(pack: dict, *, card: dict | None, slot: dict | None) -> Non
     if de_bytes >= MONSTER_BYTES or len(pack['key1']) >= 24:
         hf['monster_length'] = True
         notes.append('monster: de_bytes=%d key1_len=%d' % (de_bytes, len(pack['key1'])))
-    # route
+    # provisional route — apply_det_gate may refine
     if hf['monster_length'] or (hf['polysemy'] and n_senses >= 12):
         pack['route_hint'] = 'full_worker'
     elif hf['no_pwg'] and n_senses == 0:
@@ -468,8 +487,154 @@ def apply_hard_flags(pack: dict, *, card: dict | None, slot: dict | None) -> Non
         pack['route_hint'] = 'prep_only'
 
 
+# --------------------------------------------------------------------------- free det_gate (no Claude)
+
+def skeleton_tokens_from_text(text: str) -> list[str]:
+    return det_gate.TOK.findall(str(text or ''))
+
+
+def slice_context_for_gate(pack: dict, payload_card: dict | None) -> dict:
+    """Build the `c` dict det_gate.deterministic_audit expects (prep_slice shape)."""
+    tokens = []
+    source_senses = len(pack.get('sense_inventory') or [])
+    if payload_card:
+        tokens = list(payload_card.get('skeleton_tokens') or [])
+        if isinstance(payload_card.get('source_senses'), int):
+            source_senses = payload_card['source_senses']
+        if not tokens and payload_card.get('card_block'):
+            tokens = skeleton_tokens_from_text(payload_card['card_block'])
+    if not tokens:
+        # fall back to tokens embedded in DE anchors
+        for s in pack.get('sense_inventory') or []:
+            tokens.extend(skeleton_tokens_from_text(s.get('de_anchor') or ''))
+    return {
+        'key1': pack['key1'],
+        'skeleton_tokens': tokens,
+        'source_senses': source_senses,
+    }
+
+
+def draft_card_from_store(slot: dict, key1: str) -> dict | None:
+    """Assemble a card-shaped draft from store rows (german=de, russian=ru). Free."""
+    rows = slot.get('rows') or []
+    if not rows:
+        return None
+    senses = []
+    for row in rows:
+        senses.append({
+            'tag': str(row.get('sense_tag') or len(senses) + 1),
+            'german': row.get('de') or '',
+            'russian': row.get('ru') or '',
+        })
+    return {'key1': key1, 'records': [{'grammar': '', 'senses': senses}], 'notes': ''}
+
+
+def draft_card_from_skeleton(pack: dict) -> dict | None:
+    """Assemble a draft card from sense DE anchors + ru_skeleton (Flash seeds)."""
+    inv = pack.get('sense_inventory') or []
+    skel = pack.get('ru_skeleton')
+    if not inv:
+        return None
+    if not isinstance(skel, list) or not skel:
+        return None
+    senses = []
+    for i, s in enumerate(inv):
+        ru = skel[i] if i < len(skel) else ''
+        senses.append({
+            'tag': str(s.get('sense_tag') or s.get('i') or i + 1),
+            'german': s.get('de_anchor') or '',
+            'russian': ru if isinstance(ru, str) else str(ru or ''),
+        })
+    return {'key1': pack['key1'], 'records': [{'grammar': '', 'senses': senses}], 'notes': ''}
+
+
+def prep_level_gate(pack: dict) -> list[str]:
+    """Free prep-level checks — no card shape, no Claude, no network."""
+    issues = []
+    inv = pack.get('sense_inventory') or []
+    hf = pack.get('hard_flags') or {}
+    if hf.get('no_pwg') and not inv:
+        issues.append('prep: no_pwg and empty sense_inventory — park')
+    if inv and all(not (s.get('de_anchor') or '').strip() for s in inv):
+        issues.append('prep: sense_inventory present but every de_anchor is empty')
+    skel = pack.get('ru_skeleton')
+    if isinstance(skel, list) and skel and inv:
+        if len(skel) < len(inv):
+            issues.append('prep: ru_skeleton length %d < sense_inventory %d'
+                          % (len(skel), len(inv)))
+        # empty skeleton slots
+        empty = sum(1 for x in skel if not str(x or '').strip())
+        if empty:
+            issues.append('prep: ru_skeleton has %d empty slot(s)' % empty)
+    return issues
+
+
+def apply_det_gate(pack: dict, *, payload_card: dict | None = None,
+                   store_slot: dict | None = None,
+                   draft_card: dict | None = None) -> dict:
+    """Run free det_gate layers; mutate pack['det'] + refine route_hint. No Claude."""
+    prep_issues = prep_level_gate(pack)
+    ctx = slice_context_for_gate(pack, payload_card)
+
+    # Prefer an explicit draft, else assemble from store, else skeleton+ru.
+    card = draft_card
+    if card is None and store_slot:
+        card = draft_card_from_store(store_slot, pack['key1'])
+    if card is None:
+        card = draft_card_from_skeleton(pack)
+
+    full = None
+    gate = 'prep'
+    if card is not None:
+        full = det_gate.deterministic_audit(card, ctx, field='russian')
+        gate = 'full'
+        issues = list(prep_issues) + list(full.get('issues') or [])
+        coverage = full.get('coverage')
+    else:
+        issues = list(prep_issues)
+        coverage = None
+        # With no draft card, empty issues + senses present → prep ok
+        if not issues and (pack.get('sense_inventory') or pack.get('route_hint') == 'park'):
+            pass
+
+    ok = len(issues) == 0
+    # Park is a deliberate non-ok for the router when no DE, but det.ok tracks gate cleanliness
+    if pack.get('route_hint') == 'park' and not (pack.get('sense_inventory') or []):
+        ok = False
+        if 'prep: no_pwg and empty sense_inventory — park' not in issues:
+            issues.append('prep: no_pwg and empty sense_inventory — park')
+
+    pack['det'] = {
+        'ok': ok,
+        'gate': gate,
+        'issues': issues[:30],
+        'coverage': coverage,
+        'claude': False,
+        'n_skeleton_tokens': len(ctx.get('skeleton_tokens') or []),
+        'source_senses': ctx.get('source_senses'),
+        'had_draft_card': card is not None,
+    }
+
+    # Refine route from free gate (map [3] Router inputs)
+    hf = pack.get('hard_flags') or {}
+    if pack.get('route_hint') == 'park':
+        pass  # stay parked
+    elif hf.get('monster_length') or (hf.get('polysemy') and len(pack.get('sense_inventory') or []) >= 12):
+        pack['route_hint'] = 'full_worker'
+    elif ok and card is not None and gate == 'full':
+        pack['route_hint'] = 'controller_only'
+    elif ok and pack.get('sense_inventory'):
+        pack['route_hint'] = 'prep_only' if not pack.get('ru_skeleton') else 'controller_only'
+    elif not ok:
+        pack['route_hint'] = 'full_worker' if pack.get('sense_inventory') else 'park'
+
+    pack['store_write'] = False
+    return pack
+
+
 def fill_one(key1: str, *, model: str, payload_idx: dict, store_idx: dict,
-             mode: str = 'fill', input_dir: str | None = None) -> dict:
+             mode: str = 'fill', input_dir: str | None = None,
+             run_gate: bool = True) -> dict:
     pack = empty_pack(key1, model=model, mode=mode)
     card = payload_idx.get(key1)
     slot = (store_idx.get('by_key') or {}).get(key1)
@@ -509,7 +674,15 @@ def fill_one(key1: str, *, model: str, payload_idx: dict, store_idx: dict,
             'n_senses': len(pack['sense_inventory']),
             'layers': set(),
         }
-    apply_hard_flags(pack, card=card, slot=flag_slot)
+    apply_hard_flags(pack, card=card, slot=flag_slot,
+                     has_de_source=bool(de_src or slot or card))
+    if run_gate:
+        apply_det_gate(pack, payload_card=card, store_slot=slot)
+    else:
+        pack['det'] = {
+            'ok': None, 'gate': 'skipped', 'issues': [], 'coverage': None,
+            'claude': False,
+        }
     pack['store_write'] = False
     return pack
 
@@ -530,16 +703,17 @@ def write_pack(out_dir: str, pack: dict) -> str:
 
 def produce_fill(keys: list[str], out_dir: str, model: str,
                  payload_idx: dict, store_idx: dict,
-                 input_dir: str | None = None) -> list[str]:
+                 input_dir: str | None = None, run_gate: bool = True) -> list[str]:
     paths = []
     for k in keys:
         pack = fill_one(k, model=model, payload_idx=payload_idx, store_idx=store_idx,
-                        mode='fill', input_dir=input_dir)
+                        mode='fill', input_dir=input_dir, run_gate=run_gate)
         paths.append(write_pack(out_dir, pack))
     return paths
 
 
-def produce_dry(keys: list[str], out_dir: str, model: str) -> list[str]:
+def produce_dry(keys: list[str], out_dir: str, model: str,
+                run_gate: bool = True) -> list[str]:
     paths = []
     for k in keys:
         pack = empty_pack(k, model=model, mode='dry')
@@ -548,6 +722,13 @@ def produce_dry(keys: list[str], out_dir: str, model: str) -> list[str]:
             pack['hard_flags']['notes'].append('dry: key1 length >= 24 (proxy only)')
             pack['route_hint'] = 'full_worker'
         pack['compound_candidates'] = compound_candidates_from_key(k)
+        if run_gate:
+            apply_det_gate(pack, payload_card=None, store_slot=None)
+        else:
+            pack['det'] = {
+                'ok': None, 'gate': 'skipped', 'issues': [], 'coverage': None,
+                'claude': False,
+            }
         paths.append(write_pack(out_dir, pack))
     return paths
 
@@ -612,7 +793,7 @@ def _flash_draft_for_pack(client: ds.DeepSeek, pack: dict) -> dict:
     notes = obj.get('hard_flag_notes')
     if isinstance(notes, list):
         pack['hard_flags']['notes'].extend(str(n) for n in notes)
-    # If Flash returned a draft and route not park/full, prefer controller_only.
+    # Provisional route only — free det_gate re-runs after live and is authoritative.
     if pack.get('ru_skeleton') and pack['route_hint'] == 'prep_only':
         pack['route_hint'] = 'controller_only'
     pack['store_write'] = False
@@ -621,7 +802,7 @@ def _flash_draft_for_pack(client: ds.DeepSeek, pack: dict) -> dict:
 
 def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None,
                  payload_idx: dict, store_idx: dict, workers: int = 6,
-                 input_dir: str | None = None) -> list[str]:
+                 input_dir: str | None = None, run_gate: bool = True) -> list[str]:
     env = ds.load_env_file(env_file)
     key = os.environ.get('DEEPSEEK_API_KEY') or env.get('DEEPSEEK_API_KEY')
     if not key:
@@ -630,10 +811,10 @@ def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None
             or 'https://api.deepseek.com')
     client = ds.DeepSeek(base, key, model, max_tokens=2048, timeout=120)
 
-    # Deterministic fill first (free), then parallel Flash draft.
+    # Deterministic fill first (free, gate deferred until after Flash draft).
     packs = [
         fill_one(k, model=model, payload_idx=payload_idx, store_idx=store_idx,
-                 mode='live', input_dir=input_dir)
+                 mode='live', input_dir=input_dir, run_gate=False)
         for k in keys
     ]
     workers = max(1, min(workers, 2500))
@@ -657,7 +838,19 @@ def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None
                   flush=True)
     paths = []
     for k in keys:
-        paths.append(write_pack(out_dir, done[k]))
+        pack = done[k]
+        if run_gate:
+            # Free det_gate after draft — no Claude (map §3.1 step [2]).
+            apply_det_gate(
+                pack,
+                payload_card=payload_idx.get(k),
+                store_slot=(store_idx.get('by_key') or {}).get(k),
+            )
+            print('  gate %-24s ok=%s gate=%s issues=%d route=%s'
+                  % (k, pack['det']['ok'], pack['det']['gate'],
+                     len(pack['det']['issues']), pack['route_hint']),
+                  flush=True)
+        paths.append(write_pack(out_dir, pack))
     # Optional cost summary on stderr
     try:
         print('live cost: %s' % json.dumps(client.cost(), ensure_ascii=False), flush=True)
@@ -731,11 +924,18 @@ def selftest() -> int:
         assert p['citation_normalize'], 'ls citation should be extracted'
         assert p['store_write'] is False
         assert p['hard_flags']['polysemy'] is False  # only 2 senses
+        # free det_gate on store-assembled draft (no Claude)
+        assert p['det']['claude'] is False
+        assert p['det']['gate'] == 'full'
+        assert p['det']['had_draft_card'] is True
+        assert isinstance(p['det']['ok'], bool)
 
         p2 = fill_one('lonelyKey', model=ds.DEFAULT_MODEL, payload_idx=pl_idx, store_idx=idx)
         assert len(p2['sense_inventory']) == 3
         assert p2['sense_inventory'][0]['note'] == 'payload_source_senses'
         assert any(c['normalized'] for c in p2['citation_normalize'])
+        assert p2['det']['claude'] is False
+        assert p2['det']['gate'] == 'prep'  # no draft card without store/ru_skeleton
 
         # DE raw / translate-style units
         inp = os.path.join(td, 'input')
@@ -748,6 +948,42 @@ def selftest() -> int:
         assert len(p4['sense_inventory']) >= 2
         assert p4['citation_normalize']
         assert p4['store_write'] is False
+        assert p4['det']['claude'] is False
+
+        # full det_gate with skeleton tokens + ru_skeleton draft
+        p_draft = empty_pack('tokKey', mode='fill')
+        p_draft['sense_inventory'] = [
+            {'i': 0, 'de_anchor': '{T1} {%a%}', 'sense_tag': '1'},
+            {'i': 1, 'de_anchor': '{T2} {%b%}', 'sense_tag': '2'},
+        ]
+        p_draft['ru_skeleton'] = ['{T1} а', '{T2} б']
+        apply_det_gate(
+            p_draft,
+            payload_card={
+                'skeleton_tokens': ['{T1}', '{T2}'],
+                'source_senses': 2,
+            },
+        )
+        assert p_draft['det']['gate'] == 'full'
+        assert p_draft['det']['claude'] is False
+        assert p_draft['det']['ok'] is True, p_draft['det']['issues']
+        assert p_draft['route_hint'] == 'controller_only'
+
+        # sense shortfall on full gate
+        p_short = empty_pack('shortKey', mode='fill')
+        p_short['sense_inventory'] = [
+            {'i': 0, 'de_anchor': '{T1} x', 'sense_tag': '1'},
+            {'i': 1, 'de_anchor': '{T2} y', 'sense_tag': '2'},
+        ]
+        p_short['ru_skeleton'] = ['{T1} only']  # length mismatch prep issue + short card
+        apply_det_gate(
+            p_short,
+            payload_card={'skeleton_tokens': ['{T1}', '{T2}'], 'source_senses': 2},
+        )
+        assert p_short['det']['ok'] is False
+        assert p_short['det']['claude'] is False
+        assert any('prep: ru_skeleton length' in i or 'sense-shortfall' in i
+                   or 'translation-fidelity' in i for i in p_short['det']['issues'])
 
         # compound heuristic
         assert compound_candidates_from_key('devaputra')
@@ -755,6 +991,7 @@ def selftest() -> int:
         p3 = fill_one('aVeryLongHeadwordProxyTokenXX', model=ds.DEFAULT_MODEL,
                       payload_idx={}, store_idx={'by_key': {}, 'all_keys': []})
         assert p3['hard_flags']['monster_length'] is True
+        assert p3['det']['claude'] is False
         bad = empty_pack('x')
         bad['store_write'] = True
         try:
@@ -770,8 +1007,12 @@ def selftest() -> int:
         assert disk['schema'] == SCHEMA_ID
         assert disk['store_write'] is False
         assert disk['sense_inventory']
+        assert disk['det']['claude'] is False
 
-    print('prep_pack selftest: PASS (fill senses/TM/flags/citations/raw, R4.3a fence)')
+        # det_gate twin still green (returns 0 = all checks passed)
+        assert det_gate.selftest() == 0
+
+    print('prep_pack selftest: PASS (fill + free det_gate no-Claude, R4.3a fence)')
     return 0
 
 
@@ -797,12 +1038,38 @@ def main(argv=None) -> int:
                     help='key-only skeleton, ignore store/payload content')
     ap.add_argument('--live', action='store_true',
                     help='fill + Flash optional draft; still sidecar-only')
+    ap.add_argument('--no-gate', action='store_true',
+                    help='skip free det_gate (default: always run, no Claude)')
+    ap.add_argument('--gate-only', action='store_true',
+                    help='re-run free det_gate on existing prep/{key}.json under --out-dir')
     ap.add_argument('--selftest', action='store_true')
     args = ap.parse_args(argv)
     if args.selftest:
         return selftest()
     if not args.out_dir:
         ap.error('--out-dir is required (writes prep sidecars only; never the TM store)')
+    run_gate = not args.no_gate
+
+    if args.gate_only:
+        # Re-gate existing sidecars only (free, no Claude, no store write).
+        n_ok = n_bad = 0
+        for name in sorted(os.listdir(args.out_dir)):
+            if not name.endswith('.json'):
+                continue
+            path = os.path.join(args.out_dir, name)
+            pack = json.load(open(path, encoding='utf-8'))
+            apply_det_gate(pack)
+            write_pack(args.out_dir, pack)
+            if pack['det']['ok']:
+                n_ok += 1
+            else:
+                n_bad += 1
+            print('  gate %-24s ok=%s issues=%d route=%s'
+                  % (pack['key1'], pack['det']['ok'], len(pack['det']['issues']),
+                     pack['route_hint']), flush=True)
+        print('gate-only: ok=%d fail=%d (claude=never)' % (n_ok, n_bad))
+        return 0
+
     keys = load_keys(args)
     if not keys:
         ap.error('no keys — pass --worklist, --payload, --keys-file, or --keys')
@@ -842,19 +1109,19 @@ def main(argv=None) -> int:
     if args.live:
         paths = produce_live(keys, args.out_dir, model, args.env_file,
                              payload_idx, store_idx, workers=args.workers,
-                             input_dir=input_dir)
+                             input_dir=input_dir, run_gate=run_gate)
         mode = 'live'
     elif args.dry:
-        paths = produce_dry(keys, args.out_dir, model)
+        paths = produce_dry(keys, args.out_dir, model, run_gate=run_gate)
         mode = 'dry'
     else:
         # fill even if store empty — DE raw / translate may still supply senses
         paths = produce_fill(keys, args.out_dir, model, payload_idx, store_idx,
-                             input_dir=input_dir)
+                             input_dir=input_dir, run_gate=run_gate)
         mode = 'fill'
 
     # Summary
-    n_senses = n_tm = n_flag = 0
+    n_senses = n_tm = n_flag = n_gate_ok = n_gate_fail = 0
     for p in paths:
         row = json.load(open(p, encoding='utf-8'))
         n_senses += len(row.get('sense_inventory') or [])
@@ -862,10 +1129,18 @@ def main(argv=None) -> int:
         hf = row.get('hard_flags') or {}
         if hf.get('polysemy') or hf.get('monster_length') or hf.get('no_pwg'):
             n_flag += 1
+        det = row.get('det') or {}
+        if det.get('ok') is True:
+            n_gate_ok += 1
+        elif det.get('ok') is False:
+            n_gate_fail += 1
+        assert det.get('claude') is not True, 'det_gate path must never claim Claude'
     print('prep_pack %s: wrote %d sidecar(s) under %s (store_write=never)'
           % (mode, len(paths), args.out_dir))
     print('  senses_total=%d tm_hits_total=%d keys_with_any_hard_flag=%d'
           % (n_senses, n_tm, n_flag))
+    print('  free det_gate: ok=%d fail=%d claude=never'
+          % (n_gate_ok, n_gate_fail))
     for p in paths[:5]:
         print('  ', p)
     if len(paths) > 5:
