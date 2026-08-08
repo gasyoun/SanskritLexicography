@@ -18,6 +18,7 @@
     "ru_skeleton",
     "route_hint",
     "det",
+    "tm_fence",
     "store_write"
   ],
   "properties": {
@@ -59,6 +60,7 @@
     },
     "tm_fuzzy_hits": {
       "type": "array",
+      "description": "Step [2]b TM fuzzy rank — READ-ONLY reuse candidates (not the TM fence)",
       "items": {
         "type": "object",
         "additionalProperties": true,
@@ -66,10 +68,28 @@
           "rank": { "type": "integer" },
           "key1": { "type": "string" },
           "score": { "type": "number" },
-          "match_type": { "type": "string" },
+          "match_type": {
+            "type": "string",
+            "description": "exact_content_sha | exact_key1 | key1_difflib"
+          },
           "n_store_rows": { "type": ["integer", "null"] },
-          "ru_preview": { "type": ["string", "null"] }
+          "ru_preview": { "type": ["string", "null"] },
+          "reuse_hint": { "type": "string" },
+          "raw_sha256": { "type": "string" }
         }
+      }
+    },
+    "tm_fence": {
+      "type": "object",
+      "description": "Step [4] TM fence declaration (R4.3a). Prep never may_write.",
+      "required": ["may_write", "writer", "rule"],
+      "properties": {
+        "may_write": { "const": false },
+        "writer": { "const": "promoter_only" },
+        "rule": { "const": "R4.3a" },
+        "step": { "type": "string" },
+        "note": { "type": "string" },
+        "n_hits_ranked": { "type": "integer" }
       }
     },
     "compound_candidates": {

@@ -1,47 +1,41 @@
 #!/usr/bin/env python
 r"""Flash PREP — map mode A: cheap prep sidecars before Opus (H2439 + fill).
 
-Lane map §3.1 step [2]::
+Lane map §3.1 — order that matters::
 
-    [2] Flash PREP (cheap, parallel)
-          → prep/{key}.json  (senses, TM hits, flags, optional draft)
-          → free det_gate (no Claude)   ← this module's gate pass
-          → NEVER the TM store (R4.3a)
+    [1] Queue head (manifest keys)
+           │
+    [2] Flash PREP  (THIS MODULE — read-only context)
+           │  a. sense inventory
+           │  b. TM fuzzy rank  →  tm_fuzzy_hits[]   ← READ-ONLY reuse candidates
+           │  c. compound / citation / hard-flags
+           │  d. optional RU skeleton (Flash --live)
+           │  e. free det_gate (no Claude)
+           │  ⛔  never writes the TM store
+           │
+    [3] Router  (controller_only | full_worker | park)
+           │
+    [4] Same promoter + TM FENCE  (R4.3a)  ← NOT this module
+           │  only the promoter path may write TM
+           │  prep/Flash/det_gate never do
+
+TM fuzzy rank  vs  TM fence  (do not conflate)
+----------------------------------------------
+* **TM fuzzy rank** (step [2]b, here): ranked *hits* for "reuse vs invent".
+  Output field ``tm_fuzzy_hits``. Read-only. Looking at the store/TM sidecars is fine.
+* **TM fence** (step [4], promoter): the *write* barrier. Declared on every sidecar as
+  ``tm_fence.may_write=false`` / ``writer=promoter_only``. Flash PREP must never clear it.
 
 What each sidecar carries
 -------------------------
-* **sense_inventory** — N senses with DE anchors (from slice payload and/or store rows)
-* **tm_fuzzy_hits** — ranked reuse candidates (exact key1 first, then difflib key1 neighbors)
-* **hard_flags** — polysemy / no_pwg / monster_length (+ notes)
-* **citation_normalize** — raw ``<ls>…</ls>`` spans from DE text
-* **compound_candidates** — crude SLP1 compound-head guesses (heuristic only)
-* **ru_skeleton** — optional RU draft seeds (Flash ``--live`` only; never promoted)
-* **det** — free det_gate result (``prep``-level always; full H1210 twin when a draft card exists)
+* **sense_inventory** — N senses with DE anchors
+* **tm_fuzzy_hits** — ranked TM hits (exact content-addressed / exact key1 / key1 difflib)
+* **tm_fence** — R4.3a declaration (always may_write=false from this tool)
+* **hard_flags** / **citation_normalize** / **compound_candidates**
+* **ru_skeleton** — optional Flash draft seeds (never promoted from here)
+* **det** — free det_gate (prep-level + full twin when draft card exists; claude=false)
 
-Free det_gate (no Claude)
--------------------------
-Always runs after fill/live (``--no-gate`` to skip). Two layers, both free:
-
-1. **prep-level** — no card shape required: empty inventory, skeleton/draft length
-   mismatch, park-on-no-DE.
-2. **full** — when a draft card (``--draft-card`` / store-assembled / skeleton+ru) is
-   available, runs ``det_gate.deterministic_audit`` (same twin as arm B) with zero
-   Claude spend. Clean full gate → ``route_hint=controller_only``; issues →
-   ``full_worker`` (never auto-promote).
-
-Modes
------
-* **fill** (default when ``--payload`` / ``--store`` given): free deterministic fill + gate
-* **dry**: key-only skeleton (no DE/TM sources) + gate
-* **live**: fill first, then optional Flash call for ``ru_skeleton`` / route_hint + gate
-
-Usage
------
-  python src/pilot/h1210/prep_pack.py --worklist … --out-dir prep --store PATH
-  python src/pilot/h1210/prep_pack.py --payload slice_payload.json --out-dir prep
-  python src/pilot/h1210/prep_pack.py --keys a,b --out-dir prep --live --workers 8
-  python src/pilot/h1210/prep_pack.py --gate-only --out-dir prep   # re-gate existing sidecars
-  python src/pilot/h1210/prep_pack.py --selftest
+Modes: ``fill`` | ``dry`` | ``live`` (+ ``--gate-only`` / ``--no-gate``).
 
 Org map: Uprava docs/DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08.md §3.1.
 """
@@ -120,6 +114,7 @@ def empty_pack(key1: str, *, model: str | None = None, mode: str = 'dry') -> dic
             },
         },
         'sense_inventory': [],
+        # Step [2]b — TM fuzzy rank (READ-ONLY hits). Not the TM fence.
         'tm_fuzzy_hits': [],
         'compound_candidates': [],
         'citation_normalize': [],
@@ -138,7 +133,15 @@ def empty_pack(key1: str, *, model: str | None = None, mode: str = 'dry') -> dic
             'coverage': None,
             'claude': False,    # hard invariant — never Claude on this path
         },
-        'store_write': False,
+        # Step [4] declaration only — PREP never crosses the fence.
+        'tm_fence': {
+            'may_write': False,
+            'writer': 'promoter_only',
+            'rule': 'R4.3a',
+            'step': '[4] same promoter + TM fence',
+            'note': 'TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM',
+        },
+        'store_write': False,  # alias of tm_fence.may_write for older consumers
     }
 
 
@@ -388,33 +391,130 @@ def compound_candidates_from_key(key1: str) -> list[str]:
     return cands[:5]
 
 
-def tm_fuzzy_hits(key1: str, store_idx: dict, top: int = TM_FUZZY_TOP) -> list[dict]:
-    """Exact store key1 first, then difflib neighbors over the store key universe."""
+def _ru_preview_from_slot(slot: dict | None) -> tuple:
+    """(ru_preview, n_rows) from a store index slot."""
+    if not slot:
+        return None, None
+    ru_preview = None
+    for row in (slot.get('rows') or [])[:1]:
+        ru = (row.get('ru') or '').strip()
+        if ru:
+            ru_preview = ru[:120] + ('…' if len(ru) > 120 else '')
+            break
+    return ru_preview, slot.get('n_senses')
+
+
+def tm_content_addressed_hit(key1: str, input_dir: str | None) -> dict | None:
+    """Exact content-addressed TM hit (lang:raw_sha256) when pilot/input raw exists.
+
+    READ-ONLY. Uses ``translation_memory.lookup`` — never builds/writes TM.
+    """
+    if not input_dir:
+        return None
+    try:
+        from window_common import input_paths, sha256_file  # noqa: WPS433
+        import translation_memory as tm  # noqa: WPS433
+    except Exception:  # noqa: BLE001
+        return None
+    raw_path, _portrait = input_paths(key1, input_dir=input_dir)
+    if not os.path.exists(raw_path):
+        # try safe_name stem
+        try:
+            from safe_filename import safe_name  # noqa: WPS433
+            raw2, _ = input_paths(safe_name(key1), input_dir=input_dir)
+            if os.path.exists(raw2):
+                raw_path = raw2
+            else:
+                return None
+        except Exception:  # noqa: BLE001
+            return None
+    try:
+        raw_sha = sha256_file(raw_path)
+        entry = tm.lookup('ru', raw_sha)
+    except Exception:  # noqa: BLE001
+        return None
+    if not entry:
+        return None
+    # entry is a normalized TM card-ish row
+    ru_preview = None
+    if isinstance(entry, dict):
+        # try common shapes
+        for key in ('russian', 'ru', 'text'):
+            if entry.get(key):
+                t = str(entry[key])
+                ru_preview = t[:120] + ('…' if len(t) > 120 else '')
+                break
+        if not ru_preview and entry.get('card'):
+            # nested card senses
+            try:
+                senses = []
+                for r in (entry['card'].get('records') or []):
+                    for s in (r.get('senses') or []):
+                        if s.get('russian'):
+                            senses.append(s['russian'])
+                if senses:
+                    t = senses[0]
+                    ru_preview = t[:120] + ('…' if len(t) > 120 else '')
+            except Exception:  # noqa: BLE001
+                pass
+    return {
+        'rank': 1,
+        'key1': key1,
+        'score': 1.0,
+        'match_type': 'exact_content_sha',
+        'raw_sha256': raw_sha,
+        'n_store_rows': None,
+        'ru_preview': ru_preview,
+        'reuse_hint': 'auto_exact_candidate',  # still requires promoter path to write TM
+    }
+
+
+def tm_fuzzy_rank(key1: str, store_idx: dict, *,
+                  input_dir: str | None = None,
+                  top: int = TM_FUZZY_TOP) -> list[dict]:
+    """Step [2]b — TM fuzzy rank (READ-ONLY). Map field: ``tm_fuzzy_hits``.
+
+    Rank order (best first):
+      1. content-addressed exact TM hit (raw sha → translation_memory.lookup)
+      2. exact store key1
+      3. key1 difflib neighbors over the store key universe
+
+    This is **not** the TM fence. Hits are advice for "reuse vs invent"; they never
+    write TM. The fence is step [4] (promoter only) — see ``tm_fence`` on the pack.
+    """
     by_key = store_idx.get('by_key') or {}
     all_keys = store_idx.get('all_keys') or []
     hits = []
-    if key1 in by_key:
-        slot = by_key[key1]
-        ru_preview = None
-        for row in slot['rows'][:1]:
-            ru = (row.get('ru') or '').strip()
-            if ru:
-                ru_preview = ru[:120] + ('…' if len(ru) > 120 else '')
+    seen = set()
+
+    ca = tm_content_addressed_hit(key1, input_dir)
+    if ca:
+        hits.append(ca)
+        seen.add(key1)
+
+    if key1 in by_key and key1 not in seen:
+        ru_preview, n_rows = _ru_preview_from_slot(by_key[key1])
         hits.append({
-            'rank': 1,
+            'rank': len(hits) + 1,
             'key1': key1,
             'score': 1.0,
             'match_type': 'exact_key1',
-            'n_store_rows': slot['n_senses'],
+            'n_store_rows': n_rows,
             'ru_preview': ru_preview,
+            'reuse_hint': 'store_key1_exact',
         })
-    # Fuzzy over a bounded candidate pool: prefix-sharing keys first, else sample by ratio.
+        seen.add(key1)
+    elif key1 in by_key and hits:
+        # content-addressed already claimed rank 1; still note store row count
+        hits[0]['n_store_rows'] = by_key[key1].get('n_senses')
+
+    # Fuzzy neighbors — prefix pool first, then difflib score.
     prefix = key1[: max(2, min(4, len(key1)))]
-    pool = [k for k in all_keys if k != key1 and (k.startswith(prefix) or prefix.startswith(k[:len(prefix)]))]
+    pool = [k for k in all_keys if k not in seen
+            and (k.startswith(prefix) or prefix.startswith(k[:len(prefix)]))]
     if len(pool) < 40:
-        # expand: every key sharing first 2 chars
         p2 = key1[:2] if len(key1) >= 2 else key1
-        pool = [k for k in all_keys if k != key1 and k.startswith(p2)]
+        pool = [k for k in all_keys if k not in seen and k.startswith(p2)]
     if len(pool) > 400:
         pool = pool[:400]
     scored = []
@@ -423,27 +523,25 @@ def tm_fuzzy_hits(key1: str, store_idx: dict, top: int = TM_FUZZY_TOP) -> list[d
         if s >= TM_FUZZY_MIN_SCORE:
             scored.append((s, k))
     scored.sort(reverse=True)
-    rank = len(hits) + 1
     for s, k in scored[: max(0, top - len(hits))]:
-        slot = by_key.get(k)
-        ru_preview = None
-        n_rows = None
-        if slot:
-            n_rows = slot['n_senses']
-            for row in slot['rows'][:1]:
-                ru = (row.get('ru') or '').strip()
-                if ru:
-                    ru_preview = ru[:120] + ('…' if len(ru) > 120 else '')
+        ru_preview, n_rows = _ru_preview_from_slot(by_key.get(k))
         hits.append({
-            'rank': rank,
+            'rank': len(hits) + 1,
             'key1': k,
             'score': round(s, 3),
             'match_type': 'key1_difflib',
             'n_store_rows': n_rows,
             'ru_preview': ru_preview,
+            'reuse_hint': 'fuzzy_neighbor',
         })
-        rank += 1
+    # re-number ranks 1..n
+    for i, h in enumerate(hits, 1):
+        h['rank'] = i
     return hits
+
+
+# Back-compat alias (older call sites / docs said tm_fuzzy_hits for the function).
+tm_fuzzy_hits = tm_fuzzy_rank
 
 
 def apply_hard_flags(pack: dict, *, card: dict | None, slot: dict | None,
@@ -665,7 +763,8 @@ def fill_one(key1: str, *, model: str, payload_idx: dict, store_idx: dict,
         pack['citation_normalize'] = citation_normalize_from_text(card.get('card_block') or '')
 
     pack['compound_candidates'] = compound_candidates_from_key(key1)
-    pack['tm_fuzzy_hits'] = tm_fuzzy_hits(key1, store_idx)
+    # Step [2]b — TM fuzzy rank (read-only). Distinct from step [4] TM fence.
+    pack['tm_fuzzy_hits'] = tm_fuzzy_rank(key1, store_idx, input_dir=input_dir)
     # feed de_bytes into hard flags via a synthetic slot when only raw exists
     flag_slot = slot
     if not flag_slot and de_blob:
@@ -683,6 +782,15 @@ def fill_one(key1: str, *, model: str, payload_idx: dict, store_idx: dict,
             'ok': None, 'gate': 'skipped', 'issues': [], 'coverage': None,
             'claude': False,
         }
+    # Fence invariant: prep never clears may_write / store_write
+    pack['tm_fence'] = {
+        'may_write': False,
+        'writer': 'promoter_only',
+        'rule': 'R4.3a',
+        'step': '[4] same promoter + TM fence',
+        'note': 'TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM',
+        'n_hits_ranked': len(pack.get('tm_fuzzy_hits') or []),
+    }
     pack['store_write'] = False
     return pack
 
@@ -690,8 +798,23 @@ def fill_one(key1: str, *, model: str, payload_idx: dict, store_idx: dict,
 # --------------------------------------------------------------------------- IO + live
 
 def write_pack(out_dir: str, pack: dict) -> str:
+    # TM fence (R4.3a): prep must never claim a write
     if pack.get('store_write') is True:
-        raise SystemExit('prep_pack: refusing store_write=True (R4.3a fence)')
+        raise SystemExit('prep_pack: refusing store_write=True (R4.3a TM fence — promoter only)')
+    fence = pack.get('tm_fence') or {}
+    if fence.get('may_write') is True:
+        raise SystemExit('prep_pack: refusing tm_fence.may_write=True (R4.3a TM fence)')
+    # force fence declaration present
+    pack['tm_fence'] = {
+        'may_write': False,
+        'writer': 'promoter_only',
+        'rule': 'R4.3a',
+        'step': '[4] same promoter + TM fence',
+        'note': fence.get('note') or (
+            'TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM'),
+        'n_hits_ranked': len(pack.get('tm_fuzzy_hits') or []),
+    }
+    pack['store_write'] = False
     os.makedirs(out_dir, exist_ok=True)
     # Windows-safe filename: keep key1 as-is (SLP1 is ASCII).
     path = os.path.join(out_dir, '%s.json' % pack['key1'])
@@ -916,13 +1039,18 @@ def selftest() -> int:
         p = fill_one('kAla', model=ds.DEFAULT_MODEL, payload_idx=pl_idx, store_idx=idx)
         assert len(p['sense_inventory']) == 2
         assert p['sense_inventory'][0]['de_anchor']
-        assert p['tm_fuzzy_hits'][0]['match_type'] == 'exact_key1'
+        assert p['tm_fuzzy_hits'][0]['match_type'] in ('exact_key1', 'exact_content_sha')
         assert p['tm_fuzzy_hits'][0]['score'] == 1.0
         # neighbor kAlaka should appear in fuzzy list
         fuzzy_keys = {h['key1'] for h in p['tm_fuzzy_hits']}
         assert 'kAlaka' in fuzzy_keys or len(p['tm_fuzzy_hits']) >= 1
         assert p['citation_normalize'], 'ls citation should be extracted'
         assert p['store_write'] is False
+        # TM fence ≠ TM fuzzy rank
+        assert p['tm_fence']['may_write'] is False
+        assert p['tm_fence']['writer'] == 'promoter_only'
+        assert p['tm_fence']['rule'] == 'R4.3a'
+        assert p['tm_fence']['n_hits_ranked'] == len(p['tm_fuzzy_hits'])
         assert p['hard_flags']['polysemy'] is False  # only 2 senses
         # free det_gate on store-assembled draft (no Claude)
         assert p['det']['claude'] is False
@@ -998,7 +1126,14 @@ def selftest() -> int:
             write_pack(td, bad)
             raise AssertionError('store_write=True must refuse')
         except SystemExit as e:
-            assert 'store_write' in str(e) or 'R4.3a' in str(e)
+            assert 'store_write' in str(e) or 'R4.3a' in str(e) or 'fence' in str(e)
+        bad2 = empty_pack('y')
+        bad2['tm_fence'] = {'may_write': True, 'writer': 'flash', 'rule': 'nope'}
+        try:
+            write_pack(td, bad2)
+            raise AssertionError('tm_fence.may_write=True must refuse')
+        except SystemExit as e:
+            assert 'tm_fence' in str(e) or 'R4.3a' in str(e)
 
         paths = produce_fill(['kAla', 'lonelyKey'], os.path.join(td, 'prep'),
                              ds.DEFAULT_MODEL, pl_idx, idx)

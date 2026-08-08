@@ -1,7 +1,7 @@
 {
  "schema": "pwg.prep_pack.v1",
  "key1": "Ap",
- "produced_at": 1786194858,
+ "produced_at": 1786195176,
  "producer": {
   "tool": "prep_pack.py",
   "mode": "fill",
@@ -341,7 +341,8 @@
    "score": 1.0,
    "match_type": "exact_key1",
    "n_store_rows": 152,
-   "ru_preview": "6) {%близкий, родственный, дружественный, доверенный%}; <lex>m.</lex> {%родственник, друг, доверенное лицо%} (<ab>vgl.</…"
+   "ru_preview": "6) {%близкий, родственный, дружественный, доверенный%}; <lex>m.</lex> {%родственник, друг, доверенное лицо%} (<ab>vgl.</…",
+   "reuse_hint": "store_key1_exact"
   }
  ],
  "compound_candidates": [],
@@ -528,6 +529,14 @@
   "n_skeleton_tokens": 0,
   "source_senses": 40,
   "had_draft_card": true
+ },
+ "tm_fence": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "step": "[4] same promoter + TM fence",
+  "note": "TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM",
+  "n_hits_ranked": 1
  },
  "store_write": false
 }
