@@ -25,6 +25,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 from sibling_root import sibling_root  # noqa: E402
+from build_src import iast_to_slp1    # noqa: E402  (sinonimy IAST→SLP1)
 GITHUB = sibling_root(HERE)
 PWG_KEY1 = os.path.join(HERE, '..', '..', 'HeadwordLists', 'then-2014', 'PWG-unique-key1-106085.txt')
 CORPUS_DB = os.environ.get('SAMUDRA_CORPUS_DB',
@@ -282,6 +283,85 @@ def lookup_binomials(key1, key2=None):
     pidx = load_plant_index()
     return pidx.get(form_key(key1)) or (pidx.get(form_key(key2)) if key2 else None) or []
 
+# ---- Sinonimy synonym/sense index (SPECIALIST + SENSE corroboration) --------
+# Leonchenko sinonimy.jsonl: ~47k rows, RussianTranslation/research/sinonimy/.
+# Three row types consumed here:
+#   synonym_group_lemma  — Sa synonym group anchored on a headword lemma
+#   synonym_group_gloss  — Sa synonym group anchored on a gloss phrase
+#   sense_inventory      — per-lemma English sense list (feeds SENSE slot)
+# Members[] are raw IAST, may self-reference and duplicate; self-exclusion
+# and dedup applied here (not upstream in build_sinonimy.py).
+# Rights: local research data — evidence-only posture (see sinonimy/README.md).
+_SINONIMY_SYN_IDX = None    # SLP1 key → set of IAST synonym strings
+_SINONIMY_SENSE_IDX = None  # SLP1 key → list of English sense strings
+
+_SINONIMY_PATH = os.path.join(HERE, '..', 'research', 'sinonimy', 'sinonimy.jsonl')
+_DISAMBIG_RE = re.compile(r'\s+\d+$')  # strip "aṁśa 2" → "aṁśa" before IAST→SLP1
+
+
+def _sinonimy_key(iast_lemma):
+    """IAST lemma → SLP1 form_key; strips homonym-disambiguation suffix."""
+    return form_key(iast_to_slp1(_DISAMBIG_RE.sub('', iast_lemma.strip())))
+
+
+def load_sinonimy_index():
+    global _SINONIMY_SYN_IDX, _SINONIMY_SENSE_IDX
+    if _SINONIMY_SYN_IDX is not None:
+        return _SINONIMY_SYN_IDX, _SINONIMY_SENSE_IDX
+    syn_idx = defaultdict(set)
+    sense_idx = defaultdict(list)
+    if not os.path.exists(_SINONIMY_PATH):
+        _SINONIMY_SYN_IDX = syn_idx
+        _SINONIMY_SENSE_IDX = sense_idx
+        return syn_idx, sense_idx
+    with open(_SINONIMY_PATH, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            e = json.loads(line)
+            row_type = e.get('type', '')
+            if row_type in ('synonym_group_lemma', 'synonym_group_gloss'):
+                members_raw = e.get('members', [])
+                # Normalize, dedup (preserve first-seen IAST form per SLP1 key)
+                seen = {}
+                members_norm = []
+                for m in members_raw:
+                    k = _sinonimy_key(m)
+                    if k and k not in seen:
+                        seen[k] = m
+                        members_norm.append((k, m))
+                # Reverse-index: each member ← all other members (self-exclude)
+                for i, (ki, _) in enumerate(members_norm):
+                    syn_idx[ki].update(m for j, (_, m) in enumerate(members_norm) if j != i)
+            elif row_type == 'sense_inventory':
+                lemma = e.get('lemma', '')
+                if lemma:
+                    k = _sinonimy_key(lemma)
+                    if k:
+                        senses = e.get('senses', [])
+                        if senses:
+                            sense_idx[k].extend(senses)
+    _SINONIMY_SYN_IDX = syn_idx
+    _SINONIMY_SENSE_IDX = sense_idx
+    return syn_idx, sense_idx
+
+
+def lookup_sinonimy_synonyms(key1, key2=None, limit=12):
+    syn_idx, _ = load_sinonimy_index()
+    syn = syn_idx.get(form_key(key1))
+    if not syn and key2:
+        syn = syn_idx.get(form_key(key2))
+    return sorted(syn or [])[:limit]
+
+
+def lookup_sinonimy_senses(key1, key2=None, limit=6):
+    _, sense_idx = load_sinonimy_index()
+    senses = sense_idx.get(form_key(key1))
+    if not senses and key2:
+        senses = sense_idx.get(form_key(key2))
+    return list(senses or [])[:limit]
+
 # ---- corpus query (reuse SamudraManthanam, read-only) --------------------
 def corpus_connection():
     global _CORPUS_CON
@@ -460,7 +540,9 @@ def build_card(idx, key1, key2, pwg_ru, de_text=None):
             'corpus_examples': corpus_ex,
             'corpus_status': corpus_stat,
             'latin_binomials': lookup_binomials(key1, key2),   # Meulenbeld/SNP, botanical
-            'skd_vcp_synonyms': lookup_synonyms(key1, key2)}   # Sanskrit kosha synonyms
+            'skd_vcp_synonyms': lookup_synonyms(key1, key2),   # Sanskrit kosha synonyms
+            'sinonimy_synonyms': lookup_sinonimy_synonyms(key1, key2),  # SPECIALIST: Sa synonym corroboration
+            'sinonimy_senses': lookup_sinonimy_senses(key1, key2)}      # SENSE: English sense inventory (soft)
 
 # ---- CLI -----------------------------------------------------------------
 def read_keys(limit=None):
@@ -498,6 +580,14 @@ def cmd_lookup(idx, args):
     binom = lookup_binomials(key1, key2)
     if binom:
         print('\nLatin binomials (Meulenbeld/SNP): ' + '; '.join(binom))
+    sin_syn = lookup_sinonimy_synonyms(key1, key2)
+    print('\nSinonimy synonyms (%d) — Sa-side corroboration (Leonchenko, SPECIALIST):' % len(sin_syn))
+    if sin_syn:
+        print('  ' + ', '.join(sin_syn))
+    sin_sense = lookup_sinonimy_senses(key1, key2)
+    print('\nSinonimy English senses (%d) — soft sense signal (SENSE):' % len(sin_sense))
+    for s in sin_sense:
+        print('  %s' % s[:160])
     ex = corpus_examples(key1, 3)
     print('\ncorpus examples (%d):' % len(ex))
     for e in ex:
@@ -530,7 +620,9 @@ def cmd_coverage(idx, args):
     sidx = load_sense_index()
     kidx = load_kosha_index()
     pidx = load_plant_index()
+    sin_syn_idx, sin_sense_idx = load_sinonimy_index()
     tot = per = kow_n = kow_zone_n = sense_n = syn_n = plant_n = 0
+    sin_syn_n = sin_sense_n = 0
     persrc = defaultdict(int)
     sensesrc = defaultdict(int)
     for k in keys:
@@ -556,6 +648,10 @@ def cmd_coverage(idx, args):
             syn_n += 1
         if fk in pidx:
             plant_n += 1
+        if fk in sin_syn_idx:
+            sin_syn_n += 1
+        if fk in sin_sense_idx:
+            sin_sense_n += 1
     # corpus signal: its own random sub-sample of the scanned keys (the corpus
     # query is the slow part, so it stays capped) — representative, not first-300.
     corpus_n = min(300, len(keys))
@@ -582,6 +678,9 @@ def cmd_coverage(idx, args):
     print('  kosha synonym set: %d (%.1f%%)' % (syn_n, 100.0 * syn_n / tot))
     print('--- Meulenbeld/SNP Latin binomials (botanical) ---')
     print('  plant w/ binomial: %d (%.1f%%)' % (plant_n, 100.0 * plant_n / tot))
+    print('--- Sinonimy (Leonchenko, SPECIALIST/SENSE corroboration) ---')
+    print('  synonym set:  %d (%.1f%%)' % (sin_syn_n, 100.0 * sin_syn_n / tot))
+    print('  sense entry:  %d (%.1f%%)' % (sin_sense_n, 100.0 * sin_sense_n / tot))
 
 def cmd_tune(idx, args):
     """Inter-dictionary agreement: for headwords covered by >=2 independent
