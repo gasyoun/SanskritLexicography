@@ -111,10 +111,10 @@ Label distribution, LLM as shown vs MG as recorded:
 
 ## Follow-ups opened in the same pass
 
-1. **Evidence panel before the vote** ([H1801](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1801-Opus_SanskritLexicography_g6-gold-card-evidence-panel_28.07.26.md))
+1. **Evidence panel before the vote** ([H1801](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1801-Opus_SanskritLexicography_g6-gold-card-evidence-panel_28.07.26.md))
    — the G6 card must carry the dictionary sense, the root, and corpus contexts,
    since the project already holds all three. Blocks the n=400 sheet.
-2. **Reject-label picker in the emitter** ([H1802](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1802-Sonnet_csl-pyutil_review-sheet-reject-label-picker_28.07.26.md))
+2. **Reject-label picker in the emitter** ([H1802](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1802-Sonnet_csl-pyutil_review-sheet-reject-label-picker_28.07.26.md))
    — `csl_pyutil.render_review_sheet`
    must offer the six typology labels as a required control on reject instead of
    relying on a note-prefix convention. 5/6 non-compliance at n=6 would be ~250

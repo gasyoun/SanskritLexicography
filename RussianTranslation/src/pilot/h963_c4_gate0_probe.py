@@ -64,6 +64,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
 import tempfile
 import time
@@ -77,6 +78,7 @@ if str(HERE) not in sys.path:
     sys.path.insert(0, str(HERE))
 
 import max_account_orchestrator as mao  # noqa: E402
+import probe_log  # noqa: E402  — the one source of truth for probe ceilings (H2118/H2138)
 from headless_worker import claude_argv_prefix  # noqa: E402
 # Codex hardening (26-07-2026): a PRE-spend reservation ledger. `--max-calls`-style ceilings
 # were post-hoc -- they could only report an overshoot after the calls were paid for. The
@@ -109,7 +111,12 @@ PROFILE_ROOT = r"D:\ClaudeTools\profiles"
 CAMPAIGN = "h963-c4-single-profile-gate0-2026-07-16"
 EVENTS = HERE / "output" / "h963_c4_gate0_probe_events.jsonl"
 PAYLOAD_BYTES = 6491          # repo default; actual prompt 6828 B (H909 runbook, v1.9.19)
-CEILING_MS = mao.PROBE_LATENCY_CEILING_MS   # 65 000 since MG's 31-07-2026 ruling
+# DERIVED, never restated — whatever `probe_log.CURRENT_POLICY` names today. It has been
+# 30 000 (v1), 65 000 (v2, MG's 31-07-2026 ruling) and is 80 000 (v3, H2138-derived
+# 02-08-2026) — which is exactly why this line must not carry a literal. A comment that
+# names one of those numbers goes stale the next time the policy advances and then
+# contradicts the code it annotates (H2173 G9 found it naming 65 000 after v3 had landed).
+CEILING_MS = mao.PROBE_LATENCY_CEILING_MS
 # WARM-UP POLICY (MG ruling 31-07-2026, first pass): the warm-up is no longer a latency
 # NO-GO input. A 131 737 ms warm-up next to a 31 623 ms measured call is cold-start cost,
 # not the workload the gate prices, and gating on it blocked a usable route. This restores
@@ -123,8 +130,107 @@ CEILING_MS = mao.PROBE_LATENCY_CEILING_MS   # 65 000 since MG's 31-07-2026 rulin
 # was looking at. Deriving it means the gate can never again be more permissive than the
 # production path it is supposed to predict.
 STRICT_CEILING_MS = CEILING_MS   # == mao.PROBE_LATENCY_CEILING_MS; measured reading only
+# H2138 (#946): the SECOND, INDEPENDENT fail condition — route latency, judged on the
+# envelope's own `duration_api_ms` rather than on wall clock. Derived from the policy table,
+# never restated. `None` for pre-v3 policies, in which case the gate behaves exactly as before.
+#
+# Why a wall ceiling alone is not enough: wall = duration_api_ms + api_gap_ms, and the two move
+# independently (api/wall measured 0.25..0.72). The 02-08-2026 12:46 reading carried c4's
+# FASTEST api time ever (16 445 ms) and still failed the 65 000 ms wall gate on 49 846 ms of
+# in-CLI scaffolding — a healthy route refused a window. Conversely a reading can sit under the
+# wall ceiling while the ROUTE is degraded; that is the case this condition exists to catch, and
+# it is the one the wall number can never distinguish.
+API_CEILING_MS = probe_log.POLICIES[probe_log.CURRENT_POLICY].get('api_ceil_ms')
 WARMUP_IS_ADVISORY = True     # warm-up latency never fails the gate; errors on it still do
 CONN_ERR_CLASSES = {"process", "timeout"}
+
+
+def is_linked_worktree(path):
+    """True when ``path`` sits inside a LINKED git worktree (a disposable checkout).
+
+    ``git rev-parse --git-dir`` and ``--git-common-dir`` agree in a normal checkout and
+    diverge in a linked worktree — the same test the repo's own worktree tooling uses.
+    Unknown/absent git is reported as **not** disposable: this predicate gates a refusal,
+    and refusing a paid gate because git could not be questioned would be worse than the
+    evidence risk it guards. A path outside any repo is likewise not disposable.
+
+    The question is asked about the nearest EXISTING ancestor. The evidence root routinely
+    does not exist yet on a first run (``output/`` is gitignored and absent in a fresh
+    worktree), and ``git -C <missing-dir>`` simply errors — which the fail-open rule above
+    would then read as "not disposable", silently restoring the very fallback this guards.
+    """
+    probe_dir = Path(path).resolve()
+    while not probe_dir.is_dir() and probe_dir.parent != probe_dir:
+        probe_dir = probe_dir.parent
+    try:
+        probe = subprocess.run(["git", "-C", str(probe_dir), "rev-parse",
+                                "--git-dir", "--git-common-dir"],
+                               capture_output=True, text=True, encoding="utf-8",
+                               errors="replace", timeout=30)
+    except (OSError, subprocess.SubprocessError):
+        return False
+    if probe.returncode:
+        return False
+    lines = [ln.strip() for ln in probe.stdout.splitlines() if ln.strip()]
+    if len(lines) != 2:
+        return False
+    base = str(probe_dir)
+    return os.path.abspath(os.path.join(base, lines[0])) != \
+        os.path.abspath(os.path.join(base, lines[1]))
+
+
+def resolve_evidence_root(explicit=None):
+    """Where the probe's append-only evidence actually lives -> (Path, source).
+
+    #1034: the events/call/preflight series used to be pinned to ``HERE/output`` — a
+    CHECKOUT-relative, gitignored directory. The repo *mandates* that sessions work in a
+    disposable ``git worktree``, so the series silently forked per checkout and was then
+    destroyed with it: an H2174 NO-GO that terminated a handoff wrote 2 rows into a
+    worktree while the canonical file showed 19, and they survived only because the
+    session happened to have printed them.
+
+    Resolution order, highest first:
+      1. an explicit ``--evidence-dir`` path,
+      2. ``$PWG_EVIDENCE_DIR``,
+      3. the historical ``HERE/output`` default.
+
+    The default is kept so that a run in the CANONICAL checkout reproduces the historical
+    paths byte-for-byte (21 rows of c4 history, cited by path in the H1110/H1447/H858
+    reports). What is NOT kept is the silent fallback *in a worktree* — see
+    ``assert_durable_evidence_root``, which refuses instead.
+    """
+    if explicit:
+        return Path(explicit).expanduser().resolve(), "--evidence-dir"
+    env = os.environ.get("PWG_EVIDENCE_DIR")
+    if env and env.strip():
+        return Path(env.strip()).expanduser().resolve(), "PWG_EVIDENCE_DIR"
+    return (HERE / "output").resolve(), "default (checkout-relative)"
+
+
+def assert_durable_evidence_root(root, source, paid=True):
+    """Refuse a PAID probe whose only evidence would die with a disposable checkout.
+
+    A non-paid selftest may use a temporary root — it produces no gate verdict, so there
+    is no immutable trace to lose. A paid attempt is the opposite: it is the one
+    no-reroll reading, and #1034 is precisely the case where that reading was written
+    somewhere that gets deleted. So the refusal is fail-CLOSED and has no ``--force``:
+    the fix is one environment variable, and an override would restore the exact silent
+    fallback the issue was filed about.
+    """
+    if not paid or not is_linked_worktree(root):
+        return
+    raise SystemExit(
+        "EVIDENCE-ROOT REFUSAL (no probe call made, no attempt consumed):\n"
+        "  resolved evidence root : %s\n"
+        "  resolution source      : %s\n"
+        "  ...is inside a LINKED GIT WORKTREE — a disposable checkout. The probe's\n"
+        "  append-only series would be created here and destroyed with the worktree\n"
+        "  (#1034: a NO-GO that terminated a handoff was nearly lost exactly this way).\n"
+        "  Set a durable root OUTSIDE any checkout and re-run, e.g.\n"
+        "    set PWG_EVIDENCE_DIR=%s\n"
+        "  or pass --evidence-dir <path>. This is an EVIDENCE-ROUTING refusal, not a\n"
+        "  health signal: nothing was spent and no row was written."
+        % (root, source, os.path.join(os.path.expanduser("~"), ".pwg_ru_evidence")))
 
 
 def config_dir_for(account):
@@ -135,14 +241,29 @@ def config_dir_for(account):
     return os.path.join(PROFILE_ROOT, "claude" + account[1:], ".claude")
 
 
-def ledger_paths(account):
+def evidence_dir_for(account, root=None):
+    """The directory holding ``account``'s evidence beneath the resolved root.
+
+    The DEFAULT (checkout-relative) root keeps the historical FLAT layout, because 21
+    rows of c4 history live at that exact path and the H1110/H1447/H858 reports cite it
+    by name. A durable root gets a per-account subdirectory instead: evidence identity is
+    bound to the profile, so two profiles pointed at one root can never share a series
+    (#729's contamination class, one level up).
+    """
+    if root is None:
+        return HERE / "output"
+    return Path(root) / account
+
+
+def ledger_paths(account, root=None):
     """The per-account call-reservation ledger + synthetic preflight paths.
 
     Per-account for the same reason the events log is (#729 one level up): a reservation
     written for c5 must never bound, or be read as, a c4 attempt.
     """
-    return (HERE / "output" / ("h963_%s_gate0_calls.json" % account),
-            HERE / "output" / ("h963_%s_gate0_preflight.json" % account))
+    base = evidence_dir_for(account, root)
+    return (base / ("h963_%s_gate0_calls.json" % account),
+            base / ("h963_%s_gate0_preflight.json" % account))
 
 
 def campaign_for(account):
@@ -157,16 +278,16 @@ def campaign_for(account):
     return "h963-%s-single-profile-gate0" % account
 
 
-def events_for(account):
-    """One events log PER ACCOUNT.
+def events_for(account, root=None):
+    """One events log PER ACCOUNT, beneath the resolved evidence root.
 
     Sharing one file across profiles would re-create the #729 contamination one level up:
     a c5 row answering for a c4 verdict. c4 keeps the original filename because 11 rows of
     history live there and the H1110/H1447/H858 gate reports cite it by path.
     """
-    if account == ACCOUNT:
+    if root is None and account == ACCOUNT:
         return EVENTS
-    return HERE / "output" / ("h963_%s_gate0_probe_events.jsonl" % account)
+    return evidence_dir_for(account, root) / ("h963_%s_gate0_probe_events.jsonl" % account)
 
 
 def preflight_profile(config_dir):
@@ -216,7 +337,8 @@ def readings_for(events_path, run_id):
     return rows
 
 
-def derive_fails(readings, strict_ceiling_ms=STRICT_CEILING_MS):
+def derive_fails(readings, strict_ceiling_ms=STRICT_CEILING_MS,
+                 api_ceiling_ms=API_CEILING_MS):
     """The gate policy as a pure function of THIS run's readings. Empty list == PASS.
 
     BOTH readings must still be present, `success`, and free of connection/process errors.
@@ -245,6 +367,13 @@ def derive_fails(readings, strict_ceiling_ms=STRICT_CEILING_MS):
         latency_gated = not (WARMUP_IS_ADVISORY and key == "warmup")
         if latency_gated and isinstance(ms, int) and ms >= strict_ceiling_ms:
             fails.append("%s latency %d ms >= %d ms ceiling" % (label, ms, strict_ceiling_ms))
+        # H2138: the ROUTE condition, independent of the wall one above. Same advisory rule
+        # for the warm-up. A reading that carries no `duration_api_ms` is judged on wall
+        # alone — absent instrumentation must never silently flip a verdict either way.
+        api_ms = r.get("duration_api_ms")
+        if latency_gated and api_ceiling_ms and isinstance(api_ms, int) and api_ms >= api_ceiling_ms:
+            fails.append("%s ROUTE latency %d ms >= %d ms api ceiling (duration_api_ms)"
+                         % (label, api_ms, api_ceiling_ms))
     return fails
 
 
@@ -254,11 +383,23 @@ def main(argv=None):
                     help="profile slot to gate (default %s)" % ACCOUNT)
     ap.add_argument("--config-dir", default=None,
                     help="that profile's CLAUDE_CONFIG_DIR (default: derived from --account)")
+    ap.add_argument("--evidence-dir", default=None,
+                    help="durable root for the append-only events/call/preflight series "
+                         "(#1034). Overrides $PWG_EVIDENCE_DIR. A paid probe REFUSES to "
+                         "run when the resolved root is inside a disposable worktree.")
     args = ap.parse_args(argv)
     account = args.account
     config_dir = args.config_dir or (CONFIG_DIR if account == ACCOUNT
                                      else config_dir_for(account))
-    events = events_for(account)
+
+    # #1034: resolve, REPORT and validate the evidence root BEFORE anything is spent.
+    # The absolute path is printed unconditionally, so an operator can never again be
+    # unable to say which series a row landed in.
+    evidence_root, evidence_source = resolve_evidence_root(args.evidence_dir)
+    explicit_root = None if evidence_source.startswith("default") else evidence_root
+    assert_durable_evidence_root(evidence_root, evidence_source, paid=True)
+
+    events = events_for(account, explicit_root)
     events.parent.mkdir(parents=True, exist_ok=True)
 
     # Belt-and-suspenders: pin the store to a scratch path so nothing can touch the
@@ -267,7 +408,9 @@ def main(argv=None):
 
     campaign = campaign_for(account)
     run_id = new_run_id(campaign)
-    call_ledger_path, preflight_path = ledger_paths(account)
+    call_ledger_path, preflight_path = ledger_paths(account, explicit_root)
+    for p in (call_ledger_path, preflight_path):
+        p.parent.mkdir(parents=True, exist_ok=True)
     claude_bin = resolve_claude_bin()
     argv_prefix = claude_argv_prefix(claude_bin)
 
@@ -287,6 +430,7 @@ def main(argv=None):
           % (CEILING_MS, STRICT_CEILING_MS))
     print("run_id            : %s   (unique to THIS run — #729)" % run_id)
     print("campaign          : %s   (grouping label only, never a read scope)" % campaign)
+    print("evidence root     : %s   (source: %s)" % (evidence_root, evidence_source))
     print("events            : %s   (per-account series)" % events)
     print("call ledger       : %s" % call_ledger_path)
     print("preflight         : %s" % preflight_path)
@@ -386,9 +530,12 @@ def main(argv=None):
 
 
 # ---------------------------------------------------------------------------
-def _row(run_id, purpose, ms, cls="success"):
-    return {"event": "probe_call", "run_id": run_id, "purpose": purpose,
-            "elapsed_ms": ms, "classification": cls, "output_bytes": 1400}
+def _row(run_id, purpose, ms, cls="success", api_ms=None):
+    row = {"event": "probe_call", "run_id": run_id, "purpose": purpose,
+           "elapsed_ms": ms, "classification": cls, "output_bytes": 1400}
+    if api_ms is not None:
+        row["duration_api_ms"] = api_ms
+    return row
 
 
 def selftest():
@@ -433,8 +580,31 @@ def selftest():
 
         # 4. a genuine clean pair still passes; a slow MEASURED one still fails
         assert derive_fails([_row(new, "warmup", 17972), _row(new, "measured", 16621)]) == []
-        slow = derive_fails([_row(new, "warmup", 17972), _row(new, "measured", 80003)])
-        assert len(slow) == 1 and "80003 ms >= 65000 ms" in slow[0], slow
+        # The ceiling is DERIVED, never restated here — H2118's lesson, and H2138 moved it
+        # (65 000 -> 80 000) which is exactly how a hard-coded copy in this pin goes stale.
+        _over = STRICT_CEILING_MS + 3
+        slow = derive_fails([_row(new, "warmup", 17972), _row(new, "measured", _over)])
+        assert len(slow) == 1 and ("%d ms >= %d ms" % (_over, STRICT_CEILING_MS)) in slow[0], slow
+
+        # 4a-bis. H2138 (#946): the ROUTE condition is INDEPENDENT of the wall one. These
+        # cases are the reason it exists — a wall ceiling alone cannot express any of them.
+        if API_CEILING_MS:
+            wall_ok = STRICT_CEILING_MS - 1000
+            # (i) THE POINT: wall is fine, the ROUTE is degraded -> NO-GO. Unreachable by a
+            #     wall-only gate, which is exactly the blind spot H2138 measured.
+            route_bad = derive_fails([_row(new, "warmup", 17972),
+                                      _row(new, "measured", wall_ok, api_ms=API_CEILING_MS + 1)])
+            assert len(route_bad) == 1 and "ROUTE latency" in route_bad[0], route_bad
+            # (ii) a healthy route under both ceilings still passes
+            assert derive_fails([_row(new, "warmup", 17972),
+                                 _row(new, "measured", wall_ok, api_ms=API_CEILING_MS - 1)]) == []
+            # (iii) ABSENT instrumentation must not flip a verdict in either direction —
+            #       old rows carry no `duration_api_ms` and must stay judged on wall alone.
+            assert derive_fails([_row(new, "warmup", 17972),
+                                 _row(new, "measured", wall_ok)]) == []
+            # (iv) the warm-up stays advisory on the route condition too, not just on wall
+            assert derive_fails([_row(new, "warmup", 17972, api_ms=API_CEILING_MS + 1),
+                                 _row(new, "measured", wall_ok, api_ms=1000)]) == []
 
         # 4b. MG ruling 31-07-2026, pinned against the exact reading that motivated it:
         #     warm-up 131 737 ms + measured 31 623 ms is a PASS. Under the pre-ruling policy
@@ -490,7 +660,84 @@ def selftest():
         (logged_out / ".credentials.json").write_text("{}", encoding="utf-8")
         assert preflight_profile(str(logged_out)) is None, 'a provisioned profile must pass pre-flight'
 
-        print("h963_c4_gate0_probe selftest: 7/7 OK (no live call, nothing spent)")
+        # 8. #1034 — the durable-evidence-root matrix. Every branch below is a path the
+        #    probe took (or should have taken) on a real run; none of them spends anything.
+        saved_env = os.environ.pop("PWG_EVIDENCE_DIR", None)
+        try:
+            # 8a. MAIN CHECKOUT / default root: the historical paths reproduce EXACTLY.
+            #     The 21-row c4 series is cited by path in three gate reports; a fix that
+            #     silently relocated it would break every one of those citations.
+            root, src = resolve_evidence_root(None)
+            assert src.startswith("default"), src
+            assert root == (HERE / "output").resolve(), root
+            assert events_for("c4") == EVENTS, 'c4 must keep its historical events path'
+            assert ledger_paths("c4")[0] == HERE / "output" / "h963_c4_gate0_calls.json"
+
+            # 8b. EXPLICIT durable override beats the environment, which beats the default.
+            durable = Path(d) / "durable"
+            os.environ["PWG_EVIDENCE_DIR"] = str(Path(d) / "from-env")
+            root_env, src_env = resolve_evidence_root(None)
+            assert src_env == "PWG_EVIDENCE_DIR" and root_env == (Path(d) / "from-env").resolve()
+            root_cli, src_cli = resolve_evidence_root(str(durable))
+            assert src_cli == "--evidence-dir" and root_cli == durable.resolve(), root_cli
+            os.environ.pop("PWG_EVIDENCE_DIR")
+
+            # 8c. INDEPENDENT PROFILE SERIES beneath one durable root — c4/c5/c6 can share
+            #     a root without ever sharing a file (#729 one level up).
+            paths = {a: events_for(a, durable) for a in ("c4", "c5", "c6")}
+            assert len({str(p) for p in paths.values()}) == 3, paths
+            for a, p in paths.items():
+                assert p.parent == durable / a, p
+                assert a in p.name, p
+            assert ledger_paths("c5", durable)[1].parent == durable / "c5"
+
+            # 8d. LINKED-WORKTREE REFUSAL: a paid probe must not create a series that dies
+            #     with the checkout. This is the #1034 incident itself, as a test.
+            real_is_linked = globals()["is_linked_worktree"]
+            globals()["is_linked_worktree"] = lambda p: str(p).endswith("disposable")
+            try:
+                disposable = Path(d) / "disposable"
+                try:
+                    assert_durable_evidence_root(disposable, "default (checkout-relative)",
+                                                 paid=True)
+                except SystemExit as exc:
+                    assert "EVIDENCE-ROOT REFUSAL" in str(exc), exc
+                    assert "PWG_EVIDENCE_DIR" in str(exc), 'the refusal must name the fix'
+                else:
+                    raise AssertionError('a paid probe in a linked worktree must REFUSE')
+                # ...and a NON-paid selftest may still use a disposable/temporary root:
+                # it produces no verdict, so there is no immutable trace to lose.
+                assert_durable_evidence_root(disposable, "default", paid=False)
+                # a durable root is accepted for a paid run
+                assert_durable_evidence_root(durable, "--evidence-dir", paid=True)
+            finally:
+                globals()["is_linked_worktree"] = real_is_linked
+
+            # 8e. the predicate itself is FAIL-OPEN on a non-repo path: it gates a refusal,
+            #     and refusing a paid gate because git could not be questioned is worse
+            #     than the evidence risk it guards.
+            assert is_linked_worktree(Path(d)) in (True, False)
+
+            # 8f. ...but "does not exist yet" must NOT be read as "not disposable". The
+            #     evidence root is normally ABSENT on a first run (``output/`` is
+            #     gitignored), and asking git about a missing directory just errors —
+            #     which fail-open turns into a silent pass. Observed live: the refusal
+            #     above did not fire until the predicate walked up to the nearest
+            #     existing ancestor. A deep unborn path under a repo answers the same as
+            #     the repo itself.
+            here_verdict = is_linked_worktree(HERE)
+            deep_unborn = HERE / "output" / "nope" / "still-nope"
+            assert is_linked_worktree(deep_unborn) == here_verdict, deep_unborn
+            # a path with no existing repo ancestor at all is still not disposable
+            assert is_linked_worktree(Path(d) / "no-such-dir") in (True, False)
+        finally:
+            os.environ.pop("PWG_EVIDENCE_DIR", None)
+            if saved_env is not None:
+                os.environ["PWG_EVIDENCE_DIR"] = saved_env
+
+        print("h963_c4_gate0_probe selftest: 8/8 OK (no live call, nothing spent) — "
+              "incl. #1034 evidence-root matrix (main checkout / worktree refusal / "
+              "explicit override / independent profile series)")
     finally:
         shutil.rmtree(d, ignore_errors=True)
 

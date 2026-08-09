@@ -1,0 +1,226 @@
+{
+  "is_error": false,
+  "duration_api_ms": 149090,
+  "num_turns": 2,
+  "stop_reason": "tool_use",
+  "session_id": "0801c64a-9b12-4598-9b45-dfad8a4e5e9d",
+  "total_cost_usd": 0.4786521,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 40141,
+    "cache_read_input_tokens": 29667,
+    "output_tokens": 15260,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 40141,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 15260,
+        "cache_read_input_tokens": 29667,
+        "cache_creation_input_tokens": 40141,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 40141
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-sonnet-5": {
+      "inputTokens": 2,
+      "outputTokens": 15260,
+      "cacheReadInputTokens": 29667,
+      "cacheCreationInputTokens": 40141,
+      "webSearchRequests": 0,
+      "costUSD": 0.4786521,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"cards\":[{\"key1\":\"nakzatra\",\"iast\":\"nakṣatra\",\"notes\":\"PWG main entry (3 senses + closing cross-ref note) plus PW revision (3 senses), two further PW fragments (addenda, one a proper-name sense, one a bare cross-reference 'III. 5.'), one SCH addendum (proper name of an Ekādaśāṅgin), and two matching PWKVN fragments keyed to the same PW addenda. All untranslatable spans kept as {Tn} placeholders exactly as given in the masked input; nothing was added beyond what the German states.\",\"records\":[{\"h\":\"{T1}\",\"grammar\":\"{T2}. {T3}\",\"senses\":[{\"tag\":\"1\",\"german\":\"1〉 {%Gestirn%} {T4} (auch von der Sonne gebraucht) {T5}. {T6}. {T7} ({T8}) {T9} {T10}. {T11} {T12}. {T13} {T14}. {T15}. {T16}. {%Sterne%} {T17}. {T18}. {T19} {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34} {T35}. {T36} {T37}. {T38}. {T39} {T40}. {T41}. Diese fünf bilden bei den {T42} die Gruppe der {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52} {T53}. {T54}. {T55}. {T56} {T57}. Ein Mal {T58}: {T59} {T60}. {T61} {%aus einem Stern bestehend%} {T62}. {T63}. {T64}.\",\"russian\":\"1〉 {%светило%} {T4} (употребляется также о солнце) {T5}. {T6}. {T7} ({T8}) {T9} {T10}. {T11} {T12}. {T13} {T14}. {T15}. {T16}. {%звёзды%} {T17}. {T18}. {T19} {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34} {T35}. {T36} {T37}. {T38}. {T39} {T40}. {T41}. Эти пять образуют у {T42} группу {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52} {T53}. {T54}. {T55}. {T56} {T57}. Однажды {T58}: {T59} {T60}. {T61} {%состоящий из одной звезды%} {T62}. {T63}. {T64}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"mixed\",\"stratum\":\"Vedic; Epic / early-Classical\",\"differentia\":\"«светило» — родовое обозначение небесного тела (включая солнце); «звезда» — видовое, собственно звезда; PWG различает их запятой как взаимозаменяемые синонимы внутри одного значения.\"},{\"tag\":\"2\",\"german\":\"— 2〉 im {T65} {%die Mondstationen%}; in der älteren Zeit (aber auch noch im {T66}) 27, später 28 an der Zahl. Dieselben werden in der Folge auch als {%Gemahlinnen des Mondes%}, als Töchter {T67}ʼs, augfefasst. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75}. {T76}. {T77}, {T78}. {T79} {T80} {T81} {T82}. {T83}. {T84}. {T85}. {T86} {T87}. Die Namen derselben {T88} {T89} {T90} {T91}, {T92}. {T93}, Die vedischen Nachrichten von den Nakshatra.\",\"russian\":\"— 2〉 в {T65} {%лунные стоянки%}; в более раннюю эпоху (но также ещё в {T66}) их 27, позднее 28 числом. Впоследствии они же понимаются также как {%супруги Луны%}, как дочери {T67}. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75}. {T76}. {T77}, {T78}. {T79} {T80} {T81} {T82}. {T83}. {T84}. {T85}. {T86} {T87}. Названия их {T88} {T89} {T90} {T91}, {T92}. {T93}, Ведийские сведения о накшатрах.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"mixed\",\"stratum\":\"Vedic; Epic / early-Classical\",\"differentia\":\"\"},{\"tag\":\"3\",\"german\":\"— 3〉 {%Perle%} {T94}_im_{T95} — Was die Etymologie betrifft, so lässt sich gegen die von {T96}_in_{T97} vorgebrachte ({T98} + {T99}) einwenden, dass {%Wächter der Nacht%} nicht auf die Sonne passt, welche in den ältesten Texten vorzugsweise {T100} genannt wird. Die Gleichsetzung von {T101} mit {T102} erregt gleichfalls Bedenken. Eher liesse sich noch an eine Zurückführung auf {T103} ({T104} {T105}. {T106}.) denken, dann wären die Gestirne {%die am Himmel Heraufkommenden%}. Die spielende Zerlegung in {T107} + {T108} findet sich {T109}. {T110}. {T111}. {T112}.\",\"russian\":\"— 3〉 {%жемчужина%} {T94}_в_{T95} — Что касается этимологии, то против предложенной {T96}_в_{T97} ({T98} + {T99}) можно возразить, что {%страж ночи%} не подходит к солнцу, которое в древнейших текстах по преимуществу называется {T100}. Отождествление {T101} с {T102} также вызывает сомнения. Скорее можно было бы думать о возведении к {T103} ({T104} {T105}. {T106}.), и тогда светила были бы {%восходящими на небе%}. Игровое разложение на {T107} + {T108} встречается {T109}. {T110}. {T111}. {T112}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"\"},{\"tag\":\"note\",\"german\":\"— {T113} {T114}.\",\"russian\":\"— {T113} {T114}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Замыкающая ссылочная заметка PWG к статье.\"}]},{\"h\":\"{T115}\",\"grammar\":\"{T116}\",\"senses\":[{\"tag\":\"1\",\"german\":\"— 1〉 {%Gestirn, Stern;%} {T117} {%die Sonne und die Sterne%} ({T118}) Einmal {T119} als Personification. Am Ende eines {T120} {T121} {T122}\",\"russian\":\"— 1〉 {%светило, звезда;%} {T117} {%солнце и звёзды%} ({T118}) Однажды {T119} как персонификация. В конце {T120} {T121} {T122}\",\"equivalence_type\":\"equivalent\",\"source_type\":\"mixed\",\"stratum\":\"\",\"differentia\":\"Сокращённая редакция PW: то же значение 1〉, что и в PWG, с добавлением указания на однократную персонификацию.\"},{\"tag\":\"2\",\"german\":\"— 2〉 {%Mondhaus,%} deren in der älteren Zeit 27, später 28 angenommen werden. Personificirt als Töchter {T123}ʼs und Gattinnen des Mondes.\",\"russian\":\"— 2〉 {%лунный дом,%} которых в более раннюю эпоху принимается 27, позднее 28. Персонифицируются как дочери {T123} и супруги Луны.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"mixed\",\"stratum\":\"\",\"differentia\":\"\"},{\"tag\":\"3\",\"german\":\"— 3〉 *{%Perle%} {T124}. {T125} {T126} 3〉.\",\"russian\":\"— 3〉 *{%жемчужина%} {T124}. {T125} {T126} 3〉.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"\"}]},{\"h\":\"{T127}\",\"grammar\":\"\",\"senses\":[{\"tag\":\"addendum\",\"german\":\"{T128} {T129} eines {T130} {T131}.\",\"russian\":\"{T128} {T129} некоего {T130} {T131}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Дополнение PW: отдельная патч-заметка, вероятно N. pr. лица/сочинения.\"}]},{\"h\":\"{T132}\",\"grammar\":\"\",\"senses\":[{\"tag\":\"addendum\",\"german\":\"III. 5.\",\"russian\":\"III. 5.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Чисто ссылочная заметка PW (том/раздел III. 5).\"}]},{\"h\":\"Nakṣatra\",\"grammar\":\"m.\",\"senses\":[{\"tag\":\"addendum\",\"german\":\"N. pr. eines Ekādaśāṅgin, {T133}\",\"russian\":\"N. pr. некоего Ekādaśāṅgin, {T133}\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Добавление SCH: собственное имя (Ekādaśāṅgin) — отдельный омоним, не относится к значениям 1–3 основной статьи.\"}]},{\"h\":\"{T134}\",\"grammar\":\"\",\"senses\":[{\"tag\":\"addendum\",\"german\":\"{T135} {T136} eines {T137} {T138}.\",\"russian\":\"{T135} {T136} некоего {T137} {T138}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"PWKVN-дополнение, соответствующее патч-записи PW ({T127}).\"}]},{\"h\":\"{T139}\",\"grammar\":\"\",\"senses\":[{\"tag\":\"addendum\",\"german\":\"III. 5.\",\"russian\":\"III. 5.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"PWKVN-дополнение, соответствующее ссылочной записи PW ({T132}).\"}]}]}]}",
+  "structured_output": {
+    "cards": [
+      {
+        "key1": "nakzatra",
+        "iast": "nakṣatra",
+        "notes": "PWG main entry (3 senses + closing cross-ref note) plus PW revision (3 senses), two further PW fragments (addenda, one a proper-name sense, one a bare cross-reference 'III. 5.'), one SCH addendum (proper name of an Ekādaśāṅgin), and two matching PWKVN fragments keyed to the same PW addenda. All untranslatable spans kept as {Tn} placeholders exactly as given in the masked input; nothing was added beyond what the German states.",
+        "records": [
+          {
+            "h": "{T1}",
+            "grammar": "{T2}. {T3}",
+            "senses": [
+              {
+                "tag": "1",
+                "german": "1〉 {%Gestirn%} {T4} (auch von der Sonne gebraucht) {T5}. {T6}. {T7} ({T8}) {T9} {T10}. {T11} {T12}. {T13} {T14}. {T15}. {T16}. {%Sterne%} {T17}. {T18}. {T19} {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34} {T35}. {T36} {T37}. {T38}. {T39} {T40}. {T41}. Diese fünf bilden bei den {T42} die Gruppe der {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52} {T53}. {T54}. {T55}. {T56} {T57}. Ein Mal {T58}: {T59} {T60}. {T61} {%aus einem Stern bestehend%} {T62}. {T63}. {T64}.",
+                "russian": "1〉 {%светило%} {T4} (употребляется также о солнце) {T5}. {T6}. {T7} ({T8}) {T9} {T10}. {T11} {T12}. {T13} {T14}. {T15}. {T16}. {%звёзды%} {T17}. {T18}. {T19} {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34} {T35}. {T36} {T37}. {T38}. {T39} {T40}. {T41}. Эти пять образуют у {T42} группу {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52} {T53}. {T54}. {T55}. {T56} {T57}. Однажды {T58}: {T59} {T60}. {T61} {%состоящий из одной звезды%} {T62}. {T63}. {T64}.",
+                "equivalence_type": "equivalent",
+                "source_type": "mixed",
+                "stratum": "Vedic; Epic / early-Classical",
+                "differentia": "«светило» — родовое обозначение небесного тела (включая солнце); «звезда» — видовое, собственно звезда; PWG различает их запятой как взаимозаменяемые синонимы внутри одного значения."
+              },
+              {
+                "tag": "2",
+                "german": "— 2〉 im {T65} {%die Mondstationen%}; in der älteren Zeit (aber auch noch im {T66}) 27, später 28 an der Zahl. Dieselben werden in der Folge auch als {%Gemahlinnen des Mondes%}, als Töchter {T67}ʼs, augfefasst. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75}. {T76}. {T77}, {T78}. {T79} {T80} {T81} {T82}. {T83}. {T84}. {T85}. {T86} {T87}. Die Namen derselben {T88} {T89} {T90} {T91}, {T92}. {T93}, Die vedischen Nachrichten von den Nakshatra.",
+                "russian": "— 2〉 в {T65} {%лунные стоянки%}; в более раннюю эпоху (но также ещё в {T66}) их 27, позднее 28 числом. Впоследствии они же понимаются также как {%супруги Луны%}, как дочери {T67}. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75}. {T76}. {T77}, {T78}. {T79} {T80} {T81} {T82}. {T83}. {T84}. {T85}. {T86} {T87}. Названия их {T88} {T89} {T90} {T91}, {T92}. {T93}, Ведийские сведения о накшатрах.",
+                "equivalence_type": "equivalent",
+                "source_type": "mixed",
+                "stratum": "Vedic; Epic / early-Classical",
+                "differentia": ""
+              },
+              {
+                "tag": "3",
+                "german": "— 3〉 {%Perle%} {T94}_im_{T95} — Was die Etymologie betrifft, so lässt sich gegen die von {T96}_in_{T97} vorgebrachte ({T98} + {T99}) einwenden, dass {%Wächter der Nacht%} nicht auf die Sonne passt, welche in den ältesten Texten vorzugsweise {T100} genannt wird. Die Gleichsetzung von {T101} mit {T102} erregt gleichfalls Bedenken. Eher liesse sich noch an eine Zurückführung auf {T103} ({T104} {T105}. {T106}.) denken, dann wären die Gestirne {%die am Himmel Heraufkommenden%}. Die spielende Zerlegung in {T107} + {T108} findet sich {T109}. {T110}. {T111}. {T112}.",
+                "russian": "— 3〉 {%жемчужина%} {T94}_в_{T95} — Что касается этимологии, то против предложенной {T96}_в_{T97} ({T98} + {T99}) можно возразить, что {%страж ночи%} не подходит к солнцу, которое в древнейших текстах по преимуществу называется {T100}. Отождествление {T101} с {T102} также вызывает сомнения. Скорее можно было бы думать о возведении к {T103} ({T104} {T105}. {T106}.), и тогда светила были бы {%восходящими на небе%}. Игровое разложение на {T107} + {T108} встречается {T109}. {T110}. {T111}. {T112}.",
+                "equivalence_type": "equivalent",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": ""
+              },
+              {
+                "tag": "note",
+                "german": "— {T113} {T114}.",
+                "russian": "— {T113} {T114}.",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "Замыкающая ссылочная заметка PWG к статье."
+              }
+            ]
+          },
+          {
+            "h": "{T115}",
+            "grammar": "{T116}",
+            "senses": [
+              {
+                "tag": "1",
+                "german": "— 1〉 {%Gestirn, Stern;%} {T117} {%die Sonne und die Sterne%} ({T118}) Einmal {T119} als Personification. Am Ende eines {T120} {T121} {T122}",
+                "russian": "— 1〉 {%светило, звезда;%} {T117} {%солнце и звёзды%} ({T118}) Однажды {T119} как персонификация. В конце {T120} {T121} {T122}",
+                "equivalence_type": "equivalent",
+                "source_type": "mixed",
+                "stratum": "",
+                "differentia": "Сокращённая редакция PW: то же значение 1〉, что и в PWG, с добавлением указания на однократную персонификацию."
+              },
+              {
+                "tag": "2",
+                "german": "— 2〉 {%Mondhaus,%} deren in der älteren Zeit 27, später 28 angenommen werden. Personificirt als Töchter {T123}ʼs und Gattinnen des Mondes.",
+                "russian": "— 2〉 {%лунный дом,%} которых в более раннюю эпоху принимается 27, позднее 28. Персонифицируются как дочери {T123} и супруги Луны.",
+                "equivalence_type": "equivalent",
+                "source_type": "mixed",
+                "stratum": "",
+                "differentia": ""
+              },
+              {
+                "tag": "3",
+                "german": "— 3〉 *{%Perle%} {T124}. {T125} {T126} 3〉.",
+                "russian": "— 3〉 *{%жемчужина%} {T124}. {T125} {T126} 3〉.",
+                "equivalence_type": "equivalent",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": ""
+              }
+            ]
+          },
+          {
+            "h": "{T127}",
+            "grammar": "",
+            "senses": [
+              {
+                "tag": "addendum",
+                "german": "{T128} {T129} eines {T130} {T131}.",
+                "russian": "{T128} {T129} некоего {T130} {T131}.",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "Дополнение PW: отдельная патч-заметка, вероятно N. pr. лица/сочинения."
+              }
+            ]
+          },
+          {
+            "h": "{T132}",
+            "grammar": "",
+            "senses": [
+              {
+                "tag": "addendum",
+                "german": "III. 5.",
+                "russian": "III. 5.",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "Чисто ссылочная заметка PW (том/раздел III. 5)."
+              }
+            ]
+          },
+          {
+            "h": "Nakṣatra",
+            "grammar": "m.",
+            "senses": [
+              {
+                "tag": "addendum",
+                "german": "N. pr. eines Ekādaśāṅgin, {T133}",
+                "russian": "N. pr. некоего Ekādaśāṅgin, {T133}",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "Добавление SCH: собственное имя (Ekādaśāṅgin) — отдельный омоним, не относится к значениям 1–3 основной статьи."
+              }
+            ]
+          },
+          {
+            "h": "{T134}",
+            "grammar": "",
+            "senses": [
+              {
+                "tag": "addendum",
+                "german": "{T135} {T136} eines {T137} {T138}.",
+                "russian": "{T135} {T136} некоего {T137} {T138}.",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "PWKVN-дополнение, соответствующее патч-записи PW ({T127})."
+              }
+            ]
+          },
+          {
+            "h": "{T139}",
+            "grammar": "",
+            "senses": [
+              {
+                "tag": "addendum",
+                "german": "III. 5.",
+                "russian": "III. 5.",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "PWKVN-дополнение, соответствующее ссылочной записи PW ({T132})."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ttft_ms": 120839,
+  "ttft_stream_ms": 8726,
+  "time_to_request_ms": 2186,
+  "type": "result",
+  "duration_ms": 159930,
+  "uuid": "7ab8fb7a-898d-495d-9bd3-6201cafe051d"
+}

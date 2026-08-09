@@ -64,7 +64,7 @@ Constrictions 1 and 2 stand unchanged — they moved by 52 and 754 groups respec
 | …raises **lemma-level attestation** (is the headword attested anywhere?) | **yes** — it can shrink the 60.2% "absent everywhere" class |
 | …raises **sense-level grounding** | **no** — there are no sense tags to bind to, and none to be had without lemmatising and tagging it ourselves |
 
-So the realistic levers on the sense-level number are constriction 3 only: run the H1455 aligner over a bigger frame (it had never been run past its own 500 headwords), and add texts / locus crosswalks. **Executed in [H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md)** — which found that the dominant sub-lever was neither of those two but a third nobody had costed: the aligner's own passage sampling. See the correction above.
+So the realistic levers on the sense-level number are constriction 3 only: run the H1455 aligner over a bigger frame (it had never been run past its own 500 headwords), and add texts / locus crosswalks. **Executed in [H1670](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1670-Opus_SanskritLexicography_pwg-dcs-sense-grounding-scale-levers_26.07.26.md)** — which found that the dominant sub-lever was neither of those two but a third nobody had costed: the aligner's own passage sampling. See the correction above.
 
 ## Per-frame reports
 

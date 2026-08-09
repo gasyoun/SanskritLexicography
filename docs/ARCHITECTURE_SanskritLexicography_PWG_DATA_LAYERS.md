@@ -6,7 +6,7 @@ Cover: [PLAN_SanskritLexicography_PWG_DATA_LAYERS_2026H2.md](https://github.com/
 
 ## 1. Anatomy of a PWG card — the model this wave formalises
 
-A PWG record is the span `<L>…<LEND>` in [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt) — 123,366 records. Its markup vocabulary (measured, [`csl-atlas/data/parse-rules/pwg.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/parse-rules/pwg.json)):
+A PWG record is the span `<L>…<LEND>` in [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt) — 123,366 records. Its markup vocabulary (measured, [`csl-atlas/data/parse-rules/pwg.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/parse-rules/pwg.json)):
 
 | Tag | Role | Count | Parse adequacy |
 |-----|------|-------|----------------|

@@ -61,11 +61,14 @@ def has_cyr(s):
 
 # H215 Slice 4 -- the "lowered base grade" for oral units, in ONE place so build_tmx
 # (L0) and tm_grade (L1) apply the identical rule. Live interpretation is noisier
-# (translationese, paraphrase, hesitation), so an oral unit never reaches A on the
-# automatic signals alone -- only human adjudication lifts it there. B and C pass
-# through unchanged; written units are untouched.
-def oral_cap(grade, modality, adjudicated=False):
-    if modality == 'oral' and not adjudicated and grade == 'A':
+# (translationese, paraphrase, hesitation), so an oral unit does not reach A on its
+# solo automatic signals. Two lifts exist (H2193, implementing MG's 19-07-2026 ruling
+# that resolved the ORAL_INGEST.md "Open policy conflict"): human adjudication, or
+# written_agree -- >=1 DISTINCT written work giving the same normalized rendering
+# (computed by tm_grade.consensus_signal). Oral-alone -- even oral-only consensus --
+# still caps at B; B and C pass through unchanged; written units are untouched.
+def oral_cap(grade, modality, adjudicated=False, written_agree=False):
+    if modality == 'oral' and grade == 'A' and not (adjudicated or written_agree):
         return 'B'
     return grade
 
@@ -127,7 +130,8 @@ def l0_tu_xml(rec, grade=L0_GRADE):
     # H215 Slice 4: modality/time anchors flow from the L0 record (build_l0.py) when
     # the source was oral; written L0 records omit them -> DEFAULT_MODALITY, no anchors.
     modality = rec.get('modality') or DEFAULT_MODALITY
-    grade = oral_cap(grade, modality, adjudicated=bool(rec.get('adjudicated')))
+    grade = oral_cap(grade, modality, adjudicated=bool(rec.get('adjudicated')),
+                     written_agree=bool(rec.get('written_agree')))
     parts = ['<tu tuid=%s segtype="block">\n' % quoteattr(rec.get('l0id') or tuid(rec))]
     parts.append(_prop('layer', 'L0'))
     parts.append(_prop('grade', grade))
@@ -407,6 +411,10 @@ def selftest():
 def assert_oral_cap():
     assert oral_cap('A', 'oral') == 'B'
     assert oral_cap('A', 'oral', adjudicated=True) == 'A'
+    # H2193 (MG ruling 19-07-2026): >=1 agreeing written work also lifts the cap
+    assert oral_cap('A', 'oral', written_agree=True) == 'A'
+    assert oral_cap('A', 'oral', adjudicated=False, written_agree=False) == 'B'
+    assert oral_cap('B', 'oral', written_agree=True) == 'B'
     assert oral_cap('B', 'oral') == 'B' and oral_cap('C', 'oral') == 'C'
     assert oral_cap('A', 'written') == 'A'
     return True

@@ -82,8 +82,8 @@ Addresses run 1's small-N. 26 already-translated cards stratified across **parts
 diversity axis): **5 adjectives, 5 m-nouns, 4 f-nouns, 4 n-nouns, 3 indeclinables, 3 verb
 roots, 2 unmarked**. Each judged by an Opus and a Sonnet agent on identical inputs (batch
 of ~6 per agent, reading the pairs file by absolute repo path — no `/tmp`). Verdicts:
-[`judge_ab_run2_opus.jsonl`](judge_ab_run2_opus.jsonl) ·
-[`judge_ab_run2_sonnet.jsonl`](judge_ab_run2_sonnet.jsonl), scored by
+[`judge_ab_run2_opus.jsonl`](RussianTranslation/research/judge_ab_run2_opus.jsonl) ·
+[`judge_ab_run2_sonnet.jsonl`](RussianTranslation/research/judge_ab_run2_sonnet.jsonl), scored by
 [`../src/judge_ab_score.py`](../src/judge_ab_score.py).
 
 **Metrics:** BAD/not-BAD agreement **26/26, Cohen κ = 1.00** · severity exact 11/26, **within
@@ -113,8 +113,8 @@ once non-a-section translations exist, across more of the alphabet), scored by t
 
 Ran the **entire** translated a-section through both judges as a background workflow (21
 chunks × Opus + Sonnet = 42 batch-judge agents, deterministic scoring). Verdicts:
-[`judge_ab_run3_opus.jsonl`](judge_ab_run3_opus.jsonl) ·
-[`judge_ab_run3_sonnet.jsonl`](judge_ab_run3_sonnet.jsonl). One Opus chunk (10 cards
+[`judge_ab_run3_opus.jsonl`](RussianTranslation/research/judge_ab_run3_opus.jsonl) ·
+[`judge_ab_run3_sonnet.jsonl`](RussianTranslation/research/judge_ab_run3_sonnet.jsonl). One Opus chunk (10 cards
 `akanizWa`…`akartana`) died on an API 500, so **191/201 cards have both verdicts**.
 
 ### A/B result (the valid conclusion) — holds decisively at scale
@@ -163,7 +163,7 @@ in the verdict files. A clean defect audit needs homonym-correct pairing (done b
 
 Re-paired every Russian row of the 14 multi-homonym keys to its **own** German homonym (matched
 by `key2`; 30 rows, 0 unmatched) and re-judged with the main-path **Opus** judge. Verdicts:
-[`judge_ab_homonym_opus.jsonl`](judge_ab_homonym_opus.jsonl).
+[`judge_ab_homonym_opus.jsonl`](RussianTranslation/research/judge_ab_homonym_opus.jsonl).
 
 **Result: 28/29 rows clean** (the 30th, `akzarapaNkti~h2`, wasn't returned — agent slip, not a
 defect). When each homonym's Russian is matched to its own German, the previously "catastrophic"
@@ -196,8 +196,8 @@ defect per card and kept controls —
 
 Both judges scored the **blinded** battery (no ground-truth fields visible). The API was
 unstable (two passes + a resume; transient connection-closed/403 errors), so **Opus judged 239,
-Sonnet 209**. Verdicts: [`judge_ab_battery_opus.jsonl`](judge_ab_battery_opus.jsonl) ·
-[`judge_ab_battery_sonnet.jsonl`](judge_ab_battery_sonnet.jsonl).
+Sonnet 209**. Verdicts: [`judge_ab_battery_opus.jsonl`](RussianTranslation/research/judge_ab_battery_opus.jsonl) ·
+[`judge_ab_battery_sonnet.jsonl`](RussianTranslation/research/judge_ab_battery_sonnet.jsonl).
 
 ### Result — a statistical tie
 

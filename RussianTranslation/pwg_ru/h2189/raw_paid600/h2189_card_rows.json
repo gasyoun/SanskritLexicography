@@ -1,0 +1,46 @@
+{
+  "rows": [
+    {
+      "arm": "paid",
+      "phase": "card",
+      "key": "nakzatra",
+      "wall_ms": 254418,
+      "returncode": 0,
+      "api_ms": 227629,
+      "num_turns": 3,
+      "failure_class": null,
+      "usage": {
+        "input_tokens": 4,
+        "output_tokens": 19718,
+        "cache_creation_input_tokens": 60140,
+        "cache_read_input_tokens": 118321
+      },
+      "ttl_1h_tokens": 60140,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.6921183,
+      "cards_returned": 1,
+      "schema_compliant": true,
+      "profile_vocab_leaked": [],
+      "result_head": "{\"cards\":[{\"key1\":\"nakzatra\",\"iast\":\"nakṣatra\",\"notes\":\"Головное слово с тремя основными значениями по PWG/PW: 1) светило/звезда вообще (в т.ч. Солнце), 2) лунная стоянка (накшатра), 3) жемчужина (лексикографическое, по RĀJAN.); плюс краткая заметка об этимологии и несколько кратких вторичных записе",
+      "n": 1,
+      "cost_usd_1h_write": 0.692118
+    }
+  ],
+  "summary": {
+    "paid/card": {
+      "n": 1,
+      "create": 60140,
+      "read": 118321,
+      "input": 4,
+      "output": 19718,
+      "ttl_1h": 60140,
+      "wall_ms": 254418,
+      "api_ms": 227629,
+      "cost_usd_1h_write": 0.692118,
+      "envelope_cost_usd": 0.692118
+    }
+  },
+  "manifest": "h1209_slice3.manifest.json",
+  "model": "claude-sonnet-5",
+  "cache_write_1h_rate": 6.0
+}

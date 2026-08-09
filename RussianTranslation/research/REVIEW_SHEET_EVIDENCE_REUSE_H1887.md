@@ -2,7 +2,7 @@
 
 _Created: 29-07-2026 · Last updated: 30-07-2026_
 
-_Measured by Opus 5 (1M context) (`claude-opus-5[1m]`) for [H1887](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1887-Opus_SanskritLexicography_compound-differs-sheet-evidence-recut_29.07.26.md).
+_Measured by Opus 5 (1M context) (`claude-opus-5[1m]`) for [H1887](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1887-Opus_SanskritLexicography_compound-differs-sheet-evidence-recut_29.07.26.md).
 Deterministic; no LLM in the measurement path. Scripts:
 [`src/review_evidence_preflight.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_evidence_preflight.py),
 [`src/pilot/build_compound_rule_ratification_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_compound_rule_ratification_sheet.py)._

@@ -3,7 +3,7 @@
 _Created: 06-07-2026 · Last updated: 06-07-2026_
 
 **Deliverable 2 of
-[H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md).**
+[H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md).**
 Tests MG's hypothesis that **NWS embeds an outdated ~2013 Cologne (Th. Malten) snapshot
 of PW/SCH**, so current csl-orig may carry fixes NWS lacks (or vice-versa), letting NWS
 content silently shadow a corrected Cologne reading.
