@@ -1,8 +1,41 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 07-08-2026_
+_Created: 09-07-2026 · Last updated: 09-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 09-08-2026 (H2504) — `router.cheap` capture pipeline PASSES 10/10 hermetically; live transport is `GATEWAY_FINAL_ENVELOPE_NOGO`; 0 gateway calls, $0.00
+
+Opus 5 (`claude-opus-5`). **No gateway call was spent.** Both of the two authorised calls were
+withheld; the `h1447-m50-w1` c4 lease is intact and Wave 1 stays unminted.
+
+| Layer | Verdict | Evidence |
+|---|---|---|
+| Capture pipeline (hermetic) | **PASS** | [`gateway_route_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_route_selftest.py) 10/10, zero network, zero spend |
+| Live transport (metered) | **NOGO** | `auth_token_present=False` in-session *and* in subprocess |
+| Metered canary `dq_canary_puregloss` | **NOT RUN** | blocked by the transport boundary above |
+| Wave 1 mint | **DEFERRED** | needs a metered transport, not just a different session |
+| Gateway calls / cost | **0 / $0.00** | reservation ledger never advanced past 0 |
+
+The load-bearing measurement: `credential_status()` was re-run *inside the interactive harness
+session*, not only from a spawned subprocess, and returned `auth_token_present=False` there too.
+`ANTHROPIC_AUTH_TOKEN` is absent from **every Python-reachable environment on this box** — the
+harness holds the credential out-of-process and lends it only to its own Agent tool calls.
+
+That makes the Agent tool insufficient **by construction**, which is the finding worth carrying
+forward: wrapping it would return assistant *text* but no per-call `usage` and no
+`total_cost_usd`, and the locked contract classes absent usage as `cost_evaluable=false` — itself
+an immediate named NO-GO. So an Agent-tool-backed transport fails the metering gate even when the
+generation succeeds. Spending call 1 would have burned budget on a verdict already determined.
+A live qualification pass needs a **metered** transport (direct HTTPS to the gateway, usage block
+in the response), not merely a harness context.
+
+Route mutual exclusion held throughout: `GATEWAY_ROUTE = 'router-cheap-agent'` is permanently
+distinct from `HEADLESS_ROUTE = 'claude-cli-headless'`, and the three production guards
+(`gen_opt_harness2.py:1529`, `execution_contract.py:185`, `promote_final_cards.py:469`) are
+unmodified. Report:
+[GATEWAY_QUALIFICATION_REPORT_H2504_09.08.26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2504/GATEWAY_QUALIFICATION_REPORT_H2504_09.08.26.md)
+· [PR #1617](https://github.com/gasyoun/SanskritLexicography/pull/1617).
 
 ## 07-08-2026 (H2263, #983) — the w1 acceptance run did NOT fire: `BLOCKED_ON_LANE_STOP`, $0.00, and the ration for 07-08 UTC is untouched at 0 of 2
 
