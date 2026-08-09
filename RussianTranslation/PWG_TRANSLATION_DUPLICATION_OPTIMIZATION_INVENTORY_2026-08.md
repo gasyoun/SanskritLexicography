@@ -1,6 +1,6 @@
 # PWG translation — duplication map & unjustified-code optimization inventory
 
-_Created: 02-08-2026 · Last updated: 02-08-2026_
+_Created: 02-08-2026 · Last updated: 03-08-2026 (H2227 OPT-2 markup gates; H2228 OPT-7 last-audit denylist; H2229 OPT-8 kitchen banner; H2226 OPT-4 closed)_
 
 **Purpose.** One place to hunt **optimization**: where the PWG→RU/EN pipeline
 _duplicates logic or code without a good reason_. Companion to the product-
@@ -23,7 +23,7 @@ confuse **lexicographic overlap** with **engineering waste**.
 parity port. Prefer closing a **LANG_PARITY GAP** over inventing a third twin.
 
 **Model provenance:** Grok 4.5 (`grok-4.5`), inventory session 02-08-2026
-([H2222](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2222-Grok_SanskritLexicography_pwg-dup-optimization-inventory_02.08.26.md)).
+([H2222](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2222-Grok_SanskritLexicography_pwg-dup-optimization-inventory_02.08.26.md)).
 
 ---
 
@@ -88,25 +88,25 @@ harder to read than the duplication. Leave unless a third consumer appears.
 Ranked by **leverage × risk** for a refactor session. Line counts measured
 02-08-2026 on `origin/master` (~4118e6a6).
 
-### OPT-1 — EN promote lacks RU merge discipline (LANG_PARITY **GAP**)
+### OPT-1 — EN promote lacks RU merge discipline (LANG_PARITY **SHARED** — closed H2224)
 
 | | |
 |--|--|
-| **Files** | [`promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_final_cards.py) (~2080 lines) vs [`promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py) (~400 lines) |
-| **Waste** | EN attach overwrites `en` without better-attempt-wins ranking and without the RU model-identity cross-check (B08/B20 twins). Ledger: `h1339_en_promote_parity_gap`, residual of `h1553_wall_clock_defect_ready_partial` (defect-key refuse + `ready_partial` RU-only). |
-| **Optimize** | Port **merge ranking + refuse-defect + model-id** into promote_en (or extract `promote_common.py` used by both). Do **not** merge the whole 2k-line RU bridge into EN — EN is attach-overlay by design (INTENTIONAL store shape). |
-| **Prove** | LANG_PARITY entry → SHARED; window_selftest EN promote cases; dry-run on H1209 mini-EN when EN store non-empty. |
-| **Risk** | Medium — first real `promote_en` production run is the consumer; gap noted as pre-req. |
+| **Files** | [`promote_final_cards.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_final_cards.py) (~2080 lines) vs [`promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py) (attach-overlay + B08/B20/H1553 twins) |
+| **Waste** | ~~EN attach overwrote `en` without better-attempt-wins / model-id / defect refuse.~~ **Closed H2224** (Grok 4.5 `grok-4.5`, 02-08-2026): better-attempt-wins on `en`/`en_provenance`, `model_tier` + execution.model_identifier refuse, defect-key refuse + `--ready-partial-report`. Ledger: `h1339_en_promote_parity_gap` + `h1553_wall_clock_defect_ready_partial` → SHARED. |
+| **Optimize** | ~~Port merge ranking + refuse-defect + model-id.~~ Done without folding the full RU bridge into EN (helpers single-sourced from `promote_final_cards`). |
+| **Prove** | LANG_PARITY SHARED; `promote_en --selftest` (B08/B20/H1553 pins); fixture dry-run defect refuse. |
+| **Risk** | First real `promote_en` production run remains the consumer — guards now present. |
 
 ### OPT-2 — RU audit orchestrator vs EN all-in-one auditor (structural twin)
 
 | | |
 |--|--|
-| **Files** | [`audit_window.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py) (~844 lines, **orchestrates** child auditors) vs [`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py) (~527 lines, **reimplements** gates in one file) |
-| **Waste** | LANG_PARITY header states the original problem: EN reimplements gates from scratch → C1–C9 class of EN-only holes. Shared pieces already extracted (`foreign_literal_guards.py`, `stage2_pregate`, `window_reports.build_production_metrics`, `CARD_FIELD`). Residual: LS/SAN/AB/DUP/MISSING-* loops still forked. |
-| **Optimize** | Extract **lang-agnostic sense markup gates** (`ls_loss`, `san_loss`, `ab_loss`, identical-target `DUP`) into one module parameterized by target field name (`russian`/`english`); leave language-specific soft flags (NO-RUSSIAN / DE-RESIDUE / MW-DIVERGE) in thin wrappers. |
-| **Prove** | `window_selftest` green; LANG_PARITY hash re-stamp; byte-stable reports on a frozen `wf_output` fixture. |
-| **Risk** | High if done as a big-bang rewrite; low if one gate family per PR. |
+| **Files** | [`audit_window.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window.py) (orchestrates child auditors) vs [`audit_window_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/audit_window_en.py) (per-sense EN wrapper) · shared [`markup_fidelity_gates.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/markup_fidelity_gates.py) |
+| **Waste** | ~~LS/SAN/AB/DUP loops forked between EN all-in-one and RU `audit_translation`.~~ **Closed H2227** (Grok 4.5 `grok-4.5`, 02-08-2026): one field-parameterized module; EN soft flags + RU NO-RUSSIAN stay in wrappers. Residual shape: RU still orchestrates children; EN still all-in-one for EN-semantic soft — intentional, not a twin. |
+| **Optimize** | ~~Extract lang-agnostic sense markup gates.~~ Done (`markup_span_flags`, `within_record_identical_target`, field=`russian`/`english`). |
+| **Prove** | `window_selftest` green; LANG_PARITY `opt2_shared_markup_fidelity_gates_h2227` SHARED + hash re-stamp; `markup_fidelity_gates --selftest`. |
+| **Risk** | Closed without mega-rewrite of both auditors end-to-end. |
 
 ### OPT-3 — Inline selfheal vs standalone autosplit (deferred consolidation)
 
@@ -118,15 +118,15 @@ Ranked by **leverage × risk** for a refactor session. Line counts measured
 | **Prove** | golden fragment fixtures: same input → identical stitched card + missing-ids from both entry points. |
 | **Risk** | High (translation control flow). Default: **defer**. |
 
-### OPT-4 — H1209 / H1210 Workflow templates hardcode RU (LANG_PARITY **GAP**)
+### OPT-4 — H1209 / H1210 Workflow templates hardcode RU (LANG_PARITY **SHARED** — closed H2226)
 
 | | |
 |--|--|
 | **Files** | `src/pilot/h1209/wf_template.js`, `h1210/wf_template_ab.js`, `h1210/control_template.js` (+ already field-parameterized Python: `canonical_audit.py`, `det_gate.py`, …) |
-| **Waste** | JS hardcodes `russian` target + RU controller prompt; Python side is already parameterized. Second EN scaffold would **duplicate the wrong layer**. |
-| **Optimize** | Parameterize the **two prompts / target field in JS** once; EN A/B reuses the same scaffold (ledger note on `h1210_ab_arm_scaffold` forbids forking a second EN tree). |
-| **Prove** | mini-EN canary + existing RU 3-card canary still green. |
-| **Risk** | Medium. |
+| **Waste** | ~~JS hardcodes `russian` target + RU controller prompt.~~ **Closed H2226** (Grok 4.5 `grok-4.5`, 02-08-2026): `TARGET_FIELD` + `CONTROLLER_PROMPT` from payload (`prep_slice` / `arm_b_control`); EN inject build without a second scaffold tree. |
+| **Optimize** | ~~Parameterize the two prompts / target field in JS once.~~ Done; live paid EN campaign remains optional follow-up. |
+| **Prove** | `js_field_param_selftest` RU/EN inject; `det_gate selftest` EN field path; RU 3-card canary fixture + `canonical_audit` green. LANG_PARITY `h1209_controller_worker_rig` + `h1210_ab_arm_scaffold` → SHARED. |
+| **Risk** | Residual: first live EN Workflow run still the consumer. |
 
 ### OPT-5 — Judge / gold-sample twins (small, low urgency)
 
@@ -156,9 +156,9 @@ audit-failed card (`agent_expected_after_tm: 0` real work).
 
 | | |
 |--|--|
-| **Optimize** | Already mitigated by `--no-tm` on defect requeue. Residual hardening: TM invalidation keyed on **last audit outcome** (or fragment denylist always applied before TM hit), so a default requeue cannot silently no-op. |
-| **Risk** | Medium (false-invalidates good TM if audit is wrong). |
-| **Prove** | gam-class fixture: requeue without flags still refuses failed hash. |
+| **Optimize** | ~~Already mitigated by `--no-tm` on defect requeue. Residual: last-audit denylist stamp.~~ **Closed H2228** (Grok 4.5 `grok-4.5`, 02-08-2026): `stamp_denylist_from_last_audit` at `write_reports` / EN `--write-requeue`; `load_tm` already applies denylist before hit; defect requeue still forces `--no-tm`. |
+| **Risk** | Medium (false-invalidates good TM if audit is wrong) — controls: defect-only, skip-crashed, clean held-out keys serve, promote unblocks. |
+| **Prove** | `test_opt7_last_audit_tm_refuse_without_no_tm` gam-class fixture: stamp without `--no-tm` refuses failed hash; clean key still hits. |
 
 ### OPT-8 — Multi-execution of the same root (ops)
 
@@ -169,6 +169,7 @@ same work (historical H963/H994 shape).
 |--|--|
 | **Optimize** | Already: store-hit preflight, coordinator occupied-keys, worktree claim, `--max-wide=1` bounded run. Residual: surface **store-hit / lease collision** louder in progress kitchen / ledger so a human does not start a second paid window. |
 | **Risk** | Low (observability only). |
+| **Status (H2229)** | **Shipped observability:** collision aborts emit `dashboard_events` (`lease_collision` / `store_hit` / `occupied_keys_unreadable`); kitchen `collision_guard` + red banner + operator one-liner. Selftest `progress_dashboard/kitchen_collision_selftest.py`. Not a new concurrency protocol. |
 
 ---
 
@@ -222,10 +223,10 @@ rg -n '"verdict": "GAP"' RussianTranslation/LANG_PARITY.md
 
 | Priority | Item | Why first |
 |----------|------|-----------|
-| **P0** | OPT-1 EN promote parity (GAP) | Blocks safe EN production promote; small surface vs RU promote |
-| **P1** | OPT-6 citation coverage single source | Pure function, low risk, doc honesty |
-| **P1** | OPT-4 H1209/H1210 JS field parameterize | Unblocks EN canary without forking scaffold |
-| **P2** | OPT-2 extract lang-agnostic markup gates | High leverage, needs staged PRs |
+| **P0** | ~~OPT-1 EN promote parity~~ **done H2224** | Guards landed; first real EN promote still the consumer |
+| **P1** | ~~OPT-6 citation coverage single source~~ **done H2225** | Pure function shipped |
+| **P1** | ~~OPT-4 H1209/H1210 JS field parameterize~~ **done H2226** | Scaffold field-param; first live EN Workflow still the consumer |
+| **P2** | ~~OPT-2 extract lang-agnostic markup gates~~ **done H2227** | Shared module + both auditors wired |
 | **P3** | OPT-7 TM invalidation on defect | Cost insurance on requeues |
 | **P3** | C-1 restate short-path | Product spend; needs policy + measurement |
 | **Defer** | OPT-3 selfheal↔autosplit merge | Explicitly deferred until third consumer or drift bug |

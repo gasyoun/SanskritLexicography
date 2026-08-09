@@ -27,3 +27,23 @@
 *.ifo binary
 *.idx binary
 *.dz binary
+
+# --- non-Unicode-font document (H2173 follow-up, 04-08-2026) ---
+# Measured, not assumed: 5,452 control codepoints across 3,818 runs (~35 KB, 1.4% of the
+# file). They are NOT one defect. Figure 7.2's axis labels were a symbol font offset by
+# exactly +32 and have been decoded to real text. The rest is largely comparative phonetic
+# transcription (Tibeto-Burman cognate tables) rendered through non-Unicode fonts, plus at
+# least one block on a DIFFERENT offset - each needs its own font mapping, so a blanket
+# transform would corrupt them. Re-extraction was tested and rejected: PyMuPDF's text for
+# the caption page does not contain the axis labels at all, so it would delete content
+# rather than repair it. git therefore still reads this file as binary; declared so that
+# behaviour is on the books.
+#
+# RULED 04-08-2026: NO re-typesetting / OCR pass. This declaration is therefore PERMANENT,
+# not a placeholder — do not re-propose re-extracting or re-typesetting this file. The
+# recoverable content has already been recovered (Figure 7.2, decoded from a +32 font
+# offset); what remains needs a separate font mapping per run across 3,818 runs and is not
+# worth the effort. Re-extraction is additionally a REGRESSION here, measured: PyMuPDF does
+# not emit the figure's axis labels at all and pdftotext returns an empty page, so any
+# re-extraction would delete content this file currently preserves.
+"literature/md/Lexicography-Manuals/THE ROUTLEDGE HANDBOOK OF HISTORICAL LINGUISTICS.md" binary

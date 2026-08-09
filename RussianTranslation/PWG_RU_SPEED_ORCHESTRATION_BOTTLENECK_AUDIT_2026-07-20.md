@@ -2,7 +2,7 @@
 
 _Created: 20-07-2026 · Last updated: 20-07-2026_
 
-> **Provenance.** Handoff [H1403](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1403-Fable_RussianTranslation_pwg-ru-speed-orchestration-audit_20.07.26.md).
+> **Provenance.** Handoff [H1403](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1403-Fable_RussianTranslation_pwg-ru-speed-orchestration-audit_20.07.26.md).
 > Produced by a 22-agent ultracode Workflow run (`wf_1b45f9b1-8f3`): 5 subsystem miners →
 > 1 synthesizer → 16 adversarial verifiers (two lenses per recommendation — prior-art/standing-ruling
 > and real-wall-clock-impact), every agent Fable 5 (`claude-fable-5`); ~2.13 M subagent tokens,
@@ -54,7 +54,7 @@ verification; the caveats are the verifiers', not softened.
 ### A1. Run the queued H1209 medium50 batch (status: WEAKENED-only-because-already-minted)
 
 The single highest-value action, and it is **already minted work, parked since 18-07**
-([H1209](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1209-Opus_SanskritLexicography_pwg-ru-controller-worker-canary_17.07.26.md);
+([H1209](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1209-Opus_SanskritLexicography_pwg-ru-controller-worker-canary_17.07.26.md);
 worklist `H317_medium50_worklist.08.07.26.json` on disk; rig complete under
 [`src/pilot/h1209/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1209)).
 On degraded-transport days baseline is 0 promoted cards, so the Amdahl case is clean: this
@@ -202,7 +202,7 @@ gated behind transport recovery + the H911 quality freeze.
    produced almost nothing the repo had not already built, minted, or dead-ended — 6/8
    recommendations reduced to "finish/run/comply with existing work". The improvement frontier
    is *execution and telemetry*, not design. This is itself the strongest possible answer to
-   "how to improve": run [H1209](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1209-Opus_SanskritLexicography_pwg-ru-controller-worker-canary_17.07.26.md)'s
+   "how to improve": run [H1209](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1209-Opus_SanskritLexicography_pwg-ru-controller-worker-canary_17.07.26.md)'s
    medium50, finish H390 rule 4(a), close the three A3 residues.
 2. **Dead-end registry gap (fixed in this PR).** The H1225 SANLOSS escalation — an expensive,
    twice-disproven fix attempt — was recorded only in its memo, absent from

@@ -16,6 +16,7 @@ page can show the *process* behind the article site:
   - K1–K8      operator strip, yield/requeue, ETA, health, instrumentation,
                cost honesty (see kitchen_slices.py / ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026)
   - residual   B1 subscription $, B9 idle reasons, B10 article-site parity (H2218)
+  - OPT-8      collision_guard — store-hit / lease collision kitchen banner (H2229)
 
 All inputs are local-only / gitignored pipeline artifacts under
 RussianTranslation/. Missing files degrade that slice; the build never raises.
@@ -59,6 +60,12 @@ ECONOMY = PILOT_OUT / "economy_ledger.json"
 SUBSCRIPTION = PILOT_OUT / "economy_subscription.json"
 IDLE_REASON_LOG = PILOT_OUT / "idle_reason_log.jsonl"
 ARTICLE_SITE = RT / "article_site"
+# Scheduler sqlite (cwd-relative when operators run from pilot/); also under pilot/output.
+ORCHESTRATOR_DB_CANDIDATES = (
+    PILOT_OUT / "max_orchestrator.sqlite",
+    RT / "src" / "pilot" / "max_orchestrator.sqlite",
+    DATA_REPO / "max_orchestrator.sqlite",
+)
 
 # "Translation is on" if any of these artifacts moved within this window.
 ACTIVE_WITHIN_SECONDS = 15 * 60
@@ -258,6 +265,8 @@ def ledger_cost_speed() -> dict:
                 "wall_clock_minutes": mins,
                 "tokens": tok,
                 "gen_model": r.get("gen_model"),
+                "host": r.get("host"),
+                "profile": r.get("profile") or r.get("profile_slot"),
             }
         )
     shown = recent[-RECENT_LIST_LEN:]
@@ -674,10 +683,12 @@ def main():
     yld = ks.yield_quality(all_rows)
     gates = ks.gate_summary(EVENTS)
     instr = ks.instrumentation_coverage(all_rows)
+    lane_mix = ks.multi_lane_mix(all_rows)
     health = ks.health_ribbon(PILOT_OUT)
     quality = ks.quality_slice(PILOT_OUT, all_rows, EVENTS)
     cost_h = ks.cost_honesty(econ if isinstance(econ, dict) else {}, spend)
     eta = ks.eta_verb(RT, speed)
+    eta["nominal"] = ks.eta_nominal(RT)
 
     # H2218 residual slices (B1 / B9 / B10) — additive keys on kitchen v2.
     subscription = ks.load_subscription(SUBSCRIPTION)
@@ -701,6 +712,10 @@ def main():
     if idle_pub.get("last_idle") and annotated_all:
         idle_pub["last_idle"] = annotated_all[-1]
     parity = ks.article_site_parity(STORE, ARTICLE_SITE)
+    promote_vs_generate = ks.promote_vs_generate(speed, all_rows, EVENTS, utc_now())
+
+    orch_db = next((p for p in ORCHESTRATOR_DB_CANDIDATES if p.exists()), None)
+    collision = ks.collision_guard(EVENTS, orchestrator_db=orch_db)
 
     # Drop bulk rows from published JSON (keep aggregates only).
     ledger_pub = {k: v for k, v in ledger.items() if k != "all_rows"}
@@ -709,7 +724,10 @@ def main():
         "generated_at": utc_now_iso(),
         "schema": "pwg.kitchen.v2",
         "schema_note": (
-            "H2218 additive keys: cost.subscription, idle.reasons, article_parity "
+            "H2218 additive keys: cost.subscription, idle.reasons, article_parity; "
+            "H2229 collision_guard (OPT-8 lease/store-hit banner); "
+            "H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); "
+            "H2231 multi_lane (B8 gen_model/host/profile mix) "
             "(still pwg.kitchen.v2 — non-breaking)"
         ),
         "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
@@ -725,10 +743,13 @@ def main():
         "yield_quality": yld,
         "gates": gates,
         "instrumentation": instr,
+        "multi_lane": lane_mix,
         "health": health,
         "quality": quality,
         "eta": eta,
         "article_parity": parity,
+        "promote_vs_generate": promote_vs_generate,
+        "collision_guard": collision,
         "speed": {
             "cards_last_hour": speed.get("last_hour"),
             "cards_last_24h": speed.get("last_24h"),
@@ -763,6 +784,13 @@ def main():
     out_path = OUT / "kitchen_data.json"
     out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"kitchen_data.json written ({data['generated_at']}).")
+
+    # B4 — append-only quality/fidelity/judge timeseries (one row per build date).
+    qts_path = OUT / "quality_timeseries.json"
+    qts = ks.quality_timeseries_append(
+        qts_path, quality, data["generated_at"], data["generated_at"][:10]
+    )
+    print(f"quality_timeseries.json: {len(qts['snapshots'])} snapshot(s).")
     print(
         f"  translation_on={act['translation_on']}  "
         f"cards_24h={speed.get('last_24h')}  "
@@ -773,7 +801,13 @@ def main():
         f"article_parity={parity.get('measured')}  "
         f"health={health.get('last_verdict')}  "
         f"yield_clean={yld.get('clean_windows')}/{yld.get('windows')}  "
-        f"changelog_entries={len(clog.get('entries') or [])}"
+        f"collision_blocked={collision.get('blocked')}  "
+        f"collision_n={collision.get('collision_count')}  "
+        f"changelog_entries={len(clog.get('entries') or [])}  "
+        f"promote_week={promote_vs_generate['weekly']['clean_windows']}/"
+        f"{promote_vs_generate['weekly']['cards_generated']}  "
+        f"promote_lifetime={promote_vs_generate['lifetime']['clean_windows']}/"
+        f"{promote_vs_generate['lifetime']['cards_generated']}"
     )
 
 

@@ -6,7 +6,7 @@ Hostile pre-submission review of
 [papers/A30_skd_vcp_microstructure_note.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A30_skd_vcp_microstructure_note.md)
 ("When Zero Means Nothing: Recovering the Indigenous Microstructure of the Śabdakalpadruma
 and the Vācaspatya", → IJL / WSC 2027) by **Fable 5 (`claude-fable-5`)**, 21-07-2026, under
-handoff [H1382](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1382-Fable_SanskritLexicography_a30-hostile-referee-pass-skd-vcp_20.07.26.md).
+handoff [H1382](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1382-Fable_SanskritLexicography_a30-hostile-referee-pass-skd-vcp_20.07.26.md).
 
 **Fresh-session constraint (recorded per the handoff header).** The A30 draft was authored by
 the same model tier (Fable 5, H1073). This pass was run as a fresh session with no memory of

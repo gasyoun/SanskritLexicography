@@ -1,6 +1,6 @@
 # PWG→RU progress & kitchen dashboard
 
-_Created: 10-07-2026 · Last updated: 02-08-2026_
+_Created: 10-07-2026 · Last updated: 06-08-2026 (H2269 dual-run: health_probe_log path)_
 
 **Improvement backlog (measured / show / should-measure):**
 [ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md).
@@ -70,7 +70,26 @@ Where the article site shows the **finished** PWG→Russian translations, this s
   `human` · `weekly_cap` · `health_nogo` · `machine_off` · `waiting_requeue` · `unknown`
   (operator log and measured auto-rules only — silence stays `unknown`).
 - **Article-site parity** — store unique roots vs `article_site/md/*.md` (B10); `measured: false` if the site is not built locally.
+- **Lease collision / store-hit banner (OPT-8, H2229)** — red kitchen banner when
+  `dashboard_events.jsonl` records a store-hit or lease-collision abort (occupied-keys
+  overlap, unreadable live manifest, nominal keys already active). **Operator one-liner:**
+  if the banner is red (or `collision_guard.blocked=true`), **do not start a second paid
+  window** on those keys/root — wait for the live job to finish or requeue that lease.
+  Fixture: [`examples/collision_events.example.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/examples/collision_events.example.jsonl).
+  Selftest: `python progress_dashboard/kitchen_collision_selftest.py`.
 - **Calendar** — day heatmap of cards written (store provenance) + window counts.
+- **Health ribbon (K5 / B3 residual, H2240 + H2269)** — last c4 (and sibling) probe
+  GO/NO-GO + recent sparkline. Writer contract: every `live_probe` reading appends to
+  the **canonical**
+  [`RussianTranslation/src/pilot/output/health_probe_log.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/output/health_probe_log.jsonl)
+  (gitignored runtime log; created on first probe). Per-account
+  `h963_*_gate0_probe_events.jsonl` / `*_probe_events.jsonl` files stay untouched for
+  gate reports. Reader (`kitchen_slices.health_ribbon`) prefers the canonical file
+  **exclusively** when present; falls back to the old glob scrape only on a pre-H2240
+  checkout. One-time history fold:
+  `python RussianTranslation/src/pilot/migrate_health_probe_log.py`
+  (`--dry-run` first; `--output-dir <path>` for another checkout). Pin:
+  `python progress_dashboard/health_ribbon_selftest.py`.
 - **Web changelog** — recent version bullets from `RussianTranslation/CHANGELOG.md`.
 
 For **sub-second** run/gate telemetry on the residential machine (not published), use the
@@ -87,7 +106,9 @@ python RussianTranslation/src/pilot/dashboard_server.py
 |---|---|
 | [`build_progress_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_progress_data.py) | lane/store/coverage snapshot → `progress_data.json` + timeseries |
 | [`build_kitchen_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/build_kitchen_data.py) | speed/cost/idle/calendar/changelog + K1–K8 + H2218 residual → `kitchen_data.json` |
-| [`kitchen_slices.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_slices.py) | pure aggregators (operator, yield, health, subscription, idle reasons, parity) |
+| [`kitchen_slices.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_slices.py) | pure aggregators (operator, yield, health, subscription, idle reasons, parity, multi_lane B8, H2241 `progress_kitchen_slice`) |
+| [`kitchen_progress_slice_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_progress_slice_selftest.py) | H2268 dual-run pin — progress_kitchen_slice field map / GO encoding / no review invent |
+| [`kitchen_multi_lane_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_multi_lane_selftest.py) | H2231 B8 — gen_model/host/profile mix fixture pins |
 | [`backfill_ledger_metrics.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/backfill_ledger_metrics.py) | best-effort historical wall-clock / gen_model backfill (dry-run; `--apply` rewrites gitignored ledger) |
 | [`examples/economy_subscription.example.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/examples/economy_subscription.example.json) | paste schema for subscription $ |
 | [`examples/idle_reason_log.example.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/examples/idle_reason_log.example.jsonl) | operator idle-reason log format |
@@ -95,6 +116,7 @@ python RussianTranslation/src/pilot/dashboard_server.py
 | [`progress_data.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/progress_data.json) | progress snapshot (committed occasionally; live ticks go to gh-pages only) |
 | [`progress_timeseries.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/progress_timeseries.json) | append-only daily trend rows |
 | [`kitchen_data.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/kitchen_data.json) | kitchen snapshot |
+| [`quality_timeseries.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/quality_timeseries.json) | B4 — append-only daily fidelity/judge-coverage trend, one row per build date (`kitchen_slices.quality_timeseries_append`, sourced from `quality_slice()`'s `fidelity_aggregate.json` + ledger judge-sample counts) |
 | [`index.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/index.html) | self-contained page; polls JSON every 60s |
 
 ## Refresh

@@ -17,6 +17,10 @@ if (!PAYLOAD || PAYLOAD.schema !== 'h1210.control.v1') {
     + (PAYLOAD && PAYLOAD.schema))
 }
 const CARDS = PAYLOAD.cards
+// H2226 OPT-4: same field + controller prompt parameterization as wf_template_ab.js
+// (arm A inline controller). Arm B must not re-hardcode Russian.
+const TARGET_FIELD = PAYLOAD.field || 'russian'
+const CONTROLLER_PROMPT = PAYLOAD.controller_prompt || null
 
 const VERDICT_SCHEMA = {
   type: 'object', additionalProperties: false, required: ['ok', 'issues'],
@@ -34,13 +38,22 @@ const VERDICT_SCHEMA = {
 const AGENT_DEADLINE_MS = 900000
 const withDeadline = (p, ms) => Promise.race([p, new Promise(res => setTimeout(() => res(null), ms))])
 
-async function controllerReview(c) {
-  const prompt = 'You are the QUALITY CONTROLLER for a PWG German->Russian scholarly dictionary translation. '
-    + 'For headword ' + c.key1 + ', check each sense: (a) the Russian faithfully renders the German gloss '
+function defaultControllerPrompt(key1) {
+  const lang = TARGET_FIELD === 'english' ? 'English' : 'Russian'
+  const pair = TARGET_FIELD === 'english' ? 'German->English' : 'German->Russian'
+  return 'You are the QUALITY CONTROLLER for a PWG ' + pair + ' scholarly dictionary translation. '
+    + 'For headword ' + key1 + ', check each sense: (a) the ' + lang + ' faithfully renders the German gloss '
     + '(no invented, dropped, or merged meaning), (b) every {Tn} placeholder present in the German is a real '
     + 'masked span (not invented), (c) scholarly-philological register. Set ok=false with specific, actionable '
     + 'issues ONLY for genuine fidelity defects; do NOT nitpick style or wording preference. Senses JSON:\n'
-    + JSON.stringify(c.senses)
+}
+
+async function controllerReview(c) {
+  // c.senses already carries the target-field key (arm_b_control.senses_of); do not assume russian.
+  const prefix = CONTROLLER_PROMPT
+    ? String(CONTROLLER_PROMPT).replace(/\{key1\}/g, c.key1)
+    : defaultControllerPrompt(c.key1)
+  const prompt = prefix + JSON.stringify(c.senses)
   return await withDeadline(
     agent(prompt, { label: 'control:' + c.key1, phase: 'Control', model: 'opus', schema: VERDICT_SCHEMA }),
     AGENT_DEADLINE_MS)

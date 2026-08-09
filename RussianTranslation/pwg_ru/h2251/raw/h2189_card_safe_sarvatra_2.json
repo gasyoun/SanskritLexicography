@@ -1,0 +1,163 @@
+{
+  "is_error": false,
+  "duration_api_ms": 195983,
+  "num_turns": 4,
+  "stop_reason": "tool_use",
+  "session_id": "24f8b3a7-d020-4bd4-8d40-1b4c40fb0349",
+  "total_cost_usd": 0.5694517,
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 36955,
+    "cache_read_input_tokens": 138629,
+    "output_tokens": 19816,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 36955,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 7022,
+        "cache_read_input_tokens": 60938,
+        "cache_creation_input_tokens": 7223,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 7223
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 8785,
+      "outputTokens": 18,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.008875,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty"
+    },
+    "claude-sonnet-5": {
+      "inputTokens": 6,
+      "outputTokens": 19816,
+      "cacheReadInputTokens": 138629,
+      "cacheCreationInputTokens": 36955,
+      "webSearchRequests": 0,
+      "costUSD": 0.5605767,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"cards\":[{\"key1\":\"sarvatra\",\"iast\":\"sarvatra\",\"notes\":\"Головное слово представлено двумя пластами источника: основная статья PWG (Böhtlingk-Roth, большое издание) и сокращённая переработанная статья PW (Böhtlingk, малое издание). Обе даны как отдельные записи (records) одного слова; нумерация значений 1〉/2〉 сохранена по каждому источнику отдельно.\",\"records\":[{\"h\":\"{T1}\",\"grammar\":\"adj., adv.\",\"senses\":[{\"tag\":\"0\",\"german\":\"{T1}¦ (von {T2}) {T3} {T4}. {T5}.\",\"russian\":\"{T1} — (от {T2}) {T3} {T4}. {T5}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Грамматическая справка: форма adv., отсылки к грамматикам P. (Pāṇini) и VOP. (Vopadeva).\"},{\"tag\":\"1\",\"german\":\"{T122} 1〉 {%überall, stets, in allen Fällen, jederzeit%} {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}, {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52}. {T53}. {T54}. {T55}. {T56}. {T57} {T58}. {T59}. {T60}. {T61} {T62}. {T63} {T64}. {T65}. {T66}. {T67}. {T68} {T69}. {T70} {%in keinem Falle%} {T71}.\",\"russian\":\"{T122} 1) везде, всегда, во всех случаях, в любое время {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}, {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52}. {T53}. {T54}. {T55}. {T56}. {T57} {T58}. {T59}. {T60}. {T61} {T62}. {T63} {T64}. {T65}. {T66}. {T67}. {T68} {T69}. {T70} ни в коем случае {T71}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"Vedic, Epic / early-Classical, Classical, Medieval\",\"differentia\":\"Синонимический ряд из четырёх слов, соответствующий немецкому: «везде» (пространственное значение), «всегда»/«в любое время» (временное), «во всех случаях» (обстоятельственное) — сохранена запятая PWG как граница взаимозаменяемых синонимов. При отрицании (в конце ряда) — «ни в коем случае».\"},{\"tag\":\"2\",\"german\":\"{T123}— 2〉 = {T72} {T73} und {T74} {T75} {T76}. {T77} {T78} zu {T79}. {T80} {T81}. {T82} {T83}. {T84}. {T85} {T86} {T87}. {T88} {T89}. {T90} {T91}. {T92} {T93}. {T94} {T95}. {T96} {T97}. {T98}. {T99}. {T100} {T101}. {T102} ({T103} {T104}) {T105}. {T106}. {T107} {T108}. {T109} {%Holz für Nichts gut%} {T110}.\",\"russian\":\"{T123} — 2) = {T72} {T73} и {T74} {T75} {T76}. {T77} {T78} к {T79}. {T80} {T81}. {T82} {T83}. {T84}. {T85} {T86} {T87}. {T88} {T89}. {T90} {T91}. {T92} {T93}. {T94} {T95}. {T96} {T97}. {T98}. {T99}. {T100} {T101}. {T102} ({T103} {T104}) {T105}. {T106}. {T107} {T108}. {T109} дерево, ни на что не годное {T110}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Epic / early-Classical, Classical\",\"differentia\":\"Значение = adj. и subst. (эквивалентно склоняемой форме sarva- «весь, всякий»); в конце ряда — иллюстративный пример-поговорка «дерево, ни на что не годное», где sarvatra с отрицанием даёт смысл «ни на что негодный».\"},{\"tag\":\"tail\",\"german\":\"{T124}— {T111} {T112}.\",\"russian\":\"{T124} — {T111} {T112}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Заключительная ссылочно-сопоставительная заметка без переводимого текста (только сигла/перекрёстная ссылка).\"}]},{\"h\":\"{T113}\",\"grammar\":\"adj., adv.\",\"senses\":[{\"tag\":\"0\",\"german\":\"{T113}¦ {T114}\",\"russian\":\"{T113} ¦ {T114}\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Заголовочная строка сокращённой статьи PW (без переводимого текста).\"},{\"tag\":\"1\",\"german\":\"{T125}— 1〉 {%überall, stets, in allen Fällen, jederzeit%}. Verstärkt {T115} {T116} {T117} {T118} {T119}. Mit einer Negation {%in keinem Falle%}.\",\"russian\":\"{T125} — 1) везде, всегда, во всех случаях, в любое время. Усилено {T115} {T116} {T117} {T118} {T119}. С отрицанием — «ни в коем случае».\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"Тот же синонимический ряд, что и в PWG, дополнительно отмечено усиление (Verstärkt) конструкцией; при отрицании — «ни в коем случае».\"},{\"tag\":\"2\",\"german\":\"{T126}— 2〉 = {T120} mit einer Negation {%für Nichts%} {T121}\",\"russian\":\"{T126} — 2) = {T120}; с отрицанием — «ни за что» {T121}\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"Сокращённая формулировка того же значения = adj./subst., с отрицанием даёт идиому «ни за что», соответствующую примеру «дерево, ни на что не годное» из PWG.\"}]}]}]}",
+  "structured_output": {
+    "cards": [
+      {
+        "key1": "sarvatra",
+        "iast": "sarvatra",
+        "notes": "Головное слово представлено двумя пластами источника: основная статья PWG (Böhtlingk-Roth, большое издание) и сокращённая переработанная статья PW (Böhtlingk, малое издание). Обе даны как отдельные записи (records) одного слова; нумерация значений 1〉/2〉 сохранена по каждому источнику отдельно.",
+        "records": [
+          {
+            "h": "{T1}",
+            "grammar": "adj., adv.",
+            "senses": [
+              {
+                "tag": "0",
+                "german": "{T1}¦ (von {T2}) {T3} {T4}. {T5}.",
+                "russian": "{T1} — (от {T2}) {T3} {T4}. {T5}.",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "Грамматическая справка: форма adv., отсылки к грамматикам P. (Pāṇini) и VOP. (Vopadeva)."
+              },
+              {
+                "tag": "1",
+                "german": "{T122} 1〉 {%überall, stets, in allen Fällen, jederzeit%} {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}, {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52}. {T53}. {T54}. {T55}. {T56}. {T57} {T58}. {T59}. {T60}. {T61} {T62}. {T63} {T64}. {T65}. {T66}. {T67}. {T68} {T69}. {T70} {%in keinem Falle%} {T71}.",
+                "russian": "{T122} 1) везде, всегда, во всех случаях, в любое время {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}, {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52}. {T53}. {T54}. {T55}. {T56}. {T57} {T58}. {T59}. {T60}. {T61} {T62}. {T63} {T64}. {T65}. {T66}. {T67}. {T68} {T69}. {T70} ни в коем случае {T71}.",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "Vedic, Epic / early-Classical, Classical, Medieval",
+                "differentia": "Синонимический ряд из четырёх слов, соответствующий немецкому: «везде» (пространственное значение), «всегда»/«в любое время» (временное), «во всех случаях» (обстоятельственное) — сохранена запятая PWG как граница взаимозаменяемых синонимов. При отрицании (в конце ряда) — «ни в коем случае»."
+              },
+              {
+                "tag": "2",
+                "german": "{T123}— 2〉 = {T72} {T73} und {T74} {T75} {T76}. {T77} {T78} zu {T79}. {T80} {T81}. {T82} {T83}. {T84}. {T85} {T86} {T87}. {T88} {T89}. {T90} {T91}. {T92} {T93}. {T94} {T95}. {T96} {T97}. {T98}. {T99}. {T100} {T101}. {T102} ({T103} {T104}) {T105}. {T106}. {T107} {T108}. {T109} {%Holz für Nichts gut%} {T110}.",
+                "russian": "{T123} — 2) = {T72} {T73} и {T74} {T75} {T76}. {T77} {T78} к {T79}. {T80} {T81}. {T82} {T83}. {T84}. {T85} {T86} {T87}. {T88} {T89}. {T90} {T91}. {T92} {T93}. {T94} {T95}. {T96} {T97}. {T98}. {T99}. {T100} {T101}. {T102} ({T103} {T104}) {T105}. {T106}. {T107} {T108}. {T109} дерево, ни на что не годное {T110}.",
+                "equivalence_type": "explanatory",
+                "source_type": "attested",
+                "stratum": "Epic / early-Classical, Classical",
+                "differentia": "Значение = adj. и subst. (эквивалентно склоняемой форме sarva- «весь, всякий»); в конце ряда — иллюстративный пример-поговорка «дерево, ни на что не годное», где sarvatra с отрицанием даёт смысл «ни на что негодный»."
+              },
+              {
+                "tag": "tail",
+                "german": "{T124}— {T111} {T112}.",
+                "russian": "{T124} — {T111} {T112}.",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "Заключительная ссылочно-сопоставительная заметка без переводимого текста (только сигла/перекрёстная ссылка)."
+              }
+            ]
+          },
+          {
+            "h": "{T113}",
+            "grammar": "adj., adv.",
+            "senses": [
+              {
+                "tag": "0",
+                "german": "{T113}¦ {T114}",
+                "russian": "{T113} ¦ {T114}",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "Заголовочная строка сокращённой статьи PW (без переводимого текста)."
+              },
+              {
+                "tag": "1",
+                "german": "{T125}— 1〉 {%überall, stets, in allen Fällen, jederzeit%}. Verstärkt {T115} {T116} {T117} {T118} {T119}. Mit einer Negation {%in keinem Falle%}.",
+                "russian": "{T125} — 1) везде, всегда, во всех случаях, в любое время. Усилено {T115} {T116} {T117} {T118} {T119}. С отрицанием — «ни в коем случае».",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "",
+                "differentia": "Тот же синонимический ряд, что и в PWG, дополнительно отмечено усиление (Verstärkt) конструкцией; при отрицании — «ни в коем случае»."
+              },
+              {
+                "tag": "2",
+                "german": "{T126}— 2〉 = {T120} mit einer Negation {%für Nichts%} {T121}",
+                "russian": "{T126} — 2) = {T120}; с отрицанием — «ни за что» {T121}",
+                "equivalence_type": "explanatory",
+                "source_type": "attested",
+                "stratum": "",
+                "differentia": "Сокращённая формулировка того же значения = adj./subst., с отрицанием даёт идиому «ни за что», соответствующую примеру «дерево, ни на что не годное» из PWG."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ttft_ms": 84676,
+  "ttft_stream_ms": 5395,
+  "time_to_request_ms": 270,
+  "type": "result",
+  "duration_ms": 189869,
+  "uuid": "f1891034-49b6-441b-b7cb-a76f4f281d1e"
+}

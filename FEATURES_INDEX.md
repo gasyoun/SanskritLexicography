@@ -1,6 +1,6 @@
 # FEATURES_INDEX.md — what the Sanskrit Lexicon project actually has
 
-_Created: 04-07-2026 · Last updated: 02-08-2026 (H2110: H8 Systema in-cabinet reading packs; H1909: L5 nws_ls_markup.py bare-citation discriminator)_
+_Created: 04-07-2026 · Last updated: 09-08-2026 (H2361: L12 citation_tm.py parallel-verse lookup + its measured EN-lane misalignment; H2110: H8 Systema in-cabinet reading packs; H1909: L5 nws_ls_markup.py bare-citation discriminator)_
 
 **Purpose.** A clickable, capability-first map of the working assets across the ~85
 repositories: the **dictionaries** digitised, the **interfaces** that serve them, the
@@ -392,7 +392,7 @@ Q5 ↔ Charles Li's helayo.
 | Q13 | Three-way root triangulation | MW ↔ Whitney hub ↔ DCS join on the normalised root | N | [root_triangulation.py](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/root_triangulation.py) |
 | Q14 | Homonym disambiguation (gaṇa-overlap + DCS lemma_id token-split) | Attributes corpus counts to the correct homonym via class intersection / DCS's own split | N | [dict_align.py](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/dict_align.py) · [token_disambiguate.py](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/token_disambiguate.py) |
 | Q15 | vidyut it-lopa two-gate paradigm binding | Binds dhātu to homonym via it-lopa derivation history + gaṇa / present-stem corroboration gates | A·N | [vidyut_paradigms.py](https://github.com/gasyoun/WhitneyRoots/blob/main/scripts/vidyut_paradigms.py) |
-| Q16 | Preverb (upasarga) segmentation + MW cross-map | Segments a headword into preverb+root, matches MW preverbs | N | [PWG verbs01](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/preverb1.py) |
+| Q16 | Preverb (upasarga) segmentation + MW cross-map | Segments a headword into preverb+root, matches MW preverbs | N | [PWG verbs01](https://github.com/sanskrit-lexicon/PWG/blob/main/verbs01/preverb1.py) |
 | Q17 | `<ls>` citation-reference splitting + siglum→authority difflib matcher | Splits compound citations into per-part links; fuzzy-links unlinked sigla to canonical authorities | N·S | [link_expand.py](https://github.com/sanskrit-lexicon/MWS/blob/master/mwsissues/issue182/link_expand.py) · [link_candidates.py](https://github.com/sanskrit-lexicon/MWS/blob/master/mwauthorities/link_candidates/link_candidates.py) |
 | Q18 | Vowel-sandhi coalescence + ablaut-series calculators | savarṇa / guṇa / vṛddhi / yaṇ surface + grade→surface tables (Whitney/Zaliznyak) | S | [SandhiCollider.jsx](https://github.com/gasyoun/SanskritGrammar/blob/main/src/components/talmud/SandhiCollider.jsx) |
 

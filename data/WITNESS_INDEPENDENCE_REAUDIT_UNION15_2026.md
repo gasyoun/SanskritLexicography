@@ -19,7 +19,7 @@ confirmed. This document builds the **witness-independence map** — which of th
 and which are the same work, revised editions, supplements, or headword-inventory
 derivatives of one another — and **re-audits the corroboration distribution
 under it**. Handoff:
-[H1363](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1363-Opus_SanskritLexicography_dictionary-witness-independence-map-and-union-corroboration-reaudit_20.07.26.md).
+[H1363](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1363-Opus_SanskritLexicography_dictionary-witness-independence-map-and-union-corroboration-reaudit_20.07.26.md).
 Computed 20-07-2026 by Opus 4.8 (`claude-opus-4-8`).
 
 **The claim being audited.** "Attested in N dictionaries" is not "confirmed by N

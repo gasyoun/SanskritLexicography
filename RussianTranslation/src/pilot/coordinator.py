@@ -27,6 +27,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 REPO = os.path.dirname(SRC)
 
+from dashboard_events import emit_collision  # noqa: E402
+
 def input_dir():
     """H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
     Resolved PER CALL (never a module constant): callers that rebind HERE (the
@@ -70,6 +72,7 @@ import probe_log  # noqa: E402
 PROBE_POLICY = probe_log.CURRENT_POLICY
 PROBE_LATENCY_CEILING_MS = probe_log.ceiling_for(PROBE_POLICY)
 
+import data_root  # noqa: E402  (H2175 step 4: --data-root env-seam shim)
 import promote_final_cards  # noqa: E402
 import promotion_journal  # noqa: E402
 from safe_filename import safe_name  # noqa: E402
@@ -680,7 +683,13 @@ def begin_run_leases(state, lease_ids, mode='standard', run_id=None,
         raise SystemExit('begin-run requires prepared leases')
     running = running_translation_leases(state)
     if mode == 'standard':
-        limit = TRANSLATION_LIMIT
+        # G10 (H2173, audit F-B5): `state['translation_limit']` was serialized at :268,
+        # defaulted at :287 and echoed in status at :2508, but enforcement read the module
+        # constant — so an operator could set the field, watch it persist and be reported
+        # back, and have it bind nothing. `preparation_limit` two frames down (:899) already
+        # honours state, which is what makes this an inconsistency rather than a convention.
+        # State wins, constant is the default, exactly as the preparation cap does it.
+        limit = int(state.get('translation_limit') or TRANSLATION_LIMIT)
         runtime_mode = 'standard'
     elif mode == 'staged':
         receipt = validate_probe_receipt(probe_receipt, lease_ids, run_id)
@@ -978,6 +987,19 @@ def register_prepared_lease(lease_id, lane, keys, harness, manifest, preflight_p
         target = 'nominal:%s' % keys[0]
         overlap = sorted(set(keys) & active)
         if overlap:
+            sample = ','.join(overlap[:12])
+            msg = 'nominal lease keys already active: %s' % sample
+            # OPT-8 / H2229 — surface lease collision on the kitchen, not only stderr.
+            emit_collision(
+                'nominal_keys_active',
+                root=lease_id,
+                summary=msg,
+                source='coordinator',
+                data={
+                    'lease_id': lease_id,
+                    'overlap_count': len(overlap),
+                    'overlap_sample': overlap[:20],
+                })
             raise SystemExit('nominal lease keys already active: %s' % ','.join(overlap))
         run_keys = [safe_name(k) for k in keys]
         lease = {
@@ -2523,6 +2545,8 @@ def status(args):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
+    # H2175 step 4: global flag, must precede the subcommand on the command line.
+    data_root.add_arg(ap)
     sub = ap.add_subparsers(dest='cmd', required=True)
     s = sub.add_parser('status')
     s.set_defaults(func=status)
@@ -2604,6 +2628,14 @@ def main(argv=None):
     d = sub.add_parser('daily-close')
     d.set_defaults(func=daily_close)
     args = ap.parse_args(argv)
+    if getattr(args, 'data_root', None):
+        # H2175 step 4: env seams first (children + lazy resolvers), then re-resolve the
+        # two import-time store constants — canonical_store() was already evaluated at
+        # module import, before the flag existed. With $PWG_RU_STORE now set, the env
+        # value IS the canonical resolution (store_path precedence rule 1).
+        data_root.apply(args.data_root, ensure_dirs=True)
+        promote_final_cards.DEFAULT_STORE = os.environ['PWG_RU_STORE']
+        translation_memory.DEFAULT_STORE = os.environ['PWG_RU_STORE']
     try:
         reconcile_promotion_journals()
     except (promotion_journal.JournalError,

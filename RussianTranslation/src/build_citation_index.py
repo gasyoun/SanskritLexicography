@@ -87,6 +87,58 @@ def abbr_of(n_attr, visible):
     return '?'
 
 
+def coverage_key(n_attr, visible):
+    """Single source of truth for citation *identity* in coverage accounting.
+
+    Both ``build()`` (distinct-ref → CITATION_SOURCES) and ``occurrence_stats()``
+    (occurrence → UNCOVERED_SOURCES) MUST use this — never re-derive
+    ``(n_attr, vis)`` or the grouping abbreviation ad-hoc (CODE_REVIEW 2026-07-04 /
+    OPT-6). Returns ``(dedup_key, abbr)`` where:
+
+    * ``dedup_key`` is ``(n_attr_or_None, stripped_visible)`` — exact reference
+      identity for distinct-ref counting;
+    * ``abbr`` is the human grouping label (``abbr_of``).
+    """
+    vis = (visible or '').strip()
+    n = n_attr if n_attr else None
+    if n is not None and not str(n).strip():
+        n = None
+    return (n, vis), abbr_of(n, vis)
+
+
+def parse_ls_attrs(attrs, visible):
+    """Pull ``(n_attr, visible_stripped)`` from raw ``<ls>`` match groups."""
+    m = _N_ATTR.search(attrs or '')
+    n_attr = m.group(1) if m else None
+    vis = (visible or '').strip()
+    return n_attr, vis
+
+
+def coverage_bucket(n_attr, visible, dict_code='pwg'):
+    """Classify one citation for coverage reports — sole classifier.
+
+    Returns one of: ``'scan'``, ``'html'``, ``'label'``, ``'unresolved'``.
+    ``build()`` and ``occurrence_stats()`` both call this so a ref cannot be
+    "unresolved" in CITATION_SOURCES and a non-coordinate label in
+    UNCOVERED_SOURCES (or vice versa).
+    """
+    vis = (visible or '').strip()
+    try:
+        url = lsr.generate_href(dict_code, n_attr, vis)
+    except Exception:
+        url = None
+    t = lsr.link_type(url)
+    if t == 'scan':
+        return 'scan', url
+    if t == 'html':
+        return 'html', url
+    # <ls> with no coordinate = an edition/cross-ref LABEL ("ed. Bomb.",
+    # "ebend."), never a linkable reference — not "uncovered".
+    if not re.search(r'[0-9]', (n_attr or '') + vis):
+        return 'label', url
+    return 'unresolved', url
+
+
 def iter_ls():
     """Yield (attrs, visible) for every <ls> in every DE/RU/EN source field."""
     if os.path.exists(RU_STORE):
@@ -126,58 +178,91 @@ def host_repo(url):
     return repo, templ
 
 
-def build():
-    groups = defaultdict(lambda: {'total': 0, 'resolved': 0, 'scan': 0, 'html': 0,
-                                   'sample_url': None, 'sample_ref': None,
-                                   'repos': set(), 'templates': set()})
-    total = resolved = 0
-    counts = {'scan': 0, 'html': 0}
+def coverage_rows_from_pairs(pairs, distinct=False):
+    """Aggregate coverage rows from ``(n_attr, visible)`` pairs.
+
+    Shared emitter kernel: both report paths call this so per-abbreviation
+    scan/html/label/unresolved tallies cannot disagree by construction.
+
+    * ``distinct=True`` — dedupe on ``coverage_key`` (CITATION_SOURCES semantics).
+    * ``distinct=False`` — count every pair (occurrence / UNCOVERED semantics).
+
+    Returns ``(per_abbr, totals)`` where ``per_abbr[abbr]`` has keys
+    ``total, resolved, scan, html, label, unresolved`` and ``totals`` is the
+    same shape at corpus level (+ ``labels`` alias of total labels).
+    """
+    per = defaultdict(lambda: {
+        'total': 0, 'resolved': 0, 'scan': 0, 'html': 0,
+        'label': 0, 'unresolved': 0,
+        'sample_url': None, 'sample_ref': None,
+        'repos': set(), 'templates': set(),
+    })
+    totals = {
+        'total': 0, 'resolved': 0, 'scan': 0, 'html': 0,
+        'label': 0, 'unresolved': 0,
+    }
     seen = set()
-    for attrs, visible in iter_ls():
-        m = _N_ATTR.search(attrs or '')
-        n_attr = m.group(1) if m else None
-        vis = (visible or '').strip()
-        key = (n_attr, vis)
-        # de/ru/en repeat the same citations across senses; count DISTINCT refs
-        # so the index measures the reference set, not sense multiplicity.
-        if key in seen:
-            continue
-        seen.add(key)
-        label = abbr_of(n_attr, vis)
-        g = groups[label]
+    for n_attr, visible in pairs:
+        key, abbr = coverage_key(n_attr, visible)
+        if distinct:
+            if key in seen:
+                continue
+            seen.add(key)
+        bucket, url = coverage_bucket(n_attr, visible)
+        g = per[abbr]
         g['total'] += 1
-        total += 1
-        try:
-            url = lsr.generate_href('pwg', n_attr, vis)
-        except Exception:
-            url = None
-        if url:
+        totals['total'] += 1
+        if bucket in ('scan', 'html'):
             g['resolved'] += 1
-            resolved += 1
-            t = lsr.link_type(url)
-            g[t] = g.get(t, 0) + 1
-            counts[t] = counts.get(t, 0) + 1
-            repo, templ = host_repo(url)
-            g['repos'].add(repo)
-            g['templates'].add(templ)
-            if g['sample_url'] is None:
-                g['sample_url'] = url
-                g['sample_ref'] = ((n_attr or '') + vis).strip()
-    return groups, total, resolved, counts
+            g[bucket] += 1
+            totals['resolved'] += 1
+            totals[bucket] += 1
+            if url:
+                repo, templ = host_repo(url)
+                g['repos'].add(repo)
+                g['templates'].add(templ)
+                if g['sample_url'] is None:
+                    g['sample_url'] = url
+                    g['sample_ref'] = ((n_attr or '') + (visible or '').strip()).strip()
+        elif bucket == 'label':
+            g['label'] += 1
+            totals['label'] += 1
+        else:
+            g['unresolved'] += 1
+            totals['unresolved'] += 1
+    return per, totals
+
+
+def build():
+    """Distinct-ref index for CITATION_SOURCES — uses ``coverage_key`` + bucket."""
+    pairs = []
+    for attrs, visible in iter_ls():
+        n_attr, vis = parse_ls_attrs(attrs, visible)
+        pairs.append((n_attr, vis))
+    groups, totals = coverage_rows_from_pairs(pairs, distinct=True)
+    counts = {'scan': totals['scan'], 'html': totals['html'],
+              'label': totals['label'], 'unresolved': totals['unresolved']}
+    return groups, totals['total'], totals['resolved'], counts
 
 
 def emit(groups, total, resolved, counts):
     rows = sorted(groups.items(), key=lambda kv: (-kv[1]['total'], kv[0]))
     scan_n, html_n = counts.get('scan', 0), counts.get('html', 0)
-    os.makedirs(os.path.dirname(OUT_JSON), exist_ok=True)
+    label_n = counts.get('label', 0)
+    unres_n = counts.get('unresolved', total - resolved - label_n)
+    os.makedirs(os.path.dirname(OUT_JSON) or '.', exist_ok=True)
     data = {
         'total_distinct_refs': total, 'resolved': resolved,
         'resolved_scan': scan_n, 'resolved_html': html_n,
+        'noncoordinate_labels': label_n,
+        'unresolved': unres_n,
         'coverage_pct': round(100 * resolved / total, 1) if total else 0,
         'distinct_abbreviations': len(groups),
         'abbreviations': [{
             'abbr': k, 'total': v['total'], 'resolved': v['resolved'],
             'scan': v['scan'], 'html': v['html'],
+            'label': v.get('label', 0),
+            'unresolved': v.get('unresolved', 0),
             'repos': sorted(v['repos']), 'sample_ref': v['sample_ref'],
             'sample_url': v['sample_url'],
         } for k, v in rows],
@@ -188,7 +273,9 @@ def emit(groups, total, resolved, counts):
     def pct(n):
         return 100 * n / total if total else 0
 
-    unresolved_rows = [(k, v) for k, v in rows if v['resolved'] < v['total']]
+    # Truly-unresolved = unresolved bucket only (labels are never linkable;
+    # same rule as UNCOVERED_SOURCES via coverage_bucket).
+    unresolved_rows = [(k, v) for k, v in rows if v.get('unresolved', 0) > 0]
     L = []
     L.append('# PWG citation sources — abbreviation → source-link index')
     L.append('')
@@ -217,7 +304,8 @@ def emit(groups, total, resolved, counts):
     L.append('| resolved to a source link | %d (%.1f%%) |' % (resolved, pct(resolved)))
     L.append('| &nbsp;&nbsp;• to a scan (page image) | %d (%.1f%%) |' % (scan_n, pct(scan_n)))
     L.append('| &nbsp;&nbsp;• to HTML (digital text) | %d (%.1f%%) |' % (html_n, pct(html_n)))
-    L.append('| unresolved | %d |' % (total - resolved))
+    L.append('| unresolved (no Cologne target) | %d |' % unres_n)
+    L.append('| non-coordinate labels (never linkable) | %d |' % label_n)
     L.append('| distinct abbreviations | %d |' % len(groups))
     L.append('')
     L.append('> **Coverage is target-limited, not resolver-limited.** The resolver '
@@ -225,7 +313,10 @@ def emit(groups, total, resolved, counts):
              'supports; most unresolved references cite works the Cologne project '
              'has **not digitized** (no scan repository exists — e.g. Suśruta, most '
              'Upaniṣads, the Śrauta/Gṛhya sūtras, several chrestomathies), so they '
-             'cannot be linked from anywhere.')
+             'cannot be linked from anywhere. Non-coordinate `<ls>` labels '
+             '("ed. Bomb.", "ebend.") are tracked separately — same classifier as '
+             '[`UNCOVERED_SOURCES.md`](https://github.com/sanskrit-lexicon/PWG/blob/main/pwg_ls/pwg_ru_coverage/UNCOVERED_SOURCES.md) '
+             '(`coverage_key` / `coverage_bucket`, OPT-6).')
     L.append('')
     L.append('> The most-cited uncovered works are ranked (by how often each is '
              'actually cited) in [`UNCOVERED_SOURCES.md`]'
@@ -253,12 +344,15 @@ def emit(groups, total, resolved, counts):
                  'source mapping resolved them — either no scan/HTML exists in the '
                  'Cologne ecosystem, or they are grammatical authorities/cross-refs '
                  'that are not linkable. Candidates for the PWG `<ls>` link-target '
-                 'program (Dictionary-to-Book) where a scan does exist.')
+                 'program (Dictionary-to-Book) where a scan does exist. Non-coordinate '
+                 'labels are excluded (they never resolve by design).')
         L.append('')
         L.append('| abbreviation | unresolved refs |')
         L.append('|---|---:|')
-        for k, v in sorted(unresolved_rows, key=lambda kv: -(kv[1]['total'] - kv[1]['resolved'])):
-            L.append('| %s | %d |' % (k.replace('|', '\\|'), v['total'] - v['resolved']))
+        for k, v in sorted(unresolved_rows,
+                           key=lambda kv: -kv[1].get('unresolved', 0)):
+            L.append('| %s | %d |' % (k.replace('|', '\\|'),
+                                      v.get('unresolved', 0)))
         L.append('')
     L.append('_Dr. Mārcis Gasūns_')
     with open(OUT_MD, 'w', encoding='utf-8', newline='\n') as f:
@@ -280,45 +374,38 @@ def emit(groups, total, resolved, counts):
 def occurrence_stats():
     """Count every <ls> as it appears on the displayed DE surface (occurrences).
 
-    Returns (occ_scan, occ_html, per, total) where per[abbr] = {'res','unres'}
-    occurrence counts. An abbreviation with res==0 is *truly uncovered* (no
-    occurrence resolves anywhere → no Cologne target); res>0 with unres>0 is a
-    resolution edge-case (the work is digitized, a few refs are malformed)."""
+    Uses the same ``coverage_key`` / ``coverage_bucket`` as ``build()`` so
+    UNCOVERED_SOURCES cannot disagree with CITATION_SOURCES on which
+    abbreviations are covered vs truly uncovered (OPT-6).
+
+    Returns (occ_scan, occ_html, per, total, labels) where
+    per[abbr] = {'res','unres','scan','html'} occurrence counts.
+    An abbreviation with res==0 and unres>0 is *truly uncovered*; res>0 with
+    unres>0 is a resolution edge-case.
+    """
     sys.path.insert(0, os.path.join(HERE, 'pilot'))
     import build_article_site as bas
     model = bas.build_model()
-    occ_scan = occ_html = total = labels = 0
-    per = defaultdict(lambda: {'res': 0, 'unres': 0, 'scan': 0, 'html': 0})
+    pairs = []
     for r in model:
         for sc in r['subcards']:
             for s in sc['senses']:
                 for m in _LS.finditer(s.get('de_raw') or ''):
-                    total += 1
-                    nm = _N_ATTR.search(m.group(1) or '')
-                    n_attr = nm.group(1) if nm else None
-                    vis = (m.group(2) or '').strip()
-                    try:
-                        url = lsr.generate_href('pwg', n_attr, vis)
-                    except Exception:
-                        url = None
-                    t = lsr.link_type(url)
-                    if t == 'scan':
-                        occ_scan += 1
-                        g = per[abbr_of(n_attr, vis)]
-                        g['res'] += 1
-                        g['scan'] += 1
-                    elif t == 'html':
-                        occ_html += 1
-                        g = per[abbr_of(n_attr, vis)]
-                        g['res'] += 1
-                        g['html'] += 1
-                    elif not re.search(r'[0-9]', (n_attr or '') + vis):
-                        # <ls> with no coordinate = an edition/cross-ref LABEL
-                        # ("ed. Bomb.", "ebend."), never a linkable reference.
-                        labels += 1
-                    else:
-                        per[abbr_of(n_attr, vis)]['unres'] += 1
-    return occ_scan, occ_html, per, total, labels
+                    n_attr, vis = parse_ls_attrs(m.group(1), m.group(2))
+                    pairs.append((n_attr, vis))
+    rows, totals = coverage_rows_from_pairs(pairs, distinct=False)
+    # Adapt to the legacy per[abbr] shape expected by emit_uncovered /
+    # emit_comparison (res/unres keys).
+    per = defaultdict(lambda: {'res': 0, 'unres': 0, 'scan': 0, 'html': 0})
+    for abbr, v in rows.items():
+        per[abbr] = {
+            'res': v['resolved'],
+            'unres': v['unresolved'],
+            'scan': v['scan'],
+            'html': v['html'],
+        }
+    return (totals['scan'], totals['html'], per,
+            totals['total'], totals['label'])
 
 
 def emit_uncovered(per, occ_scan, occ_html, occ_total, labels):
@@ -528,12 +615,137 @@ def emit_comparison(per, occ_scan, occ_html, occ_total, labels):
         f.write('\n'.join(L) + '\n')
 
 
+# ---------------------------------------------------------------------------
+# Selftest — OPT-6 parity: both emitters share coverage_key / coverage_bucket
+# ---------------------------------------------------------------------------
+
+# Fixed fixture: (n_attr, visible) pairs spanning every coverage_bucket outcome.
+# Pure identity + classification check — does not need the full store / model.
+_SELFTEST_PAIRS = [
+    # two identical MBh refs → distinct collapses, occurrence keeps both
+    ('MBh. ', '1, 2'),
+    ('MBh. ', '1, 2'),
+    ('MBh. ', '3, 4'),
+    # bare continuation inherits n= prefix for abbr
+    ('R. ', '1, 1'),
+    # no coordinate → label (never "uncovered")
+    (None, 'ed. Bomb.'),
+    (None, 'ebend.'),
+    # coordinate but no known Cologne target → unresolved
+    (None, 'Suśr. 1, 2'),
+    ('Suśr. ', '3, 4'),
+    # empty / whitespace n_attr normalises via coverage_key
+    ('', 'Hit. 1'),
+    ('  ', 'Hit. 2'),
+]
+
+
+def _coverage_signature(per, mode):
+    """Stable rows both paths must agree on for a fixture set.
+
+    mode='distinct' uses resolved/unresolved/label from coverage_rows_from_pairs;
+    mode='occ' uses the legacy res/unres shape after occurrence adapt.
+    """
+    rows = []
+    for abbr in sorted(per):
+        v = per[abbr]
+        if mode == 'distinct':
+            rows.append((abbr, v['resolved'], v.get('unresolved', 0),
+                         v.get('label', 0), v['scan'], v['html']))
+        else:
+            rows.append((abbr, v['res'], v['unres'], 0, v['scan'], v['html']))
+    return rows
+
+
+def selftest():
+    """Prove OPT-6: one coverage_key drives both accounting modes; buckets match.
+
+    Fixture rows for distinct vs occurrence modes share the same per-abbr
+    coverage *classification* (which works are covered / uncovered / label-only).
+    Distinct mode collapses duplicate keys; occurrence keeps multiplicity.
+    """
+    # 1) coverage_key is pure + stable
+    k1, a1 = coverage_key('MBh. ', '1, 2')
+    k2, a2 = coverage_key('MBh. ', '1, 2')
+    assert k1 == k2 == ('MBh. ', '1, 2'), k1
+    assert a1 == a2 == 'MBh.', (a1, a2)
+    k_empty, a_empty = coverage_key('', 'Hit. 1')
+    k_ws, a_ws = coverage_key('  ', 'Hit. 1')
+    assert k_empty[0] is None and k_ws[0] is None, (k_empty, k_ws)
+    assert a_empty == a_ws == 'Hit.', (a_empty, a_ws)
+
+    # 2) shared kernel — both modes on the same pairs
+    dist_per, dist_tot = coverage_rows_from_pairs(_SELFTEST_PAIRS, distinct=True)
+    occ_per, occ_tot = coverage_rows_from_pairs(_SELFTEST_PAIRS, distinct=False)
+
+    # distinct collapses the duplicate MBh. 1,2
+    assert dist_tot['total'] == occ_tot['total'] - 1, (dist_tot, occ_tot)
+    assert occ_tot['total'] == len(_SELFTEST_PAIRS)
+
+    # 3) per-abbr coverage *class* identical: an abbr is covered iff resolved>0
+    #    in both modes; truly-uncovered iff resolved==0 and unresolved>0.
+    dist_class = {
+        a: ('covered' if v['resolved'] > 0
+            else ('uncovered' if v['unresolved'] > 0 else 'label_only'))
+        for a, v in dist_per.items()
+    }
+    occ_class = {
+        a: ('covered' if v['resolved'] > 0
+            else ('uncovered' if v['unresolved'] > 0 else 'label_only'))
+        for a, v in occ_per.items()
+    }
+    assert dist_class == occ_class, (dist_class, occ_class)
+
+    # 4) label never masquerades as uncovered (the historical diverge)
+    for a, v in list(dist_per.items()) + list(occ_per.items()):
+        assert not (v['label'] > 0 and v['unresolved'] > 0 and v['resolved'] == 0
+                    and a in ('ed. Bomb.', 'ebend.')), (
+            'label-only abbr must not land in unresolved: %s %s' % (a, v))
+    for label_abbr in ('ed. Bomb.', 'ebend.'):
+        # these fixtures have no digit → pure labels
+        assert dist_class.get(label_abbr) == 'label_only', dist_class
+        assert occ_class.get(label_abbr) == 'label_only', occ_class
+
+    # 5) coverage_bucket alone matches aggregate on every pair
+    for n, vis in _SELFTEST_PAIRS:
+        b, _url = coverage_bucket(n, vis)
+        assert b in ('scan', 'html', 'label', 'unresolved'), b
+        _key, abbr = coverage_key(n, vis)
+        assert isinstance(abbr, str) and abbr
+
+    # 6) occurrence_stats adapter shape: res/unres from the shared kernel
+    adapted = defaultdict(lambda: {'res': 0, 'unres': 0, 'scan': 0, 'html': 0})
+    for abbr, v in occ_per.items():
+        adapted[abbr] = {
+            'res': v['resolved'], 'unres': v['unresolved'],
+            'scan': v['scan'], 'html': v['html'],
+        }
+    # uncovered set from adapted shape == uncovered from kernel
+    unc_a = {a for a, v in adapted.items() if v['res'] == 0 and v['unres'] > 0}
+    unc_k = {a for a, v in occ_per.items()
+             if v['resolved'] == 0 and v['unresolved'] > 0}
+    assert unc_a == unc_k, (unc_a, unc_k)
+
+    print('build_citation_index selftest OK')
+    print('  fixture pairs: %d  distinct total: %d  occ total: %d'
+          % (len(_SELFTEST_PAIRS), dist_tot['total'], occ_tot['total']))
+    print('  coverage class (both modes): %s' % dist_class)
+    print('  distinct: scan=%d html=%d label=%d unresolved=%d'
+          % (dist_tot['scan'], dist_tot['html'],
+             dist_tot['label'], dist_tot['unresolved']))
+    return 0
+
+
 def main():
     import argparse
     ap = argparse.ArgumentParser()
     ap.add_argument('--out-dir', help='where to write the reports '
                     '(default: sibling PWG/pwg_ls/pwg_ru_coverage, else local)')
+    ap.add_argument('--selftest', action='store_true',
+                    help='run OPT-6 coverage_key parity fixture selftest and exit')
     args = ap.parse_args()
+    if args.selftest:
+        sys.exit(selftest())
     if args.out_dir:
         set_outdir(os.path.abspath(args.out_dir))
     groups, total, resolved, counts = build()

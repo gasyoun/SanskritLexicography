@@ -4,7 +4,7 @@ _Created: 19-07-2026 · Last updated: 19-07-2026_
 
 **Purpose.** Companion record for the `/ask`-grade layered plan that turns PWG card anatomy into a formally specified, machine-validated, queryable object and routes enrichment additively onto the German original (never into csl-orig source text).
 
-**Audience.** The unattended execution agent running [H1350](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1350-Sonnet_SanskritLexicography_pwg-data-layers-anatomy-schema-extract_19.07.26.md); MG for the Wave-2 upstream gate; any future session extending the PWG data layers.
+**Audience.** The unattended execution agent running [H1350](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1350-Sonnet_SanskritLexicography_pwg-data-layers-anatomy-schema-extract_19.07.26.md); MG for the Wave-2 upstream gate; any future session extending the PWG data layers.
 
 **Provenance.** Authored 19-07-2026 by Opus 4.8 (`claude-opus-4-8`) via `/ask` (4 interview rounds, 16 rulings). Execution handoff minted as H1350 for Sonnet 5 (`claude-sonnet-5`). Audit basis: three Explore sweeps over SanskritLexicography, Uprava hubs, and csl-atlas parse-rules (19-07-2026).
 
