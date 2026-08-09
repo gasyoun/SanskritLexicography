@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.25] - 2026-08-09
 ### Changed
 - **H2439 — DeepSeek V4 Flash 0731 retarget on PWG arm B:** `deepseek_arm` default model `deepseek-v4-flash` + PRICE 0.14/0.0028/0.28; prep-pack sidecar tool; E1 sample under `RussianTranslation/experiments/E1_deepseek_vs_c4/` (Grok 4.5 `grok-4.5`, 08-08-2026). Org map in Uprava.
 
