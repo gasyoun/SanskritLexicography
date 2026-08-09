@@ -4,7 +4,7 @@ _Created: 21-07-2026 · Last updated: 21-07-2026_
 
 Ратификационный список по рядам N3a/N4/N5/N8 голосования 19-07-2026
 ([H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md))
-и хендоффу [H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md).
+и хендоффу [H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md).
 Разрешает противоречие §7 в
 [CONTRADICTIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md):
 решение 10-07-2026 «грамматические сокращения остаются латиницей»

@@ -2,7 +2,7 @@
 
 _Created: 24-07-2026 · Last updated: 24-07-2026_
 
-**Handoff:** [H1483](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1483-Opus_SanskritLexicography_definition-typology-classifier-ws2-4_22.07.26.md) · **Executor:** Grok 4.5 (`grok-4.5`), Opus-lock override · **Scope:** classical microstructural axis flagged absent in [ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) Part I and [ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md) L1 / WS2.4.
+**Handoff:** [H1483](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1483-Opus_SanskritLexicography_definition-typology-classifier-ws2-4_22.07.26.md) · **Executor:** Grok 4.5 (`grok-4.5`), Opus-lock override · **Scope:** classical microstructural axis flagged absent in [ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) Part I and [ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md) L1 / WS2.4.
 
 ## What this is
 
@@ -35,7 +35,7 @@ python data/definition_typology_classifier.py --all --csl-orig ../csl-orig/v02
 python data/definition_typology_classifier.py --verify data/definition_typology_gold.tsv
 ```
 
-- **Input:** local [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02) (sibling; never committed).
+- **Input:** local [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02) (sibling; never committed).
 - **Script:** [`definition_typology_classifier.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/definition_typology_classifier.py) (`--all` discovers every `<code>/<code>.txt`).
 - **Outputs:** `definition_typology_per_dict.tsv`, `definition_typology_sample.tsv`, `definition_typology_gold.tsv`, `definition_typology_run_meta.tsv`.
 

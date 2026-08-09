@@ -265,6 +265,7 @@ def run_tree_kill(argv, input=None, timeout=None, text=True, encoding='utf-8',
         grace = min(10.0, (timeout or 0) * 0.1 + 2.0)  # small, proportional, capped cleanup grace
         deadline = start + (timeout or 0) + grace
         trouble = terminate_tree(proc, deadline)
+        out = err = None
         try:
             remaining = max(0.5, deadline - time.monotonic())
             out, err = proc.communicate(timeout=remaining)     # drain pipes + reap within budget
@@ -272,11 +273,22 @@ def run_tree_kill(argv, input=None, timeout=None, text=True, encoding='utf-8',
             trouble = (trouble or '') + ';reap-timeout'
             try:
                 proc.kill()
-                proc.communicate(timeout=2)
+                out, err = proc.communicate(timeout=2)
             except (OSError, subprocess.TimeoutExpired):
                 pass
         if trouble:
-            exc.cleanup_trouble = trouble              # diagnostic only; classification stays 'timeout'
+            exc.cleanup_trouble = trouble              # diagnostic only; cleanup, not classification
+        # H2056 / #943: the text drained above is the ONLY copy of what the killed child said that
+        # ever reaches this process — and a rate-limited Claude CLI does not exit with a 429, it
+        # retries internally until our wall ceiling kills it (Uprava FINDINGS §270). Dropping `out`
+        # and `err` here is what forced every caller to hardcode 'timeout': they had nothing left to
+        # classify. Attach them so the CAUSE survives the kill. `.output`/`.stdout` are the same
+        # slot on TimeoutExpired (`.stdout` is a property alias), and coordinator.py already reads
+        # both. This is diagnostic payload only — it does not itself change any classification.
+        if out is not None:
+            exc.output = out
+        if err is not None:
+            exc.stderr = err
         raise
     except BaseException as exc:
         # communicate() can also fail while the child is live (decode error, pipe/OSError,

@@ -47,6 +47,7 @@ if HERE not in sys.path:
 
 import bounded_staged_run as bsr
 import bounded_supervisor as bs
+import economy_ledger as el
 import max_account_orchestrator as mao
 from bounded_supervisor import (
     STOP_CLEAN_TARGET, STOP_CALL_COUNT, STOP_COST_UNEVALUABLE, STOP_CONSECUTIVE_EMPTY,
@@ -810,6 +811,179 @@ def test_p_resume_requires_existing_ledger_run(td):
     print('  (p) --resume requires a pre-existing durable call-ledger run: PASS')
 
 
+def test_q2_execute_requires_ceilings_h2157(td):
+    """H2157 (H2025 G3 / F-B1): --execute REFUSES to start without BOTH --max-calls and
+    --cost-ceiling (the fail-closed ceiling machinery was inert unless the operator
+    remembered the flags — a billed run had no ceiling by default). --allow-unbounded is
+    the explicit escape hatch; dry-run (no --execute) is unaffected. run() is patched to
+    a sentinel so a PASSED gate is proven without touching plan/db/coordinator."""
+    base = ['--plan', os.path.join(td, 'q2p.json'), '--coord-dir', os.path.join(td, 'q2cd'),
+            '--coordinator', os.path.join(HERE, 'coordinator.py'), '--cwd', td,
+            '--events', os.path.join(td, 'q2.events.jsonl'), '--execute']
+    _run = bsr.run
+    bsr.run = lambda a: 'gate-passed'
+    try:
+        for extra in ([], ['--max-calls', '3'], ['--cost-ceiling', '2.5']):
+            try:
+                bsr.main(base + extra)
+                raise AssertionError('unbounded --execute must be refused: %r' % extra)
+            except SystemExit as exc:
+                assert getattr(exc, 'code', None) == 2, \
+                    'parser-level refusal (exit 2) expected, got %r' % exc
+        assert bsr.main(base + ['--max-calls', '3', '--cost-ceiling', '2.50',
+                                '--skip-canary-gate']) == 'gate-passed', \
+            'both ceilings supplied must pass the gate'
+        assert bsr.main(base + ['--allow-unbounded', '--skip-canary-gate']) == 'gate-passed', \
+            '--allow-unbounded must be an explicit escape hatch'
+        assert bsr.main(['--plan', os.path.join(td, 'q2p.json'),
+                         '--coord-dir', os.path.join(td, 'q2cd')]) == 'gate-passed', \
+            'a dry-run (no --execute) must not require ceilings'
+    finally:
+        bsr.run = _run
+
+
+def test_q3_execute_requires_canary_go_receipt_h2159(td):
+    """H2159 (H2025 G4 / F-B2+F-B3): --execute consumes the live-gate canary verdict
+    MECHANICALLY. judge_payload derives GO/NO-GO from the canary wf_output (synthetic
+    keys only, expected sense count, zero {Tn}/SAN-LOSS/UNMAPPED); enforce() refuses a
+    missing/NO-GO/stale/wrong-profile receipt; --skip-canary-gate is the explicit
+    escape. run() is patched to a sentinel — a passed gate never touches plan/db."""
+    import canary_gate as cg
+    clean_card = {'records': [{'senses': [
+        {'russian': 'перевод %d' % i, 'german': 'Übersetzung %d' % i} for i in range(3)]}]}
+    go_res = {'meta': {'execution': {'profile_slot': 'c4'}},
+              'results': [{'key': 'dq_canary_puregloss', 'card': clean_card}]}
+    verdict, reasons, _ = cg.judge_payload(go_res)
+    assert verdict == 'GO' and reasons == [], reasons
+    # NO-GO derivations: sense shortfall, TNMASK residue, real key, null card.
+    short = json.loads(json.dumps(go_res))
+    short['results'][0]['card']['records'][0]['senses'].pop()
+    assert cg.judge_payload(short)[0] == 'NO-GO', 'a dropped sense must be NO-GO'
+    masked = json.loads(json.dumps(go_res))
+    masked['results'][0]['card']['records'][0]['senses'][0]['russian'] = 'ост {T4} аток'
+    assert cg.judge_payload(masked)[0] == 'NO-GO', 'a {Tn} residue must be NO-GO'
+    realkey = json.loads(json.dumps(go_res))
+    realkey['results'][0]['key'] = 'agni~~h0_00_pwg00'
+    assert cg.judge_payload(realkey)[0] == 'NO-GO', \
+        'judging a REAL window as a canary must be NO-GO'
+    nullcard = {'results': [{'key': 'dq_canary_puregloss', 'card': None}]}
+    assert cg.judge_payload(nullcard)[0] == 'NO-GO', 'a null card must be NO-GO'
+
+    # H2174: the clean_card above carries NO 'notes' key, but every REAL canary run
+    # does — and it paraphrases the fixture's own portrait note, which contains the
+    # literal string "SAN-LOSS" and is fed to the model verbatim as prompt input.
+    # Observed identically in H1447 (22-07) and H2011 (02-08). Scanning the whole
+    # card made this gate unpassable for its own fixture; the marker scan is scoped
+    # to translated content. RED before the canary_gate.py fix, GREEN after.
+    noted = json.loads(json.dumps(go_res))
+    noted['results'][0]['card']['notes'] = (
+        'Synthetic D-Q silent-SAN-LOSS canary card (H994), layer PW only. Three '
+        'line-opening pure-gloss senses; none may be dropped without failing the '
+        'SAN-LOSS soft-guard.')
+    assert cg.judge_payload(noted)[0] == 'GO', \
+        'fixture commentary echoing SAN-LOSS in notes must NOT trip the gate'
+    # ...but a marker in TRANSLATED CONTENT is still a hard NO-GO.
+    for field in ('russian', 'german'):
+        leaked = json.loads(json.dumps(noted))
+        leaked['results'][0]['card']['records'][0]['senses'][0][field] = 'SAN-LOSS'
+        assert cg.judge_payload(leaked)[0] == 'NO-GO', \
+            'a literal marker in sense.%s must stay NO-GO' % field
+    unmapped = json.loads(json.dumps(noted))
+    unmapped['results'][0]['card']['records'][0]['senses'][1]['russian'] = 'x UNMAPPED y'
+    assert cg.judge_payload(unmapped)[0] == 'NO-GO', \
+        'a literal UNMAPPED marker in sense content must stay NO-GO'
+
+    # judge CLI writes an atomic receipt; enforce() accepts fresh GO, refuses the rest.
+    wf = os.path.join(td, 'q3_canary_wf.json')
+    with open(wf, 'w', encoding='utf-8') as fh:
+        json.dump(go_res, fh, ensure_ascii=False)
+    receipt = os.path.join(td, 'q3_canary_receipt.json')
+    assert cg.main(['judge', wf, '--receipt', receipt]) == 0
+    assert cg.enforce(receipt, only_profile='c4')['verdict'] == 'GO'
+    try:
+        cg.enforce(receipt, only_profile='c5')
+        raise AssertionError('a receipt for another profile must be refused')
+    except SystemExit as exc:
+        assert 'profile' in str(exc)
+    stale = cg.load_receipt(receipt)
+    stale['judged_at_epoch'] -= 8 * 3600
+    with open(receipt, 'w', encoding='utf-8') as fh:
+        json.dump(stale, fh)
+    try:
+        cg.enforce(receipt)
+        raise AssertionError('a stale GO receipt must be refused')
+    except SystemExit as exc:
+        assert 'FRESH' in str(exc)
+
+    # H2254: the receipt must carry the bounded-run evidence, and an ABSENT input must be
+    # recorded as null rather than as a measured zero. `observed_cost_usd: 0` meant "not
+    # evaluable" on 05-08 and "genuinely free" on 06-08; a receipt that cannot tell those
+    # apart turns a cost FLOOR into a reported total.
+    assert cg.main(['judge', wf, '--receipt', receipt]) == 0
+    bare = cg.load_receipt(receipt)
+    assert 'evidence' in bare, 'the evidence block must be written unconditionally'
+    for key in cg.EVIDENCE_KEYS:
+        assert key in bare['evidence'], 'evidence key %r missing from the receipt' % key
+    assert bare['evidence']['observed_cost_usd'] is None, (
+        'an unsupplied ledger recorded a cost of %r -- absence must not read as $0'
+        % bare['evidence']['observed_cost_usd'])
+    assert bare['evidence']['hard_timeout_ms'] == cg.PRODUCTION_HARD_TIMEOUT_MS
+
+    # ...and with the durable inputs supplied, every number is READ from them.
+    ledger = os.path.join(td, 'q3_calls.json')
+    with open(ledger, 'w', encoding='utf-8') as fh:
+        json.dump({'schema': 'x', 'runs': {'run-h2254': {
+            'max_calls': 3, 'calls_spent': 3,
+            'usage': {'observed_cost_usd': 1.25, 'cost_evaluable': True,
+                      'unevaluable_calls': 0},
+            'reservations': [
+                {'telemetry': {'duration_ms': 57207, 'duration_api_ms': 18310}},
+                {'telemetry': {'duration_ms': 291004, 'duration_api_ms': 44100}}]}}}, fh)
+    statusf = os.path.join(td, 'q3_status.json')
+    with open(statusf, 'w', encoding='utf-8') as fh:
+        json.dump({'classification': 'success', 'cli_safe_mode_effective': True}, fh)
+    manf = os.path.join(td, 'q3_manifest.json')
+    with open(manf, 'w', encoding='utf-8') as fh:
+        json.dump({'budgets': {'timeout_ceil_ms': cg.PRODUCTION_HARD_TIMEOUT_MS,
+                               'kill_switch': True, 'max_translate_agents': 1,
+                               'max_heal_agents': 1, 'max_agents': 2}}, fh)
+    rich_receipt = os.path.join(td, 'q3_receipt_rich.json')
+    assert cg.main(['judge', wf, '--receipt', rich_receipt, '--manifest', manf,
+                    '--status', statusf, '--call-reservation', ledger,
+                    '--run-id', 'run-h2254']) == 0
+    ev = cg.load_receipt(rich_receipt)['evidence']
+    assert (ev['calls_spent'], ev['max_calls']) == (3, 3), ev
+    assert ev['observed_cost_usd'] == 1.25 and ev['cost_evaluable'] is True, ev
+    assert (ev['wall_latency_ms'], ev['api_latency_ms']) == (291004, 44100), (
+        'latency must be the WORST finalized call, not a mean -- a mean hides the '
+        'warm-up/measured bimodality every c4 NO-GO day has shown: %r' % ev)
+    assert ev['cli_safe_mode_effective'] is True, ev
+    assert ev['kill_switch']['declared'] is True and ev['kill_switch']['bounded'] is True, ev
+    assert ev['manifest_sha256'] and ev['timeout_ceil_ms'] == cg.PRODUCTION_HARD_TIMEOUT_MS
+    assert cg.enforce(rich_receipt, only_profile='c4')['verdict'] == 'GO', (
+        'the additive evidence block must not disturb enforce()')
+
+    assert cg.main(['judge', wf, '--receipt', receipt]) == 0
+    base = ['--plan', os.path.join(td, 'q3p.json'), '--coord-dir', os.path.join(td, 'q3cd'),
+            '--coordinator', os.path.join(HERE, 'coordinator.py'), '--cwd', td,
+            '--events', os.path.join(td, 'q3.events.jsonl'), '--execute',
+            '--max-calls', '1', '--cost-ceiling', '1.0']
+    _run = bsr.run
+    bsr.run = lambda a: 'gate-passed'
+    try:
+        try:
+            bsr.main(base)
+            raise AssertionError('--execute without a canary receipt must be refused')
+        except SystemExit as exc:
+            assert getattr(exc, 'code', None) == 2
+        assert bsr.main(base + ['--canary-receipt', receipt, '--only-profile', 'c4']) \
+            == 'gate-passed', 'a fresh GO receipt must pass the gate'
+        assert bsr.main(base + ['--skip-canary-gate']) == 'gate-passed', \
+            '--skip-canary-gate must be an explicit escape hatch'
+    finally:
+        bsr.run = _run
+
+
 def test_q_cohort_width_cli_and_live_refusal(td):
     """H1437 Phase 3: --cohort-width is EXPERIMENTAL / OFFLINE-ONLY. The parser defaults it
     to 1 (the serial route, byte-for-byte unchanged); the --execute path REFUSES any width
@@ -1090,6 +1264,170 @@ def test_s3_h7_unrecordable_done_job_also_stops(td):
     print('  (s3) H7: an unrecordable done job stops on the same backstop: PASS')
 
 
+def test_t_data_root_env_shim(td):
+    """H2175 step 4: --data-root maps the standard pwg-ru-data layout onto the env seams
+    (PWG_RU_STORE / PWG_RU_TM_DIR / PWG_INPUT_DIR / PWG_OUTPUT_DIR / PWG_ECONOMY_LOG /
+    PWG_COORDINATOR_DIR) BEFORE any path resolution, derives --coord-dir / --db /
+    --checkpoint only when left at parser defaults, creates the layout skeleton, and
+    keeps the old contract when absent (no coord-dir from anywhere -> parser error)."""
+    import data_root as dr
+    root = os.path.join(td, 't_dataroot')
+    os.makedirs(root)
+    captured = {}
+    _run = bsr.run
+    bsr.run = lambda a: captured.update(vars(a)) or 0
+    saved = {k: os.environ.get(k) for k in dr.ENV_LAYOUT}
+    try:
+        plan = os.path.join(td, 't_plan.json')
+        bsr.main(['--plan', plan, '--data-root', root])
+        absroot = os.path.abspath(root)
+        assert os.environ['PWG_RU_STORE'] == os.path.join(
+            absroot, 'tm', 'pwg_ru_translated.jsonl'), os.environ['PWG_RU_STORE']
+        assert os.environ['PWG_RU_TM_DIR'] == os.path.join(absroot, 'tm')
+        assert os.environ['PWG_ECONOMY_LOG'] == os.path.join(
+            absroot, 'telemetry', 'generation_api_probe_log.jsonl')
+        assert captured['coord_dir'] == os.path.join(absroot, 'manifests', 'coordinator')
+        assert os.path.isdir(captured['coord_dir']), 'derived coord dir must exist'
+        assert captured['db'] == os.path.join(absroot, 'manifests',
+                                              'max_orchestrator.sqlite'), captured['db']
+        assert captured['checkpoint'] == os.path.join(
+            absroot, 'manifests', 'bounded_staged_run.checkpoint.json')
+        for sub in dr.SUBDIRS:
+            assert os.path.isdir(os.path.join(root, sub)), 'skeleton dir %s' % sub
+        # the lazy economy-ledger seam follows the applied env
+        assert el.frozen_log() == os.environ['PWG_ECONOMY_LOG']
+        # an explicit --coord-dir / --db keeps winning over the derived defaults
+        own_cd = os.path.join(td, 't_own_cd')
+        os.makedirs(own_cd)
+        bsr.main(['--plan', plan, '--data-root', root, '--coord-dir', own_cd,
+                  '--db', os.path.join(td, 'own.sqlite')])
+        assert captured['coord_dir'] == own_cd
+        assert captured['db'] == os.path.join(td, 'own.sqlite')
+        # neither --coord-dir nor --data-root -> the old required-flag refusal (exit 2)
+        try:
+            bsr.main(['--plan', plan])
+            raise AssertionError('missing coord-dir must be refused')
+        except SystemExit as exc:
+            assert getattr(exc, 'code', None) == 2, exc
+    finally:
+        bsr.run = _run
+        for k, v in saved.items():
+            if v is None:
+                os.environ.pop(k, None)
+            else:
+                os.environ[k] = v
+    print('  (t) H2175: --data-root env shim, derived defaults, explicit-flag wins: PASS')
+
+
+def test_u_auto_promote_until(td):
+    """H2175 R2.1 (--auto-promote-until): promote-on-clean-audit with expiring authority.
+    (1) parse: bare ISO date = end of that UTC day; ISO datetime honored; junk refused.
+    (2) CLI gate: a past date refuses to start; combining with --stop-before-promote
+        refuses (exit 2 both ways). (3) mechanics: clean audit -> AWAITING_REVIEW
+    checkpoint -> verified -> promote-ready spawned -> pwg.auto_promotion.v1 record
+    binding the checkpoint hashes. (4) expired authority mid-run: NO promote, NO
+    record, window left AWAITING_REVIEW. (5) a tampered checkpoint refuses to promote."""
+    from types import SimpleNamespace
+
+    # (1) parsing
+    end_of_day = bsr.parse_auto_promote_until('2026-08-09')
+    import datetime as _dt
+    dt = _dt.datetime.fromtimestamp(end_of_day, _dt.timezone.utc)
+    assert (dt.year, dt.month, dt.day, dt.hour, dt.minute, dt.second) == \
+        (2026, 8, 9, 23, 59, 59), dt
+    assert bsr.parse_auto_promote_until('2026-08-09T12:00:00Z') < end_of_day
+    try:
+        bsr.parse_auto_promote_until('next-tuesday')
+        raise AssertionError('junk date must raise')
+    except ValueError:
+        pass
+
+    # (2) CLI fail-closed gates (run() patched to a sentinel; never reached)
+    _run = bsr.run
+    bsr.run = lambda a: 'gate-passed'
+    try:
+        base = ['--plan', os.path.join(td, 'u_p.json'), '--coord-dir', os.path.join(td, 'u_cd')]
+        for bad in (base + ['--auto-promote-until', '2020-01-01'],
+                    base + ['--auto-promote-until', '2999-01-01', '--stop-before-promote'],
+                    base + ['--auto-promote-until', 'next-tuesday']):
+            try:
+                bsr.main(bad)
+                raise AssertionError('must be refused: %r' % bad)
+            except SystemExit as exc:
+                assert getattr(exc, 'code', None) == 2, (bad, exc)
+        assert bsr.main(base + ['--auto-promote-until', '2999-01-01']) == 'gate-passed'
+    finally:
+        bsr.run = _run
+
+    # fake coordinator: append argv to a log, exit 0 (stdout says nothing to rescue)
+    udir = os.path.join(td, 'u_apu'); os.makedirs(udir)
+    coord_log = os.path.join(udir, 'coordinator_calls.jsonl')
+    fake_coord = os.path.join(udir, 'fake_coordinator.py')
+    with open(fake_coord, 'w', encoding='utf-8', newline='\n') as f:
+        f.write('import json, sys\n'
+                "open(%r, 'a', encoding='utf-8').write(json.dumps(sys.argv[1:]) + '\\n')\n"
+                "print('promoted')\n" % coord_log)
+
+    def _wf(path, keys):
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump({'meta': {'selected_keys': keys, 'gen_model': 'claude-sonnet-5',
+                                'execution': {'profile_slot': 'c4',
+                                              'execution_route': 'claude-cli-headless',
+                                              'executor_lane': 'serial',
+                                              'validation_method': 'audit',
+                                              'config_dir_fingerprint': 'f' * 64,
+                                              'model_identifier': 'claude-sonnet-5'}},
+                       'summary': {'usage': {'input_tokens': 10, 'observed_cost_usd': 0.01,
+                                             'cost_evaluable': True}}, 'results': []}, f)
+        return path
+
+    report = {'clean_count': 1, 'requeue_keys': [], 'satisfied_keys': [], 'state': 'clean'}
+    ctx = SimpleNamespace(checkpoint=os.path.join(udir, 'cp.json'), run_id='u1',
+                          stop_before_promote=False,
+                          auto_promote_until=time.time() + 3600,
+                          coordinator=fake_coord, cwd=udir, coord_dir=udir,
+                          gen_model_version='claude-sonnet-5')
+
+    # (3) live authority: verified checkpoint -> promote-ready -> bound promotion record
+    wf = _wf(os.path.join(udir, 'wf_u.json'), ['k1'])
+    ar_path, ar_record = bsr.write_awaiting_review_checkpoint(
+        ctx, {'id': 'lease_u', 'attempt': 1}, wf, report)
+    assert bsr.auto_promote_window(ctx, {'id': 'lease_u'}, ar_path, ar_record) is True
+    calls = [json.loads(line) for line in open(coord_log, encoding='utf-8')]
+    assert len(calls) == 1 and 'promote-ready' in calls[0] and \
+        calls[0][calls[0].index('--lease-id') + 1] == 'lease_u', calls
+    rec = json.load(open(ar_path + '.PROMOTED.json', encoding='utf-8'))
+    assert rec['schema'] == 'pwg.auto_promotion.v1'
+    assert rec['payload_sha256'] == ar_record['payload_sha256']
+    assert rec['bound_hashes'] == ar_record['payload']['bound']['hashes']
+    assert rec['lease_id'] == 'lease_u' and rec['run_id'] == 'u1'
+
+    # (4) expired authority: refuse to promote, leave AWAITING_REVIEW, no record
+    ctx_exp = SimpleNamespace(**{**vars(ctx), 'run_id': 'u2',
+                                 'checkpoint': os.path.join(udir, 'cp2.json'),
+                                 'auto_promote_until': time.time() - 5})
+    wf2 = _wf(os.path.join(udir, 'wf_u2.json'), ['k2'])
+    ar2, rec2 = bsr.write_awaiting_review_checkpoint(
+        ctx_exp, {'id': 'lease_u2', 'attempt': 1}, wf2, report)
+    assert bsr.auto_promote_window(ctx_exp, {'id': 'lease_u2'}, ar2, rec2) is False
+    assert not os.path.exists(ar2 + '.PROMOTED.json'), 'expired trial must not promote'
+    assert len(open(coord_log, encoding='utf-8').readlines()) == 1, 'no second promote call'
+    assert bsr.verify_awaiting_review_checkpoint(ar2), 'window must stay AWAITING_REVIEW'
+
+    # (5) a tampered checkpoint refuses to promote (SystemExit, no promote call)
+    with open(wf2, 'a', encoding='utf-8') as f:
+        f.write('\n#tampered')
+    ctx_ok = SimpleNamespace(**{**vars(ctx_exp), 'auto_promote_until': time.time() + 3600})
+    try:
+        bsr.auto_promote_window(ctx_ok, {'id': 'lease_u2'}, ar2, rec2)
+        raise AssertionError('tampered checkpoint must refuse to promote')
+    except SystemExit as exc:
+        assert 'failed verification' in str(exc), exc
+    assert len(open(coord_log, encoding='utf-8').readlines()) == 1, calls
+    print('  (u) H2175 R2.1: --auto-promote-until parse+CLI gates; clean-audit promote '
+          'with bound record; expired/tampered refusals: PASS')
+
+
 def main():
     with tempfile.TemporaryDirectory() as td:
         test_a_plan_scope(td)
@@ -1108,11 +1446,15 @@ def main():
         test_n_cli_defines_execute_path_args(td)
         test_o_preflight_before_probe(td)
         test_p_resume_requires_existing_ledger_run(td)
+        test_q2_execute_requires_ceilings_h2157(td)
+        test_q3_execute_requires_canary_go_receipt_h2159(td)
         test_q_cohort_width_cli_and_live_refusal(td)
         test_r_cohort_offline_serial_equivalence(td)
         test_s_h7_zero_claim_drain_stops_instead_of_spinning(td)
         test_s2_h7_progress_resets_the_consecutive_counter(td)
         test_s3_h7_unrecordable_done_job_also_stops(td)
+        test_t_data_root_env_shim(td)
+        test_u_auto_promote_until(td)
     print('bounded_staged_run_selftest: PASS')
 
 

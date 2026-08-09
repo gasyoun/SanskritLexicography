@@ -57,6 +57,9 @@ from form_labels import extract_form_labels, extract_form_notes
 from citation_edges import extract_citation_edges
 from edition_rel import classify_edition_rel
 from pilot import promotion_journal
+# G8 (H2173): the promotable route value, owned by the same module the launch gate
+# (`validate_profile`) reads it from — never restated as a literal on this side.
+from pilot import execution_contract
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # the RussianTranslation repo root
@@ -223,7 +226,13 @@ def promote_ready_partial_clean(lease_or_report, *, dry_run=True, store=None,
                 line = line.strip()
                 if line:
                     existing_rows.append(json.loads(line))
-    rows_to_write, downgraded = merge_store_rows(existing_rows, rows)
+    # H2146: the clean-subset path never overrides human-reviewed rows — wave-1 agents
+    # must not be able to strip a reviewer stamp; protected subcards keep their store rows.
+    rows_to_write, downgraded, protected = merge_store_rows(existing_rows, rows)
+    if protected:
+        print('⚠ overlay-preserve: store keeps its HUMAN-REVIEWED rows for %d subcard(s); '
+              'incoming machine attempt dropped: %s'
+              % (len(protected), ', '.join(protected[:10])))
     claim_cm = PromoteClaim(store)
     with claim_cm:
         if os.path.exists(store):
@@ -232,6 +241,7 @@ def promote_ready_partial_clean(lease_or_report, *, dry_run=True, store=None,
         _atomic_write_rows(store, rows_to_write)
     result['promoted_keys'] = sorted(selected)
     result['downgraded'] = downgraded
+    result['protected'] = protected
     result['rows_written'] = len(rows_to_write)
     result['status'] = 'applied'
     return result
@@ -449,6 +459,17 @@ def validate_promotion_entry(subkey, entry):
                  'executor_lane', 'validation_method', 'model_identifier'):
         if not isinstance(execution.get(name), str) or not execution[name].strip():
             raise PromotionContractError('%s: missing manifest-v2 execution.%s' % (subkey, name))
+    # G8 (H2173, audit F-1): presence is not identity. The loop above only proves
+    # `execution_route` is a non-blank string, so a v2-SHAPED artifact produced off the
+    # headless route (the retired Max-Workflow lane, a hand-built envelope, a future
+    # second executor) satisfied every promotion check and could enter the canonical
+    # store indistinguishable from a live-lane card. Promotion is the last gate before
+    # the store, so it compares the route itself — `execution_contract` owns the value,
+    # exactly as `validate_profile` does at launch, so the two ends cannot drift.
+    if execution['execution_route'] != execution_contract.HEADLESS_ROUTE:
+        raise PromotionContractError(
+            '%s: execution_route %r is not the promotable headless route %r'
+            % (subkey, execution['execution_route'], execution_contract.HEADLESS_ROUTE))
     try:
         validate_final_card_schema.validate_card(card)
     except ValueError as exc:
@@ -592,16 +613,43 @@ def _attempt_quality(rows):
     return (0 if partial else 1, -missing)
 
 
-def merge_store_rows(existing_rows, promoted_rows):
+def human_touched(row):
+    """True when a HUMAN has ruled on this store row (H2146 / FINDINGS §513).
+
+    Three independent signals, any one protects the row from silent machine
+    replacement: a named ``reviewer``; a ``review_status`` outside the machine
+    vocabulary (machine statuses are ``ai_*`` — ``approved``/``needs_review``/
+    any future human status protects); or a non-empty ``editorial_decision*``
+    field. rows_for() stamps machine rows ``reviewer: None`` +
+    ``review_status='ai_translated'``, so machine output never self-protects."""
+    if row.get('reviewer'):
+        return True
+    status = row.get('review_status')
+    if isinstance(status, str) and status and not status.startswith('ai_'):
+        return True
+    return any(k.startswith('editorial_decision') and row[k] for k in row)
+
+
+def merge_store_rows(existing_rows, promoted_rows, override_reviewed=False):
     """Replace the promoted subcards BETTER-ATTEMPT-WINS; retain every unrelated row.
 
     B08 (H1339): the merge used to be an unconditional replace-by-subcard, so promoting an
     older/regressed artifact (a partial heal over a complete card) silently downgraded
     complete store rows. This is the store-level port of H304 rule 3 (save_and_audit
     --merge): complete beats partial, fewer missing fragments beat more, and only a tie or
-    an improvement lets the incoming rows land. Returns (merged_rows, downgraded_subcards)
-    where downgraded_subcards lists incoming subcards REFUSED because the store already
-    holds a strictly better attempt (their existing rows are kept untouched)."""
+    an improvement lets the incoming rows land.
+
+    H2146 (FINDINGS §513): the merge additionally REFUSES to replace a subcard any of
+    whose existing rows a human has touched (``human_touched``) — attempt quality alone
+    used to return an ``approved`` row to ``ai_translated``/``reviewer: None`` with the
+    human stamp gone. ``override_reviewed=True`` (the operator's explicit
+    ``--override-reviewed``) restores the pre-H2146 behaviour for a deliberate
+    re-translation of reviewed content.
+
+    Returns (merged_rows, downgraded_subcards, protected_subcards): ``downgraded`` lists
+    incoming subcards refused because the store holds a strictly better attempt;
+    ``protected`` lists incoming subcards refused because a human touched the existing
+    rows. Both keep their existing rows untouched."""
     incoming = {}
     for row in promoted_rows:
         incoming.setdefault(row['subcard'], []).append(row)
@@ -612,11 +660,60 @@ def merge_store_rows(existing_rows, promoted_rows):
         sub for sub, rows in incoming.items()
         if sub in existing_by_sub
         and _attempt_quality(rows) < _attempt_quality(existing_by_sub[sub]))
-    blocked = set(downgraded)
+    protected = [] if override_reviewed else sorted(
+        sub for sub in incoming
+        if sub in existing_by_sub and sub not in set(downgraded)
+        and any(human_touched(r) for r in existing_by_sub[sub]))
+    blocked = set(downgraded) | set(protected)
     replaced_subs = set(incoming) - blocked
     kept = [row for row in existing_rows if row.get('subcard') not in replaced_subs]
     landed = [row for row in promoted_rows if row['subcard'] not in blocked]
-    return kept + landed, downgraded
+    return kept + landed, downgraded, protected
+
+
+#: H2153 (G7 / #977): the fields whose characters ARE the store's content. Separator/
+#: formatting bytes are deliberately excluded — the 01-08 incident was a 1.29 MB byte
+#: change at identical row count that was pure serializer formatting, and the same
+#: row-count blindness would also have passed a real content wipe.
+CONTENT_MASS_FIELDS = ('ru', 'de', 'en', 'h', 'sense_tag', 'grammar', 'iast')
+
+#: Refuse when the store's content mass would drop by more than this fraction.
+CONTENT_MASS_MAX_LOSS = 0.10
+
+
+def content_mass(rows):
+    """Total characters across the content-bearing fields — serializer-independent."""
+    total = 0
+    for row in rows:
+        for name in CONTENT_MASS_FIELDS:
+            value = row.get(name)
+            if isinstance(value, str):
+                total += len(value)
+    return total
+
+
+def refuse_content_mass_shrink(existing_rows, rows_to_write, force=False):
+    """H2153 (G7 / #977): bound the CONTENT delta of a promote, not just the row count.
+
+    The row-count guards are blind to content: identical row counts are compatible with
+    megabytes of silent change (FINDINGS §513). This gate compares character mass over
+    ``CONTENT_MASS_FIELDS`` — immune to separator reformatting — and refuses a promote
+    that would shed more than ``CONTENT_MASS_MAX_LOSS`` of it. Returns
+    (before_mass, after_mass); raises ``PromotionContractError`` unless ``force``."""
+    before = content_mass(existing_rows)
+    after = content_mass(rows_to_write)
+    if before and after < before * (1 - CONTENT_MASS_MAX_LOSS):
+        if force:
+            print('content-mass guard: --force overrides a %d -> %d char shrink (%.1f%%)'
+                  % (before, after, 100.0 * (before - after) / before))
+        else:
+            raise PromotionContractError(
+                'would shed %.1f%% of store content mass (%d -> %d chars over %s) at '
+                'row delta %d -> %d — a content loss the row-count guards cannot see '
+                '(H2153 / #977). Inspect, or --force for a deliberate reduction.'
+                % (100.0 * (before - after) / before, before, after,
+                   '/'.join(CONTENT_MASS_FIELDS), len(existing_rows), len(rows_to_write)))
+    return before, after
 
 
 def tn_residue(card, rec, sense):
@@ -736,7 +833,7 @@ def collect_and_validate(paths, review_status, gen_model_version):
 def batch_promote(batch, store, review_status, gen_model_version,
                   no_backup=False, steal_lock=False, lock_ttl_seconds=None,
                   report_path=None, journal_path=None, promotion_id=None,
-                  fault_hook=None, store_claim_held=False):
+                  fault_hook=None, store_claim_held=False, override_reviewed=False):
     """H1339 Phase 3: promote N leases' clean outputs in ONE store transaction.
 
     Replaces the per-lease subprocess loop (N x [full store read + duplicate scan +
@@ -909,13 +1006,23 @@ def batch_promote(batch, store, review_status, gen_model_version,
         for row in existing_rows:
             sub = row.get('subcard')
             existing_count_by_sub[sub] = existing_count_by_sub.get(sub, 0) + 1
-        rows_to_write, downgraded = merge_store_rows(existing_rows, all_rows)
+        rows_to_write, downgraded, protected = merge_store_rows(
+            existing_rows, all_rows, override_reviewed=override_reviewed)
         if downgraded:
             raise PromotionContractError(
                 'bundle failed, store unchanged: the store already holds a strictly '
                 'better attempt for %d subcard(s) (%s) -- a freshly audited lease should '
                 'never lose better-attempt-wins; inspect before promoting'
                 % (len(downgraded), ', '.join(downgraded[:10])))
+        if protected:
+            # H2146: a coordinator window should never silently re-land a subcard a human
+            # has ruled on -- that returns approved rows to ai_translated/reviewer: None.
+            raise PromotionContractError(
+                'bundle failed, store unchanged: %d subcard(s) carry HUMAN-REVIEWED store '
+                'rows (%s) -- machine replacement would wipe the review overlay (FINDINGS '
+                '§513). Re-run with override_reviewed/--override-reviewed only for a '
+                'deliberate re-translation of reviewed content'
+                % (len(protected), ', '.join(protected[:10])))
         landed_subs = {r['subcard'] for r in rows_to_write}
         for lease_id, best in lease_best.items():
             missing = sorted(set(best) - landed_subs)
@@ -933,6 +1040,9 @@ def batch_promote(batch, store, review_status, gen_model_version,
         if before and len(rows_to_write) < before * 0.5:
             raise PromotionContractError(
                 'would shrink store %d -> %d rows (>50%% loss)' % (before, len(rows_to_write)))
+        # H2153 (G7 / #977): the batch lane has no --force — a content-mass shed in a
+        # coordinator bundle is always a refusal, never an override.
+        refuse_content_mass_shrink(existing_rows, rows_to_write)
         before_fp = promotion_journal.file_fingerprint(store)
         expected_payload = _serialize_rows(rows_to_write)
         expected_fp = promotion_journal.bytes_fingerprint(store, expected_payload)
@@ -1312,9 +1422,10 @@ def selftest():
     # Exact-subcard merge is idempotent; a second promotion replaces rather than duplicates.
     old = [{'key1': 'x', 'subcard': 'x~~a'}, {'key1': 'y', 'subcard': 'y~~a'}]
     new = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'new'}]
-    once, dg1 = merge_store_rows(old, new)
-    twice, dg2 = merge_store_rows(once, new)
+    once, dg1, pr1 = merge_store_rows(old, new)
+    twice, dg2, pr2 = merge_store_rows(once, new)
     assert once == twice and len(once) == 2 and dg1 == [] and dg2 == []
+    assert pr1 == [] and pr2 == [], 'unreviewed rows must not be protected'
     # B08 (H1339): the store merge is better-attempt-wins, the H304 rule ported to the
     # store level. A partial incoming attempt must NOT downgrade complete existing rows;
     # a complete incoming attempt replaces a partial; fewer missing fragments win among
@@ -1322,10 +1433,10 @@ def selftest():
     complete_old = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'old-good', 'provenance': {}}]
     partial_new = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'new-partial',
                     'provenance': {'partial_card': True, 'missing_fragments': ['g1:f0']}}]
-    merged, downgraded = merge_store_rows(complete_old, partial_new)
+    merged, downgraded, _pr = merge_store_rows(complete_old, partial_new)
     assert merged == complete_old and downgraded == ['x~~a'], \
         'a partial attempt silently downgraded a complete store row'
-    merged, downgraded = merge_store_rows(partial_new, complete_old)
+    merged, downgraded, _pr = merge_store_rows(partial_new, complete_old)
     assert merged == complete_old and downgraded == [], \
         'a complete attempt must replace a partial store row'
     worse = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'p3',
@@ -1333,10 +1444,86 @@ def selftest():
                              'missing_fragments': ['g1:f0', 'g1:f1', 'g2:f0']}}]
     better = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'p1',
                'provenance': {'partial_card': True, 'missing_fragments': ['g1:f0']}}]
-    merged, downgraded = merge_store_rows(worse, better)
+    merged, downgraded, _pr = merge_store_rows(worse, better)
     assert merged == better and downgraded == [], 'fewer missing fragments must win'
-    merged, downgraded = merge_store_rows(better, worse)
+    merged, downgraded, _pr = merge_store_rows(better, worse)
     assert merged == better and downgraded == ['x~~a'], 'more missing fragments must lose'
+
+    # H2146 (FINDINGS §513): human-touched store rows are PROTECTED from machine
+    # replacement -- reviewer stamp, non-ai_* review_status, or editorial_decision*
+    # each protect independently; --override-reviewed restores the old behaviour.
+    machine_new = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'machine-redo',
+                    'review_status': 'ai_translated', 'reviewer': None,
+                    'provenance': {}}]
+    for label, human_row in (
+            ('approved+reviewer', {'key1': 'x', 'subcard': 'x~~a', 'ru': 'human-kept',
+                                   'review_status': 'approved', 'reviewer': 'MG',
+                                   'provenance': {}}),
+            ('needs_review', {'key1': 'x', 'subcard': 'x~~a', 'ru': 'human-kept',
+                              'review_status': 'needs_review', 'reviewer': None,
+                              'provenance': {}}),
+            ('editorial stamp', {'key1': 'x', 'subcard': 'x~~a', 'ru': 'human-kept',
+                                 'review_status': 'ai_translated', 'reviewer': None,
+                                 'editorial_decision_id': 'D42', 'provenance': {}})):
+        merged, downgraded, protected = merge_store_rows([human_row], machine_new)
+        assert merged == [human_row] and protected == ['x~~a'] and downgraded == [], \
+            'human overlay (%s) must survive a machine re-promote' % label
+        assert merged[0]['review_status'] == human_row['review_status'] \
+            and merged[0].get('reviewer') == human_row.get('reviewer'), \
+            'overlay fields must come back intact (%s)' % label
+    # Explicit override lands the machine attempt (deliberate re-translation).
+    approved = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'human-kept',
+                 'review_status': 'approved', 'reviewer': 'MG', 'provenance': {}}]
+    merged, downgraded, protected = merge_store_rows(
+        approved, machine_new, override_reviewed=True)
+    assert merged == machine_new and protected == [] and downgraded == [], \
+        '--override-reviewed must land the machine attempt'
+    # Unrelated subcards still merge normally next to a protected one.
+    mixed_store = approved + [{'key1': 'y', 'subcard': 'y~~a', 'ru': 'old',
+                               'review_status': 'ai_translated', 'provenance': {}}]
+    incoming2 = machine_new + [{'key1': 'y', 'subcard': 'y~~a', 'ru': 'new',
+                                'review_status': 'ai_translated', 'reviewer': None,
+                                'provenance': {}}]
+    merged, downgraded, protected = merge_store_rows(mixed_store, incoming2)
+    assert protected == ['x~~a'] and downgraded == []
+    assert any(r['subcard'] == 'y~~a' and r['ru'] == 'new' for r in merged), \
+        'unprotected sibling subcards must still land'
+    assert any(r['subcard'] == 'x~~a' and r['ru'] == 'human-kept' for r in merged)
+    assert not human_touched({'review_status': 'ai_translated', 'reviewer': None}), \
+        'machine rows must never self-protect'
+
+    # H2146: store_write.locked_store_rewrite -- the shared mutator writer -- refuses
+    # to write under a live PromoteClaim (lock serializes mutators against promotes).
+    import store_write
+    sw_store = os.path.join(d, 'sw-store.jsonl')
+    store_write.locked_store_rewrite(sw_store, [{'subcard': 's1'}], tag='selftest')
+    with PromoteClaim(sw_store):
+        try:
+            store_write.locked_store_rewrite(sw_store, [{'subcard': 's2'}], tag='selftest')
+            raise AssertionError('locked_store_rewrite must raise ClaimBusy under a claim')
+        except ClaimBusy:
+            pass
+    swb = store_write.locked_store_rewrite(sw_store, [{'subcard': 's3'}], tag='selftest')
+    assert swb and os.path.isfile(swb), 'mutator rewrite must leave a unique backup'
+
+    # H2153 (G7 / #977): the content-mass gate sees what the row-count guard cannot —
+    # a same-row-count content wipe — and ignores what fooled the byte size: formatting.
+    fat = [{'subcard': 'm~~%d' % i, 'ru': 'x' * 100, 'de': 'y' * 50, 'provenance': {}}
+           for i in range(10)]
+    thin = [dict(r, ru='x' * 5) for r in fat]
+    try:
+        refuse_content_mass_shrink(fat, thin)
+        raise AssertionError('a same-row-count content wipe must be refused')
+    except PromotionContractError:
+        pass
+    refuse_content_mass_shrink(fat, list(reversed(fat)))     # reorder/format-only: passes
+    refuse_content_mass_shrink(fat, thin, force=True)        # deliberate reduction: --force
+    grown = fat + [{'subcard': 'm~~new', 'ru': 'z' * 40, 'provenance': {}}]
+    refuse_content_mass_shrink(fat, grown)                   # growth always passes
+    mild = [dict(r, ru='x' * 95) for r in fat]
+    refuse_content_mass_shrink(fat, mild)                    # <10% shed passes
+    assert content_mass([{'ru': 'ab', 'de': None, 'h': 'c'}]) == 3, \
+        'content_mass counts only string content fields'
     # Atomic failure leaves the old store intact and removes the temporary file.
     atomic = os.path.join(d, 'atomic.jsonl')
     with open(atomic, 'w', encoding='utf-8') as f:
@@ -1675,6 +1862,16 @@ def main():
                          'translated sub-cards not in this run). Use for a per-root catch-up — the '
                          'default full overwrite WIPES any root whose wf_output file is no longer '
                          'on disk (the gam-RU loss mode).')
+    ap.add_argument('--override-reviewed', action='store_true',
+                    help='H2146: allow machine replacement of subcards whose store rows a '
+                         'human has touched (reviewer set, non-ai_* review_status, or an '
+                         'editorial_decision* stamp). Default preserves/refuses them '
+                         '(FINDINGS §513); pass this only for a deliberate re-translation '
+                         'of reviewed content.')
+    ap.add_argument('--allow-raw-default-merge', action='store_true',
+                    help='H2089: override the refuse of --merge into the default pwg_ru store '
+                         'without --promotion-id. Prefer coordinator journaled --batch-manifest. '
+                         'Env twin: PWG_ALLOW_RAW_MERGE_DEFAULT_STORE=1.')
     ap.add_argument('--steal-lock', action='store_true',
                     help='H336/H-1: bypass a live promotion claim on --store unconditionally. Only '
                          'for a claim you are certain is dead (crashed run) — no PID-liveness check '
@@ -1726,7 +1923,8 @@ def main():
                 batch, args.store, args.review_status, args.gen_model_version,
                 no_backup=args.no_backup, steal_lock=args.steal_lock,
                 lock_ttl_seconds=args.lock_ttl_seconds, report_path=args.report,
-                journal_path=args.journal, promotion_id=args.promotion_id)
+                journal_path=args.journal, promotion_id=args.promotion_id,
+                override_reviewed=args.override_reviewed)
         except (PromotionContractError, UnrestoredPlaceholder,
                 promotion_journal.JournalError) as exc:
             sys.exit('REFUSED: %s' % exc)
@@ -1734,8 +1932,10 @@ def main():
             sys.exit(str(e))
         return report
 
-    if args.journal or args.promotion_id:
-        sys.exit('REFUSED: --journal/--promotion-id currently require --batch-manifest')
+    if args.journal and not args.batch_manifest:
+        sys.exit('REFUSED: --journal currently requires --batch-manifest')
+    # --promotion-id alone is allowed as the H2089 coordinator-intent token for
+    # single-mode --merge into the default store (no journal write in that path).
 
     if args.ready_partial_report:
         try:
@@ -1760,6 +1960,24 @@ def main():
         sys.exit(
             'refusing --merge with the implicit broad glob %r; pass --glob explicitly '
             '(normally src/pilot/output/wf_output.<window>.json)' % DEFAULT_GLOB)
+    # H2089: single-mode --merge into the LIVE default store without a promotion id
+    # is a coordinator bypass (silent route around journaled batch_promote). Refuse
+    # unless override flag/env is set.
+    if args.merge and not args.dry_run:
+        _def = os.path.normpath(os.path.abspath(DEFAULT_STORE))
+        _tgt = os.path.normpath(os.path.abspath(args.store))
+        if _tgt == _def:
+            override = (
+                args.allow_raw_default_merge
+                or os.environ.get('PWG_ALLOW_RAW_MERGE_DEFAULT_STORE') == '1'
+            )
+            if not args.promotion_id and not override:
+                sys.exit(
+                    'REFUSED: --merge into default pwg_ru store without --promotion-id '
+                    '(H2089 route-bypass). Use coordinator --batch-manifest + --journal, '
+                    'or pass --promotion-id, or --allow-raw-default-merge / '
+                    'PWG_ALLOW_RAW_MERGE_DEFAULT_STORE=1'
+                )
     try:
         validate_store_target(args.store, args.init_store)
     except PromotionContractError as exc:
@@ -1866,6 +2084,8 @@ def main():
             # Guards against the full-overwrite wipe when only a subset of wf_output is on disk.
             kept = 0
             downgraded = []
+            protected = []
+            store_rows_before = None
             if args.merge and os.path.exists(args.store):
                 promoted_subs = {r['subcard'] for r in rows}
                 touched_roots = {r['key1'] for r in rows}
@@ -1876,7 +2096,9 @@ def main():
                         if not line:
                             continue
                         existing_rows.append(json.loads(line))
-                rows_to_write, downgraded = merge_store_rows(existing_rows, rows)
+                store_rows_before = existing_rows
+                rows_to_write, downgraded, protected = merge_store_rows(
+                    existing_rows, rows, override_reviewed=args.override_reviewed)
                 if downgraded:
                     # B08: better-attempt-wins refused these incoming subcards -- the store
                     # already holds a strictly better attempt (complete vs partial, or
@@ -1885,11 +2107,50 @@ def main():
                           '%d subcard(s); incoming (worse) attempt dropped: %s'
                           % (len(downgraded), ', '.join(downgraded[:10])
                              + (' …' if len(downgraded) > 10 else '')))
-                landed = len(rows) - sum(1 for r in rows if r['subcard'] in set(downgraded))
+                if protected:
+                    # H2146: human-reviewed subcards are preserved, never silently
+                    # machine-replaced (FINDINGS §513). --override-reviewed lands them.
+                    print('\n⚠ overlay-preserve: store keeps its HUMAN-REVIEWED rows for '
+                          '%d subcard(s); incoming machine attempt dropped (pass '
+                          '--override-reviewed for a deliberate re-translation): %s'
+                          % (len(protected), ', '.join(protected[:10])
+                             + (' …' if len(protected) > 10 else '')))
+                blocked_subs_ = set(downgraded) | set(protected)
+                landed = len(rows) - sum(1 for r in rows if r['subcard'] in blocked_subs_)
                 kept = len(rows_to_write) - landed
                 print('\nMERGE: replacing %d sub-card(s) across root(s) %s; keeping %d existing row(s)'
-                      % (len(promoted_subs - set(downgraded)), sorted(touched_roots), kept))
+                      % (len(promoted_subs - blocked_subs_), sorted(touched_roots), kept))
             else:
+                # H2146 (FINDINGS §513): a full rebuild replaces the store with whatever
+                # wf_output is on disk -- if the store holds HUMAN-REVIEWED rows, that
+                # wipes the review overlay wholesale. Refuse; --force does NOT cover this
+                # (it bypasses the shrink guard, a different hazard) -- only the explicit
+                # --override-reviewed does.
+                if os.path.exists(args.store):
+                    overlay_subs = set()
+                    store_rows_before = []
+                    try:
+                        with open(args.store, encoding='utf-8') as f:
+                            for line in f:
+                                line = line.strip()
+                                if not line:
+                                    continue
+                                row = json.loads(line)
+                                store_rows_before.append(row)
+                                if human_touched(row):
+                                    overlay_subs.add(row.get('subcard'))
+                    except (OSError, json.JSONDecodeError) as exc:
+                        sys.exit('REFUSED: cannot verify the store overlay state before a '
+                                 'full rebuild (%s) -- fix the store or use --merge' % exc)
+                    if overlay_subs and not args.override_reviewed:
+                        sys.exit(
+                            'REFUSED: full (non---merge) rebuild would wipe HUMAN-REVIEWED '
+                            'rows for %d subcard(s): %s (FINDINGS §513). Use --merge (which '
+                            'preserves them), or --override-reviewed for a deliberate '
+                            'rebuild over reviewed content.'
+                            % (len(overlay_subs),
+                               ', '.join(sorted(overlay_subs)[:10])
+                               + (' …' if len(overlay_subs) > 10 else '')))
                 rows_to_write = rows
 
             identities = [(r.get('key1'), r.get('subcard'), r.get('h'),
@@ -1899,6 +2160,16 @@ def main():
             if duplicates:
                 sys.exit('REFUSED: promotion would create %d duplicate sense identity/identities'
                          % len(duplicates))
+
+            # H2153 (G7 / #977): content-mass gate — the row-count guard below cannot see
+            # a same-row-count content loss; this one compares character mass over the
+            # content fields and is immune to serializer formatting.
+            if store_rows_before is not None:
+                try:
+                    refuse_content_mass_shrink(store_rows_before, rows_to_write,
+                                               force=args.force)
+                except PromotionContractError as exc:
+                    sys.exit('REFUSED: %s' % exc)
 
             # OVERWRITE GUARD: refuse to shrink the store to a small fraction of its current
             # size. A default (non-merge) run rebuilds the store from whatever wf_output files
@@ -1937,7 +2208,7 @@ def main():
             # fail a promotion that already committed.
             try:
                 cleared_addr, cleared_frag = clear_denials_for_promotion(
-                    best, blocked_subs=downgraded)
+                    best, blocked_subs=sorted(set(downgraded) | set(protected)))
                 if cleared_addr or cleared_frag:
                     print('TM denylist: cleared %d card address(es) + %d fragment sha(s) '
                           'superseded by this promotion' % (len(cleared_addr), len(cleared_frag)))

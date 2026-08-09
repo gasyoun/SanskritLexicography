@@ -23,9 +23,9 @@ Russian edition adopts.
 | Dict | Preface (OCR) | Entry file | Probe set |
 |---|---|---|---|
 | PWG | [`PWG/prefaces/pwgpref_all.de.md`](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.de.md) | `csl-orig/v02/pwg/pwg.txt` | homonyms `1.aMSa/2.aMSa`; gloss-rich `arTa`; deriv-nest `kf`/`gam` |
-| PW | [`PWK/prefaces/pwpref_all.de.md`](https://github.com/sanskrit-lexicon/PWK/blob/master/prefaces/pwpref_all.de.md) | `csl-orig/v02/pw/pw.txt` | same |
+| PW | [`PWK/prefaces/pwpref_all.de.md`](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.de.md) | `csl-orig/v02/pw/pw.txt` | same |
 | MW | [`MWS/prefaces/mwpref_all.en.md`](https://github.com/sanskrit-lexicon/MWS/blob/master/prefaces/mwpref_all.en.md) | `csl-orig/v02/mw/mw.txt` | same |
-| GRA | [`GRA/prefaces/grapref_all.en.md`](https://github.com/sanskrit-lexicon/GRA/blob/master/prefaces/grapref_all.en.md) | `csl-orig/v02/gra/gra.txt` | RV-only; check citation = every occurrence |
+| GRA | [`GRA/prefaces/grapref_all.en.md`](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/grapref_all.en.md) | `csl-orig/v02/gra/gra.txt` | RV-only; check citation = every occurrence |
 | AP90 | *(print front-matter)* | `csl-orig/v02/ap90/ap90.txt` | `artha`; check example-sentence style |
 | SCH | [`SCH/prefaces/schpref_all.de.md`](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.de.md) | `csl-orig/v02/sch/sch.txt` | `°`/`*` markers (already decoded — see DICTIONARY_CHAIN.md) |
 

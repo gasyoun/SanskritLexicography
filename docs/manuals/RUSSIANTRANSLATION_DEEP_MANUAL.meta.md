@@ -1,6 +1,6 @@
 # RUSSIANTRANSLATION_DEEP_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 31-07-2026_
+_Created: 18-07-2026 · Last updated: 01-08-2026_
 
 Companion record for [docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) (subsystem deep manual, H606).
 
@@ -15,16 +15,16 @@ Authored 11-07-2026 (H606). Refreshed 18-07-2026 under H1245. Headless-first rew
 ## Verification
 
 ```
-LAST_VERIFIED: 25-07-2026
-VERIFIED_BY: Grok 4.5 (grok-4.5), H1623
-COMMANDS_SPOT_RUN: 4
+LAST_VERIFIED: 01-08-2026
+VERIFIED_BY: Grok 4.5 (grok-4.5), H2078
+COMMANDS_SPOT_RUN: 2
 ```
 
 ## Improvement backlog
 
 | # | Item | Status |
 |---|---|---|
-| 1 | Steps 4–7 still narrate Workflow as primary | **done** H1622 |
+| 1 | Steps 4–7 still narrate Workflow as primary | **done** H1622; **re-verified closed** H2071 (01-08-2026) |
 | 2 | §10 script census generated | **done** 24-07 (script_census.py + SCRIPT_CENSUS.md) |
 | 3 | Re-harvest LAUNCH_STATS | **done** 24-07 (473 rows; still mostly Workflow-era date span — re-harvest after headless windows fill ledger) |
 | 4 | Cold start + skill-primary + symptom cookbook | **done** 24-07 |
@@ -58,6 +58,7 @@ Re-run `script_census.py` and `harvest_launch_stats.py` when the pipeline tree o
 
 | Date | Change | By |
 |---|---|---|
+| 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 31-07-2026 | §2d: autostart residual + human `@DO` for logged-off stored credentials; links windows/README inventory | Grok 4.5 (grok-4.5) |
 | 31-07-2026 | §2d dual dashboards (local 5 s · web 60 s) + doc map row; interlinked with progress_dashboard + dashboard_server UIs (H2032 follow-up) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |
