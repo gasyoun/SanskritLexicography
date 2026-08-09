@@ -1,6 +1,6 @@
 # Code review — pwg_ru pipeline (2026-07-04)
 
-_Created: 04-07-2026 · Last updated: 07-07-2026_
+_Created: 04-07-2026 · Last updated: 02-08-2026_
 
 Full-tree review of `RussianTranslation/src` (34,668 LOC, ~90 Python files) by
 five parallel reviewers (Opus 4.8, `claude-opus-4-8`), each scoped to one
@@ -72,7 +72,7 @@ Not in H321 scope (still open): the 🟠 broken-validator items, `supersedes` st
 - **Cross-builder Unicode key mismatch** — `build_dcs_freq*` (`norm_lemma`, no NFC) vs `build_corpus_lexicon` (`form_key`) vs `build_dcs_renou` (raw CoNLL-U lemma). Three "co-keyed" tables normalized three ways → the same lemma counts as two. *Fix: one shared normalizer + NFC pass.*
 - **Silent lemma loss on genre join-key miss** — [build_dcs_freq_dims.py:133](src/build_dcs_freq_dims.py). A text whose name doesn't normalize-match gets zero genre attribution, indistinguishable from the intended register-less tail. *Fix: log unmatched `text_id`s.*
 - **Homograph Ru-gloss attribution is winner-take-all + nondeterministic tie order** — [build_rollup_glossaries.py:60](src/build_rollup_glossaries.py) `most_common` sorts by count only; equal-count lemmas ordered by file order. *Fix: stable tiebreak; split near-tied distributions.*
-- **Citation index dedup semantics disagree across two code paths** — [build_citation_index.py:136](src/build_citation_index.py) vs `occurrence_stats()`; `CITATION_SOURCES.md` and `UNCOVERED_SOURCES.md` can disagree on coverage. *Fix: single source of truth for coverage.*
+- ✅ **Citation index dedup semantics disagree across two code paths** — was [build_citation_index.py](src/build_citation_index.py) `build()` vs `occurrence_stats()`; `CITATION_SOURCES.md` and `UNCOVERED_SOURCES.md` could disagree on coverage. **Fixed H2225 (02-08-2026, Grok 4.5 `grok-4.5`):** single `coverage_key` + `coverage_bucket` + shared `coverage_rows_from_pairs` kernel; both emitters consume it; `--selftest` pins fixture parity.
 - ✅ **`ls_resolver` Ṛgveda/Atharva disambiguation is substring-based** — [ls_resolver.py](src/ls_resolver.py). H321: fixed (anchored `_is_rv_prefix`; bare excepts now surface via `_warn_swallowed`) — see the H321 table above.
 
 ## ⚡ Backlog — performance

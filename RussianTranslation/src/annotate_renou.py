@@ -26,6 +26,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 import renou
+from store_write import locked_store_rewrite
 
 STATES = renou.STATES
 
@@ -101,29 +102,27 @@ def is_structured(obj):
 def run(path, out, dict_name, report_only):
     stats = {'cards': 0, 'units': 0, 'cited': 0, 'multi': 0, 'structured': 0,
              'by_state': collections.Counter(), 'oldest_state': collections.Counter()}
-    tmp = (out + '.tmp') if not report_only else None
-    sink = open(tmp, 'w', encoding='utf-8', newline='') if tmp else None
-    try:
-        with open(path, encoding='utf-8') as fin:
-            for line in fin:
-                line = line.strip()
-                if not line:
-                    continue
-                obj = json.loads(line)
-                if is_structured(obj):
-                    annotate_card(card_of(obj), dict_name, stats)
-                    stats['structured'] += 1
-                else:
-                    annotate_flat(obj, dict_name, stats)
-                stats['cards'] += 1
-                if sink:
-                    sink.write(json.dumps(obj, ensure_ascii=False) + '\n')
-    finally:
-        if sink:
-            sink.close()
-    if tmp:
-        os.replace(tmp, out)
-    report(stats, dict_name, out if tmp else None)
+    annotated = [] if not report_only else None
+    with open(path, encoding='utf-8') as fin:
+        for line in fin:
+            line = line.strip()
+            if not line:
+                continue
+            obj = json.loads(line)
+            if is_structured(obj):
+                annotate_card(card_of(obj), dict_name, stats)
+                stats['structured'] += 1
+            else:
+                annotate_flat(obj, dict_name, stats)
+            stats['cards'] += 1
+            if annotated is not None:
+                annotated.append(obj)
+    if annotated is not None:
+        # H2146: locked (PromoteClaim) + unique fsynced backup + atomic replace — the
+        # old tmp+replace was atomic but unlocked and kept no backup (FINDINGS §513).
+        locked_store_rewrite(out, annotated, tag='prerenou',
+                             no_backup=(os.path.abspath(out) != os.path.abspath(path)))
+    report(stats, dict_name, out if annotated is not None else None)
 
 
 def report(s, dict_name, out):

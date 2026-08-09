@@ -347,7 +347,11 @@ def plan_repair(store_path, source_dirs, harness_dirs):
 
 
 def jsonl_bytes(rows):
-    return ''.join(json.dumps(row, ensure_ascii=False, separators=(',', ':')) + '\n'
+    # H2153 (G7 / #977): the HOUSE serialization — spaced json.dumps, matching
+    # promote_final_cards._serialize_rows and the annotate_* family. This module and
+    # nws_ls_markup were the lane's only compact-separator writers; each full rewrite
+    # by either flipped ~1.3 MB of pure formatting against the next spaced writer.
+    return ''.join(json.dumps(row, ensure_ascii=False) + '\n'
                    for row in rows).encode('utf-8')
 
 
@@ -370,16 +374,21 @@ def atomic_write_bytes(path, data):
 
 
 def apply_repair(store_path, repaired, quarantine, expected_sha, quarantine_path):
-    actual = sha256_file(store_path)
-    if actual.lower() != expected_sha.lower():
-        raise RepairRefusal('source-hash drift: expected %s, got %s' % (expected_sha, actual))
-    stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
-    backup = '%s.pre-h1080.%s.%s.bak' % (store_path, actual[:16], stamp)
-    with open(store_path, 'rb') as fh:
-        original = fh.read()
-    atomic_write_bytes(backup, original)
-    atomic_write_bytes(quarantine_path, jsonl_bytes(quarantine))
-    atomic_write_bytes(store_path, jsonl_bytes(repaired))
+    # H2146: hold PromoteClaim across the hash-check/backup/replace window — the repair
+    # was atomic but unlocked, so a concurrent promote/mutator was last-writer-wins
+    # (FINDINGS §513). The hash gate + unique backup + atomic writes stay as they were.
+    from promote_lock import PromoteClaim
+    with PromoteClaim(store_path):
+        actual = sha256_file(store_path)
+        if actual.lower() != expected_sha.lower():
+            raise RepairRefusal('source-hash drift: expected %s, got %s' % (expected_sha, actual))
+        stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+        backup = '%s.pre-h1080.%s.%s.bak' % (store_path, actual[:16], stamp)
+        with open(store_path, 'rb') as fh:
+            original = fh.read()
+        atomic_write_bytes(backup, original)
+        atomic_write_bytes(quarantine_path, jsonl_bytes(quarantine))
+        atomic_write_bytes(store_path, jsonl_bytes(repaired))
     return backup, sha256_file(store_path), sha256_file(quarantine_path)
 
 

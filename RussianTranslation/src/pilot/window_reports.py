@@ -158,9 +158,17 @@ def build_production_metrics(args, wf_path=None, workflow_meta=None):
     When ``args.wall_clock_minutes`` is omitted, auto-derives from wf mtime and
     meta.generated_at (H1403 A2). Always stamps ``wall_clock_source`` so a missing
     number is distinguishable from "operator never passed the flag".
+
+    Every field here is OBSERVATIONAL — recorded onto the report/ledger and compared to
+    nothing (H2173 G10 / audit F-B8). The token slots are likewise reports of spend, not
+    ceilings; the enforced ceilings live in the manifest ``budgets`` block and are bound by
+    ``headless_worker`` (agent pools, ``timeout_ceil_ms``) and by the coordinator cost gate.
+    Read a number here as "what happened", never as "what was allowed".
     """
     wall_minutes, wall_source = derive_wall_clock_minutes(
         wf_path, workflow_meta, getattr(args, 'wall_clock_minutes', None))
+    # K6 (H2212): always emit metric keys so ledger rows never silently omit
+    # wall-clock / token slots (null is better than missing for coverage stats).
     fields = {
         'wall_clock_minutes': wall_minutes,
         'wall_clock_source': wall_source,
@@ -210,9 +218,80 @@ def next_action_for(state, report, pending):
     return 'Window is mechanically clean; advance to the next frequency root.'
 
 
+def resolve_gen_model(status):
+    """H390 / H2231 B8: model that generated the window.
+
+    Prefer workflow_meta.gen_model (gen_opt_harness2 / headless / cloud_window),
+    then execution.model_identifier, then a top-level status.gen_model override.
+    Returns None when unknown — key still stamped so coverage % is honest.
+    """
+    meta = status.get('workflow_meta') or {}
+    if not isinstance(meta, dict):
+        meta = {}
+    if meta.get('gen_model') is not None and meta.get('gen_model') != '':
+        return meta.get('gen_model')
+    execution = meta.get('execution') or {}
+    if isinstance(execution, dict) and execution.get('model_identifier'):
+        return execution.get('model_identifier')
+    if status.get('gen_model') is not None and status.get('gen_model') != '':
+        return status.get('gen_model')
+    return None
+
+
+def resolve_profile(status, env=None):
+    """H2231 B8: Claude profile slot / source_profile for multi-lane split.
+
+    Order: explicit status.profile / profile_slot → workflow_meta.execution.profile_slot
+    → meta.source_profile (legacy Max Workflow) → PWG_PROFILE_SLOT / PWG_PROFILE env.
+    """
+    env = os.environ if env is None else env
+    if status.get('profile') not in (None, ''):
+        return status.get('profile')
+    if status.get('profile_slot') not in (None, ''):
+        return status.get('profile_slot')
+    meta = status.get('workflow_meta') or {}
+    if not isinstance(meta, dict):
+        meta = {}
+    execution = meta.get('execution') or {}
+    if isinstance(execution, dict) and execution.get('profile_slot'):
+        return execution.get('profile_slot')
+    if meta.get('source_profile'):
+        return meta.get('source_profile')
+    for key in ('PWG_PROFILE_SLOT', 'PWG_PROFILE'):
+        val = env.get(key)
+        if val not in (None, ''):
+            return str(val).strip() or None
+    return None
+
+
+def resolve_host(status, env=None):
+    """H2231 B8: which machine closed this audit (multi-PC nonstop).
+
+    Order: explicit status.host → PWG_HOST → COMPUTERNAME / HOSTNAME → socket hostname.
+    """
+    env = os.environ if env is None else env
+    if status.get('host') not in (None, ''):
+        return status.get('host')
+    for key in ('PWG_HOST', 'COMPUTERNAME', 'HOSTNAME'):
+        val = env.get(key)
+        if val not in (None, ''):
+            return str(val).strip() or None
+    try:
+        import socket
+        name = socket.gethostname()
+        return name or None
+    except Exception:  # noqa: BLE001 — host is optional instrumentation
+        return None
+
+
 def append_ledger(status, out_dir=None):
     out_dir = out_dir or OUT
     os.makedirs(out_dir, exist_ok=True)
+    # H390 / K6 / H2231 B8: always stamp gen_model + host + profile keys
+    # (null is better than missing for coverage and multi-lane mix).
+    gen_model = resolve_gen_model(status)
+    host = resolve_host(status)
+    profile = resolve_profile(status)
     compact = {
         'recorded_at': status.get('recorded_at'),
         'root': status.get('root'),
@@ -232,8 +311,15 @@ def append_ledger(status, out_dir=None):
         # H390 Phase 1: which model generated this window, read from the run's own
         # workflow meta (gen_opt_harness2 stamps meta.gen_model). Makes per-model
         # rates (the Fable-vs-Sonnet A/B) computable straight off the ledger.
-        'gen_model': (status.get('workflow_meta') or {}).get('gen_model'),
-        'production_metrics': status.get('production_metrics'),
+        # K6: stamp gen_model even when null so coverage % is honest.
+        # H2231 B8: also host + profile for multi-PC / multi-profile split.
+        'gen_model': gen_model,
+        'host': host,
+        'profile': profile,
+        'production_metrics': status.get('production_metrics') or {
+            'wall_clock_minutes': None,
+            'wall_clock_source': 'unavailable',
+        },
         # H1618: agent-lane telemetry from headless summary (translate/heal spent +
         # budget_stops/kill/conn). Was on wf_output.summary only; ledger rows stayed
         # open-loop for the H1403 "instrumentation blindness" bottleneck.
@@ -279,16 +365,17 @@ def write_window_status(report, out_dir=None):
     judge_sample = report.get('judge_sample') or {}
     production_metrics = report.get('production_metrics') or {}
     next_action = next_action_for(state, report, pending)
+    workflow_meta = report.get('workflow_meta') or {}
     status = {
         'root': root,
         'workflow': report['workflow'],
         'state': state,
         'recorded_at': datetime.datetime.now(datetime.timezone.utc).isoformat(
             timespec='seconds').replace('+00:00', 'Z'),
-        'workflow_meta': report.get('workflow_meta') or {},
+        'workflow_meta': workflow_meta,
         'stale_check': stale,
         'rootmap_sha256': current.get('rootmap_sha256'),
-        'selected_key_count': len((report.get('workflow_meta') or {}).get('selected_keys') or report['keys']),
+        'selected_key_count': len(workflow_meta.get('selected_keys') or report['keys']),
         'workflow_keys': len(report['keys']),
         'root_subcards': total,
         'translated': counts.get('translated', translated),
@@ -303,6 +390,10 @@ def write_window_status(report, out_dir=None):
         'clean_key_count': judge_sample.get('clean_key_count', 0),
         'next_action': next_action,
         'production_metrics': production_metrics,
+        # H2231 B8: resolve once so window_status.json + ledger share the same tags.
+        'gen_model': report.get('gen_model'),
+        'host': report.get('host'),
+        'profile': report.get('profile') or report.get('profile_slot'),
         'crashed': report['crashed'],
         'prompt_rules': report.get('prompt_rules'),
         'semantic_risks': {
@@ -322,6 +413,10 @@ def write_window_status(report, out_dir=None):
                  'nested_exists': glue.get('nested_exists'),
                  'seconds': glue.get('seconds')},
     }
+    # Resolve after the dict exists so resolve_* see workflow_meta + any report overrides.
+    status['gen_model'] = resolve_gen_model(status)
+    status['host'] = resolve_host(status)
+    status['profile'] = resolve_profile(status)
     os.makedirs(out_dir, exist_ok=True)
     json_path = os.path.join(out_dir, 'window_status.json')
     md_path = os.path.join(out_dir, 'window_status.md')
@@ -418,6 +513,60 @@ def audit_state(report):
     if pending:
         return 'partial'
     return 'clean'
+
+
+def _is_ephemeral_out_dir(out_dir):
+    """True when out_dir is a fixture/ephemeral scratch — never stamp the live denylist."""
+    if not out_dir:
+        return False
+    abs_out = os.path.abspath(out_dir)
+    if 'pwg_audit_ephemeral_' in abs_out:
+        return True
+    try:
+        import tempfile
+        tmp_root = os.path.abspath(tempfile.gettempdir())
+        if abs_out == tmp_root or abs_out.startswith(tmp_root + os.sep):
+            return True
+    except Exception:  # noqa: BLE001 — tempdir probe is advisory only
+        pass
+    return False
+
+
+def _stamp_last_audit_denylist(report, out_dir):
+    """OPT-7: apply last-audit defect outcome to the TM denylist (or a local fixture path).
+
+    Returns a small status dict for the report; never raises into the audit path for
+    missing raws (stamp skips unknown keys). Crashed audits and empty defect sets no-op.
+    """
+    crashed = report.get('crashed') or []
+    defect_keys = list(report.get('requeue_defect') or [])
+    defect_fshas = list(report.get('requeue_defect_fshas') or [])
+    if crashed:
+        return {'stamped': False, 'reason': 'crashed_audit_refused', 'crashed': list(crashed)}
+    if not defect_keys and not defect_fshas:
+        return {'stamped': False, 'reason': 'no_defect_keys'}
+    import translation_memory as tm  # late: keep window_reports import surface thin
+    lang = report.get('lang') or 'ru'
+    if lang not in ('ru', 'en'):
+        lang = 'ru'
+    # Ephemeral/temp audits: stamp a *local* denylist under out_dir so fixtures can prove
+    # refuse-on-fail without poisoning the shared live sidecar.
+    deny_path = None
+    if _is_ephemeral_out_dir(out_dir):
+        deny_path = os.path.join(out_dir, 'translation_memory.denylist.jsonl')
+    n, nf = tm.stamp_denylist_from_last_audit(
+        defect_keys, lang=lang, fshas=defect_fshas,
+        root=report.get('root') or '',
+        reason='last_audit_defect', path=deny_path)
+    return {
+        'stamped': True,
+        'cards': n,
+        'frags': nf,
+        'lang': lang,
+        'denylist': deny_path or tm.denylist_path(),
+        'false_invalidation_controls': (
+            'defect-only; skip-crashed; clean keys untouched; promote unblocks'),
+    }
 
 
 def write_reports(report, write_requeue, write_requeue_file=True, out_dir=None):
@@ -536,6 +685,15 @@ def write_reports(report, write_requeue, write_requeue_file=True, out_dir=None):
             atomic_write_text(
                 os.path.join(out_dir, fname),
                 '\n'.join(keys_) + ('\n' if keys_ else ''))
+        # H2228 / OPT-7: stamp TM denylist from last *defect* audit outcome at write-requeue
+        # time (not only when requeue_from_audit runs). load_tm always applies the denylist
+        # before a hit, so a default --tm=auto requeue cannot silently re-serve failed
+        # content even without operator --no-tm. Controls:
+        #   * defect keys/fshas only (never transient)
+        #   * skip crashed blast-radius sets (B11)
+        #   * never touch the live canonical denylist from ephemeral/temp out_dir
+        #   * clean held-out keys stay serveable
+        report['tm_denylist_stamped'] = _stamp_last_audit_denylist(report, out_dir)
     status_json, status_md = write_window_status(report, out_dir)
     return (json_path, md_path,
             requeue_path if write_requeue and write_requeue_file else None,

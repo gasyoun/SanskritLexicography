@@ -1,0 +1,13 @@
+{
+  "row": {
+    "arm": "cli",
+    "key": "nakzatra",
+    "wall_ms": 300000,
+    "failure_class": "timeout",
+    "usage": {},
+    "n": 2,
+    "cost_usd_1h_write": 0.0,
+    "cost_usd_5m_write": 0.0
+  },
+  "raw": null
+}

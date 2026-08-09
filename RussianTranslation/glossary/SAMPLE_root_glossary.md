@@ -1,10 +1,19 @@
 # Sample — root → Russian (showcase)
 
-_Created: 01-07-2026 · Last updated: 01-07-2026_
+_Created: 01-07-2026 · Last updated: 04-08-2026_
 
 Excerpt of the full `root_glossary` (regenerable; see [README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/glossary/README.md)). Each root aggregates every attested form and prefixed verb-lemma across the 1.09M-token Sa→Ru corpus.
 
+The ranked lists below are **corpus rollup data** — descriptive translation frequencies
+quoted verbatim from `root_glossary`, finite forms and all
+([ROOT_GLOSS_REGISTER_POLICY.md](https://github.com/gasyoun/SanskritRussian/blob/main/ROOT_GLOSS_REGISTER_POLICY.md) §1:
+data is never retro-edited). Each root's **Citation gloss** line is the *authored*
+dictionary-neutral headline gloss under policy §§2–4 — infinitive head, aspect pair,
+active voice.
+
 ## √gam  (IAST √gam) — n=7116, 678 forms, 44 lemmas
+
+**Citation gloss:** идти / пойти; отправляться
 
 Lemmas rolled up: `gam, Agam, samAgam, aBigam, aDigam, upagam, anugam, upAgam, aByAgam, nirgam, saMgam, avagam` …
 
@@ -36,6 +45,8 @@ Lemmas rolled up: `gam, Agam, samAgam, aBigam, aDigam, upagam, anugam, upAgam, a
 
 ## √kf  (IAST √kṛ) — n=9432, 817 forms, 118 lemmas
 
+**Citation gloss:** делать / сделать; совершать
+
 Lemmas rolled up: `kf, vikf, puraskf, avakf, prakf, satkf, namaskf, Akf, saMskf, prAduzkf, aDikf, parizkf` …
 
 - сделал · n=261
@@ -65,6 +76,8 @@ Lemmas rolled up: `kf, vikf, puraskf, avakf, prakf, satkf, namaskf, Akf, saMskf,
 - делали · n=33
 
 ## √BU  (IAST √bhū) — n=6906, 381 forms, 46 lemmas
+
+**Citation gloss:** быть; становиться / стать
 
 Lemmas rolled up: `BU, samBU, aBiBU, praBU, anuBU, pariBU, prAdurBU, ABU, ekIBU, parABU, udBU, samudBU` …
 
@@ -96,6 +109,8 @@ Lemmas rolled up: `BU, samBU, aBiBU, praBU, anuBU, pariBU, prAdurBU, ABU, ekIBU,
 
 ## √sTA  (IAST √sthā) — n=4011, 394 forms, 26 lemmas
 
+**Citation gloss:** стоять; пребывать, находиться
+
 Lemmas rolled up: `sTA, AsTA, avasTA, upasTA, prasTA, vyavasTA, samupasTA, saMsTA, samAsTA, samavasTA, samprasTA, paryavasTA` …
 
 - пребывает · n=123
@@ -125,6 +140,8 @@ Lemmas rolled up: `sTA, AsTA, avasTA, upasTA, prasTA, vyavasTA, samupasTA, saMsT
 - встал · n=19
 
 ## √han  (IAST √han) — n=4994, 447 forms, 28 lemmas
+
+**Citation gloss:** убивать / убить
 
 Lemmas rolled up: `han, nihan, aBihan, Ahan, vinihan, upahan, pratihan, saMhan, vihan, samAhan, apahan, vyAhan` …
 
@@ -156,6 +173,8 @@ Lemmas rolled up: `han, nihan, aBihan, Ahan, vinihan, upahan, pratihan, saMhan, 
 
 ## √vac  (IAST √vac) — n=5315, 218 forms, 15 lemmas
 
+**Citation gloss:** говорить / сказать
+
 Lemmas rolled up: `vac, pravac, prativac, aBivac, sampravac, upavac, anuvac, nirvac, vivac, nivac, aDivac, ativac` …
 
 - сказал · n=1061
@@ -185,6 +204,8 @@ Lemmas rolled up: `vac, pravac, prativac, aBivac, sampravac, upavac, anuvac, nir
 - сказанное · n=30
 
 ## √dA  (IAST √dā) — n=2647, 321 forms, 24 lemmas
+
+**Citation gloss:** давать / дать _(корпусный топ «взяв» — наплыв приставочной леммы `AdA` 'брать'; policy §7, prefixed-lemma bleed)_
 
 Lemmas rolled up: `dA, AdA, pradA, upAdA, samAdA, paridA, sampradA, upadA, parAdA, saMdA, pratidA, vyAdA` …
 

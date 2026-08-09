@@ -1,0 +1,241 @@
+{
+  "is_error": false,
+  "duration_api_ms": 494603,
+  "num_turns": 3,
+  "stop_reason": "tool_use",
+  "session_id": "acd56dc2-a6a9-4596-a78c-d24327c42c20",
+  "total_cost_usd": 0.41927460000000005,
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 15066,
+    "cache_read_input_tokens": 69811,
+    "output_tokens": 4091,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 15066,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 4091,
+        "cache_read_input_tokens": 69811,
+        "cache_creation_input_tokens": 15066,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 15066
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-sonnet-5": {
+      "inputTokens": 4,
+      "outputTokens": 19132,
+      "cacheReadInputTokens": 139622,
+      "cacheCreationInputTokens": 15066,
+      "webSearchRequests": 0,
+      "costUSD": 0.41927460000000005,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"cards\":[{\"key1\":\"nakzatra\",\"iast\":\"nakṣatra\",\"notes\":\"Многослойная статья: PWG — основная (большая) статья Бётлингка-Рота; PW — сокращённая позднейшая редакция Бётлингка (тот же массив + 2 короткие дополнительные записи); SCH — добавление Шмидта 1928 г. (N. pr.); PWKVN — вариантные дополнения к PW, привязанные к номерам значений PW. Грамматика: a-основа (Whitney §§326–334, парадигма §330; деривация §§1136–1245).\",\"records\":[{\"h\":\"{T1}\",\"grammar\":\"{T2}. {T3}\",\"senses\":[{\"tag\":\"0 (этимологич. заметка)\",\"german\":\"{T1}¦ {T2}. {T3}\",\"russian\":\"{T1} — {T2}; {T3} (грамматическая справка: слово образовано согласно правилу Уṇāди-сутр, указанному в {T2}; {T3} — родовая помета).\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"\"}]},{\"h\":\"{T1}\",\"grammar\":\"{T2}. {T3}\",\"senses\":[{\"tag\":\"1\",\"german\":\"{T140} 1〉 {%Gestirn%} {T4} (auch von der Sonne gebraucht) {T5}. {T6}. {T7} ({T8}) {T9} {T10}. {T11} {T12}. {T13} {T14}. {T15}. {T16}. {%Sterne%} {T17}. {T18}. {T19} {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34} {T35}. {T36} {T37}. {T38}. {T39} {T40}. {T41}. Diese fünf bilden bei den {T42} die Gruppe der {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52} {T53}. {T54}. {T55}. {T56} {T57}. Ein Mal {T58}: {T59} {T60}. {T61} {%aus einem Stern bestehend%} {T62}. {T63}. {T64}.\",\"russian\":\"{T140} 1) созвездие, светило вообще {T4} (употребляется также и о Солнце) {T5}. {T6}. {T7} ({T8}) {T9} {T10}. {T11} {T12}. {T13} {T14}. {T15}. {T16}. звёзды {T17}. {T18}. {T19} {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34} {T35}. {T36} {T37}. {T38}. {T39} {T40}. {T41}. Эти пять образуют у {T42} группу {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52} {T53}. {T54}. {T55}. {T56} {T57}. Единожды {T58}: {T59} {T60}. {T61} состоящий из одной звезды {T62}. {T63}. {T64}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"Vedic\",\"differentia\":\"«созвездие/светило» как родовое понятие, включающее также Солнце — отличать от узкого терминологического значения 2) «лунная стоянка».\"},{\"tag\":\"2\",\"german\":\"{T141}— 2〉 im {T65} {%die Mondstationen%}; in der älteren Zeit (aber auch noch im {T66}) 27, später 28 an der Zahl. Dieselben werden in der Folge auch als {%Gemahlinnen des Mondes%}, als Töchter {T67}ʼs, augfefasst. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75}. {T76}. {T77}, {T78}. {T79} {T80} {T81} {T82}. {T83}. {T84}. {T85}. {T86} {T87}. Die Namen derselben {T88} {T89} {T90} {T91}, {T92}. {T93}, Die vedischen Nachrichten von den Nakshatra.\",\"russian\":\"{T141}— 2) в {T65} в частности — лунные стоянки; в более древнюю эпоху (но ещё и в {T66}) их насчитывают 27, позднее 28. Впоследствии они же осмысляются как супруги Луны, дочери {T67}. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75}. {T76}. {T77}, {T78}. {T79} {T80} {T81} {T82}. {T83}. {T84}. {T85}. {T86} {T87}. Их имена {T88} {T89} {T90} {T91}, {T92}. {T93}, «Die vedischen Nachrichten von den Nakshatra» (название работы сохранено в оригинале).\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"Vedic; Epic / early-Classical\",\"differentia\":\"специализированное значение — 27/28 лунных стоянок, персонифицированных как дочери-жёны Луны; отличать от общего значения 1).\"},{\"tag\":\"3\",\"german\":\"{T142}— 3〉 {%Perle%} {T94}_im_{T95} — Was die Etymologie betrifft, so lässt sich gegen die von {T96}_in_{T97} vorgebrachte ({T98} + {T99}) einwenden, dass {%Wächter der Nacht%} nicht auf die Sonne passt, welche in den ältesten Texten vorzugsweise {T100} genannt wird. Die Gleichsetzung von {T101} mit {T102} erregt gleichfalls Bedenken. Eher liesse sich noch an eine Zurückführung auf {T103} ({T104} {T105}. {T106}.) denken, dann wären die Gestirne {%die am Himmel Heraufkommenden%}. Die spielende Zerlegung in {T107} + {T108} findet sich {T109}. {T110}. {T111}. {T112}.\",\"russian\":\"{T142}— 3) жемчужина {T94}_в_{T95} — Что касается этимологии, то против предложенной {T96}_в_{T97} этимологии ({T98} + {T99}) можно возразить, что «страж ночи» не подходит к Солнцу, которое в древнейших текстах преимущественно именуется {T100}. Отождествление {T101} с {T102} также вызывает сомнения. Скорее можно было бы думать о возведении к {T103} ({T104} {T105}. {T106}.), — тогда светила были бы «восходящими на небе». Игровое разложение на {T107} + {T108} встречается {T109}. {T110}. {T111}. {T112}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"значение засвидетельствовано лишь у лексикографа ({T94}) — kośa-значение; этимологическое обсуждение относится к самому слову nakṣatra в целом, а не только к этому значению.\"},{\"tag\":\"3-доп. (заключительная заметка)\",\"german\":\"{T143}— {T113} {T114}.\",\"russian\":\"{T143} — {T113} {T114}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"\"}]},{\"h\":\"{T115}\",\"grammar\":\"{T116}\",\"senses\":[{\"tag\":\"1\",\"german\":\"{T144}— 1〉 {%Gestirn, Stern;%} {T117} {%die Sonne und die Sterne%} ({T118}) Einmal {T119} als Personification. Am Ende eines {T120} {T121} {T122}\",\"russian\":\"{T144}— 1) созвездие, звезда; {T117} Солнце и звёзды ({T118}). Единожды {T119} как персонификация. В конце {T120} {T121} {T122}\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"Vedic\",\"differentia\":\"сокращённая редакция значения 1) основной статьи PWG.\"},{\"tag\":\"2\",\"german\":\"{T145}— 2〉 {%Mondhaus,%} deren in der älteren Zeit 27, später 28 angenommen werden. Personificirt als Töchter {T123}ʼs und Gattinnen des Mondes.\",\"russian\":\"{T145}— 2) лунный дом; их в более древнюю эпоху принимается 27, позднее 28. Персонифицируются как дочери {T123} и супруги Луны.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"Vedic\",\"differentia\":\"сокращённая редакция значения 2) основной статьи PWG.\"},{\"tag\":\"3\",\"german\":\"{T146}— 3〉 *{%Perle%} {T124}. {T125} {T126} 3〉.\",\"russian\":\"{T146}— 3) *жемчужина {T124}. {T125} {T126} 3).\",\"equivalence_type\":\"equivalent\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"отсылка к значению 3) основной статьи PWG; звёздочка отмечает исправленное/уточнённое чтение.\"}]},{\"h\":\"{T127}\",\"grammar\":\"{T128}\",\"senses\":[{\"tag\":\"1\",\"german\":\"{T127}¦ {T128} {T129} eines {T130} {T131}.{T147}\",\"russian\":\"{T127} — {T128} {T129} некоего {T130} {T131}.{T147}\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"\"}]},{\"h\":\"{T132}\",\"grammar\":\"\",\"senses\":[{\"tag\":\"1\",\"german\":\"{T132}¦ III. 5.{T148}\",\"russian\":\"{T132} — III. 5.{T148}\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"перекрёстная отсылка (том/страница).\"}]},{\"h\":\"{%Nakṣatra%}\",\"grammar\":\"m.\",\"senses\":[{\"tag\":\"1 (N. pr.)\",\"german\":\"{%Nakṣatra%}¦ m. N. pr. eines Ekādaśāṅgin, {T133}\",\"russian\":\"{%Nakṣatra%} — м., имя собственное (N. pr.) некоего Ekādaśāṅgin, {T133}\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"новое (по сравнению с PW) добавление Шмидта 1928 г. — собственное имя личности.\"}]},{\"h\":\"{T134}\",\"grammar\":\"{T135}\",\"senses\":[{\"tag\":\"1\",\"german\":\"{T134}¦ {T135} {T136} eines {T137} {T138}.\",\"russian\":\"{T134} — {T135} {T136} некоего {T137} {T138}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"вариантное дополнение PWK к записи PW, соответствующей {T127}.\"}]},{\"h\":\"{T139}\",\"grammar\":\"\",\"senses\":[{\"tag\":\"1\",\"german\":\"{T139}¦ III. 5.\",\"russian\":\"{T139} — III. 5.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"перекрёстная отсылка (том/страница), вариант PWK к {T132}.\"}]}]}]}",
+  "structured_output": {
+    "cards": [
+      {
+        "key1": "nakzatra",
+        "iast": "nakṣatra",
+        "notes": "Многослойная статья: PWG — основная (большая) статья Бётлингка-Рота; PW — сокращённая позднейшая редакция Бётлингка (тот же массив + 2 короткие дополнительные записи); SCH — добавление Шмидта 1928 г. (N. pr.); PWKVN — вариантные дополнения к PW, привязанные к номерам значений PW. Грамматика: a-основа (Whitney §§326–334, парадигма §330; деривация §§1136–1245).",
+        "records": [
+          {
+            "h": "{T1}",
+            "grammar": "{T2}. {T3}",
+            "senses": [
+              {
+                "tag": "0 (этимологич. заметка)",
+                "german": "{T1}¦ {T2}. {T3}",
+                "russian": "{T1} — {T2}; {T3} (грамматическая справка: слово образовано согласно правилу Уṇāди-сутр, указанному в {T2}; {T3} — родовая помета).",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": ""
+              }
+            ]
+          },
+          {
+            "h": "{T1}",
+            "grammar": "{T2}. {T3}",
+            "senses": [
+              {
+                "tag": "1",
+                "german": "{T140} 1〉 {%Gestirn%} {T4} (auch von der Sonne gebraucht) {T5}. {T6}. {T7} ({T8}) {T9} {T10}. {T11} {T12}. {T13} {T14}. {T15}. {T16}. {%Sterne%} {T17}. {T18}. {T19} {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34} {T35}. {T36} {T37}. {T38}. {T39} {T40}. {T41}. Diese fünf bilden bei den {T42} die Gruppe der {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52} {T53}. {T54}. {T55}. {T56} {T57}. Ein Mal {T58}: {T59} {T60}. {T61} {%aus einem Stern bestehend%} {T62}. {T63}. {T64}.",
+                "russian": "{T140} 1) созвездие, светило вообще {T4} (употребляется также и о Солнце) {T5}. {T6}. {T7} ({T8}) {T9} {T10}. {T11} {T12}. {T13} {T14}. {T15}. {T16}. звёзды {T17}. {T18}. {T19} {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34} {T35}. {T36} {T37}. {T38}. {T39} {T40}. {T41}. Эти пять образуют у {T42} группу {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52} {T53}. {T54}. {T55}. {T56} {T57}. Единожды {T58}: {T59} {T60}. {T61} состоящий из одной звезды {T62}. {T63}. {T64}.",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "Vedic",
+                "differentia": "«созвездие/светило» как родовое понятие, включающее также Солнце — отличать от узкого терминологического значения 2) «лунная стоянка»."
+              },
+              {
+                "tag": "2",
+                "german": "{T141}— 2〉 im {T65} {%die Mondstationen%}; in der älteren Zeit (aber auch noch im {T66}) 27, später 28 an der Zahl. Dieselben werden in der Folge auch als {%Gemahlinnen des Mondes%}, als Töchter {T67}ʼs, augfefasst. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75}. {T76}. {T77}, {T78}. {T79} {T80} {T81} {T82}. {T83}. {T84}. {T85}. {T86} {T87}. Die Namen derselben {T88} {T89} {T90} {T91}, {T92}. {T93}, Die vedischen Nachrichten von den Nakshatra.",
+                "russian": "{T141}— 2) в {T65} в частности — лунные стоянки; в более древнюю эпоху (но ещё и в {T66}) их насчитывают 27, позднее 28. Впоследствии они же осмысляются как супруги Луны, дочери {T67}. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75}. {T76}. {T77}, {T78}. {T79} {T80} {T81} {T82}. {T83}. {T84}. {T85}. {T86} {T87}. Их имена {T88} {T89} {T90} {T91}, {T92}. {T93}, «Die vedischen Nachrichten von den Nakshatra» (название работы сохранено в оригинале).",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "Vedic; Epic / early-Classical",
+                "differentia": "специализированное значение — 27/28 лунных стоянок, персонифицированных как дочери-жёны Луны; отличать от общего значения 1)."
+              },
+              {
+                "tag": "3",
+                "german": "{T142}— 3〉 {%Perle%} {T94}_im_{T95} — Was die Etymologie betrifft, so lässt sich gegen die von {T96}_in_{T97} vorgebrachte ({T98} + {T99}) einwenden, dass {%Wächter der Nacht%} nicht auf die Sonne passt, welche in den ältesten Texten vorzugsweise {T100} genannt wird. Die Gleichsetzung von {T101} mit {T102} erregt gleichfalls Bedenken. Eher liesse sich noch an eine Zurückführung auf {T103} ({T104} {T105}. {T106}.) denken, dann wären die Gestirne {%die am Himmel Heraufkommenden%}. Die spielende Zerlegung in {T107} + {T108} findet sich {T109}. {T110}. {T111}. {T112}.",
+                "russian": "{T142}— 3) жемчужина {T94}_в_{T95} — Что касается этимологии, то против предложенной {T96}_в_{T97} этимологии ({T98} + {T99}) можно возразить, что «страж ночи» не подходит к Солнцу, которое в древнейших текстах преимущественно именуется {T100}. Отождествление {T101} с {T102} также вызывает сомнения. Скорее можно было бы думать о возведении к {T103} ({T104} {T105}. {T106}.), — тогда светила были бы «восходящими на небе». Игровое разложение на {T107} + {T108} встречается {T109}. {T110}. {T111}. {T112}.",
+                "equivalence_type": "equivalent",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "значение засвидетельствовано лишь у лексикографа ({T94}) — kośa-значение; этимологическое обсуждение относится к самому слову nakṣatra в целом, а не только к этому значению."
+              },
+              {
+                "tag": "3-доп. (заключительная заметка)",
+                "german": "{T143}— {T113} {T114}.",
+                "russian": "{T143} — {T113} {T114}.",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": ""
+              }
+            ]
+          },
+          {
+            "h": "{T115}",
+            "grammar": "{T116}",
+            "senses": [
+              {
+                "tag": "1",
+                "german": "{T144}— 1〉 {%Gestirn, Stern;%} {T117} {%die Sonne und die Sterne%} ({T118}) Einmal {T119} als Personification. Am Ende eines {T120} {T121} {T122}",
+                "russian": "{T144}— 1) созвездие, звезда; {T117} Солнце и звёзды ({T118}). Единожды {T119} как персонификация. В конце {T120} {T121} {T122}",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "Vedic",
+                "differentia": "сокращённая редакция значения 1) основной статьи PWG."
+              },
+              {
+                "tag": "2",
+                "german": "{T145}— 2〉 {%Mondhaus,%} deren in der älteren Zeit 27, später 28 angenommen werden. Personificirt als Töchter {T123}ʼs und Gattinnen des Mondes.",
+                "russian": "{T145}— 2) лунный дом; их в более древнюю эпоху принимается 27, позднее 28. Персонифицируются как дочери {T123} и супруги Луны.",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "Vedic",
+                "differentia": "сокращённая редакция значения 2) основной статьи PWG."
+              },
+              {
+                "tag": "3",
+                "german": "{T146}— 3〉 *{%Perle%} {T124}. {T125} {T126} 3〉.",
+                "russian": "{T146}— 3) *жемчужина {T124}. {T125} {T126} 3).",
+                "equivalence_type": "equivalent",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "отсылка к значению 3) основной статьи PWG; звёздочка отмечает исправленное/уточнённое чтение."
+              }
+            ]
+          },
+          {
+            "h": "{T127}",
+            "grammar": "{T128}",
+            "senses": [
+              {
+                "tag": "1",
+                "german": "{T127}¦ {T128} {T129} eines {T130} {T131}.{T147}",
+                "russian": "{T127} — {T128} {T129} некоего {T130} {T131}.{T147}",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": ""
+              }
+            ]
+          },
+          {
+            "h": "{T132}",
+            "grammar": "",
+            "senses": [
+              {
+                "tag": "1",
+                "german": "{T132}¦ III. 5.{T148}",
+                "russian": "{T132} — III. 5.{T148}",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "перекрёстная отсылка (том/страница)."
+              }
+            ]
+          },
+          {
+            "h": "{%Nakṣatra%}",
+            "grammar": "m.",
+            "senses": [
+              {
+                "tag": "1 (N. pr.)",
+                "german": "{%Nakṣatra%}¦ m. N. pr. eines Ekādaśāṅgin, {T133}",
+                "russian": "{%Nakṣatra%} — м., имя собственное (N. pr.) некоего Ekādaśāṅgin, {T133}",
+                "equivalence_type": "explanatory",
+                "source_type": "attested",
+                "stratum": "",
+                "differentia": "новое (по сравнению с PW) добавление Шмидта 1928 г. — собственное имя личности."
+              }
+            ]
+          },
+          {
+            "h": "{T134}",
+            "grammar": "{T135}",
+            "senses": [
+              {
+                "tag": "1",
+                "german": "{T134}¦ {T135} {T136} eines {T137} {T138}.",
+                "russian": "{T134} — {T135} {T136} некоего {T137} {T138}.",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "вариантное дополнение PWK к записи PW, соответствующей {T127}."
+              }
+            ]
+          },
+          {
+            "h": "{T139}",
+            "grammar": "",
+            "senses": [
+              {
+                "tag": "1",
+                "german": "{T139}¦ III. 5.",
+                "russian": "{T139} — III. 5.",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "перекрёстная отсылка (том/страница), вариант PWK к {T132}."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ttft_ms": 391798,
+  "ttft_stream_ms": 19759,
+  "time_to_request_ms": 2124,
+  "type": "result",
+  "duration_ms": 499468,
+  "uuid": "8ca18f44-05e1-425e-80b6-3dc67d1a5c8d"
+}

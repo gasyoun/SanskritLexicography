@@ -1,0 +1,205 @@
+{
+  "is_error": false,
+  "duration_api_ms": 186155,
+  "num_turns": 3,
+  "stop_reason": "tool_use",
+  "session_id": "6c88bc2b-3474-4d0b-b5bd-847392ec5928",
+  "total_cost_usd": 0.5429427,
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 33402,
+    "cache_read_input_tokens": 78889,
+    "output_tokens": 20600,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 33402,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 11283,
+        "cache_read_input_tokens": 47683,
+        "cache_creation_input_tokens": 16925,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 16925
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 9757,
+      "outputTokens": 19,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.009852,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty"
+    },
+    "claude-sonnet-5": {
+      "inputTokens": 4,
+      "outputTokens": 20600,
+      "cacheReadInputTokens": 78889,
+      "cacheCreationInputTokens": 33402,
+      "webSearchRequests": 0,
+      "costUSD": 0.5330907,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"cards\":[{\"key1\":\"sakft\",\"iast\":\"sakṛt\",\"notes\":\"Карточка объединяет три слоя источника: основную статью PWG, сокращённую редакцию PW (с иным делением значений на a)-e)) и добавление SCH (Nachträge 1928, отмечающее ошибочное написание). Все маскированные {Tn}-токены сохранены без изменений и в исходном порядке.\",\"records\":[{\"h\":\"sakṛt\",\"grammar\":\"adv.\",\"senses\":[{\"tag\":\"0\",\"german\":\"{T1}¦ ({T119}2.{T120} {T2} + {T3}) {T4} {T5}.\",\"russian\":\"{T1}¦ ({T119}2.{T120} {T2} + {T3}) {T4} {T5}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Грамматическая заметка о составе слова и словообразовательной ссылке (P.); переводимой прозы не содержит.\"},{\"tag\":\"1\",\"german\":\"{T121} 1〉 {%auf ein Mal, mit einem Male%}; = {T6} {T7}. {T8}. {T9} {T10}. {T11}. {T12} {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19}. {T20} {%mit einem Ruck abgetrennt%} {T21}. {T22}. {T23} {T24}. {T25} {T26}, {T27} {T28} {T29}. {T30}. so {T31} {%plötzlich%} {T32}.\",\"russian\":\"{T121} 1) {разом, за один раз}; = {T6} {T7}. {T8}. {T9} {T10}. {T11}. {T12} {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19}. {T20} оторванный одним рывком {T21}. {T22}. {T23} {T24}. {T25} {T26}, {T27} {T28} {T29}. {T30}. так {T31} внезапно {T32}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Vedic\",\"differentia\":\"«разом, за один раз» — единство совершения действия одним актом; «оторванный одним рывком» и «внезапно» — уточняющие оттенки того же основного значения, разделённые точкой с запятой/точкой как самостоятельные подпримеры употребления.\"},{\"tag\":\"2\",\"german\":\"{T122}— 2〉 {%einmal, semel%} {T33} {T34} {T35}. {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43}. [Page7-0508] {T44} {T45}. {T46}. {T47} {T48}. {T49} {T50}. {T51} {T52}. {T53}. {T54}. {T55}. {T56}. {T57}. {T58}. {T59}. {T60} {T61} {T62}. {T63}. {T64}. {T65}. {T66} {T67}. {T68} {T69}. {T70} {T71}. {T72} {T73}. {T74}. {T75}. {T76}. {T77}. {%einmal%} so {T78} {%irgend ein Mal%} {T79}. {T80} so {T81} {%einst, ehemals%} {T82}. {T83} {%nie%} {T84}.\",\"russian\":\"{T122}— 2) {однажды, единожды (semel)} {T33} {T34} {T35}. {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43}. [Page7-0508] {T44} {T45}. {T46}. {T47} {T48}. {T49} {T50}. {T51} {T52}. {T53}. {T54}. {T55}. {T56}. {T57}. {T58}. {T59}. {T60} {T61} {T62}. {T63}. {T64}. {T65}. {T66} {T67}. {T68} {T69}. {T70} {T71}. {T72} {T73}. {T74}. {T75}. {T76}. {T77}. однажды так {T78} когда-нибудь {T79}. {T80} так {T81} некогда, прежде {T82}. {T83} никогда {T84}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"Vedic\",\"differentia\":\"Внутри значения различаются оттенки: «однажды, единожды» — базовое числовое значение (лат. semel); «когда-нибудь» — неопределённая единичность; «некогда, прежде» — временная отнесённость к прошлому; «никогда» — отрицание всякой единичности (с частицей).\"},{\"tag\":\"3\",\"german\":\"{T123}— 3〉 {%ein für allemal, für immer%}: {T85} {T86}. {T87} {T88}. {T89}_in_{T90}. {T91}. {T92} {T93}. {T94}.\\n{T124}— {T95} {T96} (auch {T97}. {T98}. {T99}. {T100}. {T101} nach der Lesart der {T102}).\",\"russian\":\"{T123}— 3) {раз навсегда, навсегда}: {T85} {T86}. {T87} {T88}. {T89}_in_{T90}. {T91}. {T92} {T93}. {T94}.\\n{T124}— {T95} {T96} (также {T97}. {T98}. {T99}. {T100}. {T101} по чтению {T102}).\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"Epic / early-Classical\",\"differentia\":\"«раз навсегда, навсегда» — итоговое, окончательное совершение действия, в отличие от «однажды» (sense 2) как простой единичности; примыкающая заметка «ср.» и указание на вариантное чтение относятся к тому же значению.\"}]},{\"h\":\"sakṛt\",\"grammar\":\"adv.\",\"senses\":[{\"tag\":\"PW-1\",\"german\":\"{T103}¦\\n{T125}— 1〉 {T104} {%gleichzeitig thätig%} {T105}. {T106} {T107}\",\"russian\":\"{T103}¦\\n{T125}— 1) {T104} одновременно действующий {T105}. {T106} {T107}\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"В редакции PW первое значение выделено отдельно от нумерации PWG: «одновременно действующий» — атрибутивная характеристика совместного, синхронного действия.\"},{\"tag\":\"PW-2a\",\"german\":\"{T126}— 2〉 {T108}\\n{T127}— a〉 {%auf ein Mal, mit einem Male, mit einem Ruck, plötzlich%}. {T109} {T110} {T111} {T112}.\",\"russian\":\"{T126}— 2) {T108}\\n{T127}— a) {разом, в один раз, одним рывком, внезапно}. {T109} {T110} {T111} {T112}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"Четыре синонима сохранены с той же кардинальностью, что и в немецком перечне через запятую: «разом», «в один раз», «одним рывком», «внезапно» — взаимозаменимые в пределах одного значения.\"},{\"tag\":\"PW-2b\",\"german\":\"{T128}— b〉 {%einmal, semel%}. {T113} {%einmal am Tage%}. Wiederholt {%immer nur einmal%}. {T114} (!) {T115}.\",\"russian\":\"{T128}— b) {однажды, единожды (semel)}. {T113} {однажды в день}. Повторно {всегда лишь однажды}. {T114} (!) {T115}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"«однажды в день» — конкретизация частотности; «всегда лишь однажды» — подчёркивание неизменности единичности при повторении.\"},{\"tag\":\"PW-2c\",\"german\":\"{T129}— c〉 {%einmal,%} so {T116} {%irgend ein mal;%} mit der {T117} {%nie%}.\",\"russian\":\"{T129}— c) {однажды,} так {T116} {когда-нибудь;} с {T117} {никогда}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"«когда-нибудь» — неопределённая единичность в будущем/прошлом; «никогда» — отрицательная пара к нему, отделённая точкой с запятой как самостоятельный оттенок.\"},{\"tag\":\"PW-2d\",\"german\":\"{T130}— d〉 {%einst, ehemals%}.\",\"russian\":\"{T130}— d) {некогда, прежде}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"Временное значение отнесённости к прошлому, соответствует sense 2 PWG.\"},{\"tag\":\"PW-2e\",\"german\":\"{T131}— e〉 {%ein für allemal, für immer%}.\",\"russian\":\"{T131}— e) {раз навсегда, навсегда}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"Соответствует sense 3 PWG: окончательность, безвозвратность действия.\"}]},{\"h\":\"sakṛt\",\"grammar\":\"adv.\",\"senses\":[{\"tag\":\"SCH-1\",\"german\":\"°{%sakṛt%}¦ {T118} wrong spelling of our author for {%śakṛt%} (pun with {%asakṛt%}).\",\"russian\":\"°sakṛt¦ {T118} ошибочное написание у нашего автора вместо śakṛt (каламбур с asakṛt).\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Добавление SCH (Nachträge 1928): указывает, что засвидетельствованное у данного автора написание «sakṛt» является ошибочным вместо «śakṛt», основанной на игре слов с «asakṛt»; новое по сравнению с PW (помечено °).\"}]}]}]}",
+  "structured_output": {
+    "cards": [
+      {
+        "key1": "sakft",
+        "iast": "sakṛt",
+        "notes": "Карточка объединяет три слоя источника: основную статью PWG, сокращённую редакцию PW (с иным делением значений на a)-e)) и добавление SCH (Nachträge 1928, отмечающее ошибочное написание). Все маскированные {Tn}-токены сохранены без изменений и в исходном порядке.",
+        "records": [
+          {
+            "h": "sakṛt",
+            "grammar": "adv.",
+            "senses": [
+              {
+                "tag": "0",
+                "german": "{T1}¦ ({T119}2.{T120} {T2} + {T3}) {T4} {T5}.",
+                "russian": "{T1}¦ ({T119}2.{T120} {T2} + {T3}) {T4} {T5}.",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "Грамматическая заметка о составе слова и словообразовательной ссылке (P.); переводимой прозы не содержит."
+              },
+              {
+                "tag": "1",
+                "german": "{T121} 1〉 {%auf ein Mal, mit einem Male%}; = {T6} {T7}. {T8}. {T9} {T10}. {T11}. {T12} {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19}. {T20} {%mit einem Ruck abgetrennt%} {T21}. {T22}. {T23} {T24}. {T25} {T26}, {T27} {T28} {T29}. {T30}. so {T31} {%plötzlich%} {T32}.",
+                "russian": "{T121} 1) {разом, за один раз}; = {T6} {T7}. {T8}. {T9} {T10}. {T11}. {T12} {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19}. {T20} оторванный одним рывком {T21}. {T22}. {T23} {T24}. {T25} {T26}, {T27} {T28} {T29}. {T30}. так {T31} внезапно {T32}.",
+                "equivalence_type": "explanatory",
+                "source_type": "attested",
+                "stratum": "Vedic",
+                "differentia": "«разом, за один раз» — единство совершения действия одним актом; «оторванный одним рывком» и «внезапно» — уточняющие оттенки того же основного значения, разделённые точкой с запятой/точкой как самостоятельные подпримеры употребления."
+              },
+              {
+                "tag": "2",
+                "german": "{T122}— 2〉 {%einmal, semel%} {T33} {T34} {T35}. {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43}. [Page7-0508] {T44} {T45}. {T46}. {T47} {T48}. {T49} {T50}. {T51} {T52}. {T53}. {T54}. {T55}. {T56}. {T57}. {T58}. {T59}. {T60} {T61} {T62}. {T63}. {T64}. {T65}. {T66} {T67}. {T68} {T69}. {T70} {T71}. {T72} {T73}. {T74}. {T75}. {T76}. {T77}. {%einmal%} so {T78} {%irgend ein Mal%} {T79}. {T80} so {T81} {%einst, ehemals%} {T82}. {T83} {%nie%} {T84}.",
+                "russian": "{T122}— 2) {однажды, единожды (semel)} {T33} {T34} {T35}. {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43}. [Page7-0508] {T44} {T45}. {T46}. {T47} {T48}. {T49} {T50}. {T51} {T52}. {T53}. {T54}. {T55}. {T56}. {T57}. {T58}. {T59}. {T60} {T61} {T62}. {T63}. {T64}. {T65}. {T66} {T67}. {T68} {T69}. {T70} {T71}. {T72} {T73}. {T74}. {T75}. {T76}. {T77}. однажды так {T78} когда-нибудь {T79}. {T80} так {T81} некогда, прежде {T82}. {T83} никогда {T84}.",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "Vedic",
+                "differentia": "Внутри значения различаются оттенки: «однажды, единожды» — базовое числовое значение (лат. semel); «когда-нибудь» — неопределённая единичность; «некогда, прежде» — временная отнесённость к прошлому; «никогда» — отрицание всякой единичности (с частицей)."
+              },
+              {
+                "tag": "3",
+                "german": "{T123}— 3〉 {%ein für allemal, für immer%}: {T85} {T86}. {T87} {T88}. {T89}_in_{T90}. {T91}. {T92} {T93}. {T94}.\n{T124}— {T95} {T96} (auch {T97}. {T98}. {T99}. {T100}. {T101} nach der Lesart der {T102}).",
+                "russian": "{T123}— 3) {раз навсегда, навсегда}: {T85} {T86}. {T87} {T88}. {T89}_in_{T90}. {T91}. {T92} {T93}. {T94}.\n{T124}— {T95} {T96} (также {T97}. {T98}. {T99}. {T100}. {T101} по чтению {T102}).",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "Epic / early-Classical",
+                "differentia": "«раз навсегда, навсегда» — итоговое, окончательное совершение действия, в отличие от «однажды» (sense 2) как простой единичности; примыкающая заметка «ср.» и указание на вариантное чтение относятся к тому же значению."
+              }
+            ]
+          },
+          {
+            "h": "sakṛt",
+            "grammar": "adv.",
+            "senses": [
+              {
+                "tag": "PW-1",
+                "german": "{T103}¦\n{T125}— 1〉 {T104} {%gleichzeitig thätig%} {T105}. {T106} {T107}",
+                "russian": "{T103}¦\n{T125}— 1) {T104} одновременно действующий {T105}. {T106} {T107}",
+                "equivalence_type": "explanatory",
+                "source_type": "attested",
+                "stratum": "",
+                "differentia": "В редакции PW первое значение выделено отдельно от нумерации PWG: «одновременно действующий» — атрибутивная характеристика совместного, синхронного действия."
+              },
+              {
+                "tag": "PW-2a",
+                "german": "{T126}— 2〉 {T108}\n{T127}— a〉 {%auf ein Mal, mit einem Male, mit einem Ruck, plötzlich%}. {T109} {T110} {T111} {T112}.",
+                "russian": "{T126}— 2) {T108}\n{T127}— a) {разом, в один раз, одним рывком, внезапно}. {T109} {T110} {T111} {T112}.",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "",
+                "differentia": "Четыре синонима сохранены с той же кардинальностью, что и в немецком перечне через запятую: «разом», «в один раз», «одним рывком», «внезапно» — взаимозаменимые в пределах одного значения."
+              },
+              {
+                "tag": "PW-2b",
+                "german": "{T128}— b〉 {%einmal, semel%}. {T113} {%einmal am Tage%}. Wiederholt {%immer nur einmal%}. {T114} (!) {T115}.",
+                "russian": "{T128}— b) {однажды, единожды (semel)}. {T113} {однажды в день}. Повторно {всегда лишь однажды}. {T114} (!) {T115}.",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "",
+                "differentia": "«однажды в день» — конкретизация частотности; «всегда лишь однажды» — подчёркивание неизменности единичности при повторении."
+              },
+              {
+                "tag": "PW-2c",
+                "german": "{T129}— c〉 {%einmal,%} so {T116} {%irgend ein mal;%} mit der {T117} {%nie%}.",
+                "russian": "{T129}— c) {однажды,} так {T116} {когда-нибудь;} с {T117} {никогда}.",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "",
+                "differentia": "«когда-нибудь» — неопределённая единичность в будущем/прошлом; «никогда» — отрицательная пара к нему, отделённая точкой с запятой как самостоятельный оттенок."
+              },
+              {
+                "tag": "PW-2d",
+                "german": "{T130}— d〉 {%einst, ehemals%}.",
+                "russian": "{T130}— d) {некогда, прежде}.",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "",
+                "differentia": "Временное значение отнесённости к прошлому, соответствует sense 2 PWG."
+              },
+              {
+                "tag": "PW-2e",
+                "german": "{T131}— e〉 {%ein für allemal, für immer%}.",
+                "russian": "{T131}— e) {раз навсегда, навсегда}.",
+                "equivalence_type": "equivalent",
+                "source_type": "attested",
+                "stratum": "",
+                "differentia": "Соответствует sense 3 PWG: окончательность, безвозвратность действия."
+              }
+            ]
+          },
+          {
+            "h": "sakṛt",
+            "grammar": "adv.",
+            "senses": [
+              {
+                "tag": "SCH-1",
+                "german": "°{%sakṛt%}¦ {T118} wrong spelling of our author for {%śakṛt%} (pun with {%asakṛt%}).",
+                "russian": "°sakṛt¦ {T118} ошибочное написание у нашего автора вместо śakṛt (каламбур с asakṛt).",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "Добавление SCH (Nachträge 1928): указывает, что засвидетельствованное у данного автора написание «sakṛt» является ошибочным вместо «śakṛt», основанной на игре слов с «asakṛt»; новое по сравнению с PW (помечено °)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ttft_ms": 62487,
+  "ttft_stream_ms": 3473,
+  "time_to_request_ms": 251,
+  "type": "result",
+  "duration_ms": 184436,
+  "uuid": "6fc6c9a4-7773-4ea7-a0f6-2beabf3ce300"
+}

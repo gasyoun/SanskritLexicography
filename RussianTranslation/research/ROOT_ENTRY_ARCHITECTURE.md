@@ -50,9 +50,9 @@ paragraph)? This sets what SPLIT/NESTED must reproduce per source.
 | Dict | Preface (OCR) | Entry file | Probe lemma (the root `bhū`/`kṛ`/`gam`) |
 |---|---|---|---|
 | PWG | [`PWG/prefaces/pwgpref_all.de.md`](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.de.md) | `csl-orig/v02/pwg/pwg.txt` | `BU`, `kf`, `gam` |
-| PW (kürzere) | [`PWK/prefaces/pwpref_all.de.md`](https://github.com/sanskrit-lexicon/PWK/blob/master/prefaces/pwpref_all.de.md) | `csl-orig/v02/pw/pw.txt` | same |
+| PW (kürzere) | [`PWK/prefaces/pwpref_all.de.md`](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.de.md) | `csl-orig/v02/pw/pw.txt` | same |
 | MW | [`MWS/prefaces/mwpref_all.en.md`](https://github.com/sanskrit-lexicon/MWS/blob/master/prefaces/mwpref_all.en.md) | `csl-orig/v02/mw/mw.txt` | same |
-| GRA (Grassmann RV) | [`GRA/prefaces/grapref_all.en.md`](https://github.com/sanskrit-lexicon/GRA/blob/master/prefaces/grapref_all.en.md) | `csl-orig/v02/gra/gra.txt` | `BU`, `kf` |
+| GRA (Grassmann RV) | [`GRA/prefaces/grapref_all.en.md`](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/grapref_all.en.md) | `csl-orig/v02/gra/gra.txt` | `BU`, `kf` |
 | AP90 (Apte) | *(no OCR preface — read the print front-matter scan)* | `csl-orig/v02/ap90/ap90.txt` | same |
 | SCH / FRI | supplements — note only if they diverge | `…/sch.txt`, `…/fri.txt` | — |
 
@@ -90,7 +90,7 @@ what made our cards giant:
    record as `<div>`-delimited sub-paragraphs. This is the bulk that overflows a single
    translation pass.
 2. **Lexicalised nominal prefix-forms are ALSO split out as their own `<k1>` headwords** —
-   e.g. PWG [`aDiBU`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt) m. "Herrscher, Gebieter", glossed `(von {#BU#} mit {#aDi#})`. So a grep for
+   e.g. PWG [`aDiBU`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt) m. "Herrscher, Gebieter", glossed `(von {#BU#} mit {#aDi#})`. So a grep for
    `<k1>anuBU<k2>` hits in *every* dict — that does **not** mean the dict is "split"; the
    verbal force usually still nests under the root. Only **MW** splits the *verb itself*.
 
@@ -101,13 +101,13 @@ presence of a separate headword.
 
 | Dict | Prefixed **verbs** | Nominal derivatives | Prefix-boundary cue (the thing the segmenter keys on) | Evidence |
 |---|---|---|---|---|
-| **PWG** | **NESTED** run-on in root record | mostly run-on; lexicalised ones SPLIT to own `<k1>` | `<div n="p">— {#<upasarga>#}` (prefix in `{#…#}`, may stack: `{#anusam#}`, `{#aBisam#}`); 2ary conj `<div n="m">` / `— <ab>caus./desid.</ab>`; senses `<div n="1"> N)` | `BU` rec. [pwg.txt L535553–536869](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt): `<div n="p">— {#aBisam#}`, `— {#parisam#}`, `— {#pratisam#}`; split `aDiBU` m. |
-| **PW** (kürzere) | **NESTED** run-on | run-on; lexicalised ones SPLIT | `<div n="p">— Mit {#<prefix>#}`; 2ary conj `<div n="m">— <ab>Caus./Desid.</ab>`; senses `<div n="1">— N〉`, subsenses `<div n="2">— a〉` | `BU` rec. [pw.txt L331003–](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt): `<div n="p">— Mit {#na#}`, `<div n="m">— <ab>Caus.</ab>` |
-| **MW** | **SPLIT** — each `prefix-√root` is its **own `<L>` headword** | **NICHED** run-on under the root/leading word (subordinate line) | headword `<k1>anuBU<k2>anu-BU` + body `<s>anu-√ BU</s>` (the `-√` is the cue); senses `<div n="to"/>`, 2ary conj `<div n="vp"/>` | `anu-BU` [mw.txt L25014](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt); preface §"under every root the continuous series of derivative words" |
-| **GRA** | **NESTED** run-on in root record | run-on; a few lexicalised SPLIT | `<div n="Pf">{@<prefix>@}` (Pf = *Präfix*; prefix in `{@…@}`, stacks: `{@ánu prá@}`, `{@abhí sám@}`); morphology blocks `<div n="H">`/`<div n="TS">` | `BU` rec. [gra.txt L42470–](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/gra/gra.txt): `<div n="Pf">{@ánu@}`, `{@abhí@}`, `{@pári@}`, `{@sám@}` |
-| **AP90** | **RUN-ON** in a prose "Note" paragraph | run-on; lexicalised ones SPLIT | *text-level only, no `<div>`*: `;`-separated inline `{#<prefix>BU#}` glosses inside the Note; 2ary conj inline `{%--<ab>Caus.</ab>%}` | `BU` rec. [ap90.txt L190844–190948](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90.txt): `{#punarBU#} to marry again; {#AvirBU#} to appear; {#tiroBU#} to disappear …` |
-| **SCH** | **NESTED** run-on (additive supplement) | — | `— Mit {%<prefix>%}` (note: italic `{%…%}`, not `{#…#}`); stacks `{%samabhi%}`, `{%˚saṃpari%}` | `BU` rec. [sch.txt L63863](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/sch/sch.txt): `mit {%samabhi%} … — Mit {%abhyā%} … — Mit {%ud%}` |
-| **FRI** | **none** (reader glossary) | — | no prefix forms; senses are trilingual `<div n="1"/> <lang n="…">` blocks | `BU` rec. [fri.txt L28267](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/fri/fri.txt): simple `√bhū` only, cz/ru/en glosses |
+| **PWG** | **NESTED** run-on in root record | mostly run-on; lexicalised ones SPLIT to own `<k1>` | `<div n="p">— {#<upasarga>#}` (prefix in `{#…#}`, may stack: `{#anusam#}`, `{#aBisam#}`); 2ary conj `<div n="m">` / `— <ab>caus./desid.</ab>`; senses `<div n="1"> N)` | `BU` rec. [pwg.txt L535553–536869](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt): `<div n="p">— {#aBisam#}`, `— {#parisam#}`, `— {#pratisam#}`; split `aDiBU` m. |
+| **PW** (kürzere) | **NESTED** run-on | run-on; lexicalised ones SPLIT | `<div n="p">— Mit {#<prefix>#}`; 2ary conj `<div n="m">— <ab>Caus./Desid.</ab>`; senses `<div n="1">— N〉`, subsenses `<div n="2">— a〉` | `BU` rec. [pw.txt L331003–](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pw/pw.txt): `<div n="p">— Mit {#na#}`, `<div n="m">— <ab>Caus.</ab>` |
+| **MW** | **SPLIT** — each `prefix-√root` is its **own `<L>` headword** | **NICHED** run-on under the root/leading word (subordinate line) | headword `<k1>anuBU<k2>anu-BU` + body `<s>anu-√ BU</s>` (the `-√` is the cue); senses `<div n="to"/>`, 2ary conj `<div n="vp"/>` | `anu-BU` [mw.txt L25014](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw.txt); preface §"under every root the continuous series of derivative words" |
+| **GRA** | **NESTED** run-on in root record | run-on; a few lexicalised SPLIT | `<div n="Pf">{@<prefix>@}` (Pf = *Präfix*; prefix in `{@…@}`, stacks: `{@ánu prá@}`, `{@abhí sám@}`); morphology blocks `<div n="H">`/`<div n="TS">` | `BU` rec. [gra.txt L42470–](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/gra/gra.txt): `<div n="Pf">{@ánu@}`, `{@abhí@}`, `{@pári@}`, `{@sám@}` |
+| **AP90** | **RUN-ON** in a prose "Note" paragraph | run-on; lexicalised ones SPLIT | *text-level only, no `<div>`*: `;`-separated inline `{#<prefix>BU#}` glosses inside the Note; 2ary conj inline `{%--<ab>Caus.</ab>%}` | `BU` rec. [ap90.txt L190844–190948](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap90/ap90.txt): `{#punarBU#} to marry again; {#AvirBU#} to appear; {#tiroBU#} to disappear …` |
+| **SCH** | **NESTED** run-on (additive supplement) | — | `— Mit {%<prefix>%}` (note: italic `{%…%}`, not `{#…#}`); stacks `{%samabhi%}`, `{%˚saṃpari%}` | `BU` rec. [sch.txt L63863](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/sch/sch.txt): `mit {%samabhi%} … — Mit {%abhyā%} … — Mit {%ud%}` |
+| **FRI** | **none** (reader glossary) | — | no prefix forms; senses are trilingual `<div n="1"/> <lang n="…">` blocks | `BU` rec. [fri.txt L28267](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/fri/fri.txt): simple `√bhū` only, cz/ru/en glosses |
 
 ### Preface evidence (quoted)
 
@@ -156,7 +156,7 @@ presence of a separate headword.
 
 Before building anything: per the "check prior art first" rule, swept the sibling repos.
 The root-record prefix segmenter sketched in §"Implementation sketch" above is **already
-built** by Jim Funderburk in [`PWG/verbs01/`](https://github.com/sanskrit-lexicon/PWG/tree/master/verbs01) (flagged in
+built** by Jim Funderburk in [`PWG/verbs01/`](https://github.com/sanskrit-lexicon/PWG/tree/main/verbs01) (flagged in
 [`SHARED_CODE.md`](https://github.com/gasyoun/github-spine/blob/main/SHARED_CODE.md) §4 "verb/preverb morphology"). It does **more** than the sketch
 asked for, on real data, and its outputs are committed.
 
@@ -164,11 +164,11 @@ asked for, on real data, and its outputs are committed.
 
 | File / program | What it produces | Scale |
 |---|---|---|
-| [`preverb1.py`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/preverb1.py) | splits each PWG verb record at `<div n="p">— {#<upasarga>#}`, joins prefix+root via a full **sandhi map** (`sandhimap`, `join_prefix_verb`), and matches each surface prefixed-verb to its MW headword | 6819 upasargas in 711 PWG verb entries; 8370 total upasarga divisions |
-| [`pwg_preverb1.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/pwg_preverb1.txt) | the per-root parse table: every upasarga, its sandhi-joined PWG spelling, the matched MW spelling, and the **canonical Pāṇinian-order parse** (`prati+anu+BU`) | 6773 MW-matched ("yes") + 1588 unmatched ("no") |
-| [`mwverbs1.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/mwverbs1.txt) | MW verb inventory categorised verb-vs-preverb from MW's own `<info verb=…>` tags, with class/pada | 10 122 MW verb/preverb headwords |
-| [`pwg_verb_filter_map.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/pwg_verb_filter_map.txt) | PWG-root → MW-root correspondence map (the cross-dict `root_key` align) | 2444 PWG verb roots (21 with `mw=?`) |
-| [`pwg_verb_exclude.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/verbs01/pwg_verb_exclude.txt) | empirical list of non-verb records that *carry* root patterns — the `<div n="p">` **false-positive** guard | 149 exclusions |
+| [`preverb1.py`](https://github.com/sanskrit-lexicon/PWG/blob/main/verbs01/preverb1.py) | splits each PWG verb record at `<div n="p">— {#<upasarga>#}`, joins prefix+root via a full **sandhi map** (`sandhimap`, `join_prefix_verb`), and matches each surface prefixed-verb to its MW headword | 6819 upasargas in 711 PWG verb entries; 8370 total upasarga divisions |
+| [`pwg_preverb1.txt`](https://github.com/sanskrit-lexicon/PWG/blob/main/verbs01/pwg_preverb1.txt) | the per-root parse table: every upasarga, its sandhi-joined PWG spelling, the matched MW spelling, and the **canonical Pāṇinian-order parse** (`prati+anu+BU`) | 6773 MW-matched ("yes") + 1588 unmatched ("no") |
+| [`mwverbs1.txt`](https://github.com/sanskrit-lexicon/PWG/blob/main/verbs01/mwverbs1.txt) | MW verb inventory categorised verb-vs-preverb from MW's own `<info verb=…>` tags, with class/pada | 10 122 MW verb/preverb headwords |
+| [`pwg_verb_filter_map.txt`](https://github.com/sanskrit-lexicon/PWG/blob/main/verbs01/pwg_verb_filter_map.txt) | PWG-root → MW-root correspondence map (the cross-dict `root_key` align) | 2444 PWG verb roots (21 with `mw=?`) |
+| [`pwg_verb_exclude.txt`](https://github.com/sanskrit-lexicon/PWG/blob/main/verbs01/pwg_verb_exclude.txt) | empirical list of non-verb records that *carry* root patterns — the `<div n="p">` **false-positive** guard | 149 exclusions |
 
 Worked example — the probe root `bhū`, straight from `pwg_preverb1.txt` (Case 1211,
 `L=55166`): **38 upasargas, 32 MW-matched**, including stacked prefixes resolved to
@@ -192,7 +192,7 @@ case is already handled per `<L>` record.
 4. **Cross-dict root-key alignment** → `pwg_verb_filter_map.txt` (PWG↔MW root) +
    the per-prefix MW match in `pwg_preverb1.txt`. **And MW carries the parse natively**:
    prefixed-verb records have `<info verb="pre" … parse="anu+BU"/>` and simple roots
-   `<info verb="genuineroot" cp="1P,1Ā"/>` ([mw.txt L25020 / L507286](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt)) — so MW's `root_key`+`upasarga` need **no** inference, just a tag read.
+   `<info verb="genuineroot" cp="1P,1Ā"/>` ([mw.txt L25020 / L507286](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw.txt)) — so MW's `root_key`+`upasarga` need **no** inference, just a tag read.
 
 ### The actual GAP (what to build — small, not a segmenter from scratch)
 
@@ -312,7 +312,7 @@ not per-gloss); fine for batching, wants per-gloss citation alignment before pro
    class (`preverb1`'s shape-filter + 149-row exclude list reconcile 40→38). Confirms
    analysis #2: the cue needs `verbs01`'s guard before the sub-cards are trusted as verbs.
 2. **The secondary-conjugation cue is dict-specific** (0 `<div n="m">` matched in PWG):
-   `<div n="m">` is the **PW** caus/desid cue ([pw.txt L331019](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt)); **PWG** marks caus/desid
+   `<div n="m">` is the **PW** caus/desid cue ([pw.txt L331019](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pw/pw.txt)); **PWG** marks caus/desid
    inline as `— <ab>caus./desid./intens.</ab>` (often inside `<div n="v">`/`<div n="p">`),
    which is what `preverb1.mark_entries_verb()` keys on. The per-dict segmenter rules in
    RESULTS therefore need a per-dict secondary-conjugation cue, not a shared one.
@@ -363,7 +363,7 @@ BU primary · anuBU/aBiBU preverb (anu-BU/aBi-BU) · aMSaBU/aMSaBUta compound ·
 This **replaces the faked PWG-parenthetical compound/derivation parser on the MW side**
 of [`lex_noun_link.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/lex_noun_link.py) (the `aDi)+BU` mis-parse class) and feeds `root_glue.py`'s MW
 preverb split. Cross-check result: `MWderivations/compounds/compounds.txt` is **byte-
-identical** to [`WhitneyRoots/MW_compounds_12610.txt`](https://github.com/gasyoun/WhitneyRoots/blob/d0294eb5fa1ad885bd92bb88d97709a871d61621/MW_compounds_12610.txt) — the WhitneyRoots file is a vendored
+identical** to [`WhitneyRoots/MW_compounds_12610.txt`](https://github.com/gasyoun/WhitneyRoots/blob/main/MW_compounds_12610.txt) — the WhitneyRoots file is a vendored
 copy, so "combine both" collapses to **one** source (`analysis2.txt` is the superset; the
 per-leading-word `compounds.txt` is derivable from it).
 

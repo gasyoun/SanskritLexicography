@@ -61,6 +61,7 @@ if HERE not in sys.path:
 import corpus_gate as cg
 import koch_xref
 import fri_xref
+from store_write import locked_store_rewrite
 
 STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
 
@@ -379,11 +380,10 @@ def main():
     if args.dry_run:
         print('\n(dry run — store not written)')
         return
-    if not args.no_backup and args.limit is None:
-        os.replace(args.store, args.store + '.pre_evidence.bak')
-    with open(args.store, 'w', encoding='utf-8') as f:
-        for r in rows:
-            f.write(json.dumps(r, ensure_ascii=False) + '\n')
+    # H2146: locked (PromoteClaim) + unique fsynced backup + atomic replace — the old
+    # in-place rewrite was unlocked and left a truncated store on crash (FINDINGS §513).
+    locked_store_rewrite(args.store, rows, tag='pre_evidence',
+                         no_backup=(args.no_backup or args.limit is not None))
     print('\nwrote annotated store -> %s' % args.store)
 
 

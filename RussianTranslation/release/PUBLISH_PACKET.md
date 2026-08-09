@@ -4,7 +4,7 @@ _Created: 22-07-2026 (H1458 Track C5) · Sonnet 5 `claude-sonnet-5`_
 
 **This packet is prepared for a HUMAN to execute via `/publish-safety-check`. The agent that
 built it never publishes, mints a DOI, flips visibility, or pushes copyrighted text public —
-that fence is load-bearing per the [H215](https://github.com/gasyoun/Uprava/blob/main/handoffs/H215-Opus_RussianTranslation_pwg_ru_publication_grade_tm_tmx_and_oral_06.07.26.md)/[H1458](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1458-Sonnet_RussianTranslation_pubgrade-tm-track-c-release-prep_22.07.26.md)
+that fence is load-bearing per the [H215](https://github.com/gasyoun/Uprava/blob/main/handoffs/H215-Opus_RussianTranslation_pwg_ru_publication_grade_tm_tmx_and_oral_06.07.26.md)/[H1458](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1458-Sonnet_RussianTranslation_pubgrade-tm-track-c-release-prep_22.07.26.md)
 autonomy contract and is not overridable by this document.**
 
 ## 1. What is ready to publish now (no further clearance needed)

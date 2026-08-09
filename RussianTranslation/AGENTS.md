@@ -17,6 +17,14 @@ pipeline, with article-comparison Russian review work as the secondary track.
   if the parent state is relevant.
 - Trust current command output and `src/pilot/output/window_status.json` over
   stale prose in older handoff files.
+- **Paid headless calls run from a BARE cwd, one card per call** (02-08-2026,
+  measured). The CLI injects `CLAUDE.md` + git state into its cache prefix, so a
+  repo cwd costs **+33 % money and +30 % wall clock** per call for nothing. The
+  per-call cache is re-created every time and never reused — that is the route's
+  floor, not a tuning target, and **batching does not fix it** (it also destroys
+  per-card cost attribution for the whole batch). Full rules:
+  [`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
+  § Current operating truth.
 
 ## PWG → Russian Production Loop
 
@@ -40,6 +48,15 @@ One profile lock spans an entire warm-up + measured probe pair, and the same
 lock class serializes generation for that profile. Paid manifest-v2 execution
 must preserve the run/manifest/preflight/profile/reservation binding through
 the sealed result SHA passed to `record-output` or `record-output-batch`.
+
+Since H2157 (02-08-2026) BOTH ceilings are mandatory on `--execute`: a paid
+run refuses to start without `--max-calls` and `--cost-ceiling`, and a
+deliberate unbounded window must say `--allow-unbounded` in the command line.
+Since H2159 (02-08-2026) the live-gate canary verdict is consumed
+MECHANICALLY: `canary_gate.py judge` writes a GO/NO-GO receipt from the canary
+wf_output, and `--execute` refuses to start without a fresh (≤6 h) GO receipt
+for the same profile (`--canary-receipt`; `--skip-canary-gate` is the explicit
+escape hatch).
 
 On Windows, all Claude process trees use a kill-on-close Job Object assigned
 while the child is suspended; timeout and non-timeout cleanup therefore reach
