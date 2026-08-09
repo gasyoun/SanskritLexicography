@@ -130,6 +130,26 @@ that prevent substitution are unmodified:
 
 Nothing in this module widens or bypasses any of them.
 
+## Owner ruling after close — scoped unevaluable-cost waiver (09-08-2026)
+
+M.G. explicitly ruled that router.cheap qualification may proceed even when the Agent tool
+returns no usage or price metadata: the ledger must keep `cost_evaluable=false`, but that flag
+is no longer an automatic stop **for this gateway route under this ruling**. This does not turn
+an unknown charge into `$0`, provide Python with the harness-held credential, or waive any
+other guard.
+
+Still mandatory: reserve before every call; strict call ceiling; exact route and returned
+model; 600,000 ms ceiling; final-text-only capture; full schema/content audit; run/result hash
+binding; synthetic non-promotion; and stop-before-promote for any later production window.
+The external router wallet ceiling remains `$500`, but without gateway telemetry it is an
+external account bound, not a pipeline-enforceable dollar ceiling.
+
+The fresh post-incident audit is
+[`PIPELINE_AUDIT_ROUTER_CHEAP_AGENT_09-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PIPELINE_AUDIT_ROUTER_CHEAP_AGENT_09-08-2026.md).
+It identifies the remaining P0: a durable two-phase bridge that reserves in Python before the
+interactive Agent turn and idempotently records the response afterward. Simply reopening a
+chat still cannot satisfy that ordering.
+
 ---
 
 _Dr. Mārcis Gasūns_

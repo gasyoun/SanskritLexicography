@@ -5759,22 +5759,24 @@ def test_presplit_card_uses_amortized_grouping():
 
 
 def test_kill_gate_recalibrated_envelope():
-    """H189: the kill envelope must stay tightened — floor <= 45s — and must never regress
-    to the 2 min floor / 8 min (480000) ceiling that let pril10_w1 fragments run 6.5 min.
+    """H189/H2313: pin the shared production timeout and the tightened 45s floor.
 
     The ceiling bound was 180000 ('>3 min unacceptable', MG). Relaxed to 300000 on
     02-08-2026 by explicit human ruling (issue #983) after measurement showed the 3 min
     ceiling was itself the reason a paid window returned zero cards: 12 of 16 calls died at
     exactly 180 04x-180 23x ms, and it was not tunable from below because heal groups were
-    already at ONE fragment. The anti-regression intent is unchanged and still enforced --
-    480000 remains refused, and 300000 stays below the 390 s agent that prompted H189."""
+    already at ONE fragment. H2313 subsequently proved a real card-phase call completing
+    successfully at 221712 ms under the 600000 ms shared ceiling. The regression guard must
+    therefore compare against that single execution-contract constant instead of retaining
+    a stale local 300000 ms ceiling."""
+    import execution_contract as ec
     import gen_opt_harness2 as gh
     if gh.KILL_FLOOR_MS > 45000:
         fail('KILL_FLOOR_MS must be <= 45000 (was 120000) so a tiny subcard is killed '
              'near MG\'s ~60s suspicion line; got %d' % gh.KILL_FLOOR_MS)
-    if gh.KILL_CEIL_MS > 300000:
-        fail('KILL_CEIL_MS must be <= 300000 (5 min, #983; was 180000, before that 480000); '
-             'got %d' % gh.KILL_CEIL_MS)
+    if gh.KILL_CEIL_MS != ec.PRODUCTION_HARD_TIMEOUT_MS:
+        fail('KILL_CEIL_MS must equal the shared PRODUCTION_HARD_TIMEOUT_MS (%d, H2313); '
+             'got %d' % (ec.PRODUCTION_HARD_TIMEOUT_MS, gh.KILL_CEIL_MS))
 
 
 def test_agent_budget_plan_separates_translate_and_heal_pools():

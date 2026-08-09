@@ -221,6 +221,7 @@ jobs:
         run: |
           python src/pilot/agent_budget.py
           python src/pilot/call_reservation_selftest.py
+          python src/pilot/gateway_route_selftest.py
           python src/pilot/headless_worker_selftest.py
           python src/pilot/execution_contract_selftest.py
           python src/pilot/max_account_orchestrator_selftest.py
@@ -274,7 +275,7 @@ jobs:
           # changed -- read the printed fixture hash before re-pinning, and never copy
           # the new value into prose instead of into this line.
           python src/pilot/h1339_offline_bench.py --warmups 0 --runs 1 \
-            --expect-signature 586d012b3d
+            --expect-signature 8d0bbb2f1f
       - name: Validate <ls> link enrichment (Panini + Spr. (II), H1307)
         working-directory: RussianTranslation
         run: python src/pilot/ls_enrichment_selftest.py

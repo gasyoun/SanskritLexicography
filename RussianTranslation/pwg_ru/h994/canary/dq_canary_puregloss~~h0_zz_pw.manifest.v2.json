@@ -3,7 +3,7 @@
  "meta": {
   "schema_version": "pwg_ru.workflow_meta.v1",
   "generator": "gen_opt_harness2.batched-masked",
-  "generated_at": "2026-08-03T07:53:50Z",
+  "generated_at": "2026-08-09T20:33:59Z",
   "root": "nominal_c4canary",
   "safe_root": "nominal~005fc4canary",
   "lang": "ru",
@@ -51,7 +51,7 @@
    "base_ms": 20000,
    "slope_ms": 45,
    "floor_ms": 45000,
-   "ceil_ms": 300000
+   "ceil_ms": 600000
   },
   "kill_switch": true,
   "agent_budget_strategy": "split-pools-per-card-heal",
@@ -307,7 +307,7 @@
  },
  "budgets": {
   "timeout_floor_ms": 45000,
-  "timeout_ceil_ms": 300000,
+  "timeout_ceil_ms": 600000,
   "max_agents": 18,
   "max_translate_agents": 13,
   "max_heal_agents": 5,
