@@ -304,6 +304,24 @@ def store_semantic_hash(path):
     return h.hexdigest()
 
 
+def store_group_hashes(path):
+    """Diagnostic hashes by key1, using the same volatile-field stripping as the gate."""
+    groups = {}
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            prov = row.get('provenance')
+            if isinstance(prov, dict):
+                prov.pop('generated_at', None)
+                prov.pop('pipeline', None)
+            groups.setdefault(row.get('key1'), []).append(
+                json.dumps(row, ensure_ascii=False, sort_keys=True))
+    return {key: sha256_bytes(('\n'.join(sorted(rows)) + '\n').encode('utf-8'))
+            for key, rows in groups.items()}
+
+
 def semantic_hash(obj, volatile=('generated_at', 'ts', 'recorded_at', 'prepared_at',
                                  'promoted_at', 'claimed_at', 'expires_at', 'wf_file',
                                  'pipeline', 'cost', 'blocked_at', 'unblocked_at')):
@@ -503,6 +521,7 @@ def one_run(tag, keep=False, prepare_mode='batch', record_mode='batch'):
 
     outputs['store_sha256'] = sha256_file(store)
     outputs['store_semantic_sha256'] = store_semantic_hash(store)
+    outputs['store_group_sha256'] = store_group_hashes(store)
     outputs['store_rows'] = sum(1 for ln in open(store, encoding='utf-8') if ln.strip())
     tm_path = os.path.join(tm_dir, 'translation_memory.ru.json')
     outputs['tm_sha256'] = (semantic_hash(json.load(open(tm_path, encoding='utf-8')))
@@ -614,6 +633,10 @@ def _bench(a, fx_hash):
         print('  signature inputs: leases=%s store=%s rows=%d' % (
             semantic_hash(o['leases'])[:16], o['store_semantic_sha256'][:16],
             o['store_rows']))
+        print('  promoted groups: %s' % ' '.join(
+            '%s=%s' % (key, digest[:12])
+            for key, digest in sorted(o['store_group_sha256'].items())
+            if not str(key).startswith('seed')))
 
     stages = ['prepare', 'normalize', 'audit', 'promotion-plan', 'store-write', 'total']
     stats = {}

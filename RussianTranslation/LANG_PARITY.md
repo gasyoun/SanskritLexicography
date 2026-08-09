@@ -1990,7 +1990,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/root_glue_translated.py": "3c9c40c085861240d6089001706781922949f3575f1fa64dc9fcddcc9f3a2ebb",
       "src/pilot/window_common.py": "3a8a51917c9b898d9b3d262aaf9339e14fb30cddbb507242266858aec8727331",
       "src/pipeline_version.py": "b461d0c78b5df3f598007eb1e7ee284d84596ae19b5106d5329fdab1a93f00be",
-      "src/pilot/h1339_offline_bench.py": "d140f6d0eba7c185c3bc947a1eb2721d80d4ed44e3cd2a4a417a39c9a9be2735",
+      "src/pilot/h1339_offline_bench.py": "aa6681ba1c3cf55093d10fe0d6c44e4870d25252d81b529d9199524a44073d53",
       "src/pilot/window_selftest.py": "ed3e47685263b13bae7782b1efbe86167146a3f494b77bf26c8730514c702ffd"
     }
   },
