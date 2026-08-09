@@ -354,6 +354,23 @@ def one_run(tag, keep=False, prepare_mode='batch', record_mode='batch'):
     store = os.path.join(sandbox, 'store.jsonl')
     for d in (coord_dir, profile_dir, tm_dir):
         os.makedirs(d)
+    # The promotion path enriches rows from optional csl-pywork pwgbib/pwgab siblings.
+    # A developer checkout commonly has them while GitHub's single-repo checkout does not,
+    # which made the supposedly hermetic semantic signature platform/environment dependent.
+    # Point every subprocess at the same deliberately empty optional-sibling fixture.  Empty
+    # files exercise the documented graceful-degradation path without an explicit-root miss
+    # (which correctly fails closed as operator misconfiguration).
+    sibling_root = os.path.join(sandbox, 'optional_siblings')
+    optional_files = (
+        os.path.join(sibling_root, 'csl-pywork', 'v02', 'distinctfiles', 'pwg',
+                     'pywork', 'pwgauth', 'pwgbib.txt'),
+        os.path.join(sibling_root, 'csl-pywork', 'v02', 'distinctfiles', 'pwg',
+                     'pywork', 'pwgab', 'pwgab_input.txt'),
+    )
+    for optional_file in optional_files:
+        os.makedirs(os.path.dirname(optional_file), exist_ok=True)
+        with open(optional_file, 'w', encoding='utf-8', newline='\n'):
+            pass
     # H1811 H10: sandbox the merged.md/pilot_review.md sidecars too — before this,
     # the "hermetic" bench still rewrote live src/pilot/output via _pilot_collect.
     pilot_out = os.path.join(sandbox, 'pilot_output')
@@ -365,6 +382,7 @@ def one_run(tag, keep=False, prepare_mode='batch', record_mode='batch'):
                PWG_INPUT_DIR=INPUT_DIR,
                PWG_OUTPUT_DIR=pilot_out,
                PWG_EVENTS_PATH=os.path.join(sandbox, 'dashboard_events.jsonl'),
+               CSL_SIBLING_ROOT=sibling_root,
                PYTHONIOENCODING='utf-8')
 
     # --- setup (untimed): seed store incl. the TM-seed key's rows, then build the TM ---
