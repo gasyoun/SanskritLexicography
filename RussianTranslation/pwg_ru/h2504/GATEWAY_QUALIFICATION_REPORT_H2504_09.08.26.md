@@ -61,9 +61,32 @@ This is the documented split in the module:
 > `capture` (transcript → envelope) is pure and hermetically testable, and the transport
 > is injected. See `GATEWAY_QUALIFICATION_REPORT` for the boundary.
 
-The `GatewayCall.transport` parameter is the injection point. In a live harness session
-the caller injects a wrapper around the Agent tool. In this qualification session all
-transports were synthetic dicts; zero gateway calls were made and zero cost was incurred.
+The `GatewayCall.transport` parameter is the injection point. In this qualification session
+all transports were synthetic dicts; zero gateway calls were made and zero cost was incurred.
+
+**Measured correction (same session, after the paragraph above was first written).**
+`credential_status()` was re-run *inside the interactive harness session itself*, not only
+from a spawned subprocess. It returns the same result:
+
+| field | value |
+|---|---|
+| `base_url_present` | `True` |
+| `base_url_is_gateway` | `True` |
+| `auth_token_present` | **`False`** |
+| `api_key_present` | `False` |
+
+So `ANTHROPIC_AUTH_TOKEN` is absent from **every Python-reachable environment on this box**,
+in-session and subprocess alike — the harness holds the credential out-of-process and lends it
+only to its own Agent tool calls. The earlier framing ("a harness session has the token
+present") is wrong and is superseded by this table.
+
+**Consequence — the Agent tool is not a sufficient transport.** Wrapping the Agent tool would
+return assistant *text* but no per-call `usage` block and no `total_cost_usd`. Per the locked
+contract in this report, absent usage is `cost_evaluable=false`, which is itself an immediate
+named NO-GO. An Agent-tool-backed transport therefore cannot produce a PASS **by
+construction** — it fails the metering gate even when the generation succeeds. This is a
+structural boundary, not an environment accident, and it is the reason call 1 was not spent:
+the call would have burned budget on a verdict already determined to be NO-GO.
 
 **`TREE_KILL_DELEGATE = 'headless_worker.run_tree_kill'`** — a live transport that times
 out should delegate process-tree kill to this c4 helper. The gateway route owns no
