@@ -2,7 +2,7 @@
 
 _Created: 19-07-2026 · Last updated: 19-07-2026_
 
-**This addendum does not overwrite [H1150](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1112/H1150_SOFTGUARD_FALSEFLAG_RATE_2026-07-18.md) — it is a sibling reporting the outcome of [H1225](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1225-Sonnet_SanskritLexicography_sanloss-counter-fix-nachtrag-overcounting_18.07.26.md), which set out to fix `count_source_senses`'s over-count on H1150's 8 flagged Nachtrag/corrigenda cards.**
+**This addendum does not overwrite [H1150](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1112/H1150_SOFTGUARD_FALSEFLAG_RATE_2026-07-18.md) — it is a sibling reporting the outcome of [H1225](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1225-Sonnet_SanskritLexicography_sanloss-counter-fix-nachtrag-overcounting_18.07.26.md), which set out to fix `count_source_senses`'s over-count on H1150's 8 flagged Nachtrag/corrigenda cards.**
 
 ## Outcome
 

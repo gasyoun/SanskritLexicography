@@ -30,6 +30,15 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 from safe_filename import safe_name  # noqa: E402
+# H2227 OPT-2: LS/SAN thresholds + abs-drop live in markup_fidelity_gates (shared with
+# audit_window_en). AB stays on stage2_pregate for the RU path (check_ab=False here).
+from markup_fidelity_gates import (  # noqa: E402
+    GLOSS_RE as GER,
+    markup_span_flags,
+    ls_san_ab_counts,
+)
+
+CYR = re.compile(r'[а-яёА-ЯЁ]')
 
 
 def _directory_names(directory):
@@ -60,13 +69,6 @@ def merged_output_path(stem, out_dir=None, exact_names=None):
             return os.path.join(out_dir, name)
     return None
 
-LS = re.compile(r'<ls\b')
-SAN = re.compile(r'\{#.*?#\}')
-GER = re.compile(r'\{%.*?%\}')
-CYR = re.compile(r'[а-яёА-ЯЁ]')
-
-LS_KEEP, SAN_KEEP = 0.90, 0.85
-
 
 def body(t):
     return t.split('===\n\n', 1)[1] if '===\n\n' in t else t
@@ -81,18 +83,13 @@ def audit_unit(stem, out_names=None):
         return stem, None, ['NO-OUTPUT']
     rb = body(open(rawp, encoding='utf-8').read())
     out = open(outp, encoding='utf-8').read()
-    sls, ols = len(LS.findall(rb)), len(LS.findall(out))
-    ssan, osan = len(set(SAN.findall(rb))), len(set(SAN.findall(out)))
+    # ls_san_ab_counts -> (ls_open, distinct_san, ab_open)
+    sls, ssan, _ab_s = ls_san_ab_counts(rb)
+    ols, osan, _ab_o = ls_san_ab_counts(out)
     cyr = bool(CYR.search(out))
-    # absolute-difference guard: losing a single <ls>/{#} span on a tiny card (where the model
-    # collapsed a compound or merged a duplicate) is below the ratio but not a real apparatus
-    # loss — require >=2 absolute missing too. The giant-head citation dump (e.g. 7/125) still
-    # trips it; a 3/4 tiny card no longer false-flags.
-    flags = []
-    if sls > 0 and ols < sls * LS_KEEP and (sls - ols) >= 2:
-        flags.append('LS-LOSS(%d/%d)' % (ols, sls))
-    if ssan > 0 and osan < ssan * SAN_KEEP and (ssan - osan) >= 2:
-        flags.append('SAN-LOSS(%d/%d)' % (osan, ssan))
+    # HARD LS/SAN from shared module (same ratio + abs-drop as EN per-sense path).
+    # NO-RUSSIAN is RU-specific and stays local; AB is stage2_pregate on the RU path.
+    flags = list(markup_span_flags(rb, out, check_ab=False))
     if GER.search(rb) and not cyr:
         flags.append('NO-RUSSIAN')
     return stem, (sls, ols, ssan, osan, cyr), flags

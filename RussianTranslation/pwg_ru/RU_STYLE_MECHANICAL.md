@@ -5,15 +5,15 @@ _Created: 19-07-2026 · Last updated: 31-07-2026_
 > Rules R1–R4 are consolidated, with all other ratified pwg_ru style rules, in the guide
 > of record: [PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md) (H1859).
 
-Handoff: [H1305](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1305-Sonnet_RussianTranslation_pwg-ru-style-mechanical-yo-terseness-sweep_19.07.26.md)
+Handoff: [H1305](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1305-Sonnet_RussianTranslation_pwg-ru-style-mechanical-yo-terseness-sweep_19.07.26.md)
 · Model: Sonnet 5 (`claude-sonnet-5`) · Register:
 [H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md)
 (rows N7, N12 + the terseness half of N4; §3, §4, §6). Fan-out of
-[H1300](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1300-Fable_RussianTranslation_h178-da-vote-processing_19.07.26.md).
+[H1300](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1300-Fable_RussianTranslation_h178-da-vote-processing_19.07.26.md).
 Sibling streams NOT in scope here: `<ab>` abbreviation ratification is
-[H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md),
+[H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md),
 German prose residue is
-[H1302](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1302-Opus_RussianTranslation_pwg-ru-german-residue-sweep-reject-repair_19.07.26.md),
+[H1302](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1302-Opus_RussianTranslation_pwg-ru-german-residue-sweep-reject-repair_19.07.26.md),
 research-grade style rulings (doublets, Apresyan) are
 [H1306](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1306-Fable_RussianTranslation_pwg-ru-style-research-doublets-apresyan_19.07.26.md).
 

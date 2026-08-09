@@ -4,6 +4,7 @@ import hashlib
 import json
 import subprocess
 import sys
+import time
 import tempfile
 import os
 from types import SimpleNamespace
@@ -213,6 +214,136 @@ def test_call_timeout_clamped():
           % (h.HARD_TIMEOUT_MS, h.HARD_TIMEOUT_MS / 1000.0))
 
 
+def test_h2254_ceiling_boundary_is_refused_not_clamped():
+    """H2254: 299 999 / 300 000 / 300 001 ms, on BOTH inputs to the effective bound.
+
+    The pre-H2254 behaviour was `min(operator, ceil, HARD)` on every route, so a request for
+    7 200 s and a request for 300 s produced the SAME run and the operator was never told the
+    difference. The owner's 03-08-2026 ruling makes 300 000 ms an absolute maximum, and an
+    absolute maximum that silently rounds requests down is indistinguishable from no maximum
+    at all -- the discrepancy is only visible by reading the timeout off a subprocess call
+    that has already been spawned and paid for.
+
+    The boundary is pinned on the two independent inputs because they arrive by different
+    routes and a guard on one leaves the other open: the operator's `--timeout` (seconds, so
+    the ceiling is only expressible at second granularity) and the sealed manifest's
+    `budgets.timeout_ceil_ms` (milliseconds, so 299 999 and 300 001 are both expressible).
+    Every value is derived from HARD_TIMEOUT_MS, never written as a literal -- FINDINGS §518.
+    """
+    ceiling = h.HARD_TIMEOUT_MS
+    seen = {}
+
+    def capture_runner(argv, **kwargs):
+        seen['timeout'] = kwargs.get('timeout')
+        return success_runner(argv, **kwargs)
+
+    # --- manifest budget: below / at / above -------------------------------------------
+    for value, expect in ((ceiling - 1, (ceiling - 1) / 1000.0), (ceiling, ceiling / 1000.0)):
+        seen.clear()
+        m = manifest()
+        m['budgets'] = {'timeout_ceil_ms': value}
+        payload, _status, code = execute(m, capture_runner)
+        assert code == 0 and payload is not None, (value, code)
+        assert seen['timeout'] == expect, (
+            'manifest ceil %d ms must be ACCEPTED and bind exactly (got %r)' % (value, seen))
+
+    over = manifest()
+    over['budgets'] = {'timeout_ceil_ms': ceiling + 1}
+    seen.clear()
+    try:
+        execute(over, capture_runner)
+    except ValueError as exc:
+        assert str(ceiling + 1) in str(exc) and 'REFUSED' in str(exc), str(exc)
+    else:
+        raise AssertionError('a manifest sealing %d ms was accepted -- the ceiling is being '
+                             'clamped again, not enforced' % (ceiling + 1))
+    assert 'timeout' not in seen, (
+        'the refusal happened AFTER a subprocess was spawned; a money guard that fires '
+        'post-spawn has already let the call be paid for')
+
+    # --- operator --timeout: below / at / above ----------------------------------------
+    ceiling_s = ceiling // 1000
+    for seconds, expect in ((ceiling_s - 1, float(ceiling_s - 1)), (ceiling_s, float(ceiling_s))):
+        seen.clear()
+        payload, _status, code = h.execute(
+            manifest(), claude=sys.executable, timeout=seconds, runner=capture_runner,
+            call_reservation=MemoryCallLedger(), config_dir=_FIXTURE_CONFIG_DIR)
+        assert code == 0 and seen['timeout'] == expect, (seconds, seen)
+
+    seen.clear()
+    try:
+        h.execute(manifest(), claude=sys.executable, timeout=ceiling_s + 1,
+                  runner=capture_runner, call_reservation=MemoryCallLedger(),
+                  config_dir=_FIXTURE_CONFIG_DIR)
+    except ValueError as exc:
+        assert 'operator --timeout' in str(exc), str(exc)
+    else:
+        raise AssertionError('--timeout %d s was accepted above the %d s maximum'
+                             % (ceiling_s + 1, ceiling_s))
+    assert 'timeout' not in seen, 'operator refusal fired after the spawn'
+
+    # --- the supervisor's OUTER bound must stay strictly above the per-call one ---------
+    # Found while making the default equal the ceiling: both supervisor spawn sites passed
+    # the SAME number to `--timeout` and to their own `run_tree_kill(timeout=...)`. That was
+    # harmless at 7200 (24x headroom) and would have become a silent regression at 300 --
+    # the outer kill lands during teardown of a call that legitimately reached its ceiling,
+    # so the status file recording that fact is never written and the worker looks like it
+    # vanished. This assertion is what stops the two numbers being re-unified later.
+    assert h.wrapper_timeout_s(ceiling_s) > ceiling_s, 'wrapper bound must exceed per-call'
+    import max_account_orchestrator as _mao_src
+    _wrapper_src = open(_mao_src.__file__, encoding='utf-8').read()
+    assert 'timeout=timeout)' not in _wrapper_src and 'timeout=args.timeout)' not in _wrapper_src, (
+        'a supervisor is spawning the worker with its per-call ceiling as the OUTER '
+        'tree-kill bound again -- use wrapper_timeout_s()')
+
+    # --- the retired 7200 s default must be gone from every route ----------------------
+    import bounded_staged_run  # noqa: F401  (imported for its parser default only)
+    import max_account_orchestrator as mao
+    assert h.DEFAULT_TIMEOUT_S == ceiling_s == mao.DEFAULT_TIMEOUT_S, (
+        'a route still defaults to something other than the ceiling: worker=%r orch=%r'
+        % (h.DEFAULT_TIMEOUT_S, mao.DEFAULT_TIMEOUT_S))
+    print('  H2254 boundary: %d/%d accepted, %d refused pre-spawn on BOTH inputs'
+          % (ceiling - 1, ceiling, ceiling + 1))
+
+
+def test_h2254_process_tree_termination_at_the_effective_bound():
+    """H2254: the ceiling the guard admits is the one the tree-killer actually receives.
+
+    Two halves, deliberately separated because only one of them is affordable to run for
+    real. (a) The bound the engine computes is handed to `run_tree_kill` as its `timeout`
+    kwarg -- asserted at the ceiling itself, so the number under test is the production one.
+    (b) A tree-killed child is really spawned and really killed on THIS platform, at a
+    one-second scaled bound rather than 300 -- a 300-second selftest would be a five-minute
+    CI leg proving nothing the scaled one does not, since `terminate_tree` branches on
+    `os.name`, never on the magnitude of the deadline.
+    """
+    seen = {}
+
+    def capture_runner(argv, **kwargs):
+        seen['timeout'] = kwargs.get('timeout')
+        return success_runner(argv, **kwargs)
+
+    m = manifest()
+    m['budgets'] = {'timeout_ceil_ms': h.HARD_TIMEOUT_MS}
+    execute(m, capture_runner)
+    assert seen['timeout'] == h.HARD_TIMEOUT_MS / 1000.0, seen
+
+    hung = [sys.executable, '-c', 'import time; time.sleep(120)']
+    started = time.time()
+    try:
+        proc_tree.run_tree_kill(hung, capture_output=True, timeout=1)
+    except subprocess.TimeoutExpired:
+        pass
+    else:
+        raise AssertionError('a 120 s child was not killed at a 1 s deadline -- the '
+                             'process-tree kill is inert on %s' % os.name)
+    elapsed = time.time() - started
+    assert elapsed < 60, ('tree kill took %.1f s for a 1 s deadline -- the child tree is '
+                          'outliving its bound' % elapsed)
+    print('  H2254 tree kill: bound %.1f s reaches the runner; real child killed in %.1f s '
+          'on os.name=%s' % (h.HARD_TIMEOUT_MS / 1000.0, elapsed, os.name))
+
+
 def test_cli_spawns_from_a_bare_cwd():
     """H2158 (#983): the CLI child must not inherit the repo cwd.
 
@@ -235,6 +366,222 @@ def test_cli_spawns_from_a_bare_cwd():
     repo = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
     assert os.path.abspath(cwd) != repo, 'cwd is the repo itself: %r' % cwd
     print('  H2158 bare cwd: CLI spawned from %s (no CLAUDE.md, no .git)' % cwd)
+
+
+def test_bare_cwd_ancestry_is_clean_or_none():
+    """H2249: the spawn dir's whole ANCESTRY must be memory-free, not just the dir itself.
+
+    Was a MEASUREMENT under H2189 (it would have failed on the shipping box: `%TEMP%` sits
+    under the Windows user profile, so 32 779 B of operator `CLAUDE.md` + `.claude/rules`
+    reached every paid call). H2249 made the helper derive and VERIFY candidates, so this is
+    now an assertion. Both legs are real outcomes: a verified directory, or None -- never a
+    directory that merely looks empty.
+    """
+    from h2189_min_profile import cwd_ancestry_scan
+    cwd = h.bare_cli_cwd()
+    if cwd is None:
+        print('  H2249: bare_cli_cwd() failed safe (None) -- no candidate verified clean')
+        return
+    hits = cwd_ancestry_scan(cwd)
+    leaked = sum(hit['bytes'] for hit in hits)
+    assert not hits, ('H2249: bare_cli_cwd() returned %r whose ancestry still injects %d '
+                      'byte(s): %s' % (cwd, leaked, [hit['path'] for hit in hits]))
+    print('  H2249 ancestry of %s: clean -- 0 injectable bytes' % cwd)
+
+
+def test_bare_cwd_candidates_are_derived_not_hardcoded():
+    """A machine-specific path in the source is an explicit `Fail =` for H2249.
+
+    The candidate list must come from the environment (an operator override, the temp dir,
+    the roots the OS reports) -- so on a box where none of them verifies the helper returns
+    None rather than a path that happens to exist on the author's machine.
+    """
+    cands = h.bare_cli_cwd_candidates()
+    assert cands, 'no spawn-directory candidates derived at all'
+    assert len(cands) == len({os.path.normcase(os.path.abspath(c)) for c in cands}), \
+        'candidate list has duplicates: %r' % (cands,)
+    for cand in cands:
+        assert os.path.basename(cand) == h.BARE_CLI_CWD_NAME or cand == os.path.abspath(
+            os.environ.get(h.BARE_CLI_CWD_ENV) or ''), \
+            'candidate %r is neither the stable name nor the operator override' % cand
+    override = os.path.join(tempfile.mkdtemp(prefix='h2249_ovr_'), 'spawn')
+    prev = os.environ.get(h.BARE_CLI_CWD_ENV)
+    try:
+        os.environ[h.BARE_CLI_CWD_ENV] = override
+        assert os.path.abspath(override) == os.path.abspath(h.bare_cli_cwd_candidates()[0]), \
+            'the operator override is not honoured first'
+    finally:
+        if prev is None:
+            os.environ.pop(h.BARE_CLI_CWD_ENV, None)
+        else:
+            os.environ[h.BARE_CLI_CWD_ENV] = prev
+    print('  H2249 candidates (derived): %s' % ', '.join(cands))
+
+
+def test_bare_cwd_refuses_a_dirty_ancestry_rather_than_returning_it():
+    """The exact class H2249 fixes: a directory that is empty but whose PARENT carries memory.
+
+    Fed through the override so no real candidate is touched. Silently returning this is what
+    shipped 32 779 B into every paid call for a day; the required outcome is None.
+    """
+    root = tempfile.mkdtemp(prefix='h2249_dirty_')
+    os.makedirs(os.path.join(root, '.claude'))
+    with open(os.path.join(root, '.claude', 'CLAUDE.md'), 'w', encoding='utf-8') as fh:
+        fh.write('operator memory that must never reach a paid call\n')
+    spawn = os.path.join(root, 'empty_child')
+    os.makedirs(spawn)
+    assert not h.bare_cli_cwd_ancestry_clean(spawn), \
+        'an ancestor .claude/CLAUDE.md was not detected -- this is the H2249 defect itself'
+    prev, prev_cache = os.environ.get(h.BARE_CLI_CWD_ENV), list(h._BARE_CLI_CWD_CACHE)
+    try:
+        os.environ[h.BARE_CLI_CWD_ENV] = spawn
+        h._BARE_CLI_CWD_CACHE.clear()
+        resolved = h.bare_cli_cwd()
+        assert resolved is None or os.path.normcase(os.path.abspath(resolved)) \
+            != os.path.normcase(os.path.abspath(spawn)), \
+            'bare_cli_cwd() handed back a dirty-ancestry directory: %r' % resolved
+        assert resolved is None or not cwd_ancestry_scan_ref()(resolved), \
+            'the fallback candidate is not clean either: %r' % resolved
+    finally:
+        h._BARE_CLI_CWD_CACHE[:] = prev_cache
+        if prev is None:
+            os.environ.pop(h.BARE_CLI_CWD_ENV, None)
+        else:
+            os.environ[h.BARE_CLI_CWD_ENV] = prev
+    print('  H2249 dirty ancestry refused (fell through to %r)' % resolved)
+
+
+def cwd_ancestry_scan_ref():
+    """The ONE ancestor walker, imported lazily so the selftest cannot fork a second one."""
+    from h2189_min_profile import cwd_ancestry_scan
+    return cwd_ancestry_scan
+
+
+def test_safe_mode_default_is_on_and_an_explicit_false_still_opts_out():
+    """H2251 flipped the default ON. Both halves of that are load-bearing.
+
+    This test is the re-pointed twin of H2189's `test_safe_mode_is_opt_in_and_off_by_default`,
+    which existed to catch an UNDOCUMENTED default flip. The flip is now documented and
+    evidenced (canary GO on the safe-mode arm + a 3-card both-ways comparison), so the
+    assertion inverts -- but it must not simply be deleted, because the property still worth
+    pinning is that `DEFAULT_CLI_SAFE_MODE` is what a silent manifest gets, and that an
+    explicit opt-out is still HONOURED. A flip implemented as `bool(...)` over a tri-state
+    field would quietly swallow `cli_safe_mode: false`, turning an operator's deliberate
+    "spawn the historical way" into a no-op.
+    """
+    h._safe_mode_support[sys.executable] = True
+    try:
+        seen = {}
+        def capture_runner(argv, **kwargs):
+            seen['argv'] = argv
+            return success_runner(argv, **kwargs)
+        execute(manifest(), capture_runner)
+        assert h.DEFAULT_CLI_SAFE_MODE is True, 'H2251 default flip was reverted silently'
+        assert h.SAFE_MODE_FLAG in seen['argv'], \
+            'a manifest that says nothing must now spawn WITH --safe-mode (H2251)'
+
+        # The opt-out. `False` is not the same as absent, and must survive the flip.
+        seen = {}
+        m = manifest()
+        m['execution'] = {'cli_safe_mode': False}
+        execute(m, capture_runner)
+        assert h.SAFE_MODE_FLAG not in seen['argv'], \
+            'an explicit cli_safe_mode: false was overridden by the new default -- the ' \
+            'operator opt-out is inert'
+    finally:
+        h._safe_mode_support.pop(sys.executable, None)
+
+
+def test_safe_mode_is_carried_when_the_manifest_requests_it():
+    seen = {}
+    def capture_runner(argv, **kwargs):
+        seen['argv'] = argv
+        return success_runner(argv, **kwargs)
+    m = manifest()
+    m['execution'] = {'cli_safe_mode': True}
+    h._safe_mode_support[sys.executable] = True    # pretend the installed CLI supports it
+    try:
+        execute(m, capture_runner)
+    finally:
+        h._safe_mode_support.pop(sys.executable, None)
+    argv = seen['argv']
+    assert h.SAFE_MODE_FLAG in argv, 'manifest requested safe mode and the spawn ignored it'
+    # It must be an ADDITION, never a replacement: the schema and permission posture that
+    # make this a pwg_ru translation call have to survive the optimisation.
+    assert '--json-schema' in argv and argv[argv.index('--permission-mode') + 1] == 'plan'
+
+
+def test_safe_mode_degrades_loudly_when_the_cli_cannot_do_it():
+    """Requested-but-unsupported must fall back to the historical argv, not kill the run.
+
+    An unsupported flag would die in the CLI's own argument parsing -- every spawn, all
+    of them -- turning a cost optimisation into a total outage.
+    """
+    import io
+    seen = {}
+    def capture_runner(argv, **kwargs):
+        seen['argv'] = argv
+        return success_runner(argv, **kwargs)
+    m = manifest()
+    m['execution'] = {'cli_safe_mode': True}
+    h._safe_mode_support[sys.executable] = False   # pretend an older CLI
+    stderr, sys.stderr = sys.stderr, io.StringIO()
+    try:
+        execute(m, capture_runner)
+        warned = sys.stderr.getvalue()
+    finally:
+        sys.stderr = stderr
+        h._safe_mode_support.pop(sys.executable, None)
+    assert h.SAFE_MODE_FLAG not in seen['argv'], 'spawned with a flag the CLI cannot parse'
+    assert 'H2189' in warned and 'WITHOUT it' in warned, \
+        'silent downgrade: the run would report H2189 savings while paying the full tax'
+
+
+def test_safe_mode_effective_is_recorded_in_status():
+    """H2251: the run's own artifacts must say which spawn shape actually ran.
+
+    `meta.execution.cli_safe_mode` records what the manifest REQUESTED. The status field
+    records what the engine RESOLVED. They agree except in the one case that matters --
+    requested-but-unsupported, where H2189's warning goes to stderr and is gone the moment
+    the console scrolls. Without this, a window that quietly paid the full profile tax
+    while believing it had stripped it is indistinguishable afterwards from one that did.
+    """
+    # An explicit opt-out records an OFF spawn. (A silent manifest now takes the H2251
+    # default and is covered by the default test above; using the opt-out here keeps this
+    # test about the REQUESTED-vs-EFFECTIVE distinction rather than about the default.)
+    m = manifest()
+    m['execution'] = {'cli_safe_mode': False}
+    _payload, status, _code = execute(m, success_runner)
+    assert status['cli_safe_mode_effective'] is False, \
+        'an explicit opt-out must record an OFF spawn, got %r' \
+        % status.get('cli_safe_mode_effective')
+
+    m = manifest()
+    m['execution'] = {'cli_safe_mode': True}
+    h._safe_mode_support[sys.executable] = True
+    try:
+        _payload, status, _code = execute(m, success_runner)
+    finally:
+        h._safe_mode_support.pop(sys.executable, None)
+    assert status['cli_safe_mode_effective'] is True, \
+        'requested and supported, but the status denies the spawn carried the flag'
+
+    # The case the field exists for: requested, NOT supported. The request says True; only
+    # the resolved value tells the truth, and a receipt built on the request would lie.
+    import io
+    m = manifest()
+    m['execution'] = {'cli_safe_mode': True}
+    h._safe_mode_support[sys.executable] = False
+    stderr, sys.stderr = sys.stderr, io.StringIO()
+    try:
+        _payload, status, _code = execute(m, success_runner)
+    finally:
+        sys.stderr = stderr
+        h._safe_mode_support.pop(sys.executable, None)
+    assert status['cli_safe_mode_effective'] is False, \
+        'a downgraded spawn recorded itself as safe-mode: the durable record would report ' \
+        'H2189 savings for a call that paid the full profile tax'
+    print('  H2251 status records the EFFECTIVE spawn shape (downgrade included)')
 
 
 def test_kill_ceiling_in_step_with_harness():
@@ -940,6 +1287,60 @@ def test_headless_heal_stitch_translation_fidelity_reject():
     print('  C1 headless heal: german-faithful, target-dropped complete stitch -> rejected (card None)')
 
 
+def test_h2191_prompt_is_assembled_stable_left():
+    """H2191: `build_prompt` emits preamble + translation + grammar + [nws] + cards.
+
+    The point of the order is cache economics, so the pin is on the ORDER, not on the
+    presence of the segments: the run-invariant framework (preamble + CONV_TR) must be
+    the leftmost bytes, ahead of the window-scoped grammar block, ahead of everything
+    per-card. A future edit that restores the historical
+    `preamble + grammar + translation` shortens the stable head and must fail here.
+
+    It also pins that this stayed a REORDER: every segment is still present exactly once,
+    so a later 'optimisation' that drops or compresses CONV_TR/NWS to shorten the prefix
+    (lean-TR, rejected in AB_TEST_LEAN_TR.md) cannot pass itself off as a cache change.
+    """
+    m = manifest()
+    m['prompt'] = {'preamble': 'PRE.', 'translation': 'TR.', 'grammar': 'GRAM.',
+                   'grammars': {'agni': 'PERCARD.'}, 'nws_rule': 'NWS'}
+    m['inputs']['agni']['nws'] = 1
+    got = h.build_prompt(m, ['agni'])
+
+    head = 'PRE.TR.GRAM.\n\nNWS\n'
+    assert got.startswith(head), 'stable-left order broken; prompt starts %r' % got[:60]
+    assert got == head + h.card_block(m, 'agni'), 'card blocks must follow the framework'
+    # order, stated as positions so a reordering edit fails with a readable message
+    at = {name: got.index(mark) for name, mark in
+          (('preamble', 'PRE.'), ('translation', 'TR.'), ('grammar', 'GRAM.'),
+           ('nws', 'NWS'), ('card_grammar', 'PERCARD.'), ('card', '=== CARD agni ==='))}
+    assert at['preamble'] < at['translation'] < at['grammar'] < at['nws'], \
+        'framework segments out of stable-left order: %r' % at
+    # per-card grammar stays INSIDE the card block, not hoisted into the shared head
+    assert at['nws'] < at['card_grammar'] < at['card'], \
+        'per-card grammar must stay with its card block: %r' % at
+    # reorder, not compression: nothing dropped, nothing duplicated
+    for mark in ('PRE.', 'TR.', 'GRAM.', 'NWS', 'PERCARD.'):
+        assert got.count(mark) == 1, 'segment %r appears %d times' % (mark, got.count(mark))
+
+    # the H2158 split must still cut byte-identically at the first card block
+    import h2158_route_ab as ab
+    prefix, tail = ab.split_prompt(m, 'agni')          # raises if not byte-identical
+    assert prefix == head and prefix + tail == got, 'split_prompt drifted from build_prompt'
+
+    # heal/fragment lane carries the same order (preamble + TR before either grammar)
+    eng = _h2a_engine(m)
+    frag = eng.fragment_prompt('agni', [{'skeleton': '{T1}'}], [0])
+    assert frag.startswith('PRE.TR.GRAM.PERCARD.'), \
+        'fragment_prompt not stable-left: %r' % frag[:60]
+
+    # the JS twins in the generated harness must not drift back to the old order
+    js = open(generator.__file__, encoding='utf-8').read()
+    assert js.count('PREAMBLE + CONV_TR + GRAMMAR') == 2, \
+        'generated-harness prompt assembly is not stable-left in both lanes'
+    assert 'PREAMBLE + GRAMMAR + CONV_TR' not in js, 'old JS prompt order still present'
+    print('  H2191: prompt is stable-left (preamble+TR before grammar) in all four lanes')
+
+
 def _h2a_engine(test_manifest):
     """A bare HeadlessEngine for the H2a classification pins.
 
@@ -1591,6 +1992,8 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_h1610_refuse_max_agents_starves_multikey()
     test_h2b_translate_budget_preserves_attempt_content_note()
     test_call_timeout_clamped()
+    test_h2254_ceiling_boundary_is_refused_not_clamped()
+    test_h2254_process_tree_termination_at_the_effective_bound()
     test_durable_call_reservation()
     test_cli_reservation_and_preflight_gates()
     test_h1_unreadable_manifest_is_configuration_status()
@@ -1618,6 +2021,14 @@ console.log(JSON.stringify(restoreCard(card, 'agni')))
     test_h2091_948_account_refusal_aborts_before_any_bisect()
     test_kill_ceiling_in_step_with_harness()
     test_cli_spawns_from_a_bare_cwd()
+    test_bare_cwd_ancestry_is_clean_or_none()
+    test_bare_cwd_candidates_are_derived_not_hardcoded()
+    test_bare_cwd_refuses_a_dirty_ancestry_rather_than_returning_it()
+    test_safe_mode_default_is_on_and_an_explicit_false_still_opts_out()
+    test_safe_mode_is_carried_when_the_manifest_requests_it()
+    test_safe_mode_degrades_loudly_when_the_cli_cannot_do_it()
+    test_safe_mode_effective_is_recorded_in_status()
+    test_h2191_prompt_is_assembled_stable_left()
     print('headless_worker_selftest: PASS')
 
 

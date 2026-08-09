@@ -1,0 +1,142 @@
+{
+  "is_error": false,
+  "duration_api_ms": 117693,
+  "num_turns": 3,
+  "stop_reason": "tool_use",
+  "session_id": "db7519aa-1e81-4ca4-8878-e5d11a7b84c3",
+  "total_cost_usd": 0.49983389999999994,
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 46999,
+    "cache_read_input_tokens": 103243,
+    "output_tokens": 12457,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 46999,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2734,
+        "cache_read_input_tokens": 68059,
+        "cache_creation_input_tokens": 14124,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 14124
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-sonnet-5": {
+      "inputTokens": 4,
+      "outputTokens": 12457,
+      "cacheReadInputTokens": 103243,
+      "cacheCreationInputTokens": 46999,
+      "webSearchRequests": 0,
+      "costUSD": 0.49983389999999994,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "{\"cards\":[{\"key1\":\"sarvatra\",\"iast\":\"sarvatra\",\"notes\":\"Статья образована двумя пластами источников: основная статья PWG (Böhtlingk-Roth, большой словарь) и её сокращённая переработка PW (Böhtlingk, краткое издание). Оба пласта даны как отдельные записи (records), каждая со своей внутренней нумерацией значений 1〉/2〉. Значение «0» в записи PWG — грамматическая заметка (adv., с отсылками к P. и VOP.), не содержательное значение, но включена для полноты. Строка {T124} — продолжение/примечание к значению 2 записи PWG (не отдельное занумерованное значение).\",\"records\":[{\"h\":\"{T1}\",\"grammar\":\"adj., adv.\",\"senses\":[{\"tag\":\"0\",\"german\":\"{T1}¦ (von {T2}) {T3} {T4}. {T5}.\",\"russian\":\"{T1}¦ (от {T2}) {T3} {T4}. {T5}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Грамматическая заметка (adv.) с отсылками к грамматистам P. и VOP., не содержательное значение слова.\"},{\"tag\":\"1\",\"german\":\"{T122} 1〉 {%überall, stets, in allen Fällen, jederzeit%} {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}, {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52}. {T53}. {T54}. {T55}. {T56}. {T57} {T58}. {T59}. {T60}. {T61} {T62}. {T63} {T64}. {T65}. {T66}. {T67}. {T68} {T69}. {T70} {%in keinem Falle%} {T71}.\",\"russian\":\"{T122} 1) везде, всегда, во всех случаях, в любое время {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}, {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52}. {T53}. {T54}. {T55}. {T56}. {T57} {T58}. {T59}. {T60}. {T61} {T62}. {T63} {T64}. {T65}. {T66}. {T67}. {T68} {T69}. {T70} ни в коем случае {T71}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Vedic\",\"differentia\":\"Обстоятельство места/времени/образа действия («везде, всегда, во всех случаях, в любое время»); при отрицании — «ни в коем случае». Значение подтверждено обширной серией цитат из ведийских шраута- и грихья-сутр (ŚAT.BR., ĀŚV.ŚR., KĀTY.ŚR., LĀṬY., KAUŚ. и др.), а также эпических и классических текстов.\"},{\"tag\":\"2\",\"german\":\"{T123}— 2〉 = {T72} {T73} und {T74} {T75} {T76}. {T77} {T78} zu {T79}. {T80} {T81}. {T82} {T83}. {T84}. {T85} {T86} {T87}. {T88} {T89}. {T90} {T91}. {T92} {T93}. {T94} {T95}. {T96} {T97}. {T98}. {T99}. {T100} {T101}. {T102} ({T103} {T104}) {T105}. {T106}. {T107} {T108}. {T109} {%Holz für Nichts gut%} {T110}.\\n{T124}— {T111} {T112}.\",\"russian\":\"{T123}— 2) = {T72} {T73} и {T74} {T75} {T76}. {T77} {T78} к {T79}. {T80} {T81}. {T82} {T83}. {T84}. {T85} {T86} {T87}. {T88} {T89}. {T90} {T91}. {T92} {T93}. {T94} {T95}. {T96} {T97}. {T98}. {T99}. {T100} {T101}. {T102} ({T103} {T104}) {T105}. {T106}. {T107} {T108}. {T109} дерево, ни на что не годное {T110}.\\n{T124}— {T111} {T112}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Epic / early-Classical\",\"differentia\":\"Второе значение — прилагательное/субстантив (=«всякий, каждый»), отличное от наречного значения 1〉; иллюстрируется примером «дерево, ни на что не годное» (Holz für Nichts gut). Подтверждено эпическими и классическими цитатами (MBH., R., HARIV., RAGH., RĀJA-TAR. и др.), а также схолиями.\"}]},{\"h\":\"{T113}\",\"grammar\":\"adj., adv.\",\"senses\":[{\"tag\":\"0\",\"german\":\"{T113}¦ {T114}\",\"russian\":\"{T113}¦ {T114}\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Заголовочная строка сокращённой редакции PW, без содержательного перевода.\"},{\"tag\":\"1\",\"german\":\"{T125}— 1〉 {%überall, stets, in allen Fällen, jederzeit%}. Verstärkt {T115} {T116} {T117} {T118} {T119}. Mit einer Negation {%in keinem Falle%}.\",\"russian\":\"{T125}— 1) везде, всегда, во всех случаях, в любое время. Усилено {T115} {T116} {T117} {T118} {T119}. С отрицанием — ни в коем случае.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Vedic\",\"differentia\":\"Та же наречная семантика, что и в PWG 1〉, здесь дополнена указанием на усилительную частицу/оборот.\"},{\"tag\":\"2\",\"german\":\"{T126}— 2〉 = {T120} mit einer Negation {%für Nichts%} {T121}\",\"russian\":\"{T126}— 2) = {T120} с отрицанием — напрасно, зря {T121}\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Epic / early-Classical\",\"differentia\":\"Соответствует PWG 2〉; в сокращённой редакции даётся лишь отрицательный оборот («напрасно, зря»).\"}]}]}]}",
+  "structured_output": {
+    "cards": [
+      {
+        "key1": "sarvatra",
+        "iast": "sarvatra",
+        "notes": "Статья образована двумя пластами источников: основная статья PWG (Böhtlingk-Roth, большой словарь) и её сокращённая переработка PW (Böhtlingk, краткое издание). Оба пласта даны как отдельные записи (records), каждая со своей внутренней нумерацией значений 1〉/2〉. Значение «0» в записи PWG — грамматическая заметка (adv., с отсылками к P. и VOP.), не содержательное значение, но включена для полноты. Строка {T124} — продолжение/примечание к значению 2 записи PWG (не отдельное занумерованное значение).",
+        "records": [
+          {
+            "h": "{T1}",
+            "grammar": "adj., adv.",
+            "senses": [
+              {
+                "tag": "0",
+                "german": "{T1}¦ (von {T2}) {T3} {T4}. {T5}.",
+                "russian": "{T1}¦ (от {T2}) {T3} {T4}. {T5}.",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "Грамматическая заметка (adv.) с отсылками к грамматистам P. и VOP., не содержательное значение слова."
+              },
+              {
+                "tag": "1",
+                "german": "{T122} 1〉 {%überall, stets, in allen Fällen, jederzeit%} {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}, {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52}. {T53}. {T54}. {T55}. {T56}. {T57} {T58}. {T59}. {T60}. {T61} {T62}. {T63} {T64}. {T65}. {T66}. {T67}. {T68} {T69}. {T70} {%in keinem Falle%} {T71}.",
+                "russian": "{T122} 1) везде, всегда, во всех случаях, в любое время {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14} {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}, {T36} {T37}. {T38}. {T39}. {T40}. {T41}. {T42}. {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52}. {T53}. {T54}. {T55}. {T56}. {T57} {T58}. {T59}. {T60}. {T61} {T62}. {T63} {T64}. {T65}. {T66}. {T67}. {T68} {T69}. {T70} ни в коем случае {T71}.",
+                "equivalence_type": "explanatory",
+                "source_type": "attested",
+                "stratum": "Vedic",
+                "differentia": "Обстоятельство места/времени/образа действия («везде, всегда, во всех случаях, в любое время»); при отрицании — «ни в коем случае». Значение подтверждено обширной серией цитат из ведийских шраута- и грихья-сутр (ŚAT.BR., ĀŚV.ŚR., KĀTY.ŚR., LĀṬY., KAUŚ. и др.), а также эпических и классических текстов."
+              },
+              {
+                "tag": "2",
+                "german": "{T123}— 2〉 = {T72} {T73} und {T74} {T75} {T76}. {T77} {T78} zu {T79}. {T80} {T81}. {T82} {T83}. {T84}. {T85} {T86} {T87}. {T88} {T89}. {T90} {T91}. {T92} {T93}. {T94} {T95}. {T96} {T97}. {T98}. {T99}. {T100} {T101}. {T102} ({T103} {T104}) {T105}. {T106}. {T107} {T108}. {T109} {%Holz für Nichts gut%} {T110}.\n{T124}— {T111} {T112}.",
+                "russian": "{T123}— 2) = {T72} {T73} и {T74} {T75} {T76}. {T77} {T78} к {T79}. {T80} {T81}. {T82} {T83}. {T84}. {T85} {T86} {T87}. {T88} {T89}. {T90} {T91}. {T92} {T93}. {T94} {T95}. {T96} {T97}. {T98}. {T99}. {T100} {T101}. {T102} ({T103} {T104}) {T105}. {T106}. {T107} {T108}. {T109} дерево, ни на что не годное {T110}.\n{T124}— {T111} {T112}.",
+                "equivalence_type": "explanatory",
+                "source_type": "attested",
+                "stratum": "Epic / early-Classical",
+                "differentia": "Второе значение — прилагательное/субстантив (=«всякий, каждый»), отличное от наречного значения 1〉; иллюстрируется примером «дерево, ни на что не годное» (Holz für Nichts gut). Подтверждено эпическими и классическими цитатами (MBH., R., HARIV., RAGH., RĀJA-TAR. и др.), а также схолиями."
+              }
+            ]
+          },
+          {
+            "h": "{T113}",
+            "grammar": "adj., adv.",
+            "senses": [
+              {
+                "tag": "0",
+                "german": "{T113}¦ {T114}",
+                "russian": "{T113}¦ {T114}",
+                "equivalence_type": "explanatory",
+                "source_type": "lexicographic",
+                "stratum": "",
+                "differentia": "Заголовочная строка сокращённой редакции PW, без содержательного перевода."
+              },
+              {
+                "tag": "1",
+                "german": "{T125}— 1〉 {%überall, stets, in allen Fällen, jederzeit%}. Verstärkt {T115} {T116} {T117} {T118} {T119}. Mit einer Negation {%in keinem Falle%}.",
+                "russian": "{T125}— 1) везде, всегда, во всех случаях, в любое время. Усилено {T115} {T116} {T117} {T118} {T119}. С отрицанием — ни в коем случае.",
+                "equivalence_type": "explanatory",
+                "source_type": "attested",
+                "stratum": "Vedic",
+                "differentia": "Та же наречная семантика, что и в PWG 1〉, здесь дополнена указанием на усилительную частицу/оборот."
+              },
+              {
+                "tag": "2",
+                "german": "{T126}— 2〉 = {T120} mit einer Negation {%für Nichts%} {T121}",
+                "russian": "{T126}— 2) = {T120} с отрицанием — напрасно, зря {T121}",
+                "equivalence_type": "explanatory",
+                "source_type": "attested",
+                "stratum": "Epic / early-Classical",
+                "differentia": "Соответствует PWG 2〉; в сокращённой редакции даётся лишь отрицательный оборот («напрасно, зря»)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ttft_ms": 73403,
+  "ttft_stream_ms": 4232,
+  "time_to_request_ms": 1382,
+  "type": "result",
+  "duration_ms": 122613,
+  "uuid": "0468a52a-d531-4da9-9162-5c0d7cab8a0c"
+}

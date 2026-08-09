@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-07-30T04:17:08Z",
+ "generated_at": "2026-08-03T21:39:34Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 167,
+  "total": 172,
   "by_importance": {
-   "3": 49,
+   "3": 54,
    "2": 93,
    "1": 25
   },
   "by_origin": {
    "auto": 0,
-   "human": 167
+   "human": 172
   }
  },
  "layers": [
@@ -101,15 +101,15 @@
    "key": "CONTRADICTIONS",
    "act": "≥2 sources disagree, no verdict",
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md",
-   "total": 9,
+   "total": 13,
    "by_importance": {
     "3": 2,
-    "2": 6,
-    "1": 0
+    "2": 8,
+    "1": 2
    },
    "by_origin": {
     "auto": 0,
-    "human": 9
+    "human": 13
    },
    "categories": 3,
    "interlinks": 6,
@@ -167,6 +167,30 @@
      "importance": 3,
      "origin": "human",
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#9-corpus-kāṇḍas-67-are-labelled-southern-leonov-but-their-text-is-the-baroda-critical-edition"
+    },
+    {
+     "title": "§10. Union headword total: 323,425 vs 323,426",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#10-union-headword-total-323425-vs-323426"
+    },
+    {
+     "title": "§11. kosha.db: manifest build vs live-build census disagree under one name",
+     "importance": 2,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#11-koshadb-manifest-build-vs-live-build-census-disagree-under-one-name"
+    },
+    {
+     "title": "§12. Petersburg-family naive sum: 285,799 vs 285,950",
+     "importance": 1,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#12-petersburg-family-naive-sum-285799-vs-285950"
+    },
+    {
+     "title": "§13. corpus_lexicon row count: 1,093,391 vs 1,091,528",
+     "importance": 1,
+     "origin": "human",
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#13-corpuslexicon-row-count-1093391-vs-1091528"
     }
    ]
   },
@@ -583,19 +607,19 @@
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md"
  },
  "totals": {
-  "rows": 182,
+  "rows": 186,
   "auto": 120,
-  "human": 62,
+  "human": 66,
   "by_importance": {
    "3": 25,
-   "2": 33,
-   "1": 8
+   "2": 35,
+   "1": 10
   },
   "layers": 7,
-  "entry_rows": 68,
+  "entry_rows": 72,
   "candidates": 6,
   "categories": 21,
   "interlinks": 60,
-  "findings": 167
+  "findings": 172
  }
 }

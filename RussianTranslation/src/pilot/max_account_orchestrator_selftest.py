@@ -22,6 +22,7 @@ from selftest_isolation import guard as _isolation_guard  # noqa: E402
 _isolation_guard()
 
 import max_account_orchestrator as m
+import headless_worker as hw          # H2299: the paid lane's own bare-cwd helper
 from execution_contract import config_dir_fingerprint
 
 
@@ -859,6 +860,42 @@ def main():
         m.run_tree_kill = _rtk2
     print('  D-P readiness prompt: completable task ({"ok": true}) + >=5 KB inert filler; plan mode kept; degenerate x-padding gone')
 
+    # H2299: the probe must spawn from the SAME bare cwd the PAID lane uses.
+    #
+    # `run_tree_kill(cwd=...)` defaults to None, and `_probe_call` supplied nothing — so the
+    # CLI inherited the gate's launch directory. Proof it really happened, not a code-reading:
+    # the 05-08-2026 sitting's warm-up (probe event 09:53:33Z) put the CLI session in the c4
+    # profile's project bucket `…-SanskritLexicography-RussianTranslation` at 09:53:51Z, i.e.
+    # the repo, not a bare dir. That injects CLAUDE.md + git context into every probe call:
+    # H2158 measured the same delta at -33 % cost / -30 % wall, and the c4 ledger shows the
+    # cost of it climbing (warm-up cache_creation 48 352 -> 93 462 tokens, 31-07 -> 05-08,
+    # with cache_read collapsing to 0) until the measured leg stopped fitting under the 300 s
+    # kill. Asserting EQUALITY WITH THE HELPER, never a literal path, is the point: a gate
+    # that prices a different call than the lane it gates cannot predict that lane.
+    _rtk3 = m.run_tree_kill
+    cap3 = {}
+
+    def _capture_cwd(*a, **k):
+        cap3['cwd'] = k.get('cwd')
+        return types.SimpleNamespace(
+            returncode=0, stderr='',
+            stdout='{"type":"result","subtype":"success","is_error":false,"structured_output":{"ok":true}}')
+
+    try:
+        m.run_tree_kill = _capture_cwd
+        m._probe_call('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                      call_reservation=MemoryCallLedger())
+        assert cap3['cwd'] is not None, (
+            'probe spawned with cwd=None -- it inherits the launch directory and pays the '
+            'project-context injection H2158 removed from the paid lane (H2299)')
+        assert cap3['cwd'] == hw.bare_cli_cwd(), (
+            'probe cwd %r != paid-lane bare_cli_cwd() %r -- the gate is pricing a different '
+            'call than the lane it gates (H2299)' % (cap3['cwd'], hw.bare_cli_cwd()))
+    finally:
+        m.run_tree_kill = _rtk3
+    print('  H2299 probe spawn cwd: == headless_worker.bare_cli_cwd() (%s), not the repo'
+          % cap3['cwd'])
+
     # D-K census: probe events distinguishable from translation calls; warm-up excluded from
     # latency, but a rate-limit warm-up is STILL counted in total quota observations.
     with tempfile.TemporaryDirectory() as td:
@@ -878,15 +915,39 @@ def main():
     # D-K integration: a hanging probe call kills its parent->child->grandchild tree (via the shared
     # run_tree_kill) and returns 'timeout' -- so live_probe stops and the measured/generation phase
     # never starts. Proves the probe path inherits the D-J tree-kill (not just subprocess.run).
+    # Timing discipline (07-08-2026): this case builds a REAL 3-deep process tree, and every level
+    # pays a Python interpreter start. Against the old fixed 5 s deadline a COLD run (fresh
+    # worktree, cold FS cache) could kill the child BEFORE it had spawned the grandchild, so
+    # `.pid3` never appeared and the run died on `probe tree never reached depth 3` — measured
+    # 1 fail in 5 consecutive runs, always the first. That message names a PRECONDITION miss (the
+    # fixture was too slow to build), but it reads to the next session as a tree-kill REGRESSION,
+    # which is the expensive part: the natural response to a suite that fails once per cold start
+    # is to stop trusting it. Two changes, neither touching what is asserted:
+    #
+    #   1. the interpreter-start cost is paid BEFORE any deadline is running;
+    #   2. a depth-3 miss ESCALATES the deadline instead of failing — only a tree that provably
+    #      reached depth 3 is judged, and exhausting every deadline reports itself as a machine
+    #      failure in those words, never as a kill regression.
+    #
+    # The grandchild's hang is now DERIVED from the deadline rather than a second hardcoded number.
+    # That is not cosmetic: at the old fixed 12 s a survivor would have written `.done3` at t≈12
+    # while the observation window closed between t≈10 and t≈16, so the survival assertion was
+    # marginally vacuous. `deadline + 2` puts a survivor's write firmly inside the window, and it
+    # also bounds any orphan a mid-spawn kill leaves behind (which used to linger the full 12 s).
     import time as _time
-    with tempfile.TemporaryDirectory() as td:
-        mk = os.path.join(td, 'm')
+    subprocess.run([sys.executable, '-c', 'pass'], capture_output=True)   # warm the interpreter
+
+    def _hanging_tree_scripts(hang_s):
+        """parent -> child -> grandchild; each records its PID, the leaf sleeps `hang_s` then
+        marks `.done3`. Parent/child outlive any deadline so they are always killed, never exiting."""
         grand = ('import time,sys,os;open(sys.argv[1]+".pid3","w").write(str(os.getpid()));'
-                 'time.sleep(12);open(sys.argv[1]+".done3","w").write("1")')
+                 'time.sleep(%d);open(sys.argv[1]+".done3","w").write("1")') % hang_s
         child = ('import subprocess,sys,os,time;open(sys.argv[1]+".pid2","w").write(str(os.getpid()));'
-                 'subprocess.Popen([sys.executable,"-c",%r,sys.argv[1]]);time.sleep(30)') % grand
-        parent = ('import subprocess,sys,os,time;open(sys.argv[1]+".pid1","w").write(str(os.getpid()));'
-                  'subprocess.Popen([sys.executable,"-c",%r,sys.argv[1]]);time.sleep(30)') % child
+                 'subprocess.Popen([sys.executable,"-c",%r,sys.argv[1]]);time.sleep(%d)') % (grand, hang_s * 6)
+        return ('import subprocess,sys,os,time;open(sys.argv[1]+".pid1","w").write(str(os.getpid()));'
+                'subprocess.Popen([sys.executable,"-c",%r,sys.argv[1]]);time.sleep(%d)') % (child, hang_s * 6)
+
+    with tempfile.TemporaryDirectory() as td:
 
         def _alive(pid):
             if os.name == 'nt':
@@ -899,17 +960,35 @@ def main():
             except OSError:
                 return False
 
-        try:
-            m.run_tree_kill([sys.executable, '-c', parent, mk], timeout=5, capture_output=True)
-            assert False, 'expected the hanging probe tree to TimeoutExpired'
-        except subprocess.TimeoutExpired:
-            pass
-        for _ in range(60):
-            if all(os.path.exists('%s.pid%d' % (mk, i)) for i in (1, 2, 3)):
+        def _reached_depth3(prefix):
+            return all(os.path.exists('%s.pid%d' % (prefix, i)) for i in (1, 2, 3))
+
+        DEADLINES_S = (5, 12, 30)          # escalate only on a fixture-too-slow miss, never on a verdict
+        mk = None
+        for attempt, deadline in enumerate(DEADLINES_S, start=1):
+            mk = os.path.join(td, 'm%d' % attempt)
+            parent = _hanging_tree_scripts(deadline + 2)
+            try:
+                m.run_tree_kill([sys.executable, '-c', parent, mk],
+                                timeout=deadline, capture_output=True)
+                assert False, 'expected the hanging probe tree to TimeoutExpired'
+            except subprocess.TimeoutExpired:
+                pass
+            for _ in range(60):
+                if _reached_depth3(mk):
+                    break
+                _time.sleep(0.1)
+            _time.sleep(5)                 # > (hang - deadline): a SURVIVING leaf would mark .done3 here
+            if _reached_depth3(mk):
+                if attempt > 1:
+                    print('    (note: depth 3 needed a %d s deadline — slow machine, not a kill defect)'
+                          % deadline)
                 break
-            _time.sleep(0.1)
-        _time.sleep(5)
-        assert all(os.path.exists('%s.pid%d' % (mk, i)) for i in (1, 2, 3)), 'probe tree never reached depth 3'
+        else:
+            raise AssertionError(
+                'the probe tree never reached depth 3 even at a %d s deadline — this is a '
+                'machine/timing failure building the fixture, NOT a tree-kill regression'
+                % DEADLINES_S[-1])
         assert not any(os.path.exists('%s.done%d' % (mk, i)) for i in (1, 2, 3)), 'a probe-tree level survived'
         pids = [int(open('%s.pid%d' % (mk, i)).read()) for i in (1, 2, 3)]
         assert not any(_alive(p) for p in pids), 'a hanging-probe tree PID survived: %s' % [p for p in pids if _alive(p)]
@@ -1596,6 +1675,7 @@ def main():
     print('  record-done: hash+run forwarded; substitution refused; batch partial prefix exact')
 
     _test_h2079_945_probe_emits_api_time()
+    _test_h2326_1172_probe_raw_envelope_capture()
     print('max_account_orchestrator_selftest: PASS')
 
 
@@ -1687,6 +1767,144 @@ def _test_h2079_945_probe_emits_api_time():
         m.run_tree_kill = _rtk
         m._probe_call = _pc
     print('  H2079 #945: probe emits duration_api_ms + api_gap_ms; ceiling still gates elapsed_ms')
+
+
+def _test_h2326_1172_probe_raw_envelope_capture():
+    """H2326 / #1172: a NON-SUCCESS probe classification leaves the provider's own text on disk.
+
+    On 06-08-2026 a c4 gate-0 warm-up returned 830 bytes in 18 574 ms classified `rate_limit`, and
+    the 830 bytes were thrown away — so nobody could tell an account weekly cap from a per-model
+    capacity refusal, or read the reset time that decides whether the next sitting is worth an
+    attempt. The classification was CORRECT (H2263); the evidence behind it was unrecoverable, on a
+    gate that is no-reroll and rationed to two attempts a UTC day.
+
+    Pinned here: both non-success exits write, `err_pattern` says WHICH alternative fired, the
+    file lands beside the event row, the row carries the pointer — and the `success` lane still
+    writes nothing at all.
+    """
+    import max_account_orchestrator as m
+    import run_observability as obs
+
+    assert {'err_pattern', 'raw_envelope_path'} <= obs.ALLOWED, (
+        'append_event refuses the H2326 diagnostic fields; the probe row cannot carry them')
+
+    _rtk, _pc, _raw_dir = m.run_tree_kill, m._probe_call, m.PROBE_RAW_DIR
+    with tempfile.TemporaryDirectory() as td:
+        m.PROBE_RAW_DIR = os.path.join(td, 'output')
+
+        def _raw(run_id):
+            return os.path.join(m.PROBE_RAW_DIR, 'h963_c4_gate0_probe_raw_%s.txt' % run_id)
+
+        def _envelope(stdout, rc=0, stderr=''):
+            m.run_tree_kill = lambda *a, **k: types.SimpleNamespace(
+                returncode=rc, stdout=stdout, stderr=stderr)
+
+        def _call(run_id, purpose='probe'):
+            detail = {}
+            _lat, cls, _ob = m._probe_call(
+                'cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                reservation_purpose=purpose, call_reservation=MemoryCallLedger(),
+                run_id=run_id, detail_out=detail)
+            return cls, detail
+
+        try:
+            # (1) The 06-08 shape itself: an rc-0 error envelope carrying an account usage limit
+            # AND its reset time. Pre-fix this returned 'rate_limit' and nothing else survived.
+            _envelope('{"type":"result","subtype":"error","is_error":true,"result":'
+                      '"Claude usage limit reached. Your limit will reset at 2026-08-07T01:02:53Z."}')
+            cls, detail = _call('h2326')
+            assert cls == 'rate_limit', cls
+            assert detail['err_pattern'] == 'usage limit', detail
+            assert detail['raw_envelope_path'] == os.path.basename(_raw('h2326')), detail
+            body = open(_raw('h2326'), encoding='utf-8').read()
+            assert '2026-08-07T01:02:53Z' in body, body      # the reset time SURVIVES — the point
+            assert 'classification=rate_limit' in body and 'matched=usage limit' in body, body
+
+            # (2) The distinction the class alone erased: a per-model 429 is the SAME verdict and a
+            # DIFFERENT decision. `err_pattern` now separates them without reading the file.
+            _envelope('', rc=1, stderr='429 Too Many Requests (model capacity)')
+            cls, detail = _call('h2326-429')
+            assert cls == 'rate_limit' and detail['err_pattern'] == '429', (cls, detail)
+            assert '429 Too Many Requests' in open(_raw('h2326-429'), encoding='utf-8').read()
+
+            # (3) The killed-child exit writes too — a rate-limited CLI hangs rather than
+            # answering 429 (FINDINGS §270), which is exactly when the text is worth most.
+            def _timeout(*_a, **_k):
+                raise subprocess.TimeoutExpired(
+                    'claude', 300, output='rate limit exceeded, retrying',
+                    stderr='killed after 300 s')
+            m.run_tree_kill = _timeout
+            cls, detail = _call('h2326-kill')
+            assert cls == 'rate_limit' and detail['err_pattern'] == 'rate limit', (cls, detail)
+            assert 'killed after 300 s' in open(_raw('h2326-kill'), encoding='utf-8').read()
+
+            # (4) A classification with no account-level text still parks the envelope — 'process'
+            # and 'malformed' are the hardest to diagnose from a bare class.
+            _envelope('<html>503 upstream</html>')
+            cls, detail = _call('h2326-bad')
+            assert cls == 'malformed' and 'err_pattern' not in detail, (cls, detail)
+            assert '503 upstream' in open(_raw('h2326-bad'), encoding='utf-8').read()
+
+            # (5) BOUNDED: only the tail is kept, and the header says it was cut.
+            _envelope('{"type":"result","subtype":"error","is_error":true,"result":"'
+                      + 'A' * (m.PROBE_RAW_TAIL_BYTES + 5000) + 'TAILMARKER 429"}')
+            _call('h2326-big')
+            big = open(_raw('h2326-big'), encoding='utf-8').read()
+            assert 'TAILMARKER' in big and 'TRUNCATED' in big, big[:200]
+            assert len(big.encode('utf-8')) < m.PROBE_RAW_TAIL_BYTES + 600, len(big)
+
+            # (6) THE HEALTHY LANE IS UNTOUCHED: a success writes no file and adds no row fields.
+            _envelope('{"type":"result","subtype":"success","is_error":false,'
+                      '"structured_output":{"ok":true}}')
+            cls, detail = _call('h2326-ok')
+            assert cls == 'success' and detail == {}, (cls, detail)
+            assert not os.path.exists(_raw('h2326-ok')), 'success wrote a raw-envelope file'
+
+            # (7) Two calls of one run APPEND — live_probe makes two per account, and the last
+            # failure must not erase the first.
+            _envelope('', rc=1, stderr='429 first')
+            _call('h2326-pair', purpose='probe:warmup')
+            _envelope('', rc=1, stderr='429 second')
+            _call('h2326-pair', purpose='probe:measured')
+            pair = open(_raw('h2326-pair'), encoding='utf-8').read()
+            assert '429 first' in pair and '429 second' in pair, pair
+            assert 'purpose=probe:warmup' in pair and 'purpose=probe:measured' in pair, pair
+
+            # (8) End to end through live_probe's emission: the warm-up STOP row carries both
+            # fields, so the event log alone points at the evidence.
+            ev = os.path.join(td, 'e.jsonl')
+            _envelope('{"type":"result","subtype":"error","is_error":true,'
+                      '"result":"Claude usage limit reached"}')
+            try:
+                m.live_probe('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                             latency_ceiling_ms=65000, events_path=ev, run_id='h2326-live',
+                             account='c4', call_reservation=MemoryCallLedger())
+                raise AssertionError('a rate-limited warm-up did not STOP')
+            except SystemExit as exc:
+                assert 'rate_limit' in str(exc), exc
+            rows = [json.loads(line) for line in open(ev, encoding='utf-8') if line.strip()]
+            warm = [r for r in rows if r.get('purpose') == 'warmup']
+            assert len(warm) == 1, rows
+            assert warm[0]['classification'] == 'rate_limit', warm
+            assert warm[0]['err_pattern'] == 'usage limit', warm
+            assert warm[0]['raw_envelope_path'] == os.path.basename(_raw('h2326-live')), warm
+            assert 'Claude usage limit reached' in open(_raw('h2326-live'), encoding='utf-8').read()
+
+            # a healthy live_probe leaves neither key on the row (append_event drops None)
+            ev2 = os.path.join(td, 'e2.jsonl')
+            _envelope('{"type":"result","subtype":"success","is_error":false,'
+                      '"structured_output":{"ok":true}}')
+            m.live_probe('cfg', sys.executable, 6491, m.EXACT_GEN_MODEL,
+                         latency_ceiling_ms=65000, events_path=ev2, run_id='h2326-live-ok',
+                         account='c4', call_reservation=MemoryCallLedger())
+            ok_rows = [json.loads(line) for line in open(ev2, encoding='utf-8') if line.strip()]
+            assert ok_rows and all(
+                'err_pattern' not in r and 'raw_envelope_path' not in r for r in ok_rows), ok_rows
+            assert not os.path.exists(_raw('h2326-live-ok')), 'healthy live_probe wrote a raw file'
+        finally:
+            m.run_tree_kill, m._probe_call, m.PROBE_RAW_DIR = _rtk, _pc, _raw_dir
+    print('  H2326 #1172: non-success probe parks the raw envelope + matched pattern; '
+          'success lane writes nothing')
 
 
 if __name__ == '__main__':
