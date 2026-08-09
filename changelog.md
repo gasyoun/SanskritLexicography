@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Fixed
+- **router.cheap exact-model provenance now fails closed (Codex Sol `gpt-5.6-sol`, 09-08-2026).** The gateway adapter recorded a returned-model mismatch but still emitted `schema_compliant=true` and a result hash. A substituted model now produces `failure_class=provenance`, no result and no result hash; the H2504 post-incident audit also specifies the still-missing durable two-phase Agent-call bridge and records M.G.'s scoped permission to continue with truthful `cost_evaluable=false` evidence.
+
 ## [1.144.25] - 2026-08-09
 ### Changed
 - **H2439 — DeepSeek V4 Flash 0731 retarget on PWG arm B:** `deepseek_arm` default model `deepseek-v4-flash` + PRICE 0.14/0.0028/0.28; prep-pack sidecar tool; E1 sample under `RussianTranslation/experiments/E1_deepseek_vs_c4/` (Grok 4.5 `grok-4.5`, 08-08-2026). Org map in Uprava.

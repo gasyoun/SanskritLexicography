@@ -114,7 +114,9 @@ def t1_provenance_cannot_be_substituted():
         else:
             raise AssertionError('gateway call built without a reservation ledger')
 
-        # A returned model that disagrees with the request is recorded, not hidden.
+        # A returned model that disagrees with the request is recorded AND refused.
+        # Merely publishing model_matches_request=false is not enforcement: without
+        # this guard a substituted model could still produce schema_compliant=true.
         call, _ = call_at(tmp, lambda req: transcript(
             [text_block('{"ok":true}')], model='claude-sonnet-5', usage=FULL_USAGE))
         env = call.invoke({}, 'selftest:model-drift', schema=TINY_SCHEMA)
@@ -122,6 +124,9 @@ def t1_provenance_cannot_be_substituted():
         assert env['requested_model'] == 'claude-opus-5', env
         assert env['model_matches_request'] is False, env
         assert env['route'] == gw.GATEWAY_ROUTE != HEADLESS_ROUTE, env
+        assert env['schema_compliant'] is False, env
+        assert env['failure_class'] == 'provenance', env
+        assert env['result'] is None and env['result_sha256'] is None, env
 
 
 # ---------------------------------------------------------------- property 2

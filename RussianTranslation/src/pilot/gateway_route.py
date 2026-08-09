@@ -311,6 +311,11 @@ class GatewayCall:
             return {'schema_compliant': False, 'cards_returned': 0, 'result': None,
                     'classification': 'provenance',
                     'error': 'gateway transcript carries no model identifier'}
+        if transcript.get('model') != self.model:
+            return {'schema_compliant': False, 'cards_returned': 0, 'result': None,
+                    'classification': 'provenance',
+                    'error': 'gateway returned model %r, expected exact model %r'
+                             % (transcript.get('model'), self.model)}
         if self.timeout_ms and wall_ms > self.timeout_ms:
             return {'schema_compliant': False, 'cards_returned': 0, 'result': None,
                     'classification': 'timeout',
