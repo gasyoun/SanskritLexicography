@@ -88,10 +88,23 @@ COARSE_MAP = {
     'agreement': 'agreement',
     'lexical_variant': 'divergence',
     'semantic_shift': 'divergence',
-    'added_by_one': 'divergence',
+    # H2192: `added_by_one` and `omitted_by_one` are converse readings of ONE undirected
+    # event -- material present on one side and absent on the other -- so they MUST share a
+    # coarse class. Before H2192 this map sent them to 'divergence' and 'omission'
+    # respectively, which made the K3 projection move under a semantically vacuous choice
+    # between two names for the same fact. The defect was latent rather than damaging:
+    # `added_by_one` had fired 0/12,000 times, so every published coarse kappa (H1901:
+    # 0.235 / 0.350 / 0.216) is bit-identical under both maps -- re-verified by
+    # `rv_added_by_one_diagnosis.py coarse-kappa`.
+    'added_by_one': 'omission',
     'omitted_by_one': 'omission',
 }
 COARSE_CLASSES = ['agreement', 'divergence', 'omission']
+
+# The two classes that name one undirected event from opposite ends. Neither is decidable
+# without saying WHICH side holds the surplus material, so both carry a mandatory
+# `surplus_side` (H2192).
+ASYMMETRIC_CLASSES = ('added_by_one', 'omitted_by_one')
 
 PROVIDERS = {
     'deepseek': {'base': 'https://api.deepseek.com/v1', 'key_env': 'DEEPSEEK_API_KEY'},
@@ -109,7 +122,14 @@ quality; you are classifying the relationship between two renderings.
 Return ONE JSON object and nothing else -- no prose, no markdown fence.
 
 Shape:
-{"pairs": {"<translator_a>|<translator_b>": {"class": "<one of the five>", "why": "<=15 words"}}}
+{"pairs": {"<translator_a>|<translator_b>": {"class": "<one of the five>", "why": "<=15 words",
+                                             "surplus_side": "<translator id, or null>"}}}
+
+`surplus_side` is REQUIRED whenever the class is "added_by_one" or "omitted_by_one", and must
+be one of the two translator ids in that pair key. For every other class it is null. Those two
+classes describe the SAME configuration -- one rendering carries material the other lacks --
+read from opposite ends, so a class name alone does not say which translator holds the surplus.
+Without the side the label is undecidable; with it the two names are distinguishable.
 
 The five classes (choose exactly one per pair):
 
@@ -121,10 +141,19 @@ The five classes (choose exactly one per pair):
 - "semantic_shift": a real interpretive difference. The two readings are NOT interchangeable:
   a different grammatical construal, a different referent, a different sense of an ambiguous
   word. This is the class that marks a genuine scholarly disagreement.
-- "omitted_by_one": one rendering leaves untranslated material the other renders -- an epithet,
-  a clause, a proper name silently dropped.
-- "added_by_one": one rendering supplies material with no counterpart in the other -- an
-  explanatory gloss, a supplied subject, a bracketed expansion treated as text.
+The last two are DIRECTIONAL and are judged from the FIRST translator named in the pair key
+("<translator_a>"). The direction is what separates them; do not choose between them by feel.
+
+- "omitted_by_one": translator_a leaves untranslated material that translator_b renders -- an
+  epithet, a clause, a proper name silently dropped. `surplus_side` is translator_b, the one
+  who HAS the material.
+- "added_by_one": translator_a supplies material with no counterpart in translator_b -- an
+  explanatory gloss, a supplied subject, a parenthesised or bracketed expansion treated as
+  text. `surplus_side` is translator_a.
+
+So: surplus on the SECOND-named translator is "omitted_by_one"; surplus on the FIRST-named
+translator is "added_by_one". Both occur often. If you find yourself never using one of them,
+you are reading the direction off your own preference rather than off the two texts.
 
 Rules that override any instinct to be helpful:
 - Judge the RENDERINGS as given. Do not consult your own knowledge of the Sanskrit to decide
@@ -133,8 +162,11 @@ Rules that override any instinct to be helpful:
   word order and idiom are not "semantic_shift".
 - Prefer "agreement" when the difference is only diction; prefer "semantic_shift" only when a
   scholar reading both would say they disagree about what the stanza means.
-- If both renderings are present, never answer "omitted_by_one" for the whole stanza; use it
-  for a dropped element within an otherwise-parallel rendering.
+- If both renderings are present, never answer "omitted_by_one" or "added_by_one" for the whole
+  stanza; use them for a dropped or supplied element within an otherwise-parallel rendering.
+- Supplied material is often, though not always, marked: Elizarenkova and Geldner parenthesise
+  words they add, Jamison-Brereton use both parentheses and brackets, Griffith's Victorian
+  padding carries no delimiter at all. A marker is evidence, its absence is not counter-evidence.
 - Emit a key for EVERY pair listed in the user message, and no others.'''
 
 
@@ -192,6 +224,10 @@ def deterministic_pairs(stanza):
                 'why': 'stanza %s in %s' % (
                     sa if missing_a else sb, a if missing_a else b),
                 'missing_side': a if missing_a else b,
+                # H2192: the same direction the model arm now has to supply. Here it is a
+                # fact about the source, not a judgment: the side that still has the stanza
+                # is the side holding the surplus material.
+                'surplus_side': b if missing_a else a,
             }
     return out
 
@@ -217,6 +253,26 @@ def build_user_message(stanza, wanted_pairs):
 def normalise_class(value):
     v = (value or '').strip().lower().replace('-', '_').replace(' ', '_')
     return v if v in FIVE_CLASSES else None
+
+
+def normalise_side(value, pair_key):
+    """The `surplus_side` a model returned, resolved against the pair it belongs to.
+
+    Returns (side_or_None, note). Accepts the full translator id or a bare surname, since a
+    model asked for `griffith_en_1896` will sometimes answer `Griffith`. Anything that does
+    not resolve to one of THIS pair's two translators is rejected rather than coerced --
+    same posture the class enum already takes with out-of-enum values (H1901's `class: null`).
+    """
+    a, b = pair_key.split('|')
+    raw = (value or '').strip().lower()
+    if not raw:
+        return None, 'missing'
+    if raw in (a, b):
+        return raw, None
+    hits = [t for t in (a, b) if t.split('_')[0] == raw]
+    if len(hits) == 1:
+        return hits[0], None
+    return None, 'unresolved: %r' % value
 
 
 def type_one_stanza(client, stanza):
@@ -249,8 +305,18 @@ def type_one_stanza(client, stanza):
             rec['pairs'][pk] = {'class': None, 'method': 'model',
                                 'why': 'unclassified: %r' % entry.get('class')}
         else:
-            rec['pairs'][pk] = {'class': cls, 'method': 'model',
-                                'why': (entry.get('why') or '')[:160]}
+            row = {'class': cls, 'method': 'model', 'why': (entry.get('why') or '')[:160]}
+            if cls in ASYMMETRIC_CLASSES:
+                # H2192: an asymmetric label without a side is not a weaker label, it is an
+                # undecidable one -- `added_by_one` and `omitted_by_one` name one event from
+                # opposite ends. Record the gap on the row instead of accepting a coin flip.
+                side, note = normalise_side(entry.get('surplus_side'), pk)
+                row['surplus_side'] = side
+                if note:
+                    row['surplus_side_note'] = note
+            else:
+                row['surplus_side'] = None
+            rec['pairs'][pk] = row
     return rec, call
 
 
@@ -467,6 +533,29 @@ def selftest():
                for v in det.values()), det
     assert all('geldner' in k for k in det), det
     assert 'grassmann_de_1876|elizarenkova_ru_1989' not in det
+
+    # H2192 -- the direction the asymmetric classes cannot do without.
+    for pk, row in det.items():
+        a, b = pk.split('|')
+        assert row['missing_side'] == 'geldner_de_1951', row
+        assert row['surplus_side'] in (a, b) and row['surplus_side'] != row['missing_side'], row
+    # Converse classes are ONE undirected event, so they share a coarse class. A coarse
+    # projection that splits them moves under a semantically vacuous relabelling.
+    assert COARSE_MAP['added_by_one'] == COARSE_MAP['omitted_by_one'] == 'omission'
+    assert set(ASYMMETRIC_CLASSES) <= set(FIVE_CLASSES)
+    assert all(COARSE_MAP[c] in COARSE_CLASSES for c in FIVE_CLASSES)
+
+    # The prompt has to be directional, or the model has no way to tell the two apart and
+    # falls back on one of them forever (0/12,000 in the H1844 pilot).
+    assert 'surplus_side' in SYSTEM
+    assert 'FIRST translator named in the pair key' in SYSTEM
+
+    pk = 'grassmann_de_1876|griffith_en_1896'
+    assert normalise_side('griffith_en_1896', pk) == ('griffith_en_1896', None)
+    assert normalise_side('Griffith', pk) == ('griffith_en_1896', None)      # surname form
+    assert normalise_side(None, pk) == (None, 'missing')
+    assert normalise_side('geldner_de_1951', pk)[0] is None                  # not in THIS pair
+    assert normalise_side('both', pk)[0] is None
 
     full = {'status': 'present', 'text': 'x'}
     allpresent = {'location': '1.1.1', 'mandala': 1, 'hymn': 1, 'stanza': 1,

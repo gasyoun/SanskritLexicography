@@ -26,6 +26,10 @@ if (!PAYLOAD || PAYLOAD.schema !== 'h1209.controller_worker_slice.v3') {
 const PROMPT_COMMON = PAYLOAD.prompt_common
 const CARDS = PAYLOAD.cards
 const WORKER_SCHEMA = PAYLOAD.worker_schema
+// H2226 OPT-4: target field + controller prompt from payload (manifest via prep_slice).
+// Default russian keeps pre-parameterized RU payloads behaviourally identical.
+const TARGET_FIELD = PAYLOAD.field || 'russian'
+const CONTROLLER_PROMPT = PAYLOAD.controller_prompt || null
 
 const VERDICT_SCHEMA = {
   type: 'object', additionalProperties: false, required: ['ok', 'issues'],
@@ -50,11 +54,22 @@ function fidelityTokens(card) {
   return toks
 }
 // Same multiset over the TRANSLATION field — the mask-level analogue of accept()'s
-// H1152 guard 2 (a span dropped from russian alone must not hide behind a clean echo).
+// H1152 guard 2 (a span dropped from the target field alone must not hide behind a clean echo).
 function translationTokens(card) {
   const toks = []
-  for (const r of (card.records || [])) for (const s of (r.senses || [])) toks.push(...tokenSet(s.russian))
+  for (const r of (card.records || [])) for (const s of (r.senses || [])) toks.push(...tokenSet(s[TARGET_FIELD]))
   return toks
+}
+
+// Default controller prefix when the payload omits controller_prompt (pre-H2226 RU args).
+function defaultControllerPrompt(key1) {
+  const lang = TARGET_FIELD === 'english' ? 'English' : 'Russian'
+  const pair = TARGET_FIELD === 'english' ? 'German->English' : 'German->Russian'
+  return 'You are the QUALITY CONTROLLER for a PWG ' + pair + ' scholarly dictionary translation. '
+    + 'For headword ' + key1 + ', check each sense: (a) the ' + lang + ' faithfully renders the German gloss '
+    + '(no invented, dropped, or merged meaning), (b) every {Tn} placeholder present in the German is a real '
+    + 'masked span (not invented), (c) scholarly-philological register. Set ok=false with specific, actionable '
+    + 'issues ONLY for genuine fidelity defects; do NOT nitpick style or wording preference. Senses JSON:\n'
 }
 function outputSenseCount(card) {
   let n = 0; for (const r of (card.records || [])) n += (r.senses || []).length; return n
@@ -72,10 +87,10 @@ function multisetDiff(want, got) {
 // displace source spans into card.notes (NOT a restored field -> content silently lost;
 // 2/3 canonical fidelity-rejects). v2 gates, all HARD (they trigger the free retry):
 //   1. german+grammar {Tn} multiset == skeleton   (canonical TNMASK, armed)
-//   2. russian {Tn} multiset == skeleton          (mask-level H1152 guard 2)
+//   2. target-field {Tn} multiset == skeleton     (mask-level H1152 guard 2; field from payload)
 //   3. sense SHORTFALL only: emitted < source_senses (canonical SAN-LOSS direction —
 //      over-emission is NEVER an issue; a faithful split may yield MORE senses)
-//   4. empty russian
+//   4. empty target field
 // coverage stays reported for telemetry continuity with the v1 run.
 function deterministicAudit(card, c) {
   const issues = []
@@ -85,22 +100,22 @@ function deterministicAudit(card, c) {
   const inventedFid = multisetDiff(gotFid, want)
   if (missingFid.length) issues.push(
     'fidelity: masked spans missing from senses\' german: ' + missingFid.slice(0, 20).join(',')
-    + ' — EVERY {Tn} from the source must appear in a sense\'s german AND russian, in source order;'
+    + ' — EVERY {Tn} from the source must appear in a sense\'s german AND ' + TARGET_FIELD + ', in source order;'
     + ' card.notes must NOT hold source {Tn} spans (notes is never unmasked, so content parked there is LOST)')
   if (inventedFid.length) issues.push('invented-placeholders in german: ' + inventedFid.slice(0, 10).join(','))
   const gotTr = translationTokens(card)
   const missingTr = multisetDiff(want, gotTr)
   const inventedTr = multisetDiff(gotTr, want)
   if (missingTr.length) issues.push(
-    'translation-fidelity: masked spans missing from senses\' russian: ' + missingTr.slice(0, 20).join(',')
-    + ' — the russian text must carry the same {Tn} spans as the german (citations/Sanskrit are language-independent)')
-  if (inventedTr.length) issues.push('invented-placeholders in russian: ' + inventedTr.slice(0, 10).join(','))
+    'translation-fidelity: masked spans missing from senses\' ' + TARGET_FIELD + ': ' + missingTr.slice(0, 20).join(',')
+    + ' — the ' + TARGET_FIELD + ' text must carry the same {Tn} spans as the german (citations/Sanskrit are language-independent)')
+  if (inventedTr.length) issues.push('invented-placeholders in ' + TARGET_FIELD + ': ' + inventedTr.slice(0, 10).join(','))
   const osc = outputSenseCount(card)
   if (c.source_senses > 1 && osc < c.source_senses)
     issues.push('sense-shortfall: output ' + osc + ' senses < source\'s ' + c.source_senses
       + ' declared top-level senses — a sense was dropped (emitting MORE than ' + c.source_senses + ' is fine)')
   for (const r of (card.records || [])) for (const s of (r.senses || []))
-    if (!s.russian || !String(s.russian).trim()) issues.push('empty-russian: sense ' + (s.tag || '?'))
+    if (!s[TARGET_FIELD] || !String(s[TARGET_FIELD]).trim()) issues.push('empty-' + TARGET_FIELD + ': sense ' + (s.tag || '?'))
   const gotSet = new Set(gotFid)
   const covered = want.filter(t => gotSet.has(t)).length
   const coverage = want.length ? +(covered / want.length).toFixed(2) : 1
@@ -130,13 +145,15 @@ async function runWorker(c, feedback) {
 }
 
 async function controllerReview(c, card) {
-  const senses = (card.records || []).flatMap(r => (r.senses || []).map(s => ({ tag: s.tag, german: s.german, russian: s.russian })))
-  const prompt = 'You are the QUALITY CONTROLLER for a PWG German->Russian scholarly dictionary translation. '
-    + 'For headword ' + c.key1 + ', check each sense: (a) the Russian faithfully renders the German gloss '
-    + '(no invented, dropped, or merged meaning), (b) every {Tn} placeholder present in the German is a real '
-    + 'masked span (not invented), (c) scholarly-philological register. Set ok=false with specific, actionable '
-    + 'issues ONLY for genuine fidelity defects; do NOT nitpick style or wording preference. Senses JSON:\n'
-    + JSON.stringify(senses)
+  const senses = (card.records || []).flatMap(r => (r.senses || []).map(s => {
+    const row = { tag: s.tag, german: s.german }
+    row[TARGET_FIELD] = s[TARGET_FIELD]
+    return row
+  }))
+  const prefix = CONTROLLER_PROMPT
+    ? String(CONTROLLER_PROMPT).replace(/\{key1\}/g, c.key1)
+    : defaultControllerPrompt(c.key1)
+  const prompt = prefix + JSON.stringify(senses)
   return await withDeadline(
     agent(prompt, { label: 'control:' + c.key1, phase: 'Control', model: 'opus', schema: VERDICT_SCHEMA }),
     AGENT_DEADLINE_MS)

@@ -1,0 +1,96 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "AmarSa",
+ "produced_at": 1786200687,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "fill",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  }
+ },
+ "sense_inventory": [
+  {
+   "i": 0,
+   "de_anchor": "{#AmarSa#}¦ <lex>m.</lex> {%Berührung, Anklang%}: {#hOtrAmarSa#}\n<ls>ĀŚV. ŚR. 8,13,32.</ls>",
+   "sense_tag": "1",
+   "layer": "pwg",
+   "subcard": "_amar_sa",
+   "note": "store_row"
+  },
+  {
+   "i": 1,
+   "de_anchor": "{#AmarSa#}¦ <lex>m.</lex> {%Berührung, Anklang%}.",
+   "sense_tag": "PW",
+   "layer": "pwg",
+   "subcard": "_amar_sa",
+   "note": "store_row"
+  },
+  {
+   "i": 2,
+   "de_anchor": "{#āmarśa#} [Gen, unsp] Subst m contact. nearness, similarity. ĀśvŚS ii, 2, 13, 32 [NWS: MW : 147]",
+   "sense_tag": "NWS-1",
+   "layer": "pwg",
+   "subcard": "_amar_sa",
+   "note": "store_row"
+  },
+  {
+   "i": 3,
+   "de_anchor": "[Jin, unsp] (2. H. 12. Jh., Gujarat) Subst m consideration. TriṣaŚaPuC 1. 2. 150 [NWS: TŚPC 1 : 459]",
+   "sense_tag": "NWS-2",
+   "layer": "pwg",
+   "subcard": "_amar_sa",
+   "note": "store_row"
+  }
+ ],
+ "tm_fuzzy_hits": [
+  {
+   "rank": 1,
+   "key1": "AmarSa",
+   "score": 1.0,
+   "match_type": "exact_key1",
+   "n_store_rows": 4,
+   "ru_preview": "{#AmarSa#}¦ <lex>m.</lex> {%прикосновение, созвучие%}: {#hOtrAmarSa#}\n<ls>ĀŚV. ŚR. 8,13,32.</ls>",
+   "reuse_hint": "store_key1_exact"
+  }
+ ],
+ "compound_candidates": [],
+ "citation_normalize": [
+  {
+   "raw": "<ls>ĀŚV. ŚR. 8,13,32.</ls>",
+   "normalized": "<ls>ĀŚV. ŚR. 8,13,32.</ls>"
+  }
+ ],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=store"
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "controller_only",
+ "det": {
+  "ok": true,
+  "gate": "full",
+  "issues": [],
+  "coverage": 1,
+  "claude": false,
+  "n_skeleton_tokens": 0,
+  "source_senses": 4,
+  "had_draft_card": true
+ },
+ "tm_fence": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "step": "[4] same promoter + TM fence",
+  "note": "TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM",
+  "n_hits_ranked": 1
+ },
+ "store_write": false
+}

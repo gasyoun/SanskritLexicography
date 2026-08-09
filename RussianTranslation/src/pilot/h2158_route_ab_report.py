@@ -26,7 +26,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from headless_worker import build_prompt                             # noqa: E402
-from parse_workflow_cost import PRICE                                # noqa: E402
+from parse_workflow_cost import PRICE, cache_write_rate              # noqa: E402
 
 # The campaign target H2152 6.6 states for the remaining bulk lane.
 CAMPAIGN_WORDS = 140_000
@@ -69,7 +69,8 @@ def prompt_shape(manifest, keys):
     for key in keys:
         prompt = manifest['prompt']
         nws = prompt.get('nws_rule', '') if manifest['inputs'][key].get('nws') else ''
-        prefix = (prompt['preamble'] + prompt.get('grammar', '') + prompt['translation']
+        # H2191 stable-left order; must stay in step with h2158_route_ab.split_prompt.
+        prefix = (prompt['preamble'] + prompt['translation'] + prompt.get('grammar', '')
                   + ('\n\n' + nws + '\n' if nws else ''))
         whole = build_prompt(manifest, [key])
         words = len((manifest['inputs'][key]['skeleton'] or '').split())
@@ -82,7 +83,7 @@ def prompt_shape(manifest, keys):
 def model_api_cost(prefix_chars, tail_chars, out_tokens, cpt, warm):
     """MODELLED per-card API cost. warm=True prices the prefix as a cache READ."""
     pre, tail = prefix_chars / cpt, tail_chars / cpt
-    prefix_rate = PRICE['cache_read'] if warm else PRICE['input'] * 2.0   # 1h write = 2x
+    prefix_rate = PRICE['cache_read'] if warm else cache_write_rate('1h')
     return (pre * prefix_rate + tail * PRICE['input']
             + (out_tokens or 0) * PRICE['output']) / 1e6
 
@@ -165,7 +166,7 @@ def main():
     print('4. Sonnet 5 **list** rates ($%.2f in / $%.2f out / $%.2f 1h-write / $%.2f read '
           'per Mtok). The introductory $2/$10 promo is NOT applied — same basis as '
           '`parse_workflow_cost.PRICE`.' % (PRICE['input'], PRICE['output'],
-                                            PRICE['input'] * 2.0, PRICE['cache_read']))
+                                            cache_write_rate('1h'), PRICE['cache_read']))
     print('5. Zero retries/heals. Every real campaign has both, so these are **floors**.')
     print('')
     print('| route | basis | $/card | projected campaign |')

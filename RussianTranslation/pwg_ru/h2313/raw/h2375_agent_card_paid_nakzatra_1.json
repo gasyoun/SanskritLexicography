@@ -1,0 +1,23 @@
+{
+  "rows": [
+    {
+      "arm": "paid",
+      "phase": "card",
+      "key": "nakzatra",
+      "wall_ms": 221712,
+      "returncode": 0,
+      "failure_class": "empty_output",
+      "cards_returned": 0,
+      "schema_compliant": false,
+      "profile_vocab_leaked": [],
+      "result_head": "Agent completed (no cli_error); thinking-only output mode (platform limitation) — wall_ms 221712ms < HARD_TIMEOUT_MS 600000ms; timeout proof valid",
+      "model": "claude-opus-5",
+      "method": "agent_tool_call",
+      "note": "Max subscriptions offline 2026-08-09; proof via router.cheap Agent tool. Agent produced two thinking-block turns (8127+8267 output tokens) with complete German→Russian translation but no final text response. Confirms HARD_TIMEOUT_MS=600000ms does not false-kill real card calls."
+    }
+  ],
+  "manifest": "h2375_proof_rerun",
+  "model": "claude-opus-5",
+  "proof_run_date": "2026-08-09",
+  "hard_timeout_ms": 600000
+}

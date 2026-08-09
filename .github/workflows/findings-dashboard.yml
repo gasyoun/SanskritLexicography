@@ -72,6 +72,7 @@ jobs:
           [ -f progress_dashboard/progress_data.json ] && cp progress_dashboard/progress_data.json pages/progress/ || true
           [ -f progress_dashboard/progress_timeseries.json ] && cp progress_dashboard/progress_timeseries.json pages/progress/ || true
           [ -f progress_dashboard/kitchen_data.json ] && cp progress_dashboard/kitchen_data.json pages/progress/ || true
+          [ -f progress_dashboard/quality_timeseries.json ] && cp progress_dashboard/quality_timeseries.json pages/progress/ || true
           cd pages
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

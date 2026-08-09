@@ -1,6 +1,6 @@
 # Oral-corpus ingest — the spoken register of the Sa→Ru TM (H215 Slice 4)
 
-_Created: 07-07-2026 · Last updated: 07-07-2026 (Slice 4a text+PDF front-end, H290)_
+_Created: 07-07-2026 · Last updated: 03-08-2026 (oral→A written-agree promotion, H2193)_
 
 This is the design + shared-schema doc for
 [`src/ingest_oral.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ingest_oral.py),
@@ -91,13 +91,20 @@ composite penalty in the grader:
 
 1. **Composite penalty** — `tm_grade.ORAL_PENALTY = 0.15` is subtracted from an oral
    unit's composite score before thresholding, representing the higher noise floor.
-2. **A-gate lock** — `oral_cap()` forbids grade **A** for an oral unit on the
-   automatic signals alone: a unit that would score A when written is capped at **B**
-   when oral. **Only human adjudication** (`/gold-adjudicate`, the `adjudicated` flag)
-   lifts an oral unit to A. B and C pass through unchanged.
+2. **A-gate lock** — `oral_cap()` forbids grade **A** for an oral unit on its solo
+   automatic signals: a unit that would score A when written is capped at **B** when
+   oral. **Two lifts** exist (the second added 03-08-2026 by H2193, implementing MG's
+   19-07-2026 ruling — see "Resolved policy conflict" below): **human adjudication**
+   (`/gold-adjudicate`, the `adjudicated` flag), or **written agreement**
+   (`written_agree` — ≥1 *distinct* work of written modality gives the same
+   normalized rendering for the same `(passage, slp1)`, computed by
+   `tm_grade.consensus_signal`). Oral-alone agreement — even full consensus among
+   oral works — never lifts the cap. B and C pass through unchanged.
 
-So an oral unit's ceiling is B unless a human confirms it — matching A's definition
-("publication / hard gloss") which oral live-interpretation cannot claim unreviewed.
+So an oral unit's ceiling is B unless a human confirms it **or a written translation
+independently agrees** — matching A's definition ("publication / hard gloss"): oral
+live-interpretation cannot claim it unreviewed, but corroboration by a written
+scholarly source is exactly the review the ruling accepts.
 
 ## Pairing rule — parallel tracks must share segmentation
 
@@ -161,7 +168,7 @@ _Model provenance: deterministic — no LLM. Pilot generated under Opus 4.8
   (H174 not built). This slice ships the schema + tooling + an end-to-end fixture
   pilot; scale runs when H174 delivers cleaned transcripts.
 
-## Slice 4a — the text + PDF front-end ([H290](https://github.com/gasyoun/Uprava/blob/main/handoffs/H290-Opus_RussianTranslation_oral_text_pdf_tm_ingest_07.07.26.md))
+## Slice 4a — the text + PDF front-end ([H290](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H290-Opus_RussianTranslation_oral_text_pdf_tm_ingest_07.07.26.md))
 
 [`ingest_oral.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ingest_oral.py)
 above assumes the input is already a **pre-aligned parallel pair** of timecoded
@@ -244,21 +251,39 @@ Test artefacts (fetched HTML→md, jsonl output) live under the gitignored
 `release/corpus_tm/oral_samples/` — not committed (rights: third-party recorded
 lectures, per the Rights section below).
 
-### ⚠️ Open policy conflict — oral → A gate (MG ruling 4 vs merged Slice 4)
+### ✅ Resolved policy conflict — oral → A gate (MG ruling 19-07-2026, implemented by H2193)
 
-MG ruling 4 (H290): an oral unit is **distrusted by default but not barred from
+MG ruling 4 (H290) said an oral unit is **distrusted by default but not barred from
 publication-grade** — it should reach **A when it agrees with a written translation**
-(consensus promotes). But the **merged** Slice-4
+(consensus promotes) — while the merged Slice-4
 [`build_tmx.oral_cap()`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_tmx.py)
-currently forces oral **A→B unless a human adjudicated it** — consensus does *not*
-promote. These **conflict**. This scaffold **deliberately does not silently flip** that
-merged publication-grade gate: reconciling it needs real oral graded output to validate
-(exactly the gated prerequisite), so it is deferred to the real-data step and tracked
-as an `@DECIDE` in
-[`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
-The likely resolution: relax `oral_cap` to allow A when the consensus set contains ≥1
-agreeing **written** work (a real change to `build_consensus`/`grade_unit` to carry
-per-work modality) — but only once a sample proves it does not over-promote.
+forced oral **A→B unless a human adjudicated it**. The conflict was ruled on
+**19-07-2026** (MG, weekly `@DECIDE`, resolved in
+[`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)):
+relax the cap exactly as proposed — an oral unit MAY reach **A** when its consensus
+set has **≥1 agreeing written work**; oral-alone still caps at **B**.
+
+**Implemented 03-08-2026 (H2193, Fable 5 `claude-fable-5`):**
+[`tm_grade.build_consensus`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py)
+carries per-work modality, `consensus_signal` returns a `written_agree` flag (a
+*distinct* work of written modality with this unit's own normalized rendering), and
+`oral_cap(grade, modality, adjudicated, written_agree)` lifts the A-cap on either
+flag. The grades sidecar records `written_agree` per unit, so the TMX export keeps a
+promoted A without re-demoting it. Selftests assert the promotion, the oral-only-
+consensus hold, and the adjudication path (`python tm_grade.py selftest`,
+`python build_tmx.py selftest`).
+
+**Over-promote verification (the ruling's shipping condition), 03-08-2026:**
+
+| Check | Data | Result |
+|---|---|---|
+| Real oral sample | 2 spoken-sanskrit-corpus transcripts (`ru+cit`, ~70K chars each) → `build_oral_l0 ingest` | 2 units, **0** join a written `(passage, slp1)` key, **0** promotions |
+| Counterfactual scale | 300,000 real written lexicon units flipped `modality=oral`, consensus over the full corpus for their keys | `written_agree` fires on 0.48%; **1,163 (0.39%)** would be promoted B→A; distribution otherwise unchanged (C 272,736 / B 26,101 / A 1,163 vs old C 272,736 / B 27,264) |
+
+Promotion requires exact normalized-rendering agreement with a distinct written work
+**and** corroboration **and** the penalized composite still ≥ `T_A` — a bounded
+0.39% lift, not mass promotion. Reproduce: `h2193_overpromote_verify.py` (session
+scratchpad; reads the gitignored store read-only, emits nothing tracked).
 
 ## Rights
 

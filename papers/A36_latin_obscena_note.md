@@ -136,7 +136,7 @@ to be f.", is given because it is in Latin.
 ## 2. Method
 
 Source files are the SLP1-native CDSL exports in
-[`csl-orig/v02`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02) — eleven
+[`csl-orig/v02`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02) — eleven
 dictionaries grouped by metalanguage: **German** `pwg`, `pw`, `sch`, `pwkvn` (PWK), `gra`;
 **English** `mw`, `ap90`, `ap`, `wil`, `cae`; **Latin-medium** `bop`.
 Each `<L>…<LEND>` entry was scanned for a curated list of Latin sexual/scatological terms;
@@ -506,9 +506,9 @@ word to another.)
 ## 5. Cross-dictionary: who lifts the screen
 
 Cross-checking the vulgar headwords against **MW** (Monier-Williams, English, 1899,
-[`mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt)) and
+[`mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw.txt)) and
 **AP90** (Apte, 1890,
-[`ap90.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90.txt))
+[`ap90.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap90/ap90.txt))
 reveals a gradient of candour. The verified worked example, √*yabh*:
 
 | Dictionary | Audience / date | Gloss of √*yabh* |

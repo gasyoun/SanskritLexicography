@@ -1,0 +1,28 @@
+# .linkaudit-exclude — paths /link-audit-fix should not scan in this repo.
+#
+# One glob per line; `dir/**` excludes everything under dir. Blank lines and
+# `#` comments ignored. Skipped files are always COUNTED AND REPORTED by the
+# tool, so a scoped scan can never be mistaken for full coverage.
+#
+# Created 04-08-2026 (Opus 5, claude-opus-5[1m]) after this repo could not be
+# link-audited at all: the scan hit a 900 s timeout and produced nothing.
+
+# Imported OCR'd book text — 38 MB of the repo's 52 MB of tracked markdown, in
+# 46 files. These are third-party publications (Routledge handbooks, Peshkovsky,
+# Delbrück, …) mirrored here for reading, NOT project documentation:
+#
+#   * their `[...](...)` sequences are OCR artefacts and running text, not our
+#     cross-repo references — they produced ~29,000 of ~31,000 "broken links",
+#     none of which anyone would ever fix;
+#   * four handbooks alone carry 5.4-7.1k self-anchors apiece.
+#
+# Excluding them makes the repo's audit both fast AND meaningful. If a genuine
+# project doc ever lands under literature/, re-include it below rather than
+# deleting the rule — the point is to drop imported text, not to hide a tree.
+literature/**
+
+# …but literature/ is NOT purely imported text, and a blanket exclude was wrong:
+# it also dropped a cross-repo relevance map and a dated project README. Last
+# matching pattern wins, so these come back into scope.
+!literature/**/README.md
+!literature/md/INDEX.md
