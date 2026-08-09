@@ -304,6 +304,24 @@ def store_semantic_hash(path):
     return h.hexdigest()
 
 
+def store_group_hashes(path):
+    """Diagnostic hashes by key1, using the same volatile-field stripping as the gate."""
+    groups = {}
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            prov = row.get('provenance')
+            if isinstance(prov, dict):
+                prov.pop('generated_at', None)
+                prov.pop('pipeline', None)
+            groups.setdefault(row.get('key1'), []).append(
+                json.dumps(row, ensure_ascii=False, sort_keys=True))
+    return {key: sha256_bytes(('\n'.join(sorted(rows)) + '\n').encode('utf-8'))
+            for key, rows in groups.items()}
+
+
 def semantic_hash(obj, volatile=('generated_at', 'ts', 'recorded_at', 'prepared_at',
                                  'promoted_at', 'claimed_at', 'expires_at', 'wf_file',
                                  'pipeline', 'cost', 'blocked_at', 'unblocked_at')):
@@ -336,6 +354,23 @@ def one_run(tag, keep=False, prepare_mode='batch', record_mode='batch'):
     store = os.path.join(sandbox, 'store.jsonl')
     for d in (coord_dir, profile_dir, tm_dir):
         os.makedirs(d)
+    # The promotion path enriches rows from optional csl-pywork pwgbib/pwgab siblings.
+    # A developer checkout commonly has them while GitHub's single-repo checkout does not,
+    # which made the supposedly hermetic semantic signature platform/environment dependent.
+    # Point every subprocess at the same deliberately empty optional-sibling fixture.  Empty
+    # files exercise the documented graceful-degradation path without an explicit-root miss
+    # (which correctly fails closed as operator misconfiguration).
+    sibling_root = os.path.join(sandbox, 'optional_siblings')
+    optional_files = (
+        os.path.join(sibling_root, 'csl-pywork', 'v02', 'distinctfiles', 'pwg',
+                     'pywork', 'pwgauth', 'pwgbib.txt'),
+        os.path.join(sibling_root, 'csl-pywork', 'v02', 'distinctfiles', 'pwg',
+                     'pywork', 'pwgab', 'pwgab_input.txt'),
+    )
+    for optional_file in optional_files:
+        os.makedirs(os.path.dirname(optional_file), exist_ok=True)
+        with open(optional_file, 'w', encoding='utf-8', newline='\n'):
+            pass
     # H1811 H10: sandbox the merged.md/pilot_review.md sidecars too — before this,
     # the "hermetic" bench still rewrote live src/pilot/output via _pilot_collect.
     pilot_out = os.path.join(sandbox, 'pilot_output')
@@ -347,6 +382,7 @@ def one_run(tag, keep=False, prepare_mode='batch', record_mode='batch'):
                PWG_INPUT_DIR=INPUT_DIR,
                PWG_OUTPUT_DIR=pilot_out,
                PWG_EVENTS_PATH=os.path.join(sandbox, 'dashboard_events.jsonl'),
+               CSL_SIBLING_ROOT=sibling_root,
                PYTHONIOENCODING='utf-8')
 
     # --- setup (untimed): seed store incl. the TM-seed key's rows, then build the TM ---
@@ -503,6 +539,7 @@ def one_run(tag, keep=False, prepare_mode='batch', record_mode='batch'):
 
     outputs['store_sha256'] = sha256_file(store)
     outputs['store_semantic_sha256'] = store_semantic_hash(store)
+    outputs['store_group_sha256'] = store_group_hashes(store)
     outputs['store_rows'] = sum(1 for ln in open(store, encoding='utf-8') if ln.strip())
     tm_path = os.path.join(tm_dir, 'translation_memory.ru.json')
     outputs['tm_sha256'] = (semantic_hash(json.load(open(tm_path, encoding='utf-8')))
@@ -611,6 +648,13 @@ def _bench(a, fx_hash):
               'TOTAL %.2f  sig %s' % (i + 1, a.runs, t['prepare'], t['normalize'],
                                       t['audit'], t['promotion-plan'], t['store-write'],
                                       t['total'], o['signature'][:10]))
+        print('  signature inputs: leases=%s store=%s rows=%d' % (
+            semantic_hash(o['leases'])[:16], o['store_semantic_sha256'][:16],
+            o['store_rows']))
+        print('  promoted groups: %s' % ' '.join(
+            '%s=%s' % (key, digest[:12])
+            for key, digest in sorted(o['store_group_sha256'].items())
+            if not str(key).startswith('seed')))
 
     stages = ['prepare', 'normalize', 'audit', 'promotion-plan', 'store-write', 'total']
     stats = {}

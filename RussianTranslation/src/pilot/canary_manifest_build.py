@@ -80,6 +80,8 @@ REPO = os.path.dirname(os.path.dirname(HERE))    # RussianTranslation/ (src/pilo
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
+from execution_contract import PRODUCTION_HARD_TIMEOUT_MS  # noqa: E402
+
 # The curated H994 D-Q silent-sense-loss synthetic control. Its provenance_class is
 # synthetic_control, so canary_gate refuses to judge a real window as a canary.
 CANARY_KEY = 'dq_canary_puregloss~~h0_zz_pw'
@@ -197,8 +199,8 @@ def main(argv=None):
     print('  python src/pilot/headless_worker.py %s \\' % manifest)
     print('      --output %s/out.canary.json \\' % args.outdir)
     print('      --status-out %s/status.canary.json \\' % args.outdir)
-    print('      --only-profile %s --max-agents 1 --timeout 300 --max-calls 3 \\'
-          % args.profile_slot)
+    print('      --only-profile %s --max-agents 1 --timeout %d --max-calls 3 \\'
+          % (args.profile_slot, PRODUCTION_HARD_TIMEOUT_MS // 1000))
     print('      --manifest-sha256 %s \\' % sha)
     print('      --preflight %s \\' % preflight)
     print('      --call-reservation %s/calls.canary.json --run-id <run-id>' % args.outdir)

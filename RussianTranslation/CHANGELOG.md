@@ -10,6 +10,10 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Fixed
+
+- **router.cheap post-incident hardening and CI recovery (09-08-2026, Codex Sol `gpt-5.6-sol`):** returned-model substitution now fails with `failure_class=provenance` before any result/hash is accepted; the 10-case gateway suite runs in CI; canary artifacts derive the shared 600 s ceiling; the full window suite is 210/210. The H1339 offline benchmark now supplies the same empty optional `csl-pywork` bibliography fixture on Windows and Linux, eliminating a host-checkout-dependent semantic signature. No model call or promotion was made. The remaining two-phase external Agent reserve/record bridge is specified in the post-incident audit and queued separately.
+
 ## [1.144.24] - 2026-08-09
 
 ### Added
