@@ -2,7 +2,7 @@
 
 _Created: 20-07-2026 · Last updated: 20-07-2026_
 
-Ruling for [H1361](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1361-Opus_SanskritLexicography_findings-section-number-collision-ruling-and-dashboard-audit_20.07.26.md)
+Ruling for [H1361](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1361-Opus_SanskritLexicography_findings-section-number-collision-ruling-and-dashboard-audit_20.07.26.md)
 (Opus 4.8 `claude-opus-4-8`), settling the section-number collisions across
 [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
 and its epistemic sibling registries, and the `§447`/`§448` next-free-marker anchor.

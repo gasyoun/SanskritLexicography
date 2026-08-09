@@ -89,19 +89,56 @@ def nominal_lane():
     nm = _load_json("src/pilot/output/nominal_batch_worklist.json")
     out = {"measured": bool(nm)}
     if nm:
+        # Prefer count fields; fall back to list length (same n() shape as verb_lane /
+        # eta_nominal) so either worklist schema variant is safe.
+        def n(key_count, key_list=None):
+            val = nm.get(key_count)
+            if isinstance(val, int):
+                return val
+            if isinstance(val, list):
+                return len(val)
+            if key_list:
+                alt = nm.get(key_list)
+                if isinstance(alt, int):
+                    return alt
+                if isinstance(alt, list):
+                    return len(alt)
+            return None
+
+        candidates = n("nominal_candidates")
+        promoted = n("already_promoted_count", "already_promoted")
+        runnable = n("runnable_count", "runnable_remaining")
+        remaining = runnable
+        if remaining is None and isinstance(promoted, int) and isinstance(candidates, int):
+            remaining = max(0, candidates - promoted)
         out.update(
             {
-                "candidates": nm.get("nominal_candidates"),
-                "promoted": nm.get("already_promoted_count"),
-                "runnable": nm.get("runnable_count"),
-                "pwg_hits": nm.get("pwg_hits"),
+                "candidates": candidates,
+                "promoted": promoted,
+                "runnable": runnable,
+                "pwg_hits": nm.get("pwg_hits") if isinstance(nm.get("pwg_hits"), int)
+                else (len(nm["pwg_hits"]) if isinstance(nm.get("pwg_hits"), list) else None),
+                # B7 burn-down fields, mirroring the verb lane's universe/promoted/runnable shape.
+                "remaining": remaining,
+                "pct": round(100 * promoted / candidates, 2)
+                if isinstance(promoted, int) and isinstance(candidates, int) and candidates
+                else None,
             }
         )
-    # The medium-50 band-4 relaunch arc (H317 -> H389 -> H437): 2/50 promoted,
-    # lane paused on kill-gate miscalibration (H442). Documented, not in this file.
-    out["medium50_promoted"] = 2
-    out["medium50_total"] = 50
-    out["medium50_status"] = "paused (kill-gate recalibration, H442/H462)"
+    # medium-50: shared helper (H2275) — live measure + structured pause_reason
+    # with detail (progress UI tooltip previously got an empty title because the
+    # inline dict here lacked the detail field kitchen had).
+    if str(OUT) not in sys.path:
+        sys.path.insert(0, str(OUT))
+    from kitchen_slices import measure_medium50_band  # noqa: WPS433 — local sibling
+
+    m50 = measure_medium50_band(RT)
+    out["medium50_promoted"] = m50["promoted"]
+    out["medium50_total"] = m50["total"]
+    out["medium50_measured"] = m50["measured"]
+    out["medium50_pause_reason"] = m50["pause_reason"]
+    # legacy field, kept for any existing consumer of the old prose-only status
+    out["medium50_status"] = m50["status"]
     return out
 
 
@@ -150,6 +187,130 @@ def store_depth():
     }
 
 
+def review_queue():
+    """G5 live-review-sheet open depth (B5, H2235).
+
+    G5 sheet decision files (`review/g5-live-queue-*_decisions.json`) are
+    gitignored — they carry reviewer notes on individual PWG cards, which is
+    private editorial content. Only the aggregate open/decided/total counts
+    are surfaced here, never a sheet path or item content.
+    """
+    review_dir = RT / "review"
+    if not review_dir.is_dir():
+        return {"measured": False}
+    files = sorted(review_dir.glob("g5-live-queue-*_decisions.json"))
+    if not files:
+        return {"measured": False}
+    total = decided = open_ = 0
+    sheets = []
+    for f in files:
+        data = None
+        try:
+            with f.open(encoding="utf-8-sig") as fh:
+                data = json.load(fh)
+        except Exception:  # noqa: BLE001 — a malformed sheet must not crash the build
+            continue
+        items = data.get("items") or []
+        sheet_decided = sum(1 for it in items if it.get("decision"))
+        sheet_open = len(items) - sheet_decided
+        total += len(items)
+        decided += sheet_decided
+        open_ += sheet_open
+        # sheet_id only (no path, no notes) — aggregate privacy contract from H2235
+        sheets.append({"sheet_id": data.get("sheet_id"), "open": sheet_open, "total": len(items)})
+    return {
+        "measured": True,
+        "sheet_count": len(files),
+        "g5_total": total,
+        "g5_decided": decided,
+        "g5_open": open_,
+        "sheets": sheets,
+    }
+
+
+def review_transitions():
+    """Daily approved / needs_review *transitions* from store review timestamps (B5, H2260).
+
+    H2235 primary path: derive daily approved transitions from review timestamps
+    when present; else fall back to append-only stock series on rebuild (that
+    stock path lives in main()'s timeseries row and was shipped by Sonnet #1092).
+
+    Field of record: ``human_review.reviewed_at`` (ISO datetime). Present on
+    every currently human-touched row (approved + needs_review); absent on the
+    bulk ``ai_translated`` population. Coverage is therefore honest but small —
+    a true full-store transition series will grow only as more rows acquire
+    reviewed_at. Never invent timestamps from provenance.generated_at (that is
+    generation day, not human-signoff day).
+    """
+    p = RT / "src" / "pwg_ru_translated.jsonl"
+    if not p.exists():
+        return {"measured": False, "method": "human_review.reviewed_at"}
+    by_day = {}  # date -> {approved, needs_review, other}
+    with_ts = 0
+    approved_total = needs_total = 0
+    approved_with_ts = needs_with_ts = 0
+    with p.open(encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                d = json.loads(line)
+            except Exception:  # noqa: BLE001
+                continue
+            rs = d.get("review_status") or "unknown"
+            if rs == "approved":
+                approved_total += 1
+            elif rs == "needs_review":
+                needs_total += 1
+            hr = d.get("human_review") or {}
+            ra = hr.get("reviewed_at") if isinstance(hr, dict) else None
+            if not ra:
+                continue
+            with_ts += 1
+            day = str(ra)[:10]
+            bucket = by_day.setdefault(day, {"approved": 0, "needs_review": 0, "other": 0})
+            if rs == "approved":
+                bucket["approved"] += 1
+                approved_with_ts += 1
+            elif rs == "needs_review":
+                bucket["needs_review"] += 1
+                needs_with_ts += 1
+            else:
+                bucket["other"] += 1
+    if not by_day:
+        return {
+            "measured": False,
+            "method": "human_review.reviewed_at",
+            "rows_with_reviewed_at": 0,
+            "approved_with_reviewed_at": 0,
+            "approved_total": approved_total,
+            "note": "no human_review.reviewed_at on any store row; use append-only stock series",
+        }
+    daily = [
+        {"date": day, **by_day[day]}
+        for day in sorted(by_day)
+    ]
+    return {
+        "measured": True,
+        "method": "human_review.reviewed_at",
+        "rows_with_reviewed_at": with_ts,
+        "approved_with_reviewed_at": approved_with_ts,
+        "approved_total": approved_total,
+        "needs_review_with_reviewed_at": needs_with_ts,
+        "needs_review_total": needs_total,
+        "coverage_approved": (
+            f"{approved_with_ts}/{approved_total}" if approved_total else "0/0"
+        ),
+        "daily": daily,
+        "note": (
+            "per-day transition counts from human_review.reviewed_at; "
+            "append-only stock series (progress_timeseries approved/needs_review) "
+            "remains the rebuild-date depth signal"
+        ),
+    }
+
+
 def coverage():
     f = _load_json("src/pilot/output/scale_manifest.freq.json")
     attested = len(f) if isinstance(f, list) else None
@@ -180,6 +341,29 @@ def corpus():
     }
 
 
+def kitchen_slice():
+    """H2241 K-slice: daily kitchen operator/yield/health points for the trend
+    charts, read from the sibling kitchen_data.json build (same directory,
+    always co-located since both are committed progress_dashboard/ outputs).
+
+    Mapping lives in kitchen_slices.progress_kitchen_slice (H2268 dual-run pin).
+    """
+    # Local import: kitchen_slices is co-located; keep build_progress_data
+    # import surface small for scripts that only need progress lanes.
+    import kitchen_slices as ks  # noqa: PLC0415
+
+    p = OUT / "kitchen_data.json"
+    if not p.exists():
+        return {"measured": False}
+    try:
+        with p.open(encoding="utf-8-sig") as fh:
+            kd = json.load(fh)
+    except Exception as e:  # noqa: BLE001 — a malformed kitchen build must not crash this one
+        print(f"  ! could not read kitchen_data.json: {e}")
+        return {"measured": False}
+    return ks.progress_kitchen_slice(kd)
+
+
 def main():
     now = datetime.now(timezone.utc)
     today = now.date().isoformat()
@@ -189,6 +373,9 @@ def main():
     st = store_depth()
     cov = coverage()
     cor = corpus()
+    rq = review_queue()
+    rt_x = review_transitions()
+    kit = kitchen_slice()
 
     data = {
         "generated_at": generated_at,
@@ -201,6 +388,9 @@ def main():
         "store": st,
         "coverage": cov,
         "corpus": cor,
+        "review_queue": rq,
+        # H2260 best-of-both: transition series from reviewed_at (H2235 primary path)
+        "review_throughput": rt_x,
     }
 
     (OUT / "progress_data.json").write_text(
@@ -228,6 +418,15 @@ def main():
         "approved": rb.get("approved"),
         "ai_translated": rb.get("ai_translated"),
         "needs_review": rb.get("needs_review"),
+        "g5_open": rq.get("g5_open") if rq.get("measured") else None,
+        "g5_total": rq.get("g5_total") if rq.get("measured") else None,
+        # H2241 K-slice: daily kitchen operator/yield/health points.
+        "kitchen_yield_clean_pct": kit.get("yield_clean_pct") if kit.get("measured") else None,
+        "kitchen_health_last_verdict": kit.get("health_last_verdict") if kit.get("measured") else None,
+        "kitchen_health_last_go": kit.get("health_last_go") if kit.get("measured") else None,
+        "kitchen_idle_hours": kit.get("idle_hours") if kit.get("measured") else None,
+        # H2268 net-new: live current idle (campaign total is a stock).
+        "kitchen_current_idle_hours": kit.get("current_idle_hours") if kit.get("measured") else None,
     }
     ts["snapshots"] = [s for s in ts.get("snapshots", []) if s.get("date") != today] + [row]
     ts["snapshots"].sort(key=lambda s: s["date"])
@@ -242,6 +441,21 @@ def main():
     print(f"  store:       {st.get('senses')} senses across {st.get('roots')} roots")
     print(f"  coverage:    {cov.get('pct')}% DCS-attested ({cov.get('dcs_attested_headwords')}/{cov.get('total_headwords')})")
     print(f"  corpus/TM:   {cor.get('pairs')} pairs, {cor.get('recall_pct')}% recall")
+    if rq.get("measured"):
+        print(f"  G5 queue:    {rq.get('g5_open')} open / {rq.get('g5_total')} across {rq.get('sheet_count')} sheet(s)")
+    if rt_x.get("measured"):
+        days = rt_x.get("daily") or []
+        print(
+            f"  transitions: {rt_x.get('rows_with_reviewed_at')} rows with reviewed_at "
+            f"across {len(days)} day(s); approved coverage {rt_x.get('coverage_approved')}"
+        )
+    if kit.get("measured"):
+        print(
+            f"  K-slice:     yield_clean={kit.get('yield_clean_pct')}%  "
+            f"health_last={kit.get('health_last_verdict')}  "
+            f"idle_hours={kit.get('idle_hours')}  "
+            f"current_idle={kit.get('current_idle_hours')}"
+        )
 
 
 if __name__ == "__main__":

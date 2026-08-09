@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-02T15:40:00Z",
-  "snapshot_date": "2026-08-02",
+  "generated_at": "2026-08-06T17:02:05Z",
+  "snapshot_date": "2026-08-06",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
   "kitchen_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
@@ -20,9 +20,27 @@
       "promoted": 41,
       "runnable": 4251,
       "pwg_hits": 4292,
+      "remaining": 4251,
+      "pct": 0.81,
       "medium50_promoted": 2,
       "medium50_total": 50,
-      "medium50_status": "paused (kill-gate recalibration, H442/H462)"
+      "medium50_measured": true,
+      "medium50_pause_reason": {
+        "code": "killgate_cascade",
+        "label": "paused — kill-gate/self-heal budget cascade on dense band-4 nominal singletons",
+        "detail": "H437 isolated a self-heal/kill-gate budget cascade on dense band-4 nominal singleton cards (2/37 clean, every window tripped MAX_AGENTS); H442 scoped the recalibration, still open. Not a data or scope problem — a harness heal-lane design question.",
+        "docs": [
+          "H437",
+          "H442",
+          "H462"
+        ],
+        "doc_urls": [
+          "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H437-Sonnet_RussianTranslation_pwg-ru-medium50-resume-post-h428_09.07.26.md",
+          "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H442-Opus_RussianTranslation_pwg-ru-killgate-recalibration-nominal-medium_09.07.26.md",
+          "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md"
+        ]
+      },
+      "medium50_status": "paused — kill-gate/self-heal budget cascade on dense band-4 nominal singletons"
     }
   },
   "store": {
@@ -55,5 +73,38 @@
     "pairs_measured": true,
     "recall_pct": 95.4,
     "recall_measured": false
+  },
+  "review_queue": {
+    "measured": true,
+    "sheet_count": 1,
+    "g5_total": 150,
+    "g5_decided": 5,
+    "g5_open": 145,
+    "sheets": [
+      {
+        "sheet_id": "g5-live-queue-batch1-2026-07-25",
+        "open": 145,
+        "total": 150
+      }
+    ]
+  },
+  "review_throughput": {
+    "measured": true,
+    "method": "human_review.reviewed_at",
+    "rows_with_reviewed_at": 5,
+    "approved_with_reviewed_at": 3,
+    "approved_total": 3,
+    "needs_review_with_reviewed_at": 2,
+    "needs_review_total": 2,
+    "coverage_approved": "3/3",
+    "daily": [
+      {
+        "date": "2026-07-26",
+        "approved": 3,
+        "needs_review": 2,
+        "other": 0
+      }
+    ],
+    "note": "per-day transition counts from human_review.reviewed_at; append-only stock series (progress_timeseries approved/needs_review) remains the rebuild-date depth signal"
   }
 }

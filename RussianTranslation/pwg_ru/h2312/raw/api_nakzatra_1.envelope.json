@@ -1,0 +1,16 @@
+{
+  "row": {
+    "arm": "api",
+    "key": "nakzatra",
+    "wall_ms": 2195,
+    "failure_class": "http_401",
+    "error_type": "authentication_error",
+    "retry_after": null,
+    "detail": "Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CdmUoEiHDTPPpPURR1EgU'}",
+    "usage": {},
+    "n": 1,
+    "cost_usd_1h_write": 0.0,
+    "cost_usd_5m_write": 0.0
+  },
+  "raw": null
+}

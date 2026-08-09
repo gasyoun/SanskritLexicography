@@ -45,9 +45,34 @@ PAYLOAD_DIR = HERE
 MAX_ATTEMPTS = ds.MAX_ATTEMPTS
 
 
-def senses_of(card):
-    return [{'tag': s.get('tag'), 'german': s.get('german'), 'russian': s.get('russian')}
+def senses_of(card, field='russian'):
+    """Per-sense rows for the shared controller; field is russian/english (H2226 OPT-4)."""
+    return [{'tag': s.get('tag'), 'german': s.get('german'), field: s.get(field)}
             for r in (card.get('records') or []) for s in (r.get('senses') or [])]
+
+
+def _controller_prompt_for_field(field):
+    """Same template as h1209.prep_slice.controller_prompt_for_field (kept local so
+    arm_b_control does not import across the h1209 package path at module load)."""
+    lang = 'English' if field == 'english' else 'Russian'
+    pair = 'German->English' if field == 'english' else 'German->Russian'
+    return (
+        'You are the QUALITY CONTROLLER for a PWG %s scholarly dictionary translation. '
+        'For headword {key1}, check each sense: (a) the %s faithfully renders the German gloss '
+        '(no invented, dropped, or merged meaning), (b) every {Tn} placeholder present in the German is a real '
+        'masked span (not invented), (c) scholarly-philological register. Set ok=false with specific, actionable '
+        'issues ONLY for genuine fidelity defects; do NOT nitpick style or wording preference. Senses JSON:\n'
+        % (pair, lang)
+    )
+
+
+def _resolve_field(a):
+    """Prefer --manifest / --slice-payload field; fall back to --field / russian."""
+    if getattr(a, 'manifest', None):
+        return load(a.manifest).get('field') or a.field or 'russian'
+    if getattr(a, 'slice_payload', None):
+        return load(a.slice_payload).get('field') or a.field or 'russian'
+    return a.field or 'russian'
 
 
 def load(p):
@@ -68,10 +93,18 @@ def cmd_build(a):
     if not pending:
         print('no cards pending controller review — nothing to build')
         return 0
-    payload = {'schema': 'h1210.control.v1', 'arm': res.get('arm', 'B_deepseek'),
-               'round': a.round,
-               'cards': [{'key1': r['key1'], 'senses': senses_of(cards[r['key1']] or {})}
-                         for r in pending]}
+    field = _resolve_field(a)
+    payload = {
+        'schema': 'h1210.control.v1',
+        'arm': res.get('arm', 'B_deepseek'),
+        'round': a.round,
+        # H2226 OPT-4: control_template.js reads these; no second EN scaffold.
+        'field': field,
+        'controller_prompt': _controller_prompt_for_field(field),
+        'cards': [{'key1': r['key1'],
+                   'senses': senses_of(cards[r['key1']] or {}, field)}
+                  for r in pending],
+    }
     p = os.path.join(PAYLOAD_DIR, 'arm_b.control_r%d.payload.json' % a.round)
     save(p, payload)
     tpl = open(os.path.join(HERE, 'control_template.js'), encoding='utf-8').read()
@@ -81,7 +114,8 @@ def cmd_build(a):
     with open(wf, 'w', encoding='utf-8', newline='\n') as f:
         f.write(out)
     size = os.path.getsize(wf)
-    print('wrote %s (%d cards, %d bytes)' % (wf, len(payload['cards']), size))
+    print('wrote %s (%d cards, field=%s, %d bytes)'
+          % (wf, len(payload['cards']), field, size))
     if size > 512 * 1024:
         print('WARNING: %d bytes exceeds the 512 KB Workflow scriptPath ceiling — split it' % size)
     return 0
@@ -102,7 +136,8 @@ def cmd_apply(a):
     key = os.environ.get('DEEPSEEK_API_KEY') or env.get('DEEPSEEK_API_KEY')
     base = (os.environ.get('DEEPSEEK_BASE_URL') or env.get('DEEPSEEK_BASE_URL')
             or 'https://api.deepseek.com')
-    model = (os.environ.get('DEEPSEEK_MODEL') or env.get('DEEPSEEK_MODEL') or 'deepseek-chat')
+    model = (os.environ.get('DEEPSEEK_MODEL') or env.get('DEEPSEEK_MODEL')
+             or getattr(ds, 'DEFAULT_MODEL', None) or 'deepseek-v4-flash')
 
     sys.path.insert(0, os.path.join(os.path.dirname(HERE), 'h1209'))
     import build_args  # noqa: E402
@@ -217,6 +252,12 @@ def main():
     b = sub.add_parser('build')
     b.add_argument('slice_result')
     b.add_argument('round', type=int)
+    b.add_argument('--field', default=None,
+                   help='target field russian/english (default: from --manifest/--slice-payload or russian)')
+    b.add_argument('--manifest', default=None,
+                   help='execution manifest; field is read from it when present')
+    b.add_argument('--slice-payload', default=None,
+                   help='h1209/h1210 slice payload; field is read from it when present')
     ap2 = sub.add_parser('apply')
     ap2.add_argument('slice_result')
     ap2.add_argument('verdicts')

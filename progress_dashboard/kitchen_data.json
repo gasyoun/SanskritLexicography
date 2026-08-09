@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-02T17:52:02Z",
+  "generated_at": "2026-08-06T17:02:58Z",
   "schema": "pwg.kitchen.v2",
-  "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity (still pwg.kitchen.v2 — non-breaking)",
+  "schema_note": "H2218 additive keys: cost.subscription, idle.reasons, article_parity; H2229 collision_guard (OPT-8 lease/store-hit banner); H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); H2231 multi_lane (B8 gen_model/host/profile mix) (still pwg.kitchen.v2 — non-breaking)",
   "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
   "site_url": "https://gasyoun.github.io/SanskritLexicography/",
   "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
   "local_ops_note": "For sub-second run/gate telemetry on the residential machine, run `python RussianTranslation/src/pilot/dashboard_server.py` (default http://127.0.0.1:8765/, polls every 5s).",
   "activity": {
-    "translation_on": true,
+    "translation_on": false,
     "active_within_seconds": 900,
-    "youngest_artifact_age_seconds": 0,
+    "youngest_artifact_age_seconds": 342653,
     "window_state": "needs_requeue",
     "window_root": "no_pwg_w05",
     "next_action": "Run python src\\pilot\\requeue_from_audit.py <root>, rerun Max Workflow, then rerun audit_window.py.",
@@ -17,25 +17,25 @@
       "store": {
         "exists": true,
         "mtime": "2026-08-02T07:21:30Z",
-        "age_seconds": 37828,
+        "age_seconds": 380482,
         "size": 26192750
       },
       "window_status": {
         "exists": true,
         "mtime": "2026-07-15T20:26:10Z",
-        "age_seconds": 1545949,
+        "age_seconds": 1888602,
         "size": 53853
       },
       "window_ledger": {
         "exists": true,
         "mtime": "2026-08-02T17:51:59Z",
-        "age_seconds": 0,
+        "age_seconds": 342653,
         "size": 327781
       },
       "events": {
         "exists": true,
         "mtime": "2026-07-24T18:39:44Z",
-        "age_seconds": 774735,
+        "age_seconds": 1117388,
         "size": 3486985
       }
     }
@@ -52,8 +52,8 @@
     "pending": 7,
     "newest_card_at": "2026-07-14T04:10:54Z",
     "oldest_card_at": "2026-06-29T11:40:48Z",
-    "days_since_last_card": 19.57,
-    "campaign_days": 35
+    "days_since_last_card": 23.54,
+    "campaign_days": 39
   },
   "yield_quality": {
     "measured": true,
@@ -212,166 +212,84 @@
     "gen_model_present": 0,
     "gen_model_coverage_pct": 0.0,
     "gen_models": {},
-    "note": "audit_window already stamps production_metrics when wall-clock can be derived; historical ledger rows predate that path — coverage <100% is expected"
+    "post_cut": {
+      "windows": 99,
+      "wall_clock_present": 99,
+      "wall_clock_coverage_pct": 100.0,
+      "token_metrics_present": 12,
+      "token_coverage_pct": 12.1,
+      "gen_model_present": 0,
+      "gen_model_coverage_pct": 0.0,
+      "gen_models": {}
+    },
+    "historical": {
+      "windows": 374,
+      "wall_clock_present": 0,
+      "wall_clock_coverage_pct": 0.0,
+      "token_metrics_present": 0,
+      "token_coverage_pct": 0.0,
+      "gen_model_present": 0,
+      "gen_model_coverage_pct": 0.0,
+      "gen_models": {}
+    },
+    "note": "post_cut = rows stamped by the H1553/H2212 auto-derive path (has a wall_clock_source key) — this is the honest instrumentation-health number; historical = rows written before that path existed, where a null was never recoverable and is expected, not a gap"
+  },
+  "multi_lane": {
+    "measured": true,
+    "windows": 473,
+    "gen_model_present": 0,
+    "gen_model_coverage_pct": 0.0,
+    "gen_models": {},
+    "host_present": 0,
+    "host_coverage_pct": 0.0,
+    "hosts": {},
+    "profile_present": 0,
+    "profile_coverage_pct": 0.0,
+    "profiles": {},
+    "distinct_hosts": 0,
+    "distinct_profiles": 0,
+    "distinct_models": 0,
+    "multi_lane": false,
+    "note": "multi_lane=true when ≥2 distinct hosts, profiles, or gen_models appear; forward rows (H2231+) stamp host/profile/gen_model on every audit close; historical rows stay null until re-audited or best-effort backfill"
   },
   "health": {
     "measured": true,
     "ceiling_ms": 65000,
-    "probes": 31,
-    "go_count": 22,
-    "nogo_count": 9,
-    "go_pct": 71.0,
+    "probes": 2,
+    "go_count": 1,
+    "nogo_count": 1,
+    "go_pct": 50.0,
     "last": {
-      "ts": "2026-08-02T12:46:42.735Z",
+      "ts": "2026-08-05T09:58:33.977Z",
       "account": "c4",
-      "elapsed_ms": 66291,
-      "duration_api_ms": 16445,
-      "ceiling_ms": 65000,
+      "elapsed_ms": 300099,
+      "duration_api_ms": null,
+      "ceiling_ms": 80000,
       "verdict": "NO-GO",
       "model": "claude-sonnet-5",
-      "source": "h963_c4_gate0_probe_events.jsonl"
+      "source": "health_probe_log.jsonl"
     },
     "last_verdict": "NO-GO",
     "recent": [
       {
-        "ts": "2026-07-25T18:58:49.376Z",
-        "account": "c5",
-        "elapsed_ms": 52960,
+        "ts": "2026-08-05T09:53:33.854Z",
+        "account": "c4",
+        "elapsed_ms": 57207,
+        "duration_api_ms": 18310,
+        "ceiling_ms": 80000,
+        "verdict": "GO",
+        "model": "claude-sonnet-5",
+        "source": "health_probe_log.jsonl"
+      },
+      {
+        "ts": "2026-08-05T09:58:33.977Z",
+        "account": "c4",
+        "elapsed_ms": 300099,
         "duration_api_ms": null,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c5_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-07-26T02:37:26.786Z",
-        "account": "c1",
-        "elapsed_ms": 6424,
-        "duration_api_ms": null,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c1_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-07-31T18:59:59.255Z",
-        "account": "c4",
-        "elapsed_ms": 94606,
-        "duration_api_ms": null,
-        "ceiling_ms": 65000,
+        "ceiling_ms": 80000,
         "verdict": "NO-GO",
         "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-07-31T19:01:17.695Z",
-        "account": "c4",
-        "elapsed_ms": 78415,
-        "duration_api_ms": null,
-        "ceiling_ms": 65000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-01T20:21:03.067Z",
-        "account": "c4",
-        "elapsed_ms": 39437,
-        "duration_api_ms": 21171,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-01T20:21:53.433Z",
-        "account": "c4",
-        "elapsed_ms": 50336,
-        "duration_api_ms": 27557,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T05:47:17.844Z",
-        "account": "c4",
-        "elapsed_ms": 55390,
-        "duration_api_ms": 37690,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T05:48:01.692Z",
-        "account": "c4",
-        "elapsed_ms": 43815,
-        "duration_api_ms": 26386,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T07:48:25.138Z",
-        "account": "c4",
-        "elapsed_ms": 236328,
-        "duration_api_ms": 43646,
-        "ceiling_ms": 65000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T07:49:40.754Z",
-        "account": "c4",
-        "elapsed_ms": 75561,
-        "duration_api_ms": 29069,
-        "ceiling_ms": 65000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T11:05:16.821Z",
-        "account": "c4",
-        "elapsed_ms": 55803,
-        "duration_api_ms": 28603,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T11:06:53.389Z",
-        "account": "c4",
-        "elapsed_ms": 96520,
-        "duration_api_ms": 69137,
-        "ceiling_ms": 65000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T12:45:36.391Z",
-        "account": "c4",
-        "elapsed_ms": 61662,
-        "duration_api_ms": 27834,
-        "ceiling_ms": 65000,
-        "verdict": "GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
-      },
-      {
-        "ts": "2026-08-02T12:46:42.735Z",
-        "account": "c4",
-        "elapsed_ms": 66291,
-        "duration_api_ms": 16445,
-        "ceiling_ms": 65000,
-        "verdict": "NO-GO",
-        "model": "claude-sonnet-5",
-        "source": "h963_c4_gate0_probe_events.jsonl"
+        "source": "health_probe_log.jsonl"
       }
     ],
     "note": "GO if elapsed_ms ≤ latency ceiling (default 65s; H2011/H2174 c4 series)"
@@ -413,11 +331,46 @@
     "verb_scope_dcs": 749,
     "verb_remaining": 701,
     "verb_pct": 6.41,
-    "mean_cards_per_active_day_14d": 891.846,
-    "estimated_days_at_14d_card_rate": 0.8,
+    "mean_roots_promoted_per_active_day": 8.0,
+    "roots_promoted_active_days_sampled": 6,
+    "estimated_days_at_roots_per_day_rate": 87.6,
     "estimate_label": "estimate",
-    "note": "ETA divides remaining DCS-attested verb roots by mean cards/active-day (14d). Units differ (roots vs cards) — treat as order-of-magnitude only, not a schedule.",
-    "basis": "cards_rate_only"
+    "note": "ETA divides remaining DCS-attested verb roots by the mean roots promoted per active day (from store provenance timestamps of already-promoted roots) — rate unit is roots/day, matching the remaining-roots numerator; still an estimate.",
+    "basis": "verb_remaining / mean_roots_promoted_per_active_day",
+    "nominal": {
+      "measured": true,
+      "nominal_promoted": 41,
+      "nominal_scope": 5039,
+      "nominal_remaining": 4251,
+      "nominal_pct": 0.81,
+      "mean_keys_promoted_per_active_day": 20.5,
+      "keys_promoted_active_days_sampled": 2,
+      "estimated_days_at_keys_per_day_rate": 207.4,
+      "estimate_label": "estimate",
+      "note": "Nominal burn-down: remaining runnable candidates divided by the mean keys promoted per active day (store provenance timestamps of already-promoted keys). The rate is measured from the H317 test-window burst, not current throughput — the lane has been paused since (see pause_reason), so the ETA is not a live projection until it resumes.",
+      "basis": "nominal_remaining / mean_keys_promoted_per_active_day",
+      "medium50": {
+        "promoted": 2,
+        "total": 50,
+        "measured": true,
+        "status": "paused — kill-gate/self-heal budget cascade on dense band-4 nominal singletons",
+        "pause_reason": {
+          "code": "killgate_cascade",
+          "label": "paused — kill-gate/self-heal budget cascade on dense band-4 nominal singletons",
+          "detail": "H437 isolated a self-heal/kill-gate budget cascade on dense band-4 nominal singleton cards (2/37 clean, every window tripped MAX_AGENTS); H442 scoped the recalibration, still open. Not a data or scope problem — a harness heal-lane design question.",
+          "docs": [
+            "H437",
+            "H442",
+            "H462"
+          ],
+          "doc_urls": [
+            "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H437-Sonnet_RussianTranslation_pwg-ru-medium50-resume-post-h428_09.07.26.md",
+            "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H442-Opus_RussianTranslation_pwg-ru-killgate-recalibration-nominal-medium_09.07.26.md",
+            "https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H462-Fable_RussianTranslation_launch-telemetry-ledger-code-vs-docs-audit_10.07.26.md"
+          ]
+        }
+      }
+    }
   },
   "article_parity": {
     "measured": false,
@@ -428,6 +381,37 @@
     "parity_pct": null,
     "missing_from_article_sample": [],
     "note": "article_site/ not built on this machine — run python RussianTranslation/src/pilot/build_article_site.py then rebuild kitchen"
+  },
+  "promote_vs_generate": {
+    "measured": true,
+    "weekly": {
+      "cards_generated": 0,
+      "clean_windows": 0,
+      "windows_total": 0,
+      "clean_window_pct": null,
+      "promote_events": 0
+    },
+    "lifetime": {
+      "cards_generated": 11594,
+      "clean_windows": 3,
+      "windows_total": 473,
+      "clean_window_pct": 0.63,
+      "promote_events": 0
+    },
+    "promote_events_source": "no promote-typed event exists in dashboard_events.jsonl yet — ledger state==clean is used as the promoted-outcome proxy (B6 acceptance: distinguish generation volume from clean/promoted outcomes); promote_events weekly count is ts-filtered when such events appear (H2265)"
+  },
+  "collision_guard": {
+    "measured": true,
+    "blocked": false,
+    "banner": null,
+    "operator_one_liner": "If the kitchen collision banner is red (or collision_guard.blocked=true): DO NOT start a second paid window on those keys/root — a live job or recent store-hit / lease collision already holds them. Wait for the live job to finish or requeue that lease; only then import another window.",
+    "collision_count": 0,
+    "kind_counts": {},
+    "last": null,
+    "recent": [],
+    "live_jobs": [],
+    "live_job_count": 0,
+    "note": "Observability for existing store-hit preflight / occupied-keys / nominal lease collision aborts (OPT-8). Red banner means a recorded collision event — not a new concurrency protocol."
   },
   "speed": {
     "cards_last_hour": 0,
@@ -584,7 +568,7 @@
     "total_idle_seconds": 1549947,
     "total_idle_hours": 430.54,
     "mean_gap_seconds": 12204.307,
-    "current_idle_seconds": null,
+    "current_idle_seconds": 342654,
     "last_idle_seconds": 352265,
     "last_idle": {
       "from": "2026-07-11T18:34:18Z",
@@ -612,9 +596,9 @@
       },
       {
         "month": "2026-08",
-        "idle_seconds": 0,
-        "idle_days": 0.0,
-        "idle_hours": 0.0
+        "idle_seconds": 342654,
+        "idle_days": 3.97,
+        "idle_hours": 95.18
       }
     ],
     "recent_gaps": [
@@ -2104,46 +2088,10 @@
     }
   },
   "calendar": {
-    "start": "2026-04-05",
-    "end": "2026-08-02",
+    "start": "2026-04-09",
+    "end": "2026-08-06",
     "days": 120,
     "cells": [
-      {
-        "date": "2026-04-05",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
-      {
-        "date": "2026-04-06",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
-      {
-        "date": "2026-04-07",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
-      {
-        "date": "2026-04-08",
-        "cards": 0,
-        "windows": 0,
-        "idle_seconds": 0,
-        "idle_hours": 0,
-        "level": 0,
-        "idle": false
-      },
       {
         "date": "2026-04-09",
         "cards": 0,
@@ -3187,6 +3135,42 @@
         "idle_hours": 0,
         "level": 0,
         "idle": false
+      },
+      {
+        "date": "2026-08-03",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
+      },
+      {
+        "date": "2026-08-04",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
+      },
+      {
+        "date": "2026-08-05",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
+      },
+      {
+        "date": "2026-08-06",
+        "cards": 0,
+        "windows": 0,
+        "idle_seconds": 0,
+        "idle_hours": 0,
+        "level": 0,
+        "idle": false
       }
     ],
     "max_cards": 6033,
@@ -3199,134 +3183,174 @@
     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md",
     "entries": [
       {
-        "version": "1.137.3",
-        "date": "2026-08-02",
+        "version": "1.143.0",
+        "date": "2026-08-06",
         "bullets": [
           {
             "title": "Fixed",
-            "summary": "- **The cost table priced 1 h cache writes at the 5 m rate, under-reporting every CLI call by 1.6× on that line (H2190, 02-08-2026, Opus 5 `claude-opus-5`):** `PRICE['cache_write'] = 3.75` is the **five-minute** rate (1.25× base); every write the pwg_ru CLI lane produces lands…"
-          }
-        ]
-      },
-      {
-        "version": "1.137.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Added",
-            "summary": "- **Prompt-caching playbook of record + Opus practical handoffs (02-08-2026, Grok 4.5 `grok-4.5`):** single file [`PROMPT_CACHING_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PROMPT_CACHING_PWG_RU.md) consolidates standing truth (C…"
-          }
-        ]
-      },
-      {
-        "version": "1.135.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Added",
-            "summary": "- **H2158 Phase 1 — the pwg_ru route A/B, and the measurement that reframes it (02-08-2026, Opus 5 `claude-opus-5`):** two-arm harness [`h2158_route_ab.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2158_route_ab.py) (CLI-headles…"
-          }
-        ]
-      },
-      {
-        "version": "1.134.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Fixed",
-            "summary": "- **`b0` was never non-terminating — a per-card presplit floor was masked by the per-batch budget (H2160, 02-08-2026, Opus 5 1M `claude-opus-5[1m]`, [#983](https://github.com/gasyoun/SanskritLexicography/issues/983)):** the \"non-terminating call\" reading carried by 1.130.0 and…"
+            "summary": "- **The live gate priced a different call than the lane it gates — the probe spawned from the repo cwd, never adopting H2158's `bare_cli_cwd()` (H2299, 06-08-2026, Opus 5 1M `claude-opus-5[1m]`):** [`max_account_orchestrator._probe_call`](https://github.com/gasyoun/SanskritLex…"
           },
           {
             "title": "Added",
-            "summary": "- **`src/pilot/h2160_regen_medium50.py` — re-prepare the medium50 windows on the fixed predicate (H2160, 02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** replays the coordinator's own `prepare` invocation with every argument read back out of the existing manifest (no hand-retyped…"
+            "summary": "- **c4's measured-leg hang classified against all three named candidates, offline, with zero spend (H2299, 06-08-2026, Opus 5 1M `claude-opus-5[1m]`; probe executor Sonnet 5 `claude-sonnet-5`):** [C4_MEASURED_LEG_KILL_CEILING_HANG_CLASSIFICATION_06-08-2026.md](https://github.c…"
+          },
+          {
+            "title": "Changed",
+            "summary": "- **06-08-2026 — [`review_evidence_preflight.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_evidence_preflight.py) is now a re-export shim over `csl_pyutil.evidence` (H1889, Opus 5 1M `claude-opus-5[1m]`):** the H1887 gate was wr…"
           }
         ]
       },
       {
-        "version": "1.133.0",
-        "date": "2026-08-02",
+        "version": "1.142.12",
+        "date": "2026-08-05",
         "bullets": [
           {
             "title": "Added",
-            "summary": "- **c4 live gate returns `LIVE_GO` — first PASS of both halves, and the first per-CARD observed economics (H2011, 02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** `/pwg-live-gate` Steps 1–3 on c4, **3 paid calls** (2 gate + 1 canary), **no bounded window, no promotion, no store w…"
-          },
-          {
-            "title": "Fixed",
-            "summary": "- **The `h1339_offline_bench` byte-identity control is stale — filed, not silently re-baselined (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** H2011's Definition of Done requires re-verifying deterministic signature `9bd2a14297`. It does not reproduce at **any** commit tested …"
+            "summary": "- **05-08-2026 c4 gate-0 sitting recorded: HEALTH_NOGO again, but a different death — and the two NO-GO days must not be conflated (`/pwg-live-gate`, 05-08-2026, Opus 5 1M `claude-opus-5[1m]`; probe executor Sonnet 5 `claude-sonnet-5`):** run `#730`, policy `production_v3`. Wa…"
           }
         ]
       },
       {
-        "version": "1.132.0",
-        "date": "2026-08-02",
+        "version": "1.142.11",
+        "date": "2026-08-05",
+        "bullets": [
+          {
+            "title": "Fixed",
+            "summary": "- **Two docs stated a next-legal-probe time 362 s too early, and an unattended one-shot was armed on it (H2259, 05-08-2026, Opus 5 1M `claude-opus-5[1m]`):** the 03-08 `/pwg-live-gate` write-up and the matching [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/b…"
+          },
+          {
+            "title": "Added",
+            "summary": "- **The 03-08 attempt-2 gate reading is on the record with its actual ending, not a remembered one (H2259):** a dated entry in [`RESULTS_LOG.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md) with both fires (the 10:36Z smoke te…"
+          }
+        ]
+      },
+      {
+        "version": "1.142.0",
+        "date": "2026-08-03",
+        "bullets": [
+          {
+            "title": "Fixed",
+            "summary": "- **`bare_cli_cwd()` handed out a directory that only *looked* bare — 32 779 B of operator memory in every paid call since H2158 (H2249, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** the H2158 ancestor walk rejected a parent carrying a bare `CLAUDE.md` or a `.git`, but **not**…"
+          },
+          {
+            "title": "Changed",
+            "summary": "- **LANG_PARITY: 5 entries re-derived on `headless_worker.py` (+ 1 on its selftest) (H2249), every verdict SHARED, unchanged.** Grounds mechanical: **0** language-keyed tokens (`lang` / `russian` / `english` / `--lang` / `FIELD[` / `CARD_FIELD`) in the added lines. The change …"
+          },
+          {
+            "title": "Added",
+            "summary": "- **The R4.1 halt rule finally has a trigger, and auto-promote now fails CLOSED without it (H2264, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** H2175 built both halves of ruling R4.1 — [`spot_check_daily.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/Russian…"
+          }
+        ]
+      },
+      {
+        "version": "1.141.7",
+        "date": "2026-08-03",
         "bullets": [
           {
             "title": "Changed",
-            "summary": "- **The operator playbook now carries the H2152/H2158 cost rules — and a stale rule surfaced while propagating them (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** the measurements had landed in `RESULTS_LOG`/FINDINGS and the code fix in 1.130.0, but not in the docs a session r…"
+            "summary": "- **The translation prompt is assembled stable-left (H2191, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** `build_prompt` now emits `preamble + translation + grammar + [nws] + card blocks` instead of `preamble + grammar + translation + …`, putting the run-invariant framework (p…"
           }
         ]
       },
       {
-        "version": "1.131.0",
-        "date": "2026-08-02",
+        "version": "1.141.4",
+        "date": "2026-08-03",
         "bullets": [
           {
-            "title": "Added",
-            "summary": "- **`src/pilot/canary_gate.py` — the canary half of the live gate, as code (H2159, 02-08-2026, Fable 5 `claude-fable-5`):** H2025 audit gap G4 (F-B2/F-B3, the largest non-money gap). The `/pwg-live-gate` canary verdict (\"3/3 senses + zero SAN-LOSS/TNMASK\") existed only as skil…"
-          }
-        ]
-      },
-      {
-        "version": "1.130.0",
-        "date": "2026-08-02",
-        "bullets": [
+            "title": "Fixed",
+            "summary": "- **The nonstop scheduler swallowed its own failures, corrupting the metric that judges it (H2246, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** [`nonstop_scheduler.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/nonstop_scheduler.…"
+          },
           {
             "title": "Added",
-            "summary": "- **The CLI child now spawns from a bare cwd, not the repo (02-08-2026, Opus 5 1M `claude-opus-5[1m]`, H2158/[#983](https://github.com/gasyoun/SanskritLexicography/issues/983)):** v1.127.0 measured the win (**−33 % cost, −30 % wall clock**) but made no code change. `proc_tree.…"
+            "summary": "- **`corpus/` is part of the `--data-root` layout at last (H2246):** [`data_inventory.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/data_inventory.py) migrates a ~592 MB `corpus/` bucket of corpus-gate dictionaries and calls it a…"
+          },
+          {
+            "title": "Changed",
+            "summary": "- **The oral→A grade gate now honors the 19-07-2026 MG ruling: consensus with a written work promotes (H2193, 03-08-2026, Fable 5 `claude-fable-5`).** [`tm_grade.build_consensus`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py) c…"
           },
           {
             "title": "Fixed",
-            "summary": "- **The 300 s ceiling is validated for the heal lane and refuted for the whole-card lane (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** re-run `h1447-m50-2026-08-02b` after [v1.128.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.128.0), stopped externally af…"
+            "summary": "- **The presplit group budget was blind to the evidence block that dominates every fragment call (H2248, [#983](https://github.com/gasyoun/SanskritLexicography/issues/983), 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** `heal_group` re-sends the card's whole portrait on **every…"
           }
         ]
       },
       {
-        "version": "1.129.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Fixed",
-            "summary": "- **`--execute` now requires both ceilings (H2157, 02-08-2026, Fable 5 `claude-fable-5`):** H2025 audit gap G3 (F-B1) — `--max-calls` and `--cost-ceiling` both defaulted to `None`, `cost_ceiling_evaluable` explicitly passed when unset, and the supervisor skipped both checks on…"
-          }
-        ]
-      },
-      {
-        "version": "1.128.0",
-        "date": "2026-08-02",
+        "version": "1.141.3",
+        "date": "2026-08-03",
         "bullets": [
           {
             "title": "Changed",
-            "summary": "- **The per-call ceiling relaxed 180 s → 300 s, by explicit human ruling (02-08-2026, Opus 5 1M `claude-opus-5[1m]`, [#983](https://github.com/gasyoun/SanskritLexicography/issues/983)):** the standing `\"NOTHING runs past 3 min (MG)\"` rule (R4/C-15, H189) was the direct cause o…"
+            "summary": "- **c4 gate-0 reading 03-08-2026 — `HEALTH_NOGO`, and the first sitting to exercise the unblocked canary path (Opus 5 1M `claude-opus-5[1m]`; probe executor Sonnet 5 `claude-sonnet-5`):** one sitting, 2 paid calls, **$0.976**. Measured **297 949 ms** wall / **276 183 ms** rout…"
           }
         ]
       },
       {
-        "version": "1.127.0",
+        "version": "1.141.0",
+        "date": "2026-08-03",
+        "bullets": [
+          {
+            "title": "Added",
+            "summary": "- **The canary manifest builder's output shape is now PINNED, and the real command is documented (H2245, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** [`canary_manifest_build_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot…"
+          },
+          {
+            "title": "Fixed",
+            "summary": "- **`/pwg-live-gate` Step 2 and `RUN_FREQ_MAX.md` §A2 named no runnable command (H2245, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** both marked the canary invocation \"illustrative\" with a placeholder `<canary_manifest.json>`, which is what made the canary leg one-session fol…"
+          },
+          {
+            "title": "Changed",
+            "summary": "- **LANG_PARITY: 36 entries re-derived on `window_selftest.py` (H2245), every verdict unchanged.** Grounds mechanical: a pure `+17`-line addition of one language-agnostic test, **0** language-keyed tokens in the diff, no target-language field touched, no `--lang` branch. Ledge…"
+          }
+        ]
+      },
+      {
+        "version": "1.139.0",
+        "date": "2026-08-03",
+        "bullets": [
+          {
+            "title": "Added",
+            "summary": "- **A committed builder for the canary manifest (H2174, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** new [`canary_manifest_build.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/canary_manifest_build.py) emits an executable manifes…"
+          },
+          {
+            "title": "Fixed",
+            "summary": "- **`canary_gate.py` could never emit GO for the one fixture it exists to judge (H2174, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** the literal `SAN-LOSS`/`UNMAPPED` marker scan read the **whole card**, including the free-text `notes`. The curated H994 control's portrait `no…"
+          }
+        ]
+      },
+      {
+        "version": "1.138.0",
+        "date": "2026-08-03",
+        "bullets": [
+          {
+            "title": "Added",
+            "summary": "- **H2175 Wave 1 — nonstop multilane runtime (02-08-2026, Fable 5 `claude-fable-5`, override dual-run for Opus 5):** the idle-time fix, built end-to-end behind flags. **Data home:** private [gasyoun/pwg-ru-data](https://github.com/gasyoun/pwg-ru-data) (R2.2) created with LFS r…"
+          },
+          {
+            "title": "Fixed",
+            "summary": "- **H2116 dual-run compare — independent re-verify of PR #964 offline batch (03-08-2026, Sonnet 5 `claude-sonnet-5`):** residual for the H2005/gloss_lang-§464/glyph-quarantine override lane executed by Grok 4.5. All 5 deliverables re-verified against source + selftests: `_ls_v…"
+          },
+          {
+            "title": "Changed",
+            "summary": "- **The probe ceiling is DERIVED at last — and the number was never the bug, the single-number *shape* was (H2138, #946, 03-08-2026, Opus 5 1M `claude-opus-5[1m]`):** `probe_log.POLICIES` gains **`production_v3`** — `latency_ceil_ms` **80 000** plus a new **`api_ceil_ms` 45 00…"
+          }
+        ]
+      },
+      {
+        "version": "1.137.7",
+        "date": "2026-08-03",
+        "bullets": [
+          {
+            "title": "Fixed",
+            "summary": "- **OPT-1 EN promote parity — better-attempt + defect refuse + model-id (H2224, 02-08-2026, Grok 4.5 `grok-4.5`):** [`promote_en.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/promote_en.py) gains RU twins of B08 better-attempt-wins (co…"
+          }
+        ]
+      },
+      {
+        "version": "1.137.6",
         "date": "2026-08-02",
         "bullets": [
           {
             "title": "Added",
-            "summary": "- **`src/pilot/cache_prefix_stability_probe.py` — settle WHY every call re-creates its cache (02-08-2026, Opus 5 1M `claude-opus-5[1m]`):** [#986](https://github.com/gasyoun/SanskritLexicography/pull/986) left two candidates — an unstable prefix across `claude -p` invocations,…"
-          }
-        ]
-      },
-      {
-        "version": "1.126.0",
-        "date": "2026-08-02",
-        "bullets": [
-          {
-            "title": "Fixed",
-            "summary": "- **H2144 D4b bracket-normalize unlock for the 63-row PWG fullwidth-paren residual (02-08-2026, Sonnet 5 `claude-sonnet-5`):** extends [`d4_boundary_wrap.try_boundary_wrap`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/d4_boundary_wr…"
+            "summary": "- **PWG translation duplication → optimization inventory (02-08-2026, Grok 4.5 `grok-4.5`, H2222):** durable map of *intentional* vs *unjustified* duplication so the next session hunts **code/logic twins**, not edition restates or style doublets. Taxonomy A–D (lexicographic / …"
           }
         ]
       }
@@ -3344,7 +3368,9 @@
       "clean_key_count": 18,
       "wall_clock_minutes": 6.162,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:30Z",
@@ -3356,7 +3382,9 @@
       "clean_key_count": 9,
       "wall_clock_minutes": 11.083,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:31Z",
@@ -3368,7 +3396,9 @@
       "clean_key_count": 1,
       "wall_clock_minutes": 3.338,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:33Z",
@@ -3380,7 +3410,9 @@
       "clean_key_count": 18,
       "wall_clock_minutes": 4.07,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:35Z",
@@ -3392,7 +3424,9 @@
       "clean_key_count": 8,
       "wall_clock_minutes": 3.496,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:38Z",
@@ -3404,7 +3438,9 @@
       "clean_key_count": 19,
       "wall_clock_minutes": 5.744,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:40Z",
@@ -3416,7 +3452,9 @@
       "clean_key_count": 14,
       "wall_clock_minutes": 4.531,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:42Z",
@@ -3428,7 +3466,9 @@
       "clean_key_count": 4,
       "wall_clock_minutes": 139.56,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:44Z",
@@ -3440,7 +3480,9 @@
       "clean_key_count": 3,
       "wall_clock_minutes": 14.078,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:46Z",
@@ -3452,7 +3494,9 @@
       "clean_key_count": 1,
       "wall_clock_minutes": 9.736,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:25:49Z",
@@ -3464,7 +3508,9 @@
       "clean_key_count": 5,
       "wall_clock_minutes": 3.52,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     },
     {
       "recorded_at": "2026-07-15T20:26:10Z",
@@ -3476,7 +3522,9 @@
       "clean_key_count": 19,
       "wall_clock_minutes": 5.744,
       "tokens": null,
-      "gen_model": null
+      "gen_model": null,
+      "host": null,
+      "profile": null
     }
   ],
   "last_window": {
@@ -3489,6 +3537,8 @@
     "clean_key_count": 19,
     "wall_clock_minutes": 5.744,
     "tokens": null,
-    "gen_model": null
+    "gen_model": null,
+    "host": null,
+    "profile": null
   }
 }

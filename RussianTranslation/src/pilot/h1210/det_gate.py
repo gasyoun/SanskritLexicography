@@ -81,7 +81,7 @@ def deterministic_audit(card, c, field='russian'):
         issues.append(
             "fidelity: masked spans missing from senses' german: "
             + ','.join(missing_fid[:20])
-            + ' — EVERY {Tn} from the source must appear in a sense\'s german AND russian,'
+            + ' — EVERY {Tn} from the source must appear in a sense\'s german AND ' + field + ','
             ' in source order; card.notes must NOT hold source {Tn} spans (notes is never'
             ' unmasked, so content parked there is LOST)')
     if invented_fid:
@@ -169,6 +169,22 @@ def selftest():
     r = deterministic_audit(empty, c)
     check('empty russian -> empty-russian issue',
           any(i.startswith('empty-russian') for i in r['issues']))
+
+    # H2226: EN target field path (same gate, different field name)
+    en_clean = _card([{'tag': '1', 'german': 'x {T1}', 'english': 'x {T1}'},
+                      {'tag': '2', 'german': 'y {T2}', 'english': 'y {T2}'}])
+    r = deterministic_audit(en_clean, c, field='english')
+    check('EN clean card -> no issues', r['issues'] == [] and r['coverage'] == 1)
+    en_drop = _card([{'tag': '1', 'german': 'x {T1}', 'english': 'x'},
+                     {'tag': '2', 'german': 'y {T2}', 'english': 'y {T2}'}])
+    r = deterministic_audit(en_drop, c, field='english')
+    check('EN target drop -> translation-fidelity names english',
+          any('english' in i and i.startswith('translation-fidelity:') for i in r['issues']))
+    en_empty = _card([{'tag': '1', 'german': 'x {T1}', 'english': '  '},
+                      {'tag': '2', 'german': 'y {T2}', 'english': 'y {T2}'}])
+    r = deterministic_audit(en_empty, c, field='english')
+    check('empty english -> empty-english issue',
+          any(i.startswith('empty-english') for i in r['issues']))
 
     # grammar carries fidelity tokens too (record-level TOKEN_FIDELITY_FIELDS)
     in_grammar = _card([{'tag': '1', 'german': 'x', 'russian': 'х {T1}'},

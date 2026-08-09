@@ -1,0 +1,222 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "_ac_arya",
+ "produced_at": 1786195176,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "fill",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  }
+ },
+ "sense_inventory": [
+  {
+   "i": 0,
+   "de_anchor": "1〉 <lex>m.</lex>\n<div n=\"2\"> a〉 {%Lehrer%}, <ab>insbes.</ab> von {%einem Brahmanen, der seinen Schüler mit der heiligen Schnur umgürtet und denselben in die hei…",
+   "sense_tag": "1",
+   "note": "de_raw:_ac_arya.raw.txt"
+  },
+  {
+   "i": 1,
+   "de_anchor": "2〉 <lex>f.</lex> {#˚yA#} {%Lehrerin%} <ls>AK. 2,6,1,14</ls>. <ls>H. 524</ls>. <ls>SIDDH. K.</ls>_zu_<ls>P. 4,1,49</ls>. <ab>Vgl.</ab> {#AcAryAnI#}. — Man pflegt…",
+   "sense_tag": "2",
+   "note": "de_raw:_ac_arya.raw.txt"
+  }
+ ],
+ "tm_fuzzy_hits": [],
+ "compound_candidates": [],
+ "citation_normalize": [
+  {
+   "raw": "<ls>VOP. 26,16</ls>",
+   "normalized": "<ls>VOP. 26,16</ls>"
+  },
+  {
+   "raw": "<ls>AK. 2,7,7</ls>",
+   "normalized": "<ls>AK. 2,7,7</ls>"
+  },
+  {
+   "raw": "<ls>TRIK. 3,2,12</ls>",
+   "normalized": "<ls>TRIK. 3,2,12</ls>"
+  },
+  {
+   "raw": "<ls>H. 78</ls>",
+   "normalized": "<ls>H. 78</ls>"
+  },
+  {
+   "raw": "<ls>AV. 11,5,1</ls>",
+   "normalized": "<ls>AV. 11,5,1</ls>"
+  },
+  {
+   "raw": "<ls>ŚAT. BR. 3,6,2,15</ls>",
+   "normalized": "<ls>ŚAT. BR. 3,6,2,15</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR.\">10,1,4,10</ls>",
+   "normalized": "<ls n=\"ŚAT. BR.\">10,1,4,10</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR.\">11,3,3,3</ls>",
+   "normalized": "<ls n=\"ŚAT. BR.\">11,3,3,3</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR. 11,3,3,\">6</ls>",
+   "normalized": "<ls n=\"ŚAT. BR. 11,3,3,\">6</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR. 11,3,3,\">7</ls>",
+   "normalized": "<ls n=\"ŚAT. BR. 11,3,3,\">7</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR. 11,\">5,4,2</ls>",
+   "normalized": "<ls n=\"ŚAT. BR. 11,\">5,4,2</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR. 11,3,3,\">12</ls>",
+   "normalized": "<ls n=\"ŚAT. BR. 11,3,3,\">12</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR.\">12,2,2,13</ls>",
+   "normalized": "<ls n=\"ŚAT. BR.\">12,2,2,13</ls>"
+  },
+  {
+   "raw": "<ls>TAITT. UP. 1,3,5</ls>",
+   "normalized": "<ls>TAITT. UP. 1,3,5</ls>"
+  },
+  {
+   "raw": "<ls>ĀŚV. GṚHY. 3,4</ls>",
+   "normalized": "<ls>ĀŚV. GṚHY. 3,4</ls>"
+  },
+  {
+   "raw": "<ls>KAUŚ. 92</ls>",
+   "normalized": "<ls>KAUŚ. 92</ls>"
+  },
+  {
+   "raw": "<ls>NIR. 1,4</ls>",
+   "normalized": "<ls>NIR. 1,4</ls>"
+  },
+  {
+   "raw": "<ls n=\"NIR.\">7,22</ls>",
+   "normalized": "<ls n=\"NIR.\">7,22</ls>"
+  },
+  {
+   "raw": "<ls>P. 6,2,36</ls>",
+   "normalized": "<ls>P. 6,2,36</ls>"
+  },
+  {
+   "raw": "<ls>M. 2,140</ls>",
+   "normalized": "<ls>M. 2,140</ls>"
+  },
+  {
+   "raw": "<ls>YĀJÑ. 1,34</ls>",
+   "normalized": "<ls>YĀJÑ. 1,34</ls>"
+  },
+  {
+   "raw": "<ls n=\"M. 2,\">145</ls>",
+   "normalized": "<ls n=\"M. 2,\">145</ls>"
+  },
+  {
+   "raw": "<ls n=\"M. 2,\">171</ls>",
+   "normalized": "<ls n=\"M. 2,\">171</ls>"
+  },
+  {
+   "raw": "<ls n=\"M. 2,\">225</ls>",
+   "normalized": "<ls n=\"M. 2,\">225</ls>"
+  },
+  {
+   "raw": "<ls n=\"M.\">4,182</ls>",
+   "normalized": "<ls n=\"M.\">4,182</ls>"
+  },
+  {
+   "raw": "<ls n=\"M.\">3,162</ls>",
+   "normalized": "<ls n=\"M.\">3,162</ls>"
+  },
+  {
+   "raw": "<ls>TAITT. UP. 1,11,2</ls>",
+   "normalized": "<ls>TAITT. UP. 1,11,2</ls>"
+  },
+  {
+   "raw": "<ls>P. 1,3,36</ls>",
+   "normalized": "<ls>P. 1,3,36</ls>"
+  },
+  {
+   "raw": "<ls>H. p. 15</ls>",
+   "normalized": "<ls>H. p. 15</ls>"
+  },
+  {
+   "raw": "<ls>VOP. p. 175</ls>",
+   "normalized": "<ls>VOP. p. 175</ls>"
+  },
+  {
+   "raw": "<ls>TRIK. 2,8,19</ls>",
+   "normalized": "<ls>TRIK. 2,8,19</ls>"
+  },
+  {
+   "raw": "<ls>BHAG. 1,2</ls>",
+   "normalized": "<ls>BHAG. 1,2</ls>"
+  },
+  {
+   "raw": "<ls>AK. 2,6,1,14</ls>",
+   "normalized": "<ls>AK. 2,6,1,14</ls>"
+  },
+  {
+   "raw": "<ls>H. 524</ls>",
+   "normalized": "<ls>H. 524</ls>"
+  },
+  {
+   "raw": "<ls>SIDDH. K.</ls>",
+   "normalized": "<ls>SIDDH. K.</ls>"
+  },
+  {
+   "raw": "<ls>P. 4,1,49</ls>",
+   "normalized": "<ls>P. 4,1,49</ls>"
+  },
+  {
+   "raw": "<ls>MBH. 14,678</ls>",
+   "normalized": "<ls>MBH. 14,678</ls>"
+  },
+  {
+   "raw": "<ls>ŚAT. BR. 11,3,3,7</ls>",
+   "normalized": "<ls>ŚAT. BR. 11,3,3,7</ls>"
+  },
+  {
+   "raw": "<ls>ĀPAST.</ls>",
+   "normalized": "<ls>ĀPAST.</ls>"
+  },
+  {
+   "raw": "<ls>SAṂHITOPAN. 36,5</ls>",
+   "normalized": "<ls>SAṂHITOPAN. 36,5</ls>"
+  }
+ ],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\input\\_ac_arya.raw.txt"
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "prep_only",
+ "det": {
+  "ok": true,
+  "gate": "prep",
+  "issues": [],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 0,
+  "source_senses": 2,
+  "had_draft_card": false
+ },
+ "tm_fence": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "step": "[4] same promoter + TM fence",
+  "note": "TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM",
+  "n_hits_ranked": 0
+ },
+ "store_write": false
+}
