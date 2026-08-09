@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.144.23] - 2026-08-09
+
 ### Fixed
 - **OntoLex/vartrans/PROV-O fixture regenerated — was stale against source, not a generator bug (H2409, 09-08-2026, Sonnet 5 `claude-sonnet-5`):** [`lod_acceptance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/lod_acceptance.py) was failing B3 source-coverage (`distinct citations match source -- graph=372 source=378`) and B1 byte-identical regeneration on [`release/fixture/pwg_ru_lod.ttl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/fixture/pwg_ru_lod.ttl). Root cause confirmed by direct comparison of `export_lod.py` output against source: the **generator already emits real `https://w3id.org/sanskrit-lexicon/repwg/` IRIs plus vartrans + PROV-O fields correctly** (per [LOD_GRAPH.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/LOD_GRAPH.md), H350/E7) — the committed fixture was simply generated 2026-07-08, before `pwg_ru_translated.jsonl` gained new `{%...%}` gloss-delimiter markup and 6 additional `<ls>` citations (ṚV. 4,33,4 / 4,50,2 / 10,68,1 / 1,163,5 / 8,48,5 / 1,62,10). Regenerated in place (`--generated-at 2026-07-08` pinned to keep the diff content-only, 65 insertions / 31 deletions); `lod_acceptance.py` now reports **ACCEPTANCE PASSED** across all B1/B3/C5/C6/D2/D3 checks, structural invariants, and SHACL conformance. `export_interop.py`'s legacy `example.org` prefix is untouched by design (documented non-goal — it produces the separate TEI Lex-0 artifact). [PR #1611](https://github.com/gasyoun/SanskritLexicography/pull/1611).
 
