@@ -13,6 +13,15 @@ Primary lemma per form = the one carried by the most kosha entries (ties -> shor
 prefer the root over a longer derived stem). Forms kosha also misses stay unresolved and are
 reported in the typology (Stage E).
 
+Krdanta-collapse guard (H2194, wave-2 defect class 2): kosha lists a krdanta-derived
+Subanta under the bare dhatu as its lemma (janitf -> 12 entries lemma=jan vs 3 lemma=janitf;
+rAmeRa -> 6 lemma=ram vs 4 lemma=rAma), so raw entry-count voting lemmatizes a derived
+nominal to a verbal root — the panel's ruling is that the nominal stem, not the root, is
+the lemma. When a form has at least one noun candidate whose pratipadika is Basic (a real
+nominal stem, not a krdanta collapse), Krdanta-only noun candidates are demoted to
+alternates; they stay in the ambiguity trail. Forms with no Basic candidate keep the old
+pick unchanged.
+
   python build_vidyut_fallback.py [path/to/vidyut_data/kosha]
 """
 import os, sys, collections
@@ -35,19 +44,45 @@ def pos_of(entry):
     return 'noun'
 
 
-def pick_primary_and_alts(lp):
+def is_basic_pratipadika(entry):
+    """True when a Subanta entry inflects a Basic pratipadika (a real nominal
+    stem). Krdanta-derived entries carry the bare dhatu as `lemma` instead —
+    the collapse behind wave-2 defect class 2. Same type-name idiom as pos_of;
+    Tinanta/avyaya entries have no pratipadika_entry and return False."""
+    try:
+        pe = entry.pratipadika_entry
+    except Exception:
+        return False
+    return pe is not None and 'Basic' in type(pe).__name__
+
+
+def pick_primary_and_alts(lp, basic=None):
     """Choose the primary (lemma, pos) for a form and list its competitors.
 
     lp: Counter mapping (lemma, pos) -> n_entries. Primary = most entries, then
     SHORTEST lemma (prefer the root over a longer derived stem) — identical to
-    the original max(..., key=(cnt, -len)). Returns
-    (primary_lemma, primary_pos, primary_n, alts), where
+    the original max(..., key=(cnt, -len)).
+
+    basic: optional set of (lemma, pos) keys backed by >=1 Basic-pratipadika
+    entry. When given and at least one noun candidate is in it, noun candidates
+    NOT in it (krdanta collapses to a bare dhatu) are demoted below every
+    Basic-backed or non-noun candidate — the nominal stem, not the root, is the
+    lemma (H2194). Demoted candidates stay in the alternates trail. basic=None
+    (or no Basic noun candidate) reproduces the pre-H2194 ranking exactly.
+
+    Returns (primary_lemma, primary_pos, primary_n, alts), where
     alts = [(lemma, pos, n)] for every non-primary candidate (W1.3 ambiguity
     trail — the same competitors that only bumped a bare `ambiguous` counter
     before), or None when lp is empty."""
     if not lp:
         return None
-    ranked = sorted(lp.items(), key=lambda kv: (-kv[1], len(kv[0][0])))
+    demote_krdanta = bool(basic) and any(
+        key[1] == 'noun' and key in basic for key in lp)
+    def rank(kv):
+        (lem, pos), n = kv
+        demoted = (demote_krdanta and pos == 'noun' and (lem, pos) not in basic)
+        return (demoted, -n, len(lem))
+    ranked = sorted(lp.items(), key=rank)
     (plem, ppos), pn = ranked[0]
     alts = [(lem, pos, n) for (lem, pos), n in ranked[1:]]
     return plem, ppos, pn, alts
@@ -86,17 +121,25 @@ def main():
             if not ents:
                 stats['unresolved'] += 1
                 continue
-            # tally (lemma, pos) across entries
+            # tally (lemma, pos) across entries; remember which candidates a
+            # Basic (real-stem) pratipadika backs, for the krdanta-collapse guard
             lp = collections.Counter()
+            basic = set()
             for e in ents:
                 lem = getattr(e, 'lemma', None)
                 if lem:
-                    lp[(lem, pos_of(e))] += 1
-            picked = pick_primary_and_alts(lp)
+                    key = (lem, pos_of(e))
+                    lp[key] += 1
+                    if is_basic_pratipadika(e):
+                        basic.add(key)
+            picked = pick_primary_and_alts(lp, basic)
             if picked is None:
                 stats['unresolved'] += 1
                 continue
             lemma, pos, cnt, alts = picked
+            naive = pick_primary_and_alts(lp)
+            if naive and (naive[0], naive[1]) != (lemma, pos):
+                stats['krdanta_repick'] += 1   # guard changed the primary (H2194)
             out.write(f'{form}\t{lemma}\t{pos}\t{cnt}\n')
             hit += 1
             stats[pos] += 1
@@ -110,7 +153,8 @@ def main():
     print(f'[C] {n} missed forms -> vidyut recovered {hit} '
           f'({100*hit/n:.1f}%); {stats["unresolved"]} still unresolved', file=sys.stderr)
     print(f'[C] pos: verb={stats["verb"]} noun={stats["noun"]} ind={stats["ind"]}; '
-          f'ambiguous={stats["ambiguous"]}', file=sys.stderr)
+          f'ambiguous={stats["ambiguous"]}; '
+          f'krdanta_repick={stats["krdanta_repick"]}', file=sys.stderr)
     print(f'[C] -> {outp}', file=sys.stderr)
     print(f'[C] ambiguity trail -> {ambp}', file=sys.stderr)
 

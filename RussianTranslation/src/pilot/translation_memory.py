@@ -332,6 +332,70 @@ def _atomic_extend_plain_jsonl(path, rows, fault_hook=None):
         raise
 
 
+def stamp_denylist_from_last_audit(keys, lang='ru', fshas=(), root='',
+                                   reason='last_audit_defect', path=None,
+                                   inp_dir=None, timestamp=None):
+    """Invalidate TM card/fragment addresses from the last *defect* audit outcome.
+
+    Residual OPT-7 / Uprava FINDINGS §31: content-addressed TM reuses by input hash,
+    not by whether the cached translation passed QA. Defect requeue already forces
+    ``--no-tm``; this stamps the denylist at **audit outcome** time so a default
+    ``--tm=auto`` path (operator forgets ``--no-tm``, or bypasses requeue_from_audit)
+    still refuses the failed hash and forces a real re-translate.
+
+    False-invalidation controls (do NOT weaken these):
+      * only **defect** keys/fshas — never transient nulls
+      * callers MUST skip crashed-auditor blast-radius sets (B11 / refuse_crashed_audit)
+      * clean keys are never listed; held-out clean TM still serves
+      * promote still clears via append_unblock once a gate-passing replacement lands
+
+    Returns (n_card_addresses, n_fragment_fshas) appended.
+    """
+    from window_common import sha256_file  # local import: avoid circular at module load
+    if lang not in ('ru', 'en'):
+        raise ValueError('lang must be ru|en, got %r' % lang)
+    p = denylist_path(path)
+    now = timestamp or datetime.datetime.now(datetime.timezone.utc).isoformat(
+        timespec='seconds').replace('+00:00', 'Z')
+    # H1386 / gen_opt: PWG_INPUT_DIR can redirect raw inputs for hermetic harnesses.
+    base_inp = inp_dir or os.environ.get('PWG_INPUT_DIR') or os.path.join(HERE, 'input')
+    n = 0
+    for k in keys or ():
+        raw = os.path.join(base_inp, k + '.raw.txt')
+        if not os.path.exists(raw):
+            continue
+        address = '%s:%s' % (lang, sha256_file(raw))
+        append_jsonl_line(p, {
+            'schema': 'pwg.translation_memory.denylist.v1',
+            'kind': 'card',
+            'address': address,
+            'key': k,
+            'root': root or '',
+            'lang': lang,
+            'last_audit_outcome': 'defect',
+            'reason': reason,
+            'blocked_at': now,
+        })
+        n += 1
+    nf = 0
+    for fsha in fshas or ():
+        fsha = (fsha or '').strip()
+        if not fsha:
+            continue
+        append_jsonl_line(p, {
+            'schema': 'pwg.translation_memory.denylist.v1',
+            'kind': 'frag',
+            'fsha': fsha,
+            'root': root or '',
+            'lang': lang,
+            'last_audit_outcome': 'defect',
+            'reason': reason + '_fragment' if reason else 'last_audit_defect_fragment',
+            'blocked_at': now,
+        })
+        nf += 1
+    return n, nf
+
+
 def append_unblock(addresses=(), fshas=(), reason='', path=None,
                    timestamp=None, fault_hook=None):
     """B12 (H1339): supersede matching denylist entries with 'unblock' rows.

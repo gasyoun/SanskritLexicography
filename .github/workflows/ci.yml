@@ -121,14 +121,47 @@ jobs:
           # read-only gloss TM lookup. The build_*.py and saru_gloss_*.py modules
           # import cleanly because their heavy deps (vidyut, vidyut.cheda,
           # indic_transliteration) are imported lazily inside main()/to_slp1().
-          pip install pytest
+          # H2254: `jsonschema` joins pytest here. rv_spine_build.validate_jsonl imports it
+          # lazily, and the committed RV spine JSONL it validates IS present in CI -- so
+          # unlike the sibling-data tests (which skip, because their data genuinely is not
+          # there) this one was a real, fixable missing dependency, not a false red. It only
+          # became visible once the whole-suite gate stopped dying at collection.
+          pip install pytest jsonschema
           pytest tests/test_saru_gloss_pipeline.py tests/test_saru_gloss_wave2.py tests/test_saru_gloss_wave3.py tests/test_saru_gloss_tm.py -q
+      - name: Install the shared review-sheet emitter (H1808)
+        # g5_card_render imports csl_pyutil.anatomy at module load, so this lane
+        # needs the package rather than just py_compile. Pinned to the TAG, not
+        # `@main` as the repo requirements.txt does, so a CI run stays reproducible.
+        #
+        # H2254 (07-08-2026): MOVED UP, from after the TM-hardening lane to here.
+        # The H2252 truth gate below collects the WHOLE suite, and two of its tests
+        # (test_nws_ls_markup.py, test_rv_spine.py) transitively import csl_pyutil --
+        # so with the install still downstream, `pytest tests -q` died at COLLECTION
+        # with ModuleNotFoundError and the job exited 2 before reaching this step.
+        # CI was red at master HEAD for this reason. It is the H2252 defect class in
+        # its ordering form: a step that runs the whole suite has to be preceded by
+        # every dependency the named steps install piecemeal, and nothing enforced
+        # that. Keep this install ABOVE the truth gate.
+        run: pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.7.0"
+      - name: Complete subsystem test suite (H2252 truth gate)
+        working-directory: RussianTranslation
+        run: |
+          # H2252: every step above names its files individually, so a test file
+          # nobody listed could rot indefinitely -- test_nws_ls_markup.py sat RED
+          # for weeks against a green CI head, still asserting the fixed `.h1809.bak`
+          # name H2146 replaced with the shared unique-backup writer. This step is
+          # additive: the focused steps keep their fast, named signal, and this one
+          # makes "the suite passes" mean the WHOLE suite.
+          pytest tests -q
       - name: BLI eval harness fixture selftest (H1521)
         working-directory: RussianTranslation
         run: python src/eval/bli_eval.py selftest
       - name: Validate research-layer sidecars (capability cards 5, 23)
         working-directory: RussianTranslation
         run: |
+          # H1902: worktree-safe sibling-root resolution -- proves both the
+          # unpinned-warn and pinned-raise directions (FINDINGS #503).
+          python src/sibling_root.py --selftest
           python src/mw_compounds.py --selftest
           python src/mfs_baseline.py --selftest
           python src/government_census.py selftest
@@ -150,11 +183,6 @@ jobs:
           python src/mined_filter_bicleaner.py selftest
           python src/tm_saru_align_labse.py selftest
           python src/tm_retrieval_eval.py selftest
-      - name: Install the shared review-sheet emitter (H1808)
-        # g5_card_render imports csl_pyutil.anatomy at module load, so this lane
-        # needs the package rather than just py_compile. Pinned to the TAG, not
-        # `@main` as the repo requirements.txt does, so a CI run stays reproducible.
-        run: pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.7.0"
       - name: Review-sheet binding + decisions + residue-gate selftests (H1404 lane)
         working-directory: RussianTranslation
         run: |
@@ -213,6 +241,40 @@ jobs:
           python src/build_mbh_concordance.py selftest
           python src/pilot/lang_parity_check.py
           python src/pilot/check_launch_ledger.py --since 2026-07-05
+      - name: Validate nonstop multilane runtime (H2175 wave 1)
+        working-directory: RussianTranslation
+        run: |
+          python src/pilot/data_root.py --selftest
+          python src/pilot/parked_queue.py --selftest
+          python src/pilot/spot_check_daily.py --selftest
+          python src/pilot/lane_guard.py --selftest
+          python src/pilot/lane_spotcheck_tick.py --selftest
+          python src/pilot/nonstop_scheduler.py --selftest
+          python src/pilot/digest_daily.py --selftest
+          python src/pilot/weekly_packet.py --selftest
+          python src/pilot/data_inventory.py --selftest
+          python src/pilot/data_migrate.py --selftest
+          python src/pilot/cloud_window.py
+          python src/pilot/openrouter_worker.py --selftest
+          python src/pilot/ci_gate_runner.py --selftest
+          python src/pilot/marker_scan.py
+          python src/pilot/h963_c4_gate0_probe.py --selftest
+          python src/pilot/h1339_offline_bench.py --selftest
+      - name: Byte-identity control — h1339 offline bench signature (H2253, #1000)
+        working-directory: RussianTranslation
+        run: |
+          # #1000: the deterministic-output control used to be a hex string quoted in
+          # prose. It was carried across at least three close-outs that each RECORDED it
+          # as "unchanged", and it reproduces at no commit -- because nobody ever re-ran
+          # the bench to check. An unexecuted control is not a control.
+          #
+          # One measured run (no warmups) is enough: the bench's own determinism check
+          # runs inside it, and this step exists to catch a MOVED signature, not to
+          # re-measure timings. A mismatch here means the offline pipeline's output
+          # changed -- read the printed fixture hash before re-pinning, and never copy
+          # the new value into prose instead of into this line.
+          python src/pilot/h1339_offline_bench.py --warmups 0 --runs 1 \
+            --expect-signature 586d012b3d
       - name: Validate <ls> link enrichment (Panini + Spr. (II), H1307)
         working-directory: RussianTranslation
         run: python src/pilot/ls_enrichment_selftest.py

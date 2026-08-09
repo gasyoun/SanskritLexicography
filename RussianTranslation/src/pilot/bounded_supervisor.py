@@ -180,6 +180,11 @@ class BoundedSupervisor:
         self.stop_reason = None
         self._rq_counter = 0
         self._durable_cost_evaluable = True
+        # H2095 (#949): derived from the durable ledger on every sync, never persisted — the
+        # ledger is the authority, so a resumed run re-reads them rather than trusting a
+        # checkpoint that could disagree with it.
+        self._unevaluable_calls = 0
+        self._pending_calls = 0
 
         if resume and checkpoint_path and os.path.exists(checkpoint_path):
             self._load_checkpoint()
@@ -208,6 +213,13 @@ class BoundedSupervisor:
                                  % (observed, self.budget_spent))
             self.budget_spent = observed
             self._durable_cost_evaluable = usage.get('cost_evaluable') is True
+            # H2095 (#949): keep the DISCRIMINATING counts, not just the bare total. A hung call
+            # finalizes with unevaluable_telemetry() — all-zero token fields — so it contributes 0
+            # to `observed_cost_usd`. Without these beside it, `budget_spent` reads as "this run
+            # cost $X" when the truthful statement is "$X of it was priceable". They already exist
+            # in the ledger; they simply never reached the artifact an operator reads.
+            self._unevaluable_calls = int(usage.get('unevaluable_calls') or 0)
+            self._pending_calls = int(usage.get('pending_calls') or 0)
         return self.budget_spent
 
     # ---- construction helpers -------------------------------------------------
@@ -594,6 +606,15 @@ class BoundedSupervisor:
             'stop_reason': self.stop_reason,
             'windows_done': self.windows_done,
             'budget_spent': self.budget_spent,
+            # H2095 (#949): the qualifier that makes `budget_spent` readable. A call that hung
+            # finalizes as unevaluable with all-zero tokens, so it adds 0 to the total — a run
+            # that burned real money on hung calls could publish `budget_spent: 0.0` with nothing
+            # in this artifact to say so. `cost_evaluable` false means the number is a FLOOR, not
+            # the cost. Note the STOP_COST_UNEVALUABLE gate only arms when a --budget cap is set,
+            # so on an uncapped run this marker is the ONLY signal an operator gets.
+            'cost_evaluable': self._durable_cost_evaluable,
+            'unevaluable_calls': self._unevaluable_calls,
+            'pending_calls': self._pending_calls,
             'calls_spent': self.calls_spent,
             'clean_total': self.clean_total,
             'requeue_backlog_len': len(self.requeue_backlog),

@@ -34,8 +34,12 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 from government_census import extract_government
+from store_path import canonical_store
+from store_write import locked_store_rewrite
 
-STORE = os.path.join(HERE, 'pwg_ru_translated.jsonl')
+# H2146: resolve the CANONICAL store (main-checkout) like every other mutator — a local
+# worktree path here would also make the PromoteClaim lock guard the wrong file.
+STORE = canonical_store(os.path.join(HERE, 'pwg_ru_translated.jsonl'))
 
 
 def load_rows(store):
@@ -43,11 +47,9 @@ def load_rows(store):
 
 
 def write_rows(store, rows, no_backup):
-    if not no_backup:
-        os.replace(store, store + '.pregov.bak')
-    with open(store, 'w', encoding='utf-8') as f:
-        for r in rows:
-            f.write(json.dumps(r, ensure_ascii=False) + '\n')
+    # H2146: locked (PromoteClaim) + unique fsynced backup + atomic replace — the old
+    # in-place rewrite was unlocked and left a truncated store on crash (FINDINGS §513).
+    locked_store_rewrite(store, rows, tag='pregov', no_backup=no_backup)
 
 
 def selftest():

@@ -1,0 +1,50 @@
+{
+  "rows": [
+    {
+      "arm": "paid",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 34519,
+      "returncode": 1,
+      "api_ms": 5482,
+      "num_turns": 2,
+      "failure_class": "cli_error",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 55125
+      },
+      "ttl_1h_tokens": 0,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.0166035,
+      "n": 1,
+      "cost_usd_1h_write": 0.016604
+    },
+    {
+      "arm": "paid",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 127236,
+      "returncode": 1,
+      "api_ms": 49087,
+      "num_turns": 2,
+      "failure_class": "cli_error",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 20740,
+        "cache_read_input_tokens": 34399
+      },
+      "ttl_1h_tokens": 20740,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.13482570000000002,
+      "n": 2,
+      "cost_usd_1h_write": 0.134826
+    }
+  ],
+  "summary": {},
+  "manifest": "h1209_slice3.manifest.json",
+  "model": "claude-sonnet-5",
+  "cache_write_1h_rate": 6.0
+}

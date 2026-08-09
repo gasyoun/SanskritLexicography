@@ -3,7 +3,8 @@ r"""H1209 controller-worker canary — slice prep.
 
 Reconstructs, from a `gen_opt_harness2.py --manifest-out` execution manifest, the EXACT
 per-card worker prompt the production harness would send (harness `cardBlock` line ~264 +
-the `PREAMBLE + GRAMMAR + CONV_TR + nws + cardBlock` assembly line ~573), so the
+the `PREAMBLE + CONV_TR + GRAMMAR + nws + cardBlock` assembly line ~573, stable-left
+since H2191), so the
 controller-worker Workflow reuses the production translation invariants verbatim rather
 than re-deriving them. Also computes the deterministic per-card complexity score (one of
 the three controller "hard-case" triggers, H1209 architecture point 3) and carries the
@@ -15,7 +16,7 @@ scripts have no filesystem access).
 Usage:
   python prep_slice.py <manifest.json> <out_payload.json> [--keys k1,k2] [--chunk N]
 
-H1386 D1 (the medium50 start-today enabler): the shared PREAMBLE + GRAMMAR + CONV_TR +
+H1386 D1 (the medium50 start-today enabler): the shared PREAMBLE + CONV_TR + GRAMMAR +
 nws boilerplate (~12 KB) is hoisted into ONE payload-level `prompt_common` (schema v3);
 each card carries only its `card_block`, and the Workflow template assembles
 `prompt_common + card_block` per card (mirroring how gen_opt_harness2 shares PREAMBLE
@@ -37,12 +38,35 @@ sys.stderr.reconfigure(encoding='utf-8')
 PAYLOAD_SCHEMA = 'h1209.controller_worker_slice.v3'
 
 
+def controller_prompt_for_field(field):
+    """H2226 OPT-4: Opus controller prompt template, language-keyed by target field.
+
+    The Workflow templates substitute `{key1}` and append the senses JSON. Kept in
+    Python (manifest field) so EN reuses the same JS scaffold without a second tree.
+    """
+    lang = 'English' if field == 'english' else 'Russian'
+    pair = 'German->English' if field == 'english' else 'German->Russian'
+    return (
+        'You are the QUALITY CONTROLLER for a PWG %s scholarly dictionary translation. '
+        'For headword {key1}, check each sense: (a) the %s faithfully renders the German gloss '
+        '(no invented, dropped, or merged meaning), (b) every {Tn} placeholder present in the German is a real '
+        'masked span (not invented), (c) scholarly-philological register. Set ok=false with specific, actionable '
+        'issues ONLY for genuine fidelity defects; do NOT nitpick style or wording preference. Senses JSON:\n'
+        % (pair, lang)
+    )
+
+
 def prompt_common(m):
-    """The boilerplate shared by EVERY card's prompt: PREAMBLE + GRAMMAR + CONV_TR + nws.
+    """The boilerplate shared by EVERY card's prompt: PREAMBLE + CONV_TR + GRAMMAR + nws.
     Hoisted once per payload (H1386 D1) -- the per-card assembly is prompt_common +
-    card_block, byte-identical to the v2 per-card prompt."""
+    card_block, byte-identical to the v2 per-card prompt.
+
+    H2191: stable-left order (PREAMBLE + CONV_TR ahead of the window-scoped GRAMMAR),
+    tracking headless_worker.build_prompt. This lane already hoists the whole block once
+    per payload, so the reorder changes no byte count here -- it keeps this copy from
+    drifting away from the production assembly it exists to mirror."""
     p = m['prompt']
-    return (p['preamble'] + (p.get('grammar', '') or '') + p['translation']
+    return (p['preamble'] + p['translation'] + (p.get('grammar', '') or '')
             + (p.get('nws_rule', '') or ''))
 
 
@@ -171,11 +195,14 @@ def write_payloads(m, out_path, keys=None, chunk=None, manifest_name=''):
         use_keys = all_keys
     common = prompt_common(m)
     cards = [_build_card(m, k) for k in use_keys]
+    field = m.get('field', 'russian')
     header = {
         'schema': PAYLOAD_SCHEMA,
         'source_manifest': manifest_name,
         'model_worker': m.get('model', 'claude-sonnet-5'),
-        'field': m.get('field', 'russian'),
+        'field': field,
+        # H2226: controller prompt rides with the field so JS never hardcodes Russian.
+        'controller_prompt': controller_prompt_for_field(field),
         'prompt_common': common,
     }
     if chunk and chunk > 1:

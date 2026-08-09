@@ -80,7 +80,7 @@ So the residue splits into a **tractable 13.9%** (357 of the 443 are tuple-compa
 
 **A name match is not a crosswalk.** Of nine top candidates inspected, four were rejected on their `pwgbib` entry: `VP` cites Wilson's *translation* by page; `KĀTY. ŚR` is Kātyāyana's *Śrautasūtra* while DCS's look-alike is his *smṛti*; `KAUŚ` numbers kaṇḍikās continuously where DCS numbers per adhyāya; `KATHĀS` has 124 Brockhaus taraṅgas against DCS's 44 chapters. Only the five whose scheme provably corresponds were mapped. Correcting H1632: it named **Kathāsaritsāgara** as a text "DCS does not contain" — DCS carries it (111,298 tokens); the obstacle is the numbering, not the text.
 
-Working the remaining 443 is [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md).
+Working the remaining 443 is [H1691](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1691-Opus_kosha_pwg-dcs-text-crosswalk-beyond-five_26.07.26.md).
 
 ## Lever C — the untagged corpus, kept strictly separate
 
