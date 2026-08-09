@@ -74,13 +74,29 @@ always underneath. That is the clearest single argument for reordering the backl
 this lane produces lands in `ephemeral_1h_input_tokens`, and the 1-hour TTL bills at **2×
 base = $6.00/Mtok**. Pricing 1h writes at the 5m rate understates the CLI lane by 1.6×.
 
-**The prose already knows this; the code constant does not.** H2011's changelog entry and
+**The prose already knew this; the code constant did not.** H2011's changelog entry and
 `RUN_FREQ_MAX.md` both price cache creation at $6/M and explicitly note the write is
-`ephemeral_1h` — but `PRICE`, the table every cost script imports, still carries 3.75 with no
-TTL dimension. So a hand-written memo gets it right while anything computed from `PRICE`
-silently under-reports. This harness emits both figures side by side
-(`cost_usd_1h_write`, `cost_usd_5m_write`) rather than picking one; the durable fix is to
-give `PRICE` a TTL-aware write rate so the two cannot diverge again.
+`ephemeral_1h` — but `PRICE`, the table every cost script imports, carried 3.75 with no TTL
+dimension. So a hand-written memo got it right while anything computed from `PRICE` silently
+under-reported.
+
+**Fixed 02-08-2026 (same handoff).**
+[`parse_workflow_cost`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/parse_workflow_cost.py)
+now carries the TTL dimension itself — `cache_write_5m` (1.25×) and `cache_write_1h` (2.0×)
+**derived from** `PRICE['input']`, a `cache_write_rate(ttl)` accessor that refuses an unknown
+TTL, and `split_cache_creation()` / `usage_cost()` that price each write by the bucket the
+envelope actually reports. `tally()` splits per TTL and surfaces `cache_write_1h`; this
+harness and its report now import those rates instead of re-deriving `×2.0` locally, so a
+cost script that does not know about the 1h bucket can no longer disagree with one that does.
+
+Two deliberate choices. **TTL-less envelopes fall back to 5m**, never to 1h — the pre-split
+figures (the $79.83 golden window included) are unchanged, and an unproven 1h attribution
+would have inflated every historical run by 1.6×. And the regression test pins the
+**vendor's own number**: `usage_cost()` on the committed `nakzatra` envelope must equal its
+`modelUsage.costUSD` of $0.800499, *and* the old flat-5m arithmetic must still fail to
+reconcile — otherwise a revert to a TTL-blind constant would pass the test that exists to
+catch it. Measured gap on that one call: **$0.6967 computed vs $0.8005 billed, −13 %**.
+Recorded as [FINDINGS §289](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
 
 ### 1.4 Trivial-call floor — the scaffolding tax, isolated
 

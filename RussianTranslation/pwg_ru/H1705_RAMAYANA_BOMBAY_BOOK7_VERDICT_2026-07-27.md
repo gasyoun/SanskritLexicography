@@ -2,7 +2,7 @@
 
 _Created: 27-07-2026 · Last updated: 27-07-2026_
 
-**Handoff:** [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) ·
+**Handoff:** [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) ·
 **Model:** Opus 5 1M (`claude-opus-5[1m]`) ·
 **Scope:** PWG's plain `R.` book 7 (Bombay ed. 1859) citation reuse.
 

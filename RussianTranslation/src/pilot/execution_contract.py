@@ -46,6 +46,75 @@ PROVENANCE_CLASSES = {'real', 'synthetic_control'}
 # execution time, not run unmodified.
 HEADLESS_ROUTE = 'claude-cli-headless'
 
+# H2254: the ONE authoritative production per-call subprocess ceiling, in milliseconds.
+#
+# Owner ruling 03-08-2026: the ceiling may stand at a bounded 300 000 ms. That is an ABSOLUTE
+# MAXIMUM, not a licence to raise it further -- any future increase needs a new owner ruling
+# backed by measured evidence. Lower operator ceilings remain valid and are the normal case.
+#
+# WHY IT LIVES HERE and not in `headless_worker`: #983 showed the ceiling was enforced in five
+# independent places (`headless_worker.HARD_TIMEOUT_MS`, `gen_opt_harness2.KILL_CEIL_MS`, the
+# `KILL_CEIL_MS` baked into every generated `run_pilot_wf.*.js`, each sealed manifest's
+# `budgets.timeout_ceil_ms`, and the operator's own `--timeout`) and that raising ONE of them
+# is inert. `headless_worker_selftest.test_kill_ceiling_in_step_with_harness` pinned two of
+# them EQUAL, which catches drift but still leaves two copied literals to drift. This module
+# is imported by both the generator and the executor already, so both now IMPORT the number
+# instead of restating it -- the handoff's "prefer generation/import/checks over copied
+# constants". The parity selftest is deliberately KEPT: it is now a guard against someone
+# re-introducing a literal, which is the failure it was written for.
+#
+# The second half of the fix is that exceeding it is a REFUSAL, not a silent clamp. Before
+# H2254 every route did `min(operator, ceil, HARD)`, so a manifest or an operator asking for
+# 7 200 s got 300 s and no signal: the request was wrong, the run looked normal, and the
+# discrepancy only ever surfaced by reading the effective timeout out of a subprocess call.
+#
+# H2313 owner ruling 06-08-2026 (the measured-evidence raise H2254 anticipated):
+# 300 000 ms was killing HEALTHY card spawns, not hung ones. Reading every committed
+# pwg_ru card-phase envelope (h2189/h2250/h2251, see
+# `h2313_timeout_distribution.py` and `pwg_ru/h2313/HARD_TIMEOUT_MS_RECALIBRATE_06-08-2026.md`)
+# gives 16 completed spawns spanning wall_ms 49 404-511 908 (p50=189 327, p90=276 521,
+# p95=342 997, p99=478 125) against 4 censored (killed-before-completion) spawns at
+# 300 000 ms x3 and 900 000 ms x1. The old 300 000 ms ceiling sits inside the completed
+# distribution (below p90), so it was manufacturing failures on the slow-but-healthy tail,
+# not screening hangs.
+#
+# New ceiling: 600 000 ms = p99 (478 125 ms) + ~25% margin, comfortably above the observed
+# completed max (511 908 ms) -- the chosen percentile is p99-with-margin, not a round-number
+# guess. This is NOT claimed to be a clean hang/slow separator: the one 900 000 ms censored
+# spawn proves a call can still be running well past 600 000 ms, and there is no way to tell
+# from total wall-clock alone whether that spawn was slow-but-alive or genuinely hung -- a
+# total-wall cap cannot make that distinction from a single constant. What this raise DOES
+# claim: it stops killing calls that finish inside the range every other completed call
+# finished in. Separating "hung" from "very slow" for real needs a no-output-progress
+# watchdog (kill on stalled output, not on total elapsed time), left as residual work.
+#
+# Per the 03-08-2026 ruling above: any FUTURE increase past this needs its own owner ruling
+# backed by measured evidence, same as this one was.
+PRODUCTION_HARD_TIMEOUT_MS = 600000
+
+
+def assert_timeout_within_ceiling(value_ms, source, ceiling_ms=PRODUCTION_HARD_TIMEOUT_MS):
+    """Fail closed on a per-call timeout request above the production hard maximum.
+
+    ``value_ms`` of ``None`` (unset) passes -- absence is not a request. Anything at or below
+    the ceiling passes: LOWER operator ceilings stay valid, which is the whole point of having
+    a maximum rather than a fixed value. ``ceiling_ms`` is a parameter only so tests can pin
+    the boundary arithmetic without monkeypatching a module constant.
+    """
+    if value_ms is None:
+        return
+    try:
+        requested = int(value_ms)
+    except (TypeError, ValueError):
+        raise ValueError('%s: per-call timeout must be an integer number of milliseconds '
+                         '(got %r)' % (source, value_ms))
+    if requested > ceiling_ms:
+        raise ValueError(
+            '%s requests %d ms, above the %d ms production hard maximum (H2254 owner ruling '
+            '03-08-2026). This is REFUSED, not clamped: a silently clamped request runs at a '
+            'bound the operator never asked for. Lower the request, or obtain a new owner '
+            'ruling backed by measured evidence.' % (source, requested, ceiling_ms))
+
 
 def canonical_config_dir(path):
     return os.path.normcase(os.path.realpath(os.path.abspath(path)))
@@ -70,6 +139,12 @@ def validate_manifest(manifest, require_v2=False):
         if stray:
             raise ValueError('manifest drives a call for key(s) outside selected_keys: %s'
                              % ', '.join(stray[:10]))
+    # H2254: refuse a sealed budget above the production hard maximum BEFORE any model
+    # subprocess starts. Checked ahead of the schema branch on purpose -- a v1 manifest is
+    # still executable through `--allow-historical-v1`, and the ceiling is a money guard, not
+    # a schema nicety, so it must bind on every executable shape.
+    assert_timeout_within_ceiling((manifest.get('budgets') or {}).get('timeout_ceil_ms'),
+                                  'manifest budgets.timeout_ceil_ms')
     schema = manifest.get('schema')
     if schema == SCHEMA_V1 and not require_v2:
         return

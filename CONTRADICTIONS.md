@@ -1,6 +1,6 @@
 # CONTRADICTIONS — Sanskrit-data source disagreements with no verdict
 
-_Created: 08-07-2026 · Last updated: 31-07-2026_
+_Created: 08-07-2026 · Last updated: 05-08-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS states *one* fact. This file holds the act FINDINGS cannot: **disagreeing** — ≥2 sources give incompatible values and no ruling has been made. The moment a contradiction is ruled, it **graduates** to a [`CROSS_REPO_DECISIONS`](https://github.com/gasyoun/csl-observatory/blob/main/docs/CROSS_REPO_DECISIONS.md) `D##` (leave a one-line "→ D##, resolved" tombstone here). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/CONTRADICTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/CONTRADICTIONS.md).
 
@@ -46,7 +46,7 @@ Blocks: the GasunsDhatu 2026 §2.6 Table 5 / П9 correction (manifest `varga-ser
 ### §3. ✅ RESOLVED → kosha PLAN D13 — generated side is `forms`, not `inflections`
 ✅ **Tombstone (ruled 20-07-2026, H1366; accepted by MG).** The Concordance-Q3 plan set named two different kosha tables as the generated inflection side, "5× apart" — **ruled `forms` canonical**, and the "5× apart, same side" framing was itself a conflation. Measured against `kosha.db` (Opus 4.8 `claude-opus-4-8`) the two are **different data products**, sharing only **168,034 of 426,410** non-heritage `(form, lemma)` pairs, with `inflections` holding **3,246,914** pairs `forms` never has (`forms`: 1,378,401 rows, `source` split dcs/vidyut/heritage, no morphology; `inflections`: 6,917,018 rows, ~100% single-engine `cologne_mwinflect`, full morphology, no trust split). Grounds: pipeline continuity (W2a consumes W1b/A3, built on `forms`) + the `source` trust axis only `forms` carries + engine separation (W2a *generates* morphology via `vidyut.prakriya`). `inflections` reclassified as a distinct secondary asset / optional cross-check. Verdict recorded as [kosha PLAN §2 D13 + §3a](https://github.com/gasyoun/kosha/blob/main/docs/PLAN_KOSHA_CONCORDANCE_Q3_2026H2.md) (the repo-local decisions record); ARCHITECTURE §1 diagram mislabel corrected. W2a unblocked to consume `forms`.
 ↔ Interlinks: [FINDINGS §94](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) is the circularity finding (93% DCS-derived generated side) from the same A3 build.
-> **Source:** surfaced by [H1262](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1262-Opus_kosha_a3_attested_form_join_morphology_audit_18.07.26.md); ruled by [H1366](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1366-Opus_kosha_generated-side-forms-vs-inflections-canonical-ruling_20.07.26.md) (accepted by MG) · [kosha](https://github.com/gasyoun/kosha) · [20-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-20&until=2026-07-21) · `claude-opus-4-8`
+> **Source:** surfaced by [H1262](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1262-Opus_kosha_a3_attested_form_join_morphology_audit_18.07.26.md); ruled by [H1366](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1366-Opus_kosha_generated-side-forms-vs-inflections-canonical-ruling_20.07.26.md) (accepted by MG) · [kosha](https://github.com/gasyoun/kosha) · [20-07-2026](https://github.com/gasyoun/SanskritLexicography/commits/master?since=2026-07-20&until=2026-07-21) · `claude-opus-4-8`
 
 ### §4. Grammatical `<ab>` abbreviations in pwg_ru: stay-Latin (10-07 ruling) vs translate-to-RU (19-07 DA-vote notes)
 🔴 ✍️ **The project's own abbreviation policy gives incompatible answers eleven days apart.**
@@ -56,8 +56,8 @@ Positions:
 | [ABBREVIATIONS_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ABBREVIATIONS_RU.md) (MG ruling 10-07-2026) | grammatical-category abbreviations (`Caus.`, `Aor.`, …) stay international Latin, tooltip only; only editorial/cross-reference ones translate | ABBREVIATIONS_RU § "Decision: grammatical-category abbreviations stay Latin" |
 | h178_da vote notes (MG, 19-07-2026) | `Caus.` = `кауз.`, `Aor.` "нельзя не переводить"; only Latin abbreviations on a **ratified unified list** stay untranslated | [H178 DA-vote register §3 N5/N8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md) |
 Status: 🔴 unresolved — the 19-07 notes are later and more specific but explicitly delegate to a not-yet-existing ratified list; neither doc has been amended.
-Blocks: [H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md)'s store/prompt application, and the V2 regeneration gate of [H1301](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1301-Opus_RussianTranslation_pwg-ru-review-sheet-ux-standard-regen_19.07.26.md) benefits from the ruling landing first. Resolution path: H1303's inventory → per-token proposal → MG ratification sheet → graduate to a `D##`.
-> **Source:** [H1300](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1300-Fable_RussianTranslation_h178-da-vote-processing_19.07.26.md) vote processing, 19-07-2026, Fable 5 (`claude-fable-5`).
+Blocks: [H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md)'s store/prompt application, and the V2 regeneration gate of [H1301](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1301-Opus_RussianTranslation_pwg-ru-review-sheet-ux-standard-regen_19.07.26.md) benefits from the ruling landing first. Resolution path: H1303's inventory → per-token proposal → MG ratification sheet → graduate to a `D##`.
+> **Source:** [H1300](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1300-Fable_RussianTranslation_h178-da-vote-processing_19.07.26.md) vote processing, 19-07-2026, Fable 5 (`claude-fable-5`).
 
 ## B. A claim overturned (or split) by machine-scale evidence
 *A scholarly charge or a hand-picked exemplar checked against a full machine dataset — the count adjudicates.*
@@ -139,7 +139,7 @@ Positions:
 Status: 🔴 unresolved — needs a corpus-side ruling on provenance (which edition each kāṇḍa was ingested from), not a code patch here.
 
 Blocks: (a) the committed Southern↔critical concordance is, for those two kāṇḍas, **a text aligned against itself** — its 99.8%/99.9% agreement must not be read as recension evidence; (b) any consumer treating `06`/`07` as vulgate-keyed inherits the silent recension swap [FINDINGS §468](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) documents for `R.` books 3–6; (c) it decides how a future Russian uttarakāṇḍa should be keyed ([GAPS §13](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md)).
-> **Source:** [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [integrity issue #822](https://github.com/gasyoun/SanskritLexicography/issues/822) · 27-07-2026 · Opus 5 1M `claude-opus-5[1m]`
+> **Source:** [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [integrity issue #822](https://github.com/gasyoun/SanskritLexicography/issues/822) · 27-07-2026 · Opus 5 1M `claude-opus-5[1m]`
 
 ### §10. Union headword total: 323,425 vs 323,426
 
@@ -196,6 +196,20 @@ Positions:
 Status: 🔴 unresolved — regeneration drift or a filtered export; A42 is the publication-facing figure, so the drift must be attributed before A42 submits.
 Blocks: A42's data statement; the "1.09M pairs" rounding used in FEATURES_INDEX is safe either way.
 > **Source:** [H1871 methods report](https://github.com/gasyoun/SanskritLexicography/blob/master/METHODS_HOW_WE_COUNT_A_TRADITION_2026.md) §3 row 15 · 31-07-2026 · Fable 5 `claude-fable-5`
+
+### §14. ls-citation-graph MW lane: CANON-CORE builds on it, CITE-4AXIS rejects it as an artifact-generator
+
+🟠 ✍️ **Two July csl-atlas promotions, one day apart, license opposite readings of the same committed file.**
+
+Positions:
+
+| Source | Value | Evidence loc |
+|---|---|---|
+| [citation_canon.json](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/src/data/citations/citation_canon.json) (CANON-CORE, 07-07-2026) | the ls-graph's 11-dict × 912-text matrix — **including MW's lane (5 resolved texts**, two of them category labels) — is a valid topology-test substrate; headline "608/912 texts private, none cited by all 11" | artifact `matrix`/`perDict`/`interpretation`; MW under-representation acknowledged only in `limitations` |
+| [four_axis_citation_independence.json](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/lexico/four_axis_citation_independence.json) (CITE-4AXIS, 08-07-2026) | the same file's MW lane "measures resolver coverage, not canon shape" (top MW abbreviations MBh./R./BhP. unresolved; BEN~MW cosine 0.0 is an artifact) — **rejected** as primary citation-vector source | artifact `citationVectorSource.whyNotLsGraph` |
+Status: 🔴 unresolved — both packets are internally honest, but CANON-CORE's "none by all 11" sub-claim is partly mechanical given MW's 5-text lane (a text in all 11 would have to be among MW's 5). Resolution path: re-run the canon topology test with MW dropped (10-dict matrix) or fed from the citation-apparatus matrix (MW fully resolved: 320,828 tagged citations); if the modular verdict holds — expected, the 10 well-resolved lanes carry it — graduate with a "direction robust, MW sub-claims resolver-shaped" ruling.
+Blocks: quoting CANON-CORE's "none cited by all 11" in A50 §4 or any paper without the resolver qualifier; the H1866 referee pass added the caveat to the [HYPOTHESIS_INDEX row](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/HYPOTHESIS_INDEX.md) in the same pass.
+> **Source:** [H1866 referee report](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/HYPOTHESIS_PROMOTIONS_JULY_2026_REFEREE.md) §Contradiction · 05-08-2026 · Fable 5 `claude-fable-5`
 
 
 _Dr. Mārcis Gasūns_

@@ -1,0 +1,116 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "cards"
+  ],
+  "properties": {
+    "cards": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/card"
+      }
+    }
+  },
+  "$defs": {
+    "card": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key1",
+        "iast",
+        "records",
+        "notes"
+      ],
+      "properties": {
+        "key1": {
+          "type": "string",
+          "minLength": 1
+        },
+        "iast": {
+          "type": "string"
+        },
+        "records": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/record"
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "h",
+        "grammar",
+        "senses"
+      ],
+      "properties": {
+        "h": {
+          "type": "string"
+        },
+        "grammar": {
+          "type": "string",
+          "description": "POS/gender as PWG, verbatim where applicable."
+        },
+        "senses": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/sense"
+          }
+        }
+      }
+    },
+    "sense": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "german",
+        "russian"
+      ],
+      "properties": {
+        "tag": {
+          "type": "string",
+          "minLength": 1
+        },
+        "german": {
+          "type": "string",
+          "description": "The PWG German for this sense, with the source's {#…#} Sanskrit delimiters and <ls>/<ab>/<lex>/<is> markup kept VERBATIM — not stripped to plain text, not transliterated to bare IAST."
+        },
+        "russian": {
+          "type": "string",
+          "description": "The Russian rendering in scholarly register."
+        },
+        "equivalence_type": {
+          "enum": [
+            "equivalent",
+            "explanatory"
+          ]
+        },
+        "source_type": {
+          "enum": [
+            "attested",
+            "lexicographic",
+            "mixed"
+          ]
+        },
+        "stratum": {
+          "type": "string",
+          "description": "Stratum used, such as Vedic, Epic / early-Classical, Classical, Medieval, or empty."
+        },
+        "differentia": {
+          "type": "string",
+          "description": "Apresjan near-synonym discrimination note, or empty when no discrimination was needed."
+        }
+      }
+    }
+  }
+}

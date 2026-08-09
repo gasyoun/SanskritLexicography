@@ -1,0 +1,214 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "_ahuti",
+ "produced_at": 1786194858,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "fill",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  }
+ },
+ "sense_inventory": [
+  {
+   "i": 0,
+   "de_anchor": "1〉 <lex>f.</lex> {%Opferspende%}, sowohl {%die Gabe%} als {%das Geben%}. Dem ältern Sprachgebrauch ist auch die Bedeutung {%Anrufung%}, somit die Ableitung von …",
+   "sense_tag": "1",
+   "note": "de_raw:_ahuti.raw.txt"
+  },
+  {
+   "i": 1,
+   "de_anchor": "2〉 <lex>m.</lex> <ab>N. pr.</ab> eines <is>Marut</is> <ls>HARIV. 11547</ls>.\n\n=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sen…",
+   "sense_tag": "2",
+   "note": "de_raw:_ahuti.raw.txt"
+  }
+ ],
+ "tm_fuzzy_hits": [],
+ "compound_candidates": [],
+ "citation_normalize": [
+  {
+   "raw": "<ls>H. 821</ls>",
+   "normalized": "<ls>H. 821</ls>"
+  },
+  {
+   "raw": "<ls>ṚV. 1,31,5</ls>",
+   "normalized": "<ls>ṚV. 1,31,5</ls>"
+  },
+  {
+   "raw": "<ls n=\"ṚV.\">93,3</ls>",
+   "normalized": "<ls n=\"ṚV.\">93,3</ls>"
+  },
+  {
+   "raw": "<ls n=\"ṚV.\">105,5</ls>",
+   "normalized": "<ls n=\"ṚV.\">105,5</ls>"
+  },
+  {
+   "raw": "<ls n=\"ṚV.\">135,8</ls>",
+   "normalized": "<ls n=\"ṚV.\">135,8</ls>"
+  },
+  {
+   "raw": "<ls n=\"ṚV.\">3,28,3</ls>",
+   "normalized": "<ls n=\"ṚV.\">3,28,3</ls>"
+  },
+  {
+   "raw": "<ls n=\"ṚV. 3,28,\">6</ls>",
+   "normalized": "<ls n=\"ṚV. 3,28,\">6</ls>"
+  },
+  {
+   "raw": "<ls n=\"ṚV.\">7,66,19</ls>",
+   "normalized": "<ls n=\"ṚV.\">7,66,19</ls>"
+  },
+  {
+   "raw": "<ls n=\"ṚV.\">8,19,5</ls>",
+   "normalized": "<ls n=\"ṚV.\">8,19,5</ls>"
+  },
+  {
+   "raw": "<ls n=\"ṚV. 8,19,\">18</ls>",
+   "normalized": "<ls n=\"ṚV. 8,19,\">18</ls>"
+  },
+  {
+   "raw": "<ls n=\"ṚV.\">10,52,2</ls>",
+   "normalized": "<ls n=\"ṚV.\">10,52,2</ls>"
+  },
+  {
+   "raw": "<ls>AV. 3,22,4</ls>",
+   "normalized": "<ls>AV. 3,22,4</ls>"
+  },
+  {
+   "raw": "<ls n=\"AV.\">7,70,1</ls>",
+   "normalized": "<ls n=\"AV.\">7,70,1</ls>"
+  },
+  {
+   "raw": "<ls n=\"AV.\">10,5,43</ls>",
+   "normalized": "<ls n=\"AV.\">10,5,43</ls>"
+  },
+  {
+   "raw": "<ls n=\"AV. 10,\">8,35</ls>",
+   "normalized": "<ls n=\"AV. 10,\">8,35</ls>"
+  },
+  {
+   "raw": "<ls n=\"AV.\">11,10,5</ls>",
+   "normalized": "<ls n=\"AV.\">11,10,5</ls>"
+  },
+  {
+   "raw": "<ls n=\"AV. 11,10,\">26</ls>",
+   "normalized": "<ls n=\"AV. 11,10,\">26</ls>"
+  },
+  {
+   "raw": "<ls n=\"AV.\">12,1,13</ls>",
+   "normalized": "<ls n=\"AV.\">12,1,13</ls>"
+  },
+  {
+   "raw": "<ls n=\"AV.\">19,4,1</ls>",
+   "normalized": "<ls n=\"AV.\">19,4,1</ls>"
+  },
+  {
+   "raw": "<ls>TS. 5,1,3,4</ls>",
+   "normalized": "<ls>TS. 5,1,3,4</ls>"
+  },
+  {
+   "raw": "<ls n=\"TS.\">2,2,2,5</ls>",
+   "normalized": "<ls n=\"TS.\">2,2,2,5</ls>"
+  },
+  {
+   "raw": "<ls n=\"TS. 2,\">3,9,3</ls>",
+   "normalized": "<ls n=\"TS. 2,\">3,9,3</ls>"
+  },
+  {
+   "raw": "<ls n=\"TS.\">3,4,10,1</ls>",
+   "normalized": "<ls n=\"TS.\">3,4,10,1</ls>"
+  },
+  {
+   "raw": "<ls>AIT. BR. 1,2</ls>",
+   "normalized": "<ls>AIT. BR. 1,2</ls>"
+  },
+  {
+   "raw": "<ls n=\"AIT. BR.\">2,13</ls>",
+   "normalized": "<ls n=\"AIT. BR.\">2,13</ls>"
+  },
+  {
+   "raw": "<ls n=\"AIT. BR. 2,\">14</ls>",
+   "normalized": "<ls n=\"AIT. BR. 2,\">14</ls>"
+  },
+  {
+   "raw": "<ls n=\"AIT. BR.\">5,28</ls>",
+   "normalized": "<ls n=\"AIT. BR.\">5,28</ls>"
+  },
+  {
+   "raw": "<ls>ŚAT. BR. 1,4,4,1</ls>",
+   "normalized": "<ls>ŚAT. BR. 1,4,4,1</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR.\">7,2,10</ls>",
+   "normalized": "<ls n=\"ŚAT. BR.\">7,2,10</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR.\">2,3,1,22. fgg.</ls>",
+   "normalized": "<ls n=\"ŚAT. BR.\">2,3,1,22. fgg.</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR.\">3,5,1,22</ls>",
+   "normalized": "<ls n=\"ŚAT. BR.\">3,5,1,22</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR.\">11,3,2,1</ls>",
+   "normalized": "<ls n=\"ŚAT. BR.\">11,3,2,1</ls>"
+  },
+  {
+   "raw": "<ls n=\"ŚAT. BR.\">5,6,3. fgg.</ls>",
+   "normalized": "<ls n=\"ŚAT. BR.\">5,6,3. fgg.</ls>"
+  },
+  {
+   "raw": "<ls>ĀŚV. ŚR. 2,2</ls>",
+   "normalized": "<ls>ĀŚV. ŚR. 2,2</ls>"
+  },
+  {
+   "raw": "<ls n=\"ĀŚV. ŚR.\">6,9</ls>",
+   "normalized": "<ls n=\"ĀŚV. ŚR.\">6,9</ls>"
+  },
+  {
+   "raw": "<ls>KĀTY. ŚR. 3,3,29</ls>",
+   "normalized": "<ls>KĀTY. ŚR. 3,3,29</ls>"
+  },
+  {
+   "raw": "<ls n=\"KĀTY. ŚR.\">14,5,1</ls>",
+   "normalized": "<ls n=\"KĀTY. ŚR.\">14,5,1</ls>"
+  },
+  {
+   "raw": "<ls n=\"KĀTY. ŚR.\">20,1,20</ls>",
+   "normalized": "<ls n=\"KĀTY. ŚR.\">20,1,20</ls>"
+  },
+  {
+   "raw": "<ls n=\"KĀTY. ŚR.\">25,1,3</ls>",
+   "normalized": "<ls n=\"KĀTY. ŚR.\">25,1,3</ls>"
+  },
+  {
+   "raw": "<ls>BṚH. ĀR. UP. 3,1,8</ls>",
+   "normalized": "<ls>BṚH. ĀR. UP. 3,1,8</ls>"
+  }
+ ],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\input\\_ahuti.raw.txt"
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "prep_only",
+ "det": {
+  "ok": true,
+  "gate": "prep",
+  "issues": [],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 0,
+  "source_senses": 2,
+  "had_draft_card": false
+ },
+ "store_write": false
+}

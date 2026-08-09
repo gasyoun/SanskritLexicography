@@ -1,0 +1,87 @@
+{
+  "schema": "h2489.spike200.stats.v1",
+  "n_sidecars": 200,
+  "worklist": "src/pilot/h1210/H2489_spike200_worklist.08.08.26.json",
+  "out_dir_note": "prep/spike200 (gitignored local; samples under prep_samples_h2489/)",
+  "pct_with_senses": 55.0,
+  "pct_det_ok": 55.0,
+  "pct_det_fail": 45.0,
+  "pct_park_route": 45.0,
+  "n_with_senses": 110,
+  "n_det_ok": 110,
+  "n_det_fail": 90,
+  "routes": {
+    "controller_only": 51,
+    "full_worker": 54,
+    "park": 90,
+    "prep_only": 5
+  },
+  "hard_flags": {
+    "no_pwg": 90,
+    "monster_length": 48,
+    "polysemy": 61
+  },
+  "n_tm_any_hit": 135,
+  "pct_tm_any": 67.5,
+  "senses_total": 2418,
+  "sense_median": 2.0,
+  "sense_mean": 12.09,
+  "sidecar_bytes_median": 1619,
+  "sidecar_bytes_mean": 4902,
+  "sidecar_bytes_total": 980519,
+  "tm_fence_may_write_false_pct": 100.0,
+  "store_write_true_count": 0,
+  "det_claude_true_count": 0,
+  "opus_window": {
+    "n_cards": 8,
+    "keys": [
+      "Adika",
+      "AmarSa",
+      "Ap",
+      "As",
+      "BaYj",
+      "Badramusta",
+      "Srama",
+      "dIkzA"
+    ],
+    "routes": [
+      "controller_only",
+      "controller_only",
+      "full_worker",
+      "full_worker",
+      "park",
+      "park",
+      "prep_only",
+      "prep_only"
+    ],
+    "paid_call": false,
+    "token_proxy": "chars//4 (not billed)",
+    "baseline_no_prep": {
+      "chars": 167,
+      "tok_proxy": 41,
+      "chars_per_card": 20,
+      "tok_per_card": 5,
+      "defect_proxy": "all 8 unknown -> default full_worker",
+      "n_full_worker_assumed": 8
+    },
+    "with_compact_prep_seed": {
+      "chars": 4942,
+      "tok_proxy": 1235,
+      "chars_per_card": 617,
+      "tok_per_card": 154,
+      "n_controller_only": 2,
+      "n_park": 2,
+      "n_full_worker": 2,
+      "n_prep_only": 2,
+      "n_det_ok": 6,
+      "defect_proxy": "route_hint from free det_gate before Opus"
+    },
+    "with_full_sidecar_inject": {
+      "chars": 46151,
+      "tok_proxy": 11537,
+      "chars_per_card": 5768,
+      "tok_per_card": 1442,
+      "note": "anti-pattern for controller context; use compact seed"
+    }
+  }
+}

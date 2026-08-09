@@ -11,8 +11,12 @@ page can show the *process* behind the article site:
   - speed      cards/day, recent wall-clock minutes/window
   - cost       tokens/window from the window ledger (+ economy band when present)
   - idle       gaps between stage_boundary audit_end → next audit_start
-  - calendar   day-bucketed card + window activity (heatmap)
+  - calendar   day-bucketed card + window activity (heatmap) + idle overlay (K7)
   - changelog  recent version bullets from RussianTranslation/CHANGELOG.md
+  - K1–K8      operator strip, yield/requeue, ETA, health, instrumentation,
+               cost honesty (see kitchen_slices.py / ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026)
+  - residual   B1 subscription $, B9 idle reasons, B10 article-site parity (H2218)
+  - OPT-8      collision_guard — store-hit / lease collision kitchen banner (H2229)
 
 All inputs are local-only / gitignored pipeline artifacts under
 RussianTranslation/. Missing files degrade that slice; the build never raises.
@@ -36,6 +40,12 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
+# Same-dir import for K1–K8 aggregators (H2212).
+_sys_dir = str(Path(__file__).resolve().parent)
+if _sys_dir not in sys.path:
+    sys.path.insert(0, _sys_dir)
+import kitchen_slices as ks  # noqa: E402
+
 OUT = Path(__file__).resolve().parent
 REPO = OUT.parent
 DATA_REPO = Path(os.environ.get("PWG_DATA_ROOT", REPO)).resolve()
@@ -47,6 +57,15 @@ EVENTS = PILOT_OUT / "dashboard_events.jsonl"
 WINDOW_STATUS = PILOT_OUT / "window_status.json"
 CHANGELOG = RT / "CHANGELOG.md"
 ECONOMY = PILOT_OUT / "economy_ledger.json"
+SUBSCRIPTION = PILOT_OUT / "economy_subscription.json"
+IDLE_REASON_LOG = PILOT_OUT / "idle_reason_log.jsonl"
+ARTICLE_SITE = RT / "article_site"
+# Scheduler sqlite (cwd-relative when operators run from pilot/); also under pilot/output.
+ORCHESTRATOR_DB_CANDIDATES = (
+    PILOT_OUT / "max_orchestrator.sqlite",
+    RT / "src" / "pilot" / "max_orchestrator.sqlite",
+    DATA_REPO / "max_orchestrator.sqlite",
+)
 
 # "Translation is on" if any of these artifacts moved within this window.
 ACTIVE_WITHIN_SECONDS = 15 * 60
@@ -169,6 +188,7 @@ def store_speed() -> dict:
     by_hour: dict[str, int] = {}
     total = 0
     newest = None
+    oldest = None
     if not STORE.exists():
         return {"measured": False, "total_cards": 0, "cards_by_day": {}, "last_24h": 0, "last_hour": 0}
     now = utc_now()
@@ -189,6 +209,8 @@ def store_speed() -> dict:
         by_hour[hour] = by_hour.get(hour, 0) + 1
         if newest is None or dt > newest:
             newest = dt
+        if oldest is None or dt < oldest:
+            oldest = dt
         if dt >= cutoff_24h:
             last_24h += 1
         if dt >= cutoff_1h:
@@ -203,6 +225,7 @@ def store_speed() -> dict:
         "last_hour": last_hour,
         "mean_cards_per_active_day_14d": mean_day,
         "newest_card_at": newest.isoformat(timespec="seconds").replace("+00:00", "Z") if newest else None,
+        "oldest_card_at": oldest.isoformat(timespec="seconds").replace("+00:00", "Z") if oldest else None,
         "cards_by_day": by_day,
     }
 
@@ -215,12 +238,19 @@ def ledger_cost_speed() -> dict:
     minutes = []
     tokens = []
     recent = []
+    wall_clock_n = 0
     for r in rows[-80:]:
         pm = r.get("production_metrics") or {}
         mins = pm.get("wall_clock_minutes")
-        tok = pm.get("max_output_tokens") or pm.get("output_tokens") or pm.get("total_tokens")
+        tok = (
+            pm.get("max_total_tokens")
+            or pm.get("max_output_tokens")
+            or pm.get("output_tokens")
+            or pm.get("total_tokens")
+        )
         if isinstance(mins, (int, float)) and mins > 0:
             minutes.append(float(mins))
+            wall_clock_n += 1
         if isinstance(tok, (int, float)) and tok > 0:
             tokens.append(float(tok))
         recent.append(
@@ -231,8 +261,12 @@ def ledger_cost_speed() -> dict:
                 "workflow_keys": r.get("workflow_keys"),
                 "translated": r.get("translated"),
                 "requeue_count": r.get("requeue_count"),
+                "clean_key_count": r.get("clean_key_count"),
                 "wall_clock_minutes": mins,
                 "tokens": tok,
+                "gen_model": r.get("gen_model"),
+                "host": r.get("host"),
+                "profile": r.get("profile") or r.get("profile_slot"),
             }
         )
     shown = recent[-RECENT_LIST_LEN:]
@@ -242,9 +276,11 @@ def ledger_cost_speed() -> dict:
         "recent_windows_shown": len(shown),
         "list_len": RECENT_LIST_LEN,
         "mean_wall_clock_minutes": _mean(minutes),
+        "wall_clock_sample_n": wall_clock_n,
         "mean_tokens_per_window": _mean(tokens),
         "last_window": recent[-1] if recent else None,
         "recent": shown,
+        "all_rows": rows,
     }
 
 
@@ -567,34 +603,16 @@ def idle_gaps() -> dict:
     }
 
 
-def calendar(store_speed_data: dict, ledger_rows_hint: int = 0) -> dict:
-    """Day cells for a contribution-style heatmap (last CALENDAR_DAYS)."""
-    by_day = dict(store_speed_data.get("cards_by_day") or {})
-    # overlay window counts from ledger
-    windows_by_day: dict[str, int] = {}
-    for r in _iter_jsonl(LEDGER) if LEDGER.exists() else []:
-        d = _day(r.get("recorded_at"))
-        if d:
-            windows_by_day[d] = windows_by_day.get(d, 0) + 1
-
-    end = utc_now().date()
-    start = end - timedelta(days=CALENDAR_DAYS - 1)
-    cells = []
-    cur = start
-    while cur <= end:
-        iso = cur.isoformat()
-        cards = by_day.get(iso, 0)
-        wins = windows_by_day.get(iso, 0)
-        cells.append({"date": iso, "cards": cards, "windows": wins, "level": _heat_level(cards)})
-        cur += timedelta(days=1)
-    return {
-        "start": start.isoformat(),
-        "end": end.isoformat(),
-        "days": CALENDAR_DAYS,
-        "cells": cells,
-        "max_cards": max((c["cards"] for c in cells), default=0),
-        "active_days": sum(1 for c in cells if c["cards"] or c["windows"]),
-    }
+def calendar(store_speed_data: dict, gaps: list | None = None) -> dict:
+    """Day cells for a contribution-style heatmap (last CALENDAR_DAYS) + idle (K7)."""
+    return ks.calendar_with_idle(
+        store_speed_data,
+        LEDGER,
+        gaps or [],
+        CALENDAR_DAYS,
+        _heat_level,
+        utc_now,
+    )
 
 
 def _heat_level(n: int) -> int:
@@ -655,13 +673,63 @@ def main():
     speed = store_speed()
     ledger = ledger_cost_speed()
     idle = idle_gaps()
-    cal = calendar(speed)
+    cal = calendar(speed, gaps=idle.get("all_gaps") or idle.get("recent_gaps") or [])
     clog = web_changelog()
     econ = economy_band()
+    spend = (econ.get("spend") if isinstance(econ, dict) else None) or {"measured": False}
+
+    all_rows = ledger.get("all_rows") or ks.load_ledger_rows(LEDGER)
+    op = ks.operator_strip(WINDOW_STATUS, speed, act)
+    yld = ks.yield_quality(all_rows)
+    gates = ks.gate_summary(EVENTS)
+    instr = ks.instrumentation_coverage(all_rows)
+    lane_mix = ks.multi_lane_mix(all_rows)
+    health = ks.health_ribbon(PILOT_OUT)
+    quality = ks.quality_slice(PILOT_OUT, all_rows, EVENTS)
+    cost_h = ks.cost_honesty(econ if isinstance(econ, dict) else {}, spend)
+    eta = ks.eta_verb(RT, speed)
+    eta["nominal"] = ks.eta_nominal(RT)
+
+    # H2218 residual slices (B1 / B9 / B10) — additive keys on kitchen v2.
+    subscription = ks.load_subscription(SUBSCRIPTION)
+    idle_reasons = ks.annotate_idle_reasons(
+        idle.get("all_gaps") or [],
+        log_path=IDLE_REASON_LOG,
+        ledger_rows=all_rows,
+        health=health if isinstance(health, dict) else {},
+    )
+    # Publish reason-annotated gaps (bounded lists) instead of bare gaps.
+    annotated_all = idle_reasons.get("annotated_gaps") or idle.get("all_gaps") or []
+    idle_pub = dict(idle)
+    idle_pub["all_gaps"] = annotated_all
+    idle_pub["recent_gaps"] = annotated_all[-RECENT_LIST_LEN:]
+    idle_pub["reasons"] = {
+        k: v
+        for k, v in idle_reasons.items()
+        if k != "annotated_gaps"
+    }
+    # last_idle picks up reason when present
+    if idle_pub.get("last_idle") and annotated_all:
+        idle_pub["last_idle"] = annotated_all[-1]
+    parity = ks.article_site_parity(STORE, ARTICLE_SITE)
+    promote_vs_generate = ks.promote_vs_generate(speed, all_rows, EVENTS, utc_now())
+
+    orch_db = next((p for p in ORCHESTRATOR_DB_CANDIDATES if p.exists()), None)
+    collision = ks.collision_guard(EVENTS, orchestrator_db=orch_db)
+
+    # Drop bulk rows from published JSON (keep aggregates only).
+    ledger_pub = {k: v for k, v in ledger.items() if k != "all_rows"}
 
     data = {
         "generated_at": utc_now_iso(),
-        "schema": "pwg.kitchen.v1",
+        "schema": "pwg.kitchen.v2",
+        "schema_note": (
+            "H2218 additive keys: cost.subscription, idle.reasons, article_parity; "
+            "H2229 collision_guard (OPT-8 lease/store-hit banner); "
+            "H2237 promote_vs_generate (B6 weekly+lifetime generation-vs-clean-outcome); "
+            "H2231 multi_lane (B8 gen_model/host/profile mix) "
+            "(still pwg.kitchen.v2 — non-breaking)"
+        ),
         "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
         "site_url": "https://gasyoun.github.io/SanskritLexicography/",
         "progress_url": "https://gasyoun.github.io/SanskritLexicography/progress/",
@@ -671,40 +739,75 @@ def main():
             "http://127.0.0.1:8765/, polls every 5s)."
         ),
         "activity": act,
+        "operator": op,
+        "yield_quality": yld,
+        "gates": gates,
+        "instrumentation": instr,
+        "multi_lane": lane_mix,
+        "health": health,
+        "quality": quality,
+        "eta": eta,
+        "article_parity": parity,
+        "promote_vs_generate": promote_vs_generate,
+        "collision_guard": collision,
         "speed": {
             "cards_last_hour": speed.get("last_hour"),
             "cards_last_24h": speed.get("last_24h"),
             "mean_cards_per_active_day_14d": speed.get("mean_cards_per_active_day_14d"),
             "mean_wall_clock_minutes": ledger.get("mean_wall_clock_minutes"),
+            "wall_clock_sample_n": ledger.get("wall_clock_sample_n"),
             "newest_card_at": speed.get("newest_card_at"),
+            "oldest_card_at": speed.get("oldest_card_at"),
             "measured": bool(speed.get("measured") or ledger.get("measured")),
         },
         "cost": {
             "mean_tokens_per_window": ledger.get("mean_tokens_per_window"),
             "windows_in_ledger": ledger.get("windows"),
             "economy": econ,
-            "spend": (econ.get("spend") if isinstance(econ, dict) else None) or {
-                "measured": False
-            },
-            "measured": bool(ledger.get("measured") or econ.get("measured")),
+            "spend": spend,
+            "honesty": cost_h,
+            "subscription": subscription,
+            "measured": bool(
+                ledger.get("measured")
+                or econ.get("measured")
+                or subscription.get("measured")
+            ),
         },
-        "idle": idle,
+        "idle": idle_pub,
         "calendar": cal,
         "changelog": clog,
         "list_len": RECENT_LIST_LEN,
-        "recent_windows": ledger.get("recent") or [],
-        "last_window": ledger.get("last_window"),
+        "recent_windows": ledger_pub.get("recent") or [],
+        "last_window": ledger_pub.get("last_window"),
     }
 
     out_path = OUT / "kitchen_data.json"
     out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"kitchen_data.json written ({data['generated_at']}).")
+
+    # B4 — append-only quality/fidelity/judge timeseries (one row per build date).
+    qts_path = OUT / "quality_timeseries.json"
+    qts = ks.quality_timeseries_append(
+        qts_path, quality, data["generated_at"], data["generated_at"][:10]
+    )
+    print(f"quality_timeseries.json: {len(qts['snapshots'])} snapshot(s).")
     print(
         f"  translation_on={act['translation_on']}  "
         f"cards_24h={speed.get('last_24h')}  "
         f"mean_min/window={ledger.get('mean_wall_clock_minutes')}  "
         f"idle_gaps={idle.get('gap_count')}  "
-        f"changelog_entries={len(clog.get('entries') or [])}"
+        f"idle_known_reasons={idle_reasons.get('known_reason_count')}  "
+        f"subscription={subscription.get('measured')}  "
+        f"article_parity={parity.get('measured')}  "
+        f"health={health.get('last_verdict')}  "
+        f"yield_clean={yld.get('clean_windows')}/{yld.get('windows')}  "
+        f"collision_blocked={collision.get('blocked')}  "
+        f"collision_n={collision.get('collision_count')}  "
+        f"changelog_entries={len(clog.get('entries') or [])}  "
+        f"promote_week={promote_vs_generate['weekly']['clean_windows']}/"
+        f"{promote_vs_generate['weekly']['cards_generated']}  "
+        f"promote_lifetime={promote_vs_generate['lifetime']['clean_windows']}/"
+        f"{promote_vs_generate['lifetime']['cards_generated']}"
     )
 
 

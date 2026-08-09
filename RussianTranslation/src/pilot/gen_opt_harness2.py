@@ -49,7 +49,8 @@ from autosplit_requeue import plan as split_plan     # deterministic per-card se
 from sense_count import count_source_senses           # H920/H960 deterministic top-level source-sense count
 sys.path.insert(0, SRC)
 from safe_filename import safe_name
-from execution_contract import SCHEMA_V2, bind_output_meta, config_dir_fingerprint
+from execution_contract import (PRODUCTION_HARD_TIMEOUT_MS, SCHEMA_V2, bind_output_meta,
+                                config_dir_fingerprint)
 from whitney_grammar import grammar_for
 from nominal_grammar import nominal_grammar_for
 
@@ -92,6 +93,32 @@ PRESPLIT_GROUP_SENSE_CAP = 18    # AND at most this many fragments (== senses em
                    #  so a run of many tiny (0-<ls>) fragments can't silently pack >18 senses
                    #  into one call and re-trigger the sense-density failure. 18 < the
                    #  SENSE_PRESPLIT_BUDGET=20 whole-card ceiling, with margin.
+# H2248 (#983, 03-08-2026): AND a cap on the call's total VARIABLE WEIGHT — the card's
+# portrait (evidence) plus the group's fragment bytes. The two budgets above weigh only the
+# group's CONTENT (citation-units, fragment count) and were blind to the portrait, even
+# though `heal_group`/`fragment_prompt` re-send the whole portrait on EVERY fragment call
+# (H1339/B01 injects it so presplit giants are not translated evidence-blind). On H2174's w1
+# that made the budget blind to 68-94% of what each call actually carried:
+#
+#   call            portrait   content   WEIGHT   outcome
+#   sarvatra #g1       7 713       536    8 249   196 948 ms  ok
+#   sakft    #g1       9 166       791    9 957   232 636 ms  ok
+#   sarvatra #g2       7 713     2 300   10 013   289 585 ms  ok
+#   nakzatra #g1       9 761       598   10 359   176 871 ms  ok
+#   sakft    #g2       9 166     2 310   11 476   192 295 ms  ok
+#   nakzatra #g2       9 761     4 617   14 378   TIMEOUT (300 024 ms)
+#
+# The single call that died is the heaviest, by 25% over the heaviest success — and it is
+# heaviest because `nakzatra` has both the largest portrait AND a 3 236 B mega-fragment that
+# the citation-weighted sizer packed in for free (a byte-heavy, citation-light fragment costs
+# almost nothing on the `1 + <ls>` scale). 12 000 sits above every observed success (11 476)
+# and below the one failure, the same "set the cap above the observed ceiling" convention
+# KILL_SLOPE_MS uses. The SHARED framework prompt is deliberately NOT counted: it is byte-
+# identical on every call in a window, so it cannot discriminate between groups, and it is the
+# part prefix-caching actually reuses. Note the whole-card BATCH lane has always sized on
+# `skeleton + portrait` (see `sizer` in the batch section) — this makes the fragment lane
+# agree with the lane beside it rather than inventing a new rule.
+PRESPLIT_GROUP_CALL_WEIGHT = 12000   # --presplit-group-weight=N (0/off disables the cap)
 BINARY_SPLIT = True   # DEFAULT ON since 2026-07-02 (MG decision): when a whole batch call
                    #  fails/comes back malformed (not just individual cards inside it), bisect
                    #  the still-pending cards into two halves and retry each half recursively
@@ -187,7 +214,14 @@ KILL_FLOOR_MS = 45000       # H189 recalibration (MG: ">~60 s per subcard is sus
                             #  fragment: it guaranteed nothing was killed before 2 min even for a
                             #  tiny call, so the pril10_w1 fragments ran 3-6.5 min each. 45 s floor
                             #  + BASE/SLOPE puts a tiny fragment's hard-kill at ~60-70 s.
-KILL_CEIL_MS = 300000       # hard ceiling. On kill the call is abandoned and its cards fall to the
+                            # H2254: the literal moved to `execution_contract`
+                            #  (PRODUCTION_HARD_TIMEOUT_MS) and BOTH this generator and
+                            #  `headless_worker` now import it, so the value the generated JS
+                            #  bakes in, the value sealed into `budgets.timeout_ceil_ms`, and
+                            #  the value the Python subprocess clamp uses are one number by
+                            #  construction rather than three literals pinned by a test.
+KILL_CEIL_MS = PRODUCTION_HARD_TIMEOUT_MS
+                            # hard ceiling. On kill the call is abandoned and its cards fall to the
                             #  bounded fragment lane / binary-split, so a killed unit is REQUEUED,
                             #  never silently lost (see resolveGroup/healGroup below).
                             #  History: 480000 (8 min) -> 180000 ("NOTHING runs past 3 min", MG,
@@ -460,6 +494,8 @@ def parse_args(argv):
             globals()['PRESPLIT_GROUP_CITE_BUDGET'] = int(a.split('=', 1)[1])
         elif a.startswith('--presplit-sense-cap='):       # H189: fragment (sense) cap per call
             globals()['PRESPLIT_GROUP_SENSE_CAP'] = int(a.split('=', 1)[1])
+        elif a.startswith('--presplit-group-weight='):    # H2248: portrait+bytes cap per call
+            globals()['PRESPLIT_GROUP_CALL_WEIGHT'] = int(a.split('=', 1)[1])
         elif a == '--no-kill-switch':                     # H189: disable the window budget switch
             globals()['KILL_SWITCH'] = False
         elif a == '--kill-switch':
@@ -543,7 +579,8 @@ def compress_rule3(tr):
     return tr2
 
 
-def _group_by_budget(items, sizer, budget, count_cap=None):
+def _group_by_budget(items, sizer, budget, count_cap=None,
+                     extra_sizer=None, extra_budget=None):
     """Greedily group `items` (kept in order) into batches whose summed sizer() stays
     <= budget; a single oversize item still gets its own group (never dropped).
 
@@ -553,13 +590,28 @@ def _group_by_budget(items, sizer, budget, count_cap=None):
     item count == senses the model must emit and a group of 40 size-1 fragments would
     re-trigger the very sense-density failure presplit exists to avoid. Default None
     preserves the original size-only behavior for every existing caller.
+
+    extra_sizer/extra_budget (H2248): an optional SECOND, independent dimension — a group
+    closes when EITHER budget would be exceeded. Added because the presplit lane needs to
+    bound a call's byte weight as well as its citation weight, and the two do not correlate:
+    `nakzatra`'s 3 236 B mega-fragment carries almost no citations, so the `1 + <ls>` sizer
+    priced it at nearly zero and packed it into the group that then died at the ceiling.
+    Both dimensions must be honoured together — capping only the larger of the two would let
+    the other dimension re-admit exactly the group being excluded.
     """
-    groups, cur, sz = [], [], 0
+    groups, cur, sz, esz = [], [], 0, 0
+    # `is not None`, not truthiness: an extra_budget of 0 is a MEANINGFUL budget (every item
+    # is oversize, so each takes its own group) and must not silently read as "disabled" —
+    # that is exactly the card whose fixed evidence already exceeds the cap.
+    use_extra = extra_sizer is not None and extra_budget is not None
     for it in items:
         isz = sizer(it)
-        if cur and (sz + isz > budget or (count_cap and len(cur) >= count_cap)):
-            groups.append(cur); cur, sz = [], 0
-        cur.append(it); sz += isz
+        eisz = extra_sizer(it) if use_extra else 0
+        if cur and (sz + isz > budget
+                    or (use_extra and esz + eisz > extra_budget)
+                    or (count_cap and len(cur) >= count_cap)):
+            groups.append(cur); cur, sz, esz = [], 0, 0
+        cur.append(it); sz += isz; esz += eisz
     if cur:
         groups.append(cur)
     return groups
@@ -1047,15 +1099,32 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         '$defs': defs,
     }
 
+    # H2175 step 8 (R4.2 park-and-skip): with $PWG_PARK_AND_SKIP=1 an automated lane
+    # parks an unbuildable key (missing input / lossy mask round-trip) with a one-line
+    # reason and continues with the remaining keys; the historical fail-loud die() stays
+    # the default for every human-driven invocation. An all-parked window still dies —
+    # an empty manifest is a wiring error, not an ambiguity.
+    import parked_queue
     inputs, phmaps, input_hashes, raws, portraits = {}, {}, {}, {}, {}
-    for k in keys:
+    keys = list(keys)   # park-and-skip mutates OUR view, never the caller's list
+    for k in list(keys):
         rp, pp = input_paths(k)
         if not (os.path.exists(rp) and os.path.exists(pp)):
+            if parked_queue.enabled():
+                parked_queue.park(k, 'missing input (raw/portrait) — unclassifiable for '
+                                     'this window', source='gen_opt_harness2')
+                keys.remove(k)
+                continue
             die('missing input for %s' % k)
         raw = read_text(rp)
         portrait = read_text(pp)
         skel, ph, _ = pwg_mask.mask(raw)
         if pwg_mask.restore(skel, ph) != raw:
+            if parked_queue.enabled():
+                parked_queue.park(k, 'mask round-trip not lossless — card unclassifiable',
+                                  source='gen_opt_harness2')
+                keys.remove(k)
+                continue
             die('mask round-trip not lossless for %s' % k)
         inputs[k] = {'skeleton': skel, 'portrait': portrait,
                      'ls': raw.count('<ls'), 'sk': raw.count('{#'),
@@ -1070,6 +1139,8 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         portraits[k] = portrait
         phmaps[k] = ph
         input_hashes[k] = {'raw_sha256': sha256_file(rp), 'portrait_sha256': sha256_file(pp)}
+    if not keys:
+        die('all selected keys parked (R4.2) — nothing left to build for this window')
 
     # --tm: content-addressed pre-resolution. A card whose masked-input SHA is already in the
     # translation memory is served from cache (ZERO agent() calls) instead of re-translated —
@@ -1201,9 +1272,26 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
             # heal-of-a-failed-whole-card path, where small safe groups matter more).
             _cite_hit, _sense_hit = _presplit_hit(inputs[k]['ls'], frag_n[k], OUTPUT_BUDGET)
             if _cite_hit or _sense_hit:
+                # H2248: the portrait rides on EVERY fragment call of this card, so it is a
+                # per-card CONSTANT that the group's own bytes must fit around — the content
+                # allowance is what is left of the call-weight cap after the evidence block.
+                # A card whose portrait alone already exceeds the cap gets allowance 0, which
+                # `_group_by_budget` degrades to one-fragment-per-call (each oversize item
+                # still gets its own group) rather than refusing to group at all: that is the
+                # smallest call the lane can make, and the honest response to a card whose
+                # fixed evidence is itself over budget.
+                _portrait_b = len(inputs[k].get('portrait') or '')
+                _weight_allow = (max(0, PRESPLIT_GROUP_CALL_WEIGHT - _portrait_b)
+                                 if PRESPLIT_GROUP_CALL_WEIGHT else None)
+                if PRESPLIT_GROUP_CALL_WEIGHT and _weight_allow == 0:
+                    print('  presplit: %s portrait alone (%d B) exceeds the %d B call-weight '
+                          'cap — one fragment per call' % (k, _portrait_b,
+                                                           PRESPLIT_GROUP_CALL_WEIGHT))
                 groups = _group_by_budget(fl, lambda it: 1 + it['ls'],
                                           PRESPLIT_GROUP_CITE_BUDGET,
-                                          count_cap=PRESPLIT_GROUP_SENSE_CAP)
+                                          count_cap=PRESPLIT_GROUP_SENSE_CAP,
+                                          extra_sizer=lambda it: len(it['skeleton']),
+                                          extra_budget=_weight_allow)
             else:
                 groups = _group_by_budget(fl, lambda it: 1 + it['ls'], SELFHEAL_GROUP_BUDGET)
             frags[k] = [[{'skeleton': it['skeleton'], 'ls': it['ls'], 'sk': it['sk'],
@@ -1288,7 +1376,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
                  len(fallback_keys)))
 
     # Grammar injection. Root mode: one shared GRAMMAR block (the root conjugation,
-    # identical across sub-cards) before CONV_TR; GRAMMARS empty. Nominal mode: each
+    # identical across sub-cards) after CONV_TR (H2191 stable-left); GRAMMARS empty. Nominal mode: each
     # headword has its OWN block (distinct stem class / compound members), so inject
     # PER CARD via GRAMMARS and leave the shared block empty. --no-grammar = arm A.
     if nominal:
@@ -1399,6 +1487,7 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         # H189 presplit-lane amortization budgets (fragments packed per agent() call).
         'presplit_group_cite_budget': PRESPLIT_GROUP_CITE_BUDGET,
         'presplit_group_sense_cap': PRESPLIT_GROUP_SENSE_CAP,
+        'presplit_group_call_weight': PRESPLIT_GROUP_CALL_WEIGHT,
         'presplit_keys': presplit,
         'tm': os.path.basename(tm_path) if tm_path else None,
         'tm_auto': bool(tm_auto),
@@ -1490,8 +1579,26 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'budgets': {
             'timeout_floor_ms': KILL_FLOOR_MS,
             'timeout_ceil_ms': KILL_CEIL_MS,
+            # G10 (H2173, audit F-B7 — the inverse of the declared-only defect: a budget the
+            # executor READS that nobody wrote. `headless_worker` does
+            # `budgets.get('max_agents')` for its TOTAL cross-pool ceiling and this block
+            # never carried the key, so `max_total_agents` was None on every live window.
+            #
+            # Enforcement impact: NONE, and the honest reason is arithmetic —
+            # `derive_agent_budget` returns `max_agents == max_translate + max_heal`, so with
+            # both per-lane caps enforced the sum can only reach the total when BOTH lanes
+            # are already refusing. The total is an implied bound, never an independent one.
+            # It is written anyway so the executor's read resolves to the plan instead of
+            # silently to None (a None ceiling reads as "unbounded" to anyone auditing the
+            # engine's state), and so manifest and `meta.max_agents` agree on one number.
+            # Do not mistake this for a cap that was missing: the live bound is the per-lane
+            # pair below, which has been enforced since R3.
+            'max_agents': budget_plan.max_agents,
             'max_translate_agents': budget_plan.max_translate_agents,
             'max_heal_agents': budget_plan.max_heal_agents,
+            # ADVISORY, not enforced on this lane — the serial headless executor ignores
+            # both (see the meta comment above: they bound INTRA-process JS dispatch only).
+            # Carried so a JS/forensic replay of this manifest reproduces the dispatch shape.
             'max_wide': MAX_WIDE,
             'stagger_ms': STAGGER_MS,
         },
@@ -1762,7 +1869,7 @@ function restoreCard(card, k) {
   return card
 }
 // Per-card grammar (nominal mode): each headword carries its own block. Empty in root
-// mode (the shared GRAMMAR is injected once before CONV_TR) and in the --no-grammar arm.
+// mode (the shared GRAMMAR is injected once after CONV_TR, H2191) and in the --no-grammar arm.
 const suggestionBlock = k => {
   const rows = SUGGEST_TM[k] || []
   if (!rows.length) return ''
@@ -1924,7 +2031,9 @@ async function healGroup(k, idxs, grp, label, budget) {
     // GRAMMAR constant is empty) and the portrait (Sanskrit citation evidence), exactly as
     // the whole-card batch lane's cardBlock does. Presplit giants -- the densest,
     // highest-value cards -- were translated with ZERO evidence before this.
-    const prompt = PREAMBLE + GRAMMAR + (GRAMMARS[k] || '') + CONV_TR + blocks
+    // H2191: stable-left order, the JS twin of headless_worker.fragment_prompt --
+    // PREAMBLE + CONV_TR (run-invariant) before the window's GRAMMAR and this card's own.
+    const prompt = PREAMBLE + CONV_TR + GRAMMAR + (GRAMMARS[k] || '') + blocks
       + '\\n--- portrait (evidence) ---\\n' + (INPUTS[k] ? INPUTS[k].portrait : '')
     const gskel = pending.reduce((n, fi) => n + (grp[fi].skeleton ? grp[fi].skeleton.length : 0), 0)
     let res
@@ -2141,7 +2250,10 @@ async function resolveGroup(pending, label) {
     // lean mode: NWS_RULE is non-empty and injected only when the batch has an NWS card
     // (full mode: NWS_RULE is '' and the NWS rule already lives inside CONV_TR).
     const nws = (NWS_RULE && cur.some(k => INPUTS[k].nws)) ? ('\\n\\n' + NWS_RULE + '\\n') : ''
-    const prompt = PREAMBLE + GRAMMAR + CONV_TR + nws + cur.map(cardBlock).join('')
+    // H2191: stable-left order, the JS twin of headless_worker.build_prompt --
+    // PREAMBLE + CONV_TR (identical on every call) before the window-scoped GRAMMAR,
+    // then [nws], then the volatile card blocks (per-card grammar stays in cardBlock).
+    const prompt = PREAMBLE + CONV_TR + GRAMMAR + nws + cur.map(cardBlock).join('')
     let res
     try {
       res = await agentKill(prompt, { label: label + '[' + cur.length + ']' + (attempt ? '(retry)' : ''), phase: 'Translate', schema: CARDS_SCHEMA, model: '%(model)s', tools: [] }, skelBytesOfKeys(cur), killBudgetForCur(cur))

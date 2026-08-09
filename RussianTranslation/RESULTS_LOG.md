@@ -1,8 +1,1010 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 02-08-2026_
+_Created: 09-07-2026 · Last updated: 07-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 07-08-2026 (H2263, #983) — the w1 acceptance run did NOT fire: `BLOCKED_ON_LANE_STOP`, $0.00, and the ration for 07-08 UTC is untouched at 0 of 2
+
+Opus 5 (`claude-opus-5`). **No probe. No canary. No window. No model call of any kind.**
+The `h1447-m50-w1` lease is intact and unconsumed, as it has been since 22-07.
+
+[H2263](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2263-Opus_RussianTranslation_nakzatra-w1-acceptance-run-after-call-weight-cap_03.08.26.md)
+opens with "Gate first, always" and names a health NO-GO as a stop. Running its Step 1 today
+would itself have been the violation: the `/pwg-live-gate` retry policy (MG ruling 02-08-2026,
+H2174) stops the lane after **3 consecutive NO-GO days**, and those three are already on file —
+**03-08** (route stall, 297 949 ms), **05-08** (our own kill at 300 099 ms, 0 B), **06-08**
+(up-front `rate_limit` refusal, 18 574 ms, $0.00). A fourth sitting is the one move that rule
+names as wrong. Same ruling, reached independently, as
+[H2254 §4 earlier today](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2254/BOUNDED_300S_CEILING_CONVERGENCE_AND_LIVE_PROOF_07-08-2026.md).
+
+| Gate step | H2263 requires | This sitting | Cost |
+|---|---|---|--:|
+| 1 — health probe | one fresh c4 gate-0 reading | **not fired** — barred by the 3-NO-GO-day stop | $0.00 |
+| 2 — canary, safe-mode arm | only after health PASS | **not reached** | $0.00 |
+| 3 — w1 window, `--stop-before-promote` | only after LIVE_GO | **not reached** | $0.00 |
+
+**The ≥6 h spacing clock is not the binding constraint, and reading it as one is the trap.**
+H2263's row and the 06-08 entry below both record "next legal probe **07-08 01:02:53 UTC**",
+which is true of the *spacing* ration and irrelevant to the *lane stop* — spacing governs the
+gap between probes, the 3-day clause governs whether another probe is legal at all. The stop is
+the stricter of the two and it has not been lifted. That misreading was live in H2263's own
+start-here block until this pass; the file now carries the precondition above its Mission, so
+the next paste of the starter line cannot spend ~$0.55 rediscovering the stop.
+
+**What unblocks this handoff — nothing this session can do:**
+
+1. [H2299](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2299/C4_MEASURED_LEG_KILL_CEILING_HANG_CLASSIFICATION_06-08-2026.md)
+   diagnosis lands (it owns the hang class), plus the offline envelope capture of
+   [H2326](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2326-Opus_RussianTranslation_c4-rate-limit-refusal-envelope-capture-1172_06.08.26.md)
+   ([#1172](https://github.com/gasyoun/SanskritLexicography/issues/1172)) so the next refusal is
+   diagnosable — free and offline, no paid call should choose between the three live hypotheses.
+2. **A human re-authorizes the live sequence.** The lane stopped by contract; only a ruling
+   restarts it, and that ruling should come after the diagnosis, not before.
+3. The open `@DECIDE` on the clause's *remedy* is a separate question and does **not** gate the
+   above — the **stop** half fired correctly on any reading of it.
+
+Nothing here re-derives the ceiling: the 3-NO-GO clause routes to
+[H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md)
+re-derivation, and that remedy stays barred for exactly the reason recorded on 06-08 — 18 574 ms
+is 4.3× *under* the 80 000 ms wall ceiling with the route ceiling never exercised, so there is no
+distribution to fit and re-fitting would be raising a guard to pass a gate.
+
+## 06-08-2026 (H2253) — the byte-identity control was inoperative, and had been silently eating a fixture lease
+
+Opus 5 (`claude-opus-5`), offline only — no model call, no promotion, no store write.
+Bisect rig: [`h2253_bisect_signature.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2253_bisect_signature.py),
+one throwaway worktree per commit, one measured run each (`--warmups 0 --runs 1`),
+CPython 3.14.4 / win32.
+
+| Commit | Date | Bench outcome | Signature | Fixture hash |
+|---|---|---|---|---|
+| [`3070941b9`](https://github.com/gasyoun/SanskritLexicography/commit/3070941b9) | 30-07 | ran | `8d0bbb2f1f` | `569660c689d0659b` |
+| [`005d2f0fd`](https://github.com/gasyoun/SanskritLexicography/commit/005d2f0fd) | 30-07 | ran | `8d0bbb2f1f` | `569660c689d0659b` |
+| [`a75eaa17c`](https://github.com/gasyoun/SanskritLexicography/commit/a75eaa17c) | 31-07 | ran | `8d0bbb2f1f` | `569660c689d0659b` |
+| [`64a4fa625`](https://github.com/gasyoun/SanskritLexicography/commit/64a4fa625) | 02-08 | ran | `8d0bbb2f1f` | `569660c689d0659b` |
+| [`196cf35e2`](https://github.com/gasyoun/SanskritLexicography/commit/196cf35e2) | 02-08 | ran | `8d0bbb2f1f` | `569660c689d0659b` |
+| [`0d1992337`](https://github.com/gasyoun/SanskritLexicography/commit/0d1992337) | 03-08 | **DIED at step 1** — `COST-GATE … over ceiling (~$10.31)` | — | `569660c689d0659b` |
+| [`15d3b2118`](https://github.com/gasyoun/SanskritLexicography/commit/15d3b2118) | 03-08 | ran (not a descendant of `0d1992337`) | `8d0bbb2f1f` | `569660c689d0659b` |
+| [`b18b76385`](https://github.com/gasyoun/SanskritLexicography/commit/b18b76385) | 06-08 | **DIED at step 1** | — | `569660c689d0659b` |
+| `b18b76385` **+ `--allow-over-cost`** | 06-08 | ran, all 5 leases | **`586d012b3d`** | `569660c689d0659b` |
+
+Three findings, in increasing order of severity:
+
+1. **`9bd2a14297` reproduces nowhere** — as [#1000](https://github.com/gasyoun/SanskritLexicography/issues/1000) reported. Unchanged verdict.
+2. **The bench has been dead on master since [`0d1992337`](https://github.com/gasyoun/SanskritLexicography/commit/0d1992337)** (H2173 budget hygiene). `git merge-base --is-ancestor` confirms the split: `0d1992337` is an ancestor of HEAD but **not** of the still-green `15d3b2118`. The control could not have been checked even by someone who tried.
+3. **The `8d0bbb2f1f` column is the real story.** The 02-08 investigation recorded `586d012b3d` at `64a4fa625`; the same commit prints `8d0bbb2f1f` today, with the fixture byte-identical. With the cost gate bypassed, `586d012b3d` reproduces at HEAD. So *before* `0d1992337` made it a hard failure, the gate was **silently parking** the over-ceiling `nominal:ADAna` lease — the bench's own cost estimate had become a hidden input to a determinism control, and the signature moved without any pipeline change.
+
+**Ruling: pin `586d012b3d`** (two independent observations four days apart, all five leases present), enforced in CI by `--expect-signature`, recorded next to its fixture hash in code. The older `9bd2a14297` → `586d012b3d` transition is **INCONCLUSIVE_REBASELINE** — not re-derived, not guessed. Note that the three close-outs which recorded "signature `9bd2a14297` unchanged" are left in the record **as written**: they are historical claims, and rewriting them would hide that the control was quoted rather than run.
+
+Residual, not fixed here: a bench run leaves an untracked `src/pilot/deferred_monsters.jsonl` in the checkout, against H1386 P3f's "leaves the checkout byte-identical" (`window_common.DEFERRED_MONSTERS` is anchored to `HERE`, outside `PWG_OUTPUT_DIR`'s redirection). Also observed: `bounded_staged_run_selftest`'s parallel-speedup assertion is wall-clock flaky under concurrent load (2 PASS / 1 FAIL at `width 3 … serial 1.162s vs 1.074s`).
+## 06-08-2026 (`/pwg-live-gate`, H2263, #983) — c4 gate-0 **HEALTH_NOGO** a third time, and the first one that cost nothing: an explicit `rate_limit` refusal, $0, no API call made
+
+Opus 5 (`claude-opus-5`) drove the gate; the probe's own executor is **Sonnet 5**
+(`claude-sonnet-5`). One sitting, **1** of the 2 reserved calls spent, **$0.00**. Verdict
+derived mechanically by
+[`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
+under policy `production_v3` — not asserted here. Run `#729`,
+`run_id …2026-08-06T19:02:34Z-pid12680`, prompt 6 828 B.
+**This is the first sitting after [v1.143.0](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.143.0)**
+(H2299's `cwd=bare_cli_cwd()` fix), so its wall figure is **not** comparable with the 27 rows before it.
+
+| Reading | wall `elapsed_ms` | CLI `duration_ms` | route `duration_api_ms` | output | classification |
+|---|--:|--:|--:|--:|---|
+| **warm-up (the gate fail-closed here)** | **18 574** | **4 524** | **0** | **830 B** | **`rate_limit`** |
+| measured | — never ran | — | — | — | probe stopped first |
+
+`gate_reason = HEALTH_NOGO` → **verdict NO-GO**. Two fail conditions: warm-up classification
+≠ success, and the measured reading absent. `schema_valid: false`.
+**STOP — no canary, no bounded window, no reroll.** The manifest-bound w1 lease is intact
+and unconsumed.
+
+### This is not the 03-08/05-08 stall — it is the shape H2299 already characterised
+
+[H2299](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2299/C4_MEASURED_LEG_KILL_CEILING_HANG_CLASSIFICATION_06-08-2026.md)
+ruled quota/throttle **CONTRADICTED** *as the explanation for the 300 s hangs*, and one of its
+grounds was that this account's four real `rate_limit` rows all returned in
+**9 949–19 903 ms, never hanging**. Today's row returns in **18 574 ms** — inside that band.
+So today **confirms H2299 rather than overturning it**: the hang class and the throttle class
+are distinct, they look different, and the discriminator H2299 derived just did its job on
+first contact. Filing today next to 03-08/05-08 would undo that separation.
+
+| | 03-08 measured | 05-08 measured | **06-08 warm-up** |
+|---|--:|--:|--:|
+| wall | 297 949 | 300 099 | **18 574** |
+| route `duration_api_ms` | 276 183 | absent | **0** |
+| output | 1 146 B | 0 B | **830 B** |
+| classification | `process` | `timeout` | **`rate_limit`** |
+| reading | route stall — it came back | our kill — it never came back | **refused up front — no API call happened** |
+
+### The cost really is zero this time, and that distinction is load-bearing
+
+05-08's `observed_cost_usd: 0` meant **not evaluable** (`cost_evaluable: false`,
+`unevaluable_calls: 1`) — a killed call bills, its usage just never finalized. Today's zero is
+the opposite: `cost_evaluable: **true**`, `unevaluable_calls: 0`, and **every** token counter
+at 0 (`input` 0, `output` 0, `cache_read` 0, `cache_creation` 0, `subagent` 0) with
+`duration_api_ms: 0`. Nothing was generated, so nothing was billed. **Two identical-looking
+zeros with opposite meanings** — read `cost_evaluable` before reporting either.
+
+Incidentally the sitting is also evidence the v1.143.0 fix landed: outside-the-CLI overhead is
+`18 574 − 4 524 =` **14 050 ms**, back at the bottom of the 14 655 → 32 091 ms range H2299
+measured across the pre-fix series.
+
+### The instrumentation gap that stopped the diagnosis here
+
+`_probe_call` keeps `output_bytes` but **discards the envelope text**, and `_probe_err_class`
+only reports which *class* matched — so the 830 bytes the provider actually returned, including
+any reset time, are unrecoverable. `RATE_RE` is
+`429|rate.?limit|usage limit|too many requests`, and which of those four matched is exactly the
+difference between "account weekly cap" and "per-model capacity". Persisting the envelope on a
+non-success classification is free and offline. Filed as
+[#1172](https://github.com/gasyoun/SanskritLexicography/issues/1172).
+
+### Three hypotheses stay live; none is settled by one row
+
+1. **Account-level usage cap on c4's claude.ai account** — the plain reading.
+2. **Self-contention** — c4 is the same account hosting the driving session, and
+   [`/go`'s own guardrail](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+   warns a window competes with the operator's own quota. The probe was fired **while this
+   session was active**, which is true of most sittings and so discriminates nothing on its own.
+3. **Per-model capacity refusal** on `claude-sonnet-5` that merely matches `RATE_RE`.
+
+The one discriminating probe is **free and offline**: land #1174, then read the envelope text
+on the next refusal. No paid call should be spent to choose between these.
+
+### Ration, day count, and one rule that should not fire as written
+
+- Attempt **1 of 2** for 06-08 UTC, at **$0**. Next legal probe by the ≥6 h spacing rule:
+  **07-08 01:02:53 UTC** — six hours from the `probe_call` row (`19:02:53.523Z`), per
+  [Uprava FINDINGS §319](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
+- **This is the third day carrying a NO-GO probe** (03-08, 05-08, 06-08 — 04-08 never probed),
+  so the `/pwg-live-gate` "3 consecutive NO-GO days" clause fires and **the lane stops**. That
+  half is right and is being honoured.
+- **Its remedy is not.** The clause routes a third NO-GO to
+  [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md)
+  for *ceiling re-derivation* — a fix for a distribution problem, where readings cluster just
+  above the ceiling. Today produced **no latency reading at all**: 18 574 ms is 4.3× *under* the
+  80 000 ms wall ceiling and the route ceiling was never exercised. No value of
+  `STRICT_CEILING_MS` admits or excludes a refusal that never called the API. Counting a quota
+  refusal toward a rule whose remedy is a ceiling re-fit is a category error, and the same is
+  already conceded elsewhere in the probe: its pre-flight aborts (mis-provisioned profile, bare
+  `['claude']` resolution) explicitly consume **no attempt** because they are not health
+  readings either.
+- **Recommended amendment — a human should decide, not applied here:** read the clause as *3
+  consecutive days on which a probe returned a NO-GO **latency reading***, with quota / auth /
+  provisioning refusals excluded from the count the same way pre-flight aborts already are. Left
+  unamended, the next such refusal sends a session to re-derive a ceiling against no numbers.
+  Both readings are recorded; the conservative one (counting it) was applied to the *stop*.
+
+Making the refusal diagnosable is handed to
+[H2326](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2326-Opus_RussianTranslation_c4-rate-limit-refusal-envelope-capture-1172_06.08.26.md)
+(**Opus 5** — capture the probe envelope text so a c4 `rate_limit` refusal is diagnosable, #1172;
+offline, zero spend). The w1 acceptance run itself is **not** re-minted: H2263 already is that
+handoff and the work is still owed, so its row goes back to blocked rather than acquiring a
+near-duplicate twin — `mint_handoff.py` refused the duplicate, correctly.
+
+---
+
+## 06-08-2026 (H2250) — CLI cache amortisation: standing truth #1 **rewritten, not re-confirmed** — v1.127.0 could not amortise, v2.1.223 does
+
+Opus 5 1M (`claude-opus-5[1m]`) drove the run; the calls themselves are **Sonnet 5**
+(`claude-sonnet-5`). Rig reused unchanged:
+[`h2189_profile_ab.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2189_profile_ab.py),
+`paid` arm only, profile `D:\ClaudeTools\profiles\claude4\.claude`, spawn cwd
+`D:\pwg_ru_cli_cwd` (**0 injectable ancestry bytes**), strictly sequential.
+**CLI version 2.1.223** — the number truth #1 was measured on is **1.127.0**.
+12 spawns issued (over the handoff's ≤10 ceiling — see the report), 9 returned envelopes,
+**$1.1313** total. Raw envelopes committed under
+[`pwg_ru/h2250/raw/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/pwg_ru/h2250/raw).
+Full report:
+[CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md).
+
+### Trivial phase (`--max-turns 1`, `Reply with exactly: ok`) — one chronological sequence
+
+`gap_s` is envelope-to-envelope. Table generated by
+[`h2250_amortisation_table.py --chrono`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h2250_amortisation_table.py),
+not hand-written.
+
+| # | UTC | gap_s | create | read | total | api_ms | verdict |
+|--:|---|--:|--:|--:|--:|--:|---|
+| 1 | 05:26:47 | — | 26 243 | 28 882 | 55 125 | 15 584 | cold baseline |
+| 2 | 05:28:21 | 94 | **0** | 55 125 | 55 125 | 66 583 | AMORTISED |
+| 3 | 05:28:56 | 34 | **0** | 55 125 | 55 125 | 14 404 | AMORTISED |
+| 4 | 05:31:04 | 128 | **0** | 55 125 | 55 125 | 5 482 | AMORTISED |
+| 5 | 05:40:11 | 547 | 20 740 | 34 399 | 55 139 | 49 087 | partial re-create |
+| 6 | 05:49:29 | 557 | **0** | 55 125 | 55 125 | 21 251 | AMORTISED |
+| 7 | 05:51:29 | 120 | **0** | 55 125 | 55 125 | 18 398 | AMORTISED |
+
+Every write in `ephemeral_1h_input_tokens`; `ephemeral_5m` 0 throughout.
+**Call #5 is not a decay point** — call #6 sat at a *longer* gap and read the full prefix,
+and #5's own prefix was 14 tokens larger than the cached one. The past-1 h gap was not
+measured; with a non-time-driven miss demonstrated in the same run, one datum there would
+be uninterpretable.
+
+### Old vs new, same knobs
+
+The v1.127.0 instrument
+([`cache_prefix_stability_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/cache_prefix_stability_probe.py))
+was read line by line against this one: same prompt string, same `--max-turns 1`, same
+`claude-sonnet-5`, same `--output-format json`, same `claude_argv_prefix` launcher, same
+profile, same back-to-back loop with no cooldown. The **only** difference is the spawn
+cwd, which changes prefix *size* (its `%TEMP%` dir leaked ~33 KB of ancestry, fixed in
+H2249) and cannot change whether call #2 re-writes call #1's prefix — both of its calls
+used the same directory as each other, and its `repo` arm re-created too.
+
+| | v1.127.0 (02-08-2026) | v2.1.223 (06-08-2026) |
+|---|--:|--:|
+| call #2 `cache_creation` | ~49 165 | **0** |
+| call #2 `cache_read` | 28 882 | **55 125** (= #1 create + read) |
+
+### Card phase — cannot settle amortisation, and that is the finding
+
+Identical production prompt (`build_prompt(manifest, ['nakzatra'])`, 24 770 chars) twice:
+
+| run | turns | api_ms | wall_ms | create | read | total | out | schema | $ |
+|---|--:|--:|--:|--:|--:|--:|--:|---|--:|
+| first | **3** | 494 603 | 511 908 | 15 066 | 69 811 | 84 877 | 4 091 | ✅ 1 card | 0.4193 |
+| repeat | **4** | 48 414 | — | 37 506 | 176 249 | 213 755 | 3 339 | ❌ 0 cards | 0.3280 |
+
+A card call is an agentic loop, so its envelope usage is a **sum over a variable number of
+turns** — 3 vs 4 here — and the two totals are not comparable quantities. Settling the card
+case needs per-turn `iterations[]` decomposition, not more paid calls.
+
+**Incidental, and operationally the bigger news:** 3 of 5 card spawns were **killed** (two
+at 300 s, one at 900 s) and the clean one took **511 s wall**. `HARD_TIMEOUT_MS` of
+300 000 is now below the cost of one card, and the non-terminating hang is still live at
+900 s — same class as the 05-08 `gate-0 HEALTH_NOGO`
+([#1144](https://github.com/gasyoun/SanskritLexicography/issues/1144)).
+No profile vocabulary leaked into either answer.
+
+### What it does to rank 2 (Messages-API port)
+
+The port's cache argument — *turn `create` into `read` on the stable prefix* — is **gone**:
+the CLI now does that itself, for free. What survives is typed HTTP failures, the
+single-completion output cut, and a **new lead argument on wall-clock and turn-count**
+(511 s over 3 turns, 3 of 5 spawns killed). Rank 2 stays open, re-based on throughput.
+
+---
+
+## 05-08-2026 (`/pwg-live-gate`, H2299) — c4 gate-0 **HEALTH_NOGO** again, but a different death: the measured leg was killed by us at 300 000 ms having returned nothing
+
+Opus 5 1M (`claude-opus-5[1m]`) drove the gate; the probe's own executor is **Sonnet 5**
+(`claude-sonnet-5`). One sitting, 2 paid calls. Verdict derived mechanically by
+[`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
+under policy `production_v3` (wall **80 000 ms**, route **45 000 ms**, `conn_error_ceil` 0) —
+not asserted here. Run `#730`, `run_id …2026-08-05T09:52:36Z-pid4284`, prompt 6 828 B.
+
+| Reading | wall `elapsed_ms` | route `duration_api_ms` | gap | output | classification | vs ceilings |
+|---|--:|--:|--:|--:|---|---|
+| warm-up (advisory) | 57 207 | 18 310 | 38 897 | 1 368 B | success | wall under 80 000; route far under 45 000 |
+| **measured (the gate)** | **300 099** | **— never reported** | **—** | **0 B** | **timeout** | **wall 3.75× over; route unmeasurable** |
+
+`gate_reason = HEALTH_NOGO` → **verdict NO-GO**. Three fail conditions fired: classification
+≠ success, a connection/process error, wall ≥ ceiling. `schema_valid: false`.
+
+**This is our own kill, and 03-08 was not — the two NO-GO days are not the same failure.**
+`HARD_TIMEOUT_MS` is 300 000; the measured leg landed at **300 099 ms**, i.e. the ceiling plus
+99 ms of teardown, which is the our-kill signature exactly. Everything that would make it a
+*route* reading is absent: no `duration_api_ms`, no `duration_ms`, **0 output bytes**, no
+finalized CLI telemetry of any kind. Compare 03-08, which the log below rules a route failure
+on precisely the opposite evidence — the CLI *returned* with `duration_ms` 277 894 and 1 146
+bytes after 297 949 ms, ~2 s **under** the then-relevant ceiling:
+
+| | 03-08 measured | **05-08 measured** |
+|---|--:|--:|
+| wall | 297 949 | **300 099** |
+| route `duration_api_ms` | 276 183 | **absent** |
+| CLI `duration_ms` | 277 894 | **absent** |
+| output | 1 146 B | **0 B** |
+| classification | `process` | **`timeout`** |
+| reading | route failure — the call came back | **killed by us — the call never came back** |
+
+**A ceiling re-fit cannot fix this shape, and it is important not to reach for one.** The
+documented response to a failing lane — [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md)
+re-derivation — was written for a *distribution* problem: "the median sits just under the
+ceiling", where patience cannot reach a PASS but a correctly fitted ceiling can. Today's leg
+produced **no number to fit**. No value of `STRICT_CEILING_MS` admits a call that returns zero
+bytes; a ceiling of 300 001 would "pass" a reading with no content in it, which is strictly
+worse than the NO-GO. Per [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+§270 the correct first reading of a hang is a **quota candidate**, not a latency reading — a
+throttled CLI does not return `429`, it hangs — and `claude auth status --json` (free, run
+before the sitting: `loggedIn: true`, `max`, `firstParty`) proves credentials, never quota.
+
+**The warm-up is again the sharpest counter-evidence to "c4 is down".** Same profile, same
+prompt, ~5 min earlier: **18 310 ms route**, comfortably inside 45 000, 1 368 bytes returned.
+That is now **two consecutive sittings** where the warm-up is healthy and the measured leg
+dies — 03-08 read 15 315 ms route on the warm-up before a 276 183 ms measured route. The
+profile answers; the second call of a sitting is what does not.
+
+**Cost — a floor, not a total.** The call ledger records the warm-up at **$0.569658** and the
+measured call at `observed_cost_usd: 0`, but flags the run `cost_evaluable: false` with
+`unevaluable_calls: 1`. That zero means *not evaluable*, **not free**: a killed call still
+bills, and its usage was never finalized. So this sitting cost **≥ $0.57, with the second
+call's true charge unknown** — recording it as "$0.57 spent" would understate it.
+
+**Ration and state.**
+
+- Attempt **1 of 2** for 05-08 UTC. **Next legal probe: 15:58:34 UTC** — six hours from the
+  last `probe_call` row (`09:58:33.976Z`), *not* from the run-id start (`09:52:36Z`, which
+  would give 15:52:36 and be refused). This is [Uprava FINDINGS §319](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)
+  applied on its first contact after being written.
+- **NO-GO day 2.** 03-08 was day 1; **04-08 was never probed**, so the "3 consecutive NO-GO
+  days" trigger is being read as *3 consecutive days on which a probe returned NO-GO*, not 3
+  calendar days. That reading is stated here rather than assumed silently — the rule does not
+  say which it means, and the difference decides whether the next NO-GO routes the lane to
+  H2138 or not.
+- Ceiling re-fitting is **not** indicated, for the reason argued above — and would not be even
+  on a third NO-GO of this shape.
+- Consequences per the gate's own hand-off clause: **no canary, no bounded window, nothing
+  further billed**; the manifest-bound lease is intact and unconsumed. Resume requires a
+  **new** health PASS; a prior GO never authorizes it.
+
+Diagnosis of the measured-leg hang is handed to
+[H2299](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2299-Opus_RussianTranslation_c4-measured-leg-hangs-to-kill-ceiling-diagnose_05.08.26.md).
+Machine-readable rows are **local-only** (the probe's output dir is gitignored):
+[src/pilot/output/h963_c4_gate0_probe_events.jsonl](file:///C:/Users/user/Documents/GitHub/SanskritLexicography/RussianTranslation/src/pilot/output/h963_c4_gate0_probe_events.jsonl)
+and [h963_c4_gate0_calls.json](file:///C:/Users/user/Documents/GitHub/SanskritLexicography/RussianTranslation/src/pilot/output/h963_c4_gate0_calls.json).
+
+## 05-08-2026 (H2259) — the 03-08 c4 gate attempt 2 never spent: the schedule was anchored 6 min ahead of the ration guard's own clock
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2259](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2259-Opus_SanskritLexicography_c4-gate-attempt2-record-and-act_03.08.26.md),
+recording the outcome of the unattended one-shot armed by the 03-08
+[`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
+sitting. **Ending: `REFUSING TO SPEND` (exit 3) — 0 paid calls, $0.** No latency reading
+exists for attempt 2, because no call was made; the day closed on attempt 1's single sitting.
+
+| Fire | UTC | local | sittings today | gap since last call | required | outcome |
+|---|---|---|--:|--:|--:|---|
+| smoke test (deliberate) | 10:36:58 | 13:36:58 | 1/2 | 3 806 s | 21 600 s | `REFUSING TO SPEND`, exit 3 |
+| **the real attempt 2** | **15:27:30** | **18:27:30** | **1/2** | **21 238 s** | **21 600 s** | **`REFUSING TO SPEND`, exit 3** |
+
+**Root cause — a 362 s anchor error, not a guard defect.** The Windows one-shot
+`pwg-c4-gate-attempt2-20260803` was armed at `StartBoundary 2026-08-03T18:27:30+03:00`
+(= 15:27:30 UTC), i.e. attempt 1's **`run_id` start** `2026-08-03T09:27:25Z` + 6 h. But
+[`run_gate_attempt2.py`](file:///C:/Users/user/.claude/scheduled-tasks/pwg-c4-gate-20260803/run_gate_attempt2.py)
+re-derives the ration at fire time from the **last `probe_call` row** in the events ledger —
+`2026-08-03T09:33:32.845Z`, the *measured* leg, which finished 6 min 8 s after the run began
+because that leg itself burned 297 949 ms. Six hours from **that** stamp is **15:33:33 UTC**,
+not 15:27:30. The guard was right and the schedule was wrong by **362 s**.
+
+The same wrong anchor is stated in two places that must now be read with this correction:
+attempt 1's own entry below ("the next probe is legal no earlier than **15:27 UTC**") and the
+matching [`.ai_state.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/.ai_state.md)
+Next-Steps row. **Standing rule for any future one-shot: arm it off the last `probe_call`
+`ts` + `MIN_SPACING_S` + a margin, never off the run-id start** — the gap between the two is
+exactly the duration of the slowest call in the sitting, so it is *largest* precisely on the
+NO-GO days that make a second sitting worth scheduling.
+
+**Consequences.**
+
+- **No reading was lost and nothing was billed** — the guard did what it is for. The cost
+  was the *opportunity*: 03-08's second sitting went unused and cannot be reclaimed.
+- **The NO-GO day count stays at 1**, not 2. Attempt 2 produced no verdict, so it cannot
+  advance the 3-consecutive-NO-GO-days trigger that routes ceiling re-derivation to
+  [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md).
+  `production_v3` (80 000 / 45 000) stands unchallenged and unre-fitted.
+- **No GO to act on**, so H2259's step 3 (a bounded window on a fresh receipt) is moot — and
+  would have been moot regardless: a canary receipt older than 6 h is refused by
+  `bounded_staged_run.py --execute`, and this is being read ~41 h after the fire.
+- **c4 has not been probed since.** The events ledger's last row is still attempt 1's measured
+  leg at `09:33:32.845Z`; 25 rows total, nothing on 04-08 or 05-08. The lane has been idle two
+  days, and 05-08's ration is untouched (0/2 sittings, no spacing constraint in force).
+
+**Evidence, quoted rather than summarised** — the runner's log lives outside the repo, is
+gitignored and would not survive a disk wipe, so it is transcribed here in full. No
+`artifacts/` directory was ever created, because a refusal happens before any artifact is
+written; that absence is itself confirmation that nothing was spent.
+
+> ```
+> ========================================================================
+> UNATTENDED c4 gate attempt 2 — fired 2026-08-03T10:36:58+00:00 UTC (local 2026-08-03T13:36:58)
+> ========================================================================
+> ration: sittings today 1/2 · last call 2026-08-03T09:33:32+00:00 · spacing 3806 s
+> REFUSING TO SPEND: 3806 s since last call < 21600 s required spacing.
+> exit code: 3
+>
+> ========================================================================
+> UNATTENDED c4 gate attempt 2 — fired 2026-08-03T15:27:30+00:00 UTC (local 2026-08-03T18:27:30)
+> ========================================================================
+> ration: sittings today 1/2 · last call 2026-08-03T09:33:32+00:00 · spacing 21238 s
+> REFUSING TO SPEND: 21238 s since last call < 21600 s required spacing.
+> exit code: 3
+> ```
+
+Windows agreed: `Get-ScheduledTaskInfo` reported `LastRunTime 03.08.2026 18:27:27`,
+`LastTaskResult 3`, `NextRunTime` empty. The task was **unregistered** as part of this pass —
+it is single-fire and inert, but dated one-shots left registered are how a machine accumulates
+jobs nobody later dares delete.
+
+**The ration guard is now twice-proven to bite rather than merely be asserted** — once by the
+10:36Z smoke test that was designed to trip it, and once here, unattended, against a real
+armed fire that a human had every reason to believe was correctly timed. That is the more
+valuable of the two demonstrations.
+
+## 04-08-2026 (H2194) — Sa→Ru gloss vidyut tier: krdanta-collapse lemma guard (wave-2 defect class 2)
+
+Fable 5 (`claude-fable-5`), [H2194](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2194-Fable_RussianTranslation_askbatch-saru-gloss-residual-2026-08_02.08.26.md)
+(ask-batch residual W1-GL). The wave-2 panel's lemma-defect **class 2** — derived nominals
+lemmatized to a bare verbal root (`janitṛ`→jan, `liṅgin`→liṅg; vidyut tier lemma precision
+71.8 %) — traced to entry-count voting in
+[`src/build_vidyut_fallback.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_vidyut_fallback.py):
+kosha lists a krdanta-derived Subanta under the bare dhatu, so collapses outnumber the real
+stem. Fix: vidyut's own `PratipadikaEntry.Basic` vs `.Krdanta` distinction now demotes
+krdanta-collapsed noun candidates whenever a Basic stem candidate exists (demoted lemmas stay
+in the `vidyut_ambiguity.tsv` trail). Before/after primary pick on real kosha 0.4.0 entries:
+
+| form | old pick | new pick | changed |
+|---|---|---|---|
+| janitf (janitṛ, panel example) | jan | **janitf** | ✅ |
+| liNgin (liṅgin, panel example) | liNg | **liNgin** | ✅ |
+| rAmeRa (rāmeṇa — same collapse on the commonest noun) | ram | **rAma** | ✅ |
+| rAma | ram | **rAma** | ✅ |
+| viDunvAna (no Basic candidate in kosha) | viDu | viDu | no (nothing better exists) |
+| gacCati (verb lemma already right) | gam | gam | no (guard never touches verbs) |
+
+Regressions pinned by 5 new Fixture-D tests in
+[`tests/test_saru_gloss_pipeline.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_saru_gloss_pipeline.py)
+(12 passing, real-kosha tallies as fixtures; `basic=None` reproduces the old ranking exactly).
+`vidyut_form2lemma.tsv` is **not** regenerated here (worktree-local derived data; D8 fences
+republish behind a human GO) — the layer-wide repick count will surface as the new
+`krdanta_repick` stat on the next gated regen. Defect classes 1 (ṛ/ṝ length collapse — its
+example forms get **0 entries** from kosha 0.4.0, unreachable in this function) and 3
+(compound final-member, marker tier) remain open wave-3 targets.
+
+## 03-08-2026 (H2191) — stable-left prompt reorder: cross-window stable head 1 226 → 12 249 chars (offline, no paid call)
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md),
+playbook [PROMPT_CACHING_PWG_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PROMPT_CACHING_PWG_RU.md)
+§3 rank 4 / §4 Step E. `build_prompt` moved from `preamble + grammar + translation + [nws] + cards`
+to **`preamble + translation + grammar + [nws] + cards`**. Reorder only — no segment dropped or
+compressed (lean-TR stays rejected). **Zero paid calls.**
+
+Measured on the committed `h1209_slice3` manifest (3 cards, nominal window):
+
+| segment | chars |
+|---|---:|
+| preamble | 1 226 |
+| translation (CONV_TR) | 11 023 |
+| shared grammar (this fixture is nominal) | 0 |
+| per-card grammar | 293–404 |
+
+| cross-**window** stable head | chars | share of a 24 770-char prompt |
+|---|---:|---:|
+| old order (`preamble + grammar + translation`) | 1 226 | 4.9 % |
+| **new order** (`preamble + translation + grammar`) | **12 249** | **49.5 %** |
+| gain | **+11 023** | +899 % |
+
+**What this number is and is not.** It is the leading bytes that two windows with
+*different* grammar blocks still share — the head any provider-side prefix match could
+reuse across roots. It is **not** a billed saving: chars are not tokens, and nothing is
+saved unless the provider actually prefix-matches (CLI amortisation is itself contested —
+playbook §1.1). Within a single window the order changes nothing, since every call there
+already shares the whole framework; and because this fixture is a nominal window with an
+empty shared `grammar`, its own prompt bytes are unchanged by the reorder.
+
+**Four lanes carried the same assembly** and all four were moved together (`build_prompt`,
+`fragment_prompt`, two generated-harness JS twins, `prep_slice.prompt_common`), plus the two
+prefix computations that must stay byte-identical to it (`split_prompt`, `prompt_shape`).
+
+| gate | result |
+|---|---|
+| `headless_worker_selftest` (new H2191 pin) | PASS |
+| `window_selftest` | 202/202 |
+| `h2189_profile_ab_selftest` | 12/12 |
+| `h2158_route_ab.py --check` (3 real cards) | prefix 12 249 + tail, byte-identical to `build_prompt` |
+| `lang_parity_check.py` | 91 entries, 0 drift (32 re-derived, SHARED/GAP stand) |
+## 03-08-2026 (`/pwg-live-gate`) — c4 gate-0 **HEALTH_NOGO**: the route, not our kill
+
+Opus 5 1M (`claude-opus-5[1m]`) drove the gate; the probe's own executor is **Sonnet 5**
+(`claude-sonnet-5`). One sitting, **2 paid calls, $0.976** observed. Verdict derived
+mechanically by [`h963_c4_gate0_probe.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py)
+under policy `production_v3` (wall ceiling **80 000 ms**, route ceiling **45 000 ms**,
+`conn_error_ceil` 0) — not asserted here.
+
+| Reading | wall `elapsed_ms` | route `duration_api_ms` | gap (scaffolding) | classification | vs ceilings |
+|---|--:|--:|--:|---|---|
+| warm-up (advisory) | 69 082 | 15 315 | 53 767 | success | wall under 80 000; route far under 45 000 |
+| **measured (the gate)** | **297 949** | **276 183** | 21 766 | **process** | **wall 3.7× over · route 6.1× over** |
+
+`gate_reason = HEALTH_NOGO` → **verdict NO-GO**. Four independent fail conditions fired:
+classification ≠ success, a process/connection error, wall ≥ ceiling, route ≥ api ceiling.
+
+**This is a route failure, not our own kill — the distinction the gate is required to make.**
+297 949 ms sits ~2 s under `HARD_TIMEOUT_MS` (300 000), which is exactly the our-kill
+signature, so it had to be ruled out rather than assumed. The call ledger settles it: the CLI
+itself reported `duration_ms` **277 894** and `duration_api_ms` **276 183**, i.e. the process
+*returned* with telemetry instead of being tree-killed, and the API leg alone burned 276 s.
+It also came back effectively empty — `output_tokens` **2**, 1 146 output bytes — while still
+billing $0.412 for that call. A killed call leaves no such finalized telemetry.
+
+The warm-up is the sharpest evidence that this is bimodality, not a dead profile: the same
+profile, same prompt, ~5 minutes earlier, returned a **15 315 ms** route reading — the
+*second-fastest* ever recorded on c4 — and then the measured leg was 18× slower. That is the
+hours-scale bimodality MG's 02-08 retry ruling was written for.
+
+**Consequences, per the gate's own hand-off clause:** no canary, no bounded window, nothing
+further billed; the manifest-bound lease is left intact and unconsumed. Resume requires a
+**new** health PASS — a prior GO never authorizes it. Ration state: this was attempt **1 of 2**
+for 03-08 UTC; the next probe is legal no earlier than **15:27 UTC** (≥6 h spacing) — ~~15:27~~
+**corrected to 15:33:33 UTC**, see the 05-08-2026 (H2259) entry at the top of this log: 6 h runs
+from the last `probe_call` at 09:33:32.845Z, not from the run-id start, and a one-shot armed on
+15:27:30 was refused by the ration guard for being 362 s early. Under v3
+this is NO-GO **day 1**; at 3 consecutive NO-GO days the lane stops and the ceiling goes back to
+[H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md)
+for re-derivation instead of to another probe. Ceiling re-fitting is **not** indicated yet: a
+single reading 3.7× over is not the "median sits just under the ceiling" shape that justified
+the v2→v3 fit.
+
+Machine-readable rows are **local-only** (the probe's output dir is gitignored):
+[src/pilot/output/h963_c4_gate0_probe_events.jsonl](file:///C:/Users/user/Documents/GitHub/SanskritLexicography/RussianTranslation/src/pilot/output/h963_c4_gate0_probe_events.jsonl)
+and the call ledger [h963_c4_gate0_calls.json](file:///C:/Users/user/Documents/GitHub/SanskritLexicography/RussianTranslation/src/pilot/output/h963_c4_gate0_calls.json)
+(run `#729`, `run_id …2026-08-03T09:27:25Z-pid21980`).
+
+## 03-08-2026 (H2192) — `added_by_one` fires 0/12,000 because it and `omitted_by_one` are one undirected class
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2192](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2192-Opus_RussianTranslation_askbatch-rv-residual-2026-08_02.08.26.md).
+**Zero model calls, $0.00** — every number below is derived from committed data by
+[`src/rv_added_by_one_diagnosis.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_added_by_one_diagnosis.py).
+Closes the cause H1844 and H1901 both flagged and neither measured.
+
+### The population the class should have caught — the pilot's own 2,000 stanzas
+
+Supplied-material markers are a **proxy**, not proof: the convention differs by edition, so this
+measures where the direction is textually recoverable, not who padded more.
+
+| Translator | present | marked | `[…]` | `(…)` | marked % |
+|---|--:|--:|--:|--:|--:|
+| Grassmann 1876–77 | 2,000 | 91 | 75 | 25 | 4.5 % |
+| Geldner 1951–57 | 1,999 | 802 | 9 | 797 | 40.1 % |
+| Elizarenkova 1989–99 | 2,000 | 1,434 | 0 | 1,434 | **71.7 %** |
+| Griffith 1896 | 2,000 | 2 | 0 | 2 | **0.1 %** |
+| Jamison–Brereton 2014 | 2,000 | 1,027 | 362 | 903 | 51.4 % |
+
+**8,744** pilot pairs carry a marker on exactly one side (2,339 on both). Against that population
+`added_by_one` fired **0** times. **This corrects the reason given in the H1844 entry below while
+confirming its verdict:** Griffith is the *least*-marked witness here — his Victorian padding is
+italicised in print and survives extraction with no delimiter — not the most. The padder in our
+data is Elizarenkova.
+
+### The direction was in the prose all along
+
+| Source | rows | share |
+|---|--:|--:|
+| deterministic (`missing_side` already present) | 3 | 1.0 % |
+| recovered — exactly one translator named in `why` | 232 | 81.1 % |
+| ambiguous — both named, not guessed | 51 | 17.8 % |
+| unrecoverable — neither named | **0** | 0.0 % |
+
+**283 of 283** model-decided `omitted_by_one` rows name a translator in the free-text `why`; 235
+of 286 asymmetric rows (82.2 %) get their side back with no model call.
+
+### What the second defect (a non-invariant coarse map) cost — nothing, yet
+
+| Arm A | Arm B | n | κ old map | κ fixed map |
+|---|---|--:|--:|--:|
+| `spike.ds-v3` | `spike.gpt4o-mini` | 300 | 0.235 | 0.235 |
+| `spike.ds-v3` | `spike.gemini-flash` | 267 | 0.350 | 0.350 |
+| `spike.gpt4o-mini` | `spike.gemini-flash` | 267 | 0.216 | 0.216 |
+
+Bit-identical, because the defect kept the unstable half of the map unexercised — so **H1901's
+published coarse kappas need no caveat**, and these three values independently reproduce them.
+
+Gates: `tests/test_rv_spine.py` **54/54** (+5 pins, each verified RED on pre-fix master),
+`window_selftest` **201/201**, `lang_parity_check` 91 entries no drift. The pilot was **not**
+re-typed — the fix is to the instrument, not the data. Full write-up:
+[`pwg_ru/h2192/RV_ADDED_BY_ONE_INSTRUMENT_DEFECT_2026-08.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2192/RV_ADDED_BY_ONE_INSTRUMENT_DEFECT_2026-08.md).
+
+## 03-08-2026 (H2248, #983) — `nakzatra` is not a group-BUDGET defect: the group budget never counted the portrait
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2248](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2248-Opus_RussianTranslation_nakzatra-group-budget-kill-ceiling_03.08.26.md).
+**Zero paid calls** — offline analysis of the H2174 ledger plus the manifest that produced it.
+
+H2248 was minted to fit a per-group kill budget that "re-inherits the flat `CEIL` clamp"
+(`killBudgetMs` saturating above ~2.9 KB). Reading the budget before changing it, per the
+handoff's own first instruction, showed **that clamp is not in the production lane at all**:
+
+| lane | where the budget lives | what it grants a heal group |
+|---|---|---|
+| Max Workflow JS (**forensics only**) | `gen_opt_harness2.killBudgetMs` / `killBudgetForCur` | byte-scaled, clamped to `KILL_CEIL_MS` |
+| **headless CLI (production, H1110)** | `headless_worker.HeadlessEngine.__init__` | **one flat `self.timeout`** for every call in the window |
+
+`call()` passes `timeout=self.timeout` — set once as `min(operator, budgets.timeout_ceil_ms,
+HARD_TIMEOUT_MS)` — so **no per-group, byte-scaled budget exists in the lane that produced the
+timeouts.** The ledger says the same thing independently: `nakzatra#g1` carried 598 B, whose JS
+budget would be 93 820 ms, and it ran **176 871 ms**; its retry (necessarily a *subset* of those
+598 B, by `heal_group`'s construction) reached **300 038 ms** ≈ `HARD_TIMEOUT_MS`. Nothing under
+a 93.8 s budget can do that. So the handoff's candidate "a per-GROUP budget that scales instead
+of clamping" is both **inert** here (it would edit the forensics lane) and **backwards** (a
+scaling budget can only *shorten* a call, and these calls die *at* the ceiling).
+
+**What actually predicts the failure: total call weight, which no budget counted.**
+`heal_group` re-sends the card's whole portrait on every fragment call (H1339/B01, so presplit
+giants are not translated evidence-blind). The presplit grouping sizer weighs only
+`1 + <ls>` citation-units with a fragment-count cap — the portrait is invisible to it.
+
+| call | portrait | content | **weight** | outcome |
+|---|---:|---:|---:|---|
+| `sarvatra#g1` | 7 713 | 536 | 8 249 | 196 948 ms ✓ |
+| `sakft#g1` | 9 166 | 791 | 9 957 | 232 636 ms ✓ |
+| `sarvatra#g2` | 7 713 | 2 300 | 10 013 | 289 585 ms ✓ |
+| `nakzatra#g1` | 9 761 | 598 | 10 359 | 176 871 ms ✓ |
+| `sakft#g2` | 9 166 | 2 310 | 11 476 | 192 295 ms ✓ |
+| **`nakzatra#g2`** | 9 761 | 4 617 | **14 378** | **TIMEOUT 300 024 ms** |
+
+The one call that died is the heaviest, 25 % above the heaviest that landed — and the fixed
+evidence block is **68–94 %** of every call in the window. `nakzatra` loses twice over: the
+largest portrait *and* a 3 236 B mega-fragment that the citation sizer prices at nearly zero
+(byte-heavy, citation-light), so it packed in for free.
+
+**Fix (this PR):** the presplit lane gains a second, independent grouping dimension —
+`PRESPLIT_GROUP_CALL_WEIGHT` = 12 000 B over *portrait + group bytes*, above every observed
+success (11 476) and below the failure (14 378). The whole-card **batch** lane has always sized
+on `skeleton + portrait`, so this makes the fragment lane agree with the lane beside it. Effect
+on the real w1 cards, from their actual manifest:
+
+| card | before | after |
+|---|---|---|
+| `nakzatra` | 2 calls — 10 359 · **14 378** | 3 calls — 10 359 · 11 142 · **12 997** |
+| `sarvatra` | 2 calls — 8 249 · 10 013 | **unchanged** |
+| `sakft` | 2 calls — 9 957 · 11 476 | **unchanged** |
+
+Surgical: only the card that failed regroups, at the cost of one extra call.
+
+**Stated honestly — this does not guarantee the acceptance bar.** `nakzatra#g3` is the 3 236 B
+mega-fragment alone; its weight is `portrait + 3 236 = 12 997 B` and **no grouping change can
+lower it**, since a single oversize fragment always gets its own call. That is 13 % above the
+heaviest proven success, though 10 % below the observed failure. The H2174 data also shows the
+latency is heavy-tailed independent of size (10 013 B → 289 585 ms; 10 359 B → 176 871 ms), so
+"zero timeouts" is not something this fix can promise.
+
+**The lever that would actually settle it is already built and default-OFF.** H2189 measured
+`--safe-mode` on *this exact card*: `nakzatra` whole-card wall **254 s → 115 s (−55 %)**, cost
+−61 %, with the `{Tn}` token set identical and 13/13 senses carrying Russian. It is opt-in
+(`execution.cli_safe_mode`) and default OFF only because its quality case is n=1 and needs a
+canary GO **on the safe-mode arm** — which a gated window would produce as a by-product. A 55 %
+latency cut dwarfs a 10 % weight cut; the grouping fix and that flag are complements, and the
+next paid attempt should carry both rather than spending on grouping alone.
+
+Gates: `window_selftest` **204/204**, `bounded_staged_run_selftest` PASS,
+`headless_worker_selftest` PASS (`#983` ceiling parity unchanged — `KILL_CEIL_MS` untouched).
+LANG_PARITY **SHARED**, new entry `presplit_group_call_weight_h2248`, 0 language-keyed tokens
+in all 134 added lines, 43 drifted entries re-stamped.
+
+## 03-08-2026 (H2174, #983) — the medium50 presplit route proven LIVE on w1: 2/3 cards, zero whole-card batches
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2174](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2174-Opus_RussianTranslation_medium50-presplit-live-run-after-health-pass_02.08.26.md).
+**12 paid calls, $5.53 recorded floor** (2 health probe + 1 canary + 9 window) of a 40-call lane budget.
+The H2160 presplit fix (v1.134.0), merged but undemonstrated for two sessions, is now demonstrated live.
+
+**Gate-0 health — first PASS under `production_v3`** (both ceilings, run `…2026-08-03T06:10:26Z-pid36728`):
+
+| purpose | wall `elapsed_ms` | `duration_api_ms` | `api_gap_ms` | class |
+|---|---:|---:|---:|---|
+| warmup | 87 065 | 29 443 | 57 622 | success |
+| **measured** | **46 598** | **8 134** | 38 464 | success |
+
+Measured clears **both** v3 numbers (46 598 < 80 000 wall; 8 134 < 45 000 route), 0 connection
+errors. Under the retired v2 65 000 ms wall ceiling this would still have been a **GO** — but the
+02-08 series shows that was a 2/8 lottery; v3 made it a gate. The warm-up (87 065 ms) exceeds the
+wall ceiling and is advisory-only, which the probe banner's "either reading >= 80000 ms => NO-GO"
+prose contradicts — prose bug, not behaviour (see the caveat below).
+
+**Canary — the first c4-bound canary GO in the project's history.** H2044 closed as
+`HEALTH_GO_CANARY_UNSPENT` because no canary manifest existed "and neither does anything that
+builds it". Both halves are now fixed: a committed builder
+([`canary_manifest_build.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/canary_manifest_build.py))
+and a gate that can actually emit GO (below). Fresh c4 run `h2174-canary-c4`, 1 call, 72 349 ms,
+3/3 senses, 0 `{Tn}` residue — receipt validates against `--only-profile c4`.
+
+**w1 — the acceptance run.** Regenerated first: `presplit_keys` `[]` -> `["nakzatra","sakft","sarvatra"]`,
+batches **3 -> 0**, `config_dir_fingerprint` unchanged. Manifest
+`05a1de55cc0883459c77613aa93fd50f9810146254dab24567553378b4f8fda9`.
+
+| # | detail | evaluable | wall_ms | `dur_ms` | `api_ms` | USD |
+|---:|---|---|---:|---:|---:|---:|
+| 1 | `heal:nakzatra#g1` | yes | 176 871 | 155 462 | 153 303 | 0.5118 |
+| 2 | `heal:nakzatra#g1.retry1` | **NO** | 300 038 | — | — | — |
+| 3 | `heal:nakzatra#g2` | **NO** | 300 024 | — | — | — |
+| 4 | `heal:sarvatra#g1` | yes | 196 948 | 179 029 | 177 395 | 0.6022 |
+| 5 | `heal:sarvatra#g2` | yes | 289 585 | 278 463 | 276 775 | 0.9197 |
+| 6 | `heal:sarvatra#g2.retry1` | yes | 48 478 | 34 334 | 32 779 | 0.3194 |
+| 7 | `heal:sakft#g1` | yes | 232 636 | 222 746 | 220 768 | 0.7012 |
+| 8 | `heal:sakft#g2` | yes | 192 295 | 178 315 | 175 968 | 0.5392 |
+| 9 | `heal:sakft#g2.retry1` | yes | 209 594 | 190 879 | 189 115 | 0.7051 |
+
+Recorded floor **$4.2986** (`cost_evaluable=False`), 1 202 236 subagent tokens, 2 of 9 unevaluable.
+The floor is a floor: each killed call was a real paid spawn contributing $0
+([#949](https://github.com/gasyoun/SanskritLexicography/issues/949)).
+
+| result | value |
+|---|---|
+| cards | 3 |
+| **non-null** | **2** (`sarvatra` 14 senses, `sakft` 19 senses) |
+| null | 1 (`nakzatra`) |
+| `presplit` | **3/3** |
+| whole-card batches | **0** |
+| `kill_timeouts` | 2 | 
+| `conn_errors` | 0 |
+
+**Every one of the 9 calls is a fragment group** (`heal:<key>#g<n>` over `_f0.._fN`) — the route
+the fix was written for, exercised end-to-end for the first time. Acceptance
+(">=1 non-null card through the presplit lane, zero whole-card batches") is **met**.
+
+**`nakzatra` still does not land, and presplit did not save it.** Its `#g1` succeeded at 176 871 ms
+but its retry and `#g2` both died at the 300 s kill ceiling. H2160 established the b0 "hang" was
+our own kill gate; this run shows fragmenting the card does not by itself bring the largest head
+(80 citation-units, 10 fragments) under the ceiling — the group budget re-inherits it. So
+[#983](https://github.com/gasyoun/SanskritLexicography/issues/983) is **not** closed by this run:
+the route holds for 2 of 3 keys, and the nakzatra residual is a group-budget question, not a
+presplit question.
+
+**Caveat found while gating, now fixed —
+[`canary_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/canary_gate.py)
+could never emit GO for its own fixture.** The literal-marker scan read the whole card, and the
+curated fixture's portrait `note` contains the string `SAN-LOSS` and is fed to the model verbatim
+as prompt input — so every real canary paraphrases it back into `notes` and trips the gate.
+Confirmed on two independent runs a week apart (H1447 22-07, H2011 02-08); the committed
+[`h1447_canary_wf_output.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1447/h1447_canary_wf_output.json)
+carries the marker today. It stayed invisible because the selftest's `clean_card` has no `notes`
+key at all. The scan is now scoped to translated content; a marker in `german`/`russian` is still
+a hard NO-GO, and the fixture's real detector (3/3 senses carrying Russian) was always intact and
+always passed. RED-verified pin in `bounded_staged_run_selftest.test_q3_execute_requires_canary_go_receipt_h2159`.
+This is the [H2160](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2160-Opus_RussianTranslation_whole-card-b0-hang-and-medium50-completion_02.08.26.md)
+"inert by construction" class inverted: always-fail instead of always-pass.
+
+Gates: `window_selftest` **201/201**, `bounded_staged_run_selftest` **PASS**.
+
+## 03-08-2026 (H2138, #946) — the ceiling re-derived: `production_v3` = 80 000 wall + 45 000 route, and one number could never have worked
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md).
+**ZERO paid calls** — derived from readings H2011/H2152/H2158/H2174 already bought. Full memo:
+[H2138_PROBE_CEILING_DERIVATION_2026-08-03.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2138/H2138_PROBE_CEILING_DERIVATION_2026-08-03.md).
+Reproduce: `python src/pilot/h2138_ceiling_derive.py`.
+
+`wall = duration_api_ms + api_gap_ms`, and the two move independently (api/wall **0.25…0.72**),
+so a threshold on the sum cannot express route health. `production_v3` therefore carries **two**
+ceilings and `CURRENT_POLICY` points at it; v1/v2 stay frozen.
+
+| date (UTC) | wall `elapsed_ms` | `duration_api_ms` | `api_gap_ms` | v2 (65 000) | **v3 (80 000 + 45 000)** |
+|---|---:|---:|---:|---|---|
+| 2026-07-22 20:04 | 102 874 | — | — | NO-GO | NO-GO |
+| 2026-07-23 06:09 | 168 352 | — | — | NO-GO | NO-GO |
+| 2026-07-31 19:01 | 78 415 | — | — | NO-GO | **GO** |
+| 2026-08-01 20:21 | 50 336 | 27 557 | 22 779 | GO | GO |
+| 2026-08-02 05:48 | 43 815 | 26 386 | 17 429 | GO | GO |
+| 2026-08-02 07:49 | 75 561 | 29 069 | 46 492 | NO-GO | **GO** |
+| 2026-08-02 11:06 | 96 520 | 69 137 | 27 383 | NO-GO | NO-GO |
+| 2026-08-02 12:46 | 66 291 | 16 445 | 49 846 | NO-GO | **GO** |
+
+| statistic | wall | `duration_api_ms` | `api_gap_ms` |
+|---|---:|---:|---:|
+| n | 8 | 5 | 5 |
+| min / median / max | 43 815 / 76 988 / 168 352 | 16 445 / 27 557 / 69 137 | 17 429 / 27 383 / 49 846 |
+
+**Derivation.** ROUTE `api_ceil_ms` = round_up(healthy-cluster max 29 069 × 1.5) = **45 000**;
+the cluster `16 445 · 26 386 · 27 557 · 29 069` separates from the degraded `69 137` at a 2.38×
+multiplicative gap. WALL `latency_ceil_ms` = round_up(29 069 + largest observed scaffolding
+49 846) = **80 000** — the worst *legitimate* call, derived from components, not fitted to a run.
+Pass rate 2/8 → 5/8.
+
+**Not a weakened guard:** every v2 rejection for genuine route degradation still fails; what
+stops being rejected is the healthy-route/slow-scaffolding class a wall number cannot identify.
+The 02-08 12:46 row is the proof — c4's fastest API reading ever (16 445 ms) was a NO-GO at
+65 000 on 49 846 ms of scaffolding.
+
+**Limits:** no same-moment quota check (H2138's specified probe was invalidated by its own
+02-08 correction — an OAuth token 429s unconditionally without the Claude-Code system prompt —
+and reading the token was refused by the permission classifier for the third session running);
+the route guard changes no historical verdict, so it is a forward guard (4 selftest pins);
+n=5 decomposable, one account, 3 days. Gates: `window_selftest` 200/200,
+`max_account_orchestrator_selftest` PASS, `execution_contract_selftest` PASS.
+
+## 02-08-2026 (H2044) — the c4 route came back: health GO on all three numbers, canary still unbuildable
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2044](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2044-Opus_SanskritLexicography_g46-pwg-live-health-reprobe_31.07.26.md)
+(goal [G46](https://github.com/gasyoun/Uprava/blob/main/GOALS_MANUAL.md) reprobe).
+**2 paid calls, $0.7232244. No canary, no window, no store write.** Full packet:
+[H2044_C4_HEALTH_GO_CANARY_UNSPENT_2026-08-02.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2044/H2044_C4_HEALTH_GO_CANARY_UNSPENT_2026-08-02.md).
+
+### The reading (run `…/2026-08-02T13:02:43Z-pid27240`, probe #729)
+
+| purpose | wall `elapsed_ms` | CLI `duration_ms` | `duration_api_ms` | `api_gap_ms` | class |
+|---|---:|---:|---:|---:|---|
+| warmup | 62 146 | 37 756 | 32 872 | 29 274 | success |
+| **measured** | **60 845** | **40 623** | **36 508** | 24 337 | success |
+
+Ceiling 65 000 ms. **All three candidate numbers pass** — the mirror of the 11:06 reading,
+where all three failed (96 520 / 77 966 / 69 137). A third same-day reading where wall and
+`duration_api_ms` agree on the verdict: the clock ruling is settled (gate on wall, H2160
+option A) and, as H2174's second pass showed, it was never what stood between this pipeline
+and a window.
+
+### Five measured attempts on 02-08: PASS → NO-GO → NO-GO → NO-GO → PASS
+
+| # | time (UTC) | wall `elapsed_ms` | wall | `duration_api_ms` | handoff |
+|---:|---|---:|---|---:|---|
+| 17 | 05:48:01 | 43 815 | PASS | 26 386 | H2011 |
+| 19 | 07:49:40 | 75 561 | NO-GO | 29 069 | H2160 |
+| 21 | 11:06:53 | 96 520 | NO-GO | 69 137 | H2174 |
+| 22 | 12:46 | 66 291 | NO-GO | **16 445** | H2174 (2nd pass) |
+| **23** | **13:04:46** | **60 845** | **PASS** | **36 508** | **H2044** |
+
+**2/5 on the day — and this row does not soften H2174's second-pass verdict, it fits it.**
+That pass measured the ceiling against the whole series (**2/8 = 25 %** implied pass rate,
+**median − ceiling = +11 988 ms**) and concluded the gate is *expected* to fail ~75 % of the
+time, so the fix belongs to the ceiling **value**
+([H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md)),
+not to re-rolling. This reading is one of the 25 % — arriving 18 minutes after the 12:46
+NO-GO, on the same profile and prompt. Two things follow, and they point in opposite
+directions:
+
+- **For operations:** a GO describes a window of **minutes**. "c4 was healthy this morning"
+  authorizes nothing; the health call must be adjacent to the spend.
+- **For planning:** a GO cannot be *scheduled*. Reaching one took 4 NO-GOs and ~$2.9 in
+  probes across the day, which is why a passing health reading should be spent immediately
+  on the thing it gates — and why the canary being unbuildable (below) is expensive, not
+  merely untidy: this GO expired with nothing able to consume it.
+
+### The canary leg is not reproducible, and that is now the binding constraint
+
+One paid call remained inside G46's ≤3 cap and was **deliberately not spent**. Step 2 needs a
+manifest v2 for `dq_canary_puregloss~~h0_zz_pw`; the curated fixture exists, but
+`git log --all --diff-filter=A` finds **no canary manifest and no builder anywhere in the
+history** — the only committed `synthetic_control` artifact is
+[H1447's wf_output](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h1447/h1447_canary_wf_output.json),
+the result rather than the input. Both H1447's packet and
+[RUN_FREQ_MAX §A2](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
+mark the command shape "illustrative". Hand-authoring one on the money contour from a v1
+`nominal_masked` template, whose prompt does not match the canary's un-masked pure-gloss
+shape, would risk burning the last call on a tooling error. **So the health leg is now the
+cheap half of G46 and the canary is the blocked half** — every future GO stalls in the same
+place until a committed builder exists.
+
+### Offline floor (0 paid)
+
+| check | result |
+|---|---|
+| `window_selftest.py` | 200/200 passed |
+| `h963_c4_gate0_probe.py --selftest` | 7/7 |
+| `lang_parity_check.py` | 90 entries, no drift, 25 files tracked/exempt |
+| `check_launch_ledger.py` | 19 entries complete |
+
+## 02-08-2026 (H2225) — OPT-6 citation coverage_key single source of truth
+
+Grok 4.5 (`grok-4.5`), [H2225](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2225-Grok_SanskritLexicography_pwg-opt6-citation-coverage-sot_02.08.26.md). Pure-function extract; no store rebuild, no paid call.
+
+| check | result |
+|---|---|
+| Shared kernel | `coverage_key` + `coverage_bucket` + `coverage_rows_from_pairs` |
+| Call sites | `build()` (distinct → CITATION_SOURCES) · `occurrence_stats()` (occ → UNCOVERED) |
+| Fixture selftest | `python src/build_citation_index.py --selftest` green |
+| Coverage class parity | both modes same per-abbr class on 10-pair fixture |
+| Totals shift | CITATION_SOURCES `unresolved` no longer includes non-coordinate labels |
+
+## 02-08-2026 (H2174, second pass) — the ceiling is ~12 s BELOW c4's median: the gate is unpassable by scheduling, and the blocker is the ceiling VALUE, not the clock
+
+Opus 5 1M (`claude-opus-5[1m]`), [H2174](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2174-Opus_RussianTranslation_medium50-presplit-live-run-after-health-pass_02.08.26.md).
+**2 further paid probe calls. Still no canary, no window, no store write.** Session total
+4 probe calls. Run from the **canonical checkout**, not a worktree, so the rows land in the
+real per-account series ([#1034](https://github.com/gasyoun/SanskritLexicography/issues/1034)).
+
+### Gate attempt 4 — NO-GO by 1 291 ms (2.0 %)
+
+| purpose | wall `elapsed_ms` | `duration_api_ms` | `api_gap_ms` |
+|---|---:|---:|---:|
+| warmup | 61 662 | — | — |
+| **measured** | **66 291** | **16 445** | 49 846 |
+
+Not overridden. A 2 % miss is still a miss — "never re-read a NO-GO on the friendlier
+number" is the gate working, not a technicality.
+
+**But the shape of this reading is the finding:** `duration_api_ms` **16 445 ms** is the
+**fastest API reading ever recorded on c4**, with **49 846 ms** of in-CLI scaffolding.
+The route was extremely healthy and the gate still failed — on overhead.
+
+### The distribution, against the ceiling it is gated on
+
+All 8 measured c4 readings in the append-only series:
+
+| date (UTC) | wall `elapsed_ms` | verdict | `duration_api_ms` |
+|---|---:|---|---:|
+| 2026-07-22 20:04 | 102 874 | NO-GO | — |
+| 2026-07-23 06:09 | 168 352 | NO-GO | — |
+| 2026-07-31 19:01 | 78 415 | NO-GO | — |
+| 2026-08-01 20:21 | 50 336 | **PASS** | 27 557 |
+| 2026-08-02 05:48 | 43 815 | **PASS** | 26 386 |
+| 2026-08-02 07:49 | 75 561 | NO-GO | 29 069 |
+| 2026-08-02 11:06 | 96 520 | NO-GO | 69 137 |
+| 2026-08-02 12:46 | 66 291 | NO-GO | 16 445 |
+
+| statistic | value |
+|---|---:|
+| n | 8 |
+| min / **median** / max | 43 815 / **76 988** / 168 352 |
+| mean | 85 270 |
+| current ceiling | 65 000 |
+| **pass rate at 65 000** | **2/8 (25 %)** |
+| **median − ceiling** | **+11 988 ms** |
+
+**The ceiling sits ~12 s below the median measured reading.** So the gate is not
+occasionally unlucky — it is *expected* to fail ~75 % of the time, and 2/8 observed matches
+that. Waiting for a PASS is a ~25 % lottery at ~$1.09 per pull, and a PASS certifies only
+the instant it was taken, not the window that follows (H2011's 05:48 PASS did not yield a
+completed window either).
+
+Ceiling required to admit a given share of measured readings (nearest-rank, n=8):
+
+| quantile | ceiling needed |
+|---|---:|
+| p50 | 75 561 ms |
+| p75 | 96 520 ms |
+| p90 | 102 874 ms |
+
+### What is and is not settled
+
+- **The clock is settled and correct.** Gate on wall `elapsed_ms` — MG's 02-08-2026 ruling
+  (H2160, option A), already in `/pwg-live-gate` and already what the code does.
+  `KILL_CEIL_MS` is a wall timer, and non-API overhead still kills calls and still bills.
+  Nothing here reopens that.
+- **The ceiling VALUE was never fitted to that clock.** 65 000 came from
+  `PROBE_LATENCY_CEILING_MS` via the 31-07 `production_v2` ruling, taken when **no reading
+  carried `duration_api_ms` at all**. Against the measured distribution it is below the
+  median. That is the live blocker, and it belongs to
+  [H2138](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2138-Opus_RussianTranslation_probe-ceiling-paired-readings-946_01.08.26.md)
+  / the [#950](https://github.com/gasyoun/SanskritLexicography/issues/950)-adjacent @DECIDE —
+  **not to H2174, and not to be "fixed" by raising a guard so one's own run passes.**
+
+### The H2138 dataset now exists — 5 paired readings
+
+H2138 asked for **5 paid paired readings** to re-derive the ceiling. The series now carries
+exactly that, no further spend required:
+
+| date (UTC) | wall | api | `api_gap_ms` | api/wall |
+|---|---:|---:|---:|---:|
+| 2026-08-01 20:21 | 50 336 | 27 557 | 22 779 | 0.55 |
+| 2026-08-02 05:48 | 43 815 | 26 386 | 17 429 | 0.60 |
+| 2026-08-02 07:49 | 75 561 | 29 069 | 46 492 | 0.38 |
+| 2026-08-02 11:06 | 96 520 | 69 137 | 27 383 | 0.72 |
+| 2026-08-02 12:46 | 66 291 | 16 445 | 49 846 | 0.25 |
+
+**api/wall ratio 0.25 → 0.72** (median 0.55); `api_gap_ms` **17 429 → 49 846 ms**. So the
+standing "~45 % of a wall reading is in-CLI scaffolding" figure is wrong in *both*
+directions and is not a constant — no fixed correction factor converts one number into the
+other, which is exactly why option C (api as a second, independently-derived fail
+condition) cannot reuse 65 000.
+
+**Consequence for the retry policy:** more gate attempts are not the path. Four attempts on
+02-08 (05:48 PASS, 07:49, 11:06, 12:46) cost ~$2.2 in probes and produced no window. The
+lane resumes when the ceiling is re-derived, not when the dice land.
+
+## 02-08-2026 (H2190) — the cost table under-reported every 1 h cache write by 1.6×; repriced against the vendor's own figure
+
+Opus 5 (`claude-opus-5`), [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md)
+(executed inside [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md)).
+**Offline — 0 paid calls.** Every committed H2158 envelope repriced with
+[`parse_workflow_cost`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/parse_workflow_cost.py)
+before and after the TTL split, checked against each envelope's own
+`modelUsage.costUSD` — the vendor's number, not ours.
+
+| envelope | 1 h write (tok) | output (tok) | flat-5 m $ (old) | TTL-aware $ (new) | billed $ (vendor) |
+|---|---:|---:|---:|---:|---:|
+| [`raw/liveness_clean`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2158/raw/liveness_clean.envelope.json) | 126 | 1 070 | 0.056525 | **0.056809** | 0.056809 |
+| [`raw_slow/cli_nakzatra_1`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2158/raw_slow/cli_nakzatra_1.envelope.json) | 46 117 | 34 215 | 0.696736 | **0.800499** | 0.800499 |
+| **total** | | | **0.753261** | **0.857308** | **0.857308** |
+
+**The TTL-aware figure reconciles to the cent on both; the old one reconciles on
+neither.** The gap is **$0.104047 = 12.1 % of the true bill**, and it ran in the
+dangerous direction: every gate and projection computed from `PRICE` believed the
+CLI lane cheaper than it is. Both envelopes report
+`cache_creation.ephemeral_1h_input_tokens` with zero 5 m tokens, so this is not an
+estimate — the bucket was in the data all along and the rate table had no field for it.
+
+Fallback is deliberately asymmetric: TTL-less legacy envelopes stay on the 5 m rate
+for **reporting** (so the $79.83 golden window and every pre-split figure are
+unchanged), while **cost gates** pass `unknown_ttl='1h'` and fail closed, because an
+under-refusal spends money and an over-refusal only asks a human to look.
+[FINDINGS §289](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) ·
+[PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032).
 
 ## 02-08-2026 (H2174) — second consecutive c4 health NO-GO: the named stop fired, and this time *every* candidate gate number fails
 
@@ -745,7 +1747,7 @@ undecomposable in the first place.
 ## 01-08-2026 — H2118: the c4 probe-latency evidence base, and why no ceiling was derived
 
 Opus 5 1M (`claude-opus-5[1m]`),
-[H2118](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2118-Opus_RussianTranslation_rederive-probe-latency-ceiling-946_01.08.26.md),
+[H2118](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2118-Opus_RussianTranslation_rederive-probe-latency-ceiling-946_01.08.26.md),
 issue [#946](https://github.com/gasyoun/SanskritLexicography/issues/946). **Zero paid calls.**
 Full report:
 [H2118_PROBE_CEILING_PROVENANCE_2026-08-01.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2118/H2118_PROBE_CEILING_PROVENANCE_2026-08-01.md).
@@ -1031,7 +2033,7 @@ analysis does not depend on the entry's `lex`.
 Arm coverage after the re-cut (200 cards): `same_split_pwg_lemma_form` 138 → max Wilson-95
 lb 0.973, still the only stratum that can clear the 0.90 gate; `pwg_lexeme_vs_mw_suffixed_tail`
 17 · `mw_cut_leaves_nonword` 11 · rest unchanged. **Promotion ceiling stays 3,018/4,226
-(71.4 %)** — the second, rule-stratified arm remains [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md)
+(71.4 %)** — the second, rule-stratified arm remains [H1703](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1703-Opus_SanskritLexicography_compound-differs-second-arm-and-sheet-binding_26.07.26.md)
 and is still sequenced behind [SanskritGrammar#527](https://github.com/gasyoun/SanskritGrammar/issues/527)
 + [#801](https://github.com/gasyoun/SanskritLexicography/issues/801).
 
@@ -1082,7 +2084,7 @@ remaining 1,208 rows need a second, rule-stratified arm of ~280 cards.
 ## 26-07-2026 - H1682: h1303_abbrev rule-collapse — 273 → 33 cards
 
 Executor: Sonnet 5 (`claude-sonnet-5`),
-[H1682](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1682-Sonnet_SanskritLexicography_h1303-abbrev-rule-collapse_26.07.26.md).
+[H1682](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1682-Sonnet_SanskritLexicography_h1303-abbrev-rule-collapse_26.07.26.md).
 Full method + per-section table:
 [H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1682_ABBREV_RULE_COLLAPSE_REPORT_2026-07-26.md);
 100% classification: [H1682_ABBREV_RULE_COLLAPSE_CLASSIFICATION_2026-07-26.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H1682_ABBREV_RULE_COLLAPSE_CLASSIFICATION_2026-07-26.tsv).
@@ -1107,7 +2109,7 @@ to §4 by H1364 (20-07-2026).
 ## 26-07-2026 - H1664: voting-queue triage — a verdict for every pending sheet, human bill recounted
 
 Executor: Fable 5 (`claude-fable-5`),
-[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md).
+[H1664](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1664-Fable_SanskritLexicography_voting-queue-agent-adjudication-triage_26.07.26.md).
 Full verdict table (all 42 pending sheets org-wide, each with its enabling dataset):
 [VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md §11](https://github.com/gasyoun/Uprava/blob/main/docs/VOTING_SHEET_SCREENING_AUDIT_26-07-2026.md).
 
@@ -1120,12 +2122,12 @@ Full verdict table (all 42 pending sheets org-wide, each with its enabling datas
 | acc_ncc lane (rerouted 26-07, executed; post-H1671 key repair the C/D set is 10,614) | 1 | 49,019 | 698 |
 
 SL-specific outcomes: compound-`differs` goes В2 —
-[H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md)
+[H1681](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1681-Opus_SanskritLexicography_pwg-compound-differs-b2-full-queue-adjudication_26.07.26.md)
 adjudicates all ~4,226 and the H1628 200-card sheet becomes the blind verification arm (same
 200 votes then close the whole queue); h1303_abbrev collapses to rule-level cards
-([H1682](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1682-Sonnet_SanskritLexicography_h1303-abbrev-rule-collapse_26.07.26.md),
+([H1682](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1682-Sonnet_SanskritLexicography_h1303-abbrev-rule-collapse_26.07.26.md),
 273 → ~30); the 32 article-comparison edits get source-checked pre-vote
-([H1683](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1683-Sonnet_SanskritLexicography_article-comparison-source-check_26.07.26.md));
+([H1683](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1683-Sonnet_SanskritLexicography_article-comparison-source-check_26.07.26.md));
 h180 stays routed via H1650. HUMAN-ONLY (kept, with the why): G6 gold starter (the label is
 the instrument), G5 batch1v3 (already the В2 human arm), h1306 style, Renou pilot 70,
 Kochergina 4. The acc_ncc blind spot-check (698 rows post-H1671 re-draw; the pre-repair 686 sample was voided unvoted) is now registered in
@@ -1895,7 +2897,7 @@ markup / QA / frequency families.
 ## 12-07-2026 — PWG case-government census, frozen (H778, government_census.py freeze)
 
 Script v1.1.0 · Opus 4.8 (`claude-opus-4-8`). Corpus-level marker census over the **whole
-raw** [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt)
+raw** [`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt)
 (sha `430c910f8b0c9229`), frozen to the committed [`src/census_stats.json`](src/census_stats.json)
 sidecar so the scan is not re-run on every question. This is the corpus answer to "сколько
 таких помет в PWG"; the per-205-lemma store rollup above is the pwg_ru subset.
@@ -1927,6 +2929,8 @@ Context: [H1844](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1844-Opus
 | coarse: agreement / divergence / omission | 37.2 % / 60.4 % / 2.4 % | 37.7 % / 62.3 % / 0.0 % |
 
 The spike/pilot column split is itself the result: a 300-observation spike read `lexical_variant` as dead (1 label) when its rate at scale is 6.0 %. `added_by_one` is inert at both scales — 0 of 12,000 — which is implausible against Griffith's freely supplied material and is flagged as a prompt/taxonomy defect, not a fact about the corpus.
+
+> **Superseded in part, 03-08-2026 (H2192) — see the entry at the top of this log.** The defect verdict holds; the *reason* stated here does not. Griffith is the least-marked of the five witnesses in our extracted text (0.1 % of stanzas), because his padding is italicised in print and carries no delimiter after extraction. The measured cause is that `added_by_one` and `omitted_by_one` are converse readings of one undirected event with no direction field in the reply schema, against a population of 8,744 one-sided pairs.
 
 ### Spike S2 — inter-model agreement on the divergence taxonomy (H1901, 29-07-2026)
 

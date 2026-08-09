@@ -62,6 +62,79 @@ def test_cost_rate_table_sonnet5_formula():
         fail('PER_AGENT_TOKENS must stay 184000, got %s' % pp.PER_AGENT_TOKENS)
 
 
+def test_cache_write_is_ttl_priced_and_reconciles_with_the_vendor():
+    """H2158 §289: a cache write bills by TTL bucket, so ONE `cache_write` rate is a
+    silent under-report wherever the 1-hour bucket is used.
+
+      - cache_write_5m == 1.25 x input;  cache_write_1h == 2.0 x input
+      - PRICE['cache_write'] stays the 5m rate (legacy alias), never diverging from it
+      - a TTL-less envelope falls back to 5m, so pre-split historical figures are frozen
+      - GROUND TRUTH: usage_cost() on the committed H2158 `nakzatra` envelope must equal
+        the vendor's own `modelUsage.costUSD`. That envelope is the artifact that proved
+        the 3.75 constant wrong ($0.6967 computed vs $0.800499 billed), so the test is
+        pinned to it rather than to a number restated here.
+    """
+    import json
+    import parse_workflow_cost as pwc
+    p = pwc.PRICE
+    if round(p['cache_write_5m'], 6) != round(1.25 * p['input'], 6):
+        fail('cache_write_5m must be 1.25x input: %s' % p['cache_write_5m'])
+    if round(p['cache_write_1h'], 6) != round(2.00 * p['input'], 6):
+        fail('cache_write_1h must be 2.0x input: %s' % p['cache_write_1h'])
+    if round(p['cache_write'], 6) != round(p['cache_write_5m'], 6):
+        fail('legacy PRICE["cache_write"] must stay the 5m rate, got %s vs %s'
+             % (p['cache_write'], p['cache_write_5m']))
+    if round(pwc.cache_write_rate('1h') / pwc.cache_write_rate('5m'), 4) != 1.6:
+        fail('1h writes must cost 1.6x a 5m write')
+    try:
+        pwc.cache_write_rate('1d')
+    except ValueError:
+        pass
+    else:
+        fail('cache_write_rate must refuse an unknown TTL rather than guess one')
+
+    # TTL-less legacy envelope -> 5m bucket, flagged unknown (history must not move)
+    t5, t1, known = pwc.split_cache_creation({'cache_creation_input_tokens': 1000})
+    if (t5, t1, known) != (1000, 0, False):
+        fail('a TTL-less envelope must fall back to 5m and report ttl_known=False, got %r'
+             % ((t5, t1, known),))
+
+    # H2190: reporting defaults to 5m (history frozen); a cost GATE asks for '1h' and
+    # gets the fail-closed figure, because under-refusing spends money.
+    legacy = {'cache_creation_input_tokens': 1_000_000}
+    if round(pwc.usage_cost(legacy), 6) != round(p['cache_write_5m'], 6):
+        fail('reporting default must price a TTL-less write at the 5m rate')
+    if round(pwc.usage_cost(legacy, unknown_ttl='1h'), 6) != round(p['cache_write_1h'], 6):
+        fail('unknown_ttl="1h" must fail CLOSED at the 1h rate for cost gates')
+    # a KNOWN 5m write must stay 5m even when a gate asks to fail closed — the
+    # fallback applies to missing information, never to measured information.
+    known_5m = {'cache_creation_input_tokens': 1_000_000,
+                'cache_creation': {'ephemeral_5m_input_tokens': 1_000_000,
+                                   'ephemeral_1h_input_tokens': 0}}
+    if round(pwc.usage_cost(known_5m, unknown_ttl='1h'), 6) != round(p['cache_write_5m'], 6):
+        fail('a measured 5m write must not be repriced as 1h by the gate fallback')
+
+    env = os.path.join(os.path.dirname(os.path.dirname(HERE)),
+                       'pwg_ru', 'h2158', 'raw_slow', 'cli_nakzatra_1.envelope.json')
+    if not os.path.exists(env):
+        fail('H2158 ground-truth envelope missing: %s' % env)
+    with open(env, encoding='utf-8') as fh:
+        raw = json.load(fh)['raw']
+    billed = list(raw['modelUsage'].values())[0]['costUSD']
+    computed = pwc.usage_cost(raw['usage'])
+    if round(computed, 6) != round(billed, 6):
+        fail('usage_cost must reconcile with the vendor cost on the H2158 envelope: '
+             'computed $%.6f vs billed $%.6f' % (computed, billed))
+    # and prove the OLD single-rate table would NOT have reconciled — otherwise this
+    # test would still pass after a regression back to a TTL-blind constant.
+    u = raw['usage']
+    flat = ((u['input_tokens'] * p['input'] + u['output_tokens'] * p['output']
+             + u['cache_creation_input_tokens'] * p['cache_write']
+             + u['cache_read_input_tokens'] * p['cache_read']) / 1e6)
+    if round(flat, 6) == round(billed, 6):
+        fail('the 5m-flat pricing reconciles too — this envelope no longer discriminates')
+
+
 def test_no_pwg_window_index_autoselect():
     """W3: `used_window_indices` derives the used set from disk (counting `_rqN`
     requeues as their base index), `next_free_index` picks max+1 (floored at 2), and an
@@ -111,6 +184,7 @@ def test_no_pwg_promotion_command_is_scoped_and_executable():
 def main():
     tests = [
         test_cost_rate_table_sonnet5_formula,
+        test_cache_write_is_ttl_priced_and_reconciles_with_the_vendor,
         test_no_pwg_window_index_autoselect,
         test_no_pwg_promotion_command_is_scoped_and_executable,
     ]

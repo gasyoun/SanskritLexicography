@@ -81,6 +81,37 @@
   .list-head h3 { margin:0; }
   .month-idle { margin:.8rem 0 0; font-size:.88rem; max-width:28rem; }
   .month-idle th, .month-idle td { padding:.25rem .5rem; }
+  .op-strip { background:var(--card); border:1px solid var(--line); border-left:3px solid var(--run);
+              border-radius:8px; padding:.75rem 1rem; margin:.8rem 0 1rem; font-size:.9rem; }
+  .op-strip .row { display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; margin:.25rem 0; }
+  .op-strip b.state-clean { color:var(--done); }
+  .op-strip b.state-rq { color:var(--run); }
+  .op-strip b.state-bad { color:var(--block); }
+  .health-go { color:var(--done); font-weight:700; }
+  .health-nogo { color:var(--block); font-weight:700; }
+  .spark { display:flex; gap:3px; align-items:flex-end; height:28px; margin-top:.35rem; }
+  .spark i { width:8px; border-radius:2px 2px 0 0; display:block; background:var(--heat2); }
+  .spark i.nogo { background:var(--block); }
+  .spark i.go { background:var(--done); }
+  .mix { display:flex; height:1.1rem; border-radius:4px; overflow:hidden; border:1px solid var(--line); margin:.4rem 0; }
+  .mix span { display:block; height:100%; }
+  .badge { display:inline-block; font-size:.75rem; padding:.05rem .45rem; border-radius:999px;
+           border:1px solid var(--line); color:var(--mut); margin-left:.35rem; }
+  .cal i.idle { outline:1px solid var(--run); outline-offset:0; }
+  .section-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1rem 0; }
+  @media (max-width:720px){ .section-grid { grid-template-columns:1fr; } }
+  .panel { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:.7rem 1rem; }
+  .panel h3 { margin:.1rem 0 .5rem; font-size:1rem; }
+  .collision-banner { display:none; background:#fff1f0; border:2px solid var(--block);
+    border-radius:8px; padding:.85rem 1.1rem; margin:.8rem 0 1rem; color:var(--block); }
+  .collision-banner.on { display:block; }
+  .collision-banner b.banner-title { font-size:1.05rem; letter-spacing:.02em; }
+  .collision-banner .one-liner { color:var(--text); margin-top:.35rem; font-size:.9rem; }
+  .collision-banner table { width:100%; margin-top:.5rem; font-size:.85rem; color:var(--text); }
+  .collision-banner th, .collision-banner td { text-align:left; padding:.2rem .4rem; border-bottom:1px solid var(--line); }
+  @media (prefers-color-scheme: dark) {
+    .collision-banner { background:#3d1214; }
+  }
 </style>
 </head>
 <body>
@@ -126,14 +157,21 @@
   <span class="mut" id="nextPoll">web auto-refresh every 60s</span>
 </div>
 
+<div id="collisionBanner" class="collision-banner" role="alert" aria-live="assertive"></div>
+
 <div class="cards" id="cards"></div>
+<div id="etaStrip" class="note"></div>
 
 <h2 id="kitchen">Kitchen — process while translation is on</h2>
-<p class="mut">Speed, cost, time when nothing was going on, campaign calendar, and the project
-  web changelog. Numbers come from local pipeline ledgers; this page re-fetches JSON every
-  minute. A residential <code>live_refresh.py</code> loop rebuilds + publishes to gh-pages while
-  the store is moving.</p>
+<p class="mut">Speed, cost, idle, yield, health, campaign calendar, and changelog.
+  Numbers come from local pipeline ledgers; this page re-fetches JSON every minute.</p>
+<div id="operatorStrip" class="op-strip" style="display:none"></div>
+<div id="healthStrip" class="panel" style="display:none;margin:.6rem 0"></div>
 <div class="cards" id="kitchenCards"></div>
+<div class="section-grid">
+  <div class="panel" id="yieldPanel"><h3>Yield / requeue</h3><div id="yieldBody" class="note">—</div></div>
+  <div class="panel" id="instrPanel"><h3>Instrumentation &amp; cost honesty</h3><div id="instrBody" class="note">—</div></div>
+</div>
 <div id="idleByMonth" class="note"></div>
 <div class="two">
   <div>
@@ -151,9 +189,21 @@
     <div id="idleGaps" class="note">—</div>
   </div>
 </div>
+<div class="section-grid">
+  <div class="panel"><h3>Top roots (ledger)</h3><div id="topRoots" class="note">—</div></div>
+  <div class="panel"><h3>Quality / gates</h3><div id="qualityBody" class="note">—</div></div>
+</div>
+<div class="section-grid">
+  <div class="panel"><h3>Article-site parity</h3><div id="parityBody" class="note">—</div></div>
+  <div class="panel"><h3>Idle reason mix</h3><div id="idleReasonBody" class="note">—</div></div>
+</div>
+<div class="section-grid">
+  <div class="panel"><h3>Promotion vs generation (B6)</h3><div id="promoteBody" class="note">—</div></div>
+  <div class="panel"><h3>Multi-lane mix (B8)</h3><div id="laneMixBody" class="note">—</div></div>
+</div>
 
 <h3>Campaign calendar</h3>
-<p class="mut" id="calLegend">cards written per day (store provenance)</p>
+<p class="mut" id="calLegend">cards/day · amber outline = idle day (≥1h idle, 0 cards)</p>
 <div class="cal" id="calendar" aria-label="activity calendar"></div>
 
 <h3>Web changelog</h3>
@@ -177,6 +227,8 @@
 <p class="mut">Sense-rows written into the RU spine (<code>pwg_ru_translated.jsonl</code>), and how many
   have passed <em>human</em> review versus still carrying only the AI first pass.</p>
 <div class="bar-wrap" id="reviewbar"></div>
+<p class="mut" id="g5queue"></p>
+<p class="mut" id="reviewthroughput"></p>
 
 <h2>Frequency coverage — how much of PWG is even in scope</h2>
 <p class="mut">Only DCS-attested headwords are targeted first (corpus-frequency route). This is the
@@ -221,6 +273,10 @@ const fmtDur = secs => {
   if (h < 48) return h + 'h ' + m + 'm';
   return Math.floor(h/24) + 'd ' + (h%24) + 'h';
 };
+
+function est(t) {
+  return `<span class="est" title="documented constant, not counted live">${esc(t)} *</span>`;
+}
 
 function barRow(label, sub, value, total, cls, valText) {
   const pct = total ? Math.max(1.5, value / total * 100) : 0;
@@ -328,15 +384,48 @@ function renderProgress(d) {
     barRow('Blocked', 'missing rootmap', v.blocked, U, 'c-block');
 
   const rb = document.getElementById('reviewbar');
-  const human = st.human_reviewed || 0;
-  const ai = (st.senses || 0) - human;
-  const aiPct = st.senses ? (ai / st.senses * 100).toFixed(1) : '—';
-  const huPct = st.senses ? (human / st.senses * 100).toFixed(1) : '—';
+  const br = st.review_breakdown || {};
+  const approved = br.approved != null ? br.approved : (st.human_reviewed || 0);
+  const ai = br.ai_translated != null ? br.ai_translated : Math.max(0, (st.senses || 0) - approved);
+  const needs = br.needs_review || 0;
+  const other = br.other || 0;
+  const pct = (n) => st.senses ? (n / st.senses * 100).toFixed(1) : '—';
   rb.innerHTML =
     barRow('AI first pass', 'awaiting human QA', ai, st.senses, 'c-run',
-           `${fmt(ai)} <span class="mut">(${aiPct}%)</span>`) +
-    barRow('Human-reviewed', 'signed off', human, st.senses, 'c-done',
-           `${fmt(human)} <span class="mut">(${huPct}%)</span>`);
+           `${fmt(ai)} <span class="mut">(${pct(ai)}%)</span>`) +
+    barRow('Needs review', 'queued', needs, st.senses, 'c-block',
+           `${fmt(needs)} <span class="mut">(${pct(needs)}%)</span>`) +
+    barRow('Approved', 'human signed off', approved, st.senses, 'c-done',
+           `${fmt(approved)} <span class="mut">(${pct(approved)}%)</span>`) +
+    (other ? barRow('Other / unknown status', '', other, st.senses, 'c-univ',
+           `${fmt(other)} <span class="mut">(${pct(other)}%)</span>`) : '');
+
+  const rq = d.review_queue || {};
+  const g5El = document.getElementById('g5queue');
+  g5El.textContent = rq.measured
+    ? `G5 live-review queue: ${fmt(rq.g5_open)} open / ${fmt(rq.g5_total)} across ${rq.sheet_count} sheet(s) (aggregate count only — sheet content is local-only editorial data, not published).`
+    : 'G5 live-review queue: no local sheet data on this build (measured only when a review sheet exists on the building machine).';
+
+  // H2260: per-day transitions from human_review.reviewed_at (H2235 primary path)
+  const thrEl = document.getElementById('reviewthroughput');
+  const thr = d.review_throughput || {};
+  if (thrEl) {
+    if (thr.measured && Array.isArray(thr.daily) && thr.daily.length) {
+      const parts = thr.daily.map(row => {
+        const a = row.approved || 0;
+        const n = row.needs_review || 0;
+        return `${row.date}: +${a} approved` + (n ? ` / +${n} needs_review` : '');
+      });
+      thrEl.textContent =
+        `Review throughput (transitions via human_review.reviewed_at): ${parts.join('; ')}` +
+        ` — coverage approved ${thr.coverage_approved || '—'} of store approved stock` +
+        ` (stock depth over rebuild days remains the trend-chart series).`;
+    } else {
+      thrEl.textContent =
+        'Review throughput transitions: no human_review.reviewed_at on store rows yet — ' +
+        'trend charts use append-only approved/needs_review stock at each rebuild.';
+    }
+  }
 
   const cb = document.getElementById('covbar');
   cb.innerHTML =
@@ -344,11 +433,12 @@ function renderProgress(d) {
            `${fmt(cov.dcs_attested_headwords)} <span class="mut">(${cov.pct}%)</span>`) +
     barRow('Total PWG headwords', 'whole dictionary', cov.total_headwords, cov.total_headwords, 'c-univ');
 
-  const est = t => `<span class="est" title="documented constant, not counted live">${esc(t)} *</span>`;
   document.getElementById('misc').innerHTML =
     '<tr><th>Item</th><th class="num">Value</th><th>Note</th></tr>' +
-    `<tr><td>Nominal lane — promoted</td><td class="num">${fmt(nm.promoted)} / ${fmt(nm.candidates)}</td><td class="mut">pril10 core nominal candidates</td></tr>` +
-    `<tr><td>Nominal medium-50 band</td><td class="num">${fmt(nm.medium50_promoted)} / ${fmt(nm.medium50_total)}</td><td class="mut">${esc(nm.medium50_status || '')}</td></tr>` +
+    `<tr><td>Nominal lane — promoted</td><td class="num">${fmt(nm.promoted)} / ${fmt(nm.candidates)}</td><td class="mut">pril10 core nominal candidates${nm.pct != null ? ' (' + nm.pct + '%)' : ''}</td></tr>` +
+    `<tr><td>Nominal medium-50 band</td><td class="num">${nm.medium50_measured ? fmt(nm.medium50_promoted) : est(fmt(nm.medium50_promoted))} / ${fmt(nm.medium50_total)}</td>` +
+    `<td class="mut"><span class="badge" title="${esc((nm.medium50_pause_reason && nm.medium50_pause_reason.detail) || '')}">${esc((nm.medium50_pause_reason && nm.medium50_pause_reason.code) || 'paused')}</span> ` +
+    `${esc((nm.medium50_pause_reason && nm.medium50_pause_reason.label) || nm.medium50_status || '')}</td></tr>` +
     `<tr><td>Corpus lexicon (TM source)</td><td class="num">${cor.pairs_measured ? fmt(cor.pairs) : est(fmt(cor.pairs))}</td><td class="mut">Sa→Ru alignment pairs</td></tr>` +
     `<tr><td>Alignment recall</td><td class="num">${est(cor.recall_pct + '%')}</td><td class="mut">measured H309</td></tr>`;
 
@@ -373,11 +463,12 @@ function fmtUsdBand(b) {
 }
 
 function renderIdleGapTable(gaps) {
-  return '<table><thead><tr><th>From</th><th>To</th><th class="num">Idle</th><th>Roots</th></tr></thead><tbody>' +
+  return '<table><thead><tr><th>From</th><th>To</th><th class="num">Idle</th><th>Reason</th><th>Roots</th></tr></thead><tbody>' +
     gaps.map(g =>
       `<tr><td class="mono">${esc((g.from||'').replace('T',' ').replace('Z',''))}</td>` +
       `<td class="mono">${esc((g.to||'').replace('T',' ').replace('Z',''))}</td>` +
       `<td class="num">${fmtDur(g.seconds)}</td>` +
+      `<td title="${esc(g.reason_evidence || g.reason_source || '')}"><span class="badge">${esc(g.reason || 'unknown')}</span></td>` +
       `<td class="mut">${esc(g.after_root||'—')} → ${esc(g.before_root||'—')}</td></tr>`
     ).join('') + '</tbody></table>';
 }
@@ -412,22 +503,296 @@ function renderKitchen(k) {
     ? id.last_idle_seconds
     : (id.last_idle && id.last_idle.seconds);
 
+  const op = k.operator || {};
+  const yld = k.yield_quality || {};
+  const health = k.health || {};
+  const instr = k.instrumentation || {};
+  const honesty = (co.honesty) || {};
+  const eta = k.eta || {};
+  const quality = k.quality || {};
+  const gates = k.gates || {};
+  const cg = k.collision_guard || {};
+
+  // OPT-8 / H2229 — lease collision / store-hit banner (loud; before operator strip)
+  const cgEl = document.getElementById('collisionBanner');
+  if (cg.blocked) {
+    cgEl.classList.add('on');
+    const last = cg.last || {};
+    const recent = (cg.recent || []).slice(-5).reverse();
+    const rows = recent.map(r =>
+      `<tr><td class="mono">${esc((r.ts||'').replace('T',' ').replace('Z',''))}</td>` +
+      `<td><span class="badge">${esc(r.kind || r.type || '—')}</span></td>` +
+      `<td class="mono">${esc(r.root || '—')}</td>` +
+      `<td>${esc(r.summary || '')}</td></tr>`
+    ).join('');
+    cgEl.innerHTML =
+      `<b class="banner-title">${esc(cg.banner || 'DO NOT START A SECOND PAID WINDOW')}</b>` +
+      ` <span class="badge">OPT-8 · collision</span>` +
+      `<div class="one-liner">${esc(cg.operator_one_liner || '')}</div>` +
+      `<div class="mut" style="margin-top:.35rem">Last: <b>${esc(last.root || '—')}</b> · ` +
+      `${esc(last.kind || last.type || '—')} · n=${fmt(cg.collision_count)}` +
+      (cg.live_job_count ? ` · live jobs ${fmt(cg.live_job_count)}` : '') +
+      `</div>` +
+      (rows
+        ? `<table><thead><tr><th>When</th><th>Kind</th><th>Root/lease</th><th>Reason</th></tr></thead>` +
+          `<tbody>${rows}</tbody></table>`
+        : '');
+  } else {
+    cgEl.classList.remove('on');
+    cgEl.innerHTML = '';
+  }
+
+  // K1 operator strip
+  const opEl = document.getElementById('operatorStrip');
+  if (op.measured) {
+    const stName = op.state || '—';
+    let stCls = 'state-rq';
+    if (stName === 'clean') stCls = 'state-clean';
+    else if (/crash|block|stale/i.test(stName)) stCls = 'state-bad';
+    opEl.style.display = '';
+    opEl.innerHTML =
+      `<b>Operator strip</b> <span class="mut">— what is stuck right now</span>` +
+      `<div class="row"><span>Root <b>${esc(op.root || '—')}</b></span>` +
+      `<span>State <b class="${stCls}">${esc(stName)}</b></span>` +
+      `<span>Requeue <b>${fmt(op.requeue_count)}</b></span>` +
+      `<span>Clean keys <b>${fmt(op.clean_key_count)}</b></span></div>` +
+      `<div class="row"><span>Days since last card <b>${op.days_since_last_card != null ? op.days_since_last_card : '—'}</b></span>` +
+      `<span>Campaign day <b>${op.campaign_days != null ? op.campaign_days : '—'}</b></span>` +
+      `<span class="mut">newest ${esc((op.newest_card_at||'').replace('T',' ').replace('Z','')) || '—'}</span></div>` +
+      (op.next_action ? `<div class="row"><span class="mut">Next:</span> <span>${esc(op.next_action)}</span></div>` : '');
+  } else {
+    opEl.style.display = 'none';
+  }
+
+  // K5 health ribbon
+  const hEl = document.getElementById('healthStrip');
+  if (health.measured) {
+    hEl.style.display = '';
+    const last = health.last || {};
+    const vCls = health.last_verdict === 'GO' ? 'health-go' : 'health-nogo';
+    const recent = health.recent || [];
+    const maxMs = Math.max(...recent.map(p => p.elapsed_ms || 0), 1);
+    hEl.innerHTML =
+      `<h3 style="margin:0 0 .35rem">Health / route</h3>` +
+      `<div>Last <b>${esc(last.account || '?')}</b>: <span class="${vCls}">${esc(health.last_verdict || '—')}</span> ` +
+      `<span class="mut">${fmt(last.elapsed_ms)} ms (ceiling ${fmt(last.ceiling_ms || health.ceiling_ms)})</span>` +
+      ` · lifetime GO ${fmt(health.go_count)}/${fmt(health.probes)} (${health.go_pct != null ? health.go_pct + '%' : '—'})</div>` +
+      `<div class="spark" title="recent probes">${recent.map(p => {
+        const h = Math.max(4, Math.round(24 * (p.elapsed_ms || 0) / maxMs));
+        return `<i class="${p.verdict === 'GO' ? 'go' : 'nogo'}" style="height:${h}px" title="${esc(p.ts)} ${p.elapsed_ms}ms ${p.verdict}"></i>`;
+      }).join('')}</div>` +
+      `<p class="mut" style="margin:.35rem 0 0">${esc(health.note || '')}</p>`;
+  } else {
+    hEl.style.display = 'none';
+  }
+
+  // K4 ETA under progress cards (also callable from progress if kitchen loads later)
+  const etaEl = document.getElementById('etaStrip');
+  let etaHtml = '';
+  if (eta.measured) {
+    etaHtml +=
+      `<div class="panel"><b>Verb burn-down</b> ` +
+      `${fmt(eta.verb_promoted)} / ${fmt(eta.verb_scope_dcs)} promoted ` +
+      `(${eta.verb_pct != null ? eta.verb_pct + '%' : '—'}) · remaining <b>${fmt(eta.verb_remaining)}</b>` +
+      (eta.estimated_days_at_roots_per_day_rate != null
+        ? ` · <span class="est" title="${esc(eta.note || '')}">~${eta.estimated_days_at_roots_per_day_rate} days</span> at ${fmt(eta.mean_roots_promoted_per_active_day)} roots/day <span class="badge">estimate</span>`
+        : '') +
+      `<div class="mut" style="margin-top:.3rem">${esc(eta.note || '')}</div></div>`;
+  }
+  // B7 — nominal burn-down + medium-50 band with a structured pause_reason (H442/H462).
+  const etaNom = eta.nominal || {};
+  if (etaNom.measured) {
+    const m50 = etaNom.medium50 || {};
+    const pr = m50.pause_reason || {};
+    etaHtml +=
+      `<div class="panel"><b>Nominal burn-down</b> ` +
+      `${fmt(etaNom.nominal_promoted)} / ${fmt(etaNom.nominal_scope)} promoted ` +
+      `(${etaNom.nominal_pct != null ? etaNom.nominal_pct + '%' : '—'}) · remaining <b>${fmt(etaNom.nominal_remaining)}</b>` +
+      (etaNom.estimated_days_at_keys_per_day_rate != null
+        ? ` · <span class="est" title="${esc(etaNom.note || '')}">~${etaNom.estimated_days_at_keys_per_day_rate} days</span> at ${fmt(etaNom.mean_keys_promoted_per_active_day)} keys/day <span class="badge">estimate</span>`
+        : '') +
+      `<div class="mut" style="margin-top:.3rem">medium-50 band: ${m50.measured ? fmt(m50.promoted) : est(fmt(m50.promoted))} / ${fmt(m50.total)} ` +
+      `<span class="badge" title="${esc(pr.detail || '')}">${esc(pr.code || 'paused')}</span> ${esc(pr.label || '')}</div>` +
+      `<div class="mut" style="margin-top:.15rem">${esc(etaNom.note || '')}</div></div>`;
+  }
+  etaEl.innerHTML = etaHtml;
+
+  const wcN = sp.wall_clock_sample_n;
   document.getElementById('kitchenCards').innerHTML = [
     `<div class="card"><b>${fmt(sp.cards_last_hour)}</b><span class="sub">cards last hour</span></div>`,
     `<div class="card"><b>${fmt(sp.cards_last_24h)}</b><span class="sub">cards last 24h</span></div>`,
-    `<div class="card"><b>${sp.mean_wall_clock_minutes != null ? sp.mean_wall_clock_minutes : '—'}</b><span class="sub">mean min / window</span></div>`,
+    `<div class="card"><b>${sp.mean_wall_clock_minutes != null ? sp.mean_wall_clock_minutes : '—'}</b><span class="sub">mean min / window${wcN != null ? ' (n=' + wcN + ')' : ''}</span></div>`,
     `<div class="card"><b>${costLabel}</b><span class="sub">mean tokens / window</span></div>`,
     `<div class="card"><b>${fmtDur(id.current_idle_seconds != null ? id.current_idle_seconds : id.mean_gap_seconds)}</b><span class="sub">${id.current_idle_seconds != null ? 'current idle' : 'mean idle gap'}</span></div>`,
     `<div class="card"><b>${fmtDur(lastIdleSecs)}</b><span class="sub">last idle</span></div>`,
     `<div class="card"><b>${id.total_idle_hours != null ? id.total_idle_hours + 'h' : '—'}</b><span class="sub">recorded idle total</span></div>`,
+    yld.mean_requeue != null ? `<div class="card"><b>${Number(yld.mean_requeue).toFixed(1)}</b><span class="sub">mean requeues / window</span></div>` : '',
+    yld.mean_clean_keys != null ? `<div class="card"><b>${Number(yld.mean_clean_keys).toFixed(1)}</b><span class="sub">mean clean keys / window</span></div>` : '',
+    yld.clean_windows != null ? `<div class="card"><b>${fmt(yld.clean_windows)}/${fmt(yld.windows)}</b><span class="sub">clean windows</span></div>` : '',
     agents != null ? `<div class="card"><b>${esc(typeof agents === 'number' ? agents.toFixed(2) : agents)}</b><span class="sub">agents / clean card</span></div>` : '',
-    bandLabel ? `<div class="card"><b class="sm">${esc(bandLabel)}</b><span class="sub">$ band / clean card</span></div>` : '',
+    bandLabel ? `<div class="card"><b class="sm">${esc(bandLabel)}</b><span class="sub">$ band / clean card${honesty.badge ? ' <span class="badge">' + esc(honesty.badge) + '</span>' : ''}</span></div>` : '',
     cleanSpend ? `<div class="card"><b class="sm">${esc(cleanSpend)}</b><span class="sub">total $ · clean dictionary</span></div>` : '',
     prepSpend ? `<div class="card"><b class="sm">${esc(prepSpend)}</b><span class="sub">total $ · prep / redo</span></div>` : '',
     econ.total_clean != null ? `<div class="card"><b>${fmt(econ.total_clean)}</b><span class="sub">clean cards in economy log</span></div>` : '',
+    (() => {
+      const sub = co.subscription || {};
+      if (sub.measured && sub.amount != null) {
+        const per = [sub.period_start, sub.period_end].filter(Boolean).join(' → ');
+        return `<div class="card"><b class="sm">${esc(sub.currency || 'USD')} ${esc(String(sub.amount))}</b>` +
+          `<span class="sub">subscription window${per ? ' · ' + esc(per) : ''} <span class="badge">${esc(sub.badge || 'pasted')}</span></span></div>`;
+      }
+      return `<div class="card"><b class="sm">—</b><span class="sub">subscription $ <span class="badge">${esc((sub && sub.badge) || 'not pasted')}</span></span></div>`;
+    })(),
   ].join('');
 
-  // Monthly idle days (every month since campaign idle tracking started)
+  // K2 yield panel
+  const mix = yld.outcome_mix || {};
+  const mixTotal = Object.values(mix).reduce((a, b) => a + b, 0) || 1;
+  const mixColors = { clean: 'var(--done)', needs_requeue: 'var(--run)', stale_artifact: 'var(--block)',
+    partial: 'var(--accent)', blocked: '#8250df', transient_only: '#bf8700', unknown: 'rgba(127,127,127,.45)' };
+  document.getElementById('yieldBody').innerHTML = yld.measured
+    ? `<div class="mix">${Object.entries(mix).map(([k, v]) =>
+        `<span style="width:${(100 * v / mixTotal).toFixed(2)}%;background:${mixColors[k] || mixColors.unknown}" title="${esc(k)}: ${v}"></span>`
+      ).join('')}</div>` +
+      `<div class="mut">${Object.entries(mix).map(([k, v]) => `${esc(k)} ${v}`).join(' · ')}</div>` +
+      `<p style="margin:.5rem 0 0">Requeue sum <b>${fmt(yld.requeue_sum)}</b> · transient <b>${fmt(yld.transient_sum)}</b> · defect <b>${fmt(yld.defect_sum)}</b></p>` +
+      `<p style="margin:.3rem 0 0">Clean keys sum <b>${fmt(yld.clean_key_sum)}</b> · clean window % <b>${yld.clean_window_pct != null ? yld.clean_window_pct + '%' : '—'}</b></p>`
+    : 'no ledger yet';
+
+  // K6 + K8 + K9 (H2230 post_cut/historical split)
+  const pc = instr.post_cut || {};
+  const hist = instr.historical || {};
+  const gmMix = instr.gen_models || {};
+  const gmMixLine = Object.keys(gmMix).length
+    ? `<p class="mut">models: ${Object.entries(gmMix).map(([k, v]) => `${esc(k)} ${v}`).join(' · ')}</p>`
+    : '';
+  document.getElementById('instrBody').innerHTML = (instr.measured || honesty.measured)
+    ? `<p>Wall-clock present <b>${fmt(instr.wall_clock_present)}/${fmt(instr.windows)}</b> ` +
+      `(${instr.wall_clock_coverage_pct != null ? instr.wall_clock_coverage_pct + '%' : '—'} blended)</p>` +
+      `<p>Tokens present <b>${fmt(instr.token_metrics_present)}/${fmt(instr.windows)}</b> · ` +
+      `gen_model <b>${fmt(instr.gen_model_present)}</b> (${instr.gen_model_coverage_pct != null ? instr.gen_model_coverage_pct + '%' : '—'})</p>` +
+      gmMixLine +
+      (instr.measured
+        ? `<p class="mut">post_cut wall-clock <b>${fmt(pc.wall_clock_present)}/${fmt(pc.windows)}</b> ` +
+          `(${pc.wall_clock_coverage_pct != null ? pc.wall_clock_coverage_pct + '%' : '—'}) · ` +
+          `post_cut tokens <b>${fmt(pc.token_metrics_present)}/${fmt(pc.windows)}</b> ` +
+          `(${pc.token_coverage_pct != null ? pc.token_coverage_pct + '%' : '—'}) · ` +
+          `historical wall-clock <b>${fmt(hist.wall_clock_present)}/${fmt(hist.windows)}</b> ` +
+          `(${hist.wall_clock_coverage_pct != null ? hist.wall_clock_coverage_pct + '%' : '—'})</p>`
+        : '') +
+      (honesty.badge ? `<p><span class="badge">${esc(honesty.badge)}</span></p>` : '') +
+      `<p class="mut">${esc(honesty.note || instr.note || '')}</p>`
+    : '—';
+
+  // B8 multi-lane mix — gen_model / host / profile counts
+  const lane = k.multi_lane || {};
+  const laneEl = document.getElementById('laneMixBody');
+  if (laneEl) {
+    if (lane.measured) {
+      const models = lane.gen_models || {};
+      const hosts = lane.hosts || {};
+      const profiles = lane.profiles || {};
+      const fmtMix = (obj) => Object.keys(obj).length
+        ? Object.entries(obj).map(([k, v]) => `<span class="badge">${esc(k)}</span> ${v}`).join(' · ')
+        : '—';
+      laneEl.innerHTML =
+        `<p><span class="badge">${lane.multi_lane ? 'multi-lane' : 'single-lane'}</span> ` +
+        `windows <b>${fmt(lane.windows)}</b></p>` +
+        `<p>gen_model <b>${fmt(lane.gen_model_present)}</b>` +
+        `${lane.gen_model_coverage_pct != null ? ` (${lane.gen_model_coverage_pct}%)` : ''} · ` +
+        `host <b>${fmt(lane.host_present)}</b>` +
+        `${lane.host_coverage_pct != null ? ` (${lane.host_coverage_pct}%)` : ''} · ` +
+        `profile <b>${fmt(lane.profile_present)}</b>` +
+        `${lane.profile_coverage_pct != null ? ` (${lane.profile_coverage_pct}%)` : ''}</p>` +
+        `<p>Models: ${fmtMix(models)}</p>` +
+        `<p>Hosts: ${fmtMix(hosts)}</p>` +
+        `<p>Profiles: ${fmtMix(profiles)}</p>` +
+        `<p class="mut">${esc(lane.note || '')}</p>`;
+    } else {
+      laneEl.innerHTML = '<p class="mut">no ledger yet</p>';
+    }
+  }
+
+  // Top roots
+  const tops = yld.top_roots || [];
+  document.getElementById('topRoots').innerHTML = tops.length
+    ? '<table><thead><tr><th>Root</th><th class="num">Windows</th></tr></thead><tbody>' +
+      tops.map(t => `<tr><td>${esc(t.root)}</td><td class="num">${fmt(t.windows)}</td></tr>`).join('') +
+      '</tbody></table>'
+    : '—';
+
+  // Quality / gates
+  const fid = quality.fidelity || {};
+  const jdg = quality.judge_coverage || {};
+  document.getElementById('qualityBody').innerHTML =
+    (gates.measured ? `<p>Gate summaries exit=0: <b>${gates.exit0_pct != null ? gates.exit0_pct + '%' : '—'}</b> (${fmt(gates.exit0)}/${fmt(gates.gate_summaries)})</p>` : '') +
+    (fid.precision != null ? `<p>Fidelity precision <b>${fid.precision}</b> (n=${fmt(fid.n)}, bad=${fmt(fid.bad)})</p>` : '') +
+    (jdg.pct != null ? `<p>Judge sample coverage <b>${jdg.pct}%</b> (${fmt(jdg.windows_with_sample)}/${fmt(jdg.windows)})</p>` : '') +
+    (quality.crashes != null ? `<p>Crash events <b>${fmt(quality.crashes)}</b>${quality.crashes_per_100_windows != null ? ' (' + quality.crashes_per_100_windows + '/100 windows)' : ''}</p>` : '') +
+    (quality.promotion_vs_generation ? `<p class="mut">Clean ledger windows: ${fmt(quality.promotion_vs_generation.clean_ledger_windows)} / ${fmt(quality.promotion_vs_generation.total_windows)}</p>` : '');
+
+  // B10 article-site parity
+  const par = k.article_parity || {};
+  const parityEl = document.getElementById('parityBody');
+  if (parityEl) {
+    if (par.measured) {
+      const miss = par.missing_from_article_sample || [];
+      parityEl.innerHTML =
+        `<p>Store roots <b>${fmt(par.store_roots)}</b> · article roots <b>${fmt(par.article_roots)}</b> · ` +
+        `parity <b>${par.parity_pct != null ? par.parity_pct + '%' : '—'}</b></p>` +
+        `<p>In store not article <b>${fmt(par.in_store_not_article)}</b> · ` +
+        `in article not store <b>${fmt(par.in_article_not_store)}</b></p>` +
+        (miss.length
+          ? `<p class="mut">Missing sample: ${miss.map(esc).join(', ')}</p>`
+          : '') +
+        `<p class="mut">${esc(par.note || '')}</p>`;
+    } else {
+      parityEl.innerHTML =
+        `<p><span class="badge">measured: false</span> ${esc(par.note || 'article_site not available')}</p>` +
+        (par.store_roots != null ? `<p class="mut">Store roots known: ${fmt(par.store_roots)}</p>` : '');
+    }
+  }
+
+  // B6 promotion vs generation — weekly + lifetime store growth vs clean/promoted outcome
+  const pvg = k.promote_vs_generate || {};
+  const promoteEl = document.getElementById('promoteBody');
+  if (promoteEl) {
+    if (pvg.measured) {
+      const w = pvg.weekly || {};
+      const lt = pvg.lifetime || {};
+      promoteEl.innerHTML =
+        `<p>This week — cards generated <b>${fmt(w.cards_generated)}</b> · ` +
+        `clean ledger windows <b>${fmt(w.clean_windows)}</b> / ${fmt(w.windows_total)}` +
+        `${w.clean_window_pct != null ? ` (${w.clean_window_pct}%)` : ''} · ` +
+        `promote events <b>${w.promote_events != null ? fmt(w.promote_events) : '—'}</b></p>` +
+        `<p>Lifetime — cards generated <b>${fmt(lt.cards_generated)}</b> · ` +
+        `clean ledger windows <b>${fmt(lt.clean_windows)}</b> / ${fmt(lt.windows_total)}` +
+        `${lt.clean_window_pct != null ? ` (${lt.clean_window_pct}%)` : ''} · ` +
+        `promote events <b>${lt.promote_events != null ? fmt(lt.promote_events) : '—'}</b></p>` +
+        `<p class="mut">${esc(pvg.promote_events_source || '')}</p>`;
+    } else {
+      promoteEl.innerHTML = '<p class="mut">no ledger/store data yet</p>';
+    }
+  }
+
+  // B9 idle reason mix
+  const ir = (id.reasons) || {};
+  const irEl = document.getElementById('idleReasonBody');
+  if (irEl) {
+    const rc = ir.reason_counts || {};
+    const tax = ir.taxonomy || [];
+    if (Object.keys(rc).length || tax.length) {
+      irEl.innerHTML =
+        `<p>Known <b>${fmt(ir.known_reason_count)}</b> · unknown <b>${fmt(ir.unknown_reason_count)}</b> · log rows <b>${fmt(ir.log_entries)}</b></p>` +
+        `<p>${Object.entries(rc).map(([k, v]) => `<span class="badge">${esc(k)}</span> ${v}`).join(' · ')}</p>` +
+        `<p class="mut">Taxonomy: ${(tax.length ? tax : ['human','weekly_cap','health_nogo','machine_off','waiting_requeue','unknown']).map(esc).join(' · ')}</p>` +
+        `<p class="mut">${esc(ir.note || '')}</p>`;
+    } else {
+      irEl.innerHTML = '<p class="mut">no idle gaps yet</p>';
+    }
+  }
+
+  // Monthly idle days
   const months = id.idle_by_month || [];
   const monthEl = document.getElementById('idleByMonth');
   if (months.length) {
@@ -493,9 +858,9 @@ function renderKitchen(k) {
   const cal = k.calendar || {};
   const cells = cal.cells || [];
   document.getElementById('calLegend').textContent =
-    `cards/day · ${cal.start || '?'} → ${cal.end || '?'} · ${cal.active_days || 0} active days · max ${cal.max_cards || 0}`;
+    `cards/day · ${cal.start || '?'} → ${cal.end || '?'} · ${cal.active_days || 0} active · ${cal.idle_days || 0} idle-marked · max ${cal.max_cards || 0} · amber outline = ≥1h idle & 0 cards`;
   document.getElementById('calendar').innerHTML = cells.map(c =>
-    `<i class="l${c.level||0}" title="${esc(c.date)}: ${c.cards||0} cards, ${c.windows||0} windows"></i>`
+    `<i class="l${c.level||0}${c.idle ? ' idle' : ''}" title="${esc(c.date)}: ${c.cards||0} cards, ${c.windows||0} windows, idle ${c.idle_hours||0}h"></i>`
   ).join('');
 
   if (k.changelog && k.changelog.url) document.getElementById('clogLink').href = k.changelog.url;
@@ -519,6 +884,24 @@ async function renderTrends() {
     if ((s = pick('senses')).length) line(el, s, 'Sense-rows translated');
     if ((s = pick('verb_promoted')).length) line(el, s, 'Verb roots promoted');
     if ((s = pick('coverage_pct')).length) line(el, s, 'DCS coverage', '%');
+    if ((s = pick('approved')).length) line(el, s, 'Approved (human signed off)');
+    if ((s = pick('needs_review')).length) line(el, s, 'Needs review (queued)');
+    if ((s = pick('g5_open')).length) line(el, s, 'G5 live-review queue — open');
+    // H2241 K-slice: daily kitchen operator/yield/health points.
+    // H2268: also chart health_last_go (field existed in #1112 but was uncharted)
+    // and current idle (live gap; total is campaign stock).
+    if ((s = pick('kitchen_yield_clean_pct')).length) line(el, s, 'Kitchen: clean windows', '%');
+    if ((s = pick('kitchen_health_last_go')).length) line(el, s, 'Kitchen: health last GO', '0/1');
+    if ((s = pick('kitchen_idle_hours')).length) line(el, s, 'Kitchen: idle hours (total)', 'h');
+    if ((s = pick('kitchen_current_idle_hours')).length) line(el, s, 'Kitchen: current idle', 'h');
+  }
+  // B4 — fidelity/judge quality as a trend, not a single overwritten snapshot.
+  const qts = await j('quality_timeseries.json');
+  if (qts && qts.snapshots && qts.snapshots.length) {
+    const pick = key => qts.snapshots.filter(s => s[key] != null).map(s => [s.date, s[key]]);
+    let s;
+    if ((s = pick('fidelity_precision')).length) line(el, s.map(p => [p[0], p[1] * 100]), 'Fidelity precision', '%');
+    if ((s = pick('judge_coverage_pct')).length) line(el, s, 'Judge sample coverage', '%');
   }
 }
 
