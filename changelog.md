@@ -15,7 +15,7 @@ not an error.
 ## [Unreleased]
 
 ### Fixed
-- **router.cheap exact-model provenance now fails closed (Codex Sol `gpt-5.6-sol`, 09-08-2026).** The gateway adapter recorded a returned-model mismatch but still emitted `schema_compliant=true` and a result hash. A substituted model now produces `failure_class=provenance`, no result and no result hash; the H2504 post-incident audit also specifies the still-missing durable two-phase Agent-call bridge and records M.G.'s scoped permission to continue with truthful `cost_evaluable=false` evidence.
+- **router.cheap exact-model provenance now fails closed (Codex Sol `gpt-5.6-sol`, 09-08-2026).** The gateway adapter recorded a returned-model mismatch but still emitted `schema_compliant=true` and a result hash. A substituted model now produces `failure_class=provenance`, no result and no result hash; its 10-case offline self-test is now an explicit CI gate. The stale canary fixture and printed command derive the shared H2313 600-second ceiling, and the full 210-case window suite is green after an evidence-backed parity-ledger refresh. The H2504 post-incident audit also specifies the still-missing durable two-phase Agent-call bridge and records M.G.'s scoped permission to continue with truthful `cost_evaluable=false` evidence.
 
 ## [1.144.25] - 2026-08-09
 ### Changed
