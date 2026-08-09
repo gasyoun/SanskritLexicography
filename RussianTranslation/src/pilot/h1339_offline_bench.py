@@ -611,6 +611,9 @@ def _bench(a, fx_hash):
               'TOTAL %.2f  sig %s' % (i + 1, a.runs, t['prepare'], t['normalize'],
                                       t['audit'], t['promotion-plan'], t['store-write'],
                                       t['total'], o['signature'][:10]))
+        print('  signature inputs: leases=%s store=%s rows=%d' % (
+            semantic_hash(o['leases'])[:16], o['store_semantic_sha256'][:16],
+            o['store_rows']))
 
     stages = ['prepare', 'normalize', 'audit', 'promotion-plan', 'store-write', 'total']
     stats = {}
