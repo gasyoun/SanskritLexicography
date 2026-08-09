@@ -122,6 +122,39 @@ Abhidhanachintamani (parishiShTa/shilonCha). **Исключены аудитом
 `e-bhAratI-sampat` ≈3 строки.
 Коши уже в csl-orig (skd/vcp/abch/armh) сюда НЕ берутся.
 
+## Синонимы Леонченко (SPECIALIST/SENSE) — `corpus_gate.py`
+
+Оцифровка Леонченко (H1491, 26-07-2026) — `../research/sinonimy/sinonimy.jsonl`
+(≈47 273 строки, 3 типа: `sense_inventory` 9 264 / `synonym_group_lemma` 13 922 /
+`synonym_group_gloss` 24 087+; см. [research/sinonimy/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/sinonimy/README.md))
+— лежит **вне `src/`** и до H2410 (09-08-2026) не была подключена к шлюзу. Теперь
+`corpus_gate.py` читает её напрямую (`load_sinonimy_index()`, без отдельного
+build-скрипта — файл уже готов), давая два новых поля карточки:
+
+- **`sinonimy_synonyms`** — санскритская корроборация (аналог `skd_vcp_synonyms`,
+  правило 5): обратный индекс по `synonym_group_lemma`/`synonym_group_gloss` —
+  каждому члену группы сопоставлены остальные члены. Держится **отдельным полем**
+  от `skd_vcp_synonyms`, а не мержится: методология Леонченко — совпадение по
+  глоссу (не проверенная семантическая синонимия), тот же эвиденс-статус, что у
+  `grin12`/`grin3`.
+- **`sinonimy_senses`** — мягкий сигнал значения (аналог `hindi_sense`, правило 8,
+  но на английском): английские инвентари значений из `sense_inventory`.
+  Никогда не корректность.
+
+**Гигиена, отсутствующая в исходных данных.** `members[]` в
+`synonym_group_*`-строках несут сырой IAST **без само-исключения и без дедупа**
+(лемма группы сама входит в `members[]`, часто дважды — подтверждено на живой
+строке `agni`: `["tanūnapāt","agni","agni","agnimukha",…]`). `corpus_gate.py`
+делает само-исключение + дедуп **на стороне шлюза** (не в
+[research/sinonimy/build_sinonimy.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/sinonimy/build_sinonimy.py),
+чтобы не гонять оцифровку повторно). Ключ — IAST → SLP1 через `iast_to_slp1`
+(реюз `build_src.py`) → `form_key()`; лемма-суффикс омоним-дизамбигуации
+(`aṁśa 2`) обрезается регэкспом перед транслитерацией.
+
+**Права** — местные исследовательские данные без подтверждения прав
+(evidence-only, как у прочих `SPECIALIST`; см.
+[research/sinonimy/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/sinonimy/README.md)).
+
 ## Латинские биномены растений (Meulenbeld=SNP) — `build_meulenbeld.py`
 
 [build_meulenbeld.py](build_meulenbeld.py) парсит уже извлеченный глоссарий
