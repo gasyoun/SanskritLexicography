@@ -8,8 +8,8 @@ message: >
   data/FAIR_RELEASE_1.md.
 license: MIT
 repository-code: https://github.com/gasyoun/SanskritLexicography
-version: 1.144.20
-date-released: 2026-08-07
+version: 1.144.25
+date-released: 2026-08-09
 # The CONCEPT DOI — version-independent, always resolves to the newest release.
 # This is deliberately NOT a per-version DOI: those change every release and would
 # make this file wrong the moment the next one ships. Each release's own version
