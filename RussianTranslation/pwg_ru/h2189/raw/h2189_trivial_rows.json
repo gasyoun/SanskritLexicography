@@ -1,0 +1,255 @@
+{
+  "rows": [
+    {
+      "arm": "paid",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 19877,
+      "returncode": 1,
+      "api_ms": 5287,
+      "num_turns": 2,
+      "failure_class": "cli_error",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 39532,
+        "cache_read_input_tokens": 28882
+      },
+      "ttl_1h_tokens": 39532,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.2459226,
+      "n": 1,
+      "cost_usd_1h_write": 0.245923
+    },
+    {
+      "arm": "paid",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 36662,
+      "returncode": 1,
+      "api_ms": 10541,
+      "num_turns": 2,
+      "failure_class": "cli_error",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 68414
+      },
+      "ttl_1h_tokens": 0,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.0205902,
+      "n": 2,
+      "cost_usd_1h_write": 0.02059
+    },
+    {
+      "arm": "minimal",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 16374,
+      "returncode": 0,
+      "api_ms": 9837,
+      "num_turns": 1,
+      "failure_class": null,
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 36092,
+        "cache_read_input_tokens": 28882
+      },
+      "ttl_1h_tokens": 36092,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.2252826,
+      "n": 1,
+      "cost_usd_1h_write": 0.225283
+    },
+    {
+      "arm": "minimal",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 22121,
+      "returncode": 0,
+      "api_ms": 28672,
+      "num_turns": 1,
+      "failure_class": null,
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 64974
+      },
+      "ttl_1h_tokens": 0,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.0201442,
+      "n": 2,
+      "cost_usd_1h_write": 0.019558
+    },
+    {
+      "arm": "safe",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 17812,
+      "returncode": 0,
+      "api_ms": 12721,
+      "num_turns": 1,
+      "failure_class": null,
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 4712,
+        "cache_read_input_tokens": 28882
+      },
+      "ttl_1h_tokens": 4712,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.0370026,
+      "n": 1,
+      "cost_usd_1h_write": 0.037003
+    },
+    {
+      "arm": "safe",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 12207,
+      "returncode": 0,
+      "api_ms": 5683,
+      "num_turns": 1,
+      "failure_class": null,
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 33594
+      },
+      "ttl_1h_tokens": 0,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.010144199999999999,
+      "n": 2,
+      "cost_usd_1h_write": 0.010144
+    },
+    {
+      "arm": "clean_cwd",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 22220,
+      "returncode": 1,
+      "api_ms": 8315,
+      "num_turns": 2,
+      "failure_class": "cli_error",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 26780,
+        "cache_read_input_tokens": 28882
+      },
+      "ttl_1h_tokens": 26780,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.16941060000000002,
+      "n": 1,
+      "cost_usd_1h_write": 0.169411
+    },
+    {
+      "arm": "clean_cwd",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 34463,
+      "returncode": 1,
+      "api_ms": 21157,
+      "num_turns": 2,
+      "failure_class": "cli_error",
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 55662
+      },
+      "ttl_1h_tokens": 0,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.0167646,
+      "n": 2,
+      "cost_usd_1h_write": 0.016765
+    },
+    {
+      "arm": "safe_clean",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 19332,
+      "returncode": 0,
+      "api_ms": 23038,
+      "num_turns": 1,
+      "failure_class": null,
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 4704,
+        "cache_read_input_tokens": 28882
+      },
+      "ttl_1h_tokens": 4704,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.037535599999999995,
+      "n": 1,
+      "cost_usd_1h_write": 0.036955
+    },
+    {
+      "arm": "safe_clean",
+      "phase": "trivial",
+      "key": null,
+      "wall_ms": 12612,
+      "returncode": 0,
+      "api_ms": 14814,
+      "num_turns": 1,
+      "failure_class": null,
+      "usage": {
+        "input_tokens": 2,
+        "output_tokens": 4,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 33586
+      },
+      "ttl_1h_tokens": 0,
+      "ttl_5m_tokens": 0,
+      "envelope_cost_usd": 0.0107228,
+      "n": 2,
+      "cost_usd_1h_write": 0.010142
+    }
+  ],
+  "summary": {
+    "minimal/trivial": {
+      "n": 2,
+      "create": 36092,
+      "read": 64974,
+      "input": 2,
+      "output": 4,
+      "ttl_1h": 36092,
+      "wall_ms": 22121,
+      "api_ms": 28672,
+      "cost_usd_1h_write": 0.122421,
+      "envelope_cost_usd": 0.122713
+    },
+    "safe/trivial": {
+      "n": 2,
+      "create": 4712,
+      "read": 33594,
+      "input": 2,
+      "output": 4,
+      "ttl_1h": 4712,
+      "wall_ms": 17812,
+      "api_ms": 12721,
+      "cost_usd_1h_write": 0.023574,
+      "envelope_cost_usd": 0.023573
+    },
+    "safe_clean/trivial": {
+      "n": 2,
+      "create": 4704,
+      "read": 33586,
+      "input": 2,
+      "output": 4,
+      "ttl_1h": 4704,
+      "wall_ms": 19332,
+      "api_ms": 23038,
+      "cost_usd_1h_write": 0.023548,
+      "envelope_cost_usd": 0.024129
+    }
+  },
+  "manifest": "h1209_slice3.manifest.json",
+  "model": "claude-sonnet-5",
+  "cache_write_1h_rate": 6.0
+}

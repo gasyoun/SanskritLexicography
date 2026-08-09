@@ -76,7 +76,7 @@ consumption pattern.
 ## 3. Phased plan
 
 ### P0 — Parsers & canonical extraction (this repo) ✅ DONE ([PR #201](https://github.com/gasyoun/SanskritLexicography/pull/201), 06-07-2026)
-- `HeadwordLists/works_catalogue/parse_acc.py` — [acc.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/acc/acc.txt)
+- `HeadwordLists/works_catalogue/parse_acc.py` — [acc.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/acc/acc.txt)
   → JSONL: `{acc_L, pc_scan, k1_slp1, k2, body, sigla[], match_key}`.
 - `HeadwordLists/works_catalogue/parse_ncc.py` — [combined.txt](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/NCC/files/src/SktNewCatalogus_Catalogorum_combined.txt)
   → JSONL: `{ncc_id, ncc_numid, deva, iast, body_html, sigla[], mss_witnesses, match_key}`.
@@ -128,7 +128,7 @@ migration, including every one of the 3,711 candidate rows the repair removed:
   yet** — all 10,614 post-repair C/D rows sit in `works_crosswalk_agent_proposed.tsv` until
   a human votes the sample and rules the bar.
   Full report: [`P2_AGENT_ADJUDICATION_REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/P2_AGENT_ADJUDICATION_REPORT.md).
-- **Status (30-07-2026, [H1951](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1951-Grok_SanskritLexicography_acc-ncc-p2-larger-sample_30.07.26.md),
+- **Status (30-07-2026, [H1951](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1951-Grok_SanskritLexicography_acc-ncc-p2-larger-sample_30.07.26.md),
   Grok 4.5 `grok-4.5`): larger blind sample re-drawn.** MG vote 4c (H1948) chose option (c)
   over locking 0.85/0.90: re-draw first so a **0.95** Wilson bar is attainable. New frame:
   **1,111 cards · 17 strata · n=73** per side (seed `19512026`; min n with perfect-agreement
@@ -142,7 +142,7 @@ migration, including every one of the 3,711 candidate rows the repair removed:
   candidates**. Measured in H1657, filed as
   [integrity issue #779](https://github.com/gasyoun/SanskritLexicography/issues/779), repaired
   and re-run end-to-end by
-  [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
+  [H1671](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1671-Opus_SanskritLexicography_acc-ncc-p0p1-ncc-key-repair-rerun_26.07.26.md)
   (`parse_ncc.match_key_for` now case-folds + NFC-normalizes before transliteration, pinned by
   [`test_parse_ncc.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/test_parse_ncc.py)).
   The P0/P1/P2 tables above are the post-repair numbers; the before/after is

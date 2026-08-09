@@ -7,29 +7,21 @@ Scope ruled by M.G. 03-07-2026 (4 decisions, elicited in-session): **full breadt
 **VisualDCS** · GRA crosswalk **queued** · roadmap doc lives **here** (the Sanskrit-data
 hub repo). Authored by Fable 5 (`claude-fable-5`).
 
-## Where we stand (prior-art verdict: PARTIAL)
+## Where we stand (prior-art verdict: COMPLETE — all roadmap phases done)
 
-**No VedaWeb data has been integrated anywhere yet.** What exists is the on-ramp:
+Phases 0–4 are closed. Hub surfaces that still consume the results (ZALIZNYAK a–f
+emission, Karaoke meter seeds, Elizarenkova RU witness, PWG gloss witness) live
+**outside** this roadmap and are tracked on their own handoffs.
 
-- **Probe, confirmed turnkey 2026-06-29** —
-  [FINDINGS.md §1](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md):
-  live API at `vedaweb.uni-koeln.de/api` (FastAPI, OpenAPI at `/api/openapi.json`), four
-  core Rig-Veda resources identified with IDs (Casaretto et al. 2025 accented word-split
-  `66695e4a14f6d337f7788740`; lemmatization `679b7da2d5b833a67f64b3f7`; accented
-  Scarlata–Widmer/Lubotsky text `66695c4b14f6d337f778873f`; Lubotsky padapāṭha
-  `668ba4460b5942c9849a8684`), bulk `GET /api/resources/{id}/export`, **CC BY 4.0**,
-  in-ecosystem (C-SALT/CDSL). §41: the platform migrated to Tekst; the old app was
-  archived 16-02-2026 — the 2.0 API is the only live target.
-- **First consumer built (rules side):** WhitneyRoots
+- **Probe + feed + GRA crosswalk + rights + accent validation** — all landed (see
+  phases below). Core VisualDCS feed:
+  [`VisualDCS/non-derived/vedaweb/`](https://github.com/gasyoun/VisualDCS/tree/main/non-derived/vedaweb).
+- **Accent rules + validation:** WhitneyRoots
   [crosswalk/accent_rules.json](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_rules.json)
-  (18 Whitney rules, 19-cell matrix,
-  [v1.1.0](https://github.com/gasyoun/WhitneyRoots/releases/tag/v1.1.0)) + the
-  Sonnet-runnable
-  [docs/ACCENT_VALIDATION_SPEC.md](https://github.com/gasyoun/WhitneyRoots/blob/main/docs/ACCENT_VALIDATION_SPEC.md),
-  merged via [WhitneyRoots PR #23](https://github.com/gasyoun/WhitneyRoots/pull/23).
-- **The gap:** zero exports on disk; no registered feed in
-  [PROJECT_INTERLINKS.md](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md)
-  (the spec caches to gitignored `scratch/`); GRA / meter / translation surfaces untouched.
+  + [crosswalk/accent_validation.json](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_validation.json)
+  + [docs/ACCENT_VALIDATION_REPORT.md](https://github.com/gasyoun/WhitneyRoots/blob/main/docs/ACCENT_VALIDATION_REPORT.md)
+  — **17/19 cells GO, 0 NO-GO** ([PR #24](https://github.com/gasyoun/WhitneyRoots/pull/24),
+  T8c resolved [PR #29](https://github.com/gasyoun/WhitneyRoots/pull/29) / H115).
 
 ## Phases
 
@@ -54,27 +46,29 @@ Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H096-Sonnet_VisualDCS_vedawe
 
 Sonnet-tier chat in `GitHub\VisualDCS`.
 
-### Phase 2 — WhitneyRoots accent-validation run — ✅ DONE (H063, discovered already-merged 01-08-2026)
+### Phase 2 — WhitneyRoots accent-validation run — ✅ DONE 03-07-2026 (H115 polish 05-07-2026); hub tick 01-08-2026
 
 - [x] Score the 18 rules / 19 cells against attested RV accents; per-cell GO/NO-GO for
   the ZALIZNYAK a–f accent-axis emission
   ([ZALIZNYAK_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md)).
-  Independent of Phase 1 (its spec can hit the live API), but if the feed has landed,
-  read from it instead. **Result: 18/19 cells GO** (2 thin-evidence
-  measurement-only cells with 0 attested lemmas; the remaining `T8c·oxytone` exception
-  was resolved to a clean 100% GO by H115). Deliverables:
+  **Result: 17/19 cells GO, 2 measurement-only (thin evidence), 0 NO-GO** — ZALIZNYAK a–f
+  emission cleared on the GO cells. `T8c·oxytone` resolved to 100% by H115 (rule gap for
+  pratyáñc-type añc-compounds, not lemma noise). Deliverables:
   [`crosswalk/accent_validation.json`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_validation.json) +
   [`docs/ACCENT_VALIDATION_REPORT.md`](https://github.com/gasyoun/WhitneyRoots/blob/main/docs/ACCENT_VALIDATION_REPORT.md),
   landed via [WhitneyRoots PR #24](https://github.com/gasyoun/WhitneyRoots/pull/24)
   (Sonnet 5 `claude-sonnet-5`) + follow-up
-  [WhitneyRoots PR #29](https://github.com/gasyoun/WhitneyRoots/pull/29). This roadmap
-  checkbox was merely stale — the checkbox tick itself is this session's only change.
+  [WhitneyRoots PR #29](https://github.com/gasyoun/WhitneyRoots/pull/29) / H115.
+  FINDINGS §1 + §54 via [SanskritLexicography PR #104](https://github.com/gasyoun/SanskritLexicography/pull/104).
+  Handoff:
+  [H063](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H063-Sonnet_WhitneyRoots_accent_validation_02.07.26.md)
+  (archived ✅). Hub checkbox was stale until
+  [PR #951](https://github.com/gasyoun/SanskritLexicography/pull/951); summary polish +
+  COMPLETE verdict under
+  [H2099](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2099-Grok_SanskritLexicography_vedaweb-phase2-tick_01.08.26.md)
+  (`/drain tier 1`, Grok 4.5).
 
-```
-Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H063-Sonnet_WhitneyRoots_accent_validation_02.07.26.md and execute it.
-```
-
-Sonnet-tier chat in `GitHub\WhitneyRoots`.
+🔴 EXECUTED: [H063-Sonnet_WhitneyRoots_accent_validation_02.07.26.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H063-Sonnet_WhitneyRoots_accent_validation_02.07.26.md)
 
 ### Phase 3 — GRA (Grassmann) ↔ VedaWeb crosswalk — ✅ DONE 08-07-2026
 

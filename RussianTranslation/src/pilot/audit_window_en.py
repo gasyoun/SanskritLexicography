@@ -91,26 +91,30 @@ if SRC not in sys.path:
 from foreign_literal_guards import FRENCH_CONTEXT_WORDS, AMBIGUOUS_DE_FR_WORDS
 import stage2_pregate   # H405: the shared mechanical pre-gate (RU + EN)
 from sense_count import portrait_source_senses, output_sense_count, sense_shortfall  # H920
+# H2227 OPT-2: lang-agnostic LS/SAN/AB/DUP + soft MARKUP-LOSS live in one module
+# parameterized by target field; this file keeps EN-only soft flags (DE-RESIDUE, …).
+from markup_fidelity_gates import (  # noqa: E402
+    GLOSS_RE as GLOSS,
+    SAN_RE as SAN,
+    HEADERLIKE_TAGS as HEADERLIKE,
+    markup_span_flags,
+    markup_wrapper_soft_flags,
+    missing_target_flag,
+    within_record_identical_target,
+)
 
 # Flag TYPES the pre-gate contributes to the EN path that this auditor's own
-# per-sense checks above do NOT already produce. LS/SAN/AB/LEX/LANG loss stay owned
-# by audit_sense (same thresholds), so pulling only these avoids double-reporting:
+# per-sense checks above do NOT already produce. LS/SAN/AB stay owned by audit_sense
+# via markup_fidelity_gates, so pulling only these avoids double-reporting:
 #   IS-LOSS         <is>…</is> italic-Sanskrit spans dropped (EN's AB regex omits <is>)
 #   STRANDED-ANCHOR a {Tn} placeholder left unrestored in the final text
 #   ANCHOR-LEAK/-MISMATCH  masked-pair anchor damage (defensive; restored EN rarely hits)
 _PREGATE_NEW = {'IS-LOSS', 'STRANDED-ANCHOR', 'ANCHOR-LEAK', 'ANCHOR-MISMATCH'}
 
-LS = re.compile(r'<ls\b')
-SAN = re.compile(r'\{#.*?#\}', re.S)
-AB = re.compile(r'<(?:ab|lex|lang)\b')
-GLOSS = re.compile(r'\{%.*?%\}', re.S)
-DIVTAG = re.compile(r'<div\b')
 CYR = re.compile(r'[Ѐ-ӿ]')
 LS_SPAN = re.compile(r'<ls[^>]*>.*?</ls>', re.S)
 TAG = re.compile(r'<[^>]+>')
 WORD = re.compile(r"[A-Za-z]{3,}")
-
-LS_KEEP, SAN_KEEP = 0.90, 0.85
 
 # High-precision German residue markers. Umlaut/eszett never occur in IAST, so they are a
 # clean signal; the word list excludes tokens that collide with English ("die", "in", "so").
@@ -127,10 +131,6 @@ DE_WORDS = re.compile(
 STOP = frozenset('the a an of to and or in on at for with from by as is be are was were that '
                  'this it its his her their etc also one who which what not no any some such '
                  'into out up down off over under more most very so'.split())
-
-# Structural sense tags (preverb / secondary-conjugation headers) that legitimately carry
-# trivial repeated prose ("With ..."); the same SKIP set the RU sense-dupe gate uses.
-HEADERLIKE = ('header', 'gramm-forms', 'grammar', 'paradigm')
 
 
 def prose(text):
@@ -200,7 +200,11 @@ def find_results(o):
 
 
 def audit_sense(german, english):
-    """Return (hard_flags, soft_flags) for one sense's german->english pair."""
+    """Return (hard_flags, soft_flags) for one sense's german->english pair.
+
+    HARD LS/SAN/AB/MISSING-EN + soft MARKUP-LOSS come from markup_fidelity_gates
+    (H2227 OPT-2 shared module, field='english'). EN-only soft semantic flags stay here.
+    """
     hard, soft = [], []
     g, e = german or '', english or ''
     # H1152 guard 3: flag the two "nothing was really translated here" shapes so a coverage
@@ -217,28 +221,13 @@ def audit_sense(german, english):
     # here: xref_only's WORD regex requires 3+ letters, so a residue of ONLY 1-2 letter
     # tokens ('s.', 'u.') with no other prose still slips through as has_gloss=True.
     has_gloss = not xref_only(g) and ('{%' in g or bool(prose(g).strip()))
-    if has_gloss and not e.strip():
-        hard.append('MISSING-EN')
+    miss = missing_target_flag(has_gloss, e, field='english')
+    if miss:
+        hard.append(miss)
         return hard, soft
 
-    sls, ols = len(LS.findall(g)), len(LS.findall(e))
-    if sls > 0 and ols < sls * LS_KEEP and (sls - ols) >= 2:
-        hard.append('LS-LOSS(%d/%d)' % (ols, sls))
-    ssan, osan = len(set(SAN.findall(g))), len(set(SAN.findall(e)))
-    if ssan > 0 and osan < ssan * SAN_KEEP and (ssan - osan) >= 2:
-        hard.append('SAN-LOSS(%d/%d)' % (osan, ssan))
-    sab, oab = len(AB.findall(g)), len(AB.findall(e))
-    if sab > 0 and (sab - oab) >= 2:
-        hard.append('AB-LOSS(%d/%d)' % (oab, sab))
-
-    # P8 (H1422): the two marker classes were summed into one combined count before
-    # comparing, so a dropped {%..%} gloss wrapper could be masked by an unrelated <div>
-    # gained in the english (net count unchanged, e.g. source 2 gloss/0 div vs output
-    # 0 gloss/2 div -- 2 == 2, no flag). Count and compare each class separately.
-    sgl, ogl = len(GLOSS.findall(g)), len(GLOSS.findall(e))
-    sdiv, odiv = len(DIVTAG.findall(g)), len(DIVTAG.findall(e))
-    if (sgl > 0 and ogl < sgl) or (sdiv > 0 and odiv < sdiv):
-        soft.append('MARKUP-LOSS(%d/%d)' % (ogl + odiv, sgl + sdiv))
+    hard.extend(markup_span_flags(g, e, check_ab=True))
+    soft.extend(markup_wrapper_soft_flags(g, e))
 
     ep = prose(e)
     if CYR.search(ep):
@@ -287,8 +276,15 @@ def audit_card(result, tm, do_mw):
     for ri, rec in enumerate(card.get('records') or []):
         h = rec.get('h') or card.get('iast') or ''
         senses = rec.get('senses') or []
-        seen = {}
         card_en_words = set()
+        # H2227: within-record identical-target DUP (field='english') — raw-key C2 semantics
+        # live in markup_fidelity_gates; soft SAME-GLOSS still gated on content-word count.
+        dup_rows = within_record_identical_target(
+            senses,
+            field='english',
+            headerlike=HEADERLIKE,
+            content_word_count_fn=lambda s: len(content_words(s.get('english') or '')),
+        )
         for si, s in enumerate(senses):
             tag = str(s.get('tag') or si)
             loc = '%s/r%d/s%s' % (key, ri, tag)
@@ -299,29 +295,12 @@ def audit_card(result, tm, do_mw):
             norm = re.sub(r'\s+', ' ', ep).strip().lower()
             if norm and norm == h.lower():
                 soft.append('CIRCULAR')
-            # Within-card identical-gloss check: skip structural headers — preverb headers
-            # ("With ...") legitimately repeat. The canonical cross-card tag dedup is
-            # delegated to audit_sense_dupes.py below.
-            # DUP (HARD): two senses share the exact same english, regardless of length —
-            # a real duplicate is a real duplicate whether it's one word or ten.
-            # SAME-GLOSS (soft): kept as a lower-confidence variant gated on >=3 content
-            # words, for callers that only want the historical soft signal.
-            # C2: the DUP key is the normalized RAW english, NOT prose() — prose() strips {#..#}
-            # Sanskrit and <ls> citations, so two senses distinguished ONLY by their referent
-            # ("N. of a serpent-demon {#vAsuki#}" vs "…{#takzaka#}") collapsed to one string and
-            # the second was wrongly HARD-DUP'd, failing --strict on faithful output. The gate's
-            # own contract ("the EXACT same english") requires KEEPING the referent; CIRCULAR
-            # above keeps prose() `norm` (a gloss that is only the transliterated headword IS
-            # circular even with its {#..#} stripped).
-            dup_key = re.sub(r'\s+', ' ', (s.get('english') or '')).strip().lower()
-            headerlike = any(hk in tag for hk in HEADERLIKE)
-            if dup_key and not headerlike:
-                if dup_key in seen:
-                    hard.append('DUP(=%s)' % seen[dup_key])
-                    if len(words) >= 3:
-                        soft.append('SAME-GLOSS(=%s)' % seen[dup_key])
-                else:
-                    seen[dup_key] = tag
+            # Pairwise HARD DUP + soft SAME-GLOSS from the shared field-parameterized gate.
+            # Cross-card tag dedup remains audit_sense_dupes.py (in-process below).
+            if si < len(dup_rows):
+                _t, d_hard, d_soft = dup_rows[si]
+                hard.extend(d_hard)
+                soft.extend(d_soft)
             for fl in hard + soft:
                 flags.append((loc, fl))
         if do_mw and tm is not None:
@@ -380,9 +359,26 @@ def run_sense_dupes(mod, path):
 HARD = ('MISSING-EN', 'MISSING-SENSE', 'LS-LOSS', 'SAN-LOSS', 'AB-LOSS', 'IS-LOSS',
         'STRANDED-ANCHOR', 'ANCHOR-LEAK', 'ANCHOR-MISMATCH', 'SENSE-DUPE', 'DUP')
 
+# H2095 (#956): the HARD set split by WHAT EACH FLAG ACTUALLY FIRES ON — the enumeration #956
+# asked for, and the answer was yes, the #947 hazard reaches this lane too.
+#
+# ABSENCE-bearing: these fire because something is MISSING, so a card left incomplete by a dead
+# CALL trips them for a reason that is not its content. Six of the eleven — including SAN-LOSS,
+# which is literally the gate named in #947's RU harm.
+#
+# The rest (STRANDED-ANCHOR, ANCHOR-LEAK, ANCHOR-MISMATCH, SENSE-DUPE, DUP) fire on what the card
+# DOES say, and a dead call cannot manufacture them, so they stay defects on a partial card — the
+# EN twin of `fidelity_nulls` still overriding the RU exemption.
+ABSENCE_HARD = ('MISSING-EN', 'MISSING-SENSE', 'LS-LOSS', 'SAN-LOSS', 'AB-LOSS', 'IS-LOSS')
+
 
 def is_hard(flag):
     return any(flag.startswith(h) for h in HARD)
+
+
+def is_absence_hard(flag):
+    """True when a HARD flag fires on ABSENCE rather than on what the card says."""
+    return any(flag.startswith(h) for h in ABSENCE_HARD)
 
 
 def main():
@@ -397,7 +393,8 @@ def main():
     ap.add_argument('--no-mw', action='store_true', help='skip the MW divergence cross-check')
     ap.add_argument('--report', help='write the machine-readable JSON report to this path')
     ap.add_argument('--wall-clock-minutes', type=float, default=None,
-                    help='H1618/H1553: optional wall-clock for production_metrics '
+                    help='H1618/H1553: optional OBSERVED wall-clock for production_metrics — '
+                         'a recorded metric, never a cap (H2173 G10, SHARED with the RU twin) '
                          '(else derived from wf mtime - meta.generated_at when possible)')
     ap.add_argument('--write-requeue', action='store_true',
                     help='H1618/H304: when --report is set, also write requeue.defect.keys.txt '
@@ -440,11 +437,18 @@ def main():
                 null_keys.append(row.get('key') or '?')
                 continue
             totals['cards'] += 1
+            # H2095 (#956): the EN twin of #947. `headless_worker` stamps `partial_cause_infra`
+            # language-agnostically, so this lane can read the same marker. A card left incomplete
+            # because its CALL died must not be filed as a content defect on an ABSENCE flag —
+            # `requeue_defect` here feeds the same H304 fsha denylist, so the harm is identical.
+            # The flag is still counted and still reported; only defect MEMBERSHIP is skipped, and
+            # only for absence-bearing flags.
+            infra_partial = bool((res.get('card') or {}).get('partial_cause_infra'))
             for loc, fl in row['flags']:
                 base = fl.split('(')[0]
                 flag_counts[base] = flag_counts.get(base, 0) + 1
                 file_flags.append({'loc': loc, 'flag': fl})
-                if is_hard(fl):
+                if is_hard(fl) and not (infra_partial and is_absence_hard(fl)):
                     hard_keys.add(row['key'])
             totals['senses'] += sum(len(r.get('senses') or [])
                                     for r in (res.get('card') or {}).get('records') or [])
@@ -552,6 +556,22 @@ def main():
                 f.write('\n'.join(requeue_defect) + ('\n' if requeue_defect else ''))
             with open(defect_fshas, 'w', encoding='utf-8', newline='\n') as f:
                 f.write('\n'.join(requeue_defect_fshas) + ('\n' if requeue_defect_fshas else ''))
+            # H2228 / OPT-7 EN twin: stamp last-audit defect denylist so --tm=auto cannot
+            # re-serve hard-flagged content without --no-tm. Skip on crashed sense-dupe
+            # gates (blast radius). Local denylist under report dir when under tempdir.
+            if requeue_defect or requeue_defect_fshas:
+                if not crashed_files:
+                    import translation_memory as tm
+                    import tempfile as _tf
+                    deny_path = None
+                    abs_out = os.path.abspath(out_dir)
+                    if abs_out.startswith(os.path.abspath(_tf.gettempdir()) + os.sep):
+                        deny_path = os.path.join(out_dir, 'translation_memory.denylist.jsonl')
+                    n_deny, nf_deny = tm.stamp_denylist_from_last_audit(
+                        requeue_defect, lang='en', fshas=requeue_defect_fshas,
+                        root='', reason='last_audit_defect', path=deny_path)
+                    print('tm denylist   : +%d card +%d frag (last_audit_defect)'
+                          % (n_deny, nf_deny))
             print('requeue defect: %s (%d keys, %d fsha)' %
                   (defect_keys, len(requeue_defect), len(requeue_defect_fshas)))
     if production_metrics:

@@ -1870,6 +1870,57 @@ def test_h1702_boundary_wrap_gate():
         fail('H1702: expected gloss-span-crosses-anchor, got %r' % (reason6,))
 
 
+def test_h2144_d4b_bracket_normalize():
+    """H2144: D4b bracket-normalize unlock. de's fullwidth/CJK corner-bracket numbering
+    marker (e.g. `〉`) and ru's plain ASCII equivalent (`)`) must be treated as the same
+    affix boundary when normalize_brackets=True, WITHOUT rewriting ru's own bracket
+    character into de's form and WITHOUT changing default (normalize_brackets=False)
+    behavior at all."""
+    from d4_boundary_wrap import try_boundary_wrap
+
+    # POSITIVE: de uses the fullwidth corner bracket, ru already uses plain ASCII ")" --
+    # refused by default (exact-affix), unlocked under normalize_brackets=True, and ru's
+    # own ")" is preserved verbatim in the result (not rewritten to de's "〉").
+    de = '<div n="2">— e〉 {%zum Vorschein gekommen%}.'
+    ru = '<div n="2">— e) появившийся.'
+    ok_default, reason_default = try_boundary_wrap(de, ru)
+    if ok_default:
+        fail('H2144: bracket-mismatched affix must be refused by default (normalize_brackets=False)')
+    if reason_default != 'prefix-no-match':
+        fail('H2144: expected prefix-no-match by default, got %r' % (reason_default,))
+    ok_norm, result_norm = try_boundary_wrap(de, ru, normalize_brackets=True)
+    want = '<div n="2">— e) {%появившийся%}.'
+    if not ok_norm or result_norm != want:
+        fail('H2144: bracket-normalize wrap did not reproduce the expected wrap (ru bracket must survive verbatim): %r' % (result_norm,))
+
+    # POSITIVE (reverse pairing): de uses ASCII, ru uses the fullwidth bracket -- ru's own
+    # fullwidth bracket must survive the wrap untouched.
+    de_rev = '<div n="2">— e) {%zum Vorschein gekommen%}.'
+    ru_rev = '<div n="2">— e〉 появившийся.'
+    ok_rev, result_rev = try_boundary_wrap(de_rev, ru_rev, normalize_brackets=True)
+    want_rev = '<div n="2">— e〉 {%появившийся%}.'
+    if not ok_rev or result_rev != want_rev:
+        fail('H2144: reverse bracket-normalize wrap must preserve ru\'s fullwidth bracket verbatim: %r' % (result_rev,))
+
+    # CONTROL: an already-exact-match row must produce an IDENTICAL result under
+    # normalize_brackets=True as under the default -- the flag must never change behavior
+    # for rows that did not need it.
+    de_exact = '<div n="2">— 2〉 {%an sich nehmen%}.'
+    ru_exact = '<div n="2">— 2〉 принимать на себя.'
+    ok_a, result_a = try_boundary_wrap(de_exact, ru_exact)
+    ok_b, result_b = try_boundary_wrap(de_exact, ru_exact, normalize_brackets=True)
+    if not (ok_a and ok_b and result_a == result_b):
+        fail('H2144: normalize_brackets=True must not change the outcome for an already-exact-match row')
+
+    # NEGATIVE: a genuine (non-bracket) affix mismatch stays refused even with
+    # normalize_brackets=True -- the flag only widens bracket equivalence, nothing else.
+    de_bad = '<div n="1">— 2〉 {%an sich nehmen%}.'
+    ru_bad = 'принимать на себя.'
+    ok_bad, reason_bad = try_boundary_wrap(de_bad, ru_bad, normalize_brackets=True)
+    if ok_bad:
+        fail('H2144: a dropped-<div>-prefix row must still be refused under normalize_brackets=True: %r' % (reason_bad,))
+
+
 def test_semantic_review_prioritizer():
     high = {
         'key': 'high',
@@ -3245,6 +3296,70 @@ def test_perf_preflight_dense_presplit():
         fail('dense key must report presplit routing in performance preflight')
     if report.get('agent_expected_after_tm', 0) < 1:
         fail('dense presplit key must report a nonzero expected agent lane')
+
+
+def test_presplit_group_call_weight_caps_portrait_plus_bytes_h2248():
+    """H2248 (#983): a presplit group's CALL WEIGHT — the card's portrait plus the group's
+    fragment bytes — must stay within PRESPLIT_GROUP_CALL_WEIGHT.
+
+    RED before the fix: the presplit sizer weighed only `1 + <ls>` (citation units) with a
+    fragment count cap, and was blind to the portrait that `heal_group` re-sends on EVERY
+    fragment call. On H2174's live w1 that hid 68-94% of each call's real weight, and packed
+    `nakzatra`'s 3 236 B / citation-light mega-fragment into a group whose true weight was
+    14 378 B — the heaviest call of the window, and the only one that died at the ceiling
+    (300 024 ms). Every call that landed weighed <= 11 476 B.
+
+    The fixture reproduces exactly that shape: a big portrait plus a byte-heavy but
+    citation-light fragment that the citation sizer prices at almost nothing. Under the old
+    grouping every fragment fits in one group (total cite weight is far under 60 and the
+    count is under 18), so the group's weight lands ~14 KB and this test FAILS.
+    """
+    import gen_opt_harness2 as gh
+
+    portrait = 'E' * 9761                      # nakzatra's real portrait size
+    frags = ([{'skeleton': 'x' * n, 'ls': 1} for n in (73, 230, 212, 83)]
+             + [{'skeleton': 'x' * n, 'ls': 1} for n in (335, 103, 672, 131, 140)]
+             + [{'skeleton': 'x' * 3236, 'ls': 1}])   # the citation-light mega-fragment
+    allow = max(0, gh.PRESPLIT_GROUP_CALL_WEIGHT - len(portrait))
+    groups = gh._group_by_budget(frags, lambda it: 1 + it['ls'],
+                                 gh.PRESPLIT_GROUP_CITE_BUDGET,
+                                 count_cap=gh.PRESPLIT_GROUP_SENSE_CAP,
+                                 extra_sizer=lambda it: len(it['skeleton']),
+                                 extra_budget=allow)
+    if not groups:
+        fail('presplit grouping returned no groups')
+    for gi, grp in enumerate(groups, 1):
+        content = sum(len(it['skeleton']) for it in grp)
+        weight = len(portrait) + content
+        # A group holding ONE fragment is already the smallest call the lane can make;
+        # an intrinsically oversize fragment is allowed to exceed (never dropped).
+        if len(grp) > 1 and weight > gh.PRESPLIT_GROUP_CALL_WEIGHT:
+            fail('presplit group #g%d weighs %d B (portrait %d + content %d), over the '
+                 '%d B call-weight cap — the H2174 nakzatra#g2 shape (14 378 B) that died '
+                 'at the kill ceiling' % (gi, weight, len(portrait), content,
+                                          gh.PRESPLIT_GROUP_CALL_WEIGHT))
+    # The mega-fragment must be isolated rather than packed beside its siblings.
+    mega = [gi for gi, grp in enumerate(groups, 1)
+            if any(len(it['skeleton']) == 3236 for it in grp)]
+    if len(mega) != 1 or len(groups[mega[0] - 1]) != 1:
+        fail('the 3 236 B citation-light fragment must get its own call, not ride along '
+             'with siblings the citation sizer priced identically')
+
+
+def test_presplit_group_call_weight_zero_allowance_degrades_to_one_per_call_h2248():
+    """A card whose portrait ALONE exceeds the call-weight cap gets a 0 B content allowance.
+    That must degrade to one fragment per call (the smallest call the lane can make), not
+    silently read as "no cap" — the `if extra_budget` truthiness bug this guards against
+    would have let exactly the largest-portrait cards regroup without any byte bound."""
+    import gen_opt_harness2 as gh
+
+    frags = [{'skeleton': 'x' * n, 'ls': 1} for n in (100, 200, 300)]
+    groups = gh._group_by_budget(frags, lambda it: 1 + it['ls'], 60, count_cap=18,
+                                 extra_sizer=lambda it: len(it['skeleton']),
+                                 extra_budget=0)
+    if [len(g) for g in groups] != [1, 1, 1]:
+        fail('a 0 B content allowance must yield one fragment per call, got %r'
+             % [len(g) for g in groups])
 
 
 def test_perf_preflight_presplit_counts_fragments_not_one():
@@ -5390,6 +5505,73 @@ def test_no_fallback_single_gets_ceil_kill_budget():
         shutil.rmtree(d, ignore_errors=True)
 
 
+def test_presplit_cite_floor_is_not_masked_by_batch_budget():
+    """H2160: the per-card fail-solo citation trigger must NOT be suppressed by a LARGER
+    batch budget.
+
+    `PRESPLIT_SOLO_CITE_FLOOR` (40) encodes a per-CARD fact — a card carrying >=40
+    citation-units cannot be emitted whole inside any acceptable wall-clock ceiling.
+    `OUTPUT_BUDGET` (90) encodes an unrelated per-BATCH fact — how many citation-units
+    to pack into one call. Combining them as `max(budget, floor)` let the larger BATCH
+    number mask the per-card one, so with the default budget the floor was inert by
+    construction ("For OUTPUT_BUDGET >= 40 (default 90) nothing changes").
+
+    That is the medium50 `b0` defect measured 02-08-2026: w1's three cards score 80 / 79 /
+    75 citation-units — all above the 40 fail-solo floor, all below the 90 batch budget —
+    so `presplit_keys` came out `[]`, every card was attempted whole, and every whole-card
+    call was abandoned at exactly `KILL_CEIL_MS` (180 044 ms under the old ceiling, then
+    300 073 ms under the new one). A card is not made easier to emit whole by raising the
+    number of cards you would have liked to batch beside it.
+
+    RED before the fix: a 50-<ls> card under the default budget 90 does not presplit.
+    """
+    import re as _re
+    import gen_opt_harness2 as gh
+    senses = ''.join(
+        '— %d〉 {%%Bedeutung %d%%} %s.\n' % (i + 1, i + 1,
+                                                 ' '.join('<ls>Ref. %d.%d</ls>' % (i + 1, j + 1)
+                                                          for j in range(10)))
+        for i in range(5))
+    raw = ('=== LAYER: PW — Böhtlingk kürzere Fassung ===\n\n'
+           '{#word#}¦ <lex>Adj.</lex>\n' + senses)
+    key = 'zz~~h0_zz_pw'
+    d = tempfile.mkdtemp()
+    saved_ip, saved_ob = gh.input_paths, gh.OUTPUT_BUDGET
+    saved_floor = gh.PRESPLIT_SOLO_CITE_FLOOR
+    try:
+        rp = os.path.join(d, key + '.raw.txt')
+        pp = os.path.join(d, key + '.portrait.json')
+        with open(rp, 'w', encoding='utf-8') as f:
+            f.write(raw)
+        with open(pp, 'w', encoding='utf-8') as f:
+            f.write('[]')
+        gh.input_paths = lambda k, input_dir=None: (rp, pp) if k == key else saved_ip(k)
+        # The medium50 shape: 51 citation-units — above the 40 fail-solo floor, below the
+        # 90 batch budget. 5 senses keeps it under SENSE_PRESPLIT_BUDGET (20), so this
+        # isolates the CITATION trigger from the orthogonal sense-density one.
+        gh.OUTPUT_BUDGET = 90
+        gh.PRESPLIT_SOLO_CITE_FLOOR = 40
+        js, _b = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+        presplit = json.loads(_re.search(r'^const PRESPLIT = (.*)$', js, _re.M).group(1))
+        if key not in presplit:
+            fail('a card above the per-card fail-solo cite floor (40) must presplit even when '
+                 'the BATCH budget (90) is larger — the batch number must not mask the per-card '
+                 'one (H2160 medium50 b0); got PRESPLIT=%r' % presplit)
+        # The floor must still be load-bearing in the other direction: raise it above the
+        # card and the SAME card translates whole.
+        gh.PRESPLIT_SOLO_CITE_FLOOR = 200
+        js2, _b2 = gh.build('zz', [key], None, 12000, nominal=True, grammar_on=False, tm_path=None)
+        presplit2 = json.loads(_re.search(r'^const PRESPLIT = (.*)$', js2, _re.M).group(1))
+        if key in presplit2:
+            fail('with the fail-solo floor raised above the card, it must NOT presplit — proves '
+                 'the trigger is driven by the per-card floor; got PRESPLIT=%r' % presplit2)
+    finally:
+        gh.input_paths = saved_ip
+        gh.OUTPUT_BUDGET = saved_ob
+        gh.PRESPLIT_SOLO_CITE_FLOOR = saved_floor
+        shutil.rmtree(d, ignore_errors=True)
+
+
 def test_presplit_cite_floor_and_single_ceil():
     """H255/H823: the CITATION presplit trigger must not misfire under --output-budget=1.
     With a 1-card batch budget, (1+<ls>) > budget fires on ANY citation-bearing card, force-
@@ -5577,16 +5759,22 @@ def test_presplit_card_uses_amortized_grouping():
 
 
 def test_kill_gate_recalibrated_envelope():
-    """H189 (MG: '>~60s per subcard suspicious; >3 min unacceptable'): the kill envelope
-    must be the tightened one — floor <= 45s, ceil <= 180s (3 min) — never a regression
-    back to the 2 min floor / 8 min ceiling that let pril10_w1 fragments run 6.5 min."""
+    """H189: the kill envelope must stay tightened — floor <= 45s — and must never regress
+    to the 2 min floor / 8 min (480000) ceiling that let pril10_w1 fragments run 6.5 min.
+
+    The ceiling bound was 180000 ('>3 min unacceptable', MG). Relaxed to 300000 on
+    02-08-2026 by explicit human ruling (issue #983) after measurement showed the 3 min
+    ceiling was itself the reason a paid window returned zero cards: 12 of 16 calls died at
+    exactly 180 04x-180 23x ms, and it was not tunable from below because heal groups were
+    already at ONE fragment. The anti-regression intent is unchanged and still enforced --
+    480000 remains refused, and 300000 stays below the 390 s agent that prompted H189."""
     import gen_opt_harness2 as gh
     if gh.KILL_FLOOR_MS > 45000:
         fail('KILL_FLOOR_MS must be <= 45000 (was 120000) so a tiny subcard is killed '
              'near MG\'s ~60s suspicion line; got %d' % gh.KILL_FLOOR_MS)
-    if gh.KILL_CEIL_MS > 180000:
-        fail('KILL_CEIL_MS must be <= 180000 (3 min hard ceiling, was 480000); got %d'
-             % gh.KILL_CEIL_MS)
+    if gh.KILL_CEIL_MS > 300000:
+        fail('KILL_CEIL_MS must be <= 300000 (5 min, #983; was 180000, before that 480000); '
+             'got %d' % gh.KILL_CEIL_MS)
 
 
 def test_agent_budget_plan_separates_translate_and_heal_pools():
@@ -5871,6 +6059,76 @@ def test_partial_cards_requeue_and_stay_out_of_clean_sample():
     if sample['clean_sample_keys'] != ['clean']:
         fail('partial keys leaked into clean judge candidates: %r' %
              sample['clean_sample_keys'])
+
+
+def test_h2095_structured_error_does_not_crash_the_audit():
+    """H2095: a structured `row['error']` must not crash the transient-vs-defect split.
+
+    H2089 changed a bare null card's error from a plain string to
+    `{'failure_REASON': 'null_card_no_card_object', ...}`, but every consumer does string
+    matching — `classify_harness_requeues` calls `.startswith('fidelity-reject')` on it. Master
+    went red with `AttributeError: 'dict' object has no attribute 'startswith'`, and the real
+    consequence is worse than a failing test: the audit crashes on ANY window containing a bare
+    null card, so no window gets a transient/defect split.
+    """
+    import audit_window as aw
+
+    if aw.failure_reason_text({'failure_REASON': 'null_card_no_card_object'}) != \
+            'null_card_no_card_object':
+        fail('structured error did not normalise to its failure_REASON')
+    if aw.failure_reason_text('fidelity-reject: <ls> 1/2') != 'fidelity-reject: <ls> 1/2':
+        fail('a plain-string error must pass through untouched')
+    # an unrecognised dict must still yield TEXT, never explode
+    odd = aw.failure_reason_text({'unexpected': 1})
+    if not isinstance(odd, str):
+        fail('unrecognised structured error did not normalise to text: %r' % (odd,))
+
+    # end to end: the exact H2089 shape must flow through collect_harness_quality into
+    # classify_harness_requeues without raising, and must still be classifiable
+    rows = [
+        {'key': 'nullish', 'card': None,
+         'error': {'failure_REASON': 'null_card_no_card_object'}},
+        {'key': 'fid', 'card': None, 'error': 'fidelity-reject: <ls> 1/2'},
+    ]
+    partial_cards, failure_reasons = aw.collect_harness_quality(rows)
+    if not isinstance(failure_reasons['nullish'], str):
+        fail('structured error survived into failure_reasons as a non-string: %r'
+             % (failure_reasons['nullish'],))
+    transient, defect, fidelity_nulls = aw.classify_harness_requeues(
+        ['nullish', 'fid'], partial_cards, set(), failure_reasons)
+    if fidelity_nulls != {'fid'}:
+        fail('fidelity detection broke on the normalised reasons: %r' % (fidelity_nulls,))
+    if 'nullish' not in transient or 'nullish' in defect:
+        fail('a bare null card must stay transient: transient=%r defect=%r'
+             % (sorted(transient), sorted(defect)))
+
+
+def test_h2095_956_en_absence_flags_exempt_infra_partial():
+    """H2095 / #956: the EN twin of #947, and the answer to the question #947 left open.
+
+    The EN auditor has no partial-card model and derives defects from HARD content flags. Six of
+    the eleven fire on ABSENCE (MISSING-EN, MISSING-SENSE, LS-LOSS, SAN-LOSS, AB-LOSS, IS-LOSS) —
+    SAN-LOSS being literally the gate named in #947's RU harm — so a card left incomplete by a dead
+    CALL trips them and lands in the same H304 fsha denylist. The other five fire on what the card
+    DOES say and must stay defects even on a partial card.
+    """
+    import audit_window_en as en
+
+    for flag in ('MISSING-EN', 'MISSING-SENSE', 'LS-LOSS', 'SAN-LOSS', 'AB-LOSS', 'IS-LOSS'):
+        if not (en.is_hard(flag) and en.is_absence_hard(flag)):
+            fail('%s must be both HARD and absence-bearing' % flag)
+    for flag in ('STRANDED-ANCHOR', 'ANCHOR-LEAK', 'ANCHOR-MISMATCH', 'SENSE-DUPE', 'DUP'):
+        if not en.is_hard(flag):
+            fail('%s must stay HARD' % flag)
+        if en.is_absence_hard(flag):
+            fail('%s fires on content, not absence — exempting it would hide a real defect' % flag)
+    # the split must cover the HARD set exactly, so a new HARD flag cannot silently default
+    # into the exempt half
+    if not set(en.ABSENCE_HARD) <= set(en.HARD):
+        fail('ABSENCE_HARD drifted outside HARD: %r' % (en.ABSENCE_HARD,))
+    # suffixed forms (the real flags carry "(...)" detail) classify identically
+    if not en.is_absence_hard('SAN-LOSS(3 spans)') or en.is_absence_hard('DUP(x2)'):
+        fail('suffixed flag classification drifted')
 
 
 def test_h2077_947_infra_partial_is_not_a_content_defect():
@@ -6260,7 +6518,7 @@ def test_defect_fragment_denylist_round_trip():
     rfa.INP = inp
     try:
         n, nf = rfa.append_tm_denylist('h304root', [key], 'defect', lang='ru',
-                                       fsha_file=fsha_file)
+                                       fsha_file=fsha_file, path=deny_path)
     finally:
         rfa.translation_memory.denylist_path = old_dp
         rfa.INP = old_inp
@@ -6293,9 +6551,136 @@ def test_defect_fragment_denylist_round_trip():
     if fsha_good not in cache:
         fail('clean fragment wrongly dropped by the denylist')
     # transient requeues must not denylist anything
-    n, nf = rfa.append_tm_denylist('h304root', [], 'transient', lang='ru')
+    n, nf = rfa.append_tm_denylist('h304root', [], 'transient', lang='ru', path=deny_path)
     if (n, nf) != (0, 0):
         fail('transient requeue must never append denylist rows')
+
+
+def test_opt7_last_audit_tm_refuse_without_no_tm():
+    """H2228 / OPT-7 / FINDINGS §31 residual: last-audit defect outcome stamps the denylist
+    so a default --tm=auto path (no operator --no-tm) still refuses the failed hash and
+    forces real re-translate work. gam-class synthetic fixture:
+
+      * defect key has a TM hit that would otherwise make agent_expected_after_tm=0
+      * write_reports(--write-requeue) stamps denylist from requeue_defect
+      * load_tm then refuses the failed address; clean held-out key still serves
+      * crashed audit does NOT stamp (blast-radius control)
+      * false-invalidation: clean key never denylisted
+    """
+    import translation_memory as tm
+    from window_reports import write_reports, _stamp_last_audit_denylist
+    tmp = tempfile.mkdtemp(prefix='pwg_audit_ephemeral_opt7_')
+    inp = os.path.join(tmp, 'input')
+    os.makedirs(inp)
+    # gam-class: one defect key + one clean key (held-out clean TM must survive)
+    defect_key = 'gam~~h0_zz_pw03'
+    clean_key = 'gam~~h0_zz_clean'
+    for key, body in ((defect_key, 'gam flagged defect raw COVERAGE-LOW'),
+                      (clean_key, 'gam clean held-out raw')):
+        with open(os.path.join(inp, key + '.raw.txt'), 'w', encoding='utf-8') as f:
+            f.write(body)
+    defect_addr = 'ru:%s' % sha256(os.path.join(inp, defect_key + '.raw.txt'))
+    clean_addr = 'ru:%s' % sha256(os.path.join(inp, clean_key + '.raw.txt'))
+    fsha_bad = tm.frag_address('ru', 'gam defect fragment body')
+    fsha_good = tm.frag_address('ru', 'gam clean fragment body')
+
+    # Pre-stamp synthetic TM as if a prior run cached both (the §31 trap: defect is cached)
+    card_tm = os.path.join(tmp, 'translation_memory.ru.json')
+    with open(card_tm, 'w', encoding='utf-8') as f:
+        json.dump({'schema': tm.CARD_SCHEMA, 'lang': 'ru', 'entries': {
+            defect_addr: {
+                'id': defect_addr,
+                'card': {'records': [{'senses': [
+                    {'russian': 'cached defect %d' % i} for i in range(47)]}]},
+                'trust_level': tm.TRUST_MACHINE,
+                'gate_status': 'machine_gated',
+                'reuse_policy': 'auto_exact',
+            },
+            clean_addr: {
+                'id': clean_addr,
+                'card': {'records': [{'senses': [{'russian': 'cached clean'}]}]},
+                'trust_level': tm.TRUST_MACHINE,
+                'gate_status': 'machine_gated',
+                'reuse_policy': 'auto_exact',
+            },
+        }}, f, ensure_ascii=False)
+    # Without denylist both serve — proves the trap surface exists for this fixture
+    before = tm.load_tm('ru', card_tm, denylist=os.path.join(tmp, 'empty_deny.jsonl'))
+    if defect_addr not in before or clean_addr not in before:
+        fail('fixture TM must serve both addresses before last-audit stamp')
+
+    old_inp = os.environ.get('PWG_INPUT_DIR')
+    os.environ['PWG_INPUT_DIR'] = inp
+    try:
+        report = {
+            'workflow': 'wf_output_gam_opt7_fixture.json',
+            'root': 'gam',
+            'lang': 'ru',
+            'keys': [defect_key, clean_key],
+            'requeue': [defect_key],
+            'requeue_transient': [],
+            'requeue_defect': [defect_key],
+            'requeue_defect_fshas': [fsha_bad],
+            'crashed': [],
+            'gates': {},
+            'state': 'needs_requeue',
+            'null_cards': [],
+            'partial_cards': {},
+            'failure_reasons': {},
+        }
+        write_reports(report, True, out_dir=tmp)
+        stamp = report.get('tm_denylist_stamped') or {}
+        if not stamp.get('stamped'):
+            fail('write_reports must stamp last-audit denylist for defect keys: %r' % stamp)
+        if stamp.get('cards', 0) < 1:
+            fail('expected ≥1 card denylist row from defect raw: %r' % stamp)
+        deny_path = stamp.get('denylist')
+        if not deny_path or not os.path.exists(deny_path):
+            fail('local last-audit denylist missing under ephemeral out_dir')
+        after = tm.load_tm('ru', card_tm, denylist=deny_path)
+        if defect_addr in after:
+            fail('last-audit defect address still served by load_tm (OPT-7 refuse failed)')
+        if clean_addr not in after:
+            fail('clean held-out TM falsely invalidated by last-audit stamp')
+        # Fragment lane: denylisted fsha refused; clean fsha still live
+        senses = [{'tag': '1', 'german': 'x', 'russian': 'y'}]
+        sidecar = os.path.join(tmp, 'translation_memory.frag.ru.jsonl')
+        with open(sidecar, 'w', encoding='utf-8') as f:
+            for fsha in (fsha_good, fsha_bad):
+                f.write(json.dumps({'schema': tm.FRAG_SCHEMA_V2, 'fsha': fsha,
+                                    'senses': senses, 'owners': [['x', '']]}) + '\n')
+        frag = tm.load_frag_tm('ru', sidecar, denylist=deny_path)
+        if fsha_bad in frag:
+            fail('last-audit defect fsha still served by load_frag_tm')
+        if fsha_good not in frag:
+            fail('clean fragment falsely invalidated')
+        # Default requeue path without operator --no-tm still forces real work for the
+        # defect key: TM miss on the failed hash means agent_expected cannot be 0 solely
+        # from that hit (simulate the gen_opt address lookup).
+        hit_after_stamp = after.get(defect_addr)
+        if hit_after_stamp is not None:
+            fail('default-path TM hit must be None for last-audit-failed hash')
+        # agent work residual: 1 defect key refused → non-zero real translate path
+        agent_expected_after_tm = 0 if hit_after_stamp else 1
+        if agent_expected_after_tm < 1:
+            fail('gam-class fixture must prove non-zero real translate path after stamp')
+        # Crashed audit must not stamp (false-invalidation / blast-radius control)
+        crash_report = {
+            'root': 'gam', 'lang': 'ru', 'keys': [clean_key],
+            'requeue': [clean_key], 'requeue_defect': [clean_key],
+            'requeue_defect_fshas': [], 'crashed': ['coverage'],
+            'gates': {}, 'state': 'blocked',
+        }
+        crash_stamp = _stamp_last_audit_denylist(crash_report, tmp)
+        if crash_stamp.get('stamped'):
+            fail('crashed audit must not stamp denylist: %r' % crash_stamp)
+        if 'false_invalidation_controls' not in (stamp or {}):
+            fail('stamp status must document false-invalidation controls')
+    finally:
+        if old_inp is None:
+            os.environ.pop('PWG_INPUT_DIR', None)
+        else:
+            os.environ['PWG_INPUT_DIR'] = old_inp
 
 
 def test_h1386_p3d_p3e_run_py_inproc_exit_semantics():
@@ -6464,6 +6849,103 @@ def test_ledger_stamps_gen_model():
     row = ledger_row_for(bare)
     if row.get('gen_model') is not None:
         fail('bare-run ledger gen_model should be None, got %r' % row.get('gen_model'))
+
+
+def test_ledger_stamps_host_profile_b8():
+    """H2231 B8: every ledger row stamps gen_model + host + profile keys.
+
+    - gen_model from workflow_meta.gen_model (and execution.model_identifier fallback)
+    - profile from execution.profile_slot / source_profile / PWG_PROFILE_SLOT
+    - host from PWG_HOST (or COMPUTERNAME / hostname)
+    Keys always present; null is honest when unknown.
+    """
+    from window_reports import (
+        write_reports, resolve_gen_model, resolve_host, resolve_profile,
+    )
+    base = {'null_cards': [], 'requeue': [], 'crashed': [], 'gates': {},
+            'glue': None, 'collect': {}, 'requeue_transient': [], 'requeue_defect': [],
+            'judge_sample': {'keys': [], 'sample_count': 0, 'seed': None,
+                             'clean_key_count': 0}}
+
+    def ledger_row_for(report, env=None):
+        tmp = tempfile.mkdtemp()
+        # resolve_* consult os.environ; set/restore for host/profile env tests
+        saved = {}
+        if env is not None:
+            for k, v in env.items():
+                saved[k] = os.environ.get(k)
+                if v is None:
+                    os.environ.pop(k, None)
+                else:
+                    os.environ[k] = v
+        try:
+            write_reports(report, True, out_dir=tmp)
+            ledger = os.path.join(tmp, 'window_ledger.jsonl')
+            rows = [json.loads(ln) for ln in open(ledger, encoding='utf-8') if ln.strip()]
+            if len(rows) != 1:
+                fail('expected exactly one ledger row, got %d' % len(rows))
+            return rows[0]
+        finally:
+            for k, old in saved.items():
+                if old is None:
+                    os.environ.pop(k, None)
+                else:
+                    os.environ[k] = old
+
+    # Full multi-lane tags from workflow_meta.execution
+    stamped = dict(
+        base, workflow='wf.json', root='h2231lane', keys=['k1'],
+        workflow_meta={
+            'gen_model': 'claude-sonnet-5',
+            'execution': {
+                'profile_slot': 'c4',
+                'model_identifier': 'claude-sonnet-5',
+            },
+        },
+    )
+    row = ledger_row_for(stamped, env={'PWG_HOST': 'desk-a'})
+    for key in ('gen_model', 'host', 'profile'):
+        if key not in row:
+            fail('ledger row missing %s key entirely' % key)
+    if row['gen_model'] != 'claude-sonnet-5':
+        fail('gen_model mismatch: %r' % row.get('gen_model'))
+    if row['host'] != 'desk-a':
+        fail('host mismatch: %r' % row.get('host'))
+    if row['profile'] != 'c4':
+        fail('profile mismatch: %r' % row.get('profile'))
+
+    # model_identifier fallback when gen_model absent
+    via_exec = dict(
+        base, workflow='wf.json', root='h2231exec', keys=['k1'],
+        workflow_meta={'execution': {'model_identifier': 'claude-fable-5',
+                                     'profile_slot': 'c2'}},
+    )
+    row = ledger_row_for(via_exec, env={'PWG_HOST': 'desk-b'})
+    if row.get('gen_model') != 'claude-fable-5':
+        fail('execution.model_identifier fallback failed: %r' % row.get('gen_model'))
+    if row.get('profile') != 'c2':
+        fail('profile from execution.profile_slot failed: %r' % row.get('profile'))
+
+    # source_profile (legacy Max Workflow) as profile fallback
+    via_sp = dict(
+        base, workflow='wf.json', root='h2231sp', keys=['k1'],
+        workflow_meta={'source_profile': 'max-legacy'},
+    )
+    row = ledger_row_for(via_sp, env={'PWG_HOST': None, 'PWG_PROFILE_SLOT': None,
+                                      'PWG_PROFILE': None})
+    if row.get('profile') != 'max-legacy':
+        fail('source_profile fallback failed: %r' % row.get('profile'))
+
+    # resolve_* pure helpers (no write path)
+    st = {'workflow_meta': {'gen_model': 'x'}}
+    if resolve_gen_model(st) != 'x':
+        fail('resolve_gen_model broken')
+    if resolve_host({'host': 'h1'}, env={}) != 'h1':
+        fail('resolve_host explicit broken')
+    if resolve_host({}, env={'PWG_HOST': 'env-host'}) != 'env-host':
+        fail('resolve_host env broken')
+    if resolve_profile({}, env={'PWG_PROFILE_SLOT': 'c5'}) != 'c5':
+        fail('resolve_profile env broken')
 
 
 def test_h1553_wall_clock_auto_derive():
@@ -8340,6 +8822,219 @@ def test_pwg_mask_gloss_lang_g1():
         fail('G1 residue missed translated Wilson EN: %r' % translated)
 
 
+def test_h2245_canary_manifest_builder():
+    """H2245: the canary manifest builder's output shape is PINNED, offline.
+
+    `canary_manifest_build.py` (H2174) made the canary re-runnable, but nothing pinned what
+    it emits — and the canary's diagnostic value lives entirely in properties a schema change
+    could rot silently (ls==0/sk==0 with 3 senses; provenance synthetic_control; a
+    live-computed config_dir_fingerprint). Note `validate_manifest` alone does NOT catch a
+    provenance flip to `real` — 'real' is a legal class — so that guard has to live here.
+
+    Delegated to the sibling selftest, which builds against a scratch profile dir and diffs
+    the result against the committed golden artifact. Spends nothing.
+    """
+    import canary_manifest_build_selftest
+    canary_manifest_build_selftest.selftest()
+
+
+def test_h2173_g5_malformed_result_rows_are_accounted():
+    """G5 (H2173, audit S1-3): a result row that is not a dict, or that carries no usable
+    `key`, used to hit a bare `continue` — counted in NEITHER `keys` NOR `nulls`. The window
+    was billed for that call and the card was invisible to every accounting surface. Pin
+    that such rows now land as FAILURES with a synthetic REASON, that the original row
+    survives as evidence, and that well-formed rows are untouched."""
+    import workflow_payload as wp
+    payload = {'meta': {'root': 'h2173'}, 'results': [
+        {'key': 'good', 'card': {'senses': [1]}},      # clean
+        {'key': 'nullcard', 'card': None},             # H2089 null-card class
+        {'card': {'senses': [1]}},                     # G5: keyed nowhere, but PAID
+        {'key': '', 'card': None},                     # G5: falsy key
+        'not-a-dict',                                  # G5: not an object at all
+    ]}
+    with tempfile.TemporaryDirectory() as tmp:
+        path = os.path.join(tmp, 'wf.json')
+        with open(path, 'w', encoding='utf-8') as fh:
+            json.dump(payload, fh)
+        _p, _meta, results, keys, nulls = wp.workflow_payload(path)
+
+    if len(keys) != 5:
+        fail('G5: every billed row must be accounted in `keys` (got %d of 5: %r)'
+             % (len(keys), keys))
+    if len(nulls) != 4:
+        fail('G5: the three malformed rows + the null card must all be failures '
+             '(got %d of 4: %r)' % (len(nulls), nulls))
+    if 'good' in nulls:
+        fail('G5: a clean keyed card must NOT be dragged into nulls')
+    malformed = [k for k in keys if wp.is_malformed_row_key(k)]
+    if len(malformed) != 3:
+        fail('G5: expected 3 synthetic malformed keys, got %r' % malformed)
+    if len(set(keys)) != len(keys):
+        fail('G5: synthetic keys must be unique per row index (got %r)' % keys)
+    for key in malformed:
+        if key not in nulls:
+            fail('G5: malformed row %s must also be a null/failure' % key)
+    # The rewritten rows carry a reason AND the original evidence.
+    stamped = [r for r in results if isinstance(r, dict) and r.get('malformed_result_row')]
+    if len(stamped) != 3:
+        fail('G5: `results` must carry the 3 rewritten rows (got %d)' % len(stamped))
+    reasons = {r['failure_REASON'] for r in stamped}
+    if reasons != {wp.MALFORMED_MISSING_KEY, wp.MALFORMED_NOT_A_DICT}:
+        fail('G5: both malformed classes need distinct REASONs (got %r)' % reasons)
+    for row in stamped:
+        if not row.get('malformed_row_raw'):
+            fail('G5: the original row must survive as evidence (malformed_row_raw)')
+        if not (row.get('error') or {}).get('failure_REASON'):
+            fail('G5: a malformed row needs the structured error shape audits already read')
+    if results[0].get('malformed_result_row'):
+        fail('G5: a well-formed row must not be rewritten')
+    print('  G5: 3 unaccountable rows now bill as failures (keys 5/5, nulls 4/4)')
+
+
+def test_h2173_g8_promote_refuses_route_foreign_artifact():
+    """G8 (H2173, audit F-1): promotion checked `execution_route` for is-a-nonblank-string
+    only, so a v2-SHAPED artifact from any other route (the retired Max-Workflow lane, a
+    hand-built envelope) could enter the canonical store. Pin that the value itself is now
+    compared against execution_contract.HEADLESS_ROUTE — and that a correct route still gets
+    PAST this gate, so the check cannot be passing by refusing everything."""
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    import promote_final_cards as pfc
+    import execution_contract
+
+    def entry(route):
+        return {'card': {}, 'meta': {
+            'execution_manifest_schema': 'pwg.headless_execution_manifest.v2',
+            'execution': {'profile_slot': 'c4', 'config_dir_fingerprint': 'abc',
+                          'execution_route': route, 'executor_lane': 'headless',
+                          'validation_method': 'schema', 'model_identifier': 'claude-sonnet-5'}}}
+
+    for foreign in ('workflow', 'max-workflow', 'CLAUDE-CLI-HEADLESS', ' '.join(
+            [execution_contract.HEADLESS_ROUTE, 'x'])):
+        try:
+            pfc.validate_promotion_entry('k1', entry(foreign))
+        except pfc.PromotionContractError as exc:
+            if 'execution_route' not in str(exc):
+                fail('G8: a route refusal must name execution_route (got %s)' % exc)
+        else:
+            fail('G8: route %r must not be promotable' % foreign)
+    # Positive control: the real route passes the ROUTE gate and dies later, on card schema.
+    try:
+        pfc.validate_promotion_entry('k1', entry(execution_contract.HEADLESS_ROUTE))
+    except pfc.PromotionContractError as exc:
+        if 'execution_route' in str(exc):
+            fail('G8: the headless route must not be refused by the route gate (%s)' % exc)
+    else:
+        fail('G8: an empty card should still fail promotion on schema grounds')
+    print('  G8: promote compares execution_route to the contract, not just its type')
+
+
+def test_h2173_g10_classify_run_reads_the_live_lane():
+    """G10 (H2173, audit F-B7): classify_run was written against the JS harness summary and
+    never re-read after the live route became the headless CLI. `heal_calls`, `agents_spent`
+    and `budget_kill_switch_tripped` do not exist in headless_worker's summary, so EVERY live
+    window answered 'unclassifiable' and the budget trip always read False. Pin that both
+    lane vocabularies now classify, and that the headless trip is actually seen."""
+    import classify_run as cr
+    # Exactly the shape headless_worker.py builds (no heal_calls, no agents_spent, no boolean).
+    headless = {'cards': 4, 'ok': 4, 'null': 0, 'null_keys': [], 'partial_keys': [],
+                'translate_agents_spent': 6, 'heal_agents_spent': 2, 'budget_stops': 0,
+                'kill_timeouts': 0, 'conn_errors': 0}
+    verdict, _reasons, signals = cr.classify(dict(headless))
+    if verdict == 'unclassifiable':
+        fail('G10: a live headless summary must be classifiable, not refused')
+    if verdict != 'clean':
+        fail('G10: an all-ok headless window must classify clean; got %r' % verdict)
+    if signals['agents_spent'] != 8:
+        fail('G10: agents_spent must sum the two headless pools (got %r)'
+             % signals['agents_spent'])
+    if signals['infra_kill_threshold'] != max(3, math.ceil(0.25 * 8)):
+        fail('G10: the kill threshold must derive from the REAL agent count, not 0')
+    # A headless budget stop IS the kill switch firing.
+    tripped = dict(headless, budget_stops=3, null_keys=['a'])
+    verdict, _reasons, signals = cr.classify(tripped)
+    if not signals['budget_kill_switch_tripped']:
+        fail('G10: budget_stops>0 must read as a budget trip on the headless lane')
+    if verdict != 'code-failure':
+        fail('G10: a quiet-network trip with nulls is a code-failure; got %r' % verdict)
+    # The JS vocabulary must keep winning when it is present — no silent overwrite.
+    js = dict(headless, heal_calls=99, agents_spent=42, budget_kill_switch_tripped=False,
+              budget_stops=7)
+    _v, _r, signals = cr.classify(js)
+    if signals['agents_spent'] != 42 or signals['budget_kill_switch_tripped']:
+        fail('G10: an explicit JS-lane value must never be overwritten by a derived one')
+    print('  G10: classify_run adjudicates the headless lane (and still the JS lane)')
+
+
+def test_h2173_g10_probe_gate_defaults_and_live_boundary():
+    """G10 (H2173, audit F-B4): `verdict_for`'s default policy and the CLI `--policy` default
+    were frozen at production_v1 while CURRENT_POLICY advanced to v2 and then v3 — the live
+    lane produced receipts naming a retired gate, and v3's api ceiling could never fire
+    because nothing passed api_ms. Pin the defaults to CURRENT_POLICY and put a boundary test
+    on the LIVE ceilings, derived from the policy table so a future bump cannot leave this
+    test asserting a dead number."""
+    import probe_log
+    import inspect
+    spec = inspect.signature(probe_log.verdict_for)
+    if spec.parameters['policy'].default != probe_log.CURRENT_POLICY:
+        fail('G10: verdict_for must default to CURRENT_POLICY (got %r)'
+             % spec.parameters['policy'].default)
+    live = probe_log.POLICIES[probe_log.CURRENT_POLICY]
+    ceil_ms = live['latency_ceil_ms']
+    floor = live['payload_floor_bytes']
+    ok = dict(conn_errors=0, payload_bytes=floor, kind='warmup', schema_valid=True)
+    # Boundary: strictly under the live ceiling is GO, exactly at it is NO-GO.
+    verdict, reason = probe_log.verdict_for(ceil_ms - 1, **ok)
+    if verdict != 'GO':
+        fail('G10: %d ms must pass the live ceiling %d (%s)' % (ceil_ms - 1, ceil_ms, reason))
+    verdict, _reason = probe_log.verdict_for(ceil_ms, **ok)
+    if verdict != 'NO-GO':
+        fail('G10: %d ms must NOT pass a ceiling of %d' % (ceil_ms, ceil_ms))
+    # The api ceiling is a SECOND, independent fail condition when the policy declares one.
+    api_ceil = live.get('api_ceil_ms')
+    if api_ceil is not None:
+        verdict, reason = probe_log.verdict_for(ceil_ms - 1, api_ms=api_ceil, **ok)
+        if verdict != 'NO-GO' or 'duration_api_ms' not in reason:
+            fail('G10: a route-time breach must fail even when wall is within ceiling')
+        verdict, _r = probe_log.verdict_for(ceil_ms - 1, api_ms=api_ceil - 1, **ok)
+        if verdict != 'GO':
+            fail('G10: a healthy route under both ceilings must pass')
+    # The CLI must be able to supply api_ms at all — the gate was unreachable without it.
+    parser_src = inspect.getsource(probe_log)
+    if "'--api-ms'" not in parser_src:
+        fail('G10: probe_log CLI must expose --api-ms or the v3 route guard cannot fire')
+    print('  G10: probe defaults track %s; boundary pinned at %d ms wall / %s ms api'
+          % (probe_log.CURRENT_POLICY, ceil_ms, api_ceil))
+
+
+def test_h2173_g10_declared_budgets_are_read_or_labelled():
+    """G10 (H2173, audit F-B7/F-B5): two halves of the same defect class — a budget the
+    executor READS that the emitter never wrote (`budgets.max_agents`, so `max_total_agents`
+    was None on every live window), and a state field the operator SETS that enforcement
+    ignored (`state['translation_limit']`, while `preparation_limit` two frames down already
+    honoured state)."""
+    import gen_opt_harness2  # noqa: F401 -- import guard only; the manifest block is source-pinned
+    import coordinator
+    src = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                            'gen_opt_harness2.py'), encoding='utf-8').read()
+    budgets_block = src.split("'budgets': {", 1)[1].split('},', 1)[0]
+    for key in ('max_agents', 'max_translate_agents', 'max_heal_agents', 'timeout_ceil_ms'):
+        if "'%s'" % key not in budgets_block:
+            fail('G10: the execution manifest budgets block must carry %r — headless_worker '
+                 'reads it' % key)
+    # F-B5: the standard-mode runtime cap must honour state, exactly as preparation does.
+    leases = [{'id': 'l1', 'kind': 'verb', 'state': 'prepared'},
+              {'id': 'l2', 'kind': 'verb', 'state': 'prepared'}]
+    state = {'leases': leases, 'translation_limit': 1, 'runtime_mode': 'standard'}
+    try:
+        coordinator.begin_run_leases(state, ['l1', 'l2'], mode='standard')
+    except SystemExit as exc:
+        if 'runtime cap reached (1)' not in str(exc):
+            fail('G10: the cap must report the STATE limit, not the constant (got %s)' % exc)
+    else:
+        fail('G10: state["translation_limit"]=1 must refuse a 2-lease standard run')
+    print('  G10: manifest budgets feed the executor; translation_limit binds from state')
+
+
 def main():
     tests = [
         test_restore_covers_every_promoted_field,
@@ -8370,6 +9065,8 @@ def main():
         test_degenerate_passthrough_rejects_glosses,
         test_perf_preflight_small_tm_and_no_tm,
         test_perf_preflight_dense_presplit,
+        test_presplit_group_call_weight_caps_portrait_plus_bytes_h2248,
+        test_presplit_group_call_weight_zero_allowance_degrades_to_one_per_call_h2248,
         test_perf_preflight_presplit_counts_fragments_not_one,
         test_perf_preflight_degenerate_zero_agent,
         test_perf_preflight_multi_root_matrix_and_order,
@@ -8410,6 +9107,7 @@ def main():
         test_kill_gate_wired,
         test_no_fallback_single_gets_ceil_kill_budget,
         test_presplit_cite_floor_and_single_ceil,
+        test_presplit_cite_floor_is_not_masked_by_batch_budget,
         test_nominal_key_echo_tolerance_scoped,
         test_selfheal_no_fallback_preserves_upstream_reason,
         test_group_by_budget_count_cap,
@@ -8461,6 +9159,7 @@ def main():
         test_h1651_wrapper_defect_gate,
         test_h1651_live_gate_cyrillic_and_guillemet,
         test_h1702_boundary_wrap_gate,
+        test_h2144_d4b_bracket_normalize,
         test_semantic_review_prioritizer,
         test_noisy_source_type_not_requeue,
         test_report_only_risks_never_requeue,
@@ -8492,8 +9191,10 @@ def main():
         test_lang_parity_hash_crlf_independent,
         test_frag_groups_presplit_parity,
         test_defect_fragment_denylist_round_trip,
+        test_opt7_last_audit_tm_refuse_without_no_tm,
         test_write_reports_emits_defect_fsha_file,
         test_ledger_stamps_gen_model,
+        test_ledger_stamps_host_profile_b8,
         test_h1553_wall_clock_auto_derive,
         test_h1553_stage_boundary_emit,
         test_save_merge_better_attempt_wins,
@@ -8517,7 +9218,14 @@ def main():
         test_run_telemetry_counters_returned,
         test_partial_cards_requeue_and_stay_out_of_clean_sample,
         test_h2077_947_infra_partial_is_not_a_content_defect,
+        test_h2095_956_en_absence_flags_exempt_infra_partial,
+        test_h2095_structured_error_does_not_crash_the_audit,
         test_classify_run_verdicts,
+        test_h2173_g5_malformed_result_rows_are_accounted,
+        test_h2173_g8_promote_refuses_route_foreign_artifact,
+        test_h2173_g10_classify_run_reads_the_live_lane,
+        test_h2173_g10_probe_gate_defaults_and_live_boundary,
+        test_h2173_g10_declared_budgets_are_read_or_labelled,
         test_grammar_field_restore_behavioral,
         test_threaded_gate_exception_requeues_full_window,
         test_quarantine_replace_failure_preserves_previous_destination,
@@ -8538,6 +9246,7 @@ def main():
         test_frag_prov_glob_honors_coordinator_dir_c7,
         test_pwg_mask_german_homograph_not_latin_c8,
         test_pwg_mask_gloss_lang_g1,
+        test_h2245_canary_manifest_builder,
     ]
     # Per-test isolation. This used to be a bare `for test in tests: test()`, so the FIRST
     # failure aborted the process and every later test silently never ran. That is not

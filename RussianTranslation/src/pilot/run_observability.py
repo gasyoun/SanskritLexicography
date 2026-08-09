@@ -29,6 +29,22 @@ ALLOWED = {
     # time vs time the CLI spent retrying internally (a rate-limited CLI hangs rather than
     # reporting 429, FINDINGS §270). Absent on any call that returned no envelope.
     'duration_api_ms', 'api_gap_ms',
+    # H2095 (#946): the ceiling THAT ACTUALLY JUDGED this reading. Without it a probe row cannot
+    # be read standalone — `PROBE_LATENCY_CEILING_MS` moved 30 000 -> 33 000 -> 65 000 in a single
+    # day (31-07) while the `policy` token stayed 'production_v1'. H2118 then repaired the token
+    # itself (one name per ceiling value, every gate deriving from `probe_log.POLICIES`), so
+    # `policy` is sufficient provenance again — but this key stays: it records what judged a row
+    # at the moment it was written, which no later reading of a policy table can reconstruct for
+    # rows written before the repair.
+    'latency_ceiling_ms',
+    # H2326 (#1172): a non-success probe classification is otherwise unreadable after the fact.
+    # `err_pattern` is WHICH alternative of the classifier regex matched (`429` vs `usage limit`
+    # vs `rate limit` — an account weekly cap and a per-model capacity refusal are the same
+    # `rate_limit` class but different decisions), and `raw_envelope_path` is the BASENAME of the
+    # gitignored file under the probe's `output/` that holds the provider's own text. Both are
+    # bounded: the pattern is a <=40-char slice matched by a fixed regex, the path a basename —
+    # the envelope body itself never enters the event row.
+    'err_pattern', 'raw_envelope_path',
 }
 
 # per-key relation events: kept for key<->call provenance / repeated-failure tracking, but

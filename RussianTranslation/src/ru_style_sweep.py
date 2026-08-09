@@ -343,6 +343,16 @@ def _create_verified_backup(store, backup_dir=None, stamp=None):
 
 
 def _write_rows_atomic(store, rows, initial_hash, backup_dir=None, stamp=None):
+    # H2146: hold PromoteClaim across the check/backup/replace window — the sweep's
+    # hash-race checks detect a concurrent writer, but only the lock PREVENTS one
+    # (last-writer-wins against a promote, FINDINGS §513).
+    from promote_lock import PromoteClaim
+    with PromoteClaim(store):
+        return _write_rows_atomic_locked(store, rows, initial_hash,
+                                         backup_dir=backup_dir, stamp=stamp)
+
+
+def _write_rows_atomic_locked(store, rows, initial_hash, backup_dir=None, stamp=None):
     if _file_sha256(store) != initial_hash:
         raise RuntimeError('store changed after read; refusing apply')
     backup = _create_verified_backup(store, backup_dir=backup_dir, stamp=stamp)

@@ -164,11 +164,11 @@ def run_store(dry=False):
             import shutil
             shutil.copyfile(store, bak)
             print('backup          : %s' % bak)
-        tmp = store + '.tmp'
-        with open(tmp, 'w', encoding='utf-8') as f:
-            for r in rows:
-                f.write(json.dumps(r, ensure_ascii=False) + '\n')
-        os.replace(tmp, store)
+        # H2146: locked (PromoteClaim) + unique per-run backup + atomic replace — the
+        # fixed '.tmp' rewrite was unlocked (last-writer-wins, FINDINGS §513); the
+        # one-time .h1302.bak above stays as the pre-campaign forensic copy.
+        from store_write import locked_store_rewrite
+        locked_store_rewrite(store, rows, tag='h1302conn')
         print('wrote           : %s' % store)
 
 

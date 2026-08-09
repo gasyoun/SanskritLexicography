@@ -1,6 +1,6 @@
 # Covered texts — Russian translations of record for PWG citations
 
-_Created: 19-07-2026 · Last updated: 27-07-2026_
+_Created: 19-07-2026 · Last updated: 07-08-2026_
 
 When a PWG card cites a passage of a text that **already has a published or aligned
 Russian translation** (R., MBH., ṚV., KATHĀS., …), the card's citation should **reuse
@@ -10,7 +10,7 @@ the per-text translation-of-record policy, and the lookup that wires reuse into 
 pipeline. Born from MG's 19-07-2026 vote on the first H178 bake-off sheet (register rows
 N1, N6, N9, N11, N18 —
 [H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md),
-fan-out [H1304](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1304-Fable_RussianTranslation_pwg-ru-covered-texts-citation-tm-registry_19.07.26.md)).
+fan-out [H1304](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1304-Fable_RussianTranslation_pwg-ru-covered-texts-citation-tm-registry_19.07.26.md)).
 
 > **Rights (public repo).** Every RU translation of record below (Elizarenkova, Leonov,
 > «Океан сказаний», Ignatiev, …) is **in-copyright**. This file commits **metadata,
@@ -20,6 +20,14 @@ fan-out [H1304](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1304-Fable
 > it does not re-translate a covered citation); that text is never persisted to a
 > committed or public artifact. The 166k-hallucination lesson stands: a MISS stays a
 > miss; a model never fills a missing translation-of-record from world knowledge.
+
+> **EN of record (pilot, H2334).** For ṚV. only, `lookup(..., lang="en")` reuses
+> **Griffith 1896** (public domain) from
+> [`pwg_ru/griffith_en_1896.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/griffith_en_1896.json)
+> (10,552 stanzas; location form `1.1.1` … `10.191.4`). Jamison–Brereton 2014 is a
+> secondary scholarly EN witness and is **not** wired as of-record in this pilot.
+> RU of record for ṚV. remains Elizarenkova (unchanged). Other texts (R., MBH., AV., …)
+> have no EN citation-TM path yet.
 
 ## What the data says
 
@@ -415,7 +423,7 @@ audited and requeued where a covered citation was retranslated instead of reused
    `citation_reuse` consult active, so the RU translation of record is surfaced to the
    model.
 3. **Downstream consumers.** The N17-class citation checks in
-   [H1302](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1302-Opus_RussianTranslation_pwg-ru-german-residue-sweep-reject-repair_19.07.26.md)
+   [H1302](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1302-Opus_RussianTranslation_pwg-ru-german-residue-sweep-reject-repair_19.07.26.md)
    and [H1306](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1306-Fable_RussianTranslation_pwg-ru-style-research-doublets-apresyan_19.07.26.md)
    consume this: a card whose citation should reuse an RU ToR but doesn't is a repair
    target for those sweeps.

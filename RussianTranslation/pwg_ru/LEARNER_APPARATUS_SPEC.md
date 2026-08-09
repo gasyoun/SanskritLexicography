@@ -3,7 +3,7 @@
 _Created: 06-07-2026 · Last updated: 06-07-2026_
 
 **Deliverable 4 of
-[H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md).**
+[H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md).**
 Design for a *lighter PWG for Russian students*: PWG stays the only translated
 skeleton, and the descendant dictionaries **vote** on which senses a learner needs.
 Honours MG's two corrections (05-07-2026): the learner signal is the **Russian student

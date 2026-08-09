@@ -87,6 +87,15 @@ LEASES = [
 TM_SEED_KEY = 'AKyA'            # pre-promoted into the scratch store -> gen TM auto-serves it
 NULL_KEY = 'AGAta'              # the fake model returns no card -> transient requeue
 DEFECT_KEY = 'ADikya'           # the fake model drops a sense -> coverage defect requeue
+#: The byte-identity control (H2253, #1000). Kept NEXT TO the fixture hash it is only
+#: meaningful against: a moved signature with an unchanged fixture means the PIPELINE
+#: output moved, and with a changed fixture means the INPUTS did — opposite responses.
+#: Enforced by CI via ``--expect-signature``; the prose value it replaces
+#: (``9bd2a14297``) reproduced at no commit ever tested and is recorded as an
+#: unresolved historical move in RESULTS_LOG.md, deliberately NOT re-derived here.
+EXPECTED_SIGNATURE = '586d012b3d'
+EXPECTED_FIXTURE_SHA256 = '569660c689d0659b'
+
 SEED_ROWS = 11600               # synthetic store rows ≈ live store scale (26 MB I/O realism)
 GEN_MODEL_VERSION = 'claude-sonnet-5'
 
@@ -384,16 +393,28 @@ def one_run(tag, keep=False, prepare_mode='batch', record_mode='batch'):
     # H1386 OPT: default 'batch' -- ONE coordinator process prepares the whole batch,
     # children in-process (was: 3 interpreter spawns per lease -- coordinator +
     # perf_preflight + gen). 'per-lease' preserves the pre-H1386 shape for A/B evidence.
+    # H2253 (#1000): ``--allow-over-cost`` is REQUIRED here and spends nothing. The bench
+    # is hermetic and offline — it never issues a model call — but it drives the REAL
+    # ``prepare`` path, so the production cap-and-defer cost gate judges the synthetic
+    # fixture as if it were a live window. Commit 0d1992337 (H2173 budget hygiene) tipped
+    # the fixture's estimate over the ceiling, and from that commit on the whole bench
+    # died at step 1 with `COST-GATE: nominal:ADAna over ceiling (~$10.31)` — the
+    # byte-identity control was not merely stale, it was INOPERATIVE on master. Bisected
+    # in H2253: green at 15d3b2118 (which does not contain 0d1992337), dead at every
+    # descendant of it. A synthetic 5-lease fixture is not a budget decision, and gating
+    # it on one makes the benchmark's own cost estimate a hidden input to a determinism
+    # control.
+    cost_flag = ['--allow-over-cost']
     if prepare_mode == 'per-lease':
         for lid, _case, _keys in LEASES:
             run_cli([os.path.join(HERE, 'coordinator.py'), 'prepare', lid,
                      '--profile-slot', 'bench', '--config-dir', profile_dir,
-                     '--executor-lane', 'serial-whole-card'], env)
+                     '--executor-lane', 'serial-whole-card'] + cost_flag, env)
     else:
         run_cli([os.path.join(HERE, 'coordinator.py'), 'prepare-batch']
                 + [lid for lid, _case, _keys in LEASES]
                 + ['--profile-slot', 'bench', '--config-dir', profile_dir,
-                   '--executor-lane', 'serial-whole-card'], env)
+                   '--executor-lane', 'serial-whole-card'] + cost_flag, env)
     timings['prepare'] = time.perf_counter() - t0
 
     # --- normalize: deterministic wf_output per lease + canonical reorder -------------
@@ -504,6 +525,12 @@ def main():
     ap.add_argument('--warmups', type=int, default=5)
     ap.add_argument('--runs', type=int, default=10)
     ap.add_argument('--json', help='write the machine-readable report here')
+    ap.add_argument('--expect-signature', metavar='HEX',
+                    help='fail (nonzero) unless every measured run produces exactly this '
+                         'output signature. #1000: the byte-identity control used to be a '
+                         'value quoted in prose, which nobody could re-derive — make it '
+                         'executable instead. Accepts a prefix (the runs print 10 hex '
+                         'chars), so --expect-signature 9bd2a14297 is a valid pin.')
     ap.add_argument('--keep-last', action='store_true', help='keep the last sandbox for inspection')
     ap.add_argument('--prepare-mode', choices=('batch', 'per-lease'), default='batch',
                     help="H1386 OPT A/B: 'batch' = one prepare-batch call (production "
@@ -511,18 +538,58 @@ def main():
     ap.add_argument('--record-mode', choices=('batch', 'per-lease'), default='batch',
                     help="hardening/speed A/B: 'batch' = one sequential coordinator parent per "
                          "runtime group; 'per-lease' = one coordinator process per record")
+    ap.add_argument('--selftest', action='store_true',
+                    help='exercise the signature gate itself (no pipeline run, seconds)')
     a = ap.parse_args()
+
+    if a.selftest:
+        return selftest()
 
     install_inputs()
     fx_hash = fixture_hash()
     print('fixture: %d files, content hash %s (sandbox input dir %s)' % (
         len(os.listdir(os.path.join(FIXTURE, 'input'))), fx_hash[:16], INPUT_DIR))
     try:
-        _bench(a, fx_hash)
+        return _bench(a, fx_hash)
     finally:
         # H1386 P3f: a bench run leaves the checkout byte-identical -- the sandbox input
         # dir (the only bench artifact outside per-run sandboxes) is always removed.
         shutil.rmtree(INPUT_DIR, ignore_errors=True)
+
+
+def check_signature(expected, signatures, fx_hash):
+    """The #1000 gate: -> (exit_code, lines). Pure, so the selftest can drive it.
+
+    A control that lives in prose is quoted, not verified — `9bd2a14297` was carried
+    across at least three close-outs that each *recorded* it as unchanged, and it
+    reproduces at no commit. So the comparison is a nonzero exit, and the failure prints
+    what a reader needs to adjudicate a move: expected, actual, and the FIXTURE hash —
+    because "the fixture changed" and "the pipeline changed" demand opposite responses
+    and the signature alone cannot tell them apart.
+    """
+    observed = sorted(signatures)
+    lines = []
+    if len(observed) != 1:
+        lines.append('SIGNATURE GATE: FAIL — the run was NOT deterministic')
+        lines.append('  expected     : %s (one signature)' % expected)
+        lines.append('  actual       : %d distinct signatures %s'
+                     % (len(observed), [s[:10] for s in observed]))
+        lines.append('  fixture hash : %s' % fx_hash)
+        return 1, lines
+    actual = observed[0]
+    expected = expected.strip().lower()
+    if actual.startswith(expected):
+        lines.append('SIGNATURE GATE: PASS — %s matches the pinned control (fixture %s)'
+                     % (actual[:10], fx_hash[:16]))
+        return 0, lines
+    lines.append('SIGNATURE GATE: FAIL — output signature moved')
+    lines.append('  expected     : %s' % expected)
+    lines.append('  actual       : %s' % actual)
+    lines.append('  fixture hash : %s' % fx_hash)
+    lines.append('  A changed FIXTURE hash means the inputs moved (re-pin deliberately);')
+    lines.append('  an unchanged fixture hash means the PIPELINE output moved — find the')
+    lines.append('  commit before re-baselining. Do not copy the new value into prose.')
+    return 1, lines
 
 
 def _bench(a, fx_hash):
@@ -582,6 +649,53 @@ def _bench(a, fx_hash):
             json.dump(report, f, ensure_ascii=False, indent=1)
         print('report: %s' % a.json)
 
+    if a.expect_signature:
+        rc, lines = check_signature(a.expect_signature, signatures, fx_hash)
+        print()
+        for line in lines:
+            print(line)
+        return rc
+    return 0
+
+
+def selftest():
+    """Pins the #1000 gate in BOTH directions — a gate that only ever passes is the
+    'inert by construction' class this issue is an instance of."""
+    fx = '569660c689d0659b' + '0' * 48
+    good = 'd7d4b8f1c2' + 'a' * 54
+
+    # (1) POSITIVE: the pinned control matches -> exit 0.
+    rc, lines = check_signature(good[:10], {good}, fx)
+    assert rc == 0 and 'PASS' in lines[0], (rc, lines)
+    rc, _ = check_signature(good, {good}, fx)          # full-length pin also accepted
+    assert rc == 0
+    rc, _ = check_signature(good[:10].upper(), {good}, fx)   # case-insensitive
+    assert rc == 0
+
+    # (2) NEGATIVE: a MOVED OUTPUT fails nonzero and reports both values + the fixture
+    #     hash. This is the case that went undetected for three close-outs.
+    moved = '586d012b3d' + 'b' * 54
+    rc, lines = check_signature(good[:10], {moved}, fx)
+    assert rc != 0, 'a moved signature MUST fail'
+    body = '\n'.join(lines)
+    assert 'FAIL' in body and good[:10] in body and moved[:10] in body, body
+    assert fx in body, 'the fixture hash must be reported — it disambiguates the cause'
+
+    # (3) A CHANGED FIXTURE is reported distinctly enough to act on: same moved
+    #     signature, different fixture hash -> the operator sees the input moved.
+    other_fx = 'ffffffffffffffff' + '0' * 48
+    _, lines_fx = check_signature(good[:10], {moved}, other_fx)
+    assert other_fx in '\n'.join(lines_fx)
+    assert 'fixture' in '\n'.join(lines_fx).lower()
+
+    # (4) NON-DETERMINISM fails too — "which of the two is the control?" has no answer.
+    rc, lines = check_signature(good[:10], {good, moved}, fx)
+    assert rc != 0 and 'NOT deterministic' in lines[0], lines
+
+    print('h1339_offline_bench selftest: PASS (signature gate positive, moved-output '
+          'negative, changed-fixture reporting, non-determinism refusal)')
+    return 0
+
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

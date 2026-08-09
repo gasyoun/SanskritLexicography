@@ -4,6 +4,11 @@
 Runs the free Python gates against the SAME wf_output.json key set, writes one
 machine-readable report plus a requeue list, and optionally glues a root article.
 
+Lang-agnostic HARD markup span survival (LS/SAN) is single-sourced in
+`markup_fidelity_gates.py` (H2227 OPT-2) and reached here via the child
+`audit_translation.py` gate. Soft RU semantics (NO-RUSSIAN, register) stay in
+the child auditors / prompt_rule_audit. EN twin: `audit_window_en.py`.
+
   python src/pilot/audit_window.py wf_output.json --root sTA --write-requeue
 """
 import argparse
@@ -508,6 +513,25 @@ def classify_harness_requeues(null_cards, partial_cards, gate_requeue, failure_r
     return transient, defect, fidelity_nulls
 
 
+def failure_reason_text(error):
+    """Normalise a row's `error` to TEXT at the audit boundary.
+
+    H2095: H2089 changed a bare null card's `row['error']` from a plain string to a structured
+    object (`{'failure_REASON': 'null_card_no_card_object', ...}`), but every consumer downstream
+    does string matching — `classify_harness_requeues` calls `.startswith('fidelity-reject')` on
+    it. The result was `AttributeError: 'dict' object has no attribute 'startswith'`, which crashes
+    the audit on ANY window containing a bare null card, so the transient-vs-defect split never
+    runs at all. Normalising once here beats teaching every call site both shapes.
+    """
+    if isinstance(error, dict):
+        for field in ('failure_REASON', 'failure-REASON', 'reason', 'error', 'message'):
+            value = error.get(field)
+            if isinstance(value, str) and value:
+                return value
+        return json.dumps(error, ensure_ascii=False, sort_keys=True)
+    return error if isinstance(error, str) else str(error)
+
+
 def collect_harness_quality(results):
     """Extract explicit partial-card and null-failure metadata from harness rows."""
     partial_cards, failure_reasons = {}, {}
@@ -528,7 +552,7 @@ def collect_harness_quality(results):
                 if card.get(name) is not None or row.get(name) is not None
             }
         if not card and row.get('error'):
-            failure_reasons[key] = row['error']
+            failure_reasons[key] = failure_reason_text(row['error'])
     return partial_cards, failure_reasons
 
 
@@ -561,7 +585,12 @@ def main():
     ap.add_argument('--judge-sample-seed',
                     help='override deterministic semantic sample seed')
     ap.add_argument('--wall-clock-minutes', type=float,
-                    help='Max workflow wall-clock minutes for this run/window')
+                    help='OBSERVED wall-clock minutes for this run/window — a RECORDED '
+                         'metric, never a cap (H2173 G10 / H2089 #4: the old help read '
+                         '"Max workflow wall-clock minutes", where "Max" named the Max '
+                         'Workflow lane but read as a ceiling; nothing compares this value '
+                         'to anything). Omit to auto-derive from wf mtime vs '
+                         'meta.generated_at; `wall_clock_source` records which happened.')
     ap.add_argument('--max-input-tokens', type=int,
                     help='Max-reported input tokens')
     ap.add_argument('--max-output-tokens', type=int,

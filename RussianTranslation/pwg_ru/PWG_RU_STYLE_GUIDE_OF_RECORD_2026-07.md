@@ -61,7 +61,7 @@ merged-PR, которым оно установлено; **правило без
 (правила R1–R4, замеры ложных срабатываний, механика свипа). Ратифицированы голосом MG по
 DA-листу 19-07-2026 (строки N7, N4, N12 реестра
 [H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H178_DA_VOTE_ISSUE_REGISTER_2026-07-19.md)),
-применены к стору хендоффом [H1305](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1305-Sonnet_RussianTranslation_pwg-ru-style-mechanical-yo-terseness-sweep_19.07.26.md)
+применены к стору хендоффом [H1305](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1305-Sonnet_RussianTranslation_pwg-ru-style-mechanical-yo-terseness-sweep_19.07.26.md)
 (2 013 подстановок; Sonnet 5 `claude-sonnet-5`), закреплены промптовым HARD RULE 9
 (`src/pilot/run_pilot_wf.js`), пинами `prompt_rule_audit.py` и гейтом `ru_style`.
 
@@ -211,13 +211,15 @@ word survive at all?», N19 *mit Ergänzung von*).
 
 ## 8. Цитаты, сиглы, переиспользование готовых переводов
 
-- **8.1 (✅, H1305 placement check).** Содержимое `ls`-цитат в сторе неприкосновенно:
-  замена `ed. Bomb.` → «Бомбейская ред.» внутри `ls` **ломает резолюцию источника**
-  (`pwg_sources.source_key()` ищет латинский ключ по библиографии PWG) — подтверждено
-  инспекцией кода, 282/283 вхождений остаются латиницей на уровне стора. Русское
-  ОТОБРАЖЕНИЕ in-`ls` сигл — рендерный вопрос, требующий отдельного хендоффа (прямо
-  постановлено в [RU_STYLE_MECHANICAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/RU_STYLE_MECHANICAL.md);
-  в скоуп H1307 не входило).
+- **8.1 (✅, H1305 placement check + H2005 render).** Содержимое `ls`-цитат в **сторе**
+  неприкосновенно: замена `ed. Bomb.` → «Бомбейская ред.» внутри `ls` на уровне JSONL
+  **ломает резолюцию источника** (`pwg_sources.source_key()` — латинский ключ
+  библиографии PWG); 282/283 вхождений остаются латиницей в сторе (H1305). **Русское
+  отображение** in-`ls` сигл `ed. Bomb.` → «Бомбейская ред.» (standalone и embedded)
+  сделано на рендере (H2005, 01-08-2026): `build_article_site._ls_visible_display`,
+  href/tooltip по латыни, DE/EN без изменений; selftest
+  `ls_enrichment_selftest.test_h2005_ed_bomb_ru_display_not_resolve`. Другие сиглы —
+  только после нового голоса.
 - **8.2 (🔶 голоса N1/N6/N9/N18).** Цитируемые санскритские пассажи **сначала ищутся в уже
   опубликованных русских переводах**, и найденное переиспользуется 1:1: Ригведа — только
   Елизаренкова, с пометой расхождения там, где немецкий перевод Бётлинга отличается (N6);
