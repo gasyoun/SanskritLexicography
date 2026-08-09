@@ -1,6 +1,6 @@
 # FEATURES_INDEX.md — what the Sanskrit Lexicon project actually has
 
-_Created: 04-07-2026 · Last updated: 02-08-2026 (H2110: H8 Systema in-cabinet reading packs; H1909: L5 nws_ls_markup.py bare-citation discriminator)_
+_Created: 04-07-2026 · Last updated: 09-08-2026 (H2361: L12 citation_tm.py parallel-verse lookup + its measured EN-lane misalignment; H2110: H8 Systema in-cabinet reading packs; H1909: L5 nws_ls_markup.py bare-citation discriminator)_
 
 **Purpose.** A clickable, capability-first map of the working assets across the ~85
 repositories: the **dictionaries** digitised, the **interfaces** that serve them, the
