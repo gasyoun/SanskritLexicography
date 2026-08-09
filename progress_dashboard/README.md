@@ -5,6 +5,9 @@ _Created: 10-07-2026 · Last updated: 06-08-2026 (H2269 dual-run: health_probe_l
 **Improvement backlog (measured / show / should-measure):**
 [ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md).
 
+**Improvement backlog (measured / show / should-measure):**
+[ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/progress_dashboard/ROADMAP_PROGRESS_KITCHEN_IMPROVEMENTS_2026.md).
+
 ## Autostart (no manual step after logon)
 
 On the residential machine (WIN-NJTORH3267V), Task Scheduler starts both surfaces at **logon**:
