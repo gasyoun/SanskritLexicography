@@ -17,14 +17,17 @@ import sys
 import time
 
 import probe_log
-from run_observability import append_event, write_census
-from headless_worker import (claude_argv_prefix, run_tree_kill, timeout_output_text,
-                             validate_preflight_artifact, windows_hidden_flags)
+from run_observability import append_event, utc_now, write_census
+from headless_worker import (DEFAULT_TIMEOUT_S, bare_cli_cwd, claude_argv_prefix,
+                             run_tree_kill, timeout_output_text,
+                             validate_preflight_artifact, windows_hidden_flags,
+                             wrapper_timeout_s)
 from window_common import atomic_write_text
 from execution_contract import (ActiveCallClaim, config_dir_fingerprint, validate_manifest,
                                 validate_profile)
 from call_reservation import (CallLimitReached, CallReservationLedger, run_ids,
                               telemetry_from_cli_wrapper, unevaluable_telemetry)
+from dashboard_events import emit_collision
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -49,6 +52,9 @@ CREATE TABLE IF NOT EXISTS jobs (
 CREATE INDEX IF NOT EXISTS jobs_state_id ON jobs(state, id);
 """
 RATE_LIMIT = re.compile(r"rate.?limit|usage limit|too many requests|429", re.I)
+# H2326 (#1172): named so `_probe_err_match` can report WHICH alternative fired, not just the class.
+# Text and precedence are unchanged from the inline `re.search` this replaced (auth wins over rate).
+AUTH_LIMIT = re.compile(r"401|authenticat|not logged in|invalid.*credential", re.I)
 RESET_EPOCH = re.compile(r"(?:reset(?:s|_at)?|parked_until)[^0-9]{0,20}([0-9]{10})", re.I)
 
 
@@ -503,8 +509,11 @@ def run_claimed(db_path, account, config_dir, job, timeout, events_path=None, ru
         env['PWG_CALL_RESERVATION_RUN_ID'] = run_id or ''
         env['PWG_CALL_RESERVATION_MAX_CALLS'] = '' if max_calls is None else str(max_calls)
     try:
+        # D-J: tree-kill on timeout. H2254: the OUTER bound must exceed the per-call ceiling
+        # handed to `--timeout` -- equal bounds kill the worker during teardown of a call
+        # that legitimately reached its own ceiling, losing the status file that says so.
         proc = run_tree_kill(argv, cwd=job['cwd'], env=env, text=True, encoding='utf-8',
-                             capture_output=True, timeout=timeout)   # D-J: tree-kill on timeout
+                             capture_output=True, timeout=wrapper_timeout_s(timeout))
         payload = json.dumps({'argv': argv, 'returncode': proc.returncode,
                               'stdout': proc.stdout, 'stderr': proc.stderr}, ensure_ascii=False, indent=1)
         atomic_write(attempt_log, payload)
@@ -689,11 +698,23 @@ def occupied_keys(db):
             with open(row['manifest_path'], encoding='utf-8') as fh:
                 occupied.update(json.load(fh)['meta']['selected_keys'])
         except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
-            raise SystemExit(
+            msg = (
                 'occupied-keys guard: cannot read the manifest of queued/running job '
                 '%s (%s): %s -- refusing to import; an unreadable live manifest would '
                 'let its keys dispatch into a SECOND paid window (H2154)'
                 % (row['external_id'], row['manifest_path'], exc))
+            # OPT-8 / H2229 — kitchen banner, not a new concurrency protocol.
+            emit_collision(
+                'occupied_keys_unreadable',
+                root=row['external_id'],
+                summary=msg,
+                source='max_account_orchestrator',
+                data={
+                    'job_external_id': row['external_id'],
+                    'manifest_path': row['manifest_path'],
+                    'error': str(exc),
+                })
+            raise SystemExit(msg)
     return occupied
 
 
@@ -731,6 +752,18 @@ def cmd_import_coordinator(args):
             keys = set(manifest['meta']['selected_keys'])
             overlap = keys & occupied
             if overlap:
+                sample = ','.join(sorted(overlap)[:12])
+                msg = '%s: key overlap with queued/done job: %s' % (lease['id'], sample)
+                emit_collision(
+                    'occupied_keys_overlap',
+                    root=lease['id'],
+                    summary=msg,
+                    source='max_account_orchestrator',
+                    data={
+                        'lease_id': lease['id'],
+                        'overlap_count': len(overlap),
+                        'overlap_sample': sorted(overlap)[:20],
+                    })
                 raise SystemExit('%s: key overlap with queued/done job: %s' %
                                  (lease['id'], ','.join(sorted(overlap))))
             output = os.path.join(lease['artifact_dir'], 'workflow_result.headless.%s.json' % lease['id'])
@@ -796,6 +829,19 @@ def cmd_import_requeue(args):
     keys = set(manifest['meta']['selected_keys'])
     overlap = keys & occupied
     if overlap:
+        sample = ','.join(sorted(overlap)[:12])
+        msg = '%s: requeue key overlap with a queued/running job: %s' % (
+            args.lease_id, sample)
+        emit_collision(
+            'requeue_key_overlap',
+            root=args.lease_id,
+            summary=msg,
+            source='max_account_orchestrator',
+            data={
+                'lease_id': args.lease_id,
+                'overlap_count': len(overlap),
+                'overlap_sample': sorted(overlap)[:20],
+            })
         raise SystemExit('%s: requeue key overlap with a queued/running job: %s' %
                          (args.lease_id, ','.join(sorted(overlap))))
     adir = attempt.get('artifact_dir') or lease.get('artifact_dir')
@@ -1125,10 +1171,33 @@ PROBE_MIN_PAYLOAD_BYTES = 5000           # D-F: repository >=5 KB load-represent
 # that had already drifted 2.2x from probe_log's, with both gates still stamping rows
 # `production_v1`. The policy token now carries its own ceiling, so `verdict_for()` and
 # `live_probe` agree by construction and a row's `policy` is sufficient provenance again.
+#
+# H2173 G10 (F-B4) completed that: this line was true of the *table* but not of the *caller*
+# — `verdict_for`'s own `policy=` default stayed pinned at `production_v1` while
+# CURRENT_POLICY advanced to v2 and then v3, so anything relying on the default still judged
+# at the retired ceiling and stamped rows `production_v1`. Both `verdict_for` and the CLI
+# `--policy` default now track CURRENT_POLICY, so "agree by construction" holds end to end.
 PROBE_POLICY = probe_log.CURRENT_POLICY
 PROBE_LATENCY_CEILING_MS = probe_log.ceiling_for(PROBE_POLICY)
 PROBE_LANE = 'claude-cli-headless/readiness-schema'
+# B3 residual (H2240): ONE canonical, append-only, cross-account probe log — the writer
+# target `kitchen_slices.health_ribbon` now prefers over its old per-account glob scrape
+# (`h963_*_gate0_probe_events.jsonl`, `*_probe_events.jsonl`). Every probe call routes
+# through `live_probe`'s `_emit` below regardless of which script or account invoked it
+# (h963_c4_gate0_probe.py, probe_fleet, any future probe), so writing here once makes the
+# canonical log complete by construction rather than by every caller remembering to log
+# twice. The per-account `events_path` file is kept untouched alongside it — gate reports
+# (H1110/H1447/H858) cite it by path and its exact-run_id read discipline (#729) must not
+# change.
+HEALTH_PROBE_LOG = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                'output', 'health_probe_log.jsonl')
 PROBE_RECEIPT_SCHEMA = 'pwg.runtime_probe_receipt.v1'
+# H2326 (#1172): where a non-success probe envelope's tail is parked. Same gitignored `output/` dir
+# the canonical health log already lives in, so nothing here is committable. Module-level so a
+# selftest can redirect it into a temp dir instead of writing beside the real probe log.
+PROBE_RAW_DIR = os.path.dirname(HEALTH_PROBE_LOG)
+PROBE_RAW_TAIL_BYTES = 4096          # provider refusals are ~1 KB; 4 KB is generous and still bounded
+PROBE_ERR_PATTERN_MAX_CHARS = 40     # the matched regex alternative, never free provider text
 # GAP #5 (four-profile): an account dropped by --drop-unhealthy is parked far in the future so the
 # dispatch loop's runnable/claim gates exclude it while the fleet proceeds on the healthy subset.
 # Only the explicit opt-in ever parks this way; the default STOP-on-any-NO-GO path never drops.
@@ -1137,14 +1206,70 @@ PARKED_FOREVER = 2147483647              # ~2038; a 10-digit epoch, safely "neve
 # not by size -- a valid success wrapper with the small {"ok":true} schema result is fine.)
 
 
+def _probe_err_match(text):
+    """Classify an error blob and report WHICH pattern matched: ('auth'|'rate_limit', matched) or
+    (None, None).
+
+    H2326 (#1172): the class alone throws away the one bit that decides the next sitting. `RATE_LIMIT`
+    is `429|rate.?limit|usage limit|too many requests` — an account-level *usage limit* and a
+    per-model capacity *429* are the same verdict but different decisions, and until now nothing
+    recorded which alternative fired. The matched slice is bounded by the regex itself (a few words),
+    lower-cased and hard-capped, so it is a classification detail, never a payload channel."""
+    hit = AUTH_LIMIT.search(text or '')
+    if hit:
+        return 'auth', _matched_token(hit)
+    hit = RATE_LIMIT.search(text or '')
+    if hit:
+        return 'rate_limit', _matched_token(hit)
+    return None, None
+
+
+def _matched_token(hit):
+    return (hit.group(0) or '').strip().lower()[:PROBE_ERR_PATTERN_MAX_CHARS]
+
+
 def _probe_err_class(text):
     """Classify an error blob as 'auth' or 'rate_limit' if its text says so, else None. Used for
     BOTH non-zero rc and rc=0 error wrappers — the CLI may report auth/rate-limit with rc=0."""
-    if re.search(r'401|authenticat|not logged in|invalid.*credential', text or '', re.I):
-        return 'auth'
-    if RATE_LIMIT.search(text or ''):
-        return 'rate_limit'
-    return None
+    return _probe_err_match(text)[0]
+
+
+def _probe_raw_run_token(run_id):
+    """A filesystem-safe token for the raw-envelope filename ('norun' when the caller has no run)."""
+    token = re.sub(r'[^A-Za-z0-9_.-]', '_', str(run_id or '')).strip('_')
+    return token[:64] or 'norun'
+
+
+def _write_probe_raw(run_id, purpose, classification, text, matched=None):
+    """Persist the tail of a NON-SUCCESS probe envelope beside the event row; return the basename.
+
+    H2326 (#1172): on 06-08-2026 a c4 gate-0 warm-up came back in 18 574 ms with 830 bytes and
+    classification `rate_limit`, and those 830 bytes — which carried the provider's own wording and
+    routinely its reset time — were discarded on the spot. The gate is no-reroll and rationed to two
+    attempts a UTC day, so an unreadable refusal spends an attempt and returns nothing diagnosable.
+
+    Bounded by construction: only the last `PROBE_RAW_TAIL_BYTES` are kept, only the non-success
+    lane writes, and `PROBE_RAW_DIR` sits under the probe's gitignored `output/` — this commits
+    nothing and leaks nothing. Best-effort: a probe must never fail because its own diagnostic
+    could not be stored."""
+    text = text or ''
+    raw = text.encode('utf-8')
+    truncated = len(raw) > PROBE_RAW_TAIL_BYTES
+    tail = raw[-PROBE_RAW_TAIL_BYTES:].decode('utf-8', 'replace') if truncated else text
+    name = 'h963_c4_gate0_probe_raw_%s.txt' % _probe_raw_run_token(run_id)
+    header = ('--- %s | purpose=%s | classification=%s | matched=%s | bytes=%d%s\n'
+              % (utc_now(), purpose, classification, matched or '-', len(raw),
+                 ' | TRUNCATED to last %d B' % PROBE_RAW_TAIL_BYTES if truncated else ''))
+    try:
+        os.makedirs(PROBE_RAW_DIR, exist_ok=True)
+        # Append, never truncate: live_probe makes two calls per account and a fleet run several,
+        # so a per-run file must accumulate rather than let the last failure erase the first.
+        with open(os.path.join(PROBE_RAW_DIR, name), 'a', encoding='utf-8', newline='\n') as fh:
+            fh.write(header + tail + '\n')
+    except OSError as exc:
+        print('warning: probe raw-envelope capture failed: %s' % exc, file=sys.stderr)
+        return None
+    return name
 
 
 # D-P (H994): the readiness payload is a real, completable task, NOT a degenerate tool-demand.
@@ -1174,7 +1299,7 @@ def _probe_prompt(payload_bytes):
 
 def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
                 reservation_purpose='probe', account=None, active_claim=None,
-                timing_out=None):
+                timing_out=None, run_id=None, detail_out=None):
     """One raw >=5 KB exact-model probe call. Returns (latency_ms, classification, output_bytes);
     classification is 'success' | 'auth' | 'rate_limit' | 'malformed' | 'content' | 'process' |
     'timeout'. NEVER raises on a non-zero rc — the two-phase gate (``live_probe``) decides what to
@@ -1192,11 +1317,24 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
             return _probe_call(
                 config_dir, claude, payload_bytes, model, call_reservation,
                 reservation_purpose, account, active_claim=claim,
-                timing_out=timing_out)
+                timing_out=timing_out, run_id=run_id, detail_out=detail_out)
     if (not isinstance(active_claim, ActiveCallClaim)
             or not active_claim.is_live_canonical_for(fingerprint)):
         raise ValueError('probe active-call claim does not bind config directory')
     prompt = _probe_prompt(payload_bytes)
+
+    def _fail(classification, raw, matched=None):
+        """H2326 (#1172): the single non-success exit — persist the envelope tail, hand the matched
+        pattern + file basename back for the event row, and return the classification unchanged.
+        The `success` path never reaches here, so the healthy lane writes nothing new."""
+        name = _write_probe_raw(run_id, reservation_purpose, classification, raw, matched)
+        if detail_out is not None:
+            if matched:
+                detail_out['err_pattern'] = matched
+            if name:
+                detail_out['raw_envelope_path'] = name
+        return classification
+
     reservation = call_reservation.reserve(
         reservation_purpose, profile=account)
     started = time.monotonic()
@@ -1205,7 +1343,21 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
             claude_argv_prefix(claude) + ['-p', '--output-format', 'json', '--json-schema',
              '{"type":"object","properties":{"ok":{"type":"boolean"}},"required":["ok"],"additionalProperties":false}',
              '--model', model, '--permission-mode', 'plan'],
-            input=prompt, env=env, text=True, encoding='utf-8', capture_output=True, timeout=300)
+            input=prompt, env=env, text=True, encoding='utf-8', capture_output=True,
+            # H2299: spawn from the SAME bare cwd the paid lane uses. `run_tree_kill`'s
+            # `cwd` defaulted to None here, so the probe silently inherited whatever
+            # directory the gate was launched from -- in practice the repo, which injects
+            # CLAUDE.md + git context into every call. That is the exact tax H2158 measured
+            # and removed from `headless_worker` (repo cwd $0.3036 / 26-29 s vs bare cwd
+            # $0.2040 / 19-20 s: -33 % cost, -30 % wall) -- and the gate never adopted it.
+            #
+            # Two independent defects, one line: (1) the gate PRICED A DIFFERENT CALL than
+            # the lane it gates, so a GO/NO-GO was never representative; (2) the ~30 % wall
+            # it paid for that is headroom against the 300 s kill below, which is what the
+            # 03-08 (276 183 ms route, 2 output tokens) and 05-08 (killed at 300 099 ms,
+            # 0 B) measured legs ran out of. DERIVED from the paid lane's own helper, never
+            # a literal path, so the two can never drift apart again.
+            cwd=bare_cli_cwd(), timeout=300)
     except subprocess.TimeoutExpired as exc:
         call_reservation.finalize(reservation, unevaluable_telemetry())
         # H2056 / #944: this was the ONLY exit from _probe_call that skipped _probe_err_class, so a
@@ -1214,8 +1366,10 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
         # operator down a branch of the exclusion ladder that §266-271 already closed. run_tree_kill
         # attaches the killed child's output (#943), so the provider's message is classifiable here;
         # 'timeout' remains the fall-through when nothing account-level was said.
+        killed = timeout_output_text(exc)
+        cls, matched = _probe_err_match(killed)
         return (int((time.monotonic() - started) * 1000),
-                (_probe_err_class(timeout_output_text(exc)) or 'timeout'), 0)
+                _fail(cls or 'timeout', killed, matched), 0)
     except BaseException:
         call_reservation.finalize(reservation, unevaluable_telemetry())
         raise
@@ -1238,22 +1392,25 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
                 timing_out[name] = telemetry[name]
     if proc.returncode:
         call_reservation.finalize(reservation, telemetry)
-        return latency_ms, (_probe_err_class(combined) or 'process'), output_bytes
+        cls, matched = _probe_err_match(combined)
+        return latency_ms, _fail(cls or 'process', combined, matched), output_bytes
     # rc 0 is NOT sufficient. `claude -p --output-format json` returns the CLI result *envelope*
     # ({"type":"result","subtype":"success","is_error":false,"result":..., "structured_output":...}).
     # Validate it strictly and require the structured schema result {"ok": true}.
     if wrapper is None:
         call_reservation.finalize(
             reservation, dict(telemetry, cost_evaluable=False))
-        return latency_ms, 'malformed', output_bytes
+        return latency_ms, _fail('malformed', combined), output_bytes
     if not isinstance(wrapper, dict) or wrapper.get('type') != 'result':
         call_reservation.finalize(
             reservation, dict(telemetry, cost_evaluable=False))
-        return latency_ms, 'malformed', output_bytes            # not the CLI result envelope
+        # not the CLI result envelope
+        return latency_ms, _fail('malformed', combined), output_bytes
     if wrapper.get('subtype') != 'success' or wrapper.get('is_error'):
         # a valid envelope reporting an ERROR (with rc 0) — it may still carry auth/rate-limit text
         call_reservation.finalize(reservation, telemetry)
-        return latency_ms, (_probe_err_class(json.dumps(wrapper, ensure_ascii=False)) or 'process'), output_bytes
+        cls, matched = _probe_err_match(json.dumps(wrapper, ensure_ascii=False))
+        return latency_ms, _fail(cls or 'process', combined, matched), output_bytes
     # extract the structured schema result: `structured_output`, else `result` when it is a JSON
     # string (or already a dict).
     payload = wrapper.get('structured_output')
@@ -1269,10 +1426,12 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
     if not isinstance(payload, dict) or 'ok' not in payload:
         call_reservation.finalize(
             reservation, dict(telemetry, cost_evaluable=False))
-        return latency_ms, 'malformed', output_bytes            # missing / invalid structured result
+        # missing / invalid structured result
+        return latency_ms, _fail('malformed', combined), output_bytes
     if payload.get('ok') is not True:
         call_reservation.finalize(reservation, telemetry)
-        return latency_ms, 'content', output_bytes              # {"ok": false} -> content, never success
+        # {"ok": false} -> content, never success
+        return latency_ms, _fail('content', combined), output_bytes
     call_reservation.finalize(reservation, telemetry)
     return latency_ms, 'success', output_bytes
 
@@ -1298,41 +1457,61 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
     if call_reservation is None:
         raise ValueError('paid probe requires a call reservation ledger')
 
-    def _emit(purpose, latency, cls, obytes, timing=None):
+    def _emit(purpose, latency, cls, obytes, timing=None, detail=None):
+        # H2079 / #945: record API time and the wall-minus-API gap BESIDE the wall reading.
+        # `elapsed_ms` stays the gated number and the ceiling is unchanged — this only makes a
+        # reading decomposable after the fact, which is exactly what the 15-07 / 16-07 / 31-07
+        # c4 series lacked. Both are dropped by append_event when absent (timeout, no envelope).
+        api_ms = (timing or {}).get('duration_api_ms')
+        # Shared field set for per-account + canonical writers (H2240 / H2269 dual-run).
+        # H2095 (#946): latency_ceiling_ms is self-describing; policy alone is not enough.
+        row_kw = dict(
+            run_id=run_id, account=account, stage='probe',
+            event='probe_call', purpose=purpose, elapsed_ms=latency,
+            model=model, output_bytes=obytes, classification=cls,
+            policy=PROBE_POLICY, executor_lane=PROBE_LANE,
+            schema_valid=(cls == 'success'),
+            duration_api_ms=api_ms,
+            api_gap_ms=(latency - api_ms) if api_ms is not None else None,
+            latency_ceiling_ms=latency_ceiling_ms,
+            # H2326 (#1172): which classifier alternative fired, and where the provider's own
+            # words were parked. Both absent on `success` (append_event drops None), so the
+            # healthy lane's row is byte-for-byte what it was.
+            err_pattern=(detail or {}).get('err_pattern'),
+            raw_envelope_path=(detail or {}).get('raw_envelope_path'),
+        )
         if events_path:
-            # H2079 / #945: record API time and the wall-minus-API gap BESIDE the wall reading.
-            # `elapsed_ms` stays the gated number and the ceiling is unchanged — this only makes a
-            # reading decomposable after the fact, which is exactly what the 15-07 / 16-07 / 31-07
-            # c4 series lacked. Both are dropped by append_event when absent (timeout, no envelope).
-            api_ms = (timing or {}).get('duration_api_ms')
-            append_event(events_path, run_id=run_id, account=account, stage='probe',
-                         event='probe_call', purpose=purpose, elapsed_ms=latency,
-                         model=model, output_bytes=obytes, classification=cls,
-                         policy=PROBE_POLICY, executor_lane=PROBE_LANE,
-                         schema_valid=(cls == 'success'),
-                         duration_api_ms=api_ms,
-                         api_gap_ms=(latency - api_ms) if api_ms is not None else None,
-                         # H2095 (#946): the ceiling in force for THIS reading, so the row is
-                         # self-describing. `policy` alone is not enough — the token did not
-                         # change across three ceiling values on 31-07.
-                         latency_ceiling_ms=latency_ceiling_ms)
+            append_event(events_path, **row_kw)
+        # B3 residual (H2240) + H2269 dual-run fix: the SAME row always lands in the
+        # canonical cross-account log, even when the caller passed events_path=None
+        # (selftests, probe_fleet without a per-account file, ad-hoc scripts). Sonnet
+        # override nested this write under `if events_path:`, so a probe that never
+        # opened a per-account file also never fed the kitchen ribbon. Best-effort —
+        # a failure here must never turn a health probe into a raised exception.
+        try:
+            append_event(HEALTH_PROBE_LOG, **row_kw)
+        except OSError as exc:
+            print('warning: canonical health_probe_log append failed: %s' % exc,
+                  file=sys.stderr)
 
     # One profile claim covers the WHOLE pair. Releasing between warmup and measured allowed
     # another paid worker to interleave on the same config directory and invalidated the reading.
     with ActiveCallClaim(config_dir_fingerprint(config_dir)) as active_claim:
-        warm_timing = {}
+        warm_timing, warm_detail = {}, {}
         warm_ms, warm_cls, warm_bytes = _probe_call(
             config_dir, claude, payload_bytes, model, call_reservation,
-            'probe:warmup', account, active_claim=active_claim, timing_out=warm_timing)
-        _emit('warmup', warm_ms, warm_cls, warm_bytes, warm_timing)
+            'probe:warmup', account, active_claim=active_claim, timing_out=warm_timing,
+            run_id=run_id, detail_out=warm_detail)
+        _emit('warmup', warm_ms, warm_cls, warm_bytes, warm_timing, warm_detail)
         if warm_cls != 'success':
             raise SystemExit('warm-up probe %s -> STOP (auth/model/output/rate-limit/timeout)' % warm_cls)
 
-        meas_timing = {}
+        meas_timing, meas_detail = {}, {}
         meas_ms, meas_cls, meas_bytes = _probe_call(
             config_dir, claude, payload_bytes, model, call_reservation,
-            'probe:measured', account, active_claim=active_claim, timing_out=meas_timing)
-        _emit('measured', meas_ms, meas_cls, meas_bytes, meas_timing)
+            'probe:measured', account, active_claim=active_claim, timing_out=meas_timing,
+            run_id=run_id, detail_out=meas_detail)
+        _emit('measured', meas_ms, meas_cls, meas_bytes, meas_timing, meas_detail)
         if meas_cls != 'success':
             raise SystemExit('measured probe %s -> honest NO-GO (no retry, no re-warm)' % meas_cls)
         if meas_ms >= latency_ceiling_ms:
@@ -1695,8 +1874,9 @@ def cmd_presplit_canary(args):
            '--timeout', str(args.timeout), '--preflight', preflight_path,
            '--preflight-sha256', args.preflight_sha256,
            '--manifest-sha256', manifest_hash]
+    # D-J tree-kill (presplit canary worker); H2254 headroom over the per-call ceiling.
     proc = run_tree_kill(cmd, env=env, text=True, encoding='utf-8', capture_output=True,
-                         timeout=args.timeout)   # D-J: tree-kill on timeout (presplit canary worker)
+                         timeout=wrapper_timeout_s(args.timeout))
     status = json.load(open(args.status, encoding='utf-8')) if os.path.exists(args.status) else {}
     canary_base = {'run_id': run_id, 'account': accounts[0]['name'],
                    'manifest_hash': manifest_hash}
@@ -1743,13 +1923,13 @@ def main(argv=None):
     p = sub.add_parser('reset-failed', help='B18: audited scoped recovery of terminal failed jobs (requires --reason)'); p.add_argument('--lease-id', action='append', required=True); p.add_argument('--reason', required=True); p.add_argument('--events'); p.set_defaults(func=cmd_reset_failed)
     p = sub.add_parser('recover'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_recover)
     p = sub.add_parser('record-done'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.set_defaults(func=cmd_record_done)
-    p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=7200); p.add_argument('--claude-bin', default='claude'); p.add_argument('--only-profile'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.add_argument('--call-reservation'); p.add_argument('--run-id'); p.add_argument('--max-calls', type=int); p.set_defaults(func=cmd_run_once)
+    p = sub.add_parser('run-once'); p.add_argument('--timeout', type=int, default=DEFAULT_TIMEOUT_S); p.add_argument('--claude-bin', default='claude'); p.add_argument('--only-profile'); p.add_argument('--coordinator', default=default_coordinator); p.add_argument('--coord-dir', default=default_coord_dir); p.add_argument('--cwd', default=default_cwd); p.add_argument('--call-reservation'); p.add_argument('--run-id'); p.add_argument('--max-calls', type=int); p.set_defaults(func=cmd_run_once)
     p = sub.add_parser('status'); p.set_defaults(func=cmd_status)
     p = sub.add_parser('staged-run')
     p.add_argument('--coord-dir', required=True); p.add_argument('--cwd', required=True)
     p.add_argument('--coordinator', required=True); p.add_argument('--lease-id', action='append')
     p.add_argument('--plan', required=True)
-    p.add_argument('--claude-bin', default='claude'); p.add_argument('--timeout', type=int, default=7200)
+    p.add_argument('--claude-bin', default='claude'); p.add_argument('--timeout', type=int, default=DEFAULT_TIMEOUT_S)
     p.add_argument('--stop-after', type=int, default=0); p.add_argument('--resume', action='store_true')
     p.add_argument('--max-accounts', type=int, default=0)          # GAP #5: cap the validated fleet
     p.add_argument('--only-profile', help='enforce one logical profile slot and its bound directory')
@@ -1764,7 +1944,7 @@ def main(argv=None):
     p.add_argument('--preflight-sha256', required=True)
     p.add_argument('--run-id'); p.add_argument('--claude-bin', default='claude')
     p.add_argument('--call-reservation'); p.add_argument('--max-calls', type=int)
-    p.add_argument('--timeout', type=int, default=7200); p.set_defaults(func=cmd_presplit_canary)
+    p.add_argument('--timeout', type=int, default=DEFAULT_TIMEOUT_S); p.set_defaults(func=cmd_presplit_canary)
     args = ap.parse_args(argv)
     try:
         args.func(args)

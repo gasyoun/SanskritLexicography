@@ -136,7 +136,7 @@ zero.
 | C2 | intra-rater agreement (inter-rater does not exist — ruling R3, no second reviewer through 2027) | MG test–retest pass ≥14 days after first labels | N3/N13 |
 | C3 | protocol comparison table | 30 voted `h178_da` cards + agent passes under retired rubrics (P1 ruling A2); labeled agent-vs-human, never human×human | — |
 | C4 | COMETKiwi correlation column | one-time HF license/token + `comet` run | — |
-| C5 | abbreviation canon in rendered examples | [H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md) vote | N1 |
+| C5 | abbreviation canon in rendered examples | [H1303](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1303-Fable_RussianTranslation_pwg-ru-abbrev-unified-list-ratification_19.07.26.md) vote | N1 |
 | C6 | doublet / *v. l.* / *im Comp.* handling as policy | [H1306](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1306-Fable_RussianTranslation_pwg-ru-style-research-doublets-apresyan_19.07.26.md) decisions.json | N2 |
 | C7 | any print-edition statement | G5 votes at release-slice scale + G6/G7 + G10 | N3 |
 | C8 | compound-split layer as adjudicated | ~4.2k `differs` review-sheet sample | N11 |

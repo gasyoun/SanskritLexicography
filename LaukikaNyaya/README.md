@@ -192,7 +192,7 @@ bibliography item №41, mirroring the
 pattern. It closes the last-open 2004-manifesto deliverable
 ("Сентенции и афористические цитаты") **partially** — see below for exactly
 what is and is not done, per
-[Uprava H803](https://github.com/gasyoun/Uprava/blob/main/handoffs/H803-Sonnet_SanskritLexicography_laukika-nyaya-jacob-ingest_12.07.26.md).
+[Uprava H803](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H803-Sonnet_SanskritLexicography_laukika-nyaya-jacob-ingest_12.07.26.md).
 
 **Why this is partial, not the full ≥400 the handoff asked for:** Jacob
 published the collection in three parts ("handfuls," 1907/1909/1911). Only

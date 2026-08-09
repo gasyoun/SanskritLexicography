@@ -4,7 +4,7 @@ _Created: 18-07-2026 · Last updated: 19-07-2026_
 
 **What this file is.** The audit trail behind
 [A67_negative_results_computational_sanskrit_lexicography.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A67_negative_results_computational_sanskrit_lexicography.md)
-([H1268](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1268-Fable_SanskritLexicography_negative-results-dead-ends-methods-paper_18.07.26.md)).
+([H1268](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1268-Fable_SanskritLexicography_negative-results-dead-ends-methods-paper_18.07.26.md)).
 Every candidate failure harvested from the programme's epistemic registries —
 [SanskritLexicography/DEAD_ENDS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md),
 [Uprava/DEAD_ENDS.md](https://github.com/gasyoun/Uprava/blob/main/DEAD_ENDS.md),
@@ -115,7 +115,7 @@ and the paper says so. Counts: **46 candidates → 21 INTRINSIC + 1 REVERSED ent
 half of recorded failures survive adjudication as scientific negative results is itself a
 finding the paper reports.
 
-_Adjudicated by Fable 5 (`claude-fable-5`), 18-07-2026, under [H1268](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1268-Fable_SanskritLexicography_negative-results-dead-ends-methods-paper_18.07.26.md).
+_Adjudicated by Fable 5 (`claude-fable-5`), 18-07-2026, under [H1268](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1268-Fable_SanskritLexicography_negative-results-dead-ends-methods-paper_18.07.26.md).
 Fact-checked against every cited source by a read-only verification agent (Fable 5
 `claude-fable-5` subagent) on 18/19-07-2026; its 10 findings — one invented detail, one
 premature registration claim, one wrong availability statement, several attribution and

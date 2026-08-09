@@ -4,7 +4,7 @@ _Created: 01-08-2026 · Last updated: 01-08-2026_
 
 **Executor:** Opus 5 (`claude-opus-5[1m]`), Claude Code, isolated worktree off
 `origin/master` [`625fe858`](https://github.com/gasyoun/SanskritLexicography/commit/625fe858).
-Handoff: [H2118](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2118-Opus_RussianTranslation_rederive-probe-latency-ceiling-946_01.08.26.md).
+Handoff: [H2118](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2118-Opus_RussianTranslation_rederive-probe-latency-ceiling-946_01.08.26.md).
 Issue: [#946](https://github.com/gasyoun/SanskritLexicography/issues/946).
 
 ## Verdict — split, and stated as such

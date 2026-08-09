@@ -14,7 +14,7 @@ merge (PWG · PW · SCH · PWKVN · NWS), plus the abridging descendants (MW · 
 the metadata contract that lets [`REGLUE_SPEC.md`](REGLUE_SPEC.md) place each supplement
 at its correct PWG sense with **zero re-translation**, and the empirical spine of the
 research paper (Deliverable 5 of
-[H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md)).
+[H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md)).
 
 Status: **first-pass design, LLM-proposed.** Relationship instances are to be emitted
 with `confidence: llm`; the human gold standard is a separate, later deliverable

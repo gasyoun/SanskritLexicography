@@ -1,0 +1,46 @@
+{
+ "schema": "pwg.call_reservation.v1",
+ "runs": {
+  "h2251-canary-safemode-2026-08-06": {
+   "max_calls": 3,
+   "calls_spent": 1,
+   "next_ordinal": 2,
+   "reservations": [
+    {
+     "reservation_id": "f6c83c9e20d449128c585e638b2217e2",
+     "ordinal": 1,
+     "reserved_at_ns": 1786002950690122800,
+     "pid": 27916,
+     "purpose": "headless:translate",
+     "profile": "c4",
+     "detail": "b0",
+     "finalized": true,
+     "finalized_at_ns": 1786002990433450300,
+     "telemetry": {
+      "cost_evaluable": true,
+      "input_tokens": 2,
+      "output_tokens": 2201,
+      "cache_read_tokens": 29667,
+      "cache_creation_tokens": 12259,
+      "subagent_tokens": 44129,
+      "observed_cost_usd": 0.1205511,
+      "duration_ms": 28390,
+      "duration_api_ms": 30661
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 2,
+    "output_tokens": 2201,
+    "cache_read_tokens": 29667,
+    "cache_creation_tokens": 12259,
+    "subagent_tokens": 44129,
+    "observed_cost_usd": 0.1205511,
+    "cost_evaluable": true,
+    "finalized_calls": 1,
+    "unevaluable_calls": 0,
+    "pending_calls": 0
+   }
+  }
+ }
+}

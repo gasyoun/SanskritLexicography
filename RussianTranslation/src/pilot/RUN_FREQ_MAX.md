@@ -1,6 +1,6 @@
 # Runbook — frequency queue on the headless CLI (manifest v2)
 
-_Created: 09-07-2026 · Last updated: 02-08-2026_
+_Created: 09-07-2026 · Last updated: 07-08-2026_
 
 Goal: scale the PWG→Russian production run in DCS-frequency order, with giant
 roots split into single-pass units and re-glued after translation. This is the
@@ -66,6 +66,33 @@ tracked-file drift and is wired into `window_selftest.py`
 - **Execution route (H1110):** production is the **headless CLI on manifest v2**, not
   Workflow-from-session. Bind a named profile (`CLAUDE_CONFIG_DIR` + roster slot) before
   any paid call; promotion hard-refuses unbound payloads (H1080 Stage 3).
+- **Profile-surface strip (H2189 03-08-2026, flipped by H2251 06-08-2026) — DEFAULT ON.**
+  Every headless spawn now carries `--safe-mode`, which strips the operator profile's
+  CLAUDE.md/skills/commands/agents/hooks from the child. `execution.cli_safe_mode` is
+  **tri-state**: absent takes the default (ON), `true` pins it on, and **`false` still pins
+  the historical spawn** — the operator opt-out survives the flip and is asserted by
+  `headless_worker_selftest.test_safe_mode_default_is_on_and_an_explicit_false_still_opts_out`.
+  An unsupported CLI degrades to the historical argv with a loud stderr warning — never a
+  hard failure — and the run's own `status` now records `cli_safe_mode_effective`, i.e. what
+  the spawn DID rather than what the manifest asked for, so a silent downgrade is
+  identifiable from artifacts instead of a lost console.
+  - **The numbers, re-measured — H2189's headline did NOT fully replicate.** Those figures
+    (create −69 %, output −49 %, wall −55 %, cost −61 %) were **n=1 per arm**. At n=6 per
+    arm over 3 cards (H2251): create **−40 %**, output **−4.4 %**, wall **−12.3 %**, cost
+    **−22.3 %**. The saving is real and worth having, but roughly a third of what was
+    quoted; treat the output-halving claim as retired.
+  - **The load-bearing argument is the CEILING, not the price.** On `sakft` the baseline ran
+    **286 694 ms** and **266 349 ms** against the **300 000 ms** kill — twice within ~11 % of
+    dying — where the safe arm ran 232 891 and 189 106. H2189 saw the same thing as an
+    outright timeout. A window that completes beats a window that is 5 % cheaper.
+  - **Quality, at n=12 draws:** zero content loss anywhere (every sense carries Russian, no
+    `SAN-LOSS`/`UNMAPPED`), and sense segmentation moves as much *within* one arm as
+    *between* arms — so card content is not a function of the spawn shape. The free-text
+    `tag` vocabulary is not reproducible even with the flag held constant (mean within-arm
+    Jaccard 0.535), which is the condition H2189 itself named as closing its §4.2 question;
+    an arm-linked *style* component survives on top of that and is recorded as a residual.
+  - Numbers and method: [H2251 report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2251/SAFE_MODE_CANARY_GO_AND_TAG_DIVERGENCE_RULING_06-08-2026.md)
+    · original [H2189 report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md).
 - **Durable call budget (25-07-2026 hardening):** the bounded run, its fleet probes,
   and every headless worker share one `pwg.call_reservation.v1` ledger keyed by
   `run_id`. `max_calls` is a strict pre-spawn ceiling: reserve first, then spawn;
@@ -90,14 +117,44 @@ tracked-file drift and is wired into `window_selftest.py`
   clock for changing one directory**, no code change and no guard weakened. Pass an empty
   scratch dir as the subprocess `cwd`; the manifest carries every input the worker needs, so
   nothing depends on being inside the repo.
-- **The per-call cache is NEVER reused — budget for it, do not try to tune it away.** Two
-  *identical* back-to-back calls each re-created ~49 k tokens (49 153 → 49 165, cache read
-  pinned at 28 882): the second re-wrote exactly what the first had just written. The write is
-  a premium **cache create** (~$6/M), not a **read** (~$0.30/M), and at ~$0.30 it *is* the cost
-  of a call that translates nothing. **This is not TTL expiry** — the write lands in
-  `ephemeral_1h_input_tokens` and a 1-hour TTL cannot lapse between calls issued seconds apart.
-  A one-shot subprocess cannot amortise its own system prompt; that is a property of the route.
-  Do not "fix" it by batching (see the shape ruling below). **Single playbook of
+  **✅ Fixed (H2249, 03-08-2026) — was an open defect for one day.** H2158's walk rejected an
+  ancestor carrying a bare `CLAUDE.md` or a `.git`, but **not** one carrying
+  `.claude\CLAUDE.md`, and its `%TEMP%` directory sits under the Windows user profile:
+  **32 779 B** of operator memory (`C:\Users\user\.claude\CLAUDE.md` + `.claude\rules`)
+  reached every paid call between H2158 and this fix, invisible because the spawn directory
+  itself was empty. `bare_cli_cwd()` now **derives** candidates — an operator
+  `PWG_RU_CLI_CWD` override, then the historical `%TEMP%` directory, then each FIXED
+  filesystem root the OS reports (system drive last) — and returns one only after
+  `h2189_min_profile.cwd_ancestry_scan` proves the whole ancestry clean, else `None` (the
+  historical inherited-cwd behaviour). No drive letter is hardcoded. On this box it resolves
+  to `D:\pwg_ru_cli_cwd`, **0 injectable bytes**. Verify any spawn dir yourself with
+  `python src/pilot/h2189_min_profile.py --scan-cwd <dir>`; pinned by
+  `headless_worker_selftest.test_bare_cwd_ancestry_is_clean_or_none` (an assertion since
+  H2249 — it shipped as a report under H2189 precisely because it could not pass) plus
+  `test_bare_cwd_candidates_are_derived_not_hardcoded` and
+  `test_bare_cwd_refuses_a_dirty_ancestry_rather_than_returning_it`. `--safe-mode` merely
+  **masked** this and is no longer what stands between the operator's global `CLAUDE.md` and
+  a paid call; it remains the separate, opt-in **profile**-surface lever above.
+- **The per-call cache IS reused across calls — but do not bank on any single call getting
+  it. Rewritten 06-08-2026 ([H2250](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2250-Opus_SanskritLexicography_pwg-cli-cache-amortisation-remeasure_03.08.26.md));
+  the old "NEVER reused" was measured on CLI v1.127.0 and is false of v2.1.223.** In a
+  purpose-built 7-call sequence, the cold call wrote **26 243** (read 28 882, total
+  **55 125**) and six later calls reused it — five of them creating **0** and reading the
+  cold call's `create + read` exactly, at gaps of 34 s / 94 s / 120 s / 128 s / 557 s.
+  **The sixth re-created 20 740 at a 547 s gap while the call right after it, at a longer
+  557 s gap, read the full prefix** — so the miss is not a decay curve and not TTL, and its
+  prefix was also 14 tokens larger than the cached one. Operationally: **plan the cold
+  write once per run, treat a mid-run re-create as possible but uncommon, and do not build
+  a schedule that depends on hitting cache.** The write is a premium **cache create**
+  (~$6/M) against a **read** (~$0.30/M), so the saving is real when it lands. Every write
+  still goes to `ephemeral_1h_input_tokens`; `ephemeral_5m` is 0. The past-1 h gap is
+  **not** measured — with a non-time-driven miss demonstrated in the same run, one datum
+  there would be uninterpretable.
+  Do **not** "fix" any of this by batching (see the shape ruling below) — that ruling is
+  untouched. Report + committed envelopes:
+  [pwg_ru/h2250/CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md);
+  confirms [H2189 report §7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md).
+  **Single playbook of
   record** (ranked levers + Opus handoffs H2189–H2191 + H2158):
   [`PROMPT_CACHING_PWG_RU.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PROMPT_CACHING_PWG_RU.md).
   Route change tracked in
@@ -119,6 +176,19 @@ tracked-file drift and is wired into `window_selftest.py`
   > **non-terminating** call, so for it a higher ceiling strictly *increases* waste. Do not read
   > "the ceiling was raised" as "the timeouts are fixed" — that hang is a separate, still-open
   > defect (v1.130.0).
+  >
+  > **Still open on 06-08-2026 at CLI v2.1.223, and 300 000 is now demonstrably too low for
+  > a whole card** ([H2250](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2250-Opus_SanskritLexicography_pwg-cli-cache-amortisation-remeasure_03.08.26.md),
+  > incidental to a cache run). Five spawns of the production `build_prompt` surface on
+  > `nakzatra`: **three killed** (two at 300 s, one at 900 s), one clean at **511 908 ms
+  > wall / 494 603 ms api over 3 turns**, one at 48 414 ms over 4 turns that returned
+  > **zero cards** and failed the schema. So the clean case now runs ~1.7× the 300 s
+  > ceiling, and the non-terminating hang the note above records is still live at 900 s.
+  > Same class as the 05-08 `gate-0 HEALTH_NOGO — the measured leg was killed at
+  > 300 000 ms having returned nothing`
+  > ([#1144](https://github.com/gasyoun/SanskritLexicography/issues/1144)). Raising the
+  > ceiling remains the rejected fix (playbook rank —, "hides hang class"); the datum here
+  > is that **the ceiling is no longer separating slow calls from hung ones at all.**
 - **Live-gate before every paid window:** fresh
   [`/pwg-live-gate`](https://github.com/gasyoun/claude-config/blob/main/commands/pwg-live-gate.md)
   (representative ≥5 KB health + separate `dq_canary_puregloss`). A previous session's GO
@@ -609,7 +679,14 @@ H1447: **180/180** selftests PASS; parity **73** entries no drift (counts grow �
 
 ### A1 — health (representative ≥5 KB)
 
-Via [`h963_c4_gate0_probe.py`](h963_c4_gate0_probe.py) (strict: measured ≥ 30 000 ms ⇒ NO-GO):
+Via [h963_c4_gate0_probe.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h963_c4_gate0_probe.py). **The pass rule is DERIVED, never
+restated here:** the probe reads `probe_log.POLICIES[probe_log.CURRENT_POLICY]` and prints the
+ceiling it judged by on its own `ceiling` header line — read that, not this page. The numbers
+in the H1447 table below were taken under `production_v1` (30 000 ms wall, no route ceiling)
+and are kept as **dated history**; the live policy has since been `production_v2` (65 000) and
+is now `production_v3` (80 000 ms wall **and** 45 000 ms route). A runbook that names a live
+threshold goes stale within days — this one had, and said "strict: measured ≥ 30 000 ms ⇒
+NO-GO" for two policy generations after that stopped being true (H2254).
 
 | Reading | Elapsed | Result |
 |---|---|---|
@@ -633,10 +710,30 @@ matters; never reuse H1447's GO a day later.
 | cost | **$0.573**, `cost_evaluable=true` |
 | `--max-agents` | **1** is correct **only** for this single-key canary |
 
-Command shape (illustrative): `headless_worker.py <manifest> --output … --status-out …
---only-profile c4 --max-agents 1 --timeout 300` with `CLAUDE_CONFIG_DIR` bound to
-the c4 profile. Synthetic output is **never** promoted
-(`provenance_class = synthetic_control`).
+**The real command (H2245 — no longer "illustrative").** Build the manifest, then fire it.
+Step 1 is offline and spends nothing; only step 2 is a paid call.
+
+```
+python src/pilot/canary_manifest_build.py --profile-slot c4 \
+    --config-dir "D:\ClaudeTools\profiles\claude4\.claude" --outdir src/pilot/output/<hid>
+```
+
+It prints the manifest, harness, preflight and the `sha256` that step 2 needs, then the
+exact `headless_worker.py` invocation to paste — `--only-profile c4 --max-agents 1
+--timeout 300 --max-calls 3 --manifest-sha256 <sha> --preflight <path>
+--call-reservation <path> --run-id <run-id>`. `--max-agents 1` is correct **only** here
+(single-key canary); copying it onto a multi-key window re-creates the only-b0 starvation
+class. Judge with [`canary_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/canary_gate.py)
+`judge`. Synthetic output is **never** promoted (`provenance_class =
+synthetic_control`; the promoter's C-05 refusal is designed behaviour, not a failure).
+
+A known-good manifest is committed beside the fixture —
+[`dq_canary_puregloss~~h0_zz_pw.manifest.v2.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h994/canary/dq_canary_puregloss~~h0_zz_pw.manifest.v2.json)
+— so a fresh build can be diffed against it;
+[`canary_manifest_build_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/canary_manifest_build_selftest.py)
+does exactly that (wired into `window_selftest.py`). The canary rides the **production**
+`nominal_masked` prompt path: on pure gloss the mask is provably an identity transform
+(zero `{Tn}` placeholders), so no canary-specific prompt variant exists or is wanted.
 
 > **`--timeout` is part of the ceiling, not just a safety net (#983, 02-08-2026).** The
 > effective per-call bound is `min(--timeout × 1000, budgets.timeout_ceil_ms,
@@ -645,6 +742,24 @@ the c4 profile. Synthetic output is **never** promoted
 > with 12 of 16 calls killed at exactly 180 s. A sealed manifest's own
 > `budgets.timeout_ceil_ms` clamps it too and only ever *lowers*, so an artifact prepared
 > before this change must be re-budgeted, not merely re-run.
+>
+> **H2254 (07-08-2026) — above the maximum is now REFUSED, and the default IS the maximum.**
+> 300 000 ms is an absolute maximum by owner ruling (03-08-2026); raising it again needs a
+> new ruling backed by measured evidence. Three things changed, and the first is the one that
+> bites an operator:
+>
+> - **`--timeout` now defaults to 300, not 7200.** The two-hour default only ever survived
+>   because every route clamped it silently. Asking for nothing gets the maximum.
+> - **A request ABOVE the maximum raises instead of rounding down** — on `--timeout`, on a
+>   sealed `budgets.timeout_ceil_ms`, and in `validate_manifest` (so the planning routes
+>   refuse it too, not just the executor). The refusal happens *before* any subprocess is
+>   spawned, so a wrong request costs nothing. Lower values still bind exactly as before;
+>   the `min()` above is unchanged.
+> - **The number itself is imported, not copied.** `execution_contract.PRODUCTION_HARD_TIMEOUT_MS`
+>   is the single source for `headless_worker.HARD_TIMEOUT_MS`, `gen_opt_harness2.KILL_CEIL_MS`,
+>   the `KILL_CEIL_MS` baked into every generated `run_pilot_wf.*.js`, and the
+>   `budgets.timeout_ceil_ms` each manifest seals — the five-places-one-inert-edit trap #983
+>   documented.
 
 ### A3 — mechanical LIVE_GO → then stop or spend
 
