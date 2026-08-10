@@ -10,8 +10,8 @@ _Created: 09-08-2026 · Last updated: 10-08-2026_
 > bridge — has implemented the missing reserve-before-call / record-after-call
 > boundary offline. The NOGO below remains the truthful result of H2504's live
 > attempt (0 calls); its architectural blocker is now closed by
-> [`gateway_external.py`](../../src/pilot/gateway_external.py) and the
-> [11-group fault/replay report](../h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
+> [`gateway_external.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_external.py) and the
+> [11-group fault/replay report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
 > Live qualification is still **NOT RUN** and belongs only to the released Opus continuation.
 
 ---
