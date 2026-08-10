@@ -1,0 +1,80 @@
+{
+ "schema": "pwg.call_reservation.v1",
+ "runs": {
+  "h2539-canary-1734943": {
+   "max_calls": 2,
+   "calls_spent": 2,
+   "next_ordinal": 3,
+   "reservations": [
+    {
+     "reservation_id": "ea29cbcdc4dc466696675e1e7cc65ad4",
+     "ordinal": 1,
+     "reserved_at_ns": 1786348898459227600,
+     "pid": 51168,
+     "purpose": "canary_capability_probe_v1",
+     "profile": "claude-opus-5",
+     "detail": "{\"operation_sha256\":\"0796ebd59bff5400047ba8ac212afe4866ca9544fdd88f0e9e28c3acf8eda33b\",\"schema\":\"pwg.gateway_external_prepare.v1\",\"ticket_path\":\"C:\\\\Users\\\\user\\\\Documents\\\\GitHub\\\\SanskritLexicography-h2539-1734943\\\\RussianTranslation\\\\pwg_ru\\\\h2539\\\\evidence\\\\t1_ticket.json\"}",
+     "idempotency_key": "0796ebd59bff5400047ba8ac212afe4866ca9544fdd88f0e9e28c3acf8eda33b",
+     "finalized": true,
+     "finalized_at_ns": 1786350209395803000,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 0,
+      "subagent_tokens": 0,
+      "observed_cost_usd": 0
+     },
+     "finalization_evidence": {
+      "public_response_sha256": "2ac6a3818e7313c8913457a7529a5c76c42a8f49bed99659959910f1ca589c2b",
+      "record_fingerprint_sha256": "e5849e28f047f2d62f227333cc5d6e39b191967ae80b9e330788cc1e8543bcaa",
+      "saved_envelope_sha256": "b3402bd55c390047ac490859d7debed626ea8d480a05dead3e8ec93ab13a3c5d",
+      "schema": "pwg.gateway_external_envelope.v1",
+      "ticket_sha256": "02803ee314f65f6b911b5c2b38e817116cfd273975f56acc76aae37690973cd4"
+     }
+    },
+    {
+     "reservation_id": "ed6f34dfe8e641b2b49e70063da39cb5",
+     "ordinal": 2,
+     "reserved_at_ns": 1786351798791854900,
+     "pid": 56272,
+     "purpose": "canary_final_translation_v1",
+     "profile": "claude-opus-5",
+     "detail": "{\"operation_sha256\":\"22177a7186c81de21e6e8613478e566edbdd96db5b14bb5b48336a2a7cea73ef\",\"schema\":\"pwg.gateway_external_prepare.v1\",\"ticket_path\":\"C:\\\\Users\\\\user\\\\Documents\\\\GitHub\\\\SanskritLexicography-h2539-1734943\\\\RussianTranslation\\\\pwg_ru\\\\h2539\\\\evidence\\\\t2_ticket.json\"}",
+     "idempotency_key": "22177a7186c81de21e6e8613478e566edbdd96db5b14bb5b48336a2a7cea73ef",
+     "finalized": true,
+     "finalized_at_ns": 1786356055445053800,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 0,
+      "subagent_tokens": 0,
+      "observed_cost_usd": 0
+     },
+     "finalization_evidence": {
+      "public_response_sha256": "dac4dc7623265c465cad939bc166fbf847440f6aa7e94a3389286ebb6fdafd5d",
+      "record_fingerprint_sha256": "7a6c2668a88dc324a8a007a90a6b665107b5d2659b84ae50b0b713376beb7dfd",
+      "saved_envelope_sha256": "905abbbd55b819b42c1ed60264ee38dde2786207d8d626d181116eca02479b83",
+      "schema": "pwg.gateway_external_envelope.v1",
+      "ticket_sha256": "b86b4aa700c69799c8cadef61c02be9b16f55fb2b9d7427414ac58d7cceb172a"
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_read_tokens": 0,
+    "cache_creation_tokens": 0,
+    "subagent_tokens": 0,
+    "observed_cost_usd": 0.0,
+    "cost_evaluable": false,
+    "finalized_calls": 2,
+    "unevaluable_calls": 2,
+    "pending_calls": 0
+   }
+  }
+ }
+}

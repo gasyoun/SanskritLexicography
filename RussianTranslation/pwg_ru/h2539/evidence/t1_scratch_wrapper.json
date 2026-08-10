@@ -1,0 +1,19 @@
+{
+  "schema": "pwg.gateway_external_response.v1",
+  "run_id": "h2539-canary-1734943",
+  "reservation_id": "ea29cbcdc4dc466696675e1e7cc65ad4",
+  "route": "router-cheap-agent",
+  "requested_model": "claude-opus-5",
+  "returned_model": "claude-opus-5",
+  "purpose": "canary_capability_probe_v1",
+  "nonce": "236e8b9ac2fc067cd016bbc9f51e771d82182d952afd6d41e79ad77f0960334b",
+  "started_at": "2026-08-10T08:02:25.679Z",
+  "ended_at": "2026-08-10T08:02:53.228Z",
+  "wall_ms": 27549,
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"protocol_marker\":{\"name\":\"router.cheap.canary\",\"version\":\"v1\"},\"language_sample\":{\"lang\":\"ru\",\"text\":\"слово\"}}"
+    }
+  ]
+}

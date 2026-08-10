@@ -1,0 +1,30 @@
+{
+  "schema_marker": "pwg_ru.canary_final.v1",
+  "provenance": {
+    "provenance_class": "synthetic_control",
+    "route": "router-cheap-agent",
+    "model": "claude-opus-5",
+    "raw_sha256": "152a3eec0b6b9c167a91950d649a10d1f2d413f96c076e17f01859a2eaa9058d",
+    "portrait_sha256": "a43235e366573182884922f7fd42a2072c3148cef27de234d24c92fc75cbc4c7",
+    "source_senses": 3,
+    "promotable": false
+  },
+  "cards": [
+    {
+      "key1": "dq_canary_puregloss",
+      "iast": "",
+      "notes": "",
+      "records": [
+        {
+          "h": "0",
+          "grammar": "",
+          "senses": [
+            { "tag": "1", "german": "— 1〉 {%eine Schildkröte%}.", "russian": "черепаха", "equivalence_type": "equivalent", "source_type": "lexicographic", "government": [] },
+            { "tag": "2", "german": "— 2〉 {%ein kleiner Fisch%}.", "russian": "небольшая рыба", "equivalence_type": "explanatory", "source_type": "lexicographic", "government": [] },
+            { "tag": "3", "german": "— 3〉 {%eine Wasserpflanze%}.", "russian": "водное растение", "equivalence_type": "equivalent", "source_type": "lexicographic", "government": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}

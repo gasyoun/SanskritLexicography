@@ -1,6 +1,6 @@
 # PWG→RU/EN pipeline — history: solutions, failures, current state
 
-_Created: 04-07-2026 · Last updated: 02-08-2026_
+_Created: 04-07-2026 · Last updated: 10-08-2026_
 
 This is the orientation document for anyone (human or session) who needs the
 **shape** of how this pipeline got here, without reading the full
@@ -824,6 +824,31 @@ These are the failure *shapes* that have recurred across the project — if a
 future session hits something that smells like one of these, it is very
 likely the SAME class, not a new bug:
 
+- **A schema selftest built only from the schema's own constants cannot see a
+  prompt/schema contradiction** (H2539, 10-08-2026). The router.cheap canary's
+  Ticket 2 froze a 24-case selftest that passed every defect class — then burned
+  the last authorised paid call on `malformed_output`, because the prompt told the
+  model to reproduce the German skeleton line verbatim (`— 1〉 {%eine Schildkröte%}.`)
+  while the schema pinned the gloss alone (`{%eine Schildkröte%}.`). Every selftest
+  fixture had been written from the schema, so prompt and schema were never compared
+  to each other. The model obeyed the prompt exactly; the translation was clean 3/3
+  with zero other defects. **Before freezing a paid-call schema, validate at least one
+  instance constructed from the prompt's own inlined source text** — and generate the
+  shared literals from the fixture once instead of hand-typing them into both artifacts.
+- **The attestation module's default filter does not match every harness.**
+  `gateway_attestation.py` selects turns with `isSidechain: true`; harnesses that
+  record `Agent` calls as **main turns** (H2539's session: 101 main, 0 sidechain)
+  give it 0 turns in the window and so `model_matches_request: null` — which the
+  canary contract reads as NO-GO. `--include-main-turns` is the workaround, but it
+  widens observation to the whole window and therefore attests the served model for
+  *the window*, not provably for *the one dispatch inside it*. State that residual
+  whenever the flag is used; do not report it as a clean per-call attestation.
+- **A refused Agent call is not a spent Agent call.** H2539's transcript held 3
+  `Agent` tool_use blocks for 2 paid dispatches: one blocked by
+  `guard_agent_subspawn.py`, one rejected as `Agent type 'router-cheap-agent' not
+  found` (the ticket's *route label* is not a harness `subagent_type`). Counting
+  tool_use blocks would have overstated spend; classify each by its `tool_result`
+  before reporting a call count.
 - **Wide concurrency collapses the whole run.** >3 simultaneous root
   Workflows → server-side rate limiting → transient nulls (Slice D: 117 of
   them). Fix is process discipline (≤3-wide), not code. The same cliff hit

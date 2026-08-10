@@ -1,0 +1,3 @@
+{
+  "prompt": "Return a single JSON object as your ONLY output. No prose, no explanation, no markdown fences — only the JSON object itself.\n\nThe object must have EXACTLY these two keys and no others:\n1. \"protocol_marker\": an object with exactly {\"name\": \"router.cheap.canary\", \"version\": \"v1\"} — no other keys.\n2. \"language_sample\": an object with exactly {\"lang\": \"ru\", \"text\": \"<any short non-empty Russian word or phrase>\"} — no other keys.\n\nExample of EXACTLY the expected output (you must match this structure; the text value is your choice):\n{\"language_sample\": {\"lang\": \"ru\", \"text\": \"черепаха\"}, \"protocol_marker\": {\"name\": \"router.cheap.canary\", \"version\": \"v1\"}}"
+}

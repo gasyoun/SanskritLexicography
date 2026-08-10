@@ -1,0 +1,69 @@
+{
+  "hard_timeout_ms": 600000,
+  "max_calls": 2,
+  "nonce": "236e8b9ac2fc067cd016bbc9f51e771d82182d952afd6d41e79ad77f0960334b",
+  "operation_sha256": "0796ebd59bff5400047ba8ac212afe4866ca9544fdd88f0e9e28c3acf8eda33b",
+  "output_schema": {
+    "$id": "canary_capability_probe_v1.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": false,
+    "properties": {
+      "language_sample": {
+        "additionalProperties": false,
+        "properties": {
+          "lang": {
+            "const": "ru"
+          },
+          "text": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "lang",
+          "text"
+        ],
+        "type": "object"
+      },
+      "protocol_marker": {
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "const": "router.cheap.canary"
+          },
+          "version": {
+            "const": "v1"
+          }
+        },
+        "required": [
+          "name",
+          "version"
+        ],
+        "type": "object"
+      }
+    },
+    "required": [
+      "protocol_marker",
+      "language_sample"
+    ],
+    "title": "router.cheap canary capability probe — Ticket 1",
+    "type": "object"
+  },
+  "provenance_class": "synthetic_control",
+  "purpose": "canary_capability_probe_v1",
+  "request": {
+    "prompt": "Return a single JSON object as your ONLY output. No prose, no explanation, no markdown fences — only the JSON object itself.\n\nThe object must have EXACTLY these two keys and no others:\n1. \"protocol_marker\": an object with exactly {\"name\": \"router.cheap.canary\", \"version\": \"v1\"} — no other keys.\n2. \"language_sample\": an object with exactly {\"lang\": \"ru\", \"text\": \"<any short non-empty Russian word or phrase>\"} — no other keys.\n\nExample of EXACTLY the expected output (you must match this structure; the text value is your choice):\n{\"language_sample\": {\"lang\": \"ru\", \"text\": \"черепаха\"}, \"protocol_marker\": {\"name\": \"router.cheap.canary\", \"version\": \"v1\"}}"
+  },
+  "request_sha256": "b89c58f49bb806ecdb376a82f160beb780aa730e2d4334ee639310f574b77fec",
+  "requested_model": "claude-opus-5",
+  "reservation_id": "ea29cbcdc4dc466696675e1e7cc65ad4",
+  "reservation_ordinal": 1,
+  "reserved_at": "2026-08-10T08:01:38.459Z",
+  "reserved_at_ns": 1786348898459227600,
+  "route": "router-cheap-agent",
+  "run_id": "h2539-canary-1734943",
+  "schema": "pwg.gateway_external_ticket.v1",
+  "schema_sha256": "1702b3d2eb219fb148fbda9a0eb12f06bdcde39e297a86e4ca7a0d4d62829afc",
+  "ticket_sha256": "02803ee314f65f6b911b5c2b38e817116cfd273975f56acc76aae37690973cd4",
+  "waiver_id": "router-cheap-agent-owner-waiver-2026-08-09.v1"
+}

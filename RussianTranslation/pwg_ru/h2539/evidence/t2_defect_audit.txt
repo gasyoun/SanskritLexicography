@@ -1,0 +1,55 @@
+=== ROOT-CAUSE ATTRIBUTION: prompt instruction vs frozen schema constant ===
+The T2 prompt said: reproduce that sense's German skeleton line EXACTLY as given.
+
+sense 1
+  fixture skeleton line   = '— 1〉 {%eine Schildkröte%}.'
+  schema pinned const     = '{%eine Schildkröte%}.'
+  model returned          = '— 1〉 {%eine Schildkröte%}.'
+  model == skeleton line? True
+  model == pinned const?  False
+  schema const == line?   False
+
+sense 2
+  fixture skeleton line   = '— 2〉 {%ein kleiner Fisch%}.'
+  schema pinned const     = '{%ein kleiner Fisch%}.'
+  model returned          = '— 2〉 {%ein kleiner Fisch%}.'
+  model == skeleton line? True
+  model == pinned const?  False
+  schema const == line?   False
+
+sense 3
+  fixture skeleton line   = '— 3〉 {%eine Wasserpflanze%}.'
+  schema pinned const     = '{%eine Wasserpflanze%}.'
+  model returned          = '— 3〉 {%eine Wasserpflanze%}.'
+  model == skeleton line? True
+  model == pinned const?  False
+  schema const == line?   False
+
+VERDICT ON CAUSE:
+  The model obeyed the prompt verbatim. The frozen schema pinned the GLOSS
+  ONLY, dropping the line-opening "— N〉 " that the prompt itself supplied.
+  => Gate fired on a HARNESS-AUTHORED prompt/schema contradiction,
+     not on a route defect, model substitution, or translation defect.
+
+=== HANDOFF DEFECT CLASSES, CHECKED INDEPENDENTLY OF THE FROZEN SCHEMA ===
+  3/3 senses present           clean — got 3 of 3
+  no dropped/merged senses     clean — tags=['1', '2', '3']
+  sense order preserved        clean
+  russian non-empty + Cyrillic clean
+  no untranslated German/Latin clean — черепаха, небольшая рыба, водное растение
+  no placeholder leakage       clean
+  no letter ё in russian       clean
+  gloss markup {%…%} intact    clean
+  key1 no drift                clean — dq_canary_puregloss
+  no synthetic-promotion claim clean
+  provenance hashes bound      clean
+  government not invented      clean
+  exactly 1 card / 1 record    clean
+
+=== SUMMARY ===
+sealed envelope verdict      : schema_compliant=false, NO-GO (authoritative)
+gate failure attributed to   : harness prompt/schema contradiction on `german`
+other deterministic defects  : 0 (none)
+3/3 source senses rendered   : True
+
+This diagnostic does NOT overturn the NO-GO and does not repair any output.
