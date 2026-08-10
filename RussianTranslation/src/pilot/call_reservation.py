@@ -187,7 +187,7 @@ def _read(path):
                 or not isinstance(next_ordinal, int)
                 or next_ordinal != spent + 1):
             raise ValueError('%s: reservation counters are inconsistent' % run_id)
-        ids, ordinals = set(), []
+        ids, idempotency_keys, ordinals = set(), set(), []
         for item in reservations:
             if (not isinstance(item, dict)
                     or not isinstance(item.get('reservation_id'), str)
@@ -200,8 +200,17 @@ def _read(path):
                 raise ValueError('%s: reservation entry is invalid' % run_id)
             ids.add(item['reservation_id'])
             ordinals.append(item['ordinal'])
+            idempotency_key = item.get('idempotency_key')
+            if idempotency_key is not None:
+                if (not isinstance(idempotency_key, str) or not idempotency_key
+                        or idempotency_key in idempotency_keys):
+                    raise ValueError('%s: reservation idempotency key is invalid' % run_id)
+                idempotency_keys.add(idempotency_key)
             if item.get('finalized'):
                 normalize_telemetry(item.get('telemetry'))
+                evidence = item.get('finalization_evidence')
+                if evidence is not None and not isinstance(evidence, dict):
+                    raise ValueError('%s: finalization evidence is invalid' % run_id)
         if ordinals != list(range(1, spent + 1)):
             raise ValueError('%s: reservation ordinals are inconsistent' % run_id)
         # ``usage`` was added to the same v1 schema after the original
@@ -287,6 +296,17 @@ class CallReservationLedger:
         self.max_calls = max_calls
         self._initialize()
 
+    @classmethod
+    def open_existing(cls, path, run_id):
+        """Open an existing run without making up or changing its ceiling."""
+        absolute = os.path.abspath(path)
+        with _os_lock(absolute + '.lock'):
+            run = _read(absolute)['runs'].get(str(run_id))
+            if run is None:
+                raise ValueError('call reservation run missing: %s' % run_id)
+            max_calls = run.get('max_calls')
+        return cls(absolute, run_id, max_calls)
+
     def _initialize(self):
         with _os_lock(self.lock_path):
             data = _read(self.path)
@@ -311,13 +331,36 @@ class CallReservationLedger:
                 run['usage'] = usage
                 _write(self.path, data)
 
-    def reserve(self, purpose, profile=None, detail=None):
-        """Atomically spend one call slot and return its durable reservation."""
+    def reserve(self, purpose, profile=None, detail=None, idempotency_key=None):
+        """Atomically spend one call slot and return its durable reservation.
+
+        ``idempotency_key`` is optional for legacy callers.  When supplied, a
+        replay returns the one existing reservation only when all caller-bound
+        fields still match.  The lookup and first reservation share the same
+        cross-process lock, so two competing prepares cannot double-spend.
+        """
+        if idempotency_key is not None and (
+                not isinstance(idempotency_key, str) or not idempotency_key):
+            raise ValueError('idempotency_key must be a non-empty string')
         with _os_lock(self.lock_path):
             data = _read(self.path)
             run = data['runs'].get(self.run_id)
             if run is None:
                 raise ValueError('call reservation run disappeared: %s' % self.run_id)
+            if idempotency_key is not None:
+                existing = next((row for row in run.get('reservations', [])
+                                 if row.get('idempotency_key') == idempotency_key), None)
+                if existing is not None:
+                    expected = {
+                        'purpose': str(purpose),
+                        'profile': None if profile is None else str(profile),
+                        'detail': None if detail is None else str(detail),
+                    }
+                    actual = {name: existing.get(name) for name in expected}
+                    if actual != expected:
+                        raise ValueError(
+                            'idempotent reservation replay changed bound fields')
+                    return dict(existing)
             spent = int(run.get('calls_spent') or 0)
             limit = run.get('max_calls')
             if limit is not None and spent >= int(limit):
@@ -336,6 +379,8 @@ class CallReservationLedger:
                 item['profile'] = str(profile)
             if detail is not None:
                 item['detail'] = str(detail)
+            if idempotency_key is not None:
+                item['idempotency_key'] = idempotency_key
             run.setdefault('reservations', []).append(item)
             run['calls_spent'] = spent + 1
             run['next_ordinal'] = ordinal + 1
@@ -345,9 +390,15 @@ class CallReservationLedger:
             _write(self.path, data)
             return dict(item)
 
-    def finalize(self, reservation, telemetry):
-        """Idempotently attach validated telemetry and fold it into the durable run summary."""
+    def finalize(self, reservation, telemetry, evidence=None):
+        """Idempotently attach telemetry and optional response-bound evidence."""
         normalized = normalize_telemetry(telemetry)
+        if evidence is not None:
+            if not isinstance(evidence, dict):
+                raise ValueError('finalization evidence must be an object')
+            # Detach from caller-owned mutable values and require JSON-safe data.
+            evidence = json.loads(json.dumps(
+                evidence, ensure_ascii=False, sort_keys=True, separators=(',', ':')))
         reservation_id = (reservation.get('reservation_id')
                           if isinstance(reservation, dict) else reservation)
         if not reservation_id:
@@ -364,10 +415,15 @@ class CallReservationLedger:
             if item.get('finalized'):
                 if item.get('telemetry') != normalized:
                     raise ValueError('reservation already finalized with different telemetry')
+                if item.get('finalization_evidence') != evidence:
+                    raise ValueError(
+                        'reservation already finalized with different evidence')
                 return dict(item)
             item['finalized'] = True
             item['finalized_at_ns'] = time.time_ns()
             item['telemetry'] = normalized
+            if evidence is not None:
+                item['finalization_evidence'] = evidence
             usage = run.setdefault('usage', _empty_usage())
             for name in TOKEN_FIELDS:
                 usage[name] = usage.get(name, 0) + normalized[name]
