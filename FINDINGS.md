@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 10-08-2026 (§525 — an out-of-stack interactive tool needs durable intent before the call and response-bound finalization evidence)_
+_Created: 26-06-2026 · Last updated: 10-08-2026 (§526 — a second reference separates dictionary-memorisation from glossing ability; the MW premium is small, real, and largest in the no-context arm)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -5614,3 +5614,65 @@ predicate over exact provenance, not a default value: absent usage on the author
 separate. Reusing the waiver on c4 or turning unknown into `$0` is a contract failure.
 
 > Codex Sol (`gpt-5.6-sol`) · 10-08-2026 · H2533 (Codex) — durable router.cheap two-phase Agent bridge, then mint the Opus canary. Instrument and 11-group fault matrix: [`gateway_external.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_external.py) · [`ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
+
+### §526. A second reference is the only cheap way to separate "the model knows this dictionary" from "the model can gloss" — and the premium it exposes is small, real, and largest exactly where memorisation is suspected
+
+Every number in the org's definition-generation eval (H730/H752/H972) was scored against
+Monier-Williams 1899 — a public-domain text certainly present in every model's pretraining
+data. That design cannot separate *reproduction of MW's wording* from genuine sense coverage:
+the A1−A2 delta isolates what corpus attestations add, but nothing inside an MW-only design
+isolates what memorisation contributes. The published caveat said so and stopped there.
+
+**Measured (H2408, n=333 of the frozen 500, 5 arms, 333/333 judged, 0 nulls):** re-scoring the
+same *frozen* candidate glosses against Gérard Huet's **French** Heritage glosses — a different
+lexicographer, century and language — costs one judge pass, no regeneration, and answers the
+question directly.
+
+1. **The arm ranking is reference-invariant.** `F1_fable_ctx > A1_chat_ctx > A3_reasoner_ctx >
+   A2_chat_noctx > A0_random_floor`, identically under the MW judge and the cross-lingual
+   French judge. Before this, the strongest available claim was "F1 leads on the dictionary it
+   was scored against".
+2. **The MW-familiarity premium is real but small:** paired per-item
+   `Δ = adequacy_MW − adequacy_FR` is **+0.13…+0.25** on a 0–5 scale (bootstrap 95% CI over
+   5,000 resamples excludes 0 for all four system arms; exact two-sided sign test
+   p ≤ 1.5e-4). That is ~3–5% of scale — enough to bias a reported number, nowhere near enough
+   to manufacture a ranking.
+3. **The floor's premium is NOT significant** (+0.030, CI includes 0) — as it must be, since a
+   seeded derangement of MW glosses has no sense coverage to be credited for against *either*
+   reference. That asymmetry is what rules out "the judge simply prefers English candidates
+   when the reference is English" as the explanation, and makes the premium a property of
+   systems producing MW-shaped content rather than a judge artefact.
+4. **It is largest where memorisation is most suspected.** `A2_chat_noctx` — given no
+   attestations, so its only route to a gloss is parametric recall of MW — carries the biggest
+   premium (+0.246); the best arm carries the smallest (+0.132). Contamination inflates
+   MW-scored numbers slightly and inflates the memorisation arm most, which is the direction
+   the caveat predicted rather than a new confound.
+
+⚠️ **The reusable methodological rule: a cross-lingual second reference is a JUDGED
+measurement, not a surface-metric one.** Against French, token-F1 collapses to 0.012–0.037
+(vs 0.101–0.338 against MW) and chrF compresses every arm into 7.26–12.09 with the floor at
+8.73 — a 3.4-point spread that cannot survive noise, even though it does still happen to order
+the arms correctly. Multi-reference chrF is dominated by the same-language reference (+0.76 for
+the best arm) and adds essentially nothing. Reference divergence itself is chrF 17.72 /
+token-F1 0.040: two independent glosses of one headword share almost no tokens across a
+language gap. So report the judge, gate it (floor separation held across the language gap:
+0.165 vs 3.99–4.54), and treat cross-lingual chrF as decoration.
+
+Two further transferable pieces. **The frequency-gradient inversion is diagnosable only with a
+second reference** — per-cell chrF-MW rises as frequency *falls* (low/mono 45.22 > mid/mono
+37.09 > high/mono 26.32), which reads as skill at rare words; against French the same cells
+compress to 11.49–17.34, confirming it as an artefact of MW's gold-length distribution
+(high-frequency MW entries have much longer, more complex gold). And **a restricted reference
+can be consumed without redistributing it**: the eval commits `mw_key1` + entry anchor +
+**SHA-256** + word count instead of Heritage's LGPLLR gloss text, and the scorer *refuses to
+run* when a digest stops matching the local checkout — rights compliance that also makes the
+join reproducible, rather than a reason to park the work.
+
+Residual, stated rather than implied: one judge model (`deepseek-chat`) scored both references,
+so a judge-side French-vs-English asymmetry would masquerade as an MW premium. The floor result
+argues against a large one, but a second judge family is what would settle it — and the
+human-scored subsample remains owed before any paper-grade claim. Heritage is also not
+causally unrelated to MW's tradition; "independent" here means independent authorship, century
+and language.
+
+> Fable 5 (`claude-fable-5`) · 09-08-2026 · [H2408](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2408-Fable_kosha_definition-gen-gloss-wsd-pilot_07.08.26.md) — Heritage second reference for the defgen eval. Protocol + all numbers: [DEFGEN_HERITAGE_SECOND_REFERENCE_EVAL.md](https://github.com/gasyoun/kosha/blob/main/docs/DEFGEN_HERITAGE_SECOND_REFERENCE_EVAL.md) · harness [defgen_heritage_ref.py](https://github.com/gasyoun/kosha/blob/main/scripts/defgen_heritage_ref.py) + [defgen_heritage_delta.py](https://github.com/gasyoun/kosha/blob/main/scripts/defgen_heritage_delta.py) · [kosha PR #364](https://github.com/gasyoun/kosha/pull/364), [v0.110.0](https://github.com/gasyoun/kosha/releases/tag/v0.110.0).
