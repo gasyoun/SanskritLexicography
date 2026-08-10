@@ -140,8 +140,12 @@ disguise them; its full regression run starts from their released green state.
 ## Remaining boundary
 
 The bridge proves safe preparation and recording but deliberately does not qualify live
-router.cheap output. After merge and patch release, one Opus 5 continuation may spend at most
-two reservations: a tiny final-envelope capability turn, then—only on clean PASS—the existing
+router.cheap output. [PR #1623](https://github.com/gasyoun/SanskritLexicography/pull/1623)
+is merged and [v1.144.27](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.27)
+is published at `7133ef9308ca190bfe7edadb71933fead43ef93c`. H2534 (Opus 5) — Run the
+released router.cheap two-ticket live canary and mint gateway-w1 only on GO — is the minted
+continuation. It may spend at most two reservations: a tiny final-envelope capability turn,
+then—only on clean PASS—the existing
 [`dq_canary_puregloss`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h994/canary/dq_canary_puregloss~~h0_zz_pw.portrait.json)
 three-sense synthetic canary. A NO-GO records durable evidence and mints
 no production handoff. A GO may mint, but not execute, a separate gateway-w1 handoff.
