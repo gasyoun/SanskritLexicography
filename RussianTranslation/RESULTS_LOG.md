@@ -1,8 +1,25 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 09-08-2026_
+_Created: 09-07-2026 · Last updated: 10-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 10-08-2026 — H2533 (Codex) — Build the durable router.cheap Agent reserve/record bridge, then mint the Opus canary — PASS offline; 0 calls, $0.00
+
+Codex Sol (`gpt-5.6-sol`). **No gateway, Agent, Max, API or production call was made.**
+
+| Layer | Verdict | Evidence |
+|---|---|---|
+| reserve-before-call ticket | **PASS** | strict `max_calls=0/1/N`, atomic competing prepares, immutable request/schema/model/route/waiver hashes |
+| crash/replay convergence | **PASS** | reservation, ticket, response, finalization and envelope fault points; no duplicate spend or double fold |
+| response validation | **PASS** | exact provenance + final-text-only parsing + complete Draft 2020-12 schema |
+| unknown-cost waiver | **PASS, scoped** | router.cheap only; envelope `null`, ledger numeric floor separate; c4/no-waiver refuse |
+| downstream isolation | **PASS** | synthetic, `promotable=false`; headless/canary/coordinator/promotion regressions green |
+| bridge suite | **11/11 groups** | [`gateway_external_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_external_selftest.py) |
+| full window | **210/210** | no bridge-induced baseline failure |
+
+Report: [`ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
+The live Opus qualification remains unspent and is minted only after merge + patch release.
 
 ## 09-08-2026 (H2504) — `router.cheap` capture pipeline PASSES 10/10 hermetically; live transport is `GATEWAY_FINAL_ENVELOPE_NOGO`; 0 gateway calls, $0.00
 
@@ -3049,4 +3066,3 @@ count before/after). `python nws_ls_markup.py census`, `nws_tag_census.py --self
 уточн.`, `Мед.`, `Линг`, `Лингв`) are retired — see [FINDINGS §504](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis).
 
 Model: Sonnet 5 (`claude-sonnet-5`).
-

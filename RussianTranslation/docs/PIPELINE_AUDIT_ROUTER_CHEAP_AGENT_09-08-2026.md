@@ -1,6 +1,6 @@
 # Pipeline audit — router.cheap Agent route (09-08-2026)
 
-_Created: 09-08-2026 · Last updated: 09-08-2026_
+_Created: 09-08-2026 · Last updated: 10-08-2026_
 
 **Mode:** post-incident audit after H2504 (Opus 5) — qualify `router.cheap` for PWG
 Russian translation—proved that the interactive Agent tool is outside every Python-reachable
@@ -14,6 +14,19 @@ Primary implementation:
 [`gateway_route_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_route_selftest.py)
 · incident report:
 [`GATEWAY_QUALIFICATION_REPORT_H2504_09.08.26.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2504/GATEWAY_QUALIFICATION_REPORT_H2504_09.08.26.md).
+
+## 10-08 implementation closure
+
+H2533 (Codex) — durable router.cheap two-phase Agent bridge — closes build specs 1–4
+offline. [`gateway_external.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_external.py) now supplies
+`prepare-external`, `save-response`, `record-external`, and a read-only
+`recovery-report`; three committed protocol schemas and an 11-group fault/replay suite
+pin the contract. `GatewayCall.invoke()` remains for injected in-process tests and now
+shares full Draft 2020-12 validation with the external recorder. No live call was made.
+Full evidence: [`ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
+
+The tables below preserve the 09-08 diagnosis as history. Their “open” labels are
+superseded by this closure section; only the harness-owned live canary remains.
 
 ## Real call graph
 
@@ -81,14 +94,14 @@ Agent tool cannot return into the same stack. That boundary is the controlling g
    re-prepares keys on released code and stops at hash-bound `AWAITING_REVIEW`. The current
    adapter correctly refuses real provenance and must stay that way.
 
-## Capability verdict
+## Capability verdict (updated 10-08)
 
-The capture core is useful and now refuses exact-model substitution. It still cannot safely
-drive a live Agent call because the only legal money sequence—durable reservation before the
-call, idempotent evidence capture after it—has no two-phase bridge. M.G.'s cost waiver removes
-one policy blocker; it does not remove this execution blocker. Build spec 1 is therefore the
-next code task, followed by one tiny final-envelope call and one synthetic canary. No
-production translation or promotion is authorized by this audit.
+The capture core refuses exact-model substitution, and the released-next bridge now supplies
+the legal money sequence: durable reservation before the call and idempotent evidence capture
+after it. Missing usage remains unknown, not zero, under the exact versioned waiver. The only
+remaining qualification work is the bounded Opus live continuation: one tiny capability turn,
+then at most one synthetic canary. No production translation or promotion is authorized by
+this audit or by the bridge.
 
 ## Not audited
 
