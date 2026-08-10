@@ -5585,3 +5585,29 @@ byte-identical (6,454 roots match, 0 disagree).
 Instrument: [`src/audit_griffith_en_alignment.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/audit_griffith_en_alignment.py) (`--selftest` exits non-zero on the live break — deliberately not yet wired into CI). The RU lane is unaffected: it reads `#ru` from `corpus.db`, whose columns agree throughout. Nothing consumes the EN lane yet — [`corpus_gate._citation_reuse`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/corpus_gate.py) still calls `consult_card()` with the default `lang='ru'` — which is the only reason a wrong verse has not already reached a card. The other language columns of the same source HTML should be re-checked before any of them is promoted to an of-record lane.
 
 > Opus 5 (`claude-opus-5`) · 07-08-2026 · [H2361](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2361-Opus_SanskritLexicography_griffith-en-rv-mandala8-valakhilya-misalignment_07.08.26.md), from a code review of the shipped H2334 pilot ([v1.144.15](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md), [PR #1182](https://github.com/gasyoun/SanskritLexicography/pull/1182)). Full evidence: [GRIFFITH_EN_RV_MANDALA8_VALAKHILYA_MISALIGNMENT_07-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2361/GRIFFITH_EN_RV_MANDALA8_VALAKHILYA_MISALIGNMENT_07-08-2026.md).
+
+### §525. An interactive tool outside Python's call stack needs a durable intent before the call and response-bound evidence inside finalization — a saved response alone cannot prove it was authorized
+
+`GatewayCall.invoke()` originally made one correct in-process sequence: reserve, call,
+validate, finalize. The router.cheap Agent tool lives outside that stack, so neither half of
+the obvious manual workaround is safe. Calling first and pasting the response later has no
+pre-spend authorization; reserving first and finalizing from a later process loses the identity
+of the response if that process dies after ledger finalization but before saving its envelope.
+
+The reusable transaction shape has **two independent idempotency keys**. Prepare atomically
+stores an operation hash in the reservation (run, ceiling, route, model, purpose, provenance,
+timeout, waiver, request and schema) and derives its nonce from that durable reservation. Record
+atomically stores a second fingerprint with finalization (ticket + complete public response +
+semantic envelope). The first prevents competing/resumed prepares from spending twice; the
+second prevents a different response from occupying the crash window after finalization. A
+read-only report must distinguish a reserved call with no ticket from a pending ticket, because
+the former is ambiguous spend, never a reusable free slot.
+
+Two details generalize. First, an artifact cannot literally contain the SHA-256 of its own final
+bytes; define the in-envelope `saved_envelope_sha256` over the canonical envelope with that field
+omitted, and separately hash transport/file bytes when needed. Second, an accounting waiver is a
+predicate over exact provenance, not a default value: absent usage on the authorized route maps to
+`cost_evaluable=false` and envelope `observed_cost_usd=null`, while the numeric ledger floor stays
+separate. Reusing the waiver on c4 or turning unknown into `$0` is a contract failure.
+
+> Codex Sol (`gpt-5.6-sol`) · 10-08-2026 · H2533 (Codex) — durable router.cheap two-phase Agent bridge, then mint the Opus canary. Instrument and 11-group fault matrix: [`gateway_external.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_external.py) · [`ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).

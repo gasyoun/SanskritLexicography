@@ -1,10 +1,18 @@
 # Gateway Qualification Report — H2504 (router.cheap → PWG Russian)
 
-_Created: 09-08-2026 · Last updated: 09-08-2026_
+_Created: 09-08-2026 · Last updated: 10-08-2026_
 
 **Handoff:** H2504 (Opus 5) — Qualify router.cheap for PWG Russian translation: final JSON, metered canary, then mint w1
 **Model:** Claude Opus 5 (`claude-opus-5`) via `router.cheap` (`ANTHROPIC_BASE_URL=https://router.cheap`)
 **Environment:** Windows 10, `SanskritLexicography-h2504-1531676` worktree
+
+> **10-08 continuation:** H2533 (Codex) — durable router.cheap two-phase Agent
+> bridge — has implemented the missing reserve-before-call / record-after-call
+> boundary offline. The NOGO below remains the truthful result of H2504's live
+> attempt (0 calls); its architectural blocker is now closed by
+> [`gateway_external.py`](../../src/pilot/gateway_external.py) and the
+> [11-group fault/replay report](../h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
+> Live qualification is still **NOT RUN** and belongs only to the released Opus continuation.
 
 ---
 
@@ -104,15 +112,17 @@ a live run compares its envelope against the manifest rather than replacing it.
 
 ---
 
-## What a live qualification pass requires
+## What the released live continuation requires
 
-A harness session (interactive Claude Code, `ANTHROPIC_AUTH_TOKEN` present) must:
+A harness session with the router.cheap Agent surface must:
 
-1. Load `gateway_route.py` and construct a `GatewayCall` with a live transport that
-   calls the Agent tool with the `dq_canary_puregloss` portrait prompt.
-2. Invoke once (`max_calls=1`); the envelope is `seal_envelope`-persisted.
-3. Compare against `dq_canary_puregloss~~h0_zz_pw.manifest.v2.json` via `canary_gate.py`.
-4. `GATEWAY_CANARY_PASS` → mint Wave 1. `GATEWAY_CANARY_NOGO` → record the failure class.
+1. Run `gateway_external.py prepare-external` with a strict two-call sitting ceiling.
+2. Make exactly the ticketed Agent call, save its complete public wrapper with
+   `save-response`, then run `record-external` even when usage is absent.
+3. Only if the tiny capability envelope is clean, repeat once for
+   `dq_canary_puregloss`; validate 3/3 Russian senses and all deterministic gates.
+4. GO may mint—but not execute—a separate gateway-w1 handoff. NO-GO closes with
+   the sealed evidence and no production handoff.
 
 Budget: the active router.cheap profile authorises up to $500 / ~09-08-2026 to 16-08-2026.
 
@@ -146,9 +156,10 @@ external account bound, not a pipeline-enforceable dollar ceiling.
 
 The fresh post-incident audit is
 [`PIPELINE_AUDIT_ROUTER_CHEAP_AGENT_09-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PIPELINE_AUDIT_ROUTER_CHEAP_AGENT_09-08-2026.md).
-It identifies the remaining P0: a durable two-phase bridge that reserves in Python before the
-interactive Agent turn and idempotently records the response afterward. Simply reopening a
-chat still cannot satisfy that ordering.
+It identified the remaining P0: a durable two-phase bridge that reserves in Python before the
+interactive Agent turn and idempotently records the response afterward. H2533 (Codex) — Build
+the durable router.cheap Agent reserve/record bridge, then mint the Opus canary — implemented
+that P0 offline; simply reopening a chat without its immutable ticket still cannot satisfy the order.
 
 ---
 

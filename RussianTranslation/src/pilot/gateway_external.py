@@ -55,6 +55,11 @@ ENVELOPE_SCHEMA = 'pwg.gateway_external_envelope.v1'
 RECOVERY_SCHEMA = 'pwg.gateway_external_recovery.v1'
 OWNER_WAIVER_ID = 'router-cheap-agent-owner-waiver-2026-08-09.v1'
 DETAIL_SCHEMA = 'pwg.gateway_external_prepare.v1'
+PROTOCOL_SCHEMA_PATHS = {
+    TICKET_SCHEMA: os.path.join(REPO, 'schemas', 'pwg_gateway_external_ticket.schema.json'),
+    RESPONSE_SCHEMA: os.path.join(REPO, 'schemas', 'pwg_gateway_external_response.schema.json'),
+    ENVELOPE_SCHEMA: os.path.join(REPO, 'schemas', 'pwg_gateway_external_envelope.schema.json'),
+}
 
 
 class ExternalRefusal(RuntimeError):
@@ -87,6 +92,15 @@ def _read_json(path, label):
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:
         raise ExternalRefusal('%s is not complete UTF-8 JSON: %s' % (label, exc)) from exc
     return value, raw
+
+
+def _validate_protocol(value, schema_id):
+    schema, _ = _read_json(PROTOCOL_SCHEMA_PATHS[schema_id], 'protocol schema')
+    try:
+        validate_complete_schema(value, schema)
+    except ValueError as exc:
+        raise ExternalRefusal('%s validation failed: %s' % (schema_id, exc)) from exc
+    return value
 
 
 def _fire(fault, phase):
@@ -168,7 +182,7 @@ def _ticket_payload(reservation, descriptor, request, output_schema):
         'output_schema': output_schema,
     }
     payload['ticket_sha256'] = _canonical_hash(payload)
-    return payload
+    return _validate_protocol(payload, TICKET_SCHEMA)
 
 
 def _operation_from_ticket(value):
@@ -224,6 +238,7 @@ def _verify_ticket(value):
         # jsonschema directly through the shared helper's stable prefix.
         if 'output schema is invalid' in str(exc):
             raise ExternalRefusal('ticket schema is invalid: %s' % exc) from exc
+    _validate_protocol(value, TICKET_SCHEMA)
     return value
 
 
@@ -332,6 +347,26 @@ def recovery_report(ledger_path, run_id):
     }
 
 
+def save_response_wrapper(response_path, wrapper, fault=None):
+    """Durably publish a complete public Agent response wrapper.
+
+    The interactive harness owns the call; this helper owns only the final
+    same-directory temp/fsync/replace step.  A partial scratch capture is never
+    accepted by ``record_external``.
+    """
+    if not isinstance(wrapper, dict) or wrapper.get('schema') != RESPONSE_SCHEMA:
+        raise ExternalRefusal('response wrapper schema mismatch')
+    if not isinstance(wrapper.get('content'), list):
+        raise ExternalRefusal('response content must be a list')
+    _validate_protocol(wrapper, RESPONSE_SCHEMA)
+    if os.path.exists(response_path):
+        existing, _ = _read_json(response_path, 'response wrapper')
+        if existing != wrapper:
+            raise ExternalRefusal('saved response wrapper differs from replay')
+        return existing
+    return _atomic_json(response_path, wrapper, 'response', fault=fault)
+
+
 def cost_policy(route, waiver_id, usage):
     """Apply the exact owner waiver without turning unknown cost into zero."""
     telemetry, reason = telemetry_from_gateway_usage(usage)
@@ -413,6 +448,7 @@ def _validate_response_binding(wrapper, ticket):
                 % (field, value, wrapper.get(field)))
     if not isinstance(wrapper.get('content'), list):
         raise ExternalRefusal('response content must be a list')
+    _validate_protocol(wrapper, RESPONSE_SCHEMA)
 
 
 def _validate_ticket_against_ledger(ticket, ledger):
@@ -510,6 +546,7 @@ def record_external(*, ticket_path, ledger_path, run_id, response_path,
             _canonical_hash(result) if schema_compliant else None),
     }
     envelope['saved_envelope_sha256'] = _canonical_hash(envelope)
+    _validate_protocol(envelope, ENVELOPE_SCHEMA)
     record_fingerprint = _canonical_hash({
         'ticket_sha256': ticket['ticket_sha256'],
         'public_response_sha256': public_response_sha256,
@@ -581,6 +618,13 @@ def _parser():
     record.add_argument('--schema', required=True)
     record.add_argument('--envelope', required=True)
 
+    save = sub.add_parser(
+        'save-response', help='atomically publish a complete public response wrapper')
+    save.add_argument('--source', required=True,
+                      help='scratch JSON capture to validate and publish')
+    save.add_argument('--response', required=True,
+                      help='durable response-wrapper destination')
+
     recovery = sub.add_parser(
         'recovery-report', help='read-only report of pending/ambiguous reservations')
     recovery.add_argument('--ledger', required=True)
@@ -605,6 +649,9 @@ def main(argv=None):
                 ticket_path=args.ticket, ledger_path=args.ledger,
                 run_id=args.run_id, response_path=args.response,
                 schema_path=args.schema, envelope_path=args.envelope)
+        elif args.command == 'save-response':
+            wrapper, _ = _read_json(args.source, 'scratch response wrapper')
+            result = save_response_wrapper(args.response, wrapper)
         else:
             result = recovery_report(args.ledger, args.run_id)
     except ExternalRefusal as exc:
