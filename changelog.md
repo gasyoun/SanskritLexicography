@@ -13,6 +13,11 @@ at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentiona
 not an error.
 
 ## [Unreleased]
+### Added
+- **H2537 (Opus 5 `claude-opus-5`) — served-model + usage attestation for the router.cheap Agent bridge.** New read-only [`gateway_attestation.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_attestation.py) reads the local harness session transcript (`message.model` + `message.usage`, `isSidechain`-filtered) and emits a canonical self-hashed `pwg.gateway_external_attestation.v1` record; `record-external` gained `--attestation`, which must bind to the same run/reservation/requested-model, cover the wrapper's exact window, and self-hash-verify or be refused. New selftest 9/9; released bridge still 11/11 with **unchanged** semantic signatures. Proven end-to-end on a real transcript (115 turns, unanimous `claude-opus-5`, 60,955 output / 897,055 input / 9.2M cache-read tokens) at zero spend.
+
+### Fixed
+- **The sealed envelope could not record a router model substitution (H2537).** `record_external` wrote `model_matches_request: True` unconditionally and the envelope schema pinned it to `{"const": true}`, while `_validate_response_binding` merely required the operator-supplied `returned_model` to equal the *requested* model — so a substituted model was unrecordable by construction and an envelope's model binding was a hash-sealed assertion, not an observation. The field is now computed (`true`/`false` when attested, **`null` when not independently established**), the schema accepts `boolean|null` plus `model_attested`/`attested_model`/`attestation_sha256`/`attested_usage_totals`/`attestation_ambiguous`, and an attested mismatch seals truthfully as `failure_class: model_substituted` with `schema_compliant: false`, no result and no cost claim. This unblocked [H2534](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2534-Opus_SanskritLexicography_router-cheap-live-canary-gateway-w1_10.08.26.md), which was returned NO-GO with zero paid calls rather than spending against unverifiable evidence.
 
 ## [1.144.27] - 2026-08-10
 ### Added
