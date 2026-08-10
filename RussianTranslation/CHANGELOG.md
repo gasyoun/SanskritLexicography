@@ -10,6 +10,10 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added
+
+- **H2533 (Codex) — Build the durable router.cheap Agent reserve/record bridge, then mint the Opus canary (Codex Sol `gpt-5.6-sol`, 10-08-2026):** new `gateway_external.py` CLI reserves before an interactive Agent turn, atomically publishes ticket/response/envelope artifacts, validates exact route/model/run/reservation/purpose/nonce plus complete Draft 2020-12 JSON Schema and timing, and replays idempotently across every injected crash point. The exact owner waiver keeps absent usage unknown (`cost_evaluable=false`, envelope cost `null`) only on `router-cheap-agent`; synthetic output remains permanently non-promotable. Three protocol schemas and an 11-group offline CI suite ship with pinned semantic hashes. Zero calls and zero production mutations.
+
 ### Fixed
 
 - **router.cheap post-incident hardening and CI recovery (09-08-2026, Codex Sol `gpt-5.6-sol`):** returned-model substitution now fails with `failure_class=provenance` before any result/hash is accepted; the 10-case gateway suite runs in CI; canary artifacts derive the shared 600 s ceiling; the full window suite is 210/210. The H1339 offline benchmark now supplies the same empty optional `csl-pywork` bibliography fixture on Windows and Linux, eliminating a host-checkout-dependent semantic signature. No model call or promotion was made. The remaining two-phase external Agent reserve/record bridge is specified in the post-incident audit and queued separately.

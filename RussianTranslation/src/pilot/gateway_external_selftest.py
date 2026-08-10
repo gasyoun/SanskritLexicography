@@ -29,6 +29,7 @@ from call_reservation import CallReservationLedger  # noqa: E402
 
 MODEL = 'claude-opus-5'
 PURPOSE = 'h2533:synthetic-capability'
+REQUEST = {'prompt': 'Return the exact synthetic fixture.', 'tools': []}
 RESULT = {
     'ok': True,
     'cards': [{
@@ -64,6 +65,16 @@ SCHEMA = {
         },
     },
 }
+PROTOCOL_SCHEMAS = {
+    'ticket': os.path.join(REPO, 'schemas', 'pwg_gateway_external_ticket.schema.json'),
+    'response': os.path.join(REPO, 'schemas', 'pwg_gateway_external_response.schema.json'),
+    'envelope': os.path.join(REPO, 'schemas', 'pwg_gateway_external_envelope.schema.json'),
+}
+SEMANTIC_SIGNATURES = {
+    'request': 'a1f3152184a29d5042817e1c92e96e7c7ef483c593178f972f91fab21c5fe806',
+    'schema': 'd695c9f4df763e9592c22d2b990c21dfdeeabfdf3c0695eee8e9ba711d07f9d0',
+    'result': 'd0c45566293f713f3e248bb5626518edd6e60c3ee29e781ddf9451c5e4e3021d',
+}
 
 
 class ExpectedCrash(RuntimeError):
@@ -89,7 +100,7 @@ def fixture(tmp, run_id='h2533-test', max_calls=2, purpose=PURPOSE,
     ticket_path = os.path.join(tmp, ticket_name)
     envelope_path = os.path.join(tmp, ticket_name + '.envelope.json')
     response_path = os.path.join(tmp, ticket_name + '.response.json')
-    write_json(request_path, {'prompt': 'Return the exact synthetic fixture.', 'tools': []})
+    write_json(request_path, REQUEST)
     write_json(schema_path, SCHEMA)
     return {
         'run_id': run_id,
@@ -294,6 +305,22 @@ def test_record_success_hashes_and_unknown_cost_waiver():
         assert again == env and after == before
 
 
+def test_protocol_schema_files_validate_real_artifacts():
+    assert ext._canonical_hash(REQUEST) == SEMANTIC_SIGNATURES['request']
+    assert ext._canonical_hash(SCHEMA) == SEMANTIC_SIGNATURES['schema']
+    assert ext._canonical_hash(RESULT) == SEMANTIC_SIGNATURES['result']
+    with tempfile.TemporaryDirectory() as tmp:
+        paths = fixture(tmp, max_calls=1)
+        ticket = prepare(paths)
+        response = wrapper(ticket)
+        env = record(paths, ticket, response)
+        values = {'ticket': ticket, 'response': response, 'envelope': env}
+        for name, path in PROTOCOL_SCHEMAS.items():
+            with open(path, encoding='utf-8') as handle:
+                schema = json.load(handle)
+            ext.validate_complete_schema(values[name], schema)
+
+
 def test_record_fault_recovery_is_byte_identical():
     phases = ('before_ledger_finalization', 'after_ledger_finalization',
               'during_envelope_temp_write', 'after_envelope_replacement')
@@ -379,6 +406,30 @@ def test_missing_partial_divergent_response_and_timing():
             'finalized_calls'] == 1
 
 
+def test_response_write_faults_converge():
+    for phase in ('during_response_temp_write', 'after_response_replacement'):
+        with tempfile.TemporaryDirectory() as tmp:
+            paths = fixture(tmp, run_id='response-' + phase, max_calls=1)
+            ticket = prepare(paths)
+            response = wrapper(ticket)
+            try:
+                ext.save_response_wrapper(
+                    paths['response_path'], response, fault=crash_at(phase))
+            except ExpectedCrash:
+                pass
+            else:
+                raise AssertionError('fault did not fire: ' + phase)
+            saved = ext.save_response_wrapper(paths['response_path'], response)
+            assert saved == response
+            first = open(paths['response_path'], 'rb').read()
+            assert ext.save_response_wrapper(paths['response_path'], response) == response
+            assert open(paths['response_path'], 'rb').read() == first
+            env = record(paths, ticket)
+            assert env['schema_compliant'] is True
+            assert CallReservationLedger(
+                paths['ledger_path'], paths['run_id'], 1).spent() == 1
+
+
 def test_final_blocks_and_complete_json_schema():
     failures = [
         [],
@@ -433,9 +484,11 @@ TESTS = [
     test_competing_prepares_are_atomic,
     test_prepare_fault_recovery_and_read_only_report,
     test_record_success_hashes_and_unknown_cost_waiver,
+    test_protocol_schema_files_validate_real_artifacts,
     test_record_fault_recovery_is_byte_identical,
     test_provenance_substitution_refuses_without_finalizing,
     test_missing_partial_divergent_response_and_timing,
+    test_response_write_faults_converge,
     test_final_blocks_and_complete_json_schema,
     test_waiver_is_exact_and_synthetic_never_promotes,
 ]
@@ -456,6 +509,9 @@ def selftest():
             len(failed), len(TESTS), ', '.join(failed)))
         return False
     print('gateway_external_selftest: PASS (%d/%d groups)' % (len(TESTS), len(TESTS)))
+    print('  semantic signatures: request=%s schema=%s result=%s' % (
+        SEMANTIC_SIGNATURES['request'], SEMANTIC_SIGNATURES['schema'],
+        SEMANTIC_SIGNATURES['result']))
     return True
 
 

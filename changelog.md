@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H2533 (Codex) — Build the durable router.cheap Agent reserve/record bridge, then mint the Opus canary (Codex Sol `gpt-5.6-sol`).** `prepare-external` now durably reserves before spend; `save-response` and `record-external` atomically bind the returned public wrapper to exact route/model/run/reservation/purpose/nonce, full Draft 2020-12 schema, timing, waiver provenance and seven semantic hashes. Replays converge without duplicate calls or ledger folds; missing usage stays unknown only under the exact router waiver; every result is synthetic and non-promotable. Offline bridge 11/11, window 210/210, relevant headless/canary/coordinator/promotion suites green; no model call or production mutation.
+
 ## [1.144.26] - 2026-08-10
 ### Fixed
 - **router.cheap exact-model provenance now fails closed (Codex Sol `gpt-5.6-sol`, 09-08-2026).** The gateway adapter recorded a returned-model mismatch but still emitted `schema_compliant=true` and a result hash. A substituted model now produces `failure_class=provenance`, no result and no result hash; its 10-case offline self-test is now an explicit CI gate. The stale canary fixture and printed command derive the shared H2313 600-second ceiling, and the full 210-case window suite is green after an evidence-backed parity-ledger refresh. The H1339 “hermetic” benchmark also no longer consumes an optional local `csl-pywork` bibliography on Windows while degrading without it on Linux: every run receives the same empty optional-sibling fixture and the CI signature is cross-platform. The H2504 post-incident audit specifies the still-missing durable two-phase Agent-call bridge and records M.G.'s scoped permission to continue with truthful `cost_evaluable=false` evidence.
