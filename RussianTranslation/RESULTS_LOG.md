@@ -19,7 +19,11 @@ Codex Sol (`gpt-5.6-sol`). **No gateway, Agent, Max, API or production call was 
 | full window | **210/210** | no bridge-induced baseline failure |
 
 Report: [`ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
-The live Opus qualification remains unspent and is minted only after merge + patch release.
+Delivered by [PR #1623](https://github.com/gasyoun/SanskritLexicography/pull/1623) and
+[release v1.144.27](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.27).
+The unspent live continuation is H2534 (Opus 5) — Run the released router.cheap two-ticket
+live canary and mint gateway-w1 only on GO; its hard ceiling is two reservations/calls with
+no retry or reroll.
 
 ## 09-08-2026 (H2504) — `router.cheap` capture pipeline PASSES 10/10 hermetically; live transport is `GATEWAY_FINAL_ENVELOPE_NOGO`; 0 gateway calls, $0.00
 
