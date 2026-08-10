@@ -242,6 +242,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§524. A parallel-corpus column can be misaligned against its own row key](#524-a-parallel-corpus-column-can-be-misaligned-against-its-own-row-key--griffiths-english-is-off-by-the-vālakhilya-block-for-rv-8498103-and-a-char-count-selftest-cannot-see-it) — Griffith English is displaced for 678 RV stanzas while structural counts remain perfect; cross-check content against another column, not only key/length.
 - 🔴 [§525. An interactive tool outside Python's call stack needs durable intent before the call and response-bound evidence inside finalization](#525-an-interactive-tool-outside-pythons-call-stack-needs-a-durable-intent-before-the-call-and-response-bound-evidence-inside-finalization--a-saved-response-alone-cannot-prove-it-was-authorized) — persist an operation identity before spend and the response fingerprint in the same atomic update as finalization; either half alone leaves a duplicate-spend or divergent-replay crash window.
 - 🔴 [§527. A schema selftest written from the schema's own constants is blind to a prompt/schema contradiction — the defect it cannot see is exactly the one that burns a paid call](#527-a-schema-selftest-written-from-the-schemas-own-constants-is-blind-to-a-promptschema-contradiction--the-defect-it-cannot-see-is-exactly-the-one-that-burns-a-paid-call) — 24/24 offline cases passed, then the last authorised call failed `malformed_output` because prompt and schema disagreed on one literal; generate shared literals from the fixture once and selftest an instance built from the prompt's own text. Also: `gateway_attestation.py`'s `isSidechain` default yields `null` on harnesses that log Agent calls as main turns, and refused Agent blocks must not be counted as spent calls.
+- 🔴 [§528. A top-band-only gold set for BLI reports 99.5% coverage and hides a 0%–100% per-stratum spread — the instrument cannot see what the research question asks](#528-a-top-band-only-gold-set-for-bli-reports-995-coverage-and-hides-a-0100-per-stratum-spread--the-instrument-cannot-see-what-the-research-question-asks) — H1521's top-400-by-frequency gold set could only sample the 0.96–1.00 end of a presence range that runs down to 0.00 (band-1 VERB); the stratified 500-row frame measures 64.2% frame-wide. Report per-stratum presence beside any aggregate — a near-zero cell yields coverage evidence but no P@1 signal.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -5678,28 +5679,6 @@ and language.
 
 > Fable 5 (`claude-fable-5`) · 09-08-2026 · [H2408](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2408-Fable_kosha_definition-gen-gloss-wsd-pilot_07.08.26.md) — Heritage second reference for the defgen eval. Protocol + all numbers: [DEFGEN_HERITAGE_SECOND_REFERENCE_EVAL.md](https://github.com/gasyoun/kosha/blob/main/docs/DEFGEN_HERITAGE_SECOND_REFERENCE_EVAL.md) · harness [defgen_heritage_ref.py](https://github.com/gasyoun/kosha/blob/main/scripts/defgen_heritage_ref.py) + [defgen_heritage_delta.py](https://github.com/gasyoun/kosha/blob/main/scripts/defgen_heritage_delta.py) · [kosha PR #364](https://github.com/gasyoun/kosha/pull/364), [v0.110.0](https://github.com/gasyoun/kosha/releases/tag/v0.110.0).
 
-### §528. A top-band-only gold set for BLI reports 99.5% coverage and hides a 0%–100% per-stratum spread — the instrument cannot see what the research question asks
-
-`corpus_lexicon.jsonl`'s automatic 400-lemma gold set (H1521, top-400 by DCS frequency band)
-returned coverage = 0.995 — so high it looked like a system property. It isn't. Probing the
-full candidate frame (12,939 glossable Koch × DCS lemmas) across all five frequency bands
-shows per-stratum presence in the lexicon runs from 1.00 (band-5 ADV) all the way down to
-**0.00** (band-1 VERB). The top-band set can only sample from the 0.96–1.00 end of that
-range, so its coverage figure describes the frame, not the lexicon. Frame-wide for the
-stratified 500-row B1 gold set: **321/500 = 64.2%**.
-
-**Implication.** A headline coverage number from a non-stratified BLI gold set is not
-portable to other lemma populations. Report per-stratum presence alongside any aggregate; a
-cell with near-zero presence yields coverage evidence but no P@1 signal, and mixing the two
-silently downgrades retrieval failures to absence.
-
-**Source.** [BLI_GOLD_SET_ANNOTATION_PROTOCOL_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/BLI_GOLD_SET_ANNOTATION_PROTOCOL_2026.md)
-§1/§7 · [`frame_presence_report.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/frame_presence_report.py)
-· [SanskritLexicography PR #1634](https://github.com/gasyoun/SanskritLexicography/pull/1634),
-[v1.144.30](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.30).
-
-> Fable 5 (`claude-fable-5`) · 10-08-2026 · [H2401 (Fable 5) — ACL B1: BLI gold-set design and annotation protocol](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2401-Fable_SanskritLexicography_bli-b1-gold-set-design_07.08.26.md) · full per-stratum table and scripts in the protocol doc linked above.
-
 ### §527. A schema selftest written from the schema's own constants is blind to a prompt/schema contradiction — the defect it cannot see is exactly the one that burns a paid call
 
 The router.cheap two-ticket canary froze its Ticket 2 output schema only after a 24-case
@@ -5741,3 +5720,25 @@ route label `router-cheap-agent` is not a harness `subagent_type` — so call co
 from each block's `tool_result`, never from the block count.
 
 > Opus 5 (`claude-opus-5`) · 10-08-2026 · H2539 (Opus 5) — attested router.cheap two-ticket live canary at v1.144.28, verdict NO-GO. Report: [CANARY_QUALIFICATION_REPORT_ROUTER_CHEAP_NO-GO_10-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2539/CANARY_QUALIFICATION_REPORT_ROUTER_CHEAP_NO-GO_10-08-2026.md) · selftest [t2_schema_selftest.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2539/t2_schema_selftest.py) · attribution audit [t2_defect_audit.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2539/evidence/t2_defect_audit.txt).
+
+### §528. A top-band-only gold set for BLI reports 99.5% coverage and hides a 0%–100% per-stratum spread — the instrument cannot see what the research question asks
+
+`corpus_lexicon.jsonl`'s automatic 400-lemma gold set (H1521, top-400 by DCS frequency band)
+returned coverage = 0.995 — so high it looked like a system property. It isn't. Probing the
+full candidate frame (12,939 glossable Koch × DCS lemmas) across all five frequency bands
+shows per-stratum presence in the lexicon runs from 1.00 (band-5 ADV) all the way down to
+**0.00** (band-1 VERB). The top-band set can only sample from the 0.96–1.00 end of that
+range, so its coverage figure describes the frame, not the lexicon. Frame-wide for the
+stratified 500-row B1 gold set: **321/500 = 64.2%**.
+
+**Implication.** A headline coverage number from a non-stratified BLI gold set is not
+portable to other lemma populations. Report per-stratum presence alongside any aggregate; a
+cell with near-zero presence yields coverage evidence but no P@1 signal, and mixing the two
+silently downgrades retrieval failures to absence.
+
+**Source.** [BLI_GOLD_SET_ANNOTATION_PROTOCOL_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/BLI_GOLD_SET_ANNOTATION_PROTOCOL_2026.md)
+§1/§7 · [`frame_presence_report.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/frame_presence_report.py)
+· [SanskritLexicography PR #1634](https://github.com/gasyoun/SanskritLexicography/pull/1634),
+[v1.144.30](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.30).
+
+> Fable 5 (`claude-fable-5`) · 10-08-2026 · [H2401 (Fable 5) — ACL B1: BLI gold-set design and annotation protocol](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2401-Fable_SanskritLexicography_bli-b1-gold-set-design_07.08.26.md) · full per-stratum table and scripts in the protocol doc linked above.
