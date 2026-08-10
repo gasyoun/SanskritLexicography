@@ -36,6 +36,7 @@ from execution_contract import (  # noqa: E402
     PRODUCTION_HARD_TIMEOUT_MS,
     assert_timeout_within_ceiling,
 )
+from gateway_attestation import ATTESTATION_SCHEMA  # noqa: E402
 from gateway_route import (  # noqa: E402
     GATEWAY_ROUTE,
     SYNTHETIC_PROVENANCE,
@@ -429,15 +430,29 @@ def _content_outcome(wrapper, output_schema):
     return True, None, None, result, text
 
 
-def _validate_response_binding(wrapper, ticket):
+def _validate_response_binding(wrapper, ticket, attestation=None):
+    """Bind a saved wrapper to its ticket.
+
+    ``returned_model`` is normally required to equal the requested model — the
+    contract forbids substitution.  When an H2537 attestation is supplied and it
+    *observed* a different served model, that equality is deliberately not
+    enforced: refusing here would discard the only evidence of the substitution.
+    ``record_external`` instead seals the mismatch truthfully
+    (``model_matches_request: false``) and marks the call non-compliant.
+    """
     if not isinstance(wrapper, dict) or wrapper.get('schema') != RESPONSE_SCHEMA:
         raise ExternalRefusal('response wrapper schema mismatch')
+    attested_model = None
+    if isinstance(attestation, dict):
+        attested_model = attestation.get('attested_model')
     expected = {
         'run_id': ticket['run_id'],
         'reservation_id': ticket['reservation_id'],
         'route': ticket['route'],
         'requested_model': ticket['requested_model'],
-        'returned_model': ticket['requested_model'],
+        'returned_model': (
+            attested_model if isinstance(attested_model, str) and attested_model
+            else ticket['requested_model']),
         'purpose': ticket['purpose'],
         'nonce': ticket['nonce'],
     }
@@ -472,8 +487,42 @@ def _validate_ticket_against_ledger(ticket, ledger):
     return reservation
 
 
+def _load_attestation(attestation_path, ticket, wrapper):
+    """Read and bind an H2537 served-model/usage attestation, or return None.
+
+    The attestation is an independent observation written by the harness, so it
+    must bind to the same run/reservation/model as the ticket and must cover the
+    wrapper's declared call window.  A mis-bound attestation is refused rather
+    than ignored: silently dropping it would return the envelope to the
+    self-asserted state this feature exists to end.
+    """
+    if not attestation_path:
+        return None
+    record, raw = _read_json(attestation_path, 'attestation')
+    if record.get('schema') != ATTESTATION_SCHEMA:
+        raise ExternalRefusal('attestation schema mismatch')
+    for field, expected in (
+            ('run_id', ticket['run_id']),
+            ('reservation_id', ticket['reservation_id']),
+            ('requested_model', ticket['requested_model'])):
+        if record.get(field) != expected:
+            raise ExternalRefusal(
+                'attestation %s mismatch: expected %r, got %r'
+                % (field, expected, record.get(field)))
+    if record.get('started_at') != wrapper.get('started_at') or \
+            record.get('ended_at') != wrapper.get('ended_at'):
+        raise ExternalRefusal(
+            'attestation window does not match the response wrapper window')
+    recomputed = dict(record)
+    stated = recomputed.pop('attestation_sha256', None)
+    if sha256_bytes(canonical_json_bytes(recomputed)) != stated:
+        raise ExternalRefusal('attestation self-hash does not verify')
+    return record
+
+
 def record_external(*, ticket_path, ledger_path, run_id, response_path,
-                    schema_path, envelope_path, fault=None):
+                    schema_path, envelope_path, attestation_path=None,
+                    fault=None):
     """Validate and seal one saved public response, idempotently."""
     ticket, _ = _read_json(ticket_path, 'ticket')
     _verify_ticket(ticket)
@@ -490,7 +539,8 @@ def record_external(*, ticket_path, ledger_path, run_id, response_path,
     # Only after all ticket/request/schema/ledger bindings pass may response
     # content be read.
     wrapper, response_raw = _read_json(response_path, 'response wrapper')
-    _validate_response_binding(wrapper, ticket)
+    attestation = _load_attestation(attestation_path, ticket, wrapper)
+    _validate_response_binding(wrapper, ticket, attestation)
     public_response_sha256 = sha256_bytes(response_raw)
 
     timing_ok, timing_failure, timing_error = _timing_outcome(
@@ -503,6 +553,22 @@ def record_external(*, ticket_path, ledger_path, run_id, response_path,
 
     telemetry, usage_reason = telemetry_from_gateway_usage(wrapper.get('usage'))
     policy = cost_policy(ticket['route'], ticket['waiver_id'], wrapper.get('usage'))
+
+    # An attested served-model mismatch is a hard contract breach: the route
+    # returned a model the ticket did not request.  It is sealed truthfully and
+    # marked non-compliant rather than refused, so the evidence survives.
+    model_attested = attestation is not None
+    attested_model = attestation.get('attested_model') if model_attested else None
+    attestation_ambiguous = attestation.get('ambiguous') if model_attested else None
+    model_matches_request = (
+        attestation.get('model_matches_request') if model_attested else None)
+    if model_matches_request is False:
+        schema_compliant = False
+        failure_class = failure_class or 'model_substituted'
+        error = error or (
+            'attested served model %r differs from requested %r'
+            % (attested_model, ticket['requested_model']))
+
     if not schema_compliant:
         telemetry = dict(telemetry, cost_evaluable=False)
     observed = policy['observed_cost_usd']
@@ -514,7 +580,7 @@ def record_external(*, ticket_path, ledger_path, run_id, response_path,
         'route': ticket['route'],
         'requested_model': ticket['requested_model'],
         'returned_model': wrapper['returned_model'],
-        'model_matches_request': True,
+        'model_matches_request': model_matches_request,
         'provenance_class': ticket['provenance_class'],
         'promotable': False,
         'run_id': ticket['run_id'],
@@ -544,6 +610,13 @@ def record_external(*, ticket_path, ledger_path, run_id, response_path,
         'final_text_sha256': sha256_bytes(text.encode('utf-8')) if text else None,
         'canonical_result_sha256': (
             _canonical_hash(result) if schema_compliant else None),
+        'model_attested': model_attested,
+        'attested_model': attested_model,
+        'attestation_sha256': (
+            attestation.get('attestation_sha256') if model_attested else None),
+        'attested_usage_totals': (
+            attestation.get('usage_totals') if model_attested else None),
+        'attestation_ambiguous': attestation_ambiguous,
     }
     envelope['saved_envelope_sha256'] = _canonical_hash(envelope)
     _validate_protocol(envelope, ENVELOPE_SCHEMA)
@@ -617,6 +690,12 @@ def _parser():
     record.add_argument('--response', required=True)
     record.add_argument('--schema', required=True)
     record.add_argument('--envelope', required=True)
+    record.add_argument(
+        '--attestation',
+        help='optional H2537 served-model/usage attestation json '
+             '(gateway_attestation.py). When supplied, returned_model and usage '
+             'are bound to an independent harness observation instead of being '
+             'accepted as operator assertions.')
 
     save = sub.add_parser(
         'save-response', help='atomically publish a complete public response wrapper')
@@ -648,7 +727,8 @@ def main(argv=None):
             result = record_external(
                 ticket_path=args.ticket, ledger_path=args.ledger,
                 run_id=args.run_id, response_path=args.response,
-                schema_path=args.schema, envelope_path=args.envelope)
+                schema_path=args.schema, envelope_path=args.envelope,
+                attestation_path=args.attestation)
         elif args.command == 'save-response':
             wrapper, _ = _read_json(args.source, 'scratch response wrapper')
             result = save_response_wrapper(args.response, wrapper)

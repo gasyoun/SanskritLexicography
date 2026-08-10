@@ -3070,3 +3070,40 @@ count before/after). `python nws_ls_markup.py census`, `nws_tag_census.py --self
 уточн.`, `Мед.`, `Линг`, `Лингв`) are retired — see [FINDINGS §504](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis).
 
 Model: Sonnet 5 (`claude-sonnet-5`).
+
+## 10-08-2026 — Served-model + usage attestation, gateway bridge (H2537)
+
+Context: the released router.cheap bridge sealed `returned_model` and `usage` straight from an
+operator-written wrapper, wrote `model_matches_request: True` unconditionally, and pinned that
+field to `{"const": true}` in the envelope schema — so a router model substitution was
+unrecordable by construction. H2537 added an independent observation source (the local harness
+session transcript) and made the field computed. Full memo:
+[SERVED_MODEL_USAGE_ATTESTATION_10-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2537/SERVED_MODEL_USAGE_ATTESTATION_10-08-2026.md).
+
+### Offline gates
+
+| Gate | Result |
+|---|--:|
+| `gateway_external_selftest.py` (released bridge) | PASS 11/11, semantic signatures unchanged |
+| `gateway_attestation_selftest.py` (new) | PASS 9/9 |
+| `py_compile`, envelope-schema JSON, whitespace/EOF | OK |
+
+### End-to-end on a real transcript (read-only, zero spend)
+
+| Measure | Value |
+|---|--:|
+| Assistant turns in window | 115 |
+| `models_observed` | `['claude-opus-5']` (unanimous) |
+| `model_matches_request` | `true` |
+| `output_tokens` | 60,955 |
+| `input_tokens` | 897,055 |
+| `cache_read_input_tokens` | 9,200,264 |
+| `cache_creation_input_tokens` | 510,617 |
+| Turns with usage · unparseable lines | 115 · 0 |
+
+**Trust boundary:** `message.model` is the endpoint's own claim as recorded by the client, not
+router-side cryptographic proof. Attestation makes substitution and token usage *detectable* and
+moves the claim from operator-asserted to harness-observed; it does not establish physical model
+identity.
+
+Model: Opus 5 (`claude-opus-5`).

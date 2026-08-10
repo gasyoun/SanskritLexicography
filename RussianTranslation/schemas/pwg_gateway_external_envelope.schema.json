@@ -13,6 +13,8 @@
     "observed_cost_usd", "ledger_observed_cost_floor_usd", "ledger_telemetry",
     "usage_policy_reason", "ticket_sha256", "request_sha256", "schema_sha256",
     "public_response_sha256", "final_text_sha256", "canonical_result_sha256",
+    "model_attested", "attested_model", "attestation_sha256",
+    "attested_usage_totals", "attestation_ambiguous",
     "saved_envelope_sha256"
   ],
   "properties": {
@@ -20,7 +22,7 @@
     "route": {"const": "router-cheap-agent"},
     "requested_model": {"type": "string", "minLength": 1},
     "returned_model": {"type": "string", "minLength": 1},
-    "model_matches_request": {"const": true},
+    "model_matches_request": {"type": ["boolean", "null"]},
     "provenance_class": {"const": "synthetic_control"},
     "promotable": {"const": false},
     "run_id": {"type": "string", "minLength": 1},
@@ -49,6 +51,11 @@
     "public_response_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
     "final_text_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
     "canonical_result_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "model_attested": {"type": "boolean"},
+    "attested_model": {"type": ["string", "null"], "minLength": 1},
+    "attestation_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "attested_usage_totals": {"type": ["object", "null"]},
+    "attestation_ambiguous": {"type": ["boolean", "null"]},
     "saved_envelope_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
   }
 }
