@@ -2,6 +2,9 @@
 
 _Created: 09-08-2026 · Last updated: 10-08-2026_
 
+Changelog: not applicable — this post-release edit only replaces forward-looking delivery
+language with the actual PR, release and successor handoff; no runtime contract changed.
+
 **Mode:** post-incident audit after H2504 (Opus 5) — qualify `router.cheap` for PWG
 Russian translation—proved that the interactive Agent tool is outside every Python-reachable
 credential and usage surface. M.G.'s subsequent ruling permits this route to run with
@@ -24,6 +27,10 @@ offline. [`gateway_external.py`](https://github.com/gasyoun/SanskritLexicography
 pin the contract. `GatewayCall.invoke()` remains for injected in-process tests and now
 shares full Draft 2020-12 validation with the external recorder. No live call was made.
 Full evidence: [`ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
+[PR #1623](https://github.com/gasyoun/SanskritLexicography/pull/1623) merged green and
+[v1.144.27](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.27) is
+published. The bounded live successor is H2534 (Opus 5) — Run the released router.cheap
+two-ticket live canary and mint gateway-w1 only on GO.
 
 The tables below preserve the 09-08 diagnosis as history. Their “open” labels are
 superseded by this closure section; only the harness-owned live canary remains.
