@@ -15,7 +15,7 @@ across reservation/ticket/response/finalization/envelope converges without dupli
 Missing router usage remains `cost_evaluable=false` / envelope cost `null` under the exact
 owner waiver only. Window 210/210 plus headless/canary/coordinator/promotion suites are green.
 No model call or production mutation occurred. Evidence:
-[`pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md`](../../pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
+[`ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
 
 ## 2026-07-18 — H1209 controller-worker canary, 3-card validation slice (promote-DRY) — orchestration **Fable 5** (`claude-fable-5`) resuming an **Opus 4.8** (`claude-opus-4-8[1m]`) session · controller agents **Opus 4.8** (`claude-opus-4-8`) · workers **Sonnet 5** (`claude-sonnet-5`) — ✅ rig VALIDATED end-to-end: v2 canonical 3/3 PASS, after v1 exposed a gate-design defect (canonical 1/3 vs self-reported 3/3)
 

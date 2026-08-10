@@ -18,12 +18,12 @@ Primary implementation:
 ## 10-08 implementation closure
 
 H2533 (Codex) — durable router.cheap two-phase Agent bridge — closes build specs 1–4
-offline. [`gateway_external.py`](../src/pilot/gateway_external.py) now supplies
+offline. [`gateway_external.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_external.py) now supplies
 `prepare-external`, `save-response`, `record-external`, and a read-only
 `recovery-report`; three committed protocol schemas and an 11-group fault/replay suite
 pin the contract. `GatewayCall.invoke()` remains for injected in-process tests and now
 shares full Draft 2020-12 validation with the external recorder. No live call was made.
-Full evidence: [`ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md`](../pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
+Full evidence: [`ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
 
 The tables below preserve the 09-08 diagnosis as history. Their “open” labels are
 superseded by this closure section; only the harness-owned live canary remains.

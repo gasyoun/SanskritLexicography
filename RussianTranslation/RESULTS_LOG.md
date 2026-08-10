@@ -15,10 +15,10 @@ Codex Sol (`gpt-5.6-sol`). **No gateway, Agent, Max, API or production call was 
 | response validation | **PASS** | exact provenance + final-text-only parsing + complete Draft 2020-12 schema |
 | unknown-cost waiver | **PASS, scoped** | router.cheap only; envelope `null`, ledger numeric floor separate; c4/no-waiver refuse |
 | downstream isolation | **PASS** | synthetic, `promotable=false`; headless/canary/coordinator/promotion regressions green |
-| bridge suite | **11/11 groups** | [`gateway_external_selftest.py`](src/pilot/gateway_external_selftest.py) |
+| bridge suite | **11/11 groups** | [`gateway_external_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_external_selftest.py) |
 | full window | **210/210** | no bridge-induced baseline failure |
 
-Report: [`ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md`](pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
+Report: [`ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
 The live Opus qualification remains unspent and is minted only after merge + patch release.
 
 ## 09-08-2026 (H2504) — `router.cheap` capture pipeline PASSES 10/10 hermetically; live transport is `GATEWAY_FINAL_ENVELOPE_NOGO`; 0 gateway calls, $0.00

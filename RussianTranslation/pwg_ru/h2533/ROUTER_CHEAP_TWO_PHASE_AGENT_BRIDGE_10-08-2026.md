@@ -1,6 +1,9 @@
 # router.cheap two-phase Agent bridge — offline delivery evidence
 
-_Created: 10-08-2026 · H2533 (Codex) — Build the durable router.cheap Agent reserve/record bridge, then mint the Opus canary · Codex Sol (`gpt-5.6-sol`)_
+_Created: 10-08-2026 · Last updated: 10-08-2026_
+
+**Handoff:** H2533 (Codex) — Build the durable router.cheap Agent reserve/record bridge,
+then mint the Opus canary. **Executor:** Codex Sol (`gpt-5.6-sol`).
 
 ## Verdict
 
@@ -19,14 +22,14 @@ now a durable four-command protocol:
 
 ## Public surfaces
 
-- Implementation: `src/pilot/gateway_external.py`
-- Fault/replay suite: `src/pilot/gateway_external_selftest.py`
-- Shared primitives: `src/pilot/gateway_route.py` and `src/pilot/call_reservation.py`
+- Implementation: [`gateway_external.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_external.py)
+- Fault/replay suite: [`gateway_external_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_external_selftest.py)
+- Shared primitives: [`gateway_route.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_route.py) and [`call_reservation.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/call_reservation.py)
 - Protocol schemas:
-  - `schemas/pwg_gateway_external_ticket.schema.json`
-  - `schemas/pwg_gateway_external_response.schema.json`
-  - `schemas/pwg_gateway_external_envelope.schema.json`
-- Offline CI gate: `.github/workflows/ci.yml`
+  - [`pwg_gateway_external_ticket.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/pwg_gateway_external_ticket.schema.json)
+  - [`pwg_gateway_external_response.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/pwg_gateway_external_response.schema.json)
+  - [`pwg_gateway_external_envelope.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/pwg_gateway_external_envelope.schema.json)
+- Offline CI gate: [`ci.yml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/ci.yml)
 
 CLI discovery:
 
@@ -139,7 +142,8 @@ disguise them; its full regression run starts from their released green state.
 The bridge proves safe preparation and recording but deliberately does not qualify live
 router.cheap output. After merge and patch release, one Opus 5 continuation may spend at most
 two reservations: a tiny final-envelope capability turn, then—only on clean PASS—the existing
-`dq_canary_puregloss` three-sense synthetic canary. A NO-GO records durable evidence and mints
+[`dq_canary_puregloss`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h994/canary/dq_canary_puregloss~~h0_zz_pw.portrait.json)
+three-sense synthetic canary. A NO-GO records durable evidence and mints
 no production handoff. A GO may mint, but not execute, a separate gateway-w1 handoff.
 
 _Dr. Mārcis Gasūns_
