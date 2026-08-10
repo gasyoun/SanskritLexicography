@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.27] - 2026-08-10
 ### Added
 - **H2533 (Codex) — Build the durable router.cheap Agent reserve/record bridge, then mint the Opus canary (Codex Sol `gpt-5.6-sol`).** `prepare-external` now durably reserves before spend; `save-response` and `record-external` atomically bind the returned public wrapper to exact route/model/run/reservation/purpose/nonce, full Draft 2020-12 schema, timing, waiver provenance and seven semantic hashes. Replays converge without duplicate calls or ledger folds; missing usage stays unknown only under the exact router waiver; every result is synthetic and non-promotable. Offline bridge 11/11, window 210/210, relevant headless/canary/coordinator/promotion suites green; no model call or production mutation.
 
