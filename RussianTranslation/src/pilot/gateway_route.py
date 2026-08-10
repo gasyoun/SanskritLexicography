@@ -38,6 +38,9 @@ import sys
 import tempfile
 import time
 
+from jsonschema import Draft202012Validator
+from jsonschema.exceptions import SchemaError, ValidationError
+
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
@@ -256,6 +259,36 @@ def sha256_bytes(payload):
     return hashlib.sha256(payload).hexdigest()
 
 
+def canonical_json_bytes(value):
+    """Stable UTF-8 JSON used by both in-process and external sealing paths."""
+    return json.dumps(value, ensure_ascii=False, sort_keys=True,
+                      separators=(',', ':')).encode('utf-8')
+
+
+def validate_complete_schema(result, schema):
+    """Validate the complete result with JSON Schema Draft 2020-12.
+
+    The old gateway capture checked only top-level ``required`` keys.  Keeping
+    this primitive here makes injected ``GatewayCall`` tests and the durable
+    external recorder reject the same nested/type/cardinality/additional-field
+    defects.
+    """
+    if schema is None:
+        return result
+    if not isinstance(schema, dict):
+        raise ValueError('gateway output schema must be a JSON object')
+    try:
+        Draft202012Validator.check_schema(schema)
+        Draft202012Validator(schema).validate(result)
+    except SchemaError as exc:
+        raise ValueError('gateway output schema is invalid: %s' % exc.message) from exc
+    except ValidationError as exc:
+        location = '/'.join(str(part) for part in exc.absolute_path) or '<root>'
+        raise ValueError('gateway final JSON schema failure at %s: %s'
+                         % (location, exc.message)) from exc
+    return result
+
+
 def atomic_json(path, payload):
     """Write JSON with LF newlines + fsync -- these bytes are hash-bound."""
     directory = os.path.dirname(os.path.abspath(path)) or '.'
@@ -326,13 +359,11 @@ class GatewayCall:
         except ValueError as exc:
             return {'schema_compliant': False, 'cards_returned': 0, 'result': None,
                     'classification': classify_transcript_error(exc), 'error': str(exc)}
-        if schema is not None:
-            missing = [key for key in schema.get('required', []) if key not in result]
-            if missing:
-                return {'schema_compliant': False, 'cards_returned': 0, 'result': None,
-                        'classification': 'malformed_output',
-                        'error': 'final JSON missing required keys: %s'
-                                 % ', '.join(sorted(missing))}
+        try:
+            validate_complete_schema(result, schema)
+        except ValueError as exc:
+            return {'schema_compliant': False, 'cards_returned': 0, 'result': None,
+                    'classification': 'malformed_output', 'error': str(exc)}
         cards = result.get('cards')
         return {'schema_compliant': True, 'result': result, 'error': None,
                 'cards_returned': len(cards) if isinstance(cards, list) else 0,
@@ -416,8 +447,7 @@ class GatewayCall:
         envelope.update(outcome)
         if outcome['schema_compliant']:
             envelope['result_sha256'] = sha256_bytes(
-                json.dumps(outcome['result'], ensure_ascii=False, sort_keys=True,
-                           separators=(',', ':')).encode('utf-8'))
+                canonical_json_bytes(outcome['result']))
         else:
             envelope['result_sha256'] = None
         return envelope

@@ -222,6 +222,7 @@ jobs:
           python src/pilot/agent_budget.py
           python src/pilot/call_reservation_selftest.py
           python src/pilot/gateway_route_selftest.py
+          python src/pilot/gateway_external_selftest.py
           python src/pilot/headless_worker_selftest.py
           python src/pilot/execution_contract_selftest.py
           python src/pilot/max_account_orchestrator_selftest.py
