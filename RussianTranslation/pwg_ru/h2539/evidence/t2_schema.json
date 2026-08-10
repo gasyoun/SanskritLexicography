@@ -1,0 +1,122 @@
+{
+  "$id": "canary_pwg_ru_record_v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_marker", "provenance", "cards"],
+  "properties": {
+    "schema_marker": {"const": "pwg_ru.canary_final.v1"},
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provenance_class",
+        "route",
+        "model",
+        "raw_sha256",
+        "portrait_sha256",
+        "source_senses",
+        "promotable"
+      ],
+      "properties": {
+        "provenance_class": {"const": "synthetic_control"},
+        "route": {"const": "router-cheap-agent"},
+        "model": {"const": "claude-opus-5"},
+        "raw_sha256": {"const": "152a3eec0b6b9c167a91950d649a10d1f2d413f96c076e17f01859a2eaa9058d"},
+        "portrait_sha256": {"const": "a43235e366573182884922f7fd42a2072c3148cef27de234d24c92fc75cbc4c7"},
+        "source_senses": {"const": 3},
+        "promotable": {"const": false}
+      }
+    },
+    "cards": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": false,
+      "prefixItems": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["key1", "iast", "records", "notes"],
+          "properties": {
+            "key1": {"const": "dq_canary_puregloss"},
+            "iast": {"type": "string"},
+            "notes": {"type": "string"},
+            "records": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 1,
+              "items": false,
+              "prefixItems": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["h", "grammar", "senses"],
+                  "properties": {
+                    "h": {"const": "0"},
+                    "grammar": {"type": "string"},
+                    "senses": {
+                      "type": "array",
+                      "minItems": 3,
+                      "maxItems": 3,
+                      "items": false,
+                      "prefixItems": [
+                        {"$ref": "#/$defs/sense1"},
+                        {"$ref": "#/$defs/sense2"},
+                        {"$ref": "#/$defs/sense3"}
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "russian": {
+      "type": "string",
+      "minLength": 3,
+      "allOf": [
+        {"pattern": "[\\u0430-\\u044F]"},
+        {"pattern": "^[^A-Za-z]*$"}
+      ]
+    },
+    "senseCommon": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tag", "german", "russian", "equivalence_type", "source_type", "government"],
+      "properties": {
+        "tag": {"type": "string"},
+        "german": {"type": "string"},
+        "russian": {"$ref": "#/$defs/russian"},
+        "equivalence_type": {"enum": ["equivalent", "explanatory"]},
+        "source_type": {"enum": ["attested", "lexicographic", "mixed"]},
+        "government": {"type": "array", "maxItems": 0}
+      }
+    },
+    "sense1": {
+      "$ref": "#/$defs/senseCommon",
+      "properties": {
+        "tag": {"const": "1"},
+        "german": {"const": "{%eine Schildkröte%}."}
+      }
+    },
+    "sense2": {
+      "$ref": "#/$defs/senseCommon",
+      "properties": {
+        "tag": {"const": "2"},
+        "german": {"const": "{%ein kleiner Fisch%}."}
+      }
+    },
+    "sense3": {
+      "$ref": "#/$defs/senseCommon",
+      "properties": {
+        "tag": {"const": "3"},
+        "german": {"const": "{%eine Wasserpflanze%}."}
+      }
+    }
+  }
+}

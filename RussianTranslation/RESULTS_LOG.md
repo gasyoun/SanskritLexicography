@@ -4,6 +4,42 @@ _Created: 09-07-2026 · Last updated: 10-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 10-08-2026 — H2539 (Opus 5) — Run the attested router.cheap two-ticket live canary at v1.144.28 and mint gateway-w1 only on GO — ❌ NO-GO; 2 reservations, 2 dispatched calls, cost unevaluable
+
+Opus 5 (`claude-opus-5`), repo v1.144.28 (`6c35ade31`), run `h2539-canary-1734943`.
+**NO-GO — no `gateway-w1` production handoff minted.**
+
+| Field | Ticket 1 | Ticket 2 |
+|---|---|---|
+| Purpose | `canary_capability_probe_v1` | `canary_final_translation_v1` |
+| Reservation | `ea29cbcd…` (1 of 2) | `ed6f34df…` (2 of 2) |
+| Route / requested | `router-cheap-agent` / `claude-opus-5` | same |
+| **Attested served model** | **`claude-opus-5`** | **`claude-opus-5`** |
+| **`model_matches_request`** | **`true`** | **`true`** |
+| `wall_ms` (limit 600 000) | 27 549 | 125 254 |
+| **`schema_compliant`** | **`true`** | **`false`** |
+| `failure_class` | `null` | `malformed_output` |
+| `cost_evaluable` | `false` (`usage_absent_or_malformed`) | same |
+
+Ticket 2 rendered **3/3 senses** (черепаха / небольшая рыба / водное растение) with
+**0 deterministic defects** across all 13 enumerated classes. The gate fired on a
+contradiction between two artifacts authored in the same session: the prompt demanded the
+German skeleton line verbatim (`— 1〉 {%eine Schildkröte%}.`), the frozen schema pinned the
+gloss alone (`{%eine Schildkröte%}.`). Not a route defect, not model substitution, not a
+translation defect — but NO-GO stands, and no third call was spent to "fix" it.
+
+Two residuals for any re-qualification: (1) the 24-case schema selftest built every fixture
+from the schema's own constants, so it could not see the prompt/schema divergence — a selftest
+must include an instance built from the prompt's inlined source text; (2)
+`gateway_attestation.py` filters `isSidechain: true` by default, but this harness records
+Agent calls as **main turns** (101 main / 0 sidechain), yielding
+`model_matches_request: null` — both attestations required `--include-main-turns`, which
+attests the served model for *the window* rather than provably for *the single dispatch
+inside it*. Ledger observed-cost floor `0` is not evidence the calls were free.
+
+Report: [CANARY_QUALIFICATION_REPORT_ROUTER_CHEAP_NO-GO_10-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2539/CANARY_QUALIFICATION_REPORT_ROUTER_CHEAP_NO-GO_10-08-2026.md).
+All artifacts `synthetic_control` / `promotable: false`.
+
 ## 10-08-2026 — H2533 (Codex) — Build the durable router.cheap Agent reserve/record bridge, then mint the Opus canary — PASS offline; 0 calls, $0.00
 
 Codex Sol (`gpt-5.6-sol`). **No gateway, Agent, Max, API or production call was made.**

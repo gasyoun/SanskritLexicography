@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "canary_capability_probe_v1.schema.json",
+  "title": "router.cheap canary capability probe — Ticket 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["protocol_marker", "language_sample"],
+  "properties": {
+    "protocol_marker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "version"],
+      "properties": {
+        "name": {"const": "router.cheap.canary"},
+        "version": {"const": "v1"}
+      }
+    },
+    "language_sample": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lang", "text"],
+      "properties": {
+        "lang": {"const": "ru"},
+        "text": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

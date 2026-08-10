@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 10-08-2026 (§526 — a second reference separates dictionary-memorisation from glossing ability; the MW premium is small, real, and largest in the no-context arm)_
+_Created: 26-06-2026 · Last updated: 10-08-2026 (§527 — a schema selftest built from the schema's own constants cannot see a prompt/schema contradiction, and that is the defect that burns a paid call)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §526) whatever its section, so existing numbers never shift; when a finding is later
+(currently §527) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -241,6 +241,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§523. MW's abbreviation legend was never OCR'd — `MWS/prefaces/` stops one page before the required table](#523-mws-abbreviation-legend-list-of-works-and-authors-p-xxxiii-was-never-ocrd--mwsprefaces-stops-at-p-xxxii-one-page-short-of-the-table-every-cross-dict-legend-pipeline-expects) — the apparent MW legend-crosswalk path parses zero keys because the committed transcription ends at p. xxxii; acquire and OCR p. xxxiii+ instead of inventing a secondary-source substitute.
 - 🔴 [§524. A parallel-corpus column can be misaligned against its own row key](#524-a-parallel-corpus-column-can-be-misaligned-against-its-own-row-key--griffiths-english-is-off-by-the-vālakhilya-block-for-rv-8498103-and-a-char-count-selftest-cannot-see-it) — Griffith English is displaced for 678 RV stanzas while structural counts remain perfect; cross-check content against another column, not only key/length.
 - 🔴 [§525. An interactive tool outside Python's call stack needs durable intent before the call and response-bound evidence inside finalization](#525-an-interactive-tool-outside-pythons-call-stack-needs-a-durable-intent-before-the-call-and-response-bound-evidence-inside-finalization--a-saved-response-alone-cannot-prove-it-was-authorized) — persist an operation identity before spend and the response fingerprint in the same atomic update as finalization; either half alone leaves a duplicate-spend or divergent-replay crash window.
+- 🔴 [§527. A schema selftest written from the schema's own constants is blind to a prompt/schema contradiction — the defect it cannot see is exactly the one that burns a paid call](#527-a-schema-selftest-written-from-the-schemas-own-constants-is-blind-to-a-promptschema-contradiction--the-defect-it-cannot-see-is-exactly-the-one-that-burns-a-paid-call) — 24/24 offline cases passed, then the last authorised call failed `malformed_output` because prompt and schema disagreed on one literal; generate shared literals from the fixture once and selftest an instance built from the prompt's own text. Also: `gateway_attestation.py`'s `isSidechain` default yields `null` on harnesses that log Agent calls as main turns, and refused Agent blocks must not be counted as spent calls.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -5676,3 +5677,45 @@ causally unrelated to MW's tradition; "independent" here means independent autho
 and language.
 
 > Fable 5 (`claude-fable-5`) · 09-08-2026 · [H2408](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2408-Fable_kosha_definition-gen-gloss-wsd-pilot_07.08.26.md) — Heritage second reference for the defgen eval. Protocol + all numbers: [DEFGEN_HERITAGE_SECOND_REFERENCE_EVAL.md](https://github.com/gasyoun/kosha/blob/main/docs/DEFGEN_HERITAGE_SECOND_REFERENCE_EVAL.md) · harness [defgen_heritage_ref.py](https://github.com/gasyoun/kosha/blob/main/scripts/defgen_heritage_ref.py) + [defgen_heritage_delta.py](https://github.com/gasyoun/kosha/blob/main/scripts/defgen_heritage_delta.py) · [kosha PR #364](https://github.com/gasyoun/kosha/pull/364), [v0.110.0](https://github.com/gasyoun/kosha/releases/tag/v0.110.0).
+
+### §527. A schema selftest written from the schema's own constants is blind to a prompt/schema contradiction — the defect it cannot see is exactly the one that burns a paid call
+
+The router.cheap two-ticket canary froze its Ticket 2 output schema only after a 24-case
+selftest passed: one golden instance accepted, 23 deterministic defects rejected (dropped,
+merged, reordered and extra senses; untranslated German; Latin leak; empty Russian; `{Tn}`
+placeholder leakage; stripped markup; key drift; promotion claim; invented `government`;
+provenance-hash drift; additional properties at three nesting levels). The very next paid call
+failed the gate anyway, on `malformed_output`.
+
+The cause was invisible to that selftest by construction. The prompt told the model to
+reproduce each sense's German skeleton line **exactly as inlined**, and the fixture's lines
+open with a sense marker — `— 1〉 {%eine Schildkröte%}.` The frozen schema pinned `german` to
+the gloss alone — `{%eine Schildkröte%}.` Both artifacts were authored in the same session and
+each was internally consistent; they simply disagreed, and since every selftest fixture was
+built *from the schema's constants*, no case ever compared the schema against the prompt. The
+model obeyed the prompt verbatim and rendered a clean 3/3 (черепаха / небольшая рыба / водное
+растение) with zero defects in any of the 13 enumerated classes. The gate was right to fire and
+the sitting was still NO-GO — the loss was the last authorised reservation, spent proving that
+two of our own strings differed.
+
+Two generalizations. First, **any literal shared between a prompt and its validating schema
+must be generated once from the source fixture, never hand-typed into both** — and the selftest
+must include at least one instance assembled from the prompt's own inlined text, which is the
+only fixture that can fail this way. Second, a defect taxonomy is not coverage: 23 rejection
+cases created real confidence about *model* misbehaviour while saying nothing about *harness*
+self-consistency, and confidence in the wrong axis is what let the freeze proceed.
+
+Adjacent, same sitting: `gateway_attestation.py` filters transcript turns to
+`isSidechain: true`, but this harness records `Agent` calls as **main turns** (101 main, 0
+sidechain in the whole session), so the default filter observed 0 turns and returned
+`model_matches_request: null` — NO-GO under the canary contract, from a tool that was working
+as designed against a transcript shape it did not expect. `--include-main-turns` recovers an
+attestation (`claude-opus-5`, matching, on both tickets) but widens the window to turns the
+session itself occupies, so it attests the served model for *the window*, not provably for *the
+single dispatch inside it*. Closing that needs a per-dispatch identifier binding one `tool_use`
+id to one served-model record, not a wider time range. Relatedly, three `Agent` tool_use blocks
+backed two paid dispatches — one blocked by a subspawn guard, one rejected because the ticket's
+route label `router-cheap-agent` is not a harness `subagent_type` — so call counts must be read
+from each block's `tool_result`, never from the block count.
+
+> Opus 5 (`claude-opus-5`) · 10-08-2026 · H2539 (Opus 5) — attested router.cheap two-ticket live canary at v1.144.28, verdict NO-GO. Report: [CANARY_QUALIFICATION_REPORT_ROUTER_CHEAP_NO-GO_10-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2539/CANARY_QUALIFICATION_REPORT_ROUTER_CHEAP_NO-GO_10-08-2026.md) · selftest [t2_schema_selftest.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2539/t2_schema_selftest.py) · attribution audit [t2_defect_audit.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2539/evidence/t2_defect_audit.txt).
