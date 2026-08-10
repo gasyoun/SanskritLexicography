@@ -5678,6 +5678,28 @@ and language.
 
 > Fable 5 (`claude-fable-5`) · 09-08-2026 · [H2408](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2408-Fable_kosha_definition-gen-gloss-wsd-pilot_07.08.26.md) — Heritage second reference for the defgen eval. Protocol + all numbers: [DEFGEN_HERITAGE_SECOND_REFERENCE_EVAL.md](https://github.com/gasyoun/kosha/blob/main/docs/DEFGEN_HERITAGE_SECOND_REFERENCE_EVAL.md) · harness [defgen_heritage_ref.py](https://github.com/gasyoun/kosha/blob/main/scripts/defgen_heritage_ref.py) + [defgen_heritage_delta.py](https://github.com/gasyoun/kosha/blob/main/scripts/defgen_heritage_delta.py) · [kosha PR #364](https://github.com/gasyoun/kosha/pull/364), [v0.110.0](https://github.com/gasyoun/kosha/releases/tag/v0.110.0).
 
+### §528. A top-band-only gold set for BLI reports 99.5% coverage and hides a 0%–100% per-stratum spread — the instrument cannot see what the research question asks
+
+`corpus_lexicon.jsonl`'s automatic 400-lemma gold set (H1521, top-400 by DCS frequency band)
+returned coverage = 0.995 — so high it looked like a system property. It isn't. Probing the
+full candidate frame (12,939 glossable Koch × DCS lemmas) across all five frequency bands
+shows per-stratum presence in the lexicon runs from 1.00 (band-5 ADV) all the way down to
+**0.00** (band-1 VERB). The top-band set can only sample from the 0.96–1.00 end of that
+range, so its coverage figure describes the frame, not the lexicon. Frame-wide for the
+stratified 500-row B1 gold set: **321/500 = 64.2%**.
+
+**Implication.** A headline coverage number from a non-stratified BLI gold set is not
+portable to other lemma populations. Report per-stratum presence alongside any aggregate; a
+cell with near-zero presence yields coverage evidence but no P@1 signal, and mixing the two
+silently downgrades retrieval failures to absence.
+
+**Source.** [BLI_GOLD_SET_ANNOTATION_PROTOCOL_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/BLI_GOLD_SET_ANNOTATION_PROTOCOL_2026.md)
+§1/§7 · [`frame_presence_report.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/frame_presence_report.py)
+· [SanskritLexicography PR #1634](https://github.com/gasyoun/SanskritLexicography/pull/1634),
+[v1.144.30](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.30).
+
+> Fable 5 (`claude-fable-5`) · 10-08-2026 · [H2401 (Fable 5) — ACL B1: BLI gold-set design and annotation protocol](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2401-Fable_SanskritLexicography_bli-b1-gold-set-design_07.08.26.md) · full per-stratum table and scripts in the protocol doc linked above.
+
 ### §527. A schema selftest written from the schema's own constants is blind to a prompt/schema contradiction — the defect it cannot see is exactly the one that burns a paid call
 
 The router.cheap two-ticket canary froze its Ticket 2 output schema only after a 24-case
