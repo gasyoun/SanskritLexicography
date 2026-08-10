@@ -13,6 +13,8 @@ at 1.1.4 on 03-07 — the dip is baked into the published tags and is intentiona
 not an error.
 
 ## [Unreleased]
+
+## [1.144.28] - 2026-08-10
 ### Added
 - **H2537 (Opus 5 `claude-opus-5`) — served-model + usage attestation for the router.cheap Agent bridge.** New read-only [`gateway_attestation.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_attestation.py) reads the local harness session transcript (`message.model` + `message.usage`, `isSidechain`-filtered) and emits a canonical self-hashed `pwg.gateway_external_attestation.v1` record; `record-external` gained `--attestation`, which must bind to the same run/reservation/requested-model, cover the wrapper's exact window, and self-hash-verify or be refused. New selftest 9/9; released bridge still 11/11 with **unchanged** semantic signatures. Proven end-to-end on a real transcript (115 turns, unanimous `claude-opus-5`, 60,955 output / 897,055 input / 9.2M cache-read tokens) at zero spend.
 
