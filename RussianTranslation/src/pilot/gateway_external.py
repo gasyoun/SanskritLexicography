@@ -50,12 +50,13 @@ from gateway_route import (  # noqa: E402
 
 
 ROUTE = GATEWAY_ROUTE
-TICKET_SCHEMA = 'pwg.gateway_external_ticket.v1'
-RESPONSE_SCHEMA = 'pwg.gateway_external_response.v1'
-ENVELOPE_SCHEMA = 'pwg.gateway_external_envelope.v1'
-RECOVERY_SCHEMA = 'pwg.gateway_external_recovery.v1'
+TICKET_SCHEMA = 'pwg.gateway_external_ticket.v2'
+RESPONSE_SCHEMA = 'pwg.gateway_external_response.v2'
+ENVELOPE_SCHEMA = 'pwg.gateway_external_envelope.v2'
+RECOVERY_SCHEMA = 'pwg.gateway_external_recovery.v2'
 OWNER_WAIVER_ID = 'router-cheap-agent-owner-waiver-2026-08-09.v1'
 DETAIL_SCHEMA = 'pwg.gateway_external_prepare.v1'
+DISPATCH_BINDING_SCHEMA = 'pwg.gateway_external_dispatch_binding.v1'
 PROTOCOL_SCHEMA_PATHS = {
     TICKET_SCHEMA: os.path.join(REPO, 'schemas', 'pwg_gateway_external_ticket.schema.json'),
     RESPONSE_SCHEMA: os.path.join(REPO, 'schemas', 'pwg_gateway_external_response.schema.json'),
@@ -80,6 +81,15 @@ def _json_bytes(value):
 
 def _canonical_hash(value):
     return sha256_bytes(canonical_json_bytes(value))
+
+
+def _request_prompt_sha256(request):
+    if not isinstance(request, dict):
+        raise ExternalRefusal('request must be an object for dispatch binding')
+    prompt = request.get('prompt')
+    if not isinstance(prompt, str) or not prompt:
+        raise ExternalRefusal('request prompt must be non-empty text')
+    return sha256_bytes(prompt.encode('utf-8'))
 
 
 def _read_json(path, label):
@@ -179,6 +189,12 @@ def _ticket_payload(reservation, descriptor, request, output_schema):
         'operation_sha256': descriptor['operation_sha256'],
         'request_sha256': descriptor['request_sha256'],
         'schema_sha256': descriptor['schema_sha256'],
+        'dispatch_binding': {
+            'schema': DISPATCH_BINDING_SCHEMA,
+            'tool_name': 'Agent',
+            'dispatch_id_scheme': 'claude-agent-tool-use.v1',
+            'request_prompt_sha256': descriptor['request_prompt_sha256'],
+        },
         'request': request,
         'output_schema': output_schema,
     }
@@ -199,6 +215,8 @@ def _operation_from_ticket(value):
         'waiver_id': value.get('waiver_id'),
         'request_sha256': value.get('request_sha256'),
         'schema_sha256': value.get('schema_sha256'),
+        'request_prompt_sha256': (
+            value.get('dispatch_binding') or {}).get('request_prompt_sha256'),
     }
 
 
@@ -212,6 +230,18 @@ def _verify_ticket(value):
         raise ExternalRefusal('ticket hash mismatch')
     if value.get('request_sha256') != _canonical_hash(value.get('request')):
         raise ExternalRefusal('ticket request hash mismatch')
+    binding = value.get('dispatch_binding')
+    if not isinstance(binding, dict):
+        raise ExternalRefusal('ticket dispatch binding is missing')
+    if binding.get('schema') != DISPATCH_BINDING_SCHEMA:
+        raise ExternalRefusal('ticket dispatch binding schema mismatch')
+    if binding.get('tool_name') != 'Agent':
+        raise ExternalRefusal('ticket dispatch tool mismatch')
+    if binding.get('dispatch_id_scheme') != 'claude-agent-tool-use.v1':
+        raise ExternalRefusal('ticket dispatch id scheme mismatch')
+    if binding.get('request_prompt_sha256') != _request_prompt_sha256(
+            value.get('request')):
+        raise ExternalRefusal('ticket dispatch prompt hash mismatch')
     if value.get('schema_sha256') != _canonical_hash(value.get('output_schema')):
         raise ExternalRefusal('ticket schema hash mismatch')
     if value.get('operation_sha256') != _canonical_hash(_operation_from_ticket(value)):
@@ -290,6 +320,7 @@ def prepare_external(*, ledger_path, run_id, max_calls, purpose,
         'waiver_id': waiver_id,
         'request_sha256': _canonical_hash(request),
         'schema_sha256': _canonical_hash(output_schema),
+        'request_prompt_sha256': _request_prompt_sha256(request),
     }
     descriptor['operation_sha256'] = _canonical_hash(descriptor)
     ledger = CallReservationLedger(ledger_path, run_id, max_calls)
@@ -337,6 +368,9 @@ def recovery_report(ledger_path, run_id):
             'ticket_path': ticket_path,
             'ticket_exists': ticket_exists,
             'orphan_temp_files': temp_files,
+            'dispatch_binding': (
+                _read_json(ticket_path, 'ticket')[0].get('dispatch_binding')
+                if ticket_exists else None),
         })
     return {
         'schema': RECOVERY_SCHEMA,
@@ -455,6 +489,9 @@ def _validate_response_binding(wrapper, ticket, attestation=None):
             else ticket['requested_model']),
         'purpose': ticket['purpose'],
         'nonce': ticket['nonce'],
+        'dispatch_id': (
+            attestation.get('dispatch_id') if isinstance(attestation, dict)
+            else wrapper.get('dispatch_id')),
     }
     for field, value in expected.items():
         if wrapper.get(field) != value:
@@ -504,11 +541,19 @@ def _load_attestation(attestation_path, ticket, wrapper):
     for field, expected in (
             ('run_id', ticket['run_id']),
             ('reservation_id', ticket['reservation_id']),
-            ('requested_model', ticket['requested_model'])):
+            ('requested_model', ticket['requested_model']),
+            ('ticket_sha256', ticket['ticket_sha256']),
+            ('request_prompt_sha256',
+             ticket['dispatch_binding']['request_prompt_sha256']),
+            ('dispatch_id', wrapper.get('dispatch_id'))):
         if record.get(field) != expected:
             raise ExternalRefusal(
                 'attestation %s mismatch: expected %r, got %r'
                 % (field, expected, record.get(field)))
+    if record.get('attestation_scope') != 'dispatch':
+        raise ExternalRefusal('attestation is not dispatch-scoped')
+    if record.get('dispatch_status') != 'completed':
+        raise ExternalRefusal('attestation dispatch is not completed')
     if record.get('started_at') != wrapper.get('started_at') or \
             record.get('ended_at') != wrapper.get('ended_at'):
         raise ExternalRefusal(
@@ -588,6 +633,10 @@ def record_external(*, ticket_path, ledger_path, run_id, response_path,
         'reservation_ordinal': ticket['reservation_ordinal'],
         'purpose': ticket['purpose'],
         'nonce': ticket['nonce'],
+        'dispatch_id': wrapper['dispatch_id'],
+        'dispatch_attested': model_attested,
+        'attestation_scope': (
+            attestation.get('attestation_scope') if model_attested else None),
         'waiver_id': ticket['waiver_id'],
         'waiver_applied': policy['waiver_applied'],
         'hard_timeout_ms': ticket['hard_timeout_ms'],

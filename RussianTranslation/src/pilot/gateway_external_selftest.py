@@ -28,6 +28,7 @@ from call_reservation import CallReservationLedger  # noqa: E402
 
 
 MODEL = 'claude-opus-5'
+DISPATCH_ID = 'toolu_01H2554SyntheticDispatch'
 PURPOSE = 'h2533:synthetic-capability'
 REQUEST = {'prompt': 'Return the exact synthetic fixture.', 'tools': []}
 RESULT = {
@@ -151,6 +152,7 @@ def wrapper(ticket, result=RESULT, usage=None, blocks=None):
         'returned_model': ticket['requested_model'],
         'purpose': ticket['purpose'],
         'nonce': ticket['nonce'],
+        'dispatch_id': DISPATCH_ID,
         'started_at': '2026-08-10T02:00:00.000Z',
         'ended_at': '2026-08-10T02:00:01.250Z',
         'wall_ms': 1250,
