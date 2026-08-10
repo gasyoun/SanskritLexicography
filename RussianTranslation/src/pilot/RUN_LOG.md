@@ -4,6 +4,19 @@ One block per Max run. **Record the model tier on every step** (Sonnet / Opus /
 Haiku / none), not just runtime and tokens. Failures are logged, not hidden.
 History of how the harness got here: [`EVOLUTION_TIMELINE.md`](EVOLUTION_TIMELINE.md).
 
+## 2026-08-10 — H2533 (Codex) — Build the durable router.cheap Agent reserve/record bridge, then mint the Opus canary — Codex Sol (`gpt-5.6-sol`) — ✅ offline 11/11, 0 calls
+
+Built the crash-safe boundary the H2504 audit found impossible inside one Python stack:
+`prepare-external` reserves + seals a ticket before spend; the interactive harness owns the
+one Agent turn; `save-response` publishes the complete public wrapper atomically;
+`record-external` validates exact bindings, complete JSON Schema and timing, finalizes
+response-bound ledger evidence, and seals a synthetic non-promotable envelope. Fault injection
+across reservation/ticket/response/finalization/envelope converges without duplicate spend.
+Missing router usage remains `cost_evaluable=false` / envelope cost `null` under the exact
+owner waiver only. Window 210/210 plus headless/canary/coordinator/promotion suites are green.
+No model call or production mutation occurred. Evidence:
+[`ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2533/ROUTER_CHEAP_TWO_PHASE_AGENT_BRIDGE_10-08-2026.md).
+
 ## 2026-07-18 — H1209 controller-worker canary, 3-card validation slice (promote-DRY) — orchestration **Fable 5** (`claude-fable-5`) resuming an **Opus 4.8** (`claude-opus-4-8[1m]`) session · controller agents **Opus 4.8** (`claude-opus-4-8`) · workers **Sonnet 5** (`claude-sonnet-5`) — ✅ rig VALIDATED end-to-end: v2 canonical 3/3 PASS, after v1 exposed a gate-design defect (canonical 1/3 vs self-reported 3/3)
 
 **The rig** ([H1209](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1209-Opus_SanskritLexicography_pwg-ru-controller-worker-canary_17.07.26.md) architecture — first measured probe of the «инжиниринг контроля» concept, MG 17-07-2026): [`src/pilot/h1209/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1209/canonical_audit.py) — `prep_slice.py` reconstructs the EXACT production worker prompt from a `gen_opt_harness2.py --manifest-out` manifest (`h1209_slice3.manifest.json`: `nakzatra`/`sarvatra`/`sakft`, production invariants reused verbatim, transport replaced by Workflow agents) plus the deterministic per-card complexity trigger; `build_args.py` derives the worker schema (card + mandatory self-report) from the manifest's own `output_schema`; `wf_template.js` + `inject_payload.py` build the as-run Workflow script (Sonnet workers, ≤2 FREE deterministic retries, Opus controller review only for cards that pass the free gates); `canonical_audit.py` is the AUTHORITATIVE promote-DRY verdict — canonical `{Tn}` restore via `card_fields` (C-01) + the full `accept()` battery + the final-card schema gate.
