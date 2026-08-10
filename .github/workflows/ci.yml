@@ -223,6 +223,8 @@ jobs:
           python src/pilot/call_reservation_selftest.py
           python src/pilot/gateway_route_selftest.py
           python src/pilot/gateway_external_selftest.py
+          python src/pilot/gateway_attestation_selftest.py
+          python src/pilot/gateway_canary_contract_selftest.py
           python src/pilot/headless_worker_selftest.py
           python src/pilot/execution_contract_selftest.py
           python src/pilot/max_account_orchestrator_selftest.py

@@ -4,6 +4,16 @@ _Created: 09-07-2026 · Last updated: 10-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 10-08-2026 — H2554 (Codex) — router.cheap canary contract + exact-dispatch attestation — ✅ OFFLINE REPAIR PASS; 0 calls
+
+Codex Sol (`gpt-5.6-sol`), baseline v1.144.30. The exact H2539 prompt/schema mismatch first
+reproduces RED, then the canonical v2 fixture generates a mutually consistent prompt/schema
+whose prompt-derived instance validates GREEN. Exact Agent dispatch binding now follows one
+`tool_use.id` through its unique completed `tool_result` and seals ticket/request/wrapper/
+attestation/envelope identity. Focused matrices: canary 3/3, dispatch 9/9, gateway 11/11,
+route 10/10. H2539 stays NO-GO and legacy/window-scoped; zero live reservations or calls.
+Report: [ROUTER_CHEAP_CANARY_CONTRACT_DISPATCH_ATTESTATION_REPAIR_10-08-2026.md](pwg_ru/h2554/ROUTER_CHEAP_CANARY_CONTRACT_DISPATCH_ATTESTATION_REPAIR_10-08-2026.md).
+
 ## 10-08-2026 — H2539 (Opus 5) — Run the attested router.cheap two-ticket live canary at v1.144.28 and mint gateway-w1 only on GO — ❌ NO-GO; 2 reservations, 2 dispatched calls, cost unevaluable
 
 Opus 5 (`claude-opus-5`), repo v1.144.28 (`6c35ade31`), run `h2539-canary-1734943`.

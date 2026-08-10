@@ -243,6 +243,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§525. An interactive tool outside Python's call stack needs durable intent before the call and response-bound evidence inside finalization](#525-an-interactive-tool-outside-pythons-call-stack-needs-a-durable-intent-before-the-call-and-response-bound-evidence-inside-finalization--a-saved-response-alone-cannot-prove-it-was-authorized) — persist an operation identity before spend and the response fingerprint in the same atomic update as finalization; either half alone leaves a duplicate-spend or divergent-replay crash window.
 - 🔴 [§527. A schema selftest written from the schema's own constants is blind to a prompt/schema contradiction — the defect it cannot see is exactly the one that burns a paid call](#527-a-schema-selftest-written-from-the-schemas-own-constants-is-blind-to-a-promptschema-contradiction--the-defect-it-cannot-see-is-exactly-the-one-that-burns-a-paid-call) — 24/24 offline cases passed, then the last authorised call failed `malformed_output` because prompt and schema disagreed on one literal; generate shared literals from the fixture once and selftest an instance built from the prompt's own text. Also: `gateway_attestation.py`'s `isSidechain` default yields `null` on harnesses that log Agent calls as main turns, and refused Agent blocks must not be counted as spent calls.
 - 🔴 [§528. A top-band-only gold set for BLI reports 99.5% coverage and hides a 0%–100% per-stratum spread — the instrument cannot see what the research question asks](#528-a-top-band-only-gold-set-for-bli-reports-995-coverage-and-hides-a-0100-per-stratum-spread--the-instrument-cannot-see-what-the-research-question-asks) — H1521's top-400-by-frequency gold set could only sample the 0.96–1.00 end of a presence range that runs down to 0.00 (band-1 VERB); the stratified 500-row frame measures 64.2% frame-wide. Report per-stratum presence beside any aggregate — a near-zero cell yields coverage evidence but no P@1 signal.
+- 🔴 [§529. An Agent result already carries the exact dispatch binding; widening a transcript window throws that evidence away](#529-an-agent-result-already-carries-the-exact-dispatch-binding-widening-a-transcript-window-throws-that-evidence-away) — one `tool_use.id` links to one `tool_result.tool_use_id`, whose structured `toolUseResult` carries completion status, resolved model, agent id, and usage. Bind that pair plus the ticket prompt hash; main/sidechain becomes observed metadata, adjacent turns become irrelevant, and legacy window attestations stay explicitly non-dispatch-scoped.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -5742,3 +5743,24 @@ silently downgrades retrieval failures to absence.
 [v1.144.30](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.30).
 
 > Fable 5 (`claude-fable-5`) · 10-08-2026 · [H2401 (Fable 5) — ACL B1: BLI gold-set design and annotation protocol](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2401-Fable_SanskritLexicography_bli-b1-gold-set-design_07.08.26.md) · full per-stratum table and scripts in the protocol doc linked above.
+
+### §529. An Agent result already carries the exact dispatch binding; widening a transcript window throws that evidence away
+
+H2539's v1 attestor searched assistant turns inside a start/end window and inferred a served
+model only when every selected turn agreed. That lost the harness's stronger native relation.
+The Agent call appears as one `tool_use` block with an immutable `id`; its user-side result has
+the same value in `tool_result.tool_use_id`, while the event's structured `toolUseResult`
+contains `status`, `resolvedModel`, `agentId`, and usage. The result event also names the source
+assistant UUID. Those fields identify the dispatch directly; time-window consensus and
+`isSidechain` filtering are unnecessary and can only add unrelated turns.
+
+H2554 binds the ticket's exact prompt SHA-256 to that one tool use, requires exactly one use and
+one result, requires a matching source UUID and `status=completed`, and carries the dispatch ID
+through wrapper, v2 attestation, sealed envelope, recovery report, and JSON Schemas. Missing,
+wrong, duplicate, replayed, incomplete, refused, prompt-substituted, or malformed-transcript
+records fail closed. Main and sidechain calls share one path; the flag is evidence, not an
+assumption about where calls live. H2539 replay found both successful calls uniquely, but their
+operator prompts contained rather than byte-equalled the old ticket prompt, so the old v1
+artifacts remain explicitly `legacy_window`, `dispatch_attested=false`, and non-promotable.
+
+> Codex Sol (`gpt-5.6-sol`) · 10-08-2026 · H2554 (Codex) — router.cheap canary contract and exact-dispatch attestation repair. Instrument: [`gateway_attestation.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_attestation.py) · report: [`ROUTER_CHEAP_CANARY_CONTRACT_DISPATCH_ATTESTATION_REPAIR_10-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2554/ROUTER_CHEAP_CANARY_CONTRACT_DISPATCH_ATTESTATION_REPAIR_10-08-2026.md).
