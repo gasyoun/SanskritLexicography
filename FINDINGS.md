@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 07-08-2026 (§524 — a parallel-corpus column misaligned against its own row key: Griffith EN off by the vālakhilya block for RV 8.49–8.103)_
+_Created: 26-06-2026 · Last updated: 10-08-2026 (§525 — an out-of-stack interactive tool needs durable intent before the call and response-bound finalization evidence)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §521) whatever its section, so existing numbers never shift; when a finding is later
+(currently §526) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -238,6 +238,9 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§451. `10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos](#451-105281zenodo15834721-is-a-false-doi-cited-as-genuine-in-two-different-repos)
 - 🟠 [§456. MW's derivation markup and the DCS corpus are productive over the *same* compound final members but with near-disjoint first members](#456-mws-derivation-markup-and-the-dcs-corpus-are-productive-over-the-same-compound-final-members-but-with-near-disjoint-first-members-median-jaccard-000-56-share-zero--and-the-corpus-unattested-mw-stratum-is-kośaparticiple-formations-not-ghost-words) — renumbered from §102 (H1328 collision, 20-07-2026).
 - 🟠 [§522. A bounded re-split can be displayed honestly at per-cell granularity only because its uncertainty is DEGENERATE — DCS's unmarked perfect makes the defaulted share exactly 0% or 100%, never a fraction](#522-a-bounded-re-split-can-be-displayed-honestly-at-per-cell-granularity-only-because-its-uncertainty-is-degenerate--dcss-unmarked-perfect-makes-the-defaulted-share-exactly-0-or-100-never-a-fraction) — every `Perfect` cell in the DCS paradigm dataset is 100% inferred and every `Aorist` cell 100% attested, so the evidence flag belongs to the CATEGORY, not the cell. Measured 1,955 attested vs 3,229 defaulted cells, zero in between.
+- 🟠 [§523. MW's abbreviation legend was never OCR'd — `MWS/prefaces/` stops one page before the required table](#523-mws-abbreviation-legend-list-of-works-and-authors-p-xxxiii-was-never-ocrd--mwsprefaces-stops-at-p-xxxii-one-page-short-of-the-table-every-cross-dict-legend-pipeline-expects) — the apparent MW legend-crosswalk path parses zero keys because the committed transcription ends at p. xxxii; acquire and OCR p. xxxiii+ instead of inventing a secondary-source substitute.
+- 🔴 [§524. A parallel-corpus column can be misaligned against its own row key](#524-a-parallel-corpus-column-can-be-misaligned-against-its-own-row-key--griffiths-english-is-off-by-the-vālakhilya-block-for-rv-8498103-and-a-char-count-selftest-cannot-see-it) — Griffith English is displaced for 678 RV stanzas while structural counts remain perfect; cross-check content against another column, not only key/length.
+- 🔴 [§525. An interactive tool outside Python's call stack needs durable intent before the call and response-bound evidence inside finalization](#525-an-interactive-tool-outside-pythons-call-stack-needs-a-durable-intent-before-the-call-and-response-bound-evidence-inside-finalization--a-saved-response-alone-cannot-prove-it-was-authorized) — persist an operation identity before spend and the response fingerprint in the same atomic update as finalization; either half alone leaves a duplicate-spend or divergent-replay crash window.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
