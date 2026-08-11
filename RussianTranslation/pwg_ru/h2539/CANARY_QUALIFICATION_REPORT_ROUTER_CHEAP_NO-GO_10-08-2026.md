@@ -2,6 +2,15 @@ _Created: 10-08-2026 · Last updated: 10-08-2026_
 
 # router.cheap two-ticket attested canary — qualification report (NO-GO)
 
+> **Accounting addendum, 11-08-2026:** the immutable T1/T2 envelopes are unchanged.
+> Their attributable totals are classified in
+> [`GATEWAY_USAGE_ACCOUNTING_11-08-2026.json`](GATEWAY_USAGE_ACCOUNTING_11-08-2026.json)
+> as `usage_evaluable=true`, `billing_mode=unknown_gateway`, and
+> `observed_cash_usd=null`: 41,320 uncached input, 4,263 output, 116,439
+> one-hour cache-write, and 974,856 cache-read tokens. Direct Opus 5 rates are
+> retained only as $1.964993 standard / $0.9824965 Batch counterfactuals, never
+> as observed router cash.
+
 Handoff: **H2539 (Opus 5) — Run the attested router.cheap two-ticket live canary at v1.144.28 under authorised spend, and mint gateway-w1 only on GO**
 ([handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2539-Opus_SanskritLexicography_router-cheap-canary-attested-authorised_10.08.26.md)).
 

@@ -640,12 +640,16 @@ def test_durable_call_reservation():
                 value, error = eng.call('p', 'success', ['agni'])
                 assert error is None and value == {'cards': []}
                 usage = one.usage()
-                assert usage['cost_evaluable'] is False and usage['observed_cost_usd'] == 0.10
+                assert usage['cost_evaluable'] is False and usage['observed_cost_usd'] == 0
+                telemetry = one.snapshot()['reservations'][1]['telemetry']
+                assert telemetry['accounting']['usage_evaluable'] is True
+                assert telemetry['accounting']['billing_mode'] == 'unknown_gateway'
+                assert telemetry['accounting']['observed_cash_usd'] is None
                 _value, error = eng.call('p', 'refused', ['agni'])
                 assert error == 'budget_exceeded:max_calls' and len(spawned) == 2
         finally:
             h.claude_argv_prefix = original_prefix
-    print('  call ledger: zero spawn; malformed+success cumulative cost stays unevaluable; cap refused')
+    print('  call ledger: zero spawn; Max credit unclaimed stays cash-unknown; cap refused')
 
 
 def test_cli_reservation_and_preflight_gates():
@@ -1080,26 +1084,29 @@ def test_cost_telemetry_survives():
     u = payload['summary']['usage']
     assert (u['input_tokens'], u['output_tokens'], u['cache_read_tokens'],
             u['cache_creation_tokens']) == (100, 50, 10, 5), u
-    assert u['subagent_tokens'] == 165 and u['cost_evaluable'] is True and u['priced_calls'] == 1, u
-    assert abs(u['observed_cost_usd'] - 0.0123) < 1e-9, u
+    assert u['subagent_tokens'] == 165 and u['usage_evaluable'] is True \
+        and u['cost_evaluable'] is False and u['priced_calls'] == 1, u
+    assert u['observed_cost_usd'] == 0 and u['missing_usage_calls'] == 0, u
 
     # (a) two calls SUM, not overwrite (empty cards -> retry to whole_attempts=2)
     u = execute(manifest(), sequence([wrap([], U, 0.01), wrap([], U, 0.02)]))[0]['summary']['usage']
     assert u['priced_calls'] == 2 and u['input_tokens'] == 200 and u['subagent_tokens'] == 330, u
-    assert abs(u['observed_cost_usd'] - 0.03) < 1e-9 and u['cost_evaluable'] is True, u
+    assert u['observed_cost_usd'] == 0 and u['cost_evaluable'] is False, u
+    assert u['usage_evaluable'] is True and u['missing_usage_calls'] == 0, u
 
     # (b) measured + missing-usage -> retain telemetry, cost_evaluable False, counter, authoritative cost
     u = execute(manifest(), sequence([wrap([], U, 0.01), wrap([], usage=None, cost=None)]))[0]['summary']['usage']
     assert u['input_tokens'] == 100 and u['subagent_tokens'] == 165, u
     assert u['cost_evaluable'] is False and u['missing_usage_calls'] == 1, u
-    assert abs(u['observed_cost_usd'] - 0.01) < 1e-9, u
+    assert u['observed_cost_usd'] == 0 and u['usage_evaluable'] is False, u
 
     # (c) a PAID, schema-malformed wrapper is still accounted before cards[] validation/retry.
     malformed = proc(stdout=json.dumps({
         'structured_output': {'not_cards': []}, 'usage': U, 'total_cost_usd': 0.25}))
     u = execute(manifest(), sequence([malformed, malformed]))[0]['summary']['usage']
     assert u['priced_calls'] == 2 and u['input_tokens'] == 200, u
-    assert u['cost_evaluable'] is False and abs(u['observed_cost_usd'] - 0.50) < 1e-9, u
+    assert u['cost_evaluable'] is False and u['observed_cost_usd'] == 0, u
+    assert u['usage_evaluable'] is True and u['missing_usage_calls'] == 0, u
 
     # An unreadable envelope is also a spawned call; its unknown spend fails closed.
     unreadable = proc(stdout='not-json')
@@ -1113,7 +1120,7 @@ def test_cost_telemetry_survives():
     u = execute(m, r)[0]['summary']['usage']
     assert r.i == 1, 'budget should cap to 1 actual spawn, got %d' % r.i
     assert u['priced_calls'] == 1 and u['input_tokens'] == 100, u
-    assert abs(u['observed_cost_usd'] - 0.05) < 1e-9, u
+    assert u['observed_cost_usd'] == 0 and u['usage_evaluable'] is True, u
     print('  R5 cost: every spawn accounted before result validation; malformed/missing fails closed')
 
 

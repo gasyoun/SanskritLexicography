@@ -10,7 +10,7 @@
     "reservation_ordinal", "purpose", "provenance_class", "promotable",
     "manifest_sha256", "request_sha256", "prompt_sha256",
     "output_schema_sha256", "hard_timeout_ms", "max_output_tokens",
-    "wall_ms", "usage", "cost_evaluable", "observed_cost_usd",
+    "wall_ms", "usage", "accounting", "cost_evaluable", "observed_cost_usd",
     "schema_compliant", "audit_passed", "audit_reasons", "failure_class",
     "error", "result", "canonical_result_sha256", "source_envelope_sha256",
     "dispatch_id", "dispatch_attested", "envelope_sha256"
@@ -35,6 +35,7 @@
     "max_output_tokens": {"type": "integer", "minimum": 1},
     "wall_ms": {"type": ["integer", "number", "null"], "minimum": 0},
     "usage": {"type": "object"},
+    "accounting": {"$ref": "#/$defs/accounting"},
     "cost_evaluable": {"type": "boolean"},
     "observed_cost_usd": {"type": ["number", "null"], "minimum": 0},
     "schema_compliant": {"type": "boolean"},
@@ -56,6 +57,29 @@
     "envelope_sha256": {"$ref": "#/$defs/sha256"}
   },
   "$defs": {
-    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "accounting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "usage_evaluable", "input_tokens", "output_tokens",
+        "cache_creation_tokens", "cache_read_tokens", "billing_mode",
+        "observed_cash_usd", "list_equivalent_usd", "credit_equivalent_usd",
+        "pricing_policy"],
+      "properties": {
+        "schema": {"const": "pwg.usage_accounting.v1"},
+        "usage_evaluable": {"type": "boolean"},
+        "input_tokens": {"type": "integer", "minimum": 0},
+        "output_tokens": {"type": "integer", "minimum": 0},
+        "cache_creation_tokens": {"type": "integer", "minimum": 0},
+        "cache_read_tokens": {"type": "integer", "minimum": 0},
+        "billing_mode": {"enum": ["max_interactive", "max_agent_sdk_credit",
+          "api_standard", "api_batch", "unknown_gateway"]},
+        "observed_cash_usd": {"type": ["number", "null"], "minimum": 0},
+        "list_equivalent_usd": {"type": ["number", "null"], "minimum": 0},
+        "credit_equivalent_usd": {"type": ["number", "null"], "minimum": 0},
+        "pricing_policy": {"type": "string", "minLength": 1},
+        "credit_claim_evidence": {"type": ["string", "null"], "minLength": 1}
+      }
+    }
   }
 }

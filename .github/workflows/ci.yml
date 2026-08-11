@@ -100,6 +100,8 @@ jobs:
           python -m py_compile \
             RussianTranslation/src/pilot/proc_tree.py \
             RussianTranslation/src/pilot/call_reservation.py \
+            RussianTranslation/src/pilot/usage_accounting.py \
+            RussianTranslation/src/pilot/pwg_batch.py \
             RussianTranslation/src/pilot/headless_worker.py \
             RussianTranslation/src/pilot/max_account_orchestrator.py \
             RussianTranslation/src/pilot/bounded_staged_run.py \
@@ -221,10 +223,13 @@ jobs:
         run: |
           python src/pilot/agent_budget.py
           python src/pilot/call_reservation_selftest.py
+          python src/pilot/usage_accounting_selftest.py
           python src/pilot/gateway_route_selftest.py
           python src/pilot/gateway_external_selftest.py
           python src/pilot/gateway_attestation_selftest.py
           python src/pilot/gateway_canary_contract_selftest.py
+          python src/pilot/route_compare_selftest.py
+          python src/pilot/pwg_batch_selftest.py
           python src/pilot/headless_worker_selftest.py
           python src/pilot/execution_contract_selftest.py
           python src/pilot/max_account_orchestrator_selftest.py

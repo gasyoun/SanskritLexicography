@@ -10,6 +10,10 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added
+
+- **Truthful PWG usage accounting and credential-free Message Batches readiness (11-08-2026, Codex):** `pwg.usage_accounting.v1` separates observable tokens, billing mode, observed cash, list equivalent, and Max Agent SDK credit equivalent; CLI `total_cost_usd` is never subscription cash and credit classification requires explicit claim evidence. Router token-only evidence is now eligible when model/schema/audit/usage are attributable. `pwg_batch.py` seals manifest-bound Sonnet 5 or Opus 5 requests, byte-identical one-hour cache blocks, deterministic `custom_id`s, reserve-before-submit state, ambiguous-create refusal, unordered fetch, exact-once terminal finalization, and unresolved-only heal waves. A real 100-card manifest replayed identically as 10 requests / 501,650 B / $4.37942675 conservative Batch upper estimate. Zero network calls, promotion, store/TM writes, or default-route changes.
+
 ## [1.144.32] - 2026-08-11
 
 ### Added
