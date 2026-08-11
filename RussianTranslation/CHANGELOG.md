@@ -10,6 +10,8 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.144.31] - 2026-08-11
+
 ### Added
 
 - **router.cheap canary single-source contract + exact Agent dispatch attestation (H2554, 10-08-2026, Codex Sol `gpt-5.6-sol`):** `gateway_canary_contract.py` generates the v2 prompt and complete Draft 2020-12 schema from one canonical fixture and proves the exact H2539 contradiction RED before GREEN with a prompt-derived instance and six semantic mutations. Gateway protocol v2 seals an Agent `tool_use.id` across ticket binding, response wrapper, matching `tool_result`, attestation, envelope, recovery output, and JSON Schemas; model/usage now come only from that dispatch's completed `toolUseResult`, never a window-wide inference. H2539 remains NO-GO and its v1 evidence stays `legacy_window`/non-promotable. New CI-called matrices: canary 3/3, attestation 9/9; existing gateway 11/11 and route 10/10 remain green. Full report: [ROUTER_CHEAP_CANARY_CONTRACT_DISPATCH_ATTESTATION_REPAIR_10-08-2026.md](pwg_ru/h2554/ROUTER_CHEAP_CANARY_CONTRACT_DISPATCH_ATTESTATION_REPAIR_10-08-2026.md). Zero live calls or reservations.
