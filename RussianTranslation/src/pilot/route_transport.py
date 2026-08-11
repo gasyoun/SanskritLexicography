@@ -14,6 +14,11 @@ import re
 import tempfile
 
 from gateway_route import canonical_json_bytes, validate_complete_schema
+from usage_accounting import (
+    UNKNOWN_GATEWAY,
+    build as build_accounting,
+    validate as validate_accounting,
+)
 
 
 SCHEMA = 'pwg.transport_envelope.v1'
@@ -182,7 +187,7 @@ def seal_envelope(*, route, request, run_id, reservation, returned_model,
                   wall_ms, usage, cost_evaluable, observed_cost_usd,
                   result, schema_compliant, audit_passed, audit_reasons,
                   failure_class=None, error=None, source_envelope_sha256=None,
-                  dispatch_id=None, dispatch_attested=None):
+                  dispatch_id=None, dispatch_attested=None, accounting=None):
     """Create the common non-promotable, self-hashed transport envelope."""
     verify_request(request)
     if route not in SUPPORTED_ROUTES:
@@ -201,6 +206,11 @@ def seal_envelope(*, route, request, run_id, reservation, returned_model,
         raise TransportRefusal('schema-compliant envelope requires a result')
     model_matches = (returned_model == request['requested_model']
                      if isinstance(returned_model, str) else None)
+    if accounting is None:
+        accounting = build_accounting(
+            usage, billing_mode=UNKNOWN_GATEWAY,
+            observed_cash_usd=observed_cost_usd if cost_evaluable else None)
+    validate_accounting(accounting)
     value = {
         'schema': SCHEMA,
         'route': route,
@@ -221,6 +231,7 @@ def seal_envelope(*, route, request, run_id, reservation, returned_model,
         'max_output_tokens': request['max_output_tokens'],
         'wall_ms': wall_ms,
         'usage': usage if isinstance(usage, dict) else {},
+        'accounting': accounting,
         'cost_evaluable': bool(cost_evaluable),
         'observed_cost_usd': observed_cost_usd,
         'schema_compliant': bool(schema_compliant),
@@ -255,6 +266,10 @@ def verify_envelope(value):
     if value.get('model_matches_request') is False and \
             value.get('failure_class') != 'model_substitution':
         raise TransportRefusal('model substitution is not classified')
+    try:
+        validate_accounting(value.get('accounting'))
+    except ValueError as exc:
+        raise TransportRefusal(str(exc)) from exc
     return value
 
 
@@ -264,7 +279,6 @@ def candidate_pass(envelope):
         envelope.get('model_matches_request') is True
         and envelope.get('schema_compliant')
         and envelope.get('audit_passed')
-        and envelope.get('cost_evaluable')
+        and envelope.get('accounting', {}).get('usage_evaluable') is True
         and envelope.get('failure_class') is None
     )
-

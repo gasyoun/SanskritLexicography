@@ -635,7 +635,7 @@ def profile_status(config_dir, claude='claude', call_reservation=None, account=N
         wrapper = json.loads(probe.stdout or '')
     except (TypeError, ValueError):
         wrapper = None
-    telemetry = telemetry_from_cli_wrapper(wrapper)
+    telemetry = telemetry_from_cli_wrapper(wrapper, max_agent_sdk_credit=True)
     envelope_ok = (
         isinstance(wrapper, dict)
         and wrapper.get('type') == 'result'
@@ -1381,7 +1381,7 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
         wrapper = json.loads(out)
     except (ValueError, TypeError):
         wrapper = None
-    telemetry = telemetry_from_cli_wrapper(wrapper)
+    telemetry = telemetry_from_cli_wrapper(wrapper, max_agent_sdk_credit=True)
     # H2079 / #945: hand the envelope's own timings back to the caller so a reading can be recorded
     # as route-time + gap rather than as one opaque wall number. Populated for ANY call that
     # produced a parseable envelope — including a failed one, where the decomposition is most
