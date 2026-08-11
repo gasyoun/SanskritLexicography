@@ -1023,7 +1023,11 @@ class HeadlessEngine:
         # Account for EVERY spawned process before classifying its result. This covers non-zero
         # provider exits and rc=0 wrappers whose structured_output is malformed. A missing envelope
         # increments missing_usage_calls and makes the whole run unevaluable.
-        telemetry = telemetry_from_cli_wrapper(wrapper)
+        execution = self.m.get('execution') or {}
+        telemetry = telemetry_from_cli_wrapper(
+            wrapper, max_agent_sdk_credit=True,
+            credit_claimed=execution.get('agent_sdk_credit_claimed') is True,
+            credit_claim_evidence=execution.get('agent_sdk_credit_claim_evidence'))
         structured = None
         structured_error = None
         if not proc.returncode:

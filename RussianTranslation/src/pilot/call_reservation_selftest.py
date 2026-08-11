@@ -121,7 +121,8 @@ def main():
             probes = CallReservationLedger(path, 'probes-ok', 2)
             assert mao.live_probe(cfg, claude=sys.executable, call_reservation=probes, account='a') < 30000
             assert probes.spent() == 2 and len(calls) == 2
-            assert probes.usage()['observed_cost_usd'] == 0.02
+            assert probes.usage()['observed_cost_usd'] == 0
+            assert probes.usage()['cost_evaluable'] is False
 
             mao.run_tree_kill = lambda *_a, **_k: SimpleNamespace(
                 returncode=0, stderr='', stdout='not-json')
