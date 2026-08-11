@@ -138,8 +138,7 @@ OUTPUT_BUDGET = 90 # DEFAULT 90 citation-weighted units since 2026-07-03 (raised
                    #  Byte mode is still reachable: an EXPLICIT --budget=N (without
                    #  --output-budget) or --output-budget=off — keeps documented byte-budget
                    #  invocations (e.g. FU1 --budget=6000) exact.
-BATCH_MAX_OUTPUT_TOKENS = 32768  # explicit manifest-bound ceiling for Message Batches;
-                                 # ignored by the existing CLI/Workflow executors
+BATCH_MAX_OUTPUT_TOKENS = None  # opt-in manifest-bound Message Batches ceiling
 SENSE_PRESPLIT_BUDGET = 20  # --sense-presplit-budget=N (0/off to disable). SECOND, orthogonal
                    #  presplit trigger added 2026-07-04 (H155, tyaj~~h0_zz_pw stall). The
                    #  citation metric (1 + <ls>) predicts whole-card StructuredOutput failure for
@@ -425,6 +424,11 @@ def parse_args(argv):
             out_path = a.split('=', 1)[1]
         elif a.startswith('--manifest-out='):
             manifest_path = a.split('=', 1)[1]
+        elif a.startswith('--batch-max-output-tokens='):
+            value = int(a.split('=', 1)[1])
+            if value <= 0:
+                die('--batch-max-output-tokens must be positive')
+            globals()['BATCH_MAX_OUTPUT_TOKENS'] = value
         elif a.startswith('--profile-slot='):
             profile_slot = a.split('=', 1)[1]
         elif a.startswith('--config-dir='):
@@ -524,7 +528,7 @@ def parse_args(argv):
         # An explicit --budget=N with no --output-budget means the caller wants BYTE-mode
         # batching (backward compat: every pre-2026-07-02 documented invocation that tuned
         # --budget did so under byte semantics — silently reinterpreting it would change
-                   # every runbook's batch shape).
+        # every runbook's batch shape).
         globals()['OUTPUT_BUDGET'] = None
     if lang not in ('ru', 'en'):
         die('unknown --lang %r (ru|en)' % lang)
@@ -1570,7 +1574,6 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
         'suggestions': runtime_suggest_tm,
         'presplit_keys': presplit,
         'runtime': {
-            'max_output_tokens': BATCH_MAX_OUTPUT_TOKENS,
             'binary_split': bool(BINARY_SPLIT),
             'per_card_heal_budget': bool(PER_CARD_HEAL_BUDGET and SELFHEAL),
             'per_card_heal_factor': PER_CARD_HEAL_FACTOR,
@@ -1606,6 +1609,8 @@ def build(root, keys, rootmap, budget, lean=False, nws_gate=False,
             'stagger_ms': STAGGER_MS,
         },
     }
+    if BATCH_MAX_OUTPUT_TOKENS is not None:
+        execution_manifest['runtime']['max_output_tokens'] = BATCH_MAX_OUTPUT_TOKENS
     # The workflow output must carry the same promotion contract as its execution
     # manifest. Otherwise audit can verify the launch while promotion cannot
     # independently distinguish a real card from a synthetic control.
