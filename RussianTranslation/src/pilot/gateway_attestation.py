@@ -51,6 +51,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import re
 import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -62,7 +63,10 @@ if HERE not in sys.path:
 
 from gateway_route import canonical_json_bytes, sha256_bytes  # noqa: E402
 
-ATTESTATION_SCHEMA = 'pwg.gateway_external_attestation.v1'
+ATTESTATION_SCHEMA = 'pwg.gateway_external_attestation.v2'
+LEGACY_ATTESTATION_SCHEMA = 'pwg.gateway_external_attestation.v1'
+DISPATCH_SCHEME = 'claude-agent-tool-use.v1'
+DISPATCH_ID_RE = re.compile(r'^toolu(?:se)?_[A-Za-z0-9_-]{8,180}$')
 
 #: ``message.model`` value the harness writes on locally-synthesised events
 #: (API error notices, meta messages).  Never a served model.
@@ -173,6 +177,164 @@ def read_turns(transcript_path):
     return turns, unparseable
 
 
+def _content_blocks(event):
+    message = event.get('message')
+    content = message.get('content') if isinstance(message, dict) else None
+    return content if isinstance(content, list) else []
+
+
+def read_events(transcript_path):
+    """Read transcript objects without projecting away dispatch identifiers."""
+    if not os.path.isfile(transcript_path):
+        raise AttestationError('transcript not found: %s' % transcript_path)
+    events = []
+    unparseable = 0
+    with open(transcript_path, 'r', encoding='utf-8') as handle:
+        for lineno, line in enumerate(handle, start=1):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                event = json.loads(line)
+            except json.JSONDecodeError:
+                unparseable += 1
+                continue
+            if isinstance(event, dict):
+                events.append((lineno, event))
+    return events, unparseable
+
+
+def _dispatch_prompt_sha256(prompt):
+    if not isinstance(prompt, str) or not prompt:
+        raise AttestationError('Agent tool_use prompt is missing')
+    return sha256_bytes(prompt.encode('utf-8'))
+
+
+def _normalise_result_usage(usage):
+    public = _usage_public(usage)
+    return public or None
+
+
+def build_dispatch_attestation(*, transcript_path, dispatch_id, run_id,
+                               reservation_id, requested_model,
+                               ticket_sha256, request_prompt_sha256,
+                               started_at=None, ended_at=None):
+    """Bind one ticket to exactly one completed Agent tool dispatch.
+
+    Identity comes from the harness relation itself: one Agent ``tool_use.id``
+    and one ``tool_result.tool_use_id``.  Served model and usage come only from
+    that result event's ``toolUseResult`` record; adjacent turns are irrelevant.
+    """
+    if not isinstance(dispatch_id, str) or not DISPATCH_ID_RE.fullmatch(dispatch_id):
+        raise AttestationError('dispatch_id is malformed')
+    if not isinstance(ticket_sha256, str) or not re.fullmatch(
+            r'[0-9a-f]{64}', ticket_sha256):
+        raise AttestationError('ticket_sha256 is malformed')
+    if not isinstance(request_prompt_sha256, str) or not re.fullmatch(
+            r'[0-9a-f]{64}', request_prompt_sha256):
+        raise AttestationError('request_prompt_sha256 is malformed')
+    if started_at is not None:
+        parse_utc(started_at, 'started_at')
+    if ended_at is not None:
+        parse_utc(ended_at, 'ended_at')
+    if started_at is not None and ended_at is not None and (
+            parse_utc(ended_at, 'ended_at') < parse_utc(started_at, 'started_at')):
+        raise AttestationError('ended_at precedes started_at')
+
+    events, unparseable = read_events(transcript_path)
+    if unparseable:
+        raise AttestationError(
+            'transcript has %d unparseable line(s); exact dispatch uniqueness '
+            'cannot be proved' % unparseable)
+    uses = []
+    results = []
+    for lineno, event in events:
+        for block in _content_blocks(event):
+            if not isinstance(block, dict):
+                continue
+            if (block.get('type') == 'tool_use'
+                    and block.get('name') == 'Agent'
+                    and block.get('id') == dispatch_id):
+                uses.append((lineno, event, block))
+            if (block.get('type') == 'tool_result'
+                    and block.get('tool_use_id') == dispatch_id):
+                results.append((lineno, event, block))
+    if len(uses) != 1:
+        raise AttestationError(
+            'dispatch_id must identify exactly one Agent tool_use; found %d'
+            % len(uses))
+    if len(results) != 1:
+        raise AttestationError(
+            'dispatch_id must identify exactly one tool_result; found %d'
+            % len(results))
+
+    use_line, use_event, use_block = uses[0]
+    result_line, result_event, result_block = results[0]
+    prompt = (use_block.get('input') or {}).get('prompt')
+    observed_prompt_sha256 = _dispatch_prompt_sha256(prompt)
+    if observed_prompt_sha256 != request_prompt_sha256:
+        raise AttestationError('Agent tool_use prompt does not match ticket request')
+    if result_block.get('is_error') is True:
+        raise AttestationError('Agent tool_result is an error/refusal')
+    if result_event.get('sourceToolAssistantUUID') != use_event.get('uuid'):
+        raise AttestationError('tool_result source does not match tool_use event')
+    detail = result_event.get('toolUseResult')
+    if not isinstance(detail, dict):
+        raise AttestationError('tool_result lacks structured toolUseResult evidence')
+    if detail.get('status') != 'completed':
+        raise AttestationError('Agent dispatch is not completed')
+    model = detail.get('resolvedModel')
+    agent_id = detail.get('agentId')
+    if not isinstance(model, str) or not model:
+        raise AttestationError('completed Agent result lacks resolvedModel')
+    if not isinstance(agent_id, str) or not agent_id:
+        raise AttestationError('completed Agent result lacks agentId')
+
+    record = {
+        'schema': ATTESTATION_SCHEMA,
+        'attestation_scope': 'dispatch',
+        'dispatch_scheme': DISPATCH_SCHEME,
+        'dispatch_id': dispatch_id,
+        'ticket_sha256': ticket_sha256,
+        'request_prompt_sha256': request_prompt_sha256,
+        'transcript_sha256': sha256_bytes(open(transcript_path, 'rb').read()),
+        'transcript_basename': os.path.basename(transcript_path),
+        'run_id': run_id,
+        'reservation_id': reservation_id,
+        'requested_model': requested_model,
+        'started_at': started_at,
+        'ended_at': ended_at,
+        'tool_use_line': use_line,
+        'tool_result_line': result_line,
+        'tool_use_event_uuid': use_event.get('uuid'),
+        'tool_result_event_uuid': result_event.get('uuid'),
+        'is_sidechain': bool(use_event.get('isSidechain')),
+        'agent_id': agent_id,
+        'dispatch_status': detail['status'],
+        'attested_model': model,
+        'model_matches_request': model == requested_model,
+        'usage_totals': _normalise_result_usage(detail.get('usage')),
+        'unparseable_lines': 0,
+    }
+    record['attestation_sha256'] = sha256_bytes(canonical_json_bytes(record))
+    return record
+
+
+def classify_legacy_attestation(record):
+    """Truthfully label H2539 v1 evidence without upgrading its scope."""
+    if not isinstance(record, dict) or record.get('schema') != LEGACY_ATTESTATION_SCHEMA:
+        raise AttestationError('not a legacy v1 attestation')
+    return {
+        'schema': LEGACY_ATTESTATION_SCHEMA,
+        'attestation_scope': 'legacy_window',
+        'dispatch_attested': False,
+        'promotable': False,
+        'run_id': record.get('run_id'),
+        'reservation_id': record.get('reservation_id'),
+        'model_matches_request': record.get('model_matches_request'),
+    }
+
+
 def select_window(turns, started_at, ended_at, sidechain_only=True):
     """Return served turns whose timestamp falls inside the closed window."""
     start = parse_utc(started_at, 'started_at')
@@ -197,8 +359,9 @@ def select_window(turns, started_at, ended_at, sidechain_only=True):
     return selected
 
 
-def build_attestation(*, transcript_path, started_at, ended_at, run_id,
-                      reservation_id, requested_model, sidechain_only=True):
+def build_window_attestation_legacy(*, transcript_path, started_at, ended_at,
+                                    run_id, reservation_id, requested_model,
+                                    sidechain_only=True):
     """Build a canonical, hashable attestation record for one Agent call.
 
     ``models_observed`` holds every distinct served-model string seen in the
@@ -214,7 +377,7 @@ def build_attestation(*, transcript_path, started_at, ended_at, run_id,
     attested_model = models[0] if len(models) == 1 else None
     usage_present = [t for t in window if t.get('usage')]
     record = {
-        'schema': ATTESTATION_SCHEMA,
+        'schema': LEGACY_ATTESTATION_SCHEMA,
         'transcript_sha256': sha256_bytes(
             open(transcript_path, 'rb').read()),
         'transcript_basename': os.path.basename(transcript_path),
@@ -247,6 +410,11 @@ def build_attestation(*, transcript_path, started_at, ended_at, run_id,
     return record
 
 
+def build_attestation(**kwargs):
+    """Compatibility name for the v2 exact-dispatch builder."""
+    return build_dispatch_attestation(**kwargs)
+
+
 def _parser():
     parser = argparse.ArgumentParser(
         description='Attest served model + usage for one Agent call from the '
@@ -255,14 +423,11 @@ def _parser():
     parser.add_argument('--project-dir',
                         help='transcript directory (defaults to the slug of cwd)')
     parser.add_argument('--session-id', help='session uuid, selects <uuid>.jsonl')
-    parser.add_argument('--started-at', required=True)
-    parser.add_argument('--ended-at', required=True)
-    parser.add_argument('--run-id', required=True)
-    parser.add_argument('--reservation-id', required=True)
-    parser.add_argument('--requested-model', required=True)
-    parser.add_argument('--include-main-turns', action='store_true',
-                        help='also count non-sidechain turns (default: Agent '
-                             'sidechain turns only)')
+    parser.add_argument('--dispatch-id', required=True)
+    parser.add_argument('--ticket', required=True,
+                        help='immutable gateway ticket JSON')
+    parser.add_argument('--started-at')
+    parser.add_argument('--ended-at')
     parser.add_argument('--out', required=True, help='attestation json path')
     return parser
 
@@ -282,14 +447,19 @@ def main(argv=None):
     args = _parser().parse_args(argv)
     try:
         transcript = resolve_transcript(args)
-        record = build_attestation(
+        with open(args.ticket, 'r', encoding='utf-8') as handle:
+            ticket = json.load(handle)
+        binding = ticket.get('dispatch_binding') or {}
+        record = build_dispatch_attestation(
             transcript_path=transcript,
+            dispatch_id=args.dispatch_id,
             started_at=args.started_at,
             ended_at=args.ended_at,
-            run_id=args.run_id,
-            reservation_id=args.reservation_id,
-            requested_model=args.requested_model,
-            sidechain_only=not args.include_main_turns,
+            run_id=ticket.get('run_id'),
+            reservation_id=ticket.get('reservation_id'),
+            requested_model=ticket.get('requested_model'),
+            ticket_sha256=ticket.get('ticket_sha256'),
+            request_prompt_sha256=binding.get('request_prompt_sha256'),
         )
     except AttestationError as exc:
         sys.stderr.write('attestation refused: %s\n' % exc)
@@ -297,8 +467,8 @@ def main(argv=None):
     with open(args.out, 'wb') as handle:
         handle.write(canonical_json_bytes(record))
     print('attestation written: %s' % args.out)
-    print('  turns_in_window=%s models_observed=%s attested_model=%s'
-          % (record['turns_in_window'], record['models_observed'],
+    print('  dispatch_id=%s status=%s attested_model=%s'
+          % (record['dispatch_id'], record['dispatch_status'],
              record['attested_model']))
     print('  model_matches_request=%s attestation_sha256=%s'
           % (record['model_matches_request'], record['attestation_sha256']))

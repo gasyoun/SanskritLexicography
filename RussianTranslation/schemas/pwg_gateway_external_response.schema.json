@@ -1,15 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://sanskrit-lexicon.github.io/schemas/pwg_gateway_external_response.schema.json",
-  "title": "PWG harness-bound public Agent response wrapper v1",
+  "title": "PWG harness-bound public Agent response wrapper v2",
   "type": "object",
   "required": [
     "schema", "run_id", "reservation_id", "route", "requested_model",
-    "returned_model", "purpose", "nonce", "started_at", "ended_at",
+    "returned_model", "purpose", "nonce", "dispatch_id", "started_at", "ended_at",
     "wall_ms", "content"
   ],
   "properties": {
-    "schema": {"const": "pwg.gateway_external_response.v1"},
+    "schema": {"const": "pwg.gateway_external_response.v2"},
     "run_id": {"type": "string", "minLength": 1},
     "reservation_id": {"type": "string", "minLength": 1},
     "route": {"const": "router-cheap-agent"},
@@ -17,6 +17,7 @@
     "returned_model": {"type": "string", "minLength": 1},
     "purpose": {"type": "string", "minLength": 1},
     "nonce": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "dispatch_id": {"type": "string", "pattern": "^toolu(se)?_[A-Za-z0-9_-]{8,180}$"},
     "started_at": {"type": ["string", "null"]},
     "ended_at": {"type": ["string", "null"]},
     "wall_ms": {"type": ["number", "null"], "minimum": 0},
