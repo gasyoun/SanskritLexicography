@@ -1,13 +1,14 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://sanskrit-lexicon.github.io/schemas/pwg_gateway_external_envelope.schema.json",
-  "title": "PWG router.cheap external-call sealed envelope v1",
+  "title": "PWG router.cheap external-call sealed envelope v2",
   "type": "object",
   "additionalProperties": false,
   "required": [
     "schema", "route", "requested_model", "returned_model",
     "model_matches_request", "provenance_class", "promotable", "run_id",
-    "reservation_id", "reservation_ordinal", "purpose", "nonce", "waiver_id",
+    "reservation_id", "reservation_ordinal", "purpose", "nonce", "dispatch_id",
+    "dispatch_attested", "attestation_scope", "waiver_id",
     "waiver_applied", "hard_timeout_ms", "started_at", "ended_at", "wall_ms",
     "schema_compliant", "failure_class", "error", "result", "cost_evaluable",
     "observed_cost_usd", "ledger_observed_cost_floor_usd", "ledger_telemetry",
@@ -18,7 +19,7 @@
     "saved_envelope_sha256"
   ],
   "properties": {
-    "schema": {"const": "pwg.gateway_external_envelope.v1"},
+    "schema": {"const": "pwg.gateway_external_envelope.v2"},
     "route": {"const": "router-cheap-agent"},
     "requested_model": {"type": "string", "minLength": 1},
     "returned_model": {"type": "string", "minLength": 1},
@@ -30,6 +31,9 @@
     "reservation_ordinal": {"type": "integer", "minimum": 1},
     "purpose": {"type": "string", "minLength": 1},
     "nonce": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "dispatch_id": {"type": "string", "pattern": "^toolu(se)?_[A-Za-z0-9_-]{8,180}$"},
+    "dispatch_attested": {"type": "boolean"},
+    "attestation_scope": {"type": ["string", "null"], "enum": ["dispatch", null]},
     "waiver_id": {"const": "router-cheap-agent-owner-waiver-2026-08-09.v1"},
     "waiver_applied": {"type": "boolean"},
     "hard_timeout_ms": {"type": "integer", "minimum": 1, "maximum": 600000},

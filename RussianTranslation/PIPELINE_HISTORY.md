@@ -835,14 +835,14 @@ likely the SAME class, not a new bug:
   with zero other defects. **Before freezing a paid-call schema, validate at least one
   instance constructed from the prompt's own inlined source text** — and generate the
   shared literals from the fixture once instead of hand-typing them into both artifacts.
-- **The attestation module's default filter does not match every harness.**
-  `gateway_attestation.py` selects turns with `isSidechain: true`; harnesses that
-  record `Agent` calls as **main turns** (H2539's session: 101 main, 0 sidechain)
-  give it 0 turns in the window and so `model_matches_request: null` — which the
-  canary contract reads as NO-GO. `--include-main-turns` is the workaround, but it
-  widens observation to the whole window and therefore attests the served model for
-  *the window*, not provably for *the one dispatch inside it*. State that residual
-  whenever the flag is used; do not report it as a clean per-call attestation.
+- **Resolved in H2554: main-vs-sidechain is evidence, never an identity selector.**
+  The v1 attestor selected a time window and defaulted to `isSidechain: true`; H2539's
+  101-main/0-sidechain transcript therefore needed a window-wide override. Protocol v2
+  instead requires one concrete Agent `tool_use.id`, its unique
+  `tool_result.tool_use_id`, a matching source assistant UUID, the ticket's exact prompt
+  hash, and `toolUseResult.status=completed`; `resolvedModel`, `agentId`, and usage come
+  only from that result. Main and sidechain calls follow the same exact-dispatch path.
+  Legacy H2539 v1 artifacts remain `legacy_window` and cannot be upgraded.
 - **A refused Agent call is not a spent Agent call.** H2539's transcript held 3
   `Agent` tool_use blocks for 2 paid dispatches: one blocked by
   `guard_agent_subspawn.py`, one rejected as `Agent type 'router-cheap-agent' not
