@@ -198,12 +198,14 @@ def _ticket_payload(reservation, descriptor, request, output_schema):
         'request': request,
         'output_schema': output_schema,
     }
+    if descriptor.get('max_output_tokens') is not None:
+        payload['max_output_tokens'] = descriptor['max_output_tokens']
     payload['ticket_sha256'] = _canonical_hash(payload)
     return _validate_protocol(payload, TICKET_SCHEMA)
 
 
 def _operation_from_ticket(value):
-    return {
+    operation = {
         'schema': DETAIL_SCHEMA,
         'run_id': value.get('run_id'),
         'max_calls': value.get('max_calls'),
@@ -218,6 +220,9 @@ def _operation_from_ticket(value):
         'request_prompt_sha256': (
             value.get('dispatch_binding') or {}).get('request_prompt_sha256'),
     }
+    if value.get('max_output_tokens') is not None:
+        operation['max_output_tokens'] = value['max_output_tokens']
+    return operation
 
 
 def _verify_ticket(value):
@@ -262,6 +267,11 @@ def _verify_ticket(value):
             value.get('hard_timeout_ms'), 'gateway_external.ticket.hard_timeout_ms')
     except (TypeError, ValueError) as exc:
         raise ExternalRefusal('ticket timeout is invalid: %s' % exc) from exc
+    if value.get('max_output_tokens') is not None and (
+            isinstance(value['max_output_tokens'], bool)
+            or not isinstance(value['max_output_tokens'], int)
+            or value['max_output_tokens'] <= 0):
+        raise ExternalRefusal('ticket max_output_tokens must be a positive integer')
     try:
         validate_complete_schema({}, value.get('output_schema'))
     except ValueError as exc:
@@ -277,7 +287,8 @@ def prepare_external(*, ledger_path, run_id, max_calls, purpose,
                      requested_model, request_path, schema_path, ticket_path,
                      route=ROUTE, provenance=SYNTHETIC_PROVENANCE,
                      timeout_ms=PRODUCTION_HARD_TIMEOUT_MS,
-                     waiver_id=OWNER_WAIVER_ID, fault=None):
+                     waiver_id=OWNER_WAIVER_ID, max_output_tokens=None,
+                     fault=None):
     """Reserve exactly once and publish one immutable external-call ticket."""
     _require_text(run_id, 'run_id')
     _require_text(purpose, 'purpose')
@@ -295,6 +306,11 @@ def prepare_external(*, ledger_path, run_id, max_calls, purpose,
         assert_timeout_within_ceiling(timeout_ms, 'gateway_external.timeout_ms')
     except (TypeError, ValueError) as exc:
         raise ExternalRefusal('timeout exceeds the 600000 ms ceiling: %s' % exc) from exc
+    if max_output_tokens is not None and (
+            isinstance(max_output_tokens, bool)
+            or not isinstance(max_output_tokens, int)
+            or max_output_tokens <= 0):
+        raise ExternalRefusal('max_output_tokens must be a positive integer')
     request, _ = _read_json(request_path, 'request JSON')
     output_schema, _ = _read_json(schema_path, 'output schema')
     if not isinstance(request, dict):
@@ -322,6 +338,8 @@ def prepare_external(*, ledger_path, run_id, max_calls, purpose,
         'schema_sha256': _canonical_hash(output_schema),
         'request_prompt_sha256': _request_prompt_sha256(request),
     }
+    if max_output_tokens is not None:
+        descriptor['max_output_tokens'] = max_output_tokens
     descriptor['operation_sha256'] = _canonical_hash(descriptor)
     ledger = CallReservationLedger(ledger_path, run_id, max_calls)
     try:
@@ -729,6 +747,7 @@ def _parser():
     prepare.add_argument('--route', default=ROUTE)
     prepare.add_argument('--provenance', default=SYNTHETIC_PROVENANCE)
     prepare.add_argument('--timeout-ms', type=int, default=PRODUCTION_HARD_TIMEOUT_MS)
+    prepare.add_argument('--max-output-tokens', type=int)
     prepare.add_argument('--waiver-id', default=OWNER_WAIVER_ID)
 
     record = sub.add_parser(
@@ -771,7 +790,8 @@ def main(argv=None):
                 request_path=args.request, schema_path=args.schema,
                 ticket_path=args.ticket, route=args.route,
                 provenance=args.provenance, timeout_ms=args.timeout_ms,
-                waiver_id=args.waiver_id)
+                waiver_id=args.waiver_id,
+                max_output_tokens=args.max_output_tokens)
         elif args.command == 'record-external':
             result = record_external(
                 ticket_path=args.ticket, ledger_path=args.ledger,

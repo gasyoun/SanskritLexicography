@@ -114,9 +114,9 @@ prefix that can exceed **100 k** once profile context is included.
 | Rank | Lever | Status | Expected effect | Handoff / owner |
 |---:|---|---|---|---|
 | 0 | **Bare cwd** for every headless spawn | ✅ Shipped | −33 % cost / −30 % wall on fixed overhead | none — already in `bare_cli_cwd()` |
-| 1 | **Strip the profile surface** — shipped as `--safe-mode`, **not** as a minimal profile dir | ✅ Measured 03-08-2026, wired **opt-in (default OFF)** | Real card: create **−69 %**, output **−49 %**, wall **−55 %**, cost **−61 %** ($0.6921 → $0.2712) with identical card content. A dedicated minimal `CLAUDE_CONFIG_DIR` measured only **−8.7 %** and was REJECTED as the lever | [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md) · [report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md) |
+| 1 | **Strip the profile surface** — shipped as `--safe-mode`, **not** as a minimal profile dir | ✅ Measured 03-08-2026; **default ON since H2251 (06-08-2026)**, with explicit `false` still opting out | Real card: create **−69 %**, output **−49 %**, wall **−55 %**, cost **−61 %** ($0.6921 → $0.2712) with identical card content. A dedicated minimal `CLAUDE_CONFIG_DIR` measured only **−8.7 %** and was REJECTED as the lever | [H2189](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2189-Opus_SanskritLexicography_pwg-headless-minimal-profile_02.08.26.md) · [report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md) |
 | 1b | **`bare_cli_cwd()` ancestry leak** — the helper rejected an ancestor with `CLAUDE.md`/`.git`, not one with `.claude\CLAUDE.md`, and its `%TEMP%` dir sits under the Windows user profile | ✅ Fixed 03-08-2026 | Was **32 779 B of operator memory in every paid call** since H2158. The helper now derives candidates and returns one only after `cwd_ancestry_scan` proves the whole ancestry clean, else `None`; **0 injectable bytes** on this box. `--safe-mode` only *masked* it and is no longer the thing standing in the way | [H2249](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2249-Opus_SanskritLexicography_pwg-bare-cwd-ancestry-leak-fix_03.08.26.md) · [H2189 report §1.1](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2189/PROFILE_SURFACE_AB_SAFE_MODE_VS_MINIMAL_CONFIG_DIR_03-08-2026.md) |
-| 2 | **Messages API + explicit `cache_control` (1 h)** on stable prefix | 🟡 Open — **case re-based 06-08-2026 (H2250)**; **credential is NOT the blocker (that text was stale — Grok 4.5 `grok-4.5` resolved it under H2158, [PR #1037](https://github.com/gasyoun/SanskritLexicography/pull/1037)): `h2158_route_ab.py --check` passes today, auth read from `.secretsnthropic.env`, byte-identical on 2 real cards.** The one remaining human gate is the **subscription-vs-metered ruling** in §4 — the API arm bills a metered key by construction | **"Turn create→read on framework" is no longer a win this lever can claim — truth #1 above now says the CLI does that by itself, for free.** What survives: typed HTTP failures, the single-completion output cut, and the *new* lead argument — **wall-clock and turn-count**. The one clean card call cost **511 s wall over 3 turns**, and 3 of 5 card spawns were killed at 300–900 s; the multi-turn loop overhead behind that is exactly what a direct API call removes. Re-argue rank 2 on throughput, not on cache-write | [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md) · [H2250 report §7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md) |
+| 2 | **Messages API + explicit `cache_control` (1 h)** on stable prefix | 🟡 Adapter shipped 11-08-2026; live qualification blocked before reservation because the current credential returns HTTP 401 on exact-model lookup. Repair auth, rerun `route_compare.py --check`, then obtain the metered-spend ruling before `--execute` | **"Turn create→read on framework" is no longer a win this lever can claim — truth #1 above now says the CLI does that by itself, for free.** What survives: typed HTTP failures, the single-completion output cut, and the *new* lead argument — **wall-clock and turn-count**. The one clean card call cost **511 s wall over 3 turns**, and 3 of 5 card spawns were killed at 300–900 s; the multi-turn loop overhead behind that is exactly what a direct API call removes. Re-argue rank 2 on throughput, not on cache-write | [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md) · [H2250 report §7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2250/CLI_CACHE_AMORTISATION_REMEASURE_06-08-2026.md) |
 | 3 | **Dual-rate cost tools** (`cache_write_5m` + `cache_write_1h`) | ✅ Shipped 02-08-2026 | Stopped understating CLI bills 1.6× ($0.6967 computed vs $0.8005 billed on `nakzatra`) | [H2190](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2190-Opus_SanskritLexicography_pwg-cache-write-1h-pricing_02.08.26.md) · [PR #1032](https://github.com/gasyoun/SanskritLexicography/pull/1032) |
 | 4 | **Stable prefix reorder** (`preamble` → `translation` → `grammar` before card) | ✅ Shipped 03-08-2026, offline | Cross-**window** stable head **1 226 → 12 249 chars** (4.9 % → 49.5 % of a representative prompt). Within one window: no change. **Not** lean-TR — no byte dropped | [H2191](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2191-Opus_SanskritLexicography_pwg-prompt-prefix-reorder_02.08.26.md) |
 | 5 | TM / frag-TM / fewer agent calls | ✅ Standing | Zero-call reuse where hashes match | existing pipeline |
@@ -154,15 +154,33 @@ Done, but **not** the way this step originally proposed. Full numbers:
   from its **hooks**: the two arms keeping all 63 hooks could not answer a five-token
   prompt within one turn (`error_max_turns`); every hook-free arm answered in one.
 - The bigger token leak is **cwd ancestry, not the profile** — see rank 1b above.
-- Wired opt-in via manifest `execution.cli_safe_mode`, default OFF, with a `--help` support
-  probe that fails safe to the historical argv and warns loudly. Flipping the default needs
-  a canary GO on the safe-mode arm (report §5.1).
+- Wired via manifest `execution.cli_safe_mode`, **default ON since H2251**; explicit
+  `false` preserves the historical opt-out. A `--help` support probe degrades to the
+  historical argv with a loud warning when the installed CLI lacks the flag.
 - `--bare` was NOT adopted: it forces `ANTHROPIC_API_KEY` auth, i.e. moves this lane off the
   subscription identity — a human ruling, not a cache tweak.
 
 ### Step C — Finish H2158 route A/B → [H2158](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2158-Opus_RussianTranslation_pwg-messages-api-port_02.08.26.md)
 
-- Prerequisite: **the subscription-vs-metered ruling (human) — not the key.** The key itself is already resolved and `--check`-verified (H2158, [PR #1037](https://github.com/gasyoun/SanskritLexicography/pull/1037)); what is owed is permission to *spend on it*, plus a paid-call budget. Anchor (H2250, 06-08-2026): a real card is ~$0.42 and up to 511 s, and 3 of 5 card spawns were killed at 300–900 s, so `--keys 2 --repeats 2` is ~$3–4 and possibly an hour of wall clock.
+The production-shaped successor is now `src/pilot/route_compare.py`. It seals
+one shared Opus 5 prompt/schema contract across `router.cheap` and Anthropic
+Messages, reserves before every call, and never changes the CLI default:
+
+```powershell
+python src/pilot/route_compare.py --check
+python src/pilot/route_compare.py --execute --run-id <stable-id> `
+  --max-calls 3 --cost-ceiling 10
+```
+
+The external gateway boundary remains deliberate: each rerun advances only
+after its exact-dispatch response and attestation have been placed beside the
+ticket. Missing or unevaluable gateway cost stops before the Anthropic call.
+
+- Prerequisites: restore a credential that passes the exact `claude-opus-5`
+  zero-token lookup, then obtain the subscription-vs-metered ruling and paid-call
+  budget. The 11-08-2026 comparison preflight returned HTTP 401 and created no
+  reservation ledger. Anchor (H2250, 06-08-2026): a real card is ~$0.42 and up
+  to 511 s, and 3 of 5 card spawns were killed at 300–900 s.
 - Run: `python src/pilot/h2158_route_ab.py --run --keys 2 --repeats 2`
 - Byte-identity: `prefix + tail == build_prompt(...)` already asserted.
 - Report must answer: ~~(1) create→read amortisation~~ — **largely answered by H2250 (the CLI amortises; truth #1 rewritten), so this is no longer where the port's value lies** — (2) whether CLI multi-turn

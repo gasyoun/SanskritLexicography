@@ -207,7 +207,13 @@ def test_prepare_contract_and_zero_one_n():
         first = prepare(one)
         second = prepare(one)
         assert first == second
+        assert 'max_output_tokens' not in first  # legacy callers remain compatible
         assert CallReservationLedger(one['ledger_path'], 'one', 1).spent() == 1
+
+        limited = fixture(
+            tmp, run_id='limited', max_calls=1, ticket_name='limited.json')
+        limited_ticket = prepare(limited, max_output_tokens=2048)
+        assert limited_ticket['max_output_tokens'] == 2048
 
         many = fixture(tmp, run_id='many', max_calls=3, ticket_name='many1.json')
         prepare(many)
@@ -221,7 +227,8 @@ def test_prepare_contract_and_zero_one_n():
 
         for field, bad in (
                 ('route', 'c4'), ('provenance', 'real'), ('waiver_id', 'wrong'),
-                ('timeout_ms', 600_001), ('requested_model', ''), ('purpose', '')):
+                ('timeout_ms', 600_001), ('max_output_tokens', 0),
+                ('requested_model', ''), ('purpose', '')):
             bad_paths = fixture(tmp, run_id='bad-' + field, max_calls=1,
                                 ticket_name='bad-' + field + '.json')
             expect_refusal(lambda f=field, v=bad, p=bad_paths:

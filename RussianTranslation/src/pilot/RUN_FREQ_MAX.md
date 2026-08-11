@@ -66,6 +66,11 @@ tracked-file drift and is wired into `window_selftest.py`
 - **Execution route (H1110):** production is the **headless CLI on manifest v2**, not
   Workflow-from-session. Bind a named profile (`CLAUDE_CONFIG_DIR` + roster slot) before
   any paid call; promotion hard-refuses unbound payloads (H1080 Stage 3).
+- **Transport comparison is qualification-only:** `route_compare.py` can seal a
+  three-reservation Opus 5 comparison (`router.cheap` capability + frozen canary,
+  then the same canary through Anthropic Messages) under hard call/cost ceilings.
+  Every artifact is synthetic and non-promotable; a winning route remains an
+  explicit manifest opt-in and never changes this CLI production default.
 - **Profile-surface strip (H2189 03-08-2026, flipped by H2251 06-08-2026) — DEFAULT ON.**
   Every headless spawn now carries `--safe-mode`, which strips the operator profile's
   CLAUDE.md/skills/commands/agents/hooks from the child. `execution.cli_safe_mode` is
