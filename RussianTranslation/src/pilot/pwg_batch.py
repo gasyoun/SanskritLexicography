@@ -11,7 +11,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import math
 import os
 import sys
 from datetime import datetime, timezone
@@ -193,8 +192,10 @@ def _estimate(requests):
         content = request['params']['messages'][0]['content']
         stable = content[0]['text']
         volatile = content[1]['text']
-        stable_tokens = math.ceil(len(stable.encode('utf-8')) / 3)
-        volatile_tokens = math.ceil(len(volatile.encode('utf-8')) / 3)
+        # One token per UTF-8 byte is deliberately pessimistic but provides a
+        # tokenizer-free ceiling suitable for an offline cash guard.
+        stable_tokens = len(stable.encode('utf-8'))
+        volatile_tokens = len(volatile.encode('utf-8'))
         input_tokens += volatile_tokens
         prefix = request['stable_prefix_sha256']
         if prefix in seen_prefixes:
@@ -210,7 +211,7 @@ def _estimate(requests):
         'cache_read_tokens': cache_read,
     }, billing_mode=API_BATCH)
     return {
-        'method': 'utf8_bytes_div_3_plus_declared_output_ceiling.v1',
+        'method': 'utf8_bytes_as_token_ceiling_plus_declared_output_ceiling.v1',
         'input_tokens_upper_estimate': input_tokens,
         'output_tokens_upper_estimate': output_tokens,
         'cache_creation_tokens_estimate': cache_write,
