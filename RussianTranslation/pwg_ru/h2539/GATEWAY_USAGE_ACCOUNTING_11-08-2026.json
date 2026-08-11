@@ -1,0 +1,31 @@
+{
+  "schema": "pwg.gateway_usage_accounting.v1",
+  "source_envelopes": [
+    {
+      "path": "evidence/t1_envelope.json",
+      "saved_envelope_sha256": "b3402bd55c390047ac490859d7debed626ea8d480a05dead3e8ec93ab13a3c5d"
+    },
+    {
+      "path": "evidence/t2_envelope.json",
+      "saved_envelope_sha256": "905abbbd55b819b42c1ed60264ee38dde2786207d8d626d181116eca02479b83"
+    }
+  ],
+  "accounting": {
+    "schema": "pwg.usage_accounting.v1",
+    "usage_evaluable": true,
+    "input_tokens": 41320,
+    "output_tokens": 4263,
+    "cache_creation_tokens": 116439,
+    "cache_read_tokens": 974856,
+    "billing_mode": "unknown_gateway",
+    "observed_cash_usd": null,
+    "list_equivalent_usd": null,
+    "credit_equivalent_usd": null,
+    "pricing_policy": "anthropic-opus-5-2026-08-11.v1"
+  },
+  "cost_evaluable": false,
+  "observed_cash_usd": null,
+  "standard_list_counterfactual_usd": 1.964993,
+  "batch_counterfactual_usd": 0.9824965,
+  "promotable": false
+}

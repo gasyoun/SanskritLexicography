@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sanskrit-lexicon.github.io/schemas/pwg_batch_plan.schema.json",
+  "title": "Sealed non-promotable PWG Message Batches plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema", "wave", "source_manifest_path", "source_manifest_sha256",
+    "model", "max_output_tokens", "output_schema_sha256", "requests",
+    "request_count", "request_body_bytes", "limits", "estimate",
+    "cache_policy", "provenance_class", "promotable",
+    "production_default_changed", "store_write_authorized",
+    "tm_write_authorized", "plan_sha256"
+  ],
+  "properties": {
+    "schema": {"const": "pwg.batch_plan.v1"},
+    "wave": {"type": "integer", "minimum": 0},
+    "source_manifest_path": {"type": "string", "minLength": 1},
+    "source_manifest_sha256": {"$ref": "#/$defs/sha256"},
+    "model": {"enum": ["claude-sonnet-5", "claude-opus-5"]},
+    "max_output_tokens": {"type": "integer", "minimum": 1},
+    "output_schema_sha256": {"$ref": "#/$defs/sha256"},
+    "requests": {
+      "type": "array",
+      "maxItems": 100000,
+      "items": {"$ref": "#/$defs/request"}
+    },
+    "request_count": {"type": "integer", "minimum": 0, "maximum": 100000},
+    "request_body_bytes": {"type": "integer", "minimum": 0, "maximum": 268435456},
+    "limits": {"type": "object"},
+    "estimate": {"type": "object"},
+    "cache_policy": {"type": "object"},
+    "provenance_class": {"const": "synthetic_control"},
+    "promotable": {"const": false},
+    "production_default_changed": {"const": false},
+    "store_write_authorized": {"const": false},
+    "tm_write_authorized": {"const": false},
+    "plan_sha256": {"$ref": "#/$defs/sha256"}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["custom_id", "work", "params", "prompt_sha256",
+        "stable_prefix_sha256", "output_schema_sha256", "request_sha256"],
+      "properties": {
+        "custom_id": {"type": "string", "minLength": 1, "maxLength": 64},
+        "work": {"type": "object"},
+        "params": {"type": "object"},
+        "prompt_sha256": {"$ref": "#/$defs/sha256"},
+        "stable_prefix_sha256": {"$ref": "#/$defs/sha256"},
+        "output_schema_sha256": {"$ref": "#/$defs/sha256"},
+        "request_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    }
+  }
+}
