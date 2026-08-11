@@ -25,11 +25,12 @@ worklist, cost gate, root status, probes
 - `src/pilot/root_window_status.py`
 - `src/pilot/verb_worklist.py`
 
-## Harness + headless execution (17)
+## Harness + headless execution (21)
 
 manifest v2, coordinator, headless worker, requeue harness
 
 - `src/pilot/autosplit_requeue.py`
+- `src/pilot/anthropic_messages_route.py`
 - `src/pilot/bounded_staged_run.py`
 - `src/pilot/bounded_staged_run_selftest.py`
 - `src/pilot/bounded_supervisor.py`
@@ -46,6 +47,9 @@ manifest v2, coordinator, headless worker, requeue harness
 - `src/pilot/max_account_orchestrator.py`
 - `src/pilot/max_account_orchestrator_selftest.py`
 - `src/pilot/requeue_from_audit.py`
+- `src/pilot/route_compare.py`
+- `src/pilot/route_compare_selftest.py`
+- `src/pilot/route_transport.py`
 
 ## Audit gates (20)
 
