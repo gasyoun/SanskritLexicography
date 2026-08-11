@@ -522,11 +522,50 @@ def build_prompt(manifest, keys):
     (``AB_TEST_LEAN_TR.md``) -- do not re-open it here.  ``nws`` stays after the whole
     framework so TR remains contiguous, and per-card grammar stays inside ``card_block``.
     """
+    stable, volatile = prompt_blocks(manifest, keys)
+    return stable + volatile
+
+
+def prompt_blocks(manifest, keys):
+    """Return the one-hour cache prefix and volatile suffix byte-exactly."""
+    prompt = manifest['prompt']
+    nws = prompt.get('nws_rule', '') if any(manifest['inputs'][k].get('nws') for k in keys) else ''
+    stable = prompt['preamble'] + prompt['translation']
+    volatile = (prompt.get('grammar', '') + ('\n\n' + nws + '\n' if nws else '')
+                + ''.join(card_block(manifest, key) for key in keys))
+    if stable + volatile != build_prompt_joined(manifest, keys):
+        raise AssertionError('prompt block split changed build_prompt bytes')
+    return stable, volatile
+
+
+def build_prompt_joined(manifest, keys):
+    """Historical prompt expression kept as an independent byte-identity oracle."""
     prompt = manifest['prompt']
     nws = prompt.get('nws_rule', '') if any(manifest['inputs'][k].get('nws') for k in keys) else ''
     return (prompt['preamble'] + prompt['translation'] + prompt.get('grammar', '') +
             ('\n\n' + nws + '\n' if nws else '') +
             ''.join(card_block(manifest, key) for key in keys))
+
+
+def fragment_prompt_blocks(manifest, key, group, indices):
+    blocks = []
+    for index in indices:
+        frag_key = '%s_f%d' % (key, index)
+        blocks.append('\n\n=== CARD %s (fragment %d/%d) ===\n'
+                      '--- masked German (translatable only; {Tn}=masked span) ---\n%s'
+                      % (frag_key, index + 1, len(group), group[index]['skeleton']))
+    prompt = manifest['prompt']
+    stable = prompt['preamble'] + prompt['translation']
+    card_grammar = (prompt.get('grammars') or {}).get(key, '')
+    portrait = (manifest.get('inputs', {}).get(key) or {}).get('portrait') or ''
+    volatile = (prompt.get('grammar', '') + card_grammar + ''.join(blocks)
+                + '\n--- portrait (evidence) ---\n' + portrait)
+    return stable, volatile
+
+
+def build_fragment_prompt(manifest, key, group, indices):
+    stable, volatile = fragment_prompt_blocks(manifest, key, group, indices)
+    return stable + volatile
 
 
 def parse_cli_wrapper(stdout):
@@ -910,6 +949,7 @@ class HeadlessEngine:
         # actual spend was unreconcilable and a priced run ended STOP_COST_UNEVALUABLE. Accumulate.
         self.usage = {'input_tokens': 0, 'output_tokens': 0, 'cache_read_tokens': 0,
                       'cache_creation_tokens': 0, 'subagent_tokens': 0,
+                      'usage_evaluable': True,
                       'observed_cost_usd': 0.0, 'cost_evaluable': True, 'priced_calls': 0,
                       'missing_usage_calls': 0}
         self.call_reservation = call_reservation
@@ -928,9 +968,14 @@ class HeadlessEngine:
         for name in ('input_tokens', 'output_tokens', 'cache_read_tokens',
                      'cache_creation_tokens'):
             self.usage[name] += telemetry[name]
+        accounting = telemetry.get('accounting') or {}
+        usage_evaluable = accounting.get(
+            'usage_evaluable', telemetry.get('cost_evaluable', False)) is True
+        if not usage_evaluable:
+            self.usage['usage_evaluable'] = False
+            self.usage['missing_usage_calls'] += 1
         if not telemetry['cost_evaluable']:
             self.usage['cost_evaluable'] = False
-            self.usage['missing_usage_calls'] += 1
         self.usage['observed_cost_usd'] += telemetry['observed_cost_usd']
         self.usage['subagent_tokens'] = (
             self.usage['input_tokens'] + self.usage['output_tokens']
@@ -1098,25 +1143,9 @@ class HeadlessEngine:
         return resolved, pending
 
     def fragment_prompt(self, key, group, indices):
-        blocks = []
-        for index in indices:
-            frag_key = '%s_f%d' % (key, index)
-            blocks.append('\n\n=== CARD %s (fragment %d/%d) ===\n'
-                          '--- masked German (translatable only; {Tn}=masked span) ---\n%s'
-                          % (frag_key, index + 1, len(group), group[index]['skeleton']))
-        prompt = self.m['prompt']
-        # B01 (H1339): a fragment/heal call serves exactly ONE card -- inject that card's
-        # own evidence (per-card grammar, the ONLY grammar in nominal windows; and the
-        # portrait), mirroring build_prompt's card_block and the JS healGroup twin.
-        # Presplit giants were translated with ZERO evidence before this.
-        # H2191: same stable-left order as build_prompt -- preamble + translation are the
-        # run-invariant head, then the window's shared grammar, then this card's own
-        # grammar (the most volatile of the three framework segments), then the fragments.
-        card_grammar = (prompt.get('grammars') or {}).get(key, '')
-        portrait = (self.m.get('inputs', {}).get(key) or {}).get('portrait') or ''
-        return (prompt['preamble'] + prompt['translation'] + prompt.get('grammar', '')
-                + card_grammar + ''.join(blocks)
-                + '\n--- portrait (evidence) ---\n' + portrait)
+        # B01/H2191 implementation is shared with the batch compiler so cache
+        # blocks cannot drift from the production CLI prompt.
+        return build_fragment_prompt(self.m, key, group, indices)
 
     def heal_group(self, key, group, indices, label, budget):
         resolved = {}

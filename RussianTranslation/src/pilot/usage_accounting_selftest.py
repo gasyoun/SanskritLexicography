@@ -14,6 +14,7 @@ TOKENS = {
     'cache_creation_tokens': 116_439,
     'cache_read_tokens': 974_856,
 }
+HERE = os.path.dirname(os.path.abspath(__file__))
 
 
 def test_counterfactuals():
@@ -108,12 +109,36 @@ def test_new_finalization_only_emits_accounting():
         ledger.finalize(modern, rows[1]['telemetry'])  # exact-once replay
 
 
+def test_h2539_derived_receipt_binds_immutable_envelopes():
+    root = os.path.join(os.path.dirname(os.path.dirname(HERE)), 'pwg_ru', 'h2539')
+    with open(os.path.join(root, 'GATEWAY_USAGE_ACCOUNTING_11-08-2026.json'),
+              encoding='utf-8') as handle:
+        receipt = json.load(handle)
+    totals = {name: 0 for name in TOKENS}
+    aliases = {
+        'input_tokens': 'input_tokens', 'output_tokens': 'output_tokens',
+        'cache_creation_tokens': 'cache_creation_input_tokens',
+        'cache_read_tokens': 'cache_read_input_tokens',
+    }
+    for source in receipt['source_envelopes']:
+        with open(os.path.join(root, source['path']), encoding='utf-8') as handle:
+            envelope = json.load(handle)
+        assert envelope['saved_envelope_sha256'] == source['saved_envelope_sha256']
+        usage = envelope['attested_usage_totals']
+        for target, raw in aliases.items():
+            totals[target] += usage[raw]
+    assert totals == TOKENS
+    assert ua.validate(receipt['accounting'])['usage_evaluable'] is True
+    assert receipt['cost_evaluable'] is False and receipt['observed_cash_usd'] is None
+
+
 TESTS = (
     test_counterfactuals,
     test_max_credit_classification,
     test_router_tokens_and_bad_usage,
     test_legacy_ledger_bytes_unchanged,
     test_new_finalization_only_emits_accounting,
+    test_h2539_derived_receipt_binds_immutable_envelopes,
 )
 
 
