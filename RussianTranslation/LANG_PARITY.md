@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 10-08-2026 (H2554 (Codex): NEW `router_cheap_dispatch_contract_h2554` entry, SHARED. Prompt/schema generation and dispatch evidence are synthetic control-plane mechanics: they do not select a target language, read/write the RU or EN store, or branch on target fields. The canary fixture is RU by qualification purpose, while the reserve/dispatch/attest/envelope protocol is language-neutral and reaches either lane identically.)_
+_Created: 04-07-2026 · Last updated: 11-08-2026 (`pwg_transport_comparison_20260811`: INTENTIONAL-DIVERGENCE. The reusable transport, reservation, and sealed-evidence mechanics are language-neutral, but this qualification command deliberately freezes the existing PWG→RU canary and its Cyrillic/no-ё deterministic audit. An EN route qualification requires its own frozen canary and audit contract.)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -2030,12 +2030,32 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H2554 (10-08-2026, Codex Sol `gpt-5.6-sol`): dispatch identity, reservation, hashes, transcript relation, model/usage evidence, recovery, and non-promotability are control-plane properties with no target-language branch. The canonical fixture currently exercises the RU canary because that is the qualification target, but its generator and the v2 gateway protocol never inspect a target-language field and would bind an EN fixture identically. Added lines were reviewed for `--lang`/FIELD[/CARD_FIELD branching: none exists. Pinned by gateway_canary_contract_selftest, gateway_attestation_selftest, gateway_external_selftest, and the full window suite.",
+    "note": "H2554 (10-08-2026, Codex Sol `gpt-5.6-sol`): dispatch identity, reservation, hashes, transcript relation, model/usage evidence, recovery, and non-promotability are control-plane properties with no target-language branch. The canonical fixture currently exercises the RU canary because that is the qualification target, but its generator and the v2 gateway protocol never inspect a target-language field and would bind an EN fixture identically. Added lines were reviewed for `--lang`/FIELD[/CARD_FIELD branching: none exists. Pinned by gateway_canary_contract_selftest, gateway_attestation_selftest, gateway_external_selftest, and the full window suite. On 11-08-2026 the bridge gained an optional positive `max_output_tokens` field, hash-bound into the operation and ticket for apples-to-apples transport comparison while remaining absent for legacy callers. This is still language-neutral dispatch metadata and does not alter prompt/schema bytes or store behavior; gateway_external_selftest pins both compatibility and the bound limit.",
     "tracking": "H2554",
     "verified_sha256": {
       "src/pilot/gateway_canary_contract.py": "07470a23d2ace60f3e07c447eeeb7da7cf5e6ad36919d603fa883363c0156ac5",
-      "src/pilot/gateway_external.py": "1cf9dde87cfcc34584bedbf4106a89f6659bd26073b6145c0bea89a57ed05ec4",
+      "src/pilot/gateway_external.py": "1005c2195c72cace2b8bc45ad443c011e8790c02ec877ab529f7f3a311b8cf6b",
       "src/pilot/gateway_attestation.py": "3fa3ef0818c8e1c8599571bb9004f60b31e6a493a773c322e45dd1efccf9badd"
+    }
+  },
+  {
+    "id": "pwg_transport_comparison_20260811",
+    "mechanism": "Sealed three-reservation comparison of router.cheap Agent dispatch and Anthropic Messages using one byte-identical frozen PWG→RU canary, a shared transport envelope, exact Opus 5 verification, pinned pricing, deterministic audit, and a non-promotable route-comparison receipt",
+    "files": [
+      "src/pilot/route_transport.py",
+      "src/pilot/anthropic_messages_route.py",
+      "src/pilot/route_compare.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "INTENTIONAL-DIVERGENCE",
+    "note": "The route/reservation/evidence shell does not mutate either language store and can be reused, but this command is intentionally a PWG→RU qualification: it consumes the released frozen RU canary unchanged and its deterministic content gate requires three Russian senses, Cyrillic-only output, no ё, and no unresolved PWG markers. Claiming EN parity would weaken the apples-to-apples evidence or silently apply RU audit rules to English. A future EN comparison must introduce and freeze its own canary/schema/audit contract; no production route or language lane changes here.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/pilot/route_transport.py": "438112c4ab5f035a1512855df91c1ecf05aeae86441749ed667bd40665b4b8f8",
+      "src/pilot/anthropic_messages_route.py": "ae3b1231588d063ad5c9b2ef16ae6397ce0cefb0d9debcb2265f685bef739a5b",
+      "src/pilot/route_compare.py": "5bcedd52c1090110677c4a91b6bb52501f5793f74a4ede5dcaa73f962e870c2a"
     }
   },
   {

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sanskrit-lexicon.github.io/schemas/pwg_transport_envelope.schema.json",
+  "title": "PWG sealed transport qualification envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema", "route", "requested_model", "returned_model",
+    "model_matches_request", "run_id", "reservation_id",
+    "reservation_ordinal", "purpose", "provenance_class", "promotable",
+    "manifest_sha256", "request_sha256", "prompt_sha256",
+    "output_schema_sha256", "hard_timeout_ms", "max_output_tokens",
+    "wall_ms", "usage", "cost_evaluable", "observed_cost_usd",
+    "schema_compliant", "audit_passed", "audit_reasons", "failure_class",
+    "error", "result", "canonical_result_sha256", "source_envelope_sha256",
+    "dispatch_id", "dispatch_attested", "envelope_sha256"
+  ],
+  "properties": {
+    "schema": {"const": "pwg.transport_envelope.v1"},
+    "route": {"enum": ["router-cheap-agent", "anthropic-messages"]},
+    "requested_model": {"const": "claude-opus-5"},
+    "returned_model": {"type": ["string", "null"]},
+    "model_matches_request": {"type": ["boolean", "null"]},
+    "run_id": {"type": "string", "minLength": 1},
+    "reservation_id": {"type": "string", "minLength": 1},
+    "reservation_ordinal": {"type": "integer", "minimum": 1, "maximum": 3},
+    "purpose": {"type": "string", "minLength": 1},
+    "provenance_class": {"const": "synthetic_control"},
+    "promotable": {"const": false},
+    "manifest_sha256": {"$ref": "#/$defs/sha256"},
+    "request_sha256": {"$ref": "#/$defs/sha256"},
+    "prompt_sha256": {"$ref": "#/$defs/sha256"},
+    "output_schema_sha256": {"$ref": "#/$defs/sha256"},
+    "hard_timeout_ms": {"type": "integer", "minimum": 1, "maximum": 600000},
+    "max_output_tokens": {"type": "integer", "minimum": 1},
+    "wall_ms": {"type": ["integer", "number", "null"], "minimum": 0},
+    "usage": {"type": "object"},
+    "cost_evaluable": {"type": "boolean"},
+    "observed_cost_usd": {"type": ["number", "null"], "minimum": 0},
+    "schema_compliant": {"type": "boolean"},
+    "audit_passed": {"type": "boolean"},
+    "audit_reasons": {"type": "array", "items": {"type": "string"}},
+    "failure_class": {
+      "type": ["string", "null"],
+      "enum": [null, "authentication", "rate_limit", "connection", "timeout",
+        "model_substitution", "malformed_output", "schema_failure",
+        "unevaluable_cost", "content_audit_failure", "reservation_exhausted",
+        "ambiguous_resume", "transport_error"]
+    },
+    "error": {"type": ["string", "null"]},
+    "result": {"type": ["object", "null"]},
+    "canonical_result_sha256": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+    "source_envelope_sha256": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+    "dispatch_id": {"type": ["string", "null"]},
+    "dispatch_attested": {"type": ["boolean", "null"]},
+    "envelope_sha256": {"$ref": "#/$defs/sha256"}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sanskrit-lexicon.github.io/schemas/pwg_route_comparison.schema.json",
+  "title": "PWG transport comparison receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema", "run_id", "status", "verdict", "candidate_route",
+    "selection_reason", "limits", "contract", "calls", "evidence", "promotable",
+    "production_default_changed", "cli_fallback_preserved", "receipt_sha256"
+  ],
+  "properties": {
+    "schema": {"const": "pwg.route_comparison.v1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["awaiting_gateway_capability", "awaiting_gateway_canary", "complete"]},
+    "verdict": {"enum": ["INCOMPLETE", "GO", "NO-GO"]},
+    "candidate_route": {"type": ["string", "null"], "enum": [null, "router-cheap-agent", "anthropic-messages"]},
+    "selection_reason": {"type": "string", "minLength": 1},
+    "limits": {
+      "type": "object", "additionalProperties": false,
+      "required": ["max_calls", "cost_ceiling_usd"],
+      "properties": {
+        "max_calls": {"const": 3},
+        "cost_ceiling_usd": {"type": "number", "exclusiveMinimum": 0, "maximum": 10}
+      }
+    },
+    "contract": {
+      "type": "object", "additionalProperties": false,
+      "required": ["manifest_sha256", "capability_request_sha256",
+        "canary_request_sha256", "canary_prompt_sha256", "canary_schema_sha256",
+        "requested_model", "max_output_tokens"],
+      "properties": {
+        "manifest_sha256": {"$ref": "#/$defs/sha256"},
+        "capability_request_sha256": {"$ref": "#/$defs/sha256"},
+        "canary_request_sha256": {"$ref": "#/$defs/sha256"},
+        "canary_prompt_sha256": {"$ref": "#/$defs/sha256"},
+        "canary_schema_sha256": {"$ref": "#/$defs/sha256"},
+        "requested_model": {"const": "claude-opus-5"},
+        "max_output_tokens": {"type": "integer", "minimum": 1}
+      }
+    },
+    "calls": {
+      "type": "array", "maxItems": 3,
+      "items": {"$ref": "pwg_transport_envelope.schema.json"}
+    },
+    "evidence": {
+      "type": "array", "maxItems": 3,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["artifact", "envelope_sha256", "route", "purpose"],
+        "properties": {
+          "artifact": {"type": "string", "pattern": "^[^/\\\\]+\\.json$"},
+          "envelope_sha256": {"$ref": "#/$defs/sha256"},
+          "route": {"enum": ["router-cheap-agent", "anthropic-messages"]},
+          "purpose": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "promotable": {"const": false},
+    "production_default_changed": {"const": false},
+    "cli_fallback_preserved": {"const": true},
+    "receipt_sha256": {"$ref": "#/$defs/sha256"}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}
