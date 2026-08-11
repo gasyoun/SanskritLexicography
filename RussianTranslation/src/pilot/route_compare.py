@@ -240,11 +240,6 @@ def normalize_gateway(envelope, ticket, request, capability=False):
     elif not audit_passed:
         failure = 'content_audit_failure'
         error = error or '; '.join(audit_reasons)
-    elif not cost_evaluable:
-        failure = 'unevaluable_cost'
-        error = ('gateway did not report an attributable dollar cost; the owner waiver '
-                 'preserves unknown cost but cannot satisfy this comparison')
-
     usage = envelope.get('attested_usage_totals') or envelope.get('ledger_telemetry') or {}
     reservation = {
         'reservation_id': ticket['reservation_id'],
@@ -321,7 +316,10 @@ def _receipt(run_id, status, verdict, candidate, reason, t1, t2, calls,
         'verdict': verdict,
         'candidate_route': candidate,
         'selection_reason': reason,
-        'limits': {'max_calls': MAX_CALLS, 'cost_ceiling_usd': cost_ceiling},
+        'limits': {
+            'max_calls': MAX_CALLS,
+            'observed_cash_cost_ceiling_usd': cost_ceiling,
+        },
         'contract': {
             'manifest_sha256': t2['manifest_sha256'],
             'capability_request_sha256': t1['request_sha256'],
@@ -442,11 +440,6 @@ def execute(*, out, run_id, model=MODEL, max_calls=MAX_CALLS,
     common2 = normalize_gateway(source2, ticket2, t2, capability=False)
     _write_immutable(p['t2_envelope'], common2, 'T2 transport envelope')
     calls.append(common2)
-    if not common2.get('cost_evaluable'):
-        return _publish(
-            p, run_id, 'complete', 'NO-GO', None,
-            'gateway canary cost is unevaluable; Anthropic call withheld',
-            t1, t2, calls, cost_ceiling=cost_ceiling)
     known_cost = sum(row.get('observed_cost_usd') or 0 for row in calls)
     if known_cost > cost_ceiling:
         return _publish(

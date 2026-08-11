@@ -18,10 +18,10 @@
     "selection_reason": {"type": "string", "minLength": 1},
     "limits": {
       "type": "object", "additionalProperties": false,
-      "required": ["max_calls", "cost_ceiling_usd"],
+      "required": ["max_calls", "observed_cash_cost_ceiling_usd"],
       "properties": {
         "max_calls": {"const": 3},
-        "cost_ceiling_usd": {"type": "number", "exclusiveMinimum": 0, "maximum": 10}
+        "observed_cash_cost_ceiling_usd": {"type": "number", "exclusiveMinimum": 0, "maximum": 10}
       }
     },
     "contract": {

@@ -27,6 +27,7 @@ from route_transport import (
     verify_envelope,
     verify_request,
 )
+from usage_accounting import API_STANDARD, build as build_accounting, legacy_telemetry
 
 
 MODEL = 'claude-opus-5'
@@ -59,13 +60,9 @@ def normalize_usage(raw):
     if not all(_nonnegative_int(value) for value in source.values()):
         return None
     cost = sum(source[name] * PRICE_PER_MTOK[name] for name in source) / 1_000_000
-    telemetry = dict(source)
-    telemetry.update({
-        'subagent_tokens': sum(source.values()),
-        'observed_cost_usd': round(cost, 9),
-        'cost_evaluable': True,
-    })
-    return normalize_telemetry(telemetry)
+    accounting = build_accounting(
+        source, billing_mode=API_STANDARD, observed_cash_usd=round(cost, 9))
+    return normalize_telemetry(legacy_telemetry(accounting))
 
 
 def _read_secret():
@@ -281,6 +278,7 @@ class AnthropicMessagesCall:
             reservation=reservation, returned_model=returned_model,
             wall_ms=wall_ms, usage=usage_evidence,
             cost_evaluable=cost_evaluable, observed_cost_usd=observed_cost,
+            accounting=(telemetry.get('accounting') if telemetry else None),
             result=result, schema_compliant=schema_compliant,
             audit_passed=audit_passed, audit_reasons=audit_reasons,
             failure_class=failure, error=error)

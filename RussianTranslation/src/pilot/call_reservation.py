@@ -13,6 +13,13 @@ import threading
 import time
 import uuid
 
+from usage_accounting import (
+    MAX_AGENT_SDK_CREDIT,
+    build as build_accounting,
+    legacy_telemetry,
+    validate as validate_accounting,
+)
+
 SCHEMA = 'pwg.call_reservation.v1'
 TOKEN_FIELDS = ('input_tokens', 'output_tokens', 'cache_read_tokens',
                 'cache_creation_tokens', 'subagent_tokens')
@@ -63,6 +70,13 @@ def normalize_telemetry(value):
         if not _valid_number(value[name]):
             raise ValueError('%s must be finite, non-negative and non-boolean' % name)
         out[name] = value[name]
+    # Additive only: a pre-accounting ledger contains no key and normalizes to
+    # exactly its historical bytes. Newly finalized calls may carry the v1
+    # accounting envelope without changing the outer reservation-ledger schema.
+    if 'accounting' in value:
+        accounting = json.loads(json.dumps(value['accounting']))
+        validate_accounting(accounting)
+        out['accounting'] = accounting
     return out
 
 
@@ -70,12 +84,19 @@ def unevaluable_telemetry():
     return normalize_telemetry({'cost_evaluable': False})
 
 
-def telemetry_from_cli_wrapper(wrapper):
-    """Extract trustworthy CLI usage without ever admitting invalid numeric telemetry."""
+def telemetry_from_cli_wrapper(wrapper, *, max_agent_sdk_credit=False,
+                               credit_claimed=False, credit_claim_evidence=None):
+    """Extract CLI usage and distinguish credit consumption from cash.
+
+    Legacy callers may omit the billing arguments and retain the old telemetry
+    shape. A caller identifying ``claude -p`` as Max Agent SDK usage gets a
+    nested accounting envelope; without explicit claim evidence its billing is
+    unknown, even when the CLI reports ``total_cost_usd``.
+    """
     if not isinstance(wrapper, dict):
         return unevaluable_telemetry()
     usage = wrapper.get('usage')
-    valid = isinstance(usage, dict)
+    usage_valid = isinstance(usage, dict)
     values = {}
     mapping = {
         'input_tokens': 'input_tokens',
@@ -86,11 +107,12 @@ def telemetry_from_cli_wrapper(wrapper):
     for target, source in mapping.items():
         raw = usage.get(source, 0) if isinstance(usage, dict) else 0
         if not _valid_number(raw):
-            valid = False
+            usage_valid = False
             raw = 0
         values[target] = raw
     values['subagent_tokens'] = sum(values.values())
     cost = wrapper.get('total_cost_usd')
+    valid = usage_valid
     if not _valid_number(cost):
         valid = False
         cost = 0
@@ -103,6 +125,21 @@ def telemetry_from_cli_wrapper(wrapper):
         raw = wrapper.get(name)
         if _valid_number(raw):
             values[name] = raw
+    if max_agent_sdk_credit:
+        accounting = build_accounting(
+            ({name: values[name] for name in (
+                'input_tokens', 'output_tokens', 'cache_creation_tokens',
+                'cache_read_tokens')} if usage_valid else None),
+            billing_mode=MAX_AGENT_SDK_CREDIT,
+            reported_equivalent_usd=(cost if valid else None),
+            credit_claimed=credit_claimed,
+            credit_claim_evidence=credit_claim_evidence,
+        )
+        values = legacy_telemetry(accounting)
+        for name in DURATION_FIELDS:
+            raw = wrapper.get(name)
+            if _valid_number(raw):
+                values[name] = raw
     return normalize_telemetry(values)
 
 

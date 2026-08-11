@@ -313,35 +313,50 @@ def test_full_state_machine_and_selection():
         rc._record_gateway_if_ready = original_record
 
 
-def test_gateway_unknown_cost_stops_before_call_three():
+def test_gateway_unknown_cost_preserves_usage_and_allows_call_three():
     original_prepare = rc._prepare_gateway
     original_record = rc._record_gateway_if_ready
-    t1, _ = request_pair()
+    t1, t2 = request_pair()
     capability = {
         'protocol_marker': {'name': 'router.cheap.canary', 'version': 'v1'},
         'language_sample': {'lang': 'ru', 'text': 'слово'},
     }
+    canary_result = rc.canary.prompt_derived_instance(t2['prompt'])
     calls = {'api': 0}
     try:
         rc._prepare_gateway = _fake_prepare
 
         def fake_record(p, prefix, run_id):
+            request = t1 if prefix == 't1' else t2
+            result = capability if prefix == 't1' else canary_result
             ticket = rc.read_json(p['%s_ticket' % prefix])
-            return fake_gateway_source(ticket, t1, capability, cost=None)
+            source = fake_gateway_source(ticket, request, result, cost=None)
+            book = CallReservationLedger.open_existing(p['ledger'], run_id)
+            reservation = next(row for row in book.snapshot()['reservations']
+                               if row['reservation_id'] == ticket['reservation_id'])
+            if not reservation.get('finalized'):
+                telemetry = amr.normalize_usage(FULL_USAGE)
+                telemetry['cost_evaluable'] = False
+                telemetry['observed_cost_usd'] = 0
+                book.finalize(reservation, telemetry)
+            return source
 
         rc._record_gateway_if_ready = fake_record
         with tempfile.TemporaryDirectory() as tmp:
             def api(_):
                 calls['api'] += 1
+                return message(canary_result)
             result = rc.execute(
                 out=tmp, run_id='unknown-cost', transport=api,
                 preflight=rc.offline_check(check_auth=False))
-            assert result['verdict'] == 'NO-GO', result
-            assert result['calls'][0]['failure_class'] == 'unevaluable_cost'
-            assert calls['api'] == 0
+            assert result['verdict'] == 'GO', result
+            assert result['calls'][0]['failure_class'] is None
+            assert result['calls'][0]['accounting']['usage_evaluable'] is True
+            assert result['calls'][0]['accounting']['observed_cash_usd'] is None
+            assert calls['api'] == 1
             book = CallReservationLedger.open_existing(
                 os.path.join(tmp, 'call_reservation.json'), 'unknown-cost')
-            assert book.spent() == 1
+            assert book.spent() == 3
     finally:
         rc._prepare_gateway = original_prepare
         rc._record_gateway_if_ready = original_record
@@ -399,7 +414,7 @@ TESTS = [
     test_reservation_exhaustion_and_ambiguous_resume,
     test_exact_once_replay_and_post_write_recovery,
     test_full_state_machine_and_selection,
-    test_gateway_unknown_cost_stops_before_call_three,
+    test_gateway_unknown_cost_preserves_usage_and_allows_call_three,
     test_priced_gateway_content_failure_can_be_compared,
 ]
 
