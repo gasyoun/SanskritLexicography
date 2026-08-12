@@ -1,0 +1,24 @@
+{
+ "billing": {
+  "authorized_unknown_billing": false,
+  "billing_mode": "unknown_gateway",
+  "credit_claim_evidence": null,
+  "max_agent_sdk_credit_claimed": false
+ },
+ "blocked_by": "no local evidence that the Max Agent SDK credit was claimed — billing is UNKNOWN; a human must authorize with --authorize-unknown-billing before --execute (missing cash USD does not invalidate token evidence, but it may not be silently priced from total_cost_usd)",
+ "conditions": {
+  "arm_a_production_unchanged": true,
+  "arm_b_single_prep_block": true,
+  "billing_attributable_or_authorized": false,
+  "context_hash_replay": true,
+  "fresh_reservation_ledger": true,
+  "immutable_manifest_source": true,
+  "prompt_schema_model_limit_identity": true,
+  "tm_fence_intact": true
+ },
+ "manifest_resolved_at": "C:\\Users\\user\\Documents\\GitHub\\SL-h2612-49145\\RussianTranslation\\src\\pilot\\h1210\\h2612\\execution_manifest.h2612.json",
+ "network_calls": 0,
+ "ok": false,
+ "plan_sha256": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e",
+ "schema": "pwg.prep_context_comparison_check.v1"
+}

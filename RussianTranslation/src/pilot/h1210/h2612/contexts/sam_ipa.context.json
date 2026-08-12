@@ -1,0 +1,86 @@
+{
+ "schema": "pwg.prep_context.v1",
+ "key1": "samIpa",
+ "prep_semantic_sha256": "5054b7b82258fdc24a6e6fabf0e21595a501a53c763ab6e49e2b0531f285caa7",
+ "source_evidence": {
+  "kind": "execution_manifest",
+  "locator": "src/pilot/h1210/h2591/execution_manifest.h2591.json",
+  "sha256": "1fa37010d57d51129b3c12cbfdd08d5b79b197916d9729accdacc3eb525f4789",
+  "manifest_sha256": "cf2fee7bf91d85db745c7c638d2c782e4918e5d21d55282613ea22dab62c90ed"
+ },
+ "sense_count": 2,
+ "sense_anchors": [
+  {
+   "i": 0,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 1,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  }
+ ],
+ "tm_hits": [
+  {
+   "rank": 1,
+   "key1": "samba",
+   "score": 0.727,
+   "match_type": "key1_difflib",
+   "ru_preview": "{#samba#}¦ <lex>m.</lex> = {#muzalAnala#}\n<ls>TRIK. 3,3,282.</ls>\n<div n=\"v\">— <ab>Vgl.</ab> {#Samba#} .",
+   "reuse_hint": "fuzzy_neighbor",
+   "evidence_sha256": "aa720e41e142d365943188237a5c13bbf0719345b21b3a1a89a5f8eebaa85522",
+   "may_auto_reuse": false,
+   "advisory_only": true,
+   "decision_authority": "promoter_only"
+  }
+ ],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=execution_manifest"
+  ]
+ },
+ "det": {
+  "ok": false,
+  "gate": "prep",
+  "issues": [
+   "prep: sense_inventory present but every de_anchor is empty"
+  ],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 234,
+  "source_senses": 2,
+  "had_draft_card": false
+ },
+ "route_hint": "full_worker",
+ "tm_policy": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "fuzzy_is_advisory": true,
+  "exact_content_requires_promoter": true
+ },
+ "question_scope": {
+  "can_answer_now": [
+   "Q1",
+   "Q3",
+   "Q5"
+  ],
+  "promoter_decides": [
+   "Q2"
+  ],
+  "cannot_answer": [
+   "N1",
+   "N2",
+   "N4",
+   "N11"
+  ]
+ },
+ "promotable": false,
+ "context_sha256": "1f8a0327477b7fe56ae5f882b58d93b2416d790b0a7a8246485e45829d12f27d"
+}

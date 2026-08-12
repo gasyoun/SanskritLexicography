@@ -43,6 +43,15 @@ not an error.
   [#1662](https://github.com/gasyoun/SanskritLexicography/pull/1662) corrects the report, its
   filename, and the issue.
 
+## [1.144.39] - 2026-08-12
+
+### Added
+- **H2612 — the FRAGMENT lane of the PREP qualification rig, sealed and offline-green at zero spend** ([evidence](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2612/README.md)). Lane B of H2598's decision: production sends 92 % of this pool as presplit *groups*, so the whole-card A/B qualified PREP for the 8 % lane. `prep_context_compare.py` gains a `lane` — sealed **into the plan**, never a runtime flag — where a unit is one fragment group and **arm A is `headless_worker.build_fragment_prompt`'s bytes, untouched**, the same builder `pwg_batch` uses to issue a real presplit call. No second rig: every fence (reserve-before-call at 16, exact-once finalization, crash/resume, the stop conditions) is the existing one. Plans sealed before the lane existed carry no `lane` key and still replay their original hash, pinned by `test_whole_lane_plan_hash_survives_the_fragment_lane`. Sealed plan `0e6a6e2516abf418…`: 8 groups over 5 parent cards, `--check` **7 of 8 conditions with `network_calls: 0`**, blocked exactly at the human billing gate. Matrix **19/19**, window suite **211/211**.
+- **A fragment audit that uses production's own acceptance rule.** `heal_group` accepts a fragment iff it is addressable at `<key>_f<i>` and its `{Tn}` multiset equals **that fragment's own** skeleton's; `audit_fragment_group` reuses exactly that and reports coverage as fragments accepted over requested. The obvious shortcut — scoring fragments against the whole card's placeholder map — reads as mass loss on every fragment and inverts the verdict; the test drives both sides of it.
+
+### Fixed
+- **The group-selection rule sampled the wrong half of the lane it was built to measure.** The first sealed plan ranked groups by fragment count and drew the eight biggest — clean-looking, and the same error H2598 had just caught one level down: **31 of this manifest's 46 groups (67 %) are solo**, so a size-ranked sample draws entirely from the multi-fragment minority. Selection now stratifies by call shape (4 `multi_fragment` + 4 `solo_fragment`), caps any one parent card at 2 groups (`samIpa` alone contributes 31 solo groups), and **records** any stratum shortfall or cap relaxation in the plan instead of absorbing it silently. Caught before anything was sealed for spend.
+
 ## [1.144.37] - 2026-08-12
 
 ### Fixed
@@ -785,7 +794,6 @@ not an error.
 ### Changed
 - **H1724 worktree backlog drain** (27-07-2026, Sonnet 5 `claude-sonnet-5`): re-measured the 23-row H1724 inventory — 20 of 23 were already resolved by other sessions between mint and execution; landed the 1 genuinely-unlanded worktree (PR [#847](https://github.com/gasyoun/SanskritLexicography/pull/847), FINDINGS §496) and removed 1 clean/already-merged worktree; escalated the remaining 3 (`h1080-raw624`/`h1080-raw629` detached 434/458-commit parallel histories, `rt-harden-codex` live 30-dirty-file Codex session) to a human per the handoff's own escalation rule.
 
-
 ## [1.93.0] — 2026-07-27
 
 ### Added
@@ -825,7 +833,6 @@ not an error.
   file under `RussianTranslation/review/` is still trackable.
 
 ## [1.90.0] — 2026-07-27
-
 
 ### Added
 - **H1705 artifact propagation — the deliverable registered on every surface that
@@ -1121,7 +1128,6 @@ Fable 5 (`claude-fable-5`), user-overridden Opus lock.
   `probe_scheme_overlap.py` with a competitive-rank test against all 270 DCS texts) plus
   `h1691_handcheck.py`. Grounded PWG leaf senses 7,372 → **8,208** (+11.3%) on H1670's wide
   frame; `MAPPED` citation mass 36.4% → **44.7%**; the actionable backlog above 0.05% is empty.
-
 
 ### Fixed
 - **`build_ls_text_crosswalk_backlog.py` mis-classified in both directions and now reads back

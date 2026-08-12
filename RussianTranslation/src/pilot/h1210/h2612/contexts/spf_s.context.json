@@ -1,0 +1,73 @@
+{
+ "schema": "pwg.prep_context.v1",
+ "key1": "spfS",
+ "prep_semantic_sha256": "1f0102d7af79b26bb3b263412fa218c9fa6f75a6aea51df9659b456be4fadf8c",
+ "source_evidence": {
+  "kind": "execution_manifest",
+  "locator": "src/pilot/h1210/h2591/execution_manifest.h2591.json",
+  "sha256": "554122ed97e33b88a0fe215ffbd0e37da44a0e88cb1ebe837f4b33ab8c14c880",
+  "manifest_sha256": "cf2fee7bf91d85db745c7c638d2c782e4918e5d21d55282613ea22dab62c90ed"
+ },
+ "sense_count": 2,
+ "sense_anchors": [
+  {
+   "i": 0,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 1,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  }
+ ],
+ "tm_hits": [],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=execution_manifest"
+  ]
+ },
+ "det": {
+  "ok": false,
+  "gate": "prep",
+  "issues": [
+   "prep: sense_inventory present but every de_anchor is empty"
+  ],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 87,
+  "source_senses": 2,
+  "had_draft_card": false
+ },
+ "route_hint": "full_worker",
+ "tm_policy": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "fuzzy_is_advisory": true,
+  "exact_content_requires_promoter": true
+ },
+ "question_scope": {
+  "can_answer_now": [
+   "Q1",
+   "Q3",
+   "Q5"
+  ],
+  "promoter_decides": [
+   "Q2"
+  ],
+  "cannot_answer": [
+   "N1",
+   "N2",
+   "N4",
+   "N11"
+  ]
+ },
+ "promotable": false,
+ "context_sha256": "3ee5d10bd0773018775bd09e3a7d3d5459484efe217147ac680fbde45883a4d8"
+}
