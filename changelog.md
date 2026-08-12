@@ -14,6 +14,35 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H2581 router.cheap requalification — zero-call stop, and an integrity finding underneath it**
+  ([#1655](https://github.com/gasyoun/SanskritLexicography/pull/1655),
+  [#1657](https://github.com/gasyoun/SanskritLexicography/pull/1657),
+  [#1662](https://github.com/gasyoun/SanskritLexicography/pull/1662)). The authorised two-call
+  sitting was **not run**: the four offline selftests passed at `v1.144.32` (3/3, 9/9, 11/11,
+  10/10), but the session was not bound to the gateway under qualification
+  (`base_url_is_gateway: false`, no `ANTHROPIC_*` env), so a dispatch would have sealed
+  ticket/attestation/envelope artifacts stamped `route: router-cheap-agent` around a call served
+  by the default endpoint. `prespend_gate.py` now mechanises that check (exit **0** PROCEED /
+  **3** STOP) so a future sitting verifies binding before claiming.
+- **Forensics on an orphaned, billed dispatch** — reservation 1 of 2 on
+  `run_id: h2581-requalification-v1.144.32` was spent 11-08-2026 by an **authorised** session
+  whose dispatch completed (`resolvedModel: claude-opus-5`) but which died of context exhaustion
+  before sealing, leaving the ledger untracked in a zero-commit worktree. `dispatch_forensics.py`
+  and `session_provenance_forensics.py` settle "was a model reached" and "who ran this" from the
+  transcript rather than by inference. Only 1 call now remains under `max_calls: 2`, so a fresh
+  `run_id` is required. Tracked as
+  [integrity issue #1658](https://github.com/gasyoun/SanskritLexicography/issues/1658);
+  generalised as [Uprava FINDINGS §361](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
+
+### Fixed
+- **Retraction:** [#1657](https://github.com/gasyoun/SanskritLexicography/pull/1657) reported the
+  11-08 call as *unauthorised*. It was authorised (human ruling 2026-08-11T13:34:48Z, 24 minutes
+  before the reservation); the claim was inferred from the handoff's blocked banner plus an absent
+  repo record, without reading the transcript already in hand.
+  [#1662](https://github.com/gasyoun/SanskritLexicography/pull/1662) corrects the report, its
+  filename, and the issue.
+
 ## [1.144.37] - 2026-08-12
 
 ### Fixed
