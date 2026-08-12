@@ -10,6 +10,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.144.36] - 2026-08-12
 ### Added
 
 - **H2402 (Sonnet 5, `claude-sonnet-5`) — per-stratum BLI P@1/P@5/MRR scorer:** `src/eval/bli_score_stratified.py` scores the H2401 stratified gold frame (band × POS cells) against `corpus_lexicon.jsonl`, reusing `bli_eval.py`'s ranking/matching and adding P@5. Absent lemmas count only against coverage, never P@k/MRR, per the [BLI gold-set annotation protocol](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/BLI_GOLD_SET_ANNOTATION_PROTOCOL_2026.md) §6. Fixture selftest only — the real annotated frame is pending pass-1/pass-2 labeling (H2551).
