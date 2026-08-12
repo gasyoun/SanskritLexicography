@@ -1,0 +1,132 @@
+{
+ "input_dir": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\input",
+ "metrics": {
+  "Srama": {
+   "bytes": 7759,
+   "content_sha256": "05c3f70ad51ff0c81642722e9103945d22c30f6e86cb24a819d75d5656da196e",
+   "duplicate_spellings": [
+    "_srama"
+   ],
+   "ls": 119,
+   "placeholders": 234,
+   "source_senses": 3
+  },
+  "SudDi": {
+   "bytes": 8429,
+   "content_sha256": "a4f53770921224915987ce60d52a4d88201eb780ba6dcdfccf7ab5a91428c393",
+   "duplicate_spellings": [
+    "_sud_di"
+   ],
+   "ls": 63,
+   "placeholders": 156,
+   "source_senses": 9
+  },
+  "SvAsa": {
+   "bytes": 11427,
+   "content_sha256": "0e2c0a1f5a5a4d6baef9dd08f4d0b5afd2dfef4153d15a384316d38dddba23ff",
+   "duplicate_spellings": [
+    "_sv_asa"
+   ],
+   "ls": 82,
+   "placeholders": 167,
+   "source_senses": 2
+  },
+  "rAtra": {
+   "bytes": 2409,
+   "content_sha256": "fb16a3ae4e1fa8c8c06db2f3f5d5151eec28826df4d897de0c1d36703f2972a4",
+   "duplicate_spellings": [
+    "r_atra"
+   ],
+   "ls": 32,
+   "placeholders": 86,
+   "source_senses": 2
+  },
+  "samIpa": {
+   "bytes": 9520,
+   "content_sha256": "884b7639855169f15a6d48c45f181ce97f36ae3984c717f329dcc350be200478",
+   "duplicate_spellings": [
+    "sam_ipa"
+   ],
+   "ls": 94,
+   "placeholders": 234,
+   "source_senses": 2
+  },
+  "spfS": {
+   "bytes": 11134,
+   "content_sha256": "5d8d60c3de6f95fd14998cdcbb8e5cb1a956b540bcf734d8e8f4425382994f23",
+   "duplicate_spellings": [
+    "spf_s"
+   ],
+   "ls": 29,
+   "placeholders": 87,
+   "source_senses": 2
+  },
+  "vyavasTA": {
+   "bytes": 8805,
+   "content_sha256": "8013d01c6cd0f653529fe6077b0bbcf3168859e7d6dece06c169c14a51e23a21",
+   "duplicate_spellings": [
+    "vyavas_t_a"
+   ],
+   "ls": 60,
+   "placeholders": 133,
+   "source_senses": 11
+  },
+  "zoqaSan": {
+   "bytes": 2891,
+   "content_sha256": "84c104d0334f8699e08fd426cbcf862bcd4a227e6892c6f9595436831c1509b4",
+   "duplicate_spellings": [
+    "zoqa_san"
+   ],
+   "ls": 66,
+   "placeholders": 103,
+   "source_senses": 0
+  }
+ },
+ "pool_size": 48,
+ "schema": "pwg.prep_context_comparison_selection.v1",
+ "selection_rule": {
+  "exclusions": [
+   "synthetic fixtures: any key whose stem starts with a SYNTHETIC_PREFIXES entry (the curated canary is a control, not a real card; H2591 requires eight REAL cards)",
+   "content duplicates: cards whose raw bytes hash identically are ONE card under two spellings (e.g. vyavasTA / vyavas_t_a). Keeping both would silently halve the sample — three cards masquerading as six. The lexicographically first key1 wins."
+  ],
+  "frozen": "keys are sealed into plan.json before any call; a failed card is never replaced",
+  "metrics": {
+   "bytes": "len(raw.encode(\"utf-8\"))",
+   "content_sha256": "sha256(raw.encode(\"utf-8\")) — the dedupe key, not a stratifier",
+   "ls": "raw.count(\"<ls\")",
+   "placeholders": "len(pwg_mask.mask(raw)[1])",
+   "source_senses": "sense_count.count_source_senses(raw)"
+  },
+  "order": [
+   "long_monster: bytes >= 12000 (prep_pack.MONSTER_BYTES); if fewer than 2 qualify, the 2 largest by bytes. Tie-break key1 ascending.",
+   "markup_heavy: of the remainder, the 2 highest placeholders. Tie-break key1 ascending.",
+   "polysemous: of the remainder, source_senses >= 6 (prep_pack.POLYSEMY_SENSE_FLOOR), the 2 highest source_senses; if fewer than 2 qualify, the 2 highest overall. Tie-break key1 ascending.",
+   "simple: of the remainder, the 2 smallest bytes among source_senses <= 2 and placeholders <= 2; if fewer than 2 qualify, the 2 smallest bytes overall. Tie-break key1 ascending."
+  ],
+  "pool": "every key with both <key>.raw.txt and <key>.portrait.json in the pilot input dir"
+ },
+ "strata": {
+  "long_monster": [
+   "SvAsa",
+   "spfS"
+  ],
+  "markup_heavy": [
+   "Srama",
+   "samIpa"
+  ],
+  "polysemous": [
+   "vyavasTA",
+   "SudDi"
+  ],
+  "simple": [
+   "rAtra",
+   "zoqaSan"
+  ]
+ },
+ "stratum_predicate_fell_back": {
+  "long_monster": true,
+  "markup_heavy": false,
+  "polysemous": false,
+  "simple": true
+ }
+}

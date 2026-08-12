@@ -1,0 +1,54 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "zoqaSan",
+ "produced_at": 1786524003,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "fill",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  }
+ },
+ "sense_inventory": [],
+ "source_evidence": {
+  "kind": "execution_manifest",
+  "locator": "src/pilot/h1210/h2591/execution_manifest.h2591.json",
+  "sha256": "be8c2b8fdbc13c30bb3b337a8339c3cc282c464a133c57022b1f7deb4c8afc5a",
+  "manifest_sha256": "cf2fee7bf91d85db745c7c638d2c782e4918e5d21d55282613ea22dab62c90ed"
+ },
+ "tm_fuzzy_hits": [],
+ "compound_candidates": [],
+ "citation_normalize": [],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=execution_manifest"
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "prep_only",
+ "det": {
+  "ok": true,
+  "gate": "prep",
+  "issues": [],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 103,
+  "source_senses": 0,
+  "had_draft_card": false
+ },
+ "tm_fence": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "step": "[4] same promoter + TM fence",
+  "note": "TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM",
+  "n_hits_ranked": 0
+ },
+ "store_write": false
+}

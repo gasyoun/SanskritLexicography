@@ -1,0 +1,129 @@
+{
+ "schema": "pwg.prep_context.v1",
+ "key1": "SudDi",
+ "prep_semantic_sha256": "75dfc397b305130ef95b9f7dd4b7ddc793a5f390dba12888cbe01a2696750959",
+ "source_evidence": {
+  "kind": "execution_manifest",
+  "locator": "src/pilot/h1210/h2591/execution_manifest.h2591.json",
+  "sha256": "18836eb9406486e44ea056f283977dc4e09c2a4c8593b63d4f069f99ddafa34e",
+  "manifest_sha256": "cf2fee7bf91d85db745c7c638d2c782e4918e5d21d55282613ea22dab62c90ed"
+ },
+ "sense_count": 9,
+ "sense_anchors": [
+  {
+   "i": 0,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 1,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 2,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 3,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 4,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 5,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 6,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 7,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 8,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  }
+ ],
+ "tm_hits": [
+  {
+   "rank": 1,
+   "key1": "SudDavidyA",
+   "score": 0.667,
+   "match_type": "key1_difflib",
+   "ru_preview": "(в противоположность {%aśuddha˚%}) чистое познание; в <ls>Kaśm. Śiv.</ls> — 32-е из 36 {%tattvāni%}, принцип неограничен…",
+   "reuse_hint": "fuzzy_neighbor",
+   "evidence_sha256": "a3800073b6fd7c13bebe139cdc3dbe572d39c1bfdce504d2a94d8f4b53c64102",
+   "may_auto_reuse": false,
+   "advisory_only": true,
+   "decision_authority": "promoter_only"
+  }
+ ],
+ "hard_flags": {
+  "polysemy": true,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=execution_manifest",
+   "polysemy: n_senses=9 >= 6"
+  ]
+ },
+ "det": {
+  "ok": false,
+  "gate": "prep",
+  "issues": [
+   "prep: sense_inventory present but every de_anchor is empty"
+  ],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 156,
+  "source_senses": 9,
+  "had_draft_card": false
+ },
+ "route_hint": "full_worker",
+ "tm_policy": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "fuzzy_is_advisory": true,
+  "exact_content_requires_promoter": true
+ },
+ "question_scope": {
+  "can_answer_now": [
+   "Q1",
+   "Q3",
+   "Q5"
+  ],
+  "promoter_decides": [
+   "Q2"
+  ],
+  "cannot_answer": [
+   "N1",
+   "N2",
+   "N4",
+   "N11"
+  ]
+ },
+ "promotable": false,
+ "context_sha256": "8f63a2a31f2334fd9abd7be03af95899fc00ff5912f5c4b52fa40900eb98d41b"
+}

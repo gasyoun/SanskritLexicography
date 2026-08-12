@@ -1,0 +1,128 @@
+{
+ "schema": "pwg.prep_context.v1",
+ "key1": "vyavasTA",
+ "prep_semantic_sha256": "75ad7d14e6ee8008a816e7a83c808ad1bab80f9c6dacee61ff515be032db03ca",
+ "source_evidence": {
+  "kind": "execution_manifest",
+  "locator": "src/pilot/h1210/h2591/execution_manifest.h2591.json",
+  "sha256": "683690db648506ef913c8e7801b42227bde5576cbc8a26f6cd573ab35abd1edc",
+  "manifest_sha256": "cf2fee7bf91d85db745c7c638d2c782e4918e5d21d55282613ea22dab62c90ed"
+ },
+ "sense_count": 11,
+ "sense_anchors": [
+  {
+   "i": 0,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 1,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 2,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 3,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 4,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 5,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 6,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 7,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 8,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 9,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 10,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  }
+ ],
+ "tm_hits": [],
+ "hard_flags": {
+  "polysemy": true,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=execution_manifest",
+   "polysemy: n_senses=11 >= 6"
+  ]
+ },
+ "det": {
+  "ok": false,
+  "gate": "prep",
+  "issues": [
+   "prep: sense_inventory present but every de_anchor is empty"
+  ],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 133,
+  "source_senses": 11,
+  "had_draft_card": false
+ },
+ "route_hint": "full_worker",
+ "tm_policy": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "fuzzy_is_advisory": true,
+  "exact_content_requires_promoter": true
+ },
+ "question_scope": {
+  "can_answer_now": [
+   "Q1",
+   "Q3",
+   "Q5"
+  ],
+  "promoter_decides": [
+   "Q2"
+  ],
+  "cannot_answer": [
+   "N1",
+   "N2",
+   "N4",
+   "N11"
+  ]
+ },
+ "promotable": false,
+ "context_sha256": "cf922738a09c4257e21cebac87b357715bb4ffc5340c700e7c037de5451911d5"
+}

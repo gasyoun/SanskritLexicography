@@ -816,12 +816,22 @@ def apply_det_gate(pack: dict, *, payload_card: dict | None = None,
 
 def fill_one(key1: str, *, model: str, payload_idx: dict, store_idx: dict,
              mode: str = 'fill', input_dir: str | None = None,
-             run_gate: bool = True) -> dict:
+             run_gate: bool = True, manifest_authoritative: bool = False) -> dict:
     pack = empty_pack(key1, model=model, mode=mode)
     card = payload_idx.get(key1)
     slot = (store_idx.get('by_key') or {}).get(key1)
     de_src = load_de_source(key1, input_dir=input_dir)
     de_blob = ''
+
+    # H2591: `--manifest` alone could never actually PRODUCE a manifest-sourced sidecar on
+    # a checkout that has the raws. `load_de_source` falls back to the hardcoded MAIN_PILOT
+    # input dir, so `de_src` was always truthy and the execution-manifest branch below was
+    # dead code except on a machine missing the inputs — i.e. exactly the "reachable only
+    # by accident" shape. A consumer that must bind an IMMUTABLE manifest source + manifest
+    # SHA (a sealed comparison, a replayable receipt) now says so explicitly instead of
+    # depending on which files happen to sit on this disk.
+    if manifest_authoritative and card and card.get('_prep_source_kind') == 'execution_manifest':
+        de_src = None
 
     # Priority: immutable production source > manifest/payload source > promoted
     # store. The store is useful evidence and a draft source, but must not
@@ -1048,11 +1058,13 @@ def write_compact_context(out_dir: str, pack: dict) -> str:
 
 def produce_fill(keys: list[str], out_dir: str, model: str,
                  payload_idx: dict, store_idx: dict,
-                 input_dir: str | None = None, run_gate: bool = True) -> list[str]:
+                 input_dir: str | None = None, run_gate: bool = True,
+                 manifest_authoritative: bool = False) -> list[str]:
     paths = []
     for k in keys:
         pack = fill_one(k, model=model, payload_idx=payload_idx, store_idx=store_idx,
-                        mode='fill', input_dir=input_dir, run_gate=run_gate)
+                        mode='fill', input_dir=input_dir, run_gate=run_gate,
+                        manifest_authoritative=manifest_authoritative)
         paths.append(write_pack(out_dir, pack))
     return paths
 
@@ -1328,6 +1340,31 @@ def selftest() -> int:
         assert p_manifest['source_evidence']['kind'] == 'execution_manifest'
         assert len(p_manifest['source_evidence']['sha256']) == 64
 
+        # H2591: with a local raw present, `--manifest` alone LOSES to the raw — that is
+        # why the execution_manifest branch above was unreachable in practice. The flag is
+        # what makes an immutable-source guarantee expressible rather than accidental.
+        raw_dir = os.path.join(td, 'raws')
+        os.makedirs(raw_dir, exist_ok=True)
+        with open(os.path.join(raw_dir, 'manifestOnly.raw.txt'), 'w',
+                  encoding='utf-8', newline='\n') as handle:
+            handle.write('1〉 {%Andere Quelle%} <ls>MBh.</ls>')
+        p_raw_wins = fill_one(
+            'manifestOnly', model=ds.DEFAULT_MODEL, payload_idx=manifest_idx,
+            store_idx={'by_key': {}, 'all_keys': []}, input_dir=raw_dir)
+        assert p_raw_wins['source_evidence']['kind'] == 'de_source', \
+            'a local raw must still win by default — this is not a behaviour change'
+        p_bound = fill_one(
+            'manifestOnly', model=ds.DEFAULT_MODEL, payload_idx=manifest_idx,
+            store_idx={'by_key': {}, 'all_keys': []}, input_dir=raw_dir,
+            manifest_authoritative=True)
+        assert p_bound['source_evidence']['kind'] == 'execution_manifest'
+        assert p_bound['source_evidence']['manifest_sha256'] == \
+            p_manifest['source_evidence']['manifest_sha256']
+        assert compact_context(p_bound)['prep_semantic_sha256'] == \
+            compact_context(p_manifest)['prep_semantic_sha256'], \
+            'manifest-bound context must not depend on which raws sit on this disk'
+        print('  ok   --manifest-authoritative binds immutable manifest bytes over local raws')
+
         context = compact_context(p_manifest)
         assert verify_compact_context(context) is context
         assert context == compact_context(p_manifest), 'compact seed must replay byte-identically'
@@ -1441,6 +1478,10 @@ def main(argv=None) -> int:
                     help='h1209 slice_payload.json (cards with card_block / source_senses)')
     ap.add_argument('--manifest', default=None,
                     help='manifest-v2 JSON; consumes exact inputs[] source bytes offline')
+    ap.add_argument('--manifest-authoritative', action='store_true',
+                    help='bind the manifest as THE source even when local raws exist '
+                         '(source_evidence.kind=execution_manifest + manifest_sha256); '
+                         'required by any consumer that must replay from immutable bytes')
     ap.add_argument('--store', default=None,
                     help='pwg_ru_translated.jsonl (read-only TM/sense source)')
     ap.add_argument('--input-dir', default=None,
@@ -1547,7 +1588,8 @@ def main(argv=None) -> int:
     else:
         # fill even if store empty — DE raw / translate may still supply senses
         paths = produce_fill(keys, args.out_dir, model, payload_idx, store_idx,
-                             input_dir=input_dir, run_gate=run_gate)
+                             input_dir=input_dir, run_gate=run_gate,
+                             manifest_authoritative=args.manifest_authoritative)
         mode = 'fill'
 
     context_paths = []

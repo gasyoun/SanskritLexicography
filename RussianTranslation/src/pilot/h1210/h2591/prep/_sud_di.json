@@ -1,0 +1,117 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "SudDi",
+ "produced_at": 1786524003,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "fill",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  }
+ },
+ "sense_inventory": [
+  {
+   "i": 0,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 1,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 2,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 3,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 4,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 5,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 6,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 7,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 8,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  }
+ ],
+ "source_evidence": {
+  "kind": "execution_manifest",
+  "locator": "src/pilot/h1210/h2591/execution_manifest.h2591.json",
+  "sha256": "18836eb9406486e44ea056f283977dc4e09c2a4c8593b63d4f069f99ddafa34e",
+  "manifest_sha256": "cf2fee7bf91d85db745c7c638d2c782e4918e5d21d55282613ea22dab62c90ed"
+ },
+ "tm_fuzzy_hits": [
+  {
+   "rank": 1,
+   "key1": "SudDavidyA",
+   "score": 0.667,
+   "match_type": "key1_difflib",
+   "n_store_rows": 1,
+   "ru_preview": "(в противоположность {%aśuddha˚%}) чистое познание; в <ls>Kaśm. Śiv.</ls> — 32-е из 36 {%tattvāni%}, принцип неограничен…",
+   "reuse_hint": "fuzzy_neighbor",
+   "evidence_sha256": "a3800073b6fd7c13bebe139cdc3dbe572d39c1bfdce504d2a94d8f4b53c64102",
+   "may_auto_reuse": false,
+   "advisory_only": true,
+   "decision_authority": "promoter_only"
+  }
+ ],
+ "compound_candidates": [],
+ "citation_normalize": [],
+ "hard_flags": {
+  "polysemy": true,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=execution_manifest",
+   "polysemy: n_senses=9 >= 6"
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "full_worker",
+ "det": {
+  "ok": false,
+  "gate": "prep",
+  "issues": [
+   "prep: sense_inventory present but every de_anchor is empty"
+  ],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 156,
+  "source_senses": 9,
+  "had_draft_card": false
+ },
+ "tm_fence": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "step": "[4] same promoter + TM fence",
+  "note": "TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM",
+  "n_hits_ranked": 1
+ },
+ "store_write": false
+}
