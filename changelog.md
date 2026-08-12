@@ -14,6 +14,19 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.37] - 2026-08-12
+
+### Fixed
+- **An absent `returned_model` now stops the run at call time**, closing the second of H2591's two driver defects. H2591's call 09 was reserved, finalized and paid while naming no model at all, and the substitution guard waved it through because absence is not substitution — so the run continued and the hole surfaced only at receipt time. This is deliberately stricter than the `cli_error_exit` continue-rule: a provider refusal that still names its model is a verdict on one call, whereas an unattested call leaves the ledger holding spend it cannot assign. Pinned by `test_absent_returned_model_stops_the_run` (both directions: a clean audited card with no model stops the run, and so does the `rc=1`-and-unattested call-09 shape); matrix **15/15**, window suite **211/211**.
+
+### Added
+- **H2598 pre-spend evidence** ([README](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2598/README.md)) — both blockers discharged with **no call reserved and no spend**.
+  - **B1's owed limit-window check came back negative, and the recorded window was wrong.** The sealed ledger's own timestamps put H2591's sixteen calls at **13:25:56–14:26:19 UTC**, not the 07:53–11:40 UTC named in the diagnosis; and a single provider limit window is **refuted**, not merely unconfirmed — ordinal 10 returned `rc=0` with 75 580 tokens at 14:12:37, between refusals 9 and 11. The churn is per-call. [b1_limit_window_probe.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2598/b1_limit_window_probe.py).
+  - **B2: the handoff's first option is unavailable.** Classified by production's own predicate (`gen_opt_harness2._presplit_hit`), the pool splits **4 whole-card / 44 presplit** — the rig needs eight cards and only `spfS`, `prasU`, `rAtra`, `idAnIm` qualify, and every portrait in the project lives in the one pilot input dir. A whole-card A/B therefore qualifies PREP for the lane carrying **8 %** of the pool. [b2_whole_card_pool.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2598/b2_whole_card_pool.py).
+
+### Known
+- **The H2598 re-run is not re-selectable as specified** and awaits a human choice between 4 pairs on the whole-card cards (8 calls, `n` halved, strata collapse), a fragment-lane comparison (new build, the 92 % lane), or generating ~100 new portraits to restore `n = 8`. The spend gate is unchanged: `--check` condition 8 still requires explicit `--authorize-unknown-billing`.
+
 ## [1.144.35] - 2026-08-12
 
 ### Added

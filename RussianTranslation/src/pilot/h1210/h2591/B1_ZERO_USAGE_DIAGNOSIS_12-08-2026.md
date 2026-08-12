@@ -104,6 +104,11 @@ holed comparison — but it may still halt. Before spending sixteen more calls:
 
 1. Check whether the account was under a limit window during 07:53–11:40 UTC on
    12-08-2026 (the `rc=1` cluster is the strongest available proxy).
+   **DONE 12-08-2026, and it came back negative — see [H2598's README](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2598/README.md).**
+   Two corrections to this item as written: the run actually ran **13:25:56–14:26:19 UTC**
+   (no call was spent in the window named above), and a single limit window is **refuted**,
+   not merely unconfirmed — ordinal 10 returned `rc=0` with 75 580 tokens at 14:12:37,
+   between refusals 9 and 11. The churn is per-call, not per-window.
 2. If the next run halts on `usage_contradiction`, the envelope will now carry `subtype`,
    `terminal_reason`, `api_error_status` and the raw text — read those before re-running.
 3. The `rc=1` reading also weakens B2's premise: the markup-heavy cards may not need the

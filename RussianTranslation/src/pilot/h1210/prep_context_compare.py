@@ -820,6 +820,18 @@ def execute(plan: dict, *, ledger_path: str, run_id: str, out_dir: str,
             stopped = 'model_substitution: requested %s, returned %r' % (
                 plan['model'], returned_model)
             break
+        if not returned_model:
+            # H2591 call 09 was reserved, finalized and PAID while naming no model at all,
+            # and the substitution guard above waved it through because absence is not
+            # substitution. A call nobody can attribute is not a weaker measurement than a
+            # substituted one — it is an unattributable one, so it stops the run at call
+            # time rather than being discovered at receipt time. This is deliberately
+            # stricter than the `cli_error_exit` continue-rule one line down: a provider
+            # refusal that still names its model is a verdict on one call, whereas an
+            # unattested call leaves the ledger holding spend it cannot assign.
+            stopped = 'model_unattested at ordinal %d: paid call returned no model' % (
+                step['ordinal'],)
+            break
         if failure in ('missing_usage', 'malformed_envelope'):
             stopped = '%s at ordinal %d' % (failure, step['ordinal'])
             break

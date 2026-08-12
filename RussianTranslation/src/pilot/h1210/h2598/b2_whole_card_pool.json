@@ -1,0 +1,700 @@
+{
+ "cards": {
+  "AcArya": {
+   "bytes": 10010,
+   "cite_hit": true,
+   "cite_units": 53,
+   "content_sha256": "0c7850386ccc0e818068b44c9343d12b9b814b5e50e66b6200dae93a63ba87a1",
+   "duplicate_spellings": [
+    "_ac_arya"
+   ],
+   "ls": 52,
+   "placeholders": 121,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "Ahuti": {
+   "bytes": 6208,
+   "cite_hit": true,
+   "cite_units": 58,
+   "content_sha256": "0cc790d756a49c9ab31333aec5a04898efcf635ddb10fe01ebd1b6c4a8e91e0e",
+   "duplicate_spellings": [
+    "_ahuti"
+   ],
+   "ls": 57,
+   "placeholders": 102,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "Akfti": {
+   "bytes": 4678,
+   "cite_hit": true,
+   "cite_units": 44,
+   "content_sha256": "d5629f7ce988a4d7e716b5927b1fa6930be3be91042d41a838744078d08a4ee6",
+   "duplicate_spellings": [
+    "_akfti"
+   ],
+   "ls": 43,
+   "placeholders": 91,
+   "sense_hit": false,
+   "source_senses": 5,
+   "whole_card": false
+  },
+  "Bakza": {
+   "bytes": 5457,
+   "cite_hit": true,
+   "cite_units": 77,
+   "content_sha256": "18ac2db567cabe8789779a255366f4ae9f3cbe131297b4b344436f50fc447e13",
+   "duplicate_spellings": [
+    "_bakza"
+   ],
+   "ls": 76,
+   "placeholders": 139,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "Bezaja": {
+   "bytes": 5147,
+   "cite_hit": true,
+   "cite_units": 71,
+   "content_sha256": "50c9d2202756af9b266de72054fda83eccbd60eb9e6b6e3c01fedf5c5d42634d",
+   "duplicate_spellings": [
+    "_bezaja"
+   ],
+   "ls": 70,
+   "placeholders": 129,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "BrU": {
+   "bytes": 3990,
+   "cite_hit": true,
+   "cite_units": 54,
+   "content_sha256": "4296bbf6ea726a4f863a0b6de4615a86b960e29b1d13d36fbbe47e613ae63b41",
+   "duplicate_spellings": [
+    "_br_u"
+   ],
+   "ls": 53,
+   "placeholders": 115,
+   "sense_hit": false,
+   "source_senses": 0,
+   "whole_card": false
+  },
+  "SoDana": {
+   "bytes": 5550,
+   "cite_hit": true,
+   "cite_units": 71,
+   "content_sha256": "d8f48ad8c776a7b3ee2f430436925ad8ae7c04d92dc5f314e67b1715a2f49ab6",
+   "duplicate_spellings": [
+    "_so_dana"
+   ],
+   "ls": 70,
+   "placeholders": 150,
+   "sense_hit": false,
+   "source_senses": 4,
+   "whole_card": false
+  },
+  "Srama": {
+   "bytes": 7759,
+   "cite_hit": true,
+   "cite_units": 120,
+   "content_sha256": "05c3f70ad51ff0c81642722e9103945d22c30f6e86cb24a819d75d5656da196e",
+   "duplicate_spellings": [
+    "_srama"
+   ],
+   "ls": 119,
+   "placeholders": 234,
+   "sense_hit": false,
+   "source_senses": 3,
+   "whole_card": false
+  },
+  "SudDi": {
+   "bytes": 8429,
+   "cite_hit": true,
+   "cite_units": 64,
+   "content_sha256": "a4f53770921224915987ce60d52a4d88201eb780ba6dcdfccf7ab5a91428c393",
+   "duplicate_spellings": [
+    "_sud_di"
+   ],
+   "ls": 63,
+   "placeholders": 156,
+   "sense_hit": false,
+   "source_senses": 9,
+   "whole_card": false
+  },
+  "SvAsa": {
+   "bytes": 11427,
+   "cite_hit": true,
+   "cite_units": 83,
+   "content_sha256": "0e2c0a1f5a5a4d6baef9dd08f4d0b5afd2dfef4153d15a384316d38dddba23ff",
+   "duplicate_spellings": [
+    "_sv_asa"
+   ],
+   "ls": 82,
+   "placeholders": 167,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "aDama": {
+   "bytes": 5625,
+   "cite_hit": true,
+   "cite_units": 55,
+   "content_sha256": "5a5ef6ded8402689b116d221d5fec5bed0e923b6049715189baa9d76d466d80a",
+   "duplicate_spellings": [
+    "a_dama"
+   ],
+   "ls": 54,
+   "placeholders": 124,
+   "sense_hit": false,
+   "source_senses": 3,
+   "whole_card": false
+  },
+  "aDastAt": {
+   "bytes": 3960,
+   "cite_hit": true,
+   "cite_units": 43,
+   "content_sha256": "a676123d87c2a2240938098d2bae44090fd567ac825aa1f5b97d80f38d903a52",
+   "duplicate_spellings": [
+    "a_dast_at"
+   ],
+   "ls": 42,
+   "placeholders": 110,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "dIkzA": {
+   "bytes": 10418,
+   "cite_hit": true,
+   "cite_units": 74,
+   "content_sha256": "2641aca0200960906c052d8280ac137acb124b004c8f92f5f80ca2b3023929ea",
+   "duplicate_spellings": [
+    "d_ikz_a"
+   ],
+   "ls": 73,
+   "placeholders": 145,
+   "sense_hit": false,
+   "source_senses": 4,
+   "whole_card": false
+  },
+  "darBa": {
+   "bytes": 5625,
+   "cite_hit": true,
+   "cite_units": 51,
+   "content_sha256": "f8478b632c99720604e3ce3ae638ceba93792eb2292f6dc48d0a4283dd6e0ad1",
+   "duplicate_spellings": [
+    "dar_ba"
+   ],
+   "ls": 50,
+   "placeholders": 106,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "divA": {
+   "bytes": 2973,
+   "cite_hit": true,
+   "cite_units": 48,
+   "content_sha256": "29bf402f3c1b6695451385d2b41ea07b80804c3a4fd9c741caec23320cb9a48b",
+   "duplicate_spellings": [
+    "div_a"
+   ],
+   "ls": 47,
+   "placeholders": 76,
+   "sense_hit": false,
+   "source_senses": 0,
+   "whole_card": false
+  },
+  "idAnIm": {
+   "bytes": 3429,
+   "cite_hit": false,
+   "cite_units": 36,
+   "content_sha256": "76376716b232fd8d4a2f8ad1894340e24899d4eaae1e1a484f1091e824ed258d",
+   "duplicate_spellings": [
+    "id_an_im"
+   ],
+   "ls": 35,
+   "placeholders": 88,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": true
+  },
+  "jAtavedas": {
+   "bytes": 5336,
+   "cite_hit": true,
+   "cite_units": 51,
+   "content_sha256": "6612492b289fcd4c6e99a546bc179cad6a02fe75b55e2afbcf2dfab41d02dd7e",
+   "duplicate_spellings": [
+    "j_atavedas"
+   ],
+   "ls": 50,
+   "placeholders": 108,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "loman": {
+   "bytes": 3334,
+   "cite_hit": true,
+   "cite_units": 58,
+   "content_sha256": "3b1084d769c1fbdaa2d13bb6e94085f8cde777fb71f9700fc13ca9a8e6e524ad",
+   "ls": 57,
+   "placeholders": 91,
+   "sense_hit": false,
+   "source_senses": 0,
+   "whole_card": false
+  },
+  "maraRa": {
+   "bytes": 4134,
+   "cite_hit": true,
+   "cite_units": 60,
+   "content_sha256": "1f2dc96546f6dbae429d1db950db7b3025b5b521f3e763f811eb382fdf1099b0",
+   "duplicate_spellings": [
+    "mara_ra"
+   ],
+   "ls": 59,
+   "placeholders": 98,
+   "sense_hit": false,
+   "source_senses": 5,
+   "whole_card": false
+  },
+  "martya": {
+   "bytes": 3841,
+   "cite_hit": true,
+   "cite_units": 55,
+   "content_sha256": "890bae1f81fa36237b079958c870c302d005dea0004490eeadd5589c66d22f0c",
+   "ls": 54,
+   "placeholders": 94,
+   "sense_hit": false,
+   "source_senses": 4,
+   "whole_card": false
+  },
+  "nUnam": {
+   "bytes": 6424,
+   "cite_hit": true,
+   "cite_units": 88,
+   "content_sha256": "639d7541ff0464e7d10c72521adf9073abf83f73f6a986a57ec3b5d014daab68",
+   "duplicate_spellings": [
+    "n_unam"
+   ],
+   "ls": 87,
+   "placeholders": 140,
+   "sense_hit": false,
+   "source_senses": 4,
+   "whole_card": false
+  },
+  "nakzatra": {
+   "bytes": 7856,
+   "cite_hit": true,
+   "cite_units": 80,
+   "content_sha256": "fadb63bb8549c6c12682984661439bfe0072b58c953f9250e3c98e07d60bdd95",
+   "ls": 79,
+   "placeholders": 150,
+   "sense_hit": false,
+   "source_senses": 3,
+   "whole_card": false
+  },
+  "patnI": {
+   "bytes": 5738,
+   "cite_hit": true,
+   "cite_units": 53,
+   "content_sha256": "c04f6fd2f8761bb2914d2f6ab09350758e47970148faf83fa364790f4cf2a248",
+   "duplicate_spellings": [
+    "patn_i"
+   ],
+   "ls": 52,
+   "placeholders": 120,
+   "sense_hit": false,
+   "source_senses": 4,
+   "whole_card": false
+  },
+  "prAtar": {
+   "bytes": 3779,
+   "cite_hit": true,
+   "cite_units": 63,
+   "content_sha256": "76d200b1f3c0cc4fe890ea3efb9a5ad4199ae6c5601dd648e1462631a84c7e41",
+   "duplicate_spellings": [
+    "pr_atar"
+   ],
+   "ls": 62,
+   "placeholders": 100,
+   "sense_hit": false,
+   "source_senses": 3,
+   "whole_card": false
+  },
+  "prada": {
+   "bytes": 3315,
+   "cite_hit": true,
+   "cite_units": 50,
+   "content_sha256": "da7bc80577d3990de2bfea3c071ad7ae1ea9987911dc6f08a07a7a7aaf7ecd8e",
+   "ls": 49,
+   "placeholders": 100,
+   "sense_hit": false,
+   "source_senses": 3,
+   "whole_card": false
+  },
+  "prajYA": {
+   "bytes": 6192,
+   "cite_hit": true,
+   "cite_units": 54,
+   "content_sha256": "d1763d7433b3fc4a7f643705b6190c8e4222ad34cb67d8c373a744ea35782edf",
+   "duplicate_spellings": [
+    "praj_y_a"
+   ],
+   "ls": 53,
+   "placeholders": 104,
+   "sense_hit": false,
+   "source_senses": 4,
+   "whole_card": false
+  },
+  "prasU": {
+   "bytes": 5397,
+   "cite_hit": false,
+   "cite_units": 31,
+   "content_sha256": "473c354af6352a985ba18a9e2ec839479321391e59c1e42683cbfd494547a5de",
+   "duplicate_spellings": [
+    "pras_u"
+   ],
+   "ls": 30,
+   "placeholders": 75,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": true
+  },
+  "rAtra": {
+   "bytes": 2409,
+   "cite_hit": false,
+   "cite_units": 33,
+   "content_sha256": "fb16a3ae4e1fa8c8c06db2f3f5d5151eec28826df4d897de0c1d36703f2972a4",
+   "duplicate_spellings": [
+    "r_atra"
+   ],
+   "ls": 32,
+   "placeholders": 86,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": true
+  },
+  "rAzwra": {
+   "bytes": 7919,
+   "cite_hit": true,
+   "cite_units": 97,
+   "content_sha256": "5c9d163e1f413fe024ad384883de9e8ba1477dc4f1fc09afafafaabd4a2273a8",
+   "duplicate_spellings": [
+    "r_azwra"
+   ],
+   "ls": 96,
+   "placeholders": 170,
+   "sense_hit": false,
+   "source_senses": 3,
+   "whole_card": false
+  },
+  "retas": {
+   "bytes": 7674,
+   "cite_hit": true,
+   "cite_units": 71,
+   "content_sha256": "a19a09e76539ecc8ab8af8726041f2bd71c59b9f19b2c179cff0300402e6486f",
+   "ls": 70,
+   "placeholders": 137,
+   "sense_hit": false,
+   "source_senses": 4,
+   "whole_card": false
+  },
+  "sAhasra": {
+   "bytes": 6651,
+   "cite_hit": true,
+   "cite_units": 98,
+   "content_sha256": "1f73e42d30bab1356b1f7e5e34fca80bb1a95687ac9acc12e6fcd211db7e6b42",
+   "duplicate_spellings": [
+    "s_ahasra"
+   ],
+   "ls": 97,
+   "placeholders": 206,
+   "sense_hit": false,
+   "source_senses": 3,
+   "whole_card": false
+  },
+  "saKi": {
+   "bytes": 4823,
+   "cite_hit": true,
+   "cite_units": 66,
+   "content_sha256": "88e48b7bc70d1e3da03eb40050bb52284001f01fd6b73be5981458420c695929",
+   "duplicate_spellings": [
+    "sa_ki"
+   ],
+   "ls": 65,
+   "placeholders": 137,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "sadana": {
+   "bytes": 5855,
+   "cite_hit": true,
+   "cite_units": 74,
+   "content_sha256": "7f5a3365a1dcc971e7f5b70f04007975d019811790654d76bbfe6149e68e31f6",
+   "ls": 73,
+   "placeholders": 150,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "sakft": {
+   "bytes": 5470,
+   "cite_hit": true,
+   "cite_units": 75,
+   "content_sha256": "59019120d4c63ea31e9447fe9a5634517035fe7afb6e6284ea2673fa17a97cd5",
+   "ls": 74,
+   "placeholders": 134,
+   "sense_hit": false,
+   "source_senses": 3,
+   "whole_card": false
+  },
+  "samIpa": {
+   "bytes": 9520,
+   "cite_hit": true,
+   "cite_units": 95,
+   "content_sha256": "884b7639855169f15a6d48c45f181ce97f36ae3984c717f329dcc350be200478",
+   "duplicate_spellings": [
+    "sam_ipa"
+   ],
+   "ls": 94,
+   "placeholders": 234,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "sarvatra": {
+   "bytes": 5095,
+   "cite_hit": true,
+   "cite_units": 79,
+   "content_sha256": "3334b3d0f44414aa82325a51f4831f7337a1fcad3466006c396228207609ed3b",
+   "ls": 78,
+   "placeholders": 129,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "spfS": {
+   "bytes": 11134,
+   "cite_hit": false,
+   "cite_units": 30,
+   "content_sha256": "5d8d60c3de6f95fd14998cdcbb8e5cb1a956b540bcf734d8e8f4425382994f23",
+   "duplicate_spellings": [
+    "spf_s"
+   ],
+   "ls": 29,
+   "placeholders": 87,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": true
+  },
+  "vAhana": {
+   "bytes": 7498,
+   "cite_hit": true,
+   "cite_units": 111,
+   "content_sha256": "0a57c7a36bf6e8283f8474d3a6ed4113c5749ee1c4b7ebcc0ad4d561b0848f12",
+   "duplicate_spellings": [
+    "v_ahana"
+   ],
+   "ls": 110,
+   "placeholders": 203,
+   "sense_hit": false,
+   "source_senses": 3,
+   "whole_card": false
+  },
+  "vadana": {
+   "bytes": 5126,
+   "cite_hit": true,
+   "cite_units": 69,
+   "content_sha256": "e8f82bbe1ed89230735b3861e07bd023ef655a4facbe8ee735ed56702b37c6c5",
+   "ls": 68,
+   "placeholders": 136,
+   "sense_hit": false,
+   "source_senses": 6,
+   "whole_card": false
+  },
+  "vfzwi": {
+   "bytes": 7353,
+   "cite_hit": true,
+   "cite_units": 110,
+   "content_sha256": "037a686f1a16472796cd61fe0060a563cca2efe321875816880884727a9e5554",
+   "ls": 109,
+   "placeholders": 229,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "vicitra": {
+   "bytes": 8799,
+   "cite_hit": true,
+   "cite_units": 90,
+   "content_sha256": "190947f04826c6cd4361c6f7798155731e75554d581b88ef93218ab273943f47",
+   "ls": 89,
+   "placeholders": 202,
+   "sense_hit": false,
+   "source_senses": 4,
+   "whole_card": false
+  },
+  "vinASa": {
+   "bytes": 4719,
+   "cite_hit": true,
+   "cite_units": 67,
+   "content_sha256": "f2259e597c7c280c5c76e68a7114ad5136c4409b9faadce169469ceaa85ef139",
+   "duplicate_spellings": [
+    "vin_a_sa"
+   ],
+   "ls": 66,
+   "placeholders": 123,
+   "sense_hit": false,
+   "source_senses": 0,
+   "whole_card": false
+  },
+  "vraRa": {
+   "bytes": 4918,
+   "cite_hit": true,
+   "cite_units": 82,
+   "content_sha256": "24881b690b4d7504300b1f546e53b09c7037ef9e62d968a685da89b1f3c4380c",
+   "duplicate_spellings": [
+    "vra_ra"
+   ],
+   "ls": 81,
+   "placeholders": 152,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "vyavasTA": {
+   "bytes": 8805,
+   "cite_hit": true,
+   "cite_units": 61,
+   "content_sha256": "8013d01c6cd0f653529fe6077b0bbcf3168859e7d6dece06c169c14a51e23a21",
+   "duplicate_spellings": [
+    "vyavas_t_a"
+   ],
+   "ls": 60,
+   "placeholders": 133,
+   "sense_hit": false,
+   "source_senses": 11,
+   "whole_card": false
+  },
+  "yOvana": {
+   "bytes": 4699,
+   "cite_hit": true,
+   "cite_units": 75,
+   "content_sha256": "67d14fced5fab166dba8119ea4b03c9e8a3046056bfc8b4e62ef46c701d1195f",
+   "duplicate_spellings": [
+    "y_ovana"
+   ],
+   "ls": 74,
+   "placeholders": 136,
+   "sense_hit": false,
+   "source_senses": 3,
+   "whole_card": false
+  },
+  "yajus": {
+   "bytes": 6350,
+   "cite_hit": true,
+   "cite_units": 61,
+   "content_sha256": "9cacac7ba010630a88bcd7d3333adb17d1a5ca718d18882287c72a679244a25c",
+   "ls": 60,
+   "placeholders": 133,
+   "sense_hit": false,
+   "source_senses": 2,
+   "whole_card": false
+  },
+  "zoqaSa": {
+   "bytes": 5068,
+   "cite_hit": true,
+   "cite_units": 45,
+   "content_sha256": "f45fb8d5f01ab3b103dc2510375a0af9ec8fee0ff4965a5a9c3a4171b3db3dc0",
+   "duplicate_spellings": [
+    "zoqa_sa"
+   ],
+   "ls": 44,
+   "placeholders": 113,
+   "sense_hit": false,
+   "source_senses": 3,
+   "whole_card": false
+  },
+  "zoqaSan": {
+   "bytes": 2891,
+   "cite_hit": true,
+   "cite_units": 67,
+   "content_sha256": "84c104d0334f8699e08fd426cbcf862bcd4a227e6892c6f9595436831c1509b4",
+   "duplicate_spellings": [
+    "zoqa_san"
+   ],
+   "ls": 66,
+   "placeholders": 103,
+   "sense_hit": false,
+   "source_senses": 0,
+   "whole_card": false
+  }
+ },
+ "cite_floor": 40,
+ "h2591_sample_whole_card": [
+  "spfS",
+  "rAtra"
+ ],
+ "pool_size": 48,
+ "presplit_keys": [
+  "AcArya",
+  "Ahuti",
+  "Akfti",
+  "Bakza",
+  "Bezaja",
+  "BrU",
+  "SoDana",
+  "Srama",
+  "SudDi",
+  "SvAsa",
+  "aDama",
+  "aDastAt",
+  "dIkzA",
+  "darBa",
+  "divA",
+  "jAtavedas",
+  "loman",
+  "maraRa",
+  "martya",
+  "nUnam",
+  "nakzatra",
+  "patnI",
+  "prAtar",
+  "prada",
+  "prajYA",
+  "rAzwra",
+  "retas",
+  "sAhasra",
+  "saKi",
+  "sadana",
+  "sakft",
+  "samIpa",
+  "sarvatra",
+  "vAhana",
+  "vadana",
+  "vfzwi",
+  "vicitra",
+  "vinASa",
+  "vraRa",
+  "vyavasTA",
+  "yOvana",
+  "yajus",
+  "zoqaSa",
+  "zoqaSan"
+ ],
+ "schema": "pwg.b2_whole_card_pool.v1",
+ "sense_budget": 20,
+ "whole_card_keys": [
+  "idAnIm",
+  "prasU",
+  "rAtra",
+  "spfS"
+ ]
+}

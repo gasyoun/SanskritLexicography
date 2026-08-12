@@ -1,0 +1,235 @@
+{
+ "schema": "pwg.b1_limit_window_probe.v1",
+ "run_dir": "h2591",
+ "calls": [
+  {
+   "ordinal": 1,
+   "arm": "A",
+   "key1": "SvAsa",
+   "returncode": 0,
+   "failure_class": null,
+   "returned_model": "claude-opus-5",
+   "usage_total": 0,
+   "started_utc": "2026-08-12T13:25:56.408326+00:00",
+   "ended_utc": "2026-08-12T13:31:55.281835+00:00",
+   "wall_s": 358.9
+  },
+  {
+   "ordinal": 2,
+   "arm": "B",
+   "key1": "SvAsa",
+   "returncode": 0,
+   "failure_class": null,
+   "returned_model": "claude-opus-5",
+   "usage_total": 199437,
+   "started_utc": "2026-08-12T13:31:55.303672+00:00",
+   "ended_utc": "2026-08-12T13:39:30.251067+00:00",
+   "wall_s": 454.9
+  },
+  {
+   "ordinal": 3,
+   "arm": "B",
+   "key1": "spfS",
+   "returncode": 0,
+   "failure_class": null,
+   "returned_model": "claude-opus-5",
+   "usage_total": 74586,
+   "started_utc": "2026-08-12T13:39:30.275244+00:00",
+   "ended_utc": "2026-08-12T13:42:20.152792+00:00",
+   "wall_s": 169.8
+  },
+  {
+   "ordinal": 4,
+   "arm": "A",
+   "key1": "spfS",
+   "returncode": 0,
+   "failure_class": null,
+   "returned_model": "claude-opus-5",
+   "usage_total": 0,
+   "started_utc": "2026-08-12T13:42:20.175599+00:00",
+   "ended_utc": "2026-08-12T13:49:17.038813+00:00",
+   "wall_s": 416.8
+  },
+  {
+   "ordinal": 5,
+   "arm": "A",
+   "key1": "Srama",
+   "returncode": 1,
+   "failure_class": "unstructured_result",
+   "returned_model": "claude-opus-5",
+   "usage_total": 69076,
+   "started_utc": "2026-08-12T13:49:17.064545+00:00",
+   "ended_utc": "2026-08-12T13:54:17.937017+00:00",
+   "wall_s": 300.9
+  },
+  {
+   "ordinal": 6,
+   "arm": "B",
+   "key1": "Srama",
+   "returncode": 1,
+   "failure_class": "unstructured_result",
+   "returned_model": "claude-opus-5",
+   "usage_total": 0,
+   "started_utc": "2026-08-12T13:54:17.955735+00:00",
+   "ended_utc": "2026-08-12T13:59:09.433689+00:00",
+   "wall_s": 291.5
+  },
+  {
+   "ordinal": 7,
+   "arm": "B",
+   "key1": "samIpa",
+   "returncode": 1,
+   "failure_class": "unstructured_result",
+   "returned_model": "claude-opus-5",
+   "usage_total": 0,
+   "started_utc": "2026-08-12T13:59:09.450769+00:00",
+   "ended_utc": "2026-08-12T14:01:30.517320+00:00",
+   "wall_s": 141.1
+  },
+  {
+   "ordinal": 8,
+   "arm": "A",
+   "key1": "samIpa",
+   "returncode": 1,
+   "failure_class": "unstructured_result",
+   "returned_model": "claude-opus-5",
+   "usage_total": 0,
+   "started_utc": "2026-08-12T14:01:30.536370+00:00",
+   "ended_utc": "2026-08-12T14:06:54.460467+00:00",
+   "wall_s": 323.9
+  },
+  {
+   "ordinal": 9,
+   "arm": "A",
+   "key1": "vyavasTA",
+   "returncode": 1,
+   "failure_class": "unstructured_result",
+   "returned_model": null,
+   "usage_total": 0,
+   "started_utc": "2026-08-12T14:06:54.481805+00:00",
+   "ended_utc": "2026-08-12T14:12:36.975018+00:00",
+   "wall_s": 342.5
+  },
+  {
+   "ordinal": 10,
+   "arm": "B",
+   "key1": "vyavasTA",
+   "returncode": 0,
+   "failure_class": null,
+   "returned_model": "claude-opus-5",
+   "usage_total": 75580,
+   "started_utc": "2026-08-12T14:12:37.005533+00:00",
+   "ended_utc": "2026-08-12T14:15:25.893085+00:00",
+   "wall_s": 168.9
+  },
+  {
+   "ordinal": 11,
+   "arm": "B",
+   "key1": "SudDi",
+   "returncode": 1,
+   "failure_class": "unstructured_result",
+   "returned_model": "claude-opus-5",
+   "usage_total": 0,
+   "started_utc": "2026-08-12T14:15:25.916362+00:00",
+   "ended_utc": "2026-08-12T14:18:38.547987+00:00",
+   "wall_s": 192.6
+  },
+  {
+   "ordinal": 12,
+   "arm": "A",
+   "key1": "SudDi",
+   "returncode": 0,
+   "failure_class": null,
+   "returned_model": "claude-opus-5",
+   "usage_total": 75843,
+   "started_utc": "2026-08-12T14:18:38.565991+00:00",
+   "ended_utc": "2026-08-12T14:21:53.269673+00:00",
+   "wall_s": 194.7
+  },
+  {
+   "ordinal": 13,
+   "arm": "A",
+   "key1": "rAtra",
+   "returncode": 0,
+   "failure_class": null,
+   "returned_model": "claude-opus-5",
+   "usage_total": 59392,
+   "started_utc": "2026-08-12T14:21:53.294102+00:00",
+   "ended_utc": "2026-08-12T14:22:59.099095+00:00",
+   "wall_s": 65.8
+  },
+  {
+   "ordinal": 14,
+   "arm": "B",
+   "key1": "rAtra",
+   "returncode": 0,
+   "failure_class": null,
+   "returned_model": "claude-opus-5",
+   "usage_total": 59420,
+   "started_utc": "2026-08-12T14:22:59.116368+00:00",
+   "ended_utc": "2026-08-12T14:23:59.319553+00:00",
+   "wall_s": 60.2
+  },
+  {
+   "ordinal": 15,
+   "arm": "B",
+   "key1": "zoqaSan",
+   "returncode": 0,
+   "failure_class": null,
+   "returned_model": "claude-opus-5",
+   "usage_total": 59931,
+   "started_utc": "2026-08-12T14:23:59.349962+00:00",
+   "ended_utc": "2026-08-12T14:24:50.216910+00:00",
+   "wall_s": 50.8
+  },
+  {
+   "ordinal": 16,
+   "arm": "A",
+   "key1": "zoqaSan",
+   "returncode": 0,
+   "failure_class": null,
+   "returned_model": "claude-opus-5",
+   "usage_total": 116219,
+   "started_utc": "2026-08-12T14:24:50.241160+00:00",
+   "ended_utc": "2026-08-12T14:26:19.091813+00:00",
+   "wall_s": 88.8
+  }
+ ],
+ "report": {
+  "calls": 16,
+  "refused_rc1": 6,
+  "refused_ordinals": [
+   5,
+   6,
+   7,
+   8,
+   9,
+   11
+  ],
+  "ordinal_contiguous": false,
+  "refusal_span_utc": {
+   "from_utc": "2026-08-12T13:49:17.064545+00:00",
+   "to_utc": "2026-08-12T14:18:38.547987+00:00"
+  },
+  "clean_calls_inside_the_span": [
+   10
+  ],
+  "unattested_calls": [
+   9
+  ],
+  "zero_usage_calls": [
+   1,
+   4,
+   6,
+   7,
+   8,
+   9,
+   11
+  ],
+  "zero_usage_rc0_calls": [
+   1,
+   4
+  ],
+  "consistent_with_a_limit_window": false
+ }
+}
