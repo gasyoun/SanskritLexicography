@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.39] - 2026-08-12
+
 ### Added
 - **H2581 router.cheap requalification — zero-call stop, and an integrity finding underneath it**
   ([#1655](https://github.com/gasyoun/SanskritLexicography/pull/1655),
