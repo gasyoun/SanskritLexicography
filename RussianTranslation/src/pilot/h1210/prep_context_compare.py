@@ -752,11 +752,24 @@ def execute(plan: dict, *, ledger_path: str, run_id: str, out_dir: str,
             credit_claim_evidence=billing.get('credit_claim_evidence'))
             if wrapper is not None else unevaluable_telemetry())
 
+        cross = usage_cross_check(telemetry, wrapper)
+
         structured, audit, failure = None, None, None
         if parse_error:
             failure = 'malformed_envelope'
         elif result.get('timed_out'):
             failure = 'timeout'
+        elif result.get('returncode'):
+            # H2591: a non-zero exit is its OWN class. Five of that run's seven zero-usage
+            # calls were rc=1 refusals whose `result` held an error string, and lumping
+            # them under `unstructured_result` made a provider refusal look like a model
+            # quality defect on a dense card.
+            failure = 'cli_error_exit'
+        elif cross.get('agree') is False:
+            # Strictly more informative than `missing_usage`, so it must classify FIRST:
+            # a contradiction proves the tokens existed and the accounting block was
+            # dropped, where `missing_usage` only says the block read empty.
+            failure = 'usage_contradiction'
         elif not usage_evaluable(telemetry):
             failure = 'missing_usage'
         else:
@@ -780,6 +793,14 @@ def execute(plan: dict, *, ledger_path: str, run_id: str, out_dir: str,
             'returncode': result.get('returncode'),
             'failure_class': failure,
             'detail': parse_error,
+            'terminal': {name: (wrapper or {}).get(name) for name in TERMINAL_FIELDS},
+            'usage_cross_check': cross,
+            # For a call that yielded no structured card the returned STRING is the
+            # evidence; H2591 kept only the parse error, so five failures could never be
+            # diagnosed after the fact. Truncated, never dropped.
+            'raw_result': (None if structured is not None else
+                           str((wrapper or {}).get('result')
+                               or (result.get('stdout') or ''))[:4000]),
             'telemetry': telemetry,
             'result_sha256': (sha256_bytes(canonical_bytes(structured))
                               if structured is not None else None),
@@ -802,10 +823,78 @@ def execute(plan: dict, *, ledger_path: str, run_id: str, out_dir: str,
         if failure in ('missing_usage', 'malformed_envelope'):
             stopped = '%s at ordinal %d' % (failure, step['ordinal'])
             break
+        if failure == 'usage_contradiction':
+            # Two independent token sources disagreeing is an accounting integrity breach,
+            # not a slow call: whichever one is wrong, the comparison downstream is already
+            # unsound. An rc=1 refusal, by contrast, is recorded and the run continues —
+            # it is a provider verdict on one call, not evidence that the ledger is lying.
+            stopped = ('usage_contradiction at ordinal %d: %s'
+                       % (step['ordinal'], cross['contradiction']))
+            break
 
     usage = ledger.usage()
     return {'envelopes': envelopes, 'stopped': stopped, 'ledger_usage': usage,
             'calls_spent': ledger.spent()}
+
+
+#: Envelope fields that classify HOW a call ended. H2591 captured none of them, which is
+#: why its seven zero-usage calls could not be told apart at the time: five were `rc=1`
+#: refusals (zero usage is the documented fail-closed contract there) and two were `rc=0`
+#: successes with a valid audited card and no tokens. One `subtype`/`terminal_reason`
+#: reading would have split them on the spot.
+TERMINAL_FIELDS = ('type', 'subtype', 'is_error', 'stop_reason', 'terminal_reason',
+                   'api_error_status', 'num_turns', 'session_id', 'total_cost_usd',
+                   'duration_ms', 'duration_api_ms')
+
+#: `modelUsage` carries per-model token counts independently of the top-level `usage`
+#: block. Measured 12-08-2026: on a healthy call the two agree exactly. Reading BOTH turns
+#: a zeroed `usage` beside a populated `modelUsage` into a detectable contradiction rather
+#: than a silent hole — which is what a token comparison needs, since a hole reads as a
+#: measurement and deflates whichever arm receives it.
+MODEL_USAGE_KEYS = {
+    'input_tokens': 'inputTokens',
+    'output_tokens': 'outputTokens',
+    'cache_read_tokens': 'cacheReadInputTokens',
+    'cache_creation_tokens': 'cacheCreationInputTokens',
+}
+
+
+def model_usage_tokens(wrapper) -> dict | None:
+    """Token totals summed across every model in `modelUsage`, or None if absent."""
+    blocks = (wrapper or {}).get('modelUsage')
+    if not isinstance(blocks, dict) or not blocks:
+        return None
+    out = {name: 0 for name in MODEL_USAGE_KEYS}
+    seen = False
+    for block in blocks.values():
+        if not isinstance(block, dict):
+            continue
+        seen = True
+        for ours, theirs in MODEL_USAGE_KEYS.items():
+            value = block.get(theirs)
+            if isinstance(value, (int, float)) and value >= 0:
+                out[ours] += int(value)
+    return out if seen else None
+
+
+def usage_cross_check(telemetry: dict, wrapper) -> dict:
+    """Compare the two independent token sources and name any disagreement."""
+    mine = {name: int(telemetry.get(name) or 0) for name in MODEL_USAGE_KEYS}
+    theirs = model_usage_tokens(wrapper)
+    report = {'usage_total': sum(mine.values()),
+              'model_usage_total': None if theirs is None else sum(theirs.values()),
+              'model_usage_present': theirs is not None,
+              'agree': None, 'contradiction': None}
+    if theirs is None:
+        return report
+    report['agree'] = mine == theirs
+    if not report['agree']:
+        report['contradiction'] = (
+            'usage=%r modelUsage=%r' % (mine, theirs)
+            if report['usage_total'] else
+            'top-level usage is all-zero while modelUsage reports %d token(s) — the '
+            'accounting block was dropped, not the spend' % sum(theirs.values()))
+    return report
 
 
 def usage_evaluable(telemetry: dict) -> bool:
