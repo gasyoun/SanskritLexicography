@@ -1,0 +1,23 @@
+{
+ "billing": {
+  "authorized_unknown_billing": false,
+  "billing_mode": "unknown_gateway",
+  "credit_claim_evidence": null,
+  "max_agent_sdk_credit_claimed": false
+ },
+ "blocked_by": "no local evidence that the Max Agent SDK credit was claimed — billing is UNKNOWN; a human must authorize with --authorize-unknown-billing before --execute (missing cash USD does not invalidate token evidence, but it may not be silently priced from total_cost_usd)",
+ "conditions": {
+  "arm_a_production_unchanged": true,
+  "arm_b_single_prep_block": true,
+  "billing_attributable_or_authorized": false,
+  "context_hash_replay": true,
+  "fresh_reservation_ledger": true,
+  "immutable_manifest_source": true,
+  "prompt_schema_model_limit_identity": true,
+  "tm_fence_intact": true
+ },
+ "network_calls": 0,
+ "ok": false,
+ "plan_sha256": "15f1f3a6db141828f4e91c1e2298180fced8fd07b87f818793a666b7cbf3f064",
+ "schema": "pwg.prep_context_comparison_check.v1"
+}

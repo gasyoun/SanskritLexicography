@@ -1,0 +1,67 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "SvAsa",
+ "produced_at": 1786524003,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "fill",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  }
+ },
+ "sense_inventory": [
+  {
+   "i": 0,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 1,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  }
+ ],
+ "source_evidence": {
+  "kind": "execution_manifest",
+  "locator": "src/pilot/h1210/h2591/execution_manifest.h2591.json",
+  "sha256": "5ecfa56968d59bc99e7cff78b3762fdfc6540d3f157fc40c47d9c9c08e424efb",
+  "manifest_sha256": "cf2fee7bf91d85db745c7c638d2c782e4918e5d21d55282613ea22dab62c90ed"
+ },
+ "tm_fuzzy_hits": [],
+ "compound_candidates": [],
+ "citation_normalize": [],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=execution_manifest"
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "full_worker",
+ "det": {
+  "ok": false,
+  "gate": "prep",
+  "issues": [
+   "prep: sense_inventory present but every de_anchor is empty"
+  ],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 167,
+  "source_senses": 2,
+  "had_draft_card": false
+ },
+ "tm_fence": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "step": "[4] same promoter + TM fence",
+  "note": "TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM",
+  "n_hits_ranked": 0
+ },
+ "store_write": false
+}
