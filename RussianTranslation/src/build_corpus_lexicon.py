@@ -91,7 +91,7 @@ def deepseek(user, retries=None, system=None):
     for a in range(retries):
         try:
             r = requests.post(API, headers={'Authorization': 'Bearer ' + KEY},
-                              json={'model': 'deepseek-chat', 'temperature': 0,
+                              json={'model': 'deepseek-v4-flash', 'temperature': 0,
                                     'response_format': {'type': 'json_object'},
                                     'messages': [{'role': 'system', 'content': system or SYS},
                                                  {'role': 'user', 'content': user}]},

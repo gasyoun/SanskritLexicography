@@ -33,8 +33,8 @@ That comparison IS spike S2 (VERIFICATION Sec.4): if two independently-trained m
 not agree on `lexical_variant` vs `semantic_shift` above chance, the distinction is not
 separable and the taxonomy collapses to the coarse three (K3) BEFORE the pilot is spent.
 
-  python src/rv_divergence_type.py spike  --arm ds --provider deepseek --model deepseek-chat
-  python src/rv_divergence_type.py pilot  --arm ds --provider deepseek --model deepseek-chat
+  python src/rv_divergence_type.py spike  --arm ds --provider deepseek --model deepseek-v4-flash
+  python src/rv_divergence_type.py pilot  --arm ds --provider deepseek --model deepseek-v4-flash
   python src/rv_divergence_type.py agree  --a pwg_ru/h1844/spike.ds.jsonl --b ...openrouter.jsonl
   python src/rv_divergence_type.py report --in pwg_ru/rv_divergence_pilot.jsonl
   python src/rv_divergence_type.py selftest        # deterministic asserts, no model, no network
@@ -599,7 +599,7 @@ def selftest():
 def _add_arm_args(p, default_out, default_n):
     p.add_argument('--arm', required=True, help='short arm name, written into every row')
     p.add_argument('--provider', choices=sorted(PROVIDERS), default='deepseek')
-    p.add_argument('--model', default='deepseek-chat')
+    p.add_argument('--model', default='deepseek-v4-flash')
     p.add_argument('--env-file', default=os.path.join(HERE, '.env'))
     p.add_argument('--out', default=default_out)
     p.add_argument('--n', type=int, default=default_n)

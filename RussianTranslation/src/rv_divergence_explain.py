@@ -239,7 +239,7 @@ def main():
     ap.add_argument('--out', default=DEFAULT_OUT)
     ap.add_argument('--env-file', default=os.path.join(HERE, '.env'))
     ap.add_argument('--provider', choices=sorted(dv.PROVIDERS), default='deepseek')
-    ap.add_argument('--model', default='deepseek-chat')
+    ap.add_argument('--model', default='deepseek-v4-flash')
     ap.add_argument('--workers', type=int, default=8)
     a = ap.parse_args()
     if a.cmd == 'selftest':
