@@ -42,6 +42,7 @@ Org map: Uprava docs/DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08.md §3.1.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -67,6 +68,7 @@ import deepseek_arm as ds  # noqa: E402
 import det_gate  # noqa: E402 — free Python twin of the H1209 JS gate (no Claude)
 
 SCHEMA_ID = 'pwg.prep_pack.v1'
+CONTEXT_SCHEMA_ID = 'pwg.prep_context.v1'
 SCHEMA_PATH = os.path.join(HERE, 'prep_pack.schema.json')
 
 # Monster threshold mirrors H1210 declared_caps.max_bytes spirit (12 KB).
@@ -114,6 +116,7 @@ def empty_pack(key1: str, *, model: str | None = None, mode: str = 'dry') -> dic
             },
         },
         'sense_inventory': [],
+        'source_evidence': None,
         # Step [2]b — TM fuzzy rank (READ-ONLY hits). Not the TM fence.
         'tm_fuzzy_hits': [],
         'compound_candidates': [],
@@ -181,7 +184,64 @@ def load_payload_index(path: str | None) -> dict[str, dict]:
         return {}
     with open(path, encoding='utf-8') as f:
         pl = json.load(f)
-    return {c['key1']: c for c in (pl.get('cards') or []) if c.get('key1')}
+    return {
+        c['key1']: dict(c, _prep_source_kind='slice_payload')
+        for c in (pl.get('cards') or []) if c.get('key1')
+    }
+
+
+def _canonical_bytes(value: object) -> bytes:
+    return json.dumps(
+        value, ensure_ascii=False, sort_keys=True, separators=(',', ':'),
+    ).encode('utf-8')
+
+
+def _sha256(value: bytes) -> str:
+    return hashlib.sha256(value).hexdigest()
+
+
+def _semantic_pack_sha256(pack: dict) -> str:
+    """Hash replay-relevant PREP content, excluding observation time."""
+    stable = dict(pack)
+    stable.pop('produced_at', None)
+    return _sha256(_canonical_bytes(stable))
+
+
+def load_manifest_index(path: str | None) -> dict[str, dict]:
+    """Expose immutable manifest inputs as prep sources without regeneration.
+
+    A manifest already carries the exact masked source bytes, declared sense
+    count, and complexity used by the production worker. Consuming those bytes
+    closes the H2489 gap where a valid queue key was parked merely because the
+    worktree lacked gitignored input files.
+    """
+    if not path:
+        return {}
+    with open(path, 'rb') as handle:
+        raw = handle.read()
+    manifest = json.loads(raw.decode('utf-8'))
+    if not isinstance(manifest, dict) or not isinstance(manifest.get('inputs'), dict):
+        raise SystemExit('prep_pack: --manifest must contain an inputs object')
+    manifest_sha = _sha256(raw)
+    out = {}
+    for key1, source in manifest['inputs'].items():
+        if not isinstance(key1, str) or not isinstance(source, dict):
+            continue
+        skeleton = source.get('skeleton') or ''
+        portrait = source.get('portrait') or ''
+        out[key1] = {
+            'key1': key1,
+            'source_senses': source.get('source_senses'),
+            'skeleton_tokens': skeleton_tokens_from_text(skeleton),
+            'card_block': skeleton,
+            'portrait': portrait,
+            'complexity': source.get('complexity') or {},
+            '_prep_source_kind': 'execution_manifest',
+            '_prep_source_locator': path,
+            '_prep_source_sha256': _sha256(skeleton.encode('utf-8')),
+            '_prep_manifest_sha256': manifest_sha,
+        }
+    return out
 
 
 def load_store_index(path: str | None, wanted: set[str] | None = None) -> dict:
@@ -404,6 +464,27 @@ def _ru_preview_from_slot(slot: dict | None) -> tuple:
     return ru_preview, slot.get('n_senses')
 
 
+def _slot_evidence_sha256(slot: dict | None) -> str | None:
+    if not slot:
+        return None
+    rows = slot.get('rows') or []
+    return _sha256(_canonical_bytes(rows)) if rows else None
+
+
+def _classify_tm_hit(hit: dict) -> dict:
+    """Stamp reuse authority independently from similarity score.
+
+    A score of 1.0 for the same key is not content identity. Only the
+    content-addressed lookup may be considered by the promoter for exact
+    auto-reuse; every other hit is advisory even when its lexical score is 1.
+    """
+    exact_content = hit.get('match_type') == 'exact_content_sha'
+    hit['may_auto_reuse'] = exact_content
+    hit['advisory_only'] = not exact_content
+    hit['decision_authority'] = 'promoter_only'
+    return hit
+
+
 def tm_content_addressed_hit(key1: str, input_dir: str | None) -> dict | None:
     """Exact content-addressed TM hit (lang:raw_sha256) when pilot/input raw exists.
 
@@ -457,7 +538,7 @@ def tm_content_addressed_hit(key1: str, input_dir: str | None) -> dict | None:
                     ru_preview = t[:120] + ('…' if len(t) > 120 else '')
             except Exception:  # noqa: BLE001
                 pass
-    return {
+    return _classify_tm_hit({
         'rank': 1,
         'key1': key1,
         'score': 1.0,
@@ -466,7 +547,8 @@ def tm_content_addressed_hit(key1: str, input_dir: str | None) -> dict | None:
         'n_store_rows': None,
         'ru_preview': ru_preview,
         'reuse_hint': 'auto_exact_candidate',  # still requires promoter path to write TM
-    }
+        'evidence_sha256': raw_sha,
+    })
 
 
 def tm_fuzzy_rank(key1: str, store_idx: dict, *,
@@ -494,7 +576,7 @@ def tm_fuzzy_rank(key1: str, store_idx: dict, *,
 
     if key1 in by_key and key1 not in seen:
         ru_preview, n_rows = _ru_preview_from_slot(by_key[key1])
-        hits.append({
+        hits.append(_classify_tm_hit({
             'rank': len(hits) + 1,
             'key1': key1,
             'score': 1.0,
@@ -502,7 +584,8 @@ def tm_fuzzy_rank(key1: str, store_idx: dict, *,
             'n_store_rows': n_rows,
             'ru_preview': ru_preview,
             'reuse_hint': 'store_key1_exact',
-        })
+            'evidence_sha256': _slot_evidence_sha256(by_key[key1]),
+        }))
         seen.add(key1)
     elif key1 in by_key and hits:
         # content-addressed already claimed rank 1; still note store row count
@@ -525,7 +608,7 @@ def tm_fuzzy_rank(key1: str, store_idx: dict, *,
     scored.sort(reverse=True)
     for s, k in scored[: max(0, top - len(hits))]:
         ru_preview, n_rows = _ru_preview_from_slot(by_key.get(k))
-        hits.append({
+        hits.append(_classify_tm_hit({
             'rank': len(hits) + 1,
             'key1': k,
             'score': round(s, 3),
@@ -533,7 +616,8 @@ def tm_fuzzy_rank(key1: str, store_idx: dict, *,
             'n_store_rows': n_rows,
             'ru_preview': ru_preview,
             'reuse_hint': 'fuzzy_neighbor',
-        })
+            'evidence_sha256': _slot_evidence_sha256(by_key.get(k)),
+        }))
     # re-number ranks 1..n
     for i, h in enumerate(hits, 1):
         h['rank'] = i
@@ -739,12 +823,10 @@ def fill_one(key1: str, *, model: str, payload_idx: dict, store_idx: dict,
     de_src = load_de_source(key1, input_dir=input_dir)
     de_blob = ''
 
-    # Priority: store rows (already-promoted) > DE raw/translate > payload.
-    if slot:
-        pack['sense_inventory'] = sense_inventory_from_store(slot)
-        de_blob = '\n'.join((r.get('de') or '') for r in slot['rows'])
-        pack['hard_flags']['notes'].append('de_source=store')
-    elif de_src:
+    # Priority: immutable production source > manifest/payload source > promoted
+    # store. The store is useful evidence and a draft source, but must not
+    # override newer source bytes merely because a key1 matches.
+    if de_src:
         de_blob = de_src['text']
         if de_src.get('units'):
             pack['sense_inventory'] = sense_inventory_from_units(de_src['units'])
@@ -752,10 +834,32 @@ def fill_one(key1: str, *, model: str, payload_idx: dict, store_idx: dict,
             pack['sense_inventory'] = sense_inventory_from_de_text(
                 de_blob, source_note='de_raw:' + os.path.basename(de_src['source']))
         pack['hard_flags']['notes'].append('de_source=%s' % de_src['source'])
+        pack['source_evidence'] = {
+            'kind': 'de_source',
+            'locator': de_src['source'],
+            'sha256': _sha256(de_blob.encode('utf-8')),
+        }
     elif card:
         pack['sense_inventory'] = sense_inventory_from_payload(card)
         de_blob = card.get('card_block') or ''
-        pack['hard_flags']['notes'].append('de_source=payload')
+        kind = card.get('_prep_source_kind') or 'slice_payload'
+        pack['hard_flags']['notes'].append('de_source=%s' % kind)
+        pack['source_evidence'] = {
+            'kind': kind,
+            'locator': card.get('_prep_source_locator'),
+            'sha256': card.get('_prep_source_sha256') or _sha256(
+                de_blob.encode('utf-8')),
+            'manifest_sha256': card.get('_prep_manifest_sha256'),
+        }
+    elif slot:
+        pack['sense_inventory'] = sense_inventory_from_store(slot)
+        de_blob = '\n'.join((r.get('de') or '') for r in slot['rows'])
+        pack['hard_flags']['notes'].append('de_source=store')
+        pack['source_evidence'] = {
+            'kind': 'promoted_store',
+            'locator': None,
+            'sha256': _slot_evidence_sha256(slot),
+        }
 
     if de_blob:
         pack['citation_normalize'] = citation_normalize_from_text(de_blob)
@@ -826,6 +930,119 @@ def write_pack(out_dir: str, pack: dict) -> str:
     with open(path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(pack, f, ensure_ascii=False, indent=1)
         f.write('\n')
+    return path
+
+
+def assert_tm_fence(pack: dict) -> None:
+    """Refuse any prep artifact that claims promotion authority."""
+    fence = pack.get('tm_fence') or {}
+    if pack.get('store_write') is not False:
+        raise SystemExit('prep_pack: compact context requires store_write=false')
+    if fence.get('may_write') is not False \
+            or fence.get('writer') != 'promoter_only' \
+            or fence.get('rule') != 'R4.3a':
+        raise SystemExit('prep_pack: invalid R4.3a promoter-only TM fence')
+    for hit in pack.get('tm_fuzzy_hits') or []:
+        exact_content = hit.get('match_type') == 'exact_content_sha'
+        if hit.get('may_auto_reuse') is not exact_content:
+            raise SystemExit('prep_pack: TM hit reuse authority contradicts match type')
+        if hit.get('advisory_only') is exact_content:
+            raise SystemExit('prep_pack: TM hit advisory flag contradicts match type')
+        if hit.get('decision_authority') != 'promoter_only':
+            raise SystemExit('prep_pack: TM hit escaped promoter-only authority')
+
+
+def compact_context(pack: dict, *, top_tm: int = 5,
+                    max_anchors: int = 12) -> dict:
+    """Compile a small, sealed Claude context seed from one full prep sidecar."""
+    assert_tm_fence(pack)
+    anchors = []
+    for sense in (pack.get('sense_inventory') or [])[:max_anchors]:
+        anchors.append({
+            'i': sense.get('i'),
+            'tag': sense.get('sense_tag'),
+            'de_anchor': (sense.get('de_anchor') or '')[:160],
+            'layer': sense.get('layer'),
+        })
+    tm_hits = []
+    for hit in (pack.get('tm_fuzzy_hits') or [])[:top_tm]:
+        tm_hits.append({
+            name: hit.get(name) for name in (
+                'rank', 'key1', 'score', 'match_type', 'ru_preview',
+                'reuse_hint', 'evidence_sha256', 'may_auto_reuse',
+                'advisory_only', 'decision_authority',
+            )
+        })
+    value = {
+        'schema': CONTEXT_SCHEMA_ID,
+        'key1': pack['key1'],
+        'prep_semantic_sha256': _semantic_pack_sha256(pack),
+        'source_evidence': pack.get('source_evidence'),
+        'sense_count': len(pack.get('sense_inventory') or []),
+        'sense_anchors': anchors,
+        'tm_hits': tm_hits,
+        'hard_flags': pack.get('hard_flags') or {},
+        'det': pack.get('det') or {},
+        'route_hint': pack.get('route_hint'),
+        'tm_policy': {
+            'may_write': False,
+            'writer': 'promoter_only',
+            'rule': 'R4.3a',
+            'fuzzy_is_advisory': True,
+            'exact_content_requires_promoter': True,
+        },
+        'question_scope': {
+            'can_answer_now': ['Q1', 'Q3', 'Q5'],
+            'promoter_decides': ['Q2'],
+            'cannot_answer': ['N1', 'N2', 'N4', 'N11'],
+        },
+        'promotable': False,
+    }
+    value['context_sha256'] = _sha256(_canonical_bytes(value))
+    return value
+
+
+def verify_compact_context(value: dict) -> dict:
+    if not isinstance(value, dict) or value.get('schema') != CONTEXT_SCHEMA_ID:
+        raise SystemExit('prep_pack: compact context schema mismatch')
+    claimed = value.get('context_sha256')
+    unsigned = dict(value)
+    unsigned.pop('context_sha256', None)
+    if claimed != _sha256(_canonical_bytes(unsigned)):
+        raise SystemExit('prep_pack: compact context hash mismatch')
+    policy = value.get('tm_policy') or {}
+    if value.get('promotable') is not False or policy.get('may_write') is not False \
+            or policy.get('writer') != 'promoter_only' \
+            or policy.get('rule') != 'R4.3a' \
+            or policy.get('fuzzy_is_advisory') is not True \
+            or policy.get('exact_content_requires_promoter') is not True:
+        raise SystemExit('prep_pack: compact context crossed the TM fence')
+    for hit in value.get('tm_hits') or []:
+        exact_content = hit.get('match_type') == 'exact_content_sha'
+        if hit.get('may_auto_reuse') is not exact_content \
+                or hit.get('advisory_only') is exact_content \
+                or hit.get('decision_authority') != 'promoter_only':
+            raise SystemExit('prep_pack: compact context contains invalid TM authority')
+    return value
+
+
+def write_compact_context(out_dir: str, pack: dict) -> str:
+    value = verify_compact_context(compact_context(pack))
+    os.makedirs(out_dir, exist_ok=True)
+    try:
+        from safe_filename import safe_name  # noqa: WPS433
+        stem = safe_name(pack['key1'])
+    except Exception:  # noqa: BLE001
+        stem = pack['key1']
+    path = os.path.join(out_dir, '%s.context.json' % stem)
+    encoded = json.dumps(value, ensure_ascii=False, indent=1) + '\n'
+    if os.path.exists(path):
+        with open(path, encoding='utf-8') as handle:
+            if handle.read() != encoded:
+                raise SystemExit('prep_pack: existing compact context differs: %s' % path)
+        return path
+    with open(path, 'x', encoding='utf-8', newline='\n') as handle:
+        handle.write(encoded)
     return path
 
 
@@ -1046,6 +1263,10 @@ def selftest() -> int:
         assert p['sense_inventory'][0]['de_anchor']
         assert p['tm_fuzzy_hits'][0]['match_type'] in ('exact_key1', 'exact_content_sha')
         assert p['tm_fuzzy_hits'][0]['score'] == 1.0
+        if p['tm_fuzzy_hits'][0]['match_type'] == 'exact_key1':
+            assert p['tm_fuzzy_hits'][0]['advisory_only'] is True
+            assert p['tm_fuzzy_hits'][0]['may_auto_reuse'] is False
+        assert p['tm_fuzzy_hits'][0]['decision_authority'] == 'promoter_only'
         # neighbor kAlaka should appear in fuzzy list
         fuzzy_keys = {h['key1'] for h in p['tm_fuzzy_hits']}
         assert 'kAlaka' in fuzzy_keys or len(p['tm_fuzzy_hits']) >= 1
@@ -1082,6 +1303,62 @@ def selftest() -> int:
         assert p4['citation_normalize']
         assert p4['store_write'] is False
         assert p4['det']['claude'] is False
+
+        # Frozen manifest inputs close the gitignored-input/no_pwg gap and bind
+        # the compact seed to exact source bytes.
+        manifest_path = os.path.join(td, 'manifest.json')
+        manifest = {
+            'inputs': {
+                'manifestOnly': {
+                    'skeleton': '1〉 {%Quelle%} <ls>R.</ls> 2〉 {%Ziel%}',
+                    'portrait': '[]',
+                    'source_senses': 2,
+                    'complexity': {'len_bytes': 44, 'n_senses': 2},
+                },
+            },
+        }
+        with open(manifest_path, 'w', encoding='utf-8', newline='\n') as handle:
+            json.dump(manifest, handle, ensure_ascii=False)
+        manifest_idx = load_manifest_index(manifest_path)
+        p_manifest = fill_one(
+            'manifestOnly', model=ds.DEFAULT_MODEL, payload_idx=manifest_idx,
+            store_idx={'by_key': {}, 'all_keys': []}, input_dir=os.path.join(td, 'absent'))
+        assert p_manifest['hard_flags']['no_pwg'] is False
+        assert len(p_manifest['sense_inventory']) == 2
+        assert p_manifest['source_evidence']['kind'] == 'execution_manifest'
+        assert len(p_manifest['source_evidence']['sha256']) == 64
+
+        context = compact_context(p_manifest)
+        assert verify_compact_context(context) is context
+        assert context == compact_context(p_manifest), 'compact seed must replay byte-identically'
+        later_pack = json.loads(json.dumps(p_manifest))
+        later_pack['produced_at'] += 1000
+        assert context == compact_context(later_pack), 'wall clock must not perturb context bytes'
+        assert context['promotable'] is False
+        assert context['tm_policy']['may_write'] is False
+        context_dir = os.path.join(td, 'contexts')
+        context_path = write_compact_context(context_dir, p_manifest)
+        assert write_compact_context(context_dir, p_manifest) == context_path
+        tampered = json.loads(json.dumps(p_manifest))
+        tampered['tm_fence']['may_write'] = True
+        try:
+            compact_context(tampered)
+            raise AssertionError('compact context must refuse a writable prep pack')
+        except SystemExit as exc:
+            assert 'fence' in str(exc)
+
+        forged_context = json.loads(json.dumps(context))
+        forged_context['tm_hits'] = [{
+            'match_type': 'fuzzy_key', 'may_auto_reuse': True,
+            'advisory_only': False, 'decision_authority': 'promoter_only',
+        }]
+        forged_context.pop('context_sha256')
+        forged_context['context_sha256'] = _sha256(_canonical_bytes(forged_context))
+        try:
+            verify_compact_context(forged_context)
+            raise AssertionError('re-hashed fuzzy authority forgery must be refused')
+        except SystemExit as exc:
+            assert 'authority' in str(exc)
 
         # full det_gate with skeleton tokens + ru_skeleton draft
         p_draft = empty_pack('tokKey', mode='fill')
@@ -1162,6 +1439,8 @@ def main(argv=None) -> int:
                     help='H1210-style worklist JSON with a keys[] array')
     ap.add_argument('--payload', default=None,
                     help='h1209 slice_payload.json (cards with card_block / source_senses)')
+    ap.add_argument('--manifest', default=None,
+                    help='manifest-v2 JSON; consumes exact inputs[] source bytes offline')
     ap.add_argument('--store', default=None,
                     help='pwg_ru_translated.jsonl (read-only TM/sense source)')
     ap.add_argument('--input-dir', default=None,
@@ -1169,6 +1448,8 @@ def main(argv=None) -> int:
     ap.add_argument('--keys-file', default=None)
     ap.add_argument('--keys', default=None, help='comma-separated key1 list')
     ap.add_argument('--out-dir', default=None, help='directory for prep/{key}.json')
+    ap.add_argument('--context-out-dir', default=None,
+                    help='also emit sealed compact Claude context seeds')
     ap.add_argument('--limit', type=int, default=None)
     ap.add_argument('--model', default=None)
     ap.add_argument('--env-file', default=None)
@@ -1210,9 +1491,14 @@ def main(argv=None) -> int:
         print('gate-only: ok=%d fail=%d (claude=never)' % (n_ok, n_bad))
         return 0
 
+    manifest_idx = {} if args.dry else load_manifest_index(args.manifest)
     keys = load_keys(args)
+    if not keys and manifest_idx:
+        keys = list(manifest_idx)
+        if args.limit is not None:
+            keys = keys[:args.limit]
     if not keys:
-        ap.error('no keys — pass --worklist, --payload, --keys-file, or --keys')
+        ap.error('no keys — pass --manifest, --worklist, --payload, --keys-file, or --keys')
     model = args.model or os.environ.get('DEEPSEEK_MODEL') or ds.DEFAULT_MODEL
 
     # Default store: main-checkout canonical path when present.
@@ -1237,6 +1523,10 @@ def main(argv=None) -> int:
                 break
 
     payload_idx = {} if args.dry else load_payload_index(args.payload)
+    if not args.dry:
+        # Manifest inputs are the frozen execution source and therefore win
+        # over a coincidentally supplied older slice payload.
+        payload_idx.update(manifest_idx)
     store_idx = {'by_key': {}, 'all_keys': []}
     if not args.dry and store_path:
         print('store: %s' % store_path, flush=True)
@@ -1260,6 +1550,13 @@ def main(argv=None) -> int:
                              input_dir=input_dir, run_gate=run_gate)
         mode = 'fill'
 
+    context_paths = []
+    if args.context_out_dir:
+        for path in paths:
+            with open(path, encoding='utf-8') as handle:
+                context_paths.append(write_compact_context(
+                    args.context_out_dir, json.load(handle)))
+
     # Summary
     n_senses = n_tm = n_flag = n_gate_ok = n_gate_fail = 0
     for p in paths:
@@ -1281,6 +1578,9 @@ def main(argv=None) -> int:
           % (n_senses, n_tm, n_flag))
     print('  free det_gate: ok=%d fail=%d claude=never'
           % (n_gate_ok, n_gate_fail))
+    if context_paths:
+        print('  compact contexts: %d under %s (promotable=false)'
+              % (len(context_paths), args.context_out_dir))
     for p in paths[:5]:
         print('  ', p)
     if len(paths) > 5:

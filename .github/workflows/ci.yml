@@ -102,6 +102,8 @@ jobs:
             RussianTranslation/src/pilot/call_reservation.py \
             RussianTranslation/src/pilot/usage_accounting.py \
             RussianTranslation/src/pilot/pwg_batch.py \
+            RussianTranslation/src/pilot/h1210/prep_pack.py \
+            RussianTranslation/src/pilot/h1210/tm_question_catalog_selftest.py \
             RussianTranslation/src/pilot/headless_worker.py \
             RussianTranslation/src/pilot/max_account_orchestrator.py \
             RussianTranslation/src/pilot/bounded_staged_run.py \
@@ -230,6 +232,8 @@ jobs:
           python src/pilot/gateway_canary_contract_selftest.py
           python src/pilot/route_compare_selftest.py
           python src/pilot/pwg_batch_selftest.py
+          python src/pilot/h1210/prep_pack.py --selftest
+          python src/pilot/h1210/tm_question_catalog_selftest.py
           python src/pilot/headless_worker_selftest.py
           python src/pilot/execution_contract_selftest.py
           python src/pilot/max_account_orchestrator_selftest.py
