@@ -1,6 +1,6 @@
 # GAPS — the Sanskrit-data known-unknowns frontier
 
-_Created: 08-07-2026 · Last updated: 27-07-2026_
+_Created: 08-07-2026 · Last updated: 12-08-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is what is *known*. This file is its **negative space** — the act FINDINGS cannot hold: **not-yet-knowing**, the frontier of things we have explicitly NOT measured. The moment a gap is measured, it **graduates** to a FINDINGS row (delete it here, cite the finding there). One of the seven episteme registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md); the full set is on the [episteme dashboard](https://gasyoun.github.io/SanskritLexicography/episteme/). Its infra twin is [`Uprava/GAPS.md`](https://github.com/gasyoun/Uprava/blob/main/GAPS.md).
 
@@ -150,6 +150,14 @@ Why it matters: the `-ī` bucket of the nominal grid (E51, 65,332 tokens) mixes 
 Blocker: method/signal, not data — DCS tags case, number and gender and nothing about stem shape or syllable count; the citation form is all there is, and it is ambiguous exactly where the split matters. H1472 deliberately made no guess rather than encode a plausible-looking rule.
 How to close: bring an external lexical signal — syllable count off a transliteration-aware segmenter for the `-ī` split, and a dictionary class tag (MW/PWG grammar field, or `lemma.grammar` extended) for the `-at`/`-ant` merge. Then re-bucket, re-run the G2 reconciliation, and the row graduates to a FINDINGS measurement of how big each true class is.
 > **Source:** ✍️ [H1472](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1472-Opus_VisualDCS_nominal-paradigm-case-number-dashboard_22.07.26.md), 27-07-2026 (Opus 5 `claude-opus-5[1m]`); registered via /artifact-propagate epistemic pass.
+
+### §15. BLI B1 gold pass-1 labels not yet collected — real P@1/P@5/MRR on the stratified frame is unmeasured
+🟡 ✍️ **We do NOT yet have MG's pass-1 Russian equivalence labels for the 500-row stratified BLI frame, so H2402's per-stratum scorer has only ever run against a fixture.**
+Why it matters: the whole point of [H2401](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2401-Fable_SanskritLexicography_bli-b1-gold-set-design_07.08.26.md)'s frame is a *measured* per-(band × POS) P@1/P@5/MRR for `corpus_lexicon.jsonl` — until labels land, ACL roadmap B1 has a scorer and a frame but no real number.
+Blocker: human annotation — 500 cards, one sitting, via the review sheet.
+How to close: MG votes [`sanskritlexicography-bli_gold_b1_500_review.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/build_bli_gold_b1_500_sheet.py) (row in [`Uprava/REVIEW_SHEETS_INDEX.md`](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md)), the decisions land as `gold_ru`, then [`bli_score_stratified.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/bli_score_stratified.py) runs against the real frame instead of its fixture.
+↔ Interlinks: closes once [H2402](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2402-Sonnet_SanskritLexicography_bli-b1-p1-mrr-scorer_07.08.26.md)'s scorer re-runs on real labels; pass-2 (frozen model as annotator 2) is a separate, later handoff per protocol §5.
+> **Source:** ✍️ [H2551](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2551-Sonnet_SanskritLexicography_bli-b1-gold-annotation-sheet-500_10.08.26.md), 12-08-2026 (Sonnet 5 `claude-sonnet-5`); registered via /artifact-propagate.
 
 ---
 
