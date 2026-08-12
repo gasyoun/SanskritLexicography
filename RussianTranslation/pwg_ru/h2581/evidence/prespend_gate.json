@@ -1,0 +1,51 @@
+{
+  "all_selftests_pass": true,
+  "dispatches_made": 0,
+  "gate_verdict": "ZERO_CALL_STOP",
+  "handoff": "H2581",
+  "offline_selftests": [
+    {
+      "exit_code": 0,
+      "expected_groups": "3/3",
+      "passed": true,
+      "selftest": "gateway_canary_contract_selftest",
+      "verdict_line": "gateway_canary_contract_selftest: PASS (3/3 groups)"
+    },
+    {
+      "exit_code": 0,
+      "expected_groups": "9/9",
+      "passed": true,
+      "selftest": "gateway_attestation_selftest",
+      "verdict_line": "gateway_attestation_selftest: PASS (9/9 groups)"
+    },
+    {
+      "exit_code": 0,
+      "expected_groups": "11/11",
+      "passed": true,
+      "selftest": "gateway_external_selftest",
+      "verdict_line": "  semantic signatures: request=a1f3152184a29d5042817e1c92e96e7c7ef483c593178f972f91fab21c5fe806 schema=d695c9f4df763e9592c22d2b990c21dfdeeabfdf3c0695eee8e9ba711d07f9d0 result=d0c45566293f713f3e248bb5626518edd6e60c3ee29e781ddf9451c5e4e3021d"
+    },
+    {
+      "exit_code": 0,
+      "expected_groups": "10/10",
+      "passed": true,
+      "selftest": "gateway_route_selftest",
+      "verdict_line": "  result hash, non-promotable synthetic output, credential fail-closed."
+    }
+  ],
+  "reservations_made": 0,
+  "route_binding": {
+    "anthropic_env_names_present": [],
+    "credential_shape": {
+      "api_key_present": false,
+      "auth_token_present": false,
+      "base_url_is_gateway": false,
+      "base_url_present": false
+    },
+    "gateway_base_url": "https://router.cheap",
+    "route_under_qualification": "router-cheap-agent",
+    "session_is_gateway_bound": false
+  },
+  "schema": "pwg.h2581_prespend_gate.v1",
+  "stop_reason": "session_not_bound_to_gateway: sealing a dispatch from this session as route=router-cheap-agent would be a false provenance claim"
+}
