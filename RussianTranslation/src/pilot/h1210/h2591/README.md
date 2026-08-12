@@ -8,32 +8,99 @@ Sealed artifacts for [H2591](https://github.com/gasyoun/Uprava/blob/main/handoff
 · hermetic matrix:
 [prep_context_compare_selftest.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/prep_context_compare_selftest.py).
 
-## Status — `BLOCKED_ON_BILLING_ATTRIBUTION`, zero Claude calls spent
+## Status — run EXECUTED 12-08-2026, verdict **INCONCLUSIVE**
 
-Everything offline is built, sealed and green. **No paid call was made**, because the
-handoff's own eighth precondition fires:
+A human authorized the spend with billing explicitly classified UNKNOWN
+(`--check --authorize-unknown-billing`), all eight `--check` conditions passed with **0
+transport calls**, and the sealed order ran to completion: **16 of 16 reserved calls, no
+stop condition, every reservation finalized exactly once.**
 
-> affirmative local evidence that the Max Agent SDK credit was claimed; otherwise
-> classify billing as unknown and require human authorization before `--execute`.
+The verdict is **INCONCLUSIVE**, and the reason is the most useful thing this run produced.
 
-There is no such evidence anywhere in the repo, and that is not an oversight in this
-pass — see *The billing gate* below. `--execute` therefore refuses, by design.
+| | arm A (baseline) | arm B (PREP) |
+|---|---|---|
+| audited pass | 4 / 8 | 4 / 8 |
+| schema returned | 5 / 8 | 5 / 8 |
+| wall total | 2 092 s | 1 529 s |
+| calls with zero-filled usage | 4 | 3 |
+| calls with unattested model | 1 | 0 |
 
-| Condition (handoff `--check` list) | Verdict |
-|---|---|
-| 1 · one immutable manifest source + manifest SHA per key | ✅ |
-| 2 · valid, hash-replay-identical `pwg.prep_context.v1` | ✅ |
-| 3 · identical base prompt bytes, schema, model id, output limit across arms | ✅ |
-| 4 · arm A = production prompt unchanged | ✅ |
-| 5 · arm B = same prompt + one canonical delimited PREP block | ✅ |
-| 6 · `promotable=false`, `tm_policy.may_write=false`, fuzzy hits advisory | ✅ |
-| 7 · fresh reservation ledger, ceiling 16 | ✅ |
-| 8 · Max Agent SDK credit claim evidence | ⛔ **blocked** — billing UNKNOWN |
+### Why the first receipt said GO, and why that was wrong
 
-Offline transport calls attempted during `--check`: **0** (proven by a socket trap that
-counts and refuses, not by assertion — [check.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2591/check.json) `network_calls`).
+The GO rule is *lose ≤1 audited card **and** improve wall or non-cache tokens by >10 %*.
+PREP lost zero cards and showed a **+26.9 % wall-time margin**, so the arithmetic fired GO.
+Decomposing the margin kills it:
+
+* arm A's three failed calls burned **967 s**; arm B's three burned **625 s**. The margin is
+  mostly the difference between how long each arm took to **fail**, which says nothing about
+  translating a card.
+* On the four cards both arms actually returned schema for, the paired margin falls to
+  **+20.9 %** and is dominated by one card (`spfS`, −247 s) against another going the other
+  way (`SvAsa`, +96 s). n=4, two signs.
+
+### The token axis does not exist — zero-filled usage
+
+**Seven of sixteen calls returned every usage counter zeroed** — including two arm-A calls
+that produced full cards passing the deterministic audit at coverage 1.0, which is
+arithmetically impossible.
+
+`usage_evaluable()` checked the **shape** of the usage block, not whether it said anything,
+so a zero-filled dict passed as present usage. That is worse than absent usage: it silently
+deflates whichever arm receives it, so a token comparison built over it reads as a
+measurement instead of as a hole. The reported "PREP costs 2.4× the non-cache tokens" is a
+hole, not a finding. **The run should have stopped at call 1.**
+
+Fixed in the same pass: all-zero usage now reads as missing (stopping the run), and any
+usage hole or unattested model forces INCONCLUSIVE ahead of the GO arithmetic. Pinned by
+`test_zero_filled_usage_is_missing_usage_not_a_measurement` (matrix now 13/13).
+
+### What the run did establish
+
+* **The markup-heavy stratum is unqualifiable at this call shape.** `Srama` and `samIpa`
+  (234 placeholders each) returned non-JSON at char 0 in **both** arms, at 141–324 s. The
+  card defeats the whole-card call regardless of context — a statement about production's
+  presplit lane, not about context design.
+* **The two asymmetric pairs cancel.** `vyavasTA` passed only in B, `SudDi` only in A, at
+  near-identical wall times. The silent-empty failures look stochastic, not arm-driven.
+* **A real content defect:** `rAtra` arm A emitted `{T2}`, a placeholder the source never
+  contained, and dropped `{T72}`/`{T73}`. Both arms failed that card. Exactly the class the
+  deterministic gate exists for.
+* **Billing:** `unknown_gateway` throughout, as authorized. `observed_cost_usd` is 0 because
+  there is no observed cash under a Max credit — that 0 is **not** "free".
+
+### Per-call record
+
+| # | arm | key | wall | outcome | model |
+|---|---|---|---|---|---|
+| 01 | A | SvAsa | 358.9 s | audited ✅ cov 1.0 | attested |
+| 02 | B | SvAsa | 454.9 s | audited ✅ cov 1.0 | attested |
+| 03 | B | spfS | 169.8 s | audited ✅ cov 1.0 | attested |
+| 04 | A | spfS | 416.8 s | audited ✅ cov 1.0 | attested |
+| 05 | A | Srama | 300.9 s | `unstructured_result` | attested |
+| 06 | B | Srama | 291.5 s | `unstructured_result` | attested |
+| 07 | B | samIpa | 141.1 s | `unstructured_result` | attested |
+| 08 | A | samIpa | 323.9 s | `unstructured_result` | attested |
+| 09 | A | vyavasTA | 342.5 s | `unstructured_result` | **unattested** |
+| 10 | B | vyavasTA | 168.9 s | audited ✅ cov 1.0 | attested |
+| 11 | B | SudDi | 192.6 s | `unstructured_result` | attested |
+| 12 | A | SudDi | 194.7 s | audited ✅ cov 1.0 | attested |
+| 13 | A | rAtra | 65.8 s | audit fail cov 0.99 | attested |
+| 14 | B | rAtra | 60.2 s | audit fail cov 0.94 | attested |
+| 15 | B | zoqaSan | 50.8 s | audited ✅ cov 1.0 | attested |
+| 16 | A | zoqaSan | 88.8 s | audited ✅ cov 1.0 | attested |
+
+### Driver defects this run exposed (fix before any larger experiment)
+
+1. **Zero-filled usage passed as present usage** — fixed here.
+2. **Envelopes discard the raw result text.** For a content failure the returned string *is*
+   the evidence, and only the parse error was kept, so calls 5–8/9/11's actual output is
+   unrecoverable. Not fixed here (it would change the envelope schema mid-run).
+3. **An absent `returned_model` does not stop the run.** Absence is not substitution, so the
+   stop condition reads it as clean; call 09 is a paid, unattested call. It now forces
+   INCONCLUSIVE at receipt time, but it should stop at call time.
 
 ## Evidence in this directory
+
 
 | File | What it pins |
 |---|---|
@@ -43,7 +110,9 @@ counts and refuses, not by assertion — [check.json](https://github.com/gasyoun
 | [check.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2591/check.json) | the offline fail-closed report, including the blocked condition |
 | `contexts/` | eight sealed `pwg.prep_context.v1` seeds, manifest-sourced |
 | `prep/` | the full prep sidecars those contexts were compiled from |
-| `call_reservation.json` | the fresh ledger, ceiling 16, zero spent |
+| `call_reservation.json` | the ledger — 16 of 16 spent, all finalized exactly once |
+| `envelopes/` | 16 immutable per-call envelopes with usage, timings and audit verdicts |
+| [comparison_receipt.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2591/comparison_receipt.json) | the sealed `pwg.prep_context_comparison.v1` receipt — verdict INCONCLUSIVE |
 
 ## The eight cards, and how they were chosen
 
@@ -91,7 +160,7 @@ bind immutable bytes can now say so. Pinned by a new `prep_pack --selftest` case
 both directions (raw wins by default; the flag flips the source kind and makes the
 semantic PREP hash independent of which raws sit on this disk).
 
-## The billing gate — why it cannot be cleared from inside a session
+## The billing gate — cleared by human authorization on 12-08-2026
 
 `headless_worker` reads `execution.agent_sdk_credit_claimed` /
 `agent_sdk_credit_claim_evidence` from the manifest, and **nothing in the repo ever writes
@@ -101,8 +170,9 @@ all. `usage_accounting.build` then deliberately downgrades the billing mode to
 `unknown_gateway` and nulls the list equivalent.
 
 So today **every** Max-route call in this pipeline is accounted as UNKNOWN billing, and
-the credit-accounting path added for it is dormant. For H2591 that means the eighth
-precondition can only be cleared by a human, in one of two ways:
+the credit-accounting path added for it is dormant. For H2591 the eighth precondition was cleared by **route (a)** — a human authorized the
+spend with billing explicitly classified UNKNOWN. Route (b) remains the better standing
+fix and is still open:
 
 ```
 # (a) authorize the spend with billing explicitly classified UNKNOWN

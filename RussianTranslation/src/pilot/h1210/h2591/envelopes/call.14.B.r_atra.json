@@ -1,0 +1,56 @@
+{
+ "arm": "B",
+ "audit": {
+  "audited": false,
+  "coverage": 0.94,
+  "defects": [
+   "fidelity",
+   "translation-fidelity"
+  ],
+  "issues": [
+   "fidelity: masked spans missing from senses' german: {T82},{T68},{T69},{T70},{T71} — EVERY {Tn} from the source must appear in a sense's german AND russian, in source order; card.notes must NOT hold source {Tn} spans (notes is never unmasked, so content parked there is LOST)",
+   "translation-fidelity: masked spans missing from senses' russian: {T82},{T68},{T69},{T70},{T71} — the russian text must carry the same {Tn} spans as the german (citations/Sanskrit are language-independent)"
+  ],
+  "schema_ok": true
+ },
+ "context_sha256": "7e37e148eeeab5ee87134f1dcf7027f9dacc50db57b1eb693431e20ad4259b21",
+ "detail": null,
+ "failure_class": null,
+ "key1": "rAtra",
+ "ordinal": 14,
+ "pair": 6,
+ "plan_sha256": "15f1f3a6db141828f4e91c1e2298180fced8fd07b87f818793a666b7cbf3f064",
+ "prompt_bytes": 20337,
+ "prompt_sha256": "c99544fb5ebbb8789f4c1a5bb22e8d691356deba1b80c79d5370a488f0b3e3ac",
+ "requested_model": "claude-opus-5",
+ "result_sha256": "7e57492316e79c0e96cf728c0bd66f5d48b923c733d402b3035b280edd43e3cc",
+ "returncode": 0,
+ "returned_model": "claude-opus-5",
+ "schema": "pwg.prep_context_comparison_envelope.v1",
+ "telemetry": {
+  "accounting": {
+   "billing_mode": "unknown_gateway",
+   "cache_creation_tokens": 31393,
+   "cache_read_tokens": 24286,
+   "credit_claim_evidence": null,
+   "credit_equivalent_usd": null,
+   "input_tokens": 2,
+   "list_equivalent_usd": null,
+   "observed_cash_usd": null,
+   "output_tokens": 3739,
+   "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+   "schema": "pwg.usage_accounting.v1",
+   "usage_evaluable": true
+  },
+  "cache_creation_tokens": 31393,
+  "cache_read_tokens": 24286,
+  "cost_evaluable": false,
+  "duration_api_ms": 48710,
+  "duration_ms": 51978,
+  "input_tokens": 2,
+  "observed_cost_usd": 0,
+  "output_tokens": 3739,
+  "subagent_tokens": 59420
+ },
+ "wall_ms": 60174
+}

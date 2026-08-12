@@ -345,6 +345,48 @@ def test_receipt_go_no_go_inconclusive():
         print('  ok   receipt arithmetic: GO / NO-GO / INCONCLUSIVE all reachable')
 
 
+def test_zero_filled_usage_is_missing_usage_not_a_measurement():
+    """H2591 measured run: 7/16 calls returned every counter zeroed — two of them after
+    producing a card that passed the audit at coverage 1.0. `usage_evaluable` checked the
+    SHAPE of the usage block and passed them, so the run spent all 16 calls and the receipt
+    graded a token comparison built over holes. A completed call always consumes tokens.
+    """
+    zeroed = {'accounting': {'usage_evaluable': True, 'input_tokens': 0, 'output_tokens': 0,
+                             'cache_read_tokens': 0, 'cache_creation_tokens': 0},
+              'input_tokens': 0, 'output_tokens': 0, 'cache_read_tokens': 0,
+              'cache_creation_tokens': 0, 'cost_evaluable': False}
+    assert not pcc.usage_evaluable(zeroed), 'all-zero usage must read as MISSING'
+    real = dict(zeroed, output_tokens=40417)
+    real['accounting'] = dict(zeroed['accounting'], output_tokens=40417)
+    assert pcc.usage_evaluable(real), 'a real credit-mode call must stay evaluable'
+
+    with tempfile.TemporaryDirectory() as tmp:
+        plan, _mp, _m, _cd = _plan(tmp)
+        report = pcc.check(plan, ledger_path=os.path.join(tmp, 'chk.json'), run_id='holes')
+
+        # The run now stops at the first zero-filled call instead of spending sixteen.
+        def zero_usage_caller(argv, prompt, timeout):
+            card = _good_card(KEYS[0], '{T1}')
+            wrapper = _wrapper(cards=[card])
+            wrapper['usage'] = {k: 0 for k in wrapper['usage']}
+            return pcc.CallResult(returncode=0, timed_out=False, wall_ms=1000,
+                                  stdout=json.dumps(wrapper), stderr='')
+
+        run = _run(tmp, plan, zero_usage_caller, run_id='zero', out='zero')
+        assert run['stopped'] and 'missing_usage' in run['stopped'], run['stopped']
+        assert run['calls_spent'] == 1, 'a holed measurement must not spend the whole ceiling'
+
+        # And a complete run carrying any hole can never be graded GO.
+        holed = _run(tmp, plan, _caller_factory(wall_ms=1000, prep_wall_ms=100),
+                     run_id='graded', out='graded')
+        for envelope in holed['envelopes'][:1]:
+            envelope['telemetry'] = zeroed
+        receipt = pcc.build_receipt(plan, holed, check_report=report)
+        assert receipt['evidence_holes']['usage_unevaluable_calls'] >= 1
+        assert receipt['verdict'] == 'INCONCLUSIVE', receipt['verdict']
+        print('  ok   zero-filled usage is a hole, not a measurement; holes force INCONCLUSIVE')
+
+
 def test_selection_rule_is_deterministic_and_stratified():
     pool = {}
     for index in range(40):
@@ -397,6 +439,7 @@ CASES = [
     test_model_substitution_stops_the_run,
     test_missing_usage_stops_the_run,
     test_receipt_go_no_go_inconclusive,
+    test_zero_filled_usage_is_missing_usage_not_a_measurement,
     test_selection_rule_is_deterministic_and_stratified,
     test_offline_check_makes_no_transport_call,
 ]

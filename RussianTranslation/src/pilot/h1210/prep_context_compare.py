@@ -427,10 +427,37 @@ def build_plan(manifest_path: str, context_dir: str, *, model: str = REQUIRED_MO
     return plan
 
 
+def resolve_manifest(plan: dict, manifest_path: str | None = None) -> str:
+    """Locate the sealed manifest, verifying it by CONTENT rather than by path.
+
+    The plan records the absolute path it was sealed from, which is a fact about one
+    machine's disk at one moment — a per-handoff worktree that gets garbage-collected the
+    moment its PR lands. Identity, though, is `manifest_sha256`, so a relocated checkout is
+    not a broken plan. Resolution order: an explicit `--manifest`, the sealed absolute path,
+    then the same basename beside the plan. Whichever is found must hash to the sealed
+    digest — a path override can move the file, never change which bytes count.
+    """
+    sealed = plan['manifest_path']
+    candidates = [manifest_path] if manifest_path else []
+    candidates.append(sealed)
+    candidates.append(os.path.join(os.path.dirname(os.path.abspath(plan['__plan_file__']))
+                                   if plan.get('__plan_file__') else os.getcwd(),
+                                   os.path.basename(sealed)))
+    for candidate in candidates:
+        if candidate and os.path.exists(candidate):
+            if sha256_file(candidate) != plan['manifest_sha256']:
+                raise FenceFailure(
+                    'manifest at %s does not match the sealed SHA-256 — these are different '
+                    'bytes, not a relocated file' % candidate)
+            return candidate
+    raise FenceFailure('sealed manifest not found; tried: %r' % [c for c in candidates if c])
+
+
 def verify_plan_hash(plan: dict) -> None:
     claimed = plan.get('plan_sha256')
     recomputed = sha256_bytes(canonical_bytes(
-        {k: v for k, v in plan.items() if k != 'plan_sha256'}))
+        {k: v for k, v in plan.items()
+         if k not in ('plan_sha256', '__plan_file__')}))
     if claimed != recomputed:
         raise FenceFailure('plan hash mismatch: sealed %r recomputed %r' % (claimed, recomputed))
 
@@ -454,7 +481,7 @@ def credit_evidence(manifest: dict) -> tuple[bool, str | None]:
 # --------------------------------------------------------------------------- check
 
 def check(plan: dict, *, ledger_path: str, run_id: str, authorize_unknown_billing: bool = False,
-          forbid_network: bool = True) -> dict:
+          forbid_network: bool = True, manifest_path: str | None = None) -> dict:
     """Offline, fail-closed. Returns the check report; raises FenceFailure on any breach.
 
     ``forbid_network`` installs a socket trap for the duration, so "this made no transport
@@ -468,10 +495,10 @@ def check(plan: dict, *, ledger_path: str, run_id: str, authorize_unknown_billin
     if trap:
         trap.install()
     try:
-        with open(plan['manifest_path'], encoding='utf-8') as handle:
+        resolved = resolve_manifest(plan, manifest_path)
+        report['manifest_resolved_at'] = resolved
+        with open(resolved, encoding='utf-8') as handle:
             manifest = json.load(handle)
-        if sha256_file(plan['manifest_path']) != plan['manifest_sha256']:
-            raise FenceFailure('manifest changed since the plan was sealed')
 
         # (1) one immutable manifest source + manifest SHA per key
         for key in plan['keys']:
@@ -489,7 +516,7 @@ def check(plan: dict, *, ledger_path: str, run_id: str, authorize_unknown_billin
 
         # (2) valid, hash-replay-identical pwg.prep_context.v1
         contexts = {}
-        base = os.path.dirname(plan['manifest_path'])
+        base = os.path.dirname(resolved)
         for key in plan['keys']:
             path = os.path.normpath(os.path.join(base, plan['cards'][key]['context_path']))
             with open(path, encoding='utf-8') as handle:
@@ -666,15 +693,14 @@ def audit_result(plan: dict, key: str, structured: dict) -> dict:
 
 def execute(plan: dict, *, ledger_path: str, run_id: str, out_dir: str,
             caller=cli_caller, claude_bin: str = 'claude', timeout: float = 1800.0,
-            billing: dict | None = None) -> dict:
+            billing: dict | None = None, manifest_path: str | None = None) -> dict:
     """Run the sealed order. Reserve BEFORE every call; finalize exactly once, after."""
     verify_plan_hash(plan)
-    with open(plan['manifest_path'], encoding='utf-8') as handle:
+    resolved = resolve_manifest(plan, manifest_path)
+    with open(resolved, encoding='utf-8') as handle:
         manifest = json.load(handle)
-    if sha256_file(plan['manifest_path']) != plan['manifest_sha256']:
-        raise FenceFailure('manifest changed since the plan was sealed')
     contexts = {}
-    base = os.path.dirname(plan['manifest_path'])
+    base = os.path.dirname(resolved)
     for key in plan['keys']:
         with open(os.path.normpath(os.path.join(base, plan['cards'][key]['context_path'])),
                   encoding='utf-8') as handle:
@@ -793,8 +819,20 @@ def usage_evaluable(telemetry: dict) -> bool:
     """
     accounting = telemetry.get('accounting')
     if isinstance(accounting, dict) and 'usage_evaluable' in accounting:
-        return accounting['usage_evaluable'] is True
-    return bool(telemetry.get('cost_evaluable'))
+        if accounting['usage_evaluable'] is not True:
+            return False
+    elif not telemetry.get('cost_evaluable'):
+        return False
+    # H2591 measured run: `usage_evaluable` checks the SHAPE of the usage block, not whether
+    # it says anything. Seven of sixteen calls came back with every counter zeroed — two of
+    # them having produced a full card that passed the deterministic audit at coverage 1.0,
+    # which is arithmetically impossible. A zero-filled dict is *missing* usage wearing the
+    # costume of present usage, and it is worse than an absent one: it silently deflates
+    # whichever arm receives it, so the token comparison reads as a measurement instead of
+    # as a hole. A completed call always consumes tokens; all-zero means the envelope did
+    # not report them.
+    return any(int(telemetry.get(name) or 0) > 0 for name in
+               ('input_tokens', 'output_tokens', 'cache_read_tokens', 'cache_creation_tokens'))
 
 
 def credit_equivalent(telemetry: dict) -> float:
@@ -838,6 +876,10 @@ def _arm_totals(envelopes: list[dict], arm: str) -> dict:
         classes[name] = classes.get(name, 0) + 1
     return {
         'calls': len(rows),
+        'usage_unevaluable_calls': sum(
+            1 for e in rows if not usage_evaluable(e.get('telemetry') or {})),
+        'unattested_model_calls': sum(
+            1 for e in rows if e.get('returned_model') != REQUIRED_MODEL),
         'audited_pass': sum(1 for e in finished if e['audit']['audited']),
         'schema_pass': sum(1 for e in finished if e['audit']['schema_ok']),
         'wall_ms_total': wall,
@@ -861,7 +903,16 @@ def build_receipt(plan: dict, run: dict, *, check_report: dict) -> dict:
     improves = (wall_gain is not None and wall_gain > 0.10) or \
                (token_gain is not None and token_gain > 0.10)
 
+    # A GO must rest on evidence that exists. Token totals built over calls whose usage came
+    # back zero-filled are not a measurement, and a wall-time margin is not a substitute:
+    # in the H2591 run the margin was mostly the difference between how long each arm's
+    # FAILED calls took to fail, which says nothing about translating a card. So any
+    # unevaluable usage or unattested model forces INCONCLUSIVE, ahead of the GO arithmetic.
+    holes = (arm_a['usage_unevaluable_calls'] + arm_b['usage_unevaluable_calls']
+             + arm_a['unattested_model_calls'] + arm_b['unattested_model_calls'])
     if not complete or (arm_a['audited_pass'] == 0 and arm_b['audited_pass'] == 0):
+        verdict = 'INCONCLUSIVE'
+    elif holes:
         verdict = 'INCONCLUSIVE'
     elif lost <= 1 and improves:
         verdict = 'GO'
@@ -899,6 +950,14 @@ def build_receipt(plan: dict, run: dict, *, check_report: dict) -> dict:
         },
         'billing': check_report.get('billing'),
         'go_rule': plan['go_rule'],
+        'evidence_holes': {
+            'usage_unevaluable_calls': (arm_a['usage_unevaluable_calls']
+                                        + arm_b['usage_unevaluable_calls']),
+            'unattested_model_calls': (arm_a['unattested_model_calls']
+                                       + arm_b['unattested_model_calls']),
+            'effect': ('any hole forces INCONCLUSIVE — a token comparison over zero-filled '
+                       'usage is a hole wearing the costume of a measurement'),
+        },
         'verdict': verdict,
         'promotion': {'store_written': False, 'tm_written': False,
                       'promotion_journal_written': False, 'production_default_changed': False},
@@ -927,6 +986,9 @@ def _load_plan(path: str) -> dict:
     with open(path, encoding='utf-8') as handle:
         plan = json.load(handle)
     verify_plan_hash(plan)
+    # Recorded AFTER the hash check and never re-hashed: where the plan happens to sit
+    # is context for resolution, not part of what the plan asserts.
+    plan['__plan_file__'] = os.path.abspath(path)
     return plan
 
 
@@ -991,7 +1053,7 @@ def main(argv=None) -> int:
         # because --execute refuses anything whose report is not ok.
         try:
             report = check(plan, ledger_path=os.path.join(out_dir, 'call_reservation.json'),
-                           run_id=args.run_id,
+                           run_id=args.run_id, manifest_path=args.manifest,
                            authorize_unknown_billing=args.authorize_unknown_billing)
         except (FenceFailure, SystemExit) as exc:
             report = dict(getattr(exc, 'report', None) or {})
@@ -1015,7 +1077,7 @@ def main(argv=None) -> int:
         run = execute(plan, ledger_path=os.path.join(out_dir, 'call_reservation.json'),
                       run_id=args.run_id, out_dir=os.path.join(out_dir, 'envelopes'),
                       claude_bin=args.claude_bin, timeout=args.timeout,
-                      billing=report.get('billing'))
+                      billing=report.get('billing'), manifest_path=args.manifest)
         print('calls spent %d/%d  stopped=%r' % (run['calls_spent'], MAX_CALLS, run['stopped']))
         return 0 if not run['stopped'] else 1
 
