@@ -1,0 +1,23 @@
+{
+ "schema": "pwg.call_reservation.v1",
+ "runs": {
+  "h2591": {
+   "max_calls": 16,
+   "calls_spent": 0,
+   "next_ordinal": 1,
+   "reservations": [],
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_read_tokens": 0,
+    "cache_creation_tokens": 0,
+    "subagent_tokens": 0,
+    "observed_cost_usd": 0.0,
+    "cost_evaluable": true,
+    "finalized_calls": 0,
+    "unevaluable_calls": 0,
+    "pending_calls": 0
+   }
+  }
+ }
+}

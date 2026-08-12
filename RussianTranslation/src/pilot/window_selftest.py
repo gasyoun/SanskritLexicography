@@ -8824,6 +8824,23 @@ def test_pwg_mask_gloss_lang_g1():
         fail('G1 residue missed translated Wilson EN: %r' % translated)
 
 
+def test_h2591_prep_context_compare_matrix():
+    """H2591: the baseline-vs-PREP comparison driver's hermetic matrix, in-window.
+
+    The driver spends real Claude calls, so every fence it enforces has to be provable
+    without one. `prep_context_compare_selftest.py` drives it through an injected caller
+    across prompt identity, context-hash replay, the TM fence, reservation exhaustion,
+    crash/resume, model substitution, missing usage, exact-once finalization and the
+    receipt's GO/NO-GO/INCONCLUSIVE arithmetic. Running it here means a later change to
+    `build_prompt`, `prep_pack.compact_context` or `call_reservation` that silently breaks
+    the qualification rig goes red in the full window, not on the money contour.
+    """
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'h1210'))
+    import prep_context_compare_selftest as pcc_selftest
+    if pcc_selftest.selftest() != 0:
+        fail('H2591 prep_context_compare hermetic matrix failed')
+
+
 def test_h2245_canary_manifest_builder():
     """H2245: the canary manifest builder's output shape is PINNED, offline.
 
@@ -9249,6 +9266,7 @@ def main():
         test_pwg_mask_german_homograph_not_latin_c8,
         test_pwg_mask_gloss_lang_g1,
         test_h2245_canary_manifest_builder,
+        test_h2591_prep_context_compare_matrix,
     ]
     # Per-test isolation. This used to be a bare `for test in tests: test()`, so the FIRST
     # failure aborted the process and every later test silently never ran. That is not
