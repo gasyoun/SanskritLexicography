@@ -58,6 +58,16 @@
         }
       }
     },
+    "source_evidence": {
+      "type": ["object", "null"],
+      "description": "Hash-bound source selected for the inventory; null only for dry/no-source packs",
+      "properties": {
+        "kind": { "enum": ["de_source", "execution_manifest", "slice_payload", "promoted_store"] },
+        "locator": { "type": ["string", "null"] },
+        "sha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+        "manifest_sha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
     "tm_fuzzy_hits": {
       "type": "array",
       "description": "Step [2]b TM fuzzy rank — READ-ONLY reuse candidates (not the TM fence)",
@@ -75,7 +85,11 @@
           "n_store_rows": { "type": ["integer", "null"] },
           "ru_preview": { "type": ["string", "null"] },
           "reuse_hint": { "type": "string" },
-          "raw_sha256": { "type": "string" }
+          "raw_sha256": { "type": "string" },
+          "evidence_sha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+          "may_auto_reuse": { "type": "boolean" },
+          "advisory_only": { "type": "boolean" },
+          "decision_authority": { "const": "promoter_only" }
         }
       }
     },

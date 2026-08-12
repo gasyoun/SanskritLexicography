@@ -1,0 +1,47 @@
+{
+  "schema": "pwg.tm_question_catalog.v1",
+  "updated": "2026-08-12",
+  "coverage": {
+    "written_pwg_exact_fragment": "live",
+    "written_parallel_derived": "live_private_or_derived_public",
+    "oral_transcript_units": "planned",
+    "raw_audio_asr": "out_of_scope"
+  },
+  "questions": [
+    {"id": "Q1", "status": "will_answer", "question": "Has this exact masked source already been translated?", "mechanism": "content-addressed exact card or fragment lookup", "modalities": ["written", "oral_transcript"], "authority": "deterministic_lookup"},
+    {"id": "Q2", "status": "will_answer", "question": "May an exact hit be reused automatically?", "mechanism": "exact gate plus trust precedence", "modalities": ["written", "oral_transcript"], "authority": "promoter_only"},
+    {"id": "Q3", "status": "will_answer", "question": "Which similar wording suggestions exist?", "mechanism": "fuzzy suggestion rank", "modalities": ["written", "oral_transcript"], "authority": "advisory_only"},
+    {"id": "Q4", "status": "will_answer", "question": "What curated Sanskrit-to-Russian term gloss exists?", "mechanism": "terminology dataset", "modalities": ["written", "oral_transcript"], "authority": "curated_dataset"},
+    {"id": "Q5", "status": "will_answer", "question": "What provenance, gate, and trust grade supports a unit?", "mechanism": "publication schema", "modalities": ["written", "oral_transcript"], "authority": "deterministic_metadata"},
+    {"id": "Q6", "status": "will_answer", "question": "Does graded TM context improve quality or speed?", "mechanism": "A6 controlled measurement", "modalities": ["written"], "authority": "experiment"},
+    {"id": "Q7", "status": "will_answer", "question": "Where do Sanskrit content words align in available parallel corpora?", "mechanism": "derived alignment layer", "modalities": ["written", "oral_transcript"], "authority": "alignment_pipeline"},
+
+    {"id": "N1", "status": "will_not_answer", "question": "Did Flash alone decide that this card is shippable?", "reason": "R4.1 forbids sole Flash promotion judgment"},
+    {"id": "N2", "status": "will_not_answer", "question": "May Flash write this unit into TM?", "reason": "R4.3a reserves writes to the promoter"},
+    {"id": "N3", "status": "will_not_answer", "question": "What does restricted Russian source text say in a public bundle?", "reason": "public derived-only rights partition"},
+    {"id": "N4", "status": "will_not_answer", "question": "Does needs_review mean cleared or correct?", "reason": "review status is not clearance"},
+    {"id": "N5", "status": "will_not_answer", "question": "May MW English be treated as Russian evidence?", "reason": "D4 and D9 forbid that evidence substitution"},
+    {"id": "N6", "status": "will_not_answer", "question": "Will this wave run retrieval-augmented decoding?", "reason": "roadmap non-goal until A6"},
+    {"id": "N7", "status": "will_not_answer", "question": "Will this TM define OntoLex or TEI modeling?", "reason": "owned by csl-standards"},
+    {"id": "N8", "status": "will_not_answer", "question": "Will this TM ingest GRETIL TEI prose internals?", "reason": "owned by SamudraManthanam"},
+    {"id": "N9", "status": "will_not_answer", "question": "Will a TM result auto-publish or mint a DOI?", "reason": "human publication fence"},
+    {"id": "N10", "status": "will_not_answer", "question": "Will raw audio be transcribed into TM?", "reason": "ASR is explicitly out of scope"},
+    {"id": "N11", "status": "will_not_answer", "question": "May a fuzzy hit be treated as exact reuse?", "reason": "D2 makes fuzzy retrieval advisory only"},
+
+    {"id": "F1", "status": "could_answer_later", "question": "Does in-loop retrieval decoding beat a no-TM draft?", "unlock": "mint Wave 2 after A6 passes"},
+    {"id": "F2", "status": "could_answer_later", "question": "How does gloss density vary diachronically by corpus stratum?", "unlock": "mint TM-H4 or Viz-1 Wave 2"},
+    {"id": "F3", "status": "could_answer_later", "question": "Where does TM wording drift from corpus usage unsupervised?", "unlock": "mint TM-H7 VecMap audit"},
+    {"id": "F4", "status": "could_answer_later", "question": "Can restricted parallel works be released bilingually?", "unlock": "per-source clearance plus human publish gate"},
+    {"id": "F5", "status": "could_answer_later", "question": "Can oral-only units receive grade A?", "unlock": "explicitly re-rule the current oral grade-B cap"},
+    {"id": "F6", "status": "could_answer_later", "question": "Can Flash become the production Q1-Q2 draft generator?", "unlock": "E1 pre-registered win; promoter fence remains"},
+    {"id": "F7", "status": "could_answer_later", "question": "Can Flash label oral, aligned, or mined tiers at scale?", "unlock": "non-promoting prep role or separate A/B if labels feed promotion"},
+    {"id": "F8", "status": "could_answer_later", "question": "Can terminology ship as a separate DOI dataset?", "unlock": "populate C1 and pass the human publication path"}
+  ],
+  "invariants": {
+    "flash_may_read_and_rank_tm": true,
+    "flash_may_write_tm": false,
+    "flash_may_sole_judge_promotion": false,
+    "fuzzy_may_auto_reuse": false,
+    "promoter_is_only_writer": true
+  }
+}

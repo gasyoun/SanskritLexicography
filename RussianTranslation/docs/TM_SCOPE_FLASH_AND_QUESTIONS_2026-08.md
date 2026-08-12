@@ -1,6 +1,6 @@
 # Translation Memory — Flash role, doc index, and question lists
 
-_Created: 08-08-2026 · Last updated: 08-08-2026_
+_Created: 08-08-2026 · Last updated: 12-08-2026_
 
 One-page answers to: (1) what R4.3a / R4.1 ban Flash from doing, (2) where the TM-only docs live, (3) written vs oral coverage, (4) questions the TM **will** / **will not** / **could later** answer.
 
@@ -50,6 +50,8 @@ Canonical short form: **rank proposes reuse; fence blocks prep/Flash from writin
 
 Flash-lane policy (not TM-only, but write fence): [DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08.md](https://github.com/gasyoun/Uprava/blob/main/docs/DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08.md).
 
+Machine-readable scope: [`tm_question_catalog.v1.json`](tm_question_catalog.v1.json). Its selftest pins the counts (7 intended, 11 forbidden, 8 future), unique IDs, written/oral coverage, and the Flash/TM invariants so this page cannot silently drift into a different policy.
+
 ---
 
 ## 3. Written and oral corpus — will the TM hold both?
@@ -82,6 +84,8 @@ From datasheet §E + DECISIONS D1–D2 + plan goals:
 | Q7 | (Structure only) Which Sa content-words align where in the parallel corpus? | `corpus_tm/derived_only` (no RU text in public bundle) |
 
 Prep Flash path reuses Q1–Q3 as **read-only** `tm_fuzzy_hits` (rank), never as write.
+
+Implementation detail (12-08): only an `exact_content_sha` hit may be presented as an exact-reuse candidate to the promoter. A same-key or fuzzy hit remains advisory even when its similarity score is `1.0`; a numeric score is not content identity.
 
 ---
 
@@ -130,10 +134,16 @@ These are **not** open `@DECIDE`s; they are roadmap **later waves** or residual 
 | **Engine use** | Prep fuzzy rank + exact reuse (today) | A6 measure → optional W2 retrieval decoding |
 | **Cheap lanes** | Flash PREP rank + draft under controller | Never Flash sole promote; never Flash TM write |
 
+### Current measured boundary and next experiment
+
+The merged 200-card PREP spike ([PR #1565](https://github.com/gasyoun/SanskritLexicography/pull/1565)) produced all 200 sidecars without a paid Claude call, but only 55% had usable source senses/deterministic GO and 45% parked. That result measured a source-discovery defect as much as it measured PREP quality: valid execution-manifest source bytes were not consumed when gitignored raw inputs were absent.
+
+The 12-08 hardening closes that defect by reading immutable manifest inputs, recording source hashes, and emitting sealed `pwg.prep_context.v1` artifacts. It does **not** claim a quality win. The first Claude action after release is H2591 (Opus 5) — Run bounded Claude comparison on sealed Flash PREP contexts: eight frozen cards, paired baseline/context arms, at most 16 reserved calls, and no promotion or TM write.
+
 ---
 
 ## 8. Provenance
 
-Assembled 08-08-2026 (Grok 4.5 `grok-4.5`) from the linked charters after a Flash PREP / R4.3a discussion — so the three question lists are not chat-only.
+Assembled 08-08-2026 (Grok 4.5 `grok-4.5`) from the linked charters after a Flash PREP / R4.3a discussion; hardened and machine-pinned 12-08-2026 (Codex `gpt-5.6-sol`). The three question lists are not chat-only.
 
 _Dr. Mārcis Gasūns_
