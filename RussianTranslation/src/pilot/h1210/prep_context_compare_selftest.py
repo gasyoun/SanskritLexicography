@@ -441,6 +441,38 @@ def test_b1_capture_gap_terminal_fields_raw_text_and_modelusage_crosscheck():
         print('  ok   B1 capture: terminal fields, raw result text, modelUsage cross-check')
 
 
+def test_absent_returned_model_stops_the_run():
+    """H2591 call 09: reserved, finalized, PAID — and named no model at all. The
+    substitution guard waved it through because absence is not substitution, so the run
+    carried on and the hole only surfaced at receipt time. Absence must stop the run at
+    call time; an attested refusal must still not.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        plan, _mp, _m, _cd = _plan(tmp)
+
+        # A clean, fully audited card that names no model is still unattributable spend.
+        run = _run(tmp, plan, _caller_factory(model=None), run_id='mute', out='mute')
+        assert run['stopped'] and 'model_unattested' in run['stopped'], run['stopped']
+        assert run['calls_spent'] == 1, 'an unattributable call must stop the run at once'
+        assert run['envelopes'][0]['returned_model'] is None
+
+        # The call-09 shape itself: rc=1 AND no model. `cli_error_exit` alone would let the
+        # run continue; the missing attestation is what stops it.
+        def refusing_unattested(argv, prompt, timeout):
+            wrapper = _wrapper(cards=[], model=None)
+            wrapper['result'] = 'Execution error'
+            wrapper.pop('structured_output')
+            wrapper.update({'subtype': 'error', 'is_error': True})
+            return pcc.CallResult(returncode=1, timed_out=False, wall_ms=342527,
+                                  stdout=json.dumps(wrapper), stderr='')
+
+        run = _run(tmp, plan, refusing_unattested, run_id='mute2', out='mute2')
+        assert run['envelopes'][0]['failure_class'] == 'cli_error_exit'
+        assert run['stopped'] and 'model_unattested' in run['stopped'], run['stopped']
+        assert run['calls_spent'] == 1
+        print('  ok   an absent returned model stops the run at call time, not at receipt')
+
+
 def test_selection_rule_is_deterministic_and_stratified():
     pool = {}
     for index in range(40):
@@ -495,6 +527,7 @@ CASES = [
     test_receipt_go_no_go_inconclusive,
     test_zero_filled_usage_is_missing_usage_not_a_measurement,
     test_b1_capture_gap_terminal_fields_raw_text_and_modelusage_crosscheck,
+    test_absent_returned_model_stops_the_run,
     test_selection_rule_is_deterministic_and_stratified,
     test_offline_check_makes_no_transport_call,
 ]
