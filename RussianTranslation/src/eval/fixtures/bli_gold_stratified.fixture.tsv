@@ -1,0 +1,19 @@
+# Hand-checked stratified gold fixture for bli_score_stratified.py selftest.
+# Pairs with ../fixtures/corpus_lexicon_stratified.fixture.jsonl (a dedicated
+# fixture, deliberately separate from bli_eval's corpus_lexicon.fixture.jsonl
+# so P@5-vs-P@1 and cell-grouping behaviour can be exercised in isolation).
+# Columns match the H2401 frame (slp1, band, pos) plus the gold_ru column the
+# annotation passes append -- pipe-separated acceptable translations, or the
+# literal token SKIP for an unannotatable row (excluded from every metric).
+#
+# Deliberately covers, across two cells:
+#   5|NOUN: karman (rank-1 hit), aDikAra (rank-3 hit -> P@5 hit, P@1 miss),
+#            uru (absent from corpus -> coverage-only), iti (SKIP)
+#   5|VERB: gam (rank-1 hit), kzip (absent from corpus -> coverage-only)
+slp1	band	pos	gold_ru
+karman	5	NOUN	действие
+aDikAra	5	NOUN	право
+uru	5	NOUN	широкий
+iti	5	NOUN	SKIP
+gam	5	VERB	идти
+kzip	5	VERB	бросать
