@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pwg.prep_context.v1",
+  "title": "Sealed compact Flash PREP context for Claude",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema", "key1", "prep_semantic_sha256", "source_evidence",
+    "sense_count", "sense_anchors", "tm_hits", "hard_flags", "det",
+    "route_hint", "tm_policy", "question_scope", "promotable",
+    "context_sha256"
+  ],
+  "properties": {
+    "schema": { "const": "pwg.prep_context.v1" },
+    "key1": { "type": "string", "minLength": 1 },
+    "prep_semantic_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "source_evidence": { "type": ["object", "null"] },
+    "sense_count": { "type": "integer", "minimum": 0 },
+    "sense_anchors": { "type": "array" },
+    "tm_hits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["match_type", "may_auto_reuse", "advisory_only", "decision_authority"],
+        "properties": {
+          "match_type": { "type": "string" },
+          "may_auto_reuse": { "type": "boolean" },
+          "advisory_only": { "type": "boolean" },
+          "decision_authority": { "const": "promoter_only" }
+        }
+      }
+    },
+    "hard_flags": { "type": "object" },
+    "det": { "type": "object" },
+    "route_hint": { "enum": ["controller_only", "full_worker", "prep_only", "park"] },
+    "tm_policy": {
+      "type": "object",
+      "required": ["may_write", "writer", "rule", "fuzzy_is_advisory", "exact_content_requires_promoter"],
+      "properties": {
+        "may_write": { "const": false },
+        "writer": { "const": "promoter_only" },
+        "rule": { "const": "R4.3a" },
+        "fuzzy_is_advisory": { "const": true },
+        "exact_content_requires_promoter": { "const": true }
+      }
+    },
+    "question_scope": { "type": "object" },
+    "promotable": { "const": false },
+    "context_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+  }
+}
