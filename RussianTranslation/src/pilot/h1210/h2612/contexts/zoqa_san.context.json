@@ -1,0 +1,58 @@
+{
+ "schema": "pwg.prep_context.v1",
+ "key1": "zoqaSan",
+ "prep_semantic_sha256": "0d869cdf272446fb3f3097deb315d7a224d800a1db0ea8f07d44c735be1dc024",
+ "source_evidence": {
+  "kind": "execution_manifest",
+  "locator": "src/pilot/h1210/h2591/execution_manifest.h2591.json",
+  "sha256": "be8c2b8fdbc13c30bb3b337a8339c3cc282c464a133c57022b1f7deb4c8afc5a",
+  "manifest_sha256": "cf2fee7bf91d85db745c7c638d2c782e4918e5d21d55282613ea22dab62c90ed"
+ },
+ "sense_count": 0,
+ "sense_anchors": [],
+ "tm_hits": [],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=execution_manifest"
+  ]
+ },
+ "det": {
+  "ok": true,
+  "gate": "prep",
+  "issues": [],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 103,
+  "source_senses": 0,
+  "had_draft_card": false
+ },
+ "route_hint": "prep_only",
+ "tm_policy": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "fuzzy_is_advisory": true,
+  "exact_content_requires_promoter": true
+ },
+ "question_scope": {
+  "can_answer_now": [
+   "Q1",
+   "Q3",
+   "Q5"
+  ],
+  "promoter_decides": [
+   "Q2"
+  ],
+  "cannot_answer": [
+   "N1",
+   "N2",
+   "N4",
+   "N11"
+  ]
+ },
+ "promotable": false,
+ "context_sha256": "ca68bd7436935bd969e5b1987f4d2d83fec50e068ca99a169288d0f2611802c6"
+}
