@@ -202,7 +202,7 @@ def cmd_baseline():
                 print("baseline EMPTY (will not write, rerun later):", it["id"])
                 continue
             f.write(json.dumps({"id": it["id"], "ru_baseline": ru.strip(),
-                                "model": "deepseek-chat"}, ensure_ascii=False) + "\n")
+                                "model": "deepseek-v4-flash"}, ensure_ascii=False) + "\n")
             f.flush()
             print("baseline ok:", it["id"])
     print("baseline complete ->", BASELINE)
@@ -251,7 +251,7 @@ def cmd_judge():
             except Exception:
                 verdict = {"parse_error": (out or "")[:400]}
             f.write(json.dumps({"id": it["id"], "a_is_store": a_is_store,
-                                "verdict": verdict, "model": "deepseek-chat"},
+                                "verdict": verdict, "model": "deepseek-v4-flash"},
                                ensure_ascii=False) + "\n")
             f.flush()
             print("judge ok:", it["id"])

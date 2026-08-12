@@ -100,7 +100,7 @@ def run(n):
             r = requests.post(
                 'https://api.deepseek.com/chat/completions',
                 headers={'Authorization': 'Bearer ' + key},
-                json={'model': 'deepseek-chat', 'temperature': 0,
+                json={'model': 'deepseek-v4-flash', 'temperature': 0,
                       'response_format': {'type': 'json_object'},
                       'messages': [{'role': 'system', 'content': SYS_PROMPT},
                                    {'role': 'user', 'content': user}]},
