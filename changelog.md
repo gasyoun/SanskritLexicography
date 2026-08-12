@@ -14,7 +14,7 @@ not an error.
 
 ## [Unreleased]
 
-## [1.144.39] - 2026-08-12
+## [1.144.40] - 2026-08-12
 
 ### Added
 - **H2581 router.cheap requalification — zero-call stop, and an integrity finding underneath it**
