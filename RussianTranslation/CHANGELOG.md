@@ -9,6 +9,8 @@ See also: [METHODOLOGY_REVIEW.md](METHODOLOGY_REVIEW.md) (where we want to go),
 how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
+
+## [1.144.38] - 2026-08-12
 ### Added
 
 - **H2551 (Sonnet 5, `claude-sonnet-5`) — 500-card BLI gold pass-1 review sheet:** `src/eval/build_bli_gold_b1_500_sheet.py` emits the Russian review sheet over the frozen [H2401 frame](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/gold_frame_b1_stratified_500.tsv) via the shared `csl_pyutil.render_review_sheet` emitter (V1–V8 standard) — one card per lemma with the SLP1 headword, IAST, full Kochergina gloss, and band/POS/polysemy badges; the pass-1 label (acceptable Russian equivalents) is entered as a free-text note, SKIP is the reject path with a reason picker. All 500 cards are class-(d) per the [annotation protocol](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/BLI_GOLD_SET_ANNOTATION_PROTOCOL_2026.md) §5 — no screening rule applies. Vehicle only; does not annotate, score, or adjudicate (that is H2402's scorer + a future `/gold-adjudicate` pass).
