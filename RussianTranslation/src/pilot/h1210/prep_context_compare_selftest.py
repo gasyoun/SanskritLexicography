@@ -16,6 +16,7 @@ Run standalone or through ``prep_context_compare.py --selftest``; also wired int
 """
 from __future__ import annotations
 
+import collections
 import json
 import os
 import sys
@@ -34,12 +35,39 @@ for _path in (HERE, PILOT, SRC):
 import prep_context_compare as pcc                          # noqa: E402
 import prep_pack                                            # noqa: E402
 from call_reservation import CallReservationLedger          # noqa: E402
-from headless_worker import build_prompt                    # noqa: E402
+from headless_worker import build_fragment_prompt, build_prompt  # noqa: E402
 
 KEYS = ['aKey%d' % i for i in range(1, pcc.PAIR_COUNT + 1)]
 
 
 # --------------------------------------------------------------------------- fixtures
+
+def _fragment_lane(manifest, *, groups_per_key=2, heavy_key=None, heavy_groups=0):
+    """Add a SHAPE-REAL presplit lane: `presplit_keys` + `fragment_groups`, as
+    `gen_opt_harness2` emits them and `pwg_batch` / `headless_worker` consume them.
+
+    Each fragment carries a skeleton with its OWN token, so an audit that scored fragments
+    against the whole card's token map would visibly fail — which is the point of the case
+    that uses this.
+    """
+    fragment_groups = {}
+    for index, key in enumerate(KEYS):
+        count = heavy_groups if (heavy_key and key == heavy_key) else groups_per_key
+        groups = []
+        for group_index in range(count):
+            size = 2 if group_index == 0 else 1
+            groups.append([{'skeleton': 'frag %s g%d f%d {T%d}\n'
+                                        % (key, group_index, slot, index + 1),
+                            'fsha': '%s-%d-%d' % (key, group_index, slot),
+                            'ls': 1, 'si': slot, 'sk': 0}
+                           for slot in range(size)])
+        fragment_groups[key] = groups
+    manifest['presplit_keys'] = list(KEYS)
+    manifest['fragment_groups'] = fragment_groups
+    manifest['fragment_placeholder_maps'] = {
+        key: [['<ls>x</ls>'] for _group in groups] for key, groups in fragment_groups.items()}
+    return manifest
+
 
 def _manifest(tmp, *, credit=True):
     """A minimal but SHAPE-REAL manifest: build_prompt must accept it unchanged."""
@@ -473,6 +501,145 @@ def test_absent_returned_model_stops_the_run():
         print('  ok   an absent returned model stops the run at call time, not at receipt')
 
 
+def _fragment_plan(tmp, **lane):
+    """Seal a `lane: fragment` plan over a manifest that carries a real presplit lane."""
+    manifest_path, manifest = _manifest(tmp)
+    _fragment_lane(manifest, **lane)
+    with open(manifest_path, 'w', encoding='utf-8', newline='\n') as handle:
+        json.dump(manifest, handle, ensure_ascii=False, indent=1)
+    context_dir = _contexts(tmp, manifest_path, manifest)
+    plan = pcc.build_plan(manifest_path, context_dir, lane='fragment')
+    pcc.atomic_json(os.path.join(tmp, 'plan.json'), plan)
+    return plan, manifest_path, manifest, context_dir
+
+
+def test_fragment_lane_arm_a_is_the_production_fragment_call():
+    """H2612: production sends 92 % of this pool as presplit GROUPS, so a whole-card A/B
+    qualifies PREP for the 8 % lane. The fragment lane makes the call SHAPE production's:
+    one group per call, arm A built by `headless_worker.build_fragment_prompt` itself.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        plan, _mp, manifest, _cd = _fragment_plan(tmp)
+        assert plan['lane'] == 'fragment'
+        assert len(plan['keys']) == pcc.PAIR_COUNT
+        assert len(plan['order']) == pcc.MAX_CALLS
+
+        for uid in plan['keys']:
+            card = plan['cards'][uid]
+            key, index = card['key1'], card['group_index']
+            assert uid == '%s#g%d' % (key, index)
+            group = manifest['fragment_groups'][key][index]
+            expected = build_fragment_prompt(manifest, key, group, list(card['indices']))
+            contexts = pcc.load_contexts(os.path.join(tmp, 'contexts'), [key])
+            prompt_a, prompt_b = pcc.arm_prompts(manifest, uid, contexts[key]['context'], card)
+            assert prompt_a == expected, 'arm A must BE the production fragment prompt'
+            assert prompt_b.startswith(prompt_a), 'arm B must extend arm A byte-exactly'
+            assert prompt_b.count(pcc.PREP_OPEN) == 1
+            assert pcc.PREP_OPEN not in prompt_a
+            # The call addresses FRAGMENT keys, not the card — that is what makes it a
+            # fragment-lane call rather than a whole-card call with fewer senses in it.
+            assert '=== CARD %s_f0 (fragment 1/%d) ===' % (key, len(group)) in prompt_a
+            assert '=== CARD %s ===' % key not in prompt_a
+
+        report = pcc.check(plan, ledger_path=os.path.join(tmp, 'l.json'), run_id='frag')
+        assert report['ok'] and report['network_calls'] == 0
+        assert report['conditions']['arm_a_production_unchanged']
+        print('  ok   fragment lane: arm A is production\'s own group call, check is offline')
+
+
+def test_whole_lane_plan_hash_survives_the_fragment_lane():
+    """A sealed plan whose hash moves under a refactor is not a sealed plan. H2591's plan
+    carries no `lane` key at all, so the whole lane must add nothing to the plan dict.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        plan, manifest_path, _m, context_dir = _plan(tmp)
+        assert 'lane' not in plan, 'the whole lane must not add a key to the sealed plan'
+        assert plan['handoff'] == 'H2591'
+        again = pcc.build_plan(manifest_path, context_dir, lane='whole')
+        assert again['plan_sha256'] == plan['plan_sha256']
+        pcc.verify_plan_hash(plan)
+        print('  ok   whole-lane plan hash is untouched by the fragment lane')
+
+
+def test_fragment_group_selection_cannot_be_swallowed_by_one_card():
+    """`samIpa` alone contributes 31 solo groups to the real manifest. Without a per-card
+    cap the "8 groups" sample is one card eight times, and the comparison stops being about
+    the lane. The cap relaxes only when the pool cannot fill the sample — and says so.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        plan, _mp, _m, _cd = _fragment_plan(tmp, groups_per_key=2)
+        per_card = collections.Counter(plan['cards'][uid]['key1'] for uid in plan['keys'])
+        assert max(per_card.values()) <= 2, per_card
+        assert plan['group_selection_relaxations'] == []
+
+        # Both call SHAPES must be present. Measured on the real H2591 manifest, 31 of 46
+        # groups are solo, so a sample ranked by size alone draws entirely from the
+        # multi-fragment minority — H2598's "measures the wrong lane" error, one level down.
+        strata = collections.Counter(plan['cards'][uid]['stratum'] for uid in plan['keys'])
+        assert strata['multi_fragment'] == 4 and strata['solo_fragment'] == 4, strata
+
+    # A pool where only two cards presplit at all cannot honour a cap of 2 — it must relax
+    # and RECORD the relaxation rather than quietly drawing 8 from one card.
+    with tempfile.TemporaryDirectory() as tmp:
+        manifest_path, manifest = _manifest(tmp)
+        _fragment_lane(manifest, groups_per_key=6)
+        manifest['presplit_keys'] = KEYS[:2]
+        with open(manifest_path, 'w', encoding='utf-8', newline='\n') as handle:
+            json.dump(manifest, handle, ensure_ascii=False, indent=1)
+        context_dir = _contexts(tmp, manifest_path, manifest)
+        plan = pcc.build_plan(manifest_path, context_dir, lane='fragment')
+        per_card = collections.Counter(plan['cards'][uid]['key1'] for uid in plan['keys'])
+        assert set(per_card) == set(KEYS[:2]), per_card
+        assert max(per_card.values()) == 4
+        assert plan['group_selection_relaxations'], 'a relaxed cap must be recorded'
+        print('  ok   group selection caps one card, and records any relaxation')
+
+
+def test_fragment_audit_scores_each_fragment_against_its_own_skeleton():
+    """The load-bearing case. A fragment call returns `<key>_f<i>` cards, and each is
+    accepted on production's own rule: token multiset equals THAT fragment's skeleton.
+    Scoring them against the whole card's token map — the obvious shortcut — reads as mass
+    loss on every fragment and would invert the verdict.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        plan, _mp, manifest, _cd = _fragment_plan(tmp)
+        uid = plan['keys'][0]
+        card = plan['cards'][uid]
+        key = card['key1']
+        group = manifest['fragment_groups'][key][card['group_index']]
+
+        def frag_card(index, text):
+            return {'key1': '%s_f%d' % (key, index), 'records': [
+                {'grammar': '', 'senses': [{'tag': '1', 'german': text, 'russian': 'ру'}]}]}
+
+        faithful = {'cards': [frag_card(index, group[index]['skeleton'])
+                              for index in card['indices']]}
+        verdict = pcc.audit_result(plan, uid, faithful)
+        assert verdict['audited'] and verdict['coverage'] == 1.0, verdict
+        assert verdict['fragments_accepted'] == len(card['indices'])
+
+        # A fragment answering with the WHOLE card's token map is rejected — the inversion
+        # this audit exists to prevent, seen from the other side.
+        whole = {'cards': [frag_card(index, ' '.join(card['skeleton_tokens']) + ' extra {T99}')
+                           for index in card['indices']]}
+        assert pcc.audit_result(plan, uid, whole)['defects'] == ['fragment-fidelity-reject']
+
+        # One fragment drops its token -> partial coverage, never a silent pass.
+        dropped = {'cards': [frag_card(card['indices'][0], 'no token here')]
+                   + [frag_card(index, group[index]['skeleton'])
+                      for index in card['indices'][1:]]}
+        verdict = pcc.audit_result(plan, uid, dropped)
+        assert not verdict['audited']
+        assert verdict['fragments_accepted'] == len(card['indices']) - 1
+        assert 0 < verdict['coverage'] < 1
+
+        # A group that returns nothing addressable is a miss, not an exception.
+        verdict = pcc.audit_result(plan, uid, {'cards': [{'key1': 'someone_else_f0'}]})
+        assert verdict['defects'] == ['missing-or-mismatched-fragment-key']
+        assert verdict['coverage'] == 0.0
+        print('  ok   fragment audit uses production\'s per-fragment fidelity rule')
+
+
 def test_selection_rule_is_deterministic_and_stratified():
     pool = {}
     for index in range(40):
@@ -528,6 +695,10 @@ CASES = [
     test_zero_filled_usage_is_missing_usage_not_a_measurement,
     test_b1_capture_gap_terminal_fields_raw_text_and_modelusage_crosscheck,
     test_absent_returned_model_stops_the_run,
+    test_fragment_lane_arm_a_is_the_production_fragment_call,
+    test_whole_lane_plan_hash_survives_the_fragment_lane,
+    test_fragment_group_selection_cannot_be_swallowed_by_one_card,
+    test_fragment_audit_scores_each_fragment_against_its_own_skeleton,
     test_selection_rule_is_deterministic_and_stratified,
     test_offline_check_makes_no_transport_call,
 ]

@@ -60,6 +60,7 @@ Handoff: [H2591](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2591-Opus
 from __future__ import annotations
 
 import argparse
+import collections
 import hashlib
 import json
 import os
@@ -85,8 +86,8 @@ from call_reservation import (                               # noqa: E402
     CallLimitReached, CallReservationLedger, telemetry_from_cli_wrapper,
     unevaluable_telemetry)
 from headless_worker import (                                # noqa: E402
-    bare_cli_cwd, build_prompt, claude_argv_prefix, parse_cli_wrapper,
-    structured_from_wrapper)
+    bare_cli_cwd, build_fragment_prompt, build_prompt, card_by_key, card_token_multiset,
+    claude_argv_prefix, parse_cli_wrapper, structured_from_wrapper, token_multiset)
 
 PLAN_SCHEMA = 'pwg.prep_context_comparison_plan.v1'
 RECEIPT_SCHEMA = 'pwg.prep_context_comparison.v1'
@@ -106,6 +107,44 @@ PREP_OPEN = '=== PREP CONTEXT (advisory; non-promotable; TM writes forbidden) ==
 PREP_CLOSE = '=== END PREP CONTEXT ==='
 
 STRATA = ('simple', 'polysemous', 'markup_heavy', 'long_monster')
+
+#: The two call SHAPES production uses. `whole` sends one card per call; `fragment` sends one
+#: presplit GROUP per call, which is what production does for 44 of this pool's 48 cards
+#: (H2598 measured 4 whole-card / 44 presplit). The lane is sealed INTO the plan, never a
+#: runtime flag — a comparison whose call shape could change between --check and --execute
+#: would be measuring two different things under one hash. Plans sealed before the fragment
+#: lane existed carry no `lane` key and read as `whole`, so their sealed hashes still replay.
+LANES = ('whole', 'fragment')
+
+#: Pre-declared group-selection rule, recorded verbatim in the plan for the same reason
+#: SELECTION_RULE is: the sample must be fixed before any output is seen.
+GROUP_SELECTION_RULE = {
+    'pool': 'every fragment group of every key in the manifest\'s `presplit_keys` — one '
+            'group is exactly one production agent call',
+    'unit': 'a UNIT is one group: uid `<key1>#g<group_index>`, called once per arm',
+    'exclusions': [
+        'groups of keys production does NOT presplit: those cards go whole, and the '
+        'whole-card lane already measures them',
+    ],
+    'strata': {
+        'multi_fragment': 'groups carrying 2+ fragments — the "one call, several senses" '
+                          'shape, ranked by fragment count descending',
+        'solo_fragment': 'groups carrying exactly 1 fragment — the "one call, one sense" '
+                         'shape, ranked by (key1, group_index) ascending',
+    },
+    'order': [
+        'take 4 groups from each stratum, not 8 by size alone: measured on the H2591 '
+        'manifest, 31 of 46 groups (67 %) are SOLO, so a sample ranked by size only would '
+        'draw entirely from the multi-fragment minority — the same "measures the lane it '
+        'is not about" error H2598 caught in the whole-card lane, one level down',
+        'AT MOST 2 groups per parent card, applied across both strata — without it a single '
+        'citation-dense card (samIpa: 31 solo groups) supplies the whole sample',
+        'if a stratum cannot fill its 4, take the shortfall from the other stratum and '
+        'record the substitution; if the per-card cap blocks the sample, relax it to 3 then '
+        '4 and record that too — never hide a thin draw',
+    ],
+    'frozen': 'units are sealed into plan.json before any call; a failed group is never replaced',
+}
 
 #: Pre-declared, order-sensitive selection rule. Recorded verbatim in the plan so the
 #: sample can never be re-chosen after seeing output.
@@ -314,9 +353,105 @@ def context_block(context: dict) -> str:
             + PREP_CLOSE + '\n')
 
 
-def arm_prompts(manifest: dict, key: str, context: dict) -> tuple[str, str]:
+def unit_id(key: str, group_index: int) -> str:
+    """The fragment lane's unit address. `#` cannot occur in a key1, so it never collides."""
+    return '%s#g%d' % (key, group_index)
+
+
+def unit_parent(card: dict, uid: str) -> str:
+    """The key1 a unit belongs to. Whole-lane plans predate `key1` here and ARE their key."""
+    return card.get('key1') or uid
+
+
+def manifest_group(manifest: dict, key: str, group_index: int) -> list:
+    groups = (manifest.get('fragment_groups') or {}).get(key) or []
+    if group_index < 0 or group_index >= len(groups):
+        raise FenceFailure('manifest carries no group %d for %r' % (group_index, key))
+    return groups[group_index]
+
+
+def select_groups(manifest: dict, relaxations: list | None = None) -> list[dict]:
+    """Apply GROUP_SELECTION_RULE. Deterministic: ties always break on (key1, index) ascending.
+
+    ``relaxations`` (optional sink) records each per-card cap that had to be loosened, so a
+    sample drawn from a thin pool says so in the plan instead of looking like a clean draw.
+    """
+    pool = []
+    for key in sorted(manifest.get('presplit_keys') or []):
+        for index, group in enumerate((manifest.get('fragment_groups') or {}).get(key) or []):
+            pool.append({'key1': key, 'group_index': index, 'fragments': len(group)})
+    if not pool:
+        raise FenceFailure('manifest declares no presplit keys — there is no fragment lane '
+                           'to qualify here')
+    multi = sorted((u for u in pool if u['fragments'] > 1),
+                   key=lambda u: (-u['fragments'], u['key1'], u['group_index']))
+    solo = sorted((u for u in pool if u['fragments'] == 1),
+                  key=lambda u: (u['key1'], u['group_index']))
+    share = PAIR_COUNT // 2
+
+    def draw(cap):
+        chosen, per_card, notes = [], {}, []
+        for stratum, ranked, want in (('multi_fragment', multi, share),
+                                      ('solo_fragment', solo, share)):
+            taken = 0
+            for unit in ranked:
+                if taken >= want or per_card.get(unit['key1'], 0) >= cap:
+                    continue
+                per_card[unit['key1']] = per_card.get(unit['key1'], 0) + 1
+                chosen.append(dict(unit, stratum=stratum))
+                taken += 1
+            if taken < want:
+                notes.append({'stratum': stratum, 'drawn': taken, 'wanted': want})
+        # Backfill the shortfall from whichever stratum still has room, in rank order.
+        if len(chosen) < PAIR_COUNT:
+            picked = {(u['key1'], u['group_index']) for u in chosen}
+            for stratum, ranked in (('multi_fragment', multi), ('solo_fragment', solo)):
+                for unit in ranked:
+                    if len(chosen) == PAIR_COUNT:
+                        break
+                    if (unit['key1'], unit['group_index']) in picked:
+                        continue
+                    if per_card.get(unit['key1'], 0) >= cap:
+                        continue
+                    per_card[unit['key1']] = per_card.get(unit['key1'], 0) + 1
+                    chosen.append(dict(unit, stratum=stratum, substituted=True))
+                    picked.add((unit['key1'], unit['group_index']))
+        return chosen, notes
+
+    for cap in (2, 3, 4):
+        chosen, notes = draw(cap)
+        if len(chosen) == PAIR_COUNT:
+            if relaxations is not None:
+                if cap > 2:
+                    relaxations.append({'per_card_cap': cap, 'reason':
+                                        'fewer than %d groups survive a cap of 2' % PAIR_COUNT})
+                relaxations.extend(dict(note, reason='stratum could not fill its share; the '
+                                        'shortfall was substituted from the other stratum')
+                                   for note in notes)
+            return sorted(chosen, key=lambda u: (-u['fragments'], u['key1'], u['group_index']))
+    raise FenceFailure('manifest yields only %d selectable groups, need %d'
+                       % (len(pool), PAIR_COUNT))
+
+
+def production_prompt(manifest: dict, card: dict, uid: str) -> str:
+    """Arm A for either lane: the production builder's bytes, untouched.
+
+    Whole lane is `build_prompt`; fragment lane is `build_fragment_prompt`, the same function
+    `pwg_batch` and `headless_worker` call to issue a real presplit call. Neither is
+    re-implemented here — arm A means "what production would send", and the only way to keep
+    that true across releases is to call production's own builder.
+    """
+    key = unit_parent(card, uid)
+    if (card.get('lane') or 'whole') == 'whole':
+        return build_prompt(manifest, [key])
+    group = manifest_group(manifest, key, card['group_index'])
+    return build_fragment_prompt(manifest, key, group, list(card['indices']))
+
+
+def arm_prompts(manifest: dict, key: str, context: dict, card: dict | None = None
+                ) -> tuple[str, str]:
     """(arm A, arm B). A is production, untouched; B is A plus exactly one PREP block."""
-    prompt_a = build_prompt(manifest, [key])
+    prompt_a = production_prompt(manifest, card or {}, key)
     if PREP_OPEN in prompt_a or PREP_CLOSE in prompt_a:
         raise FenceFailure('production prompt already contains a PREP delimiter for %r' % key)
     prompt_b = prompt_a + context_block(context)
@@ -350,29 +485,46 @@ def load_contexts(context_dir: str, keys: list[str]) -> dict[str, dict]:
     return out
 
 
+def unit_specs(manifest: dict, lane: str, relaxations: list | None = None) -> list[dict]:
+    """The plan's units, in sealed order: one card per unit (whole) or one group (fragment)."""
+    if lane == 'whole':
+        keys = list(manifest.get('inputs') or {})
+        if len(keys) != PAIR_COUNT:
+            raise FenceFailure('manifest must carry exactly %d keys, found %d'
+                               % (PAIR_COUNT, len(keys)))
+        return [{'uid': key, 'key1': key, 'lane': 'whole'} for key in keys]
+    specs = []
+    for unit in select_groups(manifest, relaxations):
+        key, index = unit['key1'], unit['group_index']
+        group = manifest_group(manifest, key, index)
+        specs.append({'uid': unit_id(key, index), 'key1': key, 'lane': 'fragment',
+                      'group_index': index, 'indices': list(range(len(group))),
+                      'group_fragments': len(group), 'stratum': unit['stratum']})
+    return specs
+
+
 def build_plan(manifest_path: str, context_dir: str, *, model: str = REQUIRED_MODEL,
-               output_limit: int = OUTPUT_LIMIT, selection: dict | None = None) -> dict:
+               output_limit: int = OUTPUT_LIMIT, selection: dict | None = None,
+               lane: str = 'whole') -> dict:
     """Seal the immutable plan. Carries no clock reading, so it replays byte-identically."""
+    if lane not in LANES:
+        raise FenceFailure('unknown lane %r; expected one of %r' % (lane, list(LANES)))
     manifest_sha = sha256_file(manifest_path)
     with open(manifest_path, encoding='utf-8') as handle:
         manifest = json.load(handle)
-    keys = list(manifest.get('inputs') or {})
-    if len(keys) != PAIR_COUNT:
-        raise FenceFailure('manifest must carry exactly %d keys, found %d'
-                           % (PAIR_COUNT, len(keys)))
-    contexts = load_contexts(context_dir, keys)
+    relaxations = []
+    specs = unit_specs(manifest, lane, relaxations)
+    keys = [spec['uid'] for spec in specs]
+    contexts = load_contexts(context_dir, sorted({spec['key1'] for spec in specs}))
 
     cards, prompts = {}, {}
-    for key in keys:
-        context = contexts[key]['context']
+    for spec in specs:
+        key, parent = spec['uid'], spec['key1']
+        context = contexts[parent]['context']
         evidence = context.get('source_evidence') or {}
-        prompt_a, prompt_b = arm_prompts(manifest, key, context)
-        prompts[key] = {
-            'A': {'sha256': sha256_text(prompt_a), 'bytes': len(prompt_a.encode('utf-8'))},
-            'B': {'sha256': sha256_text(prompt_b), 'bytes': len(prompt_b.encode('utf-8'))},
-        }
-        cards[key] = {
-            'context_path': os.path.relpath(contexts[key]['path'], os.path.dirname(manifest_path)),
+        card = {
+            'context_path': os.path.relpath(contexts[parent]['path'],
+                                            os.path.dirname(manifest_path)),
             'context_sha256': context['context_sha256'],
             'prep_semantic_sha256': context['prep_semantic_sha256'],
             'source_kind': evidence.get('kind'),
@@ -380,9 +532,31 @@ def build_plan(manifest_path: str, context_dir: str, *, model: str = REQUIRED_MO
             'manifest_sha256_in_context': evidence.get('manifest_sha256'),
             'route_hint': context.get('route_hint'),
             'sense_count': context.get('sense_count'),
-            'skeleton_tokens': det_gate.TOK.findall(manifest['inputs'][key].get('skeleton') or ''),
-            'source_senses': manifest['inputs'][key].get('source_senses'),
+            'skeleton_tokens': det_gate.TOK.findall(
+                manifest['inputs'][parent].get('skeleton') or ''),
+            'source_senses': manifest['inputs'][parent].get('source_senses'),
         }
+        if spec['lane'] == 'fragment':
+            group = manifest_group(manifest, parent, spec['group_index'])
+            card.update({
+                'lane': 'fragment', 'key1': parent,
+                'group_index': spec['group_index'], 'indices': list(spec['indices']),
+                'group_fragments': spec['group_fragments'], 'stratum': spec['stratum'],
+                # Each fragment is scored against ITS OWN skeleton, exactly as
+                # `headless_worker.heal_group` accepts a fragment in production. Scoring a
+                # fragment against the whole-card token map would read as mass loss and
+                # invert the verdict.
+                'fragments': [
+                    {'index': index, 'frag_key': '%s_f%d' % (parent, index),
+                     'skeleton_tokens': det_gate.TOK.findall(group[index].get('skeleton') or '')}
+                    for index in spec['indices']],
+            })
+        prompt_a, prompt_b = arm_prompts(manifest, key, context, card)
+        prompts[key] = {
+            'A': {'sha256': sha256_text(prompt_a), 'bytes': len(prompt_a.encode('utf-8'))},
+            'B': {'sha256': sha256_text(prompt_b), 'bytes': len(prompt_b.encode('utf-8'))},
+        }
+        cards[key] = card
 
     plan = {
         'schema': PLAN_SCHEMA,
@@ -422,6 +596,34 @@ def build_plan(manifest_path: str, context_dir: str, *, model: str = REQUIRED_MO
                    'fuzzy TM hit is never exact-content reuse', 'no automatic retry',
                    'no expansion beyond eight pairs'],
     }
+    if lane != 'whole':
+        # Keyed only on the fragment lane so a whole-card plan sealed before this lane
+        # existed still recomputes its ORIGINAL hash — H2591's sealed plan must keep
+        # verifying, and a plan whose hash moves under a refactor is not a sealed plan.
+        plan['lane'] = lane
+        plan['handoff'] = 'H2612'
+        plan['design'] = ('paired 8-GROUP baseline(A) vs PREP(B) qualification on the '
+                          'fragment lane; one group is one production agent call; n=8 is '
+                          'descriptive')
+        plan['group_selection_rule'] = GROUP_SELECTION_RULE
+        plan['group_selection_relaxations'] = relaxations
+        plan['known_non_equivalences'] = [
+            'the call SHAPE is production\'s here — one presplit group per call, via '
+            'headless_worker.build_fragment_prompt — but the rig still does not run through '
+            'the coordinator/profile lane, so it carries no profile slot, no heal/bisect '
+            'ladder and no kill gate. A group that would be healed or bisected in production '
+            'is simply recorded as failed here. Both arms are affected identically, so the '
+            'paired A-vs-B comparison is unharmed; absolute figures are not production '
+            'figures.',
+            'PREP context is per-CARD, and a fragment call carries only part of that card, '
+            'so arm B gives a group the whole card\'s context. That is the design under '
+            'test, not a defect — but it means arm B\'s context block does not shrink with '
+            'the group, and a cost comparison must read it that way.',
+            'manifest schema is pwg.headless_execution_manifest.v1 (unbound): a measurement '
+            'rig, never a bulk execution path.',
+            'the manifest declares model claude-sonnet-5 as the LANE default; both arms '
+            'explicitly request %s and the returned model is attested per call.' % model,
+        ]
     plan['plan_sha256'] = sha256_bytes(canonical_bytes(
         {k: v for k, v in plan.items() if k != 'plan_sha256'}))
     return plan
@@ -503,7 +705,7 @@ def check(plan: dict, *, ledger_path: str, run_id: str, authorize_unknown_billin
         # (1) one immutable manifest source + manifest SHA per key
         for key in plan['keys']:
             card = plan['cards'][key]
-            if key not in (manifest.get('inputs') or {}):
+            if unit_parent(card, key) not in (manifest.get('inputs') or {}):
                 raise FenceFailure('key %r absent from the manifest inputs' % key)
             if card['source_kind'] != 'execution_manifest':
                 raise FenceFailure('context for %r is not manifest-sourced: %r'
@@ -515,6 +717,8 @@ def check(plan: dict, *, ledger_path: str, run_id: str, authorize_unknown_billin
         report['conditions']['immutable_manifest_source'] = True
 
         # (2) valid, hash-replay-identical pwg.prep_context.v1
+        # Keyed by UNIT, not by card: on the fragment lane several units share one parent
+        # card's context, and each unit's sealed hash must be re-verified in its own right.
         contexts = {}
         base = os.path.dirname(resolved)
         for key in plan['keys']:
@@ -531,12 +735,23 @@ def check(plan: dict, *, ledger_path: str, run_id: str, authorize_unknown_billin
 
         # (3)+(4)+(5) prompt identity, single PREP block, shared schema/model/limit
         for key in plan['keys']:
-            prompt_a, prompt_b = arm_prompts(manifest, key, contexts[key])
+            card = plan['cards'][key]
+            prompt_a, prompt_b = arm_prompts(manifest, key, contexts[key], card)
             if sha256_text(prompt_a) != plan['prompts'][key]['A']['sha256']:
                 raise FenceFailure('arm A prompt drifted from the sealed hash for %r' % key)
             if sha256_text(prompt_b) != plan['prompts'][key]['B']['sha256']:
                 raise FenceFailure('arm B prompt drifted from the sealed hash for %r' % key)
-            if prompt_a != build_prompt(manifest, [key]):
+            # Re-derived from the production builder a SECOND time, independently of
+            # `production_prompt`, so "arm A is untouched production" is a check and not a
+            # restatement of the line that just built it.
+            parent = unit_parent(card, key)
+            if (card.get('lane') or 'whole') == 'fragment':
+                expected = build_fragment_prompt(
+                    manifest, parent, manifest_group(manifest, parent, card['group_index']),
+                    list(card['indices']))
+            else:
+                expected = build_prompt(manifest, [parent])
+            if prompt_a != expected:
                 raise FenceFailure('arm A is not the untouched production prompt for %r' % key)
         if plan['model'] != REQUIRED_MODEL:
             raise FenceFailure('plan model is not %s: %r' % (REQUIRED_MODEL, plan['model']))
@@ -663,8 +878,50 @@ def build_argv(plan: dict, manifest: dict, claude_bin: str = 'claude') -> list[s
     ]
 
 
+def audit_fragment_group(plan: dict, uid: str, structured: dict) -> dict:
+    """Score a fragment GROUP exactly as production accepts one.
+
+    `headless_worker.heal_group` accepts a fragment on two conditions and no others: the
+    returned card is addressable at `<key>_f<index>`, and its `{Tn}` multiset equals that
+    fragment's own skeleton's. Reusing that rule verbatim is the whole point — an audit
+    invented here would be scoring the lane against a standard production does not apply,
+    and scoring a fragment against the WHOLE card's token map (the obvious shortcut) reads
+    as mass loss on every fragment and would invert the verdict.
+
+    Coverage is fragments accepted over fragments requested, so a partially-returned group
+    is a number rather than a bare failure.
+    """
+    card = plan['cards'][uid]
+    fragments = card['fragments']
+    by_key = card_by_key(structured.get('cards') or [])
+    defects, issues, accepted = [], [], 0
+    for fragment in fragments:
+        returned = by_key.get(fragment['frag_key'])
+        if not returned:
+            defects.append('missing-or-mismatched-fragment-key')
+            issues.append('%s: missing-or-mismatched-fragment-key' % fragment['frag_key'])
+            continue
+        if not isinstance(returned.get('records'), list) or not returned['records']:
+            defects.append('schema: fragment carries no records[]')
+            issues.append('%s: no records[]' % fragment['frag_key'])
+            continue
+        expected = collections.Counter(fragment['skeleton_tokens'])
+        if card_token_multiset(returned) != expected:
+            defects.append('fragment-fidelity-reject')
+            issues.append('%s: fragment-fidelity-reject' % fragment['frag_key'])
+            continue
+        accepted += 1
+    coverage = (accepted / len(fragments)) if fragments else None
+    return {'schema_ok': all(not d.startswith('schema') for d in defects),
+            'audited': accepted == len(fragments) and bool(fragments),
+            'coverage': coverage, 'defects': sorted(set(defects)), 'issues': issues,
+            'fragments_requested': len(fragments), 'fragments_accepted': accepted}
+
+
 def audit_result(plan: dict, key: str, structured: dict) -> dict:
     """Schema shape + the deterministic PWG audit. Never rerolled — a failure is evidence."""
+    if (plan['cards'].get(key, {}).get('lane') or 'whole') == 'fragment':
+        return audit_fragment_group(plan, key, structured)
     defects = []
     card = None
     for candidate in structured.get('cards') or []:
@@ -705,6 +962,8 @@ def execute(plan: dict, *, ledger_path: str, run_id: str, out_dir: str,
         with open(os.path.normpath(os.path.join(base, plan['cards'][key]['context_path'])),
                   encoding='utf-8') as handle:
             contexts[key] = prep_pack.verify_compact_context(json.load(handle))
+    # On the fragment lane several units share one parent card, so `contexts` is keyed by
+    # UNIT: the same context object legitimately appears under more than one uid.
 
     ledger = CallReservationLedger(ledger_path, run_id, max_calls=MAX_CALLS)
     argv = build_argv(plan, manifest, claude_bin)
@@ -721,7 +980,7 @@ def execute(plan: dict, *, ledger_path: str, run_id: str, out_dir: str,
                 envelopes.append(json.load(handle))
             continue
 
-        prompt_a, prompt_b = arm_prompts(manifest, key, contexts[key])
+        prompt_a, prompt_b = arm_prompts(manifest, key, contexts[key], plan['cards'][key])
         prompt = prompt_a if arm == 'A' else prompt_b
         prompt_sha = sha256_text(prompt)
         if prompt_sha != plan['prompts'][key][arm]['sha256']:
@@ -1098,6 +1357,10 @@ def main(argv=None) -> int:
     ap.add_argument('--select', action='store_true',
                     help='apply SELECTION_RULE to the input dir and print/seal the 8 keys')
     ap.add_argument('--plan', action='store_true', help='seal the immutable plan')
+    ap.add_argument('--lane', choices=LANES, default='whole',
+                    help='call SHAPE to qualify: whole (one card per call, the 8%% lane) or '
+                         'fragment (one presplit group per call, the 92%% lane). Sealed into '
+                         'the plan at --plan time; --check and --execute read it from there.')
     ap.add_argument('--check', action='store_true', help='offline fail-closed verification')
     ap.add_argument('--execute', action='store_true', help='spend up to 16 reserved calls')
     ap.add_argument('--receipt', action='store_true', help='emit the GO/NO-GO receipt')
@@ -1141,9 +1404,20 @@ def main(argv=None) -> int:
         if os.path.exists(selection_path):
             with open(selection_path, encoding='utf-8') as handle:
                 selection = json.load(handle).get('strata')
-        plan = build_plan(args.manifest, args.context_dir, selection=selection)
+        plan = build_plan(args.manifest, args.context_dir, selection=selection,
+                          lane=args.lane)
         path = atomic_json(os.path.join(args.out_dir, 'plan.json'), plan)
-        print('sealed plan %s  plan_sha256=%s' % (path, plan['plan_sha256']))
+        print('sealed plan %s  lane=%s  plan_sha256=%s'
+              % (path, plan.get('lane', 'whole'), plan['plan_sha256']))
+        if plan.get('lane') == 'fragment':
+            for uid in plan['keys']:
+                card = plan['cards'][uid]
+                print('  %-16s %2d fragment(s)  %-15s A=%d B=%d bytes'
+                      % (uid, card['group_fragments'], card['stratum'],
+                         plan['prompts'][uid]['A']['bytes'],
+                         plan['prompts'][uid]['B']['bytes']))
+            for note in plan['group_selection_relaxations']:
+                print('  RELAXED: %s' % json.dumps(note, ensure_ascii=False, sort_keys=True))
         return 0
 
     if args.check:
