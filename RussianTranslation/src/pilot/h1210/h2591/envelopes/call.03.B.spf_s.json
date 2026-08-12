@@ -1,0 +1,50 @@
+{
+ "arm": "B",
+ "audit": {
+  "audited": true,
+  "coverage": 1.0,
+  "defects": [],
+  "issues": [],
+  "schema_ok": true
+ },
+ "context_sha256": "3ee5d10bd0773018775bd09e3a7d3d5459484efe217147ac680fbde45883a4d8",
+ "detail": null,
+ "failure_class": null,
+ "key1": "spfS",
+ "ordinal": 3,
+ "pair": 1,
+ "plan_sha256": "15f1f3a6db141828f4e91c1e2298180fced8fd07b87f818793a666b7cbf3f064",
+ "prompt_bytes": 30960,
+ "prompt_sha256": "cc3de79845ff581ef0cee791c91bc948b4a5c41ceb6458b0187dc2571aa8fb15",
+ "requested_model": "claude-opus-5",
+ "result_sha256": "75800cdd1fac7b8624f85535652da79cdfc54257cb1825a290ebdc2f5a21dd6c",
+ "returncode": 0,
+ "returned_model": "claude-opus-5",
+ "schema": "pwg.prep_context_comparison_envelope.v1",
+ "telemetry": {
+  "accounting": {
+   "billing_mode": "unknown_gateway",
+   "cache_creation_tokens": 37219,
+   "cache_read_tokens": 24286,
+   "credit_claim_evidence": null,
+   "credit_equivalent_usd": null,
+   "input_tokens": 2,
+   "list_equivalent_usd": null,
+   "observed_cash_usd": null,
+   "output_tokens": 13079,
+   "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+   "schema": "pwg.usage_accounting.v1",
+   "usage_evaluable": true
+  },
+  "cache_creation_tokens": 37219,
+  "cache_read_tokens": 24286,
+  "cost_evaluable": false,
+  "duration_api_ms": 155073,
+  "duration_ms": 159475,
+  "input_tokens": 2,
+  "observed_cost_usd": 0,
+  "output_tokens": 13079,
+  "subagent_tokens": 74586
+ },
+ "wall_ms": 169847
+}

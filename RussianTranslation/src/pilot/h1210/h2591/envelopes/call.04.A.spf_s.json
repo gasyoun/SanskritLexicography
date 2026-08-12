@@ -1,0 +1,50 @@
+{
+ "arm": "A",
+ "audit": {
+  "audited": true,
+  "coverage": 1.0,
+  "defects": [],
+  "issues": [],
+  "schema_ok": true
+ },
+ "context_sha256": null,
+ "detail": null,
+ "failure_class": null,
+ "key1": "spfS",
+ "ordinal": 4,
+ "pair": 1,
+ "plan_sha256": "15f1f3a6db141828f4e91c1e2298180fced8fd07b87f818793a666b7cbf3f064",
+ "prompt_bytes": 29618,
+ "prompt_sha256": "9ff6ef6f1dfcf1c54ce0ba8b1c00fcac1c45cd63cf516c13b6a8543a31b13196",
+ "requested_model": "claude-opus-5",
+ "result_sha256": "1e0f79fcd493f4e756a2dd0ba719742847a61104daf961ebcc6c4aceb9ec81ab",
+ "returncode": 0,
+ "returned_model": "claude-opus-5",
+ "schema": "pwg.prep_context_comparison_envelope.v1",
+ "telemetry": {
+  "accounting": {
+   "billing_mode": "unknown_gateway",
+   "cache_creation_tokens": 0,
+   "cache_read_tokens": 0,
+   "credit_claim_evidence": null,
+   "credit_equivalent_usd": null,
+   "input_tokens": 0,
+   "list_equivalent_usd": null,
+   "observed_cash_usd": null,
+   "output_tokens": 0,
+   "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+   "schema": "pwg.usage_accounting.v1",
+   "usage_evaluable": true
+  },
+  "cache_creation_tokens": 0,
+  "cache_read_tokens": 0,
+  "cost_evaluable": false,
+  "duration_api_ms": 390245,
+  "duration_ms": 393195,
+  "input_tokens": 0,
+  "observed_cost_usd": 0,
+  "output_tokens": 0,
+  "subagent_tokens": 0
+ },
+ "wall_ms": 416839
+}

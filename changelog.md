@@ -14,6 +14,20 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.35] - 2026-08-12
+
+### Added
+- **H2591 measured run — 16/16 calls, verdict INCONCLUSIVE** ([receipt](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2591/comparison_receipt.json), [evidence](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2591/README.md)). Human-authorized with billing classified UNKNOWN; all 8 `--check` conditions passed with 0 transport calls; every reservation finalized exactly once; no promotion, store, or TM write. Arms tied at 4/8 audited cards.
+
+### Fixed
+- **Zero-filled usage passed as present usage.** 7 of 16 calls returned every usage counter zeroed — including two that produced cards passing the deterministic audit at coverage 1.0, which is arithmetically impossible. `usage_evaluable()` checked the *shape* of the usage block, not whether it said anything, so the run spent all 16 calls and the receipt graded a token comparison built over holes. All-zero usage now reads as missing (stopping the run), and any usage hole or unattested model forces INCONCLUSIVE ahead of the GO arithmetic. Pinned by `test_zero_filled_usage_is_missing_usage_not_a_measurement`; matrix 13/13, window suite 211/211.
+- **A sealed plan pinned its manifest by absolute path**, so a plan outlived the worktree it was sealed in. `resolve_manifest()` now resolves by content — explicit `--manifest`, then the sealed path, then beside the plan — and whatever it finds must hash to the sealed digest.
+
+### Known
+- **The markup-heavy stratum is unqualifiable at a whole-card call shape**: `Srama` and `samIpa` (234 placeholders each) returned non-JSON at char 0 in *both* arms at 141–324 s. This is about production's presplit lane, not context design.
+- **Two driver defects remain**: envelopes discard the raw result text (so a content failure's actual output is unrecoverable), and an absent `returned_model` does not stop the run at call time (call 09 was paid and unattested).
+- Max-route billing is still `unknown_gateway` — nothing writes `execution.agent_sdk_credit_claimed` ([#1649](https://github.com/gasyoun/SanskritLexicography/issues/1649)).
+
 ## [1.144.34] - 2026-08-12
 
 ### Added
