@@ -118,4 +118,80 @@ Cost of this diagnosis: two probe calls (~$1.40 list-equivalent, billing `unknow
 outside the sealed ledger — a diagnostic probe must not consume a reservation from a run
 that is already finalized.
 
+---
+
+## Update, same day — the child transcripts DO exist, and they settle B1
+
+**Correction to this document's own claim.** It said the CLI wrote no transcript, so that
+evidence path was closed. That was wrong: it looked under `~/.claude`, but this session runs
+under the **`claude1` profile on `D:`**, and all sixteen child calls wrote transcripts to
+`D:\ClaudeTools\profiles\claude1\.claude\projects\D--pwg-ru-cli-cwd\`. Nothing was lost.
+
+### The account was NOT rate limited
+
+Every `rc=1` call carries an explicit API error in its own transcript:
+
+| ord | time (UTC) | card | error recorded by the CLI |
+|---|---|---|---|
+| 5 | 13:49 | Srama A | `The response stopped arriving. The response above may be incomplete.` |
+| 6 | 13:54 | Srama B | `The response stopped arriving…` |
+| 7 | 13:59 | samIpa B | `Connection lost mid-response…` |
+| 8 | 14:01 | samIpa A | `The response stopped arriving…` |
+| 9 | 14:06 | vyavasTA A | **`529 Overloaded. This is a server-side issue, usually temporary`** |
+| 11 | 14:15 | SudDi B | `Connection lost mid-response…` |
+
+One **529 Overloaded** plus five streaming truncations, inside a 29-minute band
+(13:49:17 → 14:18:38 UTC) that is bounded by clean calls on both sides and contains one
+clean call (ord 10) in its middle. **No rate-limit or usage-limit message appears anywhere
+in the window** — the H2313 weekly-limit signature this document floated as the leading
+hypothesis is *absent*. The cause is transient provider-side degradation.
+
+The real run window was **13:25:56 → 14:26:19 UTC**, not the 07:53–11:40 quoted earlier
+(that was the handoff *claim* time, not the run).
+
+This also settles ord 9's missing `returned_model`: a 529 means no response arrived, so
+there was no model to attest.
+
+### B2's premise is now refuted, not merely weakened
+
+`Srama`/`samIpa` failed in both arms because the **stream died**, not because a
+234-placeholder card defeats a whole-card call. Note the confound the frozen order created:
+the strata were scheduled contiguously, so the four dense cards occupy exactly the ordinals
+that fall inside the outage band — card class and wall-clock time are perfectly confounded
+in this run. The API errors break the tie in favour of *time*. **A re-run should randomise
+or interleave the key order** so a future outage cannot masquerade as a stratum effect.
+
+### The token axis is recoverable — and it says NO-GO
+
+The transcripts prove calls 1 and 4 really spent tokens while their envelopes reported
+zeros. Transcript totals must first be **deduped**: each assistant message is written twice
+(verified — one `message_id` with identical `output_tokens` appearing `x 2`), and the
+transcript total is *exactly* 2× the envelope total on all nine healthy calls, which
+calibrates the correction against a known-good reference.
+
+Deduped output tokens for the two anomalous calls: **ord 1 ≈ 7 161**, **ord 4 ≈ 5 797** —
+real spend the receipt recorded as zero.
+
+With both recovered, no evidence hole remains: the five `rc=1` calls genuinely spent ~nothing
+(their transcripts show 0–2 output tokens), so their zeros are TRUE rather than dropped.
+
+| | arm A (baseline) | arm B (PREP) |
+|---|---|---|
+| non-cache tokens, all calls | 43 752 | 73 002 |
+| non-cache tokens, 4 cards both arms returned | 21 202 | **60 340** |
+
+**PREP costs ~1.7× the non-cache tokens overall and ~2.8× on the like-for-like subset.**
+
+And it reframes the wall-clock margin that produced the original GO. On `SvAsa`, arm A spent
+358.9 s to emit 7 161 output tokens (≈20 tok/s) while arm B spent 454.9 s to emit 40 421
+(≈89 tok/s). Arm A was not doing more work more slowly; it was **stalling**. On the two cards
+where output volume is comparable (`rAtra`, `zoqaSan`) arm B was both faster and cheaper.
+
+**Verdict implication:** the GO rule needs PREP to lose ≤1 audited card *and* improve wall or
+non-cache tokens by >10%. Cards tie 4–4; tokens are decisively worse; the wall margin is an
+artifact of arm A stalling and of failure durations. That is a **NO-GO**, not an
+INCONCLUSIVE — but the sealed receipt is left as it stands, because it is the honest record
+of what the run itself could know. Re-grading belongs to the H2598 re-run, with the recovery
+method above available to it.
+
 _Dr. Mārcis Gasūns_
