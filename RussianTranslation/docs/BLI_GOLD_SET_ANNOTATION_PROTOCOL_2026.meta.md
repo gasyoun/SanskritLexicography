@@ -1,6 +1,6 @@
 # Metadoc — BLI gold-set annotation protocol
 
-_Created: 10-08-2026 · Last updated: 10-08-2026_
+_Created: 10-08-2026 · Last updated: 12-08-2026_
 
 Companion to [BLI_GOLD_SET_ANNOTATION_PROTOCOL_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/BLI_GOLD_SET_ANNOTATION_PROTOCOL_2026.md).
 
@@ -52,8 +52,11 @@ limitations are the honest-caveats section of that paper in draft form.
    structurally cannot.
 4. **Second gold-content dictionary** — Kochergina's register is one voice; a second
    independent Ru source would let §8's register caveat be measured rather than asserted.
-5. **Emit the annotation sheet** (`/review-sheet`, Russian, 500 class-(d) cards) — deliberately
-   left to its own handoff; the protocol only specifies it.
+5. ✅ **DONE 12-08-2026** — [H2551](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2551-Sonnet_SanskritLexicography_bli-b1-gold-annotation-sheet-500_10.08.26.md)
+   (**Sonnet 5**) shipped [`build_bli_gold_b1_500_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/build_bli_gold_b1_500_sheet.py)
+   ([PR #1660](https://github.com/gasyoun/SanskritLexicography/pull/1660), [v1.144.38](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.38)) — Russian, 500 class-(d)
+   cards via `csl_pyutil.render_review_sheet`. Awaiting MG's vote; row in
+   [`Uprava/REVIEW_SHEETS_INDEX.md`](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md).
 
 ## Limitations of this document
 
@@ -67,5 +70,6 @@ or `--per-cell` changes them, and §7's table must then be regenerated from
 | Date | Change | Model |
 |---|---|---|
 | 10-08-2026 | Created with the protocol (H2401): frame design, homograph exclusion, per-stratum presence tables, scorer contract | Fable 5 (`claude-fable-5`) |
+| 12-08-2026 | Backlog item 5 (emit sheet) marked done — [H2551](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2551-Sonnet_SanskritLexicography_bli-b1-gold-annotation-sheet-500_10.08.26.md) shipped the 500-card pass-1 vehicle | Sonnet 5 (`claude-sonnet-5`) |
 
 _Dr. Mārcis Gasūns_

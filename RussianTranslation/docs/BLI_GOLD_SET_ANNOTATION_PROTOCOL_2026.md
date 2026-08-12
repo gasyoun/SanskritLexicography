@@ -1,6 +1,6 @@
 # BLI gold-set design and annotation protocol (Sa→Ru, ACL roadmap B1)
 
-_Created: 10-08-2026 · Last updated: 10-08-2026_
+_Created: 10-08-2026 · Last updated: 12-08-2026_
 
 Design of record for the **human-annotated, stratified Sa→Ru gold set** that ACL roadmap
 [B1](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/ROADMAP_ACL_LESSONS_2026.md)
@@ -149,7 +149,11 @@ Phase 0: ≥5 items, repeated identical judgments) — Russian-language interfac
 to the entry, one card per lemma, and the screening gate declared. Note the inversion:
 here the human label **is** the deliverable, so every row is a class-(d) card by
 construction; that must be stated explicitly in `screening=` rather than passed as a
-formality. Emitting the sheet is the next handoff's work, not this one's.
+formality. **Shipped 12-08-2026** by [H2551](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2551-Sonnet_SanskritLexicography_bli-b1-gold-annotation-sheet-500_10.08.26.md)
+(**Sonnet 5**) — [`build_bli_gold_b1_500_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/eval/build_bli_gold_b1_500_sheet.py)
+([PR #1660](https://github.com/gasyoun/SanskritLexicography/pull/1660)); label = free-text
+note (acceptable Russian equivalents), SKIP = reject path with a reason picker. Awaiting
+MG's vote.
 
 ## 6. Interaction with the scorer (H2402)
 
