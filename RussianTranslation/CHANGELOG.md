@@ -10,6 +10,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+## [1.144.33] - 2026-08-12
 ### Added
 
 - **Flash PREP/TM fence hardening and sealed Claude context qualification input (12-08-2026, Codex `gpt-5.6-sol`):** `prep_pack.py` can now consume immutable execution-manifest source bytes, records source and manifest hashes, and no longer parks valid keys merely because gitignored raw inputs are absent. Only content-addressed `exact_content_sha` hits may be presented to the promoter as exact-reuse candidates; same-key and fuzzy hits remain advisory even at score `1.0`. New replay-identical `pwg.prep_context.v1` artifacts bind the full PREP hash, compact sense anchors, ranked TM evidence, deterministic gate, R4.3a promoter-only policy, and `promotable=false`; an existing different artifact is refused. The written/oral TM scope is also machine-pinned as 7 intended, 11 forbidden, and 8 future questions. Offline validation: focused and schema selftests, real three-card frozen-manifest replay, 210/210 window tests, 123/123 pytest tests, language parity 95/95, and CI gate runner green. Zero model/network calls and zero store/TM/promotion writes.
