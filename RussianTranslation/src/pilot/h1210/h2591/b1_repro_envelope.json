@@ -1,0 +1,428 @@
+{
+ "is_error": false,
+ "duration_api_ms": 150255,
+ "num_turns": 2,
+ "stop_reason": "tool_use",
+ "total_cost_usd": 0.946615,
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 62948,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 12685,
+  "output_tokens_details": {
+   "thinking_tokens": 3748
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 62948,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 12685,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 62948,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 62948
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard"
+ },
+ "modelUsage": {
+  "claude-opus-5": {
+   "inputTokens": 2,
+   "outputTokens": 12685,
+   "cacheReadInputTokens": 0,
+   "cacheCreationInputTokens": 62948,
+   "webSearchRequests": 0,
+   "costUSD": 0.946615,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 64000,
+   "canonicalModel": "claude-opus-5",
+   "provider": "firstParty"
+  }
+ },
+ "permission_denials": [],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"cards\":[{\"key1\":\"SvAsa\",\"iast\":\"śvāsa\",\"notes\":\"Три слоя переданы как отдельные records: PWG (главная статья), PW (краткая редакция Бётлингка), NWS (Nachtragswörterbuch, 20 строк по авторитетной owner-map, в исходном порядке; owner-цитата стоит последней в каждой строке). Все {Tn}-плейсхолдеры сохранены дословно и в исходном порядке; санскрит, сиглы и грамматические сокращения не переводились. Дискриминация синонимов: Gezisch → «шипение» (звук змеи), Geschnauf → «сопение» (шумное дыхание через нос); Athemzug → «вдох» как единичный дыхательный акт (эпический корпус), Seufzer → «вздох» (классический и средневековый корпус) — русские «вдох» и «вздох» разводят два немецких понятия, которые корпусные кандидаты дают вперемешку. Hauch в фонетическом контексте → «придыхание» (термин), а не «дуновение».\",\"records\":[{\"h\":\"śvāsa\",\"grammar\":\"m., f.\",\"senses\":[{\"tag\":\"¦ (von 1. …)\",\"german\":\"{T1}¦ (von {T151}1.{T152} {T2})\",\"russian\":\"{T1}¦ (от {T151}1.{T152} {T2})\",\"equivalence_type\":\"explanatory\",\"source_type\":\"mixed\",\"stratum\":\"\",\"differentia\":\"Этимологическая помета: отсылка к глагольному корню; переводится только служебное «von» → «от».\"},{\"tag\":\"1〉\",\"german\":\"{T153} 1〉 {T3} {T4}. {T5}.\",\"russian\":\"{T153} 1〉 {T3} {T4}. {T5}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Строка содержит только грамматическую помету и грамматические сиглы — переводимой прозы нет.\"},{\"tag\":\"1〉 a〉\",\"german\":\"{T154} a〉 {%Gezisch%} (einer Schlange), {%Geschnauf%}: {T6} {T7}. {T8} {T9} {T10}. {T11} {T12}. {T13}. {T14}.\",\"russian\":\"{T154} a〉 {%шипение%} (змеи), {%сопение%}: {T6} {T7}. {T8} {T9} {T10}. {T11} {T12}. {T13}. {T14}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"Epic / early-Classical\",\"differentia\":\"Gezisch — свистящий звук выдоха змеи («шипение»); Geschnauf — шумное, тяжелое носовое дыхание человека или зверя («сопение»). Оба удержаны раздельно: запятая PWG отделяет взаимозаменяемые в пределах одного значения синонимы, но с разной сочетаемостью (шипение — о змее, сопение — о разгневанном).\"},{\"tag\":\"1〉 b〉\",\"german\":\"{T155}— b〉 {%das Athmen, Athemzug, Athem%} {T15}. {T16} {T17}. {T18} {T19}. {T20} {T21}. {T22}. {T23} {T24}. {T25} {T26}. {T27} {T28}. {T29} {T30}. {T31} {T32}. {T33} {T34}. {T35} ({%Gatte%}) {T36} {T37}. {T38} {T39}. {T40} {T41}. {T42} {T43}. {T44} {T45} zu {T46}. {T47} {T48} {T49}. {T50} {T51} ({T52}). {T53}. {T54}. {T55}. {T56}. {T57}. {T58} {T59} {T60}. {T61} {T62} {T63}. {%der Hauch%} bei der Aussprache der dumpfen Consonanten {T64} {T65} {T66} {T67}. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74} zu {T75}. {T76} bei der Aussprache der Tenues und Zischlaute {T77}_in_{T78}. im {T79} zu {T80} {%das Einathmen%} {T81}. {T82}. {T83}.\",\"russian\":\"{T155}— b〉 {%дыхание, вдох, дух%} {T15}. {T16} {T17}. {T18} {T19}. {T20} {T21}. {T22}. {T23} {T24}. {T25} {T26}. {T27} {T28}. {T29} {T30}. {T31} {T32}. {T33} {T34}. {T35} ({%супруг%}) {T36} {T37}. {T38} {T39}. {T40} {T41}. {T42} {T43}. {T44} {T45} к {T46}. {T47} {T48} {T49}. {T50} {T51} ({T52}). {T53}. {T54}. {T55}. {T56}. {T57}. {T58} {T59} {T60}. {T61} {T62} {T63}. {%придыхание%} при произнесении глухих согласных {T64} {T65} {T66} {T67}. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74} к {T75}. {T76} при произнесении tenues и шипящих {T77}_in_{T78}. в {T79} к {T80} {%вдыхание%} {T81}. {T82}. {T83}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"mixed\",\"stratum\":\"Vedic\",\"differentia\":\"Триада сохранена в исходной мощности: das Athmen — процесс («дыхание»), Athemzug — единичный дыхательный акт («вдох», ср. эпические корпусные употребления), Athem — само дыхание как выдыхаемое дуновение («дух»). Внутри значения — фонетический подраздел: der Hauch при глухих согласных передается терминологическим «придыхание», а не бытовым «дуновение»; служебные zu/im/bei переведены («к», «в», «при произнесении»), Tenues как латинский фонетический термин оставлен.\"},{\"tag\":\"1〉 c〉\",\"german\":\"{T156}— c〉 {%das Seufzen, Seufzer%} {T84}. {T85}. {T86} {T87}. {T88}.\",\"russian\":\"{T156}— c〉 {%вздыхание, вздох%} {T84}. {T85}. {T86} {T87}. {T88}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Classical\",\"differentia\":\"das Seufzen — процесс («вздыхание»), Seufzer — единичный акт («вздох»); мощность пары удержана. «Вздох» (классический и средневековый корпус) противопоставлен «вдоху» значения b〉 — здесь эмоциональный, а не физиологический акт.\"},{\"tag\":\"1〉 d〉\",\"german\":\"{T157}— d〉 {%schwerer Athem, Asthma%} {T89}. {T90}. zerfällt in die Arten {T91} {T92} {T93}. {T94}. {T95}. {T96}. {T97}. {T98}. {T99}. {T100} {T101}. {T102} {T103}. {T104} {T105}. {T106} {T107}. {T108}. {T109}. {T110}. {T111}. {T112}.\",\"russian\":\"{T157}— d〉 {%тяжелое дыхание, астма%} {T89}. {T90}. разделяется на виды {T91} {T92} {T93}. {T94}. {T95}. {T96}. {T97}. {T98}. {T99}. {T100} {T101}. {T102} {T103}. {T104} {T105}. {T106} {T107}. {T108}. {T109}. {T110}. {T111}. {T112}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Classical\",\"differentia\":\"Медицинское значение: schwerer Athem — описательное «тяжелое дыхание», Asthma — терминологическое «астма»; «zerfällt in die Arten» как связующая проза переведено («разделяется на виды»).\"},{\"tag\":\"2〉\",\"german\":\"{T158}— 2〉 {T113} {T114} {T115} der Mutter des Windgottes ({T116}) {T117}.\",\"russian\":\"{T158}— 2〉 {T113} {T114} {T115} матери бога ветра ({T116}) {T117}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Epic / early-Classical\",\"differentia\":\"Имя собственное f.; переведена только связующая проза генитивной формулы.\"},{\"tag\":\"— Vgl.\",\"german\":\"{T159}— {T118} {T119}.\",\"russian\":\"{T159}— {T118} {T119}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Отсылочная помета: состоит из сиглы сравнения и санскритских форм, переводимой прозы нет.\"}]},{\"h\":\"śvāsa (PW)\",\"grammar\":\"m., f.\",\"senses\":[{\"tag\":\"[PW] ¦\",\"german\":\"{T120}¦\",\"russian\":\"{T120}¦\",\"equivalence_type\":\"explanatory\",\"source_type\":\"mixed\",\"stratum\":\"\",\"differentia\":\"\"},{\"tag\":\"[PW] 1〉\",\"german\":\"{T160}— 1〉 {T121}\",\"russian\":\"{T160}— 1〉 {T121}\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Только грамматическая помета.\"},{\"tag\":\"[PW] a〉\",\"german\":\"{T161}— a〉 {%Gezisch, Geschnauf%}.\",\"russian\":\"{T161}— a〉 {%шипение, сопение%}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"Epic / early-Classical\",\"differentia\":\"Как в PWG 1〉 a〉, но без пояснения «einer Schlange» — оно здесь отсутствует и не добавляется.\"},{\"tag\":\"[PW] b〉\",\"german\":\"{T162}— b〉 {%das Athmen, Athemzug, Athem%} {T122}. Als Zeitmaass = {T123}, {T124} {T125}.\",\"russian\":\"{T162}— b〉 {%дыхание, вдох, дух%} {T122}. Как мера времени = {T123}, {T124} {T125}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"mixed\",\"stratum\":\"Classical\",\"differentia\":\"Als Zeitmaass — служебная формула, переведена («как мера времени»); триада синонимов передана той же мощностью, что и в PWG.\"},{\"tag\":\"[PW] c〉\",\"german\":\"{T163}— c〉 {%das Einathmen%}.\",\"russian\":\"{T163}— c〉 {%вдыхание%}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"Vedic\",\"differentia\":\"Направленный акт вдоха как процесс — «вдыхание», отлично от единичного «вдох» (Athemzug) значения b〉.\"},{\"tag\":\"[PW] d〉\",\"german\":\"{T164}— d〉 {%der Hauch%} bei der Aussprache der dumpfen Consonanten {T126} {T127} {T128}. {T129}.\",\"russian\":\"{T164}— d〉 {%придыхание%} при произнесении глухих согласных {T126} {T127} {T128}. {T129}.\",\"equivalence_type\":\"equivalent\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"В PW вынесено в самостоятельное значение; фонетический термин «придыхание».\"},{\"tag\":\"[PW] e〉\",\"german\":\"{T165}— e〉 {%das Seufzen, Seufzer%}.\",\"russian\":\"{T165}— e〉 {%вздыхание, вздох%}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Classical\",\"differentia\":\"\"},{\"tag\":\"[PW] f〉\",\"german\":\"{T166}— f〉 {%Athembeschwerden, Asthma%} {T130}.\",\"russian\":\"{T166}— f〉 {%затруднения дыхания, астма%} {T130}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Classical\",\"differentia\":\"Böhtlingk в PW заменил «schwerer Athem» на «Athembeschwerden» — передано как «затруднения дыхания» (симптомокомплекс), а не «тяжелое дыхание».\"},{\"tag\":\"[PW] 2〉\",\"german\":\"{T167}— 2〉 {T131} {T132} {T133} {%der Mutter des Windgottes%}.\",\"russian\":\"{T167}— 2〉 {T131} {T132} {T133} {%матери бога ветра%}.\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Epic / early-Classical\",\"differentia\":\"\"}]},{\"h\":\"śvāsa (NWS)\",\"grammar\":\"m., f.\",\"senses\":[{\"tag\":\"[NWS] 1\",\"german\":\"{T134} [Gen , unsp] Subst m panting. R , Kathās , BhāgP . breathing or aspiration (in the pronunciation of consonants). ṚVPrā . affection of the breath, hard breathing, asthma. Suś . [ of which there are five kinds, viz. kṣudra , tamaka , chinna , mahat , and ūrdhva . ]\",\"russian\":\"{T134} [Gen , unsp] Subst m пыхтение, шумное дыхание. R , Kathās , BhāgP . дыхание или придыхание (при произнесении согласных). ṚVPrā . расстройство дыхания, тяжелое дыхание, астма. Suś . [ каковых имеется пять видов, а именно kṣudra , tamaka , chinna , mahat и ūrdhva . ] [NWS: MW : 1106]\",\"equivalence_type\":\"explanatory\",\"source_type\":\"mixed\",\"stratum\":\"Epic / early-Classical\",\"differentia\":\"Глосса английская, переведена напрямую с английского: panting — частое шумное дыхание («пыхтение»), не «одышка» (это affection of the breath ниже).\"},{\"tag\":\"[NWS] 2\",\"german\":\"[Śā , Ling] Subst m ein vāhyaprayatna . Pāṇ I.1.9\",\"russian\":\"[Śā , Ling] Subst m один vāhyaprayatna . Pāṇ I.1.9 [NWS: Böhtlingk 1840 : 537]\",\"equivalence_type\":\"explanatory\",\"source_type\":\"lexicographic\",\"stratum\":\"\",\"differentia\":\"Грамматико-фонетическое употребление: одно из внешних артикуляционных усилий; термин vāhyaprayatna оставлен без перевода.\"},{\"tag\":\"[NWS] 3\",\"german\":\"[Śā , Med] asthma. Hoernle 1893-1912 (I) 4.37 . [ disease. ] [Pl] attacks of asthma. Hoernle 1893-1912 (II) 72.1028\",\"russian\":\"[Śā , Med] астма. Hoernle 1893-1912 (I) 4.37 . [ болезнь. ] [Pl] приступы астмы. Hoernle 1893-1912 (II) 72.1028 [NWS: Hoernle 1908 : 331]\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"Во мн. ч. — не «астма», а счетные «приступы астмы»; различие передано вслед за источником.\"},{\"tag\":\"[NWS] 4\",\"german\":\"[Buddh , unsp] [Śvāsa] n. of a nāga , previous birth of Dhṛtarāṣṭra ( mahārājan ). MSV i.260.18 ff\",\"russian\":\"[Buddh , unsp] [Śvāsa] имя одного nāga , предшествующее рождение Dhṛtarāṣṭra ( mahārājan ). MSV i.260.18 ff [NWS: BHSD : 537]\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"\"},{\"tag\":\"[NWS] 5\",\"german\":\"{T135} [Kāv , Med] „unterbrochener Atem“, Asthma mit starker Atemnot, Gelenkschmerzen und Anfällen von Bewußtlosigkeit. [ eine der 5 Arten von śvāsa . ]\",\"russian\":\"{T135} [Kāv , Med] «прерывистое дыхание», астма с сильной одышкой, суставными болями и приступами потери сознания. [ один из 5 видов śvāsa . ] [NWS: Weckerling 1937 : 239 (s.v. śvāsa)]\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Classical\",\"differentia\":\"Здесь Atemnot — именно «одышка» (нехватка воздуха), в отличие от panting строки 1.\"},{\"tag\":\"[NWS] 6\",\"german\":\"{T136} [Kāv , Med] leichtes Asthma. [ eine der 5 Arten von śvāsa . ]\",\"russian\":\"{T136} [Kāv , Med] легкая астма. [ один из 5 видов śvāsa . ] [NWS: Weckerling 1937 : 238 (s.v. śvāsa)]\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"Classical\",\"differentia\":\"\"},{\"tag\":\"[NWS] 7\",\"german\":\"{T137} [Kāv , Med] das „große Asthma“ mit weithin hörbarem, röchelndem Atem und rollenden Augen, führt bald zum Tode. [ eine der 5 Arten von śvāsa . ]\",\"russian\":\"{T137} [Kāv , Med] «большая астма» с далеко слышным, хрипящим дыханием и закатывающимися глазами, вскоре ведет к смерти. [ один из 5 видов śvāsa . ] [NWS: Weckerling 1937 : 238 (s.v. śvāsa)]\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Classical\",\"differentia\":\"röchelnd — «хрипящий» (предсмертный хрип), не «свистящий».\"},{\"tag\":\"[NWS] 8\",\"german\":\"{T138} [Kāv , Med] Asthma mit Auswurf, Atemnot und Durst. [ eine der 5 Arten von śvāsa . ]\",\"russian\":\"{T138} [Kāv , Med] астма с мокротой, одышкой и жаждой. [ один из 5 видов śvāsa . ] [NWS: Weckerling 1937 : 238 (s.v. śvāsa)]\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Classical\",\"differentia\":\"Auswurf в медицинском регистре — «мокрота» (отхаркиваемое), не «выброс».\"},{\"tag\":\"[NWS] 9\",\"german\":\"{T139} [Śā , Med] curing asthma. Hoernle 1893-1912 (I) 4.38 .\",\"russian\":\"{T139} [Śā , Med] излечивающий астму. Hoernle 1893-1912 (I) 4.38 . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"Композит правовершинный, -ghna — «убивающий, устраняющий»; в медицинском регистре передается причастием «излечивающий».\"},{\"tag\":\"[NWS] 10\",\"german\":\"{T140} [Śā , Med] Hoernle 1893-1912 (II) 26.12 ; śvāsaghna .\",\"russian\":\"{T140} [Śā , Med] Hoernle 1893-1912 (II) 26.12 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"Отсылочная статья: значение задается через синоним śvāsaghna, собственной глоссы нет.\"},{\"tag\":\"[NWS] 11\",\"german\":\"{T141} [Gen , unsp] Subst f a kind of hiccough (° kkin mfn. suffering from it). Caraka(MW) .\",\"russian\":\"{T141} [Gen , unsp] Subst f род икоты (° kkin mfn. ею страдающий). Caraka(MW) . [NWS: MW : 1106 (s.v. śvāsa)]\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"\"},{\"tag\":\"[NWS] 12\",\"german\":\"{T142} [Śā , Med] Hoernle 1893-1912 (II) 27.18 ; śvāsaghna .\",\"russian\":\"{T142} [Śā , Med] Hoernle 1893-1912 (II) 27.18 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"Отсылочная статья, ср. строку 10.\"},{\"tag\":\"[NWS] 13\",\"german\":\"{T143} [Śā , Med] Hoernle 1893-1912 (II) 27.20 ; śvāsaghna .\",\"russian\":\"{T143} [Śā , Med] Hoernle 1893-1912 (II) 27.20 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"\"},{\"tag\":\"[NWS] 14\",\"german\":\"{T144} [Śā , Med] Hoernle 1893-1912 (II) 27.24 ; śvāsaghna .\",\"russian\":\"{T144} [Śā , Med] Hoernle 1893-1912 (II) 27.24 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"\"},{\"tag\":\"[NWS] 15\",\"german\":\"{T145} [Śā , Med] Hoernle 1893-1912 (II) 27.26 ; śvāsaghna .\",\"russian\":\"{T145} [Śā , Med] Hoernle 1893-1912 (II) 27.26 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"\"},{\"tag\":\"[NWS] 16\",\"german\":\"{T146} [Śā , Med] Hoernle 1893-1912 (II) 34.149 ; śvāsaghna .\",\"russian\":\"{T146} [Śā , Med] Hoernle 1893-1912 (II) 34.149 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"\"},{\"tag\":\"[NWS] 17\",\"german\":\"{T147} [Śā , Med] Hoernle 1893-1912 (II) 41.286 ; śvāsaghna .\",\"russian\":\"{T147} [Śā , Med] Hoernle 1893-1912 (II) 41.286 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"\"},{\"tag\":\"[NWS] 18\",\"german\":\"{T148} [Gen , unsp] Subst f N of the mother of Śvasana (the god of wind). Mbh . Convolvulus Turpethum . Lex(MW) .\",\"russian\":\"{T148} [Gen , unsp] Subst f N матери Śvasana (бога ветра). Mbh . Convolvulus Turpethum . Lex(MW) . [NWS: MW : 1106 (s.v. śvāsa)]\",\"equivalence_type\":\"explanatory\",\"source_type\":\"mixed\",\"stratum\":\"Epic / early-Classical\",\"differentia\":\"Второе значение (ботаническое) дано только по кошам (Lex(MW)) — лексикографическая часть смешанной статьи; латинское название растения оставлено.\"},{\"tag\":\"[NWS] 19\",\"german\":\"{T149} [Śā , Med] overcome with asthma. Hoernle 1893-1912 (III) 182.22 .\",\"russian\":\"{T149} [Śā , Med] одолеваемый астмой. Hoernle 1893-1912 (III) 182.22 . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]\",\"equivalence_type\":\"equivalent\",\"source_type\":\"attested\",\"stratum\":\"\",\"differentia\":\"Bahuvrīhi-подобное причастное сложение: носитель признака вне композита — «тот, кого одолела астма».\"},{\"tag\":\"[NWS] 20\",\"german\":\"{T150} [Kāv , Med] „Ausatmen“, d.h., der Kranke atmet lange aus, Augen sind nach oben gerichtet, Bewußtlosigkeit, schließlich Eintritt des Todes. [ eine der 5 Arten von śvāsa . ]\",\"russian\":\"{T150} [Kāv , Med] «выдыхание», т.е. больной долго выдыхает, глаза обращены вверх, потеря сознания, наконец наступление смерти. [ один из 5 видов śvāsa . ] [NWS: Weckerling 1937 : 238 (s.v. śvāsa)]\",\"equivalence_type\":\"explanatory\",\"source_type\":\"attested\",\"stratum\":\"Classical\",\"differentia\":\"Ausatmen — процесс выдоха («выдыхание»), противопоставлен Einathmen «вдыхание» PW c〉.\"}]}]}]}",
+ "structured_output": {
+  "cards": [
+   {
+    "key1": "SvAsa",
+    "iast": "śvāsa",
+    "notes": "Три слоя переданы как отдельные records: PWG (главная статья), PW (краткая редакция Бётлингка), NWS (Nachtragswörterbuch, 20 строк по авторитетной owner-map, в исходном порядке; owner-цитата стоит последней в каждой строке). Все {Tn}-плейсхолдеры сохранены дословно и в исходном порядке; санскрит, сиглы и грамматические сокращения не переводились. Дискриминация синонимов: Gezisch → «шипение» (звук змеи), Geschnauf → «сопение» (шумное дыхание через нос); Athemzug → «вдох» как единичный дыхательный акт (эпический корпус), Seufzer → «вздох» (классический и средневековый корпус) — русские «вдох» и «вздох» разводят два немецких понятия, которые корпусные кандидаты дают вперемешку. Hauch в фонетическом контексте → «придыхание» (термин), а не «дуновение».",
+    "records": [
+     {
+      "h": "śvāsa",
+      "grammar": "m., f.",
+      "senses": [
+       {
+        "tag": "¦ (von 1. …)",
+        "german": "{T1}¦ (von {T151}1.{T152} {T2})",
+        "russian": "{T1}¦ (от {T151}1.{T152} {T2})",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": "Этимологическая помета: отсылка к глагольному корню; переводится только служебное «von» → «от»."
+       },
+       {
+        "tag": "1〉",
+        "german": "{T153} 1〉 {T3} {T4}. {T5}.",
+        "russian": "{T153} 1〉 {T3} {T4}. {T5}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Строка содержит только грамматическую помету и грамматические сиглы — переводимой прозы нет."
+       },
+       {
+        "tag": "1〉 a〉",
+        "german": "{T154} a〉 {%Gezisch%} (einer Schlange), {%Geschnauf%}: {T6} {T7}. {T8} {T9} {T10}. {T11} {T12}. {T13}. {T14}.",
+        "russian": "{T154} a〉 {%шипение%} (змеи), {%сопение%}: {T6} {T7}. {T8} {T9} {T10}. {T11} {T12}. {T13}. {T14}.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": "Gezisch — свистящий звук выдоха змеи («шипение»); Geschnauf — шумное, тяжелое носовое дыхание человека или зверя («сопение»). Оба удержаны раздельно: запятая PWG отделяет взаимозаменяемые в пределах одного значения синонимы, но с разной сочетаемостью (шипение — о змее, сопение — о разгневанном)."
+       },
+       {
+        "tag": "1〉 b〉",
+        "german": "{T155}— b〉 {%das Athmen, Athemzug, Athem%} {T15}. {T16} {T17}. {T18} {T19}. {T20} {T21}. {T22}. {T23} {T24}. {T25} {T26}. {T27} {T28}. {T29} {T30}. {T31} {T32}. {T33} {T34}. {T35} ({%Gatte%}) {T36} {T37}. {T38} {T39}. {T40} {T41}. {T42} {T43}. {T44} {T45} zu {T46}. {T47} {T48} {T49}. {T50} {T51} ({T52}). {T53}. {T54}. {T55}. {T56}. {T57}. {T58} {T59} {T60}. {T61} {T62} {T63}. {%der Hauch%} bei der Aussprache der dumpfen Consonanten {T64} {T65} {T66} {T67}. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74} zu {T75}. {T76} bei der Aussprache der Tenues und Zischlaute {T77}_in_{T78}. im {T79} zu {T80} {%das Einathmen%} {T81}. {T82}. {T83}.",
+        "russian": "{T155}— b〉 {%дыхание, вдох, дух%} {T15}. {T16} {T17}. {T18} {T19}. {T20} {T21}. {T22}. {T23} {T24}. {T25} {T26}. {T27} {T28}. {T29} {T30}. {T31} {T32}. {T33} {T34}. {T35} ({%супруг%}) {T36} {T37}. {T38} {T39}. {T40} {T41}. {T42} {T43}. {T44} {T45} к {T46}. {T47} {T48} {T49}. {T50} {T51} ({T52}). {T53}. {T54}. {T55}. {T56}. {T57}. {T58} {T59} {T60}. {T61} {T62} {T63}. {%придыхание%} при произнесении глухих согласных {T64} {T65} {T66} {T67}. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74} к {T75}. {T76} при произнесении tenues и шипящих {T77}_in_{T78}. в {T79} к {T80} {%вдыхание%} {T81}. {T82}. {T83}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Vedic",
+        "differentia": "Триада сохранена в исходной мощности: das Athmen — процесс («дыхание»), Athemzug — единичный дыхательный акт («вдох», ср. эпические корпусные употребления), Athem — само дыхание как выдыхаемое дуновение («дух»). Внутри значения — фонетический подраздел: der Hauch при глухих согласных передается терминологическим «придыхание», а не бытовым «дуновение»; служебные zu/im/bei переведены («к», «в», «при произнесении»), Tenues как латинский фонетический термин оставлен."
+       },
+       {
+        "tag": "1〉 c〉",
+        "german": "{T156}— c〉 {%das Seufzen, Seufzer%} {T84}. {T85}. {T86} {T87}. {T88}.",
+        "russian": "{T156}— c〉 {%вздыхание, вздох%} {T84}. {T85}. {T86} {T87}. {T88}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": "das Seufzen — процесс («вздыхание»), Seufzer — единичный акт («вздох»); мощность пары удержана. «Вздох» (классический и средневековый корпус) противопоставлен «вдоху» значения b〉 — здесь эмоциональный, а не физиологический акт."
+       },
+       {
+        "tag": "1〉 d〉",
+        "german": "{T157}— d〉 {%schwerer Athem, Asthma%} {T89}. {T90}. zerfällt in die Arten {T91} {T92} {T93}. {T94}. {T95}. {T96}. {T97}. {T98}. {T99}. {T100} {T101}. {T102} {T103}. {T104} {T105}. {T106} {T107}. {T108}. {T109}. {T110}. {T111}. {T112}.",
+        "russian": "{T157}— d〉 {%тяжелое дыхание, астма%} {T89}. {T90}. разделяется на виды {T91} {T92} {T93}. {T94}. {T95}. {T96}. {T97}. {T98}. {T99}. {T100} {T101}. {T102} {T103}. {T104} {T105}. {T106} {T107}. {T108}. {T109}. {T110}. {T111}. {T112}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": "Медицинское значение: schwerer Athem — описательное «тяжелое дыхание», Asthma — терминологическое «астма»; «zerfällt in die Arten» как связующая проза переведено («разделяется на виды»)."
+       },
+       {
+        "tag": "2〉",
+        "german": "{T158}— 2〉 {T113} {T114} {T115} der Mutter des Windgottes ({T116}) {T117}.",
+        "russian": "{T158}— 2〉 {T113} {T114} {T115} матери бога ветра ({T116}) {T117}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": "Имя собственное f.; переведена только связующая проза генитивной формулы."
+       },
+       {
+        "tag": "— Vgl.",
+        "german": "{T159}— {T118} {T119}.",
+        "russian": "{T159}— {T118} {T119}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Отсылочная помета: состоит из сиглы сравнения и санскритских форм, переводимой прозы нет."
+       }
+      ]
+     },
+     {
+      "h": "śvāsa (PW)",
+      "grammar": "m., f.",
+      "senses": [
+       {
+        "tag": "[PW] ¦",
+        "german": "{T120}¦",
+        "russian": "{T120}¦",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "[PW] 1〉",
+        "german": "{T160}— 1〉 {T121}",
+        "russian": "{T160}— 1〉 {T121}",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Только грамматическая помета."
+       },
+       {
+        "tag": "[PW] a〉",
+        "german": "{T161}— a〉 {%Gezisch, Geschnauf%}.",
+        "russian": "{T161}— a〉 {%шипение, сопение%}.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": "Как в PWG 1〉 a〉, но без пояснения «einer Schlange» — оно здесь отсутствует и не добавляется."
+       },
+       {
+        "tag": "[PW] b〉",
+        "german": "{T162}— b〉 {%das Athmen, Athemzug, Athem%} {T122}. Als Zeitmaass = {T123}, {T124} {T125}.",
+        "russian": "{T162}— b〉 {%дыхание, вдох, дух%} {T122}. Как мера времени = {T123}, {T124} {T125}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Classical",
+        "differentia": "Als Zeitmaass — служебная формула, переведена («как мера времени»); триада синонимов передана той же мощностью, что и в PWG."
+       },
+       {
+        "tag": "[PW] c〉",
+        "german": "{T163}— c〉 {%das Einathmen%}.",
+        "russian": "{T163}— c〉 {%вдыхание%}.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": "Направленный акт вдоха как процесс — «вдыхание», отлично от единичного «вдох» (Athemzug) значения b〉."
+       },
+       {
+        "tag": "[PW] d〉",
+        "german": "{T164}— d〉 {%der Hauch%} bei der Aussprache der dumpfen Consonanten {T126} {T127} {T128}. {T129}.",
+        "russian": "{T164}— d〉 {%придыхание%} при произнесении глухих согласных {T126} {T127} {T128}. {T129}.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "В PW вынесено в самостоятельное значение; фонетический термин «придыхание»."
+       },
+       {
+        "tag": "[PW] e〉",
+        "german": "{T165}— e〉 {%das Seufzen, Seufzer%}.",
+        "russian": "{T165}— e〉 {%вздыхание, вздох%}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": ""
+       },
+       {
+        "tag": "[PW] f〉",
+        "german": "{T166}— f〉 {%Athembeschwerden, Asthma%} {T130}.",
+        "russian": "{T166}— f〉 {%затруднения дыхания, астма%} {T130}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": "Böhtlingk в PW заменил «schwerer Athem» на «Athembeschwerden» — передано как «затруднения дыхания» (симптомокомплекс), а не «тяжелое дыхание»."
+       },
+       {
+        "tag": "[PW] 2〉",
+        "german": "{T167}— 2〉 {T131} {T132} {T133} {%der Mutter des Windgottes%}.",
+        "russian": "{T167}— 2〉 {T131} {T132} {T133} {%матери бога ветра%}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "śvāsa (NWS)",
+      "grammar": "m., f.",
+      "senses": [
+       {
+        "tag": "[NWS] 1",
+        "german": "{T134} [Gen , unsp] Subst m panting. R , Kathās , BhāgP . breathing or aspiration (in the pronunciation of consonants). ṚVPrā . affection of the breath, hard breathing, asthma. Suś . [ of which there are five kinds, viz. kṣudra , tamaka , chinna , mahat , and ūrdhva . ]",
+        "russian": "{T134} [Gen , unsp] Subst m пыхтение, шумное дыхание. R , Kathās , BhāgP . дыхание или придыхание (при произнесении согласных). ṚVPrā . расстройство дыхания, тяжелое дыхание, астма. Suś . [ каковых имеется пять видов, а именно kṣudra , tamaka , chinna , mahat и ūrdhva . ] [NWS: MW : 1106]",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Epic / early-Classical",
+        "differentia": "Глосса английская, переведена напрямую с английского: panting — частое шумное дыхание («пыхтение»), не «одышка» (это affection of the breath ниже)."
+       },
+       {
+        "tag": "[NWS] 2",
+        "german": "[Śā , Ling] Subst m ein vāhyaprayatna . Pāṇ I.1.9",
+        "russian": "[Śā , Ling] Subst m один vāhyaprayatna . Pāṇ I.1.9 [NWS: Böhtlingk 1840 : 537]",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": "Грамматико-фонетическое употребление: одно из внешних артикуляционных усилий; термин vāhyaprayatna оставлен без перевода."
+       },
+       {
+        "tag": "[NWS] 3",
+        "german": "[Śā , Med] asthma. Hoernle 1893-1912 (I) 4.37 . [ disease. ] [Pl] attacks of asthma. Hoernle 1893-1912 (II) 72.1028",
+        "russian": "[Śā , Med] астма. Hoernle 1893-1912 (I) 4.37 . [ болезнь. ] [Pl] приступы астмы. Hoernle 1893-1912 (II) 72.1028 [NWS: Hoernle 1908 : 331]",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": "Во мн. ч. — не «астма», а счетные «приступы астмы»; различие передано вслед за источником."
+       },
+       {
+        "tag": "[NWS] 4",
+        "german": "[Buddh , unsp] [Śvāsa] n. of a nāga , previous birth of Dhṛtarāṣṭra ( mahārājan ). MSV i.260.18 ff",
+        "russian": "[Buddh , unsp] [Śvāsa] имя одного nāga , предшествующее рождение Dhṛtarāṣṭra ( mahārājan ). MSV i.260.18 ff [NWS: BHSD : 537]",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "[NWS] 5",
+        "german": "{T135} [Kāv , Med] „unterbrochener Atem“, Asthma mit starker Atemnot, Gelenkschmerzen und Anfällen von Bewußtlosigkeit. [ eine der 5 Arten von śvāsa . ]",
+        "russian": "{T135} [Kāv , Med] «прерывистое дыхание», астма с сильной одышкой, суставными болями и приступами потери сознания. [ один из 5 видов śvāsa . ] [NWS: Weckerling 1937 : 239 (s.v. śvāsa)]",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": "Здесь Atemnot — именно «одышка» (нехватка воздуха), в отличие от panting строки 1."
+       },
+       {
+        "tag": "[NWS] 6",
+        "german": "{T136} [Kāv , Med] leichtes Asthma. [ eine der 5 Arten von śvāsa . ]",
+        "russian": "{T136} [Kāv , Med] легкая астма. [ один из 5 видов śvāsa . ] [NWS: Weckerling 1937 : 238 (s.v. śvāsa)]",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": ""
+       },
+       {
+        "tag": "[NWS] 7",
+        "german": "{T137} [Kāv , Med] das „große Asthma“ mit weithin hörbarem, röchelndem Atem und rollenden Augen, führt bald zum Tode. [ eine der 5 Arten von śvāsa . ]",
+        "russian": "{T137} [Kāv , Med] «большая астма» с далеко слышным, хрипящим дыханием и закатывающимися глазами, вскоре ведет к смерти. [ один из 5 видов śvāsa . ] [NWS: Weckerling 1937 : 238 (s.v. śvāsa)]",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": "röchelnd — «хрипящий» (предсмертный хрип), не «свистящий»."
+       },
+       {
+        "tag": "[NWS] 8",
+        "german": "{T138} [Kāv , Med] Asthma mit Auswurf, Atemnot und Durst. [ eine der 5 Arten von śvāsa . ]",
+        "russian": "{T138} [Kāv , Med] астма с мокротой, одышкой и жаждой. [ один из 5 видов śvāsa . ] [NWS: Weckerling 1937 : 238 (s.v. śvāsa)]",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": "Auswurf в медицинском регистре — «мокрота» (отхаркиваемое), не «выброс»."
+       },
+       {
+        "tag": "[NWS] 9",
+        "german": "{T139} [Śā , Med] curing asthma. Hoernle 1893-1912 (I) 4.38 .",
+        "russian": "{T139} [Śā , Med] излечивающий астму. Hoernle 1893-1912 (I) 4.38 . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": "Композит правовершинный, -ghna — «убивающий, устраняющий»; в медицинском регистре передается причастием «излечивающий»."
+       },
+       {
+        "tag": "[NWS] 10",
+        "german": "{T140} [Śā , Med] Hoernle 1893-1912 (II) 26.12 ; śvāsaghna .",
+        "russian": "{T140} [Śā , Med] Hoernle 1893-1912 (II) 26.12 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": "Отсылочная статья: значение задается через синоним śvāsaghna, собственной глоссы нет."
+       },
+       {
+        "tag": "[NWS] 11",
+        "german": "{T141} [Gen , unsp] Subst f a kind of hiccough (° kkin mfn. suffering from it). Caraka(MW) .",
+        "russian": "{T141} [Gen , unsp] Subst f род икоты (° kkin mfn. ею страдающий). Caraka(MW) . [NWS: MW : 1106 (s.v. śvāsa)]",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "[NWS] 12",
+        "german": "{T142} [Śā , Med] Hoernle 1893-1912 (II) 27.18 ; śvāsaghna .",
+        "russian": "{T142} [Śā , Med] Hoernle 1893-1912 (II) 27.18 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": "Отсылочная статья, ср. строку 10."
+       },
+       {
+        "tag": "[NWS] 13",
+        "german": "{T143} [Śā , Med] Hoernle 1893-1912 (II) 27.20 ; śvāsaghna .",
+        "russian": "{T143} [Śā , Med] Hoernle 1893-1912 (II) 27.20 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "[NWS] 14",
+        "german": "{T144} [Śā , Med] Hoernle 1893-1912 (II) 27.24 ; śvāsaghna .",
+        "russian": "{T144} [Śā , Med] Hoernle 1893-1912 (II) 27.24 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "[NWS] 15",
+        "german": "{T145} [Śā , Med] Hoernle 1893-1912 (II) 27.26 ; śvāsaghna .",
+        "russian": "{T145} [Śā , Med] Hoernle 1893-1912 (II) 27.26 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "[NWS] 16",
+        "german": "{T146} [Śā , Med] Hoernle 1893-1912 (II) 34.149 ; śvāsaghna .",
+        "russian": "{T146} [Śā , Med] Hoernle 1893-1912 (II) 34.149 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "[NWS] 17",
+        "german": "{T147} [Śā , Med] Hoernle 1893-1912 (II) 41.286 ; śvāsaghna .",
+        "russian": "{T147} [Śā , Med] Hoernle 1893-1912 (II) 41.286 ; śvāsaghna . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "[NWS] 18",
+        "german": "{T148} [Gen , unsp] Subst f N of the mother of Śvasana (the god of wind). Mbh . Convolvulus Turpethum . Lex(MW) .",
+        "russian": "{T148} [Gen , unsp] Subst f N матери Śvasana (бога ветра). Mbh . Convolvulus Turpethum . Lex(MW) . [NWS: MW : 1106 (s.v. śvāsa)]",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Epic / early-Classical",
+        "differentia": "Второе значение (ботаническое) дано только по кошам (Lex(MW)) — лексикографическая часть смешанной статьи; латинское название растения оставлено."
+       },
+       {
+        "tag": "[NWS] 19",
+        "german": "{T149} [Śā , Med] overcome with asthma. Hoernle 1893-1912 (III) 182.22 .",
+        "russian": "{T149} [Śā , Med] одолеваемый астмой. Hoernle 1893-1912 (III) 182.22 . [NWS: Hoernle 1908 : 331 (s.v. śvāsa)]",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": "Bahuvrīhi-подобное причастное сложение: носитель признака вне композита — «тот, кого одолела астма»."
+       },
+       {
+        "tag": "[NWS] 20",
+        "german": "{T150} [Kāv , Med] „Ausatmen“, d.h., der Kranke atmet lange aus, Augen sind nach oben gerichtet, Bewußtlosigkeit, schließlich Eintritt des Todes. [ eine der 5 Arten von śvāsa . ]",
+        "russian": "{T150} [Kāv , Med] «выдыхание», т.е. больной долго выдыхает, глаза обращены вверх, потеря сознания, наконец наступление смерти. [ один из 5 видов śvāsa . ] [NWS: Weckerling 1937 : 238 (s.v. śvāsa)]",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": "Ausatmen — процесс выдоха («выдыхание»), противопоставлен Einathmen «вдыхание» PW c〉."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ttft_ms": 58495,
+ "ttft_stream_ms": 4120,
+ "time_to_request_ms": 1290,
+ "type": "result",
+ "duration_ms": 154859
+}

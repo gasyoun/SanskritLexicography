@@ -387,6 +387,60 @@ def test_zero_filled_usage_is_missing_usage_not_a_measurement():
         print('  ok   zero-filled usage is a hole, not a measurement; holes force INCONCLUSIVE')
 
 
+def test_b1_capture_gap_terminal_fields_raw_text_and_modelusage_crosscheck():
+    """H2591 B1: the run's seven zero-usage calls were undiagnosable because the driver
+    kept none of the evidence. Five were rc=1 refusals (zero usage is correct there), two
+    were rc=0 successes with a full audited card and no tokens — and one `subtype` reading
+    would have split them. The anomaly did not reproduce on a byte-identical re-issue, so
+    the fix is capture, not a root-cause guard.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        plan, _mp, _m, _cd = _plan(tmp)
+
+        # modelUsage carries tokens the top-level usage block dropped -> a CONTRADICTION,
+        # detectable, instead of a silent hole that deflates one arm.
+        def contradicting(argv, prompt, timeout):
+            card = _good_card(KEYS[0], '{T1}')
+            wrapper = _wrapper(cards=[card])
+            wrapper['usage'] = {k: 0 for k in wrapper['usage']}
+            wrapper['modelUsage'] = {'claude-opus-5': {
+                'inputTokens': 2, 'outputTokens': 12685,
+                'cacheReadInputTokens': 0, 'cacheCreationInputTokens': 62948}}
+            wrapper.update({'subtype': 'success', 'terminal_reason': 'completed',
+                            'stop_reason': 'tool_use', 'num_turns': 2})
+            return pcc.CallResult(returncode=0, timed_out=False, wall_ms=171359,
+                                  stdout=json.dumps(wrapper), stderr='')
+
+        run = _run(tmp, plan, contradicting, run_id='xcheck', out='xcheck')
+        assert run['stopped'] and 'usage_contradiction' in run['stopped'], run['stopped']
+        env = run['envelopes'][0]
+        assert env['usage_cross_check']['agree'] is False
+        assert env['usage_cross_check']['model_usage_total'] == 75635
+        assert 'all-zero' in env['usage_cross_check']['contradiction']
+        assert env['terminal']['subtype'] == 'success'
+        assert env['terminal']['terminal_reason'] == 'completed'
+        assert env['terminal']['num_turns'] == 2
+
+        # An rc=1 refusal is its OWN class, keeps its raw text, and does NOT stop the run:
+        # it is a provider verdict on one call, not proof the ledger is lying.
+        def refusing(argv, prompt, timeout):
+            wrapper = _wrapper(cards=[])
+            wrapper['result'] = "You've hit your weekly limit · resets Aug 10"
+            wrapper.pop('structured_output')
+            wrapper.update({'subtype': 'error', 'is_error': True,
+                            'terminal_reason': 'error', 'api_error_status': 429})
+            return pcc.CallResult(returncode=1, timed_out=False, wall_ms=42851,
+                                  stdout=json.dumps(wrapper), stderr='')
+
+        run = _run(tmp, plan, refusing, run_id='refuse', out='refuse')
+        env = run['envelopes'][0]
+        assert env['failure_class'] == 'cli_error_exit', env['failure_class']
+        assert 'weekly limit' in env['raw_result'], 'the refusal text IS the evidence'
+        assert env['terminal']['api_error_status'] == 429
+        assert run['calls_spent'] == pcc.MAX_CALLS, 'a refusal must not stop the run'
+        print('  ok   B1 capture: terminal fields, raw result text, modelUsage cross-check')
+
+
 def test_selection_rule_is_deterministic_and_stratified():
     pool = {}
     for index in range(40):
@@ -440,6 +494,7 @@ CASES = [
     test_missing_usage_stops_the_run,
     test_receipt_go_no_go_inconclusive,
     test_zero_filled_usage_is_missing_usage_not_a_measurement,
+    test_b1_capture_gap_terminal_fields_raw_text_and_modelusage_crosscheck,
     test_selection_rule_is_deterministic_and_stratified,
     test_offline_check_makes_no_transport_call,
 ]
