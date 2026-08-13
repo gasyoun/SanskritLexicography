@@ -1,0 +1,1657 @@
+{
+ "schema": "pwg.h1210_arm_telemetry.v1",
+ "arm": "B_deepseek",
+ "model": "deepseek-v4-flash",
+ "cards": 40,
+ "wall_clock_s": 2855.5,
+ "workers": 6,
+ "generation_calls": 113,
+ "calls": [
+  {
+   "label": "kr_urar_avin#1",
+   "latency_s": 59.89,
+   "transport_attempts": 1,
+   "prompt_tokens": 5551,
+   "completion_tokens": 6689,
+   "cache_hit_tokens": 0,
+   "cache_miss_tokens": 5551,
+   "finish_reason": "stop"
+  },
+  {
+   "label": "vi_svasfj#1",
+   "latency_s": 73.47,
+   "transport_attempts": 1,
+   "prompt_tokens": 5548,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 0,
+   "cache_miss_tokens": 5548,
+   "finish_reason": "length"
+  },
+  {
+   "label": "somasa_ms_t_a#1",
+   "latency_s": 75.59,
+   "transport_attempts": 1,
+   "prompt_tokens": 5487,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 0,
+   "cache_miss_tokens": 5487,
+   "finish_reason": "length"
+  },
+  {
+   "label": "_s_aluqa#1",
+   "latency_s": 76.19,
+   "transport_attempts": 1,
+   "prompt_tokens": 5564,
+   "completion_tokens": 8143,
+   "cache_hit_tokens": 0,
+   "cache_miss_tokens": 5564,
+   "finish_reason": "stop"
+  },
+  {
+   "label": "l_alay#1",
+   "latency_s": 80.58,
+   "transport_attempts": 1,
+   "prompt_tokens": 5143,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 0,
+   "cache_miss_tokens": 5143,
+   "finish_reason": "length"
+  },
+  {
+   "label": "ezwa#1",
+   "latency_s": 83.68,
+   "transport_attempts": 1,
+   "prompt_tokens": 5093,
+   "completion_tokens": 8191,
+   "cache_hit_tokens": 0,
+   "cache_miss_tokens": 5093,
+   "finish_reason": "length"
+  },
+  {
+   "label": "_svetakar_ra#1",
+   "latency_s": 87.61,
+   "transport_attempts": 1,
+   "prompt_tokens": 5468,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 0,
+   "cache_miss_tokens": 5468,
+   "finish_reason": "length"
+  },
+  {
+   "label": "vi_svasfj#2",
+   "latency_s": 78.39,
+   "transport_attempts": 1,
+   "prompt_tokens": 5591,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5504,
+   "cache_miss_tokens": 87,
+   "finish_reason": "length"
+  },
+  {
+   "label": "somasa_ms_t_a#2",
+   "latency_s": 79.19,
+   "transport_attempts": 1,
+   "prompt_tokens": 5530,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5376,
+   "cache_miss_tokens": 154,
+   "finish_reason": "length"
+  },
+  {
+   "label": "a_smagar_baja#1",
+   "latency_s": 79.63,
+   "transport_attempts": 1,
+   "prompt_tokens": 5988,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1380,
+   "finish_reason": "length"
+  },
+  {
+   "label": "l_alay#2",
+   "latency_s": 84.28,
+   "transport_attempts": 1,
+   "prompt_tokens": 5186,
+   "completion_tokens": 8193,
+   "cache_hit_tokens": 5120,
+   "cache_miss_tokens": 66,
+   "finish_reason": "length"
+  },
+  {
+   "label": "ezwa#2",
+   "latency_s": 81.18,
+   "transport_attempts": 1,
+   "prompt_tokens": 5136,
+   "completion_tokens": 8191,
+   "cache_hit_tokens": 4992,
+   "cache_miss_tokens": 144,
+   "finish_reason": "length"
+  },
+  {
+   "label": "_svetakar_ra#2",
+   "latency_s": 70.57,
+   "transport_attempts": 1,
+   "prompt_tokens": 5511,
+   "completion_tokens": 8058,
+   "cache_hit_tokens": 5376,
+   "cache_miss_tokens": 135,
+   "finish_reason": "stop"
+  },
+  {
+   "label": "k_ontika#1",
+   "latency_s": 8.49,
+   "transport_attempts": 1,
+   "prompt_tokens": 5825,
+   "completion_tokens": 497,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1217,
+   "finish_reason": "stop"
+  },
+  {
+   "label": "vi_svasfj#3",
+   "latency_s": 75.33,
+   "transport_attempts": 1,
+   "prompt_tokens": 5591,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5504,
+   "cache_miss_tokens": 87,
+   "finish_reason": "length"
+  },
+  {
+   "label": "a_smagar_baja#2",
+   "latency_s": 73.37,
+   "transport_attempts": 1,
+   "prompt_tokens": 6031,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5888,
+   "cache_miss_tokens": 143,
+   "finish_reason": "length"
+  },
+  {
+   "label": "somasa_ms_t_a#3",
+   "latency_s": 79.67,
+   "transport_attempts": 1,
+   "prompt_tokens": 5530,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5504,
+   "cache_miss_tokens": 26,
+   "finish_reason": "length"
+  },
+  {
+   "label": "ezwa#3",
+   "latency_s": 74.29,
+   "transport_attempts": 1,
+   "prompt_tokens": 5136,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5120,
+   "cache_miss_tokens": 16,
+   "finish_reason": "length"
+  },
+  {
+   "label": "l_alay#3",
+   "latency_s": 79.45,
+   "transport_attempts": 1,
+   "prompt_tokens": 5186,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5120,
+   "cache_miss_tokens": 66,
+   "finish_reason": "length"
+  },
+  {
+   "label": "k_ontika#2",
+   "latency_s": 75.38,
+   "transport_attempts": 1,
+   "prompt_tokens": 5868,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5760,
+   "cache_miss_tokens": 108,
+   "finish_reason": "length"
+  },
+  {
+   "label": "a_smagar_baja#3",
+   "latency_s": 74.14,
+   "transport_attempts": 1,
+   "prompt_tokens": 6031,
+   "completion_tokens": 8191,
+   "cache_hit_tokens": 6016,
+   "cache_miss_tokens": 15,
+   "finish_reason": "length"
+  },
+  {
+   "label": "log_akza#1",
+   "latency_s": 79.94,
+   "transport_attempts": 1,
+   "prompt_tokens": 5244,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 636,
+   "finish_reason": "length"
+  },
+  {
+   "label": "tubar_i#1",
+   "latency_s": 77.32,
+   "transport_attempts": 1,
+   "prompt_tokens": 5589,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 981,
+   "finish_reason": "length"
+  },
+  {
+   "label": "kramu#1",
+   "latency_s": 73.49,
+   "transport_attempts": 1,
+   "prompt_tokens": 6071,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1463,
+   "finish_reason": "length"
+  },
+  {
+   "label": "yamadruma#1",
+   "latency_s": 78.69,
+   "transport_attempts": 1,
+   "prompt_tokens": 5561,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 953,
+   "finish_reason": "length"
+  },
+  {
+   "label": "k_ontika#3",
+   "latency_s": 68.63,
+   "transport_attempts": 1,
+   "prompt_tokens": 5868,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5760,
+   "cache_miss_tokens": 108,
+   "finish_reason": "length"
+  },
+  {
+   "label": "log_akza#2",
+   "latency_s": 76.34,
+   "transport_attempts": 1,
+   "prompt_tokens": 5287,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5120,
+   "cache_miss_tokens": 167,
+   "finish_reason": "length"
+  },
+  {
+   "label": "mah_ahigan_d_a#1",
+   "latency_s": 80.22,
+   "transport_attempts": 1,
+   "prompt_tokens": 5614,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1006,
+   "finish_reason": "length"
+  },
+  {
+   "label": "yamadruma#2",
+   "latency_s": 75.5,
+   "transport_attempts": 1,
+   "prompt_tokens": 5604,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5504,
+   "cache_miss_tokens": 100,
+   "finish_reason": "length"
+  },
+  {
+   "label": "kramu#2",
+   "latency_s": 77.24,
+   "transport_attempts": 1,
+   "prompt_tokens": 6114,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6016,
+   "cache_miss_tokens": 98,
+   "finish_reason": "length"
+  },
+  {
+   "label": "tubar_i#2",
+   "latency_s": 83.41,
+   "transport_attempts": 1,
+   "prompt_tokens": 5632,
+   "completion_tokens": 8191,
+   "cache_hit_tokens": 5504,
+   "cache_miss_tokens": 128,
+   "finish_reason": "length"
+  },
+  {
+   "label": "pippal_ayana#1",
+   "latency_s": 73.09,
+   "transport_attempts": 1,
+   "prompt_tokens": 6271,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1663,
+   "finish_reason": "length"
+  },
+  {
+   "label": "mah_ahigan_d_a#2",
+   "latency_s": 75.15,
+   "transport_attempts": 1,
+   "prompt_tokens": 5657,
+   "completion_tokens": 8190,
+   "cache_hit_tokens": 5504,
+   "cache_miss_tokens": 153,
+   "finish_reason": "length"
+  },
+  {
+   "label": "log_akza#3",
+   "latency_s": 76.58,
+   "transport_attempts": 1,
+   "prompt_tokens": 5287,
+   "completion_tokens": 8193,
+   "cache_hit_tokens": 5248,
+   "cache_miss_tokens": 39,
+   "finish_reason": "length"
+  },
+  {
+   "label": "tubar_i#3",
+   "latency_s": 71.77,
+   "transport_attempts": 1,
+   "prompt_tokens": 5632,
+   "completion_tokens": 7997,
+   "cache_hit_tokens": 5504,
+   "cache_miss_tokens": 128,
+   "finish_reason": "stop"
+  },
+  {
+   "label": "yamadruma#3",
+   "latency_s": 78.78,
+   "transport_attempts": 1,
+   "prompt_tokens": 5604,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5504,
+   "cache_miss_tokens": 100,
+   "finish_reason": "length"
+  },
+  {
+   "label": "kramu#3",
+   "latency_s": 79.1,
+   "transport_attempts": 1,
+   "prompt_tokens": 6114,
+   "completion_tokens": 8191,
+   "cache_hit_tokens": 6016,
+   "cache_miss_tokens": 98,
+   "finish_reason": "length"
+  },
+  {
+   "label": "pippal_ayana#2",
+   "latency_s": 71.37,
+   "transport_attempts": 1,
+   "prompt_tokens": 6314,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6144,
+   "cache_miss_tokens": 170,
+   "finish_reason": "length"
+  },
+  {
+   "label": "mah_ahigan_d_a#3",
+   "latency_s": 70.99,
+   "transport_attempts": 1,
+   "prompt_tokens": 5657,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5632,
+   "cache_miss_tokens": 25,
+   "finish_reason": "length"
+  },
+  {
+   "label": "t_araja#1",
+   "latency_s": 77.93,
+   "transport_attempts": 1,
+   "prompt_tokens": 5323,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 715,
+   "finish_reason": "length"
+  },
+  {
+   "label": "vinikfntana#1",
+   "latency_s": 71.53,
+   "transport_attempts": 1,
+   "prompt_tokens": 5478,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 870,
+   "finish_reason": "length"
+  },
+  {
+   "label": "zazwivrata#1",
+   "latency_s": 76.55,
+   "transport_attempts": 1,
+   "prompt_tokens": 5608,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1000,
+   "finish_reason": "length"
+  },
+  {
+   "label": "harinma_ri#1",
+   "latency_s": 77.21,
+   "transport_attempts": 1,
+   "prompt_tokens": 6384,
+   "completion_tokens": 8193,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1776,
+   "finish_reason": "length"
+  },
+  {
+   "label": "pippal_ayana#3",
+   "latency_s": 69.49,
+   "transport_attempts": 1,
+   "prompt_tokens": 6314,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6272,
+   "cache_miss_tokens": 42,
+   "finish_reason": "length"
+  },
+  {
+   "label": "vinikfntana#2",
+   "latency_s": 54.05,
+   "transport_attempts": 1,
+   "prompt_tokens": 5521,
+   "completion_tokens": 6029,
+   "cache_hit_tokens": 5376,
+   "cache_miss_tokens": 145,
+   "finish_reason": "stop"
+  },
+  {
+   "label": "kilima#1",
+   "latency_s": 77.66,
+   "transport_attempts": 1,
+   "prompt_tokens": 6038,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1430,
+   "finish_reason": "length"
+  },
+  {
+   "label": "t_araja#2",
+   "latency_s": 77.06,
+   "transport_attempts": 1,
+   "prompt_tokens": 5366,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5248,
+   "cache_miss_tokens": 118,
+   "finish_reason": "length"
+  },
+  {
+   "label": "zazwivrata#2",
+   "latency_s": 69.69,
+   "transport_attempts": 1,
+   "prompt_tokens": 5651,
+   "completion_tokens": 7544,
+   "cache_hit_tokens": 5504,
+   "cache_miss_tokens": 147,
+   "finish_reason": "stop"
+  },
+  {
+   "label": "harinma_ri#2",
+   "latency_s": 79.35,
+   "transport_attempts": 1,
+   "prompt_tokens": 6427,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6272,
+   "cache_miss_tokens": 155,
+   "finish_reason": "length"
+  },
+  {
+   "label": "lel_ay#1",
+   "latency_s": 77.64,
+   "transport_attempts": 1,
+   "prompt_tokens": 5656,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1048,
+   "finish_reason": "length"
+  },
+  {
+   "label": "pramanyu#1",
+   "latency_s": 74.91,
+   "transport_attempts": 1,
+   "prompt_tokens": 5864,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1256,
+   "finish_reason": "length"
+  },
+  {
+   "label": "kilima#2",
+   "latency_s": 74.25,
+   "transport_attempts": 1,
+   "prompt_tokens": 6081,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6016,
+   "cache_miss_tokens": 65,
+   "finish_reason": "length"
+  },
+  {
+   "label": "s_ari#1",
+   "latency_s": 73.2,
+   "transport_attempts": 1,
+   "prompt_tokens": 6083,
+   "completion_tokens": 8191,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1475,
+   "finish_reason": "length"
+  },
+  {
+   "label": "t_araja#3",
+   "latency_s": 80.75,
+   "transport_attempts": 1,
+   "prompt_tokens": 5366,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5248,
+   "cache_miss_tokens": 118,
+   "finish_reason": "length"
+  },
+  {
+   "label": "harinma_ri#3",
+   "latency_s": 71.28,
+   "transport_attempts": 1,
+   "prompt_tokens": 6427,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6400,
+   "cache_miss_tokens": 27,
+   "finish_reason": "length"
+  },
+  {
+   "label": "lel_ay#2",
+   "latency_s": 75.92,
+   "transport_attempts": 1,
+   "prompt_tokens": 5699,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5632,
+   "cache_miss_tokens": 67,
+   "finish_reason": "length"
+  },
+  {
+   "label": "pramanyu#2",
+   "latency_s": 76.07,
+   "transport_attempts": 1,
+   "prompt_tokens": 5907,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5760,
+   "cache_miss_tokens": 147,
+   "finish_reason": "length"
+  },
+  {
+   "label": "kilima#3",
+   "latency_s": 69.63,
+   "transport_attempts": 1,
+   "prompt_tokens": 6081,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6016,
+   "cache_miss_tokens": 65,
+   "finish_reason": "length"
+  },
+  {
+   "label": "s_ari#2",
+   "latency_s": 69.97,
+   "transport_attempts": 1,
+   "prompt_tokens": 6126,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6016,
+   "cache_miss_tokens": 110,
+   "finish_reason": "length"
+  },
+  {
+   "label": "vi_bindu#1",
+   "latency_s": 68.51,
+   "transport_attempts": 1,
+   "prompt_tokens": 6412,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1804,
+   "finish_reason": "length"
+  },
+  {
+   "label": "_odbilya#1",
+   "latency_s": 70.51,
+   "transport_attempts": 1,
+   "prompt_tokens": 6421,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1813,
+   "finish_reason": "length"
+  },
+  {
+   "label": "lel_ay#3",
+   "latency_s": 73.27,
+   "transport_attempts": 1,
+   "prompt_tokens": 5699,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5632,
+   "cache_miss_tokens": 67,
+   "finish_reason": "length"
+  },
+  {
+   "label": "pramanyu#3",
+   "latency_s": 70.67,
+   "transport_attempts": 1,
+   "prompt_tokens": 5907,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5888,
+   "cache_miss_tokens": 19,
+   "finish_reason": "length"
+  },
+  {
+   "label": "agnit_ir_ta#1",
+   "latency_s": 73.87,
+   "transport_attempts": 1,
+   "prompt_tokens": 5864,
+   "completion_tokens": 8191,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1256,
+   "finish_reason": "length"
+  },
+  {
+   "label": "vi_bindu#2",
+   "latency_s": 71.74,
+   "transport_attempts": 1,
+   "prompt_tokens": 6455,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6400,
+   "cache_miss_tokens": 55,
+   "finish_reason": "length"
+  },
+  {
+   "label": "s_ari#3",
+   "latency_s": 76.93,
+   "transport_attempts": 1,
+   "prompt_tokens": 6126,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6016,
+   "cache_miss_tokens": 110,
+   "finish_reason": "length"
+  },
+  {
+   "label": "_odbilya#2",
+   "latency_s": 72.67,
+   "transport_attempts": 1,
+   "prompt_tokens": 6464,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6400,
+   "cache_miss_tokens": 64,
+   "finish_reason": "length"
+  },
+  {
+   "label": "kranda#1",
+   "latency_s": 69.08,
+   "transport_attempts": 1,
+   "prompt_tokens": 6625,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 2017,
+   "finish_reason": "length"
+  },
+  {
+   "label": "pari_b_ava#1",
+   "latency_s": 76.93,
+   "transport_attempts": 1,
+   "prompt_tokens": 6876,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 2268,
+   "finish_reason": "length"
+  },
+  {
+   "label": "agnit_ir_ta#2",
+   "latency_s": 80.98,
+   "transport_attempts": 1,
+   "prompt_tokens": 5907,
+   "completion_tokens": 8191,
+   "cache_hit_tokens": 5760,
+   "cache_miss_tokens": 147,
+   "finish_reason": "length"
+  },
+  {
+   "label": "vi_bindu#3",
+   "latency_s": 70.15,
+   "transport_attempts": 1,
+   "prompt_tokens": 6455,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6400,
+   "cache_miss_tokens": 55,
+   "finish_reason": "length"
+  },
+  {
+   "label": "sa_mgopana#1",
+   "latency_s": 76.84,
+   "transport_attempts": 1,
+   "prompt_tokens": 6003,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1395,
+   "finish_reason": "length"
+  },
+  {
+   "label": "_odbilya#3",
+   "latency_s": 75.49,
+   "transport_attempts": 1,
+   "prompt_tokens": 6464,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6400,
+   "cache_miss_tokens": 64,
+   "finish_reason": "length"
+  },
+  {
+   "label": "kranda#2",
+   "latency_s": 75.12,
+   "transport_attempts": 1,
+   "prompt_tokens": 6668,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6528,
+   "cache_miss_tokens": 140,
+   "finish_reason": "length"
+  },
+  {
+   "label": "pari_b_ava#2",
+   "latency_s": 74.51,
+   "transport_attempts": 1,
+   "prompt_tokens": 6919,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6784,
+   "cache_miss_tokens": 135,
+   "finish_reason": "length"
+  },
+  {
+   "label": "udame_ga#1",
+   "latency_s": 72.46,
+   "transport_attempts": 1,
+   "prompt_tokens": 6241,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1633,
+   "finish_reason": "length"
+  },
+  {
+   "label": "agnit_ir_ta#3",
+   "latency_s": 77.3,
+   "transport_attempts": 1,
+   "prompt_tokens": 5907,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5888,
+   "cache_miss_tokens": 19,
+   "finish_reason": "length"
+  },
+  {
+   "label": "sa_mgopana#2",
+   "latency_s": 70.78,
+   "transport_attempts": 1,
+   "prompt_tokens": 6046,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 5888,
+   "cache_miss_tokens": 158,
+   "finish_reason": "length"
+  },
+  {
+   "label": "_badramusta#1",
+   "latency_s": 74.43,
+   "transport_attempts": 1,
+   "prompt_tokens": 7017,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 2409,
+   "finish_reason": "length"
+  },
+  {
+   "label": "kranda#3",
+   "latency_s": 72.6,
+   "transport_attempts": 1,
+   "prompt_tokens": 6668,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6656,
+   "cache_miss_tokens": 12,
+   "finish_reason": "length"
+  },
+  {
+   "label": "pari_b_ava#3",
+   "latency_s": 69.56,
+   "transport_attempts": 1,
+   "prompt_tokens": 6919,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6912,
+   "cache_miss_tokens": 7,
+   "finish_reason": "length"
+  },
+  {
+   "label": "udame_ga#2",
+   "latency_s": 76.2,
+   "transport_attempts": 1,
+   "prompt_tokens": 6284,
+   "completion_tokens": 8190,
+   "cache_hit_tokens": 6144,
+   "cache_miss_tokens": 140,
+   "finish_reason": "length"
+  },
+  {
+   "label": "sa_mgopana#3",
+   "latency_s": 73.59,
+   "transport_attempts": 1,
+   "prompt_tokens": 6046,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6016,
+   "cache_miss_tokens": 30,
+   "finish_reason": "length"
+  },
+  {
+   "label": "ftekarmam#1",
+   "latency_s": 76.38,
+   "transport_attempts": 1,
+   "prompt_tokens": 6110,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 4608,
+   "cache_miss_tokens": 1502,
+   "finish_reason": "length"
+  },
+  {
+   "label": "_badramusta#2",
+   "latency_s": 71.14,
+   "transport_attempts": 1,
+   "prompt_tokens": 7060,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6912,
+   "cache_miss_tokens": 148,
+   "finish_reason": "length"
+  },
+  {
+   "label": "sur_arha#1",
+   "latency_s": 195.63,
+   "transport_attempts": 3,
+   "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>"
+  },
+  {
+   "label": "lipikara#1",
+   "latency_s": 252.11,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "n_i_dra#1",
+   "latency_s": 272.67,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "udame_ga#3",
+   "latency_s": 253.1,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "ftekarmam#2",
+   "latency_s": 256.22,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "_badramusta#3",
+   "latency_s": 307.84,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "lipikara#2",
+   "latency_s": 215.0,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "n_i_dra#2",
+   "latency_s": 262.18,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "ftekarmam#3",
+   "latency_s": 258.05,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "upakalpa#1",
+   "latency_s": 267.15,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "lipikara#3",
+   "latency_s": 88.46,
+   "transport_attempts": 2,
+   "prompt_tokens": 7055,
+   "completion_tokens": 688,
+   "cache_hit_tokens": 7040,
+   "cache_miss_tokens": 15,
+   "finish_reason": "stop"
+  },
+  {
+   "label": "n_i_dra#3",
+   "latency_s": 164.85,
+   "transport_attempts": 2,
+   "prompt_tokens": 6598,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6528,
+   "cache_miss_tokens": 70,
+   "finish_reason": "length"
+  },
+  {
+   "label": "upakalpa#2",
+   "latency_s": 160.42,
+   "transport_attempts": 2,
+   "prompt_tokens": 6336,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6272,
+   "cache_miss_tokens": 64,
+   "finish_reason": "length"
+  },
+  {
+   "label": "sara_g_a#1",
+   "latency_s": 159.85,
+   "transport_attempts": 2,
+   "prompt_tokens": 7859,
+   "completion_tokens": 8191,
+   "cache_hit_tokens": 7808,
+   "cache_miss_tokens": 51,
+   "finish_reason": "length"
+  },
+  {
+   "label": "s_aptamika#1",
+   "latency_s": 181.59,
+   "transport_attempts": 2,
+   "prompt_tokens": 6576,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6528,
+   "cache_miss_tokens": 48,
+   "finish_reason": "length"
+  },
+  {
+   "label": "sur_arha#2",
+   "latency_s": 692.35,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "v_avad_uka#1",
+   "latency_s": 316.13,
+   "transport_attempts": 3,
+   "prompt_tokens": 7521,
+   "completion_tokens": 8191,
+   "cache_hit_tokens": 7424,
+   "cache_miss_tokens": 97,
+   "finish_reason": "length"
+  },
+  {
+   "label": "upakalpa#3",
+   "latency_s": 320.94,
+   "transport_attempts": 3,
+   "prompt_tokens": 6379,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6272,
+   "cache_miss_tokens": 107,
+   "finish_reason": "length"
+  },
+  {
+   "label": "sur_arha#3",
+   "latency_s": 111.99,
+   "transport_attempts": 1,
+   "prompt_tokens": 6197,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6144,
+   "cache_miss_tokens": 53,
+   "finish_reason": "length"
+  },
+  {
+   "label": "v_avad_uka#2",
+   "latency_s": 74.56,
+   "transport_attempts": 1,
+   "prompt_tokens": 7564,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 7424,
+   "cache_miss_tokens": 140,
+   "finish_reason": "length"
+  },
+  {
+   "label": "s_aptamika#2",
+   "latency_s": 377.17,
+   "transport_attempts": 3,
+   "prompt_tokens": 6619,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6528,
+   "cache_miss_tokens": 91,
+   "finish_reason": "length"
+  },
+  {
+   "label": "prajas#1",
+   "latency_s": 835.94,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "s_aptamika#3",
+   "latency_s": 131.39,
+   "transport_attempts": 2,
+   "prompt_tokens": 6619,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6528,
+   "cache_miss_tokens": 91,
+   "finish_reason": "length"
+  },
+  {
+   "label": "prajas#2",
+   "latency_s": 72.35,
+   "transport_attempts": 1,
+   "prompt_tokens": 6298,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 6272,
+   "cache_miss_tokens": 26,
+   "finish_reason": "length"
+  },
+  {
+   "label": "v_avad_uka#3",
+   "latency_s": 160.8,
+   "transport_attempts": 2,
+   "prompt_tokens": 7564,
+   "completion_tokens": 8192,
+   "cache_hit_tokens": 7552,
+   "cache_miss_tokens": 12,
+   "finish_reason": "length"
+  },
+  {
+   "label": "sara_g_a#2",
+   "latency_s": 805.7,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "prajas#3",
+   "latency_s": 353.31,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "sara_g_a#3",
+   "latency_s": 306.23,
+   "transport_attempts": 3,
+   "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>"
+  }
+ ],
+ "cost": {
+  "cache_miss_in_tokens": 78622,
+  "cache_hit_in_tokens": 512640,
+  "out_tokens": 782914,
+  "usd": 0.2317,
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  }
+ },
+ "per_card": [
+  {
+   "key1": "_s_aluqa",
+   "attempts": 1,
+   "final_status": "clean-no-review",
+   "repairs": [],
+   "latency_s": [
+    76.19
+   ]
+  },
+  {
+   "key1": "ezwa",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    83.68,
+    81.18,
+    74.29
+   ]
+  },
+  {
+   "key1": "kr_urar_avin",
+   "attempts": 1,
+   "final_status": "clean-no-review",
+   "repairs": [],
+   "latency_s": [
+    59.89
+   ]
+  },
+  {
+   "key1": "l_alay",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    80.58,
+    84.28,
+    79.45
+   ]
+  },
+  {
+   "key1": "somasa_ms_t_a",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    75.59,
+    79.19,
+    79.67
+   ]
+  },
+  {
+   "key1": "vi_svasfj",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    73.47,
+    78.39,
+    75.33
+   ]
+  },
+  {
+   "key1": "_svetakar_ra",
+   "attempts": 2,
+   "final_status": "pending-controller",
+   "repairs": [
+    "attempt1: no JSON object in response"
+   ],
+   "latency_s": [
+    87.61,
+    70.57
+   ]
+  },
+  {
+   "key1": "a_smagar_baja",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    79.63,
+    73.37,
+    74.14
+   ]
+  },
+  {
+   "key1": "k_ontika",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    8.49,
+    75.38,
+    68.63
+   ]
+  },
+  {
+   "key1": "log_akza",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    79.94,
+    76.34,
+    76.58
+   ]
+  },
+  {
+   "key1": "tubar_i",
+   "attempts": 3,
+   "final_status": "pending-controller",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response"
+   ],
+   "latency_s": [
+    77.32,
+    83.41,
+    71.77
+   ]
+  },
+  {
+   "key1": "yamadruma",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    78.69,
+    75.5,
+    78.78
+   ]
+  },
+  {
+   "key1": "kramu",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    73.49,
+    77.24,
+    79.1
+   ]
+  },
+  {
+   "key1": "mah_ahigan_d_a",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    80.22,
+    75.15,
+    70.99
+   ]
+  },
+  {
+   "key1": "pippal_ayana",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    73.09,
+    71.37,
+    69.49
+   ]
+  },
+  {
+   "key1": "t_araja",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    77.93,
+    77.06,
+    80.75
+   ]
+  },
+  {
+   "key1": "vinikfntana",
+   "attempts": 2,
+   "final_status": "clean-no-review",
+   "repairs": [
+    "attempt1: no JSON object in response"
+   ],
+   "latency_s": [
+    71.53,
+    54.05
+   ]
+  },
+  {
+   "key1": "zazwivrata",
+   "attempts": 2,
+   "final_status": "clean-no-review",
+   "repairs": [
+    "attempt1: no JSON object in response"
+   ],
+   "latency_s": [
+    76.55,
+    69.69
+   ]
+  },
+  {
+   "key1": "harinma_ri",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    77.21,
+    79.35,
+    71.28
+   ]
+  },
+  {
+   "key1": "kilima",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    77.66,
+    74.25,
+    69.63
+   ]
+  },
+  {
+   "key1": "lel_ay",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    77.64,
+    75.92,
+    73.27
+   ]
+  },
+  {
+   "key1": "pramanyu",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    74.91,
+    76.07,
+    70.67
+   ]
+  },
+  {
+   "key1": "s_ari",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    73.2,
+    69.97,
+    76.93
+   ]
+  },
+  {
+   "key1": "vi_bindu",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    68.51,
+    71.74,
+    70.15
+   ]
+  },
+  {
+   "key1": "_odbilya",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    70.51,
+    72.67,
+    75.49
+   ]
+  },
+  {
+   "key1": "agnit_ir_ta",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    73.87,
+    80.98,
+    77.3
+   ]
+  },
+  {
+   "key1": "kranda",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    69.08,
+    75.12,
+    72.6
+   ]
+  },
+  {
+   "key1": "pari_b_ava",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    76.93,
+    74.51,
+    69.56
+   ]
+  },
+  {
+   "key1": "sa_mgopana",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    76.84,
+    70.78,
+    73.59
+   ]
+  },
+  {
+   "key1": "udame_ga",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response"
+   ],
+   "latency_s": [
+    72.46,
+    76.2,
+    253.1
+   ]
+  },
+  {
+   "key1": "_badramusta",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response"
+   ],
+   "latency_s": [
+    74.43,
+    71.14,
+    307.84
+   ]
+  },
+  {
+   "key1": "ftekarmam",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response"
+   ],
+   "latency_s": [
+    76.38,
+    256.22,
+    258.05
+   ]
+  },
+  {
+   "key1": "lipikara",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    252.11,
+    215.0,
+    88.46
+   ]
+  },
+  {
+   "key1": "n_i_dra",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    272.67,
+    262.18,
+    164.85
+   ]
+  },
+  {
+   "key1": "sur_arha",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    195.63,
+    692.35,
+    111.99
+   ]
+  },
+  {
+   "key1": "upakalpa",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    267.15,
+    160.42,
+    320.94
+   ]
+  },
+  {
+   "key1": "prajas",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt2: no JSON object in response"
+   ],
+   "latency_s": [
+    835.94,
+    72.35,
+    353.31
+   ]
+  },
+  {
+   "key1": "s_aptamika",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    181.59,
+    377.17,
+    131.39
+   ]
+  },
+  {
+   "key1": "sara_g_a",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response"
+   ],
+   "latency_s": [
+    159.85,
+    805.7,
+    306.23
+   ]
+  },
+  {
+   "key1": "v_avad_uka",
+   "attempts": 3,
+   "final_status": "worker-null-death",
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ],
+   "latency_s": [
+    316.13,
+    74.56,
+    160.8
+   ]
+  }
+ ]
+}

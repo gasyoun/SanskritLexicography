@@ -10,6 +10,9 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### Added
+- **H2488 (Grok 4.6, `grok-4.6`) — E1 Flash 0731 paid 40-key run:** FAIL, no production draft-lane. Report under [`experiments/E1_deepseek_vs_c4/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/E1_deepseek_vs_c4/E1_FLASH_0731_VS_C4_REPORT_13-08-2026.md).
+
 ## [1.144.38] - 2026-08-12
 ### Added
 
