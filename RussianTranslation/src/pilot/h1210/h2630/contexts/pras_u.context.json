@@ -1,0 +1,98 @@
+{
+ "schema": "pwg.prep_context.v1",
+ "key1": "prasU",
+ "prep_semantic_sha256": "996343fe97bf7647ae93a087eaacce65e278f780f861623228bc3b811f8cf0c8",
+ "source_evidence": {
+  "kind": "execution_manifest",
+  "locator": "src/pilot/h1210/h2630/execution_manifest.h2630.json",
+  "sha256": "581ca2ccbeb7e9f1d4b26d3d5cb6f0c9fff44cbc3906177df4010db5cfe2f047",
+  "manifest_sha256": "0434654bd03bccd4b8384ce68be8b54b59487000cdefaf9a895476fd40c19911"
+ },
+ "sense_count": 2,
+ "sense_anchors": [
+  {
+   "i": 0,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  },
+  {
+   "i": 1,
+   "tag": null,
+   "de_anchor": "",
+   "layer": null
+  }
+ ],
+ "tm_hits": [
+  {
+   "rank": 1,
+   "key1": "prasna",
+   "score": 0.727,
+   "match_type": "key1_difflib",
+   "ru_preview": "{#prasna#}¦ (от {#snA#} с {#pra#}) <lex>m.</lex> {%купальня, бассейн для купания%}\n<ls>P. 3,3,58</ls>, <is>Vārtt</is>. 4…",
+   "reuse_hint": "fuzzy_neighbor",
+   "evidence_sha256": "bd19099181fb69f0857a0fa671f558d2e40284b57665056ed41f891aba33d2f1",
+   "may_auto_reuse": false,
+   "advisory_only": true,
+   "decision_authority": "promoter_only"
+  },
+  {
+   "rank": 2,
+   "key1": "prota",
+   "score": 0.6,
+   "match_type": "key1_difflib",
+   "ru_preview": "{#prota#}¦ см. под глаголом <ab>s. u.</ab> {#vA, vayati#} с {#pra#} .",
+   "reuse_hint": "fuzzy_neighbor",
+   "evidence_sha256": "a97421310ba73ad97ed4881ea32de8faf909121515fb29638b321b40c8cd7728",
+   "may_auto_reuse": false,
+   "advisory_only": true,
+   "decision_authority": "promoter_only"
+  }
+ ],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=execution_manifest"
+  ]
+ },
+ "det": {
+  "ok": false,
+  "gate": "prep",
+  "issues": [
+   "prep: sense_inventory present but every de_anchor is empty"
+  ],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 75,
+  "source_senses": 2,
+  "had_draft_card": false
+ },
+ "route_hint": "full_worker",
+ "tm_policy": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "fuzzy_is_advisory": true,
+  "exact_content_requires_promoter": true
+ },
+ "question_scope": {
+  "can_answer_now": [
+   "Q1",
+   "Q3",
+   "Q5"
+  ],
+  "promoter_decides": [
+   "Q2"
+  ],
+  "cannot_answer": [
+   "N1",
+   "N2",
+   "N4",
+   "N11"
+  ]
+ },
+ "promotable": false,
+ "context_sha256": "d928ce6c750469cdb2301cfdc76b28623c72c435c8a825c4db1b47b9156eb81b"
+}

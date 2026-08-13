@@ -14,6 +14,29 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H2630 Option A — the whole-card lane at n=4, sealed at zero spend.** A human ruled
+  H2598's Option A (4 pairs on the 4 cards production takes whole, 8 calls), the one shape
+  H2598 had called arithmetically unavailable because the rig hard-coded `PAIR_COUNT = 8`.
+  `prep_context_compare.py` now threads a **sealed `pair_count`** through selection,
+  planning, the reservation ledger and the receipt: it is written into `plan.json` only when
+  it differs from 8 (keyed the way `lane` is), so H2591's and H2612's sealed plans recompute
+  their original hashes and still verify. It may only shrink — `build_plan` refuses
+  `pair_count > 8`, since the rig was authorized for at most sixteen irreversible calls — and
+  `check`/`execute`/the receipt all read the ceiling off the **plan** rather than the module,
+  closing the check-at-one-ceiling/execute-at-another hole. New `--select --pool whole-card`
+  classifies the pool with production's own `_presplit_hit` and returns `idAnIm`, `prasU`,
+  `rAtra`, `spfS` — the **population** of the 8 % lane, not a draw from it, so the four
+  strata collapse by construction and the plan says so.
+- **The premise correction the pass owes itself:** H2598 argued Option A would at least be
+  production-faithful in call shape, and the manifest refutes it. `presplit_keys` is empty
+  (the selector is right about the lane) but production **batches** these cards two per agent
+  call — 2 calls per arm where the rig issues 4. "Whole-card" means un-split, not
+  one-card-per-call; this is sealed into `known_non_equivalences` rather than smoothed over.
+  Evidence: [h2630/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2630/README.md).
+  Selftest **24/24** (5 new cases), window suite **211/211**; `--check` passes 7/8 and fails
+  closed on billing. **No call was reserved and no spend occurred.**
+
 ## [1.144.40] - 2026-08-12
 
 ### Added

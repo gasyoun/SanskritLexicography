@@ -97,9 +97,23 @@ ENVELOPE_SCHEMA = 'pwg.prep_context_comparison_envelope.v1'
 REQUIRED_MODEL = 'claude-opus-5'
 #: Output ceiling, identical across arms; part of the plan hash.
 OUTPUT_LIMIT = 16000
-#: Eight pairs, two calls each. There is no flag to raise this.
+#: Eight pairs, two calls each — the DEFAULT sample size. There is no flag to RAISE this.
+#: A plan may seal a SMALLER `pair_count` (H2630's Option A seals 4, because production takes
+#: only four of this pool's cards whole), and everything downstream reads the ceiling off the
+#: plan rather than off this module, so a sealed plan can never be executed against a
+#: different ceiling than the one it was checked under.
 MAX_CALLS = 16
 PAIR_COUNT = 8
+
+
+def plan_pair_count(plan: dict) -> int:
+    """The sealed sample size. Absent means 8 — H2591/H2612 plans predate the key."""
+    return int(plan.get('pair_count') or PAIR_COUNT)
+
+
+def plan_max_calls(plan: dict) -> int:
+    """The sealed call ceiling. Always 2 x pair_count; read from the plan, never assumed."""
+    return int(plan.get('max_calls') or MAX_CALLS)
 
 #: Canonical PREP block delimiters. Exactly one opener and one closer may appear in a
 #: B-arm prompt; the A-arm prompt must contain neither.
@@ -144,6 +158,32 @@ GROUP_SELECTION_RULE = {
         '4 and record that too — never hide a thin draw',
     ],
     'frozen': 'units are sealed into plan.json before any call; a failed group is never replaced',
+}
+
+#: Pre-declared pool rule for the WHOLE-CARD lane (H2630, Option A). Unlike SELECTION_RULE
+#: and GROUP_SELECTION_RULE this is not a *sampling* rule at all: production takes exactly
+#: four of this pool's 48 cards whole, so the four ARE the lane. Recorded verbatim in the
+#: plan for the same reason the other two are — what was taken, and why, fixed before any
+#: output is seen.
+WHOLE_CARD_POOL_RULE = {
+    'pool': 'every key production does NOT presplit, classified with production\'s own '
+            'predicate gen_opt_harness2._presplit_hit at its own cite floor and sense '
+            'budget — read from the module, never restated here',
+    'unit': 'a UNIT is one whole card, called once per arm, exactly as the whole lane does',
+    'census_not_sample': 'the whole-card pool holds exactly as many cards as the plan takes, '
+                         'so this is the POPULATION of the 8 % lane, not a draw from it. No '
+                         'stratification is possible or needed; the four strata of '
+                         'SELECTION_RULE collapse by construction.',
+    'exclusions': [
+        'synthetic fixtures and content duplicates, on SELECTION_RULE\'s terms — the pool '
+        'is the same 48 distinct real cards, only classified rather than ranked',
+        'every card production presplits: those go through the fragment lane, which H2612 '
+        'qualifies separately',
+    ],
+    'known_bias': 'whole-card cards are citation-light by construction — that is WHY '
+                  'production takes them whole — so this lane cannot exhibit the '
+                  'citation-dense failure mode at all',
+    'frozen': 'keys are sealed into plan.json before any call; a failed card is never replaced',
 }
 
 #: Pre-declared, order-sensitive selection rule. Recorded verbatim in the plan so the
@@ -330,6 +370,29 @@ def select_keys(metrics: dict[str, dict], fallbacks: dict | None = None) -> dict
     return chosen
 
 
+def select_whole_card_keys(metrics: dict[str, dict]) -> list[str]:
+    """Apply WHOLE_CARD_POOL_RULE: the keys production takes WHOLE, in a fixed order.
+
+    Classification is production's own `_presplit_hit`, called exactly as
+    `h2598/b2_whole_card_pool.py` calls it — the thresholds live in that module and are
+    never restated here, so if production retunes them this lane's membership moves with it
+    instead of silently going stale.
+    """
+    import gen_opt_harness2                                  # noqa: WPS433
+
+    whole = []
+    for key in sorted(metrics):
+        value = metrics[key]
+        cite_hit, sense_hit = gen_opt_harness2._presplit_hit(
+            value['ls'], value['source_senses'], gen_opt_harness2.OUTPUT_BUDGET)
+        if not (cite_hit or sense_hit):
+            whole.append(key)
+    if not whole:
+        raise FenceFailure('no card in this pool is taken whole by production — there is no '
+                           'whole-card lane to qualify here')
+    return whole
+
+
 def paired_order(keys: list[str]) -> list[dict]:
     """A1,B1,B2,A2,A3,B3,B4,A4,… — alternating pair order against temporal drift.
 
@@ -370,7 +433,8 @@ def manifest_group(manifest: dict, key: str, group_index: int) -> list:
     return groups[group_index]
 
 
-def select_groups(manifest: dict, relaxations: list | None = None) -> list[dict]:
+def select_groups(manifest: dict, relaxations: list | None = None,
+                  pair_count: int = PAIR_COUNT) -> list[dict]:
     """Apply GROUP_SELECTION_RULE. Deterministic: ties always break on (key1, index) ascending.
 
     ``relaxations`` (optional sink) records each per-card cap that had to be loosened, so a
@@ -387,7 +451,7 @@ def select_groups(manifest: dict, relaxations: list | None = None) -> list[dict]
                    key=lambda u: (-u['fragments'], u['key1'], u['group_index']))
     solo = sorted((u for u in pool if u['fragments'] == 1),
                   key=lambda u: (u['key1'], u['group_index']))
-    share = PAIR_COUNT // 2
+    share = pair_count // 2
 
     def draw(cap):
         chosen, per_card, notes = [], {}, []
@@ -403,11 +467,11 @@ def select_groups(manifest: dict, relaxations: list | None = None) -> list[dict]
             if taken < want:
                 notes.append({'stratum': stratum, 'drawn': taken, 'wanted': want})
         # Backfill the shortfall from whichever stratum still has room, in rank order.
-        if len(chosen) < PAIR_COUNT:
+        if len(chosen) < pair_count:
             picked = {(u['key1'], u['group_index']) for u in chosen}
             for stratum, ranked in (('multi_fragment', multi), ('solo_fragment', solo)):
                 for unit in ranked:
-                    if len(chosen) == PAIR_COUNT:
+                    if len(chosen) == pair_count:
                         break
                     if (unit['key1'], unit['group_index']) in picked:
                         continue
@@ -420,17 +484,17 @@ def select_groups(manifest: dict, relaxations: list | None = None) -> list[dict]
 
     for cap in (2, 3, 4):
         chosen, notes = draw(cap)
-        if len(chosen) == PAIR_COUNT:
+        if len(chosen) == pair_count:
             if relaxations is not None:
                 if cap > 2:
                     relaxations.append({'per_card_cap': cap, 'reason':
-                                        'fewer than %d groups survive a cap of 2' % PAIR_COUNT})
+                                        'fewer than %d groups survive a cap of 2' % pair_count})
                 relaxations.extend(dict(note, reason='stratum could not fill its share; the '
                                         'shortfall was substituted from the other stratum')
                                    for note in notes)
             return sorted(chosen, key=lambda u: (-u['fragments'], u['key1'], u['group_index']))
     raise FenceFailure('manifest yields only %d selectable groups, need %d'
-                       % (len(pool), PAIR_COUNT))
+                       % (len(pool), pair_count))
 
 
 def production_prompt(manifest: dict, card: dict, uid: str) -> str:
@@ -485,16 +549,17 @@ def load_contexts(context_dir: str, keys: list[str]) -> dict[str, dict]:
     return out
 
 
-def unit_specs(manifest: dict, lane: str, relaxations: list | None = None) -> list[dict]:
+def unit_specs(manifest: dict, lane: str, relaxations: list | None = None,
+               pair_count: int = PAIR_COUNT) -> list[dict]:
     """The plan's units, in sealed order: one card per unit (whole) or one group (fragment)."""
     if lane == 'whole':
         keys = list(manifest.get('inputs') or {})
-        if len(keys) != PAIR_COUNT:
+        if len(keys) != pair_count:
             raise FenceFailure('manifest must carry exactly %d keys, found %d'
-                               % (PAIR_COUNT, len(keys)))
+                               % (pair_count, len(keys)))
         return [{'uid': key, 'key1': key, 'lane': 'whole'} for key in keys]
     specs = []
-    for unit in select_groups(manifest, relaxations):
+    for unit in select_groups(manifest, relaxations, pair_count):
         key, index = unit['key1'], unit['group_index']
         group = manifest_group(manifest, key, index)
         specs.append({'uid': unit_id(key, index), 'key1': key, 'lane': 'fragment',
@@ -505,15 +570,19 @@ def unit_specs(manifest: dict, lane: str, relaxations: list | None = None) -> li
 
 def build_plan(manifest_path: str, context_dir: str, *, model: str = REQUIRED_MODEL,
                output_limit: int = OUTPUT_LIMIT, selection: dict | None = None,
-               lane: str = 'whole') -> dict:
+               lane: str = 'whole', pair_count: int = PAIR_COUNT) -> dict:
     """Seal the immutable plan. Carries no clock reading, so it replays byte-identically."""
     if lane not in LANES:
         raise FenceFailure('unknown lane %r; expected one of %r' % (lane, list(LANES)))
+    if not isinstance(pair_count, int) or not 1 <= pair_count <= PAIR_COUNT:
+        raise FenceFailure('pair_count must be an int in 1..%d; a plan may shrink the '
+                           'sample, never grow it past the ceiling this rig was '
+                           'authorized for' % PAIR_COUNT)
     manifest_sha = sha256_file(manifest_path)
     with open(manifest_path, encoding='utf-8') as handle:
         manifest = json.load(handle)
     relaxations = []
-    specs = unit_specs(manifest, lane, relaxations)
+    specs = unit_specs(manifest, lane, relaxations, pair_count)
     keys = [spec['uid'] for spec in specs]
     contexts = load_contexts(context_dir, sorted({spec['key1'] for spec in specs}))
 
@@ -567,7 +636,7 @@ def build_plan(manifest_path: str, context_dir: str, *, model: str = REQUIRED_MO
         'model': model,
         'output_limit': output_limit,
         'output_schema_sha256': sha256_bytes(canonical_bytes(manifest.get('output_schema'))),
-        'max_calls': MAX_CALLS,
+        'max_calls': 2 * pair_count,
         'selection_rule': SELECTION_RULE,
         'strata': selection or {},
         'keys': keys,
@@ -624,6 +693,46 @@ def build_plan(manifest_path: str, context_dir: str, *, model: str = REQUIRED_MO
             'the manifest declares model claude-sonnet-5 as the LANE default; both arms '
             'explicitly request %s and the returned model is attested per call.' % model,
         ]
+    if pair_count != PAIR_COUNT:
+        # Keyed the same way `lane` is, and for the same reason: a plan sealed at the default
+        # eight must recompute its ORIGINAL hash, so the key only appears when it carries
+        # information. H2630's Option A is the first plan to seal it.
+        plan['pair_count'] = pair_count
+        plan['handoff'] = 'H2630'
+        plan['design'] = (
+            'paired %d-card baseline(A) vs PREP(B) qualification on the WHOLE-CARD lane, '
+            'the %d cards production does not presplit; n=%d is descriptive and the four '
+            'strata collapse — see whole_card_pool_rule' % (pair_count, pair_count, pair_count))
+        plan['whole_card_pool_rule'] = WHOLE_CARD_POOL_RULE
+        plan['known_non_equivalences'] = [
+            'production does not PRESPLIT these %d cards (H2598 measured 4 whole / 44 '
+            'presplit, and this manifest\'s presplit_keys is empty), but it does BATCH them: '
+            'the generator packs them 2-per-agent-call, so production issues 2 calls where '
+            'this rig issues %d per arm. The prompt bytes are production\'s and the cards are '
+            'un-split, but "whole-card lane" means un-split, NOT one-card-per-call — an '
+            'earlier draft of this rig claimed the call shape was production\'s here, and the '
+            'manifest refutes it. Both arms are affected identically, so the paired A-vs-B '
+            'comparison is unharmed; absolute wall-clock and token figures are not production '
+            'figures and must not be quoted as such.' % (pair_count, pair_count),
+            'what this buys is a verdict about the 8 %% lane only; the 92 %% lane is H2612.',
+            'n=%d, not 8: the whole-card pool holds exactly %d cards, so the sample is the '
+            'POPULATION of this lane rather than a draw from it. There is no sampling error '
+            'to quote and no strata to balance — both are properties of a census, not '
+            'weaknesses to route around, but the loss of statistical power relative to n=8 '
+            'is real and a receipt must not read as if it were an eight-card result.'
+            % (pair_count, pair_count),
+            'whole-card cards are citation-light BY CONSTRUCTION (they fall under the '
+            'presplit predicate\'s cite floor and sense budget), so this lane cannot exhibit '
+            'the citation-dense failure mode at all. A clean result here is not evidence '
+            'about dense cards.',
+            'manifest schema is pwg.headless_execution_manifest.v1 (unbound): a measurement '
+            'rig, never a bulk execution path.',
+            'the manifest declares model claude-sonnet-5 as the LANE default; both arms '
+            'explicitly request %s and the returned model is attested per call.' % model,
+        ]
+        plan['fences'] = ['no deepseek call', 'no store/TM/promotion/default write',
+                          'fuzzy TM hit is never exact-content reuse', 'no automatic retry',
+                          'no expansion beyond %d pairs' % pair_count]
     plan['plan_sha256'] = sha256_bytes(canonical_bytes(
         {k: v for k, v in plan.items() if k != 'plan_sha256'}))
     return plan
@@ -779,14 +888,20 @@ def check(plan: dict, *, ledger_path: str, run_id: str, authorize_unknown_billin
                     raise FenceFailure('context for %r treats a fuzzy hit as reusable' % key)
         report['conditions']['tm_fence_intact'] = True
 
-        # (7) fresh reservation ledger with at most sixteen irreversible calls
-        ledger = CallReservationLedger(ledger_path, run_id, max_calls=MAX_CALLS)
+        # (7) fresh reservation ledger at the ceiling THIS plan sealed (2 x pair_count).
+        # Read from the plan, never from the module: a plan checked at one ceiling and
+        # executed at another is exactly the hole the sealed-plan discipline exists to close.
+        ceiling = plan_max_calls(plan)
+        if ceiling != 2 * plan_pair_count(plan):
+            raise FenceFailure('sealed ceiling %d does not match 2 x pair_count %d'
+                               % (ceiling, plan_pair_count(plan)))
+        ledger = CallReservationLedger(ledger_path, run_id, max_calls=ceiling)
         snapshot = ledger.snapshot()
         if int(snapshot.get('calls_spent') or 0) != 0:
             raise FenceFailure('reservation run %r is not fresh (%d spent)'
                                % (run_id, snapshot['calls_spent']))
-        if snapshot.get('max_calls') != MAX_CALLS:
-            raise FenceFailure('reservation ceiling is not %d' % MAX_CALLS)
+        if snapshot.get('max_calls') != ceiling:
+            raise FenceFailure('reservation ceiling is not %d' % ceiling)
         report['conditions']['fresh_reservation_ledger'] = True
 
         # (8) billing evidence, or an explicit human authorisation
@@ -965,7 +1080,7 @@ def execute(plan: dict, *, ledger_path: str, run_id: str, out_dir: str,
     # On the fragment lane several units share one parent card, so `contexts` is keyed by
     # UNIT: the same context object legitimately appears under more than one uid.
 
-    ledger = CallReservationLedger(ledger_path, run_id, max_calls=MAX_CALLS)
+    ledger = CallReservationLedger(ledger_path, run_id, max_calls=plan_max_calls(plan))
     argv = build_argv(plan, manifest, claude_bin)
     billing = billing or {'max_agent_sdk_credit_claimed': False, 'credit_claim_evidence': None}
     os.makedirs(out_dir, exist_ok=True)
@@ -1254,8 +1369,9 @@ def build_receipt(plan: dict, run: dict, *, check_report: dict) -> dict:
     """`pwg.prep_context_comparison.v1` — the GO/NO-GO the handoff closes on."""
     envelopes = run['envelopes']
     arm_a, arm_b = _arm_totals(envelopes, 'A'), _arm_totals(envelopes, 'B')
-    complete = (run['calls_spent'] == MAX_CALLS and not run['stopped']
-                and arm_a['calls'] == PAIR_COUNT and arm_b['calls'] == PAIR_COUNT)
+    pair_count, ceiling = plan_pair_count(plan), plan_max_calls(plan)
+    complete = (run['calls_spent'] == ceiling and not run['stopped']
+                and arm_a['calls'] == pair_count and arm_b['calls'] == pair_count)
 
     lost = arm_a['audited_pass'] - arm_b['audited_pass']
     wall_gain = _relative_gain(arm_a['wall_ms_total'], arm_b['wall_ms_total'])
@@ -1281,17 +1397,18 @@ def build_receipt(plan: dict, run: dict, *, check_report: dict) -> dict:
 
     receipt = {
         'schema': RECEIPT_SCHEMA,
-        'handoff': 'H2591',
+        'handoff': plan.get('handoff', 'H2591'),
         'plan_sha256': plan['plan_sha256'],
         'manifest_sha256': plan['manifest_sha256'],
         'model_requested': plan['model'],
         'models_returned': sorted({str(e.get('returned_model')) for e in envelopes}),
-        'n': PAIR_COUNT,
-        'evidence_class': ('descriptive qualification at n=8 — NOT production evidence; '
+        'n': pair_count,
+        'lane': plan.get('lane', 'whole'),
+        'evidence_class': ('descriptive qualification at n=%d — NOT production evidence; '
                            'a GO authorizes only a separately minted, larger, '
-                           'pre-registered experiment, never a route switch'),
+                           'pre-registered experiment, never a route switch' % pair_count),
         'calls_spent': run['calls_spent'],
-        'call_ceiling': MAX_CALLS,
+        'call_ceiling': ceiling,
         'stopped': run['stopped'],
         'complete': complete,
         'comparison_order': [
@@ -1356,6 +1473,14 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--select', action='store_true',
                     help='apply SELECTION_RULE to the input dir and print/seal the 8 keys')
+    ap.add_argument('--pool', choices=('stratified', 'whole-card'), default='stratified',
+                    help='which pool --select draws from: stratified (SELECTION_RULE, the '
+                         '8-card draw) or whole-card (WHOLE_CARD_POOL_RULE — every card '
+                         'production takes whole, i.e. the CENSUS of the 8%% lane)')
+    ap.add_argument('--pair-count', type=int, default=None,
+                    help='sample size to seal into the plan; defaults to %d. May only be '
+                         'LOWERED (Option A seals 4, the size of the whole-card pool).'
+                         % PAIR_COUNT)
     ap.add_argument('--plan', action='store_true', help='seal the immutable plan')
     ap.add_argument('--lane', choices=LANES, default='whole',
                     help='call SHAPE to qualify: whole (one card per call, the 8%% lane) or '
@@ -1381,6 +1506,23 @@ def main(argv=None) -> int:
         from prep_context_compare_selftest import selftest    # noqa: WPS433
         return selftest()
 
+    if args.select and args.pool == 'whole-card':
+        input_dir = args.input_dir or default_input_dir()
+        metrics = pool_metrics(input_dir)
+        keys = select_whole_card_keys(metrics)
+        value = {'schema': 'pwg.prep_context_comparison_selection.v1',
+                 'pool': 'whole-card', 'input_dir': os.path.abspath(input_dir),
+                 'pool_size': len(metrics), 'whole_card_pool_rule': WHOLE_CARD_POOL_RULE,
+                 'keys': keys, 'pair_count': len(keys),
+                 # Stated, not implied: this is the population of the lane, so the four
+                 # strata of SELECTION_RULE do not apply and are not silently omitted.
+                 'strata': {}, 'strata_collapsed': True,
+                 'metrics': {k: metrics[k] for k in keys}}
+        if args.out_dir:
+            atomic_json(os.path.join(args.out_dir, 'selection.json'), value)
+        print(json.dumps(value, ensure_ascii=False, indent=1))
+        return 0
+
     if args.select:
         input_dir = args.input_dir or default_input_dir()
         metrics = pool_metrics(input_dir)
@@ -1400,12 +1542,18 @@ def main(argv=None) -> int:
         if not (args.manifest and args.context_dir and args.out_dir):
             ap.error('--plan needs --manifest, --context-dir and --out-dir')
         selection = None
+        selection_blob = None
         selection_path = os.path.join(args.out_dir, 'selection.json')
         if os.path.exists(selection_path):
             with open(selection_path, encoding='utf-8') as handle:
-                selection = json.load(handle).get('strata')
+                selection_blob = json.load(handle)
+            selection = selection_blob.get('strata')
+        pair_count = args.pair_count
+        if pair_count is None:
+            # A whole-card selection.json seals its own size; nothing else may change it.
+            pair_count = int((selection_blob or {}).get('pair_count') or PAIR_COUNT)
         plan = build_plan(args.manifest, args.context_dir, selection=selection,
-                          lane=args.lane)
+                          lane=args.lane, pair_count=pair_count)
         path = atomic_json(os.path.join(args.out_dir, 'plan.json'), plan)
         print('sealed plan %s  lane=%s  plan_sha256=%s'
               % (path, plan.get('lane', 'whole'), plan['plan_sha256']))
@@ -1453,7 +1601,8 @@ def main(argv=None) -> int:
                       run_id=args.run_id, out_dir=os.path.join(out_dir, 'envelopes'),
                       claude_bin=args.claude_bin, timeout=args.timeout,
                       billing=report.get('billing'), manifest_path=args.manifest)
-        print('calls spent %d/%d  stopped=%r' % (run['calls_spent'], MAX_CALLS, run['stopped']))
+        print('calls spent %d/%d  stopped=%r'
+              % (run['calls_spent'], plan_max_calls(plan), run['stopped']))
         return 0 if not run['stopped'] else 1
 
     if args.receipt:
