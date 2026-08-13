@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["result"],
+  "properties": {
+    "result": {
+      "type": "object",
+      "required": ["ok"],
+      "properties": {
+        "ok": {"const": true}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
