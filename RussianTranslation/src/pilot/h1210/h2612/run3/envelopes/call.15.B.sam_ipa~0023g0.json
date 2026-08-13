@@ -1,0 +1,78 @@
+{
+ "arm": "B",
+ "audit": {
+  "audited": false,
+  "coverage": 0.0,
+  "defects": [
+   "missing-or-mismatched-fragment-key"
+  ],
+  "fragments_accepted": 0,
+  "fragments_requested": 1,
+  "issues": [
+   "samIpa_f0: missing-or-mismatched-fragment-key"
+  ],
+  "schema_ok": true
+ },
+ "context_sha256": "1f8a0327477b7fe56ae5f882b58d93b2416d790b0a7a8246485e45829d12f27d",
+ "detail": null,
+ "failure_class": null,
+ "key1": "samIpa#g0",
+ "ordinal": 15,
+ "pair": 7,
+ "plan_sha256": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e",
+ "prompt_bytes": 29954,
+ "prompt_sha256": "a65b876e710f9b91da5a03455fc3236c123879921a229b3e01bb20b56c880101",
+ "raw_result": null,
+ "requested_model": "claude-opus-5",
+ "result_sha256": "1b516b95efe942e34bab362ca2a4d91c77c3574d46539a8e9f0b3ea97a80d761",
+ "returncode": 0,
+ "returned_model": "claude-opus-5",
+ "schema": "pwg.prep_context_comparison_envelope.v1",
+ "telemetry": {
+  "accounting": {
+   "billing_mode": "unknown_gateway",
+   "cache_creation_tokens": 36245,
+   "cache_read_tokens": 205879,
+   "credit_claim_evidence": null,
+   "credit_equivalent_usd": null,
+   "input_tokens": 8,
+   "list_equivalent_usd": null,
+   "observed_cash_usd": null,
+   "output_tokens": 5461,
+   "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+   "schema": "pwg.usage_accounting.v1",
+   "usage_evaluable": true
+  },
+  "cache_creation_tokens": 36245,
+  "cache_read_tokens": 205879,
+  "cost_evaluable": false,
+  "duration_api_ms": 237378,
+  "duration_ms": 246087,
+  "input_tokens": 8,
+  "observed_cost_usd": 0,
+  "output_tokens": 5461,
+  "subagent_tokens": 247593
+ },
+ "terminal": {
+  "api_error_status": null,
+  "duration_api_ms": 237378,
+  "duration_ms": 246087,
+  "is_error": false,
+  "num_turns": 2,
+  "session_id": "b1fcc217-7090-4269-a484-0fb800ec057d",
+  "stop_reason": "tool_use",
+  "subtype": "success",
+  "terminal_reason": "completed",
+  "total_cost_usd": 0.6019545000000001,
+  "type": "result"
+ },
+ "usage_cross_check": {
+  "agree": true,
+  "contradiction": null,
+  "model_usage_present": true,
+  "model_usage_total": 247593,
+  "usage_total": 247593
+ },
+ "usage_recovery": null,
+ "wall_ms": 263998
+}
