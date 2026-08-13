@@ -25,13 +25,15 @@ JSON-repair events).
 
 Usage:
   python src/pilot/h1210/deepseek_arm.py <slice_payload.json> <manifest.json> <out_prefix>
-        [--env-file PATH] [--model deepseek-v4-flash] [--workers 6] [--max-tokens 8192]
+        [--env-file PATH] [--model deepseek-v4-flash] [--reasoning-effort high]
+        [--workers 6] [--max-tokens 8192] [--timeout 600]
         [--keys k1,k2] [--limit N] [--dry-run]
 
 The API key is read from $DEEPSEEK_API_KEY, or from `--env-file` (a KEY=VALUE .env) — never
 from a committed file, and never echoed into any artifact.
 """
 import argparse
+import datetime
 import json
 import os
 import re
@@ -50,18 +52,85 @@ if HERE not in sys.path:
 
 import det_gate  # noqa: E402
 
-# DeepSeek published list prices, USD per 1M tokens (DeepSeek-V4-Flash-0731 /
-# API id `deepseek-v4-flash`, first-party https://api-docs.deepseek.com/quick_start/pricing/
-# as of 08-08-2026). Recorded so $/clean in RESULTS_LOG is reproducible and re-pricable.
-# H1210 historical arm-B (29-07-2026) used older `deepseek-chat` table 0.27 / 0.07 / 1.10 —
-# do not reprice that run with these constants without an explicit reprice note.
-# Org lane map: Uprava docs/DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08.md (H2439).
-PRICE_CACHE_MISS_IN = 0.14
-PRICE_CACHE_HIT_IN = 0.0028
-PRICE_OUT = 0.28
+# DeepSeek published list prices, USD per 1M tokens, first-party
+# https://api-docs.deepseek.com/quick_start/pricing/ as of 13-08-2026 (pre peak/off-peak
+# switch at 16-08-2026 16:00 UTC). Pick the table from the REQUESTED model id — never
+# apply Flash rates to a Pro run (H2652). H1210 historical arm-B used older
+# `deepseek-chat` 0.27 / 0.07 / 1.10 — do not reprice that run with these constants.
+# Org maps: Uprava docs/DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08.md (H2439)
+# and docs/DEEPSEEK_V4_PRO_0813_ORG_LANE_MAP_2026-08.md (H2651).
+PRICE_BY_MODEL = {
+    'deepseek-v4-flash': {'cache_miss_in': 0.14, 'cache_hit_in': 0.0028, 'out': 0.28},
+    'deepseek-v4-pro': {'cache_miss_in': 0.435, 'cache_hit_in': 0.003625, 'out': 0.87},
+}
+# Back-compat aliases used by cost() when the instance has no table (old callers).
+PRICE_CACHE_MISS_IN = PRICE_BY_MODEL['deepseek-v4-flash']['cache_miss_in']
+PRICE_CACHE_HIT_IN = PRICE_BY_MODEL['deepseek-v4-flash']['cache_hit_in']
+PRICE_OUT = PRICE_BY_MODEL['deepseek-v4-flash']['out']
 DEFAULT_MODEL = 'deepseek-v4-flash'
+ALLOWED_EFFORTS = ('low', 'high', 'max')
 
 MAX_ATTEMPTS = 3
+
+# Peak/off-peak switch (first-party pricing page). After this instant, peak hours
+# cost 1.5–4.7× today's card (cache-hit up to ~12×). Standing PWG rule 13-08-2026:
+# never pay peak; run off-peak or defer. Europe/CEST = UTC+2 in August:
+# 01–04 UTC → 03–06 CEST, 06–10 UTC → 08–12 CEST.
+PEAK_BILLING_START = datetime.datetime(2026, 8, 16, 16, 0, tzinfo=datetime.timezone.utc)
+PEAK_WINDOWS_UTC = ((1, 4), (6, 10))  # [start, end) hours UTC
+
+
+def utcnow():
+    return datetime.datetime.now(datetime.timezone.utc)
+
+
+def deepseek_is_peak(now=None):
+    """True only after the 16-08-2026 16:00 UTC switch AND inside a peak window."""
+    now = now or utcnow()
+    if now < PEAK_BILLING_START:
+        return False
+    hour = now.hour
+    return any(start <= hour < end for start, end in PEAK_WINDOWS_UTC)
+
+
+def _selftest_peak():
+    before = datetime.datetime(2026, 8, 16, 15, 59, tzinfo=datetime.timezone.utc)
+    after_off = datetime.datetime(2026, 8, 16, 16, 30, tzinfo=datetime.timezone.utc)  # 16:30 UTC
+    after_peak_am = datetime.datetime(2026, 8, 17, 2, 0, tzinfo=datetime.timezone.utc)
+    after_peak_eu = datetime.datetime(2026, 8, 17, 8, 0, tzinfo=datetime.timezone.utc)  # 10:00 CEST
+    failed = 0
+    for now, want, name in (
+        (before, False, 'pre-switch 15:59 UTC'),
+        (after_off, False, 'post-switch off-peak 16:30 UTC'),
+        (after_peak_am, True, 'post-switch 02:00 UTC / 04:00 CEST'),
+        (after_peak_eu, True, 'post-switch 08:00 UTC / 10:00 CEST'),
+    ):
+        got = deepseek_is_peak(now)
+        status = 'ok' if got == want else 'FAIL'
+        if got != want:
+            failed += 1
+        print('  %s  peak=%s want=%s  %s' % (status, got, want, name))
+    if failed:
+        sys.exit('deepseek peak selftest: %d check(s) failed' % failed)
+    print('deepseek peak selftest: 0 check(s) failed')
+
+
+def refuse_if_peak(now=None):
+    """Exit before the first HTTP byte if this would be billed at peak.
+
+    Escape: ALLOW_DEEPSEEK_PEAK=1 (must be explicit; never the default).
+    """
+    if os.environ.get('ALLOW_DEEPSEEK_PEAK') == '1':
+        print('WARN: ALLOW_DEEPSEEK_PEAK=1 — peak billing not refused', file=sys.stderr)
+        return
+    now = now or utcnow()
+    if not deepseek_is_peak(now):
+        return
+    sys.exit(
+        'REFUSE: DeepSeek peak hours after 16-08-2026 16:00 UTC '
+        '(01:00-04:00 and 06:00-10:00 UTC = 03:00-06:00 and 08:00-12:00 CEST). '
+        'Defer the job or wait for off-peak. Override: ALLOW_DEEPSEEK_PEAK=1.'
+    )
 
 
 def load_env_file(path):
@@ -120,24 +189,32 @@ def extract_json(text):
 
 
 class DeepSeek:
-    def __init__(self, base, key, model, max_tokens, timeout=600):
+    def __init__(self, base, key, model, max_tokens, timeout=600, reasoning_effort=None):
         self.url = base.rstrip('/') + '/chat/completions'
         self.key = key
         self.model = model
         self.max_tokens = max_tokens
         self.timeout = timeout
+        self.reasoning_effort = reasoning_effort
+        self.prices = PRICE_BY_MODEL.get(model, PRICE_BY_MODEL['deepseek-v4-flash'])
         self.lock = threading.Lock()
         self.calls = []
 
     def chat(self, system, user, label):
-        body = json.dumps({
+        payload = {
             'model': self.model,
             'messages': [{'role': 'system', 'content': system},
                          {'role': 'user', 'content': user}],
             'response_format': {'type': 'json_object'},
             'temperature': 0.2,
             'max_tokens': self.max_tokens,
-        }).encode('utf-8')
+        }
+        if self.reasoning_effort:
+            # OpenAI-compat Chat Completions: effort + thinking toggle in the body
+            # (official docs extra_body.thinking; raw HTTP has no extra_body).
+            payload['reasoning_effort'] = self.reasoning_effort
+            payload['thinking'] = {'type': 'enabled'}
+        body = json.dumps(payload).encode('utf-8')
         req = urllib.request.Request(self.url, data=body, headers={
             'Authorization': 'Bearer ' + self.key, 'Content-Type': 'application/json'})
         t0 = time.time()
@@ -148,15 +225,22 @@ class DeepSeek:
                     payload = json.load(r)
                 dt = time.time() - t0
                 usage = payload.get('usage') or {}
+                msg = (payload.get('choices') or [{}])[0].get('message') or {}
                 rec = {'label': label, 'latency_s': round(dt, 2), 'transport_attempts': attempt,
+                       'requested_model': self.model,
+                       'served_model': payload.get('model'),
+                       'model_matches_request': payload.get('model') == self.model,
+                       'reasoning_effort': self.reasoning_effort,
                        'prompt_tokens': usage.get('prompt_tokens'),
                        'completion_tokens': usage.get('completion_tokens'),
+                       'reasoning_tokens': (usage.get('completion_tokens_details') or {}).get(
+                           'reasoning_tokens'),
                        'cache_hit_tokens': usage.get('prompt_cache_hit_tokens'),
                        'cache_miss_tokens': usage.get('prompt_cache_miss_tokens'),
                        'finish_reason': (payload.get('choices') or [{}])[0].get('finish_reason')}
                 with self.lock:
                     self.calls.append(rec)
-                return payload['choices'][0]['message']['content'], rec
+                return msg.get('content'), rec
             # Deliberately broad: the measured failure on the first 100-card run was
             # `http.client.IncompleteRead`, which is an HTTPException — NOT an OSError or a
             # URLError — so a narrow tuple let it escape and killed the whole worker thread,
@@ -180,12 +264,14 @@ class DeepSeek:
         # Older/absent cache split -> charge the whole prompt at cache-miss rate (never free).
         if not (miss or hit):
             miss = sum(c.get('prompt_tokens') or 0 for c in self.calls)
+        p = self.prices
         return {
             'cache_miss_in_tokens': miss, 'cache_hit_in_tokens': hit, 'out_tokens': out,
-            'usd': round(miss / 1e6 * PRICE_CACHE_MISS_IN + hit / 1e6 * PRICE_CACHE_HIT_IN
-                         + out / 1e6 * PRICE_OUT, 4),
-            'price_table': {'cache_miss_in': PRICE_CACHE_MISS_IN,
-                            'cache_hit_in': PRICE_CACHE_HIT_IN, 'out': PRICE_OUT},
+            'usd': round(miss / 1e6 * p['cache_miss_in'] + hit / 1e6 * p['cache_hit_in']
+                         + out / 1e6 * p['out'], 4),
+            'price_table': dict(p),
+            'price_model': self.model,
+            'reasoning_effort': self.reasoning_effort,
         }
 
 
@@ -261,15 +347,22 @@ def run_card(ds, c, common, schema, field):
 
 
 def main():
+    if '--selftest-peak' in sys.argv:
+        _selftest_peak()
+        return
     ap = argparse.ArgumentParser()
     ap.add_argument('payload')
     ap.add_argument('manifest')
     ap.add_argument('out_prefix')
     ap.add_argument('--env-file', default=None)
     ap.add_argument('--model', default=None)
+    ap.add_argument('--reasoning-effort', default=None, choices=ALLOWED_EFFORTS,
+                    help='Pin thinking effort (low/high/max). Omit to leave the field off '
+                         '(Flash default path). Required for a scientific Pro rematch.')
     ap.add_argument('--base-url', default=None)
     ap.add_argument('--workers', type=int, default=6)
     ap.add_argument('--max-tokens', type=int, default=8192)
+    ap.add_argument('--timeout', type=int, default=600)
     ap.add_argument('--keys', default=None)
     ap.add_argument('--limit', type=int, default=None)
     ap.add_argument('--dry-run', action='store_true')
@@ -301,16 +394,24 @@ def main():
             or 'https://api.deepseek.com')
     model = (a.model or os.environ.get('DEEPSEEK_MODEL') or env.get('DEEPSEEK_MODEL')
              or DEFAULT_MODEL)
+    if not a.dry_run:
+        refuse_if_peak()
+    effort = (a.reasoning_effort or os.environ.get('DEEPSEEK_REASONING_EFFORT')
+              or env.get('DEEPSEEK_REASONING_EFFORT') or None)
     if a.dry_run:
-        print('dry-run: %d card(s), model=%s base=%s key=%s, schema %d B, prompt_common %d B'
-              % (len(cards), model, base, 'present' if key else 'MISSING',
+        print('dry-run: %d card(s), model=%s effort=%s prices=%s base=%s key=%s, '
+              'schema %d B, prompt_common %d B'
+              % (len(cards), model, effort or '-',
+                 PRICE_BY_MODEL.get(model, PRICE_BY_MODEL['deepseek-v4-flash']),
+                 base, 'present' if key else 'MISSING',
                  len(json.dumps(schema)), len(common)))
         return
     if not key:
         sys.exit('FAIL: no DEEPSEEK_API_KEY in env or --env-file (arm B needs the external '
                  'generator; report it BLOCKED rather than substituting a model)')
 
-    ds = DeepSeek(base, key, model, a.max_tokens)
+    ds = DeepSeek(base, key, model, a.max_tokens, timeout=a.timeout,
+                  reasoning_effort=effort)
     results = [None] * len(cards)
     lock = threading.Lock()
     done = [0]
