@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.45] - 2026-08-14
 ### Added
 - **H2674 W0 OpenAI SDK stream + 32k cap + PRICE after-1608** (Grok 4.6 `grok-4.6`, 13-08-2026): `DeepSeek.chat` uses official OpenAI SDK `stream=True`; default `max_tokens` 32768; `prep_pack --live` shares that client and cap; after 16-08-2026 16:00 UTC off-peak `price_card`; `DEFAULT_MODEL` still Flash. Offline mock >8k thinking tokens; live N=3 canary 3/3, $0.0006, no `IncompleteRead`. Report: [`experiments/H2674_w0_stream/REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/H2674_w0_stream/REPORT.md). Unblocks H2676 Pro rematch.
 - **H2652 V4-Pro rematch harness pin + frozen verdict rule** (Grok 4.6 `grok-4.6`, 13-08-2026): `deepseek_arm.py` selects Pro/Flash PRICE_* from the requested model and accepts `--reasoning-effort low|high|max` (thinking body pinned, served-model attested). After **16-08-2026 16:00 UTC** the worker **refuses peak hours** (01–04 and 06–10 UTC / 03–06 and 08–12 CEST) unless `ALLOW_DEEPSEEK_PEAK=1`. Frozen Q3 sample + verdict live under [`experiments/H2652_v4pro_rematch/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/H2652_v4pro_rematch/VERDICT_RULE.md). Default model stays `deepseek-v4-flash`. No TM write.
