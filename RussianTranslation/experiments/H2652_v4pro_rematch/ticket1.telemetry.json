@@ -1,0 +1,57 @@
+{
+ "schema": "pwg.h1210_arm_telemetry.v1",
+ "arm": "B_deepseek",
+ "model": "deepseek-v4-pro",
+ "cards": 1,
+ "wall_clock_s": 1055.6,
+ "workers": 1,
+ "generation_calls": 2,
+ "calls": [
+  {
+   "label": "ya_tepsita#1",
+   "latency_s": 868.1,
+   "transport_attempts": 3,
+   "error": "IncompleteRead: IncompleteRead(1 bytes read)"
+  },
+  {
+   "label": "ya_tepsita#2",
+   "latency_s": 187.44,
+   "transport_attempts": 2,
+   "requested_model": "deepseek-v4-pro",
+   "served_model": "deepseek-v4-pro",
+   "model_matches_request": true,
+   "reasoning_effort": "high",
+   "prompt_tokens": 8320,
+   "completion_tokens": 10164,
+   "reasoning_tokens": 9410,
+   "cache_hit_tokens": 8192,
+   "cache_miss_tokens": 128,
+   "finish_reason": "stop"
+  }
+ ],
+ "cost": {
+  "cache_miss_in_tokens": 128,
+  "cache_hit_in_tokens": 8192,
+  "out_tokens": 10164,
+  "usd": 0.0089,
+  "price_table": {
+   "cache_miss_in": 0.435,
+   "cache_hit_in": 0.003625,
+   "out": 0.87
+  },
+  "price_model": "deepseek-v4-pro",
+  "reasoning_effort": "high"
+ },
+ "per_card": [
+  {
+   "key1": "ya_tepsita",
+   "attempts": 2,
+   "final_status": "pending-controller",
+   "repairs": [],
+   "latency_s": [
+    868.1,
+    187.44
+   ]
+  }
+ ]
+}
