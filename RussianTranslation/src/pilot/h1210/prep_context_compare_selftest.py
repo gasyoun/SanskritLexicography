@@ -441,11 +441,18 @@ def test_b1_capture_gap_terminal_fields_raw_text_and_modelusage_crosscheck():
                                   stdout=json.dumps(wrapper), stderr='')
 
         run = _run(tmp, plan, contradicting, run_id='xcheck', out='xcheck')
-        assert run['stopped'] and 'usage_contradiction' in run['stopped'], run['stopped']
         env = run['envelopes'][0]
         assert env['usage_cross_check']['agree'] is False
         assert env['usage_cross_check']['model_usage_total'] == 75635
         assert 'all-zero' in env['usage_cross_check']['contradiction']
+        # This case originally asserted the run STOPPED here. H2612's measured run then
+        # identified the class — a `subtype: success` call whose top-level usage block was
+        # dropped while modelUsage kept the real counts — so this direction now recovers
+        # from the validated second source instead of halting. Detection is unchanged and
+        # still asserted above; see
+        # test_dropped_usage_block_is_recovered_from_modelusage_and_disclosed.
+        assert env['usage_recovery'] is not None, 'the dropped block must be recovered'
+        assert not run['stopped'], run['stopped']
         assert env['terminal']['subtype'] == 'success'
         assert env['terminal']['terminal_reason'] == 'completed'
         assert env['terminal']['num_turns'] == 2
@@ -641,6 +648,136 @@ def test_fragment_audit_scores_each_fragment_against_its_own_skeleton():
         print('  ok   fragment audit uses production\'s per-fragment fidelity rule')
 
 
+def test_go_rests_on_the_paired_margin_not_on_how_fast_an_arm_failed():
+    """Both sealed runs fired a GO on an artefact of arm TOTALS.
+
+    H2591: +26.9 % that was mostly the difference between how long each arm took to FAIL.
+    H2612: +10.21 %, resting on one arm-A refusal — remove it and the margin inverts to
+    -8.85 %, while the honest paired figure over the units both arms produced is +4.25 %.
+    An arm total silently rewards the arm that fails FASTER, so the GO now keys off the
+    paired margin and the totals are reported for continuity only.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        plan, _mp, _m, _cd = _plan(tmp)
+        report = pcc.check(plan, ledger_path=os.path.join(tmp, 'chk.json'), run_id='pair')
+
+        # Arms translate at identical speed on every unit they BOTH complete; arm A merely
+        # burns a long failed call. The old rule read that as a win for PREP.
+        slow_failure = {'key': KEYS[0]}
+
+        def failing_a_slowly(argv, prompt, timeout):
+            is_prep = pcc.PREP_OPEN in prompt
+            key = next(k for k in KEYS if ('=== CARD %s ===' % k) in prompt)
+            if key == slow_failure['key'] and not is_prep:
+                wrapper = _wrapper(cards=[])
+                wrapper.pop('structured_output')
+                wrapper['result'] = 'refused'
+                return pcc.CallResult(returncode=1, timed_out=False, wall_ms=600000,
+                                      stdout=json.dumps(wrapper), stderr='')
+            card = _good_card(key, '{T%d}' % (KEYS.index(key) + 1))
+            return pcc.CallResult(returncode=0, timed_out=False, wall_ms=1000,
+                                  stdout=json.dumps(_wrapper(cards=[card])), stderr='')
+
+        run = _run(tmp, plan, failing_a_slowly, run_id='pair', out='pair')
+        receipt = pcc.build_receipt(plan, run, check_report=report)
+
+        assert receipt['deltas']['wall_ms_relative_gain'] > 0.10, \
+            'the arm-total margin must still look like a win — that is the trap'
+        paired = receipt['paired_deltas']
+        assert paired['unit_count'] == pcc.PAIR_COUNT - 1, paired['unit_count']
+        assert paired['wall_ms_relative_gain'] == 0.0, paired['wall_ms_relative_gain']
+        assert receipt['verdict'] == 'NO-GO', receipt['verdict']
+        print('  ok   the GO rests on the paired margin, not on how fast an arm failed')
+
+
+def test_dropped_usage_block_is_recovered_from_modelusage_and_disclosed():
+    """H2591's unexplained class, identified by H2612's measured run and now recovered.
+
+    Ordinal 5 came back `type: result` / `subtype: success` / `terminal_reason: completed`
+    / `is_error: false` / `num_turns: 2` / `total_cost_usd: 0.4029715` with a full audited
+    card — and a top-level `usage` of all zeros beside a `modelUsage` of 73 620 tokens. The
+    tokens were spent and counted; only the accounting block was dropped. Halting on that
+    throws away a measurement that exists, so this ONE direction recovers from the
+    validated second source, records it per call, and discloses it in the receipt.
+
+    Every other disagreement stays unexplained and still stops the run.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        plan, _mp, _m, _cd = _plan(tmp)
+        report = pcc.check(plan, ledger_path=os.path.join(tmp, 'chk.json'), run_id='rec')
+
+        def dropped_block(argv, prompt, timeout):
+            is_prep = pcc.PREP_OPEN in prompt
+            key = next(k for k in KEYS if ('=== CARD %s ===' % k) in prompt)
+            card = _good_card(key, '{T%d}' % (KEYS.index(key) + 1))
+            wrapper = _wrapper(cards=[card])
+            wrapper['usage'] = {k: 0 for k in wrapper['usage']}
+            wrapper['modelUsage'] = {'claude-opus-5': {
+                'inputTokens': 20, 'outputTokens': 12600,
+                'cacheReadInputTokens': 0, 'cacheCreationInputTokens': 61000}}
+            wrapper.update({'type': 'result', 'subtype': 'success', 'is_error': False,
+                            'terminal_reason': 'completed', 'num_turns': 2})
+            return pcc.CallResult(returncode=0, timed_out=False,
+                                  wall_ms=400 if is_prep else 1000,
+                                  stdout=json.dumps(wrapper), stderr='')
+
+        run = _run(tmp, plan, dropped_block, run_id='rec', out='rec')
+        assert not run['stopped'], run['stopped']
+        assert run['calls_spent'] == pcc.MAX_CALLS, 'a recovered call must not halt the run'
+
+        envelope = run['envelopes'][0]
+        assert envelope['failure_class'] is None, envelope['failure_class']
+        assert envelope['usage_recovery']['model_usage_total'] == 73620
+        assert envelope['telemetry']['output_tokens'] == 12600, 'the real count is adopted'
+        assert envelope['telemetry']['usage_source'] == 'modelUsage'
+        assert pcc.usage_evaluable(envelope['telemetry'])
+
+        receipt = pcc.build_receipt(plan, run, check_report=report)
+        recovered = receipt['evidence_holes']['usage_recovered_from_model_usage']
+        assert len(recovered) == pcc.MAX_CALLS, 'every recovery must be disclosed'
+        assert receipt['evidence_holes']['usage_unevaluable_calls'] == 0
+        assert receipt['verdict'] in ('GO', 'NO-GO'), receipt['verdict']
+
+        # The recovery is NARROW: a disagreement in any other direction is still unexplained
+        # and still stops the run.
+        def both_populated_but_different(argv, prompt, timeout):
+            card = _good_card(KEYS[0], '{T1}')
+            wrapper = _wrapper(cards=[card])
+            wrapper['modelUsage'] = {'claude-opus-5': {
+                'inputTokens': 999999, 'outputTokens': 999999,
+                'cacheReadInputTokens': 0, 'cacheCreationInputTokens': 0}}
+            return pcc.CallResult(returncode=0, timed_out=False, wall_ms=1000,
+                                  stdout=json.dumps(wrapper), stderr='')
+
+        run = _run(tmp, plan, both_populated_but_different, run_id='odd', out='odd')
+        assert run['stopped'] and 'usage_contradiction' in run['stopped'], run['stopped']
+        assert run['calls_spent'] == 1
+        print('  ok   a dropped usage block is recovered from modelUsage and disclosed')
+
+
+def test_a_timeout_classifies_as_timeout_not_as_a_malformed_envelope():
+    """H2612's own measured run found this: ordinal 1 sat for the full 1800 s and was
+    recorded as `malformed_envelope`. A timed-out call returns empty stdout, which never
+    parses, so with the parse check first the `timeout` class was unreachable BY
+    CONSTRUCTION — every abandoned call was filed as "the provider sent garbage" when the
+    truth was "we stopped waiting", and the stop line blamed the absent model instead.
+    """
+    with tempfile.TemporaryDirectory() as tmp:
+        plan, _mp, _m, _cd = _plan(tmp)
+
+        def timing_out(argv, prompt, timeout):
+            return pcc.CallResult(returncode=None, stdout='', stderr='timeout',
+                                  wall_ms=int(timeout * 1000), timed_out=True)
+
+        run = _run(tmp, plan, timing_out, run_id='slow', out='slow')
+        envelope = run['envelopes'][0]
+        assert envelope['failure_class'] == 'timeout', envelope['failure_class']
+        assert run['stopped'] and run['stopped'].startswith('timeout at ordinal 1'), run['stopped']
+        assert 'model' not in run['stopped'], 'a timeout must not be reported as an attestation gap'
+        assert run['calls_spent'] == 1
+        print('  ok   a timeout is a timeout, not a malformed envelope')
+
+
 def test_selection_rule_is_deterministic_and_stratified():
     pool = {}
     for index in range(40):
@@ -798,6 +935,9 @@ CASES = [
     test_whole_lane_plan_hash_survives_the_fragment_lane,
     test_fragment_group_selection_cannot_be_swallowed_by_one_card,
     test_fragment_audit_scores_each_fragment_against_its_own_skeleton,
+    test_a_timeout_classifies_as_timeout_not_as_a_malformed_envelope,
+    test_dropped_usage_block_is_recovered_from_modelusage_and_disclosed,
+    test_go_rests_on_the_paired_margin_not_on_how_fast_an_arm_failed,
     test_selection_rule_is_deterministic_and_stratified,
     test_pair_count_shrinks_the_sample_and_the_call_ceiling,
     test_default_plan_never_carries_the_pair_count_key,

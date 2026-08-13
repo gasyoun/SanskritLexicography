@@ -1,0 +1,73 @@
+{
+ "arm": "B",
+ "audit": {
+  "audited": true,
+  "coverage": 1.0,
+  "defects": [],
+  "fragments_accepted": 10,
+  "fragments_requested": 10,
+  "issues": [],
+  "schema_ok": true
+ },
+ "context_sha256": "8f63a2a31f2334fd9abd7be03af95899fc00ff5912f5c4b52fa40900eb98d41b",
+ "detail": null,
+ "failure_class": null,
+ "key1": "SudDi#g1",
+ "ordinal": 3,
+ "pair": 1,
+ "plan_sha256": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e",
+ "prompt_bytes": 28730,
+ "prompt_sha256": "e2fb802f8d9ed668a0702b3484d049549cf8351510fe496f9c317ec3bef58d77",
+ "raw_result": null,
+ "requested_model": "claude-opus-5",
+ "result_sha256": "bf8516046963b9d68d262498e0c169e58b819dae150c24df351abfb7d0ec2bfe",
+ "returncode": 0,
+ "returned_model": "claude-opus-5",
+ "schema": "pwg.prep_context_comparison_envelope.v1",
+ "telemetry": {
+  "accounting": {
+   "billing_mode": "unknown_gateway",
+   "cache_creation_tokens": 35462,
+   "cache_read_tokens": 24286,
+   "credit_claim_evidence": null,
+   "credit_equivalent_usd": null,
+   "input_tokens": 2,
+   "list_equivalent_usd": null,
+   "observed_cash_usd": null,
+   "output_tokens": 13174,
+   "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+   "schema": "pwg.usage_accounting.v1",
+   "usage_evaluable": true
+  },
+  "cache_creation_tokens": 35462,
+  "cache_read_tokens": 24286,
+  "cost_evaluable": false,
+  "duration_api_ms": 170597,
+  "duration_ms": 174963,
+  "input_tokens": 2,
+  "observed_cost_usd": 0,
+  "output_tokens": 13174,
+  "subagent_tokens": 72924
+ },
+ "terminal": {
+  "api_error_status": null,
+  "duration_api_ms": 170597,
+  "duration_ms": 174963,
+  "is_error": false,
+  "num_turns": 2,
+  "session_id": "6015f158-1142-416d-92d7-5877487daab6",
+  "stop_reason": "tool_use",
+  "subtype": "success",
+  "terminal_reason": "completed",
+  "total_cost_usd": 0.696123,
+  "type": "result"
+ },
+ "usage_cross_check": {
+  "agree": true,
+  "contradiction": null,
+  "model_usage_present": true,
+  "model_usage_total": 72924,
+  "usage_total": 72924
+ },
+ "wall_ms": 187797
+}

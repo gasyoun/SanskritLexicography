@@ -1,0 +1,50 @@
+{
+ "schema": "pwg.call_reservation.v1",
+ "runs": {
+  "h2612": {
+   "max_calls": 16,
+   "calls_spent": 1,
+   "next_ordinal": 2,
+   "reservations": [
+    {
+     "reservation_id": "b92946f7efea430f980bedb771d284b9",
+     "ordinal": 1,
+     "reserved_at_ns": 1786600108666992600,
+     "pid": 31224,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "vyavasTA#g1/A",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:1",
+     "finalized": true,
+     "finalized_at_ns": 1786601908933782800,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 0,
+      "subagent_tokens": 0,
+      "observed_cost_usd": 0
+     },
+     "finalization_evidence": {
+      "ordinal": 1,
+      "prompt_sha256": "189b22591a7374aca2583521c071c4a43ed4d13b24eca44c5b4debf0f6bb8990",
+      "result_sha256": null,
+      "returned_model": null
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_read_tokens": 0,
+    "cache_creation_tokens": 0,
+    "subagent_tokens": 0,
+    "observed_cost_usd": 0.0,
+    "cost_evaluable": false,
+    "finalized_calls": 1,
+    "unevaluable_calls": 1,
+    "pending_calls": 0
+   }
+  }
+ }
+}

@@ -39,6 +39,17 @@ not an error.
   Selftest **24/24** (5 new cases), window suite **211/211**; `--check` passes 7/8 and fails
   closed on billing. **No call was reserved and no spend occurred.**
 
+## [1.144.41] - 2026-08-13
+
+### Added
+- **H2612 EXECUTED — the fragment lane returns NO-GO, the first non-INCONCLUSIVE verdict this rig has produced** ([evidence](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2612/RUN_RESULT.md)). 16/16 calls, no stop, every reservation finalized exactly once, **zero evidence holes** — no zero-filled usage, no unattested model. Human-authorized with billing classified UNKNOWN; no store/TM/promotion/default write. On the lane carrying 92 % of cards, PREP context does not earn a route change at n=7 paired units: paired wall margin **+4.25 %** (PREP faster on 4 of 7 units), paired non-cache tokens **+3.34 %**, neither clearing the pre-registered 10 % threshold. It does not hurt either — no audited card was lost to it.
+- **H2591's unexplained zero-usage class identified and recovered.** It reproduced at ordinal 5 and the `usage_cross_check` caught it: `type: result`, `subtype: success`, `terminal_reason: completed`, `is_error: false`, `total_cost_usd: 0.4029715`, a full audited card at coverage 1.0 — and a top-level `usage` block of **all zeros beside a `modelUsage` of 73 620 tokens**. The accounting block is simply dropped sometimes on an otherwise-clean result. `recover_usage` now adopts `modelUsage` in that one direction, marks the envelope `usage_source: modelUsage`, and discloses every recovered call in the receipt; any other disagreement stays unexplained and still stops the run.
+
+### Fixed
+- **The GO rule fired twice on an artefact of arm TOTALS, so the rule was wrong, not the reading of it.** H2591's withdrawn +26.9 % was mostly the difference between how long each arm took to *fail*; H2612's +10.21 % rested on a single arm-A refusal — remove it and the margin inverts to **−8.85 %**, while the honest paired figure is **+4.25 %**. `build_receipt` now keys the verdict off `paired_deltas` (units where BOTH arms returned schema) and reports arm totals for continuity only, explicitly labelled as not the basis. An arm total silently rewards the arm that fails faster. Pinned by `test_go_rests_on_the_paired_margin_not_on_how_fast_an_arm_failed`, whose fixture makes the arm total look like a win and asserts NO-GO anyway. The originally sealed GO receipt is kept unmodified as the evidence for the change; the re-grade sits beside it naming what it supersedes.
+- **A timeout could never classify as one.** `parse_error` was checked before `timed_out`, and a timed-out call returns empty stdout which never parses — so `failure_class == 'timeout'` was unreachable by construction and every abandoned call was filed `malformed_envelope`, with the stop line blaming the absent model. Found by this run's first attempt, which stalled for the full 1800 s. Timeout now classifies first and stops with its own message.
+- Matrix **22/22**, window suite **211/211**. Total spend across three attempts + one diagnostic probe: **23 calls**, `unknown_gateway` throughout.
+
 ## [1.144.40] - 2026-08-12
 
 ### Added

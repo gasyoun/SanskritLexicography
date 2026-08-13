@@ -1,0 +1,257 @@
+{
+ "arm_a_baseline": {
+  "audited_pass": 6,
+  "calls": 8,
+  "credit_equivalent_usd": 0.0,
+  "defect_classes": {
+   "cli_error_exit": 1,
+   "missing-or-mismatched-fragment-key": 1
+  },
+  "non_cache_tokens": 80122,
+  "schema_pass": 7,
+  "tokens": {
+   "cache_creation_tokens": 293121,
+   "cache_read_tokens": 371417,
+   "input_tokens": 22,
+   "output_tokens": 80100
+  },
+  "unattested_model_calls": 0,
+  "usage_unevaluable_calls": 0,
+  "wall_ms_total": 1600567
+ },
+ "arm_b_prep": {
+  "audited_pass": 7,
+  "calls": 8,
+  "credit_equivalent_usd": 0.0,
+  "defect_classes": {
+   "missing-or-mismatched-fragment-key": 1
+  },
+  "non_cache_tokens": 89764,
+  "schema_pass": 8,
+  "tokens": {
+   "cache_creation_tokens": 312273,
+   "cache_read_tokens": 351595,
+   "input_tokens": 22,
+   "output_tokens": 89742
+  },
+  "unattested_model_calls": 0,
+  "usage_unevaluable_calls": 0,
+  "wall_ms_total": 1437093
+ },
+ "billing": {
+  "authorized_unknown_billing": true,
+  "billing_mode": "unknown_gateway",
+  "credit_claim_evidence": null,
+  "max_agent_sdk_credit_claimed": false
+ },
+ "call_ceiling": 16,
+ "calls_spent": 16,
+ "comparison_order": [
+  "schema + deterministic audit pass count",
+  "attributable total wall time and model calls",
+  "input/output/cache token deltas",
+  "list/credit equivalent when evaluable",
+  "enumerated defect classes, including SAN-LOSS and false TM reuse"
+ ],
+ "complete": true,
+ "deltas": {
+  "audited_cards_lost_by_prep": -1,
+  "non_cache_token_relative_gain": -0.1203,
+  "wall_ms_relative_gain": 0.1021
+ },
+ "evidence_class": "descriptive qualification at n=8 — NOT production evidence; a GO authorizes only a separately minted, larger, pre-registered experiment, never a route switch",
+ "evidence_holes": {
+  "effect": "any hole forces INCONCLUSIVE — a token comparison over zero-filled usage is a hole wearing the costume of a measurement",
+  "unattested_model_calls": 0,
+  "usage_recovered_from_model_usage": [
+   {
+    "arm": "A",
+    "key1": "SvAsa#g2",
+    "model_usage_total": 61783,
+    "ordinal": 13
+   }
+  ],
+  "usage_unevaluable_calls": 0
+ },
+ "go_rule": "GO only if PREP loses at most one additional audited card AND improves wall time or total non-cache tokens by more than 10%; otherwise NO-GO",
+ "handoff": "H2591",
+ "manifest_sha256": "cf2fee7bf91d85db745c7c638d2c782e4918e5d21d55282613ea22dab62c90ed",
+ "model_requested": "claude-opus-5",
+ "models_returned": [
+  "claude-opus-5"
+ ],
+ "n": 8,
+ "per_call": [
+  {
+   "arm": "A",
+   "audited": true,
+   "coverage": 1.0,
+   "failure_class": null,
+   "key1": "vyavasTA#g1",
+   "ordinal": 1,
+   "result_sha256": "b542352035817d14b91347972e46caed2a6f48762e63cd762f6ad9fe58b324b9",
+   "wall_ms": 200805
+  },
+  {
+   "arm": "B",
+   "audited": true,
+   "coverage": 1.0,
+   "failure_class": null,
+   "key1": "vyavasTA#g1",
+   "ordinal": 2,
+   "result_sha256": "bf332a57176402c96fb63d3cc8188b7ef40f775fc5ca365ffe410a06a058aa73",
+   "wall_ms": 178265
+  },
+  {
+   "arm": "B",
+   "audited": true,
+   "coverage": 1.0,
+   "failure_class": null,
+   "key1": "SudDi#g1",
+   "ordinal": 3,
+   "result_sha256": "471ac164e303cb759ef900c76bb458ccfb7a1f5141bd0f47413334e03cd08f83",
+   "wall_ms": 225626
+  },
+  {
+   "arm": "A",
+   "audited": true,
+   "coverage": 1.0,
+   "failure_class": null,
+   "key1": "SudDi#g1",
+   "ordinal": 4,
+   "result_sha256": "ee6912f688cac46b283579a5aa0cbec51ca32cfdb66f0467c2444b00390c8bb2",
+   "wall_ms": 190409
+  },
+  {
+   "arm": "A",
+   "audited": true,
+   "coverage": 1.0,
+   "failure_class": null,
+   "key1": "SvAsa#g1",
+   "ordinal": 5,
+   "result_sha256": "fc64d6762383629887681d62b936c6d907d326c6d6e869471233b00598142a45",
+   "wall_ms": 167420
+  },
+  {
+   "arm": "B",
+   "audited": true,
+   "coverage": 1.0,
+   "failure_class": null,
+   "key1": "SvAsa#g1",
+   "ordinal": 6,
+   "result_sha256": "cc6f7d8874dfb595a6f4f7f9988775e14256241625289b71e36aec95f0e3b516",
+   "wall_ms": 175172
+  },
+  {
+   "arm": "B",
+   "audited": true,
+   "coverage": 1.0,
+   "failure_class": null,
+   "key1": "vyavasTA#g0",
+   "ordinal": 7,
+   "result_sha256": "d941e725bd681b91be8bb483d37f8d0f60bf40585ac1f19ff4751f8a6b904bd0",
+   "wall_ms": 178925
+  },
+  {
+   "arm": "A",
+   "audited": true,
+   "coverage": 1.0,
+   "failure_class": null,
+   "key1": "vyavasTA#g0",
+   "ordinal": 8,
+   "result_sha256": "7dbd2a0901840ff04aa5c23c76ca637785fc9fd13f4cf2ab644ca54be401eaba",
+   "wall_ms": 192464
+  },
+  {
+   "arm": "A",
+   "audited": true,
+   "coverage": 1.0,
+   "failure_class": null,
+   "key1": "Srama#g3",
+   "ordinal": 9,
+   "result_sha256": "041e5e36278dbdc7195f84138a0d9a2807988c2456951d8d132e0247e4c026da",
+   "wall_ms": 136679
+  },
+  {
+   "arm": "B",
+   "audited": true,
+   "coverage": 1.0,
+   "failure_class": null,
+   "key1": "Srama#g3",
+   "ordinal": 10,
+   "result_sha256": "d248f060e797e5c335c2bfe452172f2c4d6d657739240aa91d26eaf4090b260f",
+   "wall_ms": 120770
+  },
+  {
+   "arm": "B",
+   "audited": true,
+   "coverage": 1.0,
+   "failure_class": null,
+   "key1": "SudDi#g2",
+   "ordinal": 11,
+   "result_sha256": "6c2ce081ec9ba1675ca2ee264b6d58ac882fc068ce39df38b4c968d9add2db72",
+   "wall_ms": 121398
+  },
+  {
+   "arm": "A",
+   "audited": true,
+   "coverage": 1.0,
+   "failure_class": null,
+   "key1": "SudDi#g2",
+   "ordinal": 12,
+   "result_sha256": "9f26b2db593d34f353d50fa420731b3a214e7879e07042e7ad9d7c9c9d3a3a84",
+   "wall_ms": 313363
+  },
+  {
+   "arm": "A",
+   "audited": null,
+   "coverage": null,
+   "failure_class": "cli_error_exit",
+   "key1": "SvAsa#g2",
+   "ordinal": 13,
+   "result_sha256": null,
+   "wall_ms": 280269
+  },
+  {
+   "arm": "B",
+   "audited": true,
+   "coverage": 1.0,
+   "failure_class": null,
+   "key1": "SvAsa#g2",
+   "ordinal": 14,
+   "result_sha256": "31949fd06d7aadfc4f83ec5271a9f5b6f6d41a6ca5a53363f646c39e4a2e09b3",
+   "wall_ms": 172939
+  },
+  {
+   "arm": "B",
+   "audited": false,
+   "coverage": 0.0,
+   "failure_class": null,
+   "key1": "samIpa#g0",
+   "ordinal": 15,
+   "result_sha256": "1b516b95efe942e34bab362ca2a4d91c77c3574d46539a8e9f0b3ea97a80d761",
+   "wall_ms": 263998
+  },
+  {
+   "arm": "A",
+   "audited": false,
+   "coverage": 0.0,
+   "failure_class": null,
+   "key1": "samIpa#g0",
+   "ordinal": 16,
+   "result_sha256": "479cd5b45f3fa22898adbab7f1ddac1ec0091dc9af67134a2111f9f6aeb1a61b",
+   "wall_ms": 119158
+  }
+ ],
+ "plan_sha256": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e",
+ "promotion": {
+  "production_default_changed": false,
+  "promotion_journal_written": false,
+  "store_written": false,
+  "tm_written": false
+ },
+ "receipt_sha256": "3f6c7b2b74ebb2f6a3db336f4ef3d7a83e455907319b7c75a167ea996e02403b",
+ "schema": "pwg.prep_context_comparison.v1",
+ "stopped": null,
+ "verdict": "GO"
+}

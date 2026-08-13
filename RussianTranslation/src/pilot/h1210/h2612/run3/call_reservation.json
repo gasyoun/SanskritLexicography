@@ -1,0 +1,697 @@
+{
+ "schema": "pwg.call_reservation.v1",
+ "runs": {
+  "h2612c": {
+   "max_calls": 16,
+   "calls_spent": 16,
+   "next_ordinal": 17,
+   "reservations": [
+    {
+     "reservation_id": "3886923cefb74351a28f1869cae52117",
+     "ordinal": 1,
+     "reserved_at_ns": 1786605104465781600,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "vyavasTA#g1/A",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:1",
+     "finalized": true,
+     "finalized_at_ns": 1786605305278008400,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 4,
+      "output_tokens": 15160,
+      "cache_read_tokens": 83293,
+      "cache_creation_tokens": 47020,
+      "subagent_tokens": 145477,
+      "observed_cost_usd": 0,
+      "duration_ms": 190817,
+      "duration_api_ms": 188875,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 4,
+       "output_tokens": 15160,
+       "cache_creation_tokens": 47020,
+       "cache_read_tokens": 83293,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 1,
+      "prompt_sha256": "189b22591a7374aca2583521c071c4a43ed4d13b24eca44c5b4debf0f6bb8990",
+      "result_sha256": "b542352035817d14b91347972e46caed2a6f48762e63cd762f6ad9fe58b324b9",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "2efdc420a79045a09401f9fd50431680",
+     "ordinal": 2,
+     "reserved_at_ns": 1786605305294397400,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "vyavasTA#g1/B",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:2",
+     "finalized": true,
+     "finalized_at_ns": 1786605483573744500,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 13110,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 59956,
+      "subagent_tokens": 73068,
+      "observed_cost_usd": 0,
+      "duration_ms": 169846,
+      "duration_api_ms": 167966,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 13110,
+       "cache_creation_tokens": 59956,
+       "cache_read_tokens": 0,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 2,
+      "prompt_sha256": "c7af08d864ab6ac29f7efd9d76d57ee97648733d2ddec2eb7cbe2375dcdaecf8",
+      "result_sha256": "bf332a57176402c96fb63d3cc8188b7ef40f775fc5ca365ffe410a06a058aa73",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "d55919e3c5fd49bba6a3c7c5f7d16c47",
+     "ordinal": 3,
+     "reserved_at_ns": 1786605483594738300,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "SudDi#g1/B",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:3",
+     "finalized": true,
+     "finalized_at_ns": 1786605709235565300,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 17016,
+      "cache_read_tokens": 24286,
+      "cache_creation_tokens": 35460,
+      "subagent_tokens": 76764,
+      "observed_cost_usd": 0,
+      "duration_ms": 219988,
+      "duration_api_ms": 218349,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 17016,
+       "cache_creation_tokens": 35460,
+       "cache_read_tokens": 24286,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 3,
+      "prompt_sha256": "e2fb802f8d9ed668a0702b3484d049549cf8351510fe496f9c317ec3bef58d77",
+      "result_sha256": "471ac164e303cb759ef900c76bb458ccfb7a1f5141bd0f47413334e03cd08f83",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "8a6c2121ac744d4b87d337138d98c724",
+     "ordinal": 4,
+     "reserved_at_ns": 1786605709249242300,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "SudDi#g1/A",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:4",
+     "finalized": true,
+     "finalized_at_ns": 1786605899663423700,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 14076,
+      "cache_read_tokens": 24286,
+      "cache_creation_tokens": 34333,
+      "subagent_tokens": 72697,
+      "observed_cost_usd": 0,
+      "duration_ms": 185176,
+      "duration_api_ms": 183588,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 14076,
+       "cache_creation_tokens": 34333,
+       "cache_read_tokens": 24286,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 4,
+      "prompt_sha256": "ff5bc181cd7a1fadaf3202aae9d7d9e8963f5fac2cb3e0ef25fc65b5dc2ab95b",
+      "result_sha256": "ee6912f688cac46b283579a5aa0cbec51ca32cfdb66f0467c2444b00390c8bb2",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "9be026b6ce1f4651bb3fef2c8046ac52",
+     "ordinal": 5,
+     "reserved_at_ns": 1786605899689789300,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "SvAsa#g1/A",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:5",
+     "finalized": true,
+     "finalized_at_ns": 1786606067128276100,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 11765,
+      "cache_read_tokens": 24286,
+      "cache_creation_tokens": 34387,
+      "subagent_tokens": 70440,
+      "observed_cost_usd": 0,
+      "duration_ms": 161751,
+      "duration_api_ms": 159976,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 11765,
+       "cache_creation_tokens": 34387,
+       "cache_read_tokens": 24286,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 5,
+      "prompt_sha256": "3ee2f40e102823960be11c84ad65e33d5396c6196294c8cbcc4dadbdd3bf240f",
+      "result_sha256": "fc64d6762383629887681d62b936c6d907d326c6d6e869471233b00598142a45",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "bf377c2b72bc49dfa881ea7b43f6ca7e",
+     "ordinal": 6,
+     "reserved_at_ns": 1786606067145483500,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "SvAsa#g1/B",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:6",
+     "finalized": true,
+     "finalized_at_ns": 1786606242340263800,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 12808,
+      "cache_read_tokens": 24286,
+      "cache_creation_tokens": 35096,
+      "subagent_tokens": 72192,
+      "observed_cost_usd": 0,
+      "duration_ms": 169319,
+      "duration_api_ms": 167248,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 12808,
+       "cache_creation_tokens": 35096,
+       "cache_read_tokens": 24286,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 6,
+      "prompt_sha256": "9af7cfe7b866adc6cbf4f89fb6e0b915b1fe0c5169dbb2d2af0e9fecf51aa2eb",
+      "result_sha256": "cc6f7d8874dfb595a6f4f7f9988775e14256241625289b71e36aec95f0e3b516",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "676fca4812644b459b58e0f2360707aa",
+     "ordinal": 7,
+     "reserved_at_ns": 1786606242361438100,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "vyavasTA#g0/B",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:7",
+     "finalized": true,
+     "finalized_at_ns": 1786606421298420500,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 13191,
+      "cache_read_tokens": 24286,
+      "cache_creation_tokens": 35872,
+      "subagent_tokens": 73351,
+      "observed_cost_usd": 0,
+      "duration_ms": 172233,
+      "duration_api_ms": 170125,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 13191,
+       "cache_creation_tokens": 35872,
+       "cache_read_tokens": 24286,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 7,
+      "prompt_sha256": "4e3fc936fe53cd70b133d3040d86c7261ffcafcd6a0852f38193c2a12c199eaf",
+      "result_sha256": "d941e725bd681b91be8bb483d37f8d0f60bf40585ac1f19ff4751f8a6b904bd0",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "1b25cb0a472e447b97cc47a797379b02",
+     "ordinal": 8,
+     "reserved_at_ns": 1786606421324371000,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "vyavasTA#g0/A",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:8",
+     "finalized": true,
+     "finalized_at_ns": 1786606613818532500,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 14607,
+      "cache_read_tokens": 24286,
+      "cache_creation_tokens": 34924,
+      "subagent_tokens": 73819,
+      "observed_cost_usd": 0,
+      "duration_ms": 183778,
+      "duration_api_ms": 181872,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 14607,
+       "cache_creation_tokens": 34924,
+       "cache_read_tokens": 24286,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 8,
+      "prompt_sha256": "5302c56af1c8e250457bdd0f6716266d4d0a8bf23c7e7cf4a841e0782adc6628",
+      "result_sha256": "7dbd2a0901840ff04aa5c23c76ca637785fc9fd13f4cf2ab644ca54be401eaba",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "edc77896458249fdae611c710bac8f42",
+     "ordinal": 9,
+     "reserved_at_ns": 1786606613853725000,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "Srama#g3/A",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:9",
+     "finalized": true,
+     "finalized_at_ns": 1786606750554006000,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 8950,
+      "cache_read_tokens": 24286,
+      "cache_creation_tokens": 34801,
+      "subagent_tokens": 68039,
+      "observed_cost_usd": 0,
+      "duration_ms": 129211,
+      "duration_api_ms": 127352,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 8950,
+       "cache_creation_tokens": 34801,
+       "cache_read_tokens": 24286,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 9,
+      "prompt_sha256": "46d0524a0bd8ef17263b66bf411b2e33e8d9eedf84dfcddfd173a91c24d6de10",
+      "result_sha256": "041e5e36278dbdc7195f84138a0d9a2807988c2456951d8d132e0247e4c026da",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "45dcad9c866b43d8b1e65c6fa5fbd0ae",
+     "ordinal": 10,
+     "reserved_at_ns": 1786606750571295600,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "Srama#g3/B",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:10",
+     "finalized": true,
+     "finalized_at_ns": 1786606871361212600,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 7703,
+      "cache_read_tokens": 24286,
+      "cache_creation_tokens": 35535,
+      "subagent_tokens": 67526,
+      "observed_cost_usd": 0,
+      "duration_ms": 114632,
+      "duration_api_ms": 112304,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 7703,
+       "cache_creation_tokens": 35535,
+       "cache_read_tokens": 24286,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 10,
+      "prompt_sha256": "8109aeadf6c7112aa0651c42613c90f1a198352af0cfced16fc25e500310baea",
+      "result_sha256": "d248f060e797e5c335c2bfe452172f2c4d6d657739240aa91d26eaf4090b260f",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "6c57690324cc4764aad292cde7643f1e",
+     "ordinal": 11,
+     "reserved_at_ns": 1786606871386061000,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "SudDi#g2/B",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:11",
+     "finalized": true,
+     "finalized_at_ns": 1786606992808913300,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 8133,
+      "cache_read_tokens": 24286,
+      "cache_creation_tokens": 35905,
+      "subagent_tokens": 68326,
+      "observed_cost_usd": 0,
+      "duration_ms": 112410,
+      "duration_api_ms": 105795,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 8133,
+       "cache_creation_tokens": 35905,
+       "cache_read_tokens": 24286,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 11,
+      "prompt_sha256": "01e9af4f9de56462a58421f16615906045dc8ce30e3153979d08f1bd4b17caa3",
+      "result_sha256": "6c2ce081ec9ba1675ca2ee264b6d58ac882fc068ce39df38b4c968d9add2db72",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "2d7ec30ce8fb4f43b317e680a9edb923",
+     "ordinal": 12,
+     "reserved_at_ns": 1786606992838888400,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "SudDi#g2/A",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:12",
+     "finalized": true,
+     "finalized_at_ns": 1786607306213041100,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 6,
+      "output_tokens": 8484,
+      "cache_read_tokens": 142408,
+      "cache_creation_tokens": 34775,
+      "subagent_tokens": 185673,
+      "observed_cost_usd": 0,
+      "duration_ms": 293758,
+      "duration_api_ms": 284273,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 6,
+       "output_tokens": 8484,
+       "cache_creation_tokens": 34775,
+       "cache_read_tokens": 142408,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 12,
+      "prompt_sha256": "3fd1efaf0830cddbbc292536652ea64b04ea8e06d07b6a325089df623548089d",
+      "result_sha256": "9f26b2db593d34f353d50fa420731b3a214e7879e07042e7ad9d7c9c9d3a3a84",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "4bac338750be4333aa089fd9623b0078",
+     "ordinal": 13,
+     "reserved_at_ns": 1786607306293439300,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "SvAsa#g2/A",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:13",
+     "finalized": true,
+     "finalized_at_ns": 1786607586589070700,
+     "telemetry": {
+      "cost_evaluable": true,
+      "input_tokens": 2,
+      "output_tokens": 2,
+      "cache_read_tokens": 24286,
+      "cache_creation_tokens": 37493,
+      "subagent_tokens": 0,
+      "observed_cost_usd": 0,
+      "duration_ms": 260290,
+      "duration_api_ms": 257687,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 2,
+       "cache_creation_tokens": 37493,
+       "cache_read_tokens": 24286,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null,
+       "usage_source": "modelUsage"
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 13,
+      "prompt_sha256": "81890620936977fe8f1ef6934c69551461686cc4bc94438d6ca918718b1a53c0",
+      "result_sha256": null,
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "c0a1c1bb949849c89568112d3043ead5",
+     "ordinal": 14,
+     "reserved_at_ns": 1786607586629071500,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "SvAsa#g2/B",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:14",
+     "finalized": true,
+     "finalized_at_ns": 1786607759586757600,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 12320,
+      "cache_read_tokens": 24286,
+      "cache_creation_tokens": 38204,
+      "subagent_tokens": 74812,
+      "observed_cost_usd": 0,
+      "duration_ms": 150590,
+      "duration_api_ms": 139165,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 12320,
+       "cache_creation_tokens": 38204,
+       "cache_read_tokens": 24286,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 14,
+      "prompt_sha256": "9f74434387e0c387f81c5a283772682e788e218e5d5e2924efc4e77026ebc7fa",
+      "result_sha256": "31949fd06d7aadfc4f83ec5271a9f5b6f6d41a6ca5a53363f646c39e4a2e09b3",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "fc46ec8185fa48c0874ceca94ba8cfdf",
+     "ordinal": 15,
+     "reserved_at_ns": 1786607759747679300,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "samIpa#g0/B",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:15",
+     "finalized": true,
+     "finalized_at_ns": 1786608023785159800,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 8,
+      "output_tokens": 5461,
+      "cache_read_tokens": 205879,
+      "cache_creation_tokens": 36245,
+      "subagent_tokens": 247593,
+      "observed_cost_usd": 0,
+      "duration_ms": 246087,
+      "duration_api_ms": 237378,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 8,
+       "output_tokens": 5461,
+       "cache_creation_tokens": 36245,
+       "cache_read_tokens": 205879,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 15,
+      "prompt_sha256": "a65b876e710f9b91da5a03455fc3236c123879921a229b3e01bb20b56c880101",
+      "result_sha256": "1b516b95efe942e34bab362ca2a4d91c77c3574d46539a8e9f0b3ea97a80d761",
+      "returned_model": "claude-opus-5"
+     }
+    },
+    {
+     "reservation_id": "9d346935c5444c0596ad0aecf72987c2",
+     "ordinal": 16,
+     "reserved_at_ns": 1786608023821952900,
+     "pid": 9244,
+     "purpose": "h2591-prep-context-compare",
+     "detail": "samIpa#g0/A",
+     "idempotency_key": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e:16",
+     "finalized": true,
+     "finalized_at_ns": 1786608143010735200,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 7056,
+      "cache_read_tokens": 24286,
+      "cache_creation_tokens": 35388,
+      "subagent_tokens": 66732,
+      "observed_cost_usd": 0,
+      "duration_ms": 104960,
+      "duration_api_ms": 97481,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 7056,
+       "cache_creation_tokens": 35388,
+       "cache_read_tokens": 24286,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     },
+     "finalization_evidence": {
+      "ordinal": 16,
+      "prompt_sha256": "9de9110325fbc599ba5cb160f7e4ebbd4e1451c0415e453bfcbc66a9e972644d",
+      "result_sha256": "479cd5b45f3fa22898adbab7f1ddac1ec0091dc9af67134a2111f9f6aeb1a61b",
+      "returned_model": "claude-opus-5"
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 44,
+    "output_tokens": 169842,
+    "cache_read_tokens": 723012,
+    "cache_creation_tokens": 605394,
+    "subagent_tokens": 1436509,
+    "observed_cost_usd": 0.0,
+    "cost_evaluable": false,
+    "finalized_calls": 16,
+    "unevaluable_calls": 15,
+    "pending_calls": 0
+   }
+  }
+ }
+}
