@@ -1,0 +1,1884 @@
+{
+ "schema": "h1209.canonical_audit.v1",
+ "reports": [
+  {
+   "key1": "_s_aluqa",
+   "wf_would_promote": true,
+   "wf_coverage": 1.0,
+   "tnmask": {
+    "match": true,
+    "missing_from_fidelity_fields": [],
+    "invented": [],
+    "n_skeleton": 7,
+    "n_output": 7
+   },
+   "notes_parked": {
+    "tokens": [],
+    "lost_content": [],
+    "lost_payload_preview": {}
+   },
+   "fidelity_german": {
+    "ok": true,
+    "ls": [
+     1,
+     1
+    ],
+    "sk": [
+     2,
+     2
+    ]
+   },
+   "fidelity_translation": {
+    "field": "russian",
+    "ok": true,
+    "ls": [
+     1,
+     1
+    ],
+    "sk": [
+     2,
+     2
+    ]
+   },
+   "sanloss": {
+    "emitted": 2,
+    "source_senses": 0,
+    "shortfall": false
+   },
+   "schema": {
+    "ok": true
+   },
+   "hard_fail": [],
+   "soft_flags": [],
+   "promote_dry": true,
+   "restored_card": {
+    "key1": "_s_aluqa",
+    "iast": "śāluḍa",
+    "records": [
+     {
+      "h": "śāluḍa",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{#SA/luqa#}¦ <lex>m.</lex> <ab>N.</ab> eines Unholds <ls>AV. 8,6,17</ls>.",
+        "russian": "{#SA/luqa#}¦ <lex>m.</lex> <ab>N.</ab> имя одного демона <ls>AV. 8,6,17</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "śāluḍa",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{#SA/luqa#}¦ <lex>m.</lex> <ab>N. pr.</ab> eines Unholds.",
+        "russian": "{#SA/luqa#}¦ <lex>m.</lex> <ab>N. pr.</ab> имя одного демона.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "ezwa",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     1
+    ],
+    "sk": [
+     0,
+     6
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     1
+    ],
+    "sk": [
+     0,
+     6
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "krUrarAvin",
+   "wf_would_promote": true,
+   "wf_coverage": 1.0,
+   "tnmask": {
+    "match": true,
+    "missing_from_fidelity_fields": [],
+    "invented": [],
+    "n_skeleton": 9,
+    "n_output": 9
+   },
+   "notes_parked": {
+    "tokens": [],
+    "lost_content": [],
+    "lost_payload_preview": {}
+   },
+   "fidelity_german": {
+    "ok": true,
+    "ls": [
+     3,
+     3
+    ],
+    "sk": [
+     4,
+     4
+    ]
+   },
+   "fidelity_translation": {
+    "field": "russian",
+    "ok": true,
+    "ls": [
+     3,
+     3
+    ],
+    "sk": [
+     4,
+     4
+    ]
+   },
+   "sanloss": {
+    "emitted": 2,
+    "source_senses": 0,
+    "shortfall": false
+   },
+   "schema": {
+    "ok": true
+   },
+   "hard_fail": [],
+   "soft_flags": [],
+   "promote_dry": true,
+   "restored_card": {
+    "key1": "krUrarAvin",
+    "iast": "krūrarāvin",
+    "records": [
+     {
+      "h": "krūrarāvin",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{#krUrarAvin#}¦ ({#krUra#} + {#rA˚#}) <lex>m.</lex> {%Rabe%} <ls>RĀJAN.</ls>_im_<ls>ŚKDR.</ls>",
+        "russian": "{#krUrarAvin#}¦ ({#krUra#} + {#rA˚#}) <lex>m.</lex> ворон <ls>RĀJAN.</ls>_в_<ls>ŚKDR.</ls>",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "krūrarāvin",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "*{#krUrarAvin#}¦ <lex>m.</lex> {%Rabe%} <ls>RĀJAN. 19,90</ls>.",
+        "russian": "*{#krUrarAvin#}¦ <lex>m.</lex> ворон <ls>RĀJAN. 19,90</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "l_alay",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     1
+    ],
+    "sk": [
+     0,
+     7
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     1
+    ],
+    "sk": [
+     0,
+     7
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "somasa_ms_t_a",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     1
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     1
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "vi_svasfj",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     6
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     6
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "_svetakar_ra",
+   "wf_would_promote": false,
+   "wf_coverage": 1.0,
+   "tnmask": {
+    "match": true,
+    "missing_from_fidelity_fields": [],
+    "invented": [],
+    "n_skeleton": 9,
+    "n_output": 9
+   },
+   "notes_parked": {
+    "tokens": [],
+    "lost_content": [],
+    "lost_payload_preview": {}
+   },
+   "fidelity_german": {
+    "ok": true,
+    "ls": [
+     1,
+     1
+    ],
+    "sk": [
+     2,
+     2
+    ]
+   },
+   "fidelity_translation": {
+    "field": "russian",
+    "ok": true,
+    "ls": [
+     1,
+     1
+    ],
+    "sk": [
+     2,
+     2
+    ]
+   },
+   "sanloss": {
+    "emitted": 2,
+    "source_senses": 0,
+    "shortfall": false
+   },
+   "schema": {
+    "ok": true
+   },
+   "hard_fail": [],
+   "soft_flags": [],
+   "promote_dry": true,
+   "restored_card": {
+    "key1": "_svetakar_ra",
+    "iast": "śvetakarṇa",
+    "records": [
+     {
+      "h": "śvetakarṇa",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{#SvetakarRa#}¦ <lex>m.</lex> <ab>N. pr.</ab> eines Sohnes des <is>Satyakarṇa</is> <ls>HARIV. 11068</ls>.",
+        "russian": "{#SvetakarRa#}¦ <lex>m.</lex> <ab>N. pr.</ab> одного сына <is>Satyakarṇa</is> <ls>HARIV. 11068</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "śvetakarṇa",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{#SvetakarRa#}¦ <lex>m.</lex> <ab>N. pr.</ab> eines Sohnes des <is>Satyakarṇa</is>.",
+        "russian": "{#SvetakarRa#}¦ <lex>m.</lex> <ab>N. pr.</ab> одного сына <is>Satyakarṇa</is>.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "a_smagar_baja",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     7
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     7
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "k_ontika",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "log_akza",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     0
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     0
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "tubarI",
+   "wf_would_promote": false,
+   "wf_coverage": 1.0,
+   "tnmask": {
+    "match": true,
+    "missing_from_fidelity_fields": [],
+    "invented": [],
+    "n_skeleton": 6,
+    "n_output": 6
+   },
+   "notes_parked": {
+    "tokens": [],
+    "lost_content": [],
+    "lost_payload_preview": {}
+   },
+   "fidelity_german": {
+    "ok": true,
+    "ls": [
+     1,
+     1
+    ],
+    "sk": [
+     2,
+     2
+    ]
+   },
+   "fidelity_translation": {
+    "field": "russian",
+    "ok": true,
+    "ls": [
+     1,
+     1
+    ],
+    "sk": [
+     2,
+     2
+    ]
+   },
+   "sanloss": {
+    "emitted": 3,
+    "source_senses": 2,
+    "shortfall": false
+   },
+   "schema": {
+    "ok": true
+   },
+   "hard_fail": [],
+   "soft_flags": [],
+   "promote_dry": true,
+   "restored_card": {
+    "key1": "tubarI",
+    "iast": "tubarī",
+    "records": [
+     {
+      "h": "tubarī",
+      "grammar": "f.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{#tubarI#}¦ <lex>f.</lex> = {#tumbarI#}",
+        "russian": "{#tubarI#}¦ <lex>f.</lex> = {#tumbarI#}"
+       },
+       {
+        "tag": "1",
+        "german": "<div n=\"1\"> 1〉 {%Koriander%}.",
+        "russian": "<div n=\"1\"> 1〉 кориандр."
+       },
+       {
+        "tag": "2",
+        "german": "<div n=\"1\">— 2〉 {%Hündin%} <ls>H. an. 3,561</ls>.",
+        "russian": "<div n=\"1\">— 2〉 сука <ls>H. an. 3,561</ls>."
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "yamadruma",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     2
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     2
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "kramu",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     4
+    ],
+    "sk": [
+     0,
+     7
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     4
+    ],
+    "sk": [
+     0,
+     7
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "mah_ahigan_d_a",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     3
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     3
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "pippal_ayana",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "t_araja",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "vinikfntana",
+   "wf_would_promote": true,
+   "wf_coverage": 1.0,
+   "tnmask": {
+    "match": true,
+    "missing_from_fidelity_fields": [],
+    "invented": [],
+    "n_skeleton": 11,
+    "n_output": 11
+   },
+   "notes_parked": {
+    "tokens": [],
+    "lost_content": [],
+    "lost_payload_preview": {}
+   },
+   "fidelity_german": {
+    "ok": true,
+    "ls": [
+     1,
+     1
+    ],
+    "sk": [
+     6,
+     6
+    ]
+   },
+   "fidelity_translation": {
+    "field": "russian",
+    "ok": true,
+    "ls": [
+     1,
+     1
+    ],
+    "sk": [
+     6,
+     6
+    ]
+   },
+   "sanloss": {
+    "emitted": 2,
+    "source_senses": 0,
+    "shortfall": false
+   },
+   "schema": {
+    "ok": true
+   },
+   "hard_fail": [],
+   "soft_flags": [],
+   "promote_dry": true,
+   "restored_card": {
+    "key1": "vinikfntana",
+    "iast": "vinikṛntana",
+    "records": [
+     {
+      "h": "vinikfntana",
+      "grammar": "adj.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{#vinikfntana#}¦ (von <hom>1.</hom> {#kart#} mit {#vini#}) <lex>adj.</lex> {%zerhauend, niedermachend%}: {#surAri˚#} ({#Danus#}) <ls>MBH. 3,14319</ls>.",
+        "russian": "{#vinikfntana#}¦ (от <hom>1.</hom> {#kart#} с {#vini#}) <lex>adj.</lex> рассекающий, сокрушающий: {#surAri˚#} ({#Danus#}) <ls>MBH. 3,14319</ls>.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "vinikfntana",
+      "grammar": "adj.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{#vinikfntana#}¦ <lex>Adj.</lex> {%zerhauend, niedermachend%}.",
+        "russian": "{#vinikfntana#}¦ <lex>Adj.</lex> рассекающий, сокрушающий.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "zazwivrata",
+   "wf_would_promote": true,
+   "wf_coverage": 1.0,
+   "tnmask": {
+    "match": true,
+    "missing_from_fidelity_fields": [],
+    "invented": [],
+    "n_skeleton": 9,
+    "n_output": 9
+   },
+   "notes_parked": {
+    "tokens": [],
+    "lost_content": [],
+    "lost_payload_preview": {}
+   },
+   "fidelity_german": {
+    "ok": true,
+    "ls": [
+     2,
+     2
+    ],
+    "sk": [
+     2,
+     2
+    ]
+   },
+   "fidelity_translation": {
+    "field": "russian",
+    "ok": true,
+    "ls": [
+     2,
+     2
+    ],
+    "sk": [
+     2,
+     2
+    ]
+   },
+   "sanloss": {
+    "emitted": 2,
+    "source_senses": 0,
+    "shortfall": false
+   },
+   "schema": {
+    "ok": true
+   },
+   "hard_fail": [],
+   "soft_flags": [],
+   "promote_dry": true,
+   "restored_card": {
+    "key1": "zazwivrata",
+    "iast": "ṣaṣṭivrata",
+    "records": [
+     {
+      "h": "zazwivrata",
+      "grammar": "n.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{#zazwivrata#}¦ <lex>n.</lex> <ab>Bez.</ab> {%einer <ab>best.</ab> Begehung%} <ls>Verz. d. Oxf. H. 41,a,28</ls>. <ls n=\"Verz. d. Oxf. H.\">87,b,6</ls>.",
+        "russian": "{#zazwivrata#}¦ <lex>n.</lex> <ab>Bez.</ab> одного <ab>best.</ab> обряда <ls>Verz. d. Oxf. H. 41,a,28</ls>. <ls n=\"Verz. d. Oxf. H.\">87,b,6</ls>.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "zazwivrata",
+      "grammar": "n.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{#zazwivrata#}¦ <lex>n.</lex> {%eine <ab>best.</ab> Begehung%}.",
+        "russian": "{#zazwivrata#}¦ <lex>n.</lex> один <ab>best.</ab> обряд.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "harinma_ri",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     8
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     8
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "kilima",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     4
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     4
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "lel_ay",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     0
+    ],
+    "sk": [
+     0,
+     7
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     0
+    ],
+    "sk": [
+     0,
+     7
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "pramanyu",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     3
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     3
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "s_ari",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     4
+    ],
+    "sk": [
+     0,
+     7
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     4
+    ],
+    "sk": [
+     0,
+     7
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "vi_bindu",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     3
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     3
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "_odbilya",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     5
+    ],
+    "sk": [
+     0,
+     8
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     5
+    ],
+    "sk": [
+     0,
+     8
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "agnit_ir_ta",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     4
+    ],
+    "sk": [
+     0,
+     2
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     4
+    ],
+    "sk": [
+     0,
+     2
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "kranda",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     3
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     3
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "pari_b_ava",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     10
+    ],
+    "sk": [
+     0,
+     6
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     10
+    ],
+    "sk": [
+     0,
+     6
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "sa_mgopana",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     6
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     6
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "udame_ga",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     3
+    ],
+    "sk": [
+     0,
+     8
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     3
+    ],
+    "sk": [
+     0,
+     8
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "_badramusta",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     8
+    ],
+    "sk": [
+     0,
+     11
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     8
+    ],
+    "sk": [
+     0,
+     11
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "ftekarmam",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     1
+    ],
+    "sk": [
+     0,
+     7
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     1
+    ],
+    "sk": [
+     0,
+     7
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "lipikara",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     7
+    ],
+    "sk": [
+     0,
+     3
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     7
+    ],
+    "sk": [
+     0,
+     3
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "n_i_dra",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     4
+    ],
+    "sk": [
+     0,
+     3
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     4
+    ],
+    "sk": [
+     0,
+     3
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "sur_arha",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     3
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     3
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "upakalpa",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     12
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     2
+    ],
+    "sk": [
+     0,
+     12
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "prajas",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     8
+    ],
+    "sk": [
+     0,
+     12
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     8
+    ],
+    "sk": [
+     0,
+     12
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "s_aptamika",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     4
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     4
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "sara_g_a",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     11
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     11
+    ],
+    "sk": [
+     0,
+     4
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  },
+  {
+   "key1": "v_avad_uka",
+   "wf_would_promote": false,
+   "wf_coverage": null,
+   "promote_dry": false,
+   "null_card": true,
+   "fidelity_german": {
+    "ls": [
+     0,
+     13
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "fidelity_translation": {
+    "ls": [
+     0,
+     13
+    ],
+    "sk": [
+     0,
+     5
+    ]
+   },
+   "schema": {
+    "ok": false,
+    "errors": [
+     "null card (worker-null-death)"
+    ]
+   },
+   "soft_flags": [],
+   "hard_fail": [
+    "NULL-CARD: worker returned no card"
+   ],
+   "notes_parked": {
+    "lost_content": []
+   }
+  }
+ ]
+}
