@@ -235,6 +235,8 @@ src/pilot/h1210/ab100.chunk*.wf.js
 src/pilot/h1210/arm_a.chunk*.slice_result.json
 src/pilot/h1210/arm_b.slice_result.json
 src/pilot/h1210/arm_b.journal.jsonl
+experiments/E1_deepseek_vs_c4/run/arm_b.journal.jsonl
+experiments/E1_deepseek_vs_c4/run/e1_40.opt2.js
 src/pilot/h1210/arm_b.run.log
 src/pilot/h1210/arm_b.control_r*.payload.json
 src/pilot/h1210/arm_b.control_r*.wf.js
