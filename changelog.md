@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.41] - 2026-08-13
+
 ### Added
 - **H2630 Option A — the whole-card lane at n=4, sealed at zero spend.** A human ruled
   H2598's Option A (4 pairs on the 4 cards production takes whole, 8 calls), the one shape
