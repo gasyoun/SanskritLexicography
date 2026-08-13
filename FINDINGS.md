@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 10-08-2026 (§527 — a schema selftest built from the schema's own constants cannot see a prompt/schema contradiction, and that is the defect that burns a paid call)_
+_Created: 26-06-2026 · Last updated: 13-08-2026 (§530 — "whole-card lane" means un-split, not one-call-per-card: production still batches whole cards, so a one-card-per-call rig's absolute figures are not production figures)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -5765,3 +5765,31 @@ operator prompts contained rather than byte-equalled the old ticket prompt, so t
 artifacts remain explicitly `legacy_window`, `dispatch_attested=false`, and non-promotable.
 
 > Codex Sol (`gpt-5.6-sol`) · 10-08-2026 · H2554 (Codex) — router.cheap canary contract and exact-dispatch attestation repair. Instrument: [`gateway_attestation.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/gateway_attestation.py) · report: [`ROUTER_CHEAP_CANARY_CONTRACT_DISPATCH_ATTESTATION_REPAIR_10-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h2554/ROUTER_CHEAP_CANARY_CONTRACT_DISPATCH_ATTESTATION_REPAIR_10-08-2026.md).
+
+### §530. "Whole-card lane" means un-split, not one-call-per-card — production still BATCHES whole cards
+
+The pwg_ru presplit predicate (`gen_opt_harness2._presplit_hit`) splits a citation-dense card
+into fragment groups, and the natural reading of "the cards production takes whole" is that each
+such card is one agent call. **It is not.** The generator packs whole cards into batches before
+dispatch: for H2630's four-card manifest it emitted `batches: [["idAnIm","prasU"],
+["rAtra","spfS"]]` with `presplit_keys: []`, i.e. **2 agent calls for 4 un-split cards**.
+
+Two distinct properties are being conflated by the one phrase:
+
+| property | what decides it | H2630's four cards |
+|---|---|---|
+| **un-split** — the card is not cut into fragment groups | `_presplit_hit` (cite floor, sense budget) | yes, all four |
+| **one card per call** — the call carries exactly one card | the generator's batching, an output-budget pack | **no** — 2 per call |
+
+Why it matters beyond one handoff: any rig that issues **one card per call** and calls itself
+production-faithful for the whole-card lane is measuring a call shape production does not use,
+and its absolute wall-clock and token figures are not production figures. H2598 made exactly
+this inference when tabling its Option A ("production-faithful, honest"), and the manifest
+refuted it a day later. A paired A-vs-B comparison survives — both arms are equally affected —
+but the absolutes do not, and a receipt that quotes them as production cost is wrong.
+
+**Check it, don't infer it.** The manifest already answers both questions directly:
+`presplit_keys` for the split question and `batches` for the call-shape question. Reading the
+first and assuming the second is the error.
+
+> Opus 5 (`claude-opus-5`) · 13-08-2026 · [H2630 (Opus 5) — PREP compare Option A: 4 pairs on the 4 whole-card cards](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2630-Opus_SanskritLexicography_prep-compare-whole-card-4-pairs-option-a_13.08.26.md) · evidence: [h2630/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2630/README.md) · [PR #1670](https://github.com/gasyoun/SanskritLexicography/pull/1670). Sealed into the plan's `known_non_equivalences`, so a later reader of `plan.json` cannot re-make the inference.
