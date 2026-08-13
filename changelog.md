@@ -14,6 +14,18 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.43] - 2026-08-13
+
+### Added
+- **c1 gate-0 health probe EXECUTED — NO-GO, and the lane did not open** ([RESULTS_LOG 13-08 entry](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/RESULTS_LOG.md), [PR #1676](https://github.com/gasyoun/SanskritLexicography/pull/1676)). First `/pwg-live-gate` Step-1 probe after a human authorized spend without reservation, and the first aimed at **c1** — this month's operating profile — rather than c4. Warm-up `elapsed_ms` **300 198** against `HARD_TIMEOUT_MS` 300 000 with **0 output bytes**: the **our-kill** signature (ceiling plus ~198 ms of teardown), not a route latency reading. The measured leg never ran — fail-closed stop. Verdict NO-GO; no canary, no window, **no reroll**.
+- **H2326's raw-envelope capture proved itself by returning nothing.** The envelope exists for this run (it did not on 06-08) and records `bytes=1`, `matched=-`: no `429`, no rate-limit or usage-limit string, no API error text, no reset time. So this and c1's only other reading (26-07 `rate_limit`, 6 424 ms, 822 B) are **two different classes**, exactly as the c4 series' three NO-GO days were. c1 now has two readings in its entire history and **zero PASSes, ever**.
+- **A confound the whole c4 series lacked, recorded rather than smoothed over.** The probe was fired from a live session running under **the same `claude1` profile it probed** — parent and child sharing one `CLAUDE_CONFIG_DIR`. That is hypothesis 3 of the three H2326 left open (account cap · self-contention with the driving session · per-model capacity), here structurally true rather than speculative. It does **not** retro-explain the c4 NO-GO days (those targeted a profile the driver was not using), but it weakens this single reading as evidence about the *route*. The discriminating experiment — one c1 probe from a non-`claude1` seat — is queued as H2647.
+- **PWG→RU drain bottleneck census after the blanket spend authorization** ([PWG_RU_DRAIN_BOTTLENECK_CENSUS_POST_AUTHORIZATION_13-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_RU_DRAIN_BOTTLENECK_CENSUS_POST_AUTHORIZATION_13-08-2026.md), [PR #1675](https://github.com/gasyoun/SanskritLexicography/pull/1675)). Money was never the binding constraint and `PILOT_COST.md` §6.1 says so: translation runs on Max, marginal cost per card ≈ $0, and *"the binding constraint stays the Max weekly token quota and editor-hours, not USD."* Five ranked blockers, four of which take no payment — the stopped c4 lane (~$0.55 to re-test), `HARD_TIMEOUT_MS` 300 s now sitting **below one real card** (`nakzatra` 511 s, 3/5 spawns killed) against the qualified `--safe-mode` arm that has never driven a window, the never-measured Max weekly quota, the absent metered transport, and the G5–G10 gates that block **print-grade** rather than the ruled machine-preview default.
+
+### Fixed
+- **Gate status snapshot was stale on the box that owns the store.** `release/gate_status_snapshot.{md,json}` is gitignored and only advances when regenerated locally; regenerating moved G5 review decisions **0 → 5**, print-ready rows **0 → 3**, and machine-ok rows **11 163 → 11 603** against a universe of **120 172** assembled cards.
+- `CITATION.cff` version resynced — it had drifted to 1.144.40 while published tags stood at 1.144.42.
+
 ## [1.144.42] - 2026-08-13
 
 ### Added
