@@ -33,6 +33,7 @@ The API key is read from $DEEPSEEK_API_KEY, or from `--env-file` (a KEY=VALUE .e
 from a committed file, and never echoed into any artifact.
 """
 import argparse
+import datetime
 import json
 import os
 import re
@@ -70,6 +71,66 @@ DEFAULT_MODEL = 'deepseek-v4-flash'
 ALLOWED_EFFORTS = ('low', 'high', 'max')
 
 MAX_ATTEMPTS = 3
+
+# Peak/off-peak switch (first-party pricing page). After this instant, peak hours
+# cost 1.5–4.7× today's card (cache-hit up to ~12×). Standing PWG rule 13-08-2026:
+# never pay peak; run off-peak or defer. Europe/CEST = UTC+2 in August:
+# 01–04 UTC → 03–06 CEST, 06–10 UTC → 08–12 CEST.
+PEAK_BILLING_START = datetime.datetime(2026, 8, 16, 16, 0, tzinfo=datetime.timezone.utc)
+PEAK_WINDOWS_UTC = ((1, 4), (6, 10))  # [start, end) hours UTC
+
+
+def utcnow():
+    return datetime.datetime.now(datetime.timezone.utc)
+
+
+def deepseek_is_peak(now=None):
+    """True only after the 16-08-2026 16:00 UTC switch AND inside a peak window."""
+    now = now or utcnow()
+    if now < PEAK_BILLING_START:
+        return False
+    hour = now.hour
+    return any(start <= hour < end for start, end in PEAK_WINDOWS_UTC)
+
+
+def _selftest_peak():
+    before = datetime.datetime(2026, 8, 16, 15, 59, tzinfo=datetime.timezone.utc)
+    after_off = datetime.datetime(2026, 8, 16, 16, 30, tzinfo=datetime.timezone.utc)  # 16:30 UTC
+    after_peak_am = datetime.datetime(2026, 8, 17, 2, 0, tzinfo=datetime.timezone.utc)
+    after_peak_eu = datetime.datetime(2026, 8, 17, 8, 0, tzinfo=datetime.timezone.utc)  # 10:00 CEST
+    failed = 0
+    for now, want, name in (
+        (before, False, 'pre-switch 15:59 UTC'),
+        (after_off, False, 'post-switch off-peak 16:30 UTC'),
+        (after_peak_am, True, 'post-switch 02:00 UTC / 04:00 CEST'),
+        (after_peak_eu, True, 'post-switch 08:00 UTC / 10:00 CEST'),
+    ):
+        got = deepseek_is_peak(now)
+        status = 'ok' if got == want else 'FAIL'
+        if got != want:
+            failed += 1
+        print('  %s  peak=%s want=%s  %s' % (status, got, want, name))
+    if failed:
+        sys.exit('deepseek peak selftest: %d check(s) failed' % failed)
+    print('deepseek peak selftest: 0 check(s) failed')
+
+
+def refuse_if_peak(now=None):
+    """Exit before the first HTTP byte if this would be billed at peak.
+
+    Escape: ALLOW_DEEPSEEK_PEAK=1 (must be explicit; never the default).
+    """
+    if os.environ.get('ALLOW_DEEPSEEK_PEAK') == '1':
+        print('WARN: ALLOW_DEEPSEEK_PEAK=1 — peak billing not refused', file=sys.stderr)
+        return
+    now = now or utcnow()
+    if not deepseek_is_peak(now):
+        return
+    sys.exit(
+        'REFUSE: DeepSeek peak hours after 16-08-2026 16:00 UTC '
+        '(01:00-04:00 and 06:00-10:00 UTC = 03:00-06:00 and 08:00-12:00 CEST). '
+        'Defer the job or wait for off-peak. Override: ALLOW_DEEPSEEK_PEAK=1.'
+    )
 
 
 def load_env_file(path):
@@ -286,6 +347,9 @@ def run_card(ds, c, common, schema, field):
 
 
 def main():
+    if '--selftest-peak' in sys.argv:
+        _selftest_peak()
+        return
     ap = argparse.ArgumentParser()
     ap.add_argument('payload')
     ap.add_argument('manifest')
@@ -330,6 +394,8 @@ def main():
             or 'https://api.deepseek.com')
     model = (a.model or os.environ.get('DEEPSEEK_MODEL') or env.get('DEEPSEEK_MODEL')
              or DEFAULT_MODEL)
+    if not a.dry_run:
+        refuse_if_peak()
     effort = (a.reasoning_effort or os.environ.get('DEEPSEEK_REASONING_EFFORT')
               or env.get('DEEPSEEK_REASONING_EFFORT') or None)
     if a.dry_run:

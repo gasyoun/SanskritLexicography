@@ -2,6 +2,8 @@
 
 _Created: 13-08-2026 · Last updated: 13-08-2026_
 
+**Schedule (human, 13-08-2026):** burn the current flat card **before 16-08-2026 16:00 UTC**. After the switch, PWG DeepSeek runs **only off-peak** (or they wait). Peak price is never paid. Peak windows: 01:00–04:00 and 06:00–10:00 UTC = 03:00–06:00 and 08:00–12:00 CEST. Off-peak is half of peak, still **above** today’s flat rates. Enforced in [`deepseek_arm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/deepseek_arm.py) `refuse_if_peak` (escape `ALLOW_DEEPSEEK_PEAK=1` only).
+
 ## This sitting (H2652)
 
 Human ruling, 13-08-2026, this chat: spend authorised **now** for PWG DeepSeek work.
@@ -33,5 +35,7 @@ Still forbidden without a new explicit ruling:
 - non-PWG surfaces (papers, @DECIDE, Systema student copy)
 
 A future sitting still **declares its N in the run folder** before the first call. The standing grant removes the permission question, not the reservation count.
+
+After 16-08-2026 16:00 UTC the same grant is **off-peak only**. A peak-hour dispatch is a policy defect even if the key works.
 
 _Dr. Mārcis Gasūns_
