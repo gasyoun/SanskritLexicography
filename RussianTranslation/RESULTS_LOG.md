@@ -3153,3 +3153,62 @@ moves the claim from operator-asserted to harness-observed; it does not establis
 identity.
 
 Model: Opus 5 (`claude-opus-5`).
+
+## 13-08-2026 — c1 gate-0 health probe: NO-GO, warm-up killed at the ceiling with 0 output bytes (H2647)
+
+First `/pwg-live-gate` Step-1 probe run after the 13-08 blanket spend authorization, and the
+first one aimed at **c1** rather than c4 (the operating profile this month, per the owner).
+`python src/pilot/h963_c4_gate0_probe.py --account c1`. Credentials pre-checked free:
+`loggedIn`, `subscriptionType: max`.
+
+| field | value |
+|---|--:|
+| run_id | `h963-c1-single-profile-gate0/2026-08-13T12:35:43Z-pid34852` |
+| policy | `production_v3` (80 000 ms wall / 45 000 ms route) |
+| model | `claude-sonnet-5` |
+| prompt bytes | 6 828 (floor 5 000) |
+| warm-up `elapsed_ms` | **300 198** |
+| warm-up `output_bytes` | **0** (raw envelope: 1 byte, `matched=-`) |
+| classification | `timeout` |
+| measured leg | **absent** — fail-closed stop before it ran |
+| verdict | **NO-GO** |
+
+**This is the 05-08 our-kill signature, reproduced on a different profile.** `HARD_TIMEOUT_MS`
+is 300 000, so 300 198 ms is the ceiling plus ~198 ms of teardown — **we** killed it; it is not
+a latency reading from the route. Per H2299 and the gate's own note, **do not re-derive the
+ceiling for this shape**: a 0-byte kill yields no number to fit, and no ceiling value admits a
+reading with no content.
+
+**Cost is unknown, not zero.** `cost_evaluable: false`, `unevaluable_calls: 1`,
+`observed_cost_usd: 0` — and a `0` under `cost_evaluable: false` means *not evaluable*, never
+*free*. A killed call still bills. Reservation bookkeeping was clean: `calls_spent: 1`,
+`finalized: true`, `pending_calls: 0`.
+
+**H2326's envelope capture is live and earned its keep — by returning nothing.** The raw
+envelope exists this run (it did not on 06-08) and records `bytes=1`, `matched=-`: no
+`429`/`rate limit`/`usage limit`/`too many requests` string, no API error text, no reset time.
+So the 26-07 c1 reading (`rate_limit`, 6 424 ms, 822 B) and this one are **two different
+classes**, exactly as the c4 series' three NO-GO days were. c1 now has two readings and
+**zero PASSes, ever**.
+
+**A confound this reading has that the whole c4 series did not.** The probe was fired from a
+live session running under **the same `claude1` profile it was probing** — i.e. parent and
+child shared one `CLAUDE_CONFIG_DIR`. That is precisely hypothesis 3 of the three
+[H2326](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2326-Opus_RussianTranslation_c4-rate-limit-refusal-envelope-capture-1172_06.08.26.md)
+left open (account cap · self-contention with the driving session · per-model capacity), and
+here it is not speculative but structurally true. It does **not** retro-explain the c4 series —
+those probes targeted a profile the driving session was not using — but it makes this single
+reading weaker evidence about the *route* than a c4 reading of the same shape would be.
+
+**Ration:** attempt **1 of 2** for 13-08 UTC. Next legal c1 probe **≥ 18:40:43 UTC**, six hours
+from this `probe_call` row (`12:40:43.525Z`) and *not* from the run-id start
+([Uprava FINDINGS §319](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)). **No reroll
+was fired** — the gate says STOP on NO-GO, and a second probe on a sibling profile inside the
+same sitting is a reroll wearing a different flag.
+
+**The discriminating experiment**, left to [H2647](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2647-Opus_RussianTranslation_c1-gate0-warmup-hang-selfcontention-discriminate_13.08.26.md):
+one probe of c1 from a session **not** running on `claude1`. Same profile, same prompt, same
+ceiling, different driving config dir — that separates self-contention from account and route
+in a single call, which no amount of re-probing from this seat can.
+
+Model: Opus 5 (`claude-opus-5`).
