@@ -60,6 +60,10 @@ src/pilot/translation_memory.frag.*.jsonl
 src/pilot/translation_memory.suggest.*.jsonl
 src/pilot/translation_memory.denylist.jsonl
 
+# H2683 fragment inventory is tracked; the 155 MB row dump is regenerable
+# via `python src/pwg_tm_fragmentize.py` and is not a git deliverable.
+release/pwg_tm_canonical/fragments.v1.jsonl
+
 # Max workflow run output and A/B transcript artifacts (not deliverables)
 wf_output.json
 wf_output.*.json

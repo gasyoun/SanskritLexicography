@@ -1,8 +1,22 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 13-08-2026_
+_Created: 09-07-2026 · Last updated: 14-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 14-08-2026 — H2683 (Grok 4.6) — PWG TM canonical v1 Track A (schema, migrate, fragments, 5,000 queue)
+
+Grok 4.6 (`grok-4.6`). Track A only of the DH/lexicography plan. No PWG/csl-orig writes.
+
+| Gate | Result |
+|---|---|
+| `pwg_tm_migrate_v1.py --verify` | **2392/2392** lossless; 0 lost fields; 0 orphan/duplicate IDs |
+| `pwg_tm_fragmentize.py --verify` | 112122 fragments; six classes all non-empty; 0 orphans |
+| `pwg_tm_priority.py --verify --limit 5000` | 5000 unique k1; universe 94074 / 98639; manifest `f024ec4b0b2e58f7…` |
+| `pytest tests/test_pwg_tm_canonical.py` | 8/8 |
+| `translation_memory.py selftest` | OK |
+
+Fragment counts: sense 11129 · definition_gloss 15781 · grammar_label 6820 · citation 41145 · example 31592 · recurring_formula 5655.
 
 ## 13-08-2026 — H2647 (Opus 5) — c1 gate-0 under normal concurrent load — ❌ NO-GO on the API ceiling, but c1's FIRST successful calls ever; self-contention and quota both eliminated
 

@@ -1,0 +1,21 @@
+{
+  "schema": "pwg.tm.canonical.fragment_inventory.v1",
+  "parent_count": 2392,
+  "fragment_count": 112122,
+  "by_class": {
+    "sense": 11129,
+    "definition_gloss": 15781,
+    "grammar_label": 6820,
+    "citation": 41145,
+    "example": 31592,
+    "recurring_formula": 5655
+  },
+  "orphan_count": 0,
+  "duplicate_fragment_ids": 0,
+  "missing_classes": [],
+  "invalid_sample": [],
+  "unresolved_sense_alignment": 0,
+  "ok": true,
+  "artifact": "release/pwg_tm_canonical/fragments.v1.jsonl",
+  "artifact_sha256": "793ad333643d53f560c448f764fd94834193338209fa982e077806e1ab389ecb"
+}
