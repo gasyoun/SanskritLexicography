@@ -1,0 +1,29 @@
+{
+ "schema": "pwg.h2674_w0_canary.v1",
+ "n": 3,
+ "ok": 3,
+ "fail": 0,
+ "wall_s": 35.7,
+ "model": "deepseek-v4-flash",
+ "default_model_unchanged": true,
+ "transport": "openai-sdk-stream",
+ "max_tokens": 32768,
+ "cost": {
+  "cache_miss_in_tokens": 188,
+  "cache_hit_in_tokens": 256,
+  "out_tokens": 2065,
+  "usd": 0.0006,
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  },
+  "price_model": "deepseek-v4-flash",
+  "price_card": "pre-1608",
+  "price_cards": [
+   "pre-1608"
+  ],
+  "reasoning_effort": "high"
+ },
+ "price_card": "pre-1608"
+}

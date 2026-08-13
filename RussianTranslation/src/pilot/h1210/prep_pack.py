@@ -1164,9 +1164,10 @@ def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None
     key = os.environ.get('DEEPSEEK_API_KEY') or env.get('DEEPSEEK_API_KEY')
     if not key:
         raise SystemExit('prep_pack --live needs DEEPSEEK_API_KEY (or use fill/dry)')
+    ds.refuse_if_peak()
     base = (os.environ.get('DEEPSEEK_BASE_URL') or env.get('DEEPSEEK_BASE_URL')
             or 'https://api.deepseek.com')
-    client = ds.DeepSeek(base, key, model, max_tokens=2048, timeout=120)
+    client = ds.DeepSeek(base, key, model, max_tokens=ds.DEFAULT_MAX_TOKENS, timeout=120)
 
     # Deterministic fill first (free, gate deferred until after Flash draft).
     packs = [
@@ -1229,6 +1230,7 @@ def selftest() -> int:
     assert pack['producer']['model'] == 'deepseek-v4-flash'
     assert ds.PRICE_CACHE_MISS_IN == 0.14
     assert ds.DEFAULT_MODEL == 'deepseek-v4-flash'
+    assert ds.DEFAULT_MAX_TOKENS == 32768
 
     # Mini store + payload
     store_rows = [
