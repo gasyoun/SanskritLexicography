@@ -11,6 +11,7 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 ## [Unreleased]
 
 ### Added
+- **H2674 (Grok 4.6, `grok-4.6`) — W0 OpenAI SDK stream + 32k cap + PRICE after-1608:** [`deepseek_arm.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/deepseek_arm.py) `DeepSeek.chat` now uses the official OpenAI Python SDK (`stream=True`, `stream_options.include_usage`). Default `--max-tokens` is **32768**; [`prep_pack.py --live`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/prep_pack.py) uses the same client and cap (was hardcoded 2048). After 16-08-2026 16:00 UTC the off-peak PRICE row is selected automatically (`refuse_if_peak` still kills 01–04 and 06–10 UTC); telemetry carries `price_card`. `DEFAULT_MODEL` remains `deepseek-v4-flash`. `openai>=1.55,<2` is pinned in [`RussianTranslation/requirements.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/requirements.txt) only. Offline mock stream holds >8192 thinking tokens. Canary: [`experiments/H2674_w0_stream/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/H2674_w0_stream/).
 - **H2488 (Grok 4.6, `grok-4.6`) — E1 Flash 0731 paid 40-key run:** FAIL, no production draft-lane. Report under [`experiments/E1_deepseek_vs_c4/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/E1_deepseek_vs_c4/E1_FLASH_0731_VS_C4_REPORT_13-08-2026.md).
 
 ## [1.144.38] - 2026-08-12

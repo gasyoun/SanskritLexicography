@@ -26,7 +26,7 @@ JSON-repair events).
 Usage:
   python src/pilot/h1210/deepseek_arm.py <slice_payload.json> <manifest.json> <out_prefix>
         [--env-file PATH] [--model deepseek-v4-flash] [--reasoning-effort high]
-        [--workers 6] [--max-tokens 8192] [--timeout 600]
+        [--workers 6] [--max-tokens 32768] [--timeout 600]
         [--keys k1,k2] [--limit N] [--dry-run]
 
 The API key is read from $DEEPSEEK_API_KEY, or from `--env-file` (a KEY=VALUE .env) — never
@@ -40,8 +40,6 @@ import re
 import sys
 import threading
 import time
-import urllib.error
-import urllib.request
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -52,23 +50,37 @@ if HERE not in sys.path:
 
 import det_gate  # noqa: E402
 
-# DeepSeek published list prices, USD per 1M tokens, first-party
-# https://api-docs.deepseek.com/quick_start/pricing/ as of 13-08-2026 (pre peak/off-peak
-# switch at 16-08-2026 16:00 UTC). Pick the table from the REQUESTED model id — never
-# apply Flash rates to a Pro run (H2652). H1210 historical arm-B used older
-# `deepseek-chat` 0.27 / 0.07 / 1.10 — do not reprice that run with these constants.
+# DeepSeek published list prices, USD per 1M tokens, first-party.
+# https://api-docs.deepseek.com/quick_start/pricing/
+# Pre-switch flat card through 16-08-2026 16:00 UTC; after that, off-peak or peak.
+# Pick the table from the REQUESTED model id — never apply Flash rates to a Pro run
+# (H2652). H1210 historical arm-B used older `deepseek-chat` 0.27 / 0.07 / 1.10 —
+# do not reprice that run with these constants.
 # Org maps: Uprava docs/DEEPSEEK_V4_FLASH_0731_ORG_LANE_MAP_2026-08.md (H2439)
 # and docs/DEEPSEEK_V4_PRO_0813_ORG_LANE_MAP_2026-08.md (H2651).
-PRICE_BY_MODEL = {
-    'deepseek-v4-flash': {'cache_miss_in': 0.14, 'cache_hit_in': 0.0028, 'out': 0.28},
-    'deepseek-v4-pro': {'cache_miss_in': 0.435, 'cache_hit_in': 0.003625, 'out': 0.87},
+PRICE_CARDS = {
+    'pre-1608': {
+        'deepseek-v4-flash': {'cache_miss_in': 0.14, 'cache_hit_in': 0.0028, 'out': 0.28},
+        'deepseek-v4-pro': {'cache_miss_in': 0.435, 'cache_hit_in': 0.003625, 'out': 0.87},
+    },
+    'after-1608-offpeak': {
+        'deepseek-v4-flash': {'cache_miss_in': 0.22, 'cache_hit_in': 0.007, 'out': 0.66},
+        'deepseek-v4-pro': {'cache_miss_in': 0.66, 'cache_hit_in': 0.022, 'out': 1.98},
+    },
+    'after-1608-peak': {
+        'deepseek-v4-flash': {'cache_miss_in': 0.44, 'cache_hit_in': 0.014, 'out': 1.32},
+        'deepseek-v4-pro': {'cache_miss_in': 1.32, 'cache_hit_in': 0.044, 'out': 3.96},
+    },
 }
-# Back-compat aliases used by cost() when the instance has no table (old callers).
+# Backward-compat: the pre-switch table. prep_pack selftest pins miss == 0.14.
+PRICE_BY_MODEL = {k: dict(v) for k, v in PRICE_CARDS['pre-1608'].items()}
 PRICE_CACHE_MISS_IN = PRICE_BY_MODEL['deepseek-v4-flash']['cache_miss_in']
 PRICE_CACHE_HIT_IN = PRICE_BY_MODEL['deepseek-v4-flash']['cache_hit_in']
 PRICE_OUT = PRICE_BY_MODEL['deepseek-v4-flash']['out']
 DEFAULT_MODEL = 'deepseek-v4-flash'
+DEFAULT_MAX_TOKENS = 32768
 ALLOWED_EFFORTS = ('low', 'high', 'max')
+TRANSPORT = 'openai-sdk-stream'
 
 MAX_ATTEMPTS = 3
 
@@ -93,6 +105,24 @@ def deepseek_is_peak(now=None):
     return any(start <= hour < end for start, end in PEAK_WINDOWS_UTC)
 
 
+def price_card_name(now=None):
+    """Which PRICE_CARDS key applies at `now` (UTC)."""
+    now = now or utcnow()
+    if now < PEAK_BILLING_START:
+        return 'pre-1608'
+    if deepseek_is_peak(now):
+        return 'after-1608-peak'
+    return 'after-1608-offpeak'
+
+
+def prices_for(model, now=None, card=None):
+    """Return (price_card, {cache_miss_in, cache_hit_in, out}) for model at `now`."""
+    card = card or price_card_name(now)
+    table = PRICE_CARDS.get(card) or PRICE_CARDS['pre-1608']
+    row = table.get(model) or table['deepseek-v4-flash']
+    return card, dict(row)
+
+
 def _selftest_peak():
     before = datetime.datetime(2026, 8, 16, 15, 59, tzinfo=datetime.timezone.utc)
     after_off = datetime.datetime(2026, 8, 16, 16, 30, tzinfo=datetime.timezone.utc)  # 16:30 UTC
@@ -113,6 +143,183 @@ def _selftest_peak():
     if failed:
         sys.exit('deepseek peak selftest: %d check(s) failed' % failed)
     print('deepseek peak selftest: 0 check(s) failed')
+
+
+def _selftest_price():
+    before = datetime.datetime(2026, 8, 16, 15, 59, tzinfo=datetime.timezone.utc)
+    after_off = datetime.datetime(2026, 8, 16, 16, 30, tzinfo=datetime.timezone.utc)
+    after_peak = datetime.datetime(2026, 8, 17, 2, 0, tzinfo=datetime.timezone.utc)
+    failed = 0
+    checks = (
+        (before, 'pre-1608', 0.28, 0.14),
+        (after_off, 'after-1608-offpeak', 0.66, 0.22),
+        (after_peak, 'after-1608-peak', 1.32, 0.44),
+    )
+    for now, want_card, want_out, want_miss in checks:
+        card, row = prices_for('deepseek-v4-flash', now)
+        ok = card == want_card and row['out'] == want_out and row['cache_miss_in'] == want_miss
+        if not ok:
+            failed += 1
+        print('  %s  card=%s want=%s out=%s  %s' % (
+            'ok' if ok else 'FAIL', card, want_card, row['out'], now.isoformat()))
+    if DEFAULT_MODEL != 'deepseek-v4-flash':
+        failed += 1
+        print('  FAIL  DEFAULT_MODEL=%s' % DEFAULT_MODEL)
+    if DEFAULT_MAX_TOKENS != 32768:
+        failed += 1
+        print('  FAIL  DEFAULT_MAX_TOKENS=%s' % DEFAULT_MAX_TOKENS)
+    if PRICE_CACHE_MISS_IN != 0.14:
+        failed += 1
+        print('  FAIL  PRICE_CACHE_MISS_IN=%s (compat pin is 0.14)' % PRICE_CACHE_MISS_IN)
+    if failed:
+        sys.exit('deepseek price selftest: %d check(s) failed' % failed)
+    print('deepseek price selftest: 0 check(s) failed')
+
+
+def _get(obj, name, default=None):
+    if obj is None:
+        return default
+    if isinstance(obj, dict):
+        return obj.get(name, default)
+    return getattr(obj, name, default)
+
+
+def _usage_as_dict(usage):
+    if usage is None:
+        return {}
+    if isinstance(usage, dict):
+        details = usage.get('completion_tokens_details') or {}
+        reasoning = (details.get('reasoning_tokens')
+                     if isinstance(details, dict) else _get(details, 'reasoning_tokens'))
+        return {
+            'prompt_tokens': usage.get('prompt_tokens'),
+            'completion_tokens': usage.get('completion_tokens'),
+            'prompt_cache_hit_tokens': usage.get('prompt_cache_hit_tokens'),
+            'prompt_cache_miss_tokens': usage.get('prompt_cache_miss_tokens'),
+            'reasoning_tokens': reasoning,
+        }
+    details = _get(usage, 'completion_tokens_details')
+    return {
+        'prompt_tokens': _get(usage, 'prompt_tokens'),
+        'completion_tokens': _get(usage, 'completion_tokens'),
+        'prompt_cache_hit_tokens': _get(usage, 'prompt_cache_hit_tokens'),
+        'prompt_cache_miss_tokens': _get(usage, 'prompt_cache_miss_tokens'),
+        'reasoning_tokens': _get(details, 'reasoning_tokens') if details else None,
+    }
+
+
+def accumulate_stream(stream):
+    """Fold an OpenAI-style chat.completions stream into content + usage.
+
+    DeepSeek thinking mode sends delta.reasoning_content first, then content.
+    Usage is on the last chunk when stream_options.include_usage is True.
+    """
+    content_parts = []
+    reasoning_parts = []
+    finish_reason = None
+    served_model = None
+    usage = {}
+    n_chunks = 0
+    for chunk in stream:
+        n_chunks += 1
+        served_model = _get(chunk, 'model') or served_model
+        u = _get(chunk, 'usage')
+        if u:
+            usage = _usage_as_dict(u)
+        for ch in (_get(chunk, 'choices') or []):
+            finish_reason = _get(ch, 'finish_reason') or finish_reason
+            delta = _get(ch, 'delta') or {}
+            rc = _get(delta, 'reasoning_content')
+            if rc:
+                reasoning_parts.append(rc)
+            c = _get(delta, 'content')
+            if c:
+                content_parts.append(c)
+    return {
+        'content': ''.join(content_parts),
+        'reasoning': ''.join(reasoning_parts),
+        'usage': usage,
+        'finish_reason': finish_reason,
+        'served_model': served_model,
+        'n_chunks': n_chunks,
+    }
+
+
+def mock_long_thinking_stream(n_think=9000, chunk=100, content='{"ok":true}'):
+    """Hermetic SSE stand-in: >8192 thinking tokens, no urllib IncompleteRead."""
+    remaining = 'T' * n_think
+    while remaining:
+        piece, remaining = remaining[:chunk], remaining[chunk:]
+        yield {
+            'model': 'deepseek-v4-flash',
+            'choices': [{'delta': {'reasoning_content': piece}, 'finish_reason': None}],
+            'usage': None,
+        }
+    yield {
+        'model': 'deepseek-v4-flash',
+        'choices': [{'delta': {'content': content}, 'finish_reason': 'stop'}],
+        'usage': None,
+    }
+    yield {
+        'model': 'deepseek-v4-flash',
+        'choices': [],
+        'usage': {
+            'prompt_tokens': 10,
+            'completion_tokens': n_think + 5,
+            'prompt_cache_hit_tokens': 0,
+            'prompt_cache_miss_tokens': 10,
+            'completion_tokens_details': {'reasoning_tokens': n_think},
+        },
+    }
+
+
+def _selftest_stream():
+    folded = accumulate_stream(mock_long_thinking_stream(9000))
+    failed = 0
+    if len(folded['reasoning']) <= 8192:
+        failed += 1
+        print('  FAIL  reasoning chars=%d (need >8192)' % len(folded['reasoning']))
+    else:
+        print('  ok  reasoning chars=%d' % len(folded['reasoning']))
+    if folded['content'] != '{"ok":true}':
+        failed += 1
+        print('  FAIL  content=%r' % folded['content'])
+    if (folded.get('usage') or {}).get('reasoning_tokens') != 9000:
+        failed += 1
+        print('  FAIL  usage reasoning_tokens=%s' % (folded.get('usage') or {}).get('reasoning_tokens'))
+
+    class _Completions:
+        def create(self, **kwargs):
+            if not kwargs.get('stream'):
+                raise AssertionError('stream=True required')
+            return mock_long_thinking_stream(8500)
+
+    class _Chat:
+        completions = _Completions()
+
+    class _Client:
+        chat = _Chat()
+
+    ds = DeepSeek('https://api.deepseek.com', 'sk-test', DEFAULT_MODEL,
+                  DEFAULT_MAX_TOKENS, client=_Client())
+    text, rec = ds.chat('sys', '{"ping":true}', 'mock-8k')
+    if text != '{"ok":true}':
+        failed += 1
+        print('  FAIL  chat content=%r' % text)
+    if rec.get('transport') != TRANSPORT:
+        failed += 1
+        print('  FAIL  transport=%s' % rec.get('transport'))
+    if rec.get('reasoning_tokens') != 8500:
+        failed += 1
+        print('  FAIL  chat reasoning_tokens=%s' % rec.get('reasoning_tokens'))
+    if rec.get('price_card') is None:
+        failed += 1
+        print('  FAIL  missing price_card')
+    if DEFAULT_MODEL != 'deepseek-v4-flash':
+        failed += 1
+    if failed:
+        sys.exit('deepseek stream selftest: %d check(s) failed' % failed)
+    print('deepseek stream selftest: 0 check(s) failed')
 
 
 def refuse_if_peak(now=None):
@@ -188,89 +395,145 @@ def extract_json(text):
     raise ValueError('truncated JSON (unbalanced braces, %d chars)' % len(t))
 
 
+def _is_auth_or_unpaid(exc):
+    status = getattr(exc, 'status_code', None)
+    if status in (401, 402):
+        return True
+    return type(exc).__name__ in ('AuthenticationError', 'PermissionDeniedError')
+
+
 class DeepSeek:
-    def __init__(self, base, key, model, max_tokens, timeout=600, reasoning_effort=None):
-        self.url = base.rstrip('/') + '/chat/completions'
+    def __init__(self, base, key, model, max_tokens, timeout=600, reasoning_effort=None,
+                 client=None):
+        self.base = (base or 'https://api.deepseek.com').rstrip('/')
+        self.url = self.base + '/chat/completions'
         self.key = key
         self.model = model
         self.max_tokens = max_tokens
         self.timeout = timeout
         self.reasoning_effort = reasoning_effort
-        self.prices = PRICE_BY_MODEL.get(model, PRICE_BY_MODEL['deepseek-v4-flash'])
+        self._client = client
+        card, prices = prices_for(model)
+        self.price_card = card
+        self.prices = prices
         self.lock = threading.Lock()
         self.calls = []
 
+    def _make_client(self):
+        if self._client is not None:
+            return self._client
+        try:
+            from openai import OpenAI
+        except ImportError as e:
+            raise RuntimeError(
+                'openai package required for DeepSeek.chat '
+                '(pin: RussianTranslation/requirements.txt)'
+            ) from e
+        return OpenAI(
+            api_key=self.key,
+            base_url=self.base,
+            timeout=self.timeout,
+            max_retries=0,
+        )
+
     def chat(self, system, user, label):
-        payload = {
+        create_kwargs = {
             'model': self.model,
             'messages': [{'role': 'system', 'content': system},
                          {'role': 'user', 'content': user}],
             'response_format': {'type': 'json_object'},
             'temperature': 0.2,
             'max_tokens': self.max_tokens,
+            'stream': True,
+            'stream_options': {'include_usage': True},
         }
+        extra_body = {}
         if self.reasoning_effort:
-            # OpenAI-compat Chat Completions: effort + thinking toggle in the body
-            # (official docs extra_body.thinking; raw HTTP has no extra_body).
-            payload['reasoning_effort'] = self.reasoning_effort
-            payload['thinking'] = {'type': 'enabled'}
-        body = json.dumps(payload).encode('utf-8')
-        req = urllib.request.Request(self.url, data=body, headers={
-            'Authorization': 'Bearer ' + self.key, 'Content-Type': 'application/json'})
+            # Official DeepSeek thinking stream: reasoning_effort + extra_body.thinking.
+            create_kwargs['reasoning_effort'] = self.reasoning_effort
+            extra_body['thinking'] = {'type': 'enabled'}
+        if extra_body:
+            create_kwargs['extra_body'] = extra_body
         t0 = time.time()
         last = None
+        card, prices = prices_for(self.model)
+        self.price_card = card
+        self.prices = prices
         for attempt in range(1, 4):                 # transport-only retries, with backoff
             try:
-                with urllib.request.urlopen(req, timeout=self.timeout) as r:
-                    payload = json.load(r)
+                client = self._make_client()
+                stream = client.chat.completions.create(**create_kwargs)
+                folded = accumulate_stream(stream)
                 dt = time.time() - t0
-                usage = payload.get('usage') or {}
-                msg = (payload.get('choices') or [{}])[0].get('message') or {}
-                rec = {'label': label, 'latency_s': round(dt, 2), 'transport_attempts': attempt,
+                usage = folded.get('usage') or {}
+                rec = {'label': label, 'latency_s': round(dt, 2),
+                       'transport': TRANSPORT, 'transport_attempts': attempt,
                        'requested_model': self.model,
-                       'served_model': payload.get('model'),
-                       'model_matches_request': payload.get('model') == self.model,
+                       'served_model': folded.get('served_model'),
+                       'model_matches_request': folded.get('served_model') == self.model,
                        'reasoning_effort': self.reasoning_effort,
                        'prompt_tokens': usage.get('prompt_tokens'),
                        'completion_tokens': usage.get('completion_tokens'),
-                       'reasoning_tokens': (usage.get('completion_tokens_details') or {}).get(
-                           'reasoning_tokens'),
+                       'reasoning_tokens': usage.get('reasoning_tokens'),
                        'cache_hit_tokens': usage.get('prompt_cache_hit_tokens'),
                        'cache_miss_tokens': usage.get('prompt_cache_miss_tokens'),
-                       'finish_reason': (payload.get('choices') or [{}])[0].get('finish_reason')}
+                       'finish_reason': folded.get('finish_reason'),
+                       'n_chunks': folded.get('n_chunks'),
+                       'price_card': card,
+                       'max_tokens': self.max_tokens}
+                if rec['reasoning_tokens'] is None and folded.get('reasoning'):
+                    rec['reasoning_chars'] = len(folded['reasoning'])
                 with self.lock:
                     self.calls.append(rec)
-                return msg.get('content'), rec
-            # Deliberately broad: the measured failure on the first 100-card run was
-            # `http.client.IncompleteRead`, which is an HTTPException — NOT an OSError or a
-            # URLError — so a narrow tuple let it escape and killed the whole worker thread,
-            # leaving its remaining cards unattempted with no row. A transport exception must
-            # cost this call, never the thread.
+                return folded.get('content') or None, rec
+            # Deliberately broad: H2652's urllib path died on http.client.IncompleteRead
+            # (an HTTPException, not OSError/URLError). The official SDK stream is the
+            # replacement; any remaining transport exception must cost this call, never
+            # the worker thread. 401/402 are spend-fence stops — no retry.
             except Exception as e:  # noqa: BLE001 — see above
                 last = e
+                if _is_auth_or_unpaid(e):
+                    break
                 if attempt < 3:
                     time.sleep(2 ** attempt)
         dt = time.time() - t0
-        rec = {'label': label, 'latency_s': round(dt, 2), 'transport_attempts': 3,
-               'error': '%s: %s' % (type(last).__name__, last)}
+        rec = {'label': label, 'latency_s': round(dt, 2), 'transport': TRANSPORT,
+               'transport_attempts': 3 if last and not _is_auth_or_unpaid(last) else 1,
+               'price_card': card, 'max_tokens': self.max_tokens,
+               'error': '%s: %s' % (type(last).__name__, last) if last else 'unknown'}
+        if last and _is_auth_or_unpaid(last):
+            rec['fence'] = '401/402'
         with self.lock:
             self.calls.append(rec)
         return None, rec
 
     def cost(self):
-        miss = sum(c.get('cache_miss_tokens') or 0 for c in self.calls)
-        hit = sum(c.get('cache_hit_tokens') or 0 for c in self.calls)
-        out = sum(c.get('completion_tokens') or 0 for c in self.calls)
-        # Older/absent cache split -> charge the whole prompt at cache-miss rate (never free).
-        if not (miss or hit):
-            miss = sum(c.get('prompt_tokens') or 0 for c in self.calls)
+        usd = 0.0
+        miss = hit = out = 0
+        cards = set()
+        for c in self.calls:
+            card = c.get('price_card') or self.price_card
+            cards.add(card)
+            _, p = prices_for(self.model, card=card)
+            c_miss = c.get('cache_miss_tokens') or 0
+            c_hit = c.get('cache_hit_tokens') or 0
+            c_out = c.get('completion_tokens') or 0
+            if not (c_miss or c_hit):
+                c_miss = c.get('prompt_tokens') or 0
+            miss += c_miss
+            hit += c_hit
+            out += c_out
+            usd += (c_miss / 1e6 * p['cache_miss_in']
+                    + c_hit / 1e6 * p['cache_hit_in']
+                    + c_out / 1e6 * p['out'])
         p = self.prices
         return {
             'cache_miss_in_tokens': miss, 'cache_hit_in_tokens': hit, 'out_tokens': out,
-            'usd': round(miss / 1e6 * p['cache_miss_in'] + hit / 1e6 * p['cache_hit_in']
-                         + out / 1e6 * p['out'], 4),
+            'usd': round(usd, 4),
             'price_table': dict(p),
             'price_model': self.model,
+            'price_card': self.price_card if len(cards) <= 1 else 'mixed',
+            'price_cards': sorted(x for x in cards if x),
             'reasoning_effort': self.reasoning_effort,
         }
 
@@ -350,6 +613,17 @@ def main():
     if '--selftest-peak' in sys.argv:
         _selftest_peak()
         return
+    if '--selftest-price' in sys.argv:
+        _selftest_price()
+        return
+    if '--selftest-stream' in sys.argv:
+        _selftest_stream()
+        return
+    if '--selftest' in sys.argv:
+        _selftest_peak()
+        _selftest_price()
+        _selftest_stream()
+        return
     ap = argparse.ArgumentParser()
     ap.add_argument('payload')
     ap.add_argument('manifest')
@@ -361,7 +635,7 @@ def main():
                          '(Flash default path). Required for a scientific Pro rematch.')
     ap.add_argument('--base-url', default=None)
     ap.add_argument('--workers', type=int, default=6)
-    ap.add_argument('--max-tokens', type=int, default=8192)
+    ap.add_argument('--max-tokens', type=int, default=DEFAULT_MAX_TOKENS)
     ap.add_argument('--timeout', type=int, default=600)
     ap.add_argument('--keys', default=None)
     ap.add_argument('--limit', type=int, default=None)
@@ -497,6 +771,8 @@ def main():
     }
     telemetry = {
         'schema': 'pwg.h1210_arm_telemetry.v1', 'arm': 'B_deepseek', 'model': model,
+        'transport': TRANSPORT, 'price_card': ds.price_card,
+        'max_tokens': a.max_tokens,
         'cards': len(cards), 'wall_clock_s': round(wall, 1), 'workers': a.workers,
         'generation_calls': len(ds.calls),
         'calls': ds.calls, 'cost': ds.cost(),
