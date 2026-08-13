@@ -1,9 +1,9 @@
 # E1 — DeepSeek V4 Flash 0731 vs c4 draft (Wave 3 scaffold)
 
-_Created: 08-08-2026 · Last updated: 08-08-2026_
+_Created: 08-08-2026 · Last updated: 13-08-2026_
 
-**Status:** scaffold frozen for measurement — **not** a production role grant (R2.3).
-Paid bulk E1 run is a residual until budget/key window is used deliberately.
+**Status:** measured 13-08-2026 — **FAIL**, no production draft-lane (R2.3).
+Report: [E1_FLASH_0731_VS_C4_REPORT_13-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/E1_deepseek_vs_c4/E1_FLASH_0731_VS_C4_REPORT_13-08-2026.md) · [verdict.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/E1_deepseek_vs_c4/verdict.json).
 
 ## What is frozen here
 

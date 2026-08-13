@@ -18,6 +18,11 @@ not an error.
 - **H2652 V4-Pro rematch harness pin + frozen verdict rule** (Grok 4.6 `grok-4.6`, 13-08-2026): `deepseek_arm.py` selects Pro/Flash PRICE_* from the requested model and accepts `--reasoning-effort low|high|max` (thinking body pinned, served-model attested). After **16-08-2026 16:00 UTC** the worker **refuses peak hours** (01–04 and 06–10 UTC / 03–06 and 08–12 CEST) unless `ALLOW_DEEPSEEK_PEAK=1`. Frozen Q3 sample + verdict live under [`experiments/H2652_v4pro_rematch/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/H2652_v4pro_rematch/VERDICT_RULE.md). Default model stays `deepseek-v4-flash`. No TM write.
 - **H2652 rematch verdict FAIL — transport, not gloss quality** (Grok 4.6 `grok-4.6`, 13-08-2026): ticket 1 (`yaTepsita`) served `deepseek-v4-pro` / `high`, `det_issues=[]`, $0.0089; ticket 2 stopped at 4/21 all `IncompleteRead`/`TimeoutError` on urllib thinking streams. Floor 15/22 not reachable. Report: [`experiments/H2652_v4pro_rematch/REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/H2652_v4pro_rematch/REPORT.md). Residual: streaming client before any requalify.
 
+## [1.144.44] - 2026-08-13
+
+### Added
+- **H2488 (Grok 4.6, `grok-4.6`) — E1 Flash 0731 vs c4 on the frozen 40-key H1210 head:** paid `deepseek-v4-flash` arm B (40/40 attempted, 113 calls, $0.2317, no TM/store write). Unattended shippable **4/40 (10%)**, canonical promote-DRY **6/40 (15%)**, **34/40** `worker-null-death` at the locked 8192-token cap (`finish_reason=length`). Fresh c4 arm A BLOCKED_ON_C4_INFRA; verdict **FAIL** against the H1210 72% own-data c4 baseline — no production draft-lane. Report: [E1_FLASH_0731_VS_C4_REPORT_13-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/E1_deepseek_vs_c4/E1_FLASH_0731_VS_C4_REPORT_13-08-2026.md).
+
 ## [1.144.43] - 2026-08-13
 
 ### Added

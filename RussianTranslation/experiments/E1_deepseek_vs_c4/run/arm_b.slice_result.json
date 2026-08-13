@@ -1,0 +1,1193 @@
+{
+ "slice": [
+  "_s_aluqa",
+  "ezwa",
+  "kr_urar_avin",
+  "l_alay",
+  "somasa_ms_t_a",
+  "vi_svasfj",
+  "_svetakar_ra",
+  "a_smagar_baja",
+  "k_ontika",
+  "log_akza",
+  "tubar_i",
+  "yamadruma",
+  "kramu",
+  "mah_ahigan_d_a",
+  "pippal_ayana",
+  "t_araja",
+  "vinikfntana",
+  "zazwivrata",
+  "harinma_ri",
+  "kilima",
+  "lel_ay",
+  "pramanyu",
+  "s_ari",
+  "vi_bindu",
+  "_odbilya",
+  "agnit_ir_ta",
+  "kranda",
+  "pari_b_ava",
+  "sa_mgopana",
+  "udame_ga",
+  "_badramusta",
+  "ftekarmam",
+  "lipikara",
+  "n_i_dra",
+  "sur_arha",
+  "upakalpa",
+  "prajas",
+  "s_aptamika",
+  "sara_g_a",
+  "v_avad_uka"
+ ],
+ "arm": "B_deepseek",
+ "generator": {
+  "model": "deepseek-v4-flash",
+  "base_url": "https://api.deepseek.com",
+  "temperature": 0.2,
+  "max_tokens": 8192,
+  "response_format": "json_object"
+ },
+ "results": [
+  {
+   "key1": "_s_aluqa",
+   "attempts": 1,
+   "complexity_score": 1.48,
+   "complexity_flag": false,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "clean-no-review",
+   "would_promote": true,
+   "repairs": []
+  },
+  {
+   "key1": "ezwa",
+   "attempts": 3,
+   "complexity_score": 1.72,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "kr_urar_avin",
+   "attempts": 1,
+   "complexity_score": 2.44,
+   "complexity_flag": false,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "clean-no-review",
+   "would_promote": true,
+   "repairs": []
+  },
+  {
+   "key1": "l_alay",
+   "attempts": 3,
+   "complexity_score": 1.89,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "somasa_ms_t_a",
+   "attempts": 3,
+   "complexity_score": 1.82,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "vi_svasfj",
+   "attempts": 3,
+   "complexity_score": 3.28,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "_svetakar_ra",
+   "attempts": 2,
+   "complexity_score": 1.74,
+   "complexity_flag": false,
+   "self_report_unsure": true,
+   "self_report_note": "Masked source: exact markup behind {Tn} not verifiable; placeholders kept verbatim.",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "a_smagar_baja",
+   "attempts": 3,
+   "complexity_score": 2.78,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "k_ontika",
+   "attempts": 3,
+   "complexity_score": 2.26,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "log_akza",
+   "attempts": 3,
+   "complexity_score": 1.32,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "tubar_i",
+   "attempts": 3,
+   "complexity_score": 1.06,
+   "complexity_flag": false,
+   "self_report_unsure": true,
+   "self_report_note": "Not fully certain which spans T5/T6 represent; kept all placeholders verbatim in order.",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "yamadruma",
+   "attempts": 3,
+   "complexity_score": 2.01,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "kramu",
+   "attempts": 3,
+   "complexity_score": 3.31,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "mah_ahigan_d_a",
+   "attempts": 3,
+   "complexity_score": 2.71,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "pippal_ayana",
+   "attempts": 3,
+   "complexity_score": 2.73,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "t_araja",
+   "attempts": 3,
+   "complexity_score": 1.78,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "vinikfntana",
+   "attempts": 2,
+   "complexity_score": 1.62,
+   "complexity_flag": false,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "clean-no-review",
+   "would_promote": true,
+   "repairs": [
+    "attempt1: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "zazwivrata",
+   "attempts": 2,
+   "complexity_score": 2.14,
+   "complexity_flag": false,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "clean-no-review",
+   "would_promote": true,
+   "repairs": [
+    "attempt1: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "harinma_ri",
+   "attempts": 3,
+   "complexity_score": 5.35,
+   "complexity_flag": true,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "kilima",
+   "attempts": 3,
+   "complexity_score": 3.73,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "lel_ay",
+   "attempts": 3,
+   "complexity_score": 1.65,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "pramanyu",
+   "attempts": 3,
+   "complexity_score": 2.29,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "s_ari",
+   "attempts": 3,
+   "complexity_score": 3.45,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "vi_bindu",
+   "attempts": 3,
+   "complexity_score": 2.81,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "_odbilya",
+   "attempts": 3,
+   "complexity_score": 4.47,
+   "complexity_flag": true,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "agnit_ir_ta",
+   "attempts": 3,
+   "complexity_score": 3.32,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "kranda",
+   "attempts": 3,
+   "complexity_score": 2.48,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "pari_b_ava",
+   "attempts": 3,
+   "complexity_score": 6.56,
+   "complexity_flag": true,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "sa_mgopana",
+   "attempts": 3,
+   "complexity_score": 2.37,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "udame_ga",
+   "attempts": 3,
+   "complexity_score": 3.26,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "_badramusta",
+   "attempts": 3,
+   "complexity_score": 6.94,
+   "complexity_flag": true,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "ftekarmam",
+   "attempts": 3,
+   "complexity_score": 2.44,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "lipikara",
+   "attempts": 3,
+   "complexity_score": 2.97,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "n_i_dra",
+   "attempts": 3,
+   "complexity_score": 3.79,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "sur_arha",
+   "attempts": 3,
+   "complexity_score": 2.52,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "upakalpa",
+   "attempts": 3,
+   "complexity_score": 3.51,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "prajas",
+   "attempts": 3,
+   "complexity_score": 4.92,
+   "complexity_flag": true,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt2: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "s_aptamika",
+   "attempts": 3,
+   "complexity_score": 3.1,
+   "complexity_flag": false,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "sara_g_a",
+   "attempts": 3,
+   "complexity_score": 4.95,
+   "complexity_flag": true,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response"
+   ]
+  },
+  {
+   "key1": "v_avad_uka",
+   "attempts": 3,
+   "complexity_score": 5.64,
+   "complexity_flag": true,
+   "self_report_unsure": null,
+   "self_report_note": null,
+   "coverage": null,
+   "det_issues": null,
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": [
+    "attempt1: no JSON object in response",
+    "attempt2: no JSON object in response",
+    "attempt3: no JSON object in response"
+   ]
+  }
+ ],
+ "cards_out": [
+  {
+   "key1": "_s_aluqa",
+   "card": {
+    "key1": "_s_aluqa",
+    "iast": "śāluḍa",
+    "records": [
+     {
+      "h": "śāluḍa",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ {T2} {T3} eines Unholds {T4}.",
+        "russian": "{T1}¦ {T2} {T3} имя одного демона {T4}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "śāluḍa",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T5}¦ {T6} {T7} eines Unholds.",
+        "russian": "{T5}¦ {T6} {T7} имя одного демона.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "ezwa",
+   "card": null
+  },
+  {
+   "key1": "kr_urar_avin",
+   "card": {
+    "key1": "krUrarAvin",
+    "iast": "krūrarāvin",
+    "records": [
+     {
+      "h": "krūrarāvin",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ ({T2} + {T3}) {T4} {%Rabe%} {T5}_im_{T6}",
+        "russian": "{T1}¦ ({T2} + {T3}) {T4} ворон {T5}_в_{T6}",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "krūrarāvin",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "*{T7}¦ {T8} {%Rabe%} {T9}.",
+        "russian": "*{T7}¦ {T8} ворон {T9}.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "l_alay",
+   "card": null
+  },
+  {
+   "key1": "somasa_ms_t_a",
+   "card": null
+  },
+  {
+   "key1": "vi_svasfj",
+   "card": null
+  },
+  {
+   "key1": "_svetakar_ra",
+   "card": {
+    "key1": "_svetakar_ra",
+    "iast": "śvetakarṇa",
+    "records": [
+     {
+      "h": "śvetakarṇa",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ {T2} {T3} eines Sohnes des {T4} {T5}.",
+        "russian": "{T1}¦ {T2} {T3} одного сына {T4} {T5}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "śvetakarṇa",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T6}¦ {T7} {T8} eines Sohnes des {T9}.",
+        "russian": "{T6}¦ {T7} {T8} одного сына {T9}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "a_smagar_baja",
+   "card": null
+  },
+  {
+   "key1": "k_ontika",
+   "card": null
+  },
+  {
+   "key1": "log_akza",
+   "card": null
+  },
+  {
+   "key1": "tubar_i",
+   "card": {
+    "key1": "tubarI",
+    "iast": "tubarī",
+    "records": [
+     {
+      "h": "tubarī",
+      "grammar": "f.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T1}¦ {T2} = {T3}",
+        "russian": "{T1}¦ {T2} = {T3}"
+       },
+       {
+        "tag": "1",
+        "german": "{T5} 1〉 {%Koriander%}.",
+        "russian": "{T5} 1〉 кориандр."
+       },
+       {
+        "tag": "2",
+        "german": "{T6}— 2〉 {%Hündin%} {T4}.",
+        "russian": "{T6}— 2〉 сука {T4}."
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "yamadruma",
+   "card": null
+  },
+  {
+   "key1": "kramu",
+   "card": null
+  },
+  {
+   "key1": "mah_ahigan_d_a",
+   "card": null
+  },
+  {
+   "key1": "pippal_ayana",
+   "card": null
+  },
+  {
+   "key1": "t_araja",
+   "card": null
+  },
+  {
+   "key1": "vinikfntana",
+   "card": {
+    "key1": "vinikfntana",
+    "iast": "vinikṛntana",
+    "records": [
+     {
+      "h": "vinikfntana",
+      "grammar": "adj.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ (von {T10}1.{T11} {T2} mit {T3}) {T4} {%zerhauend, niedermachend%}: {T5} ({T6}) {T7}.",
+        "russian": "{T1}¦ (от {T10}1.{T11} {T2} с {T3}) {T4} рассекающий, сокрушающий: {T5} ({T6}) {T7}.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "vinikfntana",
+      "grammar": "adj.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T8}¦ {T9} {%zerhauend, niedermachend%}.",
+        "russian": "{T8}¦ {T9} рассекающий, сокрушающий.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "zazwivrata",
+   "card": {
+    "key1": "zazwivrata",
+    "iast": "ṣaṣṭivrata",
+    "records": [
+     {
+      "h": "zazwivrata",
+      "grammar": "n.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ {T2} {T3} {%einer {T4} Begehung%} {T5}. {T6}.",
+        "russian": "{T1}¦ {T2} {T3} одного {T4} обряда {T5}. {T6}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "zazwivrata",
+      "grammar": "n.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T7}¦ {T8} {%eine {T9} Begehung%}.",
+        "russian": "{T7}¦ {T8} один {T9} обряд.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "harinma_ri",
+   "card": null
+  },
+  {
+   "key1": "kilima",
+   "card": null
+  },
+  {
+   "key1": "lel_ay",
+   "card": null
+  },
+  {
+   "key1": "pramanyu",
+   "card": null
+  },
+  {
+   "key1": "s_ari",
+   "card": null
+  },
+  {
+   "key1": "vi_bindu",
+   "card": null
+  },
+  {
+   "key1": "_odbilya",
+   "card": null
+  },
+  {
+   "key1": "agnit_ir_ta",
+   "card": null
+  },
+  {
+   "key1": "kranda",
+   "card": null
+  },
+  {
+   "key1": "pari_b_ava",
+   "card": null
+  },
+  {
+   "key1": "sa_mgopana",
+   "card": null
+  },
+  {
+   "key1": "udame_ga",
+   "card": null
+  },
+  {
+   "key1": "_badramusta",
+   "card": null
+  },
+  {
+   "key1": "ftekarmam",
+   "card": null
+  },
+  {
+   "key1": "lipikara",
+   "card": null
+  },
+  {
+   "key1": "n_i_dra",
+   "card": null
+  },
+  {
+   "key1": "sur_arha",
+   "card": null
+  },
+  {
+   "key1": "upakalpa",
+   "card": null
+  },
+  {
+   "key1": "prajas",
+   "card": null
+  },
+  {
+   "key1": "s_aptamika",
+   "card": null
+  },
+  {
+   "key1": "sara_g_a",
+   "card": null
+  },
+  {
+   "key1": "v_avad_uka",
+   "card": null
+  }
+ ]
+}

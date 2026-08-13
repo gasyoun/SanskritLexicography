@@ -23,7 +23,8 @@ from headless_worker import (DEFAULT_TIMEOUT_S, bare_cli_cwd, claude_argv_prefix
                              validate_preflight_artifact, windows_hidden_flags,
                              wrapper_timeout_s)
 from window_common import atomic_write_text
-from execution_contract import (ActiveCallClaim, config_dir_fingerprint, validate_manifest,
+from execution_contract import (ActiveCallClaim, PRODUCTION_HARD_TIMEOUT_MS,
+                                config_dir_fingerprint, validate_manifest,
                                 validate_profile)
 from call_reservation import (CallLimitReached, CallReservationLedger, run_ids,
                               telemetry_from_cli_wrapper, unevaluable_telemetry)
@@ -1357,7 +1358,23 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
             # 03-08 (276 183 ms route, 2 output tokens) and 05-08 (killed at 300 099 ms,
             # 0 B) measured legs ran out of. DERIVED from the paid lane's own helper, never
             # a literal path, so the two can never drift apart again.
-            cwd=bare_cli_cwd(), timeout=300)
+            #
+            # H2647: the SAME defect class, one argument to the right. `timeout=300` was a
+            # hardcoded literal -- the only one left in this module -- while the lane this
+            # gate certifies kills at `execution_contract.PRODUCTION_HARD_TIMEOUT_MS`, raised
+            # to 600 000 ms by the H2313 owner ruling on 06-08-2026 with the explicit finding
+            # that 300 000 ms "was killing HEALTHY card spawns, not hung ones" (it sits below
+            # p90 of the completed-spawn distribution). The gate was never updated with it:
+            # `HARD_TIMEOUT_MS_RECALIBRATE_06-08-2026.md` does not mention h963 at all. So for
+            # seven days the gate killed at HALF the ceiling of the lane it gates, and every
+            # NO-GO it issued on a `timeout` classification was unreadable -- indistinguishable
+            # between a hung route and a call the production lane would still have been waiting
+            # on. The 13-08 c1 reading (300 198 ms, 0 output bytes, `bytes=1 matched=-`) is
+            # exactly that shape. This does NOT re-derive a ceiling from that reading (H2299's
+            # standing ban): it imports the number the owner already ruled, which is what
+            # `execution_contract` exists for -- #983 found the ceiling restated in five
+            # independent places, and this was a sixth that never imported it.
+            cwd=bare_cli_cwd(), timeout=PRODUCTION_HARD_TIMEOUT_MS // 1000)
     except subprocess.TimeoutExpired as exc:
         call_reservation.finalize(reservation, unevaluable_telemetry())
         # H2056 / #944: this was the ONLY exit from _probe_call that skipped _probe_err_class, so a
