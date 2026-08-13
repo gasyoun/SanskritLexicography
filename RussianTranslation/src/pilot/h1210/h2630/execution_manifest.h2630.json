@@ -1,0 +1,1348 @@
+{
+ "schema": "pwg.headless_execution_manifest.v1",
+ "meta": {
+  "schema_version": "pwg_ru.workflow_meta.v1",
+  "generator": "gen_opt_harness2.batched-masked",
+  "generated_at": "2026-08-13T06:29:09Z",
+  "root": "nominal_h2630",
+  "safe_root": "nominal~005fh2630",
+  "lang": "ru",
+  "gen_model": "claude-sonnet-5",
+  "source_profile": null,
+  "source_profiles": {
+   "idAnIm": "pwg_with_supplements",
+   "prasU": "pwg_with_supplements",
+   "rAtra": "pwg_with_supplements",
+   "spfS": "pwg_with_supplements"
+  },
+  "mode": "nominal_masked",
+  "nominal": true,
+  "nominal_keymap": {
+   "idAnIm": "idAnIm",
+   "prasU": "prasU",
+   "rAtra": "rAtra",
+   "spfS": "spfS"
+  },
+  "grammar_layer": "none",
+  "selected_keys": [
+   "idAnIm",
+   "prasU",
+   "rAtra",
+   "spfS"
+  ],
+  "batches": [
+   [
+    "idAnIm",
+    "prasU"
+   ],
+   [
+    "rAtra",
+    "spfS"
+   ]
+  ],
+  "batch_count": 2,
+  "rootmap_sha256": null,
+  "input_hashes": {
+   "idAnIm": {
+    "raw_sha256": "1e4a696ca6af6c88169cc71585895c49d774115466512b0597bdf7897f626672",
+    "portrait_sha256": "2971ea1fe91448aef6086afbd99437c38cbc5b33aee575591e6e1a1e44f473b3"
+   },
+   "prasU": {
+    "raw_sha256": "32640715ea6fde01de9531f7fdb5562ad2e711a9b34bce8e75d62836594635ba",
+    "portrait_sha256": "9068b7704616f8947402dea007e6cfe49d75cdd708a3aacbf84df3711f2fdb61"
+   },
+   "rAtra": {
+    "raw_sha256": "1940a645fb2820d973c03136afa46cbd94515382dd27841037f023cb2cca5aef",
+    "portrait_sha256": "78c9fa0bb96fe4990bda2c986c1195f6b4f5651919bd4e667f5e541b46931236"
+   },
+   "spfS": {
+    "raw_sha256": "c13c03d20c929e004ed49f50782fc4a7039fc4bbaec5b59895423718315cc5d3",
+    "portrait_sha256": "3c89e8ece6bbe3e3b55a13a5c5264089beaad4ff3bcc104a16d67bbef4311c36"
+   }
+  },
+  "input_payload_keys": [
+   "idAnIm",
+   "prasU",
+   "rAtra",
+   "spfS"
+  ],
+  "selfheal": true,
+  "selfheal_group_budget": 12,
+  "selfheal_cards": {
+   "idAnIm": 4,
+   "prasU": 4,
+   "rAtra": 3,
+   "spfS": 5
+  },
+  "binary_split": true,
+  "output_budget": 90,
+  "sense_presplit_budget": 20,
+  "kill": true,
+  "kill_gate": {
+   "factor": 2.0,
+   "base_ms": 20000,
+   "slope_ms": 45,
+   "floor_ms": 45000,
+   "ceil_ms": 600000
+  },
+  "kill_switch": true,
+  "agent_budget_strategy": "split-pools-per-card-heal",
+  "max_agents": 53,
+  "max_translate_agents": 16,
+  "max_heal_agents": 37,
+  "translate_agent_expected": 2,
+  "heal_budget_groups": 16,
+  "heal_budget_cards": 4,
+  "max_agents_factor": 3.0,
+  "max_agents_headroom": 10,
+  "max_wide": 3,
+  "stagger_ms": 2000,
+  "per_card_heal_budget": true,
+  "per_card_heal_factor": 1.5,
+  "per_card_heal_headroom": 3,
+  "kill_timeout_no_bisect": true,
+  "presplit_group_cite_budget": 60,
+  "presplit_group_sense_cap": 18,
+  "presplit_group_call_weight": 12000,
+  "presplit_keys": [],
+  "tm": "translation_memory.ru.json",
+  "tm_auto": true,
+  "tm_available": true,
+  "tm_cards": 0,
+  "tm_hits": [],
+  "frag_tm": null,
+  "frag_tm_cards": [],
+  "frag_tm_fragments": 0,
+  "suggest_tm": null,
+  "suggest_profile": "semantic",
+  "suggest_tm_cards": [],
+  "suggest_tm_top": {},
+  "degenerate_passthrough_keys": [],
+  "agent_expected_after_tm": 2
+ },
+ "field": "russian",
+ "model": "claude-sonnet-5",
+ "execution": null,
+ "key_provenance": null,
+ "prompt": {
+  "preamble": "=== MASKED + BATCHED REGIME (read first — overrides input-format details below) ===\nYou are given SEVERAL headwords at once, each in its own '=== CARD <key> ===' block.\nEach card's source German has been MASKED: every untranslatable span (Sanskrit {#..#},\nsource refs <ls>, abbreviations <ab>, italic <is>, grammar <lex>) is replaced by a {Tn}\nplaceholder token. You see ONLY the translatable German gloss prose + {Tn} tokens + the\nsense numbering. A Python post-step restores every {Tn} to its exact original markup.\n\nTherefore, wherever the rules below say \"keep {#..#}/<ls>/<ab> verbatim\" or \"reproduce\nthe markup delimiters EXACTLY\", that now means: **keep every {Tn} placeholder verbatim,\nunchanged and in its original order** — never invent, renumber, drop, expand, merge, or\nalter a {Tn}, and never type any Sanskrit, siglum, or markup yourself. In the `german`\nfield, reproduce the masked skeleton you were given for that sense EXACTLY (its German +\nits {Tn} tokens). In the `russian` field, put your translation, placing the relevant {Tn}\ntokens where the source cited a masked span. Translate EACH card; return one object per\nheadword in `cards`, with `key1` matching its '=== CARD <key> ===' header. Omit nothing.\n\n",
+  "grammar": "",
+  "grammars": {},
+  "translation": "You are producing the Russian scholarly entry for one PWG headword (Petersburg Sanskrit Dictionary, Böhtlingk-Roth 1855-75).\n\npwg_ru CONVENTIONS (from Böhtlingk-Roth's own prefaces + project decisions — follow EXACTLY):\n- REGISTER: scholarly-philological. Faithful to PWG's density and precision; this is a printed scholarly dictionary.\n- Translate into Russian the natural-language gloss prose. This is German in PWG/PW/SCH/PWKVN and most NWS sub-sources, but the NWS layer ALSO carries English (MW, Olivelle, Keller, Hoernle, BHSD, Sircar) and French (Renou, Padoux, Caland, Rivelex) glosses — translate each gloss FROM ITS OWN language, never relayed through German. A gloss given in two/three languages (e.g. \"riz cuit; cooked rice; gekochter Reis\") is ONE sense — render it once, not thrice (Guard 7).\n- KEEP VERBATIM (never translate or transliterate): Sanskrit (IAST / Devanagari); the literary-source sigla (ṚV., MBH., M., AK., H., …); the German grammatical abbreviations (m., f., n., Pl., Du., adj., …); the German lexicographic/meta abbreviations inside <ab>…</ab> (Bed. = Bedeutung, Schol., s.v., u.s.w. — keep the token, NEVER expand it to its Russian meaning); and <is>…</is> italic source text (a source/siglum reference — keep verbatim, NEVER wrap as {%…%} German gloss). They stay in PWG's Latin/German form.\n- TWO-SOURCE PRINCIPLE (B&R's own): a sense backed by a TEXT citation (ṚV, MBH, M, …) is demonstrable usage = attested; a sense from a kośa/grammarian only (Amarakośa AK, Hemacandra H, Pāṇini P, Medinī Med.) is Indian-lexicographic — render it but mark source_type=lexicographic.\n- VEDIC senses are 19th-c. European philology and may be superseded; render faithfully; if the German itself hedges, keep the hedge.\n\nINPUTS for each headword are INLINED below per card (its masked German skeleton + portrait). Do NOT open files, do NOT call any tools, do NOT list directories, do NOT supply senses from memory — translate EXACTLY what is inlined, nothing else.\n\nTASK: for EACH record (homonym) and EACH sense/sub-sense in the tree, write the Russian rendering.\n- Use the corpus candidates as the PRIMARY evidence for word choice (they are attested, 84% precision; translation-weighted). Where SEVERAL near-synonyms fit, DISCRIMINATE them à la Apresjan: pick the one(s) right for THIS sense and state the differentia (semantic / combinatorial / stratum-connotational) briefly. Prefer renderings attested in the sense's CITED stratum (a ṚV-cited sense → the Vedic corpus renderings). EVIDENCE WEIGHT: if the portrait's corpus_synonyms carries evidence_scope='prefixed-form' or 'root', the candidates are direct evidence for THIS headword — use them as primary. If evidence_scope starts with 'root-fallback' (a split prefixed-verb sub-card whose own surface form is not in the corpus), the candidates are the BARE ROOT's — treat them as a weak hint only and let the German gloss of the prefixed verb govern; do not force a root-meaning synonym onto a prefix that has shifted the sense.\n- Mark equivalence_type: a 1-2 word equivalent vs an explanatory gloss (толкование).\n- Keep the German sense beside your Russian (side-by-side).\n\nHARD RULES (the judge fails the card otherwise):\n1. NO FABRICATION — never output a sense, sub-sense, or tag that is not an actual division in the raw German. Tags must match the raw exactly; do not invent, split, or merge senses (no added \"epic\"/\"vedic\" sub-sense the source lacks).\n2. COMPLETE COVERAGE — render EVERY sense the raw card contains, in order: every numbered 1)/2), every lettered a)/b) sub-sense, AND any etymology / cross-reference / \"personif.\" note (render the note too, with a short Russian gloss). Skip nothing.\n3. SIGLA UNTOUCHED — never translate or transliterate ANY siglum or abbreviation, including COMMENTATOR sigla (Sāy., Schol., Sch., Comm.), grammar abbrevs (m./f./Pl./Du.), and German lexicographic/meta abbreviations inside <ab>…</ab> (Bed., Schol., s.v.) — keep the abbreviation token verbatim, NEVER expand it (e.g. <ab>Bed.</ab> stays «Bed.», not «значением»). <is>…</is> italic source text is a verbatim siglum, NEVER {%…%} gloss (do not render <is> inside {%…%}). They stay verbatim in PWG form; let no German or English word leak into the Russian. MARKUP DELIMITERS VERBATIM: in the german field reproduce the raw record's own delimiters EXACTLY — keep every {#…#} around Sanskrit and every <ls>…</ls>, <ab>…</ab>, <lex>…</lex>, <is>…</is> tag as-is; do NOT strip them to plain text, do NOT transliterate {#…#} to bare IAST, do NOT \"clean\"/\"trim\" the markup. Keep any Sanskrit you cite in the russian field wrapped in {#…#} too. The deterministic fidelity gate counts these tokens: a card that loses >10% of its <ls> or >15% of its {#…#} spans is REJECTED.\n4. ALL RECORDS, INCLUDING NACHTRÄGE — a headword is often a MAIN record plus one or more ADDENDA/NACHTRÄGE records (each marked in the raw input). These do not repeat the word; they PATCH the main entry — \"to sense 3 add citation X\", \"sense 10: read … instead of …\", an etymology tail, a new astrological/numeric sense. Render EVERY record completely and EVERY addendum in full, including its tail (etymology, cross-reference, corrigendum). Addenda are first-class — never drop, summarise, or truncate them. Key each addendum sense to the main-entry sense number it patches. One addendum can itself carry SEVERAL numbered patch-items (1a, 2a, 3a, …) — render EVERY item; dropping any single patch fails coverage.\n5. NWS LAYER — USE THE AUTHORITATIVE PRE-PARSED OWNER MAP. The input contains a section \"=== LAYER: NWS — PRE-PARSED OWNER MAP (AUTHORITATIVE, N entries) ===\" listing numbered entries  N. [NWS: OWNER] {#lemma#} [tag] gloss . Emit EXACTLY ONE NWS card row per numbered entry, IN THAT ORDER; copy each entry's [NWS: OWNER] token VERBATIM as that row's LAST citation; translate the gloss from its own language; keep {#lemma#}/IAST/sigla. Do NOT re-derive, swap, merge, drop, or re-order owners, and do NOT read owners off the raw fragment — the map is the single source of truth (this makes the F12 slide impossible). If no owner map is present, fall back to: ONE ENTRY PER SOURCE, OWNER-CITATION KEPT (the deterministic auditor nws_split.py checks this; it fails the card otherwise). The \"=== LAYER: NWS ===\" fragment packs many sub-dictionaries into one string in the shape  [LEMMA] TAG > gloss .. OWNER : page >  [LEMMA] TAG > gloss .. OWNER : page > …  — the diasystem TAG PRECEDES each gloss and the OWNER citation (Author year : page, e.g. \"Graßmann 1873 (1996) : 70\", \"Geldner 1907 : 10\", \"MW : 47 (s.v. ap)\") CLOSES it. Output ONE sense per such entry, in source order: NEVER merge two owners into one, never drop the owner, and never compress several \"Wasser=water\" attestations into a single row. Each NWS sense MUST (a) be tagged so it reads as NWS (prefix \"[NWS:]\" or tag \"NWS\"), and (b) keep its OWNER citation VERBATIM as the LAST citation of that sense (so the auditor can read the owner). CRITICAL reading direction (failure F12): the owner comes AFTER the gloss — do NOT slide it onto the next gloss; \"X > Y : p\" means Y:p owns X, not the following entry. Sub-lemmas the NWS lists (separate compound headwords, e.g. apaḥsaṃvarta, abdurga) are first-class entries too — render each as its own NWS row, never as a sense of the head.\n6. TRANSLATE, DON'T ANNOTATE — render EXACTLY what the German states, no more. Within a sense, NEVER add an interpretive gloss, a parenthetical domain clarification, a scope qualifier, or a scholarly attribution («и другими», «и тому подобное», «(о небесных телах)») that the German does not itself contain. If the German credits a derivation to ONE authority (e.g. «wird von BENFEY … zurückgeführt»), name ONLY that authority — do NOT generalise «BENFEY» to «BENFEY и другими». When unsure, translate LESS, not more: an unsourced addition is a fidelity defect exactly like an omission.\n7. GOVERNMENT MARKERS VERBATIM — when the German gloss carries a parenthesized case-government note (e.g. `(<ab>loc.</ab>)`, `(<ab>loc.</ab> und <ab>gen.</ab>)`) or a `mit dem <ab>case.</ab>` phrase, copy the case abbreviation into the sense's `government` field exactly as it appears in the source (one entry per marker found) — NEVER invent, guess, generalize, or add a case the German does not state. Leave `government` an empty array when the German carries no such marker. This is deterministic — do not paraphrase the case into the Kochergina idiom or any other rendering.\n8. NO GERMAN PROSE IN CITATION SCAFFOLDING (H1302) — a German prose function word that JOINS citations or notes must be TRANSLATED into Russian, not kept: «Schol. zu X» → «Schol. к X», «bei X» → «у X», «X und Y» → «X и Y», «mit Ergänzung von Z» → «с восполнением Z», a section-header «Mit {#prefix#}» → «С {#prefix#}». Only the <ab>…</ab>/<ls>…</ls>/<is>…</is> siglum TOKEN itself stays verbatim (rule 3) — the connective prose around it becomes Russian. This applies INSIDE citations too, where German zu/bei/und/oder/nach/im/so/als commonly survive untranslated.\n9. RUSSIAN STYLE MECHANICS (H1305) — NO LETTER Ё anywhere in the russian field: write е everywhere («отвоёвывать» → «отвоевывать»); the ONLY exception is the standalone word «всё» (used to disambiguate from «все» — never in a compound like «всё-таки», which stays «все-таки» like every other ё-word). In editorial/apparatus metalanguage write the TERSE forms «вм.» instead of «вместо» and «в знач.» instead of «в значении» (this is about editorial commentary — variant readings, sense specification — not about narrative gloss prose, which stays natural Russian). `ed. Bomb.` stays the verbatim Latin siglum wherever it sits inside `<ls>…</ls>` (rule 3, sigla untouched) — NEVER translate it there (it feeds src/pwg_sources.py's citation resolver); only a free-prose `ed. Bomb.` OUTSIDE any `<ls>…</ls>` tag becomes «Бомбейская ред.».\n\nRENDERING GUIDANCE — Sanskrit microstructure (from the lexicography-manual harvest, see ../glossaries/de_ru_translation_aids.md; quality, judged softly — these refine wording, they do NOT add/drop senses):\n- COMPOUNDS (samāsa) are right-headed: build the Russian off the vigraha, head = the SECOND member. tatpuruṣa asi-kalaha → «бой мечом» (head «бой»); NEVER a member-by-member calque off the first constituent. bahuvrīhi is exocentric (a possessor OUTSIDE the compound): hata-putra- → «та, у кого убиты сыновья / чьи сыновья убиты», not the literal sum. …-ādi / …-prabhṛti = an OPEN class = the hypernym of its members → «X и тому подобное / и прочее», never a closed list. Split an over-long stacked compound into several Russian clauses, not one calque (Apte/Gillon, Inglese-Geupel).\n- CORRELATIVES (yad…tad): when the German keeps the correlative order, render a PREPOSED Russian correlative — кто…тот, что…то, какой…такой, чей…того, где…там, куда…туда, когда…тогда, как…так, сколько…столько, чем…тем. Doubled yo yaḥ → «кто бы ни / всякий, кто»; yāvat…tāvat → «пока…до тех пор»; yadi…tarhi → «если…то». Keep BOTH pairs; do not flip which clause is asserted (Mitrenina, Zaliznyak-Paducheva, Ruppel).\n- ŚĀSTRIC FORMULAS — fixed dry Russian, do not re-translate per occurrence: iti arthaḥ → «то есть; таков смысл»; ity uktam → «сказано»; anena … vivakṣitam → «этим он хочет сказать»; X-bhāvaḥ / X-tvam → «состояние/свойство X». Their presence marks scholastic register → flat terminological Russian (Tubb).\n- SYNONYM CARDINALITY: render a German synonym-string (Glanz, Schimmer, Pracht) as a Russian synonym-string of EQUAL cardinality — never collapse n near-synonyms to one word; pick by register, default to the neutral dominant (Apresjan, Baalbaki).\n- PUNCTUATION carries sense-grouping: comma = interchangeable synonyms WITHIN one sense; semicolon = a boundary between non-interchangeable senses. Preserve PWG's comma/semicolon exactly in the Russian (Hartmann & James).\n- MANNER/POSITION: where Russian grammatically forces a manner/position verb (идти/ползти/лететь; стоять/лежать/висеть) that the German leaves open, choose from the cited context; a wrong neutral default (e.g. «находиться», «лежать» for something that hangs) is grammatical-but-false (Apresjan).\n- NON-CIRCULAR GLOSSES: a Russian gloss must be clearer than the Sanskrit/PWG headword. Avoid circular or cryptographic paraphrases, bare transliterated Sanskrit, or a rarer Russian term where a plain explanatory gloss is needed (Apresjan).\n\nReturn ONLY the structured object.",
+  "nws_rule": ""
+ },
+ "output_schema": {
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+   "cards"
+  ],
+  "properties": {
+   "cards": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+     "$ref": "#/$defs/card"
+    }
+   }
+  },
+  "$defs": {
+   "card": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "key1",
+     "iast",
+     "records",
+     "notes"
+    ],
+    "properties": {
+     "key1": {
+      "type": "string",
+      "minLength": 1
+     },
+     "iast": {
+      "type": "string"
+     },
+     "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+       "$ref": "#/$defs/record"
+      }
+     },
+     "notes": {
+      "type": "string"
+     }
+    }
+   },
+   "record": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "h",
+     "grammar",
+     "senses"
+    ],
+    "properties": {
+     "h": {
+      "type": "string"
+     },
+     "grammar": {
+      "type": "string",
+      "description": "POS/gender as PWG, verbatim where applicable."
+     },
+     "senses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+       "$ref": "#/$defs/sense"
+      }
+     }
+    }
+   },
+   "sense": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "tag",
+     "german",
+     "russian"
+    ],
+    "properties": {
+     "tag": {
+      "type": "string",
+      "minLength": 1
+     },
+     "german": {
+      "type": "string",
+      "description": "The PWG German for this sense, with the source's {#…#} Sanskrit delimiters and <ls>/<ab>/<lex>/<is> markup kept VERBATIM — not stripped to plain text, not transliterated to bare IAST."
+     },
+     "russian": {
+      "type": "string",
+      "description": "The Russian rendering in scholarly register."
+     },
+     "equivalence_type": {
+      "enum": [
+       "equivalent",
+       "explanatory"
+      ]
+     },
+     "source_type": {
+      "enum": [
+       "attested",
+       "lexicographic",
+       "mixed"
+      ]
+     },
+     "stratum": {
+      "type": "string",
+      "description": "Stratum used, such as Vedic, Epic / early-Classical, Classical, Medieval, or empty."
+     },
+     "differentia": {
+      "type": "string",
+      "description": "Apresjan near-synonym discrimination note, or empty when no discrimination was needed."
+     }
+    }
+   }
+  }
+ },
+ "batches": [
+  [
+   "idAnIm",
+   "prasU"
+  ],
+  [
+   "rAtra",
+   "spfS"
+  ]
+ ],
+ "inputs": {
+  "idAnIm": {
+   "skeleton": "=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===\n\n{T1}¦ ({T2} {T3}, {T4}) {T5}\n{T87} 1〉 {%jetzt, in diesem Augenblick, nun, in diesem Falle, gerade%} {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13} {T14}. {T15}. {T16} {%wo du gerade Einen stehen siehst%} {T17}. auch mit {T18} von {T19} (wie {T20}): {T21} {T22}. {T23} {T24}. {T25} ({%wenn gerade%}) {T26} {T27}. — {T28} {T29}. {T30} ({%sogleich%}) {T31} {T32}. {T33}. {T34}. {T35}. {T36}. {T37} ({%nun, in diesem Falle%}) {T38} {T39}_zu_{T40}, {T41} {T42} {%so eben%} {T43}. {T44}. {%sogleich%} {T45}. {T46} {%auch jetzt, auch in diesem Falle%} {T47}. {%noch immer%} {T48}. mit [Page1-0797] {T49} verbunden {T50}. {T51}. {T52} {%darauf nun%} {T53}. sehr abgeschwächt ist die {T54} {T55}: {T56} {%nun%} {T57} {%unter diesen Verhältnissen, auch%}. Dieses ist wohl das {T58} {T59} und {T60}\n{T88}— 2〉 ein {T61} als Zeitmaass ist {%der 15te Theil eines%} {T62} {T63}: {T64} (wie von einem {T65} {T66}, weil {T67} keine Nominal-Endung ist). — {T68} {T69} von {T70}, etwa mit Ergänzung von {T71}, und jenes von {T72} wie {T73} von {T74}; {T75} auch {T76}.\n\n=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===\n\n{T77}¦ {T78} {%jetzt, in diesem Augenblick, gerade%}. Mit {T79} {T80} oder {T81} von {T82} wie {T83}. Auch mit {T84} verbunden.\n\n=== LAYER: NWS — Nachtragswörterbuch (Halle, cumulative addendum; condensed \"Kleines Zitat\" — render the new lemma/sense/grammar + keep its sigla) ===\n\nidā́nīm Ved , unsp > Indekl jetzt, gegenwärtig. Geldner 1907 : 28 > idānīm Ved , unsp > e. Begriff aus der Zeiteinteilung; = 1/15 atarhi . ŚB XII,3,2,5 . SIjNS (2) : 357 >\n\n=== LAYER: NWS — PRE-PARSED OWNER MAP (AUTHORITATIVE, 2 entries) ===\n\nDeterministic owner-to-gloss pairing (kills F12). Emit EXACTLY one card row\nper numbered entry below, in this order; copy its [NWS: OWNER] VERBATIM as the\nrow’s last citation; translate the gloss from its own language; keep IAST/sigla.\nDo NOT re-derive owners from the raw fragment above.\n\n 1. [NWS: Geldner 1907 : 28] {T85} [Ved , unsp] Indekl jetzt, gegenwärtig\n 2. [NWS: SIjNS (2) : 357] {T86} [Ved , unsp] e. Begriff aus der Zeiteinteilung; = 1/15 atarhi . ŚB XII,3,2,5",
+   "portrait": "[\n {\n  \"schema_version\": \"pwg_ru.lexicographic_portrait.v1\",\n  \"key1\": \"idAnIm\",\n  \"key2\": \"idA/nIm\",\n  \"h\": \"\",\n  \"iast\": \"idānīm\",\n  \"pos\": [\n   \"adv.\",\n   \"fem.\"\n  ],\n  \"diasystem\": [\n   \"Classical\",\n   \"Epic / early-Classical\",\n   \"Medieval\",\n   \"Vedic\"\n  ],\n  \"labels\": [\n   \"Scholiast or Commentator\",\n   \"accusative (case)\",\n   \"compare\",\n   \"genders / kinds\",\n   \"i.e. id est - that is\",\n   \"meaning\",\n   \"singular\"\n  ],\n  \"senses\": [\n   {\n    \"n\": \"0\",\n    \"sub\": null,\n    \"equivalents_de\": [],\n    \"gloss_de\": \"¦ ( P. 5,3,18, Vārtt. , Sch. ) adv\",\n    \"equivalence_type\": \"explanatory\",\n    \"grammar\": [\n     \"adv.\"\n    ],\n    \"ab_labels\": [\n     \"Scholiast or Commentator\"\n    ],\n    \"diasystem\": [],\n    \"citations\": [\n     \"P\"\n    ],\n    \"citations_resolved\": {\n     \"P\": \"PĀṆINI'S acht Bücher grammatischer Regeln (GILD. Bibl. 244).\"\n    },\n    \"strata\": {},\n    \"examples_sa\": [\n     \"idA/nIm\",\n     \"i/dAnIm\"\n    ]\n   },\n   {\n    \"n\": \"1\",\n    \"sub\": null,\n    \"equivalents_de\": [\n     \"jetzt, in diesem Augenblick, nun, in diesem Falle, gerade\"\n    ],\n    \"gloss_de\": \"1〉 jetzt, in diesem Augenblick, nun, in diesem Falle, gerade NAIGH. 3,28 . P. 5,3,18 . VOP. 7,110 . AK. 3,5,23 . H. 1530 . an. 7,56 . MED. avy. 62 . ṚV. 5,76,3 . 1,35,7 . wo du gerade Einen stehen sie\",\n    \"equivalence_type\": \"explanatory\",\n    \"grammar\": [],\n    \"ab_labels\": [\n     \"genders / kinds\",\n     \"i.e. id est - that is\",\n     \"meaning\"\n    ],\n    \"diasystem\": [\n     \"Classical\",\n     \"Epic / early-Classical\",\n     \"Medieval\",\n     \"Vedic\"\n    ],\n    \"citations\": [\n     \"AK\",\n     \"H\",\n     \"H. an\",\n     \"HIT\",\n     \"MED\",\n     \"MED. avy\",\n     \"NAIGH\",\n     \"P\",\n     \"PAT\",\n     \"R\",\n     \"RAGH\",\n     \"SĀV\",\n     \"VOP\",\n     \"an\",\n     \"ed. Calc\",\n     \"ŚAT. BR\",\n     \"ŚĀK\",\n     \"ṚV\"\n    ],\n    \"citations_resolved\": {\n     \"AK\": \"AMARAKOṢA nach der Ausgabe von COLEBROOKE und LOISELEUR DESLONGCHAMPS (GILD. Bibl. 251. 253).\",\n     \"H\": \"HEMACANDRA'S ABHIDHĀNACINTĀMAṆI, ein systematisch angeordnetes synonymisches Lexicon. Herausgegeben, übersetzt und mit Anmer- kungen begleitet von OTTO BÖHTLINGK und CHARLES RIEU. St. Peters- burg 1847.\",\n     \"H. an\": \"HEMACANDRA'S ANEKĀRTHASAM̃GRAHA, ed. Calc. (GILD. Bibl. 259).\",\n     \"HIT\": \"HITOPADEŚA, ed. SCHLEGEL und LASSEN (GILD. Bibl. 225). Eine darauf folgende römische Zahl bezeichnet das Buch, eine arabische --die Seite; die zweite Zahl bezeichnet dort den Śloka, hier die Zeile.\",\n     \"MED\": \"MEDINĪKOṢA, ed. Calc. (GILD. Bibl. 258). Die Wörter sind zu- nächst nach dem letzten Consonanten im Worte angeordnet: also (k), (kh), (g) u. s. w. Die Partikeln (avyaya) bilden einen besondern Abschnitt am Ende, den wir durch avy. bezeichnet haben.\",\n     \"MED. avy\": \"MEDINĪKOṢA, ed. Calc. (GILD. Bibl. 258). Die Wörter sind zu- nächst nach dem letzten Consonanten im Worte angeordnet: also (k), (kh), (g) u. s. w. Die Partikeln (avyaya) bilden einen besondern Abschnitt am Ende, den wir durch avy. bezeichnet haben.\",\n     \"NAIGH\": \"das, YĀSKA'S NIRUKTA zu Grunde liegende NAIGHAṆṬUKAKĀṆḌA. S. unter NIR.\",\n     \"P\": \"PĀṆINI'S acht Bücher grammatischer Regeln (GILD. Bibl. 244).\",\n     \"PAT\": \"PATAÑJALI, als Verfasser des MAHĀBHĀṢYA; nach Excerpten in BÖHTLINGK'S Ausgabe des PĀṆINI.\",\n     \"R\": \"RĀMĀYAṆA. Ohne eine nähere Angabe ist bei den zwei ersten Büchern die Ausgabe von SCHLEGEL (GILD. Bibl. 84), bei den vier letzten die von GORRESIO (GILD. Bibl. 85) gemeint.\",\n     \"RAGH\": \"RAGHUVAṂŚA, ed. STENZLER (GILD. Bibl. 134).\",\n     \"SĀV\": \"SĀVITRYUPĀKHYĀNA, ed. BOPP (GILD. Bibl. 106).\",\n     \"VOP\": \"VOPADEVA'S Grammatik, nach BÖHTLINGK'S Ausgabe (GILD. Bibl. 249, {%a.%} S. 170).\",\n     \"an\": \"ANEKĀRTHASAM̃GRAHA (s. H. an.).\",\n     \"ed. Calc\": null,\n     \"ŚAT. BR\": \"The ŚATAPATHABRĀHMAṆA in the Mādhyandina-Śākhā, with extracts made from the commentaries of SĀYAṆA, HARISVĀMIN and DVIVEDAGANGA, edited by Dr. ALBRECHT WEBER. Berlin FERD. DÜMM- LER'S Buchhandlung. London WILLIAMS and NORGATE. 1849.\",\n     \"ŚĀK\": \"ŚĀKUNTALA, das Drama in der Ausgabe von BÖHTLINGK (GILD. Bibl. 191). Eine einfache Zahl bezeichnet den Śloka, eine doppelte -- Seite und Zeile.\",\n     \"ṚV\": \"ṚGVEDA. Es wird nach Maṇḍala, Sūkta und Ṛc citirt. ROSEN zu ṚV. verweist auf die Anmerkungen in: Rigveda-Sanhita, liber primus, sanskritè et latinè; edidit FRIDERICUS ROSEN. London 1838.\"\n    },\n    \"strata\": {\n     \"Vedic\": \"Ṛgveda\",\n     \"Classical\": \"Raghuvaṃśa\",\n     \"Epic / early-Classical\": \"Rāmāyaṇa\"\n    },\n    \"examples_sa\": [\n     \"nedAnI^M pI\\\\tira\\\\SvinA ta^tAna\",\n     \"yatre\\\\dAnI\\\\M paSya^si\\\\ tizWa^ntam\",\n     \"ahan\",\n     \"idA\"\n    ]\n   },\n   {\n    \"n\": \"2\",\n    \"sub\": null,\n    \"equivalents_de\": [\n     \"der 15te Theil eines\"\n    ],\n    \"gloss_de\": \"2〉 ein als Zeitmaass ist der 15te Theil eines ŚAT. BR. 12,3,2,5 : (wie von einem sg. , weil keine Nominal-Endung ist). — acc. fem. von , etwa mit Ergänzung von , und jenes von wie von ; vgl. auch\",\n    \"equivalence_type\": \"explanatory\",\n    \"grammar\": [\n     \"fem.\"\n    ],\n    \"ab_labels\": [\n     \"accusative (case)\",\n     \"compare\",\n     \"singular\"\n    ],\n    \"diasystem\": [\n     \"Vedic\"\n    ],\n    \"citations\": [\n     \"ŚAT. BR\"\n    ],\n    \"citations_resolved\": {\n     \"ŚAT. BR\": \"The ŚATAPATHABRĀHMAṆA in the Mādhyandina-Śākhā, with extracts made from the commentaries of SĀYAṆA, HARISVĀMIN and DVIVEDAGANGA, edited by Dr. ALBRECHT WEBER. Berlin FERD. DÜMM- LER'S Buchhandlung. London WILLIAMS and NORGATE. 1849.\"\n    },\n    \"strata\": {},\n    \"examples_sa\": [\n     \"idAnIm\",\n     \"etarhi\",\n     \"yAvantyetarhIRi tAvanti paYcadaSakftva idAnIni\",\n     \"idAni\"\n    ]\n   }\n  ],\n  \"corpus_synonyms\": {\n   \"n\": 103,\n   \"by_stratum\": {\n    \"Vedic\": [\n     \"теперь\"\n    ],\n    \"Epic / early-Classical\": [\n     \"теперь\",\n     \"затем\",\n     \"сейчас\"\n    ],\n    \"Classical\": [\n     \"теперь\",\n     \"отныне\"\n    ],\n    \"Medieval\": [\n     \"теперь\"\n    ]\n   },\n   \"candidates\": [\n    \"теперь\",\n    \"сейчас\",\n    \"теперь же\",\n    \"ныне\",\n    \"недавно\",\n    \"немного\",\n    \"сегодня\",\n    \"почему\",\n    \"вечером\",\n    \"когда же\",\n    \"нынче\",\n    \"сейчас/теперить\"\n   ]\n  }\n }\n]",
+   "ls": 35,
+   "sk": 38,
+   "senses": 2,
+   "source_senses": 2,
+   "nws": 1
+  },
+  "prasU": {
+   "skeleton": "=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===\n\n{T1}¦ ({T2} mit {T3}) {T4}, {T5}\n{T63} 1〉 {T6} {%gebärend, fruchttragend, fruchtbar%}: {T7} {T8}. {T9}. {T10} {T11}. {T12}. {T13} {T14}. {T15} {%Töchter gebärend%} {T16}. {T17} so {T18} {%für jegliche Wohlfahrt sorgend%} {T19}. {T20} {%unfruchtbar%} {T21}.\n{T64}— 2〉 {T22}\n{T65} a〉 {%Mutter%} {T23}. {T24}. {T25}. {T26}. {T27} in {T28}. {T29}.\n{T66}— b〉 {%Stute%} {T30}. {T31}. {T32} {T33}\n{T67}— c〉 {%Schoss; junges Gras und Kraut; das beim Opfer gebrauchte, mit Blüthenähren versehene Gras%}: {T34} {T35}. {T36} {T37}. {T38}. {T39}. {T40} {T41}. {T42}. {T43}. {T44}. {T45} {T46}. = {T47} {%eine kriechende Pflanze%} und = {T48} ({%Pisang%} {T49}) {T50}\n{T68}— {T51} {T52}.\n\n=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===\n\n{T53}¦\n{T69}— 1〉 {T54}\n{T70}— a〉 {%gebärend, fruchttragend, fruchtbar%}. {T55} {%Töchter gebärend%}.\n{T71}— b〉 {%Etwas%} (im {T56} vorangehend) {%erzeugend,%} so {T57} {%sorgend für%}.\n{T72}— 2〉 {T58}\n{T73}— a〉 {%Mutter%}.\n{T74}— b〉 *{%Stute%}.\n{T75}— c〉 {%Schoss, junges Gras und Kraut, das beim Opfer gebrauchte, mit Blüthenähren versehene Gras%}.\n\n=== LAYER: NWS — Nachtragswörterbuch (Halle, cumulative addendum; condensed \"Kleines Zitat\" — render the new lemma/sense/grammar + keep its sigla) ===\n\nprasū́ Gen , unsp > Subst f a spreading creeper, the plantain. Lex(MW) . MW : 698 > Ved , unsp > Adj mfn gebärend. Leibesfrucht tragend, fruchtbar. [ auch bildlich von den Wassern. ] Subst f Mutter als die gebärende. [ auch bildlich von den Holzstücken, aus denen Agni geboren wird und in die er stets aufs Neue eingeht. ] die Blüthenähren oder die blühenden Gräser welche beim Opfer gebraucht werden. Graßmann 1873 (1996) : 884 > Ved , unsp > sprouting grass. ṚV I,67,9 . Vedic Hymns II : 457 > Ved , unsp > gebärend. ṚV 10,138,2 . (fruchtbringende) Blüten tragend. ṚV 2,13,7 . Geldner 1907 : 119 > , Geldner 1907 (N) : 233 > Ved , unsp > Subst f blühende Pflanze. ṚV 1,95,10 . Geldner 1907 (N) : 233 > sū (=pw sū 1) + pra : a) urge, incite, impel, bid, command; b) to allow, give up to, deliver. ṚV , AV . Gen , unsp ; MW : 698 (s.v. prasū ) > sū (=pw sū 3) + pra : „ agnim prācīhiḥ saṃpracchādayati ; anujānāti “. Ved , unsp ; Renou 1935 : 3 (s.v. prasū -) > prasūti Gen , unsp > Subst f a production, product (of plants or animals). Mbh . N of a daughter of Manu and wife of Dakṣa. P(MW) . MW : 698 (s.v. prasū́ ) > su (=pw su 4) + pra ( prasūna ): born, produced (= - sūta or jāta ). Lex(MW) . Gen , unsp ; MW : 698 (s.v. prasū́ ) >\n\n=== LAYER: NWS — PRE-PARSED OWNER MAP (AUTHORITATIVE, 8 entries) ===\n\nDeterministic owner-to-gloss pairing (kills F12). Emit EXACTLY one card row\nper numbered entry below, in this order; copy its [NWS: OWNER] VERBATIM as the\nrow’s last citation; translate the gloss from its own language; keep IAST/sigla.\nDo NOT re-derive owners from the raw fragment above.\n\n 1. [NWS: MW : 698] {T59} [Gen , unsp] Subst f a spreading creeper, the plantain. Lex(MW)\n 2. [NWS: Graßmann 1873 (1996) : 884] [Ved , unsp] Adj mfn gebärend. Leibesfrucht tragend, fruchtbar. [ auch bildlich von den Wassern. ] Subst f Mutter als die gebärende. [ auch bildlich von den Holzstücken, aus denen Agni geboren wird und in die er stets aufs Neue eingeht. ] die Blüthenähren oder die blühenden Gräser welche beim Opfer gebraucht werden\n 3. [NWS: Vedic Hymns II : 457] [Ved , unsp] sprouting grass. ṚV I,67,9\n 4. [NWS: Geldner 1907 : 119 / Geldner 1907 (N) : 233] [Ved , unsp] gebärend. ṚV 10,138,2 . (fruchtbringende) Blüten tragend. ṚV 2,13,7\n 5. [NWS: Geldner 1907 (N) : 233] [Ved , unsp] Subst f blühende Pflanze. ṚV 1,95,10\n 6. [NWS: Renou 1935 : 3 (s.v. prasū -)] {T60} [Gen , unsp (s.v. prasū )] sū (=pw sū 3) + pra : „ agnim prācīhiḥ saṃpracchādayati ; anujānāti “. Ved , unsp\n 7. [NWS: MW : 698 (s.v. prasū́)] {T61} [Gen , unsp] Subst f a production, product (of plants or animals). Mbh . N of a daughter of Manu and wife of Dakṣa. P(MW) . MW : 698 (s.v. prasū́ )\n 8. [NWS: ?] {T62} [Gen , unsp (s.v. prasū́ )] ",
+   "portrait": "[\n {\n  \"schema_version\": \"pwg_ru.lexicographic_portrait.v1\",\n  \"key1\": \"prasU\",\n  \"key2\": \"prasU/\",\n  \"h\": \"\",\n  \"iast\": \"prasū\",\n  \"pos\": [\n   \"adj.\",\n   \"f.\"\n  ],\n  \"diasystem\": [\n   \"Classical\",\n   \"Medieval\",\n   \"Vedic\"\n  ],\n  \"labels\": [\n   \"Scholiast or Commentator\",\n   \"above all, especially\",\n   \"compare\",\n   \"inscription\"\n  ],\n  \"senses\": [\n   {\n    \"n\": \"0\",\n    \"sub\": null,\n    \"equivalents_de\": [],\n    \"gloss_de\": \"¦ ( mit ) P. 3,2,61 , Sch\",\n    \"equivalence_type\": \"explanatory\",\n    \"grammar\": [],\n    \"ab_labels\": [\n     \"Scholiast or Commentator\"\n    ],\n    \"diasystem\": [],\n    \"citations\": [\n     \"P\"\n    ],\n    \"citations_resolved\": {\n     \"P\": \"PĀṆINI'S acht Bücher grammatischer Regeln (GILD. Bibl. 244).\"\n    },\n    \"strata\": {},\n    \"examples_sa\": [\n     \"prasU/\",\n     \"sU\",\n     \"pra\"\n    ]\n   },\n   {\n    \"n\": \"1\",\n    \"sub\": null,\n    \"equivalents_de\": [\n     \"gebärend, fruchttragend, fruchtbar\"\n    ],\n    \"gloss_de\": \"1〉 adj. gebärend, fruchttragend, fruchtbar: AV. 2,23,4 . VS. 18,7 . ṚV. 10,138,2 . 1,67,9 . 2,13,7 . Töchter gebärend YĀJÑ. 1,73 . so v. a. für jegliche Wohlfahrt sorgend RĀJA-TAR. 1,77 . unfruchtbar \",\n    \"equivalence_type\": \"explanatory\",\n    \"grammar\": [\n     \"adj.\"\n    ],\n    \"ab_labels\": [\n     \"above all, especially\"\n    ],\n    \"diasystem\": [\n     \"Classical\",\n     \"Medieval\",\n     \"Vedic\"\n    ],\n    \"citations\": [\n     \"AV\",\n     \"RĀJA-TAR\",\n     \"SUŚR\",\n     \"VS\",\n     \"YĀJÑ\",\n     \"ṚV\"\n    ],\n    \"citations_resolved\": {\n     \"AV\": \"ATHARVAVEDASAM̃HITĀ, herausg. von R. ROTH und W. D. WHITNEY. Berlin bei F. DÜMMLER. 1855. 8º. In den ersten Bogen des Wörter- buchs finden sich mehrere Citate, deren Zahlen mit der in der Aus- gabe angenommenen Zählung nicht ganz zusammentreffen. Man kann den Unterschied dadurch ausgleichen, dass man in den zusammen- gesetzten Liedern (Paryāyasūkta), welche in der Ausgabe als Ein- heiten gezählt sind, die Unterabtheilungen (Strophen) als besondere Lieder zählt.\",\n     \"RĀJA-TAR\": \"RĀJATARAṄGIṆĪ, ed. TROYER (GILD. Bibl. 148) für die 6 ersten Taram̃ga's; für die folgenden die Calc. Ausg. (GILD. Bibl. 147).\",\n     \"SUŚR\": \"SUŚRUTA, ed. Calc. (GILD. Bibl. 367); citirt nach Band, Seite und Zeile. Den Titel der HESSLER'schen Uebersetzung s. bei GILD. Bibl. 368.\",\n     \"VS\": \"VĀJASANEYISAM̃HITĀ. The VĀYASANEYI-SANHITĀ in the MĀDHYANDINA -- and the KĀṆVA-ŚĀKHĀ with the commentary of MAHĪDHARA, edited by Dr. ALBRECHT WEBER. Berlin Ferd. Dümmler's Verlagṣandlung. London Williams and Norgate. 1852. 4º.\",\n     \"YĀJÑ\": \"YĀJÑAVALKYA'S Gesetzbuch. Sanskrit und Deutsch herausge- geben von Dr. ADOLPH FRIEDRICH STENZLER. Berlin und London 1849.\",\n     \"ṚV\": \"ṚGVEDA. Es wird nach Maṇḍala, Sūkta und Ṛc citirt. ROSEN zu ṚV. verweist auf die Anmerkungen in: Rigveda-Sanhita, liber primus, sanskritè et latinè; edidit FRIDERICUS ROSEN. London 1838.\"\n    },\n    \"strata\": {\n     \"Vedic\": \"Ṛgveda\"\n    },\n    \"examples_sa\": [\n     \"sA pra\\\\sUrDenu^kA Bava\",\n     \"avA^sfjaH pra\\\\sva^H Sva\\\\Ycayo^ gi\\\\rIn\",\n     \"pu\\\\zpiRI^Sca pra\\\\sva^Sca\",\n     \"strI˚\"\n    ]\n   },\n   {\n    \"n\": \"2\",\n    \"sub\": null,\n    \"equivalents_de\": [],\n    \"gloss_de\": \"2〉 f\",\n    \"equivalence_type\": \"explanatory\",\n    \"grammar\": [\n     \"f.\"\n    ],\n    \"ab_labels\": [],\n    \"diasystem\": [],\n    \"citations\": [],\n    \"citations_resolved\": {},\n    \"strata\": {},\n    \"examples_sa\": []\n   },\n   {\n    \"n\": \"2\",\n    \"sub\": \"a\",\n    \"equivalents_de\": [\n     \"Mutter\"\n    ],\n    \"gloss_de\": \"a〉 Mutter AK. 2,6,1,29 . H. 557 . an. 2,585 . MED. s. 4 . Inschr. in Journ. of the Am. Or. S. 6,507, Śl. 27 . TRIK. 1,1,33\",\n    \"equivalence_type\": \"equivalent\",\n    \"grammar\": [],\n    \"ab_labels\": [\n     \"inscription\"\n    ],\n    \"diasystem\": [],\n    \"citations\": [\n     \"AK\",\n     \"H\",\n     \"Journ. of the Am\",\n     \"MED. s\",\n     \"TRIK\",\n     \"an\"\n    ],\n    \"citations_resolved\": {\n     \"AK\": \"AMARAKOṢA nach der Ausgabe von COLEBROOKE und LOISELEUR DESLONGCHAMPS (GILD. Bibl. 251. 253).\",\n     \"H\": \"HEMACANDRA'S ABHIDHĀNACINTĀMAṆI, ein systematisch angeordnetes synonymisches Lexicon. Herausgegeben, übersetzt und mit Anmer- kungen begleitet von OTTO BÖHTLINGK und CHARLES RIEU. St. Peters- burg 1847.\",\n     \"Journ. of the Am\": null,\n     \"MED. s\": \"MEDINĪKOṢA, ed. Calc. (GILD. Bibl. 258). Die Wörter sind zu- nächst nach dem letzten Consonanten im Worte angeordnet: also (k), (kh), (g) u. s. w. Die Partikeln (avyaya) bilden einen besondern Abschnitt am Ende, den wir durch avy. bezeichnet haben.\",\n     \"TRIK\": \"TRIKĀṆḌAŚEṢA, ed. Calc. (GILD. Bibl. 258).\",\n     \"an\": \"ANEKĀRTHASAM̃GRAHA (s. H. an.).\"\n    },\n    \"strata\": {},\n    \"examples_sa\": []\n   },\n   {\n    \"n\": \"2\",\n    \"sub\": \"b\",\n    \"equivalents_de\": [\n     \"Stute\"\n    ],\n    \"gloss_de\": \"b〉 Stute AK. 3,4,30,231 . H. 1233 . H. an. MED\",\n    \"equivalence_type\": \"equivalent\",\n    \"grammar\": [],\n    \"ab_labels\": [],\n    \"diasystem\": [],\n    \"citations\": [\n     \"AK\",\n     \"H\",\n     \"H. an\",\n     \"MED\"\n    ],\n    \"citations_resolved\": {\n     \"AK\": \"AMARAKOṢA nach der Ausgabe von COLEBROOKE und LOISELEUR DESLONGCHAMPS (GILD. Bibl. 251. 253).\",\n     \"H\": \"HEMACANDRA'S ABHIDHĀNACINTĀMAṆI, ein systematisch angeordnetes synonymisches Lexicon. Herausgegeben, übersetzt und mit Anmer- kungen begleitet von OTTO BÖHTLINGK und CHARLES RIEU. St. Peters- burg 1847.\",\n     \"H. an\": \"HEMACANDRA'S ANEKĀRTHASAM̃GRAHA, ed. Calc. (GILD. Bibl. 259).\",\n     \"MED\": \"MEDINĪKOṢA, ed. Calc. (GILD. Bibl. 258). Die Wörter sind zu- nächst nach dem letzten Consonanten im Worte angeordnet: also (k), (kh), (g) u. s. w. Die Partikeln (avyaya) bilden einen besondern Abschnitt am Ende, den wir durch avy. bezeichnet haben.\"\n    },\n    \"strata\": {},\n    \"examples_sa\": []\n   },\n   {\n    \"n\": \"2\",\n    \"sub\": \"c\",\n    \"equivalents_de\": [\n     \"Schoss; junges Gras und Kraut; das beim Opfer gebrauchte, mit Blüthenähren versehene Gras\"\n    ],\n    \"gloss_de\": \"c〉 Schoss; junges Gras und Kraut; das beim Opfer gebrauchte, mit Blüthenähren versehene Gras: ṚV. 1,95,10 . 7,9,3 . 8,6,20 . 3,5,8 . 7,35,7 . TBR. 1,6,3,2 . ŚAT. BR. 2,5,1,18 . KĀṬH. 36,2 . KĀTY. ŚR. \",\n    \"equivalence_type\": \"explanatory\",\n    \"grammar\": [],\n    \"ab_labels\": [\n     \"compare\"\n    ],\n    \"diasystem\": [\n     \"Vedic\"\n    ],\n    \"citations\": [\n     \"KĀTY. ŚR\",\n     \"KĀṬH\",\n     \"MED\",\n     \"TBR\",\n     \"WILS\",\n     \"ŚAT. BR\",\n     \"ṚV\"\n    ],\n    \"citations_resolved\": {\n     \"KĀTY. ŚR\": \"KĀTYĀYANA'S ŚRAUTASŪTRĀṆI. 26 Adhyāya. Hdschr.\",\n     \"KĀṬH\": \"KĀṬHAKA-Recension des YĀJ. V.\",\n     \"MED\": \"MEDINĪKOṢA, ed. Calc. (GILD. Bibl. 258). Die Wörter sind zu- nächst nach dem letzten Consonanten im Worte angeordnet: also (k), (kh), (g) u. s. w. Die Partikeln (avyaya) bilden einen besondern Abschnitt am Ende, den wir durch avy. bezeichnet haben.\",\n     \"TBR\": \"TAITTIRĪYABRĀHMAṆA.\",\n     \"WILS\": \"WILSON'S Wörterbuch (GILD. Bibl. 37).\",\n     \"ŚAT. BR\": \"The ŚATAPATHABRĀHMAṆA in the Mādhyandina-Śākhā, with extracts made from the commentaries of SĀYAṆA, HARISVĀMIN and DVIVEDAGANGA, edited by Dr. ALBRECHT WEBER. Berlin FERD. DÜMM- LER'S Buchhandlung. London WILLIAMS and NORGATE. 1849.\",\n     \"ṚV\": \"ṚGVEDA. Es wird nach Maṇḍala, Sūkta und Ṛc citirt. ROSEN zu ṚV. verweist auf die Anmerkungen in: Rigveda-Sanhita, liber primus, sanskritè et latinè; edidit FRIDERICUS ROSEN. London 1838.\"\n    },\n    \"strata\": {\n     \"Vedic\": \"Ṛgveda\"\n    },\n    \"examples_sa\": [\n     \"a\\\\ntarnavA^su carati pra\\\\sUzu^\",\n     \"a\\\\pAM garBa^H pra\\\\sva1^\\\\ A vi^veSa\",\n     \"SaM na^H pra\\\\sva1^\\\\H Samba^stu\\\\ vedi^H\",\n     \"kuSa˚\"\n    ]\n   }\n  ],\n  \"corpus_synonyms\": {\n   \"n\": 6,\n   \"by_stratum\": {\n    \"Vedic\": [\n     \"побег\",\n     \"побуждать\"\n    ],\n    \"Epic / early-Classical\": [\n     \"родиться\",\n     \"речь идет\"\n    ]\n   },\n   \"candidates\": [\n    \"побег\",\n    \"побуждать\",\n    \"появляться на свет\",\n    \"сотворить\",\n    \"родиться\",\n    \"речь идет\"\n   ]\n  }\n }\n]",
+   "ls": 30,
+   "sk": 22,
+   "senses": 12,
+   "source_senses": 2,
+   "nws": 1
+  },
+  "rAtra": {
+   "skeleton": "=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===\n\n{T1}¦ {T2} = {T3} {%Nacht%}; selbständig nur in der Stelle {T4} {T5} und bei der künstlichen Erklärung von {T6} {T7}: {T8} Am Ende eines {T9} ist {T10} der regelmässige Vertreter von {T11} {T12}. {T13}. {T14}. {T15}. {T16} {%am Ende der Nacht%} {T17}. {T18}. {T19} (so {T20} {T21} {T22}) {T23} {T24}. {T25}. {T26} {T27} {T28}. {T29}. {T30} {T31}. {T32} ({T33}) {T34} {T35}. {T36} {T37} {%drei Tage hindurch%} {T38}. {T39}. {T40} {T41}. {T42} {%zehn Nächte hindurch%} {T43}. {T44} {T45} {%einige Nächte hindurch%} {T46}. {T47} {T48}, {T49} {T50} {%nicht Tag noch Nacht%} {T51}. {T52} {T53} {%am Tage und in der Nacht%} {T54}. {T55}. {T56}. {T57}. {T58}. Nach {T59} ist ein auf {T60} ausgehendes {T61} stets {T62}, nach Andern aber nur dann, wenn kein Zahlwort vorhergeht, {T63}. {T64} zu {T65} {T66}. {T67}\n{T82}— {T68} {T69}. {T70} {T71}\n\n=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===\n\n{T72}¦ {T73}\n{T83}— 1〉 {%Nacht%}. Nur einmal im {T74} Am Ende eines {T75} {T76} oder {T77} der regelmässige Vertreter von {T78} oder {T79}.\n{T84}— 2〉 angeblich = {T80} in {T85}2.{T86} {T81} 2〉b〉.",
+   "portrait": "[\n {\n  \"schema_version\": \"pwg_ru.lexicographic_portrait.v1\",\n  \"key1\": \"rAtra\",\n  \"key2\": \"rAtra\",\n  \"h\": \"\",\n  \"iast\": \"rātra\",\n  \"pos\": [\n   \"adv.\",\n   \"m.\",\n   \"n.\"\n  ],\n  \"diasystem\": [\n   \"Classical\",\n   \"Epic / early-Classical\"\n  ],\n  \"labels\": [\n   \"Scholiast or Commentator\",\n   \"above all, especially\",\n   \"accusative (case)\",\n   \"and so on, and so forth = etc.\",\n   \"commentary\",\n   \"compare\",\n   \"compound\",\n   \"masculine\",\n   \"the passage\"\n  ],\n  \"senses\": [\n   {\n    \"n\": \"1\",\n    \"sub\": null,\n    \"equivalents_de\": [\n     \"Nacht\"\n    ],\n    \"gloss_de\": \"¦ n. = Nacht; selbständig nur in der Stelle MBH. 13,6230 und bei der künstlichen Erklärung von PAÑCAR. 1,1,44 : Am Ende eines comp. ist der regelmässige Vertreter von P. 5,4,87 . VOP. 6,46 . 51 . 57 .\",\n    \"equivalence_type\": \"equivalent\",\n    \"grammar\": [\n     \"n.\",\n     \"m.\",\n     \"adv.\"\n    ],\n    \"ab_labels\": [\n     \"Scholiast or Commentator\",\n     \"above all, especially\",\n     \"accusative (case)\",\n     \"and so on, and so forth = etc.\",\n     \"commentary\",\n     \"compare\",\n     \"compound\",\n     \"masculine\",\n     \"the passage\"\n    ],\n    \"diasystem\": [\n     \"Classical\",\n     \"Epic / early-Classical\"\n    ],\n    \"citations\": [\n     \"AK\",\n     \"M\",\n     \"MBH\",\n     \"P\",\n     \"PAÑCAR\",\n     \"PAÑCAT\",\n     \"R\",\n     \"SIDDH. K\",\n     \"VOP\",\n     \"ŚĀK\"\n    ],\n    \"citations_resolved\": {\n     \"AK\": \"AMARAKOṢA nach der Ausgabe von COLEBROOKE und LOISELEUR DESLONGCHAMPS (GILD. Bibl. 251. 253).\",\n     \"M\": \"MANU'S Gesetzbuch in der Ausg. von LOISELEUR DESLONGCHAMPS (GILD. Bibl. 289).\",\n     \"MBH\": \"MAHĀBHĀRATA, ed. Calc. (GILD. Bibl. 93). Von S. 521 des Wörter- buchs sind die drei ersten Bücher, von S. 601 auch die fünf letzten, von an auch das 13te Buch ausgebeutet worden.\",\n     \"P\": \"PĀṆINI'S acht Bücher grammatischer Regeln (GILD. Bibl. 244).\",\n     \"PAÑCAR\": \"PAÑCARATNA ? [Cologne Addition]\",\n     \"PAÑCAT\": \"PAÑCATANTRA. Pantschatantrum sive quinquepartitum de moribus exponens, ex codicibus manuscriptis edidit, commentariis criticis auxit IO. GODOFR. LUDOV. KOSEGARTEN. Pars prima, textum sanscritum simpliciorem tenens. Bonnae ad Rhenum 1848. 8º. Eine darauf folgende römische Zahl bezeichnet das Buch, eine arabische -- die Seite; die zweite Zahl bezeichnet hier die Zeile, dort den Śloka.\",\n     \"R\": \"RĀMĀYAṆA. Ohne eine nähere Angabe ist bei den zwei ersten Büchern die Ausgabe von SCHLEGEL (GILD. Bibl. 84), bei den vier letzten die von GORRESIO (GILD. Bibl. 85) gemeint.\",\n     \"SIDDH. K\": \"SIDDHĀNTAKAUMUDĪ, die Calc. Ausg. in 4º (GILD. Bibl. 245).\",\n     \"VOP\": \"VOPADEVA'S Grammatik, nach BÖHTLINGK'S Ausgabe (GILD. Bibl. 249, {%a.%} S. 170).\",\n     \"ŚĀK\": \"ŚĀKUNTALA, das Drama in der Ausgabe von BÖHTLINGK (GILD. Bibl. 191). Eine einfache Zahl bezeichnet den Śloka, eine doppelte -- Seite und Zeile.\"\n    },\n    \"strata\": {\n     \"Epic / early-Classical\": \"Rāmāyaṇa\"\n    },\n    \"examples_sa\": [\n     \"rAtra\",\n     \"rAtrI\",\n     \"trIRi rAtrARi\",\n     \"paYcarAtra\"\n    ]\n   }\n  ],\n  \"corpus_synonyms\": {\n   \"n\": 11,\n   \"by_stratum\": {\n    \"Epic / early-Classical\": [\n     \"ночь\"\n    ]\n   },\n   \"candidates\": [\n    \"ночь\",\n    \"стражу ночи\",\n    \"время\"\n   ]\n  }\n }\n]",
+   "ls": 32,
+   "sk": 30,
+   "senses": 4,
+   "source_senses": 2,
+   "nws": 0
+  },
+  "spfS": {
+   "skeleton": "=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===\n\n√{T1}¦ (von {T2})\n{T77} 1〉 {T3} am Ende eines {T4} {T5}. Declination {T6}. {T7}.\n{T78} a〉 {%berührend%}: {T8} {T9}. {T10}. {T11}. {T12}. {T13} {T14}. {T15} (so {T16} {%Mensch%}) {T17}. {T18} {T19}. {T20} {T21}. {T22}.\n{T79}— b〉 {%berührend%} so {T23} {%reichend bis%}: {T24} {T25}. {T26} {T27}. {T28}.\n{T80}— c〉 {%erreichend%} so {T29} {%theilhaftig, an sich erfahrend, zeigend, verrathend%}: {T30} {T31}. {T32} {T33}. {T34}. {T35} (so zu verbinden) {T36} {T37} {T38}. {T39} {T40}. {T41} {T42}. {T43}. {T44} (so mit der {T45} zu lesen) {T46} {T47}. {T48} {T49}.\n{T81}— 2〉 {T50} = {T51} {T52}.\n{T82}— {T53} {T54}.\n\n=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===\n\n{T55}¦\n{T83}— 1〉 {T56} am Ende eines {T57} ({T58} {T59})\n{T84}— a〉 {%berührend%}.\n{T85}— b〉 {%berührend,%} so {T60} {%reichend bis%}.\n{T86}— c〉 {%erreichend,%} so {T61} {%theilhaftig, an sich erfahrend, zeigend, verrathend%} {T62}.\n{T87}— 2〉 {T63} = {T64} {T65} (= {T66}).\n\n=== LAYER: NWS — Nachtragswörterbuch (Halle, cumulative addendum; condensed \"Kleines Zitat\" — render the new lemma/sense/grammar + keep its sigla) ===\n\nspṛś Gen , unsp > ( spṛśáti VI P ) feel with the hand, lay the hand on (acc or loc), graze, stroke. ṚV . to handle, take hold of ( anyo ’nyaṃ hastau spṛśataḥ : they mutually touch or shake hands). Mbh , Kāvya(MW) . to touch so as to hurt, injure, harm. Kathās . to come up to, equal (acc; with girā : to equal with words, i.e. ‘to be able to describe’). Kāvya(MW) . to act upon, affect. SDS , BhāgP . to touch i.e. endow or fill with (instr). ṚV iv, 3, 15 . to touch i.e. befall, fall to the lot of, come upon, visit, afflict (acc). ChU , Mbh , Kāvya(MW) . Pass ( spṛśyate ): to be touched or seized or affected by. Mbh . Caus ( sparśayati , ° te ): to convey to (loc); to fill or cover with (instr). ṚV . MW : 1268 > Ved , unsp > berühren (Lok, Akk). [ auch in bildlichem Sinne. ] kosend berühren, liebend umfassen (Lok, Akk), vgl ṛtaspṛ́ś . heranreichen an, erreichen, erlangen (Akk). Kaus: etwas (Akk) womit (Instr, Lok) in Berührung setzen. Graßmann 1873 (1996) : 1610 > Ved , unsp > ( VI ) berühren, rühren an. Windisch 1883 : 164 > Ved , unsp > ( VI ) berühren, reichen bis; dringen zu, rühren (+ Lok). ṚV 10,70,5 , ṚV 4,41,1 . Geldner 1907 : 206 > Ved , unsp > Kaus: „remarquer“. MānŚS Ed, p. 136 . Renou 1935 : 56 > + anu : fassen, zugreifen. ṚV 4,4,2 . Ved , unsp ; Geldner 1907 : 206 > + ánu : engangeschlossen folgen. Ved , unsp ; Graßmann 1873 (1996) : 1610 > + apa : (° spṛṣṭa , ppp.) smitten (with affection). Gv 326.7 . Buddh , unsp ; BHSD : 46 (s.v. apaspṛṣṭa ) > + ud : erreichen, hinaufreichen zu (Akk). AV 5,19,1 . Ved , unsp ; Hillebrandt 1885 : 127 > + upa : ( apaḥ ) sich waschen. Ved , unsp ; Windisch 1883 : 164 > – berühren, reichen bis. ṚV 10,125,7 . Ved , unsp ; Geldner 1907 : 206 > + úpa : berühren, heranreichen an (Akk) mit (Instr). Ved , unsp ; Graßmann 1873 (1996) : 1610 > + upári : emporragen, in uparispṛ́ś . Ved , unsp ; Graßmann 1873 (1996) : 1610 > + ni : rühren an, reichen an, dringen zu (Lok). ṚV 8,96,11 . Ved , unsp ; Geldner 1907 : 206 > + ní : 1) schmeichelnd berühren (Lok) mit (Instr); bildlich 2) liebkosend berühren (Lok). Ved , unsp ; Graßmann 1873 (1996) : 1610 > + vi ( visparśati ): mishandles, maltreats. Śikṣās 182.11 . Buddh , unsp ; BHSD : 504 (s.v. visparśati ) > + sam : (with or without salilam , apas ) to touch water, sprinkle, wash. Mbh , R . Gen , unsp ; MW : 1122 (s.v. saṃspṛś ) > – salben. TĀr(Sā) VI 10, 2 (8) zu ṚV X 18, 7 . Ved , unsp ; Windisch 1883 : 164 > – ( saṃspṛṣṭa ): lit. formed by combination or compact ; the term is used in the Prātiśākhyas for diphthongs which are combinations of two vowels which are completely mixed being produced with a single effort. Śā , Ling ; Abhyankar 1986 : 410 (s.v. saṃspṛṣṭa ) > – (° spṛśati ): wipes away, removes (?), or perh. (as in Skt.) comes in contact with, or (PW s.v. 6) masters, gets the better of. Mvu i.359.2, 6 (vss; so mss) . Buddh , unsp ; BHSD : 543 (s.v. saṃspṛśati ) > + sam ( sáṃspṛṣṭa ): a) closely united with (instr. or comp.), mixed, combined, contiguous; b) reached, attained; c) (ifc.) defiled by. TSaṃ , Kathās , SDS . Gen , unsp ; MW : 1122 (s.v. sáṃspṛṣṭa ) > + samabhi : touch. Hoernle 1893-1912 (I) 3.22 . Śā , Med ; Hoernle 1908 : 334 (s.v. sam - abhi - spṛś ) > Gen , unsp > [ spṛṣṭa ] touched, felt with the hand, handled. AV . affected or afflicted or possessed by (instr. or comp.). Mbh , Kāvya(MW) . defiled. (in gram.) formed by complete contact of the organs of utterance. Prā(MW) . [ applied to all consonants except semivowels [called īṣatspṛṣṭa : formed by slight contact] and except sibilants and h , which are called ardhaspṛṣṭa : formed by half-contact. ] MW : 1269 (s.v. spṛṣṭa ) > Buddh , unsp > [ sparśita , ppp. of caus.] lit. made to touch, i.e. closed, of door-bolts. Divyāv 559.12 . BHSD : 612 (s.v. sparśita ) > spṛṣṭavya Ep , unsp > Adj mfn [pnec] to be touched. R IV.33.55 . from spṛś . Sen 1951 : 60 (s.v. spṛś ) >\n\n=== LAYER: NWS — PRE-PARSED OWNER MAP (AUTHORITATIVE, 16 entries) ===\n\nDeterministic owner-to-gloss pairing (kills F12). Emit EXACTLY one card row\nper numbered entry below, in this order; copy its [NWS: OWNER] VERBATIM as the\nrow’s last citation; translate the gloss from its own language; keep IAST/sigla.\nDo NOT re-derive owners from the raw fragment above.\n\n 1. [NWS: MW : 1268] {T67} [Gen , unsp] ( spṛśáti VI P ) feel with the hand, lay the hand on (acc or loc), graze, stroke. ṚV . to handle, take hold of ( anyo ’nyaṃ hastau spṛśataḥ : they mutually touch or shake hands). Mbh , Kāvya(MW) . to touch so as to hurt, injure, harm. Kathās . to come up to, equal (acc; with girā : to equal with words, i.e. ‘to be able to describe’). Kāvya(MW) . to act upon, affect. SDS , BhāgP . to touch i.e. endow or fill with (instr). ṚV iv, 3, 15 . to touch i.e. befall, fall to the lot of, come upon, visit, afflict (acc). ChU , Mbh , Kāvya(MW) . Pass ( spṛśyate ): to be touched or seized or affected by. Mbh . Caus ( sparśayati , ° te ): to convey to (loc); to fill or cover with (instr). ṚV\n 2. [NWS: Graßmann 1873 (1996) : 1610] [Ved , unsp] berühren (Lok, Akk). [ auch in bildlichem Sinne. ] kosend berühren, liebend umfassen (Lok, Akk), vgl ṛtaspṛ́ś . heranreichen an, erreichen, erlangen (Akk). Kaus: etwas (Akk) womit (Instr, Lok) in Berührung setzen\n 3. [NWS: Windisch 1883 : 164] [Ved , unsp] ( VI ) berühren, rühren an\n 4. [NWS: Geldner 1907 : 206] [Ved , unsp] ( VI ) berühren, reichen bis; dringen zu, rühren (+ Lok). ṚV 10,70,5 , ṚV 4,41,1\n 5. [NWS: Renou 1935 : 56] [Ved , unsp] Kaus: „remarquer“. MānŚS Ed, p. 136\n 6. [NWS: Graßmann 1873 (1996) : 1610] {T68} [Ved , unsp] + ánu : engangeschlossen folgen. Ved , unsp\n 7. [NWS: Hillebrandt 1885 : 127] {T69} [Buddh , unsp (s.v. apaspṛṣṭa )] + ud : erreichen, hinaufreichen zu (Akk). AV 5,19,1 . Ved , unsp\n 8. [NWS: Geldner 1907 : 206] {T70} [Ved , unsp] – berühren, reichen bis. ṚV 10,125,7 . Ved , unsp\n 9. [NWS: Graßmann 1873 (1996) : 1610] {T71} [Ved , unsp] + upári : emporragen, in uparispṛ́ś . Ved , unsp\n10. [NWS: Graßmann 1873 (1996) : 1610] {T72} [Ved , unsp] + ní : 1) schmeichelnd berühren (Lok) mit (Instr); bildlich 2) liebkosend berühren (Lok). Ved , unsp\n11. [NWS: MW : 1122 (s.v. saṃspṛś)] {T73} [Buddh , unsp (s.v. visparśati )] + sam : (with or without salilam , apas ) to touch water, sprinkle, wash. Mbh , R . Gen , unsp ; MW : 1122 (s.v. saṃspṛś )\n12. [NWS: Abhyankar 1986 : 410 (s.v. saṃspṛṣṭa)] {T74} [Ved , unsp] – ( saṃspṛṣṭa ): lit. formed by combination or compact ; the term is used in the Prātiśākhyas for diphthongs which are combinations of two vowels which are completely mixed being produced with a single effort. Śā , Ling ; Abhyankar 1986 : 410 (s.v. saṃspṛṣṭa )\n13. [NWS: MW : 1122 (s.v. sáṃspṛṣṭa)] {T75} [Buddh , unsp (s.v. saṃspṛśati )] + sam ( sáṃspṛṣṭa ): a) closely united with (instr. or comp.), mixed, combined, contiguous; b) reached, attained; c) (ifc.) defiled by. TSaṃ , Kathās , SDS . Gen , unsp ; MW : 1122 (s.v. sáṃspṛṣṭa )\n14. [NWS: MW : 1269 (s.v. spṛṣṭa)] {T76} [Śā , Med (s.v. sam - abhi - spṛś )] Gen , unsp > [ spṛṣṭa ] touched, felt with the hand, handled. AV . affected or afflicted or possessed by (instr. or comp.). Mbh , Kāvya(MW) . defiled. (in gram.) formed by complete contact of the organs of utterance. Prā(MW) . [ applied to all consonants except semivowels [called īṣatspṛṣṭa : formed by slight contact] and except sibilants and h , which are called ardhaspṛṣṭa : formed by half-contact. ] MW : 1269 (s.v. spṛṣṭa )\n15. [NWS: BHSD : 612 (s.v. sparśita)] [Buddh , unsp] [ sparśita , ppp. of caus.] lit. made to touch, i.e. closed, of door-bolts. Divyāv 559.12 . BHSD : 612 (s.v. sparśita )\n16. [NWS: Sen 1951 : 60 (s.v. spṛś)] [spṛṣṭavya Ep , unsp] Adj mfn [pnec] to be touched. R IV.33.55 . from spṛś . Sen 1951 : 60 (s.v. spṛś )",
+   "portrait": "[\n {\n  \"schema_version\": \"pwg_ru.lexicographic_portrait.v1\",\n  \"key1\": \"spfS\",\n  \"key2\": \"spfS\",\n  \"h\": \"\",\n  \"iast\": \"spṛś\",\n  \"pos\": [\n   \"adj.\",\n   \"f.\"\n  ],\n  \"diasystem\": [\n   \"Classical\",\n   \"Epic / early-Classical\",\n   \"Medieval\",\n   \"Vedic\"\n  ],\n  \"labels\": [\n   \"above all, especially\",\n   \"compare\",\n   \"compound\"\n  ],\n  \"senses\": [\n   {\n    \"n\": \"0\",\n    \"sub\": null,\n    \"equivalents_de\": [],\n    \"gloss_de\": \"√ ¦ (von )\",\n    \"equivalence_type\": \"explanatory\",\n    \"grammar\": [],\n    \"ab_labels\": [],\n    \"diasystem\": [],\n    \"citations\": [],\n    \"citations_resolved\": {},\n    \"strata\": {},\n    \"examples_sa\": [\n     \"spfS\",\n     \"sparS\"\n    ]\n   },\n   {\n    \"n\": \"1\",\n    \"sub\": null,\n    \"equivalents_de\": [],\n    \"gloss_de\": \"1〉 adj. am Ende eines comp. P. 3,2,58 . Declination VOP. 3,134 . 149\",\n    \"equivalence_type\": \"explanatory\",\n    \"grammar\": [\n     \"adj.\"\n    ],\n    \"ab_labels\": [\n     \"compound\"\n    ],\n    \"diasystem\": [],\n    \"citations\": [\n     \"P\",\n     \"VOP\"\n    ],\n    \"citations_resolved\": {\n     \"P\": \"PĀṆINI'S acht Bücher grammatischer Regeln (GILD. Bibl. 244).\",\n     \"VOP\": \"VOPADEVA'S Grammatik, nach BÖHTLINGK'S Ausgabe (GILD. Bibl. 249, {%a.%} S. 170).\"\n    },\n    \"strata\": {},\n    \"examples_sa\": []\n   },\n   {\n    \"n\": \"1\",\n    \"sub\": \"a\",\n    \"equivalents_de\": [\n     \"berührend\"\n    ],\n    \"gloss_de\": \"a〉 berührend: KĀTY. ŚR. 1,8,28 . 17,11,18 . 18,5,6 . 26,7,14 . M. 5,64 . (so v. a. Mensch) RAGH. 8,80 . 11,7 . Spr. (II) 7248 . BHĀG. P. 10,37,7\",\n    \"equivalence_type\": \"equivalent\",\n    \"grammar\": [],\n    \"ab_labels\": [\n     \"above all, especially\"\n    ],\n    \"diasystem\": [\n     \"Classical\",\n     \"Epic / early-Classical\",\n     \"Vedic\"\n    ],\n    \"citations\": [\n     \"BHĀG. P\",\n     \"KĀTY. ŚR\",\n     \"M\",\n     \"RAGH\",\n     \"Spr. (II)\"\n    ],\n    \"citations_resolved\": {\n     \"BHĀG. P\": \"BHĀGAVATAPURĀṆA, nach Anführungen im VP. und ŚKDR. Von an sind die 9 von BURNOUF edirten Skandha (Gild. Bibl. 125) ausgebeutet worden.\",\n     \"KĀTY. ŚR\": \"KĀTYĀYANA'S ŚRAUTASŪTRĀṆI. 26 Adhyāya. Hdschr.\",\n     \"M\": \"MANU'S Gesetzbuch in der Ausg. von LOISELEUR DESLONGCHAMPS (GILD. Bibl. 289).\",\n     \"RAGH\": \"RAGHUVAṂŚA, ed. STENZLER (GILD. Bibl. 134).\",\n     \"Spr. (II)\": \"Indische Sprüche. Sanskrit und Deutsch. Herausgegeben von Otto Böhtlingk. Zweite vermehrte und verbesserte Auflage. 1870-1873 [Cologne Addition]\"\n    },\n    \"strata\": {\n     \"Epic / early-Classical\": \"Manusmṛti\",\n     \"Classical\": \"Raghuvaṃśa\"\n    },\n    \"examples_sa\": [\n     \"vedi˚\",\n     \"Sava˚\",\n     \"kziti˚\",\n     \"mAtfvargacaraRa˚\"\n    ]\n   },\n   {\n    \"n\": \"1\",\n    \"sub\": \"b\",\n    \"equivalents_de\": [\n     \"berührend\",\n     \"reichend bis\"\n    ],\n    \"gloss_de\": \"b〉 berührend so v. a. reichend bis: RAGH. 3,43 . VARĀH. BṚH. S. 61,12 . 18\",\n    \"equivalence_type\": \"equivalent\",\n    \"grammar\": [],\n    \"ab_labels\": [\n     \"above all, especially\"\n    ],\n    \"diasystem\": [\n     \"Classical\"\n    ],\n    \"citations\": [\n     \"RAGH\",\n     \"VARĀH. BṚH. S\"\n    ],\n    \"citations_resolved\": {\n     \"RAGH\": \"RAGHUVAṂŚA, ed. STENZLER (GILD. Bibl. 134).\",\n     \"VARĀH. BṚH. S\": \"VARĀHAMIHIRA'S BṚHATSAM̃HITĀ.\"\n    },\n    \"strata\": {\n     \"Classical\": \"Raghuvaṃśa\"\n    },\n    \"examples_sa\": [\n     \"gagana˚\",\n     \"BU˚\"\n    ]\n   },\n   {\n    \"n\": \"1\",\n    \"sub\": \"c\",\n    \"equivalents_de\": [\n     \"erreichend\",\n     \"theilhaftig, an sich erfahrend, zeigend, verrathend\"\n    ],\n    \"gloss_de\": \"c〉 erreichend so v. a. theilhaftig, an sich erfahrend, zeigend, verrathend: MĀLATĪM. 76,4 . KATHĀS. 10,24 . 110,130 . (so zu verbinden) Verz. d. Oxf. H. 200,a,8 v. u. RĀJA-TAR. 1,208 . 4,133 . 164 . 5\",\n    \"equivalence_type\": \"explanatory\",\n    \"grammar\": [],\n    \"ab_labels\": [\n     \"above all, especially\"\n    ],\n    \"diasystem\": [\n     \"Medieval\"\n    ],\n    \"citations\": [\n     \"KATHĀS\",\n     \"MĀLATĪM\",\n     \"RĀJA-TAR\",\n     \"Verz. d. Oxf. H\",\n     \"ed. Calc\"\n    ],\n    \"citations_resolved\": {\n     \"KATHĀS\": \"KATHĀSARITSĀGARA, ed. BROCKHAUS (GILD. Bibl. 237).\",\n     \"MĀLATĪM\": \"? [Cologne Addition]\",\n     \"RĀJA-TAR\": \"RĀJATARAṄGIṆĪ, ed. TROYER (GILD. Bibl. 148) für die 6 ersten Taram̃ga's; für die folgenden die Calc. Ausg. (GILD. Bibl. 147).\",\n     \"Verz. d. Oxf. H\": \"? [Cologne Addition]\",\n     \"ed. Calc\": null\n    },\n    \"strata\": {},\n    \"examples_sa\": [\n     \"praRaya˚\",\n     \"mada˚\",\n     \"vipulAKyA˚\",\n     \"abjanAlalIlAyita˚\"\n    ]\n   },\n   {\n    \"n\": \"2\",\n    \"sub\": null,\n    \"equivalents_de\": [],\n    \"gloss_de\": \"2〉 f. = DHANV. 3,38 . — Vgl\",\n    \"equivalence_type\": \"explanatory\",\n    \"grammar\": [\n     \"f.\"\n    ],\n    \"ab_labels\": [\n     \"compare\"\n    ],\n    \"diasystem\": [],\n    \"citations\": [\n     \"DHANV\"\n    ],\n    \"citations_resolved\": {\n     \"DHANV\": \"? [Cologne Addition]\"\n    },\n    \"strata\": {},\n    \"examples_sa\": [\n     \"spfkkA\",\n     \"atala˚, upari˚, fta˚, kratu˚, Gfta˚, tridina˚, diva˚, divi˚, naBaH˚, Buvi˚, BU˚, BUmi˚, mantra˚, marma˚, rajaH˚, raTa˚, viSva˚, hfdaya˚, hfdi˚\"\n    ]\n   }\n  ],\n  \"corpus_synonyms\": {\n   \"n\": 34,\n   \"by_stratum\": {\n    \"Vedic\": [\n     \"осязать\"\n    ],\n    \"Epic / early-Classical\": [\n     \"коснуться\"\n    ],\n    \"Classical\": [\n     \"затрагивать\"\n    ]\n   },\n   \"candidates\": [\n    \"коснуться\",\n    \"касаться\",\n    \"осязать\",\n    \"прикасаться\",\n    \"ласкать\",\n    \"приветствовать\",\n    \"дотронуться\",\n    \"задеть\",\n    \"склонить\",\n    \"достигать\",\n    \"натягивать\",\n    \"прикосновение\"\n   ]\n  }\n }\n]",
+   "ls": 29,
+   "sk": 34,
+   "senses": 10,
+   "source_senses": 2,
+   "nws": 1
+  }
+ },
+ "placeholder_maps": {
+  "idAnIm": [
+   "{#idA/nIm#}",
+   "{#i/dAnIm#}",
+   "<ls>P. 5,3,18, <is n=\"Vārttika\">Vārtt.</is></ls>",
+   "<ab>Sch.</ab>",
+   "<lex>adv.</lex>",
+   "<ls>NAIGH. 3,28</ls>",
+   "<ls>P. 5,3,18</ls>",
+   "<ls>VOP. 7,110</ls>",
+   "<ls>AK. 3,5,23</ls>",
+   "<ls>H. 1530</ls>",
+   "<ls n=\"H.\">an. 7,56</ls>",
+   "<ls>MED. avy. 62</ls>",
+   "{#nedAnI^M pI\\tira\\SvinA ta^tAna#}",
+   "<ls>ṚV. 5,76,3</ls>",
+   "<ls n=\"ṚV.\">1,35,7</ls>",
+   "{#yatre\\dAnI\\M paSya^si\\ tizWa^ntam#}",
+   "<ls n=\"ṚV.\">10,87,6</ls>",
+   "<ab>genn.</ab>",
+   "{#ahan#}",
+   "{#idA#}",
+   "{#u\\tedAnI\\M Baga^vantaH syAmo\\ta pra^pi\\tva u\\ta maDye\\ ahnA^m#}",
+   "<ls n=\"ṚV.\">7,41,4</ls>",
+   "{#i\\dAnI\\mahna^ upa\\vAcyo\\ nfBi^H#}",
+   "<ls n=\"ṚV.\">4,54,1</ls>",
+   "{#yadidAnIM#}",
+   "{#dvO vivadamAnAveyAtAm#}",
+   "<ls>ŚAT. BR. 1,3,1,27</ls>",
+   "{#pratizWasvedAnIm#}",
+   "<ls>ŚĀK. 52,1</ls>",
+   "{#tvamidAnIM#}",
+   "{#na Bavizyasi#}",
+   "<ls n=\"ŚĀK.\">94,2</ls>",
+   "<ls>HIT. 5,20</ls>",
+   "<ls n=\"HIT.\">17,19</ls>",
+   "<ls n=\"HIT.\">35,19</ls>",
+   "<ls>RAGH. 1,80</ls>",
+   "{#na tarhIdAnIm#}",
+   "{#avagalBAdyanukramaRaM kartavyam#}",
+   "<ls>PAT.</ls>",
+   "<ls>P. 3,1,11</ls>",
+   "<ls>ed. Calc.</ls>",
+   "{#idAnImeva#}",
+   "<ls>ŚĀK. 7,15</ls>",
+   "<ls n=\"ŚĀK.\">60,17</ls>",
+   "<ls n=\"ŚĀK.\">112,14</ls>",
+   "{#idAnImapi#}",
+   "<ls>HIT. 14,3</ls>",
+   "<ls>ŚĀK. 5,6</ls>",
+   "{#adya#}",
+   "<ls>R. 2,34,33</ls>",
+   "<ls n=\"R.\">3,7,30</ls>",
+   "{#tata idAnIm#}",
+   "<ls>ŚĀK. 50,8</ls>",
+   "<ab>Bed.</ab>",
+   "<ls>SĀV. 2,14</ls>",
+   "{#apIdAnIM sa tejasvI budDimAnsa nfpAtmajaH#}",
+   "<ab>d. i.</ab>",
+   "{#idAnIM vAkyAlaMkAre#}",
+   "<ls>H. an.</ls>",
+   "<ls>MED.</ls>",
+   "{#idAnIm#}",
+   "{#etarhi#}",
+   "<ls>ŚAT. BR. 12,3,2,5</ls>",
+   "{#yAvantyetarhIRi tAvanti paYcadaSakftva idAnIni#}",
+   "<ab>sg.</ab>",
+   "{#idAni#}",
+   "{#idAnIm#}",
+   "<ab>acc.</ab>",
+   "<lex>fem.</lex>",
+   "{#idAna#}",
+   "{#rAtrim#}",
+   "{#idA#}",
+   "{#purARa#}",
+   "{#purA#}",
+   "<ab>vgl.</ab>",
+   "{#tadAnIm#}",
+   "{#idA/nIm#}",
+   "<lex>Adv.</lex>",
+   "<ab>Gen.</ab>",
+   "<ab>Sg.</ab>",
+   "<ab>Pl.</ab>",
+   "{#ahan#}",
+   "{#idA#}",
+   "{#adya#}",
+   "{#idā́nīm#}",
+   "{#idānīm#}",
+   "<div n=\"1\">",
+   "<div n=\"1\">"
+  ],
+  "prasU": [
+   "{#prasU/#}",
+   "{#sU#}",
+   "{#pra#}",
+   "<ls>P. 3,2,61</ls>",
+   "<ab>Sch.</ab>",
+   "<lex>adj.</lex>",
+   "{#sA pra\\sUrDenu^kA Bava#}",
+   "<ls>AV. 2,23,4</ls>",
+   "<ls>VS. 18,7</ls>",
+   "{#avA^sfjaH pra\\sva^H Sva\\Ycayo^ gi\\rIn#}",
+   "<ls>ṚV. 10,138,2</ls>",
+   "<ls n=\"ṚV.\">1,67,9</ls>",
+   "{#pu\\zpiRI^Sca pra\\sva^Sca#}",
+   "<ls n=\"ṚV.\">2,13,7</ls>",
+   "{#strI˚#}",
+   "<ls>YĀJÑ. 1,73</ls>",
+   "{#ekA (DAtrI) payaHprasraviRI sarvasaMpatprasUH parAH#}",
+   "<ab>v. a.</ab>",
+   "<ls>RĀJA-TAR. 1,77</ls>",
+   "{#duH˚#}",
+   "<ls>SUŚR. 2,397,2</ls>",
+   "<lex>f.</lex>",
+   "<ls>AK. 2,6,1,29</ls>",
+   "<ls>H. 557</ls>",
+   "<ls n=\"H.\">an. 2,585</ls>",
+   "<ls>MED. s. 4</ls>",
+   "<ab>Inschr.</ab>",
+   "<ls>Journ. of the Am. Or. S. 6,507, Śl. 27</ls>",
+   "<ls>TRIK. 1,1,33</ls>",
+   "<ls>AK. 3,4,30,231</ls>",
+   "<ls>H. 1233</ls>",
+   "<ls>H. an.</ls>",
+   "<ls>MED.</ls>",
+   "{#a\\ntarnavA^su carati pra\\sUzu^#}",
+   "<ls>ṚV. 1,95,10</ls>",
+   "{#a\\pAM garBa^H pra\\sva1^\\ A vi^veSa#}",
+   "<ls n=\"ṚV.\">7,9,3</ls>",
+   "<ls n=\"ṚV.\">8,6,20</ls>",
+   "<ls n=\"ṚV.\">3,5,8</ls>",
+   "{#SaM na^H pra\\sva1^\\H Samba^stu\\ vedi^H#}",
+   "<ls n=\"ṚV.\">7,35,7</ls>",
+   "<ls>TBR. 1,6,3,2</ls>",
+   "<ls>ŚAT. BR. 2,5,1,18</ls>",
+   "<ls>KĀṬH. 36,2</ls>",
+   "{#kuSa˚#}",
+   "<ls>KĀTY. ŚR. 5,1,26</ls>",
+   "{#vIruD#}",
+   "{#kandalI#}",
+   "<ls>WILS.</ls>",
+   "<ls>MED.</ls>",
+   "<ab>Vgl.</ab>",
+   "{#pitf˚, putrikA˚#}",
+   "{#prasU/#}",
+   "<lex>Adj.</lex>",
+   "{#strIprasU#}",
+   "<ab>Comp.</ab>",
+   "<ab>v. a.</ab>",
+   "<lex>f.</lex>",
+   "{#prasū́#}",
+   "{#sū (=pw sū 1) + pra : a) urge, incite, impel, bid, command; b) to allow, give up to, deliver. ṚV , AV .#}",
+   "{#prasūti#}",
+   "{#su (=pw su 4) + pra ( prasūna ): born, produced (= - sūta or jāta ). Lex(MW) .#}",
+   "<div n=\"1\">",
+   "<div n=\"1\">",
+   "<div n=\"2\">",
+   "<div n=\"2\">",
+   "<div n=\"2\">",
+   "<div n=\"v\">",
+   "<div n=\"1\">",
+   "<div n=\"2\">",
+   "<div n=\"2\">",
+   "<div n=\"1\">",
+   "<div n=\"2\">",
+   "<div n=\"2\">",
+   "<div n=\"2\">"
+  ],
+  "rAtra": [
+   "{#rAtra#}",
+   "<lex>n.</lex>",
+   "{#rAtrI#}",
+   "{#trIRi rAtrARi#}",
+   "<ls>MBH. 13,6230</ls>",
+   "{#paYcarAtra#}",
+   "<ls>PAÑCAR. 1,1,44</ls>",
+   "{#rAtraM ca jYAnavacanaM jYAnaM paYcaviDaM smftam . tenedaM paYcarAtraM ca pravadanti manIziRaH ..#}",
+   "<ab>comp.</ab>",
+   "{#rAtra/#}",
+   "{#rAtrI#}",
+   "<ls>P. 5,4,87</ls>",
+   "<ls>VOP. 6,46</ls>",
+   "<ls n=\"VOP. 6,\">51</ls>",
+   "<ls n=\"VOP. 6,\">57</ls>",
+   "{#jaGanyarAtre#}",
+   "<ls>MBH. 3,10795</ls>",
+   "<ls n=\"MBH. 3,\">14750</ls>",
+   "{#varzArAtra#}",
+   "<ab>v. a.</ab>",
+   "{#varzakAle#}",
+   "<ab>Comm.</ab>",
+   "{#upAgate#}",
+   "<ls>R. 7,64,10</ls>",
+   "<ls n=\"R.\">4,26,24</ls>",
+   "{#varzArAtra#}",
+   "<lex>m.</lex>",
+   "<ls>VOP. 6,46</ls>",
+   "<ls n=\"VOP. 6,\">51</ls>",
+   "{#dvAdaSarAtre#}",
+   "<ls>MBH. 1,6614</ls>",
+   "{#azwAviMSatirAtraM#}",
+   "<ab>acc.</ab>",
+   "{#vA mAsaM vA#}",
+   "<ls n=\"MBH.\">4,1173</ls>",
+   "{#trirAtram#}",
+   "<ab>acc.</ab>",
+   "<ls n=\"MBH.\">14,2195</ls>",
+   "<ls>PAÑCAT. 8,19</ls>",
+   "{#trirAtrARi#}",
+   "<ls>MBH. 3,4060</ls>",
+   "{#daSarAtreRa#}",
+   "<ls>R. 1,21,18</ls>",
+   "{#katipayarAtram#}",
+   "<ab>acc.</ab>",
+   "<ls>ŚĀK. 28,14</ls>",
+   "{#paYcadaSarAtraH#}",
+   "<ls>P. 3,3,137</ls>",
+   "<ab>Sch.</ab>",
+   "{#tato nAjYAyata tadA divArAtraM taTA diSaH#}",
+   "<ls>MBH. 3,816</ls>",
+   "{#divArAtram#}",
+   "<lex>adv.</lex>",
+   "<ls>M. 5,80</ls>",
+   "<ls>MBH. 3,2647</ls>",
+   "<ls n=\"MBH. 3,\">12540</ls>",
+   "<ls n=\"MBH.\">16,38</ls>",
+   "<ls>R. 1,58,12</ls>",
+   "<ls>P.</ls>",
+   "{#rAtra#}",
+   "<ab>comp.</ab>",
+   "<ab>masc.</ab>",
+   "<ls>P. 2,4,29</ls>",
+   "<ls>SIDDH. K.</ls>",
+   "<ab>d. St.</ab>",
+   "<ls>AK. 3,6,2,12</ls>",
+   "<ls n=\"AK. 3,6,\">3,25</ls>",
+   "<ab>Vgl.</ab>",
+   "{#ati˚, anurAtram, apararAtra, arDa˚, aho˚, gaRa˚, cira˚, puRya˚, pUrva˚, pratirAtram, praTamarAtra, brahma˚, maDya˚#}",
+   "{#maDyama˚, mahA˚, sarva˚, eka˚, dvi˚#}",
+   "<ab>u. s. w.</ab>",
+   "{#rAtra#}",
+   "<lex>n.</lex>",
+   "<ls>MBH.</ls>",
+   "<ab>Comp.</ab>",
+   "<lex>m.</lex>",
+   "<lex>n.</lex>",
+   "{#rAtri#}",
+   "{#rAtrI#}",
+   "{#jYAna#}",
+   "{#paYcarAtra#}",
+   "<div n=\"v\">",
+   "<div n=\"1\">",
+   "<div n=\"1\">",
+   "<hom>",
+   "</hom>"
+  ],
+  "spfS": [
+   "{#spfS#}",
+   "{#sparS#}",
+   "<lex>adj.</lex>",
+   "<ab>comp.</ab>",
+   "<ls>P. 3,2,58</ls>",
+   "<ls>VOP. 3,134</ls>",
+   "<ls n=\"VOP. 3,\">149</ls>",
+   "{#vedi˚#}",
+   "<ls>KĀTY. ŚR. 1,8,28</ls>",
+   "<ls n=\"KĀTY. ŚR.\">17,11,18</ls>",
+   "<ls n=\"KĀTY. ŚR.\">18,5,6</ls>",
+   "<ls n=\"KĀTY. ŚR.\">26,7,14</ls>",
+   "{#Sava˚#}",
+   "<ls>M. 5,64</ls>",
+   "{#kziti˚#}",
+   "<ab>v. a.</ab>",
+   "<ls>RAGH. 8,80</ls>",
+   "{#mAtfvargacaraRa˚#}",
+   "<ls n=\"RAGH.\">11,7</ls>",
+   "{#bahu˚#}",
+   "<ls>Spr. (II) 7248</ls>",
+   "<ls>BHĀG. P. 10,37,7</ls>",
+   "<ab>v. a.</ab>",
+   "{#gagana˚#}",
+   "<ls>RAGH. 3,43</ls>",
+   "{#BU˚#}",
+   "<ls>VARĀH. BṚH. S. 61,12</ls>",
+   "<ls n=\"VARĀH. BṚH. S. 61,\">18</ls>",
+   "<ab>v. a.</ab>",
+   "{#praRaya˚#}",
+   "<ls>MĀLATĪM. 76,4</ls>",
+   "{#mada˚#}",
+   "<ls>KATHĀS. 10,24</ls>",
+   "<ls n=\"KATHĀS.\">110,130</ls>",
+   "{#vipulAKyA˚#}",
+   "<ls>Verz. d. Oxf. H. 200,a,8 v. u.</ls>",
+   "{#abjanAlalIlAyita˚#}",
+   "<ls>RĀJA-TAR. 1,208</ls>",
+   "{#Baya˚#}",
+   "<ls n=\"RĀJA-TAR.\">4,133</ls>",
+   "{#pakzacCedodyama˚#}",
+   "<ls n=\"RĀJA-TAR.\">164</ls>",
+   "<ls n=\"RĀJA-TAR.\">5,343</ls>",
+   "{#EkamatyaspfSo#}",
+   "<ls>ed. Calc.</ls>",
+   "{#dvijAH#}",
+   "<ls n=\"RĀJA-TAR.\">475</ls>",
+   "{#viplava˚#}",
+   "<ls n=\"RĀJA-TAR.\">8,915</ls>",
+   "<lex>f.</lex>",
+   "{#spfkkA#}",
+   "<ls>DHANV. 3,38</ls>",
+   "<ab>Vgl.</ab>",
+   "{#atala˚, upari˚, fta˚, kratu˚, Gfta˚, tridina˚, diva˚, divi˚, naBaH˚, Buvi˚, BU˚, BUmi˚, mantra˚, marma˚, rajaH˚, raTa˚, viSva˚, hfdaya˚, hfdi˚#}",
+   "{#spfS#}",
+   "<lex>Adj.</lex>",
+   "<ab>Comp.</ab>",
+   "<ab>Nomin.</ab>",
+   "{#spfk#}",
+   "<ab>v. a.</ab>",
+   "<ab>v. a.</ab>",
+   "<ls>Spr. 7688</ls>",
+   "<lex>f.</lex>",
+   "{#spfkkA#}",
+   "<ls>UTPALA zu VARĀH. BṚH. 75,1</ls>",
+   "{#brAhmI#}",
+   "{#spṛś#}",
+   "{#+ anu : fassen, zugreifen. ṚV 4,4,2 .#}",
+   "{#+ apa : (° spṛṣṭa , ppp.) smitten (with affection). Gv 326.7 .#}",
+   "{#+ upa : ( apaḥ ) sich waschen.#}",
+   "{#+ úpa : berühren, heranreichen an (Akk) mit (Instr).#}",
+   "{#+ ni : rühren an, reichen an, dringen zu (Lok). ṚV 8,96,11 .#}",
+   "{#+ vi ( visparśati ): mishandles, maltreats. Śikṣās 182.11 .#}",
+   "{#– salben. TĀr(Sā) VI 10, 2 (8) zu ṚV X 18, 7 .#}",
+   "{#– (° spṛśati ): wipes away, removes (?), or perh. (as in Skt.) comes in contact with, or (PW s.v. 6) masters, gets the better of. Mvu i.359.2, 6 (vss; so mss) .#}",
+   "{#+ samabhi : touch. Hoernle 1893-1912 (I) 3.22 .#}",
+   "<div n=\"1\">",
+   "<div n=\"2\">",
+   "<div n=\"2\">",
+   "<div n=\"2\">",
+   "<div n=\"1\">",
+   "<div n=\"v\">",
+   "<div n=\"1\">",
+   "<div n=\"2\">",
+   "<div n=\"2\">",
+   "<div n=\"2\">",
+   "<div n=\"1\">"
+  ]
+ },
+ "fragment_groups": {
+  "idAnIm": [
+   [
+    {
+     "skeleton": "=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===\n\n{T1}¦ ({T2} {T3}, {T4}) {T5}",
+     "ls": 1,
+     "sk": 2,
+     "fsha": "c92c4a16ec36dd27f7436a68a7de3cc9154ef1985d0c21ad9e9df610637fa01a",
+     "si": 0
+    }
+   ],
+   [
+    {
+     "skeleton": "{T31} 1〉 {%jetzt, in diesem Augenblick, nun, in diesem Falle, gerade%} {T1}. {T2}. {T3}. {T4}. {T5}. {T6}. {T7}. {T8} {T9}. {T10}. {T11} {%wo du gerade Einen stehen siehst%} {T12}. auch mit {T13} von {T14} (wie {T15}): {T16} {T17}. {T18} {T19}. {T20} ({%wenn gerade%}) {T21} {T22}. — {T23} {T24}. {T25} ({%sogleich%}) {T26} {T27}. {T28}. {T29}. {T30}. ",
+     "ls": 18,
+     "sk": 11,
+     "fsha": "a58076c9cd196d30c72a71dfe5a643b644f203a5c61a1de40b46f4349aa5b4e0",
+     "si": 0
+    }
+   ],
+   [
+    {
+     "skeleton": "{T1}. {T2} ({%nun, in diesem Falle%}) {T3} {T4}_zu_{T5}, {T6} {T7} {%so eben%} {T8}. {T9}. {%sogleich%} {T10}. {T11} {%auch jetzt, auch in diesem Falle%} {T12}. {%noch immer%} {T13}. mit [Page1-0797] {T14} verbunden {T15}. {T16}. {T17} {%darauf nun%} {T18}. sehr abgeschwächt ist die {T19} {T20}: {T21} {%nun%} {T22} {%unter diesen Verhältnissen, auch%}. Dieses ist wohl das {T23} {T24} und {T25}",
+     "ls": 15,
+     "sk": 8,
+     "fsha": "40934a3507d4326b7e6300afd11d8cb16f62486e3da4ced89d0fd1c0d5224ad0",
+     "si": 0
+    }
+   ],
+   [
+    {
+     "skeleton": "{T27}— 2〉 ein {T1} als Zeitmaass ist {%der 15te Theil eines%} {T2} {T3}: {T4} (wie von einem {T5} {T6}, weil {T7} keine Nominal-Endung ist). — {T8} {T9} von {T10}, etwa mit Ergänzung von {T11}, und jenes von {T12} wie {T13} von {T14}; {T15} auch {T16}.\n\n=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===\n\n{T17}¦ {T18} {%jetzt, in diesem Augenblick, gerade%}. Mit {T19} {T20} oder {T21} von {T22} wie {T23}. Auch mit {T24} verbunden.\n\n=== LAYER: NWS — Nachtragswörterbuch (Halle, cumulative addendum; condensed \"Kleines Zitat\" — render the new lemma/sense/grammar + keep its sigla) ===\n\nidā́nīm Ved , unsp > Indekl jetzt, gegenwärtig. Geldner 1907 : 28 > idānīm Ved , unsp > e. Begriff aus der Zeiteinteilung; = 1/15 atarhi . ŚB XII,3,2,5 . SIjNS (2) : 357 >\n\n=== LAYER: NWS — PRE-PARSED OWNER MAP (AUTHORITATIVE, 2 entries) ===\n\nDeterministic owner-to-gloss pairing (kills F12). Emit EXACTLY one card row\nper numbered entry below, in this order; copy its [NWS: OWNER] VERBATIM as the\nrow’s last citation; translate the gloss from its own language; keep IAST/sigla.\nDo NOT re-derive owners from the raw fragment above.\n\n 1. [NWS: Geldner 1907 : 28] {T25} [Ved , unsp] Indekl jetzt, gegenwärtig\n 2. [NWS: SIjNS (2) : 357] {T26} [Ved , unsp] e. Begriff aus der Zeiteinteilung; = 1/15 atarhi . ŚB XII,3,2,5",
+     "ls": 1,
+     "sk": 17,
+     "fsha": "c74569931bda540e686cbe63d45e106bb874d228f533a2e5726ac2118f572be7",
+     "si": 1
+    }
+   ]
+  ],
+  "prasU": [
+   [
+    {
+     "skeleton": "=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===\n\n{T1}¦ ({T2} mit {T3}) {T4}, {T5}\n{T22} 1〉 {T6} {%gebärend, fruchttragend, fruchtbar%}: {T7} {T8}. {T9}. {T10} {T11}. {T12}. {T13} {T14}. {T15} {%Töchter gebärend%} {T16}. {T17} so {T18} {%für jegliche Wohlfahrt sorgend%} {T19}. {T20} {%unfruchtbar%} {T21}.",
+     "ls": 9,
+     "sk": 9,
+     "fsha": "8245f0a369927048d8eea69d112f29b85dc5f0102ad10283c07bb0e3ecc5731c",
+     "si": 0
+    },
+    {
+     "skeleton": "{T2}— 2〉 {T1}",
+     "ls": 0,
+     "sk": 0,
+     "fsha": "78ece134a493cc9f400f7c0e5e726a189fb67caede2498429dfc46c0c02ac64c",
+     "si": 1
+    }
+   ],
+   [
+    {
+     "skeleton": "{T8} a〉 {%Mutter%} {T1}. {T2}. {T3}. {T4}. {T5} in {T6}. {T7}.",
+     "ls": 6,
+     "sk": 0,
+     "fsha": "dfa9e5f9e7cc70005cbee9d0441551243b3c311ef4e20b6b9a3d4a1993875d43",
+     "si": 2
+    },
+    {
+     "skeleton": "{T5}— b〉 {%Stute%} {T1}. {T2}. {T3} {T4}",
+     "ls": 4,
+     "sk": 0,
+     "fsha": "d53361abfe6d2fded788d2358419a651ad1cb62cf3dbed7147b2ab6ea264dae9",
+     "si": 3
+    }
+   ],
+   [
+    {
+     "skeleton": "{T21}— c〉 {%Schoss; junges Gras und Kraut; das beim Opfer gebrauchte, mit Blüthenähren versehene Gras%}: {T1} {T2}. {T3} {T4}. {T5}. {T6}. {T7} {T8}. {T9}. {T10}. {T11}. {T12} {T13}. = {T14} {%eine kriechende Pflanze%} und = {T15} ({%Pisang%} {T16}) {T17}\n{T22}— {T18} {T19}.\n\n=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===\n\n{T20}¦",
+     "ls": 11,
+     "sk": 8,
+     "fsha": "a4d0bcaf7fc12327613b44ea3181ce19a0eb065677ae7fdd18603d7a0e8d8d3b",
+     "si": 4
+    }
+   ],
+   [
+    {
+     "skeleton": "{T2}— 1〉 {T1}",
+     "ls": 0,
+     "sk": 0,
+     "fsha": "3f68054776356baf0e48fb2d6e112b3741c70a754c92edcd924a70665cac0a77",
+     "si": 5
+    },
+    {
+     "skeleton": "{T2}— a〉 {%gebärend, fruchttragend, fruchtbar%}. {T1} {%Töchter gebärend%}.",
+     "ls": 0,
+     "sk": 1,
+     "fsha": "3fc3ea7e878dabd26f37fe26161596f6914e03e37685d2055b5cd553e102180f",
+     "si": 6
+    },
+    {
+     "skeleton": "{T3}— b〉 {%Etwas%} (im {T1} vorangehend) {%erzeugend,%} so {T2} {%sorgend für%}.",
+     "ls": 0,
+     "sk": 0,
+     "fsha": "57b05a4ef713c1c760510ec82889736b9558b08bde035326029f67df47a25ca3",
+     "si": 7
+    },
+    {
+     "skeleton": "{T2}— 2〉 {T1}",
+     "ls": 0,
+     "sk": 0,
+     "fsha": "78ece134a493cc9f400f7c0e5e726a189fb67caede2498429dfc46c0c02ac64c",
+     "si": 8
+    },
+    {
+     "skeleton": "{T1}— a〉 {%Mutter%}.",
+     "ls": 0,
+     "sk": 0,
+     "fsha": "cf484e44d99fcaa1f505dc316d7bae2c9ec2afb7f45884b190423bc083e25d4f",
+     "si": 9
+    },
+    {
+     "skeleton": "{T1}— b〉 *{%Stute%}.",
+     "ls": 0,
+     "sk": 0,
+     "fsha": "07c0f94a50ada2cd7c62b4a61b3c307c7cf1716223607eea0fe89d06c9f42d04",
+     "si": 10
+    },
+    {
+     "skeleton": "{T5}— c〉 {%Schoss, junges Gras und Kraut, das beim Opfer gebrauchte, mit Blüthenähren versehene Gras%}.\n\n=== LAYER: NWS — Nachtragswörterbuch (Halle, cumulative addendum; condensed \"Kleines Zitat\" — render the new lemma/sense/grammar + keep its sigla) ===\n\nprasū́ Gen , unsp > Subst f a spreading creeper, the plantain. Lex(MW) . MW : 698 > Ved , unsp > Adj mfn gebärend. Leibesfrucht tragend, fruchtbar. [ auch bildlich von den Wassern. ] Subst f Mutter als die gebärende. [ auch bildlich von den Holzstücken, aus denen Agni geboren wird und in die er stets aufs Neue eingeht. ] die Blüthenähren oder die blühenden Gräser welche beim Opfer gebraucht werden. Graßmann 1873 (1996) : 884 > Ved , unsp > sprouting grass. ṚV I,67,9 . Vedic Hymns II : 457 > Ved , unsp > gebärend. ṚV 10,138,2 . (fruchtbringende) Blüten tragend. ṚV 2,13,7 . Geldner 1907 : 119 > , Geldner 1907 (N) : 233 > Ved , unsp > Subst f blühende Pflanze. ṚV 1,95,10 . Geldner 1907 (N) : 233 > sū (=pw sū 1) + pra : a) urge, incite, impel, bid, command; b) to allow, give up to, deliver. ṚV , AV . Gen , unsp ; MW : 698 (s.v. prasū ) > sū (=pw sū 3) + pra : „ agnim prācīhiḥ saṃpracchādayati ; anujānāti “. Ved , unsp ; Renou 1935 : 3 (s.v. prasū -) > prasūti Gen , unsp > Subst f a production, product (of plants or animals). Mbh . N of a daughter of Manu and wife of Dakṣa. P(MW) . MW : 698 (s.v. prasū́ ) > su (=pw su 4) + pra ( prasūna ): born, produced (= - sūta or jāta ). Lex(MW) . Gen , unsp ; MW : 698 (s.v. prasū́ ) >\n\n=== LAYER: NWS — PRE-PARSED OWNER MAP (AUTHORITATIVE, 8 entries) ===\n\nDeterministic owner-to-gloss pairing (kills F12). Emit EXACTLY one card row\nper numbered entry below, in this order; copy its [NWS: OWNER] VERBATIM as the\nrow’s last citation; translate the gloss from its own language; keep IAST/sigla.\nDo NOT re-derive owners from the raw fragment above.\n\n 1. [NWS: MW : 698] {T1} [Gen , unsp] Subst f a spreading creeper, the plantain. Lex(MW)\n 2. [NWS: Graßmann 1873 (1996) : 884] [Ved , unsp] Adj mfn gebärend. Leibesfrucht tragend, fruchtbar. [ auch bildlich von den Wassern. ] Subst f Mutter als die gebärende. [ auch bildlich von den Holzstücken, aus denen Agni geboren wird und in die er stets aufs Neue eingeht. ] die Blüthenähren oder die blühenden Gräser welche beim Opfer gebraucht werden\n 3. [NWS: Vedic Hymns II : 457] [Ved , unsp] sprouting grass. ṚV I,67,9\n 4. [NWS: Geldner 1907 : 119 / Geldner 1907 (N) : 233] [Ved , unsp] gebärend. ṚV 10,138,2 . (fruchtbringende) Blüten tragend. ṚV 2,13,7\n 5. [NWS: Geldner 1907 (N) : 233] [Ved , unsp] Subst f blühende Pflanze. ṚV 1,95,10\n 6. [NWS: Renou 1935 : 3 (s.v. prasū -)] {T2} [Gen , unsp (s.v. prasū )] sū (=pw sū 3) + pra : „ agnim prācīhiḥ saṃpracchādayati ; anujānāti “. Ved , unsp\n 7. [NWS: MW : 698 (s.v. prasū́)] {T3} [Gen , unsp] Subst f a production, product (of plants or animals). Mbh . N of a daughter of Manu and wife of Dakṣa. P(MW) . MW : 698 (s.v. prasū́ )\n 8. [NWS: ?] {T4} [Gen , unsp (s.v. prasū́ )]",
+     "ls": 0,
+     "sk": 4,
+     "fsha": "26af818979f522b21bcd5054d8d2f479d0ef057db14a93fbc77ab13fd9cb93af",
+     "si": 11
+    }
+   ]
+  ],
+  "rAtra": [
+   [
+    {
+     "skeleton": "=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===\n\n{T1}¦ {T2} = {T3} {%Nacht%}; selbständig nur in der Stelle {T4} {T5} und bei der künstlichen Erklärung von {T6} {T7}: {T8} Am Ende eines {T9} ist {T10} der regelmässige Vertreter von {T11} {T12}. {T13}. {T14}. {T15}. {T16} {%am Ende der Nacht%} {T17}. {T18}. {T19} (so {T20} {T21} {T22}) {T23} {T24}. {T25}. {T26} {T27} {T28}. {T29}. {T30} {T31}. {T32} ({T33}) {T34} {T35}. {T36} {T37} {%drei Tage hindurch%} {T38}. {T39}. {T40} {T41}. {T42} {%zehn Nächte hindurch%} {T43}. {T44} {T45} {%einige Nächte hindurch%} ",
+     "ls": 18,
+     "sk": 19,
+     "fsha": "508b94e7e0890402480dbb0f664af6969216e6814856ce15878a83f75eb8d1e3",
+     "si": 0
+    }
+   ],
+   [
+    {
+     "skeleton": "{T1}. {T2} {T3}, {T4} {T5} {%nicht Tag noch Nacht%} {T6}. {T7} {T8} {%am Tage und in der Nacht%} {T9}. {T10}. {T11}. {T12}. {T13}. Nach {T14} ist ein auf {T15} ausgehendes {T16} stets {T17}, nach Andern aber nur dann, wenn kein Zahlwort vorhergeht, {T18}. {T19} zu {T20} {T21}. {T22}\n{T35}— {T23} {T24}. {T25} {T26}\n\n=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===\n\n{T27}¦ {T28}\n{T36}— 1〉 {%Nacht%}. Nur einmal im {T29} Am Ende eines {T30} {T31} oder {T32} der regelmässige Vertreter von {T33} oder {T34}.",
+     "ls": 14,
+     "sk": 9,
+     "fsha": "e58c43c6a373ad771173bbeb6ed3748c88fea881cfe426a0f60c68cfc5fea647",
+     "si": 0
+    }
+   ],
+   [
+    {
+     "skeleton": "{T3}— 2〉 angeblich = {T1} in {T4}2.{T5} {T2} 2〉b〉.",
+     "ls": 0,
+     "sk": 2,
+     "fsha": "0a91410c708da7fe1c548adba67015491e9d945249dcca44ac005c75064aa581",
+     "si": 1
+    }
+   ]
+  ],
+  "spfS": [
+   [
+    {
+     "skeleton": "=== LAYER: PWG — MAIN ENTRY (Böhtlingk-Roth, large) ===\n\n√{T1}¦ (von {T2})\n{T8} 1〉 {T3} am Ende eines {T4} {T5}. Declination {T6}. {T7}.",
+     "ls": 3,
+     "sk": 2,
+     "fsha": "93c32960c6f7b19b1d0ab8e4aa5cbf0e887eb74b0739aeb9e7f69973bd412df1",
+     "si": 0
+    }
+   ],
+   [
+    {
+     "skeleton": "{T16} a〉 {%berührend%}: {T1} {T2}. {T3}. {T4}. {T5}. {T6} {T7}. {T8} (so {T9} {%Mensch%}) {T10}. {T11} {T12}. {T13} {T14}. {T15}.",
+     "ls": 9,
+     "sk": 5,
+     "fsha": "3772327bf69aea8c3686d3c50eb4fae76dc5f18c573d505c5d027693d8e32a3a",
+     "si": 1
+    }
+   ],
+   [
+    {
+     "skeleton": "{T7}— b〉 {%berührend%} so {T1} {%reichend bis%}: {T2} {T3}. {T4} {T5}. {T6}.",
+     "ls": 3,
+     "sk": 2,
+     "fsha": "1452f8749451524a765c56e593ebd2620d02999b8dc9f3697f27c3a0886374cb",
+     "si": 2
+    }
+   ],
+   [
+    {
+     "skeleton": "{T22}— c〉 {%erreichend%} so {T1} {%theilhaftig, an sich erfahrend, zeigend, verrathend%}: {T2} {T3}. {T4} {T5}. {T6}. {T7} (so zu verbinden) {T8} {T9} {T10}. {T11} {T12}. {T13} {T14}. {T15}. {T16} (so mit der {T17} zu lesen) {T18} {T19}. {T20} {T21}.",
+     "ls": 11,
+     "sk": 9,
+     "fsha": "7a1a338196f2d663ff965b95b793b86d2ad7fc9a4245995c337fdc60d1836486",
+     "si": 3
+    }
+   ],
+   [
+    {
+     "skeleton": "{T7}— 2〉 {T1} = {T2} {T3}.\n{T8}— {T4} {T5}.\n\n=== LAYER: PW — Böhtlingk kürzere Fassung (revision of PWG; may correct gender/sense) ===\n\n{T6}¦",
+     "ls": 1,
+     "sk": 3,
+     "fsha": "f465fc5286cedaebc1dc94dee8f612155793d3a4d489dc8d43578a956f3ee89b",
+     "si": 4
+    },
+    {
+     "skeleton": "{T5}— 1〉 {T1} am Ende eines {T2} ({T3} {T4})",
+     "ls": 0,
+     "sk": 1,
+     "fsha": "59b4baba30073bebabb7ce7744ecaf35bb86efcc6e39b65d3e84c3928425623e",
+     "si": 5
+    },
+    {
+     "skeleton": "{T1}— a〉 {%berührend%}.",
+     "ls": 0,
+     "sk": 0,
+     "fsha": "f0740867b989066f08262fc6ceb1953e9cb038a18eb5460b624790d095ace483",
+     "si": 6
+    },
+    {
+     "skeleton": "{T2}— b〉 {%berührend,%} so {T1} {%reichend bis%}.",
+     "ls": 0,
+     "sk": 0,
+     "fsha": "4a557526dd81b767fad2f79dfc05d72a2c2542f9732c3add66f27a6fb2115463",
+     "si": 7
+    },
+    {
+     "skeleton": "{T3}— c〉 {%erreichend,%} so {T1} {%theilhaftig, an sich erfahrend, zeigend, verrathend%} {T2}.",
+     "ls": 1,
+     "sk": 0,
+     "fsha": "86c612f9e5668b985c5311593705c7370cb00fe17882693e33851d1d7d13df6c",
+     "si": 8
+    },
+    {
+     "skeleton": "{T15}— 2〉 {T1} = {T2} {T3} (= {T4}).\n\n=== LAYER: NWS — Nachtragswörterbuch (Halle, cumulative addendum; condensed \"Kleines Zitat\" — render the new lemma/sense/grammar + keep its sigla) ===\n\nspṛś Gen , unsp > ( spṛśáti VI P ) feel with the hand, lay the hand on (acc or loc), graze, stroke. ṚV . to handle, take hold of ( anyo ’nyaṃ hastau spṛśataḥ : they mutually touch or shake hands). Mbh , Kāvya(MW) . to touch so as to hurt, injure, harm. Kathās . to come up to, equal (acc; with girā : to equal with words, i.e. ‘to be able to describe’). Kāvya(MW) . to act upon, affect. SDS , BhāgP . to touch i.e. endow or fill with (instr). ṚV iv, 3, 15 . to touch i.e. befall, fall to the lot of, come upon, visit, afflict (acc). ChU , Mbh , Kāvya(MW) . Pass ( spṛśyate ): to be touched or seized or affected by. Mbh . Caus ( sparśayati , ° te ): to convey to (loc); to fill or cover with (instr). ṚV . MW : 1268 > Ved , unsp > berühren (Lok, Akk). [ auch in bildlichem Sinne. ] kosend berühren, liebend umfassen (Lok, Akk), vgl ṛtaspṛ́ś . heranreichen an, erreichen, erlangen (Akk). Kaus: etwas (Akk) womit (Instr, Lok) in Berührung setzen. Graßmann 1873 (1996) : 1610 > Ved , unsp > ( VI ) berühren, rühren an. Windisch 1883 : 164 > Ved , unsp > ( VI ) berühren, reichen bis; dringen zu, rühren (+ Lok). ṚV 10,70,5 , ṚV 4,41,1 . Geldner 1907 : 206 > Ved , unsp > Kaus: „remarquer“. MānŚS Ed, p. 136 . Renou 1935 : 56 > + anu : fassen, zugreifen. ṚV 4,4,2 . Ved , unsp ; Geldner 1907 : 206 > + ánu : engangeschlossen folgen. Ved , unsp ; Graßmann 1873 (1996) : 1610 > + apa : (° spṛṣṭa , ppp.) smitten (with affection). Gv 326.7 . Buddh , unsp ; BHSD : 46 (s.v. apaspṛṣṭa ) > + ud : erreichen, hinaufreichen zu (Akk). AV 5,19,1 . Ved , unsp ; Hillebrandt 1885 : 127 > + upa : ( apaḥ ) sich waschen. Ved , unsp ; Windisch 1883 : 164 > – berühren, reichen bis. ṚV 10,125,7 . Ved , unsp ; Geldner 1907 : 206 > + úpa : berühren, heranreichen an (Akk) mit (Instr). Ved , unsp ; Graßmann 1873 (1996) : 1610 > + upári : emporragen, in uparispṛ́ś . Ved , unsp ; Graßmann 1873 (1996) : 1610 > + ni : rühren an, reichen an, dringen zu (Lok). ṚV 8,96,11 . Ved , unsp ; Geldner 1907 : 206 > + ní : 1) schmeichelnd berühren (Lok) mit (Instr); bildlich 2) liebkosend berühren (Lok). Ved , unsp ; Graßmann 1873 (1996) : 1610 > + vi ( visparśati ): mishandles, maltreats. Śikṣās 182.11 . Buddh , unsp ; BHSD : 504 (s.v. visparśati ) > + sam : (with or without salilam , apas ) to touch water, sprinkle, wash. Mbh , R . Gen , unsp ; MW : 1122 (s.v. saṃspṛś ) > – salben. TĀr(Sā) VI 10, 2 (8) zu ṚV X 18, 7 . Ved , unsp ; Windisch 1883 : 164 > – ( saṃspṛṣṭa ): lit. formed by combination or compact ; the term is used in the Prātiśākhyas for diphthongs which are combinations of two vowels which are completely mixed being produced with a single effort. Śā , Ling ; Abhyankar 1986 : 410 (s.v. saṃspṛṣṭa ) > – (° spṛśati ): wipes away, removes (?), or perh. (as in Skt.) comes in contact with, or (PW s.v. 6) masters, gets the better of. Mvu i.359.2, 6 (vss; so mss) . Buddh , unsp ; BHSD : 543 (s.v. saṃspṛśati ) > + sam ( sáṃspṛṣṭa ): a) closely united with (instr. or comp.), mixed, combined, contiguous; b) reached, attained; c) (ifc.) defiled by. TSaṃ , Kathās , SDS . Gen , unsp ; MW : 1122 (s.v. sáṃspṛṣṭa ) > + samabhi : touch. Hoernle 1893-1912 (I) 3.22 . Śā , Med ; Hoernle 1908 : 334 (s.v. sam - abhi - spṛś ) > Gen , unsp > [ spṛṣṭa ] touched, felt with the hand, handled. AV . affected or afflicted or possessed by (instr. or comp.). Mbh , Kāvya(MW) . defiled. (in gram.) formed by complete contact of the organs of utterance. Prā(MW) . [ applied to all consonants except semivowels [called īṣatspṛṣṭa : formed by slight contact] and except sibilants and h , which are called ardhaspṛṣṭa : formed by half-contact. ] MW : 1269 (s.v. spṛṣṭa ) > Buddh , unsp > [ sparśita , ppp. of caus.] lit. made to touch, i.e. closed, of door-bolts. Divyāv 559.12 . BHSD : 612 (s.v. sparśita ) > spṛṣṭavya Ep , unsp > Adj mfn [pnec] to be touched. R IV.33.55 . from spṛś . Sen 1951 : 60 (s.v. spṛś ) >\n\n=== LAYER: NWS — PRE-PARSED OWNER MAP (AUTHORITATIVE, 16 entries) ===\n\nDeterministic owner-to-gloss pairing (kills F12). Emit EXACTLY one card row\nper numbered entry below, in this order; copy its [NWS: OWNER] VERBATIM as the\nrow’s last citation; translate the gloss from its own language; keep IAST/sigla.\nDo NOT re-derive owners from the raw fragment above.\n\n 1. [NWS: MW : 1268] {T5} [Gen , unsp] ( spṛśáti VI P ) feel with the hand, lay the hand on (acc or loc), graze, stroke. ṚV . to handle, take hold of ( anyo ’nyaṃ hastau spṛśataḥ : they mutually touch or shake hands). Mbh , Kāvya(MW) . to touch so as to hurt, injure, harm. Kathās . to come up to, equal (acc; with girā : to equal with words, i.e. ‘to be able to describe’). Kāvya(MW) . to act upon, affect. SDS , BhāgP . to touch i.e. endow or fill with (instr). ṚV iv, 3, 15 . to touch i.e. befall, fall to the lot of, come upon, visit, afflict (acc). ChU , Mbh , Kāvya(MW) . Pass ( spṛśyate ): to be touched or seized or affected by. Mbh . Caus ( sparśayati , ° te ): to convey to (loc); to fill or cover with (instr). ṚV\n 2. [NWS: Graßmann 1873 (1996) : 1610] [Ved , unsp] berühren (Lok, Akk). [ auch in bildlichem Sinne. ] kosend berühren, liebend umfassen (Lok, Akk), vgl ṛtaspṛ́ś . heranreichen an, erreichen, erlangen (Akk). Kaus: etwas (Akk) womit (Instr, Lok) in Berührung setzen\n 3. [NWS: Windisch 1883 : 164] [Ved , unsp] ( VI ) berühren, rühren an\n 4. [NWS: Geldner 1907 : 206] [Ved , unsp] ( VI ) berühren, reichen bis; dringen zu, rühren (+ Lok). ṚV 10,70,5 , ṚV 4,41,1\n 5. [NWS: Renou 1935 : 56] [Ved , unsp] Kaus: „remarquer“. MānŚS Ed, p. 136\n 6. [NWS: Graßmann 1873 (1996) : 1610] {T6} [Ved , unsp] + ánu : engangeschlossen folgen. Ved , unsp\n 7. [NWS: Hillebrandt 1885 : 127] {T7} [Buddh , unsp (s.v. apaspṛṣṭa )] + ud : erreichen, hinaufreichen zu (Akk). AV 5,19,1 . Ved , unsp\n 8. [NWS: Geldner 1907 : 206] {T8} [Ved , unsp] – berühren, reichen bis. ṚV 10,125,7 . Ved , unsp\n 9. [NWS: Graßmann 1873 (1996) : 1610] {T9} [Ved , unsp] + upári : emporragen, in uparispṛ́ś . Ved , unsp\n10. [NWS: Graßmann 1873 (1996) : 1610] {T10} [Ved , unsp] + ní : 1) schmeichelnd berühren (Lok) mit (Instr); bildlich 2) liebkosend berühren (Lok). Ved , unsp\n11. [NWS: MW : 1122 (s.v. saṃspṛś)] {T11} [Buddh , unsp (s.v. visparśati )] + sam : (with or without salilam , apas ) to touch water, sprinkle, wash. Mbh , R . Gen , unsp ; MW : 1122 (s.v. saṃspṛś )\n12. [NWS: Abhyankar 1986 : 410 (s.v. saṃspṛṣṭa)] {T12} [Ved , unsp] – ( saṃspṛṣṭa ): lit. formed by combination or compact ; the term is used in the Prātiśākhyas for diphthongs which are combinations of two vowels which are completely mixed being produced with a single effort. Śā , Ling ; Abhyankar 1986 : 410 (s.v. saṃspṛṣṭa )\n13. [NWS: MW : 1122 (s.v. sáṃspṛṣṭa)] {T13} [Buddh , unsp (s.v. saṃspṛśati )] + sam ( sáṃspṛṣṭa ): a) closely united with (instr. or comp.), mixed, combined, contiguous; b) reached, attained; c) (ifc.) defiled by. TSaṃ , Kathās , SDS . Gen , unsp ; MW : 1122 (s.v. sáṃspṛṣṭa )\n14. [NWS: MW : 1269 (s.v. spṛṣṭa)] {T14} [Śā , Med (s.v. sam - abhi - spṛś )] Gen , unsp > [ spṛṣṭa ] touched, felt with the hand, handled. AV . affected or afflicted or possessed by (instr. or comp.). Mbh , Kāvya(MW) . defiled. (in gram.) formed by complete contact of the organs of utterance. Prā(MW) . [ applied to all consonants except semivowels [called īṣatspṛṣṭa : formed by slight contact] and except sibilants and h , which are called ardhaspṛṣṭa : formed by half-contact. ] MW : 1269 (s.v. spṛṣṭa )\n15. [NWS: BHSD : 612 (s.v. sparśita)] [Buddh , unsp] [ sparśita , ppp. of caus.] lit. made to touch, i.e. closed, of door-bolts. Divyāv 559.12 . BHSD : 612 (s.v. sparśita )\n16. [NWS: Sen 1951 : 60 (s.v. spṛś)] [spṛṣṭavya Ep , unsp] Adj mfn [pnec] to be touched. R IV.33.55 . from spṛś . Sen 1951 : 60 (s.v. spṛś )",
+     "ls": 1,
+     "sk": 12,
+     "fsha": "f23d81c9fc1bf83ec01d7c92db7a63233b5283d58b036ff72408341196e50122",
+     "si": 9
+    }
+   ]
+  ]
+ },
+ "fragment_placeholder_maps": {
+  "idAnIm": [
+   [
+    [
+     "{#idA/nIm#}",
+     "{#i/dAnIm#}",
+     "<ls>P. 5,3,18, <is n=\"Vārttika\">Vārtt.</is></ls>",
+     "<ab>Sch.</ab>",
+     "<lex>adv.</lex>"
+    ]
+   ],
+   [
+    [
+     "<ls>NAIGH. 3,28</ls>",
+     "<ls>P. 5,3,18</ls>",
+     "<ls>VOP. 7,110</ls>",
+     "<ls>AK. 3,5,23</ls>",
+     "<ls>H. 1530</ls>",
+     "<ls n=\"H.\">an. 7,56</ls>",
+     "<ls>MED. avy. 62</ls>",
+     "{#nedAnI^M pI\\tira\\SvinA ta^tAna#}",
+     "<ls>ṚV. 5,76,3</ls>",
+     "<ls n=\"ṚV.\">1,35,7</ls>",
+     "{#yatre\\dAnI\\M paSya^si\\ tizWa^ntam#}",
+     "<ls n=\"ṚV.\">10,87,6</ls>",
+     "<ab>genn.</ab>",
+     "{#ahan#}",
+     "{#idA#}",
+     "{#u\\tedAnI\\M Baga^vantaH syAmo\\ta pra^pi\\tva u\\ta maDye\\ ahnA^m#}",
+     "<ls n=\"ṚV.\">7,41,4</ls>",
+     "{#i\\dAnI\\mahna^ upa\\vAcyo\\ nfBi^H#}",
+     "<ls n=\"ṚV.\">4,54,1</ls>",
+     "{#yadidAnIM#}",
+     "{#dvO vivadamAnAveyAtAm#}",
+     "<ls>ŚAT. BR. 1,3,1,27</ls>",
+     "{#pratizWasvedAnIm#}",
+     "<ls>ŚĀK. 52,1</ls>",
+     "{#tvamidAnIM#}",
+     "{#na Bavizyasi#}",
+     "<ls n=\"ŚĀK.\">94,2</ls>",
+     "<ls>HIT. 5,20</ls>",
+     "<ls n=\"HIT.\">17,19</ls>",
+     "<ls n=\"HIT.\">35,19</ls>",
+     "<div n=\"1\">"
+    ]
+   ],
+   [
+    [
+     "<ls>RAGH. 1,80</ls>",
+     "{#na tarhIdAnIm#}",
+     "{#avagalBAdyanukramaRaM kartavyam#}",
+     "<ls>PAT.</ls>",
+     "<ls>P. 3,1,11</ls>",
+     "<ls>ed. Calc.</ls>",
+     "{#idAnImeva#}",
+     "<ls>ŚĀK. 7,15</ls>",
+     "<ls n=\"ŚĀK.\">60,17</ls>",
+     "<ls n=\"ŚĀK.\">112,14</ls>",
+     "{#idAnImapi#}",
+     "<ls>HIT. 14,3</ls>",
+     "<ls>ŚĀK. 5,6</ls>",
+     "{#adya#}",
+     "<ls>R. 2,34,33</ls>",
+     "<ls n=\"R.\">3,7,30</ls>",
+     "{#tata idAnIm#}",
+     "<ls>ŚĀK. 50,8</ls>",
+     "<ab>Bed.</ab>",
+     "<ls>SĀV. 2,14</ls>",
+     "{#apIdAnIM sa tejasvI budDimAnsa nfpAtmajaH#}",
+     "<ab>d. i.</ab>",
+     "{#idAnIM vAkyAlaMkAre#}",
+     "<ls>H. an.</ls>",
+     "<ls>MED.</ls>"
+    ]
+   ],
+   [
+    [
+     "{#idAnIm#}",
+     "{#etarhi#}",
+     "<ls>ŚAT. BR. 12,3,2,5</ls>",
+     "{#yAvantyetarhIRi tAvanti paYcadaSakftva idAnIni#}",
+     "<ab>sg.</ab>",
+     "{#idAni#}",
+     "{#idAnIm#}",
+     "<ab>acc.</ab>",
+     "<lex>fem.</lex>",
+     "{#idAna#}",
+     "{#rAtrim#}",
+     "{#idA#}",
+     "{#purARa#}",
+     "{#purA#}",
+     "<ab>vgl.</ab>",
+     "{#tadAnIm#}",
+     "{#idA/nIm#}",
+     "<lex>Adv.</lex>",
+     "<ab>Gen.</ab>",
+     "<ab>Sg.</ab>",
+     "<ab>Pl.</ab>",
+     "{#ahan#}",
+     "{#idA#}",
+     "{#adya#}",
+     "{#idā́nīm#}",
+     "{#idānīm#}",
+     "<div n=\"1\">"
+    ]
+   ]
+  ],
+  "prasU": [
+   [
+    [
+     "{#prasU/#}",
+     "{#sU#}",
+     "{#pra#}",
+     "<ls>P. 3,2,61</ls>",
+     "<ab>Sch.</ab>",
+     "<lex>adj.</lex>",
+     "{#sA pra\\sUrDenu^kA Bava#}",
+     "<ls>AV. 2,23,4</ls>",
+     "<ls>VS. 18,7</ls>",
+     "{#avA^sfjaH pra\\sva^H Sva\\Ycayo^ gi\\rIn#}",
+     "<ls>ṚV. 10,138,2</ls>",
+     "<ls n=\"ṚV.\">1,67,9</ls>",
+     "{#pu\\zpiRI^Sca pra\\sva^Sca#}",
+     "<ls n=\"ṚV.\">2,13,7</ls>",
+     "{#strI˚#}",
+     "<ls>YĀJÑ. 1,73</ls>",
+     "{#ekA (DAtrI) payaHprasraviRI sarvasaMpatprasUH parAH#}",
+     "<ab>v. a.</ab>",
+     "<ls>RĀJA-TAR. 1,77</ls>",
+     "{#duH˚#}",
+     "<ls>SUŚR. 2,397,2</ls>",
+     "<div n=\"1\">"
+    ],
+    [
+     "<lex>f.</lex>",
+     "<div n=\"1\">"
+    ]
+   ],
+   [
+    [
+     "<ls>AK. 2,6,1,29</ls>",
+     "<ls>H. 557</ls>",
+     "<ls n=\"H.\">an. 2,585</ls>",
+     "<ls>MED. s. 4</ls>",
+     "<ab>Inschr.</ab>",
+     "<ls>Journ. of the Am. Or. S. 6,507, Śl. 27</ls>",
+     "<ls>TRIK. 1,1,33</ls>",
+     "<div n=\"2\">"
+    ],
+    [
+     "<ls>AK. 3,4,30,231</ls>",
+     "<ls>H. 1233</ls>",
+     "<ls>H. an.</ls>",
+     "<ls>MED.</ls>",
+     "<div n=\"2\">"
+    ]
+   ],
+   [
+    [
+     "{#a\\ntarnavA^su carati pra\\sUzu^#}",
+     "<ls>ṚV. 1,95,10</ls>",
+     "{#a\\pAM garBa^H pra\\sva1^\\ A vi^veSa#}",
+     "<ls n=\"ṚV.\">7,9,3</ls>",
+     "<ls n=\"ṚV.\">8,6,20</ls>",
+     "<ls n=\"ṚV.\">3,5,8</ls>",
+     "{#SaM na^H pra\\sva1^\\H Samba^stu\\ vedi^H#}",
+     "<ls n=\"ṚV.\">7,35,7</ls>",
+     "<ls>TBR. 1,6,3,2</ls>",
+     "<ls>ŚAT. BR. 2,5,1,18</ls>",
+     "<ls>KĀṬH. 36,2</ls>",
+     "{#kuSa˚#}",
+     "<ls>KĀTY. ŚR. 5,1,26</ls>",
+     "{#vIruD#}",
+     "{#kandalI#}",
+     "<ls>WILS.</ls>",
+     "<ls>MED.</ls>",
+     "<ab>Vgl.</ab>",
+     "{#pitf˚, putrikA˚#}",
+     "{#prasU/#}",
+     "<div n=\"2\">",
+     "<div n=\"v\">"
+    ]
+   ],
+   [
+    [
+     "<lex>Adj.</lex>",
+     "<div n=\"1\">"
+    ],
+    [
+     "{#strIprasU#}",
+     "<div n=\"2\">"
+    ],
+    [
+     "<ab>Comp.</ab>",
+     "<ab>v. a.</ab>",
+     "<div n=\"2\">"
+    ],
+    [
+     "<lex>f.</lex>",
+     "<div n=\"1\">"
+    ],
+    [
+     "<div n=\"2\">"
+    ],
+    [
+     "<div n=\"2\">"
+    ],
+    [
+     "{#prasū́#}",
+     "{#sū (=pw sū 1) + pra : a) urge, incite, impel, bid, command; b) to allow, give up to, deliver. ṚV , AV .#}",
+     "{#prasūti#}",
+     "{#su (=pw su 4) + pra ( prasūna ): born, produced (= - sūta or jāta ). Lex(MW) .#}",
+     "<div n=\"2\">"
+    ]
+   ]
+  ],
+  "rAtra": [
+   [
+    [
+     "{#rAtra#}",
+     "<lex>n.</lex>",
+     "{#rAtrI#}",
+     "{#trIRi rAtrARi#}",
+     "<ls>MBH. 13,6230</ls>",
+     "{#paYcarAtra#}",
+     "<ls>PAÑCAR. 1,1,44</ls>",
+     "{#rAtraM ca jYAnavacanaM jYAnaM paYcaviDaM smftam . tenedaM paYcarAtraM ca pravadanti manIziRaH ..#}",
+     "<ab>comp.</ab>",
+     "{#rAtra/#}",
+     "{#rAtrI#}",
+     "<ls>P. 5,4,87</ls>",
+     "<ls>VOP. 6,46</ls>",
+     "<ls n=\"VOP. 6,\">51</ls>",
+     "<ls n=\"VOP. 6,\">57</ls>",
+     "{#jaGanyarAtre#}",
+     "<ls>MBH. 3,10795</ls>",
+     "<ls n=\"MBH. 3,\">14750</ls>",
+     "{#varzArAtra#}",
+     "<ab>v. a.</ab>",
+     "{#varzakAle#}",
+     "<ab>Comm.</ab>",
+     "{#upAgate#}",
+     "<ls>R. 7,64,10</ls>",
+     "<ls n=\"R.\">4,26,24</ls>",
+     "{#varzArAtra#}",
+     "<lex>m.</lex>",
+     "<ls>VOP. 6,46</ls>",
+     "<ls n=\"VOP. 6,\">51</ls>",
+     "{#dvAdaSarAtre#}",
+     "<ls>MBH. 1,6614</ls>",
+     "{#azwAviMSatirAtraM#}",
+     "<ab>acc.</ab>",
+     "{#vA mAsaM vA#}",
+     "<ls n=\"MBH.\">4,1173</ls>",
+     "{#trirAtram#}",
+     "<ab>acc.</ab>",
+     "<ls n=\"MBH.\">14,2195</ls>",
+     "<ls>PAÑCAT. 8,19</ls>",
+     "{#trirAtrARi#}",
+     "<ls>MBH. 3,4060</ls>",
+     "{#daSarAtreRa#}",
+     "<ls>R. 1,21,18</ls>",
+     "{#katipayarAtram#}",
+     "<ab>acc.</ab>"
+    ]
+   ],
+   [
+    [
+     "<ls>ŚĀK. 28,14</ls>",
+     "{#paYcadaSarAtraH#}",
+     "<ls>P. 3,3,137</ls>",
+     "<ab>Sch.</ab>",
+     "{#tato nAjYAyata tadA divArAtraM taTA diSaH#}",
+     "<ls>MBH. 3,816</ls>",
+     "{#divArAtram#}",
+     "<lex>adv.</lex>",
+     "<ls>M. 5,80</ls>",
+     "<ls>MBH. 3,2647</ls>",
+     "<ls n=\"MBH. 3,\">12540</ls>",
+     "<ls n=\"MBH.\">16,38</ls>",
+     "<ls>R. 1,58,12</ls>",
+     "<ls>P.</ls>",
+     "{#rAtra#}",
+     "<ab>comp.</ab>",
+     "<ab>masc.</ab>",
+     "<ls>P. 2,4,29</ls>",
+     "<ls>SIDDH. K.</ls>",
+     "<ab>d. St.</ab>",
+     "<ls>AK. 3,6,2,12</ls>",
+     "<ls n=\"AK. 3,6,\">3,25</ls>",
+     "<ab>Vgl.</ab>",
+     "{#ati˚, anurAtram, apararAtra, arDa˚, aho˚, gaRa˚, cira˚, puRya˚, pUrva˚, pratirAtram, praTamarAtra, brahma˚, maDya˚#}",
+     "{#maDyama˚, mahA˚, sarva˚, eka˚, dvi˚#}",
+     "<ab>u. s. w.</ab>",
+     "{#rAtra#}",
+     "<lex>n.</lex>",
+     "<ls>MBH.</ls>",
+     "<ab>Comp.</ab>",
+     "<lex>m.</lex>",
+     "<lex>n.</lex>",
+     "{#rAtri#}",
+     "{#rAtrI#}",
+     "<div n=\"v\">",
+     "<div n=\"1\">"
+    ]
+   ],
+   [
+    [
+     "{#jYAna#}",
+     "{#paYcarAtra#}",
+     "<div n=\"1\">",
+     "<hom>",
+     "</hom>"
+    ]
+   ]
+  ],
+  "spfS": [
+   [
+    [
+     "{#spfS#}",
+     "{#sparS#}",
+     "<lex>adj.</lex>",
+     "<ab>comp.</ab>",
+     "<ls>P. 3,2,58</ls>",
+     "<ls>VOP. 3,134</ls>",
+     "<ls n=\"VOP. 3,\">149</ls>",
+     "<div n=\"1\">"
+    ]
+   ],
+   [
+    [
+     "{#vedi˚#}",
+     "<ls>KĀTY. ŚR. 1,8,28</ls>",
+     "<ls n=\"KĀTY. ŚR.\">17,11,18</ls>",
+     "<ls n=\"KĀTY. ŚR.\">18,5,6</ls>",
+     "<ls n=\"KĀTY. ŚR.\">26,7,14</ls>",
+     "{#Sava˚#}",
+     "<ls>M. 5,64</ls>",
+     "{#kziti˚#}",
+     "<ab>v. a.</ab>",
+     "<ls>RAGH. 8,80</ls>",
+     "{#mAtfvargacaraRa˚#}",
+     "<ls n=\"RAGH.\">11,7</ls>",
+     "{#bahu˚#}",
+     "<ls>Spr. (II) 7248</ls>",
+     "<ls>BHĀG. P. 10,37,7</ls>",
+     "<div n=\"2\">"
+    ]
+   ],
+   [
+    [
+     "<ab>v. a.</ab>",
+     "{#gagana˚#}",
+     "<ls>RAGH. 3,43</ls>",
+     "{#BU˚#}",
+     "<ls>VARĀH. BṚH. S. 61,12</ls>",
+     "<ls n=\"VARĀH. BṚH. S. 61,\">18</ls>",
+     "<div n=\"2\">"
+    ]
+   ],
+   [
+    [
+     "<ab>v. a.</ab>",
+     "{#praRaya˚#}",
+     "<ls>MĀLATĪM. 76,4</ls>",
+     "{#mada˚#}",
+     "<ls>KATHĀS. 10,24</ls>",
+     "<ls n=\"KATHĀS.\">110,130</ls>",
+     "{#vipulAKyA˚#}",
+     "<ls>Verz. d. Oxf. H. 200,a,8 v. u.</ls>",
+     "{#abjanAlalIlAyita˚#}",
+     "<ls>RĀJA-TAR. 1,208</ls>",
+     "{#Baya˚#}",
+     "<ls n=\"RĀJA-TAR.\">4,133</ls>",
+     "{#pakzacCedodyama˚#}",
+     "<ls n=\"RĀJA-TAR.\">164</ls>",
+     "<ls n=\"RĀJA-TAR.\">5,343</ls>",
+     "{#EkamatyaspfSo#}",
+     "<ls>ed. Calc.</ls>",
+     "{#dvijAH#}",
+     "<ls n=\"RĀJA-TAR.\">475</ls>",
+     "{#viplava˚#}",
+     "<ls n=\"RĀJA-TAR.\">8,915</ls>",
+     "<div n=\"2\">"
+    ]
+   ],
+   [
+    [
+     "<lex>f.</lex>",
+     "{#spfkkA#}",
+     "<ls>DHANV. 3,38</ls>",
+     "<ab>Vgl.</ab>",
+     "{#atala˚, upari˚, fta˚, kratu˚, Gfta˚, tridina˚, diva˚, divi˚, naBaH˚, Buvi˚, BU˚, BUmi˚, mantra˚, marma˚, rajaH˚, raTa˚, viSva˚, hfdaya˚, hfdi˚#}",
+     "{#spfS#}",
+     "<div n=\"1\">",
+     "<div n=\"v\">"
+    ],
+    [
+     "<lex>Adj.</lex>",
+     "<ab>Comp.</ab>",
+     "<ab>Nomin.</ab>",
+     "{#spfk#}",
+     "<div n=\"1\">"
+    ],
+    [
+     "<div n=\"2\">"
+    ],
+    [
+     "<ab>v. a.</ab>",
+     "<div n=\"2\">"
+    ],
+    [
+     "<ab>v. a.</ab>",
+     "<ls>Spr. 7688</ls>",
+     "<div n=\"2\">"
+    ],
+    [
+     "<lex>f.</lex>",
+     "{#spfkkA#}",
+     "<ls>UTPALA zu VARĀH. BṚH. 75,1</ls>",
+     "{#brAhmI#}",
+     "{#spṛś#}",
+     "{#+ anu : fassen, zugreifen. ṚV 4,4,2 .#}",
+     "{#+ apa : (° spṛṣṭa , ppp.) smitten (with affection). Gv 326.7 .#}",
+     "{#+ upa : ( apaḥ ) sich waschen.#}",
+     "{#+ úpa : berühren, heranreichen an (Akk) mit (Instr).#}",
+     "{#+ ni : rühren an, reichen an, dringen zu (Lok). ṚV 8,96,11 .#}",
+     "{#+ vi ( visparśati ): mishandles, maltreats. Śikṣās 182.11 .#}",
+     "{#– salben. TĀr(Sā) VI 10, 2 (8) zu ṚV X 18, 7 .#}",
+     "{#– (° spṛśati ): wipes away, removes (?), or perh. (as in Skt.) comes in contact with, or (PW s.v. 6) masters, gets the better of. Mvu i.359.2, 6 (vss; so mss) .#}",
+     "{#+ samabhi : touch. Hoernle 1893-1912 (I) 3.22 .#}",
+     "<div n=\"1\">"
+    ]
+   ]
+  ]
+ },
+ "fragment_tm": {},
+ "tm_resolved": {},
+ "degenerate_resolved": {},
+ "suggestions": {},
+ "presplit_keys": [],
+ "runtime": {
+  "binary_split": true,
+  "per_card_heal_budget": true,
+  "per_card_heal_factor": 1.5,
+  "per_card_heal_headroom": 3,
+  "kill_timeout_no_bisect": true,
+  "whole_attempts": 2,
+  "fragment_attempts": 3
+ },
+ "budgets": {
+  "timeout_floor_ms": 45000,
+  "timeout_ceil_ms": 600000,
+  "max_agents": 53,
+  "max_translate_agents": 16,
+  "max_heal_agents": 37,
+  "max_wide": 3,
+  "stagger_ms": 2000
+ }
+}
