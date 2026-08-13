@@ -1,0 +1,49 @@
+{
+ "arm": "A",
+ "audit": null,
+ "context_sha256": null,
+ "detail": "Claude output is not JSON: Expecting value: line 1 column 1 (char 0)",
+ "failure_class": "malformed_envelope",
+ "key1": "vyavasTA#g1",
+ "ordinal": 1,
+ "pair": 0,
+ "plan_sha256": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e",
+ "prompt_bytes": 27379,
+ "prompt_sha256": "189b22591a7374aca2583521c071c4a43ed4d13b24eca44c5b4debf0f6bb8990",
+ "raw_result": "",
+ "requested_model": "claude-opus-5",
+ "result_sha256": null,
+ "returncode": null,
+ "returned_model": null,
+ "schema": "pwg.prep_context_comparison_envelope.v1",
+ "telemetry": {
+  "cache_creation_tokens": 0,
+  "cache_read_tokens": 0,
+  "cost_evaluable": false,
+  "input_tokens": 0,
+  "observed_cost_usd": 0,
+  "output_tokens": 0,
+  "subagent_tokens": 0
+ },
+ "terminal": {
+  "api_error_status": null,
+  "duration_api_ms": null,
+  "duration_ms": null,
+  "is_error": null,
+  "num_turns": null,
+  "session_id": null,
+  "stop_reason": null,
+  "subtype": null,
+  "terminal_reason": null,
+  "total_cost_usd": null,
+  "type": null
+ },
+ "usage_cross_check": {
+  "agree": null,
+  "contradiction": null,
+  "model_usage_present": false,
+  "model_usage_total": null,
+  "usage_total": 0
+ },
+ "wall_ms": 1800000
+}

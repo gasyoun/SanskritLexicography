@@ -1,0 +1,78 @@
+{
+ "arm": "A",
+ "audit": {
+  "audited": false,
+  "coverage": 0.0,
+  "defects": [
+   "missing-or-mismatched-fragment-key"
+  ],
+  "fragments_accepted": 0,
+  "fragments_requested": 1,
+  "issues": [
+   "samIpa_f0: missing-or-mismatched-fragment-key"
+  ],
+  "schema_ok": true
+ },
+ "context_sha256": null,
+ "detail": null,
+ "failure_class": null,
+ "key1": "samIpa#g0",
+ "ordinal": 16,
+ "pair": 7,
+ "plan_sha256": "0e6a6e2516abf41836775d106a9863a689c1263f9e2bb77f5ba1209d2af0667e",
+ "prompt_bytes": 28219,
+ "prompt_sha256": "9de9110325fbc599ba5cb160f7e4ebbd4e1451c0415e453bfcbc66a9e972644d",
+ "raw_result": null,
+ "requested_model": "claude-opus-5",
+ "result_sha256": "479cd5b45f3fa22898adbab7f1ddac1ec0091dc9af67134a2111f9f6aeb1a61b",
+ "returncode": 0,
+ "returned_model": "claude-opus-5",
+ "schema": "pwg.prep_context_comparison_envelope.v1",
+ "telemetry": {
+  "accounting": {
+   "billing_mode": "unknown_gateway",
+   "cache_creation_tokens": 35388,
+   "cache_read_tokens": 24286,
+   "credit_claim_evidence": null,
+   "credit_equivalent_usd": null,
+   "input_tokens": 2,
+   "list_equivalent_usd": null,
+   "observed_cash_usd": null,
+   "output_tokens": 7056,
+   "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+   "schema": "pwg.usage_accounting.v1",
+   "usage_evaluable": true
+  },
+  "cache_creation_tokens": 35388,
+  "cache_read_tokens": 24286,
+  "cost_evaluable": false,
+  "duration_api_ms": 97481,
+  "duration_ms": 104960,
+  "input_tokens": 2,
+  "observed_cost_usd": 0,
+  "output_tokens": 7056,
+  "subagent_tokens": 66732
+ },
+ "terminal": {
+  "api_error_status": null,
+  "duration_api_ms": 97481,
+  "duration_ms": 104960,
+  "is_error": false,
+  "num_turns": 2,
+  "session_id": "ecb8149d-8cd5-452a-9041-fa1f6a7b09c2",
+  "stop_reason": "tool_use",
+  "subtype": "success",
+  "terminal_reason": "completed",
+  "total_cost_usd": 0.542433,
+  "type": "result"
+ },
+ "usage_cross_check": {
+  "agree": true,
+  "contradiction": null,
+  "model_usage_present": true,
+  "model_usage_total": 66732,
+  "usage_total": 66732
+ },
+ "usage_recovery": null,
+ "wall_ms": 119158
+}

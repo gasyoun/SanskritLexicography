@@ -1127,22 +1127,31 @@ def execute(plan: dict, *, ledger_path: str, run_id: str, out_dir: str,
             if wrapper is not None else unevaluable_telemetry())
 
         cross = usage_cross_check(telemetry, wrapper)
+        telemetry, recovery = recover_usage(telemetry, wrapper, cross)
 
         structured, audit, failure = None, None, None
-        if parse_error:
-            failure = 'malformed_envelope'
-        elif result.get('timed_out'):
+        if result.get('timed_out'):
+            # MUST precede the parse check. A timed-out call returns empty stdout, which
+            # never parses — so with `parse_error` first the `timeout` class was
+            # unreachable by construction and every abandoned call was filed as
+            # `malformed_envelope`, i.e. "the provider sent garbage" when the truth is "we
+            # stopped waiting". Found by H2612's own run: ordinal 1 sat for the full 1800 s
+            # and was recorded as a malformed envelope.
             failure = 'timeout'
+        elif parse_error:
+            failure = 'malformed_envelope'
         elif result.get('returncode'):
             # H2591: a non-zero exit is its OWN class. Five of that run's seven zero-usage
             # calls were rc=1 refusals whose `result` held an error string, and lumping
             # them under `unstructured_result` made a provider refusal look like a model
             # quality defect on a dense card.
             failure = 'cli_error_exit'
-        elif cross.get('agree') is False:
+        elif cross.get('agree') is False and not recovery:
             # Strictly more informative than `missing_usage`, so it must classify FIRST:
             # a contradiction proves the tokens existed and the accounting block was
-            # dropped, where `missing_usage` only says the block read empty.
+            # dropped, where `missing_usage` only says the block read empty. A RECOVERED
+            # call is exempt — the number was retrieved from the validated second source,
+            # so there is nothing unsound left downstream to stop for.
             failure = 'usage_contradiction'
         elif not usage_evaluable(telemetry):
             failure = 'missing_usage'
@@ -1169,6 +1178,7 @@ def execute(plan: dict, *, ledger_path: str, run_id: str, out_dir: str,
             'detail': parse_error,
             'terminal': {name: (wrapper or {}).get(name) for name in TERMINAL_FIELDS},
             'usage_cross_check': cross,
+            'usage_recovery': recovery,
             # For a call that yielded no structured card the returned STRING is the
             # evidence; H2591 kept only the parse error, so five failures could never be
             # diagnosed after the fact. Truncated, never dropped.
@@ -1193,6 +1203,15 @@ def execute(plan: dict, *, ledger_path: str, run_id: str, out_dir: str,
         if returned_model and plan['model'] not in str(returned_model):
             stopped = 'model_substitution: requested %s, returned %r' % (
                 plan['model'], returned_model)
+            break
+        if failure == 'timeout':
+            # Ordered ahead of the unattested check because it EXPLAINS it: an abandoned
+            # call names no model for an obvious reason, and reporting "paid call returned
+            # no model" for a call we stopped waiting on points the next session at the
+            # wrong thing. Both stop the run; only one of them says what happened.
+            stopped = ('timeout at ordinal %d after %.0f s — the call did not return '
+                       'within the rig\'s timeout' % (step['ordinal'],
+                                                      (result.get('wall_ms') or 0) / 1000))
             break
         if not returned_model:
             # H2591 call 09 was reserved, finalized and PAID while naming no model at all,
@@ -1261,6 +1280,49 @@ def model_usage_tokens(wrapper) -> dict | None:
             if isinstance(value, (int, float)) and value >= 0:
                 out[ours] += int(value)
     return out if seen else None
+
+
+def recover_usage(telemetry: dict, wrapper, cross: dict) -> tuple[dict, dict | None]:
+    """Adopt `modelUsage` when the top-level `usage` block was DROPPED, and say so.
+
+    H2591 left "2 of 16 calls reported zero usage on a clean exit" as its unexplained
+    class, and B1 could only call it intermittent. H2612's measured run identified it:
+    ordinal 5 came back `type: result`, `subtype: success`, `terminal_reason: completed`,
+    `is_error: false`, `num_turns: 2`, `total_cost_usd: 0.4029715`, a full audited card —
+    and a top-level `usage` block of all zeros beside a `modelUsage` reporting 73 620
+    tokens. The tokens were spent and counted; only the accounting block was dropped.
+
+    So this one direction of disagreement is no longer an unexplained integrity breach, and
+    halting on it throws away a measurement that exists. `modelUsage` is a VALIDATED source
+    here — B1 measured the two agreeing exactly on healthy calls — so adopting it recovers
+    the number rather than inventing one. Every recovery is recorded on the envelope; a run
+    that leans on it says so in its receipt.
+
+    Deliberately narrow: ONLY zero-usage-beside-populated-modelUsage recovers. Any other
+    disagreement (both populated and different, or `usage` populated while `modelUsage` is
+    zero) stays unexplained and still stops the run.
+    """
+    if cross.get('agree') is not False:
+        return telemetry, None
+    if cross.get('usage_total') or not cross.get('model_usage_total'):
+        return telemetry, None                      # not the known-dropped-block direction
+    theirs = model_usage_tokens(wrapper)
+    if not theirs:
+        return telemetry, None
+    recovered = dict(telemetry)
+    recovered.update(theirs)
+    recovered['cost_evaluable'] = True
+    accounting = dict(recovered.get('accounting') or {})
+    if accounting:
+        accounting.update(theirs)
+        accounting['usage_evaluable'] = True
+        accounting['usage_source'] = 'modelUsage'
+        recovered['accounting'] = accounting
+    recovered['usage_source'] = 'modelUsage'
+    return recovered, {
+        'reason': 'top-level usage block was dropped; modelUsage carried the real counts',
+        'adopted': theirs, 'model_usage_total': cross['model_usage_total'],
+    }
 
 
 def usage_cross_check(telemetry: dict, wrapper) -> dict:
@@ -1365,6 +1427,47 @@ def _arm_totals(envelopes: list[dict], arm: str) -> dict:
     }
 
 
+def paired_deltas(envelopes: list[dict]) -> dict:
+    """Wall/token margins over the units where BOTH arms returned schema.
+
+    This is the only comparison that is about translating the same unit twice. Arm TOTALS
+    are not: a failed call still contributes its wall time, so an arm that fails slowly
+    hands the other arm a margin that has nothing to do with translation quality or speed.
+    Both sealed runs to date fired a GO on exactly that artefact.
+
+    Also reports how many units each arm won, because a margin carried by one unit out of
+    seven is a different claim from a margin that holds across them.
+    """
+    produced = {arm: {e['key1']: e for e in envelopes
+                      if e['arm'] == arm and e.get('result_sha256')}
+                for arm in ('A', 'B')}
+    units = sorted(set(produced['A']) & set(produced['B']))
+    wall = {'A': 0, 'B': 0}
+    tokens = {'A': 0, 'B': 0}
+    faster = 0
+    for unit in units:
+        for arm in ('A', 'B'):
+            row = produced[arm][unit]
+            telemetry = row.get('telemetry') or {}
+            wall[arm] += int(row.get('wall_ms') or 0)
+            tokens[arm] += (int(telemetry.get('input_tokens') or 0)
+                            + int(telemetry.get('output_tokens') or 0))
+        if (produced['B'][unit].get('wall_ms') or 0) < (produced['A'][unit].get('wall_ms') or 0):
+            faster += 1
+    return {
+        'units': units,
+        'unit_count': len(units),
+        'wall_ms_total': dict(wall),
+        'non_cache_tokens': dict(tokens),
+        'wall_ms_relative_gain': _relative_gain(wall['A'], wall['B']),
+        'non_cache_token_relative_gain': _relative_gain(tokens['A'], tokens['B']),
+        'prep_faster_units': faster,
+        'basis': ('units where BOTH arms returned schema; arm totals are reported too but '
+                  'are NOT the GO basis — a failed call contributes wall time and rewards '
+                  'the arm that fails faster'),
+    }
+
+
 def build_receipt(plan: dict, run: dict, *, check_report: dict) -> dict:
     """`pwg.prep_context_comparison.v1` — the GO/NO-GO the handoff closes on."""
     envelopes = run['envelopes']
@@ -1376,8 +1479,17 @@ def build_receipt(plan: dict, run: dict, *, check_report: dict) -> dict:
     lost = arm_a['audited_pass'] - arm_b['audited_pass']
     wall_gain = _relative_gain(arm_a['wall_ms_total'], arm_b['wall_ms_total'])
     token_gain = _relative_gain(arm_a['non_cache_tokens'], arm_b['non_cache_tokens'])
-    improves = (wall_gain is not None and wall_gain > 0.10) or \
-               (token_gain is not None and token_gain > 0.10)
+    paired = paired_deltas(envelopes)
+    # The GO now keys off the PAIRED margin, over the units where BOTH arms returned
+    # schema. Twice in a row the arm totals fired a GO that decomposition then withdrew:
+    # H2591's +26.9 % was mostly the difference between how long each arm took to FAIL, and
+    # H2612's +10.21 % rested on one arm-A refusal — remove it and the same margin inverts
+    # to -8.85 %, while the honest paired figure is +4.25 %. An arm total silently rewards
+    # the arm that fails FASTER, which is the opposite of what is being qualified.
+    paired_wall = paired['wall_ms_relative_gain']
+    paired_token = paired['non_cache_token_relative_gain']
+    improves = (paired_wall is not None and paired_wall > 0.10) or \
+               (paired_token is not None and paired_token > 0.10)
 
     # A GO must rest on evidence that exists. Token totals built over calls whose usage came
     # back zero-filled are not a measurement, and a wall-time margin is not a substitute:
@@ -1424,7 +1536,9 @@ def build_receipt(plan: dict, run: dict, *, check_report: dict) -> dict:
             'audited_cards_lost_by_prep': lost,
             'wall_ms_relative_gain': wall_gain,
             'non_cache_token_relative_gain': token_gain,
+            'basis': 'ARM TOTALS — reported for continuity, NOT the GO basis (see paired_deltas)',
         },
+        'paired_deltas': paired,
         'billing': check_report.get('billing'),
         'go_rule': plan['go_rule'],
         'evidence_holes': {
@@ -1434,6 +1548,13 @@ def build_receipt(plan: dict, run: dict, *, check_report: dict) -> dict:
                                        + arm_b['unattested_model_calls']),
             'effect': ('any hole forces INCONCLUSIVE — a token comparison over zero-filled '
                        'usage is a hole wearing the costume of a measurement'),
+            # Not a hole, but not silent either: a run that leans on the recovered second
+            # source has to say which calls it leaned on, or the token axis looks uniformly
+            # first-hand when part of it was reconstructed.
+            'usage_recovered_from_model_usage': [
+                {'ordinal': e['ordinal'], 'arm': e['arm'], 'key1': e['key1'],
+                 'model_usage_total': (e.get('usage_recovery') or {}).get('model_usage_total')}
+                for e in envelopes if e.get('usage_recovery')],
         },
         'verdict': verdict,
         'promotion': {'store_written': False, 'tm_written': False,
