@@ -69,10 +69,11 @@ def _fragment_lane(manifest, *, groups_per_key=2, heavy_key=None, heavy_groups=0
     return manifest
 
 
-def _manifest(tmp, *, credit=True):
+def _manifest(tmp, *, credit=True, keys=None):
     """A minimal but SHAPE-REAL manifest: build_prompt must accept it unchanged."""
+    keys = list(keys or KEYS)
     inputs = {}
-    for index, key in enumerate(KEYS):
+    for index, key in enumerate(keys):
         inputs[key] = {
             'skeleton': 'sense {T%d} gloss\n' % (index + 1),
             'portrait': '{"key1": "%s"}' % key,
@@ -92,7 +93,7 @@ def _manifest(tmp, *, credit=True):
                    'grammars': {}, 'nws_rule': 'NWS'},
         'output_schema': {'type': 'object', 'properties': {'cards': {'type': 'array'}}},
         'inputs': inputs,
-        'placeholder_maps': {k: ['<ls>x</ls>'] for k in KEYS},
+        'placeholder_maps': {k: ['<ls>x</ls>'] for k in keys},
     }
     path = os.path.join(tmp, 'execution_manifest.selftest.json')
     with open(path, 'w', encoding='utf-8', newline='\n') as handle:
@@ -100,11 +101,11 @@ def _manifest(tmp, *, credit=True):
     return path, manifest
 
 
-def _contexts(tmp, manifest_path, manifest):
+def _contexts(tmp, manifest_path, manifest, keys=None):
     """Seal one manifest-sourced context per key via prep_pack's own writer."""
     context_dir = os.path.join(tmp, 'contexts')
     manifest_sha = pcc.sha256_file(manifest_path)
-    for index, key in enumerate(KEYS):
+    for index, key in enumerate(list(keys or KEYS)):
         pack = prep_pack.empty_pack(key, mode='dry')
         pack['sense_inventory'] = [{'i': 0, 'sense_tag': '1',
                                     'de_anchor': 'gloss {T%d}' % (index + 1), 'layer': 'de'}]
@@ -657,6 +658,104 @@ def test_selection_rule_is_deterministic_and_stratified():
     print('  ok   selection is order-independent, disjoint, and two per stratum')
 
 
+def _short_plan(tmp, pair_count, *, credit=True):
+    """A sealed plan over `pair_count` keys — the H2630 Option A shape."""
+    keys = KEYS[:pair_count]
+    manifest_path, manifest = _manifest(tmp, credit=credit, keys=keys)
+    context_dir = _contexts(tmp, manifest_path, manifest, keys)
+    plan = pcc.build_plan(manifest_path, context_dir, pair_count=pair_count)
+    return plan, manifest_path, manifest, context_dir
+
+
+def test_pair_count_shrinks_the_sample_and_the_call_ceiling():
+    """H2630 Option A: n=4 seals a ceiling of 8, and the ledger is built at THAT ceiling."""
+    with tempfile.TemporaryDirectory() as tmp:
+        plan, _mp, _m, _cd = _short_plan(tmp, 4)
+        assert plan['pair_count'] == 4, 'a non-default sample size must be SEALED'
+        assert plan['max_calls'] == 8, 'ceiling must be 2 x pair_count, not the module 16'
+        assert len(plan['keys']) == 4 and len(plan['order']) == 8
+        assert pcc.plan_pair_count(plan) == 4 and pcc.plan_max_calls(plan) == 8
+        # Both arms must still alternate who goes first, exactly as at n=8.
+        assert [step['arm'] for step in plan['order']] == list('ABBAABBA')
+        report = pcc.check(plan, ledger_path=os.path.join(tmp, 'l.json'), run_id='n4')
+        assert report['ok'] and report['conditions']['fresh_reservation_ledger']
+        with open(os.path.join(tmp, 'l.json'), encoding='utf-8') as handle:
+            assert json.load(handle)['runs']['n4']['max_calls'] == 8
+        print('  ok   a sealed pair_count shrinks both the sample and the call ceiling')
+
+
+def test_default_plan_never_carries_the_pair_count_key():
+    """The n=8 hash must not move: H2591/H2612 sealed plans have to keep verifying."""
+    with tempfile.TemporaryDirectory() as tmp:
+        plan, _mp, _m, _cd = _plan(tmp)
+        assert 'pair_count' not in plan, 'the default must add no key, or every old hash moves'
+        assert plan['max_calls'] == pcc.MAX_CALLS
+        assert pcc.plan_pair_count(plan) == pcc.PAIR_COUNT
+        print('  ok   a default-size plan carries no pair_count key, so old hashes replay')
+
+
+def test_pair_count_may_shrink_but_never_grow():
+    with tempfile.TemporaryDirectory() as tmp:
+        manifest_path, manifest = _manifest(tmp)
+        context_dir = _contexts(tmp, manifest_path, manifest)
+        for bad in (0, -1, pcc.PAIR_COUNT + 1, 16):
+            try:
+                pcc.build_plan(manifest_path, context_dir, pair_count=bad)
+            except pcc.FenceFailure:
+                continue
+            raise AssertionError('pair_count=%r must be refused' % bad)
+        print('  ok   pair_count may shrink the sample, never grow past the ceiling')
+
+
+def test_whole_card_pool_is_productions_own_predicate():
+    """Membership of the 8 % lane is production's call, not a threshold restated here."""
+    import gen_opt_harness2
+
+    pool, expected = {}, []
+    for index in range(12):
+        ls, senses = (index * 9), (index % 5)
+        pool['w%02d' % index] = {'bytes': 900, 'placeholders': 3,
+                                 'source_senses': senses, 'ls': ls}
+        cite_hit, sense_hit = gen_opt_harness2._presplit_hit(
+            ls, senses, gen_opt_harness2.OUTPUT_BUDGET)
+        if not (cite_hit or sense_hit):
+            expected.append('w%02d' % index)
+    chosen = pcc.select_whole_card_keys(pool)
+    assert chosen == sorted(expected), (chosen, expected)
+    assert chosen == pcc.select_whole_card_keys(dict(reversed(list(pool.items())))), \
+        'membership must not depend on dict order'
+    try:
+        pcc.select_whole_card_keys({'dense': {'bytes': 9, 'placeholders': 0,
+                                              'source_senses': 99, 'ls': 999}})
+    except pcc.FenceFailure:
+        pass
+    else:
+        raise AssertionError('a pool with no whole-card key has no lane to qualify')
+    print('  ok   whole-card membership is production\'s predicate, order-independent')
+
+
+def test_execute_ceiling_is_read_from_the_plan_not_the_module():
+    """The hole this closes: check at one ceiling, execute at another."""
+    with tempfile.TemporaryDirectory() as tmp:
+        plan, manifest_path, _m, _cd = _short_plan(tmp, 4)
+        ledger_path = os.path.join(tmp, 'l.json')
+        report = pcc.check(plan, ledger_path=ledger_path, run_id='n4')
+        assert report['ok']
+        log = []
+        run = pcc.execute(plan, ledger_path=ledger_path, run_id='n4',
+                          out_dir=os.path.join(tmp, 'env'),
+                          caller=_caller_factory(log=log), manifest_path=manifest_path,
+                          billing=report['billing'])
+        assert run['calls_spent'] == 8, run['calls_spent']
+        assert not run['stopped'], run['stopped']
+        assert len(log) == 8 and len({k for k, _ in log}) == 4
+        receipt = pcc.build_receipt(plan, run, check_report=report)
+        assert receipt['n'] == 4 and receipt['call_ceiling'] == 8
+        assert receipt['complete'] is True, 'n=4 completeness must not be judged against 16'
+        assert receipt['handoff'] == 'H2630'
+        print('  ok   the call ceiling and completeness come from the sealed plan')
+
+
 def test_offline_check_makes_no_transport_call():
     with tempfile.TemporaryDirectory() as tmp:
         plan, _mp, _m, _cd = _plan(tmp)
@@ -700,6 +799,11 @@ CASES = [
     test_fragment_group_selection_cannot_be_swallowed_by_one_card,
     test_fragment_audit_scores_each_fragment_against_its_own_skeleton,
     test_selection_rule_is_deterministic_and_stratified,
+    test_pair_count_shrinks_the_sample_and_the_call_ceiling,
+    test_default_plan_never_carries_the_pair_count_key,
+    test_pair_count_may_shrink_but_never_grow,
+    test_whole_card_pool_is_productions_own_predicate,
+    test_execute_ceiling_is_read_from_the_plan_not_the_module,
     test_offline_check_makes_no_transport_call,
 ]
 

@@ -1,0 +1,68 @@
+{
+ "input_dir": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\input",
+ "keys": [
+  "idAnIm",
+  "prasU",
+  "rAtra",
+  "spfS"
+ ],
+ "metrics": {
+  "idAnIm": {
+   "bytes": 3429,
+   "content_sha256": "76376716b232fd8d4a2f8ad1894340e24899d4eaae1e1a484f1091e824ed258d",
+   "duplicate_spellings": [
+    "id_an_im"
+   ],
+   "ls": 35,
+   "placeholders": 88,
+   "source_senses": 2
+  },
+  "prasU": {
+   "bytes": 5397,
+   "content_sha256": "473c354af6352a985ba18a9e2ec839479321391e59c1e42683cbfd494547a5de",
+   "duplicate_spellings": [
+    "pras_u"
+   ],
+   "ls": 30,
+   "placeholders": 75,
+   "source_senses": 2
+  },
+  "rAtra": {
+   "bytes": 2409,
+   "content_sha256": "fb16a3ae4e1fa8c8c06db2f3f5d5151eec28826df4d897de0c1d36703f2972a4",
+   "duplicate_spellings": [
+    "r_atra"
+   ],
+   "ls": 32,
+   "placeholders": 86,
+   "source_senses": 2
+  },
+  "spfS": {
+   "bytes": 11134,
+   "content_sha256": "5d8d60c3de6f95fd14998cdcbb8e5cb1a956b540bcf734d8e8f4425382994f23",
+   "duplicate_spellings": [
+    "spf_s"
+   ],
+   "ls": 29,
+   "placeholders": 87,
+   "source_senses": 2
+  }
+ },
+ "pair_count": 4,
+ "pool": "whole-card",
+ "pool_size": 48,
+ "schema": "pwg.prep_context_comparison_selection.v1",
+ "strata": {},
+ "strata_collapsed": true,
+ "whole_card_pool_rule": {
+  "census_not_sample": "the whole-card pool holds exactly as many cards as the plan takes, so this is the POPULATION of the 8 % lane, not a draw from it. No stratification is possible or needed; the four strata of SELECTION_RULE collapse by construction.",
+  "exclusions": [
+   "synthetic fixtures and content duplicates, on SELECTION_RULE's terms — the pool is the same 48 distinct real cards, only classified rather than ranked",
+   "every card production presplits: those go through the fragment lane, which H2612 qualifies separately"
+  ],
+  "frozen": "keys are sealed into plan.json before any call; a failed card is never replaced",
+  "known_bias": "whole-card cards are citation-light by construction — that is WHY production takes them whole — so this lane cannot exhibit the citation-dense failure mode at all",
+  "pool": "every key production does NOT presplit, classified with production's own predicate gen_opt_harness2._presplit_hit at its own cite floor and sense budget — read from the module, never restated here",
+  "unit": "a UNIT is one whole card, called once per arm, exactly as the whole lane does"
+ }
+}
