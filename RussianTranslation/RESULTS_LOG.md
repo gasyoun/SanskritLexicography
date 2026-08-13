@@ -1,8 +1,23 @@
 # RussianTranslation — results log
 
-_Created: 09-07-2026 · Last updated: 10-08-2026_
+_Created: 09-07-2026 · Last updated: 13-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
+
+## 13-08-2026 — H2488 (Grok 4.6) — E1 Flash 0731 vs c4 on frozen 40-key H1210 head — FAIL, no draft-lane
+
+Grok 4.6 (`grok-4.6`). Paid arm B only (`deepseek-v4-flash`, 8192-token cap, `--no-tm`). Arm A c4 BLOCKED_ON_C4_INFRA. Report: [E1_FLASH_0731_VS_C4_REPORT_13-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/E1_deepseek_vs_c4/E1_FLASH_0731_VS_C4_REPORT_13-08-2026.md).
+
+| Metric | Arm B Flash 0731 | Arm A c4 |
+|---|---:|---|
+| n attempted | 40 | not run |
+| unattended shippable | 4 (10%) | H1210 parent 72% (n=100) |
+| canonical promote-DRY | 6 (15%) | H1210 parent 93% |
+| worker-null-death | 34 (85%) | — |
+| USD | 0.2317 | n/a (subscription / blocked) |
+| USD / shippable | 0.0579 | — |
+| store_write | false | — |
+| verdict | FAIL (clause 1 vs H1210 72%) | BLOCKED_ON_C4_INFRA |
 
 ## 10-08-2026 — H2554 (Codex) — router.cheap canary contract + exact-dispatch attestation — ✅ OFFLINE REPAIR PASS; 0 calls
 
