@@ -265,7 +265,7 @@ def main():
     ap2.add_argument('--slice-payload', required=True)
     ap2.add_argument('--manifest', required=True)
     ap2.add_argument('--env-file', default=None)
-    ap2.add_argument('--max-tokens', type=int, default=8192)
+    ap2.add_argument('--max-tokens', type=int, default=ds.DEFAULT_MAX_TOKENS)
     ap2.add_argument('--null-retry', action='store_true',
                      help='leave deadline-nulled verdicts pending for the next round instead '
                           'of escalating them')
