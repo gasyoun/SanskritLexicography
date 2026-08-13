@@ -4,6 +4,70 @@ _Created: 09-07-2026 · Last updated: 13-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 13-08-2026 — H2647 (Opus 5) — c1 gate-0 under normal concurrent load — ❌ NO-GO on the API ceiling, but c1's FIRST successful calls ever; self-contention and quota both eliminated
+
+Opus 5 (`claude-opus-5`). One probe, two reserved legs, both fired and both **succeeded**.
+`run_id` `h963-c1-single-profile-gate0/2026-08-13T17:46:30Z-pid33892`. Fired deliberately under
+the conditions the retired acceptance banned — from a live `claude1` agent session, with **22
+live `claude` CLI processes** on the machine, **2 h 24 m inside** the 6 h ration window (MG
+directed "fire the probe right now"). Kill ceiling **600 000 ms** in force
+([PR #1679](https://github.com/gasyoun/SanskritLexicography/pull/1679), verified in the checkout
+before firing).
+
+| leg | wall `elapsed_ms` | CLI `duration_ms` | **`duration_api_ms`** | `api_gap_ms` | out B | class |
+|---|--:|--:|--:|--:|--:|---|
+| warm-up | 188 696 | 47 048 | 37 953 | **150 743** | 1 420 | **success** |
+| measured | 76 990 | 54 582 | **47 736** | 29 254 | 1 432 | **success** |
+
+**Verdict: NO-GO** — sole cause `measured ROUTE latency 47 736 ms >= 45 000 ms api ceiling`.
+Both legs carried `schema_valid: true`. Ledger: `finalized_calls: 2`, `pending_calls: 0`,
+`unevaluable_calls: 2`.
+
+**Cost: UNEVALUABLE, not zero.** `cost_evaluable: false`, `billing_mode: "unknown_gateway"`,
+`observed_cash_usd: null` on both legs. Tokens are known — 8 in / 6 357 out / 154 136 cache-read
+/ 93 210 cache-create / 253 711 subagent — but no cash figure may be derived from them on this
+route. The `observed_cost_usd: 0` field is the absence of an evaluation, never a free call.
+
+### Ruling — what the reading eliminates
+
+| hypothesis | status | on what evidence |
+|---|---|---|
+| **Self-contention with the driving session** (H2326 #3) | **ELIMINATED** | Fired from the exact banned seat under 22 concurrent CLI processes and still returned two valid successes. Concurrency does not prevent completion. This was the sole question H2647 was minted to settle. |
+| **Account cap / quota exhaustion** | **ELIMINATED at this moment** | No `rate_limit`, no silent hang; real token accounting including 154 k cache reads. c1 answered normally. |
+| **"c1 is a dead lane"** (zero PASSes in its whole history) | **OVERTURNED** | These are c1's first two successful calls on record. The lane is alive and was never administratively stopped. |
+| **Slow route on c1** | **SURVIVES — and is now the isolated bottleneck** | `duration_api_ms` 47 736 ms is *server-side API time*: not startup, not backoff, not our kill. It misses the 45 000 ms ceiling by **6.1 %**. |
+
+### Two corrections to the record
+
+**1. The 600 s ceiling was NOT exercised, and the prediction attached to it failed.** H2647's
+revised outcome table said a completion between 300 s and 600 s would be direct proof the old
+gate manufactured NO-GOs. That did not happen: the longest leg was 188 696 ms, comfortably inside
+the retired 300 s kill. The fix in #1679 stands on the H2313 owner ruling, **not** on this run,
+and this run does not demonstrate the old constant was what blocked c1. Stated plainly because
+the opposite is the convenient reading.
+
+**2. But the fix was still load-bearing, for a reason this run does reveal:** the warm-up's
+`api_gap_ms` was **150 743 ms — 80 % of its 188.7 s wall was not API time at all** (the CLI's own
+`duration_ms` was 47 s). Under the retired 300 s kill this call had only ~111 s of headroom, and
+essentially all of it was consumable by *overhead*, not by the model. A gate whose kill sits
+~2 × its own overhead term is one slow leg away from a 0-byte kill — which is exactly the shape
+of the 13-08 12:35 reading. That reading remains **unreadable by construction**
+([§378](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md),
+[issue #1680](https://github.com/gasyoun/SanskritLexicography/issues/1680)); today's success does
+not retroactively explain it, it only removes the hypotheses that were being hung on it.
+
+### What must NOT happen next
+
+**Do not re-derive the 45 000 ms API ceiling to make this pass.** The reading is a genuine
+server-side latency miss with full content on both legs — the one case where the number is doing
+its job. Moving a ceiling that a real measurement just failed is the H2299 ban, and it is
+precisely the tempting move here because the miss is only 6 %. Any change to that ceiling needs
+its own owner ruling on its own measured distribution, exactly as H2313 had.
+
+The open question is now narrow and answerable: **is c1's ~47.7 s route latency stable or a
+tail?** That needs a distribution, not another single probe — and the next legal c1 attempt is
+**≥ 23:50:56Z 13-08-2026** (six hours from the measured `probe_call` row).
+
 ## 13-08-2026 — H2488 (Grok 4.6) — E1 Flash 0731 vs c4 on frozen 40-key H1210 head — FAIL, no draft-lane
 
 Grok 4.6 (`grok-4.6`). Paid arm B only (`deepseek-v4-flash`, 8192-token cap, `--no-tm`). Arm A c4 BLOCKED_ON_C4_INFRA. Report: [E1_FLASH_0731_VS_C4_REPORT_13-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/E1_deepseek_vs_c4/E1_FLASH_0731_VS_C4_REPORT_13-08-2026.md).
