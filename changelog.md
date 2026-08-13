@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.44] - 2026-08-13
+
 ### Added
 - **H2488 (Grok 4.6, `grok-4.6`) — E1 Flash 0731 vs c4 on the frozen 40-key H1210 head:** paid `deepseek-v4-flash` arm B (40/40 attempted, 113 calls, $0.2317, no TM/store write). Unattended shippable **4/40 (10%)**, canonical promote-DRY **6/40 (15%)**, **34/40** `worker-null-death` at the locked 8192-token cap (`finish_reason=length`). Fresh c4 arm A BLOCKED_ON_C4_INFRA; verdict **FAIL** against the H1210 72% own-data c4 baseline — no production draft-lane. Report: [E1_FLASH_0731_VS_C4_REPORT_13-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/E1_deepseek_vs_c4/E1_FLASH_0731_VS_C4_REPORT_13-08-2026.md).
 
