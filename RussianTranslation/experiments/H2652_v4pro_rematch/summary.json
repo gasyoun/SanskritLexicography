@@ -1,0 +1,23 @@
+{
+  "schema": "pwg.h2652_summary.v1",
+  "n_q3": 22,
+  "attempted": 5,
+  "det_gate_clean": 1,
+  "worker_null_death": 4,
+  "not_attempted": 17,
+  "verdict": "FAIL",
+  "failure_class": "transport",
+  "store_write": false,
+  "would_promote": false,
+  "ticket1": {
+    "key1": "ya_tepsita",
+    "served_model": "deepseek-v4-pro",
+    "model_matches_request": true,
+    "reasoning_effort": "high",
+    "final_status": "pending-controller",
+    "det_issues": [],
+    "usd": 0.0089,
+    "reasoning_tokens": 9410,
+    "completion_tokens": 10164
+  }
+}
