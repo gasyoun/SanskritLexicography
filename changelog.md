@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+### Added
+- **H2652 V4-Pro rematch harness pin + frozen verdict rule** (Grok 4.6 `grok-4.6`, 13-08-2026): `deepseek_arm.py` selects Pro/Flash PRICE_* from the requested model and accepts `--reasoning-effort low|high|max` (thinking body pinned, served-model attested). Frozen Q3 sample + verdict live under [`experiments/H2652_v4pro_rematch/`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/H2652_v4pro_rematch/VERDICT_RULE.md). Default model stays `deepseek-v4-flash`. No TM write.
+
 ## [1.144.43] - 2026-08-13
 
 ### Added
