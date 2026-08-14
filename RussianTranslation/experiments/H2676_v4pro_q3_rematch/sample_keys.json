@@ -1,0 +1,56 @@
+{
+  "schema": "pwg.h2676_v4pro_sample.v1",
+  "frozen_at": "2026-08-13",
+  "source": "src/pilot/h1210/H1210_ab100_worklist.28.07.26.json",
+  "handoff": "H2676",
+  "same_as": "H2652",
+  "control": {
+    "h1210_arm_b_q3_shippable": "15/22",
+    "h1210_arm_b_q3_audit_clean": "19/22",
+    "h1210_generator": "deepseek-chat",
+    "h1210_usd_per_clean": 0.0093
+  },
+  "d16": {
+    "det_clean_floor": "15/22",
+    "usd_per_clean_ceiling": 0.0465,
+    "flash_usd_per_clean": 0.0093,
+    "multiple": 5
+  },
+  "main_arm": {
+    "stratum": "H1210 Q3 (670-4349 B)",
+    "effort": "high",
+    "n": 22,
+    "probe_first": "yaTepsita",
+    "keys": [
+      "yaTepsita",
+      "viSvaha",
+      "viSa",
+      "drAvaRa",
+      "parRin",
+      "saMsargin",
+      "kakzIvant",
+      "aNgaja",
+      "vyatyaya",
+      "roza",
+      "prasU",
+      "divA",
+      "vazawkAra",
+      "anarTa",
+      "saBAjay",
+      "viD",
+      "dIkzA",
+      "pAvana",
+      "pfTak",
+      "yatna",
+      "ras",
+      "vicitra"
+    ]
+  },
+  "optional_max_subarm": {
+    "stratum": "3 smallest S2 intersect Q4",
+    "effort": "max",
+    "n": 3,
+    "keys": ["hanta", "purastAt", "svaBAva"],
+    "note": "telemetry only; cannot flip VERDICT_RULE"
+  }
+}

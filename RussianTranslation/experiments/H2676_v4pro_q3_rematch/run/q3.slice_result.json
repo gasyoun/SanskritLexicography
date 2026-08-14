@@ -1,0 +1,2878 @@
+{
+ "slice": [
+  "ya_tepsita",
+  "vi_svaha",
+  "vi_sa",
+  "dr_ava_ra",
+  "par_rin",
+  "sa_msargin",
+  "kakz_ivant",
+  "a_ngaja",
+  "vyatyaya",
+  "roza",
+  "pras_u",
+  "div_a",
+  "vazawk_ara",
+  "anar_ta",
+  "sa_b_ajay",
+  "vi_d",
+  "d_ikz_a",
+  "p_avana",
+  "pf_tak",
+  "yatna",
+  "ras",
+  "vicitra"
+ ],
+ "arm": "B_deepseek",
+ "generator": {
+  "model": "deepseek-v4-pro",
+  "base_url": "https://api.deepseek.com",
+  "temperature": 0.2,
+  "max_tokens": 32768,
+  "response_format": "json_object"
+ },
+ "results": [
+  {
+   "key1": "ya_tepsita",
+   "attempts": 1,
+   "complexity_score": 6.64,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "vi_svaha",
+   "attempts": 1,
+   "complexity_score": 10.77,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "vi_sa",
+   "attempts": 1,
+   "complexity_score": 7.1,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "dr_ava_ra",
+   "attempts": 1,
+   "complexity_score": 6.52,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "par_rin",
+   "attempts": 3,
+   "complexity_score": 9.54,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 0.99,
+   "det_issues": [
+    "fidelity: masked spans missing from senses' german: {T34} — EVERY {Tn} from the source must appear in a sense's german AND russian, in source order; card.notes must NOT hold source {Tn} spans (notes is never unmasked, so content parked there is LOST)",
+    "translation-fidelity: masked spans missing from senses' russian: {T34} — the russian text must carry the same {Tn} spans as the german (citations/Sanskrit are language-independent)"
+   ],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "worker-null-death",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "sa_msargin",
+   "attempts": 1,
+   "complexity_score": 5.44,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "kakz_ivant",
+   "attempts": 1,
+   "complexity_score": 17.78,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "a_ngaja",
+   "attempts": 1,
+   "complexity_score": 12.0,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "vyatyaya",
+   "attempts": 1,
+   "complexity_score": 15.78,
+   "complexity_flag": true,
+   "self_report_unsure": true,
+   "self_report_note": "No explicit sense numbering in masked PWG main entry; rendered each layer as one sense.",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "roza",
+   "attempts": 1,
+   "complexity_score": 24.51,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "pras_u",
+   "attempts": 1,
+   "complexity_score": 7.91,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "div_a",
+   "attempts": 1,
+   "complexity_score": 27.86,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "vazawk_ara",
+   "attempts": 1,
+   "complexity_score": 24.79,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "anar_ta",
+   "attempts": 2,
+   "complexity_score": 9.65,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "sa_b_ajay",
+   "attempts": 2,
+   "complexity_score": 15.98,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "vi_d",
+   "attempts": 1,
+   "complexity_score": 18.06,
+   "complexity_flag": true,
+   "self_report_unsure": true,
+   "self_report_note": "uncertain about rendering Latin 'viduor' and some syntactic translations",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "d_ikz_a",
+   "attempts": 2,
+   "complexity_score": 18.84,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "p_avana",
+   "attempts": 1,
+   "complexity_score": 26.87,
+   "complexity_flag": true,
+   "self_report_unsure": true,
+   "self_report_note": "genitive 's rendering uncertain due to masked token",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "pf_tak",
+   "attempts": 1,
+   "complexity_score": 18.39,
+   "complexity_flag": true,
+   "self_report_unsure": true,
+   "self_report_note": "PWG main record has no explicit numbered senses in masked input; treated as one sense. Tag labels for PW sub-items inferred from line structure.",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "yatna",
+   "attempts": 1,
+   "complexity_score": 24.54,
+   "complexity_flag": true,
+   "self_report_unsure": true,
+   "self_report_note": "PWG main sense boundaries inferred from PW condensed record; cross-reference appended as separate sense.",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "ras",
+   "attempts": 1,
+   "complexity_score": 22.81,
+   "complexity_flag": true,
+   "self_report_unsure": true,
+   "self_report_note": "Не вполне уверен в передаче «begleiten, einen Laut erwiedern» и старого написания «erwiedern».",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  },
+  {
+   "key1": "vicitra",
+   "attempts": 3,
+   "complexity_score": 18.77,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  }
+ ],
+ "cards_out": [
+  {
+   "key1": "ya_tepsita",
+   "card": {
+    "key1": "ya_tepsita",
+    "iast": "yathepsita",
+    "records": [
+     {
+      "h": "PWG",
+      "grammar": "adj., adv.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ ({T2} + {T3}) {T4} {%den Wünschen entsprechend, gewünscht%}: {T5} {T6}. {T7} {T8}. {T9} {T10}. {T11} {T12}. {T13}. {T14}. {T15}.",
+        "russian": "{T1}¦ ({T2} + {T3}) {T4} {соответствующий желаниям, желанный}: {T5} {T6}. {T7} {T8}. {T9} {T10}. {T11} {T12}. {T13}. {T14}. {T15}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical, Classical, Medieval",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "{T16} {T17} {%nach Wunsch, nach Herzenslust%} {T18}. {T19}. {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}.",
+        "russian": "{T16} {T17} {по желанию, вволю} {T18}. {T19}. {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Epic / early-Classical, Classical, Medieval",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "PW",
+      "grammar": "adj., adv.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T28}¦\n{T32}— 1〉 {T29} {%den Wünschen entsprechend, gewünscht%}.\n",
+        "russian": "{T28}¦\n{T32}— 1〉 {T29} {соответствующий желаниям, желанный}.\n",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical, Classical, Medieval",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "{T33}— 2〉 {T30} {T31} {%nach Wunsch, nach Herzenslust%}.",
+        "russian": "{T33}— 2〉 {T30} {T31} {по желанию, вволю}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Epic / early-Classical, Classical, Medieval",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "vi_svaha",
+   "card": {
+    "key1": "vi_svaha",
+    "iast": "viśvaha",
+    "records": [
+     {
+      "h": "",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1} und {T2}¦ {T3} {%allezeit, immerdar%} {T4}. {T5}. {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13} {T14}. {T15}. {T16}. {T17}. {T18} {T19}. {T20}. {T21}. {T22}. {T23}.\n{T29}— {T24} {T25}.",
+        "russian": "{T1} и {T2}¦ {T3} всегда, во все времена {T4}. {T5}. {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13} {T14}. {T15}. {T16}. {T17}. {T18} {T19}. {T20}. {T21}. {T22}. {T23}.\n{T29}— {T24} {T25}.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T26} und {T27}¦ {T28} {%allezeit, immerdar%}.",
+        "russian": "{T26} и {T27}¦ {T28} всегда, во все времена.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "Vedic",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "vi_sa",
+   "card": {
+    "key1": "vi_sa",
+    "iast": "viśa",
+    "records": [
+     {
+      "h": "viśa",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ 1〉 {T2} von {T51}1.{T52} {T3} in {T4}.",
+        "russian": "{T1} 1〉 {T2} от {T51}1.{T52} {T3} в {T4}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic"
+       },
+       {
+        "tag": "2",
+        "german": "{T53}— 2〉 am Ende eines {T5} {T6} und {T7} {T8} = {T54}2.{T55} {T9}. {T10} (wohl {T11}) {T12}; {T13} {T14} und {T15}. Am Ende eines {T16} [Page6-1206] {T17} {T18} {T19} {T20} zu {T21}. {T22}.",
+        "russian": "{T53}— 2〉 в конце {T5} {T6} и {T7} {T8} = {T54}2.{T55} {T9}. {T10} (вероятно {T11}) {T12}; {T13} {T14} и {T15}. В конце {T16} [Page6-1206] {T17} {T18} {T19} {T20} к {T21}. {T22}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed"
+       },
+       {
+        "tag": "3",
+        "german": "{T56}— 3〉 {T23} {T24} eines Mannes {T25} {T26} zu {T27}; {T28} {T29}.",
+        "russian": "{T56}— 3〉 {T23} {T24} мужчины {T25} {T26} к {T27}; {T28} {T29}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic"
+       },
+       {
+        "tag": "4",
+        "german": "{T57}— 4〉 ungenaue Schreibart für {T30}, {T31} {T32}.",
+        "russian": "{T57}— 4〉 неточное написание вм. {T30}, {T31} {T32}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested"
+       }
+      ]
+     },
+     {
+      "h": "viśa",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T58}1.{T59} {T33}¦ {T60}— 1〉 {T34} {T35} in {T36}.",
+        "russian": "{T58}1.{T59} {T33} {T60}— 1〉 {T34} {T35} в {T36}.",
+        "equivalence_type": "explanatory"
+       },
+       {
+        "tag": "2",
+        "german": "{T61}— 2〉 *{T37} {T38} eines Mannes.",
+        "russian": "{T61}— 2〉 *{T37} {T38} мужчины.",
+        "equivalence_type": "explanatory"
+       },
+       {
+        "tag": "3",
+        "german": "{T62}— 3〉 {T39} und {T40} ({T41}) in {T42} ({T43}), {T44} und {T45}. *{T46} am Ende eines {T47}",
+        "russian": "{T62}— 3〉 {T39} и {T40} ({T41}) в {T42} ({T43}), {T44} и {T45}. *{T46} в конце {T47}",
+        "equivalence_type": "explanatory"
+       }
+      ]
+     },
+     {
+      "h": "viśa",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T63}2.{T64} {T48}¦ {T49} ungenaue Schreibart für {T50}.",
+        "russian": "{T63}2.{T64} {T48} {T49} неточное написание вм. {T50}.",
+        "equivalence_type": "explanatory"
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "dr_ava_ra",
+   "card": {
+    "key1": "dr_ava_ra",
+    "iast": "drāvaṇa",
+    "records": [
+     {
+      "h": "",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T1}¦ (vom {T2} von {T33}1.{T34} {T3})",
+        "russian": "{T1}¦ (от {T2} от {T33}1.{T34} {T3})"
+       },
+       {
+        "tag": "1",
+        "german": "{T35} 1〉 {T4} {%zum Laufen bringend, in die Flucht jagend%}: {T5} {T6}. {T7} {T8}.",
+        "russian": "{T35} 1〉 {T4} приводящий в бегство, обращающий в бегство: {T5} {T6}. {T7} {T8}."
+       },
+       {
+        "tag": "2",
+        "german": "{T36}— 2〉 {T9}",
+        "russian": "{T36}— 2〉 {T9}"
+       },
+       {
+        "tag": "2.a",
+        "german": "{T37} a〉 {%das zum-Laufen-Bringen, in-die-Flucht-Jagen%} {T10}.",
+        "russian": "{T37} a〉 приведение в бегство, обращение в бегство {T10}."
+       },
+       {
+        "tag": "2.b",
+        "german": "{T38}— b〉 {%das Flüssigmachen%} {T11}.",
+        "russian": "{T38}— b〉 разжижение {T11}."
+       },
+       {
+        "tag": "2.c",
+        "german": "{T39}— c〉 {%die zur Klärung trüben Wassers angewandte Frucht von%} {T40}Strychnos potatorum Lin.{T41} {T12}_im_{T13}",
+        "russian": "{T39}— c〉 плод, применяемый для осветления мутной воды, {T40}Strychnos potatorum Lin.{T41} {T12}_im_{T13}"
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "2.b",
+        "german": "{T14}¦ 2〉b〉 so {T15} {%das Weichmachen, Rühren%} {T16}.",
+        "russian": "{T14}¦ 2〉b〉 то же, что {T15} размягчение, размешивание {T16}."
+       },
+       {
+        "tag": "0",
+        "german": "{T42}— {T17} {T18}.",
+        "russian": "{T42}— {T17} {T18}."
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T19}¦",
+        "russian": "{T19}¦"
+       },
+       {
+        "tag": "1",
+        "german": "{T43}— 1〉 {T20} {%zum Laufen bringend, in die Flucht schlagend%}. Statt {T21} hat die {T22} {T23}.",
+        "russian": "{T43}— 1〉 {T20} приводящий в бегство, обращающий в бегство. Вместо {T21} у {T22} {T23}."
+       },
+       {
+        "tag": "2",
+        "german": "{T44}— 2〉 {T24}",
+        "russian": "{T44}— 2〉 {T24}"
+       },
+       {
+        "tag": "2.a",
+        "german": "{T45}— a〉 {%das zum Laufen Bringen, in die Flucht Jagen%}.",
+        "russian": "{T45}— a〉 приведение в бегство, обращение в бегство."
+       },
+       {
+        "tag": "2.b",
+        "german": "{T46}— b〉 {%das Flüssigmachen%}.",
+        "russian": "{T46}— b〉 разжижение."
+       },
+       {
+        "tag": "2.c",
+        "german": "{T47}— c〉 {%das Weichmachen, Rühren%}.",
+        "russian": "{T47}— c〉 размягчение, размешивание."
+       },
+       {
+        "tag": "2.d",
+        "german": "{T48}— d〉 *{%die Frucht von {T49}Strychnos potatorum{T50}%}.",
+        "russian": "{T48}— d〉 *плод {T49}Strychnos potatorum{T50}."
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{%drāvaṇa%}¦ n. ˚das in Orgasmus Bringen, E 883 (R). 886 (P). 1. {%dru%}, {T25} {%dravayati%} vertreiben, {T26} — Mit {%nyā%} hinlaufen, {T27} (83,16). — ˚in Orgasmus geraten; {T28} {%drāvayati%} ˚in Orgasmus bringen, {T29}{T51}b{T52}; E 345 (R). 348 (P). 405(A) 408,409 (R). 412(A). 418(P). 884,885(A). 886,887(P). 888(S). 922,923(R). — Mit {%sam%} {T30} ˚in Orgasmus bringen, E 413,884 (A). 4. {%dru%} 2. Baum oder Ast, {T31} {%drughnī%} ˚Bogen (zum Schießen)? {T32} {part=,seq=16075,type=,n=15}",
+        "russian": "{%drāvaṇa%}¦ n. приведение в оргазм, E 883 (R). 886 (P). 1. {%dru%}, {T25} {%dravayati%} изгонять, {T26} — с {%nyā%} бежать, {T27} (83,16). — приходить в оргазм; {T28} {%drāvayati%} приводить в оргазм, {T29}{T51}b{T52}; E 345 (R). 348 (P). 405(A) 408,409 (R). 412(A). 418(P). 884,885(A). 886,887(P). 888(S). 922,923(R). — с {%sam%} {T30} приводить в оргазм, E 413,884 (A). 4. {%dru%} 2. дерево или ветвь, {T31} {%drughnī%} лук (для стрельбы)? {T32} {part=,seq=16075,type=,n=15}"
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "par_rin",
+   "card": {
+    "key1": "par_rin",
+    "iast": "parṇin",
+    "records": [
+     {
+      "h": "",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T1}¦ (von {T2})",
+        "russian": "{T1}¦ (от {T2})"
+       },
+       {
+        "tag": "1",
+        "german": "{T47} 1〉 {T3}",
+        "russian": "{T47} 1〉 {T3}"
+       },
+       {
+        "tag": "1a",
+        "german": "{T48} a〉 {%beschwingt, geflügelt%}: {T4} {T5}. {T6} {T7}. {T8} {T9}.",
+        "russian": "{T48} a〉 {%окрыленный, крылатый%}: {T4} {T5}. {T6} {T7}. {T8} {T9}.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic"
+       },
+       {
+        "tag": "1b",
+        "german": "{T49}— b〉 {%blätterig%}: {T10} {T11}.",
+        "russian": "{T49}— b〉 {%лиственный%}: {T10} {T11}.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic"
+       },
+       {
+        "tag": "2",
+        "german": "{T50}— 2〉 {T12}",
+        "russian": "{T50}— 2〉 {T12}"
+       },
+       {
+        "tag": "2a",
+        "german": "{T51} a〉 {%Baum%} {T13}. {T14}.",
+        "russian": "{T51} a〉 {%дерево%} {T13}. {T14}.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Epic / early-Classical"
+       },
+       {
+        "tag": "2b",
+        "german": "{T52}— b〉 {T53}Butea frondosa Roxb.{T54} ({T15} {T16} 2,a) {T17}.",
+        "russian": "{T52}— b〉 {T53}Butea frondosa Roxb.{T54} ({T15} {T16} 2,a) {T17}.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": ""
+       },
+       {
+        "tag": "3",
+        "german": "{T55}— 3〉 {T18} {T19}",
+        "russian": "{T55}— 3〉 {T18} {T19}"
+       },
+       {
+        "tag": "3a",
+        "german": "{T56} a〉 {%eine {T20} Pflanze%} {T21}. {T22}.",
+        "russian": "{T56} a〉 {%определенное {T20} растение%} {T21}. {T22}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical"
+       },
+       {
+        "tag": "3b",
+        "german": "{T57}— b〉 {T23} einer {T24} {T25}. {T26}_zu_{T27}: {T28} {T29} {T30} {T31}.",
+        "russian": "{T57}— b〉 {T23} одной {T24} {T25}. {T26}_к_{T27}: {T28} {T29} {T30} {T31}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical"
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1c",
+        "german": "{T32}¦ 1〉c〉 {%aus dem Holze der Butea frondosa gemacht%} {T33}.",
+        "russian": "{T32}¦ 1〉c〉 {%сделанный из древесины Butea frondosa%} {T33}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": ""
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T58}— 1〉 {T35}",
+        "russian": "{T58}— 1〉 {T35}"
+       },
+       {
+        "tag": "1a",
+        "german": "{T59}— a〉 {%beschwingt, geflügelt%}.",
+        "russian": "{T59}— a〉 {%окрыленный, крылатый%}.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic"
+       },
+       {
+        "tag": "1b",
+        "german": "{T60}— b〉 {%Blätter tragend%} ({T36} des {T37}).",
+        "russian": "{T60}— b〉 {%несущий листья%} ({T36} {T37}).",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic"
+       },
+       {
+        "tag": "1c",
+        "german": "{T61}— c〉 {%aus dem Holze der {T62}Butea frondosa{T63} gemacht%}.",
+        "russian": "{T61}— c〉 {%сделанный из древесины {T62}Butea frondosa{T63}%}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": ""
+       },
+       {
+        "tag": "2",
+        "german": "{T64}— 2〉 {T38}",
+        "russian": "{T64}— 2〉 {T38}"
+       },
+       {
+        "tag": "2a",
+        "german": "{T65}— a〉 {%Baum%}.",
+        "russian": "{T65}— a〉 {%дерево%}.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Epic / early-Classical"
+       },
+       {
+        "tag": "2b",
+        "german": "{T66}— b〉 *{%{T67}Butea frondosa{T68}%} {T39}.",
+        "russian": "{T66}— b〉 *{%{T67}Butea frondosa{T68}%} {T39}.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": ""
+       },
+       {
+        "tag": "3",
+        "german": "{T69}— 3〉 {T40} {T41}",
+        "russian": "{T69}— 3〉 {T40} {T41}"
+       },
+       {
+        "tag": "3a",
+        "german": "{T70}— a〉 {%eine {T42} Pflanze%}.",
+        "russian": "{T70}— a〉 {%определенное {T42} растение%}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical"
+       },
+       {
+        "tag": "3b",
+        "german": "{T71}— b〉 Gesammtname für {%vier {T43} Pflanzen%} {T44}.",
+        "russian": "{T71}— b〉 общее название для {%четырех {T43} растений%} {T44}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": ""
+       },
+       {
+        "tag": "3c",
+        "german": "{T72}— c〉 {T45} einer {T46}.",
+        "russian": "{T72}— c〉 {T45} одной {T46}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Epic / early-Classical"
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "sa_msargin",
+   "card": {
+    "key1": "sa_msargin",
+    "iast": "saṃsargin",
+    "records": [
+     {
+      "h": "",
+      "grammar": "adj.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T1}¦ (von {T2} mit {T3} oder von {T4}) {T5} {T6}.",
+        "russian": "{T1}¦ (от {T2} с {T3} или от {T4}) {T5} {T6}.",
+        "equivalence_type": "explanatory"
+       },
+       {
+        "tag": "1",
+        "german": "{T38} 1〉 {%zusammenhängend, in Berührung stehend%}: {T7} ({T8} {T9}) {T10} {T11}. in {T12} mit der Ergänzung: {T13} {T14}. {T15} [Page7-0484] ({T16}) {T17}. {T18}. {T19}. {T20} so {T21} {%theilhaftig%} {T22}_zu_{T23}. {T24} {%frei von%} zu {T25}. {T26} so {T27} {%im Besitz seiend%} {T28}, {T29}",
+        "russian": "{T38} 1〉 «связанный, соприкасающийся»: {T7} ({T8} {T9}) {T10} {T11}. в {T12} с дополнением: {T13} {T14}. {T15} [Page7-0484] ({T16}) {T17}. {T18}. {T19}. {T20} так {T21} «причастный» {T22} к {T23}. {T24} «свободный от» к {T25}. {T26} так {T27} «обладающий» {T28}, {T29}",
+        "equivalence_type": "equivalent"
+       },
+       {
+        "tag": "2",
+        "german": "{T39}— 2〉 = {T30} {%der nach erfolgter Erbtheilung fortfährt mit den Verwandten zusammen zu leben%} {T31} {T32} {T33} 2〉d〉.",
+        "russian": "{T39}— 2〉 = {T30} «который после совершившегося раздела наследства продолжает жить вместе с родственниками» {T31} {T32} {T33} 2〉d〉.",
+        "equivalence_type": "explanatory"
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "adj.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T34}¦ {T35}",
+        "russian": "{T34}¦ {T35}",
+        "equivalence_type": "explanatory"
+       },
+       {
+        "tag": "1",
+        "german": "{T40}— 1〉 {%zusammenhängend, in Berührung stehend, — mit%} (im {T36} vorangehend).",
+        "russian": "{T40}— 1〉 «связанный, соприкасающийся, — с» (в предшествующем {T36}).",
+        "equivalence_type": "equivalent"
+       },
+       {
+        "tag": "2",
+        "german": "{T41}— 2〉 am Ende eines {T37} {%theilhaftig, im Besitz seinend von%}.",
+        "russian": "{T41}— 2〉 в конце {T37} «причастный, обладающий чем-л.».",
+        "equivalence_type": "equivalent"
+       },
+       {
+        "tag": "3",
+        "german": "{T42}— 3〉 {%der nach erfolgter Erbtheilung fortfährt mit den Verwandten zusammen zu leben%}.",
+        "russian": "{T42}— 3〉 «который после совершившегося раздела наследства продолжает жить вместе с родственниками».",
+        "equivalence_type": "explanatory"
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "kakz_ivant",
+   "card": {
+    "key1": "kakz_ivant",
+    "iast": "kakṣīvant",
+    "records": [
+     {
+      "h": "",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ (von {T2}) {T3} {T4}. {T5}. {T6} eines häufig genannten {T7}, der zuweilen den Beinamen {T8} führt. Er gilt für den Verfasser mehrerer Lieder des {T9} und ist nach der Legende ({T10}_zu_{T11}) ein Sohn der {T12} ({T13} {T14}) und des {T15}. {T16}. {T17}. {T18}. {T19}. {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. = {T33} {T34}. {T35} {%die Angehörigen%} oder {%Abkömmlinge des%} {T36} {T37}.\n{T53}— {T38} {T39}.",
+        "russian": "{T1}¦ (от {T2}) {T3} {T4}. {T5}. {T6} часто упоминаемого {T7}, который иногда носит прозвище {T8}. Он считается автором нескольких гимнов {T9} и, по легенде ({T10} к {T11}), является сыном {T12} ({T13} {T14}) и {T15}. {T16}. {T17}. {T18}. {T19}. {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. = {T33} {T34}. {T35} {%родственники%} или {%потомки%} {T36} {T37}.\n{T53}— {T38} {T39}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T40}¦ {T41} {T42} eines {T43}.",
+        "russian": "{T40}¦ {T41} {T42} некоего {T43}."
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T44}¦, {T45} {T46}.{T54}",
+        "russian": "{T44}¦, {T45} {T46}.{T54}"
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T47}¦ II. 6.{T55}",
+        "russian": "{T47}¦ II. 6.{T55}"
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{%kakṣī́vant%}¦ , Pl. {T48} {part=,seq=9582,type=,n=1}",
+        "russian": "{%kakṣī́vant%}¦ , Pl. {T48} {part=,seq=9582,type=,n=1}"
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T49}¦, {T50} {T51}.",
+        "russian": "{T49}¦, {T50} {T51}."
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T52}¦ II. 6.",
+        "russian": "{T52}¦ II. 6."
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "a_ngaja",
+   "card": {
+    "key1": "a_ngaja",
+    "iast": "aṅgaja",
+    "records": [
+     {
+      "h": "aṅgaja",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T1}¦ ({T73}3.{T74} {T2} + {T3})",
+        "russian": "{T1}¦ ({T73}3.{T74} {T2} + {T3})"
+       },
+       {
+        "tag": "1",
+        "german": "{T75} 1〉 {T4}",
+        "russian": "{T75} 1〉 {T4}"
+       },
+       {
+        "tag": "1a",
+        "german": "{T76} a〉 {%in, an, aus dem Körper entstanden, körperlich%}: {T5} {T6}. {T7} {T8}.",
+        "russian": "{T76} a〉 {%возникший в теле, на теле, из тела, телесный%}: {T5} {T6}. {T7} {T8}."
+       },
+       {
+        "tag": "1b",
+        "german": "{T77}— b〉 {%schön, hübsch%} ({T9}) {T10}.",
+        "russian": "{T77}— b〉 {%красивый, миловидный%} ({T9}) {T10}."
+       },
+       {
+        "tag": "2",
+        "german": "{T78}— 2〉 {T11}",
+        "russian": "{T78}— 2〉 {T11}"
+       },
+       {
+        "tag": "2a",
+        "german": "{T79} a〉 {%Sohn%} {T12}. {T13}. {T14}. {T15}. {T16}_im_{T17}; {T18} {T19}: {T20} und {T21}: {T22}; {T23} auch {T24}.",
+        "russian": "{T79} a〉 {%сын%} {T12}. {T13}. {T14}. {T15}. {T16}_в_{T17}; {T18} {T19}: {T20} и {T21}: {T22}; {T23} также {T24}."
+       },
+       {
+        "tag": "2b",
+        "german": "{T80}— b〉 {%Kopfhaar%} {T25} {T26} {T27} {T28}",
+        "russian": "{T80}— b〉 {%волосы на голове%} {T25} {T26} {T27} {T28}"
+       },
+       {
+        "tag": "2c",
+        "german": "{T81}— c〉 {%Liebe, der Liebesgott%} {T29}. {T30}. {T31}. {T32}. {T33} {T34}",
+        "russian": "{T81}— c〉 {%любовь, бог любви%} {T29}. {T30}. {T31}. {T32}. {T33} {T34}"
+       },
+       {
+        "tag": "2d",
+        "german": "{T82}— d〉 {%Trunkenheit%} ({T35}) {T36} {T37}_im_{T38}",
+        "russian": "{T82}— d〉 {%опьянение%} ({T35}) {T36} {T37}_в_{T38}"
+       },
+       {
+        "tag": "2e",
+        "german": "{T83}— e〉 {%Krankheit%} ({T39}) {T40}. (soll nach {T41} nur {T42} für {T43} sein: {T44}).",
+        "russian": "{T83}— e〉 {%болезнь%} ({T39}) {T40}. (должно быть, согласно {T41}, только {T42} вместо {T43}: {T44})."
+       },
+       {
+        "tag": "3",
+        "german": "{T84}— 3〉 {T45} {T46} {%Tochter%} {T47}.",
+        "russian": "{T84}— 3〉 {T45} {T46} {%дочь%} {T47}."
+       },
+       {
+        "tag": "4",
+        "german": "{T85}— 4〉 {T48} {%Blut%} {T49}. {T50}",
+        "russian": "{T85}— 4〉 {T48} {%кровь%} {T49}. {T50}"
+       }
+      ]
+     },
+     {
+      "h": "aṅgaja",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T51}¦",
+        "russian": "{T51}¦"
+       },
+       {
+        "tag": "1",
+        "german": "{T86}— 1〉 {T52}",
+        "russian": "{T86}— 1〉 {T52}"
+       },
+       {
+        "tag": "1a",
+        "german": "{T87}— a〉 {%im, am, aus dem Körper entstanden, daran haftend, körperlich%}.",
+        "russian": "{T87}— a〉 {%в теле, на теле, из тела возникший, прикрепленный к телу, телесный%}."
+       },
+       {
+        "tag": "1b",
+        "german": "{T88}— b〉 *{%schön, hübsch%}.",
+        "russian": "{T88}— b〉 *{%красивый, миловидный%}."
+       },
+       {
+        "tag": "2",
+        "german": "{T89}— 2〉 *{T53}",
+        "russian": "{T89}— 2〉 *{T53}"
+       },
+       {
+        "tag": "2a",
+        "german": "{T90}— a〉 {%Sohn%}.",
+        "russian": "{T90}— a〉 {%сын%}."
+       },
+       {
+        "tag": "2b",
+        "german": "{T91}— b〉 {%Kopfhaar%}.",
+        "russian": "{T91}— b〉 {%волосы на голове%}."
+       },
+       {
+        "tag": "2c",
+        "german": "{T92}— c〉 {%Geschlechtsliebe, der Liebesgott%}.",
+        "russian": "{T92}— c〉 {%половая любовь, бог любви%}."
+       },
+       {
+        "tag": "2d",
+        "german": "{T93}— d〉 {%Trunkenheit%}.",
+        "russian": "{T93}— d〉 {%опьянение%}."
+       },
+       {
+        "tag": "2e",
+        "german": "{T94}— e〉 {%Krankheit%}.",
+        "russian": "{T94}— e〉 {%болезнь%}."
+       },
+       {
+        "tag": "3",
+        "german": "{T95}— 3〉 *{T54} {T55} {%Tochter%}.",
+        "russian": "{T95}— 3〉 *{T54} {T55} {%дочь%}."
+       },
+       {
+        "tag": "4",
+        "german": "{T96}— 4〉 *{T56} {%Blut%}.",
+        "russian": "{T96}— 4〉 *{T56} {%кровь%}."
+       }
+      ]
+     },
+     {
+      "h": "aṅgaja",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "2b",
+        "german": "{T57}¦ 2〉b〉 {%Haar am Körper%} {T58}.{T97}",
+        "russian": "{T57}¦ 2〉b〉 {%волосы на теле%} {T58}.{T97}"
+       }
+      ]
+     },
+     {
+      "h": "aṅgaja",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "3",
+        "german": "{T59}¦ 3〉 {T60}. {T61}.{T98}",
+        "russian": "{T59}¦ 3〉 {T60}. {T61}.{T98}"
+       }
+      ]
+     },
+     {
+      "h": "aṅgaja",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "I.1.5",
+        "german": "{T62}¦ I. 1. 5.{T99}",
+        "russian": "{T62}¦ I. 1. 5.{T99}"
+       }
+      ]
+     },
+     {
+      "h": "aṅgaja",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "2b",
+        "german": "{%aṅgaja%}¦ 2. b) Haar am Körper, {T63} — ˚(tail) feather (of peacock)'",
+        "russian": "{%aṅgaja%}¦ 2. b) волосы на теле, {T63} — ˚(хвостовое) перо (павлина)'"
+       },
+       {
+        "tag": "3",
+        "german": " [Page009.2] {T64} — 3. {T65}; {T66} {part=,seq=616,type=,n=4}",
+        "russian": " [Page009.2] {T64} — 3. {T65}; {T66} {part=,seq=616,type=,n=4}"
+       }
+      ]
+     },
+     {
+      "h": "aṅgaja",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "2b",
+        "german": "{T67}¦ 2〉b〉 {%Haar am Körper%} {T68}.",
+        "russian": "{T67}¦ 2〉b〉 {%волосы на теле%} {T68}."
+       }
+      ]
+     },
+     {
+      "h": "aṅgaja",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "3",
+        "german": "{T69}¦ 3〉 {T70}. {T71}.",
+        "russian": "{T69}¦ 3〉 {T70}. {T71}."
+       }
+      ]
+     },
+     {
+      "h": "aṅgaja",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "I.1.5",
+        "german": "{T72}¦ I. 1. 5.",
+        "russian": "{T72}¦ I. 1. 5."
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "vyatyaya",
+   "card": {
+    "key1": "vyatyaya",
+    "iast": "vyatyaya",
+    "records": [
+     {
+      "h": "",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ (von {T66}3.{T67} {T2} mit {T3}) {T4} {%Wechsel, Vertauschung%} {T5}. {T6} zu {T7}. {T8} {T9}. {T10} {T11}. {T12} ({T13}) {T14}. {%ein umgekehrtes Verhältniss%} {T15}. {T16}. {T17}. {T18} {T19}. {T20}. {T21} = {T22} {T23}. {T24} zu {T25}. {T26} so {T27} {%verkehrte Beschäftigung%} {T28}. {T29} {%im entgegengesetzten Falle%} {T30}. {T31} {%umgekehrt%} (in prädicativem Verhältniss) {T32}. {T33}. {T34} {T35} {T36}. {T37} {%auf umgekehrte Weise sich bewegend%} {T38}. — {T39} {T40} {%wechselnd%} {T41}.",
+        "russian": "{T1}¦ (от {T66}3.{T67} {T2} с {T3}) {T4} смена, перемена {T5}. {T6} к {T7}. {T8} {T9}. {T10} {T11}. {T12} ({T13}) {T14}. обратное отношение {T15}. {T16}. {T17}. {T18} {T19}. {T20}. {T21} = {T22} {T23}. {T24} к {T25}. {T26} так {T27} превратная деятельность {T28}. {T29} в противоположном случае {T30}. {T31} наоборот (в предикативном отношении) {T32}. {T33}. {T34} {T35} {T36}. {T37} движущийся обратным образом {T38}. — {T39} {T40} переменчивый {T41}."
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "{T42}¦ [{T43} [Page6-1435]] {T44} 11; {T45} ist {T46} {T47}}; der {T48} wäre {T49}.{T68}",
+        "russian": "{T42}¦ [{T43} [Page6-1435]] {T44} 11; {T45} есть {T46} {T47}}; {T48} было бы {T49}.{T68}"
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "3",
+        "german": "{T50}¦ letzte Zeile, {T51} ist {T52} {T53}, der {T54} wäre {T55}.",
+        "russian": "{T50}¦ последняя строка, {T51} есть {T52} {T53}, {T54} было бы {T55}."
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "4",
+        "german": "{T56}¦ {T57} {%Wechsel, Vertauschung, ein umgekehrtes Verhältniss%}. {T58} so {T59} {%verkehrte Beschäftigung%}. {T60} {%im entgegengesetzen Falle,%} {T61} {%wechselnd%} {T62}. {T63}, {T64} und {T65} {%umgekehrt, auf umgekehrte Weise%}.",
+        "russian": "{T56}¦ {T57} смена, перемена, обратное отношение. {T58} так {T59} превратная деятельность. {T60} в противоположном случае, {T61} переменчивый {T62}. {T63}, {T64} и {T65} наоборот, обратным образом."
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "roza",
+   "card": {
+    "key1": "roza",
+    "iast": "roṣa",
+    "records": [
+     {
+      "h": "",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ (von {T79}1.{T80} {T2}) {T3} {%Zorn, Wuth%} {T4}. {T5}. {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14}. {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21} {T22}. {T23} {T24}. {T25}. {T26} {T27}. {T28} {T29}. {T30} {T31}. {T32}. {T33} {T34}. {T35} {T36}. {T37} {T38}. {T39} {T40}. {T41} {T42}. {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49} {T50}. {T51} {T52} {T53}. {T54} {T55}. {T56}. {T57} {T78} {T58}. {T59}. {T60}. Am Ende eines {T61} {T62} {T63} {T64} zu {T65}.\n{T81}— {T66} {T67}.",
+        "russian": "{T1}¦ (от {T79}1.{T80} {T2}) {T3} гнев, ярость {T4}. {T5}. {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14}. {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21} {T22}. {T23} {T24}. {T25}. {T26} {T27}. {T28} {T29}. {T30} {T31}. {T32}. {T33} {T34}. {T35} {T36}. {T37} {T38}. {T39} {T40}. {T41} {T42}. {T43} {T44}. {T45} {T46}. {T47} {T48}. {T49} {T50}. {T51} {T52} {T53}. {T54} {T55}. {T56}. {T57} {T78} {T58}. {T59}. {T60}. В конце {T61} {T62} {T63} {T64} к {T65}.\n{T81}— {T66} {T67}.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "Classical, Epic / early-Classical, Medieval",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T68}¦ {T69} ({T70} {T71} {T72}) {%Zorn, Wuth, — gegen, auf%} (im {T73} vorangehend) {T74} {T75} {T76} {%zürnen auf%} ({T77}).",
+        "russian": "{T68}¦ {T69} ({T70} {T71} {T72}) гнев, ярость, — против, на (в {T73} предшествующем) {T74} {T75} {T76} гневаться на ({T77}).",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Classical, Epic / early-Classical, Medieval",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "pras_u",
+   "card": {
+    "key1": "pras_u",
+    "iast": "prasū",
+    "records": [
+     {
+      "h": "prasū",
+      "grammar": "adj., f.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T1}¦ ({T2} mit {T3}) {T4}, {T5}",
+        "russian": "{T1}¦ ({T2} с {T3}) {T4}, {T5}",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "1",
+        "german": "{T59} 1〉 {T6} {%gebärend, fruchttragend, fruchtbar%}: {T7} {T8}. {T9}. {T10} {T11}. {T12}. {T13} {T14}. {T15} {%Töchter gebärend%} {T16}. {T17} so {T18} {%für jegliche Wohlfahrt sorgend%} {T19}. {T20} {%unfruchtbar%} {T21}.",
+        "russian": "{T59} 1〉 {T6} {%рождающая, плодоносящая, плодовитая%}: {T7} {T8}. {T9}. {T10} {T11}. {T12}. {T13} {T14}. {T15} {%рождающая дочерей%} {T16}. {T17} так {T18} {%заботящаяся о всяком благополучии%} {T19}. {T20} {%бесплодная%} {T21}.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic, Classical, Medieval",
+        "differentia": "«рождающая» — о живом существе, «плодоносящая» — о растении, «плодовитая» — общая характеристика."
+       },
+       {
+        "tag": "2",
+        "german": "{T60}— 2〉 {T22}",
+        "russian": "{T60}— 2〉 {T22}",
+        "equivalence_type": "explanatory",
+        "source_type": "",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2a",
+        "german": "{T61} a〉 {%Mutter%} {T23}. {T24}. {T25}. {T26}. {T27} in {T28}. {T29}.",
+        "russian": "{T61} a〉 {%мать%} {T23}. {T24}. {T25}. {T26}. {T27} в {T28}. {T29}.",
+        "equivalence_type": "equivalent",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2b",
+        "german": "{T62}— b〉 {%Stute%} {T30}. {T31}. {T32} {T33}",
+        "russian": "{T62}— b〉 {%кобыла%} {T30}. {T31}. {T32} {T33}",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2c",
+        "german": "{T63}— c〉 {%Schoss; junges Gras und Kraut; das beim Opfer gebrauchte, mit Blüthenähren versehene Gras%}: {T34} {T35}. {T36} {T37}. {T38}. {T39}. {T40} {T41}. {T42}. {T43}. {T44}. {T45} {T46}. = {T47} {%eine kriechende Pflanze%} und = {T48} ({%Pisang%} {T49}) {T50}",
+        "russian": "{T63}— c〉 {%побег; молодая трава и зелень; употребляемая при жертвоприношении трава, снабженная цветочными колосьями%}: {T34} {T35}. {T36} {T37}. {T38}. {T39}. {T40} {T41}. {T42}. {T43}. {T44}. {T45} {T46}. = {T47} {%ползучее растение%} и = {T48} ({%банан%} {T49}) {T50}",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Vedic",
+        "differentia": ""
+       },
+       {
+        "tag": "note",
+        "german": "{T64}— {T51} {T52}",
+        "russian": "{T64}— {T51} {T52}",
+        "equivalence_type": "explanatory",
+        "source_type": "",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "prasū",
+      "grammar": "adj., f.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T53}¦",
+        "russian": "{T53}¦",
+        "equivalence_type": "explanatory",
+        "source_type": "",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "1",
+        "german": "{T65}— 1〉 {T54}",
+        "russian": "{T65}— 1〉 {T54}",
+        "equivalence_type": "explanatory",
+        "source_type": "",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "1a",
+        "german": "{T66}— a〉 {%gebärend, fruchttragend, fruchtbar%}. {T55} {%Töchter gebärend%}.",
+        "russian": "{T66}— a〉 {%рождающая, плодоносящая, плодовитая%}. {T55} {%рождающая дочерей%}.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "1b",
+        "german": "{T67}— b〉 {%Etwas%} (im {T56} vorangehend) {%erzeugend,%} so {T57} {%sorgend für%}.",
+        "russian": "{T67}— b〉 {%нечто%} (в {T56} предшествующем) {%порождающая,%} так {T57} {%заботящаяся о%}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "{T68}— 2〉 {T58}",
+        "russian": "{T68}— 2〉 {T58}",
+        "equivalence_type": "explanatory",
+        "source_type": "",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2a",
+        "german": "{T69}— a〉 {%Mutter%}.",
+        "russian": "{T69}— a〉 {%мать%}.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2b",
+        "german": "{T70}— b〉 *{%Stute%}.",
+        "russian": "{T70}— b〉 *{%кобыла%}.",
+        "equivalence_type": "equivalent",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2c",
+        "german": "{T71}— c〉 {%Schoss, junges Gras und Kraut, das beim Opfer gebrauchte, mit Blüthenähren versehene Gras%}.",
+        "russian": "{T71}— c〉 {%побег, молодая трава и зелень, употребляемая при жертвоприношении трава, снабженная цветочными колосьями%}.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "div_a",
+   "card": {
+    "key1": "div_a",
+    "iast": "divā",
+    "records": [
+     {
+      "h": "",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ ({T2} von {T3} mit nicht vorgeschobenem Tone) {T4}, {T5} {T6} {T7} zu {T8}. {T9} {%am Tage%} {T10}. {T11}. {T12} {T13}. {T14}. {T15}. {T16}. {T17} {T18} {T19}. {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}. {T36}. {T37}. {T38}. {T39}. {T40}. {T41}. [Page3-0621] {T42} {T43}. {T44}. {T45}. {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52}. {T53} {%nicht bei Tage%} {T54}. Das {T55} als {T56} an Stelle des {T57} {T58}: {T59} {T60}. {T61}. {T62} {T63}. {T64} {T65}. {T66} {T67}. {T68}.",
+        "russian": "{T1}¦ ({T2} от {T3} с непередвинутым тоном) {T4}, {T5} {T6} {T7} к {T8}. {T9} {%днем%} {T10}. {T11}. {T12} {T13}. {T14}. {T15}. {T16}. {T17} {T18} {T19}. {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}. {T36}. {T37}. {T38}. {T39}. {T40}. {T41}. [Page3-0621] {T42} {T43}. {T44}. {T45}. {T46}. {T47} {T48}. {T49}. {T50}. {T51}. {T52}. {T53} {%не днем%} {T54}. Это {T55} как {T56} вм. {T57} {T58}: {T59} {T60}. {T61}. {T62} {T63}. {T64} {T65}. {T66} {T67}. {T68}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Vedic; Epic / early-Classical; Classical; Medieval",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "adv.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T69}¦ {T70} {%am Tage%}. Nicht selten als Subject ({T71}) oder am {T72} eines {T73} so {T74} {%Tag%} im Gegensatz zur {%Nacht%}.",
+        "russian": "{T69}¦ {T70} {%днем%}. Нередко как подлежащее ({T71}) или в {T72} какого-л. {T73} так {T74} {%день%} в противоположность {%ночи%}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "vazawk_ara",
+   "card": {
+    "key1": "vazawk_ara",
+    "iast": "vaṣaṭkāra",
+    "records": [
+     {
+      "h": "vaṣaṭkāra",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ {T2} {%der Ausruf%} {T3} {T4}. {T5}. {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13} {T14}. {T15}. {T16} {T17}. {T18}. {T19}. {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26} {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34} {T35}. {T36}. {T37} ({T38}). {T39}. {T40}. {T41}. {T42}. {T43}. {T44}. {T45}. {T46}. am Ende eines {T47} {T48} {T49} {T50}. Nach dem {T51} zu {T52} ist in allen {T53}-Opfern der {T54} und {T55} vorgeschrieben, nur bei einzelnen {T56} der letztere untersagt. {T57} personificirt unter den 33 Göttern {T58}.",
+        "russian": "{T1}¦ {T2} возглас {T3} {T4}. {T5}. {T6}. {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13} {T14}. {T15}. {T16} {T17}. {T18}. {T19}. {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26} {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34} {T35}. {T36}. {T37} ({T38}). {T39}. {T40}. {T41}. {T42}. {T43}. {T44}. {T45}. {T46}. в конце одного {T47} {T48} {T49} {T50}. Согласно {T51} к {T52} во всех {T53}-жертвоприношениях {T54} и {T55} предписаны, только при отдельных {T56} последний запрещен. {T57} персонифицируется среди 33 богов {T58}.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic, Epic / early-Classical, Classical",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "vaṣaṭkāra",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T59}¦ {T60} ({T61} {T62} {T63}) {%der Ausruf%} {T64}. Wird auch personificirt.",
+        "russian": "{T59}¦ {T60} ({T61} {T62} {T63}) возглас {T64}. Также персонифицируется.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Vedic, Epic / early-Classical, Classical",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "anar_ta",
+   "card": {
+    "key1": "anarTa",
+    "iast": "anartha",
+    "records": [
+     {
+      "h": "1",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T76}1.{T77} {T1}¦ ({T78}3.{T79} {T2} + {T3}) {T4}",
+        "russian": "{T76}1.{T77} {T1}¦ ({T78}3.{T79} {T2} + {T3}) {T4}"
+       },
+       {
+        "tag": "1",
+        "german": "{T80} 1〉 {%Ungehöriges, Unnützes%} {T5}. {T6}.",
+        "russian": "{T80} 1〉 неподобающее, бесполезное {T5}. {T6}."
+       },
+       {
+        "tag": "2",
+        "german": "{T81}— 2〉 {%Nachtheil, Schaden, Unheil%}: {T7} {T8}. {T9} {T10}. {T11} {T12}. {T13}. {T14} {T15}. {T16} {T17}. {T18} {%zum Unheil gekommen%} {T19}. {T20} {T21} {T22}. {T23} ({T24} {T25}) {T26}. {T27} {T28}. {T29} {T30}. {T31}. {T32} {T33}. {T34} {T35}. {T36} {T37}. {T38} {T39}. Das Sprichwort {T40} ({T41}.) oder {T42} ({T43}. {T44}. {T45}.) ententspricht dem deutschen {%ein Unglück kommt nie allein%}.",
+        "russian": "{T81}— 2〉 вред, ущерб, беда: {T7} {T8}. {T9} {T10}. {T11} {T12}. {T13}. {T14} {T15}. {T16} {T17}. {T18} попавший в беду {T19}. {T20} {T21} {T22}. {T23} ({T24} {T25}) {T26}. {T27} {T28}. {T29} {T30}. {T31}. {T32} {T33}. {T34} {T35}. {T36} {T37}. {T38} {T39}. Поговорка {T40} ({T41}.) или {T42} ({T43}. {T44}. {T45}.) соответствует немецкой беда не приходит одна."
+       }
+      ]
+     },
+     {
+      "h": "2",
+      "grammar": "adj.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T82}2.{T83} {T46}¦ (wie eben) {T47}",
+        "russian": "{T82}2.{T83} {T46}¦ (как выше) {T47}"
+       },
+       {
+        "tag": "1",
+        "german": "{T84} 1〉 {%unnütz%} {T48}.",
+        "russian": "{T84} 1〉 бесполезный {T48}."
+       },
+       {
+        "tag": "2",
+        "german": "{T85}— 2〉 {%unglücklich%}: {T49} {T50}.",
+        "russian": "{T85}— 2〉 несчастный: {T49} {T50}."
+       },
+       {
+        "tag": "3",
+        "german": "{T86}— 3〉 {T74}: {T51} {T52}.",
+        "russian": "{T86}— 3〉 {T74}: {T51} {T52}."
+       }
+      ]
+     },
+     {
+      "h": "1",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "{T87}1.{T88} {T53}¦ 2〉 {T54} {T55} {T56}_in_{T57}. {T58} 2. {T59} {T60} ({T61}). {T62} {%sich auf Unheil verstehend%} {T63} {%Unheil zu stiften verstehend%} (oder zu {T89}2.{T90} {T64} 3.) 2352.",
+        "russian": "{T87}1.{T88} {T53}¦ 2〉 {T54} {T55} {T56}_в_{T57}. {T58} 2. {T59} {T60} ({T61}). {T62} понимающий толк в беде {T63} умеющий причинять беду (или к {T89}2.{T90} {T64} 3.) 2352."
+       }
+      ]
+     },
+     {
+      "h": "2",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "4",
+        "german": "{T91}2.{T92} {T65}¦ 4〉 {%bedeutungslos%} {T66}.",
+        "russian": "{T91}2.{T92} {T65}¦ 4〉 бессмысленный {T66}."
+       }
+      ]
+     },
+     {
+      "h": "1",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T93}1.{T94} {T67}¦ {T68}",
+        "russian": "{T93}1.{T94} {T67}¦ {T68}"
+       },
+       {
+        "tag": "1",
+        "german": "{T95}— 1〉 {%Unnützes, Ungehöriges, Unsinn%}.",
+        "russian": "{T95}— 1〉 бесполезное, неподобающее, бессмыслица."
+       },
+       {
+        "tag": "2",
+        "german": "{T96}— 2〉 {%Nachtheil, Schaden, Uebel%} {T69}. {T70}. {T71}.",
+        "russian": "{T96}— 2〉 вред, ущерб, зло {T69}. {T70}. {T71}."
+       }
+      ]
+     },
+     {
+      "h": "2",
+      "grammar": "adj.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T97}2.{T98} {T72}¦ {T73}",
+        "russian": "{T97}2.{T98} {T72}¦ {T73}"
+       },
+       {
+        "tag": "1",
+        "german": "{T99}— 1〉 {%unnütz%}.",
+        "russian": "{T99}— 1〉 бесполезный."
+       },
+       {
+        "tag": "2",
+        "german": "{T100}— 2〉 {%unglücklich%}.",
+        "russian": "{T100}— 2〉 несчастный."
+       },
+       {
+        "tag": "3",
+        "german": "{T101}— 3〉 {T75}.",
+        "russian": "{T101}— 3〉 {T75}."
+       },
+       {
+        "tag": "4",
+        "german": "{T102}— 4〉 {%bedeutungslos%}.",
+        "russian": "{T102}— 4〉 бессмысленный."
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "sa_b_ajay",
+   "card": {
+    "key1": "sa_b_ajay",
+    "iast": "sabhājay",
+    "records": [
+     {
+      "h": "√sabhāj",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "!√{T1}¦ ({T2} von {T118}2.{T119} {T3} + {T4}), {T5} {T6} ({T7} {T8} {T9} {T10}) {%Jmd%} ({T11}) {%eine Ehre —, eine Aufmerksamkeit erweisen%}: {T12} {T13}. {T14} {T15} {T16}. {T17}. {T18}. {T19} ({T20} {T21}). {T22} {T23} {T24}. {T25} {T26} {T27}. {T28} {T29}. {T30} {T31} (am Ende eines {T32}) {T33}. {T34} {T35}. {T36}. {T37} {T38}. {T39} {T40} {T41}. {T42} {T43} {T44}. {T45}. {T46}. {T47} {T48}. {T49}. {T50} {T51}. {T52}. {T53} {T54} {T55} {T56}. {T57}. {T58} (nach der [Page7-0673] Lesart der {T59}). {T60}. {T61}. {T62}. {T63} {T64}. {T65}. {T66} ({T67} {T68}). {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75}. {T76}. {T77}. {T78} ({T79} {T80}). {T81}. {T82}. {T83}. {T84}. {T85}. {T86}. {T87} {T88}. (einen leblosen Gegenstand) {%ehren%}, (eine Sache) {%preisen%}: {T89} {T90}. {T91} {T92}. {T93}. {T94} {T95}. {T96}. {T97} {T98}. {T99} {T100}. {T101} {T102}.\n{T120}— {T103} {T104}: {T105} {T106}.",
+        "russian": "!√{T1}¦ ({T2} от {T118}2.{T119} {T3} + {T4}), {T5} {T6} ({T7} {T8} {T9} {T10}) {%кому-л.%} ({T11}) {%оказать честь —, оказать внимание%}: {T12} {T13}. {T14} {T15} {T16}. {T17}. {T18}. {T19} ({T20} {T21}). {T22} {T23} {T24}. {T25} {T26} {T27}. {T28} {T29}. {T30} {T31} (в конце одного {T32}) {T33}. {T34} {T35}. {T36}. {T37} {T38}. {T39} {T40} {T41}. {T42} {T43} {T44}. {T45}. {T46}. {T47} {T48}. {T49}. {T50} {T51}. {T52}. {T53} {T54} {T55} {T56}. {T57}. {T58} (по [Page7-0673] чтению {T59}). {T60}. {T61}. {T62}. {T63} {T64}. {T65}. {T66} ({T67} {T68}). {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75}. {T76}. {T77}. {T78} ({T79} {T80}). {T81}. {T82}. {T83}. {T84}. {T85}. {T86}. {T87} {T88}. (неодушевленный предмет) {%чтить%}, (вещь) {%восхвалять%}: {T89} {T90}. {T91} {T92}. {T93}. {T94} {T95}. {T96}. {T97} {T98}. {T99} {T100}. {T101} {T102}.\n{T120}— {T103} {T104}: {T105} {T106}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Classical, Epic / early-Classical, Medieval",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "√sabhāj",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "!√{T107}¦ {T108}\n{T121}— 1〉 {%Jmd%} ({T109}) {%eine Ehre —, eine Aufmerksamkeit erweisen%}. {T110} {T111}.",
+        "russian": "!√{T107}¦ {T108}\n{T121}— 1〉 {%кому-л.%} ({T109}) {%оказать честь —, оказать внимание%}. {T110} {T111}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "{T122}— 2〉 {%Etwas ehren, preisen%}. {T112} {T113}.",
+        "russian": "{T122}— 2〉 {%что-л. чтить, восхвалять%}. {T112} {T113}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "3",
+        "german": "{T123}— 3〉 {%besuchen, frequentiren%} {T114}. {T115}.",
+        "russian": "{T123}— 3〉 {%посещать, часто посещать%} {T114}. {T115}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "note",
+        "german": "{T124}— Mit {T116} = {T117} 1〉.",
+        "russian": "{T124}— С {T116} = {T117} 1〉.",
+        "equivalence_type": "explanatory",
+        "source_type": "lexicographic",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "vi_d",
+   "card": {
+    "key1": "vi_d",
+    "iast": "vidh",
+    "records": [
+     {
+      "h": "1 (PWG)",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T147}1.{T148} {T1}¦, {T2} {T3}. {T4} (als {T5}) {T6}. {T7}.",
+        "russian": "{T147}1.{T148} {T1}¦, {T2} {T3}. {T4} (как {T5}) {T6}. {T7}."
+       },
+       {
+        "tag": "1〉",
+        "german": "{T149} 1〉 {%den Göttern%} ({T8}) {%dienen, Ehre erweisen; sich hingeben%}: {T9} {T10}. {T11}. {T12} {T13}. {T14} {T15}. {T16} {T17}. {T18}. {T19}. {T20}. {T21}. {T22} als {T23} bezeichnet {T24}. {T25} {T26}. {T27} {T28}. Mit {T29} der Sache: {T30} {T31}. {T32} {T33}. {T34} {T35}. {T36} {T37}. {T38}. {T39} {T40}. {T41} {T42}. {T43} {T44}. {T45}. {T46}. {T47} {T48} oft im {T49} {T50}. {T51}. Mit {T52} der Person {T53}. {T54} {T55}.",
+        "russian": "{T149} 1〉 богам ({T8}) служить, оказывать почтение; отдавать себя: {T9} {T10}. {T11}. {T12} {T13}. {T14} {T15}. {T16} {T17}. {T18}. {T19} {T20}. {T21}. {T22} как {T23} обозначается {T24}. {T25} {T26}. {T27} {T28}. С {T29} вещи: {T30} {T31}. {T32} {T33}. {T34} {T35}. {T36} {T37}. {T38}. {T39} {T40}. {T41} {T42}. {T43} {T44}. {T45}. {T46}. {T47} {T48} часто в {T49} {T50}. {T51}. С {T52} лица {T53}. {T54} {T55}."
+       },
+       {
+        "tag": "2〉",
+        "german": "{T150}— 2〉 {%dienend%} oder {%ehrend hingeben, widmen%}; mit {T56}: {T57} {T58}. {T59} {T60}. {T61} {T62}. {T63} {T64}. {T65} {T66}. {T67} {T68}. {T69} {T70}. {T71} etwa {%wir wollen dir Muth geben%} {T72}. {T73}: {T74} {T75}. Die Formel {T76} erklärt {T77} {T78}, {%Ordner, Beherrscher! Deinen Namen wollen wir preisen%} (oder {%dir wollen wir Opferspeise zurüsten%}). {T145} (Ruhm oder Nahrung). {%Durch%} (unsere) {%Opferspeise geh zum Himmel!%} Man könnte etwa erklären: {T79}, {T146} (für {T80}), {%wir huldigen deinem Namen! Huldige in unserm Namen%} (den Göttern), {%geh zum Himmel!%} {T81}.",
+        "russian": "{T150}— 2〉 служа или с почтением предавая, посвящая; с {T56}: {T57} {T58}. {T59} {T60}. {T61} {T62}. {T63} {T64}. {T65} {T66}. {T67} {T68}. {T69} {T70}. {T71} примерно „мы хотим дать тебе мужество“ {T72}. {T73}: {T74} {T75}. Формулу {T76} объясняет {T77} {T78}, „Устроитель, Владыка! Твое имя мы хотим восхвалить“ (или „тебе мы хотим приготовить жертвенную пищу“). {T145} (слава или пища). Через (нашу) жертвенную пищу иди на небо! Можно было бы, пожалуй, объяснить: {T79}, {T146} (для {T80}), „мы поклоняемся твоему имени! Поклонись в нашем имени“ (богам), „иди на небо!“ {T81}."
+       },
+       {
+        "tag": "—",
+        "german": "{T151}— {T82} {%huldigen%}: {T83} {T84}.",
+        "russian": "{T151}— {T82} поклоняться: {T83} {T84}."
+       }
+      ]
+     },
+     {
+      "h": "2 (PWG Add.1)",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "{T152}2.{T153} √{T85}¦, {T86} {%leer werden von, mangeln einer Sache%} ({T87}), {%viduor%}: {T88} {T89}. {T90} {T91}. mit {T92} der Ergänzung: {T93} {T94}. durch {T95} erklärt {T96}.",
+        "russian": "{T152}2.{T153} √{T85}¦, {T86} „становиться пустым, лишаться какой-либо вещи“ ({T87}), „лишаюсь“: {T88} {T89}. {T90} {T91}. с {T92} дополнения: {T93} {T94}. через {T95} объясняется {T96}."
+       },
+       {
+        "tag": "—",
+        "german": "{T154}— {T97} {T98}.",
+        "russian": "{T154}— {T97} {T98}."
+       }
+      ]
+     },
+     {
+      "h": "3 (PWG Add.2)",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "3",
+        "german": "{T155}3.{T156} {T99}¦ {T100} {T101}.",
+        "russian": "{T155}3.{T156} {T99}¦ {T100} {T101}."
+       }
+      ]
+     },
+     {
+      "h": "4 (PWG Add.3)",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "4",
+        "german": "{T157}4.{T158} √{T102}¦ (von {T103}) {T104} am Ende eines {T105} in {T106}; {T107} {T108}.",
+        "russian": "{T157}4.{T158} √{T102}¦ (от {T103}) {T104} в конце {T105} в {T106}; {T107} {T108}."
+       }
+      ]
+     },
+     {
+      "h": "5 (PWG Add.4)",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "5",
+        "german": "{T159}5.{T160} {T109}¦, {T110} {T111} für {T112} {T113}",
+        "russian": "{T159}5.{T160} {T109}¦, {T110} {T111} для {T112} {T113}"
+       }
+      ]
+     },
+     {
+      "h": "1 (PW)",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T161}1.{T162} √{T114}¦, {T115} (ausnahmsweise auch {T116})",
+        "russian": "{T161}1.{T162} √{T114}¦, {T115} (изредка также {T116})"
+       },
+       {
+        "tag": "1〉",
+        "german": "{T163}— 1〉 den Göttern ({T117}, ausnahmsweise auch {T118} oder {T119}) {%dienen, huldigen, Ehre erweisen, — mit%} ({T120}).",
+        "russian": "{T163}— 1〉 богам ({T117}, изредка также {T118} или {T119}) „служить, поклоняться, оказывать почтение, — с“ ({T120})."
+       },
+       {
+        "tag": "2〉",
+        "german": "{T164}— 2〉 {%dienend oder ehrend hingeben, widmen%}.",
+        "russian": "{T164}— 2〉 „служа или с почтением предавая, посвящая“."
+       },
+       {
+        "tag": "3〉",
+        "german": "{T165}— 3〉 {%hold sein%} (von {T121} gesagt).",
+        "russian": "{T165}— 3〉 „быть благосклонным“ (сказано о {T121})."
+       },
+       {
+        "tag": "Mit {T122}",
+        "german": "{T166}— Mit {T122} {%huldigen,%} mit {T123}",
+        "russian": "{T166}— С {T122} „поклоняться,“ с {T123}"
+       },
+       {
+        "tag": "Mit {T124}",
+        "german": "{T167}— Mit {T124} {T125} {T126}.",
+        "russian": "{T167}— С {T124} {T125} {T126}."
+       }
+      ]
+     },
+     {
+      "h": "2 (PW)",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "2",
+        "german": "{T168}2.{T169} √{T127}¦, {T128} {%leer werden von, mangeln, viduor;%} mit {T129} oder {T130}",
+        "russian": "{T168}2.{T169} √{T127}¦, {T128} „становиться пустым, лишаться, лишаюсь;“ с {T129} или {T130}"
+       }
+      ]
+     },
+     {
+      "h": "3 (PW)",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "3",
+        "german": "{T170}3.{T171} √{T131}¦, {T132} {T133} √{T134}.",
+        "russian": "{T170}3.{T171} √{T131}¦, {T132} {T133} √{T134}."
+       }
+      ]
+     },
+     {
+      "h": "4 (PW)",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "4",
+        "german": "{T172}4.{T173} {T135}¦ {T136} in {T137}, *{T138}, {T139}, {T140}.",
+        "russian": "{T172}4.{T173} {T135}¦ {T136} в {T137}, *{T138}, {T139}, {T140}."
+       }
+      ]
+     },
+     {
+      "h": "5 (PW)",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "5",
+        "german": "{T174}5.{T175} *√{T141}¦, {T142} {T143} für {T144}.",
+        "russian": "{T174}5.{T175} *√{T141}¦, {T142} {T143} для {T144}."
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "d_ikz_a",
+   "card": {
+    "key1": "d_ikz_a",
+    "iast": "dīkṣā",
+    "records": [
+     {
+      "h": "",
+      "grammar": "f.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ (von {T2}) {T3} {%Weihe zu einer religiösen Feier, Uebernahme religiöser Observanzen zu einem bestimmten Zwecke; die zu einem bestimmten [Page3-0643] Zwecke unternommenen religiösen Observanzen selbst%} (häufig neben {T4}) {T5}. {T6} {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14}. {T15} {T16} {T17} zu {T18}. {T19}. {T20}. — {T21}. {T22}. {T23}. {T24} {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31} {T32}. {T33} {T34}. {T35} {T36}. {T37} {T38}. {T39} {T40} — {T41}. {T42}. {T43}. {T44}. {T45}. {T46}. {T47} {T48}. {T49} {T50}. {T51}. {T52}. {T53} {T54} {T55}. {T56} {T57}. {T58} {T59}. {T60} {T61}. {T62} {T63} in der {T64} {T65} {T66}. {T67} {T68}. {T69}. {T70}. {T71} {%in den Kampf eingeweiht%} so {T72} {%dazu vollkommen gerüstet, vorbereitet%} {T73}. — {T74} {T75}. {T76} {T77}. {T78} {T79}. {T80} {T81}. {T82}. {T83}. {T84} {T85}. {T86} {T87}. {T88}. {T89} {T90}. {%das sich — Weihen einer Person%} oder {%Sache, völlige Hingabe, das Aufgehen in%}: {T91} {T92}. {T93} {T94}. {T95} {%dadurch, dass man einzig nur von Gemüse lebt%}, {T96}. {T97} {T98}. {T99} {T100}. {T101} ist die {%Weihe%} die Gemahlin {T102}ʼs {T103}. des {T104} {T105} {T106}. des {T107} {T108} {T109}. Eine spielende {T110} des Wortes: {T111} {T112}; {T113} {T114}. Nach {T115}_im_{T116} = {T117} und {T118}.",
+        "russian": "{T1}¦ (от {T2}) {T3} {%освящение на религиозное торжество, принятие религиозных обетов с определенной целью; сами религиозные обеты, предпринятые с определенной [Page3-0643] целью%} (часто рядом с {T4}) {T5}. {T6} {T7}. {T8}. {T9}. {T10}. {T11}. {T12}. {T13}. {T14}. {T15} {T16} {T17} к {T18}. {T19}. {T20}. — {T21}. {T22}. {T23}. {T24} {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31} {T32}. {T33} {T34}. {T35} {T36}. {T37} {T38}. {T39} {T40} — {T41}. {T42}. {T43}. {T44}. {T45}. {T46}. {T47} {T48}. {T49} {T50}. {T51}. {T52}. {T53} {T54} {T55}. {T56} {T57}. {T58} {T59}. {T60} {T61}. {T62} {T63} в {T64} {T65} {T66}. {T67} {T68}. {T69}. {T70}. {T71} {%посвященный в бой%} т. е. {T72} {%для этого совершенно снаряженный, подготовленный%} {T73}. — {T74} {T75}. {T76} {T77}. {T78} {T79}. {T80} {T81}. {T82}. {T83}. {T84} {T85}. {T86} {T87}. {T88}. {T89} {T90}. {%посвящение себя — лица%} или {%вещи, полная отдача, растворение в%}: {T91} {T92}. {T93} {T94}. {T95} {%тем, что живут исключительно овощами%}, {T96}. {T97} {T98}. {T99} {T100}. {T101} является {%освящение%} супругой {T102}ʼs {T103}. {T104} {T105} {T106}. {T107} {T108} {T109}. Игривое {T110} слова: {T111} {T112}; {T113} {T114}. Согласно {T115}_в_{T116} = {T117} и {T118}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "",
+      "grammar": "f.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T119}¦ {T120}\n{T136}— 1〉 {%Weihe zu einer religiörsen Feier, Uebernahme religiöser Observanzen zu einem {T121} Zwecke, die zu einem {T122} Zwecke unternommenen [Page3-092-c] religiösen Observanzen selbst;%} auch ernstliche Vorbereitung {T123} Das Wozu im {T124} vorangehend. {T125} {T126}",
+        "russian": "{T119}¦ {T120}\n{T136}— 1〉 {%освящение на религиозное торжество, принятие религиозных обетов с {T121} целью, сами религиозные обеты, предпринятые с {T122} целью;%} также серьезная подготовка {T123} то, для чего, в {T124} предшествующем. {T125} {T126}",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "{T137}— 2〉 {%das Sichweihen einer Person oder Sache, völlige Hingabe, das Aufgehen in%} (im {T127} vorangehend). {T128} {%dadurch, dass man einzig nur von Gemüse lebt%}.",
+        "russian": "{T137}— 2〉 {%посвящение себя — лица или вещи, полная отдача, растворение в%} (в {T127} предшествующем). {T128} {%тем, что живут исключительно овощами%}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "3",
+        "german": "{T138}— 3〉 {%erste Bekanntschaft mit Etwas%} (im {T129} vorangehend) {T130}.",
+        "russian": "{T138}— 3〉 {%первое знакомство с чем-либо%} (в {T129} предшествующем) {T130}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       },
+       {
+        "tag": "4",
+        "german": "{T139}— 4〉 personificirt als Gattin des {T131}, des {T132} {T133} ({T134}) oder {T135}.",
+        "russian": "{T139}— 4〉 олицетворена как супруга {T131}, {T132} {T133} ({T134}) или {T135}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "p_avana",
+   "card": {
+    "key1": "p_avana",
+    "iast": "pāvana",
+    "records": [
+     {
+      "h": "pāvana",
+      "grammar": "adj., f., m., n.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T1}¦ (von {T2})",
+        "russian": "{T1}¦ (от {T2})"
+       },
+       {
+        "tag": "1",
+        "german": "{T201} 1〉 {T3} {T4} {T5} {%reinigend, entsündigend, heiligend; rein, heilig%} {T6}. {T7} {T8}. {T9} {T10}. {T11} {T12}. {T13} {T14}. {T15} {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25} [Page4-0695] {T26}. {T27} {T28}. {T29} {T30}. {T31}. {T32} {T33}. {T34} {T35}. {T36}. {T37} {T38}. {T39} {T40}. {T41}. {T42}. {T43}. {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50} ({T51} richtig {T52}) {T53} {T54}. {T55} {T56}. {T57} {T58}. {T59} {T60}. {T61} {T62}. {T63}. {T64} {T65}. {T66}. {T67} {T68}. {T69} {T70}. {T71} (sic) {T72}. {T73} {T74}.",
+        "russian": "{T201} 1〉 {T3} {T4} {T5} очищающий, искупающий грехи, освящающий; чистый, святой {T6}. {T7} {T8}. {T9} {T10}. {T11} {T12}. {T13} {T14}. {T15} {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25} [Page4-0695] {T26}. {T27} {T28}. {T29} {T30}. {T31}. {T32} {T33}. {T34} {T35}. {T36}. {T37} {T38}. {T39} {T40}. {T41}. {T42}. {T43}. {T44}. {T45} {T46}. {T47} {T48}. {T49}. {T50} ({T51} правильно {T52}) {T53} {T54}. {T55} {T56}. {T57} {T58}. {T59} {T60}. {T61} {T62}. {T63}. {T64} {T65}. {T66}. {T67} {T68}. {T69} {T70}. {T71} (sic) {T72}. {T73} {T74}."
+       },
+       {
+        "tag": "2",
+        "german": "{T202}— 2〉 {T75}",
+        "russian": "{T202}— 2〉 {T75}"
+       },
+       {
+        "tag": "2a",
+        "german": "{T203} a〉 {%Feuer%} {T76} {T77} {%ein {T78} Feuer%} {T79}_bei_{T80}_zu_{T81}. {T82} {T83}",
+        "russian": "{T203} a〉 огонь {T76} {T77} некий {T78} огонь {T79} у {T80} к {T81}. {T82} {T83}"
+       },
+       {
+        "tag": "2b",
+        "german": "{T204}— b〉 {%Weihrauch%} {T84}_im_{T85}",
+        "russian": "{T204}— b〉 ладан {T84} в {T85}"
+       },
+       {
+        "tag": "2c",
+        "german": "{T205}— c〉 {%eine gelb blühende Verbesina%} ({T86}) {T87}_im_{T88}",
+        "russian": "{T205}— c〉 желтоцветущая вербезина ({T86}) {T87} в {T88}"
+       },
+       {
+        "tag": "2d",
+        "german": "{T206}— d〉 {%ein%} {T89} {T90}",
+        "russian": "{T206}— d〉 некий {T89} {T90}"
+       },
+       {
+        "tag": "2e",
+        "german": "{T207}— e〉 {T91} eines der {T92} {T93}.",
+        "russian": "{T207}— e〉 {T91} один из {T92} {T93}."
+       },
+       {
+        "tag": "2f",
+        "german": "{T208}— f〉 {T94} {T95}ʼs {T96} {T97}",
+        "russian": "{T208}— f〉 {T94} {T95}ʼs {T96} {T97}"
+       },
+       {
+        "tag": "3",
+        "german": "{T209}— 3〉 {T98} {T99}",
+        "russian": "{T209}— 3〉 {T98} {T99}"
+       },
+       {
+        "tag": "3a",
+        "german": "{T210} a〉 {T211}Terminalia Chebula Roxb.{T212} {T100} {T101}_im_{T102}",
+        "russian": "{T210} a〉 {T211}Terminalia Chebula Roxb.{T212} {T100} {T101} в {T102}"
+       },
+       {
+        "tag": "3b",
+        "german": "{T213}— b〉 {%Basilienkraut%}.",
+        "russian": "{T213}— b〉 базилик."
+       },
+       {
+        "tag": "3c",
+        "german": "{T214}— c〉 {%Kuh%} {T103}_im_{T104}",
+        "russian": "{T214}— c〉 корова {T103} в {T104}"
+       },
+       {
+        "tag": "3d",
+        "german": "{T215}— d〉 {T105} eines Flusses {T106}. {T107}. {T108}",
+        "russian": "{T215}— d〉 {T105} реки {T106}. {T107}. {T108}"
+       },
+       {
+        "tag": "4",
+        "german": "{T216}— 4〉 {T109}",
+        "russian": "{T216}— 4〉 {T109}"
+       },
+       {
+        "tag": "4a",
+        "german": "{T217} a〉 {%das Reinigen, Läutern, Heiligen%}: {T110} {T111}. {T112}. {T113}. {T114}. {T115}. {T116}. {T117}. {T118}. {T119}. {T120}. {T121}. {T122} {%um diese Schuld zu reinigen%} {T123}.",
+        "russian": "{T217} a〉 очищение, очистка, освящение: {T110} {T111}. {T112}. {T113}. {T114}. {T115}. {T116}. {T117}. {T118}. {T119}. {T120}. {T121}. {T122} чтобы очистить этот долг {T123}."
+       },
+       {
+        "tag": "4b",
+        "german": "{T218}— b〉 {%Reinigungsmittel, Läuterungsmittel%}: {T124} {T125}. {T126} {T127}. {T128} {T129}.",
+        "russian": "{T218}— b〉 средство очищения, средство очистки: {T124} {T125}. {T126} {T127}. {T128} {T129}."
+       },
+       {
+        "tag": "4c",
+        "german": "{T219}— c〉 {%Busse%}, = {T130} {T131} {T132} = {T133} {T134}",
+        "russian": "{T219}— c〉 епитимья, = {T130} {T131} {T132} = {T133} {T134}"
+       },
+       {
+        "tag": "4d",
+        "german": "{T220}— d〉 {%Wasser%} {T135}. {T136} {T137}",
+        "russian": "{T220}— d〉 вода {T135}. {T136} {T137}"
+       },
+       {
+        "tag": "4e",
+        "german": "{T221}— e〉 {%Kuhmist%} {T138}_im_{T139}",
+        "russian": "{T221}— e〉 коровий навоз {T138} в {T139}"
+       },
+       {
+        "tag": "4f",
+        "german": "{T222}— f〉 {%der zu Rosenkränzen verwandte Same von%} {T223}Elaeocarpus Ganitrus Roxb.{T224}",
+        "russian": "{T222}— f〉 семя, употребляемое для четок, {T223}Elaeocarpus Ganitrus Roxb.{T224}"
+       },
+       {
+        "tag": "4g",
+        "german": "{T225}— g〉 {T226}Costus speciosus{T227} ({T140}) {T141}_im_{T142}",
+        "russian": "{T225}— g〉 {T226}Costus speciosus{T227} ({T140}) {T141} в {T142}"
+       },
+       {
+        "tag": "4h",
+        "german": "{T228}— h〉 {%Sectenzeichen%} ({T143}).",
+        "russian": "{T228}— h〉 знак секты ({T143})."
+       },
+       {
+        "tag": "4i",
+        "german": "{T229}— i〉 = {T144} {T145}",
+        "russian": "{T229}— i〉 = {T144} {T145}"
+       }
+      ]
+     },
+     {
+      "h": "pāvana",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "2g",
+        "german": "{T146}¦ 2〉g〉 {T147} eines Sohnes des {T148} {T149}.",
+        "russian": "{T146}¦ 2〉g〉 {T147} сына {T148} {T149}."
+       }
+      ]
+     },
+     {
+      "h": "pāvana",
+      "grammar": "adj., f., m., n.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T150}¦",
+        "russian": "{T150}¦"
+       },
+       {
+        "tag": "1",
+        "german": "{T230}— 1〉 {T151} ({T152} {T153}) {%reinigend, entsündigend, heiligend; rein, heilig%}.",
+        "russian": "{T230}— 1〉 {T151} ({T152} {T153}) очищающий, искупающий грехи, освящающий; чистый, святой."
+       },
+       {
+        "tag": "2",
+        "german": "{T231}— 2〉 {T154}",
+        "russian": "{T231}— 2〉 {T154}"
+       },
+       {
+        "tag": "2a",
+        "german": "{T232}— a〉 {%ein {T155} Feuer%}.",
+        "russian": "{T232}— a〉 некий {T155} огонь."
+       },
+       {
+        "tag": "2b",
+        "german": "{T233}— b〉 *{%Feuer%} {T156}",
+        "russian": "{T233}— b〉 *огонь {T156}"
+       },
+       {
+        "tag": "2c",
+        "german": "{T234}— c〉 *{%Olibanum%}.",
+        "russian": "{T234}— c〉 *олибанум."
+       },
+       {
+        "tag": "2d",
+        "german": "{T235}— d〉 *{%eine gelb blühende Verbesina%} {T157}.",
+        "russian": "{T235}— d〉 *желтоцветущая вербезина {T157}."
+       },
+       {
+        "tag": "2e",
+        "german": "{T236}— e〉 *{%ein%} {T158}.",
+        "russian": "{T236}— e〉 *некий {T158}."
+       },
+       {
+        "tag": "2f",
+        "german": "{T237}— f〉 *{T159} {T160}ʼs.",
+        "russian": "{T237}— f〉 *{T159} {T160}ʼs."
+       },
+       {
+        "tag": "2g",
+        "german": "{T238}— g〉 {T161}",
+        "russian": "{T238}— g〉 {T161}"
+       },
+       {
+        "tag": "2gα",
+        "german": "{T239}— α〉 eines der {T162}.",
+        "russian": "{T239}— α〉 один из {T162}."
+       },
+       {
+        "tag": "2gβ",
+        "german": "{T240}— β〉 eines Sohnes des {T163}.",
+        "russian": "{T240}— β〉 сына {T163}."
+       },
+       {
+        "tag": "3",
+        "german": "{T241}— 3〉 {T164} {T165}",
+        "russian": "{T241}— 3〉 {T164} {T165}"
+       },
+       {
+        "tag": "3a",
+        "german": "{T242}— a〉 *{%{T243}Terminalia chebula{T244}%}.",
+        "russian": "{T242}— a〉 *{T243}Terminalia chebula{T244}."
+       },
+       {
+        "tag": "3b",
+        "german": "{T245}— b〉 *{%Basilienkraut%} {T166}.",
+        "russian": "{T245}— b〉 *базилик {T166}."
+       },
+       {
+        "tag": "3c",
+        "german": "{T246}— c〉 *{%Kuh%} {T167}.",
+        "russian": "{T246}— c〉 *корова {T167}."
+       },
+       {
+        "tag": "3d",
+        "german": "{T247}— d〉 {T168} eines Flusses.",
+        "russian": "{T247}— d〉 {T168} реки."
+       },
+       {
+        "tag": "4",
+        "german": "{T248}— 4〉 {T169}",
+        "russian": "{T248}— 4〉 {T169}"
+       },
+       {
+        "tag": "4a",
+        "german": "{T249}— a〉 {%das Reinigen, Läutern, Heiligen%}.",
+        "russian": "{T249}— a〉 очищение, очистка, освящение."
+       },
+       {
+        "tag": "4b",
+        "german": "{T250}— b〉 {%Reinigungs-, Läuterungsmittel%}.",
+        "russian": "{T250}— b〉 средство очищения, средство очистки."
+       },
+       {
+        "tag": "4c",
+        "german": "{T251}— c〉 *{%Busse%}.",
+        "russian": "{T251}— c〉 *епитимья."
+       },
+       {
+        "tag": "4d",
+        "german": "{T252}— d〉 *{%Wasser%}.",
+        "russian": "{T252}— d〉 *вода."
+       },
+       {
+        "tag": "4e",
+        "german": "{T253}— e〉 *{%Kuhmist%}.",
+        "russian": "{T253}— e〉 *коровий навоз."
+       },
+       {
+        "tag": "4f",
+        "german": "{T254}— f〉 *{%der zu Rosenkränzen verwandte Same von {T255}Elaeocarpus ganitrus{T256}%} {T170}.",
+        "russian": "{T254}— f〉 *семя, употребляемое для четок, {T255}Elaeocarpus ganitrus{T256} {T170}."
+       },
+       {
+        "tag": "4g",
+        "german": "{T257}— g〉 *{%Sectenzeichen%}.",
+        "russian": "{T257}— g〉 *знак секты."
+       },
+       {
+        "tag": "4h",
+        "german": "{T258}— h〉 *= {T171}.",
+        "russian": "{T258}— h〉 *= {T171}."
+       }
+      ]
+     },
+     {
+      "h": "pāvana",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "2f",
+        "german": "{T172}¦ 2〉f〉 {T173} {T174} ist {T175} {T176} = {T177} zu lesen; {T178} {T179}.{T259}",
+        "russian": "{T172}¦ 2〉f〉 {T173} {T174} следует читать {T175} {T176} = {T177}; {T178} {T179}.{T259}"
+       }
+      ]
+     },
+     {
+      "h": "pāvana",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "IV.5",
+        "german": "{T180}¦ IV. 5. {T181} nach {T182} {%von Wind%} ({T183}) {%lebend%} {T184}.{T260}",
+        "russian": "{T180}¦ IV. 5. {T181} по {T182} от ветра ({T183}) живущий {T184}.{T260}"
+       }
+      ]
+     },
+     {
+      "h": "pāvana",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "2f",
+        "german": "{%pāvana%}¦ 2. f. statt {%vyāse%} ist {T185} {%'dhyāse = śūrpe%} zu lesen; vgl. {T186} Beitr. 88.",
+        "russian": "{%pāvana%}¦ 2. f. вместо {%vyāse%} следует читать {T185} {%'dhyāse = śūrpe%}; ср. {T186} Beitr. 88."
+       },
+       {
+        "tag": "Adj.",
+        "german": "Adj. nach {T187} von Wind (pavana) lebend, {T188} {part=,seq=18703,type=,n=4}",
+        "russian": "Adj. по {T187} от ветра (pavana) живущий, {T188} {part=,seq=18703,type=,n=4}"
+       }
+      ]
+     },
+     {
+      "h": "pāvana",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "2f",
+        "german": "{T189}¦ 2〉f〉 {T190} {T191} ist {T192} {T193} zu lesen; {T194} {T195}.",
+        "russian": "{T189}¦ 2〉f〉 {T190} {T191} следует читать {T192} {T193}; {T194} {T195}."
+       }
+      ]
+     },
+     {
+      "h": "pāvana",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "IV.5",
+        "german": "{T196}¦ IV. 5. {T197} nach {T198} {%von Wind%} ({T199}) {%lebend%} {T200}.",
+        "russian": "{T196}¦ IV. 5. {T197} по {T198} от ветра ({T199}) живущий {T200}."
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "pf_tak",
+   "card": {
+    "key1": "pf_tak",
+    "iast": "pṛthak",
+    "records": [
+     {
+      "h": "pṛthak",
+      "grammar": "adv., adj., adj.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ (von {T2}) {T3} {T4} {T5} zu {T6}. ({T7} {T8}. {T9} {T10}) {%vereinzelt, einzeln, gesondert%}; daher oft so {T11} {%zerstreut, auseinander; je nach besonderer Art, besonders, für sich%} ({T12} {T13}) {T14}. {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25} {T26}. {T27}. {T28}. {T29}. {T30}. {T31} {T32}. {T33} {T34} {T35} {T36}. {T37} {T38}. {T39}. {T40}. {T41}. {T42} {T43}. {T44}. {T45}. {T46}. {T47}. {T48}. {T49}. {T50}. {T51}. {T52}. {T53}. {T54}. {T55}. {T56}. {T57}. {T58}. {T59} {%für verschieden haltend%} {T60}. {T61}. {T62}. {T63}. {T64}. {T65}. {T66}. {T67}. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75} {%verschwindet gesondert%} {T76} {%existirt nicht für sich selbst%} {T77} in {T78}. {T79} ({T80} {T171}3.{T172} {T81} mit {T82} {T83} 9 füge man demnach {T84} am Ende hinzu und streiche {%abgehen, fehlen%}). verdoppelt {T85}. {T86}. {T87}. {T88}. {T89}. {T90}. {T91}. {T92}. {T93}. {T94}. {T95}. {T96}. {T97}. {T98} {T99}. {T100} {T101}. {T102} {%verschiedene Wünsche habend%} {T103}. {T104} {T105}. {T106} {T107}. {T108}. {T109} {T110}. {T111} {T112}. {T113} {%jeder eine Wohnung für sich habend%} {T114}. {T115} {T116} {T117}. {T118} {T119} {T120}. {T121} {T122} zu {T123}. {T124}_zu_{T125}. {T126} {T127}. {T128} {T129}. {T130} {%abgelöst, abgehauen%} {T131}. {T132} {T133}. {T134} {%abwenden%} {T135}_zu_{T136}. {%getrennt von, ohne%} ({T137}) {T138}. {T139}. {T140}. mit {T141} {T142} oder {T143} {T144}. mit {T145} {T146}. {T147} {T148}. {%verschieden von%}: {T149} {T150}. {%mit Ausnahme von%} ({T151}): {T152} {T153}, {T154} {T155} {T156}. {T173}— {T157} {T158}.",
+        "russian": "{T1}¦ (от {T2}) {T3} {T4} {T5} к {T6}. ({T7} {T8}. {T9} {T10}) обособленно, единично, отдельно; поэтому часто так {T11} рассеянно, врозь; по особому роду, особо, для себя ({T12} {T13}) {T14}. {T15}. {T16}. {T17} {T18}. {T19} {T20}. {T21}. {T22}. {T23}. {T24}. {T25} {T26}. {T27}. {T28}. {T29}. {T30}. {T31} {T32}. {T33} {T34} {T35} {T36}. {T37} {T38}. {T39}. {T40}. {T41}. {T42} {T43}. {T44}. {T45}. {T46}. {T47}. {T48}. {T49}. {T50}. {T51}. {T52}. {T53}. {T54}. {T55}. {T56}. {T57}. {T58}. {T59} считающий различным {T60}. {T61}. {T62}. {T63}. {T64}. {T65}. {T66}. {T67}. {T68}. {T69}. {T70}. {T71}. {T72}. {T73}. {T74}. {T75} исчезает по отдельности {T76} не существует для самого себя {T77} в {T78}. {T79} ({T80} {T171}3.{T172} {T81} с {T82} {T83} 9 следует поэтому {T84} добавить в конце и вычеркнуть «отпадать, отсутствовать»). в удвоении {T85}. {T86}. {T87}. {T88}. {T89}. {T90}. {T91}. {T92}. {T93}. {T94}. {T95}. {T96}. {T97}. {T98} {T99}. {T100} {T101}. {T102} имеющий разные желания {T103}. {T104} {T105}. {T106} {T107}. {T108}. {T109} {T110}. {T111} {T112}. {T113} каждый имеющий для себя жилище {T114}. {T115} {T116} {T117}. {T118} {T119} {T120}. {T121} {T122} к {T123}. {T124}_к_{T125}. {T126} {T127}. {T128} {T129}. {T130} отделенный, отрубленный {T131}. {T132} {T133}. {T134} отвращать {T135}_к_{T136}. отдельно от, без ({T137}) {T138}. {T139}. {T140}. с {T141} {T142} или {T143} {T144}. с {T145} {T146}. {T147} {T148}. отличный от: {T149} {T150}. за исключением ({T151}): {T152} {T153}, {T154} {T155} {T156}. {T173}— {T157} {T158}."
+       }
+      ]
+     },
+     {
+      "h": "pṛthak",
+      "grammar": "adv., adj., adj.",
+      "senses": [
+       {
+        "tag": "lemma",
+        "german": "{T159}¦",
+        "russian": "{T159}¦"
+       },
+       {
+        "tag": "1",
+        "german": "{T174}— 1〉 {T160} {%vereinzelt, einzeln, gesondert, jeder für sich;%} daher oft so {T161} {%zerstreut, da und dort; je nach der besonderen Art, verschieden, besonders%}. Häufig verdoppelt.",
+        "russian": "{T174}— 1〉 {T160} обособленно, единично, отдельно, каждый сам по себе; поэтому часто так {T161} рассеянно, там и сям; по особому роду, различно, особо. Часто удваивается."
+       },
+       {
+        "tag": "1.1",
+        "german": "{T175}— Mit {T162}",
+        "russian": "{T175}— с {T162}"
+       },
+       {
+        "tag": "1.1a",
+        "german": "{T176}— a〉 {%absondern, trennen%}.",
+        "russian": "{T176}— a〉 отделять, разлучать."
+       },
+       {
+        "tag": "1.1b",
+        "german": "{T177}— b〉 {%ablösen, abhauen%}.",
+        "russian": "{T177}— b〉 отделять, отрубать."
+       },
+       {
+        "tag": "1.1c",
+        "german": "{T178}— c〉 {%abwenden von%} ({T163})",
+        "russian": "{T178}— c〉 отвращать от ({T163})"
+       },
+       {
+        "tag": "1.2",
+        "german": "{T179}— Mit {T164} {%sich sondern%}. {T165} {T166} {%gesondert, verschieden%}.",
+        "russian": "{T179}— с {T164} отделяться. {T165} {T166} обособленный, различный."
+       },
+       {
+        "tag": "2",
+        "german": "{T180}— 2〉 {T167} mit {T168}, *{T169} oder *{T170}",
+        "russian": "{T180}— 2〉 {T167} с {T168}, *{T169} или *{T170}"
+       },
+       {
+        "tag": "2a",
+        "german": "{T181}— a〉 {%getrennt von ohne%}.",
+        "russian": "{T181}— a〉 отдельно от, без."
+       },
+       {
+        "tag": "2b",
+        "german": "{T182}— b〉 {%mit Ausnahme von%}.",
+        "russian": "{T182}— b〉 за исключением."
+       },
+       {
+        "tag": "2c",
+        "german": "{T183}— c〉 *{%verschieden von%}.",
+        "russian": "{T183}— c〉 *отличный от."
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "yatna",
+   "card": {
+    "key1": "yatna",
+    "iast": "yatna",
+    "notes": "",
+    "records": [
+     {
+      "h": "yatna",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ (von {T2}) {T3} {T4}. {T5}. {%Willensthätigkeit, Bestrebung%} {T6}. {T7}. {T8}. {T9}. {T10}. {T11} (wo wohl {T12} zu lesen ist).",
+        "russian": "{T1}¦ (от {T2}) {T3} {T4}. {T5}. деятельность воли, стремление {T6}. {T7}. {T8}. {T9}. {T10}. {T11} (где, вероятно, {T12} следует читать).",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Classical",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "{%Verrichtung, Arbeit%} {T13} {T14}.",
+        "russian": "действие, работа {T13} {T14}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Classical",
+        "differentia": ""
+       },
+       {
+        "tag": "3",
+        "german": "{%Bemühung, Mühe, Anstrengung%} {T15}. {T16}. {T17}. {T18} {T19}. {T20} {T21}. {T22} {T23}. {T24}. mit {T25}: {T26} {%wenn man sich nicht bemüht Andern Gefälligkeiten zu erweisen%} {T27}. {T28} {%der Bösewicht kümmert sich gar sehr um Fehler%} {T29}. {T30}. {T31} {T32}. {T33}. Die Ergänzung im {T34} vorangehend: {T35} {T36}. {T37} {T38}. {T39}. {T40} {T41}. {T42} {%sich Mühe geben, Mühe auf Etwas%} ({T43}) {%wenden, sich Etwas angelegen sein lassen%}: {T44} {T45}. {T46} {T47}. {T48} zu {T49}. {T50} {T51}. {T52} {T53}. {T54}. {T55}. {T56}. {T57}. {T58}. {T59}. {T60}. {T61}. {T62}. {T63}. {T64}. {T65}. {T66} {T67}. {T68} {T69}. {T70} {T71} {T72}. {T73}. {T74} {T75}_zu_{T76}. {T77} {T78}. {T79}. {T80}. {T81}. {T82}. {T83} {T84}. {T85} {T86}. {T87} {T88}. {T89} {T90}. {T91} {%sorgfältig, eifrig%}: {T92} so {T93} {%er lasse es sich angelegen sein zu speisen%} {T94}. {T95}. {T96} {T97}. {T98}. {T99}. {T100}. {T101}. {T102}. {T103} {%trotz aller Anstrengung%} {T104}. {T105} ({T106} auch {T107} {T108}) {%ohne Mühe%} {T109}. {T110}. {T111}. [Page6-0033] {T112} = {T113} {T114}. {T115} {T116}. {T117} {T118}. {T119} {%bei aller Anstrengung%} {T120}. {T121}. {%sorgfältig, eifrig%} {T122}. {T123}. {T124}. {T125} {%mit grosser Anstrengung%} {T126}. {T127} ({T128} auch {T129} {T130}) {%ohne Anstrengung%} {T131}, wo {T132} zu lesen ist. {T133} {%sorgfältig, eifrig%} {T134}. {T135}. {T136}. {T137}. {T138}. {T139}. {T140}. {T141}. {T142}. {T143}. {T144}. {T145}. {T146}. {T147}. {T148} ({T149} auch {T150} {T151}) {%ohne Mühe%} {T152}. {T153}. {T154}. {T155} {%mit Mühe, nicht leicht%} {T156}_zu_{T157}.",
+        "russian": "старание, усилие, напряжение {T15}. {T16}. {T17}. {T18} {T19}. {T20} {T21}. {T22} {T23}. {T24}. с {T25}: {T26} если не стараются оказывать другим услуги {T27}. {T28} злодей весьма заботится о недостатках {T29}. {T30}. {T31} {T32}. {T33}. Дополнение в {T34} предшествует: {T35} {T36}. {T37} {T38}. {T39}. {T40} {T41}. {T42} стараться, прилагать усилия к чему-либо ({T43}) обращать, заботиться: {T44} {T45}. {T46} {T47}. {T48} к {T49}. {T50} {T51}. {T52} {T53}. {T54}. {T55}. {T56}. {T57}. {T58}. {T59}. {T60}. {T61}. {T62}. {T63}. {T64}. {T65}. {T66} {T67}. {T68} {T69}. {T70} {T71} {T72}. {T73}. {T74} {T75}_к_{T76}. {T77} {T78}. {T79}. {T80}. {T81}. {T82}. {T83} {T84}. {T85} {T86}. {T87} {T88}. {T89} {T90}. {T91} тщательно, усердно: {T92} так {T93} пусть он позаботится поесть {T94}. {T95}. {T96} {T97}. {T98}. {T99}. {T100}. {T101}. {T102}. {T103} несмотря на все усилия {T104}. {T105} ({T106} также {T107} {T108}) без труда {T109}. {T110}. {T111}. [Page6-0033] {T112} = {T113} {T114}. {T115} {T116}. {T117} {T118}. {T119} при всех усилиях {T120}. {T121}. тщательно, усердно {T122}. {T123}. {T124}. {T125} с большим усилием {T126}. {T127} ({T128} также {T129} {T130}) без усилия {T131}, где {T132} следует читать. {T133} тщательно, усердно {T134}. {T135}. {T136}. {T137}. {T138}. {T139}. {T140}. {T141}. {T142}. {T143}. {T144}. {T145}. {T146}. {T147}. {T148} ({T149} также {T150} {T151}) без труда {T152}. {T153}. {T154}. {T155} с трудом, нелегко {T156}_к_{T157}.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       },
+       {
+        "tag": "xref",
+        "german": "{T183}— {T158} {T159}.",
+        "russian": "{T183}— {T158} {T159}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "yatna",
+      "grammar": "m.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T160}¦ {T161} ({T162} {T163} {T164})\n{T184}— 1〉 {%Willensthätigkeit, Bestrebung%}.",
+        "russian": "{T160}¦ {T161} ({T162} {T163} {T164})\n{T184}— 1〉 деятельность воли, стремление.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Classical",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "{T185}— 2〉 {%Verrichtung, Arbeit%}.",
+        "russian": "{T185}— 2〉 действие, работа.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Classical",
+        "differentia": ""
+       },
+       {
+        "tag": "3",
+        "german": "{T186}— 3〉 {T165} und {T166} {%Bemühung, Mühe, Anstrengung, — in Betreff von%} ({T167} oder im {T168} vorangehend). {T169}, {T170}, {T171}, {T172} {%sich Mühe geben, Mühe auf Etwa wenden, sich angelegen sein lassen;%} mit {T173} oder {T174} {T175} und {T176} {%sorgfältig, eifrig, alles Ernstes;%} {T177} {%trotz aller Anstrengung;%} {T178} {%bei aller Anstrengung; sorgfältig, eifrig;%} {T179} {%mit grosser Anstrengung;%} {T180} {%sorgfältig, eifrig;%} {T181} {%mit Mühe, nicht leicht%}.",
+        "russian": "{T186}— 3〉 {T165} и {T166} старание, усилие, напряжение, — в отношении ({T167} или в {T168} предшествующем). {T169}, {T170}, {T171}, {T172} стараться, прилагать усилия к чему-либо, заботиться; в {T173} или {T174} {T175} и {T176} тщательно, усердно, со всей серьезностью; {T177} несмотря на все усилия; {T178} при всех усилиях; тщательно, усердно; {T179} с большим усилием; {T180} тщательно, усердно; {T181} с трудом, нелегко.",
+        "equivalence_type": "explanatory",
+        "source_type": "mixed",
+        "stratum": "Epic / early-Classical",
+        "differentia": ""
+       },
+       {
+        "tag": "4",
+        "german": "{T187}— 4〉 {%eine besondere, ausdrückliche Bemerkung%} {T182}.",
+        "russian": "{T187}— 4〉 особое, явное замечание {T182}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "",
+        "differentia": ""
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key1": "ras",
+   "card": {
+    "key1": "ras",
+    "iast": "ras",
+    "records": [
+     {
+      "h": "1",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T203}1.{T204} {T1}¦, {T2} ({T3}) {T4}. {T5}. {T6}. {T7} {T8}; hier und da auch {T9} {%brüllen, wiehern, heulen, schreien, dröhnen, ertönen%}: {T10} {T11}. {T12}. {T13} {T14}. {T15} {T16}. {T17}. {T18} {T19}. {T20}. {T21} {T22}. {T23} {T24}. {T25} {T26}. {T27}. {T28}. {T29} {T30}. {T31} {T32}. {T33} {T34}. {T35}. {T36} {T37}. {T38} {T39}. {T40}. {T41} {T42}. ({T43}) {T44} {T45}. {T46} {T47}. {T48}. {T49}. {T50}. {T51} {T52}. {T53} {T54}. {T55} {T56}. {T57}. {T58}. {T59} {T60}. {T61} {T62}. {T63} {T64}. {T65} {T66}. {T67} {T68}. {T69} {T70}. {T71} {T72}. {T73} {T74} {%unarticulirte Laute von sich gebend%} {T75}. {T76} {%Gebrüll, Geschrei, Getön%} {T77}. {T78}. {T79} {T80}. {T81} {T82}. {%Donner%} {T83}. {T84}. {T85} {T86} {T87}. {T88} {T89}. {T90}. {T91}.",
+        "russian": "{T203}1.{T204} {T1}¦, {T2} ({T3}) {T4}. {T5}. {T6}. {T7} {T8}; местами также {T9} реветь, ржать, выть, кричать, греметь, звучать: {T10} {T11}. {T12}. {T13} {T14}. {T15} {T16}. {T17}. {T18} {T19}. {T20}. {T21} {T22}. {T23} {T24}. {T25} {T26}. {T27}. {T28}. {T29} {T30}. {T31} {T32}. {T33} {T34}. {T35}. {T36} {T37}. {T38} {T39}. {T40}. {T41} {T42}. ({T43}) {T44} {T45}. {T46} {T47}. {T48}. {T49}. {T50}. {T51} {T52}. {T53} {T54}. {T55} {T56}. {T57}. {T58}. {T59} {T60}. {T61} {T62}. {T63} {T64}. {T65} {T66}. {T67} {T68}. {T69} {T70}. {T71} {T72}. {T73} {T74} издающий нечленораздельные звуки {T75}. {T76} рев, крик, гул {T77}. {T78}. {T79} {T80}. {T81} {T82}. гром {T83}. {T84}. {T85} {T86} {T87}. {T88} {T89}. {T90}. {T91}."
+       },
+       {
+        "tag": "2",
+        "german": "{T205}— {T92} {T93}.",
+        "russian": "{T205}— {T92} {T93}."
+       },
+       {
+        "tag": "3",
+        "german": "{T206}— {T94} {%laut schreien%}: {T95} ({T96}) {T97}.",
+        "russian": "{T206}— {T94} громко кричать: {T95} ({T96}) {T97}."
+       },
+       {
+        "tag": "4",
+        "german": "{T207}— {T98} {%mit Geschrei%} {T99} {%begleiten, einen Laut erwiedern%}; mit {T100}: {T101} {T102}, {T103} {T104} {T105} {%Wiederhall%} {T106} = {T107}.",
+        "russian": "{T207}— {T98} с криком {T99} сопровождать, отвечать звуком; с {T100}: {T101} {T102}, {T103} {T104} {T105} эхо {T106} = {T107}."
+       },
+       {
+        "tag": "5",
+        "german": "{T208}— {T108} {%zuwiehern%}, mit {T109} {T110}.",
+        "russian": "{T208}— {T108} отвечать ржанием, с {T109} {T110}."
+       },
+       {
+        "tag": "6",
+        "german": "{T209}— {T111} {%brüllen, schreien%}: {T112} {T113}. {T114} {T115}. {T116} {T117} {%schreiend%}: {T118} {T119}. {T120} {%Gebrüll, Geheul%}: {T121} {T122}. {T123} {T124}.",
+        "russian": "{T209}— {T111} реветь, кричать: {T112} {T113}. {T114} {T115}. {T116} {T117} кричащий: {T118} {T119}. {T120} рев, вой: {T121} {T122}. {T123} {T124}."
+       },
+       {
+        "tag": "7",
+        "german": "{T210}— {T125} {%schreien%} {T126}. {T127}.",
+        "russian": "{T210}— {T125} кричать {T126}. {T127}."
+       }
+      ],
+      "notes": ""
+     },
+     {
+      "h": "2",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T211}2.{T212} √{T128}¦, {T129} und {T130} ({T131} {T132}) {%schmecken%}: {T133} {T134}. {T135} {T136}. {T137} {T138} ({T139} {T140}). {T141}. {T142}. {T143} {T144} {T145} {T146}. {%schmecken%} so {T147} {%empfinden%}: {T148} {T149}. {T150} {T151}. — {T152} {T153} fehlerhaft für {T154}, wie die {T155} liest. {T156} ist wohl als {T157} von {T158} und {T159} aber als spätere Bildungen aufzufassen.",
+        "russian": "{T211}2.{T212} √{T128}¦, {T129} и {T130} ({T131} {T132}) пробовать на вкус: {T133} {T134}. {T135} {T136}. {T137} {T138} ({T139} {T140}). {T141}. {T142}. {T143} {T144} {T145} {T146}. пробовать на вкус, так {T147} ощущать: {T148} {T149}. {T150} {T151}. — {T152} {T153} ошибочно вм. {T154}, как читает {T155}. {T156} следует, вероятно, понимать как {T157} от {T158} и {T159}, но как поздние образования."
+       },
+       {
+        "tag": "2",
+        "german": "{T213}— {T160} {%zu schmecken verlangen%}: {T161} {T162}.",
+        "russian": "{T213}— {T160} желать отведать: {T161} {T162}."
+       }
+      ],
+      "notes": ""
+     },
+     {
+      "h": "1",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T214}1.{T215} √{T163}¦, {T164}, {T165} (ausnahmsweise)",
+        "russian": "{T214}1.{T215} √{T163}¦, {T164}, {T165} (в виде исключения)"
+       },
+       {
+        "tag": "2",
+        "german": "{T216}— 1〉 {%brüllen, wiehern, heulen, schreien, dröhnen, ertönen%}. {T166} {%unarticulirte Laute von sich gebend; ertönend, klingend%} {T167}.",
+        "russian": "{T216}— 1〉 реветь, ржать, выть, кричать, греметь, звучать. {T166} издающий нечленораздельные звуки; звучащий, звенящий {T167}."
+       },
+       {
+        "tag": "3",
+        "german": "{T217}— 2〉 *{T168}.",
+        "russian": "{T217}— 2〉 *{T168}."
+       },
+       {
+        "tag": "4",
+        "german": "{T218}— {T169} {T170} {%laut schreien%} {T171}",
+        "russian": "{T218}— {T169} {T170} громко кричать {T171}"
+       },
+       {
+        "tag": "5",
+        "german": "{T219}— Mit {T172}, {T173} {%von einem Geschrei%} {T174} {%begleitet%}.",
+        "russian": "{T219}— с {T172}, {T173} криком {T174} сопровождаемый."
+       },
+       {
+        "tag": "6",
+        "german": "{T220}— Mit {T175} {%zuwiehern,%} mit {T176}",
+        "russian": "{T220}— с {T175} отвечать ржанием, с {T176}"
+       },
+       {
+        "tag": "7",
+        "german": "{T221}— Mit {T177} {%brüllen, schreien%} {T178}. {T179} {%schreiend%} {T180}.",
+        "russian": "{T221}— с {T177} реветь, кричать {T178}. {T179} кричащий {T180}."
+       },
+       {
+        "tag": "8",
+        "german": "{T222}— Mit {T181}, {T182} {%schreiend%} {T183}.",
+        "russian": "{T222}— с {T181}, {T182} кричащий {T183}."
+       },
+       {
+        "tag": "9",
+        "german": "{T223}— Mit {T184} {%wiederhallen%} {T185}.",
+        "russian": "{T223}— с {T184} отзываться эхом {T185}."
+       },
+       {
+        "tag": "10",
+        "german": "{T224}— Mit {T186} {%schreien%}.",
+        "russian": "{T224}— с {T186} кричать."
+       }
+      ],
+      "notes": ""
+     },
+     {
+      "h": "2",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T225}2.{T226} √{T187}¦, {T188}, {T189}, {T190}, {T191};",
+        "russian": "{T225}2.{T226} √{T187}¦, {T188}, {T189}, {T190}, {T191};"
+       },
+       {
+        "tag": "2",
+        "german": "{T227}— 1〉 {%schmecken%}.",
+        "russian": "{T227}— 1〉 пробовать на вкус."
+       },
+       {
+        "tag": "3",
+        "german": "{T228}— 2〉 {%schmackhaft finden,%} so {T192} {%gern kosten wollen%} {T193}.",
+        "russian": "{T228}— 2〉 находить вкусным, так {T192} охотно хотеть попробовать {T193}."
+       },
+       {
+        "tag": "4",
+        "german": "{T229}— 3〉 {%empfinden%}.",
+        "russian": "{T229}— 3〉 ощущать."
+       },
+       {
+        "tag": "5",
+        "german": "{T230}— 4〉 *{T194}. [Page5-173-a] {T195} {T196} fehlerhaft für {T197}. {T198} {T199} {%zu schmecken verlangen%}.",
+        "russian": "{T230}— 4〉 *{T194}. [Page5-173-a] {T195} {T196} ошибочно вм. {T197}. {T198} {T199} желать отведать."
+       }
+      ],
+      "notes": ""
+     },
+     {
+      "h": "SCH",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{%ras%}¦ ˚brüllend? {T200} XLIII,120. {part=,seq=22835,type=,n=1}",
+        "russian": "{%ras%}¦ ревущий? {T200} XLIII,120. {part=,seq=22835,type=,n=1}"
+       }
+      ],
+      "notes": ""
+     },
+     {
+      "h": "SCH",
+      "grammar": "",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{%[ras%}¦ mit {%anu], anurasita%} ˚n. Widerhall, {T201}{T231}b{T232}. — Mit {%vi ˚ = śatakhaṇḍībhū%}, {T202} {part=,seq=22836,type=,n=3}",
+        "russian": "{%[ras%}¦ с {%anu], anurasita%} ˚n. эхо, {T201}{T231}b{T232}. — с {%vi ˚ = śatakhaṇḍībhū%}, {T202} {part=,seq=22836,type=,n=3}"
+       }
+      ],
+      "notes": ""
+     }
+    ],
+    "notes": ""
+   }
+  },
+  {
+   "key1": "vicitra",
+   "card": {
+    "key1": "vicitra",
+    "iast": "vicitra",
+    "records": [
+     {
+      "h": "",
+      "grammar": "adj., m., f., n.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T1}¦ ({T168}2.{T169} {T2} + {T3})",
+        "russian": "{T1}¦ ({T168}2.{T169} {T2} + {T3})"
+       },
+       {
+        "tag": "1",
+        "german": "{T170} 1〉 {T4} ({T5} {T6}) Accent eines mit {T7} anlautenden {T8}, dessen zweites Glied ein {T9} ist, {T10} {T11} zu {T12}.",
+        "russian": "{T170} 1〉 {T4} ({T5} {T6}) ударение слова, начинающегося с {T7} сложного слова {T8}, второй член которого — {T9}, {T10} {T11} к {T12}."
+       },
+       {
+        "tag": "1.a",
+        "german": "{T171} a〉 {%vielfarbig, bunt, schillernd%}: {T13} {T14}. {T15} {T16}. {T17}. {T18} {T19}. {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}. {T36}.",
+        "russian": "{T171} a〉 многоцветный, пестрый, переливчатый: {T13} {T14}. {T15} {T16}. {T17}. {T18} {T19}. {T20}. {T21} {T22}. {T23}. {T24}. {T25}. {T26}. {T27}. {T28}. {T29}. {T30}. {T31}. {T32}. {T33}. {T34}. {T35}. {T36}."
+       },
+       {
+        "tag": "1.b",
+        "german": "{T172}— b〉 {%verschiedlich, mannichfaltig, verschiedenartig%}: {T37} {T38}. {T39} {T40}. {T41} {T42}. {T43} ({T44}) {T45} ({T46}). {T47}. {T48}. {T49}. {T50}. [Page6-1013] {T51} {T52}. {T53}. {T54}. {T55}. {T56}. {T57}. {T58}. {T59}. {T60}. {T61}. {T62}. {T63}. {T64}. {T65}. {T66}. {T67} {T68}. {T69} {T70}: {T71} {T72}. {T73} {T74}. {T75} {T76}. {T77} {T78}.",
+        "russian": "{T172}— b〉 различный, многообразный, разнородный: {T37} {T38}. {T39} {T40}. {T41} {T42}. {T43} ({T44}) {T45} ({T46}). {T47}. {T48}. {T49}. {T50}. [Page6-1013] {T51} {T52}. {T53} {T54}. {T55} {T56}. {T57} {T58}. {T59} {T60}. {T61} {T62}. {T63} {T64}. {T65} {T66}. {T67} {T68}. {T69} {T70}: {T71} {T72}. {T73} {T74}. {T75} {T76}. {T77} {T78}."
+       },
+       {
+        "tag": "1.c",
+        "german": "{T173}— c〉 {%seltsam, absonderlich, wunderbar%}: {T79} {T80}. {T81} {T82}. {T83} {T84}. {T85}. {T86}. {T87}. {T88}. {T89} {T90}_zu_{T91}. {T92} {%eine Gattung des Paradoxon%}: {T93} {T94}. {T95} {T96} {T97} {T98}.",
+        "russian": "{T173}— c〉 странный, необычный, удивительный: {T79} {T80}. {T81} {T82}. {T83} {T84}. {T85}. {T86}. {T87}. {T88}. {T89} {T90}_к_{T91}. {T92} род парадокса: {T93} {T94}. {T95} {T96} {T97} {T98}."
+       },
+       {
+        "tag": "1.d",
+        "german": "{T174}— d〉 ({%durch Abwechselung%}) {%reizend, prächtig, schön%}: {T99} {T100}. {T101} {T102}. {T103} {T104}. {T105} {T106}. {T107} {T108}. {T109} so {T110} {%unterhaltend, amüsant%} {T111}. {T112}. {T113}. {T114}. {T115}. {T116}. {T117} so {T118} {%Beredsamkeit%} {T119}. {T120} {T121}. {T122} {T123}. {T124} {T125}.",
+        "russian": "{T174}— d〉 (через чередование) прелестный, великолепный, красивый: {T99} {T100}. {T101} {T102}. {T103} {T104}. {T105} {T106}. {T107} {T108}. {T109} так {T110} занимательный, забавный {T111}. {T112}. {T113}. {T114}. {T115}. {T116}. {T117} так {T118} красноречие {T119}. {T120} {T121}. {T122} {T123}. {T124} {T125}."
+       },
+       {
+        "tag": "2",
+        "german": "{T175}— 2〉 {T126} {T127}",
+        "russian": "{T175}— 2〉 {T126} {T127}"
+       },
+       {
+        "tag": "2.a",
+        "german": "{T176} a〉 eines Fürsten {T128}.",
+        "russian": "{T176} a〉 одного князя {T128}."
+       },
+       {
+        "tag": "2.b",
+        "german": "{T177}— b〉 eines Sohnes des {T129} {T130} ({T131}) {T132}. {T133}. {T134}.",
+        "russian": "{T177}— b〉 одного сына {T129} {T130} ({T131}) {T132}. {T133}. {T134}."
+       },
+       {
+        "tag": "2.c",
+        "german": "{T178}— c〉 eines Reihers {T135}.",
+        "russian": "{T178}— c〉 одной цапли {T135}."
+       },
+       {
+        "tag": "3",
+        "german": "{T179}— 3〉 {T136} {T137} {%Koloquinthe%} {T138}_im_{T139}",
+        "russian": "{T179}— 3〉 {T136} {T137} колоцинт {T138}_в_{T139}"
+       },
+       {
+        "tag": "4",
+        "german": "{T180}— 4〉 {T140} {T141}. {T181}— {T142} {T143}.",
+        "russian": "{T180}— 4〉 {T140} {T141}. {T181}— {T142} {T143}."
+       }
+      ],
+      "notes": ""
+     },
+     {
+      "h": "",
+      "grammar": "adj., m., f., n.",
+      "senses": [
+       {
+        "tag": "0",
+        "german": "{T144}¦",
+        "russian": "{T144}¦"
+       },
+       {
+        "tag": "1",
+        "german": "{T182}— 1〉 {T145} ({T146} {T147})",
+        "russian": "{T182}— 1〉 {T145} ({T146} {T147})"
+       },
+       {
+        "tag": "1.a",
+        "german": "{T183}— a〉 {%vielfarbig, bunt, schillernd%}.",
+        "russian": "{T183}— a〉 многоцветный, пестрый, переливчатый."
+       },
+       {
+        "tag": "1.b",
+        "german": "{T184}— b〉 {%verschieden, mannichfaltig, verschiedenartig%}. {T148} {T149} und {T150}.",
+        "russian": "{T184}— b〉 различный, многообразный, разнородный. {T148} {T149} и {T150}."
+       },
+       {
+        "tag": "1.c",
+        "german": "{T185}— c〉 {%seltsam, absonderlich, wunderbar%}.",
+        "russian": "{T185}— c〉 странный, необычный, удивительный."
+       },
+       {
+        "tag": "1.d",
+        "german": "{T186}— d〉 ({%durch Abwechselung%}) {%reizend, prächtig, schön, unterhaltend%}. {T151} {T152}",
+        "russian": "{T186}— d〉 (через чередование) прелестный, великолепный, красивый, занимательный. {T151} {T152}"
+       },
+       {
+        "tag": "2",
+        "german": "{T187}— 2〉 {T153}",
+        "russian": "{T187}— 2〉 {T153}"
+       },
+       {
+        "tag": "2.a",
+        "german": "{T188}— a〉 *{%{T189}{{Jocesia asoca->Jonesia asoca||20241207|Jim Funderburk, Thomas Malten|https://github.com/sanskrit-lexicon/PWK/issues/111|}}{T190}%} {T154}.",
+        "russian": "{T188}— a〉 * {T189}{{Jocesia asoca->Jonesia asoca||20241207|Jim Funderburk, Thomas Malten|https://github.com/sanskrit-lexicon/PWK/issues/111|}}{T190} {T154}."
+       },
+       {
+        "tag": "2.b",
+        "german": "{T191}— b〉 {T155}",
+        "russian": "{T191}— b〉 {T155}"
+       },
+       {
+        "tag": "2.b.α",
+        "german": "{T192}— α〉 eines Fürsten.",
+        "russian": "{T192}— α〉 одного князя."
+       },
+       {
+        "tag": "2.b.β",
+        "german": "{T193}— β〉 eines Sohnes des {T156} {T157} oder {T158}.",
+        "russian": "{T193}— β〉 одного сына {T156} {T157} или {T158}."
+       },
+       {
+        "tag": "2.b.β",
+        "german": "{T194}— β〉 eines Reihers.",
+        "russian": "{T194}— β〉 одной цапли."
+       },
+       {
+        "tag": "3",
+        "german": "{T195}— 3〉 {T159} {T160}",
+        "russian": "{T195}— 3〉 {T159} {T160}"
+       },
+       {
+        "tag": "3.a",
+        "german": "{T196}— a〉 *{%Koloquinthe%} {T161}.",
+        "russian": "{T196}— a〉 * колоцинт {T161}."
+       },
+       {
+        "tag": "3.b",
+        "german": "{T197}— b〉 {%eine {T162}%} {T163} {T164}.",
+        "russian": "{T197}— b〉 одна {T162} {T163} {T164}."
+       },
+       {
+        "tag": "3.c",
+        "german": "{T198}— c〉 {T165} eines Flusses {T166}.",
+        "russian": "{T198}— c〉 {T165} одной реки {T166}."
+       },
+       {
+        "tag": "4",
+        "german": "{T199}— 4〉 {T167} {%eine Art Paradoxon%}.",
+        "russian": "{T199}— 4〉 {T167} род парадокса."
+       }
+      ],
+      "notes": ""
+     }
+    ],
+    "notes": ""
+   }
+  }
+ ]
+}
