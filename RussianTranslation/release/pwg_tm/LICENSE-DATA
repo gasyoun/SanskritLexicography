@@ -1,0 +1,19 @@
+PWG TM canonical v1 four-format pack — data licence
+
+Russian renderings and the derived TMX / TEI Lex-0 / OntoLex serialisations
+in this directory (and the matching GitHub Release assets) are licensed
+under Creative Commons Attribution 4.0 International (CC BY 4.0):
+
+  https://creativecommons.org/licenses/by/4.0/
+
+The German source text is from Böhtlingk & Roth, Sanskrit-Wörterbuch
+(St. Petersburg, 1855–1875), Public Domain Mark 1.0.
+
+Rights facts (recorded once, H2683/H2685):
+
+  - PWG is a 19th-century public-domain German dictionary.
+  - Target rendering is this project's own machine translation of that PD source.
+  - Rights uncertainty is recorded, not a release stop.
+
+No confirmed prohibition, restricted-data designation, privacy exposure,
+or platform-policy constraint applies to this pack.

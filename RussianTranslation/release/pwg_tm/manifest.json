@@ -1,0 +1,97 @@
+{
+  "schema": "pwg.tm.release.v1",
+  "release_id": "pwg-tm-canonical-v1.0.0",
+  "created": "2026-08-14T12:00:00Z",
+  "pipeline_version": "pwg_tm_export.v1",
+  "canonical_schema": "pwg.tm.canonical.v1",
+  "record_count": 2392,
+  "expected_publication_count": 2392,
+  "limit": null,
+  "formats": [
+    "jsonl",
+    "tmx-1.4b",
+    "tei-lex0",
+    "ontolex-lemon"
+  ],
+  "loss_ok": true,
+  "lost_count": 0,
+  "checksums_sha256": {
+    "canonical.v1.jsonl": "b9ad8e9ff99d561de72029e9af40664e9cf7bfabe1575faf7858d88b757bbe82",
+    "pwg_tm.de-ru.tmx": "aecc76d0f4423067061da5b22da205179860333eb59df92b8a92dba076f3853a",
+    "pwg_tm.tei.lex0.xml": "e4741f69ade8810e8cf76920896d416635c2b4fc523fdffc9510c5efbab653e7",
+    "pwg_tm.ontolex.ttl": "5a89ebf6c0e7eff680072200b52ce06428a156e5a23b247cf28e0e321179c398",
+    "loss_ledger.json": "4859967cb385deb71512436add4d3880f39549e8b49467ac6e32af398c10d9ca",
+    "SHA256SUMS": "a8ecabf4f92c3c86fea20bafad0719bfa28fbc6ccd08764620886c9627a40531",
+    "coverage.json": "6e7a2c2cf0de93806317d48e03c5fd62bd39023b82e570549cac032d94eb435d"
+  },
+  "coverage": {
+    "publication_green": {
+      "records": 2392,
+      "exact_card": 2175,
+      "exact_fragment": 217,
+      "quality": "canonical_migrated_lossless",
+      "independent_gate": "not_applicable_legacy_publication"
+    },
+    "wave1_5000": {
+      "published_as": "coverage_denominator_only_not_green_export",
+      "reason": "H2684 independent n=400 failed the serious-error floor (2.5% > 1%) after one repair. Wave-1 promoted fragments are not in the four-format green release.",
+      "keys": 5000,
+      "fragments_accounted": 753111,
+      "promoted": 655332,
+      "quarantine": 97779,
+      "silent_drops": 0,
+      "manifest_sha256": "f024ec4b0b2e58f75868462d84fd51858e4de473d07c0dd825a487f3b73d952a",
+      "independent_gate": "fail",
+      "floors": {
+        "fidelity": 0.98,
+        "equivalence": 0.95,
+        "serious_error": 0.01
+      },
+      "reasons": [
+        "serious_error 0.0250 > 0.01"
+      ]
+    },
+    "priority": {
+      "index_rows": 98639,
+      "unique_k1": 94074,
+      "freq_matched": 34036,
+      "selected": 5000,
+      "stratum_counts": {
+        "attested_high": 3600,
+        "lexical_core": 500,
+        "rare_attested": 300,
+        "complex": 400,
+        "index_tail": 200
+      },
+      "exclusion_reason_counts": {
+        "complex_quota_full": 12517,
+        "below_cutoff": 16519,
+        "unattested_not_core": 60037,
+        "unattested_quota_full": 1
+      }
+    }
+  },
+  "rights": {
+    "policy": "STANDING_POLICY_RIGHTS_UNCERTAINTY_IS_NOT_A_STOP_2026",
+    "source_status": "public_domain",
+    "translation_status": "own_machine_translation_of_pd_source",
+    "block_class": null,
+    "facts": [
+      "PWG (Bohtlingk-Roth) is a 19th-century public-domain German dictionary.",
+      "Target rendering is this project's own machine translation of that PD source.",
+      "Rights uncertainty is recorded, not a release stop (R5/R20)."
+    ],
+    "license_data": "CC-BY-4.0",
+    "license_source_pwg": "Public Domain Mark 1.0",
+    "secrets_private_data": false,
+    "restricted_designation": false,
+    "publish_safety": "GO"
+  },
+  "doi": {
+    "concept": "pending",
+    "version": "pending",
+    "note": "Zenodo mint when credentials permit; hashes frozen first."
+  },
+  "github_release": "pending",
+  "supersedes": []
+}

@@ -4,6 +4,21 @@ _Created: 09-07-2026 · Last updated: 14-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 14-08-2026 — H2685 (Grok 4.6) — Track C four-format lossless pack
+
+Grok 4.6 (`grok-4.6`). Canonical JSONL source only. No PWG/csl-orig writes.
+
+| Gate | Result |
+|---|---|
+| Publication records | **2392 / 2392** |
+| TMX 1.4b | **2392** `<tu>`, `srclang=de` |
+| TEI Lex-0 | **953** entry / **2392** sense |
+| OntoLex SHACL | structural ok + **pyshacl=pass** |
+| `pwg_tm_export_loss.py --all-formats` | **0** lost / 153088 checks |
+| Wave-1 in green files | no (coverage only; serious error 2.5%) |
+| Canonical SHA-256 | `b9ad8e9ff99d561de72029e9af40664e9cf7bfabe1575faf7858d88b757bbe82` |
+| `pytest tests/test_pwg_tm_export.py` | 5/5 |
+
 ## 14-08-2026 — H2684 (Grok 4.6) — PWG TM 5,000-key wave + independent n=400 FAIL
 
 Grok 4.6 (`grok-4.6`) drain; independent judge Grok 4.5 (`grok-4.5`). No PWG/csl-orig writes. No xAI HTTP call. One bounded repair (formula table + sample drafts + refill), then halt.

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         ns="http://www.tei-c.org/ns/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="TEI">
+      <ref name="teiHeader"/>
+      <element name="text">
+        <element name="body">
+          <oneOrMore>
+            <ref name="entry"/>
+          </oneOrMore>
+        </element>
+      </element>
+    </element>
+  </start>
+  <define name="teiHeader">
+    <element name="teiHeader">
+      <element name="fileDesc">
+        <element name="titleStmt"><oneOrMore><ref name="any"/></oneOrMore></element>
+        <optional><element name="editionStmt"><oneOrMore><ref name="any"/></oneOrMore></element></optional>
+        <element name="publicationStmt"><oneOrMore><ref name="any"/></oneOrMore></element>
+        <element name="sourceDesc"><oneOrMore><ref name="any"/></oneOrMore></element>
+      </element>
+      <element name="encodingDesc"><oneOrMore><ref name="any"/></oneOrMore></element>
+      <element name="revisionDesc"><oneOrMore><ref name="any"/></oneOrMore></element>
+    </element>
+  </define>
+  <define name="entry">
+    <element name="entry">
+      <attribute name="xml:id"><data type="NCName"/></attribute>
+      <element name="form">
+        <attribute name="type"><value>lemma</value></attribute>
+        <oneOrMore>
+          <element name="orth">
+            <attribute name="xml:lang"><text/></attribute>
+            <text/>
+          </element>
+        </oneOrMore>
+      </element>
+      <oneOrMore>
+        <element name="sense">
+          <attribute name="xml:id"><data type="NCName"/></attribute>
+          <oneOrMore>
+            <choice>
+              <element name="idno"><attribute name="type"><text/></attribute><text/></element>
+              <element name="usg"><attribute name="type"><text/></attribute><text/></element>
+              <element name="cit">
+                <attribute name="type"><text/></attribute>
+                <attribute name="xml:lang"><text/></attribute>
+                <element name="quote"><text/></element>
+              </element>
+              <element name="note">
+                <attribute name="type"><text/></attribute>
+                <optional><attribute name="format"><text/></attribute></optional>
+                <text/>
+              </element>
+            </choice>
+          </oneOrMore>
+        </element>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="any">
+    <element>
+      <anyName/>
+      <zeroOrMore>
+        <choice>
+          <attribute><anyName/></attribute>
+          <text/>
+          <ref name="any"/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+</grammar>

@@ -1,0 +1,47 @@
+{
+  "publication_green": {
+    "records": 2392,
+    "exact_card": 2175,
+    "exact_fragment": 217,
+    "quality": "canonical_migrated_lossless",
+    "independent_gate": "not_applicable_legacy_publication"
+  },
+  "wave1_5000": {
+    "published_as": "coverage_denominator_only_not_green_export",
+    "reason": "H2684 independent n=400 failed the serious-error floor (2.5% > 1%) after one repair. Wave-1 promoted fragments are not in the four-format green release.",
+    "keys": 5000,
+    "fragments_accounted": 753111,
+    "promoted": 655332,
+    "quarantine": 97779,
+    "silent_drops": 0,
+    "manifest_sha256": "f024ec4b0b2e58f75868462d84fd51858e4de473d07c0dd825a487f3b73d952a",
+    "independent_gate": "fail",
+    "floors": {
+      "fidelity": 0.98,
+      "equivalence": 0.95,
+      "serious_error": 0.01
+    },
+    "reasons": [
+      "serious_error 0.0250 > 0.01"
+    ]
+  },
+  "priority": {
+    "index_rows": 98639,
+    "unique_k1": 94074,
+    "freq_matched": 34036,
+    "selected": 5000,
+    "stratum_counts": {
+      "attested_high": 3600,
+      "lexical_core": 500,
+      "rare_attested": 300,
+      "complex": 400,
+      "index_tail": 200
+    },
+    "exclusion_reason_counts": {
+      "complex_quota_full": 12517,
+      "below_cutoff": 16519,
+      "unattested_not_core": 60037,
+      "unattested_quota_full": 1
+    }
+  }
+}
