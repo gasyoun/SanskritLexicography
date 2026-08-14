@@ -71,6 +71,20 @@ def mode_spec(mode):
             'manifest_name': 'l3.manifest.json',
             'purpose': 'h2704-l3',
         }
+    if mode == 'h2756':
+        return {
+            'handoff': 'H2756',
+            'mode': 'h2756',
+            'run_id': 'h2756-prep-flash-pairs',
+            'n_pairs': 50,
+            'max_base_calls': 100,
+            'parseable_min': 95,
+            'cost_ceiling_usd': 1.0,
+            'manifest_name': 'prep50.manifest.json',
+            'purpose': 'h2756-prep',
+            'exp_dir': os.path.join(
+                RT, 'experiments', 'pwg_cache_economy', 'h2756_flash'),
+        }
     return {
         'handoff': 'H2704',
         'mode': 'prep50',
@@ -331,7 +345,7 @@ class PairRunner:
         price_card = ds_arm.price_card_name()
         spec = {
             'run_id': self.spec['run_id'],
-            'handoff': 'H2704',
+            'handoff': self.spec.get('handoff', 'H2704'),
             'source_commit': source_commit,
             'baseline_manifest_sha256': self.freeze_body.get('manifest_sha256'),
             'cohort_sha256': cohort_sha,
@@ -348,7 +362,7 @@ class PairRunner:
             'retry_ladder': ['v0'],
             'promotable': False,
             'acceptance': {
-                'handoff': 'H2704',
+                'handoff': self.spec.get('handoff', 'H2704'),
                 'lane': self.spec['mode'],
                 'parseable_min': self.spec['parseable_min'],
                 'parseable_denom': self.spec['max_base_calls'],
@@ -643,7 +657,7 @@ class PairRunner:
 
 def write_freeze(path, extra):
     body = freeze.build_manifest()
-    body['handoff'] = 'H2704'
+    body['handoff'] = extra.get('handoff') or 'H2704'
     body.update(extra)
     body.pop('manifest_sha256', None)
     body['manifest_sha256'] = ident.sha256_bytes(ident.canonical_bytes(body))
@@ -655,28 +669,33 @@ def write_freeze(path, extra):
 
 def main(argv=None):
     ap = argparse.ArgumentParser()
-    ap.add_argument('--mode', choices=('prep50', 'l3'), default='prep50')
+    ap.add_argument('--mode', choices=('prep50', 'l3', 'h2756'), default='prep50')
     ap.add_argument('--run-dir', default=None)
+    ap.add_argument('--exp-dir', default=None)
     ap.add_argument('--env-file', default=DEFAULT_ENV)
     ap.add_argument('--compile-only', action='store_true')
     args = ap.parse_args(argv)
 
     spec = mode_spec(args.mode)
-    run_dir = args.run_dir or os.path.join(EXP_DIR, spec['mode'], 'run')
-    os.makedirs(EXP_DIR, exist_ok=True)
-    cohort_path = os.path.join(EXP_DIR, spec['manifest_name'])
+    exp_dir = args.exp_dir or spec.get('exp_dir') or EXP_DIR
+    run_dir = args.run_dir or os.path.join(exp_dir, spec['mode'], 'run')
+    os.makedirs(exp_dir, exist_ok=True)
+    cohort_path = os.path.join(exp_dir, spec['manifest_name'])
     if not os.path.isfile(cohort_path):
-        census.main(['--run-dir', os.path.join(EXP_DIR, 'tm')])
+        if spec.get('handoff') == 'H2756':
+            raise GateStop('h2756 manifest missing; run cache_prep_h2756.py --seal')
+        census.main(['--run-dir', os.path.join(exp_dir, 'tm')])
     cohort = load_json(cohort_path)
     keys = list(cohort['keys'])
     if len(keys) != spec['n_pairs']:
         raise GateStop('cohort n %d != %d' % (len(keys), spec['n_pairs']))
 
-    freeze_path = os.path.join(EXP_DIR, spec['mode'], 'freeze.json')
+    freeze_path = os.path.join(exp_dir, spec['mode'], 'freeze.json')
     if os.path.isfile(freeze_path):
         freeze_body = load_json(freeze_path)
     else:
         freeze_body = write_freeze(freeze_path, {
+            'handoff': spec.get('handoff', 'H2704'),
             'experiment': spec['mode'],
             'n_pairs': spec['n_pairs'],
             'max_base_calls': spec['max_base_calls'],
@@ -726,10 +745,10 @@ def main(argv=None):
         }, terminal=True)
         print('STOP %s' % exc.reason, flush=True)
     summary = runner.write_summary(note)
-    after_path = os.path.join(EXP_DIR, spec['mode'], 'canonical_hash_after.json')
+    after_path = os.path.join(exp_dir, spec['mode'], 'canonical_hash_after.json')
     after_body = {
         'schema': 'pwg.cache_economy_canonical_rehash.v1',
-        'handoff': 'H2704',
+        'handoff': spec.get('handoff', 'H2704'),
         'mode': spec['mode'],
         'before': runner.canonical_before,
         'after': canonical_snapshot(freeze_body),
