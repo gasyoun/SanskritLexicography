@@ -4,6 +4,21 @@ _Created: 09-07-2026 · Last updated: 14-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 14-08-2026 — H2684 (Grok 4.6) — PWG TM Grok 4.6 Track B first slice (PARTIAL)
+
+Grok 4.6 (`grok-4.6`). Track B runner + gates + independent sample apparatus. No PWG/csl-orig writes. No xAI HTTP call (`XAI_API_KEY` unset). Independent 400-row gate **not_run**.
+
+| Gate | Result |
+|---|---|
+| Frozen manifest pin | `f024ec4b0b2e58f75868462d84fd51858e4de473d07c0dd825a487f3b73d952a` |
+| First slice keys | 10/5000 (two per frozen stratum) |
+| Extracted / accounted | **734 / 734** |
+| Promoted / quarantine / silent drops | **679 / 55 / 0** |
+| Grok 4.6 session drafts | 65 definition_gloss |
+| Cost | not evaluable (session drafts; 0 billed tokens) |
+| `pwg_tm_quality.py verify --sample 400` | `independent_gate=not_run` (honest) |
+| `pytest tests/test_pwg_tm_generate.py` + canonical | 17/17 |
+
 ## 14-08-2026 — H2683 (Grok 4.6) — PWG TM canonical v1 Track A (schema, migrate, fragments, 5,000 queue)
 
 Grok 4.6 (`grok-4.6`). Track A only of the DH/lexicography plan. No PWG/csl-orig writes.

@@ -1,0 +1,6 @@
+<L>999001<pc>1-0001<k1>agni<k2>agni<h>1
+{#agni#}¦ <lex>m.</lex> {%Feuer, Gott des Feuers.%} <ls n="ṚV.">1,1,1</ls> {#agnim ILe#} am Anfange eines Comp.
+<LEND>
+<L>999002<pc>1-0001<k1>akzara<k2>akzara<h>1
+{#akzara#}¦ <lex>n.</lex> {%Silbe, unvergänglich.%} <ab>vgl.</ab> {#akzara#} <ls>N. 1,1</ls>
+<LEND>

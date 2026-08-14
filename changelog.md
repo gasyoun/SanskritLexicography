@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+- **H2684 Track B — Grok 4.6 PWG TM fragment runner, first 10-key slice, independent 400-gate apparatus** (Grok 4.6 `grok-4.6`, 14-08-2026): opt-in `--route grok-4.6`; deterministic promotion/quarantine; 734/734 accounted on a compact 10-key window; independent n=400 **not_run** (Grok does not self-adjudicate). Report: [`pwg_ru/PWG_TM_GROK46_WAVE1_TRACK_B_14-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_TM_GROK46_WAVE1_TRACK_B_14-08-2026.md).
 - **H2683 Track A — PWG TM canonical JSONL, 2392/2392 lossless migrate, 5,000 queue** (Grok 4.6 `grok-4.6`, 14-08-2026): versioned `pwg.tm.canonical.v1` schema; migrate/fragmentize/priority CLIs; six ruled fragment classes; hash-pinned Wave-1 manifest. Report: [`pwg_ru/PWG_TM_CANONICAL_WAVE1_TRACK_A_14-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_TM_CANONICAL_WAVE1_TRACK_A_14-08-2026.md).
 
 ## [1.144.45] - 2026-08-14

@@ -1,0 +1,41 @@
+{
+  "schema": "pwg.tm.quality.sample.v1",
+  "n_requested": 400,
+  "n_drawn": 400,
+  "seed": 2684,
+  "pool": 734,
+  "buckets": {
+    "('citation', 'low', 'simple', 'machine_gated', 'accepted')": 193,
+    "('citation', 'mid', 'simple', 'machine_gated', 'accepted')": 135,
+    "('definition_gloss', 'low', 'simple', 'machine_gated', 'accepted')": 48,
+    "('definition_gloss', 'low', 'simple', 'uncertain', 'rejected')": 4,
+    "('definition_gloss', 'mid', 'simple', 'machine_gated', 'accepted')": 15,
+    "('example', 'low', 'simple', 'machine_gated', 'accepted')": 122,
+    "('example', 'mid', 'simple', 'machine_gated', 'accepted')": 42,
+    "('grammar_label', 'low', 'simple', 'machine_gated', 'accepted')": 17,
+    "('grammar_label', 'mid', 'simple', 'machine_gated', 'accepted')": 12,
+    "('recurring_formula', 'low', 'simple', 'machine_gated', 'accepted')": 49,
+    "('recurring_formula', 'mid', 'simple', 'machine_gated', 'accepted')": 17,
+    "('sense', 'low', 'complex', 'machine_gated', 'accepted')": 5,
+    "('sense', 'low', 'complex', 'uncertain', 'rejected')": 11,
+    "('sense', 'low', 'simple', 'machine_gated', 'accepted')": 17,
+    "('sense', 'low', 'simple', 'uncertain', 'rejected')": 23,
+    "('sense', 'mid', 'complex', 'machine_gated', 'accepted')": 2,
+    "('sense', 'mid', 'complex', 'uncertain', 'rejected')": 6,
+    "('sense', 'mid', 'simple', 'machine_gated', 'accepted')": 5,
+    "('sense', 'mid', 'simple', 'uncertain', 'rejected')": 11
+  },
+  "by_class": {
+    "citation": 95,
+    "definition_gloss": 66,
+    "example": 73,
+    "grammar_label": 24,
+    "recurring_formula": 64,
+    "sense": 78
+  },
+  "by_accept": {
+    "accepted": 347,
+    "rejected": 53
+  },
+  "complete_n": true
+}
