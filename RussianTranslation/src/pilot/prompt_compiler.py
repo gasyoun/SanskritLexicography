@@ -30,6 +30,7 @@ if H1209 not in sys.path:
 import cache_identity as ident  # noqa: E402
 import deepseek_arm as ds_arm  # noqa: E402
 import headless_worker as hw  # noqa: E402
+import prep_pack  # noqa: E402
 import prep_slice  # noqa: E402
 
 FIXTURE_DIR = os.path.join(HERE, 'fixtures', 'pwg_cache_economy')
@@ -175,6 +176,73 @@ def compile_deepseek_v0(card, common, schema, extra=None):
     }
 
 
+def compile_prep_flash_v0(pack, extra=None):
+    """Compile a Flash PREP request using production flash_messages()."""
+    extra = extra or {}
+    system, user = prep_pack.flash_messages(pack)
+    schema = extra.get('response_schema') or {
+        'type': 'object',
+        'properties': {
+            'ru_skeleton': {},
+            'route_hint': {'type': 'string'},
+            'hard_flag_notes': {'type': 'array'},
+        },
+    }
+    schema_hash = ident.sha256_bytes(ident.canonical_bytes(schema))
+    fields = {
+        'provider': extra.get('provider') or 'deepseek',
+        'requested_model': extra.get('requested_model') or 'deepseek-v4-flash',
+        'generation_parameters': _gen_params(extra, {
+            'max_tokens': extra.get('max_tokens') or ds_arm.DEFAULT_MAX_TOKENS,
+            'response_format': {'type': 'json_object'},
+            'reasoning_effort': None,
+        }),
+        'compiler_version': ident.COMPILER_VERSION,
+        'response_schema_sha256': schema_hash,
+        'stable_prefix_sha256': ident.sha256_bytes(system),
+        'volatile_tail_sha256': ident.sha256_bytes(user),
+        'source_card_sha256': ident.sha256_bytes(user),
+        'source_fragment_sha256': extra.get('source_fragment_sha256'),
+        'dependency_hashes': _dep_hashes(extra),
+        'parent_request_id': extra.get('parent_request_id'),
+        'repair_variant': extra.get('repair_variant'),
+    }
+    request = ident.build_request_record(fields)
+    bundle = {
+        'schema': ident.BUNDLE_SCHEMA,
+        'compiler_version': ident.COMPILER_VERSION,
+        'provider': fields['provider'],
+        'requested_model': fields['requested_model'],
+        'stable_prefix_sha256': fields['stable_prefix_sha256'],
+        'volatile_tail_sha256': fields['volatile_tail_sha256'],
+        'response_schema_sha256': schema_hash,
+        'generation_parameters': fields['generation_parameters'],
+        'token_estimate': ident.token_estimate(system, user),
+        'lineage': {
+            'parent_request_id': fields.get('parent_request_id'),
+            'repair_variant': fields.get('repair_variant'),
+        },
+        'request_id': request['request_id'],
+        'provider_envelope': {
+            'kind': 'openai_chat',
+            'messages': [
+                {'role': 'system', 'content': system},
+                {'role': 'user', 'content': user},
+            ],
+        },
+        'promotable': False,
+    }
+    return {
+        'bundle': bundle,
+        'request': request,
+        'stable_prefix': system,
+        'volatile_tail': user,
+        'system': system,
+        'user': user,
+        'pack': pack,
+    }
+
+
 def reconstruct_legacy_claude(fixture):
     compiled = compile_claude_v0(fixture['manifest'], fixture['keys'],
                                  extra=fixture.get('extra'))
@@ -301,6 +369,18 @@ def selftest():
     live_user = deep['common'] + deep['card']['card_block']
     if rec_d['user'] != live_user:
         raise AssertionError('compiler diverged from DeepSeek user assembly')
+    demo_pack = {
+        'key1': 'demo',
+        'sense_inventory': [{'i': 1, 'sense_tag': '1', 'de_anchor': 'Gloss'}],
+        'hard_flags': {'polysemy': False, 'monster_length': False, 'no_pwg': False},
+        'tm_fuzzy_hits': [],
+    }
+    prep_compiled = compile_prep_flash_v0(demo_pack)
+    live_sys, live_usr = prep_pack.flash_messages(demo_pack)
+    if prep_compiled['system'] != live_sys or prep_compiled['user'] != live_usr:
+        raise AssertionError('PREP compiler diverged from prep_pack.flash_messages')
+    if prep_compiled['system'] != prep_pack.PREP_FLASH_SYSTEM:
+        raise AssertionError('PREP compiler lost PREP_FLASH_SYSTEM')
     print('prompt_compiler selftest: PASS')
     return 0
 
