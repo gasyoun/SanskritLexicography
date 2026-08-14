@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sanskrit-lexicon.github.io/schemas/pwg_cache_request.schema.json",
+  "title": "PWG provider-neutral cache request identity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "compiler_version",
+    "provider",
+    "requested_model",
+    "generation_parameters",
+    "stable_prefix_sha256",
+    "volatile_tail_sha256",
+    "response_schema_sha256",
+    "dependency_hashes",
+    "request_id",
+    "promotable"
+  ],
+  "properties": {
+    "schema": {"const": "pwg.cache_request.v1"},
+    "compiler_version": {"type": "string", "minLength": 1},
+    "provider": {"type": "string", "minLength": 1},
+    "requested_model": {"type": "string", "minLength": 1},
+    "generation_parameters": {"type": "object"},
+    "stable_prefix_sha256": {"$ref": "#/$defs/sha256"},
+    "volatile_tail_sha256": {"$ref": "#/$defs/sha256"},
+    "response_schema_sha256": {"$ref": "#/$defs/sha256"},
+    "source_card_sha256": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+    "source_fragment_sha256": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+    "dependency_hashes": {
+      "type": "object",
+      "additionalProperties": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]}
+    },
+    "parent_request_id": {"anyOf": [{"$ref": "#/$defs/sha256"}, {"type": "null"}]},
+    "repair_variant": {"type": ["string", "null"]},
+    "request_id": {"$ref": "#/$defs/sha256"},
+    "promotable": {"const": false},
+    "compatibility": {"type": "object"}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}
