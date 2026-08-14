@@ -1,0 +1,91 @@
+{
+ "slice": [
+  "ya_tepsita"
+ ],
+ "arm": "B_deepseek",
+ "generator": {
+  "model": "deepseek-v4-pro",
+  "base_url": "https://api.deepseek.com",
+  "temperature": 0.2,
+  "max_tokens": 16384,
+  "response_format": "json_object"
+ },
+ "results": [
+  {
+   "key1": "ya_tepsita",
+   "attempts": 2,
+   "complexity_score": 6.64,
+   "complexity_flag": true,
+   "self_report_unsure": false,
+   "self_report_note": "",
+   "coverage": 1.0,
+   "det_issues": [],
+   "controller_calls": 0,
+   "controller_ok": null,
+   "controller_issues": null,
+   "final_status": "pending-controller",
+   "would_promote": false,
+   "repairs": []
+  }
+ ],
+ "cards_out": [
+  {
+   "key1": "ya_tepsita",
+   "card": {
+    "key1": "ya_tepsita",
+    "iast": "yathepsita",
+    "records": [
+     {
+      "h": "yaTepsita",
+      "grammar": "adj. und adv.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T1}¦ ({T2} + {T3}) {T4} {%den Wünschen entsprechend, gewünscht%}: {T5} {T6}. {T7} {T8}. {T9} {T10}. {T11} {T12}. {T13}. {T14}. {T15}. ",
+        "russian": "{T1}¦ ({T2} + {T3}) {T4} соответствующий желаниям, желанный: {T5} {T6}. {T7} {T8}. {T9} {T10}. {T11} {T12}. {T13}. {T14}. {T15}.",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical, Epic / early-Classical",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "{T16} {T17} {%nach Wunsch, nach Herzenslust%} {T18}. {T19}. {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}.",
+        "russian": "{T16} {T17} по желанию, вволю {T18}. {T19}. {T20}. {T21}. {T22}. {T23}. {T24}. {T25}. {T26}. {T27}.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": ""
+       }
+      ]
+     },
+     {
+      "h": "yaTepsita",
+      "grammar": "adj. und adv.",
+      "senses": [
+       {
+        "tag": "1",
+        "german": "{T28}¦\n{T32}— 1〉 {T29} {%den Wünschen entsprechend, gewünscht%}.\n",
+        "russian": "{T28}¦\n{T32}— 1〉 {T29} соответствующий желаниям, желанный.\n",
+        "equivalence_type": "explanatory",
+        "source_type": "attested",
+        "stratum": "Classical, Epic / early-Classical",
+        "differentia": ""
+       },
+       {
+        "tag": "2",
+        "german": "{T33}— 2〉 {T30} {T31} {%nach Wunsch, nach Herzenslust%}.",
+        "russian": "{T33}— 2〉 {T30} {T31} по желанию, вволю.",
+        "equivalence_type": "equivalent",
+        "source_type": "attested",
+        "stratum": "Classical",
+        "differentia": ""
+       }
+      ]
+     }
+    ],
+    "notes": ""
+   }
+  }
+ ]
+}
