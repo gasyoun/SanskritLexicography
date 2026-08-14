@@ -1,6 +1,6 @@
 # nn_api smoke-test — H1457 spike S1
 
-_Created: 22-07-2026 · Last updated: 22-07-2026_
+_Created: 22-07-2026 · Last updated: 14-08-2026_
 
 Spike S1 of [IMPLEMENTATION](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/IMPLEMENTATION_RussianTranslation_pubgrade_tm_oral.md)
 Step 0. Executed by Sonnet 5 (`claude-sonnet-5`) in an isolated worktree,
@@ -11,7 +11,9 @@ Step 0. Executed by Sonnet 5 (`claude-sonnet-5`) in an isolated worktree,
 | Backend | Serves in-env? | Path |
 |---|---|---|
 | **embed** (LaBSE) | ✅ yes | `sentence-transformers/LaBSE`, downloaded once from the public HF hub (no token), runs locally thereafter |
-| **QE** (COMET-QE) | ❌ no | see below — three paths tried, all fail |
+| **QE** (`labse`) | ❌ no (14-08-2026) | `sentence-transformers/LaBSE` load hits WinError 1455 (pagefile). Named, not comet. |
+| **QE** (`comet`) | ❌ no | still no cp314 `unbabel-comet` wheel; gated HF not used as fallback |
+| **QE** (`deepseek`) | ✅ yes (H2686 repair) | `deepseek-v4-flash` reference-free JSON judge; ρ=0.4195 on n=80 gold slice |
 
 ## Embedding probe (5 Sa/Ru pairs + 1 mismatch)
 
@@ -48,26 +50,22 @@ embedding backend for A5** (and B3's oral aligner).
    checkout). No Anthropic API key is present either (per standing org
    guidance, this account has none).
 
-**Conclusion:** QE cannot serve in this environment via any of the three
-logged paths. Per the plan's stop condition (VERIFICATION risk register,
-S1 row): this **blocks A2** (COMET-QE calibration) — `tm_grade.py --qe comet`
-stays a no-op falling back to `--qe proxy` (already implemented, logged at
-`make_qe()`), and the grade is marked **preliminary** pending either (a) an
-`HF_TOKEN` + gated-model acceptance, or (b) a compiler toolchain / newer
-`unbabel-comet` release with cp314 wheels, or (c) any LLM API key for the
-judge fallback. None of these are available to fix unattended.
+**Conclusion (updated 14-08-2026, H2686):** COMET-QE still does not serve.
+LaBSE QE does not serve on this box (WinError 1455). The one authorized
+repair is DeepSeek `deepseek-v4-flash`, which **does** serve as a named
+reference-free judge (`--qe deepseek`). `--qe comet` still falls back to
+the proxy and keeps the name `proxy`. Proxy ρ=-0.0351 remains preliminary.
 
-**A5 is NOT blocked** — embed serves, so the LaBSE/Vecalign sentence-aligner
-proceeds on schedule.
+**A5** is pagefile-blocked in the same process that cannot load LaBSE; that
+is a host constraint, not a missing embed API.
 
 ## `nn_api.py` interface
 
 - `embed(texts) -> List[List[float]]` — disk-cached (`.nn_api_cache/`, gitignored-by-pattern
   since it lives under `src/`), keyed by SHA-256 of the input string.
-- `qe(sa, ru) -> None` — honest stub; returns `None` rather than a fabricated
-  score. Callers must handle `None` (see `tm_grade.py`'s existing
-  `make_qe()` fallback-to-proxy logic, which this satisfies without change).
-- `embed_available()` / `qe_available()` — liveness checks other scripts use
-  to decide whether to attempt the corresponding track.
+- `qe(sa, ru, backend='labse')` — named backends only. `labse` and `comet`
+  return `None` here; do not invent a score. DeepSeek QE lives in `tm_grade.make_qe('deepseek')`.
+- `embed_available()` / `qe_available(backend)` — liveness checks. Default
+  backend is `labse`, never silently `comet`.
 
 _Dr. Mārcis Gasūns_
