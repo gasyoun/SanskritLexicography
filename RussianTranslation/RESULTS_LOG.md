@@ -4,6 +4,19 @@ _Created: 09-07-2026 · Last updated: 14-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 14-08-2026 — H2679 (Grok 4.6) — W1 TM-mine unmined SamudraManthanam delta
+
+Grok 4.6 (`grok-4.6`) orchestration; DeepSeek `deepseek-v4-flash` extraction. `mined` tier only. Never wrote the clean 1.09M lexicon.
+
+| Gate | Result |
+|---|---|
+| `mineall --plan` | **28** MINE / **241** SKIP; 8 823 term-bearing; `kommentarii` skipped (H224) |
+| Official 30-row precision (22 new sources) | **30/30** correct-equivalence; 24 meaning / 6 low-info / **0 hard** |
+| Mid-run 30-row (first 7 sources) | **30/30**; 25 meaning / 5 low-info / 0 hard |
+| Clean lexicon sha256 | `9f3d852f1f1424c275af2cc1823dab1b561e649320e597d3cab013068ccc4072` (before = after) |
+| First-wave mined pairs | ~2 700 new-source rows (local gitignored `corpus_lexicon.mined.jsonl`) |
+| Large tail still pending | `guptasadhana-tantra` … `vishnu-smriti` (resumable) |
+
 ## 14-08-2026 — H2684 (Grok 4.6) — PWG TM Grok 4.6 Track B first slice (PARTIAL)
 
 Grok 4.6 (`grok-4.6`). Track B runner + gates + independent sample apparatus. No PWG/csl-orig writes. No xAI HTTP call (`XAI_API_KEY` unset). Independent 400-row gate **not_run**.

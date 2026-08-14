@@ -14,6 +14,10 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.47] - 2026-08-14
+### Added
+- **H2679 W1 TM-mine unmined SamudraManthanam delta** (Grok 4.6 `grok-4.6`, 14-08-2026): `mineall --plan` over the 269-file SM folder selects **28 new sources / 8 823 term-bearing** (skip `*.raw`, skip the eight H224 works, `kommentarii` not remine-queued). First-wave mining of the cheap/new sources; official 30-row H224-method gate **30/30 (100%)** correct-equivalence, 0 hard errors. Clean 1.09M `corpus_lexicon.jsonl` sha256 unchanged `9f3d852f1f1424c275af2cc1823dab1b561e649320e597d3cab013068ccc4072`. Report: [`pwg_ru/H2679_W1_TM_MINE_SM_DELTA_14-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H2679_W1_TM_MINE_SM_DELTA_14-08-2026.md).
+
 ## [1.144.46] - 2026-08-14
 - **H2676 W1 Pro Q3 rematch after streaming client** (Grok 4.6 `grok-4.6`, 14-08-2026): 22/22 frozen H1210/H2652 Q3 keys on `deepseek-v4-pro` / `high` / 32768 via the H2674 OpenAI SDK stream. Dual floor **PASS**: `det_gate_clean` **21/22**, `$/clean` **$0.01991** ≤ $0.0465 (5× Flash $0.0093), Pro `pre-1608` PRICE_*, 0 `IncompleteRead`, `store_write` never true, `would_promote` 0/22. Q3 draft-assist only — not TM, not auto-promote, not E1. Report: [`experiments/H2676_v4pro_q3_rematch/REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/H2676_v4pro_q3_rematch/REPORT.md).
 - **H2684 Track B — Grok 4.6 PWG TM fragment runner, first 10-key slice, independent 400-gate apparatus** (Grok 4.6 `grok-4.6`, 14-08-2026): opt-in `--route grok-4.6`; deterministic promotion/quarantine; 734/734 accounted on a compact 10-key window; independent n=400 **not_run** (Grok does not self-adjudicate). Report: [`pwg_ru/PWG_TM_GROK46_WAVE1_TRACK_B_14-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_TM_GROK46_WAVE1_TRACK_B_14-08-2026.md).
