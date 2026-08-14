@@ -1,0 +1,98 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "eva",
+ "produced_at": 1786671525,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "live",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  },
+  "live_call": {
+   "ok": true,
+   "parse_ok": true,
+   "latency_s": 37.79,
+   "error": null,
+   "fence": null,
+   "prompt_tokens": 337,
+   "completion_tokens": 2402,
+   "reasoning_tokens": 2363,
+   "finish_reason": "stop",
+   "max_tokens": 32768,
+   "price_card": "pre-1608",
+   "transport": "openai-sdk-stream",
+   "transport_attempts": 1
+  }
+ },
+ "sense_inventory": [
+  {
+   "i": 0,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 1,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 2,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 3,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 4,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  }
+ ],
+ "source_evidence": {
+  "kind": "execution_manifest",
+  "locator": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography-h2675-10008\\RussianTranslation\\experiments\\H2675_w1_prep\\H2675_first200.manifest.json",
+  "sha256": "e575b447ba1ef5e8dc31c18020373d02215e9423d0e0bc0b6e1d3b6f034b3deb",
+  "manifest_sha256": "0d2cc65af3ed4a74d4177a8705aaa783276ccd25db807b79fb54ed7a0cba8f31"
+ },
+ "tm_fuzzy_hits": [],
+ "compound_candidates": [],
+ "citation_normalize": [],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=execution_manifest",
+   "Sense fields are empty (de=null); cannot produce reliable RU skeleton."
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "park",
+ "det": {
+  "ok": false,
+  "gate": "prep",
+  "issues": [
+   "prep: sense_inventory present but every de_anchor is empty"
+  ],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 362,
+  "source_senses": 5,
+  "had_draft_card": false
+ },
+ "tm_fence": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "step": "[4] same promoter + TM fence",
+  "note": "TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM",
+  "n_hits_ranked": 0
+ },
+ "store_write": false
+}

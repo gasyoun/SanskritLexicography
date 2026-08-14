@@ -139,3 +139,9 @@ HeadwordLists/works_catalogue/p2_gated_decisions.json
 RussianTranslation/prep/
 RussianTranslation/src/pilot/h1210/prep/spike*/
 
+# H2675 live manifests (assembled DE bytes) + resume scratch
+RussianTranslation/experiments/H2675_w1_prep/run/
+RussianTranslation/experiments/H2675_w1_prep/*.manifest.json
+RussianTranslation/experiments/H2675_w1_prep/calls.jsonl
+RussianTranslation/experiments/H2675_w1_prep/first200.remaining.txt
+
