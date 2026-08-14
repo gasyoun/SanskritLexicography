@@ -1,6 +1,6 @@
 # pwg_ru — running-text term mining (the `mined` TM tier)
 
-_Created: 06-07-2026 · Last updated: 06-07-2026_
+_Created: 06-07-2026 · Last updated: 14-08-2026_
 
 Design + pilot record for **H186 Track B**: mining Sanskrit→Russian term glosses out of
 Russian **running prose** (monographs, term-encyclopedias, lecture transcripts) that
@@ -80,17 +80,27 @@ counts and makes no API calls. **Every skip is logged with its reason — no sil
    `mify-drind` (12), `pandey` (9), `buddhacharita-balmont` (5), `vishnu-purana` (2),
    `13_mahabharata-anushasanaparva` (0 — all-`…` Russian).
 5. Mine everything left, resumably.
+6. **H2679 (14-08-2026):** skip `*.raw` companions (byte-level / near-duplicates of the
+   processed jsonl — 26 files in the 269-file folder). Skip the eight H224-scale works
+   as already-mined unless `--include` (local `mined.jsonl` is gitignored and often
+   absent). `kommentarii-k-makhabkharate` stays `MINE_LAST` if forced.
 
-Over the 148-file folder this selects **8 sources** (18 denylist + 116 aligned + 1 index
-+ 5 low-yield = 140 skipped, all logged). One delta from the H224 handoff's illustrative
-Step-2 table: `stepanyants` (472 term-bearing, a philosophy term-encyclopedia the doc had
-listed as "queued") is selected by the rule and mined — the rule is authoritative, so it
-is included, not dropped.
+Over the original 148-file folder this selected **8 sources** (18 denylist + 116 aligned
++ 1 index + 5 low-yield = 140 skipped, all logged). One delta from the H224 handoff's
+illustrative Step-2 table: `stepanyants` (472 term-bearing, a philosophy term-encyclopedia
+the doc had listed as "queued") is selected by the rule and mined — the rule is
+authoritative, so it is included, not dropped.
+
+Over the **269-file** folder (H2679, 14-08-2026) the same rule plus (6) selects **28 new
+sources / 8 823 term-bearing** (241 SKIP). Full SKIP/MINE table:
+[H2679_W1_TM_MINE_SM_DELTA_14-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H2679_W1_TM_MINE_SM_DELTA_14-08-2026.md).
 
 - **Candidate pre-filter** (`term_bearing`) — a passage is sent to DeepSeek only if it
   carries an IAST diacritic, Devanagari, or a Sanskrit-origin marker (`санскр`,
   `др.-инд.`, `от корня`, `букв.`). Keeps cost and false-positive rate down.
 - **Resumable** by `(work, passage)` — re-running skips already-mined passages.
+  H2679 also writes `corpus_lexicon.mined.done.jsonl` for empty 0-pair successes
+  so those are not remined; API failures stay pending.
 - **Row schema**: `{slp1, sa, ru, work, passage, group, kind:"mined", tier:"mined"}`.
 - Output is gitignored (`RussianTranslation/src/*.jsonl`) — code + this doc + the
   row-count/precision deltas are the deliverable, not the bulk `.jsonl`.
@@ -186,6 +196,37 @@ for a lower-confidence TM tier; the folder is fully scanned (every skip logged).
 noise to weight down, not to "fix" in the miner: (a) proper-name transliterations carry
 low lexical information; (b) list-category mis-scoping is the dominant hard-error mode.
 Neither justifies polluting the clean corpus — that is exactly why the tier is separate.
+
+## Delta run (H2679, 14-08-2026) — unmined SamudraManthanam folder growth
+
+The SM `jsonl/` folder grew **148 → 269**. `mineall --plan` plus the H2679 rules
+(skip `*.raw`, skip the eight H224 works) selected **28 new sources / 8 823
+term-bearing** (241 SKIP). `kommentarii-k-makhabkharate` is **not** remine-queued.
+Full SKIP/MINE table:
+[H2679_W1_TM_MINE_SM_DELTA_14-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H2679_W1_TM_MINE_SM_DELTA_14-08-2026.md).
+
+Extraction = DeepSeek `deepseek-v4-flash` (per-HTTP JSONL, pre-1608 Flash card).
+Orchestration + adjudication = Grok 4.6 (`grok-4.6`). First-wave mining covered
+the cheap/new tantra and Devībhāgavata commentaries (~2 700 pairs / 22 sources
+when the official gate ran). The large smṛti/tantra tail (`naradasmriti` …
+`vishnu-smriti`) remains pending and is resumable.
+
+### Precision gate on the NEW material (30-row stratified sample)
+
+Deterministic 30-row sample across 22 new sources, each gloss adjudicated
+against its source passage. Sample:
+[`pwg_ru/running_text_mining_precision_sample_h2679.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/running_text_mining_precision_sample_h2679.jsonl).
+
+| Verdict | Count | Rate |
+|---|---|---|
+| Correct meaning-gloss (`pādya`→вода для омовения стоп, `ekārṇava`→единственный океан, `mukti`→освобождение) | 24 | 80% |
+| Correct but low-information (person / varṇa loan / clan / title) | 6 | 20% |
+| **Hard error** | 0 | 0% |
+
+**Correct-equivalence precision = 30/30 (100%); useful meaning-gloss = 24/30
+(80%); hard-error rate = 0%.** Clears the ≥95% bar. Clean 1.09M
+`corpus_lexicon.jsonl` sha256 unchanged
+`9f3d852f1f1424c275af2cc1823dab1b561e649320e597d3cab013068ccc4072`.
 
 ## Track A status (parallel-text alignment) — BLOCKED on missing verse-aligned input
 

@@ -20,21 +20,40 @@ world-knowledge instead of the passage is exactly the failure mode we refuse).
   python mine_running_text.py mineall [--min-tb 15] [--include a,b] [--exclude c] [--plan] [--workers 8]
                                                      scan the whole SM folder, apply the
                                                      deterministic selection rule, mine each
-                                                     selected running-text source (resumable)
+                                                     selected running-text source (resumable;
+                                                     H224 works and *.raw skipped unless --include)
   python mine_running_text.py status                 mined rows + distinct keys + per-source
+  python mine_running_text.py sample-new [--n 30]    stratified precision sample of NEW sources
+  python mine_running_text.py selftest               offline selection-rule checks
   python mine_running_text.py aligned-works          print the 116 aligned works (needs corpus)
+
+Empty 0-pair successes are recorded in corpus_lexicon.mined.done.jsonl so
+resume does not remine them. API failures stay pending. Never writes
+corpus_lexicon.jsonl.
 """
-import json, os, re, sys, time
+import datetime, json, os, re, sys, threading, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import requests
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-import build_corpus_lexicon as bcl   # deepseek(), to_slp1(), has_cyr(), SM, REJECT_RU
+import build_corpus_lexicon as bcl   # to_slp1(), has_cyr(), SM, REJECT_RU — not the clean lexicon writer
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SM = bcl.SM
 OUT = os.path.join(HERE, 'corpus_lexicon.mined.jsonl')
+CALL_LOG = os.path.join(HERE, 'mine_running_text.calls.jsonl')
+DONE_LOG = os.path.join(HERE, 'corpus_lexicon.mined.done.jsonl')
 ALIGNED_WORKS_FILE = os.path.join(HERE, '..', 'pwg_ru', 'aligned_works.txt')
+MODEL = os.environ.get('DEEPSEEK_MODEL', 'deepseek-v4-flash')
+# Pre-16-08-2026 16:00 UTC Flash card (USD / 1M). After that, off-peak/peak rows.
+_PRICE = {
+    'pre-1608': {'cache_miss_in': 0.14, 'cache_hit_in': 0.0028, 'out': 0.28},
+    'after-1608-offpeak': {'cache_miss_in': 0.22, 'cache_hit_in': 0.007, 'out': 0.66},
+    'after-1608-peak': {'cache_miss_in': 0.44, 'cache_hit_in': 0.014, 'out': 1.32},
+}
+_PEAK_START = datetime.datetime(2026, 8, 16, 16, 0, tzinfo=datetime.timezone.utc)
+_LOG_LOCK = threading.Lock()
 
 # ── mineall selection rule (H224 — baked in so no future session re-derives it) ──
 # (2) verse-aligned works (in corpus_lexicon.jsonl) are Track A's domain → skipped via
@@ -48,8 +67,127 @@ DENYLIST = {
     'ramayana-3-slovar', 'toporov', 'warnemyr', 'iliada_gnedich',
 }
 SKIP_INDEX = {'ukazateli-makhabkharaty'}   # 17,915-line MBh index, 29 term-bearing (0%)
+# H224 scale already mined these 8; local mined.jsonl is gitignored and often
+# absent in a fresh worktree. Delta-only (H2679): skip unless --include.
+H224_MINED = {
+    'induizm-dzhaynizm-sikkhizm',
+    'mify_759_ind',
+    'syrkin_tom_1_utf',
+    'biruni',
+    'stati-makhabkharaty',
+    'stepanyants',
+    'yoga-bessmertie-i-cvoboda-mircha-eliade-per-pakhomova',
+    'kommentarii-k-makhabkharate',
+}
 # the 6,291-passage MBh commentary — always mined LAST (dominant cost)
 MINE_LAST = 'kommentarii-k-makhabkharate'
+
+
+def _utcnow():
+    return datetime.datetime.now(datetime.timezone.utc)
+
+
+def _price_card(now=None):
+    now = now or _utcnow()
+    if now < _PEAK_START:
+        return 'pre-1608'
+    hour = now.hour
+    if (1 <= hour < 4) or (6 <= hour < 10):
+        return 'after-1608-peak'
+    return 'after-1608-offpeak'
+
+
+def _usd(usage, card):
+    prices = _PRICE[card]
+    prompt = int(usage.get('prompt_tokens') or 0)
+    completion = int(usage.get('completion_tokens') or 0)
+    cached = int((usage.get('prompt_tokens_details') or {}).get('cached_tokens') or 0)
+    miss = max(0, prompt - cached)
+    return (miss * prices['cache_miss_in'] + cached * prices['cache_hit_in']
+            + completion * prices['out']) / 1_000_000.0
+
+
+def _log_call(rec):
+    with _LOG_LOCK:
+        with open(CALL_LOG, 'a', encoding='utf-8', newline='') as fh:
+            fh.write(json.dumps(rec, ensure_ascii=False) + '\n')
+
+
+def mine_deepseek(user, work=None, passage=None):
+    """One DeepSeek JSON-object call with per-HTTP JSONL (spend-auth). Never writes
+    the clean 1.09M lexicon — that path stays in build_corpus_lexicon.py unused."""
+    key = bcl.KEY
+    if key is None:
+        bcl.KEY = bcl._key()
+        key = bcl.KEY
+    last = None
+    for a in range(bcl.RETRIES):
+        now = _utcnow()
+        card = _price_card(now)
+        rec = {
+            'utc': now.isoformat(),
+            'model': MODEL,
+            'served_model': None,
+            'effort': None,
+            'work': work,
+            'passage': passage,
+            'attempt': a + 1,
+            'price_card': card,
+            'prompt_tokens': None,
+            'completion_tokens': None,
+            'reasoning_tokens': None,
+            'cache_tokens': None,
+            'usd': None,
+            'finish_reason': None,
+            'error': None,
+        }
+        if card == 'after-1608-peak' and not os.environ.get('ALLOW_DEEPSEEK_PEAK'):
+            rec['error'] = 'refuse_if_peak'
+            _log_call(rec)
+            return None
+        try:
+            r = requests.post(
+                bcl.API, headers={'Authorization': 'Bearer ' + key},
+                json={'model': MODEL, 'temperature': 0,
+                      'response_format': {'type': 'json_object'},
+                      'messages': [{'role': 'system', 'content': SYS_MINE},
+                                   {'role': 'user', 'content': user}]},
+                timeout=(bcl.CONNECT_TIMEOUT, bcl.READ_TIMEOUT))
+            body = r.json() if r.content else {}
+            usage = body.get('usage') or {}
+            rec['served_model'] = body.get('model')
+            rec['prompt_tokens'] = usage.get('prompt_tokens')
+            rec['completion_tokens'] = usage.get('completion_tokens')
+            rec['reasoning_tokens'] = (usage.get('completion_tokens_details') or {}).get(
+                'reasoning_tokens')
+            rec['cache_tokens'] = (usage.get('prompt_tokens_details') or {}).get('cached_tokens')
+            rec['usd'] = _usd(usage, card) if usage else None
+            rec['finish_reason'] = ((body.get('choices') or [{}])[0]).get('finish_reason')
+            if r.status_code >= 400 and bcl.transient_http(r.status_code):
+                rec['error'] = 'transient HTTP %s' % r.status_code
+                _log_call(rec)
+                raise requests.HTTPError('transient HTTP %s: %s' %
+                                         (r.status_code, r.text[:200]), response=r)
+            if r.status_code >= 400:
+                rec['error'] = 'HTTP %s' % r.status_code
+                _log_call(rec)
+                r.raise_for_status()
+            _log_call(rec)
+            return ((body.get('choices') or [{}])[0].get('message') or {}).get('content')
+        except Exception as ex:
+            last = ex
+            if rec.get('error') is None:
+                rec['error'] = str(ex)[:300]
+                _log_call(rec)
+            if a == bcl.RETRIES - 1:
+                sys.stderr.write('deepseek fail: %s\n' % ex)
+                return None
+            retry_after = getattr(getattr(ex, 'response', None), 'headers', {}).get('Retry-After')
+            wait = bcl.backoff(a, retry_after=retry_after)
+            sys.stderr.write('deepseek retry %d/%d after %.1fs: %s\n' %
+                             (a + 1, bcl.RETRIES, wait, ex))
+            time.sleep(wait)
+    return None
 
 
 def load_aligned_works():
@@ -107,8 +245,8 @@ SYS_MINE = (
     'qualifies. Never echo the Sanskrit as its own gloss.')
 
 
-def mine_passage(text):
-    out = bcl.deepseek('Passage (Russian):\n%s' % text[:2400], system=SYS_MINE)
+def mine_passage(text, work=None, passage=None):
+    out = mine_deepseek('Passage (Russian):\n%s' % text[:2400], work=work, passage=passage)
     if not out:
         return None          # None = API/JSON failure (distinct from "0 pairs found")
     try:
@@ -138,11 +276,32 @@ def done_refs():
                 s.add((r.get('work'), r.get('passage')))
             except Exception:
                 pass
+    if os.path.exists(DONE_LOG):
+        for line in open(DONE_LOG, encoding='utf-8'):
+            try:
+                r = json.loads(line)
+                if r.get('status') in ('pairs', 'empty'):
+                    s.add((r.get('work'), r.get('passage')))
+            except Exception:
+                pass
     return s
 
 
+def mark_done(work, passage, n_rows):
+    rec = {
+        'work': work,
+        'passage': passage,
+        'status': 'pairs' if n_rows else 'empty',
+        'n_rows': n_rows,
+        'utc': _utcnow().isoformat(),
+    }
+    with _LOG_LOCK:
+        with open(DONE_LOG, 'a', encoding='utf-8', newline='') as fh:
+            fh.write(json.dumps(rec, ensure_ascii=False) + '\n')
+
+
 def rows_from(passage, group, text, work):
-    pairs = mine_passage(text)
+    pairs = mine_passage(text, work=work, passage=passage)
     if pairs is None:
         return None
     rows, seen = [], set()
@@ -188,10 +347,11 @@ def cmd_mine(args):
     done = done_refs()
     work0 = tf.replace('.jsonl', '')
     items = [(p, g, t, w) for p, g, t, w in entries(tf) if (work0, p) not in done][:n]
-    wrote = failed = 0
+    wrote = failed = empty = 0
     with open(OUT, 'a', encoding='utf-8', newline='') as out, ThreadPoolExecutor(workers) as ex:
-        futs = {ex.submit(rows_from, p, g, t, w): p for p, g, t, w in items}
+        futs = {ex.submit(rows_from, p, g, t, w): (p, w) for p, g, t, w in items}
         for fut in as_completed(futs):
+            passage, work = futs[fut]
             rows = fut.result()
             if rows is None:
                 failed += 1
@@ -200,8 +360,11 @@ def cmd_mine(args):
                 out.write(json.dumps(r, ensure_ascii=False) + '\n')
                 wrote += 1
             out.flush()
-    print('%s: %d term-bearing passages → %d mined pairs, %d API failures → %s'
-          % (work0, len(items), wrote, failed, os.path.basename(OUT)))
+            mark_done(work, passage, len(rows))
+            if not rows:
+                empty += 1
+    print('%s: %d term-bearing passages → %d mined pairs, %d empty, %d API failures → %s'
+          % (work0, len(items), wrote, empty, failed, os.path.basename(OUT)))
 
 
 def select_sources(min_tb=15, include=None, exclude=None):
@@ -233,6 +396,12 @@ def select_sources(min_tb=15, include=None, exclude=None):
             if work in SKIP_INDEX:
                 skips.append((work, 'index file (skip-by-name)'))
                 continue
+            if work.endswith('.raw'):
+                skips.append((work, 'raw companion (duplicate of processed jsonl)'))
+                continue
+            if work in H224_MINED:
+                skips.append((work, 'already mined (H224 scale; local mined.jsonl often absent — delta only)'))
+                continue
         tb = count_term_bearing(f)
         if not forced and tb < min_tb:
             skips.append((work, 'low-yield: %d term-bearing < min-tb %d' % (tb, min_tb)))
@@ -263,24 +432,35 @@ def cmd_mineall(args):
         i += 1
 
     selected, skips = select_sources(min_tb, include, exclude)
+    done = done_refs()
     print('=== mineall selection (min-tb=%d) ===' % min_tb)
     for work, reason in skips:
         print('  SKIP  %-52s %s' % (work, reason))
     print('  ---')
-    tot = 0
+    tot = pending_tot = 0
+    planned = []
     for work, tb in selected:
-        print('  MINE  %-52s %d term-bearing' % (work, tb))
+        n_done = sum(1 for r in done if r[0] == work)
+        pending = max(0, tb - n_done)
         tot += tb
-    print('  === %d sources selected, %d term-bearing passages total ===' % (len(selected), tot))
+        pending_tot += pending
+        tag = 'MINE' if pending else 'DONE'
+        print('  %-4s  %-52s %d term-bearing  pending=%d done_refs=%d'
+              % (tag, work, tb, pending, n_done))
+        planned.append((work, tb, pending))
+    print('  === %d sources selected, %d term-bearing, %d pending (done_refs-missing) ==='
+          % (len(selected), tot, pending_tot))
     if plan:
         print('(--plan: no API calls made)')
         return
 
-    done = done_refs()
-    for idx, (work, tb) in enumerate(selected, 1):
-        pending = tb - sum(1 for r in done if r[0] == work)  # rough; cmd_mine is exact
-        print('\n[%d/%d] mining %s (~%d term-bearing, resuming) ...'
-              % (idx, len(selected), work, tb), flush=True)
+    mineable = [(w, tb, p) for w, tb, p in planned if p]
+    skipped_done = len(planned) - len(mineable)
+    if skipped_done:
+        print('skipping %d already-mined selected sources (done_refs complete)' % skipped_done)
+    for idx, (work, tb, pending) in enumerate(mineable, 1):
+        print('\n[%d/%d] mining %s (%d pending of %d term-bearing) ...'
+              % (idx, len(mineable), work, pending, tb), flush=True)
         cmd_mine([work + '.jsonl', str(10**9), str(workers)])
 
 
@@ -305,8 +485,99 @@ def cmd_status(args):
         print('  %6d  %s' % (c, w))
 
 
+def cmd_sample_new(args):
+    """Deterministic stratified 30-row sample of NEW (non-H224) mined pairs — H224 method."""
+    n = 30
+    outp = os.path.join(HERE, '..', 'pwg_ru', 'running_text_mining_precision_sample_h2679.jsonl')
+    i = 0
+    while i < len(args):
+        a = args[i]
+        if a == '--n':
+            i += 1; n = int(args[i])
+        elif a == '--out':
+            i += 1; outp = args[i]
+        else:
+            print('unknown arg:', a); return
+        i += 1
+    if not os.path.exists(OUT):
+        print('no', OUT); return
+    by = {}
+    for line in open(OUT, encoding='utf-8'):
+        try:
+            r = json.loads(line)
+        except Exception:
+            continue
+        w = r.get('work') or ''
+        if w in H224_MINED or w.endswith('.raw'):
+            continue
+        by.setdefault(w, []).append(r)
+    works = sorted(by)
+    if not works:
+        print('no new-source rows to sample'); return
+    for w in works:
+        by[w].sort(key=lambda r: (r.get('passage') or '', r.get('slp1') or '', r.get('ru') or ''))
+    quota, rem = divmod(n, len(works))
+    picked = []
+    for i, w in enumerate(works):
+        take = quota + (1 if i < rem else 0)
+        rows = by[w]
+        if take <= 0 or not rows:
+            continue
+        if take >= len(rows):
+            picked.extend(rows)
+            continue
+        step = max(1, len(rows) // take)
+        for k in range(take):
+            picked.append(rows[min(k * step, len(rows) - 1)])
+    picked = picked[:n]
+    os.makedirs(os.path.dirname(os.path.abspath(outp)), exist_ok=True)
+    with open(outp, 'w', encoding='utf-8', newline='') as fh:
+        for r in picked:
+            fh.write(json.dumps(r, ensure_ascii=False) + '\n')
+    print('wrote %d rows from %d new sources → %s' % (len(picked), len(works), outp))
+
+
+def cmd_selftest(args):
+    """Offline selection-rule checks (no API). Needs the SM jsonl folder."""
+    failed = 0
+
+    def check(cond, msg):
+        nonlocal failed
+        if cond:
+            print('PASS', msg)
+        else:
+            print('FAIL', msg)
+            failed += 1
+
+    selected, skips = select_sources()
+    skip_d = {w: r for w, r in skips}
+    sel_d = {w: tb for w, tb in selected}
+    check('ukazateli-makhabkharaty' in skip_d, 'index skip-by-name')
+    check(skip_d.get('ukazateli-makhabkharaty', '').startswith('index'), 'index reason')
+    raws = [w for w in skip_d if w.endswith('.raw')]
+    check(len(raws) >= 1, 'raw companions skipped (%d)' % len(raws))
+    check(all('raw companion' in skip_d[w] for w in raws), 'raw skip reason')
+    for w in H224_MINED:
+        check(w in skip_d, 'H224 already-mined skip: %s' % w)
+        check(w not in sel_d, 'H224 not selected: %s' % w)
+    check(MINE_LAST not in sel_d, 'kommentarii not in delta (H224 already-mined)')
+    if selected:
+        check(selected[-1][0] != MINE_LAST or selected[-1][0] == selected[-1][0],
+              'sort stable')
+        tbs = [tb for w, tb in selected if w != MINE_LAST]
+        check(tbs == sorted(tbs), 'cheap-first order on delta')
+    check('corpus_lexicon.jsonl' not in OUT, 'mined OUT is not the clean lexicon')
+    check(os.path.basename(OUT) == 'corpus_lexicon.mined.jsonl', 'mined filename')
+    check(os.path.basename(DONE_LOG) == 'corpus_lexicon.mined.done.jsonl', 'done sidecar name')
+    check(os.path.abspath(OUT) != os.path.abspath(bcl.OUT), 'mined path != clean lexicon')
+    print('selftest %s (%d fail)' % ('PASS' if failed == 0 else 'FAIL', failed))
+    if failed:
+        sys.exit(1)
+
+
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'status'
     rest = sys.argv[2:]
     {'test': cmd_test, 'mine': cmd_mine, 'mineall': cmd_mineall,
-     'aligned-works': cmd_aligned_works, 'status': cmd_status}.get(cmd, cmd_status)(rest)
+     'aligned-works': cmd_aligned_works, 'status': cmd_status,
+     'sample-new': cmd_sample_new, 'selftest': cmd_selftest}.get(cmd, cmd_status)(rest)
