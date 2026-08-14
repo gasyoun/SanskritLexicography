@@ -78,39 +78,39 @@
    }
   },
   {
-   "date": "2026-08-03",
+   "date": "2026-08-14",
    "source": "build",
    "metrics": {
     "dcs_cdsl_linkage_pct": 81.4,
     "glossary_vidyut_coverage_pct": null,
     "pwg_citation_coverage_pct": 83.6,
     "queue_verdicts": {
-     "PASS": 92,
+     "PASS": 139,
      "DROP": 1,
-     "SCAN-FIRST": 17,
-     "EDITORIAL": 11,
+     "SCAN-FIRST": 43,
+     "EDITORIAL": 16,
      "DNF": 1
     },
     "queue_pass_by_dict": {
-     "SHS": 29,
-     "YAT": 17,
+     "SHS": 53,
+     "YAT": 32,
      "ACC": 17,
-     "PWG": 10,
+     "PWG": 14,
      "MCI": 10,
-     "SKD": 3,
-     "WIL": 3,
+     "SKD": 4,
+     "WIL": 5,
      "PW": 1,
      "VCP": 1,
-     "GST": 1
+     "GST": 2
     },
-    "queue_decay_pct": 0.82
+    "queue_decay_pct": 0.5
    },
    "registry": {
-    "total": 170,
+    "total": 187,
     "by_importance": {
-     "2": 93,
+     "2": 101,
      "1": 25,
-     "3": 52
+     "3": 61
     },
     "stale": 0
    }

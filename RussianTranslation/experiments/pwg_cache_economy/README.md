@@ -2,7 +2,7 @@
 
 _Created: 14-08-2026 · Last updated: 14-08-2026_
 
-H2702 foundation, H2703 generation-lane cold/warm proof, and H2704 PREP/TM + adoption. Do not invent extra paid lanes here.
+H2702 foundation, H2703 generation-lane cold/warm proof, and H2704 PREP/TM + adoption. Product adoption remains **NO-GO**. Flash 3.9% is a real point-estimate, not zero — see [CONCLUSIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/CONCLUSIONS.md). Next paid sitting is [H2754 (Grok 4.6) — Flash PREP one-shot vs incremental warm (correct denominator)](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2754-Grok_SanskritLexicography_pwg-cache-flash-oneshot-vs-warm_14.08.26.md); do not invent extra Pro pair lanes.
 
 - Baseline hashes: [baseline/manifest.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/baseline/manifest.json)
 - Contract: [PWG_CACHE_CONTRACT_PROVIDER_NEUTRAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PWG_CACHE_CONTRACT_PROVIDER_NEUTRAL.md)
