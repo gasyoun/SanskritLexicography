@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+- **H2675 W1 Flash PREP --live drain-head first-200 gate** (Grok 4.6 `grok-4.6`, 14-08-2026): 5k live-DE worklist in freq order; first 200 `--live` sidecars **200/200 parse** at 32768 (H2674 client), $0.000873/card, `store_write` never. 5k honest stop after D15 (243 sidecars on disk). Report: [`experiments/H2675_w1_prep/REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/H2675_w1_prep/REPORT.md).
+
 ## [1.144.47] - 2026-08-14
 ### Added
 - **H2679 W1 TM-mine unmined SamudraManthanam delta** (Grok 4.6 `grok-4.6`, 14-08-2026): `mineall --plan` over the 269-file SM folder selects **28 new sources / 8 823 term-bearing** (skip `*.raw`, skip the eight H224 works, `kommentarii` not remine-queued). First-wave mining of the cheap/new sources; official 30-row H224-method gate **30/30 (100%)** correct-equivalence, 0 hard errors. Clean 1.09M `corpus_lexicon.jsonl` sha256 unchanged `9f3d852f1f1424c275af2cc1823dab1b561e649320e597d3cab013068ccc4072`. Report: [`pwg_ru/H2679_W1_TM_MINE_SM_DELTA_14-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/H2679_W1_TM_MINE_SM_DELTA_14-08-2026.md).

@@ -47,6 +47,7 @@ import json
 import os
 import re
 import sys
+import tempfile
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
@@ -850,9 +851,18 @@ def fill_one(key1: str, *, model: str, payload_idx: dict, store_idx: dict,
             'sha256': _sha256(de_blob.encode('utf-8')),
         }
     elif card:
-        pack['sense_inventory'] = sense_inventory_from_payload(card)
         de_blob = card.get('card_block') or ''
         kind = card.get('_prep_source_kind') or 'slice_payload'
+        # Assembled / execution-manifest skeletons are raw DE, not a slice
+        # card_block with the "--- masked German ---" wrapper. The payload
+        # splitter then emits de_anchor=null and Flash parks as empty-DE.
+        if kind == 'execution_manifest' and de_blob.strip():
+            pack['sense_inventory'] = sense_inventory_from_de_text(
+                de_blob, source_note='execution_manifest')
+            if not pack['sense_inventory']:
+                pack['sense_inventory'] = sense_inventory_from_payload(card)
+        else:
+            pack['sense_inventory'] = sense_inventory_from_payload(card)
         pack['hard_flags']['notes'].append('de_source=%s' % kind)
         pack['source_evidence'] = {
             'kind': kind,
@@ -937,9 +947,18 @@ def write_pack(out_dir: str, pack: dict) -> str:
     except Exception:  # noqa: BLE001
         stem = pack['key1']
     path = os.path.join(out_dir, '%s.json' % stem)
-    with open(path, 'w', encoding='utf-8', newline='\n') as f:
-        json.dump(pack, f, ensure_ascii=False, indent=1)
-        f.write('\n')
+    fd, tmp = tempfile.mkstemp(prefix='.%s.' % stem, suffix='.tmp', dir=out_dir)
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump(pack, f, ensure_ascii=False, indent=1)
+            f.write('\n')
+        os.replace(tmp, path)
+    except Exception:
+        try:
+            os.remove(tmp)
+        except OSError:
+            pass
+        raise
     return path
 
 
@@ -1123,22 +1142,54 @@ def _flash_draft_for_pack(client: ds.DeepSeek, pack: dict) -> dict:
         ],
     }, ensure_ascii=False)
     text, call = client.chat(system, user, 'prep:%s' % pack['key1'])
+    finish = (call or {}).get('finish_reason')
+    parse_ok = False
+    obj = None
+    parse_err = None
+    if text:
+        try:
+            obj, _repair = ds.extract_json(text)
+            # D15 / D22: finish_reason=length is not a parse success (E1 length-death).
+            parse_ok = finish != 'length' and isinstance(obj, dict)
+        except ValueError as e:
+            parse_err = str(e)
     pack['producer']['live_call'] = {
         'ok': text is not None,
+        'parse_ok': parse_ok,
         'latency_s': (call or {}).get('latency_s'),
         'error': (call or {}).get('error'),
+        'fence': (call or {}).get('fence'),
         'prompt_tokens': (call or {}).get('prompt_tokens'),
         'completion_tokens': (call or {}).get('completion_tokens'),
+        'reasoning_tokens': (call or {}).get('reasoning_tokens'),
+        'finish_reason': finish,
+        'max_tokens': (call or {}).get('max_tokens'),
+        'price_card': (call or {}).get('price_card'),
+        'transport': (call or {}).get('transport'),
+        'transport_attempts': (call or {}).get('transport_attempts'),
     }
+    if (call or {}).get('fence') == '401/402':
+        pack['hard_flags']['notes'].append('live: 401/402 fence')
+        pack['route_hint'] = 'full_worker'
+        pack['store_write'] = False
+        return pack
     if not text:
         pack['hard_flags']['notes'].append('live: null response')
         pack['route_hint'] = 'full_worker'
         pack['store_write'] = False
         return pack
-    try:
-        obj, _repair = ds.extract_json(text)
-    except ValueError as e:
-        pack['hard_flags']['notes'].append('live parse fail: %s' % e)
+    if parse_err is not None:
+        pack['hard_flags']['notes'].append('live parse fail: %s' % parse_err)
+        pack['route_hint'] = 'full_worker'
+        pack['store_write'] = False
+        return pack
+    if finish == 'length':
+        pack['hard_flags']['notes'].append('live: finish_reason=length (not parse-ok)')
+        pack['route_hint'] = 'full_worker'
+        pack['store_write'] = False
+        return pack
+    if not isinstance(obj, dict):
+        pack['hard_flags']['notes'].append('live parse fail: not an object')
         pack['route_hint'] = 'full_worker'
         pack['store_write'] = False
         return pack
@@ -1157,9 +1208,20 @@ def _flash_draft_for_pack(client: ds.DeepSeek, pack: dict) -> dict:
     return pack
 
 
+def _append_journal(journal_path: str | None, row: dict) -> None:
+    if not journal_path:
+        return
+    os.makedirs(os.path.dirname(os.path.abspath(journal_path)) or '.', exist_ok=True)
+    with open(journal_path, 'a', encoding='utf-8', newline='\n') as handle:
+        handle.write(json.dumps(row, ensure_ascii=False) + '\n')
+
+
 def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None,
                  payload_idx: dict, store_idx: dict, workers: int = 6,
-                 input_dir: str | None = None, run_gate: bool = True) -> list[str]:
+                 input_dir: str | None = None, run_gate: bool = True,
+                 manifest_authoritative: bool = False,
+                 journal_path: str | None = None,
+                 timeout: int = 180) -> list[str]:
     env = ds.load_env_file(env_file)
     key = os.environ.get('DEEPSEEK_API_KEY') or env.get('DEEPSEEK_API_KEY')
     if not key:
@@ -1167,16 +1229,39 @@ def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None
     ds.refuse_if_peak()
     base = (os.environ.get('DEEPSEEK_BASE_URL') or env.get('DEEPSEEK_BASE_URL')
             or 'https://api.deepseek.com')
-    client = ds.DeepSeek(base, key, model, max_tokens=ds.DEFAULT_MAX_TOKENS, timeout=120)
+    if ds.DEFAULT_MAX_TOKENS < 32768:
+        raise SystemExit('prep_pack --live forbidden below 32768 max_tokens (D7/D12)')
+    client = ds.DeepSeek(base, key, model, max_tokens=ds.DEFAULT_MAX_TOKENS,
+                         timeout=timeout)
+
+    pending_keys = []
+    skipped_paths = []
+    for k in keys:
+        try:
+            from safe_filename import safe_name  # noqa: WPS433
+            stem = safe_name(k)
+        except Exception:  # noqa: BLE001
+            stem = k
+        existing = os.path.join(out_dir, '%s.json' % stem)
+        if os.path.exists(existing):
+            skipped_paths.append(existing)
+            print('  skip %-24s existing sidecar' % k, flush=True)
+        else:
+            pending_keys.append(k)
+    if not pending_keys:
+        print('live: all %d keys already have sidecars' % len(keys), flush=True)
+        return skipped_paths
 
     # Deterministic fill first (free, gate deferred until after Flash draft).
     packs = [
         fill_one(k, model=model, payload_idx=payload_idx, store_idx=store_idx,
-                 mode='live', input_dir=input_dir, run_gate=False)
-        for k in keys
+                 mode='live', input_dir=input_dir, run_gate=False,
+                 manifest_authoritative=manifest_authoritative)
+        for k in pending_keys
     ]
     workers = max(1, min(workers, 2500))
     done = {}
+    fence_hit = None
     with ThreadPoolExecutor(max_workers=workers) as ex:
         futs = {ex.submit(_flash_draft_for_pack, client, p): p['key1'] for p in packs}
         for fut in as_completed(futs):
@@ -1190,30 +1275,76 @@ def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None
                 p['route_hint'] = 'full_worker'
                 p['store_write'] = False
                 done[k] = p
-            print('  live %-24s route=%s skeleton=%s'
+            live = (done[k].get('producer') or {}).get('live_call') or {}
+            _append_journal(journal_path, {
+                'key1': k,
+                'utc': ds.utcnow().isoformat(),
+                'model': model,
+                'max_tokens': ds.DEFAULT_MAX_TOKENS,
+                'parse_ok': live.get('parse_ok'),
+                'finish_reason': live.get('finish_reason'),
+                'ok': live.get('ok'),
+                'error': live.get('error'),
+                'fence': live.get('fence'),
+                'prompt_tokens': live.get('prompt_tokens'),
+                'completion_tokens': live.get('completion_tokens'),
+                'reasoning_tokens': live.get('reasoning_tokens'),
+                'latency_s': live.get('latency_s'),
+                'price_card': live.get('price_card'),
+                'transport': live.get('transport'),
+                'transport_attempts': live.get('transport_attempts'),
+                'route_hint': done[k].get('route_hint'),
+                'store_write': done[k].get('store_write'),
+                'tm_fence_may_write': (done[k].get('tm_fence') or {}).get('may_write'),
+            })
+            print('  live %-24s route=%s skeleton=%s parse_ok=%s finish=%s'
                   % (k, done[k]['route_hint'],
-                     'yes' if done[k].get('ru_skeleton') else 'no'),
+                     'yes' if done[k].get('ru_skeleton') else 'no',
+                     live.get('parse_ok'), live.get('finish_reason')),
                   flush=True)
-    paths = []
-    for k in keys:
-        pack = done[k]
-        if run_gate:
-            # Free det_gate after draft — no Claude (map §3.1 step [2]).
-            apply_det_gate(
-                pack,
-                payload_card=payload_idx.get(k),
-                store_slot=(store_idx.get('by_key') or {}).get(k),
-            )
-            print('  gate %-24s ok=%s gate=%s issues=%d route=%s'
-                  % (k, pack['det']['ok'], pack['det']['gate'],
-                     len(pack['det']['issues']), pack['route_hint']),
-                  flush=True)
-        paths.append(write_pack(out_dir, pack))
+            pack = done[k]
+            if run_gate:
+                apply_det_gate(
+                    pack,
+                    payload_card=payload_idx.get(k),
+                    store_slot=(store_idx.get('by_key') or {}).get(k),
+                )
+                print('  gate %-24s ok=%s gate=%s issues=%d route=%s'
+                      % (k, pack['det']['ok'], pack['det']['gate'],
+                         len(pack['det']['issues']), pack['route_hint']),
+                      flush=True)
+            write_pack(out_dir, pack)
+            if live.get('fence') == '401/402':
+                fence_hit = k
+                for pending in futs:
+                    pending.cancel()
+                break
+    if fence_hit:
+        for k in pending_keys:
+            if k not in done:
+                p = next(x for x in packs if x['key1'] == k)
+                p['hard_flags']['notes'].append('live: skipped after 401/402 on %s' % fence_hit)
+                p['route_hint'] = 'full_worker'
+                p['store_write'] = False
+                done[k] = p
+                write_pack(out_dir, p)
+    paths = list(skipped_paths)
+    for k in pending_keys:
+        try:
+            from safe_filename import safe_name  # noqa: WPS433
+            stem = safe_name(k)
+        except Exception:  # noqa: BLE001
+            stem = k
+        path = os.path.join(out_dir, '%s.json' % stem)
+        if path not in paths:
+            paths.append(path)
     # Optional cost summary on stderr
     try:
         print('live cost: %s' % json.dumps(client.cost(), ensure_ascii=False), flush=True)
     except Exception:  # noqa: BLE001
         pass
+    if fence_hit:
+        raise SystemExit('REFUSE: DeepSeek 401/402 on %s' % fence_hit)
     return paths
 
 
@@ -1339,6 +1470,8 @@ def selftest() -> int:
             store_idx={'by_key': {}, 'all_keys': []}, input_dir=os.path.join(td, 'absent'))
         assert p_manifest['hard_flags']['no_pwg'] is False
         assert len(p_manifest['sense_inventory']) == 2
+        assert p_manifest['sense_inventory'][0].get('de_anchor'), \
+            'manifest DE skeleton must yield a non-null de_anchor (H2675)'
         assert p_manifest['source_evidence']['kind'] == 'execution_manifest'
         assert len(p_manifest['source_evidence']['sha256']) == 64
 
@@ -1468,6 +1601,12 @@ def selftest() -> int:
         # det_gate twin still green (returns 0 = all checks passed)
         assert det_gate.selftest() == 0
 
+        # H2675: --live must thread --manifest-authoritative + 32k cap.
+        import inspect
+        live_sig = inspect.signature(produce_live)
+        assert 'manifest_authoritative' in live_sig.parameters
+        assert ds.DEFAULT_MAX_TOKENS == 32768
+
     print('prep_pack selftest: PASS (fill + free det_gate no-Claude, R4.3a fence)')
     return 0
 
@@ -1502,6 +1641,8 @@ def main(argv=None) -> int:
                     help='key-only skeleton, ignore store/payload content')
     ap.add_argument('--live', action='store_true',
                     help='fill + Flash optional draft; still sidecar-only')
+    ap.add_argument('--journal', default=None,
+                    help='append one JSON object per --live HTTP call (JSONL)')
     ap.add_argument('--no-gate', action='store_true',
                     help='skip free det_gate (default: always run, no Claude)')
     ap.add_argument('--gate-only', action='store_true',
@@ -1582,7 +1723,9 @@ def main(argv=None) -> int:
     if args.live:
         paths = produce_live(keys, args.out_dir, model, args.env_file,
                              payload_idx, store_idx, workers=args.workers,
-                             input_dir=input_dir, run_gate=run_gate)
+                             input_dir=input_dir, run_gate=run_gate,
+                             manifest_authoritative=args.manifest_authoritative,
+                             journal_path=args.journal)
         mode = 'live'
     elif args.dry:
         paths = produce_dry(keys, args.out_dir, model, run_gate=run_gate)

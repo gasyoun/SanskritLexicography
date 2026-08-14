@@ -1,0 +1,194 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "api",
+ "produced_at": 1786671525,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "live",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  },
+  "live_call": {
+   "ok": true,
+   "parse_ok": true,
+   "latency_s": 91.58,
+   "error": null,
+   "fence": null,
+   "prompt_tokens": 478,
+   "completion_tokens": 7880,
+   "reasoning_tokens": 7830,
+   "finish_reason": "stop",
+   "max_tokens": 32768,
+   "price_card": "pre-1608",
+   "transport": "openai-sdk-stream",
+   "transport_attempts": 1
+  }
+ },
+ "sense_inventory": [
+  {
+   "i": 0,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 1,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 2,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 3,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 4,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 5,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 6,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 7,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 8,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 9,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 10,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 11,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 12,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 13,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 14,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 15,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 16,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 17,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 18,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 19,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 20,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  }
+ ],
+ "source_evidence": {
+  "kind": "execution_manifest",
+  "locator": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography-h2675-10008\\RussianTranslation\\experiments\\H2675_w1_prep\\H2675_first200.manifest.json",
+  "sha256": "d3fef39f144e6ee08978f4486bd3fa8be67fa96924b2e372ee7d95afea756a4c",
+  "manifest_sha256": "0d2cc65af3ed4a74d4177a8705aaa783276ccd25db807b79fb54ed7a0cba8f31"
+ },
+ "tm_fuzzy_hits": [
+  {
+   "rank": 1,
+   "key1": "apta",
+   "score": 0.571,
+   "match_type": "key1_difflib",
+   "n_store_rows": 3,
+   "ru_preview": "{#apta#}¦ (от 2. {#ap#}) <lex>adj.</lex> {%водянистый%}, <ab>s.</ab> {#anapta#}.",
+   "reuse_hint": "fuzzy_neighbor",
+   "evidence_sha256": "156812681d4da7f0bb66c9ac4755da4edbcaeab002d38509a531995cb67655d0",
+   "may_auto_reuse": false,
+   "advisory_only": true,
+   "decision_authority": "promoter_only"
+  }
+ ],
+ "compound_candidates": [],
+ "citation_normalize": [],
+ "hard_flags": {
+  "polysemy": true,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=execution_manifest",
+   "polysemy: n_senses=21 >= 6",
+   "no German sense definitions provided; cannot produce ru_skeleton",
+   "n_senses=21 but only 12 sense objects supplied"
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "park",
+ "det": {
+  "ok": false,
+  "gate": "prep",
+  "issues": [
+   "prep: sense_inventory present but every de_anchor is empty"
+  ],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 886,
+  "source_senses": 21,
+  "had_draft_card": false
+ },
+ "tm_fence": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "step": "[4] same promoter + TM fence",
+  "note": "TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM",
+  "n_hits_ranked": 1
+ },
+ "store_write": false
+}
