@@ -4,6 +4,25 @@ _Created: 09-07-2026 · Last updated: 14-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 14-08-2026 — H2702 (Grok 4.6) — cache-economy contract foundation
+
+Grok 4.6 (`grok-4.6`). Zero paid/provider calls. Canonical store/TM hashes unchanged.
+
+| Gate | Result |
+|---|---|
+| `cache_contract_selftest.py` | **6/6 PASS** (identity, compiler, migrate, ledger, reuse, scheduler) |
+| `pytest tests/test_pwg_cache_economy.py` | **7/7** |
+| `det_gate` / `prep_pack` / `translation_memory` / `deepseek_arm` | PASS |
+| `headless_worker_selftest` | PASS |
+| `window_selftest` | **211/211** |
+| `lang_parity_check` | 97 entries, no drift |
+| `git diff --check` | clean |
+| Canonical store SHA-256 | `811bbc216e53e8ae7f5393e854f496a9597eb723ccc6383f339f90bd8aa6c97f` (equal) |
+| Canonical TM card / frag / denylist | equal to frozen baseline |
+| Paid calls | **0** |
+
+Baseline: [experiments/pwg_cache_economy/baseline/manifest.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/baseline/manifest.json).
+
 ## 14-08-2026 — H2685 (Grok 4.6) — Track C four-format lossless pack
 
 Grok 4.6 (`grok-4.6`). Canonical JSONL source only. No PWG/csl-orig writes.
