@@ -1,0 +1,33 @@
+{
+  "schema": "pwg.tm.qe.receipt.v1",
+  "labse": {
+    "backend": "labse",
+    "available": false,
+    "model": "sentence-transformers/LaBSE",
+    "labelled_as_comet": false,
+    "mock": false,
+    "reason": "LaBSE embedder failed to load",
+    "score_space": "cosine mapped by (c+1)/2 into [0,1]; Spearman uses ranks"
+  },
+  "comet": {
+    "backend": "comet",
+    "available": false,
+    "model": "Unbabel/wmt22-cometkiwi-da",
+    "labelled_as_comet": false,
+    "mock": false,
+    "reason": "unbabel-comet: no cp314 numpy wheel + no local compiler; HF Inference API: gated checkpoint, not used as a silent fallback"
+  },
+  "proxy_rho_preliminary": -0.0351,
+  "repair": "labse failed (process-local load); deepseek-v4-flash judge serves",
+  "deepseek": {
+    "available": true,
+    "key_src": "file",
+    "model": "deepseek-v4-flash",
+    "probe_quality": 1.0,
+    "probe_equivalence": "correct",
+    "ledger_calls": 1,
+    "cost_usd": 5.216e-05,
+    "error": null
+  },
+  "active_backend": "deepseek"
+}

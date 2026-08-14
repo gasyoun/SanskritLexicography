@@ -4,6 +4,24 @@ _Created: 09-07-2026 · Last updated: 14-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 14-08-2026 — H2686 (Grok 4.6) — genuine QE + live retrieval A/B
+
+Grok 4.6 (`grok-4.6`). Backend repair: LaBSE WinError 1455 → DeepSeek `deepseek-v4-flash`. Wave 1 not rewritten. No mocks reported as results.
+
+| Gate | Result |
+|---|---|
+| Active QE | `deepseek` / `deepseek-v4-flash` (not comet) |
+| Gold slice | n=80 of `grade_gold.jsonl` sha256 `72c28293…` |
+| Spearman ρ | **0.4195** (floor 0.40, DEFENSIBLE) |
+| Mean A / B / C | 0.9241 / 0.8465 / 0.5295 |
+| Proxy (same gold) | ρ=**-0.0351** preliminary, unchanged |
+| Frozen batch | 9 cards (3 gloss + 3 formula + 3 sense); 156 copy-through excluded |
+| no-TM vs TM quality | 0.590 → **0.800** |
+| serious error | 6/9 → 5/9 |
+| mean edit | 0.609 → 0.471 |
+| Cost / calls | **$0.004138** / 36 / price card `pre-1608` |
+| `pytest tests/test_tm_semantic_qe_retrieval.py` | 6/6 |
+
 ## 14-08-2026 — H2702 (Grok 4.6) — cache-economy contract foundation
 
 Grok 4.6 (`grok-4.6`). Zero paid/provider calls. Canonical store/TM hashes unchanged.
