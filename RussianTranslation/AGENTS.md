@@ -20,9 +20,11 @@ pipeline, with article-comparison Russian review work as the secondary track.
 - **Paid headless calls run from a BARE cwd, one card per call** (02-08-2026,
   measured). The CLI injects `CLAUDE.md` + git state into its cache prefix, so a
   repo cwd costs **+33 % money and +30 % wall clock** per call for nothing. The
-  per-call cache is re-created every time and never reused — that is the route's
-  floor, not a tuning target, and **batching does not fix it** (it also destroys
-  per-card cost attribution for the whole batch). Full rules:
+  current CLI can reuse a preceding call's prefix (H2250, CLI v2.1.223: six later
+  calls reused it, five with zero new creation), but misses are possible and not
+  explained by elapsed time alone. Budget the cold write and never make a run
+  depend on a hit. **Batching is still not the fix** because wall time and
+  per-card attribution bind. Full rules:
   [`src/pilot/RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
   § Current operating truth.
 
