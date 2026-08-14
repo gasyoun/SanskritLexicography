@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 14-08-2026 (`pwg_transport_comparison_20260811`: INTENTIONAL-DIVERGENCE. The reusable transport, reservation, and sealed-evidence mechanics are language-neutral, but this qualification command deliberately freezes the existing PWG→RU canary and its Cyrillic/no-ё deterministic audit. An EN route qualification requires its own frozen canary and audit contract. H2683 restamped H2674 stream-client hashes on SHARED entries that already drifted on master.)_
+_Created: 04-07-2026 · Last updated: 14-08-2026 (`pwg_tm_grok46_wave1_generate_h2684`: INTENTIONAL-DIVERGENCE. Wave-1 Grok 4.6 fragment TM is German→Russian only; default headless/EN routes stay untouched. An EN fragment wave needs its own prompt and independent judge.)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -2073,6 +2073,26 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/workflow_payload.py": "8be24a3096a17e69d62304e2352f1062a997f05d56b0952de99f9f8cf362409f"
+    }
+  },
+  {
+    "id": "pwg_tm_grok46_wave1_generate_h2684",
+    "mechanism": "Opt-in Grok 4.6 PWG TM fragment runner with deterministic promotion gates and an independent 400-fragment sample apparatus that refuses Grok self-scores",
+    "files": [
+      "src/pwg_tm_generate.py",
+      "src/pwg_tm_gates.py",
+      "src/pwg_tm_quality.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "INTENTIONAL-DIVERGENCE",
+    "note": "H2684 Track B is the Wave-1 German to Russian fragment TM route. The runner is opt-in via --route grok-4.6 and does not change default headless or EN production routes. An EN fragment wave needs its own prompt, residue gate, and independent judge packet; it is not a silent same-session port.",
+    "tracking": "H2684",
+    "verified_sha256": {
+      "src/pwg_tm_generate.py": "650aeaf7beca45467ca40b4a3b2276bdbbe4739f3d16a1e1976643db8333e2b9",
+      "src/pwg_tm_gates.py": "bba9ba290b16220a64a59602889cda105f29704fde3c35191408bcd147ae7331",
+      "src/pwg_tm_quality.py": "837112b2f6917c977a4d471f5a5ab0022a57743be06e89e025997f1ce2b3b765"
     }
   }
 ]

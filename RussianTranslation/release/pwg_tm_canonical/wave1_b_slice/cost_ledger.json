@@ -1,0 +1,19 @@
+{
+  "schema": "pwg.tm.generate.cost.v1",
+  "model_id": "grok-4.6",
+  "route_id": "grok-4.6",
+  "prompt_sha256": "55ae95622093169a50ad2a622ba6c083dcecece256c0b49a76da59b8465b4c38",
+  "pipeline_version": "pwg_tm_generate.v1",
+  "rate_card": {
+    "input_per_m": 3.0,
+    "output_per_m": 15.0,
+    "source": "operator-estimate-pending-invoice",
+    "model": "grok-4.6"
+  },
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0,
+  "cost_evaluable": false,
+  "calls": 65,
+  "note": "tokens authoritative; USD is list estimate unless invoiced"
+}

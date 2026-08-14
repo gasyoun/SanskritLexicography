@@ -1,0 +1,61 @@
+{
+  "schema": "pwg.tm.generate.reconciliation.v1",
+  "manifest_sha256": "f024ec4b0b2e58f75868462d84fd51858e4de473d07c0dd825a487f3b73d952a",
+  "route_id": "grok-4.6",
+  "model_id": "grok-4.6",
+  "prompt_sha256": "55ae95622093169a50ad2a622ba6c083dcecece256c0b49a76da59b8465b4c38",
+  "pipeline_version": "pwg_tm_generate.v1",
+  "gate_version": "pwg.tm.gate.v1",
+  "queue_keys": 5000,
+  "processed_keys": 10,
+  "missing_source_keys": [],
+  "promoted_fragments": 679,
+  "quarantine_fragments": 55,
+  "silent_drops": 0,
+  "unaccounted_promotions": 0,
+  "promotion_status_counts": {
+    "promoted": 679,
+    "quarantine": 55
+  },
+  "by_class_promoted": {
+    "citation": 328,
+    "example": 164,
+    "grammar_label": 29,
+    "sense": 29,
+    "definition_gloss": 63,
+    "recurring_formula": 66
+  },
+  "by_class_quarantine": {
+    "sense": 51,
+    "definition_gloss": 4
+  },
+  "ledger": {
+    "schema": "pwg.tm.generate.cost.v1",
+    "model_id": "grok-4.6",
+    "route_id": "grok-4.6",
+    "prompt_sha256": "55ae95622093169a50ad2a622ba6c083dcecece256c0b49a76da59b8465b4c38",
+    "pipeline_version": "pwg_tm_generate.v1",
+    "rate_card": {
+      "input_per_m": 3.0,
+      "output_per_m": 15.0,
+      "source": "operator-estimate-pending-invoice",
+      "model": "grok-4.6"
+    },
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0,
+    "cost_evaluable": false,
+    "calls": 65,
+    "note": "tokens authoritative; USD is list estimate unless invoiced"
+  },
+  "ok": true,
+  "fill_stats": {
+    "reuse_exact": 0,
+    "deterministic": 587,
+    "drafted": 65,
+    "sense_merge": 42,
+    "unfilled": 40
+  },
+  "extracted_fragments": 734,
+  "accounted_fragments": 734
+}

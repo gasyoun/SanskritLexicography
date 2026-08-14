@@ -1,0 +1,29 @@
+{
+  "schema": "pwg.tm.generate.slice.v1",
+  "slice_id": "h2684-first-compact-10",
+  "wave": 1,
+  "route_id": "grok-4.6",
+  "model_id": "grok-4.6",
+  "frozen_manifest_sha256": "f024ec4b0b2e58f75868462d84fd51858e4de473d07c0dd825a487f3b73d952a",
+  "keys": [
+    "BAvya",
+    "Aqambara",
+    "Ayuta",
+    "Sabara",
+    "Antara",
+    "jambuka",
+    "AlAna",
+    "AhAva",
+    "Ayuzmant",
+    "akzama"
+  ],
+  "strata": {
+    "attested_high": ["BAvya", "Aqambara"],
+    "lexical_core": ["Ayuta", "Sabara"],
+    "rare_attested": ["Antara", "jambuka"],
+    "complex": ["AlAna", "AhAva"],
+    "index_tail": ["Ayuzmant", "akzama"]
+  },
+  "draft_origin": "session-drafted Grok 4.6 (grok-4.6); no xAI HTTP call",
+  "independent_gate": "not_run"
+}
