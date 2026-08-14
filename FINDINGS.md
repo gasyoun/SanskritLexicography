@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 13-08-2026 (§530 — "whole-card lane" means un-split, not one-call-per-card: production still batches whole cards, so a one-card-per-call rig's absolute figures are not production figures)_
+_Created: 26-06-2026 · Last updated: 14-08-2026 (§531 — *ārṣa prayoga* is a one-way licence: it excuses a deviant form in a POST-Vedic text by appeal to ancient usage and never authorises describing Vedic material in classical or epic terms; `ārṣa` in Pāṇini A 2.4.58 is a *taddhita* affix class, not an exemption; epic Sanskrit has no recorded accent at all; §530 — "whole-card lane" means un-split, not one-call-per-card: production still batches whole cards, so a one-card-per-call rig's absolute figures are not production figures)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §530) whatever its section, so existing numbers never shift; when a finding is later
+(currently §532) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -245,6 +245,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§527. A schema selftest written from the schema's own constants is blind to a prompt/schema contradiction — the defect it cannot see is exactly the one that burns a paid call](#527-a-schema-selftest-written-from-the-schemas-own-constants-is-blind-to-a-promptschema-contradiction--the-defect-it-cannot-see-is-exactly-the-one-that-burns-a-paid-call) — 24/24 offline cases passed, then the last authorised call failed `malformed_output` because prompt and schema disagreed on one literal; generate shared literals from the fixture once and selftest an instance built from the prompt's own text. Also: `gateway_attestation.py`'s `isSidechain` default yields `null` on harnesses that log Agent calls as main turns, and refused Agent blocks must not be counted as spent calls.
 - 🔴 [§528. A top-band-only gold set for BLI reports 99.5% coverage and hides a 0%–100% per-stratum spread — the instrument cannot see what the research question asks](#528-a-top-band-only-gold-set-for-bli-reports-995-coverage-and-hides-a-0100-per-stratum-spread--the-instrument-cannot-see-what-the-research-question-asks) — H1521's top-400-by-frequency gold set could only sample the 0.96–1.00 end of a presence range that runs down to 0.00 (band-1 VERB); the stratified 500-row frame measures 64.2% frame-wide. Report per-stratum presence beside any aggregate — a near-zero cell yields coverage evidence but no P@1 signal.
 - 🔴 [§529. An Agent result already carries the exact dispatch binding; widening a transcript window throws that evidence away](#529-an-agent-result-already-carries-the-exact-dispatch-binding-widening-a-transcript-window-throws-that-evidence-away) — one `tool_use.id` links to one `tool_result.tool_use_id`, whose structured `toolUseResult` carries completion status, resolved model, agent id, and usage. Bind that pair plus the ticket prompt hash; main/sidechain becomes observed metadata, adjacent turns become irrelevant, and legacy window attestations stay explicitly non-dispatch-scoped.
+- 🔴 [§531. *Ārṣa prayoga* is a one-way licence — it excuses a deviant form in a POST-Vedic text by appeal to ancient usage, and never authorises describing Vedic material in classical or epic terms](#531-ārṣa-prayoga-is-a-one-way-licence--it-excuses-a-deviant-form-in-a-post-vedic-text-by-appeal-to-ancient-usage-and-never-authorises-describing-vedic-material-in-classical-or-epic-terms) — Pāṇini's `chandasi`-marked architecture, the Mahābhāṣya's `na hy eṣā iṣṭiḥ` rejecting even the reverse transfer, "classical aorist" as a category error, Nīlakaṇṭha stopping at meaning. Three carry-forward facts: `ārṣa` at A 2.4.58 is a *taddhita* affix class, not an exemption; the epic licence is Prakrit-contact/metri-causa, **not** archaism (Oberlies); epic Sanskrit has no recorded accent at all.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -5793,3 +5794,57 @@ but the absolutes do not, and a receipt that quotes them as production cost is w
 first and assuming the second is the error.
 
 > Opus 5 (`claude-opus-5`) · 13-08-2026 · [H2630 (Opus 5) — PREP compare Option A: 4 pairs on the 4 whole-card cards](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2630-Opus_SanskritLexicography_prep-compare-whole-card-4-pairs-option-a_13.08.26.md) · evidence: [h2630/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h1210/h2630/README.md) · [PR #1670](https://github.com/gasyoun/SanskritLexicography/pull/1670). Sealed into the plan's `known_non_equivalences`, so a later reader of `plan.json` cannot re-make the inference.
+
+### §531. *Ārṣa prayoga* is a one-way licence — it excuses a deviant form in a POST-Vedic text by appeal to ancient usage, and never authorises describing Vedic material in classical or epic terms
+
+The tempting move, when an automated reviewer or a rubric flags "classical rules applied to a
+Ṛgvedic hymn", is to answer that the tradition itself legitimises such deviations — «язык
+аршея», the language of the ṛṣis, by which the Rāmāyaṇa's departures from Pāṇini are excused.
+**That defence does not reach the Vedic direction.** Four independent grounds, none of which
+depends on the others:
+
+1. **Pāṇini's architecture makes Vedic the *marked* domain.** The Aṣṭādhyāyī's default object is
+   the *bhāṣā*; Vedic material enters only under explicit domain markers (`chandasi`, `mantre`,
+   `nigame`, `brāhmaṇe`) plus open variation rules — `bahulaṃ chandasi`, `chandasi śāyaj api`
+   (3.1.84), `vyatyayo bahulam` (3.1.85). Rules run classical → *extended to* → Vedic; nothing
+   projects classical norms back onto the Veda as a standard it must meet (Bronkhorst,
+   [*Pāṇini and the Veda reconsidered*](https://www.researchgate.net/publication/263470324_Panini_and_the_Veda_reconsidered)).
+2. **The tradition's one explicit rule about direction is a prohibition, and it runs the other
+   way.** The Mahābhāṣya cites `chandovat kavayaḥ kurvanti` — "poets do as in the Veda" — and
+   rejects it: `na hy eṣā iṣṭiḥ`, Vedicizing in non-Vedic language is a *doṣa* (Kawamura,
+   *JIBS* 65.3 (2017): 1059–1065). A tradition that refuses even Vedic→classical transfer a
+   fortiori licenses no classical→Vedic one.
+3. **The categories are not there to be applied.** RV has a productive subjunctive (*leṭ*), an
+   injunctive, a large infinitive inventory and a living aorist with distinct functions — lost or
+   vestigial in classical Sanskrit (Whitney, chs. VIII, XI). "Classical aorist" in an RV verse
+   names a category the classical language does not possess in that function: a **category
+   error, not a liberty**.
+4. **The boldest traditional Veda→epic reader stops short of it.** Nīlakaṇṭha Caturdhara
+   (*Mantrarāmāyaṇa*, *Mantrabhāgavata*, Harivaṃśa commentary) reads epic *meaning* into ~60 RV
+   verses and never claims RV *morphology* follows classical rules (Minkowski, HAZU 2005).
+
+**Three facts worth carrying separately from the ruling.** (a) **`ārṣa` in Pāṇini is not this
+concept at all** — it occurs once, at **A 2.4.58**, as a label for a *taddhita* affix class
+denoting descent from a ṛṣi; in the Prātiśākhya/Bhāṣya layer it names the *Saṃhitā* text against
+the *padapāṭha*. The "exempted despite the rules" sense is a later commentarial extension, so
+citing Pāṇini for the exemption is itself an anachronism. (b) **An attested instance of the
+excuse-move**, verbatim: Śrīdhara Svāmin's *Bhāvārthadīpikā* glosses `hari-viriñci-hareti
+saṃjñāḥ` with `sandhiḥ ārṣaḥ` — "the sandhi is that of the ṛṣis" (*hara* + *iti* → *hareti*);
+verse number unconfirmed, the quotation attested. (c) **Where the epic licence actually comes
+from**: epic deviations are "generally considered to be on account of interference from Prakrits,
+or innovations, and **not** because they are pre-Pāṇinian" (Oberlies, *A Grammar of Epic
+Sanskrit*, de Gruyter 2003, via reviews). So a style rule or passport clause that grants epic
+latitude must call it epic-specific (metri causa, Middle-Indic contact) and must **not** claim
+the deviations are archaisms.
+
+**Also load-bearing for any epic-vs-Vedic checker:** *epic Sanskrit has no recorded accent at
+all*. A claim that a hymn's accent follows «нормы эпического языка» is not a debatable
+periodisation — it describes a norm that does not exist.
+
+**Not verified, do not report as settled:** the exact Mahābhāṣya locus of `chandovat kavayaḥ
+kurvanti | na hy eṣā iṣṭiḥ` (known via Kawamura 2017; PDFs 403'd); any named MBh verse where
+Nīlakaṇṭha writes *ārṣa* (his commentary is not searchable text); any named Rām verse where
+Govindarāja or Maheśvaratīrtha does; Oberlies' own pages on *ārṣa*; the verse number of the
+Śrīdhara gloss.
+
+> Opus 4.8 (`claude-opus-4-8`) evidence pass 19-07-2026 · written up by Opus 5 (`claude-opus-5`) 14-08-2026 · [H1325 (Opus 5) — does *ārṣa prayoga* invalidate the `vedic-classical-anachronism` gold-case rubric](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1325-Opus_RuWritingStyles_arsa-prayoga-vedic-gold-case-validity_19.07.26.md) · ruling: [RuWritingStyles docs/arsa-prayoga-vedic-gold-case-ruling.md](https://github.com/gasyoun/RuWritingStyles/blob/main/docs/arsa-prayoga-vedic-gold-case-ruling.md) · [PR #157](https://github.com/gasyoun/RuWritingStyles/pull/157). Hypothesis `R2607-05` in [QUESTIONS_LOG.md](https://github.com/gasyoun/Uprava/blob/main/QUESTIONS_LOG.md) resolves **refuted**. The eval-methodology half — a rubric that names one of two planted claims — is [Uprava FINDINGS §386](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md).
