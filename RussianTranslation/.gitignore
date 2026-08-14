@@ -64,8 +64,8 @@ src/pilot/translation_memory.denylist.jsonl
 # via `python src/pwg_tm_fragmentize.py` and is not a git deliverable.
 release/pwg_tm_canonical/fragments.v1.jsonl
 
-# H2684 full-wave generate dumps (resume locally). The first compact slice
-# under wave1_b_slice/ is the committed receipt.
+# H2684 full-wave generate dumps (resume locally). Compact receipt is
+# wave1_b_receipt/; the first slice remains under wave1_b_slice/.
 release/pwg_tm_canonical/wave1_b/
 
 # Max workflow run output and A/B transcript artifacts (not deliverables)
