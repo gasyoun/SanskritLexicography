@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.53] - 2026-08-14
+- **H2756 Flash PREP one-shot vs incremental warm** (Grok 4.6 `grok-4.6`, 14-08-2026): fresh 50-miss Flash pairs, 99/100 parseable, $0.038405; same-card save **0.2%** (ratio-of-means, CI includes 0) → **INCONCLUSIVE**. Not “no economy”. H2704 product NO-GO unchanged. [REPORT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2756_flash/REPORT.md). Residual of [H2754](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2754-Grok_SanskritLexicography_pwg-cache-flash-oneshot-vs-warm_14.08.26.md) after title-collision on [#1713](https://github.com/gasyoun/SanskritLexicography/pull/1713).
+
 ## [1.144.52] - 2026-08-14
 - **H2703/H2704 cache-economy conclusions** (Grok 4.6 `grok-4.6`, 14-08-2026): Flash PREP **−3.9%** vs H2675 ($0.000839 vs $0.000873) is a real point-estimate; same-card warm save **9.9%** with CI crossing zero; Pro pair **+39.6%** is too expensive and pair-as-denominator. Product NO-GO stands; do not treat Flash as zero. [CONCLUSIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/CONCLUSIONS.md). Residual [H2754](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2754-Grok_SanskritLexicography_pwg-cache-flash-oneshot-vs-warm_14.08.26.md).
 
