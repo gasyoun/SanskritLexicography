@@ -8,7 +8,7 @@ The plan and CI fix merged in [PR #1685](https://github.com/gasyoun/SanskritLexi
 
 1. [H2702 (Grok 4.6) — PWG cache economy residual A: provider-neutral contracts, identity, migration, and ledger](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2702-Grok_SanskritLexicography_pwg-cache-economy-contract-foundation_14.08.26.md)
 2. [H2703 (Grok 4.6) — PWG cache economy residual B: exact-request generation cold/warm proof](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2703-Grok_SanskritLexicography_pwg-cache-economy-generation-cold-warm_14.08.26.md), blocked until H2702 merges
-3. [H2704 (Grok 4.6) — PWG cache economy residual C: PREP/TM proof, bounded L3, and adoption verdict](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2704-Grok_SanskritLexicography_pwg-cache-economy-prep-tm-adoption-verdict_14.08.26.md), blocked until H2703 merges
+3. [H2704 (Grok 4.6) — PWG cache economy residual C: PREP/TM proof, bounded L3, and adoption verdict](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2704-Grok_SanskritLexicography_pwg-cache-economy-prep-tm-adoption-verdict_14.08.26.md) — executed 14-08-2026: PREP 100/100 and L3 192/200 parseable; **NO-GO** on the 20% economy floor. Receipt: [h2704_prep/REPORT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2704_prep/REPORT.md).
 
 ## Goal
 

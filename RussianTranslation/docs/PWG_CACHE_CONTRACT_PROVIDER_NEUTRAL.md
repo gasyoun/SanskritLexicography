@@ -2,7 +2,7 @@
 
 _Created: 14-08-2026 · Last updated: 14-08-2026_
 
-Operating contract for [H2702 (Grok 4.6) — PWG cache economy residual A: provider-neutral contracts, identity, migration, and ledger](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2702-Grok_SanskritLexicography_pwg-cache-economy-contract-foundation_14.08.26.md). Paid generation proof is [H2703 (Grok 4.6) — PWG cache economy residual B: exact-request generation cold/warm proof](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2703-Grok_SanskritLexicography_pwg-cache-economy-generation-cold-warm_14.08.26.md). PREP/TM and adoption stay in H2704.
+Operating contract for [H2702 (Grok 4.6) — PWG cache economy residual A: provider-neutral contracts, identity, migration, and ledger](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2702-Grok_SanskritLexicography_pwg-cache-economy-contract-foundation_14.08.26.md). Paid generation proof is [H2703 (Grok 4.6) — PWG cache economy residual B: exact-request generation cold/warm proof](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2703-Grok_SanskritLexicography_pwg-cache-economy-generation-cold-warm_14.08.26.md). PREP/TM census, Flash pairs, conditional L3, and the ADOPT/NO-GO decision are [H2704 (Grok 4.6) — PWG cache economy residual C: PREP/TM proof, bounded L3, and adoption verdict](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2704-Grok_SanskritLexicography_pwg-cache-economy-prep-tm-adoption-verdict_14.08.26.md). Extraction stays on paper: [PWG_CACHE_EXTRACTION_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PWG_CACHE_EXTRACTION_PLAN.md).
 
 Plan index: [PWG cache economy](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_PWG_CACHE_ECONOMY_2026Q3.md).
 
@@ -20,7 +20,7 @@ One request is identified by the SHA-256 of a canonical JSON object (UTF-8, no B
 
 Timestamps, secrets, filesystem paths, run ids, connection ids, and retry ordinals are excluded. A Windows path cannot change the identity.
 
-The compiler wraps the existing Claude (`headless_worker.prompt_blocks`) and DeepSeek (`deepseek_arm.SYSTEM_TMPL` + `prep_slice`) builders. v0 reconstructs those payload bytes. Adapters may add transport headers; they may not reinterpret content.
+The compiler wraps the existing Claude (`headless_worker.prompt_blocks`), DeepSeek generation (`deepseek_arm.SYSTEM_TMPL` + `prep_slice`), and Flash PREP (`prep_pack.flash_messages`) builders. v0 reconstructs those payload bytes. Adapters may add transport headers; they may not reinterpret content.
 
 ## Modules
 
