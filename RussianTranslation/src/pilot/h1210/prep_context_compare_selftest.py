@@ -21,6 +21,7 @@ import json
 import os
 import sys
 import tempfile
+from unittest import mock
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -950,12 +951,23 @@ CASES = [
 
 def selftest() -> int:
     failed = []
-    for case in CASES:
-        try:
-            case()
-        except BaseException as exc:                          # noqa: BLE001
-            failed.append(case.__name__)
-            print('  FAIL %s -- %s: %s' % (case.__name__, exc.__class__.__name__, exc))
+    # The sealed comparison plans bind the resolved CLI argv identity.  Resolving it is a
+    # production concern, though: every case below injects its own caller and promises zero
+    # process/network activity.  CI deliberately has no Claude CLI, so give the hermetic
+    # matrix a stable sentinel identity and make an accidental spawn fail before it can hide
+    # behind whatever happens to be installed on the test host.
+    with mock.patch.object(pcc, 'claude_argv_prefix',
+                           return_value=['/hermetic/no-spawn/claude']), \
+            mock.patch.object(pcc.subprocess, 'run',
+                              side_effect=AssertionError(
+                                  'hermetic PREP selftest attempted a subprocess')):
+        for case in CASES:
+            try:
+                case()
+            except BaseException as exc:                      # noqa: BLE001
+                failed.append(case.__name__)
+                print('  FAIL %s -- %s: %s'
+                      % (case.__name__, exc.__class__.__name__, exc))
     if failed:
         print('prep_context_compare selftest: FAIL (%d/%d): %s'
               % (len(failed), len(CASES), ', '.join(failed)))
