@@ -1,0 +1,32 @@
+{
+  "kind": "legacy_deepseek_v0",
+  "card": {
+    "key1": "demo",
+    "card_block": "CARD-GRAMMAR\n\n=== CARD demo ===\n--- masked German (translatable only; {Tn}=masked span) ---\nein {%Gloss%}. {T1}\n--- portrait (evidence) ---\nportrait-bytes",
+    "complexity": {
+      "complex": false
+    }
+  },
+  "common": "PREAMBLE\nTRANSLATION RULES\nGRAMMAR\nNWS RULE",
+  "schema": {
+    "type": "object",
+    "required": [
+      "card",
+      "self_report"
+    ],
+    "properties": {
+      "card": {
+        "type": "object"
+      },
+      "self_report": {
+        "type": "object"
+      }
+    }
+  },
+  "extra": {
+    "requested_model": "deepseek-v4-pro"
+  },
+  "expected_system": "You are a scholarly PWG German->Russian dictionary translation worker.\nReturn ONE JSON object and nothing else. It must validate against this JSON Schema:\n{\"type\": \"object\", \"required\": [\"card\", \"self_report\"], \"properties\": {\"card\": {\"type\": \"object\"}, \"self_report\": {\"type\": \"object\"}}}\nRules that override any instinct to be helpful:\n- Emit valid JSON only. No prose, no markdown fence, no commentary.\n- `card` is the translated card; `self_report.unsure` is mandatory and must be true if you were not confident about any sense or placeholder in this card.\n- Every {Tn} placeholder in the source must appear verbatim, in order, in the sense's german AND its russian. Never invent a {Tn}. Never move source content into `notes` — that field is not restored and its content is lost.\nThe translation task itself follows in the user message; obey it exactly.",
+  "expected_user": "PREAMBLE\nTRANSLATION RULES\nGRAMMAR\nNWS RULECARD-GRAMMAR\n\n=== CARD demo ===\n--- masked German (translatable only; {Tn}=masked span) ---\nein {%Gloss%}. {T1}\n--- portrait (evidence) ---\nportrait-bytes",
+  "expected_request_id": "52e9f525d1125869e645d59afbfbe030d061c8ca73e904b6814e811971cd4173"
+}

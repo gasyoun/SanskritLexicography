@@ -1,12 +1,14 @@
 # Implementation — PWG prompt-cache economy
 
-_Created: 13-08-2026 · Last updated: 13-08-2026_
+_Created: 13-08-2026 · Last updated: 14-08-2026_
 
 Plan index: [PWG cache economy](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_PWG_CACHE_ECONOMY_2026Q3.md).
 
 ## Outcome and fences
 
 Wave 1 makes PWG generation and Flash PREP/TM retrieval measurable under one cache/economy contract. It may write only to an experimental TM namespace inside the sealed run directory. It does not change `DEFAULT_MODEL`, canonical store/TM, promotion allowlists, or sibling repositories; every generated artifact is `promotable: false`.
+
+H2702 (14-08-2026) landed steps 0–2 and 4–6 offline: baseline hashes, schemas, compiler/identity, converter, ledger, reuse, scheduler. Steps 3 and 8 (paid transport/canary/Q3/PREP) already shipped as H2674–H2676 and must not be rerun. Steps 7 and 9 wait on H2703/H2704.
 
 ## Ordered build
 

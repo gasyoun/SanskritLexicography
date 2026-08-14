@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sanskrit-lexicon.github.io/schemas/pwg_cache_run_manifest.schema.json",
+  "title": "PWG cache-economy sealed run manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "run_id",
+    "sealed",
+    "source_commit",
+    "cohort_sha256",
+    "pricing_version",
+    "n",
+    "call_ceiling",
+    "cost_ceiling_usd",
+    "requested_model",
+    "provider",
+    "retry_ladder",
+    "acceptance",
+    "namespaces",
+    "promotable",
+    "manifest_sha256"
+  ],
+  "properties": {
+    "schema": {"const": "pwg.cache_run_manifest.v1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "sealed": {"const": true},
+    "sealed_at": {"type": "string", "minLength": 1},
+    "source_commit": {"type": "string", "minLength": 1},
+    "baseline_manifest_sha256": {"type": ["string", "null"]},
+    "cohort_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "pricing_version": {"type": "string", "minLength": 1},
+    "n": {"type": "integer", "minimum": 0},
+    "call_ceiling": {"type": "integer", "minimum": 0},
+    "cost_ceiling_usd": {"type": "number", "minimum": 0},
+    "schedule_window": {"type": ["string", "null"]},
+    "requested_model": {"type": "string", "minLength": 1},
+    "provider": {"type": "string", "minLength": 1},
+    "retry_ladder": {"type": "array", "items": {"type": "string"}},
+    "acceptance": {"type": "object"},
+    "namespaces": {
+      "type": "object",
+      "required": ["experimental_tm", "canonical_tm", "canonical_store"],
+      "properties": {
+        "experimental_tm": {"type": "string", "minLength": 1},
+        "canonical_tm": {"type": "string", "minLength": 1},
+        "canonical_store": {"type": "string", "minLength": 1}
+      }
+    },
+    "schedule": {"type": "array"},
+    "promotable": {"const": false},
+    "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}
