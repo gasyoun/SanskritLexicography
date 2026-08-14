@@ -1,0 +1,83 @@
+{
+  "schema": "pwg.tm.priority.manifest.v1",
+  "wave": 2,
+  "limit": 5000,
+  "excluded_prior_wave_n": 5000,
+  "selected_count": 5000,
+  "universe_unique_k1": 94074,
+  "universe_index_rows": 98639,
+  "weights": {
+    "corpus_token_frequency": 0.4,
+    "corpus_attestation": 0.15,
+    "pwg_citation_degree": 0.15,
+    "predicted_fragment_reuse": 0.1,
+    "lexical_core_or_dcs": 0.1,
+    "stratification": 0.1
+  },
+  "quotas": {
+    "attested_high": 3600,
+    "lexical_core": 500,
+    "complex": 400,
+    "rare_attested": 300,
+    "index_tail": 200
+  },
+  "inputs": {
+    "headword_index": {
+      "path": "src/headword_index.tsv",
+      "sha256": "a9f4896d32e1cabac17316b743cb105034749ce68f35664c50454fcad896aa53",
+      "rows": 98639,
+      "unique_k1": 94074
+    },
+    "pwg_freq_order": {
+      "path": "src/pwg_freq_order.tsv",
+      "sha256": "bc87ed97b91c9f8325335504876925045af7f804a1b7a97ca03d981177019a8e",
+      "rows": 94074
+    },
+    "lexical_cores": {
+      "pril10": {
+        "path": "src/pilot/lexical_cores/pril10.slp1.txt",
+        "sha256": "d8fddbee13dcf6277dfaa59dbf7ac6a23cf72342cd9ba91199db7161d0083d5c",
+        "size": 435
+      },
+      "pril5": {
+        "path": "src/pilot/lexical_cores/pril5.slp1.txt",
+        "sha256": "7da336f2fcaca4eef4b4efe032a80c35b386fc0dd04a99112cfbfa855f64244a",
+        "size": 6337
+      },
+      "sbornoe": {
+        "path": "src/pilot/lexical_cores/sbornoe.slp1.txt",
+        "sha256": "890122981a8796b7b9de77ff741e4e92f1ddcd61c9ea2c3a127295b12ef81ecd",
+        "size": 7120
+      }
+    },
+    "pwg_sense_loci_sample": {
+      "path": "src/pwg_sense_loci.sample.tsv",
+      "sha256": "0f3dc321b3a03ddbe597865de38ddaf7a2700a4a3bae6cd09f452363ee4f8936",
+      "keys_with_loci": 484
+    },
+    "publication_tm": {
+      "path": "release/translation_memory/translation_memory.ru.publication.jsonl",
+      "sha256": "02a24c1eb8b1e1fb73a6991fca49b8350b0e470283c4c12c68a119ce15e16dc6"
+    }
+  },
+  "stratum_counts": {
+    "attested_high": 3600,
+    "rare_attested": 300,
+    "lexical_core": 119,
+    "complex": 400,
+    "index_tail": 200,
+    "composite_fill": 381
+  },
+  "attested_selected": 4999,
+  "core_selected": 887,
+  "exclusion_reason_counts": {
+    "wave1_immutable": 5000,
+    "below_cutoff": 14395,
+    "complex_quota_full": 9642,
+    "unattested_not_core": 60037
+  },
+  "excluded_count": 89074,
+  "excluded_keys_sha256": "010b5a366ad6fce96fc91ff28e22b8bc998d5384c4f734e0291828e53601ec34",
+  "selected_keys_sha256": "4d1bd63ca16bfe9bbbe28b9c02db0a1a4b4c7534eaf4d000f9cec27a36da6d39",
+  "manifest_sha256": "f9fdb4ff6155f2e945d4f26d5fdb07a7f96b36ad48537b5a0be43988b0335ff8"
+}

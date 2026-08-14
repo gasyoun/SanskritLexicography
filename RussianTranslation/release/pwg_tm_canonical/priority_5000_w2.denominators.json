@@ -1,0 +1,20 @@
+{
+  "index_rows": 98639,
+  "unique_k1": 94074,
+  "freq_matched": 34036,
+  "selected": 5000,
+  "stratum_counts": {
+    "attested_high": 3600,
+    "rare_attested": 300,
+    "lexical_core": 119,
+    "complex": 400,
+    "index_tail": 200,
+    "composite_fill": 381
+  },
+  "exclusion_reason_counts": {
+    "wave1_immutable": 5000,
+    "below_cutoff": 14395,
+    "complex_quota_full": 9642,
+    "unattested_not_core": 60037
+  }
+}

@@ -420,6 +420,11 @@ def run_arm(cards, translate_fn, judge_fn, tm_index=None, retrieve_k=RETRIEVE_K)
         else:
             rows_tm = tm_index.get('_rows') if isinstance(tm_index, dict) else tm_index
             context = retrieve_labse(card, rows_tm or [], k=retrieve_k)
+        try:
+            import pwg_tm_wave2_policy as W2
+            context = W2.filter_context(card, context)
+        except Exception:
+            pass
         if any((isinstance(c, dict) and c.get('retrieve_kind') == 'exact')
                or (isinstance(c, str) and c) for c in context):
             exact_reuse += 1
