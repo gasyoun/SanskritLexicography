@@ -205,11 +205,22 @@ def write_freeze(path, baseline):
 
 
 def canonical_snapshot(baseline=None):
-    payload = baseline or freeze.build_manifest()
-    return {
-        row['label']: row.get('sha256')
-        for row in payload.get('canonical') or []
-    }
+    """Rehash only the four canonical files. Do not reread the whole tracked tree."""
+    rows = (baseline or {}).get('canonical') if baseline else None
+    if not rows:
+        payload = freeze.build_manifest()
+        rows = payload.get('canonical') or []
+    out = {}
+    for row in rows:
+        label = row.get('label')
+        path = row.get('resolved')
+        if not label:
+            continue
+        if path and os.path.isfile(path):
+            out[label] = ident.sha256_file(path)
+        else:
+            out[label] = row.get('sha256')
+    return out
 
 
 def usage_from_rec(rec):
@@ -395,20 +406,33 @@ class PairRunner:
     def load_resume(self):
         events = self.led.load()
         done = ledger.completed_pair_slots(events)
+        pending_cold = {}
         for event in events:
             if event.get('kind') != 'terminal_response':
                 continue
             rid = event.get('request_id')
             cw = event.get('cold_warm')
-            if rid and cw:
-                self.slot_outputs[(rid, cw)] = event
-            if is_parseable_event(event):
+            if not rid or cw not in ('cold', 'warm'):
+                continue
+            detail = event.get('detail') or {}
+            slim = {
+                'parseable': bool(detail.get('parseable')),
+                'det_clean': bool(detail.get('det_clean')),
+                'card': detail.get('card') if cw == 'cold' and (rid, 'warm') not in done else None,
+            }
+            self.slot_outputs[(rid, cw)] = slim
+            if slim['parseable']:
                 self.parseable += 1
-            elif cw in ('cold', 'warm'):
+            else:
                 self.unparseable += 1
             cost = event.get('observed_cost_usd')
             if event.get('cost_evaluable') and cost is not None:
                 self.spent_usd += float(cost)
+            if cw == 'cold' and slim['card'] is not None:
+                pending_cold[rid] = slim
+        for rid, slim in pending_cold.items():
+            if (rid, 'warm') in done:
+                slim['card'] = None
         return done
 
     def assert_canonical_unchanged(self):
@@ -505,7 +529,7 @@ class PairRunner:
         blind = None
         if slot['cold_warm'] == 'warm':
             cold_ev = self.slot_outputs.get((slot['request_id'], 'cold'))
-            cold_card = ((cold_ev or {}).get('detail') or {}).get('card')
+            cold_card = (cold_ev or {}).get('card')
             if parsed['card_out'] is not None and cold_card is not None:
                 blind = pair_compare.compare_blind(cold_card, parsed['card_out'])
         detail = {
@@ -553,7 +577,15 @@ class PairRunner:
             'accepted_artifact': bool(parsed['det_clean'] and parsed['parseable']),
             'detail': detail,
         }, terminal=True)
-        self.slot_outputs[(slot['request_id'], slot['cold_warm'])] = event
+        self.slot_outputs[(slot['request_id'], slot['cold_warm'])] = {
+            'parseable': parsed['parseable'],
+            'det_clean': parsed['det_clean'],
+            'card': parsed.get('card_out') if slot['cold_warm'] == 'cold' else None,
+        }
+        if slot['cold_warm'] == 'warm':
+            prior = self.slot_outputs.get((slot['request_id'], 'cold'))
+            if prior:
+                prior['card'] = None
         resp_path = os.path.join(
             self.run_dir, 'responses',
             '%s.%s.json' % (slot['request_id'], slot['cold_warm']))
@@ -632,9 +664,12 @@ def main(argv=None):
     args = ap.parse_args(argv)
 
     os.makedirs(EXP_DIR, exist_ok=True)
-    baseline = freeze.build_manifest()
     freeze_path = os.path.join(EXP_DIR, 'freeze.json')
-    freeze_body = write_freeze(freeze_path, baseline)
+    if os.path.isfile(freeze_path):
+        with open(freeze_path, encoding='utf-8') as handle:
+            freeze_body = json.loads(handle.read())
+    else:
+        freeze_body = write_freeze(freeze_path, freeze.build_manifest())
     cohort = load_cohort()
     compiled, extra, prefixes = compile_cohort(cohort, freeze_body)
     ordered, slots = expand_pairs(compiled)
@@ -671,6 +706,17 @@ def main(argv=None):
             'detail': {'reason': exc.reason},
         }, terminal=True)
         print('STOP %s' % exc.reason, flush=True)
+    except Exception as exc:
+        note = '%s: %s' % (type(exc).__name__, exc)
+        try:
+            runner.led.append({
+                'kind': 'stop',
+                'detail': {'reason': 'runner_exception', 'error': note},
+            }, terminal=True)
+        except Exception:
+            pass
+        print('STOP runner_exception %s' % note, flush=True)
+        raise
     summary = runner.write_summary(note)
     after_path = os.path.join(EXP_DIR, 'canonical_hash_after.json')
     after = freeze.build_manifest()

@@ -10,7 +10,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-RT = os.path.normpath(os.path.join(HERE, '..', '..'))
+RT = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
 PILOT = os.path.join(RT, 'src', 'pilot')
 if PILOT not in sys.path:
     sys.path.insert(0, PILOT)
@@ -100,9 +100,19 @@ def main():
     lines.append('')
     lines.append('| key / request | cold parse | warm parse | cold clean | warm clean | cold USD | warm USD | delta | blind |')
     lines.append('|---|:---:|:---:|:---:|:---:|---:|---:|---:|---|')
+    key_by_rid = {}
+    events_path = os.path.join(run, 'events.jsonl')
+    if os.path.isfile(events_path):
+        for line in open(events_path, encoding='utf-8'):
+            event = json.loads(line)
+            rid = event.get('request_id')
+            key1 = (event.get('detail') or {}).get('key1')
+            if rid and key1:
+                key_by_rid[rid] = key1
     for row in summary.get('pairs') or []:
+        label = key_by_rid.get(row.get('request_id')) or (row.get('request_id') or '')[:12]
         lines.append('| `%s` | %s | %s | %s | %s | %s | %s | %s | %s |' % (
-            (row.get('request_id') or '')[:12],
+            label,
             row.get('cold_parseable'), row.get('warm_parseable'),
             row.get('cold_det_clean'), row.get('warm_det_clean'),
             row.get('cold_cost_usd'), row.get('warm_cost_usd'),
