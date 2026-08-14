@@ -68,6 +68,14 @@ release/pwg_tm_canonical/fragments.v1.jsonl
 # wave1_b_receipt/; the first slice remains under wave1_b_slice/.
 release/pwg_tm_canonical/wave1_b/
 
+# H2685 four-format binaries (regenerable via pwg_tm_release.py; attached to
+# the GitHub release). Tracked siblings: manifest.json, SHA256SUMS,
+# coverage.json, loss_ledger.json, README, DATASHEET, CITATION, LICENSE-DATA.
+release/pwg_tm/canonical.v1.jsonl
+release/pwg_tm/pwg_tm.de-ru.tmx
+release/pwg_tm/pwg_tm.tei.lex0.xml
+release/pwg_tm/pwg_tm.ontolex.ttl
+
 # Max workflow run output and A/B transcript artifacts (not deliverables)
 wf_output.json
 wf_output.*.json

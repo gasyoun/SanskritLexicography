@@ -1,6 +1,11 @@
 # build_tmx.py — corpus Sa→Ru TM as TMX 1.4b + composite grader + L0/alignment
 
-_Created: 06-07-2026 · Last updated: 07-07-2026_
+_Created: 06-07-2026 · Last updated: 14-08-2026_
+
+H2685 added `python src/build_tmx.py build-canonical` — a **second input path**
+over PWG TM canonical JSONL (`srclang=de`). The corpus Sa→Ru `build` command
+below is unchanged. See
+[PWG_TM_EXPORT_PROFILE_TMX_TEI_ONTOLEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_TM_EXPORT_PROFILE_TMX_TEI_ONTOLEX.md).
 
 [`src/build_tmx.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_tmx.py)
 is **Slice 1 of [H215](https://github.com/gasyoun/Uprava/blob/main/handoffs/H215-Opus_RussianTranslation_pwg_ru_publication_grade_tm_tmx_and_oral_06.07.26.md)**

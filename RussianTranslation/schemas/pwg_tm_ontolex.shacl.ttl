@@ -1,0 +1,33 @@
+# SHACL shapes for the PWG TM canonical OntoLex export (H2685).
+# Validated structurally in export_pwg_tm_ontolex.py; pyshacl is optional.
+
+@prefix sh:       <http://www.w3.org/ns/shacl#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix ontolex:  <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix vartrans: <http://www.w3.org/ns/lemon/vartrans#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov:     <http://www.w3.org/ns/prov#> .
+@prefix pwglex:   <https://w3id.org/sanskrit-lexicon/repwg/vocab#> .
+
+pwglex:TmEntryShape a sh:NodeShape ;
+  sh:targetClass ontolex:LexicalEntry ;
+  sh:property [ sh:path ontolex:canonicalForm ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path ontolex:sense ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path rdfs:label ; sh:minCount 1 ] .
+
+pwglex:TmSenseShape a sh:NodeShape ;
+  sh:targetClass ontolex:LexicalSense ;
+  sh:property [ sh:path skos:definition ; sh:minCount 2 ] ;
+  sh:property [ sh:path pwglex:recordId ; sh:minCount 1 ] ;
+  sh:property [ sh:path prov:generatedAtTime ; sh:minCount 1 ; sh:datatype xsd:dateTime ] ;
+  sh:property [ sh:path pwglex:sourcePublicationHash ; sh:minCount 1 ] .
+
+pwglex:TmTranslationShape a sh:NodeShape ;
+  sh:targetClass vartrans:Translation ;
+  sh:property [ sh:path vartrans:source ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path vartrans:target ; sh:minCount 1 ; sh:nodeKind sh:IRI ] .
+
+pwglex:TmActivityShape a sh:NodeShape ;
+  sh:targetClass prov:Activity ;
+  sh:property [ sh:path rdfs:label ; sh:minCount 1 ] .
