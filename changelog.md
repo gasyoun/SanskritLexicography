@@ -14,8 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.51] - 2026-08-14
 - **H2704 PREP/TM + L3 + adoption NO-GO** (Grok 4.6 `grok-4.6`, 14-08-2026): first-200 TM yield 0/200; Flash 50 pairs **100/100** parseable, **$0.041929**; L3 **192/200** parseable, **$0.046207**. Both lanes miss the 20% economy floor. Report: [`experiments/pwg_cache_economy/h2704_prep/REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2704_prep/REPORT.md).
-- **H2703 generation-lane Pro cold/warm pair runner** (Grok 4.6 `grok-4.6`, 14-08-2026): 22/22 sealed pairs, **42/44 parseable**, unique det_clean **20**, **$0.555956**, **$0.02780/clean** on the frozen H2676 Q3 cohort. Generation-lane **PASS**; adoption stays with H2704. Report: [`experiments/pwg_cache_economy/h2703_generation/REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2703_generation/REPORT.md).
 
 ## [1.144.49] - 2026-08-14
 - **H2702 cache-economy contract foundation** (Grok 4.6 `grok-4.6`, 14-08-2026): provider-neutral request identity, legacy Claude/DeepSeek byte reconstruction, reversible converter, crash-safe JSONL ledger, hierarchical reuse fence, deterministic prefix scheduler. Zero paid calls; canonical store/TM hashes unchanged. Contract: [`RussianTranslation/docs/PWG_CACHE_CONTRACT_PROVIDER_NEUTRAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PWG_CACHE_CONTRACT_PROVIDER_NEUTRAL.md).
