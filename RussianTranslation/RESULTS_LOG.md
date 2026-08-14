@@ -23,6 +23,17 @@ Grok 4.6 (`grok-4.6`). Zero paid/provider calls. Canonical store/TM hashes uncha
 
 Baseline: [experiments/pwg_cache_economy/baseline/manifest.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/baseline/manifest.json).
 
+## 14-08-2026 — H2685 follow-up (Grok 4.6) — Zenodo dataset DOI
+
+Grok 4.6 (`grok-4.6`). File-level deposit (not the repo software hook). Token from local secrets file; never committed.
+
+| Check | Result |
+|---|---|
+| Concept DOI | [10.5281/zenodo.21932900](https://doi.org/10.5281/zenodo.21932900) |
+| Version DOI | [10.5281/zenodo.21932901](https://doi.org/10.5281/zenodo.21932901) |
+| Live record | title + 12 files match; four interchange sizes unchanged |
+| Distinct from | repo software [10.5281/zenodo.21306715](https://doi.org/10.5281/zenodo.21306715) |
+
 ## 14-08-2026 — H2685 (Grok 4.6) — Track C four-format lossless pack
 
 Grok 4.6 (`grok-4.6`). Canonical JSONL source only. No PWG/csl-orig writes.

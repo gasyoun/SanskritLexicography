@@ -1,6 +1,6 @@
 # H2685 Track C receipt — lossless TMX / TEI Lex-0 / OntoLex + FAIR pack
 
-_Created: 14-08-2026 · Last updated: 14-08-2026_
+_Created: 14-08-2026 · Last updated: 14-08-2026 (DOI minted)_
 
 **Executor:** Grok 4.6 (`grok-4.6`)
 **PR:** pending this pass
@@ -55,7 +55,13 @@ Release (not Pages).
 
 ## DOI
 
-Concept + version **pending**. Bytes are hash-frozen. A later release will
-embed the DOI without rewriting these four files.
+Verified 14-08-2026 against the live Zenodo record (title + 12 files + sizes):
+
+- concept (cite this): [10.5281/zenodo.21932900](https://doi.org/10.5281/zenodo.21932900)
+- version 1.0.0: [10.5281/zenodo.21932901](https://doi.org/10.5281/zenodo.21932901)
+
+Distinct from the repository software concept
+[10.5281/zenodo.21306715](https://doi.org/10.5281/zenodo.21306715). The four
+interchange files were not rewritten.
 
 _Dr. Mārcis Gasūns_
