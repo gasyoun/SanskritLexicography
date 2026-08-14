@@ -1,0 +1,32 @@
+{
+ "schema": "h2675.drain_head.inventory.v1",
+ "n_worklist": 5000,
+ "n_first200": 200,
+ "n_monster_all": 59,
+ "n_monster_first200": 25,
+ "skipped_no_de": 0,
+ "skipped_sidecar": 13,
+ "assembled_live_de": 106082,
+ "first20": [
+  "ca",
+  "tad",
+  "na",
+  "mad",
+  "eva",
+  "yad",
+  "iti",
+  "idam",
+  "api",
+  "BU",
+  "sarva",
+  "vac",
+  "as",
+  "etad",
+  "taTA",
+  "tatas",
+  "hi",
+  "vA",
+  "rAjan",
+  "iva"
+ ]
+}
