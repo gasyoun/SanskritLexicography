@@ -284,7 +284,13 @@ XML_LANG = '{http://www.w3.org/XML/1998/namespace}lang'
 
 def validate(path):
     """Round-trip: parse the emitted TMX and structurally verify it. Returns
-    (ok, message). Catches malformed XML (bad escaping) and shape drift."""
+    (ok, message). Catches malformed XML (bad escaping) and shape drift.
+
+    Corpus TMX (srclang=sa-slp1) still requires a Cyrillic Russian target on
+    every <tu>. Canonical PWG TM (srclang=de, H2685) is German→Russian and
+    may legally have a German-identical target (e.g. <ab>dass.</ab>), so the
+    Cyrillic floor is not applied there.
+    """
     try:
         tree = ET.parse(path)
     except ET.ParseError as e:
@@ -293,8 +299,16 @@ def validate(path):
     if root.tag != 'tmx' or root.get('version') != '1.4':
         return False, 'validate: root is not <tmx version="1.4">'
     header = root.find('header')
-    if header is None or header.get('srclang') != SRCLANG:
+    if header is None or not header.get('srclang'):
         return False, 'validate: missing/blank header or wrong srclang'
+    srclang = header.get('srclang')
+    if srclang == 'de':
+        if HERE not in sys.path:
+            sys.path.insert(0, HERE)
+        import pwg_tm_export_core as X  # noqa: WPS433
+        return X.validate_tmx_canonical(path)
+    if srclang != SRCLANG:
+        return False, 'validate: unexpected srclang %r' % srclang
     body = root.find('body')
     if body is None:
         return False, 'validate: no <body>'
@@ -420,6 +434,25 @@ def assert_oral_cap():
     return True
 
 
+def build_canonical(in_path, out_path, limit=None, created=None):
+    """H2685: consume canonical scholarly JSONL without touching the corpus path."""
+    if HERE not in sys.path:
+        sys.path.insert(0, HERE)
+    import pwg_tm_export_core as X
+    src = in_path or X.DEFAULT_CANONICAL
+    dest = out_path or os.path.join(X.DEFAULT_RELEASE, 'pwg_tm.de-ru.tmx')
+    if not os.path.exists(src):
+        sys.exit('canonical JSONL not found: %s' % src)
+    rows = X.load_canonical(src, limit=limit)
+    stamp = X.created_stamp(rows, created)
+    text = X.build_tmx(rows, src, stamp)
+    X.write_text(dest, text)
+    ok, msg = validate(dest)
+    print('build_tmx build-canonical: %d records -> %s' % (len(rows), dest))
+    print(msg)
+    return 0 if ok else 1
+
+
 def main():
     ap = argparse.ArgumentParser(description='TMX 1.4b exporter for the corpus Sa->Ru TM (H215 Slice 1)')
     sub = ap.add_subparsers(dest='cmd', required=True)
@@ -438,6 +471,14 @@ def main():
 
     sub.add_parser('selftest', help='fixture -> export -> re-parse, assert')
 
+    bc = sub.add_parser(
+        'build-canonical',
+        help='canonical scholarly JSONL -> TMX 1.4b (H2685; does not replace corpus build)')
+    bc.add_argument('--in', dest='inp', default=None)
+    bc.add_argument('--out', dest='out', default=None)
+    bc.add_argument('--limit', type=int, default=None)
+    bc.add_argument('--created', default=None)
+
     a = ap.parse_args()
     if a.cmd == 'build':
         return build(a.inp, a.out, sample=a.sample, grade=a.grade,
@@ -448,6 +489,8 @@ def main():
         return 0 if ok else 1
     if a.cmd == 'selftest':
         return selftest()
+    if a.cmd == 'build-canonical':
+        return build_canonical(a.inp, a.out, limit=a.limit, created=a.created)
     return 1
 
 

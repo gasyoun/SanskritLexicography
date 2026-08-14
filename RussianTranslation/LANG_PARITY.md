@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 14-08-2026 (`pwg_tm_grok46_wave1_generate_h2684`: INTENTIONAL-DIVERGENCE. Wave-1 Grok 4.6 fragment TM is German→Russian only; default headless/EN routes stay untouched. An EN fragment wave needs its own prompt and independent judge.)_
+_Created: 04-07-2026 · Last updated: 14-08-2026 (`pwg_tm_lex0_ontolex_release_h2685`: INTENTIONAL-DIVERGENCE. Four-format publication TM export is German→Russian; corpus Sa→Ru `build_tmx.py build` is unchanged.)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -2093,6 +2093,32 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pwg_tm_generate.py": "650aeaf7beca45467ca40b4a3b2276bdbbe4739f3d16a1e1976643db8333e2b9",
       "src/pwg_tm_gates.py": "bba9ba290b16220a64a59602889cda105f29704fde3c35191408bcd147ae7331",
       "src/pwg_tm_quality.py": "837112b2f6917c977a4d471f5a5ab0022a57743be06e89e025997f1ce2b3b765"
+    }
+  },
+  {
+    "id": "pwg_tm_lex0_ontolex_release_h2685",
+    "mechanism": "Canonical PWG TM four-format exporters (TMX 1.4b, TEI Lex-0, OntoLex/vartrans/PROV-O) plus zero-loss ledger and immutable release pack",
+    "files": [
+      "src/pwg_tm_export_core.py",
+      "src/export_pwg_tm_tei.py",
+      "src/export_pwg_tm_ontolex.py",
+      "src/pwg_tm_export_loss.py",
+      "src/pwg_tm_release.py",
+      "src/build_tmx.py"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "verdict": "INTENTIONAL-DIVERGENCE",
+    "note": "H2685 Track C is German to Russian publication TM interchange. The corpus Sa to Ru build_tmx.py build command is unchanged; build-canonical is a second input path (srclang=de). An EN pack would need its own canonical rows and is not a silent port.",
+    "tracking": "H2685",
+    "verified_sha256": {
+      "src/pwg_tm_export_core.py": "1b7a8b203695a5c4f2e4906c15fac252a7d313d4c40366d4baf37abbac86bcef",
+      "src/export_pwg_tm_tei.py": "d7536d1b5a21ccd760a80b799b6875382d71f9f60144661b815256fe9249f863",
+      "src/export_pwg_tm_ontolex.py": "2c73ca205cf5bc714a58ea3f410c21323a2283bb76c48e9f2305582823259ddc",
+      "src/pwg_tm_export_loss.py": "b2c447b46caa84f12856efcac8c1b8922b561e2c899777391dd561e0fa87f057",
+      "src/pwg_tm_release.py": "34b9c89d620742b96383702109b3c11f9abfec70157ffd952cf0f932d8d9831e",
+      "src/build_tmx.py": "0f6eacbb3f2382c7e4b7eda1eeb7f07ba53255ca1f4182f81ed64a8aa135e552"
     }
   }
 ]
