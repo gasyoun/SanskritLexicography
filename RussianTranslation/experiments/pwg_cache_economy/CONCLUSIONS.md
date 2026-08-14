@@ -65,7 +65,11 @@ Keep Pro as a one-shot rematch tool (H2676). Do not rerun Pro pairs to “fix”
 
 ## What H2754 must test
 
+Shipped as [H2756](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2756_flash/REPORT.md) (H2754 locked by precheck exit 4 on [#1713](https://github.com/gasyoun/SanskritLexicography/pull/1713)).
+
 Primary question: on a **fresh** Flash PREP miss set (not the H2704 50 — those prefixes may already be warm), is the **same-card incremental save** (denominator B) positive with a CI that excludes zero?
+
+**Answer (14-08-2026):** **INCONCLUSIVE.** 99/100 parseable, $0.038405, hashes unchanged. Ratio-of-means save **0.2%**, bootstrap 95% CI includes 0. Keep the point estimate. Do not write “no economy”. Product NO-GO unchanged.
 
 - Control = first-touch USD per unique parseable card (denominator C).
 - Treatment = byte-identical repeat USD.
