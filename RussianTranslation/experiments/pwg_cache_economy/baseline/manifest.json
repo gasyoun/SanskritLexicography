@@ -1,0 +1,110 @@
+{
+  "schema": "pwg.cache_economy_baseline.v1",
+  "handoff": "H2702",
+  "source_commit": "2cd876df3f7bf304e692a82470fdf9b985549e2e",
+  "tracked": [
+    {
+      "path": "RussianTranslation/experiments/H2676_v4pro_q3_rematch/sample_keys.json",
+      "sha256": "0604ce8d32cae07d8af1ef41a2ed2c5fec2125df40c73182c1d6e3d9acea912c",
+      "bytes": 1211
+    },
+    {
+      "path": "RussianTranslation/experiments/H2676_v4pro_q3_rematch/h2676.manifest.json",
+      "sha256": "8d0401a92f58cba6af5a25d979af9e8ccbea92d79307764dfbf303e9a4c042b4",
+      "bytes": 874597
+    },
+    {
+      "path": "RussianTranslation/experiments/H2676_v4pro_q3_rematch/slice_payload.json",
+      "sha256": "2d780f936e21c5c9875747076427d07dafd3021ad9130fdafb4e54d50193b7d2",
+      "bytes": 913163
+    },
+    {
+      "path": "RussianTranslation/experiments/H2675_w1_prep/REPORT.md",
+      "sha256": "fe7478f4ddd57b321cb03a52e80c76191204b993e9743ef75313aaf2c0022431",
+      "bytes": 5723
+    },
+    {
+      "path": "RussianTranslation/src/pilot/h1210/deepseek_arm.py",
+      "sha256": "dcfcd2f2172ceccf9b7dbb0e1b2904c9886de13f2488644e1e20874ae3a2aef2",
+      "bytes": 34029
+    },
+    {
+      "path": "RussianTranslation/src/pilot/h1210/det_gate.py",
+      "sha256": "fffc2bbe2b73e36d311b4e0639b6f31f122a14355e2e846343af95d8a346d4be",
+      "bytes": 9295
+    },
+    {
+      "path": "RussianTranslation/src/pilot/h1210/prep_pack.py",
+      "sha256": "a71580b8d1369856b4a59a21d3a7f977022b0a7d821b5aaad6c8cce6973b5998",
+      "bytes": 75110
+    },
+    {
+      "path": "RussianTranslation/src/pilot/h1210/prep_pack.schema.json",
+      "sha256": "d14e142bffd81222ce8d4982eff3eca2210821bc4d3dc785607be1211b366c85",
+      "bytes": 5571
+    },
+    {
+      "path": "RussianTranslation/src/pilot/h1210/prep_context.schema.json",
+      "sha256": "550f29bec89f8eb49749276b511ccb78e0eea8aaf3758f68d9aae82c158bb123",
+      "bytes": 1971
+    },
+    {
+      "path": "RussianTranslation/src/pilot/h1209/prep_slice.py",
+      "sha256": "215cedafee225789fa4f96e306fa38fafd871103bcb1e6a8820104bf2604b451",
+      "bytes": 11521
+    },
+    {
+      "path": "RussianTranslation/src/pilot/headless_worker.py",
+      "sha256": "e1d3a6c0b171d18b027d4c510e023b6a1d4f0155630a918b37b4b5ac1b243bf1",
+      "bytes": 91218
+    },
+    {
+      "path": "RussianTranslation/src/pilot/translation_memory.py",
+      "sha256": "e5452394c8f3bbebef9f6038362e6a9d0e162a338201cdf425191412c7cf3a38",
+      "bytes": 109102
+    },
+    {
+      "path": "RussianTranslation/schemas/pwg_ru_final_card.schema.json",
+      "sha256": "43229c8f893838dcc001efe58193960665311263ffc2b5d70bd6c2f9d8a401a5",
+      "bytes": 25349
+    },
+    {
+      "path": "RussianTranslation/schemas/pwg_transport_envelope.schema.json",
+      "sha256": "8f2b52c86abea66b8d9acf5bb96fd158d58ec066cfe43685c83cde980b9a5b9d",
+      "bytes": 4351
+    },
+    {
+      "path": "RussianTranslation/schemas/translation_memory.schema.json",
+      "sha256": "323e83381b73900d269aaca28f0ed4db2da82d1047c57f94f6cb2f2204c88701",
+      "bytes": 7862
+    }
+  ],
+  "canonical": [
+    {
+      "label": "store",
+      "resolved": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pwg_ru_translated.jsonl",
+      "sha256": "811bbc216e53e8ae7f5393e854f496a9597eb723ccc6383f339f90bd8aa6c97f",
+      "bytes": 26192750
+    },
+    {
+      "label": "tm_card",
+      "resolved": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\translation_memory.ru.json",
+      "sha256": "b521163bd3b286be6c963797ff79333d537f6ee6526e3210414944ce0aca47d0",
+      "bytes": 961
+    },
+    {
+      "label": "tm_frag",
+      "resolved": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\translation_memory.frag.ru.jsonl",
+      "sha256": "2d89aab877e49c6855825f3eae8be0cd412527ea8371a1b4791761a008e06a3d",
+      "bytes": 265831
+    },
+    {
+      "label": "tm_denylist",
+      "resolved": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\translation_memory.denylist.jsonl",
+      "sha256": "30dcd45b9b92f8c815c120654bb69ce393fae5006bd91356adbde28e3f05e4eb",
+      "bytes": 29203
+    }
+  ],
+  "notes": "Hashes only. Paths recorded for resolution audit; they are not identity inputs. Missing gitignored files stay null.",
+  "manifest_sha256": "d196ef3d8fa2e99623a9b61c97fd211f59a8f3887c1d954a68402e2f8fe9ea95"
+}

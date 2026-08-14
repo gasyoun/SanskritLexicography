@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sanskrit-lexicon.github.io/schemas/pwg_prompt_bundle.schema.json",
+  "title": "PWG provider-neutral compiled prompt bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "compiler_version",
+    "provider",
+    "requested_model",
+    "stable_prefix_sha256",
+    "volatile_tail_sha256",
+    "response_schema_sha256",
+    "generation_parameters",
+    "token_estimate",
+    "request_id",
+    "provider_envelope",
+    "promotable"
+  ],
+  "properties": {
+    "schema": {"const": "pwg.prompt_bundle.v1"},
+    "compiler_version": {"type": "string", "minLength": 1},
+    "provider": {"type": "string", "minLength": 1},
+    "requested_model": {"type": "string", "minLength": 1},
+    "stable_prefix_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "volatile_tail_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "response_schema_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "generation_parameters": {"type": "object"},
+    "token_estimate": {"type": "integer", "minimum": 0},
+    "lineage": {"type": "object"},
+    "request_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "provider_envelope": {"type": "object"},
+    "promotable": {"const": false}
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "legacy_claude_v0",
+  "keys": [
+    "demo"
+  ],
+  "manifest": {
+    "prompt": {
+      "preamble": "PREAMBLE\n",
+      "translation": "TRANSLATION RULES\n",
+      "grammar": "GRAMMAR\n",
+      "nws_rule": "NWS RULE",
+      "grammars": {
+        "demo": "CARD-GRAMMAR"
+      }
+    },
+    "inputs": {
+      "demo": {
+        "skeleton": "ein {%Gloss%}. {T1}",
+        "portrait": "portrait-bytes",
+        "nws": true
+      }
+    },
+    "suggestions": {}
+  },
+  "expected_prompt": "PREAMBLE\nTRANSLATION RULES\nGRAMMAR\n\n\nNWS RULE\nCARD-GRAMMAR\n\n=== CARD demo ===\n--- masked German (translatable only; {Tn}=masked span) ---\nein {%Gloss%}. {T1}\n--- portrait (evidence) ---\nportrait-bytes",
+  "expected_stable_sha256": "824ba522fe650945b0f7c29a7608b4f1519d903d94c5c3c887d99dae7ebcab71",
+  "expected_volatile_sha256": "0c55ab2a89cd72cdc86df25b3a805705394d7ab154080882fb7d713ea0073a05",
+  "expected_request_id": "e2310611af03218b74ab0f06b7b55a138ad8f460b891bc3136718ee2c84e4749"
+}
