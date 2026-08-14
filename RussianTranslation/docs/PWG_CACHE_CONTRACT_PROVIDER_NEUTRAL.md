@@ -2,7 +2,7 @@
 
 _Created: 14-08-2026 · Last updated: 14-08-2026_
 
-Operating contract for [H2702 (Grok 4.6) — PWG cache economy residual A: provider-neutral contracts, identity, migration, and ledger](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2702-Grok_SanskritLexicography_pwg-cache-economy-contract-foundation_14.08.26.md). Paid generation and PREP/TM proof stay in later residuals.
+Operating contract for [H2702 (Grok 4.6) — PWG cache economy residual A: provider-neutral contracts, identity, migration, and ledger](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2702-Grok_SanskritLexicography_pwg-cache-economy-contract-foundation_14.08.26.md). Paid generation proof is [H2703 (Grok 4.6) — PWG cache economy residual B: exact-request generation cold/warm proof](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2703-Grok_SanskritLexicography_pwg-cache-economy-generation-cold-warm_14.08.26.md). PREP/TM and adoption stay in H2704.
 
 Plan index: [PWG cache economy](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_PWG_CACHE_ECONOMY_2026Q3.md).
 

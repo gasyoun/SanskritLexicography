@@ -122,7 +122,8 @@ def write_manifest(path=None):
 
 
 def selftest():
-    payload = write_manifest()
+    import tempfile
+    payload = build_manifest()
     if not payload['source_commit']:
         raise AssertionError('source commit missing')
     missing_required = [
@@ -131,9 +132,12 @@ def selftest():
     ]
     if missing_required:
         raise AssertionError('H2676 cohort files missing: %s' % missing_required)
-    again = ident.sha256_file(OUT)
-    if again is None:
-        raise AssertionError('baseline manifest not written')
+    with tempfile.TemporaryDirectory() as tmp:
+        path = os.path.join(tmp, 'manifest.json')
+        written = write_manifest(path)
+        again = ident.sha256_file(path)
+        if again is None or written.get('manifest_sha256') is None:
+            raise AssertionError('baseline manifest not written')
     print('cache_baseline_freeze: PASS commit=%s files=%d' % (
         payload['source_commit'][:12], len(payload['tracked'])))
     return 0

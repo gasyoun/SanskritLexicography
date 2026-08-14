@@ -404,7 +404,7 @@ def _is_auth_or_unpaid(exc):
 
 class DeepSeek:
     def __init__(self, base, key, model, max_tokens, timeout=600, reasoning_effort=None,
-                 client=None):
+                 client=None, max_transport_attempts=3):
         self.base = (base or 'https://api.deepseek.com').rstrip('/')
         self.url = self.base + '/chat/completions'
         self.key = key
@@ -412,6 +412,7 @@ class DeepSeek:
         self.max_tokens = max_tokens
         self.timeout = timeout
         self.reasoning_effort = reasoning_effort
+        self.max_transport_attempts = max(1, int(max_transport_attempts))
         self._client = client
         card, prices = prices_for(model)
         self.price_card = card
@@ -459,7 +460,7 @@ class DeepSeek:
         card, prices = prices_for(self.model)
         self.price_card = card
         self.prices = prices
-        for attempt in range(1, 4):                 # transport-only retries, with backoff
+        for attempt in range(1, self.max_transport_attempts + 1):
             try:
                 client = self._make_client()
                 stream = client.chat.completions.create(**create_kwargs)
@@ -494,11 +495,13 @@ class DeepSeek:
                 last = e
                 if _is_auth_or_unpaid(e):
                     break
-                if attempt < 3:
+                if attempt < self.max_transport_attempts:
                     time.sleep(2 ** attempt)
         dt = time.time() - t0
         rec = {'label': label, 'latency_s': round(dt, 2), 'transport': TRANSPORT,
-               'transport_attempts': 3 if last and not _is_auth_or_unpaid(last) else 1,
+               'transport_attempts': (
+                   self.max_transport_attempts
+                   if last and not _is_auth_or_unpaid(last) else 1),
                'price_card': card, 'max_tokens': self.max_tokens,
                'error': '%s: %s' % (type(last).__name__, last) if last else 'unknown'}
         if last and _is_auth_or_unpaid(last):
