@@ -8,7 +8,7 @@ Plan index: [PWG cache economy](https://github.com/gasyoun/SanskritLexicography/
 
 Wave 1 makes PWG generation and Flash PREP/TM retrieval measurable under one cache/economy contract. It may write only to an experimental TM namespace inside the sealed run directory. It does not change `DEFAULT_MODEL`, canonical store/TM, promotion allowlists, or sibling repositories; every generated artifact is `promotable: false`.
 
-H2702 (14-08-2026) landed steps 0–2 and 4–6 offline: baseline hashes, schemas, compiler/identity, converter, ledger, reuse, scheduler. Steps 3 and 8 (paid transport/canary/Q3/PREP) already shipped as H2674–H2676 and must not be rerun. H2703 owns the generation half of step 8 L2 (exact-request Pro cold/warm) plus the generation-lane report. H2704 owns PREP/TM L2, bounded L3, and adoption.
+H2702 (14-08-2026) landed steps 0–2 and 4–6 offline: baseline hashes, schemas, compiler/identity, converter, ledger, reuse, scheduler. Steps 3 and 8 (paid transport/canary/Q3/PREP) already shipped as H2674–H2676 and must not be rerun. H2703 owns the generation half of step 8 L2 (exact-request Pro cold/warm) plus the generation-lane report. H2704 owns PREP/TM L2, bounded L3, and adoption (census 0/200 TM hits; Flash 50-pair runner; extraction plan on paper).
 
 ## Ordered build
 

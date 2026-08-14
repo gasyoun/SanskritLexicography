@@ -90,6 +90,18 @@ COMPOUND_TAILS = (
 MAIN_PILOT = r'C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot'
 MAIN_STORE = r'C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pwg_ru_translated.jsonl'
 
+# Exact Flash PREP system string. Compiler identity (H2704) must share this
+# literal with the live worker — do not duplicate it in prompt_compiler.
+PREP_FLASH_SYSTEM = (
+    'You are a PWG German→Russian PREP worker (not the final translator).\n'
+    'Return ONE JSON object only:\n'
+    '{"ru_skeleton": [string, ...] or null,\n'
+    ' "route_hint": "controller_only"|"full_worker"|"prep_only"|"park",\n'
+    ' "hard_flag_notes": [string, ...]}.\n'
+    'ru_skeleton = short RU sense glosses aligned to sense order (draft seed only).\n'
+    'Never claim a store write. JSON only.'
+)
+
 
 def _pilot_dirs() -> list[str]:
     """Candidate pilot roots that may hold input/ + translate/."""
@@ -1109,8 +1121,8 @@ def produce_dry(keys: list[str], out_dir: str, model: str,
     return paths
 
 
-def _flash_draft_for_pack(client: ds.DeepSeek, pack: dict) -> dict:
-    """One Flash call: optional RU skeleton + route_hint. Mutates pack, returns it."""
+def flash_user_payload(pack: dict) -> dict:
+    """Answer-affecting Flash PREP user object (no timestamps, no paths)."""
     senses_preview = []
     for s in pack['sense_inventory'][:12]:
         senses_preview.append({
@@ -1118,16 +1130,7 @@ def _flash_draft_for_pack(client: ds.DeepSeek, pack: dict) -> dict:
             'tag': s.get('sense_tag'),
             'de': s.get('de_anchor'),
         })
-    system = (
-        'You are a PWG German→Russian PREP worker (not the final translator).\n'
-        'Return ONE JSON object only:\n'
-        '{"ru_skeleton": [string, ...] or null,\n'
-        ' "route_hint": "controller_only"|"full_worker"|"prep_only"|"park",\n'
-        ' "hard_flag_notes": [string, ...]}.\n'
-        'ru_skeleton = short RU sense glosses aligned to sense order (draft seed only).\n'
-        'Never claim a store write. JSON only.'
-    )
-    user = json.dumps({
+    return {
         'key1': pack['key1'],
         'n_senses': len(pack['sense_inventory']),
         'senses': senses_preview,
@@ -1140,7 +1143,17 @@ def _flash_draft_for_pack(client: ds.DeepSeek, pack: dict) -> dict:
             {'key1': h['key1'], 'score': h['score'], 'match_type': h.get('match_type')}
             for h in pack['tm_fuzzy_hits'][:5]
         ],
-    }, ensure_ascii=False)
+    }
+
+
+def flash_messages(pack: dict) -> tuple[str, str]:
+    """Production Flash PREP (system, user) bytes. Shared with the compiler."""
+    return PREP_FLASH_SYSTEM, json.dumps(flash_user_payload(pack), ensure_ascii=False)
+
+
+def _flash_draft_for_pack(client: ds.DeepSeek, pack: dict) -> dict:
+    """One Flash call: optional RU skeleton + route_hint. Mutates pack, returns it."""
+    system, user = flash_messages(pack)
     text, call = client.chat(system, user, 'prep:%s' % pack['key1'])
     finish = (call or {}).get('finish_reason')
     parse_ok = False

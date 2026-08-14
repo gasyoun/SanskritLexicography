@@ -77,3 +77,37 @@ def compare_blind(output_a, output_b):
             else 'disagree'
         ),
     }
+
+
+def compare_prep_blind(output_a, output_b):
+    """Compare two PREP terminal objects (ru_skeleton + route_hint) label-blind."""
+    slim_a = {
+        'ru_skeleton': (output_a or {}).get('ru_skeleton'),
+        'route_hint': (output_a or {}).get('route_hint'),
+    }
+    slim_b = {
+        'ru_skeleton': (output_b or {}).get('ru_skeleton'),
+        'route_hint': (output_b or {}).get('route_hint'),
+    }
+    dump_a = _canonical(slim_a)
+    dump_b = _canonical(slim_b)
+    hash_a = ident.sha256_bytes(dump_a)
+    hash_b = ident.sha256_bytes(dump_b)
+    identical = hash_a == hash_b
+    route_equal = slim_a['route_hint'] == slim_b['route_hint']
+    n_a = len(slim_a['ru_skeleton'] or []) if isinstance(slim_a['ru_skeleton'], list) else 0
+    n_b = len(slim_b['ru_skeleton'] or []) if isinstance(slim_b['ru_skeleton'], list) else 0
+    return {
+        'identical': identical,
+        'left_sha256': hash_a if hash_a <= hash_b else hash_b,
+        'right_sha256': hash_b if hash_a <= hash_b else hash_a,
+        'route_equal': route_equal,
+        'skeleton_len_equal': n_a == n_b,
+        'left_skeleton_len': n_a if hash_a <= hash_b else n_b,
+        'right_skeleton_len': n_b if hash_a <= hash_b else n_a,
+        'class': (
+            'identical' if identical
+            else 'equivalent_structure' if route_equal and n_a == n_b
+            else 'disagree'
+        ),
+    }

@@ -97,9 +97,18 @@ def usage_cost_usd(event):
     return None
 
 
+def _lane_floors(manifest):
+    acceptance = manifest.get('acceptance') or {}
+    n_pairs = int(acceptance.get('n_pairs') or manifest.get('n') or N_PAIRS)
+    denom = int(acceptance.get('parseable_denom') or manifest.get('call_ceiling') or PARSEABLE_DENOM)
+    parse_min = int(acceptance.get('parseable_min') or PARSEABLE_MIN)
+    return n_pairs, denom, parse_min
+
+
 def derive(manifest, events):
     if not isinstance(manifest, dict) or not manifest.get('sealed'):
         raise ReportError('manifest is not sealed')
+    n_pairs, parseable_denom, parseable_min = _lane_floors(manifest)
     terminals = slot_events(events)
     parseable = [e for e in terminals if is_parseable(e)]
     unevaluable = [
@@ -190,7 +199,7 @@ def derive(manifest, events):
     )
 
     parseable_rate = (
-        None if PARSEABLE_DENOM == 0 else parseable_n / float(PARSEABLE_DENOM)
+        None if parseable_denom == 0 else parseable_n / float(parseable_denom)
     )
     usd_per_unique_clean = (
         None if unique_clean_n == 0 else total_usd / unique_clean_n
@@ -219,14 +228,14 @@ def derive(manifest, events):
     fail_reasons = []
     if stop_reason:
         fail_reasons.append('stop:%s' % stop_reason)
-    if parseable_n < PARSEABLE_MIN:
-        fail_reasons.append('parseable %d/%d' % (parseable_n, PARSEABLE_DENOM))
+    if parseable_n < parseable_min:
+        fail_reasons.append('parseable %d/%d' % (parseable_n, parseable_denom))
     if model_mismatch:
         fail_reasons.append('served_model_mismatch')
     if unevaluable:
         fail_reasons.append('unevaluable_billing')
-    if pairs_complete < N_PAIRS and not stop_reason:
-        fail_reasons.append('pairs_incomplete %d/%d' % (pairs_complete, N_PAIRS))
+    if pairs_complete < n_pairs and not stop_reason:
+        fail_reasons.append('pairs_incomplete %d/%d' % (pairs_complete, n_pairs))
     if manifest.get('promotable') is not False:
         fail_reasons.append('promotable_not_false')
     if attempted_slots == 0:
@@ -235,8 +244,8 @@ def derive(manifest, events):
     elif fail_reasons:
         generation_lane = 'FAIL'
     elif (
-        pairs_complete == N_PAIRS
-        and parseable_n >= PARSEABLE_MIN
+        pairs_complete == n_pairs
+        and parseable_n >= parseable_min
         and not model_mismatch
         and not unevaluable
         and not stop_reason
@@ -245,11 +254,11 @@ def derive(manifest, events):
 
     return {
         'schema': 'pwg.cache_economy_report.v1',
-        'handoff': 'H2703',
+        'handoff': (manifest.get('acceptance') or {}).get('handoff') or manifest.get('handoff') or 'H2703',
         'run_id': manifest.get('run_id'),
         'manifest_sha256': manifest.get('manifest_sha256'),
-        'n_pairs': N_PAIRS,
-        'max_base_calls': PARSEABLE_DENOM,
+        'n_pairs': n_pairs,
+        'max_base_calls': parseable_denom,
         'attempted_slots': attempted_slots,
         'pairs_complete': pairs_complete,
         'pairs_attempted': pairs_attempted,
