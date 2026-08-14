@@ -55,4 +55,8 @@ GO receipt: [L3_GO.md](https://github.com/gasyoun/SanskritLexicography/blob/mast
 
 Adoption requires **both** lanes ≥20% cheaper per clean artifact. Generation is more expensive per clean card because the pair design buys two Pro generations. PREP is only 3.9% cheaper per unique parseable card, and its warm-minus-cold CI includes zero. Instrumentation, the provider-neutral contract, and the paper-only extraction plan stay. The default Flash model is not flipped. Canonical hashes are unchanged.
 
+## Addendum 14-08-2026 — 3.9% is economy, not noise-to-discard
+
+The product NO-GO above is unchanged. The 3.9% Flash point-estimate is still a saving. Same-card (cold − warm) / cold is **9.9%**; the paired USD CI still includes zero, so magnitude is INCONCLUSIVE at n=50, not “zero economy”. `ADOPTION.json` `unique_clean: 1` / `$0.041929` per card is a PREP-denominator bug (generation-style `det_clean`); quote this report’s 50-card **$0.000839**, not that JSON field. Full tables and the residual design: [CONCLUSIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/CONCLUSIONS.md). Next sitting: [H2754 (Grok 4.6) — Flash PREP one-shot vs incremental warm (correct denominator)](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2754-Grok_SanskritLexicography_pwg-cache-flash-oneshot-vs-warm_14.08.26.md).
+
 _Dr. Mārcis Gasūns_
