@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-08-14T17:46:02Z",
+ "generated_at": "2026-08-14T19:00:56Z",
  "stale_days_threshold": 180,
  "counts": {
-  "total": 187,
+  "total": 188,
   "by_importance": {
-   "2": 101,
+   "2": 102,
    "1": 25,
    "3": 61
   },
@@ -1693,6 +1693,15 @@
    "evidence_date": null,
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#533-h2704-flash-prep-39-is-a-real-point-estimate-the-20-dual-lane-no-go-does-not-make-it-zero"
+  },
+  {
+   "n": 534,
+   "title": "H2756 re-test of Flash PREP incremental save on a fresh 50 is INCONCLUSIVE at 0.2%",
+   "section": "External platforms & services",
+   "importance": 2,
+   "evidence_date": null,
+   "age_days": null,
+   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#534-h2756-re-test-of-flash-prep-incremental-save-on-a-fresh-50-is-inconclusive-at-02"
   }
  ]
 }
