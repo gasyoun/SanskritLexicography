@@ -32,6 +32,7 @@ if HERE not in sys.path:
 import pwg_tm_canonical as C  # noqa: E402
 import pwg_tm_fragmentize as F  # noqa: E402
 import pwg_tm_gates as G  # noqa: E402
+import pwg_tm_wave2_policy as W2  # noqa: E402
 
 ROUTE_ID = 'grok-4.6'
 MODEL_ID = 'grok-4.6'
@@ -376,6 +377,8 @@ def build_source_lexicon(publication_path, extra_paths=None):
             return
         if not src or tgt is None or not str(tgt).strip():
             return
+        if not W2.allow_exact_source_reuse(src, klass):
+            return
         key = source_lexicon_key(klass, src)
         if key not in index:
             index[key] = tgt
@@ -432,7 +435,9 @@ def apply_targets(fragments, drafts, reuse_index, source_lexicon=None):
                 stats['drafted'] += 1
             else:
                 lex = None
-                if frag.get('fragment_class') in SOURCE_REUSE_CLASSES:
+                if (frag.get('fragment_class') in SOURCE_REUSE_CLASSES
+                        and W2.allow_exact_source_reuse(
+                            src, frag.get('fragment_class'))):
                     lex = source_lexicon.get(
                         source_lexicon_key(frag.get('fragment_class'), src))
                 if lex is not None:
@@ -1088,7 +1093,8 @@ def cmd_refill(args):
             new_origin = d.get('origin') or 'grok-4.6-draft'
             usage = d.get('usage') or usage
             fill['drafted'] += 1
-        elif klass in SOURCE_REUSE_CLASSES:
+        elif (klass in SOURCE_REUSE_CLASSES
+              and W2.allow_exact_source_reuse(src, klass)):
             lex = lexicon.get(source_lexicon_key(klass, src))
             if lex is not None:
                 tgt = lex

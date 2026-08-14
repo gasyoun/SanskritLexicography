@@ -247,8 +247,8 @@ def _pick(pool, already, n, pred):
     return out
 
 
-def select(scored, limit):
-    already = set()
+def select(scored, limit, exclude_keys=None):
+    already = set(exclude_keys or ())
     chosen = []
     strata = {}
 
@@ -287,6 +287,10 @@ def select(scored, limit):
     for row in scored:
         if row['k1'] in selected_keys:
             continue
+        if row['k1'] in already:
+            excluded.append({
+                'k1': row['k1'], 'reason': 'wave1_immutable', 'score': row['score']})
+            continue
         reason = 'below_cutoff'
         if not row['attested'] and not row['core_membership']:
             reason = 'unattested_not_core'
@@ -298,7 +302,8 @@ def select(scored, limit):
     return chosen, excluded
 
 
-def build(limit, publication=None, out_dir=None):
+def build(limit, publication=None, out_dir=None, exclude_keys=None, wave=1,
+          stem=None):
     publication = publication or C.DEFAULT_PUBLICATION
     index_rows = _load_index(HEADWORD_INDEX)
     freq = _load_freq(FREQ_ORDER)
@@ -310,7 +315,7 @@ def build(limit, publication=None, out_dir=None):
     loci = _load_loci_counts(SENSE_LOCI_SAMPLE)
     tm_cite, tm_reuse = _tm_signals(publication)
     scored = score_rows(index_rows, freq, cores, loci, tm_cite, tm_reuse)
-    chosen, excluded = select(scored, limit)
+    chosen, excluded = select(scored, limit, exclude_keys=exclude_keys)
     inputs = {
         'headword_index': {
             'path': os.path.relpath(HEADWORD_INDEX, C.ROOT).replace('\\', '/'),
@@ -345,8 +350,9 @@ def build(limit, publication=None, out_dir=None):
     reason_counts = dict(Counter(r['reason'] for r in excluded))
     manifest = {
         'schema': 'pwg.tm.priority.manifest.v1',
-        'wave': 1,
+        'wave': wave,
         'limit': limit,
+        'excluded_prior_wave_n': len(set(exclude_keys or ())),
         'selected_count': len(chosen),
         'universe_unique_k1': len(scored),
         'universe_index_rows': len(index_rows),
@@ -364,12 +370,14 @@ def build(limit, publication=None, out_dir=None):
     manifest['manifest_sha256'] = C.sha256_json({
         k: manifest[k] for k in (
             'schema', 'wave', 'limit', 'weights', 'quotas', 'inputs',
-            'selected_keys_sha256',
+            'selected_keys_sha256', 'excluded_prior_wave_n',
         )
     })
+    stem = stem or (
+        'priority_%d_w%d' % (limit, wave) if wave != 1 else 'priority_%d' % limit)
     if out_dir:
-        C.write_json(os.path.join(out_dir, 'priority_%d.manifest.json' % limit), manifest)
-        C.write_jsonl(os.path.join(out_dir, 'priority_%d.jsonl' % limit), [
+        C.write_json(os.path.join(out_dir, stem + '.manifest.json'), manifest)
+        C.write_jsonl(os.path.join(out_dir, stem + '.jsonl'), [
             {
                 'rank': r['rank'],
                 'k1': r['k1'],
@@ -385,7 +393,7 @@ def build(limit, publication=None, out_dir=None):
             }
             for r in chosen
         ])
-        C.write_json(os.path.join(out_dir, 'priority_%d.denominators.json' % limit), {
+        C.write_json(os.path.join(out_dir, stem + '.denominators.json'), {
             'index_rows': len(index_rows),
             'unique_k1': len(scored),
             'freq_matched': sum(1 for r in scored if r['attested']),
@@ -431,14 +439,21 @@ def main(argv=None):
     ap.add_argument('--limit', type=int, default=5000)
     ap.add_argument('--publication', default=C.DEFAULT_PUBLICATION)
     ap.add_argument('--out-dir', default=C.DEFAULT_OUT_DIR)
+    ap.add_argument('--wave', type=int, default=1)
+    ap.add_argument('--exclude-jsonl', dest='exclude_jsonl', default=None,
+                    help='prior-wave queue JSONL; those k1 are not selected')
     ap.add_argument('--verify', action='store_true')
     args = ap.parse_args(argv)
     if args.verify:
         ok, msg = verify(args.limit)
         print(msg)
         return 0 if ok else 1
+    exclude = []
+    if args.exclude_jsonl:
+        exclude = [r['k1'] for r in C.read_jsonl(args.exclude_jsonl) if r.get('k1')]
     chosen, _excluded, manifest = build(
-        args.limit, publication=args.publication, out_dir=args.out_dir)
+        args.limit, publication=args.publication, out_dir=args.out_dir,
+        exclude_keys=exclude, wave=args.wave)
     print('selected %d -> %s hash=%s' % (
         len(chosen), args.out_dir, manifest['manifest_sha256']))
     return 0 if len(chosen) == args.limit else 1
