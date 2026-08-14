@@ -1,0 +1,27 @@
+{
+  "schema": "pwg.tm.retrieval_eval.manifest.v1",
+  "version": "0.2.0",
+  "created": "14-08-2026",
+  "batch_path": "src/RETRIEVAL_EVAL_BATCH.jsonl",
+  "batch_sha256": "b7ed1b7d134157ef2ecc59d601756110584f0139bb088dd0b5c8c7c462faff6f",
+  "gold_path": "gold/grade_gold.jsonl",
+  "gold_sha256": "72c282933c395702324db1072dcfe49cae1feac3bb8db50e9737f7b75ecb6ed7",
+  "wave1_immutable": true,
+  "n": 9,
+  "n_per_class": 3,
+  "copy_through_excluded": 156,
+  "per_class_pool": {
+    "definition_gloss": 96,
+    "recurring_formula": 75,
+    "sense": 73,
+    "example": 0,
+    "grammar_label": 0
+  },
+  "per_class_drawn": {
+    "definition_gloss": 3,
+    "recurring_formula": 3,
+    "sense": 3
+  },
+  "sample_sha256": "2bfc826c0517d94fe727b136c8e5cce9e02d6d6ae741d9ff7af3d1adfcb7bb44",
+  "adjudication_sha256": "cff9ce740f0041d1b07bf6bf0dd9698bce261027d1b2512450d8c31f4bc7df09"
+}
