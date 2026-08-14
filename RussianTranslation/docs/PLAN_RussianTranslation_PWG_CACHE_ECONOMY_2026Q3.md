@@ -1,6 +1,14 @@
 # PWG prompt-cache economy — execution plan
 
-_Created: 13-08-2026 · Last updated: 13-08-2026_
+_Created: 13-08-2026 · Last updated: 14-08-2026_
+
+## Execution status
+
+The plan and CI fix merged in [PR #1685](https://github.com/gasyoun/SanskritLexicography/pull/1685). The transport canary, frozen Pro rematch, and Flash PREP first-200 baseline then shipped in [PR #1686](https://github.com/gasyoun/SanskritLexicography/pull/1686), [PR #1690](https://github.com/gasyoun/SanskritLexicography/pull/1690), and [PR #1693](https://github.com/gasyoun/SanskritLexicography/pull/1693). The old monolithic Codex execution brief is superseded; remaining work is deliberately serial:
+
+1. [H2702 (Grok 4.6) — PWG cache economy residual A: provider-neutral contracts, identity, migration, and ledger](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2702-Grok_SanskritLexicography_pwg-cache-economy-contract-foundation_14.08.26.md)
+2. [H2703 (Grok 4.6) — PWG cache economy residual B: exact-request generation cold/warm proof](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2703-Grok_SanskritLexicography_pwg-cache-economy-generation-cold-warm_14.08.26.md), blocked until H2702 merges
+3. [H2704 (Grok 4.6) — PWG cache economy residual C: PREP/TM proof, bounded L3, and adoption verdict](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2704-Grok_SanskritLexicography_pwg-cache-economy-prep-tm-adoption-verdict_14.08.26.md), blocked until H2703 merges
 
 ## Goal
 
@@ -22,7 +30,7 @@ Verdict: **PARTIAL — reuse the existing machinery and build only the missing c
 - Whole-card TM and fragment TM already eliminate calls on content-addressed hits. They remain the first two short-circuits; this plan does not rebuild them.
 - Claude CLI v2.1.223 reused a cold prefix across six later calls in the H2250 sequence; five created zero new cache tokens. The older “never reused” statement in `RussianTranslation/AGENTS.md` is stale and must be synchronized.
 - Bare cwd, safe mode, stable-left prompt order, TTL-aware pricing, and offline-ready Claude Message Batches already exist. Wave 1 consumes them rather than re-implementing them.
-- DeepSeek V4 Pro's 13-08 rematch failed in transport: `urllib.request.urlopen` could not hold the long thinking response. A streaming client is the first implementation and experiment gate.
+- DeepSeek V4 Pro's 13-08 `urllib` rematch failed in transport, but the replacement streaming client subsequently passed its 3/3 canary and the frozen 22-card rematch reached 21/22 deterministic-clean. Those gates are complete and must not be rerun by the residual handoffs.
 - No existing component supplies one provider-neutral prompt identity, retry-lineage ledger, prefix-group scheduler, or accepted-yield economics across generation and dependent lanes. That is the named gap.
 
 Sources of record: [prompt-caching playbook](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PROMPT_CACHING_PWG_RU.md), [operator runbook](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md), [H2652 report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/H2652_v4pro_rematch/REPORT.md), [E1 report](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/E1_deepseek_vs_c4/E1_FLASH_0731_VS_C4_REPORT_13-08-2026.md), and [Message Batches contract](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/BATCH_PROCESSING_PWG_RU.md).
