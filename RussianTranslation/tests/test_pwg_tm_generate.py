@@ -76,6 +76,20 @@ def test_generate_resume_skips_done(tmp_path):
     assert loaded['processed_keys'] == ['agni']
 
 
+def test_load_drafts_missing_is_empty(tmp_path):
+    assert Gen.load_drafts(None) == {}
+    assert Gen.load_drafts(str(tmp_path / 'nope.jsonl')) == {}
+
+
+def test_pin_frozen_accepts_wave2_queue():
+    root = os.path.join(ROOT, 'release', 'pwg_tm_canonical')
+    man = Gen.load_manifest(os.path.join(root, 'priority_5000_w2.manifest.json'))
+    queue = Gen.load_queue(os.path.join(root, 'priority_5000_w2.jsonl'))
+    keys = Gen.pin_frozen(man, queue, require_frozen=True)
+    assert len(keys) == 5000
+    assert man['manifest_sha256'] == Gen.FROZEN_MANIFEST_SHA256_W2
+
+
 def test_reconciliation_zero_silent_drops():
     promoted = [{'fragment_class': 'sense', 'k1': 'a'}]
     quarantine = [{'fragment_class': 'citation', 'k1': 'a'}]
