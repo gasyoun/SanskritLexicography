@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+- **H2703 generation-lane Pro cold/warm pair runner** (Grok 4.6 `grok-4.6`, 14-08-2026): sealed 22-pair / 44-call DeepSeek V4 Pro exact-request experiment on the frozen H2676 Q3 cohort. Runner [`cache_generation_pairs.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/cache_generation_pairs.py), report [`cache_economy_report.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/cache_economy_report.py). Verdict rule: [`experiments/pwg_cache_economy/h2703_generation/VERDICT_RULE.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2703_generation/VERDICT_RULE.md). Adoption stays with H2704.
+
 ## [1.144.49] - 2026-08-14
 - **H2702 cache-economy contract foundation** (Grok 4.6 `grok-4.6`, 14-08-2026): provider-neutral request identity, legacy Claude/DeepSeek byte reconstruction, reversible converter, crash-safe JSONL ledger, hierarchical reuse fence, deterministic prefix scheduler. Zero paid calls; canonical store/TM hashes unchanged. Contract: [`RussianTranslation/docs/PWG_CACHE_CONTRACT_PROVIDER_NEUTRAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PWG_CACHE_CONTRACT_PROVIDER_NEUTRAL.md).
 

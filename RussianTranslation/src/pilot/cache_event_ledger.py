@@ -112,6 +112,24 @@ def completed_request_ids(events):
     return done
 
 
+SLOT_TERMINAL_KINDS = frozenset({
+    'terminal_response', 'park', 'stop', 'tm_short_circuit',
+})
+
+
+def completed_pair_slots(events):
+    """Slots keyed by (request_id, cold_warm). Cold and warm share request_id."""
+    done = set()
+    for event in events:
+        if event.get('kind') not in SLOT_TERMINAL_KINDS:
+            continue
+        rid = event.get('request_id')
+        cw = event.get('cold_warm')
+        if rid and cw in ('cold', 'warm'):
+            done.add((rid, cw))
+    return done
+
+
 class EventLedger:
     def __init__(self, run_dir):
         self.run_dir = os.path.abspath(run_dir)
