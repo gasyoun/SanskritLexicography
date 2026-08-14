@@ -16,6 +16,7 @@ in a named quarantine tier. Resume from checkpoint. Never silent-drop.
 from __future__ import annotations
 
 import argparse
+import gc
 import json
 import os
 import re
@@ -46,6 +47,17 @@ FROZEN_MANIFEST_SHA256 = (
 FROZEN_KEYS_SHA256 = (
     'a7acf80f5cb0fce17e0a6b35c7ba1b4ce76c270b9973d31d707f338ce15fb84c'
 )
+# Wave-2 pin (H2721 queue). pin_frozen accepts either wave.
+FROZEN_MANIFEST_SHA256_W2 = (
+    'f9fdb4ff6155f2e945d4f26d5fdb07a7f96b36ad48537b5a0be43988b0335ff8'
+)
+FROZEN_KEYS_SHA256_W2 = (
+    '4d1bd63ca16bfe9bbbe28b9c02db0a1a4b4c7534eaf4d000f9cec27a36da6d39'
+)
+FROZEN_PINS = {
+    FROZEN_MANIFEST_SHA256: FROZEN_KEYS_SHA256,
+    FROZEN_MANIFEST_SHA256_W2: FROZEN_KEYS_SHA256_W2,
+}
 DEFAULT_MANIFEST = os.path.join(C.DEFAULT_OUT_DIR, 'priority_5000.manifest.json')
 DEFAULT_QUEUE = os.path.join(C.DEFAULT_OUT_DIR, 'priority_5000.jsonl')
 DEFAULT_OUT = os.path.join(C.DEFAULT_OUT_DIR, 'wave1_b')
@@ -170,13 +182,15 @@ def pin_frozen(manifest, queue, require_frozen=True):
         raise SystemExit('pwg_tm_generate: duplicate k1 in queue')
     key_hash = C.sha256_json(keys)
     if require_frozen:
-        if manifest.get('manifest_sha256') != FROZEN_MANIFEST_SHA256:
+        mhash = manifest.get('manifest_sha256')
+        expect_keys = FROZEN_PINS.get(mhash)
+        if expect_keys is None:
             raise SystemExit(
-                'pwg_tm_generate: manifest hash %s != frozen %s'
-                % (manifest.get('manifest_sha256'), FROZEN_MANIFEST_SHA256))
-        if manifest.get('selected_keys_sha256') != FROZEN_KEYS_SHA256:
+                'pwg_tm_generate: manifest hash %s is not a frozen wave pin'
+                % mhash)
+        if manifest.get('selected_keys_sha256') != expect_keys:
             raise SystemExit('pwg_tm_generate: selected_keys_sha256 drift')
-        if key_hash != FROZEN_KEYS_SHA256:
+        if key_hash != expect_keys:
             raise SystemExit('pwg_tm_generate: queue key hash drift')
         if len(keys) != 5000:
             raise SystemExit('pwg_tm_generate: queue length %d != 5000' % len(keys))
@@ -203,11 +217,28 @@ def save_json(path, obj):
     C.write_json(path, obj)
 
 
+_FID_RE = re.compile(r'"fragment_id"\s*:\s*"([^"]+)"')
+
+
 def append_jsonl(path, rows):
     os.makedirs(os.path.dirname(path) or '.', exist_ok=True)
     with open(path, 'a', encoding='utf-8', newline='\n') as f:
         for row in rows:
             f.write(json.dumps(row, ensure_ascii=False) + '\n')
+
+
+def load_seen_ids(out_dir):
+    seen = set()
+    for name in ('promoted.jsonl', 'quarantine.jsonl'):
+        path = os.path.join(out_dir, name)
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding='utf-8') as f:
+            for line in f:
+                m = _FID_RE.search(line)
+                if m:
+                    seen.add(m.group(1))
+    return seen
 
 
 def records_from_pwg(path, wanted):
@@ -342,7 +373,7 @@ def stamp_generation(fragment, *, origin, usage=None):
 
 
 def load_drafts(path):
-    if not path:
+    if not path or not os.path.exists(path):
         return {}
     out = {}
     for row in C.read_jsonl(path):
@@ -902,22 +933,7 @@ def cmd_drain(args):
         except json.JSONDecodeError:
             ledger = empty_ledger()
     os.makedirs(out_dir, exist_ok=True)
-    seen_ids = set()
-    for path_name in ('promoted.jsonl', 'quarantine.jsonl'):
-        path = os.path.join(out_dir, path_name)
-        if not os.path.exists(path):
-            continue
-        with open(path, encoding='utf-8') as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    fid = json.loads(line).get('fragment_id')
-                except json.JSONDecodeError:
-                    continue
-                if fid:
-                    seen_ids.add(fid)
+    seen_ids = load_seen_ids(out_dir)
     windows = 0
     for i in range(0, len(pending), window):
         batch = pending[i:i + window]
@@ -984,6 +1000,7 @@ def cmd_drain(args):
         }, ensure_ascii=False), flush=True)
         if not recon['ok']:
             return 1
+        gc.collect()
     recon = _drain_totals(
         out_dir, len(done), missing_all, ledger, manifest,
         fill_stats_sum, extracted_n, len(queue), promoted_n, quarantine_n)

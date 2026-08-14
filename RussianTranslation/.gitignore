@@ -67,6 +67,7 @@ release/pwg_tm_canonical/fragments.v1.jsonl
 # H2684 full-wave generate dumps (resume locally). Compact receipt is
 # wave1_b_receipt/; the first slice remains under wave1_b_slice/.
 release/pwg_tm_canonical/wave1_b/
+release/pwg_tm_canonical/wave2_b/
 
 # H2685 four-format binaries (regenerable via pwg_tm_release.py; attached to
 # the GitHub release). Tracked siblings: manifest.json, SHA256SUMS,
