@@ -1,0 +1,67 @@
+{
+  "schema": "pwg.h2676_q3_summary.v1",
+  "handoff": "H2676",
+  "verdict": "PASS",
+  "n": 22,
+  "attempted": 22,
+  "det_gate_clean": 21,
+  "det_clean_floor": 15,
+  "usd": 0.4181,
+  "usd_per_clean": 0.01991,
+  "usd_per_clean_ceiling": 0.0465,
+  "flash_usd_per_clean": 0.0093,
+  "store_write": false,
+  "would_promote_count": 0,
+  "promote_dry": true,
+  "model": "deepseek-v4-pro",
+  "transport": "openai-sdk-stream",
+  "price_card": "pre-1608",
+  "price_model": "deepseek-v4-pro",
+  "price_table": {
+    "cache_miss_in": 0.435,
+    "cache_hit_in": 0.003625,
+    "out": 0.87
+  },
+  "served_model_ok": true,
+  "price_ok": true,
+  "clauses": {
+    "attempted_22": true,
+    "det_clean_ge_15": true,
+    "usd_per_clean_le_5x_flash": true,
+    "served_pro": true,
+    "pro_price_table": true,
+    "store_write_never_true": true
+  },
+  "status_counts": {
+    "pending-controller": 21,
+    "worker-null-death": 1
+  },
+  "transport_death_keys": [
+    "par_rin"
+  ],
+  "clean_keys": [
+    "ya_tepsita",
+    "vi_svaha",
+    "vi_sa",
+    "dr_ava_ra",
+    "sa_msargin",
+    "kakz_ivant",
+    "a_ngaja",
+    "vyatyaya",
+    "roza",
+    "pras_u",
+    "div_a",
+    "vazawk_ara",
+    "anar_ta",
+    "sa_b_ajay",
+    "vi_d",
+    "d_ikz_a",
+    "p_avana",
+    "pf_tak",
+    "yatna",
+    "ras",
+    "vicitra"
+  ],
+  "wall_clock_s": 6350.7,
+  "generation_calls": 29
+}
