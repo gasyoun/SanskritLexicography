@@ -4,6 +4,21 @@ _Created: 09-07-2026 · Last updated: 14-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 14-08-2026 — H2684 (Grok 4.6) — PWG TM 5,000-key wave + independent n=400 FAIL
+
+Grok 4.6 (`grok-4.6`) drain; independent judge Grok 4.5 (`grok-4.5`). No PWG/csl-orig writes. No xAI HTTP call. One bounded repair (formula table + sample drafts + refill), then halt.
+
+| Gate | Result |
+|---|---|
+| Frozen manifest pin | `f024ec4b0b2e58f75868462d84fd51858e4de473d07c0dd825a487f3b73d952a` |
+| Queue / processed / missing | **5000 / 5000 / 0** |
+| Extracted / accounted | **753111 / 753111** |
+| Promoted / quarantine / silent drops | **655332 / 97779 / 0** |
+| Independent n=400 (Grok 4.5) | fidelity **398/400 = 99.5%** · equivalence **382/400 = 95.5%** · serious **10/400 = 2.5%** |
+| Floors | fid ≥98% pass · eq ≥95% pass · serious ≤1% **fail** |
+| Cost | not evaluable (session drafts; 0 billed tokens) |
+| `pytest tests/test_pwg_tm_generate.py` + canonical | 22/22 |
+
 ## 14-08-2026 — H2679 (Grok 4.6) — W1 TM-mine unmined SamudraManthanam delta
 
 Grok 4.6 (`grok-4.6`) orchestration; DeepSeek `deepseek-v4-flash` extraction. `mined` tier only. Never wrote the clean 1.09M lexicon.

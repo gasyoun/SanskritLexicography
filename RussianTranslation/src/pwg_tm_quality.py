@@ -296,13 +296,114 @@ def verify(sample_n=SAMPLE_N, adjudication=None, sample_meta=None):
     return report
 
 
+def iter_jsonl_offsets(path):
+    with open(path, encoding='utf-8') as f:
+        while True:
+            pos = f.tell()
+            line = f.readline()
+            if line == '':
+                break
+            if not line.strip():
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            yield pos, row
+
+
+def read_offsets(path, offsets):
+    rows = []
+    with open(path, encoding='utf-8') as f:
+        for pos in offsets:
+            f.seek(pos)
+            line = f.readline()
+            if line.strip():
+                rows.append(json.loads(line))
+    return rows
+
+
+def freeze_stream(paths, queue_rows, n=SAMPLE_N, seed=2684):
+    """Stratum sample without loading the whole pool into RAM."""
+    queue_by_k1 = {r['k1']: r for r in queue_rows}
+    loc_buckets = defaultdict(list)
+    pool = 0
+    for path in paths:
+        if not path or not os.path.exists(path):
+            continue
+        for pos, row in iter_jsonl_offsets(path):
+            if not (row.get('record_kind') == 'fragment' or row.get('fragment_id')):
+                continue
+            loc_buckets[stratum_key(row, queue_by_k1)].append((path, pos))
+            pool += 1
+    rng = random.Random(seed)
+    for key in loc_buckets:
+        loc_buckets[key].sort()
+        rng.shuffle(loc_buckets[key])
+    picked_locs = []
+    seen = set()
+
+    def take(loc):
+        token = '%s:%s' % loc
+        if token in seen:
+            return False
+        seen.add(token)
+        picked_locs.append(loc)
+        return True
+
+    for key in sorted(loc_buckets):
+        if loc_buckets[key]:
+            take(loc_buckets[key][0])
+    order = sorted(loc_buckets)
+    idx = {k: 1 for k in order}
+    while len(picked_locs) < n:
+        progressed = False
+        for key in order:
+            rows_k = loc_buckets[key]
+            i = idx[key]
+            if i < len(rows_k) and take(rows_k[i]):
+                idx[key] = i + 1
+                progressed = True
+            if len(picked_locs) >= n:
+                break
+        if not progressed:
+            break
+    by_path = defaultdict(list)
+    for path, pos in picked_locs:
+        by_path[path].append(pos)
+    picked = []
+    for path, positions in by_path.items():
+        picked.extend(read_offsets(path, positions))
+    picked.sort(key=lambda r: r.get('fragment_id') or '')
+    meta = {
+        'schema': 'pwg.tm.quality.sample.v1',
+        'n_requested': n,
+        'n_drawn': len(picked),
+        'seed': seed,
+        'pool': pool,
+        'buckets': {str(k): len(v) for k, v in sorted(loc_buckets.items())},
+        'by_class': dict(Counter(r.get('fragment_class') for r in picked)),
+        'by_accept': dict(Counter(
+            'accepted' if (r.get('promotion_status') == 'promoted'
+                           or r.get('gate_status') == 'pass') else 'rejected'
+            for r in picked)),
+        'complete_n': len(picked) >= n,
+        'streamed': True,
+    }
+    return picked, meta
+
+
 def cmd_freeze(args):
-    pool = load_pool(args.inputs or [
+    paths = args.inputs or [
         os.path.join(args.in_dir, 'promoted.jsonl'),
         os.path.join(args.in_dir, 'quarantine.jsonl'),
-    ])
+    ]
     queue = C.read_jsonl(args.queue) if args.queue and os.path.exists(args.queue) else []
-    picked, meta = freeze_sample(pool, queue, n=args.sample, seed=args.seed)
+    if getattr(args, 'stream', False):
+        picked, meta = freeze_stream(paths, queue, n=args.sample, seed=args.seed)
+    else:
+        pool = load_pool(paths)
+        picked, meta = freeze_sample(pool, queue, n=args.sample, seed=args.seed)
     C.write_jsonl(args.out, picked)
     meta_path = args.out + '.meta.json'
     C.write_json(meta_path, meta)
@@ -407,6 +508,7 @@ def build_parser():
     p_fr.add_argument('--out', required=True)
     p_fr.add_argument('--sample', type=int, default=SAMPLE_N)
     p_fr.add_argument('--seed', type=int, default=2684)
+    p_fr.add_argument('--stream', action='store_true')
     p_pk = sub.add_parser('packet')
     p_pk.add_argument('--sample-file', required=True)
     p_pk.add_argument('--out', required=True)

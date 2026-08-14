@@ -8,6 +8,9 @@ in a named quarantine tier. Resume from checkpoint. Never silent-drop.
   python src/pwg_tm_generate.py --verify
   python src/pwg_tm_generate.py extract --limit 12 --out-dir DIR
   python src/pwg_tm_generate.py run --route grok-4.6 --drafts FILE --limit 12 --out-dir DIR
+  python src/pwg_tm_generate.py drain --route grok-4.6 --resume --seed-dir SLICE --out-dir DIR
+  python src/pwg_tm_generate.py needed --route grok-4.6 --out-dir DIR
+  python src/pwg_tm_generate.py refill --route grok-4.6 --drafts FILE --out-dir DIR
   python src/pwg_tm_generate.py reconcile --out-dir DIR
 """
 from __future__ import annotations
@@ -45,8 +48,11 @@ FROZEN_KEYS_SHA256 = (
 DEFAULT_MANIFEST = os.path.join(C.DEFAULT_OUT_DIR, 'priority_5000.manifest.json')
 DEFAULT_QUEUE = os.path.join(C.DEFAULT_OUT_DIR, 'priority_5000.jsonl')
 DEFAULT_OUT = os.path.join(C.DEFAULT_OUT_DIR, 'wave1_b')
+DEFAULT_SLICE = os.path.join(C.DEFAULT_OUT_DIR, 'wave1_b_slice')
 PWG_FIXTURE = os.path.join(
     C.ROOT, 'schemas', 'fixtures', 'pwg_tm_generate.pwg.fixture.txt')
+SOURCE_REUSE_CLASSES = frozenset({'definition_gloss', 'recurring_formula'})
+LIVE_BATCH_SIZE = 12
 
 # Conservative list estimate USD / 1M tokens. Tokens are authoritative.
 RATE_CARD = {
@@ -95,6 +101,37 @@ FORMULA_RU = {
     'vulg.': 'прост.',
     'patron.': 'патроним.',
     'überh.': 'вообще',
+    'demin.': 'уменьш.',
+    'relat.': 'относ.',
+    'personif.': 'олицетв.',
+    'plur.': 'мн.',
+    'superlat.': 'превосх.',
+    'vor.': 'предш.',
+    'd. st.': 'т. м.',
+    'w.': 'сл.',
+    'u.': 'и',
+    'ergänz.': 'доп.',
+    'spr.': 'изреч.',
+    'beinn.': 'эпитет',
+    'zeitww.': 'глаголы',
+    'sp.': 'стлб.',
+    'sog.': 'так наз.',
+    'commentt.': 'комм.',
+    'aufgef.': 'указ.',
+    'appos.': 'прилож.',
+    'insb.': 'в особ.',
+    'cop.': 'соед.',
+    'correl.': 'соотн.',
+    'decl.': 'скл.',
+    'myst.': 'мист.',
+    'var.': 'вар.',
+    'unterschrr.': 'подписи',
+    'bedeutt.': 'знач.',
+    'adverb. comp.': 'нареч. слож.',
+    'übertr.': 'перен.',
+    'uebertr.': 'перен.',
+    'uneig.': 'несобств.',
+    'uebertr': 'перен.',
 }
 # Grammatical metalanguage that fragmentize may class as formula: keep Latin.
 FORMULA_COPY = {
@@ -324,12 +361,49 @@ def merge_glosses(source, gloss_map):
     return GLOSS_SPAN.sub(repl, source or '')
 
 
-def apply_targets(fragments, drafts, reuse_index):
+def source_lexicon_key(fragment_class, source_string):
+    return '%s\t%s' % (fragment_class or '', C._norm_reuse(source_string))
+
+
+def build_source_lexicon(publication_path, extra_paths=None):
+    """Exact class+source reuse. Lemma address is not required; same German
+    gloss/formula may be reused across headwords. Sense wrappers are excluded.
+    """
+    index = {}
+
+    def add(klass, src, tgt):
+        if klass not in SOURCE_REUSE_CLASSES:
+            return
+        if not src or tgt is None or not str(tgt).strip():
+            return
+        key = source_lexicon_key(klass, src)
+        if key not in index:
+            index[key] = tgt
+
+    if publication_path and os.path.exists(publication_path):
+        pubs = C.read_jsonl(publication_path)
+        parents = [
+            C.migrate_publication(p, generated_at='1970-01-01T00:00:00Z')
+            for p in pubs]
+        for frag in F.fragmentize_rows(parents):
+            add(frag.get('fragment_class'), frag.get('source_string'),
+                frag.get('target_string'))
+    for path in extra_paths or []:
+        if not path or not os.path.exists(path):
+            continue
+        for row in C.read_jsonl(path):
+            add(row.get('fragment_class'), row.get('source_string'),
+                row.get('target_string') or row.get('target'))
+    return index
+
+
+def apply_targets(fragments, drafts, reuse_index, source_lexicon=None):
     filled = []
     stats = {
         'reuse_exact': 0, 'deterministic': 0, 'drafted': 0,
-        'sense_merge': 0, 'unfilled': 0,
+        'sense_merge': 0, 'unfilled': 0, 'source_reuse': 0,
     }
+    source_lexicon = source_lexicon or {}
     gloss_map = {}
     pending = []
     for frag in fragments:
@@ -357,7 +431,16 @@ def apply_targets(fragments, drafts, reuse_index):
                 usage = row.get('usage') or usage
                 stats['drafted'] += 1
             else:
-                origin = 'unfilled'
+                lex = None
+                if frag.get('fragment_class') in SOURCE_REUSE_CLASSES:
+                    lex = source_lexicon.get(
+                        source_lexicon_key(frag.get('fragment_class'), src))
+                if lex is not None:
+                    frag['target_string'] = lex
+                    origin = 'exact_source_reuse'
+                    stats['source_reuse'] += 1
+                else:
+                    origin = 'unfilled'
         if (frag.get('fragment_class') == 'definition_gloss'
                 and frag.get('target_string')):
             gloss_map[src] = frag['target_string']
@@ -508,6 +591,106 @@ def write_run(out_dir, promoted, quarantine, receipts, checkpoint, ledger, recon
     return recon
 
 
+def count_jsonl(path):
+    if not path or not os.path.exists(path):
+        return 0
+    n = 0
+    with open(path, encoding='utf-8') as f:
+        for line in f:
+            if line.strip():
+                n += 1
+    return n
+
+
+def merge_counter(dst, src):
+    for key, val in (src or {}).items():
+        dst[key] = dst.get(key, 0) + int(val or 0)
+    return dst
+
+
+def seed_out_dir(out_dir, seed_dir):
+    """Copy first-slice jsonl/checkpoint into the resumable wave dir once."""
+    if not seed_dir or not os.path.isdir(seed_dir):
+        return False
+    os.makedirs(out_dir, exist_ok=True)
+    copied = False
+    for name in ('promoted.jsonl', 'quarantine.jsonl', 'gate_receipts.jsonl',
+                 'cost_ledger.json', 'checkpoint.json', 'reconciliation.json'):
+        src = os.path.join(seed_dir, name)
+        dst = os.path.join(out_dir, name)
+        if os.path.exists(src) and not os.path.exists(dst):
+            with open(src, 'rb') as f_in, open(dst, 'wb') as f_out:
+                f_out.write(f_in.read())
+            copied = True
+    drafts_src = os.path.join(seed_dir, 'grok46_drafts.jsonl')
+    drafts_dst = os.path.join(out_dir, 'grok46_drafts.jsonl')
+    if os.path.exists(drafts_src) and not os.path.exists(drafts_dst):
+        with open(drafts_src, 'rb') as f_in, open(drafts_dst, 'wb') as f_out:
+            f_out.write(f_in.read())
+    return copied
+
+
+def load_or_build_pwg_cache(pwg_path, wanted, cache_path):
+    cached = {}
+    if cache_path and os.path.exists(cache_path):
+        for rec in C.read_jsonl(cache_path):
+            cached.setdefault(rec['k1'], []).append(rec)
+    missing = set(wanted) - set(cached)
+    if missing and os.path.exists(pwg_path):
+        found = records_from_pwg(pwg_path, missing)
+        new_rows = [rec for k in sorted(missing) for rec in found.get(k, [])]
+        if cache_path and new_rows:
+            append_jsonl(cache_path, new_rows)
+        for rec in new_rows:
+            cached.setdefault(rec['k1'], []).append(rec)
+    return cached
+
+
+def unique_unfilled_rows(filled):
+    seen = {}
+    rows = []
+    for frag in filled:
+        if (frag.get('generation') or {}).get('origin') != 'unfilled':
+            continue
+        klass = frag.get('fragment_class')
+        if klass not in ('definition_gloss', 'sense'):
+            continue
+        key = source_lexicon_key(klass, frag.get('source_string') or '')
+        if key in seen:
+            seen[key] += 1
+            continue
+        seen[key] = 1
+        rows.append({
+            'fragment_id': frag.get('fragment_id'),
+            'fragment_class': klass,
+            'source_string': frag.get('source_string'),
+            'target_string': None,
+            'origin': 'grok-4.6-draft',
+            'usage': {
+                'input_tokens': 0, 'output_tokens': 0, 'cost_usd': 0.0,
+                'note': 'session-drafted Grok 4.6 (grok-4.6); no xAI HTTP call',
+            },
+        })
+    for row in rows:
+        key = source_lexicon_key(row['fragment_class'], row['source_string'] or '')
+        row['n_same_source'] = seen[key]
+    return rows
+
+
+def process_records(pwg_recs, drafts, reuse, lexicon, live=False, live_batch=LIVE_BATCH_SIZE):
+    _parents, fragments = extract_records(pwg_recs)
+    if live:
+        preview, _st = apply_targets(fragments, drafts, reuse, lexicon)
+        need = [f for f in preview
+                if (f.get('generation') or {}).get('origin') == 'unfilled']
+        if need:
+            drafts = dict(drafts)
+            drafts.update(live_complete(need, batch_size=live_batch))
+    filled, fill_stats = apply_targets(fragments, drafts, reuse, lexicon)
+    promoted, quarantine, receipts = promote_rows(filled)
+    return fragments, filled, promoted, quarantine, receipts, fill_stats
+
+
 def run_window(args):
     require_route(args.route)
     manifest = load_manifest(args.manifest)
@@ -525,21 +708,17 @@ def run_window(args):
     found = records_from_pwg(pwg_path, wanted) if os.path.exists(pwg_path) else {}
     missing = sorted(wanted - set(found))
     pwg_recs = [rec for k in wanted for rec in found.get(k, [])]
-    _parents, fragments = extract_records(pwg_recs)
     drafts = load_drafts(args.drafts)
-    if args.live:
-        need = []
-        preview, _st = apply_targets(fragments, drafts, {})
-        for frag in preview:
-            if (frag.get('generation') or {}).get('origin') == 'unfilled':
-                need.append(frag)
-        if need:
-            drafts = dict(drafts)
-            drafts.update(live_complete(need))
+    extra_lex = []
+    if getattr(args, 'lexicon_extra', None):
+        extra_lex.extend(args.lexicon_extra)
+    lexicon = {} if args.no_reuse else build_source_lexicon(
+        args.publication or C.DEFAULT_PUBLICATION, extra_lex)
     reuse = {} if args.no_reuse else reuse_index_from_publication(
         args.publication or C.DEFAULT_PUBLICATION)
-    filled, fill_stats = apply_targets(fragments, drafts, reuse)
-    promoted, quarantine, receipts = promote_rows(filled)
+    fragments, filled, promoted, quarantine, receipts, fill_stats = process_records(
+        pwg_recs, drafts, reuse, lexicon,
+        live=args.live, live_batch=getattr(args, 'live_batch', LIVE_BATCH_SIZE))
     ledger = empty_ledger()
     for frag in filled:
         if (frag.get('generation') or {}).get('origin') in (
@@ -631,16 +810,335 @@ def cmd_reconcile(args):
     return 0 if recon.get('ok') else 1
 
 
-def live_complete(items):
-    """Optional xAI call. Refuses without XAI_API_KEY. Not used by default."""
-    key = os.environ.get('XAI_API_KEY')
-    if not key:
-        raise SystemExit('pwg_tm_generate --live requires XAI_API_KEY')
-    try:
-        from openai import OpenAI
-    except ImportError as exc:
-        raise SystemExit('pwg_tm_generate --live needs openai SDK: %s' % exc)
-    client = OpenAI(api_key=key, base_url='https://api.x.ai/v1')
+def _drain_totals(out_dir, processed_n, missing, ledger, manifest, fill_stats,
+                  extracted_n, queue_len, promoted_n, quarantine_n):
+    acc = {
+        'schema': 'pwg.tm.generate.reconciliation.v1',
+        'manifest_sha256': manifest.get('manifest_sha256'),
+        'route_id': ROUTE_ID,
+        'model_id': MODEL_ID,
+        'prompt_sha256': prompt_sha256(),
+        'pipeline_version': PIPELINE_VERSION,
+        'gate_version': G.GATE_VERSION,
+        'queue_keys': queue_len,
+        'processed_keys': processed_n,
+        'missing_source_keys': sorted(missing),
+        'promoted_fragments': promoted_n,
+        'quarantine_fragments': quarantine_n,
+        'silent_drops': 0,
+        'unaccounted_promotions': 0,
+        'promotion_status_counts': {
+            'promoted': promoted_n,
+            'quarantine': quarantine_n,
+        },
+        'ledger': ledger,
+        'fill_stats': fill_stats,
+        'extracted_fragments': extracted_n,
+        'accounted_fragments': promoted_n + quarantine_n,
+        'ok': True,
+    }
+    if acc['extracted_fragments'] != acc['accounted_fragments']:
+        acc['silent_drops'] = (
+            acc['extracted_fragments'] - acc['accounted_fragments'])
+        acc['ok'] = False
+    return acc
+
+
+def cmd_drain(args):
+    require_route(args.route)
+    manifest = load_manifest(args.manifest)
+    queue = load_queue(args.queue)
+    pin_frozen(manifest, queue, require_frozen=not args.allow_unfrozen)
+    out_dir = args.out_dir
+    if args.seed_dir:
+        seed_out_dir(out_dir, args.seed_dir)
+    ckpt_path = args.checkpoint or os.path.join(out_dir, 'checkpoint.json')
+    ckpt = load_checkpoint(ckpt_path) if args.resume else None
+    done = set((ckpt or {}).get('processed_keys') or [])
+    pending = [r for r in queue if r['k1'] not in done]
+    if args.max_keys and args.max_keys > 0:
+        pending = pending[:args.max_keys]
+    window = max(1, args.window_size)
+    extra_lex = [os.path.join(out_dir, 'grok46_drafts.jsonl')]
+    if args.drafts:
+        extra_lex.append(args.drafts)
+    if getattr(args, 'lexicon_extra', None):
+        extra_lex.extend(args.lexicon_extra)
+    lexicon = {} if args.no_reuse else build_source_lexicon(
+        args.publication or C.DEFAULT_PUBLICATION, extra_lex)
+    reuse = {} if args.no_reuse else reuse_index_from_publication(
+        args.publication or C.DEFAULT_PUBLICATION)
+    drafts = load_drafts(args.drafts or os.path.join(out_dir, 'grok46_drafts.jsonl'))
+    pwg_path = args.pwg or _default_pwg()
+    cache_path = os.path.join(out_dir, 'pwg_records_cache.jsonl')
+    wanted_all = {r['k1'] for r in pending}
+    found = load_or_build_pwg_cache(pwg_path, wanted_all, cache_path)
+    missing_all = set()
+    fill_stats_sum = {
+        'reuse_exact': 0, 'deterministic': 0, 'drafted': 0,
+        'sense_merge': 0, 'unfilled': 0, 'source_reuse': 0,
+    }
+    extracted_n = 0
+    recon_path = os.path.join(out_dir, 'reconciliation.json')
+    if os.path.exists(recon_path):
+        prev = json.load(open(recon_path, encoding='utf-8'))
+        extracted_n = int(prev.get('extracted_fragments') or 0)
+        merge_counter(fill_stats_sum, prev.get('fill_stats') or {})
+    promoted_n = count_jsonl(os.path.join(out_dir, 'promoted.jsonl'))
+    quarantine_n = count_jsonl(os.path.join(out_dir, 'quarantine.jsonl'))
+    seeded_accounted = promoted_n + quarantine_n
+    if extracted_n < seeded_accounted:
+        extracted_n = seeded_accounted
+    ledger = empty_ledger()
+    ledger_path = os.path.join(out_dir, 'cost_ledger.json')
+    if os.path.exists(ledger_path):
+        try:
+            ledger = json.load(open(ledger_path, encoding='utf-8'))
+        except json.JSONDecodeError:
+            ledger = empty_ledger()
+    os.makedirs(out_dir, exist_ok=True)
+    seen_ids = set()
+    for path_name in ('promoted.jsonl', 'quarantine.jsonl'):
+        path = os.path.join(out_dir, path_name)
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    fid = json.loads(line).get('fragment_id')
+                except json.JSONDecodeError:
+                    continue
+                if fid:
+                    seen_ids.add(fid)
+    windows = 0
+    for i in range(0, len(pending), window):
+        batch = pending[i:i + window]
+        wanted = {r['k1'] for r in batch}
+        missing = sorted(wanted - set(found))
+        missing_all.update(missing)
+        pwg_recs = [rec for k in wanted for rec in found.get(k, [])]
+        fragments, filled, promoted, quarantine, receipts, fill_stats = process_records(
+            pwg_recs, drafts, reuse, lexicon,
+            live=args.live, live_batch=getattr(args, 'live_batch', LIVE_BATCH_SIZE))
+        promoted = [r for r in promoted if r.get('fragment_id') not in seen_ids]
+        quarantine = [r for r in quarantine if r.get('fragment_id') not in seen_ids]
+        receipts = [r for r in receipts if r.get('fragment_id') not in seen_ids]
+        append_jsonl(os.path.join(out_dir, 'promoted.jsonl'), promoted)
+        append_jsonl(os.path.join(out_dir, 'quarantine.jsonl'), quarantine)
+        append_jsonl(os.path.join(out_dir, 'gate_receipts.jsonl'), receipts)
+        for row in promoted + quarantine:
+            fid = row.get('fragment_id')
+            if fid:
+                seen_ids.add(fid)
+        merge_counter(fill_stats_sum, fill_stats)
+        promoted_n += len(promoted)
+        quarantine_n += len(quarantine)
+        extracted_n = promoted_n + quarantine_n
+        for frag in filled:
+            if (frag.get('generation') or {}).get('origin') in (
+                    'grok-4.6-draft', 'grok-4.6-live'):
+                add_usage(ledger, (frag.get('generation') or {}).get('usage'))
+        done |= wanted
+        remaining_n = len(queue) - len(done)
+        checkpoint = {
+            'schema': 'pwg.tm.generate.checkpoint.v1',
+            'manifest_sha256': manifest.get('manifest_sha256'),
+            'route_id': ROUTE_ID,
+            'model_id': MODEL_ID,
+            'prompt_sha256': prompt_sha256(),
+            'pipeline_version': PIPELINE_VERSION,
+            'processed_keys': sorted(done),
+            'pending_count': remaining_n,
+            'offset': 0,
+            'limit': window,
+            'promoted_fragments': promoted_n,
+            'quarantine_fragments': quarantine_n,
+            'missing_source': sorted(missing_all),
+            'resumable': True,
+            'last_window_keys': sorted(wanted),
+        }
+        recon = _drain_totals(
+            out_dir, len(done), missing_all, ledger, manifest,
+            fill_stats_sum, extracted_n, len(queue), promoted_n, quarantine_n)
+        save_json(os.path.join(out_dir, 'checkpoint.json'), checkpoint)
+        save_json(os.path.join(out_dir, 'cost_ledger.json'), ledger)
+        save_json(os.path.join(out_dir, 'reconciliation.json'), recon)
+        windows += 1
+        print(json.dumps({
+            'window': windows,
+            'keys': sorted(wanted),
+            'ok': recon['ok'],
+            'processed_total': len(done),
+            'pending_total': remaining_n,
+            'promoted': recon['promoted_fragments'],
+            'quarantine': recon['quarantine_fragments'],
+            'fill_stats': fill_stats,
+        }, ensure_ascii=False), flush=True)
+        if not recon['ok']:
+            return 1
+    recon = _drain_totals(
+        out_dir, len(done), missing_all, ledger, manifest,
+        fill_stats_sum, extracted_n, len(queue), promoted_n, quarantine_n)
+    print(json.dumps({
+        'ok': recon['ok'],
+        'processed': len(done),
+        'pending': len(queue) - len(done),
+        'promoted': recon['promoted_fragments'],
+        'quarantine': recon['quarantine_fragments'],
+        'extracted': extracted_n,
+        'fill_stats': fill_stats_sum,
+        'out_dir': out_dir,
+    }, ensure_ascii=False))
+    return 0 if recon['ok'] else 1
+
+
+def cmd_needed(args):
+    require_route(args.route)
+    manifest = load_manifest(args.manifest)
+    queue = load_queue(args.queue)
+    pin_frozen(manifest, queue, require_frozen=not args.allow_unfrozen)
+    ckpt = load_checkpoint(args.checkpoint or os.path.join(args.out_dir, 'checkpoint.json'))
+    done = set((ckpt or {}).get('processed_keys') or [])
+    pending = [r for r in queue if r['k1'] not in done]
+    if args.max_keys and args.max_keys > 0:
+        pending = pending[:args.max_keys]
+    wanted = {r['k1'] for r in pending}
+    pwg_path = args.pwg or _default_pwg()
+    cache_path = os.path.join(args.out_dir, 'pwg_records_cache.jsonl')
+    found = load_or_build_pwg_cache(pwg_path, wanted, cache_path)
+    pwg_recs = [rec for k in wanted for rec in found.get(k, [])]
+    extra_lex = [os.path.join(args.out_dir, 'promoted.jsonl'),
+                 os.path.join(args.out_dir, 'grok46_drafts.jsonl')]
+    if args.drafts:
+        extra_lex.append(args.drafts)
+    lexicon = {} if args.no_reuse else build_source_lexicon(
+        args.publication or C.DEFAULT_PUBLICATION, extra_lex)
+    reuse = {} if args.no_reuse else reuse_index_from_publication(
+        args.publication or C.DEFAULT_PUBLICATION)
+    drafts = load_drafts(args.drafts or os.path.join(args.out_dir, 'grok46_drafts.jsonl'))
+    _parents, fragments = extract_records(pwg_recs)
+    filled, stats = apply_targets(fragments, drafts, reuse, lexicon)
+    rows = unique_unfilled_rows(filled)
+    os.makedirs(args.out_dir, exist_ok=True)
+    out = args.needed_out or os.path.join(args.out_dir, 'needed_drafts.jsonl')
+    C.write_jsonl(out, rows)
+    print(json.dumps({
+        'pending_keys': len(pending),
+        'extracted': len(fragments),
+        'fill_stats': stats,
+        'unique_unfilled': len(rows),
+        'out': out,
+    }, ensure_ascii=False))
+    return 0
+
+
+def cmd_refill(args):
+    """Re-apply drafts/lexicon to quarantined unfilled rows and re-gate."""
+    require_route(args.route)
+    out_dir = args.out_dir
+    q_path = os.path.join(out_dir, 'quarantine.jsonl')
+    p_path = os.path.join(out_dir, 'promoted.jsonl')
+    if not os.path.exists(q_path):
+        raise SystemExit('pwg_tm_generate refill: no quarantine at %s' % q_path)
+    quarantine = C.read_jsonl(q_path)
+    extra_lex = [p_path, os.path.join(out_dir, 'grok46_drafts.jsonl')]
+    if args.drafts:
+        extra_lex.append(args.drafts)
+    if getattr(args, 'lexicon_extra', None):
+        extra_lex.extend(args.lexicon_extra)
+    lexicon = {} if args.no_reuse else build_source_lexicon(
+        args.publication or C.DEFAULT_PUBLICATION, extra_lex)
+    drafts = load_drafts(args.drafts or os.path.join(out_dir, 'grok46_drafts.jsonl'))
+    drafts_by_src = {}
+    for row in drafts.values():
+        src = row.get('source_string')
+        tgt = row.get('target_string')
+        if src and tgt:
+            drafts_by_src[source_lexicon_key(
+                row.get('fragment_class') or 'definition_gloss', src)] = row
+    stay, moved, receipts = [], [], []
+    fill = {'drafted': 0, 'source_reuse': 0, 'sense_merge': 0, 'unchanged': 0}
+    gloss_map = {}
+    for row in quarantine:
+        if (row.get('fragment_class') == 'definition_gloss'
+                and row.get('target_string')):
+            gloss_map[row.get('source_string') or ''] = row['target_string']
+    for row in quarantine:
+        origin = (row.get('generation') or {}).get('origin')
+        if origin != 'unfilled':
+            stay.append(row)
+            fill['unchanged'] += 1
+            continue
+        src = row.get('source_string') or ''
+        klass = row.get('fragment_class')
+        usage = {'input_tokens': 0, 'output_tokens': 0, 'cost_usd': 0.0}
+        new_origin = None
+        tgt = None
+        det, det_origin = deterministic_target(row)
+        if det is not None:
+            tgt = det
+            new_origin = det_origin
+            fill['source_reuse'] += 1
+        elif row.get('fragment_id') in drafts:
+            d = drafts[row['fragment_id']]
+            tgt = d.get('target_string')
+            new_origin = d.get('origin') or 'grok-4.6-draft'
+            usage = d.get('usage') or usage
+            fill['drafted'] += 1
+        elif klass in SOURCE_REUSE_CLASSES:
+            lex = lexicon.get(source_lexicon_key(klass, src))
+            if lex is not None:
+                tgt = lex
+                new_origin = 'exact_source_reuse'
+                fill['source_reuse'] += 1
+            else:
+                d = drafts_by_src.get(source_lexicon_key(klass, src))
+                if d:
+                    tgt = d.get('target_string')
+                    new_origin = d.get('origin') or 'grok-4.6-draft'
+                    usage = d.get('usage') or usage
+                    fill['drafted'] += 1
+        if tgt is None and klass == 'sense':
+            merged = merge_glosses(src, gloss_map)
+            if merged != src and GLOSS_SPAN.search(src):
+                tgt = merged
+                new_origin = 'sense_merge'
+                fill['sense_merge'] += 1
+        if tgt is None:
+            stay.append(row)
+            fill['unchanged'] += 1
+            continue
+        updated = stamp_generation(dict(row), origin=new_origin, usage=usage)
+        updated['target_string'] = tgt
+        updated['target_hash'] = C.sha256_text(tgt)
+        rec = G.gate_fragment(updated)
+        gated = G.apply_gate(updated, rec)
+        receipts.append(rec)
+        if rec.get('ok'):
+            moved.append(gated)
+            if klass == 'definition_gloss':
+                gloss_map[src] = tgt
+        else:
+            stay.append(gated)
+    C.write_jsonl(q_path, stay)
+    append_jsonl(p_path, moved)
+    if receipts:
+        append_jsonl(os.path.join(out_dir, 'gate_receipts.jsonl'), receipts)
+    summary = {
+        'ok': True,
+        'moved_to_promoted': len(moved),
+        'still_quarantine': len(stay),
+        'fill': fill,
+    }
+    save_json(os.path.join(out_dir, 'refill_receipt.json'), summary)
+    print(json.dumps(summary, ensure_ascii=False))
+    return 0
+
+
+def _live_complete_chunk(client, items):
     payload = [{'fragment_id': i['fragment_id'],
                 'fragment_class': i['fragment_class'],
                 'source_string': i['source_string'],
@@ -680,6 +1178,23 @@ def live_complete(items):
                 'cost_usd': 0.0,
             },
         }
+    return out
+
+
+def live_complete(items, batch_size=LIVE_BATCH_SIZE):
+    """Optional xAI call. Refuses without XAI_API_KEY. Not used by default."""
+    key = os.environ.get('XAI_API_KEY')
+    if not key:
+        raise SystemExit('pwg_tm_generate --live requires XAI_API_KEY')
+    try:
+        from openai import OpenAI
+    except ImportError as exc:
+        raise SystemExit('pwg_tm_generate --live needs openai SDK: %s' % exc)
+    client = OpenAI(api_key=key, base_url='https://api.x.ai/v1')
+    out = {}
+    step = max(1, int(batch_size or LIVE_BATCH_SIZE))
+    for i in range(0, len(items), step):
+        out.update(_live_complete_chunk(client, items[i:i + step]))
     return out
 
 
@@ -776,11 +1291,23 @@ def build_parser():
         p.add_argument('--resume', action='store_true')
         p.add_argument('--no-reuse', action='store_true')
         p.add_argument('--live', action='store_true')
+        p.add_argument('--live-batch', type=int, default=LIVE_BATCH_SIZE)
+        p.add_argument('--seed-dir', default=None)
+        p.add_argument('--window-size', type=int, default=16)
+        p.add_argument('--max-keys', type=int, default=0)
+        p.add_argument('--lexicon-extra', nargs='*', default=None)
+        p.add_argument('--needed-out', default=None)
 
     p_run = sub.add_parser('run')
     add_shared(p_run)
     p_ex = sub.add_parser('extract')
     add_shared(p_ex)
+    p_drain = sub.add_parser('drain')
+    add_shared(p_drain)
+    p_need = sub.add_parser('needed')
+    add_shared(p_need)
+    p_refill = sub.add_parser('refill')
+    add_shared(p_refill)
     p_rec = sub.add_parser('reconcile')
     p_rec.add_argument('--out-dir', default=DEFAULT_OUT)
     return ap
@@ -802,6 +1329,18 @@ def main(argv=None):
             # live fills drafts in memory then runs the same gate path
             pass
         return run_window(args)
+    if args.cmd == 'drain':
+        if not args.route:
+            raise SystemExit('pwg_tm_generate drain: --route grok-4.6 is required')
+        return cmd_drain(args)
+    if args.cmd == 'needed':
+        if not args.route:
+            raise SystemExit('pwg_tm_generate needed: --route grok-4.6 is required')
+        return cmd_needed(args)
+    if args.cmd == 'refill':
+        if not args.route:
+            raise SystemExit('pwg_tm_generate refill: --route grok-4.6 is required')
+        return cmd_refill(args)
     if args.cmd == 'reconcile':
         return cmd_reconcile(args)
     ap.print_help()
