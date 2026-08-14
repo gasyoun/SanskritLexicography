@@ -19,15 +19,17 @@ Signal provenance in THIS slice (honest about what is real vs a proxy):
   * source_weight   -- REAL, from tm_source_weights.json (hand-ranked, versioned).
   * consensus       -- REAL, computed over the whole corpus: distinct works giving a
                        rendering for the same (passage, slp1) and how far they agree.
-  * qe_score        -- pluggable: `proxy` (deterministic, reference-free heuristic,
-                       the default so this runs with no model) or `comet` (COMET-QE
-                       via unbabel-comet if installed -- the Slice hook). NOT trained.
+  * qe_score        -- pluggable named backends. `proxy` is the surface-shape
+                       heuristic (NOT semantic). `labse` is genuine LaBSE cosine
+                       (H2686). `comet` is Unbabel COMET-QE only when that package
+                       or a real comet HTTP path serves -- never a relabel of
+                       proxy or labse.
   * alignment_confidence -- a Slice-2 PROXY (token-count plausibility). The real
                        SimAlign / awesome-align score lands in Slice 3; this is a
                        placeholder weighted low, documented so no one mistakes it for
                        a trained aligner output.
 
-  python tm_grade.py grade [--in P] [--qe proxy|comet] [--sample N] [--out P]
+  python tm_grade.py grade [--in P] [--qe proxy|comet|labse] [--sample N] [--out P]
                                           corpus_lexicon.jsonl -> grades sidecar + dist
   python tm_grade.py calibrate [--gold gold/gold_set.jsonl] [--in P]
                                           grade the labelled gold set, cross-tab vs label
@@ -41,6 +43,7 @@ and unbabel-comet is installed. Upstream alignments were DeepSeek (build_corpus_
 """
 import argparse
 import collections
+import hashlib
 import json
 import os
 import re
@@ -166,40 +169,98 @@ def qe_comet_factory():
     return score
 
 
-def qe_nn_api_factory():
-    """H1457 A2 -- COMET-QE via nn_api.py (the S1-designated adapter: HF
-    Inference API primary, logged fallbacks). Returns None if nn_api reports
-    no QE backend serves (see research/nn_api_smoketest.md for why, as of
-    22-07-2026: no unbabel-comet wheel for this Python, HF Inference API
-    401s unauthenticated, no LLM-judge key available)."""
+def qe_nn_api_factory(backend):
+    """Named-backend QE via nn_api.py. `backend` is passed through unchanged so
+    a labse score can never be returned under the name comet."""
     try:
         import nn_api
     except Exception as e:
-        sys.stderr.write('qe: nn_api import failed (%s) -> proxy\n' % e)
+        sys.stderr.write('qe: nn_api import failed (%s)\n' % e)
         return None
-    if not nn_api.qe_available():
+    if not nn_api.qe_available(backend):
         return None
 
     def score(rec):
-        s = nn_api.qe(rec.get('sa') or rec.get('slp1') or '', rec.get('ru') or '')
+        src = rec.get('sa') or rec.get('source_string') or rec.get('slp1') or ''
+        mt = rec.get('ru') or rec.get('target_string') or ''
+        s = nn_api.qe(src, mt, backend=backend)
         if s is None:
             return qe_proxy(rec)
         return max(0.0, min(1.0, float(s)))
     return score
 
 
+QE_CHOICES = ('proxy', 'comet', 'labse', 'deepseek')
+PROXY_RHO_PRELIMINARY = -0.0351
+
+
+def qe_deepseek_factory():
+    """H2686 repair: DeepSeek-v4-flash JSON judge as a named semantic QE.
+
+    Used only when the caller asked for `--qe deepseek`. Never returned under
+    the name comet or labse. Key is read the same way as the retrieval harness.
+    """
+    try:
+        import tm_retrieval_eval as ev
+    except Exception as e:
+        sys.stderr.write('qe: deepseek factory import failed (%s)\n' % e)
+        return None
+    key, _src = ev.load_deepseek_key()
+    if not key:
+        return None
+    _translate_fn, judge_fn, _ledger = ev.make_deepseek_fns(key)
+    cache_dir = os.path.join(HERE, '.nn_api_cache')
+    os.makedirs(cache_dir, exist_ok=True)
+
+    def score(rec):
+        src = rec.get('sa') or rec.get('source_string') or rec.get('slp1') or ''
+        mt = rec.get('ru') or rec.get('target_string') or ''
+        keyh = hashlib.sha256(('deepseek-qe\n%s\n%s' % (src, mt)).encode('utf-8')).hexdigest()[:24]
+        cache_p = os.path.join(cache_dir, 'qe-deepseek-%s.json' % keyh)
+        if os.path.exists(cache_p):
+            hit = json.load(open(cache_p, encoding='utf-8'))
+            return max(0.0, min(1.0, float(hit['quality'])))
+        judged = judge_fn({
+            'source_string': src,
+            'qe_reference_free': True,
+            'fragment_id': rec.get('id') or rec.get('slp1'),
+        }, {'text': mt})
+        q = judged.get('quality')
+        if q is None:
+            return qe_proxy(rec)
+        q = max(0.0, min(1.0, float(q)))
+        with open(cache_p, 'w', encoding='utf-8') as f:
+            json.dump({'quality': q, 'backend': 'deepseek'}, f, ensure_ascii=False)
+        return q
+    return score
+
+
 def make_qe(backend):
+    if backend == 'deepseek':
+        fn = qe_deepseek_factory()
+        if fn is not None:
+            return fn, 'deepseek'
+        sys.stderr.write('qe: deepseek unavailable -> using deterministic proxy '
+                         '(not labelled deepseek, labse or comet)\n')
+        return qe_proxy, 'proxy'
+    if backend == 'labse':
+        fn = qe_nn_api_factory('labse')
+        if fn is not None:
+            return fn, 'labse'
+        sys.stderr.write('qe: labse unavailable -> using deterministic proxy '
+                         '(not labelled labse or comet)\n')
+        return qe_proxy, 'proxy'
     if backend == 'comet':
-        fn = qe_nn_api_factory()
+        fn = qe_nn_api_factory('comet')
         if fn is not None:
             return fn, 'comet'
-        # legacy path: a locally-installed unbabel-comet package, if present
         fn = qe_comet_factory()
         if fn is not None:
             return fn, 'comet'
-        sys.stderr.write('qe: comet unavailable (nn_api + local unbabel-comet both '
-                         'absent/unserving; see research/nn_api_smoketest.md) -> '
-                         'using deterministic proxy\n')
+        sys.stderr.write('qe: comet unavailable (nn_api comet + local unbabel-comet '
+                         'both unserving) -> using deterministic proxy; not labelled '
+                         'comet\n')
+        return qe_proxy, 'proxy'
     return qe_proxy, 'proxy'
 
 
@@ -476,8 +537,15 @@ def cmd_calibrate_gold(a):
         hi, lo = ordered[i], ordered[i + 1]
         bands.append((hi, lo, (means[hi] + means[lo]) / 2))
     passed = not (rho != rho) and rho >= QE_RHO_FLOOR  # rho!=rho guards NaN
-    status = 'DEFENSIBLE (rho >= %.2f floor)' % QE_RHO_FLOOR if passed else \
-             'PRELIMINARY (rho < %.2f floor, or comet unavailable -> proxy in use)' % QE_RHO_FLOOR
+    if passed:
+        status = 'DEFENSIBLE (rho >= %.2f floor; backend=%s)' % (QE_RHO_FLOOR, qe_name)
+    elif qe_name == 'proxy':
+        status = ('PRELIMINARY (rho < %.2f floor; backend=proxy surface heuristic, '
+                  'not semantic, not comet)' % QE_RHO_FLOOR)
+    else:
+        status = ('PRELIMINARY (rho < %.2f floor; genuine backend=%s; '
+                  'negative result published; proxy remains rho=%.4f labelled '
+                  'preliminary)' % (QE_RHO_FLOOR, qe_name, PROXY_RHO_PRELIMINARY))
 
     md = _render_calibration_md(qe_name, len(rows), rho, means, bands, passed, status)
     with open(a.out, 'w', encoding='utf-8', newline='\n') as f:
@@ -490,28 +558,45 @@ def cmd_calibrate_gold(a):
 
 def _render_calibration_md(qe_name, n, rho, means, bands, passed, status):
     lines = []
-    lines.append('# GRADE_CALIBRATION — H1457 A2 COMET-QE calibration vs frozen gold')
+    lines.append('# GRADE_CALIBRATION — genuine semantic QE vs frozen gold (H2686 / H1457 A2)')
     lines.append('')
-    lines.append('_Created: 22-07-2026 · Last updated: 22-07-2026_')
+    lines.append('_Created: 22-07-2026 · Last updated: 14-08-2026_')
     lines.append('')
-    lines.append('Generated by `tm_grade.py calibrate-gold` (Sonnet 5, `claude-sonnet-5`), '
-                 'H1457 Track A2, against `gold/grade_gold.jsonl` (n=%d).' % n)
+    lines.append('Generated by `tm_grade.py calibrate-gold` (Grok 4.6, `grok-4.6`), '
+                 'H2686 Track D, against `gold/grade_gold.jsonl` (n=%d).' % n)
     lines.append('')
-    lines.append('**QE backend used: `%s`.**' % qe_name)
-    if qe_name != 'comet':
+    lines.append('**QE backend used: `%s`.** This name is the backend that actually '
+                 'scored the rows. A proxy run is never labelled comet or labse. A '
+                 'labse run is never labelled comet.' % qe_name)
+    if qe_name == 'proxy':
         lines.append('')
-        lines.append('COMET-QE does not serve in this environment (spike S1 — see '
-                     '[`research/nn_api_smoketest.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/nn_api_smoketest.md): '
-                     'no cp314 `unbabel-comet` wheel + no local compiler; HF Inference API '
-                     '401s unauthenticated; no LLM-judge key available). The Spearman rho '
-                     'below is measured for the **proxy** heuristic instead, so this run '
-                     "reports the proxy's honest (weak) correlation rather than a real "
-                     'COMET-QE number. `tm_grade.py`\'s `--qe comet` path is fully wired '
-                     '(`qe_nn_api_factory` tries `nn_api.qe()` first, falls back to a local '
-                     '`unbabel-comet` package, then to proxy) — the moment either path '
-                     'serves (an `HF_TOKEN` + gated-model acceptance, or a working '
-                     '`unbabel-comet` install), re-run this command with `--qe comet` to get '
-                     'the real number with no further code changes.')
+        lines.append('This is the **surface-shape proxy** (Cyrillic coverage, length, '
+                     'latin leak). It is not a semantic model. Historical measurement '
+                     'on this gold: Spearman rho = **%.4f** (preliminary). '
+                     'COMET-QE still does not serve '
+                     '([`research/nn_api_smoketest.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/nn_api_smoketest.md)).'
+                     % PROXY_RHO_PRELIMINARY)
+    elif qe_name == 'labse':
+        lines.append('')
+        lines.append('Genuine named backend: `sentence-transformers/LaBSE` via '
+                     '[`nn_api.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/nn_api.py) '
+                     '`qe(..., backend="labse")`. Score = `(cosine+1)/2` in [0,1]; '
+                     'Spearman uses ranks, so the affine map does not change rho. '
+                     'This is **not** COMET-QE. The proxy baseline on the same gold '
+                     'remains rho=**%.4f**, labelled preliminary, and is not rewritten.'
+                     % PROXY_RHO_PRELIMINARY)
+    elif qe_name == 'deepseek':
+        lines.append('')
+        lines.append('Genuine named backend: DeepSeek `deepseek-v4-flash` JSON judge '
+                     '(H2686 repair after LaBSE failed to load in-process). '
+                     'This is **not** COMET-QE and **not** the proxy heuristic. '
+                     'The proxy baseline on the same gold remains rho=**%.4f**, '
+                     'labelled preliminary, and is not rewritten.'
+                     % PROXY_RHO_PRELIMINARY)
+    elif qe_name == 'comet':
+        lines.append('')
+        lines.append('Genuine Unbabel COMET-QE path served. Proxy rho=%.4f stays on '
+                     'record as the heuristic baseline.' % PROXY_RHO_PRELIMINARY)
     lines.append('')
     lines.append('## Result')
     lines.append('')
@@ -650,8 +735,17 @@ def selftest():
     assert rho_weak == rho_weak and abs(rho_weak) < 0.4, rho_weak  # not NaN, below floor
     assert _spearman_rho([1, 1, 1], [1, 2, 3]) != _spearman_rho([1, 1, 1], [1, 2, 3])  # NaN != NaN
 
+    fn_comet, name_comet = make_qe('comet')
+    assert name_comet in ('comet', 'proxy'), name_comet
+    assert name_comet != 'labse'
+    fn_labse, name_labse = make_qe('labse')
+    assert name_labse in ('labse', 'proxy'), name_labse
+    assert name_labse != 'comet'
+    assert not (name_labse == 'comet'), 'labse path must never take the comet name'
+    assert not (name_comet == 'labse'), 'comet fallback must never take the labse name'
+
     print('tm_grade selftest OK -- qe ordering, source override, consensus, grade gates, '
-          'oral cap + written-agree promotion (H2193), Spearman rho')
+          'oral cap + written-agree promotion (H2193), Spearman rho, named QE backends')
     return 0
 
 
@@ -670,7 +764,7 @@ def main():
     g = sub.add_parser('grade', help='corpus_lexicon.jsonl -> grades sidecar + distribution')
     g.add_argument('--in', dest='inp', default=DEFAULT_IN)
     g.add_argument('--out', dest='out', default=DEFAULT_OUT)
-    g.add_argument('--qe', choices=['proxy', 'comet'], default='proxy')
+    g.add_argument('--qe', choices=list(QE_CHOICES), default='proxy')
     g.add_argument('--align', default=None,
                    help='tm_align.py sidecar -> real alignment_confidence per unit '
                         '(supersedes the Slice-2 proxy)')
@@ -679,12 +773,12 @@ def main():
     c = sub.add_parser('calibrate', help='grade the labelled gold set, cross-tab vs label')
     c.add_argument('--gold', default=DEFAULT_GOLD)
     c.add_argument('--in', dest='inp', default=DEFAULT_IN)
-    c.add_argument('--qe', choices=['proxy', 'comet'], default='proxy')
+    c.add_argument('--qe', choices=list(QE_CHOICES), default='proxy')
 
     cg = sub.add_parser('calibrate-gold', help='H1457 A2: Spearman rho of QE score vs '
                         'grade_gold.jsonl A/B/C grade + calibration band')
     cg.add_argument('--gold', default=DEFAULT_GRADE_GOLD)
-    cg.add_argument('--qe', choices=['proxy', 'comet'], default='comet')
+    cg.add_argument('--qe', choices=list(QE_CHOICES), default='labse')
     cg.add_argument('--out', default=DEFAULT_CALIBRATION_MD)
 
     sub.add_parser('selftest', help='deterministic fixture asserts')

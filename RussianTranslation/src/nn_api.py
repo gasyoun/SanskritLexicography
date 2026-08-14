@@ -9,20 +9,14 @@ research/nn_api_smoketest.md for the full log. Summary:
            HF hub, no token needed, no per-call network dependency after that).
            SERVES. Cosine separates a true Sa/Ru pair (0.31-0.58) from a
            mismatched one (0.10) on a 3-pair probe.
-  qe    -- COMET-QE does NOT serve in this environment:
-             1. `unbabel-comet` fails to install: its numpy<2 pin has no cp314
-                wheel and there is no C compiler on this machine to build one
-                from source (meson: no cl/gcc/clang found).
-             2. The hosted HF Inference API path (`router.huggingface.co/
-                hf-inference/...`) 401s unauthenticated -- COMET-QE is a
-                gated/licensed checkpoint, not on the free tier.
-             3. The LLM-as-judge fallback (DeepSeek or Claude) needs a key;
-                neither a DEEPSEEK_API_KEY (`.env`, per build_corpus_lexicon.py)
-                nor an Anthropic key is present in this environment.
-           Per the plan's stop condition this BLOCKS A2 (COMET-QE calibration);
-           A2 is marked preliminary/blocked, tm_grade.py keeps --qe proxy as
-           the shipped default. A5 (embedding aligner) is NOT blocked -- embed
-           serves.
+  qe    -- two named backends, never confused:
+             * labse  -- SERVES locally via the same LaBSE embedder (H2686).
+                         This is genuine semantic QE. It is NOT COMET.
+             * comet  -- still does NOT serve (no cp314 unbabel-comet wheel;
+                         gated HF checkpoint is not a silent fallback).
+           tm_grade.py --qe labse is the genuine path. --qe comet must keep
+           returning the proxy with name 'proxy' until a real comet path
+           serves. Proxy rho=-0.0351 stays labelled preliminary.
 
 Usage:
     python nn_api.py --smoketest      # re-run the probe, print the log
@@ -60,6 +54,7 @@ def _cache_put(kind, key, value):
 
 
 _embed_model = None
+_embed_error = None
 
 
 def _embed_model_instance():
@@ -68,24 +63,36 @@ def _embed_model_instance():
     from the local cache. HF's metadata HEAD requests occasionally hit a
     transient network blip on this host (SSL EOF / DNS hiccups seen during
     H1457); once the weights are cached, forcing HF_HUB_OFFLINE for that
-    retry avoids paying for a metadata round-trip we don't need."""
-    global _embed_model
-    if _embed_model is None:
-        os.environ.setdefault('HF_HUB_DISABLE_SYMLINKS_WARNING', '1')
-        from sentence_transformers import SentenceTransformer
-        try:
-            _embed_model = SentenceTransformer(EMBED_MODEL)
-        except Exception as e:
-            cache_hint = os.path.join(os.path.expanduser('~'), '.cache', 'huggingface',
-                                      'hub', 'models--sentence-transformers--LaBSE')
-            if os.path.isdir(cache_hint):
-                sys.stderr.write('nn_api: online load failed (%s) -> retrying from '
-                                 'local cache (HF_HUB_OFFLINE)\n' % e)
+    retry avoids paying for a metadata round-trip we don't need.
+
+    A failed load is cached for the process (H2686): pagefile exhaustion
+    (WinError 1455) otherwise retried on every qe_available() probe.
+    """
+    global _embed_model, _embed_error
+    if _embed_model is not None:
+        return _embed_model
+    if _embed_error is not None:
+        raise _embed_error
+    os.environ.setdefault('HF_HUB_DISABLE_SYMLINKS_WARNING', '1')
+    from sentence_transformers import SentenceTransformer
+    try:
+        _embed_model = SentenceTransformer(EMBED_MODEL)
+        return _embed_model
+    except Exception as e:
+        cache_hint = os.path.join(os.path.expanduser('~'), '.cache', 'huggingface',
+                                  'hub', 'models--sentence-transformers--LaBSE')
+        if os.path.isdir(cache_hint):
+            sys.stderr.write('nn_api: online load failed (%s) -> retrying from '
+                             'local cache (HF_HUB_OFFLINE)\n' % e)
+            try:
                 os.environ['HF_HUB_OFFLINE'] = '1'
                 _embed_model = SentenceTransformer(EMBED_MODEL)
-            else:
-                raise
-    return _embed_model
+                return _embed_model
+            except Exception as e2:
+                _embed_error = e2
+                raise e2
+        _embed_error = e
+        raise
 
 
 def embed(texts):
@@ -121,16 +128,79 @@ def embed_available():
         return False
 
 
-def qe(sa, ru):
-    """Reference-free QE score for (sa, ru) in [0,1], or None if no QE backend
-    serves in this environment. See module docstring: COMET-QE (package + HF
-    Inference API) and the LLM-judge fallback all fail to serve here -- this
-    is the honest, logged result, not a silent stub."""
+QE_LABSE_BACKEND = 'labse'
+QE_LABSE_MODEL = EMBED_MODEL
+QE_COMET_BACKEND = 'comet'
+# Affine map for cosine -> [0,1] reporting. Rank-based calibration (Spearman)
+# is invariant to this strictly increasing transform.
+def _cosine_to_unit(c):
+    return max(0.0, min(1.0, (float(c) + 1.0) / 2.0))
+
+
+def qe_labse(src, mt):
+    """Reference-free semantic QE via LaBSE cosine(src, mt).
+
+    Named backend: sentence-transformers/LaBSE. This is NOT COMET-QE and must
+    never be labelled comet. Returns (score_unit, raw_cosine).
+    """
+    va, vb = embed([src or '', mt or ''])
+    raw = cosine(va, vb)
+    return _cosine_to_unit(raw), raw
+
+
+def qe_comet(sa, ru):
+    """COMET-QE if a real comet path serves; otherwise None. Never substitutes
+    LaBSE or the proxy under this name."""
     return None
 
 
-def qe_available():
+def qe(sa, ru, backend=QE_LABSE_BACKEND):
+    """Reference-free QE score in [0,1], or None if that named backend does
+    not serve. `backend='comet'` still returns None here (no wheel / no gated
+    HF token). `backend='labse'` uses the local LaBSE embedder when it serves.
+    """
+    if backend == QE_COMET_BACKEND:
+        return qe_comet(sa, ru)
+    if backend == QE_LABSE_BACKEND:
+        if not embed_available():
+            return None
+        score, _raw = qe_labse(sa, ru)
+        return score
+    raise ValueError('unknown QE backend %r (not comet, not labse)' % backend)
+
+
+def qe_available(backend=QE_LABSE_BACKEND):
+    """Liveness for a *named* backend. Default is labse, not comet -- callers
+    that want COMET must pass backend='comet' and will get False until a real
+    comet path serves. This split exists so tm_grade --qe comet cannot stamp
+    a LaBSE score as COMET."""
+    if backend == QE_COMET_BACKEND:
+        return qe_comet('a', 'b') is not None
+    if backend == QE_LABSE_BACKEND:
+        return embed_available()
     return False
+
+
+def qe_backend_receipt(backend=QE_LABSE_BACKEND):
+    """Machine-readable liveness receipt. Never claims comet when labse served."""
+    available = qe_available(backend)
+    rec = {
+        'backend': backend,
+        'available': bool(available),
+        'model': QE_LABSE_MODEL if backend == QE_LABSE_BACKEND else None,
+        'labelled_as_comet': False,
+        'mock': False,
+    }
+    if backend == QE_COMET_BACKEND:
+        rec['reason'] = (
+            'unbabel-comet: no cp314 numpy wheel + no local compiler; '
+            'HF Inference API: gated checkpoint, not used as a silent fallback'
+        )
+        rec['model'] = 'Unbabel/wmt22-cometkiwi-da'
+    elif backend == QE_LABSE_BACKEND:
+        rec['reason'] = None if available else 'LaBSE embedder failed to load'
+        rec['score_space'] = 'cosine mapped by (c+1)/2 into [0,1]; Spearman uses ranks'
+    return rec
 
 
 def cosine(a, b):
@@ -179,11 +249,32 @@ def smoketest():
     else:
         print('embed: no backend serves in this environment')
 
-    report['qe']['reason'] = ('unbabel-comet: no cp314 numpy wheel + no local '
-                               'compiler; HF Inference API: 401 unauthenticated '
-                               '(gated checkpoint); LLM-judge fallback: no '
-                               'DEEPSEEK_API_KEY/.env or Anthropic key present')
-    print('qe: no backend serves in this environment (%s)' % report['qe']['reason'])
+    comet = qe_backend_receipt(QE_COMET_BACKEND)
+    labse = qe_backend_receipt(QE_LABSE_BACKEND)
+    report['qe'] = {
+        'comet': comet,
+        'labse': labse,
+        'available': labse['available'],
+        'active_backend': QE_LABSE_BACKEND if labse['available'] else None,
+        'reason': None if labse['available'] else labse['reason'],
+    }
+    if labse['available']:
+        scores = []
+        for sa, ru in zip(PROBE_SA, PROBE_RU):
+            unit, raw = qe_labse(sa, ru)
+            scores.append({'sa': sa, 'ru': ru, 'cosine': round(raw, 4),
+                           'unit': round(unit, 4)})
+        mismatch_unit, mismatch_raw = qe_labse(PROBE_SA[0], PROBE_MISMATCH_RU)
+        report['qe']['true_pair'] = scores
+        report['qe']['mismatch'] = {'cosine': round(mismatch_raw, 4),
+                                    'unit': round(mismatch_unit, 4)}
+        print('qe: labse SERVES (%s). true-pair unit %s vs mismatch %.4f'
+              % (QE_LABSE_MODEL, [s['unit'] for s in scores], mismatch_unit))
+        print('qe: comet does NOT serve (%s) -- not labelled as comet'
+              % comet['reason'])
+    else:
+        print('qe: no genuine backend serves (labse=%s; comet=%s)'
+              % (labse['reason'], comet['reason']))
     return report
 
 

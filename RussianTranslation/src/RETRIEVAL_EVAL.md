@@ -1,21 +1,35 @@
-# RETRIEVAL_EVAL — H1457 A6 retrieval measurement
+# RETRIEVAL_EVAL — H2686 live no-TM vs graded-fragment-TM
 
-_Created: 22-07-2026 · Last updated: 22-07-2026_
+_Created: 22-07-2026 · Last updated: 14-08-2026_
 
-Harness: `tm_retrieval_eval.py` (Sonnet 5, `claude-sonnet-5`), H1457 Track A6. Fixed eval batch: 20 grade-A rows from `gold/grade_gold.jsonl` (`RETRIEVAL_EVAL_BATCH.jsonl`).
+Harness: [`tm_retrieval_eval.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_retrieval_eval.py) (Grok 4.6, `grok-4.6`). Engine **deepseek** / model **deepseek-v4-flash**. Frozen batch sha256 `b7ed1b7d134157ef2ecc59d601756110584f0139bb088dd0b5c8c7c462faff6f`. Gold sha256 `72c282933c395702324db1072dcfe49cae1feac3bb8db50e9737f7b75ecb6ed7`.
 
-## Status: BLOCKED — no live translation engine available in this environment
+Wave 1 is immutable. This measurement does not rewrite promoted or quarantined Wave-1 fragments.
 
-A6 needs a LIVE translation-engine call for both arms (no-TM baseline vs graded-TMX-as-fuzzy-context). Per [`research/nn_api_smoketest.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/nn_api_smoketest.md) (spike S1) and [`src/GRADE_CALIBRATION.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/GRADE_CALIBRATION.md) (A2), this environment has no `DEEPSEEK_API_KEY` (`build_corpus_lexicon.py` expects one in a repo-local `.env`; none exists in this worktree or the main checkout) and no Anthropic API key. No fabricated quality/wall-clock numbers are reported here — that would misrepresent a measurement that never ran.
+## Status: LIVE
 
-## What IS built and tested
+| Arm | n | mean quality | serious error | mean edit | tokens | wall s | cost USD | exact reuse | fragment reuse |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| no-TM | 9 | 0.590 | 6/9 (66.7%) | 0.609 | 5167 | 92.15 | 0.001089 | 0 | 0 |
+| fragment-TM | 9 | 0.800 | 5/9 (55.6%) | 0.471 | 11102 | 76.11 | 0.001856 | 2 | 9 |
 
-- `cmd_batch`: reproducible eval-batch construction from the frozen gold (deterministic, id-sorted, grade-A only).
-- `run_arm` / `fuzzy_context`: the measurement loop (wall-clock per card, token accounting, mean quality), engine-agnostic via a pluggable `translate_fn`/`judge_fn` pair.
-- `selftest` exercises the full loop with deterministic MOCK engines (a fixed-latency mock translator + a mock judge that scores context-aided output higher), proving the harness correctly computes the deltas it is designed to report.
+Deltas (TM − no-TM): quality **+0.210**, edit **-0.138**, serious-error rate **-0.111**, tokens **+5935**, wall **-16.04 s**, cost **+0.000767 USD**.
 
-## To activate
+## Per fragment class (TM arm)
 
-Supply a real `translate_fn(card, context) -> {text, tokens}` and `judge_fn(card, output) -> float` (e.g. wrapping the existing `build_corpus_lexicon.py` DeepSeek client once a key is configured, or an Anthropic client), then `run_arm(cards, translate_fn, judge_fn)` for the no-TM arm and `run_arm(cards, translate_fn, judge_fn, tm_index)` for the with-TM arm — no other code changes needed.
+| Class | n | mean quality | mean edit | serious error |
+|---|---:|---:|---:|---:|
+| definition_gloss | 3 | 0.500 | 0.413 | 2 |
+| recurring_formula | 3 | 1.000 | 0.000 | 0 |
+| sense | 3 | nan | 1.000 | 3 |
+
+## Route / cost provenance
+
+- Translate+judge route: `https://api.deepseek.com/chat/completions`
+- Requested model: `deepseek-v4-flash`
+- Price card: `pre-1608`
+- Ledger calls: **36** (translate + judge, both arms)
+- Total cost USD: **0.004138**
+- Mock: **False**
 
 _Dr. Mārcis Gasūns_
