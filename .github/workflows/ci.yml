@@ -187,6 +187,12 @@ jobs:
           python src/mined_filter_bicleaner.py selftest
           python src/tm_saru_align_labse.py selftest
           python src/tm_retrieval_eval.py selftest
+      - name: PWG TM canonical fragment schema + 5000 queue (H2683 Track A)
+        working-directory: RussianTranslation
+        run: |
+          python src/pwg_tm_migrate_v1.py --verify
+          python src/pwg_tm_fragmentize.py --verify
+          python src/pwg_tm_priority.py --verify --limit 5000
       - name: Review-sheet binding + decisions + residue-gate selftests (H1404 lane)
         working-directory: RussianTranslation
         run: |

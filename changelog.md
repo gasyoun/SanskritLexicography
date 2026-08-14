@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+- **H2683 Track A — PWG TM canonical JSONL, 2392/2392 lossless migrate, 5,000 queue** (Grok 4.6 `grok-4.6`, 14-08-2026): versioned `pwg.tm.canonical.v1` schema; migrate/fragmentize/priority CLIs; six ruled fragment classes; hash-pinned Wave-1 manifest. Report: [`pwg_ru/PWG_TM_CANONICAL_WAVE1_TRACK_A_14-08-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/PWG_TM_CANONICAL_WAVE1_TRACK_A_14-08-2026.md).
+
 ## [1.144.45] - 2026-08-14
 ### Added
 - **H2674 W0 OpenAI SDK stream + 32k cap + PRICE after-1608** (Grok 4.6 `grok-4.6`, 13-08-2026): `DeepSeek.chat` uses official OpenAI SDK `stream=True`; default `max_tokens` 32768; `prep_pack --live` shares that client and cap; after 16-08-2026 16:00 UTC off-peak `price_card`; `DEFAULT_MODEL` still Flash. Offline mock >8k thinking tokens; live N=3 canary 3/3, $0.0006, no `IncompleteRead`. Report: [`experiments/H2674_w0_stream/REPORT.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/H2674_w0_stream/REPORT.md). Unblocks H2676 Pro rematch.

@@ -1,0 +1,26 @@
+{
+  "schema": "pwg.tm.canonical.reconciliation.v1",
+  "in_count": 2392,
+  "out_count": 2392,
+  "in_types": {
+    "exact_card": 2175,
+    "exact_fragment": 217
+  },
+  "out_kinds": {
+    "publication": 2392
+  },
+  "orphan_source_ids": [],
+  "orphan_canonical_ids": [],
+  "duplicate_record_ids": [],
+  "duplicate_tm_record_ids": [],
+  "lost_field_records": 0,
+  "lost_field_samples": [],
+  "invalid": [],
+  "unresolved_sense_alignment": 1153,
+  "ok": true,
+  "source_path": "release/translation_memory/translation_memory.ru.publication.jsonl",
+  "source_sha256": "02a24c1eb8b1e1fb73a6991fca49b8350b0e470283c4c12c68a119ce15e16dc6",
+  "artifact": "release/pwg_tm_canonical/canonical.v1.jsonl",
+  "artifact_sha256": "b9ad8e9ff99d561de72029e9af40664e9cf7bfabe1575faf7858d88b757bbe82",
+  "expected_count": 2392
+}

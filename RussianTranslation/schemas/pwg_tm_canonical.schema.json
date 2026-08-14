@@ -1,0 +1,471 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pwg.tm.canonical.schema.v1",
+  "title": "PWG Translation Memory canonical scholarly JSONL v1",
+  "description": "Versioned, additive canonical record for fragment-first PWG German→target TM. Publication v1 rows migrate losslessly into record_kind=publication; fragmentize emits record_kind=fragment. All interchange formats are derived from this contract.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/publication_record"
+    },
+    {
+      "$ref": "#/$defs/fragment_record"
+    }
+  ],
+  "$defs": {
+    "lang": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 8
+    },
+    "fragment_class": {
+      "enum": [
+        "sense",
+        "definition_gloss",
+        "grammar_label",
+        "citation",
+        "example",
+        "recurring_formula"
+      ]
+    },
+    "trust_level": {
+      "enum": [
+        "reviewed_exact",
+        "machine_exact",
+        "legacy_promoted",
+        "suggestion",
+        "corpus_translation_witness"
+      ]
+    },
+    "reuse_policy": {
+      "enum": [
+        "auto_exact",
+        "suggest_only",
+        "blocked",
+        "defect"
+      ]
+    },
+    "sense_alignment": {
+      "enum": [
+        "mapped",
+        "unresolved"
+      ]
+    },
+    "confidence_tier": {
+      "enum": [
+        "reviewed",
+        "machine_gated",
+        "legacy",
+        "suggestion",
+        "uncertain"
+      ]
+    },
+    "nonempty_string": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^([0-9a-f]{64})?$"
+    },
+    "id_list": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prov_agent": {
+      "type": "object",
+      "required": [
+        "id",
+        "type"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        }
+      }
+    },
+    "prov_activity": {
+      "type": "object",
+      "required": [
+        "id",
+        "type"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "started": {
+          "type": "string"
+        },
+        "ended": {
+          "type": "string"
+        }
+      }
+    },
+    "prov_entity": {
+      "type": "object",
+      "required": [
+        "id",
+        "type"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "hash": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "agents",
+        "activities",
+        "entities",
+        "generated_at",
+        "source"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "agents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/prov_agent"
+          }
+        },
+        "activities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/prov_activity"
+          }
+        },
+        "entities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/prov_entity"
+          }
+        },
+        "generated_at": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "pipeline_version": {
+          "type": "string"
+        },
+        "source": {
+          "type": "object"
+        }
+      }
+    },
+    "rights": {
+      "type": "object",
+      "required": [
+        "source_status",
+        "translation_status",
+        "block_class",
+        "facts"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "source_status": {
+          "type": "string"
+        },
+        "translation_status": {
+          "type": "string"
+        },
+        "block_class": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "uncertainty": {
+          "type": "string"
+        },
+        "facts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "source_locator": {
+      "type": "object",
+      "required": [
+        "dictionary",
+        "key1",
+        "src_key"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "dictionary": {
+          "const": "PWG"
+        },
+        "key1": {
+          "type": "string"
+        },
+        "lemma_slp1": {
+          "type": "string"
+        },
+        "iast": {
+          "type": "string"
+        },
+        "src_key": {
+          "type": "string"
+        },
+        "homonym": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "publication_record": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "schema",
+        "schema_version",
+        "record_kind",
+        "record_id",
+        "entry_id",
+        "sense_id",
+        "fragment_id",
+        "fragment_class",
+        "sense_alignment",
+        "lang",
+        "script",
+        "transliteration",
+        "source_locator",
+        "source_string",
+        "source_hash",
+        "target_string",
+        "target_hash",
+        "trust_level",
+        "reuse_policy",
+        "confidence_tier",
+        "gate_status",
+        "gate_version",
+        "review_status",
+        "source_hashes",
+        "provenance",
+        "evidence",
+        "rights",
+        "supersedes",
+        "superseded_by",
+        "source_publication",
+        "tm_record_id"
+      ],
+      "properties": {
+        "schema": {
+          "const": "pwg.tm.canonical.v1"
+        },
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "record_kind": {
+          "const": "publication"
+        },
+        "record_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "entry_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "sense_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "fragment_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "fragment_class": {
+          "$ref": "#/$defs/fragment_class"
+        },
+        "sense_alignment": {
+          "$ref": "#/$defs/sense_alignment"
+        },
+        "lang": {
+          "$ref": "#/$defs/lang"
+        },
+        "script": {
+          "type": "string"
+        },
+        "transliteration": {
+          "type": "string"
+        },
+        "source_locator": {
+          "$ref": "#/$defs/source_locator"
+        },
+        "source_string": {
+          "type": "string"
+        },
+        "source_hash": {
+          "$ref": "#/$defs/sha256"
+        },
+        "target_string": {
+          "type": "string"
+        },
+        "target_hash": {
+          "$ref": "#/$defs/sha256"
+        },
+        "trust_level": {
+          "$ref": "#/$defs/trust_level"
+        },
+        "reuse_policy": {
+          "$ref": "#/$defs/reuse_policy"
+        },
+        "confidence_tier": {
+          "$ref": "#/$defs/confidence_tier"
+        },
+        "gate_status": {
+          "type": "string"
+        },
+        "gate_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "review_status": {
+          "type": "string"
+        },
+        "source_hashes": {
+          "type": "object"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1
+        },
+        "rights": {
+          "$ref": "#/$defs/rights"
+        },
+        "supersedes": {
+          "$ref": "#/$defs/id_list"
+        },
+        "superseded_by": {
+          "$ref": "#/$defs/id_list"
+        },
+        "source_publication": {
+          "type": "object"
+        },
+        "tm_record_id": {
+          "$ref": "#/$defs/nonempty_string"
+        }
+      }
+    },
+    "fragment_record": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "schema",
+        "schema_version",
+        "record_kind",
+        "record_id",
+        "entry_id",
+        "sense_id",
+        "fragment_id",
+        "fragment_class",
+        "sense_alignment",
+        "lang",
+        "source_locator",
+        "source_string",
+        "source_hash",
+        "target_string",
+        "target_hash",
+        "reuse_key",
+        "reuse_policy",
+        "parent_record_id",
+        "context"
+      ],
+      "properties": {
+        "schema": {
+          "const": "pwg.tm.canonical.v1"
+        },
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "record_kind": {
+          "const": "fragment"
+        },
+        "record_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "entry_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "sense_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "fragment_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "fragment_class": {
+          "$ref": "#/$defs/fragment_class"
+        },
+        "sense_alignment": {
+          "$ref": "#/$defs/sense_alignment"
+        },
+        "lang": {
+          "$ref": "#/$defs/lang"
+        },
+        "source_locator": {
+          "$ref": "#/$defs/source_locator"
+        },
+        "source_string": {
+          "type": "string"
+        },
+        "source_hash": {
+          "$ref": "#/$defs/sha256"
+        },
+        "target_string": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "target_hash": {
+          "$ref": "#/$defs/sha256"
+        },
+        "reuse_key": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "reuse_policy": {
+          "$ref": "#/$defs/reuse_policy"
+        },
+        "parent_record_id": {
+          "$ref": "#/$defs/nonempty_string"
+        },
+        "context": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

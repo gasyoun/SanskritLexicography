@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 11-08-2026 (`pwg_transport_comparison_20260811`: INTENTIONAL-DIVERGENCE. The reusable transport, reservation, and sealed-evidence mechanics are language-neutral, but this qualification command deliberately freezes the existing PWG→RU canary and its Cyrillic/no-ё deterministic audit. An EN route qualification requires its own frozen canary and audit contract.)_
+_Created: 04-07-2026 · Last updated: 14-08-2026 (`pwg_transport_comparison_20260811`: INTENTIONAL-DIVERGENCE. The reusable transport, reservation, and sealed-evidence mechanics are language-neutral, but this qualification command deliberately freezes the existing PWG→RU canary and its Cyrillic/no-ё deterministic audit. An EN route qualification requires its own frozen canary and audit contract. H2683 restamped H2674 stream-client hashes on SHARED entries that already drifted on master.)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -1143,7 +1143,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "012fe493dccb6d4ec104241b2c83e0926a60d0bab370f3732075786beb9bfa1a",
       "src/pilot/headless_worker.py": "e1d3a6c0b171d18b027d4c510e023b6a1d4f0155630a918b37b4b5ac1b243bf1",
-      "src/pilot/max_account_orchestrator.py": "e0f562a2bdac06a7710b4f6fa1a288bc1ded6cfc534ac3759afc95c69564ebe7",
+      "src/pilot/max_account_orchestrator.py": "a34a7864566570acbb0662c948d712f454c6ab8614591314c132d8af01fa2ef5",
       "src/pilot/coordinator.py": "fa6b65999be68fdd387183a25ca7d9b501ed47bfb5085e76a5d673392cbd0df1",
       "src/pilot/headless_worker_selftest.py": "f114ab338648ac7b2472c86d168d54e3a5b984977e07cebb790ba31c792c51e6",
       "src/pilot/max_account_orchestrator_selftest.py": "585be93bce0a85292bd62ab4295424c5de9ece1b65159595d5bae354c5925d3a",
@@ -1371,8 +1371,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/h1210/pack_chunks.py": "7f33369396084a3fb474481c2f81830e17a0aea1220164acf741f207c56b570b",
       "src/pilot/h1210/det_gate.py": "fffc2bbe2b73e36d311b4e0639b6f31f122a14355e2e846343af95d8a346d4be",
-      "src/pilot/h1210/deepseek_arm.py": "c0e92e50c940647650a851c76514572d51627d5411ab9502c57cfef7fcc5fc05",
-      "src/pilot/h1210/arm_b_control.py": "4fa48bf942081c991197afd39b56c1ab759b420e908a22e32ee0c54f62d9cb8d",
+      "src/pilot/h1210/deepseek_arm.py": "dcfcd2f2172ceccf9b7dbb0e1b2904c9886de13f2488644e1e20874ae3a2aef2",
+      "src/pilot/h1210/arm_b_control.py": "f226aec3c0d8cb58f1270281d5fa030ca8cb1f581d655bb913bc7adebf9d5af7",
       "src/pilot/h1210/control_template.js": "e337895139f9bcea3efa36cb8caefbb89b4143d7ff4fb00886b58ac6e3eb726a",
       "src/pilot/h1210/wf_template_ab.js": "3deadfa110c0649e8e25bdd315d24e100df22442fd0c9d06b78df4eb76790a19",
       "src/pilot/h1210/collect_arm_a.py": "153d58a3cc04c4e8ca120c8f42c4668be3266d7c3be33dd21e5afcc7f944058c",
@@ -1577,7 +1577,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/bounded_staged_run.py": "681012c1d39d5cf6c774a56f1dfad319c451f62e43039c1bb8ab64487c563520",
       "src/pilot/bounded_supervisor.py": "b90fe5d634b832b1a9ce73d62ce4a19b2d74ceaee5a863f0469b156c9bdecc02",
-      "src/pilot/max_account_orchestrator.py": "e0f562a2bdac06a7710b4f6fa1a288bc1ded6cfc534ac3759afc95c69564ebe7"
+      "src/pilot/max_account_orchestrator.py": "a34a7864566570acbb0662c948d712f454c6ab8614591314c132d8af01fa2ef5"
     }
   },
   {
@@ -1738,7 +1738,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/bounded_staged_run.py": "681012c1d39d5cf6c774a56f1dfad319c451f62e43039c1bb8ab64487c563520",
       "src/pilot/bounded_supervisor.py": "b90fe5d634b832b1a9ce73d62ce4a19b2d74ceaee5a863f0469b156c9bdecc02",
-      "src/pilot/max_account_orchestrator.py": "e0f562a2bdac06a7710b4f6fa1a288bc1ded6cfc534ac3759afc95c69564ebe7",
+      "src/pilot/max_account_orchestrator.py": "a34a7864566570acbb0662c948d712f454c6ab8614591314c132d8af01fa2ef5",
       "src/pilot/translation_memory.py": "e5452394c8f3bbebef9f6038362e6a9d0e162a338201cdf425191412c7cf3a38",
       "src/pilot/coordinator.py": "fa6b65999be68fdd387183a25ca7d9b501ed47bfb5085e76a5d673392cbd0df1",
       "src/promote_final_cards.py": "b144fc1a333866165181223d5ccd2ee054707b4cba7fcdccc1ac93c57fba2f85",
