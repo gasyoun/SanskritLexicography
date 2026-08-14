@@ -1,6 +1,6 @@
 # Datasheet — PWG TM canonical v1 four-format pack
 
-_Created: 14-08-2026 · Last updated: 14-08-2026_
+_Created: 14-08-2026 · Last updated: 14-08-2026 (DOI minted)_
 
 Filled from the
 [csl-observatory DATASHEET_TEMPLATE](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/docs/DATASHEET_TEMPLATE.md)
@@ -72,8 +72,12 @@ German→Russian publication TM.
 - **How to get it.** GitHub Release `pwg-tm-canonical-v1.0.0` on
   [gasyoun/SanskritLexicography](https://github.com/gasyoun/SanskritLexicography).
   Rebuild locally with `python src/pwg_tm_release.py`.
-- **DOI.** pending (concept + version). Hashes frozen; DOI will ship in a
-  superseding manifest, not by rewriting these bytes.
+- **DOI.** Concept [10.5281/zenodo.21932900](https://doi.org/10.5281/zenodo.21932900)
+  (cite this). Version 1.0.0
+  [10.5281/zenodo.21932901](https://doi.org/10.5281/zenodo.21932901).
+  Verified 14-08-2026: both resolve to this pack (title + 12 files, including
+  the four interchange files at the frozen byte sizes). Distinct from the
+  repository software DOI [10.5281/zenodo.21306715](https://doi.org/10.5281/zenodo.21306715).
 - **Maintenance.** RussianTranslation pipeline; issues on the repo.
 
 _Dr. Mārcis Gasūns_

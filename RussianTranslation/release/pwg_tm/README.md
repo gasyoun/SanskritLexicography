@@ -1,6 +1,6 @@
 # PWG TM canonical v1 — four-format FAIR pack (H2685)
 
-_Created: 14-08-2026 · Last updated: 14-08-2026_
+_Created: 14-08-2026 · Last updated: 14-08-2026 (Zenodo concept 10.5281/zenodo.21932900)_
 
 Immutable interchange pack for the **2,392** publication-grade PWG German→Russian
 translation-memory records (2,175 exact cards + 217 exact fragments). Canonical
@@ -46,8 +46,13 @@ in the H2684 receipt as evidence, not as a published interchange.
   secrets. Rights uncertainty is recorded, not a stop.
 - Data licence: CC BY 4.0. See [LICENSE-DATA](LICENSE-DATA).
 
-DOI: **pending** (concept + version). Hashes are frozen first; Zenodo mint
-does not rewrite these bytes. A later manifest/release will embed the DOI.
+DOI (verified 14-08-2026 against the live record, title and file sizes match):
+**concept** [10.5281/zenodo.21932900](https://doi.org/10.5281/zenodo.21932900)
+(cite this) · **version 1.0.0**
+[10.5281/zenodo.21932901](https://doi.org/10.5281/zenodo.21932901).
+This is a **dataset** DOI, not the repository software concept
+[10.5281/zenodo.21306715](https://doi.org/10.5281/zenodo.21306715).
+The four interchange files were not rewritten.
 
 ## Prove
 

@@ -88,10 +88,12 @@
     "publish_safety": "GO"
   },
   "doi": {
-    "concept": "pending",
-    "version": "pending",
-    "note": "Zenodo mint when credentials permit; hashes frozen first."
+    "concept": "10.5281/zenodo.21932900",
+    "version": "10.5281/zenodo.21932901",
+    "record_html": "https://zenodo.org/records/21932901",
+    "verified": "2026-08-14T10:43:12Z",
+    "note": "Dataset DOI, distinct from repo software concept 10.5281/zenodo.21306715. Four interchange file hashes unchanged."
   },
-  "github_release": "pending",
+  "github_release": "https://github.com/gasyoun/SanskritLexicography/releases/tag/pwg-tm-canonical-v1.0.0",
   "supersedes": []
 }
