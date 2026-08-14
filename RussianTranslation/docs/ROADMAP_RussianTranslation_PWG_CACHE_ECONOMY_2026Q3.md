@@ -1,8 +1,15 @@
 # Roadmap — PWG prompt-cache economy, 2026 Q3
 
-_Created: 13-08-2026 · Last updated: 13-08-2026_
+_Created: 13-08-2026 · Last updated: 14-08-2026_
 
 Plan index: [PWG cache economy](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/PLAN_RussianTranslation_PWG_CACHE_ECONOMY_2026Q3.md).
+
+## Live execution chain
+
+- **Completed:** streaming transport and 3/3 canary ([PR #1686](https://github.com/gasyoun/SanskritLexicography/pull/1686)); frozen Pro Q3 rematch, 21/22 deterministic-clean ([PR #1690](https://github.com/gasyoun/SanskritLexicography/pull/1690)); Flash PREP first-200, 200/200 parseable ([PR #1693](https://github.com/gasyoun/SanskritLexicography/pull/1693)). Do not repeat these paid gates.
+- **Next:** [H2702 (Grok 4.6) — PWG cache economy residual A: provider-neutral contracts, identity, migration, and ledger](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2702-Grok_SanskritLexicography_pwg-cache-economy-contract-foundation_14.08.26.md).
+- **Then:** [H2703 (Grok 4.6) — PWG cache economy residual B: exact-request generation cold/warm proof](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2703-Grok_SanskritLexicography_pwg-cache-economy-generation-cold-warm_14.08.26.md), after H2702 merges.
+- **Finally:** [H2704 (Grok 4.6) — PWG cache economy residual C: PREP/TM proof, bounded L3, and adoption verdict](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2704-Grok_SanskritLexicography_pwg-cache-economy-prep-tm-adoption-verdict_14.08.26.md), after H2703 merges.
 
 ## Wave 0 — freeze truth and migration seam
 
