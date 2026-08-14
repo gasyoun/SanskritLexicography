@@ -4,6 +4,19 @@ _Created: 09-07-2026 · Last updated: 14-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 14-08-2026 — H2727 (Grok 4.6) — Wave-2 5000-key drain
+
+Grok 4.6 (`grok-4.6`). No `--live`. Wave 1 not written.
+
+| Gate | Result |
+|---|---|
+| Processed / missing | **5000 / 0** |
+| Extracted / accounted | **197916 / 197916** |
+| Promoted / quarantine / silent | **162107 / 35809 / 0** |
+| Fill det / reuse / merge / unfilled | 158807 / 3138 / 420 / 35551 |
+| Refill moved | **0** |
+| Cost | not evaluable (0 billed tokens) |
+
 ## 14-08-2026 — H2721 (Grok 4.6) — Wave-2 defaults applied
 
 Grok 4.6 (`grok-4.6`). Policy only + next-5000 freeze. No Wave-1 rewrite. No generator drain.
