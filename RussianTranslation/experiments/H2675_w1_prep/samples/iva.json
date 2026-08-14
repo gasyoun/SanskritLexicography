@@ -1,0 +1,98 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "iva",
+ "produced_at": 1786671713,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "live",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  },
+  "live_call": {
+   "ok": true,
+   "parse_ok": true,
+   "latency_s": 100.32,
+   "error": null,
+   "fence": null,
+   "prompt_tokens": 337,
+   "completion_tokens": 8228,
+   "reasoning_tokens": 8183,
+   "finish_reason": "stop",
+   "max_tokens": 32768,
+   "price_card": "pre-1608",
+   "transport": "openai-sdk-stream",
+   "transport_attempts": 1
+  }
+ },
+ "sense_inventory": [
+  {
+   "i": 0,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 1,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 2,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 3,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 4,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  }
+ ],
+ "source_evidence": {
+  "kind": "execution_manifest",
+  "locator": "experiments/H2675_w1_prep/run/manifest_resume1.json",
+  "sha256": "f1d9621097d64f8001a9e34515bff58f00c6755909100f3e546fda42b50b9a41",
+  "manifest_sha256": "f5bf21ece4860d5c07747e02cf67c3438d54c02c1c8f4ee3db9769ae0736cb9d"
+ },
+ "tm_fuzzy_hits": [],
+ "compound_candidates": [],
+ "citation_normalize": [],
+ "hard_flags": {
+  "polysemy": false,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=execution_manifest",
+   "All senses have de=null; no reliable RU glosses can be drafted from provided data."
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "full_worker",
+ "det": {
+  "ok": false,
+  "gate": "prep",
+  "issues": [
+   "prep: sense_inventory present but every de_anchor is empty"
+  ],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 352,
+  "source_senses": 5,
+  "had_draft_card": false
+ },
+ "tm_fence": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "step": "[4] same promoter + TM fence",
+  "note": "TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM",
+  "n_hits_ranked": 0
+ },
+ "store_write": false
+}

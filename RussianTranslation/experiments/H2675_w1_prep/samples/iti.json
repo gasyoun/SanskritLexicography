@@ -1,0 +1,130 @@
+{
+ "schema": "pwg.prep_pack.v1",
+ "key1": "iti",
+ "produced_at": 1786671525,
+ "producer": {
+  "tool": "prep_pack.py",
+  "mode": "live",
+  "model": "deepseek-v4-flash",
+  "price_table": {
+   "cache_miss_in": 0.14,
+   "cache_hit_in": 0.0028,
+   "out": 0.28
+  },
+  "live_call": {
+   "ok": true,
+   "parse_ok": true,
+   "latency_s": 30.15,
+   "error": null,
+   "fence": null,
+   "prompt_tokens": 433,
+   "completion_tokens": 1655,
+   "reasoning_tokens": 1609,
+   "finish_reason": "stop",
+   "max_tokens": 32768,
+   "price_card": "pre-1608",
+   "transport": "openai-sdk-stream",
+   "transport_attempts": 1
+  }
+ },
+ "sense_inventory": [
+  {
+   "i": 0,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 1,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 2,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 3,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 4,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 5,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 6,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 7,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 8,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 9,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  },
+  {
+   "i": 10,
+   "de_anchor": null,
+   "note": "payload_source_senses"
+  }
+ ],
+ "source_evidence": {
+  "kind": "execution_manifest",
+  "locator": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography-h2675-10008\\RussianTranslation\\experiments\\H2675_w1_prep\\H2675_first200.manifest.json",
+  "sha256": "55975bde971e1bbf97d8f2e602ade01ce3e2e01bd1316ce0bf0b46a1ad121f68",
+  "manifest_sha256": "0d2cc65af3ed4a74d4177a8705aaa783276ccd25db807b79fb54ed7a0cba8f31"
+ },
+ "tm_fuzzy_hits": [],
+ "compound_candidates": [],
+ "citation_normalize": [],
+ "hard_flags": {
+  "polysemy": true,
+  "no_pwg": false,
+  "monster_length": false,
+  "notes": [
+   "de_source=execution_manifest",
+   "polysemy: n_senses=11 >= 6",
+   "No sense definitions provided",
+   "Polysemy flag set, cannot disambiguate senses"
+  ]
+ },
+ "ru_skeleton": null,
+ "route_hint": "park",
+ "det": {
+  "ok": false,
+  "gate": "prep",
+  "issues": [
+   "prep: sense_inventory present but every de_anchor is empty"
+  ],
+  "coverage": null,
+  "claude": false,
+  "n_skeleton_tokens": 491,
+  "source_senses": 11,
+  "had_draft_card": false
+ },
+ "tm_fence": {
+  "may_write": false,
+  "writer": "promoter_only",
+  "rule": "R4.3a",
+  "step": "[4] same promoter + TM fence",
+  "note": "TM fuzzy rank (tm_fuzzy_hits) is read-only prep; only the promoter may write TM",
+  "n_hits_ranked": 0
+ },
+ "store_write": false
+}
