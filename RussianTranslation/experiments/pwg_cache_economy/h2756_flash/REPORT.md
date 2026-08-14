@@ -52,6 +52,8 @@ Total attributable USD **$0.038405**. Amortized mean USD after R repeats: R=2 $0
 
 **INCONCLUSIVE** on denominator B. Point save is positive but the CI includes zero. Keep the point estimate. This is not “no economy”.
 
+This is a **USD** result on a **repeat of the same PREP request**, not a wall-clock result for the drain. A production drain pays one PREP per new card (about $0.0004) and, when needed, a generation pass (about $0.02). Even a real 10% PREP-repeat save would be a few tenths of a percent of a full translation. The 0.2% here will not make the PWG→RU drain feel faster. Plain-language write-up: [CONCLUSIONS.md — What this means for a production drain](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/CONCLUSIONS.md).
+
 H2704 product NO-GO is unchanged. Pro was not run.
 
 _Dr. Mārcis Gasūns_
