@@ -1,0 +1,39 @@
+{
+  "schema": "pwg.tm.generate.extract.v1",
+  "requested": [
+    "AhAva",
+    "AlAna",
+    "Antara",
+    "Aqambara",
+    "Ayuta",
+    "Ayuzmant",
+    "BAvya",
+    "Sabara",
+    "akzama",
+    "jambuka"
+  ],
+  "found": [
+    "AhAva",
+    "AlAna",
+    "Antara",
+    "Aqambara",
+    "Ayuta",
+    "Ayuzmant",
+    "BAvya",
+    "Sabara",
+    "akzama",
+    "jambuka"
+  ],
+  "missing_source": [],
+  "parent_count": 19,
+  "fragment_count": 734,
+  "by_class": {
+    "sense": 80,
+    "example": 164,
+    "definition_gloss": 67,
+    "grammar_label": 29,
+    "recurring_formula": 66,
+    "citation": 328
+  },
+  "pwg_path_exists": true
+}
