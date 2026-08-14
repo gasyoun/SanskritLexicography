@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.54] - 2026-08-14
+- **H2756 drain-meaning note** (Grok 4.6 `grok-4.6`, 14-08-2026): CONCLUSIONS now states in prose that the Flash PREP prefix-cache sitting is USD-on-repeats, not drain wall-clock, and cannot speed a production PWG→RU pass (PREP is a few percent of the card; 0.2% INCONCLUSIVE). [CONCLUSIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/CONCLUSIONS.md).
+
 ## [1.144.53] - 2026-08-14
 - **H2756 Flash PREP one-shot vs incremental warm** (Grok 4.6 `grok-4.6`, 14-08-2026): fresh 50-miss Flash pairs, 99/100 parseable, $0.038405; same-card save **0.2%** (ratio-of-means, CI includes 0) → **INCONCLUSIVE**. Not “no economy”. H2704 product NO-GO unchanged. [REPORT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2756_flash/REPORT.md). Residual of [H2754](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2754-Grok_SanskritLexicography_pwg-cache-flash-oneshot-vs-warm_14.08.26.md) after title-collision on [#1713](https://github.com/gasyoun/SanskritLexicography/pull/1713).
 

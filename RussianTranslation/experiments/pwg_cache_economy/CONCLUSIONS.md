@@ -77,4 +77,14 @@ Primary question: on a **fresh** Flash PREP miss set (not the H2704 50 — those
 - Informational only: amortized cost after R = 2, 5, 10 repeats.
 - Pro is out of scope.
 
+## What this means for a production drain
+
+This wave measured **USD**, not wall-clock. It does **not** say how many minutes a PWG→RU drain will lose or gain.
+
+A drain pays **one** successful PREP per new headword, then (when needed) a generation pass. The prefix-cache sitting only helps if the **same** request is sent again. The drain does not do that.
+
+Even a real PREP-repeat save would be a small slice of the card. Sealed one-shot PREP is about **$0.0004–$0.0009**/card (H2756 cold mean $0.000380; H2704 $0.000441; H2675 $0.000873). One-shot generation is about **$0.02**/clean card (H2676 $0.01991). PREP is a few percent of the bill. Ten percent off PREP would be a few **tenths of a percent** of a full translation.
+
+What we actually have: on a **fresh** 50, the repeat was **0.2%** cheaper and the CI includes zero ([H2756 REPORT](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2756_flash/REPORT.md)). Cache-hit tokens rose (128 → 412); the bill did not move. The earlier 9.9% (H2704) was the same question on prefixes that may already have been warm, and that CI also included zero. Provider cache on Flash PREP is a real mechanism and **not** a lever that will make the drain feel faster or cost much less.
+
 _Dr. Mārcis Gasūns_
