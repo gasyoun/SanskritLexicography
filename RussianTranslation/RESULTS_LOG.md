@@ -4,6 +4,20 @@ _Created: 09-07-2026 · Last updated: 14-08-2026_
 
 Append-only, reverse-chronological. Each entry: date, context, model tier, table.
 
+## 14-08-2026 — H2721 (Grok 4.6) — Wave-2 defaults applied
+
+Grok 4.6 (`grok-4.6`). Policy only + next-5000 freeze. No Wave-1 rewrite. No generator drain.
+
+| Gate | Result |
+|---|---|
+| Denylist blocks Jmd/die/gewachsen | yes |
+| Sense fuzzy TM | off |
+| Formula fuzzy TM | on |
+| Wave-2 queue | **5000** unique k1 |
+| Overlap with Wave 1 | **0** |
+| Manifest sha256 | `f9fdb4ff6155f2e945d4f26d5fdb07a7f96b36ad48537b5a0be43988b0335ff8` |
+| `pytest` wave2 + generate | 24/24 with retrieval suite |
+
 ## 14-08-2026 — H2686 (Grok 4.6) — genuine QE + live retrieval A/B
 
 Grok 4.6 (`grok-4.6`). Backend repair: LaBSE WinError 1455 → DeepSeek `deepseek-v4-flash`. Wave 1 not rewritten. No mocks reported as results.
