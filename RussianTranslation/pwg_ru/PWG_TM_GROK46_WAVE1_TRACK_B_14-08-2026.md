@@ -1,86 +1,89 @@
-# PWG TM Grok 4.6 — Track B first slice (H2684)
+# PWG TM Grok 4.6 — Track B 5,000-key wave (H2684)
 
 _Created: 14-08-2026 · Last updated: 14-08-2026_
 
-Grok 4.6 (`grok-4.6`). Track B of [IMPLEMENTATION](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/IMPLEMENTATION_RussianTranslation_pwg_tm_dh_lexicography.md). Frozen queue from [H2683](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2683-Grok_RussianTranslation_pwg-tm-canonical-fragment-priority-w1_13.08.26.md) / [PR #1688](https://github.com/gasyoun/SanskritLexicography/pull/1688) (`d30086e15`).
+Grok 4.6 (`grok-4.6`). Track B of [IMPLEMENTATION](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/IMPLEMENTATION_RussianTranslation_pwg_tm_dh_lexicography.md). Frozen queue from [H2683](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2683-Grok_RussianTranslation_pwg-tm-canonical-fragment-priority-w1_13.08.26.md) / [PR #1688](https://github.com/gasyoun/SanskritLexicography/pull/1688). First-slice apparatus: [PR #1689](https://github.com/gasyoun/SanskritLexicography/pull/1689).
 
-## Status: PARTIAL
+## Status: WAVE ACCOUNTED — independent n=400 FAIL after one repair
 
-The runner, deterministic gates, resumable checkpoint, and independent-sample apparatus shipped. The frozen 5,000-headword wave is **not** finished. The independent n=400 quality gate is **not_run** — Grok 4.6 did not adjudicate its own sample.
+All 5,000 frozen headwords were processed. Every extracted fragment is either promoted or retained in the uncertain quarantine. The independent 400-fragment gate (Grok 4.5, not Grok 4.6) meets fidelity and equivalence floors and **fails** the serious-error ceiling after one bounded repair. That is a halt, not a second repair.
 
 ## Route
 
 | Item | Value |
 |---|---|
-| Route | `grok-4.6` (explicit `--route` required; not a default production path) |
+| Route | `grok-4.6` (explicit `--route`; not a default production path) |
 | Model | Grok 4.6 (`grok-4.6`) |
 | Prompt | [`src/pwg_tm_prompts/grok46_fragment_v1.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_tm_prompts/grok46_fragment_v1.txt) |
 | Prompt SHA-256 | `55ae95622093169a50ad2a622ba6c083dcecece256c0b49a76da59b8465b4c38` |
 | Pipeline | `pwg_tm_generate.v1` |
 | Gate | `pwg.tm.gate.v1` |
 | Frozen manifest | `f024ec4b0b2e58f75868462d84fd51858e4de473d07c0dd825a487f3b73d952a` |
+| Independent judge | Grok 4.5 (`grok-4.5`), 8 shards × 50 |
 
-`bounded_staged_run.py` is unchanged. Headless/Max defaults stay as they were.
+`XAI_API_KEY` was unset. Drafts are session-drafted Grok 4.6. Token counts are 0; cost is **not evaluable**, not zero.
 
-## First bounded slice
-
-Ten compact keys, two from each frozen stratum:
-
-| Stratum | Keys |
-|---|---|
-| attested_high | `BAvya`, `Aqambara` |
-| lexical_core | `Ayuta`, `Sabara` |
-| rare_attested | `Antara`, `jambuka` |
-| complex | `AlAna`, `AhAva` |
-| index_tail | `Ayuzmant`, `akzama` |
+## Wave accounting
 
 | Check | Result |
 |---|---|
-| Requested / found / missing source | **10 / 10 / 0** |
-| Extracted fragments | **734** |
-| Accounted (promoted + quarantine) | **734** |
+| Queue / processed / missing source | **5000 / 5000 / 0** |
+| Extracted fragments | **753111** |
+| Accounted (promoted + quarantine) | **753111** |
 | Silent drops | **0** |
 | Unaccounted promotions | **0** |
-| Promoted | **679** |
-| Quarantine (uncertain tier) | **55** |
+| Promoted | **655332** |
+| Quarantine (uncertain tier) | **97779** |
 
-Fill: deterministic 587 · Grok 4.6 gloss drafts 65 · sense-merge 42 · unfilled 40. Quarantine is mostly long sense wrappers with leftover German prose, plus two non-German `{%the%}` / `{%star%}` spans left unfilled on purpose.
+Fill (diagnostic, cumulative): deterministic 632596 · exact address reuse 953 · exact source-string reuse 19718 · session drafts ~250 · sense-merge 4835 · remaining unfilled ~94800 (almost all long sense wrappers still in quarantine).
 
-Draft origin is **session-drafted** Grok 4.6. `XAI_API_KEY` was unset; no xAI HTTP call. Token counts are 0; cost is **not evaluable**, not zero.
+Resumable dumps stay gitignored under [`release/pwg_tm_canonical/wave1_b/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/release/pwg_tm_canonical/wave1_b). Compact receipt: [`wave1_b_receipt/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/release/pwg_tm_canonical/wave1_b_receipt).
 
-Artifacts: [wave1_b_slice/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/release/pwg_tm_canonical/wave1_b_slice). Resume state lists the remaining 4,990 queue keys in `checkpoint.json`.
+New runner commands: `drain` (windowed merge resume), `needed`, `refill`. `run` still overwrites a single window.
 
-## Independent 400-fragment sample
+## Independent n=400
 
-A stratified 400-row sample was frozen from this slice pool (all six classes; accepted 347 / rejected 53; seed 2684). The blind packet strips Grok generation/gate self-assessment.
+Stratified stream sample from the finished 753111-row pool (seed 2684). All six classes; accepted 272 / rejected 128 before the repair refill. After one repair the sample has **0 empty targets**.
 
-| Independent gate | Result |
-|---|---|
-| Floors | ≥98% fidelity, ≥95% equivalence, ≤1% serious error |
-| Adjudication | **not_run** |
-| Why | No non-Grok judge file. Self-scores are refused (`judge_model=grok-4.6` → `refused_not_independent`). |
+| Floor | Result | Verdict |
+|---|---|---|
+| Fidelity ≥98% | **398/400 = 99.5%** (Wilson 98.2–99.9%) | pass |
+| Equivalence ≥95% | **382/400 = 95.5%** (Wilson 93.0–97.1%) | pass |
+| Serious error ≤1% | **10/400 = 2.5%** (Wilson 1.4–4.5%) | **fail** |
 
-The packet is [independent_packet.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/pwg_tm_canonical/wave1_b_slice/independent_packet.jsonl). A later session fills `adjudication.judge_model` with a human or a different model, then `python src/pwg_tm_quality.py verify --sample 400 --adjudication FILE`.
+Per class (fid / eq / serious / n): citation 48/48/0/48 · example 48/48/0/48 · grammar_label 48/48/0/48 · recurring_formula 80/79/1/80 · definition_gloss 96/91/5/96 · sense 78/68/4/80.
 
-This 400 is a sample of the **10-key first slice**, not of a finished 5,000-headword wave.
+## One bounded repair
+
+1. Exact source-string lexicon from the existing 2392 publication records (gloss/formula only; not sense wrappers).
+2. Extra formula metalanguage (`demin.`, `personif.`, `Uebertr.`/`uebertr.`, …).
+3. Session drafts for the 48 sample glosses plus 38 leftover sample senses/formulas; `refill` re-gated the whole quarantine.
+
+Moved to promoted by refill: 863 + 62. The independent gate was run **after** this repair.
+
+## Why serious_error stays above the floor
+
+Ten Grok 4.5 serious flags. Dominant class is **unsafe short-gloss source reuse** from the publication TM:
+
+| Source | Target reused | Judge note |
+|---|---|---|
+| `{%Jmd%}` (×3 + one sense) | `{%поручать кому-л.%}` | *jemand* dative, not “entrust” |
+| `{%die%}` | `{%боги%}` | article, not “gods” |
+| `{%gewachsen%}` | `{%соответствующий, способный справиться%}` | “grown”, not “equal-to/capable” |
+| `<ab>v. a.</ab>` | `<ab>т. е.</ab>` | judge reads *vor allem*; house table had *videlicet* |
+| two long senses | mixed leftover German / wrong verb | residual wrapper prose |
+
+A second repair would be a denylist on short/ambiguous gloss reuse. That is **out of this handoff** (one-repair halt).
 
 ## Proof
 
 ```text
-python src/pwg_tm_gates.py --selftest
 python src/pwg_tm_generate.py --verify
 python src/pwg_tm_quality.py --selftest
-python src/pwg_tm_quality.py verify --sample 400
+python src/pwg_tm_quality.py verify --sample 400 --adjudication release/pwg_tm_canonical/wave1_b_receipt/adjudication400.jsonl --sample-meta release/pwg_tm_canonical/wave1_b_receipt/sample400.jsonl.meta.json
 pytest tests/test_pwg_tm_generate.py tests/test_pwg_tm_canonical.py
 ```
 
-All green. Quality verify exits 0 with `independent_gate=not_run` when no adjudication file is supplied — that is the honest apparatus, not a pass.
-
-## Remaining
-
-1. Resume `pwg_tm_generate.py run --route grok-4.6 --resume` over the other 4,990 keys (needs `XAI_API_KEY` or further session drafts).
-2. Independent judge (human or non-Grok model) on a 400-row packet from the finished wave.
-3. One bounded repair if that independent gate is below the floor.
-4. Track C (TEI / OntoLex / release) is out of this handoff.
+Verify exits 1 on `independent_gate=fail`. That is the honest apparatus.
 
 _Dr. Mārcis Gasūns_
