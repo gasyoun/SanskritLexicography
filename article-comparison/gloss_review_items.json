@@ -16,6 +16,17 @@
         "needs_human": 13
       },
       "routing": "0 source-contradicts (nothing to auto-reject this pass). 19 source-confirms: the 14 at L-severity are accepted on the agent verdict alone (PD's own text/citation backs them, lowest stakes) and need no further human vote before /decisions-apply; the 5 at H/M-severity (agni:A:4i, agni:A:4vi, aksara:A:2Eiii, ananta:A:m17B, anya:A:5Biii — exactly the H+M confirms, ≈26% of 19) are routed to the human as a blind spot-check on the adjudicator per the В2/P1 precedent. 13 needs-human items go to the human in full (PD's own entry does not decide them). Reduced human ask = 5 + 13 = 18 of 32 (44 %), not the ~8 planning estimate in the H1664 audit's §11.2 row — that number was a pre-execution guess; the actual per-item check found more genuine external-knowledge/register calls than anticipated, logged here as a measured correction, not hidden."
+    },
+    "decisions_applied": {
+      "agni": {
+        "date": "15-08-2026",
+        "sheet_id": "sanskritlexicography-article-comparison_agni",
+        "decisions_file": "Uprava/review/sanskritlexicography-article-comparison_agni_decisions.json",
+        "approve": 9,
+        "reject": 1,
+        "defer": 1,
+        "agent": "Opus 5 (claude-opus-5)"
+      }
     }
   },
   "words": {
@@ -39,7 +50,10 @@
           "verdict_quote": "PD {@4i@} fire-altar — голая глосса объекта (в отличие от 4vi «rite of preparing»).",
           "verdict_note": "PD категориально разводит объект (4i) и обряд (4vi) — правка верна.",
           "spot_check": true,
-          "verdict_agent": "Sonnet 5 (claude-sonnet-5)"
+          "verdict_agent": "Sonnet 5 (claude-sonnet-5)",
+          "decision": "reject",
+          "decided": "15-08-2026",
+          "decision_note": "PD авторитетен: fire-altar = жертвенный алтарь, санскритизм кириллицей не мешает; «жертвенный алтарь огня» — не по-русски. Ячейка остаётся без изменений."
         },
         {
           "id": "agni:A:4vi",
@@ -54,7 +68,10 @@
           "verdict_quote": "PD {@4vi@} the rite of preparing the fire-altar.",
           "verdict_note": "PD прямо глоссирует 4vi как обряд — агничаяна относится сюда, не к 4i.",
           "spot_check": true,
-          "verdict_agent": "Sonnet 5 (claude-sonnet-5)"
+          "verdict_agent": "Sonnet 5 (claude-sonnet-5)",
+          "decision": "approve",
+          "decided": "15-08-2026",
+          "applied_ru": "обряд сооружения алтаря огня (агничаяна)"
         },
         {
           "id": "agni:A:2iii",
@@ -68,7 +85,10 @@
           "verdict": "needs-human",
           "verdict_quote": "PD {@2iii@} (sacrificial fire called) āhavanīya — цитаты дают долгое ī, латиницей.",
           "verdict_note": "PD подтверждает āhavanīya, но норма русской транслитерации (Кочергина «ахавания» vs «ахаванья») — вне текста PD, решает русскоязычный источник.",
-          "verdict_agent": "Sonnet 5 (claude-sonnet-5)"
+          "verdict_agent": "Sonnet 5 (claude-sonnet-5)",
+          "decision": "approve",
+          "decided": "15-08-2026",
+          "applied_ru": "ахавания (огонь для возлияний)"
         },
         {
           "id": "agni:A:3x",
@@ -82,7 +102,10 @@
           "verdict": "needs-human",
           "verdict_quote": "PD {@3x@} as hotṛ; ṚV. i.1.1 agnim īḷe purohitaṃ yajñasya devam-ṛtvijam hotāraṃ ratnadhātamam.",
           "verdict_note": "PD лишь цитирует РВ, где Агни назван hotṛ, но не определяет функцию hotṛ — разграничение «рецитатор» vs «возливатель» внешнее (ведийское ритуаловедение), не из этой записи PD.",
-          "verdict_agent": "Sonnet 5 (claude-sonnet-5)"
+          "verdict_agent": "Sonnet 5 (claude-sonnet-5)",
+          "decision": "approve",
+          "decided": "15-08-2026",
+          "applied_ru": "как хотар (жрец-призыватель, рецитатор)"
         },
         {
           "id": "agni:A:14",
@@ -96,7 +119,10 @@
           "verdict": "source-confirms",
           "verdict_quote": "PD {@14@} a synonym of kleśa; Yogācā. 167.3 (paridāhā upāyāsā raṇā agnayo jvarāḥ).",
           "verdict_note": "Источник — Йогачарабхуми (буддийская абхидхарма/йогачара), список синонимов клеши — регистр «аффект/омрачение» подтверждён.",
-          "verdict_agent": "Sonnet 5 (claude-sonnet-5)"
+          "verdict_agent": "Sonnet 5 (claude-sonnet-5)",
+          "decision": "defer",
+          "decided": "15-08-2026",
+          "decision_note": "Учесть формулировку Парибка из стенограмм первых 16 занятий по Йога-сутрам, затем пере-предъявить."
         },
         {
           "id": "agni:A:13",
@@ -110,7 +136,10 @@
           "verdict": "needs-human",
           "verdict_quote": "PD {@13@} a mental disposition (of the self); ŚatBr. X.v.3.3.",
           "verdict_note": "Цитата ШатБр описывает манифестацию 36000 огней ума, не решает выбор «склад ума» vs «душевное состояние» — стилистический вопрос регистра.",
-          "verdict_agent": "Sonnet 5 (claude-sonnet-5)"
+          "verdict_agent": "Sonnet 5 (claude-sonnet-5)",
+          "decision": "approve",
+          "decided": "15-08-2026",
+          "applied_ru": "склад ума, умонастроение"
         },
         {
           "id": "agni:A:25xiv",
@@ -124,7 +153,10 @@
           "verdict": "source-confirms",
           "verdict_quote": "PD {@25xiv@} god of the udātta accent; agnir uccasya devatā (YājñaŚi. 2; ŚaiśiŚi. 135, opposed to svarita/śyāma).",
           "verdict_note": "PD сам использует «ucca» (повышенный) в противоположность svarita — «повышенного тона» точнее «высокого тона».",
-          "verdict_agent": "Sonnet 5 (claude-sonnet-5)"
+          "verdict_agent": "Sonnet 5 (claude-sonnet-5)",
+          "decision": "approve",
+          "decided": "15-08-2026",
+          "applied_ru": "(божество) удатты (повышенного тона, акута)"
         },
         {
           "id": "agni:B:6vi",
@@ -138,7 +170,10 @@
           "verdict": "source-confirms",
           "verdict_quote": "PD {@6vi@} a kind of plant called jāra; RājNi. 430.3 (aruṣkara, jāra, nimbuka, citraka).",
           "verdict_note": "Полная запись PD уже называет джару растением (список синонимов Раджанигханту) — подсказка подтверждена, отдельной сверки не требует.",
-          "verdict_agent": "Sonnet 5 (claude-sonnet-5)"
+          "verdict_agent": "Sonnet 5 (claude-sonnet-5)",
+          "decision": "approve",
+          "decided": "15-08-2026",
+          "applied_ru": "джара (растение; PD listing — сверить источник)"
         },
         {
           "id": "agni:B:25iv",
@@ -152,7 +187,10 @@
           "verdict": "source-confirms",
           "verdict_quote": "PD {@25iv@} one of the presiding deities of the Vyāhṛtis; BṛParāSm. 2.63 / CaturCin. iii(1).130.8 (agni-vāyu-āditya).",
           "verdict_note": "PD подтверждает триаду Агни/Ваю/Адитья как божеств вьяхрити; вьяхрити = bhūr bhuvaḥ svaḥ (MW) — добавка обоснована.",
-          "verdict_agent": "Sonnet 5 (claude-sonnet-5)"
+          "verdict_agent": "Sonnet 5 (claude-sonnet-5)",
+          "decision": "approve",
+          "decided": "15-08-2026",
+          "applied_ru": "(божество) Вьяхрити (сакральных возгласов bhūr bhuvaḥ svaḥ)"
         },
         {
           "id": "agni:B:26viii",
@@ -166,7 +204,10 @@
           "verdict": "needs-human",
           "verdict_quote": "PD {@26viii@} (Jain.) a group of Bhavanavāsin gods called Agnikumāras (cf. TattvārthāSū. 4.11).",
           "verdict_note": "PD подтверждает «джайн.» и «Бхаванавасин/Агникумары», но НЕ даёт пуранической атрибуции — тег «/пуран.» в предложенной правке источником не подтверждён; принимать только с удалением «/пуран.» либо после отдельной сверки.",
-          "verdict_agent": "Sonnet 5 (claude-sonnet-5)"
+          "verdict_agent": "Sonnet 5 (claude-sonnet-5)",
+          "decision": "approve",
+          "decided": "15-08-2026",
+          "applied_ru": "группа богов Бхаванавасин (класс божеств-«обитателей дворцов», джайн./пуран.)"
         },
         {
           "id": "agni:B:25vi",
@@ -180,7 +221,10 @@
           "verdict": "source-confirms",
           "verdict_quote": "PD {@25vi@} the presiding deity of the fifth syllable of the eight-syllabled mantra for Viṣṇu; ĪśānŚiPa. i.33.6.",
           "verdict_note": "PD сам использует «presiding deity», параллельно соседним 25ii–v — добавка «(божество)» точно соответствует.",
-          "verdict_agent": "Sonnet 5 (claude-sonnet-5)"
+          "verdict_agent": "Sonnet 5 (claude-sonnet-5)",
+          "decision": "approve",
+          "decided": "15-08-2026",
+          "applied_ru": "(божество) слога мантры Вишну"
         }
       ],
       "fyi": [

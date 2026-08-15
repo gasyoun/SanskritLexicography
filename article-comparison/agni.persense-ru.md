@@ -7,7 +7,7 @@ _Засвидетельствованные русские соответств�
 | **1** | fire, ordinary fire | огонь, обыкновенный огонь | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
 | **2i** | sacrificial fire, sacred fire | жертвенный огонь, священный огонь | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
 | **ii** | gārhapatya | гархапатья (огонь домохозяина) | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
-| **iii** | āhavanīya | ахаванья (огонь для возлияний) | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
+| **iii** | āhavanīya | ахавания (огонь для возлияний) | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
 | **iv** | dakṣiṇāgni v sacrificial fire with other names and attributes | дакшинагни; жертвенный огонь под иными именами и со свойствами | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
 | **vi** | domestic fire | домашний огонь | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
 | **vii** | fire worshipped by the Brahmacārin | огонь, почитаемый брахмачарином | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
@@ -26,7 +26,7 @@ _Засвидетельствованные русские соответств�
 | **vii** | as guest | как гость |  |
 | **viii** | with smoke as banner | со знаменем-дымом (дымознаменный) |  |
 | **ix** | bringer of gods to the sacrifice | приводящий богов на жертвоприношение | жертвоприношении ×1 _02_ramayana-ayodhyakanda:43.5_ · жертвоприношения на огне ×1 _01_mahabharata-adiparva:1.81.10-16_ · Бога ×1 _03_rigveda:2.5_ |
-| **x** | as hotṛ | как хотар (жрец-возливатель) | жрец ×1 _02_ramayana-ayodhyakanda:43.5_ |
+| **x** | as hotṛ | как хотар (жрец-призыватель, рецитатор) | жрец ×1 _02_ramayana-ayodhyakanda:43.5_ |
 | **xi** | messenger | вестник |  |
 | **xii** | mentioned with Manu | упоминаемый вместе с Ману |  |
 | **xiii** | with ṛta, vrata | связанный с ритой и вратой (порядком и обетом) |  |
@@ -45,14 +45,14 @@ _Засвидетельствованные русские соответств�
 | **iii** | brick for building the altar | кирпич для постройки алтаря | алтаря ×2 _02_ramayana-ayodhyakanda:14.14_ · огонь алтаря ×1 _bhagavadgity:4.24_ · огнѣ алтаря ×1 _bhagavadgita-1788:4.24_ · алтаря огонь ×1 _bhagavadgita-1909:9.16_ |
 | **iv** | area for the fire-altar | площадка для алтаря огня | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
 | **v** | text dealing with the rite of fire-altar | текст об обряде алтаря огня | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
-| **vi** | rite of preparing the fire-altar | обряд сооружения алтаря огня | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
+| **vi** | rite of preparing the fire-altar | обряд сооружения алтаря огня (агничаяна) | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
 | **5** | fire as one of the five elements | огонь как один из пяти первоэлементов | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
 | **6i** | the plant Plumbago zeylanica | растение Plumbago zeylanica (читрака) |  |
 | **ii** | a kind of citraka | разновидность читраки |  |
 | **iii** | bhallātaka | бхаллатака (Semecarpus anacardium) |  |
 | **iv** | Semicarpu sanacardium | Semecarpus anacardium |  |
 | **v** | Citrus acida | Citrus acida (кислый лайм) |  |
-| **vi** | jāra | джара |  |
+| **vi** | jāra | джара (растение; PD listing — сверить источник) |  |
 | **7i** | number three | число «три» |  |
 | **ii** | the third house in a horoscope | третий дом гороскопа |  |
 | **iii** | the third lunar day | третий лунный день (титхи) |  |
@@ -67,7 +67,7 @@ _Засвидетельствованные русские соответств�
 | **ii** | the seventh part of the night | седьмая часть ночи |  |
 | **E** | the tenth of the sixty divisions of a zodiacal sign | десятая из шестидесяти долей знака зодиака |  |
 | **12** | burning sensation, sorrow | жжение, скорбь |  |
-| **13** | a mental disposition | душевное состояние |  |
+| **13** | a mental disposition | склад ума, умонастроение |  |
 | **14** | a synonym of kleśa | синоним клеши (страдания) |  |
 | **15** | heat of fire | жар огня | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
 | **16i** | mystic fire in the Mūlādhāra | мистический огонь в муладхаре | огонь ×788 _01_atharvaveda:8.4_ · пламя ×36 _02_ramayana-ayodhyakanda:32.4_ · костры ×19 _02_ramayana-ayodhyakanda:52.49_ · пожар ×9 _02_ramayana-ayodhyakanda:114.12_ · на огне ×7 _02_ramayana-ayodhyakanda:54.12_ · жертвенный огонь ×4 _01_mahabharata-adiparva:1.3.193-195_ · два огня ×4 _13_atharvaveda:1.49_ · огнѣ ×3 _bhagavadgita-1788:4.25_ |
@@ -83,9 +83,9 @@ _Засвидетельствованные русские соответств�
 | **25i** | deity of speech | божество речи |  |
 | **ii** | of Sudarśana mantra | (божество) мантры Сударшаны |  |
 | **iii** | of Lavaṇa mantra | мантры Лаваны |  |
-| **iv** | of Vyāhṛtis | вьяхрити |  |
+| **iv** | of Vyāhṛtis | (божество) Вьяхрити (сакральных возгласов bhūr bhuvaḥ svaḥ) |  |
 | **v** | of the first syllable of Gāyatri | первого слога Гаятри |  |
-| **vi** | of a syllable of the mantra for Viṣṇu | слога мантры Вишну |  |
+| **vi** | of a syllable of the mantra for Viṣṇu | (божество) слога мантры Вишну |  |
 | **vii** | the mouth of Gāyatrī | уста Гаятри |  |
 | **viii** | of the first day of the lunar fortnight | первого дня лунной половины месяца |  |
 | **ix** | god of Agnihotra | бог агнихотры | Бога ×1 _03_rigveda:2.5_ |
@@ -93,7 +93,7 @@ _Засвидетельствованные русские соответств�
 | **xi** | god of Kṛttikā | бог Криттики | Бога ×1 _03_rigveda:2.5_ |
 | **xii** | regent of a quarter | правитель стороны света |  |
 | **xiii** | god of the south-east | бог юго-востока | Бога ×1 _03_rigveda:2.5_ |
-| **xiv** | of the udātta | (божество) удатты (высокого тона) |  |
+| **xiv** | of the udātta | (божество) удатты (повышенного тона, акута) |  |
 | **xv** | of time | времени |  |
 | **xvi** | of the sword | меча |  |
 | **26i** | name of one of the Vāstudevatās | имя одной из Вастудеват |  |
@@ -103,7 +103,7 @@ _Засвидетельствованные русские соответств�
 | **v** | name of Bālakṛṣṇa | имя Бала-Кришны |  |
 | **vi** | attendant of Skandasena | спутник Скандасены |  |
 | **vii** | deity of the eastern gate | божество восточных врат |  |
-| **viii** | a group of Bhavanavāsin gods | группа богов Бхаванавасин | Бога ×1 _03_rigveda:2.5_ |
+| **viii** | a group of Bhavanavāsin gods | группа богов Бхаванавасин (класс божеств-«обитателей дворцов», джайн./пуран.) | Бога ×1 _03_rigveda:2.5_ |
 | **ix** | leader of Śiva's attendants | предводитель свиты Шивы |  |
 | **x** | one of the seven sages | один из семи мудрецов (саптарши) |  |
 | **xi** | son of Ūru | сын Уру |  |
