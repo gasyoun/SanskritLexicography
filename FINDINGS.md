@@ -6007,3 +6007,47 @@ also why `learnsanskrit.ru` errata have never had a home.
 > Opus 5 (`claude-opus-5`) · 15-08-2026 · H798 prerequisite 2 (store located: none exists).
 > Evidence: `CORRECTIONS/dictionaries/` listing + `cut -f2 cfr.tsv | sort -u` (no Kochergina
 > code); `grep -c Kochergina` over the BLI B1 500-card sheet = 500/500. §540 takes the next number.
+
+### §540. Mixed-script words hide from every search that assumes one alphabet per word — and the repair map has to be transliteration, not visual shape
+
+One reviewer comment on a Sundarakāṇḍa ballot card («`saketakodDālakа` — что за
+мусор с транслитерацией?») turned out to name a corpus-wide class. That single
+word carries **two** independent defects: `odDālaka` is leaked HK/SLP1
+camelCase, and its final «а» is Cyrillic sitting inside a Latin word. Neither is
+visible to the eye, and neither is findable by grep, because a search for
+`saketakoddālaka` assumes one alphabet per word and a search for the Cyrillic
+form assumes the other. Scanning every note-bearing JSON in CommentaryStrategies
+found **643 such places**, of which 553 were mechanically repairable.
+
+Three things generalise to any bilingual corpus in this org:
+
+1. **The repair map is transliteration, not visual shape.** Cyrillic «р» looks
+   exactly like Latin `p`, but in every real instance of this corpus it stands
+   for `r`: `dhарmic` is `dharmic`, `niрvā` is `nirvā`, `Раghuvamsha` is
+   `Raghuvamsha`. The first version of the fixer used the homoglyph (visual) map
+   and proposed writing `dhapmic` into 201 places — caught only because the run
+   printed its proposals before applying them. **Always preview a bulk
+   normalisation as a word→word list.**
+2. **Ambiguous letters are settled by the corpus, not by preference.** «с» reads
+   as both `s` and `c`: `Кālidāса` is `Kālidāsa`, but `saṃcukoсa` is
+   `saṃcukoca`. Forking the word into every candidate and keeping the one the
+   corpus already spells cleanly resolves most; the rest go to a report. Ninety
+   did, mostly Russian transcription carrying IAST retroflexes (`пāṭхāнтара`,
+   `брахмаṇḍа`) — a guess there silently invents a reading.
+3. **Decide on the parsed tree, apply to the raw text.** The parse supplies the
+   field name, without which camelCase cannot be judged at all: it is a defect in
+   `note_ru` and correct in `stem`, where 1 687 legitimate SLP1 keys live — scoping
+   by field turned 2 368 false positives into 18 real ones. But writing the repair
+   through `json.dump` reformatted files whose content never changed (32 000 diff
+   lines in one untouched index), and a diff nobody can read is a diff nobody
+   checks.
+
+Detector + fixer, reusable and CI-ready as `--check`:
+[CommentaryStrategies/scripts/translit_hygiene.py](https://github.com/gasyoun/CommentaryStrategies/blob/main/scripts/translit_hygiene.py).
+Residue list:
+[data/analysis/translit_hygiene_report.md](https://github.com/gasyoun/CommentaryStrategies/blob/main/data/analysis/translit_hygiene_report.md).
+
+> Opus 5 (`claude-opus-5`) · 15-08-2026 · H2831, from votes/sarga.md п.14.
+> Evidence: 643 found / 553 repaired / 90 reported, over 235 source JSONs;
+> [PR #170](https://github.com/gasyoun/CommentaryStrategies/pull/170). §541 takes
+> the next number.
