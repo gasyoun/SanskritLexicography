@@ -11,6 +11,10 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 ## [Unreleased]
 
 ### Added
+
+## [1.144.55] - 2026-08-15
+
+### Added
 - **H2769 (Opus 5, `claude-opus-5`) — G6 full 320-card gold cut under the V9 sheet standard, and one print-ready predicate for the G5 gate ([#1712](https://github.com/gasyoun/SanskritLexicography/issues/1712)):** new [`store_flags.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/store_flags.py) is the single definition of "machine-clean / print-ready", imported by `run_batch.py` and by both release gates, which had kept a raw `ok ∧ placeholders_ok ∧ key_match` conjunction the current store schema can never satisfy — `release_readiness` on the live store now reports `print_ready=3`, not `0`. [`build_g6_mqm_gold_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_g6_mqm_gold_sheet.py) gains the V9 screening block, a per-card evidence manifest (the A/B/C grade is declared *withheld*: same ids, derived from the label under review), a declared-SLP1 allowance enumerated from the panel data, and `--generated`; [`gold_evidence_panel.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gold_evidence_panel.py) streams corpus contexts in two passes (the single pass was a MemoryError on the 150 MB `dic_mw.jsonl`, which is why only the 20-card cut ever built) and renders dictionary headwords in IAST with SLP1 demoted. Full 320-card cut `sha256:d9125d7d…`, lock [`h215-gold-full-320-2026-08-14`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/review/locks/h215-gold-full-320-2026-08-14.lock.json); `pytest tests -q` 190 passed. Built, not yet voted.
 
 ## [1.144.51] - 2026-08-14

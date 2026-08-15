@@ -14,6 +14,9 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.55] - 2026-08-15
+- **H2769 G6 full 320-card V9 cut + one print-ready predicate for G5** (Opus 5 `claude-opus-5`, 15-08-2026): [`store_flags.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/store_flags.py) replaces the raw `ok ∧ placeholders_ok ∧ key_match` conjunction the two release gates still inlined — those flags are **absent** on all 11 603 live store rows, so G5 reported `print_ready=0` forever and read as a review backlog; it now reports **3**. The G6 gold sheet builds at full size for the first time (320 cards, `sha256:d9125d7d…`) after `corpus_contexts` stopped materializing whole works (MemoryError on the 150 MB `dic_mw.jsonl`), and comes up to the V9 sheet standard: screening block, per-card evidence manifest with the A/B/C grade declared withheld, declared-SLP1 allowance, IAST headwords. 190 tests green. Built, not voted. [#1712](https://github.com/gasyoun/SanskritLexicography/issues/1712) · [PR #1718](https://github.com/gasyoun/SanskritLexicography/pull/1718).
+
 ## [1.144.54] - 2026-08-14
 - **H2756 drain-meaning note** (Grok 4.6 `grok-4.6`, 14-08-2026): CONCLUSIONS now states in prose that the Flash PREP prefix-cache sitting is USD-on-repeats, not drain wall-clock, and cannot speed a production PWG→RU pass (PREP is a few percent of the card; 0.2% INCONCLUSIVE). [CONCLUSIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/CONCLUSIONS.md).
 
