@@ -116,11 +116,59 @@ Cologne has scanned.
   `ls_gap_repair.py` and are deliberately *not* called from `ls_links.py`. Each
   one rewrites a citation before resolving it, and a wrong rewrite invents a
   reference to the wrong book — worse than leaving it dark. Promoting any of
-  them into the resolver is a human's call, one rule at a time.
+  them into the resolver is a human's call, one rule at a time. **One has since
+  been promoted — see §Promoted below.**
 - **If citation coverage ever becomes a priority**, the lever is upstream: which
   editions get scanned next. The ranked want-list is
   [`ls_gap_unrepairable_by_source.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/ls_gap_unrepairable_by_source.tsv)
   — Suśruta alone would light up 280 citations.
+
+## Promoted — `uppercase_prefix`, and why it landed as something else (H2853, 15-08-2026)
+
+Asked to apply `uppercase_prefix` to the resolver, the first thing that check
+turned up was that **the repair's own name was a misdiagnosis**, and applying it
+literally would have caused a wrong-edition link.
+
+**Case is load-bearing in `_CODE_TO_PFX`.** Uppercase is PWG's citation
+convention, mixed-case is Monier-Williams', and the two route to *different
+scans*: `ŚĀK.`→`shakuntala_pwg` vs `Śāk.`→`shakuntala`; `RAGH.`→`ragh_pwg` vs
+`Ragh.`→`ragh`; `YĀJÑ.`→`yajn_pwg` vs `Yājñ.`→`yajn`. A blanket uppercase would
+silently move a citation from one edition to another.
+
+Inspecting the 7 affected citations: **all are `layer=sch`** — Schmidt's
+*Nachträge*, which carries MW-style abbreviations into PWG data. So this is not
+a typo class; it is a second citation convention inside the store. Per case:
+
+- **`MBh.` (5).** Already in the map, pointing at prefix `'MBH.'` — a value
+  `href_mahabharata` never handled, so it fell out as `None`. **Not a case bug at
+  all: a dead branch.** Fixed by handling that prefix, with the edition chosen by
+  **arity** exactly as the pattern list already does for the uppercase form
+  (3 coordinates = Bombay, 2 = Calcutta). Upstream csl-app has the identical dead
+  branch — an upstream bug, worth reporting there.
+- **`Yājñ.` (1).** Not applied. Uppercasing crosses the MW→PWG edition boundary
+  above. Needs a human ruling on which Yājñavalkya edition the Schmidt citation
+  means.
+- **`Hariv.` (1).** Not applied. `Hariv. 2` carries one coordinate;
+  `href_harivamsa` requires three, while the uppercase pattern accepts one. Whether
+  a bare book number is a valid target is an editorial call.
+
+Two further latent defects fell out and were fixed in the same pass: the
+`MBHC`/`MBHB` branches emitted `mahabharata/calc/` and `mahabharata/bomb/`, both
+now **404** (the repos were renamed `mbhcalc`/`mbhbomb` and only the pattern list
+was updated); and `extract_first_key` never produces the `'MBh. (ed. Calc.)'` /
+`'MBh. (ed. Bomb.)'` keys, so those map entries are unreachable too — left as a
+separate upstream defect rather than fixed blind, with a guard so an
+explicitly-Calcutta 3-coordinate citation yields `None` instead of a Bombay link.
+
+**Blast radius, measured over all 36,544 distinct citations in the store:
++5 resolved, 0 lost, 0 changed.** All five targets verified HTTP 200. Guarded by
+[`ls_resolver_mbh_selftest.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver_mbh_selftest.py)
+(25 assertions, including that the case-distinguished pairs above still resolve
+to *different* editions), now in CI.
+
+While auditing this, every viewer the resolver emits over the store was HTTP-checked:
+**all live**. The two initial "dead" hits were a urllib transport flake and an HTTP 429,
+both 200 on re-check — so H2827's 3,677-link figure carries no dead targets.
 
 ## Reproduce
 
