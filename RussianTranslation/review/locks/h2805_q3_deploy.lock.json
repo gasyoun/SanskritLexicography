@@ -1,0 +1,21 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h2805_q3_deploy",
+  "content_hash": "sha256:0f88e41b209be7fb85ad85dfa1c55bc93ce0cc3932306de57ead8b65cb280443",
+  "generated": "2026-08-15",
+  "gate": null,
+  "n_items": 7,
+  "ids": [
+    "h2805-D1",
+    "h2805-D2",
+    "h2805-G1",
+    "h2805-G2",
+    "h2805-G3",
+    "h2805-T1",
+    "h2805-T2"
+  ],
+  "source_html": "h2805_q3_deploy_sheet.html",
+  "mode": "stamped",
+  "created": "2026-08-15",
+  "tool": "review_binding.py (H1404 binding standard)"
+}
