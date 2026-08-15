@@ -25,6 +25,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 import pwg_mask
+import store_flags
 import corpus_gate as cg
 import assemble
 import pipeline_version
@@ -124,20 +125,11 @@ def _display_ord(row):
     return '' if row.get('ord') is None else row.get('ord')
 
 
-def _row_key_match(row):
-    if row.get('key_match') is not None:
-        return bool(row.get('key_match'))
-    # Promoted sense-level rows have already survived the deterministic promote path;
-    # they no longer carry the legacy batch key_match flag.
-    return bool(row.get('key1') and row.get('subcard'))
-
-
-def _row_placeholders_ok(row):
-    if row.get('placeholders_ok') is not None:
-        return bool(row.get('placeholders_ok'))
-    # Merged-pipeline rows do not use the old {Tn} placeholder skeleton, so absence of
-    # the legacy flag is neutral rather than a validation failure.
-    return bool(row.get('ru'))
+# These three predicates moved to store_flags.py so the release gates share ONE
+# definition with this driver — they had drifted to a raw flag conjunction the current
+# store schema can never satisfy (H215 / #1712). Aliases keep this module's call sites.
+_row_key_match = store_flags.row_key_match
+_row_placeholders_ok = store_flags.row_placeholders_ok
 
 
 def _bool_cell(v):
@@ -474,10 +466,7 @@ def _resolve_review_row(rid, by_id, by_suffix):
     return by_suffix.get(suf) if suf else None
 
 
-def _machine_ok(row):
-    if row.get('ok') is not None:
-        return bool(row.get('ok') and _row_placeholders_ok(row) and _row_key_match(row))
-    return bool(_row_placeholders_ok(row) and _row_key_match(row))
+_machine_ok = store_flags.machine_ok
 
 
 def _csv_machine_ok(row):

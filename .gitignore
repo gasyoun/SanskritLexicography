@@ -115,8 +115,9 @@ RussianTranslation/review/g6_*_sheet.html
 RussianTranslation/review/g5-live-queue-*_decisions.json
 RussianTranslation/review/g6-mqm-*_decisions.json
 # H1801 evidence panels quote the published Russian translations of the cited
-# passages verbatim — same rights footing as the sheet HTML they feed
-RussianTranslation/review/g6_*_evidence_coverage.json
+# passages verbatim — same rights footing as the sheet HTML they feed.
+# Pattern widened H2769: the full 320-card cut is not named `g6_*`.
+RussianTranslation/review/*_evidence_coverage.json
 
 # semdom.json fetch cache (semdom_varga_crosswalk.py / semdom_ak_annex_table.py) — CC BY-SA input, fetched on demand, never committed
 /data/semdom.json
