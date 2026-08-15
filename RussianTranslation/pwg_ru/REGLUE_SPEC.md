@@ -1,6 +1,6 @@
 # Content-aware re-glue spec
 
-_Created: 06-07-2026 · Last updated: 15-08-2026_
+_Created: 06-07-2026 · Last updated: 16-08-2026_
 
 **Deliverable 3 of
 [H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md)**
@@ -221,5 +221,70 @@ invisible; a wrong split silently rewrites a definition.
 (generator
 [`build_reglue_sheet_v2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_reglue_sheet_v2.py)).
 v1 stays published for comparison but is not the vote.
+
+## 9. The vote had no evidence on it — and 90 % of it was unaskable (H2859, 16-08-2026)
+
+§8 made the sheet legible. Asked for **more data in the voting**, the check found
+the problem was not thin presentation but an unanswerable question.
+
+### 9.1 The ≈ chip claims a relation to a sense that is not there
+
+`restate` is assigned by **layer default** — `layer=pw` and no gender conflict —
+*independently of whether an insertion target was found*. Measured over the
+sidecar: **5,054 of 5,603 supplements (90.2 %) carry
+`target_sense='*new'`**, the pipeline's own marker for "no PWG sense to attach
+to", **and are still labelled `restate` ("PW abridging restatement")**. The chip
+asserts a relationship to PWG while the insertion point simultaneously says there
+is nothing to relate to. Asking a human "does this restatement sit at the right
+PWG sense?" when the sidecar already says there is no such sense is not a
+question, and no amount of extra display fixes it.
+
+This is the same divergence §5a measured from the other side (PW renumbers, so
+naive leading-integer attachment misfires) — but §5a read it as *placement falls
+back to `*new`, nothing lost*. The label did not fall back with it.
+
+### 9.2 What is actually checkable: 4.4 %
+
+| bucket | supplements | share |
+|---|---:|---:|
+| no PWG target (`*new`) | 4,690 | 83.7 % |
+| target exists, German too thin to compare | 303 | 5.4 % |
+| **genuinely checkable** | **246** | **4.4 %** |
+
+`nws/foreign_fragment` (62) and `pw/pw_correct` (1) have **zero** checkable pairs —
+every one lands in `*new`. So the single `pw_correct`, the one cancellation the
+whole corpus contains, cannot be verified against a PWG sense at all.
+
+### 9.3 An evidence axis that was tried and rejected
+
+Gloss-word overlap (Jaccard over German content words) was the obvious candidate
+for making ≈-vs-＋ checkable. It does **not** discriminate — median 0.000 for both
+classes — and the cause is the data, not the metric: a PWG sense body has a
+**median of 3 content words** (39 chars) and 16 % have none, so two short German
+synonym lists share no surface forms even when one restates the other. Kept in
+[`reglue_overlap.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/reglue_overlap.py)
+so the negative result stays reproducible, and deliberately **not** shown on a
+card as a signal — a number that looks like evidence and isn't is worse than none.
+
+Citation overlap survives as objective evidence and is displayed.
+
+> A self-inflicted trap worth keeping: the first cut of that measurement stripped
+> `{%…%}` along with `{#…#}`. `{#…#}` is Sanskrit; **`{%…%}` is the German meaning
+> gloss** — the very text being compared. Deleting it drove 95 % of pairs to a
+> spurious 0.000 that *looked* like a finding. Caught only by reading actual pairs
+> instead of trusting the aggregate.
+
+### 9.4 What the vote now is
+
+[`build_reglue_evidence_sheet.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_reglue_evidence_sheet.py)
+→ **one supplement per card**, 47 cards drawn only from the 246 checkable pairs,
+stratified across every `(layer, subtype)` that has any. Each card carries the
+**German original of both sides** (anatomy-coloured) — because the relation holds
+between the sources, not between their translations — the Russian beneath it, and
+the machine's full claim: subtype, op, direction, anchor, sidecar evidence string,
+confidence, shared `<ls>` citations, and gloss-word counts. Reject reveals a
+required reason (`wrong_place` / `wrong_label` / `both` / `not_a_supplement`).
+
+The 90.2 % is reported in the footer as a finding, not put to a vote.
 
 _Dr. Mārcis Gasūns_
