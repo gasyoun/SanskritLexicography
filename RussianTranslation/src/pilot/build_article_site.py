@@ -136,10 +136,43 @@ _PAGE = re.compile(r'\[Page[^\]]*\]')
 _TAG = re.compile(r'<[^>]+>')             # any leftover tag
 
 
+#: A cross-reference siglum inside a Sanskrit span is NOT SLP1 and must survive
+#: transliteration verbatim (H2848). `pw` (Petersburger Wörterbuch, Böhtlingk's
+#: shorter recension) was rendering as `pṭ`, because SLP1 maps `w` -> `ṭ`, so the
+#: card offered the reader an abbreviation that does not exist.
+#:
+#: The anchor is the `(=` , NOT the siglum alone. Several sigla are also real
+#: SLP1 words — `ap` is the stem *ap-* "water", attested in this very store at
+#: `apta` («от 2. {#ap#}») — so a bare allow-list would corrupt genuine Sanskrit.
+#: Measured over the 11,603-entry pwg_ru store on 15-08-2026: 14 sites, every one
+#: of the form `(=pw <headword> <n>)`. The other sigla are listed because the
+#: cross-reference form is shared, not because they were observed.
+_XREF_SIGLUM = re.compile(r'\(\s*=\s*(pw|pwg|pwk|mw|sch|nws|gra)(?![A-Za-z])')
+
+
+def _s2i(chunk):
+    """The raw SLP1 -> IAST char map, with no siglum handling."""
+    return ''.join(cg._S2I.get(c, c) for c in chunk)
+
+
 def slp1_iast(s):
-    """SLP1 running text -> IAST (drop Vedic accent marks for readability)."""
+    """SLP1 running text -> IAST (drop Vedic accent marks for readability).
+
+    A `(=pw ...)` cross-reference siglum is carried through verbatim -- see
+    `_XREF_SIGLUM`. Done by transliterating the surrounding text *piecewise*
+    rather than by substituting a placeholder: a placeholder has to be a
+    character the char map ignores, and any such choice is an invisible literal
+    in source and a trap for the next editor. Slicing has no sentinel to collide
+    with.
+    """
     s = _ACCENT.sub('', s or '')
-    return ''.join(cg._S2I.get(c, c) for c in s)
+    out, last = [], 0
+    for m in _XREF_SIGLUM.finditer(s):
+        out.append(_s2i(s[last:m.start(1)]))
+        out.append(m.group(1))            # the siglum, verbatim
+        last = m.end(1)
+    out.append(_s2i(s[last:]))
+    return ''.join(out)
 
 
 _CYR_VOWELS = 'аеёиоуыэюя'

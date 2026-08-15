@@ -506,6 +506,23 @@ def _selftest():
             return check(cond, label)
         print("  skip " + label + "  (" + why + ")")
 
+    # H2848 — a `(=pw …)` cross-reference siglum inside a Sanskrit span must not
+    # be transliterated. It was rendering as `pṭ` (SLP1 maps `w` -> `ṭ`), i.e. the
+    # card showed an abbreviation that does not exist. 14 sites in the store, all
+    # of this one form. The guard is anchored on the `(=`, never on the siglum
+    # alone, because `ap` is also the real stem *ap-* "water" (store: `apta`).
+    xref = print_panel("{#gA (=pw gA 1)#} идти")
+    check("pw" in xref and "pṭ" not in xref,
+          "a (=pw …) cross-reference siglum survives transliteration")
+    check("gā" in xref, "the Sanskrit around the siglum is still transliterated")
+    for slp1, want, why in (("{#ap#}", "ap", "ap- 'water' is a stem, not a siglum"),
+                            ("{#brU#}", "brū", "bru- is a root, not the siglum br"),
+                            ("{#hyu^gra#}", "hyugra", "ugra is Sanskrit, not the siglum gra")):
+        check(want in print_panel(slp1),
+              "genuine Sanskrit is not shielded: %s" % why)
+    check("pṭ" in print_panel("{#pw#}"),
+          "a bare pw with no (= anchor is still treated as SLP1")
+
     ls = "<ab>Vgl.</ab> {#anApta#}. — <ab>caus.</ab> {#Apayati#}\n<ls>P. 6,4,57.</ls>"
     p = print_panel(ls)
     check("<a class=ls" in p, "<ls> renders as a Cologne link, not escaped markup")
