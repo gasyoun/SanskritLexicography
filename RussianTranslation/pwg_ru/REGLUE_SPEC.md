@@ -1,6 +1,6 @@
 # Content-aware re-glue spec
 
-_Created: 06-07-2026 · Last updated: 26-07-2026_
+_Created: 06-07-2026 · Last updated: 15-08-2026_
 
 **Deliverable 3 of
 [H180](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H180-Opus_RussianTranslation_pwg_ru_addenda_typology_glue_learner_05.07.26.md)**
@@ -149,5 +149,77 @@ Section 5 (`gA`, `Cid`, `Sam`, `jIv`, `rakz`, `vraj`, `yat`); counts in
 26-07-2026. **Not yet done:** scaling past the 7-root pilot, per-sense visual
 polish, and this view does not replace the Section 4/5 print-oriented re-glue
 output — the two are complementary (diff/browse vs. merged/print).
+
+## 8. The presentation layer — what a reviewer must SEE (H2827, 15-08-2026)
+
+Sections 1–5 fix what the re-glue *is*; this section fixes what it *shows*. Three
+defects of the v1 spot-check sheet, each with its ruling:
+
+### 8.1 Citations are links, not prose
+
+Every `<ls>` in a rendered card goes through
+[`ls_links.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_links.py),
+a rendering layer over the repo's existing
+[`ls_resolver.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_resolver.py).
+**83.6 %** of the store's 41,115 citations resolve to a Cologne scan/text target.
+Never write a second resolver: Cologne's own precomputed csl-lslink table reaches
+only 79.3 % and wins zero citations the resolver misses — full measurement in
+[FINDINGS §536](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+
+The unresolved remainder is rendered as **two distinct marks**, because it is two
+distinct things:
+
+| mark | meaning | is it work? |
+|---|---|---|
+| ⚑ | a real locus no pattern covers | **yes** — the mintable gap |
+| ∅ | a bare abbreviation (`GORR.`, `ed. Bomb.`) with no locus | **no** — nothing to point at, ever |
+
+Collapsing them into one "unresolved" count overstates the backlog by about a
+fifth. Per-card totals sit in a coverage strip above the card.
+
+### 8.2 The glue typology is a first-class visual, keyed to ONE question
+
+[`ADDENDA_TYPOLOGY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/ADDENDA_TYPOLOGY.md)
+already defines three axes and eight subtypes. For *reading a card* only one
+question matters — **did this supplement add meaning, or not?** — so the eight
+subtypes collapse to three colour-coded classes:
+
+| class | subtypes | what the reader concludes |
+|---|---|---|
+| **＋ added meaning** (green) | `nws_at_sense` · `sch_star` · `derived_sense` · `foreign_fragment` · `a2a` | a later layer knows something PWG did not |
+| **≈ restatement** (amber) | `restate` | PW says the same thing more briefly — **no new meaning** |
+| **✕ cancels / corrects** (red) | `pw_correct` · `pw_cancels` | PWG's value is overridden; never silently dropped |
+
+This is not decoration — it is the finding. Across the 15 pilot cards: **1,534
+restatements vs 250 additions vs 1 correction**. Roughly **86 %** of everything
+glued onto PWG is PW abridging what PWG already said. A reviewer who cannot see
+that at a glance will read a card as far richer than it is.
+
+**Ordering ruling (answers "are the glued-in entries ABOVE all old?"):** no. PWG
+remains the skeleton (§1) and supplements are rendered *beneath* the PWG sense
+they attach to, in layer order. A supplement is visually subordinate to the sense
+it supplements; only a `*new` sense — one with no PWG sense to attach to — is
+promoted to its own block at the end of the homonym. Position encodes attachment,
+the chip encodes relationship; neither encodes precedence.
+
+### 8.3 Gloss chains are split for reading, never in the store
+
+NWS and SCH separate sense clusters with a **full stop** carried over verbatim
+from the German (`gehen, kommen, wandern. weggehen.` → `идти, приходить,
+странствовать. уходить.`). That is faithful to the source and unnatural in
+Russian. The ruling: **split at render time, never in the store.** The card shows
+numbered clusters; the raw store string stays one panel away, unchanged and
+byte-identical (§6 guardrail intact).
+
+The splitter is deliberately timid — it refuses to split inside a `{#…#}` Sanskrit
+span, inside an unclosed bracket, after a known abbreviation (`нар.`, `т. е.`),
+after a Russian clitic (`кому-л.`), or anywhere in a citation-bearing body, and it
+falls back to plain rendering unless it finds ≥2 clusters. A missed split is
+invisible; a wrong split silently rewrites a definition.
+
+**Sheet:** [h180_reglue_v2.html](https://gasyoun.github.io/vote/sheets/h180_reglue_v2.html)
+(generator
+[`build_reglue_sheet_v2.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_reglue_sheet_v2.py)).
+v1 stays published for comparison but is not the vote.
 
 _Dr. Mārcis Gasūns_
