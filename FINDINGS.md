@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 14-08-2026 (§534 — H2756 fresh Flash PREP pairs: same-card save 0.2% INCONCLUSIVE, CI includes 0; §533 — H2704 Flash PREP −3.9% vs H2675 is a real point-estimate, not zero; same-card warm 9.9% with CI crossing zero; Pro pair +39.6% is the wrong denominator; §532 — DeepSeek-v4-flash reference-free QE on a 80-row slice of frozen grade_gold reaches Spearman ρ=0.4195 and is defensible; proxy remains ρ=-0.0351 preliminary and is not comet; §531 — *ārṣa prayoga* is a one-way licence)_
+_Created: 26-06-2026 · Last updated: 15-08-2026 (§483 H1714 resolver fix shipped, not still-open; §534 — H2756 fresh Flash PREP pairs: same-card save 0.2% INCONCLUSIVE, CI includes 0; §533 — H2704 Flash PREP −3.9% vs H2675 is a real point-estimate, not zero; same-card warm 9.9% with CI crossing zero; Pro pair +39.6% is the wrong denominator; §532 — DeepSeek-v4-flash reference-free QE on a 80-row slice of frozen grade_gold reaches Spearman ρ=0.4195 and is defensible; proxy remains ρ=-0.0351 preliminary and is not comet; §531 — *ārṣa prayoga* is a one-way licence)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -4435,7 +4435,7 @@ of which this file is a port, was **not** audited; fixing only the port would le
 app wrong and create fork drift.
 
 Integrity issue: [SL#826](https://github.com/gasyoun/SanskritLexicography/issues/826) ·
-fix queued as [H1714](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1714-Sonnet_SanskritLexicography_ls-resolver-rvps-mislink-wiring-fix_27.07.26.md) ·
+fix shipped [H1714](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1714-Sonnet_SanskritLexicography_ls-resolver-rvps-mislink-wiring-fix_27.07.26.md) ([PR #840](https://github.com/gasyoun/SanskritLexicography/pull/840)) ·
 per-directory table: [`scan_target_audit.tsv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/data/pwg_scan_index_tracker/scan_target_audit.tsv).
 
 _27-07-2026 · [H1706](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1706-Opus_csl-observatory_pwg-scan-index-tracker-reuse_26.07.26.md) · Opus 5 1M (`claude-opus-5[1m]`)_
