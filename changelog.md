@@ -14,6 +14,8 @@ not an error.
 
 ## [Unreleased]
 
+- **§483 no longer says the H1714 resolver fix is queued** (Grok 4.6 `grok-4.6`, 15-08-2026). The rvps mislink shipped in [PR #840](https://github.com/gasyoun/SanskritLexicography/pull/840); the FINDINGS integrity line now says shipped.
+
 ## [1.144.55] - 2026-08-15
 - **H2769 G6 full 320-card V9 cut + one print-ready predicate for G5** (Opus 5 `claude-opus-5`, 15-08-2026): [`store_flags.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/store_flags.py) replaces the raw `ok ∧ placeholders_ok ∧ key_match` conjunction the two release gates still inlined — those flags are **absent** on all 11 603 live store rows, so G5 reported `print_ready=0` forever and read as a review backlog; it now reports **3**. The G6 gold sheet builds at full size for the first time (320 cards, `sha256:d9125d7d…`) after `corpus_contexts` stopped materializing whole works (MemoryError on the 150 MB `dic_mw.jsonl`), and comes up to the V9 sheet standard: screening block, per-card evidence manifest with the A/B/C grade declared withheld, declared-SLP1 allowance, IAST headwords. 190 tests green. Built, not voted. [#1712](https://github.com/gasyoun/SanskritLexicography/issues/1712) · [PR #1718](https://github.com/gasyoun/SanskritLexicography/pull/1718).
 
