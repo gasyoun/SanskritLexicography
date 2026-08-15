@@ -5917,3 +5917,46 @@ Two independent checks agree that the residue is a digitisation limit, not a cod
 Implication: do not open a citation-coverage workstream; the constraint is the world's supply of digitised Sanskrit editions. If coverage ever becomes a priority the lever is upstream — which editions get scanned next, ranked in [`ls_gap_unrepairable_by_source.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/ls_gap_unrepairable_by_source.tsv) (Suśruta alone would light up 280 citations). The four repairs are deliberately **not** wired into `ls_links.py`: each rewrites a citation before resolving it, and a wrong rewrite invents a reference to the wrong book — worse than leaving it dark. Promoting one into the resolver is a human's call, one rule at a time.
 
 > Opus 5 (`claude-opus-5`) · 15-08-2026 · [H2835 (Opus 5) — Mine the mintable `<ls>` citation gaps: classify the 17 % unresolved into format-gap vs no-target, rank by yield](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2835-Opus_SanskritLexicography_ls-citation-gap-mine_15.08.26.md) · class A (reproduce: `python src/ls_gap_repair.py`).
+
+### §538. A Latin siglum inside a `{#…#}` span is silently transliterated — `pw` became `pṭ`, an abbreviation that does not exist
+
+🔴 **Any Latin-script token that ends up inside a Sanskrit span is read as SLP1 and
+transliterated, with no error and no visible seam.** The store holds `{#gā (=pw gā 1)#}`, where
+`pw` is the siglum of the *Petersburger Wörterbuch* in Böhtlingk's shorter recension. SLP1 maps
+`w` → `ṭ`, so the published vote card offered the reader **`pṭ`** — a plausible-looking
+abbreviation of nothing. It was caught by a human reading a card and asking what `pṭ` stood
+for, not by any gate.
+
+Reproduced against the canonical renderer before the fix:
+
+```
+print_panel('{#gA (=pw gA 1)#} idti')
+  -> '<div class="printview"><i class=sa>gā (=pṭ gā 1)</i> idti</div>'
+```
+
+**The trap in the fix is worse than the bug.** The obvious remedy — an allow-list of sigla
+exempted from transliteration — is unsafe, because several sigla are also real SLP1 words.
+`ap` is the stem *ap-* "water", attested in this very store at `apta` («от 2. {#ap#}»); `br`
+prefixes `brū`; `gra` occurs inside `ugra`. A naive allow-list would corrupt genuine Sanskrit
+in order to fix a rendering slip. **Anchor on the syntax, not the token:** the guard fires only
+on `(=<siglum>`, the cross-reference form, which is what all 14 real sites use.
+
+**Measured, and smaller than it first looked.** A first ASCII-boundary scan of the
+11,603-entry store reported 21 sites; reading every one showed **6 were false positives of the
+scan itself** — the boundary assertions `(?<![A-Za-z])` / `(?![A-Za-z])` pass freely against
+non-ASCII IAST and German, so `brū`, `śap`, `hyu^gra` and German `schützen` inside spans all
+matched — and one (`ap` at `apta`) was correct Sanskrit. The real defect is **14 occurrences,
+every one of the form `(=pw <headword> <n>)`**. The general lesson: an ASCII word-boundary
+regex is not a word boundary in a mixed IAST/Cyrillic/German corpus, and a census built on one
+must be read row by row before its number is quoted.
+
+Implication: fixed in the canonical converter
+([`slp1_iast`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/build_article_site.py)),
+not in the sheet builder, so the public article site gets the same repair. Implemented by
+transliterating **piecewise** around the match rather than substituting a placeholder — a
+placeholder must be a character the char map ignores, and every such choice is an invisible
+literal in source. Pinned by fixtures in `g5_card_render --selftest`, including negative
+controls that genuine Sanskrit is *not* shielded and that a bare `pw` with no `(=` anchor is
+still SLP1. The store is **not** edited: `pw` is correct there; only the render was wrong.
+
+> Opus 5 (`claude-opus-5`) · 15-08-2026 · [H2848 (Sonnet 5) — Latin sigla trapped in `{#…#}` render as Sanskrit (`pw` → `pṭ`) + NWS entry deep links](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2848-Sonnet_SanskritLexicography_sigla-in-sanskrit-span-translit-bug-and-nws-deeplinks_15.08.26.md), under [H2843 (Opus 5) — MG crosswalk review umbrella](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2843-Opus_Uprava_mg-crosswalk-review-8-point-vote-contour-umbrella_15.08.26.md) · class A (reproduce: `python src/g5_card_render.py --selftest`).
