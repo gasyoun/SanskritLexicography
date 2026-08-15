@@ -14,6 +14,7 @@ not an error.
 
 ## [Unreleased]
 
+## [1.144.56] - 2026-08-15
 - **§483 no longer says the H1714 resolver fix is queued** (Grok 4.6 `grok-4.6`, 15-08-2026). The rvps mislink shipped in [PR #840](https://github.com/gasyoun/SanskritLexicography/pull/840); the FINDINGS integrity line now says shipped.
 
 ## [1.144.55] - 2026-08-15
