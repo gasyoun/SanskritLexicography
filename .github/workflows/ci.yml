@@ -256,6 +256,10 @@ jobs:
           python src/promote_final_cards.py --selftest
           python src/pilot/translation_memory.py selftest
           python src/citation_tm.py selftest
+          python src/ls_links.py
+          python src/ls_resolver_mbh_selftest.py
+          python src/ls_gap_mine.py --selftest
+          python src/ls_gap_repair.py --selftest
           python src/build_ramayana_concordance.py selftest
           python src/build_mbh_concordance.py selftest
           python src/pilot/lang_parity_check.py
