@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>H2805 — Q3 graphic notation render proof (॰ U+0970 · ˚ U+02DA · ° U+00B0)</title>
+<style>
+/* Exact web-card stack from build_article_site.py line 717 */
+body{margin:20px;font:15px/1.55 -apple-system,Segoe UI,Roboto,sans-serif;color:#222;background:#fff}
+h1{font-size:18px} h2{font-size:15px;margin:18px 0 6px}
+table{border-collapse:collapse;margin:6px 0}
+td,th{border:1px solid #ccc;padding:4px 10px;vertical-align:top;text-align:left}
+.ab{font-style:italic;color:#666;cursor:help;border-bottom:1px dotted #666}
+.sa{font-style:italic;color:#7a4}
+.big{font-size:34px;letter-spacing:6px}
+.seg{font-family:'Segoe UI'} .rob{font-family:Roboto,sans-serif} .nir{font-family:'Nirmala UI'}
+.tnr{font-family:'Times New Roman',serif} .mono{font-family:Consolas,monospace}
+.mark{background:#ffec9e}
+</style>
+</head>
+<body>
+<h1>H2805 — проба рендера графической пометы позиции в сложном слове</h1>
+<p>Кандидаты: <span class="mark">॰-</span> (U+0970), <span class="mark">˚-</span> (U+02DA), <span class="mark">°-</span> (U+00B0). Стек веб-карточки: <code>-apple-system, Segoe UI, Roboto, sans-serif</code>.</p>
+
+<h2>1. Крупно, в стеке веб-карточки (fallback виден по стилю глифа)</h2>
+<div class="big">॰- &nbsp; -॰ &nbsp;|&nbsp; ˚- &nbsp; -˚ &nbsp;|&nbsp; °- &nbsp; -°</div>
+
+<h2>2. По шрифтам стека, принудительно</h2>
+<table>
+<tr><th>Шрифт</th><th>॰- (U+0970)</th><th>˚- (U+02DA)</th><th>°- (U+00B0)</th></tr>
+<tr><td>Segoe UI (основной)</td><td class="seg big">॰-</td><td class="seg big">˚-</td><td class="seg big">°-</td></tr>
+<tr><td>Roboto</td><td class="rob big">॰-</td><td class="rob big">˚-</td><td class="rob big">°-</td></tr>
+<tr><td>Nirmala UI (системный fallback деванагари)</td><td class="nir big">॰-</td><td class="nir big">˚-</td><td class="nir big">°-</td></tr>
+<tr><td>Times New Roman (печать/PDF-трад.)</td><td class="tnr big">॰-</td><td class="tnr big">˚-</td><td class="tnr big">°-</td></tr>
+<tr><td>Consolas (моноширинный, экспорт)</td><td class="mono big">॰-</td><td class="mono big">˚-</td><td class="mono big">°-</td></tr>
+</table>
+
+<h2>3. Реальные карточки словника — до / после (глиф в строке 15px)</h2>
+<table>
+<tr><th>key1</th><th>Сейчас (RU-рендер)</th><th>После, ॰ (U+0970)</th><th>После, ˚ (U+02DA)</th></tr>
+<tr><td>Bid&nbsp;12</td>
+<td>отличный, — от (<span class="ab">Abl.</span> или в <span class="ab">Comp.</span> предшествующем)</td>
+<td>отличный, — от (<span class="ab">Abl.</span> или <span class="ab" title="в начале сложных слов (первым членом сложного слова)">॰-</span>)</td>
+<td>отличный, — от (<span class="ab">Abl.</span> или <span class="ab" title="в начале сложных слов (первым членом сложного слова)">˚-</span>)</td></tr>
+<tr><td>DA&nbsp;2b</td>
+<td>покрытый, — чем-либо (в <span class="ab">Comp.</span> предшествующем)</td>
+<td>покрытый, — чем-либо (<span class="ab">॰-</span>)</td>
+<td>покрытый, — чем-либо (<span class="ab">˚-</span>)</td></tr>
+<tr><td>DA&nbsp;2c</td>
+<td>скрытый, — в (<span class="ab">Loc.</span> или в <span class="ab">Comp.</span> предшествующем)</td>
+<td>скрытый, — в (<span class="ab">Loc.</span> или <span class="ab">॰-</span>)</td>
+<td>скрытый, — в (<span class="ab">Loc.</span> или <span class="ab">˚-</span>)</td></tr>
+<tr><td>Bid&nbsp;13</td>
+<td>смешанный, соединенный с (<span class="ab">Instr.</span> или в <span class="ab">Comp.</span> предшествующем)</td>
+<td>смешанный, соединенный с (<span class="ab">Instr.</span> или <span class="ab">॰-</span>)</td>
+<td>смешанный, соединенный с (<span class="ab">Instr.</span> или <span class="ab">˚-</span>)</td></tr>
+<tr><td>DA&nbsp;3 {#˚hita#}</td>
+<td>разлученный, разделенный, — посредством (в <span class="ab">Comp.</span> предшествующем); сравн. store: <span class="sa">˚hita</span></td>
+<td>разлученный, разделенный, — посредством (<span class="ab">॰-</span>); store: <span class="sa">˚hita</span></td>
+<td>разлученный, разделенный, — посредством (<span class="ab">˚-</span>); store: <span class="sa">˚hita</span></td></tr>
+<tr><td>Cid&nbsp;ava&nbsp;2</td>
+<td>ограниченный —, замкнутый (предшествующим в <span class="ab">Comp.</span>)</td>
+<td>ограниченный —, замкнутый (<span class="ab">॰-</span>)</td>
+<td>ограниченный —, замкнутый (<span class="ab">˚-</span>)</td></tr>
+</table>
+<p>Сравнение однородности: базовый текст Segoe UI; если ॰ приходит из Nirmala UI, глиф чуть тоньше и сидит ниже; ˚/° приходят из самого Segoe UI.</p>
+</body>
+</html>
