@@ -15,7 +15,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 PILOT = os.path.join(HERE, 'pilot')
 sys.path.insert(0, PILOT)
+sys.path.insert(0, HERE)
 from dashboard_events import append_event
+import store_flags  # one definition of the print-ready predicate
 
 REVIEW_CSV = os.environ.get('PWG_RU_REVIEW_CSV') or os.path.join(HERE, '_review_queue.csv')
 STORE = os.environ.get('PWG_RU_STORE') or os.path.join(HERE, 'pwg_ru_translated.jsonl')
@@ -64,8 +66,7 @@ def review_summary():
                 if not line.strip():
                     continue
                 row = json.loads(line)
-                if (row.get('review_status') in {'approved', 'human_reviewed'}
-                        and row.get('ok') and row.get('placeholders_ok') and row.get('key_match')):
+                if store_flags.is_print_ready(row):
                     out['print_ready_rows'] += 1
     return out
 

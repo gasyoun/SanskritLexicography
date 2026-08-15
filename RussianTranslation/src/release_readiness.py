@@ -10,6 +10,9 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import store_flags  # noqa: E402  (one definition of the print-ready predicate)
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 DEFAULT_REPORT = os.path.join(ROOT, 'release', 'readiness_report.md')
@@ -47,8 +50,7 @@ def review_counts():
                 if not line.strip():
                     continue
                 row = json.loads(line)
-                if (row.get('review_status') in {'approved', 'human_reviewed'}
-                        and row.get('ok') and row.get('placeholders_ok') and row.get('key_match')):
+                if store_flags.is_print_ready(row):
                     out['print_ready'] += 1
     return out
 

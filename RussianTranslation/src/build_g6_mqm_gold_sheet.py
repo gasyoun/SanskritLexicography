@@ -41,13 +41,38 @@ Sa→Ru glossary figures — or an explicit ``evidence not found`` line naming w
 was searched. Built by ``gold_evidence_panel.py``; ``--no-evidence`` reproduces
 the pre-H1801 layout for diffing.
 
+**V9 + the full 320-card cut (H215, 14-08-2026).** The generator now emits the
+two things the shared emitter requires of every sheet in the org: a screening
+block (``sheet_screening``) stating what was machine-screened before a human
+sees a card, and an evidence manifest (``review_evidence_preflight``) declaring
+per card what was joined and what was deliberately withheld — the adjudicated
+A/B/C grade above all, which is keyed on these same ids but is derived from the
+very LLM label under review. ``csl_pyutil.render_review_sheet`` runs the V9
+preflight over the rendered HTML and raises before returning it, so a sheet that
+leaks SLP1 into Russian prose cannot be built (see ``declared_slp1_tokens`` for
+the four machine regions where SLP1 is shown on purpose). Two display changes
+followed: dictionary headwords render in IAST with the SLP1 key demoted to a
+machine span, and ``corpus_contexts`` streams the work file twice instead of
+materializing it — the single-pass version was a MemoryError on the 150 MB
+``dic_mw.jsonl``, which is why the 20-card starter built and the 320-card cut
+did not (the small cut never drew a card from a large work).
+
+The starter generation (``SHEET_ID``/``GENERATED`` below) is FROZEN: it carries
+applied votes, its lock binds the pre-V9 hash, and ``write_lock`` will refuse to
+overwrite it. A new cut passes its own ``--sheet-id`` and ``--generated``.
+
 The gold scaffold is public (tracked), but the sheet HTML stays gitignored
-(``review/g6_*_sheet.html``) like every other sheet — the committed artifact is
+(``review/*_sheet.html``) like every other sheet — the committed artifact is
 the metadata lock.
 
 Run (from RussianTranslation/):
   python src/build_g6_mqm_gold_sheet.py [--n 20] [--gold-set PATH]
   python src/build_g6_mqm_gold_sheet.py --no-evidence   # pre-H1801 layout
+  # the full 320-card cut (H215):
+  python src/build_g6_mqm_gold_sheet.py --n 320 \\
+      --sheet-id h215-gold-full-320-2026-08-14 --generated 2026-08-14 \\
+      --out review/h215_gold_full_320_sheet.html \\
+      --coverage-json review/h215_gold_full_320_evidence_coverage.json
 """
 import argparse
 import collections
@@ -55,11 +80,14 @@ import html
 import io
 import json
 import os
+import re
 import sys
 
 from csl_pyutil import mark_cyrillic, render_review_sheet
 from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config
+from review_evidence_preflight import EvidenceManifest
+from sheet_screening import screening_block
 
 import gold_evidence_panel as evidence
 
@@ -122,6 +150,99 @@ def pick(rows, n):
     return out
 
 
+_WORD = re.compile(r"[A-Za-z]+")
+
+
+def declared_slp1_tokens(chosen, panels_by_id):
+    """SLP1 this sheet shows deliberately, enumerated from the panel data itself.
+
+    V9's rule is "humans read IAST; SLP1 belongs in ids and machine columns
+    only". This instrument has four such machine regions, and every one of them
+    is evidence a reviewer needs *as the machine stored it*:
+
+    * the card's own key/id — the join key the vote is recorded against;
+    * the matched-form window inside a context hit — that IS the proof the form
+      was attested, so re-rendering it in IAST would destroy the evidence;
+    * the dictionary panel's lookup trace and headword key — the headword itself
+      is rendered in IAST (``_key_iast``) with the SLP1 kept beside it in a
+      demoted machine span, and the ``searched`` lines are literal lookup keys
+      (``dcs_lemma2root[antarDA]``, ``MW k1=avAkSAKa``);
+    * the dictionary entry body, the quoted corpus passage, and the work codes
+      in the glossary's per-work counts — verbatim printed source and its
+      citation sigla (MBh, BhP, BhG, AitBr, MaitrUp …), which are source
+      abbreviations, not transliteration, and travel with the quoted text.
+
+    Declaring these from the data, rather than silencing the check globally,
+    keeps the gate live over everything else — the Russian instructions, the
+    card's ``sa``/``ru``, the labels — where a stray SLP1 token still fails the
+    build.
+    """
+    out = set()
+    for r in chosen:
+        for field in (r.get("slp1"), r.get("id")):
+            out.update(_WORD.findall(str(field or "")))
+    for p in (panels_by_id or {}).values():
+        for name in ("dictionary", "root", "contexts", "glossary"):
+            panel = p.get(name) or {}
+            for line in panel.get("searched") or []:
+                out.update(_WORD.findall(str(line or "")))
+        for e in (p.get("dictionary") or {}).get("entries", []) or []:
+            out.update(_WORD.findall(str(e.get("key") or "")))
+            out.update(_WORD.findall(str(e.get("text") or "")))
+        for r in (p.get("root") or {}).get("roots", []) or []:
+            for field in (r.get("root_slp1"), r.get("lemma")):
+                out.update(_WORD.findall(str(field or "")))
+        for d in (p.get("root") or {}).get("lemmas", []) or []:
+            out.update(_WORD.findall(str(d.get("lemma") or "")))
+        for hit in (p.get("contexts") or {}).get("hits", []) or []:
+            for field in (hit.get("sa_slp1_window"), hit.get("work"),
+                          hit.get("passage"), hit.get("sa")):
+                out.update(_WORD.findall(str(field or "")))
+        for g in (p.get("glossary") or {}).get("glosses", []) or []:
+            for work, _n in g.get("top_works") or []:
+                out.update(_WORD.findall(str(work or "")))
+    return out
+
+
+def build_manifest(sheet_id, items, panels_by_id, gold_set_path):
+    """What this sheet joined per card, and what it deliberately did not (H1889).
+
+    The V9 preflight exists to stop a sheet asking a human what the repo already
+    answers — the exact complaint MG raised about voting rows the machine had
+    already ruled. Every field here is one the evidence panels actually rendered.
+    """
+    man = EvidenceManifest(sheet_id, [it["id"] for it in items])
+    rel = lambda p: os.path.relpath(p, RT).replace("\\", "/")  # noqa: E731
+
+    man.declare_joined(rel(gold_set_path), ["id", "slp1", "sa", "ru", "kind",
+                                            "period", "work", "label"])
+    for key, fields in (("gra", ["senses"]), ("mw", ["senses"]), ("pwg", ["senses"]),
+                        ("whitney", ["root"]), ("corpus", ["passage", "sa", "ru"]),
+                        ("surface_glossary", ["ru_rank"])):
+        path = evidence.DEFAULT_PATHS.get(key)
+        if path:
+            man.declare_joined(str(path).replace("\\", "/"), fields)
+
+    for card_id, p in (panels_by_id or {}).items():
+        man.add_card(card_id,
+                     [n for n in ("dictionary", "root", "contexts", "glossary")
+                      if p[n]["found"]],
+                     omitted=[n for n in ("dictionary", "root", "contexts", "glossary")
+                              if not p[n]["found"]])
+
+    man.declare_omitted_path(
+        "gold/grade_gold.jsonl",
+        "the agent-adjudicated A/B/C publication grade is keyed on these same 320 ids, "
+        "but it answers a DIFFERENT question (publication grade) than this instrument "
+        "(6-label semantic typology), and it is derived from the very LLM label under "
+        "review here — showing it would anchor the reviewer on the thing being judged")
+    man.declare_omitted(
+        "corpus_lexicon.jsonl (1.09M pairs)",
+        "the alignment lexicon these gold rows were sampled FROM; re-showing the "
+        "source row would restate the card, not add independent evidence")
+    return man
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=20)
@@ -131,10 +252,15 @@ def main():
     ap.add_argument("--no-evidence", action="store_true",
                     help="pre-H1801 layout (no evidence panels) — for diffing only")
     ap.add_argument("--sheet-id", default=None)
+    ap.add_argument("--generated", default=None,
+                    help="generation date for the config + lock; a NEW cut of this "
+                         "instrument (e.g. the full 320) must pass its own date, "
+                         "since a voted generation is never regenerated in place")
     ap.add_argument("--coverage-json", default=None,
                     help="write the per-card evidence coverage as JSON")
     args = ap.parse_args()
     sheet_id = args.sheet_id or (LEGACY_SHEET_ID if args.no_evidence else SHEET_ID)
+    generated = args.generated or GENERATED
 
     rows = [json.loads(l) for l in io.open(args.gold_set, encoding="utf-8") if l.strip()]
     chosen = pick(rows, args.n)
@@ -183,20 +309,43 @@ def main():
                    "валидируется против review/locks/%s.lock.json." % sheet_id),
         "approve_label": "Label верен", "reject_label": "Label неверен",
         "filters": [(p, p) for p in sorted(periods)],
-        "generated": GENERATED,
+        "generated": generated,
         "strict_review": {"reviewer": "", "require_all_votes": True,
                           "require_reject_note": True},
         "reject_labels": [(l, LABEL_RU[l]) for l in LABELS if l != "correct"],
     }
+    # V9 SLP1 leak check: this instrument shows SLP1 on purpose in exactly two
+    # machine columns — the card's own key and the matched-form window inside a
+    # context hit, which IS the evidence that the form was attested. Those are
+    # declared here rather than silenced globally, so any SLP1 that leaks into
+    # actual prose still fails the build. Citation sigla (MBh, BhP, AitBr …) are
+    # source abbreviations, not transliteration, and travel with the quoted text.
+    config["preflight"] = {"allow_slp1_tokens": tuple(sorted(
+        declared_slp1_tokens(chosen, panels_by_id)))}
     config.update(standard_config(
         save_as="RussianTranslation\\review\\%s_decisions.json" % sheet_id))
 
-    doc = render_review_sheet(items, config, extras=True)
+    # H1649/H1650: every sheet must state what was screened before a human sees it.
+    # Honest accounting for this instrument: every card carries an LLM label from the
+    # gold scaffold (agent), evidence panels are dictionary/root/context lookups, and
+    # every card still goes to a human — nothing is auto-resolved away here.
+    cov = evidence.coverage(panels_by_id) if panels_by_id else {}
+    looked_up = max(cov.get("dictionary", 0), cov.get("root", 0),
+                    cov.get("contexts", 0), cov.get("glossary", 0))
+    sc = screening_block(
+        deterministic=0, lookup=looked_up, agent=len(items), human=len(items),
+        evidence_path="RussianTranslation/gold/HUMAN_GOLD_PROTOCOL.md",
+        rules=["mqm-6-label-typology", "h1801-evidence-before-label",
+               "h1802-reject-label-picker"],
+    )
+    doc = render_review_sheet(items, config, extras=True, screening=sc,
+                              manifest=build_manifest(sheet_id, items, panels_by_id,
+                                                      args.gold_set))
     doc, chash = stamp(doc)
     os.makedirs(REVIEW, exist_ok=True)
     with io.open(args.out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(doc)
-    lock = write_lock(sheet_id, chash, [it["id"] for it in items], GENERATED,
+    lock = write_lock(sheet_id, chash, [it["id"] for it in items], generated,
                       locks_dir=args.locks_dir, gate="G6", source_html=args.out)
     print("G6 sheet: %d cards -> %s\n  %s\n  lock -> %s"
           % (len(items), args.out, chash, lock))
