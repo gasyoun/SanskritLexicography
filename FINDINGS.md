@@ -5960,3 +5960,50 @@ controls that genuine Sanskrit is *not* shielded and that a bare `pw` with no `(
 still SLP1. The store is **not** edited: `pw` is correct there; only the render was wrong.
 
 > Opus 5 (`claude-opus-5`) · 15-08-2026 · [H2848 (Sonnet 5) — Latin sigla trapped in `{#…#}` render as Sanskrit (`pw` → `pṭ`) + NWS entry deep links](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2848-Sonnet_SanskritLexicography_sigla-in-sanskrit-span-translit-bug-and-nws-deeplinks_15.08.26.md), under [H2843 (Opus 5) — MG crosswalk review umbrella](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2843-Opus_Uprava_mg-crosswalk-review-8-point-vote-contour-umbrella_15.08.26.md) · class A (reproduce: `python src/g5_card_render.py --selftest`).
+
+
+### §539. Kochergina corrections have no tracked home — the org's correction store is CDSL-scoped, and Kochergina is not a CDSL dictionary
+
+Measured 15-08-2026 (Opus 5 `claude-opus-5`), closing prerequisite 2 of
+[H798](https://github.com/gasyoun/Uprava/blob/main/handoffs/H798-Sonnet_SanskritLexicography_h779-apply-okas-guda-sphic-decisions_12.07.26.md),
+which has sat 🟡 QUEUED since 12-07-2026 with four approved corrections
+(`okas` · `okya` · `guda` · `sphic`) and nowhere to write them.
+
+**Kochergina is present in the org three times, and none of them is a correction ledger.**
+
+| Where | What it is | Correctable? |
+|---|---|---|
+| [`CORRECTIONS/Kochergina-1987_29007.txt`](https://github.com/gasyoun/CORRECTIONS/blob/main/Kochergina-1987_29007.txt) | a 29 006-line letter-spaced **headword list** | no — a word list, no entry bodies, no sense structure |
+| `SanskritGrammar/KocherginaUchebnik_1998/` | the 1998 **textbook** (methodichka, exercise coverage, gradation metalanguage) | no — pedagogy, not the 1987 dictionary |
+| the BLI B1 gold set | **500 of 500 cards** carry a `Kochergina` gloss label | it is the *consumer*, not the source |
+
+**Why the obvious home does not fit.** [CORRECTIONS](https://github.com/gasyoun/CORRECTIONS)
+is purpose-built for exactly this — "where every correction ever accepted across the whole
+project is recorded, per dictionary, as a durable audit trail". But its `dictionaries/`
+tree and its `cfr.tsv` correction-form report are keyed by **CDSL dictionary codes**
+(`ACC AE AP AP90 BEN BHS BOP BOR BUR CAE CCS GRA GST IEG INM KRM MCI MD MW MW72 MWE PD PE
+PGN PUI PW PWG SCH SHS SKD` …). Kochergina 1987 is a third-party Russian dictionary Cologne
+does not publish, so it has **no code, no `dictionaries/` slot, and zero rows in
+`cfr.tsv`** — only that stray headword list. The correction store is scoped to what CDSL
+owns; this dictionary sits outside it by construction, not by oversight.
+
+**The integration need H798 said would justify creating a store now exists.** H798's
+prerequisite 2 offered "create a lightweight store now vs. defer until a real integration
+need appears". The BLI B1 gold set is that need: Kochergina is the gloss authority on
+**every one of its 500 cards**, that set is live in the Do Today queue awaiting human
+annotation, and it feeds P@1/P@5/MRR scoring. Two of the four pending corrections are
+sense-level (`okas` — drop the unattested «родина»; `guda` — sense order), so an uncorrected
+Kochergina propagates straight into gold and then into the retrieval metric.
+
+**How to apply:** the four votes are blocked on a human ruling about *where*, not on
+lexicography — treat "no store" as the finding, never as licence to edit blind (H798's own
+instruction). Two caveats survive into whatever store is chosen: H779's canonical
+re-verification **REFUTED** the `guda` gender defect (Kochergina already carries a separate
+`gudā` f. entry, so "m.pl.→f.pl." is likely a no-op — verify before applying), and MG's
+17-07 notes require cross-checks against Elizarenkova's Ригведа for `okas` and Druzhinin's
+Aṣṭāṅgahṛdaya for `guda` before the sense wording is final. Kin: the CDSL-scoped store is
+also why `learnsanskrit.ru` errata have never had a home.
+
+> Opus 5 (`claude-opus-5`) · 15-08-2026 · H798 prerequisite 2 (store located: none exists).
+> Evidence: `CORRECTIONS/dictionaries/` listing + `cut -f2 cfr.tsv | sort -u` (no Kochergina
+> code); `grep -c Kochergina` over the BLI B1 500-card sheet = 500/500. §540 takes the next number.
