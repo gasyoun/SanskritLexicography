@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 16-08-2026 (§483 H1714 resolver fix shipped, not still-open; §534 — H2756 fresh Flash PREP pairs: same-card save 0.2% INCONCLUSIVE, CI includes 0; §533 — H2704 Flash PREP −3.9% vs H2675 is a real point-estimate, not zero; same-card warm 9.9% with CI crossing zero; Pro pair +39.6% is the wrong denominator; §532 — DeepSeek-v4-flash reference-free QE on a 80-row slice of frozen grade_gold reaches Spearman ρ=0.4195 and is defensible; proxy remains ρ=-0.0351 preliminary and is not comet; §531 — *ārṣa prayoga* is a one-way licence)_
+_Created: 26-06-2026 · Last updated: 16-08-2026 (§542 — a review sheet's stated apply target is not the carrier set: the agni glosses are authored in a builder's `GLOSS` dict, not in the file the sheet names; §483 H1714 resolver fix shipped, not still-open; §534 — H2756 fresh Flash PREP pairs: same-card save 0.2% INCONCLUSIVE, CI includes 0; §533 — H2704 Flash PREP −3.9% vs H2675 is a real point-estimate, not zero; same-card warm 9.9% with CI crossing zero; Pro pair +39.6% is the wrong denominator; §532 — DeepSeek-v4-flash reference-free QE on a 80-row slice of frozen grade_gold reaches Spearman ρ=0.4195 and is defensible; proxy remains ρ=-0.0351 preliminary and is not comet; §531 — *ārṣa prayoga* is a one-way licence)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §542) whatever its section, so existing numbers never shift; when a finding is later
+(currently §543) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -256,6 +256,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🔴 [§541. The re-glue typology label is assigned independently of whether an insertion target was found, so 90 % of it asserts a relation to a sense that is not there](#541-the-re-glue-typology-label-is-assigned-independently-of-whether-an-insertion-target-was-found-so-90--of-it-asserts-a-relation-to-a-sense-that-is-not-there) — 5,054 of 5,603 supplements are `target_sense='*new'` yet still labelled `restate`; only 4.4 % are checkable. Gloss-word overlap was measured as an evidence axis and rejected (median 0.000 both classes); `{%…%}` is the German gloss, not Sanskrit — stripping it fakes a finding.
 - 🟠 [§539. Kochergina corrections have no tracked home — the org's correction store is CDSL-scoped, and Kochergina is not a CDSL dictionary](#539-kochergina-corrections-have-no-tracked-home-the-orgs-correction-store-is-cdsl-scoped-and-kochergina-is-not-a-cdsl-dictionary) — inherited index row added by H2859; see the section for the finding.
 - 🟠 [§540. Mixed-script words hide from every search that assumes one alphabet per word — and the repair map has to be transliteration, not visual shape](#540-mixed-script-words-hide-from-every-search-that-assumes-one-alphabet-per-word-and-the-repair-map-has-to-be-transliteration-not-visual-shape) — inherited index row added by H2859; see the section for the finding.
+- 🟠 [§542. A review sheet's stated apply target is not the carrier set — the hand-authored strings can live in a generator, and an apply that trusts the sheet reverts on the next build](#542-a-review-sheets-stated-apply-target-is-not-the-carrier-set--the-hand-authored-strings-can-live-in-a-generator-and-an-apply-that-trusts-the-sheet-reverts-on-the-next-build) — the agni sheet named `agni.pd-min.ru.md` col. 3; the glosses are actually authored in a `GLOSS` dict in `_build_agni_ru.py`, with two more copies downstream. Grep a current cell string, not the filename, before applying any vote — the unvoted aksara/ananta/anya sheets have the same shape with a different layout again.
 - 🟠 [§538. A Latin siglum inside a `{#…#}` span is silently transliterated — `pw` became `pṭ`, an abbreviation that does not exist](#538-a-latin-siglum-inside-a-span-is-silently-transliterated-pw-became-pṭ-an-abbreviation-that-does-not-exist) — inherited index row added by H2859; see the section for the finding.
 ## Grammar & morphology data
 
@@ -6077,3 +6078,47 @@ Residue list:
 > Evidence: 643 found / 553 repaired / 90 reported, over 235 source JSONs;
 > [PR #170](https://github.com/gasyoun/CommentaryStrategies/pull/170). §541 takes
 > the next number.
+
+### §542. A review sheet's stated apply target is not the carrier set — the hand-authored strings can live in a generator, and an apply that trusts the sheet reverts on the next build
+
+The agni gloss sheet says where accepted votes go, in two places: the card
+footer («/decisions-apply вносит принятые правки в
+`article-comparison/agni.pd-min.ru.md`, колонка «Русский»») and the `schema`
+string of the manifest that generates it. Both name **one** file. Applying the
+nine approved edits there would have passed every check — the diff is right, the
+file is the canonical one, the sheet agrees — and been silently undone the next
+time anyone ran the builder.
+
+The Russian glosses are not authored in the markdown. They live in a hardcoded
+`GLOSS` dict in
+[`RussianTranslation/src/_build_agni_ru.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/_build_agni_ru.py),
+which writes the table; `agni.persense-ru.md` holds a third copy of the same
+strings beside its corpus column. Four carriers, one of them the actual source:
+
+| Carrier | What it is |
+|:--|:--|
+| `article-comparison/agni.pd-min.ru.md` | the file the sheet names — **generated output** |
+| `article-comparison/agni.persense-ru.md` | second generated view, same strings |
+| `RussianTranslation/src/_build_agni_ru.py` | the `GLOSS` dict — **the actual source** |
+| `article-comparison/gloss_review_items.json` | the manifest; without a stamped verdict a closed row returns on the next sheet round |
+
+Two things generalise:
+
+1. **Before applying a vote, ask what writes the target.** `git grep` one of the
+   current cell strings, not the filename. A single hit means the file is
+   authored; more than one means you are looking at output. Here the string
+   «ахаванья» appeared in five files.
+2. **The routing note is a convenience, not an inventory,** and it ages worse
+   than the code — this one was written 18-07-2026 against a repo whose builders
+   changed afterwards. The three sibling sheets (`aksara`, `ananta`, `anya`) are
+   still unvoted and have the same shape with a *different* layout again: one
+   shared `RU` dict in `_build_skeletons_ru.py` covering all three, not a
+   per-word builder. Whoever applies them must re-derive the carrier set rather
+   than reuse agni's.
+
+> Opus 5 (`claude-opus-5`) · 15-08-2026 · H2861, applying the agni gloss vote.
+> Evidence: 9 approved edits × 4 carriers;
+> [PR #1732](https://github.com/gasyoun/SanskritLexicography/pull/1732), audit
+> record
+> [agni_decisions_applied_15-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/agni_decisions_applied_15-08-2026.md).
+> §543 takes the next number.
