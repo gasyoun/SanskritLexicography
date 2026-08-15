@@ -86,9 +86,11 @@ GH = os.path.normpath(os.path.join(RT, "..", ".."))
 sys.path.insert(0, os.path.join(GH, "sanskrit-util", "py"))
 try:
     from sanskrit_util import source_line_to_iast as _source_line_to_iast
+    from sanskrit_util import from_slp1 as _from_slp1
     IAST_LAYER = "sanskrit_util"
 except ImportError:                                          # pragma: no cover
     _source_line_to_iast = None
+    _from_slp1 = None
     IAST_LAYER = "fallback"
 
 DEFAULT_PATHS = {
@@ -454,31 +456,49 @@ def corpus_contexts(corpus_dir, work, form_slp1, limit=MAX_CONTEXTS):
     searched = ["корпус %s.jsonl (токен, затем подстрока)" % (work or "?")]
     if not work or not os.path.exists(path):
         return [], "missing", ["корпус %s.jsonl — файла нет" % (work or "?")]
-    sa, ru = [], {}
+    # Two streaming passes, never a full materialization of the work. The original
+    # single pass built a list of every `sa` row plus a dict of every `ru` row before
+    # matching anything; on the 150 MB dic_mw.jsonl that is a MemoryError, which is
+    # why the 20-card starter sheet built and the full 320-card cut did not (the
+    # small cut simply never drew a card from a large work). Match order and result
+    # are unchanged — the file is read in the same order, and the same break applies.
+    exact, sub = [], []
     with io.open(path, encoding="utf-8") as fh:
         for line in fh:
             try:
                 r = json.loads(line)
             except ValueError:
                 continue
-            if r.get("deleted"):
+            if r.get("deleted") or r.get("seg") != "sa":
                 continue
-            if r.get("seg") == "sa":
-                sa.append(r)
-            elif r.get("seg") == "ru":
-                ru[r.get("group")] = r
-    exact, sub = [], []
-    for r in sa:
-        slp1 = r.get("slp1") or ""
-        if not slp1:
-            continue
-        if form_slp1 in set(t for t in _TOKEN_SPLIT.split(slp1) if t):
-            exact.append(r)
-        elif len(form_slp1) >= MIN_SUBSTRING_FORM and form_slp1 in slp1:
-            sub.append(r)
-        if len(exact) >= limit:
-            break
+            slp1 = r.get("slp1") or ""
+            if not slp1:
+                continue
+            if form_slp1 in set(t for t in _TOKEN_SPLIT.split(slp1) if t):
+                exact.append(r)
+            elif len(form_slp1) >= MIN_SUBSTRING_FORM and form_slp1 in slp1:
+                sub.append(r)
+            if len(exact) >= limit:
+                break
     chosen, tier = (exact, "token") if exact else (sub, "substring")
+
+    # Pass 2: only the Russian counterparts of the rows we are actually going to show.
+    wanted = {r.get("group") for r in chosen[:limit]}
+    ru = {}
+    if wanted:
+        with io.open(path, encoding="utf-8") as fh:
+            for line in fh:
+                try:
+                    r = json.loads(line)
+                except ValueError:
+                    continue
+                if r.get("deleted") or r.get("seg") != "ru":
+                    continue
+                g = r.get("group")
+                if g in wanted:
+                    ru[g] = r
+                    if len(ru) == len(wanted):
+                        break
     hits = []
     for r in chosen[:limit]:
         counterpart = ru.get(r.get("group")) or {}
@@ -726,6 +746,16 @@ def _not_found(panel):
             % _esc(" · ".join(panel.get("searched") or ["(ничего)"])))
 
 
+def _key_iast(key):
+    """SLP1 headword -> IAST for display; the raw key survives if no transcoder."""
+    if _from_slp1 is None:
+        return key
+    try:
+        return _from_slp1(key) or key
+    except Exception:                                        # pragma: no cover
+        return key
+
+
 def render_dictionary(panel):
     head = '<div class="muted">%s</div>' % _esc(panel["routing"])
     if not panel["found"]:
@@ -735,9 +765,14 @@ def render_dictionary(panel):
         hom = (" <sup>%s</sup>" % _esc(e["hom"])) if e.get("hom") else ""
         cites = ("" if not e.get("citation_lines") else
                  ' <span class="muted">(+%d строк цитат)</span>' % e["citation_lines"])
+        # The headword is what a human reads, so it is shown in IAST; the SLP1 form
+        # stays visible but demoted, because it is the machine join key (H1889 V9:
+        # "humans read IAST; SLP1 belongs in ids and machine columns only").
         parts.append('<div><b>%s</b>%s · <i>%s</i> · заголовок <b>%s</b> '
-                     '<span class="muted">(%s)</span> · L%s pc%s%s<pre>%s</pre></div>'
-                     % (_esc(e["dict"]), hom, _esc(e["dict_name"]), _esc(e["key"]),
+                     '<span class="muted">(SLP1 %s · %s)</span> · L%s pc%s%s'
+                     '<pre>%s</pre></div>'
+                     % (_esc(e["dict"]), hom, _esc(e["dict_name"]),
+                        _esc(_key_iast(e["key"])), _esc(e["key"]),
                         _esc(e.get("via") or ""), _esc(e["L"]), _esc(e["pc"]),
                         cites, _esc(e["text"])))
     if panel.get("iast_layer") == "fallback":
