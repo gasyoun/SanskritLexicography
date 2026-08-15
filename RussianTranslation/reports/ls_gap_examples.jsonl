@@ -1,0 +1,341 @@
+{"source_key": "SUŚR", "class": "source", "mintable": 280, "examples": ["<ls>SUŚR. 2,64,9. 10.</ls>", "<ls>SUŚR. 2,7,2.</ls>", "<ls>SUŚR. 2,64,8.</ls>", "<ls>SUŚR. 2,173,18.</ls>", "<ls>SUŚR. 1,14,11.</ls>", "<ls>SUŚR. 2,187,19.</ls>"]}
+{"source_key": "ŚĀṄKH", "class": "source", "mintable": 241, "examples": ["<ls>ŚĀṄKH. ŚR. 15,3,14.</ls>", "<ls>ŚĀṄKH. ŚR. 1,16,5.</ls>", "<ls>ŚĀṄKH. BR. 30,8.</ls>", "<ls>ŚĀṄKH. ŚR. 16,21,21.</ls>", "<ls>ŚĀṄKH. ŚR. 1. 17,7.</ls>", "<ls>ŚĀṄKH. GṚHY. 1,15.</ls>"]}
+{"source_key": "CHĀND", "class": "source", "mintable": 198, "examples": ["<ls>CHĀND. UP. 1,1,6.</ls>", "<ls>CHĀND. UP. 4,9,1.</ls>", "<ls>CHĀND. UP. 4,5,1.</ls>", "<ls>CHĀND. UP. 4,5,1.</ls>", "<ls>CHĀND. UP. 5,10,3.</ls>", "<ls>CHĀND. UP. 4,2,4.</ls>"]}
+{"source_key": "ĀŚV", "class": "source", "mintable": 197, "examples": ["<ls>ĀŚV. GṚHY. 1,6,8. 3,10,11.</ls>", "<ls>ĀŚV. GṚHY. 4,7,8.</ls>", "<ls>ĀŚV. GṚHY. 1,22,18. 2,3,13.</ls>", "<ls>ĀŚV. GṚHY. 1,17.</ls>", "<ls>ĀŚV. GṚHY. 2,8. 4,6.</ls>", "<ls>ĀŚV. GṚHY. 1,10. 11.</ls>"]}
+{"source_key": "PRAB", "class": "source", "mintable": 170, "examples": ["<ls>PRAB. 75,2.</ls>", "<ls>PRAB. 84,15.</ls>", "<ls>PRAB. 18,7.</ls>", "<ls>PRAB. 44,8.</ls>", "<ls>PRAB. 116,7.</ls>", "<ls>PRAB. 5,18. 22,11. 24,7. 31,10. 72,11. 111,16.</ls>"]}
+{"source_key": "KAUŚ", "class": "source", "mintable": 157, "examples": ["<ls>KAUŚ. 68. 140.</ls>", "<ls>KAUŚ. 90.</ls>", "<ls>KAUŚ. 57.</ls>", "<ls>KAUŚ. 61.</ls>", "<ls>KAUŚ. 27. 50.</ls>", "<ls>KAUŚ. 19.</ls>"]}
+{"source_key": "MṚCCH", "class": "source", "mintable": 146, "examples": ["<ls>MṚCCH. 67,3.</ls>", "<ls>MṚCCH. 63,12.</ls>", "<ls>MṚCCH. 126,2. 146,19.</ls>", "<ls>MṚCCH. 132,5.</ls>", "<ls>MṚCCH. 56,3.</ls>", "<ls>MṚCCH. 33,4.</ls>"]}
+{"source_key": "KĀM", "class": "source", "mintable": 128, "examples": ["<ls>KĀM. NĪTIS. 8. 67.</ls>", "<ls>KĀM. NĪTIS. 11,65.</ls>", "<ls>KĀM. NĪTIS. 11,53.</ls>", "<ls>KĀM. NĪTIS. 17,17. 22.</ls>", "<ls>KĀM. NĪTIS. 17,25. 19,2.</ls>", "<ls>KĀM. NĪTIS. 17,45.</ls>"]}
+{"source_key": "LĀṬY", "class": "source", "mintable": 118, "examples": ["<ls>LĀṬY. 5,1,4.</ls>", "<ls>LĀṬY. 3,6,8.</ls>", "<ls n=\"LĀṬY.\">9,9,8.</ls>", "<ls>LĀṬY. 9,2,26.</ls>", "<ls>LĀṬY. 10,3,13.</ls>", "<ls>LĀṬY. 2,1,6.</ls>"]}
+{"source_key": "VET", "class": "source", "mintable": 114, "examples": ["<ls>VET. 4,11.</ls>", "<ls>VET. 5,11.</ls>", "<ls>VET. 26,6.</ls>", "<ls>VET. 5,7.</ls>", "<ls>VET. 24,15.</ls>", "<ls>VET. 1,8.</ls>"]}
+{"source_key": "ĀPAST", "class": "source", "mintable": 113, "examples": ["<ls>ĀPAST. 1,25,2</ls>", "<ls n=\"ĀPAST. 1,25,\">7</ls>", "<ls>ĀPAST. 1,25,2</ls>", "<ls n=\"ĀPAST. 1,25,\">7</ls>", "<ls>ĀPAST. ŚR. 3,5,2. 8,5,20</ls>", "<ls>ĀPAST. 2,17,9</ls>"]}
+{"source_key": "SARVADARŚANAS", "class": "source", "mintable": 107, "examples": ["<ls>SARVADARŚANAS. 118,8</ls>", "<ls n=\"SARVADARŚANAS.\">135,2</ls>", "<ls>SARVADARŚANAS. 100,9.</ls>", "<ls>SARVADARŚANAS. 19,6. 48,10. 82,18. 108,12. fg.</ls>", "<ls>SARVADARŚANAS. 2,14.</ls>", "<ls>SARVADARŚANAS. 27,13.</ls>"]}
+{"source_key": "Ind", "class": "source", "mintable": 95, "examples": ["<ls>Ind. St. 1,19.</ls>", "<ls>Ind. St. 9,137</ls>", "<ls n=\"Ind. St. 9,\">146</ls>", "<ls>Ind. St. 9,137</ls>", "<ls n=\"Ind. St. 9,\">146</ls>", "<ls>Ind. St. 9,137.</ls>"]}
+{"source_key": "PAÑCAV", "class": "source", "mintable": 85, "examples": ["<ls>PAÑCAV. BR. 23,1,2.</ls>", "<ls>PAÑCAV. BR. 20,3,2.</ls>", "<ls>PAÑCAV. BR. 16,16,2. 3.</ls>", "<ls>PAÑCAV. BR. 13,5,22.</ls>", "<ls>PAÑCAV. BR. 20,2,4.</ls>", "<ls>PAÑCAV. BR. 1,1,1.</ls>"]}
+{"source_key": "ŚIŚ", "class": "source", "mintable": 85, "examples": ["<ls>ŚIŚ. 18,5</ls>", "<ls>ŚIŚ. 18,5</ls>", "<ls>ŚIŚ. 9,66.</ls>", "<ls>ŚIŚ. 9,16.</ls>", "<ls>ŚIŚ. 12,63.</ls>", "<ls>ŚIŚ. 4,26. 20,56.</ls>"]}
+{"source_key": "DAŚAK", "class": "source", "mintable": 83, "examples": ["<ls>DAŚAK. 185</ls>", "<ls>DAŚAK. 19,8</ls>", "<ls>DAŚAK. 19,8</ls>", "<ls>DAŚAK. 19,8</ls>", "<ls>DAŚAK. 117,4.</ls>", "<ls>DAŚAK. 81,8</ls>"]}
+{"source_key": "BṚH", "class": "source", "mintable": 77, "examples": ["<ls>BṚH. ĀR. UP. 4,5,14.</ls>", "<ls>BṚH. ĀR. UP. 8,9,1.</ls>", "<ls>BṚH. ĀR. UP. 1,5,23.</ls>", "<ls>BṚH. ĀR. UP. 2,4,4.</ls>", "<ls>BṚH. ĀR. UP. 4,1,1.</ls>", "<ls>BṚH. ĀR. UP. 1,4,10. 2,1,2).</ls>"]}
+{"source_key": "JĀTAKAM", "class": "source", "mintable": 72, "examples": ["<ls>JĀTAKAM. 22</ls>", "<ls>JĀTAKAM. 22</ls>", "<ls>JĀTAKAM. 24,23</ls>", "<ls>JĀTAKAM. 24,23</ls>", "<ls>JĀTAKAM. 31</ls>", "<ls>JĀTAKAM. 31</ls>"]}
+{"source_key": "ṚT", "class": "source", "mintable": 69, "examples": ["<ls>ṚT. 1,19.</ls>", "<ls>ṚT. 2,5.</ls>", "<ls>ṚT. 2,2.</ls>", "<ls>ṚT. 4. 16.</ls>", "<ls>ṚT. 4. 15.</ls>", "<ls>ṚT. 6,13.</ls>"]}
+{"source_key": "KĀṬH", "class": "source", "mintable": 68, "examples": ["<ls>KĀṬH. 36,7. 34,8.</ls>", "<ls>KĀṬH. 25,9.</ls>", "<ls>KĀṬH. 36,7.</ls>", "<ls>KĀṬH. 12,8.</ls>", "<ls>KĀṬH. 34,8.</ls>", "<ls>KĀṬH. 24,7.</ls>"]}
+{"source_key": "GOBH", "class": "source", "mintable": 64, "examples": ["<ls>GOBH. 4,2,9.</ls>", "<ls>GOBH. 2,10,23.</ls>", "<ls>GOBH. 1,1,15.</ls>", "<ls>GOBH. 2,9,11.</ls>", "<ls>GOBH. 4,9,11.</ls>", "<ls>GOBH. 2,10,41.</ls>"]}
+{"source_key": "KIR", "class": "source", "mintable": 54, "examples": ["<ls>KIR. 16,3.</ls>", "<ls>KIR. 4,27. 5,34.</ls>", "<ls>KIR. 5,5.</ls>", "<ls>KIR. 2,7.</ls>", "<ls>KIR. 5,32.</ls>", "<ls>KIR. 5,26.</ls>"]}
+{"source_key": "ṚV", "class": "format", "mintable": 54, "examples": ["<ls>ṚV. PRĀT. 13,13.</ls>", "<ls>ṚV. PRĀT. 10,1.</ls>", "<ls>ṚV. PRĀT. 2,11.</ls>", "<ls>ṚV. PRĀT. 12,5.</ls>", "<ls>ṚV. PRĀT. 4,2.</ls>", "<ls n=\"ṚV. PRĀT.\">2,16.</ls>"]}
+{"source_key": "CARAKA", "class": "source", "mintable": 53, "examples": ["<ls>CARAKA. 6,18</ls>", "<ls>CARAKA. 1,13</ls>", "<ls n=\"CARAKA.\">6,26</ls>", "<ls n=\"CARAKA. 6,\">20</ls>", "<ls>CARAKA. 6,18. 27. 7,8</ls>", "<ls>CARAKA 3,8.</ls>"]}
+{"source_key": "MAITRYUP", "class": "source", "mintable": 45, "examples": ["<ls>MAITRYUP. 6,24.</ls>", "<ls>MAITRYUP. 2,6.</ls>", "<ls>MAITRYUP. 5,1. 6. 9.</ls>", "<ls>MAITRYUP. 6,34.</ls>", "<ls>MAITRYUP. 1,2.</ls>", "<ls>MAITRYUP. 2,3.</ls>"]}
+{"source_key": "DIVYĀVAD", "class": "source", "mintable": 44, "examples": ["<ls>DIVYĀVAD. 232,19</ls>", "<ls>DIVYĀVAD. 232,19</ls>", "<ls>DIVYĀVAD. 421,20</ls>", "<ls>DIVYĀVAD. 1,6</ls>", "<ls>DIVYĀVAD. 446,25</ls>", "<ls>DIVYĀVAD. 163,24</ls>"]}
+{"source_key": "Z", "class": "source", "mintable": 44, "examples": ["<ls>Z. 13</ls>", "<ls>Z. d. d. m. G. 7,310, N. 1.</ls>", "<ls>Z. 11</ls>", "<ls>Z. f. d. K. d. M. 7,271.</ls>", "<ls>Z. f. d. K. d. M. 7,273.</ls>", "<ls>Z. f. d. K. d. M. 3,389.</ls>"]}
+{"source_key": "PĀR", "class": "source", "mintable": 41, "examples": ["<ls>PĀR. GṚHY. 2,2.</ls>", "<ls>PĀR. GṚHY. 2,1.</ls>", "<ls>PĀR. GṚHY. 2,2.</ls>", "<ls>PĀR. GṚHY. 2,1.</ls>", "<ls>PĀR. GṚHY. 2,8.</ls>", "<ls>PĀR. GṚHY. 2,3.</ls>"]}
+{"source_key": "MAITR", "class": "source", "mintable": 40, "examples": ["<ls>MAITR. S. 1,2,17</ls>", "<ls>MAITR. S. 4,6,7 (89,9)</ls>", "<ls>MAITR. S. 4,6,7 (89,9)</ls>", "<ls>MAITR. S. 1,8,6 (123,12)</ls>", "<ls>MAITR. S. 1,5,12</ls>", "<ls>MAITR. S. 1,10,20 (160,17)</ls>"]}
+{"source_key": "ARJ", "class": "source", "mintable": 39, "examples": ["<ls>ARJ. 4,23.</ls>", "<ls>ARJ. 3,18.</ls>", "<ls>ARJ. 8,21.</ls>", "<ls>ARJ. 7,21.</ls>", "<ls>ARJ. 3,41.</ls>", "<ls>ARJ. 10,69</ls>"]}
+{"source_key": "TAITT", "class": "source", "mintable": 39, "examples": ["<ls>TAITT. UP. 1,8.</ls>", "<ls>TAITT. UP. 2,9.</ls>", "<ls>TAITT. UP. 3,10,5.</ls>", "<ls>TAITT. UP. 1,6,2.</ls>", "<ls>TAITT. UP. 1,11,1.</ls>", "<ls>TAITT. UP. 1,4,1.</ls>"]}
+{"source_key": "KAṬHOP", "class": "source", "mintable": 38, "examples": ["<ls>KAṬHOP. 6,18.</ls>", "<ls>KAṬHOP. 2,24.</ls>", "<ls>KAṬHOP. 1,14.</ls>", "<ls>KAṬHOP. 5. 13</ls>", "<ls>KAṬHOP. 3,17.</ls>", "<ls>KAṬHOP. 1,13.</ls>"]}
+{"source_key": "MUṆḌ", "class": "source", "mintable": 37, "examples": ["<ls>MUṆḌ. UP. 3,2,2.</ls>", "<ls>MUṆḌ. UP. 3,2,5.</ls>", "<ls>MUṆḌ. UP. 2,2. 8.</ls>", "<ls>MUṆḌ. UP. 2,2,8.</ls>", "<ls>MUṆḌ. UP. 2,2,7.</ls>", "<ls>MUṆḌ. UP. 2,2,1.</ls>"]}
+{"source_key": "VARĀH", "class": "format", "mintable": 37, "examples": ["<ls>VARĀH. BṚH. S. 41 (40),5.</ls>", "<ls>VARĀH. LAGHUJ. 1,2</ls>", "<ls n=\"VARĀH. BṚH. S.\">31 (30),13.</ls>", "<ls n=\"VARĀH. BṚH. S.\">39 (38),14.</ls>", "<ls>VARĀH. BṚH. S. 41 (40),11.</ls>", "<ls>VARĀH. BṚH. 25 (24),11.</ls>"]}
+{"source_key": "DHŪRTAS", "class": "source", "mintable": 35, "examples": ["<ls>DHŪRTAS. 81,6.</ls>", "<ls>DHŪRTAS. 83,10.</ls>", "<ls>DHŪRTAS. 92,5.</ls>", "<ls>DHŪRTAS. 73,11.</ls>", "<ls>DHŪRTAS. 85,8</ls>", "<ls>DHŪRTAS. 73,14.</ls>"]}
+{"source_key": "SŪRYAS", "class": "source", "mintable": 35, "examples": ["<ls>SŪRYAS. 1,52. 60. 2,28. 57. 61. 64. fg. 3,10. 22.</ls>", "<ls>SŪRYAS. 2,32. 3,9. 12,59.</ls>", "<ls>SŪRYAS. 8,13.</ls>", "<ls>SŪRYAS. 1,26. 7,10.</ls>", "<ls>SŪRYAS. 12,9.</ls>", "<ls>SŪRYAS. 4,26.</ls>"]}
+{"source_key": "ŚVETĀŚV", "class": "source", "mintable": 35, "examples": ["<ls>ŚVETĀŚV. UP. 4,10.</ls>", "<ls>ŚVETĀŚV. UP. 4,15.</ls>", "<ls>ŚVETĀŚV. UP. 6,10.</ls>", "<ls>ŚVETĀŚV. UP. 4,1.</ls>", "<ls>ŚVETĀŚV. UP. 3,20.</ls>", "<ls>ŚVETĀŚV. UP. 4,1.</ls>"]}
+{"source_key": "KAUṢ", "class": "source", "mintable": 34, "examples": ["<ls>KAUṢ. UP. 2,15.</ls>", "<ls>KAUṢ. UP. 3,2.</ls>", "<ls>KAUṢ. UP. 1,1. 2. 5.</ls>", "<ls>KAUṢ. UP. 2,15.</ls>", "<ls>KAUṢ. UP. 2,3.</ls>", "<ls>KAUṢ. UP. 1,1.</ls>"]}
+{"source_key": "NAIṢ", "class": "source", "mintable": 34, "examples": ["<ls>NAIṢ. 8,89</ls>", "<ls>NAIṢ. 8,89</ls>", "<ls>NAIṢ. 6,100</ls>", "<ls>NAIṢ. 4,109</ls>", "<ls>NAIṢ. 8,24</ls>", "<ls>NAIṢ. 8,16</ls>"]}
+{"source_key": "SĀV", "class": "source", "mintable": 33, "examples": ["<ls>SĀV. 6,27.</ls>", "<ls>SĀV. 6,30.</ls>", "<ls>SĀV. 4,7.</ls>", "<ls>SĀV. 5,102.</ls>", "<ls>SĀV. 4,4.</ls>", "<ls>SĀV. 2,21.</ls>"]}
+{"source_key": "PAT", "class": "source", "mintable": 32, "examples": ["<ls>PAT. a. a. O. 1,48,b.</ls>", "<ls n=\"PAT. a. a. O.\">2,317,a.</ls>", "<ls>PAT. a. a. O. 6 (4),14,a.</ls>", "<ls>PAT. a. a. O. 1,254,a.</ls>", "<ls>PAT. a. a. O. 6 (4) 14,a.</ls>", "<ls>PAT. a. a. O. 1,15,b. 16,a.</ls>"]}
+{"source_key": "KAP", "class": "source", "mintable": 31, "examples": ["<ls>KAP. 1,152.</ls>", "<ls>KAP. 4,7.</ls>", "<ls>KAP. 1,60.</ls>", "<ls>KAP. 1,77.</ls>", "<ls>KAP. 1,28. 49. 50.</ls>", "<ls>KAP. 1,90.</ls>"]}
+{"source_key": "LALIT", "class": "source", "mintable": 31, "examples": ["<ls>LALIT. 499,9</ls>", "<ls>LALIT. ed. Calc. 4,14.</ls>", "<ls>LALIT. ed. Calc. 378,10. fg.</ls>", "<ls>LALIT. ed. Calc. 3,18.</ls>", "<ls>LALIT. 341,12</ls>", "<ls>LALIT. Calc. 8,9.</ls>"]}
+{"source_key": "TS", "class": "format", "mintable": 30, "examples": ["<ls>TS. PRĀT. 22,6.</ls>", "<ls>TS. PRĀT. 3,10.</ls>", "<ls>TS. PRĀT. 19,3.</ls>", "<ls n=\"TS. PRĀT. 19,\">4.</ls>", "<ls>TS. PRĀT. 13,12.</ls>", "<ls>TS. PRĀT. 3,8.</ls>"]}
+{"source_key": "LA", "class": "source", "mintable": 29, "examples": ["<ls>LA. (II) 90,6.</ls>", "<ls>LA. (II) 87,2.</ls>", "<ls>LA. (II) 90,22.</ls>", "<ls>LA. (II) 87,1.</ls>", "<ls>LA. (II) 91,3.</ls>", "<ls>LA. (III) 56,18. 89,21.</ls>"]}
+{"source_key": "VS", "class": "format", "mintable": 29, "examples": ["<ls>VS. PRĀT. 1,38.</ls>", "<ls n=\"VS. PRĀT.\">3,64.</ls>", "<ls n=\"VS. PRĀT. 3,\">94.</ls>", "<ls n=\"VS. PRĀT.\">4,134. 167.</ls>", "<ls>VS. PRĀT. 5,29.</ls>", "<ls>VS. PRĀT. 4,135</ls>"]}
+{"source_key": "DRAUP", "class": "source", "mintable": 28, "examples": ["<ls>DRAUP. 8,37.</ls>", "<ls>DRAUP. 8,16.</ls>", "<ls>DRAUP. 5,5.</ls>", "<ls>DRAUP. 8,49.</ls>", "<ls>DRAUP. 1,3. 5,5.</ls>", "<ls>DRAUP. 6,19.</ls>"]}
+{"source_key": "KĀD", "class": "source", "mintable": 28, "examples": ["<ls>KĀD. 2,118,1</ls>", "<ls n=\"KĀD. 2,\">145,6</ls>", "<ls>KĀD. 2,87,8</ls>", "<ls>KĀD. 2,88,14</ls>", "<ls>KĀD. 77,17</ls>", "<ls>KĀD. 2,108,19</ls>"]}
+{"source_key": "VĀLAKH", "class": "source", "mintable": 28, "examples": ["<ls>VĀLAKH. 3. 2.</ls>", "<ls>VĀLAKH. 6,6.</ls>", "<ls>VĀLAKH. 4,5.</ls>", "<ls>VĀLAKH. 1,2.</ls>", "<ls>VĀLAKH. 3,5</ls>", "<ls>VĀLAKH. 5,15.</ls>"]}
+{"source_key": "BRAHMA-P", "class": "source", "mintable": 27, "examples": ["<ls>BRAHMA-P. 52,2.</ls>", "<ls>BRAHMA-P. 56,8.</ls>", "<ls>BRAHMA-P. in LA. 59,12.</ls>", "<ls>BRAHMA-P. in LA. (III) 52,17.</ls>", "<ls>BRAHMA-P. 55,20. 54,13.</ls>", "<ls>BRAHMA-P. 51,90.</ls>"]}
+{"source_key": "PRAŚNOP", "class": "source", "mintable": 27, "examples": ["<ls>PRAŚNOP. 6,5.</ls>", "<ls>PRAŚNOP. 3,1.</ls>", "<ls>PRAŚNOP. 1,6.</ls>", "<ls>PRAŚNOP. 3,4.</ls>", "<ls>PRAŚNOP. 2,13.</ls>", "<ls>PRAŚNOP. 3,9.</ls>"]}
+{"source_key": "WEBER", "class": "source", "mintable": 26, "examples": ["<ls>WEBER, RĀMAT. UP. 356,4.</ls>", "<ls>WEBER, JYOT. 41,14.</ls>", "<ls>WEBER, RĀMAT. UP. 356.</ls>", "<ls>WEBER, JYOT. 54. fg. 112.</ls>", "<ls>WEBER, JYOT. 95.</ls>", "<ls>WEBER, RĀMAT. UP. 328.</ls>"]}
+{"source_key": "BĀLAR", "class": "source", "mintable": 25, "examples": ["<ls>BĀLAR. 74,3</ls>", "<ls>BĀLAR. 249,12</ls>", "<ls>BĀLAR. 117,21</ls>", "<ls>BĀLAR. 110,10</ls>", "<ls>BĀLAR. 265,3</ls>", "<ls>BĀLAR. 164,21</ls>"]}
+{"source_key": "Comm", "class": "source", "mintable": 25, "examples": ["<ls>Comm. zu ĀPAST. ŚR. 5,29,12</ls>", "<ls>Comm. zu NYĀYAS. 4,2,18</ls>", "<ls>Comm. zu ĀPAST. ŚR. 7,11,5</ls>", "<ls>Comm. zu NYĀYAS. 1,1,10. 34. 3,1,1</ls>", "<ls>Comm. zu TS. 2,169</ls>", "<ls>Comm. zu NYĀYAM. 7,2,1</ls>"]}
+{"source_key": "ŚUK", "class": "source", "mintable": 25, "examples": ["<ls>ŚUK. in LA. (II) 34,19.</ls>", "<ls>ŚUK. in LA. 41,7.</ls>", "<ls>ŚUK. 41,8.</ls>", "<ls>ŚUK. 39,11.</ls>", "<ls>ŚUK. in LA. (III) 34,14.</ls>", "<ls>ŚUK. 45,1.</ls>"]}
+{"source_key": "SADDH", "class": "source", "mintable": 24, "examples": ["<ls>SADDH. P. 4,27,b.</ls>", "<ls>SADDH. P. 4,11,a.</ls>", "<ls n=\"SADDH. P. 4,\">10,b.</ls>", "<ls>SADDH. P. 4,17,a.</ls>", "<ls>SADDH. P. 4,20,b. 21,a.</ls>", "<ls>SADDH. P. 4,4,b.</ls>"]}
+{"source_key": "Jātakam", "class": "source", "mintable": 23, "examples": ["<ls>Jātakam. 22.</ls>", "<ls>Jātakam. 24,23.</ls>", "<ls>Jātakam. 31.</ls>", "<ls>Jātakam. 31.</ls>", "<ls>Jātakam. 20</ls>", "<ls>Jātakam. 2</ls>"]}
+{"source_key": "MAHĀVY", "class": "source", "mintable": 23, "examples": ["<ls>MAHĀVY. 81,5</ls>", "<ls>MAHĀVY. 39,4</ls>", "<ls>MAHĀVY. 81,5</ls>", "<ls>MAHĀVY. 39,4</ls>", "<ls>MAHĀVY. 10,29</ls>", "<ls>MAHĀVY. 245,943</ls>"]}
+{"source_key": "Sp", "class": "source", "mintable": 22, "examples": ["<ls>Sp. 302, Z. 9. fgg.</ls>", "<ls>Sp. 302, Z. 9. fgg.</ls>", "<ls>Sp. 904.</ls>", "<ls>Sp. 927, Z. 7</ls>", "<ls>Sp. 8, Z. 28. fgg.</ls>", "<ls>Sp. 12, Z. 8. fg.</ls>"]}
+{"source_key": "SĀṂKHYAK", "class": "source", "mintable": 22, "examples": ["<ls>SĀṂKHYAK. 20.</ls>", "<ls>SĀṂKHYAK. S. 10.</ls>", "<ls>SĀṂKHYAK. 16</ls>", "<ls>SĀṂKHYAK. 59.</ls>", "<ls>SĀṂKHYAK. 44.</ls>", "<ls>SĀṂKHYAK. 21 (S. 78). 62 (S. 177).</ls>"]}
+{"source_key": "AMAR", "class": "source", "mintable": 21, "examples": ["<ls>AMAR. 97.</ls>", "<ls>AMAR. 74.</ls>", "<ls>AMAR. 70.</ls>", "<ls>AMAR. 23.</ls>", "<ls n=\"AMAR.\">67.</ls>", "<ls>AMAR. 16.</ls>"]}
+{"source_key": "ŚRUT", "class": "source", "mintable": 21, "examples": ["<ls>ŚRUT. 18.</ls>", "<ls>ŚRUT. (BR.) 5.</ls>", "<ls>ŚRUT. 29.</ls>", "<ls>ŚRUT. 21. 17</ls>", "<ls>ŚRUT. 31.</ls>", "<ls>ŚRUT. 27.</ls>"]}
+{"source_key": "ŚĀK", "class": "format", "mintable": 21, "examples": ["<ls>ŚĀK. CH. 16,3.</ls>", "<ls n=\"ŚĀK. CH.\">69,6.</ls>", "<ls n=\"ŚĀK. CH.\">107,1.</ls>", "<ls>ŚĀK. CH. 140,10.</ls>", "<ls>ŚĀK. CH. 128,18.</ls>", "<ls>ŚĀK. CH. 117,5.</ls>"]}
+{"source_key": "CAMPAKA", "class": "source", "mintable": 20, "examples": ["<ls>CAMPAKA 126</ls>", "<ls n=\"CAMPAKA\">137</ls>", "<ls n=\"CAMPAKA\">338</ls>", "<ls n=\"CAMPAKA\">438</ls>", "<ls n=\"CAMPAKA\">472</ls>", "<ls>CAMPAKA 126</ls>"]}
+{"source_key": "Journ", "class": "source", "mintable": 20, "examples": ["<ls>Journ. of the As. Soc. of B. IV, Pl. XL, Z. 6. 7.</ls>", "<ls>Journ. of the Am. Or. S. 7,25, Śl. 3.</ls>", "<ls>Journ. of the Am. Or. S. 6,558.</ls>", "<ls>Journ. of the Am. Or. S. 7,7, Śl. 24.</ls>", "<ls>Journ. of the Am. Or. S. 6,548,10.</ls>", "<ls>Journ. of the Am. Or. S. 6,508, Śl. 31.</ls>"]}
+{"source_key": "Sch", "class": "source", "mintable": 20, "examples": ["<ls>Sch. 6,4,49</ls>", "<ls>Sch. 8,2,26</ls>", "<ls>Sch. 5,4,90</ls>", "<ls>Sch. 7,4,47</ls>", "<ls>Sch. 8,4,65</ls>", "<ls>Sch. 8,4,17</ls>"]}
+{"source_key": "VAJRACCH", "class": "source", "mintable": 20, "examples": ["<ls>VAJRACCH. 28,14</ls>", "<ls n=\"VAJRACCH.\">30,17</ls>", "<ls>VAJRACCH. 28,14</ls>", "<ls n=\"VAJRACCH.\">30,17</ls>", "<ls>VAJRACCH. 19,9. 10</ls>", "<ls>VAJRACCH. 19,9</ls>"]}
+{"source_key": "INDR", "class": "source", "mintable": 19, "examples": ["<ls>INDR. 1,12.</ls>", "<ls>INDR. 3,1.</ls>", "<ls>INDR. 1,3.</ls>", "<ls>INDR. 5,21.</ls>", "<ls n=\"INDR.\">1,23.</ls>", "<ls>INDR. 5,62.</ls>"]}
+{"source_key": "KENOP", "class": "source", "mintable": 19, "examples": ["<ls>KENOP 19.</ls>", "<ls>KENOP. 3.</ls>", "<ls>KENOP. 32.</ls>", "<ls>KENOP. 22.</ls>", "<ls>KENOP. 34.</ls>", "<ls>KENOP. 1.</ls>"]}
+{"source_key": "MĀN", "class": "source", "mintable": 19, "examples": ["<ls>MĀN. ŚR. 1,3,5. 7,5</ls>", "<ls>MĀN. GṚHY. 1,23. 2,6</ls>", "<ls>MĀN. GṚHY. 1,17</ls>", "<ls>MĀN. 127,a.</ls>", "<ls>MĀN. GṚHY. 1,9. 17</ls>", "<ls>MĀN. ŚR. 1,8,2</ls>"]}
+{"source_key": "ṢAḌV", "class": "source", "mintable": 19, "examples": ["<ls>ṢAḌV. BR. 2,4.</ls>", "<ls>ṢAḌV. BR. 1,6.</ls>", "<ls>ṢAḌV. BR. 2,9.</ls>", "<ls>ṢAḌV. BR. 5,10.</ls>", "<ls>ṢAḌV. BR. 2,9.</ls>", "<ls>ṢAḌV. BR. 3,8.</ls>"]}
+{"source_key": "HEM", "class": "source", "mintable": 18, "examples": ["<ls>HEM. PAR. 1,380</ls>", "<ls>HEM. PAR. 1,380</ls>", "<ls>HEM. PAR. 1,398</ls>", "<ls>HEM. PAR. 1,398</ls>", "<ls>HEM. PAR. 1,441</ls>", "<ls>HEM. PAR. 1,168</ls>"]}
+{"source_key": "KĀRAṆḌ", "class": "source", "mintable": 18, "examples": ["<ls>KĀRAṆḌ. 85,8. 86,8</ls>", "<ls>KĀRAṆḌ. 71,7</ls>", "<ls>KĀRAṆḌ. 48,9</ls>", "<ls>KĀRAṆḌ. 64,1</ls>", "<ls>KĀRAṆḌ. 27,19. 33,15. 57,23</ls>", "<ls>KĀRAṆḌ. 31,5</ls>"]}
+{"source_key": "MĀLATĪM", "class": "source", "mintable": 18, "examples": ["<ls>MĀLATĪM. 2,12.</ls>", "<ls>MĀLATĪM. 163,11.</ls>", "<ls>MĀLATĪM. 69,18.</ls>", "<ls>MĀLATĪM. 153,21.</ls>", "<ls>MĀLATĪM. 82,5.</ls>", "<ls>MĀLATĪM. 160,18.</ls>"]}
+{"source_key": "S", "class": "source", "mintable": 18, "examples": ["<ls>S I,196,6.</ls>", "<ls>S II,267,18</ls>", "<ls>S I,351,6.</ls>", "<ls>S I,150,2.</ls>", "<ls>S I,53,5</ls>", "<ls>S I,35,2.</ls>"]}
+{"source_key": "UTTARAR", "class": "source", "mintable": 18, "examples": ["<ls>UTTARAR. 110,1 (148,16).</ls>", "<ls>UTTARAR. 106 5 (144,3).</ls>", "<ls>UTTARAR. 30,12 (40,3).</ls>", "<ls>UTTARAR. 90,19</ls>", "<ls>UTTARAR. ed. Cow. 117,3.</ls>", "<ls>UTTARAR. 111,18 (151,2).</ls>"]}
+{"source_key": "VEDĀNTAS", "class": "source", "mintable": 18, "examples": ["<ls>VEDĀNTAS. (Allah.) No. 71.</ls>", "<ls>VEDĀNTAS. (Allah.) No. 34.</ls>", "<ls>VEDĀNTAS. (Allah.) No. 36.</ls>", "<ls>VEDĀNTAS. (Allah.) No. 134.</ls>", "<ls>VEDĀNTAS. (Allah.) No. 34</ls>", "<ls>VEDĀNTAS. (Allah.) No. 25. 40. 62. 64. 72. 73. 75. 77. 78.</ls>"]}
+{"source_key": "AV", "class": "format", "mintable": 17, "examples": ["<ls>AV. PAIPP. 20,2,2</ls>", "<ls>AV. PRĀYAŚC. 6,5</ls>", "<ls>AV. PRĀT. 3,54.</ls>", "<ls>AV. PRĀT. 20,4.</ls>", "<ls n=\"AV. PRĀT. 20,\">10.</ls>", "<ls n=\"AV. PRĀT. 20,\">8.</ls>"]}
+{"source_key": "SUND", "class": "source", "mintable": 17, "examples": ["<ls>SUND. 3,3.</ls>", "<ls>SUND. 1,30</ls>", "<ls>SUND. 1,17.</ls>", "<ls>SUND. 2,21.</ls>", "<ls>SUND. 4,24.</ls>", "<ls>SUND. 4,24.</ls>"]}
+{"source_key": "Divyāvad", "class": "source", "mintable": 16, "examples": ["<ls>Divyāvad. 446,25.</ls>", "<ls>Divyāvad. 163,24.</ls>", "<ls>Divyāvad. 95,10</ls>", "<ls>Divyāvad. 95,18.</ls>", "<ls>Divyāvad. 2,13.</ls>", "<ls>Divyāvad. 53,18; 185,21; 343,1.</ls>"]}
+{"source_key": "BHĀVAPR", "class": "source", "mintable": 15, "examples": ["<ls>BHĀVAPR. 3,21,38</ls>", "<ls>BHĀVAPR. 2,89</ls>", "<ls n=\"BHĀVAPR. 2,\">92</ls>", "<ls>BHĀVAPR. 2,101</ls>", "<ls>BHĀVAPR. 2,114</ls>", "<ls>BHĀVAPR. 4,4</ls>"]}
+{"source_key": "PRASANNAR", "class": "source", "mintable": 15, "examples": ["<ls>PRASANNAR. 66,16</ls>", "<ls>PRASANNAR. 136,5</ls>", "<ls>PRASANNAR. 136,5</ls>", "<ls>PRASANNAR. 14,18</ls>", "<ls>PRASANNAR. 22,10</ls>", "<ls>PRASANNAR. 5,22</ls>"]}
+{"source_key": "AIT", "class": "format", "mintable": 14, "examples": ["<ls>AIT. UP. 1,4.</ls>", "<ls>AIT. UP. 4,4.</ls>", "<ls>AIT. UP. 4,4.</ls>", "<ls>AIT. ĀR. 469,14</ls>", "<ls>AIT. UP. 3,3.</ls>", "<ls>AIT. UP. 2,1.</ls>"]}
+{"source_key": "GṚHY", "class": "source", "mintable": 14, "examples": ["<ls>GṚHY. 1,3.</ls>", "<ls>GṚHY. 3,3.</ls>", "<ls>GṚHY. 17,5</ls>", "<ls>GṚHY. 17,5</ls>", "<ls>GṚHY. 2,3.</ls>", "<ls>GṚHY. 3,4. 6,3.</ls>"]}
+{"source_key": "HEMĀDRI", "class": "source", "mintable": 14, "examples": ["<ls>HEMĀDRI 1,35,20</ls>", "<ls>HEMĀDRI 1,704,20,21</ls>", "<ls>HEMĀDRI 1,603,10</ls>", "<ls>HEMĀDRI 1,310,18</ls>", "<ls>HEMĀDRI 1,533,17</ls>", "<ls>HEMĀDRI 1,434,12</ls>"]}
+{"source_key": "HIḌ", "class": "source", "mintable": 14, "examples": ["<ls>HIḌ. 2,24. 4,27.</ls>", "<ls>HIḌ. 1,25.</ls>", "<ls>HIḌ. 1,21.</ls>", "<ls>HIḌ. 2,23. 3,4. 16.</ls>", "<ls>HIḌ. 4,12.</ls>", "<ls>HIḌ. 3,17.</ls>"]}
+{"source_key": "NALOD", "class": "source", "mintable": 14, "examples": ["<ls>NALOD. 2,52.</ls>", "<ls>NALOD. 1,17.</ls>", "<ls>NALOD. 3,18.</ls>", "<ls>NALOD. 3,18.</ls>", "<ls>NALOD. 2,11.</ls>", "<ls>NALOD. 3,46.</ls>"]}
+{"source_key": "Nachtr", "class": "source", "mintable": 14, "examples": ["<ls>Nachtr. 4</ls>", "<ls>Nachtr. 4</ls>", "<ls>Nachtr. 3</ls>", "<ls>Nachtr. 6</ls>", "<ls>Nachtr. 6</ls>", "<ls>Nachtr. 2</ls>"]}
+{"source_key": "SCHL", "class": "source", "mintable": 14, "examples": ["<ls n=\"SCHL. 2,\">7,18</ls>", "<ls n=\"SCHL. 2,\">61,7.</ls>", "<ls n=\"SCHL. 2,\">66,1</ls>", "<ls n=\"SCHL. 2,\">21,23</ls>", "<ls n=\"SCHL. 1,\">4,25</ls>", "<ls n=\"SCHL. 2,\">102,1</ls>"]}
+{"source_key": "ŚAṂK", "class": "source", "mintable": 14, "examples": ["<ls>ŚAṂK. zu BĀDAR. 2,2,10</ls>", "<ls>ŚAṂK. zu BĀDAR. 3,4,7</ls>", "<ls>ŚAṂK. zu BĀDAR. 2,1,18 (S. 461)</ls>", "<ls>ŚAṂK. zu BĀDAR. 2,1,3</ls>", "<ls>ŚAṂK. zu BĀDAR. 1,1,4</ls>", "<ls>ŚAṂK. zu BĀDAR. 2,1,9</ls>"]}
+{"source_key": "JAIM", "class": "source", "mintable": 13, "examples": ["<ls>JAIM. 1,32</ls>", "<ls>JAIM. 1,31.</ls>", "<ls>JAIM. 1,1,5.</ls>", "<ls>JAIM. 1,2,19.</ls>", "<ls>JAIM. 1,2,17. 19.</ls>", "<ls>JAIM. 1,16.</ls>"]}
+{"source_key": "SIDDH", "class": "source", "mintable": 13, "examples": ["<ls>SIDDH. K. 168,b,4. 5</ls>", "<ls>SIDDH. K. 229,b,4</ls>", "<ls>SIDDH. K. 163,b,4</ls>", "<ls>SIDDH. K. 247,b,5</ls>", "<ls>SIDDH. K. 164,a,13.</ls>", "<ls>SIDDH. K. 155,a,9.</ls>"]}
+{"source_key": "UTTARARĀMAC", "class": "source", "mintable": 13, "examples": ["<ls>UTTARARĀMAC. 64,10</ls>", "<ls n=\"UTTARARĀMAC.\">82,12</ls>", "<ls>UTTARARĀMAC. 105,10 (143,2).</ls>", "<ls>UTTARARĀMAC. 120,7 (162,13).</ls>", "<ls>UTTARARĀMAC. 27,16.</ls>", "<ls>UTTARARĀMAC. 32,17.</ls>"]}
+{"source_key": "HALL", "class": "source", "mintable": 12, "examples": ["<ls>HALL 118.</ls>", "<ls n=\"HALL\">95.</ls>", "<ls n=\"HALL\">117.</ls>", "<ls n=\"HALL\">92. 117.</ls>", "<ls n=\"HALL\">117.</ls>", "<ls n=\"HALL\">120.</ls>"]}
+{"source_key": "MUIR", "class": "source", "mintable": 12, "examples": ["<ls>MUIR, ST. (2te Aufl.) 1,509,9.</ls>", "<ls>MUIR, ST. 4,326,1.</ls>", "<ls>MUIR, ST. 4,326,6.</ls>", "<ls>MUIR, ST. 2,184.</ls>", "<ls>MUIR, ST. II,176. 184.</ls>", "<ls>MUIR, ST. I,30, N. 55.</ls>"]}
+{"source_key": "MÜLLER", "class": "source", "mintable": 12, "examples": ["<ls>MÜLLER, SL. 178.</ls>", "<ls>MÜLLER, SL. 178</ls>", "<ls>MÜLLER, SL. 178</ls>", "<ls>MÜLLER, SL. 216.</ls>", "<ls>MÜLLER, SL. 529.</ls>", "<ls>MÜLLER, SL. 510.</ls>"]}
+{"source_key": "BHĀṢĀP", "class": "source", "mintable": 11, "examples": ["<ls>BHĀṢĀP. 67</ls>", "<ls>BHĀṢĀP. 67.</ls>", "<ls>BHĀṢĀP. 133,8.</ls>", "<ls>BHĀṢĀP. 105.</ls>", "<ls>BHĀṢĀP. 14.</ls>", "<ls>BHĀṢĀP. 84.</ls>"]}
+{"source_key": "H", "class": "format", "mintable": 11, "examples": ["<ls>H 29,47.</ls>", "<ls>H 24,48.</ls>", "<ls>H 43,8.</ls>", "<ls>H 50,45.</ls>", "<ls>H 48,3. 11</ls>", "<ls>H 14,19</ls>"]}
+{"source_key": "HARṢAC", "class": "source", "mintable": 11, "examples": ["<ls>HARṢAC. 126,9</ls>", "<ls>HARṢAC. 1,8</ls>", "<ls>HARṢAC. 123,22</ls>", "<ls>HARṢAC. 157,18</ls>", "<ls>HARṢAC. 217,6</ls>", "<ls>HARṢAC. 117,18</ls>"]}
+{"source_key": "Āpast", "class": "source", "mintable": 11, "examples": ["<ls>Āpast. 1,25,2. 7.</ls>", "<ls>Āpast. Śr. 9,13,1; 16,8.</ls>", "<ls>Āpast. Śr. 10,15,12; 19,14.</ls>", "<ls>Āpast. Śr. 8,11,16</ls>", "<ls>Āpast. Śr. 8,16,6</ls>", "<ls>Āpast. Śr. 11,6,3; 12,17,8; 13,8,2.</ls>"]}
+{"source_key": "ŚATR", "class": "source", "mintable": 11, "examples": ["<ls>ŚATR. 14,245.</ls>", "<ls>ŚATR. 10,127.</ls>", "<ls>ŚATR. 14,78.</ls>", "<ls>ŚATR. 14,55.</ls>", "<ls n=\"ŚATR. 14,\">10.</ls>", "<ls>ŚATR. 14,5.</ls>"]}
+{"source_key": "SOM", "class": "source", "mintable": 10, "examples": ["<ls>SOM. NALA 73.</ls>", "<ls>SOM. NALA 164.</ls>", "<ls>SOM. NALA 16.</ls>", "<ls>SOM. NALA 106.</ls>", "<ls>SOM. NALA 139.</ls>", "<ls>SOM. NALA 21.</ls>"]}
+{"source_key": "ŚĀNTIŚ", "class": "source", "mintable": 10, "examples": ["<ls>ŚĀNTIŚ. 4,17.</ls>", "<ls>ŚĀNTIŚ. 1,16.</ls>", "<ls>ŚĀNTIŚ. 3,11.</ls>", "<ls>ŚĀNTIŚ. 3,11.</ls>", "<ls>ŚĀNTIŚ. 3,11.</ls>", "<ls>ŚĀNTIŚ. 4,7.</ls>"]}
+{"source_key": "Mahāvy", "class": "source", "mintable": 9, "examples": ["<ls>Mahāvy. 81,5.</ls>", "<ls>Mahāvy. 126.</ls>", "<ls>Mahāvy. 226,109</ls>", "<ls>Mahāvy. 182,7.</ls>", "<ls>Mahāvy. 30,6. 33. 245,575.</ls>", "<ls>Mahāvy. 263,75</ls>"]}
+{"source_key": "NYĀYAS", "class": "source", "mintable": 9, "examples": ["<ls>NYĀYAS. 1,1,32.</ls>", "<ls>NYĀYAS. 1,1,3.</ls>", "<ls>NYĀYAS. 1,53.</ls>", "<ls>NYĀYAS. 2,1,15.</ls>", "<ls>NYĀYAS. 1,1,1. 2,1,64.</ls>", "<ls>NYĀYAS. 3,1,68</ls>"]}
+{"source_key": "NĪLAK", "class": "source", "mintable": 9, "examples": ["<ls>NĪLAK. 160.</ls>", "<ls>NĪLAK. 205. 225. 238. 242. 244. 170. fg.</ls>", "<ls>NĪLAK. 10. 15. 19. 63.</ls>", "<ls>NĪLAK. 21.</ls>", "<ls>NĪLAK. 22.</ls>", "<ls>NĪLAK. zu MBH. 12,342,114</ls>"]}
+{"source_key": "VP", "class": "source", "mintable": 9, "examples": ["<ls>VP. 4,2,11</ls>", "<ls>VP. 4,2,11</ls>", "<ls>VP. 4,2,11.</ls>", "<ls>VP. 182).</ls>", "<ls>VP. 14,18.</ls>", "<ls>VP. 227.</ls>"]}
+{"source_key": "ŚR", "class": "source", "mintable": 9, "examples": ["<ls>ŚR. 9,12,11</ls>", "<ls>ŚR. 79,2.</ls>", "<ls>ŚR. 15,27,14.</ls>", "<ls>ŚR. 17,17,9.</ls>", "<ls>ŚR. 4,16,10. 18,13.</ls>", "<ls>ŚR. 6,6,27. 8,10. 7,1,26.</ls>"]}
+{"source_key": "GAUT", "class": "source", "mintable": 8, "examples": ["<ls>GAUT. 15,18</ls>", "<ls>GAUT. 17,6</ls>", "<ls>GAUT. 3,19</ls>", "<ls>GAUT. 23,14</ls>", "<ls>GAUT. 3,30. 5,2. 12,27. 19,2. 22,33. 25,7. 8</ls>", "<ls>GAUT. 27,4</ls>"]}
+{"source_key": "Kauṭ", "class": "source", "mintable": 8, "examples": ["<ls>Kauṭ. 37,7.</ls>", "<ls>Kauṭ. 149,2</ls>", "<ls>Kauṭ. 94,3</ls>", "<ls>Kauṭ. 177,5.</ls>", "<ls>Kauṭ. 136,2.</ls>", "<ls>Kauṭ. 105,3</ls>"]}
+{"source_key": "Kir", "class": "source", "mintable": 8, "examples": ["<ls>Kir. IX,11.</ls>", "<ls>Kir. X,20.</ls>", "<ls>Kir. I,18.</ls>", "<ls>Kir. XVI,32</ls>", "<ls>Kir. 12,34.</ls>", "<ls>Kir. 10,1.</ls>"]}
+{"source_key": "Maitr", "class": "source", "mintable": 8, "examples": ["<ls>Maitr. S. 4,6,7</ls>", "<ls>Maitr. S. 2,5,5</ls>", "<ls>Maitr. S. 1,3,20; 9,1</ls>", "<ls>Maitr. S. 2,5,1</ls>", "<ls>Maitr. S. 2,11,1</ls>", "<ls>Maitr. S. 2,11,1</ls>"]}
+{"source_key": "RĀJAN", "class": "source", "mintable": 8, "examples": ["<ls>RĀJAN. 5,28.</ls>", "<ls>RĀJAN. 6,90.</ls>", "<ls>RĀJAN. 18,16</ls>", "<ls>RĀJAN. 6,25</ls>", "<ls>RĀJAN. 4,180</ls>", "<ls>RĀJAN. 22,17</ls>"]}
+{"source_key": "WILSON", "class": "source", "mintable": 8, "examples": ["<ls>WILSON, Sel. Works 1,169. fg.</ls>", "<ls>WILSON, SĀṂKHYAK. S. 38.</ls>", "<ls>WILSON, SĀṂKHYAK. S. 51.</ls>", "<ls>WILSON, SĀṂKHYAK. p. 42.</ls>", "<ls>WILSON, SĀṂKHYAK. S. 10.</ls>", "<ls>WILSON, SĀṂKHYAK. S. 89.</ls>"]}
+{"source_key": "ĪŚOP", "class": "source", "mintable": 8, "examples": ["<ls>ĪŚOP. 15.</ls>", "<ls>ĪŚOP. 8.</ls>", "<ls>ĪŚOP. 10.</ls>", "<ls>ĪŚOP. 8.</ls>", "<ls>ĪŚOP. 8</ls>", "<ls>ĪŚOP. 2.</ls>"]}
+{"source_key": "DAŚAR", "class": "source", "mintable": 7, "examples": ["<ls>DAŚAR. 1,10.</ls>", "<ls>DAŚAR. 2,2. 5.</ls>", "<ls>DAŚAR. 2,25. 4,62.</ls>", "<ls>DAŚAR. 1,2.</ls>", "<ls>DAŚAR. 2,21.</ls>", "<ls>DAŚAR. 2,40.</ls>"]}
+{"source_key": "GOP", "class": "source", "mintable": 7, "examples": ["<ls>GOP. BR. 1,2,2.</ls>", "<ls>GOP. BR. 2,4,11</ls>", "<ls>GOP. BR. 2,2,14</ls>", "<ls>GOP. BR. 1,2,4.</ls>", "<ls>GOP. BR. 2,1,21</ls>", "<ls>GOP. BR. 1,3,11</ls>"]}
+{"source_key": "Lot", "class": "source", "mintable": 7, "examples": ["<ls>Lot. de la b. l. 334.</ls>", "<ls>Lot. de la b. l. 389.</ls>", "<ls>Lot. de la b. l. 389.</ls>", "<ls>Lot. de la b. l. 396. Intr. 611. 612.</ls>", "<ls>Lot. de la b. l. 603.</ls>", "<ls>Lot. de la b. l. 603.</ls>"]}
+{"source_key": "MATSYOP", "class": "source", "mintable": 7, "examples": ["<ls>MATSYOP. 47.</ls>", "<ls>MATSYOP. 48.</ls>", "<ls>MATSYOP. 47.</ls>", "<ls>MATSYOP. 5.</ls>", "<ls>MATSYOP. 27.</ls>", "<ls>MATSYOP. 50.</ls>"]}
+{"source_key": "TATTVAS", "class": "source", "mintable": 7, "examples": ["<ls>TATTVAS. 46.</ls>", "<ls>TATTVAS. 14,29.</ls>", "<ls>TATTVAS. 8.</ls>", "<ls>TATTVAS. 18.</ls>", "<ls>TATTVAS. 20.</ls>", "<ls>TATTVAS. 5.</ls>"]}
+{"source_key": "Verz. d. Oxf. H", "class": "format", "mintable": 7, "examples": ["<ls>Verz. d. Oxf. H. No. 398.</ls>", "<ls>Verz. d. Oxf. H. No. 354.</ls>", "<ls n=\"Verz. d. Oxf. H.\">No. 602.</ls>", "<ls>Verz. d. Oxf. H. No. 24.</ls>", "<ls n=\"Verz. d. Oxf. H.\">No. 358.</ls>", "<ls>Verz. d. Oxf. H. No. 273.</ls>"]}
+{"source_key": "BURNOUF", "class": "source", "mintable": 6, "examples": ["<ls>BURNOUF, Intr. 589.</ls>", "<ls>BURNOUF, Intr. 593.</ls>", "<ls>BURNOUF, Intr. 46.</ls>", "<ls>BURNOUF, Intr. 168, N. 2.</ls>", "<ls>BURNOUF, Intr. 46.</ls>", "<ls>BURNOUF, Intr. 258, N. 3.</ls>"]}
+{"source_key": "BĀLAB", "class": "source", "mintable": 6, "examples": ["<ls>BĀLAB. 21.</ls>", "<ls>BĀLAB. 21.</ls>", "<ls>BĀLAB. 33.</ls>", "<ls>BĀLAB. 33</ls>", "<ls>BĀLAB. 44. 45.</ls>", "<ls>BĀLAB. 17.</ls>"]}
+{"source_key": "HIT", "class": "format", "mintable": 6, "examples": ["<ls>HIT. ed. JOHNS. 1614</ls>", "<ls>HIT. ed. JOHNS. 1706.</ls>", "<ls>HIT. ed. JOHNS. 1738.</ls>", "<ls>HIT. ed. JOHNS. 2700</ls>", "<ls>HIT. ed. JOHNS. 2147.</ls>", "<ls>HIT. ed. JOHNS. 1086.</ls>"]}
+{"source_key": "MIT", "class": "source", "mintable": 6, "examples": ["<ls>MIT. 268,2. 8.</ls>", "<ls>MIT. 260,4.</ls>", "<ls>MIT. 268,1.</ls>", "<ls>MIT. 268,13.</ls>", "<ls>MIT. 145,12. fg.</ls>", "<ls>MIT. 2,3,a,4. 5.</ls>"]}
+{"source_key": "SV", "class": "source", "mintable": 6, "examples": ["<ls>SV. II,3,1,7,2. 4,2,1,10. 5,2,3,2</ls>", "<ls>SV. 1,4,2,3,6</ls>", "<ls>SV. I,2,1,4,7.</ls>", "<ls>SV. II. 6,3,1,5</ls>", "<ls>SV. II,6,1,4,3.</ls>", "<ls>SV. I,4,2,4,3.</ls>"]}
+{"source_key": "VAITĀN", "class": "source", "mintable": 6, "examples": ["<ls>VAITĀN. 10,18</ls>", "<ls>VAITĀN. 10,18</ls>", "<ls>VAITĀN. 17,4</ls>", "<ls>VAITĀN. 7,3</ls>", "<ls>VAITĀN. 12,1</ls>", "<ls>VAITĀN. 1,11. 6,12</ls>"]}
+{"source_key": "VOP", "class": "format", "mintable": 6, "examples": ["<ls>VOP. S. 176.</ls>", "<ls>VOP. S. 1.</ls>", "<ls>VOP. 12</ls>", "<ls n=\"VOP.\">12</ls>", "<ls n=\"VOP.\">12</ls>", "<ls n=\"VOP.\">30</ls>"]}
+{"source_key": "ed", "class": "format", "mintable": 6, "examples": ["<ls>ed. Bomb. 3,19,10</ls>", "<ls>ed. Calc. 1,19.</ls>", "<ls>ed. Vardh. 4,43,30</ls>", "<ls>ed. Calc. 1829</ls>", "<ls>ed. Vardh. 7,35,13</ls>", "<ls>ed. Bomb. 7,36,13</ls>"]}
+{"source_key": "ŚULBAS", "class": "source", "mintable": 6, "examples": ["<ls>ŚULBAS. 3,72</ls>", "<ls>ŚULBAS. 3,47</ls>", "<ls>ŚULBAS. 1,52</ls>", "<ls>ŚULBAS. 3,69</ls>", "<ls>ŚULBAS. 1,58</ls>", "<ls>ŚULBAS. 1,56. 57</ls>"]}
+{"source_key": "BRĀHMAṆ", "class": "source", "mintable": 5, "examples": ["<ls>BRĀHMAṆ. 1,28.</ls>", "<ls>BRĀHMAṆ. 1,23.</ls>", "<ls>BRĀHMAṆ. 1. 25. 26.</ls>", "<ls>BRĀHMAṆ. 1,2.</ls>", "<ls>BRĀHMAṆ. 2,28.</ls>"]}
+{"source_key": "COLEBR", "class": "source", "mintable": 5, "examples": ["<ls>COLEBR. Alg. 13.</ls>", "<ls>COLEBR. Alg. 35.</ls>", "<ls>COLEBR. Misc. Ess. II,163</ls>", "<ls n=\"COLEBR. Misc. Ess.\">XV,4</ls>", "<ls>COLEBR. Misc. Ess. 1,381.</ls>"]}
+{"source_key": "CĀṆ", "class": "source", "mintable": 5, "examples": ["<ls>CĀṆ. 11.</ls>", "<ls>CĀṆ. 102. fg.</ls>", "<ls>CĀṆ. 79.</ls>", "<ls>CĀṆ. 21.</ls>", "<ls>CĀṆ. 104.</ls>"]}
+{"source_key": "DEV", "class": "source", "mintable": 5, "examples": ["<ls>DEV. 1,19.</ls>", "<ls>DEV. 9,31.</ls>", "<ls>DEV. 6,5.</ls>", "<ls>DEV. 2,2.</ls>", "<ls>DEV. 11,32.</ls>"]}
+{"source_key": "KUSUM", "class": "source", "mintable": 5, "examples": ["<ls>KUSUM. 16,18. fg.</ls>", "<ls>KUSUM. 27,12.</ls>", "<ls>KUSUM. 18,22. 23,16.</ls>", "<ls>KUSUM. 60,10.</ls>", "<ls>KUSUM. 1,9.</ls>"]}
+{"source_key": "KĀVYĀD", "class": "source", "mintable": 5, "examples": ["<ls>KĀVYĀD. 2,326.</ls>", "<ls>KĀVYĀD. 2,103.</ls>", "<ls>KĀVYĀD. 2,11.</ls>", "<ls>KĀVYĀD. 1,47.</ls>", "<ls>KĀVYĀD. 3,109.</ls>"]}
+{"source_key": "MBh", "class": "source", "mintable": 5, "examples": ["<ls>MBh. 1,71,17.</ls>", "<ls>MBh. 8,33,31.</ls>", "<ls>MBh. 5,163,4.</ls>", "<ls>MBh. 13,93,117</ls>", "<ls>MBh. 13,23,79.</ls>"]}
+{"source_key": "TARKAS", "class": "source", "mintable": 5, "examples": ["<ls>TARKAS. 41</ls>", "<ls>TARKAS. 41.</ls>", "<ls>TARKAS. 58.</ls>", "<ls>TARKAS. 32.</ls>", "<ls>TARKAS. 40. 43. 59.</ls>"]}
+{"source_key": "UPAG", "class": "source", "mintable": 5, "examples": ["<ls>UPAG. AV. 7.</ls>", "<ls>UPAG. AV. 2.</ls>", "<ls>UPAG. AV. 15.</ls>", "<ls>UPAG. AV. 5.</ls>", "<ls>UPAG. AV. 20.</ls>"]}
+{"source_key": "VYUTP", "class": "source", "mintable": 5, "examples": ["<ls>VYUTP. 101.</ls>", "<ls>VYUTP. 209.</ls>", "<ls>VYUTP. 164.</ls>", "<ls>VYUTP. 196.</ls>", "<ls>VYUTP. 73.</ls>"]}
+{"source_key": "VĀSAV", "class": "source", "mintable": 5, "examples": ["<ls>VĀSAV. 281,2</ls>", "<ls>VĀSAV. 165,4</ls>", "<ls>VĀSAV. 143,2</ls>", "<ls>VĀSAV. 263,3</ls>", "<ls>VĀSAV. 172,1</ls>"]}
+{"source_key": "YOGAŚ", "class": "source", "mintable": 5, "examples": ["<ls>YOGAŚ. 3,141.</ls>", "<ls>YOGAŚ. 3,11.</ls>", "<ls>YOGAŚ. 2,49.</ls>", "<ls>YOGAŚ. 1,35.</ls>", "<ls>YOGAŚ. 1,52.</ls>"]}
+{"source_key": "{{CARARA->CARAKA||20160103|Dhaval", "class": "source", "mintable": 5, "examples": ["<ls>{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 3,7</ls>", "<ls>{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 4,8</ls>", "<ls>{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 3,7</ls>", "<ls>{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 6,27</ls>", "<ls>{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 2,1</ls>"]}
+{"source_key": "ŚIKṢĀ", "class": "source", "mintable": 5, "examples": ["<ls>ŚIKṢĀ 35.</ls>", "<ls>ŚIKṢĀ 54.</ls>", "<ls>ŚIKṢĀ 57.</ls>", "<ls>ŚIKṢĀ 11.</ls>", "<ls>ŚIKṢĀ 50</ls>"]}
+{"source_key": "BURN", "class": "source", "mintable": 4, "examples": ["<ls>BURN. Intr. 299.</ls>", "<ls>BURN. Intr. 168, N. 2. 625.</ls>", "<ls>BURN. Intr. 268, N. 1.</ls>", "<ls>BURN. Intr. 250, N. 1</ls>"]}
+{"source_key": "DHARMAŚARM", "class": "source", "mintable": 4, "examples": ["<ls>DHARMAŚARM. 13,41</ls>", "<ls>DHARMAŚARM. 13,41</ls>", "<ls>DHARMAŚARM. 15,1</ls>", "<ls>DHARMAŚARM. 15,1</ls>"]}
+{"source_key": "GHAṬ", "class": "source", "mintable": 4, "examples": ["<ls>GHAṬ. 1.</ls>", "<ls>GHAṬ. 22.</ls>", "<ls>GHAṬ. 14.</ls>", "<ls>GHAṬ. 12.</ls>"]}
+{"source_key": "Harṣac", "class": "source", "mintable": 4, "examples": ["<ls>Harṣac. 153,15; 167,9.</ls>", "<ls>Harṣac. 243,3; 252,9.</ls>", "<ls>Harṣac. 255,16.</ls>", "<ls>Harṣac. 157,20</ls>"]}
+{"source_key": "LAGHUJ", "class": "source", "mintable": 4, "examples": ["<ls>LAGHUJ. 13,2.</ls>", "<ls>LAGHUJ. 5,6.</ls>", "<ls>LAGHUJ. 5,3.</ls>", "<ls>LAGHUJ. 1,1.</ls>"]}
+{"source_key": "MAHĀBH", "class": "source", "mintable": 4, "examples": ["<ls>MAHĀBH. 24.</ls>", "<ls>MAHĀBH. 3,28,a.</ls>", "<ls>MAHĀBH. lith. Ausg. 7,118,b.</ls>", "<ls n=\"MAHĀBH. lith. Ausg.\">119,a.</ls>"]}
+{"source_key": "MUDRĀR", "class": "source", "mintable": 4, "examples": ["<ls>MUDRĀR. 6,19. 31,3. 62,5.</ls>", "<ls>MUDRĀR. 3,9.</ls>", "<ls>MUDRĀR. 63,9 (103,2)</ls>", "<ls>MUDRĀR. 63,9 (103,2)</ls>"]}
+{"source_key": "PAÑCAD", "class": "source", "mintable": 4, "examples": ["<ls>PAÑCAD. 186,8. 237,12</ls>", "<ls>PAÑCAD. 38</ls>", "<ls>PAÑCAD. 45,2</ls>", "<ls n=\"PAÑCAD.\">34. 40</ls>"]}
+{"source_key": "R", "class": "format", "mintable": 4, "examples": ["<ls>R. ed. Ser. 1,8,19</ls>", "<ls>R. ed. SCHL. 2,101,25</ls>", "<ls>R. Gorr. 1,65,21.</ls>", "<ls>R. III, S. 465.</ls>"]}
+{"source_key": "SAṂHITOPAN", "class": "source", "mintable": 4, "examples": ["<ls>SAṂHITOPAN. 44,3</ls>", "<ls>SAṂHITOPAN. 29,5</ls>", "<ls>SAṂHITOPAN. 17,2</ls>", "<ls>SAṂHITOPAN. 8,8</ls>"]}
+{"source_key": "UTTAMAC", "class": "source", "mintable": 4, "examples": ["<ls>UTTAMAC. 107</ls>", "<ls n=\"UTTAMAC.\">285</ls>", "<ls>UTTAMAC. 107</ls>", "<ls n=\"UTTAMAC.\">285</ls>"]}
+{"source_key": "VASIṢṬHA", "class": "source", "mintable": 4, "examples": ["<ls>VASIṢṬHA 16,19</ls>", "<ls>VASIṢṬHA 11,25</ls>", "<ls>VASIṢṬHA 27,17</ls>", "<ls>VASIṢṬHA 27,17</ls>"]}
+{"source_key": "Vajracch", "class": "source", "mintable": 4, "examples": ["<ls>Vajracch. 28,14; 30,17.</ls>", "<ls>Vajracch. 32,17.</ls>", "<ls>Vajracch. 20,19.</ls>", "<ls>Vajracch. 25,</ls>"]}
+{"source_key": "VṚDDHA-CĀṆ", "class": "source", "mintable": 4, "examples": ["<ls>VṚDDHA-CĀṆ. 13,12.</ls>", "<ls>VṚDDHA-CĀṆ. 10,17.</ls>", "<ls>VṚDDHA-CĀṆ. 15,4.</ls>", "<ls>VṚDDHA-CĀṆ. 11,7.</ls>"]}
+{"source_key": "{{MBH", "class": "source", "mintable": 4, "examples": ["<ls>{{MBH. 13,61,40->MBH. 13,40,40||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}</ls>", "<ls>{{MBH. 3,40,52->MBH. 3,70,23||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}</ls>", "<ls>{{MBH. 7,62,65->MBH. 7,72,65||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}</ls>", "<ls>{{MBH. 7,211,17->MBH. 12,211,17||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}</ls>"]}
+{"source_key": "<is>Kār", "class": "source", "mintable": 3, "examples": ["<ls><is>Kār.</is> 2</ls>", "<ls><is>Kār.</is> 6</ls>", "<ls><is>Kār.</is> 6. 9</ls>"]}
+{"source_key": "BHĀG", "class": "format", "mintable": 3, "examples": ["<ls>BHĀG. 18,58.</ls>", "<ls>BHĀG. 13,23.</ls>", "<ls>BHĀG. 6,23.</ls>"]}
+{"source_key": "BĀDAR", "class": "source", "mintable": 3, "examples": ["<ls>BĀDAR. 1,232</ls>", "<ls>BĀDAR. 3,3,21</ls>", "<ls>BĀDAR. 3,1,7</ls>"]}
+{"source_key": "CHANDOM", "class": "source", "mintable": 3, "examples": ["<ls>CHANDOM. 53.</ls>", "<ls>CHANDOM. 64.</ls>", "<ls>CHANDOM. 160.</ls>"]}
+{"source_key": "GṚHYASAṂGR", "class": "source", "mintable": 3, "examples": ["<ls>GṚHYASAṂGR. 2,67.</ls>", "<ls>GṚHYASAṂGR. 1,34.</ls>", "<ls>GṚHYASAṂGR. 1,93.</ls>"]}
+{"source_key": "KAṆ", "class": "source", "mintable": 3, "examples": ["<ls>KAṆ. 3,1,1.</ls>", "<ls>KAṆ. 1,1,4.</ls>", "<ls>KAṆ. 9,1,9</ls>"]}
+{"source_key": "Kauś", "class": "source", "mintable": 3, "examples": ["<ls>Kauś. 47,53; 49,6.</ls>", "<ls>Kauś. 31,6.</ls>", "<ls>Kauś. 48,14</ls>"]}
+{"source_key": "Mat", "class": "source", "mintable": 3, "examples": ["<ls>Mat. med. 77</ls>", "<ls>Mat. med. 77</ls>", "<ls>Mat. med. 25</ls>"]}
+{"source_key": "N", "class": "format", "mintable": 3, "examples": ["<ls>N. (BOPP) 11,8.</ls>", "<ls>N. (BOPP) 5,19.</ls>", "<ls>N. (BOPP) 25,9</ls>"]}
+{"source_key": "PRATĀPAR", "class": "source", "mintable": 3, "examples": ["<ls>PRATĀPAR. 84,b,6.</ls>", "<ls>PRATĀPAR. 11,a,9.</ls>", "<ls>PRATĀPAR. 5,b,6.</ls>"]}
+{"source_key": "Prabandh", "class": "source", "mintable": 3, "examples": ["<ls>Prabandh. 281,9.</ls>", "<ls>Prabandh. 293,1</ls>", "<ls>Prabandh. 103,6.</ls>"]}
+{"source_key": "Praty", "class": "source", "mintable": 3, "examples": ["<ls>Praty. Hṛd. 29,2.</ls>", "<ls>Praty. Hṛd. 1,6; 19,5</ls>", "<ls>Praty. Hṛd. 44,10.</ls>"]}
+{"source_key": "PĀRŚVANĀTHAK", "class": "source", "mintable": 3, "examples": ["<ls>PĀRŚVANĀTHAK. 4,1</ls>", "<ls>PĀRŚVANĀTHAK. 4,18</ls>", "<ls>PĀRŚVANĀTHAK. 4,141</ls>"]}
+{"source_key": "SAṂSK", "class": "source", "mintable": 3, "examples": ["<ls>SAṂSK. K. 95,a,2</ls>", "<ls n=\"SAṂSK. K.\">129,a,7</ls>", "<ls>SAṂSK. K. 236,b,4.</ls>"]}
+{"source_key": "Sam", "class": "source", "mintable": 3, "examples": ["<ls>Sam. I,23</ls>", "<ls>Sam. VI,30</ls>", "<ls>Sam. VII,15.</ls>"]}
+{"source_key": "SĀMAV", "class": "source", "mintable": 3, "examples": ["<ls>SĀMAV. BR. 3,8,1</ls>", "<ls>SĀMAV. BR. 1,8,13. fgg.</ls>", "<ls>SĀMAV. BR. 3,4,4. fgg.</ls>"]}
+{"source_key": "SĀMAVIDH", "class": "source", "mintable": 3, "examples": ["<ls>SĀMAVIDH. BR. 2,3,2.</ls>", "<ls n=\"SĀMAVIDH. BR. 2,\">4,7.</ls>", "<ls>SĀMAVIDH. BR. 1,8,13.</ls>"]}
+{"source_key": "SĀY", "class": "source", "mintable": 3, "examples": ["<ls>SĀY. zu ṚV. 10,39,9</ls>", "<ls>SĀY. zu ṚV. 9,1,4</ls>", "<ls>SĀY. 2.</ls>"]}
+{"source_key": "UTTAR", "class": "source", "mintable": 3, "examples": ["<ls>UTTAR. 7,1</ls>", "<ls n=\"UTTAR.\">10,8</ls>", "<ls n=\"UTTAR.\">113,16 (154,3).</ls>"]}
+{"source_key": "UṆĀDIS", "class": "source", "mintable": 3, "examples": ["<ls>UṆĀDIS. 2,91</ls>", "<ls>UṆĀDIS. 1,41. 42. 54. 58. 66. 148. 149,154</ls>", "<ls>UṆĀDIS. 1,156</ls>"]}
+{"source_key": "VEṆĪS", "class": "source", "mintable": 3, "examples": ["<ls>VEṆĪS. 56,4.</ls>", "<ls>VEṆĪS. 53</ls>", "<ls>VEṆĪS. 166</ls>"]}
+{"source_key": "VIKRAMĀṄKAC", "class": "source", "mintable": 3, "examples": ["<ls>VIKRAMĀṄKAC. 2,79</ls>", "<ls>VIKRAMĀṄKAC. 17,11</ls>", "<ls>VIKRAMĀṄKAC. 16,14</ls>"]}
+{"source_key": "VĀMANA", "class": "source", "mintable": 3, "examples": ["<ls>VĀMANA 5,2,76.</ls>", "<ls>VĀMANA 1,3,28. 30.</ls>", "<ls>VĀMANA 5,2,78.</ls>"]}
+{"source_key": "VĀSAVAD", "class": "source", "mintable": 3, "examples": ["<ls>VĀSAVAD. 2,4.</ls>", "<ls>VĀSAVAD. 24.</ls>", "<ls>VĀSAVAD. 24.</ls>"]}
+{"source_key": "Vās", "class": "source", "mintable": 3, "examples": ["<ls>Vās. 122,5.</ls>", "<ls>Vās. 246,2.</ls>", "<ls>Vās. 223,2.</ls>"]}
+{"source_key": "WIND", "class": "source", "mintable": 3, "examples": ["<ls>WIND. Sancara 109.</ls>", "<ls>WIND. Sancara 114,1.</ls>", "<ls>WIND. Sancara 113,1</ls>"]}
+{"source_key": "YOGAS", "class": "source", "mintable": 3, "examples": ["<ls>YOGAS. 2,31.</ls>", "<ls>YOGAS. 2,31</ls>", "<ls>YOGAS. 1,17.</ls>"]}
+{"source_key": "Yudh", "class": "source", "mintable": 3, "examples": ["<ls>Yudh. 2,90.</ls>", "<ls>Yudh. 6,132.</ls>", "<ls>Yudh. 1,91.</ls>"]}
+{"source_key": "ĀRYABH", "class": "source", "mintable": 3, "examples": ["<ls>ĀRYABH. 4,28. 30.</ls>", "<ls>ĀRYABH. 4,25</ls>", "<ls>ĀRYABH. 3,1</ls>"]}
+{"source_key": "Śrīk", "class": "source", "mintable": 3, "examples": ["<ls>Śrīk. 18,27</ls>", "<ls>Śrīk. 25,98</ls>", "<ls>Śrīk. 14,20. 2.</ls>"]}
+{"source_key": "1", "class": "structural", "mintable": 2, "examples": ["<ls>1,111,3.</ls>", "<ls>1,12,a</ls>"]}
+{"source_key": "AGNI-P", "class": "source", "mintable": 2, "examples": ["<ls>AGNI-P. 38,28. 30</ls>", "<ls>AGNI-P. 38,27</ls>"]}
+{"source_key": "BAUDH", "class": "source", "mintable": 2, "examples": ["<ls>BAUDH. 1,6,12,3</ls>", "<ls>BAUDH. 1,12</ls>"]}
+{"source_key": "BHĀMATĪ", "class": "source", "mintable": 2, "examples": ["<ls>BHĀMATĪ 616,9</ls>", "<ls>BHĀMATĪ 616,9</ls>"]}
+{"source_key": "BR", "class": "source", "mintable": 2, "examples": ["<ls>BR.) 22.</ls>", "<ls>BR.) 4.</ls>"]}
+{"source_key": "Darpad", "class": "source", "mintable": 2, "examples": ["<ls>Darpad. III,96.</ls>", "<ls>Darpad. V,10.</ls>"]}
+{"source_key": "Dharmaśarm", "class": "source", "mintable": 2, "examples": ["<ls>Dharmaśarm. 13,41.</ls>", "<ls>Dharmaśarm. 15,1.</ls>"]}
+{"source_key": "Govardh", "class": "source", "mintable": 2, "examples": ["<ls>Govardh. 340</ls>", "<ls>Govardh. 357.</ls>"]}
+{"source_key": "HALĀY", "class": "format", "mintable": 2, "examples": ["<ls n=\"HALĀY.\">168.</ls>", "<ls>HALĀY. 118. 285. 345.</ls>"]}
+{"source_key": "HARAVIJAYA", "class": "source", "mintable": 2, "examples": ["<ls>HARAVIJAYA 6,30</ls>", "<ls>HARAVIJAYA 6,30</ls>"]}
+{"source_key": "Hem", "class": "source", "mintable": 2, "examples": ["<ls>Hem. Par. 1,380.</ls>", "<ls>Hem. Par. 1,398.</ls>"]}
+{"source_key": "KIRĀT", "class": "source", "mintable": 2, "examples": ["<ls>KIRĀT. 5,47.</ls>", "<ls>KIRĀT. 2,46.</ls>"]}
+{"source_key": "KUHNʼs", "class": "source", "mintable": 2, "examples": ["<ls>KUHNʼs Z. 27,281</ls>", "<ls>KUHNʼs Z. 27,281</ls>"]}
+{"source_key": "KUVALAY", "class": "source", "mintable": 2, "examples": ["<ls>KUVALAY. 174,a,4.</ls>", "<ls>KUVALAY. 103,a,3.</ls>"]}
+{"source_key": "Kap", "class": "source", "mintable": 2, "examples": ["<ls>Kap. 1,80.</ls>", "<ls>Kap. 2,33.</ls>"]}
+{"source_key": "Kaus", "class": "source", "mintable": 2, "examples": ["<ls>Kaus. 3.</ls>", "<ls>Kaus. 2.</ls>"]}
+{"source_key": "Kaṃs", "class": "source", "mintable": 2, "examples": ["<ls>Kaṃs. IV,17</ls>", "<ls>Kaṃs. III,22</ls>"]}
+{"source_key": "KĀTY", "class": "format", "mintable": 2, "examples": ["<ls>KĀTY. ŚR. Comm. 56,3</ls>", "<ls n=\"KĀTY. ŚR. Comm.\">57,24. 58,2.</ls>"]}
+{"source_key": "LĀTY", "class": "source", "mintable": 2, "examples": ["<ls>LĀTY. 2,11,9.</ls>", "<ls>LĀTY. 1,5,8.</ls>"]}
+{"source_key": "MADHYAM", "class": "source", "mintable": 2, "examples": ["<ls>MADHYAM. 4.</ls>", "<ls>MADHYAM. 1.</ls>"]}
+{"source_key": "MED", "class": "format", "mintable": 2, "examples": ["<ls>MED. <is>avy</is>. 54.</ls>", "<ls>MED. <is>avy</is>. 86.</ls>"]}
+{"source_key": "MĀLAT", "class": "source", "mintable": 2, "examples": ["<ls>MĀLAT. 7,9.</ls>", "<ls>MĀLAT. 128,14. fg.</ls>"]}
+{"source_key": "MĀRK", "class": "format", "mintable": 2, "examples": ["<ls>MĀRK. P. S. 660, Z. 6.</ls>", "<ls>MĀRK. P. S. 656, Z. 12.</ls>"]}
+{"source_key": "NIDĀNAS", "class": "source", "mintable": 2, "examples": ["<ls>NIDĀNAS. 6,12</ls>", "<ls>NIDĀNAS. 5,11,3</ls>"]}
+{"source_key": "Naiṣ", "class": "source", "mintable": 2, "examples": ["<ls>Naiṣ. 8,89.</ls>", "<ls>Naiṣ. 9,61.</ls>"]}
+{"source_key": "PARIBH", "class": "source", "mintable": 2, "examples": ["<ls>PARIBH. 64</ls>", "<ls>PARIBH. 58. 62. 63</ls>"]}
+{"source_key": "PAÑCAT", "class": "format", "mintable": 2, "examples": ["<ls>PAÑCAT. Bd. I, S. 581</ls>", "<ls>PAÑCAT. ed. Bomb. IV,1,9.</ls>"]}
+{"source_key": "PISCHEL", "class": "source", "mintable": 2, "examples": ["<ls>PISCHEL, Vedische Studien 72</ls>", "<ls>PISCHEL, Vedische Studien 72</ls>"]}
+{"source_key": "PRASAṄGĀBH", "class": "source", "mintable": 2, "examples": ["<ls>PRASAṄGĀBH. 12,b.</ls>", "<ls>PRASAṄGĀBH. 16,3.</ls>"]}
+{"source_key": "Pūrṇabh", "class": "source", "mintable": 2, "examples": ["<ls>Pūrṇabh. 165,2</ls>", "<ls>Pūrṇabh. 284,12.</ls>"]}
+{"source_key": "RATIM", "class": "source", "mintable": 2, "examples": ["<ls n=\"RATIM.\">16</ls>", "<ls n=\"RATIM.\">18.</ls>"]}
+{"source_key": "RATNĀV", "class": "source", "mintable": 2, "examples": ["<ls>RATNĀV. 103,16.</ls>", "<ls>RATNĀV. 65,9.</ls>"]}
+{"source_key": "SUBHĀṢITĀV", "class": "source", "mintable": 2, "examples": ["<ls>SUBHĀṢITĀV. 3075</ls>", "<ls>SUBHĀṢITĀV. 3075</ls>"]}
+{"source_key": "Sūryaś", "class": "source", "mintable": 2, "examples": ["<ls>Sūryaś. 14</ls>", "<ls>Sūryaś. 37</ls>"]}
+{"source_key": "Text", "class": "source", "mintable": 2, "examples": ["<ls>Text zu Lot. de la b. l. 189</ls>", "<ls>Text zu Lot. de la b. l. 77</ls>"]}
+{"source_key": "TĀṆḌYA-BR", "class": "source", "mintable": 2, "examples": ["<ls>TĀṆḌYA-BR. 9,1,1</ls>", "<ls>TĀṆḌYA-BR. 4,10,1</ls>"]}
+{"source_key": "VIVĀDAC", "class": "source", "mintable": 2, "examples": ["<ls>VIVĀDAC. 43,13</ls>", "<ls>VIVĀDAC. 50,15. fgg.</ls>"]}
+{"source_key": "VIṢṆUS", "class": "source", "mintable": 2, "examples": ["<ls>VIṢṆUS. 98,50</ls>", "<ls>VIṢṆUS. 5,181</ls>"]}
+{"source_key": "VĀGBHAṬĀLAṂKĀRA", "class": "source", "mintable": 2, "examples": ["<ls>VĀGBHAṬĀLAṂKĀRA 1,20</ls>", "<ls>VĀGBHAṬĀLAṂKĀRA 1,20</ls>"]}
+{"source_key": "YAJÑAD", "class": "source", "mintable": 2, "examples": ["<ls>YAJÑAD. 2,46</ls>", "<ls>YAJÑAD. 2,53.</ls>"]}
+{"source_key": "ZDMG", "class": "source", "mintable": 2, "examples": ["<ls>ZDMG 41,676.</ls>", "<ls>ZDMG 35,714</ls>"]}
+{"source_key": "Ś", "class": "source", "mintable": 2, "examples": ["<ls>Ś. 4,5,1. 5,2,20.</ls>", "<ls n=\"Ś.\">6,3,1. 2. 11,4,4,9 — 12. 12,2,3,3. 14,4,2,22. 5,1,2</ls>"]}
+{"source_key": "ŚIŚUP", "class": "source", "mintable": 2, "examples": ["<ls>ŚIŚUP. 5,40.</ls>", "<ls>ŚIŚUP. 2,42.</ls>"]}
+{"source_key": "ŚRĪKAṆṬHAC", "class": "source", "mintable": 2, "examples": ["<ls>ŚRĪKAṆṬHAC. 1,42</ls>", "<ls>ŚRĪKAṆṬHAC. 1,42</ls>"]}
+{"source_key": "Śiś", "class": "source", "mintable": 2, "examples": ["<ls>Śiś. 18,5</ls>", "<ls>Śiś. 6,65.</ls>"]}
+{"source_key": "Śāṅkh", "class": "source", "mintable": 2, "examples": ["<ls>Śāṅkh. Br. 13,9.</ls>", "<ls>Śāṅkh. Br. 23,5.</ls>"]}
+{"source_key": "15", "class": "structural", "mintable": 1, "examples": ["<ls>15.</ls>"]}
+{"source_key": "231", "class": "structural", "mintable": 1, "examples": ["<ls>231,16</ls>"]}
+{"source_key": "ARYABH", "class": "source", "mintable": 1, "examples": ["<ls>ARYABH. 2,7. 19.</ls>"]}
+{"source_key": "Amit", "class": "source", "mintable": 1, "examples": ["<ls>Amit. XIII,14.</ls>"]}
+{"source_key": "AŚNA", "class": "source", "mintable": 1, "examples": ["<ls>AŚNA S. 344)</ls>"]}
+{"source_key": "AŚOKĀVAD", "class": "source", "mintable": 1, "examples": ["<ls>AŚOKĀVAD. 32.</ls>"]}
+{"source_key": "AṢṬĀV", "class": "source", "mintable": 1, "examples": ["<ls>AṢṬĀV. 1,15.</ls>"]}
+{"source_key": "B", "class": "source", "mintable": 1, "examples": ["<ls>B. A. J. 10,127</ls>"]}
+{"source_key": "BHADRAB", "class": "source", "mintable": 1, "examples": ["<ls>BHADRAB. 1,21. 27. 31. 42. 44. 47. 50. 70. 127. 2,91. 3,59</ls>"]}
+{"source_key": "BHAR", "class": "source", "mintable": 1, "examples": ["<ls>BHAR. NĀṬYAŚ. 34,4. 5.</ls>"]}
+{"source_key": "BHOJAPRAB", "class": "source", "mintable": 1, "examples": ["<ls>BHOJAPRAB. 90,6.</ls>"]}
+{"source_key": "BHĀM", "class": "source", "mintable": 1, "examples": ["<ls>BHĀM. V. 4,19</ls>"]}
+{"source_key": "BHĀTUP", "class": "source", "mintable": 1, "examples": ["<ls>BHĀTUP. 28,59.</ls>"]}
+{"source_key": "BHĀṬṬ", "class": "source", "mintable": 1, "examples": ["<ls>BHĀṬṬ. 6,8.</ls>"]}
+{"source_key": "BRAHMOP", "class": "source", "mintable": 1, "examples": ["<ls>BRAHMOP. S. 250</ls>"]}
+{"source_key": "CANDRAKĪRTI", "class": "source", "mintable": 1, "examples": ["<ls>CANDRAKĪRTI 41.</ls>"]}
+{"source_key": "Caraka", "class": "source", "mintable": 1, "examples": ["<ls>Caraka 2,6.</ls>"]}
+{"source_key": "CĀT", "class": "source", "mintable": 1, "examples": ["<ls>CĀT. 1.</ls>"]}
+{"source_key": "DH", "class": "source", "mintable": 1, "examples": ["<ls>DH. V. 7,7</ls>"]}
+{"source_key": "DHŪRTAN", "class": "source", "mintable": 1, "examples": ["<ls>DHŪRTAN. 37</ls>"]}
+{"source_key": "Daśak", "class": "source", "mintable": 1, "examples": ["<ls>Daśak. 19,8.</ls>"]}
+{"source_key": "DĀYABH", "class": "source", "mintable": 1, "examples": ["<ls>DĀYABH. 273,1.</ls>"]}
+{"source_key": "GOLĀDHY", "class": "source", "mintable": 1, "examples": ["<ls>GOLĀDHY. BHUVANAK. 26.</ls>"]}
+{"source_key": "Gopāl", "class": "source", "mintable": 1, "examples": ["<ls>Gopāl. 118,3; 119,32.</ls>"]}
+{"source_key": "HARIR", "class": "source", "mintable": 1, "examples": ["<ls>HARIR. 589.</ls>"]}
+{"source_key": "Hariv", "class": "source", "mintable": 1, "examples": ["<ls>Hariv. 2</ls>"]}
+{"source_key": "IL", "class": "structural", "mintable": 1, "examples": ["<ls>IL. 3,221.</ls>"]}
+{"source_key": "INDṚ", "class": "source", "mintable": 1, "examples": ["<ls>INDṚ. 5,4.</ls>"]}
+{"source_key": "J", "class": "source", "mintable": 1, "examples": ["<ls>J. A. O. S. Procc. Oct. 1885, XXVI. fg.</ls>"]}
+{"source_key": "JYOT", "class": "source", "mintable": 1, "examples": ["<ls>JYOT. 27.</ls>"]}
+{"source_key": "JĀBĀLOP", "class": "source", "mintable": 1, "examples": ["<ls>JĀBĀLOP. S. 444</ls>"]}
+{"source_key": "KAT", "class": "source", "mintable": 1, "examples": ["<ls>KAT. 72,168.</ls>"]}
+{"source_key": "KATHOP", "class": "source", "mintable": 1, "examples": ["<ls>KATHOP. 5,3.</ls>"]}
+{"source_key": "KAURAP", "class": "source", "mintable": 1, "examples": ["<ls>KAURAP. 33.</ls>"]}
+{"source_key": "KUHNʼS", "class": "source", "mintable": 1, "examples": ["<ls>KUHNʼS Z. 27,216. fg.</ls>"]}
+{"source_key": "Kalāv", "class": "source", "mintable": 1, "examples": ["<ls>Kalāv. I,33</ls>"]}
+{"source_key": "Kauṣ", "class": "source", "mintable": 1, "examples": ["<ls>Kauṣ. Up. 1,2.</ls>"]}
+{"source_key": "Kaṭhop", "class": "source", "mintable": 1, "examples": ["<ls>Kaṭhop. 3,5</ls>"]}
+{"source_key": "Kuhn", "class": "source", "mintable": 1, "examples": ["<ls>Kuhn's Z. 27,28</ls>"]}
+{"source_key": "KĀTHOP", "class": "source", "mintable": 1, "examples": ["<ls>KĀTHOP. 6. 15.</ls>"]}
+{"source_key": "KĀVYA-PR", "class": "source", "mintable": 1, "examples": ["<ls>KĀVYA-PR. 185,7</ls>"]}
+{"source_key": "KĀVYAPR", "class": "source", "mintable": 1, "examples": ["<ls>KĀVYAPR. 154,10</ls>"]}
+{"source_key": "Kār", "class": "source", "mintable": 1, "examples": ["<ls>Kār. 4. 8</ls>"]}
+{"source_key": "Kāty", "class": "source", "mintable": 1, "examples": ["<ls>Kāty. Śr. 20,3,20.</ls>"]}
+{"source_key": "Kāṭh", "class": "source", "mintable": 1, "examples": ["<ls>Kāṭh. 9,8</ls>"]}
+{"source_key": "KṚṢIS", "class": "source", "mintable": 1, "examples": ["<ls>KṚṢIS. 7,26.</ls>"]}
+{"source_key": "KṚṢṆAJ", "class": "source", "mintable": 1, "examples": ["<ls>KṚṢṆAJ. 279. 289.</ls>"]}
+{"source_key": "KṢURIKOP", "class": "source", "mintable": 1, "examples": ["<ls>KṢURIKOP. 14. 19</ls>"]}
+{"source_key": "LASS", "class": "source", "mintable": 1, "examples": ["<ls>LASS. 23.</ls>"]}
+{"source_key": "LASSEN", "class": "source", "mintable": 1, "examples": ["<ls>LASSEN, Institutt. 7.</ls>"]}
+{"source_key": "M", "class": "format", "mintable": 1, "examples": ["<ls>M. MÜLLER, Transl. 1,180.</ls>"]}
+{"source_key": "MAHĀN", "class": "source", "mintable": 1, "examples": ["<ls>MAHĀN. 552.</ls>"]}
+{"source_key": "MAHĀVASTU", "class": "source", "mintable": 1, "examples": ["<ls>MAHĀVASTU 56,2</ls>"]}
+{"source_key": "MANTRABR", "class": "source", "mintable": 1, "examples": ["<ls>MANTRABR. 1,2,5</ls>"]}
+{"source_key": "MBH", "class": "format", "mintable": 1, "examples": ["<ls n=\"MBH.\">2.</ls>"]}
+{"source_key": "MUDHĀR", "class": "source", "mintable": 1, "examples": ["<ls>MUDHĀR. 24,5. 25,8.</ls>"]}
+{"source_key": "Med", "class": "source", "mintable": 1, "examples": ["<ls>Med. 1,57</ls>"]}
+{"source_key": "Mudrār", "class": "source", "mintable": 1, "examples": ["<ls>Mudrār. 63,9</ls>"]}
+{"source_key": "MĀṆḌ", "class": "source", "mintable": 1, "examples": ["<ls>MĀṆḌ. UP. 12.</ls>"]}
+{"source_key": "NIDĀNA", "class": "source", "mintable": 1, "examples": ["<ls>NIDĀNA 1,6,5</ls>"]}
+{"source_key": "NIRṆAYAS", "class": "source", "mintable": 1, "examples": ["<ls>NIRṆAYAS. 30,a,6. fgg.</ls>"]}
+{"source_key": "NYĀYAM", "class": "source", "mintable": 1, "examples": ["<ls>NYĀYAM. 1,1,26</ls>"]}
+{"source_key": "NĀGĀN", "class": "source", "mintable": 1, "examples": ["<ls>NĀGĀN. 19,10.</ls>"]}
+{"source_key": "NĀṬYAŚ", "class": "source", "mintable": 1, "examples": ["<ls>NĀṬYAŚ. 18,73.</ls>"]}
+{"source_key": "P", "class": "format", "mintable": 1, "examples": ["<ls>P. Einl. 2.</ls>"]}
+{"source_key": "PRATYABDAŚ", "class": "source", "mintable": 1, "examples": ["<ls>PRATYABDAŚ. 22.</ls>"]}
+{"source_key": "PRB", "class": "source", "mintable": 1, "examples": ["<ls>PRB. 60,2.</ls>"]}
+{"source_key": "Par", "class": "source", "mintable": 1, "examples": ["<ls>Par. Sār. 27,5.</ls>"]}
+{"source_key": "Pischel", "class": "source", "mintable": 1, "examples": ["<ls>Pischel, Ved. Stud. I,72.</ls>"]}
+{"source_key": "RATNAM", "class": "source", "mintable": 1, "examples": ["<ls>RATNAM. 104</ls>"]}
+{"source_key": "RĀJA", "class": "source", "mintable": 1, "examples": ["<ls>RĀJA. 2,28.</ls>"]}
+{"source_key": "SMARADĪP", "class": "source", "mintable": 1, "examples": ["<ls n=\"SMARADĪP.\">36</ls>"]}
+{"source_key": "SPAṢṬĀDH", "class": "source", "mintable": 1, "examples": ["<ls>SPAṢṬĀDH. 4.</ls>"]}
+{"source_key": "SUPARṆ", "class": "source", "mintable": 1, "examples": ["<ls>SUPARṆ. 2,1</ls>"]}
+{"source_key": "Samay", "class": "source", "mintable": 1, "examples": ["<ls>Samay. V,14.</ls>"]}
+{"source_key": "Sizzungsberichte", "class": "source", "mintable": 1, "examples": ["<ls>Sizzungsberichte der phil.-hist. Klasse der Wiener Ak. 106,483</ls>"]}
+{"source_key": "Spruch", "class": "source", "mintable": 1, "examples": ["<ls>Spruch 5042.</ls>"]}
+{"source_key": "Suśr", "class": "source", "mintable": 1, "examples": ["<ls n=\"Suśr.\">2,488,21.</ls>"]}
+{"source_key": "SĀṂKHYAPR", "class": "source", "mintable": 1, "examples": ["<ls>SĀṂKHYAPR. S. 7, Z. 18.</ls>"]}
+{"source_key": "TARKASAM̃GR", "class": "source", "mintable": 1, "examples": ["<ls>TARKASAM̃GR. 58.</ls>"]}
+{"source_key": "TRIPR", "class": "source", "mintable": 1, "examples": ["<ls>TRIPR. 62.</ls>"]}
+{"source_key": "TĀRAN", "class": "source", "mintable": 1, "examples": ["<ls>TĀRAN. 4. 24.</ls>"]}
+{"source_key": "UP", "class": "source", "mintable": 1, "examples": ["<ls>UP. 11,7,2,8.</ls>"]}
+{"source_key": "UPAK", "class": "source", "mintable": 1, "examples": ["<ls>UPAK. 73</ls>"]}
+{"source_key": "UPAL", "class": "source", "mintable": 1, "examples": ["<ls>UPAL. 9,15.</ls>"]}
+{"source_key": "UTPALA", "class": "source", "mintable": 1, "examples": ["<ls>UTPALA zu VARĀH. BṚH. 26 (24),4</ls>"]}
+{"source_key": "Uttamac", "class": "source", "mintable": 1, "examples": ["<ls>Uttamac. 107. 285.</ls>"]}
+{"source_key": "Uttarar", "class": "source", "mintable": 1, "examples": ["<ls>Uttarar. V,31</ls>"]}
+{"source_key": "VARARUCI", "class": "source", "mintable": 1, "examples": ["<ls>VARARUCI 10,2</ls>"]}
+{"source_key": "VIKR", "class": "format", "mintable": 1, "examples": ["<ls>VIKR. drāv. 654,24</ls>"]}
+{"source_key": "Vaij", "class": "source", "mintable": 1, "examples": ["<ls>Vaij. 86,49</ls>"]}
+{"source_key": "Verz", "class": "source", "mintable": 1, "examples": ["<ls>Verz. d. B. H. 278, Śl. 42.</ls>"]}
+{"source_key": "Viṣṇubh", "class": "source", "mintable": 1, "examples": ["<ls>Viṣṇubh. III,31</ls>"]}
+{"source_key": "VĀGBH", "class": "source", "mintable": 1, "examples": ["<ls>VĀGBH. 26,9.</ls>"]}
+{"source_key": "VṚDDHACĀṆ", "class": "source", "mintable": 1, "examples": ["<ls>VṚDDHACĀṆ. 13,14.</ls>"]}
+{"source_key": "WINDISCHMANN", "class": "source", "mintable": 1, "examples": ["<ls>WINDISCHMANN, Sancara 94.</ls>"]}
+{"source_key": "WISE", "class": "source", "mintable": 1, "examples": ["<ls>WISE 293.</ls>"]}
+{"source_key": "YAJÑADATTAV", "class": "source", "mintable": 1, "examples": ["<ls>YAJÑADATTAV. 2,54.</ls>"]}
+{"source_key": "YANTRĀDHY", "class": "source", "mintable": 1, "examples": ["<ls>YANTRĀDHY. 9.</ls>"]}
+{"source_key": "YOGAYĀTRĀ", "class": "source", "mintable": 1, "examples": ["<ls>YOGAYĀTRĀ 2,22</ls>"]}
+{"source_key": "YĀJN", "class": "source", "mintable": 1, "examples": ["<ls>YĀJN. 1,162. 2,32.</ls>"]}
+{"source_key": "Yājñ", "class": "source", "mintable": 1, "examples": ["<ls>Yājñ. 2,266.</ls>"]}
+{"source_key": "ebend", "class": "source", "mintable": 1, "examples": ["<ls>ebend. 407. 410</ls>"]}
+{"source_key": "{{MEGH", "class": "source", "mintable": 1, "examples": ["<ls>{{MEGH. 28->MEGH. 29||20250521|Jim Funderburk|https://github.com/sanskrit-lexicon/csl-orig/issues/2758|}}</ls>"]}
+{"source_key": "{{ŚR", "class": "source", "mintable": 1, "examples": ["<ls>{{ŚR.1,8,4.9,2,4.->MĀN.ŚR.1,8,4.9,2,4.||20160118|Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/237|inferred}}</ls>"]}
+{"source_key": "{{‹ed", "class": "source", "mintable": 1, "examples": ["<ls>{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8</ls>"]}
