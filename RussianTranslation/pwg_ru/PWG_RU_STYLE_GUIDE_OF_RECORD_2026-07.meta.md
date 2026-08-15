@@ -1,6 +1,6 @@
 # PWG_RU_STYLE_GUIDE_OF_RECORD_2026-07.md — metadoc
 
-_Created: 31-07-2026 · Last updated: 31-07-2026_
+_Created: 31-07-2026 · Last updated: 15-08-2026_
 
 ## Purpose
 
@@ -41,10 +41,17 @@ the H1302/H1651/H1682/H1702 reports, H858,
 
 1. After the `h1303_abbrev` v2 vote lands: append the ratified per-token outcome rows
    (§3.5 → ✅), graduate CONTRADICTIONS §4 to a `D##`.
-2. After the `h1306_style` vote lands: flip §4/§5.2/§6 to their voted variants.
+2. ~~After the `h1306_style` vote lands: flip §4/§5.2/§6 to their voted variants.~~ **Done
+   15-08-2026 under [H2804](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2804-Opus_SanskritLexicography_h1306-style-vote-apply_15.08.26.md).**
+   Successor items: (2a) deploy §6.1's graphic `॰-` / `-॰` notation once
+   [H2805](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2805-Fable_SanskritLexicography_h1306-q3-comp-graphic-revote_15.08.26.md)
+   settles layer + font availability; (2b) close §5.3 with the Apresyan diachrony;
+   (2c) bring prompt line ~368 of `1_perevod.txt` into line with the now-ratified §4.1.
 3. Mint the in-`ls` siglum RU-display handoff promised in RU_STYLE_MECHANICAL.md and
    record its outcome in §8.1.
 4. EN-side parity measurement (doublets) per LANG_PARITY once the EN store is accessible.
+5. Sweep the guide's own prose for «стор» per the new §5.4(г) — the word is used throughout
+   and MG ruled it is English in Cyrillic dress; human-facing text should say «словник».
 
 ## Limitations
 
@@ -57,5 +64,6 @@ the H1302/H1651/H1682/H1702 reports, H858,
 | Date | Change | Model |
 |---|---|---|
 | 31-07-2026 | Created under H1859 | Fable 5 (`claude-fable-5`) |
+| 15-08-2026 | H2804: `h1306_style` vote applied — §4 and §5.2 🕓 → ✅ (B1, A1); §6 all three options rejected, MG's graphic `॰-` / `-॰` recorded 🔶; new §5.3 (Apresyan diachrony open) and §5.4 (sheet-authoring method rules) | Opus 5 (`claude-opus-5`) |
 
 _Dr. Mārcis Gasūns_
