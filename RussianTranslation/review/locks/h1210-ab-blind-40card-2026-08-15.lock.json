@@ -1,0 +1,334 @@
+{
+ "schema": "review-lock/v1",
+ "sheet_id": "h1210-ab-blind-40card-2026-08-15",
+ "content_hash": "sha256:88dd2fda7dc7984c0ba3f76581d3de2451c0435b97a4e2dc4a434657332ad929",
+ "generated": "15-08-2026",
+ "gate": "H1210-AB",
+ "n_items": 40,
+ "blinding": "arm labels appear ONLY in this lock file; the HTML carries none",
+ "per_arm": 20,
+ "items": [
+  {
+   "item_id": "h1210-ab-001",
+   "key1": "s_ari",
+   "arm": "A",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-002",
+   "key1": "arvant~~h0_zz_pw",
+   "arm": "A",
+   "stratum": "S3",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-003",
+   "key1": "SAluqa",
+   "arm": "B",
+   "stratum": "S?",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-004",
+   "key1": "a_smagar_baja",
+   "arm": "B",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-005",
+   "key1": "mlA",
+   "arm": "A",
+   "stratum": "S?",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-006",
+   "key1": "lipikara",
+   "arm": "A",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-007",
+   "key1": "vi_svasfj",
+   "arm": "A",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-008",
+   "key1": "viSvasfj",
+   "arm": "B",
+   "stratum": "S?",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-009",
+   "key1": "tubar_i",
+   "arm": "A",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-010",
+   "key1": "t_araja",
+   "arm": "B",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-011",
+   "key1": "pari_b_ava",
+   "arm": "A",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-012",
+   "key1": "lel_ay",
+   "arm": "B",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-013",
+   "key1": "dar_imu_ka",
+   "arm": "A",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-014",
+   "key1": "purastAt",
+   "arm": "A",
+   "stratum": "S?",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-015",
+   "key1": "s_ari",
+   "arm": "B",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-016",
+   "key1": "zazwivrata",
+   "arm": "A",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-017",
+   "key1": "vi_sa",
+   "arm": "B",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-018",
+   "key1": "upakalpa",
+   "arm": "B",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-019",
+   "key1": "lel_ay",
+   "arm": "A",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-020",
+   "key1": "ya_tepsita",
+   "arm": "A",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-021",
+   "key1": "dar_imu_ka",
+   "arm": "B",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-022",
+   "key1": "divA",
+   "arm": "B",
+   "stratum": "S?",
+   "class": "refused-but-audit-clean"
+  },
+  {
+   "item_id": "h1210-ab-023",
+   "key1": "_ba_yj",
+   "arm": "A",
+   "stratum": "S2",
+   "class": "refused-but-audit-clean"
+  },
+  {
+   "item_id": "h1210-ab-024",
+   "key1": "kAntapAzARa",
+   "arm": "A",
+   "stratum": "S?",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-025",
+   "key1": "hanta",
+   "arm": "B",
+   "stratum": "S2",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-026",
+   "key1": "div_a",
+   "arm": "A",
+   "stratum": "S5",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-027",
+   "key1": "t_araja",
+   "arm": "A",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-028",
+   "key1": "kAntapAzARa",
+   "arm": "B",
+   "stratum": "S?",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-029",
+   "key1": "par_rin",
+   "arm": "B",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-030",
+   "key1": "par_rin",
+   "arm": "A",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-031",
+   "key1": "kramu",
+   "arm": "A",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-032",
+   "key1": "as_a_dya~~h0_zz_pw",
+   "arm": "B",
+   "stratum": "S3",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-033",
+   "key1": "agnitIrTa",
+   "arm": "B",
+   "stratum": "S?",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-034",
+   "key1": "sAptamika",
+   "arm": "B",
+   "stratum": "S?",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-035",
+   "key1": "sa_msargin",
+   "arm": "B",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-036",
+   "key1": "tubar_i",
+   "arm": "B",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-037",
+   "key1": "zazwivrata",
+   "arm": "B",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-038",
+   "key1": "kr_urar_avin",
+   "arm": "B",
+   "stratum": "S1",
+   "class": "shippable"
+  },
+  {
+   "item_id": "h1210-ab-039",
+   "key1": "amfta",
+   "arm": "A",
+   "stratum": "S2",
+   "class": "refused-but-audit-clean"
+  },
+  {
+   "item_id": "h1210-ab-040",
+   "key1": "as_a_dya~~h0_zz_pw",
+   "arm": "A",
+   "stratum": "S3",
+   "class": "refused-but-audit-clean"
+  }
+ ],
+ "ids": [
+  "h1210-ab-001",
+  "h1210-ab-002",
+  "h1210-ab-003",
+  "h1210-ab-004",
+  "h1210-ab-005",
+  "h1210-ab-006",
+  "h1210-ab-007",
+  "h1210-ab-008",
+  "h1210-ab-009",
+  "h1210-ab-010",
+  "h1210-ab-011",
+  "h1210-ab-012",
+  "h1210-ab-013",
+  "h1210-ab-014",
+  "h1210-ab-015",
+  "h1210-ab-016",
+  "h1210-ab-017",
+  "h1210-ab-018",
+  "h1210-ab-019",
+  "h1210-ab-020",
+  "h1210-ab-021",
+  "h1210-ab-022",
+  "h1210-ab-023",
+  "h1210-ab-024",
+  "h1210-ab-025",
+  "h1210-ab-026",
+  "h1210-ab-027",
+  "h1210-ab-028",
+  "h1210-ab-029",
+  "h1210-ab-030",
+  "h1210-ab-031",
+  "h1210-ab-032",
+  "h1210-ab-033",
+  "h1210-ab-034",
+  "h1210-ab-035",
+  "h1210-ab-036",
+  "h1210-ab-037",
+  "h1210-ab-038",
+  "h1210-ab-039",
+  "h1210-ab-040"
+ ]
+}
