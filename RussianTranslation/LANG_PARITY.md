@@ -595,8 +595,8 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pwg_mask.py": "f4ea220f7dd4c503adf3c36f7c7b345785982a1f96aa5d8c65fa55f7a3c5a90e",
       "src/make_edition_cut.py": "2948897974d52ff307eeef35f0e69456c94210ec85fd225241f586f8426cad70",
-      "src/preflight_remaining_gates.py": "00386c837b97986c9702abfceed9c29534736c3df3063af202ddfaae6b078b8f",
-      "src/release_readiness.py": "db38a870bbc8b5dbe694e706e4a7b9089ba41211a3881ad9a1bd4eb02950c8a9",
+      "src/preflight_remaining_gates.py": "bdfa1e0a4ddf48833369c9599334953f67447db74175b5c2d443d6f169144fdd",
+      "src/release_readiness.py": "9fb2efc1125ec515f8746dfbdd0e73e9f90e98a34fef4a813c5c1314a974cfa3",
       "save_and_audit.py": "e1d7a3b6c5a8c47dbc414dbcf991e9ead82b76a013e4624cffe76066e576c8b6",
       "src/pilot/audit_window.py": "6924329df761ca120a0f58c81403936913f7675fdcd086eefaee3d10e6de3fef",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
@@ -1371,7 +1371,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/h1210/pack_chunks.py": "7f33369396084a3fb474481c2f81830e17a0aea1220164acf741f207c56b570b",
       "src/pilot/h1210/det_gate.py": "fffc2bbe2b73e36d311b4e0639b6f31f122a14355e2e846343af95d8a346d4be",
-      "src/pilot/h1210/deepseek_arm.py": "dcfcd2f2172ceccf9b7dbb0e1b2904c9886de13f2488644e1e20874ae3a2aef2",
+      "src/pilot/h1210/deepseek_arm.py": "410ecd78226206bbe56b9d0554a2f29a75e7f7b38e448a5b46257fbdc94c5a31",
       "src/pilot/h1210/arm_b_control.py": "f226aec3c0d8cb58f1270281d5fa030ca8cb1f581d655bb913bc7adebf9d5af7",
       "src/pilot/h1210/control_template.js": "e337895139f9bcea3efa36cb8caefbb89b4143d7ff4fb00886b58ac6e3eb726a",
       "src/pilot/h1210/wf_template_ab.js": "3deadfa110c0649e8e25bdd315d24e100df22442fd0c9d06b78df4eb76790a19",
@@ -2090,7 +2090,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H2684 Track B is the Wave-1 German to Russian fragment TM route. The runner is opt-in via --route grok-4.6 and does not change default headless or EN production routes. An EN fragment wave needs its own prompt, residue gate, and independent judge packet; it is not a silent same-session port.",
     "tracking": "H2684",
     "verified_sha256": {
-      "src/pwg_tm_generate.py": "4e4d7846a09b02bd73ccb12413f79aa0bb9b77fc66d60f88f5fa658a8afa9d03",
+      "src/pwg_tm_generate.py": "8f6b00da6ebd05d69543ab3c4815625bb7894741ae76512df21e30a42d0ecb89",
       "src/pwg_tm_gates.py": "bba9ba290b16220a64a59602889cda105f29704fde3c35191408bcd147ae7331",
       "src/pwg_tm_quality.py": "5e518d037dcf4ca15b0d23bbadafbe3c315c14b2cbbb68151d86cc46280b3c99"
     }

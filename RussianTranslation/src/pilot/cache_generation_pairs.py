@@ -674,7 +674,7 @@ def main(argv=None):
     compiled, extra, prefixes = compile_cohort(cohort, freeze_body)
     ordered, slots = expand_pairs(compiled)
     expand_and_check_pairs(slots)
-    source_commit = freeze.git_commit() or baseline.get('source_commit')
+    source_commit = freeze.git_commit() or freeze_body.get('source_commit')
     runner = PairRunner(args.run_dir, compiled, slots, cohort, freeze_body)
     if not os.path.isfile(os.path.join(args.run_dir, 'run.manifest.json')):
         runner.seal(source_commit)
