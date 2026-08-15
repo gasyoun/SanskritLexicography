@@ -703,15 +703,65 @@ def href_ramayana_gorresio(data1: str):
 
 
 def href_mahabharata(data1: str, pfx: str):
-    """LsService.hrefMahabharata."""
-    m = re.search(r'([0-9]+)[ ,]+([0-9]+)[ ,]+([0-9]+)', data1)
-    if m is None:
-        return None
-    adhyaya, bhaga, shloka = m.group(1), m.group(2), m.group(3)
-    if pfx == 'MBHC':
-        return 'https://sanskrit-lexicon-scans.github.io/mahabharata/calc/?%s,%s,%s' % (adhyaya, bhaga, shloka)
-    elif pfx == 'MBHB':
-        return 'https://sanskrit-lexicon-scans.github.io/mahabharata/bomb/?%s,%s,%s' % (adhyaya, bhaga, shloka)
+    """LsService.hrefMahabharata — plus two DELIBERATE divergences from the Dart
+    original, both verified against the live scan hosts (H2853, 15-08-2026).
+
+    **Divergence 1 — the unreachable ``'MBH.'`` branch.** ``_CODE_TO_PFX`` maps
+    the mixed-case ``'MBh.'`` (Monier-Williams' abbreviation, which Schmidt's
+    *Nachträge* carry into PWG data) to the prefix value ``'MBH.'`` — but upstream
+    dispatches only ``MBHC``/``MBHB`` here, so that prefix reached this function
+    and fell straight out of the bottom as ``None``. Every ``MBh.`` citation was
+    therefore dark, while the uppercase ``MBH.`` form resolved fine through the
+    *pattern* list. Upstream csl-app has the identical dead branch
+    ([ls_service.dart](https://github.com/sanskrit-lexicon/csl-app/blob/main/lib/core/ls_service.dart)
+    ``hrefMahabharata``); this is an upstream bug, not a porting slip, and is
+    worth reporting there.
+
+    The edition is chosen by **arity**, exactly as the pattern list already does
+    for the uppercase form — 3 coordinates = Bombay (parvan.adhyāya.śloka),
+    2 = Calcutta (parvan, continuous śloka). So ``MBh. 1,71,17`` now lands on the
+    same page ``MBH. 1,71,17`` already did, rather than on a guess. Note this is
+    *not* a claim that the two numbering schemes are interconvertible — they are
+    not (see the Calcutta↔critical concordance GAP in
+    [`build_mbh_concordance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_mbh_concordance.py)) —
+    only that a 3-part coordinate is by construction a Bombay-style one.
+
+    **Divergence 2 — the MBHC/MBHB hosts are dead.** ``mahabharata/calc/`` and
+    ``mahabharata/bomb/`` both **404**: those scan repos were renamed to
+    ``mbhcalc`` / ``mbhbomb`` and only the pattern list was updated. Upstream
+    still emits the old paths. Corrected here to the hosts the pattern list uses,
+    whose *paths* are verified live (404 vs 200) — note a GitHub Pages app answers
+    200 to any query string, so the arg **shape** cannot be checked over HTTP and
+    is instead taken from the pattern list, which is what produces every working
+    Mahābhārata link in the store today. No citation currently reaches this
+    branch, so this fixes a latent 404 emitter, not a live break.
+
+    A 3-coordinate citation explicitly marked Calcutta is malformed by
+    construction (Calcutta numbers continuously within a parvan, so it has two
+    coordinates) and yields ``None`` rather than a guessed URL. That guard is
+    load-bearing rather than theoretical: ``extract_first_key`` never returns the
+    ``'MBh. (ed. Calc.)'`` / ``'MBh. (ed. Bomb.)'`` keys — it cuts at the first
+    token — so those two ``_CODE_TO_PFX`` entries are themselves unreachable
+    upstream, and such a citation arrives here as a plain ``'MBH.'``. Without the
+    guard, arity alone would hand an explicitly-Calcutta reference a Bombay link.
+    Making those keys reachable means changing key extraction for every
+    dictionary, which no data here exercises; it is left as a separate upstream
+    defect rather than fixed blind.
+    """
+    explicit_calc = re.search(r'ed\.\s*Calc', data1) is not None
+    explicit_bomb = re.search(r'ed\.\s*Bomb', data1) is not None
+
+    coords = re.search(r'([0-9]+)[ ,]+([0-9]+)[ ,]+([0-9]+)', data1)
+    if coords is not None and pfx in ('MBH.', 'MBH', 'MBHB'):
+        if explicit_calc:
+            return None            # 3 coordinates cannot be Calcutta numbering
+        return ('https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?%s,%s,%s'
+                % (coords.group(1), coords.group(2), coords.group(3)))
+    if coords is None:
+        pair = re.search(r'([0-9]+)[ ,]+([0-9]+)', data1)
+        if pair is not None and pfx in ('MBH.', 'MBH', 'MBHC') and not explicit_bomb:
+            return ('https://sanskrit-lexicon-scans.github.io/mbhcalc?%s.%s'
+                    % (pair.group(1), pair.group(2)))
     return None
 
 

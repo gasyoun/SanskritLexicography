@@ -655,7 +655,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H321 (code review 2026-07-04 item #5). ls_resolver resolves an <ls> citation to a scan/hymns URL independent of the translation language (it keys on the citation abbreviation + numbers, never on RU/EN prose), so both language editions' link-targets share it. The anchored _is_rv_prefix and the _warn_swallowed exception surfacing are pure link-resolution correctness, no lang branch. Pinned by test_ls_resolver_rv_av_anchored. H2077 (#947, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. The drift records WHY a card came back partial and consumes it in the audit's transient-vs-defect split: `headless_worker` stamps `partial_cause`/`partial_cause_infra` on a partial card from its own fragments' recorded CALL-failure reasons (timeout / budget stop / quota), and `audit_window.classify_harness_requeues` subtracts explicitly-infrastructure partials from the defect lane. Language-independent by construction: the cause is derived from how the CALL died, never from a target-language field, and a dead call kills the RU and EN lanes identically. Content classification is unchanged — the exemption requires an explicitly recorded infrastructure cause, `fidelity_nulls` still overrides it, and a partial card with a content cause or no recorded cause behaves exactly as before. H2095 (#946/#949/#950/#956, 01-08-2026, Opus 5 `claude-opus-5[1m]`): re-derived, SHARED stands. Four residual H2056 issues: the probe row now records the ceiling that judged it (#946), `summary()` publishes `cost_evaluable`/`unevaluable_calls` beside `budget_spent` (#949), the cost-gate calibration question was settled from the committed record with NO constant moved (#950), and the EN auditor now exempts an infrastructure-partial card from its ABSENCE-bearing HARD flags — the EN twin of #947 (#956). All four read how a CALL died or what a gate measured, never a target-language field. #956 is the parity-relevant one and it CLOSES a gap rather than opening one: the RU lane got that exemption in H2077 and the EN lane now has its own, at finer per-flag granularity (content-bearing ANCHOR/DUP/SENSE-DUPE flags stay defects on a partial card, mirroring how `fidelity_nulls` still overrides on RU). H2095 merge re-stamp (01-08-2026, Opus 5 `claude-opus-5[1m]`): hash-only. This entry's verdict was NOT re-derived here and the drift is NOT H2095's — it comes from merging origin/master's H2089 (`silent-empty workflow_payload + promote merge guard`), which touched `window_selftest.py` / `promote_final_cards.py` / `workflow_payload.py`. Re-stamped so the ledger is consistent in the merge commit; the substantive verdict remains whatever H2089's own author established.",
     "tracking": "",
     "verified_sha256": {
-      "src/ls_resolver.py": "d7c8da35c6a420b9f9431dd1cb672ed12431e2b27830b9b560a60cff42509eec",
+      "src/ls_resolver.py": "c122801b11d555cc0fe5243424ca0fe2eca38be40f62437602cb78dd2eb1c538",
       "src/pilot/window_selftest.py": "627d289821874d5fc7d056921760ee45ef5ec58195557f298b069c26c9664754"
     }
   },
@@ -690,7 +690,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1308 (19-07-2026, Opus 4.8 claude-opus-4-8). government_index() reads s['de_raw'] (the German SOURCE sense text, identical across the RU and EN editions) via the shared extract_government() — the same authoritative reference set ab_frequency()/ls_stats() use — and marker spans render through the shared _render() layer. No RU/EN branch anywhere in the government surface; a future EN site build would show the identical government index. Language-neutral analysis layer, exactly like the H775 government sidecar precedent. Pinned by build_article_site.py --selftest (selftest_government).",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/build_article_site.py": "ea818f1f80d1e520b758da9086527ce3a4181f0ccdfb458acfdbea36aeac1fcc"
+      "src/pilot/build_article_site.py": "c3c86c8c8f5fe0737a018897cd16ebc722e04a8cc51c72aefab62025e406cb6d"
     }
   },
   {
@@ -1402,9 +1402,9 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1307 (19-07-2026). The enrichment is render-time and keys only on the citation abbreviation + numbers (P. adhyaya/pada/sutra, Spr. (II) saying number) — never on RU/EN translation prose — so both language editions' <ls> link-targets and tooltips share it with no --lang branch. The Spr. (II) saying text is identical across editions. Pinned by src/pilot/ls_enrichment_selftest.py. H2005 (01-08-2026, Grok 4.5): `_ls_visible_display` adds RU-only *visible* substitution for `ed. Bomb.` → «Бомбейская ред.»; href/title/`source_key` still use stored Latin (SHARED resolution path). Display divergence is intentional and covered by the sibling entry `ed_bomb_ru_display_h2005`. Re-stamped hash after that edit; SHARED for link enrichment stands.",
     "tracking": "",
     "verified_sha256": {
-      "src/ls_resolver.py": "d7c8da35c6a420b9f9431dd1cb672ed12431e2b27830b9b560a60cff42509eec",
+      "src/ls_resolver.py": "c122801b11d555cc0fe5243424ca0fe2eca38be40f62437602cb78dd2eb1c538",
       "src/spr_fulltext.py": "446fe8ce8146cfdda3a0cd0b2e6f62c3b76e08cfb872823116549ed3992fe0d5",
-      "src/pilot/build_article_site.py": "ea818f1f80d1e520b758da9086527ce3a4181f0ccdfb458acfdbea36aeac1fcc"
+      "src/pilot/build_article_site.py": "c3c86c8c8f5fe0737a018897cd16ebc722e04a8cc51c72aefab62025e406cb6d"
     }
   },
   {
@@ -1421,7 +1421,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H2005 (01-08-2026, Grok 4.5 `grok-4.5`, Sonnet-tier handoff override). MG R4 (H1305) ruled `ed. Bomb.` → «Бомбейская ред.»; store rewrite of in-ls text would break pwg_sources. EN has no equivalent Cyrillic display form. Pinned by ls_enrichment_selftest.test_h2005_ed_bomb_ru_display_not_resolve.",
     "tracking": "H2005",
     "verified_sha256": {
-      "src/pilot/build_article_site.py": "ea818f1f80d1e520b758da9086527ce3a4181f0ccdfb458acfdbea36aeac1fcc",
+      "src/pilot/build_article_site.py": "c3c86c8c8f5fe0737a018897cd16ebc722e04a8cc51c72aefab62025e406cb6d",
       "src/pilot/ls_enrichment_selftest.py": "f60dc7df6005ecef81e855f83b431bb0c8397b456211b0ffcdc0f4e646f15df6"
     }
   },
