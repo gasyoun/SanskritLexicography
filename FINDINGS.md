@@ -5973,11 +5973,11 @@ which has sat 🟡 QUEUED since 12-07-2026 with four approved corrections
 
 | Where | What it is | Correctable? |
 |---|---|---|
-| [`CORRECTIONS/Kochergina-1987_29007.txt`](https://github.com/gasyoun/CORRECTIONS/blob/main/Kochergina-1987_29007.txt) | a 29 006-line letter-spaced **headword list** | no — a word list, no entry bodies, no sense structure |
+| [`CORRECTIONS/Kochergina-1987_29007.txt`](https://github.com/sanskrit-lexicon/CORRECTIONS/blob/main/Kochergina-1987_29007.txt) | a 29 006-line letter-spaced **headword list** | no — a word list, no entry bodies, no sense structure |
 | `SanskritGrammar/KocherginaUchebnik_1998/` | the 1998 **textbook** (methodichka, exercise coverage, gradation metalanguage) | no — pedagogy, not the 1987 dictionary |
 | the BLI B1 gold set | **500 of 500 cards** carry a `Kochergina` gloss label | it is the *consumer*, not the source |
 
-**Why the obvious home does not fit.** [CORRECTIONS](https://github.com/gasyoun/CORRECTIONS)
+**Why the obvious home does not fit.** [CORRECTIONS](https://github.com/sanskrit-lexicon/CORRECTIONS)
 is purpose-built for exactly this — "where every correction ever accepted across the whole
 project is recorded, per dictionary, as a durable audit trail". But its `dictionaries/`
 tree and its `cfr.tsv` correction-form report are keyed by **CDSL dictionary codes**
