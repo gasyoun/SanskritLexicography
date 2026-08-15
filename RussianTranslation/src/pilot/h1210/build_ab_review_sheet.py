@@ -237,7 +237,26 @@ def main():
         'rating': STD.DA_RATING,
     })
     out_html = os.path.join(RT, 'review', '%s_sheet.html' % sheet_id)
-    doc = render_review_sheet(items, cfg)
+    # H1649 screening block — required by csl-pyutil >= 0.8.0, and honest for THIS
+    # instrument: the only screen that runs before a human sees a card is the canonical
+    # audit (deterministic promote-DRY over the free gate). Cards it rejects are never
+    # offered, which is the whole reason the pools below are smaller than the slice.
+    # No dataset lookup and no agent adjudication apply — the vote question is which arm
+    # reads better, and no resolver can answer that; every offered card goes to a human.
+    audited = len(reports_a) + len(reports_b)
+    screening = {
+        'deterministic': max(audited - len(items), 0),
+        'lookup': 0,
+        'agent': 0,
+        'human': len(items),
+        # NEVER name an arm-specific file here: `screening.evidence_path` is rendered INTO
+        # the sheet, so `arm_a.…_audit.json` would put an arm token in a blind instrument
+        # (caught 15-08-2026 by the both-axes blinding check the lock's own claim rests on).
+        'evidence_path': 'RussianTranslation/src/pilot/h1210/%s.coverage_gap.json'
+                         % sheet_id,
+        'rules': ['canonical-audit-promote-dry', 'h1210-blind-arm-labels-in-lock-only'],
+    }
+    doc = render_review_sheet(items, cfg, screening=screening)
     os.makedirs(os.path.dirname(out_html), exist_ok=True)
     with open(out_html, 'w', encoding='utf-8', newline='\n') as f:
         f.write(doc)
