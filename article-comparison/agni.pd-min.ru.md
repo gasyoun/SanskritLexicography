@@ -9,7 +9,7 @@ _Скелет значений Деканского энциклопедичес
 | **1** | fire, ordinary fire | огонь, обыкновенный огонь |
 | **2i** | sacrificial fire, sacred fire | жертвенный огонь, священный огонь |
 | **ii** | gārhapatya | гархапатья (огонь домохозяина) |
-| **iii** | āhavanīya | ахаванья (огонь для возлияний) |
+| **iii** | āhavanīya | ахавания (огонь для возлияний) |
 | **iv** | dakṣiṇāgni v sacrificial fire with other names and attributes | дакшинагни; жертвенный огонь под иными именами и со свойствами |
 | **vi** | domestic fire | домашний огонь |
 | **vii** | fire worshipped by the Brahmacārin | огонь, почитаемый брахмачарином |
@@ -28,7 +28,7 @@ _Скелет значений Деканского энциклопедичес
 | **vii** | as guest | как гость |
 | **viii** | with smoke as banner | со знаменем-дымом (дымознаменный) |
 | **ix** | bringer of gods to the sacrifice | приводящий богов на жертвоприношение |
-| **x** | as hotṛ | как хотар (жрец-возливатель) |
+| **x** | as hotṛ | как хотар (жрец-призыватель, рецитатор) |
 | **xi** | messenger | вестник |
 | **xii** | mentioned with Manu | упоминаемый вместе с Ману |
 | **xiii** | with ṛta, vrata | связанный с ритой и вратой (порядком и обетом) |
@@ -47,14 +47,14 @@ _Скелет значений Деканского энциклопедичес
 | **iii** | brick for building the altar | кирпич для постройки алтаря |
 | **iv** | area for the fire-altar | площадка для алтаря огня |
 | **v** | text dealing with the rite of fire-altar | текст об обряде алтаря огня |
-| **vi** | rite of preparing the fire-altar | обряд сооружения алтаря огня |
+| **vi** | rite of preparing the fire-altar | обряд сооружения алтаря огня (агничаяна) |
 | **5** | fire as one of the five elements | огонь как один из пяти первоэлементов |
 | **6i** | the plant Plumbago zeylanica | растение Plumbago zeylanica (читрака) |
 | **ii** | a kind of citraka | разновидность читраки |
 | **iii** | bhallātaka | бхаллатака (Semecarpus anacardium) |
 | **iv** | Semicarpu sanacardium | Semecarpus anacardium |
 | **v** | Citrus acida | Citrus acida (кислый лайм) |
-| **vi** | jāra | джара |
+| **vi** | jāra | джара (растение; PD listing — сверить источник) |
 | **7i** | number three | число «три» |
 | **ii** | the third house in a horoscope | третий дом гороскопа |
 | **iii** | the third lunar day | третий лунный день (титхи) |
@@ -69,7 +69,7 @@ _Скелет значений Деканского энциклопедичес
 | **ii** | the seventh part of the night | седьмая часть ночи |
 | **E** | the tenth of the sixty divisions of a zodiacal sign | десятая из шестидесяти долей знака зодиака |
 | **12** | burning sensation, sorrow | жжение, скорбь |
-| **13** | a mental disposition | душевное состояние |
+| **13** | a mental disposition | склад ума, умонастроение |
 | **14** | a synonym of kleśa | синоним клеши (страдания) |
 | **15** | heat of fire | жар огня |
 | **16i** | mystic fire in the Mūlādhāra | мистический огонь в муладхаре |
@@ -85,9 +85,9 @@ _Скелет значений Деканского энциклопедичес
 | **25i** | deity of speech | божество речи |
 | **ii** | of Sudarśana mantra | (божество) мантры Сударшаны |
 | **iii** | of Lavaṇa mantra | мантры Лаваны |
-| **iv** | of Vyāhṛtis | вьяхрити |
+| **iv** | of Vyāhṛtis | (божество) Вьяхрити (сакральных возгласов bhūr bhuvaḥ svaḥ) |
 | **v** | of the first syllable of Gāyatri | первого слога Гаятри |
-| **vi** | of a syllable of the mantra for Viṣṇu | слога мантры Вишну |
+| **vi** | of a syllable of the mantra for Viṣṇu | (божество) слога мантры Вишну |
 | **vii** | the mouth of Gāyatrī | уста Гаятри |
 | **viii** | of the first day of the lunar fortnight | первого дня лунной половины месяца |
 | **ix** | god of Agnihotra | бог агнихотры |
@@ -95,7 +95,7 @@ _Скелет значений Деканского энциклопедичес
 | **xi** | god of Kṛttikā | бог Криттики |
 | **xii** | regent of a quarter | правитель стороны света |
 | **xiii** | god of the south-east | бог юго-востока |
-| **xiv** | of the udātta | (божество) удатты (высокого тона) |
+| **xiv** | of the udātta | (божество) удатты (повышенного тона, акута) |
 | **xv** | of time | времени |
 | **xvi** | of the sword | меча |
 | **26i** | name of one of the Vāstudevatās | имя одной из Вастудеват |
@@ -105,7 +105,7 @@ _Скелет значений Деканского энциклопедичес
 | **v** | name of Bālakṛṣṇa | имя Бала-Кришны |
 | **vi** | attendant of Skandasena | спутник Скандасены |
 | **vii** | deity of the eastern gate | божество восточных врат |
-| **viii** | a group of Bhavanavāsin gods | группа богов Бхаванавасин |
+| **viii** | a group of Bhavanavāsin gods | группа богов Бхаванавасин (класс божеств-«обитателей дворцов», джайн./пуран.) |
 | **ix** | leader of Śiva's attendants | предводитель свиты Шивы |
 | **x** | one of the seven sages | один из семи мудрецов (саптарши) |
 | **xi** | son of Ūru | сын Уру |
