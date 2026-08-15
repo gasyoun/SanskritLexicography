@@ -1,0 +1,342 @@
+source_key	class	mintable	resolved_same_source	no_locus_same_source	top_shapes	expansion	example_miss	example_hit	example_hit_href
+SUŚR	source	280	0	0	plain=242;multi_locus=37;range_fgg=1	SUŚRUTA, ed. Calc. (GILD. Bibl. 367); citirt nach Band, Seite und Zeile. Den Titel der HES	<ls>SUŚR. 2,64,9. 10.</ls>		
+ŚĀṄKH	source	241	0	0	plain=207;multi_locus=32;range_fgg=2	? [Cologne Addition]	<ls>ŚĀṄKH. ŚR. 15,3,14.</ls>		
+CHĀND	source	198	0	0	plain=182;multi_locus=14;range_fgg=2		<ls>CHĀND. UP. 1,1,6.</ls>		
+ĀŚV	source	197	0	0	plain=162;multi_locus=34;range_fgg=1	? [Cologne Addition]	<ls>ĀŚV. GṚHY. 1,6,8. 3,10,11.</ls>		
+PRAB	source	170	0	0	plain=165;multi_locus=5	PRABODHACANDRODAYA, ed. BROCKHAUS (GILD. Bibl. 216).	<ls>PRAB. 75,2.</ls>		
+KAUŚ	source	157	0	0	plain=150;multi_locus=4;range_fgg=3	KAUŚIKA'S SŪTRA zum ATHARVAVEDA. 14 Adhyāya. Die Kaṇ- ḍikā sind durchgezählt. Hdschr.	<ls>KAUŚ. 68. 140.</ls>		
+MṚCCH	source	146	0	0	plain=134;multi_locus=10;range_fgg=2	MṚCCHAKAṬIKĀ, ed. STENZLER (GILD. Bibl. 186).	<ls>MṚCCH. 67,3.</ls>		
+KĀM	source	128	0	2	plain=113;multi_locus=14;range_fgg=1		<ls>KĀM. NĪTIS. 8. 67.</ls>		
+LĀṬY	source	118	0	0	plain=98;multi_locus=20	LĀṬYĀYANA'S SŪTRA zum SV. Hdschr.	<ls>LĀṬY. 5,1,4.</ls>		
+VET	source	114	0	0	plain=61;vol_marker=45;multi_locus=6	VETĀLAPAÑCAVIṂŚATI in LASSEN'S Anthologie (LA).	<ls>VET. 4,11.</ls>		
+ĀPAST	source	113	0	3	plain=98;multi_locus=15	ĀPASTAMBA.	<ls>ĀPAST. 1,25,2</ls>		
+SARVADARŚANAS	source	107	0	0	plain=73;multi_locus=25;range_fgg=9	? [Cologne Addition]	<ls>SARVADARŚANAS. 118,8</ls>		
+Ind	source	95	0	2	plain=82;multi_locus=8;range_fgg=5	? [Cologne Addition]	<ls>Ind. St. 1,19.</ls>		
+PAÑCAV	source	85	0	0	plain=71;multi_locus=13;range_fgg=1	PAÑCAVIṂŚABRĀHMAṆA ? [Cologne addition]	<ls>PAÑCAV. BR. 23,1,2.</ls>		
+ŚIŚ	source	85	0	1	plain=77;multi_locus=5;vol_marker=3	ŚIŚUPĀLAVADHA, ed. Calc. (GILD. Bibl. 141).	<ls>ŚIŚ. 18,5</ls>		
+DAŚAK	source	83	0	101	plain=74;multi_locus=3;range_fgg=3	DAŚAKUMĀRACARITA, ed. WILSON (GILD. Bibl. 236).	<ls>DAŚAK. 185</ls>		
+BṚH	source	77	0	0	plain=70;vol_marker=4;multi_locus=3	? [Cologne Addition]	<ls>BṚH. ĀR. UP. 4,5,14.</ls>		
+JĀTAKAM	source	72	0	0	plain=72		<ls>JĀTAKAM. 22</ls>		
+ṚT	source	69	0	0	plain=68;multi_locus=1	ṚTUSAM̃HĀRA, ed. BOHLEN (GILD. Bibl. 155).	<ls>ṚT. 1,19.</ls>		
+KĀṬH	source	68	0	3	plain=58;multi_locus=10	KĀṬHAKA-Recension des YĀJ. V.	<ls>KĀṬH. 36,7. 34,8.</ls>		
+GOBH	source	64	0	1	plain=58;multi_locus=5;range_fgg=1	GOBHILA'S GṚHYASŪTRA; nach Mittheilungen von A. WEBER.	<ls>GOBH. 4,2,9.</ls>		
+KIR	source	54	0	0	plain=51;range_fgg=2;multi_locus=1	KIRĀTĀRJUNĪYA, ed. Calc. (GILD. Bibl. 139).	<ls>KIR. 16,3.</ls>		
+ṚV	format	54	3697	9	plain=54	ṚGVEDA. Es wird nach Maṇḍala, Sūkta und Ṛc citirt. ROSEN zu ṚV. verweist auf die Anmerkung	<ls>ṚV. PRĀT. 13,13.</ls>	<ls>ṚV. 1,100,5</ls>	https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.100.html#rv01.100.05
+CARAKA	source	53	0	0	plain=48;multi_locus=4;range_fgg=1	? [Cologne Addition]	<ls>CARAKA. 6,18</ls>		
+MAITRYUP	source	45	0	0	plain=42;multi_locus=3	? [Cologne Addition]	<ls>MAITRYUP. 6,24.</ls>		
+DIVYĀVAD	source	44	0	0	plain=41;multi_locus=2;range_fgg=1	DIVYĀVADĀNA ? [Cologne Addition]	<ls>DIVYĀVAD. 232,19</ls>		
+Z	source	44	0	1	plain=40;roman=1;trailing_prose=1	? [Cologne Addition]	<ls>Z. 13</ls>		
+PĀR	source	41	0	1	plain=38;multi_locus=3	? [Cologne Addition]	<ls>PĀR. GṚHY. 2,2.</ls>		
+MAITR	source	40	0	0	plain=37;multi_locus=2;range_fgg=1	? [Cologne Addition]	<ls>MAITR. S. 1,2,17</ls>		
+ARJ	source	39	0	0	plain=36;multi_locus=3	ARJUNASAMĀGAMA, ed. BOPP (GILD. Bibl. 106).	<ls>ARJ. 4,23.</ls>		
+TAITT	source	39	0	1	plain=33;multi_locus=4;range_fgg=2	? [Cologne Addition]	<ls>TAITT. UP. 1,8.</ls>		
+KAṬHOP	source	38	0	0	plain=37;range_fgg=1	KAṬHOPANIṢAD in der Bibliotheca indica.	<ls>KAṬHOP. 6,18.</ls>		
+MUṆḌ	source	37	0	1	plain=36;multi_locus=1		<ls>MUṆḌ. UP. 3,2,2.</ls>		
+VARĀH	format	37	555	0	vol_marker=19;plain=17;multi_locus=1	? [Cologne Addition]	<ls>VARĀH. BṚH. S. 41 (40),5.</ls>	<ls>VARĀH. BṚH. S. 79,14.</ls>	https://sanskrit-lexicon-scans.github.io/brihatsam/app1?79,14
+DHŪRTAS	source	35	0	0	plain=31;multi_locus=4	DHŪRTASAMĀGAMA in LASSEN'S Anthologie (GILD. Bibl. 48).	<ls>DHŪRTAS. 81,6.</ls>		
+SŪRYAS	source	35	0	0	plain=23;multi_locus=10;range_fgg=2	SŪRYASIDDHĀNTA, nach Anführungen in HAUGHTON, A Dict. Beng. and S.	<ls>SŪRYAS. 1,52. 60. 2,28. 57. 61. 64. fg. 3,10. 22.</ls>		
+ŚVETĀŚV	source	35	0	0	plain=34;multi_locus=1	? [Cologne Addition]	<ls>ŚVETĀŚV. UP. 4,10.</ls>		
+KAUṢ	source	34	0	2	plain=30;multi_locus=2;range_fgg=2	? [Cologne Addition]	<ls>KAUṢ. UP. 2,15.</ls>		
+NAIṢ	source	34	0	0	plain=34	NAIṢADHACARITA, ed. Calc. (GILD. Bibl. 143).	<ls>NAIṢ. 8,89</ls>		
+SĀV	source	33	0	0	plain=33	SĀVITRYUPĀKHYĀNA, ed. BOPP (GILD. Bibl. 106).	<ls>SĀV. 6,27.</ls>		
+PAT	source	32	0	18	plain=27;vol_marker=5	PATAÑJALI, als Verfasser des MAHĀBHĀṢYA; nach Excerpten in BÖHTLINGK'S Ausgabe des PĀṆINI.	<ls>PAT. a. a. O. 1,48,b.</ls>		
+KAP	source	31	0	0	plain=27;multi_locus=3;trailing_prose=1	KAPILA (The Aphorisms of the Sánkhya Philosophy, of Kapila; with illustrative extracts fro	<ls>KAP. 1,152.</ls>		
+LALIT	source	31	0	0	plain=16;ed_variant=8;multi_locus=6	RGYA TCH'ER ROL PA (LALITAVISTĀRA) ou Développement des yeux, traduit etc. par PH. ÉD. FOU	<ls>LALIT. 499,9</ls>		
+TS	format	30	391	5	plain=27;roman=2;range_fgg=1	TAITTIRĪYASAM̃HITĀ. 7 Kāṇḍa, eingetheilt in Praśna, Anuvāka und Kaṇḍikā. Die letzten bezei	<ls>TS. PRĀT. 22,6.</ls>	<ls>TS. 6,6,11,5.</ls>	https://sanskrit-lexicon-scans.github.io/taittiriyas/app1?6,6,11,5
+LA	source	29	0	0	vol_marker=21;plain=8	LASSEN'S Anthologie (GILD. Bibl. 48).	<ls>LA. (II) 90,6.</ls>		
+VS	format	29	269	8	plain=27;range_fgg=1;multi_locus=1	VĀJASANEYISAM̃HITĀ. The VĀYASANEYI-SANHITĀ in the MĀDHYANDINA -- and the KĀṆVA-ŚĀKHĀ with 	<ls>VS. PRĀT. 1,38.</ls>	<ls>VS. 17,75.</ls>	https://sanskrit-lexicon-scans.github.io/vajasasa/app1?17,75
+DRAUP	source	28	0	0	plain=26;multi_locus=2	DRAUPADĪPRAMĀTHA, ed. BOPP (GILD. Bibl. 106).	<ls>DRAUP. 8,37.</ls>		
+KĀD	source	28	0	0	plain=22;multi_locus=5;roman=1	? [Cologne Addition]	<ls>KĀD. 2,118,1</ls>		
+VĀLAKH	source	28	0	0	plain=27;multi_locus=1	VĀLAKHILYA, die zwischen ṚV. 8, 48 und 49 eingeschobe- nen Lieder.	<ls>VĀLAKH. 3. 2.</ls>		
+BRAHMA-P	source	27	0	0	plain=15;vol_marker=11;multi_locus=1	BRAHMAPURĀṆA in LASSEN'S Anthologie (GILD. Bibl. 48).	<ls>BRAHMA-P. 52,2.</ls>		
+PRAŚNOP	source	27	0	0	plain=27	PRAŚNOPANIṢAD, nach der Ausgabe von RÖER in der Biblio- theca indica.	<ls>PRAŚNOP. 6,5.</ls>		
+WEBER	source	26	0	1	plain=19;range_fgg=5;trailing_prose=1	? [Cologne Addition]	<ls>WEBER, RĀMAT. UP. 356,4.</ls>		
+BĀLAR	source	25	0	0	plain=25	? [Cologne Addition]	<ls>BĀLAR. 74,3</ls>		
+Comm	source	25	0	0	plain=22;multi_locus=3		<ls>Comm. zu ĀPAST. ŚR. 5,29,12</ls>		
+ŚUK	source	25	0	0	plain=14;vol_marker=9;ibid=1	ŚUKASAPTATI in LASSEN'S Anthologie (GILD. Bibl. 48).	<ls>ŚUK. in LA. (II) 34,19.</ls>		
+SADDH	source	24	0	0	plain=24		<ls>SADDH. P. 4,27,b.</ls>		
+Jātakam	source	23	0	0	plain=23		<ls>Jātakam. 22.</ls>		
+MAHĀVY	source	23	0	0	plain=23		<ls>MAHĀVY. 81,5</ls>		
+Sp	source	22	0	0	plain=16;range_fgg=6	? [Cologne Addition]	<ls>Sp. 302, Z. 9. fgg.</ls>		
+SĀṂKHYAK	source	22	0	1	plain=21;range_fgg=1	SĀṂKHYAKĀRIKĀ, ed. WILSON (GILD. Bibl. 271), mit Benutzung des Index in LASSEN'S Ausgabe (	<ls>SĀṂKHYAK. 20.</ls>		
+AMAR	source	21	0	0	plain=21	AMARUŚATAKA nach der Calc. Ausg. (GILD. Bibl. 162).	<ls>AMAR. 97.</ls>		
+ŚRUT	source	21	0	2	plain=21	ŚRUTABODHA in der Zeitschrift für die Kunde des Morgenlan- des, IV, S. 60 fgg. Ein dabeist	<ls>ŚRUT. 18.</ls>		
+ŚĀK	format	21	522	4	plain=21	ŚĀKUNTALA, das Drama in der Ausgabe von BÖHTLINGK (GILD. Bibl. 191). Eine einfache Zahl be	<ls>ŚĀK. CH. 16,3.</ls>	<ls>ŚĀK. 62.</ls>	https://sanskrit-lexicon-scans.github.io/shakuntala/app1?62
+CAMPAKA	source	20	0	0	plain=20		<ls>CAMPAKA 126</ls>		
+Journ	source	20	0	0	plain=17;multi_locus=2;roman=1		<ls>Journ. of the As. Soc. of B. IV, Pl. XL, Z. 6. 7.</ls>		
+Sch	source	20	0	0	plain=20	Scholiast.	<ls>Sch. 6,4,49</ls>		
+VAJRACCH	source	20	0	0	plain=17;range_fgg=2;multi_locus=1		<ls>VAJRACCH. 28,14</ls>		
+INDR	source	19	0	0	plain=18;multi_locus=1	INDRALOKĀGAMANA in BOPP'S Ardschuna's Reise zu Indra's Him- mel u. s. w.	<ls>INDR. 1,12.</ls>		
+KENOP	source	19	0	0	plain=19	KENOPANIṢAD in der Bibliotheca indica.	<ls>KENOP 19.</ls>		
+MĀN	source	19	0	0	plain=15;multi_locus=3;range_fgg=1	? [Cologne Addition]	<ls>MĀN. ŚR. 1,3,5. 7,5</ls>		
+ṢAḌV	source	19	0	0	plain=19	? [Cologne Addition]	<ls>ṢAḌV. BR. 2,4.</ls>		
+HEM	source	18	0	7	plain=18	HEMACANDRA ? [Cologne Addition]	<ls>HEM. PAR. 1,380</ls>		
+KĀRAṆḌ	source	18	0	0	multi_locus=9;plain=8;range_fgg=1		<ls>KĀRAṆḌ. 85,8. 86,8</ls>		
+MĀLATĪM	source	18	0	0	plain=16;ed_variant=2	? [Cologne Addition]	<ls>MĀLATĪM. 2,12.</ls>		
+S	source	18	0	0	roman=18		<ls>S I,196,6.</ls>		
+UTTARAR	source	18	0	0	plain=17;range_fgg=1	? [Cologne Addition]	<ls>UTTARAR. 110,1 (148,16).</ls>		
+VEDĀNTAS	source	18	0	3	plain=17;multi_locus=1	VEDĀNTASĀRA, ed. Calc. (Gild. Bibl. 279).	<ls>VEDĀNTAS. (Allah.) No. 71.</ls>		
+AV	format	17	1199	11	plain=17	ATHARVAVEDASAM̃HITĀ, herausg. von R. ROTH und W. D. WHITNEY. Berlin bei F. DÜMMLER. 1855. 	<ls>AV. PAIPP. 20,2,2</ls>	<ls>AV. 9,5,12.</ls>	https://sanskrit-lexicon.github.io/avlinks/avhymns/av09.005.html#av09.005.12
+SUND	source	17	0	0	plain=17	SUNDOPASUNDOPĀKHYĀNA, ed. BOPP (GILD. Bibl. 97).	<ls>SUND. 3,3.</ls>		
+Divyāvad	source	16	0	0	plain=16		<ls>Divyāvad. 446,25.</ls>		
+BHĀVAPR	source	15	0	0	plain=13;range_fgg=2	BHĀVAPRAKĀŚA, ein medic. Wörterbuch; nach Anführungen im ŚKDR.	<ls>BHĀVAPR. 3,21,38</ls>		
+PRASANNAR	source	15	0	0	plain=13;multi_locus=2	? [Cologne Addition]	<ls>PRASANNAR. 66,16</ls>		
+AIT	format	14	407	2	plain=14	? [Cologne Addition]	<ls>AIT. UP. 1,4.</ls>	<ls>AIT. BR. 2,16.</ls>	https://sanskrit-lexicon-scans.github.io/aitbr/app1?2,16
+GṚHY	source	14	0	0	plain=9;multi_locus=5	? [Cologne Addition]	<ls>GṚHY. 1,3.</ls>		
+HEMĀDRI	source	14	0	0	plain=8;multi_locus=6	? [Cologne Addition]	<ls>HEMĀDRI 1,35,20</ls>		
+HIḌ	source	14	0	0	plain=12;multi_locus=2	HIḌIMBAVADHA in BOPP'S Ardschuna's Reise zu Indra's Himmel, nebst anderen Episoden des Mah	<ls>HIḌ. 2,24. 4,27.</ls>		
+NALOD	source	14	0	2	plain=14	? [Cologne Addition]	<ls>NALOD. 2,52.</ls>		
+Nachtr	source	14	0	0	plain=14		<ls>Nachtr. 4</ls>		
+SCHL	source	14	0	14	plain=14	? [Cologne Addition]	<ls n="SCHL. 2,">7,18</ls>		
+ŚAṂK	source	14	0	63	plain=12;multi_locus=2	ŚAṂKARA (ein Scholiast des ŚĀKUNTALA) und ŚAM̃- KARĀCĀRYA.	<ls>ŚAṂK. zu BĀDAR. 2,2,10</ls>		
+JAIM	source	13	0	1	plain=12;multi_locus=1	JAIMINI (The Aphorisms of the Mímánsá Philosophy by Yai- mini. With extracts from the comm	<ls>JAIM. 1,32</ls>		
+SIDDH	source	13	0	40	plain=12;range_fgg=1	? [Cologne Addition]	<ls>SIDDH. K. 168,b,4. 5</ls>		
+UTTARARĀMAC	source	13	0	0	plain=13	= ? [Cologne Addition]	<ls>UTTARARĀMAC. 64,10</ls>		
+HALL	source	12	0	4	plain=12	A contribution towards an index to the Bibliography of the Indian philosophical systems. B	<ls>HALL 118.</ls>		
+MUIR	source	12	0	0	plain=6;roman=6	? [Cologne Addition]	<ls>MUIR, ST. (2te Aufl.) 1,509,9.</ls>		
+MÜLLER	source	12	0	0	plain=11;trailing_prose=1	? [Cologne Addition]	<ls>MÜLLER, SL. 178.</ls>		
+BHĀṢĀP	source	11	0	0	plain=11	BHĀṢĀPARICCHEDA nach der Ausgabe von RÖER in der Bibliotheca indica.	<ls>BHĀṢĀP. 67</ls>		
+H	format	11	212	39	plain=10;roman=1	HEMACANDRA'S ABHIDHĀNACINTĀMAṆI, ein systematisch angeordnetes synonymisches Lexicon. Hera	<ls>H 29,47.</ls>	<ls>H. 1505.</ls>	https://sanskrit-lexicon-scans.github.io/abch2/app1?1505
+HARṢAC	source	11	0	0	plain=9;ed_variant=1;multi_locus=1		<ls>HARṢAC. 126,9</ls>		
+Āpast	source	11	0	0	plain=10;multi_locus=1		<ls>Āpast. 1,25,2. 7.</ls>		
+ŚATR	source	11	0	0	plain=11	ŚATRUM̃JAYAMĀHĀTMYA, nach den von A. WEBER herausgegebe- nen Fragmenten in den Abhandlunge	<ls>ŚATR. 14,245.</ls>		
+SOM	source	10	0	0	plain=10	? [Cologne Addition]	<ls>SOM. NALA 73.</ls>		
+ŚĀNTIŚ	source	10	0	0	plain=10	ŚIHLANA'S ŚĀNTIŚATAKA in HAEBERLIN'S Anthology, S. 410. fgg.	<ls>ŚĀNTIŚ. 4,17.</ls>		
+Mahāvy	source	9	0	0	plain=8;multi_locus=1		<ls>Mahāvy. 81,5.</ls>		
+NYĀYAS	source	9	0	0	plain=6;multi_locus=3	? [Cologne Addition]	<ls>NYĀYAS. 1,1,32.</ls>		
+NĪLAK	source	9	0	35	plain=7;range_fgg=1;multi_locus=1	A rational refutation of the Hindu philosophical systems by Nehemiah Nīlakaṇṭha, Śāstrí Go	<ls>NĪLAK. 160.</ls>		
+VP	source	9	0	4	plain=9	VIṢṆUPURĀṆA. Es wird die WILSON'sche Uebersetzung (GILD. Bibl. 133) citirt.	<ls>VP. 4,2,11</ls>		
+ŚR	source	9	0	0	plain=6;multi_locus=3	? [Cologne Addition]	<ls>ŚR. 9,12,11</ls>		
+GAUT	source	8	0	19	plain=7;multi_locus=1		<ls>GAUT. 15,18</ls>		
+Kauṭ	source	8	0	0	plain=7;roman=1		<ls>Kauṭ. 37,7.</ls>		
+Kir	source	8	0	0	roman=4;plain=4		<ls>Kir. IX,11.</ls>		
+Maitr	source	8	0	0	plain=8		<ls>Maitr. S. 4,6,7</ls>		
+RĀJAN	source	8	0	1	plain=8	RĀJANIRGHAṆṬA, ein medicinisches Wörterbuch; nach An- führungen im ŚKDR.	<ls>RĀJAN. 5,28.</ls>		
+WILSON	source	8	0	1	plain=6;range_fgg=1;ibid=1	? [Cologne Addition]	<ls>WILSON, Sel. Works 1,169. fg.</ls>		
+ĪŚOP	source	8	0	0	plain=8	ĪŚOPANIṢAD in der Bibliotheca indica.	<ls>ĪŚOP. 15.</ls>		
+DAŚAR	source	7	0	0	plain=6;multi_locus=1	The Daśa-Rūpa, or Hindu Canons of Dramaturgy by Dhanan- jaya. Ed. by Fitz-Edward HALL. Cal	<ls>DAŚAR. 1,10.</ls>		
+GOP	source	7	0	0	plain=7	? [Cologne Addition]	<ls>GOP. BR. 1,2,2.</ls>		
+Lot	source	7	0	0	plain=7		<ls>Lot. de la b. l. 334.</ls>		
+MATSYOP	source	7	0	0	plain=6;range_fgg=1	MATSYOPĀKHYĀNA, ed. BOPP (GILD. Bibl. 106).	<ls>MATSYOP. 47.</ls>		
+TATTVAS	source	7	0	0	plain=7	A Lecture on the Sánkhya Philosophy, embracing the text of the Tattwa Samása. Mirzapore 18	<ls>TATTVAS. 46.</ls>		
+Verz. d. Oxf. H	format	7	124	0	plain=7	? [Cologne Addition]	<ls>Verz. d. Oxf. H. No. 398.</ls>	<ls>Verz. d. Oxf. H. 82,b,23.</ls>	https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?82
+BURNOUF	source	6	0	7	plain=6	? [Cologne Addition]	<ls>BURNOUF, Intr. 589.</ls>		
+BĀLAB	source	6	0	0	plain=6	BĀLABODHANĪ in WINDISCHMANN'S Sancara (GILD. Bibl. 275).	<ls>BĀLAB. 21.</ls>		
+HIT	format	6	323	1	plain=6	HITOPADEŚA, ed. SCHLEGEL und LASSEN (GILD. Bibl. 225). Eine darauf folgende römische Zahl 	<ls>HIT. ed. JOHNS. 1614</ls>	<ls>HIT. 20,15.</ls>	https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?20,15
+MIT	source	6	0	1	plain=5;range_fgg=1	MITĀKṢARĀ, ed. Calc. 1829 (GILD. Bibl. 314).	<ls>MIT. 268,2. 8.</ls>		
+SV	source	6	0	5	roman=5;multi_locus=1	SĀMAVEDA. Die Hymnen des SĀMA-VEDA, herausgegeben, übersetzt und mit Glossar versehen von 	<ls>SV. II,3,1,7,2. 4,2,1,10. 5,2,3,2</ls>		
+VAITĀN	source	6	0	8	plain=5;multi_locus=1	? [Cologne Addition]	<ls>VAITĀN. 10,18</ls>		
+VOP	format	6	404	20	plain=6	VOPADEVA'S Grammatik, nach BÖHTLINGK'S Ausgabe (GILD. Bibl. 249, {%a.%} S. 170).	<ls>VOP. S. 176.</ls>	<ls>VOP. 26,215.</ls>	https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?26,215
+ed	format	6	6	253	ed_variant=4;plain=2		<ls>ed. Bomb. 3,19,10</ls>	<ls>ed. orn. 53,20</ls>	https://sanskrit-lexicon-scans.github.io/pantankoseorn/app1?53,20
+ŚULBAS	source	6	0	0	plain=6		<ls>ŚULBAS. 3,72</ls>		
+BRĀHMAṆ	source	5	0	0	plain=5	BRĀHMAṆAVILĀPA in BOPP'S Ardschuna's Reise zu Indra's Himmel u. s. w. Berlin 1824.	<ls>BRĀHMAṆ. 1,28.</ls>		
+COLEBR	source	5	0	2	plain=3;roman=2	? [Cologne Addition]	<ls>COLEBR. Alg. 13.</ls>		
+CĀṆ	source	5	0	0	plain=4;range_fgg=1	CĀṆAKYA in HAEB. Chrest. S. 312--322.	<ls>CĀṆ. 11.</ls>		
+DEV	source	5	0	0	plain=5	DEVĪMĀHĀTMYA, ed. POLEY (GILD. Bibl. 130).	<ls>DEV. 1,19.</ls>		
+KUSUM	source	5	0	0	plain=3;range_fgg=1;multi_locus=1	? [Cologne Addition]	<ls>KUSUM. 16,18. fg.</ls>		
+KĀVYĀD	source	5	0	0	plain=5	? [Cologne Addition]	<ls>KĀVYĀD. 2,326.</ls>		
+MBh	source	5	0	0	plain=5		<ls>MBh. 1,71,17.</ls>		
+TARKAS	source	5	0	0	plain=5	? [Cologne Addition]	<ls>TARKAS. 41</ls>		
+UPAG	source	5	0	0	plain=5	? [Cologne Addition]	<ls>UPAG. AV. 7.</ls>		
+VYUTP	source	5	0	0	plain=5	VYUTPATTI oder MAHĀVYUTPATTI (s. Mél. asiat. II, 382), ein sanskrit-tibetisches Wörterbuch	<ls>VYUTP. 101.</ls>		
+VĀSAV	source	5	0	0	plain=5	VĀSAVADATTĀ; s. Z. d. d. m. G. VIII, 530. fgg.	<ls>VĀSAV. 281,2</ls>		
+YOGAŚ	source	5	0	0	plain=5	? [Cologne Addition]	<ls>YOGAŚ. 3,141.</ls>		
+{{CARARA->CARAKA||20160103|Dhaval	source	5	0	0	plain=5		<ls>{{CARARA->CARAKA||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|It is not a typo. Print error.}}. 3,7</ls>		
+ŚIKṢĀ	source	5	0	0	plain=5	? [Cologne Addition]	<ls>ŚIKṢĀ 35.</ls>		
+BURN	source	4	0	7	plain=4	? [Cologne Addition]	<ls>BURN. Intr. 299.</ls>		
+DHARMAŚARM	source	4	0	0	plain=4		<ls>DHARMAŚARM. 13,41</ls>		
+GHAṬ	source	4	0	0	plain=4	GHAṬAKARPARA, ed. Calc. (GILD. Bibl. 162).	<ls>GHAṬ. 1.</ls>		
+Harṣac	source	4	0	0	plain=4		<ls>Harṣac. 153,15; 167,9.</ls>		
+LAGHUJ	source	4	0	0	plain=4	VARĀHAMIHIRA'S LAGHUJĀTAKA.	<ls>LAGHUJ. 13,2.</ls>		
+MAHĀBH	source	4	0	1	plain=4	? [Cologne Addition]	<ls>MAHĀBH. 24.</ls>		
+MUDRĀR	source	4	0	0	plain=3;multi_locus=1	MUDRĀRĀKṢASA, ed. Calc. (GILD. Bibl. 213).	<ls>MUDRĀR. 6,19. 31,3. 62,5.</ls>		
+PAÑCAD	source	4	0	5	plain=3;multi_locus=1		<ls>PAÑCAD. 186,8. 237,12</ls>		
+R	format	4	3815	3	plain=2;ed_variant=1;roman=1	RĀMĀYAṆA. Ohne eine nähere Angabe ist bei den zwei ersten Büchern die Ausgabe von SCHLEGEL	<ls>R. ed. Ser. 1,8,19</ls>	<ls>R. 1,4,18.</ls>	https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,18
+SAṂHITOPAN	source	4	0	0	plain=4		<ls>SAṂHITOPAN. 44,3</ls>		
+UTTAMAC	source	4	0	0	plain=4		<ls>UTTAMAC. 107</ls>		
+VASIṢṬHA	source	4	0	0	plain=4	? [Cologne Addition]	<ls>VASIṢṬHA 16,19</ls>		
+Vajracch	source	4	0	0	plain=4		<ls>Vajracch. 28,14; 30,17.</ls>		
+VṚDDHA-CĀṆ	source	4	0	0	plain=4	VṚDDHACĀṆAKYA ? [Cologne Addition]	<ls>VṚDDHA-CĀṆ. 13,12.</ls>		
+{{MBH	source	4	0	0	plain=4		<ls>{{MBH. 13,61,40->MBH. 13,40,40||20250606|Andhrabharati|https://github.com/sanskrit-lexicon/PWK/issues/84#issuecomment-2948415067|}}</ls>		
+<is>Kār	source	3	0	0	plain=3		<ls><is>Kār.</is> 2</ls>		
+BHĀG	format	3	2153	15	plain=3	? [Cologne Addition]	<ls>BHĀG. 18,58.</ls>	<ls>BHĀG. P. 10,19,13.</ls>	https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,19,13
+BĀDAR	source	3	0	0	plain=3	? [Cologne Addition]	<ls>BĀDAR. 1,232</ls>		
+CHANDOM	source	3	0	0	plain=3	CHANDOMAÑJARĪ, ein Werk über Metrik; nach Anführungen im ŚKDR.	<ls>CHANDOM. 53.</ls>		
+GṚHYASAṂGR	source	3	0	0	plain=3	GṚHYASAM̃GRAHAPARIŚIṢTA, 2 Prapāṭhaka von 106 und 103 Versen; vgl. ROTH, Zur L. u. G. d. W	<ls>GṚHYASAṂGR. 2,67.</ls>		
+KAṆ	source	3	0	0	plain=3	? [Cologne Addition]	<ls>KAṆ. 3,1,1.</ls>		
+Kauś	source	3	0	0	plain=3		<ls>Kauś. 47,53; 49,6.</ls>		
+Mat	source	3	0	2	plain=3		<ls>Mat. med. 77</ls>		
+N	format	3	204	0	plain=3	NALOPĀKHYĀNA in BÖHTLINGK'S Chrestomathie (GILD. Bibl. 49). Die BOPP'sche Ausgabe (GILD. B	<ls>N. (BOPP) 11,8.</ls>	<ls>N. 3,2.</ls>	https://sanskrit-lexicon-scans.github.io/bchrest1/app1?3,2
+PRATĀPAR	source	3	0	0	plain=3	VIDYĀNĀTHA'S PRATĀPARUDRĪYAM ALAM̃KĀRAŚĀSTRAM. Lith. zu Pūnā, Śāka 1771.	<ls>PRATĀPAR. 84,b,6.</ls>		
+Prabandh	source	3	0	0	plain=3		<ls>Prabandh. 281,9.</ls>		
+Praty	source	3	0	0	plain=3		<ls>Praty. Hṛd. 29,2.</ls>		
+PĀRŚVANĀTHAK	source	3	0	0	plain=3	? [Cologne Addition]	<ls>PĀRŚVANĀTHAK. 4,1</ls>		
+SAṂSK	source	3	0	0	plain=3	? [Cologne Addition]	<ls>SAṂSK. K. 95,a,2</ls>		
+Sam	source	3	0	0	roman=3		<ls>Sam. I,23</ls>		
+SĀMAV	source	3	0	0	range_fgg=2;plain=1		<ls>SĀMAV. BR. 3,8,1</ls>		
+SĀMAVIDH	source	3	0	0	plain=3	? [Cologne Addition]	<ls>SĀMAVIDH. BR. 2,3,2.</ls>		
+SĀY	source	3	0	42	plain=3	SĀYAṆA.	<ls>SĀY. zu ṚV. 10,39,9</ls>		
+UTTAR	source	3	0	0	plain=3	? [Cologne Addition]	<ls>UTTAR. 7,1</ls>		
+UṆĀDIS	source	3	0	0	plain=2;multi_locus=1	? [Cologne Addition]	<ls>UṆĀDIS. 2,91</ls>		
+VEṆĪS	source	3	0	0	plain=3	VEṆĪSAM̃HĀRA; nach Anführungen im ŚKDR.	<ls>VEṆĪS. 56,4.</ls>		
+VIKRAMĀṄKAC	source	3	0	0	plain=3		<ls>VIKRAMĀṄKAC. 2,79</ls>		
+VĀMANA	source	3	0	0	plain=2;multi_locus=1	? [Cologne Addition]	<ls>VĀMANA 5,2,76.</ls>		
+VĀSAVAD	source	3	0	0	plain=3	? [Cologne Addition]	<ls>VĀSAVAD. 2,4.</ls>		
+Vās	source	3	0	0	plain=3		<ls>Vās. 122,5.</ls>		
+WIND	source	3	0	0	plain=3	? [Cologne Addition]	<ls>WIND. Sancara 109.</ls>		
+YOGAS	source	3	0	0	plain=3	YOGASŪTRA (The Aphorisms of the Yoga Philosophy of Patan- jali. l. Allahabad 1852. II. ebe	<ls>YOGAS. 2,31.</ls>		
+Yudh	source	3	0	0	plain=3		<ls>Yudh. 2,90.</ls>		
+ĀRYABH	source	3	0	0	plain=3	? [Cologne Addition]	<ls>ĀRYABH. 4,28. 30.</ls>		
+Śrīk	source	3	0	0	plain=3		<ls>Śrīk. 18,27</ls>		
+1	structural	2	0	0	plain=2		<ls>1,111,3.</ls>		
+AGNI-P	source	2	0	0	plain=2	AGNIPURĀṆA ? [Cologne Addition]	<ls>AGNI-P. 38,28. 30</ls>		
+BAUDH	source	2	0	2	multi_locus=1;plain=1	BAUDHĀYANA.	<ls>BAUDH. 1,6,12,3</ls>		
+BHĀMATĪ	source	2	0	0	plain=2		<ls>BHĀMATĪ 616,9</ls>		
+BR	source	2	0	1	plain=2	? [Cologne Addition]	<ls>BR.) 22.</ls>		
+Darpad	source	2	0	0	roman=2		<ls>Darpad. III,96.</ls>		
+Dharmaśarm	source	2	0	0	plain=2		<ls>Dharmaśarm. 13,41.</ls>		
+Govardh	source	2	0	0	plain=2		<ls>Govardh. 340</ls>		
+HALĀY	format	2	28	3	plain=2	HALĀYUDHA, ein Lexicograph; nach Anführungen im ŚKDR.	<ls n="HALĀY.">168.</ls>	<ls>HALĀY. 2,171.</ls>	https://sanskrit-lexicon-scans.github.io/armh2/app1?2,171
+HARAVIJAYA	source	2	0	0	plain=2		<ls>HARAVIJAYA 6,30</ls>		
+Hem	source	2	0	0	plain=2		<ls>Hem. Par. 1,380.</ls>		
+KIRĀT	source	2	0	0	plain=2	? [Cologne Addition]	<ls>KIRĀT. 5,47.</ls>		
+KUHNʼs	source	2	0	0	plain=2		<ls>KUHNʼs Z. 27,281</ls>		
+KUVALAY	source	2	0	0	plain=2	KUVALAYĀNANDA (Rhetorik) von APYADĪKṢITA mit dem ALAM̃- KĀRACANDRIKĀ genannten Commentar d	<ls>KUVALAY. 174,a,4.</ls>		
+Kap	source	2	0	0	plain=2	? [Cologne Addition]	<ls>Kap. 1,80.</ls>		
+Kaus	source	2	0	25	plain=2		<ls>Kaus. 3.</ls>		
+Kaṃs	source	2	0	0	roman=2		<ls>Kaṃs. IV,17</ls>		
+KĀTY	format	2	328	3	plain=1;multi_locus=1	KĀTYĀYANA.	<ls>KĀTY. ŚR. Comm. 56,3</ls>	<ls>KĀTY. ŚR. 22,6,16.</ls>	https://sanskrit-lexicon-scans.github.io/katyasr/app1?22,6,16
+LĀTY	source	2	0	0	plain=2	? [Cologne Addition]	<ls>LĀTY. 2,11,9.</ls>		
+MADHYAM	source	2	0	0	plain=2	MADHYAMAKAVṚTTI, handschriftlich in der Kais. Bibl. zu Paris, nach Mittheilungen von A. SC	<ls>MADHYAM. 4.</ls>		
+MED	format	2	74	36	plain=2	MEDINĪKOṢA, ed. Calc. (GILD. Bibl. 258). Die Wörter sind zu- nächst nach dem letzten Conso	<ls>MED. <is>avy</is>. 54.</ls>	<ls>MED. t. 3</ls>	https://sanskrit-lexicon-scans.github.io/medini/app1?t,3
+MĀLAT	source	2	0	0	plain=1;range_fgg=1	MĀLATĪMĀDHAVA, ed. Calc. (GILD. Bibl. 210).	<ls>MĀLAT. 7,9.</ls>		
+MĀRK	format	2	367	0	plain=2	? [Cologne Addition]	<ls>MĀRK. P. S. 660, Z. 6.</ls>	<ls>MĀRK. P. 101,8.</ls>	https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?101,8
+NIDĀNAS	source	2	0	0	plain=2	? [Cologne Addition]	<ls>NIDĀNAS. 6,12</ls>		
+Naiṣ	source	2	0	0	plain=2		<ls>Naiṣ. 8,89.</ls>		
+PARIBH	source	2	0	0	plain=2	? [Cologne Addition]	<ls>PARIBH. 64</ls>		
+PAÑCAT	format	2	640	1	roman=2	PAÑCATANTRA. Pantschatantrum sive quinquepartitum de moribus exponens, ex codicibus manusc	<ls>PAÑCAT. Bd. I, S. 581</ls>	<ls>PAÑCAT. 71,24.</ls>	https://sanskrit-lexicon-scans.github.io/pantankose/app2?71,24
+PISCHEL	source	2	0	0	plain=2	? [Cologne Addition]	<ls>PISCHEL, Vedische Studien 72</ls>		
+PRASAṄGĀBH	source	2	0	0	plain=2	? [Cologne Addition]	<ls>PRASAṄGĀBH. 12,b.</ls>		
+Pūrṇabh	source	2	0	0	plain=2		<ls>Pūrṇabh. 165,2</ls>		
+RATIM	source	2	0	1	plain=2	RATIMAÑJARĪ, ein Werk über Erotik; nach Anführungen im ŚKDR.	<ls n="RATIM.">16</ls>		
+RATNĀV	source	2	0	0	plain=2	RATNĀVALĪ, ed. Calc. (GILD. Bibl. 214).	<ls>RATNĀV. 103,16.</ls>		
+SUBHĀṢITĀV	source	2	0	0	plain=2		<ls>SUBHĀṢITĀV. 3075</ls>		
+Sūryaś	source	2	0	0	plain=2		<ls>Sūryaś. 14</ls>		
+Text	source	2	0	0	plain=2		<ls>Text zu Lot. de la b. l. 189</ls>		
+TĀṆḌYA-BR	source	2	0	0	plain=2	TĀṆḌYABRĀHMAṆA ? [Cologne Addition]	<ls>TĀṆḌYA-BR. 9,1,1</ls>		
+VIVĀDAC	source	2	0	0	plain=1;range_fgg=1	VIVĀDACINTĀMAṆI, ed. Calc. (GILD. Bibl. 351).	<ls>VIVĀDAC. 43,13</ls>		
+VIṢṆUS	source	2	0	0	plain=2		<ls>VIṢṆUS. 98,50</ls>		
+VĀGBHAṬĀLAṂKĀRA	source	2	0	0	plain=2		<ls>VĀGBHAṬĀLAṂKĀRA 1,20</ls>		
+YAJÑAD	source	2	0	0	plain=2		<ls>YAJÑAD. 2,46</ls>		
+ZDMG	source	2	0	0	plain=2		<ls>ZDMG 41,676.</ls>		
+Ś	source	2	0	0	multi_locus=2	? [Cologne Addition]	<ls>Ś. 4,5,1. 5,2,20.</ls>		
+ŚIŚUP	source	2	0	0	plain=2	? [Cologne Addition]	<ls>ŚIŚUP. 5,40.</ls>		
+ŚRĪKAṆṬHAC	source	2	0	0	plain=2		<ls>ŚRĪKAṆṬHAC. 1,42</ls>		
+Śiś	source	2	0	0	plain=2		<ls>Śiś. 18,5</ls>		
+Śāṅkh	source	2	0	0	plain=2		<ls>Śāṅkh. Br. 13,9.</ls>		
+15	structural	1	0	0	plain=1		<ls>15.</ls>		
+231	structural	1	0	0	plain=1		<ls>231,16</ls>		
+ARYABH	source	1	0	0	plain=1	? [Cologne Addition]	<ls>ARYABH. 2,7. 19.</ls>		
+Amit	source	1	0	0	roman=1		<ls>Amit. XIII,14.</ls>		
+AŚNA	source	1	0	0	plain=1	? [Cologne Addition]	<ls>AŚNA S. 344)</ls>		
+AŚOKĀVAD	source	1	0	0	plain=1	AŚOKĀVADĀNA? [Cologne Addition]	<ls>AŚOKĀVAD. 32.</ls>		
+AṢṬĀV	source	1	0	0	plain=1	? [Cologne Addition]	<ls>AṢṬĀV. 1,15.</ls>		
+B	source	1	0	0	plain=1	BÖHTLINGK ? [Cologne Addition] usu. preceded by 'z.'	<ls>B. A. J. 10,127</ls>		
+BHADRAB	source	1	0	0	multi_locus=1		<ls>BHADRAB. 1,21. 27. 31. 42. 44. 47. 50. 70. 127. 2,91. 3,59</ls>		
+BHAR	source	1	0	3	plain=1	BHARATA, ein Autor über Schauspielkunst, verschieden vom Scholiasten zum AK. (dieser nach 	<ls>BHAR. NĀṬYAŚ. 34,4. 5.</ls>		
+BHOJAPRAB	source	1	0	0	plain=1		<ls>BHOJAPRAB. 90,6.</ls>		
+BHĀM	source	1	0	0	roman=1	BHĀMINĪVILĀSA ? [Cologne Addition]	<ls>BHĀM. V. 4,19</ls>		
+BHĀTUP	source	1	0	0	plain=1	? [Cologne Addition]	<ls>BHĀTUP. 28,59.</ls>		
+BHĀṬṬ	source	1	0	0	plain=1	? [Cologne Addition]	<ls>BHĀṬṬ. 6,8.</ls>		
+BRAHMOP	source	1	0	0	plain=1	BRAHMOPANIṢAD.	<ls>BRAHMOP. S. 250</ls>		
+CANDRAKĪRTI	source	1	0	0	plain=1		<ls>CANDRAKĪRTI 41.</ls>		
+Caraka	source	1	0	0	plain=1		<ls>Caraka 2,6.</ls>		
+CĀT	source	1	0	0	plain=1	Gedicht vom Vogel Cātaka in der Zeitschrift für die Kunde des Morgenlandes, IV, S. 374--37	<ls>CĀT. 1.</ls>		
+DH	source	1	0	0	roman=1		<ls>DH. V. 7,7</ls>		
+DHŪRTAN	source	1	0	0	plain=1		<ls>DHŪRTAN. 37</ls>		
+Daśak	source	1	0	1	plain=1		<ls>Daśak. 19,8.</ls>		
+DĀYABH	source	1	0	0	plain=1	DĀYABHĀGA, ed. Calc. 1829 (GILD. Bibl. 344).	<ls>DĀYABH. 273,1.</ls>		
+GOLĀDHY	source	1	0	1	plain=1	? [Cologne Addition]	<ls>GOLĀDHY. BHUVANAK. 26.</ls>		
+Gopāl	source	1	0	0	plain=1		<ls>Gopāl. 118,3; 119,32.</ls>		
+HARIR	source	1	0	0	plain=1	? [Cologne Addition]	<ls>HARIR. 589.</ls>		
+Hariv	source	1	0	0	plain=1		<ls>Hariv. 2</ls>		
+IL	structural	1	0	0	roman=1		<ls>IL. 3,221.</ls>		
+INDṚ	source	1	0	0	plain=1	? [Cologne Addition]	<ls>INDṚ. 5,4.</ls>		
+J	source	1	0	4	roman=1	? [Cologne Addition]	<ls>J. A. O. S. Procc. Oct. 1885, XXVI. fg.</ls>		
+JYOT	source	1	0	0	plain=1	JYOTIṢA.	<ls>JYOT. 27.</ls>		
+JĀBĀLOP	source	1	0	1	plain=1	? [Cologne Addition]	<ls>JĀBĀLOP. S. 444</ls>		
+KAT	source	1	0	0	plain=1	? [Cologne Addition]	<ls>KAT. 72,168.</ls>		
+KATHOP	source	1	0	0	plain=1	? [Cologne Addition]	<ls>KATHOP. 5,3.</ls>		
+KAURAP	source	1	0	0	plain=1	? [Cologne Addition]	<ls>KAURAP. 33.</ls>		
+KUHNʼS	source	1	0	0	range_fgg=1		<ls>KUHNʼS Z. 27,216. fg.</ls>		
+Kalāv	source	1	0	0	roman=1		<ls>Kalāv. I,33</ls>		
+Kauṣ	source	1	0	0	plain=1		<ls>Kauṣ. Up. 1,2.</ls>		
+Kaṭhop	source	1	0	0	plain=1		<ls>Kaṭhop. 3,5</ls>		
+Kuhn	source	1	0	0	plain=1		<ls>Kuhn's Z. 27,28</ls>		
+KĀTHOP	source	1	0	0	plain=1	? [Cologne Addition]	<ls>KĀTHOP. 6. 15.</ls>		
+KĀVYA-PR	source	1	0	0	plain=1	KĀVYAPRAKĀŚA, ed. Calc. (GILD. Bibl. 265).	<ls>KĀVYA-PR. 185,7</ls>		
+KĀVYAPR	source	1	0	0	plain=1	? [Cologne Addition]	<ls>KĀVYAPR. 154,10</ls>		
+Kār	source	1	0	0	plain=1	Kārikā.	<ls>Kār. 4. 8</ls>		
+Kāty	source	1	0	0	plain=1		<ls>Kāty. Śr. 20,3,20.</ls>		
+Kāṭh	source	1	0	0	plain=1		<ls>Kāṭh. 9,8</ls>		
+KṚṢIS	source	1	0	0	plain=1	? [Cologne Addition]	<ls>KṚṢIS. 7,26.</ls>		
+KṚṢṆAJ	source	1	0	0	plain=1	? [Cologne Addition]	<ls>KṚṢṆAJ. 279. 289.</ls>		
+KṢURIKOP	source	1	0	0	plain=1		<ls>KṢURIKOP. 14. 19</ls>		
+LASS	source	1	0	0	plain=1	? [Cologne Addition]	<ls>LASS. 23.</ls>		
+LASSEN	source	1	0	1	plain=1	? [Cologne Addition]	<ls>LASSEN, Institutt. 7.</ls>		
+M	format	1	1635	1	plain=1	MANU'S Gesetzbuch in der Ausg. von LOISELEUR DESLONGCHAMPS (GILD. Bibl. 289).	<ls>M. MÜLLER, Transl. 1,180.</ls>	<ls>M. 2,109.</ls>	https://sanskrit-lexicon-scans.github.io/manu/index.html?2,109
+MAHĀN	source	1	0	0	plain=1	MAHĀNĀṬAKA (GILD. Bibl. 220).	<ls>MAHĀN. 552.</ls>		
+MAHĀVASTU	source	1	0	0	plain=1		<ls>MAHĀVASTU 56,2</ls>		
+MANTRABR	source	1	0	0	plain=1		<ls>MANTRABR. 1,2,5</ls>		
+MBH	format	1	5737	16	plain=1	MAHĀBHĀRATA, ed. Calc. (GILD. Bibl. 93). Von S. 521 des Wörter- buchs sind die drei ersten	<ls n="MBH.">2.</ls>	<ls>MBH. 1,1090.</ls>	https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1090
+MUDHĀR	source	1	0	0	multi_locus=1	? [Cologne Addition]	<ls>MUDHĀR. 24,5. 25,8.</ls>		
+Med	source	1	0	4	plain=1		<ls>Med. 1,57</ls>		
+Mudrār	source	1	0	0	plain=1		<ls>Mudrār. 63,9</ls>		
+MĀṆḌ	source	1	0	0	plain=1		<ls>MĀṆḌ. UP. 12.</ls>		
+NIDĀNA	source	1	0	0	plain=1	? [Cologne Addition]	<ls>NIDĀNA 1,6,5</ls>		
+NIRṆAYAS	source	1	0	0	range_fgg=1	? [Cologne Addition]	<ls>NIRṆAYAS. 30,a,6. fgg.</ls>		
+NYĀYAM	source	1	0	0	plain=1		<ls>NYĀYAM. 1,1,26</ls>		
+NĀGĀN	source	1	0	0	plain=1	? [Cologne Addition]	<ls>NĀGĀN. 19,10.</ls>		
+NĀṬYAŚ	source	1	0	0	plain=1	NĀṬYAŚĀSTRA ? [Cologne Addition]	<ls>NĀṬYAŚ. 18,73.</ls>		
+P	format	1	1034	15	plain=1	PĀṆINI'S acht Bücher grammatischer Regeln (GILD. Bibl. 244).	<ls>P. Einl. 2.</ls>	<ls>P. 6,4,57.</ls>	https://ashtadhyayi.com/sutraani/6/4/57
+PRATYABDAŚ	source	1	0	0	plain=1	? [Cologne Addition]	<ls>PRATYABDAŚ. 22.</ls>		
+PRB	source	1	0	0	plain=1	? [Cologne Addition]	<ls>PRB. 60,2.</ls>		
+Par	source	1	0	0	plain=1		<ls>Par. Sār. 27,5.</ls>		
+Pischel	source	1	0	0	roman=1		<ls>Pischel, Ved. Stud. I,72.</ls>		
+RATNAM	source	1	0	0	plain=1	RATNAMĀLĀ, ein Wörterbuch; nach Anführungen im ŚKDR.	<ls>RATNAM. 104</ls>		
+RĀJA	source	1	0	0	plain=1	? [Cologne Addition]	<ls>RĀJA. 2,28.</ls>		
+SMARADĪP	source	1	0	1	plain=1	? [Cologne Addition]	<ls n="SMARADĪP.">36</ls>		
+SPAṢṬĀDH	source	1	0	0	plain=1	? [Cologne Addition]	<ls>SPAṢṬĀDH. 4.</ls>		
+SUPARṆ	source	1	0	0	plain=1		<ls>SUPARṆ. 2,1</ls>		
+Samay	source	1	0	1	roman=1		<ls>Samay. V,14.</ls>		
+Sizzungsberichte	source	1	0	0	plain=1		<ls>Sizzungsberichte der phil.-hist. Klasse der Wiener Ak. 106,483</ls>		
+Spruch	source	1	0	0	plain=1	? [Cologne Addition]	<ls>Spruch 5042.</ls>		
+Suśr	source	1	0	0	plain=1		<ls n="Suśr.">2,488,21.</ls>		
+SĀṂKHYAPR	source	1	0	0	plain=1	? [Cologne Addition]	<ls>SĀṂKHYAPR. S. 7, Z. 18.</ls>		
+TARKASAM̃GR	source	1	0	0	plain=1	? [Cologne Addition]	<ls>TARKASAM̃GR. 58.</ls>		
+TRIPR	source	1	0	0	plain=1	? [Cologne Addition]	<ls>TRIPR. 62.</ls>		
+TĀRAN	source	1	0	0	plain=1	? [Cologne Addition]	<ls>TĀRAN. 4. 24.</ls>		
+UP	source	1	0	0	multi_locus=1	? [Cologne Addition]	<ls>UP. 11,7,2,8.</ls>		
+UPAK	source	1	0	0	plain=1	? [Cologne Addition]	<ls>UPAK. 73</ls>		
+UPAL	source	1	0	0	plain=1	UPALEKHA de KRAMAPĀṬHA libellus. Ed. G. PERTSCH. Berolini 1854. 8º.	<ls>UPAL. 9,15.</ls>		
+UTPALA	source	1	0	0	vol_marker=1	? [Cologne Addition]	<ls>UTPALA zu VARĀH. BṚH. 26 (24),4</ls>		
+Uttamac	source	1	0	0	plain=1		<ls>Uttamac. 107. 285.</ls>		
+Uttarar	source	1	0	0	roman=1		<ls>Uttarar. V,31</ls>		
+VARARUCI	source	1	0	0	plain=1	? [Cologne Addition]	<ls>VARARUCI 10,2</ls>		
+VIKR	format	1	99	0	plain=1	VIKRAMORVAŚĪ, ed. BOLLENSEN (GILD. Bibl. 206). Eine einfache Zahl verweist auf einen Śloka	<ls>VIKR. drāv. 654,24</ls>	<ls>VIKR. 11,11.</ls>	https://sanskrit-lexicon-scans.github.io/vikramor/app2?11,11
+Vaij	source	1	0	0	plain=1		<ls>Vaij. 86,49</ls>		
+Verz	source	1	0	0	plain=1		<ls>Verz. d. B. H. 278, Śl. 42.</ls>		
+Viṣṇubh	source	1	0	0	roman=1		<ls>Viṣṇubh. III,31</ls>		
+VĀGBH	source	1	0	0	plain=1	? [Cologne Addition]	<ls>VĀGBH. 26,9.</ls>		
+VṚDDHACĀṆ	source	1	0	0	plain=1	? [Cologne Addition]	<ls>VṚDDHACĀṆ. 13,14.</ls>		
+WINDISCHMANN	source	1	0	0	plain=1	? [Cologne Addition]	<ls>WINDISCHMANN, Sancara 94.</ls>		
+WISE	source	1	0	0	plain=1	Commentary on the Hindu System of Medicine, by T. A. WISE, M. D. Calcutta 1845. 8º.	<ls>WISE 293.</ls>		
+YAJÑADATTAV	source	1	0	0	plain=1		<ls>YAJÑADATTAV. 2,54.</ls>		
+YANTRĀDHY	source	1	0	0	plain=1	? [Cologne Addition]	<ls>YANTRĀDHY. 9.</ls>		
+YOGAYĀTRĀ	source	1	0	0	plain=1	? [Cologne Addition]	<ls>YOGAYĀTRĀ 2,22</ls>		
+YĀJN	source	1	0	0	multi_locus=1	? [Cologne Addition]	<ls>YĀJN. 1,162. 2,32.</ls>		
+Yājñ	source	1	0	0	plain=1		<ls>Yājñ. 2,266.</ls>		
+ebend	source	1	0	1	ibid=1		<ls>ebend. 407. 410</ls>		
+{{MEGH	source	1	0	0	plain=1		<ls>{{MEGH. 28->MEGH. 29||20250521|Jim Funderburk|https://github.com/sanskrit-lexicon/csl-orig/issues/2758|}}</ls>		
+{{ŚR	source	1	0	0	multi_locus=1		<ls>{{ŚR.1,8,4.9,2,4.->MĀN.ŚR.1,8,4.9,2,4.||20160118|Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/237|inferred}}</ls>		
+{{‹ed	source	1	0	0	plain=1		<ls>{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8</ls>		

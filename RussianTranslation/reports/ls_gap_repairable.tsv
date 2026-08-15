@@ -1,0 +1,5 @@
+repair	occurrences	example_citation	example_href
+expand_pratis	36	<ls>ṚV. PRĀT. 13,13.</ls>	https://sanskrit-lexicon-scans.github.io/rvps/app1/?13,13
+drop_alt_numbering	15	<ls>VARĀH. BṚH. S. 41 (40),5.</ls>	https://sanskrit-lexicon-scans.github.io/brihatsam/app1?41,5
+uppercase_prefix	7	<ls>MBh. 1,71,17.</ls>	https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?1,71,17
+drop_edition_tail	2	<ls>R. ed. Ser. 1,8,19</ls>	https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,8,19
