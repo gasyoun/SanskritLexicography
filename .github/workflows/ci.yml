@@ -296,8 +296,19 @@ jobs:
           # re-measure timings. A mismatch here means the offline pipeline's output
           # changed -- read the printed fixture hash before re-pinning, and never copy
           # the new value into prose instead of into this line.
+          #
+          # Re-pinned 8d0bbb2f1f -> 5cfcedea1c (H2853, 15-08-2026). Deliberate, and
+          # diagnosed the way the paragraph above demands: the FIXTURE hash is
+          # unchanged (569660c689d0659b on both sides), so the inputs did not move
+          # and the PIPELINE output did. Cause: `promote_final_cards` stamps
+          # `citation_edges`, whose `scan_href` comes from
+          # `ls_resolver.generate_href`; H2853 made the previously-dead `MBH.`
+          # prefix branch resolve, so 5 `scan_href` fields flipped null -> URL.
+          # The delta was measured over all 36,544 distinct citations in the store
+          # (+5 resolved, 0 lost, 0 changed) and each new target verified HTTP 200,
+          # so this is a known, bounded output change rather than an unexplained one.
           python src/pilot/h1339_offline_bench.py --warmups 0 --runs 1 \
-            --expect-signature 8d0bbb2f1f
+            --expect-signature 5cfcedea1c
       - name: Validate <ls> link enrichment (Panini + Spr. (II), H1307)
         working-directory: RussianTranslation
         run: python src/pilot/ls_enrichment_selftest.py
