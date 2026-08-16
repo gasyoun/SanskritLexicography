@@ -1,0 +1,9 @@
+{
+  "N_print_readiness_window": 2319,
+  "human_cards_on_sheet": 150,
+  "machine_rejects_D1_D3_D4": 1533,
+  "german_residue_excluded": 636,
+  "already_decided": 0,
+  "rule": "MG Б 26-07-2026 — auto-reject counts as reject, not dropped from N",
+  "H1650": true
+}

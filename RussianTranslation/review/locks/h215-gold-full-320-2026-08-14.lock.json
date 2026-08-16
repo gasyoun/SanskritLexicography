@@ -1,7 +1,7 @@
 {
   "schema": "review-lock/v1",
   "sheet_id": "h215-gold-full-320-2026-08-14",
-  "content_hash": "sha256:d9125d7d16c5086160485ccd338416127c464a8ec022848554868c60a0279bce",
+  "content_hash": "sha256:de143538e3fc89c3a06116d1a17d68d1e5a13a959c2970e21cdf84c9cdca4354",
   "generated": "2026-08-14",
   "gate": "G6",
   "n_items": 320,
@@ -329,6 +329,6 @@
   ],
   "source_html": "h215_gold_full_320_sheet.html",
   "mode": "stamped",
-  "created": "2026-08-14",
+  "created": "2026-08-16",
   "tool": "review_binding.py (H1404 binding standard)"
 }

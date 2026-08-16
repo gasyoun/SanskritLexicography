@@ -1,7 +1,7 @@
 {
   "schema": "review-lock/v1",
   "sheet_id": "sanskritlexicography-bli_gold_b1_500_review",
-  "content_hash": "sha256:901cd6da84e62ddc1c60cb5cc29ad06d02d52eccd4f48a487b94efbc8c92bd92",
+  "content_hash": "sha256:ff2f7beae876bae979a0a8f2d6f038798434ced1820b5155962a6245d71c396c",
   "generated": "12-08-2026",
   "gate": null,
   "n_items": 500,
@@ -509,6 +509,6 @@
   ],
   "source_html": "sanskritlexicography-bli_gold_b1_500_review.html",
   "mode": "stamped",
-  "created": "2026-08-12",
+  "created": "2026-08-16",
   "tool": "review_binding.py (H1404 binding standard)"
 }

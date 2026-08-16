@@ -1,7 +1,7 @@
 {
   "schema": "review-lock/v1",
   "sheet_id": "h2805_q3_deploy",
-  "content_hash": "sha256:0f88e41b209be7fb85ad85dfa1c55bc93ce0cc3932306de57ead8b65cb280443",
+  "content_hash": "sha256:c0208319e15d8fd28b37722611831bc3ee480c3aade98d6529f7951bf7d22775",
   "generated": "2026-08-15",
   "gate": null,
   "n_items": 7,
@@ -16,6 +16,6 @@
   ],
   "source_html": "h2805_q3_deploy_sheet.html",
   "mode": "stamped",
-  "created": "2026-08-15",
+  "created": "2026-08-16",
   "tool": "review_binding.py (H1404 binding standard)"
 }
