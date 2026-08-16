@@ -106,8 +106,8 @@ the place-sense.
 
 Two halves, and the disappointing half first.
 
-**Druzhinin's Aṣṭāṅgahṛdaya translation was not found**, confirming the gap the handoff
-flagged: it is in no repo under `GitHub/`. The 79-file Ayurveda course transcript set in
+**Druzhinin's Aṣṭāṅgahṛdaya translation was not found in the repos**, confirming the gap
+the handoff flagged: it is in no repo under `GitHub/`. The 79-file Ayurveda course transcript set in
 Uprava was searched and **does not name him anywhere** (0 hits across all 79 files), so no
 term choice in it can be attributed to him. What that corpus *does* establish — and this
 is reported as an anonymous AHS-teaching source, not as Druzhinin — is that its Russian
@@ -115,6 +115,23 @@ for the organ, in the basti/suppository passages where AHS uses `guda`, is consi
 **«прямая кишка»**; «кишки» is never used for that referent. Nothing further from
 `stenogrammy/` is quoted or characterised here: it is 152-FZ personal data and this file is
 public.
+
+**Located the same day, and it changes nothing — for a reason worth recording.** MG
+supplied the translation: it exists off-git as a live Google Doc (URL in the private hub,
+[Uprava PROJECT_INTERLINKS](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md)
+§ Corpus & morphology feeds — it is a third party's unpublished work in progress, so it is
+not mirrored into this public repo). It is exactly the shape this kind of cross-check
+wants: Devanagari → IAST → word-by-word Russian with each Sanskrit lemma in parentheses →
+smooth Russian, 49 `ТЕКСТ` blocks. But it covers **Sūtrasthāna 1–4 only**
+(`āyuṣkāmīya` · `dinacaryā` · `ṛtucaryā` · `roganutpādanīya`), and `guda` first occurs at
+**Sū. 6**. Searched: **zero** occurrences in Devanagari, IAST, or Russian. Its single
+anorectal mention is a footnote on *ānāha* rendering the region «область ануса» and
+pointing the reader at AHS Nid. 7.46–52 — one of the chapters that *does* carry `guda`,
+and one this edition has not reached.
+
+So the corpus verdict below stands unchanged, and the residual narrows from *find the
+translation* to *wait for it to reach Sū. 6, Nid. 7 or Cik. 8* — the chapters where the
+word actually lives.
 
 **The corpus half is decisive on its own.** DCS's lemma-annotated Aṣṭāṅgahṛdayasaṃhitā
 carries `guda` in **30 of its 120 files, 79 occurrences** (the handoff's «42 files» was an
@@ -169,5 +186,6 @@ the misalignment it is meant to catch.
 | 15-08-2026 | Store created; four H798 votes recorded, `guda` gender logged as refuted, two cross-checks left open | Opus 5 (`claude-opus-5`) |
 | 16-08-2026 | `okas` cross-check closed against Elizarenkova over all 12 RV attestations (rvlinks); row 1 → `recorded`, place-sense promoted over pleasure-sense, «родина» confirmed unattested | Opus 5 (`claude-opus-5`) |
 | 16-08-2026 | `guda` cross-check closed against the DCS Aṣṭāṅgahṛdayasaṃhitā annotation (79 occurrences / 30 files); row 3 → `recorded` with an Ayurvedic-register rider. Druzhinin's own translation not located; the RV 10.163.3 attribution in the 2013 memo corrected | Opus 5 (`claude-opus-5`) |
+| 16-08-2026 | Druzhinin's translation located off-git (MG); covers Sūtrasthāna 1–4 only and contains `guda` zero times, so the verdict is unchanged. Registered in Uprava PROJECT_INTERLINKS; residual narrowed to "wait for Sū. 6 / Nid. 7 / Cik. 8" | Opus 5 (`claude-opus-5`) |
 
 _Dr. Mārcis Gasūns_
