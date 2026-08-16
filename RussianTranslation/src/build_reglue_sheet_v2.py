@@ -111,6 +111,8 @@ TYPOLOGY = {
     "restate":          ("restate",  "abridging", "restates", "PW says the same thing more briefly — NOT a new meaning"),
     "pw_correct":       ("correct",  "abridging", "cancels",  "PW changes a value (gender, form, reading) — overrides PWG"),
     "pw_cancels":       ("delete",   "abridging", "cancels",  "PW withdraws PWG material"),
+    # H2880 wave 2 — an edit carried inside the PWG skeleton itself.
+    "pwg_internal_correction": ("amend", "internal", "cancels", "Nachtrag / addendum inside PWG amending this sense — not a sense of its own"),
 }
 CLASS_LABEL = {"adds": "＋ added meaning", "restates": "≈ restatement",
                "cancels": "✕ cancels / corrects"}
@@ -568,8 +570,16 @@ def selftest():
 
     # every subtype the relationship sidecar can emit must be classified
     from_spec = {"restate", "nws_at_sense", "a2a", "sch_star", "foreign_fragment",
-                 "derived_sense", "pw_correct", "pw_cancels"}
+                 "derived_sense", "pw_correct", "pw_cancels",
+                 "pwg_internal_correction"}
     check(from_spec <= set(TYPOLOGY), "every ADDENDA_TYPOLOGY subtype is classified")
+    # H2880: the sidecar is the authority on what can appear, so read it rather
+    # than trusting the literal above to stay in step with the classifier.
+    from edition_rel import SUBTYPES as _SUBTYPES
+    unclassified = {s for s in _SUBTYPES
+                    if s not in ("base", "unknown")} - set(TYPOLOGY)
+    check(not unclassified,
+          "every classifier subtype is in TYPOLOGY (missing: %r)" % unclassified)
 
     # ---------------------------------------------------------------- H2844 P1
     # The newline-collapse fixtures. Three things must hold at once: an

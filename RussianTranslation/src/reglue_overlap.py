@@ -209,6 +209,12 @@ def measure_all():
     for r in rel:
         rec = store.get((r["subcard"], str(r["sense_tag"])))
         if not rec or rec.get("layer") == "pwg":
+            # H2880: the sidecar now also carries PWG-internal corrections, and
+            # this skip keeps them out DELIBERATELY, not by accident. The gloss-
+            # overlap axis was measured and rejected as a signal (FINDINGS §541);
+            # extending a rejected metric to a new row class would spread it, not
+            # test it. Wave 2 introduces the rows; whether an overlap number
+            # means anything for them is a separate question with its own gate.
             continue
         ip = r["relationship"]["insertion_point"]
         target = placement_target(idx, r)
@@ -227,7 +233,8 @@ def measure_all():
     return rows
 
 
-CLASS = {"restate": "restates", "pw_correct": "cancels", "pw_cancels": "cancels"}
+CLASS = {"restate": "restates", "pw_correct": "cancels", "pw_cancels": "cancels",
+         "pwg_internal_correction": "cancels"}
 
 
 def klass(subtype):

@@ -103,19 +103,6 @@
 **2))** <div n="1">— 2) {%успокаивать, утишать, умиротворять%}
 <ls>ŚAT. BR. 1,7,3,11.</ls> <ls n="ŚAT. BR.">3,4,3,1.</ls>
 
-**addendum/continuation)** <div n="v">— <ab>Vgl.</ab> {#saMSama#} . — <ab>caus.</ab> <ab>dass.</ab>
-<ls>ŚĀṄKH. ŚR. 14,29,3. 5.</ls>
-<ls>MBH. 1,992.</ls>
-<ls>R. 2,98,1</ls> (<ls n="GORR. 2,">107,1</ls> <ls>GORR.</ls>). {#astramastreRa#}
-<ls>MBH. 10,706.</ls> {#ratim#}
-<ls>R. GORR. 2,106,11.</ls> {#prakopam#}
-<ls>KĀM. NĪTIS. 15,22.</ls> {#reRum#}
-<ls>HARIV. 13757.</ls> {#kAryARi#} {%довести до конца, совершить, уладить%}
-<ls>Spr. (II) 1682.</ls> {#agnim#} {%погасить%}
-<ls>R. 2,97,15.</ls> {#tvAmapi kAlaH saMSamayizyati#} так <ab>v. a.</ab> {%упокоить навеки%}
-<ls>MBH. 12,8143.</ls> {#BAratayudDapfzWam#} {%уничтожить, покончить с%}
-<ls n="MBH.">5,5780.</ls> <ab>Vgl.</ab> {#saMSamana#} <ab>fg.</ab>
-
 **caus.)** <ls>ŚAT. BR. 3,1,3,10.</ls> — <ab>caus.</ab> {%успокаивать, умиротворять; утишать, прекращать, гасить%}: {#sAntvena#}
 <ls>M. 8,391.</ls>
 <ls>MBH. 2,2309.</ls> <ls n="MBH.">3,12978.</ls> <ls n="MBH.">8,3355</ls> (следует, вероятно, читать {#praSamaya mAdya#} <ab>st.</ab> {#me 'dya#} <ls>ed. Calc.</ls> и {#praSamayasedya#} <ls>ed. Bomb.</ls>). {#nijatanayaM praSamayya taM prakopAt#}
@@ -211,6 +198,19 @@
 <ls>HARIV. 11939.</ls> <ab>Vgl.</ab> {#praSamana#} .
 
 **sub)** <div n="v">— <ab>Vgl.</ab> {#upaSamana#} <ab>fg.</ab>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum/continuation› <div n="v">— <ab>Vgl.</ab> {#saMSama#} . — <ab>caus.</ab> <ab>dass.</ab>
+<ls>ŚĀṄKH. ŚR. 14,29,3. 5.</ls>
+<ls>MBH. 1,992.</ls>
+<ls>R. 2,98,1</ls> (<ls n="GORR. 2,">107,1</ls> <ls>GORR.</ls>). {#astramastreRa#}
+<ls>MBH. 10,706.</ls> {#ratim#}
+<ls>R. GORR. 2,106,11.</ls> {#prakopam#}
+<ls>KĀM. NĪTIS. 15,22.</ls> {#reRum#}
+<ls>HARIV. 13757.</ls> {#kAryARi#} {%довести до конца, совершить, уладить%}
+<ls>Spr. (II) 1682.</ls> {#agnim#} {%погасить%}
+<ls>R. 2,97,15.</ls> {#tvAmapi kAlaH saMSamayizyati#} так <ab>v. a.</ab> {%упокоить навеки%}
+<ls>MBH. 12,8143.</ls> {#BAratayudDapfzWam#} {%уничтожить, покончить с%}
+<ls n="MBH.">5,5780.</ls> <ab>Vgl.</ab> {#saMSamana#} <ab>fg.</ab>
 
 ## h4
 

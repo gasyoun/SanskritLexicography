@@ -130,55 +130,6 @@
 <ls>R. 1,62,24.</ls> {%велеть связать; говорить, что нужно связать%}: {#kecittu tatspfzwinamiti cARqAlodakyAdiBiH sarvEH saMbanDayanti#}
 <ls>KULL.</ls> к <ls>M. 5,85.</ls>
 
-**Nachtr.)** <div n="v">— <ab>Vgl.</ab> {#saMnibanDa#} <ab>u. s. w.</ab>
-
-**Nachtrag (T26))** <div n="v">— <ab>Vgl.</ab> {#vibanDa#} .
-
-**Nachtrag (T29))** <div n="v">— <ab>Vgl.</ab> {#aBisaMbanDa#} .
-
-**Nachtrag tail (T104))** <div n="v">— <ab>Vgl.</ab> {#pratibaDya (pratibanDya)#} <ab>fgg.</ab>
-
-**Nachtrag-1 (T97))** <div n="v">— <ab>Vgl.</ab> {#prabadDar#} <ab>fgg.</ab>
-
-**Nachtrag-1a (T98–T99-1) anbinden)** <div n="p">—
-<div n="1"> 1) {#prati#} привязывать: {#vfkze nAvaM pratibaDnIzva#} привяжи свой корабль к дереву
-<ls>ŚAT. BR. 1,8,1,6.</ls> {#anyanOpratibadDAm (nAvam)#}
-<ls>KĀM. NĪTIS. 7,33.</ls> {#dAmnA cEvodare badDvA pratyabanDadulUKale#}
-<ls>HARIV. 3449.</ls> {#SirasyetaM maRiM rAjA pratibaDnAtu#}
-<ls>MBH. 10,756.</ls> {#pItapratibadDavatsA#}
-<ls>RAGH. 2,1.</ls>
-<ls>SUŚR. 1,161,21.</ls> {#sTUlAntrapratibadDa#} прикрепленный к, висящий на
-<ls n="SUŚR.">258,10. 324,3.</ls> вставлять в оправу: {#yadi maRistrapuRi pratibaDyate#}
-<ls>Spr. 595.</ls> украшать, отделывать: {#bahalAnurAgakuruvindadalapratibadDamaDyamiva digvalayam#}
-<ls>ŚIŚ. 9,8.</ls> {#pratibadDa#} связанный, соединенный
-<ls>KAP. 1,101.</ls> {#yo yena pratibadDaH syAt#}
-<ls>Spr. 2560.</ls> снабженный, наделенный: {#dIptANgadayugapratibadDamahABuja#}
-<ls>MBH. 11,711.</ls> {#DarmArTapratibadDatA#}
-<ls>H. 69.</ls> {#paSuvatparatantratvena pratibadDaH#} так: зависимый
-<ls>ŚAṂK.</ls> к <ls>BṚH. ĀR. UP. S. 253.</ls> {#mftyu˚#} подверженный смерти
-<ls n="BṚH. ĀR. UP. S.">98.</ls> {#rasAntarezu pratibadDarAgam#} так: созвучный, гармонирующий
-<ls>KUMĀRAS. 7,91.</ls>
-
-**Nachtrag-2a (T100) heften, richten)** <div n="1">— 2) {%устремлять, направлять%}: {#mamedaM syAditi hi sarvezAM tatrASA pratibadDA#}
-<ls>ŚAṂK.</ls> к <ls>BṚH. ĀR. UP. S. 270.</ls> {#svAmino yasyoparyAsTA pratibadDA#}
-<ls>PAÑCAT. ed. orn. 60,24.</ls> {#ASApratibadDacitta#}
-<ls n="PAÑCAT. ed. orn.">31,6.</ls>
-
-**Nachtrag-3a (T101) verschliessen, abschneiden)** <div n="1">— 3) {%закрывать, отрезать%}: {#pratibaDnAti hi SreyaH pUjyapUjAvyatikramaH#}
-<ls>RAGH. 1,79.</ls> {#asya svargaprAptiranena duzkftena pratibaDyate#}
-<ls>KULL.</ls> к <ls>M. 9,254.</ls> {#pratibadDaprasara#}
-<ls>MALLIN.</ls> к <ls>KUMĀRAS. 3,12.</ls>
-
-**Nachtrag-4a (T102) von sich weisen)** <div n="1">— 4) отталкивать кого-л. от себя, держать кого-л. вдали от себя: {#pratyabaDnAccArTapatim#}
-<ls>DAŚAK.</ls> в <ls>BENF. Chr. 190,6.</ls> {#parEH pratibaDyamAno 'pi#}
-<ls>DURGA</ls> к <ls>NIR.</ls> при <ls>MUIR, ST. 2,184.</ls> {#pratibadDAstu bAhIkAH#} так: с B. не желают иметь ничего общего
-<ls>MBH. 8,2108.</ls> {#pratibadDa = manohata, pratihata^, hata#}
-<ls>AK. 3,1,41.</ls>
-<ls>H. 439.</ls>
-
-**Nachtrag-5a (T103) verwickelt)** <div n="1">— 5) {#pratibadDa#} {%запутанный, трудно разрешимый%}
-<ls>VARĀH. BṚH. S. 2,1.</ls>
-
 **cross-ref)** <div n="v">— <ab>Vgl.</ab> {#nirbanDa#} <ab>fgg.</ab>
 
 **etym)** <div n="p">— {#upasam#} {%привязывать%}: {#ve\ta\sa\SA\Kopa\saMba^dDA Bavati#}
@@ -203,6 +154,61 @@
 <ls>KUMĀRAS. 5,60.</ls> {#badDaM vadane GarmAmBasAM jAlakam#} {%установилось, наличествует%}
 <ls>ŚĀK. 29.</ls> {#badDa#} при <ab>Anf.</ab> <lex>adj.</lex> <ab>compp.</ab> часто (<ab>s.</ab> выше) имеет значение, сходное с {#jAta#}. {# subadDa#} при <ab>Schol.</ab> к <ls>JAIM. 1,32</ls>
 по-видимому, означает {%вполне уместный, хорошо подходящий%}.
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtr.› <div n="v">— <ab>Vgl.</ab> {#upabanDa#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtr.› <div n="v">— <ab>Vgl.</ab> {#saMnibanDa#} <ab>u. s. w.</ab>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-1 (T97)› <div n="v">— <ab>Vgl.</ab> {#prabadDar#} <ab>fgg.</ab>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-1a (T98–T99-1) anbinden› <div n="p">—
+<div n="1"> 1) {#prati#} привязывать: {#vfkze nAvaM pratibaDnIzva#} привяжи свой корабль к дереву
+<ls>ŚAT. BR. 1,8,1,6.</ls> {#anyanOpratibadDAm (nAvam)#}
+<ls>KĀM. NĪTIS. 7,33.</ls> {#dAmnA cEvodare badDvA pratyabanDadulUKale#}
+<ls>HARIV. 3449.</ls> {#SirasyetaM maRiM rAjA pratibaDnAtu#}
+<ls>MBH. 10,756.</ls> {#pItapratibadDavatsA#}
+<ls>RAGH. 2,1.</ls>
+<ls>SUŚR. 1,161,21.</ls> {#sTUlAntrapratibadDa#} прикрепленный к, висящий на
+<ls n="SUŚR.">258,10. 324,3.</ls> вставлять в оправу: {#yadi maRistrapuRi pratibaDyate#}
+<ls>Spr. 595.</ls> украшать, отделывать: {#bahalAnurAgakuruvindadalapratibadDamaDyamiva digvalayam#}
+<ls>ŚIŚ. 9,8.</ls> {#pratibadDa#} связанный, соединенный
+<ls>KAP. 1,101.</ls> {#yo yena pratibadDaH syAt#}
+<ls>Spr. 2560.</ls> снабженный, наделенный: {#dIptANgadayugapratibadDamahABuja#}
+<ls>MBH. 11,711.</ls> {#DarmArTapratibadDatA#}
+<ls>H. 69.</ls> {#paSuvatparatantratvena pratibadDaH#} так: зависимый
+<ls>ŚAṂK.</ls> к <ls>BṚH. ĀR. UP. S. 253.</ls> {#mftyu˚#} подверженный смерти
+<ls n="BṚH. ĀR. UP. S.">98.</ls> {#rasAntarezu pratibadDarAgam#} так: созвучный, гармонирующий
+<ls>KUMĀRAS. 7,91.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-2a (T100) heften, richten› <div n="1">— 2) {%устремлять, направлять%}: {#mamedaM syAditi hi sarvezAM tatrASA pratibadDA#}
+<ls>ŚAṂK.</ls> к <ls>BṚH. ĀR. UP. S. 270.</ls> {#svAmino yasyoparyAsTA pratibadDA#}
+<ls>PAÑCAT. ed. orn. 60,24.</ls> {#ASApratibadDacitta#}
+<ls n="PAÑCAT. ed. orn.">31,6.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-3a (T101) verschliessen, abschneiden› <div n="1">— 3) {%закрывать, отрезать%}: {#pratibaDnAti hi SreyaH pUjyapUjAvyatikramaH#}
+<ls>RAGH. 1,79.</ls> {#asya svargaprAptiranena duzkftena pratibaDyate#}
+<ls>KULL.</ls> к <ls>M. 9,254.</ls> {#pratibadDaprasara#}
+<ls>MALLIN.</ls> к <ls>KUMĀRAS. 3,12.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-4a (T102) von sich weisen› <div n="1">— 4) отталкивать кого-л. от себя, держать кого-л. вдали от себя: {#pratyabaDnAccArTapatim#}
+<ls>DAŚAK.</ls> в <ls>BENF. Chr. 190,6.</ls> {#parEH pratibaDyamAno 'pi#}
+<ls>DURGA</ls> к <ls>NIR.</ls> при <ls>MUIR, ST. 2,184.</ls> {#pratibadDAstu bAhIkAH#} так: с B. не желают иметь ничего общего
+<ls>MBH. 8,2108.</ls> {#pratibadDa = manohata, pratihata^, hata#}
+<ls>AK. 3,1,41.</ls>
+<ls>H. 439.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-5a (T103) verwickelt› <div n="1">— 5) {#pratibadDa#} {%запутанный, трудно разрешимый%}
+<ls>VARĀH. BṚH. S. 2,1.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag tail (T104)› <div n="v">— <ab>Vgl.</ab> {#pratibaDya (pratibanDya)#} <ab>fgg.</ab>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag (T26)› <div n="v">— <ab>Vgl.</ab> {#vibanDa#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag (T29)› <div n="v">— <ab>Vgl.</ab> {#aBisaMbanDa#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtr› <div n="v">— <ab>Vgl.</ab> {#aNka˚, arTa˚#} (также
+<ls>VIKR. 32</ls>), {#ka˚, kari˚, ku˚, kUwa˚, keSa˚, dakziRA˚, paRa˚#} (также
+<ls>DAŚAK.</ls> в <ls>BENF. Chr. 183,20. 191,16</ls>), {#pattra˚, padma˚, paSu˚, pARi˚, pAda˚, prema˚, premA˚, maRi˚, rajju˚, roma˚, vatsa˚, vastra˚, vAtsa˚, veRI˚, SreRI˚#} .
 
 **+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vi#}
 <div n="1">— 1〉 {%привязывать с разных сторон; распрягать, натягивать%}.

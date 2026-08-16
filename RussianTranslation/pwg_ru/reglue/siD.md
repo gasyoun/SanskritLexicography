@@ -15,20 +15,6 @@
   — [PW·restate] <hom>2.</hom> √{#siD#}¦, {#si/Dyati#} (метрически или неточно также <ab>Med.</ab>)
   — [PW·restate] <div n="1">— 2〉 {%приносить пользу, давать плоды, иметь успех, удаваться, осуществляться, совершаться%}.
 
-**Nachtrag-1)** <div n="v">— <ab>Vgl.</ab> {#pratizedDar#} <ab>fgg.</ab> — <ab>caus.</ab>
-<div n="1"> 1) {%отражать, удерживать, отклонять%}: {#amAtyAn#}
-<ls>ĀŚV. GṚHY. 4,8,33.</ls> {#nahyetAm — SapantIM pratyazeDayat#}
-<ls>MBH. 1,1594.</ls> <ls n="MBH.">2,1787.</ls> <ls n="MBH.">4,468</ls> ({#pratyaze˚#} mit der <ls>ed. Bomb.</ls> zu lesen).
-<ls>HARIV. 946.</ls> <ls n="HARIV.">14247.</ls>
-<ls>R. 2,96,42</ls> (<ls n="GORR. 2,">105,41</ls> <ls>GORR.</ls>). <ls n="R.">4,9,63.</ls> {#astrARi#}
-<ls>MBH. 5,7171.</ls> {#mftyuSca pratizeDitaH#}
-<ls>R. 5,78,14.</ls>
-
-**Nachtrag-2)** <div n="1">— 2) {%запрещать что-л., воспрещать, не дозволять%}: {#mArgaM vAtasya#}
-<ls>HARIV. 10443.</ls> {#viDAvapratizeDite#}
-<ls>MBH. 12,350.</ls> <ab>Comm.</ab> к <ls>TS. PRĀT. 13,3.</ls> {%отрицать%}
-<ls>SARVADARŚANAS. 8,19.</ls>
-
 **anu)** <div n="p">— {#anu#} <ab>intens.</ab> {%гнать вдоль пути, подводить%}: {#u\to sa mahya\mindu^Bi\H zaqyu\ktA~ a^nu\sezi^Dat#}
 <ls>ṚV. 1,23,15.</ls>
 
@@ -48,6 +34,20 @@
 
 **vi)** <div n="p">— {#vi#}, {#gaNgAM viseDati (gatO)#}
 <ls>P. 8,3,113</ls>, <ab>Schol.</ab> <ls>VOP. 8,45.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-1› <div n="v">— <ab>Vgl.</ab> {#pratizedDar#} <ab>fgg.</ab> — <ab>caus.</ab>
+<div n="1"> 1) {%отражать, удерживать, отклонять%}: {#amAtyAn#}
+<ls>ĀŚV. GṚHY. 4,8,33.</ls> {#nahyetAm — SapantIM pratyazeDayat#}
+<ls>MBH. 1,1594.</ls> <ls n="MBH.">2,1787.</ls> <ls n="MBH.">4,468</ls> ({#pratyaze˚#} mit der <ls>ed. Bomb.</ls> zu lesen).
+<ls>HARIV. 946.</ls> <ls n="HARIV.">14247.</ls>
+<ls>R. 2,96,42</ls> (<ls n="GORR. 2,">105,41</ls> <ls>GORR.</ls>). <ls n="R.">4,9,63.</ls> {#astrARi#}
+<ls>MBH. 5,7171.</ls> {#mftyuSca pratizeDitaH#}
+<ls>R. 5,78,14.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-2› <div n="1">— 2) {%запрещать что-л., воспрещать, не дозволять%}: {#mArgaM vAtasya#}
+<ls>HARIV. 10443.</ls> {#viDAvapratizeDite#}
+<ls>MBH. 12,350.</ls> <ab>Comm.</ab> к <ls>TS. PRĀT. 13,3.</ls> {%отрицать%}
+<ls>SARVADARŚANAS. 8,19.</ls>
 
 **+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#sidh (=pw sidh 1)#} [Gen , unsp] ( sédhati I P ) отгонять, сдерживать, препятствовать. ṚV , KauśS . предписывать, наставлять. DhātuPā(MW) . обернуться хорошо, счастливо. ṚV . Pass. ( sidhyate ): быть прогнанным, отраженным. Mbh. MW : 1215
 

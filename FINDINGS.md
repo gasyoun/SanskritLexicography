@@ -6402,3 +6402,77 @@ so summing works without an anchor census double-counts.
 > regression gate `python scripts/corpus_truth_census.py --check` (CI-wired);
 > PR [gasyoun/CommentaryStrategies#186](https://github.com/gasyoun/CommentaryStrategies/pull/186).
 > §550 takes the next number.
+
+### §550. A `Nachtrag` almost never names the sense it amends, but a `1 (PW)` almost always does — so "corrections inside PWG" is two populations, not one
+
+🟠 **365 rows carried on the `pwg` layer of the `pwg_ru` store are not senses of
+PWG at all** — they are the authors' own later supplements (`Nachtrag` 184,
+`addendum` 88, `corrigendum` 7) or material the PW edition contributed at a PWG
+sense (`1 (PW)` / `PW` / `PW-1`, 86). Every one of them was rendered as an
+ordinary skeleton sense, so a card asserted the existence of a PWG sense called
+"Nachtrag" — the [§541](#541) axis defect one layer down.
+
+**Only 66 of 365 (18.1 %) name a target sense; 290 (79.5 %) carry no target
+marker at all.** The aggregate hides the real result, which is the split:
+
+| marker | rows | names a target | share |
+|---|---:|---:|---:|
+| `nachtrag` | 184 | 6 | **3.3 %** |
+| `addendum` | 88 | 18 | 20.5 % |
+| `corrigendum` | 7 | 1 | 14.3 % |
+| `pw_provenance` | 86 | 41 | **47.7 %** |
+
+A `Nachtrag` is printed as free-standing supplementary material and simply does
+not cite the sense it amends; a `1 (PW)` tag **is** a sense number, so it places
+about half the time. Treating the two as one class and quoting 18 % would
+describe neither. Where the tag names nothing the row stays `placement=false`
+with a reason — the wave-1 contract — never a guess.
+
+**The trap.** `Nachtrag-1`, `addendum-2`, `PW-1`, `Nachtrag §75-1` all carry a
+digit and in none of them is it a sense number: it is the ordinal of the
+addendum, or a section reference. Any rule that extracts "a digit" rather than a
+*leading* digit silently attaches ~200 rows to sense 1. The existing `lead_int`
+already declines them, so the fix was to pin that with negative selftests, not to
+write a new extractor.
+
+Two adjacent traps worth naming: a `PW` marker must be anchored whole-string or
+it fires on `PWG`/`PWKVN` and empties the skeleton of its real senses; and `op`
+must not be `correct`, because `build_reglue` renders `correct`/`delete` with a
+"cancels PWG" strikethrough — a Nachtrag amends its sense, it does not withdraw
+it.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2880 (wave 2 of issue
+> [#1736](https://github.com/gasyoun/SanskritLexicography/issues/1736)). Full
+> write-up: [REGLUE_SPEC §11](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/REGLUE_SPEC.md).
+> Re-runnable: `python src/placement_axis_check.py --store-rows 11603` (W2a–W2d).
+> §551 takes the next number.
+
+### §551. The re-glue sidecar's `(subcard, sense_tag)` key is not unique — every consumer that dicts on it silently drops 468 of 6 009 rows
+
+🔴 **133 `(subcard, sense_tag)` pairs occur more than once in
+`pwg_ru_relationships.jsonl`, shadowing 468 rows (7.8 %).**
+[`build_reglue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_reglue.py)
+`load()` builds `rel = {}` keyed by exactly that pair, so the last row wins and
+the other 467 never reach a card. The worst case is 25 rows collapsing to one
+(`_d_a~~h0_zz_pw01`, `Mit <div n="p">`); `vas~~h0_zz_pw01` loses 13 rows on each
+of senses 1 and 2. The loss is concentrated in `pw` (559 of the rows living under
+a duplicated key), with `nws` 26, `pwkvn` 14, `sch` 2.
+
+This is **pre-existing and orthogonal to the placement axis** — measured on wave
+1's own code re-run over the current store, and unchanged by wave 2 (identical
+133 keys / 468 rows before and after). It is recorded rather than fixed because
+de-duplicating changes which supplement reaches every card, i.e. it moves
+published review artifacts and needs its own gate.
+
+**Related, same class:** the committed lock for the published sheet
+`h180-reglue-evidence-2026-08-15` binds `sha256:d7c003ee…`, but that generation
+reproduces from **no** current code state — pristine `origin/master` and wave 2
+both render `sha256:61f32513…` over the same store. Nothing is invalidated today
+(no `decisions.json` exists for it, so no votes were cast), but the lock's
+promise — "check out the commit that created it and re-run" — does not currently
+hold, and the first voter to try would discover that.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2880. Measured over the wave-1
+> baseline sidecar rebuilt from `origin/master` (6 009 rows) and the wave-2
+> sidecar (6 374 rows), same store `sha256 811bbc21…`.
+> §552 takes the next number.

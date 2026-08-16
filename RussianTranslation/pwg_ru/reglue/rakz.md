@@ -72,8 +72,6 @@
 <ls>ṚV. 4,3,14.</ls> {%неустанно охраняющий%}
 <ls>SĀY.</ls>
 
-**pari+rakṣ — Nachtrag)** <div n="v">— <ab>Vgl.</ab> {#parirakzaka#} <ab>fgg.</ab>
-
 **pari+rakṣ — основная форма)** <div n="p">— {#pari#} {%охранять, беречь, защищать, стеречь, опекать, соблюдать, сохранять, спасать, servare%}: {#Gra\MsaM rakza^nta\M pari^ vi\Svato\ gaya^m#}
 <ls>ṚV. 5,44,7.</ls> {#ji\Ga\tsuBya^ i\maM me\ pari^ rakzata#}
 <ls>AV. 8,2,20.</ls> {#parirakzedimAH prajAH#} ({#rAjA#})
@@ -151,12 +149,14 @@
 <ls>MBH. 7,4410.</ls> {#droRaM ca ke vyarakzanta#}
 <ls n="MBH. 7,">7329.</ls>
 
-**ā+rakṣ — Nachtrag)** <div n="v">— <ab>Vgl.</ab> {#Arakza#} <ab>fgg.</ab>
-
 **ā+rakṣ — основная форма)** <div n="p">— {#A#} {%опекать, защищать, хранить, сторожить%}: {#A mA mi^trAvaruRe\ha ra^kzatam#}
 <ls>ṚV. 7,50,1.</ls> {#dvArARi yantrErArakzitAni#}
 <ls>MBH. 15,186.</ls> {#BaratArakzitaM putrarAjyam#}
 <ls>R. 2,52,58.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹ā+rakṣ — Nachtrag› <div n="v">— <ab>Vgl.</ab> {#Arakza#} <ab>fgg.</ab>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹pari+rakṣ — Nachtrag› <div n="v">— <ab>Vgl.</ab> {#parirakzaka#} <ab>fgg.</ab>
 
 **+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#rakṣ#} [Gen , unsp] ( rákṣati I P ) хранить (тайну). Kathās . щадить, считаться с (чужими чувствами). Mālav . остерегаться, отражать, удалять, предотвращать, расстраивать, причинять вред. AV v, 1 . скрываться, бояться (?). ṚV x, 68, 1
 
