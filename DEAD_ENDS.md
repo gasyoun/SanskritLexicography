@@ -1,6 +1,6 @@
 # DEAD_ENDS — the Sanskrit-data negative-results graveyard
 
-_Created: 08-07-2026 · Last updated: 27-07-2026_
+_Created: 08-07-2026 · Last updated: 16-08-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is *confirmed-true*. This file holds the act FINDINGS cannot: **abandoning** an approach — a whole method that was tried and does not work, so the next session does not pay to rediscover the failure. Distinct from a single refuted hypothesis (that lives per-row in [`Uprava/QUESTIONS_LOG.md`](https://github.com/gasyoun/Uprava/blob/main/QUESTIONS_LOG.md)); a dead end is per-*approach*. One of the seven epistemic registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). Its infra twin is [`Uprava/DEAD_ENDS.md`](https://github.com/gasyoun/Uprava/blob/main/DEAD_ENDS.md).
 
@@ -179,6 +179,23 @@ Don't retry unless: **a Russian Uttarakāṇḍa exists** ([GAPS §13](https://g
 
 ↔ Interlinks: the same wrong-witness species as [§9](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) — there a concordance could not separate two hypotheses, here it would answer a question no consumer is asking. The premise that failed is registered as [FINDINGS §481](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) (measure the asset, not the manifest).
 > **Source:** [H1705](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1705-Opus_SanskritLexicography_ramayana-bombay-book7-etext_26.07.26.md) · [PR #823](https://github.com/gasyoun/SanskritLexicography/pull/823) · 27-07-2026 · Opus 5 1M `claude-opus-5[1m]`
+
+---
+
+### §14. Waiting on Druzhinin's Russian Aṣṭāṅgahṛdaya to reach the `guda` chapters — abandoned on the translator's own pace
+
+🟠 ✍️ **Holding an Ayurvedic-register lexical question open until an in-progress Russian AHS translation reaches the chapters that carry the word.**
+
+Failed because: **it will not get there.** MG's ruling, 16-08-2026: *«the translation will never reach Cik. 8, it's too slow»* — so the Russian lane for AHS lexical cross-checks is closed for any lemma outside Sūtrasthāna 1–4, not merely slow. This is the same species as [§13](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md): a plan whose payoff depends on a Russian translation that is not coming. There it was the Rāmāyaṇa Uttarakāṇḍa; here it is AHS past Sū. 4.
+
+Evidence: the edition (off-git Google Doc, URL in [Uprava PROJECT_INTERLINKS](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md) § Corpus & morphology feeds) covers **Sūtrasthāna 1–4** — verified from chapter openings and the `ТЕКСТ` numbering resets 33→4, 48→2, 58→1. `guda`'s 79 DCS attestations sit in Sū. 6/13/17/18/29/30, Śār. 2–5, Nid. 3–14, Cik. 2–21, Kalpa. 3–5 and Utt. 2–28 — **none** in Sū. 1–4. Zero occurrences in the doc in Devanagari, IAST or Russian. Recorded in [KOCHERGINA_CORRECTIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOCHERGINA_CORRECTIONS.md) § `guda` closure and released as [v1.144.64](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.64).
+
+Don't retry unless: the translator's coverage actually crosses into Sū. 6 / Nid. 7 / Cik. 8 — check the doc's chapter extent *first*, in one read, before planning anything on it. **Do not** re-open the search for a Russian AHS: it has now failed twice (H2863's mint and its execution) and been ruled out by the person who would know.
+
+**What replaces it:** the cross-check moves to **German and English**, per the same ruling. Verified: Luise Hilgenberg & Willibald Kirfel, *Vāgbhaṭa's Aṣṭāṅgahṛdayasaṃhitā: ein altindisches Lehrbuch der Heilkunde*, Leiden 1941 — the complete German, **not held on disk and not on archive.org**. English is thinner than it looks: the translation Wikipedia names, Dominik Wujastyk's ([Penguin, 2003](https://en.wikipedia.org/wiki/Ashtanga_Hridayam), ISBN 0-14-044824-1), is **selected passages**, not the whole text; a complete English (Srikantha Murthy, Krishnadas Academy) is a **candidate, bibliographically unverified here**. So the German lane is primary and both are acquisition-blocked.
+
+↔ Interlinks: [§13](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) — same failure class, "no Russian translation to reuse, and none is expected". [FINDINGS §543](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) is the register-split finding this was meant to refine; [§546](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) is the on-disk gloss layer that partly substitutes for the lost lane.
+> **Source:** MG ruling 16-08-2026 · [H2863](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2863-Opus_SanskritLexicography_kochergina-guda-druzhinin-crosscheck_16.08.26.md) follow-up · 16-08-2026 · Opus 5 (`claude-opus-5`)
 
 
 _Dr. Mārcis Gasūns_

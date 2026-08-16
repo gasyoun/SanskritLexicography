@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §546) whatever its section, so existing numbers never shift; when a finding is later
+(currently §547) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -261,6 +261,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§543. A sense order can be right for the Vedic layer and useless for the classical one — `guda` is «кишки» in the RV and only ever the anorectal outlet in Āyurveda](#543-a-sense-order-can-be-right-for-the-vedic-layer-and-useless-for-the-classical-one--guda-is-кишки-in-the-rv-and-only-ever-the-anorectal-outlet-in-āyurveda) — 79 occurrences across 30 of 120 DCS Aṣṭāṅgahṛdaya files, zero intestinal. Check the consumer's register before ordering senses; ship a rider when the layers disagree. Plus: `guḍa`/`guda` collapse in Cyrillic, so all 8 «гуда» transcript hits were false positives.
 - 🟠 [§544. rvlinks is the pāda-granular RV substrate already on disk — and a verse-granular read of it invents renderings the translator never made](#544-rvlinks-is-the-pāda-granular-rv-substrate-already-on-disk--and-a-verse-granular-read-of-it-invents-renderings-the-translator-never-made) — all 1 028 hymns with Elizarenkova/Geldner/Griffith locally, vs the Mandala I–II SamudraManthanam extract. The 2013 memo's «прямая кишка» for `guda` at RV 10.163.3 is actually her `vaniṣṭhu` — the misalignment class H2850 exists to catch.
 - 🔴 [§545. A fixture guard row proves the sanitizer runs, not that it covers every sink — the leak hid in a second consumer the guard row never reaches](#545-a-fixture-guard-row-proves-the-sanitizer-runs-not-that-it-covers-every-sink--the-leak-hid-in-a-second-consumer-the-guard-row-never-reaches) — `sense_tag` was scrubbed for the IRI sink while `edition_rel` interpolated it raw into an `evidence` string emitted verbatim by both serializations. The fixture's guard row never takes an evidence-bearing branch, so no fixture run could have caught it. Enumerate a sanitizable field's sinks; reproduce the leak directly instead of trusting a fixture row to reach the branch.
+- 🟠 [§546. DCS ships a 180 k-row lemma→gloss layer next to the corpus — `dcs-conllu/lookup/dictionary.csv`, and almost nothing in the org reads it](#546-dcs-ships-a-180-k-row-lemmagloss-layer-next-to-the-corpus--dcs-conllulookupdictionarycsv-and-almost-nothing-in-the-org-reads-it) — 180 178 rows of `word ⇥ grammar ⇥ meanings`, TAB-separated despite the `.csv` name. It independently reproduces the `vaniṣṭhu`=rectum / `gudā`=bowels / `pāyu`=anus split that §543/§544 established by hand. Read it before proposing to acquire or OCR a translation to settle a sense question.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -6233,3 +6234,29 @@ both layers.
 > [manifest](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/pwg_de_sidecars/manifest.json);
 > fix + selftest section 4b in [PR #1738](https://github.com/gasyoun/SanskritLexicography/pull/1738).
 > §546 takes the next number.
+
+### §546. DCS ships a 180 k-row lemma→gloss layer next to the corpus — `dcs-conllu/lookup/dictionary.csv`, and almost nothing in the org reads it
+
+🟠 **The DCS mirror is not only annotated text. [`dcs-conllu/lookup/`](https://github.com/gasyoun/dcs-conllu/tree/main/lookup) carries `dictionary.csv` — 180 178 rows of `id ⇥ word ⇥ grammar ⇥ preverbs ⇥ meanings` — plus `word-senses.csv` (WordNet 2.1 links + supersenses), `sembank-*`, and `chapter-info.xml`.** It is tab-separated despite the `.csv` extension, so a naive comma parser reads every row as one field and finds nothing; that alone is enough to make it look empty.
+
+Why it matters where a translation is missing: it is a **lemma-level gloss authority already on disk**, needing no acquisition. When the Russian AHS lane died ([DEAD_ENDS §14](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md)) it independently reproduced the distinctions that had cost a full corpus read to establish:
+
+| lemma | DCS grammar | DCS meanings |
+|:--|:--|:--|
+| `guda` | mn | an intestine; entrail; rectum; anus; [medic.] name of a kṣudraroga |
+| `gudā` | f | the bowels |
+| `vaniṣṭhu` | m | a part of the entrails …; entrails; **the rectum**; Dickdarm |
+| `pāyu` | mn | **the anus** |
+| `sthūlāntra` | n | the larger intestine near the anus |
+| `antra` | n | entrail; intestine |
+
+Three things fall out at once. **(1)** `vaniṣṭhu` = "the rectum" confirms mechanically what [§544](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) had to establish by hand from the pādas — «прямая кишка» at RV 10.163.3 is Elizarenkova's `vaniṣṭhu`, not her `guda`. **(2)** `gudā` f. "the bowels" is exactly her «кишок», and is the separate feminine entry that made H779 rule the Kochergina gender claim *refuted*. **(3)** `guda`'s own gloss order — intestine before rectum/anus — matches the corrected Kochergina order, while AHS *usage* is anorectal throughout; the lexicon and the register disagree in precisely the way [§543](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) describes, and the disagreement is visible in two committed files.
+
+Generalises: **before proposing to acquire or OCR a translation to settle a sense question, read `lookup/dictionary.csv` first.** It will not give per-locus rendering — that still needs a translation — but it settles which lemma owns which gloss, which is what the misalignment class in §544 gets wrong.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2863 follow-up, after MG ruled the Russian AHS
+> lane closed. Evidence: `lookup/dictionary.csv` 180 178 rows, pinned upstream commit
+> `04e0778d3dc971030229179e25eea043d06ff397` (2026-03-05) per
+> [dcs-conllu PROVENANCE.md](https://github.com/gasyoun/dcs-conllu/blob/main/PROVENANCE.md);
+> rows quoted verbatim above.
+> §547 takes the next number.
