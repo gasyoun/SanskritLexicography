@@ -104,9 +104,60 @@ def homonym_of(subcard: str) -> str:
     return m.group(1) if m else "h0"
 
 
+def normalize_sense_tag(tag) -> str:
+    """Strip *format* noise from a sense tag, and nothing else (H2879, decision 6).
+
+    PWG skeleton tags and supplement targets disagree only cosmetically in a
+    small set of cases — the skeleton writes ``'1)'`` or ``'caus.'`` where the
+    supplement points at ``'1'`` / ``'caus'``. This collapses exactly that, so
+    the placement lookup is symmetric on both sides (ARCHITECTURE §Нормализация).
+
+    Deliberately conservative: it removes trailing whitespace, ``.``, ``,`` and
+    an *unmatched* trailing ``)``. It never merges tags that name different
+    things — ``'1-sub-…'`` (a sub-sense), ``'1 (PW)'`` (foreign provenance),
+    ``'Nachtrag'`` (an edit *to* a sense, wave 2) and ``'caus-1'`` (another
+    grammatical branch) all pass through untouched. A false merge here would
+    produce a silent ``placement=true`` on the wrong sense, which is worse than
+    the defect being fixed.
+
+    Idempotent: ``f(f(x)) == f(x)``.
+    """
+    s = str(tag or "").strip()
+    while True:
+        prev = s
+        s = s.rstrip(" \t.,")
+        # Only an unbalanced ')' is punctuation; a matched one is structure,
+        # so '1)' -> '1' but '1 (PW)' is left alone.
+        if s.endswith(")") and s.count("(") < s.count(")"):
+            s = s[:-1]
+        s = s.rstrip(" \t")
+        if s == prev:
+            return s
+
+
 def lex_genders(text: str) -> set:
     toks = {t.strip() for t in LEX_RE.findall(text or "") if t.strip()}
     return {t for t in toks if t in GENDER}
+
+
+def _max_numeric_sense(senses) -> int | None:
+    """Highest purely-numeric sense in a PWG article, over NORMALISED tags.
+
+    Normalised on purpose: an article whose skeleton is written ``'3)'..'7)'``
+    has no bare-integer tag at all, so a raw-tag maximum would be ``None`` and
+    every out-of-range target would be misfiled as ``not_found`` (H2879 spike:
+    that is exactly what happened to ``vA h0`` targets 8 and 9).
+    """
+    nums = [int(t) for t in (senses or ()) if t.isdigit()]
+    return max(nums) if nums else None
+
+
+def _loose_sense_key(tag: str) -> str:
+    """Deliberately sloppier key, used ONLY to propose a hypothesis (S4).
+
+    Never consulted by ``placement`` — a guess must not be promoted to a fact.
+    """
+    return re.sub(r"[^0-9A-Za-z]", "", str(tag or "")).lower()
 
 
 def classify_edition_rel(
@@ -117,12 +168,20 @@ def classify_edition_rel(
     key1: str | None = None,
     subcard: str | None = None,
     pwg_genders: set | None = None,
+    pwg_senses: set | None = None,
     confidence: str = "rule",
 ) -> dict:
     """Classify one subcard/sense into an edition_rel record.
 
     ``pwg_genders`` — optional set of PWG ``<lex>`` gender tokens for the same
     key1/hom/sense (enables ``pw_correct``). Without it, PW defaults to ``restate``.
+
+    ``pwg_senses`` — optional set of NORMALISED PWG sense tags for the same
+    key1/homonym (enables the ``placement`` axis, H2879). Kept separate from
+    ``pwg_genders`` on purpose: that index is about gender and its membership
+    may change for reasons that have nothing to do with which senses exist.
+    Absent it, ``placement`` stays ``False`` — the conservative default, never a
+    guess in the direction of ``True``.
     """
     layer = (layer or "pwg").lower()
     st = str(sense_tag or "")
@@ -191,12 +250,52 @@ def classify_edition_rel(
         subtype = "unknown"
         evidence = "unclassified layer=%r" % layer
 
+    # --- placement axis (H2879) -------------------------------------------
+    # `subtype` says what KIND of relation this is; `placement` says whether the
+    # relation has a target at all. Conflating them is the defect being fixed:
+    # 'restate' used to co-exist with target_sense='*new', i.e. it claimed to
+    # restate a sense that was never identified.
+    senses = pwg_senses if pwg_senses is not None else set()
+    placement_hypothesis = None
+    if target_sense == "*new":
+        # No leading number on the supplement's own tag: there is no target by
+        # construction, not a lookup that failed.
+        placement = False
+        placement_reason = "no_target_marker"
+    else:
+        nt = normalize_sense_tag(target_sense)
+        if nt in senses:
+            placement = True
+            placement_reason = "found"
+        else:
+            placement = False
+            mx = _max_numeric_sense(senses)
+            if mx is not None and nt.isdigit() and int(nt) > mx:
+                # The later edition genuinely has more senses than PWG here.
+                # A real phenomenon, not a data defect — see PLAN decision 4.
+                placement_reason = "out_of_range"
+            else:
+                placement_reason = "not_found"
+                # S4: a looser key might have matched. Record it as a guess and
+                # never anywhere else — it must not reach `insertion_point`.
+                lk = _loose_sense_key(nt)
+                cand = sorted({s for s in senses if _loose_sense_key(s) == lk})
+                if len(cand) == 1:
+                    placement_hypothesis = {
+                        "target": cand[0],
+                        "method": "normalized_tag_match",
+                        "confidence": "low",
+                    }
+
     rel = {
         "subtype": subtype,
         "op": op,
         "direction": direction,
         "layer": layer,
         "source_layers": [layer],
+        "placement": placement,
+        "placement_reason": placement_reason,
+        "placement_hypothesis": placement_hypothesis,
         "insertion_point": {
             "key1": key1,
             "homonym": hom,
@@ -210,16 +309,28 @@ def classify_edition_rel(
     return rel
 
 
-def edition_rel_for_row(row: dict, pwg_gender_index: dict | None = None) -> dict:
-    """Classify a store-shaped row. Optional index: (key1, hom, sense_int) -> gender set."""
+def edition_rel_for_row(
+    row: dict,
+    pwg_gender_index: dict | None = None,
+    pwg_sense_index: dict | None = None,
+) -> dict:
+    """Classify a store-shaped row.
+
+    ``pwg_gender_index``: (key1, hom, sense_int) -> gender set.
+    ``pwg_sense_index``:  (key1, hom) -> set of normalised sense tags (H2879).
+    """
     layer = row.get("layer") or "pwg"
     subcard = row.get("subcard") or ""
     key1 = row.get("key1") or ""
     st = row.get("sense_tag")
     si = lead_int(st)
+    hom = homonym_of(subcard)
     pwg_g = None
     if pwg_gender_index is not None and layer == "pw" and si:
-        pwg_g = pwg_gender_index.get((key1, homonym_of(subcard), si))
+        pwg_g = pwg_gender_index.get((key1, hom, si))
+    pwg_s = None
+    if pwg_sense_index is not None:
+        pwg_s = pwg_sense_index.get((key1, hom), set())
     return classify_edition_rel(
         layer,
         st,
@@ -227,6 +338,7 @@ def edition_rel_for_row(row: dict, pwg_gender_index: dict | None = None) -> dict
         key1=key1,
         subcard=subcard,
         pwg_genders=pwg_g,
+        pwg_senses=pwg_s,
     )
 
 
@@ -246,12 +358,61 @@ def build_pwg_gender_index(rows) -> dict:
     return idx
 
 
+def build_pwg_sense_index(rows) -> dict:
+    """Map (key1, homonym) -> set of NORMALISED PWG sense tags (H2879 S2).
+
+    The normalisation is applied here, on the skeleton side, and again to the
+    target at lookup time. Both sides must go through the same function —
+    normalising only one of them would invent a fresh class of misses.
+    """
+    idx: dict = {}
+    for d in rows:
+        if d.get("layer") != "pwg":
+            continue
+        key = (d.get("key1") or "", homonym_of(d.get("subcard") or ""))
+        idx.setdefault(key, set()).add(normalize_sense_tag(d.get("sense_tag")))
+    return idx
+
+
 def selftest() -> None:
     fails = []
 
     def check(cond, msg):
         if not cond:
             fails.append(msg)
+
+    # --- normalize_sense_tag (H2879 S1) -----------------------------------
+    # positives: format noise only
+    for raw, want in (
+        ("1)", "1"), ("1 ", "1"), ("1", "1"), (" 1 ", "1"),
+        ("1.", "1"), ("caus.", "caus"), ("Caus.", "Caus"),
+        ("Nachtr.", "Nachtr"), ("4b)", "4b"), ("2,", "2"),
+    ):
+        got = normalize_sense_tag(raw)
+        check(got == want, "normalize %r -> %r, want %r" % (raw, got, want))
+
+    # NEGATIVES — these name different things and must survive untouched.
+    # A merge here is the exact silent-lie failure mode wave 1 exists to avoid.
+    for raw in (
+        "1-sub-einen Damm durchbrechen",   # sub-sense, not sense 1
+        "1 (PW)",                          # sense with foreign provenance
+        "Nachtrag",                        # edit *to* a sense (wave 2)
+        "addendum",
+        "caus-1",                          # other grammatical branch
+        "anu-1",
+        "Nachtrag: 1) patch",              # ')' is matched -> structural
+        "Nachtrag: 7)(b), 1",
+        "*new",
+        "",
+    ):
+        got = normalize_sense_tag(raw)
+        check(got == raw, "normalize must not touch %r, got %r" % (raw, got))
+
+    # idempotence
+    for raw in ("1)", "1 (PW)", "caus.", "1-sub-x", " 2 ,", "Nachtrag"):
+        once = normalize_sense_tag(raw)
+        check(normalize_sense_tag(once) == once,
+              "normalize not idempotent on %r" % raw)
 
     # base PWG
     r = classify_edition_rel("pwg", "1", "{%gehen%}")
@@ -310,6 +471,97 @@ def selftest() -> None:
     check(rel["subtype"] == "pw_correct", "index pw_correct: %r" % rel)
     rel0 = edition_rel_for_row(rows[0], idx)
     check(rel0["subtype"] == "base", "index base: %r" % rel0)
+
+    # --- placement axis (H2879 S3/S4) --------------------------------------
+    senses = {"1", "2", "3", "caus"}
+
+    # found — target present in the skeleton
+    r = classify_edition_rel("pw", "2", "{%x%}", key1="x",
+                             subcard="x~~h0_zz_pw01", pwg_senses=senses)
+    check(r["placement"] is True and r["placement_reason"] == "found",
+          "placement found: %r" % r)
+    check(r["placement_hypothesis"] is None, "found must not guess: %r" % r)
+
+    # found via normalisation — skeleton writes '1)', supplement points at '1'
+    r = classify_edition_rel("pw", "1", "{%x%}", key1="x",
+                             subcard="x~~h0_zz_pw01",
+                             pwg_senses=build_pwg_sense_index([
+                                 {"key1": "x", "subcard": "x~~h0_00_pwg00",
+                                  "layer": "pwg", "sense_tag": "1)"},
+                             ])[("x", "h0")])
+    check(r["placement"] is True and r["placement_reason"] == "found",
+          "placement found via normalisation: %r" % r)
+
+    # no_target_marker — the supplement's own tag has no leading number
+    r = classify_edition_rel("sch", "Nachtrag", "{%x%}", key1="x",
+                             subcard="x~~h0_zz_sch", pwg_senses=senses)
+    check(r["placement"] is False
+          and r["placement_reason"] == "no_target_marker",
+          "no_target_marker: %r" % r)
+    check(r["insertion_point"]["target_sense"] == "*new",
+          "no_target_marker target: %r" % r)
+
+    # out_of_range — the later edition has more senses than PWG
+    r = classify_edition_rel("pw", "9", "{%x%}", key1="x",
+                             subcard="x~~h0_zz_pw01", pwg_senses=senses)
+    check(r["placement"] is False and r["placement_reason"] == "out_of_range",
+          "out_of_range: %r" % r)
+
+    # out_of_range is computed over NORMALISED tags: a '3)'..'7)' skeleton has
+    # no bare integer at all, and must still yield a usable maximum.
+    r = classify_edition_rel("pw", "9", "{%x%}", key1="x",
+                             subcard="x~~h0_zz_pw01",
+                             pwg_senses={"3", "4", "5", "6", "7"})
+    check(r["placement_reason"] == "out_of_range",
+          "out_of_range over normalised max: %r" % r)
+
+    # not_found — inside the range, but no such sense
+    r = classify_edition_rel("pw", "2", "{%x%}", key1="x",
+                             subcard="x~~h0_zz_pw01", pwg_senses={"1", "3"})
+    check(r["placement"] is False and r["placement_reason"] == "not_found",
+          "not_found: %r" % r)
+
+    # no index at all -> conservative, never a guess towards True
+    r = classify_edition_rel("pw", "1", "{%x%}", key1="x",
+                             subcard="x~~h0_zz_pw01")
+    check(r["placement"] is False, "no index must not claim placement: %r" % r)
+
+    # hypothesis: proposed, but never promoted and never leaked
+    r = classify_edition_rel("pw", "1", "{%x%}", key1="x",
+                             subcard="x~~h0_zz_pw01",
+                             pwg_senses={"1-sub-x", "3"})
+    check(r["placement"] is False, "hypothesis must not set placement: %r" % r)
+    check(r["insertion_point"]["target_sense"] == "1",
+          "hypothesis must not touch insertion_point: %r" % r)
+
+    # an ambiguous guess is no guess at all
+    r = classify_edition_rel("pw", "1", "{%x%}", key1="x",
+                             subcard="x~~h0_zz_pw01",
+                             pwg_senses={"1-sub-a", "(1)-b"})
+    check(r["placement_hypothesis"] is None or
+          isinstance(r["placement_hypothesis"], dict),
+          "hypothesis shape: %r" % r)
+
+    # placement is orthogonal to subtype: a restate can be unplaced
+    r = classify_edition_rel("pw", "Nachtrag", "{%x%}", key1="x",
+                             subcard="x~~h0_zz_pw01", pwg_senses=senses)
+    check(r["subtype"] == "restate" and r["placement"] is False,
+          "restate may be unplaced: %r" % r)
+
+    # sense index build + row helper
+    srows = [
+        {"key1": "y", "subcard": "y~~h0_00_pwg00", "layer": "pwg",
+         "sense_tag": "1)", "de": "{%y%}"},
+        {"key1": "y", "subcard": "y~~h0_00_pwg01", "layer": "pwg",
+         "sense_tag": "2", "de": "{%y%}"},
+        {"key1": "y", "subcard": "y~~h0_zz_pw01", "layer": "pw",
+         "sense_tag": "1", "de": "{%y%}"},
+    ]
+    sidx = build_pwg_sense_index(srows)
+    check(sidx[("y", "h0")] == {"1", "2"}, "sense index: %r" % sidx)
+    rel = edition_rel_for_row(srows[2], None, sidx)
+    check(rel["placement"] is True and rel["placement_reason"] == "found",
+          "row helper placement: %r" % rel)
 
     # all rollup subtypes reachable
     seen = {

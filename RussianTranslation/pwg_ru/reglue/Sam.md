@@ -2,14 +2,19 @@
 
 ## h1
 
-**1)** 1) {#Samayati#} (местами также <ab>med.</ab> из метрических соображений)
-<ls>DHĀTUP. 19,70.</ls>
-<ls>P. 6,4,92.</ls>
-<ls>VOP. 18,24.</ls> {#aSISamat#}; образование <ab>pass.</ab>
-<ls>P. 6,4,62.</ls> <ls n="P. 6,4,">93.</ls>
-<ls>VOP. 24,5.</ls> <ab>partic.</ab> {#Samita#} (по
-<ls>P. 7,2,27.</ls>
-<ls>VOP. 26,114</ls> и лексикографам, якобы также {#SAnta#}).
+**1))** <div n="1"> 1) {%полностью прийти в покой, успокоиться%}: {#saMSAmya mA SucaH#}
+<ls>R. GORR. 2,23,6.</ls> <ls n="R. GORR.">1,76,26.</ls> <ls n="R. GORR.">2,18,47.</ls> {#saMSAmya tena#} (также {#saha tena#}) так <ab>v. a.</ab> {%заключи мир с%}
+<ls>MBH. 5,3087.</ls> <ls n="MBH.">6,5810.</ls> <ls n="MBH.">7,2031.</ls> <ls n="MBH. 7,">4881. fgg.</ls> <ls n="MBH.">8,275.</ls> <ls n="MBH.">13,7747.</ls> {%угаснуть%}
+<ls>CHĀND. UP. 2,12,1.</ls>
+<ls>ŚAT. BR. 2,3,2,12.</ls> <ls n="ŚAT. BR.">4,1,2,4.</ls> {#sattvaM saMSAmyatIva me#}
+<ls>BHAṬṬ. 18,28.</ls> {#astram#} так <ab>v. a.</ab> {%стать бездейственным%}
+<ls>BHĀG. P. 1,8,15.</ls> {#saMSAmyatAM tAvanmamApi balavAYCramaH#} {%прекратиться, улечься%}
+<ls>MBH. 15,262.</ls> {#saMSAnta#} {%полностью успокоенный%}
+<ls>MBH. 1,3299.</ls> <ls n="MBH.">3,17064.</ls> <ls n="MBH.">5,2873.</ls>
+<ls>BHĀG. P. 4,6,34.</ls> {%вполне улегшийся, — прекратившийся%}: {#jalasaMSAntareRu#}
+<ls>R. GORR. 1,5,4.</ls> <ls n="R. GORR. 1,">76,18.</ls> {%совершенно угасший%}: {#agni#}
+<ls n="R. GORR.">2,68,1</ls> (<ls n="SCHL. 2,">66,1</ls> <ls>SCHL.</ls>). <ls>R. SCHL. 2,69,13.</ls> так <ab>v. a.</ab> {%мертвый%}
+<ls>MBH. 9,1789.</ls>
 
 **1a)** a) {%успокаивать, утолять, умиротворять; приводить в порядок%} <ab>überh.</ab>; {%загладить вину, placare%}: {#roga^m#}
 <ls>AV. 2,3,4.</ls> {#a\gnim#}
@@ -76,7 +81,7 @@
 <ls>MBH. 1,1136.</ls> {#dAvam#}
 <ls n="MBH. 1,">8297.</ls> <ls n="MBH.">4,397</ls> (<ab>med.</ab>).
 <ls n="MBH.">5,1880.</ls> <ls>R. 5,87,10.</ls> <ls>ṚT. 1,4.</ls> <ls>RAGH. 7,45.</ls> <ls>MEGH. 54.</ls> ad <ls n="MEGH.">18.</ls> <ls>Spr. (II) 2723.</ls> <ls n="Spr.">(I) 2940.</ls> <ls>RĀJA-TAR. 4,125.</ls> <ls>BHĀG. P. 7,9,25.</ls><ab>Inschr.</ab> в <ls>Journ. of the Am. Or. S. 7,25, Śl. 3.</ls> {#aSamitanaKa#} так <ab>v. a.</ab> {%не поддерживаемый в порядке, запущенный%}
-<ls>MEGH. 89</ls>, <ab>v. l.</ab> вместо {#aniyamitanaKa#} .
+<ls>MEGH. 89</ls>, <ab>v. l.</ab> вм. {#aniyamitanaKa#} .
 
 **1b)** b) эвфемистически так <ab>v. a.</ab> {%предать смерти; устранить кого-л., обезвредить, уничтожить%}: {#pra\jAM pa\SUn#}
 <ls>TS. 3,1,3,2.</ls> {#vEnateyaSamitasya BoginaH#}
@@ -94,27 +99,6 @@
 
 **1c)** c) {%успокоиться%} так <ab>v. a.</ab> {%воздерживаться от чего-л.%}
 <ls>MBH. 1,7023.</ls>
-
-**1))** <div n="1"> 1) {%полностью прийти в покой, успокоиться%}: {#saMSAmya mA SucaH#}
-<ls>R. GORR. 2,23,6.</ls> <ls n="R. GORR.">1,76,26.</ls> <ls n="R. GORR.">2,18,47.</ls> {#saMSAmya tena#} (также {#saha tena#}) так <ab>v. a.</ab> {%заключи мир с%}
-<ls>MBH. 5,3087.</ls> <ls n="MBH.">6,5810.</ls> <ls n="MBH.">7,2031.</ls> <ls n="MBH. 7,">4881. fgg.</ls> <ls n="MBH.">8,275.</ls> <ls n="MBH.">13,7747.</ls> {%угаснуть%}
-<ls>CHĀND. UP. 2,12,1.</ls>
-<ls>ŚAT. BR. 2,3,2,12.</ls> <ls n="ŚAT. BR.">4,1,2,4.</ls> {#sattvaM saMSAmyatIva me#}
-<ls>BHAṬṬ. 18,28.</ls> {#astram#} так <ab>v. a.</ab> {%стать бездейственным%}
-<ls>BHĀG. P. 1,8,15.</ls> {#saMSAmyatAM tAvanmamApi balavAYCramaH#} {%прекратиться, улечься%}
-<ls>MBH. 15,262.</ls> {#saMSAnta#} {%полностью успокоенный%}
-<ls>MBH. 1,3299.</ls> <ls n="MBH.">3,17064.</ls> <ls n="MBH.">5,2873.</ls>
-<ls>BHĀG. P. 4,6,34.</ls> {%вполне улегшийся, — прекратившийся%}: {#jalasaMSAntareRu#}
-<ls>R. GORR. 1,5,4.</ls> <ls n="R. GORR. 1,">76,18.</ls> {%совершенно угасший%}: {#agni#}
-<ls n="R. GORR.">2,68,1</ls> (<ls n="SCHL. 2,">66,1</ls> <ls>SCHL.</ls>). <ls>R. SCHL. 2,69,13.</ls> так <ab>v. a.</ab> {%мертвый%}
-<ls>MBH. 9,1789.</ls>
-
-**2)** 2) {#SAmayati#} (
-<ls>VOP. 18,24</ls>) из метрических соображений: {#droRAstram — aSAmayat#} (в конце <is>Śloka</is>)
-<ls>MBH. 7,4000.</ls> {#tasmiMstamasi SAmite#} ({#nASite#} <ls>ed. Bomb.</ls>)
-<ls n="MBH.">9,633.</ls> <ab>pass.</ab> {#SAmyatAm#}
-<ls>R. 5,41,4.</ls>
-<ls>MĀRK. P. 114,33</ls> в <ab>Bed.</ab> {%да будет устранен, — обезврежен%} возможно ошибочно вместо {#SamyatAm#} .
 
 **2))** <div n="1">— 2) {%успокаивать, утишать, умиротворять%}
 <ls>ŚAT. BR. 1,7,3,11.</ls> <ls n="ŚAT. BR.">3,4,3,1.</ls>
@@ -214,7 +198,7 @@
 **intro)** <div n="p">— {#sam#}
 
 **main)** <div n="p">— {#prati#}, <ab>partic.</ab> {#˚SAnta#} <ab>dass.</ab>: {#˚Soka#}
-<ls>MBH. 12,891.</ls> <ab>absol.</ab> {#˚SAmya#} угасший
+<ls>MBH. 12,891.</ls> <ab>absol.</ab> {#˚SAmya#} {%угасший%}
 <ls n="MBH. 12,">454.</ls> <ab>Vgl.</ab> {#pratiSama#} .
 
 **note — Dehnung des Wurzelvocals)** <ls>RAGH. 1,61.</ls> С удлинением корневого гласного: {#praSAmita (rajaH SoRitena)#}
@@ -286,10 +270,10 @@
 <ls>BHĀG. P. 10,7,25.</ls> {#idamidamiti tfzRayABiBUtaM janamanavAptaDanaM vizIdamAnam . nipuRamanuniSamya tattvabudDyA#} {%представляя уму%}
 <ls>MBH. 12,6680.</ls>
 
-**main)** <div n="p">— {#ni#}, <ab>partic.</ab> {#˚SAnta#} (<ab>s.</ab> также <ab>bes.</ab>) испытанный, проверенный: {#yadBezajaM niSAntaM #}
+**main)** <div n="p">— {#ni#}, <ab>partic.</ab> {#˚SAnta#} (<ab>s.</ab> также <ab>bes.</ab>) {%испытанный, проверенный%}: {#yadBezajaM niSAntaM #}
 [Page7-0076]
 {# syAttannigadet#}
-<ls>ĀŚV. ŚR. 10,7,3. 4. 6.</ls> {#yaTAniSAntam#} так <ab>v. a.</ab> согласно принятому обычному способу
+<ls>ĀŚV. ŚR. 10,7,3. 4. 6.</ls> {#yaTAniSAntam#} так <ab>v. a.</ab> {%согласно принятому обычному способу%}
 <ls n="ĀŚV. ŚR.">7,12,13. fg. 8,3,22.</ls>
 
 **praRi+śam)** <div n="p">— {#praRi#} <ab>dass.</ab>
@@ -332,275 +316,275 @@
 
 ## h0
 
-**+)** [NWS·nws_at_sense → *new] {#śam (=pw śam 1)#} [Ved , unsp] действовать, с усердием быть деятельным, трудиться (с Instr. того, посредством чего или чем трудятся). быть деятельным при богослужении (посредством приготовления жертвы), усердно молиться. усердно служить богу (Dat.) (молитвой или жертвенными приготовлениями). действенно ограждать от ( purā́ m. Abl). Ср. śamāy und ścam. [NWS: Graßmann 1873 (1996) : 1378]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#śam (=pw śam 1)#} [Ved , unsp] действовать, с усердием быть деятельным, трудиться (с Instr. того, посредством чего или чем трудятся). быть деятельным при богослужении (посредством приготовления жертвы), усердно молиться. усердно служить богу (Dat.) (молитвой или жертвенными приготовлениями). действенно ограждать от ( purā́ m. Abl). Ср. śamāy и ścam. [NWS: Graßmann 1873 (1996) : 1378]
 
-**+)** [NWS·nws_at_sense → *new] [Ved , unsp] быть усердным. AB 2,7,11 . [ = saṃjñapayata (Komm). ] [NWS: Hillebrandt 1885 : 119]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] быть усердным. AB 2,7,11 . [ = saṃjñapayata (Komm). ] [NWS: Hillebrandt 1885 : 119]
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [Ved , unsp] трудиться, совершать богослужение, восхвалять. ṚV I,85,12. [NWS: Vedic Hymns I : 516]
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [Ved , unsp] трудиться, совершать богослужение, восхвалять. <ls n="ṚV. 1,85,12">ṚV I,85,12</ls>. [NWS: Vedic Hymns I : 516]
 
-**+)** [NWS·nws_at_sense → *new] [Ved , unsp] ( II Ā ) (жертву или жертвенное животное) снаряжать, приготовлять; абсолютно: устраивать жертвоприношение, производить необходимые приготовления к жертве. ṚV 5,2,7 . в ṚV только Aor и Perf. [NWS: Geldner 1907 : 177]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] ( II Ā ) (жертву или жертвенное животное) снаряжать, приготовлять; абсолютно: устраивать жертвоприношение, производить необходимые приготовления к жертве. <ls n="ṚV. 5,2,7">ṚV 5,2,7</ls> . в ṚV только Aor и Perf. [NWS: Geldner 1907 : 177]
 
-**+)** [NWS·nws_at_sense → *new] {#śám (=pw śám 2) + as : wohlergehen. ṚV 1,114,1 .#} [Ved , unsp] + bhū : делать добро, идти на благо. ṚV 10,37,10 . [NWS: Geldner 1907 (N) : 236]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#śám (=pw śám 2) + as : wohlergehen. <ls n="ṚV. 1,114,1">ṚV 1,114,1</ls> .#} [Ved , unsp] + bhū : делать добро, идти на благо. <ls n="ṚV. 10,37,10">ṚV 10,37,10</ls> . [NWS: Geldner 1907 (N) : 236]
 
-**+)** [NWS·foreign_fragment → *new] ‹en› {#śam (=pw śam 2)#} [Gen , unsp] ( śāmyati (rarely °te, and ep. also śamati, °te) IV P ) уставать, заканчивать, прекращаться, приходить к концу, отдыхать, быть тихим, спокойным, удовлетворенным, довольным. TSaṃ , ŚB . прекращаться, утихать, угасать. Mbh , Kāvya. [NWS: MW : 1053]
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#śam (=pw śam 2)#} [Gen , unsp] ( śāmyati (rarely °te, and ep. also śamati, °te) IV P ) уставать, заканчивать, прекращаться, приходить к концу, отдыхать, быть тихим, спокойным, удовлетворенным, довольным. TSaṃ , ŚB . прекращаться, утихать, угасать. Mbh , Kāvya. [NWS: MW : 1053]
 
-**+)** [NWS·nws_at_sense → *new] [Śā , Med] ( śāmyati VI ) облегчать, исцелять. Hoernle 1893-1912 (II) 39.260. [NWS: Hoernle 1908 : 327]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Śā , Med] ( śāmyati VI ) облегчать, исцелять. Hoernle 1893-1912 (II) 39.260. [NWS: Hoernle 1908 : 327]
 
-**+)** [NWS·nws_at_sense → *new] [Epigr , unsp] «предотвращать». Majumdar 1924. [NWS: Sircar 1966 : 288]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Epigr , unsp] «предотвращать». Majumdar 1924. [NWS: Sircar 1966 : 288]
 
-**+)** [NWS·nws_at_sense → *new] {#+ upa : be relieved, be cured. Hoernle 1893-1912 (II) 53.537 .#} [Śā , Med (s.v. upa - śam )] – приводить к угасанию ( duḥkhāny uśamayaṃti , sic!). Buddh , unsp . [NWS: Schlingloff 1964 : 203 (s.v. upaśam)]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ upa : be relieved, be cured. Hoernle 1893-1912 (II) 53.537 .#} [Śā , Med (s.v. upa - śam )] – приводить к угасанию ( duḥkhāny uśamayaṃti , sic!). Buddh , unsp . [NWS: Schlingloff 1964 : 203 (s.v. upaśam)]
 
-**+)** [NWS·nws_at_sense → *new] {#+ ni : to be extinguished. Dharmaś , Divyāv .#} [Gen , unsp (s.v. niśam )] + pra ( praśānta ): уничтоженный. Mbh , Kāvya(MW) . [NWS: MW : 695 (s.v. praśān)]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ ni : to be extinguished. Dharmaś , Divyāv .#} [Gen , unsp (s.v. niśam )] + pra ( praśānta ): уничтоженный. Mbh , Kāvya(MW) . [NWS: MW : 695 (s.v. praśān)]
 
-**+)** [NWS·foreign_fragment → *new] ‹en› {#+ prati : (° śāmayati , also ° śam ° and erroneously ° śrām °, ° sam °) (1) stores away (property); (2) puts away (a monk’s bowl and robe, after his begging-round); (3) harbors (a person), entertains (privately). SaddhP 114.13 , Mvu i.56.2 , MSV ii.99.15 .#} [Buddh , unsp (s.v. pratiśāmayati )] – (° śāmaya -, ° śāme -): откладывать в сторону, убирать; приводить в порядок. AbhisDh § 8.5.9A2 . Buddh , unsp. [NWS: Karashima 2012 : 378 (s.v. prati - śāmaya -)]
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#+ prati : (° śāmayati , also ° śam ° and erroneously ° śrām °, ° sam °) (1) stores away (property); (2) puts away (a monk’s bowl and robe, after his begging-round); (3) harbors (a person), entertains (privately). SaddhP 114.13 , Mvu i.56.2 , MSV ii.99.15 .#} [Buddh , unsp (s.v. pratiśāmayati )] – (° śāmaya -, ° śāme -): откладывать в сторону, убирать; приводить в порядок. AbhisDh § 8.5.9A2 . Buddh , unsp. [NWS: Karashima 2012 : 378 (s.v. prati - śāmaya -)]
 
-**+)** [NWS·nws_at_sense → *new] {#+ pravi : (° śāmayati ) perh. stills, causes to subside. Divyāv 542.22 .#} [Buddh , unsp (s.v. praviśāmayati )] + vyupa , ppp.: успокоенный, утихший, унятый, умиротворенный. Bbh 169.3 . Buddh , unsp . [NWS: BHSD : 519 (s.v. vyupaśānta)]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ pravi : (° śāmayati ) perh. stills, causes to subside. Divyāv 542.22 .#} [Buddh , unsp (s.v. praviśāmayati )] + vyupa , ppp.: успокоенный, утихший, унятый, умиротворенный. Bbh 169.3 . Buddh , unsp . [NWS: BHSD : 519 (s.v. vyupaśānta)]
 
-**+)** [NWS·nws_at_sense → *new] {#– (° śamaya -): zur Ruhe bringen, erledigen. AbhisDh § 38.8.30B3 .#} [Buddh , unsp (s.v. vy - upa - śamaya -)] + samava : «складывать вместе». Caland 1924, p. 166 . [NWS: Renou 1935 : 46 (s.v. samavaśam -)]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#– (° śamaya -): zur Ruhe bringen, erledigen. AbhisDh § 38.8.30B3 .#} [Buddh , unsp (s.v. vy - upa - śamaya -)] + samava : «складывать вместе». Caland 1924, p. 166 . [NWS: Renou 1935 : 46 (s.v. samavaśam -)]
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [ śāntá ] благоприятный (в гаданиях; противоп. dīpta ). AV . очищенный. W(MW) . [NWS: MW : 1064 (s.v. śāntá)]
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [ śāntá ] благоприятный (в гаданиях; противоп. dīpta ). AV . очищенный. W(MW) . [NWS: MW : 1064 (s.v. śāntá)]
 
-**+)** [NWS·nws_at_sense → *new] [ śānta ] исполненный покоя. [NWS: Schlingloff 1964 : 245 (s.v. śānta)]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [ śānta ] исполненный покоя. [NWS: Schlingloff 1964 : 245 (s.v. śānta)]
 
-**+)** [NWS·foreign_fragment → *new] ‹en› {#śam (=pw śam 3)#} [Gen , unsp] ( śamnāti IX ) класть конец, уничтожать. Kā(MW). [NWS: MW : 1053]
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#śam (=pw śam 3)#} [Gen , unsp] ( śamnāti IX ) класть конец, уничтожать. Kā(MW). [NWS: MW : 1053]
 
-**+)** [NWS·nws_at_sense → *new] {#śám#} [Ved , unsp] Indekl благо, радость. [NWS: Hillebrandt 1885 : 119]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#śám#} [Ved , unsp] Indekl благо, радость. [NWS: Hillebrandt 1885 : 119]
 
-**+)** [NWS·nws_at_sense → *new] [Ved , unsp] хорошо, приятно, сладостно, здоровье. ṚV I,165,4. [NWS: Vedic Hymns I : 516]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] хорошо, приятно, сладостно, здоровье. <ls n="ṚV. 1,165,4">ṚV I,165,4</ls>. [NWS: Vedic Hymns I : 516]
 
-**+)** [NWS·nws_at_sense → *new] [Ved , unsp] Subst [только śámi (Lok) = Indekl] снаряжение, приготовление, организация жертвоприношения, прислуживание. ṚV 1,87,5 ; śámī . Indekl правильно, по желанию, приносящий счастье, целительный, к счастью, во благо. ṚV 10,97,18 . + as oder bhū : быть уместным, подходить, быть полезным, делать добро, приносить счастье, служить во благо; быть на пользу, быть полезным. ṚV 1,5,7 , ṚV 8,48,4 . в субстантивном употреблении: благополучие, здоровье, благо, всё доброе. ṚV 7,86,8. [NWS: Geldner 1907 : 177 / Geldner 1907 : 220]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] Subst [только śámi (Lok) = Indekl] снаряжение, приготовление, организация жертвоприношения, прислуживание. <ls n="ṚV. 1,87,5">ṚV 1,87,5</ls> ; śámī . Indekl правильно, по желанию, приносящий счастье, целительный, к счастью, во благо. <ls n="ṚV. 10,97,18">ṚV 10,97,18</ls> . + as или bhū : быть уместным, подходить, быть полезным, делать добро, приносить счастье, служить во благо; быть на пользу, быть полезным. <ls n="ṚV. 1,5,7">ṚV 1,5,7</ls> , <ls n="ṚV. 8,48,4">ṚV 8,48,4</ls> . в субстантивном употреблении: благополучие, здоровье, благо, всё доброе. <ls n="ṚV. 7,86,8">ṚV 7,86,8</ls>. [NWS: Geldner 1907 : 177 / Geldner 1907 : 220]
 
-**+)** [NWS·nws_at_sense → *new] {#śam#} [Ved , unsp] Subst n первоначально, по всей видимости: дело, благое дело. Благо, благодать. mit as oder bhū : служить кому-либо (Dat) во благо, быть ему милым, приятным (равно без эксплицитных as oder bhū ). śám yós oder śám ca yós ca : благо и процветание. [NWS: Graßmann 1873 (1996) : 1379]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#śam#} [Ved , unsp] Subst n первоначально, по всей видимости: дело, благое дело. Благо, благодать. mit as или bhū : служить кому-либо (Dat) во благо, быть ему милым, приятным (равно без эксплицитных as или bhū ). śám yós или śám ca yós ca : благо и процветание. [NWS: Graßmann 1873 (1996) : 1379]
 
-**+)** [NWS·nws_at_sense → *new] [Reg , unsp] Indekl магический слог. STB, S. 9, Z. 24. [NWS: Ensink 1964 : 180]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Reg , unsp] Indekl магический слог. STB, S. 9, Z. 24. [NWS: Ensink 1964 : 180]
 
-**+)** [NWS·nws_at_sense → *new] {#śaśamāná#} [Ved , unsp] усердно. [NWS: Hillebrandt 1885 : 119 (s.v. śam)]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#śaśamāná#} [Ved , unsp] усердно. [NWS: Hillebrandt 1885 : 119 (s.v. śam)]
 
-**+)** [NWS·nws_at_sense → *new] [Ved , unsp] = arcan . Naigh 3,14 . = śaṃsamāna . Nir 6,8 . тот, кто выполнил свою работу; готовый. ṚV 10,142,6 . в особенности: тот, кто правильно произвел все приготовления и работы для жертвы; снаряженный, подготовленный, готовый, готовый к жертвоприношению. ṚV 5,29,12 . + Instr: прислуживающий посредством. ṚV 1,151,7 . pass: (для жертвы) приготовленный. AV 2,34,2 . готовый, подготовленный. ṚV 1,24,4 . [NWS: Geldner 1907 : 177 (s.v. śam)]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] = arcan . Naigh 3,14 . = śaṃsamāna . Nir 6,8 . тот, кто выполнил свою работу; готовый. <ls n="ṚV. 10,142,6">ṚV 10,142,6</ls> . в особенности: тот, кто правильно произвел все приготовления и работы для жертвы; снаряженный, подготовленный, готовый, готовый к жертвоприношению. <ls n="ṚV. 5,29,12">ṚV 5,29,12</ls> . + Instr: прислуживающий посредством. <ls n="ṚV. 1,151,7">ṚV 1,151,7</ls> . pass: (для жертвы) приготовленный. <ls n="AV. 2,34,2">AV 2,34,2</ls> . готовый, подготовленный. <ls n="ṚV. 1,24,4">ṚV 1,24,4</ls> . [NWS: Geldner 1907 : 177 (s.v. śam)]
 
-**+)** [NWS·nws_at_sense → *new] {#śámi#} [Ved , unsp] Indekl śám . [NWS: Geldner 1907 (N) : 236 (s.v. śám)]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#śámi#} [Ved , unsp] Indekl śám . [NWS: Geldner 1907 (N) : 236 (s.v. śám)]
 
-**+)** [NWS·nws_at_sense → *new] {#śāntá#} [Ved , unsp] Subst n приготовление, устройство жертвоприношения. [NWS: Geldner 1907 : 177 (s.v. śam)]
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#śāntá#} [Ved , unsp] Subst n приготовление, устройство жертвоприношения. [NWS: Geldner 1907 : 177 (s.v. śam)]
 
-**+)** [PW·restate → *new] <hom>1.</hom> √{#Sam#}¦ ({#SamISva, SamIDvam, Samyati, SaSame/, SaSa/mate#}, <ab>Partic.</ab> {#Sa/mant#} [<ls>SV. 1,4,2,3,6</ls>] und {#Samita/#})
+**+)** [PW·restate → не привязано: смысл не найден] <hom>1.</hom> √{#Sam#}¦ ({#SamISva, SamIDvam, Samyati, SaSame/, SaSa/mate#}, <ab>Partic.</ab> {#Sa/mant#} [<ls>SV. 1,4,2,3,6</ls>] и {#Samita/#})
 <div n="1">— 1〉 {%стараться, усердно трудиться, работать;%} <ab>insbes.</ab> о деятельности при богослужении.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%снаряжать, приготовлять%}. <ab>v. l.</ab> {#Sim#}.
+**+)** [PW·restate → не привязано: смысл не найден] <div n="1">— 2〉 {%снаряжать, приготовлять%}. <ab>v. l.</ab> {#Sim#}.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {#SaSamAna/#} {%усердно занятый, деятельный, прилежный;%} в особенности в труде для богов.
+**+)** [PW·restate → не привязано: смысл не найден] <div n="1">— 3〉 {#SaSamAna/#} {%усердно занятый, деятельный, прилежный;%} в особенности в труде для богов.
 
-**+)** [PW·restate → *new] <hom>2.</hom> √{#Sam#}¦, {#SA/myati#} (metrisch auch <ab>Med.</ab> und {#Samet#}; *<ab>Pass.</ab> <ab>impers.</ab> {#Samyate, aSami#})
+**+)** [PW·restate → не привязано: смысл не найден] <hom>2.</hom> √{#Sam#}¦, {#SA/myati#} (metrisch также <ab>Med.</ab> и {#Samet#}; *<ab>Pass.</ab> <ab>impers.</ab> {#Samyate, aSami#})
 <div n="1">— 1〉 {%успокаиваться, затихать, быть удовлетворенным%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%прекращаться, ослабевать, утихать, угасать%}.
+**+)** [PW·restate → не привязано: смысл не найден] <div n="1">— 2〉 {%прекращаться, ослабевать, утихать, угасать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {#SAnta/#}
+**+)** [PW·restate → не привязано: смысл не найден] <div n="1">— 3〉 {#SAnta/#}
 
-**+)** [PW·restate → *new] <div n="2">— a〉 {%успокоенный, достигший внутреннего покоя, свободный от всякой страсти%}.
+**+)** [PW·restate → не привязано: смысл не найден] <div n="2">— a〉 {%успокоенный, достигший внутреннего покоя, свободный от всякой страсти%}.
 
-**+)** [PW·restate → *new] <div n="2">— b〉 {%тихий, спокойный, кроткий, мягкий%}. <ab>Superl.</ab> {#SAnta/tama#}.
+**+)** [PW·restate → не привязано: смысл не найден] <div n="2">— b〉 {%тихий, спокойный, кроткий, мягкий%}. <ab>Superl.</ab> {#SAnta/tama#}.
 
-**+)** [PW·restate → *new] <div n="2">— c〉 {%мягкий, гибкий%}.
+**+)** [PW·restate → не привязано: смысл не найден] <div n="2">— c〉 {%мягкий, гибкий%}.
 
-**+)** [PW·restate → *new] <div n="2">— d〉 в ритуале и в науке о предзнаменованиях {%кроткий, мягкий, благоприятный%} (в противоп. {%дикому, противящемуся порядку%}), {%faustus%}.
+**+)** [PW·restate → не привязано: смысл не найден] <div n="2">— d〉 в ритуале и в науке о предзнаменованиях {%кроткий, мягкий, благоприятный%} (в противоп. {%дикому, противящемуся порядку%}), {%faustus%}.
 
-**+)** [PW·restate → *new] <div n="2">— e〉 {%угасший%}.
+**+)** [PW·restate → не привязано: смысл не найден] <div n="2">— e〉 {%угасший%}.
 
-**+)** [PW·restate → *new] <div n="2">— f〉 {%ослабший, прекратившийся, отступивший%}.
+**+)** [PW·restate → не привязано: смысл не найден] <div n="2">— f〉 {%ослабший, прекратившийся, отступивший%}.
 
-**+)** [PW·restate → *new] <div n="2">— g〉 о снарядах so <ab>v. a.</ab> {%ставший или сделанный недейственным, безвредным%}.
+**+)** [PW·restate → не привязано: смысл не найден] <div n="2">— g〉 о снарядах so <ab>v. a.</ab> {%ставший или сделанный недейственным, безвредным%}.
 
-**+)** [PW·restate → *new] <div n="2">— h〉 {%обретший покой,%} so <ab>v. a.</ab> {%умерщвленный, умерший, вымерший%}.
+**+)** [PW·restate → не привязано: смысл не найден] <div n="2">— h〉 {%обретший покой,%} so <ab>v. a.</ab> {%умерщвленный, умерший, вымерший%}.
 
-**+)** [PW·restate → *new] <div n="2">— i〉 {#SAntaM pApam#} (auch wiederholt) {%да отвратится зло%} — восклицание, которым хотят предотвратить беду, которую могло бы навлечь произнесенное слово. {#Dik SAntam#} so <ab>v. a.</ab> {%упаси Бог! ни в коем случае!%} {#SAntam#} allein = {#SAntaM pApam#} und auch so <ab>v. a.</ab> {%да поможет мне Бог!%}
+**+)** [PW·restate → не привязано: смысл не найден] <div n="2">— i〉 {#SAntaM pApam#} (также wiederholt) {%да отвратится зло%} — восклицание, которым хотят предотвратить беду, которую могло бы навлечь произнесенное слово. {#Dik SAntam#} so <ab>v. a.</ab> {%упаси Бог! ни в коем случае!%} {#SAntam#} allein = {#SAntaM pApam#} и также so <ab>v. a.</ab> {%да поможет мне Бог!%}
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {#Sama/yati#} (metrisch auch {#SAmayati#}; <ab>Pass.</ab> {#SAmyate#} [auch <ls>VAITĀN. 10,18</ls> und zu <ls>Spr. 6899</ls>] <ab>u. s. w.</ab> wohl nur fehlerhaft)
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {#Sama/yati#} (metrisch также {#SAmayati#}; <ab>Pass.</ab> {#SAmyate#} [также <ls>VAITĀN. 10,18</ls> и zu <ls>Spr. 6899</ls>] <ab>u. s. w.</ab> wohl nur fehlerhaft)
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 {%успокаивать, унимать, усмирять%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%успокаивать, унимать, усмирять%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%приводить в порядок,%} ошибку или беду {%исправлять, placare%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%приводить в порядок,%} ошибку или беду {%исправлять, placare%}.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%тушить, гасить%} (<ab>trans.</ab>) <ls>PRASANNAR. 136,5</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%тушить, гасить%} (<ab>trans.</ab>) <ls>PRASANNAR. 136,5</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 {%кого-либо покорять, одолевать, подчинять себе (sibi)%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {%кого-либо покорять, одолевать, подчинять себе (sibi)%}.
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 эвфемистически so <ab>v. a.</ab> {%умерщвлять, закалывать%} (<ls>VAITĀN. 10,18</ls>), {%убирать кого-либо с дороги, обезвреживать, уничтожать%} <ls>PRASANNAR. 136,5</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 эвфемистически so <ab>v. a.</ab> {%умерщвлять, закалывать%} (<ls>VAITĀN. 10,18</ls>), {%убирать кого-либо с дороги, обезвреживать, уничтожать%} <ls>PRASANNAR. 136,5</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 6〉 {%успокаиваться,%} so <ab>v. a.</ab> {%воздерживаться от чего-либо%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 6〉 {%успокаиваться,%} so <ab>v. a.</ab> {%воздерживаться от чего-либо%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Intens.</ab> {#SaMSamIti#}, *{#SaMSanti#} {%полностью угасать%} <ls>BĀLAR. 136,8</ls>. {#SaMSamAM cakruH#} <ls>BHAṬṬ.</ls>
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Intens.</ab> {#SaMSamIti#}, *{#SaMSanti#} {%полностью угасать%} <ls>BĀLAR. 136,8</ls>. {#SaMSamAM cakruH#} <ls>BHAṬṬ.</ls>
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#anu#} {%следом успокаиваться, — прекращаться, — утихать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anu#} {%следом успокаиваться, — прекращаться, — утихать%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#aBi#} {%прекращаться, утихать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBi#} {%прекращаться, утихать%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#ava#}, {#avaSAnta#} {%угасать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ava#}, {#avaSAnta#} {%угасать%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#vyava#}, {#vya/vaSAnta#} <ab>dass.</ab> <ls>MAITR. S. 1,8,6 (123,12)</ls> = <ls>ĀPAST. ŚR. 6,9,2</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vyava#}, {#vya/vaSAnta#} <ab>dass.</ab> <ls>MAITR. S. 1,8,6 (123,12)</ls> = <ls>ĀPAST. ŚR. 6,9,2</ls>.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#samava#} <ab>Caus.</ab> {%placare%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#samava#} <ab>Caus.</ab> {%placare%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#upa#} (<ab>Med.</ab> hier und da auch in ungebundener Rede) [Page6-206-c]
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upa#} (<ab>Med.</ab> hier и da также in ungebundener Rede) [Page6-206-c]
 <div n="1">— 1〉 {%становиться тихим, спокойным%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%угасать%} <ls>Spr. 7848</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%угасать%} <ls>Spr. 7848</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%прекращаться, утихать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%прекращаться, утихать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 {#upaSAnta#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {#upaSAnta#}
 <div n="2">— a〉 {%успокоенный%}.
 
-**+)** [PW·restate → *new] <div n="2">— b〉 {%угасший%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— b〉 {%угасший%}.
 
-**+)** [PW·restate → *new] <div n="2">— c〉 {%прекратившийся, утихший%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— c〉 {%прекратившийся, утихший%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab>
 <div n="1">— 1〉 {%успокаивать, унимать, умиротворять, placare%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%гасить%} (<ab>trans.</ab>) <ls n="Chr.">290,9</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%гасить%} (<ab>trans.</ab>) <ls n="Chr.">290,9</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%охлаждать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%охлаждать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 {%заставлять прекращаться%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {%заставлять прекращаться%}.
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 {%отправлять на вечный покой%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 {%отправлять на вечный покой%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#aByupa#}, {#˚SAnta#} {%утоленный, охлажденный%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aByupa#}, {#˚SAnta#} {%утоленный, охлажденный%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#vyupa#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vyupa#}
 <div n="1">— 1〉 {%успокаиваться%} <ls>MBH. 6,121,52</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%прекращаться, утихать%}. {#duHKaM#} {#vyupaSAntam#} <ls>KĀRAṆḌ. 48,9</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%прекращаться, утихать%}. {#duHKaM#} {#vyupaSAntam#} <ls>KĀRAṆḌ. 48,9</ls>.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#samupa#} {%прекращаться, утихать%} <ls>CARAKA. 6,10</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#samupa#} {%прекращаться, утихать%} <ls>CARAKA. 6,10</ls>.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#ni#}, {#niSAnta#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ni#}, {#niSAnta#}
 <div n="1">— 1〉 *{%успокоенный, тихий%} <ls>H. an. 3,271</ls>. <ls>MED. t. 119</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%установившийся, обычный%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%установившийся, обычный%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab>
 <div n="1">— 1〉 {%приводить к покою; приводить в порядок%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%охлаждать%} <ls>SĀY. zu ṚV. 10,39,9</ls>. <ab>Vgl.</ab> <hom>4.</hom> {#Sam#} mit {#ni#}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%охлаждать%} <ls>SĀY. zu ṚV. 10,39,9</ls>. <ab>Vgl.</ab> <hom>4.</hom> {#Sam#} mit {#ni#}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#praRi#} {%успокаиваться%} <ls>BHAṬṬ.</ls>
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#praRi#} {%успокаиваться%} <ls>BHAṬṬ.</ls>
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#pari#} <ab>Caus.</ab> {%заставлять прекращаться%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pari#} <ab>Caus.</ab> {%заставлять прекращаться%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#pra#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pra#}
 <div n="1">— 1〉 {%успокаиваться, обретать покой%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%угасать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%угасать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%прекращаться, утихать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%прекращаться, утихать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 {#praSAnta#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {#praSAnta#}
 
-**+)** [PW·restate → *new] <div n="2">— a〉 {%ставший спокойным, умиротворенный, тихий%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— a〉 {%ставший спокойным, умиротворенный, тихий%}.
 
-**+)** [PW·restate → *new] <div n="2">— b〉 {%тихий,%} so <ab>v. a.</ab> {%безразличный, беспечный%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— b〉 {%тихий,%} so <ab>v. a.</ab> {%безразличный, беспечный%}.
 
-**+)** [PW·restate → *new] <div n="2">— c〉 в науке о предзнаменованиях {%не предвещающий ничего дурного, boni ominis%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— c〉 в науке о предзнаменованиях {%не предвещающий ничего дурного, boni ominis%}.
 
-**+)** [PW·restate → *new] <div n="2">— d〉 {%угасший%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— d〉 {%угасший%}.
 
-**+)** [PW·restate → *new] <div n="2">— e〉 {%устраненный, удаленный%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— e〉 {%устраненный, удаленный%}.
 
-**+)** [PW·restate → *new] <div n="2">— f〉 {%прекратившийся, утихший, исчезнувший, закончившийся, отсутствующий, не показывающийся%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— f〉 {%прекратившийся, утихший, исчезнувший, закончившийся, отсутствующий, не показывающийся%}.
 
-**+)** [PW·restate → *new] <div n="2">— g〉 {%посрамленный, потерпевший неудачу%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— g〉 {%посрамленный, потерпевший неудачу%}.
 
-**+)** [PW·restate → *new] <div n="2">— h〉 {%обретший вечный покой, умерший, мертвый%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— h〉 {%обретший вечный покой, умерший, мертвый%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> (здесь и там с удлинением корневого гласного также без метрической необходимости)
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> (здесь и там с удлинением корневого гласного также без метрической необходимости)
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 {%успокаивать, умиротворять%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%успокаивать, умиротворять%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%гасить%} (<ab>trans.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%гасить%} (<ab>trans.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%унимать, заставлять прекращаться%}. {#praSamita#} <ls>ŚIŚ. 17,38</ls>. <ls>VĀSAV. 281,2</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%унимать, заставлять прекращаться%}. {#praSamita#} <ls>ŚIŚ. 17,38</ls>. <ls>VĀSAV. 281,2</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 {%обезвреживать, уничтожать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {%обезвреживать, уничтожать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 {%подчинять себе (sibi), отвоевывать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 {%подчинять себе (sibi), отвоевывать%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#anupra#} in {#anupraSaman#}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anupra#} in {#anupraSaman#}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#saMpra#}, {#saMpraSAnta#} {%прекратившийся, отступивший, исчезнувший%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#saMpra#}, {#saMpraSAnta#} {%прекратившийся, отступивший, исчезнувший%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#prati#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#prati#}
 <div n="1">— 1〉 {%угасать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {#pratiSAnta#} {%прекратившийся, отступивший, исчезнувший%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {#pratiSAnta#} {%прекратившийся, отступивший, исчезнувший%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {#pratiSAmya#} (<ls>VAJRACCH. 19,9</ls>) und {#˚SAmayitvA#} (<ls>MAHĀVASTU 56,2</ls>) {%снова ставить на свое место%}. <ab>Vgl.</ab> <hom>1.</hom> {#Sram#} mit {#pravi#} <ab>Caus.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {#pratiSAmya#} (<ls>VAJRACCH. 19,9</ls>) и {#˚SAmayitvA#} (<ls>MAHĀVASTU 56,2</ls>) {%снова ставить на свое место%}. <ab>Vgl.</ab> <hom>1.</hom> {#Sram#} mit {#pravi#} <ab>Caus.</ab>
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#sam#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#sam#}
 <div n="1">— 1〉 {%полностью обретать покой%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 mit <ab>Instr.</ab> der Person (mit und ohne {#saha#}) {%заключать мир с%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 mit <ab>Instr.</ab> der Person (mit и без {#saha#}) {%заключать мир с%}.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%угасать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%угасать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 {%прекращаться, утихать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {%прекращаться, утихать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 {%становиться недейственным%} (о снаряде).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 {%становиться недейственным%} (о снаряде).
 
-**+)** [PW·restate → *new] <div n="1">— 6〉 {%успокаивать, унимать, умиротворять%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 6〉 {%успокаивать, унимать, умиротворять%}.
 
-**+)** [PW·restate → *new] <div n="1">— 7〉 {#saMSAnta#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 7〉 {#saMSAnta#}
 
-**+)** [PW·restate → *new] <div n="2">— a〉 {%полностью успокоенный%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— a〉 {%полностью успокоенный%}.
 
-**+)** [PW·restate → *new] <div n="2">— b〉 {%совершенно угасший%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— b〉 {%совершенно угасший%}.
 
-**+)** [PW·restate → *new] <div n="2">— c〉 {%полностью утихший, — прекратившийся%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— c〉 {%полностью утихший, — прекратившийся%}.
 
-**+)** [PW·restate → *new] <div n="2">— d〉 {%умерший, мертвый%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— d〉 {%умерший, мертвый%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab>
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 {%успокаивать, умиротворять%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%успокаивать, умиротворять%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%гасить%} (<ab>trans.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%гасить%} (<ab>trans.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%устранять, заставлять прекращаться%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%устранять, заставлять прекращаться%}.
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 {%доводить до конца, совершать, улаживать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {%доводить до конца, совершать, улаживать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 {%отправлять на вечный покой, доканчивать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 {%отправлять на вечный покой, доканчивать%}.
 
-**+)** [PW·restate → *new] <hom>3.</hom> √{#Sam#}¦, *{#SamnA/ti#} ({#vaDakarman#}) {%причинить кому-либо вред%}. Засвидетельствовано лишь в {#SamnIze#} и {#SamnITAs#}.
+**+)** [PW·restate → не привязано: цель не указана] <hom>3.</hom> √{#Sam#}¦, *{#SamnA/ti#} ({#vaDakarman#}) {%причинить кому-либо вред%}. Засвидетельствовано лишь в {#SamnIze#} и {#SamnITAs#}.
 
-**+)** [PW·restate → *new] <hom>4.</hom> √{#Sam#}¦, {#Samayati#} и {#SAmayati#}.
+**+)** [PW·restate → не привязано: цель не указана] <hom>4.</hom> √{#Sam#}¦, {#Samayati#} и {#SAmayati#}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#ni#} {%замечать, осознавать, воспринимать, слышать, узнавать, познавать, — что есть%} или {%было%} (с предикативным <ab>Acc.</ab>). Однажды также с <ab>Gen.</ab> <ab>st.</ab> <ab>Acc.</ab> <ab>Absol.</ab> {#niSamya, niSAmya#} и {#niSamayya#} (<ls>ŚIŚ. 16,38</ls>). {#niSamyamAna#} с <ab>act.</ab> (!) <ab>Bed.</ab> и <ab>Gen.</ab> (<ab>v. l.</ab> но {#niSamya#}).
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ni#} {%замечать, осознавать, воспринимать, слышать, узнавать, познавать, — что есть%} или {%было%} (с предикативным <ab>Acc.</ab>). Однажды также с <ab>Gen.</ab> <ab>st.</ab> <ab>Acc.</ab> <ab>Absol.</ab> {#niSamya, niSAmya#} и {#niSamayya#} (<ls>ŚIŚ. 16,38</ls>). {#niSamyamAna#} с <ab>act.</ab> (!) <ab>Bed.</ab> и <ab>Gen.</ab> (<ab>v. l.</ab> но {#niSamya#}).
 
-**+)** [PW·restate → *new] <div n="p">— С {#anuni#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anuni#}
 <div n="1">— 1〉 {%воспринимать, слышать%} <ls>CARAKA. 6,10</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%представлять уму, воображать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%представлять уму, воображать%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#samanuni#} {%распознавать, познавать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#samanuni#} {%распознавать, познавать%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#aBini#} {%замечать, осознавать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBini#} {%замечать, осознавать%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#upani#} {%воспринимать, слышать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upani#} {%воспринимать, слышать%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#praRi#} <ab>dass.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#praRi#} <ab>dass.</ab>
 
-**+)** [PW·restate → *new] <div n="p">— С {#vini#} <ab>dass.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vini#} <ab>dass.</ab>
 
-**+)** [PW·restate → *new] <div n="p">— С {#saMni#} {%воспринимать, слышать; узнавать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#saMni#} {%воспринимать, слышать; узнавать%}.
 
-**+)** [PW·restate → *new] <hom>5.</hom> {#Sa/m#}¦ <lex>Indecl.</lex>
+**+)** [PW·restate → не привязано: смысл не найден] <hom>5.</hom> {#Sa/m#}¦ <lex>Indecl.</lex>
 <div n="1">— 1〉 {%благотворный, на пользу, во благо%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 субстантивно {%благо, благополучие, счастье, благословение%}, с <ab>Dat.</ab> или <ab>Gen.</ab>
+**+)** [PW·restate → не привязано: смысл не найден] <div n="1">— 2〉 субстантивно {%благо, благополучие, счастье, благословение%}, с <ab>Dat.</ab> или <ab>Gen.</ab>
 
-**+)** [PW·restate → *new] <hom>1.</hom> √{#Sam#}¦ с {#ni#} VI. {%гаснуть, угасать%} <ls>DHARMAŚARM. 13,41</ls>.<info n="sup_7"/>
+**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#Sam#}¦ с {#ni#} VI. {%гаснуть, угасать%} <ls>DHARMAŚARM. 13,41</ls>.<info n="sup_7"/>
 
-**+)** [PWKVN·a2a → *new] <hom>1.</hom> {#Sam#}¦ с {#ni#} VI. угасать <ls>DHARMAŚARM. 13,41</ls>.
+**+)** [PWKVN·a2a → не привязано: цель не указана] <hom>1.</hom> {#Sam#}¦ с {#ni#} VI. {%угасать%} <ls>DHARMAŚARM. 13,41</ls>.
 
-**+)** [SCH·sch_star → *new] 1. {%śam%} с {%ni%}: угасать, <ls>Dharmaśarm. 13,41.</ls> {part=,seq=25149,type=,n=2}
+**+)** [SCH·sch_star → не привязано: цель не указана] 1. {%śam%} с {%ni%}: угасать, <ls>Dharmaśarm. 13,41.</ls> {part=,seq=25149,type=,n=2}
