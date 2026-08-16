@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 16-08-2026 (§542 — a review sheet's stated apply target is not the carrier set: the agni glosses are authored in a builder's `GLOSS` dict, not in the file the sheet names; §483 H1714 resolver fix shipped, not still-open; §534 — H2756 fresh Flash PREP pairs: same-card save 0.2% INCONCLUSIVE, CI includes 0; §533 — H2704 Flash PREP −3.9% vs H2675 is a real point-estimate, not zero; same-card warm 9.9% with CI crossing zero; Pro pair +39.6% is the wrong denominator; §532 — DeepSeek-v4-flash reference-free QE on a 80-row slice of frozen grade_gold reaches Spearman ρ=0.4195 and is defensible; proxy remains ρ=-0.0351 preliminary and is not comet; §531 — *ārṣa prayoga* is a one-way licence)_
+_Created: 26-06-2026 · Last updated: 16-08-2026 (§545 — a fixture guard row proves the sanitizer runs, not that it covers every sink: `sense_tag` was scrubbed for the IRI but flowed raw into `edition_rel`'s `evidence` string and out through both serializations; §544 — rvlinks is the pāda-granular RV substrate already on disk; §543 — `guda` is «кишки» in the RV and the anorectal outlet in Āyurveda; §542 — a review sheet's stated apply target is not the carrier set)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -6188,4 +6188,46 @@ defect class H2850 exists to eliminate, and RV 10.163.3 is now a worked specimen
 > Opus 5 (`claude-opus-5`) · 16-08-2026 · H2863. Evidence:
 > [rvlinks/rvhymns/rv10.163.html](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.163.html#rv10.163.03)
 > vs the memo's claim; 1 028 hymn files counted on disk.
-> §545 takes the next number.
+> §546 takes the next number.
+
+### §545. A fixture guard row proves the sanitizer runs, not that it covers every sink — the leak hid in a second consumer the guard row never reaches
+
+🔴 **[`export_de_edition.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_de_edition.py)
+had a documented, tested, *working* Cyrillic sanitizer, and still emitted Russian into a
+public artifact.** The first full-store run of the H1635 release export aborted on
+`assert_rights_safe` — correctly, and on the 110th row of a store the fixture suite had
+declared clean for three weeks.
+
+The module classifies `sense_tag` as **sanitizable** (as opposed to blocking): ~1% of store
+rows carry Russian free text there, so `sense_tag_slug()` reduces it to an ASCII skeleton and
+the German survives. That is right, and it was verified — the fixture carries a dedicated
+Cyrillic-`sense_tag` guard row and the selftest asserts `sanitized_tag_rows == 1`.
+
+But the slug is not the only consumer of the raw tag.
+[`edition_rel.classify_edition_rel`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/edition_rel.py)
+builds an `evidence` string by interpolating the tag with `%r`
+(`"PW abridging restatement; sense_tag=%r"`), and the exporter emits that string **verbatim**
+in both serializations — `rdfs:comment` in Turtle, `@relEvidence` in TEI. One field, two
+sinks; the sanitizer guarded the IRI/`xml:id` sink and nothing guarded the prose sink.
+
+**Why no fixture run could have caught it.** The guard row exists, but its `(layer, sense_tag,
+de)` combination does not take an evidence-bearing branch of the classifier — so the guard row
+and the vulnerable code path never met. The fixture proved the sanitizer *ran*; it could not
+prove the sanitizer *sufficed*, and a green selftest was read as if it had. Only full-store
+scale produced a row that was contaminated **and** classified into an evidence-bearing branch.
+
+Transferable rule: when a field is declared *sanitizable rather than blocking*, enumerate its
+sinks and pin each one, and write the regression test to **reproduce the leak directly** rather
+than trusting a fixture row to wander onto the branch. The fix here scrubs at the single choke
+point both the precomputed and freshly-classified relation pass through, and the new selftest
+constructs the leaking row explicitly.
+
+Second-order: the byte-level `assert_rights_safe` post-check is what turned a silent rights
+breach into a loud build failure. A field allowlist alone would have shipped this — the
+allowlist *permits* `sense_tag`; the breach was what a downstream module did with it. Keep
+both layers.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H1635. Evidence: full-store export abort at byte
+> 1 649 758 of `pwg_de_edition.ttl`; `sanitized_tag_rows: 110` in the shipped
+> [manifest](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/pwg_de_sidecars/manifest.json);
+> fix + selftest section 4b in [PR #1738](https://github.com/gasyoun/SanskritLexicography/pull/1738).
