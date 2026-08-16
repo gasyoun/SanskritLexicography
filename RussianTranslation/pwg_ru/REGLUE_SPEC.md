@@ -287,4 +287,83 @@ required reason (`wrong_place` / `wrong_label` / `both` / `not_a_supplement`).
 
 The 90.2 % is reported in the footer as a finding, not put to a vote.
 
+## 10. Two axes, not one: `placement` (H2879, 16-08-2026)
+
+§9 diagnosed the defect; this is the fix. `subtype` was carrying two unrelated
+claims at once — a property of the **layer** ("PW abridges PWG", true whether or
+not anything was located) and a claim about the **pair** ("this supplement
+restates *that* sense", true only when a target was actually found). They are now
+separate fields, and `subtype` must be read together with `placement`.
+
+| claim | field | true when |
+|---|---|---|
+| the PW layer abridges PWG | `direction: "abridging"` (pre-existing) | always; needs no target |
+| this supplement relates to **that** sense | `placement: bool` (**new**) | only when the target is found in the PWG skeleton |
+| what kind of relation it is | `subtype` (unchanged) | read **only together with** `placement` |
+
+`subtype` is deliberately **not** renamed on unplaced rows: duplicating one fact
+across two fields guarantees they drift apart.
+
+### 10.1 `placement_reason` — three phenomena the old `*new` bucket merged
+
+`placement=false` is not one thing. Measured over all 6,009 sidecar rows:
+
+| `placement_reason` | rows | share | what it means |
+|---|---:|---:|---|
+| `found` | 595 | 9.9 % | target located in the PWG skeleton |
+| `no_target_marker` | 4,901 | 81.6 % | the supplement's own tag has no leading number — no target exists *by construction*, not a lookup that failed |
+| `out_of_range` | 383 | 6.4 % | the target number is above PWG's highest sense here — the later edition genuinely has more senses; **evidence about renumbering, not a data defect** |
+| `not_found` | 130 | 2.2 % | inside the range, but no such sense — the only bucket that looks like a defect |
+
+Separating `out_of_range` from `not_found` is the substantive gain: 383 rows that
+read as broken links are in fact the renumbering phenomenon this project is
+documenting, and only 130 rows are genuinely unexplained.
+
+### 10.2 Tag normalisation — deliberately conservative
+
+`normalize_sense_tag` strips trailing whitespace, `.`, `,` and an **unmatched**
+trailing `)`, and nothing else, applied **symmetrically** to the PWG skeleton and
+to the target. It does not merge `1-sub-…` (a sub-sense), `1 (PW)` (foreign
+provenance), `Nachtrag` (an edit *to* a sense) or `caus-1` (another grammatical
+branch) — each is pinned by a negative selftest. A false merge would produce a
+silent `placement=true` on the wrong sense, which is worse than the defect being
+repaired.
+
+### 10.3 Measured effect — and what it is not
+
+On an identical store and sidecar, switching the old raw-equality rule for the
+`placement` flag:
+
+| | old rule | new rule | delta |
+|---|---:|---:|---:|
+| checkable | 250 | **257** | +7 |
+| no PWG target | 5,426 | 5,414 | −12 |
+| too thin | 333 | 338 | +5 |
+
+12 rows became placed; 7 of them have enough German to be compared. **This is a
+correctness fix, not a coverage win** — the honest attribution is +7 checkable
+pairs. The larger apparent jump from the previously published 246/4,690/303 is
+mostly unrelated: that baseline was measured against a sidecar built 06-07-2026
+while the store had moved on to 02-08-2026, so this pass also refreshed a stale
+sidecar (5,603 → 6,009 rows). Wave 1's own effect is the +7.
+
+`out_of_range` moved 381 → 383. VERIFICATION A4 expected it not to move at all;
+the two extra rows are `vA h0` targets 8 and 9, in an article whose skeleton is
+written `3)`–`7)` with no bare integer at all. Before normalisation that article
+had no computable maximum, so both rows fell to `not_found`; they are genuinely
+out of range and are now filed as such. The reclassification follows from S3's own
+instruction to compute the maximum over normalised tags — A4's premise was
+slightly wrong, not the implementation.
+
+`placement_hypothesis` is implemented, guarded and selftested, but fires on **0**
+real rows: no `not_found` row matched even under the looser key. The field earns
+its place as the designed home for future named methods, not as a current result.
+
+### 10.4 Acceptance is re-runnable
+
+[`placement_axis_check.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/placement_axis_check.py)
+proves A1–A5 and A9 against the artifacts on disk, including the two stop
+conditions — that no row which had no target became placed (A3), and that the
+canonical store is byte-identical (A5). Run it after any change to the classifier.
+
 _Dr. Mārcis Gasūns_
