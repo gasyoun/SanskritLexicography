@@ -221,6 +221,12 @@ jobs:
           # path runs for real rather than self-skipping.
           python src/nws_tag_census.py --selftest
           python src/build_g5_review_sheet.py --selftest
+          # H2850 RV pāda alignment: locus parsing, metre split, the join, the
+          # agreement verdict, and the refusal against re-translating a locus
+          # Elizarenkova already published. The rvlinks-backed cases (including the
+          # gate's negative control) self-skip here — the sibling repo is not checked
+          # out — so this run exercises the offline half: parsing, metre, matching.
+          python src/rv_pada_align.py --selftest
       - name: LOD graph acceptance (fixture-only, H350/E7)
         working-directory: RussianTranslation
         run: |
