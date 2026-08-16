@@ -690,7 +690,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H1308 (19-07-2026, Opus 4.8 claude-opus-4-8). government_index() reads s['de_raw'] (the German SOURCE sense text, identical across the RU and EN editions) via the shared extract_government() — the same authoritative reference set ab_frequency()/ls_stats() use — and marker spans render through the shared _render() layer. No RU/EN branch anywhere in the government surface; a future EN site build would show the identical government index. Language-neutral analysis layer, exactly like the H775 government sidecar precedent. Pinned by build_article_site.py --selftest (selftest_government).",
     "tracking": "",
     "verified_sha256": {
-      "src/pilot/build_article_site.py": "c3c86c8c8f5fe0737a018897cd16ebc722e04a8cc51c72aefab62025e406cb6d"
+      "src/pilot/build_article_site.py": "36c1fb676cc74ae155af281702333bba0ae606d0cddad155dc0315ce0599e651"
     }
   },
   {
@@ -1404,7 +1404,26 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/ls_resolver.py": "c122801b11d555cc0fe5243424ca0fe2eca38be40f62437602cb78dd2eb1c538",
       "src/spr_fulltext.py": "446fe8ce8146cfdda3a0cd0b2e6f62c3b76e08cfb872823116549ed3992fe0d5",
-      "src/pilot/build_article_site.py": "c3c86c8c8f5fe0737a018897cd16ebc722e04a8cc51c72aefab62025e406cb6d"
+      "src/pilot/build_article_site.py": "36c1fb676cc74ae155af281702333bba0ae606d0cddad155dc0315ce0599e651"
+    }
+  },
+  {
+    "id": "mbh_etext_link_h2845",
+    "mechanism": "H2845 MBh e-text layer: ls_links.MbhEtext maps a resolved `mbhcalc?<parvan>.<verse>` scan href onto csl-atlas mbh_vulgate_critical_presence.csv and returns the sanatana.in Nilakantha vulgate address plus a four-state vulgate/critical presence verdict; build_article_site._etext_html renders it as the `E` / `E-dagger` sibling anchor next to the scan link, through the same shared _render()/_ls_html layer.",
+    "files": [
+      "src/ls_links.py",
+      "src/pilot/build_article_site.py"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "verdict": "SHARED",
+    "note": "H2845 (16-08-2026, Opus 5 `claude-opus-5`). The lookup key is the citation's parvan + verse number read off the already-resolved scan href, and the verdict comes from a text-vs-text comparison of two Sanskrit witnesses — neither consults RU/EN translation prose, and `_etext_html` never receives `lang`. Both editions therefore get byte-identical e-text hrefs, marks and tooltips. The tooltip string itself is English-only today, exactly as the existing `title=\"Cologne scan / text\"` is; if the RU column ever localises citation tooltips it becomes one shared substitution point, not a divergence introduced here. Pinned by src/ls_links.py's selftest (both the table-present and table-absent branches) and by src/g5_card_render.py's e-text checks.",
+    "tracking": "",
+    "verified_sha256": {
+      "src/ls_links.py": "1594100634c0629cc02a94cdf9aaecf79d655cdb3a1ec4fa0842af6188a33a7c",
+      "src/pilot/build_article_site.py": "36c1fb676cc74ae155af281702333bba0ae606d0cddad155dc0315ce0599e651"
     }
   },
   {
@@ -1421,7 +1440,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H2005 (01-08-2026, Grok 4.5 `grok-4.5`, Sonnet-tier handoff override). MG R4 (H1305) ruled `ed. Bomb.` → «Бомбейская ред.»; store rewrite of in-ls text would break pwg_sources. EN has no equivalent Cyrillic display form. Pinned by ls_enrichment_selftest.test_h2005_ed_bomb_ru_display_not_resolve.",
     "tracking": "H2005",
     "verified_sha256": {
-      "src/pilot/build_article_site.py": "c3c86c8c8f5fe0737a018897cd16ebc722e04a8cc51c72aefab62025e406cb6d",
+      "src/pilot/build_article_site.py": "36c1fb676cc74ae155af281702333bba0ae606d0cddad155dc0315ce0599e651",
       "src/pilot/ls_enrichment_selftest.py": "f60dc7df6005ecef81e855f83b431bb0c8397b456211b0ffcdc0f4e646f15df6"
     }
   },
