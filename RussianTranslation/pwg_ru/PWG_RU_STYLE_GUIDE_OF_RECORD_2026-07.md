@@ -1,6 +1,6 @@
 # PWG-RU: русский стилевой свод (guide of record)
 
-_Created: 31-07-2026 · Last updated: 15-08-2026_
+_Created: 31-07-2026 · Last updated: 16-08-2026_
 
 Единый свод **всех ратифицированных стилевых правил** русского перевода PWG (pwg_ru) —
 консолидация, а не новое законодательство: каждое правило цитирует хендофф, голосование или
@@ -55,6 +55,7 @@ merged-PR, которым оно установлено; **правило без
 | 9.1 | RU-поле никогда не ремонтируется машинно | ✅ | H858 |
 | 9.2 | Машинный ремонт DE — только «чистый сброс», со штампом провенанса | ✅ | H858 |
 | 10 | Выпуск: машинный черновик (machine-preview), не production | ✅ | D2, DECISIONS_PWG_RU_QUALITY_BAR |
+| 12 | Немецкий метаязык аппарата (`eines`, `im Comp. vorangehend`, `so`, `Ergänzung`): детекция библиотечная (`sanskrit_util.classify_german_metalanguage`), аппарат никогда не переводится как глосса; `uncertain` = не-глосса + лог | ✅ детектор и гейт · 🕓 новые передачи | H2876 · H2787 (замер дефекта) |
 
 ## 1. Орфография и терсеный метаязык (механический слой)
 
@@ -333,5 +334,46 @@ word survive at all?», N19 *mit Ergänzung von*).
 После каждого голосования: применение по фазе 2 соответствующего хендоффа, затем — новая
 строка в этом своде со ссылкой на `decisions.json`-экспорт и применяющий PR (регламент
 append-only выше).
+
+## 12. Немецкий метаязык аппарата — детекция библиотечная, аппарат не переводится как глосса
+
+Замер [H2787](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2787-Opus_SanskritLexicography_h1210-ab-rerun-funded-both-arms_15.08.26.md)
+(независимый гейт n=400): доминирующий класс серьёзных ошибок arm B — немецкий
+грамматический аппарат, прочитанный как обычная проза (`{%eines%}` → «поручать
+кому-л.», `{%die%}` → «боги»). Такие спаны — легальный немецкий текст, `{Tn}`-гейт
+их не видит.
+
+- **12.1 (✅ применено, H2876).** Детекция аппарата — **библиотечная**, а не
+  прикладная: `from sanskrit_util import classify_german_metalanguage` (канон —
+  [sanskrit-lexicon/sanskrit-util](https://github.com/sanskrit-lexicon/sanskrit-util),
+  PR [#66](https://github.com/sanskrit-lexicon/sanskrit-util/pull/66); в pwg_ru — через шим
+  [src/sanskrit_util.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/sanskrit_util.py)).
+  **Свод не дублирует инвентарь токенов** — источник истины по составу
+  (`GERMAN_GRAMMAR_AB` / `GERMAN_FORMULA_AB` / `GERMAN_FORMULA_PHRASES` /
+  `GERMAN_FUNCTION_WORDS`) — сама библиотека, собранная из уже существовавших
+  списков pwg_ru (pwg_mask · pwg_tm_fragmentize · microstructure ·
+  compile_translatable + экстры H2684). Второй частной таблицы токенов в pwg_ru
+  больше нет ([pwg_tm_fragmentize.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pwg_tm_fragmentize.py)
+  импортирует эти же множества); строковый гейт —
+  [store_flags.row_metalanguage_ok](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/store_flags.py),
+  фикстуры — [tests/test_metalanguage_flags.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tests/test_metalanguage_flags.py).
+- **12.2 (✅ принцип).** Спан, целиком состоящий из аппарата
+  (`grammar_label` / `recurring_formula` / `function_word`), **никогда не
+  переводится как глосса**. Неоднозначный токен (`so`, голое `Ergänzung`) —
+  категория `uncertain`: трактуется как не-глосса, факт логируется (фенс H2876);
+  никакой русской передачи ему не выдумывается.
+- **12.3 (🕓 новые передачи — ждут голосования).** Рабочие примеры DE→RU;
+  ни одна передача ниже не ратифицирована, все 🕓:
+
+  | DE-аппарат | Категория | Передача (🕓, не правило) |
+  |---|---|---|
+  | `{%eines%}` | `function_word` | не переводить; строка блокируется гейтом (H2787-дефект «поручать кому-л.» невоспроизводим) |
+  | `im Comp. vorangehend` | `recurring_formula` | графическое `˚-`/`-˚` по уже принятому принципу §6.1 — словесной передачи нет |
+  | `mit Ergänzung von {#X#}` | `recurring_formula` | уже ратифицировано §2.1: «с восполнением» (не 🕓) — детектор лишь помечает спан как аппарат |
+  | `am Ende eines Comp.` | `recurring_formula` | графически по §6.1 (`-˚`), не словами |
+  | `so` | `uncertain` | не-глосса + лог; передача не назначается |
+- **12.4 (✅).** Детекторные токены **не** проходят через очередь голосования
+  переводов (это аппарат, а не глоссы) — в отличие от передач 12.3, которые
+  проходят обычный маршрут листов.
 
 _Dr. Mārcis Gasūns_

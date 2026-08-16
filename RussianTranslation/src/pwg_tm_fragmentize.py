@@ -35,25 +35,21 @@ NATTR = re.compile(r'\bn\s*=\s*"([^"]*)"')
 SA_FULL = SAN_RE
 GLOSS_FULL = GLOSS_RE
 
-GRAMMAR_AB = {
-    'adj.', 'adv.', 'm.', 'f.', 'n.', 'm. n.', 'f. n.', 'm. f.', 'm. f. n.',
-    'partic.', 'part.', 'caus.', 'desid.', 'intens.', 'pass.', 'med.', 'act.',
-    'nom.', 'acc.', 'instr.', 'dat.', 'abl.', 'gen.', 'loc.', 'voc.',
-    'sg.', 'du.', 'pl.', 'inf.', 'abs.', 'ger.', 'impf.', 'perf.', 'aor.',
-    'opt.', 'impv.', 'fut.', 'cond.', 'ppp.', 'pp.', 'subst.', 'interj.',
-    'pron.', 'num.', 'indecl.', 'comp.', 'superl.', 'denomin.', 'desid',
-    'partic', 'caus',
-}
-FORMULA_AB = {
-    'vgl.', 's. u.', 's. d.', 's. v.', 's. u. d.', 'fgg.', 'fg.', 'dass.',
-    'ebend.', 'u.s.w.', 'desgl.', 'dgl.', 'sc.', 'scil.', 's. u. d. W.',
-}
-FORMULA_PHRASES = (
-    re.compile(r'am Anf(?:ange|\.) eines Comp(?:ositums?|\.)?', re.I),
-    re.compile(r'am Ende eines Comp(?:ositums?|\.)?', re.I),
-    re.compile(r'in Verbindung mit', re.I),
-    re.compile(r's\.\s*u\.\s*d\.\s*W\.', re.I),
+# H2876: the German-apparatus token inventories now live in ONE canonical place —
+# sanskrit-util (GERMAN_GRAMMAR_AB / GERMAN_FORMULA_AB / GERMAN_FORMULA_PHRASES,
+# loaded via the src/sanskrit_util.py shim). This module keeps NO private copy.
+# The shared FORMULA_AB is a superset of the old local set (adds the H2684 repair
+# extras demin./personif./uebertr.) — behaviour-preserving here, because an
+# unknown <ab> already fell through to 'recurring_formula'; the extra PHRASES
+# (an der Spitze eines Comp., mit Ergänzung von, im Comp. vorangehend) add
+# recurring_formula fragment rows for formulae H2787 measured as real apparatus.
+from sanskrit_util import (  # noqa: E402
+    GERMAN_GRAMMAR_AB as GRAMMAR_AB,
+    GERMAN_FORMULA_AB as FORMULA_AB,
+    GERMAN_FORMULA_PHRASES as _FORMULA_PHRASE_PATTERNS,
 )
+
+FORMULA_PHRASES = tuple(re.compile(p, re.I) for p in _FORMULA_PHRASE_PATTERNS)
 
 
 def _ab_token(attrs, content):

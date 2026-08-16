@@ -24,10 +24,13 @@ Keeping the predicate in one place is the actual fix. `test_store_flags.py` pins
 against a row shaped like the live store, so the same drift fails a test instead of
 silently blocking a release.
 """
+import re
 import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
+
+from sanskrit_util import classify_german_metalanguage  # canonical shim (H2876)
 
 PRINT_READY_STATUSES = {'approved', 'human_reviewed'}
 
@@ -70,3 +73,49 @@ def is_print_ready(row):
     is how the two gates drifted from the store schema in the first place.
     """
     return row.get('review_status') in PRINT_READY_STATUSES and machine_ok(row)
+
+
+# ---- H2876: German apparatus metalanguage must never be rendered as gloss ----
+# H2787's independent n=400 gate measured arm B's dominant serious-error class:
+# German grammatical apparatus (`eines`, `im Comp. vorangehend`, `so`,
+# `Ergänzung`) read as ordinary prose and "translated" (`{%eines%}` →
+# «поручать кому-л.», `{%die%}` → «боги») — invisible to the `{Tn}` placeholder
+# gate because the span IS legal German text. The detector is the canonical
+# sanskrit-util classify_german_metalanguage (via the src/sanskrit_util.py shim);
+# this module only owns the ROW predicate, not a second token table.
+
+_GM_LETTERS = re.compile('[A-Za-zäöüßÄÖÜ]')
+
+
+def row_apparatus_as_gloss(row):
+    """True when the row's DE source is pure apparatus metalanguage but the RU
+    field renders it as an ordinary gloss (the H2787 arm-B defect class).
+
+    "Pure apparatus" = classify_german_metalanguage spans cover every letter of
+    the DE source (an `uncertain` span counts as apparatus per the H2876 fence:
+    treat as not-gloss, log). A mixed source (apparatus + real prose) is NOT
+    flagged here — only whole-span apparatus reused as a translation unit is.
+    """
+    de = (row.get('de') or row.get('source_string') or '').strip()
+    ru = (row.get('ru') or row.get('target_string') or '').strip()
+    if not de or not ru:
+        return False
+    spans = classify_german_metalanguage(de)
+    if not spans:
+        return False
+    residue = list(de)
+    for sp in spans:
+        for i in range(sp['start'], sp['end']):
+            residue[i] = ' '
+    if _GM_LETTERS.search(''.join(residue)):
+        return False                       # real prose remains — not pure apparatus
+    for sp in spans:
+        if sp['category'] == 'uncertain':
+            print('store_flags: uncertain metalanguage %r treated as not-gloss '
+                  '(key1=%s)' % (sp['text'], row.get('key1')), file=sys.stderr)
+    return True
+
+
+def row_metalanguage_ok(row):
+    """The gate-facing form: False exactly when row_apparatus_as_gloss(row)."""
+    return not row_apparatus_as_gloss(row)
