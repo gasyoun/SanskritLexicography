@@ -1,0 +1,56 @@
+PWG DE edition graph sidecars — data licence
+============================================
+
+Two distinct rights layers travel together in this pack. Read both.
+
+1. SOURCE TEXT — public domain
+-----------------------------
+
+The German dictionary text reproduced in these artifacts comes from:
+
+  PWG    Böhtlingk, Otto & Roth, Rudolph. Sanskrit-Wörterbuch.
+         St. Petersburg, 1855–1875.
+  PW     Böhtlingk, Otto. Sanskrit-Wörterbuch in kürzerer Fassung.
+         St. Petersburg, 1879–1889.
+  SCH    Schmidt, Richard. Nachträge zum Sanskrit-Wörterbuch in kürzerer
+         Fassung. Leipzig, 1928.
+  PWKVN  Nachträge to the kürzere Fassung.
+
+All four are in the public domain by age. No claim is made over them.
+
+  NWS    Nachtragswörterbuch — the Cologne Digital Sanskrit Dictionaries
+         working layer, 432 of 11,581 senses (3.7%). Redistributed here as
+         part of the edition graph. Attribute the Cologne project when
+         reusing NWS-layer senses.
+
+The digitisation and markup of the printed editions is the work of the Cologne
+Digital Sanskrit Dictionaries project (https://www.sanskrit-lexicon.uni-koeln.de/).
+
+2. DERIVED STRUCTURE — CC-BY-SA-4.0
+-----------------------------------
+
+Everything this project added is licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International licence:
+
+  https://creativecommons.org/licenses/by-sa/4.0/
+
+That covers the edition graph itself and every structural layer computed from
+the German string — government frames, form notes, citation edges and their
+resolver status, edition relations, non-German gloss spans — together with the
+OntoLex-Lemon and TEI Lex-0 modelling, the IRI scheme, and the manifest.
+
+Attribute as:
+
+  Gasūns, Mārcis. PWG DE edition graph — OntoLex-Lemon + TEI Lex-0 sidecars.
+  Sanskrit Lexicon project. CC-BY-SA-4.0.
+
+See CITATION.cff for the machine-readable form and the DOI.
+
+3. WHAT IS NOT HERE
+-------------------
+
+This pack contains no translation, no review score, no reviewer identity and no
+evidence grade. The project's Russian translation store is a separate work under
+separate terms and is not redistributed here. Its absence is enforced
+mechanically, not by convention: a field allowlist at read time and a
+post-serialization byte fence, either of which fails the build.

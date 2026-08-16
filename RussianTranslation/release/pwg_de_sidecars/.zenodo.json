@@ -1,0 +1,34 @@
+{
+ "metadata": {
+  "creators": [
+   {
+    "affiliation": "Институт лингвистических исследований РАН (ИЛИ РАН)",
+    "name": "Gasūns, Mārcis",
+    "orcid": "0000-0003-4513-884X"
+   }
+  ],
+  "description": "<p>The <strong>German</strong> side of the Petersburger W&ouml;rterbuch edition graph, serialized for FAIR reuse as OntoLex-Lemon (Turtle) and TEI Lex-0 (XML).</p><p>459 lexical entries / 11581 edition senses drawn from five editions (nws, pw, pwg, pwkvn, sch). Each sense carries machine-derived structural layers computed from the German string: government (2125), citation edges (40700), edition relations (6008), form notes (42), non-German gloss spans (86).</p><p><strong>This dataset contains no translation, no review score and no evidence grade.</strong> A hard field allowlist and a post-serialization byte fence exclude the project's Russian translation store from the export.</p><p>Source editions PWG (1855&ndash;1875), PW (1879&ndash;1889), SCH (1928) and PWKVN are in the public domain. The NWS layer (432 senses) is the Cologne Nachtragsw&ouml;rterbuch working layer. The derived structure is the authors' own work, released CC-BY-SA-4.0. See DATASHEET.md in the deposit.</p>",
+  "keywords": [
+   "Sanskrit",
+   "lexicography",
+   "OntoLex-Lemon",
+   "TEI Lex-0",
+   "Petersburger Wörterbuch",
+   "linked open data",
+   "digital humanities",
+   "FAIR"
+  ],
+  "language": "deu",
+  "license": "cc-by-sa-4.0",
+  "related_identifiers": [
+   {
+    "identifier": "https://github.com/gasyoun/SanskritLexicography",
+    "relation": "isSupplementTo",
+    "scheme": "url"
+   }
+  ],
+  "title": "PWG DE edition graph — OntoLex-Lemon + TEI Lex-0 sidecars",
+  "upload_type": "dataset",
+  "version": "v1.0.0"
+ }
+}
