@@ -45,6 +45,12 @@ import pwg_sources as pwgsrc  # noqa: E402  (<ls> siglum -> full source title, f
 import spr_fulltext as spr  # noqa: E402  (<ls> Spr. (II) N -> Indische Sprüche full text, for tooltips; H1307)
 import iast_to_cyrillic as i2c  # noqa: E402  (<is> proper name -> Cyrillic, RU column only)
 import government_census as govc  # noqa: E402  (<ab> case-government extractor; powers government.html, H1308)
+import ls_links  # noqa: E402  (<ls> MBh scan URL -> vulgate e-text URL + presence verdict, H2845)
+
+#: The MBh e-text layer, shared by every card this renderer builds (H2845). It is
+#: a lookup over csl-atlas mbh_vulgate_critical_presence.csv; where that sibling
+#: checkout is absent it stays silent rather than implying a verse is absent.
+_MBH = ls_links.MbhEtext()
 
 RU_STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 OUT_DIR = os.path.join(REPO, 'article_site')
@@ -54,6 +60,34 @@ _SK = re.compile(r'\{#(.*?)#\}', re.S)
 _GL = re.compile(r'\{%(.*?)%\}', re.S)
 _LS = re.compile(r'<ls\b([^>]*)>(.*?)</ls>', re.S)
 _N_ATTR = re.compile(r'\bn\s*=\s*"([^"]*)"')
+
+
+def _etext_html(scan_url, LT, GT, QT):
+    """The e-text sibling of a resolved MBh scan link, or '' (H2845).
+
+    A scan link says where a verse is *printed*; this says where it is *readable*,
+    and whether the BORI critical edition carries it too. The verdict comes from
+    csl-atlas
+    [`mbh_vulgate_critical_presence.csv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/forensic/mbh_vulgate_critical_presence.csv)
+    via [`ls_links.MbhEtext`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ls_links.py);
+    method and the measured accuracy it is conditional on are in
+    [`MBH_ETEXT_PRESENCE_CENSUS.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/forensic/MBH_ETEXT_PRESENCE_CENSUS.md).
+
+    Returns '' for every non-MBh citation and whenever the table is not on this
+    machine — silence, never an implied `absent`. `E†` marks the reading worth
+    having: the verse stands in the vulgate and not in the critical edition."""
+    verdict, url, note = _MBH.for_scan_href(scan_url)
+    if not url or verdict == ls_links.UNCHECKED:
+        return ''
+    vulgate_only = verdict == ls_links.PRESENT_ABSENT
+    title = ('Nīlakaṇṭha vulgate e-text %s — %s' % (
+        note, 'vulgate-only: the BORI critical edition relegates this verse to its '
+              'apparatus' if vulgate_only else
+              'present in the BORI critical edition too'))
+    return ('%sa class=lse href=%s%s%s title=%s target=_blank rel=noopener%s'
+            '%ssup%s%s%s/sup%s%s/a%s'
+            % (LT, QT, url, QT, title.replace(' ', '\xa0'), GT,
+               LT, GT, 'E†' if vulgate_only else 'E', LT, GT, LT, GT))
 
 
 def _ls_href(attrs, visible):
@@ -257,7 +291,11 @@ def _render(text, mode, lang=None):
         # then strip leftover SOURCE structural tags (<div>, <sic/>, ...), then
         # html-escape the plain text, then restore our sentinels to real tags.
         # (The old generic <[^>]+> strip removed our own generated spans too.)
-        LT, GT = '\x01', '\x02'
+        # QT is a third sentinel, restored to a real `"` at the same point as
+        # LT/GT. The e-text href carries `?id=…` and an `=` inside an UNQUOTED
+        # attribute value is an HTML5 parse error, so that one attribute is
+        # genuinely quoted instead of relying on tokenizer recovery.
+        LT, GT, QT = '\x01', '\x02', '\x03'
         t = _SK.sub(lambda m: '%si class=sa%s%s%s/i%s' % (LT, GT, slp1_iast(m.group(1)), LT, GT), t)
 
         def _ls_html(m):
@@ -275,8 +313,9 @@ def _render(text, mode, lang=None):
             tattr = ' title=%s' % title.replace(' ', '\xa0') if title else ''
             if url:
                 # <a class=ls href=URL title=T target=_blank rel=noopener>DISPLAY</a>
-                return '%sa class=ls href=%s%s target=_blank rel=noopener%s%s%s/a%s' % (
-                    LT, url, tattr, GT, display, LT, GT)
+                return ('%sa class=ls href=%s%s target=_blank rel=noopener%s%s%s/a%s%s'
+                        % (LT, url, tattr, GT, display, LT, GT,
+                           _etext_html(url, LT, GT, QT)))
             return '%sspan class=ls%s%s%s%s/span%s' % (LT, tattr, GT, display, LT, GT)
         t = _LS.sub(_ls_html, t)
 
@@ -295,7 +334,7 @@ def _render(text, mode, lang=None):
         t = _TAG.sub('', t)               # drop leftover source structural tags
         t = html.escape(t)                # escape &,<,> in the remaining plain text
         t = t.replace('\n', '<br>')       # real <br> (added after escape)
-        t = t.replace(LT, '<').replace(GT, '>')   # restore our kept tags
+        t = t.replace(LT, '<').replace(GT, '>').replace(QT, '"')  # restore our kept tags
         # NOTE: title=... attributes are intentionally left UNQUOTED (matching
         # href=/class= elsewhere in this renderer) with internal spaces shielded
         # as U+00A0 (renders identically to a normal space in the tooltip) —
