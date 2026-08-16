@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 14-08-2026 (`pwg_tm_lex0_ontolex_release_h2685`: INTENTIONAL-DIVERGENCE. Four-format publication TM export is German→Russian; corpus Sa→Ru `build_tmx.py build` is unchanged.)_
+_Created: 04-07-2026 · Last updated: 16-08-2026 (`de_edition_export_profile_h1629`: SHARED verdict re-verified under H1635. The `evidence`-string Cyrillic scrub is a DE-side structural-label fix, not a target-language branch.)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -1898,10 +1898,10 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H1629 (26-07-2026, Opus 5 `claude-opus-5[1m]`). Language-agnostic BY CONSTRUCTION, the german_anchor_repair_h858 pattern: it never reads or writes a target-language field, and a target language is not a parameter of the export at all — adding a third language changes nothing here. The `en` literal that trips the coverage scanner is the FORBIDDEN_FIELDS entry that BANS the English column, not a branch on it. Pinned by export_de_edition --selftest, which asserts the allowlist projection drops every forbidden field, that assert_rights_safe fires on a JSON key / Turtle predicate / XML element leak but not on a legitimate `\"en\"` gloss-language value, and that both serializations are byte-deterministic.",
+    "note": "H1629 (26-07-2026, Opus 5 `claude-opus-5[1m]`). Language-agnostic BY CONSTRUCTION, the german_anchor_repair_h858 pattern: it never reads or writes a target-language field, and a target language is not a parameter of the export at all — adding a third language changes nothing here. The `en` literal that trips the coverage scanner is the FORBIDDEN_FIELDS entry that BANS the English column, not a branch on it. Pinned by export_de_edition --selftest, which asserts the allowlist projection drops every forbidden field, that assert_rights_safe fires on a JSON key / Turtle predicate / XML element leak but not on a legitimate `\"en\"` gloss-language value, and that both serializations are byte-deterministic. RE-VERIFIED H1635 (16-08-2026, Opus 5 `claude-opus-5`): the SHARED verdict still holds. The change adds scrub_cyrillic() over edition_rel's `evidence` string, which classify_edition_rel builds by interpolating the RAW sense_tag and both emitters write verbatim (rdfs:comment / @relEvidence) — so a SANITIZABLE_DE_FIELDS defect reached the serialized bytes and failed assert_rights_safe on the first full-store export. Scrubbing a structural label is not a target-language branch: sense_tag is DE-side metadata, the scrub is unconditional rather than per-language, and the Cyrillic it removes is store contamination, not a Russian column. Regression-pinned by a new selftest section 4b that reproduces the leak directly, because the fixture's sanitizable-tag row does not take an evidence-bearing classification branch.",
     "tracking": "H1629",
     "verified_sha256": {
-      "src/export_de_edition.py": "b0c72b7093ff6a768dcab8c20360de4f86d949f3de787dd994ea489923ac9ac9"
+      "src/export_de_edition.py": "ce4a41a135799ba49889841999a4314939772f8631a68854055318f9af148ca3"
     }
   },
   {

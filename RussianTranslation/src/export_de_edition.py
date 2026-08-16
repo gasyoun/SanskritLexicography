@@ -83,6 +83,9 @@ FORBIDDEN_FIELDS = ('ru', 'en', 'review_status', 'reviewer', 'provenance',
                     'evidence', 'evidence_summary', 'corpus_gate', 'differentia')
 
 CYRILLIC = re.compile('[Ѐ-ӿ]')
+#: Run form, so a scrubbed label carries ONE marker per contiguous Russian run
+#: rather than one per character.
+CYRILLIC_RUN = re.compile('[Ѐ-ӿ]+(?:[\\s‐-―-]+[Ѐ-ӿ]+)*')
 
 #: Edition layer -> human label + licence posture. PWG/PW/SCH/PWKVN are the
 #: 19th–early-20th-c. German editions (public domain); NWS is the Cologne
@@ -134,6 +137,28 @@ def de_impurity(row: dict) -> list[str]:
     """
     return sorted(k for k in BLOCKING_DE_FIELDS + SANITIZABLE_DE_FIELDS
                   if isinstance(row.get(k), str) and CYRILLIC.search(row[k]))
+
+
+#: Marker left where a Cyrillic run was scrubbed out of a structural label, so
+#: the defect stays visible in the artifact instead of silently vanishing.
+RU_ELIDED = '[ru elided]'
+
+
+def scrub_cyrillic(text):
+    """Replace Cyrillic runs in a structural label with :data:`RU_ELIDED`.
+
+    ``edition_rel.classify_edition_rel`` builds its ``evidence`` string by
+    interpolating the RAW ``sense_tag`` (``"PW abridging restatement;
+    sense_tag=%r"``), and that string is emitted verbatim as ``rdfs:comment``
+    (Turtle) and ``@relEvidence`` (TEI). ``sense_tag`` is
+    :data:`SANITIZABLE_DE_FIELDS` — ~1% of store rows carry Russian free text
+    there — but the slug sanitizer only guards IRIs/``xml:id``s, so the raw tag
+    reached the serializer through the evidence string and tripped
+    :func:`assert_rights_safe` on a full-store export (H1635).
+    """
+    if not isinstance(text, str):
+        return text
+    return CYRILLIC_RUN.sub(RU_ELIDED, text)
 
 
 def iter_rows(path: str, limit: int | None = None, keys: set | None = None):
@@ -201,6 +226,11 @@ def sense_layers(row: dict, pwg_genders: dict | None = None) -> dict:
             row.get('layer'), sense_tag=row.get('sense_tag'), de=de,
             key1=row.get('key1'), subcard=row.get('subcard'),
             pwg_genders=(pwg_genders or {}).get(row.get('key1')))
+    # The classifier interpolates the RAW sense_tag into `evidence`, and both
+    # emitters write that string out verbatim. Scrub it here — the one place
+    # both the precomputed and the freshly-classified `rel` pass through.
+    if isinstance(rel, dict) and rel.get('evidence'):
+        rel = dict(rel, evidence=scrub_cyrillic(rel['evidence']))
     # G1: keep only the spans whose language is NOT German — those are the
     # editorially interesting ones (Latin cue, botany binomial, Wilson English)
     # and the ones a consumer must not read as German.
@@ -770,6 +800,28 @@ def selftest():
     check(sense_tag_slug('sam- 1') == 'sam-1', 'slug: %r' % sense_tag_slug('sam- 1'))
     check(sense_tag_slug('NWS-1') == 'NWS-1', 'slug: %r' % sense_tag_slug('NWS-1'))
     check(xml_id('1') == '_1', 'xml:id must start with a letter/underscore')
+
+    # ---- 4b. edition_rel `evidence` is scrubbed (H1635) --------------------
+    # The classifier interpolates the RAW sense_tag into `evidence`, which both
+    # emitters write verbatim. The fixture's sanitizable-tag row happens not to
+    # take an evidence-bearing classification branch, so the leak survived the
+    # fixture round-trip and only surfaced on a full-store export. Reproduce it
+    # directly rather than relying on the fixture to wander onto the branch.
+    check(scrub_cyrillic('sense_tag=%r' % 'Mit <div n="p"> — корригенда')
+          == 'sense_tag=\'Mit <div n="p"> — %s\'' % RU_ELIDED,
+          'scrub_cyrillic collapses a run to one marker: %r'
+          % scrub_cyrillic('sense_tag=%r' % 'Mit <div n="p"> — корригенда'))
+    check(scrub_cyrillic('плохой тег') == RU_ELIDED,
+          'multi-word Cyrillic run collapses to a single marker: %r'
+          % scrub_cyrillic('плохой тег'))
+    leaky = {'key1': 'test', 'layer': 'pw', 'subcard': 'PW 1',
+             'sense_tag': 'Mit <div n="p"> — корригенда',
+             'de': 'ein deutscher Text {%Gloss%}'}
+    ev = sense_layers(leaky)['edition_rel'].get('evidence') or ''
+    check('sense_tag' in ev,
+          'guard row must reach the evidence-bearing branch, got %r' % ev)
+    check(not CYRILLIC.search(ev),
+          'edition_rel evidence must carry no Cyrillic: %r' % ev)
 
     # ---- 5. fixture round-trip: both serializations -----------------------
     check(os.path.exists(args.rows), 'fixture present: %s' % args.rows)
