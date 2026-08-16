@@ -366,4 +366,108 @@ proves A1–A5 and A9 against the artifacts on disk, including the two stop
 conditions — that no row which had no target became placed (A3), and that the
 canonical store is byte-identical (A5). Run it after any change to the classifier.
 
+## 11. Corrections that live inside PWG itself (H2880, 16-08-2026)
+
+Wave 1 split the axes for the *supplement* layers. The same defect sat one layer
+down, in the skeleton: **365 rows carried on the `pwg` layer are not senses of
+PWG at all.** They are the authors' own later supplements (`Nachtrag`,
+`Nachtr.`, `addendum`, `addenda`, `corrigendum`) or material the later PW
+edition contributed at a PWG sense (`1 (PW)`, `PW`, `PW-1`). Until now every one
+of them was rendered as an ordinary skeleton sense — `**Nachtrag)** …` — so a
+card asserted the existence of a PWG sense called "Nachtrag".
+
+They are now classified `pwg_internal_correction` and attached through wave 1's
+placement mechanism rather than a second, parallel one.
+
+### 11.1 The marker is named, and the name is kept
+
+A row leaves the skeleton only when a **named** printed cue matches
+(`pwg_correction_marker`), and the matched name is recorded on the sidecar row as
+`correction_marker`. A reviewer can therefore disagree with one specific rule
+instead of with an opaque verdict. A tag matching nothing stays `base`: pulling a
+row out of the skeleton wrongly *loses a real PWG sense* from the card, which is
+the more expensive error in this direction.
+
+The `PW`-family regex is anchored whole-string (`^\s*PW(?:[-_ ]?\d+)?\s*$`) so it
+can never fire on `PWG` or `PWKVN` — a selftest pins exactly that, because the
+failure mode is emptying the skeleton of its real senses.
+
+### 11.2 The trap: a trailing digit is usually not a target
+
+`Nachtrag-1`, `addendum-2`, `PW-1` and `Nachtrag §75-1` all carry a digit, and in
+none of them is it a PWG sense number — it is the ordinal of the addendum, or a
+section reference. Reading it as a target would silently attach the row to sense
+1. The existing `lead_int` already declines these (no *leading* digit), so wave 2
+adds no new extraction rule at all; it pins the behaviour with negative
+selftests instead. Targets come only from a leading integer — `4 (Nachtrag)`,
+`6_addendum`, `1 (PW)` — exactly as in wave 1.
+
+### 11.3 Distribution — the answer to "how many actually attach"
+
+| marker | rows | found | no_target_marker | out_of_range | not_found |
+|---|---:|---:|---:|---:|---:|
+| `nachtrag` | 184 | 6 | 178 | 0 | 0 |
+| `addendum` | 88 | 18 | 66 | 3 | 1 |
+| `pw_provenance` | 86 | 41 | 40 | 1 | 4 |
+| `corrigendum` | 7 | 1 | 6 | 0 | 0 |
+| **total** | **365** | **66** | **290** | **4** | **5** |
+
+**66 of 365 (18.1 %) attach to a named PWG sense; 290 (79.5 %) carry no target
+marker at all** — the open question in the handoff, answered by measurement
+rather than guessed at. The asymmetry is the result: a `Nachtrag` almost never
+names the sense it amends (6 of 184), while a `1 (PW)` almost always does (41 of
+86), because the PW provenance tag *is* a sense number. Per the wave-1 contract
+the unnamed 290 are `placement=false` with a reason, never a guess.
+
+### 11.4 `op` is `amend`, deliberately not `correct`
+
+`build_reglue` renders `op in ("correct", "delete")` with a
+`~~(cancels PWG)~~` strikethrough. A Nachtrag *amends* the sense it points at; it
+does not withdraw it. Reusing `op="correct"` would have struck through hundreds
+of senses as cancelled. `direction` is likewise a new value `internal` — the
+material is neither a later layer's addition (`additive`) nor the skeleton
+(`base`). `placement_axis_check` W2d fails the build if a correction ever
+acquires a cancelling `op`.
+
+PW provenance is recorded on the existing `source_layers` (`["pwg", "pw"]`), not
+as a second subtype — duplicating one fact across two fields is what wave 1's
+decision 7 forbids.
+
+### 11.5 A correction is not a target
+
+`build_pwg_sense_index` now excludes correction rows, so a Nachtrag can never be
+offered as the *target* of another Nachtrag — the wave-2 analogue of the defect
+wave 1 removed. This is asserted, not assumed: W2b and W2c fail the build if a
+correction is placed onto a correction, or if a correction tag survives in the
+skeleton index. It is a **no-op for wave 1's numbers**, and that too is measured
+rather than argued — see 11.6.
+
+### 11.6 Wave 1 is provably untouched
+
+Re-running wave 1's own code over this same store reproduces its published
+figures exactly (6,009 sidecar rows · found 595 · no_target_marker 4,901 ·
+out_of_range 383 · not_found 130). Against that baseline, wave 2 changes **zero**
+non-`pwg` rows — not one row lost, gained, or altered in any field. The sidecar
+grows 6,009 → 6,374 (+365, all corrections) and the reason counts move by exactly
+the corrections' own distribution.
+
+The canonical store is untouched and proved so: `rows=11603`,
+`sha256 811bbc21…`, identical to wave 1's. Window suite 211/211.
+
+> The stop-condition figure in the PLAN cover reads `rows=11715`; the real store
+> has **11,603** rows, which is what wave 1 shipped against. The plan's number
+> was stale on arrival — verify against the store, not the prose.
+
+### 11.7 What wave 2 deliberately does NOT do
+
+- **Not put on a vote.** The `h180-reglue-evidence` sheet asks "does this
+  supplement from a later layer sit at the right PWG sense?", which is not the
+  question to ask of a Nachtrag inside PWG. Corrections are excluded from that
+  sheet's census, so its content and its 47 sampled cards are **byte-identical**
+  to wave 1's. They get their own gate when wave 2 goes to review.
+- **Not fed to the gloss-overlap metric**, which was measured and rejected
+  (FINDINGS §541). `reglue_overlap` keeps skipping `pwg` rows, now by documented
+  intent rather than by accident.
+- **Not touching the canonical store**, per the roadmap's non-goals.
+
 _Dr. Mārcis Gasūns_

@@ -19,7 +19,10 @@ Design choices (honour H180 guardrails):
     an llm verdict in place.
 
 Inputs  : src/pwg_ru_translated.jsonl
-Outputs : src/pwg_ru_relationships.jsonl   (one row per non-pwg sub-card sense)
+Outputs : src/pwg_ru_relationships.jsonl   (one row per sub-card sense that
+          asserts a relationship: every non-`pwg` sense, plus — since H2880
+          wave 2 — the `pwg` rows that are corrections to another PWG sense
+          rather than senses themselves)
           pwg_ru/relationships_rollup.tsv   (aggregate by subtype/op/direction/layer)
 
 Run: python src/build_relationships.py
@@ -38,7 +41,7 @@ OUT_TSV = os.path.join(ROOT, "pwg_ru", "relationships_rollup.tsv")
 # H1624 G4: single classifier shared with promote / annotate_edition_rel.
 from edition_rel import (
     edition_rel_for_row, build_pwg_gender_index, build_pwg_sense_index,
-    lead_int, homonym_of,
+    pwg_correction_marker, lead_int, homonym_of,
 )
 
 
@@ -59,7 +62,10 @@ def main():
     placement_roll = collections.Counter()
     for d in recs:
         layer = d.get("layer")
-        if layer == "pwg":
+        if layer == "pwg" and not pwg_correction_marker(d.get("sense_tag")):
+            # An ordinary PWG sense asserts no relationship, so it gets no
+            # sidecar row — as before. H2880 admits exactly one exception: a row
+            # sitting in the skeleton that is really an edit *to* a sense.
             continue
         # confidence "llm" preserved for H180 sheet continuity (heuristic first pass).
         er = edition_rel_for_row(d, pwg_gender, pwg_senses)
@@ -82,9 +88,13 @@ def main():
             "confidence": "llm",
             "evidence": er.get("evidence") or "",
         }
-        for k in ("source_lang",):
+        for k in ("source_lang", "correction_marker"):
             if k in er:
                 rel[k] = er[k]
+        if er.get("subtype") == "pwg_internal_correction":
+            # H2880: which layer the amending material came from — `pwg` for a
+            # Nachtrag, `pwg`+`pw` for a `1 (PW)` row.
+            rel["source_layers"] = er.get("source_layers", ["pwg"])
         for k, v in er.items():
             if k.startswith("needs_ru_from_"):
                 rel[k] = v

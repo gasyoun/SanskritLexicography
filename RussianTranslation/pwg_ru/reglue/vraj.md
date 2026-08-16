@@ -30,8 +30,6 @@
 <ls>R. 4,13,36.</ls> {#taM vinA ko vrajetsuKam#} то есть <ab>v. a.</ab> {%чувствовать себя хорошо%}
 <ls>HARIV. 15815.</ls>
 
-**addendum)** <div n="v">— <ab>Vgl.</ab> {#vipravrAjin#} .
-
 **anusam)** <div n="p">— {#anusam#} {%идти следом, следовать%}: {#prapAdyamAne rAjanyagreRAno 'nusaMvrajet#}
 <ls>ĀŚV. ŚR. 4,4,5.</ls>
 <ls>GOBH. 2,2,14.</ls> {#imA (gAH) anusaMvraja#}
@@ -126,6 +124,8 @@
 
 **upasam)** <div n="p">— {#upasam#} {%вступать в, входить в%}: {#(na) AkIrRaM BikzukErvAnyErAgAramupasaMvrajet#}
 <ls>M. 6,51.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› <div n="v">— <ab>Vgl.</ab> {#vipravrAjin#} .
 
 **+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#vraj#} [Gen , unsp] ( vrájati I P ) {%идти, ходить, двигаться, путешествовать, странствовать, перемещаться%}. ṚV . [с padbhyām или scil.: «идти пешком»; с upānadbhyām: то же, букв. «в обуви»; с dhūryais: «путешествовать с помощью вьючных животных»; с paramāṃ gatim: «достигать высшего блаженства»; с antam и gen.: «доходить до конца»; с anyena, anyatra или anyatas: «идти другим путем или в другое место»; с adhas: либо «опускаться [в ад]», либо «перевариваться [о пище]».] {%идти с целью, собираться%} (dat. inf. или прил. на -aka [напр. bhojako vrajati: «он собирается есть»]. Pāṇ ii, 3, 15; iii, 3, 10. {%становиться%}. [особ. с вин. пад. отвлеченного сущ., напр. с vināśam: «идти к гибели, погибать»; с chattratām: «становиться учеником»; с nirvṛtim: «становиться счастливым» [ср. √ gam, yā &]; с sukham: «чувствовать себя хорошо»; с jīvan: «спастись живым». Mbh, Kāvya(MW).] Caus. или X P (vrājayati): {%посылать, гнать; приготовлять, украшать%}. AĀr, DhātuPā(MW). Intens. (vāvrajyate, vāvrakti): {%идти криво%}. Pāṇ iii, 1, 23, Scholiast. MW : 1041
 

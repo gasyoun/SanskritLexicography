@@ -449,12 +449,12 @@
 **6)** <div n="1">— 6) {%делить, производить деление%}
 <ls>SŪRYAS. 4,26.</ls> — <ab>caus.</ab>
 
-**Nachtrag §75-1)** <div n="1"> 1)
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag §75-1› <div n="1"> 1)
 <ls>Spr. 4540.</ls>
 
-**Nachtrag §76)** <div n="p">— {#ava#}
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag §76› <div n="p">— {#ava#}
 
-**Nachtrag §77-3)** <div n="1"> 3) {#avacCinna#} — {%определенный, точно установленный, понятийно ограниченный%}: {#zoqaSasaMKyAvacCinno gaRaH zoqaSakaH#}
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag §77-3› <div n="1"> 3) {#avacCinna#} — {%определенный, точно установленный, понятийно ограниченный%}: {#zoqaSasaMKyAvacCinno gaRaH zoqaSakaH#}
 <ls>SARVADARŚANAS. 148,21.</ls> <ls>NĪLAK. 205. 225. 238. 242. 244. 170. fg.</ls> {#tAdAtmyasaMbanDAvacCinnapratiyogiko 'nyo'nyABAvaH#}
 <ls>TARKAS. 58.</ls> {#anavacCinna#}
 <ls>SARVADARŚANAS. 84,22.</ls> {#anavacCinnatva#}
@@ -463,23 +463,23 @@
 <div n="1"> 1) и
 <ls>VEDĀNTAS. (Allah.) No. 34</ls> и <ls>BHARTṚ. 2,1</ls> под 2); {#dikkAlAnavacCinna#} — {%не принадлежащий пространству и времени, не подпадающий под категории пространства и времени%}.
 
-**Nachtrag §79)** <div n="p">— {#A#}
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag §79› <div n="p">— {#A#}
 <div n="1"> 1)
 <ab>Z.</ab> 4 <ls>MBH. 12,9377</ls> — <ls>ed. Bomb.</ls> читает {#ye ca cCindanti vfzaRAn#} .
 
-**Nachtrag §81-3)** <div n="1">— 3) {%удалять, уничтожать%}: {#yenAcCinnaM tattamaH#} (так <ls>ed. Bomb.</ls>)
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag §81-3› <div n="1">— 3) {%удалять, уничтожать%}: {#yenAcCinnaM tattamaH#} (так <ls>ed. Bomb.</ls>)
 <ls>MBH. 13,7362.</ls>
 
-**Nachtrag §82-4)** <div n="1">— 4) {#AcCinnadAradraviRAH#}
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag §82-4› <div n="1">— 4) {#AcCinnadAradraviRAH#}
 <ls>BHĀG. P. 12,2,9.</ls>
 
-**Nachtrag §83-6)** <div n="1">— 6) {%прерывать%}: {#kaTAmAcCidya#}
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag §83-6› <div n="1">— 6) {%прерывать%}: {#kaTAmAcCidya#}
 <ls>KATHĀS. 61,94.</ls>
 
-**Nachtrag §84)** <div n="p">— {#samud#}, {#samucCinna#} — {%утраченный, пропавший%}: {#racanA#}
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag §84› <div n="p">— {#samud#}, {#samucCinna#} — {%утраченный, пропавший%}: {#racanA#}
 <ls>SŪRYAS. 13,18.</ls>
 
-**Nachtrag §85-86-4)** <div n="p">— {#pari#}
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag §85-86-4› <div n="p">— {#pari#}
 <div n="1"> 4)
 <ls>Z. 11</ls> {#paricCinna#}
 <ls>BHĀG. P. 3,10,12</ls> — объясняет
@@ -487,7 +487,7 @@
 <ls>Spr. 3473.</ls>
 <ls>SARVADARŚANAS. 53,2.</ls>
 
-**Nachtrag §87-88-1)** <div n="p">— {#vi#}
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag §87-88-1› <div n="p">— {#vi#}
 <div n="1"> 1) {#vicCinna#} — {%прерванный%}
 <ls>SARVADARŚANAS. 165,19. 166,2.</ls> {#mantra#}
 [Page5-1432]
@@ -501,7 +501,7 @@
 <div n="1"> 1)
 <ab>Z.</ab> 2 — следует читать <ls>M.</ls> <ab>st.</ab> <ls>MBH.</ls>
 
-**Nachtrag §13)** <div n="p">— {#pra#} <ab>caus.</ab> — от <ab>intens.</ab> {#pracecCidayya#}
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag §13› <div n="p">— {#pra#} <ab>caus.</ab> — от <ab>intens.</ab> {#pracecCidayya#}
 <ls>PAT. a. a. O. 6 (4) 14,a.</ls>
 
 ## h4

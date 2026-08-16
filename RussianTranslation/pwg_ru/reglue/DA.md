@@ -191,8 +191,6 @@
 
 **Desid.)** <div n="v">— <ab>Vgl.</ab> {#anapanihitam#} .
 
-**Nachtrag)** <div n="v">— <ab>Vgl.</ab> {#prasaMDi#} .
-
 **PPP-1)** <div n="1"> 1) {%разделенный, отделенный%}: {#rAtriBirantarhitO#}
 <ls>ŚAT. BR. 2,2,3,13.</ls> <ls n="ŚAT. BR.">13,8,1,20.</ls> {#a/nantarhita#} {%не разделенный никаким промежутком <ab>u. s. w.</ab>, непосредственно связанный. — следующий%}
 <ls>ŚAT. BR. 1,6,3,27.</ls> <ls n="ŚAT. BR.">6,2,3,2.</ls> {#prajA#}
@@ -223,11 +221,6 @@
 
 **aByava+DA)** <div n="p">— {#aByava#} {%сбивать%} (пыль): {#pOrajanASruBiH . patitEraByavahitaM praSaSAma mahIrajaH ..#}
 <ls>R. 2,40,33.</ls>
-
-**addendum)** <div n="v">— <ab>Vgl.</ab> {#saMniDAna, ˚Di#} . — <ab>caus.</ab> {%приблизить, представить себе%}: {#vAsudevasya priyAM tanUm — parameRa samADinA saMniDApya#}
-<ls>BHĀG. P. 5,18,1.</ls> <ls n="BHĀG. P. 5,">17,16.</ls> <ab>pass.</ab> {%явить себя, показаться кому-л.%} (<ab>gen.</ab>) {%вблизи%}: {#yatra ha vAva BagavAnhariradyApi tatratyAnAM nijajanAnAM vAtsalyena saMniDApyata icCArUpeRa#}
-<ls n="BHĀG. P. 5,">7,8.</ls>
-[Page3-0920]
 
 **caus.)** <div n="v">— <ab>Vgl.</ab> {#avaDAtavya, ˚DAna, ˚Di#} . — <ab>caus.</ab>: {#gartezvavakAmavaDApayet#} {%велит вложить%} <ls>ĀŚV. GṚHY. 2,8. 4,4.</ls>
 
@@ -303,6 +296,32 @@
 <ls>ŚAT. BR. 9,4,3,15.</ls>
 
 **tail)** <div n="v">— <ab>Vgl.</ab> {#upadaDi, ˚DA, ˚DAna, ˚DAnIya, ˚Di, ˚Deya#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› <div n="v">— <ab>Vgl.</ab> {#antarDA#} <ab>fgg.</ab> — <ab>caus.</ab> {%заставлять исчезать%}: {#iti rUpamantarDApitam#}
+<ab>Schol.</ab> к <ls>NALOD. 3,18.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› <div n="v">— <ab>Vgl.</ab> {#apaDA#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› <div n="v">— <ab>Vgl.</ab> {#pratiniDi#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› <div n="v">— <ab>Vgl.</ab> {#saMniDAna, ˚Di#} . — <ab>caus.</ab> {%приблизить, представить себе%}: {#vAsudevasya priyAM tanUm — parameRa samADinA saMniDApya#}
+<ls>BHĀG. P. 5,18,1.</ls> <ls n="BHĀG. P. 5,">17,16.</ls> <ab>pass.</ab> {%явить себя, показаться кому-л.%} (<ab>gen.</ab>) {%вблизи%}: {#yatra ha vAva BagavAnhariradyApi tatratyAnAM nijajanAnAM vAtsalyena saMniDApyata icCArUpeRa#}
+<ls n="BHĀG. P. 5,">7,8.</ls>
+[Page3-0920]
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#saMDay#} (dazu gehört {#saMDayIta, saMDayAmAsa, saMDita), ˚DA, ˚DAtar, ˚DAtavya, ˚DAna, ˚Di, ˚Deya, dvizaMhita, saMhina, sahita#} . — <ab>des.</ab> {%желать составить —, изготовить%}: {#yaTA SIrRena SIrRaM saMDitset#}
+<ls>ŚAT. BR. 11,5,8,6.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#atisaMDAna#} и {#atisaMDita#} <ab>u.</ab> {#saMDay#} mit {#ati#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#anusaMDAna#} ({%направление внимания на что-либо%}; <ab>vgl.</ab>
+<ls>DHŪRTAS. 85,8</ls>), {#anusaMDeya#} ({%то, на что следует направить свое внимание%}
+<ls>SUŚR. 1,13,4.</ls> {%искать, принимать%}: {#atra kaTopakaTanaM BArate 'nusaMDeyam#}
+<ab>Schol.</ab> к <ls>NALOD. 3,18.</ls> <ls>MALLIN.</ls> к <ls>KUMĀRAS. 6,46</ls>) и {#anusaMDita#} <ab>u.</ab> {#saMDay#} mit {#anu#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#aBisaMDaka#} (wohl von {#aBisaMDay#}) <ab>fgg.</ab> и {#aBisaMDita#} <ab>u.</ab> {#saMDay#} mit {#aBi#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#prasaMDi#} .
 
 **+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> {#DA#}¦, основы настоящего времени: {#da/DA#} (<ab>Act.</ab>), {#da/D#} (<ab>Act.</ab> <ab>Med.</ab>), {#da/Da#} (<ab>Act.</ab> <ab>Med.</ab>) и {#DA/#} (<ab>Act.</ab> <ab>Med.</ab>); <ab>Absol.</ab> {#DitvA/#} (<ls>TS. 7,4,3,1.</ls> <ls n="TS. 7,4,3,">2</ls>) и {#hitvA#}; <ab>Pass.</ab> {#DIya/te, ˚Dita#} ({#Dita#} <ls>HARIV. 7799</ls> сомнительно) и {#hita/#} (<ab>s.</ab> <ab>bes.</ab>).
 
@@ -1180,59 +1199,63 @@ a〉 {%надевать%} (одежду), {%принимать%} (облик).
 ## h6
 
 **1)** <div n="1"> 1) {#vAcaM tena na saMdaDyAt#} так <ab>v. a.</ab> {%с тем пусть он не обменивается словами%} <ls>MBH. 12,4220.</ls>
-
-**1_addendum)** <div n="1"> 1)
+  — [PWG·pwg_internal_correction] ‹1_addendum› <div n="1"> 1) в конце добавь {#samAhitena manasA#}
+<ls>Spr. 2796.</ls> {#susamAhita#} {%весьма внимательный%}
+<ls n="Spr.">4541.</ls>
+  — [PWG·pwg_internal_correction] ‹1_addendum› <div n="1"> 1) <ab>pass.</ab> {%содержаться%}: {#Dane suKakalA yA tu sApi duHKe niDIyate#} (<ab>Conj.</ab>; <ab>vgl.</ab> <ab>u.</ab> {#vi#}
+<div n="1"> 1) ниже)
+<ls>Spr. 3614.</ls> В конце добавь: {#(tam) nidaDyAnmantriRam#}
+<ls>Spr. 5339</ls>, <ab>v. l.</ab>
+  — [PWG·pwg_internal_correction] ‹1_sub_addendum› <div n="1"> 1) {#bAlasya ca SarIraM tattEladroRyAM niDApaya#}
+<ls>R. 7,75,2.</ls>
+  — [PWG·pwg_internal_correction] ‹1_addendum› <div n="1"> 1)
 <ab>Z.</ab> 2 читай {#nave#} <ab>st.</ab> {#nava#} .
 
-**1_sub_addendum)** <div n="1"> 1) {#bAlasya ca SarIraM tattEladroRyAM niDApaya#}
-<ls>R. 7,75,2.</ls>
-
 **2)** <div n="1"> 2) <ls>Spr. 2894.</ls> — <ab>desid.</ab> {%стремиться достичь чего-л., следовать за чем-л.%}: {#ekamanusaMDitsato 'paraM pracyavate#} <ls>SARVADARŚANAS. 27,11. fg. 118,16.</ls>
-
-**2_addendum)** <div n="1"> 2) {#parihitanIlavastra#}
+  — [PWG·pwg_internal_correction] ‹2_addendum› <div n="1"> 2) {#samyakpraRihitA ca vAk#} {%уместно сказанная речь%}
+<ls>Spr. 3628.</ls>
+  — [PWG·pwg_internal_correction] ‹2_addendum› <div n="1"> 2) {#parihitanIlavastra#}
 <ls>Verz. d. Oxf. H. 282,a,12.</ls>
 
 **3)** <div n="1"> 3) {#dviH SaraM nABisaMDatte (rAmaH)#} <ls>Spr. 1280.</ls>
-
-**3_addendum)** <div n="1">— 3) {#hfdayanihitavEra#} (<ab>Conj.</ab>) {%сокрытый в сердце%}
+  — [PWG·pwg_internal_correction] ‹3_addendum› <div n="1"> 3) читай {%предполагать, допускать%} и добавь
+<ls>SARVADARŚANAS. 146,16</ls>.
+  — [PWG·pwg_internal_correction] ‹3_addendum› <div n="1">— 3) {#hfdayanihitavEra#} (<ab>Conj.</ab>) {%сокрытый в сердце%}
 <ls>Spr. 2340.</ls> {#sunihita#} {%надежно сохраненный%}
 <ls n="Spr.">5010.</ls>
-
-**3 (addendum))** <div n="1"> 3) {#aDanenArTakAmena nArTaH Sakyo viDitsitum#} (так <ls>ed. Bomb.</ls>) {%бедняк, которому нужны деньги, не может и думать о том, чтобы делать деньги%}, <ls>MBH. 12,220.</ls>
+  — [PWG·pwg_internal_correction] ‹3 (addendum)› <div n="1"> 3) {#aDanenArTakAmena nArTaH Sakyo viDitsitum#} (так <ls>ed. Bomb.</ls>) {%бедняк, которому нужны деньги, не может и думать о том, чтобы делать деньги%}, <ls>MBH. 12,220.</ls>
 
 **4)** <div n="1">— 4) <ab>Z.</ab> 9 читай {%назначил ее к —, поставил ее в качестве%} —.
-
-**4_addendum)** <div n="1"> 4) {#tadA ca saMniDAsye te yadA tvaM mAM smarizyasi#}
+  — [PWG·pwg_internal_correction] ‹4_addendum› <div n="1"> 4) {#tadA ca saMniDAsye te yadA tvaM mAM smarizyasi#}
 <ls>KATHĀS. 74,324.</ls> {#rAtriH SivA kAcana saMniDatte#} ({%предстоит%})
 <ls>KUVALAY. 103,a,3.</ls> <ab>Z.</ab> 8 читай {#tayA#} <ab>st.</ab> {#tvayA#} .
 
-**5_addendum)** <div n="1">— 5) {#praTamayA mahAvyAhftyA praTamopahitA#}
-<ls>ŚĀṄKH. GṚHY. 1,16,4</ls> в <ls>Ind. St. 5,337.</ls>
-
-**6_addendum)** <div n="1">— 6) {%привести что-либо снова в порядок%}
+**6)** <div n="1">— 6) {#taTEva raTamAruhya nApsu caryA viDIyate#} <ls>Spr. 4439.</ls> {#viDAya vEram#} {%начать вражду, объявить кому-л. войну%} <ls n="Spr.">2811.</ls>
+  — [PWG·pwg_internal_correction] ‹6_addendum› <div n="1">— 6)
+<ab>Z.</ab> 10. <ab>fg.</ab> {#upahita#}
+<ls>MBH. 12,5219</ls> означает {%второстепенное благо%}; <ab>s.</ab> выше <ab>u.</ab> {#upahita#} .
+  — [PWG·pwg_internal_correction] ‹6_addendum› <div n="1">— 6) <ls>ed. Bomb.</ls> верно {#viDAtuM#} . — <ab>caus.</ab>
+  — [PWG·pwg_internal_correction] ‹6_addendum› <div n="1">— 6)
+<ab>Z.</ab> 6. <ab>fgg.</ab> <ab>vgl.</ab> {#mUlapraRihita#} .
+  — [PWG·pwg_internal_correction] ‹6_addendum› <div n="1">— 6) {%привести что-либо снова в порядок%}
 <ls>ŚĀṄKH. GṚHY. 1,15,11</ls> в <ls>Ind. St. 5,335.</ls>
 
-**6)** <div n="1">— 6) {#taTEva raTamAruhya nApsu caryA viDIyate#} <ls>Spr. 4439.</ls> {#viDAya vEram#} {%начать вражду, объявить кому-л. войну%} <ls n="Spr.">2811.</ls>
-
 **7)** <div n="1">— 7) <ls>Ind. St. 8,310.</ls>
-
-**7_addendum)** <div n="1">— 7)
+  — [PWG·pwg_internal_correction] ‹7_addendum› <div n="1">— 7)
 <ls>NĪLAK.</ls> объясняет {#upahita#} в первом месте через {#upajapta#}, во втором через {#vaYcita#} .
 
 **8)** <div n="1">— 8) {#amAtyAnAmaTo harzamAdaDAti#}
 <ls>Spr. 4750.</ls>
-
-**8_addendum)** <div n="1"> 8) {%удерживать%}: {#(tam) sinDuM veleva pratyaDAt (= pratiruroDa#}
+  — [PWG·pwg_internal_correction] ‹8_addendum› <div n="1"> 8) {%удерживать%}: {#(tam) sinDuM veleva pratyaDAt (= pratiruroDa#}
 <ab>Schol.</ab>) <ls>BHĀG. P. 10,78,3.</ls>
 
 **9)** <div n="1">— 9) {#jYAnABisaMhita#} так <ab>v. a.</ab> {%распознан%} в <ab>Gegens.</ab> к {#jYeya#} <ls>MBH. 12,7426.</ls> по <ls>NĪLAK.</ls> {#jYAnaSabdenABisaMhitaM jYAnaSabdABiDeyaM brahma#} .
 
-**10_addendum)** <div n="1">— 10)
+**10)** <div n="1">— 10) <ls>NĪLAK.</ls> : {#yaTA tEH saha saMdaDAmahe SarAdisaMDAnaM kurmahe yadvA saKyaM kurmahe#}; он упоминает также чтение {#tezAM viDIyate#} <ab>st.</ab> {#tEH saMdaDAmahe#} .
+  — [PWG·pwg_internal_correction] ‹10_addendum› <div n="1">— 10)
 <ls>R. 1,1,26</ls> следует читать {#prARasamA#} (<ab>vgl.</ab> <ab>u.</ab> {#prARasama) hitA#};
 <ls>HARIV. 2225</ls> читает в новейшем <ab>Ausg.</ab> {#purARe kaTyate yatra vedaSrutisamAhitaH#},
 <ls>NĪLAK.</ls> : {#yatra purARe vedaH mantrabrAhmaRarASiH SrutisamAhitaH pratyakzeREva nihito dfSyate pratyakzaSrutimUlako 'yamarTaH#} .
-
-**10)** <div n="1">— 10) <ls>NĪLAK.</ls> : {#yaTA tEH saha saMdaDAmahe SarAdisaMDAnaM kurmahe yadvA saKyaM kurmahe#}; он упоминает также чтение {#tezAM viDIyate#} <ab>st.</ab> {#tEH saMdaDAmahe#} .
 
 **11)** <div n="1">— 11) {#ye (vAsarAH) cAlpatvaM daDati#} {%становиться кратким, казаться кратким%}
 <ls>Spr. 2519.</ls> <ls>Sp. 904.</ls> <ab>Z.</ab> 12. <ab>fg.</ab> <ls>BHARTṚ. 3,82</ls> означает {#Datte#} при правильном чтении {%reddit%}; <ab>vgl.</ab>
@@ -1240,13 +1263,16 @@ a〉 {%надевать%} (одежду), {%принимать%} (облик).
 
 **14)** <div n="1">— 14) <ab>vgl.</ab> {#dvAraM niBftaM viDAya#} (читай {#piDAya)#} <ls>PAÑCAT. 237,12.</ls> <ls n="PAÑCAT.">186,8.</ls> — <ab>desid.</ab>
 
-**Nachtrag zu Vers-Beleg)** 1. {#DA#}¦
-<ab>Z.</ab> 8 {#(aBi) daDyuzI#} также <ls>ed. Bomb.</ls>; форма относится к {#DyAH#}
-<ab>Z.</ab> 25 <ls>HARIV. 7799</ls> читает новейшее <ab>Ausg.</ab> {#patiBaktyorjitASca#} <ab>st.</ab> {#patiBaktyE DitAH sma#} .
-
 **intro)** <div n="p">— {#aBisam#}
 
 **main)** <div n="p">— {#prasam#} <ab>vgl.</ab> {#prasaMDAna#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag zu Vers-Beleg› 1. {#DA#}¦
+<ab>Z.</ab> 8 {#(aBi) daDyuzI#} также <ls>ed. Bomb.</ls>; форма относится к {#DyAH#}
+<ab>Z.</ab> 25 <ls>HARIV. 7799</ls> читает новейшее <ab>Ausg.</ab> {#patiBaktyorjitASca#} <ab>st.</ab> {#patiBaktyE DitAH sma#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: смысл не найден] ‹5_addendum› <div n="1">— 5) {#praTamayA mahAvyAhftyA praTamopahitA#}
+<ls>ŚĀṄKH. GṚHY. 1,16,4</ls> в <ls>Ind. St. 5,337.</ls>
 
 ## h7
 
@@ -1255,10 +1281,6 @@ a〉 {%надевать%} (одежду), {%принимать%} (облик).
 **2)** <div n="1">— 2) <ab>vgl.</ab> еще {#puroDA#} .
 
 **head)** 2. {#DA#}¦
-
-## h11
-
-**Nachträge)** 4. {#DA#}¦ (Nachträge) <ab>vgl.</ab> также {#sarva˚#} .
 
 ## h2
 
@@ -1333,3 +1355,7 @@ a〉 {%надевать%} (одежду), {%принимать%} (облик).
 ## h9
 
 **main)** 4. {#DA#}¦ (= 3. {#DA)#} <lex>adj.</lex> {%сосущий%} в {#payoDA#} .
+
+## h11
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachträge› 4. {#DA#}¦ (Nachträge) <ab>vgl.</ab> также {#sarva˚#} .

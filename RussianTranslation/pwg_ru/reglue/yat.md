@@ -97,8 +97,6 @@
 
 **6)** <div n="1">— 6) <ab>med.</ab> {%вступить во враждебное столкновение%}: {#ta u\grAso\ vfza^Ra u\grabA^havo\ naki^zwa\nUzu^ yetire#} {%не нападают друг на друга%} <ls>ṚV. 8,20,12.</ls> {#saM jA^nate\ na ya^tante mi\Taste#} <ls n="ṚV.">7,76,5.</ls> {%находиться в бою%} <ls>AIT. BR. 1,14.</ls> <ls n="AIT. BR.">8,10.</ls> {#devAsurA yattA Asan#} <ls>KĀṬH. 37,11.</ls>
 
-**Nachträge/cross-ref)** <div n="v">— <ab>Vgl.</ab> {#niryAtaka#} <ab>fg.</ab> и {#niryAtya#} .
-
 **PPP_1)** <div n="1"> 1) {%зависящий от, покоящийся на, находящийся в чьем-либо распоряжении%} (дополнение в <ab>loc.</ab>, <ab>gen.</ab> или в <ab>comp.</ab> предшествует) <ls>AK. 3,1,16.</ls> {#amAtye daRqa Ayatto daRqe vEnayikI kriyA . nfpatO kozarAzwre ca dUte saMDiviparyayO ..#} <ls>M. 7,65.</ls> <ls n="M. 7,">205.</ls> <ls>Spr. 5274.</ls> <ls>MBH. 14,2084.</ls> <ls n="MBH. 14,">2351.</ls> <ls>HARIV. 5021.</ls> <ls>R. 1,53,14. fg.</ls> (<ls n="GORR. 1,">54,15. fg.</ls> <ls>GORR.</ls>). <ls n="R.">2,45,28.</ls> <ls>MEGH. 16.</ls> <ls>KATHĀS. 46,180.</ls> {#tavAyattAH prajAScemAH#} <ls>R. GORR. 2,2,26.</ls> {#prAvfwkAlasya cAnnamAyattam#} <ls>VARĀH. BṚH. S. 21,1.</ls> <ls>KATHĀS. 46,19.</ls> <ls>MĀRK. P. 72,21.</ls> <ls n="MĀRK. P.">126,3.</ls> <ls n="MĀRK. P. 126,">4.</ls> <ls n="MĀRK. P. 126,">7.</ls> <ls>HIT. 84,5.</ls> {#vidaDe tasyAyattaM nijaM Danam#} {%предоставил это в его распоряжение%} <ls>RĀJA-TAR. 5,83.</ls> {#cakzurAyattA#} <ls>MAITRYUP. 6,6.</ls> <ls>R. 1,4,29.</ls> <ls n="R.">5,86,12.</ls> <ls>ŚĀK. 92.</ls> <ls>Spr. 1431.</ls> <ls n="Spr.">2263.</ls> <ls n="Spr.">5384.</ls> <ls>VṚDDHACĀṆ. 13,14.</ls> <ls>KĀM. NĪTIS. 5,77. 18,20</ls> ({#mitrAyatte#} следует читать) <ls>DAŚAR. 2,40.</ls> <ls>MĀRK. P. 126,5.</ls> <ls>LA. (II) 90,13.</ls> <ls>KATHĀS. 18,136.</ls> <ls n="KATHĀS.">20,151.</ls> <ls n="KATHĀS.">52,211.</ls> <ls n="KATHĀS.">53,7.</ls> <ls>RĀJA-TAR. 4,491.</ls> <ls>Ind. St. 2,305,1.</ls> <ls>PAÑCAT. 85,17.</ls> <ls>HIT. 52,9.</ls> <ls n="HIT.">130,3.</ls> <ls>HIT. ed. JOHNS. 1086.</ls> <ls>DAŚAK.</ls> в <ls>BENF. Chr. 197,19.</ls> <ls>H. 918.</ls> <ls>VOP. 7,85.</ls> {#madekAyattatAM gatA#} <ls>KATHĀS. 32,171.</ls> {#ISvarecCAyattatva#} <ls>SARVADARŚANAS. 79,14.</ls> без дополнения <ls>R. 7,38,9.</ls> <ls>DAŚAR. 2,22.</ls> {#AyattIkfta#} <ls>RĀJA-TAR. 4,680.</ls> <ab>Vgl.</ab> {#anAyatta, parAyatta, svAyatta#}.
 
 **PPP_2)** <div n="1">— 2) {%напрягающий усилия, прилагающий старание%}: {#paramAyattAH#} <ls>BHĀG. P. 8,7,5.</ls> {%находящийся начеку, остерегающийся%} <ls>R. 7,19,10.</ls> {#DanurAyattamuttamam#} так <ab>v. a.</ab> {%стоящий наготове%} <ls n="R. 7,">109,7.</ls>
@@ -128,6 +126,8 @@
 
 **main)** <div n="p">— {#aDivi#} <ab>caus.</ab> {%нанизывать, прикреплять%}:
 <ls>KĀṬH. 24,8. 26,10. 29,9. 37,16.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachträge/cross-ref› <div n="v">— <ab>Vgl.</ab> {#niryAtaka#} <ab>fg.</ab> и {#niryAtya#} .
 
 **+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [NWS:] {#yat#} ( yátate I Ā ) маршировать или лететь вместе или в строю. ṚV. подчиняться, соглашаться с (Instr.). ṚV. Caus. (или кл. X, yātáyati или °te): стремиться получить что-л. (Acc.) от (Abl.). Mālav MW : 840
 
@@ -333,5 +333,5 @@
 
 ## h1
 
-**addendum)** {#yat#}¦ в конце добавить: <ab>vgl.</ab> {#ayatant#} .
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› {#yat#}¦ в конце добавить: <ab>vgl.</ab> {#ayatant#} .
 <div n="p">— {#anvA#} <ab>vgl.</ab> {#anvAyAtya#} выше.

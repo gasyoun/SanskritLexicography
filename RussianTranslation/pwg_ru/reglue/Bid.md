@@ -161,10 +161,6 @@
 <ls>KUVALAY. 174,a,4.</ls> <ab>Vgl.</ab> {#BinnAYjana#} .
   — [PW·restate] 11〉 изменять; <ab>Pass.</ab> изменяться. {#Binna#} измененный, искаженный.
 
-**Nachtrag)** <div n="v">— <ab>Vgl.</ab> {#viBettar#} <ab>u. s. w.</ab>
-
-**addendum)** <div n="v">— <ab>Vgl.</ab> {#saMBeda#} .
-
 **anu-1)** <div n="p">— {#anu#} {%раскалывать в длину —, разрезать вдоль%}: {#taM dveDAnvaBinat#}
 <ls>ŚAT. BR. 1,6,3,17.</ls> <ab>pass.</ab> {%раскрываться%}: {#anvaBidyetAM#} (<ab>v. l.</ab> {#nyaBi˚) karRO#}
 <ls>BHĀG. P. 3,26,55.</ls> — {#badDaM setuM ko 'nuBindyAt#}
@@ -231,6 +227,22 @@
 
 **main)** <div n="p">— {#upasam#} <ab>dass.</ab>
 <ls>LĀṬY. 5,1,4.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#avaBoden#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#udBid#} <ab>fg.</ab>, {#udBeda#} <ab>fg.</ab>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#nirBeda#} <ab>fg.</ab>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#pariBedaka#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#praBid, praBeda#} <ab>fgg.</ab>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#pratiBeda#} <ab>fg.</ab>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag› <div n="v">— <ab>Vgl.</ab> {#viBettar#} <ab>u. s. w.</ab>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› <div n="v">— <ab>Vgl.</ab> {#saMBeda#} .
 
 **+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#Bid#}¦, {#Ba/dati#}, {#Bina/tti#}; в виде исключения также <ab>Med.</ab> ({#BindAna/#} <ls>ṚV. 6,27,6</ls>).
 

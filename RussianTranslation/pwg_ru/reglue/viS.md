@@ -418,9 +418,6 @@
 <ls>HARIV. 1621.</ls> {#tvayyAveSya jayAjayO#} {%предоставлять%}
 <ls n="HARIV.">10301.</ls>
 
-**Nachtr.)** <div n="v">— <ab>Vgl.</ab> {#niveSana, niveSya#} . — <ab>desid.</ab> {#nivivikzate#}
-<ls>P. 1,3,62</ls>, <ab>Schol.</ab>
-
 **caus)** <div n="v">— <ab>Vgl.</ab> {#saMveSa#} <ab>fgg.</ab> — <ab>caus.</ab> {%класть —, сажать на, в; приводить в, к%}: {#talpe#} <ls>KAUŚ. 79.</ls> {#Sayane#} <ls>MBH. 1,4274.</ls> <ls>R. 2,76,5.</ls> {#SivikAyAm#} <ls>HARIV. 3385.</ls> <ls>R. GORR. 2,83,8.</ls> {#paryaNke#} <ls>R. SCHL. 2,34,20.</ls> {#Asanezu#} <ls>PRAB. 24,4.</ls> {#citAmaDye#} <ls>R. 2,76,17.</ls> {#citAyAm#} <ls n="R.">6,96,9.</ls> {#tEladroRyAm#} <ls n="R.">2,66,14.</ls> — <ls n="R.">6,96,15.</ls> {#paraM brahma vraje#} <ls>Verz. d. Oxf. H. 68,b,1.</ls> {#vAkca satyaM ca budDO saMveSitAni te#} <ls>MBH. 12,1556.</ls>
 
 **caus-1)** <div n="1"> 1) {%впускать, приводить на место, класть, бросать внутрь <ab>u. s. w.</ab>%}
@@ -553,8 +550,6 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вм. {#nivizwaM#}
 <ls>P. 1,3,17.</ls>
 <ls>VOP. 23,1.</ls>
 
-**nachtr.)** <div n="v">— <ab>Vgl.</ab> {#pariveSas, aparivizwa#} и 1. {#viz#} mit {#pari#}, welches häufig mit {#Sa#} geschrieben wird. Сюда, вероятно, относится {#parivezaRa#} 2), которое также в <ls>ed. Bomb.</ls> пишется как {#Sa#}.
-
 **note)** <div n="p">— {#pratyaBini#} по видимости
 <ls>MĀLATĪM. 88,2</ls>, поскольку здесь {#prati#} следует соединять с предшествующим <ab>acc.</ab>.
 
@@ -638,6 +633,13 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вм. {#nivizwaM#}
 <ls>HARIV. 5845.</ls> {#taM parRaSAlAyAM vAsArTaM saMnyaveSayat#}
 <ls>R. 3,6,15.</ls>
 <ls>KATHĀS. 24,159.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtr.› <div n="v">— <ab>Vgl.</ab> {#niveSana, niveSya#} . — <ab>desid.</ab> {#nivivikzate#}
+<ls>P. 1,3,62</ls>, <ab>Schol.</ab>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr.› <div n="v">— <ab>Vgl.</ab> {#nirveSa#} <ab>fg.</ab>, {#nirvezwavya#} (вм. второго <ab>Bed.</ab> следует поставить {%то, чем можно наслаждаться%}) и {#niveSya#} 3), где <ls>ed. Bomb.</ls>, как мы предполагали, читает {#nirveSya#}.
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr.› <div n="v">— <ab>Vgl.</ab> {#pariveSas, aparivizwa#} и 1. {#viz#} mit {#pari#}, welches häufig mit {#Sa#} geschrieben wird. Сюда, вероятно, относится {#parivezaRa#} 2), которое также в <ls>ed. Bomb.</ls> пишется как {#Sa#}.
 
 **+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {#veSa/yati#}
 
@@ -1257,16 +1259,16 @@ GORR. <ls n="GORR. 1,">21,23</ls>). — Вм. {#nivizwaM#}
 
 **3b-patch: sense 3b — niemals auf seinen Kopf bestehend)** <div n="1">— 3) <div n="2"> b) {#sadAnaBinivizwaH#} {%никогда не стоящий на своей голове%} <ls>HEM.</ls> <ls>YOGAŚ. 1,52.</ls>
 
-**Nachtrag-T22)** <div n="p">— {#sam#}
-
-**Nachtrag-gemeinsame-Wohnung)** <div n="p">— {#nis#} <ab>desid.</ab> {%желать поселиться в общем жилище%}: {#yoginAM prAvfzi nirvivikzatAm#} <ls>BHĀG. P. 1,5,23.</ls>
-
-**Nachtrag-hereingetreten)** <div n="p">— {#aBipra#}, <ab>partic.</ab> {#˚vizwa#} {%вошедший%} в <ab>Gegens.</ab> к {#aBiniHsfta#} <ls>PAT. a. a. O. 4,81,b.</ls>
-
-**Nachtrag-mit-T23-sense1)** <div n="1"> 1) с <ab>instr.</ab> <ls>ṚV. 10,56,1.</ls>
-
-**Nachtrag-sense2)** <div n="1">— 2) <ls>ṚV. 10,55,2.</ls>
-
-**Nachtrag-sep1)** <div n="p">— {#aBini#}
-
 **head-note)** 1. {#viS#}¦ с {#upa#} <ab>euphem.</ab> для обозначения {%cacare%} <ls>CARAKA 3,5.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-sep1› <div n="p">— {#aBini#}
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-gemeinsame-Wohnung› <div n="p">— {#nis#} <ab>desid.</ab> {%желать поселиться в общем жилище%}: {#yoginAM prAvfzi nirvivikzatAm#} <ls>BHĀG. P. 1,5,23.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-hereingetreten› <div n="p">— {#aBipra#}, <ab>partic.</ab> {#˚vizwa#} {%вошедший%} в <ab>Gegens.</ab> к {#aBiniHsfta#} <ls>PAT. a. a. O. 4,81,b.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-T22› <div n="p">— {#sam#}
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-mit-T23-sense1› <div n="1"> 1) с <ab>instr.</ab> <ls>ṚV. 10,56,1.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-sense2› <div n="1">— 2) <ls>ṚV. 10,55,2.</ls>

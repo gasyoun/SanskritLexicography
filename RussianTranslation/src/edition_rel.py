@@ -15,6 +15,8 @@ Subtypes (rollup classes; display names from H180 sheets are optional later)::
   a2a             — PWKVN addenda-to-addenda
   nws_at_sense    — NWS additive (German)
   foreign_fragment— NWS non-German fragment
+  pwg_internal_correction — a row inside the PWG skeleton that amends another
+                    PWG sense rather than being one (H2880, wave 2)
   unknown         — non-pwg layer not classified
 
 Shape (stored on the sense row)::
@@ -22,9 +24,9 @@ Shape (stored on the sense row)::
   {
     "subtype": str,
     "op": str,
-    "direction": str,          # additive | abridging | base
+    "direction": str,          # additive | abridging | base | internal
     "layer": str,              # pwg | pw | sch | pwkvn | nws
-    "source_layers": [str],    # same as layer for now; list for multi-source future
+    "source_layers": [str],    # the layer(s) the material came from
     "insertion_point": {...} | null,
     "confidence": "rule",
     "evidence": str
@@ -69,8 +71,46 @@ SUBTYPES = (
     "a2a",
     "nws_at_sense",
     "foreign_fragment",
+    "pwg_internal_correction",
     "unknown",
 )
+
+# --- wave 2 (H2880): corrections that live INSIDE the PWG skeleton ----------
+# Some rows carried on the `pwg` layer are not senses of PWG at all — they are
+# the authors' own later supplements (`Nachtrag`, `addendum`) or material the
+# later PW edition contributed at a PWG sense (`1 (PW)`). Until now they sat in
+# the skeleton as ordinary senses, i.e. exactly the axis defect wave 1 removed
+# from the supplement layers, one layer down.
+#
+# Each marker is matched by a NAMED rule and the name is reported as evidence.
+# A tag that matches nothing stays `base` — the conservative default, because a
+# row wrongly pulled out of the skeleton loses a real PWG sense from the card.
+PWG_CORRECTION_MARKERS = (
+    # `Nachtrag`, `Nachtr.`, `Nachträge`, `4 (Nachtrag)`, `Nachtrag §76`
+    ("nachtrag", re.compile(r"nachtr", re.I)),
+    # `addendum`, `addenda`, `6_addendum`, `3 (addendum)`
+    ("addendum", re.compile(r"addend", re.I)),
+    ("corrigendum", re.compile(r"corrigend", re.I)),
+    # `1 (PW)` / `2 (PW)` — a PWG sense as the PW edition gives it
+    ("pw_provenance", re.compile(r"\(\s*PW\s*\)")),
+    # bare `PW`, `PW-1`, `PW_2` — PW material with no sense pointer.
+    # Anchored whole-string so it can never fire on `PWG`/`PWKVN`.
+    ("pw_provenance", re.compile(r"^\s*PW(?:[-_ ]?\d+)?\s*$")),
+)
+
+
+def pwg_correction_marker(tag) -> str | None:
+    """Name the printed cue marking a PWG-layer row as a correction, else None.
+
+    Returns the marker NAME (``nachtrag`` / ``addendum`` / ``corrigendum`` /
+    ``pw_provenance``), never a bare bool, so the sidecar can record *why* a row
+    left the skeleton and a reviewer can disagree with that specific rule.
+    """
+    s = str(tag or "")
+    for name, rx in PWG_CORRECTION_MARKERS:
+        if rx.search(s):
+            return name
+    return None
 
 
 def strip_markup(s: str) -> str:
@@ -190,7 +230,9 @@ def classify_edition_rel(
     key1 = key1 or ""
     de = de or ""
 
-    if layer == "pwg":
+    pwg_marker = pwg_correction_marker(st) if layer == "pwg" else None
+
+    if layer == "pwg" and not pwg_marker:
         return {
             "subtype": "base",
             "op": "base",
@@ -210,7 +252,21 @@ def classify_edition_rel(
     evidence = ""
     extra: dict = {}
 
-    if layer == "sch":
+    if layer == "pwg":
+        # Wave 2. `op` is deliberately NOT "correct": build_reglue renders
+        # op in ("correct", "delete") with a "cancels PWG" strikethrough, and a
+        # Nachtrag amends the sense it points at rather than withdrawing it.
+        subtype = "pwg_internal_correction"
+        op = "amend"
+        direction = "internal"
+        extra["correction_marker"] = pwg_marker
+        if pwg_marker == "pw_provenance":
+            # The material is PW's, carried at a PWG sense. `source_layers` is
+            # the field that already exists for exactly this; duplicating it as
+            # a second subtype would re-create the wave-1 defect.
+            extra["source_layers"] = ["pwg", "pw"]
+        evidence = "PWG-internal correction (%s); sense_tag=%r" % (pwg_marker, st)
+    elif layer == "sch":
         subtype = "derived_sense" if DERIV_RE.search(st) else "sch_star"
         evidence = "SCH additive; sense_tag=%r" % st
     elif layer == "pwkvn":
@@ -364,10 +420,19 @@ def build_pwg_sense_index(rows) -> dict:
     The normalisation is applied here, on the skeleton side, and again to the
     target at lookup time. Both sides must go through the same function —
     normalising only one of them would invent a fresh class of misses.
+
+    H2880: a row that is itself a PWG-internal correction is NOT a sense of the
+    skeleton, so it is excluded here. Otherwise a Nachtrag could be offered as
+    the target of another Nachtrag, which is the wave-2 analogue of the defect
+    wave 1 removed. Expected to be a no-op for wave 1's numbers — no correction
+    tag normalises to a bare integer — and that is asserted, not assumed, by
+    ``placement_axis_check.py``.
     """
     idx: dict = {}
     for d in rows:
         if d.get("layer") != "pwg":
+            continue
+        if pwg_correction_marker(d.get("sense_tag")):
             continue
         key = (d.get("key1") or "", homonym_of(d.get("subcard") or ""))
         idx.setdefault(key, set()).add(normalize_sense_tag(d.get("sense_tag")))
@@ -563,6 +628,98 @@ def selftest() -> None:
     check(rel["placement"] is True and rel["placement_reason"] == "found",
           "row helper placement: %r" % rel)
 
+    # --- wave 2: PWG-internal corrections (H2880) --------------------------
+    # POSITIVES — printed cues that really mark a row as an edit to a sense.
+    for tag, want in (
+        ("Nachtrag", "nachtrag"), ("Nachtr.", "nachtrag"),
+        ("Nachträge", "nachtrag"), ("nachtrag", "nachtrag"),
+        ("4 (Nachtrag)", "nachtrag"), ("Nachtrag §76", "nachtrag"),
+        ("Nachtrag-1", "nachtrag"),
+        ("addendum", "addendum"), ("addenda", "addendum"),
+        ("6_addendum", "addendum"), ("3 (addendum)", "addendum"),
+        ("caus-addendum-1", "addendum"),
+        ("addendum-corrigendum", "addendum"),   # first rule wins, both apply
+        ("1 (PW)", "pw_provenance"), ("2 (PW)", "pw_provenance"),
+        ("PW", "pw_provenance"), ("PW-1", "pw_provenance"),
+        ("PW-2", "pw_provenance"),
+    ):
+        got = pwg_correction_marker(tag)
+        check(got == want, "marker %r -> %r, want %r" % (tag, got, want))
+
+    # NEGATIVES — ordinary senses and, critically, the layer names. A marker
+    # that fired on 'PWG'/'PWKVN' would empty the skeleton of real senses.
+    for tag in ("1", "1)", "2a", "caus", "caus-1", "main", "intro", "tail",
+                "head", "cross-ref", "note", "PWG", "PWKVN", "pwkvn",
+                "NWS-1", "PPP-1", "desid", "1-sub-x", "etym", "PW-extra"):
+        got = pwg_correction_marker(tag)
+        check(got is None, "marker must not fire on %r, got %r" % (tag, got))
+
+    senses2 = {"1", "2", "3", "4"}
+
+    # placed: the tag names the sense it amends
+    r = classify_edition_rel("pwg", "4 (Nachtrag)", "{%x%}", key1="x",
+                             subcard="x~~h0_00_pwg09", pwg_senses=senses2)
+    check(r["subtype"] == "pwg_internal_correction", "w2 subtype: %r" % r)
+    check(r["placement"] is True and r["placement_reason"] == "found",
+          "w2 placed: %r" % r)
+    check(r["op"] == "amend" and r["direction"] == "internal",
+          "w2 op/direction: %r" % r)
+    check(r["correction_marker"] == "nachtrag", "w2 marker recorded: %r" % r)
+
+    # op must never be 'correct'/'delete': build_reglue would strike the sense
+    # through as cancelled, which a Nachtrag does not do.
+    check(r["op"] not in ("correct", "delete"),
+          "a Nachtrag must not render as a cancellation: %r" % r)
+
+    # unplaced: a bare marker names no target at all
+    r = classify_edition_rel("pwg", "Nachtrag", "{%x%}", key1="x",
+                             subcard="x~~h0_00_pwg09", pwg_senses=senses2)
+    check(r["subtype"] == "pwg_internal_correction", "w2 bare subtype: %r" % r)
+    check(r["placement"] is False
+          and r["placement_reason"] == "no_target_marker",
+          "w2 bare unplaced: %r" % r)
+
+    # THE trap: the digit in 'Nachtrag-1' is the ordinal of the addendum, not a
+    # PWG sense. Reading it as a target would silently attach the row to sense 1.
+    for tag in ("Nachtrag-1", "Nachtrag-2", "addendum-1", "addendum-2",
+                "Nachtrag §76", "Nachtrag §75-1", "PW-1"):
+        r = classify_edition_rel("pwg", tag, "{%x%}", key1="x",
+                                 subcard="x~~h0_00_pwg09", pwg_senses=senses2)
+        check(r["placement"] is False
+              and r["placement_reason"] == "no_target_marker",
+              "ordinal/section must not be read as a target: %r -> %r"
+              % (tag, r))
+
+    # PW provenance is recorded on source_layers, not as a second subtype
+    r = classify_edition_rel("pwg", "1 (PW)", "{%x%}", key1="x",
+                             subcard="x~~h0_00_pwg09", pwg_senses=senses2)
+    check(r["source_layers"] == ["pwg", "pw"], "w2 source_layers: %r" % r)
+    check(r["placement"] is True, "w2 '1 (PW)' places on sense 1: %r" % r)
+
+    # an ordinary PWG sense is untouched by wave 2
+    r = classify_edition_rel("pwg", "1", "{%x%}")
+    check(r["subtype"] == "base" and r["insertion_point"] is None,
+          "ordinary PWG sense stays base: %r" % r)
+    check("placement" not in r, "base must not grow a placement axis: %r" % r)
+
+    # a correction is not a skeleton sense, so it cannot be another's target
+    crows = [
+        {"key1": "z", "subcard": "z~~h0_00_pwg00", "layer": "pwg",
+         "sense_tag": "1", "de": "{%z%}"},
+        {"key1": "z", "subcard": "z~~h0_00_pwg01", "layer": "pwg",
+         "sense_tag": "Nachtrag", "de": "{%z%}"},
+        {"key1": "z", "subcard": "z~~h0_00_pwg02", "layer": "pwg",
+         "sense_tag": "1 (PW)", "de": "{%z%}"},
+    ]
+    cidx = build_pwg_sense_index(crows)
+    check(cidx[("z", "h0")] == {"1"},
+          "correction rows must not enter the skeleton index: %r" % cidx)
+    rel = edition_rel_for_row(crows[1], None, cidx)
+    check(rel["subtype"] == "pwg_internal_correction", "row helper w2: %r" % rel)
+    rel = edition_rel_for_row(crows[2], None, cidx)
+    check(rel["placement"] is True and rel["placement_reason"] == "found",
+          "row helper w2 placed: %r" % rel)
+
     # all rollup subtypes reachable
     seen = {
         classify_edition_rel("pwg", "1")["subtype"],
@@ -575,9 +732,11 @@ def selftest() -> None:
         classify_edition_rel("nws", "1", "der die und")["subtype"],
         classify_edition_rel(
             "nws", "1", "the of and in with is for from by as")["subtype"],
+        classify_edition_rel("pwg", "Nachtrag")["subtype"],
     }
     for need in ("base", "restate", "pw_correct", "sch_star", "derived_sense",
-                 "a2a", "nws_at_sense", "foreign_fragment"):
+                 "a2a", "nws_at_sense", "foreign_fragment",
+                 "pwg_internal_correction"):
         check(need in seen, "missing subtype %s in %r" % (need, seen))
 
     if fails:
