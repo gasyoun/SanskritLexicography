@@ -1,6 +1,6 @@
 # Kochergina 1987 — tracked corrections
 
-_Created: 15-08-2026 · Last updated: 15-08-2026_
+_Created: 15-08-2026 · Last updated: 16-08-2026_
 
 Corrections to **В. А. Кочергина, Санскритско-русский словарь (1987)** and to the
 learnsanskrit.ru dictionary derived from it. Created under
@@ -51,26 +51,123 @@ Attestation evidence:
 
 | # | Lemma | Correction | Status | Consumer action |
 |---|---|---|---|---|
-| 1 | ओकस् `okas` | Sense «родина» is **unattested** — drop or flag it. Primary sense is «pleasure, delight» (RV-only); «dwelling / resting place» is secondary. | recorded (wording open) | Do not annotate «родина» as a valid Russian equivalent. Final wording of the primary sense awaits the Elizarenkova cross-check below. |
+| 1 | ओकस् `okas` | Sense «родина» is **unattested** — drop or flag it. Final wording, settled against Elizarenkova (see § `okas` closure): primary **«привычное, излюбленное место; дом, обиталище»**; secondary, derived from it, **«отрада, удовольствие»**. | recorded | Annotate with «привычное (излюбленное) место, дом» first and «отрада, удовольствие» second; never «родина». |
 | 2 | ओक्य `okya` | Remove the logically impossible derived sense «связанный с родиной» (it inherits the unattested sense of row 1). Prefer «домашний, уютный» over the doubtful «родной». | recorded | Use «домашний, уютный»; treat «родной» as doubtful and «связанный с родиной» as invalid. |
-| 3 | गुद `guda` | **Sense order:** кишки → (толстая кишка) → анус. «Анус» stays **secondary**, on PWG + Borissov + KEWA/EWA (Mayrhofer); the Vasmer Slavic-cognate etymology does **not** promote it to primary. | recorded (wording open) | Order senses intestines-first. Awaits the Druzhinin cross-check below before the Ayurvedic-register wording is final. |
+| 3 | गुद `guda` | **Sense order:** кишки → (толстая кишка) → прямая кишка, задний проход. «Анус» stays **secondary**, on PWG + Borissov + KEWA/EWA (Mayrhofer); the Vasmer Slavic-cognate etymology does **not** promote it to primary. **Register rider** (see § `guda` closure): in the classical Ayurvedic layer the secondary sense is the *only* one in use, and its Russian is «прямая кишка», not «анус». | recorded | Order senses intestines-first, but carry the register rider: for an Ayurvedic text read `guda` as «прямая кишка / задний проход», and expect `antra`/`sthūlāntra`/`pakvāśaya` — not `guda` — for «кишки». |
 | 3b | गुद `guda` — gender | Proposed «fix gender m.pl. → f.pl. (RV 10.163.3)». **REFUTED** by H779's canonical re-verification: Kochergina already carries a separate `gudā` f. entry, so there is no gender defect to fix. | refuted | None. Do not re-raise; the f. form is already present as its own entry. |
 | 4 | स्फिच् `sphic` / स्फिगी `sphigī` | Add the missing `sphic` lemma — **44 occurrences**, more frequent than `sphij`'s 6. Fix the cross-reference direction to `sphigī = sphij`, per Böhtlingk. | recorded | Treat `sphic` as a real headword; follow `sphigī → sphij`, not the reverse. |
 
-## Open cross-checks (MG, 17-07-2026)
+## Cross-check closures (16-08-2026)
 
-These were requested on the vote itself and are **research, not transcription** — each
-needs a reading session, and neither blocks the rows above from being honoured.
+Both cross-checks MG requested on the vote (17-07-2026) were read against published
+sources on 16-08-2026 under
+[H2863](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2863-Opus_SanskritLexicography_kochergina-guda-druzhinin-crosscheck_16.08.26.md).
+Neither re-opens the vote; both settle the Russian wording, and each **revises one premise
+the vote carried forward**.
 
-| Lemma | Cross-check | Why it matters |
+### `okas` — Elizarenkova, all 12 RV attestations
+
+Source: the local **rvlinks** build,
+[rvlinks/rvhymns/](https://github.com/sanskrit-lexicon/rvlinks/tree/main/rvhymns) — one file per
+hymn, carrying Elizarenkova's Russian beside Geldner and Griffith, verse-granular, for all
+1 028 hymns. Nothing was re-translated; every rendering below is hers as published.
+
+| Locus | Form | Elizarenkova's Russian |
 |---|---|---|
-| `okas` | How **Elizarenkova** renders the RV loci in her published Ригведа translation. | The primary sense is RV-only, so her rendering is the strongest available Russian precedent and may be worth quoting directly in the applied note. |
-| `guda` | How **Druzhinin** renders it in his Aṣṭāṅgahṛdaya translation. | Ayurvedic register is where the intestinal-vs-anal distinction is medically load-bearing. The 108-class Ayurveda transcript corpus is an available cross-check source. |
+| [RV 1.66.3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.066.html#rv01.066.03) | `óko ná` | «приятен, как **привычное место**» |
+| [RV 1.91.13](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.091.html#rv01.091.13) | `svá okyè` | «как юноша в своем **доме**» |
+| [RV 1.104.5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.104.html#rv01.104.05) | `óko ná ácchā sádanam` | «пришла в его (жилище), как к себе **домой**» |
+| [RV 1.132.5](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.132.html#rv01.132.05) | `okyàm` | «стремятся создать себе **дом** поэтические мысли» |
+| [RV 1.173.11](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.173.html#rv01.173.11) | `ókaḥ` | «пригоняет (бога) в **дом**» |
+| [RV 2.19.1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv02.019.html#rv02.019.01) | `óko dadhe` | «**находил удовольствие**» |
+| [RV 3.42.8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.042.html#rv03.042.08) | `svá okyè` | «чтобы ты пил сому в своем **доме**» |
+| [RV 8.25.17](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.025.html#rv08.025.17) | `pūrvā́ṇy okyā̀` | «старые **привычные** заветы» |
+| [RV 8.49.3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.049.html#rv08.049.03) | `ánv okyàm` | «по **приятной привычке**» |
+| [RV 8.72.14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.072.html#rv08.072.14) | `svám okyàm` | «знают свое **излюбленное место**» |
+| [RV 9.86.45](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv09.086.html#rv09.086.45) | `okyáḥ` | — (no Russian in the rvlinks build; Geldner «gern bleibend») |
+| [RV 10.44.9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.044.html#rv10.044.09) | `okyàm` | «пусть будет тебе большое **удовольствие**» |
+
+**Verdict.** «Родина» appears at **none** of the twelve. Elizarenkova's Russian occupies
+exactly two poles — *привычное / излюбленное место, дом* (8 loci) and *приятная привычка,
+удовольствие* (3 loci) — and RV 8.49.3 «по **приятной привычке**» puts both in one phrase,
+which is why they are one sense and not two: the word names a **habitual place, and the
+ease of being in it**. Her own note on RV 1.66.3 makes the same point from the other side,
+glossing `óka-` as «привычное место» and linking it to `durókaśociḥ` «к чьему пламени
+трудно привыкнуть».
+
+**Premise revised.** Row 1 previously read «primary sense is *pleasure, delight* (RV-only);
+*dwelling / resting place* is secondary» — an ordering taken from Böhtlingk's etymology
+(√uc «привыкать»). Elizarenkova's translational practice **inverts** it: place-sense at 8
+of 11 rendered loci, pleasure-sense at 3. The etymological priority stands as etymology;
+it is not the priority a Russian **equivalent** should be listed in. Row 1 now leads with
+the place-sense.
+
+### `guda` — the Ayurvedic register
+
+Two halves, and the disappointing half first.
+
+**Druzhinin's Aṣṭāṅgahṛdaya translation was not found**, confirming the gap the handoff
+flagged: it is in no repo under `GitHub/`. The 79-file Ayurveda course transcript set in
+Uprava was searched and **does not name him anywhere** (0 hits across all 79 files), so no
+term choice in it can be attributed to him. What that corpus *does* establish — and this
+is reported as an anonymous AHS-teaching source, not as Druzhinin — is that its Russian
+for the organ, in the basti/suppository passages where AHS uses `guda`, is consistently
+**«прямая кишка»**; «кишки» is never used for that referent. Nothing further from
+`stenogrammy/` is quoted or characterised here: it is 152-FZ personal data and this file is
+public.
+
+**The corpus half is decisive on its own.** DCS's lemma-annotated Aṣṭāṅgahṛdayasaṃhitā
+carries `guda` in **30 of its 120 files, 79 occurrences** (the handoff's «42 files» was an
+over-count; corrected here from the annotation itself). Across all 79 the referent is the
+**anorectal outlet**, never the intestines, and the text says so explicitly:
+
+- `gudaḥ sthūlāntrasaṃśrayaḥ` (Nid. 7) and `sthūlāntrabaddhaḥ … gudaḥ` (Śār. 4) — the
+  `guda` is *seated in / bound to* the large intestine, therefore **is not** it.
+- `meḍhrayonigudair adhaḥ` (Nid. 3) — grouped with penis and vagina as a **lower orifice**.
+- `gudaniḥsaraṇam`, `gudabhraṃśa`, `gudaṃ bhraṣṭaṃ … praveśayet` (Sū. 18, Cik. 9, Kalpa. 3)
+  — **prolapse, and pushing it back in**. Only an outlet prolapses.
+- `gude praṇihitaḥ snehaḥ`, `vartim asmai gude`, `gude nāḍyā vinirdhamet` (Kalpa. 5,
+  Cik. 8) — the **enema/suppository route**.
+- `arśāṃsi tasmād ucyante gudamārganirodhataḥ` (Nid. 7) — haemorrhoids named from
+  obstruction of the *guda-passage*.
+
+«Кишки» in that text is `antra` / `sthūlāntra` / `pakvāśaya` / `koṣṭha`, all of which occur
+**contrastively alongside** `guda`.
+
+**Verdict — corroboration and contradiction, split by register.** The vote's ruling holds
+where it was made: in the Vedic layer Elizarenkova renders `gudā́bhyaḥ` at
+[RV 10.163.3](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.163.html#rv10.163.03)
+as «из твоих **кишок**», so intestines-first is right for the entry as a whole. But in the
+classical Ayurvedic layer the intestinal sense does not occur at all, and the Russian that
+matches the usage is «прямая кишка» — a term the vote's «кишки → толстая кишка → анус»
+chain skipped over. Hence the register rider on row 3 rather than a re-ordering.
+
+**Premise corrected.** The attestation memo
+[NAGARI_LIST_2013_ATTESTATION_VS_GLOSS_OKAS_GUDA.md](https://github.com/gasyoun/Uprava/blob/main/history/NAGARI_LIST_2013_ATTESTATION_VS_GLOSS_OKAS_GUDA.md)
+records the 2013 thread as having Elizarenkova rendering `guda` «прямая кишка» at
+RV 10.163.3. She does not: «прямая кишка» is her rendering of `vaniṣṭhóḥ` in the same pāda,
+and `gudā́bhyaḥ` is «кишок». Geldner aligns the same way (`Därmen` / `Mastdarm`); Griffith
+conflates them. This is a verse-granular-vs-pāda-granular misalignment of exactly the class
+[H2850](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2850-Opus_SanskritLexicography_rv-citation-pada-alignment-elizarenkova-rvlinks_15.08.26.md)
+exists to eliminate.
+
+### On H2850
+
+H2850's alignment was **not consumed, because it does not exist yet** — its registry row is
+still open, no machinery has been built. What this pass did instead is use the *source*
+H2850 names, the local rvlinks build, at pāda granularity by hand, and it confirms two
+things for that handoff: the build covers all 1 028 hymns with Russian/German/English side
+by side (so it, not the two-Mandala
+[SamudraManthanam](https://github.com/gasyoun/SamudraManthanam/blob/main/Index/Updater/Data/01_rigveda.no_tags)
+extract, is the right substrate), and RV 10.163.3 above is a ready-made worked specimen of
+the misalignment it is meant to catch.
 
 ## Revision history
 
 | Date | Change | Model |
 |---|---|---|
 | 15-08-2026 | Store created; four H798 votes recorded, `guda` gender logged as refuted, two cross-checks left open | Opus 5 (`claude-opus-5`) |
+| 16-08-2026 | `okas` cross-check closed against Elizarenkova over all 12 RV attestations (rvlinks); row 1 → `recorded`, place-sense promoted over pleasure-sense, «родина» confirmed unattested | Opus 5 (`claude-opus-5`) |
+| 16-08-2026 | `guda` cross-check closed against the DCS Aṣṭāṅgahṛdayasaṃhitā annotation (79 occurrences / 30 files); row 3 → `recorded` with an Ayurvedic-register rider. Druzhinin's own translation not located; the RV 10.163.3 attribution in the 2013 memo corrected | Opus 5 (`claude-opus-5`) |
 
 _Dr. Mārcis Gasūns_

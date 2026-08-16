@@ -1,6 +1,6 @@
 # KOCHERGINA_CORRECTIONS.md — metadoc
 
-_Created: 15-08-2026 · Last updated: 15-08-2026_
+_Created: 15-08-2026 · Last updated: 16-08-2026_
 
 ## Purpose
 
@@ -45,14 +45,20 @@ Votes come from sheet `uprava-nagari2013-okas-guda-sphic_4lemmas` (4/4 approve, 
 
 ## Improvement backlog (ranked)
 
-1. Close the two open cross-checks — Elizarenkova on `okas`, Druzhinin on `guda` — and
-   flip both rows from "recorded (wording open)" to "recorded".
+1. ~~Close the two open cross-checks — Elizarenkova on `okas`, Druzhinin on `guda`.~~
+   **Done 16-08-2026 under H2863**; both rows are `recorded`. The residual is narrower:
+   locate **Druzhinin's own Aṣṭāṅgahṛdaya translation**, which is in no repo under
+   `GitHub/` and would be a better source than the anonymous course transcripts the
+   closure had to fall back on.
 2. Decide whether these findings get reported upstream to learnsanskrit.ru, and if so
    record the report link per row.
 3. If a second batch of Kochergina corrections ever arrives, consider whether the table
    should carry the sheet_id per row rather than once in the section header.
 4. Cross-link from the BLI gold set's own documentation, so an annotator meets the
    corrections before annotating rather than after.
+5. Re-check row 1's wording once [H2850](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2850-Opus_SanskritLexicography_rv-citation-pada-alignment-elizarenkova-rvlinks_15.08.26.md)
+   builds its pāda-level alignment: the 12 `okas` loci were aligned by hand here and are a
+   ready-made regression case for it.
 
 ## Limitations
 
@@ -60,11 +66,17 @@ Votes come from sheet `uprava-nagari2013-okas-guda-sphic_4lemmas` (4/4 approve, 
 - Records no page/edition numbers for the 1987 print — the votes were adjudicated against
   attestation evidence and secondary sources, not against a scan.
 - Whether learnsanskrit.ru's derived dictionary reproduces each defect is untested.
+- The `guda` closure rests on the DCS **Aṣṭāṅgahṛdaya** annotation plus one anonymous
+  Ayurveda course corpus. It is not a survey of the Ayurvedic register at large —
+  Caraka and Suśruta were not read, and Druzhinin's own translation was never found.
+- RV 9.86.45 carries no Russian in the rvlinks build, so the `okas` closure rests on 11
+  of 12 attestations, not 12.
 
 ## Revision history
 
 | Date | Change | Model |
 |---|---|---|
 | 15-08-2026 | Created alongside the store under H798 | Opus 5 (`claude-opus-5`) |
+| 16-08-2026 | Both cross-checks closed under H2863; backlog item 1 retired and replaced with the narrower "find Druzhinin's own translation" residual; two new limitations recorded | Opus 5 (`claude-opus-5`) |
 
 _Dr. Mārcis Gasūns_

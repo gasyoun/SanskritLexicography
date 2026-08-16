@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §543) whatever its section, so existing numbers never shift; when a finding is later
+(currently §545) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -258,6 +258,8 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§540. Mixed-script words hide from every search that assumes one alphabet per word — and the repair map has to be transliteration, not visual shape](#540-mixed-script-words-hide-from-every-search-that-assumes-one-alphabet-per-word-and-the-repair-map-has-to-be-transliteration-not-visual-shape) — inherited index row added by H2859; see the section for the finding.
 - 🟠 [§542. A review sheet's stated apply target is not the carrier set — the hand-authored strings can live in a generator, and an apply that trusts the sheet reverts on the next build](#542-a-review-sheets-stated-apply-target-is-not-the-carrier-set--the-hand-authored-strings-can-live-in-a-generator-and-an-apply-that-trusts-the-sheet-reverts-on-the-next-build) — the agni sheet named `agni.pd-min.ru.md` col. 3; the glosses are actually authored in a `GLOSS` dict in `_build_agni_ru.py`, with two more copies downstream. Grep a current cell string, not the filename, before applying any vote — the unvoted aksara/ananta/anya sheets have the same shape with a different layout again.
 - 🟠 [§538. A Latin siglum inside a `{#…#}` span is silently transliterated — `pw` became `pṭ`, an abbreviation that does not exist](#538-a-latin-siglum-inside-a-span-is-silently-transliterated-pw-became-pṭ-an-abbreviation-that-does-not-exist) — inherited index row added by H2859; see the section for the finding.
+- 🟠 [§543. A sense order can be right for the Vedic layer and useless for the classical one — `guda` is «кишки» in the RV and only ever the anorectal outlet in Āyurveda](#543-a-sense-order-can-be-right-for-the-vedic-layer-and-useless-for-the-classical-one--guda-is-кишки-in-the-rv-and-only-ever-the-anorectal-outlet-in-āyurveda) — 79 occurrences across 30 of 120 DCS Aṣṭāṅgahṛdaya files, zero intestinal. Check the consumer's register before ordering senses; ship a rider when the layers disagree. Plus: `guḍa`/`guda` collapse in Cyrillic, so all 8 «гуда» transcript hits were false positives.
+- 🟠 [§544. rvlinks is the pāda-granular RV substrate already on disk — and a verse-granular read of it invents renderings the translator never made](#544-rvlinks-is-the-pāda-granular-rv-substrate-already-on-disk--and-a-verse-granular-read-of-it-invents-renderings-the-translator-never-made) — all 1 028 hymns with Elizarenkova/Geldner/Griffith locally, vs the Mandala I–II SamudraManthanam extract. The 2013 memo's «прямая кишка» for `guda` at RV 10.163.3 is actually her `vaniṣṭhu` — the misalignment class H2850 exists to catch.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -6124,3 +6126,66 @@ Two things generalise:
 > record
 > [agni_decisions_applied_15-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/agni_decisions_applied_15-08-2026.md).
 > §543 takes the next number.
+
+### §543. A sense order can be right for the Vedic layer and useless for the classical one — `guda` is «кишки» in the RV and only ever the anorectal outlet in Āyurveda
+
+🟠 **Ordering a Russian equivalent by etymology or by Vedic attestation can leave the
+reader with the wrong sense in 100 % of the occurrences they will actually meet.**
+
+The H798 vote ruled Kochergina's `guda` should read кишки → толстая кишка → анус, on PWG
+plus the Vasmer/KEWA etymology, and against the RV: Elizarenkova renders `gudā́bhyaḥ` at
+RV 10.163.3 «из твоих **кишок**». That is correct for the Vedic layer. In DCS's
+lemma-annotated **Aṣṭāṅgahṛdayasaṃhitā** — 79 occurrences across 30 of its 120 files —
+the intestinal sense occurs **zero** times. The text defines `guda` against the intestine
+rather than as one (`gudaḥ sthūlāntrasaṃśrayaḥ`, `sthūlāntrabaddhaḥ … gudaḥ`), groups it
+with penis and vagina as a lower orifice (`meḍhrayonigudair adhaḥ`), has it prolapse and be
+pushed back (`gudaṃ bhraṣṭaṃ … praveśayet`), and uses it as the enema route
+(`gude praṇihitaḥ snehaḥ`). «Кишки» there is `antra` / `sthūlāntra` / `pakvāśaya` /
+`koṣṭha`, all of which occur contrastively beside it.
+
+Generalises to any lemma whose corpus spans Vedic and śāstric registers: **check the
+register the consumer works in before ordering senses**, and if the two disagree, ship a
+register rider rather than picking a winner. The fix here was a rider on the correction
+row, not a re-vote.
+
+Two traps met on the way, worth carrying:
+
+1. **`guḍa` (गुड, jaggery) and `guda` (गुद, rectum) collapse in Cyrillic.** Every one of
+   the 8 «гуда» hits in a Russian Āyurveda transcript corpus was `guḍa`/`guḍūcī` or
+   Russian «гудеть» — none was the anatomical word. A Cyrillic-transcript search for a
+   Sanskrit term is a **retro-transliteration** problem, and the retroflex/dental contrast
+   is exactly what it loses. Search the concept's Russian medical vocabulary instead.
+2. **A lemma count taken from a filename glob is not an occurrence count.** The handoff
+   carried «42 files carry `guda`»; the annotation itself says 30 files / 79 occurrences.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2863, closing the Kochergina cross-checks.
+> Evidence: [KOCHERGINA_CORRECTIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOCHERGINA_CORRECTIONS.md)
+> § Cross-check closures; DCS `dcs-conllu/files/Aṣṭāṅgahṛdayasaṃhitā/` (120 files).
+> §544 takes the next number.
+
+### §544. rvlinks is the pāda-granular RV substrate already on disk — and a verse-granular read of it invents renderings the translator never made
+
+🟠 **[rvlinks](https://github.com/sanskrit-lexicon/rvlinks) carries Elizarenkova, Geldner
+and Griffith side by side for all 1 028 RV hymns, verse by verse, locally.** Two sessions
+before this one concluded the org did not hold Elizarenkova's Russian, then found the
+[SamudraManthanam](https://github.com/gasyoun/SamudraManthanam/blob/main/Index/Updater/Data/01_rigveda.no_tags)
+`no_tags` extract — which is real, but is **Mandalas I–II only**, so 6 of the 8 `okya`
+loci and RV 10.163.3 are simply absent from it. `rvlinks/rvhymns/rv<MM>.<HHH>.html`
+covers everything and is the right substrate for any RV-citation work, including
+[H2850](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2850-Opus_SanskritLexicography_rv-citation-pada-alignment-elizarenkova-rvlinks_15.08.26.md).
+Caveat measured here: a few verses carry `-ru-` instead of Russian (RV 9.86.45 is one), so
+coverage is near-total, not total.
+
+The alignment half is the sharper point. The 2013 attestation memo
+[NAGARI_LIST_2013_ATTESTATION_VS_GLOSS_OKAS_GUDA.md](https://github.com/gasyoun/Uprava/blob/main/history/NAGARI_LIST_2013_ATTESTATION_VS_GLOSS_OKAS_GUDA.md)
+records Elizarenkova as rendering `guda` «прямая кишка» at RV 10.163.3. She does not.
+«Прямая кишка» is her rendering of `vaniṣṭhóḥ`; `gudā́bhyaḥ` is «кишок». Geldner splits
+them the same way (`Därmen` / `Mastdarm`); Griffith conflates. The error is what a
+**verse-granular** read produces: four Russian words for four Sanskrit organs in one pāda,
+and picking the wrong one is invisible unless the join is pāda-level. That is the exact
+defect class H2850 exists to eliminate, and RV 10.163.3 is now a worked specimen for it.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2863. Evidence:
+> [rvlinks/rvhymns/rv10.163.html](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.163.html#rv10.163.03)
+> vs the memo's claim; 1 028 hymn files counted on disk.
+> §545 takes the next number.
