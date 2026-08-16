@@ -6532,4 +6532,72 @@ exists for the sheet, so no votes were invalidated.
 > Opus 5 (`claude-opus-5`) · 16-08-2026 · H2881. Measured over the wave-2
 > sidecar (6 374 rows) and the wave-3 rebuild, same store `sha256 811bbc21…`.
 > Gates W3a–W3e in `src/placement_axis_check.py`.
-> §553 takes the next number.
+### §553. Cappeller (CAE/CCS) marks compounds with the Böhtlingk ring ˚ — and so do 20+ CDSL dictionaries; solid headwords, ring only for the elided member
+
+🟢 **Both Cappeller dictionaries use the ring.** In the CDSL digitizations
+([csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)),
+`cae.txt` (Sanskrit–English 1891) carries **9 848** ring characters (U+02DA)
+over 40 069 entries and `ccs.txt` (Sanskrit-Wörterbuch 1887) **6 664** over
+30 010. The device is the Petersburg one: the ring replaces the *shared /
+elided compound member*, never decorates the headword. Specimen (CAE `<L>238`):
+`{#agnisAt#} adv. into fire; {#˚kf#} burn` — ˚kṛ = agnisāt-kṛ; CCS `<L>161`:
+`{#agnyADAna#} … {#˚De/ya#} n.` — ˚dheya = agnyādheya. **Headwords themselves
+are printed solid** (agnihotrahavaṇī, no hyphen, no seam): in neither Cappeller
+does `<k1>` ever contain a seam marker. The `/` inside `<k2>` (`agni/hotra`) is
+the *accent* digitization, not a compound seam.
+
+**Census over all 44 v02 digitizations** (count of U+02DA ring · U+00B0 degree ·
+U+0970 devanāgarī abbreviation sign · hyphens inside `<k1>`; zero-practice dicts
+omitted):
+
+| dict | ring ˚ | degree ° | ॰ | hyph-k1 | entries |
+|---|---|---|---|---|---|
+| pwg | 83 398 | 11 | 0 | 0 | 123 366 |
+| mw | 53 307 | 0 | 0 | 0 | 286 525 |
+| stc | 24 754 | 3 | 0 | 0 | 24 574 |
+| pw | 23 706 | 14 | 0 | 0 | 170 556 |
+| bhs | 22 103 | 1 | 0 | 0 | 17 839 |
+| mw72 | 21 099 | 14 | 0 | 0 | 55 390 |
+| inm | 19 533 | 0 | 0 | 0 | 12 647 |
+| sch | 15 193 | 9 254 | 0 | 0 | 29 125 |
+| **cae** | **9 848** | 11 | 0 | 0 | 40 069 |
+| **ccs** | **6 664** | 15 | 0 | 0 | 30 010 |
+| ap | 5 150 | 3 | 7 | 0 | 90 843 |
+| md | 4 827 | 0 | 0 | 0 | 20 749 |
+| ap90 | 4 051 | 3 | 0 | 0 | 34 882 |
+| pwkvn | 2 203 | 0 | 0 | 0 | 24 976 |
+| lrv | 1 004 | 2 | 0 | 0 | 53 441 |
+| ben | 506 | 0 | 0 | 0 | 17 310 |
+| ae | 0 | 245 | 0 | 0 | 11 359 |
+| bop | 0 | 0 | 82 | 0 | 8 961 |
+| bor | 0 | 0 | 0 | 1 229 | 24 609 |
+| mwe | 0 | 0 | 0 | 2 340 | 32 378 |
+
+(Minor users ≤200: acc 135 · fri 154 · gst 161 · ieg 45 · mci 67 · vei 5 ·
+krm/shs/yat 1–3. Zero practice: abch, acph, acsj, armh, **gra**, lan, nmmb, pe,
+pgn, pui, skd, snp, bur/vcp/wil have only stray degrees.)
+
+**Reading the table.** (1) The ring is the *Petersburg tradition* and it won:
+Böhtlingk (pwg/pw, 107k uses) → Monier-Williams (mw/mw72, 74k) → Cappeller
+(cae/ccs, 16.5k) → Apte (ap/ap90) → Macdonell (md) → the 20th-century
+specialists (bhs Edgerton, stc Stchoupak, inm/vei Söhnen-Macdonell indices) —
+Kochergina's кружок (the h2805 sheet's G1 `˚`) is the direct continuation.
+(2) `sch` (Schmidt's Nachträge) is the one *mixed* digitization — 15 193 ˚
+alongside 9 254 °, both meaning the same device. (3) The three hyphen/ring-free
+practices are principled, not sloppy: **gra** (Grassmann) *analyzes* words with
+plain hyphens in running text (`á-tas, á-tra, a-dyá`) and needs no
+abbreviation device; **bor/mwe/ae** are English→Sanskrit, so their `<k1>`
+hyphens are English (`absent-minded`), a false positive for this question;
+**bop** (Bopp 1847) digitizes the device as the devanāgarī sign `॰` (82). No
+dictionary marks the seam *inside the printed headword* — the lemma is always
+solid; the graphical device exists only to *abbreviate the repeated member*.
+
+**Answer to the practical question this census served (h2805 glyph vote):**
+`˚` U+02DA is what 20+ CDSL digitizations already use, including both
+Cappellers; `°` U+00B0 appears as a digitization variant (sch, ae), `॰` U+0970
+only in Bopp.
+
+> Fable 5 (`claude-fable-5`) · 16-08-2026 · census script over
+> `csl-orig/v02/*/<dict>.txt` (counts of U+02DA / U+00B0 / U+0970 / `-` inside
+> `<k1>`); specimens quoted from cae.txt L237–246, ccs.txt L155–161, gra.txt L2.
+> §554 takes the next number.
