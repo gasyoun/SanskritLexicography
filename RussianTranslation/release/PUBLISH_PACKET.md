@@ -1,11 +1,28 @@
 # Publish Packet — Publication-Grade Sa→Ru TM + Curated Terminology (D13)
 
-_Created: 22-07-2026 (H1458 Track C5) · Sonnet 5 `claude-sonnet-5`_
+_Created: 22-07-2026 (H1458 Track C5) · Sonnet 5 `claude-sonnet-5` · Last updated: 16-08-2026_
 
-**This packet is prepared for a HUMAN to execute via `/publish-safety-check`. The agent that
-built it never publishes, mints a DOI, flips visibility, or pushes copyrighted text public —
-that fence is load-bearing per the [H215](https://github.com/gasyoun/Uprava/blob/main/handoffs/H215-Opus_RussianTranslation_pwg_ru_publication_grade_tm_tmx_and_oral_06.07.26.md)/[H1458](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1458-Sonnet_RussianTranslation_pubgrade-tm-track-c-release-prep_22.07.26.md)
-autonomy contract and is not overridable by this document.**
+> **SUPERSEDED 16-08-2026 — agents MAY mint DOIs and cut public releases.**
+> MG ruled during the H1635 drain: *"The agents can mint the DOI now as they have
+> Zenodo API and so can they cut the public releases."* The original fence below was
+> written when no agent held a Zenodo credential; the blocker was **capability, not
+> policy**, and the credential now exists. So: mint the DOI and cut the release in the
+> same pass as the work — do not leave `DOI: pending` or route it to a human `@DO`.
+> What is still **not** an agent action: flipping repository visibility, and anything
+> `/publish-safety-check` itself blocks (confirmed prohibition, restricted-data
+> designation, privacy exposure, secrets). `/publish-safety-check` remains the gate.
+> Worked precedent: the DE sidecar pack, concept DOI
+> [10.5281/zenodo.21961709](https://doi.org/10.5281/zenodo.21961709), minted by an
+> agent under [H1635](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1635-Opus_SanskritLexicography_pwg-public-sidecar-zenodo-release_25.07.26.md).
+>
+> **Everything in §2 below still stands.** The 131 `needs_review` corpus sources are a
+> *rights* question, not an autonomy question, and this ruling does not clear them.
+
+**Original fence (historical, no longer binding).** This packet is prepared for a HUMAN to
+execute via `/publish-safety-check`. The agent that built it never publishes, mints a DOI,
+flips visibility, or pushes copyrighted text public — that fence is load-bearing per the
+[H215](https://github.com/gasyoun/Uprava/blob/main/handoffs/H215-Opus_RussianTranslation_pwg_ru_publication_grade_tm_tmx_and_oral_06.07.26.md)/[H1458](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1458-Sonnet_RussianTranslation_pubgrade-tm-track-c-release-prep_22.07.26.md)
+autonomy contract and is not overridable by this document.
 
 ## 1. What is ready to publish now (no further clearance needed)
 
