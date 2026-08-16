@@ -6642,4 +6642,55 @@ reglue/expansion pass.
 > Fable 5 (`claude-fable-5`) · 16-08-2026 · counts: literal `#} + {#`, `{#˚`,
 > `˚#}`, U+02DA totals over `pwg.txt`/`pw.txt`/`cae.txt`/`ccs.txt`; specimens
 > pwg.txt L2413–2436 (PWG L490–492), pw.txt L2563–2576 (PW L681–684).
-> §555 takes the next number.
+### §555. Apte rings both ways (and abbreviates grammar labels with it); Monier-Williams 1899 is the one dictionary with its own system — the seam printed IN the lemma (`agni—hotra`, 73 772×) plus a mid-word sandhi-seam ring
+
+🟢 **Closes the §553/§554 series for the two remaining majors.** Measured over
+[csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02);
+NOTE the markup correction — §554's `{#˚`/`˚#}` metric silently missed MW,
+whose lemmas are `<s>…</s>` (mw72: `{%…%}`), so MW showed 0/0 there. Recounted
+in each dictionary's own markup:
+
+| dict | entries | ring total | lead | trail | mid-word | seam in lemma (`<k2>`) |
+|---|---|---|---|---|---|---|
+| mw (1899) | 286 525 | 53 307 | 12 100 | 9 088 | **6 935** | **73 772** em-dash |
+| mw72 (1872) | 55 390 | 21 099 | 75 | 846 | 1 | 0 |
+| ap (rev.) | 90 843 | 5 150 | 2 353 | 1 290 | — | 61 |
+| ap90 | 34 882 | 4 051 | 2 116 | 871 | — | 1 414 |
+
+**Apte: leading dominates but the tail is alive, and the ring is not
+compound-only.** ap90 2 116 lead vs 871 trail (`{#zazWa˚#}` = ṣaṣṭha°), ap
+2 353 vs 1 290 — unlike Cappeller (§554: trailing rings are single-digit
+noise), Apte keeps both directions in real use. Two Apte-specific practices:
+(1) the ring also abbreviates *grammatical labels* — `[<sab>{#za˚ ta˚#}</sab>]`
+= ṣaṣṭhī-tatpuruṣa, tatpuruṣa — so an Apte ring is not always a compound
+member; (2) compounds live in the printed **—Comp.** block as hyphen-led
+sub-lemmas, which the revised-Apte digitization renders as a `+` join:
+`{#aMSaH#} + {#-aMSaH#}` — 36 248 such joins in ap (§554's "plus-analysis"
+count for ap is this device, NOT a PWG-style etymology).
+
+**Monier-Williams 1899 is structurally different from the whole §553 field.**
+(1) It is the only dictionary that prints the compound seam *inside the lemma
+itself*: `<k2>agni/—hotra`, em-dash, **73 772** of 286 525 lemmas, with nested
+seams (`agni—hotrI—vatsa/`) and mixed dash+hyphen depth (`agni—hotra/-prAyaRa`).
+Everyone else (§553) keeps the headword solid. (2) Its ring has THREE uses:
+leading member-elision as in Cappeller (12 100), trailing truncation (9 088),
+and — unique to MW — **6 935 mid-word rings** marking the seam where sandhi
+fused the vowels and a dash cannot be printed: `<s>aM˚so<srs/>ccaya</s>` =
+aṃsa + uccaya → aṃsôccaya (mw72 has exactly 1 such). (3) The 1872 edition
+predates the system: no dashed lemmas at all, and its ring is a generic
+"supply the rest of the word", both directions — the dictionary's own symbol
+list says so verbatim: *"˚ that the rest of a word is to be supplied, e.g.
+˚ri- in˚ after karīndra is for kari-indra"* (mw72.txt front matter, L1643).
+
+**Practical residue:** (a) for MW-1899 the compound seam should be read from
+the `<k2>` dashes, not reconstructed — it is the one CDSL source where the
+lemma itself carries the analysis; (b) an MW mid-word ring is a *sandhi-seam*
+marker, a third sense on top of §554's two — expansion passes must not treat
+it as elision; (c) Apte rings require a label-vs-member disambiguation step
+(`<sab>` context) before any expansion.
+
+> Fable 5 (`claude-fable-5`) · 16-08-2026 · counts in native markup
+> (`<s>˚`/`˚</s>` + letter-adjacent mid for mw; `{%˚`/`˚%}` for mw72; `{#˚`/`˚#}`
+> for ap/ap90; `-` inside `<k2>`); specimens mw.txt L356, L4137–4160,
+> mw72.txt L1643 (symbol list) + L50848, ap.txt L111, ap90.txt L115.
+> §556 takes the next number.
