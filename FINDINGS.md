@@ -6600,4 +6600,46 @@ only in Bopp.
 > Fable 5 (`claude-fable-5`) · 16-08-2026 · census script over
 > `csl-orig/v02/*/<dict>.txt` (counts of U+02DA / U+00B0 / U+0970 / `-` inside
 > `<k1>`); specimens quoted from cae.txt L237–246, ccs.txt L155–161, gra.txt L2.
-> §554 takes the next number.
+### §554. PW and PWG use the same ring as Cappeller — but PWG *states* the seam (`agni + hotra`, 34 752×) and truncates word-ENDS, while PW and Cappeller flipped the ring to the front
+
+🟢 **Same sign, three different grammars of use.** Follow-up to §553, measured
+over the same [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)
+digitizations (`{#˚` = ring replaces the elided FIRST member, `˚#}` = ring
+truncates the word's END; counts do not sum to total because rings also sit
+mid-span and inside `{%…%}`):
+
+| dict | entries | ring total | `{#˚` lead | `˚#}` trail | `X + Y` analysis |
+|---|---|---|---|---|---|
+| pwg | 123 366 | 83 398 | 19 491 | **51 170** | **34 752** |
+| pw | 170 556 | 23 706 | **18 135** | 3 893 | 55 |
+| cae | 40 069 | 9 848 | **3 003** | 22 | 3 |
+| ccs | 30 010 | 6 664 | **3 652** | 68 | 0 |
+
+**Three findings.** (1) **The explicit decomposition is a PWG-only device.**
+Nearly every PWG compound article opens with a parenthesized analysis —
+`{#agnihotra/#} ({#agni#} + {#hotra#})`, 34 752 occurrences — so the seam is
+*stated*, not inferred. PW (Böhtlingk's own shorter redaction) dropped it
+almost entirely (55), and Cappeller never adopted it (CAE 3, CCS 0): there the
+reader reconstructs the seam alone. (2) **The ring points opposite ways.** In
+PWG the dominant use is *trailing* truncation (51 170 `˚#}` vs 19 491 lead) —
+cutting the tail of a quoted or corrected word (`lies {#agnihotrogni˚#}`,
+`metrisch statt {%na gan˚%}`). PW flipped the profile: 18 135 leading vs 3 893
+trailing — the ring now mostly *replaces the shared first member* of compound
+runs. Cappeller took the PW convention to its endpoint: leading-only in
+practice (CAE 3 003 vs 22, CCS 3 652 vs 68) — the §553 `{#agnisAt#} … {#˚kf#}`
+pattern. (3) **Density.** PWG uses a ring every ~1.5 entries, CAE/CCS every
+~4–4.5, PW every ~7 — the big Petersburg quotes and corrects far more running
+text; the concise dictionaries only abbreviate sub-lemma runs. Constant across
+all four (and §553's 20+ ring dictionaries): the printed headword stays solid —
+`<k1>` never carries a ring or hyphen.
+
+**Practical residue:** a parser that treats the ring as "compound-member
+elision" is right almost always for CAE/CCS/PW and only ~a quarter of the time
+for PWG, where the majority sense is "word truncated at the end" inside
+citations and corrections. The two senses need separate handling in any
+reglue/expansion pass.
+
+> Fable 5 (`claude-fable-5`) · 16-08-2026 · counts: literal `#} + {#`, `{#˚`,
+> `˚#}`, U+02DA totals over `pwg.txt`/`pw.txt`/`cae.txt`/`ccs.txt`; specimens
+> pwg.txt L2413–2436 (PWG L490–492), pw.txt L2563–2576 (PW L681–684).
+> §555 takes the next number.
