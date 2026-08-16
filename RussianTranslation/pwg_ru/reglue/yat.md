@@ -6,16 +6,6 @@
 <ls>ŚAT. BR. 11,4,1,3.</ls> <ab>partic.</ab> {#˚yatta#} {%вполне подготовленный, — вооруженный%}
 <ls>MBH. 7,3534.</ls>
 
-**1))** <div n="p">— {#nis#} <ab>caus.</ab>
-<div n="1"> 1) {%уносить прочь, вывозить, уводить%}: {#saMyujyamAnAni niSamya loke niryAtyamAnAni#} (= {#nipIqyamAnAni#}
-<ls>NILAK.</ls>) {#ca sAttvikAni#}
-<ls>MBH. 12,13789.</ls> {#putro niryAtitaH kroDAt#} (так более новая <ab>Ausg.</ab>, однако следует, по всей видимости, читать {#kroqAt#})
-<ls>HARIV. 4857.</ls> {#niryAtayata me senAm#}
-<ls>MBH. 15,610.</ls> {#asatIM vapuzwamAM cEva niryAtayata me gfhAt#}
-<ls>HARIV. 11245.</ls> {#yamo vEvasvatasya niryAtayati duzkftam . hfdi sTitaH karmasAkzI kzetrajYo yasya tuzyati ..#}
-<ls>Spr. 2404.</ls> {%извлекать, доставлять%}: {#gfhAt#}
-<ls>R. 6,96,5.</ls>
-
 **1a)** <div n="p">— {#pra#} <ab>med.</ab> {%воздействовать%}: {#pra ra\SmiBi\ryata^mAnAH#}
 
 **1b)** <ls>TBR. 2,8,2,2.</ls> {%стремиться, стараться, прилагать усилия к, заботиться о, усердствовать%}; <ab>med.</ab> и <ab>act.</ab> (из метрических соображений) с <ab>loc.</ab>
@@ -56,22 +46,9 @@
 <ls>ṚV. 1,163,10.</ls> {#saM dAnu^citrA u\zaso^ yatantam#}
 <ls n="ṚV.">5,59,8.</ls>
 
-**2))** <div n="1">— 2) {%выдавать, дарить, передавать, возвращать%}: {#nivfttezu ca meGezu niryAtya jagato jalam#}
-<ls>HARIV. 4013.</ls> {#niryAtya mahizaM tasya#}
-<ls>KATHĀS. 62,224.</ls>
-<ls>SADDH. P. 4,25.b.</ls> <ls>M. 11,164.</ls> {#nyAsam#}
-<ls>MBH. 3,16596.</ls> <ls n="MBH.">5,3979. fg.</ls> <ls n="MBH. 5,">4021. fg.</ls>
-<ls>HARIV. 2770.</ls> <ls n="HARIV.">4061.</ls> <ls n="HARIV.">6778.</ls>
-<ls>R. GORR. 1,71,23.</ls> <ls n="R. GORR.">2,117,7.</ls> <ls n="R. GORR.">5,37,8.</ls> <ls n="R. GORR. 5,">66,24.</ls> <ls n="R. GORR. 5,66,">26.</ls> <ls n="R. GORR. 5,">89,56.</ls> <ls n="R. GORR.">6,16,69.</ls> <ls n="R. GORR. 6,">94,21.</ls> <ls n="R. GORR.">7,30,26.</ls> <ls n="R. GORR. 7,">98,6.</ls> <ls n="R. GORR. 7,96,">8.</ls> <ab>med.</ab> <ls n="R. GORR.">5,76,18.</ls> <ls n="R. GORR.">7,59,10.</ls> <ls>MṚCCH. 25,9.</ls> {#vEram#} {%отплатить враждой, отомстить%}: {#rAmalakzmaRayorvEraM svayaM niryAtayAmi vE#}
-<ls>R. 6,33,4.</ls> <ls n="R.">3,60,33.</ls>
-<ls>MBH. 2,2660.</ls>
-
 **3)** <div n="1">— 3) <ab>med.</ab> {%соединяться, встречаться, вступать в союз с%}: {#saM BA\nunA^ yatate\ sUrya^sya#}
 <ls>ṚV. 5,37,1.</ls> {#saM ra\SmiBi^ryatate darSa\to raTa^H#}
 <ls n="ṚV.">9,111,3.</ls>
-
-**3))** <div n="1">— 3) {%проводить (время), переживать%}: {#caturdaSa samA vIra vane niryAtitAstvayA#}
-<ls>R. 6,104,26.</ls>
 
 **4)** <div n="1">— 4) <ab>med.</ab> {%столкнуться, вступить в борьбу, поссориться%}: {#saM yanma\hI mi^Ta\tI sparDa^mAne tanU\rucA\ SUra^sAtA\ yatE^te#}
 <ls>ṚV. 7,93,5.</ls>
@@ -87,7 +64,7 @@
 
 **5)** <div n="1">— 5) {#saMyatta#} {%готовый, всецело поглощенный делом, принявший меры, бдительный, осторожный%}: {#samare#}
 <ls>MBH. 7,5179.</ls> {#taTA yuDyeta saMyatto#}
-(<ab>v. l.</ab> вместо {#saMpanno) vijayeta ripUnyaTA#}
+(<ab>v. l.</ab> вм. {#saMpanno) vijayeta ripUnyaTA#}
 <ls>M. 7,200.</ls>
 <ls>HARIV. 8067.</ls>
 <ls>BHĀG. P. 10,44,41.</ls> {#su˚#}
@@ -120,8 +97,6 @@
 
 **6)** <div n="1">— 6) <ab>med.</ab> {%вступить во враждебное столкновение%}: {#ta u\grAso\ vfza^Ra u\grabA^havo\ naki^zwa\nUzu^ yetire#} {%не нападают друг на друга%} <ls>ṚV. 8,20,12.</ls> {#saM jA^nate\ na ya^tante mi\Taste#} <ls n="ṚV.">7,76,5.</ls> {%находиться в бою%} <ls>AIT. BR. 1,14.</ls> <ls n="AIT. BR.">8,10.</ls> {#devAsurA yattA Asan#} <ls>KĀṬH. 37,11.</ls>
 
-**Nachträge/cross-ref)** <div n="v">— <ab>Vgl.</ab> {#niryAtaka#} <ab>fg.</ab> und {#niryAtya#} .
-
 **PPP_1)** <div n="1"> 1) {%зависящий от, покоящийся на, находящийся в чьем-либо распоряжении%} (дополнение в <ab>loc.</ab>, <ab>gen.</ab> или в <ab>comp.</ab> предшествует) <ls>AK. 3,1,16.</ls> {#amAtye daRqa Ayatto daRqe vEnayikI kriyA . nfpatO kozarAzwre ca dUte saMDiviparyayO ..#} <ls>M. 7,65.</ls> <ls n="M. 7,">205.</ls> <ls>Spr. 5274.</ls> <ls>MBH. 14,2084.</ls> <ls n="MBH. 14,">2351.</ls> <ls>HARIV. 5021.</ls> <ls>R. 1,53,14. fg.</ls> (<ls n="GORR. 1,">54,15. fg.</ls> <ls>GORR.</ls>). <ls n="R.">2,45,28.</ls> <ls>MEGH. 16.</ls> <ls>KATHĀS. 46,180.</ls> {#tavAyattAH prajAScemAH#} <ls>R. GORR. 2,2,26.</ls> {#prAvfwkAlasya cAnnamAyattam#} <ls>VARĀH. BṚH. S. 21,1.</ls> <ls>KATHĀS. 46,19.</ls> <ls>MĀRK. P. 72,21.</ls> <ls n="MĀRK. P.">126,3.</ls> <ls n="MĀRK. P. 126,">4.</ls> <ls n="MĀRK. P. 126,">7.</ls> <ls>HIT. 84,5.</ls> {#vidaDe tasyAyattaM nijaM Danam#} {%предоставил это в его распоряжение%} <ls>RĀJA-TAR. 5,83.</ls> {#cakzurAyattA#} <ls>MAITRYUP. 6,6.</ls> <ls>R. 1,4,29.</ls> <ls n="R.">5,86,12.</ls> <ls>ŚĀK. 92.</ls> <ls>Spr. 1431.</ls> <ls n="Spr.">2263.</ls> <ls n="Spr.">5384.</ls> <ls>VṚDDHACĀṆ. 13,14.</ls> <ls>KĀM. NĪTIS. 5,77. 18,20</ls> ({#mitrAyatte#} следует читать) <ls>DAŚAR. 2,40.</ls> <ls>MĀRK. P. 126,5.</ls> <ls>LA. (II) 90,13.</ls> <ls>KATHĀS. 18,136.</ls> <ls n="KATHĀS.">20,151.</ls> <ls n="KATHĀS.">52,211.</ls> <ls n="KATHĀS.">53,7.</ls> <ls>RĀJA-TAR. 4,491.</ls> <ls>Ind. St. 2,305,1.</ls> <ls>PAÑCAT. 85,17.</ls> <ls>HIT. 52,9.</ls> <ls n="HIT.">130,3.</ls> <ls>HIT. ed. JOHNS. 1086.</ls> <ls>DAŚAK.</ls> в <ls>BENF. Chr. 197,19.</ls> <ls>H. 918.</ls> <ls>VOP. 7,85.</ls> {#madekAyattatAM gatA#} <ls>KATHĀS. 32,171.</ls> {#ISvarecCAyattatva#} <ls>SARVADARŚANAS. 79,14.</ls> без дополнения <ls>R. 7,38,9.</ls> <ls>DAŚAR. 2,22.</ls> {#AyattIkfta#} <ls>RĀJA-TAR. 4,680.</ls> <ab>Vgl.</ab> {#anAyatta, parAyatta, svAyatta#}.
 
 **PPP_2)** <div n="1">— 2) {%напрягающий усилия, прилагающий старание%}: {#paramAyattAH#} <ls>BHĀG. P. 8,7,5.</ls> {%находящийся начеку, остерегающийся%} <ls>R. 7,19,10.</ls> {#DanurAyattamuttamam#} так <ab>v. a.</ab> {%стоящий наготове%} <ls n="R. 7,">109,7.</ls>
@@ -152,209 +127,211 @@
 **main)** <div n="p">— {#aDivi#} <ab>caus.</ab> {%нанизывать, прикреплять%}:
 <ls>KĀṬH. 24,8. 26,10. 29,9. 37,16.</ls>
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [NWS:] {#yat#} ( yátate I Ā ) маршировать или лететь вместе или в строю. ṚV. подчиняться, соглашаться с (Instr.). ṚV. Caus. (или кл. X, yātáyati или °te): стремиться получить что-л. (Acc.) от (Abl.). Mālav MW : 840
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachträge/cross-ref› <div n="v">— <ab>Vgl.</ab> {#niryAtaka#} <ab>fg.</ab> и {#niryAtya#} .
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] (se) diriger — направляться. [полисемия, неоднозначно исходящая из. Renou 1997, S. 58.] Renou 1997 : 1009
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [NWS:] {#yat#} ( yátate I Ā ) маршировать или лететь вместе или в строю. ṚV. подчиняться, соглашаться с (Instr.). ṚV. Caus. (или кл. X, yātáyati или °te): стремиться получить что-л. (Acc.) от (Abl.). Mālav MW : 840
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] Act. и Caus.: людей (Acc.) соединять, объединять, заключать в союз (в дружбу или союзничество). Med.: идти объединенными, двигаться в сомкнутых рядах (рядом или один за другим). Med.: объединяться с (Instr.). Med.: соглашаться с (Instr.). Соперничать с (Instr.). Med.: находиться в ссоре друг с другом. Med.: вступать в столкновение с (Loc.). Med.: устремляться к месту (Loc., Acc.) или к человеку (Acc.), стараться его достичь. Прилагать усилия. [содержится в áyatat.] Caus. med.: вступать в союз. Caus.: преподносить кому-л. (Dat.) что-л. (Acc.). Взыскивать долги (Acc.). Caus.: воздавать. Graßmann 1873 (1996) : 1079
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] (se) diriger — направляться. [полисемия, неоднозначно исходящая из. Renou 1997, S. 58.] Renou 1997 : 1009
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] (I) прилагать усилия. Caus.: a) побуждать к деятельности; b) воздавать (= apagamaya (Sāyaṇa)). ṚV 3,59,1, ṚV 10,127,7. Hillebrandt 1885 : 110
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] Act. и Caus.: людей (Acc.) соединять, объединять, заключать в союз (в дружбу или союзничество). Med.: идти объединенными, двигаться в сомкнутых рядах (рядом или один за другим). Med.: объединяться с (Instr.). Med.: соглашаться с (Instr.). Соперничать с (Instr.). Med.: находиться в ссоре друг с другом. Med.: вступать в столкновение с (Loc.). Med.: устремляться к месту (Loc., Acc.) или к человеку (Acc.), стараться его достичь. Прилагать усилия. [содержится в áyatat.] Caus. med.: вступать в союз. Caus.: преподносить кому-л. (Dat.) что-л. (Acc.). Взыскивать долги (Acc.). Caus.: воздавать. Graßmann 1873 (1996) : 1079
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] (I) P.: побуждать к соперничеству, подавать добрый пример. ṚV 7,36,2. Ā.: a) ревностно стараться, соперничать с (Instr.); приходить в рвение по поводу чего-л., завидовать (Loc.); бороться за (Acc.), оспаривать; b) стараться, хотеть быть первым, нетерпеливо стремиться к, теснить к (Loc.); c) усердно стремиться, рваться вперед, торопиться, спешить (идти); выстраиваться в строй, вступать в строй. ṚV 10,62,11, ṚV 8,20,12, ṚV 10,113,7, ṚV 1,85,8, ṚV 10,75,3, ṚV 10,18,6. Caus.: a) U.: подстегивать, воодушевлять; b) P.: понуждать к уплате (+ ṛṇam, подразумеваемое). ṚV 3,59,1, ṚV 5,32,12, ṚV 10,127,7, ṚV 5,3,9. Geldner 1907 : 140
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] (I) прилагать усилия. Caus.: a) побуждать к деятельности; b) воздавать (= apagamaya (Sāyaṇa)). <ls n="ṚV. 3,59,1">ṚV 3,59,1</ls>, <ls n="ṚV. 10,127,7">ṚV 10,127,7</ls>. Hillebrandt 1885 : 110
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] {#+ adhi , Ā: anlegen, anstecken. ṚV 1,64,4 .#} + ádhi: 1) med.: надевать на себя что-л. (Acc.) (в качестве украшения); 2) Caus. med.: достигать места (Acc.). Graßmann 1873 (1996) : 1079
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] (I) P.: побуждать к соперничеству, подавать добрый пример. <ls n="ṚV. 7,36,2">ṚV 7,36,2</ls>. Ā.: a) ревностно стараться, соперничать с (Instr.); приходить в рвение по поводу чего-л., завидовать (Loc.); бороться за (Acc.), оспаривать; b) стараться, хотеть быть первым, нетерпеливо стремиться к, теснить к (Loc.); c) усердно стремиться, рваться вперед, торопиться, спешить (идти); выстраиваться в строй, вступать в строй. <ls n="ṚV. 10,62,11">ṚV 10,62,11</ls>, <ls n="ṚV. 8,20,12">ṚV 8,20,12</ls>, <ls n="ṚV. 10,113,7">ṚV 10,113,7</ls>, <ls n="ṚV. 1,85,8">ṚV 1,85,8</ls>, <ls n="ṚV. 10,75,3">ṚV 10,75,3</ls>, <ls n="ṚV. 10,18,6">ṚV 10,18,6</ls>. Caus.: a) U.: подстегивать, воодушевлять; b) P.: понуждать к уплате (+ ṛṇam, подразумеваемое). <ls n="ṚV. 3,59,1">ṚV 3,59,1</ls>, <ls n="ṚV. 5,32,12">ṚV 5,32,12</ls>, <ls n="ṚV. 10,127,7">ṚV 10,127,7</ls>, <ls n="ṚV. 5,3,9">ṚV 5,3,9</ls>. Geldner 1907 : 140
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] {#+ ánu , med: hinstreben zu (Akk).#} + abhyā, Caus.: «saṃśleṣay-». BaudhŚS XI.11. Renou 1934 : 192 (s.v. abhyāyat -)
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] {#+ adhi , Ā: anlegen, anstecken. <ls n="ṚV. 1,64,4">ṚV 1,64,4</ls> .#} + ádhi: 1) med.: надевать на себя что-л. (Acc.) (в качестве украшения); 2) Caus. med.: достигать места (Acc.). Graßmann 1873 (1996) : 1079
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] {#+ ā́ : 1) wo (Lok) Fuss fassen, weilen, auch im bildlichen Sinne; 2) med: nebeneinander gehen; 3) med: hinstreben zu (Dat).#} + upa, moy.: «bādh-»; вариант upāyat-. Caland 1926, p. 175. Renou 1934 : 262 (s.v. upayat -)
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] {#+ ánu , med: hinstreben zu (Akk).#} + abhyā, Caus.: «saṃśleṣay-». BaudhŚS XI.11. Renou 1934 : 192 (s.v. abhyāyat -)
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] {#+ ṛ́ṇā : Schulden eintreiben, Busse (Strafgeld) einfordern, Genugtuung fordern. ṚV 10,127,7 .#} + ní, med.: достигать, приходить к (Loc.). Graßmann 1873 (1996) : 1079
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] {#+ ā́ : 1) wo (Lok) Fuss fassen, weilen, auch im bildlichen Sinne; 2) med: nebeneinander gehen; 3) med: hinstreben zu (Dat).#} + upa, moy.: «bādh-»; вариант upāyat-. Caland 1926, p. 175. Renou 1934 : 262 (s.v. upayat -)
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [NWS:] {#+ nis , Kaus ( niryātayati ): to forgive, pardon, set free.#} (niryātayati, °teti; также °dayati) — давать, преподносить [Act., с Acc. вещи, Dat. или Gen. лица; Pass., с Instr., редко Gen. дающего, также, редко, получатель в Nom., и дающий и дар в Instr.]; (niryātita, ppp.) [как правило, дар в Nom., дающий в Instr., получатель в Gen. (Dat.) или Loc.]. SaddhP 108.11, Mvu i.295.15. BHSD : 303 (s.v. niryātayati)
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] {#+ ṛ́ṇā : Schulden eintreiben, Busse (Strafgeld) einfordern, Genugtuung fordern. <ls n="ṚV. 10,127,7">ṚV 10,127,7</ls> .#} + ní, med.: достигать, приходить к (Loc.). Graßmann 1873 (1996) : 1079
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] {#– ( niryātita ): given. CII 2.1 (Index) .#} + pari, (páriyatta): окруженный. ṚV 7,83,8. Hillebrandt 1885 : 110
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [NWS:] {#+ nis , Kaus ( niryātayati ): to forgive, pardon, set free.#} (niryātayati, °teti; также °dayati) — давать, преподносить [Act., с Acc. вещи, Dat. или Gen. лица; Pass., с Instr., редко Gen. дающего, также, редко, получатель в Nom., и дающий и дар в Instr.]; (niryātita, ppp.) [как правило, дар в Nom., дающий в Instr., получатель в Gen. (Dat.) или Loc.]. SaddhP 108.11, Mvu i.295.15. BHSD : 303 (s.v. niryātayati)
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] {#– umstellen, umzingeln. ṚV 7,83,8 .#} + pári: окружать, обступать (Acc.). Graßmann 1873 (1996) : 1079
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] {#– ( niryātita ): given. CII 2.1 (Index) .#} + pari, (páriyatta): окруженный. <ls n="ṚV. 7,83,8">ṚV 7,83,8</ls>. Hillebrandt 1885 : 110
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] {#+ paryā , Kaus. BaudhŚS XIV.32 .#} + prati: (°yatta, ppp.) приготовленный, сделанный. Mvu i.24.13. BHSD : 367 (s.v. pratiyatta)
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] {#– umstellen, umzingeln. <ls n="ṚV. 7,83,8">ṚV 7,83,8</ls> .#} + pári: окружать, обступать (Acc.). Graßmann 1873 (1996) : 1079
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [NWS:] {#+ vi : to make special effort for. CāṇaṬ ad KA I.12 .#} — устраивать, обеспечивать. KA 1.11.20. Kangle 1969 : 333 (s.v. viyat)
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] {#+ paryā , Kaus. BaudhŚS XIV.32 .#} + prati: (°yatta, ppp.) приготовленный, сделанный. Mvu i.24.13. BHSD : 367 (s.v. pratiyatta)
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [NWS:] {#+ sam : encounter (rarely ‘as friends’, generally ‘as enemies’), contend, engage in contest or strife. ṚV , B(MW) , ChU .#} — соперничать с (Instr.), стараться сравняться. ṚV 5,37,1. Geldner 1907 : 140
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [NWS:] {#+ vi : to make special effort for. CāṇaṬ ad KA I.12 .#} — устраивать, обеспечивать. KA 1.11.20. Kangle 1969 : 333 (s.v. viyat)
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] {#– (+ acc. of content).#} + sám: 1) объединять людей (Acc.); 2) med.: выстраиваться в ряд; 3) med.: объединяться или встречаться с (Instr.); 4) med.: вступать в ссору друг с другом. Graßmann 1873 (1996) : 1079
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [NWS:] {#+ sam : encounter (rarely ‘as friends’, generally ‘as enemies’), contend, engage in contest or strife. ṚV , B(MW) , ChU .#} — соперничать с (Instr.), стараться сравняться. <ls n="ṚV. 5,37,1">ṚV 5,37,1</ls>. Geldner 1907 : 140
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [NWS:] [yatta] прилагавший усилия, старавшийся. Mbh, Kāvya(MW). занятый, сосредоточенный на, готовый к. R, Hariv. + Loc., Dat., Acc. или Inf. с prati. осторожный, бдительный. MW : 841 (s.v. yatta)
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] {#– (+ acc. of content).#} + sám: 1) объединять людей (Acc.); 2) med.: выстраиваться в ряд; 3) med.: объединяться или встречаться с (Instr.); 4) med.: вступать в ссору друг с другом. Graßmann 1873 (1996) : 1079
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] {#yat#} суффикс ya. Windisch 1883 : 146
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [NWS:] [yatta] прилагавший усилия, старавшийся. Mbh, Kāvya(MW). занятый, сосредоточенный на, готовый к. R, Hariv. + Loc., Dat., Acc. или Inf. с prati. осторожный, бдительный. MW : 841 (s.v. yatta)
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] усердно стараться (+ прич.). ṚV 1,95,7. Geldner 1907 (N) : 234
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] {#yat#} суффикс ya. Windisch 1883 : 146
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] kṛtya ya. Pāṇ III.1.97. taddhita ya. Pāṇ IV.1.137. Böhtlingk 1840 : 513
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] усердно стараться (+ прич.). <ls n="ṚV. 1,95,7">ṚV 1,95,7</ls>. Geldner 1907 (N) : 234
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] kṛt (kṛtya) yà. Pāṇ 3,1,97. taddh. yà. Pāṇ 4,1,137. Böhtlingk 1887: *176 > [ya t] двусложный kṛt (kṛtya) суффикс −́ya или многосложный kṛt (kṛtya) суффикс −−yá. Pāṇ 3.1.97. Двусложный taddhita −́ya или многосложный taddhita −−yá. Pāṇ 4.1.137. Katre 1968f (2) : 460
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] kṛtya ya. Pāṇ III.1.97. taddhita ya. Pāṇ IV.1.137. Böhtlingk 1840 : 513
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] ya <ab>Bed.</ab> 6. Abhyankar 1986 : 312
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] kṛt (kṛtya) yà. Pāṇ 3,1,97. taddh. yà. Pāṇ 4,1,137. Böhtlingk 1887: *176 > [ya t] двусложный kṛt (kṛtya) суффикс −́ya или многосложный kṛt (kṛtya) суффикс −−yá. Pāṇ 3.1.97. Двусложный taddhita −́ya или многосложный taddhita −−yá. Pāṇ 4.1.137. Katre 1968f (2) : 460
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] [yaT] может добавляться как svārthika суффикс. MBh on Pāṇ 5.4.30. Roodbergen 2009 : 145
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] ya <ab>Bed.</ab> 6. Abhyankar 1986 : 312
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] Indekl. до, вплоть до. PPS, Introduction S. 29, Z. 13. SJS 10 : 185
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] [yaT] может добавляться как svārthika суффикс. MBh on Pāṇ 5.4.30. Roodbergen 2009 : 145
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [NWS:] {#ya#} [yat khalu или yaṃ khalu] с формой 2-го (или вежливого 3-го) лица jñā (обычно opt.): примите к сведению; позвольте вас уведомить. [вежливое введение к высказыванию, обращенному обычно к царю или подобному лицу. Mvu ii.454.1.] BHSD : 442 (s.v. yat khalu)
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] Indekl. до, вплоть до. PPS, Introduction S. 29, Z. 13. SJS 10 : 185
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] [Buddh, unsp] [ yat tu ] читать yan nu . MSV . BHSD : 442 (s.v. yat tu)
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [NWS:] {#ya#} [yat khalu или yaṃ khalu] с формой 2-го (или вежливого 3-го) лица jñā (обычно opt.): примите к сведению; позвольте вас уведомить. [вежливое введение к высказыванию, обращенному обычно к царю или подобному лицу. Mvu ii.454.1.] BHSD : 442 (s.v. yat khalu)
 
-**+)** [PW·restate → *new] √{#yat#}¦, {#ya/tati#}, {#˚te#}
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [NWS:] [Buddh, unsp] [ yat tu ] читать yan nu . MSV . BHSD : 442 (s.v. yat tu)
+
+**+)** [PW·restate → не привязано: цель не указана] √{#yat#}¦, {#ya/tati#}, {#˚te#}
 <div n="1">— 1〉 <ab>Act.</ab> {%приводить в порядок%} ({%строй и ряд%}){%,  присоединять, прилагать одно к другому, связывать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 <ab>Act.</ab> {%идти в ногу, стоять в одном ряду —, на одном уровне —, соперничать с%} (<ab>Instr.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 <ab>Act.</ab> {%идти в ногу, стоять в одном ряду —, на одном уровне —, соперничать с%} (<ab>Instr.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 <ab>Med.</ab> {%присоединяться, выстраиваться в ряд, двигаться рядами%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 <ab>Med.</ab> {%присоединяться, выстраиваться в ряд, двигаться рядами%}.
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 <ab>Med.</ab> {%соединяться, объединяться, встречаться с%} (<ab>Instr.</ab>). {#kra/tuBiH#} так <ab>v. a.</ab> {%подчиняться чьей-либо%} (<ab>Gen.</ab>) {%воле%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 <ab>Med.</ab> {%соединяться, объединяться, встречаться с%} (<ab>Instr.</ab>). {#kra/tuBiH#} так <ab>v. a.</ab> {%подчиняться чьей-либо%} (<ab>Gen.</ab>) {%воле%}.
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 <ab>Med.</ab> {%враждебно столкнуться, находиться в бою%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 <ab>Med.</ab> {%враждебно столкнуться, находиться в бою%}.
 
-**+)** [PW·restate → *new] <div n="1">— 6〉 <ab>Med.</ab> {%стремиться соединиться с%} (<ab>Loc.</ab>), {%стремиться достичь%} (какого-либо места). {%устремляться к чему-либо%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 6〉 <ab>Med.</ab> {%стремиться соединиться с%} (<ab>Loc.</ab>), {%стремиться достичь%} (какого-либо места). {%устремляться к чему-либо%}.
 
-**+)** [PW·restate → *new] <div n="1">— 7〉 <ab>Med.</ab> (метрически также <ab>Act.</ab>) {%стремиться к, прилагать усилия к, быть озабоченным, всецело отдаваться чему-либо;%} дополнение в <ab>Loc.</ab>, <ab>Dat.</ab>, <ab>Acc.</ab>, <ab>Gen.</ab> (единожды), {#˚arTe#}, {#˚arTAya#} (также с <ab>Gen.</ab>), {#˚arTam#}, {#˚hetos#}, в <ab>Acc.</ab> с {#prati#} или <ab>Infin.</ab> (<ls>GAUT.</ls>) без дополнения {%напрягать силы, прилагать все усилия, проявлять заботу, быть начеку, остерегаться%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 7〉 <ab>Med.</ab> (метрически также <ab>Act.</ab>) {%стремиться к, прилагать усилия к, быть озабоченным, всецело отдаваться чему-либо;%} дополнение в <ab>Loc.</ab>, <ab>Dat.</ab>, <ab>Acc.</ab>, <ab>Gen.</ab> (единожды), {#˚arTe#}, {#˚arTAya#} (также с <ab>Gen.</ab>), {#˚arTam#}, {#˚hetos#}, в <ab>Acc.</ab> с {#prati#} или <ab>Infin.</ab> (<ls>GAUT.</ls>) без дополнения {%напрягать силы, прилагать все усилия, проявлять заботу, быть начеку, остерегаться%}.
 
-**+)** [PW·restate → *new] <div n="1">— 8〉 <ab>Med.</ab> {%готовиться к%} (<ab>Acc.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 8〉 <ab>Med.</ab> {%готовиться к%} (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 9〉 <ab>Partic.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 9〉 <ab>Partic.</ab>
 
-**+)** [PW·restate → *new] <div n="2">— a〉 {#yatta#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— a〉 {#yatta#}
 <div n="3">— α〉 <ab>Pl.</ab> {%находящийся в бою%}.
 <div n="3">— β〉 {%озабоченный, готовый к;%} дополнение в <ab>Loc.</ab>, <ab>Dat.</ab> или <ab>Acc.</ab> с {#prati#}. Без дополнения {%готовый ко всему, принявший меры, находящийся начеку, остерегающийся%}.
 <div n="3">— γ〉 {%управляемый%} (колесница, кони).
 
-**+)** [PW·restate → *new] <div n="2">— b〉 {#yatita#} с <ab>Infin.</ab> {%тот, о ком заботились%}. <lex>n.</lex> <ab>impers.</ab> с <ab>Infin.</ab> {%было проявлено усердие%} (<ab>Instr.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— b〉 {#yatita#} с <ab>Infin.</ab> {%тот, о ком заботились%}. <lex>n.</lex> <ab>impers.</ab> с <ab>Infin.</ab> {%было проявлено усердие%} (<ab>Instr.</ab>).
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {#yAta/yati#}, {#˚te#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {#yAta/yati#}, {#˚te#}
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 <ab>Act.</ab> {%приводить в порядок, соединять;%} <ab>Med.</ab> {%вступать в союз%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 <ab>Act.</ab> {%приводить в порядок, соединять;%} <ab>Med.</ab> {%вступать в союз%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 <ab>Act.</ab> {%прилагать, прикреплять%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 <ab>Act.</ab> {%прилагать, прикреплять%}.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 <ab>Act.</ab> {%заставлять сражаться%} <ls>AIT. BR. 1,14</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 <ab>Act.</ab> {%заставлять сражаться%} <ls>AIT. BR. 1,14</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 <ab>Act.</ab> {%внушать кому-либо%} (<ab>Gen.</ab>) {%что-либо%} (<ab>Acc.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 <ab>Act.</ab> {%внушать кому-либо%} (<ab>Gen.</ab>) {%что-либо%} (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 <ab>Act.</ab> <ab>Med.</ab> (в виде исключения) {%уравнивать, воздавать%} ({%вознаграждать%} или {%наказывать%}), {%отвечать%} (на враждебность). {#kilbizam#} {%порицать как ошибку%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 <ab>Act.</ab> <ab>Med.</ab> (в виде исключения) {%уравнивать, воздавать%} ({%вознаграждать%} или {%наказывать%}), {%отвечать%} (на враждебность). {#kilbizam#} {%порицать как ошибку%}.
 
-**+)** [PW·restate → *new] <div n="1">— 6〉 <ab>Med.</ab> {%уступать кому-либо%} (<ab>Acc.</ab> или <ab>Gen.</ab>) {%что-либо%} (<ab>Acc.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 6〉 <ab>Med.</ab> {%уступать кому-либо%} (<ab>Acc.</ab> или <ab>Gen.</ab>) {%что-либо%} (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 7〉 <ab>Act.</ab> <ab>Med.</ab> {%мучить, терзать кого-либо%}. — По <ls>DHĀTUP.</ls> {#nikAre#} ({#nirAkAre#}, {#Kede#}) и {#upaskAre#} {#yAtizye#} <ls>MĀRK. P. 121,39</ls> ошибочно вместо {#yatizye#}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 7〉 <ab>Act.</ab> <ab>Med.</ab> {%мучить, терзать кого-либо%}. — По <ls>DHĀTUP.</ls> {#nikAre#} ({#nirAkAre#}, {#Kede#}) и {#upaskAre#} {#yAtizye#} <ls>MĀRK. P. 121,39</ls> ошибочно вм. {#yatizye#}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#aDi#} <ab>Med.</ab> {%надевать на себя%} украшение (<ab>Acc.</ab>) {%на%} (<ab>Loc.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aDi#} <ab>Med.</ab> {%надевать на себя%} украшение (<ab>Acc.</ab>) {%на%} (<ab>Loc.</ab>).
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> <ab>Med.</ab> {%достигать%} какого-либо места (<ab>Acc.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> <ab>Med.</ab> {%достигать%} какого-либо места (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="p">— С {#anu#} <ab>Med.</ab> {%стремиться к%} (<ab>Acc.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anu#} <ab>Med.</ab> {%стремиться к%} (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="p">— С {#A#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#A#}
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 {%прибывать, вступать в, закрепляться, жить, оставаться — в%} или {%при%} (<ab>Loc.</ab>), {%стремиться к%} (<ab>Dat.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%прибывать, вступать в, закрепляться, жить, оставаться — в%} или {%при%} (<ab>Loc.</ab>), {%стремиться к%} (<ab>Dat.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 [Page5-119-a] {#A/yatta#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 [Page5-119-a] {#A/yatta#}
 <div n="2">— a〉 {%находящийся в%} (<ab>Loc.</ab> или <ab>Acc.</ab>)
 <div n="2">— b〉 {%зависящий от, основывающийся на, состоящий в чьем-либо распоряжении;%} дополнение в <ab>Loc.</ab>, <ab>Gen.</ab> или в <ab>Comp.</ab> предшествует. Также без дополнения.
 <div n="2">— c〉 {%напрягающий силы, прилагающий усилия%}.
 <div n="2">— d〉 {%находящийся начеку, остерегающийся%}.
 <div n="2">— e〉 {%стоящий наготове%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> <ab>Act.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> <ab>Act.</ab>
 <div n="1">— 1〉 {%доставлять в%} (<ab>Loc.</ab>).
 <div n="1">— 2〉 как объяснение {#yAtayati#} по <ab>Comm.</ab> = {#karmasu pravartayati#}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#atyA#} <ab>Med.</ab> {%весьма усердно стремиться к, быть весьма озабоченным%} (<ab>Loc.</ab>)
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#atyA#} <ab>Med.</ab> {%весьма усердно стремиться к, быть весьма озабоченным%} (<ab>Loc.</ab>)
 
-**+)** [PW·restate → *new] <div n="p">— С {#anvA#}, {#anvA/yatta#} {%причастный к, связанный с, находящийся в отношении к, зависящий от, основывающийся —, распространяющийся на, наличествующий в%} или {%при;%} с <ab>Loc.</ab> или <ab>Acc.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anvA#}, {#anvA/yatta#} {%причастный к, связанный с, находящийся в отношении к, зависящий от, основывающийся —, распространяющийся на, наличествующий в%} или {%при;%} с <ab>Loc.</ab> или <ab>Acc.</ab>
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> <ab>Act.</ab> {%выстраивать в ряд, заставлять следовать; приводить в связь, привлекать к участию;%} с <ab>Loc.</ab> или <ab>Acc.</ab> <ls>MĀN. GṚHY. 2,2. fgg.</ls> <ls>ĀPAST. ŚR. 6,30,12</ls>. <ab>Comm.</ab> к <ls n="Chr.">29,8</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> <ab>Act.</ab> {%выстраивать в ряд, заставлять следовать; приводить в связь, привлекать к участию;%} с <ab>Loc.</ab> или <ab>Acc.</ab> <ls>MĀN. GṚHY. 2,2. fgg.</ls> <ls>ĀPAST. ŚR. 6,30,12</ls>. <ab>Comm.</ab> к <ls n="Chr.">29,8</ls>.
 
-**+)** [PW·restate → *new] <div n="p">— С {#vyA#} <ab>Caus.</ab> <ab>Act.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vyA#} <ab>Caus.</ab> <ab>Act.</ab>
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 {%упорядоченно расставлять%} <ls>ĀPAST. ŚR. 15,6,5</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%упорядоченно расставлять%} <ls>ĀPAST. ŚR. 15,6,5</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%отдельно закреплять при%} (<ab>Loc.</ab>) <ls>ĀPAST. ŚR. 15,6,17. 18</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%отдельно закреплять при%} (<ab>Loc.</ab>) <ls>ĀPAST. ŚR. 15,6,17. 18</ls>.
 
-**+)** [PW·restate → *new] <div n="p">— С {#samA#}, {#˚yatta#} {%основывающийся на, зависящий от%} (<ab>Loc.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#samA#}, {#˚yatta#} {%основывающийся на, зависящий от%} (<ab>Loc.</ab>).
 
-**+)** [PW·restate → *new] <div n="p">— С {#upa#} <ab>Med.</ab> {%касаться, относиться к%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upa#} <ab>Med.</ab> {%касаться, относиться к%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#ni#} <ab>Med.</ab> {%прибывать к%} (<ab>Loc.</ab>)
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ni#} <ab>Med.</ab> {%прибывать к%} (<ab>Loc.</ab>)
 
-**+)** [PW·restate → *new] <div n="p">— С {#nis#} <ab>Caus.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#nis#} <ab>Caus.</ab>
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 {%уносить, увозить, уводить%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%уносить, увозить, уводить%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%извлекать, добывать — из%} (<ab>Abl.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%извлекать, добывать — из%} (<ab>Abl.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%отдавать, дарить%} (<ls>LALIT. 474,13</ls>. <ls>SADDH. P. 91,b</ls>. <ls>KĀRAṆḌ. 36,17. 49,1</ls>), {%выдавать, возвращать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%отдавать, дарить%} (<ls>LALIT. 474,13</ls>. <ls>SADDH. P. 91,b</ls>. <ls>KĀRAṆḌ. 36,17. 49,1</ls>), {%выдавать, возвращать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 {#vEram#} {%отвечать на враждебность, мстить%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {#vEram#} {%отвечать на враждебность, мстить%}.
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 {%проводить, переживать%} [время].
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 {%проводить, переживать%} [время].
 
-**+)** [PW·restate → *new] <div n="p">— С {#pratinis#} <ab>Caus.</ab> {%снова выдавать, возвращать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratinis#} <ab>Caus.</ab> {%снова выдавать, возвращать%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#pari#} {%окружать, обступать%}. {#pa/riyatta#} {%окруженный%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pari#} {%окружать, обступать%}. {#pa/riyatta#} {%окруженный%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#pra#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pra#}
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 <ab>Med.</ab> {%воздействовать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 <ab>Med.</ab> {%воздействовать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 <ab>Med.</ab> <ab>Act.</ab> (метрически) {%стремиться, прилагать усилия к, быть озабоченным, усердствовать;%} дополнение в <ab>Loc.</ab>, <ab>Dat.</ab>, <ab>Acc.</ab>, {#arTE, arTam, hEtos#} или в <ab>Infin.</ab> {#prayatta#} {%стремящийся, всецело поглощенный делом;%} {#prayatita#} <lex>n.</lex> <ab>impers.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 <ab>Med.</ab> <ab>Act.</ab> (метрически) {%стремиться, прилагать усилия к, быть озабоченным, усердствовать;%} дополнение в <ab>Loc.</ab>, <ab>Dat.</ab>, <ab>Acc.</ab>, {#arTE, arTam, hEtos#} или в <ab>Infin.</ab> {#prayatta#} {%стремящийся, всецело поглощенный делом;%} {#prayatita#} <lex>n.</lex> <ab>impers.</ab>
 
-**+)** [PW·restate → *new] <div n="p">— С {#saMpra#} <ab>Med.</ab> {%прилагать усилия к, быть озабоченным%} (<ab>Dat.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#saMpra#} <ab>Med.</ab> {%прилагать усилия к, быть озабоченным%} (<ab>Dat.</ab>).
 
-**+)** [PW·restate → *new] <div n="p">— С {#prati#} {%противодействовать,{%} с <ab>Acc.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#prati#} {%противодействовать,{%} с <ab>Acc.</ab>
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {%отвечать%}. {#vErARi, vEram#} так <ab>v. a.</ab> {%мстить%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {%отвечать%}. {#vErARi, vEram#} так <ab>v. a.</ab> {%мстить%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#vi#} <ab>Med.</ab> приблизительно {%распределять по различным рядам%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vi#} <ab>Med.</ab> приблизительно {%распределять по различным рядам%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab>
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 {%прилагать, прикреплять%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%прилагать, прикреплять%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%искупать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%искупать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%мучить, терзать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%мучить, терзать%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#aDivi#} <ab>Caus.</ab> {%выстраивать в ряд, прикреплять%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aDivi#} <ab>Caus.</ab> {%выстраивать в ряд, прикреплять%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#sam#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#sam#}
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 <ab>Act.</ab> {%соединять%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 <ab>Act.</ab> {%соединять%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 <ab>Med.</ab> {%выстраиваться в ряд%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 <ab>Med.</ab> {%выстраиваться в ряд%}.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 <ab>Med.</ab> {%соединяться, встречаться, вступать в связь с%} (<ab>Instr.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 <ab>Med.</ab> {%соединяться, встречаться, вступать в связь с%} (<ab>Instr.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 <ab>Med.</ab> {%столкнуться, вступить в борьбу%}. {#saMgrAmam#} {%начать бой%}. {#sa/Myatta#} <ab>Pl.</ab> {%вступить в конфликт,%} {#saMgrAmE/ sa/MyattE#} {%при начале сражения%} <ls>TS. 2,1,3,1.</ls> <ls n="TS. 2,1,3,">2.</ls> <ls n="TS. 2,1,">8,4</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 <ab>Med.</ab> {%столкнуться, вступить в борьбу%}. {#saMgrAmam#} {%начать бой%}. {#sa/Myatta#} <ab>Pl.</ab> {%вступить в конфликт,%} {#saMgrAmE/ sa/MyattE#} {%при начале сражения%} <ls>TS. 2,1,3,1.</ls> <ls n="TS. 2,1,3,">2.</ls> <ls n="TS. 2,1,">8,4</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 {#saMyatta#} {%готовый, всецело поглощенный делом, принявший меры, [Page5-119-b] находящийся начеку, остерегающийся%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 {#saMyatta#} {%готовый, всецело поглощенный делом, принявший меры, [Page5-119-b] находящийся начеку, остерегающийся%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#aBisam#}, {#˚saMyatta#} {%управляемый, направляемый%} (кони).
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBisam#}, {#˚saMyatta#} {%управляемый, направляемый%} (кони).
 
-**+)** [PW·restate → *new] <div n="p">— С {#pratisam#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratisam#}
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 <ab>Med.</ab> {%бороться против, противостоять%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 <ab>Med.</ab> {%бороться против, противостоять%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {#˚saMyatta#} {%совершенно готовый, — снаряженный%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {#˚saMyatta#} {%совершенно готовый, — снаряженный%}.
 
-**+)** [PW·restate → *new] √{#yat#}¦ <ab>Caus.</ab> <ab>vgl.</ab> <ls>ROTH</ls> в <ls>Z. d. d. m. G. 41,676</ls>.
+**+)** [PW·restate → не привязано: цель не указана] √{#yat#}¦ <ab>Caus.</ab> <ab>vgl.</ab> <ls>ROTH</ls> в <ls>Z. d. d. m. G. 41,676</ls>.
 <div n="p">— С {#anvA#} V. {%принимать участие в чем-либо%} <ls>ŚĀṄKH. BR. 23,5</ls>.<info n="sup_7"/>
 
-**+)** [PWKVN·a2a → *new] {#yat#}¦ <ab>Caus.</ab> <ab>vgl.</ab> <ls>ROTH</ls> в <ls>Z. d. d. m. G. 41,676</ls>. — С {#anvA#} V. {%участвовать в чем-л.%} <ls>ŚĀṄKH. BR. 23,5</ls>.
+**+)** [PWKVN·a2a → не привязано: цель не указана] {#yat#}¦ <ab>Caus.</ab> <ab>vgl.</ab> <ls>ROTH</ls> в <ls>Z. d. d. m. G. 41,676</ls>. — С {#anvA#} V. {%участвовать в чем-л.%} <ls>ŚĀṄKH. BR. 23,5</ls>.
 
-**+)** [SCH·sch_star → *new] {%yat%}¦ <ls>Kaus.</ls> ср. Roth, <ls>ZDMG 41,676.</ls> — С {%anvā%} {%участвовать в чем-л.%}, <ls>Śāṅkh. Br. 23,5.</ls>
+**+)** [SCH·sch_star → не привязано: цель не указана] {%yat%}¦ <ls>Kaus.</ls> ср. Roth, <ls>ZDMG 41,676.</ls> — С {%anvā%} {%участвовать в чем-л.%}, <ls>Śāṅkh. Br. 23,5.</ls>
 
-**+)** [SCH·sch_star → *new] {%yat%}¦ {%satyam%} см. под {%satya%}.
+**+)** [SCH·sch_star → не привязано: цель не указана] {%yat%}¦ {%satyam%} см. под {%satya%}.
 
 ## h1
 
-**addendum)** {#yat#}¦ в конце добавить: <ab>vgl.</ab> {#ayatant#} .
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› {#yat#}¦ в конце добавить: <ab>vgl.</ab> {#ayatant#} .
 <div n="p">— {#anvA#} <ab>vgl.</ab> {#anvAyAtya#} выше.

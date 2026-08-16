@@ -287,4 +287,249 @@ required reason (`wrong_place` / `wrong_label` / `both` / `not_a_supplement`).
 
 The 90.2 % is reported in the footer as a finding, not put to a vote.
 
+## 10. Two axes, not one: `placement` (H2879, 16-08-2026)
+
+§9 diagnosed the defect; this is the fix. `subtype` was carrying two unrelated
+claims at once — a property of the **layer** ("PW abridges PWG", true whether or
+not anything was located) and a claim about the **pair** ("this supplement
+restates *that* sense", true only when a target was actually found). They are now
+separate fields, and `subtype` must be read together with `placement`.
+
+| claim | field | true when |
+|---|---|---|
+| the PW layer abridges PWG | `direction: "abridging"` (pre-existing) | always; needs no target |
+| this supplement relates to **that** sense | `placement: bool` (**new**) | only when the target is found in the PWG skeleton |
+| what kind of relation it is | `subtype` (unchanged) | read **only together with** `placement` |
+
+`subtype` is deliberately **not** renamed on unplaced rows: duplicating one fact
+across two fields guarantees they drift apart.
+
+### 10.1 `placement_reason` — three phenomena the old `*new` bucket merged
+
+`placement=false` is not one thing. Measured over all 6,009 sidecar rows:
+
+| `placement_reason` | rows | share | what it means |
+|---|---:|---:|---|
+| `found` | 595 | 9.9 % | target located in the PWG skeleton |
+| `no_target_marker` | 4,901 | 81.6 % | the supplement's own tag has no leading number — no target exists *by construction*, not a lookup that failed |
+| `out_of_range` | 383 | 6.4 % | the target number is above PWG's highest sense here — the later edition genuinely has more senses; **evidence about renumbering, not a data defect** |
+| `not_found` | 130 | 2.2 % | inside the range, but no such sense — the only bucket that looks like a defect |
+
+Separating `out_of_range` from `not_found` is the substantive gain: 383 rows that
+read as broken links are in fact the renumbering phenomenon this project is
+documenting, and only 130 rows are genuinely unexplained.
+
+### 10.2 Tag normalisation — deliberately conservative
+
+`normalize_sense_tag` strips trailing whitespace, `.`, `,` and an **unmatched**
+trailing `)`, and nothing else, applied **symmetrically** to the PWG skeleton and
+to the target. It does not merge `1-sub-…` (a sub-sense), `1 (PW)` (foreign
+provenance), `Nachtrag` (an edit *to* a sense) or `caus-1` (another grammatical
+branch) — each is pinned by a negative selftest. A false merge would produce a
+silent `placement=true` on the wrong sense, which is worse than the defect being
+repaired.
+
+### 10.3 Measured effect — and what it is not
+
+On an identical store and sidecar, switching the old raw-equality rule for the
+`placement` flag:
+
+| | old rule | new rule | delta |
+|---|---:|---:|---:|
+| checkable | 250 | **257** | +7 |
+| no PWG target | 5,426 | 5,414 | −12 |
+| too thin | 333 | 338 | +5 |
+
+12 rows became placed; 7 of them have enough German to be compared. **This is a
+correctness fix, not a coverage win** — the honest attribution is +7 checkable
+pairs. The larger apparent jump from the previously published 246/4,690/303 is
+mostly unrelated: that baseline was measured against a sidecar built 06-07-2026
+while the store had moved on to 02-08-2026, so this pass also refreshed a stale
+sidecar (5,603 → 6,009 rows). Wave 1's own effect is the +7.
+
+`out_of_range` moved 381 → 383. VERIFICATION A4 expected it not to move at all;
+the two extra rows are `vA h0` targets 8 and 9, in an article whose skeleton is
+written `3)`–`7)` with no bare integer at all. Before normalisation that article
+had no computable maximum, so both rows fell to `not_found`; they are genuinely
+out of range and are now filed as such. The reclassification follows from S3's own
+instruction to compute the maximum over normalised tags — A4's premise was
+slightly wrong, not the implementation.
+
+`placement_hypothesis` is implemented, guarded and selftested, but fires on **0**
+real rows: no `not_found` row matched even under the looser key. The field earns
+its place as the designed home for future named methods, not as a current result.
+
+### 10.4 Acceptance is re-runnable
+
+[`placement_axis_check.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/placement_axis_check.py)
+proves A1–A5 and A9 against the artifacts on disk, including the two stop
+conditions — that no row which had no target became placed (A3), and that the
+canonical store is byte-identical (A5). Run it after any change to the classifier.
+
+## 11. Corrections that live inside PWG itself (H2880, 16-08-2026)
+
+Wave 1 split the axes for the *supplement* layers. The same defect sat one layer
+down, in the skeleton: **365 rows carried on the `pwg` layer are not senses of
+PWG at all.** They are the authors' own later supplements (`Nachtrag`,
+`Nachtr.`, `addendum`, `addenda`, `corrigendum`) or material the later PW
+edition contributed at a PWG sense (`1 (PW)`, `PW`, `PW-1`). Until now every one
+of them was rendered as an ordinary skeleton sense — `**Nachtrag)** …` — so a
+card asserted the existence of a PWG sense called "Nachtrag".
+
+They are now classified `pwg_internal_correction` and attached through wave 1's
+placement mechanism rather than a second, parallel one.
+
+### 11.1 The marker is named, and the name is kept
+
+A row leaves the skeleton only when a **named** printed cue matches
+(`pwg_correction_marker`), and the matched name is recorded on the sidecar row as
+`correction_marker`. A reviewer can therefore disagree with one specific rule
+instead of with an opaque verdict. A tag matching nothing stays `base`: pulling a
+row out of the skeleton wrongly *loses a real PWG sense* from the card, which is
+the more expensive error in this direction.
+
+The `PW`-family regex is anchored whole-string (`^\s*PW(?:[-_ ]?\d+)?\s*$`) so it
+can never fire on `PWG` or `PWKVN` — a selftest pins exactly that, because the
+failure mode is emptying the skeleton of its real senses.
+
+### 11.2 The trap: a trailing digit is usually not a target
+
+`Nachtrag-1`, `addendum-2`, `PW-1` and `Nachtrag §75-1` all carry a digit, and in
+none of them is it a PWG sense number — it is the ordinal of the addendum, or a
+section reference. Reading it as a target would silently attach the row to sense
+1. The existing `lead_int` already declines these (no *leading* digit), so wave 2
+adds no new extraction rule at all; it pins the behaviour with negative
+selftests instead. Targets come only from a leading integer — `4 (Nachtrag)`,
+`6_addendum`, `1 (PW)` — exactly as in wave 1.
+
+### 11.3 Distribution — the answer to "how many actually attach"
+
+| marker | rows | found | no_target_marker | out_of_range | not_found |
+|---|---:|---:|---:|---:|---:|
+| `nachtrag` | 184 | 6 | 178 | 0 | 0 |
+| `addendum` | 88 | 18 | 66 | 3 | 1 |
+| `pw_provenance` | 86 | 41 | 40 | 1 | 4 |
+| `corrigendum` | 7 | 1 | 6 | 0 | 0 |
+| **total** | **365** | **66** | **290** | **4** | **5** |
+
+**66 of 365 (18.1 %) attach to a named PWG sense; 290 (79.5 %) carry no target
+marker at all** — the open question in the handoff, answered by measurement
+rather than guessed at. The asymmetry is the result: a `Nachtrag` almost never
+names the sense it amends (6 of 184), while a `1 (PW)` almost always does (41 of
+86), because the PW provenance tag *is* a sense number. Per the wave-1 contract
+the unnamed 290 are `placement=false` with a reason, never a guess.
+
+### 11.4 `op` is `amend`, deliberately not `correct`
+
+`build_reglue` renders `op in ("correct", "delete")` with a
+`~~(cancels PWG)~~` strikethrough. A Nachtrag *amends* the sense it points at; it
+does not withdraw it. Reusing `op="correct"` would have struck through hundreds
+of senses as cancelled. `direction` is likewise a new value `internal` — the
+material is neither a later layer's addition (`additive`) nor the skeleton
+(`base`). `placement_axis_check` W2d fails the build if a correction ever
+acquires a cancelling `op`.
+
+PW provenance is recorded on the existing `source_layers` (`["pwg", "pw"]`), not
+as a second subtype — duplicating one fact across two fields is what wave 1's
+decision 7 forbids.
+
+### 11.5 A correction is not a target
+
+`build_pwg_sense_index` now excludes correction rows, so a Nachtrag can never be
+offered as the *target* of another Nachtrag — the wave-2 analogue of the defect
+wave 1 removed. This is asserted, not assumed: W2b and W2c fail the build if a
+correction is placed onto a correction, or if a correction tag survives in the
+skeleton index. It is a **no-op for wave 1's numbers**, and that too is measured
+rather than argued — see 11.6.
+
+### 11.6 Wave 1 is provably untouched
+
+Re-running wave 1's own code over this same store reproduces its published
+figures exactly (6,009 sidecar rows · found 595 · no_target_marker 4,901 ·
+out_of_range 383 · not_found 130). Against that baseline, wave 2 changes **zero**
+non-`pwg` rows — not one row lost, gained, or altered in any field. The sidecar
+grows 6,009 → 6,374 (+365, all corrections) and the reason counts move by exactly
+the corrections' own distribution.
+
+The canonical store is untouched and proved so: `rows=11603`,
+`sha256 811bbc21…`, identical to wave 1's. Window suite 211/211.
+
+> The stop-condition figure in the PLAN cover reads `rows=11715`; the real store
+> has **11,603** rows, which is what wave 1 shipped against. The plan's number
+> was stale on arrival — verify against the store, not the prose.
+
+### 11.7 What wave 2 deliberately does NOT do
+
+- **Not put on a vote.** The `h180-reglue-evidence` sheet asks "does this
+  supplement from a later layer sit at the right PWG sense?", which is not the
+  question to ask of a Nachtrag inside PWG. Corrections are excluded from that
+  sheet's census, so its content and its 47 sampled cards are **byte-identical**
+  to wave 1's. They get their own gate when wave 2 goes to review.
+- **Not fed to the gloss-overlap metric**, which was measured and rejected
+  (FINDINGS §541). `reglue_overlap` keeps skipping `pwg` rows, now by documented
+  intent rather than by accident.
+- **Not touching the canonical store**, per the roadmap's non-goals.
+
+## 12. SCH corrects PWG too — 3.3 % of the time (H2881, 16-08-2026)
+
+### 12.1 The hole
+
+`classify_edition_rel` returned, for the `sch` layer, only `sch_star` or
+`derived_sense` — both additive. So "SCH only supplements PWG" was **built into
+the classifier**, not measured from the edition: no row of data could ever have
+contradicted it. Wave 3 adds `sch_correct` and `sch_cancel` so the claim becomes
+falsifiable, then measures it.
+
+### 12.2 The criterion — a printed imperative, not a keyword
+
+The cue lives in the **DE body**, not in the `sense_tag`. That is the one
+structural difference from wave 2, and the reason `sch_correction_marker(de)` is
+a separate predicate from `pwg_correction_marker(tag)`: a real SCH correction is
+as likely to be tagged `mit-nis` as `SCH-corrigendum`.
+
+| kind | rules | example from the store |
+|---|---|---|
+| `sch_correct` (`op=correct`) | `lies` · `zu lesen` · `Druckfehler` · `berichtige` · `verbessere` | `S. 152, Sp. 1, Z. 2 lies {%abhíhita%}` |
+| `sch_cancel` (`op=delete`) | `streiche` · `tilge` · `fällt weg` | `— Mit {%abhyupa%} 3. streiche <ls>Med.</ls>` |
+
+Every rule is an **instruction addressed to the reader**. That is the whole
+criterion, and the negative controls are its load-bearing half: 11 of the 210
+rows carry a look-alike token that is descriptive, not directive — bare `statt`
+(`metrisch statt {%na gan˚%}`), the abbreviation `St.` (*Indische Studien*), and
+`vgl.` These are pinned as negatives in `edition_rel --selftest` and as gate W3c.
+
+**The gender path is deliberately absent.** The roadmap predicted wave 3 would
+reuse `pw_correct`'s `<lex>` gender conflict. Measured: **zero of the 210 SCH
+rows carry a `<lex>` token**, so that signal cannot fire on this layer. The one
+real gender correction (`ahiphena`, "lies n. statt m.") states it in prose and is
+caught by `lies`.
+
+### 12.3 Scope — the cue governs the leading segment only
+
+A compressed SCH article is a run of preverb sections. Where a correction clause
+sits in a non-leading section (`— Mit {%samā%} Z. 3 lies 231,16` inside a row
+that otherwise introduces four new senses), the row stays **additive** by the
+conservative default: calling it a correction would assert SCH withdraws material
+it in fact adds. Those rows carry `contains_correction_clause` so the residue is
+a reported number (gate W3e: 2 rows), never a silent omission.
+
+### 12.4 Result
+
+210 SCH rows → 6 `sch_correct` · 1 `sch_cancel` · 203 additive (148 `sch_star`,
+55 `derived_sense`). Unlike wave 2's `amend`, `op` is `correct`/`delete` here,
+because these rows genuinely withdraw the printed reading — build_reglue's
+"cancels PWG" strikethrough is the honest rendering. An **unplaced** correction
+shows no strikethrough: it never identified a sense to strike, which is wave 1's
+contract working, not a rendering gap. `direction` stays `additive`, the layer's
+property, exactly as `pw_correct` keeps `abridging` (PLAN decision 1).
+
+### 12.5 What wave 3 changes downstream
+
+The evidence sheet drops one card, 47 → 46: `jñā · SCH → смысл 3` is now a
+correction, and "does this supplement sit at the right PWG sense?" is not the
+question to ask of one — the same exclusion wave 2 applied to Nachträge. Re-cut
+under PLAN decision 8 after checking the vote gate (no `decisions.json` exists
+for the sheet). Waves 1–2 are unchanged and proved so; the canonical store is
+untouched.
+
 _Dr. Mārcis Gasūns_

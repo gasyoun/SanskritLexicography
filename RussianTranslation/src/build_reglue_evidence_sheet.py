@@ -82,7 +82,11 @@ CLASS_LABEL = {"adds": "＋ добавленный смысл", "restates": "≈
                "cancels": "✕ отмена / правка"}
 CLASS_OF = {"restate": "restates", "pw_correct": "cancels", "pw_cancels": "cancels",
             "nws_at_sense": "adds", "sch_star": "adds", "derived_sense": "adds",
-            "foreign_fragment": "adds", "a2a": "adds"}
+            "foreign_fragment": "adds", "a2a": "adds",
+            # H2880 wave 2. Present so the label is right if this stratum is
+            # ever sampled; QUOTA below deliberately does NOT sample it yet —
+            # adding a stratum would change a published sheet's content_hash.
+            "pwg_internal_correction": "cancels"}
 
 EXTRA_CSS = """  .tchip { display:inline-block; padding:1px 7px; border-radius:9px;
     font-size:11px; font-weight:600; margin-right:4px; white-space:nowrap; }
@@ -125,15 +129,27 @@ def build_items():
     census = collections.Counter()
     for r in rel:
         st = (r["layer"], r["relationship"]["subtype"])
+        # H2880: the sidecar now also carries PWG-internal corrections. They are
+        # deliberately outside THIS sheet's population: its question is "does
+        # this supplement from a later layer sit at the right PWG sense?", which
+        # is not the question to ask of a Nachtrag inside PWG itself. Counting
+        # them in the census would inflate `checkable` with pairs no stratum can
+        # draw — 9 of them, silently undrawable. They get their own gate when
+        # wave 2 goes to review; until then they are neither counted nor voted.
+        if r.get("layer") == "pwg":
+            continue
         census["total"] += 1
         rec = store.get((r["subcard"], str(r["sense_tag"])))
         if not rec:
             continue
         ip = r["relationship"]["insertion_point"]
-        target = idx.get((r.get("key1"), ip.get("homonym", "h0"),
-                          str(ip.get("target_sense"))))
+        # H2879: the sidecar already decided whether this supplement is placed;
+        # read that verdict instead of re-deriving it here (A9).
+        target = ro.placement_target(idx, r)
         if not target:
             census["no_target"] += 1
+            census["no_target_%s" % r["relationship"].get(
+                "placement_reason", "unknown")] += 1
             continue
         if not ro.compare(target.get("de", ""), rec.get("de", ""))["comparable"]:
             census["too_thin"] += 1
@@ -241,20 +257,27 @@ def main():
             "измерена и не разделяет классы (медиана 0,000 у обоих) — у смысла PWG в "
             "медиане всего 3 знаменательных слова, поэтому два коротких немецких "
             "синонимических ряда не пересекаются даже когда один пересказывает другой."
-            "<br><br><b>Что здесь НЕ голосуется, и почему.</b> Из %d добавок <b>%d "
-            "(%.1f%%)</b> в сайдкаре имеют <code>target_sense='*new'</code> — то есть "
-            "смысла PWG, к которому их якобы прикрепили, попросту нет, — и при этом всё "
-            "равно помечены <code>restate</code> («пересказ PWG»), потому что метка "
-            "ставится по слою, независимо от того, нашлась ли цель. Спрашивать человека "
-            "«в том ли смысле стоит пересказ», когда сайдкар сам говорит, что смысла нет, "
-            "— это не вопрос. Ещё %d пары имеют цель, но слишком короткий немецкий, чтобы "
-            "их можно было сверить. Остаётся <b>%d (%.1f%%)</b> действительно проверяемых "
+            "<br><br><b>Что здесь НЕ голосуется, и почему.</b> Метка типологии "
+            "(<code>subtype</code>) и привязка к смыслу (<code>placement</code>) — с "
+            "волны 1 это <b>две разные оси</b>: метка говорит, какого рода добавка, "
+            "привязка — есть ли у неё вообще найденная цель в PWG. Раньше они были "
+            "слиты, и <code>restate</code> («пересказ PWG») стоял в том числе там, где "
+            "смысла-цели не существует. Из %d добавок <b>%d (%.1f%%)</b> не привязаны "
+            "(<code>placement=false</code>) и потому не выносятся на голос: "
+            "%d — цель не указана (у тега добавки нет ведущего номера), "
+            "%d — номер выше диапазона смыслов PWG (у поздней редакции их реально "
+            "больше — это свидетельство о перенумерации, а не дефект), "
+            "%d — смысл не найден. Ещё %d пары привязаны, но немецкий слишком короток, "
+            "чтобы их сверять. Остаётся <b>%d (%.1f%%)</b> действительно проверяемых "
             "пар — голосование идёт по ним. Остальное — структурная находка, она "
             "зафиксирована в отчёте, а не вынесена на голос.<br>"
             "Выборка: " + strata_note + " (равномерный шаг по отсортированному списку, "
             "без случайного зерна — воспроизводится из файла).")
             % (census["total"], census["no_target"],
                100.0 * census["no_target"] / max(census["total"], 1),
+               census["no_target_no_target_marker"],
+               census["no_target_out_of_range"],
+               census["no_target_not_found"],
                census["too_thin"], census["checkable"],
                100.0 * census["checkable"] / max(census["total"], 1)),
         "approve_label": "Да — место и метка верны",

@@ -159,14 +159,47 @@ def load():
 
 
 def pwg_sense_index(store):
-    """(key1, homonym, sense) -> the PWG sub-card row that owns that sense."""
+    """(key1, homonym, normalised sense) -> the PWG sub-card row for that sense.
+
+    Keyed on the H2879-normalised tag so the skeleton side and the supplement's
+    target go through the same function; ``'1)'`` in the skeleton and ``'1'`` in
+    the target are the same sense and must land on the same key.
+    """
+    from edition_rel import normalize_sense_tag
     idx = {}
     for (sub, st), d in store.items():
         if d.get("layer") != "pwg":
             continue
         m = re.search(r"~~(h\d+)", sub or "")
-        idx[(d.get("key1"), m.group(1) if m else "h0", str(st))] = d
+        idx[(d.get("key1"), m.group(1) if m else "h0",
+             normalize_sense_tag(st))] = d
     return idx
+
+
+def placement_target(idx, r):
+    """The PWG row this supplement is placed at, or None if it is not placed.
+
+    Single source of truth for consumers (H2879 S6/A9): the *decision* is read
+    from the sidecar's ``placement`` flag — never recomputed here — and the row
+    is then fetched for display. A consumer that re-derives "did a target turn
+    up" is exactly the drift wave 1 removes.
+    """
+    from edition_rel import normalize_sense_tag
+    rel = r["relationship"]
+    if not rel.get("placement"):
+        return None
+    ip = rel.get("insertion_point") or {}
+    return idx.get((r.get("key1"), ip.get("homonym", "h0"),
+                    normalize_sense_tag(ip.get("target_sense"))))
+
+
+#: `placement_reason` in the words a reviewer reads on a card (H2879 S6).
+PLACEMENT_REASON_RU = {
+    "found": "цель найдена",
+    "no_target_marker": "цель не указана",
+    "out_of_range": "номер выше диапазона PWG",
+    "not_found": "смысл не найден",
+}
 
 
 def measure_all():
@@ -176,12 +209,17 @@ def measure_all():
     for r in rel:
         rec = store.get((r["subcard"], str(r["sense_tag"])))
         if not rec or rec.get("layer") == "pwg":
+            # H2880: the sidecar now also carries PWG-internal corrections, and
+            # this skip keeps them out DELIBERATELY, not by accident. The gloss-
+            # overlap axis was measured and rejected as a signal (FINDINGS §541);
+            # extending a rejected metric to a new row class would spread it, not
+            # test it. Wave 2 introduces the rows; whether an overlap number
+            # means anything for them is a separate question with its own gate.
             continue
         ip = r["relationship"]["insertion_point"]
-        target = idx.get((r.get("key1"), ip.get("homonym", "h0"),
-                          str(ip.get("target_sense"))))
+        target = placement_target(idx, r)
         if not target:
-            continue                      # *new — nothing to compare against
+            continue          # not placed — nothing to compare against
         m = compare(target.get("de", ""), rec.get("de", ""))
         m.update({
             "key1": r.get("key1"), "subcard": r["subcard"],
@@ -189,12 +227,14 @@ def measure_all():
             "subtype": r["relationship"]["subtype"],
             "op": r["relationship"]["op"],
             "target_sense": str(ip.get("target_sense")),
+            "placement_reason": r["relationship"].get("placement_reason"),
         })
         rows.append(m)
     return rows
 
 
-CLASS = {"restate": "restates", "pw_correct": "cancels", "pw_cancels": "cancels"}
+CLASS = {"restate": "restates", "pw_correct": "cancels", "pw_cancels": "cancels",
+         "pwg_internal_correction": "cancels"}
 
 
 def klass(subtype):

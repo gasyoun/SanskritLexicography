@@ -2,32 +2,18 @@
 
 ## h0
 
-**1)** <div n="p">— {#saMprati#} удерживать кого-л., не допускать кого-л.: {#taTEva suhfdaM prAjYaM kurvARaM karma pApakam . prAjYAH saMpratizeDanti yaTASakti punaH punaH ..#}
+**1)** <div n="p">— {#saMprati#} {%удерживать кого-л., не допускать кого-л.%}: {#taTEva suhfdaM prAjYaM kurvARaM karma pApakam . prAjYAH saMpratizeDanti yaTASakti punaH punaH ..#}
 <ls>MBH. 10,184.</ls>
   — [PW·restate] <div n="1">— 1〉 достигать цели, попадать (в цель); с <ab>Loc.</ab>
 
-**2)** <div n="1">— 2) противоположный, противоречащий
+**2)** <div n="1">— 2) {%противоположный, противоречащий%}
 <ls>NIR. 1,15.</ls>
 <ls>P. 2,4,13.</ls>
-<ls>UTTARAR. 108,3 (146,7).</ls> <ls>ŚAṂK.</ls> zu <ls>BṚH. ĀR. UP. S. 38.</ls> {#aYo#} (<ab>abl.</ab>) {#vuY vipratizidDam#} так <ab>v. a.</ab> {#vipratizeDAt#}
+<ls>UTTARAR. 108,3 (146,7).</ls> <ls>ŚAṂK.</ls> к <ls>BṚH. ĀR. UP. S. 38.</ls> {#aYo#} (<ab>abl.</ab>) {#vuY vipratizidDam#} так <ab>v. a.</ab> {#vipratizeDAt#}
 <is>Vārtt</is>. 2 zu <ls>P. 4,2,39.</ls> {#pUrva˚#} (<ab>vgl.</ab> {#pUrvavipratizeDa#} unter {#vipratizeDa#} 2)
 <is>Vārtt</is>. 2 zu <ls>P. 2,4,12.</ls> 1 zu <ls n="P. 2,4,">85.</ls> 2 zu <ls n="P.">4,2,39.</ls> 1 zu <ls n="P.">5,1,2.</ls>
   — [PW·restate] <hom>2.</hom> √{#siD#}¦, {#si/Dyati#} (метрически или неточно также <ab>Med.</ab>)
-  — [PW·restate] <div n="1">— 2〉 приносить пользу, давать плоды, иметь успех, удаваться, осуществляться, совершаться.
-
-**Nachtrag-1)** <div n="v">— <ab>Vgl.</ab> {#pratizedDar#} <ab>fgg.</ab> — <ab>caus.</ab>
-<div n="1"> 1) отражать, удерживать, отклонять: {#amAtyAn#}
-<ls>ĀŚV. GṚHY. 4,8,33.</ls> {#nahyetAm — SapantIM pratyazeDayat#}
-<ls>MBH. 1,1594.</ls> <ls n="MBH.">2,1787.</ls> <ls n="MBH.">4,468</ls> ({#pratyaze˚#} mit der <ls>ed. Bomb.</ls> zu lesen).
-<ls>HARIV. 946.</ls> <ls n="HARIV.">14247.</ls>
-<ls>R. 2,96,42</ls> (<ls n="GORR. 2,">105,41</ls> <ls>GORR.</ls>). <ls n="R.">4,9,63.</ls> {#astrARi#}
-<ls>MBH. 5,7171.</ls> {#mftyuSca pratizeDitaH#}
-<ls>R. 5,78,14.</ls>
-
-**Nachtrag-2)** <div n="1">— 2) запрещать что-л., воспрещать, не дозволять: {#mArgaM vAtasya#}
-<ls>HARIV. 10443.</ls> {#viDAvapratizeDite#}
-<ls>MBH. 12,350.</ls> <ab>Comm.</ab> zu <ls>TS. PRĀT. 13,3.</ls> отрицать
-<ls>SARVADARŚANAS. 8,19.</ls>
+  — [PW·restate] <div n="1">— 2〉 {%приносить пользу, давать плоды, иметь успех, удаваться, осуществляться, совершаться%}.
 
 **anu)** <div n="p">— {#anu#} <ab>intens.</ab> {%гнать вдоль пути, подводить%}: {#u\to sa mahya\mindu^Bi\H zaqyu\ktA~ a^nu\sezi^Dat#}
 <ls>ṚV. 1,23,15.</ls>
@@ -49,248 +35,262 @@
 **vi)** <div n="p">— {#vi#}, {#gaNgAM viseDati (gatO)#}
 <ls>P. 8,3,113</ls>, <ab>Schol.</ab> <ls>VOP. 8,45.</ls>
 
-**+)** [NWS·foreign_fragment → *new] ‹en› {#sidh (=pw sidh 1)#} [Gen , unsp] ( sédhati I P ) отгонять, сдерживать, препятствовать. ṚV , KauśS . предписывать, наставлять. DhātuPā(MW) . обернуться хорошо, счастливо. ṚV . Pass. ( sidhyate ): быть прогнанным, отраженным. Mbh. MW : 1215
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-1› <div n="v">— <ab>Vgl.</ab> {#pratizedDar#} <ab>fgg.</ab> — <ab>caus.</ab>
+<div n="1"> 1) {%отражать, удерживать, отклонять%}: {#amAtyAn#}
+<ls>ĀŚV. GṚHY. 4,8,33.</ls> {#nahyetAm — SapantIM pratyazeDayat#}
+<ls>MBH. 1,1594.</ls> <ls n="MBH.">2,1787.</ls> <ls n="MBH.">4,468</ls> ({#pratyaze˚#} mit der <ls>ed. Bomb.</ls> zu lesen).
+<ls>HARIV. 946.</ls> <ls n="HARIV.">14247.</ls>
+<ls>R. 2,96,42</ls> (<ls n="GORR. 2,">105,41</ls> <ls>GORR.</ls>). <ls n="R.">4,9,63.</ls> {#astrARi#}
+<ls>MBH. 5,7171.</ls> {#mftyuSca pratizeDitaH#}
+<ls>R. 5,78,14.</ls>
 
-**+)** [NWS·nws_at_sense → *new] [Ved , unsp] Основа sídhya: идти успешно, удаваться. приносить пользу кому-л. [D.], помогать. Основа sédha: прогонять, отражать (Akk). Graßmann 1873 (1996) : 1517
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtrag-2› <div n="1">— 2) {%запрещать что-л., воспрещать, не дозволять%}: {#mArgaM vAtasya#}
+<ls>HARIV. 10443.</ls> {#viDAvapratizeDite#}
+<ls>MBH. 12,350.</ls> <ab>Comm.</ab> к <ls>TS. PRĀT. 13,3.</ls> {%отрицать%}
+<ls>SARVADARŚANAS. 8,19.</ls>
 
-**+)** [NWS·nws_at_sense → *new] [Ved , unsp] ( I ) прогонять, изгонять. ṚV 9,71,8. Geldner 1907 : 195
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#sidh (=pw sidh 1)#} [Gen , unsp] ( sédhati I P ) отгонять, сдерживать, препятствовать. ṚV , KauśS . предписывать, наставлять. DhātuPā(MW) . обернуться хорошо, счастливо. ṚV . Pass. ( sidhyate ): быть прогнанным, отраженным. Mbh. MW : 1215
 
-**+)** [NWS·nws_at_sense → *new] {#auch mit Abl dessen, wovon jemand fortgetrieben oder entfernt gehalten wird.#} [Ved , unsp] + ánu, Int.: (поочередно) гнать вперед (Akk). Ved , unsp. Graßmann 1873 (1996) : 1517
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] Основа sídhya: идти успешно, удаваться. приносить пользу кому-л. [D.], помогать. Основа sédha: прогонять, отражать (Akk). Graßmann 1873 (1996) : 1517
 
-**+)** [NWS·nws_at_sense → *new] {#+ apa : abwehren, abhalten, verbannen, vertreiben, verjagen (von (Abl) nach (Akk)). ṚV 1,35,10 , ṚV 6,47,21 .#} [Ved , unsp] + ápa, с основой sédha: далеко прогонять, держать вдали (Akk); 2) от (Abl). Ved , unsp. Graßmann 1873 (1996) : 1517
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] ( I ) прогонять, изгонять. <ls n="ṚV. 9,71,8">ṚV 9,71,8</ls>. Geldner 1907 : 195
 
-**+)** [NWS·nws_at_sense → *new] {#+ ni : to keep down, suppress, outdo, surpass. Kāvyād ii, 64 .#} [Gen , unsp (s.v. niṣidh )] + ní, с основой sédha: прогонять (Akk). Ved , unsp. Graßmann 1873 (1996) : 1517
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#auch mit Abl dessen, wovon jemand fortgetrieben oder entfernt gehalten wird.#} [Ved , unsp] + ánu, Int.: (поочередно) гнать вперед (Akk). Ved , unsp. Graßmann 1873 (1996) : 1517
 
-**+)** [NWS·nws_at_sense → *new] {#+ nis : fördern, Gunst erweisen (s. niṣṣídh ).#} [Ved , unsp] + prá: шагать вперед. Ved , unsp. Graßmann 1873 (1996) : 1517
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ apa : abwehren, abhalten, verbannen, vertreiben, verjagen (von (Abl) nach (Akk)). <ls n="ṚV. 1,35,10">ṚV 1,35,10</ls> , <ls n="ṚV. 6,47,21">ṚV 6,47,21</ls> .#} [Ved , unsp] + ápa, с основой sédha: далеко прогонять, держать вдали (Akk); 2) от (Abl). Ved , unsp. Graßmann 1873 (1996) : 1517
 
-**+)** [NWS·foreign_fragment → *new] ‹en› {#+ prati , Kaus: a) to contradict; b) to keep away, to dissuade; c) to repel, to suppress; d) to resist; e) to declare inadmissible; f) to set at nough, to disregard. KA 1.13.4 , KA 3.10.31 , KA 1.13.13 , KA 1.13.15 , KA 5.1.4 , KA 5.1.40 , KA 3.1.2 , KA 2.7.34 .#} [Śā , Soc (s.v. pratiṣidh )] + práti, с основой sédha: отражать, оттеснять (Akk). Ved , unsp. Graßmann 1873 (1996) : 1517
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ ni : to keep down, suppress, outdo, surpass. Kāvyād ii, 64 .#} [Gen , unsp (s.v. niṣidh )] + ní, с основой sédha: прогонять (Akk). Ved , unsp. Graßmann 1873 (1996) : 1517
 
-**+)** [NWS·nws_at_sense → *new] {#+ prati ( pratiṣiddha ): driven back, kept off, prevented, omitted. Mbh , Kāvya(MW) .#} [Gen , unsp (s.v. pratiṣidh )] + saṃni (°ṣedhati): запрещает. JKM(Ā) 119.21 (vs); sidh + ni (Skt). Buddh , unsp. BHSD : 559 (s.v. saṃniṣedhati)
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ nis : fördern, Gunst erweisen (s. niṣṣídh ).#} [Ved , unsp] + prá: шагать вперед. Ved , unsp. Graßmann 1873 (1996) : 1517
 
-**+)** [NWS·foreign_fragment → *new] ‹en› {#sidh (=pw sidh 2)#} [Gen , unsp] ( sídhyati IV P ) быть хорошо сваренным. W(MW). Caus. ( sedhayati ): обнаруживать знания или умение (кого-л., первое — «в отношении священных вещей», второе — «в отношении мирских вещей»); совершать, производить. MBh vi, 1, 49. MW : 1215
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#+ prati , Kaus: a) to contradict; b) to keep away, to dissuade; c) to repel, to suppress; d) to resist; e) to declare inadmissible; f) to set at nough, to disregard. KA 1.13.4 , KA 3.10.31 , KA 1.13.13 , KA 1.13.15 , KA 5.1.4 , KA 5.1.40 , KA 3.1.2 , KA 2.7.34 .#} [Śā , Soc (s.v. pratiṣidh )] + práti, с основой sédha: отражать, оттеснять (Akk). Ved , unsp. Graßmann 1873 (1996) : 1517
 
-**+)** [NWS·nws_at_sense → *new] [Ved , unsp] ( IV ) удаваться, иметь успех, давать плоды. ṚV 1,18,7. Geldner 1907 : 195
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ prati ( pratiṣiddha ): driven back, kept off, prevented, omitted. Mbh , Kāvya(MW) .#} [Gen , unsp (s.v. pratiṣidh )] + saṃni (°ṣedhati): запрещает. JKM(Ā) 119.21 (vs); sidh + ni (Skt). Buddh , unsp. BHSD : 559 (s.v. saṃniṣedhati)
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [Śā , Soc] быть юридически обязательным (как в случае сделки) или юридически действительным (как судебный иск). KA 3.1.6. Caus.: побеждать или подавлять врага, преодолевать, обеспечивать. KA 1.13.25. Olivelle 2015 : 425
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#sidh (=pw sidh 2)#} [Gen , unsp] ( sídhyati IV P ) быть хорошо сваренным. W(MW). Caus. ( sedhayati ): обнаруживать знания или умение (кого-л., первое — «в отношении священных вещей», второе — «в отношении мирских вещей»); совершать, производить. MBh vi, 1, 49. MW : 1215
 
-**+)** [NWS·nws_at_sense → *new] [Śā , Ling] ( sidhyati ) быть завершенным, получать свое объяснение посредством правила (в 3-м падеже). Böhtlingk 1840 : 548
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Ved , unsp] ( IV ) удаваться, иметь успех, давать плоды. <ls n="ṚV. 1,18,7">ṚV 1,18,7</ls>. Geldner 1907 : 195
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [Śā , Med] быть излеченным. Hoernle 1893-1912 (I) 9.117. быть приготовленным (варкой), свариться. Hoernle 1893-1912 (II) 37.217. иметь ценность, подтверждать свою ценность. Hoernle 1908 : 338
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [Śā , Soc] быть юридически обязательным (как в случае сделки) или юридически действительным (как судебный иск). KA 3.1.6. Caus.: побеждать или подавлять врага, преодолевать, обеспечивать. KA 1.13.25. Olivelle 2015 : 425
 
-**+)** [NWS·foreign_fragment → *new] ‹en› {#+ anu , Int: erzielen. ṚV 1,23,15 .#} [Ved , unsp] + ā, Caus.: подвергать законному задержанию, в частности задерживать ответчика, пытающегося скрыться или игнорировать обвинение истца. NārSm Mā 1.41. Śā , Soc. Olivelle 2015 : 89 (s.v. ā √ sidh )
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Śā , Ling] ( sidhyati ) быть завершенным, получать свое объяснение посредством правила (в 3-м падеже). Böhtlingk 1840 : 548
 
-**+)** [NWS·nws_at_sense → *new] {#+ upa ( upasiddha ): prepared with (something else). Hoernle 1893-1912 (II) 62.800 .#} [Śā , Med (s.v. upasiddha )] + pra ( prasiddha ): общеизвестный. Ved , unsp. Windisch 1883 : 139 (s.v. prasiddha )
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [Śā , Med] быть излеченным. Hoernle 1893-1912 (I) 9.117. быть приготовленным (варкой), свариться. Hoernle 1893-1912 (II) 37.217. иметь ценность, подтверждать свою ценность. Hoernle 1908 : 338
 
-**+)** [NWS·nws_at_sense → *new] {#siddha (Ptz): was erklärt ist, was seine Erklärung gefunden hat. Pāṇ I.3.61 .#} [Śā , Ling] — уже сваренный, готовый (после варки). Hoernle 1893-1912 (I) 3.32. Śā , Med. Hoernle 1908 : 338
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#+ anu , Int: erzielen. <ls n="ṚV. 1,23,15">ṚV 1,23,15</ls> .#} [Ved , unsp] + ā, Caus.: подвергать законному задержанию, в частности задерживать ответчика, пытающегося скрыться или игнорировать обвинение истца. NārSm Mā 1.41. Śā , Soc. Olivelle 2015 : 89 (s.v. ā √ sidh )
 
-**+)** [NWS·nws_at_sense → *new] {#– a) approved, effective; b) perfected. Hoernle 1893-1912 (II) 28.50 , Hoernle 1893-1912 (V) 208.64 .#} [Śā , Med] siddham tu + °tvāt: показатель, сигнализирующий об отклонении (неприменимости правила). Renou 1997, S. 599. Gen , unsp. Renou 1997 : 1031 (s.v. siddham tu + - tvāt )
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#+ upa ( upasiddha ): prepared with (something else). Hoernle 1893-1912 (II) 62.800 .#} [Śā , Med (s.v. upasiddha )] + pra ( prasiddha ): общеизвестный. Ved , unsp. Windisch 1883 : 139 (s.v. prasiddha )
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [Gen , unsp] [ siddha ] достигший своей цели, преуспевший. BhāgP. священный, святой, божественный, прославленный. W(MW). пораженный (как цель). Kathās. действительный (как правило грамматики). вытекающий из. W(MW). рассмотренный, решенный, завершенный (о судебном деле). W(MW). уплаченный, ликвидированный, урегулированный (о долге). W(MW). готовый к уплате (о деньгах). Hit. общеизвестный, пресловутый, знаменитый (= prasiddha). ĀśvŚS, R. MW : 1215 (s.v. siddha )
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#siddha (Ptz): was erklärt ist, was seine Erklärung gefunden hat. Pāṇ I.3.61 .#} [Śā , Ling] — уже сваренный, готовый (после варки). Hoernle 1893-1912 (I) 3.32. Śā , Med. Hoernle 1908 : 338
 
-**+)** [NWS·nws_at_sense → *new] [Reg , unsp] [ siddha ] успешно завершенный, осуществленный и т.д. Is Indon 18, 3. наделенный сверхъестественными способностями. SHK, 26,8. священный, святой. SHK, 20,27. Ensink 1964 : 206 (s.v. siddha )
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#– a) approved, effective; b) perfected. Hoernle 1893-1912 (II) 28.50 , Hoernle 1893-1912 (V) 208.64 .#} [Śā , Med] siddham tu + °tvāt: показатель, сигнализирующий об отклонении (неприменимости правила). Renou 1997, S. 599. Gen , unsp. Renou 1997 : 1031 (s.v. siddham tu + - tvāt )
 
-**+)** [NWS·nws_at_sense → *new] {#asiddha#} [Śā , Ling] [Вторичная (замещающая) форма в определенных случаях является asiddha или asiddhavat, то есть при некоторых операциях с ней обращаются так, как если бы она всё еще находилась в своем первоначальном состоянии. Pāṇ VI.1.86.] Böhtlingk 1840 : 548 (s.v. sidh )
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› [Gen , unsp] [ siddha ] достигший своей цели, преуспевший. BhāgP. священный, святой, божественный, прославленный. W(MW). пораженный (как цель). Kathās. действительный (как правило грамматики). вытекающий из. W(MW). рассмотренный, решенный, завершенный (о судебном деле). W(MW). уплаченный, ликвидированный, урегулированный (о долге). W(MW). готовый к уплате (о деньгах). Hit. общеизвестный, пресловутый, знаменитый (= prasiddha). ĀśvŚS, R. MW : 1215 (s.v. siddha )
 
-**+)** [NWS·nws_at_sense → *new] {#siddhasaṃkarṣa#} [Śā , Med] стандартное руководство (нормативный трактат). Hoernle 1893-1912 (II) 26.1. Hoernle 1908 : 338 (s.v. sidh )
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] [Reg , unsp] [ siddha ] успешно завершенный, осуществленный и т.д. Is Indon 18, 3. наделенный сверхъестественными способностями. SHK, 26,8. священный, святой. SHK, 20,27. Ensink 1964 : 206 (s.v. siddha )
 
-**+)** [NWS·nws_at_sense → *new] {#siddhaśīta#} [Śā , Med] охлажденный после варки. Hoernle 1893-1912 (II) 36.194. Hoernle 1908 : 338 (s.v. sidh )
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#asiddha#} [Śā , Ling] [Вторичная (замещающая) форма в определенных случаях является asiddha или asiddhavat, то есть при некоторых операциях с ней обращаются так, как если бы она всё еще находилась в своем первоначальном состоянии. Pāṇ VI.1.86.] Böhtlingk 1840 : 548 (s.v. sidh )
 
-**+)** [NWS·nws_at_sense → *new] {#siddhottara#} [Śā , Med] наилучшее из действенных средств, наиболее эффективное. Hoernle 1893-1912 (II) 38.231. Hoernle 1908 : 338 (s.v. sidh )
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#siddhasaṃkarṣa#} [Śā , Med] стандартное руководство (нормативный трактат). Hoernle 1893-1912 (II) 26.1. Hoernle 1908 : 338 (s.v. sidh )
 
-**+)** [NWS·foreign_fragment → *new] ‹en› {#siddhānumānita#} [Śā , Med] доказанный совершенными (сиддхами). Hoernle 1893-1912 (II) 39.257. Hoernle 1908 : 338 (s.v. sidh )
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#siddhaśīta#} [Śā , Med] охлажденный после варки. Hoernle 1893-1912 (II) 36.194. Hoernle 1908 : 338 (s.v. sidh )
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [NWS:] {#siddhārtha#} [Śā, Med] букв. «действенное»; разновидность целебного масла, приготовленного с различными лекарственными средствами. Hoernle 1893-1912 (III) 183.52. [medicament.] Hoernle 1908 : 338 (s.v. sidh)
+**+)** [NWS·nws_at_sense → не привязано: цель не указана] {#siddhottara#} [Śā , Med] наилучшее из действенных средств, наиболее эффективное. Hoernle 1893-1912 (II) 38.231. Hoernle 1908 : 338 (s.v. sidh )
 
-**+)** [NWS·nws_at_sense → *new] [NWS:] {#siddhārthikā#} [Śā, Med] букв. «действенное»; разновидность составной пилюли. Hoernle 1893-1912 (II) 29.62. [medicament.] Hoernle 1908 : 338 (s.v. sidh)
+**+)** [NWS·foreign_fragment → не привязано: цель не указана] ‹en› {#siddhānumānita#} [Śā , Med] доказанный совершенными (сиддхами). Hoernle 1893-1912 (II) 39.257. Hoernle 1908 : 338 (s.v. sidh )
 
-**+)** [NWS·foreign_fragment → *new] ‹en› [NWS:] {#artha#} [Śā, Soc] arthāt + √ sidh: быть установленным в силу необходимого вывода (логического следствия). MānDhŚ(Medh) (zu MānDhŚ 1.2). Olivelle 2015 : 60 (s.v. arthāt √ sidh)
+**+)** [NWS·foreign_fragment → не привязано: номер выше диапазона PWG] ‹en› [NWS:] {#siddhārtha#} [Śā, Med] букв. «действенное»; разновидность целебного масла, приготовленного с различными лекарственными средствами. Hoernle 1893-1912 (III) 183.52. [medicament.] Hoernle 1908 : 338 (s.v. sidh)
 
-**+)** [PW·restate → *new] <hom>1.</hom> √{#siD#}¦, {#se/Dati#} ({#gatikarman#}, {#SAstre mANgalye ca#})
+**+)** [NWS·nws_at_sense → не привязано: номер выше диапазона PWG] [NWS:] {#siddhārthikā#} [Śā, Med] букв. «действенное»; разновидность составной пилюли. Hoernle 1893-1912 (II) 29.62. [medicament.] Hoernle 1908 : 338 (s.v. sidh)
+
+**+)** [NWS·foreign_fragment → не привязано: номер выше диапазона PWG] ‹en› [NWS:] {#artha#} [Śā, Soc] arthāt + √ sidh: быть установленным в силу необходимого вывода (логического следствия). MānDhŚ(Medh) (zu MānDhŚ 1.2). Olivelle 2015 : 60 (s.v. arthāt √ sidh)
+
+**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#siD#}¦, {#se/Dati#} ({#gatikarman#}, {#SAstre mANgalye ca#})
 — 1〉 {%пугать, гнать; прогонять%}. {#sidDa#} {%прогнанный%}.
 — 2〉 {%хвалить или карать%} <ls>BHAṬṬ.</ls>
 — *<ab>Desid.</ab> от <ab>Caus.</ab> {#sizeDayizati#}.
 — *<ab>Intens.</ab> {#seziDyate#}. <ab>Vgl.</ab> {#anu#}.
 
-**+)** [PW·restate → *new] — С {#anu#} <ab>Intens.</ab> ({#anuse/ziDat#}) {%гнать по пути, вести%}.
+**+)** [PW·restate → не привязано: цель не указана] — С {#anu#} <ab>Intens.</ab> ({#anuse/ziDat#}) {%гнать по пути, вести%}.
 
-**+)** [PW·restate → *new] — С {#apa#}
+**+)** [PW·restate → не привязано: цель не указана] — С {#apa#}
 — 1〉 {%отгонять, прогонять%}.
 — 2〉 {%отражать, удерживать, — от%}. (<ab>Abl.</ab>). <ab>v. l.</ab> также <ab>Med.</ab>
 
-**+)** [PW·restate → *new] — С {#aBi#}, {#˚zidDa#} {%пригнанный сюда%}.
+**+)** [PW·restate → не привязано: цель не указана] — С {#aBi#}, {#˚zidDa#} {%пригнанный сюда%}.
 
-**+)** [PW·restate → *new] — *<ab>Desid.</ab> от <ab>Caus.</ab> {#aBizizazeDayizati#}.
+**+)** [PW·restate → не привязано: цель не указана] — *<ab>Desid.</ab> от <ab>Caus.</ab> {#aBizizazeDayizati#}.
 
-**+)** [PW·restate → *new] — С {#ava#} {%отражать, — удерживать от%} (<ab>Abl.</ab>) <ab>v. l.</ab> {#apa#}.
+**+)** [PW·restate → не привязано: цель не указана] — С {#ava#} {%отражать, — удерживать от%} (<ab>Abl.</ab>) <ab>v. l.</ab> {#apa#}.
 
-**+)** [PW·restate → *new] — С {#A#}
+**+)** [PW·restate → не привязано: цель не указана] — С {#A#}
 — 1〉 {%понукать%} <ls>Comm. zu LĀṬY. 8,6,3</ls>.
 — 2〉 {#AsidDa#} {%задержанный%} <ls n="Chr.">213,29</ls>. <ls n="Chr.">30,33</ls>.
 
-**+)** [PW·restate → *new] — <ab>Caus.</ab> {#AseDayati#}
+**+)** [PW·restate → не привязано: цель не указана] — <ab>Caus.</ab> {#AseDayati#}
 — 1〉 {%велеть задержать%} <ls n="Chr.">213,27</ls>.
 — 2〉 {%прикреплять%} <ls>BĀLAR. 208,13</ls>.
 
-**+)** [PW·restate → *new] — С {#vyA#}
+**+)** [PW·restate → не привязано: цель не указана] — С {#vyA#}
 — 1〉 {%удерживать кого-л., отражать%} <ls>ŚIŚ. 12,43</ls>.
 — 2〉 {#vyAsidDa#} {%запрещенный, воспрещенный%}.
 
-**+)** [PW·restate → *new] — С {#ud#} {%оттеснять в сторону%}.
+**+)** [PW·restate → не привязано: цель не указана] — С {#ud#} {%оттеснять в сторону%}.
 
-**+)** [PW·restate → *new] — С {#samud#} в {#samutseDa#}.
+**+)** [PW·restate → не привязано: цель не указана] — С {#samud#} в {#samutseDa#}.
 
-**+)** [PW·restate → *new] — С {#upa#} {%отражать, — удерживать от%} (<ab>Abl.</ab>) <ls>MBH. 7,42,8</ls>. Правильно {#upa#} <ls>{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8</ls>.
+**+)** [PW·restate → не привязано: цель не указана] — С {#upa#} {%отражать, — удерживать от%} (<ab>Abl.</ab>) <ls>MBH. 7,42,8</ls>. Правильно {#upa#} <ls>{{‹ed.› Vardh.->MBH.ed.Vardh.||20160103|Dhaval Patel, Jim Funderburk.|https://github.com/sanskrit-lexicon/CORRECTIONS/issues/216|to match with Bibliography in Preface}} 7,41,8</ls>.
 
-**+)** [PW·restate → *new] — С {#ni#}
+**+)** [PW·restate → не привязано: цель не указана] — С {#ni#}
 — 1〉 {%прогонять%}.
 — 2〉 {%отражать кого-л., удерживать, стремиться отвадить от чего-л.%} (<ab>Abl.</ab>), {%запрещать кому-л.%} (<ab>Acc.</ab>). {#nizidDa#} {%отраженный, удерживаемый, которому что-л. запрещено%}. {#nizidDavant#} {%отразивший%}.
 — 3〉 {%отражать что-л.%} <ls>BHAṬṬ.</ls>
 — 4〉 {%запрещать что-л., воспрещать, отклонять, выступать против чего-л., заявлять протест;%} с <ab>Acc.</ab> предмета. {#nizidDa#} {%воспрещенный, запрещенный, запрещенный к%} (<ab>Infin.</ab>).
 — 5〉 *{%запрещать что-л., не давать распространяться,/} так <ab>v. a.</ab> {%преувеличивать%} ({#sadfSye#}) <ls n="Chr.">251,8</ls>.
 
-**+)** [PW·restate → *new] — <ab>Caus.</ab> {#nizeDayati#}
+**+)** [PW·restate → не привязано: цель не указана] — <ab>Caus.</ab> {#nizeDayati#}
 — 1〉 {%препятствовать кому-л., удерживать кого-л.%} <ls>PAÑCAD.</ls>
 — 2〉 {%запрещать что-л., воспрещать, отрицать%}.
 
-**+)** [PW·restate → *new] — С {#nis#} {%распугивать%}.
+**+)** [PW·restate → не привязано: цель не указана] — С {#nis#} {%распугивать%}.
 
-**+)** [PW·restate → *new] — С {#parA#} в {#parAseDa#}.
+**+)** [PW·restate → не привязано: цель не указана] — С {#parA#} в {#parAseDa#}.
 
-**+)** [PW·restate → *new] — С *{#pari#}. {#˚zeDati#} и {#˚seDati#} (последнее в значении <ab>Bed.</ab> {%порхать вокруг%}) <ls>BHAṬṬ.</ls>
+**+)** [PW·restate → не привязано: цель не указана] — С *{#pari#}. {#˚zeDati#} и {#˚seDati#} (последнее в знач. <ab>Bed.</ab> {%порхать вокруг%}) <ls>BHAṬṬ.</ls>
 — *<ab>Desid.</ab> от <ab>Caus.</ab> {#parizizeDayizati#}.
 
-**+)** [PW·restate → *new] — С {#pra#} <ab>Act.</ab> <ab>Med.</ab> {%гнать вперед%}.
+**+)** [PW·restate → не привязано: цель не указана] — С {#pra#} <ab>Act.</ab> <ab>Med.</ab> {%гнать вперед%}.
 
-**+)** [PW·restate → *new] — С {#prati#} ({#˚zeDati#})
+**+)** [PW·restate → не привязано: цель не указана] — С {#prati#} ({#˚zeDati#})
 — 1〉 {%прогонять%}.
 — 2〉 {%отражать кого-л., удерживать, стремиться отвадить от чего-л.%} (<ab>Abl.</ab>), {%запрещать кому-л.%} (<ab>Acc.</ab>) {%то, кому что-л. воспрещено%}.
 — 3〉 {%удерживать что-л., подавлять%}. {#pratizidDa#} {%воздерживаться%}.
 — 4〉 {%запрещать что-л., [Page7-134-b] воспрещать, отрицать%} <ls>ĀPAST. 1,8,20</ls>. {#pratizidDa#} {%воспрещенный, запрещенный, заповеданный, отрицаемый%} <ls>GAUT. 3,30. 5,2. 12,27. 19,2. 22,33. 25,7. 8</ls>. <ls>ĀPAST. 1,21,14. 26,7</ls>. {%отрицаемый,/} так <ab>v. a.</ab> {%снабженный отрицанием%}. {#pratizidDavant#} {%воспретивший что-л. — запретивший%}.
 
-**+)** [PW·restate → *new] — <ab>Caus.</ab> ({#pratizeDayati#})
+**+)** [PW·restate → не привязано: цель не указана] — <ab>Caus.</ab> ({#pratizeDayati#})
 — 1〉 {%отражать, удерживать, отклонять%}.
 — 2〉 {%запрещать что-л., воспрещать, заказывать%} (<ls>ĀPAST. 1,28,3</ls>), {%отрицать%}.
 
-**+)** [PW·restate → *new] — С {#viprati#}, {#˚zidDa#}
+**+)** [PW·restate → не привязано: цель не указана] — С {#viprati#}, {#˚zidDa#}
 — 1〉 {%запрещенный, воспрещенный%} <ls>ĀPAST. 1,13,20. 2,14,19. 21,13</ls>.
 — 2〉 {%противоположный, противоречивый%} <ls>ĀPAST. 2,8,12</ls>. {#˚m#} <lex>Adv.</lex> = {#vipratizeDena#} ({#aYo vuY#} так <ab>v. a.</ab> {%при столкновении этих двух побеждает%} {#vuY#} {%над%} {#aY#}), {#pUrvavirpatizidDam#} = {#˚zeDena#} (<ab>s.</ab> {#pUrvavipratizeDa#} <ls>Nachtr. 5</ls>).
 
-**+)** [PW·restate → *new] — С {#saMprati#} {%удерживать кого-л.%}.
+**+)** [PW·restate → не привязано: цель не указана] — С {#saMprati#} {%удерживать кого-л.%}.
 
-**+)** [PW·restate → *new] — С *{#vi#} ({#˚seDati#}) {%направляться к%} (<ab>Acc.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] — С *{#vi#} ({#˚seDati#}) {%направляться к%} (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 возникать.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="1">— 3〉 {%возникать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 быть действительным (в силе).
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="1">— 4〉 {%быть действительным (в силе)%}.
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 доставаться кому-л. (<ab>Gen.</ab>).
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="1">— 5〉 доставаться кому-л. (<ab>Gen.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 6〉 приходить в порядок, исцеляться.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="1">— 6〉 {%приходить в порядок, исцеляться%}.
 
-**+)** [PW·restate → *new] <div n="1">— 7〉 вытекать из чего-л., следовать, оказываться верным, быть доказанным.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="1">— 7〉 {%вытекать из чего-л., следовать, оказываться верным, быть доказанным%}.
 
-**+)** [PW·restate → *new] <div n="1">— 8〉 подчиняться чьей-л. (<ab>Gen.</ab>) воле, уступать.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="1">— 8〉 {%подчиняться чьей-л.%} (<ab>Gen.</ab>) {%воле, уступать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 9〉 достигать своей цели, иметь успех (о лицах).
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="1">— 9〉 достигать своей цели, иметь успех (о лицах).
 
-**+)** [PW·restate → *new] <div n="1">— 10〉 достигать высшей цели, становиться совершенным, блаженным.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="1">— 10〉 {%достигать высшей цели, становиться совершенным, блаженным%}.
 
-**+)** [PW·restate → *new] <div n="1">— 11〉 {#sidDa#}
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="1">— 11〉 {#sidDa#}
 
-**+)** [PW·restate → *new] <div n="2">— a〉 пораженный (цель).
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— a〉 пораженный (цель).
 
-**+)** [PW·restate → *new] <div n="2">— b〉 состоявшийся, удавшийся, осуществленный, достигнутый, совершенный, исполненный.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— b〉 {%состоявшийся, удавшийся, осуществленный, достигнутый, совершенный, исполненный%}.
 
-**+)** [PW·restate → *new] <div n="2">— c〉 поступивший, внесенный (о деньгах).
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— c〉 поступивший, внесенный (о деньгах).
 
-**+)** [PW·restate → *new] <div n="2">— d〉 изготовленный, приготовленный, сделанный, сваренный <ab>u. s. w.</ab>
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— d〉 {%изготовленный, приготовленный, сделанный, сваренный%} <ab>u. s. w.</ab>
 
-**+)** [PW·restate → *new] <div n="2">— e〉 действительный в {#asidDa#}.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— e〉 действительный в {#asidDa#}.
 
-**+)** [PW·restate → *new] <div n="2">— f〉 доставшийся (на долю).
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— f〉 {%доставшийся (на долю)%}.
 
-**+)** [PW·restate → *new] <div n="2">— g〉 свойственный, собственный.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— g〉 {%свойственный, собственный%}.
 
-**+)** [PW·restate → *new] <div n="2">— h〉 непреходящий, неизменный.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— h〉 {%непреходящий, неизменный%}.
 
-**+)** [PW·restate → *new] <div n="2">— i〉 пришедший в порядок, исцеленный.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— i〉 {%пришедший в порядок, исцеленный%}.
 
-**+)** [PW·restate → *new] <div n="2">— k〉 вытекающий из чего-л., следующий (из чего-л.), установленный, оказывающийся верным, доказанный.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— k〉 {%вытекающий из чего-л., следующий (из чего-л.), установленный, оказывающийся верным, доказанный%}.
 
-**+)** [PW·restate → *new] <div n="2">— l〉 установленный, известный как <ab>v. a.</ab>, — в (в <ab>Comp.</ab> предшествующем). {#˚tara#} известный, знаменитый.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— l〉 установленный, известный как <ab>v. a.</ab>, — в (в <ab>Comp.</ab> предшествующем). {#˚tara#} известный, знаменитый.
 
-**+)** [PW·restate → *new] <div n="2">— m〉 действенный, обладающий магической силой, чудодейственный (о неодушевленных предметах) <ls>CARAKA. 6,1. 9. 12</ls>. {#˚tama#} <ls n="Chr.">1,3</ls>.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— m〉 действенный, обладающий магической силой, чудодейственный (о неодушевленных предметах) <ls>CARAKA. 6,1. 9. 12</ls>. {#˚tama#} <ls n="Chr.">1,3</ls>.
 
-**+)** [PW·restate → *new] <div n="2">— n〉 послушный, находящийся в распоряжении кого-л. (<ab>Gen.</ab>) (<ab>insbes.</ab> о духах и иных магических средствах).
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— n〉 послушный, находящийся в распоряжении кого-л. (<ab>Gen.</ab>) (<ab>insbes.</ab> о духах и иных магических средствах).
 
-**+)** [PW·restate → *new] <div n="2">— o〉 достигший своей цели.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— o〉 {%достигший своей цели%}.
 
-**+)** [PW·restate → *new] <div n="2">— p〉 достигший высшей цели, достигший совершенства, ставший мастером в чем-л. (<ab>Dat.</ab> или в <ab>Comp.</ab> предшествующем).
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— p〉 {%достигший высшей цели, достигший совершенства, ставший мастером в чем-л.%} (<ab>Dat.</ab> или в <ab>Comp.</ab> предшествующем).
 
-**+)** [PW·restate → *new] <div n="2">— q〉 ставший совершенным, так <ab>v. a.</ab> обретший сверхъестественные силы, более не подчиненный законам природы.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— q〉 ставший совершенным, так <ab>v. a.</ab> обретший сверхъестественные силы, более не подчиненный законам природы.
 
-**+)** [PW·restate → *new] <div n="2">— r〉 <lex>f.</lex> {#sidDA#} в конце имен гетер.
+**+)** [PW·restate → не привязано: номер выше диапазона PWG] <div n="2">— r〉 <lex>f.</lex> {#sidDA#} в конце имен гетер.
 
-**+)** [PW·restate → *new] <div n="m">— *<ab>Caus.</ab> [Page7-134-c] {#seDayati#} обнаруживать чьи-л. знания.
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— *<ab>Caus.</ab> [Page7-134-c] {#seDayati#} {%обнаруживать чьи-л. знания%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#anu#}
-<div n="1">— 1〉 осуществляться <ls>KĀRAṆḌ. 60,2. 85,15</ls>. <ab>Med.</ab> (!) <ls n="Chr.">48,8</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anu#}
+<div n="1">— 1〉 {%осуществляться%} <ls>KĀRAṆḌ. 60,2. 85,15</ls>. <ab>Med.</ab> (!) <ls n="Chr.">48,8</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {#˚sidDa#} постепенно осуществившийся.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {#˚sidDa#} {%постепенно осуществившийся%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#aBi#} ({#˚siDyati#})
-<div n="1">— 1〉 удаваться, осуществляться.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBi#} ({#˚siDyati#})
+<div n="1">— 1〉 {%удаваться, осуществляться%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 обретать, достигать, получать.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%обретать, достигать, получать%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#upa#}, {#˚sidDa#} приготовленный, готовый (пища) <ls>GOBH. 1,9,4</ls>. приготовленный с (в <ab>Comp.</ab> предшествующем) <ls>CARAKA. 6,10. fg.</ls> {#SabdopasidDa#} вероятно так <ab>v. a.</ab> сделанный вкусным уговорами (о вызывающей отвращение пище) 8.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upa#}, {#˚sidDa#} приготовленный, готовый (пища) <ls>GOBH. 1,9,4</ls>. приготовленный с (в <ab>Comp.</ab> предшествующем) <ls>CARAKA. 6,10. fg.</ls> {#SabdopasidDa#} вероятно так <ab>v. a.</ab> сделанный вкусным уговорами (о вызывающей отвращение пище) 8.
 
-**+)** [PW·restate → *new] <div n="p">— С {#pra#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pra#}
 <div n="1">— 1〉 удаваться, происходить, осуществляться. Также <ab>Med.</ab>
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 вытекать, находить свое объяснение.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%вытекать, находить свое объяснение%}.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {#pra/sidDa#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {#pra/sidDa#}
 
-**+)** [PW·restate → *new] <div n="2">— a〉 осуществившийся в {#aprasidDa#}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— a〉 осуществившийся в {#aprasidDa#}.
 
-**+)** [PW·restate → *new] <div n="2">— b〉 приведенный в порядок, употребленный, упорядоченный.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— b〉 {%приведенный в порядок, употребленный, упорядоченный%}.
 
-**+)** [PW·restate → *new] <div n="2">— c〉 известный.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— c〉 {%известный%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#saMpra#}, {#˚sidDa#} приготовленный.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#saMpra#}, {#˚sidDa#} {%приготовленный%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#sam#}
-<div n="1">— 1〉 удаваться, осуществляться.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#sam#}
+<div n="1">— 1〉 {%удаваться, осуществляться%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 достигать высшей цели, становиться блаженным.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%достигать высшей цели, становиться блаженным%}.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {#saMsidDa#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {#saMsidDa#}
 
-**+)** [PW·restate → *new] <div n="2">— a〉 осуществившийся, исполненный.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— a〉 {%осуществившийся, исполненный%}.
 
-**+)** [PW·restate → *new] <div n="2">— b〉 доставшийся (на долю), достигнутый, обретенный.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— b〉 {%доставшийся (на долю), достигнутый, обретенный%}.
 
-**+)** [PW·restate → *new] <div n="2">— c〉 приведенный в надлежащий вид, приготовленный (о пище), сделанный.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— c〉 приведенный в надлежащий вид, приготовленный (о пище), сделанный.
 
-**+)** [PW·restate → *new] <div n="2">— d〉 восстановленный, исцеленный.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— d〉 {%восстановленный, исцеленный%}.
 
-**+)** [PW·restate → *new] <div n="2">— e〉 готовый к (<ab>Dat.</ab>)
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— e〉 {%готовый к%} (<ab>Dat.</ab>)
 
-**+)** [PW·restate → *new] <div n="2">— f〉 твердо решившийся.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— f〉 {%твердо решившийся%}.
 
-**+)** [PW·restate → *new] <div n="2">— g〉 удовлетворенный.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— g〉 {%удовлетворенный%}.
 
-**+)** [PW·restate → *new] <div n="2">— h〉 искусный, опытный в (<ab>Loc.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— h〉 {%искусный, опытный в%} (<ab>Loc.</ab>).
 
-**+)** [PW·restate → *new] <div n="2">— i〉 достигший высшей цели, обретший совершенство, блаженный.
+**+)** [PW·restate → не привязано: цель не указана] <div n="2">— i〉 {%достигший высшей цели, обретший совершенство, блаженный%}.
 
 ## h1
 
-**1)** <div n="1"> 1) достигать цели, попадать (в цель): {#izavaH siDyanti lakzye cale#}
+**1)** <div n="1"> 1) {%достигать цели, попадать (в цель)%}: {#izavaH siDyanti lakzye cale#}
 <ls>ŚĀK. 38.</ls>
 
-**2)** <div n="1">— 2) помогать, приносить пользу, иметь успех; удаваться, исполняться, осуществляться: {#nAsmE^ vi\dyunna ta^nya\tuH si^zeDa#} не помогли ему гром и молния
+**2)** <div n="1">— 2) {%помогать, приносить пользу, иметь успех; удаваться, исполняться, осуществляться%}: {#nAsmE^ vi\dyunna ta^nya\tuH si^zeDa#} {%не помогли ему гром и молния%}
 <ls>ṚV. 1,32,13.</ls> {#yasmA^df\te na siDya^ti ya\jYaH#}
 <ls n="ṚV. 1,">18,7.</ls> {#nahi prajYApetA DIH kA ca na siDyet#}
 <ls>KAUṢ. UP. 3,7.</ls> {#kftaH puruzakAraSca so 'pi dEvena siDyati#}
@@ -322,7 +322,7 @@
 <ls>VARĀH. BṚH. S. 98,7.</ls> <ls n="VARĀH. BṚH. S.">104,61.</ls>
 <ls>KATHĀS. 15,24.</ls> <ls n="KATHĀS. 15,">61.</ls> <ls n="KATHĀS. 15,">34.</ls> <ls n="KATHĀS.">67,52.</ls> {#yadi vacanamAtrAdevADipatyaM siDyati#}
 <ls>HIT. 84,7.</ls> <ls>Verz. d. Oxf. H. 68,a,3</ls> <ab>v. u.</ab> ({#setsyati#} <ab>st.</ab> {#sepsati#} zu lesen).
-<ls n="Verz. d. Oxf. H.">256,b,9.</ls> <ls>RĀJA-TAR. 4,564.</ls> <ls>SARVADARŚANAS. 15,9. 97,12. 126,7. 147,2.</ls> <ls>LALIT. ed. Calc. 271,15. 16</ls> ({#siDyatAm#} ohne Noth <ab>st.</ab> {#siDyatu#}). так <ab>v. a.</ab> возникать: {#siDyanti jIvantyuta varDamAnAH . lokA yataH#}
+<ls n="Verz. d. Oxf. H.">256,b,9.</ls> <ls>RĀJA-TAR. 4,564.</ls> <ls>SARVADARŚANAS. 15,9. 97,12. 126,7. 147,2.</ls> <ls>LALIT. ed. Calc. 271,15. 16</ls> ({#siDyatAm#} без Noth <ab>st.</ab> {#siDyatu#}). так <ab>v. a.</ab> {%возникать%}: {#siDyanti jIvantyuta varDamAnAH . lokA yataH#}
 <ls>BHĀG. P. 8,5,33.</ls>
 
 **2c)** — c) <ab>Bez.</ab> {%одного из созвездий <ab>best.</ab>%} <ls>MED.</ls> <ls>KOṢṬHĪPR.</ls> в <ls>ŚKDR.</ls>
@@ -332,7 +332,7 @@
 — β) одного <is>Devagandharva</is> <ls>MBH. 1,2554.</ls>
 — γ) одного <is>Rājarṣi</is> <ls>MBH. 2,320.</ls> одного правителя <ls>RĀJA-TAR. 1,276.</ls> одного брата <is>Jajja</is> <ls n="RĀJA-TAR.">4,519.</ls> одного брахмана <ls>TĀRAN. 4. 24.</ls>
 
-**2e)** — e) = {#vyavahAra#} (вероятно, <lex>adj.</lex> в значении <ab>Bed.</ab> {%имеющее силу%}) <ls>ŚABDAR.</ls> в <ls>ŚKDR.</ls> = {#kfzRaDustUra#} и {#guqa#} <ls>RĀJAN.</ls> в <ls>ŚKDR.</ls>
+**2e)** — e) = {#vyavahAra#} (вероятно, <lex>adj.</lex> в знач. <ab>Bed.</ab> {%имеющее силу%}) <ls>ŚABDAR.</ls> в <ls>ŚKDR.</ls> = {#kfzRaDustUra#} и {#guqa#} <ls>RĀJAN.</ls> в <ls>ŚKDR.</ls>
 
 **3)** 3) <lex>f.</lex> {#A#}.
 a) <lex>adj.</lex> в конце имен гетер <ls>SĀH. D. 426.</ls>
@@ -343,33 +343,33 @@ a) <lex>adj.</lex> в конце имен гетер <ls>SĀH. D. 426.</ls>
 **4)** 4) <lex>n.</lex>
 a) {%волшебная сила, сверхъестественная мощь%}: {#yadDftvA paWanAtsidDAH sidDAni prApnuvanti ca#} <ls>PAÑCAR. 1,5,11.</ls> {#aRimA#} <ab>u. s. w.</ab> {#vAksidDaM sidDaM saptadaSa smftam#} <ls n="PAÑCAR.">2,8,4.</ls>
 — b) {%поваренная соль%} ({#sEnDavalavaRa#}) <ls>RĀJAN. 6,90.</ls> {#SudDa#} <ab>v. l.</ab>
-— c) {#sidDaM puram#} неточно вместо {#sidDapuram#} <ab>d. i.</ab> {#sidDAnAM puram#} <ls>GOLĀDHY. BHUVANAK. 26.</ls>; равным образом {#sidDe nArAyaRakzetre#} вместо {#nArAyaRasya sidDakzetre#} <ls>PAÑCAR. 1,2,3.</ls>
+— c) {#sidDaM puram#} неточно вм. {#sidDapuram#} <ab>d. i.</ab> {#sidDAnAM puram#} <ls>GOLĀDHY. BHUVANAK. 26.</ls>; равным образом {#sidDe nArAyaRakzetre#} вм. {#nArAyaRasya sidDakzetre#} <ls>PAÑCAR. 1,2,3.</ls>
 
-**5)** <div n="1">— 5) приходить в порядок, исцеляться: {#kAkaRaM nEva siDyati#} неизлечим
+**5)** <div n="1">— 5) {%приходить в порядок, исцеляться%}: {#kAkaRaM nEva siDyati#} {%неизлечим%}
 <ls>CARAKA 8,5.</ls> {#ye ye grahA na siDyanti#}
 <ls>SUŚR. 2,536,8.</ls> {#yenEza me karSito 'tiriraMsayAtmA . siDyeta#}
 <ls>BHĀG. P. 3,23,11.</ls>
 
-**6)** <div n="1">— 6) следовать из чего-л., вытекать, оказываться верным, быть доказанным: {#tena siDyati mARavaH#}
-<is>Kār.</is> zu <ls>P. 4,1,161.</ls> <ls>PAT.</ls> (unzählige Male). {#tadasmAnna siDyati#}
-<ls>PAÑCAT. 59,9.</ls> <ab>Comm.</ab> zu <ls>TS. PRĀT. 2,25.</ls> <ls n="TS. PRĀT.">8,8.</ls> <ls n="TS. PRĀT. 8,">16.</ls> <ls n="TS. PRĀT.">9,7.</ls> <ls n="TS. PRĀT.">13,14.</ls> <ls n="TS. PRĀT.">16,18.</ls> zu <ls>JAIM. 1,9.</ls> <ls>SARVADARŚANAS. 28,16. 126,9</ls> ({#mA sEtsIt#})
+**6)** <div n="1">— 6) {%следовать из чего-л., вытекать, оказываться верным, быть доказанным%}: {#tena siDyati mARavaH#}
+<is>Kār.</is> к <ls>P. 4,1,161.</ls> <ls>PAT.</ls> (unzählige Male). {#tadasmAnna siDyati#}
+<ls>PAÑCAT. 59,9.</ls> <ab>Comm.</ab> к <ls>TS. PRĀT. 2,25.</ls> <ls n="TS. PRĀT.">8,8.</ls> <ls n="TS. PRĀT. 8,">16.</ls> <ls n="TS. PRĀT.">9,7.</ls> <ls n="TS. PRĀT.">13,14.</ls> <ls n="TS. PRĀT.">16,18.</ls> к <ls>JAIM. 1,9.</ls> <ls>SARVADARŚANAS. 28,16. 126,9</ls> ({#mA sEtsIt#})
 <ls n="SARVADARŚANAS.">137,6.</ls>
 
-**7)** <div n="1">— 7) подчиняться чьей-л. воле, уступать: {#evaM kaliNgasenAsO tava — setsyati#}
+**7)** <div n="1">— 7) {%подчиняться чьей-л. воле, уступать%}: {#evaM kaliNgasenAsO tava — setsyati#}
 <ls>KATHĀS. 30,17.</ls> {#api vIryotkawaH Satruryato Bedena siDyati#}
-<ls n="Spr. (II)">434.</ls> <ls n="Spr. (II)">3435</ls> (oder zu 8).
+<ls n="Spr. (II)">434.</ls> <ls n="Spr. (II)">3435</ls> (или zu 8).
 
 **8)** <div n="1">— 8) достигать своей цели, иметь успех (о лицах): {#siDyanti karmasu mahatsvapi yanniyojyAH#}
-<ls>Spr. (II) 7050.</ls> <ls n="Spr. (II)">3435</ls> (oder zu 7). {#anarTAH saMSayAvasTAH siDyante muktasaMSayAH#}
+<ls>Spr. (II) 7050.</ls> <ls n="Spr. (II)">3435</ls> (или zu 7). {#anarTAH saMSayAvasTAH siDyante muktasaMSayAH#}
 <ls>MBH. 3,1244.</ls> достигать высшей цели, становиться совершенным, блаженным
 <ls n="MBH. 3,">29.</ls> <ls n="MBH. 3,">8203.</ls> <ls>R. 7,36,45.</ls> <ls>ŚATR. 1,285.</ls> <ls>BHĀG. P. 4,12,49.</ls> <ls n="BHĀG. P.">5,18,10.</ls> <ls n="BHĀG. P.">6,14,4.</ls> — <ab>partic.</ab> {#sidDa#}
 
 **PPP 1)** <div n="1"> 1) <lex>adj.</lex>
 
-**PPP 1a)** <div n="2"> a) пораженный, настигнутый: {#sidDalakzeRa bARena#}
+**PPP 1a)** <div n="2"> a) {%пораженный, настигнутый%}: {#sidDalakzeRa bARena#}
 <ls>KATHĀS. 112,56.</ls>
 
-**PPP 1b)** <div n="2">— b) осуществившийся, удавшийся, состоявшийся, достигнутый, совершенный; = {#nizpanna#}
+**PPP 1b)** <div n="2">— b) {%осуществившийся, удавшийся, состоявшийся, достигнутый, совершенный%}; = {#nizpanna#}
 <ls>AK. 3,2,50.</ls>
 <ls>TRIK. 3,3,224</ls> ({#nizpandana?#})
 <ls>H. 1487.</ls>
@@ -385,7 +385,7 @@ a) {%волшебная сила, сверхъестественная мощь%
 <ls>PRAB. 18,4.</ls> {#prayojana#}
 <ls>PAÑCAT. 44,10.</ls> {#samIhita#}
 <ls>HIT. 44,7.</ls> {#svAyuDEkasidDe mfgayArase#}
-<ls>KATHĀS. 21,16.</ls> {#nimittEH sADyasidDEH#} те, которым еще предстояло исполниться, и те, которые уже исполнились
+<ls>KATHĀS. 21,16.</ls> {#nimittEH sADyasidDEH#} {%те, которым еще предстояло исполниться, и те, которые уже исполнились%}
 <ls>R. 5,28,16.</ls>
 
 **PPP 1c)** <div n="2">— c) поступивший (о деньгах): {#arTa#}
@@ -409,7 +409,7 @@ a) {%волшебная сила, сверхъестественная мощь%
 <ls>SUŚR. 2,38,7.</ls> {#bastARqa˚#}
 <ls n="SUŚR.">155,1.</ls>
 
-**PPP 1e)** <div n="2">— e) действительный, имеющий силу: {#a˚#}
+**PPP 1e)** <div n="2">— e) {%действительный, имеющий силу%}: {#a˚#}
 <ls>P. 6,1,86.</ls> <ls n="P. 6,">4,22.</ls> <ls n="P.">8,2,1.</ls>
 
 **PPP 1f)** <div n="2">— f) доставшийся, принадлежащий: {#tapaHpraBAvasidDABirviSezapratipattiBiH#}
@@ -421,7 +421,7 @@ a) {%волшебная сила, сверхъестественная мощь%
 <ls n="Spr. (II)">5857.</ls> {#jAti˚#}
 <ls>KATHĀS. 39,108.</ls> {#sidDa = nitya#}
 <ls>TRIK. 3,3,224.</ls>
-<ls>H. an.</ls> Bei <ls>PAT.</ls> in der Einl
+<ls>H. an.</ls> у <ls>PAT.</ls> in der Einl
 zu <ls>MAHĀBH.</ls> (<ls>1,12,a</ls> <ab>lith.</ab> <ab>Ausg.</ab>) ist {#sidDa = nitya#} так <ab>v. a.</ab> непреходящий, неизменный; так говорят {#sidDA dyOH, sidDA pfTivI, sidDamAkASam#} .
 
 **PPP 1g)** <div n="2">— g) пришедший в порядок, исцеленный: (о лице)
@@ -434,9 +434,9 @@ zu <ls>MAHĀBH.</ls> (<ls>1,12,a</ls> <ab>lith.</ab> <ab>Ausg.</ab>) ist {#sidDa
 <ls>Spr. (II) 4051.</ls>
 <ls>SĀṂKHYAK. 6. 14. 18. fg.</ls>
 <ls>TARKAS. 40. 43. 59.</ls> <ls>BHĀṢĀP. 20.</ls> <ls>SARVADARŚANAS. 8,9. 12,14. 16,8. 17,10.</ls> <ls>PAT.</ls> (unzählige Male).
-<ls>SIDDH. K.</ls> zu <ls>P. 2,2,11.</ls> <ab>Schol.</ab> zu <ls n="P.">1,1,62.</ls> <ls n="P. 1,">3,61.</ls> zu <ls>TS. PRĀT. 1,11.</ls> <ls n="TS. PRĀT. 1,">14.</ls> <ls n="TS. PRĀT.">4,3.</ls> <ls n="TS. PRĀT.">5,26.</ls> <ls n="TS. PRĀT.">8,21.</ls> {#pratyakza˚#}
+<ls>SIDDH. K.</ls> к <ls>P. 2,2,11.</ls> <ab>Schol.</ab> к <ls n="P.">1,1,62.</ls> <ls n="P. 1,">3,61.</ls> к <ls>TS. PRĀT. 1,11.</ls> <ls n="TS. PRĀT. 1,">14.</ls> <ls n="TS. PRĀT.">4,3.</ls> <ls n="TS. PRĀT.">5,26.</ls> <ls n="TS. PRĀT.">8,21.</ls> {#pratyakza˚#}
 <ls>SĀH. D. 2,2.</ls> {#svaBAva˚#} само собой разумеющийся
-<ls>KĀŚ.</ls> zu <ls>P. 1,2,53.</ls>
+<ls>KĀŚ.</ls> к <ls>P. 1,2,53.</ls>
 
 **PPP 1i)** <div n="2">— i) установленный, так <ab>v. a.</ab> известный; = {#prasidDa#}
 <ls>H. an.</ls> <ls>ŚABDAR.</ls> im <ls>ŚKDR.</ls> <ls>ĀŚV. ŚR. 9,1,2.</ls> {#vizwArapaNkti#}
@@ -492,10 +492,10 @@ zu <ls>MAHĀBH.</ls> (<ls>1,12,a</ls> <ab>lith.</ab> <ab>Ausg.</ab>) ist {#sidDa
 
 **PPP 2)** <div n="1">— 2) <lex>m.</lex>
 
-**PPP 2a)** <div n="2"> a) совершенный, блаженный, <ab>Bez.</ab> класс полубогов (подобных <is>Kapila</is>, <is>Vyāsa</is>, <is>Vasiṣṭha</is>, <is>Viśvāmitra</is>, <is>Bharadvāja</is>), которым приписываются сверхъестественные силы, <ab>insbes.</ab> способность летать по воздушному пространству,
+**PPP 2a)** <div n="2"> a) {%совершенный, блаженный%}, <ab>Bez.</ab> класс полубогов (подобных <is>Kapila</is>, <is>Vyāsa</is>, <is>Vasiṣṭha</is>, <is>Viśvāmitra</is>, <is>Bharadvāja</is>), которым приписываются сверхъестественные силы, <ab>insbes.</ab> способность летать по воздушному пространству,
 <ls>AK. 1,1,1,6.</ls>
 <ls>H. an.</ls>
-<ls>MED.</ls> ({#vyAsAdi#} und {#Bedo devayoneH#} als zwei <ab>Bedd.</ab>).
+<ls>MED.</ls> ({#vyAsAdi#} и {#Bedo devayoneH#} als zwei <ab>Bedd.</ab>).
 <ls>HALĀY. 1,87.</ls>
 <ls>ĀŚV. GṚHY. 3,4,1.</ls>
 <ls>MBH. 1,2570.</ls> <ls n="MBH.">3,1748.</ls> <ls n="MBH. 3,">1765.</ls> <ls n="MBH. 3,">1786.</ls> <ls n="MBH. 3,">1830.</ls> <ls n="MBH.">12,6788.</ls> <ls n="MBH.">13,1777.</ls>

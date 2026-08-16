@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 16-08-2026 (§545 — a fixture guard row proves the sanitizer runs, not that it covers every sink: `sense_tag` was scrubbed for the IRI but flowed raw into `edition_rel`'s `evidence` string and out through both serializations; §544 — rvlinks is the pāda-granular RV substrate already on disk; §543 — `guda` is «кишки» in the RV and the anorectal outlet in Āyurveda; §542 — a review sheet's stated apply target is not the carrier set)_
+_Created: 26-06-2026 · Last updated: 16-08-2026 (§549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; the corpus's per-note page anchors settle what can be settled (Эрман кн. VI = М.: Ладомир, 2009); §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink; §544 — rvlinks is the pāda-granular RV substrate already on disk; §543 — `guda` is «кишки» in the RV and the anorectal outlet in Āyurveda)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -253,7 +253,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§535. A CRLF key list makes every pilot input land under a phantom `~000d` stem, and the failure surfaces as "missing input", not as an encoding error](#535-a-crlf-key-list-makes-every-pilot-input-land-under-a-phantom-000d-stem-and-the-failure-surfaces-as-missing-input-not-as-an-encoding-error) — `safe_name()` is total, so a trailing CR silently forks the input namespace; strip CR before piping any key list into a generator.
 - 🟠 [§536. The re-glue cards' citations were dead because nothing called the repo's own resolver — and Cologne's precomputed table would have been a downgrade](#536-the-re-glue-cards-citations-were-dead-because-nothing-called-the-repos-own-resolver--and-colognes-precomputed-table-would-have-been-a-downgrade) — `ls_resolver` 83.6% vs csl-lslink table 79.3% over 41,115 store `<ls>`, zero table-only wins, zero href disagreements; "unresolved" is two buckets and only the locus-bearing one is work. Its sizing of that bucket is superseded by §537.
 - 🔴 [§537. The mintable citation gap is 60 occurrences, not ~7,000 — the resolver is at the ceiling its scan corpus allows](#537-the-mintable-citation-gap-is-60-occurrences-not-7000--the-resolver-is-at-the-ceiling-its-scan-corpus-allows) — 5,197 of 5,257 cite works Cologne never digitised; the resolver already routes to 49 of 53 hosted text scans. A prefix is not a work: first-token grouping over-counted the cheap bucket 4×, so classify by repair-and-retest, not regex.
-- 🔴 [§541. The re-glue typology label is assigned independently of whether an insertion target was found, so 90 % of it asserts a relation to a sense that is not there](#541-the-re-glue-typology-label-is-assigned-independently-of-whether-an-insertion-target-was-found-so-90--of-it-asserts-a-relation-to-a-sense-that-is-not-there) — 5,054 of 5,603 supplements are `target_sense='*new'` yet still labelled `restate`; only 4.4 % are checkable. Gloss-word overlap was measured as an evidence axis and rejected (median 0.000 both classes); `{%…%}` is the German gloss, not Sanskrit — stripping it fakes a finding.
+- 🔴 [§541. The re-glue typology label is assigned independently of whether an insertion target was found, so 90 % of it asserts a relation to a sense that is not there](#541-the-re-glue-typology-label-is-assigned-independently-of-whether-an-insertion-target-was-found-so-90--of-it-asserts-a-relation-to-a-sense-that-is-not-there) — 5,054 of 5,603 supplements are `target_sense='*new'` yet still labelled `restate`; only 4.4 % are checkable. Gloss-word overlap was measured as an evidence axis and rejected (median 0.000 both classes); `{%…%}` is the German gloss, not Sanskrit — stripping it fakes a finding. **Wave 1 RESOLVED 16-08-2026** (H2879): `placement` splits the pair-claim from the label; the 90 % was three phenomena, of which only 130 rows (2.2 %) are a real defect and 383 are renumbering evidence. Attributable gain measured against identical inputs: +7 checkable pairs, not the +11 a stale baseline implied.
 - 🟠 [§539. Kochergina corrections have no tracked home — the org's correction store is CDSL-scoped, and Kochergina is not a CDSL dictionary](#539-kochergina-corrections-have-no-tracked-home-the-orgs-correction-store-is-cdsl-scoped-and-kochergina-is-not-a-cdsl-dictionary) — inherited index row added by H2859; see the section for the finding.
 - 🟠 [§540. Mixed-script words hide from every search that assumes one alphabet per word — and the repair map has to be transliteration, not visual shape](#540-mixed-script-words-hide-from-every-search-that-assumes-one-alphabet-per-word-and-the-repair-map-has-to-be-transliteration-not-visual-shape) — inherited index row added by H2859; see the section for the finding.
 - 🟠 [§542. A review sheet's stated apply target is not the carrier set — the hand-authored strings can live in a generator, and an apply that trusts the sheet reverts on the next build](#542-a-review-sheets-stated-apply-target-is-not-the-carrier-set--the-hand-authored-strings-can-live-in-a-generator-and-an-apply-that-trusts-the-sheet-reverts-on-the-next-build) — the agni sheet named `agni.pd-min.ru.md` col. 3; the glosses are actually authored in a `GLOSS` dict in `_build_agni_ru.py`, with two more copies downstream. Grep a current cell string, not the filename, before applying any vote — the unvoted aksara/ananta/anya sheets have the same shape with a different layout again.
@@ -5952,6 +5952,18 @@ Implication: do not put the typology chip to a human vote as it stands — 90 % 
 >
 > **Tracking issue: [#1736](https://github.com/gasyoun/SanskritLexicography/issues/1736)** (in Russian) — names the two lines that cause it ([`edition_rel.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/edition_rel.py) L146 sets `target_sense='*new'`, L187 sets `subtype='restate'` without reading it), splits the mass into its two failure modes (**4,618 literal `*new`** · **436 dangling numeric targets** · 549 that resolve), and puts four fix options to a human. The recommended one, **C**, separates the two claims the `subtype` field currently conflates: *"PW abridges PWG"* is a property of the layer and is always true (already carried by `direction`), while *"this supplement restates **that** sense"* is a claim about a pair and needs a found target. C fixes both failure modes and is **orthogonal to** the deferred content-alignment gold pass — a perfect alignment would still leave a label that never consults it.
 
+**RESOLVED (wave 1), 16-08-2026 — option C shipped, and the honest gain is 3 % of what the headline suggests.** `placement` / `placement_reason` / `placement_hypothesis` now carry the pair-claim; `subtype` keeps only the kind-claim and must be read together with `placement` ([REGLUE_SPEC §10](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/REGLUE_SPEC.md)). Over 6,009 sidecar rows: `found` 595 · `no_target_marker` 4,901 · `out_of_range` 383 · `not_found` 130.
+
+Three things are worth more than the fix itself:
+
+1. **The 90 % was never one phenomenon.** Splitting it, only **130 rows (2.2 %)** are genuinely unexplained. **383** are `out_of_range` — the target number is *above* PWG's highest sense in that article, i.e. the later edition really does have more senses. That is direct evidence for the renumbering thesis, and it had been sitting inside a bucket labelled "broken". A count that merges a real phenomenon with a defect hides the phenomenon, not the defect.
+2. **Measure the fix against the same inputs, or the number is fiction.** The published baseline (246 checkable of 5,603) came from a sidecar built 06-07-2026 against a store from 02-08-2026. Re-running both rules over one identical store and sidecar attributes **+7 checkable pairs (250 → 257)** to this change; the rest of the apparent jump was a stale artifact being refreshed. Had the before/after been quoted as published, wave 1 would have claimed roughly four times the effect it had.
+3. **The conservative normaliser closes almost nothing — and that was the right call anyway.** Stripping trailing punctuation newly placed **12 rows**, all in one article (`vA`, skeleton written `3)`–`7)`). The alternative, a looser matcher, buys coverage by risking a silent `placement=true` on the wrong sense — a lie that no reviewer would catch, unlike an honest `placement=false`. Pinned by negative selftests (`1-sub-…`, `1 (PW)`, `Nachtrag`, `caus-1` must never merge). The `placement_hypothesis` field, built to record near-misses, fires on **0** real rows.
+
+Acceptance is re-runnable: [`placement_axis_check.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/placement_axis_check.py) re-proves every criterion — including the two stop conditions, that no target-less row became placed and that the canonical store stayed byte-identical (`rows=11,603`, sha256 `811bbc21…`).
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · [H2879 (Opus 5) — Волна 1: развести ось привязки и метку типологии + нормализация тегов смыслов](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2879-Opus_SanskritLexicography_placement-axis-split-w1_16.08.26.md) · class A (reproduce: `python src/placement_axis_check.py`). Issue #1736 stays open — waves 2–4 (edits inside PWG, SCH, MW/AP) are untouched.
+
 ### §538. A Latin siglum inside a `{#…#}` span is silently transliterated — `pw` became `pṭ`, an abbreviation that does not exist
 
 🔴 **Any Latin-script token that ends up inside a Sanskrit span is read as SLP1 and
@@ -6310,4 +6322,214 @@ tried; the measured pair is the one to cite.
 > [`RV_PADA_ALIGNMENT_AUDIT_2026-08-16.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/RV_PADA_ALIGNMENT_AUDIT_2026-08-16.md)
 > and the 2 964-row [`rv_pada_alignment.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/rv_pada_alignment.jsonl);
 > selftest 49/49 including the gate negative control.
-> §548 takes the next number.
+
+### §548. PWG has TWO incompatible families of `<ls>` counts — cleaned-string and work-family — and the volunteer tracker's column is the second
+
+🔴 **Counting PWG's citation apparatus gives two legitimate, wildly different numbers for the
+same work, and nothing in the repository labels which is which.** `MED.` has **30**
+occurrences in one family and **12,990** in the other. Both are correct.
+
+| Family | Generator | Keys on | Dictionary total |
+|---|---|---|--:|
+| **cleaned citation string** | `pwg_ls/pwg_dhaval/abbrvwork/abbrv3.py` → [`sortedcrefs.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/pwg_ls/pwg_dhaval/abbrvwork/abbrvoutput/sortedcrefs.txt) | the `<ls>` text with numbers stripped, under a restrictive "starts with a capital" proper-reference filter — so one book scatters over `MED.`, `MED. k.`, `MED. kh.`, `MED. im ŚKDR.` … | 344,229 |
+| **work family** | [`lsextract_all.py`](https://github.com/sanskrit-lexicon/PWG/blob/master/pwgissues/issue94/lsextract_all.py) → `lsextract_all.txt` | the **longest bibliography abbreviation in `pwgbib_input.txt` that prefixes the element**, `n="…"` prepended first; digits → `NUMBER`, no prefix → `UNKNOWN` | 739,056 (2024-09-11) |
+
+Only the second **partitions** the dictionary, so only its `ALL` is a denominator. The first
+is a distribution over citation strings and has no work-level total at all.
+
+**This is how the PWG scan-index tracker's `Citation count` column sat "unprovenanced" for
+three weeks.** H1706 compared it against the cleaned-string family, measured a 1.2×–433×
+spread, and concluded the provenance was unrecoverable without the coordinator who built the
+column. The spread *was* the answer: the column is the work-family count, and 66 of its 67
+valued rows match
+[`pwgissues/issue74/lsextract_all.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/pwgissues/issue74/lsextract_all.txt)
+digit for digit.
+
+**Rules.**
+
+1. **Never compare across the two families**, and never call the resulting ratio a
+   disagreement. Check which generator produced a count before treating it as evidence
+   about another count.
+2. **A work-family count is not row-additive.** `AK. Deslongchamps ed.` and
+   `AK. Colebrooke ed.` both read `AK.`'s total; fold by bibliography abbreviation first.
+3. **Divide only by the `ALL` of the same snapshot.** The counts move: between 2024-09-11
+   and 2026-06-24, `an.` falls 1,797 → 1 while `H. an.` rises 2,075 with a byte-identical
+   bibliography entry on both sides — a **re-tagging** of the dictionary, not a recount.
+   Refreshing a frozen column in place would rewrite the campaign's own history.
+4. **Case is meaningful and case-folding is lossy.** `Ś.`/`ś.`, `Uṇ.`/`UṆ.`, `KAP.`/`Kap.`
+   are different bibliography entries and 15 such pairs are cited on both sides; a
+   case-insensitive lookup silently picks one of two real works.
+
+**Method note worth more than the finding.** The recovery took one mechanical sweep — compare
+the column against *every* count table in the repository — after reasoning about which
+extraction "ought" to have been used had failed. When a number's provenance is open, diff it
+against the whole candidate set before concluding it needs a human.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2874. Evidence:
+> [`reports/pwg_citation_count_provenance.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/pwg_citation_count_provenance.md)
+> (five-hypothesis log) + the 82-row
+> [`pwg_citation_count_provenance.tsv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/data/pwg_scan_index_tracker/pwg_citation_count_provenance.tsv);
+> gate `python scripts/pwg_citation_count_provenance.py --check`,
+> port fidelity `python scripts/pwg_ls_counts.py --verify-port`.
+
+### §549. CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit — and the committed corpus's per-note page anchors are the attribution layer that settles what can be settled
+
+The five sub-corpus totals, the 17,863 headline, the rubric percentages, AND the per-page
+essays that contradict them all entered git in a single commit (`77062da`, 24-04-2026,
+«Anatoliy Batch») importing an uncommitted March-2026 «automatic categorization». Reconciling
+against the lowest committed source — SamudraManthanam's hash-pinned canonical JSONL (single
+commit 20-06-2026) — split the claims into three classes: **exactly confirmable** (Кальянов
+7,424 — to the note), **definition errors** (Васильков–Невелева «5,574» silently includes
+1,685 notes of «XII(б). Мокшадхарма», a book absent from its own declared 9-book list, which
+yields 3,885), and **irreproducible-by-construction** (Гринцер 2,245 contradicts its own
+page's table 2,220; the rubric shares 3.4 %/7.7 % and 40.2 %/27.8 % have no committed
+per-note assignments — the n=50 gold sample's CI covers both sides of each).
+
+Three reusable lessons: (1) a derived statistic published without committing the run that
+produced it can become *permanently* unadjudicable — mark such values as dated snapshots
+rather than picking the cleaner number; (2) the digitized corpus's per-note HTML anchors
+(`title="Махабхарата 2009 (VI): 338"`) are a committed edition-attribution layer — one
+sweep over them resolved a three-way publisher conflict (Эрман кн. VI = **М.: Ладомир,
+2009**; «М.: Наука, 1977» and «СПб.: Наука, 2009» retired) and unmasked a non-Syrkin
+upanishad (`jabala-up`, 2025) inside the «Syrkin» file set; (3) duplicate lineages exist by
+design — `bhagavadgita-erman` (301 notes) re-hosts the Bhīṣmaparva BG chapters' notes (319),
+so summing works without an anchor census double-counts.
+
+> Fable 5 (`claude-fable-5`) · 16-08-2026 · H2872. Evidence:
+> [`docs/CORPUS_TRUTH_RECONCILIATION_17863.md`](https://github.com/gasyoun/CommentaryStrategies/blob/main/docs/CORPUS_TRUTH_RECONCILIATION_17863.md)
+> + machine table
+> [`data/analysis/corpus_truth_reconciliation.json`](https://github.com/gasyoun/CommentaryStrategies/blob/main/data/analysis/corpus_truth_reconciliation.json);
+> regression gate `python scripts/corpus_truth_census.py --check` (CI-wired);
+> PR [gasyoun/CommentaryStrategies#186](https://github.com/gasyoun/CommentaryStrategies/pull/186).
+> §550 takes the next number.
+
+### §550. A `Nachtrag` almost never names the sense it amends, but a `1 (PW)` almost always does — so "corrections inside PWG" is two populations, not one
+
+🟠 **365 rows carried on the `pwg` layer of the `pwg_ru` store are not senses of
+PWG at all** — they are the authors' own later supplements (`Nachtrag` 184,
+`addendum` 88, `corrigendum` 7) or material the PW edition contributed at a PWG
+sense (`1 (PW)` / `PW` / `PW-1`, 86). Every one of them was rendered as an
+ordinary skeleton sense, so a card asserted the existence of a PWG sense called
+"Nachtrag" — the [§541](#541) axis defect one layer down.
+
+**Only 66 of 365 (18.1 %) name a target sense; 290 (79.5 %) carry no target
+marker at all.** The aggregate hides the real result, which is the split:
+
+| marker | rows | names a target | share |
+|---|---:|---:|---:|
+| `nachtrag` | 184 | 6 | **3.3 %** |
+| `addendum` | 88 | 18 | 20.5 % |
+| `corrigendum` | 7 | 1 | 14.3 % |
+| `pw_provenance` | 86 | 41 | **47.7 %** |
+
+A `Nachtrag` is printed as free-standing supplementary material and simply does
+not cite the sense it amends; a `1 (PW)` tag **is** a sense number, so it places
+about half the time. Treating the two as one class and quoting 18 % would
+describe neither. Where the tag names nothing the row stays `placement=false`
+with a reason — the wave-1 contract — never a guess.
+
+**The trap.** `Nachtrag-1`, `addendum-2`, `PW-1`, `Nachtrag §75-1` all carry a
+digit and in none of them is it a sense number: it is the ordinal of the
+addendum, or a section reference. Any rule that extracts "a digit" rather than a
+*leading* digit silently attaches ~200 rows to sense 1. The existing `lead_int`
+already declines them, so the fix was to pin that with negative selftests, not to
+write a new extractor.
+
+Two adjacent traps worth naming: a `PW` marker must be anchored whole-string or
+it fires on `PWG`/`PWKVN` and empties the skeleton of its real senses; and `op`
+must not be `correct`, because `build_reglue` renders `correct`/`delete` with a
+"cancels PWG" strikethrough — a Nachtrag amends its sense, it does not withdraw
+it.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2880 (wave 2 of issue
+> [#1736](https://github.com/gasyoun/SanskritLexicography/issues/1736)). Full
+> write-up: [REGLUE_SPEC §11](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/REGLUE_SPEC.md).
+> Re-runnable: `python src/placement_axis_check.py --store-rows 11603` (W2a–W2d).
+> §551 takes the next number.
+
+### §551. The re-glue sidecar's `(subcard, sense_tag)` key is not unique — every consumer that dicts on it silently drops 468 of 6 009 rows
+
+🔴 **133 `(subcard, sense_tag)` pairs occur more than once in
+`pwg_ru_relationships.jsonl`, shadowing 468 rows (7.8 %).**
+[`build_reglue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_reglue.py)
+`load()` builds `rel = {}` keyed by exactly that pair, so the last row wins and
+the other 467 never reach a card. The worst case is 25 rows collapsing to one
+(`_d_a~~h0_zz_pw01`, `Mit <div n="p">`); `vas~~h0_zz_pw01` loses 13 rows on each
+of senses 1 and 2. The loss is concentrated in `pw` (559 of the rows living under
+a duplicated key), with `nws` 26, `pwkvn` 14, `sch` 2.
+
+This is **pre-existing and orthogonal to the placement axis** — measured on wave
+1's own code re-run over the current store, and unchanged by wave 2 (identical
+133 keys / 468 rows before and after). It is recorded rather than fixed because
+de-duplicating changes which supplement reaches every card, i.e. it moves
+published review artifacts and needs its own gate.
+
+**Related, same class:** the committed lock for the published sheet
+`h180-reglue-evidence-2026-08-15` binds `sha256:d7c003ee…`, but that generation
+reproduces from **no** current code state — pristine `origin/master` and wave 2
+both render `sha256:61f32513…` over the same store. Nothing is invalidated today
+(no `decisions.json` exists for it, so no votes were cast), but the lock's
+promise — "check out the commit that created it and re-run" — does not currently
+hold, and the first voter to try would discover that.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2880. Measured over the wave-1
+> baseline sidecar rebuilt from `origin/master` (6 009 rows) and the wave-2
+> sidecar (6 374 rows), same store `sha256 811bbc21…`.
+### §552. SCH does almost only supplement PWG — 3.3 % of its rows correct it — but the signal that proves it is a printed imperative, not the gender conflict the roadmap predicted
+
+🟠 **`classify_edition_rel` could return only `sch_star` or `derived_sense` for
+the `sch` layer, both additive.** "SCH only supplements PWG" was therefore not a
+measurement of the edition; it was a property of the classifier, and no data
+could have contradicted it. Measured over all 210 SCH rows in the `pwg_ru`
+store, the claim is **almost** true and now falsifiable: **7 rows (3.3 %) edit
+PWG rather than supplement it** — 6 `sch_correct`, 1 `sch_cancel`.
+
+**The predicted signal does not exist on this layer.** The roadmap expected wave
+3 to reuse `pw_correct`'s criterion — a `<lex>` gender conflict against PWG.
+**Zero of the 210 SCH rows carry a `<lex>` token at all**, so that path can never
+fire here and was deliberately not wired up. The layer does contain exactly one
+gender correction — `ahiphena`, "lies n. statt m." — but it is stated in prose,
+not in markup, and is caught by the printed-cue rule instead.
+
+**The criterion is a speech act, not a keyword.** SCH prints instructions to the
+reader of PWG: `lies` ("S. 152, Sp. 1, Z. 2 lies {%abhíhita%}"), `Druckfehler
+für`, `zu lesen`, and for withdrawal `streiche` ("— Mit {%abhyupa%} 3. streiche
+<ls>Med.</ls>"). The distinction is load-bearing, because the near-misses are
+common: 11 of the 210 rows carry a look-alike token that means something else —
+bare `statt` describing a metrical variant (`metrisch statt {%na gan˚%}`), the
+abbreviation `St.` for *Indische Studien*, and `vgl.` pointing at literature. A
+keyword-built cue set would convict all 11 of withdrawing material they add.
+
+**Two rows are deliberately left additive.** In a compressed multi-preverb
+article (`— Mit {%anvā%} … — Mit {%samā%} Z. 3 lies 231,16. — Mit {%ud%} …`) the
+correction clause governs one section, not the row. Classifying the row as a
+correction would assert SCH withdraws material it in fact adds, so the cue is
+scoped to the leading segment and the residue is flagged
+(`contains_correction_clause`) rather than dropped — gate W3e reports it.
+
+**Independent corroboration, unplanned:** the Russian already renders these seven
+rows as corrections (`читай`, `вычеркни`, `опечатка вм.`), translated long before
+this classification existed and by a process that never saw it.
+
+Unlike wave 2's `amend`, `op` here is `correct`/`delete`: these rows really do
+withdraw the printed reading, so build_reglue's "cancels PWG" strikethrough is
+honest. Note that an *unplaced* correction shows no strikethrough — it never
+identified a sense to strike, which is wave 1's contract working as intended.
+
+Waves 1 and 2 are provably untouched, not assumed to be: the placement census
+(found 661 · no_target_marker 5 191 · out_of_range 387 · not_found 135) and
+`pwg_internal_correction` (365, 18.1 % placed) reproduce exactly. Canonical store
+untouched (rows 11 603, `sha256 811bbc21…`). Window suite 211/211.
+
+**Side effect, named rather than slipped in:** re-cutting the evidence sheet
+re-binds the lock §551 recorded as unreproducible. The sheet legitimately drops
+one card (47 → 46) — `jñā · SCH → смысл 3` is now a correction, and "does this
+supplement sit at the right PWG sense?" is not a question to ask of one — and the
+new lock reproduces from current code, which the committed `d7c003ee…` did not.
+Re-cut under PLAN decision 8 with the vote gate checked first: no `decisions.json`
+exists for the sheet, so no votes were invalidated.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2881. Measured over the wave-2
+> sidecar (6 374 rows) and the wave-3 rebuild, same store `sha256 811bbc21…`.
+> Gates W3a–W3e in `src/placement_axis_check.py`.
+> §553 takes the next number.

@@ -37,7 +37,23 @@ PILOT = ["gA", "Cid", "Sam", "jIv", "rakz", "vraj", "yat",          # 5-layer
          "DA", "Ap", "Bid", "Buj", "banD", "Sru",                    # 4-layer
          "viS", "siD"]                                               # 3-layer
 
-LAYER_BADGE = {"pw": "PW", "sch": "SCH", "pwkvn": "PWKVN", "nws": "NWS"}
+LAYER_BADGE = {"pw": "PW", "sch": "SCH", "pwkvn": "PWKVN", "nws": "NWS",
+               # H2880: a correction carried on the PWG layer itself
+               "pwg": "PWG"}
+
+# H2879: one canonical normaliser, shared with the classifier that wrote the
+# sidecar. A local re-implementation here would drift and silently un-place rows.
+# H2880: the correction predicate is imported for the same reason — the skeleton
+# and the sidecar must agree on which rows are senses.
+sys.path.insert(0, HERE)
+from edition_rel import normalize_sense_tag, pwg_correction_marker  # noqa: E402
+
+#: `placement_reason` in the words a reader sees (H2879 S6).
+PLACEMENT_REASON_RU = {
+    "no_target_marker": "цель не указана",
+    "out_of_range": "номер выше диапазона PWG",
+    "not_found": "смысл не найден",
+}
 
 
 def lead_int(st):
@@ -83,8 +99,15 @@ def reglue_one(key1, records, rel):
             homs[h] = {"h": h, "senses": collections.OrderedDict(), "new_senses": []}
         return homs[h]
 
-    # 1. skeleton — PWG rows, numeric senses first
-    pwg_rows = [d for d in records if d.get("layer") == "pwg"]
+    # 1. skeleton — PWG rows, numeric senses first.
+    # H2880: a PWG row carrying a correction marker (`Nachtrag`, `addendum`,
+    # `1 (PW)`) is an edit *to* a sense, not a sense. It used to be rendered
+    # here as an ordinary skeleton sense — `**Nachtrag)** …` — which is the
+    # wave-1 axis defect one layer down. It is attached as a supplement in
+    # step 2 instead.
+    pwg_rows = [d for d in records
+                if d.get("layer") == "pwg"
+                and not pwg_correction_marker(d.get("sense_tag"))]
 
     def sort_key(d):
         si = lead_int(d.get("sense_tag"))
@@ -93,12 +116,18 @@ def reglue_one(key1, records, rel):
     for d in sorted(pwg_rows, key=sort_key):
         h = hom_slot(homonym_of(d["subcard"]))
         st = str(d.get("sense_tag"))
-        h["senses"][st] = {"sense": st, "pwg_ru": d.get("ru", ""), "supplements": []}
+        # Slotted under the H2879-normalised tag, the same key the sidecar's
+        # placement lookup used — otherwise a '1)' skeleton sense could never
+        # receive a supplement that the sidecar already reports as placed.
+        h["senses"][normalize_sense_tag(st)] = {
+            "sense": st, "pwg_ru": d.get("ru", ""), "supplements": []}
 
-    # 2/3/4. attach non-pwg supplements at their insertion point
+    # 2/3/4. attach supplements at their insertion point. Since H2880 this
+    # includes PWG-internal corrections, which reach the sidecar exactly when
+    # they are corrections — so "has a sidecar row" is the whole test.
     for d in records:
         layer = d.get("layer")
-        if layer == "pwg":
+        if layer == "pwg" and not pwg_correction_marker(d.get("sense_tag")):
             continue
         st = str(d.get("sense_tag"))
         r = rel.get((d["subcard"], st))
@@ -110,6 +139,7 @@ def reglue_one(key1, records, rel):
             "layer": layer, "badge": LAYER_BADGE.get(layer, layer.upper()),
             "subtype": r["subtype"], "op": r["op"], "ru": d.get("ru", ""),
             "sense_tag": st, "confidence": r.get("confidence", "llm"),
+            "placement_reason": r.get("placement_reason"),
         }
         if r["subtype"] == "foreign_fragment":
             supp["lang"] = r.get("source_lang", "??")
@@ -117,8 +147,9 @@ def reglue_one(key1, records, rel):
             supp["cancels"] = True
             cancels += 1
 
-        tgt = str(ip.get("target_sense"))
-        if tgt in h["senses"]:
+        # H2879: read the sidecar's placement verdict; do not re-decide it here.
+        tgt = normalize_sense_tag(ip.get("target_sense"))
+        if r.get("placement") and tgt in h["senses"]:
             h["senses"][tgt]["supplements"].append(supp)
             supplements_placed += 1
         else:
@@ -159,12 +190,27 @@ def render_md(obj):
                 tag = f"[{sup['badge']}·{sup['subtype']}]"
                 strike = " ~~(cancels PWG)~~" if sup.get("cancels") else ""
                 lang = f" ‹{sup['lang']}›" if sup.get("lang") else ""
-                lines.append(f"  — {tag}{lang}{strike} {sup['ru']}")
+                src = (f" ‹{sup['sense_tag']}›"
+                       if sup.get("subtype") == "pwg_internal_correction"
+                       and sup.get("sense_tag") else "")
+                lines.append(f"  — {tag}{src}{lang}{strike} {sup['ru']}")
             lines.append("")
         for sup in hom["new_senses"]:
-            tag = f"[{sup['badge']}·{sup['subtype']} → *new]"
+            # A1: an unplaced supplement must not be rendered as a claim about a
+            # PWG sense. Say *why* it is unplaced instead of implying a target.
+            why = PLACEMENT_REASON_RU.get(sup.get("placement_reason"))
+            tag = (f"[{sup['badge']}·{sup['subtype']} → не привязано: {why}]"
+                   if why else f"[{sup['badge']}·{sup['subtype']} → *new]")
             lang = f" ‹{sup['lang']}›" if sup.get("lang") else ""
-            lines.append(f"**+)** {tag}{lang} {sup['ru']}")
+            # H2880: a PWG-internal correction used to be rendered as a skeleton
+            # sense, so its own tag ('pari+rakṣ — Nachtrag', 'caus-addendum-1')
+            # was on the page and told the reader which grammatical branch the
+            # correction belongs to. Moving the row out of the skeleton must not
+            # silently drop that; it is context, not a placement claim.
+            src = (f" ‹{sup['sense_tag']}›"
+                   if sup.get("subtype") == "pwg_internal_correction"
+                   and sup.get("sense_tag") else "")
+            lines.append(f"**+)** {tag}{src}{lang} {sup['ru']}")
             lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 

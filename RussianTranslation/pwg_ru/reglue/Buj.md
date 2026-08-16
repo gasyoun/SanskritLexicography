@@ -21,8 +21,8 @@
 <ls>ṚV. PRĀT. 2,11.</ls>
 <div n="v">— <ab>Vgl.</ab> {#Buji, Bujyu#}, 1. {#Boga#} .
 
-**ava)** <div n="p">— {#ava#} загибать вниз, вгибать
-<ls>KAUŚ. 19.</ls> {#BagnAvaBugnaBUyizWEH (drumEH)#} согнутый вниз, пригнутый
+**ava)** <div n="p">— {#ava#} {%загибать вниз, вгибать%}
+<ls>KAUŚ. 19.</ls> {#BagnAvaBugnaBUyizWEH (drumEH)#} {%согнутый вниз, пригнутый%}
 <ls>MBH. 1,5891.</ls>
 
 **main)** <div n="p">— {#pra#} «сгибать, нагибать»: {#dakziRaM jAnu praBujya juhoti#}
@@ -30,40 +30,40 @@
 <ls>KĀṬH.</ls> «подогнув ноги при <ab>Schol.</ab>, к <ls>KĀTY. ŚR. 10,7,4.</ls>» <ls>PAÑCAV. BR. 20,2,4.</ls> {#praBugna#}
 <ls>P. 8,4,29</ls>, <ab>Sch.</ab>
 
-**nis)** <div n="p">— {#nis#} отгибать в сторону, отодвигать в сторону, сдвигать с места: {#ozWO nirBujati#} кривит губы
+**nis)** <div n="p">— {#nis#} {%отгибать в сторону, отодвигать в сторону, сдвигать с места%}: {#ozWO nirBujati#} {%кривит губы%}
 <ls>YĀJÑ. 2,14.</ls>
 <ls>SUŚR. 2,331,19. 337,3. 338,1.</ls>
 [Page5-0301]
-{#prAyo nirBujyate SArNgamAyasaM ca#} уклоняется в сторону, ускользает
-<ls n="SUŚR.">1,99,2.</ls> {#nirBugne netre#} скошенные (вращающиеся) глаза
-<ls n="SUŚR.">2,402,11. 17.</ls> {#SmaSAne — nirBugnasragviBUzite#} согнутый
+{#prAyo nirBujyate SArNgamAyasaM ca#} {%уклоняется в сторону, ускользает%}
+<ls n="SUŚR.">1,99,2.</ls> {#nirBugne netre#} {%скошенные (вращающиеся) глаза%}
+<ls n="SUŚR.">2,402,11. 17.</ls> {#SmaSAne — nirBugnasragviBUzite#} {%согнутый%}
 <ls>MBH. 13,6406.</ls>
 
-**pari)** <div n="p">— {#pari#} охватывать, обнимать: {#tayA\smAnvi\Svata\stvama^ya\kzmayA pari^ Buja#}
+**pari)** <div n="p">— {#pari#} {%охватывать, обнимать%}: {#tayA\smAnvi\Svata\stvama^ya\kzmayA pari^ Buja#}
 <ls>VS. 16,11.</ls> {#yasyAja^sra\M Sava^sA\ mAna^mu\kTaM pa^riBu\jadroda^sI vi\Svata^H sIm#}
 <ls>ṚV. 1,100,14.</ls> {#pari yadi^ndra\ roda^sI u\Be abu^BojIrmahi\nA vi\Svata^H sIm#}
 <ls n="ṚV. 1,">33,9.</ls> {#taM zoqaSaBirBogEH paryaBujat#}
 <ls>PAÑCAV. BR. 13,5,22.</ls> {#pariBugna#}
 <ls>P. 8,4,31</ls>, <ab>Sch.</ab>
-согнутый, изогнутый
+{%согнутый, изогнутый%}
 <ls>BHAṬṬ. 10,31.</ls>
 
-**pratyava)** <div n="p">— {#pratyava#} загибать назад, отгибать: {#rwaBAn#}
+**pratyava)** <div n="p">— {#pratyava#} {%загибать назад, отгибать%}: {#rwaBAn#}
 <ls>KAUŚ. 20.</ls>
 
-**pravi)** <div n="p">— {#pravi#} изгибать, загибать: {#SalyavAraNgam#}
+**pravi)** <div n="p">— {#pravi#} {%изгибать, загибать%}: {#SalyavAraNgam#}
 <ls>SUŚR. 1,101,6.</ls>
 
-**sam)** <div n="p">— {#sam#}, <ab>partic.</ab> {#saMBugna#} сложенный, согнутый вместе
+**sam)** <div n="p">— {#sam#}, <ab>partic.</ab> {#saMBugna#} {%сложенный, согнутый вместе%}
 <ls>BHAṬṬ. 4,42.</ls>
 
-**vi)** <div n="p">— {#vi#}, <ab>partic.</ab> {#viBugna#} загнутый, отогнутый
+**vi)** <div n="p">— {#vi#}, <ab>partic.</ab> {#viBugna#} {%загнутый, отогнутый%}
 <ls>VYUTP. 101.</ls>
 
-**vinis)** <div n="p">— {#vinis#} отгибать в сторону: {#vAmenAkzi vinirBujya hastena#}
+**vinis)** <div n="p">— {#vinis#} {%отгибать в сторону%}: {#vAmenAkzi vinirBujya hastena#}
 <ls>SUŚR. 2,353,12.</ls>
 
-**vyā)** <div n="p">— {#vyA#}, <ab>partic.</ab> {#vyABugna#} согнутый, изогнутый: {#keSivaktravilagnastu kfzRavAhuraSoBata . vyABugna iva GarmAnte candrArDakiraRErGanaH ..#}
+**vyā)** <div n="p">— {#vyA#}, <ab>partic.</ab> {#vyABugna#} {%согнутый, изогнутый%}: {#keSivaktravilagnastu kfzRavAhuraSoBata . vyABugna iva GarmAnte candrArDakiraRErGanaH ..#}
 <ls>HARIV. 4313.</ls>
 <ls>PRAB. 67,11</ls>, <ab>v. l.</ab>
 
@@ -74,148 +74,148 @@
 <ls>DAŚAK.</ls> in <ls>BENF. Chr. 198,21.</ls>
 <div n="v">— <ab>Vgl.</ab> {#ABoga#} .
 
-**+)** [PW·restate → *new] <hom>1.</hom> √{#Buj#}¦, {#Bu/jati#} «гнуть, сгибать».
+**+)** [PW·restate → не привязано: цель не указана] <hom>1.</hom> √{#Buj#}¦, {#Bu/jati#} «гнуть, сгибать».
 <div n="m">— <ab>Pass.</ab> {#Bujyate#} «быть согнутым —, упасть духом». — {#Bugna#}
 <div n="1">— 1〉 «согнутый, изогнутый, бороздчатый» (о бровях), «отодвинутый в сторону, вывернутый» (о глазах).
 <div n="1">— 2〉 «согнутый, поникший, упавший духом».
 <div n="1">— 3〉 <ab>Bez.</ab> «формы <is>Saṃdhi</is> от {#o#} и {#O#} перед нелабиальными гласными».
 
-**+)** [PW·restate → *new] <div n="p">— С {#ava#} «сгибать внутрь, пригибать». {#˚Bugna#} «пригнутый, опущенный вниз».
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ava#} {%сгибать внутрь, пригибать%}. {#˚Bugna#} {%пригнутый, опущенный вниз%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#pratyava#} «сгибать назад, отгибать».
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratyava#} {%сгибать назад, отгибать%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#A#} «сгибать, подгибать». {#paryaNkamABujya#} «со скрещенными (подогнутыми) ногами в позе сидения» <ls>VAJRACCH. 19,9. 10</ls>. <ls>KĀRAṆḌ. 85,8. 86,8</ls>. {#ABugna#} «согнутый, изогнутый, отодвинутый в сторону».
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#A#} {%сгибать, подгибать%}. {#paryaNkamABujya#} {%со скрещенными (подогнутыми) ногами в позе сидения%} <ls>VAJRACCH. 19,9. 10</ls>. <ls>KĀRAṆḌ. 85,8. 86,8</ls>. {#ABugna#} {%согнутый, изогнутый, отодвинутый в сторону%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#vyA#}, {#˚Bugna#} «согнутый, изогнутый». <lex>n.</lex>
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vyA#}, {#˚Bugna#} {%согнутый, изогнутый%}. <lex>n.</lex>
 
-**+)** [PW·restate → *new] <div n="p">— С {#ni#} «сгибать, опускать, клонить».
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#ni#} {%сгибать, опускать, клонить%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#nis#} «откладывать в сторону, отодвигать, смещать с места, выдвигать из» (<ab>Abl.</ab> <ls>ṚV. 6,62,6</ls>). {#ozWO#} «кривить губы». <ab>Pass.</ab> «отклоняться в сторону, ускользать». {#nirBugna#} «согнутый, вывернутый» (о глазах).
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#nis#} {%откладывать в сторону, отодвигать, смещать с места, выдвигать из%} (<ab>Abl.</ab> <ls>ṚV. 6,62,6</ls>). {#ozWO#} {%кривить губы%}. <ab>Pass.</ab> {%отклоняться в сторону, ускользать%}. {#nirBugna#} {%согнутый, вывернутый%} (о глазах).
 
-**+)** [PW·restate → *new] <div n="p">— С {#vinis#} «изгибать в сторону».
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vinis#} {%изгибать в сторону%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#pari#} «охватывать, обнимать». {#˚Bugna#} «согнутый, изогнутый» <ls>BHAṬṬ.</ls>
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pari#} {%охватывать, обнимать%}. {#˚Bugna#} {%согнутый, изогнутый%} <ls>BHAṬṬ.</ls>
 
-**+)** [PW·restate → *new] <div n="p">— С {#pra#} «сгибать; складывать, сворачивать».
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pra#} {%сгибать; складывать, сворачивать%}.
 
-**+)** [PW·restate → *new] <div n="p">— С *{#vi#}, {#˚Bugna#} «загнутый, отогнутый».
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С *{#vi#}, {#˚Bugna#} {%загнутый, отогнутый%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#pravi#} «отгибать, заворачивать».
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pravi#} {%отгибать, заворачивать%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#sam#} «обвивать, обматывать» <ls>Comm. zu ĀPAST. ŚR. 7,11,5</ls>. {#saMBugna#} «согнутый, свернутый вместе».
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#sam#} {%обвивать, обматывать%} <ls>Comm. zu ĀPAST. ŚR. 7,11,5</ls>. {#saMBugna#} {%согнутый, свернутый вместе%}.
 
-**+)** [PW·restate → *new] <hom>2.</hom> {#Buj#}¦ в {#triBuj#}.
+**+)** [PW·restate → не привязано: цель не указана] <hom>2.</hom> {#Buj#}¦ в {#triBuj#}.
 
-**+)** [PW·restate → *new] <hom>3.</hom> √{#Buj#}¦, {#BA/jati#}, {#Bunakti#}, {#BuNkte#}, {#BuYjati#} ({#BuYjatI/#} <ab>Partic.</ab> <lex>f.</lex>). {#˚te#}, {#Bukta#} <ab>Partic.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <hom>3.</hom> √{#Buj#}¦, {#BA/jati#}, {#Bunakti#}, {#BuNkte#}, {#BuYjati#} ({#BuYjatI/#} <ab>Partic.</ab> <lex>f.</lex>). {#˚te#}, {#Bukta#} <ab>Partic.</ab>
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 «наслаждаться, иметь нечто в пользование», как «извлекать пользу, владеть с пользой, пользоваться, предаваться наслаждению чем-либо», так и применительно к «вкушению пищи»; в более древнем языке с <ab>Instr.</ab>, в позднейшем по большей части с <ab>Acc.</ab> без дополнения — «принимать пищу и есть» (о животных: «поедать»); землю, страну, город (<ab>Acc.</ab>) «вкушать, извлекать из нее пользу», то есть <ab>v. a.</ab> «властвовать» и «овладевать» (говорится о государе); кого-либо (<ab>Acc.</ab>) «вкушать», то есть <ab>v. a.</ab> «использовать в своих целях, эксплуатировать» и «вкушать плотски». В позднейшем языке обычно <ab>Med.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%наслаждаться, иметь нечто в пользование%}, как {%извлекать пользу, владеть с пользой, пользоваться, предаваться наслаждению чем-либо%}, так и применительно к {%вкушению пищи%}; в более древнем языке с <ab>Instr.</ab>, в позднейшем по большей части с <ab>Acc.</ab> без дополнения — {%принимать пищу и есть%} (о животных: {%поедать%}); землю, страну, город (<ab>Acc.</ab>) {%вкушать, извлекать из нее пользу%}, то есть <ab>v. a.</ab> {%властвовать%} и {%овладевать%} (говорится о государе); кого-либо (<ab>Acc.</ab>) {%вкушать%}, то есть <ab>v. a.</ab> {%использовать в своих целях, эксплуатировать%} и {%вкушать плотски%}. В позднейшем языке обычно <ab>Med.</ab>
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 «иметь нечто» (<ab>Acc.</ab>, в виде исключения <ab>Instr.</ab>) «в удел, в пользование», то есть <ab>v. a.</ab> «нести наказание у кого-либо»; (<ab>Gen.</ab>) «пожинать плоды чего-либо» (<ab>Acc.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 «иметь нечто» (<ab>Acc.</ab>, в виде исключения <ab>Instr.</ab>) «в удел, в пользование», то есть <ab>v. a.</ab> «нести наказание у кого-либо»; (<ab>Gen.</ab>) «пожинать плоды чего-либо» (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 <ab>Act.</ab> «быть полезным кому-либо» (<ab>Acc.</ab>), «идти на пользу, приносить благо, служить». Единожды <ab>v. l.</ab> <ab>Med.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 <ab>Act.</ab> {%быть полезным кому-либо%} (<ab>Acc.</ab>), {%идти на пользу, приносить благо, служить%}. Единожды <ab>v. l.</ab> <ab>Med.</ab>
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 в <ab>Astr.</ab> «проходить, протекать», с <ab>Acc.</ab> <ls>Spr. 7740</ls> (одновременно «наслаждаться, расходовать») определенный <ab>best.</ab> период времени «проживать, длиться, наполнять, продолжаться». — Смешивается с {#yuj#}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 в <ab>Astr.</ab> «проходить, протекать», с <ab>Acc.</ab> <ls>Spr. 7740</ls> (одновременно «наслаждаться, расходовать») определенный <ab>best.</ab> период времени «проживать, длиться, наполнять, продолжаться». — Смешивается с {#yuj#}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {#Bojayati#}. {#˚te#} (метрически)
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {#Bojayati#}. {#˚te#} (метрически)
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 «кормить кого-либо чем-либо, угощать»; с двойным <ab>Acc.</ab> или с <ab>Acc.</ab> лица и <ab>Instr.</ab> вещи.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%кормить кого-либо чем-либо, угощать%}; с двойным <ab>Acc.</ab> или с <ab>Acc.</ab> лица и <ab>Instr.</ab> вещи.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 в виде исключения «давать кому-либо наслаждаться чем-либо» <ab>überh.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 в виде исключения {%давать кому-либо наслаждаться чем-либо%} <ab>überh.</ab>
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 «употреблять в пищу, использовать как питание» <ls>CARAKA. 6,18</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%употреблять в пищу, использовать как питание%} <ls>CARAKA. 6,18</ls>.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Desid.</ab> {#buBukzati#} (единожды), {#˚te#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Desid.</ab> {#buBukzati#} (единожды), {#˚te#}
 
-**+)** [PW·restate → *new] <div n="1">— 1〉 «желать есть, быть голодным».
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 1〉 {%желать есть, быть голодным%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 «желать насладиться —, желать приобщиться к чему-либо» <ls>NAIṢ. 6,100</ls>. — {#buBukzita#} <ab>s.</ab> <ab>bes.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%желать насладиться —, желать приобщиться к чему-либо%} <ls>NAIṢ. 6,100</ls>. — {#buBukzita#} <ab>s.</ab> <ab>bes.</ab>
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Intens.</ab>
-<div n="1">— 1〉 {#boBujIti#} «наслаждаться (с усилением)».
-<div n="1">— 2〉 {#boBujyate#} «быть многократно поедаемым».
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Intens.</ab>
+<div n="1">— 1〉 {#boBujIti#} {%наслаждаться (с усилением)%}.
+<div n="1">— 2〉 {#boBujyate#} {%быть многократно поедаемым%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#aDi#} «съедать, поедать, наслаждаться» <ab>überh.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aDi#} {%съедать, поедать, наслаждаться%} <ab>überh.</ab>
 
-**+)** [PW·restate → *new] <div n="p">С {#anu#}
-<div n="1">— 1〉 «пожинать плоды чего-либо» (<ab>Acc.</ab>), «получать вознаграждение за».
-<div n="1">— 2〉 «наслаждаться, приобщаться, принимать участие в».
-<div n="1">— 3〉 в <ab>Astr.</ab> «проходить (период)».
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">С {#anu#}
+<div n="1">— 1〉 {%пожинать плоды чего-либо%} (<ab>Acc.</ab>), {%получать вознаграждение за%}.
+<div n="1">— 2〉 {%наслаждаться, приобщаться, принимать участие в%}.
+<div n="1">— 3〉 в <ab>Astr.</ab> {%проходить (период)%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#aBi#} «быть полезным кому-либо» (<ab>Acc.</ab>), «служить».
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBi#} {%быть полезным кому-либо%} (<ab>Acc.</ab>), {%служить%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#A#} во 2. *{#ABoga#}, {#ABogaya/#} <ab>u. s. w.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#A#} во 2. *{#ABoga#}, {#ABogaya/#} <ab>u. s. w.</ab>
 
-**+)** [PW·restate → *new] <div n="p">— С {#samA#} «наслаждаться», то есть <ab>v. a.</ab> «властвовать над» (<ab>Acc.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#samA#} {%наслаждаться%}, то есть <ab>v. a.</ab> {%властвовать над%} (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="p">— С {#upa#}
-<div n="1">— 1〉 «наслаждаться, есть, поедать, пожирать; наслаждаться» также в смысле <ab>v. a.</ab> «пользоваться, применять, извлекать пользу из, жить за счет, властвовать; приобщаться» (также о неприятном). «Использовать кого-либо» также в смысле <ab>v. a.</ab> «предаваться любви с» (вместо <ab>Acc.</ab> лица — также {#SarIram#}).
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upa#}
+<div n="1">— 1〉 «наслаждаться, есть, поедать, пожирать; наслаждаться» также в смысле <ab>v. a.</ab> «пользоваться, применять, извлекать пользу из, жить за счет, властвовать; приобщаться» (также о неприятном). «Использовать кого-либо» также в смысле <ab>v. a.</ab> «предаваться любви с» (вм. <ab>Acc.</ab> лица — также {#SarIram#}).
 <div n="1">— 2〉 «иметь вознаграждение за что-либо» (<ab>Acc.</ab>).
 <div n="1">— 3〉 <ab>Act.</ab> «быть полезным кому-либо» (<ab>Acc.</ab>), «служить».
 
-**+)** [PW·restate → *new] <div n="p">— С {#pratyupa#} «наслаждаться, поедать».
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pratyupa#} {%наслаждаться, поедать%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#samupa#} «предаваться любви с» (<ab>Acc.</ab>)
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#samupa#} {%предаваться любви с%} (<ab>Acc.</ab>)
 
-**+)** [PW·restate → *new] <div n="p">— С {#pari#}
-<div n="1">— 1〉 «есть заранее, есть прежде других».
-<div n="1">— 2〉 «обходить кого-либо» (<ab>Acc.</ab>) «при еде, оставлять без угощения».
-<div n="1">— 3〉 «поедать, съедать, пожирать, истреблять» <ls>KĀD. 2,118,1</ls>. (<ls n="KĀD. 2,">145,6</ls>).
-<div n="1">— 4〉 «наслаждаться, пользоваться, употреблять». — {#pariBujyantam#} <ls>MBH. 11,97</ls> ошибочно вместо {#˚Bfjjyantam#}. — {#paribuBukzita#} <ab>s.</ab> <ab>bes.</ab> (<ls>Nachtr. 4</ls>)
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pari#}
+<div n="1">— 1〉 {%есть заранее, есть прежде других%}.
+<div n="1">— 2〉 {%обходить кого-либо%} (<ab>Acc.</ab>) {%при еде, оставлять без угощения%}.
+<div n="1">— 3〉 {%поедать, съедать, пожирать, истреблять%} <ls>KĀD. 2,118,1</ls>. (<ls n="KĀD. 2,">145,6</ls>).
+<div n="1">— 4〉 {%наслаждаться, пользоваться, употреблять%}. — {#pariBujyantam#} <ls>MBH. 11,97</ls> ошибочно вм. {#˚Bfjjyantam#}. — {#paribuBukzita#} <ab>s.</ab> <ab>bes.</ab> (<ls>Nachtr. 4</ls>)
 
-**+)** [PW·restate → *new] <div n="p">— С {#pra#}
-<div n="1">— 1〉 *«приступать к еде, начинать есть».
-<div n="1">— 2〉 <ab>Act.</ab> «быть услужливым, быть готовым к услугам».
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#pra#}
+<div n="1">— 1〉 *{%приступать к еде, начинать есть%}.
+<div n="1">— 2〉 <ab>Act.</ab> {%быть услужливым, быть готовым к услугам%}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#prati#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#prati#}
 <div n="1">— 1〉 «наслаждаться».
 <div n="1">— 2〉 «принимать пищу наряду с лечением» <ls>CARAKA. 1,13</ls>. {#pratiBukta#} «соблюдавший диету» <ls n="CARAKA.">6,26</ls>. «питавшийся во время лечения» (<ab>Instr.</ab>) <ls n="CARAKA. 6,">20</ls>.
 <div n="m">— <ab>Caus.</ab> {#laGvannapratiBojita#} «тот, кому при лечении давали принимать легкую пищу» <ls>BHĀVAPR. 3,21,38</ls>.
 
-**+)** [PW·restate → *new] <div n="p">— С {#vi#} в *{#BuktaviBukta#}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vi#} в *{#BuktaviBukta#}.
 
-**+)** [PW·restate → *new] <div n="p">— С {#sam#}
-<div n="1">— 1〉 «наслаждаться вместе, держать общую трапезу» <ls>AV. 3,10,7. 11,2,31</ls>. <ls>ĀPAST. 2,17,9</ls>. (вероятно, следует читать {#saMBuYjatAM#}).
-<div n="1">— 2〉 «наслаждаться, наслаждаться плотски».
-<div n="1">— 3〉 в <ab>Astr.</ab> «проходить (период)». {#saMBukta#} <ls>MAṆITTHA</ls> у <ls>UTPALA zu VARĀH. BṚH. 26 (24),4</ls>.
-<div n="m">— <ab>Caus.</ab> «кормить кого-либо» (<ab>Acc.</ab>) «вместе с» (<ab>Instr.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#sam#}
+<div n="1">— 1〉 {%наслаждаться вместе, держать общую трапезу%} <ls>AV. 3,10,7. 11,2,31</ls>. <ls>ĀPAST. 2,17,9</ls>. (вероятно, следует читать {#saMBuYjatAM#}).
+<div n="1">— 2〉 {%наслаждаться, наслаждаться плотски%}.
+<div n="1">— 3〉 в <ab>Astr.</ab> {%проходить (период)%}. {#saMBukta#} <ls>MAṆITTHA</ls> у <ls>UTPALA zu VARĀH. BṚH. 26 (24),4</ls>.
+<div n="m">— <ab>Caus.</ab> {%кормить кого-либо%} (<ab>Acc.</ab>) {%вместе с%} (<ab>Instr.</ab>).
 
-**+)** [PW·restate → *new] <hom>4.</hom> {#Bu/j#}¦
-<div n="1">— 1〉 <lex>f.</lex> «принесение пользы, содействие благу, служение на благо; наслаждение, выгода, польза; обладание, имущество». <ab>Dat.</ab> {#Bje/#} также как <ab>Infin.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <hom>4.</hom> {#Bu/j#}¦
+<div n="1">— 1〉 <lex>f.</lex> {%принесение пользы, содействие благу, служение на благо; наслаждение, выгода, польза; обладание, имущество%}. <ab>Dat.</ab> {#Bje/#} также как <ab>Infin.</ab>
 <div n="1">— 2〉 <lex>Adj.</lex> в конце <ab>Comp.</ab>
-<div n="2">— a〉 «наслаждающийся, вкушающий, приобщающийся, плотски наслаждающийся». В сочетании со словами, обозначающими землю, — то есть <ab>v. a.</ab> «властвующий, государь, царь».
-<div n="2">— b〉 «пожинающий плоды чего-либо».
-<div n="2">— c〉 «приносящий пользу, содействующий благу».
-<div n="2">— d〉 «проходящий, наполняющий» (о времени).
+<div n="2">— a〉 {%наслаждающийся, вкушающий, приобщающийся, плотски наслаждающийся%}. В сочетании со словами, обозначающими землю, — то есть <ab>v. a.</ab> {%властвующий, государь, царь%}.
+<div n="2">— b〉 {%пожинающий плоды чего-либо%}.
+<div n="2">— c〉 {%приносящий пользу, содействующий благу%}.
+<div n="2">— d〉 {%проходящий, наполняющий%} (о времени).
 
-**+)** [PW·restate → *new] <hom>3.</hom> √{#Buj#}¦ с {#upa#} <ab>Desid.</ab> «намереваться вкусить (в супружеском смысле)» <ls>HEM. PAR. 1,380</ls>.<info n="sup_5"/>
+**+)** [PW·restate → не привязано: цель не указана] <hom>3.</hom> √{#Buj#}¦ с {#upa#} <ab>Desid.</ab> «намереваться вкусить (в супружеском смысле)» <ls>HEM. PAR. 1,380</ls>.<info n="sup_5"/>
 
-**+)** [PW·restate → *new] <hom>3.</hom> √{#Buj#}¦ с {#upa#} <ab>Desid.</ab> 5.<info n="sup_7"/>
+**+)** [PW·restate → не привязано: цель не указана] <hom>3.</hom> √{#Buj#}¦ с {#upa#} <ab>Desid.</ab> 5.<info n="sup_7"/>
 
-**+)** [PWKVN·derived_sense → *new] <hom>3.</hom> {#Buj#}¦ с {#upa#} <ab>Desid.</ab> {%намереваться вкусить%} (супружески) <ls>HEM. PAR. 1,380</ls>.
+**+)** [PWKVN·derived_sense → не привязано: цель не указана] <hom>3.</hom> {#Buj#}¦ с {#upa#} <ab>Desid.</ab> {%намереваться вкусить%} (супружески) <ls>HEM. PAR. 1,380</ls>.
 
-**+)** [PWKVN·a2a → *new] <hom>3.</hom> {#Buj#}¦ с {#upa#} <ab>Desid.</ab> 5.
+**+)** [PWKVN·a2a → не привязано: цель не указана] <hom>3.</hom> {#Buj#}¦ с {#upa#} <ab>Desid.</ab> 5.
 
-**+)** [SCH·derived_sense → *new] 3. {%bhuj%}¦ с {%upa%} Desid. намереваться (супружески) вкусить, <ls>Hem. Par. 1,380.</ls> {part=,seq=20923,type=,n=2}
+**+)** [SCH·derived_sense → не привязано: цель не указана] 3. {%bhuj%}¦ с {%upa%} Desid. намереваться (супружески) вкусить, <ls>Hem. Par. 1,380.</ls> {part=,seq=20923,type=,n=2}
 
 ## h2
 
 **1)** <div n="p">— {#sam#}
-<div n="1"> 1) совместно вкушать, вкушать: {#daDyodanaM saMBuYjIyAtAm#}
+<div n="1"> 1) {%совместно вкушать, вкушать%}: {#daDyodanaM saMBuYjIyAtAm#}
 <ls>ŚĀṄKH. ŚR. 1. 17,7.</ls> {#apaTyEH saha saMBukte vyADirannarase yaTA#}
 <ls>DAŚ. 2,57.</ls> {#saMBoktuM vizayAn#}
 <ls>Spr. 1337.</ls> {#parEH saMBujyate rAjyam#}
-<ls n="Spr.">1728.</ls> вкушать плотски: {#samaBujyata tABiH sa yaTecCam#}
+<ls n="Spr.">1728.</ls> {%вкушать плотски%}: {#samaBujyata tABiH sa yaTecCam#}
 <ls>RĀJA-TAR. 2,106.</ls> {#suganDAdityam — saMbuBuje#}
 <ls n="RĀJA-TAR.">5,283.</ls>
 [Page5-0306]
 {#saMBuktaBUrijArA#}
 <ls n="RĀJA-TAR.">6,321.</ls>
 
-**2)** <div n="1">— 2) оказываться полезным: {#sarvA^nya\jYAnsa^MBuYja\tI#} служа при всех жертвоприношениях
+**2)** <div n="1">— 2) {%оказываться полезным%}: {#sarvA^nya\jYAnsa^MBuYja\tI#} {%служа при всех жертвоприношениях%}
 <ls>AV. 3,10,7.</ls>
 
-**3)** <div n="1">— 3) поедать: {#(SarIraM me) balimiva pariBoktuM vAyasAstarkayanti#}
-<ls>MṚCCH. 157,11.</ls> вкушать, пользоваться, употреблять: {#yadi me sa putra imaM DanaskanDaM pariBuYjIyAt#}
+**3)** <div n="1">— 3) {%поедать%}: {#(SarIraM me) balimiva pariBoktuM vAyasAstarkayanti#}
+<ls>MṚCCH. 157,11.</ls> {%вкушать, пользоваться, употреблять%}: {#yadi me sa putra imaM DanaskanDaM pariBuYjIyAt#}
 <ls>SADDH. P. 4,11,a.</ls> {#apariBukta#}
 <ls n="SADDH. P. 4,">10,b.</ls> {#suravaDUpariBuktalatAgfhAH#}
 <ls>KIR. 5,5.</ls>
@@ -225,7 +225,7 @@
 <ls>R. GORR. 2,62,24.</ls> {#nirmAlyadAma pariBuktamanojYaganDam#} (так следует читать)
 <ls>ṚT. 4. 15.</ls> {#jIrRaM ca pariBuktaM ca yAtayAmamidaM dvayam#}
 <ls>AK. 3,4,23,147.</ls> — <ab>st.</ab> {#pariBujyantam#}
-<ls>MBH. 11,97</ls> читает <ls>ed. Bomb.</ls> {#pariBfjjantam#} (<ab>d. i.</ab> {#˚Bfjjyantam)#} . <ab>Vgl.</ab> {#pariBoktar#} <ab>fg.</ab> — <ab>desid.</ab> <ab>partic.</ab> {#paribuBukzita#} чрезвычайно голодный
+<ls>MBH. 11,97</ls> читает <ls>ed. Bomb.</ls> {#pariBfjjantam#} (<ab>d. i.</ab> {#˚Bfjjyantam)#} . <ab>Vgl.</ab> {#pariBoktar#} <ab>fg.</ab> — <ab>desid.</ab> <ab>partic.</ab> {#paribuBukzita#} {%чрезвычайно голодный%}
 <ls>MBH. 9,1483.</ls> Может быть разложено и в {#pari + bu˚#}.
 
 **abhi+bhuj.1)** <div n="p">— {#aBi#} {%быть полезным кому-либо%} (<ab>acc.</ab>), {%служить%}: {#ime lokA anyo'nyamaBiBuYjanti#}
@@ -249,7 +249,7 @@
 **anu+bhuj.3)** <div n="1">— 3) {%проходить%} (в <ab>astr.</ab> смысле): {#(aNgArakaH) triBistriBiH pakzErekEkaSo rASIndvAdaSAnuBuNkte#}
 <ls>BHĀG. P. 5,22,14.</ls>
 
-**caus)** <div n="v">— <ab>Vgl.</ab> {#saMBoga#} <ab>u. s. w.</ab> — <ab>caus.</ab> потчевать кого-либо (<ab>acc.</ab>) чем-либо (<ab>instr.</ab>)
+**caus)** <div n="v">— <ab>Vgl.</ab> {#saMBoga#} <ab>u. s. w.</ab> — <ab>caus.</ab> {%потчевать кого-либо%} (<ab>acc.</ab>) {%чем-либо%} (<ab>instr.</ab>)
 <ls>YĀJÑ. 1,105.</ls>
 <ls>BHĀG. P. 9,5,18.</ls> {#atiTInannapAnena BftyAnatyaSanena ca . saMBojya#}
 <ls>MBH. 3,12672.</ls>
@@ -295,11 +295,15 @@
 <ls>PAÑCAR. 4,3,202</ls>), {#buBukzu#} .
 
 **intens.1)** <div n="p">— <ab>intens.</ab> {#boBujyate#} с <ab>pass.</ab> <ab>Bed.</ab> {%многократно поедаться%}: {#boBujyate 'tiTisuhftsvajanEH sahAnnam#}
-<ls>VARĀH. BṚH. S. 19,18</ls> {#(pepIyate#} там же также <ab>pass.</ab>; согласно этому в <ab>u.</ab> 2. {#pA#} <ab>intens.</ab> слова «с <ab>pass.</ab> <ab>Bed.</ab>» следует переставить строкой выше перед {#pepIyate#}).
-
-**nachtr)** <div n="v">— <ab>Vgl.</ab> {#pratiBoga#} .
+<ls>VARĀH. BṚH. S. 19,18</ls> {#(pepIyate#} там же также <ab>pass.</ab>; согласно этому в <ab>u.</ab> 2. {#pA#} <ab>intens.</ab> слова {%с <ab>pass.</ab> <ab>Bed.</ab>%} следует переставить строкой выше перед {#pepIyate#}).
 
 **ā+bhuj.1)** <div n="p">— {#A#} <ab>s.</ab> {#ABogi#} и <ab>vgl.</ab> {#ABojin#} в {#BujagABojin#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr› <div n="v">— <ab>Vgl.</ab> {#pratyupaBoga#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr› <div n="v">— <ab>Vgl.</ab> {#samupaBoga#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr› <div n="v">— <ab>Vgl.</ab> {#pratiBoga#} .
 
 ## h3
 
@@ -350,16 +354,16 @@
 <ls>RĀJA-TAR. 1,45.</ls> В виде исключения не скомпоновано со своим <ab>obj.</ab>: {#na prakAmaBujaH SrAdDe#}
 <ls>RAGH. 1,66</ls>; <ab>vgl.</ab> {#agra˚#} .
 
-**2b)** <div n="2">— b) пожинающий плоды чего-либо: {#kilviza˚#}
+**2b)** <div n="2">— b) {%пожинающий плоды чего-либо%}: {#kilviza˚#}
 <ls>MĀRK. P. 29,30.</ls>
 
-**2c)** <div n="2">— c) приносящий пользу, полезный: {#viSva˚#}
+**2c)** <div n="2">— c) {%приносящий пользу, полезный%}: {#viSva˚#}
 <ls>MAITRYUP. 5,1. 6. 9.</ls>
 
-**2d)** <div n="2">— d) пробегающий, наполняющий: {#vyakta˚ (kAla)#}
+**2d)** <div n="2">— d) {%пробегающий, наполняющий%}: {#vyakta˚ (kAla)#}
 <ls>BHĀG. P. 3,11,3.</ls> {#aviSeza˚ (kAla)#} 4.
 
-**nachtr)** <div n="v">— <ab>Vgl.</ab> {#a˚, agra˚, anna˚, amfta˚, kaRa˚, kaRwaka˚#}
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr› <div n="v">— <ab>Vgl.</ab> {#a˚, agra˚, anna˚, amfta˚, kaRa˚, kaRwaka˚#}
 (<ls>HIT. 121,16</ls>). {#kravya˚, kziti˚, kzitilava˚, kzORI˚, kzmA˚, jagatI˚, taru˚, deha˚, DArA˚, pARi˚, piSita˚, puru˚, pfTivI˚, pfTvI˚, PaRi˚, vali˚, bahu˚#} (также
 <ls>SUŚR. 2,542. 5</ls>), {#BAga˚, BikzA˚, BujaMga˚, BU˚, BUmi˚, Beka˚, BEkza˚, mita˚, yajYa˚, yajYAMSa˚, lepa˚, vetana˚, stana˚, havirBuj, havizya˚#} .
 
@@ -378,17 +382,17 @@
 <ls>Sp. 302, Z. 9. fgg.</ls> <ab>vgl.</ab> выше <ab>u.</ab> 1. {#Buj#} .
 
 **2)** <div n="p">— {#anu#}
-<div n="1"> 2) {#anuBoktuM mahotsavam#} так <ab>v. a.</ab> принимать участие в
+<div n="1"> 2) {#anuBoktuM mahotsavam#} так <ab>v. a.</ab> {%принимать участие в%}
 <ls>R. 7,91,10.</ls>
 
-**3)** <div n="p">— {#samA#} вкушать: {#samABokzyanti pfTivIm#} так <ab>v. a.</ab> будут властвовать над
+**3)** <div n="p">— {#samA#} {%вкушать%}: {#samABokzyanti pfTivIm#} так <ab>v. a.</ab> {%будут властвовать над%}
 <ls>BHĀG. P. 12,1,7.</ls>
 
 **4)** <div n="p">— {#samupa#}
 <ls>R. 7,26,21.</ls>
 
 **5)** <div n="p">— {#sam#}
-<div n="1"> 1) вкушать плотски
+<div n="1"> 1) {%вкушать плотски%}
 <ls>R. 7,17,6.</ls>
 
 ## h6

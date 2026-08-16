@@ -111,6 +111,8 @@ TYPOLOGY = {
     "restate":          ("restate",  "abridging", "restates", "PW says the same thing more briefly — NOT a new meaning"),
     "pw_correct":       ("correct",  "abridging", "cancels",  "PW changes a value (gender, form, reading) — overrides PWG"),
     "pw_cancels":       ("delete",   "abridging", "cancels",  "PW withdraws PWG material"),
+    # H2880 wave 2 — an edit carried inside the PWG skeleton itself.
+    "pwg_internal_correction": ("amend", "internal", "cancels", "Nachtrag / addendum inside PWG amending this sense — not a sense of its own"),
 }
 CLASS_LABEL = {"adds": "＋ added meaning", "restates": "≈ restatement",
                "cancels": "✕ cancels / corrects"}
@@ -264,6 +266,16 @@ def render_body(raw, mode=EXPANDED, nl=None):
     return _mark_gaps(body)
 
 
+#: `placement_reason` as a reviewer-facing chip (H2879 S6). Shown only when the
+#: supplement is NOT placed, so a `restate` chip can never be read on its own as
+#: a claim about some PWG sense (acceptance criterion A1).
+PLACEMENT_REASON_LABEL = {
+    "no_target_marker": "no target given",
+    "out_of_range": "sense number above PWG's range",
+    "not_found": "sense not found",
+}
+
+
 def _supp_head(sup):
     """The typology chips — identical in both renderings, so a reviewer voting
     in compact mode votes on the same classification they see in expanded."""
@@ -273,11 +285,15 @@ def _supp_head(sup):
     lang = ' <span class="tchip t-meta">‹%s›</span>' % esc(sup["lang"]) if sup.get("lang") else ""
     cancels = (' <span class="tchip t-cancels">cancels PWG</span>'
                if sup.get("cancels") else "")
+    why = PLACEMENT_REASON_LABEL.get(sup.get("placement_reason"))
+    unplaced = (' <span class="tchip t-meta" title="the typology label says what '
+                'kind of supplement this is; it does not assert a target sense">'
+                'not placed: %s</span>' % esc(why)) if why else ""
     head = ('<span class="tchip t-%s" title="%s">%s</span>'
             '<span class="tchip t-meta">%s</span>'
-            '<span class="tchip t-meta">%s · %s</span>%s%s'
+            '<span class="tchip t-meta">%s · %s</span>%s%s%s'
             % (klass, esc(gloss), esc(CLASS_LABEL[klass]), esc(subtype),
-               esc(sup.get("badge", "?")), esc(op), lang, cancels))
+               esc(sup.get("badge", "?")), esc(op), lang, cancels, unplaced))
     return head, klass
 
 
@@ -554,8 +570,16 @@ def selftest():
 
     # every subtype the relationship sidecar can emit must be classified
     from_spec = {"restate", "nws_at_sense", "a2a", "sch_star", "foreign_fragment",
-                 "derived_sense", "pw_correct", "pw_cancels"}
+                 "derived_sense", "pw_correct", "pw_cancels",
+                 "pwg_internal_correction"}
     check(from_spec <= set(TYPOLOGY), "every ADDENDA_TYPOLOGY subtype is classified")
+    # H2880: the sidecar is the authority on what can appear, so read it rather
+    # than trusting the literal above to stay in step with the classifier.
+    from edition_rel import SUBTYPES as _SUBTYPES
+    unclassified = {s for s in _SUBTYPES
+                    if s not in ("base", "unknown")} - set(TYPOLOGY)
+    check(not unclassified,
+          "every classifier subtype is in TYPOLOGY (missing: %r)" % unclassified)
 
     # ---------------------------------------------------------------- H2844 P1
     # The newline-collapse fixtures. Three things must hold at once: an
