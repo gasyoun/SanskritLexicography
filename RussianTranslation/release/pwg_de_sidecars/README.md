@@ -2,6 +2,8 @@
 
 _Created: 16-08-2026 · Last updated: 16-08-2026_
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21961709.svg)](https://doi.org/10.5281/zenodo.21961709)
+
 The **German** side of the Petersburger Wörterbuch edition graph, serialized for
 FAIR reuse. This pack is the citable form of the H1629 export profile; the
 structural layers it carries were built by H1624 G1–G6.
@@ -104,5 +106,15 @@ Field-by-field mapping: [`DE_EDITION_EXPORT_PROFILE_ONTOLEX_TEI.md`](https://git
 
 See [`CITATION.cff`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/pwg_de_sidecars/CITATION.cff).
 Cite the concept DOI unless you need to pin one version.
+
+| | |
+|---|---|
+| Concept DOI (cite this) | [10.5281/zenodo.21961709](https://doi.org/10.5281/zenodo.21961709) |
+| Version DOI (v1.0.0) | [10.5281/zenodo.21961710](https://doi.org/10.5281/zenodo.21961710) |
+| GitHub release | [`pwg-de-edition-v1.0.0`](https://github.com/gasyoun/SanskritLexicography/releases/tag/pwg-de-edition-v1.0.0) |
+
+This is a **dataset** record with its own concept DOI. It is deliberately not
+the repository's software DOI ([10.5281/zenodo.21306715](https://doi.org/10.5281/zenodo.21306715)),
+which describes the codebase — do not cite that one for this data.
 
 _Dr. Mārcis Gasūns_

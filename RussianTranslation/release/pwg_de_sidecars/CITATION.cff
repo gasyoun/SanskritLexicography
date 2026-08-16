@@ -21,6 +21,17 @@ url: "https://github.com/gasyoun/SanskritLexicography/releases/tag/pwg-de-editio
 license: "CC-BY-SA-4.0"
 version: 1.0.0
 date-released: 2026-08-16
+doi: 10.5281/zenodo.21961709
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21961709"
+    description: "Zenodo concept DOI (cite this)"
+  - type: doi
+    value: "10.5281/zenodo.21961710"
+    description: "Zenodo version DOI for 1.0.0"
+  - type: other
+    value: "pwg-de-edition-v1.0.0"
+    description: "GitHub release tag; bytes hash-identical to the Zenodo version"
 keywords:
   - sanskrit
   - german
