@@ -82,7 +82,11 @@ CLASS_LABEL = {"adds": "＋ добавленный смысл", "restates": "≈
                "cancels": "✕ отмена / правка"}
 CLASS_OF = {"restate": "restates", "pw_correct": "cancels", "pw_cancels": "cancels",
             "nws_at_sense": "adds", "sch_star": "adds", "derived_sense": "adds",
-            "foreign_fragment": "adds", "a2a": "adds"}
+            "foreign_fragment": "adds", "a2a": "adds",
+            # H2880 wave 2. Present so the label is right if this stratum is
+            # ever sampled; QUOTA below deliberately does NOT sample it yet —
+            # adding a stratum would change a published sheet's content_hash.
+            "pwg_internal_correction": "cancels"}
 
 EXTRA_CSS = """  .tchip { display:inline-block; padding:1px 7px; border-radius:9px;
     font-size:11px; font-weight:600; margin-right:4px; white-space:nowrap; }
@@ -125,6 +129,15 @@ def build_items():
     census = collections.Counter()
     for r in rel:
         st = (r["layer"], r["relationship"]["subtype"])
+        # H2880: the sidecar now also carries PWG-internal corrections. They are
+        # deliberately outside THIS sheet's population: its question is "does
+        # this supplement from a later layer sit at the right PWG sense?", which
+        # is not the question to ask of a Nachtrag inside PWG itself. Counting
+        # them in the census would inflate `checkable` with pairs no stratum can
+        # draw — 9 of them, silently undrawable. They get their own gate when
+        # wave 2 goes to review; until then they are neither counted nor voted.
+        if r.get("layer") == "pwg":
+            continue
         census["total"] += 1
         rec = store.get((r["subcard"], str(r["sense_tag"])))
         if not rec:

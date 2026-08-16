@@ -31,7 +31,7 @@ REL = os.path.join(HERE, "pwg_ru_relationships.jsonl")
 
 from edition_rel import (  # noqa: E402
     build_pwg_sense_index, homonym_of, lead_int, normalize_sense_tag,
-    _max_numeric_sense,
+    pwg_correction_marker, _max_numeric_sense,
 )
 
 REASONS = ("found", "no_target_marker", "out_of_range", "not_found")
@@ -187,6 +187,61 @@ def main():
     if asserting:
         fail("A1", "%d unplaced rows still point at a real sense, e.g. %r"
                    % (len(asserting), asserting[:5]))
+
+    # ---- W2 — PWG-internal corrections (H2880) --------------------------
+    w2 = [r for r in rel
+          if r["relationship"].get("subtype") == "pwg_internal_correction"]
+    w2_reasons = collections.Counter(
+        r["relationship"].get("placement_reason") for r in w2)
+    w2_placed = sum(1 for r in w2 if r["relationship"].get("placement"))
+    print("W2  pwg_internal_correction rows: %d · placed %d (%.1f%%) · %s"
+          % (len(w2), w2_placed, 100.0 * w2_placed / max(len(w2), 1),
+             " ".join("%s=%d" % (k, w2_reasons[k]) for k in REASONS)))
+
+    # W2a — every such row really sits on the pwg layer and really carries a
+    # marker. A row pulled out of the skeleton without a named printed cue
+    # would be an invented relationship, not a recorded one.
+    bad_w2 = [r.get("subcard") for r in w2
+              if r.get("layer") != "pwg"
+              or not pwg_correction_marker(r.get("sense_tag"))]
+    print("W2a corrections with no marker or wrong layer: %d" % len(bad_w2))
+    if bad_w2:
+        fail("W2a", "%d rows classified as PWG-internal without a marker, e.g. %r"
+                    % (len(bad_w2), bad_w2[:5]))
+
+    # W2b — STOP: a correction must never be its own target, nor the target of
+    # another correction. The skeleton index excludes them; this proves it.
+    self_ref = []
+    for r in w2:
+        rr = r["relationship"]
+        if not rr.get("placement"):
+            continue
+        ip = rr.get("insertion_point") or {}
+        nt = normalize_sense_tag(ip.get("target_sense"))
+        if pwg_correction_marker(nt):
+            self_ref.append((r.get("subcard"), r.get("sense_tag"), nt))
+    print("W2b corrections placed onto another correction: %d" % len(self_ref))
+    if self_ref:
+        fail("W2b", "STOP — %d corrections target a correction, e.g. %r"
+                    % (len(self_ref), self_ref[:5]))
+
+    # W2c — no correction tag may survive in the skeleton index, or it would
+    # still be offered to supplements as an ordinary PWG sense.
+    stray = sorted({t for tags in senses.values() for t in tags
+                    if pwg_correction_marker(t)})
+    print("W2c correction tags still in the skeleton index: %d" % len(stray))
+    if stray:
+        fail("W2c", "%d correction tags are still senses, e.g. %r"
+                    % (len(stray), stray[:5]))
+
+    # W2d — an `op` of correct/delete renders as a struck-through cancellation
+    # in build_reglue. A Nachtrag amends its sense; it does not withdraw it.
+    miscast = [r.get("subcard") for r in w2
+               if r["relationship"].get("op") in ("correct", "delete")]
+    print("W2d corrections that would render as cancellations: %d" % len(miscast))
+    if miscast:
+        fail("W2d", "%d corrections would be struck through as cancelled, e.g. %r"
+                    % (len(miscast), miscast[:5]))
 
     print()
     if failures:

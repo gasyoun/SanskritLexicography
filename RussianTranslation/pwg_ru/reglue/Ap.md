@@ -52,8 +52,6 @@
 **PPP-3)** <div n="1">— 3) {%вступивший во владение, удовлетворенный%}: {#sa yo vyApto gataSrIriva manyeta#}
 <ls>AIT. BR. 4,4.</ls>
 
-**addendum)** <div n="v">— <ab>Vgl.</ab> {#aBivyApaka#} <ab>fgg.</ab>
-
 **caus-1)** <div n="1"> 1) {%дать достичь%} или {%дать получить%}: {#sEnaM svargaM lokaM samApayati#}
 <ls>ŚAT. BR. 2,3,3,16.</ls>
 
@@ -144,6 +142,8 @@
 <ls>MBH. 3,632.</ls> {#parIpsamAnaH pArTAnAM kalApAna DanUMzi ca#}
 <ls n="MBH. 3,">11454.</ls> {#paYcaSatAYCUrAn — parIpsamAnaH#}
 <ls n="MBH. 3,">15723.</ls>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹addendum› <div n="v">— <ab>Vgl.</ab> {#aBivyApaka#} <ab>fgg.</ab>
 
 **+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {%заставлять достигать%}.
 
@@ -291,15 +291,15 @@
 <ls>ŚĀṄKH. ŚR. 15,3,14.</ls> {#devayajana#}
 <ls>TS. 6,2,6,1.</ls> — <ab>caus.</ab>
 
-**caus-addendum-1)** <div n="1"> 1) {#tataSca te 'kzIRyunmIlya punarBARqIramApitAH#} {%принесенный%}
+**intro)** {#Ap#}¦
+<ls>Z. 13</ls> {#ApnAna#} <ab>s.</ab> также особо. — <ab>partic.</ab> {#Apta#}
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹caus-addendum-1› <div n="1"> 1) {#tataSca te 'kzIRyunmIlya punarBARqIramApitAH#} {%принесенный%}
 <ls>BHĀG. P. 10,19,13.</ls> — <ab>desid.</ab> {%доставлять%}
 <ls>PAÑCAV. BR. 20,3,2.</ls> <ab>partic.</ab> {#Ipsita#}
 
-**desid-addendum-1)** <div n="1"> 1)
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹desid-addendum-1› <div n="1"> 1)
 <ls>M. 3,231.</ls> <ls n="M.">4,156.</ls> <ls n="M.">9,59.</ls> — <ab>Z.</ab> 3 следует читать {#kaScAsO#} <ab>st.</ab> {#kasyAsO#} .
-
-**intro)** {#Ap#}¦
-<ls>Z. 13</ls> {#ApnAna#} <ab>s.</ab> также особо. — <ab>partic.</ab> {#Apta#}
 
 ## h3
 
@@ -331,4 +331,4 @@
 
 ## h1
 
-**corrigendum)** {#Ap#}¦ [<ab>vgl.</ab> [Page1-0650]] <ab>Z.</ab> 19 <ab>v. u.</ab> следует читать {#kaScAsO#} <ab>st.</ab> {#kasyAsO#}.<info n="rev"/>
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹corrigendum› {#Ap#}¦ [<ab>vgl.</ab> [Page1-0650]] <ab>Z.</ab> 19 <ab>v. u.</ab> следует читать {#kaScAsO#} <ab>st.</ab> {#kasyAsO#}.<info n="rev"/>

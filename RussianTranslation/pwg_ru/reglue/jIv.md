@@ -41,8 +41,6 @@
 <ls>MBH. 7,428.</ls> — <ab>caus.</ab> {%возвращать кого-л. к жизни%}
 <ls>DAŚAK.</ls> в <ls>BENF. Chr. 187,9.</ls>
 
-**Nachtr.)** <div n="v">— <ab>Vgl.</ab> {#saMjIvana, saMjijIvayizu#} .
-
 **caus)** Caus. <ab>Vgl.</ab> {#pratyujjIvana#}.
 
 **caus-1)** Caus. 1) {#jIvayati#} (в эпосе также {#˚te)#}; <ab>aor.</ab> {#ajIjivat#} и {#ajijIvat#}
@@ -88,6 +86,10 @@
 
 **desid-3)** Desid. 3) {#jijyUzita#} {%тот, кто стремится кормиться чем-л.%} (<ab>instr.</ab>): {#brahmabanDavena, vESyatayA, SUdratayA#}
 <ls>AIT. BR. 7,29.</ls> — {#jIvita#} <ab>s.</ab> <ab>bes.</ab>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtr.› <div n="v">— <ab>Vgl.</ab> {#upajIvaka#} <ab>fgg.</ab>
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹Nachtr.› <div n="v">— <ab>Vgl.</ab> {#saMjIvana, saMjijIvayizu#} .
 
 **+)** [NWS·nws_at_sense → не привязано: цель не указана] {#jīv#} [Ved , unsp] жить. [ śatám śarádas : жить сто осеней (лет). ] Кауз.: оживлять, давать жизнь. [NWS: Graßmann 1873 (1996) : 491]
 

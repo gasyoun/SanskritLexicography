@@ -297,9 +297,13 @@
 **intens.1)** <div n="p">— <ab>intens.</ab> {#boBujyate#} с <ab>pass.</ab> <ab>Bed.</ab> {%многократно поедаться%}: {#boBujyate 'tiTisuhftsvajanEH sahAnnam#}
 <ls>VARĀH. BṚH. S. 19,18</ls> {#(pepIyate#} там же также <ab>pass.</ab>; согласно этому в <ab>u.</ab> 2. {#pA#} <ab>intens.</ab> слова {%с <ab>pass.</ab> <ab>Bed.</ab>%} следует переставить строкой выше перед {#pepIyate#}).
 
-**nachtr)** <div n="v">— <ab>Vgl.</ab> {#pratiBoga#} .
-
 **ā+bhuj.1)** <div n="p">— {#A#} <ab>s.</ab> {#ABogi#} и <ab>vgl.</ab> {#ABojin#} в {#BujagABojin#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr› <div n="v">— <ab>Vgl.</ab> {#pratyupaBoga#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr› <div n="v">— <ab>Vgl.</ab> {#samupaBoga#} .
+
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr› <div n="v">— <ab>Vgl.</ab> {#pratiBoga#} .
 
 ## h3
 
@@ -359,7 +363,7 @@
 **2d)** <div n="2">— d) {%пробегающий, наполняющий%}: {#vyakta˚ (kAla)#}
 <ls>BHĀG. P. 3,11,3.</ls> {#aviSeza˚ (kAla)#} 4.
 
-**nachtr)** <div n="v">— <ab>Vgl.</ab> {#a˚, agra˚, anna˚, amfta˚, kaRa˚, kaRwaka˚#}
+**+)** [PWG·pwg_internal_correction → не привязано: цель не указана] ‹nachtr› <div n="v">— <ab>Vgl.</ab> {#a˚, agra˚, anna˚, amfta˚, kaRa˚, kaRwaka˚#}
 (<ls>HIT. 121,16</ls>). {#kravya˚, kziti˚, kzitilava˚, kzORI˚, kzmA˚, jagatI˚, taru˚, deha˚, DArA˚, pARi˚, piSita˚, puru˚, pfTivI˚, pfTvI˚, PaRi˚, vali˚, bahu˚#} (также
 <ls>SUŚR. 2,542. 5</ls>), {#BAga˚, BikzA˚, BujaMga˚, BU˚, BUmi˚, Beka˚, BEkza˚, mita˚, yajYa˚, yajYAMSa˚, lepa˚, vetana˚, stana˚, havirBuj, havizya˚#} .
 
