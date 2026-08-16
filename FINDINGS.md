@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 16-08-2026 (§548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink: `sense_tag` was scrubbed for the IRI but flowed raw into `edition_rel`'s `evidence` string and out through both serializations; §544 — rvlinks is the pāda-granular RV substrate already on disk; §543 — `guda` is «кишки» in the RV and the anorectal outlet in Āyurveda; §542 — a review sheet's stated apply target is not the carrier set)_
+_Created: 26-06-2026 · Last updated: 16-08-2026 (§549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; the corpus's per-note page anchors settle what can be settled (Эрман кн. VI = М.: Ладомир, 2009); §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink; §544 — rvlinks is the pāda-granular RV substrate already on disk; §543 — `guda` is «кишки» in the RV and the anorectal outlet in Āyurveda)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -6371,4 +6371,34 @@ against the whole candidate set before concluding it needs a human.
 > [`pwg_citation_count_provenance.tsv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/data/pwg_scan_index_tracker/pwg_citation_count_provenance.tsv);
 > gate `python scripts/pwg_citation_count_provenance.py --check`,
 > port fidelity `python scripts/pwg_ls_counts.py --verify-port`.
-> §549 takes the next number.
+
+### §549. CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit — and the committed corpus's per-note page anchors are the attribution layer that settles what can be settled
+
+The five sub-corpus totals, the 17,863 headline, the rubric percentages, AND the per-page
+essays that contradict them all entered git in a single commit (`77062da`, 24-04-2026,
+«Anatoliy Batch») importing an uncommitted March-2026 «automatic categorization». Reconciling
+against the lowest committed source — SamudraManthanam's hash-pinned canonical JSONL (single
+commit 20-06-2026) — split the claims into three classes: **exactly confirmable** (Кальянов
+7,424 — to the note), **definition errors** (Васильков–Невелева «5,574» silently includes
+1,685 notes of «XII(б). Мокшадхарма», a book absent from its own declared 9-book list, which
+yields 3,885), and **irreproducible-by-construction** (Гринцер 2,245 contradicts its own
+page's table 2,220; the rubric shares 3.4 %/7.7 % and 40.2 %/27.8 % have no committed
+per-note assignments — the n=50 gold sample's CI covers both sides of each).
+
+Three reusable lessons: (1) a derived statistic published without committing the run that
+produced it can become *permanently* unadjudicable — mark such values as dated snapshots
+rather than picking the cleaner number; (2) the digitized corpus's per-note HTML anchors
+(`title="Махабхарата 2009 (VI): 338"`) are a committed edition-attribution layer — one
+sweep over them resolved a three-way publisher conflict (Эрман кн. VI = **М.: Ладомир,
+2009**; «М.: Наука, 1977» and «СПб.: Наука, 2009» retired) and unmasked a non-Syrkin
+upanishad (`jabala-up`, 2025) inside the «Syrkin» file set; (3) duplicate lineages exist by
+design — `bhagavadgita-erman` (301 notes) re-hosts the Bhīṣmaparva BG chapters' notes (319),
+so summing works without an anchor census double-counts.
+
+> Fable 5 (`claude-fable-5`) · 16-08-2026 · H2872. Evidence:
+> [`docs/CORPUS_TRUTH_RECONCILIATION_17863.md`](https://github.com/gasyoun/CommentaryStrategies/blob/main/docs/CORPUS_TRUTH_RECONCILIATION_17863.md)
+> + machine table
+> [`data/analysis/corpus_truth_reconciliation.json`](https://github.com/gasyoun/CommentaryStrategies/blob/main/data/analysis/corpus_truth_reconciliation.json);
+> regression gate `python scripts/corpus_truth_census.py --check` (CI-wired);
+> PR [gasyoun/CommentaryStrategies#186](https://github.com/gasyoun/CommentaryStrategies/pull/186).
+> §550 takes the next number.
