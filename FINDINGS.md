@@ -6124,3 +6124,66 @@ Two things generalise:
 > record
 > [agni_decisions_applied_15-08-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/article-comparison/agni_decisions_applied_15-08-2026.md).
 > §543 takes the next number.
+
+### §543. A sense order can be right for the Vedic layer and useless for the classical one — `guda` is «кишки» in the RV and only ever the anorectal outlet in Āyurveda
+
+🟠 **Ordering a Russian equivalent by etymology or by Vedic attestation can leave the
+reader with the wrong sense in 100 % of the occurrences they will actually meet.**
+
+The H798 vote ruled Kochergina's `guda` should read кишки → толстая кишка → анус, on PWG
+plus the Vasmer/KEWA etymology, and against the RV: Elizarenkova renders `gudā́bhyaḥ` at
+RV 10.163.3 «из твоих **кишок**». That is correct for the Vedic layer. In DCS's
+lemma-annotated **Aṣṭāṅgahṛdayasaṃhitā** — 79 occurrences across 30 of its 120 files —
+the intestinal sense occurs **zero** times. The text defines `guda` against the intestine
+rather than as one (`gudaḥ sthūlāntrasaṃśrayaḥ`, `sthūlāntrabaddhaḥ … gudaḥ`), groups it
+with penis and vagina as a lower orifice (`meḍhrayonigudair adhaḥ`), has it prolapse and be
+pushed back (`gudaṃ bhraṣṭaṃ … praveśayet`), and uses it as the enema route
+(`gude praṇihitaḥ snehaḥ`). «Кишки» there is `antra` / `sthūlāntra` / `pakvāśaya` /
+`koṣṭha`, all of which occur contrastively beside it.
+
+Generalises to any lemma whose corpus spans Vedic and śāstric registers: **check the
+register the consumer works in before ordering senses**, and if the two disagree, ship a
+register rider rather than picking a winner. The fix here was a rider on the correction
+row, not a re-vote.
+
+Two traps met on the way, worth carrying:
+
+1. **`guḍa` (गुड, jaggery) and `guda` (गुद, rectum) collapse in Cyrillic.** Every one of
+   the 8 «гуда» hits in a Russian Āyurveda transcript corpus was `guḍa`/`guḍūcī` or
+   Russian «гудеть» — none was the anatomical word. A Cyrillic-transcript search for a
+   Sanskrit term is a **retro-transliteration** problem, and the retroflex/dental contrast
+   is exactly what it loses. Search the concept's Russian medical vocabulary instead.
+2. **A lemma count taken from a filename glob is not an occurrence count.** The handoff
+   carried «42 files carry `guda`»; the annotation itself says 30 files / 79 occurrences.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2863, closing the Kochergina cross-checks.
+> Evidence: [KOCHERGINA_CORRECTIONS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/KOCHERGINA_CORRECTIONS.md)
+> § Cross-check closures; DCS `dcs-conllu/files/Aṣṭāṅgahṛdayasaṃhitā/` (120 files).
+> §544 takes the next number.
+
+### §544. rvlinks is the pāda-granular RV substrate already on disk — and a verse-granular read of it invents renderings the translator never made
+
+🟠 **[rvlinks](https://github.com/sanskrit-lexicon/rvlinks) carries Elizarenkova, Geldner
+and Griffith side by side for all 1 028 RV hymns, verse by verse, locally.** Two sessions
+before this one concluded the org did not hold Elizarenkova's Russian, then found the
+[SamudraManthanam](https://github.com/gasyoun/SamudraManthanam/blob/main/Index/Updater/Data/01_rigveda.no_tags)
+`no_tags` extract — which is real, but is **Mandalas I–II only**, so 6 of the 8 `okya`
+loci and RV 10.163.3 are simply absent from it. `rvlinks/rvhymns/rv<MM>.<HHH>.html`
+covers everything and is the right substrate for any RV-citation work, including
+[H2850](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2850-Opus_SanskritLexicography_rv-citation-pada-alignment-elizarenkova-rvlinks_15.08.26.md).
+Caveat measured here: a few verses carry `-ru-` instead of Russian (RV 9.86.45 is one), so
+coverage is near-total, not total.
+
+The alignment half is the sharper point. The 2013 attestation memo
+[NAGARI_LIST_2013_ATTESTATION_VS_GLOSS_OKAS_GUDA.md](https://github.com/gasyoun/Uprava/blob/main/history/NAGARI_LIST_2013_ATTESTATION_VS_GLOSS_OKAS_GUDA.md)
+records Elizarenkova as rendering `guda` «прямая кишка» at RV 10.163.3. She does not.
+«Прямая кишка» is her rendering of `vaniṣṭhóḥ`; `gudā́bhyaḥ` is «кишок». Geldner splits
+them the same way (`Därmen` / `Mastdarm`); Griffith conflates. The error is what a
+**verse-granular** read produces: four Russian words for four Sanskrit organs in one pāda,
+and picking the wrong one is invisible unless the join is pāda-level. That is the exact
+defect class H2850 exists to eliminate, and RV 10.163.3 is now a worked specimen for it.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2863. Evidence:
+> [rvlinks/rvhymns/rv10.163.html](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.163.html#rv10.163.03)
+> vs the memo's claim; 1 028 hymn files counted on disk.
+> §545 takes the next number.
