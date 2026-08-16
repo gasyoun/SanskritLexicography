@@ -1,0 +1,1088 @@
+{
+ "base_iri": "https://w3id.org/sanskrit-lexicon/repwg/",
+ "entries": 459,
+ "exported_rows": 11581,
+ "generated_at": "2026-08-16",
+ "handoff": "H1629",
+ "layer_counts": {
+  "citation_edges": 40700,
+  "edition_rel": 6008,
+  "form_notes": 42,
+  "gloss_spans": 86,
+  "government": 2125
+ },
+ "layer_rows": {
+  "nws": 432,
+  "pw": 5204,
+  "pwg": 5573,
+  "pwkvn": 162,
+  "sch": 210
+ },
+ "profile": "pwg_de_edition.v1",
+ "quarantined": [
+  {
+   "fields": [
+    "iast"
+   ],
+   "key1": "DA",
+   "subcard": "_d_a~~h0_38_sam_a_0"
+  },
+  {
+   "fields": [
+    "iast"
+   ],
+   "key1": "DA",
+   "subcard": "_d_a~~h0_38_sam_a_0"
+  },
+  {
+   "fields": [
+    "iast"
+   ],
+   "key1": "DA",
+   "subcard": "_d_a~~h0_38_sam_a_0"
+  },
+  {
+   "fields": [
+    "iast"
+   ],
+   "key1": "DA",
+   "subcard": "_d_a~~h0_38_sam_a_0"
+  },
+  {
+   "fields": [
+    "iast"
+   ],
+   "key1": "DA",
+   "subcard": "_d_a~~h0_38_sam_a_0"
+  },
+  {
+   "fields": [
+    "iast"
+   ],
+   "key1": "DA",
+   "subcard": "_d_a~~h0_38_sam_a_0"
+  },
+  {
+   "fields": [
+    "iast"
+   ],
+   "key1": "DA",
+   "subcard": "_d_a~~h0_38_sam_a_0"
+  },
+  {
+   "fields": [
+    "iast"
+   ],
+   "key1": "DA",
+   "subcard": "_d_a~~h0_38_sam_a_0"
+  },
+  {
+   "fields": [
+    "iast"
+   ],
+   "key1": "DA",
+   "subcard": "_d_a~~h0_38_sam_a_1"
+  },
+  {
+   "fields": [
+    "iast"
+   ],
+   "key1": "DA",
+   "subcard": "_d_a~~h0_38_sam_a_1"
+  },
+  {
+   "fields": [
+    "iast"
+   ],
+   "key1": "DA",
+   "subcard": "_d_a~~h0_38_sam_a_1"
+  },
+  {
+   "fields": [
+    "de"
+   ],
+   "key1": "car",
+   "subcard": "car~~h0_10_a_bi"
+  },
+  {
+   "fields": [
+    "de"
+   ],
+   "key1": "car",
+   "subcard": "car~~h0_27_sam_a"
+  },
+  {
+   "fields": [
+    "de"
+   ],
+   "key1": "gam",
+   "subcard": "gam~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "de"
+   ],
+   "key1": "nI",
+   "subcard": "n_i~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "de"
+   ],
+   "key1": "nI",
+   "subcard": "n_i~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "de"
+   ],
+   "key1": "nI",
+   "subcard": "n_i~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "de"
+   ],
+   "key1": "nI",
+   "subcard": "n_i~~h0_02_sec_2"
+  },
+  {
+   "fields": [
+    "de"
+   ],
+   "key1": "siD",
+   "subcard": "si_d~~h1_00_pwg02"
+  },
+  {
+   "fields": [
+    "de"
+   ],
+   "key1": "viS",
+   "subcard": "vi_s~~h0_zz_pw01"
+  },
+  {
+   "fields": [
+    "de"
+   ],
+   "key1": "huti",
+   "subcard": "hUti"
+  },
+  {
+   "fields": [
+    "de"
+   ],
+   "key1": "parihara",
+   "subcard": "parihAra"
+  }
+ ],
+ "quarantined_rows": 22,
+ "rights": {
+  "allowlist": [
+   "key1",
+   "iast",
+   "subcard",
+   "sense_tag",
+   "layer",
+   "volume",
+   "page",
+   "column",
+   "de"
+  ],
+  "de_only": true,
+  "forbidden": [
+   "ru",
+   "en",
+   "review_status",
+   "reviewer",
+   "provenance",
+   "evidence",
+   "evidence_summary",
+   "corpus_gate",
+   "differentia"
+  ]
+ },
+ "sanitized_tag_rows": 110,
+ "sanitized_tags": [
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "DA",
+   "slug": "Mit-div-n-p",
+   "subcard": "_d_a~~h0_zz_pw03"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "DA",
+   "slug": "Mit-div-n-p",
+   "subcard": "_d_a~~h0_zz_pw03"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "DA",
+   "slug": "upa-antar",
+   "subcard": "_d_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "DA",
+   "slug": "upa-upa-pref",
+   "subcard": "_d_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "DA",
+   "slug": "upa-upa-pref2",
+   "subcard": "_d_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "DA",
+   "slug": "upa-upa-pref3",
+   "subcard": "_d_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "DA",
+   "slug": "upa-upa-pref4",
+   "subcard": "_d_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "DA",
+   "slug": "upa-upa-pref5",
+   "subcard": "_d_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "Sam",
+   "slug": "mit-upasarga-1",
+   "subcard": "_sam~~h0_zz_pw01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "brU",
+   "slug": "1-sich-ber-Etwas-aussprechen",
+   "subcard": "br_u~~h0_17_vi"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "dA",
+   "slug": "1-ein-Zeichen-geben-sich-opfern-sich-einer-Sache",
+   "subcard": "d_a~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "gam",
+   "slug": "x",
+   "subcard": "gam~~h0_45_upa"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "gam",
+   "slug": "x",
+   "subcard": "gam~~h0_63_sam_0"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "gam",
+   "slug": "1",
+   "subcard": "gam~~h2_05_anu"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "gam",
+   "slug": "1",
+   "subcard": "gam~~h2_33_sam"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "han",
+   "slug": "sam-han",
+   "subcard": "han~~h0_57_sam_1"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "I",
+   "subcard": "jan~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "3",
+   "subcard": "jan~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "I.1",
+   "subcard": "jan~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "I.2",
+   "subcard": "jan~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "II",
+   "subcard": "jan~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "1b",
+   "subcard": "jan~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "2-allgemeine-Formen",
+   "subcard": "jan~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "II.1",
+   "subcard": "jan~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "II.2",
+   "subcard": "jan~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "II.3",
+   "subcard": "jan~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "II.4",
+   "subcard": "jan~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "II.5",
+   "subcard": "jan~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "6",
+   "subcard": "jan~~h0_00_pwg02"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "x",
+   "subcard": "jan~~h0_01_sec_1"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "adhi-jan",
+   "subcard": "jan~~h0_03_a_di"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "jan",
+   "slug": "adhi-jan",
+   "subcard": "jan~~h0_03_a_di"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "ji",
+   "slug": "2",
+   "subcard": "ji~~h3_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "ji",
+   "slug": "x",
+   "subcard": "ji~~h3_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "ji",
+   "slug": "1",
+   "subcard": "ji~~h3_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "1",
+   "subcard": "m_a~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "2",
+   "subcard": "m_a~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "3",
+   "subcard": "m_a~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "4",
+   "subcard": "m_a~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "5",
+   "subcard": "m_a~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "6",
+   "subcard": "m_a~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "7",
+   "subcard": "m_a~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "8",
+   "subcard": "m_a~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "9",
+   "subcard": "m_a~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "x",
+   "subcard": "m_a~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "x",
+   "subcard": "m_a~~h1_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "2",
+   "subcard": "m_a~~h1_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "x",
+   "subcard": "m_a~~h1_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "x",
+   "subcard": "m_a~~h1_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "1",
+   "subcard": "m_a~~h1_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "2",
+   "subcard": "m_a~~h1_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "x",
+   "subcard": "m_a~~h1_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "x",
+   "subcard": "m_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "1",
+   "subcard": "m_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "2",
+   "subcard": "m_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "3",
+   "subcard": "m_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "4",
+   "subcard": "m_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "5",
+   "subcard": "m_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "6",
+   "subcard": "m_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "7",
+   "subcard": "m_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "8",
+   "subcard": "m_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "x",
+   "subcard": "m_a~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "x",
+   "subcard": "m_a~~h2_01_sec_1"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "x",
+   "subcard": "m_a~~h2_01_sec_1"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mA",
+   "slug": "x",
+   "subcard": "m_a~~h2_02_sec_2"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "rakz",
+   "slug": "rak",
+   "subcard": "rakz~~h0_08__a"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "rakz",
+   "slug": "pari-rak",
+   "subcard": "rakz~~h0_10_pari"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "su",
+   "slug": "x",
+   "subcard": "su~~h3_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "su",
+   "slug": "PPP",
+   "subcard": "su~~h3_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "vas",
+   "slug": "1",
+   "subcard": "vas~~h4_18_ni"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "viS",
+   "slug": "caus-1",
+   "subcard": "vi_s~~h0_39_pra_1"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "1",
+   "subcard": "yaj~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "1-a-dat.-acc.-instr",
+   "subcard": "yaj~~h0_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "b-instr",
+   "subcard": "yaj~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "c-dat.-instr",
+   "subcard": "yaj~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "d",
+   "subcard": "yaj~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "e",
+   "subcard": "yaj~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "2-y-jy",
+   "subcard": "yaj~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "x",
+   "subcard": "yaj~~h0_00_pwg01"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "caus",
+   "subcard": "yaj~~h0_01_sec_1"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "1",
+   "subcard": "yaj~~h0_10__a"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "2",
+   "subcard": "yaj~~h0_10__a"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "3",
+   "subcard": "yaj~~h0_10__a"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "x",
+   "subcard": "yaj~~h0_10__a"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "1",
+   "subcard": "yaj~~h0_17_sam"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "x",
+   "subcard": "yaj~~h0_17_sam"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "x",
+   "subcard": "yaj~~h0_17_sam"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "x",
+   "subcard": "yaj~~h0_17_sam"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "x",
+   "subcard": "yaj~~h0_17_sam"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "caus",
+   "subcard": "yaj~~h0_17_sam"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yaj",
+   "slug": "x",
+   "subcard": "yaj~~h0_17_sam"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yuvan",
+   "slug": "PWG",
+   "subcard": "yuvan"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yuvan",
+   "slug": "PW-V.1",
+   "subcard": "yuvan"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yuvan",
+   "slug": "SCH-Nachtrag-PW-V.1",
+   "subcard": "yuvan"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "yuvan",
+   "slug": "PWKVN-V.1",
+   "subcard": "yuvan"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "mAtrA",
+   "slug": "SCH-Nachtrag-.-2",
+   "subcard": "m_atr_a~~h0_zz_sch"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "dah",
+   "slug": "6",
+   "subcard": "dah~~h0_01_sec_1"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "dah",
+   "slug": "2",
+   "subcard": "dah~~h0_zz_pw"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "dah",
+   "slug": "1",
+   "subcard": "dah~~h2_00_pwg00"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "tA",
+   "slug": "SCH-.-.-2-seq-14393",
+   "subcard": "t_a~~h0_zz_sch"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "tA",
+   "slug": "SCH-.-.-2-seq-14652",
+   "subcard": "t_a~~h0_zz_sch"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "aBUta",
+   "slug": "SCH-.1",
+   "subcard": "a_b_uta~~h0_zz_sch"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "aBUta",
+   "slug": "SCH-.2",
+   "subcard": "a_b_uta~~h0_zz_sch"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "ahiPena",
+   "slug": "x",
+   "subcard": "ahi_pena~~h0_zz_pw"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "aklizwa",
+   "slug": "SCH-.-.-3",
+   "subcard": "aklizwa~~h0_zz_sch"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "aprApta",
+   "slug": "PWKVN-.-7",
+   "subcard": "apr_apta~~h0_zz_pwkvn"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "aprApta",
+   "slug": "PWKVN-I.-2",
+   "subcard": "apr_apta~~h0_zz_pwkvn"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "avidita",
+   "slug": "PWKVN-.-.-PW",
+   "subcard": "avidita~~h0_zz_pwkvn"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "avidita",
+   "slug": "PWKVN",
+   "subcard": "avidita~~h0_zz_pwkvn"
+  },
+  {
+   "fields": [
+    "sense_tag"
+   ],
+   "key1": "hiDmA",
+   "slug": "PW",
+   "subcard": "hi_dm_a~~h0_zz_pw"
+  }
+ ],
+ "source_rows": 11603
+}
