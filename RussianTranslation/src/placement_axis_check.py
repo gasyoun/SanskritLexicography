@@ -31,7 +31,7 @@ REL = os.path.join(HERE, "pwg_ru_relationships.jsonl")
 
 from edition_rel import (  # noqa: E402
     build_pwg_sense_index, homonym_of, lead_int, normalize_sense_tag,
-    pwg_correction_marker, _max_numeric_sense,
+    pwg_correction_marker, sch_correction_marker, _max_numeric_sense,
 )
 
 REASONS = ("found", "no_target_marker", "out_of_range", "not_found")
@@ -242,6 +242,81 @@ def main():
     if miscast:
         fail("W2d", "%d corrections would be struck through as cancelled, e.g. %r"
                     % (len(miscast), miscast[:5]))
+
+    # ---- W3 — SCH corrections and cancellations (H2881) ------------------
+    sch = [r for r in rel if r.get("layer") == "sch"]
+    w3 = [r for r in sch if r["relationship"].get("subtype")
+          in ("sch_correct", "sch_cancel")]
+    w3_kinds = collections.Counter(
+        r["relationship"].get("subtype") for r in w3)
+    print("W3  sch rows: %d · corrective %d (%.1f%%) · %s"
+          % (len(sch), len(w3), 100.0 * len(w3) / max(len(sch), 1),
+             " ".join("%s=%d" % (k, w3_kinds[k])
+                      for k in ("sch_correct", "sch_cancel"))))
+
+    # W3a — the layer must be ABLE to be corrective. This is the whole point of
+    # wave 3: before it, `sch` could only come out additive, so "SCH only
+    # supplements" was a property of the classifier, not a measurement. If this
+    # ever returns to zero, the claim has silently become unfalsifiable again.
+    if not w3:
+        fail("W3a", "no SCH row is corrective — the layer is structurally "
+                    "additive again, so the claim is unmeasured, not measured")
+
+    # W3b — every corrective SCH row must name the printed cue that convicted
+    # it, and that cue must still be findable in the row's DE. A row pulled out
+    # of the additive class without a reproducible printed instruction is an
+    # invented relationship, not a recorded one.
+    de_by_key = {}
+    for d in store:
+        if (d.get("layer") or "") == "sch":
+            de_by_key[(d.get("subcard"), str(d.get("sense_tag")))] = d.get("de")
+    bad_w3 = []
+    for r in w3:
+        marker = r["relationship"].get("correction_marker")
+        de = de_by_key.get((r.get("subcard"), str(r.get("sense_tag"))))
+        if not marker or sch_correction_marker(de) is None:
+            bad_w3.append((r.get("subcard"), marker))
+    print("W3a corrective SCH rows with no reproducible printed cue: %d"
+          % len(bad_w3))
+    if bad_w3:
+        fail("W3b", "%d corrective rows cite no cue, e.g. %r"
+                    % (len(bad_w3), bad_w3[:5]))
+
+    # W3c — STOP: the criterion is a speech act, not a keyword. These strings
+    # are real additive SCH text ('Ind. St.' = Indische Studien; 'metrisch
+    # statt'; 'vgl.'). A cue set that fires on them would convict ~11 rows that
+    # add material of withdrawing it — a louder lie than the one wave 3 fixes.
+    decoys = (
+        "Mit {%vi, vyāpta%} 4. in allem enthalten, <ls>Ind. St. 9,137.</ls>",
+        "{%mā gantum arhasi%} metrisch statt {%na gan˚%},2,116,5.",
+        "Statt dessen {%vipācayati%} 281,158.",
+        "Mit {%upapra%}, vgl. <ls>Pischel, Ved. Stud. I,72.</ls>",
+    )
+    fired = [d for d in decoys if sch_correction_marker(d) is not None]
+    print("W3c look-alike additive strings wrongly convicted: %d" % len(fired))
+    if fired:
+        fail("W3c", "STOP — the cue set matches descriptive text: %r" % fired)
+
+    # W3d — an SCH edit renders as a cancellation, deliberately unlike wave 2's
+    # `amend`: 'lies X' and 'streiche Y' really do withdraw the printed reading.
+    miscast = [r.get("subcard") for r in w3
+               if r["relationship"].get("op") not in ("correct", "delete")]
+    print("W3d SCH edits that would NOT render as a cancellation: %d"
+          % len(miscast))
+    if miscast:
+        fail("W3d", "%d SCH edits render as ordinary additions, e.g. %r"
+                    % (len(miscast), miscast[:5]))
+
+    # W3e — the conservative residue: rows kept additive although a non-leading
+    # section carries a correction clause. Reported, never silently dropped.
+    residue = [r.get("subcard") for r in sch
+               if r["relationship"].get("contains_correction_clause")]
+    print("W3e additive SCH rows carrying a non-leading correction clause: %d"
+          % len(residue))
+    if residue:
+        notes.append("W3e %d SCH rows keep a correction clause in a "
+                     "non-leading section and stay additive by the "
+                     "conservative default: %r" % (len(residue), residue))
 
     print()
     if failures:

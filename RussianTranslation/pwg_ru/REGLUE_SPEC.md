@@ -470,4 +470,66 @@ The canonical store is untouched and proved so: `rows=11603`,
   intent rather than by accident.
 - **Not touching the canonical store**, per the roadmap's non-goals.
 
+## 12. SCH corrects PWG too — 3.3 % of the time (H2881, 16-08-2026)
+
+### 12.1 The hole
+
+`classify_edition_rel` returned, for the `sch` layer, only `sch_star` or
+`derived_sense` — both additive. So "SCH only supplements PWG" was **built into
+the classifier**, not measured from the edition: no row of data could ever have
+contradicted it. Wave 3 adds `sch_correct` and `sch_cancel` so the claim becomes
+falsifiable, then measures it.
+
+### 12.2 The criterion — a printed imperative, not a keyword
+
+The cue lives in the **DE body**, not in the `sense_tag`. That is the one
+structural difference from wave 2, and the reason `sch_correction_marker(de)` is
+a separate predicate from `pwg_correction_marker(tag)`: a real SCH correction is
+as likely to be tagged `mit-nis` as `SCH-corrigendum`.
+
+| kind | rules | example from the store |
+|---|---|---|
+| `sch_correct` (`op=correct`) | `lies` · `zu lesen` · `Druckfehler` · `berichtige` · `verbessere` | `S. 152, Sp. 1, Z. 2 lies {%abhíhita%}` |
+| `sch_cancel` (`op=delete`) | `streiche` · `tilge` · `fällt weg` | `— Mit {%abhyupa%} 3. streiche <ls>Med.</ls>` |
+
+Every rule is an **instruction addressed to the reader**. That is the whole
+criterion, and the negative controls are its load-bearing half: 11 of the 210
+rows carry a look-alike token that is descriptive, not directive — bare `statt`
+(`metrisch statt {%na gan˚%}`), the abbreviation `St.` (*Indische Studien*), and
+`vgl.` These are pinned as negatives in `edition_rel --selftest` and as gate W3c.
+
+**The gender path is deliberately absent.** The roadmap predicted wave 3 would
+reuse `pw_correct`'s `<lex>` gender conflict. Measured: **zero of the 210 SCH
+rows carry a `<lex>` token**, so that signal cannot fire on this layer. The one
+real gender correction (`ahiphena`, "lies n. statt m.") states it in prose and is
+caught by `lies`.
+
+### 12.3 Scope — the cue governs the leading segment only
+
+A compressed SCH article is a run of preverb sections. Where a correction clause
+sits in a non-leading section (`— Mit {%samā%} Z. 3 lies 231,16` inside a row
+that otherwise introduces four new senses), the row stays **additive** by the
+conservative default: calling it a correction would assert SCH withdraws material
+it in fact adds. Those rows carry `contains_correction_clause` so the residue is
+a reported number (gate W3e: 2 rows), never a silent omission.
+
+### 12.4 Result
+
+210 SCH rows → 6 `sch_correct` · 1 `sch_cancel` · 203 additive (148 `sch_star`,
+55 `derived_sense`). Unlike wave 2's `amend`, `op` is `correct`/`delete` here,
+because these rows genuinely withdraw the printed reading — build_reglue's
+"cancels PWG" strikethrough is the honest rendering. An **unplaced** correction
+shows no strikethrough: it never identified a sense to strike, which is wave 1's
+contract working, not a rendering gap. `direction` stays `additive`, the layer's
+property, exactly as `pw_correct` keeps `abridging` (PLAN decision 1).
+
+### 12.5 What wave 3 changes downstream
+
+The evidence sheet drops one card, 47 → 46: `jñā · SCH → смысл 3` is now a
+correction, and "does this supplement sit at the right PWG sense?" is not the
+question to ask of one — the same exclusion wave 2 applied to Nachträge. Re-cut
+under PLAN decision 8 after checking the vote gate (no `decisions.json` exists
+for the sheet). Waves 1–2 are unchanged and proved so; the canonical store is
+untouched.
+
 _Dr. Mārcis Gasūns_

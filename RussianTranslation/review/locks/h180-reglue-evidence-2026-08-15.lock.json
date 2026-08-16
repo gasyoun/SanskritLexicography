@@ -1,10 +1,10 @@
 {
   "schema": "review-lock/v1",
   "sheet_id": "h180-reglue-evidence-2026-08-15",
-  "content_hash": "sha256:d7c003ee3f77e3bffac5fb3516fb97364fc63ea6d1cc498716f077017c50fb93",
+  "content_hash": "sha256:7045733d933cb0c4908a729ed1cc0cfa9f36fe4f0c712571fbbcddb94b7e8fff",
   "generated": "2026-08-15",
   "gate": null,
-  "n_items": 47,
+  "n_items": 46,
   "ids": [
     "_ap~~h0_zz_pw01::4",
     "_bid~~h0_zz_pw00::6",
@@ -39,7 +39,6 @@
     "vi_s~~h0_zz_pwkvn::1",
     "y_a~~h0_zz_pwkvn::1",
     "j_y_a~~h0_zz_sch::2 (anu, Desid.)",
-    "j_y_a~~h0_zz_sch::3 (pra)",
     "vah~~h0_zz_sch::2 (mit ati)",
     "vah~~h0_zz_sch::3 (mit abhi)",
     "vah~~h0_zz_sch::4 (mit samud)",
