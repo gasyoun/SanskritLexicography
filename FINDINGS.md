@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 16-08-2026 (§545 — a fixture guard row proves the sanitizer runs, not that it covers every sink: `sense_tag` was scrubbed for the IRI but flowed raw into `edition_rel`'s `evidence` string and out through both serializations; §544 — rvlinks is the pāda-granular RV substrate already on disk; §543 — `guda` is «кишки» in the RV and the anorectal outlet in Āyurveda; §542 — a review sheet's stated apply target is not the carrier set)_
+_Created: 26-06-2026 · Last updated: 16-08-2026 (§548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink: `sense_tag` was scrubbed for the IRI but flowed raw into `edition_rel`'s `evidence` string and out through both serializations; §544 — rvlinks is the pāda-granular RV substrate already on disk; §543 — `guda` is «кишки» in the RV and the anorectal outlet in Āyurveda; §542 — a review sheet's stated apply target is not the carrier set)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -6322,4 +6322,53 @@ tried; the measured pair is the one to cite.
 > [`RV_PADA_ALIGNMENT_AUDIT_2026-08-16.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/RV_PADA_ALIGNMENT_AUDIT_2026-08-16.md)
 > and the 2 964-row [`rv_pada_alignment.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/rv_pada_alignment.jsonl);
 > selftest 49/49 including the gate negative control.
-> §548 takes the next number.
+
+### §548. PWG has TWO incompatible families of `<ls>` counts — cleaned-string and work-family — and the volunteer tracker's column is the second
+
+🔴 **Counting PWG's citation apparatus gives two legitimate, wildly different numbers for the
+same work, and nothing in the repository labels which is which.** `MED.` has **30**
+occurrences in one family and **12,990** in the other. Both are correct.
+
+| Family | Generator | Keys on | Dictionary total |
+|---|---|---|--:|
+| **cleaned citation string** | `pwg_ls/pwg_dhaval/abbrvwork/abbrv3.py` → [`sortedcrefs.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/pwg_ls/pwg_dhaval/abbrvwork/abbrvoutput/sortedcrefs.txt) | the `<ls>` text with numbers stripped, under a restrictive "starts with a capital" proper-reference filter — so one book scatters over `MED.`, `MED. k.`, `MED. kh.`, `MED. im ŚKDR.` … | 344,229 |
+| **work family** | [`lsextract_all.py`](https://github.com/sanskrit-lexicon/PWG/blob/master/pwgissues/issue94/lsextract_all.py) → `lsextract_all.txt` | the **longest bibliography abbreviation in `pwgbib_input.txt` that prefixes the element**, `n="…"` prepended first; digits → `NUMBER`, no prefix → `UNKNOWN` | 739,056 (2024-09-11) |
+
+Only the second **partitions** the dictionary, so only its `ALL` is a denominator. The first
+is a distribution over citation strings and has no work-level total at all.
+
+**This is how the PWG scan-index tracker's `Citation count` column sat "unprovenanced" for
+three weeks.** H1706 compared it against the cleaned-string family, measured a 1.2×–433×
+spread, and concluded the provenance was unrecoverable without the coordinator who built the
+column. The spread *was* the answer: the column is the work-family count, and 66 of its 67
+valued rows match
+[`pwgissues/issue74/lsextract_all.txt`](https://github.com/sanskrit-lexicon/PWG/blob/master/pwgissues/issue74/lsextract_all.txt)
+digit for digit.
+
+**Rules.**
+
+1. **Never compare across the two families**, and never call the resulting ratio a
+   disagreement. Check which generator produced a count before treating it as evidence
+   about another count.
+2. **A work-family count is not row-additive.** `AK. Deslongchamps ed.` and
+   `AK. Colebrooke ed.` both read `AK.`'s total; fold by bibliography abbreviation first.
+3. **Divide only by the `ALL` of the same snapshot.** The counts move: between 2024-09-11
+   and 2026-06-24, `an.` falls 1,797 → 1 while `H. an.` rises 2,075 with a byte-identical
+   bibliography entry on both sides — a **re-tagging** of the dictionary, not a recount.
+   Refreshing a frozen column in place would rewrite the campaign's own history.
+4. **Case is meaningful and case-folding is lossy.** `Ś.`/`ś.`, `Uṇ.`/`UṆ.`, `KAP.`/`Kap.`
+   are different bibliography entries and 15 such pairs are cited on both sides; a
+   case-insensitive lookup silently picks one of two real works.
+
+**Method note worth more than the finding.** The recovery took one mechanical sweep — compare
+the column against *every* count table in the repository — after reasoning about which
+extraction "ought" to have been used had failed. When a number's provenance is open, diff it
+against the whole candidate set before concluding it needs a human.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2874. Evidence:
+> [`reports/pwg_citation_count_provenance.md`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/pwg_citation_count_provenance.md)
+> (five-hypothesis log) + the 82-row
+> [`pwg_citation_count_provenance.tsv`](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/data/pwg_scan_index_tracker/pwg_citation_count_provenance.tsv);
+> gate `python scripts/pwg_citation_count_provenance.py --check`,
+> port fidelity `python scripts/pwg_ls_counts.py --verify-port`.
+> §549 takes the next number.
