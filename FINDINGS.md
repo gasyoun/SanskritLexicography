@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §545) whatever its section, so existing numbers never shift; when a finding is later
+(currently §546) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -260,6 +260,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§538. A Latin siglum inside a `{#…#}` span is silently transliterated — `pw` became `pṭ`, an abbreviation that does not exist](#538-a-latin-siglum-inside-a-span-is-silently-transliterated-pw-became-pṭ-an-abbreviation-that-does-not-exist) — inherited index row added by H2859; see the section for the finding.
 - 🟠 [§543. A sense order can be right for the Vedic layer and useless for the classical one — `guda` is «кишки» in the RV and only ever the anorectal outlet in Āyurveda](#543-a-sense-order-can-be-right-for-the-vedic-layer-and-useless-for-the-classical-one--guda-is-кишки-in-the-rv-and-only-ever-the-anorectal-outlet-in-āyurveda) — 79 occurrences across 30 of 120 DCS Aṣṭāṅgahṛdaya files, zero intestinal. Check the consumer's register before ordering senses; ship a rider when the layers disagree. Plus: `guḍa`/`guda` collapse in Cyrillic, so all 8 «гуда» transcript hits were false positives.
 - 🟠 [§544. rvlinks is the pāda-granular RV substrate already on disk — and a verse-granular read of it invents renderings the translator never made](#544-rvlinks-is-the-pāda-granular-rv-substrate-already-on-disk--and-a-verse-granular-read-of-it-invents-renderings-the-translator-never-made) — all 1 028 hymns with Elizarenkova/Geldner/Griffith locally, vs the Mandala I–II SamudraManthanam extract. The 2013 memo's «прямая кишка» for `guda` at RV 10.163.3 is actually her `vaniṣṭhu` — the misalignment class H2850 exists to catch.
+- 🔴 [§545. A fixture guard row proves the sanitizer runs, not that it covers every sink — the leak hid in a second consumer the guard row never reaches](#545-a-fixture-guard-row-proves-the-sanitizer-runs-not-that-it-covers-every-sink--the-leak-hid-in-a-second-consumer-the-guard-row-never-reaches) — `sense_tag` was scrubbed for the IRI sink while `edition_rel` interpolated it raw into an `evidence` string emitted verbatim by both serializations. The fixture's guard row never takes an evidence-bearing branch, so no fixture run could have caught it. Enumerate a sanitizable field's sinks; reproduce the leak directly instead of trusting a fixture row to reach the branch.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -6188,7 +6189,7 @@ defect class H2850 exists to eliminate, and RV 10.163.3 is now a worked specimen
 > Opus 5 (`claude-opus-5`) · 16-08-2026 · H2863. Evidence:
 > [rvlinks/rvhymns/rv10.163.html](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.163.html#rv10.163.03)
 > vs the memo's claim; 1 028 hymn files counted on disk.
-> §546 takes the next number.
+> §545 takes the next number.
 
 ### §545. A fixture guard row proves the sanitizer runs, not that it covers every sink — the leak hid in a second consumer the guard row never reaches
 
@@ -6231,3 +6232,4 @@ both layers.
 > 1 649 758 of `pwg_de_edition.ttl`; `sanitized_tag_rows: 110` in the shipped
 > [manifest](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/pwg_de_sidecars/manifest.json);
 > fix + selftest section 4b in [PR #1738](https://github.com/gasyoun/SanskritLexicography/pull/1738).
+> §546 takes the next number.
