@@ -264,6 +264,16 @@ def render_body(raw, mode=EXPANDED, nl=None):
     return _mark_gaps(body)
 
 
+#: `placement_reason` as a reviewer-facing chip (H2879 S6). Shown only when the
+#: supplement is NOT placed, so a `restate` chip can never be read on its own as
+#: a claim about some PWG sense (acceptance criterion A1).
+PLACEMENT_REASON_LABEL = {
+    "no_target_marker": "no target given",
+    "out_of_range": "sense number above PWG's range",
+    "not_found": "sense not found",
+}
+
+
 def _supp_head(sup):
     """The typology chips — identical in both renderings, so a reviewer voting
     in compact mode votes on the same classification they see in expanded."""
@@ -273,11 +283,15 @@ def _supp_head(sup):
     lang = ' <span class="tchip t-meta">‹%s›</span>' % esc(sup["lang"]) if sup.get("lang") else ""
     cancels = (' <span class="tchip t-cancels">cancels PWG</span>'
                if sup.get("cancels") else "")
+    why = PLACEMENT_REASON_LABEL.get(sup.get("placement_reason"))
+    unplaced = (' <span class="tchip t-meta" title="the typology label says what '
+                'kind of supplement this is; it does not assert a target sense">'
+                'not placed: %s</span>' % esc(why)) if why else ""
     head = ('<span class="tchip t-%s" title="%s">%s</span>'
             '<span class="tchip t-meta">%s</span>'
-            '<span class="tchip t-meta">%s · %s</span>%s%s'
+            '<span class="tchip t-meta">%s · %s</span>%s%s%s'
             % (klass, esc(gloss), esc(CLASS_LABEL[klass]), esc(subtype),
-               esc(sup.get("badge", "?")), esc(op), lang, cancels))
+               esc(sup.get("badge", "?")), esc(op), lang, cancels, unplaced))
     return head, klass
 
 

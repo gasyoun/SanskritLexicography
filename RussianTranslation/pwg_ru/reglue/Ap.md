@@ -5,10 +5,8 @@
 **1)** <div n="p">— {#parisam#} <ab>pass.</ab> {%получать свое полное завершение%}: {#sarvaM karmAKilaM pArTa jYAne parisamApyate#}
 <ls>BHAG. 4,33.</ls> {#tvayi tu parisamAptaM banDukftyaM janAnAm#}
 <ls>ŚĀK. 105.</ls> {#pratyekaM vyavAyaSabdaH parisamApyate#}
-<ls>PAT.</ls> zu <ls>P. 8,3,58.</ls> {#tasminparisamApte tu rAjYaH satre#}
+<ls>PAT.</ls> к <ls>P. 8,3,58.</ls> {#tasminparisamApte tu rAjYaH satre#}
 <ls>MBH. 1,8139.</ls>
-
-**1))** <div n="p">— {#upapra#} {%подойти, приблизиться%}: {#mfgarkzaM mahizaM vApi — nAvarjayamupaprAptaM kzIRapuRyaH kzuDAnvitaH#} <ls>R. 3,75,17.</ls>
 
 **2)** <div n="1">— 2) {%завершать, исполнять%}: {#BUtayajYaM samApnoti#}
 <ls>ŚAT. BR. 11,5,6,2.</ls> <ls n="ŚAT. BR. 11,">8,4,2.</ls> <ls n="ŚAT. BR. 11,8,4,">4.</ls> <ls n="ŚAT. BR.">12,3,3,5.</ls>
@@ -18,39 +16,21 @@
 **3)** <div n="1">— 3) {%достигать (до), дотягиваться%}: {#yasmA^llo\kAtpa^rame\zWI sa\mApa^#}
 <ls>AV. 12,3,45.</ls> — {#samApta#}
 
-**4)** <div n="1">— 4) <ab>intrans.</ab> {%простираться до%} {#(A): AprapadaM prApnoti#}
-<ls>P. 5,2,8.</ls>
-<ls>AK. 2,6,3,21.</ls>
+**4))** <div n="1">— 4) {%приобретший, навлекший на себя —, взявший на себя —, претерпевший%} — <ls>ŚAT. BR. 2,4,4,6.</ls> {#brAhmyaM prAptena saMskAraM kzatriyeRa#} <ls>M. 7,2.</ls> — {#utkarzaM yozitaH prAptAH#} <ls n="M.">9,24.</ls> {#putradArAtyayaM prAptaH#} <ls n="M.">10,99.</ls> {#parAmApadam#} <ls n="M.">9,313.</ls> {#niDanam#} <ls n="M.">5,40.</ls> {#prAptaH syAccOrakilvizam#} [Page1-0654] <ls n="M.">8,198.</ls> <ls n="M. 8,">300.</ls> <ls n="M. 8,">342.</ls> {#AyuDavyasanaprAptam#} (<ab>vgl.</ab> <ls>P. 2,1,24</ls>) <ls n="M.">7,93.</ls> — <ls>MBH. 1,5918.</ls> <ls n="MBH. 1,">10887.</ls> <ls>N. 9,20.</ls> <ls n="N.">13,47.</ls> <ls>DAŚ. 2,41.</ls> <ls n="DAŚ. 2,">47.</ls>
   — [PW·restate] <div n="1">— 4〉 {%достигший, попавший в%} (несчастье).
 
-**4))** <div n="1">— 4) {%приобретший, навлекший на себя —, взявший на себя —, претерпевший%} — <ls>ŚAT. BR. 2,4,4,6.</ls> {#brAhmyaM prAptena saMskAraM kzatriyeRa#} <ls>M. 7,2.</ls> — {#utkarzaM yozitaH prAptAH#} <ls n="M.">9,24.</ls> {#putradArAtyayaM prAptaH#} <ls n="M.">10,99.</ls> {#parAmApadam#} <ls n="M.">9,313.</ls> {#niDanam#} <ls n="M.">5,40.</ls> {#prAptaH syAccOrakilvizam#} [Page1-0654] <ls n="M.">8,198.</ls> <ls n="M. 8,">300.</ls> <ls n="M. 8,">342.</ls> {#AyuDavyasanaprAptam#} (<ab>vgl.</ab> <ls>P. 2,1,24</ls>) <ls n="M.">7,93.</ls> — <ls>MBH. 1,5918.</ls> <ls n="MBH. 1,">10887.</ls> <ls>N. 9,20.</ls> <ls n="N.">13,47.</ls> <ls>DAŚ. 2,41.</ls> <ls n="DAŚ. 2,">47.</ls>
-
-**5)** <div n="1">— 5) {%встречаться, иметь место, наличествовать%}: {#yatra^ prA\pnozyo^zaDe#}
-<ls>AV. 4,19,2.</ls> in der <ab>Gramm.</ab> {%получать силу вследствие правила, вытекать из правила%}: {#sTAnyASrayaM kAryamAdeSe na prApnoti#}
-<ls>KĀŚ.</ls> zu <ls>P. 1,1,56.</ls> {#iko ye guRavfdDI prApnutaste na BavataH#}
-<ls n="P. 1,1,">4</ls>, <ab>Sch.</ab> In derselben <ab>Bed.</ab> auch <ab>pass.</ab>: {#prApyamARAnAM yaH sadfSatamaH#}
-<ls n="P. 1,1,">50</ls>, <ab>Sch.</ab> — <ab>partic.</ab> {#prApta#}
+**5))** <div n="1">— 5) {%пришедший, прибывший, находящийся здесь%}: {#saBAntaH sAkziRaH prAptAn#} <ls>M. 8,79.</ls> {#kAle prAptaH#} <ls n="M.">3,105.</ls> <ls n="M. 3,">112.</ls> {#prApto 'syamaravat#} <ls>MBH. 3,2154.</ls> <ls>N. 23,16.</ls> <ls n="N.">26,31.</ls> <ls>INDR. 1,12.</ls> <ls>VID. 43.</ls> <ls n="VID.">143.</ls> <ls n="VID.">177.</ls> <ls n="VID.">300.</ls> {#Atyayike kArye prApte#} <ls>M. 7,165.</ls> {#mAGaSuklasya vA prApte pUrvAhRe praTame 'hani#} <ls n="M.">4,96.</ls> {#prApte kAle#} <ls n="M.">9,307.</ls> <ls>MBH. 3,2191.</ls> {#prApte tu zoqaSe varze#} <ls>CĀṆ. 11.</ls> Citat у <ls>MALLIN.</ls> к <ls>RAGH. 3,28.</ls> {#vayasi prApte#} <ls>N. 1,11.</ls> {#avasare prApte#} <ls>VID. 233.</ls> {#prAptAyAM rajanO#} <ls n="VID.">77.</ls> {#prAptakAla#} <lex>m.</lex> и <lex>adj.</lex> <ls>N. 5,15.</ls> <ls n="N.">8,12.</ls> <ls n="N.">13,17.</ls> <ls>PAÑCAT. 71,24.</ls> <ls>HIT. I,44.</ls> <ls n="HIT.">22,1</ls>, <ab>v. l.</ab> {#prAptayOvanA#} <ls>N. 2,7.</ls> {#aprAptavayas#} <ls>BRĀHMAṆ. 1,28.</ls> {#kramaprApta#} <ls>N. 12,36.</ls>
   — [PW·restate] <div n="1">— 5〉 {%прибывший, пришедший%}. (<ab>insbes.</ab> о моментах времени); {%происходящий от%} (<ab>Abl.</ab>) <ls n="Chr.">197,4</ls>.
-
-**5))** <div n="1">— 5) {%пришедший, прибывший, находящийся здесь%}: {#saBAntaH sAkziRaH prAptAn#} <ls>M. 8,79.</ls> {#kAle prAptaH#} <ls n="M.">3,105.</ls> <ls n="M. 3,">112.</ls> {#prApto 'syamaravat#} <ls>MBH. 3,2154.</ls> <ls>N. 23,16.</ls> <ls n="N.">26,31.</ls> <ls>INDR. 1,12.</ls> <ls>VID. 43.</ls> <ls n="VID.">143.</ls> <ls n="VID.">177.</ls> <ls n="VID.">300.</ls> {#Atyayike kArye prApte#} <ls>M. 7,165.</ls> {#mAGaSuklasya vA prApte pUrvAhRe praTame 'hani#} <ls n="M.">4,96.</ls> {#prApte kAle#} <ls n="M.">9,307.</ls> <ls>MBH. 3,2191.</ls> {#prApte tu zoqaSe varze#} <ls>CĀṆ. 11.</ls> Citat bei <ls>MALLIN.</ls> zu <ls>RAGH. 3,28.</ls> {#vayasi prApte#} <ls>N. 1,11.</ls> {#avasare prApte#} <ls>VID. 233.</ls> {#prAptAyAM rajanO#} <ls n="VID.">77.</ls> {#prAptakAla#} <lex>m.</lex> und <lex>adj.</lex> <ls>N. 5,15.</ls> <ls n="N.">8,12.</ls> <ls n="N.">13,17.</ls> <ls>PAÑCAT. 71,24.</ls> <ls>HIT. I,44.</ls> <ls n="HIT.">22,1</ls>, <ab>v. l.</ab> {#prAptayOvanA#} <ls>N. 2,7.</ls> {#aprAptavayas#} <ls>BRĀHMAṆ. 1,28.</ls> {#kramaprApta#} <ls>N. 12,36.</ls>
-
-**6)** 6) {%близкий, родственный, дружественный, доверенный%}; <lex>m.</lex> {%родственник, друг, доверенное лицо%} (<ab>vgl.</ab> {#Api#})
-<ls>MED. t. 3</ls> ({#sva#}).
-<ls>M. 2,109.</ls> <ls n="M.">8,64.</ls>
-<ls>YĀJÑ. 1,28.</ls> <ls n="YĀJÑ.">2,71.</ls>
-<ls>RAGH. 12,52.</ls> {#mAturAptAMSca bAnDavAn#}
-<ls>M. 5,101.</ls> {#AptabanDuBiH#}
-<ls>DEV. 1,19.</ls>
 
 **6))** <div n="1">— 6) {%достигший завершения, зрелости; готовый%}: {#aprAptavyavahAra#} {%тот, чей процесс не завершен%} <ls>YĀJÑ. 2,243.</ls> {#aprAptA kanyA#} {%девушка, еще не достигшая брачного возраста%}, <ls>M. 9,88.</ls>
 
-**7))** <div n="1">— 7) <ab>gramm.</ab> {%имеющий силу вследствие правила%}: {#gaRapAWAtsarvatra prAptA saMjYA#} <ls>P. 1,1,34</ls>, <ab>Sch.</ab> {#prAptaviBAzA#} oder {#prApte vi˚#} <ab>s. u.</ab> {#viBAzA#} . <ab>medic.</ab> {%указывает%}: {#gatimatsu ca rogezu BedanaM prAptamucyate#} <ls>SUŚR. 2,7,2.</ls> — Лексикографы знают еще два значения:
+**7))** <div n="1">— 7) <ab>gramm.</ab> {%имеющий силу вследствие правила%}: {#gaRapAWAtsarvatra prAptA saMjYA#} <ls>P. 1,1,34</ls>, <ab>Sch.</ab> {#prAptaviBAzA#} или {#prApte vi˚#} <ab>s. u.</ab> {#viBAzA#} . <ab>medic.</ab> {%указывает%}: {#gatimatsu ca rogezu BedanaM prAptamucyate#} <ls>SUŚR. 2,7,2.</ls> — Лексикографы знают еще два значения:
 
 **8))** <div n="1"> 8) {%поставленный%} ({#praRihita#}) <ls>AK. 3,2,36.</ls>
 
-**9))** <div n="1">— 9) {%подобающий, приличествующий%} <ls>H. 743.</ls> — <ab>caus.</ab> (<ab>gerund.</ab> {#prApayya#} oder {#prApya#} <ls>P. 6,4,57</ls>, <ab>Sch.</ab> <ls>VOP. 26,215</ls>)
+**9))** <div n="1">— 9) {%подобающий, приличествующий%} <ls>H. 743.</ls> — <ab>caus.</ab> (<ab>gerund.</ab> {#prApayya#} или {#prApya#} <ls>P. 6,4,57</ls>, <ab>Sch.</ab> <ls>VOP. 26,215</ls>)
 
-**Kaus. 1))** <div n="1"> 1) {%заставить кого-л.%} или {%что-л.%} (<ab>acc.</ab> oder <ab>Ortsadv.</ab>) {%достичь куда-л.; гнать, вести, приводить, доставлять%}; <ab>act.</ab>: {#prApaya na AcAryakulam#} <ls>CHĀND. UP. 4,5,1.</ls> <ls>MBH. 1,818.</ls> <ls n="MBH. 1,">1850.</ls> <ls n="MBH. 1,">2998.</ls> <ls n="MBH.">4,1664.</ls> <ls>ARJ. 4,23.</ls> <ls>R. 2,40,11.</ls> <ls n="R.">4,62,19.</ls> <ls>PAÑCAT. 114,23.</ls> <ls n="PAÑCAT.">115,3.</ls> <ls>KATHĀS. 10,189.</ls> <ls n="KATHĀS.">22,179.</ls> <ls>VID. 34.</ls> <ls>P. 1,3,36</ls>, <ab>Sch.</ab> {#prApayEnam — ito janapadAtparam#} <ls>R. 2,39,10.</ls> <ls>MBH. 3,13289.</ls> — <ab>med.</ab> <ls>ŚAT. BR. 1,8,1,16.</ls> <ls>MBH. 4,1739.</ls> <ls n="MBH. 4,">1748.</ls> {#punargatvA pArTivaM taM sametya vAkyaM madIyaM prApayasvArTayuktam#} <ls n="MBH.">14,242.</ls> — <ab>pass.</ab>: {#tayA — SmaSAnaM prApitaH so 'BUt#} <ls>KATHĀS. 25,214.</ls> {#sA maYjUzA prApitA bahuBirjanEH#} <ls n="KATHĀS.">4,76.</ls> {#yEH — paramaM mftyoH padaM prApitaH#} <ls>PRAB. 18,7.</ls> {#SvaSrUjanaM sarvamanukrameRa vijYApaya prApitamatpraRAmaH#} <ls>RAGH. 14,60.</ls> {#na ca prApitamanyena grasedarTam#} ({%дело%}) <ls>M. 8,43.</ls>
+**Kaus. 1))** <div n="1"> 1) {%заставить кого-л.%} или {%что-л.%} (<ab>acc.</ab> или <ab>Ortsadv.</ab>) {%достичь куда-л.; гнать, вести, приводить, доставлять%}; <ab>act.</ab>: {#prApaya na AcAryakulam#} <ls>CHĀND. UP. 4,5,1.</ls> <ls>MBH. 1,818.</ls> <ls n="MBH. 1,">1850.</ls> <ls n="MBH. 1,">2998.</ls> <ls n="MBH.">4,1664.</ls> <ls>ARJ. 4,23.</ls> <ls>R. 2,40,11.</ls> <ls n="R.">4,62,19.</ls> <ls>PAÑCAT. 114,23.</ls> <ls n="PAÑCAT.">115,3.</ls> <ls>KATHĀS. 10,189.</ls> <ls n="KATHĀS.">22,179.</ls> <ls>VID. 34.</ls> <ls>P. 1,3,36</ls>, <ab>Sch.</ab> {#prApayEnam — ito janapadAtparam#} <ls>R. 2,39,10.</ls> <ls>MBH. 3,13289.</ls> — <ab>med.</ab> <ls>ŚAT. BR. 1,8,1,16.</ls> <ls>MBH. 4,1739.</ls> <ls n="MBH. 4,">1748.</ls> {#punargatvA pArTivaM taM sametya vAkyaM madIyaM prApayasvArTayuktam#} <ls n="MBH.">14,242.</ls> — <ab>pass.</ab>: {#tayA — SmaSAnaM prApitaH so 'BUt#} <ls>KATHĀS. 25,214.</ls> {#sA maYjUzA prApitA bahuBirjanEH#} <ls n="KATHĀS.">4,76.</ls> {#yEH — paramaM mftyoH padaM prApitaH#} <ls>PRAB. 18,7.</ls> {#SvaSrUjanaM sarvamanukrameRa vijYApaya prApitamatpraRAmaH#} <ls>RAGH. 14,60.</ls> {#na ca prApitamanyena grasedarTam#} ({%дело%}) <ls>M. 8,43.</ls>
 
 **Kaus. 2))** <div n="1">— 2) {%дать кому-л.%} (<ab>acc.</ab>) {%получить что-л.%} (<ab>acc.</ab>) {%; доставить кому-л. что-л.%}: {#rAjAnam — prApayenmahatIM Sriyam#} <ls>MBH. 2,171.</ls> {#vyAkaraRaM#} (<ab>acc.</ab>) {#loke pratizWAM prApayizyati#} <ls>KATHĀS. 2,69.</ls> {#harIRAM prApito rAjyaM tvaM durAtmA mahAtmanA#} <ls>R. 4,34,25.</ls> {#mayEza SazpaBuksAcivyaM prApitaH#} <ls>PAÑCAT. 102,4.</ls> {#prApito muKyamantritAm#} <ls>RĀJA-TAR. 5,424.</ls>
 
@@ -165,144 +145,144 @@
 <ls n="MBH. 3,">11454.</ls> {#paYcaSatAYCUrAn — parIpsamAnaH#}
 <ls n="MBH. 3,">15723.</ls>
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {%заставлять достигать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {%заставлять достигать%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#anusaMpra#} {%достигать, прибывать к, заставать в%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anusaMpra#} {%достигать, прибывать к, заставать в%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Partic.</ab> {#anusaMprApta#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Partic.</ab> {#anusaMprApta#}
 <div n="1">— 1〉 {%прибывший к%} (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%случившийся с кем-л.%} (<ab>Acc.</ab>).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%случившийся с кем-л.%} (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%пришедший, появившийся, присутствующий%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%пришедший, появившийся, присутствующий%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#aBisaMpra#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBisaMpra#}
 <div n="1">— 1〉 {%достигать, приходить к%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%обретать, получать, становиться причастным%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%обретать, получать, становиться причастным%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Partic.</ab> {#aBisaMprApta#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Partic.</ab> {#aBisaMprApta#}
 <div n="1">— 1〉 {%прибывший к%} (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%пришедший%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%пришедший%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#upasaMpra#} {%достигать, приходить к%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#upasaMpra#} {%достигать, приходить к%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Partic.</ab> {#upasaMprApta#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Partic.</ab> {#upasaMprApta#}
 <div n="1">— 1〉 {%навлекший на себя, попавший в%} (<ab>Acc.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%подошедший, приблизившийся%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%подошедший, приблизившийся%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#prati#} <ab>Desid.</ab> {%добиваться%} (девушки).
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#prati#} <ab>Desid.</ab> {%добиваться%} (девушки).
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#vi#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#vi#}
 <div n="1">— 1〉 {%пронизывать, проникать, наполнять, заполнять%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%простираться до%} ({#A#}).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%простираться до%} ({#A#}).
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Partic.</ab> {#vyApta#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Partic.</ab> {#vyApta#}
 <div n="1">— 1〉 {%пронизанный, наполненный, переполненный%}. {#sUryatejasA muKam#} так <ab>v. a.</ab> {%целиком освещенный%} <ls n="Chr.">154,5</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%занятый, взятый во владение%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%занятый, взятый во владение%}.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%пораженный, страдающий%} (<ab>Instr.</ab>) <ls>TARKAS. 41</ls> ({#anityatvena#} zu lesen).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%пораженный, страдающий%} (<ab>Instr.</ab>) <ls>TARKAS. 41</ls> ({#anityatvena#} zu lesen).
 
-**+)** [PW·restate → *new] <div n="1">— 4〉 {%заключенный в чем-либо другом, — содержащийся%} <ls>BHĀṢĀP. 67</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 4〉 {%заключенный в чем-либо другом, — содержащийся%} <ls>BHĀṢĀP. 67</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 5〉 {%зажиточный, состоятельный%} <ls>AIT. BR. 4,4</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 5〉 {%зажиточный, состоятельный%} <ls>AIT. BR. 4,4</ls>.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> <ab>Partic.</ab> {#vyApita#} {%пронизанный, наполненный%} <ls>Spr. 1402</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> <ab>Partic.</ab> {#vyApita#} {%пронизанный, наполненный%} <ls>Spr. 1402</ls>.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#aBivi#} <ab>Absol.</ab> {#˚vyApya#} {%вплоть до%} — (<ab>Acc.</ab>) {%включительно%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#aBivi#} <ab>Absol.</ab> {#˚vyApya#} {%вплоть до%} — (<ab>Acc.</ab>) {%включительно%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#sam#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#sam#}
 <div n="1">— 1〉 {%обретать, становиться причастным%}. {#samAptavant#} <ls n="Chr.">91,25</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%завершать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%завершать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%достигать (по величине/качеству)%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%достигать (по величине/качеству)%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Partic.</ab> {#samApta#} {%завершенный, оконченный, доведенный до конца%}. — {#samAptaH#} <ls>MBH. 14,2561</ls> fehlerhaft für {#mamAptaH#}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Partic.</ab> {#samApta#} {%завершенный, оконченный, доведенный до конца%}. — {#samAptaH#} <ls>MBH. 14,2561</ls> ошибочно вм. {#mamAptaH#}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab>
 <div n="1">— 1〉 {%давать кому-л. достичь чего-л., помогать обрести%}.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%доводить до конца, совершать%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%доводить до конца, совершать%}.
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%уничтожать кого-л., покончить с кем-л.%} <ab>Desid.</ab> {%стремиться уничтожить%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%уничтожать кого-л., покончить с кем-л.%} <ab>Desid.</ab> {%стремиться уничтожить%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Partic.</ab> {#samIpsita#} {%желанный, желательный%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Partic.</ab> {#samIpsita#} {%желанный, желательный%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Desid.</ab> von <ab>Caus.</ab> {%стремиться совершить%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Desid.</ab> von <ab>Caus.</ab> {%стремиться совершить%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#anusam#} <ab>Caus.</ab> {%дополнительно завершать, впоследствии осуществлять%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#anusam#} <ab>Caus.</ab> {%дополнительно завершать, впоследствии осуществлять%}.
 
-**+)** [PW·restate → *new] <div n="p">— Mit {#parisam#} <ab>Pass.</ab>
+**+)** [PW·restate → не привязано: цель не указана] <div n="p">— С {#parisam#} <ab>Pass.</ab>
 <div n="1">— 1〉 {%содержаться в%} (<ab>Loc.</ab>).
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%распространяться на, относиться к%} (<ab>Loc.</ab> oder {#prati#}).
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%распространяться на, относиться к%} (<ab>Loc.</ab> или {#prati#}).
 
-**+)** [PW·restate → *new] <div n="1">— 3〉 {%достигать конечной цели%}.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 3〉 {%достигать конечной цели%}.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Partic.</ab> {#parisamApta#}
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Partic.</ab> {#parisamApta#}
 <div n="1">— 1〉 {%полностью завершенный%} <ls>MBH. 1,223,60</ls>.
 
-**+)** [PW·restate → *new] <div n="1">— 2〉 {%совершенный, завершенный,%} так <ab>v. a.</ab> {%достигший высшей точки%} <ls>ŚĀK. 105</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="1">— 2〉 {%совершенный, завершенный,%} так <ab>v. a.</ab> {%достигший высшей точки%} <ls>ŚĀK. 105</ls>.
 
-**+)** [PW·restate → *new] <div n="m">— <ab>Caus.</ab> {%завершать%} <ls>JĀBĀLOP. S. 444</ls>.
+**+)** [PW·restate → не привязано: цель не указана] <div n="m">— <ab>Caus.</ab> {%завершать%} <ls>JĀBĀLOP. S. 444</ls>.
 
-**+)** [PW·restate → *new] √{#Ap#}¦ mit {#ava#} <ab>Caus.</ab> {%заставлять кого-л.%} (<ab>Acc.</ab>) {%достигать чего-л.%} (<ab>Acc.</ab>) <ls>NAIṢ. 8,89</ls>.<info n="sup_1"/>
+**+)** [PW·restate → не привязано: цель не указана] √{#Ap#}¦ mit {#ava#} <ab>Caus.</ab> {%заставлять кого-л.%} (<ab>Acc.</ab>) {%достигать чего-л.%} (<ab>Acc.</ab>) <ls>NAIṢ. 8,89</ls>.<info n="sup_1"/>
 
-**+)** [PW·restate → *new] √{#Ap#}¦ mit {#anu#} <ab>Desid.</ab> {%соглашаться, одобрять%}. {#indreRa bAQamityevamanvIpsitam#} (<ab>impers.</ab>) <ls>VP. 4,2,11</ls>.
-<div n="p">— Mit {#paryava#} {%целиком усваивать, полностью присваивать себе%} <ls>VAJRACCH. 28,14</ls>. <ls n="VAJRACCH.">30,17</ls>.
-<div n="p">— Mit {#sam#} 4〉 с {#AtmAnam#} или без него {%положить конец своей жизни%} <ls>ĀPAST. 1,25,2</ls>. <ls n="ĀPAST. 1,25,">7</ls>.<info n="sup_3"/>
+**+)** [PW·restate → не привязано: цель не указана] √{#Ap#}¦ mit {#anu#} <ab>Desid.</ab> {%соглашаться, одобрять%}. {#indreRa bAQamityevamanvIpsitam#} (<ab>impers.</ab>) <ls>VP. 4,2,11</ls>.
+<div n="p">— С {#paryava#} {%целиком усваивать, полностью присваивать себе%} <ls>VAJRACCH. 28,14</ls>. <ls n="VAJRACCH.">30,17</ls>.
+<div n="p">— С {#sam#} 4〉 с {#AtmAnam#} или без него {%положить конец своей жизни%} <ls>ĀPAST. 1,25,2</ls>. <ls n="ĀPAST. 1,25,">7</ls>.<info n="sup_3"/>
 
-**+)** [PW·restate → *new] √{#Ap#}¦ mit {#vi#}, {#vyApta#} 4〉 {%содержащийся во всем, распространенный повсюду%} <ls>Ind. St. 9,137</ls>. <ab>Superl.</ab> {#˚tama#} <ls n="Ind. St. 9,">146</ls>. {#vyAptadeha#} <ls>ŚIŚ. 18,5</ls> nach dem <ab>Comm.</ab> = {#sarvANgIna#}. Nach <ls>MED. t. 57</ls> ist {#vyApta#} auch = {#KyAta#}.<info n="sup_6"/>
+**+)** [PW·restate → не привязано: цель не указана] √{#Ap#}¦ mit {#vi#}, {#vyApta#} 4〉 {%содержащийся во всем, распространенный повсюду%} <ls>Ind. St. 9,137</ls>. <ab>Superl.</ab> {#˚tama#} <ls n="Ind. St. 9,">146</ls>. {#vyAptadeha#} <ls>ŚIŚ. 18,5</ls> nach dem <ab>Comm.</ab> = {#sarvANgIna#}. Nach <ls>MED. t. 57</ls> ist {#vyApta#} также = {#KyAta#}.<info n="sup_6"/>
 
-**+)** [PW·restate → *new] √{#Ap#}¦ mit {#anu#} <ab>Desid.</ab> 3.
-<div n="p">— Mit {#ava#} <ab>Caus.</ab> 1.
-<div n="p">— Mit {#payarva#} 3.
-<div n="p">— Mit {#vi#} I. 6.
-<div n="p">— Mit {#sam#} I. 3.<info n="sup_7"/>
+**+)** [PW·restate → не привязано: цель не указана] √{#Ap#}¦ mit {#anu#} <ab>Desid.</ab> 3.
+<div n="p">— С {#ava#} <ab>Caus.</ab> 1.
+<div n="p">— С {#payarva#} 3.
+<div n="p">— С {#vi#} I. 6.
+<div n="p">— С {#sam#} I. 3.<info n="sup_7"/>
 
-**+)** [PW·restate → *new] √{#Ap#}¦ mit {#pra#}, {#prApta#} I. {%подходящий, приличествующий, целесообразный%} <ls>JĀTAKAM. 22</ls>.<info n="sup_7"/>
+**+)** [PW·restate → не привязано: цель не указана] √{#Ap#}¦ mit {#pra#}, {#prApta#} I. {%подходящий, приличествующий, целесообразный%} <ls>JĀTAKAM. 22</ls>.<info n="sup_7"/>
 
-**+)** [PWKVN·derived_sense → *new] {#Ap#}¦ mit {#ava#} <ab>Caus.</ab> {%заставлять кого-л.%} (<ab>Acc.</ab>) {%достигать чего-л.%} (<ab>Acc.</ab>) <ls>NAIṢ. 8,89</ls>.
+**+)** [PWKVN·derived_sense → не привязано: цель не указана] {#Ap#}¦ mit {#ava#} <ab>Caus.</ab> {%заставлять кого-л.%} (<ab>Acc.</ab>) {%достигать чего-л.%} (<ab>Acc.</ab>) <ls>NAIṢ. 8,89</ls>.
 
-**+)** [PWKVN·a2a → *new] {#Ap#}¦ mit {#anu#} <ab>Desid.</ab> {%соглашаться, одобрять%}. {#indreRa bAQamityevamanvIpsitam#} (<ab>impers.</ab>) <ls>VP. 4,2,11</ls>. — Mit {#paryava#} {%целиком усваивать, полностью присваивать себе%} <ls>VAJRACCH. 28,14</ls>. <ls n="VAJRACCH.">30,17</ls>. — Mit {#sam#} 4〉 с {#AtmAnam#} или без него {%положить конец своей жизни%} <ls>ĀPAST. 1,25,2</ls>. <ls n="ĀPAST. 1,25,">7</ls>.
+**+)** [PWKVN·a2a → не привязано: цель не указана] {#Ap#}¦ mit {#anu#} <ab>Desid.</ab> {%соглашаться, одобрять%}. {#indreRa bAQamityevamanvIpsitam#} (<ab>impers.</ab>) <ls>VP. 4,2,11</ls>. — С {#paryava#} {%целиком усваивать, полностью присваивать себе%} <ls>VAJRACCH. 28,14</ls>. <ls n="VAJRACCH.">30,17</ls>. — С {#sam#} 4〉 с {#AtmAnam#} или без него {%положить конец своей жизни%} <ls>ĀPAST. 1,25,2</ls>. <ls n="ĀPAST. 1,25,">7</ls>.
 
-**+)** [PWKVN·a2a → *new] {#Ap#}¦ mit {#vi#}, {#vyApta#} 4〉 {%содержащийся во всем, распространенный повсюду%} <ls>Ind. St. 9,137</ls>. <ab>Superl.</ab> {#˚tama#} <ls n="Ind. St. 9,">146</ls>. {#vyAptadeha#} <ls>ŚIŚ. 18,5</ls> nach dem <ab>Comm.</ab> = {#sarvANgIna#}. Nach <ls>MED. t. 57</ls> ist {#vyApta#} auch = {#KyAta#}.
+**+)** [PWKVN·a2a → не привязано: цель не указана] {#Ap#}¦ mit {#vi#}, {#vyApta#} 4〉 {%содержащийся во всем, распространенный повсюду%} <ls>Ind. St. 9,137</ls>. <ab>Superl.</ab> {#˚tama#} <ls n="Ind. St. 9,">146</ls>. {#vyAptadeha#} <ls>ŚIŚ. 18,5</ls> nach dem <ab>Comm.</ab> = {#sarvANgIna#}. Nach <ls>MED. t. 57</ls> ist {#vyApta#} также = {#KyAta#}.
 
-**+)** [PWKVN·a2a → *new] {#Ap#}¦ mit {#anu#} <ab>Desid.</ab> 3. — Mit {#ava#} <ab>Caus.</ab> 1. — Mit {#payarva#} 3. — Mit {#vi#} I. 6. — Mit {#sam#} I. 3.
+**+)** [PWKVN·a2a → не привязано: цель не указана] {#Ap#}¦ mit {#anu#} <ab>Desid.</ab> 3. — С {#ava#} <ab>Caus.</ab> 1. — С {#payarva#} 3. — С {#vi#} I. 6. — С {#sam#} I. 3.
 
-**+)** [PWKVN·a2a → *new] {#Ap#}¦ mit {#pra#}, {#prApta#} I. {%подходящий, приличествующий, целесообразный%} <ls>JĀTAKAM. 22</ls>.
+**+)** [PWKVN·a2a → не привязано: цель не указана] {#Ap#}¦ mit {#pra#}, {#prApta#} I. {%подходящий, приличествующий, целесообразный%} <ls>JĀTAKAM. 22</ls>.
 
-**+)** [SCH·derived_sense → *new] {%āp%}¦ mit {%anu%} Desid. соглашаться. {%Indreṇa bāḍham ity evam anvīpsitam%}, <ls>VP. 4,2,11.</ls>
+**+)** [SCH·derived_sense → не привязано: цель не указана] {%āp%}¦ mit {%anu%} Desid. соглашаться. {%Indreṇa bāḍham ity evam anvīpsitam%}, <ls>VP. 4,2,11.</ls>
 
-**+)** [SCH·derived_sense → *new] Mit {%ava%} <ls>Kaus.</ls> заставлять кого-л. (Акк.) достигать чего-л. (Акк.), <ls>Naiṣ. 8,89.</ls>
+**+)** [SCH·derived_sense → не привязано: цель не указана] С {%ava%} <ls>Kaus.</ls> заставлять кого-л. (Акк.) достигать чего-л. (Акк.), <ls>Naiṣ. 8,89.</ls>
 
-**+)** [SCH·sch_star → *new] Mit {%paryava%} целиком усваивать что-л., полностью присваивать себе, <ls>Vajracch. 28,14; 30,17.</ls>
+**+)** [SCH·sch_star → не привязано: цель не указана] С {%paryava%} целиком усваивать что-л., полностью присваивать себе, <ls>Vajracch. 28,14; 30,17.</ls>
 
-**+)** [SCH·sch_star → *new] Mit {%˚para%} быть достаточным, хватать, <ls>H 29,47.</ls>
+**+)** [SCH·sch_star → не привязано: цель не указана] С {%˚para%} быть достаточным, хватать, <ls>H 29,47.</ls>
 
-**+)** [SCH·sch_star → *new] Mit {%pra, prāpta%} подходящий, приличествующий, целесообразный, <ls>Jātakam. 22.</ls>
+**+)** [SCH·sch_star → не привязано: цель не указана] С {%pra, prāpta%} подходящий, приличествующий, целесообразный, <ls>Jātakam. 22.</ls>
 
-**+)** [SCH·sch_star → *new] Mit {%paripra, ˚pariprāpta = vijñapta%}, <ls>S I,196,6.</ls>
+**+)** [SCH·sch_star → не привязано: цель не указана] С {%paripra, ˚pariprāpta = vijñapta%}, <ls>S I,196,6.</ls>
 
-**+)** [SCH·sch_star → *new] Mit {%vi, vyāpta%} 4. содержащийся во всем, распространенный повсюду, <ls>Ind. St. 9,137.</ls> Superl. {%˚tama%} 146. {%vyāptadeha%} <ls>Śiś. 18,5</ls> nach dem Komm. = {%sarvāṅgīna%}. Nach <ls>Med. 1,57</ls> ist {%vyāpta%} auch = {%khyāta%}.
+**+)** [SCH·sch_star → не привязано: цель не указана] С {%vi, vyāpta%} 4. содержащийся во всем, распространенный повсюду, <ls>Ind. St. 9,137.</ls> Superl. {%˚tama%} 146. {%vyāptadeha%} <ls>Śiś. 18,5</ls> nach dem Komm. = {%sarvāṅgīna%}. Nach <ls>Med. 1,57</ls> ist {%vyāpta%} также = {%khyāta%}.
 
-**+)** [SCH·sch_star → *new] Mit {%sam%} 4. с {%ātmānam%} или без него положить конец своей жизни, <ls>Āpast. 1,25,2. 7.</ls>
+**+)** [SCH·sch_star → не привязано: цель не указана] С {%sam%} 4. с {%ātmānam%} или без него положить конец своей жизни, <ls>Āpast. 1,25,2. 7.</ls>
 
-**+)** [SCH·sch_star → *new] {%āp%}¦ mit {%˚udava%}, достигать, покрывать, <ls>Kir. IX,11.</ls>
+**+)** [SCH·sch_star → не привязано: цель не указана] {%āp%}¦ mit {%˚udava%}, достигать, покрывать, <ls>Kir. IX,11.</ls>
 
 ## h2
 
-**1)** <div n="p">— {#parisam#} <ab>pass.</ab> «достигать конца, приходить к конечной цели»
+**1)** <div n="p">— {#parisam#} <ab>pass.</ab> {%достигать конца, приходить к конечной цели%}
 <ls>BHĀG. P. 11,16,44.</ls> = {#kftakftyo BU#} <ab>Schol.</ab>
 
 **2)** <div n="v">— <ab>Vgl.</ab> {#parisamApti#} .
 
-**3)** <div n="1">— 3) «расправиться с кем-либо, покончить с кем-либо»: {#SarErazwaBirekEkaM samApya#}
+**3)** <div n="1">— 3) {%расправиться с кем-либо, покончить с кем-либо%}: {#SarErazwaBirekEkaM samApya#}
 <ls>KATHĀS. 48,67.</ls> {#yadeza sADuhfcCayastvayAsuraH samApitaH#} (так следует писать)
 <ls>BHĀG. P. 7,8,51.</ls>
 
