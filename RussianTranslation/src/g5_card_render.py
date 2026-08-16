@@ -550,9 +550,25 @@ def _selftest():
     linked = print_panel("<ls>P. 6,4,57.</ls> и <ls>MBH. 3, 12</ls>")
     check('class="barecit"' not in linked,
           "a citation that already resolved to a link is NOT re-marked as bare")
-    check(linked.count("<a class=ls") == 2, "both resolved citations stay links")
-    print("  (pwgab table %s · pwgbib bibliography %s)"
-          % ("present" if have_ab else "ABSENT", "present" if have_bib else "ABSENT"))
+    # NB the trailing space: `class=lse` is the H2845 e-text sibling link, a
+    # different element, and must not be counted as a second citation link.
+    check(linked.count("<a class=ls ") == 2, "both resolved citations stay links")
+    # H2845: an MBh citation carries the vulgate e-text beside the scan link —
+    # but only where the csl-atlas presence table is on this machine. Absent, the
+    # renderer must stay SILENT, never imply the verse is missing.
+    import ls_links as _lsl
+    _probe = _lsl.MbhEtext()
+    _probe.index                       # `loaded` is only meaningful after a load
+    have_etext = _probe.loaded
+    check_if(have_etext, "class=lse" in linked and "sanatana.in" in linked,
+             "an MBh citation also links its Nīlakaṇṭha vulgate e-text",
+             "csl-atlas presence table absent — no e-text layer to check")
+    check_if(not have_etext, "class=lse" not in linked,
+             "no presence table -> no e-text claim rendered at all",
+             "presence table present, so the silent path is not exercised here")
+    print("  (pwgab table %s · pwgbib bibliography %s · MBh e-text %s)"
+          % ("present" if have_ab else "ABSENT", "present" if have_bib else "ABSENT",
+             "present" if have_etext else "ABSENT"))
 
     a = store_panel(ls)
     check('class="anatomy"' in a, "panel 2 is the colour-coded anatomy block")
