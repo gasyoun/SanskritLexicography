@@ -133,6 +133,36 @@ So the corpus verdict below stands unchanged, and the residual narrows from *fin
 translation* to *wait for it to reach Sū. 6, Nid. 7 or Cik. 8* — the chapters where the
 word actually lives.
 
+**And that wait is now cancelled.** MG, 16-08-2026: *«the translation will never reach
+Cik. 8, it's too slow. So we can compare with the German and English translations only, but
+no Russian.»* The Russian lane for AHS lexical cross-checks is therefore **closed**, not
+pending — recorded as [DEAD_ENDS §14](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md),
+the same species as its §13 (a plan waiting on a Russian translation that is not coming).
+
+The replacement lane, and its honest state:
+
+| Language | Source | Status |
+|---|---|---|
+| German | Luise Hilgenberg & Willibald Kirfel, *Vāgbhaṭa's Aṣṭāṅgahṛdayasaṃhitā: ein altindisches Lehrbuch der Heilkunde*, Leiden 1941 — the complete German | **Not held.** Not on disk, not on archive.org, in no hub. Acquisition-blocked. |
+| English | [Dominik Wujastyk, Penguin 2003](https://en.wikipedia.org/wiki/Ashtanga_Hridayam) (ISBN 0-14-044824-1) | Held nowhere here, and **selected passages only** — not the whole text, so it may not reach the `guda` chapters either. |
+| English | Srikantha Murthy, Krishnadas Academy — a complete English | **Candidate, bibliographically unverified** in this pass. Verify before planning on it. |
+
+So German is the primary lane and both are acquisition-blocked. Because that is a real
+stop rather than a quick read, it is carried as its own handoff rather than left as a line
+here — see § On the German/English lane below.
+
+**What is available today, at no acquisition cost,** is DCS's own lemma-gloss layer,
+[`dcs-conllu/lookup/dictionary.csv`](https://github.com/gasyoun/dcs-conllu/tree/main/lookup)
+(180 178 rows). It cannot give per-locus rendering — only a translation can — but it
+independently reproduces the distinctions this closure established by hand:
+`guda` mn "an intestine; entrail; rectum; anus", `gudā` f **"the bowels"** (= Elizarenkova's
+«кишок»), `vaniṣṭhu` m "**the rectum**; Dickdarm" (confirming the §544 correction
+mechanically), `pāyu` mn "**the anus**", `sthūlāntra` n "the larger intestine near the anus".
+Recorded as [FINDINGS §546](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).
+Note what that table shows: DCS's *gloss order* for `guda` is intestine-first, matching the
+corrected Kochergina row, while AHS *usage* is anorectal throughout — the lexicon and the
+register disagree exactly as the rider says.
+
 **The corpus half is decisive on its own.** DCS's lemma-annotated Aṣṭāṅgahṛdayasaṃhitā
 carries `guda` in **30 of its 120 files, 79 occurrences** (the handoff's «42 files» was an
 over-count; corrected here from the annotation itself). Across all 79 the referent is the
