@@ -28,7 +28,7 @@ do), and a blockquoted (`> `) **Source** paragraph linking the exact statement a
 with a `— repo · date` tag — the `>` gives the Source line its left indent and muted rendering
 in plain Markdown; no HTML in this file, ever. Keep findings grounded (a number, a file, a
 probe), never a hunch. **Importance label:** every finding carries a colour dot at the start of its claim line and its index entry — 🔴 3 important · 🟠 2 medium · 🟡 1 not that important — assign one when appending. **Numbers are append-only:** a new finding takes the next free number
-(currently §547) whatever its section, so existing numbers never shift; when a finding is later
+(currently §548) whatever its section, so existing numbers never shift; when a finding is later
 refuted or superseded, strike it and say why — never reuse its number. **Verifiability class (H1362):** every finding has a re-derivability class — **A** auto-reproducible · **B** re-probeable (live host) · **C** historically fixed · **D** not reproducible as stated — ruled in [`epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/FINDINGS_VERIFIABILITY_RULING_2026.md) and machine-readable in [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json). **A class-D finding must be cited with its non-reproducibility named** — never as a bare `§N` carrying the authority of a recomputable row; the D findings are marked `⚠️ class D — not reproducible as stated` in place.
 
 ## Index
@@ -262,6 +262,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§544. rvlinks is the pāda-granular RV substrate already on disk — and a verse-granular read of it invents renderings the translator never made](#544-rvlinks-is-the-pāda-granular-rv-substrate-already-on-disk--and-a-verse-granular-read-of-it-invents-renderings-the-translator-never-made) — all 1 028 hymns with Elizarenkova/Geldner/Griffith locally, vs the Mandala I–II SamudraManthanam extract. The 2013 memo's «прямая кишка» for `guda` at RV 10.163.3 is actually her `vaniṣṭhu` — the misalignment class H2850 exists to catch.
 - 🔴 [§545. A fixture guard row proves the sanitizer runs, not that it covers every sink — the leak hid in a second consumer the guard row never reaches](#545-a-fixture-guard-row-proves-the-sanitizer-runs-not-that-it-covers-every-sink--the-leak-hid-in-a-second-consumer-the-guard-row-never-reaches) — `sense_tag` was scrubbed for the IRI sink while `edition_rel` interpolated it raw into an `evidence` string emitted verbatim by both serializations. The fixture's guard row never takes an evidence-bearing branch, so no fixture run could have caught it. Enumerate a sanitizable field's sinks; reproduce the leak directly instead of trusting a fixture row to reach the branch.
 - 🟠 [§546. DCS ships a 180 k-row lemma→gloss layer next to the corpus — `dcs-conllu/lookup/dictionary.csv`, and almost nothing in the org reads it](#546-dcs-ships-a-180-k-row-lemmagloss-layer-next-to-the-corpus--dcs-conllulookupdictionarycsv-and-almost-nothing-in-the-org-reads-it) — 180 178 rows of `word ⇥ grammar ⇥ meanings`, TAB-separated despite the `.csv` name. It independently reproduces the `vaniṣṭhu`=rectum / `gudā`=bowels / `pāyu`=anus split that §543/§544 established by hand. Read it before proposing to acquire or OCR a translation to settle a sense question.
+- 🔴 [§547. PWG's Ṛgveda citations disagree with Elizarenkova far more often than they agree — and a third of the surface cannot be adjudicated at all](#547-pwgs-ṛgveda-citations-disagree-with-elizarenkova-far-more-often-than-they-agree--and-a-third-of-the-surface-cannot-be-adjudicated-at-all) — 2 964 RV citations across 52 entries: 1 221 diverges · 520 agrees · 1 223 undecidable; 17.9 % of pāda joins span more than one pāda, so a verse-granular join misreads one citation in five. Her printed line order is not always pāda order.
 ## Grammar & morphology data
 
 ### §1. Whitney accent-mobility rules are machine-encodable
@@ -6192,6 +6193,7 @@ defect class H2850 exists to eliminate, and RV 10.163.3 is now a worked specimen
 > vs the memo's claim; 1 028 hymn files counted on disk.
 > §545 takes the next number.
 
+
 ### §545. A fixture guard row proves the sanitizer runs, not that it covers every sink — the leak hid in a second consumer the guard row never reaches
 
 🔴 **[`export_de_edition.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/export_de_edition.py)
@@ -6260,3 +6262,52 @@ Generalises: **before proposing to acquire or OCR a translation to settle a sens
 > [dcs-conllu PROVENANCE.md](https://github.com/gasyoun/dcs-conllu/blob/main/PROVENANCE.md);
 > rows quoted verbatim above.
 > §547 takes the next number.
+
+### §547. PWG's Ṛgveda citations disagree with Elizarenkova far more often than they agree — and a third of the surface cannot be adjudicated at all
+
+🔴 **Over the 2 964 Ṛgveda-Saṃhitā verse citations in the live `pwg_ru` store (52 entries,
+2 482 distinct loci), aligning each quotation to Elizarenkova's published Russian at pāda
+granularity gives 1 221 `diverges` · 520 `agrees` · 1 223 `undecidable`.** Divergence is the
+majority verdict among the decidable ones, roughly 2.3 : 1 against agreement. The specimen MG
+raised is one of them: PWG glosses `parigā` «прийти, достигнуть, настигнуть кого-либо» and cites
+`ṚV. 7,84,1`, whose pādas c+d Elizarenkova renders «Полная жира (жертвенная ложка,) которую
+держат в руках, / (Принимая) разные формы, **кружит около** вас» — `jigāti` read as circum-motion,
+not arrival.
+
+**Evidence.** [`rv_pada_align.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/rv_pada_align.py)
+`report`, 16-08-2026, over `pwg_ru_translated.jsonl` (11 603 rows): 1 856 joins land on specific
+pādas (62.6 %), 333 of those span more than one pāda (17.9 %) — so a verse-granular join would
+have been wrong about which lines to show on nearly one citation in five, before any question of
+sense. 171 citations have no published Russian at all (124 verses rvlinks leaves untranslated,
+plus khila/miscounted-hymn references). The 50-citation audit sample
+([`reports/rv_pada_alignment_sample50_2026-08-16.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/rv_pada_alignment_sample50_2026-08-16.txt))
+scores pāda selection at 47 correct · 2 wrong · 1 correctly declined.
+
+**Implication.** Three things, in order.
+
+1. The `diverges` count is **not** a defect list. `agrees`/`diverges` is a lexical-support
+   SCREEN, not a semantic judgment: PWG glosses the lemma across its whole range while
+   Elizarenkova renders one occurrence in context, so the two disagreeing is the normal case and
+   the interesting one. It ranks the corpus for a human, nothing more.
+2. `undecidable` at 1 223 is the real finding about coverage — 775 of those citations quote no
+   Sanskrit at all, so nothing narrows them below the whole verse. A citation without a
+   `{#…#}` span cannot be aligned at pāda granularity by any method; that is a property of PWG,
+   not of the join.
+3. **Elizarenkova's printed line order is not always the pāda order.** At RV 7.33.10 her first
+   line renders pāda b and her second renders pāda a; at RV 3.33.9 and RV 10.108.5 a speaker
+   attribution («Сарама:», «Р е к и:» — 163 such lines across the 1 028 hymns) occupies a line of
+   its own and shifts every later line off its pāda. Filtering the attributions is mechanical and
+   is done; the inversions are not detectable from the Russian alone and remain the residual
+   error class, 1 of 50 in the audit.
+
+**Extent correction.** The handoff states «1 526 RV citations across 62 entries». Re-measured on
+the same store: **2 964** Saṃhitā verse citations across **52** entries, out of 3 760 ṚV-siglum
+`<ls>` occurrences once hymn-level references and the sub-works (Prātiśākhya, Anukramaṇī,
+Vālakhilya) are excluded. Neither of the handoff's two numbers reproduces under any counting rule
+tried; the measured pair is the one to cite.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2850. Evidence:
+> [`RV_PADA_ALIGNMENT_AUDIT_2026-08-16.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/RV_PADA_ALIGNMENT_AUDIT_2026-08-16.md)
+> and the 2 964-row [`rv_pada_alignment.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/rv_pada_alignment.jsonl);
+> selftest 49/49 including the gate negative control.
+> §548 takes the next number.

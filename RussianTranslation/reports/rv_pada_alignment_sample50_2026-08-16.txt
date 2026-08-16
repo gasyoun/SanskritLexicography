@@ -1,0 +1,292 @@
+pool: 1856 pāda-scoped joins of 2964 RV citations (seed 20260816)
+--- 01 rv07.001.04 As | sel=c high q=1.00 reg=0.7
+    QUOTE: yatrā naraḥ samāsate sujātāḥ
+     a) pra te agnayo 'gnibhyo varaṃ niḥ               | Эти Агни ярко пылают лучше, чем (другие) Агни,
+     b) suvīrāsaḥ śośucanta dyumantaḥ                  | Принося мужественных героев, сверкая
+  >> c) yatrā naraḥ samāsate sujātāḥ                   | (Там,) где сидят вместе высокородные мужи.
+--- 02 rv10.045.10 Bid | sel=d high q=1.00 reg=0.5
+    QUOTE: ujjātena bhinadadujjanitvaiḥ
+     a) ā tam bhaja sauśravaseṣv agna                  | Дай ему волю в славных делах, о Агни!
+     b) uktha-uktha ā bhaja śasyamāne                  | Дай ему долю в каждом произносимом восхвалении!
+     c) priyaḥ sūrye priyo agnā bhavāty                | Любимым у Сурьи, любимым у Агни пусть будет он!
+  >> d) uj jātena bhinadad uj janitvaiḥ                | Пусть он бурно проявиться в рожденном (потомстве) и в тех, кто должен родиться!
+--- 03 rv06.031.01 DA | sel=b high q=0.95 reg=0.8
+    QUOTE: hastayoradhithāḥ kṛṣṭīḥ
+     a) abhūr eko rayipate rayīṇām                     | Ты стал единственным господином богатств,
+  >> b) ā hastayor adhithā indra kṛṣṭīḥ                | Народы ты взял в свои руки, о Индра.
+     c) vi toke apsu tanaye ca sūre                    | Ради продолжения рода, ради вод, ради солнца
+     d) 'vocanta carṣaṇayo vivācaḥ                     | Состязались в спорах (о тебе) спорящие люди.
+--- 04 rv06.054.10 DA | sel=ab high q=1.00 reg=0.7
+    QUOTE: pari pūṣā hastaṃ dadhātu dakṣiṇam
+  >> a) pari pūṣā parastād                             | Пусть Пушан с той стороны
+  >> b) dhastaṃ dadhātu dakṣiṇam                       | Обнимет (нас) правою рукой!
+     c) punar no naṣṭam ājatu                          | Пусть снова пригонит нам пропавший (скот!)
+--- 05 rv10.018.04 DA | sel=a high q=1.00 reg=0.0
+    QUOTE: imaṃ jīvebhyaḥ paridhiṃ dadhāmi
+  >> a) imaṃ jīvebhyaḥ paridhiṃ dadhāmi                | Эту преграду я устанавливаю для живых.
+     b) maiṣāṃ nu gād aparo artham etam                | Пусть же никто другой среди них не отправится к этой цели!
+     c) śataṃ jīvantu śaradaḥ purūcīr                  | Да проживут они сотню обильных осеней!
+     d) antar mṛtyuṃ dadhatām parvatena                | Да закроют они смерть (этой) горой!
+--- 06 rv03.013.06 Sam | sel=c high q=1.00 reg=0.8
+    QUOTE: śaṃ naḥ śoca
+     a) uta no brahmann aviṣa                          | А также помоги нам с молитвой,
+     b) uktheṣu devahūtamaḥ                            | С гимнами, о (ты,) лучше всех призывающий богов!
+  >> c) śaṃ naḥ śocā marudvṛdho                        | Пламеней нам на благо, усиленный Марутами,
+     d) 'gne sahasrasātamaḥ                            | О Агни, добывающий тысячи!
+--- 07 rv10.048.08 Sru | sel=d high q=1.00 reg=0.0
+    QUOTE: prāhaṃ mahe vṛtrahatye aśuśravi
+     a) ahaṃ guṅgubhyo atithigvam iṣkaram              | Я (людям) Гунгу приготовил Атитхигву (царем),
+     b) iṣaṃ na vṛtraturaṃ vikṣu dhārayam              | Как жертвенную пищу, (и) укрепил убийцу врагов среди (его) соплеменников,
+     c) yat parṇayaghna uta vā karañjahe               | Когда при убийстве Парнаии или же при убийстве Каранджи
+  >> d) prāham mahe vṛtrahatye aśuśravi                | И при великом убийстве Вритры я прославил себя.
+--- 08 rv10.090.15 banD | sel=d high q=1.00 reg=0.0
+    QUOTE: abadhnanpuruṣaṃ paśum
+     a) saptāsyāsan paridhayas                         | У него было семь поленьев ограды (костра),
+     b) triḥ sapta samidhaḥ kṛtāḥ                      | Трижды семь были сделаны как дрова (для костра),
+     c) devā yad yajñaṃ tanvānā                        | Когда боги, совершая жертвоприношение,
+  >> d) abadhnan puruṣam paśum                         | Привязали Пурушу как (жертвенное) животное.
+--- 09 rv01.061.13 brU | sel=a medium q=0.76 reg=1.2
+    QUOTE: asyedu pra brūhi pūrvyāṇi karmāṇi
+  >> a) asyed u pra brūhi pūrvyāṇi                     | Это его, стремительного (бога), прежние подвиги
+     b) turasya karmāṇi navya ukthaiḥ                  | Снова провозгласи в хвалебных песнях,
+     c) yudhe yad iṣṇāna āyudhāny                      | Чтобы возбуждая оружие для боя,
+     d) ṛghāyamāṇo niriṇāti śatrūn                     | Буйствуя, он разогнал врагов.
+--- 10 rv03.044.03 car | sel=d high q=1.00 reg=2.0
+    QUOTE: yayorantarhariścarat
+     a) dyām indro haridhāyasam                        | Индра поддержал небо,
+     b) pṛthivīṃ harivarpasam                          | Кормящее золотистого, землю с золотистым обликом,
+     c) adhārayad dharitor bhūri                       | (Он поддержал) обильную пищу (тех) обоих золотистых,
+  >> d) bhojanaṃ yayor antar hariś carat               | Между которыми бродит золотистый (бог).
+--- 11 rv10.004.02 car | sel=ab high q=1.00 reg=0.8
+    QUOTE: yaṃ tvā janāso abhi saṃcaranti gāva uṣṇamiva vrajam
+  >> a) yaṃ tvā janāso abhi saṃcaranti                 | (Ты – тот,) к кому сходятся люди,
+  >> b) gāva uṣṇam iva vrajaṃ yaviṣṭha                 | Как коровы к теплому загону, о самый юный.
+     c) dūto devānām asi martyānām                     | Ты вестник богов (и) смертных.
+     d) antar mahāṃś carasi rocanena                   | Великий, ты странствуешь между (небом и землей) через светлое пространство.
+--- 12 rv06.027.07 dA | sel=c high q=0.96 reg=0.0
+    QUOTE: sa sṛñjayāya turvaśaṃ parādāt
+     a) yasya gāvāv aruṣā sūyavasyū                    | Чья пара рыжих быков, любителей хорошего пастбища,
+     b) antar ū ṣu carato rerihāṇā                     | Прекрасно движется между (небом и землей), облизываясь,
+  >> c) sa sṛñjayāya turvaśam parādād                  | Тот отдал Сринджайе Турвашу,
+     d) vṛcīvato daivavātāya śikṣan                    | Вричиватов – сыну Деваваты, стараясь (для них),
+--- 13 rv01.044.11 ftvij | sel=b medium q=1.00 reg=2.2
+    QUOTE: hotar
+     a) ni tvā yajñasya sādhanam                       | Мы помещаем тебя как исполнителя жертвы,
+  >> b) agne hotāram ṛtvijam                           | О Агни, как хотара, регулярно жертвующего,
+     c) manuṣvad deva dhīmahi                          | Как (это было при) Ману, как прозорливого,
+     d) pracetasaṃ jīraṃ dūtam amartyam                | Резвого вестника, бессмертного, о бог.
+--- 14 rv05.068.01 gA | sel=a high q=1.00 reg=0.0
+    QUOTE: mitrāya
+  >> a) pra vo mitrāya gāyata                          | Пропойте вы для Митры,
+     b) varuṇāya vipā girā                             | Для Варуны вдохновенную хвалу!
+     c) mahikṣatrāv ṛtam bṛhat                         | О два великих властелина, (услышьте) о высоком законе!
+--- 15 rv01.001.04 gam | sel=c medium q=0.75 reg=0.0
+    QUOTE: (yajñaḥ) deveṣu gacchati
+     a) agne yaṃ yajñam adhvaraṃ                       | О Агни, жертва (и) обряд,
+     b) viśvataḥ paribhūr asi                          | Которые ты охватываешь со всех сторон,
+  >> c) sa id deveṣu gacchati                          | Именно они идут к богам.
+--- 16 rv03.038.06 gam | sel=cd high q=1.00 reg=0.0
+    QUOTE: apaśyamatra manasā jaganvānvrate gandharvān
+     a) trīṇi rājānā vidathe purūṇi                    | Три (сиденья), о двое царей, во время жертвенной раздачи, многие –
+     b) pari viśvāni bhūṣathaḥ sadāṃsi                 | Все сиденья вы окружаете.
+  >> c) apaśyam atra manasā jaganvān                   | Я видел там, мыслью отправившись в путешествие,
+  >> d) vrate gandharvāṃ api vāyukeśān                 | Самих гандхарвов с волосами-ветром в (вашем) услужении.
+--- 17 rv05.064.01 gam | sel=cd high q=0.97 reg=0.5
+    QUOTE: pari vrajeva vāhvorjaganvāṃsā svarṇaram
+     a) varuṇaṃ vo riśādasam                           | Варуну, карающего врагов (?),
+     b) ṛcā mitraṃ havāmahe                            | Митру мы зовем для вас гимном,
+  >> c) pari vrajeva bāhvor                            | Тех двоих, кто руками, словно двумя изгородями,
+  >> d) jaganvāṃsā svarṇaram                           | Охватил небесное пространство.
+--- 18 rv07.033.10 hA | sel=a medium q=1.00 reg=2.2
+    QUOTE: vidyuto jyotiḥ pari saṃjihānam
+  >> a) vidyuto jyotiḥ pari saṃjihānam                 | Когда Митра-Варуна увидели,
+     b) mitrāvaruṇā yad apaśyatāṃ tvā                  | Как ты выскакиваешь светом из молнии,
+     c) tat te janmotaikaṃ vasiṣṭhāgastyo              | То это (одно) твое рожденье, а другое, о Васиштха,
+     d) yat tvā viśa ājabhāra                          | Когда Агастья принес тебя племени.
+--- 19 rv01.032.07 han | sel=b high q=1.00 reg=0.8
+    QUOTE: āsya vajramadhi sānau jaghāna
+     a) apād ahasto apṛtanyad indram                   | Безногий, безрукий боролся он против Индры.
+  >> b) āsya vajram adhi sānau jaghāna                 | Тот ударил его дубиной по спине.
+     c) vṛṣṇo vadhriḥ pratimānam bubhūṣan              | Вол, хотевший стать противником быка,
+     d) purutrā vṛtro aśayad vyastaḥ                   | Вритра лежал, разбросанный по разным местам.
+--- 20 rv03.030.08 han | sel=c high q=1.00 reg=0.0
+    QUOTE: vṛtram
+     a) sahadānum puruhūta kṣiyantam                   | О многопризываемый, ты раздавил живущего
+     b) ahastam indra sam piṇak kuṇārum                | Вместе с Дану безрукого Кунару, о Индра.
+  >> c) abhi vṛtraṃ vardhamānam piyārum                | Вритру разрастающегося, злобного,
+     d) apādam indra tavasā jaghantha                  | Безногого ты убил мощной (дубиной), о Индра.
+--- 21 rv10.048.07 han | sel=c high q=1.00 reg=0.5
+    QUOTE: parṣān
+     a) abhīdam ekam eko asmi niṣṣāḷ                   | Вот я один победитель против одного,
+     b) abhī dvā kim u trayaḥ karanti                  | Против двоих. Что же трое (мне) сделают?
+  >> c) khale na parṣān prati hanmi bhūri              | Я много смолочу, как снопы на гумне.
+     d) kim mā nindanti śatravo 'nindrāḥ               | Что же надо мной насмехаются враги, не знающие Индры?
+--- 22 rv07.048.03 hi | sel=a high q=1.00 reg=0.0
+    QUOTE: te ciddhi
+  >> a) te cid dhi pūrvīr abhi santi śāsā              | Ведь это они одерживают верх над многими приказами (врага),
+     b) viśvāṃ arya uparatāti vanvan                   | Они покоряют врагов (в борьбе) за первенство.
+     c) indro vibhvāṃ ṛbhukṣā vājo aryaḥ               | Пусть Индра, Вибхван, Рибхукшан, Ваджа
+     d) śatror mithatyā kṛṇavan vi nṛmṇam              | В схватке искалечат мужскую силу чужого, врага!
+--- 23 rv10.016.09 hi | sel=a high q=1.00 reg=0.0
+    QUOTE: kravyādam
+  >> a) kravyādam agnim pra hiṇomi dūraṃ               | Пожирающего сырое мясо Агни я отсылаю далеко.
+     b) yamarājño gacchatu ripravāhaḥ                  | Пусть уйдет он, увозя нечистоты, к тем, кому Яма - царь!
+     c) ihaivāyam itaro jātavedā                       | Здесь же другой – Джатаведас.
+     d) devebhyo havyaṃ vahatu prajānan                | Пусть отвезет он жертву богам, зная путь!
+--- 24 rv01.165.15 iz | sel=cd high q=1.00 reg=1.0
+    QUOTE: eṣā yāsīṣṭa tanve vayāṃ vidyāmeṣaṃ vṛjanaṃ jīradānum
+     a) eṣa va stomo maruta iyaṃ                       | Вот восхваление для вас, о Маруты, вот песня
+     b) gīr māndāryasya mānyasya kāroḥ                 | Певца Мандарьи Маньи.
+  >> c) eṣā yāsīṣṭa tanve vayāṃ                        | Вместе с жертвенным подкреплением пусть принесет она нам потомство!
+  >> d) vidyāmeṣaṃ vṛjanaṃ jīradānum                   | Мы хотим найти щедрую общину, легко дарящую!
+--- 25 rv07.068.09 iz | sel=c high q=0.96 reg=0.8
+    QUOTE: iṣā taṃ vardhadaghnyā payobhiḥ
+     a) eṣa sya kārur jarate sūktair                   | Вот этот поэт воспевает (вас) в гимнах,
+     b) agre budhāna uṣasāṃ sumanmā                    | (Он,) доброжелательный, пробудившийся до утренних зорь.
+  >> c) iṣā taṃ vardhad aghnyā payobhir                | Пусть усилит (его) корова (своей) усладой – молоком!
+     d) yūyam pāta svastibhiḥ sadā naḥ                 | Защищайте вы нас всегда (своими) милостями!
+--- 26 rv07.093.03 iz | sel=b high q=1.00 reg=0.5
+    QUOTE: dhībhirviprāḥ pramatimicchamānāḥ
+     a) upo ha yad vidathaṃ vājino gur                 | А когда (мужи,) стремящиеся к награде, подошли к жертвенной раздаче,
+  >> b) dhībhir viprāḥ pramatim icchamānāḥ             | Поэты со (своими) видениями, ища (вашей) заботы,
+     c) arvanto na kāṣṭhāṃ nakṣamāṇā                   | Словно скаковые кони, берущие (решающий) барьер,
+     d) indrāgnī johuvato naras te                     | Эти мужи, громко зовущие Индру-Агни:
+--- 27 rv09.033.04 mA | sel=b high q=1.00 reg=0.0
+    QUOTE: gāvo mimanti dhenavaḥ
+     a) tisro vāca ud īrate                            | Возносятся три речи,
+  >> b) gāvo mimanti dhenavaḥ                          | Мычат дойные коровы,
+     c) harir eti kanikradat                           | Движется золотистый, громко ревя.
+--- 28 rv10.040.10 mA | sel=a high q=1.00 reg=0.0
+    QUOTE: jīvaṃ rudanti vi mayante adhvare
+  >> a) jīvaṃ rudanti vi mayante adhvare               | Они оплакивают живого. Они меняются во время обряда.
+     b) dīrghām anu prasitiṃ dīdhiyur naraḥ            | Долгий путь прослеживают мужи внутренним взором.
+     c) vāmam pitṛbhyo ya idaṃ samerire                | Благо для предков, которые это устроили.
+     d) mayaḥ patibhyo janayaḥ pariṣvaje               | Радость для мужей – жены, которых предстоит обнимать.
+--- 29 rv10.078.07 mA | sel=d high q=1.00 reg=1.2
+    QUOTE: yojanāni
+     a) uṣasāṃ na ketavo 'dhvaraśriyaḥ                 | Словно лучи утренних зорь, украшающие обряд,
+     b) śubhaṃyavo nāñjibhir vy aśvitan                | Как (люди), стремящиеся к роскоши, далеко сверкнули они украшениями.
+     c) sindhavo na yayiyo bhrājadṛṣṭayaḥ              | Мчась, как реки, со (своими) блестящими копьями,
+  >> d) parāvato na yojanāni mamire                    | Они измерили пройденные пути, словно (приехали) из дальней дали.
+--- 30 rv08.026.17 mad | sel=b high q=0.82 reg=0.7
+    QUOTE: yadiṣo madatho gṛhe
+     a) yad ado divo arṇava                            | Если там в бурном море неба
+  >> b) iṣo vā madatho gṛhe                            | Или если вы наслаждаетесь в доме жертвенной услады,
+     c) śrutam in me amartyā                           | Услышьте же меня, о бессмертные!
+--- 31 rv02.034.15 muc | sel=b high q=1.00 reg=0.8
+    QUOTE: yayā nido muñcatha vanditāram
+     a) yayā radhram pārayathāty aṃho                  | Благодаря чему вы переправляете слабого через узость,
+  >> b) yayā nido muñcatha vanditāram                  | Благодаря чему вы спасаете восхвалителя от хулы –
+     c) arvācī sā maruto yā va ūtir                    | Сюда ее, эту вашу поддержку, о Маруты!
+     d) o ṣu vāśreva sumatir jigātu                    | Как мычащая корова (- к теленку) пусть придет (ваше) благоволение!
+--- 32 rv07.056.09 naS | sel=b high q=1.00 reg=0.5
+    QUOTE: mā vo durmatiriha pra ṇaṅnaḥ
+     a) sanemy asmad yuyota didyum                     | Полностью отведите от нас выстрел!
+  >> b) mā vo durmatir iha praṇaṅ naḥ                  | Да не настигнет нас здесь ваша злая воля!
+--- 33 rv08.006.09 naS | sel=a medium q=0.79 reg=0.0
+    QUOTE: pra tamindra naśīmahi rayim
+  >> a) pra tam indra naśīmahi                         | Мы хотим, о Индра, добиться этого
+     b) rayiṃ gomantam aśvinam                         | Богатства из коров (и) из коней,
+     c) pra brahma pūrvacittaye                        | До(биться) священного слова, чтобы прежде всего обдумать!
+--- 34 rv10.108.05 pat | sel=b high q=1.00 reg=1.2
+    QUOTE: pari divo antānpatantī
+     a) imā gāvaḥ sarame yā aicchaḥ                    | Эти коровы, о Сарама, которые ты искала,
+  >> b) pari divo antān subhage patantī                | Летая, о милая, вокруг пределов неба,
+     c) kas ta enā ava sṛjād ayudhvy                   | Кто ж их тебе выдаст без борьбы?
+     d) utāsmākam āyudhā santi tigmā                   | А оружие у нас острое.
+--- 35 rv07.061.03 rakz | sel=d high q=0.96 reg=1.2
+    QUOTE: ṛdhagyato animiṣaṃ rakṣamāṇaḥ
+     a) proror mitrāvaruṇā pṛthivyāḥ                   | Вы вы(деляетесь), о Митра-Варуна, над широким (пространством) над землей,
+     b) pra diva ṛṣvād bṛhataḥ sudānū                  | Над огромным высоким небом, о прекрасно дарящие.
+     c) spaśo dadhāthe oṣadhīṣu vikṣv                  | Вы держите соглядатаев среди растений, среди поселений,
+  >> d) ṛdhag yato animiṣaṃ rakṣamāṇā                  | (Их,) следующих особо, (вы,) охраняющие, не моргая.
+--- 36 rv01.105.11 siD | sel=c high q=1.00 reg=0.0
+    QUOTE: te sedhanti patho vṛkam
+     a) suparṇā eta āsate                              | Эти прекраснокрылые сидят
+     b) madhya ārodhane divaḥ                          | Посреди подъема на небо.
+  >> c) te sedhanti patho vṛkaṃ                        | Они прогоняют с дороги волка,
+     d) tarantaṃ yahvatīr apo                          | Переправляющегося через юные воды.
+     e) vittam me asya rodasī                          | О Небо и Земля, узнайте обо мне (в таком положении)!
+--- 37 rv06.071.06 su | sel=b high q=1.00 reg=0.8
+    QUOTE: vāmamasmabhyaṃ sāvīḥ
+     a) vāmam adya savitar vāmam u śvo                 | Хорошее сегодня, Савитар, и хорошее завтра,
+  >> b) dive-dive vāmam asmabhyaṃ sāvīḥ                | День за днем хорошее создавай!
+     c) vāmasya hi kṣayasya deva bhūrer                | Ведь ты властвуешь, о бог, много над чем хорошим.
+     d) ayā dhiyā vāmabhājaḥ syāma                     | Да получим мы долю в хорошем благодаря этой молитве!
+--- 38 rv09.101.11 su | sel=a low q=0.47 reg=3.8
+    QUOTE: suṣvāṇāso vyadribhiḥ
+  >> a) suṣvāṇāso                                      | Выжатые давильными камнями,
+     b) vy adribhiś citānā gor adhi tvaci              | Заметные на шкуре коровы,
+     c) iṣam asmabhyam abhitaḥ                         | Со всех сторон они прошумели нам вместе
+     d) sam asvaran vasuvidaḥ                          | Жертвенную усладу, (эти) находящие блага.
+--- 39 rv01.063.09 vac | sel=b medium q=0.63 reg=0.8
+    QUOTE: indrāya brahmāṇyoktā
+     a) akāri ta indra gotamebhir                      | Людьми из рода Готамы тебе, о Индра, сотворены
+  >> b) brahmāṇy oktā namasā haribhyām                 | Молитвы, приглашения с поклонением двум буланым коням.
+     c) supeśasaṃ vājam ā bharā naḥ                    | Принеси нам прекрасно украшенную награду!
+     d) prātar makṣū dhiyāvasur jagamyāt               | Да придет (к нам) быстро ранним утром (бог,) богатый даром видения!
+--- 40 rv01.022.09 vah | sel=a high q=1.00 reg=0.0
+    QUOTE: agne patnīrihā vaha
+  >> a) agne patnīr ihā vaha                           | О Агни, привези сюда
+     b) devānām uśatīr upa                             | Согласных жен богов
+     c) tvaṣṭāraṃ somapītaye                           | (И) Тваштара на питье сомы.
+--- 41 rv04.052.01 vas | sel=b high q=1.00 reg=0.7
+    QUOTE: vyucchantī pari svasuḥ
+     a) prati ṣyā sūnarī janī                          | Эта дарящая радость жена
+  >> b) vyucchantī pari svasuḥ                         | Зажигаясь из (недр своей) сестры,
+     c) divo adarśi duhitā                             | Появилась (нам) навстречу, дочь неба.
+--- 42 rv07.081.06 vas | sel=d medium q=1.00 reg=2.2
+    QUOTE: uṣā ucchadapa sridhaḥ
+     a) śravaḥ sūribhyo amṛtaṃ                         | Покровителям – бессмертную славу (и) благополучие!
+     b) vasutvanaṃ vājāṃ asmabhyaṃ gomataḥ             | Нам награды, состоящие из коров!
+     c) codayitrī maghonaḥ sūnṛtāvaty                  | Поощрительница щедрых покровителей, богатая дарами
+  >> d) uṣā ucchad apa sridhaḥ                         | Ушас пусть засветит прочь неудачи!
+--- 43 rv01.141.05 viS | sel=a medium q=0.80 reg=0.5
+    QUOTE: mātṝḥ
+  >> a) ād in mātṝr āviśad yāsv ā śucir                | Вот он вошел в матерей, в которых чистый,
+     b) ahiṃsyamāna urviyā vi vāvṛdhe                  | Невредимый широко вырос в разные стороны.
+     c) anu yat pūrvā aruhat sanājuvo                  | Когда он возрос вслед за прежними, старыми (растениями),
+     d) ni navyasīṣv avarāsu dhāvate                   | Он бросается на более новые, последующие.
+--- 44 rv01.031.05 vid | sel=c high q=1.00 reg=0.5
+    QUOTE: ya āhutiṃ pari vedā vaṣaṭkṛtim
+     a) tvam agne vṛṣabhaḥ puṣṭivardhana               | Ты о Агни, бык, увеличивающий процветание.
+     b) udyatasruce bhavasi śravāyyaḥ                  | Ты бываешь достойным славы у поднимающего жертвенную ложку,
+  >> c) ya āhutim pari vedā vaṣaṭkṛtim                 | (Ты тот,) кто знает точно жертвенное возлияние (и) провозглашение Вашат!
+     d) ekāyur agre viśa āvivāsasi                     | (Бог,) принадлежащий одному Аю, с (самого) начала ты стремишься покорить племена.
+--- 45 rv01.135.07 yA | sel=ef high q=1.00 reg=1.7
+    QUOTE: ā pūrṇayā niyutā yātho adhvaram
+     a) ati vāyo sasato yāhi śaśvato                   | О Ваю, несись надо всеми спящими!
+     b) yatra grāvā vadati tatra                       | Где говорит давильный камень, туда отправляйтесь,
+     c) gacchataṃ gṛham indraś ca gacchatam            | О Индра, в дом отправляйтесь!
+     d) vi sūnṛtā dadṛśe rīyate                        | Щедрость явила себя взорам, струится жир.
+  >> e) ghṛtam ā pūrṇayā niyutā yātho                  | С полной упряжкой вы едете на обряд,
+  >> f) adhvaram indraś ca yātho adhvaram              | О Индра, вы едете на обряд.
+--- 46 rv03.033.09 yA | sel=b high q=1.00 reg=0.8
+    QUOTE: yayau vo dūrādanasā rathena
+     a) o ṣu svasāraḥ kārave śṛṇota                    | О сестры, прислушайтесь внимательно к восхвалителю!
+  >> b) yayau vo dūrād anasā rathena                   | Он приехал к вам издалека с обозом (и) колесницей.
+     c) ni ṣū namadhvam bhavatā supārā                 | Склонитесь хорошенько, станьте доступными для переправы.
+     d) adhoakṣāḥ sindhavaḥ srotyābhiḥ                 | О реки, (не доходите) до оси с (вашими) потоками.
+--- 47 rv02.002.01 yaj | sel=b high q=1.00 reg=0.5
+    QUOTE: agniṃ yajadhvaṃ haviṣā tanā girā
+     a) yajñena vardhata jātavedasam                   | Жертвой усильте Джатаведаса!
+  >> b) agniṃ yajadhvaṃ haviṣā tanā girā               | Агни почтите возлиянием, протяжной песней,
+     c) samidhānaṃ suprayasaṃ svarṇaraṃ                | (Его,) зажегшегося, полного жертвенных услад, солнечного мужа,
+     d) dyukṣaṃ hotāraṃ vṛjaneṣu dhūrṣadam             | Правящего на небе, хотара, сидящего у дышла в жертвенных общинах.
+--- 48 rv06.016.08 yaj | sel=a high q=1.00 reg=0.0
+    QUOTE: tava pra yakṣi saṃdṛśam
+  >> a) tava pra yakṣi saṃdṛśam                        | Я почтил твой облик,
+     b) uta kratuṃ sudānavaḥ                           | А обладателя прекрасных даров, все,
+     c) viśve juṣanta kāminaḥ                          | Кто имеет желания, радуются также (твоей) силе духа.
+--- 49 rv10.052.05 yaj | sel=a high q=1.00 reg=0.5
+    QUOTE: ā vo yakṣyamṛtatvam
+  >> a) ā vo yakṣy amṛtatvaṃ suvīraṃ                   | Я испрошу для вас жертвой бессмертие, прекрасного героя,
+     b) yathā vo devā varivaḥ karāṇi                   | Чтобы для вас, о боги, я мог создать свободное пространство.
+     c) ā bāhvor vajram indrasya dheyām                | Я хочу вложить ваджру в руки Индры –
+     d) athemā viśvāḥ pṛtanā jayāti                    | Тогда он выиграет все эти сражения.
+--- 50 rv10.029.08 yat | sel=b high q=1.00 reg=1.2
+    QUOTE: āsmai yatante sakhyāya pūrvīḥ
+     a) vy ānaḷ indraḥ pṛtanāḥ svojā                   | Индра выигрывал сражения, (он,) очень сильный.
+  >> b) āsmai yatante sakhyāya pūrvīḥ                  | Многие (племена) стремятся к дружбе с ним.
+     c) ā smā rathaṃ na pṛtanāsu tiṣṭha                | Поднимись, как в сражениях, на колесницу,
+     d) yam bhadrayā sumatyā codayāse                  | Которую ты погонишь с добрым намерением!
