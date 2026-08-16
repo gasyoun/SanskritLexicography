@@ -448,7 +448,7 @@
 
 **+)** [SCH·sch_star → не привязано: цель не указана] Mit {%upapra%}, vgl. <ls>Pischel, Ved. Stud. I,72.</ls>
 
-**+)** [SCH·sch_star → не привязано: цель не указана] Mit ˚vini, vinibhinna <ls>S II,267,18</ls> — опечатка вм. vinirbhinna.
+**+)** [SCH·sch_correct → не привязано: цель не указана] Mit ˚vini, vinibhinna <ls>S II,267,18</ls> — опечатка вм. vinirbhinna.
 
 **+)** [SCH·sch_star → не привязано: цель не указана] 2. bhid 2. d) различие, Vāgbhaṭālaṃkāra 1,20 по Aufrecht.
 

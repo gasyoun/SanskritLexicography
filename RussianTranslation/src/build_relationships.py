@@ -88,7 +88,11 @@ def main():
             "confidence": "llm",
             "evidence": er.get("evidence") or "",
         }
-        for k in ("source_lang", "correction_marker"):
+        # H2881: `contains_correction_clause` marks an additive SCH row whose
+        # non-leading section carries a correction clause — the residue of the
+        # conservative default, kept measurable rather than dropped.
+        for k in ("source_lang", "correction_marker",
+                  "contains_correction_clause"):
             if k in er:
                 rel[k] = er[k]
         if er.get("subtype") == "pwg_internal_correction":

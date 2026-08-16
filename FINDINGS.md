@@ -6475,4 +6475,61 @@ hold, and the first voter to try would discover that.
 > Opus 5 (`claude-opus-5`) · 16-08-2026 · H2880. Measured over the wave-1
 > baseline sidecar rebuilt from `origin/master` (6 009 rows) and the wave-2
 > sidecar (6 374 rows), same store `sha256 811bbc21…`.
-> §552 takes the next number.
+### §552. SCH does almost only supplement PWG — 3.3 % of its rows correct it — but the signal that proves it is a printed imperative, not the gender conflict the roadmap predicted
+
+🟠 **`classify_edition_rel` could return only `sch_star` or `derived_sense` for
+the `sch` layer, both additive.** "SCH only supplements PWG" was therefore not a
+measurement of the edition; it was a property of the classifier, and no data
+could have contradicted it. Measured over all 210 SCH rows in the `pwg_ru`
+store, the claim is **almost** true and now falsifiable: **7 rows (3.3 %) edit
+PWG rather than supplement it** — 6 `sch_correct`, 1 `sch_cancel`.
+
+**The predicted signal does not exist on this layer.** The roadmap expected wave
+3 to reuse `pw_correct`'s criterion — a `<lex>` gender conflict against PWG.
+**Zero of the 210 SCH rows carry a `<lex>` token at all**, so that path can never
+fire here and was deliberately not wired up. The layer does contain exactly one
+gender correction — `ahiphena`, "lies n. statt m." — but it is stated in prose,
+not in markup, and is caught by the printed-cue rule instead.
+
+**The criterion is a speech act, not a keyword.** SCH prints instructions to the
+reader of PWG: `lies` ("S. 152, Sp. 1, Z. 2 lies {%abhíhita%}"), `Druckfehler
+für`, `zu lesen`, and for withdrawal `streiche` ("— Mit {%abhyupa%} 3. streiche
+<ls>Med.</ls>"). The distinction is load-bearing, because the near-misses are
+common: 11 of the 210 rows carry a look-alike token that means something else —
+bare `statt` describing a metrical variant (`metrisch statt {%na gan˚%}`), the
+abbreviation `St.` for *Indische Studien*, and `vgl.` pointing at literature. A
+keyword-built cue set would convict all 11 of withdrawing material they add.
+
+**Two rows are deliberately left additive.** In a compressed multi-preverb
+article (`— Mit {%anvā%} … — Mit {%samā%} Z. 3 lies 231,16. — Mit {%ud%} …`) the
+correction clause governs one section, not the row. Classifying the row as a
+correction would assert SCH withdraws material it in fact adds, so the cue is
+scoped to the leading segment and the residue is flagged
+(`contains_correction_clause`) rather than dropped — gate W3e reports it.
+
+**Independent corroboration, unplanned:** the Russian already renders these seven
+rows as corrections (`читай`, `вычеркни`, `опечатка вм.`), translated long before
+this classification existed and by a process that never saw it.
+
+Unlike wave 2's `amend`, `op` here is `correct`/`delete`: these rows really do
+withdraw the printed reading, so build_reglue's "cancels PWG" strikethrough is
+honest. Note that an *unplaced* correction shows no strikethrough — it never
+identified a sense to strike, which is wave 1's contract working as intended.
+
+Waves 1 and 2 are provably untouched, not assumed to be: the placement census
+(found 661 · no_target_marker 5 191 · out_of_range 387 · not_found 135) and
+`pwg_internal_correction` (365, 18.1 % placed) reproduce exactly. Canonical store
+untouched (rows 11 603, `sha256 811bbc21…`). Window suite 211/211.
+
+**Side effect, named rather than slipped in:** re-cutting the evidence sheet
+re-binds the lock §551 recorded as unreproducible. The sheet legitimately drops
+one card (47 → 46) — `jñā · SCH → смысл 3` is now a correction, and "does this
+supplement sit at the right PWG sense?" is not a question to ask of one — and the
+new lock reproduces from current code, which the committed `d7c003ee…` did not.
+Re-cut under PLAN decision 8 with the vote gate checked first: no `decisions.json`
+exists for the sheet, so no votes were invalidated.
+
+> Opus 5 (`claude-opus-5`) · 16-08-2026 · H2881. Measured over the wave-2
+> sidecar (6 374 rows) and the wave-3 rebuild, same store `sha256 811bbc21…`.
+> Gates W3a–W3e in `src/placement_axis_check.py`.
+> §553 takes the next number.

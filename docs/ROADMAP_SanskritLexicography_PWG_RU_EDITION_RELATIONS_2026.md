@@ -32,7 +32,27 @@ _Created: 16-08-2026 · Last updated: 16-08-2026_
 **Открытый вопрос для исполнителя:** привязка Nachtrag к правимому смыслу не всегда
 явная в тексте; там, где не явная, — `placement=false`, гипотеза по правилу, не догадка.
 
-## Волна 3 — правки и отмены из SCH
+## Волна 3 — правки и отмены из SCH ✅ ЗАКРЫТА (H2881, 16-08-2026)
+
+**Результат:** из 210 строк SCH правят PWG **7 (3,3 %)** — 6 `sch_correct`,
+1 `sch_cancel`; 203 остаются дополнением. Утверждение «SCH только дополняет»
+теперь измерено, а не встроено в классификатор.
+
+**Прогноз этой дорожной карты не подтвердился и заменён измерением.** Ниже
+ожидалось, что признаком будет тот же конфликт рода, что у `pw_correct`. Ни
+одна из 210 строк SCH **не несёт `<lex>`** вообще, так что этот путь на слое
+физически не срабатывает. Рабочий признак — печатное **указание читателю**
+(`lies`, `Druckfehler`, `zu lesen`; для отмены `streiche`), а не ключевое слово:
+11 строк несут похожий на правку токен (`statt` в описательном смысле, `St.` =
+Indische Studien, `vgl.`) и правками не являются — они закреплены негативными
+тестами. Единственная правка рода в слое (`ahiphena`, «lies n. statt m.»)
+выражена прозой и ловится правилом `lies`.
+
+Подробно: [REGLUE_SPEC §12](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/REGLUE_SPEC.md)
+· [FINDINGS §552](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+· гейты W3a–W3e в [placement_axis_check.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/placement_axis_check.py).
+
+**Что было запланировано:**
 
 **Что:** подтипы `sch_correct` / `sch_cancel`.
 

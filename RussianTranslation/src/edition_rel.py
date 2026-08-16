@@ -11,6 +11,8 @@ Subtypes (rollup classes; display names from H180 sheets are optional later)::
   restate         — PW abridging restatement
   pw_correct      — PW gender/form correction vs PWG
   sch_star        — SCH additive * sense
+  sch_correct     — SCH emends printed PWG text (`lies`, `Druckfehler`) (H2881, wave 3)
+  sch_cancel      — SCH withdraws printed PWG text (`streiche`) (H2881, wave 3)
   derived_sense   — preverb/caus/desid grammar-derived (sch/pwkvn)
   a2a             — PWKVN addenda-to-addenda
   nws_at_sense    — NWS additive (German)
@@ -67,6 +69,8 @@ SUBTYPES = (
     "restate",
     "pw_correct",
     "sch_star",
+    "sch_correct",
+    "sch_cancel",
     "derived_sense",
     "a2a",
     "nws_at_sense",
@@ -111,6 +115,84 @@ def pwg_correction_marker(tag) -> str | None:
         if rx.search(s):
             return name
     return None
+
+
+# --- wave 3 (H2881): SCH rows that edit PWG rather than supplement it -------
+# Until now the `sch` layer could only come out `sch_star` or `derived_sense`,
+# both additive — so "SCH only supplements" was not a measurement, it was a
+# property of this function. It is not true: SCH prints instructions to the
+# reader of PWG ("read X", "delete Y") alongside its new senses.
+#
+# The cue lives in the DE BODY, not in the sense_tag — the one structural
+# difference from wave 2, and the reason this needs its own predicate. The tag
+# of a real correction is as likely to read `mit-nis` as `SCH-corrigendum`.
+#
+# MEASURED, not assumed (H2881 spike over all 210 SCH rows): the `pw_correct`
+# signal the roadmap expected to reuse — a <lex> gender conflict against PWG —
+# does not exist on this layer at all. ZERO of the 210 rows carry a <lex> token,
+# so the gender path can never fire here and is deliberately not wired up. The
+# one real gender correction in the layer (`ahiphena`, "lies n. statt m.")
+# states it in prose and is caught by the `lies` rule below.
+#
+# Each rule is an IMPERATIVE ADDRESSED TO THE READER, never a descriptive word.
+# That distinction is the whole criterion, and the negative controls in the
+# selftest are the load-bearing half of it: bare `statt` ("metrisch statt na
+# gan˚" — describing a metrical variant) and the abbreviation `St.` ("Ind. St."
+# = Indische Studien) both look like corrections and are not. A cue set built
+# by keyword rather than by speech-act would pull in 11 additive rows.
+SCH_CORRECTION_MARKERS = (
+    # "S. 152, Sp. 1, Z. 2 lies {%abhíhita%}" — read this instead of what is
+    # printed. `\blies\b` and never a substring: it must not fire inside a word.
+    ("lies", "correct", re.compile(r"\blies\b", re.I)),
+    # "Vielleicht {%saṃpronmlāpya%} zu lesen"
+    ("zu_lesen", "correct", re.compile(r"\bzu\s+lesen\b", re.I)),
+    # "<ls>S II,267,18</ls> Druckfehler für {%vinirbhinna%}"
+    ("druckfehler", "correct", re.compile(r"\bdruckfehler\b", re.I)),
+    ("berichtige", "correct", re.compile(r"\bberichtig\w*", re.I)),
+    ("verbessere", "correct",
+     re.compile(r"\b(verbessere|corrigiere|korrigiere)\b", re.I)),
+    # "— Mit {%abhyupa%} 3. streiche <ls>Med.</ls>" — withdraw it entirely.
+    ("streiche", "cancel", re.compile(r"\bstreiche\b|\bzu\s+streichen\b", re.I)),
+    ("tilge", "cancel", re.compile(r"\btilge\b|\bzu\s+tilgen\b", re.I)),
+    ("faellt_weg", "cancel",
+     re.compile(r"\bf(ä|ae)llt\s+weg\b|\bweggefallen\b", re.I)),
+)
+
+# A compressed SCH article is a run of preverb sections: "1. {%diś%}¦ … — Mit
+# {%anvā%} … — Mit {%samā%} Z. 3 lies 231,16. — Mit {%ud%} …". Only the FIRST
+# section is what the row as a whole is about.
+SCH_SEGMENT_RE = re.compile(r"—\s*(?=Mit\b)", re.I)
+
+
+def sch_correction_marker(de) -> tuple | None:
+    """Name the printed instruction making an SCH row an edit, else None.
+
+    Returns ``(rule_name, kind)`` with ``kind`` in ``{'correct', 'cancel'}`` —
+    a name rather than a bool so the sidecar records *which* printed cue moved
+    the row and a reviewer can disagree with that one rule (wave 2's contract).
+
+    Scoped to the row's LEADING segment on purpose. 2 of the 210 rows are
+    compressed multi-preverb articles whose fifth or sixth section happens to
+    carry a correction clause ("— Mit {%samā%} Z. 3 lies 231,16") while the row
+    as a whole introduces new senses. Calling such a row a correction would
+    assert that SCH withdraws material it in fact adds — the same silent lie
+    wave 1 exists to remove, so the conservative default keeps them additive.
+    They are not dropped: ``classify_edition_rel`` flags them with
+    ``contains_correction_clause`` so the residue stays measurable.
+    """
+    text = str(de or "")
+    segs = [s for s in SCH_SEGMENT_RE.split(text) if s.strip()]
+    lead = segs[0] if segs else text
+    for name, kind, rx in SCH_CORRECTION_MARKERS:
+        if rx.search(lead):
+            return (name, kind)
+    return None
+
+
+def sch_has_correction_clause(de) -> bool:
+    """True when a correction cue sits anywhere in the row, leading or not."""
+    text = str(de or "")
+    return any(rx.search(text) for _, _, rx in SCH_CORRECTION_MARKERS)
 
 
 def strip_markup(s: str) -> str:
@@ -267,8 +349,34 @@ def classify_edition_rel(
             extra["source_layers"] = ["pwg", "pw"]
         evidence = "PWG-internal correction (%s); sense_tag=%r" % (pwg_marker, st)
     elif layer == "sch":
-        subtype = "derived_sense" if DERIV_RE.search(st) else "sch_star"
-        evidence = "SCH additive; sense_tag=%r" % st
+        # Wave 3 (H2881). A printed instruction outranks the tag: the two rows
+        # that carry one — 'Mit abhi — corr', 'Mit abhyupa — 3 strikethrough' —
+        # also match DERIV_RE on the bare word 'Mit', so testing the tag first
+        # would file every SCH correction as `derived_sense` and the layer would
+        # stay structurally additive exactly as before.
+        sch_marker = sch_correction_marker(de)
+        if sch_marker:
+            name, kind = sch_marker
+            if kind == "cancel":
+                subtype = "sch_cancel"
+                op = "delete"
+            else:
+                subtype = "sch_correct"
+                op = "correct"
+            # `direction` stays "additive": it is a property of the LAYER, not
+            # of the pair (plan decision 1), and `pw_correct` sets the same
+            # precedent by keeping "abridging". The corrective claim rides on
+            # `subtype` + `op`, which is the axis split wave 1 established.
+            extra["correction_marker"] = name
+            evidence = "SCH edits PWG (%s: %s); sense_tag=%r" % (kind, name, st)
+        else:
+            subtype = "derived_sense" if DERIV_RE.search(st) else "sch_star"
+            evidence = "SCH additive; sense_tag=%r" % st
+            if sch_has_correction_clause(de):
+                # A correction clause in a non-leading section. Additive by the
+                # conservative default, but recorded so the residue is a
+                # measured number rather than a silent omission.
+                extra["contains_correction_clause"] = True
     elif layer == "pwkvn":
         if DERIV_RE.search(st):
             subtype = "derived_sense"
@@ -720,6 +828,108 @@ def selftest() -> None:
     check(rel["placement"] is True and rel["placement_reason"] == "found",
           "row helper w2 placed: %r" % rel)
 
+    # --- wave 3: SCH corrections and cancellations (H2881) -----------------
+    # POSITIVES — the real printed instructions, quoted from the store.
+    for de, want in (
+        ("1. {%dhā%}¦  mit {%abhi%}, S. 152, Sp. 1, Z. 2 lies {%abhíhita%}.",
+         ("lies", "correct")),
+        ("Mit {%nis%} Z. 2 lies {%niṣpīta%}.", ("lies", "correct")),
+        ("*{%ahiphena%}¦ , lies n. statt m.", ("lies", "correct")),
+        ("Mit {%˚vini, vinibhinna%} <ls>S II,267,18</ls> Druckfehler für "
+         "{%vinirbhinna%}.", ("druckfehler", "correct")),
+        ("Vielleicht {%saṃpronmlāpya%} zu lesen.", ("zu_lesen", "correct")),
+        ("— Mit {%abhyupa%} 3. streiche <ls>Med.</ls>", ("streiche", "cancel")),
+        ("Der Zusatz ist zu tilgen.", ("tilge", "cancel")),
+    ):
+        got = sch_correction_marker(de)
+        check(got == want, "sch marker %r -> %r, want %r" % (de[:40], got, want))
+
+    # NEGATIVES — the whole criterion is "instruction to the reader", not
+    # "keyword". Every string below is real additive SCH text that a keyword
+    # rule would have swallowed; 11 of the 210 rows carry one of these tokens.
+    for de in (
+        # 'St.' is Indische Studien, not 'statt'
+        "Mit {%vi, vyāpta%} 4. in allem enthalten, <ls>Ind. St. 9,137.</ls>",
+        # bare 'statt' describing a metrical variant, not ordering a change
+        "{%mā gantum arhasi%} metrisch statt {%na gan˚%},2,116,5.",
+        "Statt dessen {%vipācayati%} 281,158.",
+        # 'vgl.' points at literature; it edits nothing
+        "Mit {%upapra%}, vgl. <ls>Pischel, Ved. Stud. I,72.</ls>",
+        "{%yat%}¦ <ls>Kaus.</ls> vgl. Roth, <ls>ZDMG 41,676.</ls>",
+        # ordinary new senses
+        "Mit {%ava%} <ls>Kaus.</ls> jemand (Akk.) etwas (Akk.) erlangen lassen.",
+        "Mit {%˚samud%}, to burst forth, <ls>Harṣac. 153,15; 167,9.</ls>",
+        "", None,
+    ):
+        got = sch_correction_marker(de)
+        check(got is None, "sch marker must not fire on %r, got %r" % (de, got))
+
+    # THE trap: a compressed multi-preverb article whose LAST sections carry a
+    # correction clause is still, as a row, additive. Classifying it as a
+    # correction would assert SCH withdraws material it actually adds.
+    mixed = ("1. {%diś%}¦ ˚hervorbringen, schaffen, <ls>Kir. I,18.</ls> "
+             "— Mit {%anvā%} jemandem (Akk.) befehlen, <ls>Jātakam. 20</ls>. "
+             "— Mit {%samā%} Z. 3 lies 231,16. "
+             "— Mit {%ud%} auch abweisen, <ls>R. ed. Bomb. 3,46,35.</ls>")
+    check(sch_correction_marker(mixed) is None,
+          "a non-leading correction clause must not classify the row")
+    check(sch_has_correction_clause(mixed) is True,
+          "…but it must still be recorded as present")
+    r = classify_edition_rel("sch", "˚hervorbringen", mixed,
+                             subcard="diS~~h0_zz_sch")
+    check(r["subtype"] in ("sch_star", "derived_sense"),
+          "mixed row stays additive: %r" % r)
+    check(r.get("contains_correction_clause") is True,
+          "mixed row must carry the residue flag: %r" % r)
+
+    # a leading correction DOES classify, even when it opens with '— Mit'
+    r = classify_edition_rel("sch", "Mit abhyupa — 3 strikethrough",
+                             "— Mit {%abhyupa%} 3. streiche <ls>Med.</ls>",
+                             subcard="DA~~h0_zz_sch")
+    check(r["subtype"] == "sch_cancel" and r["op"] == "delete",
+          "sch_cancel: %r" % r)
+    check(r["correction_marker"] == "streiche", "cancel marker: %r" % r)
+
+    # DERIV_RE matches 'Mit' in both these tags. The correction cue must win,
+    # or every SCH correction is filed as `derived_sense` and the layer stays
+    # structurally additive — the exact defect wave 3 removes.
+    for tag in ("Mit abhi — corr", "mit-nis", "Mit abhyupa — 3 strikethrough"):
+        check(DERIV_RE.search(tag) is not None,
+              "precondition: %r must look grammar-derived" % tag)
+    r = classify_edition_rel("sch", "Mit abhi — corr",
+                             "1. {%dhā%}¦ mit {%abhi%}, S. 152, Z. 2 lies "
+                             "{%abhíhita%}.", subcard="DA~~h0_zz_sch")
+    check(r["subtype"] == "sch_correct" and r["op"] == "correct",
+          "correction outranks derived_sense: %r" % r)
+
+    # op is deliberately correct/delete here, unlike wave 2's `amend`: these
+    # rows really do withdraw the printed reading, so build_reglue's
+    # "cancels PWG" strikethrough is the honest rendering.
+    check(r["op"] in ("correct", "delete"), "sch edit must render as a cancel")
+
+    # direction stays the LAYER's property (plan decision 1), as pw_correct does
+    check(r["direction"] == "additive", "sch direction stays additive: %r" % r)
+
+    # an ordinary additive SCH row grows no correction fields
+    r = classify_edition_rel("sch", "2", "{%neu%}", subcard="a~~h0_zz_sch")
+    check(r["subtype"] == "sch_star", "plain sch_star: %r" % r)
+    check("correction_marker" not in r
+          and "contains_correction_clause" not in r,
+          "additive row must stay clean: %r" % r)
+
+    # the cue is read from `de`, never from the tag: a tag that merely SAYS
+    # corrigendum is not evidence, and a row is not spared because its tag is bland
+    r = classify_edition_rel("sch", "SCH-corrigendum", "{%neu%} hinzuzufügen",
+                             subcard="a~~h0_zz_sch")
+    check(r["subtype"] == "sch_star", "tag alone must not convict: %r" % r)
+
+    # other layers are untouched by the SCH rule, cue text notwithstanding
+    for lay, want in (("pw", "restate"), ("pwkvn", "a2a")):
+        r = classify_edition_rel(lay, "1", "Z. 2 lies {%x%}", key1="x",
+                                 subcard="x~~h0_zz_%s" % lay)
+        check(r["subtype"] == want,
+              "layer %s must ignore the sch cue: %r" % (lay, r))
+
     # all rollup subtypes reachable
     seen = {
         classify_edition_rel("pwg", "1")["subtype"],
@@ -733,10 +943,12 @@ def selftest() -> None:
         classify_edition_rel(
             "nws", "1", "the of and in with is for from by as")["subtype"],
         classify_edition_rel("pwg", "Nachtrag")["subtype"],
+        classify_edition_rel("sch", "1", "Z. 2 lies {%x%}")["subtype"],
+        classify_edition_rel("sch", "1", "3. streiche <ls>Med.</ls>")["subtype"],
     }
     for need in ("base", "restate", "pw_correct", "sch_star", "derived_sense",
                  "a2a", "nws_at_sense", "foreign_fragment",
-                 "pwg_internal_correction"):
+                 "pwg_internal_correction", "sch_correct", "sch_cancel"):
         check(need in seen, "missing subtype %s in %r" % (need, seen))
 
     if fails:
