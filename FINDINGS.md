@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 16-08-2026 (§549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; the corpus's per-note page anchors settle what can be settled (Эрман кн. VI = М.: Ладомир, 2009); §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink; §544 — rvlinks is the pāda-granular RV substrate already on disk; §543 — `guda` is «кишки» in the RV and the anorectal outlet in Āyurveda)_
+_Created: 26-06-2026 · Last updated: 17-08-2026 (§559 — «смыслы MW/AP, отсутствующие у PWG-семейства»: механический счёт завышен ~в шесть раз, 83 % кандидатов — «не привязано»; §560 — key1 стора pwg_ru деградирован у 161 строки и сливает разные леммы, лучший свидетель — префикс subcard; §549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -6833,4 +6833,56 @@ normalize it.
 > `—˚` 4 258, rings 4 827, hyphenated translit lemmas ~13 119 (regex over the
 > post-`¦` lemma repeat); specimens wil.txt L312, md.txt L11–12, L304, L324,
 > L596, L652, L1147–1160.
-> §559 takes the next number.
+
+### §559. «Смыслы MW/AP, отсутствующие у PWG-семейства» — механический счёт завышен ~в шесть раз; 83 % кандидатов «отсутствует» на поверку «не привязано»
+
+🟢 **Волна 4 (issue #1736, H2882).** По 261 истинной лемме стора pwg_ru
+(11 603 смысловые строки слоёв pwg/pw/sch/pwkvn/nws) детерминированное
+выравнивание «якорением на санскрите» (метод csl-atlas
+[A09](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/PAPER_SENSE_ALIGNMENT.md):
+SLP1-токены цитируемых форм + нормализованные `<ls>`-якоря; глоссы не
+используются — §541) даёт: MW 1 482 единицы смысла → 127 matched, 1 023
+unalignable, 100 family_thin, **232 absent_candidate**; AP90 1 285 → 203 /
+708 / 74 / **300**; лемм целиком нет в MW — 8, в AP90 — 119. Ручная
+адъюдикация случайной выборки 30 кандидатов: лишь **5/30 (~17 %)** —
+правдоподобно настоящие лакуны; остальное — тот же смысл с непересекающимся
+цитатным аппаратом (37 %), омоним/заглушка окна среза (23 %), артефакт
+деградированного ключа леммы (23 %, §560). Экстраполяция: настоящих смысловых
+добавок MW+AP на весь срез — **порядка 40–90**, на порядок ниже наивных 532.
+Профиль выживших добавок жанровый, не случайный: MW — Rājataraṅgiṇī и
+лексикализация ifc.-композитов; Апте — аланкара-шастра (Sāhityadarpaṇa) и
+джьотиша («знак Тельца» у anaḍuh). Сходится с A09-H3 («потомки копируют или
+сжимают») и §97 (MW составлен из PW/PWG). Метод сертифицирует **присутствие**
+(matched-точность 8/8 по выборке), но не отсутствие — absent_candidate есть
+верхняя граница. Полный отчёт:
+[RussianTranslation/pwg_ru/MW_AP_SENSE_COVERAGE_W4.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/MW_AP_SENSE_COVERAGE_W4.md);
+датасет: [mw_ap_sense_coverage.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/mw_ap_sense_coverage.jsonl).
+
+> Fable 5 (`claude-fable-5`) · 17-08-2026 ·
+> [mw_ap_sense_coverage.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mw_ap_sense_coverage.py)
+> (selftest 11/11) над csl-orig mw.txt / ap90.txt + стором pwg_ru; адъюдикация
+> 30 кандидатов seed=4.
+
+### §560. `key1` стора pwg_ru деградирован у 161 строки — и сливает разные леммы в один ключ; лучший свидетель — префикс `subcard`, но и он врёт о долготе/придыхании
+
+🔴 **Integrity-находка волны 4** ([issue #1767](https://github.com/gasyoun/SanskritLexicography/issues/1767)).
+В каноническом сторе `pwg_ru_translated.jsonl`
+поле `key1` у 161 из 11 603 строк — уплощённая форма леммы (`apta` вместо
+`Apta`, `gawa` вместо `Gawa`, `asru` вместо `aSru`), а у трёх ключей уплощение
+**сливает разные слова**: `vasa` = vāsā/vāsa/vaśā/vaśa/vasā (пять лемм!),
+`bara` = bhāra/bhara/bāṇa, `vasin` = vāsin/vaśin. Одна строка несёт в `key1`
+вообще мусор субкарты (`durg_a~~h0_zz_sch`). Поле `iast` тоже местами
+деградировано (`gaṭa` при de-тексте {#Gawa#}, `manorata` при {#manoraTa#}).
+Самый надёжный свидетель — **префикс `subcard` до `~~`** с декодом `_c` →
+заглавная C (проверено: 11 442/11 603 строк совпадают с key1, все расхождения —
+в пользу subcard), но и он недостоверен у меньшинства строк по
+долготе/придыханию: subcard даёт `Atura`/`satkAra`/`utTa`/`havyavAha` там, где
+de-текст держит a/tura «nicht reich» / satkara / utta / havyavaha. **Любой
+consumer, группирующий стор по `key1`, смешивает статьи разных слов.**
+Обнаружено сличением с `<k1>` MW/AP90 (волна 4, §559): четверть ложных
+«absent» — прямое следствие. Канонический стор по забору волн — read-only;
+починка ключей — отдельная волна с голосованием, не тихий фикс.
+
+> Fable 5 (`claude-fable-5`) · 17-08-2026 · верификация декода subcard по всем
+> 11 603 строкам + выборочное сличение de-текста; см. §559.
+> §561 takes the next number.

@@ -1,6 +1,6 @@
 # ROADMAP — отношения между редакциями в pwg_ru, 2026
 
-_Created: 16-08-2026 · Last updated: 16-08-2026_
+_Created: 16-08-2026 · Last updated: 17-08-2026_
 
 Обложка и решения: [PLAN_SanskritLexicography_PWG_RU_PLACEMENT_AXIS_SPLIT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/PLAN_SanskritLexicography_PWG_RU_PLACEMENT_AXIS_SPLIT.md).
 
@@ -64,7 +64,26 @@ Indische Studien, `vgl.`) и правками не являются — они �
 **Зависит от:** волны 1. Нужен критерий отличия правки от дополнения — вероятно, тот же
 класс признаков, что у `pw_correct` (конфликт рода), плюс печатные пометы SCH.
 
-## Волна 4 — MW и AP: чего нет в PWG и его потомках
+## Волна 4 — MW и AP: чего нет в PWG и его потомках ✅ ЗАКРЫТА (H2882, 17-08-2026)
+
+**Результат:** механический счёт «отсутствует у семейства» — 232 (MW) + 300
+(AP90) кандидатов по 261 лемме среза — **завышен ~в шесть раз**: ручная
+адъюдикация 30 случайных кандидатов оставила ~17 % правдоподобно настоящих
+лакун; 83 % — «не привязано» (непересекающийся цитатный аппарат 37 %,
+омоним/заглушка окна 23 %, деградированный ключ леммы 23 % —
+[FINDINGS §560](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)).
+Настоящих добавок MW+AP на срез — порядка 40–90, и они жанровые (у MW —
+Rājataraṅgiṇī, лексикализация ifc.; у Апте — аланкара-шастра, джьётиша).
+Подробно: [FINDINGS §559](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+· отчёт [RussianTranslation/pwg_ru/MW_AP_SENSE_COVERAGE_W4.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/MW_AP_SENSE_COVERAGE_W4.md)
+· скрипт [mw_ap_sense_coverage.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/mw_ap_sense_coverage.py)
+· датасет [mw_ap_sense_coverage.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/mw_ap_sense_coverage.jsonl).
+Требование «/prior-art перед стартом» выполнено: метод — переиспользование
+csl-atlas [A09](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/PAPER_SENSE_ALIGNMENT.md)
+«якорения на санскрите»; сегментация MW — собственные `<L>`-записи Кёльна,
+AP90 — печатные номера `{@N@}`; ничего не строилось заново.
+
+**Что было запланировано:**
 
 **Что:** сопоставление смыслов MW и AP с PWG-семейством; ответ на вопрос «какие значения
 есть у них и отсутствуют у PWG и всех словарей, вышедших из него».
