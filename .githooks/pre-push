@@ -53,7 +53,7 @@ while read -r local_ref local_sha remote_ref remote_sha; do
     # a new tag slipped through only because the all-zeros remote_sha branch
     # above short-circuits first, so the bug was invisible on the initial push.
     # A guard that refuses correct pushes gets switched off, which is how the
-    # stale-base sibling above ended up WARN-only.
+    # stale-base sibling above was demoted to WARN for a week (re-promoted 16-08-2026).
     case "$remote_ref" in
         refs/heads/*) ;;
         *) continue ;;
@@ -65,7 +65,7 @@ while read -r local_ref local_sha remote_ref remote_sha; do
     short_remote="${remote_ref#refs/heads/}"
     tracking="$remote_name/$short_remote"
 
-    # (1) stale-base silent-revert check — WARN-only, see the header.
+    # (1) stale-base silent-revert check — BLOCKS since 16-08-2026 (MG), see the header.
     if [ -z "${ALLOW_STALE_BASE_PUSH:-}" ] && [ -f "$CHECKER" ]; then
         if ! python "$CHECKER" "$local_sha" "$tracking"; then
             status=1

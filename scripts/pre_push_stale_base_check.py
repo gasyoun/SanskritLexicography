@@ -28,8 +28,16 @@ That pair is the whole rule. Old lines are ordinary edits. Your own lines are yo
 Someone else's line from an hour ago, deleted by a commit that never mentions it, is
 the defect.
 
-WARN BY DEFAULT — AND WHY IT WAS DEMOTED
-----------------------------------------
+BLOCKS BY DEFAULT — DEMOTED, THEN RE-PROMOTED
+---------------------------------------------
+**Current behaviour: this hook REFUSES the push.** Override per-push with
+``ALLOW_STALE_BASE_PUSH=1``. ``STALE_BASE_PUSH_STRICT=1`` is now the default and is
+accepted as a no-op.
+
+Re-promoted 16-08-2026 on MG's ruling, reversing the demotion described below. The
+history is kept because it is the argument against this decision, and a future session
+weighing another flip should read it rather than rediscover it:
+
 This started as a **blocking** hook, which is what #1516 asked for. It was demoted to a
 warning on the day it shipped, on measured evidence: while landing its own handoff it
 refused three pushes, all of them legitimate, all of them this repo's standard workflow —
@@ -40,19 +48,23 @@ refused three pushes, all of them legitimate, all of them this repo's standard w
 3. ``handoff_close.py`` archiving a handoff, which repoints ``handoffs/X`` links to
    ``handoffs/archive/X`` **inside rows added minutes ago**.
 
-(1) and (2) are exempted below. (3) is not cleanly exemptible without special-casing the
-repo's own tooling. Three false-positive classes from routine work in one session, against
-two true incidents in a week, is the wrong ratio for a blocker: the standing response to a
-hook that refuses good pushes is to switch it off, and then it protects nothing. So the
-default is a loud warning that lets the push through, matching how the org already treats
-imperfect-judgment guards (``pre_shell_guards`` guard 9 warns on ``git pull``, because
-pulls are sometimes right)::
+(1) and (2) are exempted below. **(3) is not exempted**, so a ``handoff_close.py`` archive
+run that repoints links inside freshly-added rows will now be refused and needs the escape
+hatch. That is the known live cost of blocking; if it proves noisy in practice, exempt (3)
+rather than demote the hook a second time.
 
-    STALE_BASE_PUSH_STRICT=1 git push ...   # restore blocking
-    ALLOW_STALE_BASE_PUSH=1  git push ...   # silence entirely
+The demotion argument was that three false-positive classes against two true incidents is
+the wrong ratio for a blocker, since the standing response to a hook that refuses good
+pushes is to switch it off, and then it protects nothing. The counter-argument, which won:
+a silent revert of another session's work is not recoverable by the person it happens to —
+they discover it days later, if ever — while a false positive costs one extra environment
+variable at the moment of the push, by someone who can see exactly what is being reverted::
 
-A deliberate revert of fresh upstream work is flagged too — correctly. The goal is to put
-the fact in front of a human at the last moment it is still free to act on, not to forbid.
+    ALLOW_STALE_BASE_PUSH=1  git push ...   # per-push override (the only one needed)
+    STALE_BASE_PUSH_STRICT=1 git push ...   # accepted no-op; blocking is now the default
+
+A deliberate revert of fresh upstream work is flagged too — correctly, and now it must be
+declared with the override rather than merely noticed.
 
 LIMITS (measured, not assumed)
 ------------------------------
@@ -218,11 +230,16 @@ def report(found: dict[str, list], remote_ref: str, recent_days: float,
            truncated: bool, max_paths: int) -> None:
     total = sum(len(v) for v in found.values())
     e = sys.stderr
+    # The banner must match what main() actually returns — the H2656 lesson, kept
+    # after the 16-08-2026 re-promotion to a blocker. It once printed "PUSH BLOCKED"
+    # on a path that warned and let the push through; a session read that as a
+    # refusal twice and hand-verified origin both times before noticing. Now the
+    # check blocks unconditionally, so the one banner is the true one.
     print("", file=e)
-    print("PUSH BLOCKED — this push deletes %d line(s) that landed on %s within the"
+    print("PUSH BLOCKED — this push deletes %d line(s) that landed on %s"
           % (total, remote_ref), file=e)
-    print("last %g day(s), in %d file(s), and your commits never reference them."
-          % (recent_days, len(found)), file=e)
+    print("within the last %g day(s), in %d file(s), and your commits never "
+          "reference them." % (recent_days, len(found)), file=e)
     print("", file=e)
     shown = 0
     for path, hits in found.items():
@@ -286,10 +303,10 @@ def main(argv: list[str] | None = None) -> int:
     if not found:
         return 0
     report(found, args.remote_ref, args.recent_days, truncated, args.max_paths)
-    # WARN by default; block only under STALE_BASE_PUSH_STRICT=1. See the module
-    # docstring — measured false-positive rate in this repo's own workflows is what
-    # decided this, not caution in the abstract.
-    return 1 if os.environ.get(STRICT_ENV) else 0
+    # BLOCKS by default (MG 16-08-2026, reversing the demotion below). The push is
+    # refused; the escape hatch in the banner is the single way through. STRICT_ENV
+    # is kept as an accepted no-op so older callers and docs do not break.
+    return 1
 
 
 if __name__ == "__main__":
