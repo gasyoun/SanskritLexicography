@@ -1,0 +1,60 @@
+{
+  "store_id": "pwg_ru",
+  "overlay_sha256": "5062beb0f3a82c7dabaae3f4aaeabad19b3370b178820e73053c2848276f3672",
+  "keyset_sha256": "17d70ff56644575e6cc076c8e7acb2f63abda2277410ea51ff7a3db76d2bc7cf",
+  "key_count": 5,
+  "sources": [
+    {
+      "path": "RussianTranslation/src/pwg_ru_translated.jsonl",
+      "key_count": 5,
+      "overlay_sha256": "601b450e718a68bbf1131fbe70f64aad035c6b4b9f1f796cb3e45daea3c12695",
+      "keyset_sha256": "fb881745c81bb815e93fd79ea2d425ed91390b192dd7d926011ed2d3e65a29e3"
+    }
+  ],
+  "reason": "wave-1-baseline",
+  "updated": "17-08-2026",
+  "source_gitignored": true,
+  "spec": {
+    "store_id": "pwg_ru",
+    "source_gitignored": true,
+    "extract_path": "RussianTranslation/data/integrity/pwg_ru_review_overlay.jsonl",
+    "key_fields": [
+      "key1",
+      "subcard",
+      "sense_tag"
+    ],
+    "reviewed_fields": [
+      "reviewer",
+      "review_status",
+      "human_review"
+    ],
+    "redact_fields": [
+      "human_review"
+    ],
+    "reviewed_predicate": {
+      "description": "A row is reviewed when it has a named `reviewer`, OR `review_status` is a non-empty string not beginning with `ai_`, OR any key starting with `editorial_decision` holds a truthy value. Re-implemented verbatim from promote_final_cards.human_touched (H2146).",
+      "any_of": [
+        {
+          "field": "reviewer",
+          "test": "truthy"
+        },
+        {
+          "field": "review_status",
+          "test": "nonempty_string_not_prefixed",
+          "prefix": "ai_"
+        },
+        {
+          "field_prefix": "editorial_decision",
+          "test": "any_truthy"
+        }
+      ],
+      "source_of_truth": "RussianTranslation/src/promote_final_cards.py :: human_touched"
+    },
+    "sources": [
+      {
+        "path": "RussianTranslation/src/pwg_ru_translated.jsonl",
+        "container": "jsonl"
+      }
+    ]
+  }
+}
