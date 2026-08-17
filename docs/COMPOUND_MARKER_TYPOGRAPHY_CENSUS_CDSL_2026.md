@@ -2,7 +2,7 @@
 
 _Created: 17-08-2026 · Last updated: 17-08-2026_
 
-Consolidates FINDINGS **§553–§558 and §561** ([FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)),
+Consolidates FINDINGS **§553–§558, §561 and §564** ([FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)),
 measured over the [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)
 digitizations, `RussianTranslation/src/koch.jsonl` (local-only, gitignored —
 in-copyright content, never on GitHub),
@@ -179,7 +179,12 @@ item in this order:**
    internal reference graph of each dict, and its ring interaction (`˚`-refs).
 6. **Kośa devices** — skd/vcp (Śabdakalpadruma, Vācaspatya) showed ZERO
    Western markers: how the Sanskrit-Sanskrit kośas mark compounds instead
-   (iti-quotation, devanāgarī daṇḍa segmentation) — untouched territory.
+   (iti-quotation, devanāgarī daṇḍa segmentation) — **measured → FINDINGS
+   [§564](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+   (H2983): SKD spells vigraha + class term in parentheses; VCP compresses
+   the same apparatus into ॰-abbreviations (`0` in the digitization) with a
+   numeral for the vibhakti (`6 ta0` = ṣaṣṭhī-tatpuruṣa) — the native
+   ancestor of Apte's `[za˚ ta˚]`.
 7. **Verb-root notation** — `√`, class digits, present-stem citation forms:
    who lemmatizes roots vs 3sg forms (bears directly on WhitneyRoots
    crosswalks).
