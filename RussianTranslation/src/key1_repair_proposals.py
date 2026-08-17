@@ -32,7 +32,14 @@ Classes emitted:
                       PROVEN; every intended lemma except the printed one is
                       missing from the store
   wrong_entry       - single group, print+key1 agree against the intended
-                      subcard lemma: wrong-entry ingestion suspected
+                      subcard lemma, and the two words are UNRELATED (advan
+                      "eating" vs aDvan "road" - a pure d/D flattening
+                      collision): wrong-entry ingestion suspected
+  wrong_entry_xref  - same mechanism, but the ingested card itself PRINTS the
+                      intended lemma (anukampa "s. anukampA" gender pair; asru
+                      "s. aSru" spelling cross-ref): a related stub pointing at
+                      the target (MG 17-08-2026: never label these two shapes
+                      identically)
   junk_key1         - key1 carries subcard machinery (durg_a~~h0_zz_sch):
                       mechanical key fix, content unaffected
   variant_head      - the printed head lists several variants (cakraka,
@@ -109,6 +116,29 @@ def iast_witness(iast):
     return slp if re.fullmatch(r'[a-zA-Z]+', slp) else None
 
 
+_BODY_SLP = re.compile(r'\{#(.*?)#\}', re.S)
+_BODY_IAST = re.compile(r'\{%(.*?)%\}', re.S)
+
+
+def intended_in_body(grp, intended):
+    """True when any row's de text prints the intended lemma as an exact
+    Sanskrit token (cross-reference / gender-pair stubs: anukampa "s.
+    anukampA", asru "s. aSru") - substring hits (agrAdvan) do not count."""
+    for r in grp:
+        de = r.get('de') or ''
+        toks = set()
+        for m in _BODY_SLP.finditer(de):
+            toks.update(_clean(t) for t in re.split(r'[,;+\s]+', m.group(1)))
+        for m in _BODY_IAST.finditer(de):
+            for t in re.split(r'[,;+\s]+', m.group(1)):
+                t = _clean(t)
+                if re.fullmatch(r'[a-zA-ZāīūṛṝḷṅñṭḍṇśṣṃḥĀĪŪṚṜḶṄÑṬḌṆŚṢṂḤ]+', t):
+                    toks.add(to_slp1(t))
+        if intended in toks:
+            return True
+    return False
+
+
 def content_sig(grp):
     """Order-independent content signature of a card-group's rows."""
     return tuple(sorted((str(r.get('sense_tag')), (r.get('de') or '').strip())
@@ -171,11 +201,21 @@ def classify_key1(key1, subgroups):
                 'action': 'one printed card covers several variant forms - confirm no defect',
             }
         elif heads and key1 in heads:
+            # MG 17-08-2026: two different situations must not share one label.
+            # If the ingested card ITSELF prints the intended lemma in its body
+            # (anukampa "s. anukampA" - the m./f. pair; asru "s. aSru" - a
+            # spelling cross-ref), the pair is RELATED and the stub even points
+            # at the target. If not (advan "essend" vs aDvan "road"), the two
+            # words share nothing but the d/D flattening collision.
+            related = intended_in_body(grp, sd)
             yield {
-                'class': 'wrong_entry', 'key1': key1, 'intended_lemmas': [sd],
+                'class': 'wrong_entry_xref' if related else 'wrong_entry',
+                'key1': key1, 'intended_lemmas': [sd],
                 'printed_head': sorted(set(heads)),
                 'rows_affected': len(grp),
-                'action': 're-ingest the intended lemma; quarantine the look-alike rows',
+                'action': 're-ingest the intended lemma; quarantine the '
+                          + ('cross-ref stub rows (the stub already points at the target)'
+                             if related else 'unrelated look-alike rows'),
             }
         else:
             yield {
@@ -208,6 +248,15 @@ def selftest():
     props = list(classify_key1('apta', {'Apta': [mk('Apta', '1', '{#apta#}¦ adj.')]}))
     check('wrong-entry', [p['class'] for p in props] == ['wrong_entry'])
 
+    # MG 17-08-2026: a cross-ref/gender-pair stub is NOT the same defect as an
+    # unrelated flattening collision - the two get distinct classes.
+    props = list(classify_key1('anukampa', {'anukampA': [
+        mk('anukampA', '1', '{#anukampa#}¦ <ab>s.</ab> {#anukampA#} .')]}))
+    check('xref-related', [p['class'] for p in props] == ['wrong_entry_xref'])
+    props = list(classify_key1('advan', {'aDvan': [
+        mk('aDvan', '1', '{#advan#}¦ (von 1. {#ad#}) adj. essend; s. {#agrAdvan#} .')]}))
+    check('collision-unrelated', [p['class'] for p in props] == ['wrong_entry'])
+
     props = list(classify_key1('cakrikA', {'cakrikA': [], 'cakraka': [
         mk('cakraka', '1', '{#cakraka#}, {#cakrikA#}¦ f.')]}))
     check('variant', any(p['class'] == 'variant_head' for p in props))
@@ -221,7 +270,7 @@ def selftest():
     if fails:
         print('SELFTEST FAIL:', ', '.join(fails))
         return 1
-    print('selftest: 9/9 ok')
+    print('selftest: 11/11 ok')
     return 0
 
 

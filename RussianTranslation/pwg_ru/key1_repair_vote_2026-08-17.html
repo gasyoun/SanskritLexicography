@@ -141,13 +141,13 @@
   <div class="fsctl" title="text size — persists in this browser"><button type="button" id="fsDown" aria-label="smaller text">A&minus;</button><span class="fsval" id="fsVal"></span><button type="button" id="fsUp" aria-label="larger text">A+</button></div>
   <button type="button" class="dl flowundo" id="flowUndoBtn" title="undo the last decision (z)">&#8630; Undo</button>
   <span class="flowprog" id="flowProg"><span class="bar"><i id="flowBar"></i></span><span id="flowProgText"></span><span id="flowEta"></span></span>
-  <div class="filterbar" id="filterbar"><button data-filter="all" class="active">all</button><button data-filter="wrong_entry_dup">дубликация</button><button data-filter="wrong_entry">чужая статья</button><button data-filter="junk_key1">мусорный key1</button><button data-filter="unvoted">unvoted only</button></div>
+  <div class="filterbar" id="filterbar"><button data-filter="all" class="active">all</button><button data-filter="wrong_entry_dup">дубликация</button><button data-filter="wrong_entry">случайный двойник</button><button data-filter="wrong_entry_xref">родственная отсылка</button><button data-filter="junk_key1">мусорный key1</button><button data-filter="unvoted">unvoted only</button></div>
 </div>
 <main id="cards">
 
   <section class="card" data-id="k1r-001" data-filt="wrong_entry">
-    <header><div class="hw">advan → adhvan [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>advan</i> · <b>целевые леммы (subcard)</b> = <i>adhvan</i> · <b>печатный заголовок</b> = <i>advan</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">advan → adhvan [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>advan</i> · <b>целевые леммы (subcard)</b> = <i>adhvan</i> · <b>печатный заголовок</b> = <i>advan</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>advan (von 1. ad) adj. essend, am Ende eines comp.; s. agrādvan.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -159,8 +159,8 @@
   </section>
 
   <section class="card" data-id="k1r-002" data-filt="wrong_entry">
-    <header><div class="hw">anana → ānana [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>anana</i> · <b>целевые леммы (subcard)</b> = <i>ānana</i> · <b>печатный заголовок</b> = <i>anana</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">anana → ānana [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>anana</i> · <b>целевые леммы (subcard)</b> = <i>ānana</i> · <b>печатный заголовок</b> = <i>anana</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>anana (von 2. an) n. das Athmen, Leben NIR. 2,5.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -171,9 +171,9 @@
     <textarea class="note" placeholder="free-text note (optional)"></textarea>
   </section>
 
-  <section class="card" data-id="k1r-003" data-filt="wrong_entry">
-    <header><div class="hw">anukampa → anukampā [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>anukampa</i> · <b>целевые леммы (subcard)</b> = <i>anukampā</i> · <b>печатный заголовок</b> = <i>anukampa</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+  <section class="card" data-id="k1r-003" data-filt="wrong_entry_xref">
+    <header><div class="hw">anukampa → anukampā [чужая статья — родственная отсылка] <span class="badge">чужая статья — родственная отсылка</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>anukampa</i> · <b>целевые леммы (subcard)</b> = <i>anukampā</i> · <b>печатный заголовок</b> = <i>anukampa</i> · строк затронуто: 2 (pwg).<br>Попавшая карточка сама печатает целевую лемму (anukampa «s. anukampā» — пара m./f.; asru «s. aśru»): это родственный стаб, указывающий на цель. Механизм тот же, но пара связана.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the cross-ref stub rows (the stub already points at the target). <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>anukampa s. anukampā.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -185,8 +185,8 @@
   </section>
 
   <section class="card" data-id="k1r-004" data-filt="wrong_entry">
-    <header><div class="hw">apta → āpta [чужая статья] <span class="badge">чужая статья</span><span class="badge">3 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>apta</i> · <b>целевые леммы (subcard)</b> = <i>āpta</i> · <b>печатный заголовок</b> = <i>apta</i> · строк затронуто: 3 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">apta → āpta [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">3 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>apta</i> · <b>целевые леммы (subcard)</b> = <i>āpta</i> · <b>печатный заголовок</b> = <i>apta</i> · строк затронуто: 3 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>apta (von 2. ap) adj. wässerig, s. anapta.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -197,9 +197,9 @@
     <textarea class="note" placeholder="free-text note (optional)"></textarea>
   </section>
 
-  <section class="card" data-id="k1r-005" data-filt="wrong_entry">
-    <header><div class="hw">arsas → arśas [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>arsas</i> · <b>целевые леммы (subcard)</b> = <i>arśas</i> · <b>печатный заголовок</b> = <i>arsas</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+  <section class="card" data-id="k1r-005" data-filt="wrong_entry_xref">
+    <header><div class="hw">arsas → arśas [чужая статья — родственная отсылка] <span class="badge">чужая статья — родственная отсылка</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>arsas</i> · <b>целевые леммы (subcard)</b> = <i>arśas</i> · <b>печатный заголовок</b> = <i>arsas</i> · строк затронуто: 1 (pwg).<br>Попавшая карточка сама печатает целевую лемму (anukampa «s. anukampā» — пара m./f.; asru «s. aśru»): это родственный стаб, указывающий на цель. Механизм тот же, но пара связана.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the cross-ref stub rows (the stub already points at the target). <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>arsas = arśas AK. 2,6,2,5, Sch.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -211,8 +211,8 @@
   </section>
 
   <section class="card" data-id="k1r-006" data-filt="wrong_entry">
-    <header><div class="hw">asani → aśani [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>asani</i> · <b>целевые леммы (subcard)</b> = <i>aśani</i> · <b>печатный заголовок</b> = <i>asani</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">asani → aśani [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>asani</i> · <b>целевые леммы (subcard)</b> = <i>aśani</i> · <b>печатный заголовок</b> = <i>asani</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>asani gaṇa ṛśyādi; davon asanika/ adj. nach P. 4,2,80.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -223,9 +223,9 @@
     <textarea class="note" placeholder="free-text note (optional)"></textarea>
   </section>
 
-  <section class="card" data-id="k1r-007" data-filt="wrong_entry">
-    <header><div class="hw">asru → aśru [чужая статья] <span class="badge">чужая статья</span><span class="badge">3 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>asru</i> · <b>целевые леммы (subcard)</b> = <i>aśru</i> · <b>печатный заголовок</b> = <i>asru</i> · строк затронуто: 3 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+  <section class="card" data-id="k1r-007" data-filt="wrong_entry_xref">
+    <header><div class="hw">asru → aśru [чужая статья — родственная отсылка] <span class="badge">чужая статья — родственная отсылка</span><span class="badge">3 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>asru</i> · <b>целевые леммы (subcard)</b> = <i>aśru</i> · <b>печатный заголовок</b> = <i>asru</i> · строк затронуто: 3 (pwg).<br>Попавшая карточка сама печатает целевую лемму (anukampa «s. anukampā» — пара m./f.; asru «s. aśru»): это родственный стаб, указывающий на цель. Механизм тот же, но пара связана.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the cross-ref stub rows (the stub already points at the target). <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>asru s. aśru.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -237,8 +237,8 @@
   </section>
 
   <section class="card" data-id="k1r-008" data-filt="wrong_entry">
-    <header><div class="hw">atura → ātura [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>atura</i> · <b>целевые леммы (subcard)</b> = <i>ātura</i> · <b>печатный заголовок</b> = <i>atura</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">atura → ātura [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>atura</i> · <b>целевые леммы (subcard)</b> = <i>ātura</i> · <b>печатный заголовок</b> = <i>atura</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>a/tura (3. a + tura) adj. nicht reich: tu\rāṇā\matu^rāṇāṃ vi\śāṃ bhaga^ḥ AV. 7,50,2.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -263,8 +263,8 @@
   </section>
 
   <section class="card" data-id="k1r-010" data-filt="wrong_entry">
-    <header><div class="hw">bara → bāṇa [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>bara</i> · <b>целевые леммы (subcard)</b> = <i>bāṇa</i> · <b>печатный заголовок</b> = <i>bara</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">bara → bāṇa [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>bara</i> · <b>целевые леммы (subcard)</b> = <i>bāṇa</i> · <b>печатный заголовок</b> = <i>bara</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>bara m. = 2. bala Baladeva H. ś. 75.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -289,8 +289,8 @@
   </section>
 
   <section class="card" data-id="k1r-012" data-filt="wrong_entry">
-    <header><div class="hw">gaṭa → ghaṭa [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>gaṭa</i> · <b>целевые леммы (subcard)</b> = <i>ghaṭa</i> · <b>печатный заголовок</b> = <i>gaṭa</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">gaṭa → ghaṭa [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>gaṭa</i> · <b>целевые леммы (subcard)</b> = <i>ghaṭa</i> · <b>печатный заголовок</b> = <i>gaṭa</i> · строк затронуто: 1 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>gaṭa N. pr. einer Oertlichkeit Verz. d. Oxf. H. 339,b,36.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -302,8 +302,8 @@
   </section>
 
   <section class="card" data-id="k1r-013" data-filt="wrong_entry">
-    <header><div class="hw">goṣa → ghoṣa [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>goṣa</i> · <b>целевые леммы (subcard)</b> = <i>ghoṣa</i> · <b>печатный заголовок</b> = <i>goṣa</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">goṣa → ghoṣa [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>goṣa</i> · <b>целевые леммы (subcard)</b> = <i>ghoṣa</i> · <b>печатный заголовок</b> = <i>goṣa</i> · строк затронуто: 1 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>goṣa s. u. goṣā.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -315,8 +315,8 @@
   </section>
 
   <section class="card" data-id="k1r-014" data-filt="wrong_entry">
-    <header><div class="hw">havyavaha → havyavāha [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>havyavaha</i> · <b>целевые леммы (subcard)</b> = <i>havyavāha</i> · <b>печатный заголовок</b> = <i>havyavaha</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">havyavaha → havyavāha [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>havyavaha</i> · <b>целевые леммы (subcard)</b> = <i>havyavāha</i> · <b>печатный заголовок</b> = <i>havyavaha</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>havyavaha m. Feuer R. 5,89,19. — Vgl. huta˚.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -328,8 +328,8 @@
   </section>
 
   <section class="card" data-id="k1r-015" data-filt="wrong_entry">
-    <header><div class="hw">huti → hūti [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>huti</i> · <b>целевые леммы (subcard)</b> = <i>hūti</i> · <b>печатный заголовок</b> = <i>huti</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">huti → hūti [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>huti</i> · <b>целевые леммы (subcard)</b> = <i>hūti</i> · <b>печатный заголовок</b> = <i>huti</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>huti (von 1. hu) f. Opfer in sarva˚ und havirhuti.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -341,8 +341,8 @@
   </section>
 
   <section class="card" data-id="k1r-016" data-filt="wrong_entry">
-    <header><div class="hw">jarayu → jarāyu [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>jarayu</i> · <b>целевые леммы (subcard)</b> = <i>jarāyu</i> · <b>печатный заголовок</b> = <i>jarayu</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">jarayu → jarāyu [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>jarayu</i> · <b>целевые леммы (subcard)</b> = <i>jarāyu</i> · <b>печатный заголовок</b> = <i>jarayu</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>jarayu (von jara) adj. alternd; s. ajarayu.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -353,9 +353,9 @@
     <textarea class="note" placeholder="free-text note (optional)"></textarea>
   </section>
 
-  <section class="card" data-id="k1r-017" data-filt="wrong_entry">
-    <header><div class="hw">kalasa → kalaśa [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>kalasa</i> · <b>целевые леммы (subcard)</b> = <i>kalaśa</i> · <b>печатный заголовок</b> = <i>kalasa</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+  <section class="card" data-id="k1r-017" data-filt="wrong_entry_xref">
+    <header><div class="hw">kalasa → kalaśa [чужая статья — родственная отсылка] <span class="badge">чужая статья — родственная отсылка</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>kalasa</i> · <b>целевые леммы (subcard)</b> = <i>kalaśa</i> · <b>печатный заголовок</b> = <i>kalasa</i> · строк затронуто: 2 (pwg).<br>Попавшая карточка сама печатает целевую лемму (anukampa «s. anukampā» — пара m./f.; asru «s. aśru»): это родственный стаб, указывающий на цель. Механизм тот же, но пара связана.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the cross-ref stub rows (the stub already points at the target). <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>kalasa und kalasi s. u. kalaśa und kalaśi.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -367,8 +367,8 @@
   </section>
 
   <section class="card" data-id="k1r-018" data-filt="wrong_entry">
-    <header><div class="hw">kanana → kānana [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>kanana</i> · <b>целевые леммы (subcard)</b> = <i>kānana</i> · <b>печатный заголовок</b> = <i>kanana</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">kanana → kānana [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>kanana</i> · <b>целевые леммы (subcard)</b> = <i>kānana</i> · <b>печатный заголовок</b> = <i>kanana</i> · строк затронуто: 1 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>kanana adj. einäugig H. 453. — Vgl. kāṇa.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -380,8 +380,8 @@
   </section>
 
   <section class="card" data-id="k1r-019" data-filt="wrong_entry">
-    <header><div class="hw">kṣuda → kṣudhā [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>kṣuda</i> · <b>целевые леммы (subcard)</b> = <i>kṣudhā</i> · <b>печатный заголовок</b> = <i>kṣuda</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">kṣuda → kṣudhā [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>kṣuda</i> · <b>целевые леммы (subcard)</b> = <i>kṣudhā</i> · <b>печатный заголовок</b> = <i>kṣuda</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>kṣuda (von kṣud) m. Mehl ŚKDR.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -393,8 +393,8 @@
   </section>
 
   <section class="card" data-id="k1r-020" data-filt="wrong_entry">
-    <header><div class="hw">majja → majjā [чужая статья] <span class="badge">чужая статья</span><span class="badge">3 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>majja</i> · <b>целевые леммы (subcard)</b> = <i>majjā</i> · <b>печатный заголовок</b> = <i>majja</i> · строк затронуто: 3 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">majja → majjā [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">3 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>majja</i> · <b>целевые леммы (subcard)</b> = <i>majjā</i> · <b>печатный заголовок</b> = <i>majja</i> · строк затронуто: 3 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>majja (von majj) adj. untertauchend; s. uda˚.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -406,8 +406,8 @@
   </section>
 
   <section class="card" data-id="k1r-021" data-filt="wrong_entry">
-    <header><div class="hw">maka → makha [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>maka</i> · <b>целевые леммы (subcard)</b> = <i>makha</i> · <b>печатный заголовок</b> = <i>maka</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">maka → makha [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>maka</i> · <b>целевые леммы (subcard)</b> = <i>makha</i> · <b>печатный заголовок</b> = <i>maka</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>maka m. n. gaṇa ardharcādi zu P. 2,4,31.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -419,8 +419,8 @@
   </section>
 
   <section class="card" data-id="k1r-022" data-filt="wrong_entry">
-    <header><div class="hw">manorata → manoratha [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>manorata</i> · <b>целевые леммы (subcard)</b> = <i>manoratha</i> · <b>печатный заголовок</b> = <i>manorata</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">manorata → manoratha [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>manorata</i> · <b>целевые леммы (subcard)</b> = <i>manoratha</i> · <b>печатный заголовок</b> = <i>manorata</i> · строк затронуто: 1 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>manorata m. N. pr. eines buddhistischen Patriarchen LIA. II, Anh. VIII. Wohl fehlerhaft für ˚ratha.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -432,8 +432,8 @@
   </section>
 
   <section class="card" data-id="k1r-023" data-filt="wrong_entry">
-    <header><div class="hw">maṣa → māṣa [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>maṣa</i> · <b>целевые леммы (subcard)</b> = <i>māṣa</i> · <b>печатный заголовок</b> = <i>maṣa</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">maṣa → māṣa [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>maṣa</i> · <b>целевые леммы (subcard)</b> = <i>māṣa</i> · <b>печатный заголовок</b> = <i>maṣa</i> · строк затронуто: 1 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>maṣa in der Stelle: goḥ kṛṣṇasya śuklakṛṣṇāni lohitāni ca romāṇi maṣaṃ (mṛṣṭāni eine Glosse; vgl. maṣmaṣā) kārayitvā ŚĀṄKH. GṚHY. 1,24</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -444,9 +444,9 @@
     <textarea class="note" placeholder="free-text note (optional)"></textarea>
   </section>
 
-  <section class="card" data-id="k1r-024" data-filt="wrong_entry">
-    <header><div class="hw">mena → menā [чужая статья] <span class="badge">чужая статья</span><span class="badge">13 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>mena</i> · <b>целевые леммы (subcard)</b> = <i>menā</i> · <b>печатный заголовок</b> = <i>mena</i> · строк затронуто: 13 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+  <section class="card" data-id="k1r-024" data-filt="wrong_entry_xref">
+    <header><div class="hw">mena → menā [чужая статья — родственная отсылка] <span class="badge">чужая статья — родственная отсылка</span><span class="badge">13 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>mena</i> · <b>целевые леммы (subcard)</b> = <i>menā</i> · <b>печатный заголовок</b> = <i>mena</i> · строк затронуто: 13 (pwg).<br>Попавшая карточка сама печатает целевую лемму (anukampa «s. anukampā» — пара m./f.; asru «s. aśru»): это родственный стаб, указывающий на цель. Механизм тот же, но пара связана.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the cross-ref stub rows (the stub already points at the target). <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>mena s. u. menā.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -458,8 +458,8 @@
   </section>
 
   <section class="card" data-id="k1r-025" data-filt="wrong_entry">
-    <header><div class="hw">nila → nīla [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>nila</i> · <b>целевые леммы (subcard)</b> = <i>nīla</i> · <b>печатный заголовок</b> = <i>nila</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">nila → nīla [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>nila</i> · <b>целевые леммы (subcard)</b> = <i>nīla</i> · <b>печатный заголовок</b> = <i>nila</i> · строк затронуто: 1 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>nila m. N. pr. eines Rākṣasa, eines Ministers Vibhīṣaṇa&#x27;s, R. 7,5,43.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -471,8 +471,8 @@
   </section>
 
   <section class="card" data-id="k1r-026" data-filt="wrong_entry">
-    <header><div class="hw">paka → pāka [чужая статья] <span class="badge">чужая статья</span><span class="badge">4 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>paka</i> · <b>целевые леммы (subcard)</b> = <i>pāka</i> · <b>печатный заголовок</b> = <i>paka</i> · строк затронуто: 4 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">paka → pāka [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">4 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>paka</i> · <b>целевые леммы (subcard)</b> = <i>pāka</i> · <b>печатный заголовок</b> = <i>paka</i> · строк затронуто: 4 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>1. paka = 1. pa in tailapaka.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -484,8 +484,8 @@
   </section>
 
   <section class="card" data-id="k1r-027" data-filt="wrong_entry">
-    <header><div class="hw">pariga → parigha [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>pariga</i> · <b>целевые леммы (subcard)</b> = <i>parigha</i> · <b>печатный заголовок</b> = <i>pariga</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">pariga → parigha [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>pariga</i> · <b>целевые леммы (subcard)</b> = <i>parigha</i> · <b>печатный заголовок</b> = <i>pariga</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>pariga (von gam mit pari) adj. herumgehend P. 8,4,38, Sch.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -496,9 +496,9 @@
     <textarea class="note" placeholder="free-text note (optional)"></textarea>
   </section>
 
-  <section class="card" data-id="k1r-028" data-filt="wrong_entry">
-    <header><div class="hw">parihara → parihāra [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>parihara</i> · <b>целевые леммы (subcard)</b> = <i>parihāra</i> · <b>печатный заголовок</b> = <i>parihara</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+  <section class="card" data-id="k1r-028" data-filt="wrong_entry_xref">
+    <header><div class="hw">parihara → parihāra [чужая статья — родственная отсылка] <span class="badge">чужая статья — родственная отсылка</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>parihara</i> · <b>целевые леммы (subcard)</b> = <i>parihāra</i> · <b>печатный заголовок</b> = <i>parihara</i> · строк затронуто: 2 (pwg).<br>Попавшая карточка сама печатает целевую лемму (anukampa «s. anukampā» — пара m./f.; asru «s. aśru»): это родственный стаб, указывающий на цель. Механизм тот же, но пара связана.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the cross-ref stub rows (the stub already points at the target). <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>parihara s. u. parihāra.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -510,8 +510,8 @@
   </section>
 
   <section class="card" data-id="k1r-029" data-filt="wrong_entry">
-    <header><div class="hw">patin → pathin [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>patin</i> · <b>целевые леммы (subcard)</b> = <i>pathin</i> · <b>печатный заголовок</b> = <i>patin</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">patin → pathin [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>patin</i> · <b>целевые леммы (subcard)</b> = <i>pathin</i> · <b>печатный заголовок</b> = <i>patin</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>patin s. gṛha˚.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -523,8 +523,8 @@
   </section>
 
   <section class="card" data-id="k1r-030" data-filt="wrong_entry">
-    <header><div class="hw">patra → pātra [чужая статья] <span class="badge">чужая статья</span><span class="badge">12 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>patra</i> · <b>целевые леммы (subcard)</b> = <i>pātra</i> · <b>печатный заголовок</b> = <i>patra</i> · строк затронуто: 12 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">patra → pātra [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">12 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>patra</i> · <b>целевые леммы (subcard)</b> = <i>pātra</i> · <b>печатный заголовок</b> = <i>patra</i> · строк затронуто: 12 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>patra s. pattra.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -536,8 +536,8 @@
   </section>
 
   <section class="card" data-id="k1r-031" data-filt="wrong_entry">
-    <header><div class="hw">pramara → pramāṇa [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>pramara</i> · <b>целевые леммы (subcard)</b> = <i>pramāṇa</i> · <b>печатный заголовок</b> = <i>pramara</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">pramara → pramāṇa [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>pramara</i> · <b>целевые леммы (subcard)</b> = <i>pramāṇa</i> · <b>печатный заголовок</b> = <i>pramara</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>pramara/ (von mar mit pra) m. Tod (?): e\tau me\ gāvau^ prama\rasya^ yu\ktau ṚV. 10,27,20.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -549,8 +549,8 @@
   </section>
 
   <section class="card" data-id="k1r-032" data-filt="wrong_entry">
-    <header><div class="hw">prasna → praśna [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>prasna</i> · <b>целевые леммы (subcard)</b> = <i>praśna</i> · <b>печатный заголовок</b> = <i>prasna</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">prasna → praśna [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>prasna</i> · <b>целевые леммы (subcard)</b> = <i>praśna</i> · <b>печатный заголовок</b> = <i>prasna</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>prasna (von snā mit pra) m. Badebehälter P. 3,3,58, Vārtt. 4, Sch.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -561,9 +561,9 @@
     <textarea class="note" placeholder="free-text note (optional)"></textarea>
   </section>
 
-  <section class="card" data-id="k1r-033" data-filt="wrong_entry">
-    <header><div class="hw">ramaṭa → rāmaṭha [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>ramaṭa</i> · <b>целевые леммы (subcard)</b> = <i>rāmaṭha</i> · <b>печатный заголовок</b> = <i>ramaṭa</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+  <section class="card" data-id="k1r-033" data-filt="wrong_entry_xref">
+    <header><div class="hw">ramaṭa → rāmaṭha [чужая статья — родственная отсылка] <span class="badge">чужая статья — родственная отсылка</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>ramaṭa</i> · <b>целевые леммы (subcard)</b> = <i>rāmaṭha</i> · <b>печатный заголовок</b> = <i>ramaṭa</i> · строк затронуто: 2 (pwg).<br>Попавшая карточка сама печатает целевую лемму (anukampa «s. anukampā» — пара m./f.; asru «s. aśru»): это родственный стаб, указывающий на цель. Механизм тот же, но пара связана.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the cross-ref stub rows (the stub already points at the target). <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>ramaṭa s. ramaṭha.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -575,8 +575,8 @@
   </section>
 
   <section class="card" data-id="k1r-034" data-filt="wrong_entry">
-    <header><div class="hw">salya → śalya [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>salya</i> · <b>целевые леммы (subcard)</b> = <i>śalya</i> · <b>печатный заголовок</b> = <i>salya</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">salya → śalya [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>salya</i> · <b>целевые леммы (subcard)</b> = <i>śalya</i> · <b>печатный заголовок</b> = <i>salya</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>salya und salyaka s. vi˚.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -588,8 +588,8 @@
   </section>
 
   <section class="card" data-id="k1r-035" data-filt="wrong_entry">
-    <header><div class="hw">samba → sāmba [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>samba</i> · <b>целевые леммы (subcard)</b> = <i>sāmba</i> · <b>печатный заголовок</b> = <i>samba</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">samba → sāmba [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>samba</i> · <b>целевые леммы (subcard)</b> = <i>sāmba</i> · <b>печатный заголовок</b> = <i>samba</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>samba m. = muṣalānala TRIK. 3,3,282. — Vgl. śamba.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -601,8 +601,8 @@
   </section>
 
   <section class="card" data-id="k1r-036" data-filt="wrong_entry">
-    <header><div class="hw">sanu → sānu [чужая статья] <span class="badge">чужая статья</span><span class="badge">3 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>sanu</i> · <b>целевые леммы (subcard)</b> = <i>sānu</i> · <b>печатный заголовок</b> = <i>sanu</i> · строк затронуто: 3 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">sanu → sānu [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">3 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>sanu</i> · <b>целевые леммы (subcard)</b> = <i>sānu</i> · <b>печатный заголовок</b> = <i>sanu</i> · строк затронуто: 3 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>sanu in 2. sanutar fgg.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -614,8 +614,8 @@
   </section>
 
   <section class="card" data-id="k1r-037" data-filt="wrong_entry">
-    <header><div class="hw">satkara → satkāra [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>satkara</i> · <b>целевые леммы (subcard)</b> = <i>satkāra</i> · <b>печатный заголовок</b> = <i>satkara</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">satkara → satkāra [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>satkara</i> · <b>целевые леммы (subcard)</b> = <i>satkāra</i> · <b>печатный заголовок</b> = <i>satkara</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>satkara (von satkar) adj. s. a˚ in den Nachträgen.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -627,8 +627,8 @@
   </section>
 
   <section class="card" data-id="k1r-038" data-filt="wrong_entry">
-    <header><div class="hw">satta → sattā [чужая статья] <span class="badge">чужая статья</span><span class="badge">3 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>satta</i> · <b>целевые леммы (subcard)</b> = <i>sattā</i> · <b>печатный заголовок</b> = <i>satta</i> · строк затронуто: 3 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">satta → sattā [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">3 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>satta</i> · <b>целевые леммы (subcard)</b> = <i>sattā</i> · <b>печатный заголовок</b> = <i>satta</i> · строк затронуто: 3 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>satta partic. von 1. sad; s. das. und vgl. nasatta.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -640,8 +640,8 @@
   </section>
 
   <section class="card" data-id="k1r-039" data-filt="wrong_entry">
-    <header><div class="hw">savas → śavas [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>savas</i> · <b>целевые леммы (subcard)</b> = <i>śavas</i> · <b>печатный заголовок</b> = <i>savas</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">savas → śavas [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>savas</i> · <b>целевые леммы (subcard)</b> = <i>śavas</i> · <b>печатный заголовок</b> = <i>savas</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>savas n. = 2. savana in satya˚.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -653,8 +653,8 @@
   </section>
 
   <section class="card" data-id="k1r-040" data-filt="wrong_entry">
-    <header><div class="hw">soṣa → śoṣa [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>soṣa</i> · <b>целевые леммы (subcard)</b> = <i>śoṣa</i> · <b>печатный заголовок</b> = <i>soṣa</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">soṣa → śoṣa [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>soṣa</i> · <b>целевые леммы (subcard)</b> = <i>śoṣa</i> · <b>печатный заголовок</b> = <i>soṣa</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>soṣa (2. sa + ūṣa) adj. mit salziger Erde vermischt YĀJÑ. 1,186.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -666,8 +666,8 @@
   </section>
 
   <section class="card" data-id="k1r-041" data-filt="wrong_entry">
-    <header><div class="hw">sravaka → śrāvaka [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>sravaka</i> · <b>целевые леммы (subcard)</b> = <i>śrāvaka</i> · <b>печатный заголовок</b> = <i>sravaka</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">sravaka → śrāvaka [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>sravaka</i> · <b>целевые леммы (subcard)</b> = <i>śrāvaka</i> · <b>печатный заголовок</b> = <i>sravaka</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>sravaka (wie eben) nom. ag. VOP. 26,41.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -679,8 +679,8 @@
   </section>
 
   <section class="card" data-id="k1r-042" data-filt="wrong_entry">
-    <header><div class="hw">sula → śūla [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>sula</i> · <b>целевые леммы (subcard)</b> = <i>śūla</i> · <b>печатный заголовок</b> = <i>sula</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">sula → śūla [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>sula</i> · <b>целевые леммы (subcard)</b> = <i>śūla</i> · <b>печатный заголовок</b> = <i>sula</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>sula gaṇa balādi zu P. 5,2,136.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -692,8 +692,8 @@
   </section>
 
   <section class="card" data-id="k1r-043" data-filt="wrong_entry">
-    <header><div class="hw">sulin → śūlin [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>sulin</i> · <b>целевые леммы (subcard)</b> = <i>śūlin</i> · <b>печатный заголовок</b> = <i>sulin</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">sulin → śūlin [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>sulin</i> · <b>целевые леммы (subcard)</b> = <i>śūlin</i> · <b>печатный заголовок</b> = <i>sulin</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>suli/n adj. von sula gaṇa balādi zu P. 5,2,136.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -705,8 +705,8 @@
   </section>
 
   <section class="card" data-id="k1r-044" data-filt="wrong_entry">
-    <header><div class="hw">suri → sūri [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>suri</i> · <b>целевые леммы (subcard)</b> = <i>sūri</i> · <b>печатный заголовок</b> = <i>suri</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">suri → sūri [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>suri</i> · <b>целевые леммы (subcard)</b> = <i>sūri</i> · <b>печатный заголовок</b> = <i>suri</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>suri adj. s. surai.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -718,8 +718,8 @@
   </section>
 
   <section class="card" data-id="k1r-045" data-filt="wrong_entry">
-    <header><div class="hw">utsaha → utsāha [чужая статья] <span class="badge">чужая статья</span><span class="badge">3 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>utsaha</i> · <b>целевые леммы (subcard)</b> = <i>utsāha</i> · <b>печатный заголовок</b> = <i>utsaha</i> · строк затронуто: 3 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">utsaha → utsāha [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">3 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>utsaha</i> · <b>целевые леммы (subcard)</b> = <i>utsāha</i> · <b>печатный заголовок</b> = <i>utsaha</i> · строк затронуто: 3 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>utsaha nom. act. von sah mit ud in durutsaha (s. d.)</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -731,8 +731,8 @@
   </section>
 
   <section class="card" data-id="k1r-046" data-filt="wrong_entry">
-    <header><div class="hw">utta → uttha [чужая статья] <span class="badge">чужая статья</span><span class="badge">5 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>utta</i> · <b>целевые леммы (subcard)</b> = <i>uttha</i> · <b>печатный заголовок</b> = <i>utta</i> · строк затронуто: 5 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">utta → uttha [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">5 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>utta</i> · <b>целевые леммы (subcard)</b> = <i>uttha</i> · <b>печатный заголовок</b> = <i>utta</i> · строк затронуто: 5 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>utta partic. von 2. ud; s. d.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -744,8 +744,8 @@
   </section>
 
   <section class="card" data-id="k1r-047" data-filt="wrong_entry">
-    <header><div class="hw">uttapana → utthāpana [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>uttapana</i> · <b>целевые леммы (subcard)</b> = <i>utthāpana</i> · <b>печатный заголовок</b> = <i>uttapana</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">uttapana → utthāpana [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>uttapana</i> · <b>целевые леммы (subcard)</b> = <i>utthāpana</i> · <b>печатный заголовок</b> = <i>uttapana</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>uttapana m. Bez. eines best. Feuers NIRṆAYAS. 30,a,6. fgg.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -783,8 +783,8 @@
   </section>
 
   <section class="card" data-id="k1r-050" data-filt="wrong_entry">
-    <header><div class="hw">vasya → vaśya [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>vasya</i> · <b>целевые леммы (subcard)</b> = <i>vaśya</i> · <b>печатный заголовок</b> = <i>vasya</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">vasya → vaśya [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>vasya</i> · <b>целевые леммы (subcard)</b> = <i>vaśya</i> · <b>печатный заголовок</b> = <i>vasya</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>vasya (von 3. vas) adj. anzuziehen: snāta˚ nach einer Waschung KĀTY. ŚR. 7,2,18.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -795,9 +795,9 @@
     <textarea class="note" placeholder="free-text note (optional)"></textarea>
   </section>
 
-  <section class="card" data-id="k1r-051" data-filt="wrong_entry">
-    <header><div class="hw">vedika → vedikā [чужая статья] <span class="badge">чужая статья</span><span class="badge">4 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>vedika</i> · <b>целевые леммы (subcard)</b> = <i>vedikā</i> · <b>печатный заголовок</b> = <i>vedika</i> · строк затронуто: 4 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+  <section class="card" data-id="k1r-051" data-filt="wrong_entry_xref">
+    <header><div class="hw">vedika → vedikā [чужая статья — родственная отсылка] <span class="badge">чужая статья — родственная отсылка</span><span class="badge">4 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>vedika</i> · <b>целевые леммы (subcard)</b> = <i>vedikā</i> · <b>печатный заголовок</b> = <i>vedika</i> · строк затронуто: 4 (pwg).<br>Попавшая карточка сама печатает целевую лемму (anukampa «s. anukampā» — пара m./f.; asru «s. aśru»): это родственный стаб, указывающий на цель. Механизм тот же, но пара связана.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the cross-ref stub rows (the stub already points at the target). <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>vedika s. u. 3. vedikā 3).</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -809,8 +809,8 @@
   </section>
 
   <section class="card" data-id="k1r-052" data-filt="wrong_entry">
-    <header><div class="hw">vigna → vighna [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>vigna</i> · <b>целевые леммы (subcard)</b> = <i>vighna</i> · <b>печатный заголовок</b> = <i>vigna</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">vigna → vighna [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>vigna</i> · <b>целевые леммы (subcard)</b> = <i>vighna</i> · <b>печатный заголовок</b> = <i>vigna</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>vigna s. u. vij.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -822,8 +822,8 @@
   </section>
 
   <section class="card" data-id="k1r-053" data-filt="wrong_entry">
-    <header><div class="hw">viḍu → vīḍu [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>viḍu</i> · <b>целевые леммы (subcard)</b> = <i>vīḍu</i> · <b>печатный заголовок</b> = <i>viḍu, viḍula</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">viḍu → vīḍu [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>viḍu</i> · <b>целевые леммы (subcard)</b> = <i>vīḍu</i> · <b>печатный заголовок</b> = <i>viḍu, viḍula</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>viḍu m. AK. 2,8,2,5 fehlerhaft für vidu.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -835,8 +835,8 @@
   </section>
 
   <section class="card" data-id="k1r-054" data-filt="wrong_entry">
-    <header><div class="hw">visala → viśāla [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>visala</i> · <b>целевые леммы (subcard)</b> = <i>viśāla</i> · <b>печатный заголовок</b> = <i>visala</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">visala → viśāla [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>visala</i> · <b>целевые леммы (subcard)</b> = <i>viśāla</i> · <b>печатный заголовок</b> = <i>visala</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>visala n. = kisala Blattknospe, junger Schoss TRIK. 2,4,4.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -848,8 +848,8 @@
   </section>
 
   <section class="card" data-id="k1r-055" data-filt="wrong_entry">
-    <header><div class="hw">vitana → vitāna [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>vitana</i> · <b>целевые леммы (subcard)</b> = <i>vitāna</i> · <b>печатный заголовок</b> = <i>vitana</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">vitana → vitāna [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>vitana</i> · <b>целевые леммы (subcard)</b> = <i>vitāna</i> · <b>печатный заголовок</b> = <i>vitana</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>vitana s. āharavitanā.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
@@ -861,8 +861,8 @@
   </section>
 
   <section class="card" data-id="k1r-056" data-filt="wrong_entry">
-    <header><div class="hw">yatu → yātu [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
-    <div class="question"><b>key1</b> = <i>yatu</i> · <b>целевые леммы (subcard)</b> = <i>yātu</i> · <b>печатный заголовок</b> = <i>yatu</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <header><div class="hw">yatu → yātu [чужая статья — случайный двойник] <span class="badge">чужая статья — случайный двойник</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>yatu</i> · <b>целевые леммы (subcard)</b> = <i>yātu</i> · <b>печатный заголовок</b> = <i>yatu</i> · строк затронуто: 2 (pwg).<br>Слова НЕ родственны (advan «essend» ≠ adhvan «дорога»): их связала только коллизия уплощения d/D и т.п. Инжест взял постороннюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the unrelated look-alike rows. <b>Reject</b> = оставить как есть.</div>
     <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>yatu s. yatavya.</code></div>
     <div class="controls">
       <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
