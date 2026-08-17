@@ -1853,11 +1853,20 @@ def _test_h2326_1172_probe_raw_envelope_capture():
             assert 'TAILMARKER' in big and 'TRUNCATED' in big, big[:200]
             assert len(big.encode('utf-8')) < m.PROBE_RAW_TAIL_BYTES + 600, len(big)
 
-            # (6) THE HEALTHY LANE IS UNTOUCHED: a success writes no file and adds no row fields.
+            # (6) THE HEALTHY LANE IS UNTOUCHED: a success writes no file and adds no
+            # DIAGNOSTIC row fields. H2647 narrowed this from `detail == {}`: every call now
+            # also carries `host_state`, deliberately on the success path too — the whole
+            # point of that capture is that a HEALTHY reading records the box it was taken on,
+            # so a later slow or crashed one can be compared against it. The H2326 guarantee
+            # this check exists for is unchanged and asserted directly: no err_pattern, no
+            # raw_envelope_path, no file on disk.
             _envelope('{"type":"result","subtype":"success","is_error":false,'
                       '"structured_output":{"ok":true}}')
             cls, detail = _call('h2326-ok')
-            assert cls == 'success' and detail == {}, (cls, detail)
+            assert cls == 'success', (cls, detail)
+            assert 'err_pattern' not in detail and 'raw_envelope_path' not in detail, detail
+            assert set(detail) <= {'host_state'}, (
+                'success added an unexpected detail key: %s' % sorted(detail))
             assert not os.path.exists(_raw('h2326-ok')), 'success wrote a raw-envelope file'
 
             # (7) Two calls of one run APPEND — live_probe makes two per account, and the last
