@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="dark">
+<meta name="generator" content="csl-pyutil/0.14.0">
+<title>pwg_ru: чужие статьи под целевыми леммами (issue #1767) — 56 items</title>
+<style>
+  :root { color-scheme: dark; --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --text:#e6e6e6; --muted:#9aa0aa;
+          --accent:#5b8cff; --ok:#3fb950; --bad:#f85149; --defer:#d29922; --border:#2a2f3a; }
+  * { box-sizing: border-box; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,Segoe UI,Roboto,sans-serif;
+         margin:0; padding:0 0 120px 0; }
+  header.top { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border);
+               padding:14px 20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+  header.top h1 { font-size:16px; margin:0; }
+  header.top .sub { color:var(--muted); font-size:12px; max-width:760px; }
+  .tally { display:flex; gap:14px; font-size:13px; }
+  .tally span.count { font-weight:700; }
+  .tally .approve { color:var(--ok); } .tally .reject { color:var(--bad); }
+  .tally .defer { color:var(--defer); } .tally .unvoted { color:var(--muted); }
+  .toolbar { padding:10px 20px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  button.dl { background:var(--accent); color:#fff; border:none; padding:8px 14px; border-radius:6px;
+              cursor:pointer; font-size:13px; }
+  button.dl:hover { opacity:.9; }
+  .filterbar { display:flex; gap:6px; flex-wrap:wrap; }
+  .filterbar button { background:var(--panel2); border:1px solid var(--border); color:var(--text);
+                       padding:6px 10px; border-radius:14px; font-size:12px; cursor:pointer; }
+  .filterbar button.active { border-color:var(--accent); color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:10px 20px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px;
+          margin-bottom:16px; }
+  .card.voted-approve { border-left:4px solid var(--ok); }
+  .card.voted-reject { border-left:4px solid var(--bad); }
+  .card.voted-defer { border-left:4px solid var(--defer); }
+  .card header { display:flex; justify-content:space-between; align-items:baseline; }
+  .card .hw { font-size:18px; font-weight:700; }
+  .badge { font-size:11px; background:var(--panel2); padding:2px 8px; border-radius:10px;
+           margin-left:8px; color:var(--muted); }
+  .question { margin:8px 0 12px; font-size:14px; }
+  .panel { background:var(--panel2); border-radius:8px; padding:10px 12px; font-size:13px; margin-bottom:10px; }
+  .panel h4 { margin:0 0 6px; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .panel pre { white-space:pre-wrap; word-break:break-word; margin:0; font-size:12px; line-height:1.45; }
+  .chip { display:inline-block; background:#263042; border-radius:5px; padding:2px 7px; margin:2px 3px 2px 0; font-size:12px; }
+  .muted { color:var(--muted); font-style:italic; }
+  .controls { display:flex; align-items:center; gap:8px; margin-top:4px; }
+  button.vote { border:1px solid var(--border); background:var(--panel2); color:var(--text);
+                padding:7px 12px; border-radius:6px; cursor:pointer; font-size:13px; }
+  button.vote.approve.active { background:var(--ok); border-color:var(--ok); color:#04240b; }
+  button.vote.reject.active { background:var(--bad); border-color:var(--bad); color:#2a0a08; }
+  button.vote.defer.active { background:var(--defer); border-color:var(--defer); color:#2a1d02; }
+  .vote-state { margin-left:6px; font-size:12px; color:var(--muted); }
+  textarea.note { width:100%; margin-top:10px; min-height:44px; background:#11141a !important; color:#e6e6e6 !important;
+                  -webkit-text-fill-color:#e6e6e6; border:1px solid var(--border); border-radius:6px; padding:8px; font-size:13px;
+                  font-family:inherit; resize:vertical; }
+  textarea.note::placeholder { color:var(--muted); opacity:1; }
+  footer.hint { max-width:980px; margin:20px auto; padding:0 20px; color:var(--muted); font-size:12px; }
+  kbd { background:#263042; border-radius:4px; padding:1px 5px; font-size:11px; }
+
+  .screening-banner { margin: 0 20px 12px; padding: 10px 14px; border-radius: 8px;
+    border: 1px solid var(--accent); background: #152033; font-size: 12px; line-height: 1.45;
+    color: var(--text); max-width: 980px; }
+  .screening-banner code { font-size: 11px; color: var(--accent); }
+  .screening-banner .sc-d { color: var(--defer); font-weight: 700; }
+
+  :root { --fs:1.5; }
+  header.top h1 { font-size:calc(16px * var(--fs)) !important; }
+  header.top .sub { font-size:calc(12px * var(--fs)) !important; }
+  .tally, button.dl, button.vote, button.rate, textarea.note, .reject-label-select,
+  #strictReviewerWrap, #strictReviewerWrap input { font-size:calc(13px * var(--fs)) !important; }
+  .filterbar button, .fsctl button, .fsctl .fsval, .chip, .vote-state, .rate-state,
+  .ratinglabel, .rejectlabellabel, footer.hint, div.legend,
+  #strictReviewError { font-size:calc(12px * var(--fs)) !important; }
+  .card .hw { font-size:calc(18px * var(--fs)) !important; }
+  .badge, .panel h4, kbd, .idchip { font-size:calc(11px * var(--fs)) !important; }
+  .question { font-size:calc(14px * var(--fs)) !important; }
+  .panel { font-size:calc(13px * var(--fs)) !important; }
+  .panel pre { font-size:calc(13.5px * var(--fs)) !important; line-height:1.55; }
+  .panel .anatomy { font-size:calc(12.5px * var(--fs)) !important; }
+  .savebanner { font-size:calc(12.5px * var(--fs)) !important; }
+  .fsctl { display:flex; align-items:center; gap:4px; }
+  .fsctl button { background:var(--panel2); border:1px solid var(--border); color:var(--text);
+                  padding:6px 10px; border-radius:14px; cursor:pointer; line-height:1; }
+  .fsctl .fsval { color:var(--muted); min-width:3.4em; text-align:center; }
+  @media (max-width: 640px) {
+    header.top { padding: 10px 14px; flex-direction: column; align-items: stretch; }
+    header.top h1 { font-size: 15px; }
+    .tally { gap: 8px; font-size: 11px; }
+    .toolbar { padding: 8px 14px; }
+    main { padding: 8px 12px; }
+    .card { padding: 12px; }
+    .filterbar { flex-wrap: wrap; }
+    button.dl, button.vote, button.rate, .fsctl button, #saveBtn, #handinBtn, #pauseBtn {
+      min-height: 44px; min-width: 44px; padding: 10px 14px;
+    }
+    .controls { flex-wrap: wrap; }
+    .panel { padding: 8px 10px; }
+    textarea.note { min-height: 60px; }
+  }
+  .tally .time { color:var(--muted); }
+  .dl.handin { background:#243447; }
+  .tally .pausebtn { background:none; border:1px solid var(--border); color:var(--muted);
+                     border-radius:6px; padding:0 6px; margin-left:4px; cursor:pointer;
+                     font-size:inherit; font-family:inherit; line-height:1.6; }
+  .tally .pausebtn.on { color:#ffd479; border-color:#ffd479; }
+  .tally .time.paused { opacity:.45; }
+  .handin-said { color:var(--muted); font-size:12px; margin-left:10px; }
+  .card.kbd-active { outline:2px solid var(--accent); outline-offset:3px; }
+  .tally .tstate { color:var(--muted); font-size:.85em; margin-left:4px; }
+  .tally .tstate.idle { color:var(--defer); }
+  .flowprog { display:inline-flex; align-items:center; gap:8px; color:var(--muted); font-size:12px; }
+  .flowprog .bar { display:inline-block; width:120px; height:6px; border-radius:3px;
+                   background:var(--panel2); border:1px solid var(--border); overflow:hidden; }
+  .flowprog .bar i { display:block; height:6px; background:var(--accent); width:0; }
+  .dl.flowundo { background:#243447; }
+  .flowtoast { position:fixed; left:50%; bottom:24px; transform:translateX(-50%);
+               background:var(--panel2); border:1px solid var(--border); color:var(--text);
+               padding:8px 14px; border-radius:8px; font-size:13px; z-index:50;
+               opacity:0; pointer-events:none; transition:opacity .18s; }
+  .flowtoast.on { opacity:1; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>pwg_ru: чужие статьи под целевыми леммами (issue #1767) — 56 items</h1>
+    <div class="sub">Generated 17-08-2026 &middot; sheet_id <code>key1-repair-2026-08-17</code> &middot; 56 предложений по 161 строке стора: инжест по уплощённому ключу брал статью-двойника вместо целевой леммы (FINDINGS §560/§561). Approve = переингест целевой леммы + карантин строк-двойников.</div>
+  </div>
+  <div class="tally" id="tally">
+    <span class="approve">&#9989; <span class="count" id="c-approve">0</span></span>
+    <span class="reject">&#10060; <span class="count" id="c-reject">0</span></span>
+    <span class="defer">&#9208; <span class="count" id="c-defer">0</span></span>
+    <span class="time" title="active time on this sheet (while the tab is visible)">&#9201; <span class="count" id="t-total">0:00</span><span class="tstate" id="t-state"></span></span>
+    <button type="button" class="pausebtn" id="pauseBtn" title="pause the clock — a break is not review time">&#9208;</button>
+    <span class="unvoted">&#9711; <span class="count" id="c-unvoted">56</span></span>
+  </div>
+</header>
+<aside class="screening-banner" role="status" data-screening="1"><strong>Screening (H1649)</strong> — only human-required cards are below. Off the plate: <span class="sc-a">deterministic 205</span> · <span class="sc-b">dataset lookup 0</span> · <span class="sc-c">agent adjudication 0</span> (total screened 205). Human cards: <span class="sc-d">56</span>. Evidence: <code>RussianTranslation/pwg_ru/key1_repair_proposals.jsonl</code>. Rules: key1 vs subcard-декод vs iast (sanskrit_util.to_slp1) vs печатный заголовок {#lemma#}¦, дубликация доказывается побайтово одинаковым контентом под разными сабкартами, группы, где все свидетели согласны, в лист не попадают.</aside>
+<div class="toolbar">
+  <button class="dl" id="downloadBtn">Download decisions.json</button><button class="dl handin" id="handinBtn" title="stop the clock and export the votes made so far; the rest stay saved in this browser">Hand in what I got</button><span class="handin-said" id="handinSaid"></span><button class="dl" id="saveBtn" style="display:none;margin-left:8px">Save to folder…</button>
+  <div class="fsctl" title="text size — persists in this browser"><button type="button" id="fsDown" aria-label="smaller text">A&minus;</button><span class="fsval" id="fsVal"></span><button type="button" id="fsUp" aria-label="larger text">A+</button></div>
+  <button type="button" class="dl flowundo" id="flowUndoBtn" title="undo the last decision (z)">&#8630; Undo</button>
+  <span class="flowprog" id="flowProg"><span class="bar"><i id="flowBar"></i></span><span id="flowProgText"></span><span id="flowEta"></span></span>
+  <div class="filterbar" id="filterbar"><button data-filter="all" class="active">all</button><button data-filter="wrong_entry_dup">дубликация</button><button data-filter="wrong_entry">чужая статья</button><button data-filter="junk_key1">мусорный key1</button><button data-filter="unvoted">unvoted only</button></div>
+</div>
+<main id="cards">
+
+  <section class="card" data-id="k1r-001" data-filt="wrong_entry">
+    <header><div class="hw">advan → adhvan [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>advan</i> · <b>целевые леммы (subcard)</b> = <i>adhvan</i> · <b>печатный заголовок</b> = <i>advan</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>advan (von 1. ad) adj. essend, am Ende eines comp.; s. agrādvan.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-002" data-filt="wrong_entry">
+    <header><div class="hw">anana → ānana [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>anana</i> · <b>целевые леммы (subcard)</b> = <i>ānana</i> · <b>печатный заголовок</b> = <i>anana</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>anana (von 2. an) n. das Athmen, Leben NIR. 2,5.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-003" data-filt="wrong_entry">
+    <header><div class="hw">anukampa → anukampā [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>anukampa</i> · <b>целевые леммы (subcard)</b> = <i>anukampā</i> · <b>печатный заголовок</b> = <i>anukampa</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>anukampa s. anukampā.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-004" data-filt="wrong_entry">
+    <header><div class="hw">apta → āpta [чужая статья] <span class="badge">чужая статья</span><span class="badge">3 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>apta</i> · <b>целевые леммы (subcard)</b> = <i>āpta</i> · <b>печатный заголовок</b> = <i>apta</i> · строк затронуто: 3 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>apta (von 2. ap) adj. wässerig, s. anapta.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-005" data-filt="wrong_entry">
+    <header><div class="hw">arsas → arśas [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>arsas</i> · <b>целевые леммы (subcard)</b> = <i>arśas</i> · <b>печатный заголовок</b> = <i>arsas</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>arsas = arśas AK. 2,6,2,5, Sch.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-006" data-filt="wrong_entry">
+    <header><div class="hw">asani → aśani [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>asani</i> · <b>целевые леммы (subcard)</b> = <i>aśani</i> · <b>печатный заголовок</b> = <i>asani</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>asani gaṇa ṛśyādi; davon asanika/ adj. nach P. 4,2,80.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-007" data-filt="wrong_entry">
+    <header><div class="hw">asru → aśru [чужая статья] <span class="badge">чужая статья</span><span class="badge">3 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>asru</i> · <b>целевые леммы (subcard)</b> = <i>aśru</i> · <b>печатный заголовок</b> = <i>asru</i> · строк затронуто: 3 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>asru s. aśru.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-008" data-filt="wrong_entry">
+    <header><div class="hw">atura → ātura [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>atura</i> · <b>целевые леммы (subcard)</b> = <i>ātura</i> · <b>печатный заголовок</b> = <i>atura</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>a/tura (3. a + tura) adj. nicht reich: tu\rāṇā\matu^rāṇāṃ vi\śāṃ bhaga^ḥ AV. 7,50,2.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-009" data-filt="wrong_entry_dup">
+    <header><div class="hw">bara → bhāra, bhara [дубликация — доказано] <span class="badge">дубликация — доказано</span><span class="badge">4 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>bara</i> · <b>целевые леммы (subcard)</b> = <i>bhāra, bhara</i> · <b>печатный заголовок</b> = <i>bara</i> · строк затронуто: 4 (pwg).<br>Одна и та же карточка-двойник лежит в сторе НЕСКОЛЬКО раз — под сабкартами разных целевых лемм. Настоящие статьи целевых лемм в сторе отсутствуют.<br><b>Approve</b> = re-ingest each intended lemma; quarantine the duplicated look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>bara m. = 2. bala Baladeva H. ś. 75.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-010" data-filt="wrong_entry">
+    <header><div class="hw">bara → bāṇa [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>bara</i> · <b>целевые леммы (subcard)</b> = <i>bāṇa</i> · <b>печатный заголовок</b> = <i>bara</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>bara m. = 2. bala Baladeva H. ś. 75.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-011" data-filt="junk_key1">
+    <header><div class="hw">durg_a~~h0_zz_sch → durgā [мусорный key1] <span class="badge">мусорный key1</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>durg_a~~h0_zz_sch</i> · <b>целевые леммы (subcard)</b> = <i>durgā</i> · <b>печатный заголовок</b> = <i>durgā</i> · строк затронуто: 2 (sch).<br>key1 несёт машинерию сабкарты; механическая починка ключа, контент не тронут.<br><b>Approve</b> = mechanical: set key1 to the decoded subcard lemma. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>durgā ˚ = bilva, Govardh. 340 (Ko.).</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-012" data-filt="wrong_entry">
+    <header><div class="hw">gaṭa → ghaṭa [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>gaṭa</i> · <b>целевые леммы (subcard)</b> = <i>ghaṭa</i> · <b>печатный заголовок</b> = <i>gaṭa</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>gaṭa N. pr. einer Oertlichkeit Verz. d. Oxf. H. 339,b,36.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-013" data-filt="wrong_entry">
+    <header><div class="hw">goṣa → ghoṣa [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>goṣa</i> · <b>целевые леммы (subcard)</b> = <i>ghoṣa</i> · <b>печатный заголовок</b> = <i>goṣa</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>goṣa s. u. goṣā.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-014" data-filt="wrong_entry">
+    <header><div class="hw">havyavaha → havyavāha [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>havyavaha</i> · <b>целевые леммы (subcard)</b> = <i>havyavāha</i> · <b>печатный заголовок</b> = <i>havyavaha</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>havyavaha m. Feuer R. 5,89,19. — Vgl. huta˚.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-015" data-filt="wrong_entry">
+    <header><div class="hw">huti → hūti [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>huti</i> · <b>целевые леммы (subcard)</b> = <i>hūti</i> · <b>печатный заголовок</b> = <i>huti</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>huti (von 1. hu) f. Opfer in sarva˚ und havirhuti.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-016" data-filt="wrong_entry">
+    <header><div class="hw">jarayu → jarāyu [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>jarayu</i> · <b>целевые леммы (subcard)</b> = <i>jarāyu</i> · <b>печатный заголовок</b> = <i>jarayu</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>jarayu (von jara) adj. alternd; s. ajarayu.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-017" data-filt="wrong_entry">
+    <header><div class="hw">kalasa → kalaśa [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>kalasa</i> · <b>целевые леммы (subcard)</b> = <i>kalaśa</i> · <b>печатный заголовок</b> = <i>kalasa</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>kalasa und kalasi s. u. kalaśa und kalaśi.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-018" data-filt="wrong_entry">
+    <header><div class="hw">kanana → kānana [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>kanana</i> · <b>целевые леммы (subcard)</b> = <i>kānana</i> · <b>печатный заголовок</b> = <i>kanana</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>kanana adj. einäugig H. 453. — Vgl. kāṇa.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-019" data-filt="wrong_entry">
+    <header><div class="hw">kṣuda → kṣudhā [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>kṣuda</i> · <b>целевые леммы (subcard)</b> = <i>kṣudhā</i> · <b>печатный заголовок</b> = <i>kṣuda</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>kṣuda (von kṣud) m. Mehl ŚKDR.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-020" data-filt="wrong_entry">
+    <header><div class="hw">majja → majjā [чужая статья] <span class="badge">чужая статья</span><span class="badge">3 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>majja</i> · <b>целевые леммы (subcard)</b> = <i>majjā</i> · <b>печатный заголовок</b> = <i>majja</i> · строк затронуто: 3 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>majja (von majj) adj. untertauchend; s. uda˚.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-021" data-filt="wrong_entry">
+    <header><div class="hw">maka → makha [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>maka</i> · <b>целевые леммы (subcard)</b> = <i>makha</i> · <b>печатный заголовок</b> = <i>maka</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>maka m. n. gaṇa ardharcādi zu P. 2,4,31.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-022" data-filt="wrong_entry">
+    <header><div class="hw">manorata → manoratha [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>manorata</i> · <b>целевые леммы (subcard)</b> = <i>manoratha</i> · <b>печатный заголовок</b> = <i>manorata</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>manorata m. N. pr. eines buddhistischen Patriarchen LIA. II, Anh. VIII. Wohl fehlerhaft für ˚ratha.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-023" data-filt="wrong_entry">
+    <header><div class="hw">maṣa → māṣa [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>maṣa</i> · <b>целевые леммы (subcard)</b> = <i>māṣa</i> · <b>печатный заголовок</b> = <i>maṣa</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>maṣa in der Stelle: goḥ kṛṣṇasya śuklakṛṣṇāni lohitāni ca romāṇi maṣaṃ (mṛṣṭāni eine Glosse; vgl. maṣmaṣā) kārayitvā ŚĀṄKH. GṚHY. 1,24</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-024" data-filt="wrong_entry">
+    <header><div class="hw">mena → menā [чужая статья] <span class="badge">чужая статья</span><span class="badge">13 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>mena</i> · <b>целевые леммы (subcard)</b> = <i>menā</i> · <b>печатный заголовок</b> = <i>mena</i> · строк затронуто: 13 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>mena s. u. menā.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-025" data-filt="wrong_entry">
+    <header><div class="hw">nila → nīla [чужая статья] <span class="badge">чужая статья</span><span class="badge">1 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>nila</i> · <b>целевые леммы (subcard)</b> = <i>nīla</i> · <b>печатный заголовок</b> = <i>nila</i> · строк затронуто: 1 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>nila m. N. pr. eines Rākṣasa, eines Ministers Vibhīṣaṇa&#x27;s, R. 7,5,43.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-026" data-filt="wrong_entry">
+    <header><div class="hw">paka → pāka [чужая статья] <span class="badge">чужая статья</span><span class="badge">4 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>paka</i> · <b>целевые леммы (subcard)</b> = <i>pāka</i> · <b>печатный заголовок</b> = <i>paka</i> · строк затронуто: 4 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>1. paka = 1. pa in tailapaka.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-027" data-filt="wrong_entry">
+    <header><div class="hw">pariga → parigha [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>pariga</i> · <b>целевые леммы (subcard)</b> = <i>parigha</i> · <b>печатный заголовок</b> = <i>pariga</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>pariga (von gam mit pari) adj. herumgehend P. 8,4,38, Sch.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-028" data-filt="wrong_entry">
+    <header><div class="hw">parihara → parihāra [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>parihara</i> · <b>целевые леммы (subcard)</b> = <i>parihāra</i> · <b>печатный заголовок</b> = <i>parihara</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>parihara s. u. parihāra.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-029" data-filt="wrong_entry">
+    <header><div class="hw">patin → pathin [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>patin</i> · <b>целевые леммы (subcard)</b> = <i>pathin</i> · <b>печатный заголовок</b> = <i>patin</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>patin s. gṛha˚.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-030" data-filt="wrong_entry">
+    <header><div class="hw">patra → pātra [чужая статья] <span class="badge">чужая статья</span><span class="badge">12 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>patra</i> · <b>целевые леммы (subcard)</b> = <i>pātra</i> · <b>печатный заголовок</b> = <i>patra</i> · строк затронуто: 12 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>patra s. pattra.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-031" data-filt="wrong_entry">
+    <header><div class="hw">pramara → pramāṇa [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>pramara</i> · <b>целевые леммы (subcard)</b> = <i>pramāṇa</i> · <b>печатный заголовок</b> = <i>pramara</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>pramara/ (von mar mit pra) m. Tod (?): e\tau me\ gāvau^ prama\rasya^ yu\ktau ṚV. 10,27,20.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-032" data-filt="wrong_entry">
+    <header><div class="hw">prasna → praśna [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>prasna</i> · <b>целевые леммы (subcard)</b> = <i>praśna</i> · <b>печатный заголовок</b> = <i>prasna</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>prasna (von snā mit pra) m. Badebehälter P. 3,3,58, Vārtt. 4, Sch.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-033" data-filt="wrong_entry">
+    <header><div class="hw">ramaṭa → rāmaṭha [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>ramaṭa</i> · <b>целевые леммы (subcard)</b> = <i>rāmaṭha</i> · <b>печатный заголовок</b> = <i>ramaṭa</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>ramaṭa s. ramaṭha.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-034" data-filt="wrong_entry">
+    <header><div class="hw">salya → śalya [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>salya</i> · <b>целевые леммы (subcard)</b> = <i>śalya</i> · <b>печатный заголовок</b> = <i>salya</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>salya und salyaka s. vi˚.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-035" data-filt="wrong_entry">
+    <header><div class="hw">samba → sāmba [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>samba</i> · <b>целевые леммы (subcard)</b> = <i>sāmba</i> · <b>печатный заголовок</b> = <i>samba</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>samba m. = muṣalānala TRIK. 3,3,282. — Vgl. śamba.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-036" data-filt="wrong_entry">
+    <header><div class="hw">sanu → sānu [чужая статья] <span class="badge">чужая статья</span><span class="badge">3 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>sanu</i> · <b>целевые леммы (subcard)</b> = <i>sānu</i> · <b>печатный заголовок</b> = <i>sanu</i> · строк затронуто: 3 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>sanu in 2. sanutar fgg.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-037" data-filt="wrong_entry">
+    <header><div class="hw">satkara → satkāra [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>satkara</i> · <b>целевые леммы (subcard)</b> = <i>satkāra</i> · <b>печатный заголовок</b> = <i>satkara</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>satkara (von satkar) adj. s. a˚ in den Nachträgen.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-038" data-filt="wrong_entry">
+    <header><div class="hw">satta → sattā [чужая статья] <span class="badge">чужая статья</span><span class="badge">3 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>satta</i> · <b>целевые леммы (subcard)</b> = <i>sattā</i> · <b>печатный заголовок</b> = <i>satta</i> · строк затронуто: 3 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>satta partic. von 1. sad; s. das. und vgl. nasatta.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-039" data-filt="wrong_entry">
+    <header><div class="hw">savas → śavas [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>savas</i> · <b>целевые леммы (subcard)</b> = <i>śavas</i> · <b>печатный заголовок</b> = <i>savas</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>savas n. = 2. savana in satya˚.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-040" data-filt="wrong_entry">
+    <header><div class="hw">soṣa → śoṣa [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>soṣa</i> · <b>целевые леммы (subcard)</b> = <i>śoṣa</i> · <b>печатный заголовок</b> = <i>soṣa</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>soṣa (2. sa + ūṣa) adj. mit salziger Erde vermischt YĀJÑ. 1,186.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-041" data-filt="wrong_entry">
+    <header><div class="hw">sravaka → śrāvaka [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>sravaka</i> · <b>целевые леммы (subcard)</b> = <i>śrāvaka</i> · <b>печатный заголовок</b> = <i>sravaka</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>sravaka (wie eben) nom. ag. VOP. 26,41.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-042" data-filt="wrong_entry">
+    <header><div class="hw">sula → śūla [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>sula</i> · <b>целевые леммы (subcard)</b> = <i>śūla</i> · <b>печатный заголовок</b> = <i>sula</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>sula gaṇa balādi zu P. 5,2,136.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-043" data-filt="wrong_entry">
+    <header><div class="hw">sulin → śūlin [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>sulin</i> · <b>целевые леммы (subcard)</b> = <i>śūlin</i> · <b>печатный заголовок</b> = <i>sulin</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>suli/n adj. von sula gaṇa balādi zu P. 5,2,136.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-044" data-filt="wrong_entry">
+    <header><div class="hw">suri → sūri [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>suri</i> · <b>целевые леммы (subcard)</b> = <i>sūri</i> · <b>печатный заголовок</b> = <i>suri</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>suri adj. s. surai.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-045" data-filt="wrong_entry">
+    <header><div class="hw">utsaha → utsāha [чужая статья] <span class="badge">чужая статья</span><span class="badge">3 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>utsaha</i> · <b>целевые леммы (subcard)</b> = <i>utsāha</i> · <b>печатный заголовок</b> = <i>utsaha</i> · строк затронуто: 3 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>utsaha nom. act. von sah mit ud in durutsaha (s. d.)</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-046" data-filt="wrong_entry">
+    <header><div class="hw">utta → uttha [чужая статья] <span class="badge">чужая статья</span><span class="badge">5 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>utta</i> · <b>целевые леммы (subcard)</b> = <i>uttha</i> · <b>печатный заголовок</b> = <i>utta</i> · строк затронуто: 5 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>utta partic. von 2. ud; s. d.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-047" data-filt="wrong_entry">
+    <header><div class="hw">uttapana → utthāpana [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>uttapana</i> · <b>целевые леммы (subcard)</b> = <i>utthāpana</i> · <b>печатный заголовок</b> = <i>uttapana</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>uttapana m. Bez. eines best. Feuers NIRṆAYAS. 30,a,6. fgg.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-048" data-filt="wrong_entry_dup">
+    <header><div class="hw">vasa → vāsā, vāsa, vaśā, vaśa, vasā [дубликация — доказано] <span class="badge">дубликация — доказано</span><span class="badge">20 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>vasa</i> · <b>целевые леммы (subcard)</b> = <i>vāsā, vāsa, vaśā, vaśa, vasā</i> · <b>печатный заголовок</b> = <i>vasa</i> · строк затронуто: 20 (pwg).<br>Одна и та же карточка-двойник лежит в сторе НЕСКОЛЬКО раз — под сабкартами разных целевых лемм. Настоящие статьи целевых лемм в сторе отсутствуют.<br><b>Approve</b> = re-ingest each intended lemma; quarantine the duplicated look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>vasa nom. act. von 5. vas in durvasa.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-049" data-filt="wrong_entry_dup">
+    <header><div class="hw">vasin → vāsin, vaśin [дубликация — доказано] <span class="badge">дубликация — доказано</span><span class="badge">4 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>vasin</i> · <b>целевые леммы (subcard)</b> = <i>vāsin, vaśin</i> · <b>печатный заголовок</b> = <i>vasin</i> · строк затронуто: 4 (pwg).<br>Одна и та же карточка-двойник лежит в сторе НЕСКОЛЬКО раз — под сабкартами разных целевых лемм. Настоящие статьи целевых лемм в сторе отсутствуют.<br><b>Approve</b> = re-ingest each intended lemma; quarantine the duplicated look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>vasin (von vasā) m. Fischotter H. 1350.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-050" data-filt="wrong_entry">
+    <header><div class="hw">vasya → vaśya [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>vasya</i> · <b>целевые леммы (subcard)</b> = <i>vaśya</i> · <b>печатный заголовок</b> = <i>vasya</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>vasya (von 3. vas) adj. anzuziehen: snāta˚ nach einer Waschung KĀTY. ŚR. 7,2,18.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-051" data-filt="wrong_entry">
+    <header><div class="hw">vedika → vedikā [чужая статья] <span class="badge">чужая статья</span><span class="badge">4 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>vedika</i> · <b>целевые леммы (subcard)</b> = <i>vedikā</i> · <b>печатный заголовок</b> = <i>vedika</i> · строк затронуто: 4 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>vedika s. u. 3. vedikā 3).</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-052" data-filt="wrong_entry">
+    <header><div class="hw">vigna → vighna [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>vigna</i> · <b>целевые леммы (subcard)</b> = <i>vighna</i> · <b>печатный заголовок</b> = <i>vigna</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>vigna s. u. vij.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-053" data-filt="wrong_entry">
+    <header><div class="hw">viḍu → vīḍu [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>viḍu</i> · <b>целевые леммы (subcard)</b> = <i>vīḍu</i> · <b>печатный заголовок</b> = <i>viḍu, viḍula</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>viḍu m. AK. 2,8,2,5 fehlerhaft für vidu.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-054" data-filt="wrong_entry">
+    <header><div class="hw">visala → viśāla [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>visala</i> · <b>целевые леммы (subcard)</b> = <i>viśāla</i> · <b>печатный заголовок</b> = <i>visala</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>visala n. = kisala Blattknospe, junger Schoss TRIK. 2,4,4.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-055" data-filt="wrong_entry">
+    <header><div class="hw">vitana → vitāna [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>vitana</i> · <b>целевые леммы (subcard)</b> = <i>vitāna</i> · <b>печатный заголовок</b> = <i>vitana</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>vitana s. āharavitanā.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="k1r-056" data-filt="wrong_entry">
+    <header><div class="hw">yatu → yātu [чужая статья] <span class="badge">чужая статья</span><span class="badge">2 строк</span></div></header>
+    <div class="question"><b>key1</b> = <i>yatu</i> · <b>целевые леммы (subcard)</b> = <i>yātu</i> · <b>печатный заголовок</b> = <i>yatu</i> · строк затронуто: 2 (pwg).<br>Печатный заголовок карточки совпадает с key1-двойником, а не с целевой леммой сабкарты: инжест взял соседнюю статью по уплощённому ключу.<br><b>Approve</b> = re-ingest the intended lemma; quarantine the look-alike rows. <b>Reject</b> = оставить как есть.</div>
+    <div class="panel"><h4>Первая строка карточки (de, IAST)</h4><code>yatu s. yatavya.</code></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Переингест</button>
+      <button class="vote reject" data-vote="reject">&#10060; Оставить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+</main>
+<footer class="hint">Источник: RussianTranslation/pwg_ru/key1_repair_proposals.jsonl · генератор build_key1_repair_sheet.py · стор не тронут (read-only). Keyboard: <kbd>a</kbd> Переингест &middot; <kbd>r</kbd> Оставить
+  &middot; <kbd>d</kbd> defer &middot; <kbd>&darr;</kbd>/<kbd>&uarr;</kbd> next/prev. Votes autosave to
+  this browser's localStorage; click "Download decisions.json" when done (unvoted items export with
+  decision:null).</footer>
+<div class="legend" style="max-width:980px;margin:0 auto 20px;padding:0 20px;color:var(--muted);font-size:12px">
+  <b>Approve</b> = accept the proposed change/answer shown on the card (no separate "approve as-is" —
+  approving means agreeing as written). <b>Reject</b> = keep the current entry/answer unchanged.
+  <b>Defer</b> = not sure yet, decide later. The note field is for requesting a partial tweak instead
+  of an outright reject.
+</div>
+<script>
+(function () {
+  var SHEET_ID = "key1-repair-2026-08-17";
+  var STORE_KEY = 'review-sheet:' + SHEET_ID;
+  var GENERATED = "17-08-2026";
+  var ids = ["k1r-001", "k1r-002", "k1r-003", "k1r-004", "k1r-005", "k1r-006", "k1r-007", "k1r-008", "k1r-009", "k1r-010", "k1r-011", "k1r-012", "k1r-013", "k1r-014", "k1r-015", "k1r-016", "k1r-017", "k1r-018", "k1r-019", "k1r-020", "k1r-021", "k1r-022", "k1r-023", "k1r-024", "k1r-025", "k1r-026", "k1r-027", "k1r-028", "k1r-029", "k1r-030", "k1r-031", "k1r-032", "k1r-033", "k1r-034", "k1r-035", "k1r-036", "k1r-037", "k1r-038", "k1r-039", "k1r-040", "k1r-041", "k1r-042", "k1r-043", "k1r-044", "k1r-045", "k1r-046", "k1r-047", "k1r-048", "k1r-049", "k1r-050", "k1r-051", "k1r-052", "k1r-053", "k1r-054", "k1r-055", "k1r-056"];
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(STORE_KEY) || '{}') || {}; } catch (e) { state = {}; }
+  function tally() {
+    var c = { approve:0, reject:0, defer:0 };
+    ids.forEach(function (id) { var v = state[id] && state[id].decision; if (v && c.hasOwnProperty(v)) c[v]++; });
+    document.getElementById('c-approve').textContent = c.approve;
+    document.getElementById('c-reject').textContent = c.reject;
+    document.getElementById('c-defer').textContent = c.defer;
+    document.getElementById('c-unvoted').textContent = ids.length - c.approve - c.reject - c.defer;
+  }
+  function applyCardUI(card) {
+    var id = card.getAttribute('data-id'); var rec = state[id] || {};
+    card.classList.remove('voted-approve','voted-reject','voted-defer');
+    card.querySelectorAll('button.vote').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-vote') === rec.decision); });
+    card.querySelector('.vote-state').textContent = rec.decision ? rec.decision : 'unvoted';
+    if (rec.decision) card.classList.add('voted-' + rec.decision);
+    var ta = card.querySelector('textarea.note'); if (rec.note && !ta.value) ta.value = rec.note;
+  }
+  function save() { localStorage.setItem(STORE_KEY, JSON.stringify(state)); tally(); }
+  // H1523 residual / csl-pyutil#1 Part 1: always re-read the live textarea on vote
+  // and before export so a second vote click (or a missed `input` event) cannot
+  // drop a note that is still visible in the card.
+  function syncNoteFromDom(id) {
+    state[id] = state[id] || {};
+    var card = document.querySelector('.card[data-id="' + id + '"]');
+    if (!card) return;
+    var ta = card.querySelector('textarea.note');
+    if (ta) state[id].note = ta.value;
+  }
+  function vote(id, d) { syncNoteFromDom(id); state[id].decision = d; save(); }
+  function noteChange(id, t) { state[id] = state[id] || {}; state[id].note = t; save(); }
+  document.querySelectorAll('.card').forEach(function (card) {
+    var id = card.getAttribute('data-id'); applyCardUI(card);
+    card.querySelectorAll('button.vote').forEach(function (btn) {
+      btn.addEventListener('click', function () { vote(id, btn.getAttribute('data-vote')); applyCardUI(card); });
+    });
+    var ta = card.querySelector('textarea.note'); ta.addEventListener('input', function () { noteChange(id, ta.value); });
+  });
+  tally();
+  document.getElementById('downloadBtn').addEventListener('click', function () {
+    ids.forEach(function (id) { syncNoteFromDom(id); });
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    var payload = { sheet_id: SHEET_ID, generated: "17-08-2026", decided: decided, time_total_seconds: __timeTotal(),
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '', time_seconds: __timeFor(id) }; }) };
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type:'application/json' });
+    var url = URL.createObjectURL(blob); var a = document.createElement('a');
+    a.href = url; a.download = SHEET_ID + '_decisions.json'; document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+  });
+  var filterbar = document.getElementById('filterbar');
+  filterbar.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-filter]'); if (!btn) return;
+    filterbar.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active'); var f = btn.getAttribute('data-filter');
+    document.querySelectorAll('.card').forEach(function (card) {
+      var show = true;
+      if (f === 'unvoted') { var id = card.getAttribute('data-id'); show = !(state[id] && state[id].decision); }
+      else if (f !== 'all') { show = card.getAttribute('data-filt') === f; }
+      card.style.display = show ? '' : 'none';
+    });
+  });
+  var cardsEl = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var activeIdx = 0;
+  function visibleCards() { return cardsEl.filter(function (c) { return c.style.display !== 'none'; }); }
+  document.addEventListener('keydown', function (e) {
+    if (e.target.tagName === 'TEXTAREA') return;
+    var vis = visibleCards(); if (!vis.length) return;
+    if (activeIdx >= vis.length) activeIdx = vis.length - 1;
+    var card = vis[activeIdx]; var id = card.getAttribute('data-id');
+    if (e.key === 'a') { vote(id, 'approve'); applyCardUI(card); }
+    else if (e.key === 'r') { vote(id, 'reject'); applyCardUI(card); }
+    else if (e.key === 'd') { vote(id, 'defer'); applyCardUI(card); }
+    else if (e.key === 'ArrowDown') { activeIdx = Math.min(activeIdx + 1, vis.length - 1); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    else if (e.key === 'ArrowUp') { activeIdx = Math.max(activeIdx - 1, 0); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    else return;
+    e.preventDefault();
+  });
+
+  var saveHandle = null, saveTimer = null;
+  function exportPayload() {
+    if (typeof syncNoteFromDom === 'function') {
+      ids.forEach(function (id) { syncNoteFromDom(id); });
+    }
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    return JSON.stringify({ sheet_id: SHEET_ID, generated: new Date().toISOString(), decided: decided, time_total_seconds: __timeTotal(),
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '', time_seconds: __timeFor(id) }; }) }, null, 2);
+  }
+  function scheduleAutosave() {
+    if (!saveHandle) return;
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function () {
+      saveHandle.createWritable().then(function (w) {
+        w.write(exportPayload()).then(function () { w.close(); });
+      }).catch(function () {});
+    }, 1000);
+  }
+  var _origSave = save;
+  save = function () { _origSave(); scheduleAutosave(); };
+  if (window.showSaveFilePicker) {
+    var saveBtn = document.getElementById('saveBtn');
+    saveBtn.style.display = '';
+    saveBtn.addEventListener('click', function () {
+      window.showSaveFilePicker({suggestedName: SHEET_ID + '_decisions.json'}).then(function (h) {
+        saveHandle = h; scheduleAutosave();
+      }).catch(function () {});
+    });
+  }
+
+  var FS_KEY = STORE_KEY + ':fs', FS_DEFAULT = 1.5;
+  function fsGet() {
+    var v = parseFloat(localStorage.getItem(FS_KEY));
+    return (isFinite(v) && v >= 0.7 && v <= 3) ? v : FS_DEFAULT;
+  }
+  function fsApply(v) {
+    document.documentElement.style.setProperty('--fs', String(v));
+    document.getElementById('fsVal').textContent = Math.round(v * 100) + '%';
+  }
+  function fsSet(v) {
+    v = Math.min(3, Math.max(0.7, Math.round(v * 10) / 10));
+    localStorage.setItem(FS_KEY, String(v)); fsApply(v);
+  }
+  fsApply(fsGet());
+  document.getElementById('fsDown').addEventListener('click', function () { fsSet(fsGet() - 0.1); });
+  document.getElementById('fsUp').addEventListener('click', function () { fsSet(fsGet() + 0.1); });
+
+  var TIME_KEY = STORE_KEY + ':timing';
+  var __timing = { total: 0, per: {} };
+  try {
+    var __t0 = JSON.parse(localStorage.getItem(TIME_KEY) || 'null');
+    if (__t0 && typeof __t0.total === 'number') __timing = __t0;
+  } catch (e) {}
+  if (!__timing.per) __timing.per = {};
+  function __timeFor(id) { return Math.round(__timing.per[id] || 0); }
+  function __timeTotal() { return Math.round(__timing.total || 0); }
+  function __timeFmt(s) {
+    s = Math.round(s); var m = Math.floor(s / 60);
+    return (m >= 60 ? Math.floor(m / 60) + ':' + ('0' + (m - Math.floor(m / 60) * 60)).slice(-2) : m)
+      + ':' + ('0' + (s - m * 60)).slice(-2);
+  }
+  function __timeShow() {
+    var el = document.getElementById('t-total');
+    if (el) el.textContent = __timeFmt(__timing.total);
+  }
+  var __timeLast = Date.now(), __timeDirty = 0;
+  var __timeCards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  function __timeActiveId() {
+    var mid = window.innerHeight / 2, best = null, bestd = Infinity;
+    for (var i = 0; i < __timeCards.length; i++) {
+      var c = __timeCards[i];
+      if (c.style.display === 'none') continue;
+      var r = c.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > window.innerHeight) continue;
+      var center = (Math.max(r.top, 0) + Math.min(r.bottom, window.innerHeight)) / 2;
+      var d = Math.abs(center - mid);
+      if (d < bestd) { bestd = d; best = c; }
+    }
+    return best ? best.getAttribute('data-id') : null;
+  }
+  function __timeFlush() {
+    try { localStorage.setItem(TIME_KEY, JSON.stringify(__timing)); } catch (e) {}
+  }
+  // V12 (H2858): the clock is stoppable. `paused` rides in the same persisted
+  // record as the totals, so a reviewer who pauses and closes the tab does not
+  // come back to a clock that ran all night.
+  var __timePaused = !!__timing.paused;
+  // V15 (H2887): a legacy record carries `paused` and no reason — read it as
+  // manual, so an auto-rearm can never lift a pause the curator set by hand.
+  var __timePauseReason = __timePaused ? (__timing.pause_reason || 'manual') : null;
+  function __timePauseSet(v, reason) {
+    __timePaused = !!v;
+    __timing.paused = __timePaused;
+    __timePauseReason = __timePaused ? (reason || 'manual') : null;
+    __timing.pause_reason = __timePauseReason;
+    __timeLast = Date.now(); __timeFlush();
+  }
+  setInterval(function () {
+    var now = Date.now(), dt = (now - __timeLast) / 1000;
+    __timeLast = now;
+    if (document.hidden || __timePaused || dt <= 0 || dt > 4) return;
+    __timing.total += dt;
+    var id = __timeActiveId();
+    if (id) __timing.per[id] = (__timing.per[id] || 0) + dt;
+    __timeDirty += dt;
+    if (__timeDirty >= 5) { __timeDirty = 0; __timeFlush(); }
+    __timeShow();
+  }, 1000);
+  document.addEventListener('visibilitychange', function () { __timeLast = Date.now(); });
+  window.addEventListener('beforeunload', __timeFlush);
+  __timeShow();
+
+  var HANDIN_SAID = 'handed in {n} of {total} — clock stopped, the rest stay saved in this browser';
+  var __handinBtn = document.getElementById('handinBtn');
+  var __handinSaid = document.getElementById('handinSaid');
+
+  var __pauseBtn = document.getElementById('pauseBtn');
+  function __pauseShow() {
+    __pauseBtn.classList.toggle('on', __timePaused);
+    __pauseBtn.innerHTML = __timePaused ? '&#9654;' : '&#9208;';
+    var chip = document.querySelector('.tally .time');
+    if (chip) chip.classList.toggle('paused', __timePaused);
+  }
+  __pauseBtn.addEventListener('click', function () { __timePauseSet(!__timePaused); __pauseShow(); });
+  __pauseShow();
+  __handinBtn.addEventListener('click', function () {
+    ids.forEach(function (id) { syncNoteFromDom(id); });
+    __timePauseSet(true, 'export'); __pauseShow();
+    var items = ids.map(function (id) {
+      var rec = state[id] || {};
+      var item = { id: id, decision: rec.decision || null };
+      item.note = rec.note || '';
+      item.time_seconds = __timeFor(id);
+      return item;
+    });
+    var decided = items.filter(function (it) { return !!it.decision; }).length;
+    var payload = { sheet_id: SHEET_ID, generated: GENERATED, decided: decided,
+      partial: true, complete: false, undecided: items.length - decided, items: items };
+    payload.time_total_seconds = __timeTotal();
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type:'application/json' });
+    var url = URL.createObjectURL(blob); var a = document.createElement('a');
+    a.href = url; a.download = SHEET_ID + '_decisions_partial.json';
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+    __handinSaid.textContent = HANDIN_SAID.replace('{n}', decided).replace('{total}', items.length);
+  });
+
+  // --- V15 session flow (H2887) ---------------------------------------------
+  var FLOW_IDLE_SECONDS = 90;
+  var FLOW_ETA = 'about {minutes} min left';
+  var FLOW_ETA_ROUGH = 'about {minutes} min left (rough)';
+  var FLOW_CLOCK_RUNNING = 'running';
+  var FLOW_CLOCK_PAUSED = 'paused';
+  var FLOW_CLOCK_IDLE = 'idle';
+  var FLOW_PROGRESS = 'decided {n} of {total}';
+  var FLOW_UNDO_SAID = 'undo: {id} back to {decision}';
+  var FLOW_UNDO_EMPTY = 'nothing to undo';
+  var FLOW_UNDO_NONE = 'no decision';
+  var FLOW_RESUMED = 'resumed at card {n} of {total}';
+  var __flowToast = document.getElementById('flowToast');
+  var __flowToastTimer = null;
+  function __flowSay(text) {
+    if (!__flowToast) return;
+    __flowToast.textContent = text;
+    __flowToast.classList.add('on');
+    clearTimeout(__flowToastTimer);
+    __flowToastTimer = setTimeout(function () { __flowToast.classList.remove('on'); }, 2600);
+  }
+  var __flowCenterId = __timeActiveId;
+  function __flowIdxOf(id) {
+    var vis = visibleCards();
+    for (var i = 0; i < vis.length; i++) {
+      if (vis[i].getAttribute('data-id') === id) return i;
+    }
+    return -1;
+  }
+  function __flowCardById(id) {
+    var found = null;
+    cardsEl.forEach(function (c) { if (c.getAttribute('data-id') === id) found = c; });
+    return found;
+  }
+  // The visible ring IS the target of a/r/d — that identity is the whole point
+  // of this layer, so nothing may move `activeIdx` without repainting.
+  function __flowPaint() {
+    cardsEl.forEach(function (c) { c.classList.remove('kbd-active'); });
+    var vis = visibleCards();
+    if (!vis.length) return;
+    if (activeIdx >= vis.length) activeIdx = vis.length - 1;
+    if (activeIdx < 0) activeIdx = 0;
+    vis[activeIdx].classList.add('kbd-active');
+  }
+  function __flowSync() {
+    var id = __flowCenterId();
+    if (id) { var at = __flowIdxOf(id); if (at !== -1) activeIdx = at; }
+    __flowPaint();
+  }
+  var __flowScrollTimer = null;
+  window.addEventListener('scroll', function () {
+    if (__flowScrollTimer) return;
+    __flowScrollTimer = setTimeout(function () { __flowScrollTimer = null; __flowSync(); }, 120);
+  });
+  // Both bars reset `activeIdx` to 0 as they re-filter; re-derive it from the
+  // viewport on the next tick, or defect 2 returns wearing a filter.
+  ['filterbar'].forEach(function (barId) {
+    var bar = document.getElementById(barId);
+    if (bar) bar.addEventListener('click', function () { setTimeout(__flowSync, 0); });
+  });
+  function __flowClockShow() {
+    var el = document.getElementById('t-state');
+    if (!el) return;
+    var label = FLOW_CLOCK_RUNNING;
+    if (__timePaused) label = (__timePauseReason === 'idle') ? FLOW_CLOCK_IDLE : FLOW_CLOCK_PAUSED;
+    el.textContent = label;
+    el.classList.toggle('idle', !!__timePaused && __timePauseReason === 'idle');
+  }
+  // The V12 ⏸ button drives the clock straight through __timePauseSet, so the
+  // three-state label has to ride along with V12's own repaint or it goes stale
+  // the moment the curator pauses by hand.
+  var __flowOrigPauseShow = __pauseShow;
+  __pauseShow = function () { __flowOrigPauseShow(); __flowClockShow(); };
+  var __flowIdleTimer = null;
+  function __flowIdleArm() {
+    clearTimeout(__flowIdleTimer);
+    __flowIdleTimer = setTimeout(function () {
+      if (__timePaused) return;
+      __timePauseSet(true, 'idle');
+    __pauseShow();
+      __flowClockShow();
+    }, FLOW_IDLE_SECONDS * 1000);
+  }
+  function __flowRearm() {
+    if (__timePaused && __timePauseReason !== 'manual') {
+      __timePauseSet(false);
+    __pauseShow();
+    }
+    __flowClockShow();
+    __flowIdleArm();
+  }
+  // The export GESTURES, caught in the capture phase on `document` so this runs
+  // before any handler bound to the buttons themselves — including the strict
+  // layer's, which calls stopImmediatePropagation() on its own element.
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    if (!t || !t.closest || !t.closest('#downloadBtn, #saveBtn, #handinBtn')) return;
+    __timePauseSet(true, 'export');
+    __pauseShow();
+    __flowClockShow();
+  }, true);
+  ['keydown', 'pointerdown', 'scroll'].forEach(function (evt) {
+    document.addEventListener(evt, function () { __flowRearm(); }, true);
+  });
+  var __flowUndoStack = [];
+  function __flowUndo() {
+    var last = __flowUndoStack.pop();
+    if (!last) { __flowSay(FLOW_UNDO_EMPTY); return; }
+    state[last.id] = state[last.id] || {};
+    if (last.prev) state[last.id].decision = last.prev;
+    else delete state[last.id].decision;
+    save();
+    var card = __flowCardById(last.id);
+    if (card) {
+      applyCardUI(card);
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      var at = __flowIdxOf(last.id);
+      if (at !== -1) activeIdx = at;
+      __flowPaint();
+    }
+    __flowSay(FLOW_UNDO_SAID.replace('{id}', last.id)
+      .replace('{decision}', last.prev || FLOW_UNDO_NONE));
+  }
+  var __flowUndoBtn = document.getElementById('flowUndoBtn');
+  if (__flowUndoBtn) __flowUndoBtn.addEventListener('click', __flowUndo);
+  function __flowFirstUndecided() {
+    var vis = visibleCards();
+    for (var i = 0; i < vis.length; i++) {
+      var id = vis[i].getAttribute('data-id');
+      if (!(state[id] && state[id].decision)) return i;
+    }
+    return -1;
+  }
+  function __flowAdvance() {
+    var at = __flowFirstUndecided();
+    if (at === -1) { __flowPaint(); return; }
+    activeIdx = at;
+    visibleCards()[at].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    __flowPaint();
+  }
+  function __flowDecided() {
+    var n = 0;
+    ids.forEach(function (id) { if (state[id] && state[id].decision) n++; });
+    return n;
+  }
+  function __flowEtaText(decided, total) {
+    var secs = [];
+    ids.forEach(function (id) {
+      if (!(state[id] && state[id].decision)) return;
+      var s = __timing.per[id] || 0;
+      if (s > 0) secs.push(s);
+    });
+    if (!secs.length) return '';
+    secs.sort(function (a, b) { return a - b; });
+    var mid = Math.floor(secs.length / 2);
+    var med = (secs.length % 2) ? secs[mid] : (secs[mid - 1] + secs[mid]) / 2;
+    var left = Math.max(0, total - decided);
+    if (!left) return '';
+    var minutes = Math.max(1, Math.round(med * left / 60));
+    return (secs.length >= 5 ? FLOW_ETA : FLOW_ETA_ROUGH).replace('{minutes}', minutes);
+  }
+  function __flowProgress() {
+    var n = __flowDecided(), total = ids.length;
+    var txt = document.getElementById('flowProgText');
+    if (txt) txt.textContent = FLOW_PROGRESS.replace('{n}', n).replace('{total}', total);
+    var bar = document.getElementById('flowBar');
+    if (bar) bar.style.width = (total ? Math.round(100 * n / total) : 0) + '%';
+    var etaEl = document.getElementById('flowEta');
+    if (etaEl) etaEl.textContent = __flowEtaText(n, total);
+  }
+  var __flowOrigTally = tally;
+  tally = function () { __flowOrigTally(); __flowProgress(); };
+  var __flowOrigVote = vote;
+  vote = function (id, d) {
+    var rec = state[id] || {};
+    __flowUndoStack.push({ id: id, prev: rec.decision || null });
+    if (__flowUndoStack.length > 100) __flowUndoStack.shift();
+    __flowOrigVote(id, d);
+    __flowRearm();
+    __flowAdvance();
+  };
+  var __flowOrigNote = noteChange;
+  noteChange = function (id, t) { __flowOrigNote(id, t); __flowRearm(); };
+  document.addEventListener('keydown', function (e) {
+    if (e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'z' || e.key === 'Z') { __flowUndo(); e.preventDefault(); return; }
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') __flowPaint();
+  });
+  __flowProgress();
+  __flowSync();
+  __flowClockShow();
+  __flowIdleArm();
+  (function () {
+    if (!__flowDecided()) return;
+    var at = __flowFirstUndecided();
+    if (at === -1) return;
+    var vis = visibleCards();
+    activeIdx = at;
+    vis[at].scrollIntoView({ block: 'center' });
+    __flowPaint();
+    __flowSay(FLOW_RESUMED.replace('{n}', at + 1).replace('{total}', vis.length));
+  })();
+})();
+</script>
+<div class="flowtoast" id="flowToast" role="status"></div>
+</body>
+</html>
