@@ -18,6 +18,30 @@ Trigger: the pwg_ru compound-position glyph vote (лист `h2805_q3_deploy` on 
 [#1768](https://github.com/gasyoun/SanskritLexicography/pull/1768) ·
 [#1769](https://github.com/gasyoun/SanskritLexicography/pull/1769).
 
+## 0. Заключение — one conclusion over all the typographic aspects
+
+Два века санскритской лексикографии знают ровно **четыре стратегии** показать
+читателю устройство сложного слова, и все четыре решают РАЗНЫЕ задачи, а не
+конкурируют за одну: **кружок** экономит набор (не перепечатывай общее —
+элизия у PW/Каппеллера/Apte/Кочергиной, усечение у PWG/Schmidt/MW-1872);
+**шов в лемме** печатает сам разбор (дефис Грассмана → тире MW-1899 →
+транслит Макдонелла), и только этой линии нужны спецзнаки для сандхи-сплава
+(`‿` у MD, внутрисловный `˚` у MW); **ведущий дефис** классифицирует основу
+как связанную (Уитни, унаследовано леммами Кочергиной); **прозаический
+разбор** объясняет (E. Уилсона → i. e. Бенфея → скобки PWG). Знак при этом
+почти не менялся — менялась его грамматика: один и тот же петербургский Kreis
+значит «не повторяю» у Бётлингка, «допиши слово» у него же в цитатах, «здесь
+шов, но сандхи склеило» у Monier-Williams и «позиция в композите» у
+Макдонелла (`˚—`/`—˚`). Следствие для нас: (1) парсер обязан знать словарь и
+позицию знака, прежде чем разворачивать кружок — «элизия» верна почти всегда
+для CAE/CCS/PW и лишь в ~¼ случаев для PWG; (2) заголовочное слово везде
+слитное — членение живёт в `<k2>`/теле, и любой census, читающий `<k1>`,
+слеп; (3) для карточек pwg_ru выбор глифа `˚` — не вкусовщина, а
+присоединение к главной линии традиции, а прецедент пометы ПОЗИЦИИ — пара
+Макдонелла, где начало/конец различаются порядком знаков, не новым глифом.
+Десять следующих замеров того же метода закреплены хэндоффами H2978–H2987
+(§5 ниже).
+
 ## 1. The four traditions, in one map
 
 | Strategy | Sign | Dictionaries | What it means |
@@ -125,7 +149,18 @@ not profiled (same method applies; markup per dict).
 
 Each is a §553-style pass: pick the marker, count it in each dictionary's own
 markup, sample specimens, name the residue. Ordered by expected value for
-pwg_ru / kosha work:
+pwg_ru / kosha work. **All ten are minted as handoffs (17-08-2026), one per
+item in this order:**
+[H2978](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2978-Sonnet_SanskritLexicography_typography-census-accent-digitization_17.08.26.md) (Sonnet, accent) ·
+[H2979](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2979-Sonnet_SanskritLexicography_typography-census-homonym-splitting_17.08.26.md) (Sonnet, homonyms) ·
+[H2980](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2980-Opus_SanskritLexicography_typography-census-sense-hierarchy-depth_17.08.26.md) (Opus, sense depth) ·
+[H2981](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2981-Sonnet_SanskritLexicography_typography-census-citation-density_17.08.26.md) (Sonnet, citations) ·
+[H2982](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2982-Sonnet_SanskritLexicography_typography-census-xref-conventions_17.08.26.md) (Sonnet, xrefs) ·
+[H2983](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2983-Fable_SanskritLexicography_typography-census-kosha-devices_17.08.26.md) (Fable, kośa devices) ·
+[H2984](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2984-Sonnet_SanskritLexicography_typography-census-root-notation_17.08.26.md) (Sonnet, root notation) ·
+[H2985](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2985-Sonnet_SanskritLexicography_typography-census-inflection-abbreviation_17.08.26.md) (Sonnet, inflection) ·
+[H2986](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2986-Haiku_SanskritLexicography_typography-census-prosody-marks_17.08.26.md) (Haiku, prosody) ·
+[H2987](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2987-Sonnet_SanskritLexicography_typography-census-gloss-language-layering_17.08.26.md) (Sonnet, gloss languages).
 
 1. **Accent digitization** — `/` (udātta) and `\` (svarita) in `<k2>` and
    bodies: which dicts carry Vedic accent, on what fraction of lemmas, and
