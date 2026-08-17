@@ -1,0 +1,97 @@
+name: Overlay tripwire
+
+# H2891, wave 1 of the Q7 data-integrity programme.
+#
+# The pwg_ru canonical store is 26 MB and gitignored (.gitignore line 29), so
+# CI can never hash it. Three of its writers have no lock and no reviewed gate
+# at all -- including run_batch.py, which is the code that CREATES every
+# reviewer stamp it can also erase. That is why review work has gone missing
+# here before without anything turning red.
+#
+# So this job checks a COMMITTED PROJECTION of the store: the key fields plus
+# the review stamps of the rows the census predicate calls human-reviewed, with
+# the free-text human_review body reduced to a digest so nothing unpublished
+# lands in a public repo. A reformat or an edit to unreviewed content is
+# invisible to it; a dropped reviewer stamp is not.
+#
+# RED means a reviewed row moved without an acknowledgement. The fix is one
+# commit, not a re-run:
+#   python RussianTranslation/src/build_integrity_extract.py --pin \
+#          --reason "what changed and why" --updated DD-MM-YYYY
+# and if the change was NOT intended, restore the rows first -- do not bump.
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - "RussianTranslation/data/integrity/**"
+      - "RussianTranslation/src/build_integrity_extract.py"
+      - ".github/workflows/overlay-tripwire.yml"
+  pull_request:
+    paths:
+      - "RussianTranslation/data/integrity/**"
+      - "RussianTranslation/src/build_integrity_extract.py"
+      - ".github/workflows/overlay-tripwire.yml"
+  schedule:
+    # Weekly, because a path filter only fires when the extract itself is
+    # touched -- and the failure mode being watched is a writer that changes
+    # reviewed data and does NOT regenerate the extract.
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: overlay-tripwire-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pwg-ru-overlay:
+    name: pwg_ru review overlay
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      # Pinned to the H2891 feature-branch SHA while
+      # https://github.com/sanskrit-lexicon/csl-pyutil/pull/28 is open.
+      # Retarget to the v0.15.0 tag once it merges.
+      - name: Install the shared tripwire checker
+        run: |
+          pip install "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@0b42b7ff8a96e4190031be52d70452f7ed378e8f"
+      - name: Check the committed review overlay against its pin
+        run: python RussianTranslation/src/build_integrity_extract.py --check
+      - name: Prove the live store is still gitignored
+        # The tripwire exists so the store can stay out of git. A commit that
+        # "fixes" a red run by committing the 26 MB store would defeat it, so
+        # that is checked here rather than trusted to review.
+        run: |
+          if git ls-files --error-unmatch RussianTranslation/src/pwg_ru_translated.jsonl 2>/dev/null; then
+            echo "::error::the live pwg_ru store is TRACKED — it must stay gitignored"
+            exit 1
+          fi
+          git check-ignore -v RussianTranslation/src/pwg_ru_translated.jsonl \
+            || { echo "::error::pwg_ru_translated.jsonl is no longer gitignored"; exit 1; }
+      - name: Prove the extract carries no free-text payload
+        # human_review is watched but must never be published verbatim.
+        run: |
+          python - <<'PY'
+          import json, sys
+          path = "RussianTranslation/data/integrity/pwg_ru_review_overlay.jsonl"
+          bad = []
+          for n, line in enumerate(open(path, encoding="utf-8"), 1):
+              if not line.strip():
+                  continue
+              row = json.loads(line)
+              value = row.get("human_review")
+              if value is not None and not (
+                  isinstance(value, str) and value.startswith("sha256:")
+              ):
+                  bad.append(n)
+          if bad:
+              print("::error::human_review is not redacted on line(s) %s" % bad)
+              sys.exit(1)
+          print("extract carries digests only")
+          PY
