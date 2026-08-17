@@ -6748,4 +6748,40 @@ the "bound second member" bit.
 > (0/136); specimens gra.txt L412–454, koch.jsonl rows for -zWIvi/-varzIya/a-.
 > Kochergina provenance: measured profile + documented Petersburg publication
 > chain; her print's front matter not re-read this pass.
-> §557 takes the next number.
+### §557. Benfey analyzes every second entry in prose (`i. e. apa-car + in`, 9 168×) and keeps the ring for conjectures; Mylius has no measurable source in the org — named gap, not a shrug
+
+🟢 **Benfey (1866) is a third analytical pole, distinct from both Böhtlingk's
+ring and Grassmann's lemma-hyphen.** Measured over `ben.txt` (17 316 entries):
+
+- **9 168 entries — 53 % — open with a prose analysis** `<ab>i. e.</ab>` giving
+  the derivation with hyphens for compound seams and `+` for suffixes, and with
+  **sandhi undone**: `abhyantara, i. e. abhi-antara` · `apacārin, i. e.
+  apa-car + in` · `abhrāvakāśika, i. e. abhra-avakāśa + ika` · `āgatva, i. e.
+  ā-ga + tva (vb. gam)`. Counts: 10 884 `+`-joins and 9 353 hyphen-bearing
+  analysis spans inside `{%…%}`. This is richer than PWG's `(agni + hotra)`
+  (§554): Benfey decomposes to derivational morphology, not just the compound
+  seam, and resolves the sandhi in the analysis.
+- **The headword stays solid** (0 hyphens in 17 310 `<k2>`, §556's lesson
+  applied) — the analysis lives in the body, unlike Grassmann/MW.
+- **The ring is marginal and bidirectional: 506 total** (255 leading / 221
+  trailing inside `{%…%}` spans), and its habitat is *text-critical notes*, not
+  compound runs: `read {%ābhy˚%}` · `corr. {%˚cāriṇaḥ%}` · `instead of
+  {%˚śnīy˚%}, on account of the metre` · `{%cā˚%} must be read instead of
+  {%nā˚%}`. Benfey uses the Kreis the way PWG's *trailing* majority does
+  (§554) — word truncation in citations — at 1/30th the density.
+
+**Mylius (Wörterbuch Sanskrit-Deutsch, 1975): cannot be measured here — the
+org holds no digitization of his dictionary's structure.** He exists in the org
+exactly once, as an *unmarked, cannot-be-isolated* rights-risk source of the
+ReverseDictionary (H1153 rights ledger: his contribution carries no source
+code, so it cannot even be subtracted). Any statement about his compound
+typography would be from memory, not data — the census answer for Mylius is
+**"no source, no claim"**; measuring him needs a scan/copy of the printed book
+(in copyright, so acquisition is a separate rights-aware step, not a scrape).
+
+> Fable 5 (`claude-fable-5`) · 17-08-2026 · counts over ben.txt: `<ab>i.
+> e.</ab>` 9 168, `+`-joins in `{%…%}` 10 884, hyphen-analysis spans 9 353,
+> rings 506 (255 `{%˚` / 221 `˚%}`); specimens ben.txt L1550, L2992, L4080,
+> L4205, L5834, L6659. Mylius: absence verified against csl-orig/v02 dict list
+> and hub_grep (only H1153/H270 rights rows).
+> §558 takes the next number.
