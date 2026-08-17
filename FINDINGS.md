@@ -6885,4 +6885,49 @@ consumer, группирующий стор по `key1`, смешивает ст
 
 > Fable 5 (`claude-fable-5`) · 17-08-2026 · верификация декода subcard по всем
 > 11 603 строкам + выборочное сличение de-текста; см. §559.
-> §561 takes the next number.
+### §561. Whitney has no ring at all — his device is the leading hyphen on bound stems (Roots 1885) and analysis-only hyphenation (Grammar); attested compounds are quoted solid with accent
+
+🟢 **Sixth entry of the §553–§558 series: Böhtlingk's two dictionaries vs
+Whitney.** Whitney is a different *kind* of book on both counts, and his
+typography follows the function:
+
+**Roots 1885 (read from the print scan
+[csl-whitroot/jpg/whit-023-kft2.jpg](https://github.com/sanskrit-lexicon/csl-whitroot/blob/master/jpg/whit-023-kft2.jpg),
+p. 23, the kṛ/kṛt/kṛp/kṛś/kṛṣ block).** Nominal compounds are not registered
+at all — the unit is the root, with preverb combinations as a bare upasarga
+list (the org's own
+[roots-with-upasargas.txt](https://github.com/sanskrit-lexicon/csl-whitroot/blob/master/misc/roots-with-upasargas.txt):
+`√ 1 kṛ (skṛ) "make" (adhi, anu, apa, abhi, ā, upa, ni, nis, pari, pra, vi,
+sam)`). In the `Deriv.:` columns, **a leading hyphen marks a stem that occurs
+only as the final member of a compound**: `-kartin c.`, `-karttṛ E.+`,
+`-kṛnta B.`, `-kṛṣya s.+`, `-kraṣṭṛ c.`, `karṣin, -ṣí B.+` — free-standing
+stems sit solid beside them (`kartá v.+`, `kṛntátra v.B.`). No ring, no
+degree, anywhere; a cited preverb-compound word is printed solid
+(`Samskṛtatrá v¹`).
+
+**Grammar (2nd/3rd ed.; measured over
+[WhitneyRoots/src/wg_text.txt](https://github.com/gasyoun/WhitneyRoots/blob/main/src/wg_text.txt)).**
+Attested compounds are QUOTED SOLID with their accent — `devasenā́`,
+`yamadūtá`, `jīvaloká`, `brahmagavī́`, `mitrā́váruṇā`, `indrāgnī́` (§1264,
+§1255 examples). Hyphens appear in exactly two analytic functions: (1)
+sandhi-resolved decomposition in parentheses, Benfey-style — `rājendra
+(rāja-indra)`, `maharṣiḥ (mahā-ṛṣiḥ)`, and occasional analytic spellings like
+`deva-nāgarī`; (2) leading-hyphen citation of bound members — `-arthe and
+-kṛte` (§1116 adverbial locatives), `-kṛtya, -çrútya`, and the index
+convention `-kṛt, see 1105`. **OCR caveat, named:** wg_text.txt line-wrap
+hyphens (`indra-` / `dhanús` across a break) look identical to analytic
+hyphens — any automated count over this file must join wrapped lines first.
+
+**The contrast with PW/PWG (§554) in one line:** Böhtlingk abbreviates
+(ring = "do not reprint what is shared"), Whitney classifies (hyphen = "this
+stem is bound") — the Petersburg ring's elision job simply has no equivalent
+in Whitney because his book never lists compound runs to abbreviate.
+Kochergina's hyphen-led lemmas (`-ṣṭhīvi`, §556 use 2) sit on Whitney's line
+of the tradition, while her ° sits on Böhtlingk's — she inherited both.
+
+> Fable 5 (`claude-fable-5`) · 17-08-2026 · print scan whit-023 (p. 23) read
+> directly; wg_text.txt specimens L682, L2045–2047, L4050, L18955, L20861,
+> L21729–21755, L23245–23247; upasarga list csl-whitroot/misc. The Roots
+> full text is NOT digitized in the org (scan images + root inventory only) —
+> the scan page is the evidence of record for the hyphen convention.
+> §562 takes the next number.
