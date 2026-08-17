@@ -1,4 +1,4 @@
 # RussianTranslation-only extras (do not add to the repo-root requirements.txt).
 # Official OpenAI Python SDK — DeepSeek chat/completions stream client (H2674 W0).
 # Pin stays on 1.x: Chat Completions + stream_options.include_usage.
-openai>=1.55.0,<2
+openai>=3.0.0,<4
