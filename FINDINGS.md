@@ -6784,4 +6784,53 @@ typography would be from memory, not data — the census answer for Mylius is
 > rings 506 (255 `{%˚` / 221 `˚%}`); specimens ben.txt L1550, L2992, L4080,
 > L4205, L5834, L6659. Mylius: absence verified against csl-orig/v02 dict list
 > and hub_grep (only H1153/H270 rights rows).
-> §558 takes the next number.
+### §558. Wilson closes 89 % of entries with a prose `E.` etymology and uses no graphic device at all; Macdonell runs FOUR coordinated devices — including `˚—`/`—˚` as a grammatical notation for position-in-compound
+
+🟢 **Fifth entry of the §553–§557 series; these two close the majors.**
+
+**Wilson (1832/1855) is the prose-etymology pole, before any graphic device
+existed in Sanskrit–English lexicography.** 0 rings, 0 degrees, `<k2>` solid
+(0/44 577); instead **39 713 of 44 577 entries — 89 % — end with an
+`<ab>E.</ab>` etymology section**: `agnihotra … E. agni and hotra oblation
+with fire, burnt offerings` (wil.txt L312). The leading-hyphen forms in his
+bodies (`({#-traM#})`, `({#-traH#})`) abbreviate *inflection*, not compound
+members. Benfey's `i. e.` analysis (§557) is Wilson's `E.` condensed and made
+morphological; MW grew out of Wilson's chair — the English line starts here,
+analysis in prose, headword untouched.
+
+**Macdonell (1893) is the most engineered typography in the whole census —
+four devices with distinct semantics** (md.txt, 20 749 entries):
+
+1. **~13 119 hyphenated transliterated lemmas**: the SLP1 headword stays solid
+   but the romanized repeat carries the analysis with accent —
+   `agni-hotrá`, `agni-hotra-hávaṇī` (L1147–L1160). Grassmann's seam-in-lemma
+   (§556) adopted into a classical-Sanskrit concise dictionary.
+2. **2 852 underties `‿`** marking the sandhi-fused seam: `a-kravya‿ad`
+   (L596) — the same problem MW-1899 solves with its 6 935 mid-word rings
+   (§555), *older* (1893 < 1899) and with a dedicated sign instead of an
+   overloaded ring.
+3. **`˚—` (409) and `—˚` (4 258) as positional grammar labels**: `˚—` = "as
+   prior member of a compound" (`a-kāraṇa … ˚—, -tas, -m` L304), `—˚` = "at
+   the end of compounds" (`akṣa m. n. organ of sense: —˚ = ákṣi, eye` L652).
+   The ring+dash pair here is not abbreviation — it is a **grammatical
+   notation for position-in-compound**, the exact semantic the pwg_ru
+   compound-position marker (h2805 Q3) encodes; Macdonell is its closest
+   historical precedent in the census.
+4. Classic elision rings for sub-forms: `{#˚da#} -da` (137 leading in `{#…#}`),
+   plus the prefix lemma `a˚ / an˚` (L11–12).
+
+**Practical residue:** (a) Macdonell's translit layer, not his SLP1 `<k2>`, is
+where his analysis lives — a §553-style census must scan the body translit for
+md (third markup correction after MW §555 and GRA §556); (b) the `˚—`/`—˚`
+pair is prior art for any "какой глиф ставим на позицию в композите" decision
+— it distinguishes *initial* vs *final* position with one sign-order flip;
+(c) `‿` vs mid-word ring vs nothing is a three-way split (md/mw/everyone else)
+for the sandhi-fused seam — crosswalks between md and mw lemma analyses must
+normalize it.
+
+> Fable 5 (`claude-fable-5`) · 17-08-2026 · counts over wil.txt/md.txt:
+> `<ab>E.</ab>` 39 713/44 577; md underties U+203F 2 852, `<ab>˚—</ab>` 409,
+> `—˚` 4 258, rings 4 827, hyphenated translit lemmas ~13 119 (regex over the
+> post-`¦` lemma repeat); specimens wil.txt L312, md.txt L11–12, L304, L324,
+> L596, L652, L1147–1160.
+> §559 takes the next number.
