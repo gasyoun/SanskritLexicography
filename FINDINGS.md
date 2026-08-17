@@ -6965,4 +6965,33 @@ arśas, aśru, kalaśa, menā, parihāra, rāmaṭha, vedikā). Детектор
 > (key1 / subcard-декод / печатный заголовок + iast через sanskrit_util);
 > дубликация доказана идентичными (sense_tag, de)-наборами под разными
 > сабкартами; полные дампы vasa/bara в сессии H2882-продолжении.
-> §563 takes the next number.
+> (superseded: §563 assigned below)
+
+### §563. Symmetric akshara word-squares over inflected beginner vocabulary are structurally near-infeasible — word-medial syllables almost never begin words
+
+Measured while composing a 4×4 "sarvatobhadra-lite" for
+[/crossword/bandha/](https://samskrtam.ru/crossword/bandha/) (H2944): over a
+curated 74-form pool of 4-akshara beginner word forms (stems, textbook
+inflections, transparent compounds; register grounded in kosha
+`lemma_frequency.tsv` core_rank), BOTH search modes returned **0 solutions** —
+(a) symmetric square (rows = columns, each row a real word), (b) double word
+square (rows and columns independent words, prefix-pruned DFS). The finder was
+self-tested against a synthetic known-good square before trusting the zero.
+
+Cause is structural, not pool size: Sanskrit inflection concentrates
+word-INITIAL syllables on a small CV set (`ka/va/na/ga/sa/ma…`) while
+word-MEDIAL syllables are dominated by conjuncts and matra-heavy shapes
+(`ṣya`, `sya`, `nā`, `ne`, `ccha`) that essentially never begin a word — yet a
+square needs every medial syllable of one word to head another. Enlarging the
+pool does not fix the intersection; classical sarvatobhadras evade it by using
+CONTINUOUS verse text under sandhi (full kāvya difficulty), not dictionary
+words. Consequence for future puzzle/composition work: an akshara word-square
+generator over vocabulary lists is a dead end; either compose verse-style
+continuous text or drop to letter-level (losing the akshara-cell principle).
+A solvable gomūtrikā, by contrast, is easy (only even-position syllables must
+coincide across two lines) — one shipped the same pass
+([docs/RESULTS_BANDHA_FILLIN_H2944_17.08.26.md](https://github.com/gasyoun/Uprava/blob/main/docs/RESULTS_BANDHA_FILLIN_H2944_17.08.26.md)).
+
+> Fable 5 (`claude-fable-5`) · 17-08-2026 · search script + pool in the H2944
+> session scratchpad; goal-line 2-attempt budget honoured (form ships
+> explorer-only). §564 takes the next number.
