@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 17-08-2026 (§562 — печатный заголовок опрокидывает §560: дефект — инжест чужой статьи-двойника, настоящие статьи 60+ целевых лемм отсутствуют в сторе; §559 — «смыслы MW/AP, отсутствующие у PWG-семейства»: механический счёт завышен ~в шесть раз, 83 % кандидатов — «не привязано»; §560 — key1 стора pwg_ru деградирован у 161 строки и сливает разные леммы, лучший свидетель — префикс subcard; §549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink)_
+_Created: 26-06-2026 · Last updated: 17-08-2026 (§565 — meter/quantity marks; §562 — печатный заголовок опрокидывает §560: дефект — инжест чужой статьи-двойника, настоящие статьи 60+ целевых лемм отсутствуют в сторе; §559 — «смыслы MW/AP, отсутствующие у PWG-семейства»: механический счёт завышен ~в шесть раз, 83 % кандидатов — «не привязано»; §560 — key1 стора pwg_ru деградирован у 161 строки и сливает разные леммы, лучший свидетель — префикс subcard; §549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -7211,3 +7211,47 @@ both (swamped by `dviguRa`).
 > scratchpad, throwaway; recipe: parse `<L>…<LEND>`, join EOL-hyphen wraps
 > (keep `--`), count per pattern; ≥25 entries read in full per kośa across
 > the alphabet (skd L1–L39675, vcp L2–L46294). §565 takes the next number.
+
+### §565. Prosody marks (breve/macron) appear in 27 dictionaries; 11 show collision risk with seam notation
+
+🟡 **Concludes the §553–§561 compound-marker census series (H2986).** Measured
+over [csl-orig/v02](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02)
+— the mw72 preface explicitly names breve `˘` and macron `—` as quantity marks
+for meter. Census counts breve (U+02DA ˘) and macron/em-dash (U+2014 —) across
+all dictionaries:
+
+| Measurement | Count | Major dictionaries |
+|---|---|---|
+| **Breve marks** | 27 dicts | AP (5150), AP90 (4051), MW (53357), MWS (22179), PWG (83398), PW (23706), SCH (15193), BHS (22103), STÉ (24754), CAE (9848), CCS (6664) |
+| **Macron marks** | 25 dicts | PWG (97747), PW (144758), MW (257107), MWS (60513), GRA (14938), PWKVN (1160), MD (5872) |
+| **Collision risk** | 11 dicts | MW, MWS, PW, PWG, SCH, BHS, CAE, CCS, MD, INM, PWKVN |
+
+**Three notes.** (1) **Collision risk is real but non-trivial.** MW's 257,107
+em-dashes are seam notation (`agni—hotra`, §555), not quantity marks — yet MW
+also carries 53,357 breve marks for true prosody usage. A parser must not
+conflate the two: em-dash signals compound structure (MW-unique notation), breve
+signals quantity (meter/prosody). In AP90/CAE/CCS, both marks coexist but serve
+different roles (ring abbreviation vs prosody). (2) **Breve distribution is
+skewed toward Apte-family dicts.** AP, AP90, and CAE/CCS (Böhtlingk minor
+redactions) dominate breve usage; PW and PWG also carry substantial counts. The
+major Western-notation dicts (GRA, PWK, MD) mark quantity primarily via
+macron, not breve. (3) **No mixed seam-vs-quantity collision found inline**
+(checked per-line where both marks appear). The risk is at the dictionary level:
+a parser reading MW must not mistake seam-notation dashes for meter marks, but
+the two appear in different article regions and are separable by context
+(lemma vs body, element position).
+
+**Practical residue:** prosody marks are not a standard feature across the CDSL
+canon (only 27 of 44 dicts). Do not assume inline meter notation when
+normalizing headwords; check the dictionary's own markup style first. For
+MW-like systems with both seam notation (em-dash) and prosody marks (breve),
+**distinguish by context, not by character alone**.
+
+> Haiku 4.5 (`claude-haiku-4-5-20251001`) · 17-08-2026 · H2986. Census
+> scripts (character count + per-dict markup detection + specimen extraction)
+> in the session scratchpad. Recipe: regex over `csl-orig/v02/<dict>/<dict>.txt`
+> for U+02DA (breve) and U+2014 (macron/em-dash), extract 3 specimens per dict
+> with line numbers; specimens: ap.txt L94 + L111 + L119 (compound ring +
+> grammar abbreviation usage), mw72.txt L1638 + L1643 + L1644 (preface
+> definition), ap90.txt L115 + L139 + L140 (quantity marks in lemma-suffix
+> notation). Verifiability: class A (reproducible from v02 text files via regex).
