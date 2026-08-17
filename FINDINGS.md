@@ -221,7 +221,7 @@ refuted or superseded, strike it and say why — never reuse its number. **Verif
 - 🟠 [§88. The DCS snapshot's UD dependency slice is real but VEDIC-SKEWED — syntax studies get counterexample hunts, not classical norms](#88-the-dcs-snapshots-ud-dependency-slice-is-real-but-vedic-skewed--syntax-studies-get-counterexample-hunts-not-classical-norms)
 - 🟠 [§89. MW writes `<ls>` citations in TWO markup shapes and locates them in roman as well as arabic — a literal `<ls>` regex undercounts its apparatus by 28.6%, and case-folding the roman test erases the `L.` hedge](#89-mw-writes-ls-citations-in-two-markup-shapes-and-locates-them-in-roman-as-well-as-arabic--a-literal-ls-regex-undercounts-its-apparatus-by-286-and-case-folding-the-roman-test-erases-the-l-hedge)
 - 🟠 [§91. DCS has no aorist TENSE value — `feat_tense='Past'` lumps aorist with the perfect; `feat_formation` is what actually separates them](#91-dcs-has-no-aorist-tense-value--feattensepast-lumps-aorist-with-the-perfect-featformation-is-what-actually-separates-them)
-- 🟠 [§92. A verified claim register is not Whitney-proof — 3 of 229 erdict_fact: TRUE rows in Kochergina claims.yml contradict Whitney, and ~65 of the register/article §-refs point at the wrong section](#92-a-verified-claim-register-is-not-whitney-proof--3-of-229-erdictfact-true-rows-in-kochergina-claimsyml-contradict-whitney-and-65-of-the-registerarticle--refs-point-at-the-wrong-section)
+- 🟠 [§92. A verified claim register is not Whitney-proof — 3 of 229 verdict_fact: TRUE rows in Kochergina claims.yml contradict Whitney, and ~65 of the register/article §-refs point at the wrong section](#92-a-verified-claim-register-is-not-whitney-proof--3-of-229-erdictfact-true-rows-in-kochergina-claimsyml-contradict-whitney-and-65-of-the-registerarticle--refs-point-at-the-wrong-section)
 - 🟠 [§93. Declared, validated, and never enforced — the PWG headless executor read a manifest `budgets{}` block it did not obey, and every offline gate stayed green](#93-declared-validated-and-never-enforced--the-pwg-headless-executor-read-a-manifest-budgets-block-it-did-not-obey-and-every-offline-gate-stayed-green)
 - 🟠 [§94. kosha's generated `forms` is 93% DCS-derived, so its attested-form join is a round-trip — only the vidyut-engine subtotal (12.4% attested) carries signal, and A¬G cannot measure engine gaps](#94-koshas-generated-forms-is-93-dcs-derived-so-its-attested-form-join-is-a-round-trip--only-the-vidyut-engine-subtotal-124-attested-carries-signal-and-ag-cannot-measure-engine-gaps)
 - 🟠 [§95. DharmaMitra `unsandhied` batches return MISALIGNED results on short inputs — doubled echoes and other texts' tokens — so every consumer must validate by surface reconstruction before display](#95-dharmamitra-unsandhied-batches-return-misaligned-results-on-short-inputs--doubled-echoes-and-other-texts-tokens--so-every-consumer-must-validate-by-surface-reconstruction-before-display)
@@ -2930,13 +2930,13 @@ should be treated as a ~5× undercount, not a ground truth.
 
 ---
 
-### §92. A verified claim register is not Whitney-proof — 3 of 229 erdict_fact: TRUE rows in Kochergina claims.yml contradict Whitney, and ~65 of the register/article §-refs point at the wrong section
+### §92. A verified claim register is not Whitney-proof — 3 of 229 verdict_fact: TRUE rows in Kochergina claims.yml contradict Whitney, and ~65 of the register/article §-refs point at the wrong section
 
 The H1228 concordance audit adjudicated **all 432 grammatical claims** of the SanskritGrammar
 corpus sources against the actual text of Whitney 1889 (172 claims from 33 live Sangram
 articles + all 260 entries of KocherginaUchebnik_1998/claims.yml): **364 AGREE / 42 DISAGREE /
 26 WHITNEY-SILENT**. The non-obvious part is where the DISAGREEs sit: three register rows that
-already carried erdict_fact: TRUE from the corpus-verification passes are contradicted by
+already carried verdict_fact: TRUE from the corpus-verification passes are contradicted by
 Whitney on the systemic-fact axis — HK-31 (one-final-consonant phonotactics vs §150b urk/suhart,
 radical mute retained after r), HK-35 (samahara-dvandva «always plural» vs §1253.2d neuter
 singular), HK-174 (feminine of athematic present participles on the strong stem kurvanti vs
@@ -4598,13 +4598,13 @@ _27-07-2026 · [H1476](https://github.com/gasyoun/Uprava/blob/main/handoffs/arch
 
 ### §488. DCS stem co-occurrence graph is extreme-sparse with function-word hubs
 
-🟠 **The full Sanskrit-stem co-occurrence table (dcs-stem-cooccurrence-full) is a directed L/R adjacency list over 176,676 stems (353,352 directed rows): 57.2% of directed rows have degree 0, median degree is 0, mean ~9.2, and the degree tail is dominated by function words (ca, 	ad, va, iti, 	u, pi).** Class A.
+🟠 **The full Sanskrit-stem co-occurrence table (dcs-stem-cooccurrence-full) is a directed L/R adjacency list over 176,676 stems (353,352 directed rows): 57.2% of directed rows have degree 0, median degree is 0, mean ~9.2, and the degree tail is dominated by function words (ca, 	ad, eva, iti, 	u, api).** Class A.
 
 Evidence: Tab-separated file VisualDCS/derived-data/Sochetaemost-sanskritskih-osnov/NEW/1-222342.csv (36.3 MB). Schema per row: id \t stem \t L|R \t degree \t (partner_id \t count)*. Counts on 27-07-2026 (H1735, Grok 4.5 grok-4.5):
 - directed rows = 353,352; unique stem ids = 176,676; sides L=R=176,676 (every stem has both left and right rows)
 - degree-0 rows = 202,049 (57.18%); degree buckets: 0→202049, 1→69410, 2–5→42817, 6–20→20854, 21–100→12450, 100+→5772
 - min/p50/p90/p99/max degree = 0 / 0 / 7 / 173 / 20,984; mean = 9.198; partner-edge slots (sum of pairs) = 3,250,000
-- top degrees: ca L 20984 / R 18929; 	ad L 13160 / R 12728; va L 8899; iti L 8830; 	u L 7763; pi L 7587
+- top degrees: ca L 20984 / R 18929; 	ad L 13160 / R 12728; eva L 8899; iti L 8830; 	u L 7763; api L 7587
 
 Implication: any collocation / distributional-semantics claim over this table must down-weight or remove the function-word hub set; the typical stem has **no** recorded partner on a given side. Do not treat the table as a dense network. Reproducible with a stdlib TSV pass over the path above.
 
@@ -4625,7 +4625,7 @@ Implication: appendix 6 is a **frequency-core slice by historical period**, not 
 🟠 **On the 94,264-form Heritage∩kosha intersection, 78.26% agree on lemma and 21.74% (20,496) disagree; disagreement classes are genuine-or-ambiguous 12,905 (63.0%), stem-granularity 7,132 (34.8%), 
 asal-variant 459 (2.2%), with participles the largest Heritage category among disagreements (8,289).** Class A (re-derive from committed TSV + stats JSON).
 
-Evidence: re-counted SanskritLexicography/HeadwordLists/heritage_forms_oracle_disagreements.tsv (20,496 data rows; header orm_slp1, flag, heritage_stems, kosha_lemmas, heritage_category, kosha_sources, disagreement_class) matches committed heritage_forms_oracle_stats.json exactly. Broader context from the same stats: Heritage 1,022,526 distinct forms / kosha 409,978; intersection 94,264; Heritage-only 928,262; kosha-only 315,714; kosha coverage by Heritage 22.99% (25.4% after nasal normalisation).
+Evidence: re-counted SanskritLexicography/HeadwordLists/heritage_forms_oracle_disagreements.tsv (20,496 data rows; header form_slp1, flag, heritage_stems, kosha_lemmas, heritage_category, kosha_sources, disagreement_class) matches committed heritage_forms_oracle_stats.json exactly. Broader context from the same stats: Heritage 1,022,526 distinct forms / kosha 409,978; intersection 94,264; Heritage-only 928,262; kosha-only 315,714; kosha coverage by Heritage 22.99% (25.4% after nasal normalisation).
 
 Implication: Heritage is usable as a third morphology witness for **agreement-class forms** and for its huge Heritage-only surplus, but the 21.7% disagree set needs class-aware handling — stem-granularity and 
 asal-variant are mostly mechanical, genuine-or-ambiguous needs human/lexicographic adjudication. Rate-only FINDINGS are publishable under restricted tier; row dump stays restricted (LGPLLR pending).
