@@ -91,7 +91,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.environ.get("PWG_RU_DATA_ROOT", os.path.dirname(HERE))
 REGLUE_DIR = os.path.join(DATA, "pwg_ru", "reglue")
 REVIEW = os.path.join(DATA, "review")
-GENERATED = "2026-08-16"
+# The 16-08 generation was built but never published; its inputs (the wave-3
+# reglue jsons) moved the same day, so it can no longer be reproduced and its
+# lock was retired rather than re-bound. 17-08 is the generation that ships.
+GENERATED = "2026-08-17"
 
 ORDER = [("gA", 5), ("Cid", 5), ("Sam", 5), ("jIv", 5), ("rakz", 5), ("vraj", 5), ("yat", 5),
          ("DA", 4), ("Ap", 4), ("Bid", 4), ("Buj", 4), ("banD", 4), ("Sru", 4),
@@ -113,6 +116,11 @@ TYPOLOGY = {
     "pw_cancels":       ("delete",   "abridging", "cancels",  "PW withdraws PWG material"),
     # H2880 wave 2 — an edit carried inside the PWG skeleton itself.
     "pwg_internal_correction": ("amend", "internal", "cancels", "Nachtrag / addendum inside PWG amending this sense — not a sense of its own"),
+    # H2881 wave 3 — Schmidt does not only add: `lies` / `streiche` correct and
+    # withdraw printed PWG. Direction stays *additive* (ADDENDA_TYPOLOGY §1 axis
+    # C puts sch in the additive set); it is the operation that cancels.
+    "sch_correct": ("correct", "additive", "cancels", "Schmidt emends printed PWG text (lies / Druckfehler) — overrides PWG"),
+    "sch_cancel":  ("delete",  "additive", "cancels", "Schmidt withdraws printed PWG material (streiche / tilge)"),
 }
 CLASS_LABEL = {"adds": "＋ added meaning", "restates": "≈ restatement",
                "cancels": "✕ cancels / corrects"}
@@ -468,7 +476,7 @@ def main():
         return 1
     body_hash, raw_hash = digests
 
-    sheet_id = "h180-reglue-spotcheck-v3-2026-08-16"
+    sheet_id = "h180-reglue-spotcheck-v3-2026-08-17"
     config = standard_config(
         save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v3.decisions.json")
     config.update({
@@ -510,7 +518,9 @@ def main():
         raise SystemExit("the compact/expanded control did not survive rendering")
 
     sample = os.path.join(REVIEW, "h180_reglue_v3_sample.jsonl")
-    with io.open(sample, "w", encoding="utf-8") as fh:
+    # newline="\n": the tracked sample is LF in git, and a Windows run without
+    # this rewrites all 15 lines as CRLF — a whole-file diff with no content in it
+    with io.open(sample, "w", encoding="utf-8", newline="\n") as fh:
         for it in items:
             fh.write(json.dumps({k: it[k] for k in ("id", "filt", "title")},
                                 ensure_ascii=False) + "\n")
@@ -571,7 +581,7 @@ def selftest():
     # every subtype the relationship sidecar can emit must be classified
     from_spec = {"restate", "nws_at_sense", "a2a", "sch_star", "foreign_fragment",
                  "derived_sense", "pw_correct", "pw_cancels",
-                 "pwg_internal_correction"}
+                 "pwg_internal_correction", "sch_correct", "sch_cancel"}
     check(from_spec <= set(TYPOLOGY), "every ADDENDA_TYPOLOGY subtype is classified")
     # H2880: the sidecar is the authority on what can appear, so read it rather
     # than trusting the literal above to stay in step with the classifier.
