@@ -6995,3 +6995,202 @@ coincide across two lines) — one shipped the same pass
 > Fable 5 (`claude-fable-5`) · 17-08-2026 · search script + pool in the H2944
 > session scratchpad; goal-line 2-attempt budget honoured (form ships
 > explorer-only). §564 takes the next number.
+
+### §564. skd/vcp confirm ZERO graphic compound markers — the kośas print the whole apparatus in Sanskrit: SKD spells the vigraha + class term in parentheses, VCP compresses the same grammar into ॰-abbreviations with a numeral for the vibhakti (`6 ta0` = ṣaṣṭhī-tatpuruṣa)
+
+🟢 **Seventh entry of the §553–§558/§561 series; census item §5.6 (H2983,
+Fable 5, `claude-fable-5`).** The §553 sweep measured skd (Śabdakalpadruma, Calcutta
+1821–57) and vcp (Vācaspatya, Calcutta 1873–84) at zero Western markers.
+Read directly, the two Sanskrit-Sanskrit kośas turn out to run a COMPLETE
+compound-marking apparatus — in the object language itself. Method as
+bound by the series: entry-wise parse of
+[v02/skd/skd.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/skd.txt)
+and
+[v02/vcp/vcp.txt](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/vcp/vcp.txt)
+(SLP1 transliteration of an all-devanāgarī print), OCR line-wraps joined
+before counting (64 884 wrap-hyphen lines in skd, 126 597 in vcp), counts in
+each file's own markup, `<k2>` checked separately.
+
+**The zero, sharpened.** skd: 0×`˚` 0×`°` 0×`॰`, 0 hyphenated `<k2>` of
+42 531 entries. vcp: 0×`˚`, 4×`°` (stray), 0×`॰`, 2 hyphenated `<k2>` of
+50 135. Headwords solid, `<k2>` = `<k1>` in both. But the print DOES use the
+devanāgarī abbreviation sign ॰ — the digitization renders it as ASCII
+**`0`**, which no Unicode glyph census can see. That is where the apparatus
+lives, and the two kośas divide it exactly as their generations suggest.
+
+**Counts (whole files, entry-parsed):**
+
+| device | skd (42 531 entries) | vcp (50 135 entries) |
+|---|---|---|
+| headword delimiter `¦` (U+00A6) | 42 196 | 48 384 |
+| single daṇḍa `.` | 443 340 | 373 705 |
+| double daṇḍa `..` | 199 538 | 2 141 |
+| `iti` (free) + fused `ity`- | 80 130 + 24 319 | 15 575 + 22 860 |
+| `“…”` quote blocks (opens) | 53 135 | 76 772 |
+| `yaTA` example introducer | 31 553 | 9 089 |
+| `+` derivation joins | 29 771 | 10 275 |
+| `--` morpheme seams (letter--letter) | 346 (124 entries, root tag-chains) | 23 328 (19 174 entries — 38 % of the book) |
+| ॰-abbreviations (`letter0` in the digitization) | 4 633 (dhātu apparatus only) | **167 759** (~3.3 per entry) |
+| parenthesis opens | 58 688 | 10 560 |
+| spelled compound-class terms | ≈1 300 | ≈500 |
+| ॰-abbreviated class tags (`N ta0`/`na0 ta0`/`ba0`/`karma0`/`sa0`) | 0 | ≈9 100 |
+| numbered senses | postpositive synonym lists | prepositive `. N gloss` — 35 050 hits in 17 243 entries |
+
+**SKD article grammar — the parenthesis is the apparatus.** Shape:
+`headword¦, gender, ( vigraha . class-term . derivation ) sense . sense .
+iti <source-in-full> .` — everything grammatical sits inside `(…)`, spelled
+out, with the analysis as a Sanskrit sentence and the compound class as a
+Sanskrit noun:
+
+- `agnirakzaRaM¦, klI, (agneH rakzaRam . zazWItatpuruzaH .)`
+  ([skd.txt:1912](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/skd.txt#L1912),
+  L244) — genitive vigraha, then the class, each closed by daṇḍa.
+- `agnihotraM¦, klI, (agnaye hotram atra iti bahuvrIhiH .)` and deeper in
+  the same article `agnaye hotraM homo yasmin karmmaRIti
+  vyaDikaraRabahuvrIhiH`
+  ([skd.txt:2106](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/skd.txt#L2106),
+  L267) — the entry argues TWO competing vigrahas, subtype named
+  (vyadhikaraṇa-bahuvrīhi).
+- `agrajanmA¦, [na] puM, (agre janma yasya sa bahuvrIhiH,) (jan + BAve
+  manin)`
+  ([skd.txt:2263](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/skd.txt#L2263),
+  L283) — vigraha parenthesis + separate `+`-chain derivation parenthesis
+  (the layer the org's
+  [SKD/VCP etymology extractor](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/README_etymology.md)
+  already mines; 2 214 skd derivations, not re-counted here).
+- `akupyaM¦, klI, (na kupyaM, kupyAdanyadityarTaH . naYsamAsaH .)`
+  ([skd.txt:549](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/skd.txt#L549),
+  L73) — nañ-compound named, gloss via `ityarTaH` (919× in skd).
+- `agnisaKaH¦, puM, (agneH saKA iti samAse rAjAhaHsaKiByazwac iti
+  samAsAntazwac .)`
+  ([skd.txt:2041](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/skd.txt#L2041),
+  L260) — the justification is a Pāṇini rule quoted BY TEXT inside the
+  vigraha; elsewhere sūtras carry daṇḍa-separated numeric loci:
+  `(Saka + “SakisahoSca .” 3 . 1 . 99 . iti yat .)`
+  ([skd.txt:477942](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/skd.txt#L477942),
+  L34692).
+- `rAjahaMsaH¦, puM, (haMsAnAM rAjA SrezWatvAt . rAjadantAditvAt
+  paranipAtaH .) … ityamaraH . 2 . 5 . 24 ..`
+  ([skd.txt:396453](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/skd.txt#L396453),
+  L29488) — irregular member ORDER flagged by rule name (paranipāta,
+  43×), and the Amarakośa locus printed as daṇḍa-separated digits: the
+  daṇḍa doubles as sentence-end AND decimal separator (16 452 numeric
+  `x . y . z` loci in 10 760 entries — a hard parser trap).
+- `pawalaprAntaM … CA~ci iti BAzA . tatparyyAyaH . valIkam 2 nIvram 3 .`
+  ([skd.txt:238176](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/skd.txt#L238176),
+  L19985) — `iti BAzA` closes a BENGALI vernacular gloss (3 683× — a
+  whole gloss layer invisible to any Latin-script census), and synonym
+  runs number POSTPOSITIVELY (`valIkam 2 nIvram 3`), the reverse of vcp.
+- Root articles are the one place skd itself abbreviates:
+  `rewa¦, f Ya yAce … (BvA0-uBa0-dvika0-sew .)`
+  ([skd.txt:405209](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/skd.txt#L405209),
+  L29854) — hyphen/`--`-chained ॰-tags (bhvādi-ubhayapadī-dvikarmaka-seṭ);
+  all 4 633 skd `0`-abbreviations are of this dhātupāṭha kind (`uRA0` 885,
+  `saka0` 836, `para0` 765, `BvA0` 656…).
+
+Spelled class terms across skd: `naYsamAsa` 386, `karm(m)aDAraya` 288,
+`tatpuruza` 222 (116 as `zazWItatpuruza`), `dvandva` 119, `bahuvrIhi` 88,
+`upapadasamAsa` 71, `samAsAnta` 47, `paranipAta` 43, `avyayIBAva` 39.
+(`dvigu` is uncountable by grep — swamped by `dviguRa` "double".)
+
+**VCP article grammar — the same apparatus, compressed ~30 years later.**
+Shape: `headword¦ gender0 vigraha derivation--seam class0 . 1 sense-locus 2
+sense-locus`. Everything skd spells, vcp ॰-abbreviates — gender (`pu0`
+21 885, `tri0` 14 952, `na0` 11 620, `avya0` 1 108, `puMstrI0` 926),
+sources (`rAjani0` = rājanirghaṇṭa 5 090, `medi0` 2 851, `hemaca0` 2 161,
+`trikA0` 1 824, `Sabdaca0` 1 330, `Sabdara0` 1 143, `BAvapra0` 1 054,
+`amara` spelled), grammar authorities (`pA0` = pāṇini 2 142, `sU0` 2 504,
+`si0 kO0` = siddhāntakaumudī 1 631/846, `pfzo0` = pṛṣodarādi 1 122,
+`vArtti0`), citation loci (`a0` = adhyāya 6 853, `BA0 … 56 a0`, `f0 1 .
+61 . 14` for the Ṛgveda) — and, the census payload, the **compound class
+with a numeral carrying the vibhakti of the first member**:
+
+- `agnihotra¦ na0 agnaye hUyate'tra hu--tra 4 ta0 .`
+  ([vcp.txt:2770](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/vcp/vcp.txt#L2770),
+  L350) — vigraha, root--affix seam, then `4 ta0` = caturthī-tatpuruṣa;
+  the article then argues the same bahuvrīhi/tatpuruṣa split as skd but
+  from the Taittirīya-brāhmaṇa, with `bahuvrIhivyutpattyA … iti
+  tatpuruzavyutpattyA` spelled out.
+- `agrajAti¦ pu0 agrA SrezWA jAtiryasya, jana--ktin karma0 . vipre .`
+  ([vcp.txt:3145](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/vcp/vcp.txt#L3145),
+  L380) — vigraha FIRST, unparenthesized; class ॰-tagged (`karma0` 937×).
+- `aMSasavarRRana¦ … atulyacCedayoH rASyoH samacCedakaraRam 6 ta0 .`
+  ([vcp.txt:93](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/vcp/vcp.txt#L93),
+  L8) — `6 ta0` = ṣaṣṭhī-tatpuruṣa. Numeric-vibhakti tags total 3 701:
+  `6 ta0` 3 086 · `7 ta0` 285 · `3 ta0` 191 · `5 ta0` 106 · `4 ta0` 18 ·
+  `2 ta0` 14 — ṣaṣṭhī at 83 %, the whole vibhakti system productive.
+  Plus `na0 ta0` (nañ-tatpuruṣa) 1 192, `na0 ba0` (nañ-bahuvrīhi) 252,
+  `ba0` 1 273 total, `sa0` = samāsa 2 016 (`upa0 sa0` 368, `aluk sa0` 48,
+  `mayU0` = mayūravyaṃsakādi 42, `asama0 sa0` — asamartha — 15).
+- `akarttana¦ … na0 ta0 . uccaviroDihrasvatvavati Karve . kfta--BAve lyuw
+  na0 ba0 . CedanAkarttari tri0 .`
+  ([vcp.txt:399](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/vcp/vcp.txt#L399),
+  L55) — one article, per-SENSE reclassification: the same surface word
+  read as nañ-tatpuruṣa in one sense and nañ-bahuvrīhi in the next. The
+  class tag is sense-scoped, not entry-scoped.
+- `rAjahaMsa¦ puMstrI0 haMsAnAM rAjA SrezWatvAtrAjada0 para0 . … 2
+  kalahaMse ca medi0 .`
+  ([vcp.txt:453301](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/vcp/vcp.txt#L453301),
+  L39539) — skd's spelled `rAjadantAditvAt paranipAtaH` compressed to
+  `rAjada0 para0`; prepositive sense numbers with ॰-tagged sources.
+- `pItAmbara¦ pu0 pItamambaraM yasya . 1 SrIkfzRe amara 2 SElUze nawe ca
+  medi0 3 haridrABavastrayukte tri0 karma0 . 4 pItevasage na0 .`
+  ([vcp.txt:401693](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/vcp/vcp.txt#L401693),
+  L32328) — senses 1–2 ride the opening bahuvrīhi vigraha; sense 3
+  re-derives the SAME word as karmadhāraya with its own gender. Compare
+  skd's version of the same lemma
+  ([skd.txt:264057](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/skd.txt#L264057),
+  L21731), which conveys the karmadhāraya reading by verse quotation
+  instead.
+- `gajAnana¦ … iBAnanaSabde 981 pf0 dfSyam .`
+  ([vcp.txt:225675](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/vcp/vcp.txt#L225675),
+  L16764) — internal PAGE cross-reference `<word>Sabde NNN pf0 dfSyam`
+  ("see under X, p. NNN"), 1 116 of these — vcp's reference graph is
+  page-numbered, unlike skd's purely lemma-based `iti`-net.
+
+**The finding in one line: the kośas DO have a "ring" — it is ॰, but it
+points the other way.** The European dictionaries aim `˚` at the OBJECT
+word (elide/truncate the repeated member, §553–§555); the kośas aim ॰ at
+the METALANGUAGE (gender terms, source titles, rule names, class labels)
+and never abbreviate the object word — headwords and compounds are always
+printed whole. skd (1821–57) still spells most of the apparatus; vcp
+(1873–84) industrializes ॰ to 3.3 abbreviations per entry, with the numeral
+innovation for vibhakti. Apte's `[za˚ ta˚]` class tags (§555) are this
+native device stepping westward — Poona 1890 transliterates what Calcutta
+1873 printed as `६ त॰`, swapping the numeral back to a spelled ordinal.
+Grammar of the sign, per the §553 conclusion's method: same glyph family,
+third distinct grammar — Böhtlingk's "do not reprint", MW's "seam here",
+and the kośas' "expand this label".
+
+**Parser taxonomy (what a converter needs, per device):** (1) `¦` =
+headword/article boundary, >99 % reliable in both. (2) In skd, `(…)` scopes
+the ENTIRE grammatical apparatus — vigraha sentence, spelled class noun,
+`+`-chain derivation; outside parens, `.` segments senses/synonyms, `iti
+<source> .` closes attribution blocks, `..` closes quotes/articles, `iti
+BAzA` marks Bengali glosses. (3) In skd, digit runs between daṇḍas after a
+source name are LOCI (`2 . 5 . 24` = 2.5.24) and must be joined before any
+daṇḍa-based segmentation; postpositive digits after synonyms are list
+indices. (4) In vcp, every `letter+0` token is a ॰-abbreviation — an
+expansion table is required (top-40 inventoried this pass; families:
+gender / source / authority / class / dhātu tags / loci); `--` is a
+morpheme seam (root--affix); `N ta0` decodes as vibhakti-N tatpuruṣa;
+prepositive `N` before a gloss is a sense number; `Sabde N pf0` is a page
+xref; `{{Lbody=N}}` marks digitization sub-entries. (5) Class tags are
+sense-scoped in vcp — a per-entry "compound type" column is WRONG by
+construction.
+
+**Residue (named, unmeasured):** the full ॰-expansion table (only top-40
+forms inventoried; a complete vcp abbreviation lexicon is a bounded
+follow-up); skd `<C1>…<C11>` tabular arrays and 5 `<pic>` diagrams
+unprofiled; vcp `{{Lbody}}` sub-entry structure uncounted; the digitization
+renders ALL numerals as ASCII, so devanāgarī vs Arabic digits in the print
+are indistinguishable from the files (a scan check would be needed); vcp
+source attribution is split between the `iti`-net (15 575) and ॰-tags, so
+`iti`-based source ranking undercounts vcp; `dvigu` grep-uncountable in
+both (swamped by `dviguRa`).
+
+> Fable 5 (`claude-fable-5`) · 17-08-2026 · H2983. Census scripts
+> (entry parser + device counter + specimen prober) in the session
+> scratchpad, throwaway; recipe: parse `<L>…<LEND>`, join EOL-hyphen wraps
+> (keep `--`), count per pattern; ≥25 entries read in full per kośa across
+> the alphabet (skd L1–L39675, vcp L2–L46294). §565 takes the next number.
