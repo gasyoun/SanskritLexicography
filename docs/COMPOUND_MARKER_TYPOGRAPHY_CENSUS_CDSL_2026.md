@@ -192,7 +192,10 @@ item in this order:**
    Whitney's `-te etc.`: the leading-hyphen *inflectional* use that §558
    showed must be separated from the compound use before any expansion pass.
 9. **Meter/quantity marks** — mw72's symbol list has `˘`/`—` for syllable
-   quantity; who else marks prosody inline.
+   quantity; who else marks prosody inline. **measured → FINDINGS
+   [§565](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
+   (H2986): 27 dicts carry breve marks, 25 carry macron; 11 show collision with
+   seam notation (MW-family).**
 10. **Gloss-language layering** — German/English/Latin/Russian mixing per
     dict (`{%…%}` vs plain), for router/translation passes.
 
