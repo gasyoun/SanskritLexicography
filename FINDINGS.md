@@ -6693,4 +6693,59 @@ it as elision; (c) Apte rings require a label-vs-member disambiguation step
 > (`<s>˚`/`˚</s>` + letter-adjacent mid for mw; `{%˚`/`˚%}` for mw72; `{#˚`/`˚#}`
 > for ap/ap90; `-` inside `<k2>`); specimens mw.txt L356, L4137–4160,
 > mw72.txt L1643 (symbol list) + L50848, ap.txt L111, ap90.txt L115.
-> §556 takes the next number.
+### §556. Grassmann hyphenates the lemma itself (4 356 of 12 785 — MW's system has a Rig-Veda precedent), and Kochergina's кружок is the Petersburg Kreis arriving in Russian via Böhtlingk's own St. Petersburg typography
+
+🟢 **Closes the §553–§555 series.** Two dictionaries the census misread or
+could not see:
+
+**Grassmann (1873–75) prints the seam in the lemma — §553 undercounted him as
+"no practice".** The seam lives in `<k2>`, which §553's `<k1>`-only metric
+missed: **4 356 of 12 785** lemmas are hyphenated — `<k2>agni-jihva/`,
+`agni-ta/p`, `agni/-dUta` (accent riding on either member). Rings and degree
+signs: **zero**. So Grassmann is the pure-hyphenation pole of the field: every
+compound analyzed in its own headword, no abbreviation device at all — and
+running text hyphen-analyzes even derivation (`á-tas, á-tra, a-dyá`, gra.txt
+L2). Consequence for §555: **MW-1899's seam-in-lemma system is not sui generis
+— it generalizes Grassmann's Rig-Veda practice to the whole language**, 24
+years later, upgrading the hyphen to an em-dash hierarchy and adding the
+mid-word sandhi ring for the cases a hyphen cannot express. (MW-1872, before
+Grassmann's influence sank in, has zero dashed lemmas — the 1899 redesign is
+exactly the Grassmann move.)
+
+**Kochergina (1978/1987): the digitization
+([RussianTranslation/src/koch.jsonl](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/koch.jsonl),
+29 177 rows) carries 136 degree signs `°` (U+00B0; U+02DA absent — same
+digitization split as sch/ae, §553) in three PW-shaped uses:**
+
+1. *Leading elision in cross-references*: `-ṣṭhīvi … см. °ष्ठीव` — the ° stands
+   for the elided first member, exactly PW's dominant profile (§554).
+2. *Bound second members as headwords with a leading hyphen*: `-zWIvi`,
+   `-varzIya` — the lemma itself is marked as "second member of a compound".
+3. *Trailing continuation on prefixes*: `अ° /a-/ (перед гласными अन्°)` — the
+   rest of the word is to be supplied, Böhtlingk's trailing truncation.
+
+**Where her кружок comes from.** The sign is Böhtlingk's Kreis (§554), and the
+transmission is direct, not typological: PW/PWG were typeset and published by
+the Imperial Academy of Sciences **in St. Petersburg** (1855–75; PW 1879–89),
+so the ° entered Russian academic Sanskrit typography at the source — Russian
+indology inherited Böhtlingk's printing conventions with his books, and
+Kochergina's dictionary (ред. В. И. Кальянов, of the same Petersburg school;
+its preface names Böhtlingk's dictionaries among its sources) reproduces the
+малый-PW usage profile measured above: leading elision as the main sense,
+trailing truncation as the secondary. Her sense ORDER diverges from the
+tradition (§18, §~769: logical-pedagogical, not chronological) — the
+*typography* is the thing she kept.
+
+**Practical residue:** (a) any §553-style census must read `<k2>`, not `<k1>`
+(two corrections now: MW §555, GRA here) — `<k1>` is normalized-solid by CDSL
+convention and never shows the source's own practice; (b) koch.jsonl's
+leading-hyphen lemmas (`-zWIvi`) are a *lemma-class marker*, not noise — a
+matcher joining Kochergina to CDSL headwords must strip the hyphen but keep
+the "bound second member" bit.
+
+> Fable 5 (`claude-fable-5`) · 17-08-2026 · counts: `-` inside `<k2>` of
+> gra.txt (4 356/12 785), U+02DA/U+00B0 over gra.txt (0/0) and koch.jsonl
+> (0/136); specimens gra.txt L412–454, koch.jsonl rows for -zWIvi/-varzIya/a-.
+> Kochergina provenance: measured profile + documented Petersburg publication
+> chain; her print's front matter not re-read this pass.
+> §557 takes the next number.
