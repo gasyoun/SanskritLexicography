@@ -1,6 +1,6 @@
 # FINDINGS — cross-repo empirical registry
 
-_Created: 26-06-2026 · Last updated: 17-08-2026 (§559 — «смыслы MW/AP, отсутствующие у PWG-семейства»: механический счёт завышен ~в шесть раз, 83 % кандидатов — «не привязано»; §560 — key1 стора pwg_ru деградирован у 161 строки и сливает разные леммы, лучший свидетель — префикс subcard; §549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink)_
+_Created: 26-06-2026 · Last updated: 17-08-2026 (§562 — печатный заголовок опрокидывает §560: дефект — инжест чужой статьи-двойника, настоящие статьи 60+ целевых лемм отсутствуют в сторе; §559 — «смыслы MW/AP, отсутствующие у PWG-семейства»: механический счёт завышен ~в шесть раз, 83 % кандидатов — «не привязано»; §560 — key1 стора pwg_ru деградирован у 161 строки и сливает разные леммы, лучший свидетель — префикс subcard; §549 — CommentaryStrategies' published 17,863-note composition was born self-contradictory in one batch commit; §548 — PWG has two incompatible families of `<ls>` counts, cleaned-string vs work-family, and only the second partitions the dictionary; §545 — a fixture guard row proves the sanitizer runs, not that it covers every sink)_
 
 📊 **Live dashboard:** <https://gasyoun.github.io/SanskritLexicography/findings/> —
 importance/section breakdown, staleness flags, monthly time series (§12/§13/§21/§25) and the
@@ -6930,4 +6930,32 @@ of the tradition, while her ° sits on Böhtlingk's — she inherited both.
 > L21729–21755, L23245–23247; upasarga list csl-whitroot/misc. The Roots
 > full text is NOT digitized in the org (scan images + root inventory only) —
 > the scan page is the evidence of record for the hyphen convention.
-> §562 takes the next number.
+
+### §562. Печатный заголовок карточки ОПРОКИДЫВАЕТ §560: дефект стора pwg_ru — не деградация key1, а инжест ЧУЖОЙ статьи-двойника; настоящие статьи 60+ целевых лемм в сторе отсутствуют
+
+🔴 **Ревизия §560 по третьему свидетелю** (печатный заголовок `{#lemma#}¦` в
+самом de-тексте карточки). §560 утверждал «все расхождения — в пользу
+subcard»; проверка заголовков показала обратное: в **61 из 73** групп
+расхождений заголовок согласен с **key1** против subcard. Причина — дефект не
+в ключе, а в **инжесте**: пайплайн, идя за целевой леммой (сохранена в
+префиксе subcard: vāsā, bhāra, āpta, aśru…), по уплощённому ключу вытащил
+**статью-двойника** (vasa, bara, apta, asru…) и записал её контент под
+сабкарту целевой леммы. Где один уплощённый ключ покрывал несколько целевых
+лемм, один и тот же неверный контент лёг **побайтово несколько раз**: крошечный
+стаб *vasa* (nom. act.) лежит в сторе пять раз — под vāsā/vāsa/vaśā/vaśa/vasā,
+чьи настоящие (большие!) статьи PWG в сторе, следовательно, **отсутствуют**;
+то же bara→bhāra/bhara/bāṇa, vasin→vāsin/vaśin. Механическая классификация
+([key1_repair_proposals.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/key1_repair_proposals.py)):
+3 доказанные дубликации + 52 одиночных «чужая статья» + 1 мусорный key1 = 56
+предложений, ровно 161 затронутая строка. Следствие для §559 (волна 4): для
+этих ~60 лемм сравнение MW/AP шло против контента двойника — их вердикты
+недействительны в обе стороны. Починка = **переингест + карантин**, не
+переименование ключей; голосуется листом
+[key1_repair_vote_2026-08-17.html](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/key1_repair_vote_2026-08-17.html)
+(issue [#1767](https://github.com/gasyoun/SanskritLexicography/issues/1767)); стор не тронут.
+
+> Fable 5 (`claude-fable-5`) · 17-08-2026 · три свидетеля на группу
+> (key1 / subcard-декод / печатный заголовок + iast через sanskrit_util);
+> дубликация доказана идентичными (sense_tag, de)-наборами под разными
+> сабкартами; полные дампы vasa/bara в сессии H2882-продолжении.
+> §563 takes the next number.
