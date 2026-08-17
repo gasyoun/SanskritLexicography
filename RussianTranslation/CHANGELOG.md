@@ -2083,11 +2083,11 @@ eeds_human when compound_status is differs (~4.2k; not
 
 ### Added - H1624 form_notes: dedicated nom/voc form-note field
 
-- New top-level store/portrait field orm_notes via
+- New top-level store/portrait field form_notes via
   [extract_form_notes](src/form_labels.py): {case: nom|voc, kind, span}.
-- Separate from government (Rektion) and from multi-axis orm_labels.
+- Separate from government (Rektion) and from multi-axis form_labels.
 - Stamped on promote + microstructure; [annotate_form_labels](src/annotate_form_labels.py)
-  backfills both fields. LANG_PARITY SHARED orm_notes_nom_voc_dedicated_h1624.
+  backfills both fields. LANG_PARITY SHARED form_notes_nom_voc_dedicated_h1624.
 
 ### Added - H1624 form_labels: number / gender / nom-voc / voice markup from DE
 
@@ -2103,7 +2103,7 @@ eeds_human when compound_status is differs (~4.2k; not
 ### Added - H1624 G2: structured government on every DE sense at promote + portrait
 
 - [promote_final_cards.rows_for](src/promote_final_cards.py) stamps government
-  from DE via xtract_government (no wait for annotate backfill).
+  from DE via extract_government (no wait for annotate backfill).
 - [microstructure.sense_node](src/microstructure.py) attaches the same field on
   portrait senses; [enrich_portrait_government.py](src/pilot/enrich_portrait_government.py)
   backfills older portraits; schema: [pwg_portrait_structural.schema.json](schemas/pwg_portrait_structural.schema.json).

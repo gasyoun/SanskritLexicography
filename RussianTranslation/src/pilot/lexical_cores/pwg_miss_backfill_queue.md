@@ -15,7 +15,7 @@ those wordlists through `build_worklist`, or after a new wordlist is processed._
 - **Status unchanged:** RUNNABLE via H214 no-PWG lane (gen_no_pwg_card / 
 o_pwg_runnable).
 - **Paid PWG drain freeze (H255) still holds** — this queue is the no-PWG supplement path, not a reason to unfreeze the main paid drain.
-- **Do not** re-run uild_worklist destructively to regenerate (still additive).
+- **Do not** re-run build_worklist destructively to regenerate (still additive).
 
 
 

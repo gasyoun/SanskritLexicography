@@ -2960,7 +2960,7 @@ Coverage CLI: python src/citation_edges.py report
 ## 25-07-2026 - H1624 form_notes: dedicated Nom/Voc field
 
 Executor: Grok 4.5.
-orm_notes = first-class field for nominative/vocative citation-form markers only.
+form_notes = first-class field for nominative/vocative citation-form markers only.
 
 | field | covers |
 |---|---|
@@ -2992,19 +2992,19 @@ LANG_PARITY SHARED form_labels_number_gender_voice_h1624.
 
 Executor: Grok 4.5 · offline · no paid window.
 Closes the gap where structured Rektion only appeared after a separate
-nnotate_government backfill. Schema shape unchanged (array of hit dicts, D4/H338).
+annotate_government backfill. Schema shape unchanged (array of hit dicts, D4/H338).
 
 | path | producer | notes |
 |---|---|---|
-| store row on promote | promote_final_cards.rows_for + xtract_government(de) | always stamped (empty list if none) |
-| store retrofit | nnotate_government.py | existing rows / drift repair |
+| store row on promote | promote_final_cards.rows_for + extract_government(de) | always stamped (empty list if none) |
+| store retrofit | annotate_government.py | existing rows / drift repair |
 | portrait sense at gen | microstructure.sense_node | from full DE segment |
-| portrait backfill | nrich_portrait_government.py | older local portraits |
-| retrieval surface | government.html via uild_article_site | still re-extracts from de_raw; floor banner |
+| portrait backfill | enrich_portrait_government.py | older local portraits |
+| retrieval surface | government.html via build_article_site | still re-extracts from de_raw; floor banner |
 
-Selftests: government_census selftest, nnotate_government --selftest,
-promote_final_cards --selftest (PW (Instr.)), nrich_portrait_government --selftest,
-uild_article_site --selftest. LANG_PARITY SHARED government_on_promote_and_portrait_h1624_g2.
+Selftests: government_census selftest, annotate_government --selftest,
+promote_final_cards --selftest (PW (Instr.)), enrich_portrait_government --selftest,
+build_article_site --selftest. LANG_PARITY SHARED government_on_promote_and_portrait_h1624_g2.
 
 ## 25-07-2026 - H1624 G1: per-span gloss_lang on {%...%} (DE|LA|EN)
 
