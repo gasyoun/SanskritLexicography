@@ -23,11 +23,28 @@ review_sheet_standard.pwg_entry_href for PWG roots) -- the full gloss is
 already inline on the card, so this does not block answerability (V4 n/a,
 stated per /review-sheet Phase 2).
 
+V9 EvidenceManifest (H2784, 17-08-2026): declares what each card actually
+joined (the frozen H2401 frame -- slp1/iast/band/pos/polysemy/koch_gloss) and
+what was deliberately left out -- above all corpus_lexicon.jsonl, the 1.09M-
+pair Sa->Ru alignment lexicon H2402's own BLI scorer ranks candidate Russian
+equivalents from for these SAME 500 headwords (bli_eval.py / see
+build_g6_mqm_gold_sheet.py's identical omission for the analogous G6 case).
+Protocol section 5's inverted-screening case: the human label IS the
+deliverable this sheet exists to produce, so showing the scorer's own
+candidate-ranked equivalents on the card would anchor the annotation instead
+of letting pass-1 answer independently of pass-2 (frozen model, which must
+not run before pass-1 is frozen). This changes the rendered bytes, so this
+build is a fresh sheet_id (``..._v2_review``, ending ``_review.html`` so it
+stays covered by the same ``review/*_review.html`` gitignore rule) / a fresh
+``generated`` date -- the 12-08-2026 generation's lock is left untouched
+rather than forced over (H2784 step 5; that generation was awaiting vote,
+not voted, when this ran).
+
 Regen (canonical invocation, from the repo root):
 
   python RussianTranslation/src/eval/build_bli_gold_b1_500_sheet.py
 
-Output: ``RussianTranslation/review/<sheet_id>_review.html`` (gitignored).
+Output: ``RussianTranslation/review/<sheet_id>.html`` (gitignored).
 """
 import io
 import os
@@ -36,8 +53,10 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
 from csl_pyutil import esc, mark_cyrillic, render_review_sheet  # noqa: E402
+from csl_pyutil.evidence import find_slp1  # noqa: E402
 
 from review_binding import stamp, write_lock  # noqa: E402
+from review_evidence_preflight import EvidenceManifest  # noqa: E402
 from review_sheet_standard import standard_config  # noqa: E402
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -48,8 +67,11 @@ RT_ROOT = os.path.dirname(os.path.dirname(HERE))
 REVIEW = os.path.join(RT_ROOT, "review")
 FRAME_TSV = os.path.join(HERE, "gold_frame_b1_stratified_500.tsv")
 
-SHEET_ID = "sanskritlexicography-bli_gold_b1_500_review"
-GENERATED = "12-08-2026"
+# H2784: a re-cut that adds the V9 manifest changes the rendered bytes, so it
+# needs its own sheet_id / lock -- never force over the 12-08-2026 generation
+# committed at review/locks/sanskritlexicography-bli_gold_b1_500_review.lock.json.
+SHEET_ID = "sanskritlexicography-bli_gold_b1_500_v2_review"
+GENERATED = "17-08-2026"
 
 BAND_LABEL = {"5": "band 5 (частотнейшие)", "4": "band 4", "3": "band 3",
               "2": "band 2", "1": "band 1 (редкие)"}
@@ -121,6 +143,62 @@ def build_items(rows):
     return out
 
 
+def declared_slp1_tokens(rows):
+    """SLP1-looking tokens the sheet legitimately shows a human (V9 leak check).
+
+    Two sources, both declared from the data rather than silenced globally
+    (same discipline as build_g6_mqm_gold_sheet.py's declared_slp1_tokens()):
+    the card's own key (the slp1 headword id, shown beside its IAST rendering
+    in the title -- that IS the id, not a leak) and any Latin grammatical
+    abbreviation that happens to trip the D2 heuristic inside the verbatim-
+    quoted Kochergina gloss (source abbreviations travel with the quoted
+    text, e.g. "inf." / "pfph.").
+    """
+    ids = {r["slp1"] for r in rows}
+    blob = "\n".join(r["koch_gloss"] for r in rows)
+    return ids | set(find_slp1(blob, allow=ids))
+
+
+def build_manifest(sheet_id, items, frame_path):
+    """What this sheet joined per card, and what it deliberately did not (H1889).
+
+    Modelled on build_g6_mqm_gold_sheet.py's build_manifest() (H2769) -- the
+    worked example in this repo. Every field declared here is one the card
+    actually renders (see build_items() above); every omission is the same
+    inverted-screening call the protocol makes explicit in section 5: the
+    human label IS the deliverable, so a machine's own candidate answer for
+    the same headword must not appear on the card.
+    """
+    man = EvidenceManifest(sheet_id, [it["id"] for it in items])
+    rel = os.path.relpath(frame_path, RT_ROOT).replace("\\", "/")
+
+    man.declare_joined(rel, ["slp1", "iast (derived)", "band", "pos",
+                             "polysemy", "n_senses", "koch_gloss"])
+    for it in items:
+        man.add_card(it["id"], ["slp1", "iast", "band", "pos", "polysemy",
+                                "koch_gloss"])
+
+    man.declare_omitted(
+        "corpus_lexicon.jsonl (1.09M-pair Sa->Ru word-alignment lexicon; "
+        "bli_eval.py / bli_score_stratified.py rank candidate Russian "
+        "equivalents from it for these SAME 500 headwords as H2402's P@1/"
+        "P@5/MRR scorer input)",
+        "protocol section 5's inverted-screening case -- the human label IS "
+        "the deliverable this sheet exists to produce, so showing the "
+        "scorer's own candidate-ranked equivalent on the card would anchor "
+        "the pass-1 annotation instead of letting it answer independently; "
+        "pass 2 (frozen model) must not run before pass 1 is frozen")
+    man.declare_omitted(
+        "existing model-produced Sa->Ru translations for these headwords in "
+        "this repo's mw_ru / pwg_ru pipelines (Monier-Williams and PWG "
+        "Russian translation cards)",
+        "same inverted-screening reason as corpus_lexicon.jsonl above -- a "
+        "different dictionary's machine translation of the same headword is "
+        "still a machine answer to the question this vote asks a human, and "
+        "would anchor the annotation it is meant to produce independently")
+    return man
+
+
 def main():
     rows = parse_frame(FRAME_TSV)
     assert len(rows) == 500, "frame row count changed: %d (expected 500)" % len(rows)
@@ -158,6 +236,12 @@ def main():
             ("grammar", "грамматический аппарат"),
         ],
         "filters": filters,
+        # V13 (H2854) shares PreflightWarning with V9 -- `-W error` on that one
+        # class stops on either ramp. This card's "question" field is always ""
+        # (build_items() above), so no internal id can ever appear in it; the
+        # pattern below is a real one (bare H### handoff citations) that would
+        # legitimately need a label if this generator ever grew question text.
+        "identity_gate": {"patterns": [r"\bH\d{3,4}\b"], "labels": {}},
     }
     config.update(standard_config(
         save_as=r"RussianTranslation\review\%s_decisions.json" % SHEET_ID))
@@ -172,7 +256,9 @@ def main():
     }
 
     items = build_items(rows)
-    html_out = render_review_sheet(items, config, extras=True, screening=screening)
+    config["preflight"] = {"allow_slp1_tokens": tuple(sorted(declared_slp1_tokens(rows)))}
+    html_out = render_review_sheet(items, config, extras=True, screening=screening,
+                                   manifest=build_manifest(SHEET_ID, items, FRAME_TSV))
 
     html_out, chash = stamp(html_out)
 
