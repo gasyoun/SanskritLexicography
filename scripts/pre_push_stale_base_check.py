@@ -48,10 +48,12 @@ refused three pushes, all of them legitimate, all of them this repo's standard w
 3. ``handoff_close.py`` archiving a handoff, which repoints ``handoffs/X`` links to
    ``handoffs/archive/X`` **inside rows added minutes ago**.
 
-(1) and (2) are exempted below. **(3) is not exempted**, so a ``handoff_close.py`` archive
-run that repoints links inside freshly-added rows will now be refused and needs the escape
-hatch. That is the known live cost of blocking; if it proves noisy in practice, exempt (3)
-rather than demote the hook a second time.
+**All three are now exempted below.** (3) was the open cost of re-promoting this to a
+blocker, and was closed the same day (MG 16-08-2026) rather than left to bite: see
+``archive_normalized``. It is exempted by normalizing the ``handoffs/X.md`` →
+``handoffs/archive/X.md`` repoint on both sides of the surviving-text comparison, so an
+archive pass reads as the move it is. A push that repoints a link *and* drops anything
+else on the same line still blocks — the exemption is the rewrite, not the tool.
 
 The demotion argument was that three false-positive classes against two true incidents is
 the wrong ratio for a blocker, since the standing response to a hook that refuses good
@@ -158,6 +160,35 @@ def surviving_text(local_ref: str, path: str) -> set[str]:
     return {ln.strip() for ln in out.splitlines() if ln.strip()}
 
 
+# handoffs/H123-foo.md -> handoffs/archive/H123-foo.md, in a path or a full blob URL.
+# Negative lookahead so an already-archived link is left alone (the transform must be
+# idempotent, or a second archive pass would stop matching).
+ARCHIVE_REPOINT_RE = re.compile(r"(handoffs/)(?!archive/)(H\d+[^)\s\"'<>]*\.md)")
+
+
+def archive_normalized(text: str) -> str:
+    """Collapse the pre- and post-archive spelling of a handoff link to one form.
+
+    Class 3 of the known false positives: `handoff_close.py` archiving a handoff
+    repoints every `handoffs/X.md` reference to `handoffs/archive/X.md`, including
+    inside registry rows another session added minutes ago. The row is NOT lost —
+    only its link is repointed — but the raw text no longer matches, so the
+    surviving-text check in `blame_recent` cannot see it as a move.
+
+    Normalizing the REMOVED line makes that visible: it is exempt only when its
+    text, once the repoint is applied, still exists verbatim in the pushed file. A
+    push that repoints a link AND drops anything else on the line does not match,
+    so this forgives exactly the archive rewrite and nothing more.
+
+    ONE DIRECTION ONLY — do not also normalize the survivors. Un-archiving someone's
+    link (pushing `handoffs/X.md` over their `handoffs/archive/X.md`) is the exact
+    pre-image revert this guard exists to catch, and it is what the test's own case 1
+    does. Normalizing both sides makes the two indistinguishable and silently forgives
+    the real defect; the lookahead above is what keeps the transform one-way.
+    """
+    return ARCHIVE_REPOINT_RE.sub(r"\1archive/\2", text)
+
+
 def is_mint_stub(remote_ref: str, path: str) -> bool:
     """A freshly minted handoff skeleton being filled in the same pass.
 
@@ -177,9 +208,12 @@ def blame_recent(remote_ref: str, path: str, lines: list[int],
     hits: list[tuple[int, str, str]] = []
     old_text = git("show", "%s:%s" % (remote_ref, path)).splitlines()
     for ln in lines:
-        # Moved, not lost: the same text is still somewhere in the pushed file.
-        if 1 <= ln <= len(old_text) and old_text[ln - 1].strip() in survivors:
-            continue
+        # Moved, not lost: the same text is still somewhere in the pushed file —
+        # either verbatim, or with its handoff link repointed to archive/ (class 3).
+        if 1 <= ln <= len(old_text):
+            stripped = old_text[ln - 1].strip()
+            if stripped in survivors or archive_normalized(stripped) in survivors:
+                continue
         out = git("blame", "-w", "--line-porcelain", "-L", "%d,%d" % (ln, ln),
                   remote_ref, "--", path)
         if not out.strip():
