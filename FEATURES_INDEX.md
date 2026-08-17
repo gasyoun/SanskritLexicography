@@ -1,6 +1,6 @@
 # FEATURES_INDEX.md — what the Sanskrit Lexicon project actually has
 
-_Created: 04-07-2026 · Last updated: 16-08-2026 (H2874: F47 citation-count provenance resolved + the two `<ls>` count tables added as sidecars; H2408: F48 defgen eval benchmark + D20 corrected French/second-reference role; H2361: L12 citation_tm.py parallel-verse lookup + its measured EN-lane misalignment; H2110: H8 Systema in-cabinet reading packs; H1909: L5 nws_ls_markup.py bare-citation discriminator)_
+_Created: 04-07-2026 · Last updated: 17-08-2026 (H2943: P12 samskrtam.ru crossword + bandha explorers; H2874: F47 citation-count provenance resolved + the two `<ls>` count tables added as sidecars; H2408: F48 defgen eval benchmark + D20 corrected French/second-reference role; H2361: L12 citation_tm.py parallel-verse lookup + its measured EN-lane misalignment; H2110: H8 Systema in-cabinet reading packs; H1909: L5 nws_ls_markup.py bare-citation discriminator)_
 
 **Purpose.** A clickable, capability-first map of the working assets across the ~85
 repositories: the **dictionaries** digitised, the **interfaces** that serve them, the
@@ -24,7 +24,7 @@ carries a **real example** and its **first-introduced month/year**.
 > Some linked repos are private ([`github-spine`](https://github.com/gasyoun/github-spine),
 > [`Uprava`](https://github.com/gasyoun/Uprava)).
 
-**At a glance:** 44 dictionaries · 23 interfaces (17 live) · 47 data assets · 14 tools · 4 external stacks · 11 learner-facing drill/practice sets (P1–P11) · 30 catalogued methods/algorithms (Q1–Q30).
+**At a glance:** 44 dictionaries · 23 interfaces (17 live) · 47 data assets · 14 tools · 4 external stacks · 12 learner-facing drill/practice sets (P1–P12) · 30 catalogued methods/algorithms (Q1–Q30).
 
 **IDs & tiers.** Every asset has a **stable ID** — a **running number within its category**
 (1–N; it does *not* restart at each sub-section) prefixed by a **section letter** (`A`–`F` data ·
@@ -330,6 +330,7 @@ Drill **generators** (the `sandhi-*` workflow skills) are tooling, not content, 
 | P9 | VisualDCS **verb-form flashcards** — surface form → root / meaning / tense-type, DCS-frequency ranked | 200 cards | Anki-compact JSON | 🟢 Live | 05/26 | [anki_compact.json](https://github.com/gasyoun/VisualDCS/blob/main/visual/anki_compact.json) |
 | P10 | SanskritGrammar **interactive widgets** — SandhiCollider (vowel-sandhi, 7×11 combos) + ablaut / reduplication / heteroclisis / seṭ sandboxes | 5 widgets | React (Docusaurus) | 🟢 Live | 07/26 | [components/talmud/](https://github.com/gasyoun/SanskritGrammar/tree/main/src/components/talmud) |
 | P11 | SanskritGrammar **Apte 1885 composition exercises** — Sanskrit composition/translation, digitized classic textbook (prose, not an interactive engine) | ~18 exercises + solved set | MDX textbook | ◐ Digitized | 07/26 | [Apte-Composition1885-final-lessons.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/src/01_Apte/Apte-Composition1885-final-lessons.mdx) |
+| P12 | samskrtam.ru **akshara crossword + bandha (citrakāvya) explorers** — [auto-generated akshara crossword](https://samskrtam.ru/crossword/) (4 word sets, IAST/deva input, MW links, shape-pinned layout engine v2) + [/crossword/bandha/](https://samskrtam.ru/crossword/bandha/) RU/EN teaching article and 4 tap-to-trace figure-verse explorers (sarvatobhadra ŚPV 19.27, gomūtrikā 19.46, cakrabandha 19.120, padmabandha new composition), reading paths gated by `verify_bandha.py` | 4 word sets (~40 words) + 4 bandha specimens (21 verified paths) | JS web app + JSON data | 🟢 Live | 08/26 | [Uprava/crossword/](https://github.com/gasyoun/Uprava/tree/main/crossword) (private source; public surface is the FTP copy) |
 
 **Counts.** P1 (396), P3 (208), P9 (200), P4 (64), P6 (14 steps), P7 (13 verses), P11 (~18) are
 **fixed** authored items, verified by reading the files. Two are **dynamic**: P5's SRS cards derive
@@ -455,6 +456,7 @@ is rendered on the interactive artifact._
 
 | When | Change |
 |---|---|
+| 08/26 | **P12** — samskrtam.ru akshara crossword (waves H1986/H2904/H2905/H2942) + the new [/crossword/bandha/](https://samskrtam.ru/crossword/bandha/) citrakāvya section (H2943): RU/EN teaching article (sarvatobhadra as the crossword's classical ancestor) + 4 interactive bandha explorers with mechanically verified reading paths (GRETIL Śiśupālavadha etext, paths after Chakraborty 2018); first learner-facing set living in Uprava with a public FTP surface. |
 | 07/26 | **G3 refresh** — kosha P5 D4 static head + SSR exit (H1590): N=11,148 / 10,370 pages / 184.9 MB; crawlable `/w/{slp1}` + [exit packet](https://github.com/gasyoun/kosha/blob/main/docs/P5_WORD_PAGE_EXIT_PACKET.md); [kosha PR #192](https://github.com/gasyoun/kosha/pull/192) / [v0.91.0](https://github.com/gasyoun/kosha/releases/tag/v0.91.0). Live Lighthouse/walkthrough still MG deploy-gated. |
 | 07/26 | **F47** — the PWG scan-index campaign registry: the 2025–26 volunteer page-indexing effort turned from a live Google Sheet into committed, cross-validated data in csl-observatory (H1706, [PR #107](https://github.com/sanskrit-lexicon/csl-observatory/pull/107), [v1.5.0](https://github.com/sanskrit-lexicon/csl-observatory/releases/tag/v1.5.0)). 55/82 works indexed = 73.7% of tracked citation mass, 28,963 pp, 8 volunteers; 37 scan repos ≈ 11.2 GB verified live. Surfaced an integrity defect in `ls_resolver` ([#826](https://github.com/gasyoun/SanskritLexicography/issues/826)). |
 | 07/26 | **F45** — Laukika-nyāya (Jacob's "Handful of Popular Maxims") reaches its ≥400-record target, 404 records (H803): a 21-07-2026 `prev_is_prose()` pipeline-wide fix (adversarially verified, 50-agent ultracode workflow) recovers 27 more headword boundaries with zero records lost, closing the last open deliverable of the 2004 AIOC-Varanasi manifesto («Сентенции и афористические цитаты»). |
