@@ -210,6 +210,141 @@ def lock_from_html(html_path, locks_dir=None, gate=None, retro=False):
                       source_html=html_path, mode=mode)
 
 
+
+# --------------------------------------------------------------------------- packsets (H3098)
+def packset_hash(pack_hashes):
+    """sha256 over the ordered pack content hashes.
+
+    One value that changes if ANY pack changed, so "is this the committed
+    generation?" stays a single comparison even when the sheet is N+1 files.
+    Order is part of the identity: moving a card from pack 2 to pack 3 changes
+    which page a reviewer votes it on, so it must not hash the same.
+    """
+    joined = "\n".join(pack_hashes).encode("utf-8")
+    return "sha256:" + hashlib.sha256(joined).hexdigest()
+
+
+def write_packset_lock(sheet_id, parent_html, pack_htmls, generated,
+                       locks_dir=None, gate=None, source_html=None, force=False):
+    """Lock a packset: the parent plus its ordered packs, under ONE sheet_id.
+
+    ``parent_html`` is the UNSTAMPED parent index — it has no cards and no export
+    payload site, so ``stamp()`` would refuse it and a stamp would bind nothing.
+    ``pack_htmls`` is the ordered list of STAMPED pack documents (pack-01 first).
+    Each pack contributes its own ``content_hash`` and its own id slice, because
+    a ``pack-NN.json`` export names only that slice and must validate against
+    that page -- not against the whole instrument.
+
+    The collision rule is the single-sheet rule applied to ``packset_hash``: a
+    lock that already binds a DIFFERENT packset refuses to be overwritten, for
+    exactly the reason ``write_lock`` gives -- votes cast against the committed
+    generation would stop validating with no signal until the human had already
+    spent them (H1703).
+    """
+    locks_dir = locks_dir or DEFAULT_LOCKS_DIR
+    os.makedirs(locks_dir, exist_ok=True)
+
+    # The parent is an INDEX: no cards, no export payload site, so stamp() would
+    # refuse it and there is nothing for a stamp to bind anyway. Hash it plain.
+    parent_hash = content_hash(parent_html)
+    packs = []
+    all_ids = []
+    for n, doc in enumerate(pack_htmls, 1):
+        pid = extract_sheet_id(doc)
+        if pid != sheet_id:
+            raise ValueError(
+                "pack %02d declares sheet_id %r but the packset is %r -- packs "
+                "MUST share the parent's sheet_id, that is what makes them one "
+                "localStorage record" % (n, pid, sheet_id))
+        ids = extract_ids(doc)
+        packs.append({
+            "name": "%02d" % n,
+            "content_hash": _stamped_hash(doc),
+            "n_items": len(ids),
+            "ids": list(ids),
+        })
+        all_ids.extend(ids)
+
+    if len(set(all_ids)) != len(all_ids):
+        raise ValueError("the same id appears in more than one pack -- a card "
+                         "must be votable on exactly one page")
+
+    pshash = packset_hash([p["content_hash"] for p in packs])
+    existing = read_lock(sheet_id, locks_dir)
+    forced = force or os.environ.get("REVIEW_LOCK_FORCE") == "1"
+    if existing and not forced:
+        prior = existing.get("packset")
+        if prior is None:
+            # A SHAPE change is still a re-cut. Without this branch the missing
+            # `packset` key read as "nothing to compare" and the single-file lock
+            # was silently replaced -- the exact rebinding the guard exists to
+            # stop (H1703), arriving by a different door.
+            raise LockCollision(
+                "lock for '%s' binds a SINGLE-FILE sheet (%s); this run rendered a "
+                "packset of %d packs (%s).\n"
+                "  Converting a locked sheet into packs re-cuts it: any decisions.json "
+                "already exported against the single file would stop validating.\n"
+                "  Deliberate conversion: pass force=True or set REVIEW_LOCK_FORCE=1, "
+                "after proving the card set is unchanged."
+                % (sheet_id, existing.get("content_hash"), len(packs), pshash))
+        if prior.get("packset_hash") != pshash:
+            raise LockCollision(
+                "lock for '%s' already binds packset %s, this run rendered %s.\n"
+                "  Votes cast against the committed generation would stop validating.\n"
+                "  Deliberate re-cut: pass force=True or set REVIEW_LOCK_FORCE=1."
+                % (sheet_id, prior.get("packset_hash"), pshash))
+
+    lock = {
+        "schema": LOCK_SCHEMA,
+        "sheet_id": sheet_id,
+        # For a packset the instrument's identity is the PACKSET hash, not any one
+        # file: that is the value that changes when any pack changes. The parent's
+        # own hash rides inside the block, since nothing is ever exported from it.
+        "content_hash": pshash,
+        "packset": {
+            "pack_size": max((p["n_items"] for p in packs), default=0),
+            "n_packs": len(packs),
+            "packset_hash": pshash,
+            "parent_hash": parent_hash,
+            "packs": packs,
+        },
+        "generated": generated,
+        "gate": gate,
+        "n_items": len(all_ids),
+        "ids": all_ids,
+        "source_html": os.path.basename(source_html) if source_html else None,
+        "mode": "stamped",
+        "created": datetime.date.today().isoformat(),
+        "tool": "review_binding.py (H1404 binding standard; packsets H3098)",
+    }
+    path = os.path.join(locks_dir, sheet_id + ".lock.json")
+    with io.open(path, "w", encoding="utf-8", newline="\n") as fh:
+        json.dump(lock, fh, ensure_ascii=False, indent=2)
+        fh.write("\n")
+    return path
+
+
+def _stamped_hash(doc):
+    """The content_hash a stamped document carries."""
+    m = re.search(r'var CONTENT_HASH = ("sha256:[0-9a-f]{64}");', doc)
+    if not m:
+        raise ValueError("document is not stamped -- run stamp() on every pack "
+                         "and the parent before locking the packset")
+    return json.loads(m.group(1))
+
+
+def pack_for_export(lock, content_hash_value):
+    """Which pack (if any) an export's content_hash belongs to.
+
+    Returns the pack dict, or None when the hash is the whole-sheet binding.
+    ``validate_decisions`` uses this so a ``pack-NN.json`` validates against the
+    page it was voted on rather than against the whole instrument.
+    """
+    for pack in (lock.get("packset") or {}).get("packs", []):
+        if pack.get("content_hash") == content_hash_value:
+            return pack
+    return None
+
 # --------------------------------------------------------------------------- selftest
 _MINI = '''<!DOCTYPE html><html><head><style>x</style></head><body>
 <div class="sub">Generated 2026-07-25 &middot; sheet_id <code>selftest-mini</code> &middot; t</div>

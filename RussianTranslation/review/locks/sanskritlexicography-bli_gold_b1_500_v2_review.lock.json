@@ -1,9 +1,867 @@
 {
   "schema": "review-lock/v1",
   "sheet_id": "sanskritlexicography-bli_gold_b1_500_v2_review",
-  "content_hash": "sha256:e19e43b25a35a9826fc507a9cf74d9e79cb0694335bca39f6f2397b5a3f6d8f1",
+  "content_hash": "sha256:8cd1889af013126c80280e988d82d626aa7173bf8db917cfb41a58a3b54c0913",
+  "packset": {
+    "pack_size": 10,
+    "n_packs": 50,
+    "packset_hash": "sha256:8cd1889af013126c80280e988d82d626aa7173bf8db917cfb41a58a3b54c0913",
+    "parent_hash": "sha256:3291029293197f9294035c661788d72abf87431db6f341cc9dc06c2ad7523da3",
+    "packs": [
+      {
+        "name": "01",
+        "content_hash": "sha256:5d37bb981d3185ac1161ec1971f8ca13d6c796731570cb8fb33353ea9e309797",
+        "n_items": 10,
+        "ids": [
+          "ASrama",
+          "Aditya",
+          "Baya",
+          "Bojana",
+          "Darma",
+          "Siva",
+          "agni",
+          "kfzRa",
+          "mAhArAjya",
+          "maDya"
+        ]
+      },
+      {
+        "name": "02",
+        "content_hash": "sha256:37169a47169fe71367477ba8a2291a7e50c637cb422f4c6eb4b0dea5954b15b1",
+        "n_items": 10,
+        "ids": [
+          "muKa",
+          "pARqu",
+          "pfTivI",
+          "prARa",
+          "sEnya",
+          "toya",
+          "vastra",
+          "viDAna",
+          "vipra",
+          "vizaya"
+        ]
+      },
+      {
+        "name": "03",
+        "content_hash": "sha256:872dbebed90a3a87bf626ca21584a17d5f6a81cb3493a22eccbbcec0ec708894",
+        "n_items": 10,
+        "ids": [
+          "ASri",
+          "Sru",
+          "SuD",
+          "arh",
+          "avAn",
+          "avabAD",
+          "car",
+          "dah",
+          "jIv",
+          "jap"
+        ]
+      },
+      {
+        "name": "04",
+        "content_hash": "sha256:614ebd92f33653121d35576aadd8f93227833df1a385d67c0d72bf494188e1ef",
+        "n_items": 10,
+        "ids": [
+          "ji",
+          "man",
+          "ram",
+          "sTA",
+          "samArohay",
+          "stu",
+          "vac",
+          "vad",
+          "vraj",
+          "vyaD"
+        ]
+      },
+      {
+        "name": "05",
+        "content_hash": "sha256:f59dd624f8d8be7c5225500ef95ac76cda20eb16a41e12940ec81d70bebffa0f",
+        "n_items": 10,
+        "ids": [
+          "BrAjizWa",
+          "Gora",
+          "Sakvan",
+          "SuBa",
+          "Suci",
+          "apaha",
+          "dIrGa",
+          "dfQa",
+          "dvitIya",
+          "ja"
+        ]
+      },
+      {
+        "name": "06",
+        "content_hash": "sha256:827d673ce0003eeaa696953471457558df940e3618c32fc204c69d1faa5fab99",
+        "n_items": 10,
+        "ids": [
+          "kazAya",
+          "laGu",
+          "praTama",
+          "priya",
+          "snigDa",
+          "tikta",
+          "tulya",
+          "ugra",
+          "uttara",
+          "vfdDa"
+        ]
+      },
+      {
+        "name": "07",
+        "content_hash": "sha256:5599c602d14d45388c4d422b612c966c65a927a391bca50ec76f0606ab4c7db4",
+        "n_items": 10,
+        "ids": [
+          "ASu",
+          "BUyas",
+          "aDas",
+          "aTa",
+          "anyaTA",
+          "atas",
+          "evam",
+          "iha",
+          "kim",
+          "muhur"
+        ]
+      },
+      {
+        "name": "08",
+        "content_hash": "sha256:f08b2639507fef860084f27c7370d79617a2fce1ed47179a0c37a60b6e25092c",
+        "n_items": 10,
+        "ids": [
+          "pfTak",
+          "purA",
+          "samyak",
+          "sarvatas",
+          "svayam",
+          "tAvat",
+          "taTA",
+          "tadA",
+          "tadvat",
+          "upari"
+        ]
+      },
+      {
+        "name": "09",
+        "content_hash": "sha256:72b3757ce0a174b3b9e35b2615a711adc82ac5278d9d968692e04d2028b4ac43",
+        "n_items": 10,
+        "ids": [
+          "anya",
+          "apara",
+          "ati",
+          "azwan",
+          "ced",
+          "cit",
+          "dvAdaSan",
+          "eka",
+          "idam",
+          "paYcan"
+        ]
+      },
+      {
+        "name": "10",
+        "content_hash": "sha256:d25ee6fc363102d4f226e35442934e4a407ed1b070040c9a5e255200de293cf0",
+        "n_items": 10,
+        "ids": [
+          "sahasra",
+          "saptan",
+          "sarva",
+          "uB",
+          "uta",
+          "yAvat",
+          "yadi",
+          "yat",
+          "yatas",
+          "yatra"
+        ]
+      },
+      {
+        "name": "11",
+        "content_hash": "sha256:6fcb34d660e2ee55bf873d4593f2c16f6792a7e5cf220d7c53da580b44407a8a",
+        "n_items": 10,
+        "ids": [
+          "SacI",
+          "Uru",
+          "adIna",
+          "apadeSa",
+          "cOra",
+          "hAni",
+          "hAra",
+          "kavi",
+          "kzura",
+          "mAraRa"
+        ]
+      },
+      {
+        "name": "12",
+        "content_hash": "sha256:3f784bc7dbacb6ae636c781cb735490a1bcd9ad8cf3d5d2b6fd6c19d8c0719aa",
+        "n_items": 10,
+        "ids": [
+          "mfRAla",
+          "nArAca",
+          "nagara",
+          "navanavati",
+          "niScaya",
+          "nizAda",
+          "pAyasa",
+          "padArTa",
+          "tandrA",
+          "vigraha"
+        ]
+      },
+      {
+        "name": "13",
+        "content_hash": "sha256:36d3172a2e8f3e18676afd21b9a67add66785206ad3dd9c28a742a7b1adb434e",
+        "n_items": 10,
+        "ids": [
+          "aBitap",
+          "aByaYj",
+          "aBye",
+          "anugam",
+          "anupraviS",
+          "avatAray",
+          "jalp",
+          "kANkz",
+          "laNGay",
+          "lip"
+        ]
+      },
+      {
+        "name": "14",
+        "content_hash": "sha256:5e33f16a3d8db99627f21f5aa69996bb75180ffb7ce966c3441b306b1d41bcb9",
+        "n_items": 10,
+        "ids": [
+          "nirvap",
+          "prakalpay",
+          "prakram",
+          "pramuc",
+          "prasad",
+          "upalaB",
+          "vinI",
+          "viruD",
+          "vismi",
+          "vyaT"
+        ]
+      },
+      {
+        "name": "15",
+        "content_hash": "sha256:97756d1cb1321e8f5e49f51ab29d48773444dbb346e7c6f9c8a131e9308ec298",
+        "n_items": 10,
+        "ids": [
+          "Agantu",
+          "SArada",
+          "SmaSruRa",
+          "aByaDika",
+          "aSuBa",
+          "akzaya",
+          "arTin",
+          "aruRa",
+          "atyanta",
+          "buDa"
+        ]
+      },
+      {
+        "name": "16",
+        "content_hash": "sha256:3beb803e20e95740512b269fd840b17ebc405d8b3592f980dc7dd7ee3ae7d120",
+        "n_items": 10,
+        "ids": [
+          "dvArya",
+          "karkaSa",
+          "kzama",
+          "lola",
+          "niScala",
+          "nyUna",
+          "paScima",
+          "sAmAnya",
+          "sara",
+          "vanya"
+        ]
+      },
+      {
+        "name": "17",
+        "content_hash": "sha256:ad4d19ff82c090e3fa9ff2ab42e943b803e124361c548ba8cb1492961423e8ea",
+        "n_items": 10,
+        "ids": [
+          "Aditas",
+          "Dik",
+          "SanakEs",
+          "alam",
+          "anyatra",
+          "arvAk",
+          "dviDA",
+          "ekadA",
+          "kva",
+          "mfzA"
+        ]
+      },
+      {
+        "name": "18",
+        "content_hash": "sha256:9a103fe5bec1679825cb56ba1f5dd751079d7e0e4e6d37450f6a666eebbd9198",
+        "n_items": 10,
+        "ids": [
+          "nUnam",
+          "sAkam",
+          "sakft",
+          "sarvaTA",
+          "sarvatra",
+          "tUzRIm",
+          "triDA",
+          "uparizwAt",
+          "vasantA",
+          "viSvatas"
+        ]
+      },
+      {
+        "name": "19",
+        "content_hash": "sha256:4a8c5d695c7679b963de0155a9279e36ec05f0c639e7bfa2757efdf994e1fb29",
+        "n_items": 10,
+        "ids": [
+          "aDi",
+          "aho",
+          "an",
+          "aneka",
+          "avaDya",
+          "azwAdaSan",
+          "caturdaSan",
+          "ekAdaSan",
+          "hanta",
+          "he"
+        ]
+      },
+      {
+        "name": "20",
+        "content_hash": "sha256:9c30775c3dac1156879f71084e4348dadd4861dc3acff1ed3c57a1e9b2161d7e",
+        "n_items": 10,
+        "ids": [
+          "id",
+          "itara",
+          "kila",
+          "nanu",
+          "ni",
+          "parA",
+          "tya",
+          "vAva",
+          "yasmAt",
+          "zoqaSan"
+        ]
+      },
+      {
+        "name": "21",
+        "content_hash": "sha256:4b2d365c27685ee96f1fbc98a334d3731d2e526e8fd7c6af3ef0fa953bf833ee",
+        "n_items": 10,
+        "ids": [
+          "SESava",
+          "aBiSrI",
+          "avijYAna",
+          "daSaka",
+          "jIvAtu",
+          "karRikAra",
+          "meTana",
+          "nErASya",
+          "naptI",
+          "nizkraya"
+        ]
+      },
+      {
+        "name": "22",
+        "content_hash": "sha256:4b210551381b27bbf3ff5df22073fde4b0b7e6031ae42cd4fadb049fc9a77c19",
+        "n_items": 10,
+        "ids": [
+          "pEcCilya",
+          "pratardana",
+          "sAhitya",
+          "svargin",
+          "upAnah",
+          "vAmA",
+          "vanAnta",
+          "vartani",
+          "vilaya",
+          "yavasa"
+        ]
+      },
+      {
+        "name": "23",
+        "content_hash": "sha256:847e4066391901bf59170aefc7ec99f28a60cb4328aeb0a64e48919bbd404c41",
+        "n_items": 10,
+        "ids": [
+          "BaR",
+          "aBinI",
+          "aBivand",
+          "avaDU",
+          "iNg",
+          "jinv",
+          "kAS",
+          "nirBA",
+          "prAraB",
+          "pracar"
+        ]
+      },
+      {
+        "name": "24",
+        "content_hash": "sha256:a9bd5a5ab5c61e2f4e9a3f06a742a401c4e65456ffde1f506ca045ce9b87593f",
+        "n_items": 10,
+        "ids": [
+          "pragam",
+          "pravah",
+          "styE",
+          "ujjval",
+          "upasaMDA",
+          "upasic",
+          "uttap",
+          "vinard",
+          "viniyam",
+          "vyapagam"
+        ]
+      },
+      {
+        "name": "25",
+        "content_hash": "sha256:13af002a3349cf4872d4575b41cbb7cf232b4fefb15d451485a9953e0e54ba16",
+        "n_items": 10,
+        "ids": [
+          "Dvajin",
+          "Endava",
+          "aliNga",
+          "avicakzaRa",
+          "avirata",
+          "darSata",
+          "mUQa",
+          "maDula",
+          "muKara",
+          "nirASraya"
+        ]
+      },
+      {
+        "name": "26",
+        "content_hash": "sha256:c57ca04dc97ef9f7e6a8d737cd362a66f3a8ae5518a1441b917f9f3138bf0272",
+        "n_items": 10,
+        "ids": [
+          "pAvamAna",
+          "paryaSru",
+          "pratiloma",
+          "pratirUpaka",
+          "prayojaka",
+          "raTira",
+          "sArdra",
+          "varUTin",
+          "viDUma",
+          "viSfNKala"
+        ]
+      },
+      {
+        "name": "27",
+        "content_hash": "sha256:6c7a2ecc29c346abf4e71479b343005f5e937c7f4b0d391771fe73f4a9472da9",
+        "n_items": 10,
+        "ids": [
+          "BAgaSas",
+          "bAhyatas",
+          "daSaDA",
+          "drAk",
+          "itTA",
+          "itaratra",
+          "makzU",
+          "pacCas",
+          "paras",
+          "parastAt"
+        ]
+      },
+      {
+        "name": "28",
+        "content_hash": "sha256:0ccd438ecdaa2536351dfa5fbd34da632a75fff8500095fb89f166a3118a94ed",
+        "n_items": 10,
+        "ids": [
+          "prage",
+          "prataram",
+          "pratidinam",
+          "pratnaTA",
+          "sadam",
+          "samaSas",
+          "samantikam",
+          "savyatas",
+          "sumat",
+          "zoqaSaDA"
+        ]
+      },
+      {
+        "name": "29",
+        "content_hash": "sha256:ebf55a591f97622c4e4a724f45dd7066d0091498da92f7422f578588285e2636",
+        "n_items": 10,
+        "ids": [
+          "acCinna",
+          "adatta",
+          "agfhIta",
+          "agrAhya",
+          "anAdfta",
+          "anavApya",
+          "anupapanna",
+          "aprAjYa",
+          "aprIti",
+          "apratihata"
+        ]
+      },
+      {
+        "name": "30",
+        "content_hash": "sha256:e3046b1bd0130b18b9fbd546ff60b20e843fb52ef80219d23fcc1dc2c6dc122f",
+        "n_items": 10,
+        "ids": [
+          "asADaka",
+          "asarva",
+          "avicala",
+          "avinASin",
+          "avinIta",
+          "avyaBicArin",
+          "katara",
+          "pUrvokta",
+          "saptadaSan",
+          "yatama"
+        ]
+      },
+      {
+        "name": "31",
+        "content_hash": "sha256:56955586c8dc932729e10cf18859f9a63be6728cb63fdf90790790cd1c6b3242",
+        "n_items": 10,
+        "ids": [
+          "anukampana",
+          "avyavaDAna",
+          "doraka",
+          "dyumant",
+          "hvAra",
+          "juzwi",
+          "kfzwa",
+          "kumBIra",
+          "miyeDa",
+          "nfti"
+        ]
+      },
+      {
+        "name": "32",
+        "content_hash": "sha256:121b0e04c9401614fee06426f0e6854999ca7f27b79d21794f1b70cdf2221206",
+        "n_items": 10,
+        "ids": [
+          "parizwi",
+          "prAntara",
+          "prasarga",
+          "rajakI",
+          "sAtmatA",
+          "samunnati",
+          "upakzaya",
+          "upanibanDana",
+          "vikramAditya",
+          "vipariRAma"
+        ]
+      },
+      {
+        "name": "33",
+        "content_hash": "sha256:270afaf9ba9e8a862f7c8fa8f644afd9dfc171095027737dab508169604fe5b2",
+        "n_items": 10,
+        "ids": [
+          "Avad",
+          "aBiKyApay",
+          "aBijalp",
+          "anuBuj",
+          "ativah",
+          "avaskand",
+          "kuts",
+          "kuz",
+          "naw",
+          "nivah"
+        ]
+      },
+      {
+        "name": "34",
+        "content_hash": "sha256:6efb1119542136ce6497584f87f751d568212cb8905890e82e176d6e53944c3f",
+        "n_items": 10,
+        "ids": [
+          "praticakz",
+          "saMDam",
+          "samaBipad",
+          "uYC",
+          "udvezw",
+          "upalih",
+          "upaloBay",
+          "vicft",
+          "vimad",
+          "vinipat"
+        ]
+      },
+      {
+        "name": "35",
+        "content_hash": "sha256:24d260e0a6fdb18bcf4bf907c164060b993285c9682f1ecbc6d7c8435955905e",
+        "n_items": 10,
+        "ids": [
+          "Sikvan",
+          "aNkuSin",
+          "adAra",
+          "agru",
+          "akavi",
+          "aparicCinna",
+          "apawu",
+          "avidya",
+          "glAsnu",
+          "hAstina"
+        ]
+      },
+      {
+        "name": "36",
+        "content_hash": "sha256:41aee6ccdb5fb64fab88c679dbb490d6ac6d4833f0ec7aec824df298e0fd84f5",
+        "n_items": 10,
+        "ids": [
+          "nIrajaska",
+          "namasyu",
+          "nizkaruRa",
+          "pacata",
+          "paricArin",
+          "paripUraka",
+          "pramanyu",
+          "pratIta",
+          "sajIva",
+          "vAmetara"
+        ]
+      },
+      {
+        "name": "37",
+        "content_hash": "sha256:b3f51dd3acc277161b57e609e8d4a4339f4f4b2f561988feb243b666da977ef0",
+        "n_items": 10,
+        "ids": [
+          "F",
+          "SreRiSas",
+          "aticiram",
+          "dus",
+          "ftuSas",
+          "hI",
+          "karhi",
+          "lokatas",
+          "pAkatrA",
+          "pUrvaTA"
+        ]
+      },
+      {
+        "name": "38",
+        "content_hash": "sha256:0b4305b68b1be9dbae2bb01258af73f3c58a913c67a9599ba39280e5a7006d93",
+        "n_items": 10,
+        "ids": [
+          "parastarAm",
+          "pratigfham",
+          "prativedam",
+          "pratyabdam",
+          "puruzatrA",
+          "samAnatas",
+          "sanat",
+          "sasvar",
+          "vaSatas",
+          "vew"
+        ]
+      },
+      {
+        "name": "39",
+        "content_hash": "sha256:8133bee3fb31d5a0e692188368582dcf82bef10d19733cc6f668ff69c6bf0a89",
+        "n_items": 10,
+        "ids": [
+          "aSrama",
+          "aSrotra",
+          "akAtara",
+          "akfpaRa",
+          "akopana",
+          "anAvidDa",
+          "anaBivyakta",
+          "ananDa",
+          "anirBinna",
+          "anirjita"
+        ]
+      },
+      {
+        "name": "40",
+        "content_hash": "sha256:59e1a5cecc9d57aaef3e1511ba31b0dc9222e4012d7d7a2c11fe3a6c731e606b",
+        "n_items": 10,
+        "ids": [
+          "anizidDa",
+          "aprayukta",
+          "asamfdDa",
+          "avastra",
+          "sAmarza",
+          "samaha",
+          "sima",
+          "vapa",
+          "varRatA",
+          "yatara"
+        ]
+      },
+      {
+        "name": "41",
+        "content_hash": "sha256:c199af081b3cdf986bb3831c6147f148993060dc5cb0ac136f89c277f8d6c154",
+        "n_items": 10,
+        "ids": [
+          "DIrya",
+          "Na",
+          "PaR",
+          "azwasaptati",
+          "dIptAkza",
+          "dityavah",
+          "divaseSvara",
+          "hetumant",
+          "kamboja",
+          "krandanu"
+        ]
+      },
+      {
+        "name": "42",
+        "content_hash": "sha256:886e0ce38889dd12f5dc72bd138f8ac26f40666e6ab69d46c4b12a717d1277f9",
+        "n_items": 10,
+        "ids": [
+          "kumBila",
+          "mahecCa",
+          "prApaRika",
+          "prAtiSAKya",
+          "pradvAra",
+          "pratImAna",
+          "tAskarya",
+          "vAlka",
+          "vfdDokza",
+          "yUna"
+        ]
+      },
+      {
+        "name": "43",
+        "content_hash": "sha256:468334f08c3880de38f9e5f5b7cb475d4518f0316f709f35e8f627d48a43a394",
+        "n_items": 10,
+        "ids": [
+          "BrI",
+          "Sabd",
+          "aBiprapac",
+          "aDibrU",
+          "anuvilI",
+          "avarAD",
+          "luq",
+          "nyuz",
+          "prahlAd",
+          "pratipravac"
+        ]
+      },
+      {
+        "name": "44",
+        "content_hash": "sha256:a02a59639301a33bf62c16d151d8b8f4c28dfd6c527a1efd192adf4b0c629914",
+        "n_items": 10,
+        "ids": [
+          "prativand",
+          "protsah",
+          "sPar",
+          "samIq",
+          "samanudiS",
+          "udvA",
+          "udvas",
+          "viGaww",
+          "vipraT",
+          "vyapekz"
+        ]
+      },
+      {
+        "name": "45",
+        "content_hash": "sha256:94a64417af107e34e24fdd113bd38c30b96bbfc27a90be90f3470cff63f9ba61",
+        "n_items": 10,
+        "ids": [
+          "AyAsin",
+          "GAtuka",
+          "Gftya",
+          "aBivinIta",
+          "amarta",
+          "aparinizWita",
+          "hasAmuda",
+          "maYjizWa",
+          "nirastra",
+          "niruzman"
+        ]
+      },
+      {
+        "name": "46",
+        "content_hash": "sha256:dedc6e3e38c40308ec5b6eb0288b8b187002f646911c18173f261aee3cfb3d8b",
+        "n_items": 10,
+        "ids": [
+          "pAnasa",
+          "pramfRa",
+          "sAntardIpa",
+          "sAnunaya",
+          "sEkatin",
+          "saretas",
+          "tandrayu",
+          "viDana",
+          "viSUla",
+          "vibanDu"
+        ]
+      },
+      {
+        "name": "47",
+        "content_hash": "sha256:a6622b0bd5596d1743ac21385a2292e75b68d5063b16c71c940afba954c67a31",
+        "n_items": 10,
+        "ids": [
+          "Ake",
+          "Put",
+          "SAstratas",
+          "SaSvaDA",
+          "Su",
+          "aBinaByam",
+          "apAkA",
+          "huras",
+          "nAmaTA",
+          "pUt"
+        ]
+      },
+      {
+        "name": "48",
+        "content_hash": "sha256:c90832c5ec71760318c1fe3ed782f399269264a6f651608fbb8b4dc8e17d08b2",
+        "n_items": 10,
+        "ids": [
+          "paredyavi",
+          "pratitaru",
+          "sadivas",
+          "samAnatra",
+          "samaBitas",
+          "stokaSas",
+          "tAjak",
+          "tAvacCas",
+          "vAritas",
+          "viSvyA"
+        ]
+      },
+      {
+        "name": "49",
+        "content_hash": "sha256:1f2c371874b4be52ce83596dbb3a5ab0f6ec36a2d5687f808e7c26ee459a8f81",
+        "n_items": 10,
+        "ids": [
+          "ASita",
+          "Apitva",
+          "BUryojas",
+          "DAva",
+          "DanyatA",
+          "Palodaya",
+          "ahrasva",
+          "akaTita",
+          "amahIyamAna",
+          "apUrvatA"
+        ]
+      },
+      {
+        "name": "50",
+        "content_hash": "sha256:1b7c2efe135a41bc5167c236ef0aaa8cf137d9352a564c2c43ad5b7e9032f50f",
+        "n_items": 10,
+        "ids": [
+          "aparityakta",
+          "asamad",
+          "malimluc",
+          "navadaSan",
+          "nvE",
+          "pUrvatva",
+          "prasup",
+          "sUtatA",
+          "tigmezu",
+          "viDuratA"
+        ]
+      }
+    ]
+  },
   "generated": "17-08-2026",
-  "gate": null,
+  "gate": "BLI-B1",
   "n_items": 500,
   "ids": [
     "ASrama",
@@ -509,6 +1367,6 @@
   ],
   "source_html": "sanskritlexicography-bli_gold_b1_500_v2_review.html",
   "mode": "stamped",
-  "created": "2026-08-17",
-  "tool": "review_binding.py (H1404 binding standard)"
+  "created": "2026-08-18",
+  "tool": "review_binding.py (H1404 binding standard; packsets H3098)"
 }

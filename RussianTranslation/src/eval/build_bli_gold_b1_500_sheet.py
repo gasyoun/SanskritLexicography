@@ -55,6 +55,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 from csl_pyutil import esc, mark_cyrillic, render_review_sheet  # noqa: E402
 from csl_pyutil.evidence import find_slp1  # noqa: E402
 
+from packset_output import emit_sheet  # noqa: E402
 from review_binding import stamp, write_lock  # noqa: E402
 from review_evidence_preflight import EvidenceManifest  # noqa: E402
 from review_sheet_standard import standard_config  # noqa: E402
@@ -199,7 +200,7 @@ def build_manifest(sheet_id, items, frame_path):
     return man
 
 
-def main():
+def main(pack_size=0, hub_name=None, out_dir=None, locks_dir=None):
     rows = parse_frame(FRAME_TSV)
     assert len(rows) == 500, "frame row count changed: %d (expected 500)" % len(rows)
 
@@ -257,17 +258,22 @@ def main():
 
     items = build_items(rows)
     config["preflight"] = {"allow_slp1_tokens": tuple(sorted(declared_slp1_tokens(rows)))}
-    html_out = render_review_sheet(items, config, extras=True, screening=screening,
-                                   manifest=build_manifest(SHEET_ID, items, FRAME_TSV))
-
-    html_out, chash = stamp(html_out)
-
     os.makedirs(REVIEW, exist_ok=True)
-    out = os.path.join(REVIEW, SHEET_ID + ".html")
-    io.open(out, "w", encoding="utf-8").write(html_out)
-    write_lock(SHEET_ID, chash, [it["id"] for it in items], GENERATED,
-               source_html=out)
-    print("sheet:", out, "(%d items)" % len(items))
+    out = os.path.join(out_dir or REVIEW, SHEET_ID + ".html")
+    # H3098: --pack-size splits into pack pages sharing one sheet_id (and so one
+    # localStorage record). 0 keeps the historical single file.
+    paths, lock, n_packs = emit_sheet(
+        items, config, out,
+        screening=screening,
+        manifest=build_manifest(SHEET_ID, items, FRAME_TSV),
+        generated=GENERATED, locks_dir=locks_dir, gate="BLI-B1",
+        pack_size=pack_size, hub_name=hub_name)
+    if n_packs:
+        print("sheet: %s (%d items -> %d packs of <=%d)"
+              % (out, len(items), n_packs, pack_size))
+    else:
+        print("sheet:", out, "(%d items)" % len(items))
+    print("  lock ->", lock)
 
 
 def selftest():
@@ -286,4 +292,15 @@ if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "selftest":
         selftest()
     else:
-        main()
+        import argparse
+        ap = argparse.ArgumentParser()
+        ap.add_argument("--pack-size", type=int, default=0,
+                        help="split into pack pages of at most N cards, sharing "
+                             "one sheet_id (H3098). 0 = one file, the default")
+        ap.add_argument("--hub-name", default=None,
+                        help="published directory stem for the pack pages")
+        ap.add_argument("--out-dir", default=None)
+        ap.add_argument("--locks-dir", default=None)
+        a = ap.parse_args()
+        main(pack_size=a.pack_size, hub_name=a.hub_name,
+             out_dir=a.out_dir, locks_dir=a.locks_dir)

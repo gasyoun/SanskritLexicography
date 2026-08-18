@@ -84,6 +84,7 @@ import re
 import sys
 
 from csl_pyutil import mark_cyrillic, render_review_sheet
+from packset_output import emit_sheet
 from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config
 from review_evidence_preflight import EvidenceManifest
@@ -252,6 +253,12 @@ def main():
     ap.add_argument("--no-evidence", action="store_true",
                     help="pre-H1801 layout (no evidence panels) — for diffing only")
     ap.add_argument("--sheet-id", default=None)
+    ap.add_argument("--pack-size", type=int, default=0,
+                    help="split into pack pages of at most N cards, sharing one "
+                         "sheet_id (H3098). 0 = one file, the historical default")
+    ap.add_argument("--hub-name", default=None,
+                    help="published directory stem for the pack pages "
+                         "(default: the --out filename stem)")
     ap.add_argument("--generated", default=None,
                     help="generation date for the config + lock; a NEW cut of this "
                          "instrument (e.g. the full 320) must pass its own date, "
@@ -338,17 +345,23 @@ def main():
         rules=["mqm-6-label-typology", "h1801-evidence-before-label",
                "h1802-reject-label-picker"],
     )
-    doc = render_review_sheet(items, config, extras=True, screening=sc,
-                              manifest=build_manifest(sheet_id, items, panels_by_id,
-                                                      args.gold_set))
-    doc, chash = stamp(doc)
     os.makedirs(REVIEW, exist_ok=True)
-    with io.open(args.out, "w", encoding="utf-8", newline="\n") as fh:
-        fh.write(doc)
-    lock = write_lock(sheet_id, chash, [it["id"] for it in items], generated,
-                      locks_dir=args.locks_dir, gate="G6", source_html=args.out)
-    print("G6 sheet: %d cards -> %s\n  %s\n  lock -> %s"
-          % (len(items), args.out, chash, lock))
+    # H3098: --pack-size splits a long sheet into pack pages sharing one sheet_id
+    # (and therefore one localStorage record). 0 keeps the historical single file.
+    paths, lock, n_packs = emit_sheet(
+        items, config, args.out,
+        screening=sc,
+        manifest=build_manifest(sheet_id, items, panels_by_id, args.gold_set),
+        generated=generated, locks_dir=args.locks_dir, gate="G6",
+        pack_size=args.pack_size, hub_name=args.hub_name)
+    if n_packs:
+        print("G6 sheet: %d cards -> %d packs of <=%d"
+              % (len(items), n_packs, args.pack_size))
+        for p in paths:
+            print("    %s" % p)
+        print("  lock -> %s" % lock)
+    else:
+        print("G6 sheet: %d cards -> %s\n  lock -> %s" % (len(items), args.out, lock))
     if panels_by_id:
         cov = evidence.coverage(panels_by_id)
         print("  evidence: dictionary %d/%d · root %d/%d · contexts %d/%d · glossary %d/%d"
