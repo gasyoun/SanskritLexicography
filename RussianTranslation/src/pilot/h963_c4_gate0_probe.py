@@ -78,6 +78,7 @@ if str(HERE) not in sys.path:
     sys.path.insert(0, str(HERE))
 
 import max_account_orchestrator as mao  # noqa: E402
+import host_state  # noqa: E402  — H2647 environment capture beside every reading
 import probe_log  # noqa: E402  — the one source of truth for probe ceilings (H2118/H2138)
 from headless_worker import claude_argv_prefix  # noqa: E402
 # Codex hardening (26-07-2026): a PRE-spend reservation ledger. `--max-calls`-style ceilings
@@ -435,6 +436,20 @@ def main(argv=None):
     print("call ledger       : %s" % call_ledger_path)
     print("preflight         : %s" % preflight_path)
     print("claude bin        : %s" % claude_bin)
+    # H2647: state the box's condition BEFORE spending, so an operator sees the one thing
+    # that can invalidate the reading while it is still free to walk away. Advisory only --
+    # it never refuses, because whether a loaded box is worth an attempt is a judgment the
+    # operator makes and an unattended runner makes differently (that gate lives in the
+    # scheduled wrapper, not here).
+    _host = host_state.capture()
+    print(host_state.format_line(_host))
+    _loaded = host_state.loaded_reason(_host)
+    if _loaded:
+        print("  ⚠ HOST UNDER PRESSURE: %s" % _loaded)
+        print("    A reading taken now may measure THIS MACHINE, not %s. On 13-08-2026 a c1"
+              % account)
+        print("    probe died in 7 754 ms on a JavaScriptCore MemoryExhaustion assert at 97 %"
+              " commit.")
     print("resolved argv     : %s" % argv_prefix)
     print("-" * 72)
 

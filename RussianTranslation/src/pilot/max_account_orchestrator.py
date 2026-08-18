@@ -16,6 +16,7 @@ import subprocess
 import sys
 import time
 
+import host_state
 import probe_log
 from run_observability import append_event, utc_now, write_census
 from headless_worker import (DEFAULT_TIMEOUT_S, bare_cli_cwd, claude_argv_prefix,
@@ -1323,6 +1324,13 @@ def _probe_call(config_dir, claude, payload_bytes, model, call_reservation=None,
             or not active_claim.is_live_canonical_for(fingerprint)):
         raise ValueError('probe active-call claim does not bind config directory')
     prompt = _probe_prompt(payload_bytes)
+    # H2647: capture the BOX's state at the moment of the spawn, not at emit time -- for a
+    # call that can run 600 s, "what the machine looked like when we asked" is the fact that
+    # explains a startup crash; what it looked like afterwards is not. Fail-open by
+    # construction (`host_state` never raises), so this cannot turn a paid probe into an
+    # exception. Rides the existing `detail_out` channel rather than adding a parameter.
+    if detail_out is not None:
+        detail_out['host_state'] = host_state.capture()
 
     def _fail(classification, raw, matched=None):
         """H2326 (#1172): the single non-success exit — persist the envelope tail, hand the matched
@@ -1497,6 +1505,14 @@ def live_probe(config_dir, claude='claude', payload_bytes=6491, model=EXACT_GEN_
             err_pattern=(detail or {}).get('err_pattern'),
             raw_envelope_path=(detail or {}).get('raw_envelope_path'),
         )
+        # H2647: the environment the reading was taken in, captured at spawn time. Without
+        # these the series cannot tell its SUBJECT (c1's account and route) from its
+        # ENVIRONMENT (this box) -- a c1 probe on 13-08 died in 7 754 ms on a
+        # JavaScriptCore `MemoryExhaustion` assert with the machine at 97 % commit charge,
+        # and nothing in the row said so. All `host_`-prefixed and all dropped by
+        # `append_event` when None, so a row from a host that cannot be measured, or from a
+        # non-Windows box, is byte-for-byte what it was before.
+        row_kw.update((detail or {}).get('host_state') or {})
         if events_path:
             append_event(events_path, **row_kw)
         # B3 residual (H2240) + H2269 dual-run fix: the SAME row always lands in the
