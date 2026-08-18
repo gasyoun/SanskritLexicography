@@ -7412,3 +7412,47 @@ U+232A.
 > `^<L>` / `^<LEND>`, label as the 1–4 non-space characters before U+3009 immediately after the
 > opening tag with a leading U+2014 stripped. Verifiability: class A (fully reproducible from
 > the v02 text files; the koch row needs the local-only `koch.jsonl`).
+
+### §567. The memo's `<ls>L.</ls>` "lexicographers-only" marker does not exist in PWG — the real signal is `renou_register.py`'s own `ls`/`dcs` provenance tag
+
+🔴 **A literal search of `csl-orig/v02/pwg/pwg.txt` for the exact string `<ls>L.</ls>` returns
+0 hits.** The only 5 `<ls>L. …</ls>` matches are a manuscript siglum (`L. JĀT. 13,1`, etc.),
+unrelated to lexicography. "L." is heavily overloaded in PWG's own `<ab>` abbreviation table —
+Landessprache, Lebensstadium, Logik, Loblieder, Lärm — never "Lexicographen" (which appears 267
+times as free prose, "Die indischen Lexicographen …", never as a short tag). A future session
+asked to extract "the L. marker" from PWG source will find nothing and should not invent a
+regex to force a match.
+
+The actual "lexicographers-only-citation" signal that already exists in committed data is the
+`ls`/`dcs` **provenance** tag `renou_register.py`/`renou_glossary.py` computes per Renou state
+(`src/pwg.renou.jsonl`, `renou_provenance` field: `ls` = the state is warranted only by another
+lexicographer's citation, `dcs` = corpus-attested). Operationalised as `ls_only` (≥1 state `ls`,
+0 states `dcs`) for [H2856](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2856-Sonnet_SanskritLexicography_ghost-headword-census-translation-drift-survival_15.08.26.md):
+**42,357 / 106,082 (39.9 %)** of PWG headwords are `ls_only`, and carry **2.36×** the odds
+(95 % CI [2.28, 2.45], IRLS logistic, n=106,082) of being corpus-absent (exact-match against
+`src/corpus_lexicon.jsonl`) versus a headword with at least one corpus-attested state.
+
+> Sonnet 5 (`claude-sonnet-5`) · 18-08-2026 · H2856. Full census + model:
+> [`RussianTranslation/research/H2856_E4_GHOST_HEADWORD_CENSUS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/H2856_E4_GHOST_HEADWORD_CENSUS.md).
+> Verifiability: class B — the driver (`src/h2856_e4_ghost_census.py`) is committed and
+> reproducible, but two of its four inputs (`src/corpus_lexicon.jsonl`, `src/pwg.renou.jsonl`)
+> are gitignored, local-only stores.
+
+### §568. Renou diachronic state V is never populated in `pwg_sense_stratum.jsonl`
+
+📊 **`renou.py`'s canonical `STATES` tuple is `(I, II, III, IV, V)`, but 0 of 64,296 per-sense
+rows in `RussianTranslation/src/pwg_sense_stratum.jsonl` ever carry `renou_oldest` or
+`renou_youngest` == `"V"`** — every dated span tops out at IV. A consumer that assumes all five
+canonical states are populated everywhere (e.g. a diachronic figure that reserves a 5th "V" x-axis
+tick) will silently render an always-empty band. Found while building the
+[H2856](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2856-Sonnet_SanskritLexicography_ghost-headword-census-translation-drift-survival_15.08.26.md)
+V6 sense-survival streamgraph — chart I–IV only for this specific artifact; do not assume the
+same holds for other `*.renou.jsonl`/`*_stratum.jsonl` files without re-checking (`pwg.renou.jsonl`
+DOES use `V`, e.g. its `renou_dcs`/`renou_provenance` fields — this is a property of the
+per-*sense*-stratum build specifically, not of the Renou state system in general).
+
+> Sonnet 5 (`claude-sonnet-5`) · 18-08-2026 · H2856. Streamgraph + counts:
+> [`RussianTranslation/research/H2856_V6_SENSE_SURVIVAL.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/H2856_V6_SENSE_SURVIVAL.md).
+> Recipe: scan every sense's `renou_oldest`/`renou_youngest` for the literal string `"V"` —
+> zero hits. Verifiability: class B (driver committed; input `pwg_sense_stratum.jsonl` is a
+> gitignored, local-only store).
