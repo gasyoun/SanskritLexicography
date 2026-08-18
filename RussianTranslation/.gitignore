@@ -261,3 +261,17 @@ src/pilot/h1210/arm_*.canonical_audit*.json
 src/pilot/h1210/qc_*_senses.json
 src/pilot/h1210/*.task_output.json
 src/pilot/h1210/README_ARM_A_FILL.txt
+
+# H3098 packsets: a long sheet is now a parent file PLUS a directory of pack
+# pages (review/<stem>/pack-NN.html). The globs above are single-level, so they
+# do NOT reach inside that directory — and a pack page embeds exactly the same
+# unpublished `ru`/`de` as the parent it was split from. This is the leak the
+# default-deny note above predicts: a new sheet SHAPE, not a new generator.
+review/*/pack-*.html
+review/*/
+# ...but review/locks/ is the COMMITTED audit trail (H1404) and the blanket
+# directory deny above would have swallowed every FUTURE lock silently:
+# already-tracked locks keep working, so the breakage would only appear the
+# next time a new sheet was minted.
+!review/locks/
+!review/locks/**
