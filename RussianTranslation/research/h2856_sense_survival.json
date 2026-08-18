@@ -1,0 +1,39 @@
+{
+  "n_headwords": 23461,
+  "n_senses_total": 64296,
+  "n_senses_dated": 51268,
+  "alive_by_state": {
+    "I": {
+      "I": 12988
+    },
+    "II": {
+      "I": 7427,
+      "II": 3425
+    },
+    "III": {
+      "I": 7074,
+      "II": 2282,
+      "III": 17365
+    },
+    "IV": {
+      "I": 5477,
+      "III": 7784,
+      "IV": 17490,
+      "II": 1937
+    }
+  },
+  "total_alive_by_state": {
+    "I": 12988,
+    "II": 10852,
+    "III": 26721,
+    "IV": 32688
+  },
+  "citations_by_state": {
+    "I": 207715,
+    "II": 216023,
+    "III": 312157,
+    "IV": 311830
+  },
+  "state_v_never_populated": true,
+  "vedic_born_senses_still_alive_at_classical_share": 0.4216969510317216
+}

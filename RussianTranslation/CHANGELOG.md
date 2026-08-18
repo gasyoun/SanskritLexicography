@@ -10,6 +10,25 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### E4 ghost-headword census + E5 translation drift + V6 survival streamgraph (H2856, 18-08-2026)
+
+- **E4 — ghost-headword census.** All 106,082 PWG headwords × `corpus_lexicon.jsonl`
+  presence: 77.8% absent (exact-match). Logistic model: `ls_only` (lexicographers-only
+  citation, operationalised from `pwg.renou.jsonl`'s `ls`/`dcs` provenance tag — the
+  memo's literal `<ls>L.</ls>` marker does not exist in PWG source, see
+  [FINDINGS §567](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)) carries **2.36×** the absence odds (95% CI [2.28, 2.45],
+  n=106,082). V3 treemap by register. 20-headword hand spot-check: 65% confirmed absent.
+- **E5 — three-way translation drift.** PWG-ru (72 headwords matched against Kochergina):
+  mean lexical disagreement 0.978 — near-total divergence between the two independent
+  Russian translation traditions. V4 alluvial (sense count → PW/PWG relationship type →
+  agreement bucket).
+- **V6 — sense-survival streamgraph.** Alive-sense count widens from Renou state I (Vedic,
+  12,988) to state IV (classical, 32,688); state V is never populated in
+  `pwg_sense_stratum.jsonl` ([FINDINGS §568](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)).
+- Driver scripts: `src/h2856_e4_ghost_census.py`, `src/h2856_e5_translation_drift.py`,
+  `src/h2856_v6_survival_streamgraph.py`, `src/h2856_spot_check.py` — all re-runnable,
+  all committed.
+
 ### G6 gold sheet re-cut with the inbox button + V17 ergonomics (H3105, 18-08-2026)
 
 - **`--github-inbox` on `build_g6_mqm_gold_sheet.py`.** Each pack now writes
