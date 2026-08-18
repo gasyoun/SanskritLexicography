@@ -28,6 +28,12 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 - **Card set proven unchanged:** all 320 ids in identical order versus the
   published packs, per-pack sizes identical, lock ids matching. The re-cut moves
   UI, not questions.
+- **Chrome is Russian too now.** The instrument was Russian end to end — title,
+  subtitle, footer, both vote labels, every reject label — while the emitter's own
+  buttons and status lines stayed English. V17 had just made the most-read element
+  on the page (the progress bar and the whole-sheet ETA) part of that chrome, so
+  `config["ui_strings"] = RU_UI_STRINGS` was one line worth spending a second
+  re-cut on, while no votes were riding on the first one.
 - Carries csl-pyutil [v0.21.0](https://github.com/sanskrit-lexicon/csl-pyutil/releases/tag/v0.21.0)
   V17: submit controls at the foot, a full-width progress bar in the sticky
   header, progress and ETA for all 320 rather than the current pack, and
