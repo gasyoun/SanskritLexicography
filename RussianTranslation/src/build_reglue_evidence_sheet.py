@@ -43,7 +43,7 @@ Run: python src/build_reglue_evidence_sheet.py   (set PWG_RU_DATA_ROOT)
 """
 import sys, os, io, json, re, html, collections
 
-from csl_pyutil import render_review_sheet, mark_cyrillic, anatomy
+from csl_pyutil import render_review_sheet, mark_cyrillic, anatomy, RU_UI_STRINGS
 from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config, slp1_iast, pwg_entry_href
 from sheet_screening import screening_block
@@ -291,6 +291,14 @@ def main():
         "filters": [("pw", "PW"), ("nws", "NWS"), ("sch", "SCH"), ("pwkvn", "PWKVN")],
         "generated": GENERATED,
         "extra_css": EXTRA_CSS,
+        # H3103: Russian-only reviewer chrome (U6). save_banner needs its own
+        # override because the RU_UI_STRINGS default bakes in no sheet_id/save_as.
+        "ui_strings": dict(RU_UI_STRINGS, save_banner=(
+            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
+            '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
+            'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
+            'листу относятся эти решения).'
+            % (esc(SHEET_ID), esc(config["save_as"]), esc(SHEET_ID)))),
     })
     sc = screening_block(
         deterministic=0, lookup=0, agent=0, human=len(items),

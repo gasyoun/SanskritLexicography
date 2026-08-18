@@ -39,7 +39,7 @@ import json
 import os
 import sys
 
-from csl_pyutil import esc, mark_cyrillic, render_review_sheet
+from csl_pyutil import RU_UI_STRINGS, esc, mark_cyrillic, render_review_sheet
 from sheet_screening import screening_block  # noqa: E402
 
 from review_binding import stamp, write_lock
@@ -217,6 +217,18 @@ def main():
         "approve_label": "Approve",
         "reject_label": "Reject",
         "filters": [("change", "нужна правка"), ("noaction", "без изменений")],
+        # H3103 (U6, docs/REVIEW_SHEET_CONTENT_STANDARD_2026.md §3.1/§9): emitter
+        # chrome (download/save buttons, legend, keyboard-shortcut footer, timer
+        # labels) was previously unset -> defaulted to English. save_banner is
+        # overridden because RU_UI_STRINGS deliberately omits it (its default
+        # bakes in the caller's own sheet_id/save_as).
+        "ui_strings": dict(RU_UI_STRINGS, save_banner=(
+            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
+            '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
+            'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
+            'листу относятся эти решения).'
+            % (esc(SHEET_ID), esc("RussianTranslation\\review\\" + SHEET_ID + "_decisions.json"),
+               esc(SHEET_ID)))),
     }
     config.update(standard_config(
         save_as="RussianTranslation\\review\\" + SHEET_ID + "_decisions.json"))

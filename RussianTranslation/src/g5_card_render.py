@@ -406,7 +406,7 @@ def annotate(html_text, *, bare_citations=True):
 # --------------------------------------------------------------------- the three panels
 PANEL_PRINT = "1 · Печатный вид — это и оценивается"
 PANEL_STORE = "2 · Та же строка в разметке store — цвета = части статьи, отсюда копировать в заметку"
-PANEL_DE = "3 · Немецкий источник (de), та же разметка"
+PANEL_DE = "3 · Немецкий источник, та же разметка"
 PANEL_TAGS = "4 · Пометы NWS на этой карточке — расшифровка и доля в корпусе"
 
 #: Which anatomy classes a PWG card can actually show — the legend lists only these.

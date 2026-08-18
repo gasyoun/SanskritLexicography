@@ -698,6 +698,14 @@ def render(sample, columns, deriv, rule_sizes, quota, queue_total, generated=GEN
                 'Клавиши: a — принять, r — отклонить, d — отложить, ←/→ — соседняя '
                 'карточка. Голоса сохраняются в браузере по мере работы; '
                 'по кнопке «Скачать decisions.json» выгружается файл решений.'),
+            # H3103: chrome keys added in csl-pyutil v0.18.0/v0.20.0, absent
+            # from this dict since it predates them (the Defer/Reason gap
+            # noted above is a separate, still-open H1889 item).
+            'count_suffix': 'карточек',
+            'generated_label': 'Собрано',
+            'doc_lang': 'ru',
+            'filter_all': 'все',
+            'filter_unvoted': 'только непроголосованные',
         },
     }
     config.update(standard_config(save_as=config['save_as']))
