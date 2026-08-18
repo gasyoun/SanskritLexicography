@@ -40,7 +40,7 @@ from csl_pyutil.review_sheet import render_review_sheet, esc  # noqa: E402
 import review_binding  # noqa: E402
 from review_sheet_standard import standard_config  # noqa: E402
 from sheet_screening import screening_block  # noqa: E402
-from csl_pyutil import anatomy  # noqa: E402
+from csl_pyutil import RU_UI_STRINGS, anatomy  # noqa: E402
 
 GENERATED = "2026-08-15"
 SHEET_ID = "h2805_q3_deploy"
@@ -257,8 +257,9 @@ def build(out_dir=None, force_lock=False):
             "Основание: font/render-отчёт H2805 + guide §6.3."
         ),
         "footer": (
-            "Approve = принять вариант развёртки. Reject = исключить. Defer = "
-            "решить позже. Экспорт: pwg_ru/eval/h2805_q3_deploy.decisions.json → "
+            "«Принять» = принять вариант развёртки. «Отвергнуть» = исключить. "
+            "«Отложить» = решить позже. Экспорт: "
+            "<code>pwg_ru/eval/h2805_q3_deploy.decisions.json</code> → "
             "применяющий проход закрывает §6.3 свода."
         ),
         "approve_label": "Принять",
@@ -269,6 +270,15 @@ def build(out_dir=None, force_lock=False):
             ("tooltip", "T тултип"),
         ],
         "generated": GENERATED,
+        # H3103: U6 Russian-only chrome. RU_UI_STRINGS covers everything
+        # except save_banner (its default bakes in this sheet's own
+        # sheet_id/save_as, so a fixed preset string would drop them).
+        "ui_strings": dict(RU_UI_STRINGS, save_banner=(
+            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
+            '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
+            'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
+            'листу относятся эти решения).'
+            % (esc(SHEET_ID), esc(SAVE_AS), esc(SHEET_ID)))),
     }
     cfg.update(standard_config(save_as=SAVE_AS))
 

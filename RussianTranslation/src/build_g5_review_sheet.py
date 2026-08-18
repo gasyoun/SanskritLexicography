@@ -72,7 +72,7 @@ import os
 import re
 import sys
 
-from csl_pyutil import render_review_sheet
+from csl_pyutil import render_review_sheet, RU_UI_STRINGS
 from sheet_screening import screening_block
 from review_binding import stamp, write_lock
 from review_residue_gate import machine_flags, visible_german
@@ -94,6 +94,30 @@ _AB = re.compile(r"<ab\b[^>]*>(.*?)</ab>", re.S)
 
 def esc(s):
     return html.escape("" if s is None else str(s))
+
+
+#: H3103/U6: reviewer-facing translations for the store's `source_type` /
+#: `stratum` classification fields (a small closed set for source_type; a
+#: freeform combination of chronological/register period tags for stratum —
+#: mapped token-by-token so compound values like "Epic / early-Classical,
+#: Classical" translate without hand-enumerating every combination). Unknown
+#: future tokens pass through untranslated rather than raising.
+_SOURCE_TYPE_RU = {"attested": "засвидетельствовано", "lexicographic": "словарное",
+                    "mixed": "смешанное"}
+_STRATUM_TOKEN_RU = {
+    "vedic": "ведийский", "classical": "классический", "epic": "эпический",
+    "early-classical": "раннеклассический", "medieval": "средневековый",
+    "buddhist": "буддийский", "epigraphic": "эпиграфика", "general": "общее",
+    "brāhmaṇa": "брахманы",
+}
+_STRATUM_TOKEN_RE = re.compile(r"[A-Za-zĀ-ž]+(?:-[A-Za-zĀ-ž]+)?")
+
+
+def _stratum_ru(s):
+    if not s or s == "na":
+        return "н/д"
+    return _STRATUM_TOKEN_RE.sub(
+        lambda m: _STRATUM_TOKEN_RU.get(m.group(0).lower(), m.group(0)), s)
 
 
 def load_jsonl(path):
@@ -388,12 +412,13 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
             "facets": tags,
             "title": rec.get("iast") or slp1_iast(r.get("key1") or ""),
             "title_href": pwg_entry_href(root),
-            "badges": [rec.get("source_type") or "?", stratum],
+            "badges": [_SOURCE_TYPE_RU.get(rec.get("source_type"), rec.get("source_type") or "?"),
+                       _stratum_ru(stratum)],
             "question": ("Годен ли этот русский перевод в печать как есть? "
                          '<span class="muted">(Print-ready = да, как напечатано ниже · '
                          "Reject = нет (почему — в заметку) · Defer = отложить "
                          "в needs_review)</span>"),
-            "note_placeholder": "reject → что именно не так; частичная правка — тоже сюда",
+            "note_placeholder": "если отклонено → что именно не так; частичная правка — тоже сюда",
             "panels": card_panels(ru, de, tags),
         })
 
@@ -441,17 +466,18 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
         "sheet_id": SHEET_ID,
         "title": "G5 · печатная годность — живая очередь, партия 1v3",
         "subtitle": subtitle,
-        "footer": ("Approve = print-ready (run_batch пометит approved) · Reject = "
-                   "не годен · Defer = needs_review. Экспорт валидируется против "
-                   "review/locks/%s.lock.json перед любым применением.<br>"
+        "footer": ("Одобрить = готово к печати (<code>run_batch</code> пометит как "
+                   "<code>approved</code>) · Отклонить = не годен · Отложить = в "
+                   "<code>needs_review</code>. Экспорт валидируется против "
+                   "<code>review/locks/%s.lock.json</code> перед любым применением.<br>"
                    "Пометы NWS расшифрованы прямо на карточке (панель 4) и "
                    "фильтруются полосой фасетов над карточками; полный словарь "
                    "со статистикой — <a href=\"%s\" target=\"_blank\" "
-                   "rel=\"noopener\">NWS_TAG_VOCABULARY_CENSUS_2026-07.md</a>.<br>"
+                   "rel=\"noopener\"><code>NWS_TAG_VOCABULARY_CENSUS_2026-07.md</code></a>.<br>"
                    "Цвета в панелях 2–3 (разметка store и немецкий источник): %s"
                    % (SHEET_ID, cardrender.CENSUS_URL, cardrender.legend_html())),
-        "approve_label": "Print-ready", "reject_label": "Reject",
-        "filters": [(s, s) for s in strata],
+        "approve_label": "Готово к печати", "reject_label": "Не годно",
+        "filters": [(s, _stratum_ru(s)) for s in strata],
         # H1847 — browse by the NWS tag vocabulary, not just by stratum. Chips
         # within one row are OR, rows intersect: «Ved» + «ifc» = Vedic senses
         # standing at the end of a compound.
@@ -465,6 +491,15 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
     }
     config.update(standard_config(
         save_as="RussianTranslation\\review\\%s_decisions.json" % SHEET_ID))
+    # H3103/U6: reviewer chrome (download/save buttons, keyboard hints, timer
+    # strings) via RU_UI_STRINGS; save_banner excluded from the preset (bakes
+    # in sheet_id/save_as), built here per its docstring.
+    config["ui_strings"] = dict(RU_UI_STRINGS, save_banner=(
+        '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
+        '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
+        'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
+        'листу относятся эти решения).'
+        % (esc(SHEET_ID), esc(config["save_as"]), esc(SHEET_ID))))
 
     # H1650 / Б: machine-flags auto-rejected count as rejects in N=150 stats
     n_human = len(items)

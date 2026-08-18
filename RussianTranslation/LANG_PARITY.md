@@ -1,6 +1,6 @@
 # LANG_PARITY.md — cross-language fix/feature parity ledger
 
-_Created: 04-07-2026 · Last updated: 16-08-2026 (`de_edition_export_profile_h1629`: SHARED verdict re-verified under H1635. The `evidence`-string Cyrillic scrub is a DE-side structural-label fix, not a target-language branch.)_
+_Created: 04-07-2026 · Last updated: 18-08-2026 (H3103: `h1210_ab_arm_scaffold` hash re-verified after a U6 chrome-only fix to `build_ab_review_sheet.py`, SHARED stands.)_
 
 This repo runs the same PWG→Russian and PWG→English translation pipeline through
 shared tooling (`src/pilot/gen_opt_harness2.py`, `src/pilot/translation_memory.py`,
@@ -1366,7 +1366,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "en"
     ],
     "verdict": "SHARED",
-    "note": "H2226 OPT-4 (02-08-2026, Grok 4.5 `grok-4.5`): closed the RU-bound JS residual named by the prior GAP — wf_template_ab.js + control_template.js now take TARGET_FIELD + CONTROLLER_PROMPT from the payload (same contract as h1209/wf_template.js); arm_b_control.senses_of + cmd_build inject field/controller_prompt; det_gate fidelity messages name the active field. Analysis trio and packers remain language-neutral. Do not fork a second EN scaffold tree. Live paid EN A/B spend remains non-goal — mini-EN inject build proven via js_field_param_selftest. H2209 re-verify (03-08-2026, Sonnet 5 `claude-sonnet-5`): this SHARED entry was silently reverted to the pre-H2226 GAP text by the #1051 (H2228) PR merge — that branch was cut before H2226 landed and its stale LANG_PARITY.md clobbered the freshly-merged one on merge, even though the code files themselves kept the H2226 content (hashes on disk matched H2226's, not the reverted note's). Restored verbatim from H2226's dc81f89a commit; no code change, ledger-only repair of the master CI break this caused (test_lang_parity_ledger_complete).",
+    "note": "H2226 OPT-4 (02-08-2026, Grok 4.5 `grok-4.5`): closed the RU-bound JS residual named by the prior GAP — wf_template_ab.js + control_template.js now take TARGET_FIELD + CONTROLLER_PROMPT from the payload (same contract as h1209/wf_template.js); arm_b_control.senses_of + cmd_build inject field/controller_prompt; det_gate fidelity messages name the active field. Analysis trio and packers remain language-neutral. Do not fork a second EN scaffold tree. Live paid EN A/B spend remains non-goal — mini-EN inject build proven via js_field_param_selftest. H2209 re-verify (03-08-2026, Sonnet 5 `claude-sonnet-5`): this SHARED entry was silently reverted to the pre-H2226 GAP text by the #1051 (H2228) PR merge — that branch was cut before H2226 landed and its stale LANG_PARITY.md clobbered the freshly-merged one on merge, even though the code files themselves kept the H2226 content (hashes on disk matched H2226's, not the reverted note's). Restored verbatim from H2226's dc81f89a commit; no code change, ledger-only repair of the master CI break this caused (test_lang_parity_ledger_complete). H3103 (18-08-2026, Sonnet 5 `claude-sonnet-5`): U6 Russian-only chrome fix on `build_ab_review_sheet.py` — translated hand-written English title/subtitle/footer/labels to Russian, added `config[\"ui_strings\"] = RU_UI_STRINGS`. Grepped for language-branch tokens (`lang` / `FIELD[` / `--lang`); the only hit is the pre-existing `s.get('russian')` card-data key, unrelated to this chrome edit. SHARED stands — this is UI-chrome-only, no RU/EN divergence introduced. Hash updated via `--update-hash`.",
     "tracking": "https://github.com/gasyoun/Uprava/blob/main/handoffs/H2226-Grok_SanskritLexicography_pwg-opt4-h1209-js-field-param_02.08.26.md",
     "verified_sha256": {
       "src/pilot/h1210/pack_chunks.py": "7f33369396084a3fb474481c2f81830e17a0aea1220164acf741f207c56b570b",
@@ -1377,7 +1377,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/h1210/wf_template_ab.js": "3deadfa110c0649e8e25bdd315d24e100df22442fd0c9d06b78df4eb76790a19",
       "src/pilot/h1210/collect_arm_a.py": "153d58a3cc04c4e8ca120c8f42c4668be3266d7c3be33dd21e5afcc7f944058c",
       "src/pilot/h1210/ab_report.py": "4039fa57487f2b7fd1de3aa0eee2f0106c972d6a04e1e9f91e861ff95a248ad0",
-      "src/pilot/h1210/build_ab_review_sheet.py": "a4801fb0beda02d34dfb611070f54ff021787b68e3f521c8743bb7b7ef84f31b",
+      "src/pilot/h1210/build_ab_review_sheet.py": "bf1ce01f3e3a7dfa0641ee2636e8031ee20ec55e4f3acf56fe89db2061339dfd",
       "src/pilot/h1210/length_breakdown.py": "a77313540e96d2cb547af8080c0e16fe5ff769065b8f6afeede4830eef77057d",
       "src/pilot/h1210/coverage_gap.py": "7f63c07f4259688d35ec2d54302c3fdf46f8e96bb7762a24037508fcab093bd3",
       "src/pilot/h1210/qc_gloss_arity.py": "104067deaaacae102b55c83d7dfda7e8dcb99d37d7a0cb5e61aea6b086947307",

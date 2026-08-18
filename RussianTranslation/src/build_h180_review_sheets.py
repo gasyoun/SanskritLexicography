@@ -43,10 +43,14 @@ Run: python src/build_h180_review_sheets.py
 """
 import sys, os, io, json, html, re, collections
 
-from csl_pyutil import render_review_sheet, mark_cyrillic
+from csl_pyutil import render_review_sheet, mark_cyrillic, RU_UI_STRINGS
 from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config, slp1_iast, pwg_entry_href
 from sheet_screening import citation_evidence_panel, screening_block
+# H3103/U6: reuse the ADDENDA_TYPOLOGY subtype -> Russian op-label mapping the
+# H2847 reglue rebuild established, instead of inventing a second vocabulary
+# (h180's relationships data uses a strict subset of TYPOLOGY's keys).
+from build_reglue_sheet_v2 import TYPOLOGY, OP_LABEL
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -83,6 +87,15 @@ def write_sheet(slug, cfg, items):
         save_as="RussianTranslation\\pwg_ru\\eval\\h180_%s.decisions.json" % slug)
     config.update(cfg)
     config["generated"] = GENERATED
+    # H3103/U6: reviewer chrome (download/save buttons, keyboard hints, timer
+    # strings) via RU_UI_STRINGS; save_banner excluded from the preset (bakes
+    # in sheet_id/save_as), built here per its docstring.
+    config["ui_strings"] = dict(RU_UI_STRINGS, save_banner=(
+        '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
+        '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
+        'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
+        'листу относятся эти решения).'
+        % (esc(config["sheet_id"]), esc(config["save_as"]), esc(config["sheet_id"]))))
     # H1650/H1649: screening banner required (csl-pyutil ≥0.8.0)
     sc = screening_block(
         deterministic=0, lookup=0, agent=0, human=len(items),
@@ -150,20 +163,23 @@ def build_typology(by_sub):
             f'op/dir    : {esc(rel["op"])} / {esc(rel["direction"])}\n'
             f'target    : {esc(ip["target_sense"])} (anchor {esc(ip["anchor"])})\n'
             f'evidence  : {esc(rel.get("evidence",""))}</pre>')
-        cite_h, cite_b = citation_evidence_panel(rec.get("de") or "")
+        cite_h, cite_b = citation_evidence_panel(
+            rec.get("de") or "", heading="совпадение по цитатам (H1650)")
         items.append({
             "id": f'{r["subcard"]}::{r["sense_tag"]}',
             "filt": r["layer"],
             "title": f'{slp1_iast(r["key1"])} · {r["layer"]} · sense {r["sense_tag"]}',
             "title_href": pwg_entry_href(root),
-            "badges": [rel["subtype"], "5-layer" if r["key1"] in FIVE_LAYER else "tail"],
-            "question": (f'Is the proposed subtype <b>«{esc(rel["subtype"])}»</b> correct '
-                         f'for this sub-card? <span class="muted">(reject → write the correct '
-                         f'subtype in the note, for κ)</span>'),
-            "note_placeholder": "if reject: correct subtype + why (e.g. 'nws_at_sense, attaches to sense 2')",
-            "panels": [("LLM proposal (confidence: llm)", proposal),
-                       ("Sub-card — Russian (ru)", f'<pre>{mark_cyrillic(ru)}</pre>'),
-                       ("Sub-card — source (de)", f'<pre>{de}</pre>'),
+            "badges": [OP_LABEL[TYPOLOGY[rel["subtype"]][0]] if rel["subtype"] in TYPOLOGY
+                       else rel["subtype"],
+                       "5-слойный" if r["key1"] in FIVE_LAYER else "хвост"],
+            "question": (f'Верен ли предложенный подтип <b>«{esc(rel["subtype"])}»</b> '
+                         f'для этой суб-карточки? <span class="muted">(отклонить → напишите '
+                         f'верный подтип в заметке, для κ)</span>'),
+            "note_placeholder": "если отклонено: верный подтип + почему (например: «NWS дополняет значение 2»)",
+            "panels": [("Предложение модели ИИ", proposal),
+                       ("Суб-карточка — русский текст", f'<pre>{mark_cyrillic(ru)}</pre>'),
+                       ("Суб-карточка — источник (нем.)", f'<pre>{de}</pre>'),
                        (cite_h, cite_b)],
         })
     return items
@@ -189,8 +205,8 @@ def build_learner():
         "medonly": [r for r in rows if r["learner"] == 0 and r["support"] > 0],
         "control": [r for r in rows if r["learner"] == 0 and r["support"] == 0 and r["scholarly"] > 0],
     }
-    band_label = {"solid": "≥2 Russian dicts", "koch1": "Kochergina-only",
-                  "medonly": "medium-only (learner=0)", "control": "scholarly-only control"}
+    band_label = {"solid": "≥2 русск. словаря", "koch1": "только Кочергина",
+                  "medonly": "только средние (оценка учебности 0)", "control": "контроль (только научные)"}
     items = []
     for band, pool in bands.items():
         pool.sort(key=lambda r: r["key1"])
@@ -205,11 +221,12 @@ def build_learner():
                 "title": slp1_iast(r["key1"]),
                 "title_href": pwg_entry_href(r["key1"]),
                 "badges": [band_label[band]],
-                "question": ('Does a Russian student need this headword? '
-                             '<span class="muted">(approve = learner-core; reject = scholarly-only / skip)</span>'),
-                "note_placeholder": "optional: why keep/drop for a learner edition",
-                "panels": [("retention scores", scores),
-                           ("dictionaries that kept it", f'<pre>{esc(r["dicts"])}</pre>')],
+                "question": ('Нужен ли этот заголовок русскому студенту? '
+                             '<span class="muted">(одобрить = учебное ядро; отклонить = только для '
+                             'специалистов / пропустить)</span>'),
+                "note_placeholder": "необязательно: почему оставить/убрать для учебного издания",
+                "panels": [("оценки удержания", scores),
+                           ("словари, включившие слово", f'<pre>{esc(r["dicts"])}</pre>')],
             })
     return items
 
@@ -229,12 +246,12 @@ def build_reglue():
             "filt": f"{nlayers}L",
             "title": slp1_iast(key1),
             "title_href": pwg_entry_href(key1),
-            "badges": [f"{nlayers}-layer"],
-            "question": ('Is this re-glue well-formed? <span class="muted">(supplements land at '
-                         'sensible senses · cancellations visible · foreign fragments shown with RU · '
-                         'nothing broken)</span>'),
-            "note_placeholder": "if reject: what is misplaced / broken",
-            "panels": [("rendered re-glue card", f'<pre>{mark_cyrillic(esc(body))}</pre>')],
+            "badges": [f"{nlayers}-слойный"],
+            "question": ('Корректно ли сформирована эта склейка? <span class="muted">(дополнения '
+                         'попадают в подходящие значения · отмены видны · иноязычные фрагменты '
+                         'показаны с RU · ничего не сломано)</span>'),
+            "note_placeholder": "если отклонено: что смещено / сломано",
+            "panels": [("склеенная карточка (отрендерено)", f'<pre>{mark_cyrillic(esc(body))}</pre>')],
         })
     return items
 
@@ -245,32 +262,33 @@ def main():
 
     write_sheet("typology", {
         "sheet_id": "h180-typology-kappa-2026-07-06",
-        "title": "H180 · addenda-typology κ-label",
-        "subtitle": "confirm/correct the LLM-proposed relationship subtype (7 five-layer roots + 30-item tail)",
-        "footer": ("Approve = the LLM subtype is right · Reject = wrong (write the correct subtype "
-                   "in the note — this is the second signal for κ) · Defer = can't tell."),
-        "approve_label": "Correct", "reject_label": "Wrong",
-        "filters": [("pw", "pw"), ("sch", "sch"), ("pwkvn", "pwkvn"), ("nws", "nws")],
+        "title": "H180 · κ-метка типологии дополнений",
+        "subtitle": "подтвердите/исправьте предложенный LLM подтип связи (7 пятислойных корней + хвост из 30 карточек)",
+        "footer": ("Одобрить = предложенный подтип верен · Отклонить = неверен (напишите правильный "
+                   "подтип в заметке — это второй сигнал для κ) · Отложить = не могу определить."),
+        "approve_label": "Верно", "reject_label": "Неверно",
+        "filters": [("pw", "PW"), ("sch", "SCH"), ("pwkvn", "вариант"), ("nws", "NWS")],
     }, build_typology(by_sub))
 
     write_sheet("learner", {
         "sheet_id": "h180-learner-threshold-2026-07-06",
-        "title": "H180 · learner-core threshold calibration",
-        "subtitle": "is each PWG headword learner-core? — stratified across retention bands",
-        "footer": ("Approve = a Russian student needs this headword (learner-core) · Reject = "
-                   "scholarly-only / skip · Defer = unsure. Calibrates the learner_score cut."),
-        "approve_label": "Learner-core", "reject_label": "Skip",
-        "filters": [("solid", "≥2 RU"), ("koch1", "Koch-only"), ("medonly", "medium-only"), ("control", "control")],
+        "title": "H180 · калибровка порога учебного ядра",
+        "subtitle": "относится ли заголовок PWG к учебному ядру? — стратифицированная выборка по группам удержания",
+        "footer": ("Одобрить = русскому студенту нужен этот заголовок (учебное ядро) · Отклонить = "
+                   "только для специалистов / пропустить · Отложить = не уверен(а). Калибрует порог "
+                   "оценки учебности."),
+        "approve_label": "Учебное ядро", "reject_label": "Пропустить",
+        "filters": [("solid", "≥2 RU"), ("koch1", "только Кочергина"), ("medonly", "только средние"), ("control", "контроль")],
     }, build_learner())
 
     write_sheet("reglue", {
         "sheet_id": "h180-reglue-spotcheck-2026-07-06",
-        "title": "H180 · content-aware re-glue spot-check",
-        "subtitle": "eyeball each of the 15 pilot re-glue cards (success criterion d)",
-        "footer": ("Approve = well-formed re-glue · Reject = something misplaced/broken (say what "
-                   "in the note) · Defer = unsure."),
-        "approve_label": "Well-formed", "reject_label": "Broken",
-        "filters": [("5L", "5-layer"), ("4L", "4-layer"), ("3L", "3-layer")],
+        "title": "H180 · выборочная проверка контекстной склейки",
+        "subtitle": "просмотрите каждую из 15 пилотных карточек склейки (критерий успеха d)",
+        "footer": ("Одобрить = склейка сформирована корректно · Отклонить = что-то смещено/сломано "
+                   "(укажите что именно в заметке) · Отложить = не уверен(а)."),
+        "approve_label": "Корректно", "reject_label": "Сломано",
+        "filters": [("5L", "5 слоёв"), ("4L", "4 слоя"), ("3L", "3 слоя")],
     }, build_reglue())
 
     print("\nNOTE: the 4th sheet (Arm-A-vs-B coherence) is skipped — it needs the deferred "

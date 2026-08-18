@@ -1,7 +1,7 @@
 {
   "schema": "review-lock/v1",
   "sheet_id": "h1682_abbrev_rules",
-  "content_hash": "sha256:88f7db782d96a824651f38b74edb3a20ffa3676f872c04b9df9b4d53c0247d0f",
+  "content_hash": "sha256:667d522ff1698ea8b23e4c51f570099a6421fb949bcabfc89d9ab7e1b74f4859",
   "generated": "2026-07-31",
   "gate": null,
   "n_items": 33,
@@ -42,6 +42,6 @@
   ],
   "source_html": "h1682_abbrev_rules_sheet.html",
   "mode": "stamped",
-  "created": "2026-07-31",
+  "created": "2026-08-18",
   "tool": "review_binding.py (H1404 binding standard)"
 }

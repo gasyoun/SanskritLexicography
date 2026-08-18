@@ -22,7 +22,7 @@ import json
 import sys
 from pathlib import Path
 
-from csl_pyutil import mark_cyrillic, render_review_sheet
+from csl_pyutil import RU_UI_STRINGS, mark_cyrillic, render_review_sheet
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -148,11 +148,19 @@ def main() -> None:
             for it in votable
         ]
         sheet_id = f"sanskritlexicography-article-comparison_{word}"
+        save_as = f"SanskritLexicography\\review\\{sheet_id}_decisions.json"
         config = {
-            **standard_config(
-                save_as=f"SanskritLexicography\\review\\{sheet_id}_decisions.json"
-            ),
+            **standard_config(save_as=save_as),
             "sheet_id": sheet_id,
+            # H3103: U6 Russian-only chrome. RU_UI_STRINGS covers everything
+            # except save_banner (its default bakes in this sheet's own
+            # sheet_id/save_as, so a fixed preset string would drop them).
+            "ui_strings": dict(RU_UI_STRINGS, save_banner=(
+                '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
+                '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
+                'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
+                'листу относятся эти решения).'
+                % (esc(sheet_id), esc(save_as), esc(sheet_id)))),
             "title": f'Глосс-ревью {w["headword_display"]} — правки ручных RU-глосс',
             "subtitle": (
                 f'{w["headline"]} Источник: article-comparison/{w["source_file"]} '

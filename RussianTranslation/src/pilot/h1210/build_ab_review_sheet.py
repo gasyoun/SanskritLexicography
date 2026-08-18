@@ -58,7 +58,7 @@ if SRC not in sys.path:
 
 import review_sheet_standard as STD                          # noqa: E402
 import g5_card_render as cardrender                          # noqa: E402  (H1808, shared)
-from csl_pyutil import render_review_sheet                   # noqa: E402
+from csl_pyutil import render_review_sheet, RU_UI_STRINGS     # noqa: E402
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 from ab_report import (CLEAN_STATUSES, audit_index, merge_results,   # noqa: E402
@@ -203,13 +203,13 @@ def main():
             'title': STD.slp1_iast(decode_safe_name(key.split('~~')[0])),
             'title_href': STD.pwg_entry_href(decode_safe_name(key.split('~~')[0])),
             'badges': [stratum],
-            'question': 'Is this Russian rendering publishable as-is — faithful to the German, '
-                        'complete, and in scholarly register?',
+            'question': 'Пригоден ли этот русский перевод для публикации как есть — точен ли '
+                        'по отношению к немецкому, полон и выдержан в научном регистре?',
             'panels': [
                 ('Русский (перевод)', senses_html(card)),
                 ('Deutsch (источник)', source_html(card)),
             ],
-            'note_placeholder': 'What is wrong, concretely (sense tag + what it should say)?',
+            'note_placeholder': 'Что конкретно не так (номер значения + как должно быть)?',
         })
         # `cls` is the §501 population (shippable vs refused-but-audit-clean).
         # Like `arm`, it lives ONLY here — the reviewer must not see either.
@@ -219,22 +219,30 @@ def main():
     cfg = dict(STD.standard_config(save_as='review/%s_decisions.json' % sheet_id))
     cfg.update({
         'sheet_id': sheet_id,
-        'title': 'H1210 — blind quality vote, 100-card PWG A/B',
+        'title': 'H1210 — слепой вотум качества, 100-карточный A/B PWG',
         # The legend goes here (the one place rendered once per sheet, above the cards) —
         # `subtitle` is interpolated as raw HTML by render_review_sheet. Same legend as the
         # G5 sheet, from the same module, so the colour code means one thing project-wide.
-        'subtitle': ('%d cards from two generation pipelines, interleaved and UNLABELLED. '
-                     'Rate each card on its own merits; do not try to guess which system '
-                     'produced it. (Approve = publishable as-is.)%s'
+        'subtitle': ('%d карточек из двух конвейеров генерации, чередуются и НЕ ПОДПИСАНЫ. '
+                     'Оценивайте каждую карточку саму по себе; не пытайтесь угадать, какая '
+                     'система её произвела. (Одобрить = годится к публикации как есть.)%s'
                      % (len(items), cardrender.legend_html())),
         'extra_css': cardrender.EXTRA_CSS,
-        'footer': 'H1210 · handoff deliverable 2 · verdicts are the top layer of the A/B '
-                  'quality comparison',
-        'approve_label': 'publishable',
-        'reject_label': 'not publishable',
+        'footer': 'H1210 · второй результат хендоффа · вердикты — верхний слой сравнения '
+                  'качества A/B',
+        'approve_label': 'годится к публикации',
+        'reject_label': 'не годится к публикации',
         'filters': sorted({(it['filt'], it['filt']) for it in items}),
         'generated': a.generated,
         'rating': STD.DA_RATING,
+        # H3103: Russian-only reviewer chrome (U6). save_banner needs its own
+        # override because the RU_UI_STRINGS default bakes in no sheet_id/save_as.
+        'ui_strings': dict(RU_UI_STRINGS, save_banner=(
+            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
+            '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
+            'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
+            'листу относятся эти решения).'
+            % (html.escape(sheet_id), html.escape(cfg['save_as']), html.escape(sheet_id)))),
     })
     out_html = os.path.join(RT, 'review', '%s_sheet.html' % sheet_id)
     # H1649 screening block — required by csl-pyutil >= 0.8.0, and honest for THIS
