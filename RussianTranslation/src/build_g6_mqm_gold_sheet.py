@@ -253,6 +253,15 @@ def main():
     ap.add_argument("--no-evidence", action="store_true",
                     help="pre-H1801 layout (no evidence panels) — for diffing only")
     ap.add_argument("--sheet-id", default=None)
+    ap.add_argument("--github-inbox", action="store_true",
+                    help="add the «Сохранить в GitHub» control and the hydrate read "
+                         "(H2991). Changes the rendered bytes, so it re-cuts the "
+                         "sheet -- never turn it on mid-vote")
+    ap.add_argument("--client-id", default="Ov23lifQmcuDYuTw0ZWv",
+                    help="public OAuth App client id (ships in the HTML by design)")
+    ap.add_argument("--device-url",
+                    default="https://kosha.193.232.229.92.sslip.io/gh-device",
+                    help="CORS relay for the device-code exchange (FINDINGS §477)")
     ap.add_argument("--pack-size", type=int, default=0,
                     help="split into pack pages of at most N cards, sharing one "
                          "sheet_id (H3098). 0 = one file, the historical default")
@@ -331,6 +340,20 @@ def main():
         declared_slp1_tokens(chosen, panels_by_id)))}
     config.update(standard_config(
         save_as="RussianTranslation\\review\\%s_decisions.json" % sheet_id))
+    # H2991/H3105 — «Сохранить в GitHub»: each pack writes
+    # decisions/<sheet_id>/pack-NN.json to the public inbox and hydrates from it
+    # on load, so 32 packs stop meaning 32 files to shepherd by hand and
+    # merge_vote_packs.py can do the accumulating. client_id is public by design
+    # (it ships in the HTML); device_url is the CORS relay, without which GitHub's
+    # device endpoints cannot be read from a static page at all (FINDINGS §477).
+    # Leave `branch` unset: the contents API then writes to the inbox repo's own
+    # default branch, which is `master` -- guessing `main` was the v0.17.0 bug.
+    if args.github_inbox:
+        config["github_inbox"] = {
+            "repo": "gasyoun/vote-inbox",
+            "client_id": args.client_id,
+            "device_url": args.device_url,
+        }
 
     # H1649/H1650: every sheet must state what was screened before a human sees it.
     # Honest accounting for this instrument: every card carries an LLM label from the

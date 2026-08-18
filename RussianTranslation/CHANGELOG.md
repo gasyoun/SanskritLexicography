@@ -10,6 +10,29 @@ how it got better), [APRESJAN.md](APRESJAN.md) (the theory we build on).
 
 ## [Unreleased]
 
+### G6 gold sheet re-cut with the inbox button + V17 ergonomics (H3105, 18-08-2026)
+
+- **`--github-inbox` on `build_g6_mqm_gold_sheet.py`.** Each pack now writes
+  `decisions/<sheet_id>/pack-NN.json` to [gasyoun/vote-inbox](https://github.com/gasyoun/vote-inbox)
+  and hydrates from it on load, so 32 packs stop meaning 32 downloaded files to
+  shepherd and `merge_vote_packs.py` can do the accumulating. `client_id` is
+  public by design; `device_url` is the CORS relay, without which GitHub's device
+  endpoints cannot be read from a static page at all (Uprava FINDINGS §477).
+  `branch` is left unset so the contents API writes to the inbox's own default
+  branch — guessing `main` was the csl-pyutil v0.17.0 bug.
+- **Re-cut accepted explicitly by MG**, because adding the layer changes the
+  rendered bytes and therefore the `content_hash`: the 10 votes handed in
+  against the previous generation stop validating. They are NOT lost — the
+  browser record is keyed on `sheet_id`, which did not change — but the exported
+  `decisions_partial.json` from that generation is now unbindable.
+- **Card set proven unchanged:** all 320 ids in identical order versus the
+  published packs, per-pack sizes identical, lock ids matching. The re-cut moves
+  UI, not questions.
+- Carries csl-pyutil [v0.21.0](https://github.com/sanskrit-lexicon/csl-pyutil/releases/tag/v0.21.0)
+  V17: submit controls at the foot, a full-width progress bar in the sticky
+  header, progress and ETA for all 320 rather than the current pack, and
+  auto-advance landing on the top of a card instead of its middle.
+
 ### Review sheets — packsets (H3098, 18-08-2026)
 
 - **A long sheet can now be voted in packs of 10, and the binding layer knows it.**
