@@ -109,6 +109,18 @@ def _schema_check(doc, legacy=False):
     return "jsonschema"
 
 
+
+def _pack_for_hash(lock, content_hash_value):
+    """Which pack of a packset lock this export's content_hash names, or None.
+
+    None means "not a pack" — either a single-file sheet, or a hash that belongs
+    to the parent (or to nothing, which the caller reports as a mismatch).
+    """
+    for pack in (lock.get("packset") or {}).get("packs", []):
+        if pack.get("content_hash") == content_hash_value:
+            return pack
+    return None
+
 def _log_legacy_accept(locks_dir, path, sheet_id):
     log_path = os.path.join(locks_dir, "allow_legacy.log")
     with io.open(log_path, "a", encoding="utf-8", newline="\n") as fh:
@@ -156,19 +168,35 @@ def validate(path, locks_dir=None, allow_legacy=False, quiet=False):
         log_path = _log_legacy_accept(locks_dir, path, sheet_id)
         say("WARNING: legacy unbound export accepted via --allow-legacy "
             "(logged to %s)" % log_path)
-    elif doc["content_hash"] != lock["content_hash"]:
-        raise Reject("binding: content_hash mismatch — export carries %s, lock has %s. "
-                     "The votes were cast against a different generation of '%s'; "
-                     "do not apply them to this one."
-                     % (doc["content_hash"], lock["content_hash"], sheet_id))
+    # H3098 — a packset is one instrument spread over a parent and N pack pages,
+    # all sharing this sheet_id. An export from pack-02 carries THAT PAGE's
+    # content_hash and only that page's ids, so it must be checked against the
+    # page it was voted on: against the whole instrument it would fail twice, on
+    # the hash and on ids the reviewer was never shown.
+    pack = None
+    if "content_hash" in doc:
+        pack = _pack_for_hash(lock, doc["content_hash"])
+        if pack is None and doc["content_hash"] != lock["content_hash"]:
+            packs = (lock.get("packset") or {}).get("packs", [])
+            extra = ("" if not packs else
+                     " This sheet is a packset of %d packs; the export matches neither "
+                     "the parent nor any pack." % len(packs))
+            raise Reject("binding: content_hash mismatch — export carries %s, lock has %s. "
+                         "The votes were cast against a different generation of '%s'; "
+                         "do not apply them to this one.%s"
+                         % (doc["content_hash"], lock["content_hash"], sheet_id, extra))
+        if pack is not None:
+            say("binding: export is pack-%s of packset '%s' (%d of %d items)"
+                % (pack["name"], sheet_id, pack["n_items"], lock.get("n_items", 0)))
 
     export_ids = [it["id"] for it in doc["items"]]
-    lock_ids = lock.get("ids", [])
+    lock_ids = pack["ids"] if pack is not None else lock.get("ids", [])
     missing = sorted(set(lock_ids) - set(export_ids))
     extra = sorted(set(export_ids) - set(lock_ids))
     if missing or extra:
-        raise Reject("binding: item-id drift vs lock (%d missing, %d unknown)%s%s"
-                     % (len(missing), len(extra),
+        raise Reject("binding: item-id drift vs %s (%d missing, %d unknown)%s%s"
+                     % ("pack-" + pack["name"] if pack is not None else "lock",
+                        len(missing), len(extra),
                         " missing e.g. " + ", ".join(missing[:3]) if missing else "",
                         " unknown e.g. " + ", ".join(extra[:3]) if extra else ""))
     if len(export_ids) != len(set(export_ids)):
